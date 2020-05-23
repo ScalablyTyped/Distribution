@@ -5,14 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.Locale")
 @js.native
-class Locale protected () extends Object {
-  /**
-    * Creates an instance of the Locale.
-    * @param sLocaleId the locale identifier, in format en-US or en_US.
-    */
-  def this(sLocaleId: String) = this()
+trait Locale extends Object {
   /**
     * Get the locale extension as a single string or null.The extension always consists of a singleton
     * character (not 'x'),a dash '-' and one or more extension token, each separatedagain with a dash.Use

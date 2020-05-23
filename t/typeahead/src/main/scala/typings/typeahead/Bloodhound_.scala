@@ -1,7 +1,6 @@
 package typings.typeahead
 
 import typings.jquery.JQueryPromise
-import typings.typeahead.Bloodhound.BloodhoundOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,16 +10,8 @@ import scala.scalajs.js.annotation._
   * flexible, and offers advanced functionalities such as prefetching,
   * intelligent caching, fast lookups, and backfilling with remote data.
   */
-@JSGlobal("Bloodhound")
 @js.native
-class Bloodhound_[T] protected () extends js.Object {
-  /**
-    * The constructor function.
-    *
-    * @constructor
-    * @param options Options hash.
-    */
-  def this(options: BloodhoundOptions[T]) = this()
+trait Bloodhound_[T] extends js.Object {
   /**
     * Takes one argument, data, which is expected to be an array.
     * The data passed in will get added to the internal search index.

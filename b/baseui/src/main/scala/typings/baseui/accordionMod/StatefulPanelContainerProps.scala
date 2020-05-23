@@ -1,6 +1,6 @@
 package typings.baseui.accordionMod
 
-import typings.baseui.AnonExpandedBoolean
+import typings.baseui.anon.ExpandedBoolean
 import typings.baseui.baseuiStrings.expand
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait StatefulPanelContainerProps extends js.Object {
   var children: ReactNode
   var initialState: js.UndefOr[PanelState] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* args */ AnonExpandedBoolean, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* args */ ExpandedBoolean, _]] = js.undefined
   var stateReducer: js.UndefOr[StateReducer[PanelState]] = js.undefined
 }
 
@@ -20,7 +20,7 @@ object StatefulPanelContainerProps {
   def apply(
     children: ReactNode = null,
     initialState: PanelState = null,
-    onChange: /* args */ AnonExpandedBoolean => _ = null,
+    onChange: /* args */ ExpandedBoolean => _ = null,
     stateReducer: (expand, PanelState, PanelState) => PanelState = null
   ): StatefulPanelContainerProps = {
     val __obj = js.Dynamic.literal()

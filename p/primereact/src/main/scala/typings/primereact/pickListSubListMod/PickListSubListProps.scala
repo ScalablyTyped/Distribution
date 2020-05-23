@@ -1,7 +1,7 @@
 package typings.primereact.pickListSubListMod
 
-import typings.primereact.AnonEventValue
-import typings.react.mod._Global_.JSX.Element
+import typings.primereact.anon.EventValue
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait PickListSubListProps extends js.Object {
   var listClassName: js.UndefOr[String] = js.undefined
   var metaKeySelection: js.UndefOr[Boolean] = js.undefined
   var onItemClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonEventValue, Unit]] = js.undefined
+  var onSelectionChange: js.UndefOr[js.Function1[/* e */ EventValue, Unit]] = js.undefined
   var selection: js.UndefOr[js.Array[_]] = js.undefined
   var showControls: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -30,7 +30,7 @@ object PickListSubListProps {
     listClassName: String = null,
     metaKeySelection: js.UndefOr[Boolean] = js.undefined,
     onItemClick: () => Unit = null,
-    onSelectionChange: /* e */ AnonEventValue => Unit = null,
+    onSelectionChange: /* e */ EventValue => Unit = null,
     selection: js.Array[_] = null,
     showControls: js.UndefOr[Boolean] = js.undefined,
     style: js.Object = null
@@ -41,11 +41,11 @@ object PickListSubListProps {
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1(itemTemplate))
     if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
     if (listClassName != null) __obj.updateDynamic("listClassName")(listClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaKeySelection)) __obj.updateDynamic("metaKeySelection")(metaKeySelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(metaKeySelection)) __obj.updateDynamic("metaKeySelection")(metaKeySelection.get.asInstanceOf[js.Any])
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction0(onItemClick))
     if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (!js.isUndefined(showControls)) __obj.updateDynamic("showControls")(showControls.asInstanceOf[js.Any])
+    if (!js.isUndefined(showControls)) __obj.updateDynamic("showControls")(showControls.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickListSubListProps]
   }

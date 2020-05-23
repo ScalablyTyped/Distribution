@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.FreeformBuilder")
 @js.native
-class FreeformBuilder protected () extends js.Object {
+trait FreeformBuilder extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   val Parent: js.Any = js.native

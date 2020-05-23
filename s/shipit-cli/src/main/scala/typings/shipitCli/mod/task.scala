@@ -1,6 +1,6 @@
 package typings.shipitCli.mod
 
-import typings.shipitCli.Typeofshipit
+import typings.shipitCli.anon.Typeofshipit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

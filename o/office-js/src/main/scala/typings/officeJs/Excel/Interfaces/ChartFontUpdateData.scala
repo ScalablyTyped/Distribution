@@ -18,7 +18,7 @@ trait ChartFontUpdateData extends js.Object {
   var bold: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -32,14 +32,14 @@ trait ChartFontUpdateData extends js.Object {
   var italic: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Font name (e.g. "Calibri")
+    * Font name (e.g., "Calibri")
     *
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Size of the font (e.g. 11)
+    * Size of the font (e.g., 11)
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -60,15 +60,15 @@ object ChartFontUpdateData {
     color: String = null,
     italic: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     underline: ChartUnderlineStyle | None | Single = null
   ): ChartFontUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartFontUpdateData]
   }

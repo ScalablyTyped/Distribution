@@ -1,7 +1,7 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.AnonHeight
-import typings.nightwatch.AnonX
+import typings.nightwatch.anon.Height
+import typings.nightwatch.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -112,7 +112,7 @@ trait ElementCommands extends js.Object {
   def getElementSize(selector: String): this.type = js.native
   def getElementSize(
     selector: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonHeight], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Height], Unit]
   ): this.type = js.native
   /**
     * Determine an element's location on the page. The point (0, 0) refers to the upper-left corner of the page.
@@ -134,7 +134,7 @@ trait ElementCommands extends js.Object {
   def getLocation(selector: String): this.type = js.native
   def getLocation(
     selector: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonX], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[X], Unit]
   ): this.type = js.native
   /**
     * Determine an element's location on the screen once it has been scrolled into view. Uses `elementIdLocationInView` protocol command.
@@ -154,7 +154,7 @@ trait ElementCommands extends js.Object {
   def getLocationInView(selector: String): this.type = js.native
   def getLocationInView(
     selector: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonX], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[X], Unit]
   ): this.type = js.native
   /**
     * Query for an element's tag name. Uses `elementIdName` protocol command.

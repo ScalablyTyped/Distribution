@@ -22,7 +22,7 @@ object TestEnv {
   ): TestEnv = {
     val __obj = js.Dynamic.literal(backendName = backendName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDataSync)) __obj.updateDynamic("isDataSync")(isDataSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDataSync)) __obj.updateDynamic("isDataSync")(isDataSync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestEnv]
   }
 }

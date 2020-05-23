@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait CommentReply extends js.Object {
   /**
-  		 * The value in the comment editor
-  		 */
+    * The value in the comment editor
+    */
   var text: String
   /**
-  		 * The active [comment thread](#CommentThread)
-  		 */
+    * The active [comment thread](#CommentThread)
+    */
   var thread: CommentThread
 }
 

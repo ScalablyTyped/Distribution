@@ -55,8 +55,8 @@ trait Wire extends Duplex {
   def bitfield(bitfield: Buffer): Unit = js.native
   def cancel(index: Double, offset: Double, length: Double): Unit = js.native
   def choke(): Unit = js.native
-  def extend(ext: String, obj: js.Any): Unit = js.native
-  def extend(ext: Double, obj: js.Any): Unit = js.native
+  def extended(ext: String, obj: js.Any): Unit = js.native
+  def extended(ext: Double, obj: js.Any): Unit = js.native
   def handshake(infoHash: String, peerId: String): Unit = js.native
   def handshake(infoHash: String, peerId: String, extensions: js.Any): Unit = js.native
   def handshake(infoHash: String, peerId: Buffer): Unit = js.native

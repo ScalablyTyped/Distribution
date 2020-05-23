@@ -26,7 +26,7 @@ object Node {
   @scala.inline
   def apply(
     `type`: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     data: Data = null,
     position: Position = null
   ): Node = {

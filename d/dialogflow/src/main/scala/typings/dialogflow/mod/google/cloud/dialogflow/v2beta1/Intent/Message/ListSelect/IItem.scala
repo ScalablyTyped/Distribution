@@ -21,16 +21,16 @@ trait IItem extends js.Object {
 object IItem {
   @scala.inline
   def apply(
-    description: String = null,
-    image: IImage = null,
-    info: ISelectItemInfo = null,
-    title: String = null
+    description: js.UndefOr[Null | String] = js.undefined,
+    image: js.UndefOr[Null | IImage] = js.undefined,
+    info: js.UndefOr[Null | ISelectItemInfo] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined
   ): IItem = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(image)) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItem]
   }
 }

@@ -56,7 +56,7 @@ trait PlusPayment extends js.Object {
   /**
     * 获取支付通道
     * 在进行支付操作前需获取终端支持的支付通道列表，用于提示用户进行选择。
-    * 	获取支付通道成功后通过successCB回调返回支持的所有通道列表，获取支付通道列表失败则通过errorCB回调返回。
+    *     获取支付通道成功后通过successCB回调返回支持的所有通道列表，获取支付通道列表失败则通过errorCB回调返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
@@ -69,7 +69,7 @@ trait PlusPayment extends js.Object {
   /**
     * 请求支付操作
     * 调用指定的支付通道进行支付操作，其中statement包含支付操作的相关信息，支付模块将弹出支付界面供用户进行支付信息的输入确认操作。
-    * 	用户支付操作成功后通过successCB回调返回支付操作结果，支付操作失败则通过errorCB回调返回。
+    *     用户支付操作成功后通过successCB回调返回支付操作结果，支付操作失败则通过errorCB回调返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */

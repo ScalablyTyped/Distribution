@@ -189,7 +189,7 @@ object Options {
   def apply(
     attrImageZoomSrc: String = null,
     borderColour: String = null,
-    borderSize: Int | Double = null,
+    borderSize: js.UndefOr[Double] = js.undefined,
     constrainSize: Double | `false` = null,
     constrainType: width | height = null,
     containLensZoom: js.UndefOr[Boolean] = js.undefined,
@@ -197,8 +197,8 @@ object Options {
     cursor: default | cursor | crosshair = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     easing: js.UndefOr[Boolean] = js.undefined,
-    easingAmount: Int | Double = null,
-    easingDuration: Int | Double = null,
+    easingAmount: js.UndefOr[Double] = js.undefined,
+    easingDuration: js.UndefOr[Double] = js.undefined,
     easingType: String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     gallery: String = null,
@@ -207,102 +207,102 @@ object Options {
     galleryItem: String = null,
     gallerySelector: String | `false` = null,
     imageCrossfade: js.UndefOr[Boolean] = js.undefined,
-    lensBorder: Int | Double = null,
+    lensBorder: js.UndefOr[Double] = js.undefined,
     lensColour: String = null,
-    lensFadeIn: Int | Double = null,
-    lensFadeOut: Int | Double = null,
-    lensOpacity: Int | Double = null,
+    lensFadeIn: js.UndefOr[Double] = js.undefined,
+    lensFadeOut: js.UndefOr[Double] = js.undefined,
+    lensOpacity: js.UndefOr[Double] = js.undefined,
     lensShape: square | round = null,
-    lensSize: Int | Double = null,
+    lensSize: js.UndefOr[Double] = js.undefined,
     lenszoom: js.UndefOr[Boolean] = js.undefined,
     loadingIcon: Boolean | String = null,
     mantainZoomAspectRatio: js.UndefOr[Boolean] = js.undefined,
     maxZoomLevel: Double | `false` = null,
-    minZoomLevel: Int | Double = null,
+    minZoomLevel: js.UndefOr[Double] = js.undefined,
     preloading: `0` | `1` = null,
     respond: js.Array[_] = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
     scrollZoom: js.UndefOr[Boolean] = js.undefined,
-    scrollZoomIncrement: Int | Double = null,
+    scrollZoomIncrement: js.UndefOr[Double] = js.undefined,
     tint: js.UndefOr[Boolean] = js.undefined,
     tintColour: String = null,
-    tintOpacity: Int | Double = null,
+    tintOpacity: js.UndefOr[Double] = js.undefined,
     touchEnabled: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null,
+    zIndex: js.UndefOr[Double] = js.undefined,
     zoomActivation: click | hover = null,
     zoomContainerAppendTo: String = null,
-    zoomId: Int | Double = null,
+    zoomId: js.UndefOr[Double] = js.undefined,
     zoomLens: js.UndefOr[Boolean] = js.undefined,
-    zoomLevel: Int | Double = null,
-    zoomTintFadeIn: Int | Double = null,
-    zoomTintFadeOut: Int | Double = null,
+    zoomLevel: js.UndefOr[Double] = js.undefined,
+    zoomTintFadeIn: js.UndefOr[Double] = js.undefined,
+    zoomTintFadeOut: js.UndefOr[Double] = js.undefined,
     zoomType: lens | window | inner = null,
-    zoomWindowFadeIn: Int | Double = null,
-    zoomWindowFadeOut: Int | Double = null,
-    zoomWindowHeight: Int | Double = null,
-    zoomWindowOffsetX: Int | Double = null,
-    zoomWindowOffsetY: Int | Double = null,
+    zoomWindowFadeIn: js.UndefOr[Double] = js.undefined,
+    zoomWindowFadeOut: js.UndefOr[Double] = js.undefined,
+    zoomWindowHeight: js.UndefOr[Double] = js.undefined,
+    zoomWindowOffsetX: js.UndefOr[Double] = js.undefined,
+    zoomWindowOffsetY: js.UndefOr[Double] = js.undefined,
     zoomWindowPosition: Double | String = null,
-    zoomWindowWidth: Int | Double = null
+    zoomWindowWidth: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (attrImageZoomSrc != null) __obj.updateDynamic("attrImageZoomSrc")(attrImageZoomSrc.asInstanceOf[js.Any])
     if (borderColour != null) __obj.updateDynamic("borderColour")(borderColour.asInstanceOf[js.Any])
-    if (borderSize != null) __obj.updateDynamic("borderSize")(borderSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderSize)) __obj.updateDynamic("borderSize")(borderSize.get.asInstanceOf[js.Any])
     if (constrainSize != null) __obj.updateDynamic("constrainSize")(constrainSize.asInstanceOf[js.Any])
     if (constrainType != null) __obj.updateDynamic("constrainType")(constrainType.asInstanceOf[js.Any])
-    if (!js.isUndefined(containLensZoom)) __obj.updateDynamic("containLensZoom")(containLensZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(containLensZoom)) __obj.updateDynamic("containLensZoom")(containLensZoom.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(easing)) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (easingAmount != null) __obj.updateDynamic("easingAmount")(easingAmount.asInstanceOf[js.Any])
-    if (easingDuration != null) __obj.updateDynamic("easingDuration")(easingDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(easing)) __obj.updateDynamic("easing")(easing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(easingAmount)) __obj.updateDynamic("easingAmount")(easingAmount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(easingDuration)) __obj.updateDynamic("easingDuration")(easingDuration.get.asInstanceOf[js.Any])
     if (easingType != null) __obj.updateDynamic("easingType")(easingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (gallery != null) __obj.updateDynamic("gallery")(gallery.asInstanceOf[js.Any])
     if (galleryActiveClass != null) __obj.updateDynamic("galleryActiveClass")(galleryActiveClass.asInstanceOf[js.Any])
     if (galleryEvent != null) __obj.updateDynamic("galleryEvent")(galleryEvent.asInstanceOf[js.Any])
     if (galleryItem != null) __obj.updateDynamic("galleryItem")(galleryItem.asInstanceOf[js.Any])
     if (gallerySelector != null) __obj.updateDynamic("gallerySelector")(gallerySelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageCrossfade)) __obj.updateDynamic("imageCrossfade")(imageCrossfade.asInstanceOf[js.Any])
-    if (lensBorder != null) __obj.updateDynamic("lensBorder")(lensBorder.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageCrossfade)) __obj.updateDynamic("imageCrossfade")(imageCrossfade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lensBorder)) __obj.updateDynamic("lensBorder")(lensBorder.get.asInstanceOf[js.Any])
     if (lensColour != null) __obj.updateDynamic("lensColour")(lensColour.asInstanceOf[js.Any])
-    if (lensFadeIn != null) __obj.updateDynamic("lensFadeIn")(lensFadeIn.asInstanceOf[js.Any])
-    if (lensFadeOut != null) __obj.updateDynamic("lensFadeOut")(lensFadeOut.asInstanceOf[js.Any])
-    if (lensOpacity != null) __obj.updateDynamic("lensOpacity")(lensOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(lensFadeIn)) __obj.updateDynamic("lensFadeIn")(lensFadeIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lensFadeOut)) __obj.updateDynamic("lensFadeOut")(lensFadeOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lensOpacity)) __obj.updateDynamic("lensOpacity")(lensOpacity.get.asInstanceOf[js.Any])
     if (lensShape != null) __obj.updateDynamic("lensShape")(lensShape.asInstanceOf[js.Any])
-    if (lensSize != null) __obj.updateDynamic("lensSize")(lensSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(lenszoom)) __obj.updateDynamic("lenszoom")(lenszoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(lensSize)) __obj.updateDynamic("lensSize")(lensSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lenszoom)) __obj.updateDynamic("lenszoom")(lenszoom.get.asInstanceOf[js.Any])
     if (loadingIcon != null) __obj.updateDynamic("loadingIcon")(loadingIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(mantainZoomAspectRatio)) __obj.updateDynamic("mantainZoomAspectRatio")(mantainZoomAspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(mantainZoomAspectRatio)) __obj.updateDynamic("mantainZoomAspectRatio")(mantainZoomAspectRatio.get.asInstanceOf[js.Any])
     if (maxZoomLevel != null) __obj.updateDynamic("maxZoomLevel")(maxZoomLevel.asInstanceOf[js.Any])
-    if (minZoomLevel != null) __obj.updateDynamic("minZoomLevel")(minZoomLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoomLevel)) __obj.updateDynamic("minZoomLevel")(minZoomLevel.get.asInstanceOf[js.Any])
     if (preloading != null) __obj.updateDynamic("preloading")(preloading.asInstanceOf[js.Any])
     if (respond != null) __obj.updateDynamic("respond")(respond.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.asInstanceOf[js.Any])
-    if (scrollZoomIncrement != null) __obj.updateDynamic("scrollZoomIncrement")(scrollZoomIncrement.asInstanceOf[js.Any])
-    if (!js.isUndefined(tint)) __obj.updateDynamic("tint")(tint.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollZoomIncrement)) __obj.updateDynamic("scrollZoomIncrement")(scrollZoomIncrement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tint)) __obj.updateDynamic("tint")(tint.get.asInstanceOf[js.Any])
     if (tintColour != null) __obj.updateDynamic("tintColour")(tintColour.asInstanceOf[js.Any])
-    if (tintOpacity != null) __obj.updateDynamic("tintOpacity")(tintOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tintOpacity)) __obj.updateDynamic("tintOpacity")(tintOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     if (zoomActivation != null) __obj.updateDynamic("zoomActivation")(zoomActivation.asInstanceOf[js.Any])
     if (zoomContainerAppendTo != null) __obj.updateDynamic("zoomContainerAppendTo")(zoomContainerAppendTo.asInstanceOf[js.Any])
-    if (zoomId != null) __obj.updateDynamic("zoomId")(zoomId.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomLens)) __obj.updateDynamic("zoomLens")(zoomLens.asInstanceOf[js.Any])
-    if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
-    if (zoomTintFadeIn != null) __obj.updateDynamic("zoomTintFadeIn")(zoomTintFadeIn.asInstanceOf[js.Any])
-    if (zoomTintFadeOut != null) __obj.updateDynamic("zoomTintFadeOut")(zoomTintFadeOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomId)) __obj.updateDynamic("zoomId")(zoomId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomLens)) __obj.updateDynamic("zoomLens")(zoomLens.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomLevel)) __obj.updateDynamic("zoomLevel")(zoomLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomTintFadeIn)) __obj.updateDynamic("zoomTintFadeIn")(zoomTintFadeIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomTintFadeOut)) __obj.updateDynamic("zoomTintFadeOut")(zoomTintFadeOut.get.asInstanceOf[js.Any])
     if (zoomType != null) __obj.updateDynamic("zoomType")(zoomType.asInstanceOf[js.Any])
-    if (zoomWindowFadeIn != null) __obj.updateDynamic("zoomWindowFadeIn")(zoomWindowFadeIn.asInstanceOf[js.Any])
-    if (zoomWindowFadeOut != null) __obj.updateDynamic("zoomWindowFadeOut")(zoomWindowFadeOut.asInstanceOf[js.Any])
-    if (zoomWindowHeight != null) __obj.updateDynamic("zoomWindowHeight")(zoomWindowHeight.asInstanceOf[js.Any])
-    if (zoomWindowOffsetX != null) __obj.updateDynamic("zoomWindowOffsetX")(zoomWindowOffsetX.asInstanceOf[js.Any])
-    if (zoomWindowOffsetY != null) __obj.updateDynamic("zoomWindowOffsetY")(zoomWindowOffsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomWindowFadeIn)) __obj.updateDynamic("zoomWindowFadeIn")(zoomWindowFadeIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomWindowFadeOut)) __obj.updateDynamic("zoomWindowFadeOut")(zoomWindowFadeOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomWindowHeight)) __obj.updateDynamic("zoomWindowHeight")(zoomWindowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomWindowOffsetX)) __obj.updateDynamic("zoomWindowOffsetX")(zoomWindowOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomWindowOffsetY)) __obj.updateDynamic("zoomWindowOffsetY")(zoomWindowOffsetY.get.asInstanceOf[js.Any])
     if (zoomWindowPosition != null) __obj.updateDynamic("zoomWindowPosition")(zoomWindowPosition.asInstanceOf[js.Any])
-    if (zoomWindowWidth != null) __obj.updateDynamic("zoomWindowWidth")(zoomWindowWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomWindowWidth)) __obj.updateDynamic("zoomWindowWidth")(zoomWindowWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

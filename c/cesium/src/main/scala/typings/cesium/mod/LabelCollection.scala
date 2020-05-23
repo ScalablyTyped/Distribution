@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonBlendOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "LabelCollection")
 @js.native
 class LabelCollection () extends js.Object {
-  def this(options: AnonBlendOption) = this()
+  def this(options: typings.cesium.anon.BlendOption) = this()
   var blendOption: BlendOption = js.native
   var debugShowBoundingVolume: Boolean = js.native
   var length: Double = js.native

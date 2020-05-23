@@ -1,6 +1,6 @@
 package typings.d3Collection.mod
 
-import typings.d3Collection.AnonKey
+import typings.d3Collection.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait Map_[T] extends js.Object {
     * Returns an array of key-value objects for each entry in this map. The order of the returned entries is arbitrary.
     * Each entry’s key is a string, but the value can have arbitrary type.
     */
-  def entries(): js.Array[AnonKey[T]]
+  def entries(): js.Array[Key[T]]
   /**
     * Returns the value for the specified key string.
     * If the map does not have an entry for the specified key, returns undefined.
@@ -78,7 +78,7 @@ object Map_ {
     clear: () => Unit,
     each: js.Function3[/* value */ T, /* key */ String, /* map */ Map_[T], Unit] => Unit,
     empty: () => Boolean,
-    entries: () => js.Array[AnonKey[T]],
+    entries: () => js.Array[Key[T]],
     get: String => js.UndefOr[T],
     has: String => Boolean,
     keys: () => js.Array[String],

@@ -17,11 +17,15 @@ trait ICreateSnapshotRequest extends js.Object {
 
 object ICreateSnapshotRequest {
   @scala.inline
-  def apply(labels: StringDictionary[String] = null, name: String = null, subscription: String = null): ICreateSnapshotRequest = {
+  def apply(
+    labels: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    subscription: js.UndefOr[Null | String] = js.undefined
+  ): ICreateSnapshotRequest = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateSnapshotRequest]
   }
 }

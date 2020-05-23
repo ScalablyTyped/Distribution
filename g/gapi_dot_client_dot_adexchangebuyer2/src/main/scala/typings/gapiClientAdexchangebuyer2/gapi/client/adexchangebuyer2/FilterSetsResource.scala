@@ -1,9 +1,9 @@
 package typings.gapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAdexchangebuyer2.AnonFields
-import typings.gapiClientAdexchangebuyer2.AnonIsTransient
-import typings.gapiClientAdexchangebuyer2.AnonPp
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientAdexchangebuyer2.anon.Fields
+import typings.gapiClientAdexchangebuyer2.anon.IsTransient
+import typings.gapiClientAdexchangebuyer2.anon.Pp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,19 +18,19 @@ trait FilterSetsResource extends js.Object {
   var losingBids: LosingBidsResource
   var nonBillableWinningBids: NonBillableWinningBidsResource
   /** Creates the specified filter set for the account with the given account ID. */
-  def create(request: AnonIsTransient): Request_[FilterSet]
+  def create(request: IsTransient): Request[FilterSet]
   /**
     * Deletes the requested filter set from the account with the given account
     * ID.
     */
-  def delete(request: AnonPp): Request_[js.Object]
+  def delete(request: Pp): Request[js.Object]
   /**
     * Retrieves the requested filter set for the account with the given account
     * ID.
     */
-  def get(request: AnonPp): Request_[FilterSet]
+  def get(request: Pp): Request[FilterSet]
   /** Lists all filter sets for the account with the given account ID. */
-  def list(request: AnonFields): Request_[ListFilterSetsResponse]
+  def list(request: Fields): Request[ListFilterSetsResponse]
 }
 
 object FilterSetsResource {
@@ -39,13 +39,13 @@ object FilterSetsResource {
     bidMetrics: BidMetricsResource,
     bidResponseErrors: BidResponseErrorsResource,
     bidResponsesWithoutBids: BidResponsesWithoutBidsResource,
-    create: AnonIsTransient => Request_[FilterSet],
-    delete: AnonPp => Request_[js.Object],
+    create: IsTransient => Request[FilterSet],
+    delete: Pp => Request[js.Object],
     filteredBidRequests: FilteredBidRequestsResource,
     filteredBids: FilteredBidsResource,
-    get: AnonPp => Request_[FilterSet],
+    get: Pp => Request[FilterSet],
     impressionMetrics: ImpressionMetricsResource,
-    list: AnonFields => Request_[ListFilterSetsResponse],
+    list: Fields => Request[ListFilterSetsResponse],
     losingBids: LosingBidsResource,
     nonBillableWinningBids: NonBillableWinningBidsResource
   ): FilterSetsResource = {

@@ -57,7 +57,7 @@ object UploadPartRequest {
     PartNumber: PartNumber,
     UploadId: MultipartUploadId,
     Body: Body = null,
-    ContentLength: Int | Double = null,
+    ContentLength: js.UndefOr[ContentLength] = js.undefined,
     ContentMD5: ContentMD5 = null,
     RequestPayer: RequestPayer = null,
     SSECustomerAlgorithm: SSECustomerAlgorithm = null,
@@ -66,7 +66,7 @@ object UploadPartRequest {
   ): UploadPartRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], PartNumber = PartNumber.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
     if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength.get.asInstanceOf[js.Any])
     if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])

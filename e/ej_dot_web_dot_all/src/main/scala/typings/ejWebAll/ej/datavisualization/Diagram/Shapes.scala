@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,35 +45,6 @@ object Shapes extends js.Object {
   //Used to specify node type as UMLClassifier
   @js.native
   sealed trait UMLClassifier extends Shapes
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Shapes with Double] = js.native
-  /* 6 */ @js.native
-  object BPMN extends TopLevel[BPMN with Double]
-  
-  /* 4 */ @js.native
-  object Basic extends TopLevel[Basic with Double]
-  
-  /* 5 */ @js.native
-  object Flow extends TopLevel[Flow with Double]
-  
-  /* 2 */ @js.native
-  object Html extends TopLevel[Html with Double]
-  
-  /* 1 */ @js.native
-  object Image extends TopLevel[Image with Double]
-  
-  /* 3 */ @js.native
-  object Native extends TopLevel[Native with Double]
-  
-  /* 0 */ @js.native
-  object Text extends TopLevel[Text with Double]
-  
-  /* 8 */ @js.native
-  object UMLActivity extends TopLevel[UMLActivity with Double]
-  
-  /* 7 */ @js.native
-  object UMLClassifier extends TopLevel[UMLClassifier with Double]
   
 }
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`cursor-update`
 import typings.arcgisJsApi.arcgisJsApiStrings.`draw-complete`
@@ -41,8 +40,4 @@ trait MultipointDrawAction extends DrawAction {
   @JSName("on")
   def on_vertexremove(name: `vertex-remove`, eventHandler: MultipointDrawActionVertexRemoveEventHandler): IHandle = js.native
 }
-
-@JSGlobal("__esri.MultipointDrawAction")
-@js.native
-object MultipointDrawAction extends TopLevel[MultipointDrawActionConstructor]
 

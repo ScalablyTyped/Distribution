@@ -83,7 +83,7 @@ trait Project extends js.Object {
     */
   var sourceVersion: js.UndefOr[String] = js.native
   /**
-    * The tags for this build project. These tags are available for use by AWS services that support AWS CodeBuild build project tags.
+    * A list of tag key and value pairs associated with this build project. These tags are available for use by AWS services that support AWS CodeBuild build project tags.
     */
   var tags: js.UndefOr[TagList] = js.native
   /**
@@ -115,7 +115,7 @@ object Project {
     lastModified: Timestamp = null,
     logsConfig: LogsConfig = null,
     name: ProjectName = null,
-    queuedTimeoutInMinutes: Int | Double = null,
+    queuedTimeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
     secondaryArtifacts: ProjectArtifactsList = null,
     secondarySourceVersions: ProjectSecondarySourceVersions = null,
     secondarySources: ProjectSources = null,
@@ -123,7 +123,7 @@ object Project {
     source: ProjectSource = null,
     sourceVersion: String = null,
     tags: TagList = null,
-    timeoutInMinutes: Int | Double = null,
+    timeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
     vpcConfig: VpcConfig = null,
     webhook: Webhook = null
   ): Project = {
@@ -140,7 +140,7 @@ object Project {
     if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
     if (logsConfig != null) __obj.updateDynamic("logsConfig")(logsConfig.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (queuedTimeoutInMinutes != null) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(queuedTimeoutInMinutes)) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.get.asInstanceOf[js.Any])
     if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts.asInstanceOf[js.Any])
     if (secondarySourceVersions != null) __obj.updateDynamic("secondarySourceVersions")(secondarySourceVersions.asInstanceOf[js.Any])
     if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources.asInstanceOf[js.Any])
@@ -148,7 +148,7 @@ object Project {
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timeoutInMinutes != null) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInMinutes)) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.get.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     if (webhook != null) __obj.updateDynamic("webhook")(webhook.asInstanceOf[js.Any])
     __obj.asInstanceOf[Project]

@@ -32,7 +32,7 @@ trait TouchOptions extends js.Object {
 object TouchOptions {
   @scala.inline
   def apply(
-    doubleTapTimeout: Int | Double = null,
+    doubleTapTimeout: js.UndefOr[Double] = js.undefined,
     doubletap: /* e */ TouchDoubletapEvent => Unit = null,
     drag: /* e */ TouchDragEvent => Unit = null,
     dragend: /* e */ TouchDragendEvent => Unit = null,
@@ -43,10 +43,10 @@ object TouchOptions {
     gestureend: /* e */ TouchGestureendEvent => Unit = null,
     gesturestart: /* e */ TouchGesturestartEvent => Unit = null,
     hold: /* e */ TouchHoldEvent => Unit = null,
-    maxDuration: Int | Double = null,
-    maxYDelta: Int | Double = null,
-    minHold: Int | Double = null,
-    minXDelta: Int | Double = null,
+    maxDuration: js.UndefOr[Double] = js.undefined,
+    maxYDelta: js.UndefOr[Double] = js.undefined,
+    minHold: js.UndefOr[Double] = js.undefined,
+    minXDelta: js.UndefOr[Double] = js.undefined,
     multiTouch: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     surface: JQuery = null,
@@ -55,22 +55,22 @@ object TouchOptions {
     touchstart: /* e */ TouchTouchstartEvent => Unit = null
   ): TouchOptions = {
     val __obj = js.Dynamic.literal()
-    if (doubleTapTimeout != null) __obj.updateDynamic("doubleTapTimeout")(doubleTapTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleTapTimeout)) __obj.updateDynamic("doubleTapTimeout")(doubleTapTimeout.get.asInstanceOf[js.Any])
     if (doubletap != null) __obj.updateDynamic("doubletap")(js.Any.fromFunction1(doubletap))
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
     if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
     if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1(dragstart))
-    if (!js.isUndefined(enableSwipe)) __obj.updateDynamic("enableSwipe")(enableSwipe.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSwipe)) __obj.updateDynamic("enableSwipe")(enableSwipe.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (gesturechange != null) __obj.updateDynamic("gesturechange")(js.Any.fromFunction1(gesturechange))
     if (gestureend != null) __obj.updateDynamic("gestureend")(js.Any.fromFunction1(gestureend))
     if (gesturestart != null) __obj.updateDynamic("gesturestart")(js.Any.fromFunction1(gesturestart))
     if (hold != null) __obj.updateDynamic("hold")(js.Any.fromFunction1(hold))
-    if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
-    if (maxYDelta != null) __obj.updateDynamic("maxYDelta")(maxYDelta.asInstanceOf[js.Any])
-    if (minHold != null) __obj.updateDynamic("minHold")(minHold.asInstanceOf[js.Any])
-    if (minXDelta != null) __obj.updateDynamic("minXDelta")(minXDelta.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiTouch)) __obj.updateDynamic("multiTouch")(multiTouch.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDuration)) __obj.updateDynamic("maxDuration")(maxDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxYDelta)) __obj.updateDynamic("maxYDelta")(maxYDelta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHold)) __obj.updateDynamic("minHold")(minHold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minXDelta)) __obj.updateDynamic("minXDelta")(minXDelta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiTouch)) __obj.updateDynamic("multiTouch")(multiTouch.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (surface != null) __obj.updateDynamic("surface")(surface.asInstanceOf[js.Any])
     if (swipe != null) __obj.updateDynamic("swipe")(js.Any.fromFunction1(swipe))

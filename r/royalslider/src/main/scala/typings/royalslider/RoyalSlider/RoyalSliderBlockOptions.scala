@@ -34,20 +34,20 @@ trait RoyalSliderBlockOptions extends js.Object {
 object RoyalSliderBlockOptions {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     easing: String = null,
     fadeEffect: js.UndefOr[Boolean] = js.undefined,
     moveEffect: String = null,
-    moveOffset: Int | Double = null,
-    speed: Int | Double = null
+    moveOffset: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined
   ): RoyalSliderBlockOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeEffect)) __obj.updateDynamic("fadeEffect")(fadeEffect.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeEffect)) __obj.updateDynamic("fadeEffect")(fadeEffect.get.asInstanceOf[js.Any])
     if (moveEffect != null) __obj.updateDynamic("moveEffect")(moveEffect.asInstanceOf[js.Any])
-    if (moveOffset != null) __obj.updateDynamic("moveOffset")(moveOffset.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveOffset)) __obj.updateDynamic("moveOffset")(moveOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderBlockOptions]
   }
 }

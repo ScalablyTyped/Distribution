@@ -1,6 +1,6 @@
 package typings.istanbulLibReport.mod
 
-import typings.istanbulLibReport.PartialReportBaseOptions
+import typings.istanbulLibReport.anon.PartialReportBaseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

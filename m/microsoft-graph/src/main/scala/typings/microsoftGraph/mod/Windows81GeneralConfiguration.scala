@@ -113,66 +113,66 @@ object Windows81GeneralConfiguration {
     id: String = null,
     lastModifiedDateTime: String = null,
     passwordBlockPicturePasswordAndPin: js.UndefOr[Boolean] = js.undefined,
-    passwordExpirationDays: Int | Double = null,
-    passwordMinimumCharacterSetCount: Int | Double = null,
-    passwordMinimumLength: Int | Double = null,
-    passwordMinutesOfInactivityBeforeScreenTimeout: Int | Double = null,
-    passwordPreviousPasswordBlockCount: Int | Double = null,
+    passwordExpirationDays: js.UndefOr[Double] = js.undefined,
+    passwordMinimumCharacterSetCount: js.UndefOr[Double] = js.undefined,
+    passwordMinimumLength: js.UndefOr[Double] = js.undefined,
+    passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[Double] = js.undefined,
+    passwordPreviousPasswordBlockCount: js.UndefOr[Double] = js.undefined,
     passwordRequiredType: RequiredPasswordType = null,
-    passwordSignInFailureCountBeforeFactoryReset: Int | Double = null,
+    passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[Double] = js.undefined,
     storageRequireDeviceEncryption: js.UndefOr[Boolean] = js.undefined,
     updatesRequireAutomaticUpdates: js.UndefOr[Boolean] = js.undefined,
     userAccountControlSettings: WindowsUserAccountControlSettings = null,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     workFoldersUrl: String = null
   ): Windows81GeneralConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accountsBlockAddingNonMicrosoftAccountEmail)) __obj.updateDynamic("accountsBlockAddingNonMicrosoftAccountEmail")(accountsBlockAddingNonMicrosoftAccountEmail.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyOnlyToWindows81)) __obj.updateDynamic("applyOnlyToWindows81")(applyOnlyToWindows81.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountsBlockAddingNonMicrosoftAccountEmail)) __obj.updateDynamic("accountsBlockAddingNonMicrosoftAccountEmail")(accountsBlockAddingNonMicrosoftAccountEmail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyOnlyToWindows81)) __obj.updateDynamic("applyOnlyToWindows81")(applyOnlyToWindows81.get.asInstanceOf[js.Any])
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserBlockAutofill)) __obj.updateDynamic("browserBlockAutofill")(browserBlockAutofill.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserBlockAutomaticDetectionOfIntranetSites)) __obj.updateDynamic("browserBlockAutomaticDetectionOfIntranetSites")(browserBlockAutomaticDetectionOfIntranetSites.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserBlockEnterpriseModeAccess)) __obj.updateDynamic("browserBlockEnterpriseModeAccess")(browserBlockEnterpriseModeAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserBlockJavaScript)) __obj.updateDynamic("browserBlockJavaScript")(browserBlockJavaScript.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserBlockPlugins)) __obj.updateDynamic("browserBlockPlugins")(browserBlockPlugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserBlockPopups)) __obj.updateDynamic("browserBlockPopups")(browserBlockPopups.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserBlockSendingDoNotTrackHeader)) __obj.updateDynamic("browserBlockSendingDoNotTrackHeader")(browserBlockSendingDoNotTrackHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserBlockSingleWordEntryOnIntranetSites)) __obj.updateDynamic("browserBlockSingleWordEntryOnIntranetSites")(browserBlockSingleWordEntryOnIntranetSites.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserBlockAutofill)) __obj.updateDynamic("browserBlockAutofill")(browserBlockAutofill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserBlockAutomaticDetectionOfIntranetSites)) __obj.updateDynamic("browserBlockAutomaticDetectionOfIntranetSites")(browserBlockAutomaticDetectionOfIntranetSites.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserBlockEnterpriseModeAccess)) __obj.updateDynamic("browserBlockEnterpriseModeAccess")(browserBlockEnterpriseModeAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserBlockJavaScript)) __obj.updateDynamic("browserBlockJavaScript")(browserBlockJavaScript.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserBlockPlugins)) __obj.updateDynamic("browserBlockPlugins")(browserBlockPlugins.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserBlockPopups)) __obj.updateDynamic("browserBlockPopups")(browserBlockPopups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserBlockSendingDoNotTrackHeader)) __obj.updateDynamic("browserBlockSendingDoNotTrackHeader")(browserBlockSendingDoNotTrackHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserBlockSingleWordEntryOnIntranetSites)) __obj.updateDynamic("browserBlockSingleWordEntryOnIntranetSites")(browserBlockSingleWordEntryOnIntranetSites.get.asInstanceOf[js.Any])
     if (browserEnterpriseModeSiteListLocation != null) __obj.updateDynamic("browserEnterpriseModeSiteListLocation")(browserEnterpriseModeSiteListLocation.asInstanceOf[js.Any])
     if (browserInternetSecurityLevel != null) __obj.updateDynamic("browserInternetSecurityLevel")(browserInternetSecurityLevel.asInstanceOf[js.Any])
     if (browserIntranetSecurityLevel != null) __obj.updateDynamic("browserIntranetSecurityLevel")(browserIntranetSecurityLevel.asInstanceOf[js.Any])
     if (browserLoggingReportLocation != null) __obj.updateDynamic("browserLoggingReportLocation")(browserLoggingReportLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserRequireFirewall)) __obj.updateDynamic("browserRequireFirewall")(browserRequireFirewall.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserRequireFraudWarning)) __obj.updateDynamic("browserRequireFraudWarning")(browserRequireFraudWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserRequireHighSecurityForRestrictedSites)) __obj.updateDynamic("browserRequireHighSecurityForRestrictedSites")(browserRequireHighSecurityForRestrictedSites.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserRequireSmartScreen)) __obj.updateDynamic("browserRequireSmartScreen")(browserRequireSmartScreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserRequireFirewall)) __obj.updateDynamic("browserRequireFirewall")(browserRequireFirewall.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserRequireFraudWarning)) __obj.updateDynamic("browserRequireFraudWarning")(browserRequireFraudWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserRequireHighSecurityForRestrictedSites)) __obj.updateDynamic("browserRequireHighSecurityForRestrictedSites")(browserRequireHighSecurityForRestrictedSites.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserRequireSmartScreen)) __obj.updateDynamic("browserRequireSmartScreen")(browserRequireSmartScreen.get.asInstanceOf[js.Any])
     if (browserTrustedSitesSecurityLevel != null) __obj.updateDynamic("browserTrustedSitesSecurityLevel")(browserTrustedSitesSecurityLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularBlockDataRoaming)) __obj.updateDynamic("cellularBlockDataRoaming")(cellularBlockDataRoaming.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularBlockDataRoaming)) __obj.updateDynamic("cellularBlockDataRoaming")(cellularBlockDataRoaming.get.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
     if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
     if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(diagnosticsBlockDataSubmission)) __obj.updateDynamic("diagnosticsBlockDataSubmission")(diagnosticsBlockDataSubmission.asInstanceOf[js.Any])
+    if (!js.isUndefined(diagnosticsBlockDataSubmission)) __obj.updateDynamic("diagnosticsBlockDataSubmission")(diagnosticsBlockDataSubmission.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordBlockPicturePasswordAndPin)) __obj.updateDynamic("passwordBlockPicturePasswordAndPin")(passwordBlockPicturePasswordAndPin.asInstanceOf[js.Any])
-    if (passwordExpirationDays != null) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.asInstanceOf[js.Any])
-    if (passwordMinimumCharacterSetCount != null) __obj.updateDynamic("passwordMinimumCharacterSetCount")(passwordMinimumCharacterSetCount.asInstanceOf[js.Any])
-    if (passwordMinimumLength != null) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.asInstanceOf[js.Any])
-    if (passwordMinutesOfInactivityBeforeScreenTimeout != null) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.asInstanceOf[js.Any])
-    if (passwordPreviousPasswordBlockCount != null) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordBlockPicturePasswordAndPin)) __obj.updateDynamic("passwordBlockPicturePasswordAndPin")(passwordBlockPicturePasswordAndPin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordExpirationDays)) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumCharacterSetCount)) __obj.updateDynamic("passwordMinimumCharacterSetCount")(passwordMinimumCharacterSetCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumLength)) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinutesOfInactivityBeforeScreenTimeout)) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordPreviousPasswordBlockCount)) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.get.asInstanceOf[js.Any])
     if (passwordRequiredType != null) __obj.updateDynamic("passwordRequiredType")(passwordRequiredType.asInstanceOf[js.Any])
-    if (passwordSignInFailureCountBeforeFactoryReset != null) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageRequireDeviceEncryption)) __obj.updateDynamic("storageRequireDeviceEncryption")(storageRequireDeviceEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatesRequireAutomaticUpdates)) __obj.updateDynamic("updatesRequireAutomaticUpdates")(updatesRequireAutomaticUpdates.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordSignInFailureCountBeforeFactoryReset)) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageRequireDeviceEncryption)) __obj.updateDynamic("storageRequireDeviceEncryption")(storageRequireDeviceEncryption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updatesRequireAutomaticUpdates)) __obj.updateDynamic("updatesRequireAutomaticUpdates")(updatesRequireAutomaticUpdates.get.asInstanceOf[js.Any])
     if (userAccountControlSettings != null) __obj.updateDynamic("userAccountControlSettings")(userAccountControlSettings.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     if (workFoldersUrl != null) __obj.updateDynamic("workFoldersUrl")(workFoldersUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Windows81GeneralConfiguration]
   }

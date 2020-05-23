@@ -1,8 +1,8 @@
 package typings.xstream
 
 import typings.node.eventsMod.EventEmitter
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.xstream.mod.InternalListener
 import typings.xstream.mod.InternalProducer
 import typings.xstream.mod.Stream
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fromEventMod extends js.Object {
   @js.native
-  class DOMEventProducer protected () extends InternalProducer[Event_] {
+  class DOMEventProducer protected () extends InternalProducer[Event] {
     def this(node: EventTarget, eventType: String, useCapture: Boolean) = this()
     var eventType: js.Any = js.native
     var listener: js.UndefOr[js.Any] = js.native
@@ -22,7 +22,7 @@ object fromEventMod extends js.Object {
     var `type`: String = js.native
     var useCapture: js.Any = js.native
     /* CompleteClass */
-    override def _start(listener: InternalListener[Event_]): Unit = js.native
+    override def _start(listener: InternalListener[Event]): Unit = js.native
     /* CompleteClass */
     override def _stop(): Unit = js.native
   }
@@ -42,7 +42,7 @@ object fromEventMod extends js.Object {
   }
   
   def default[T](element: EventEmitter, eventName: String): Stream[T] = js.native
-  def default[T /* <: Event_ */](element: EventTarget, eventName: String): Stream[T] = js.native
-  def default[T /* <: Event_ */](element: EventTarget, eventName: String, useCapture: Boolean): Stream[T] = js.native
+  def default[T /* <: Event */](element: EventTarget, eventName: String): Stream[T] = js.native
+  def default[T /* <: Event */](element: EventTarget, eventName: String, useCapture: Boolean): Stream[T] = js.native
 }
 

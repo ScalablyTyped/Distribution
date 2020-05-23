@@ -13,8 +13,7 @@ trait MenuPortalState extends js.Object {
 object MenuPortalState {
   @scala.inline
   def apply(placement: bottom | top = null): MenuPortalState = {
-    val __obj = js.Dynamic.literal()
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuPortalState]
   }
 }

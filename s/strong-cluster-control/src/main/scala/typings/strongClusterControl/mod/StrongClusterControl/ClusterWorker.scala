@@ -10,9 +10,9 @@ trait ClusterWorker extends ClusterMaster {
 
 object ClusterWorker {
   @scala.inline
-  def apply(id: Double, pid: Double, startTime: Double, setSize: Int | Double = null): ClusterWorker = {
+  def apply(id: Double, pid: Double, startTime: Double, setSize: js.UndefOr[Double] = js.undefined): ClusterWorker = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (setSize != null) __obj.updateDynamic("setSize")(setSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(setSize)) __obj.updateDynamic("setSize")(setSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterWorker]
   }
 }

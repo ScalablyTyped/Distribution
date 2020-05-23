@@ -1,6 +1,8 @@
 package typings.zrender
 
 import org.scalablytyped.runtime.Instantiable6
+import typings.zrender.anon.AddColorStop
+import typings.zrender.anon.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +22,10 @@ object zrender extends js.Object {
           js.UndefOr[/* y2 */ Y2], 
           js.UndefOr[/* colorStops */ ColorStops], 
           js.UndefOr[/* globalCoord */ GlobalCoords], 
-          AnonAddColorStop
+          AddColorStop
         ]
   
-  type ColorStops = js.Array[AnonColor]
+  type ColorStops = js.Array[Color]
   type GlobalCoords = Boolean
   type X = Double
   type X2 = Double

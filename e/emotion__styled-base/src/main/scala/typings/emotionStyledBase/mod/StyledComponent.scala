@@ -1,7 +1,7 @@
 package typings.emotionStyledBase.mod
 
 import typings.emotionSerialize.mod.ComponentSelector
-import typings.emotionStyledBase.AnonThemeTheme
+import typings.emotionStyledBase.anon.ThemeTheme
 import typings.emotionStyledBase.emotionStyledBaseStrings.`object`
 import typings.emotionStyledBase.emotionStyledBaseStrings.`var`
 import typings.emotionStyledBase.emotionStyledBaseStrings.a
@@ -354,7 +354,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
   extends ComponentSelector
-     with FunctionComponent[InnerProps with StyleProps with AnonThemeTheme[Theme]] {
+     with FunctionComponent[InnerProps with StyleProps with ThemeTheme[Theme]] {
   def withComponent[Tag /* <: ComponentType[_] */](tag: Tag): StyledComponent[PropsOf[Tag], StyleProps, Theme] = js.native
   /**
     * @desc this method is type-unsafe

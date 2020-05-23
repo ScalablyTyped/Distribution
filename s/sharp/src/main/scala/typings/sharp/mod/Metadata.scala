@@ -58,49 +58,49 @@ object Metadata {
     chromaSubsampling: String,
     channels: Channels = null,
     delay: js.Array[Double] = null,
-    density: Int | Double = null,
+    density: js.UndefOr[Double] = js.undefined,
     depth: String = null,
     exif: Buffer = null,
     format: String = null,
     hasAlpha: js.UndefOr[Boolean] = js.undefined,
     hasProfile: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     icc: Buffer = null,
     iptc: Buffer = null,
     isProgressive: js.UndefOr[Boolean] = js.undefined,
-    loop: Int | Double = null,
-    orientation: Int | Double = null,
-    pageHeight: Int | Double = null,
-    pagePrimary: Int | Double = null,
-    pages: Int | Double = null,
-    size: Int | Double = null,
+    loop: js.UndefOr[Double] = js.undefined,
+    orientation: js.UndefOr[Double] = js.undefined,
+    pageHeight: js.UndefOr[Double] = js.undefined,
+    pagePrimary: js.UndefOr[Double] = js.undefined,
+    pages: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
     space: String = null,
     tifftagPhotoshop: Buffer = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     xmp: Buffer = null
   ): Metadata = {
     val __obj = js.Dynamic.literal(chromaSubsampling = chromaSubsampling.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (!js.isUndefined(density)) __obj.updateDynamic("density")(density.get.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (exif != null) __obj.updateDynamic("exif")(exif.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasAlpha)) __obj.updateDynamic("hasAlpha")(hasAlpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasProfile)) __obj.updateDynamic("hasProfile")(hasProfile.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAlpha)) __obj.updateDynamic("hasAlpha")(hasAlpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasProfile)) __obj.updateDynamic("hasProfile")(hasProfile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (icc != null) __obj.updateDynamic("icc")(icc.asInstanceOf[js.Any])
     if (iptc != null) __obj.updateDynamic("iptc")(iptc.asInstanceOf[js.Any])
-    if (!js.isUndefined(isProgressive)) __obj.updateDynamic("isProgressive")(isProgressive.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (pageHeight != null) __obj.updateDynamic("pageHeight")(pageHeight.asInstanceOf[js.Any])
-    if (pagePrimary != null) __obj.updateDynamic("pagePrimary")(pagePrimary.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProgressive)) __obj.updateDynamic("isProgressive")(isProgressive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageHeight)) __obj.updateDynamic("pageHeight")(pageHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagePrimary)) __obj.updateDynamic("pagePrimary")(pagePrimary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pages)) __obj.updateDynamic("pages")(pages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     if (tifftagPhotoshop != null) __obj.updateDynamic("tifftagPhotoshop")(tifftagPhotoshop.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (xmp != null) __obj.updateDynamic("xmp")(xmp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }

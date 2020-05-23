@@ -10,6 +10,7 @@ import typings.vegaTypings.valuesMod.FontStyleValue
 import typings.vegaTypings.valuesMod.FontWeightValue
 import typings.vegaTypings.valuesMod.NumberValue
 import typings.vegaTypings.valuesMod.StringValue
+import typings.vegaTypings.valuesMod.StrokeCapValue
 import typings.vegaTypings.valuesMod.TextBaselineValue
 import typings.vegaTypings.vegaTypingsStrings.center
 import typings.vegaTypings.vegaTypingsStrings.extent
@@ -18,12 +19,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseAxis extends js.Object {
+  // ---------- ARIA ----------
+  /**
+    * A boolean flag indicating if [ARIA attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) should be included (SVG output only).
+    * If `false`, the "aria-hidden" attribute will be set on the output SVG group, removing the axis from the ARIA accessibility tree.
+    *
+    * __Default value:__ `true`
+    */
+  var aria: js.UndefOr[Boolean] = js.undefined
   /**
     * An interpolation fraction indicating where, for `band` scales, axis ticks should be positioned. A value of `0` places ticks at the left edge of their bands. A value of `0.5` places ticks in the middle of their bands.
     *
     *  __Default value:__ `0.5`
     */
   var bandPosition: js.UndefOr[NumberValue] = js.undefined
+  /**
+    * A text description of this axis for [ARIA accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) (SVG output only).
+    * If the `aria` property is true, for SVG output the ["aria-label" attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute) will be set to this description.
+    * If the description is unspecified it will be automatically generated.
+    */
+  var description: js.UndefOr[String] = js.undefined
   // ---------- Domain ----------
   /**
     * A boolean flag indicating if the domain (the axis baseline) should be included as part of the axis.
@@ -31,6 +46,12 @@ trait BaseAxis extends js.Object {
     * __Default value:__ `true`
     */
   var domain: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The stroke cap for the domain line's ending style. One of `"butt"`, `"round"` or `"square"`.
+    *
+    * __Default value:__ `"butt"`
+    */
+  var domainCap: js.UndefOr[StrokeCapValue] = js.undefined
   /**
     * Color of axis domain line.
     *
@@ -60,6 +81,12 @@ trait BaseAxis extends js.Object {
     * A boolean flag indicating if grid lines should be included as part of the axis.
     */
   var grid: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The stroke cap for grid lines' ending style. One of `"butt"`, `"round"` or `"square"`.
+    *
+    * __Default value:__ `"butt"`
+    */
+  var gridCap: js.UndefOr[StrokeCapValue] = js.undefined
   /**
     * Color of gridlines.
     *
@@ -203,6 +230,12 @@ trait BaseAxis extends js.Object {
     */
   var tickBand: js.UndefOr[center | extent | SignalRef] = js.undefined
   /**
+    * The stroke cap for the tick lines' ending style. One of `"butt"`, `"round"` or `"square"`.
+    *
+    * __Default value:__ `"butt"`
+    */
+  var tickCap: js.UndefOr[StrokeCapValue] = js.undefined
+  /**
     * The color of the axis's tick.
     *
     * __Default value:__ `"gray"`
@@ -326,137 +359,13 @@ trait BaseAxis extends js.Object {
     *
     * __Default value:__ `0.5`
     */
-  var translate: js.UndefOr[Double] = js.undefined
-}
-
-object BaseAxis {
-  @scala.inline
-  def apply(
-    bandPosition: NumberValue = null,
-    domain: js.UndefOr[Boolean] = js.undefined,
-    domainColor: ColorValue = null,
-    domainDash: DashArrayValue = null,
-    domainDashOffset: NumberValue = null,
-    domainOpacity: NumberValue = null,
-    domainWidth: NumberValue = null,
-    grid: js.UndefOr[Boolean] = js.undefined,
-    gridColor: ColorValue = null,
-    gridDash: DashArrayValue = null,
-    gridDashOffset: NumberValue = null,
-    gridOpacity: NumberValue = null,
-    gridWidth: NumberValue = null,
-    labelAlign: AlignValue = null,
-    labelAngle: NumberValue = null,
-    labelBaseline: TextBaselineValue = null,
-    labelBound: Double | Boolean | SignalRef = null,
-    labelColor: ColorValue = null,
-    labelFlush: Double | Boolean | SignalRef = null,
-    labelFlushOffset: Double | SignalRef = null,
-    labelFont: StringValue = null,
-    labelFontSize: NumberValue = null,
-    labelFontStyle: FontStyleValue = null,
-    labelFontWeight: FontWeightValue = null,
-    labelLimit: NumberValue = null,
-    labelLineHeight: NumberValue = null,
-    labelOffset: NumberValue = null,
-    labelOpacity: NumberValue = null,
-    labelOverlap: LabelOverlap | SignalRef = null,
-    labelPadding: NumberValue = null,
-    labelSeparation: Double | SignalRef = null,
-    labels: js.UndefOr[Boolean] = js.undefined,
-    maxExtent: NumberValue = null,
-    minExtent: NumberValue = null,
-    tickBand: center | extent | SignalRef = null,
-    tickColor: ColorValue = null,
-    tickDash: DashArrayValue = null,
-    tickDashOffset: NumberValue = null,
-    tickExtra: BooleanValue = null,
-    tickOffset: NumberValue = null,
-    tickOpacity: NumberValue = null,
-    tickRound: BooleanValue = null,
-    tickSize: NumberValue = null,
-    tickWidth: NumberValue = null,
-    ticks: BooleanValue = null,
-    titleAlign: AlignValue = null,
-    titleAnchor: AnchorValue = null,
-    titleAngle: NumberValue = null,
-    titleBaseline: TextBaselineValue = null,
-    titleColor: ColorValue = null,
-    titleFont: StringValue = null,
-    titleFontSize: NumberValue = null,
-    titleFontStyle: FontStyleValue = null,
-    titleFontWeight: FontWeightValue = null,
-    titleLimit: NumberValue = null,
-    titleLineHeight: NumberValue = null,
-    titleOpacity: NumberValue = null,
-    titlePadding: NumberValue = null,
-    titleX: NumberValue = null,
-    titleY: NumberValue = null,
-    translate: Int | Double = null
-  ): BaseAxis = {
-    val __obj = js.Dynamic.literal()
-    if (bandPosition != null) __obj.updateDynamic("bandPosition")(bandPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(domain)) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (domainColor != null) __obj.updateDynamic("domainColor")(domainColor.asInstanceOf[js.Any])
-    if (domainDash != null) __obj.updateDynamic("domainDash")(domainDash.asInstanceOf[js.Any])
-    if (domainDashOffset != null) __obj.updateDynamic("domainDashOffset")(domainDashOffset.asInstanceOf[js.Any])
-    if (domainOpacity != null) __obj.updateDynamic("domainOpacity")(domainOpacity.asInstanceOf[js.Any])
-    if (domainWidth != null) __obj.updateDynamic("domainWidth")(domainWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (gridColor != null) __obj.updateDynamic("gridColor")(gridColor.asInstanceOf[js.Any])
-    if (gridDash != null) __obj.updateDynamic("gridDash")(gridDash.asInstanceOf[js.Any])
-    if (gridDashOffset != null) __obj.updateDynamic("gridDashOffset")(gridDashOffset.asInstanceOf[js.Any])
-    if (gridOpacity != null) __obj.updateDynamic("gridOpacity")(gridOpacity.asInstanceOf[js.Any])
-    if (gridWidth != null) __obj.updateDynamic("gridWidth")(gridWidth.asInstanceOf[js.Any])
-    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
-    if (labelAngle != null) __obj.updateDynamic("labelAngle")(labelAngle.asInstanceOf[js.Any])
-    if (labelBaseline != null) __obj.updateDynamic("labelBaseline")(labelBaseline.asInstanceOf[js.Any])
-    if (labelBound != null) __obj.updateDynamic("labelBound")(labelBound.asInstanceOf[js.Any])
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
-    if (labelFlush != null) __obj.updateDynamic("labelFlush")(labelFlush.asInstanceOf[js.Any])
-    if (labelFlushOffset != null) __obj.updateDynamic("labelFlushOffset")(labelFlushOffset.asInstanceOf[js.Any])
-    if (labelFont != null) __obj.updateDynamic("labelFont")(labelFont.asInstanceOf[js.Any])
-    if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
-    if (labelFontStyle != null) __obj.updateDynamic("labelFontStyle")(labelFontStyle.asInstanceOf[js.Any])
-    if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight.asInstanceOf[js.Any])
-    if (labelLimit != null) __obj.updateDynamic("labelLimit")(labelLimit.asInstanceOf[js.Any])
-    if (labelLineHeight != null) __obj.updateDynamic("labelLineHeight")(labelLineHeight.asInstanceOf[js.Any])
-    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset.asInstanceOf[js.Any])
-    if (labelOpacity != null) __obj.updateDynamic("labelOpacity")(labelOpacity.asInstanceOf[js.Any])
-    if (labelOverlap != null) __obj.updateDynamic("labelOverlap")(labelOverlap.asInstanceOf[js.Any])
-    if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
-    if (labelSeparation != null) __obj.updateDynamic("labelSeparation")(labelSeparation.asInstanceOf[js.Any])
-    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (maxExtent != null) __obj.updateDynamic("maxExtent")(maxExtent.asInstanceOf[js.Any])
-    if (minExtent != null) __obj.updateDynamic("minExtent")(minExtent.asInstanceOf[js.Any])
-    if (tickBand != null) __obj.updateDynamic("tickBand")(tickBand.asInstanceOf[js.Any])
-    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
-    if (tickDash != null) __obj.updateDynamic("tickDash")(tickDash.asInstanceOf[js.Any])
-    if (tickDashOffset != null) __obj.updateDynamic("tickDashOffset")(tickDashOffset.asInstanceOf[js.Any])
-    if (tickExtra != null) __obj.updateDynamic("tickExtra")(tickExtra.asInstanceOf[js.Any])
-    if (tickOffset != null) __obj.updateDynamic("tickOffset")(tickOffset.asInstanceOf[js.Any])
-    if (tickOpacity != null) __obj.updateDynamic("tickOpacity")(tickOpacity.asInstanceOf[js.Any])
-    if (tickRound != null) __obj.updateDynamic("tickRound")(tickRound.asInstanceOf[js.Any])
-    if (tickSize != null) __obj.updateDynamic("tickSize")(tickSize.asInstanceOf[js.Any])
-    if (tickWidth != null) __obj.updateDynamic("tickWidth")(tickWidth.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign.asInstanceOf[js.Any])
-    if (titleAnchor != null) __obj.updateDynamic("titleAnchor")(titleAnchor.asInstanceOf[js.Any])
-    if (titleAngle != null) __obj.updateDynamic("titleAngle")(titleAngle.asInstanceOf[js.Any])
-    if (titleBaseline != null) __obj.updateDynamic("titleBaseline")(titleBaseline.asInstanceOf[js.Any])
-    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor.asInstanceOf[js.Any])
-    if (titleFont != null) __obj.updateDynamic("titleFont")(titleFont.asInstanceOf[js.Any])
-    if (titleFontSize != null) __obj.updateDynamic("titleFontSize")(titleFontSize.asInstanceOf[js.Any])
-    if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle.asInstanceOf[js.Any])
-    if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight.asInstanceOf[js.Any])
-    if (titleLimit != null) __obj.updateDynamic("titleLimit")(titleLimit.asInstanceOf[js.Any])
-    if (titleLineHeight != null) __obj.updateDynamic("titleLineHeight")(titleLineHeight.asInstanceOf[js.Any])
-    if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
-    if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
-    if (titleX != null) __obj.updateDynamic("titleX")(titleX.asInstanceOf[js.Any])
-    if (titleY != null) __obj.updateDynamic("titleY")(titleY.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BaseAxis]
-  }
+  var translate: js.UndefOr[NumberValue] = js.undefined
+  /**
+    * The integer z-index indicating the layering of the axis group relative to other axis, mark, and legend groups.
+    *
+    * @TJS-type integer
+    * @minimum 0
+    */
+  var zindex: js.UndefOr[Double] = js.undefined
 }
 

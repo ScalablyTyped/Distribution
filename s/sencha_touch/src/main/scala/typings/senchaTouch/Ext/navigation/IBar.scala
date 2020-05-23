@@ -12,12 +12,12 @@ trait IBar extends ITitleBar {
   @JSName("cls")
   var cls_IBar: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of androidAnimation
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAndroidAnimation: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Sets the value of androidAnimation
-  		* @param androidAnimation Boolean The new value.
-  		*/
+    * @param androidAnimation Boolean The new value.
+    */
   var setAndroidAnimation: js.UndefOr[js.Function1[/* androidAnimation */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 
@@ -32,7 +32,7 @@ object IBar {
   ): IBar = {
     val __obj = js.Dynamic.literal()
     if (ITitleBar != null) js.Dynamic.global.Object.assign(__obj, ITitleBar)
-    if (!js.isUndefined(androidAnimation)) __obj.updateDynamic("androidAnimation")(androidAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidAnimation)) __obj.updateDynamic("androidAnimation")(androidAnimation.get.asInstanceOf[js.Any])
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
     if (getAndroidAnimation != null) __obj.updateDynamic("getAndroidAnimation")(js.Any.fromFunction0(getAndroidAnimation))
     if (setAndroidAnimation != null) __obj.updateDynamic("setAndroidAnimation")(js.Any.fromFunction1(setAndroidAnimation))

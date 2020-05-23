@@ -16,18 +16,18 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    pollPeriod: Int | Double = null,
-    retries: Int | Double = null,
-    retryWait: Int | Double = null,
-    stale: Int | Double = null,
-    wait: Int | Double = null
+    pollPeriod: js.UndefOr[Double] = js.undefined,
+    retries: js.UndefOr[Double] = js.undefined,
+    retryWait: js.UndefOr[Double] = js.undefined,
+    stale: js.UndefOr[Double] = js.undefined,
+    wait: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (pollPeriod != null) __obj.updateDynamic("pollPeriod")(pollPeriod.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (retryWait != null) __obj.updateDynamic("retryWait")(retryWait.asInstanceOf[js.Any])
-    if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
-    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollPeriod)) __obj.updateDynamic("pollPeriod")(pollPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryWait)) __obj.updateDynamic("retryWait")(retryWait.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

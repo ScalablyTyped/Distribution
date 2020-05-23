@@ -17,14 +17,14 @@ trait MaintenanceWindow extends js.Object {
 object MaintenanceWindow {
   @scala.inline
   def apply(
-    day: Int | Double = null,
-    hour: Int | Double = null,
+    day: js.UndefOr[Double] = js.undefined,
+    hour: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     updateTrack: String = null
   ): MaintenanceWindow = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
+    if (!js.isUndefined(day)) __obj.updateDynamic("day")(day.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour)) __obj.updateDynamic("hour")(hour.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (updateTrack != null) __obj.updateDynamic("updateTrack")(updateTrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindow]

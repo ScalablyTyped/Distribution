@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object transformFile extends js.Object {
   def apply(filename: String, callback: FileResultCallback): Unit = js.native
-  def apply(filename: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
-  def apply(filename: String, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
+  def apply(filename: String, opts: js.UndefOr[TransformOptions], callback: FileResultCallback): Unit = js.native
 }
 

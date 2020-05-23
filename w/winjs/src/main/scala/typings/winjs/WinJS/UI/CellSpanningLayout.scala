@@ -8,81 +8,72 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a layout for the ListView in which items are arranged in a grid and items can span multiple grid cells.
   **/
-@JSGlobal("WinJS.UI.CellSpanningLayout")
-@js.native
-//#region Constructors
-/**
-  * Creates a new CellSpanningLayout.
-  * @constructor
-  * @param options An object that contains one or more property/value pairs to apply to the new CellSpanningLayout. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
-  **/
-class CellSpanningLayout () extends js.Object {
-  def this(options: js.Any) = this()
+trait CellSpanningLayout extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
     * Gets or sets the position of group headers relative to their items.
     **/
-  var groupHeaderPosition: HeaderPosition = js.native
+  var groupHeaderPosition: HeaderPosition
   /**
     * Gets or sets a function that enables cell-spanning and establishes base cell dimensions.
     **/
-  var groupInfo: js.Function = js.native
+  var groupInfo: js.Function
   /**
     * Gets or sets a function that returns the width and height of an item, as well as whether it should appear in a new column. Setting this function improves performance because the ListView can allocate space for an item without having to measure it first.
     **/
-  var itemInfo: js.Function = js.native
+  var itemInfo: js.Function
   /**
     * Gets or set the maximum number of rows or columns, depending on the orientation, to display before content begins to wrap.
     **/
-  var maximumRowsOrColumns: Double = js.native
+  var maximumRowsOrColumns: Double
   /**
     * This API supports the Windows Library for JavaScript infrastructure and is not intended to be used directly from your code.
     **/
-  var numberOfItemsPerItemsBlock: js.Any = js.native
+  var numberOfItemsPerItemsBlock: js.Any
   /**
     * Gets the orientation of the CellSpanningLayout. For a CellSpanningLayout, this property always returns Orientation.horizontal.
     **/
-  var orientation: Orientation = js.native
+  var orientation: Orientation
   //#endregion Constructors
   //#region Methods
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def dragLeave(): Unit = js.native
+  def dragLeave(): Unit
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def dragOver(): Unit = js.native
+  def dragOver(): Unit
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def executeAnimations(): Unit = js.native
+  def executeAnimations(): Unit
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param currentItem An object that describes the current item. It has these properties: index, type.
     * @param pressedKey The key that was pressed.
     * @returns An object that describes the next item that should receive focus. It has these properties: index, type.
     **/
-  def getAdjacent(currentItem: js.Any, pressedKey: Key): js.Any = js.native
+  def getAdjacent(currentItem: js.Any, pressedKey: Key): js.Any
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param x The x-coordinate, or the horizontal position on the screen.
     * @param y The y-coordinate, or the vertical position on the screen.
     **/
-  def hitTest(x: Double, y: Double): Unit = js.native
+  def hitTest(x: Double, y: Double): Unit
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param site The rendering site for the layout.
     * @param groupsEnabled Set to true if this layout supports groups; set to false if it does not.
     **/
-  def initialize(site: ILayoutSite2, groupsEnabled: Boolean): Unit = js.native
+  def initialize(site: ILayoutSite2, groupsEnabled: Boolean): Unit
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param firstPixel The first pixel the range of items falls between.
     * @param lastPixel The last pixel the range of items falls between.
     **/
-  def itemsFromRange(firstPixel: Double, lastPixel: Double): Unit = js.native
+  def itemsFromRange(firstPixel: Double, lastPixel: Double): Unit
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param tree
@@ -90,24 +81,39 @@ class CellSpanningLayout () extends js.Object {
     * @param modifiedItems
     * @param modifiedGroups
     **/
-  def layout(tree: ILayoutSite2, changedRange: js.Any, modifiedItems: js.Any, modifiedGroups: js.Any): Unit = js.native
+  def layout(tree: ILayoutSite2, changedRange: js.Any, modifiedItems: js.Any, modifiedGroups: js.Any): Unit
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def setupAnimations(): Unit = js.native
+  def setupAnimations(): Unit
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def uninitialize(): Unit = js.native
+  def uninitialize(): Unit
 }
 
-/* static members */
-@JSGlobal("WinJS.UI.CellSpanningLayout")
-@js.native
-object CellSpanningLayout extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
+object CellSpanningLayout {
+  @scala.inline
+  def apply(
+    dragLeave: () => Unit,
+    dragOver: () => Unit,
+    executeAnimations: () => Unit,
+    getAdjacent: (js.Any, Key) => js.Any,
+    groupHeaderPosition: HeaderPosition,
+    groupInfo: js.Function,
+    hitTest: (Double, Double) => Unit,
+    initialize: (ILayoutSite2, Boolean) => Unit,
+    itemInfo: js.Function,
+    itemsFromRange: (Double, Double) => Unit,
+    layout: (ILayoutSite2, js.Any, js.Any, js.Any) => Unit,
+    maximumRowsOrColumns: Double,
+    numberOfItemsPerItemsBlock: js.Any,
+    orientation: Orientation,
+    setupAnimations: () => Unit,
+    uninitialize: () => Unit
+  ): CellSpanningLayout = {
+    val __obj = js.Dynamic.literal(dragLeave = js.Any.fromFunction0(dragLeave), dragOver = js.Any.fromFunction0(dragOver), executeAnimations = js.Any.fromFunction0(executeAnimations), getAdjacent = js.Any.fromFunction2(getAdjacent), groupHeaderPosition = groupHeaderPosition.asInstanceOf[js.Any], groupInfo = groupInfo.asInstanceOf[js.Any], hitTest = js.Any.fromFunction2(hitTest), initialize = js.Any.fromFunction2(initialize), itemInfo = itemInfo.asInstanceOf[js.Any], itemsFromRange = js.Any.fromFunction2(itemsFromRange), layout = js.Any.fromFunction4(layout), maximumRowsOrColumns = maximumRowsOrColumns.asInstanceOf[js.Any], numberOfItemsPerItemsBlock = numberOfItemsPerItemsBlock.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], setupAnimations = js.Any.fromFunction0(setupAnimations), uninitialize = js.Any.fromFunction0(uninitialize))
+    __obj.asInstanceOf[CellSpanningLayout]
+  }
 }
 

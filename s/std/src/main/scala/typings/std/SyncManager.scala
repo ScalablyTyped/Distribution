@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,14 @@ trait SyncManager extends js.Object {
   def register(tag: java.lang.String): js.Promise[Unit]
 }
 
-@JSGlobal("SyncManager")
-@js.native
-object SyncManager extends Instantiable0[SyncManager]
+object SyncManager {
+  @scala.inline
+  def apply(
+    getTags: () => js.Promise[js.Array[java.lang.String]],
+    register: java.lang.String => js.Promise[Unit]
+  ): SyncManager = {
+    val __obj = js.Dynamic.literal(getTags = js.Any.fromFunction0(getTags), register = js.Any.fromFunction1(register))
+    __obj.asInstanceOf[SyncManager]
+  }
+}
 

@@ -11,9 +11,9 @@ trait ConsumerProps[T] extends js.Object {
 
 object ConsumerProps {
   @scala.inline
-  def apply[T](children: T => RaxNode, unstable_observedBits: Int | Double = null): ConsumerProps[T] = {
+  def apply[T](children: T => RaxNode, unstable_observedBits: js.UndefOr[Double] = js.undefined): ConsumerProps[T] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (unstable_observedBits != null) __obj.updateDynamic("unstable_observedBits")(unstable_observedBits.asInstanceOf[js.Any])
+    if (!js.isUndefined(unstable_observedBits)) __obj.updateDynamic("unstable_observedBits")(unstable_observedBits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumerProps[T]]
   }
 }

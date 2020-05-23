@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait DecoratedComponentClass[FormData, P, ErrorType]
-  extends Instantiable0[FormInstance[FormData, P, ErrorType]]
-     with Instantiable1[/* props */ P, FormInstance[FormData, P, ErrorType]]
-     with Instantiable2[/* props */ P, /* context */ js.Any, FormInstance[FormData, P, ErrorType]]
+trait DecoratedComponentClass[FormData, P]
+  extends Instantiable0[FormInstance[FormData, P]]
+     with Instantiable1[/* props */ P, FormInstance[FormData, P]]
+     with Instantiable2[/* props */ P, /* context */ js.Any, FormInstance[FormData, P]]
 

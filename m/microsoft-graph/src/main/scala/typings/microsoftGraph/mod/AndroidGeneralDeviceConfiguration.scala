@@ -156,13 +156,13 @@ object AndroidGeneralDeviceConfiguration {
     nfcBlocked: js.UndefOr[Boolean] = js.undefined,
     passwordBlockFingerprintUnlock: js.UndefOr[Boolean] = js.undefined,
     passwordBlockTrustAgents: js.UndefOr[Boolean] = js.undefined,
-    passwordExpirationDays: Int | Double = null,
-    passwordMinimumLength: Int | Double = null,
-    passwordMinutesOfInactivityBeforeScreenTimeout: Int | Double = null,
-    passwordPreviousPasswordBlockCount: Int | Double = null,
+    passwordExpirationDays: js.UndefOr[Double] = js.undefined,
+    passwordMinimumLength: js.UndefOr[Double] = js.undefined,
+    passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[Double] = js.undefined,
+    passwordPreviousPasswordBlockCount: js.UndefOr[Double] = js.undefined,
     passwordRequired: js.UndefOr[Boolean] = js.undefined,
     passwordRequiredType: AndroidRequiredPasswordType = null,
-    passwordSignInFailureCountBeforeFactoryReset: Int | Double = null,
+    passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[Double] = js.undefined,
     powerOffBlocked: js.UndefOr[Boolean] = js.undefined,
     screenCaptureBlocked: js.UndefOr[Boolean] = js.undefined,
     securityRequireVerifyApps: js.UndefOr[Boolean] = js.undefined,
@@ -172,7 +172,7 @@ object AndroidGeneralDeviceConfiguration {
     storageRequireRemovableStorageEncryption: js.UndefOr[Boolean] = js.undefined,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     voiceAssistantBlocked: js.UndefOr[Boolean] = js.undefined,
     voiceDialingBlocked: js.UndefOr[Boolean] = js.undefined,
     webBrowserBlockAutofill: js.UndefOr[Boolean] = js.undefined,
@@ -183,66 +183,66 @@ object AndroidGeneralDeviceConfiguration {
     wiFiBlocked: js.UndefOr[Boolean] = js.undefined
   ): AndroidGeneralDeviceConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appsBlockClipboardSharing)) __obj.updateDynamic("appsBlockClipboardSharing")(appsBlockClipboardSharing.asInstanceOf[js.Any])
-    if (!js.isUndefined(appsBlockCopyPaste)) __obj.updateDynamic("appsBlockCopyPaste")(appsBlockCopyPaste.asInstanceOf[js.Any])
-    if (!js.isUndefined(appsBlockYouTube)) __obj.updateDynamic("appsBlockYouTube")(appsBlockYouTube.asInstanceOf[js.Any])
+    if (!js.isUndefined(appsBlockClipboardSharing)) __obj.updateDynamic("appsBlockClipboardSharing")(appsBlockClipboardSharing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appsBlockCopyPaste)) __obj.updateDynamic("appsBlockCopyPaste")(appsBlockCopyPaste.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appsBlockYouTube)) __obj.updateDynamic("appsBlockYouTube")(appsBlockYouTube.get.asInstanceOf[js.Any])
     if (appsHideList != null) __obj.updateDynamic("appsHideList")(appsHideList.asInstanceOf[js.Any])
     if (appsInstallAllowList != null) __obj.updateDynamic("appsInstallAllowList")(appsInstallAllowList.asInstanceOf[js.Any])
     if (appsLaunchBlockList != null) __obj.updateDynamic("appsLaunchBlockList")(appsLaunchBlockList.asInstanceOf[js.Any])
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothBlocked)) __obj.updateDynamic("bluetoothBlocked")(bluetoothBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(cameraBlocked)) __obj.updateDynamic("cameraBlocked")(cameraBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularBlockDataRoaming)) __obj.updateDynamic("cellularBlockDataRoaming")(cellularBlockDataRoaming.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularBlockMessaging)) __obj.updateDynamic("cellularBlockMessaging")(cellularBlockMessaging.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularBlockVoiceRoaming)) __obj.updateDynamic("cellularBlockVoiceRoaming")(cellularBlockVoiceRoaming.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularBlockWiFiTethering)) __obj.updateDynamic("cellularBlockWiFiTethering")(cellularBlockWiFiTethering.asInstanceOf[js.Any])
+    if (!js.isUndefined(bluetoothBlocked)) __obj.updateDynamic("bluetoothBlocked")(bluetoothBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cameraBlocked)) __obj.updateDynamic("cameraBlocked")(cameraBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularBlockDataRoaming)) __obj.updateDynamic("cellularBlockDataRoaming")(cellularBlockDataRoaming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularBlockMessaging)) __obj.updateDynamic("cellularBlockMessaging")(cellularBlockMessaging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularBlockVoiceRoaming)) __obj.updateDynamic("cellularBlockVoiceRoaming")(cellularBlockVoiceRoaming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularBlockWiFiTethering)) __obj.updateDynamic("cellularBlockWiFiTethering")(cellularBlockWiFiTethering.get.asInstanceOf[js.Any])
     if (compliantAppListType != null) __obj.updateDynamic("compliantAppListType")(compliantAppListType.asInstanceOf[js.Any])
     if (compliantAppsList != null) __obj.updateDynamic("compliantAppsList")(compliantAppsList.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
-    if (!js.isUndefined(deviceSharingAllowed)) __obj.updateDynamic("deviceSharingAllowed")(deviceSharingAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceSharingAllowed)) __obj.updateDynamic("deviceSharingAllowed")(deviceSharingAllowed.get.asInstanceOf[js.Any])
     if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
     if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(diagnosticDataBlockSubmission)) __obj.updateDynamic("diagnosticDataBlockSubmission")(diagnosticDataBlockSubmission.asInstanceOf[js.Any])
+    if (!js.isUndefined(diagnosticDataBlockSubmission)) __obj.updateDynamic("diagnosticDataBlockSubmission")(diagnosticDataBlockSubmission.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(factoryResetBlocked)) __obj.updateDynamic("factoryResetBlocked")(factoryResetBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(googleAccountBlockAutoSync)) __obj.updateDynamic("googleAccountBlockAutoSync")(googleAccountBlockAutoSync.asInstanceOf[js.Any])
-    if (!js.isUndefined(googlePlayStoreBlocked)) __obj.updateDynamic("googlePlayStoreBlocked")(googlePlayStoreBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(factoryResetBlocked)) __obj.updateDynamic("factoryResetBlocked")(factoryResetBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(googleAccountBlockAutoSync)) __obj.updateDynamic("googleAccountBlockAutoSync")(googleAccountBlockAutoSync.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(googlePlayStoreBlocked)) __obj.updateDynamic("googlePlayStoreBlocked")(googlePlayStoreBlocked.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kioskModeApps != null) __obj.updateDynamic("kioskModeApps")(kioskModeApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(kioskModeBlockSleepButton)) __obj.updateDynamic("kioskModeBlockSleepButton")(kioskModeBlockSleepButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(kioskModeBlockVolumeButtons)) __obj.updateDynamic("kioskModeBlockVolumeButtons")(kioskModeBlockVolumeButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(kioskModeBlockSleepButton)) __obj.updateDynamic("kioskModeBlockSleepButton")(kioskModeBlockSleepButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(kioskModeBlockVolumeButtons)) __obj.updateDynamic("kioskModeBlockVolumeButtons")(kioskModeBlockVolumeButtons.get.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(locationServicesBlocked)) __obj.updateDynamic("locationServicesBlocked")(locationServicesBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(nfcBlocked)) __obj.updateDynamic("nfcBlocked")(nfcBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordBlockFingerprintUnlock)) __obj.updateDynamic("passwordBlockFingerprintUnlock")(passwordBlockFingerprintUnlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordBlockTrustAgents)) __obj.updateDynamic("passwordBlockTrustAgents")(passwordBlockTrustAgents.asInstanceOf[js.Any])
-    if (passwordExpirationDays != null) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.asInstanceOf[js.Any])
-    if (passwordMinimumLength != null) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.asInstanceOf[js.Any])
-    if (passwordMinutesOfInactivityBeforeScreenTimeout != null) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.asInstanceOf[js.Any])
-    if (passwordPreviousPasswordBlockCount != null) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationServicesBlocked)) __obj.updateDynamic("locationServicesBlocked")(locationServicesBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nfcBlocked)) __obj.updateDynamic("nfcBlocked")(nfcBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordBlockFingerprintUnlock)) __obj.updateDynamic("passwordBlockFingerprintUnlock")(passwordBlockFingerprintUnlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordBlockTrustAgents)) __obj.updateDynamic("passwordBlockTrustAgents")(passwordBlockTrustAgents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordExpirationDays)) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumLength)) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinutesOfInactivityBeforeScreenTimeout)) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordPreviousPasswordBlockCount)) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.get.asInstanceOf[js.Any])
     if (passwordRequiredType != null) __obj.updateDynamic("passwordRequiredType")(passwordRequiredType.asInstanceOf[js.Any])
-    if (passwordSignInFailureCountBeforeFactoryReset != null) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(powerOffBlocked)) __obj.updateDynamic("powerOffBlocked")(powerOffBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenCaptureBlocked)) __obj.updateDynamic("screenCaptureBlocked")(screenCaptureBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityRequireVerifyApps)) __obj.updateDynamic("securityRequireVerifyApps")(securityRequireVerifyApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageBlockGoogleBackup)) __obj.updateDynamic("storageBlockGoogleBackup")(storageBlockGoogleBackup.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageBlockRemovableStorage)) __obj.updateDynamic("storageBlockRemovableStorage")(storageBlockRemovableStorage.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageRequireDeviceEncryption)) __obj.updateDynamic("storageRequireDeviceEncryption")(storageRequireDeviceEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageRequireRemovableStorageEncryption)) __obj.updateDynamic("storageRequireRemovableStorageEncryption")(storageRequireRemovableStorageEncryption.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordSignInFailureCountBeforeFactoryReset)) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(powerOffBlocked)) __obj.updateDynamic("powerOffBlocked")(powerOffBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenCaptureBlocked)) __obj.updateDynamic("screenCaptureBlocked")(screenCaptureBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(securityRequireVerifyApps)) __obj.updateDynamic("securityRequireVerifyApps")(securityRequireVerifyApps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageBlockGoogleBackup)) __obj.updateDynamic("storageBlockGoogleBackup")(storageBlockGoogleBackup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageBlockRemovableStorage)) __obj.updateDynamic("storageBlockRemovableStorage")(storageBlockRemovableStorage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageRequireDeviceEncryption)) __obj.updateDynamic("storageRequireDeviceEncryption")(storageRequireDeviceEncryption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageRequireRemovableStorageEncryption)) __obj.updateDynamic("storageRequireRemovableStorageEncryption")(storageRequireRemovableStorageEncryption.get.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(voiceAssistantBlocked)) __obj.updateDynamic("voiceAssistantBlocked")(voiceAssistantBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(voiceDialingBlocked)) __obj.updateDynamic("voiceDialingBlocked")(voiceDialingBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(webBrowserBlockAutofill)) __obj.updateDynamic("webBrowserBlockAutofill")(webBrowserBlockAutofill.asInstanceOf[js.Any])
-    if (!js.isUndefined(webBrowserBlockJavaScript)) __obj.updateDynamic("webBrowserBlockJavaScript")(webBrowserBlockJavaScript.asInstanceOf[js.Any])
-    if (!js.isUndefined(webBrowserBlockPopups)) __obj.updateDynamic("webBrowserBlockPopups")(webBrowserBlockPopups.asInstanceOf[js.Any])
-    if (!js.isUndefined(webBrowserBlocked)) __obj.updateDynamic("webBrowserBlocked")(webBrowserBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(voiceAssistantBlocked)) __obj.updateDynamic("voiceAssistantBlocked")(voiceAssistantBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(voiceDialingBlocked)) __obj.updateDynamic("voiceDialingBlocked")(voiceDialingBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webBrowserBlockAutofill)) __obj.updateDynamic("webBrowserBlockAutofill")(webBrowserBlockAutofill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webBrowserBlockJavaScript)) __obj.updateDynamic("webBrowserBlockJavaScript")(webBrowserBlockJavaScript.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webBrowserBlockPopups)) __obj.updateDynamic("webBrowserBlockPopups")(webBrowserBlockPopups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webBrowserBlocked)) __obj.updateDynamic("webBrowserBlocked")(webBrowserBlocked.get.asInstanceOf[js.Any])
     if (webBrowserCookieSettings != null) __obj.updateDynamic("webBrowserCookieSettings")(webBrowserCookieSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(wiFiBlocked)) __obj.updateDynamic("wiFiBlocked")(wiFiBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(wiFiBlocked)) __obj.updateDynamic("wiFiBlocked")(wiFiBlocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidGeneralDeviceConfiguration]
   }
 }

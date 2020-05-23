@@ -1,7 +1,7 @@
 package typings.qlikEngineapi.EngineAPI
 
-import typings.qlikEngineapi.AnonQEndIndex
-import typings.qlikEngineapi.AnonQFieldValues
+import typings.qlikEngineapi.anon.QEndIndex
+import typings.qlikEngineapi.anon.QFieldValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait IGenericBookmark extends js.Object {
     * @param qDataPage - Start and End of DataPage
     * @returns - A promise of Array of FieldValues.
     */
-  def getFieldValues(qField: String, qGetExcludedValues: Boolean, qDataPage: AnonQEndIndex): js.Promise[AnonQFieldValues]
+  def getFieldValues(qField: String, qGetExcludedValues: Boolean, qDataPage: QEndIndex): js.Promise[QFieldValues]
   /**
     * Returns:
     *
@@ -83,7 +83,7 @@ object IGenericBookmark {
   def apply(
     apply: () => js.Promise[Boolean],
     applyPatches: js.Array[INxPatch] => js.Promise[Unit],
-    getFieldValues: (String, Boolean, AnonQEndIndex) => js.Promise[AnonQFieldValues],
+    getFieldValues: (String, Boolean, QEndIndex) => js.Promise[QFieldValues],
     getInfo: () => js.Promise[INxInfo],
     getLayout: () => js.Promise[IGenericBookmarkLayout],
     getProperties: () => js.Promise[IGenericBookmarkProperties],

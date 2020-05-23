@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleAuthLibrary.googleauthMod.ProjectIdCallback
 import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleAuthLibrary.mod.OAuth2Client
+import typings.googleGax.apitypesMod.APICallback
 import typings.googleGax.apitypesMod.CancellableStream
 import typings.googleGax.apitypesMod.ResponseType
 import typings.googleGax.callMod.CancellablePromise
@@ -56,25 +57,25 @@ class OperationsClient protected () extends js.Object {
     * const client = longrunning.operationsClient();
     * await client.cancelOperation({name: ''});
     */
-  def cancelOperation(request: js.Any): (CancellablePromise[
+  def cancelOperation(request: js.Object): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
-      js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[js.Object | Operation_]
+      js.UndefOr[(StringDictionary[String | Double | js.Object]) | Null], 
+      js.UndefOr[js.Object | Operation_ | Null]
     ]
   ]) | CancellableStream = js.native
-  def cancelOperation(request: js.Any, options: js.Any): (CancellablePromise[
+  def cancelOperation(request: js.Object, options: js.Object): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
-      js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[js.Object | Operation_]
+      js.UndefOr[(StringDictionary[String | Double | js.Object]) | Null], 
+      js.UndefOr[js.Object | Operation_ | Null]
     ]
   ]) | CancellableStream = js.native
-  def cancelOperation(request: js.Any, options: js.Any, callback: js.Any): (CancellablePromise[
+  def cancelOperation(request: js.Object, options: js.Object, callback: APICallback): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
-      js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[js.Object | Operation_]
+      js.UndefOr[(StringDictionary[String | Double | js.Object]) | Null], 
+      js.UndefOr[js.Object | Operation_ | Null]
     ]
   ]) | CancellableStream = js.native
   /**
@@ -101,11 +102,11 @@ class OperationsClient protected () extends js.Object {
     * const client = longrunning.operationsClient();
     * await client.deleteOperation({name: ''});
     */
-  def deleteOperation(request: js.Any, options: js.Any, callback: js.Any): (CancellablePromise[
+  def deleteOperation(request: js.Object, options: js.Object, callback: APICallback): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
-      js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[js.Object | Operation_]
+      js.UndefOr[(StringDictionary[String | Double | js.Object]) | Null], 
+      js.UndefOr[js.Object | Operation_ | Null]
     ]
   ]) | CancellableStream = js.native
   /**
@@ -142,15 +143,15 @@ class OperationsClient protected () extends js.Object {
   def getOperation(request: js.Object, options: js.Object): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
-      js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[js.Object | Operation_]
+      js.UndefOr[(StringDictionary[String | Double | js.Object]) | Null], 
+      js.UndefOr[js.Object | Operation_ | Null]
     ]
   ]) | CancellableStream = js.native
-  def getOperation(request: js.Object, options: js.Object, callback: js.Any): (CancellablePromise[
+  def getOperation(request: js.Object, options: js.Object, callback: APICallback): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
-      js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[js.Object | Operation_]
+      js.UndefOr[(StringDictionary[String | Double | js.Object]) | Null], 
+      js.UndefOr[js.Object | Operation_ | Null]
     ]
   ]) | CancellableStream = js.native
   /**
@@ -237,11 +238,11 @@ class OperationsClient protected () extends js.Object {
     *   }
     * };
     */
-  def listOperations(request: js.Any, options: js.Any, callback: js.Any): (CancellablePromise[
+  def listOperations(request: js.Object, options: js.Object, callback: APICallback): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
-      js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[js.Object | Operation_]
+      js.UndefOr[(StringDictionary[String | Double | js.Object]) | Null], 
+      js.UndefOr[js.Object | Operation_ | Null]
     ]
   ]) | CancellableStream = js.native
   /**

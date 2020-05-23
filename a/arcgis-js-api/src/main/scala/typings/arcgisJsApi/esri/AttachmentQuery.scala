@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,8 +77,4 @@ trait AttachmentQuery
     */
   var where: String = js.native
 }
-
-@JSGlobal("__esri.AttachmentQuery")
-@js.native
-object AttachmentQuery extends TopLevel[AttachmentQueryConstructor]
 

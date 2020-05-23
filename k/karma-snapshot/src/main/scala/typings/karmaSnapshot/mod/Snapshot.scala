@@ -36,9 +36,9 @@ object Snapshot {
     visited: js.UndefOr[Boolean] = js.undefined
   ): Snapshot = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.get.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited.asInstanceOf[js.Any])
+    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }
 }

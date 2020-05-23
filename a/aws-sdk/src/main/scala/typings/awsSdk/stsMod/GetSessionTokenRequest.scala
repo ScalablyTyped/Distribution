@@ -24,12 +24,12 @@ trait GetSessionTokenRequest extends TemporaryCredentialsOptions {
 object GetSessionTokenRequest {
   @scala.inline
   def apply(
-    DurationSeconds: Int | Double = null,
+    DurationSeconds: js.UndefOr[durationSecondsType] = js.undefined,
     SerialNumber: serialNumberType = null,
     TokenCode: tokenCodeType = null
   ): GetSessionTokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
     if (SerialNumber != null) __obj.updateDynamic("SerialNumber")(SerialNumber.asInstanceOf[js.Any])
     if (TokenCode != null) __obj.updateDynamic("TokenCode")(TokenCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSessionTokenRequest]

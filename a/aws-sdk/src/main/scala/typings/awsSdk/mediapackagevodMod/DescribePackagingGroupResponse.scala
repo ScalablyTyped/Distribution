@@ -18,15 +18,17 @@ trait DescribePackagingGroupResponse extends js.Object {
     * The ID of the PackagingGroup.
     */
   var Id: js.UndefOr[string] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.native
 }
 
 object DescribePackagingGroupResponse {
   @scala.inline
-  def apply(Arn: string = null, DomainName: string = null, Id: string = null): DescribePackagingGroupResponse = {
+  def apply(Arn: string = null, DomainName: string = null, Id: string = null, Tags: Tags = null): DescribePackagingGroupResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePackagingGroupResponse]
   }
 }

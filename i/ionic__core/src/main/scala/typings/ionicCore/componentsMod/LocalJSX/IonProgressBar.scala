@@ -39,20 +39,20 @@ trait IonProgressBar extends js.Object {
 object IonProgressBar {
   @scala.inline
   def apply(
-    buffer: Int | Double = null,
+    buffer: js.UndefOr[Double] = js.undefined,
     color: Color = null,
     mode: ios | md = null,
     reversed: js.UndefOr[Boolean] = js.undefined,
     `type`: determinate | indeterminate = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): IonProgressBar = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonProgressBar]
   }
 }

@@ -182,7 +182,8 @@ object mod extends js.Object {
   def panPow(domain: js.Array[Double], delta: Double, exponent: Double): js.Array[Double] = js.native
   def panSymlog(domain: js.Array[Double], delta: Double, constant: Double): js.Array[Double] = js.native
   def parse(spec: Spec): Runtime = js.native
-  def parse(spec: Spec, opt: js.Any): Runtime = js.native
+  def parse(spec: Spec, config: js.Any): Runtime = js.native
+  def parse(spec: Spec, config: js.Any, opt: js.Object): Runtime = js.native
   def peek(array: js.Array[_]): js.Any = js.native
   def projection(`type`: String, projection: js.Any): typings.vegaTypings.runtimeMod.View = js.native
   def quarter(date: Double): Double = js.native
@@ -228,12 +229,7 @@ object mod extends js.Object {
   def utcquarter(date: Double): Double = js.native
   def utcquarter(date: Date): Double = js.native
   def visitArray(
-    array: js.UndefOr[scala.Nothing],
-    filter: js.Function1[/* any */ js.Any, js.UndefOr[Boolean]],
-    visitor: js.Function3[/* v */ js.Any, /* i */ Double, /* arr */ js.Array[_], Unit]
-  ): Unit = js.native
-  def visitArray(
-    array: js.Array[_],
+    array: js.UndefOr[js.Array[_]],
     filter: js.Function1[/* any */ js.Any, js.UndefOr[Boolean]],
     visitor: js.Function3[/* v */ js.Any, /* i */ Double, /* arr */ js.Array[_], Unit]
   ): Unit = js.native

@@ -125,7 +125,7 @@ object TwitterTimelineWidgetOptions {
     counturl: String = null,
     dnt: js.UndefOr[Boolean] = js.undefined,
     hashtags: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     lang: String = null,
     linkColor: String = null,
     related: String = null,
@@ -133,7 +133,7 @@ object TwitterTimelineWidgetOptions {
     size: medium | large = null,
     text: String = null,
     theme: dark | light = null,
-    tweetLimit: Int | Double = null,
+    tweetLimit: js.UndefOr[Double] = js.undefined,
     via: String = null,
     width: Double | auto = null
   ): TwitterTimelineWidgetOptions = {
@@ -146,17 +146,17 @@ object TwitterTimelineWidgetOptions {
     if (conversation != null) __obj.updateDynamic("conversation")(conversation.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (counturl != null) __obj.updateDynamic("counturl")(counturl.asInstanceOf[js.Any])
-    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.asInstanceOf[js.Any])
+    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.get.asInstanceOf[js.Any])
     if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (linkColor != null) __obj.updateDynamic("linkColor")(linkColor.asInstanceOf[js.Any])
     if (related != null) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
-    if (!js.isUndefined(showReplies)) __obj.updateDynamic("showReplies")(showReplies.asInstanceOf[js.Any])
+    if (!js.isUndefined(showReplies)) __obj.updateDynamic("showReplies")(showReplies.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tweetLimit != null) __obj.updateDynamic("tweetLimit")(tweetLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(tweetLimit)) __obj.updateDynamic("tweetLimit")(tweetLimit.get.asInstanceOf[js.Any])
     if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterTimelineWidgetOptions]

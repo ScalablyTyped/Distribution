@@ -41,14 +41,14 @@ object EarconOptionsObject {
     instruments: js.Array[EarconInstrument],
     id: String = null,
     onEnd: js.Function = null,
-    pan: Int | Double = null,
-    volume: Int | Double = null
+    pan: js.UndefOr[Double] = js.undefined,
+    volume: js.UndefOr[Double] = js.undefined
   ): EarconOptionsObject = {
     val __obj = js.Dynamic.literal(instruments = instruments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd.asInstanceOf[js.Any])
-    if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(pan)) __obj.updateDynamic("pan")(pan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarconOptionsObject]
   }
 }

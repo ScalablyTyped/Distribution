@@ -54,7 +54,7 @@ object Loader {
     if (loadComponent != null) __obj.updateDynamic("loadComponent")(js.Any.fromFunction3(loadComponent))
     if (loadTemplate != null) __obj.updateDynamic("loadTemplate")(js.Any.fromFunction3(loadTemplate))
     if (loadViewModel != null) __obj.updateDynamic("loadViewModel")(js.Any.fromFunction3(loadViewModel))
-    if (!js.isUndefined(suppressLoaderExceptions)) __obj.updateDynamic("suppressLoaderExceptions")(suppressLoaderExceptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressLoaderExceptions)) __obj.updateDynamic("suppressLoaderExceptions")(suppressLoaderExceptions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loader]
   }
 }

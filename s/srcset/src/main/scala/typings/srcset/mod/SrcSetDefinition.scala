@@ -13,11 +13,16 @@ trait SrcSetDefinition extends js.Object {
 
 object SrcSetDefinition {
   @scala.inline
-  def apply(url: String, density: Int | Double = null, height: Int | Double = null, width: Int | Double = null): SrcSetDefinition = {
+  def apply(
+    url: String,
+    density: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): SrcSetDefinition = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(density)) __obj.updateDynamic("density")(density.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SrcSetDefinition]
   }
 }

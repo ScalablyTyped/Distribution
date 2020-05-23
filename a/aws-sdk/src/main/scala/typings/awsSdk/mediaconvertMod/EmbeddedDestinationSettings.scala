@@ -18,10 +18,13 @@ trait EmbeddedDestinationSettings extends js.Object {
 
 object EmbeddedDestinationSettings {
   @scala.inline
-  def apply(Destination608ChannelNumber: Int | Double = null, Destination708ServiceNumber: Int | Double = null): EmbeddedDestinationSettings = {
+  def apply(
+    Destination608ChannelNumber: js.UndefOr[integerMin1Max4] = js.undefined,
+    Destination708ServiceNumber: js.UndefOr[integerMin1Max6] = js.undefined
+  ): EmbeddedDestinationSettings = {
     val __obj = js.Dynamic.literal()
-    if (Destination608ChannelNumber != null) __obj.updateDynamic("Destination608ChannelNumber")(Destination608ChannelNumber.asInstanceOf[js.Any])
-    if (Destination708ServiceNumber != null) __obj.updateDynamic("Destination708ServiceNumber")(Destination708ServiceNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(Destination608ChannelNumber)) __obj.updateDynamic("Destination608ChannelNumber")(Destination608ChannelNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Destination708ServiceNumber)) __obj.updateDynamic("Destination708ServiceNumber")(Destination708ServiceNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedDestinationSettings]
   }
 }

@@ -15,9 +15,9 @@ trait EventLoopMonitorOptions extends js.Object {
 
 object EventLoopMonitorOptions {
   @scala.inline
-  def apply(resolution: Int | Double = null): EventLoopMonitorOptions = {
+  def apply(resolution: js.UndefOr[Double] = js.undefined): EventLoopMonitorOptions = {
     val __obj = js.Dynamic.literal()
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventLoopMonitorOptions]
   }
 }

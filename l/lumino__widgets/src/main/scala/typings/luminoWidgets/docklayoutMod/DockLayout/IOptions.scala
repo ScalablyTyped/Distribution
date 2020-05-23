@@ -22,9 +22,9 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(renderer: IRenderer, spacing: Int | Double = null): IOptions = {
+  def apply(renderer: IRenderer, spacing: js.UndefOr[Double] = js.undefined): IOptions = {
     val __obj = js.Dynamic.literal(renderer = renderer.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

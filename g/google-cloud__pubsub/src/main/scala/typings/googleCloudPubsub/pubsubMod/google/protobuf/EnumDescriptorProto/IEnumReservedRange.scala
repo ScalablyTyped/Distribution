@@ -14,10 +14,10 @@ trait IEnumReservedRange extends js.Object {
 
 object IEnumReservedRange {
   @scala.inline
-  def apply(end: Int | Double = null, start: Int | Double = null): IEnumReservedRange = {
+  def apply(end: js.UndefOr[Null | Double] = js.undefined, start: js.UndefOr[Null | Double] = js.undefined): IEnumReservedRange = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnumReservedRange]
   }
 }

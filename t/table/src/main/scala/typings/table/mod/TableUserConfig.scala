@@ -18,7 +18,7 @@ object TableUserConfig {
   @scala.inline
   def apply(
     border: TableBorder = null,
-    columnCount: Int | Double = null,
+    columnCount: js.UndefOr[Double] = js.undefined,
     columnDefault: TableColumns = null,
     columns: NumberDictionary[TableColumns] = null,
     drawHorizontalLine: (/* index */ Double, /* size */ Double) => Boolean = null,
@@ -26,11 +26,11 @@ object TableUserConfig {
   ): TableUserConfig = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
     if (columnDefault != null) __obj.updateDynamic("columnDefault")(columnDefault.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (drawHorizontalLine != null) __obj.updateDynamic("drawHorizontalLine")(js.Any.fromFunction2(drawHorizontalLine))
-    if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableUserConfig]
   }
 }

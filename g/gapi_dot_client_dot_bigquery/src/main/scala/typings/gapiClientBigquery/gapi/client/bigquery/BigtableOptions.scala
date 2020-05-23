@@ -33,8 +33,8 @@ object BigtableOptions {
   ): BigtableOptions = {
     val __obj = js.Dynamic.literal()
     if (columnFamilies != null) __obj.updateDynamic("columnFamilies")(columnFamilies.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnspecifiedColumnFamilies)) __obj.updateDynamic("ignoreUnspecifiedColumnFamilies")(ignoreUnspecifiedColumnFamilies.asInstanceOf[js.Any])
-    if (!js.isUndefined(readRowkeyAsString)) __obj.updateDynamic("readRowkeyAsString")(readRowkeyAsString.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnspecifiedColumnFamilies)) __obj.updateDynamic("ignoreUnspecifiedColumnFamilies")(ignoreUnspecifiedColumnFamilies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readRowkeyAsString)) __obj.updateDynamic("readRowkeyAsString")(readRowkeyAsString.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BigtableOptions]
   }
 }

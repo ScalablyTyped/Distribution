@@ -1,6 +1,5 @@
 package typings.menubar
 
-import typings.menubar.menubarStrings.mockDotappDotgetAppPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,11 +20,12 @@ object electronMod extends js.Object {
     def setToolTip(): Unit = js.native
   }
   
-  val MOCK_APP_GETAPPPATH: mockDotappDotgetAppPath = js.native
+  val MOCK_APP_GETAPPPATH: /* "mock.app.getAppPath" */ String = js.native
   @js.native
   object app extends js.Object {
     var getAppPath: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Mock<string, []> */ js.Any = js.native
     def isReady(): js.Promise[Unit] = js.native
+    def on(): Unit = js.native
   }
   
 }

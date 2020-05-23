@@ -27,8 +27,19 @@ class PubSub () extends js.Object {
   var api: StringDictionary[ClientStub] = js.native
   var auth: GoogleAuth = js.native
   var isEmulator: Boolean = js.native
+  var isOpen: Boolean = js.native
   var options: ClientConfig = js.native
   var projectId: String = js.native
+  def close(): js.Promise[Unit] = js.native
+  def close(callback: EmptyCallback): Unit = js.native
+  /**
+    * Close all open client objects.
+    *
+    * @private
+    *
+    * @returns {Promise}
+    */
+  def closeAllClients_(): js.Promise[Unit] = js.native
   def createSubscription(topic: String, name: String): js.Promise[CreateSubscriptionResponse] = js.native
   def createSubscription(topic: String, name: String, callback: CreateSubscriptionCallback): Unit = js.native
   def createSubscription(topic: String, name: String, options: CreateSubscriptionOptions): js.Promise[CreateSubscriptionResponse] = js.native

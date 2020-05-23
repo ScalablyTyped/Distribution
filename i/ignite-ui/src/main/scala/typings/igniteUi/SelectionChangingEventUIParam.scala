@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait SelectionChangingEventUIParam extends js.Object {
   /**
-  	 * Used to obtain reference to array of the selected items before the new selection has happened. That can be null.
-  	 */
+    * Used to obtain reference to array of the selected items before the new selection has happened. That can be null.
+    */
   var currentItems: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Used to obtain reference to array of all items that will be selected after the selection finish. That can be null.
-  	 */
+    * Used to obtain reference to array of all items that will be selected after the selection finish. That can be null.
+    */
   var items: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Used to obtain reference to igCombo.
-  	 */
+    * Used to obtain reference to igCombo.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

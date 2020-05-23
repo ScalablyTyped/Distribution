@@ -37,12 +37,12 @@ object ReaderOpts {
     startMessageId: MessageId,
     topic: String,
     readerName: String = null,
-    receiverQueueSize: Int | Double = null,
+    receiverQueueSize: js.UndefOr[Double] = js.undefined,
     subscriptionRolePrefix: String = null
   ): ReaderOpts = {
     val __obj = js.Dynamic.literal(startMessageId = startMessageId.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     if (readerName != null) __obj.updateDynamic("readerName")(readerName.asInstanceOf[js.Any])
-    if (receiverQueueSize != null) __obj.updateDynamic("receiverQueueSize")(receiverQueueSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(receiverQueueSize)) __obj.updateDynamic("receiverQueueSize")(receiverQueueSize.get.asInstanceOf[js.Any])
     if (subscriptionRolePrefix != null) __obj.updateDynamic("subscriptionRolePrefix")(subscriptionRolePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderOpts]
   }

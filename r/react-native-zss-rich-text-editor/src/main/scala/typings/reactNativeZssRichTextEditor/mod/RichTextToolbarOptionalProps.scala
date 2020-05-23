@@ -29,12 +29,12 @@ object RichTextToolbarOptionalProps {
     onPressAddLink: () => Unit,
     renderAction: () => ReactNode,
     selectedIconTint: String,
-    selectedButtonStyle: ElementStyles = null,
-    unselectedButtonStyle: ElementStyles = null
+    selectedButtonStyle: js.UndefOr[Null | ElementStyles] = js.undefined,
+    unselectedButtonStyle: js.UndefOr[Null | ElementStyles] = js.undefined
   ): RichTextToolbarOptionalProps = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], iconMap = iconMap.asInstanceOf[js.Any], iconTint = iconTint.asInstanceOf[js.Any], onPressAddImage = js.Any.fromFunction0(onPressAddImage), onPressAddLink = js.Any.fromFunction0(onPressAddLink), renderAction = js.Any.fromFunction0(renderAction), selectedIconTint = selectedIconTint.asInstanceOf[js.Any])
-    if (selectedButtonStyle != null) __obj.updateDynamic("selectedButtonStyle")(selectedButtonStyle.asInstanceOf[js.Any])
-    if (unselectedButtonStyle != null) __obj.updateDynamic("unselectedButtonStyle")(unselectedButtonStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedButtonStyle)) __obj.updateDynamic("selectedButtonStyle")(selectedButtonStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(unselectedButtonStyle)) __obj.updateDynamic("unselectedButtonStyle")(unselectedButtonStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[RichTextToolbarOptionalProps]
   }
 }

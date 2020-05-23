@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +19,4 @@ trait Slice extends Widget_ {
     */
   var viewModel: SliceViewModel = js.native
 }
-
-@JSGlobal("__esri.Slice")
-@js.native
-object Slice extends TopLevel[SliceConstructor]
 

@@ -38,6 +38,10 @@ trait ContainerSettings extends js.Object {
     * Settings for MP4 segments in DASH
     */
   var MpdSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MpdSettings] = js.native
+  /**
+    * MXF settings
+    */
+  var MxfSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MxfSettings] = js.native
 }
 
 object ContainerSettings {
@@ -50,7 +54,8 @@ object ContainerSettings {
     M3u8Settings: M3u8Settings = null,
     MovSettings: MovSettings = null,
     Mp4Settings: Mp4Settings = null,
-    MpdSettings: MpdSettings = null
+    MpdSettings: MpdSettings = null,
+    MxfSettings: MxfSettings = null
   ): ContainerSettings = {
     val __obj = js.Dynamic.literal()
     if (CmfcSettings != null) __obj.updateDynamic("CmfcSettings")(CmfcSettings.asInstanceOf[js.Any])
@@ -61,6 +66,7 @@ object ContainerSettings {
     if (MovSettings != null) __obj.updateDynamic("MovSettings")(MovSettings.asInstanceOf[js.Any])
     if (Mp4Settings != null) __obj.updateDynamic("Mp4Settings")(Mp4Settings.asInstanceOf[js.Any])
     if (MpdSettings != null) __obj.updateDynamic("MpdSettings")(MpdSettings.asInstanceOf[js.Any])
+    if (MxfSettings != null) __obj.updateDynamic("MxfSettings")(MxfSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerSettings]
   }
 }

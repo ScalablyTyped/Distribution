@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.NormalizeBlock")
 @js.native
-class NormalizeBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new NormalizeBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait NormalizeBlock extends NodeMaterialBlock {
   /**
     * Gets the input component
     */

@@ -11,10 +11,10 @@ trait CacheExpirationConfig extends js.Object {
 
 object CacheExpirationConfig {
   @scala.inline
-  def apply(maxAgeSeconds: Int | Double = null, maxEntries: Int | Double = null): CacheExpirationConfig = {
+  def apply(maxAgeSeconds: js.UndefOr[Double] = js.undefined, maxEntries: js.UndefOr[Double] = js.undefined): CacheExpirationConfig = {
     val __obj = js.Dynamic.literal()
-    if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
-    if (maxEntries != null) __obj.updateDynamic("maxEntries")(maxEntries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAgeSeconds)) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEntries)) __obj.updateDynamic("maxEntries")(maxEntries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheExpirationConfig]
   }
 }

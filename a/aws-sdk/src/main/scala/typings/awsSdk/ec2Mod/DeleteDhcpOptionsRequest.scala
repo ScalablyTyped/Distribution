@@ -18,9 +18,9 @@ trait DeleteDhcpOptionsRequest extends js.Object {
 
 object DeleteDhcpOptionsRequest {
   @scala.inline
-  def apply(DhcpOptionsId: DhcpOptionsId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteDhcpOptionsRequest = {
+  def apply(DhcpOptionsId: DhcpOptionsId, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteDhcpOptionsRequest = {
     val __obj = js.Dynamic.literal(DhcpOptionsId = DhcpOptionsId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDhcpOptionsRequest]
   }
 }

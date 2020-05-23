@@ -8,63 +8,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Web.Syndication.SyndicationItem")
-@js.native
-class SyndicationItem () extends ISyndicationItem {
-  def this(title: String, content: SyndicationContent, uri: Uri) = this()
-  /* CompleteClass */
-  override var attributeExtensions: IVector[SyndicationAttribute] = js.native
-  /* CompleteClass */
-  override var authors: IVector[SyndicationPerson] = js.native
-  /* CompleteClass */
-  override var baseUri: Uri = js.native
-  /* CompleteClass */
-  override var categories: IVector[SyndicationCategory] = js.native
-  /* CompleteClass */
-  override var commentsUri: Uri = js.native
-  /* CompleteClass */
-  override var content: SyndicationContent = js.native
-  /* CompleteClass */
-  override var contributors: IVector[SyndicationPerson] = js.native
-  /* CompleteClass */
-  override var eTag: String = js.native
-  /* CompleteClass */
-  override var editMediaUri: Uri = js.native
-  /* CompleteClass */
-  override var editUri: Uri = js.native
-  /* CompleteClass */
-  override var elementExtensions: IVector[ISyndicationNode] = js.native
-  /* CompleteClass */
-  override var id: String = js.native
-  /* CompleteClass */
-  override var itemUri: Uri = js.native
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var lastUpdatedTime: Date = js.native
-  /* CompleteClass */
-  override var links: IVector[SyndicationLink] = js.native
-  /* CompleteClass */
-  override var nodeName: String = js.native
-  /* CompleteClass */
-  override var nodeNamespace: String = js.native
-  /* CompleteClass */
-  override var nodeValue: String = js.native
-  /* CompleteClass */
-  override var publishedDate: Date = js.native
-  /* CompleteClass */
-  override var rights: ISyndicationText = js.native
-  /* CompleteClass */
-  override var source: SyndicationFeed = js.native
-  /* CompleteClass */
-  override var summary: ISyndicationText = js.native
-  /* CompleteClass */
-  override var title: ISyndicationText = js.native
-  /* CompleteClass */
-  override def getXmlDocument(format: SyndicationFormat): XmlDocument = js.native
-  /* CompleteClass */
-  override def load(item: String): Unit = js.native
-  /* CompleteClass */
-  override def loadFromXml(itemDocument: XmlDocument): Unit = js.native
+trait SyndicationItem extends ISyndicationItem
+
+object SyndicationItem {
+  @scala.inline
+  def apply(
+    attributeExtensions: IVector[SyndicationAttribute],
+    authors: IVector[SyndicationPerson],
+    baseUri: Uri,
+    categories: IVector[SyndicationCategory],
+    commentsUri: Uri,
+    content: SyndicationContent,
+    contributors: IVector[SyndicationPerson],
+    eTag: String,
+    editMediaUri: Uri,
+    editUri: Uri,
+    elementExtensions: IVector[ISyndicationNode],
+    getXmlDocument: SyndicationFormat => XmlDocument,
+    id: String,
+    itemUri: Uri,
+    language: String,
+    lastUpdatedTime: Date,
+    links: IVector[SyndicationLink],
+    load: String => Unit,
+    loadFromXml: XmlDocument => Unit,
+    nodeName: String,
+    nodeNamespace: String,
+    nodeValue: String,
+    publishedDate: Date,
+    rights: ISyndicationText,
+    source: SyndicationFeed,
+    summary: ISyndicationText,
+    title: ISyndicationText
+  ): SyndicationItem = {
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions.asInstanceOf[js.Any], authors = authors.asInstanceOf[js.Any], baseUri = baseUri.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], commentsUri = commentsUri.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contributors = contributors.asInstanceOf[js.Any], eTag = eTag.asInstanceOf[js.Any], editMediaUri = editMediaUri.asInstanceOf[js.Any], editUri = editUri.asInstanceOf[js.Any], elementExtensions = elementExtensions.asInstanceOf[js.Any], getXmlDocument = js.Any.fromFunction1(getXmlDocument), id = id.asInstanceOf[js.Any], itemUri = itemUri.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], lastUpdatedTime = lastUpdatedTime.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], load = js.Any.fromFunction1(load), loadFromXml = js.Any.fromFunction1(loadFromXml), nodeName = nodeName.asInstanceOf[js.Any], nodeNamespace = nodeNamespace.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], publishedDate = publishedDate.asInstanceOf[js.Any], rights = rights.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SyndicationItem]
+  }
 }
 

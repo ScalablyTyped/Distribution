@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type CustomPropertiesPlugin = typings.postcss.mod.Plugin_[typings.postcssCustomProperties.mod.Options] with typings.postcssCustomProperties.AnonProcess
+  type CustomPropertiesPlugin = typings.postcss.mod.Plugin_[typings.postcssCustomProperties.mod.Options] with typings.postcssCustomProperties.anon.Process
   /**
     * Sources where Custom Properties can be imported from or export to,
     * which might be CSS, JS, and JSON files, functions, and directly passed objects

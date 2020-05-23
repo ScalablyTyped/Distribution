@@ -34,56 +34,56 @@ trait MomentInputObject extends _MomentInput {
 object MomentInputObject {
   @scala.inline
   def apply(
-    D: Int | Double = null,
-    M: Int | Double = null,
-    d: Int | Double = null,
-    date: Int | Double = null,
-    dates: Int | Double = null,
-    day: Int | Double = null,
-    days: Int | Double = null,
-    h: Int | Double = null,
-    hour: Int | Double = null,
-    hours: Int | Double = null,
-    m: Int | Double = null,
-    millisecond: Int | Double = null,
-    milliseconds: Int | Double = null,
-    minute: Int | Double = null,
-    minutes: Int | Double = null,
-    month: Int | Double = null,
-    months: Int | Double = null,
-    ms: Int | Double = null,
-    s: Int | Double = null,
-    second: Int | Double = null,
-    seconds: Int | Double = null,
-    y: Int | Double = null,
-    year: Int | Double = null,
-    years: Int | Double = null
+    D: js.UndefOr[Double] = js.undefined,
+    M: js.UndefOr[Double] = js.undefined,
+    d: js.UndefOr[Double] = js.undefined,
+    date: js.UndefOr[Double] = js.undefined,
+    dates: js.UndefOr[Double] = js.undefined,
+    day: js.UndefOr[Double] = js.undefined,
+    days: js.UndefOr[Double] = js.undefined,
+    h: js.UndefOr[Double] = js.undefined,
+    hour: js.UndefOr[Double] = js.undefined,
+    hours: js.UndefOr[Double] = js.undefined,
+    m: js.UndefOr[Double] = js.undefined,
+    millisecond: js.UndefOr[Double] = js.undefined,
+    milliseconds: js.UndefOr[Double] = js.undefined,
+    minute: js.UndefOr[Double] = js.undefined,
+    minutes: js.UndefOr[Double] = js.undefined,
+    month: js.UndefOr[Double] = js.undefined,
+    months: js.UndefOr[Double] = js.undefined,
+    ms: js.UndefOr[Double] = js.undefined,
+    s: js.UndefOr[Double] = js.undefined,
+    second: js.UndefOr[Double] = js.undefined,
+    seconds: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined,
+    year: js.UndefOr[Double] = js.undefined,
+    years: js.UndefOr[Double] = js.undefined
   ): MomentInputObject = {
     val __obj = js.Dynamic.literal()
-    if (D != null) __obj.updateDynamic("D")(D.asInstanceOf[js.Any])
-    if (M != null) __obj.updateDynamic("M")(M.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (dates != null) __obj.updateDynamic("dates")(dates.asInstanceOf[js.Any])
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (millisecond != null) __obj.updateDynamic("millisecond")(millisecond.asInstanceOf[js.Any])
-    if (milliseconds != null) __obj.updateDynamic("milliseconds")(milliseconds.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
-    if (ms != null) __obj.updateDynamic("ms")(ms.asInstanceOf[js.Any])
-    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
-    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
-    if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
+    if (!js.isUndefined(D)) __obj.updateDynamic("D")(D.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(M)) __obj.updateDynamic("M")(M.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(d)) __obj.updateDynamic("d")(d.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dates)) __obj.updateDynamic("dates")(dates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(day)) __obj.updateDynamic("day")(day.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(h)) __obj.updateDynamic("h")(h.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour)) __obj.updateDynamic("hour")(hour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hours)) __obj.updateDynamic("hours")(hours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisecond)) __obj.updateDynamic("millisecond")(millisecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(milliseconds)) __obj.updateDynamic("milliseconds")(milliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minute)) __obj.updateDynamic("minute")(minute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minutes)) __obj.updateDynamic("minutes")(minutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(months)) __obj.updateDynamic("months")(months.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ms)) __obj.updateDynamic("ms")(ms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(s)) __obj.updateDynamic("s")(s.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(second)) __obj.updateDynamic("second")(second.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(year)) __obj.updateDynamic("year")(year.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(years)) __obj.updateDynamic("years")(years.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MomentInputObject]
   }
 }

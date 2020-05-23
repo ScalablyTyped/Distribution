@@ -28,7 +28,7 @@ package object libIslotsMod {
   {[ slot in keyof TSlots ]: @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlot<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[slot]>>}
     */ typings.uifabricFoundation.uifabricFoundationStrings.ISlots with org.scalablytyped.runtime.TopLevel[TSlots]
   type ISlottableComponentType[TProps /* <: typings.uifabricFoundation.libIslotsMod.ValidProps */, TShorthandProp /* <: typings.uifabricFoundation.libIslotsMod.ValidShorthand */] = typings.react.mod.ComponentType[TProps] with (typings.uifabricFoundation.libIslotsMod.ISlotCreator[TProps, TShorthandProp])
-  type ISlottableProps[TSlots] = TSlots with typings.uifabricFoundation.AnonSlots[TSlots]
+  type ISlottableProps[TSlots] = TSlots with typings.uifabricFoundation.anon.Slots[TSlots]
   type ISlottableReactType[TProps /* <: typings.uifabricFoundation.libIslotsMod.ValidProps */, TShorthandProp /* <: typings.uifabricFoundation.libIslotsMod.ValidShorthand */] = typings.react.mod.ElementType[TProps] with (typings.uifabricFoundation.libIslotsMod.ISlotCreator[TProps, TShorthandProp])
   type ValidProps = js.Object
   type ValidShorthand = java.lang.String | scala.Double | scala.Boolean

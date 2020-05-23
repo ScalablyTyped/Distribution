@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientScheduler.AppointmentClick and the ASPxClientScheduler.AppointmentDoubleClick events.
   */
-@JSGlobal("AppointmentClickEventArgs")
-@js.native
-class AppointmentClickEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the class.
-    * @param appointmentId Specifies an appointment ID.
-    * @param sourceEvent Specifies an event source.
-    */
-  def this(appointmentId: String, sourceEvent: js.Any) = this()
+trait AppointmentClickEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the client appointment ID for the appointment being clicked.
     */
-  var appointmentId: String = js.native
+  var appointmentId: String
   /**
     * Gets or sets whether an event is handled, and that default actions are not required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   /**
     * Gets the HTML element that the event was triggered on.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
+}
+
+object AppointmentClickEventArgs {
+  @scala.inline
+  def apply(appointmentId: String, handled: Boolean, htmlElement: js.Any): AppointmentClickEventArgs = {
+    val __obj = js.Dynamic.literal(appointmentId = appointmentId.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppointmentClickEventArgs]
+  }
 }
 

@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.TypeofPortalHost
+import typings.antDesignReactNative.anon.TypeofPortalHost
 import typings.antDesignReactNative.portalMod.default
 import typings.react.mod.ReactNode
 import scala.scalajs.js

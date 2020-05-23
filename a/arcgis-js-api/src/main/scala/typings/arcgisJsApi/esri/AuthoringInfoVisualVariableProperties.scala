@@ -81,8 +81,8 @@ object AuthoringInfoVisualVariableProperties {
   def apply(
     endTime: String | Double = null,
     field: String = null,
-    maxSliderValue: Int | Double = null,
-    minSliderValue: Int | Double = null,
+    maxSliderValue: js.UndefOr[Double] = js.undefined,
+    minSliderValue: js.UndefOr[Double] = js.undefined,
     startTime: String | Double = null,
     style: percent | `percent-of-total` | ratio = null,
     theme: `above-and-below` | `centered-on` | extremes | `high-to-low` = null,
@@ -92,8 +92,8 @@ object AuthoringInfoVisualVariableProperties {
     val __obj = js.Dynamic.literal()
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (maxSliderValue != null) __obj.updateDynamic("maxSliderValue")(maxSliderValue.asInstanceOf[js.Any])
-    if (minSliderValue != null) __obj.updateDynamic("minSliderValue")(minSliderValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSliderValue)) __obj.updateDynamic("maxSliderValue")(maxSliderValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSliderValue)) __obj.updateDynamic("minSliderValue")(minSliderValue.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

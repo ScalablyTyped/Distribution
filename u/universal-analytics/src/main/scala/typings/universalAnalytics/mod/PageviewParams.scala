@@ -44,7 +44,7 @@ trait PageviewParams
 object PageviewParams {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     dh: String = null,
     dl: String = null,
     dp: String = null,

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-field-form/lib/Field", JSImport.Default)
+@JSImport("rc-field-form/es/Field", JSImport.Default)
 @js.native
 object default extends TopLevel[FC[FieldProps]]
 

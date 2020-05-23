@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object KeyModifiers extends js.Object {
   //The SHIFT key.
   @js.native
   sealed trait Shift extends KeyModifiers
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KeyModifiers with Double] = js.native
-  /* 1 */ @js.native
-  object Alt extends TopLevel[Alt with Double]
-  
-  /* 2 */ @js.native
-  object Control extends TopLevel[Control with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 3 */ @js.native
-  object Shift extends TopLevel[Shift with Double]
   
 }
 

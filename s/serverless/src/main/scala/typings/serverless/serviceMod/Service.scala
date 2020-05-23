@@ -1,6 +1,6 @@
 package typings.serverless.serviceMod
 
-import typings.serverless.AnonCompiledCloudFormationTemplate
+import typings.serverless.anon.CompiledCloudFormationTemplate
 import typings.serverless.mod.Event
 import typings.serverless.mod.FunctionDefinition
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait Service extends js.Object {
   var custom: Custom
-  var provider: AnonCompiledCloudFormationTemplate
+  var provider: CompiledCloudFormationTemplate
   def getAllEventsInFunction(functionName: String): js.Array[Event]
   def getAllFunctions(): js.Array[String]
   def getAllFunctionsNames(): js.Array[String]
@@ -35,7 +35,7 @@ object Service {
     getServiceName: () => String,
     load: js.Object => js.Promise[_],
     mergeResourceArrays: () => Unit,
-    provider: AnonCompiledCloudFormationTemplate,
+    provider: CompiledCloudFormationTemplate,
     setFunctionNames: js.Object => Unit,
     update: js.Object => js.Object,
     validate: () => Service

@@ -29,11 +29,11 @@ object RefreshModelParams {
     rowNodeTransactions: js.Array[RowNodeTransaction] = null
   ): RefreshModelParams = {
     val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (groupState != null) __obj.updateDynamic("groupState")(groupState.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepEditingRows)) __obj.updateDynamic("keepEditingRows")(keepEditingRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepRenderedRows)) __obj.updateDynamic("keepRenderedRows")(keepRenderedRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(newData)) __obj.updateDynamic("newData")(newData.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepEditingRows)) __obj.updateDynamic("keepEditingRows")(keepEditingRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepRenderedRows)) __obj.updateDynamic("keepRenderedRows")(keepRenderedRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newData)) __obj.updateDynamic("newData")(newData.get.asInstanceOf[js.Any])
     if (rowNodeOrder != null) __obj.updateDynamic("rowNodeOrder")(rowNodeOrder.asInstanceOf[js.Any])
     if (rowNodeTransactions != null) __obj.updateDynamic("rowNodeTransactions")(rowNodeTransactions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshModelParams]

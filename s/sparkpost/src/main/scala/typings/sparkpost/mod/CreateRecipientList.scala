@@ -27,14 +27,14 @@ object CreateRecipientList {
     description: String = null,
     id: String = null,
     name: String = null,
-    num_rcpt_errors: Int | Double = null
+    num_rcpt_errors: js.UndefOr[Double] = js.undefined
   ): CreateRecipientList = {
     val __obj = js.Dynamic.literal(recipients = recipients.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (num_rcpt_errors != null) __obj.updateDynamic("num_rcpt_errors")(num_rcpt_errors.asInstanceOf[js.Any])
+    if (!js.isUndefined(num_rcpt_errors)) __obj.updateDynamic("num_rcpt_errors")(num_rcpt_errors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRecipientList]
   }
 }

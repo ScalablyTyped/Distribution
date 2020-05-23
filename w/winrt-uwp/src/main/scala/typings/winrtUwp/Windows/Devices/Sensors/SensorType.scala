@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,50 +66,6 @@ object SensorType extends js.Object {
   /** A SimpleOrientationSensor . */
   @js.native
   sealed trait simpleOrientationSensor extends SensorType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SensorType with Double] = js.native
-  /* 0 */ @js.native
-  object accelerometer extends TopLevel[accelerometer with Double]
-  
-  /* 1 */ @js.native
-  object activitySensor extends TopLevel[activitySensor with Double]
-  
-  /* 2 */ @js.native
-  object barometer extends TopLevel[barometer with Double]
-  
-  /* 3 */ @js.native
-  object compass extends TopLevel[compass with Double]
-  
-  /* 4 */ @js.native
-  object customSensor extends TopLevel[customSensor with Double]
-  
-  /* 5 */ @js.native
-  object gyroscope extends TopLevel[gyroscope with Double]
-  
-  /* 7 */ @js.native
-  object inclinometer extends TopLevel[inclinometer with Double]
-  
-  /* 8 */ @js.native
-  object lightSensor extends TopLevel[lightSensor with Double]
-  
-  /* 9 */ @js.native
-  object orientationSensor extends TopLevel[orientationSensor with Double]
-  
-  /* 10 */ @js.native
-  object pedometer extends TopLevel[pedometer with Double]
-  
-  /* 6 */ @js.native
-  object proximitySensor extends TopLevel[proximitySensor with Double]
-  
-  /* 11 */ @js.native
-  object relativeInclinometer extends TopLevel[relativeInclinometer with Double]
-  
-  /* 12 */ @js.native
-  object relativeOrientationSensor extends TopLevel[relativeOrientationSensor with Double]
-  
-  /* 13 */ @js.native
-  object simpleOrientationSensor extends TopLevel[simpleOrientationSensor with Double]
   
 }
 

@@ -22,9 +22,9 @@ trait SqsAction extends js.Object {
 
 object SqsAction {
   @scala.inline
-  def apply(queueUrl: QueueUrl, roleArn: AwsArn, useBase64: js.UndefOr[scala.Boolean] = js.undefined): SqsAction = {
+  def apply(queueUrl: QueueUrl, roleArn: AwsArn, useBase64: js.UndefOr[UseBase64] = js.undefined): SqsAction = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBase64)) __obj.updateDynamic("useBase64")(useBase64.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBase64)) __obj.updateDynamic("useBase64")(useBase64.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqsAction]
   }
 }

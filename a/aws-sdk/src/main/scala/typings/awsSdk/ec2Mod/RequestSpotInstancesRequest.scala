@@ -60,10 +60,10 @@ object RequestSpotInstancesRequest {
   @scala.inline
   def apply(
     AvailabilityZoneGroup: String = null,
-    BlockDurationMinutes: Int | scala.Double = null,
+    BlockDurationMinutes: js.UndefOr[Integer] = js.undefined,
     ClientToken: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    InstanceCount: Int | scala.Double = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    InstanceCount: js.UndefOr[Integer] = js.undefined,
     InstanceInterruptionBehavior: InstanceInterruptionBehavior = null,
     LaunchGroup: String = null,
     LaunchSpecification: RequestSpotLaunchSpecification = null,
@@ -74,10 +74,10 @@ object RequestSpotInstancesRequest {
   ): RequestSpotInstancesRequest = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZoneGroup != null) __obj.updateDynamic("AvailabilityZoneGroup")(AvailabilityZoneGroup.asInstanceOf[js.Any])
-    if (BlockDurationMinutes != null) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockDurationMinutes)) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.get.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     if (InstanceInterruptionBehavior != null) __obj.updateDynamic("InstanceInterruptionBehavior")(InstanceInterruptionBehavior.asInstanceOf[js.Any])
     if (LaunchGroup != null) __obj.updateDynamic("LaunchGroup")(LaunchGroup.asInstanceOf[js.Any])
     if (LaunchSpecification != null) __obj.updateDynamic("LaunchSpecification")(LaunchSpecification.asInstanceOf[js.Any])

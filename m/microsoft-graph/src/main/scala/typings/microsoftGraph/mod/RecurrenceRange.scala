@@ -28,14 +28,14 @@ object RecurrenceRange {
   @scala.inline
   def apply(
     endDate: String = null,
-    numberOfOccurrences: Int | Double = null,
+    numberOfOccurrences: js.UndefOr[Double] = js.undefined,
     recurrenceTimeZone: String = null,
     startDate: String = null,
     `type`: RecurrenceRangeType = null
   ): RecurrenceRange = {
     val __obj = js.Dynamic.literal()
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (numberOfOccurrences != null) __obj.updateDynamic("numberOfOccurrences")(numberOfOccurrences.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfOccurrences)) __obj.updateDynamic("numberOfOccurrences")(numberOfOccurrences.get.asInstanceOf[js.Any])
     if (recurrenceTimeZone != null) __obj.updateDynamic("recurrenceTimeZone")(recurrenceTimeZone.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

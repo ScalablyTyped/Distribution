@@ -21,15 +21,15 @@ object CreateBucketOptions {
     authType: String = null,
     bucketType: String = null,
     name: String = null,
-    ramQuotaMB: Int | Double = null,
-    replicaNumber: Int | Double = null
+    ramQuotaMB: js.UndefOr[Double] = js.undefined,
+    replicaNumber: js.UndefOr[Double] = js.undefined
   ): CreateBucketOptions = {
     val __obj = js.Dynamic.literal()
     if (authType != null) __obj.updateDynamic("authType")(authType.asInstanceOf[js.Any])
     if (bucketType != null) __obj.updateDynamic("bucketType")(bucketType.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ramQuotaMB != null) __obj.updateDynamic("ramQuotaMB")(ramQuotaMB.asInstanceOf[js.Any])
-    if (replicaNumber != null) __obj.updateDynamic("replicaNumber")(replicaNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(ramQuotaMB)) __obj.updateDynamic("ramQuotaMB")(ramQuotaMB.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replicaNumber)) __obj.updateDynamic("replicaNumber")(replicaNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketOptions]
   }
 }

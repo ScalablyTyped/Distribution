@@ -21,21 +21,21 @@ object AdditionalParallaxProps {
   @scala.inline
   def apply(
     carouselRef: Component[FlatListProps[_], js.Object, _] = null,
-    itemHeight: Int | Double = null,
-    itemWidth: Int | Double = null,
+    itemHeight: js.UndefOr[Double] = js.undefined,
+    itemWidth: js.UndefOr[Double] = js.undefined,
     scrollPosition: Value = null,
-    sliderHeight: Int | Double = null,
-    sliderWidth: Int | Double = null,
+    sliderHeight: js.UndefOr[Double] = js.undefined,
+    sliderWidth: js.UndefOr[Double] = js.undefined,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): AdditionalParallaxProps = {
     val __obj = js.Dynamic.literal()
     if (carouselRef != null) __obj.updateDynamic("carouselRef")(carouselRef.asInstanceOf[js.Any])
-    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemHeight)) __obj.updateDynamic("itemHeight")(itemHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemWidth)) __obj.updateDynamic("itemWidth")(itemWidth.get.asInstanceOf[js.Any])
     if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
-    if (sliderHeight != null) __obj.updateDynamic("sliderHeight")(sliderHeight.asInstanceOf[js.Any])
-    if (sliderWidth != null) __obj.updateDynamic("sliderWidth")(sliderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderHeight)) __obj.updateDynamic("sliderHeight")(sliderHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderWidth)) __obj.updateDynamic("sliderWidth")(sliderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalParallaxProps]
   }
 }

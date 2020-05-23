@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteSshPublicKeyRequest extends js.Object {
   /**
-    * A system-assigned unique identifier for a Secure File Transfer Protocol (SFTP) server instance that has the user assigned to it.
+    * A system-assigned unique identifier for a file transfer protocol-enabled server instance that has the user assigned to it.
     */
   var ServerId: typings.awsSdk.transferMod.ServerId = js.native
   /**

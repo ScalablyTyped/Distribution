@@ -1,7 +1,7 @@
 package typings.enzyme.mod
 
-import typings.cheerio.Cheerio_
-import typings.enzyme.AnonIgnoreProps
+import typings.cheerio.Cheerio
+import typings.enzyme.anon.IgnoreProps
 import typings.react.mod.ReactElement
 import typings.std.Element
 import typings.std.NonNullable
@@ -47,7 +47,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
     * tests are not passing when you expect them to.
     */
   def debug(): String = js.native
-  def debug(options: AnonIgnoreProps): String = js.native
+  def debug(options: IgnoreProps): String = js.native
   /**
     * Returns whether or not the current render tree is equal to the given node, based on the expected value.
     */
@@ -204,7 +204,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
   /**
     * Renders the component to static markup and returns a Cheerio wrapper around the result.
     */
-  def render(): Cheerio_ = js.native
+  def render(): Cheerio = js.native
   /**
     * A method that sets the context of the root component, and re-renders. Useful for when you are wanting to
     * test how the component behaves over time with changing contexts.

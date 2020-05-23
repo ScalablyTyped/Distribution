@@ -9,5 +9,5 @@ package object mod {
   type PreAuthorizationExecutionType = typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT
   /** A UTC timestamp in seconds */
   type Timestamp = scala.Double
-  type WithToJson[T /* <: js.Object */] = T with typings.mangopay2NodejsSdk.AnonToJSON
+  type WithToJson[T /* <: js.Object */] = T with typings.mangopay2NodejsSdk.anon.ToJSON
 }

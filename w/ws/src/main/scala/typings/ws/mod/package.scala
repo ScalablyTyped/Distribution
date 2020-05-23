@@ -19,7 +19,7 @@ package object mod {
     * whether or not to accept the handshake.
     */
   type VerifyClientCallbackAsync = js.Function2[
-    /* info */ typings.ws.AnonOrigin, 
+    /* info */ typings.ws.anon.Origin, 
     /* callback */ js.Function4[
       /* res */ scala.Boolean, 
       /* code */ js.UndefOr[scala.Double], 
@@ -34,5 +34,5 @@ package object mod {
     * incoming message. The return value (boolean) of the function determines
     * whether or not to accept the handshake.
     */
-  type VerifyClientCallbackSync = js.Function1[/* info */ typings.ws.AnonOrigin, scala.Boolean]
+  type VerifyClientCallbackSync = js.Function1[/* info */ typings.ws.anon.Origin, scala.Boolean]
 }

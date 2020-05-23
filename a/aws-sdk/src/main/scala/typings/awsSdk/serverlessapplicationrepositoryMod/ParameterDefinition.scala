@@ -87,11 +87,11 @@ object ParameterDefinition {
     ConstraintDescription: string = null,
     DefaultValue: string = null,
     Description: string = null,
-    MaxLength: Int | Double = null,
-    MaxValue: Int | Double = null,
-    MinLength: Int | Double = null,
-    MinValue: Int | Double = null,
-    NoEcho: js.UndefOr[Boolean] = js.undefined,
+    MaxLength: js.UndefOr[integer] = js.undefined,
+    MaxValue: js.UndefOr[integer] = js.undefined,
+    MinLength: js.UndefOr[integer] = js.undefined,
+    MinValue: js.UndefOr[integer] = js.undefined,
+    NoEcho: js.UndefOr[boolean] = js.undefined,
     Type: string = null
   ): ParameterDefinition = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ReferencedByResources = ReferencedByResources.asInstanceOf[js.Any])
@@ -100,11 +100,11 @@ object ParameterDefinition {
     if (ConstraintDescription != null) __obj.updateDynamic("ConstraintDescription")(ConstraintDescription.asInstanceOf[js.Any])
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (MaxLength != null) __obj.updateDynamic("MaxLength")(MaxLength.asInstanceOf[js.Any])
-    if (MaxValue != null) __obj.updateDynamic("MaxValue")(MaxValue.asInstanceOf[js.Any])
-    if (MinLength != null) __obj.updateDynamic("MinLength")(MinLength.asInstanceOf[js.Any])
-    if (MinValue != null) __obj.updateDynamic("MinValue")(MinValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxLength)) __obj.updateDynamic("MaxLength")(MaxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxValue)) __obj.updateDynamic("MaxValue")(MaxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinLength)) __obj.updateDynamic("MinLength")(MinLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinValue)) __obj.updateDynamic("MinValue")(MinValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterDefinition]
   }

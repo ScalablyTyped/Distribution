@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`lock-raster`
 import typings.arcgisJsApi.arcgisJsApiStrings.attribute
 import typings.arcgisJsApi.arcgisJsApiStrings.blend
@@ -116,8 +115,4 @@ trait MosaicRule
     */
   var where: String = js.native
 }
-
-@JSGlobal("__esri.MosaicRule")
-@js.native
-object MosaicRule extends TopLevel[MosaicRuleConstructor]
 

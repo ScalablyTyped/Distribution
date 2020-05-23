@@ -1,6 +1,5 @@
 package typings.appBuilderLib
 
-import typings.appBuilderLib.appBuilderLibStrings.Spaces
 import typings.appBuilderLib.baseS3PublisherMod.BaseS3Publisher
 import typings.builderUtilRuntime.publishOptionsMod.SpacesOptions
 import typings.electronPublish.mod.PublishContext
@@ -15,7 +14,7 @@ object spacesPublisherMod extends js.Object {
   trait SpacesPublisher extends BaseS3Publisher {
     val info: js.Any = js.native
     @JSName("providerName")
-    val providerName_FSpacesPublisher: Spaces = js.native
+    val providerName_FSpacesPublisher: /* "Spaces" */ String = js.native
   }
   
   @js.native

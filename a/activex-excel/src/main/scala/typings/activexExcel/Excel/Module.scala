@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Module")
 @js.native
-class Module protected () extends js.Object {
+trait Module extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val CodeName: String = js.native
   val Creator: XlCreator = js.native

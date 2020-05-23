@@ -32,11 +32,11 @@ object TextSelectionContextMenu {
     isStrikeoutEnable: js.UndefOr[Boolean] = js.undefined
   ): TextSelectionContextMenu = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isCopyEnable)) __obj.updateDynamic("isCopyEnable")(isCopyEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnable)) __obj.updateDynamic("isEnable")(isEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHighlightEnable)) __obj.updateDynamic("isHighlightEnable")(isHighlightEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSearchEnable)) __obj.updateDynamic("isSearchEnable")(isSearchEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStrikeoutEnable)) __obj.updateDynamic("isStrikeoutEnable")(isStrikeoutEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCopyEnable)) __obj.updateDynamic("isCopyEnable")(isCopyEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEnable)) __obj.updateDynamic("isEnable")(isEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHighlightEnable)) __obj.updateDynamic("isHighlightEnable")(isHighlightEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSearchEnable)) __obj.updateDynamic("isSearchEnable")(isSearchEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStrikeoutEnable)) __obj.updateDynamic("isStrikeoutEnable")(isStrikeoutEnable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSelectionContextMenu]
   }
 }

@@ -4,8 +4,8 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.reactSelect.AnonCount
-import typings.reactSelect.AnonInputValue
+import typings.reactSelect.anon.Count
+import typings.reactSelect.anon.InputValue
 import typings.reactSelect.componentsMod.SelectComponentsConfig
 import typings.reactSelect.filtersMod.Option
 import typings.reactSelect.stylesMod.StylesConfig
@@ -21,8 +21,8 @@ import typings.reactSelect.typesMod.MenuPosition
 import typings.reactSelect.typesMod.OptionTypeBase
 import typings.reactSelect.typesMod.OptionsType
 import typings.reactSelect.typesMod.ValueType
+import typings.std.Event
 import typings.std.EventListener
-import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -122,7 +122,7 @@ import scala.scalajs.js.annotation._
   /* Whether to enable search functionality */
   var isSearchable: js.UndefOr[Boolean] = js.undefined
   /* Async: Text to display when loading options */
-  var loadingMessage: js.UndefOr[js.Function1[/* obj */ AnonInputValue, String | Null]] = js.undefined
+  var loadingMessage: js.UndefOr[js.Function1[/* obj */ InputValue, String | Null]] = js.undefined
   /* Maximum height of the menu before scrolling */
   var maxMenuHeight: js.UndefOr[Double] = js.undefined
   /* Whether the menu is open */
@@ -143,11 +143,13 @@ import scala.scalajs.js.annotation._
   /* Name of the HTML Input (optional - without this, no input will be rendered) */
   var name: js.UndefOr[String] = js.undefined
   /* Text to display when there are no options */
-  var noOptionsMessage: js.UndefOr[js.Function1[/* obj */ AnonInputValue, String | Null]] = js.undefined
+  var noOptionsMessage: js.UndefOr[js.Function1[/* obj */ InputValue, String | Null]] = js.undefined
   /* Handle blur events on the control */
   var onBlur: js.UndefOr[FocusEventHandler] = js.undefined
   /* Handle change events on the select */
-  var onChange: js.UndefOr[js.Function2[/* value */ ValueType[OptionType], /* action */ ActionMeta, Unit]] = js.undefined
+  var onChange: js.UndefOr[
+    js.Function2[/* value */ ValueType[OptionType], /* action */ ActionMeta[OptionType], Unit]
+  ] = js.undefined
   /* Handle focus events on the control */
   var onFocus: js.UndefOr[FocusEventHandler] = js.undefined
   /* Handle change events on the input */
@@ -159,9 +161,9 @@ import scala.scalajs.js.annotation._
   /* Handle the menu opening */
   var onMenuOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   /* Fired when the user scrolls to the bottom of the menu */
-  var onMenuScrollToBottom: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event_], Unit]] = js.undefined
+  var onMenuScrollToBottom: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
   /* Fired when the user scrolls to the top of the menu */
-  var onMenuScrollToTop: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event_], Unit]] = js.undefined
+  var onMenuScrollToTop: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
   /* Allows control of whether the menu is opened when the Select is clicked */
   var openMenuOnClick: js.UndefOr[Boolean] = js.undefined
   /* Allows control of whether the menu is opened when the Select is focused */
@@ -173,7 +175,7 @@ import scala.scalajs.js.annotation._
   /* Placeholder text for the select value */
   var placeholder: js.UndefOr[ReactNode] = js.undefined
   /* Status to relay to screen readers */
-  var screenReaderStatus: js.UndefOr[js.Function1[/* obj */ AnonCount, String]] = js.undefined
+  var screenReaderStatus: js.UndefOr[js.Function1[/* obj */ Count, String]] = js.undefined
   /* Style modifier methods */
   var styles: js.UndefOr[StylesConfig] = js.undefined
   /* Sets the tabIndex attribute on the input */
@@ -188,7 +190,7 @@ import scala.scalajs.js.annotation._
 
 object Props {
   @scala.inline
-  def apply[OptionType /* <: OptionTypeBase */](
+  def apply[OptionType](
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
@@ -196,17 +198,17 @@ object Props {
     blurInputOnSelect: js.UndefOr[Boolean] = js.undefined,
     captureMenuScroll: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
-    classNamePrefix: String = null,
+    classNamePrefix: js.UndefOr[Null | String] = js.undefined,
     closeMenuOnScroll: Boolean | EventListener = null,
     closeMenuOnSelect: js.UndefOr[Boolean] = js.undefined,
     components: SelectComponentsConfig[OptionType] = null,
     controlShouldRenderValue: js.UndefOr[Boolean] = js.undefined,
     defaultInputValue: String = null,
     defaultMenuIsOpen: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: ValueType[OptionType] = null,
+    defaultValue: js.UndefOr[Null | ValueType[OptionType]] = js.undefined,
     delimiter: String = null,
     escapeClearsValue: js.UndefOr[Boolean] = js.undefined,
-    filterOption: (/* option */ Option, /* rawInput */ String) => Boolean = null,
+    filterOption: js.UndefOr[Null | ((/* option */ Option, /* rawInput */ String) => Boolean)] = js.undefined,
     formatGroupLabel: /* group */ GroupType[OptionType] => ReactNode = null,
     formatOptionLabel: (/* option */ OptionType, /* labelMeta */ FormatOptionLabelMeta[OptionType]) => ReactNode = null,
     getOptionLabel: OptionType => String = null,
@@ -224,83 +226,83 @@ object Props {
     isOptionSelected: (/* option */ OptionType, /* options */ OptionsType[OptionType]) => Boolean = null,
     isRtl: js.UndefOr[Boolean] = js.undefined,
     isSearchable: js.UndefOr[Boolean] = js.undefined,
-    loadingMessage: /* obj */ AnonInputValue => String | Null = null,
-    maxMenuHeight: Int | Double = null,
+    loadingMessage: /* obj */ InputValue => String | Null = null,
+    maxMenuHeight: js.UndefOr[Double] = js.undefined,
     menuIsOpen: js.UndefOr[Boolean] = js.undefined,
     menuPlacement: MenuPlacement = null,
-    menuPortalTarget: HTMLElement = null,
+    menuPortalTarget: js.UndefOr[Null | HTMLElement] = js.undefined,
     menuPosition: MenuPosition = null,
     menuShouldBlockScroll: js.UndefOr[Boolean] = js.undefined,
     menuShouldScrollIntoView: js.UndefOr[Boolean] = js.undefined,
-    minMenuHeight: Int | Double = null,
+    minMenuHeight: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    noOptionsMessage: /* obj */ AnonInputValue => String | Null = null,
+    noOptionsMessage: /* obj */ InputValue => String | Null = null,
     onBlur: /* event */ FocusEvent[HTMLElement] => Unit = null,
-    onChange: (/* value */ ValueType[OptionType], /* action */ ActionMeta) => Unit = null,
+    onChange: (/* value */ ValueType[OptionType], /* action */ ActionMeta[OptionType]) => Unit = null,
     onFocus: /* event */ FocusEvent[HTMLElement] => Unit = null,
     onInputChange: (/* newValue */ String, /* actionMeta */ InputActionMeta) => Unit = null,
     onKeyDown: /* event */ KeyboardEvent[HTMLElement] => Unit = null,
     onMenuClose: () => Unit = null,
     onMenuOpen: () => Unit = null,
-    onMenuScrollToBottom: /* event */ SyntheticEvent[HTMLElement, Event_] => Unit = null,
-    onMenuScrollToTop: /* event */ SyntheticEvent[HTMLElement, Event_] => Unit = null,
+    onMenuScrollToBottom: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,
+    onMenuScrollToTop: /* event */ SyntheticEvent[HTMLElement, Event] => Unit = null,
     openMenuOnClick: js.UndefOr[Boolean] = js.undefined,
     openMenuOnFocus: js.UndefOr[Boolean] = js.undefined,
     options: GroupedOptionsType[OptionType] | OptionsType[OptionType] = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     placeholder: ReactNode = null,
-    screenReaderStatus: /* obj */ AnonCount => String = null,
+    screenReaderStatus: /* obj */ Count => String = null,
     styles: StylesConfig = null,
-    tabIndex: String = null,
+    tabIndex: js.UndefOr[Null | String] = js.undefined,
     tabSelectsValue: js.UndefOr[Boolean] = js.undefined,
     theme: ThemeConfig = null,
-    value: ValueType[OptionType] = null
+    value: js.UndefOr[Null | ValueType[OptionType]] = js.undefined
   ): Props[OptionType] = {
     val __obj = js.Dynamic.literal()
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(backspaceRemovesValue)) __obj.updateDynamic("backspaceRemovesValue")(backspaceRemovesValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(blurInputOnSelect)) __obj.updateDynamic("blurInputOnSelect")(blurInputOnSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureMenuScroll)) __obj.updateDynamic("captureMenuScroll")(captureMenuScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backspaceRemovesValue)) __obj.updateDynamic("backspaceRemovesValue")(backspaceRemovesValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurInputOnSelect)) __obj.updateDynamic("blurInputOnSelect")(blurInputOnSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureMenuScroll)) __obj.updateDynamic("captureMenuScroll")(captureMenuScroll.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(classNamePrefix)) __obj.updateDynamic("classNamePrefix")(classNamePrefix.asInstanceOf[js.Any])
     if (closeMenuOnScroll != null) __obj.updateDynamic("closeMenuOnScroll")(closeMenuOnScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeMenuOnSelect)) __obj.updateDynamic("closeMenuOnSelect")(closeMenuOnSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeMenuOnSelect)) __obj.updateDynamic("closeMenuOnSelect")(closeMenuOnSelect.get.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (!js.isUndefined(controlShouldRenderValue)) __obj.updateDynamic("controlShouldRenderValue")(controlShouldRenderValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(controlShouldRenderValue)) __obj.updateDynamic("controlShouldRenderValue")(controlShouldRenderValue.get.asInstanceOf[js.Any])
     if (defaultInputValue != null) __obj.updateDynamic("defaultInputValue")(defaultInputValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultMenuIsOpen)) __obj.updateDynamic("defaultMenuIsOpen")(defaultMenuIsOpen.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultMenuIsOpen)) __obj.updateDynamic("defaultMenuIsOpen")(defaultMenuIsOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeClearsValue)) __obj.updateDynamic("escapeClearsValue")(escapeClearsValue.asInstanceOf[js.Any])
-    if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2(filterOption))
+    if (!js.isUndefined(escapeClearsValue)) __obj.updateDynamic("escapeClearsValue")(escapeClearsValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterOption)) __obj.updateDynamic("filterOption")(if (filterOption != null) js.Any.fromFunction2(filterOption.asInstanceOf[(/* option */ Option, /* rawInput */ String) => Boolean]) else null)
     if (formatGroupLabel != null) __obj.updateDynamic("formatGroupLabel")(js.Any.fromFunction1(formatGroupLabel))
     if (formatOptionLabel != null) __obj.updateDynamic("formatOptionLabel")(js.Any.fromFunction2(formatOptionLabel))
     if (getOptionLabel != null) __obj.updateDynamic("getOptionLabel")(js.Any.fromFunction1(getOptionLabel))
     if (getOptionValue != null) __obj.updateDynamic("getOptionValue")(js.Any.fromFunction1(getOptionValue))
-    if (!js.isUndefined(hideSelectedOptions)) __obj.updateDynamic("hideSelectedOptions")(hideSelectedOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideSelectedOptions)) __obj.updateDynamic("hideSelectedOptions")(hideSelectedOptions.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
     if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClearable)) __obj.updateDynamic("isClearable")(isClearable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMulti)) __obj.updateDynamic("isMulti")(isMulti.asInstanceOf[js.Any])
+    if (!js.isUndefined(isClearable)) __obj.updateDynamic("isClearable")(isClearable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMulti)) __obj.updateDynamic("isMulti")(isMulti.get.asInstanceOf[js.Any])
     if (isOptionDisabled != null) __obj.updateDynamic("isOptionDisabled")(js.Any.fromFunction2(isOptionDisabled))
     if (isOptionSelected != null) __obj.updateDynamic("isOptionSelected")(js.Any.fromFunction2(isOptionSelected))
-    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSearchable)) __obj.updateDynamic("isSearchable")(isSearchable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSearchable)) __obj.updateDynamic("isSearchable")(isSearchable.get.asInstanceOf[js.Any])
     if (loadingMessage != null) __obj.updateDynamic("loadingMessage")(js.Any.fromFunction1(loadingMessage))
-    if (maxMenuHeight != null) __obj.updateDynamic("maxMenuHeight")(maxMenuHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuIsOpen)) __obj.updateDynamic("menuIsOpen")(menuIsOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMenuHeight)) __obj.updateDynamic("maxMenuHeight")(maxMenuHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuIsOpen)) __obj.updateDynamic("menuIsOpen")(menuIsOpen.get.asInstanceOf[js.Any])
     if (menuPlacement != null) __obj.updateDynamic("menuPlacement")(menuPlacement.asInstanceOf[js.Any])
-    if (menuPortalTarget != null) __obj.updateDynamic("menuPortalTarget")(menuPortalTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuPortalTarget)) __obj.updateDynamic("menuPortalTarget")(menuPortalTarget.asInstanceOf[js.Any])
     if (menuPosition != null) __obj.updateDynamic("menuPosition")(menuPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuShouldBlockScroll)) __obj.updateDynamic("menuShouldBlockScroll")(menuShouldBlockScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuShouldScrollIntoView)) __obj.updateDynamic("menuShouldScrollIntoView")(menuShouldScrollIntoView.asInstanceOf[js.Any])
-    if (minMenuHeight != null) __obj.updateDynamic("minMenuHeight")(minMenuHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuShouldBlockScroll)) __obj.updateDynamic("menuShouldBlockScroll")(menuShouldBlockScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuShouldScrollIntoView)) __obj.updateDynamic("menuShouldScrollIntoView")(menuShouldScrollIntoView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minMenuHeight)) __obj.updateDynamic("minMenuHeight")(minMenuHeight.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (noOptionsMessage != null) __obj.updateDynamic("noOptionsMessage")(js.Any.fromFunction1(noOptionsMessage))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
@@ -312,17 +314,17 @@ object Props {
     if (onMenuOpen != null) __obj.updateDynamic("onMenuOpen")(js.Any.fromFunction0(onMenuOpen))
     if (onMenuScrollToBottom != null) __obj.updateDynamic("onMenuScrollToBottom")(js.Any.fromFunction1(onMenuScrollToBottom))
     if (onMenuScrollToTop != null) __obj.updateDynamic("onMenuScrollToTop")(js.Any.fromFunction1(onMenuScrollToTop))
-    if (!js.isUndefined(openMenuOnClick)) __obj.updateDynamic("openMenuOnClick")(openMenuOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(openMenuOnFocus)) __obj.updateDynamic("openMenuOnFocus")(openMenuOnFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(openMenuOnClick)) __obj.updateDynamic("openMenuOnClick")(openMenuOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(openMenuOnFocus)) __obj.updateDynamic("openMenuOnFocus")(openMenuOnFocus.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (screenReaderStatus != null) __obj.updateDynamic("screenReaderStatus")(js.Any.fromFunction1(screenReaderStatus))
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabSelectsValue)) __obj.updateDynamic("tabSelectsValue")(tabSelectsValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSelectsValue)) __obj.updateDynamic("tabSelectsValue")(tabSelectsValue.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[OptionType]]
   }
 }

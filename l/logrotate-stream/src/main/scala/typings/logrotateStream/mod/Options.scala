@@ -27,7 +27,7 @@ object Options {
   @scala.inline
   def apply(file: String, keep: Double, size: String, compress: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], keep = keep.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -11,10 +11,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(encoding: String = null, objectMode: js.UndefOr[Boolean] = js.undefined): Options = {
+  def apply(encoding: js.UndefOr[Null | String] = js.undefined, objectMode: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(encoding)) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -4,12 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("USBIsochronousOutTransferPacket")
-@js.native
-class USBIsochronousOutTransferPacket protected () extends js.Object {
-  def this(status: USBTransferStatus) = this()
-  def this(status: USBTransferStatus, bytesWritten: Double) = this()
-  val bytesWritten: Double = js.native
-  val status: USBTransferStatus = js.native
+trait USBIsochronousOutTransferPacket extends js.Object {
+  val bytesWritten: Double
+  val status: USBTransferStatus
+}
+
+object USBIsochronousOutTransferPacket {
+  @scala.inline
+  def apply(bytesWritten: Double, status: USBTransferStatus): USBIsochronousOutTransferPacket = {
+    val __obj = js.Dynamic.literal(bytesWritten = bytesWritten.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[USBIsochronousOutTransferPacket]
+  }
 }
 

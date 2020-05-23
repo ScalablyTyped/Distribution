@@ -34,11 +34,11 @@ object CreateDataSourceFromRedshiftInput {
     DataSourceId: EntityId,
     DataSpec: RedshiftDataSpec,
     RoleARN: RoleARN,
-    ComputeStatistics: js.UndefOr[Boolean] = js.undefined,
+    ComputeStatistics: js.UndefOr[ComputeStatistics] = js.undefined,
     DataSourceName: EntityName = null
   ): CreateDataSourceFromRedshiftInput = {
     val __obj = js.Dynamic.literal(DataSourceId = DataSourceId.asInstanceOf[js.Any], DataSpec = DataSpec.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(ComputeStatistics)) __obj.updateDynamic("ComputeStatistics")(ComputeStatistics.asInstanceOf[js.Any])
+    if (!js.isUndefined(ComputeStatistics)) __obj.updateDynamic("ComputeStatistics")(ComputeStatistics.get.asInstanceOf[js.Any])
     if (DataSourceName != null) __obj.updateDynamic("DataSourceName")(DataSourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSourceFromRedshiftInput]
   }

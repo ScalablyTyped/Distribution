@@ -12,9 +12,9 @@ trait ITelephonyTransferCall extends js.Object {
 
 object ITelephonyTransferCall {
   @scala.inline
-  def apply(phoneNumber: String = null): ITelephonyTransferCall = {
+  def apply(phoneNumber: js.UndefOr[Null | String] = js.undefined): ITelephonyTransferCall = {
     val __obj = js.Dynamic.literal()
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(phoneNumber)) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITelephonyTransferCall]
   }
 }

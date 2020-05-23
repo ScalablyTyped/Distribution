@@ -12,10 +12,10 @@ trait SphereMetricOptions extends js.Object {
 
 object SphereMetricOptions {
   @scala.inline
-  def apply(projection: ProjectionLike = null, radius: Int | Double = null): SphereMetricOptions = {
+  def apply(projection: ProjectionLike = null, radius: js.UndefOr[Double] = js.undefined): SphereMetricOptions = {
     val __obj = js.Dynamic.literal()
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SphereMetricOptions]
   }
 }

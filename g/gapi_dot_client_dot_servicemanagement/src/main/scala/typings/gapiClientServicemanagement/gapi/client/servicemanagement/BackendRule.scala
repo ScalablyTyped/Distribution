@@ -29,14 +29,14 @@ object BackendRule {
   @scala.inline
   def apply(
     address: String = null,
-    deadline: Int | Double = null,
-    minDeadline: Int | Double = null,
+    deadline: js.UndefOr[Double] = js.undefined,
+    minDeadline: js.UndefOr[Double] = js.undefined,
     selector: String = null
   ): BackendRule = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (deadline != null) __obj.updateDynamic("deadline")(deadline.asInstanceOf[js.Any])
-    if (minDeadline != null) __obj.updateDynamic("minDeadline")(minDeadline.asInstanceOf[js.Any])
+    if (!js.isUndefined(deadline)) __obj.updateDynamic("deadline")(deadline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDeadline)) __obj.updateDynamic("minDeadline")(minDeadline.get.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendRule]
   }

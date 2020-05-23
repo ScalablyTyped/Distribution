@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the state of the playback changes.
-		 */
+  * Fired when the state of the playback changes.
+  */
 trait AudioPlayerChangeEvent extends AudioPlayerBaseEvent {
   /**
-  			 * Text description of the state of playback.
-  			 */
+    * Text description of the state of playback.
+    */
   var description: Double
   /**
-  			 * Current state of playback.
-  			 */
+    * Current state of playback.
+    */
   var state: Double
 }
 

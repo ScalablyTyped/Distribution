@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonFilePath
+import typings.baiduApp.anon.FilePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait RemoveSavedFileOptions
   var filePath: String
   /** 接口调用成功的回调函数 */
   @JSName("success")
-  var success_RemoveSavedFileOptions: js.UndefOr[js.Function1[/* res */ AnonFilePath, Unit]] = js.undefined
+  var success_RemoveSavedFileOptions: js.UndefOr[js.Function1[/* res */ FilePath, Unit]] = js.undefined
 }
 
 object RemoveSavedFileOptions {
@@ -19,7 +19,7 @@ object RemoveSavedFileOptions {
     filePath: String,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonFilePath => Unit = null
+    success: /* res */ FilePath => Unit = null
   ): RemoveSavedFileOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

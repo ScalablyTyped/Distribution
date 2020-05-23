@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.EnableAutofillOnKeyPress
 import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +22,7 @@ object autofillMod extends js.Object {
   /* static members */
   @js.native
   object Autofill extends js.Object {
-    var defaultProps: AnonEnableAutofillOnKeyPress = js.native
+    var defaultProps: EnableAutofillOnKeyPress = js.native
   }
   
 }

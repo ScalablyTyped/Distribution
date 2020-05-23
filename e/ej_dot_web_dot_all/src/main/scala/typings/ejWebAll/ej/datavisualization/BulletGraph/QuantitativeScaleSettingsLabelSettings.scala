@@ -45,9 +45,9 @@ object QuantitativeScaleSettingsLabelSettings {
     labelPlacement: LabelPlacement | String = null,
     labelPrefix: String = null,
     labelSuffix: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     position: LabelPosition | String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     stroke: String = null
   ): QuantitativeScaleSettingsLabelSettings = {
     val __obj = js.Dynamic.literal()
@@ -55,9 +55,9 @@ object QuantitativeScaleSettingsLabelSettings {
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (labelPrefix != null) __obj.updateDynamic("labelPrefix")(labelPrefix.asInstanceOf[js.Any])
     if (labelSuffix != null) __obj.updateDynamic("labelSuffix")(labelSuffix.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantitativeScaleSettingsLabelSettings]
   }

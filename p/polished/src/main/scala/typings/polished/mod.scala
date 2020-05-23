@@ -1,5 +1,6 @@
 package typings.polished
 
+import typings.polished.anon.FnCall
 import typings.polished.colorMod.ContrastScores
 import typings.polished.colorMod.HslColor
 import typings.polished.colorMod.HslaColor

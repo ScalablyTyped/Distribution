@@ -27,9 +27,9 @@ object LogEntryOperation {
     producer: String = null
   ): LogEntryOperation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last.get.asInstanceOf[js.Any])
     if (producer != null) __obj.updateDynamic("producer")(producer.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogEntryOperation]
   }

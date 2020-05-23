@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientDashboard.DashboardTitleToolbarUpdated event.
   */
-@JSGlobal("ASPxClientDashboardTitleToolbarUpdatedEventArgs")
-@js.native
-class ASPxClientDashboardTitleToolbarUpdatedEventArgs () extends ASPxClientEventArgs {
+trait ASPxClientDashboardTitleToolbarUpdatedEventArgs extends ASPxClientEventArgs {
   /**
     * Provides access to dashboard title options.
     */
-  var Options: js.Any = js.native
+  var Options: js.Any
+}
+
+object ASPxClientDashboardTitleToolbarUpdatedEventArgs {
+  @scala.inline
+  def apply(Options: js.Any): ASPxClientDashboardTitleToolbarUpdatedEventArgs = {
+    val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientDashboardTitleToolbarUpdatedEventArgs]
+  }
 }
 

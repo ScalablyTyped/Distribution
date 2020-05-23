@@ -37,7 +37,7 @@ object RequestInit {
     cf: StringDictionary[js.Any] = null,
     compress: js.UndefOr[Boolean] = js.undefined,
     credentials: RequestCredentials = null,
-    follow: Int | Double = null,
+    follow: js.UndefOr[Double] = js.undefined,
     headers: HeadersInit = null,
     integrity: String = null,
     method: String = null,
@@ -45,17 +45,17 @@ object RequestInit {
     redirect: RequestRedirect = null,
     referrer: String = null,
     referrerPolicy: ReferrerPolicy = null,
-    size: Int | Double = null,
-    timeout: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): RequestInit = {
     val __obj = js.Dynamic.literal()
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (cf != null) __obj.updateDynamic("cf")(cf.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (follow != null) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
@@ -63,8 +63,8 @@ object RequestInit {
     if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
     if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestInit]
   }
 }

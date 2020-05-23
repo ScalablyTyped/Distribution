@@ -39,51 +39,51 @@ object ColProps {
     AllHTMLAttributes: AllHTMLAttributes[Col] = null,
     ClassAttributes: ClassAttributes[Col] = null,
     componentClass: ReactType[_] = null,
-    lg: Int | Double = null,
+    lg: js.UndefOr[Double] = js.undefined,
     lgHidden: js.UndefOr[Boolean] = js.undefined,
-    lgOffset: Int | Double = null,
-    lgPull: Int | Double = null,
-    lgPush: Int | Double = null,
-    md: Int | Double = null,
+    lgOffset: js.UndefOr[Double] = js.undefined,
+    lgPull: js.UndefOr[Double] = js.undefined,
+    lgPush: js.UndefOr[Double] = js.undefined,
+    md: js.UndefOr[Double] = js.undefined,
     mdHidden: js.UndefOr[Boolean] = js.undefined,
-    mdOffset: Int | Double = null,
-    mdPull: Int | Double = null,
-    mdPush: Int | Double = null,
-    sm: Int | Double = null,
+    mdOffset: js.UndefOr[Double] = js.undefined,
+    mdPull: js.UndefOr[Double] = js.undefined,
+    mdPush: js.UndefOr[Double] = js.undefined,
+    sm: js.UndefOr[Double] = js.undefined,
     smHidden: js.UndefOr[Boolean] = js.undefined,
-    smOffset: Int | Double = null,
-    smPull: Int | Double = null,
-    smPush: Int | Double = null,
-    xs: Int | Double = null,
+    smOffset: js.UndefOr[Double] = js.undefined,
+    smPull: js.UndefOr[Double] = js.undefined,
+    smPush: js.UndefOr[Double] = js.undefined,
+    xs: js.UndefOr[Double] = js.undefined,
     xsHidden: js.UndefOr[Boolean] = js.undefined,
-    xsOffset: Int | Double = null,
-    xsPull: Int | Double = null,
-    xsPush: Int | Double = null
+    xsOffset: js.UndefOr[Double] = js.undefined,
+    xsPull: js.UndefOr[Double] = js.undefined,
+    xsPush: js.UndefOr[Double] = js.undefined
   ): ColProps = {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgHidden)) __obj.updateDynamic("lgHidden")(lgHidden.asInstanceOf[js.Any])
-    if (lgOffset != null) __obj.updateDynamic("lgOffset")(lgOffset.asInstanceOf[js.Any])
-    if (lgPull != null) __obj.updateDynamic("lgPull")(lgPull.asInstanceOf[js.Any])
-    if (lgPush != null) __obj.updateDynamic("lgPush")(lgPush.asInstanceOf[js.Any])
-    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdHidden)) __obj.updateDynamic("mdHidden")(mdHidden.asInstanceOf[js.Any])
-    if (mdOffset != null) __obj.updateDynamic("mdOffset")(mdOffset.asInstanceOf[js.Any])
-    if (mdPull != null) __obj.updateDynamic("mdPull")(mdPull.asInstanceOf[js.Any])
-    if (mdPush != null) __obj.updateDynamic("mdPush")(mdPush.asInstanceOf[js.Any])
-    if (sm != null) __obj.updateDynamic("sm")(sm.asInstanceOf[js.Any])
-    if (!js.isUndefined(smHidden)) __obj.updateDynamic("smHidden")(smHidden.asInstanceOf[js.Any])
-    if (smOffset != null) __obj.updateDynamic("smOffset")(smOffset.asInstanceOf[js.Any])
-    if (smPull != null) __obj.updateDynamic("smPull")(smPull.asInstanceOf[js.Any])
-    if (smPush != null) __obj.updateDynamic("smPush")(smPush.asInstanceOf[js.Any])
-    if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsHidden)) __obj.updateDynamic("xsHidden")(xsHidden.asInstanceOf[js.Any])
-    if (xsOffset != null) __obj.updateDynamic("xsOffset")(xsOffset.asInstanceOf[js.Any])
-    if (xsPull != null) __obj.updateDynamic("xsPull")(xsPull.asInstanceOf[js.Any])
-    if (xsPush != null) __obj.updateDynamic("xsPush")(xsPush.asInstanceOf[js.Any])
+    if (!js.isUndefined(lg)) __obj.updateDynamic("lg")(lg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lgHidden)) __obj.updateDynamic("lgHidden")(lgHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lgOffset)) __obj.updateDynamic("lgOffset")(lgOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lgPull)) __obj.updateDynamic("lgPull")(lgPull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lgPush)) __obj.updateDynamic("lgPush")(lgPush.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(md)) __obj.updateDynamic("md")(md.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mdHidden)) __obj.updateDynamic("mdHidden")(mdHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mdOffset)) __obj.updateDynamic("mdOffset")(mdOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mdPull)) __obj.updateDynamic("mdPull")(mdPull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mdPush)) __obj.updateDynamic("mdPush")(mdPush.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sm)) __obj.updateDynamic("sm")(sm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smHidden)) __obj.updateDynamic("smHidden")(smHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smOffset)) __obj.updateDynamic("smOffset")(smOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smPull)) __obj.updateDynamic("smPull")(smPull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smPush)) __obj.updateDynamic("smPush")(smPush.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xs)) __obj.updateDynamic("xs")(xs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xsHidden)) __obj.updateDynamic("xsHidden")(xsHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xsOffset)) __obj.updateDynamic("xsOffset")(xsOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xsPull)) __obj.updateDynamic("xsPull")(xsPull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xsPush)) __obj.updateDynamic("xsPush")(xsPush.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColProps]
   }
 }

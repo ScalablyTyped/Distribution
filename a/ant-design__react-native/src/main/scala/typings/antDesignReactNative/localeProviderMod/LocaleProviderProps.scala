@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.localeProviderMod
 
-import typings.antDesignReactNative.PartialLocale
+import typings.antDesignReactNative.anon.PartialLocale
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

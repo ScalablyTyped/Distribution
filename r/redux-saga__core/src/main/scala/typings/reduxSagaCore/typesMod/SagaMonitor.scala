@@ -1,8 +1,8 @@
 package typings.reduxSagaCore.typesMod
 
 import typings.redux.mod.Action
-import typings.reduxSagaCore.AnonArgs
-import typings.reduxSagaCore.AnonEffect
+import typings.reduxSagaCore.anon.Args
+import typings.reduxSagaCore.anon.Effect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,13 +40,13 @@ trait SagaMonitor extends js.Object {
     *   `race`/`all`
     * @param effect The yielded effect itself
     */
-  var effectTriggered: js.UndefOr[js.Function1[/* options */ AnonEffect, Unit]] = js.undefined
+  var effectTriggered: js.UndefOr[js.Function1[/* options */ Effect, Unit]] = js.undefined
   /**
     * @param effectId Unique ID assigned to this root saga execution
     * @param saga The generator function that starts to run
     * @param args The arguments passed to the generator function
     */
-  var rootSagaStarted: js.UndefOr[js.Function1[/* options */ AnonArgs, Unit]] = js.undefined
+  var rootSagaStarted: js.UndefOr[js.Function1[/* options */ Args, Unit]] = js.undefined
 }
 
 object SagaMonitor {
@@ -56,8 +56,8 @@ object SagaMonitor {
     effectCancelled: /* effectId */ Double => Unit = null,
     effectRejected: (/* effectId */ Double, /* error */ js.Any) => Unit = null,
     effectResolved: (/* effectId */ Double, /* result */ js.Any) => Unit = null,
-    effectTriggered: /* options */ AnonEffect => Unit = null,
-    rootSagaStarted: /* options */ AnonArgs => Unit = null
+    effectTriggered: /* options */ Effect => Unit = null,
+    rootSagaStarted: /* options */ Args => Unit = null
   ): SagaMonitor = {
     val __obj = js.Dynamic.literal()
     if (actionDispatched != null) __obj.updateDynamic("actionDispatched")(js.Any.fromFunction1(actionDispatched))

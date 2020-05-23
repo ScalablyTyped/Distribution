@@ -1,17 +1,16 @@
 package typings.pulumiAws.lambdaMixinsMod
 
-import typings.pulumiAws.AnonCodePathOptions
+import typings.pulumiAws.anon.CodePathOptions
 import typings.pulumiAws.arnMod.ARN
 import typings.pulumiAws.iamMod.Role
 import typings.pulumiAws.runtimesMod.Runtime
-import typings.pulumiPulumi.codePathsMod.CodePathOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof @pulumi/aws.AnonCodePathOptions> ]: @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs[P]} */ @js.native
-trait CallbackFunctionArgs[E, R] extends AnonCodePathOptions {
+- Dropped {[ P in @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof @pulumi/aws.anon.CodePathOptions> ]: @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs[P]} */ @js.native
+trait CallbackFunctionArgs[E, R] extends CodePathOptions {
   /**
     * The Javascript callback to use as the entrypoint for the AWS Lambda out of.  Either
     * [callback] or [callbackFactory] must be provided.
@@ -35,7 +34,7 @@ object CallbackFunctionArgs {
   def apply[E, R](
     callback: (E, /* context */ Context, /* callback */ js.Function2[/* error */ js.UndefOr[js.Any], /* result */ js.UndefOr[R], Unit]) => js.Promise[R] | Unit = null,
     callbackFactory: () => Callback[E, R] = null,
-    codePathOptions: CodePathOptions = null,
+    codePathOptions: typings.pulumiPulumi.codePathsMod.CodePathOptions = null,
     policies: js.Array[ARN] = null,
     role: Role = null,
     runtime: Runtime = null

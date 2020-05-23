@@ -73,24 +73,24 @@ object AttachmentInfoProperties {
     contentType: String = null,
     exifInfo: js.Array[ExifInfo] = null,
     globalId: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     keywords: String = null,
     name: String = null,
-    parentGlobalId: Int | Double = null,
-    parentObjectId: Int | Double = null,
-    size: Int | Double = null,
+    parentGlobalId: js.UndefOr[Double] = js.undefined,
+    parentObjectId: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): AttachmentInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (exifInfo != null) __obj.updateDynamic("exifInfo")(exifInfo.asInstanceOf[js.Any])
     if (globalId != null) __obj.updateDynamic("globalId")(globalId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentGlobalId != null) __obj.updateDynamic("parentGlobalId")(parentGlobalId.asInstanceOf[js.Any])
-    if (parentObjectId != null) __obj.updateDynamic("parentObjectId")(parentObjectId.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentGlobalId)) __obj.updateDynamic("parentGlobalId")(parentGlobalId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentObjectId)) __obj.updateDynamic("parentObjectId")(parentObjectId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentInfoProperties]
   }

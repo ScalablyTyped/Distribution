@@ -44,7 +44,7 @@ object SignerGetSignedUrlConfig {
     if (extensionHeaders != null) __obj.updateDynamic("extensionHeaders")(extensionHeaders.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtualHostedStyle)) __obj.updateDynamic("virtualHostedStyle")(virtualHostedStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualHostedStyle)) __obj.updateDynamic("virtualHostedStyle")(virtualHostedStyle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignerGetSignedUrlConfig]
   }
 }

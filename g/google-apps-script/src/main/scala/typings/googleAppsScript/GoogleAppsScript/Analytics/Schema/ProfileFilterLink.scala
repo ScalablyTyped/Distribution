@@ -20,7 +20,7 @@ object ProfileFilterLink {
     id: String = null,
     kind: String = null,
     profileRef: ProfileRef = null,
-    rank: Int | Double = null,
+    rank: js.UndefOr[Double] = js.undefined,
     selfLink: String = null
   ): ProfileFilterLink = {
     val __obj = js.Dynamic.literal()
@@ -28,7 +28,7 @@ object ProfileFilterLink {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (profileRef != null) __obj.updateDynamic("profileRef")(profileRef.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileFilterLink]
   }

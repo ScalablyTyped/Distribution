@@ -1,6 +1,6 @@
 package typings.cassandraDriver.mod
 
-import typings.cassandraDriver.AnonLogErroredRequests
+import typings.cassandraDriver.anon.LogErroredRequests
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ object tracker extends js.Object {
   @js.native
   class RequestLogger protected ()
     extends typings.cassandraDriver.trackerMod.tracker.RequestLogger {
-    def this(options: AnonLogErroredRequests) = this()
+    def this(options: LogErroredRequests) = this()
   }
   
 }

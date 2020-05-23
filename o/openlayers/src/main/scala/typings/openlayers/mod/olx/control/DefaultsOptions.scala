@@ -24,11 +24,11 @@ object DefaultsOptions {
     zoomOptions: ZoomOptions = null
   ): DefaultsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attribution)) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (!js.isUndefined(attribution)) __obj.updateDynamic("attribution")(attribution.get.asInstanceOf[js.Any])
     if (attributionOptions != null) __obj.updateDynamic("attributionOptions")(attributionOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
     if (rotateOptions != null) __obj.updateDynamic("rotateOptions")(rotateOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultsOptions]
   }

@@ -29,7 +29,7 @@ object ListWordsParams {
   ): ListWordsParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (word_type != null) __obj.updateDynamic("word_type")(word_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWordsParams]

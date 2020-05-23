@@ -1,18 +1,18 @@
 package typings.istanbulLibInstrument.mod
 
-import typings.istanbulLibInstrument.AnonFileCoverage
+import typings.istanbulLibInstrument.anon.FileCoverage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Visitor extends js.Object {
   def enter(path: String): Unit
-  def exit(path: String): AnonFileCoverage
+  def exit(path: String): FileCoverage
 }
 
 object Visitor {
   @scala.inline
-  def apply(enter: String => Unit, exit: String => AnonFileCoverage): Visitor = {
+  def apply(enter: String => Unit, exit: String => FileCoverage): Visitor = {
     val __obj = js.Dynamic.literal(enter = js.Any.fromFunction1(enter), exit = js.Any.fromFunction1(exit))
     __obj.asInstanceOf[Visitor]
   }

@@ -1,0 +1,22 @@
+package typings.octokitTypes.endpointsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GitGetBlobResponseData extends js.Object {
+  var content: String
+  var encoding: String
+  var sha: String
+  var size: Double
+  var url: String
+}
+
+object GitGetBlobResponseData {
+  @scala.inline
+  def apply(content: String, encoding: String, sha: String, size: Double, url: String): GitGetBlobResponseData = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GitGetBlobResponseData]
+  }
+}
+

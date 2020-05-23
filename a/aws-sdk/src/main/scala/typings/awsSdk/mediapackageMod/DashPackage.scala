@@ -59,30 +59,30 @@ object DashPackage {
     AdsOnDeliveryRestrictions: AdsOnDeliveryRestrictions = null,
     Encryption: DashEncryption = null,
     ManifestLayout: ManifestLayout = null,
-    ManifestWindowSeconds: Int | Double = null,
-    MinBufferTimeSeconds: Int | Double = null,
-    MinUpdatePeriodSeconds: Int | Double = null,
+    ManifestWindowSeconds: js.UndefOr[integer] = js.undefined,
+    MinBufferTimeSeconds: js.UndefOr[integer] = js.undefined,
+    MinUpdatePeriodSeconds: js.UndefOr[integer] = js.undefined,
     PeriodTriggers: listOfPeriodTriggersElement = null,
     Profile: Profile = null,
-    SegmentDurationSeconds: Int | Double = null,
+    SegmentDurationSeconds: js.UndefOr[integer] = js.undefined,
     SegmentTemplateFormat: SegmentTemplateFormat = null,
     StreamSelection: StreamSelection = null,
-    SuggestedPresentationDelaySeconds: Int | Double = null
+    SuggestedPresentationDelaySeconds: js.UndefOr[integer] = js.undefined
   ): DashPackage = {
     val __obj = js.Dynamic.literal()
     if (AdTriggers != null) __obj.updateDynamic("AdTriggers")(AdTriggers.asInstanceOf[js.Any])
     if (AdsOnDeliveryRestrictions != null) __obj.updateDynamic("AdsOnDeliveryRestrictions")(AdsOnDeliveryRestrictions.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
     if (ManifestLayout != null) __obj.updateDynamic("ManifestLayout")(ManifestLayout.asInstanceOf[js.Any])
-    if (ManifestWindowSeconds != null) __obj.updateDynamic("ManifestWindowSeconds")(ManifestWindowSeconds.asInstanceOf[js.Any])
-    if (MinBufferTimeSeconds != null) __obj.updateDynamic("MinBufferTimeSeconds")(MinBufferTimeSeconds.asInstanceOf[js.Any])
-    if (MinUpdatePeriodSeconds != null) __obj.updateDynamic("MinUpdatePeriodSeconds")(MinUpdatePeriodSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManifestWindowSeconds)) __obj.updateDynamic("ManifestWindowSeconds")(ManifestWindowSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinBufferTimeSeconds)) __obj.updateDynamic("MinBufferTimeSeconds")(MinBufferTimeSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinUpdatePeriodSeconds)) __obj.updateDynamic("MinUpdatePeriodSeconds")(MinUpdatePeriodSeconds.get.asInstanceOf[js.Any])
     if (PeriodTriggers != null) __obj.updateDynamic("PeriodTriggers")(PeriodTriggers.asInstanceOf[js.Any])
     if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])
-    if (SegmentDurationSeconds != null) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.get.asInstanceOf[js.Any])
     if (SegmentTemplateFormat != null) __obj.updateDynamic("SegmentTemplateFormat")(SegmentTemplateFormat.asInstanceOf[js.Any])
     if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection.asInstanceOf[js.Any])
-    if (SuggestedPresentationDelaySeconds != null) __obj.updateDynamic("SuggestedPresentationDelaySeconds")(SuggestedPresentationDelaySeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(SuggestedPresentationDelaySeconds)) __obj.updateDynamic("SuggestedPresentationDelaySeconds")(SuggestedPresentationDelaySeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashPackage]
   }
 }

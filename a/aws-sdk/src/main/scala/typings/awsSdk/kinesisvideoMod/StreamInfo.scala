@@ -48,7 +48,7 @@ object StreamInfo {
   @scala.inline
   def apply(
     CreationTime: Timestamp = null,
-    DataRetentionInHours: Int | Double = null,
+    DataRetentionInHours: js.UndefOr[DataRetentionInHours] = js.undefined,
     DeviceName: DeviceName = null,
     KmsKeyId: KmsKeyId = null,
     MediaType: MediaType = null,
@@ -59,7 +59,7 @@ object StreamInfo {
   ): StreamInfo = {
     val __obj = js.Dynamic.literal()
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DataRetentionInHours != null) __obj.updateDynamic("DataRetentionInHours")(DataRetentionInHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataRetentionInHours)) __obj.updateDynamic("DataRetentionInHours")(DataRetentionInHours.get.asInstanceOf[js.Any])
     if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (MediaType != null) __obj.updateDynamic("MediaType")(MediaType.asInstanceOf[js.Any])

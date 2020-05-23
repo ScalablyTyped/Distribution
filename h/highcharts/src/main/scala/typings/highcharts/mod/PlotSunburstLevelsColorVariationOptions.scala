@@ -19,10 +19,10 @@ trait PlotSunburstLevelsColorVariationOptions extends js.Object {
 
 object PlotSunburstLevelsColorVariationOptions {
   @scala.inline
-  def apply(key: String = null, to: Int | Double = null): PlotSunburstLevelsColorVariationOptions = {
+  def apply(key: String = null, to: js.UndefOr[Double] = js.undefined): PlotSunburstLevelsColorVariationOptions = {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSunburstLevelsColorVariationOptions]
   }
 }

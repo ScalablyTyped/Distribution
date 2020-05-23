@@ -12,7 +12,7 @@ object StartTrackingHeapObjectsParameterType {
   @scala.inline
   def apply(trackAllocations: js.UndefOr[Boolean] = js.undefined): StartTrackingHeapObjectsParameterType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(trackAllocations)) __obj.updateDynamic("trackAllocations")(trackAllocations.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackAllocations)) __obj.updateDynamic("trackAllocations")(trackAllocations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartTrackingHeapObjectsParameterType]
   }
 }

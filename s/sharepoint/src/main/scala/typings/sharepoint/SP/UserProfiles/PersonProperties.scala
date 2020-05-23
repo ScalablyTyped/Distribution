@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents user properties. */
-@JSGlobal("SP.UserProfiles.PersonProperties")
 @js.native
-class PersonProperties () extends ClientObject {
+trait PersonProperties extends ClientObject {
   /** Specifies the person's account name */
   def get_accountName(): String = js.native
   /** Specifies an array of strings containing the account names of a person's direct reports. */

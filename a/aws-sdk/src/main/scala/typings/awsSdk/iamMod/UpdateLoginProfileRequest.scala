@@ -25,11 +25,11 @@ object UpdateLoginProfileRequest {
   def apply(
     UserName: userNameType,
     Password: passwordType = null,
-    PasswordResetRequired: js.UndefOr[Boolean] = js.undefined
+    PasswordResetRequired: js.UndefOr[booleanObjectType] = js.undefined
   ): UpdateLoginProfileRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
     if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (!js.isUndefined(PasswordResetRequired)) __obj.updateDynamic("PasswordResetRequired")(PasswordResetRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(PasswordResetRequired)) __obj.updateDynamic("PasswordResetRequired")(PasswordResetRequired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLoginProfileRequest]
   }
 }

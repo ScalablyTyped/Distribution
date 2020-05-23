@@ -1,7 +1,5 @@
 package typings.tensorflowTfjsLayers.initializersMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`0.05`
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class TruncatedNormal protected () extends Initializer {
   def this(args: TruncatedNormalArgs) = this()
-  val DEFAULT_MEAN: `0` = js.native
-  val DEFAULT_STDDEV: `0.05` = js.native
+  val DEFAULT_MEAN: /* 0 */ Double = js.native
+  val DEFAULT_STDDEV: /* 0.05 */ Double = js.native
   var mean: js.Any = js.native
   var seed: js.Any = js.native
   var stddev: js.Any = js.native

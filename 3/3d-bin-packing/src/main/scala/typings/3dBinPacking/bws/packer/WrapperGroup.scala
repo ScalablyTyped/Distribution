@@ -9,33 +9,8 @@ import scala.scalajs.js.annotation._
   *
   * @author Jeongho Nam <http://samchon.org>
   */
-@JSGlobal("bws.packer.WrapperGroup")
 @js.native
-/**
-  * Default Constructor.
-  */
-class WrapperGroup () extends WrapperArray {
-  /**
-    * Construct from a sample.
-    *
-    * @param sample A sample, standard of the WrapperGroup.
-    */
-  def this(sample: Wrapper) = this()
-  /**
-    * Copy Constructor.
-    */
-  def this(wrapperGroup: WrapperGroup) = this()
-  /**
-    * Construct from members of the {@link sample}.
-    *
-    * @param name Name, identifier of the sample.
-    * @param price Price, issued cost for a type of the sample.
-    * @param width Width, dimensional length on the X-axis in 3D, of the sample.
-    * @param height Height, dimensional length on the Y-axis in 3D, of the sample.
-    * @param length Length, dimensional length on the Z-axis in 3D, of the sample.
-    * @param thickness A thickness, causes shrinkness on containable volume, of the sample.
-    */
-  def this(name: String, price: Double, width: Double, height: Double, length: Double, thickness: Double) = this()
+trait WrapperGroup extends WrapperArray {
   /**
     * Allocated instances.
     */

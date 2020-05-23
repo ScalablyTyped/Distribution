@@ -1,6 +1,7 @@
 package typings.instagramPrivateApi
 
 import typings.chance.Chance.Chance
+import typings.instagramPrivateApi.anon.PartialAttemptOptionsany
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js

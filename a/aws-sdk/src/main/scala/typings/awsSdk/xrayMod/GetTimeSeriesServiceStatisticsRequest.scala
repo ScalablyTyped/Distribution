@@ -45,14 +45,14 @@ object GetTimeSeriesServiceStatisticsRequest {
     GroupARN: GroupARN = null,
     GroupName: GroupName = null,
     NextToken: String = null,
-    Period: Int | scala.Double = null
+    Period: js.UndefOr[NullableInteger] = js.undefined
   ): GetTimeSeriesServiceStatisticsRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     if (EntitySelectorExpression != null) __obj.updateDynamic("EntitySelectorExpression")(EntitySelectorExpression.asInstanceOf[js.Any])
     if (GroupARN != null) __obj.updateDynamic("GroupARN")(GroupARN.asInstanceOf[js.Any])
     if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Period != null) __obj.updateDynamic("Period")(Period.asInstanceOf[js.Any])
+    if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTimeSeriesServiceStatisticsRequest]
   }
 }

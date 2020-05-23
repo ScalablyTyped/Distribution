@@ -40,15 +40,15 @@ object RuntimeEnvironment {
   def apply(
     bypassTempDirValidation: js.UndefOr[Boolean] = js.undefined,
     machineType: String = null,
-    maxWorkers: Int | Double = null,
+    maxWorkers: js.UndefOr[Double] = js.undefined,
     serviceAccountEmail: String = null,
     tempLocation: String = null,
     zone: String = null
   ): RuntimeEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bypassTempDirValidation)) __obj.updateDynamic("bypassTempDirValidation")(bypassTempDirValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassTempDirValidation)) __obj.updateDynamic("bypassTempDirValidation")(bypassTempDirValidation.get.asInstanceOf[js.Any])
     if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (maxWorkers != null) __obj.updateDynamic("maxWorkers")(maxWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWorkers)) __obj.updateDynamic("maxWorkers")(maxWorkers.get.asInstanceOf[js.Any])
     if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
     if (tempLocation != null) __obj.updateDynamic("tempLocation")(tempLocation.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])

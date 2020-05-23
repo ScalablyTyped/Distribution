@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ trait SVGAnimatedBoolean extends js.Object {
   var baseVal: scala.Boolean
 }
 
-@JSGlobal("SVGAnimatedBoolean")
-@js.native
-object SVGAnimatedBoolean extends Instantiable0[SVGAnimatedBoolean]
+object SVGAnimatedBoolean {
+  @scala.inline
+  def apply(animVal: scala.Boolean, baseVal: scala.Boolean): SVGAnimatedBoolean = {
+    val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGAnimatedBoolean]
+  }
+}
 

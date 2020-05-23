@@ -13,7 +13,7 @@ object FABButtonProps {
   def apply(ButtonProps: ButtonProps = null, mini: js.UndefOr[Boolean] = js.undefined): FABButtonProps = {
     val __obj = js.Dynamic.literal()
     if (ButtonProps != null) js.Dynamic.global.Object.assign(__obj, ButtonProps)
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
+    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FABButtonProps]
   }
 }

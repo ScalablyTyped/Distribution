@@ -26,18 +26,18 @@ object InfiniteScrollProps {
     renderMarker: /* repeated */ js.Any => _ = null,
     replace: js.UndefOr[Boolean] = js.undefined,
     scrollableAncestor: ReactNode | window = null,
-    show: Int | Double = null,
-    step: Int | Double = null
+    show: js.UndefOr[Double] = js.undefined,
+    step: js.UndefOr[Double] = js.undefined
   ): InfiniteScrollProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (onMore != null) __obj.updateDynamic("onMore")(js.Any.fromFunction1(onMore))
     if (renderMarker != null) __obj.updateDynamic("renderMarker")(js.Any.fromFunction1(renderMarker))
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.get.asInstanceOf[js.Any])
     if (scrollableAncestor != null) __obj.updateDynamic("scrollableAncestor")(scrollableAncestor.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfiniteScrollProps]
   }
 }

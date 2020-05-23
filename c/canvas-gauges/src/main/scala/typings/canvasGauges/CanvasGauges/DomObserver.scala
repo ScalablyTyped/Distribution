@@ -7,10 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CanvasGauges.DomObserver")
 @js.native
-class DomObserver protected () extends js.Object {
-  def this(options: GenericOptions, element: String, `type`: String) = this()
+trait DomObserver extends js.Object {
   var Type: BaseGauge = js.native
   var element: String = js.native
   var isObservable: Boolean = js.native
@@ -23,15 +21,5 @@ class DomObserver protected () extends js.Object {
   def process(node: HTMLElement): BaseGauge = js.native
   def process(node: Node): BaseGauge = js.native
   def traverse(): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("CanvasGauges.DomObserver")
-@js.native
-object DomObserver extends js.Object {
-  def domReady(handler: js.Function): js.Any = js.native
-  def parse(value: js.Any): js.Any = js.native
-  def toAttributeName(str: String): String = js.native
-  def toDashed(camelCase: String): String = js.native
 }
 

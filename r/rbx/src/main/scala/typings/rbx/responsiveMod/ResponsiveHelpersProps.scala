@@ -1,6 +1,6 @@
 package typings.rbx.responsiveMod
 
-import typings.rbx.BinVariablesbreakpointsLi
+import typings.rbx.anon.BinVariablesbreakpointsLi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

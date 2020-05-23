@@ -1,7 +1,7 @@
 package typings.sparkpost.mod
 
-import typings.sparkpost.AnonEmailrfc822
-import typings.sparkpost.AnonTemplateid
+import typings.sparkpost.anon.Emailrfc822
+import typings.sparkpost.anon.Templateid
 import typings.sparkpost.sparkpostStrings.Canceled
 import typings.sparkpost.sparkpostStrings.Generating
 import typings.sparkpost.sparkpostStrings.Success
@@ -14,7 +14,7 @@ trait Transmission extends js.Object {
   /** Name of the campaign */
   var campaign_id: String
   /** Content that will be used to construct a message */
-  var content: InlineContent | AnonTemplateid | AnonEmailrfc822
+  var content: InlineContent | Templateid | Emailrfc822
   /** Description of the transmission */
   var description: String
   /** ID of the transmission */
@@ -41,7 +41,7 @@ object Transmission {
   @scala.inline
   def apply(
     campaign_id: String,
-    content: InlineContent | AnonTemplateid | AnonEmailrfc822,
+    content: InlineContent | Templateid | Emailrfc822,
     description: String,
     id: String,
     metadata: js.Any,

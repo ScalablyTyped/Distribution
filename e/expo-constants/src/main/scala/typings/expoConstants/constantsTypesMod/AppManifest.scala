@@ -1,10 +1,10 @@
 package typings.expoConstants.constantsTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expoConstants.AnonDev
-import typings.expoConstants.AnonDictkey
-import typings.expoConstants.AnonIcon
-import typings.expoConstants.AnonTool
+import typings.expoConstants.anon.Dev
+import typings.expoConstants.anon.Dictkey
+import typings.expoConstants.anon.Icon
+import typings.expoConstants.anon.Tool
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,16 +14,16 @@ trait AppManifest
   var bundleUrl: String
   var debuggerHost: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined
-  var developer: js.UndefOr[AnonTool] = js.undefined
+  var developer: js.UndefOr[Tool] = js.undefined
   var entryPoint: js.UndefOr[String] = js.undefined
   var icon: js.UndefOr[String] = js.undefined
-  var loading: js.UndefOr[AnonIcon] = js.undefined
+  var loading: js.UndefOr[Icon] = js.undefined
   var logUrl: js.UndefOr[String] = js.undefined
   var mainModuleName: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var notification: js.UndefOr[AnonDictkey] = js.undefined
+  var notification: js.UndefOr[Dictkey] = js.undefined
   var orientation: js.UndefOr[String] = js.undefined
-  var packagerOpts: js.UndefOr[AnonDev] = js.undefined
+  var packagerOpts: js.UndefOr[Dev] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
   /** Published Apps Only */
   var revisionId: js.UndefOr[String] = js.undefined
@@ -37,19 +37,19 @@ object AppManifest {
   @scala.inline
   def apply(
     bundleUrl: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     debuggerHost: String = null,
     description: String = null,
-    developer: AnonTool = null,
+    developer: Tool = null,
     entryPoint: String = null,
     icon: String = null,
-    loading: AnonIcon = null,
+    loading: Icon = null,
     logUrl: String = null,
     mainModuleName: String = null,
     name: String = null,
-    notification: AnonDictkey = null,
+    notification: Dictkey = null,
     orientation: String = null,
-    packagerOpts: AnonDev = null,
+    packagerOpts: Dev = null,
     primaryColor: String = null,
     revisionId: String = null,
     sdkVersion: String = null,
@@ -76,7 +76,7 @@ object AppManifest {
     if (sdkVersion != null) __obj.updateDynamic("sdkVersion")(sdkVersion.asInstanceOf[js.Any])
     if (slug != null) __obj.updateDynamic("slug")(slug.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(xde)) __obj.updateDynamic("xde")(xde.asInstanceOf[js.Any])
+    if (!js.isUndefined(xde)) __obj.updateDynamic("xde")(xde.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppManifest]
   }
 }

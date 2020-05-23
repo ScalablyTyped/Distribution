@@ -1,5 +1,8 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import typings.forkTsCheckerWebpackPlugin.anon.FnCall
+import typings.forkTsCheckerWebpackPlugin.anon.RemovedFiles
+import typings.forkTsCheckerWebpackPlugin.anon.Typeofts
 import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveModuleName
 import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveTypeReferenceDirective
 import typings.forkTsCheckerWebpackPlugin.vueOptionsMod.VueOptions
@@ -109,7 +112,7 @@ object compilerHostMod extends js.Object {
     def onUnRecoverableConfigFileDiagnostic(): Unit = js.native
     @JSName("onWatchStatusChange")
     def onWatchStatusChange_MCompilerHost(): Unit = js.native
-    def processChanges(): js.Promise[AnonRemovedFiles] = js.native
+    def processChanges(): js.Promise[RemovedFiles] = js.native
     @JSName("readDirectory")
     def readDirectory_MCompilerHost(path: String): js.Array[String] = js.native
     @JSName("readDirectory")

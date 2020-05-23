@@ -2,9 +2,9 @@ package typings.typeFest.packageJsonMod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.typeFest.AnonDictmoduleName
-import typings.typeFest.AnonType
-import typings.typeFest.AnonUrl
+import typings.typeFest.anon.DictmoduleName
+import typings.typeFest.anon.Type
+import typings.typeFest.anon.Url
 import typings.typeFest.literalUnionMod.LiteralUnion
 import typings.typeFest.packageJsonMod.PackageJson.BugsLocation
 import typings.typeFest.packageJsonMod.PackageJson.Dependency
@@ -127,7 +127,7 @@ trait PackageJson_
   /**
   		A module ID with untranspiled code that is the primary entry point to the program.
   		*/
-  var esnext: js.UndefOr[String | AnonDictmoduleName] = js.undefined
+  var esnext: js.UndefOr[String | DictmoduleName] = js.undefined
   /**
   	The files included in the package.
   	*/
@@ -156,7 +156,7 @@ trait PackageJson_
   /**
   	The licenses for the package.
   	*/
-  var licenses: js.UndefOr[js.Array[AnonType]] = js.undefined
+  var licenses: js.UndefOr[js.Array[Type]] = js.undefined
   /**
   	The module ID that is the primary entry point to the program.
   	*/
@@ -212,7 +212,7 @@ trait PackageJson_
   /**
   	Location for the code repository.
   	*/
-  var repository: js.UndefOr[String | AnonUrl] = js.undefined
+  var repository: js.UndefOr[String | Url] = js.undefined
   /**
   		Selective version resolutions. Allows the definition of custom package versions inside dependencies without manual edits in the `yarn.lock` file.
   		*/
@@ -239,7 +239,7 @@ trait PackageJson_
 object PackageJson_ {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     author: Person = null,
     bin: String | StringDictionary[String] = null,
     browser: String | (StringDictionary[String | `false`]) = null,
@@ -262,14 +262,14 @@ object PackageJson_ {
     engines: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ EngineName in 'npm' | 'node' | string ]: string}
     */ typings.typeFest.typeFestStrings.PackageJson with TopLevel[js.Any] = null,
-    esnext: String | AnonDictmoduleName = null,
+    esnext: String | DictmoduleName = null,
     files: js.Array[String] = null,
     flat: js.UndefOr[Boolean] = js.undefined,
     homepage: LiteralUnion[Dot, String] = null,
     jspm: PackageJson = null,
     keywords: js.Array[String] = null,
     license: String = null,
-    licenses: js.Array[AnonType] = null,
+    licenses: js.Array[Type] = null,
     main: String = null,
     maintainers: js.Array[Person] = null,
     man: String | js.Array[String] = null,
@@ -286,7 +286,7 @@ object PackageJson_ {
     preferGlobal: js.UndefOr[Boolean] = js.undefined,
     `private`: js.UndefOr[Boolean] = js.undefined,
     publishConfig: StringDictionary[js.Any] = null,
-    repository: String | AnonUrl = null,
+    repository: String | Url = null,
     resolutions: Dependency = null,
     scripts: Scripts = null,
     types: String = null,
@@ -308,11 +308,11 @@ object PackageJson_ {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies.asInstanceOf[js.Any])
     if (directories != null) __obj.updateDynamic("directories")(directories.asInstanceOf[js.Any])
-    if (!js.isUndefined(engineStrict)) __obj.updateDynamic("engineStrict")(engineStrict.asInstanceOf[js.Any])
+    if (!js.isUndefined(engineStrict)) __obj.updateDynamic("engineStrict")(engineStrict.get.asInstanceOf[js.Any])
     if (engines != null) __obj.updateDynamic("engines")(engines.asInstanceOf[js.Any])
     if (esnext != null) __obj.updateDynamic("esnext")(esnext.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.asInstanceOf[js.Any])
+    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.get.asInstanceOf[js.Any])
     if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
     if (jspm != null) __obj.updateDynamic("jspm")(jspm.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
@@ -326,8 +326,8 @@ object PackageJson_ {
     if (optionalDependencies != null) __obj.updateDynamic("optionalDependencies")(optionalDependencies.asInstanceOf[js.Any])
     if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
     if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferGlobal)) __obj.updateDynamic("preferGlobal")(preferGlobal.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferGlobal)) __obj.updateDynamic("preferGlobal")(preferGlobal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.get.asInstanceOf[js.Any])
     if (publishConfig != null) __obj.updateDynamic("publishConfig")(publishConfig.asInstanceOf[js.Any])
     if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
     if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])

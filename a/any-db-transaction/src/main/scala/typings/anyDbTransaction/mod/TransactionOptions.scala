@@ -45,7 +45,7 @@ object TransactionOptions {
   ): TransactionOptions = {
     val __obj = js.Dynamic.literal()
     if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRollback)) __obj.updateDynamic("autoRollback")(autoRollback.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRollback)) __obj.updateDynamic("autoRollback")(autoRollback.get.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (commit != null) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])

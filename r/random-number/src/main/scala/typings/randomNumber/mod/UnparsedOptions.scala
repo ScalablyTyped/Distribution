@@ -12,11 +12,15 @@ trait UnparsedOptions extends js.Object {
 
 object UnparsedOptions {
   @scala.inline
-  def apply(integer: js.UndefOr[Boolean] = js.undefined, max: Int | Double = null, min: Int | Double = null): UnparsedOptions = {
+  def apply(
+    integer: js.UndefOr[Boolean] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined
+  ): UnparsedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(integer)) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(integer)) __obj.updateDynamic("integer")(integer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnparsedOptions]
   }
 }

@@ -1,7 +1,7 @@
 package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.wegameApi.AnonHeader
+import typings.wegameApi.anon.Header
 import typings.wegameApi.wegameApiStrings.arraybuffer
 import typings.wegameApi.wegameApiStrings.json
 import scala.scalajs.js
@@ -30,7 +30,7 @@ trait RequestParams extends js.Object {
   /**
     * res.data usually can be string or ArrayBuffer
     */
-  var success: js.UndefOr[js.Function1[/* res */ AnonHeader, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* res */ Header, Unit]] = js.undefined
   /**
     * 开发者服务器接口地址
     */
@@ -47,7 +47,7 @@ object RequestParams {
     fail: () => Unit = null,
     header: StringDictionary[String] = null,
     method: RequestMethod = null,
-    success: /* res */ AnonHeader => Unit = null
+    success: /* res */ Header => Unit = null
   ): RequestParams = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

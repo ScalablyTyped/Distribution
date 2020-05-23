@@ -13,7 +13,7 @@ trait PlusStreamLaunchWebviewStyles extends js.Object {
   /**
     * 流应用首页是否阻塞网络图片的加载
     * true表示阻塞网络图片的加载，false表示不阻塞网络图片的加载。默认值为false。
-    * 	设置后可通过Webview窗口对象的setBlockNetworkImage(false)方法修改设置来继续加载网络图片。
+    *     设置后可通过Webview窗口对象的setBlockNetworkImage(false)方法修改设置来继续加载网络图片。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
@@ -28,8 +28,8 @@ trait PlusStreamLaunchWebviewStyles extends js.Object {
   /**
     * 指定流应用首页地址
     * 可使用网络地址（http://或https://开头），也可使用本地地址（相对应用资源路径）。
-    * 	也可使用特定地址：
-    * 	about:blank - 使用空白首页，仅加载内置注入的脚本（如all.js、wap2app.js、config.js等）。
+    *     也可使用特定地址：
+    *     about:blank - 使用空白首页，仅加载内置注入的脚本（如all.js、wap2app.js、config.js等）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
@@ -37,7 +37,7 @@ trait PlusStreamLaunchWebviewStyles extends js.Object {
   /**
     * 流应用首页是否显示
     * true表示显示，false表示不显示。默认值为true。
-    * 	注意：流应用首页隐藏后，需要调用首页的setVisible方法显示，如plus.webview.getLaunchWebview().setVisible(true)。
+    *     注意：流应用首页隐藏后，需要调用首页的setVisible方法显示，如plus.webview.getLaunchWebview().setVisible(true)。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
@@ -53,10 +53,10 @@ object PlusStreamLaunchWebviewStyles {
     visible: js.UndefOr[Boolean] = js.undefined
   ): PlusStreamLaunchWebviewStyles = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blockNetworkImage)) __obj.updateDynamic("blockNetworkImage")(blockNetworkImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockNetworkImage)) __obj.updateDynamic("blockNetworkImage")(blockNetworkImage.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (launch_path != null) __obj.updateDynamic("launch_path")(launch_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamLaunchWebviewStyles]
   }
 }

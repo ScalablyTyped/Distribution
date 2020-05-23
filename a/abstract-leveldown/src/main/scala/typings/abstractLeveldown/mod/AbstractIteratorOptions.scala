@@ -26,7 +26,7 @@ object AbstractIteratorOptions {
     gte: K = null,
     keyAsBuffer: js.UndefOr[Boolean] = js.undefined,
     keys: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     lt: K = null,
     lte: K = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
@@ -37,14 +37,14 @@ object AbstractIteratorOptions {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
     if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyAsBuffer)) __obj.updateDynamic("keyAsBuffer")(keyAsBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyAsBuffer)) __obj.updateDynamic("keyAsBuffer")(keyAsBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
     if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueAsBuffer)) __obj.updateDynamic("valueAsBuffer")(valueAsBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueAsBuffer)) __obj.updateDynamic("valueAsBuffer")(valueAsBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractIteratorOptions[K]]
   }
 }

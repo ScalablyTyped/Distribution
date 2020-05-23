@@ -26,38 +26,38 @@ trait SVGAttributes
 object SVGAttributes {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     d: String | SVGPathArray = null,
     fill: ColorString | GradientColorObject | PatternObject = null,
     inverted: js.UndefOr[Boolean] = js.undefined,
     matrix: js.Array[Double] = null,
-    rotation: Int | Double = null,
-    rotationOriginX: Int | Double = null,
-    rotationOriginY: Int | Double = null,
-    scaleX: Int | Double = null,
-    scaleY: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
+    rotationOriginX: js.UndefOr[Double] = js.undefined,
+    rotationOriginY: js.UndefOr[Double] = js.undefined,
+    scaleX: js.UndefOr[Double] = js.undefined,
+    scaleY: js.UndefOr[Double] = js.undefined,
     stroke: ColorString | GradientColorObject | PatternObject = null,
     style: String | CSSObject = null,
-    translateX: Int | Double = null,
-    translateY: Int | Double = null,
-    zIndex: Int | Double = null
+    translateX: js.UndefOr[Double] = js.undefined,
+    translateY: js.UndefOr[Double] = js.undefined,
+    zIndex: js.UndefOr[Double] = js.undefined
   ): SVGAttributes = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
     if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (rotationOriginX != null) __obj.updateDynamic("rotationOriginX")(rotationOriginX.asInstanceOf[js.Any])
-    if (rotationOriginY != null) __obj.updateDynamic("rotationOriginY")(rotationOriginY.asInstanceOf[js.Any])
-    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
-    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationOriginX)) __obj.updateDynamic("rotationOriginX")(rotationOriginX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationOriginY)) __obj.updateDynamic("rotationOriginY")(rotationOriginY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleX)) __obj.updateDynamic("scaleX")(scaleX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleY)) __obj.updateDynamic("scaleY")(scaleY.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
-    if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(translateX)) __obj.updateDynamic("translateX")(translateX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(translateY)) __obj.updateDynamic("translateY")(translateY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAttributes]
   }
 }

@@ -13,9 +13,9 @@ trait PlotAroonoscillatorParamsOptions extends js.Object {
 
 object PlotAroonoscillatorParamsOptions {
   @scala.inline
-  def apply(period: Int | Double = null): PlotAroonoscillatorParamsOptions = {
+  def apply(period: js.UndefOr[Double] = js.undefined): PlotAroonoscillatorParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAroonoscillatorParamsOptions]
   }
 }

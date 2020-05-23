@@ -56,7 +56,7 @@ object ProductViewSummary {
   @scala.inline
   def apply(
     Distributor: ProductViewDistributor = null,
-    HasDefaultPath: js.UndefOr[Boolean] = js.undefined,
+    HasDefaultPath: js.UndefOr[HasDefaultPath] = js.undefined,
     Id: Id = null,
     Name: ProductViewName = null,
     Owner: ProductViewOwner = null,
@@ -69,7 +69,7 @@ object ProductViewSummary {
   ): ProductViewSummary = {
     val __obj = js.Dynamic.literal()
     if (Distributor != null) __obj.updateDynamic("Distributor")(Distributor.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasDefaultPath)) __obj.updateDynamic("HasDefaultPath")(HasDefaultPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasDefaultPath)) __obj.updateDynamic("HasDefaultPath")(HasDefaultPath.get.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])

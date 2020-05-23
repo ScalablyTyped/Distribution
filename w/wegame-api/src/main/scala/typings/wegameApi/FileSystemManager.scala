@@ -23,9 +23,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FileSystemManager")
 @js.native
-class FileSystemManager () extends js.Object {
+trait FileSystemManager extends js.Object {
   /**
     * 判断文件/目录是否存在
     */

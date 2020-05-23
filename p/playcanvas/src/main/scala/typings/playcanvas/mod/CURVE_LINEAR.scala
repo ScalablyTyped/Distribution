@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.CURVE_LINEAR
-  * @description A linear interpolation scheme.
+  * A linear interpolation scheme.
   */
 @JSImport("playcanvas", "CURVE_LINEAR")
 @js.native

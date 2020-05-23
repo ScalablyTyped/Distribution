@@ -45,9 +45,9 @@ object SwipeableViewsProps {
     containerStyle: CSSProperties = null,
     disableLazyLoading: js.UndefOr[Boolean] = js.undefined,
     enableMouseEvents: js.UndefOr[Boolean] = js.undefined,
-    hysteresis: Int | Double = null,
+    hysteresis: js.UndefOr[Double] = js.undefined,
     ignoreNativeScroll: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit = null,
     onSwitching: (/* index */ Double, /* type */ OnSwitchingCallbackTypeDescriptor) => Unit = null,
     onTransitionEnd: () => Unit = null,
@@ -55,28 +55,28 @@ object SwipeableViewsProps {
     slideClassName: String = null,
     slideStyle: CSSProperties = null,
     springConfig: SpringConfig = null,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): SwipeableViewsProps = {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(animateHeight)) __obj.updateDynamic("animateHeight")(animateHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateTransitions)) __obj.updateDynamic("animateTransitions")(animateTransitions.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateHeight)) __obj.updateDynamic("animateHeight")(animateHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateTransitions)) __obj.updateDynamic("animateTransitions")(animateTransitions.get.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableLazyLoading)) __obj.updateDynamic("disableLazyLoading")(disableLazyLoading.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents.asInstanceOf[js.Any])
-    if (hysteresis != null) __obj.updateDynamic("hysteresis")(hysteresis.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreNativeScroll)) __obj.updateDynamic("ignoreNativeScroll")(ignoreNativeScroll.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableLazyLoading)) __obj.updateDynamic("disableLazyLoading")(disableLazyLoading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hysteresis)) __obj.updateDynamic("hysteresis")(hysteresis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreNativeScroll)) __obj.updateDynamic("ignoreNativeScroll")(ignoreNativeScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (onChangeIndex != null) __obj.updateDynamic("onChangeIndex")(js.Any.fromFunction2(onChangeIndex))
     if (onSwitching != null) __obj.updateDynamic("onSwitching")(js.Any.fromFunction2(onSwitching))
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction0(onTransitionEnd))
-    if (!js.isUndefined(resistance)) __obj.updateDynamic("resistance")(resistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(resistance)) __obj.updateDynamic("resistance")(resistance.get.asInstanceOf[js.Any])
     if (slideClassName != null) __obj.updateDynamic("slideClassName")(slideClassName.asInstanceOf[js.Any])
     if (slideStyle != null) __obj.updateDynamic("slideStyle")(slideStyle.asInstanceOf[js.Any])
     if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeableViewsProps]
   }
 }

@@ -24,8 +24,8 @@ object IWebSocketConfigOptions {
   @scala.inline
   def apply(
     binaryType: blob | arraybuffer = null,
-    initialTimeout: Int | Double = null,
-    maxTimeout: Int | Double = null,
+    initialTimeout: js.UndefOr[Double] = js.undefined,
+    maxTimeout: js.UndefOr[Double] = js.undefined,
     reconnectIfNotNormalClose: js.UndefOr[Boolean] = js.undefined,
     rootScopeFailOver: js.UndefOr[Boolean] = js.undefined,
     scope: IScope = null,
@@ -33,12 +33,12 @@ object IWebSocketConfigOptions {
   ): IWebSocketConfigOptions = {
     val __obj = js.Dynamic.literal()
     if (binaryType != null) __obj.updateDynamic("binaryType")(binaryType.asInstanceOf[js.Any])
-    if (initialTimeout != null) __obj.updateDynamic("initialTimeout")(initialTimeout.asInstanceOf[js.Any])
-    if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectIfNotNormalClose)) __obj.updateDynamic("reconnectIfNotNormalClose")(reconnectIfNotNormalClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootScopeFailOver)) __obj.updateDynamic("rootScopeFailOver")(rootScopeFailOver.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialTimeout)) __obj.updateDynamic("initialTimeout")(initialTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeout)) __obj.updateDynamic("maxTimeout")(maxTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectIfNotNormalClose)) __obj.updateDynamic("reconnectIfNotNormalClose")(reconnectIfNotNormalClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootScopeFailOver)) __obj.updateDynamic("rootScopeFailOver")(rootScopeFailOver.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(useApplyAsync)) __obj.updateDynamic("useApplyAsync")(useApplyAsync.asInstanceOf[js.Any])
+    if (!js.isUndefined(useApplyAsync)) __obj.updateDynamic("useApplyAsync")(useApplyAsync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebSocketConfigOptions]
   }
 }

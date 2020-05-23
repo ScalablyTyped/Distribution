@@ -17,7 +17,7 @@ object UploadLineItemsRequest {
   @scala.inline
   def apply(dryRun: js.UndefOr[Boolean] = js.undefined, format: String = null, lineItems: String = null): UploadLineItemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadLineItemsRequest]

@@ -13,14 +13,14 @@ trait SummaryOptions extends js.Object {
 object SummaryOptions {
   @scala.inline
   def apply(
-    estimatedTime: Int | Double = null,
+    estimatedTime: js.UndefOr[Double] = js.undefined,
     roundTime: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SummaryOptions = {
     val __obj = js.Dynamic.literal()
-    if (estimatedTime != null) __obj.updateDynamic("estimatedTime")(estimatedTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundTime)) __obj.updateDynamic("roundTime")(roundTime.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(estimatedTime)) __obj.updateDynamic("estimatedTime")(estimatedTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundTime)) __obj.updateDynamic("roundTime")(roundTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummaryOptions]
   }
 }

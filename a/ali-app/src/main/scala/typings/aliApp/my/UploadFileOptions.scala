@@ -1,9 +1,9 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonHeader
 import typings.aliApp.aliAppStrings.audio
 import typings.aliApp.aliAppStrings.image
 import typings.aliApp.aliAppStrings.video
+import typings.aliApp.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,15 +15,15 @@ trait UploadFileOptions
   /** 要上传文件资源的本地定位符 */
   var filePath: String
   /**
-  		 * 文件类型
-  		 */
+    * 文件类型
+    */
   var fileType: image | video | audio
   /** HTTP 请求中其他额外的 form 数据 */
   var formData: js.UndefOr[js.Any] = js.undefined
   /** HTTP 请求 Header */
   var header: js.UndefOr[RequestHeader] = js.undefined
   @JSName("success")
-  var success_UploadFileOptions: js.UndefOr[js.Function1[/* res */ AnonHeader, Unit]] = js.undefined
+  var success_UploadFileOptions: js.UndefOr[js.Function1[/* res */ Data, Unit]] = js.undefined
   /** 开发者服务器地址 */
   var url: String
 }
@@ -39,7 +39,7 @@ object UploadFileOptions {
     fail: js.Any => Unit = null,
     formData: js.Any = null,
     header: RequestHeader = null,
-    success: /* res */ AnonHeader => Unit = null
+    success: /* res */ Data => Unit = null
   ): UploadFileOptions = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

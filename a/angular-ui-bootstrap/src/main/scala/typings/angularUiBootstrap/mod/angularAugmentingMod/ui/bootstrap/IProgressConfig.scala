@@ -21,10 +21,10 @@ trait IProgressConfig extends js.Object {
 
 object IProgressConfig {
   @scala.inline
-  def apply(animate: js.UndefOr[Boolean] = js.undefined, max: Int | Double = null): IProgressConfig = {
+  def apply(animate: js.UndefOr[Boolean] = js.undefined, max: js.UndefOr[Double] = js.undefined): IProgressConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressConfig]
   }
 }

@@ -13,12 +13,6 @@ object ɵɵstyleProp extends js.Object {
     /* suffix */ js.UndefOr[String | Null], 
     /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any
   ] = js.native
-  def apply(prop: String, value: js.UndefOr[scala.Nothing], suffix: String): js.Function3[
-    /* prop */ String, 
-    /* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
-    /* suffix */ js.UndefOr[String | Null], 
-    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any
-  ] = js.native
   def apply(prop: String, value: String): js.Function3[
     /* prop */ String, 
     /* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 

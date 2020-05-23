@@ -84,7 +84,7 @@ object Options {
     keywords: js.Object = null,
     loadSchema: (/* uri */ String, /* cb */ js.UndefOr[js.Function2[/* err */ Error, /* schema */ js.Object, Unit]]) => js.Thenable[js.Object | Boolean] = null,
     logger: CustomLogger | `false` = null,
-    loopRequired: Int | Double = null,
+    loopRequired: js.UndefOr[Double] = js.undefined,
     messages: js.UndefOr[Boolean] = js.undefined,
     meta: Boolean | js.Object = null,
     missingRefs: `true` | ignore | fail = null,
@@ -109,9 +109,9 @@ object Options {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($data)) __obj.updateDynamic("$data")($data.asInstanceOf[js.Any])
-    if (!js.isUndefined(addUsedSchema)) __obj.updateDynamic("addUsedSchema")(addUsedSchema.asInstanceOf[js.Any])
-    if (!js.isUndefined(allErrors)) __obj.updateDynamic("allErrors")(allErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined($data)) __obj.updateDynamic("$data")($data.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(addUsedSchema)) __obj.updateDynamic("addUsedSchema")(addUsedSchema.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allErrors)) __obj.updateDynamic("allErrors")(allErrors.get.asInstanceOf[js.Any])
     if (async != null) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (coerceTypes != null) __obj.updateDynamic("coerceTypes")(coerceTypes.asInstanceOf[js.Any])
@@ -120,33 +120,33 @@ object Options {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
     if (inlineRefs != null) __obj.updateDynamic("inlineRefs")(inlineRefs.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsonPointers)) __obj.updateDynamic("jsonPointers")(jsonPointers.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonPointers)) __obj.updateDynamic("jsonPointers")(jsonPointers.get.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     if (loadSchema != null) __obj.updateDynamic("loadSchema")(js.Any.fromFunction2(loadSchema))
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (loopRequired != null) __obj.updateDynamic("loopRequired")(loopRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(messages)) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopRequired)) __obj.updateDynamic("loopRequired")(loopRequired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messages)) __obj.updateDynamic("messages")(messages.get.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (missingRefs != null) __obj.updateDynamic("missingRefs")(missingRefs.asInstanceOf[js.Any])
     if (multipleOfPrecision != null) __obj.updateDynamic("multipleOfPrecision")(multipleOfPrecision.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (!js.isUndefined(ownProperties)) __obj.updateDynamic("ownProperties")(ownProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(passContext)) __obj.updateDynamic("passContext")(passContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ownProperties)) __obj.updateDynamic("ownProperties")(ownProperties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passContext)) __obj.updateDynamic("passContext")(passContext.get.asInstanceOf[js.Any])
     if (processCode != null) __obj.updateDynamic("processCode")(js.Any.fromFunction1(processCode))
     if (removeAdditional != null) __obj.updateDynamic("removeAdditional")(removeAdditional.asInstanceOf[js.Any])
     if (schemaId != null) __obj.updateDynamic("schemaId")(schemaId.asInstanceOf[js.Any])
     if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceCode)) __obj.updateDynamic("sourceCode")(sourceCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceCode)) __obj.updateDynamic("sourceCode")(sourceCode.get.asInstanceOf[js.Any])
     if (strictDefaults != null) __obj.updateDynamic("strictDefaults")(strictDefaults.asInstanceOf[js.Any])
     if (strictKeywords != null) __obj.updateDynamic("strictKeywords")(strictKeywords.asInstanceOf[js.Any])
     if (transpile != null) __obj.updateDynamic("transpile")(transpile.asInstanceOf[js.Any])
-    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems.get.asInstanceOf[js.Any])
     if (unknownFormats != null) __obj.updateDynamic("unknownFormats")(unknownFormats.asInstanceOf[js.Any])
     if (useDefaults != null) __obj.updateDynamic("useDefaults")(useDefaults.asInstanceOf[js.Any])
     if (validateSchema != null) __obj.updateDynamic("validateSchema")(validateSchema.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

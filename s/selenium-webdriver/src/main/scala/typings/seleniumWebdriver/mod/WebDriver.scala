@@ -1,8 +1,8 @@
 package typings.seleniumWebdriver.mod
 
-import typings.seleniumWebdriver.AnonAsync
-import typings.seleniumWebdriver.AnonAsyncBoolean
-import typings.seleniumWebdriver.AnonBridge
+import typings.seleniumWebdriver.anon.Async
+import typings.seleniumWebdriver.anon.AsyncBoolean
+import typings.seleniumWebdriver.anon.Bridge
 import typings.seleniumWebdriver.commandMod.Command
 import typings.seleniumWebdriver.httpMod.Executor
 import scala.scalajs.js
@@ -35,9 +35,9 @@ class WebDriver protected () extends js.Object {
     * @return {!actions.ActionSequence} A new action sequence for this instance.
     */
   def actions(): typings.seleniumWebdriver.inputMod.Actions = js.native
-  def actions(options: AnonAsync): typings.seleniumWebdriver.inputMod.Actions = js.native
-  def actions(options: AnonAsyncBoolean): typings.seleniumWebdriver.inputMod.Actions = js.native
-  def actions(options: AnonBridge): typings.seleniumWebdriver.inputMod.Actions = js.native
+  def actions(options: Async): typings.seleniumWebdriver.inputMod.Actions = js.native
+  def actions(options: AsyncBoolean): typings.seleniumWebdriver.inputMod.Actions = js.native
+  def actions(options: Bridge): typings.seleniumWebdriver.inputMod.Actions = js.native
   /**
     * Schedules a command to close the current window.
     * @return {!Promise.<void>} A promise that will be resolved

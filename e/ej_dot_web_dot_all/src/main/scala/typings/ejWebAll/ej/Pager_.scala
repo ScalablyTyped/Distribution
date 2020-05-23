@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Pager")
 @js.native
-class Pager_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Pager.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Pager.Model) = this()
+trait Pager_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.Pager.Model = js.native
   @JSName("model")
   var model_Pager_ : typings.ejWebAll.ej.Pager.Model = js.native

@@ -2,6 +2,8 @@ package typings.reactAriaLive
 
 import typings.react.mod.Component
 import typings.react.mod.StatelessComponent
+import typings.reactAriaLive.anon.Arialive
+import typings.reactAriaLive.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +20,7 @@ object mod extends js.Object {
     def announcePolite(message: String, id: String): Unit = js.native
   }
   
-  val LiveMessage: StatelessComponent[AnonArialive] = js.native
-  val LiveMessenger: StatelessComponent[AnonChildren] = js.native
+  val LiveMessage: StatelessComponent[Arialive] = js.native
+  val LiveMessenger: StatelessComponent[Children] = js.native
 }
 

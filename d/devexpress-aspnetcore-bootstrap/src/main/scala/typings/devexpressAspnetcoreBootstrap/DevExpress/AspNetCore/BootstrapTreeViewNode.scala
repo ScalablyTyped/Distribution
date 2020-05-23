@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapTreeViewNode")
 @js.native
-class BootstrapTreeViewNode () extends Control {
+trait BootstrapTreeViewNode extends Control {
   val index: Double = js.native
   val parent: BootstrapTreeViewNode | Null = js.native
   val treeView: BootstrapTreeView | Null = js.native

@@ -15,6 +15,10 @@ trait ISemanticColors extends ISemanticTextColors {
     */
   var blockingBackground: String
   /**
+    * Color for icons on blockingBackground.
+    */
+  var blockingIcon: String
+  /**
     * The default color for backgrounds.
     */
   var bodyBackground: String
@@ -104,9 +108,21 @@ trait ISemanticColors extends ISemanticTextColors {
     */
   var errorBackground: String
   /**
+    * Color for icons on errorBackground.
+    */
+  var errorIcon: String
+  /**
     * The color of the outline around focused controls that don't already have a border; e.g. menu items
     */
   var focusBorder: String
+  /**
+    * Background for informational messages.
+    */
+  var infoBackground: String
+  /**
+    * Color for icons on infoBackground.
+    */
+  var infoIcon: String
   /**
     * The background color of an input, e.g. textbox background.
     */
@@ -215,6 +231,14 @@ trait ISemanticColors extends ISemanticTextColors {
     */
   var menuItemTextHovered: String
   /**
+    * Color of links within a message.
+    */
+  var messageLink: String
+  /**
+    * Color of links within a message when hovered.
+    */
+  var messageLinkHovered: String
+  /**
     * Background of a primary button
     */
   var primaryButtonBackground: String
@@ -235,6 +259,14 @@ trait ISemanticColors extends ISemanticTextColors {
     */
   var primaryButtonBorder: String
   /**
+    * Background for severe warning messages.
+    */
+  var severeWarningBackground: String
+  /**
+    * Color for icons on severeWarningBackground.
+    */
+  var severeWarningIcon: String
+  /**
     * The border of a small input control in its resting unchecked state; e.g. the box of an unchecked checkbox.
     */
   var smallInputBorder: String
@@ -242,6 +274,10 @@ trait ISemanticColors extends ISemanticTextColors {
     * Background for success
     */
   var successBackground: String
+  /**
+    * Color for icons on successBackground.
+    */
+  var successIcon: String
   /**
     * The color of the border that provides contrast between an element, such as a card, and an emphasized background.
     */
@@ -255,9 +291,15 @@ trait ISemanticColors extends ISemanticTextColors {
     */
   var warningBackground: String
   /**
+    * @deprecated
+    * (no longer used)
     * Foreground color for warning highlights
     */
   var warningHighlight: String
+  /**
+    * Color for icons on warningBackground.
+    */
+  var warningIcon: String
 }
 
 object ISemanticColors {
@@ -268,6 +310,7 @@ object ISemanticColors {
     actionLink: String,
     actionLinkHovered: String,
     blockingBackground: String,
+    blockingIcon: String,
     bodyBackground: String,
     bodyBackgroundChecked: String,
     bodyBackgroundHovered: String,
@@ -300,8 +343,11 @@ object ISemanticColors {
     disabledSubtext: String,
     disabledText: String,
     errorBackground: String,
+    errorIcon: String,
     errorText: String,
     focusBorder: String,
+    infoBackground: String,
+    infoIcon: String,
     inputBackground: String,
     inputBackgroundChecked: String,
     inputBackgroundCheckedHovered: String,
@@ -335,6 +381,9 @@ object ISemanticColors {
     menuItemBackgroundPressed: String,
     menuItemText: String,
     menuItemTextHovered: String,
+    messageLink: String,
+    messageLinkHovered: String,
+    messageText: String,
     primaryButtonBackground: String,
     primaryButtonBackgroundDisabled: String,
     primaryButtonBackgroundHovered: String,
@@ -344,16 +393,20 @@ object ISemanticColors {
     primaryButtonTextDisabled: String,
     primaryButtonTextHovered: String,
     primaryButtonTextPressed: String,
+    severeWarningBackground: String,
+    severeWarningIcon: String,
     smallInputBorder: String,
     successBackground: String,
+    successIcon: String,
     successText: String,
     variantBorder: String,
     variantBorderHovered: String,
     warningBackground: String,
     warningHighlight: String,
+    warningIcon: String,
     warningText: String
   ): ISemanticColors = {
-    val __obj = js.Dynamic.literal(accentButtonBackground = accentButtonBackground.asInstanceOf[js.Any], accentButtonText = accentButtonText.asInstanceOf[js.Any], actionLink = actionLink.asInstanceOf[js.Any], actionLinkHovered = actionLinkHovered.asInstanceOf[js.Any], blockingBackground = blockingBackground.asInstanceOf[js.Any], bodyBackground = bodyBackground.asInstanceOf[js.Any], bodyBackgroundChecked = bodyBackgroundChecked.asInstanceOf[js.Any], bodyBackgroundHovered = bodyBackgroundHovered.asInstanceOf[js.Any], bodyDivider = bodyDivider.asInstanceOf[js.Any], bodyFrameBackground = bodyFrameBackground.asInstanceOf[js.Any], bodyFrameDivider = bodyFrameDivider.asInstanceOf[js.Any], bodyStandoutBackground = bodyStandoutBackground.asInstanceOf[js.Any], bodySubtext = bodySubtext.asInstanceOf[js.Any], bodyText = bodyText.asInstanceOf[js.Any], bodyTextChecked = bodyTextChecked.asInstanceOf[js.Any], buttonBackground = buttonBackground.asInstanceOf[js.Any], buttonBackgroundChecked = buttonBackgroundChecked.asInstanceOf[js.Any], buttonBackgroundCheckedHovered = buttonBackgroundCheckedHovered.asInstanceOf[js.Any], buttonBackgroundDisabled = buttonBackgroundDisabled.asInstanceOf[js.Any], buttonBackgroundHovered = buttonBackgroundHovered.asInstanceOf[js.Any], buttonBackgroundPressed = buttonBackgroundPressed.asInstanceOf[js.Any], buttonBorder = buttonBorder.asInstanceOf[js.Any], buttonBorderDisabled = buttonBorderDisabled.asInstanceOf[js.Any], buttonText = buttonText.asInstanceOf[js.Any], buttonTextChecked = buttonTextChecked.asInstanceOf[js.Any], buttonTextCheckedHovered = buttonTextCheckedHovered.asInstanceOf[js.Any], buttonTextDisabled = buttonTextDisabled.asInstanceOf[js.Any], buttonTextHovered = buttonTextHovered.asInstanceOf[js.Any], buttonTextPressed = buttonTextPressed.asInstanceOf[js.Any], defaultStateBackground = defaultStateBackground.asInstanceOf[js.Any], disabledBackground = disabledBackground.asInstanceOf[js.Any], disabledBodySubtext = disabledBodySubtext.asInstanceOf[js.Any], disabledBodyText = disabledBodyText.asInstanceOf[js.Any], disabledBorder = disabledBorder.asInstanceOf[js.Any], disabledSubtext = disabledSubtext.asInstanceOf[js.Any], disabledText = disabledText.asInstanceOf[js.Any], errorBackground = errorBackground.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], focusBorder = focusBorder.asInstanceOf[js.Any], inputBackground = inputBackground.asInstanceOf[js.Any], inputBackgroundChecked = inputBackgroundChecked.asInstanceOf[js.Any], inputBackgroundCheckedHovered = inputBackgroundCheckedHovered.asInstanceOf[js.Any], inputBorder = inputBorder.asInstanceOf[js.Any], inputBorderHovered = inputBorderHovered.asInstanceOf[js.Any], inputFocusBorderAlt = inputFocusBorderAlt.asInstanceOf[js.Any], inputForegroundChecked = inputForegroundChecked.asInstanceOf[js.Any], inputIcon = inputIcon.asInstanceOf[js.Any], inputIconDisabled = inputIconDisabled.asInstanceOf[js.Any], inputIconHovered = inputIconHovered.asInstanceOf[js.Any], inputPlaceholderBackgroundChecked = inputPlaceholderBackgroundChecked.asInstanceOf[js.Any], inputPlaceholderText = inputPlaceholderText.asInstanceOf[js.Any], inputText = inputText.asInstanceOf[js.Any], inputTextHovered = inputTextHovered.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkHovered = linkHovered.asInstanceOf[js.Any], listBackground = listBackground.asInstanceOf[js.Any], listHeaderBackgroundHovered = listHeaderBackgroundHovered.asInstanceOf[js.Any], listHeaderBackgroundPressed = listHeaderBackgroundPressed.asInstanceOf[js.Any], listItemBackgroundChecked = listItemBackgroundChecked.asInstanceOf[js.Any], listItemBackgroundCheckedHovered = listItemBackgroundCheckedHovered.asInstanceOf[js.Any], listItemBackgroundHovered = listItemBackgroundHovered.asInstanceOf[js.Any], listText = listText.asInstanceOf[js.Any], listTextColor = listTextColor.asInstanceOf[js.Any], menuBackground = menuBackground.asInstanceOf[js.Any], menuDivider = menuDivider.asInstanceOf[js.Any], menuHeader = menuHeader.asInstanceOf[js.Any], menuIcon = menuIcon.asInstanceOf[js.Any], menuItemBackgroundChecked = menuItemBackgroundChecked.asInstanceOf[js.Any], menuItemBackgroundHovered = menuItemBackgroundHovered.asInstanceOf[js.Any], menuItemBackgroundPressed = menuItemBackgroundPressed.asInstanceOf[js.Any], menuItemText = menuItemText.asInstanceOf[js.Any], menuItemTextHovered = menuItemTextHovered.asInstanceOf[js.Any], primaryButtonBackground = primaryButtonBackground.asInstanceOf[js.Any], primaryButtonBackgroundDisabled = primaryButtonBackgroundDisabled.asInstanceOf[js.Any], primaryButtonBackgroundHovered = primaryButtonBackgroundHovered.asInstanceOf[js.Any], primaryButtonBackgroundPressed = primaryButtonBackgroundPressed.asInstanceOf[js.Any], primaryButtonBorder = primaryButtonBorder.asInstanceOf[js.Any], primaryButtonText = primaryButtonText.asInstanceOf[js.Any], primaryButtonTextDisabled = primaryButtonTextDisabled.asInstanceOf[js.Any], primaryButtonTextHovered = primaryButtonTextHovered.asInstanceOf[js.Any], primaryButtonTextPressed = primaryButtonTextPressed.asInstanceOf[js.Any], smallInputBorder = smallInputBorder.asInstanceOf[js.Any], successBackground = successBackground.asInstanceOf[js.Any], successText = successText.asInstanceOf[js.Any], variantBorder = variantBorder.asInstanceOf[js.Any], variantBorderHovered = variantBorderHovered.asInstanceOf[js.Any], warningBackground = warningBackground.asInstanceOf[js.Any], warningHighlight = warningHighlight.asInstanceOf[js.Any], warningText = warningText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accentButtonBackground = accentButtonBackground.asInstanceOf[js.Any], accentButtonText = accentButtonText.asInstanceOf[js.Any], actionLink = actionLink.asInstanceOf[js.Any], actionLinkHovered = actionLinkHovered.asInstanceOf[js.Any], blockingBackground = blockingBackground.asInstanceOf[js.Any], blockingIcon = blockingIcon.asInstanceOf[js.Any], bodyBackground = bodyBackground.asInstanceOf[js.Any], bodyBackgroundChecked = bodyBackgroundChecked.asInstanceOf[js.Any], bodyBackgroundHovered = bodyBackgroundHovered.asInstanceOf[js.Any], bodyDivider = bodyDivider.asInstanceOf[js.Any], bodyFrameBackground = bodyFrameBackground.asInstanceOf[js.Any], bodyFrameDivider = bodyFrameDivider.asInstanceOf[js.Any], bodyStandoutBackground = bodyStandoutBackground.asInstanceOf[js.Any], bodySubtext = bodySubtext.asInstanceOf[js.Any], bodyText = bodyText.asInstanceOf[js.Any], bodyTextChecked = bodyTextChecked.asInstanceOf[js.Any], buttonBackground = buttonBackground.asInstanceOf[js.Any], buttonBackgroundChecked = buttonBackgroundChecked.asInstanceOf[js.Any], buttonBackgroundCheckedHovered = buttonBackgroundCheckedHovered.asInstanceOf[js.Any], buttonBackgroundDisabled = buttonBackgroundDisabled.asInstanceOf[js.Any], buttonBackgroundHovered = buttonBackgroundHovered.asInstanceOf[js.Any], buttonBackgroundPressed = buttonBackgroundPressed.asInstanceOf[js.Any], buttonBorder = buttonBorder.asInstanceOf[js.Any], buttonBorderDisabled = buttonBorderDisabled.asInstanceOf[js.Any], buttonText = buttonText.asInstanceOf[js.Any], buttonTextChecked = buttonTextChecked.asInstanceOf[js.Any], buttonTextCheckedHovered = buttonTextCheckedHovered.asInstanceOf[js.Any], buttonTextDisabled = buttonTextDisabled.asInstanceOf[js.Any], buttonTextHovered = buttonTextHovered.asInstanceOf[js.Any], buttonTextPressed = buttonTextPressed.asInstanceOf[js.Any], defaultStateBackground = defaultStateBackground.asInstanceOf[js.Any], disabledBackground = disabledBackground.asInstanceOf[js.Any], disabledBodySubtext = disabledBodySubtext.asInstanceOf[js.Any], disabledBodyText = disabledBodyText.asInstanceOf[js.Any], disabledBorder = disabledBorder.asInstanceOf[js.Any], disabledSubtext = disabledSubtext.asInstanceOf[js.Any], disabledText = disabledText.asInstanceOf[js.Any], errorBackground = errorBackground.asInstanceOf[js.Any], errorIcon = errorIcon.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], focusBorder = focusBorder.asInstanceOf[js.Any], infoBackground = infoBackground.asInstanceOf[js.Any], infoIcon = infoIcon.asInstanceOf[js.Any], inputBackground = inputBackground.asInstanceOf[js.Any], inputBackgroundChecked = inputBackgroundChecked.asInstanceOf[js.Any], inputBackgroundCheckedHovered = inputBackgroundCheckedHovered.asInstanceOf[js.Any], inputBorder = inputBorder.asInstanceOf[js.Any], inputBorderHovered = inputBorderHovered.asInstanceOf[js.Any], inputFocusBorderAlt = inputFocusBorderAlt.asInstanceOf[js.Any], inputForegroundChecked = inputForegroundChecked.asInstanceOf[js.Any], inputIcon = inputIcon.asInstanceOf[js.Any], inputIconDisabled = inputIconDisabled.asInstanceOf[js.Any], inputIconHovered = inputIconHovered.asInstanceOf[js.Any], inputPlaceholderBackgroundChecked = inputPlaceholderBackgroundChecked.asInstanceOf[js.Any], inputPlaceholderText = inputPlaceholderText.asInstanceOf[js.Any], inputText = inputText.asInstanceOf[js.Any], inputTextHovered = inputTextHovered.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkHovered = linkHovered.asInstanceOf[js.Any], listBackground = listBackground.asInstanceOf[js.Any], listHeaderBackgroundHovered = listHeaderBackgroundHovered.asInstanceOf[js.Any], listHeaderBackgroundPressed = listHeaderBackgroundPressed.asInstanceOf[js.Any], listItemBackgroundChecked = listItemBackgroundChecked.asInstanceOf[js.Any], listItemBackgroundCheckedHovered = listItemBackgroundCheckedHovered.asInstanceOf[js.Any], listItemBackgroundHovered = listItemBackgroundHovered.asInstanceOf[js.Any], listText = listText.asInstanceOf[js.Any], listTextColor = listTextColor.asInstanceOf[js.Any], menuBackground = menuBackground.asInstanceOf[js.Any], menuDivider = menuDivider.asInstanceOf[js.Any], menuHeader = menuHeader.asInstanceOf[js.Any], menuIcon = menuIcon.asInstanceOf[js.Any], menuItemBackgroundChecked = menuItemBackgroundChecked.asInstanceOf[js.Any], menuItemBackgroundHovered = menuItemBackgroundHovered.asInstanceOf[js.Any], menuItemBackgroundPressed = menuItemBackgroundPressed.asInstanceOf[js.Any], menuItemText = menuItemText.asInstanceOf[js.Any], menuItemTextHovered = menuItemTextHovered.asInstanceOf[js.Any], messageLink = messageLink.asInstanceOf[js.Any], messageLinkHovered = messageLinkHovered.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any], primaryButtonBackground = primaryButtonBackground.asInstanceOf[js.Any], primaryButtonBackgroundDisabled = primaryButtonBackgroundDisabled.asInstanceOf[js.Any], primaryButtonBackgroundHovered = primaryButtonBackgroundHovered.asInstanceOf[js.Any], primaryButtonBackgroundPressed = primaryButtonBackgroundPressed.asInstanceOf[js.Any], primaryButtonBorder = primaryButtonBorder.asInstanceOf[js.Any], primaryButtonText = primaryButtonText.asInstanceOf[js.Any], primaryButtonTextDisabled = primaryButtonTextDisabled.asInstanceOf[js.Any], primaryButtonTextHovered = primaryButtonTextHovered.asInstanceOf[js.Any], primaryButtonTextPressed = primaryButtonTextPressed.asInstanceOf[js.Any], severeWarningBackground = severeWarningBackground.asInstanceOf[js.Any], severeWarningIcon = severeWarningIcon.asInstanceOf[js.Any], smallInputBorder = smallInputBorder.asInstanceOf[js.Any], successBackground = successBackground.asInstanceOf[js.Any], successIcon = successIcon.asInstanceOf[js.Any], successText = successText.asInstanceOf[js.Any], variantBorder = variantBorder.asInstanceOf[js.Any], variantBorderHovered = variantBorderHovered.asInstanceOf[js.Any], warningBackground = warningBackground.asInstanceOf[js.Any], warningHighlight = warningHighlight.asInstanceOf[js.Any], warningIcon = warningIcon.asInstanceOf[js.Any], warningText = warningText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISemanticColors]
   }
 }

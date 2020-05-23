@@ -22,19 +22,19 @@ object ILookAtData {
   @scala.inline
   def apply(
     bounds: AbstractGeometry = null,
-    heading: Int | Double = null,
-    incline: Int | Double = null,
+    heading: js.UndefOr[Double] = js.undefined,
+    incline: js.UndefOr[Double] = js.undefined,
     position: IPoint = null,
-    tilt: Int | Double = null,
-    zoom: Int | Double = null
+    tilt: js.UndefOr[Double] = js.undefined,
+    zoom: js.UndefOr[Double] = js.undefined
   ): ILookAtData = {
     val __obj = js.Dynamic.literal()
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (incline != null) __obj.updateDynamic("incline")(incline.asInstanceOf[js.Any])
+    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(incline)) __obj.updateDynamic("incline")(incline.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(tilt)) __obj.updateDynamic("tilt")(tilt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILookAtData]
   }
 }

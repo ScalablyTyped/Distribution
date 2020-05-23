@@ -10,7 +10,7 @@ package object viewsMaterializedTypesMod {
     /* options */ typings.nodePgMigrate.viewsMaterializedTypesMod.AlterMaterializedViewOptions, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type CreateMaterializedView = typings.nodePgMigrate.viewsMaterializedTypesMod.CreateMaterializedViewFn with typings.nodePgMigrate.AnonReverseCreateMaterializedViewFn
+  type CreateMaterializedView = typings.nodePgMigrate.viewsMaterializedTypesMod.CreateMaterializedViewFn with typings.nodePgMigrate.anon.ReverseCreateMaterializedViewFn
   type CreateMaterializedViewFn = js.Function3[
     /* viewName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* options */ typings.nodePgMigrate.viewsMaterializedTypesMod.CreateMaterializedViewOptions with typings.nodePgMigrate.generalTypesMod.DropOptions, 
@@ -22,14 +22,14 @@ package object viewsMaterializedTypesMod {
     /* options */ js.UndefOr[typings.nodePgMigrate.generalTypesMod.DropOptions], 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RefreshMaterializedView = typings.nodePgMigrate.viewsMaterializedTypesMod.RefreshMaterializedViewFn with typings.nodePgMigrate.AnonReverseRefreshMaterializedViewFn
+  type RefreshMaterializedView = typings.nodePgMigrate.viewsMaterializedTypesMod.RefreshMaterializedViewFn with typings.nodePgMigrate.anon.ReverseRefreshMaterializedViewFn
   type RefreshMaterializedViewFn = js.Function2[
     /* viewName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* options */ js.UndefOr[typings.nodePgMigrate.viewsMaterializedTypesMod.RefreshMaterializedViewOptions], 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RenameMaterializedView = typings.nodePgMigrate.viewsMaterializedTypesMod.RenameMaterializedViewFn with typings.nodePgMigrate.AnonReverseRenameMaterializedViewFn
-  type RenameMaterializedViewColumn = typings.nodePgMigrate.viewsMaterializedTypesMod.RenameMaterializedViewColumnFn with typings.nodePgMigrate.AnonReverseRenameMaterializedViewColumnFn
+  type RenameMaterializedView = typings.nodePgMigrate.viewsMaterializedTypesMod.RenameMaterializedViewFn with typings.nodePgMigrate.anon.ReverseRenameMaterializedViewFn
+  type RenameMaterializedViewColumn = typings.nodePgMigrate.viewsMaterializedTypesMod.RenameMaterializedViewColumnFn with typings.nodePgMigrate.anon.ReverseRenameMaterializedViewColumnFn
   type RenameMaterializedViewColumnFn = js.Function3[
     /* viewName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* columnName */ java.lang.String, 

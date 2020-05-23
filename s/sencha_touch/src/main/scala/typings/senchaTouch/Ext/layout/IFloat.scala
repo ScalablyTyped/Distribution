@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 
 trait IFloat extends IDefault {
   /** [Method] Returns the value of direction
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method]
-  		* @param item Object
-  		* @param isInner Object
-  		*/
+    * @param item Object
+    * @param isInner Object
+    */
   @JSName("onItemInnerStateChange")
   var onItemInnerStateChange_IFloat: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Sets the value of direction
-  		* @param direction String The new value.
-  		*/
+    * @param direction String The new value.
+    */
   var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -134,7 +134,7 @@ object IFloat {
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1(setDirection))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

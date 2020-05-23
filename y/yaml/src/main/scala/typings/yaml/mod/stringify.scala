@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object stringify extends js.Object {
   def apply(value: js.Any): String = js.native
-  def apply(value: js.Any, options: ParseOptions): String = js.native
+  def apply(value: js.Any, options: Options): String = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ChatItemKind extends js.Object {
   /** A message */
   @js.native
   sealed trait message extends ChatItemKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatItemKind with Double] = js.native
-  /* 1 */ @js.native
-  object conversation extends TopLevel[conversation with Double]
-  
-  /* 0 */ @js.native
-  object message extends TopLevel[message with Double]
   
 }
 

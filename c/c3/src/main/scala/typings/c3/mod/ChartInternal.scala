@@ -13,7 +13,7 @@ trait ChartInternal
 
 object ChartInternal {
   @scala.inline
-  def apply(api: ChartAPI, StringDictionary: /* key */ StringDictionary[js.Any] = null): ChartInternal = {
+  def apply(api: ChartAPI, StringDictionary: /* name */ StringDictionary[js.Any] = null): ChartInternal = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ChartInternal]

@@ -186,6 +186,33 @@ package object redshiftMod {
   type TagValueList = js.Array[typings.awsSdk.redshiftMod.String]
   type TaggedResourceList = js.Array[typings.awsSdk.redshiftMod.TaggedResource]
   type TrackList = js.Array[typings.awsSdk.redshiftMod.MaintenanceTrack]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.log_
+    - typings.awsSdk.awsSdkStrings.`emit-metric`
+    - typings.awsSdk.awsSdkStrings.disable_
+    - java.lang.String
+  */
+  type UsageLimitBreachAction = typings.awsSdk.redshiftMod._UsageLimitBreachAction | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.spectrum
+    - typings.awsSdk.awsSdkStrings.`concurrency-scaling`
+    - java.lang.String
+  */
+  type UsageLimitFeatureType = typings.awsSdk.redshiftMod._UsageLimitFeatureType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.time_
+    - typings.awsSdk.awsSdkStrings.`data-scanned`
+    - java.lang.String
+  */
+  type UsageLimitLimitType = typings.awsSdk.redshiftMod._UsageLimitLimitType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.daily__
+    - typings.awsSdk.awsSdkStrings.weekly__
+    - typings.awsSdk.awsSdkStrings.monthly_
+    - java.lang.String
+  */
+  type UsageLimitPeriod = typings.awsSdk.redshiftMod._UsageLimitPeriod | java.lang.String
+  type UsageLimits = js.Array[typings.awsSdk.redshiftMod.UsageLimit]
   type ValueStringList = js.Array[typings.awsSdk.redshiftMod.String]
   type VpcSecurityGroupIdList = js.Array[typings.awsSdk.redshiftMod.String]
   type VpcSecurityGroupMembershipList = js.Array[typings.awsSdk.redshiftMod.VpcSecurityGroupMembership]

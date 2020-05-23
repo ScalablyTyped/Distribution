@@ -41,18 +41,18 @@ object DescribeSnapshotsMessage {
   def apply(
     CacheClusterId: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     ReplicationGroupId: String = null,
-    ShowNodeGroupConfig: js.UndefOr[scala.Boolean] = js.undefined,
+    ShowNodeGroupConfig: js.UndefOr[BooleanOptional] = js.undefined,
     SnapshotName: String = null,
     SnapshotSource: String = null
   ): DescribeSnapshotsMessage = {
     val __obj = js.Dynamic.literal()
     if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowNodeGroupConfig)) __obj.updateDynamic("ShowNodeGroupConfig")(ShowNodeGroupConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShowNodeGroupConfig)) __obj.updateDynamic("ShowNodeGroupConfig")(ShowNodeGroupConfig.get.asInstanceOf[js.Any])
     if (SnapshotName != null) __obj.updateDynamic("SnapshotName")(SnapshotName.asInstanceOf[js.Any])
     if (SnapshotSource != null) __obj.updateDynamic("SnapshotSource")(SnapshotSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSnapshotsMessage]

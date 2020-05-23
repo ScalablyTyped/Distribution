@@ -1,6 +1,6 @@
 package typings.jestMessageUtil.mod
 
-import typings.jestMessageUtil.PickProjectConfigrootDirt
+import typings.jestMessageUtil.anon.PickProjectConfigrootDirt
 import typings.jestTestResult.typesMod.AssertionResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`

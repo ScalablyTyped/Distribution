@@ -30,13 +30,13 @@ object StaggerConfig {
     ease: String | js.Function = null,
     from: String | integer = null,
     grid: js.Array[integer] = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): StaggerConfig = {
     val __obj = js.Dynamic.literal()
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaggerConfig]
   }
 }

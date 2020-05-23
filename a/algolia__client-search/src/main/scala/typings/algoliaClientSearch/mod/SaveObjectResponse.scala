@@ -8,11 +8,11 @@ trait SaveObjectResponse extends js.Object {
   /**
     * The object id saved.
     */
-  val objectID: String
+  var objectID: String
   /**
     * The operation task id. May be used to perform a wait task.
     */
-  val taskID: Double
+  var taskID: Double
 }
 
 object SaveObjectResponse {

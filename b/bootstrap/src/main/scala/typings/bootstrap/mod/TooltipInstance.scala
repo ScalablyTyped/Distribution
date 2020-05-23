@@ -14,7 +14,7 @@ trait TooltipInstance[T /* <: TooltipOption */] extends js.Object {
 
 object TooltipInstance {
   @scala.inline
-  def apply[T /* <: TooltipOption */](config: T, element: Element, tip: HTMLElement): TooltipInstance[T] = {
+  def apply[T](config: T, element: Element, tip: HTMLElement): TooltipInstance[T] = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], tip = tip.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipInstance[T]]
   }

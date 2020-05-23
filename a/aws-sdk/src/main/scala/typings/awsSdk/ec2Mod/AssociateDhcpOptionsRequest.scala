@@ -22,13 +22,9 @@ trait AssociateDhcpOptionsRequest extends js.Object {
 
 object AssociateDhcpOptionsRequest {
   @scala.inline
-  def apply(
-    DhcpOptionsId: DefaultingDhcpOptionsId,
-    VpcId: VpcId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  ): AssociateDhcpOptionsRequest = {
+  def apply(DhcpOptionsId: DefaultingDhcpOptionsId, VpcId: VpcId, DryRun: js.UndefOr[Boolean] = js.undefined): AssociateDhcpOptionsRequest = {
     val __obj = js.Dynamic.literal(DhcpOptionsId = DhcpOptionsId.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateDhcpOptionsRequest]
   }
 }

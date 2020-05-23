@@ -34,10 +34,10 @@ object mod extends js.Object {
   //#endregion
   //#region bind.apply():
   /**
-  	 * Creates a bound function with the specified object as the this value and the elements of specified array as the arguments.
-  	 * @param thisArg The object to be used as the this object.
-  	 * @param args An array of argument values to be passed to the function.
-  	 */
+    * Creates a bound function with the specified object as the this value and the elements of specified array as the arguments.
+    * @param thisArg The object to be used as the this object.
+    * @param args An array of argument values to be passed to the function.
+    */
   // CallableFunction:
   @JSName("apply")
   def apply[T, A /* <: js.Array[_] */, R](func: js.ThisFunction1[/* this */ T, /* args */ A, R], args: js.Array[T]): js.Function1[/* args */ A, R] = js.native
@@ -77,10 +77,10 @@ object mod extends js.Object {
   def call[AX, R](func: Instantiable1[/* args (repeated) */ AX, R], thisArg: js.Any, args: AX*): Instantiable1[/* args (repeated) */ AX, R] = js.native
   //#region bind.call():
   /**
-  	 * Creates a bound function with the specified object as the this value and the specified rest arguments as the arguments.
-  	 * @param thisArg The object to be used as the this object.
-  	 * @param args Argument values to be passed to the function.
-  	 */
+    * Creates a bound function with the specified object as the this value and the specified rest arguments as the arguments.
+    * @param thisArg The object to be used as the this object.
+    * @param args Argument values to be passed to the function.
+    */
   // CallableFunction:
   def call[T, A /* <: js.Array[_] */, R](func: js.ThisFunction1[/* this */ T, /* args */ A, R], thisArg: T): js.Function1[/* args */ A, R] = js.native
   def call[T, AX, R](func: js.ThisFunction1[/* this */ T, /* repeated */ AX, R], thisArg: T, args: AX*): js.Function1[/* repeated */ AX, R] = js.native

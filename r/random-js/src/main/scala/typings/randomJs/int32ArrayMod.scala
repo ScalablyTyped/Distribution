@@ -1,5 +1,6 @@
 package typings.randomJs
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import typings.std.ArrayBufferLike
 import typings.std.ArrayLike
@@ -24,7 +25,10 @@ object int32ArrayMod extends js.Object {
   }
   
   @js.native
-  object Int32Array extends TopLevel[Int32ArrayConstructor]
+  object Int32Array
+    extends TopLevel[
+          Int32ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Int32Array])
+        ]
   
 }
 

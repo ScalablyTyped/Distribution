@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object EasDisallowConvenienceLogonResult extends js.Object {
   /** The requested policy is stricter than the computer policies. */
   @js.native
   sealed trait requestedPolicyIsStricter extends EasDisallowConvenienceLogonResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EasDisallowConvenienceLogonResult with Double] = js.native
-  /* 2 */ @js.native
-  object canBeCompliant extends TopLevel[canBeCompliant with Double]
-  
-  /* 1 */ @js.native
-  object compliant extends TopLevel[compliant with Double]
-  
-  /* 0 */ @js.native
-  object notEvaluated extends TopLevel[notEvaluated with Double]
-  
-  /* 3 */ @js.native
-  object requestedPolicyIsStricter extends TopLevel[requestedPolicyIsStricter with Double]
   
 }
 

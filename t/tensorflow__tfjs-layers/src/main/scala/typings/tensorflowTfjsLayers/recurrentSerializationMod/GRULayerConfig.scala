@@ -21,18 +21,18 @@ object GRULayerConfig {
     units: Double,
     activation: ActivationSerialization = null,
     batch_input_shape: Shape = null,
-    batch_size: Int | Double = null,
+    batch_size: js.UndefOr[Double] = js.undefined,
     bias_constraint: ConstraintSerialization = null,
     bias_initializer: InitializerSerialization = null,
     bias_regularizer: RegularizerSerialization = null,
     cell: RNNCellSerialization | js.Array[RNNCellSerialization] = null,
-    dropout: Int | Double = null,
+    dropout: js.UndefOr[Double] = js.undefined,
     dtype: DataType = null,
     go_backwards: js.UndefOr[Boolean] = js.undefined,
-    implementation: Int | Double = null,
-    input_dim: Int | Double = null,
+    implementation: js.UndefOr[Double] = js.undefined,
+    input_dim: js.UndefOr[Double] = js.undefined,
     input_dtype: DataType = null,
-    input_length: Int | Double = null,
+    input_length: js.UndefOr[Double] = js.undefined,
     input_shape: Shape = null,
     kernel_constraint: ConstraintSerialization = null,
     kernel_initializer: InitializerSerialization = null,
@@ -40,7 +40,7 @@ object GRULayerConfig {
     name: String = null,
     recurrent_activation: ActivationSerialization = null,
     recurrent_constraint: ConstraintSerialization = null,
-    recurrent_dropout: Int | Double = null,
+    recurrent_dropout: js.UndefOr[Double] = js.undefined,
     recurrent_initializer: InitializerSerialization = null,
     recurrent_regularizer: RegularizerSerialization = null,
     return_sequences: js.UndefOr[Boolean] = js.undefined,
@@ -53,18 +53,18 @@ object GRULayerConfig {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any])
     if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
     if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape.asInstanceOf[js.Any])
-    if (batch_size != null) __obj.updateDynamic("batch_size")(batch_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(batch_size)) __obj.updateDynamic("batch_size")(batch_size.get.asInstanceOf[js.Any])
     if (bias_constraint != null) __obj.updateDynamic("bias_constraint")(bias_constraint.asInstanceOf[js.Any])
     if (bias_initializer != null) __obj.updateDynamic("bias_initializer")(bias_initializer.asInstanceOf[js.Any])
     if (bias_regularizer != null) __obj.updateDynamic("bias_regularizer")(bias_regularizer.asInstanceOf[js.Any])
     if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (dropout != null) __obj.updateDynamic("dropout")(dropout.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropout)) __obj.updateDynamic("dropout")(dropout.get.asInstanceOf[js.Any])
     if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (!js.isUndefined(go_backwards)) __obj.updateDynamic("go_backwards")(go_backwards.asInstanceOf[js.Any])
-    if (implementation != null) __obj.updateDynamic("implementation")(implementation.asInstanceOf[js.Any])
-    if (input_dim != null) __obj.updateDynamic("input_dim")(input_dim.asInstanceOf[js.Any])
+    if (!js.isUndefined(go_backwards)) __obj.updateDynamic("go_backwards")(go_backwards.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(implementation)) __obj.updateDynamic("implementation")(implementation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(input_dim)) __obj.updateDynamic("input_dim")(input_dim.get.asInstanceOf[js.Any])
     if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype.asInstanceOf[js.Any])
-    if (input_length != null) __obj.updateDynamic("input_length")(input_length.asInstanceOf[js.Any])
+    if (!js.isUndefined(input_length)) __obj.updateDynamic("input_length")(input_length.get.asInstanceOf[js.Any])
     if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape.asInstanceOf[js.Any])
     if (kernel_constraint != null) __obj.updateDynamic("kernel_constraint")(kernel_constraint.asInstanceOf[js.Any])
     if (kernel_initializer != null) __obj.updateDynamic("kernel_initializer")(kernel_initializer.asInstanceOf[js.Any])
@@ -72,15 +72,15 @@ object GRULayerConfig {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (recurrent_activation != null) __obj.updateDynamic("recurrent_activation")(recurrent_activation.asInstanceOf[js.Any])
     if (recurrent_constraint != null) __obj.updateDynamic("recurrent_constraint")(recurrent_constraint.asInstanceOf[js.Any])
-    if (recurrent_dropout != null) __obj.updateDynamic("recurrent_dropout")(recurrent_dropout.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurrent_dropout)) __obj.updateDynamic("recurrent_dropout")(recurrent_dropout.get.asInstanceOf[js.Any])
     if (recurrent_initializer != null) __obj.updateDynamic("recurrent_initializer")(recurrent_initializer.asInstanceOf[js.Any])
     if (recurrent_regularizer != null) __obj.updateDynamic("recurrent_regularizer")(recurrent_regularizer.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_sequences)) __obj.updateDynamic("return_sequences")(return_sequences.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_state)) __obj.updateDynamic("return_state")(return_state.asInstanceOf[js.Any])
-    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
-    if (!js.isUndefined(unroll)) __obj.updateDynamic("unroll")(unroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(use_bias)) __obj.updateDynamic("use_bias")(use_bias.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_sequences)) __obj.updateDynamic("return_sequences")(return_sequences.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_state)) __obj.updateDynamic("return_state")(return_state.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unroll)) __obj.updateDynamic("unroll")(unroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(use_bias)) __obj.updateDynamic("use_bias")(use_bias.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GRULayerConfig]
   }
 }

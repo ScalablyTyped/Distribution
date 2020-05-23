@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object SocialAttachmentActionKind extends js.Object {
   /** This value specifies that the action is to navigate to the attachment. */
   @js.native
   sealed trait navigate extends SocialAttachmentActionKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialAttachmentActionKind with Double] = js.native
-  /* 1 */ @js.native
-  object adHocAction extends TopLevel[adHocAction with Double]
-  
-  /* 0 */ @js.native
-  object navigate extends TopLevel[navigate with Double]
   
 }
 

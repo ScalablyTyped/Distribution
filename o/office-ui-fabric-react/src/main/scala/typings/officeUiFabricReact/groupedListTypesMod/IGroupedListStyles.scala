@@ -13,11 +13,15 @@ trait IGroupedListStyles extends js.Object {
 
 object IGroupedListStyles {
   @scala.inline
-  def apply(group: IStyle = null, groupIsDropping: IStyle = null, root: IStyle = null): IGroupedListStyles = {
+  def apply(
+    group: js.UndefOr[Null | IStyle] = js.undefined,
+    groupIsDropping: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
+  ): IGroupedListStyles = {
     val __obj = js.Dynamic.literal()
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (groupIsDropping != null) __obj.updateDynamic("groupIsDropping")(groupIsDropping.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupIsDropping)) __obj.updateDynamic("groupIsDropping")(groupIsDropping.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupedListStyles]
   }
 }

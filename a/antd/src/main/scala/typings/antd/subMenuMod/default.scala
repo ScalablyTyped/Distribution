@@ -1,6 +1,6 @@
 package typings.antd.subMenuMod
 
-import typings.antd.AnonAntdMenuTheme
+import typings.antd.anon.AntdMenuTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ class default () extends SubMenu
 @JSImport("antd/lib/menu/SubMenu", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var contextTypes: AnonAntdMenuTheme = js.native
+  var contextTypes: AntdMenuTheme = js.native
   var isSubMenu: Double = js.native
 }
 

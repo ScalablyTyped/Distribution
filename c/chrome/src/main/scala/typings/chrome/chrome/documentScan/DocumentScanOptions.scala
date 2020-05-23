@@ -13,9 +13,9 @@ trait DocumentScanOptions extends js.Object {
 
 object DocumentScanOptions {
   @scala.inline
-  def apply(maxImages: Int | Double = null, mimeTypes: js.Array[String] = null): DocumentScanOptions = {
+  def apply(maxImages: js.UndefOr[Double] = js.undefined, mimeTypes: js.Array[String] = null): DocumentScanOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxImages != null) __obj.updateDynamic("maxImages")(maxImages.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxImages)) __obj.updateDynamic("maxImages")(maxImages.get.asInstanceOf[js.Any])
     if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentScanOptions]
   }

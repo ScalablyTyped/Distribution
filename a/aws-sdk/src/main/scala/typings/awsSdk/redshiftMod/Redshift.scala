@@ -1,7 +1,7 @@
 package typings.awsSdk.redshiftMod
 
-import typings.awsSdk.DescribeClusterSnapshotsM
-import typings.awsSdk.DescribeClustersMessagewa
+import typings.awsSdk.anon.DescribeClusterSnapshotsM
+import typings.awsSdk.anon.DescribeClustersMessagewa
 import typings.awsSdk.awsSdkStrings.clusterAvailable
 import typings.awsSdk.awsSdkStrings.clusterDeleted
 import typings.awsSdk.awsSdkStrings.clusterRestored
@@ -269,6 +269,19 @@ trait Redshift extends Service {
   def createTags(params: CreateTagsMessage): Request[js.Object, AWSError] = js.native
   def createTags(params: CreateTagsMessage, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
+    * Creates a usage limit for a specified Amazon Redshift feature on a cluster. The usage limit is identified by the returned usage limit identifier.
+    */
+  def createUsageLimit(): Request[UsageLimit, AWSError] = js.native
+  def createUsageLimit(callback: js.Function2[/* err */ AWSError, /* data */ UsageLimit, Unit]): Request[UsageLimit, AWSError] = js.native
+  /**
+    * Creates a usage limit for a specified Amazon Redshift feature on a cluster. The usage limit is identified by the returned usage limit identifier.
+    */
+  def createUsageLimit(params: CreateUsageLimitMessage): Request[UsageLimit, AWSError] = js.native
+  def createUsageLimit(
+    params: CreateUsageLimitMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ UsageLimit, Unit]
+  ): Request[UsageLimit, AWSError] = js.native
+  /**
     * Deletes a previously provisioned cluster without its final snapshot being created. A successful response from the web service indicates that the request was received correctly. Use DescribeClusters to monitor the status of the deletion. The delete operation cannot be canceled or reverted once submitted. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide. If you want to shut down the cluster and retain it for future use, set SkipFinalClusterSnapshot to false and specify a name for FinalClusterSnapshotIdentifier. You can later restore this snapshot to resume using the cluster. If a final cluster snapshot is requested, the status of the cluster will be "final-snapshot" while the snapshot is being taken, then it's "deleting" once Amazon Redshift begins deleting the cluster.   For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
   def deleteCluster(): Request[DeleteClusterResult, AWSError] = js.native
@@ -421,6 +434,19 @@ trait Redshift extends Service {
     */
   def deleteTags(params: DeleteTagsMessage): Request[js.Object, AWSError] = js.native
   def deleteTags(params: DeleteTagsMessage, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a usage limit from a cluster.
+    */
+  def deleteUsageLimit(): Request[js.Object, AWSError] = js.native
+  def deleteUsageLimit(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a usage limit from a cluster.
+    */
+  def deleteUsageLimit(params: DeleteUsageLimitMessage): Request[js.Object, AWSError] = js.native
+  def deleteUsageLimit(
+    params: DeleteUsageLimitMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   /**
     * Returns a list of attributes attached to an account
     */
@@ -782,6 +808,19 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ TaggedResourceListMessage, Unit]
   ): Request[TaggedResourceListMessage, AWSError] = js.native
   /**
+    * Shows usage limits on a cluster. Results are filtered based on the combination of input usage limit identifier, cluster identifier, and feature type parameters:   If usage limit identifier, cluster identifier, and feature type are not provided, then all usage limit objects for the current account in the current region are returned.   If usage limit identifier is provided, then the corresponding usage limit object is returned.   If cluster identifier is provided, then all usage limit objects for the specified cluster are returned.   If cluster identifier and feature type are provided, then all usage limit objects for the combination of cluster and feature are returned.  
+    */
+  def describeUsageLimits(): Request[UsageLimitList, AWSError] = js.native
+  def describeUsageLimits(callback: js.Function2[/* err */ AWSError, /* data */ UsageLimitList, Unit]): Request[UsageLimitList, AWSError] = js.native
+  /**
+    * Shows usage limits on a cluster. Results are filtered based on the combination of input usage limit identifier, cluster identifier, and feature type parameters:   If usage limit identifier, cluster identifier, and feature type are not provided, then all usage limit objects for the current account in the current region are returned.   If usage limit identifier is provided, then the corresponding usage limit object is returned.   If cluster identifier is provided, then all usage limit objects for the specified cluster are returned.   If cluster identifier and feature type are provided, then all usage limit objects for the combination of cluster and feature are returned.  
+    */
+  def describeUsageLimits(params: DescribeUsageLimitsMessage): Request[UsageLimitList, AWSError] = js.native
+  def describeUsageLimits(
+    params: DescribeUsageLimitsMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ UsageLimitList, Unit]
+  ): Request[UsageLimitList, AWSError] = js.native
+  /**
     * Stops logging information, such as queries and connection attempts, for the specified Amazon Redshift cluster.
     */
   def disableLogging(): Request[LoggingStatus, AWSError] = js.native
@@ -1019,6 +1058,19 @@ trait Redshift extends Service {
     params: ModifySnapshotScheduleMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ SnapshotSchedule, Unit]
   ): Request[SnapshotSchedule, AWSError] = js.native
+  /**
+    * Modifies a usage limit in a cluster. You can't modify the feature type or period of a usage limit.
+    */
+  def modifyUsageLimit(): Request[UsageLimit, AWSError] = js.native
+  def modifyUsageLimit(callback: js.Function2[/* err */ AWSError, /* data */ UsageLimit, Unit]): Request[UsageLimit, AWSError] = js.native
+  /**
+    * Modifies a usage limit in a cluster. You can't modify the feature type or period of a usage limit.
+    */
+  def modifyUsageLimit(params: ModifyUsageLimitMessage): Request[UsageLimit, AWSError] = js.native
+  def modifyUsageLimit(
+    params: ModifyUsageLimitMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ UsageLimit, Unit]
+  ): Request[UsageLimit, AWSError] = js.native
   /**
     * Pauses a cluster.
     */

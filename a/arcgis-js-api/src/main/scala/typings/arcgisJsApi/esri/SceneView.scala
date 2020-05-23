@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.global
 import typings.arcgisJsApi.arcgisJsApiStrings.high
@@ -254,8 +253,4 @@ trait SceneView
     */
   def toScreen(point: Point): SceneViewScreenPoint = js.native
 }
-
-@JSGlobal("__esri.SceneView")
-@js.native
-object SceneView extends TopLevel[SceneViewConstructor]
 

@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.errMsgstringExtConfig
+import typings.weixinApp.anon.errMsgstringExtConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -28,7 +28,7 @@ object PostPerUserInfo {
   ): PostPerUserInfo = {
     val __obj = js.Dynamic.literal()
     if (blogId != null) __obj.updateDynamic("blogId")(blogId.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasEditAccess)) __obj.updateDynamic("hasEditAccess")(hasEditAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasEditAccess)) __obj.updateDynamic("hasEditAccess")(hasEditAccess.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (postId != null) __obj.updateDynamic("postId")(postId.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])

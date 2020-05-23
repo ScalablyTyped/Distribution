@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to restart the numbering list.
   */
-@JSGlobal("RestartNumberingListCommand")
-@js.native
-class RestartNumberingListCommand () extends CommandWithSimpleStateBase {
+trait RestartNumberingListCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the RestartNumberingListCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object RestartNumberingListCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): RestartNumberingListCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[RestartNumberingListCommand]
+  }
 }
 

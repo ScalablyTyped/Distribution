@@ -1,9 +1,9 @@
 package typings.antd.avatarMod
 
-import typings.antd.AnonIsImgExist
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.anon.IsImgExist
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Avatar
   var lastChildrenWidth: js.Any = js.native
   var lastNodeWidth: js.Any = js.native
   @JSName("state")
-  var state_Avatar: AnonIsImgExist = js.native
+  var state_Avatar: IsImgExist = js.native
   @JSName("componentDidMount")
   def componentDidMount_MAvatar(): Unit = js.native
   @JSName("componentDidUpdate")

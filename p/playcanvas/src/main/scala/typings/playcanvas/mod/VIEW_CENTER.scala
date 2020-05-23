@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.VIEW_CENTER
-  * @type {number}
-  * @description Center of view.
+  * Center of view.
   */
 @JSImport("playcanvas", "VIEW_CENTER")
 @js.native

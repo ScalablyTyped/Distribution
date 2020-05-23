@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +19,23 @@ trait TreeWalker extends js.Object {
   def previousSibling(): Node | Null
 }
 
-@JSGlobal("TreeWalker")
-@js.native
-object TreeWalker extends Instantiable0[TreeWalker]
+object TreeWalker {
+  @scala.inline
+  def apply(
+    currentNode: Node,
+    firstChild: () => Node | Null,
+    lastChild: () => Node | Null,
+    nextNode: () => Node | Null,
+    nextSibling: () => Node | Null,
+    parentNode: () => Node | Null,
+    previousNode: () => Node | Null,
+    previousSibling: () => Node | Null,
+    root: Node,
+    whatToShow: Double,
+    filter: NodeFilter = null
+  ): TreeWalker = {
+    val __obj = js.Dynamic.literal(currentNode = currentNode.asInstanceOf[js.Any], firstChild = js.Any.fromFunction0(firstChild), lastChild = js.Any.fromFunction0(lastChild), nextNode = js.Any.fromFunction0(nextNode), nextSibling = js.Any.fromFunction0(nextSibling), parentNode = js.Any.fromFunction0(parentNode), previousNode = js.Any.fromFunction0(previousNode), previousSibling = js.Any.fromFunction0(previousSibling), root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TreeWalker]
+  }
+}
 

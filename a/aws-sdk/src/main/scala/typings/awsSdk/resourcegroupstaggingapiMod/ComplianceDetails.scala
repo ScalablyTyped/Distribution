@@ -23,12 +23,12 @@ trait ComplianceDetails extends js.Object {
 object ComplianceDetails {
   @scala.inline
   def apply(
-    ComplianceStatus: js.UndefOr[Boolean] = js.undefined,
+    ComplianceStatus: js.UndefOr[ComplianceStatus] = js.undefined,
     KeysWithNoncompliantValues: TagKeyList = null,
     NoncompliantKeys: TagKeyList = null
   ): ComplianceDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ComplianceStatus)) __obj.updateDynamic("ComplianceStatus")(ComplianceStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(ComplianceStatus)) __obj.updateDynamic("ComplianceStatus")(ComplianceStatus.get.asInstanceOf[js.Any])
     if (KeysWithNoncompliantValues != null) __obj.updateDynamic("KeysWithNoncompliantValues")(KeysWithNoncompliantValues.asInstanceOf[js.Any])
     if (NoncompliantKeys != null) __obj.updateDynamic("NoncompliantKeys")(NoncompliantKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceDetails]

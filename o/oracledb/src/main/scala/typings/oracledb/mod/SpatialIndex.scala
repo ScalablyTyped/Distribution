@@ -29,8 +29,8 @@ object SpatialIndex {
     scalarRequired: js.UndefOr[Boolean] = js.undefined
   ): SpatialIndex = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], spatial = spatial.asInstanceOf[js.Any])
-    if (!js.isUndefined(lax)) __obj.updateDynamic("lax")(lax.asInstanceOf[js.Any])
-    if (!js.isUndefined(scalarRequired)) __obj.updateDynamic("scalarRequired")(scalarRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(lax)) __obj.updateDynamic("lax")(lax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scalarRequired)) __obj.updateDynamic("scalarRequired")(scalarRequired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialIndex]
   }
 }

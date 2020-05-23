@@ -39,17 +39,17 @@ trait FindOneOptions extends js.Object {
 object FindOneOptions {
   @scala.inline
   def apply(
-    batchSize: Int | scala.Double = null,
+    batchSize: js.UndefOr[scala.Double] = js.undefined,
     collation: CollationDocument = null,
     comment: String = null,
     explain: js.UndefOr[Boolean] = js.undefined,
     fields: js.Object = null,
     hint: js.Object = null,
-    limit: Int | scala.Double = null,
-    max: Int | scala.Double = null,
-    maxScan: Int | scala.Double = null,
-    maxTimeMS: Int | scala.Double = null,
-    min: Int | scala.Double = null,
+    limit: js.UndefOr[scala.Double] = js.undefined,
+    max: js.UndefOr[scala.Double] = js.undefined,
+    maxScan: js.UndefOr[scala.Double] = js.undefined,
+    maxTimeMS: js.UndefOr[scala.Double] = js.undefined,
+    min: js.UndefOr[scala.Double] = js.undefined,
     partial: js.UndefOr[Boolean] = js.undefined,
     projection: js.Object = null,
     promoteBuffers: js.UndefOr[Boolean] = js.undefined,
@@ -60,39 +60,39 @@ object FindOneOptions {
     returnKey: js.UndefOr[Boolean] = js.undefined,
     session: ClientSession = null,
     showDiskLoc: js.UndefOr[Boolean] = js.undefined,
-    skip: Int | scala.Double = null,
+    skip: js.UndefOr[scala.Double] = js.undefined,
     snapshot: js.UndefOr[Boolean] = js.undefined,
     sort: js.Array[_] | js.Object = null,
     tailable: js.UndefOr[Boolean] = js.undefined,
     timeout: js.UndefOr[Boolean] = js.undefined
   ): FindOneOptions = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.asInstanceOf[js.Any])
+    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxScan != null) __obj.updateDynamic("maxScan")(maxScan.asInstanceOf[js.Any])
-    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScan)) __obj.updateDynamic("maxScan")(maxScan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnKey)) __obj.updateDynamic("returnKey")(returnKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnKey)) __obj.updateDynamic("returnKey")(returnKey.get.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDiskLoc)) __obj.updateDynamic("showDiskLoc")(showDiskLoc.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDiskLoc)) __obj.updateDynamic("showDiskLoc")(showDiskLoc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(tailable)) __obj.updateDynamic("tailable")(tailable.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(tailable)) __obj.updateDynamic("tailable")(tailable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOneOptions]
   }
 }

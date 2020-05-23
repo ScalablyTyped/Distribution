@@ -29,8 +29,8 @@ object DeviceEnrollmentPlatformRestrictionsConfiguration {
     iosRestriction: DeviceEnrollmentPlatformRestriction = null,
     lastModifiedDateTime: String = null,
     macOSRestriction: DeviceEnrollmentPlatformRestriction = null,
-    priority: Int | Double = null,
-    version: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
+    version: js.UndefOr[Double] = js.undefined,
     windowsMobileRestriction: DeviceEnrollmentPlatformRestriction = null,
     windowsRestriction: DeviceEnrollmentPlatformRestriction = null
   ): DeviceEnrollmentPlatformRestrictionsConfiguration = {
@@ -44,8 +44,8 @@ object DeviceEnrollmentPlatformRestrictionsConfiguration {
     if (iosRestriction != null) __obj.updateDynamic("iosRestriction")(iosRestriction.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (macOSRestriction != null) __obj.updateDynamic("macOSRestriction")(macOSRestriction.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     if (windowsMobileRestriction != null) __obj.updateDynamic("windowsMobileRestriction")(windowsMobileRestriction.asInstanceOf[js.Any])
     if (windowsRestriction != null) __obj.updateDynamic("windowsRestriction")(windowsRestriction.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceEnrollmentPlatformRestrictionsConfiguration]

@@ -39,13 +39,12 @@ object IGlowLayerOptions {
     mainTextureRatio: Double,
     renderingGroupId: Double,
     camera: Nullable[Camera] = null,
-    mainTextureFixedSize: Int | Double = null,
-    mainTextureSamples: Int | Double = null
+    mainTextureFixedSize: js.UndefOr[Double] = js.undefined,
+    mainTextureSamples: js.UndefOr[Double] = js.undefined
   ): IGlowLayerOptions = {
-    val __obj = js.Dynamic.literal(blurKernelSize = blurKernelSize.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any])
-    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (mainTextureFixedSize != null) __obj.updateDynamic("mainTextureFixedSize")(mainTextureFixedSize.asInstanceOf[js.Any])
-    if (mainTextureSamples != null) __obj.updateDynamic("mainTextureSamples")(mainTextureSamples.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blurKernelSize = blurKernelSize.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any])
+    if (!js.isUndefined(mainTextureFixedSize)) __obj.updateDynamic("mainTextureFixedSize")(mainTextureFixedSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mainTextureSamples)) __obj.updateDynamic("mainTextureSamples")(mainTextureSamples.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGlowLayerOptions]
   }
 }

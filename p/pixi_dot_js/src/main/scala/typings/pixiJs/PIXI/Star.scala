@@ -18,11 +18,19 @@ import scala.scalajs.js.annotation._
   * @param {number} [rotation=0] - The rotation of the star in radians, where 0 is vertical
   * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
   */
-@JSGlobal("PIXI.Star")
-@js.native
-class Star protected () extends Polygon {
-  def this(x: Double, y: Double, points: Double, radius: Double) = this()
-  def this(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double) = this()
-  def this(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double, rotation: Double) = this()
+trait Star extends Polygon
+
+object Star {
+  @scala.inline
+  def apply(
+    closeStroke: Boolean,
+    contains: (Double, Double) => Boolean,
+    points: js.Array[Double],
+    `type`: Double
+  ): Star = {
+    val __obj = js.Dynamic.literal(closeStroke = closeStroke.asInstanceOf[js.Any], contains = js.Any.fromFunction2(contains), points = points.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Star]
+  }
 }
 

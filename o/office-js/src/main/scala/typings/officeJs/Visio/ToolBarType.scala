@@ -1,6 +1,5 @@
 package typings.officeJs.Visio
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,17 +39,6 @@ object ToolBarType extends js.Object {
     */
   @js.native
   sealed trait statusBar extends ToolBarType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ToolBarType with String] = js.native
-  /* "CommandBar" */ @js.native
-  object commandBar extends TopLevel[commandBar with String]
-  
-  /* "PageNavigationBar" */ @js.native
-  object pageNavigationBar extends TopLevel[pageNavigationBar with String]
-  
-  /* "StatusBar" */ @js.native
-  object statusBar extends TopLevel[statusBar with String]
   
 }
 

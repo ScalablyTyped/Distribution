@@ -65,7 +65,7 @@ object CreateUnreferencedMergeCommitInput {
     conflictResolution: ConflictResolution = null,
     conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = null,
     email: Email = null,
-    keepEmptyFolders: js.UndefOr[Boolean] = js.undefined
+    keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined
   ): CreateUnreferencedMergeCommitInput = {
     val __obj = js.Dynamic.literal(destinationCommitSpecifier = destinationCommitSpecifier.asInstanceOf[js.Any], mergeOption = mergeOption.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any], sourceCommitSpecifier = sourceCommitSpecifier.asInstanceOf[js.Any])
     if (authorName != null) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
@@ -74,7 +74,7 @@ object CreateUnreferencedMergeCommitInput {
     if (conflictResolution != null) __obj.updateDynamic("conflictResolution")(conflictResolution.asInstanceOf[js.Any])
     if (conflictResolutionStrategy != null) __obj.updateDynamic("conflictResolutionStrategy")(conflictResolutionStrategy.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepEmptyFolders)) __obj.updateDynamic("keepEmptyFolders")(keepEmptyFolders.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepEmptyFolders)) __obj.updateDynamic("keepEmptyFolders")(keepEmptyFolders.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUnreferencedMergeCommitInput]
   }
 }

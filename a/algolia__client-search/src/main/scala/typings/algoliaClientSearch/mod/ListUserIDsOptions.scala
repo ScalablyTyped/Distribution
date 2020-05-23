@@ -17,10 +17,10 @@ trait ListUserIDsOptions extends js.Object {
 
 object ListUserIDsOptions {
   @scala.inline
-  def apply(hitsPerPage: Int | Double = null, page: Int | Double = null): ListUserIDsOptions = {
+  def apply(hitsPerPage: js.UndefOr[Double] = js.undefined, page: js.UndefOr[Double] = js.undefined): ListUserIDsOptions = {
     val __obj = js.Dynamic.literal()
-    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitsPerPage)) __obj.updateDynamic("hitsPerPage")(hitsPerPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserIDsOptions]
   }
 }

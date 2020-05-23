@@ -1,35 +1,35 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAnalytics.AnonCustomMetricId
-import typings.gapiClientAnalytics.AnonPrettyPrint
-import typings.gapiClientAnalytics.AnonQuotaUser
-import typings.gapiClientAnalytics.AnonUserIp
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientAnalytics.anon.CustomMetricId
+import typings.gapiClientAnalytics.anon.PrettyPrint
+import typings.gapiClientAnalytics.anon.QuotaUser
+import typings.gapiClientAnalytics.anon.UserIp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomMetricsResource extends js.Object {
   /** Get a custom metric to which the user has access. */
-  def get(request: AnonCustomMetricId): Request_[CustomMetric]
+  def get(request: CustomMetricId): Request[CustomMetric]
   /** Create a new custom metric. */
-  def insert(request: AnonQuotaUser): Request_[CustomMetric]
+  def insert(request: QuotaUser): Request[CustomMetric]
   /** Lists custom metrics to which the user has access. */
-  def list(request: AnonPrettyPrint): Request_[CustomMetrics]
+  def list(request: PrettyPrint): Request[CustomMetrics]
   /** Updates an existing custom metric. This method supports patch semantics. */
-  def patch(request: AnonUserIp): Request_[CustomMetric]
+  def patch(request: UserIp): Request[CustomMetric]
   /** Updates an existing custom metric. */
-  def update(request: AnonUserIp): Request_[CustomMetric]
+  def update(request: UserIp): Request[CustomMetric]
 }
 
 object CustomMetricsResource {
   @scala.inline
   def apply(
-    get: AnonCustomMetricId => Request_[CustomMetric],
-    insert: AnonQuotaUser => Request_[CustomMetric],
-    list: AnonPrettyPrint => Request_[CustomMetrics],
-    patch: AnonUserIp => Request_[CustomMetric],
-    update: AnonUserIp => Request_[CustomMetric]
+    get: CustomMetricId => Request[CustomMetric],
+    insert: QuotaUser => Request[CustomMetric],
+    list: PrettyPrint => Request[CustomMetrics],
+    patch: UserIp => Request[CustomMetric],
+    update: UserIp => Request[CustomMetric]
   ): CustomMetricsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[CustomMetricsResource]

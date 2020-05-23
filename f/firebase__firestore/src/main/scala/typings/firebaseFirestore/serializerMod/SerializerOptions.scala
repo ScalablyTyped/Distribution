@@ -19,7 +19,6 @@ object SerializerOptions {
   @scala.inline
   def apply(useProto3Json: Boolean): SerializerOptions = {
     val __obj = js.Dynamic.literal(useProto3Json = useProto3Json.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerializerOptions]
   }
 }

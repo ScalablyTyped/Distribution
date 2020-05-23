@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbTargetGlobal")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbTargetGlobal")
 @js.native
 class DbTargetGlobal protected () extends js.Object {
   def this(
@@ -63,7 +63,7 @@ class DbTargetGlobal protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbTargetGlobal")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbTargetGlobal")
 @js.native
 object DbTargetGlobal extends js.Object {
   /**

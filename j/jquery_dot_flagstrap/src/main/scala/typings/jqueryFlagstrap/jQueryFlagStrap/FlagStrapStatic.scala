@@ -12,7 +12,7 @@ object FlagStrapStatic {
   @scala.inline
   def apply(flagStrap: js.UndefOr[Unit] = js.undefined): FlagStrapStatic = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flagStrap)) __obj.updateDynamic("flagStrap")(flagStrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(flagStrap)) __obj.updateDynamic("flagStrap")(flagStrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlagStrapStatic]
   }
 }

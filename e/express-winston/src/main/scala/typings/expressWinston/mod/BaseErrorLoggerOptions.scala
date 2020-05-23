@@ -55,7 +55,7 @@ object BaseErrorLoggerOptions {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (headerBlacklist != null) __obj.updateDynamic("headerBlacklist")(headerBlacklist.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta.get.asInstanceOf[js.Any])
     if (metaField != null) __obj.updateDynamic("metaField")(metaField.asInstanceOf[js.Any])
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
     if (requestField != null) __obj.updateDynamic("requestField")(requestField.asInstanceOf[js.Any])

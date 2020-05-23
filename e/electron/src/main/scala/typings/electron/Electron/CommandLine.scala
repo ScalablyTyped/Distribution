@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.CommandLine")
 @js.native
-class CommandLine () extends js.Object {
+trait CommandLine extends js.Object {
   // Docs: http://electronjs.org/docs/api/command-line
   /**
     * Append an argument to Chromium's command line. The argument will be quoted

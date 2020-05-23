@@ -32,12 +32,12 @@ object AssetSourceResolver {
     resourceIdentifierWithoutScale: () => ResolvedAssetSource,
     scaledAssetPath: () => ResolvedAssetSource,
     scaledAssetURLNearBundle: () => ResolvedAssetSource,
-    jsbundleUrl: String = null,
-    serverUrl: String = null
+    jsbundleUrl: js.UndefOr[Null | String] = js.undefined,
+    serverUrl: js.UndefOr[Null | String] = js.undefined
   ): AssetSourceResolver = {
     val __obj = js.Dynamic.literal(asset = asset.asInstanceOf[js.Any], assetServerURL = js.Any.fromFunction0(assetServerURL), defaultAsset = js.Any.fromFunction0(defaultAsset), drawableFolderInBundle = js.Any.fromFunction0(drawableFolderInBundle), fromSource = js.Any.fromFunction1(fromSource), isLoadedFromFileSystem = js.Any.fromFunction0(isLoadedFromFileSystem), isLoadedFromServer = js.Any.fromFunction0(isLoadedFromServer), resourceIdentifierWithoutScale = js.Any.fromFunction0(resourceIdentifierWithoutScale), scaledAssetPath = js.Any.fromFunction0(scaledAssetPath), scaledAssetURLNearBundle = js.Any.fromFunction0(scaledAssetURLNearBundle))
-    if (jsbundleUrl != null) __obj.updateDynamic("jsbundleUrl")(jsbundleUrl.asInstanceOf[js.Any])
-    if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsbundleUrl)) __obj.updateDynamic("jsbundleUrl")(jsbundleUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverUrl)) __obj.updateDynamic("serverUrl")(serverUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetSourceResolver]
   }
 }

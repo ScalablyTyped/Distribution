@@ -28,7 +28,7 @@ import typings.joi.mod.ValidationOptions
 import typings.joi.mod.ValidationResult
 import typings.joi.mod.WhenOptions
 import typings.joi.mod.WhenSchemaOptions
-import typings.nodeFetch.AnonSize
+import typings.nodeFetch.anon.Size
 import typings.nodeFetch.mod.BlobOptions
 import typings.nodeFetch.mod.BlobPart
 import typings.nodeFetch.mod.BodyInit
@@ -214,7 +214,7 @@ object mod extends js.Object {
     class Body ()
       extends typings.nodeFetch.mod.Body {
       def this(body: js.Any) = this()
-      def this(body: js.Any, opts: AnonSize) = this()
+      def this(body: js.Any, opts: Size) = this()
     }
     
     @js.native

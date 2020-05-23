@@ -15,8 +15,7 @@ trait SwitchDefault extends js.Object {
 object SwitchDefault {
   @scala.inline
   def apply(otherwise: SchemaLike = null): SwitchDefault = {
-    val __obj = js.Dynamic.literal()
-    if (otherwise != null) __obj.updateDynamic("otherwise")(otherwise.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(otherwise = otherwise.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchDefault]
   }
 }

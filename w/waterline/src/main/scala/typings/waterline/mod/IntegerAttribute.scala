@@ -121,10 +121,8 @@ object IntegerAttribute {
     numeric: AttributeValidation[Boolean] = null,
     primaryKey: js.UndefOr[Boolean] = js.undefined,
     regex: AttributeValidation[RegExp] = null,
-    required: js.UndefOr[
-      (Boolean | js.Function0[Boolean] | (js.Function1[/* cb */ js.Function1[Boolean, js.Any], Unit])) with Boolean
-    ] = js.undefined,
-    size: Int | Double = null,
+    required: js.UndefOr[AttributeValidation[Boolean] with Boolean] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
     string: AttributeValidation[Boolean] = null,
     truthy: AttributeValidation[Boolean] = null,
     `type`: String with integer = null,
@@ -142,7 +140,7 @@ object IntegerAttribute {
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     if (alphanumeric != null) __obj.updateDynamic("alphanumeric")(alphanumeric.asInstanceOf[js.Any])
     if (array != null) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.get.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
     if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
@@ -161,7 +159,7 @@ object IntegerAttribute {
     if (hexColor != null) __obj.updateDynamic("hexColor")(hexColor.asInstanceOf[js.Any])
     if (hexadecimal != null) __obj.updateDynamic("hexadecimal")(hexadecimal.asInstanceOf[js.Any])
     if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (int != null) __obj.updateDynamic("int")(int.asInstanceOf[js.Any])
     if (integer != null) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])
     if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
@@ -183,15 +181,15 @@ object IntegerAttribute {
     if (`null` != null) __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     if (numeric != null) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.get.asInstanceOf[js.Any])
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     if (truthy != null) __obj.updateDynamic("truthy")(truthy.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (undefined != null) __obj.updateDynamic("undefined")(undefined.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
     if (uppercase != null) __obj.updateDynamic("uppercase")(uppercase.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (urlish != null) __obj.updateDynamic("urlish")(urlish.asInstanceOf[js.Any])

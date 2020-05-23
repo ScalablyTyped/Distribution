@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Map
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object ColorPalette extends js.Object {
   //specifies the palette3 color
   @js.native
   sealed trait Palette3 extends ColorPalette
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ColorPalette with Double] = js.native
-  /* 3 */ @js.native
-  object Custompalette extends TopLevel[Custompalette with Double]
-  
-  /* 0 */ @js.native
-  object Palette1 extends TopLevel[Palette1 with Double]
-  
-  /* 1 */ @js.native
-  object Palette2 extends TopLevel[Palette2 with Double]
-  
-  /* 2 */ @js.native
-  object Palette3 extends TopLevel[Palette3 with Double]
   
 }
 

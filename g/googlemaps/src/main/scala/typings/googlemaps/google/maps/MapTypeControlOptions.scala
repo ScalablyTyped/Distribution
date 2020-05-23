@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/***** Controls *****/
 /** Options for the rendering of the map type control. */
 trait MapTypeControlOptions extends js.Object {
   /** IDs of map types to show in the control. */

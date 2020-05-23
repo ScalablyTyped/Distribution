@@ -13,8 +13,8 @@ object IGroupedListSectionState {
   @scala.inline
   def apply(isDropping: js.UndefOr[Boolean] = js.undefined, isSelected: js.UndefOr[Boolean] = js.undefined): IGroupedListSectionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDropping)) __obj.updateDynamic("isDropping")(isDropping.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDropping)) __obj.updateDynamic("isDropping")(isDropping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupedListSectionState]
   }
 }

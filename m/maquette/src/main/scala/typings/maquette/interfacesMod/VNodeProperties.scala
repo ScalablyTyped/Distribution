@@ -1,11 +1,11 @@
 package typings.maquette.interfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.maquette.PartialCSSStyleDeclaratio
+import typings.maquette.anon.PartialCSSStyleDeclaratio
 import typings.maquette.maquetteStrings.`HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`
 import typings.std.DragEvent
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -137,7 +137,7 @@ trait VNodeProperties
   val method: js.UndefOr[String] = js.undefined
   val name: js.UndefOr[String] = js.undefined
   var onblur: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.undefined
-  var onchange: js.UndefOr[js.Function1[/* ev */ Event_, Boolean | Unit]] = js.undefined
+  var onchange: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
   var onclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
   var ondblclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
   var ondrag: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
@@ -148,11 +148,11 @@ trait VNodeProperties
   var ondragstart: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
   var ondrop: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
   var onfocus: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.undefined
-  var oninput: js.UndefOr[js.Function1[/* ev */ Event_, Boolean | Unit]] = js.undefined
+  var oninput: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
   var onkeydown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.undefined
   var onkeypress: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.undefined
   var onkeyup: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.undefined
-  var onload: js.UndefOr[js.Function1[/* ev */ Event_, Boolean | Unit]] = js.undefined
+  var onload: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
   var onmousedown: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
   var onmouseenter: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
   var onmouseleave: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
@@ -162,7 +162,7 @@ trait VNodeProperties
   var onmouseup: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
   var onmousewheel: js.UndefOr[js.Function1[/* ev */ WheelEvent | MouseWheelEvent, Boolean | Unit]] = js.undefined
   var onscroll: js.UndefOr[js.Function1[/* ev */ UIEvent, Boolean | Unit]] = js.undefined
-  var onsubmit: js.UndefOr[js.Function1[/* ev */ Event_, Boolean | Unit]] = js.undefined
+  var onsubmit: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
   var ontouchcancel: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
   var ontouchend: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
   var ontouchmove: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
@@ -203,10 +203,7 @@ trait VNodeProperties
 object VNodeProperties {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Everything that is not explicitly listed (properties and attributes that are either uncommon or custom).
-    */
-  /* index */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     accessKey: String = null,
     action: String = null,
     afterCreate: (/* element */ Element, /* projectionOptions */ ProjectionOptions, /* vnodeSelector */ String, VNodeProperties, /* children */ js.UndefOr[js.Array[VNode]]) => Unit = null,
@@ -232,7 +229,7 @@ object VNodeProperties {
     method: String = null,
     name: String = null,
     onblur: /* ev */ FocusEvent => Boolean | Unit = null,
-    onchange: /* ev */ Event_ => Boolean | Unit = null,
+    onchange: /* ev */ Event => Boolean | Unit = null,
     onclick: /* ev */ MouseEvent => Boolean | Unit = null,
     ondblclick: /* ev */ MouseEvent => Boolean | Unit = null,
     ondrag: /* ev */ DragEvent => Boolean | Unit = null,
@@ -243,11 +240,11 @@ object VNodeProperties {
     ondragstart: /* ev */ DragEvent => Boolean | Unit = null,
     ondrop: /* ev */ DragEvent => Boolean | Unit = null,
     onfocus: /* ev */ FocusEvent => Boolean | Unit = null,
-    oninput: /* ev */ Event_ => Boolean | Unit = null,
+    oninput: /* ev */ Event => Boolean | Unit = null,
     onkeydown: /* ev */ KeyboardEvent => Boolean | Unit = null,
     onkeypress: /* ev */ KeyboardEvent => Boolean | Unit = null,
     onkeyup: /* ev */ KeyboardEvent => Boolean | Unit = null,
-    onload: /* ev */ Event_ => Boolean | Unit = null,
+    onload: /* ev */ Event => Boolean | Unit = null,
     onmousedown: /* ev */ MouseEvent => Boolean | Unit = null,
     onmouseenter: /* ev */ MouseEvent => Boolean | Unit = null,
     onmouseleave: /* ev */ MouseEvent => Boolean | Unit = null,
@@ -257,7 +254,7 @@ object VNodeProperties {
     onmouseup: /* ev */ MouseEvent => Boolean | Unit = null,
     onmousewheel: /* ev */ WheelEvent | MouseWheelEvent => Boolean | Unit = null,
     onscroll: /* ev */ UIEvent => Boolean | Unit = null,
-    onsubmit: /* ev */ Event_ => Boolean | Unit = null,
+    onsubmit: /* ev */ Event => Boolean | Unit = null,
     ontouchcancel: /* ev */ TouchEvent => Boolean | Unit = null,
     ontouchend: /* ev */ TouchEvent => Boolean | Unit = null,
     ontouchmove: /* ev */ TouchEvent => Boolean | Unit = null,
@@ -269,7 +266,7 @@ object VNodeProperties {
     src: String = null,
     srcset: String = null,
     styles: PartialCSSStyleDeclaratio = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     target: String = null,
     title: String = null,
     `type`: String = null,
@@ -286,12 +283,12 @@ object VNodeProperties {
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
     if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
     if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
@@ -334,13 +331,13 @@ object VNodeProperties {
     if (ontouchmove != null) __obj.updateDynamic("ontouchmove")(js.Any.fromFunction1(ontouchmove))
     if (ontouchstart != null) __obj.updateDynamic("ontouchstart")(js.Any.fromFunction1(ontouchstart))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (srcset != null) __obj.updateDynamic("srcset")(srcset.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

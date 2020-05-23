@@ -17,16 +17,16 @@ object ConnectionOptions {
   def apply(
     connect: String = null,
     data_as_buffer: js.UndefOr[Boolean] = js.undefined,
-    debug_level: Int | Double = null,
+    debug_level: js.UndefOr[Double] = js.undefined,
     host_order_deterministic: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
-    if (!js.isUndefined(data_as_buffer)) __obj.updateDynamic("data_as_buffer")(data_as_buffer.asInstanceOf[js.Any])
-    if (debug_level != null) __obj.updateDynamic("debug_level")(debug_level.asInstanceOf[js.Any])
-    if (!js.isUndefined(host_order_deterministic)) __obj.updateDynamic("host_order_deterministic")(host_order_deterministic.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(data_as_buffer)) __obj.updateDynamic("data_as_buffer")(data_as_buffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug_level)) __obj.updateDynamic("debug_level")(debug_level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(host_order_deterministic)) __obj.updateDynamic("host_order_deterministic")(host_order_deterministic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

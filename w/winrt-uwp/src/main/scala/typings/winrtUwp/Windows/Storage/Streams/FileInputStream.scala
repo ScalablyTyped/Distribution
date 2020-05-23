@@ -6,11 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Reads data from a file. */
-@JSGlobal("Windows.Storage.Streams.FileInputStream")
-@js.native
-abstract class FileInputStream () extends js.Object {
+trait FileInputStream extends js.Object {
   /** Closes the current stream and releases system resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   /**
     * Returns an asynchronous byte reader object.
     * @param buffer The buffer into which the asynchronous read operation places the bytes that are read.
@@ -18,6 +16,17 @@ abstract class FileInputStream () extends js.Object {
     * @param options Specifies the type of the asynchronous read operation.
     * @return The asynchronous operation.
     */
-  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
+}
+
+object FileInputStream {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    readAsync: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
+  ): FileInputStream = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), readAsync = js.Any.fromFunction3(readAsync))
+    __obj.asInstanceOf[FileInputStream]
+  }
 }
 

@@ -7,7 +7,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.SyntheticEvent
 import typings.std.DataTransferItem
-import typings.std.Event_
+import typings.std.Event
 import typings.std.File
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -51,9 +51,9 @@ object FileUploaderProps {
     disableClick: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     errorMessage: String = null,
-    getDataTransferItems: /* event */ SyntheticEvent[js.Any, Event_] => js.Promise[js.Array[File | DataTransferItem]] = null,
-    maxSize: Int | Double = null,
-    minSize: Int | Double = null,
+    getDataTransferItems: /* event */ SyntheticEvent[js.Any, Event] => js.Promise[js.Array[File | DataTransferItem]] = null,
+    maxSize: js.UndefOr[Double] = js.undefined,
+    minSize: js.UndefOr[Double] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onBlur: /* event */ FocusEvent[HTMLElement] => _ = null,
@@ -63,27 +63,27 @@ object FileUploaderProps {
     onDragLeave: /* event */ DragEvent[HTMLElement] => _ = null,
     onDragOver: /* event */ DragEvent[HTMLElement] => _ = null,
     onDragStart: /* event */ DragEvent[HTMLElement] => _ = null,
-    onDrop: (/* accepted */ js.Array[File], /* rejected */ js.Array[File], /* event */ SyntheticEvent[HTMLElement, Event_]) => js.Any = null,
-    onDropAccepted: (/* acceptedOrRejected */ js.Array[File], /* event */ SyntheticEvent[HTMLElement, Event_]) => js.Any = null,
-    onDropRejected: (/* acceptedOrRejected */ js.Array[File], /* event */ SyntheticEvent[HTMLElement, Event_]) => js.Any = null,
+    onDrop: (/* accepted */ js.Array[File], /* rejected */ js.Array[File], /* event */ SyntheticEvent[HTMLElement, Event]) => js.Any = null,
+    onDropAccepted: (/* acceptedOrRejected */ js.Array[File], /* event */ SyntheticEvent[HTMLElement, Event]) => js.Any = null,
+    onDropRejected: (/* acceptedOrRejected */ js.Array[File], /* event */ SyntheticEvent[HTMLElement, Event]) => js.Any = null,
     onFileDialogCancel: () => _ = null,
     onFocus: /* event */ FocusEvent[HTMLElement] => _ = null,
     onKeyDown: /* event */ KeyboardEvent[HTMLElement] => _ = null,
     onRetry: () => _ = null,
     overrides: FileUploaderOverrides[StyleProps] = null,
     preventDropOnDocument: js.UndefOr[Boolean] = js.undefined,
-    progressAmount: Int | Double = null,
+    progressAmount: js.UndefOr[Double] = js.undefined,
     progressMessage: String = null
   ): FileUploaderProps = {
     val __obj = js.Dynamic.literal()
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableClick)) __obj.updateDynamic("disableClick")(disableClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableClick)) __obj.updateDynamic("disableClick")(disableClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (getDataTransferItems != null) __obj.updateDynamic("getDataTransferItems")(js.Any.fromFunction1(getDataTransferItems))
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
@@ -100,8 +100,8 @@ object FileUploaderProps {
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onRetry != null) __obj.updateDynamic("onRetry")(js.Any.fromFunction0(onRetry))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDropOnDocument)) __obj.updateDynamic("preventDropOnDocument")(preventDropOnDocument.asInstanceOf[js.Any])
-    if (progressAmount != null) __obj.updateDynamic("progressAmount")(progressAmount.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDropOnDocument)) __obj.updateDynamic("preventDropOnDocument")(preventDropOnDocument.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressAmount)) __obj.updateDynamic("progressAmount")(progressAmount.get.asInstanceOf[js.Any])
     if (progressMessage != null) __obj.updateDynamic("progressMessage")(progressMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUploaderProps]
   }

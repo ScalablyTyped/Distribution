@@ -1,6 +1,12 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typings.screeps.anon.Algorithm
+import typings.screeps.anon.Filter
+import typings.screeps.anon.FindPathOptsFilterOptions
+import typings.screeps.anon.FindPathOptsfilteranystri
+import typings.screeps.anon.LookAtResultLookConstant
+import typings.screeps.anon.Pos
+import typings.screeps.anon.`14`
 import typings.screeps.screepsStrings.constructionSite
 import typings.screeps.screepsStrings.creep
 import typings.screeps.screepsStrings.deposit
@@ -93,7 +99,7 @@ trait RoomPosition extends js.Object {
     * @returns An instance of a RoomObject.
     */
   def findClosestByPath[K /* <: FindConstant */](`type`: K): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
-  def findClosestByPath[K /* <: FindConstant */](`type`: K, opts: FindPathOpts with FilterOptions[K] with AnonAlgorithm): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
+  def findClosestByPath[K /* <: FindConstant */](`type`: K, opts: FindPathOpts with FilterOptions[K] with Algorithm): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): T | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, opts: FindPathOptsFilterOptions): T | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES): T | Null = js.native
@@ -106,7 +112,7 @@ trait RoomPosition extends js.Object {
     * @param opts An object containing pathfinding options (see Room.findPath), or one of the following: filter, algorithm
     */
   def findClosestByRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T]): T | Null = js.native
-  def findClosestByRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: AnonFilter): T | Null = js.native
+  def findClosestByRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: Filter): T | Null = js.native
   /**
     * Find the object with the shortest linear distance from the given position.
     * @param type Any of the FIND_* constants.
@@ -127,7 +133,7 @@ trait RoomPosition extends js.Object {
     * @param opts See Room.find.
     */
   def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double): js.Array[T] = js.native
-  def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double, opts: Anon32): js.Array[T] = js.native
+  def findInRange[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], range: Double, opts: `14`): js.Array[T] = js.native
   /**
     * Find all objects in the specified linear range.
     * @param type Any of the FIND_* constants.
@@ -179,25 +185,25 @@ trait RoomPosition extends js.Object {
     * @param y Y position in the room.
     */
   def getDirectionTo(x: Double, y: Double): DirectionConstant = js.native
-  def getRangeTo(target: AnonPos): Double = js.native
   /**
     * Get linear range to the specified position.
     * @param target Can be a RoomPosition object or any object containing RoomPosition.
     */
   def getRangeTo(target: RoomPosition): Double = js.native
+  def getRangeTo(target: Pos): Double = js.native
   /**
     * Get linear range to the specified position.
     * @param x X position in the room.
     * @param y Y position in the room.
     */
   def getRangeTo(x: Double, y: Double): Double = js.native
-  def inRangeTo(target: AnonPos, range: Double): Boolean = js.native
   /**
     * Check whether this position is in the given range of another position.
     * @param toPos The target position.
     * @param range The range distance.
     */
   def inRangeTo(target: RoomPosition, range: Double): Boolean = js.native
+  def inRangeTo(target: Pos, range: Double): Boolean = js.native
   /**
     * Check whether this position is in the given range of another position.
     * @param x X position in the room.
@@ -205,24 +211,24 @@ trait RoomPosition extends js.Object {
     * @param range The range distance.
     */
   def inRangeTo(x: Double, y: Double, range: Double): Boolean = js.native
-  def isEqualTo(target: AnonPos): Boolean = js.native
   /**
     * Check whether this position is the same as the specified position.
     * @param target Can be a RoomPosition object or any object containing RoomPosition.
     */
   def isEqualTo(target: RoomPosition): Boolean = js.native
+  def isEqualTo(target: Pos): Boolean = js.native
   /**
     * Check whether this position is the same as the specified position.
     * @param x X position in the room.
     * @param y Y position in the room.
     */
   def isEqualTo(x: Double, y: Double): Boolean = js.native
-  def isNearTo(target: AnonPos): Boolean = js.native
   /**
     * Check whether this position is on the adjacent square to the specified position. The same as inRangeTo(target, 1).
     * @param target Can be a RoomPosition object or any object containing RoomPosition.
     */
   def isNearTo(target: RoomPosition): Boolean = js.native
+  def isNearTo(target: Pos): Boolean = js.native
   /**
     * Check whether this position is on the adjacent square to the specified position. The same as inRangeTo(target, 1).
     * @param x X position in the room.
@@ -268,8 +274,4 @@ trait RoomPosition extends js.Object {
   @JSName("lookFor")
   def lookFor_tombstone(`type`: tombstone): js.Array[Tombstone] = js.native
 }
-
-@JSGlobal("RoomPosition")
-@js.native
-object RoomPosition extends TopLevel[RoomPositionConstructor]
 

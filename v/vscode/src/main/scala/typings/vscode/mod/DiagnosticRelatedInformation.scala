@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 @js.native
 class DiagnosticRelatedInformation protected () extends js.Object {
   /**
-  		 * Creates a new related diagnostic information object.
-  		 *
-  		 * @param location The location.
-  		 * @param message The message.
-  		 */
+    * Creates a new related diagnostic information object.
+    *
+    * @param location The location.
+    * @param message The message.
+    */
   def this(location: Location, message: String) = this()
   /**
-  		 * The location of this related diagnostic information.
-  		 */
+    * The location of this related diagnostic information.
+    */
   var location: Location = js.native
   /**
-  		 * The message of this related diagnostic information.
-  		 */
+    * The message of this related diagnostic information.
+    */
   var message: String = js.native
 }
 

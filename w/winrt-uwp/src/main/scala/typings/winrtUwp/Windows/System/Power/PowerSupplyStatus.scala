@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System.Power
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object PowerSupplyStatus extends js.Object {
   /** The device has no power supply. */
   @js.native
   sealed trait notPresent extends PowerSupplyStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PowerSupplyStatus with Double] = js.native
-  /* 2 */ @js.native
-  object adequate extends TopLevel[adequate with Double]
-  
-  /* 1 */ @js.native
-  object inadequate extends TopLevel[inadequate with Double]
-  
-  /* 0 */ @js.native
-  object notPresent extends TopLevel[notPresent with Double]
   
 }
 

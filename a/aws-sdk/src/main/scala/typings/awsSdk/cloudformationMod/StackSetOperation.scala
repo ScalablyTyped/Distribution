@@ -67,7 +67,7 @@ object StackSetOperation {
     ExecutionRoleName: ExecutionRoleName = null,
     OperationId: ClientRequestToken = null,
     OperationPreferences: StackSetOperationPreferences = null,
-    RetainStacks: js.UndefOr[Boolean] = js.undefined,
+    RetainStacks: js.UndefOr[RetainStacksNullable] = js.undefined,
     StackSetDriftDetectionDetails: StackSetDriftDetectionDetails = null,
     StackSetId: StackSetId = null,
     Status: StackSetOperationStatus = null
@@ -81,7 +81,7 @@ object StackSetOperation {
     if (ExecutionRoleName != null) __obj.updateDynamic("ExecutionRoleName")(ExecutionRoleName.asInstanceOf[js.Any])
     if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
     if (OperationPreferences != null) __obj.updateDynamic("OperationPreferences")(OperationPreferences.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetainStacks)) __obj.updateDynamic("RetainStacks")(RetainStacks.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetainStacks)) __obj.updateDynamic("RetainStacks")(RetainStacks.get.asInstanceOf[js.Any])
     if (StackSetDriftDetectionDetails != null) __obj.updateDynamic("StackSetDriftDetectionDetails")(StackSetDriftDetectionDetails.asInstanceOf[js.Any])
     if (StackSetId != null) __obj.updateDynamic("StackSetId")(StackSetId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

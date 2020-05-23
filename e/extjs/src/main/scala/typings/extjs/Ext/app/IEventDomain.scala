@@ -13,16 +13,16 @@ trait IEventDomain extends IBase {
   /** [Property] (Object) */
   var instances: js.UndefOr[js.Any] = js.undefined
   /** [Method] This method matches the firer of the event the target to the given selector
-  		* @param target Object The firer of the event.
-  		* @param selector String The selector to which to match the target.
-  		* @returns Boolean true if the target matches the selector.
-  		*/
+    * @param target Object The firer of the event.
+    * @param selector String The selector to which to match the target.
+    * @returns Boolean true if the target matches the selector.
+    */
   var `match`: js.UndefOr[
     js.Function2[/* target */ js.UndefOr[js.Any], /* selector */ js.UndefOr[String], Boolean]
   ] = js.undefined
   /** [Method] This method is called by the derived class to monitor fireEvent calls
-  		* @param observable Ext.Class The Observable to monitor for events.
-  		*/
+    * @param observable Ext.Class The Observable to monitor for events.
+    */
   var monitor: js.UndefOr[js.Function1[/* observable */ js.UndefOr[IClass], Unit]] = js.undefined
 }
 
@@ -68,7 +68,7 @@ object IEventDomain {
     if (monitor != null) __obj.updateDynamic("monitor")(js.Any.fromFunction1(monitor))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEventDomain]

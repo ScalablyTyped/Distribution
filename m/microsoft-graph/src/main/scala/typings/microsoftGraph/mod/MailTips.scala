@@ -51,27 +51,27 @@ object MailTips {
     deliveryRestricted: js.UndefOr[Boolean] = js.undefined,
     emailAddress: EmailAddress = null,
     error: MailTipsError = null,
-    externalMemberCount: Int | Double = null,
+    externalMemberCount: js.UndefOr[Double] = js.undefined,
     isModerated: js.UndefOr[Boolean] = js.undefined,
     mailboxFull: js.UndefOr[Boolean] = js.undefined,
-    maxMessageSize: Int | Double = null,
+    maxMessageSize: js.UndefOr[Double] = js.undefined,
     recipientScope: RecipientScopeType = null,
     recipientSuggestions: js.Array[Recipient] = null,
-    totalMemberCount: Int | Double = null
+    totalMemberCount: js.UndefOr[Double] = js.undefined
   ): MailTips = {
     val __obj = js.Dynamic.literal()
     if (automaticReplies != null) __obj.updateDynamic("automaticReplies")(automaticReplies.asInstanceOf[js.Any])
     if (customMailTip != null) __obj.updateDynamic("customMailTip")(customMailTip.asInstanceOf[js.Any])
-    if (!js.isUndefined(deliveryRestricted)) __obj.updateDynamic("deliveryRestricted")(deliveryRestricted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deliveryRestricted)) __obj.updateDynamic("deliveryRestricted")(deliveryRestricted.get.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (externalMemberCount != null) __obj.updateDynamic("externalMemberCount")(externalMemberCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(isModerated)) __obj.updateDynamic("isModerated")(isModerated.asInstanceOf[js.Any])
-    if (!js.isUndefined(mailboxFull)) __obj.updateDynamic("mailboxFull")(mailboxFull.asInstanceOf[js.Any])
-    if (maxMessageSize != null) __obj.updateDynamic("maxMessageSize")(maxMessageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalMemberCount)) __obj.updateDynamic("externalMemberCount")(externalMemberCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModerated)) __obj.updateDynamic("isModerated")(isModerated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailboxFull)) __obj.updateDynamic("mailboxFull")(mailboxFull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessageSize)) __obj.updateDynamic("maxMessageSize")(maxMessageSize.get.asInstanceOf[js.Any])
     if (recipientScope != null) __obj.updateDynamic("recipientScope")(recipientScope.asInstanceOf[js.Any])
     if (recipientSuggestions != null) __obj.updateDynamic("recipientSuggestions")(recipientSuggestions.asInstanceOf[js.Any])
-    if (totalMemberCount != null) __obj.updateDynamic("totalMemberCount")(totalMemberCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalMemberCount)) __obj.updateDynamic("totalMemberCount")(totalMemberCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailTips]
   }
 }

@@ -1,5 +1,7 @@
 package typings.prompts.mod
 
+import typings.node.streamMod.Readable
+import typings.node.streamMod.Writable
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +24,9 @@ trait PromptObject[T /* <: String */] extends js.Object {
   var name: ValueOrFunc[T]
   var onState: js.UndefOr[PrevCaller[T, Unit]] = js.undefined
   var round: js.UndefOr[Double] = js.undefined
-  var seperator: js.UndefOr[String] = js.undefined
+  var separator: js.UndefOr[String] = js.undefined
+  var stdin: js.UndefOr[Readable] = js.undefined
+  var stdout: js.UndefOr[Writable] = js.undefined
   var style: js.UndefOr[String] = js.undefined
   var suggest: js.UndefOr[js.Function2[/* input */ js.Any, /* choices */ js.Array[Choice], js.Promise[_]]] = js.undefined
   var `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])
@@ -31,7 +35,7 @@ trait PromptObject[T /* <: String */] extends js.Object {
 
 object PromptObject {
   @scala.inline
-  def apply[T /* <: String */](
+  def apply[T](
     name: ValueOrFunc[T],
     active: String = null,
     choices: js.Array[Choice] = null,
@@ -39,41 +43,45 @@ object PromptObject {
     format: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit = null,
     hint: String = null,
     inactive: String = null,
-    increment: Int | Double = null,
+    increment: js.UndefOr[Double] = js.undefined,
     initial: String | Double | Boolean | Date = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     mask: String = null,
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     message: ValueOrFunc[String] = null,
-    min: Int | Double = null,
+    min: js.UndefOr[Double] = js.undefined,
     onState: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit = null,
-    round: Int | Double = null,
-    seperator: String = null,
+    round: js.UndefOr[Double] = js.undefined,
+    separator: String = null,
+    stdin: Readable = null,
+    stdout: Writable = null,
     style: String = null,
     suggest: (/* input */ js.Any, /* choices */ js.Array[Choice]) => js.Promise[_] = null,
-    `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy]) = null,
+    `type`: js.UndefOr[Null | PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])] = js.undefined,
     validate: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Boolean | String | (js.Promise[Boolean | String]) = null
   ): PromptObject[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
-    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
+    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3(format))
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     if (inactive != null) __obj.updateDynamic("inactive")(inactive.asInstanceOf[js.Any])
-    if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
+    if (!js.isUndefined(increment)) __obj.updateDynamic("increment")(increment.get.asInstanceOf[js.Any])
     if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (onState != null) __obj.updateDynamic("onState")(js.Any.fromFunction3(onState))
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (seperator != null) __obj.updateDynamic("seperator")(seperator.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
+    if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suggest != null) __obj.updateDynamic("suggest")(js.Any.fromFunction2(suggest))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction3(validate))
     __obj.asInstanceOf[PromptObject[T]]
   }

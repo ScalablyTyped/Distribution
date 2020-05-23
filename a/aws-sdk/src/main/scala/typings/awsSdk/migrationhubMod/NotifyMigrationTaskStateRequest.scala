@@ -40,10 +40,10 @@ object NotifyMigrationTaskStateRequest {
     ProgressUpdateStream: ProgressUpdateStream,
     Task: Task,
     UpdateDateTime: UpdateDateTime,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[DryRun] = js.undefined
   ): NotifyMigrationTaskStateRequest = {
     val __obj = js.Dynamic.literal(MigrationTaskName = MigrationTaskName.asInstanceOf[js.Any], NextUpdateSeconds = NextUpdateSeconds.asInstanceOf[js.Any], ProgressUpdateStream = ProgressUpdateStream.asInstanceOf[js.Any], Task = Task.asInstanceOf[js.Any], UpdateDateTime = UpdateDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyMigrationTaskStateRequest]
   }
 }

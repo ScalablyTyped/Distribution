@@ -1,13 +1,13 @@
 package typings.ioredis.mod
 
-import typings.ioredis.AnonLua
+import typings.ioredis.anon.Lua
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Commander extends js.Object {
   def createBuiltinCommand(commandName: String): js.Object
-  def defineCommand(name: String, definition: AnonLua): Unit
+  def defineCommand(name: String, definition: Lua): Unit
   def getBuiltinCommands(): js.Array[String]
   def sendCommand(): Unit
 }
@@ -16,7 +16,7 @@ object Commander {
   @scala.inline
   def apply(
     createBuiltinCommand: String => js.Object,
-    defineCommand: (String, AnonLua) => Unit,
+    defineCommand: (String, Lua) => Unit,
     getBuiltinCommands: () => js.Array[String],
     sendCommand: () => Unit
   ): Commander = {

@@ -1,13 +1,13 @@
 package typings.pgPromise.pgSubsetMod
 
-import typings.pgPromise.AnonBinary
+import typings.pgPromise.anon.Binary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IResult extends js.Object {
   var _parsers: js.Array[js.Function]
-  var _types: AnonBinary
+  var _types: Binary
   var command: String
   var fields: js.Array[IColumn]
   // properties below are not available within Native Bindings:
@@ -20,7 +20,7 @@ object IResult {
   @scala.inline
   def apply(
     _parsers: js.Array[js.Function],
-    _types: AnonBinary,
+    _types: Binary,
     command: String,
     fields: js.Array[IColumn],
     rowAsArray: Boolean,

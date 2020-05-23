@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@simonwep/selection-js" : "1.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@simonwep/selection-js" : "1.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -19,16 +19,16 @@ trait IFunctionDef extends js.Object {
 object IFunctionDef {
   @scala.inline
   def apply(
-    attr: StringDictionary[IAttrValue] = null,
-    nodeDef: js.Array[INodeDef] = null,
-    ret: StringDictionary[String] = null,
-    signature: IOpDef = null
+    attr: js.UndefOr[Null | StringDictionary[IAttrValue]] = js.undefined,
+    nodeDef: js.UndefOr[Null | js.Array[INodeDef]] = js.undefined,
+    ret: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    signature: js.UndefOr[Null | IOpDef] = js.undefined
   ): IFunctionDef = {
     val __obj = js.Dynamic.literal()
-    if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    if (nodeDef != null) __obj.updateDynamic("nodeDef")(nodeDef.asInstanceOf[js.Any])
-    if (ret != null) __obj.updateDynamic("ret")(ret.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (!js.isUndefined(attr)) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeDef)) __obj.updateDynamic("nodeDef")(nodeDef.asInstanceOf[js.Any])
+    if (!js.isUndefined(ret)) __obj.updateDynamic("ret")(ret.asInstanceOf[js.Any])
+    if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFunctionDef]
   }
 }

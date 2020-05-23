@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.TYPE_FLOAT32
-  * @type {number}
-  * @description Floating point vertex element type.
+  * Floating point vertex element type.
   */
 @JSImport("playcanvas", "TYPE_FLOAT32")
 @js.native

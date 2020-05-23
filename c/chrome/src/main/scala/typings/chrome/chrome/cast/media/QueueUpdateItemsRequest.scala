@@ -4,16 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.media.QueueUpdateItemsRequest")
-@js.native
-class QueueUpdateItemsRequest protected () extends js.Object {
-  /**
-    * @param {!Array<chrome.cast.media.QueueItem>}
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueUpdateItemsRequest
-    */
-  def this(itemsToUpdate: js.Array[QueueItem]) = this()
-  var customData: js.Object = js.native
-  var item: js.Array[QueueItem] = js.native
+trait QueueUpdateItemsRequest extends js.Object {
+  var customData: js.Object
+  var item: js.Array[QueueItem]
+}
+
+object QueueUpdateItemsRequest {
+  @scala.inline
+  def apply(customData: js.Object, item: js.Array[QueueItem]): QueueUpdateItemsRequest = {
+    val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueueUpdateItemsRequest]
+  }
 }
 

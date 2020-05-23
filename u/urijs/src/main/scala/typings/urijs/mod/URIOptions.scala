@@ -37,7 +37,7 @@ object URIOptions {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(urn)) __obj.updateDynamic("urn")(urn.asInstanceOf[js.Any])
+    if (!js.isUndefined(urn)) __obj.updateDynamic("urn")(urn.get.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[URIOptions]
   }

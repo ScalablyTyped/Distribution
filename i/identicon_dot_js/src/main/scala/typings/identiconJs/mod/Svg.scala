@@ -1,6 +1,5 @@
 package typings.identiconJs.mod
 
-import typings.identiconJs.AnonColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait Svg extends js.Object {
   var background: Color
   var foreground: Color
-  var rectangles: js.Array[AnonColor]
+  var rectangles: js.Array[typings.identiconJs.anon.Color]
   var size: Double
   /**
     * Returns a string with the structure 'rgb(r, g, b, a)'.
@@ -36,7 +35,7 @@ object Svg {
     foreground: Color,
     getBase64: () => String,
     getDump: () => String,
-    rectangles: js.Array[AnonColor],
+    rectangles: js.Array[typings.identiconJs.anon.Color],
     size: Double
   ): Svg = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], color = js.Any.fromFunction4(color), foreground = foreground.asInstanceOf[js.Any], getBase64 = js.Any.fromFunction0(getBase64), getDump = js.Any.fromFunction0(getDump), rectangles = rectangles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])

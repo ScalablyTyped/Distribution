@@ -1,6 +1,6 @@
 package typings.gapiClientBigquery.gapi.client.bigquery
 
-import typings.gapiClientBigquery.AnonDomain
+import typings.gapiClientBigquery.anon.Domain
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait Dataset extends js.Object {
     * entities: access.specialGroup: projectReaders; access.role: READER; access.specialGroup: projectWriters; access.role: WRITER; access.specialGroup:
     * projectOwners; access.role: OWNER; access.userByEmail: [dataset creator email]; access.role: OWNER;
     */
-  var access: js.UndefOr[js.Array[AnonDomain]] = js.undefined
+  var access: js.UndefOr[js.Array[Domain]] = js.undefined
   /** [Output-only] The time when this dataset was created, in milliseconds since the epoch. */
   var creationTime: js.UndefOr[String] = js.undefined
   /** [Required] A reference that identifies the dataset. */
@@ -55,7 +55,7 @@ trait Dataset extends js.Object {
 object Dataset {
   @scala.inline
   def apply(
-    access: js.Array[AnonDomain] = null,
+    access: js.Array[Domain] = null,
     creationTime: String = null,
     datasetReference: DatasetReference = null,
     defaultTableExpirationMs: String = null,

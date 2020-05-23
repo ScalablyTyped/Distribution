@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.ShouldFadeIn
 import typings.officeUiFabricReact.imageTypesMod.IImageProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
@@ -20,7 +21,7 @@ object libImageMod extends js.Object {
   @js.native
   object ImageBase extends js.Object {
     var _svgRegex: js.Any = js.native
-    var defaultProps: AnonShouldFadeIn = js.native
+    var defaultProps: ShouldFadeIn = js.native
   }
   
   @js.native

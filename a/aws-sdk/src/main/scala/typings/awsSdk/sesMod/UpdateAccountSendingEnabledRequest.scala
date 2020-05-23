@@ -14,9 +14,9 @@ trait UpdateAccountSendingEnabledRequest extends js.Object {
 
 object UpdateAccountSendingEnabledRequest {
   @scala.inline
-  def apply(Enabled: js.UndefOr[Boolean] = js.undefined): UpdateAccountSendingEnabledRequest = {
+  def apply(Enabled: js.UndefOr[Enabled] = js.undefined): UpdateAccountSendingEnabledRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAccountSendingEnabledRequest]
   }
 }

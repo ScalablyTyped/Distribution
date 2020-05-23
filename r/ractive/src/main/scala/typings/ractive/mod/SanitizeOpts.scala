@@ -15,7 +15,7 @@ object SanitizeOpts {
   @scala.inline
   def apply(elements: js.Array[String], eventAttributes: js.UndefOr[Boolean] = js.undefined): SanitizeOpts = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventAttributes)) __obj.updateDynamic("eventAttributes")(eventAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventAttributes)) __obj.updateDynamic("eventAttributes")(eventAttributes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SanitizeOpts]
   }
 }

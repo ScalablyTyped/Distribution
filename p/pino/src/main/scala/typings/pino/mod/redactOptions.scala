@@ -19,7 +19,7 @@ object redactOptions {
   ): redactOptions = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     if (censor != null) __obj.updateDynamic("censor")(censor.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[redactOptions]
   }
 }

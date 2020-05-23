@@ -5,25 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when the device is shaken.
-	 */
+  * Fired when the device is shaken.
+  */
 trait GestureShakeEvent extends GestureBaseEvent {
   /**
-  		 * Time interval since previous shake event. On iOS, this value is 0 for the first shake
-  		 * event in a series.
-  		 */
+    * Time interval since previous shake event. On iOS, this value is 0 for the first shake
+    * event in a series.
+    */
   var timestamp: Double
   /**
-  		 * Acceleration along the X axis, in Gs.
-  		 */
+    * Acceleration along the X axis, in Gs.
+    */
   var x: Double
   /**
-  		 * Acceleration along the Y axis, in Gs.
-  		 */
+    * Acceleration along the Y axis, in Gs.
+    */
   var y: Double
   /**
-  		 * Acceleration along the Z axis, in Gs.
-  		 */
+    * Acceleration along the Z axis, in Gs.
+    */
   var z: Double
 }
 

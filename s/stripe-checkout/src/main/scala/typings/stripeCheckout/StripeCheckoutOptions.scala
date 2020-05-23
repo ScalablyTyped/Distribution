@@ -37,7 +37,7 @@ object StripeCheckoutOptions {
     alipay: Boolean | auto = null,
     alipayReusable: js.UndefOr[Boolean] = js.undefined,
     allowRememberMe: js.UndefOr[Boolean] = js.undefined,
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     billingAddress: js.UndefOr[Boolean] = js.undefined,
     bitcoin: js.UndefOr[Boolean] = js.undefined,
     closed: () => Unit = null,
@@ -58,11 +58,11 @@ object StripeCheckoutOptions {
   ): StripeCheckoutOptions = {
     val __obj = js.Dynamic.literal()
     if (alipay != null) __obj.updateDynamic("alipay")(alipay.asInstanceOf[js.Any])
-    if (!js.isUndefined(alipayReusable)) __obj.updateDynamic("alipayReusable")(alipayReusable.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowRememberMe)) __obj.updateDynamic("allowRememberMe")(allowRememberMe.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (!js.isUndefined(billingAddress)) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(bitcoin)) __obj.updateDynamic("bitcoin")(bitcoin.asInstanceOf[js.Any])
+    if (!js.isUndefined(alipayReusable)) __obj.updateDynamic("alipayReusable")(alipayReusable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRememberMe)) __obj.updateDynamic("allowRememberMe")(allowRememberMe.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(billingAddress)) __obj.updateDynamic("billingAddress")(billingAddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitcoin)) __obj.updateDynamic("bitcoin")(bitcoin.get.asInstanceOf[js.Any])
     if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction0(closed))
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -74,10 +74,10 @@ object StripeCheckoutOptions {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (opened != null) __obj.updateDynamic("opened")(js.Any.fromFunction0(opened))
     if (panelLabel != null) __obj.updateDynamic("panelLabel")(panelLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(shippingAddress)) __obj.updateDynamic("shippingAddress")(shippingAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(shippingAddress)) __obj.updateDynamic("shippingAddress")(shippingAddress.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(js.Any.fromFunction1(source))
     if (token != null) __obj.updateDynamic("token")(js.Any.fromFunction1(token))
-    if (!js.isUndefined(zipCode)) __obj.updateDynamic("zipCode")(zipCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(zipCode)) __obj.updateDynamic("zipCode")(zipCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeCheckoutOptions]
   }
 }

@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 
 object GetWorkerByLocationProps {
   @scala.inline
-  def apply(radius: Int | Double = null): GetWorkerByLocationProps = {
+  def apply(radius: js.UndefOr[Double] = js.undefined): GetWorkerByLocationProps = {
     val __obj = js.Dynamic.literal()
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWorkerByLocationProps]
   }
 }

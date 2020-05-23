@@ -1,10 +1,10 @@
 package typings.microsoftSdkSoap
 
-import typings.microsoftSdkSoap.mod._Global_.Sdk.Mdq.AssociatedMenuBehavior
-import typings.microsoftSdkSoap.mod._Global_.Sdk.Mdq.AssociatedMenuGroup
-import typings.microsoftSdkSoap.mod._Global_.Sdk.Mdq.CascadeType
-import typings.microsoftSdkSoap.mod._Global_.Sdk.Mdq.RelationshipType
-import typings.microsoftSdkSoap.mod._Global_.Sdk.Mdq.SecurityType
+import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AssociatedMenuBehavior
+import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AssociatedMenuGroup
+import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.CascadeType
+import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.RelationshipType
+import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.SecurityType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -134,7 +134,7 @@ object microsoftSdkSoapStrings {
   sealed trait None extends SecurityType
   
   @js.native
-  sealed trait NoneCharactertabulationOrganizationOwned extends js.Object
+  sealed trait `None    OrganizationOwned` extends js.Object
   
   @js.native
   sealed trait OneToManyRelationship extends RelationshipType
@@ -179,7 +179,7 @@ object microsoftSdkSoapStrings {
   sealed trait State extends js.Object
   
   @js.native
-  sealed trait StateTypeCharactertabulationStatusType extends js.Object
+  sealed trait `StateType    StatusType` extends js.Object
   
   @js.native
   sealed trait Status extends js.Object
@@ -188,7 +188,7 @@ object microsoftSdkSoapStrings {
   sealed trait StringType extends js.Object
   
   @js.native
-  sealed trait TeamOwnedCharactertabulationUserOwned extends js.Object
+  sealed trait `TeamOwned    UserOwned` extends js.Object
   
   @js.native
   sealed trait Uniqueidentifier extends js.Object
@@ -297,7 +297,7 @@ object microsoftSdkSoapStrings {
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
-  def NoneCharactertabulationOrganizationOwned: NoneCharactertabulationOrganizationOwned = "None\tOrganizationOwned".asInstanceOf[NoneCharactertabulationOrganizationOwned]
+  def `None    OrganizationOwned`: `None    OrganizationOwned` = ("None    OrganizationOwned").asInstanceOf[`None    OrganizationOwned`]
   @scala.inline
   def OneToManyRelationship: OneToManyRelationship = "OneToManyRelationship".asInstanceOf[OneToManyRelationship]
   @scala.inline
@@ -327,13 +327,13 @@ object microsoftSdkSoapStrings {
   @scala.inline
   def State: State = "State".asInstanceOf[State]
   @scala.inline
-  def StateTypeCharactertabulationStatusType: StateTypeCharactertabulationStatusType = "StateType\tStatusType".asInstanceOf[StateTypeCharactertabulationStatusType]
+  def `StateType    StatusType`: `StateType    StatusType` = ("StateType    StatusType").asInstanceOf[`StateType    StatusType`]
   @scala.inline
   def Status: Status = "Status".asInstanceOf[Status]
   @scala.inline
   def StringType: StringType = "StringType".asInstanceOf[StringType]
   @scala.inline
-  def TeamOwnedCharactertabulationUserOwned: TeamOwnedCharactertabulationUserOwned = "TeamOwned\tUserOwned".asInstanceOf[TeamOwnedCharactertabulationUserOwned]
+  def `TeamOwned    UserOwned`: `TeamOwned    UserOwned` = ("TeamOwned    UserOwned").asInstanceOf[`TeamOwned    UserOwned`]
   @scala.inline
   def Uniqueidentifier: Uniqueidentifier = "Uniqueidentifier".asInstanceOf[Uniqueidentifier]
   @scala.inline

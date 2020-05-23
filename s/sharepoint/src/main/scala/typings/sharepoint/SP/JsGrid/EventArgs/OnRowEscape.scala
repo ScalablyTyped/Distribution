@@ -5,10 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.OnRowEscape")
-@js.native
-class OnRowEscape protected () extends IEventArgs {
-  def this(recordKey: Double) = this()
-  var recordKey: Double = js.native
+trait OnRowEscape extends IEventArgs {
+  var recordKey: Double
+}
+
+object OnRowEscape {
+  @scala.inline
+  def apply(recordKey: Double): OnRowEscape = {
+    val __obj = js.Dynamic.literal(recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnRowEscape]
+  }
 }
 

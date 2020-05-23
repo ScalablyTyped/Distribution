@@ -4,12 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.SVGAnimatedInteger")
-@js.native
-class SVGAnimatedInteger protected () extends js.Object {
+trait SVGAnimatedInteger extends js.Object {
   @JSName("MSHTML.SVGAnimatedInteger_typekey")
-  var MSHTMLDotSVGAnimatedInteger_typekey: SVGAnimatedInteger = js.native
-  var animVal: Double = js.native
-  var baseVal: Double = js.native
+  var MSHTMLDotSVGAnimatedInteger_typekey: SVGAnimatedInteger
+  var animVal: Double
+  var baseVal: Double
+}
+
+object SVGAnimatedInteger {
+  @scala.inline
+  def apply(MSHTMLDotSVGAnimatedInteger_typekey: SVGAnimatedInteger, animVal: Double, baseVal: Double): SVGAnimatedInteger = {
+    val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.SVGAnimatedInteger_typekey")(MSHTMLDotSVGAnimatedInteger_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGAnimatedInteger]
+  }
 }
 

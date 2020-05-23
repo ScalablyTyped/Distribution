@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.async
 import typings.std.stdStrings.auto
 import typings.std.stdStrings.sync
@@ -128,8 +127,4 @@ trait HTMLImageElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("HTMLImageElement")
-@js.native
-object HTMLImageElement extends Instantiable0[HTMLImageElement]
 

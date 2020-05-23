@@ -14,9 +14,9 @@ trait HSLA extends js.Object {
 
 object HSLA {
   @scala.inline
-  def apply(h: Double, l: Double, s: Double, a: Int | Double = null): HSLA = {
+  def apply(h: Double, l: Double, s: Double, a: js.UndefOr[Double] = js.undefined): HSLA = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
+    if (!js.isUndefined(a)) __obj.updateDynamic("a")(a.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HSLA]
   }
 }

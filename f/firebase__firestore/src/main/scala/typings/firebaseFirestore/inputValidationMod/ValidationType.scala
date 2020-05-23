@@ -17,20 +17,18 @@ trait ValidationType extends js.Object
 
 object ValidationType {
   @scala.inline
-  def boolean: typings.firebaseFirestore.firebaseFirestoreStrings.boolean = this.cast("boolean")
+  def boolean: typings.firebaseFirestore.firebaseFirestoreStrings.boolean = "boolean".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.boolean]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def function: typings.firebaseFirestore.firebaseFirestoreStrings.function = "function".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.function]
   @scala.inline
-  def function: typings.firebaseFirestore.firebaseFirestoreStrings.function = this.cast("function")
+  def `non-empty string`: typings.firebaseFirestore.firebaseFirestoreStrings.`non-empty string` = ("non-empty string").asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`non-empty string`]
   @scala.inline
-  def `non-empty string`: typings.firebaseFirestore.firebaseFirestoreStrings.`non-empty string` = this.cast("non-empty string")
+  def number: typings.firebaseFirestore.firebaseFirestoreStrings.number = "number".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.number]
   @scala.inline
-  def number: typings.firebaseFirestore.firebaseFirestoreStrings.number = this.cast("number")
+  def `object`: typings.firebaseFirestore.firebaseFirestoreStrings.`object` = "object".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`object`]
   @scala.inline
-  def `object`: typings.firebaseFirestore.firebaseFirestoreStrings.`object` = this.cast("object")
+  def string: typings.firebaseFirestore.firebaseFirestoreStrings.string = "string".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.string]
   @scala.inline
-  def string: typings.firebaseFirestore.firebaseFirestoreStrings.string = this.cast("string")
-  @scala.inline
-  def undefined: typings.firebaseFirestore.firebaseFirestoreStrings.undefined = this.cast("undefined")
+  def undefined: typings.firebaseFirestore.firebaseFirestoreStrings.undefined = "undefined".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.undefined]
 }
 

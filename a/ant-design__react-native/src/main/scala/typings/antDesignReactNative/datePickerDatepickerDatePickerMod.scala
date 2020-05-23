@@ -1,8 +1,13 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.Cols
+import typings.antDesignReactNative.anon.ColsValue
+import typings.antDesignReactNative.anon.Date
+import typings.antDesignReactNative.anon.DefaultDate
+import typings.antDesignReactNative.anon.Key
+import typings.antDesignReactNative.anon.Locale
 import typings.antDesignReactNative.datePickerPropsMod.DatePickerProps
 import typings.react.mod.Component
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +21,12 @@ object datePickerDatepickerDatePickerMod extends js.Object {
     var defaultMaxDate: js.Any = js.native
     var defaultMinDate: js.Any = js.native
     @JSName("state")
-    var state_DatePicker: AnonDate = js.native
+    var state_DatePicker: Date = js.native
     def clipDate(date: js.Any): js.Any = js.native
     @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MDatePicker(nextProps: AnonDefaultDate): Unit = js.native
+    def componentWillReceiveProps_MDatePicker(nextProps: DefaultDate): Unit = js.native
     def getDate(): js.Any = js.native
-    def getDateData(): js.Array[AnonKey] = js.native
+    def getDateData(): js.Array[Key] = js.native
     def getDefaultMaxDate(): js.Any = js.native
     def getDefaultMinDate(): js.Any = js.native
     def getDisplayHour(rawHour: Double): Double = js.native
@@ -38,13 +43,13 @@ object datePickerDatepickerDatePickerMod extends js.Object {
     def getMinMonth(): js.Any = js.native
     def getMinYear(): js.Any = js.native
     def getNewDate(values: js.Any, index: js.Any): js.Any = js.native
-    def getTimeData(date: js.Any): AnonCols = js.native
+    def getTimeData(date: js.Any): Cols = js.native
     def getValue(): js.Any = js.native
-    def getValueCols(): AnonColsValue = js.native
+    def getValueCols(): ColsValue = js.native
     def onScrollChange(values: js.Any, index: js.Any): Unit = js.native
     def onValueChange(values: js.Any, index: js.Any): Unit = js.native
     def setAmPm(date: js.Any, index: js.Any): Unit = js.native
-    def setHours(date: Date, hour: Double): Unit = js.native
+    def setHours(date: typings.std.Date, hour: Double): Unit = js.native
   }
   
   @js.native
@@ -53,7 +58,7 @@ object datePickerDatepickerDatePickerMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonLocale = js.native
+    var defaultProps: Locale = js.native
   }
   
 }

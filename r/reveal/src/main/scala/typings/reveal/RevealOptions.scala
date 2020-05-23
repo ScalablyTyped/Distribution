@@ -69,7 +69,7 @@ trait RevealOptions extends js.Object {
 object RevealOptions {
   @scala.inline
   def apply(
-    autoSlide: Int | Double = null,
+    autoSlide: js.UndefOr[Double] = js.undefined,
     autoSlideMethod: js.Any = null,
     autoSlideStoppable: js.UndefOr[Boolean] = js.undefined,
     backgroundTransition: String = null,
@@ -91,10 +91,10 @@ object RevealOptions {
     mouseWheel: js.UndefOr[Boolean] = js.undefined,
     multiplex: MultiplexConfig = null,
     overview: js.UndefOr[Boolean] = js.undefined,
-    parallaxBackgroundHorizontal: Int | Double = null,
+    parallaxBackgroundHorizontal: js.UndefOr[Double] = js.undefined,
     parallaxBackgroundImage: String = null,
     parallaxBackgroundSize: String = null,
-    parallaxBackgroundVertical: Int | Double = null,
+    parallaxBackgroundVertical: js.UndefOr[Double] = js.undefined,
     postMessage: js.UndefOr[Boolean] = js.undefined,
     postMessageEvents: js.UndefOr[Boolean] = js.undefined,
     previewLinks: js.UndefOr[Boolean] = js.undefined,
@@ -108,50 +108,50 @@ object RevealOptions {
     touch: js.UndefOr[Boolean] = js.undefined,
     transition: String = null,
     transitionSpeed: String = null,
-    viewDistance: Int | Double = null,
+    viewDistance: js.UndefOr[Double] = js.undefined,
     width: Double | String = null
   ): RevealOptions = {
     val __obj = js.Dynamic.literal()
-    if (autoSlide != null) __obj.updateDynamic("autoSlide")(autoSlide.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSlide)) __obj.updateDynamic("autoSlide")(autoSlide.get.asInstanceOf[js.Any])
     if (autoSlideMethod != null) __obj.updateDynamic("autoSlideMethod")(autoSlideMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSlideStoppable)) __obj.updateDynamic("autoSlideStoppable")(autoSlideStoppable.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSlideStoppable)) __obj.updateDynamic("autoSlideStoppable")(autoSlideStoppable.get.asInstanceOf[js.Any])
     if (backgroundTransition != null) __obj.updateDynamic("backgroundTransition")(backgroundTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(embedded)) __obj.updateDynamic("embedded")(embedded.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragments)) __obj.updateDynamic("fragments")(fragments.asInstanceOf[js.Any])
+    if (!js.isUndefined(embedded)) __obj.updateDynamic("embedded")(embedded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragments)) __obj.updateDynamic("fragments")(fragments.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideAddressBar)) __obj.updateDynamic("hideAddressBar")(hideAddressBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideAddressBar)) __obj.updateDynamic("hideAddressBar")(hideAddressBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
     if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (math != null) __obj.updateDynamic("math")(math.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseWheel)) __obj.updateDynamic("mouseWheel")(mouseWheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseWheel)) __obj.updateDynamic("mouseWheel")(mouseWheel.get.asInstanceOf[js.Any])
     if (multiplex != null) __obj.updateDynamic("multiplex")(multiplex.asInstanceOf[js.Any])
-    if (!js.isUndefined(overview)) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
-    if (parallaxBackgroundHorizontal != null) __obj.updateDynamic("parallaxBackgroundHorizontal")(parallaxBackgroundHorizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(overview)) __obj.updateDynamic("overview")(overview.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallaxBackgroundHorizontal)) __obj.updateDynamic("parallaxBackgroundHorizontal")(parallaxBackgroundHorizontal.get.asInstanceOf[js.Any])
     if (parallaxBackgroundImage != null) __obj.updateDynamic("parallaxBackgroundImage")(parallaxBackgroundImage.asInstanceOf[js.Any])
     if (parallaxBackgroundSize != null) __obj.updateDynamic("parallaxBackgroundSize")(parallaxBackgroundSize.asInstanceOf[js.Any])
-    if (parallaxBackgroundVertical != null) __obj.updateDynamic("parallaxBackgroundVertical")(parallaxBackgroundVertical.asInstanceOf[js.Any])
-    if (!js.isUndefined(postMessage)) __obj.updateDynamic("postMessage")(postMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(postMessageEvents)) __obj.updateDynamic("postMessageEvents")(postMessageEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(previewLinks)) __obj.updateDynamic("previewLinks")(previewLinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (!js.isUndefined(rollingLinks)) __obj.updateDynamic("rollingLinks")(rollingLinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNotes)) __obj.updateDynamic("showNotes")(showNotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallaxBackgroundVertical)) __obj.updateDynamic("parallaxBackgroundVertical")(parallaxBackgroundVertical.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(postMessage)) __obj.updateDynamic("postMessage")(postMessage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(postMessageEvents)) __obj.updateDynamic("postMessageEvents")(postMessageEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(previewLinks)) __obj.updateDynamic("previewLinks")(previewLinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollingLinks)) __obj.updateDynamic("rollingLinks")(rollingLinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNotes)) __obj.updateDynamic("showNotes")(showNotes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.get.asInstanceOf[js.Any])
     if (slideNumber != null) __obj.updateDynamic("slideNumber")(slideNumber.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.get.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (transitionSpeed != null) __obj.updateDynamic("transitionSpeed")(transitionSpeed.asInstanceOf[js.Any])
-    if (viewDistance != null) __obj.updateDynamic("viewDistance")(viewDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewDistance)) __obj.updateDynamic("viewDistance")(viewDistance.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevealOptions]
   }

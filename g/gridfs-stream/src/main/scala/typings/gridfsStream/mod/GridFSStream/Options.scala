@@ -20,7 +20,7 @@ object Options {
   @scala.inline
   def apply(
     _id: String = null,
-    chunkSize: Int | Double = null,
+    chunkSize: js.UndefOr[Double] = js.undefined,
     content_type: String = null,
     filename: String = null,
     metadata: js.Any = null,
@@ -30,7 +30,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
     if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])

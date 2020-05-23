@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ConditionalRangeFormatData
 import typings.officeJsPreview.Excel.Interfaces.ConditionalRangeFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ConditionalRangeFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.ConditionalRangeFormat")
 @js.native
-class ConditionalRangeFormat () extends ClientObject {
+trait ConditionalRangeFormat extends ClientObject {
   /**
     *
-    * Collection of border objects that apply to the overall conditional format range. Read-only.
+    * Collection of border objects that apply to the overall conditional format range.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -31,14 +30,14 @@ class ConditionalRangeFormat () extends ClientObject {
   var context_ConditionalRangeFormat: RequestContext = js.native
   /**
     *
-    * Returns the fill object defined on the overall conditional format range. Read-only.
+    * Returns the fill object defined on the overall conditional format range.
     *
     * [Api set: ExcelApi 1.6]
     */
   val fill: ConditionalRangeFill = js.native
   /**
     *
-    * Returns the font object defined on the overall conditional format range. Read-only.
+    * Returns the font object defined on the overall conditional format range.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -57,7 +56,7 @@ class ConditionalRangeFormat () extends ClientObject {
     */
   def load(): ConditionalRangeFormat = js.native
   def load(options: ConditionalRangeFormatLoadOptions): ConditionalRangeFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ConditionalRangeFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ConditionalRangeFormat = js.native
   def load(propertyNames: String): ConditionalRangeFormat = js.native
   def load(propertyNames: js.Array[String]): ConditionalRangeFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

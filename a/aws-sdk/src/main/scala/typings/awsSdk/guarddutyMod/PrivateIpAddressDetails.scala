@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PrivateIpAddressDetails extends js.Object {
   /**
-    * Private DNS name of the EC2 instance.
+    * The private DNS name of the EC2 instance.
     */
   var PrivateDnsName: js.UndefOr[String] = js.native
   /**
-    * Private IP address of the EC2 instance.
+    * The private IP address of the EC2 instance.
     */
   var PrivateIpAddress: js.UndefOr[String] = js.native
 }

@@ -85,17 +85,14 @@ object KiiThingFields {
   def apply(
     _password: String,
     _vendorThingID: String,
-    StringDictionary: /**
-    * custom fields.
-    */
-  /* name */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     _firmwareVersion: String = null,
     _lot: String = null,
-    _numberField1: Int | Double = null,
-    _numberField2: Int | Double = null,
-    _numberField3: Int | Double = null,
-    _numberField4: Int | Double = null,
-    _numberField5: Int | Double = null,
+    _numberField1: js.UndefOr[Double] = js.undefined,
+    _numberField2: js.UndefOr[Double] = js.undefined,
+    _numberField3: js.UndefOr[Double] = js.undefined,
+    _numberField4: js.UndefOr[Double] = js.undefined,
+    _numberField5: js.UndefOr[Double] = js.undefined,
     _productName: String = null,
     _stringField1: String = null,
     _stringField2: String = null,
@@ -109,11 +106,11 @@ object KiiThingFields {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_firmwareVersion != null) __obj.updateDynamic("_firmwareVersion")(_firmwareVersion.asInstanceOf[js.Any])
     if (_lot != null) __obj.updateDynamic("_lot")(_lot.asInstanceOf[js.Any])
-    if (_numberField1 != null) __obj.updateDynamic("_numberField1")(_numberField1.asInstanceOf[js.Any])
-    if (_numberField2 != null) __obj.updateDynamic("_numberField2")(_numberField2.asInstanceOf[js.Any])
-    if (_numberField3 != null) __obj.updateDynamic("_numberField3")(_numberField3.asInstanceOf[js.Any])
-    if (_numberField4 != null) __obj.updateDynamic("_numberField4")(_numberField4.asInstanceOf[js.Any])
-    if (_numberField5 != null) __obj.updateDynamic("_numberField5")(_numberField5.asInstanceOf[js.Any])
+    if (!js.isUndefined(_numberField1)) __obj.updateDynamic("_numberField1")(_numberField1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(_numberField2)) __obj.updateDynamic("_numberField2")(_numberField2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(_numberField3)) __obj.updateDynamic("_numberField3")(_numberField3.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(_numberField4)) __obj.updateDynamic("_numberField4")(_numberField4.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(_numberField5)) __obj.updateDynamic("_numberField5")(_numberField5.get.asInstanceOf[js.Any])
     if (_productName != null) __obj.updateDynamic("_productName")(_productName.asInstanceOf[js.Any])
     if (_stringField1 != null) __obj.updateDynamic("_stringField1")(_stringField1.asInstanceOf[js.Any])
     if (_stringField2 != null) __obj.updateDynamic("_stringField2")(_stringField2.asInstanceOf[js.Any])

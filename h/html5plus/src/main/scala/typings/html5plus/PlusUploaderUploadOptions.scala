@@ -48,7 +48,7 @@ trait PlusUploaderUploadOptions extends js.Object {
   /**
     * 上传任务超时时间
     * 数值类型，单位为s(秒)，默认值为120s。
-    * 	超时时间为服务器响应请求的时间（不是上传任务完成的总时间），如果设置为0则表示永远不超时。
+    *     超时时间为服务器响应请求的时间（不是上传任务完成的总时间），如果设置为0则表示永远不超时。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
@@ -58,20 +58,20 @@ trait PlusUploaderUploadOptions extends js.Object {
 object PlusUploaderUploadOptions {
   @scala.inline
   def apply(
-    blocksize: Int | Double = null,
+    blocksize: js.UndefOr[Double] = js.undefined,
     method: String = null,
-    priority: Int | Double = null,
-    retry: Int | Double = null,
-    retryInterval: Int | Double = null,
-    timeout: Int | Double = null
+    priority: js.UndefOr[Double] = js.undefined,
+    retry: js.UndefOr[Double] = js.undefined,
+    retryInterval: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): PlusUploaderUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (blocksize != null) __obj.updateDynamic("blocksize")(blocksize.asInstanceOf[js.Any])
+    if (!js.isUndefined(blocksize)) __obj.updateDynamic("blocksize")(blocksize.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (retryInterval != null) __obj.updateDynamic("retryInterval")(retryInterval.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryInterval)) __obj.updateDynamic("retryInterval")(retryInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusUploaderUploadOptions]
   }
 }

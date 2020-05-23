@@ -28,7 +28,7 @@ trait IOptions[T /* <: Widget */]
 
 object IOptions {
   @scala.inline
-  def apply[T /* <: Widget */](
+  def apply[T](
     content: T,
     node: HTMLElement = null,
     reveal: js.Promise[_] = null,

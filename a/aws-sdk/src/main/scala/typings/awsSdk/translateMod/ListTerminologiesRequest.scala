@@ -18,9 +18,9 @@ trait ListTerminologiesRequest extends js.Object {
 
 object ListTerminologiesRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null): ListTerminologiesRequest = {
+  def apply(MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined, NextToken: NextToken = null): ListTerminologiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTerminologiesRequest]
   }

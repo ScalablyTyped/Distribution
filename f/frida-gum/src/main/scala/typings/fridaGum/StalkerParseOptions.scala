@@ -21,8 +21,8 @@ object StalkerParseOptions {
   @scala.inline
   def apply(annotate: js.UndefOr[Boolean] = js.undefined, stringify: js.UndefOr[Boolean] = js.undefined): StalkerParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(annotate)) __obj.updateDynamic("annotate")(annotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotate)) __obj.updateDynamic("annotate")(annotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StalkerParseOptions]
   }
 }

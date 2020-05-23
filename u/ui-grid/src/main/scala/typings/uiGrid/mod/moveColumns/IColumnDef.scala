@@ -15,7 +15,7 @@ object IColumnDef {
   @scala.inline
   def apply(enableColumnMoving: js.UndefOr[Boolean] = js.undefined): IColumnDef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDef]
   }
 }

@@ -14,7 +14,7 @@ object GetTableServerSideEncryption {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, kmsKeyArn: String = null): GetTableServerSideEncryption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTableServerSideEncryption]
   }

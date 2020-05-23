@@ -10,9 +10,9 @@ trait PlotTilemapStatesHoverHaloAttributesOptions extends js.Object {
 
 object PlotTilemapStatesHoverHaloAttributesOptions {
   @scala.inline
-  def apply(zIndex: Int | Double = null): PlotTilemapStatesHoverHaloAttributesOptions = {
+  def apply(zIndex: js.UndefOr[Double] = js.undefined): PlotTilemapStatesHoverHaloAttributesOptions = {
     val __obj = js.Dynamic.literal()
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTilemapStatesHoverHaloAttributesOptions]
   }
 }

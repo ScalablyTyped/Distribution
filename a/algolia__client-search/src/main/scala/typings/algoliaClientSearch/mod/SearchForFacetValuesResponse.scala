@@ -8,15 +8,15 @@ trait SearchForFacetValuesResponse extends js.Object {
   /**
     * The exhaustive facets count.
     */
-  val exhaustiveFacetsCount: Boolean
+  var exhaustiveFacetsCount: Boolean
   /**
     * The list of facet hits.
     */
-  val facetHits: js.Array[FacetHit]
+  var facetHits: js.Array[FacetHit]
   /**
     * The time that the API toke the process the request.
     */
-  val processingTimeMS: js.UndefOr[Double] = js.undefined
+  var processingTimeMS: js.UndefOr[Double] = js.undefined
 }
 
 object SearchForFacetValuesResponse {
@@ -24,10 +24,10 @@ object SearchForFacetValuesResponse {
   def apply(
     exhaustiveFacetsCount: Boolean,
     facetHits: js.Array[FacetHit],
-    processingTimeMS: Int | Double = null
+    processingTimeMS: js.UndefOr[Double] = js.undefined
   ): SearchForFacetValuesResponse = {
     val __obj = js.Dynamic.literal(exhaustiveFacetsCount = exhaustiveFacetsCount.asInstanceOf[js.Any], facetHits = facetHits.asInstanceOf[js.Any])
-    if (processingTimeMS != null) __obj.updateDynamic("processingTimeMS")(processingTimeMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(processingTimeMS)) __obj.updateDynamic("processingTimeMS")(processingTimeMS.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchForFacetValuesResponse]
   }
 }

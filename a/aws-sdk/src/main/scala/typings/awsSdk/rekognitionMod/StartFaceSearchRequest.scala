@@ -38,13 +38,13 @@ object StartFaceSearchRequest {
     CollectionId: CollectionId,
     Video: Video,
     ClientRequestToken: ClientRequestToken = null,
-    FaceMatchThreshold: Int | Double = null,
+    FaceMatchThreshold: js.UndefOr[Percent] = js.undefined,
     JobTag: JobTag = null,
     NotificationChannel: NotificationChannel = null
   ): StartFaceSearchRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], Video = Video.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (FaceMatchThreshold != null) __obj.updateDynamic("FaceMatchThreshold")(FaceMatchThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(FaceMatchThreshold)) __obj.updateDynamic("FaceMatchThreshold")(FaceMatchThreshold.get.asInstanceOf[js.Any])
     if (JobTag != null) __obj.updateDynamic("JobTag")(JobTag.asInstanceOf[js.Any])
     if (NotificationChannel != null) __obj.updateDynamic("NotificationChannel")(NotificationChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartFaceSearchRequest]

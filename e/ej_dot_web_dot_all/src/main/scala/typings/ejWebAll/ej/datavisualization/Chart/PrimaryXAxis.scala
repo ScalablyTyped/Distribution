@@ -191,12 +191,12 @@ object PrimaryXAxis {
     alignment: LabelAlignment | String = null,
     alternateGridBand: PrimaryXAxisAlternateGridBand = null,
     axisLine: PrimaryXAxisAxisLine = null,
-    columnIndex: Int | Double = null,
-    columnSpan: Int | Double = null,
-    crossesAt: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
+    columnSpan: js.UndefOr[Double] = js.undefined,
+    crossesAt: js.UndefOr[Double] = js.undefined,
     crossesInAxis: String = null,
     crosshairLabel: PrimaryXAxisCrosshairLabel = null,
-    desiredIntervals: Int | Double = null,
+    desiredIntervals: js.UndefOr[Double] = js.undefined,
     edgeLabelPlacement: EdgeLabelPlacement | String = null,
     enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.undefined,
     enableTrim: js.UndefOr[Boolean] = js.undefined,
@@ -209,23 +209,23 @@ object PrimaryXAxis {
     labelIntersectAction: LabelIntersectAction | String = null,
     labelPlacement: LabelPlacement | String = null,
     labelPosition: LabelPosition | String = null,
-    labelRotation: Int | Double = null,
-    logBase: Int | Double = null,
+    labelRotation: js.UndefOr[Double] = js.undefined,
+    logBase: js.UndefOr[Double] = js.undefined,
     majorGridLines: PrimaryXAxisMajorGridLines = null,
     majorTickLines: PrimaryXAxisMajorTickLines = null,
-    maximumLabelWidth: Int | Double = null,
-    maximumLabels: Int | Double = null,
+    maximumLabelWidth: js.UndefOr[Double] = js.undefined,
+    maximumLabels: js.UndefOr[Double] = js.undefined,
     minorGridLines: PrimaryXAxisMinorGridLines = null,
     minorTickLines: PrimaryXAxisMinorTickLines = null,
-    minorTicksPerInterval: Int | Double = null,
+    minorTicksPerInterval: js.UndefOr[Double] = js.undefined,
     multiLevelLabels: js.Array[PrimaryXAxisMultiLevelLabel] = null,
     name: String = null,
     opposedPosition: js.UndefOr[Boolean] = js.undefined,
     orientation: AxisOrientation | String = null,
-    plotOffset: Int | Double = null,
+    plotOffset: js.UndefOr[Double] = js.undefined,
     range: PrimaryXAxisRange = null,
     rangePadding: RangePadding | String = null,
-    roundingPlaces: Int | Double = null,
+    roundingPlaces: js.UndefOr[Double] = js.undefined,
     scrollbarSettings: PrimaryXAxisScrollbarSettings = null,
     showNextToAxisLine: js.UndefOr[Boolean] = js.undefined,
     stripLine: js.Array[PrimaryXAxisStripLine] = null,
@@ -233,57 +233,57 @@ object PrimaryXAxis {
     title: PrimaryXAxisTitle = null,
     valueType: ValueType | String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zoomFactor: Int | Double = null,
-    zoomPosition: Int | Double = null
+    zoomFactor: js.UndefOr[Double] = js.undefined,
+    zoomPosition: js.UndefOr[Double] = js.undefined
   ): PrimaryXAxis = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (alternateGridBand != null) __obj.updateDynamic("alternateGridBand")(alternateGridBand.asInstanceOf[js.Any])
     if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnSpan != null) __obj.updateDynamic("columnSpan")(columnSpan.asInstanceOf[js.Any])
-    if (crossesAt != null) __obj.updateDynamic("crossesAt")(crossesAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnSpan)) __obj.updateDynamic("columnSpan")(columnSpan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossesAt)) __obj.updateDynamic("crossesAt")(crossesAt.get.asInstanceOf[js.Any])
     if (crossesInAxis != null) __obj.updateDynamic("crossesInAxis")(crossesInAxis.asInstanceOf[js.Any])
     if (crosshairLabel != null) __obj.updateDynamic("crosshairLabel")(crosshairLabel.asInstanceOf[js.Any])
-    if (desiredIntervals != null) __obj.updateDynamic("desiredIntervals")(desiredIntervals.asInstanceOf[js.Any])
+    if (!js.isUndefined(desiredIntervals)) __obj.updateDynamic("desiredIntervals")(desiredIntervals.get.asInstanceOf[js.Any])
     if (edgeLabelPlacement != null) __obj.updateDynamic("edgeLabelPlacement")(edgeLabelPlacement.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoIntervalOnZooming)) __obj.updateDynamic("enableAutoIntervalOnZooming")(enableAutoIntervalOnZooming.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoIntervalOnZooming)) __obj.updateDynamic("enableAutoIntervalOnZooming")(enableAutoIntervalOnZooming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (intervalType != null) __obj.updateDynamic("intervalType")(intervalType.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIndexed)) __obj.updateDynamic("isIndexed")(isIndexed.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInversed)) __obj.updateDynamic("isInversed")(isInversed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIndexed)) __obj.updateDynamic("isIndexed")(isIndexed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInversed)) __obj.updateDynamic("isInversed")(isInversed.get.asInstanceOf[js.Any])
     if (labelBorder != null) __obj.updateDynamic("labelBorder")(labelBorder.asInstanceOf[js.Any])
     if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat.asInstanceOf[js.Any])
     if (labelIntersectAction != null) __obj.updateDynamic("labelIntersectAction")(labelIntersectAction.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    if (labelRotation != null) __obj.updateDynamic("labelRotation")(labelRotation.asInstanceOf[js.Any])
-    if (logBase != null) __obj.updateDynamic("logBase")(logBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelRotation)) __obj.updateDynamic("labelRotation")(labelRotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logBase)) __obj.updateDynamic("logBase")(logBase.get.asInstanceOf[js.Any])
     if (majorGridLines != null) __obj.updateDynamic("majorGridLines")(majorGridLines.asInstanceOf[js.Any])
     if (majorTickLines != null) __obj.updateDynamic("majorTickLines")(majorTickLines.asInstanceOf[js.Any])
-    if (maximumLabelWidth != null) __obj.updateDynamic("maximumLabelWidth")(maximumLabelWidth.asInstanceOf[js.Any])
-    if (maximumLabels != null) __obj.updateDynamic("maximumLabels")(maximumLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumLabelWidth)) __obj.updateDynamic("maximumLabelWidth")(maximumLabelWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumLabels)) __obj.updateDynamic("maximumLabels")(maximumLabels.get.asInstanceOf[js.Any])
     if (minorGridLines != null) __obj.updateDynamic("minorGridLines")(minorGridLines.asInstanceOf[js.Any])
     if (minorTickLines != null) __obj.updateDynamic("minorTickLines")(minorTickLines.asInstanceOf[js.Any])
-    if (minorTicksPerInterval != null) __obj.updateDynamic("minorTicksPerInterval")(minorTicksPerInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTicksPerInterval)) __obj.updateDynamic("minorTicksPerInterval")(minorTicksPerInterval.get.asInstanceOf[js.Any])
     if (multiLevelLabels != null) __obj.updateDynamic("multiLevelLabels")(multiLevelLabels.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(opposedPosition)) __obj.updateDynamic("opposedPosition")(opposedPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(opposedPosition)) __obj.updateDynamic("opposedPosition")(opposedPosition.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (plotOffset != null) __obj.updateDynamic("plotOffset")(plotOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(plotOffset)) __obj.updateDynamic("plotOffset")(plotOffset.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (rangePadding != null) __obj.updateDynamic("rangePadding")(rangePadding.asInstanceOf[js.Any])
-    if (roundingPlaces != null) __obj.updateDynamic("roundingPlaces")(roundingPlaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundingPlaces)) __obj.updateDynamic("roundingPlaces")(roundingPlaces.get.asInstanceOf[js.Any])
     if (scrollbarSettings != null) __obj.updateDynamic("scrollbarSettings")(scrollbarSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNextToAxisLine)) __obj.updateDynamic("showNextToAxisLine")(showNextToAxisLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNextToAxisLine)) __obj.updateDynamic("showNextToAxisLine")(showNextToAxisLine.get.asInstanceOf[js.Any])
     if (stripLine != null) __obj.updateDynamic("stripLine")(stripLine.asInstanceOf[js.Any])
     if (tickLinesPosition != null) __obj.updateDynamic("tickLinesPosition")(tickLinesPosition.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
-    if (zoomPosition != null) __obj.updateDynamic("zoomPosition")(zoomPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomFactor)) __obj.updateDynamic("zoomFactor")(zoomFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomPosition)) __obj.updateDynamic("zoomPosition")(zoomPosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryXAxis]
   }
 }

@@ -107,18 +107,18 @@ object DataGroupingOptionsObject {
     enabled: js.UndefOr[Boolean] = js.undefined,
     forced: js.UndefOr[Boolean] = js.undefined,
     groupAll: js.UndefOr[Boolean] = js.undefined,
-    groupPixelWidth: Int | Double = null,
+    groupPixelWidth: js.UndefOr[Double] = js.undefined,
     smoothed: js.UndefOr[Boolean] = js.undefined,
     units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null
   ): DataGroupingOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (approximation != null) __obj.updateDynamic("approximation")(approximation.asInstanceOf[js.Any])
     if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(forced)) __obj.updateDynamic("forced")(forced.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupAll)) __obj.updateDynamic("groupAll")(groupAll.asInstanceOf[js.Any])
-    if (groupPixelWidth != null) __obj.updateDynamic("groupPixelWidth")(groupPixelWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothed)) __obj.updateDynamic("smoothed")(smoothed.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forced)) __obj.updateDynamic("forced")(forced.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupAll)) __obj.updateDynamic("groupAll")(groupAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupPixelWidth)) __obj.updateDynamic("groupPixelWidth")(groupPixelWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothed)) __obj.updateDynamic("smoothed")(smoothed.get.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataGroupingOptionsObject]
   }

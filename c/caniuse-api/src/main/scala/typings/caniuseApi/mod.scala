@@ -1,6 +1,7 @@
 package typings.caniuseApi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.caniuseApi.anon.A
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,6 @@ object mod extends js.Object {
   def isSupported(feature: String, browsers: js.Array[String]): Boolean = js.native
   def setBrowserScope(browserscope: String): Unit = js.native
   def setBrowserScope(browserscope: js.Array[String]): Unit = js.native
-  type BrowserSupport = StringDictionary[AnonA]
+  type BrowserSupport = StringDictionary[A]
 }
 

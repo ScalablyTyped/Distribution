@@ -25,7 +25,7 @@ object SurfaceProps {
     onContextRestored: /* gl */ WebGLRenderingContext => Unit = null,
     onLoad: () => Unit = null,
     onLoadError: /* e */ Error => Unit = null,
-    pixelRatio: Int | Double = null,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
     preload: js.Array[_] = null,
     style: js.Any = null,
     visitor: Visitor = null,
@@ -39,7 +39,7 @@ object SurfaceProps {
     if (onContextRestored != null) __obj.updateDynamic("onContextRestored")(js.Any.fromFunction1(onContextRestored))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
     if (onLoadError != null) __obj.updateDynamic("onLoadError")(js.Any.fromFunction1(onLoadError))
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (visitor != null) __obj.updateDynamic("visitor")(visitor.asInstanceOf[js.Any])

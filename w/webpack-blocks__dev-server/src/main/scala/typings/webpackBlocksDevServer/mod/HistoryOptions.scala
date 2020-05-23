@@ -22,11 +22,11 @@ object HistoryOptions {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): HistoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableDotRule)) __obj.updateDynamic("disableDotRule")(disableDotRule.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDotRule)) __obj.updateDynamic("disableDotRule")(disableDotRule.get.asInstanceOf[js.Any])
     if (htmlAcceptHeaders != null) __obj.updateDynamic("htmlAcceptHeaders")(htmlAcceptHeaders.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (rewrites != null) __obj.updateDynamic("rewrites")(rewrites.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryOptions]
   }
 }

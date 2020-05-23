@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.TimeSigNote")
 @js.native
-class TimeSigNote protected () extends Note {
-  def this(timeSpec: String, customPadding: Double) = this()
+trait TimeSigNote extends Note {
   def addToModifierContext(): TimeSigNote = js.native
   def draw(): Unit = js.native
   @JSName("setStave")

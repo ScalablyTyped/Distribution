@@ -18,9 +18,12 @@ trait RollbackConfiguration extends js.Object {
 
 object RollbackConfiguration {
   @scala.inline
-  def apply(MonitoringTimeInMinutes: Int | Double = null, RollbackTriggers: RollbackTriggers = null): RollbackConfiguration = {
+  def apply(
+    MonitoringTimeInMinutes: js.UndefOr[MonitoringTimeInMinutes] = js.undefined,
+    RollbackTriggers: RollbackTriggers = null
+  ): RollbackConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (MonitoringTimeInMinutes != null) __obj.updateDynamic("MonitoringTimeInMinutes")(MonitoringTimeInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(MonitoringTimeInMinutes)) __obj.updateDynamic("MonitoringTimeInMinutes")(MonitoringTimeInMinutes.get.asInstanceOf[js.Any])
     if (RollbackTriggers != null) __obj.updateDynamic("RollbackTriggers")(RollbackTriggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollbackConfiguration]
   }

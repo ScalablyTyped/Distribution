@@ -21,18 +21,18 @@ object BackoffSettings {
     initialRetryDelayMillis: Double,
     maxRetryDelayMillis: Double,
     retryDelayMultiplier: Double,
-    initialRpcTimeoutMillis: Int | Double = null,
-    maxRetries: Int | Double = null,
-    maxRpcTimeoutMillis: Int | Double = null,
-    rpcTimeoutMultiplier: Int | Double = null,
-    totalTimeoutMillis: Int | Double = null
+    initialRpcTimeoutMillis: js.UndefOr[Null | Double] = js.undefined,
+    maxRetries: js.UndefOr[Double] = js.undefined,
+    maxRpcTimeoutMillis: js.UndefOr[Null | Double] = js.undefined,
+    rpcTimeoutMultiplier: js.UndefOr[Null | Double] = js.undefined,
+    totalTimeoutMillis: js.UndefOr[Null | Double] = js.undefined
   ): BackoffSettings = {
     val __obj = js.Dynamic.literal(initialRetryDelayMillis = initialRetryDelayMillis.asInstanceOf[js.Any], maxRetryDelayMillis = maxRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier = retryDelayMultiplier.asInstanceOf[js.Any])
-    if (initialRpcTimeoutMillis != null) __obj.updateDynamic("initialRpcTimeoutMillis")(initialRpcTimeoutMillis.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (maxRpcTimeoutMillis != null) __obj.updateDynamic("maxRpcTimeoutMillis")(maxRpcTimeoutMillis.asInstanceOf[js.Any])
-    if (rpcTimeoutMultiplier != null) __obj.updateDynamic("rpcTimeoutMultiplier")(rpcTimeoutMultiplier.asInstanceOf[js.Any])
-    if (totalTimeoutMillis != null) __obj.updateDynamic("totalTimeoutMillis")(totalTimeoutMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialRpcTimeoutMillis)) __obj.updateDynamic("initialRpcTimeoutMillis")(initialRpcTimeoutMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRpcTimeoutMillis)) __obj.updateDynamic("maxRpcTimeoutMillis")(maxRpcTimeoutMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(rpcTimeoutMultiplier)) __obj.updateDynamic("rpcTimeoutMultiplier")(rpcTimeoutMultiplier.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalTimeoutMillis)) __obj.updateDynamic("totalTimeoutMillis")(totalTimeoutMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackoffSettings]
   }
 }

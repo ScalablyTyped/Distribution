@@ -14,7 +14,7 @@ trait Context
 object Context {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     key: String = null,
     label: String = null
   ): Context = {

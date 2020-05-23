@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonSize
+import typings.weixinApp.anon.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait FsGetFileInfoOptions
   var filePath: String
    // 要读取的文件路径
   @JSName("success")
-  var success_FsGetFileInfoOptions: js.UndefOr[js.Function1[/* res */ AnonSize, Unit]] = js.undefined
+  var success_FsGetFileInfoOptions: js.UndefOr[js.Function1[/* res */ Size, Unit]] = js.undefined
 }
 
 object FsGetFileInfoOptions {
@@ -19,7 +19,7 @@ object FsGetFileInfoOptions {
     filePath: String,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonSize => Unit = null
+    success: /* res */ Size => Unit = null
   ): FsGetFileInfoOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

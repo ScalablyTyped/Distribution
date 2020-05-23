@@ -27,13 +27,13 @@ trait AttributeValue extends js.Object {
 object AttributeValue {
   @scala.inline
   def apply(
-    N: Int | scala.Double = null,
+    N: js.UndefOr[DoubleObject] = js.undefined,
     S: NonZeroAndMaxString = null,
     SDM: StringDoubleMap = null,
     SL: StringList = null
   ): AttributeValue = {
     val __obj = js.Dynamic.literal()
-    if (N != null) __obj.updateDynamic("N")(N.asInstanceOf[js.Any])
+    if (!js.isUndefined(N)) __obj.updateDynamic("N")(N.get.asInstanceOf[js.Any])
     if (S != null) __obj.updateDynamic("S")(S.asInstanceOf[js.Any])
     if (SDM != null) __obj.updateDynamic("SDM")(SDM.asInstanceOf[js.Any])
     if (SL != null) __obj.updateDynamic("SL")(SL.asInstanceOf[js.Any])

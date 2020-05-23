@@ -15,10 +15,10 @@ trait DefaultAddOptions extends QueueAddOptions {
 
 object DefaultAddOptions {
   @scala.inline
-  def apply(StringDictionary: StringDictionary[js.Any] = null, priority: Int | Double = null): DefaultAddOptions = {
+  def apply(StringDictionary: StringDictionary[js.Any] = null, priority: js.UndefOr[Double] = js.undefined): DefaultAddOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultAddOptions]
   }
 }

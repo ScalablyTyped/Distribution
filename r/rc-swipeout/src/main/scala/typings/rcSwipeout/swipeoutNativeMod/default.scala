@@ -1,6 +1,6 @@
 package typings.rcSwipeout.swipeoutNativeMod
 
-import typings.rcSwipeout.AnonDisabled
+import typings.rcSwipeout.anon.Disabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends Swipeout {
 @JSImport("rc-swipeout/lib/Swipeout.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonDisabled = js.native
+  var defaultProps: Disabled = js.native
 }
 

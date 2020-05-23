@@ -15,14 +15,14 @@ import scala.scalajs.js.annotation._
 trait ImageData extends js.Object {
   /**
     *
-    * Returns the format of the image. Read-only.
+    * Returns the format of the image.
     *
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[PictureFormat | UNKNOWN | BMP | JPEG | GIF | PNG | SVG] = js.undefined
   /**
     *
-    * Represents the shape identifier for the image object. Read-only.
+    * Specifies the shape identifier for the image object.
     *
     * [Api set: ExcelApi 1.9]
     */

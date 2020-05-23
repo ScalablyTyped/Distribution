@@ -59,10 +59,10 @@ trait ServiceConfiguration extends js.Object {
 object ServiceConfiguration {
   @scala.inline
   def apply(
-    AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
     AvailabilityZones: ValueStringList = null,
     BaseEndpointDnsNames: ValueStringList = null,
-    ManagesVpcEndpoints: js.UndefOr[scala.Boolean] = js.undefined,
+    ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined,
     NetworkLoadBalancerArns: ValueStringList = null,
     PrivateDnsName: String = null,
     PrivateDnsNameConfiguration: PrivateDnsNameConfiguration = null,
@@ -73,10 +73,10 @@ object ServiceConfiguration {
     Tags: TagList = null
   ): ServiceConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.get.asInstanceOf[js.Any])
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
     if (BaseEndpointDnsNames != null) __obj.updateDynamic("BaseEndpointDnsNames")(BaseEndpointDnsNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManagesVpcEndpoints)) __obj.updateDynamic("ManagesVpcEndpoints")(ManagesVpcEndpoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManagesVpcEndpoints)) __obj.updateDynamic("ManagesVpcEndpoints")(ManagesVpcEndpoints.get.asInstanceOf[js.Any])
     if (NetworkLoadBalancerArns != null) __obj.updateDynamic("NetworkLoadBalancerArns")(NetworkLoadBalancerArns.asInstanceOf[js.Any])
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
     if (PrivateDnsNameConfiguration != null) __obj.updateDynamic("PrivateDnsNameConfiguration")(PrivateDnsNameConfiguration.asInstanceOf[js.Any])

@@ -142,7 +142,7 @@ object Creative {
     restrictedCategories: js.Array[String] = null,
     servingRestrictions: js.Array[ServingRestriction] = null,
     vendorIds: js.Array[Double] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     video: VideoContent = null
   ): Creative = {
     val __obj = js.Dynamic.literal()
@@ -169,7 +169,7 @@ object Creative {
     if (restrictedCategories != null) __obj.updateDynamic("restrictedCategories")(restrictedCategories.asInstanceOf[js.Any])
     if (servingRestrictions != null) __obj.updateDynamic("servingRestrictions")(servingRestrictions.asInstanceOf[js.Any])
     if (vendorIds != null) __obj.updateDynamic("vendorIds")(vendorIds.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[Creative]
   }

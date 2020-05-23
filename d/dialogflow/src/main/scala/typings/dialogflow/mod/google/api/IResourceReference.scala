@@ -14,10 +14,13 @@ trait IResourceReference extends js.Object {
 
 object IResourceReference {
   @scala.inline
-  def apply(childType: String = null, `type`: String = null): IResourceReference = {
+  def apply(
+    childType: js.UndefOr[Null | String] = js.undefined,
+    `type`: js.UndefOr[Null | String] = js.undefined
+  ): IResourceReference = {
     val __obj = js.Dynamic.literal()
-    if (childType != null) __obj.updateDynamic("childType")(childType.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(childType)) __obj.updateDynamic("childType")(childType.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceReference]
   }
 }

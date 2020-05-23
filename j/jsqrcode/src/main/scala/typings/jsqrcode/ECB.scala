@@ -4,13 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ECB")
-@js.native
-class ECB protected () extends js.Object {
-  def this(count: Double, dataCodewords: Double) = this()
-  val Count: Double = js.native
-  val DataCodewords: Double = js.native
-  var count: Double = js.native
-  var dataCodewords: Double = js.native
+trait ECB extends js.Object {
+  val Count: Double
+  val DataCodewords: Double
+  var count: Double
+  var dataCodewords: Double
+}
+
+object ECB {
+  @scala.inline
+  def apply(Count: Double, DataCodewords: Double, count: Double, dataCodewords: Double): ECB = {
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], DataCodewords = DataCodewords.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], dataCodewords = dataCodewords.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ECB]
+  }
 }
 

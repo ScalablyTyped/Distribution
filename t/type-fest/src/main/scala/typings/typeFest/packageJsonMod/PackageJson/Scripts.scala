@@ -123,7 +123,7 @@ trait Scripts extends /* scriptName */ StringDictionary[String] {
 object Scripts {
   @scala.inline
   def apply(
-    StringDictionary: /* scriptName */ StringDictionary[String] = null,
+    StringDictionary: /* name */ StringDictionary[String] = null,
     install: String = null,
     postinstall: String = null,
     postpack: String = null,

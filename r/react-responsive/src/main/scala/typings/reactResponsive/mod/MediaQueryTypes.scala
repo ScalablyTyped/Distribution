@@ -34,17 +34,17 @@ object MediaQueryTypes {
     tv: js.UndefOr[Boolean] = js.undefined
   ): MediaQueryTypes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (!js.isUndefined(aural)) __obj.updateDynamic("aural")(aural.asInstanceOf[js.Any])
-    if (!js.isUndefined(braille)) __obj.updateDynamic("braille")(braille.asInstanceOf[js.Any])
-    if (!js.isUndefined(embossed)) __obj.updateDynamic("embossed")(embossed.asInstanceOf[js.Any])
-    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (!js.isUndefined(handheld)) __obj.updateDynamic("handheld")(handheld.asInstanceOf[js.Any])
-    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
-    if (!js.isUndefined(projection)) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(screen)) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
-    if (!js.isUndefined(tty)) __obj.updateDynamic("tty")(tty.asInstanceOf[js.Any])
-    if (!js.isUndefined(tv)) __obj.updateDynamic("tv")(tv.asInstanceOf[js.Any])
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(aural)) __obj.updateDynamic("aural")(aural.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(braille)) __obj.updateDynamic("braille")(braille.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(embossed)) __obj.updateDynamic("embossed")(embossed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handheld)) __obj.updateDynamic("handheld")(handheld.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(projection)) __obj.updateDynamic("projection")(projection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screen)) __obj.updateDynamic("screen")(screen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tty)) __obj.updateDynamic("tty")(tty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tv)) __obj.updateDynamic("tv")(tv.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaQueryTypes]
   }
 }

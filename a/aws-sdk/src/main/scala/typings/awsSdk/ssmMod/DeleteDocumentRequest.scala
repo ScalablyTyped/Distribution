@@ -29,12 +29,12 @@ object DeleteDocumentRequest {
   def apply(
     Name: DocumentName,
     DocumentVersion: DocumentVersion = null,
-    Force: js.UndefOr[scala.Boolean] = js.undefined,
+    Force: js.UndefOr[Boolean] = js.undefined,
     VersionName: DocumentVersionName = null
   ): DeleteDocumentRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.asInstanceOf[js.Any])
+    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
     if (VersionName != null) __obj.updateDynamic("VersionName")(VersionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDocumentRequest]
   }

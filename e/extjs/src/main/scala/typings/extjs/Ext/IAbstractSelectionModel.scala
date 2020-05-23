@@ -9,109 +9,109 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.util.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ trait IAbstractSelectionModel extends IObservable {
   /** [Config Option] (Boolean) */
   var allowDeselect: js.UndefOr[Boolean] = js.undefined
   /** [Method] binds the store to the selModel
-  		* @param store Object
-  		* @param initial Object
-  		*/
+    * @param store Object
+    * @param initial Object
+    */
   var bindStore: js.UndefOr[
     (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], Unit])
   ] = js.undefined
   /** [Method] Binds listeners for this component to the store
-  		* @param store Ext.data.AbstractStore The store to bind to
-  		*/
+    * @param store Ext.data.AbstractStore The store to bind to
+    */
   var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[IAbstractStore], Unit]] = js.undefined
   /** [Method] Deselects a record instance by record instance or index
-  		* @param records Ext.data.Model[]/Number An array of records or an index
-  		* @param suppressEvent Boolean True to not fire a deselect event
-  		*/
+    * @param records Ext.data.Model[]/Number An array of records or an index
+    * @param suppressEvent Boolean True to not fire a deselect event
+    */
   var deselect: js.UndefOr[
     js.Function2[/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Deselects all records in the view
-  		* @param suppressEvent Boolean True to suppress any deselect events
-  		*/
+    * @param suppressEvent Boolean True to suppress any deselect events
+    */
   var deselectAll: js.UndefOr[js.Function1[/* suppressEvent */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Deselects a range of rows if the selection model is not locked
-  		* @param startRow Ext.data.Model/Number The record or index of the first row in the range
-  		* @param endRow Ext.data.Model/Number The record or index of the last row in the range
-  		*/
+    * @param startRow Ext.data.Model/Number The record or index of the first row in the range
+    * @param endRow Ext.data.Model/Number The record or index of the last row in the range
+    */
   var deselectRange: js.UndefOr[
     js.Function2[/* startRow */ js.UndefOr[js.Any], /* endRow */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Returns the count of selected records
-  		* @returns Number The number of selected records
-  		*/
+    * @returns Number The number of selected records
+    */
   var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method]
-  		* @returns Ext.data.Model Returns the last selected record.
-  		*/
+    * @returns Ext.data.Model Returns the last selected record.
+    */
   var getLastSelected: js.UndefOr[js.Function0[IModel]] = js.undefined
   /** [Method] Returns an array of the currently selected records
-  		* @returns Ext.data.Model[] The selected records
-  		*/
+    * @returns Ext.data.Model[] The selected records
+    */
   var getSelection: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the current selectionMode
-  		* @returns String The selectionMode: 'SINGLE', 'MULTI' or 'SIMPLE'.
-  		*/
+    * @returns String The selectionMode: 'SINGLE', 'MULTI' or 'SIMPLE'.
+    */
   var getSelectionMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Gets the current store instance
-  		* @returns Ext.data.AbstractStore The store, null if one does not exist.
-  		*/
+    * @returns Ext.data.AbstractStore The store, null if one does not exist.
+    */
   var getStore: js.UndefOr[js.Function0[IAbstractStore]] = js.undefined
   /** [Method] Gets the listeners to bind to a new store
-  		* @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
-  		*/
+    * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
+    */
   var getStoreListeners: js.UndefOr[js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _])] = js.undefined
   /** [Method] Returns true if there are any a selected records
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var hasSelection: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Determines if this record is currently focused
-  		* @param record Ext.data.Model
-  		*/
+    * @param record Ext.data.Model
+    */
   var isFocused: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Unit]] = js.undefined
   /** [Method] Returns true if the selections are locked
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isLocked: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true if the specified row is selected
-  		* @param from Ext.data.Model/Number The start of the range to check.
-  		* @param to Ext.data.Model/Number The end of the range to check.
-  		* @returns Boolean
-  		*/
+    * @param from Ext.data.Model/Number The start of the range to check.
+    * @param to Ext.data.Model/Number The end of the range to check.
+    * @returns Boolean
+    */
   var isRangeSelected: js.UndefOr[
     js.Function2[/* from */ js.UndefOr[js.Any], /* to */ js.UndefOr[js.Any], Boolean]
   ] = js.undefined
   /** [Method] Returns true if the specified row is selected
-  		* @param record Ext.data.Model/Number The record or index of the record to check
-  		* @returns Boolean
-  		*/
+    * @param record Ext.data.Model/Number The record or index of the record to check
+    * @returns Boolean
+    */
   var isSelected: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Config Option] ("SINGLE"/"SIMPLE"/"MULTI") */
   var mode: js.UndefOr[js.Any] = js.undefined
   /** [Method] Template method it is called when a new store is bound to the current instance
-  		* @param store Ext.data.AbstractStore The store being bound
-  		* @param initial Boolean True if this store is being bound as initialization of the instance.
-  		*/
+    * @param store Ext.data.AbstractStore The store being bound
+    * @param initial Boolean True if this store is being bound as initialization of the instance.
+    */
   var onBindStore: js.UndefOr[js.Function2[js.UndefOr[IAbstractStore], js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Template method it is called when an existing store is unbound from the current instance
-  		* @param store Ext.data.AbstractStore The store being unbound
-  		* @param initial Boolean True if this store is being bound as initialization of the instance.
-  		*/
+    * @param store Ext.data.AbstractStore The store being unbound
+    * @param initial Boolean True if this store is being bound as initialization of the instance.
+    */
   var onUnbindStore: js.UndefOr[js.Function2[js.UndefOr[IAbstractStore], js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var pruneRemoved: js.UndefOr[Boolean] = js.undefined
   /** [Method] Selects a record instance by record instance or index
-  		* @param records Ext.data.Model[]/Number An array of records or an index
-  		* @param keepExisting Boolean True to retain existing selections
-  		* @param suppressEvent Boolean True to not fire a select event
-  		*/
+    * @param records Ext.data.Model[]/Number An array of records or an index
+    * @param keepExisting Boolean True to retain existing selections
+    * @param suppressEvent Boolean True to not fire a select event
+    */
   var select: js.UndefOr[
     js.Function3[
       /* records */ js.UndefOr[js.Any], 
@@ -121,14 +121,14 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   /** [Method] Selects all records in the view
-  		* @param suppressEvent Boolean True to suppress any select events
-  		*/
+    * @param suppressEvent Boolean True to suppress any select events
+    */
   var selectAll: js.UndefOr[js.Function1[/* suppressEvent */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Selects a range of rows if the selection model is not locked
-  		* @param startRow Ext.data.Model/Number The record or index of the first row in the range
-  		* @param endRow Ext.data.Model/Number The record or index of the last row in the range
-  		* @param keepExisting Boolean True to retain existing selections
-  		*/
+    * @param startRow Ext.data.Model/Number The record or index of the first row in the range
+    * @param endRow Ext.data.Model/Number The record or index of the last row in the range
+    * @param keepExisting Boolean True to retain existing selections
+    */
   var selectRange: js.UndefOr[
     js.Function3[
       /* startRow */ js.UndefOr[js.Any], 
@@ -140,22 +140,22 @@ import scala.scalajs.js.annotation._
   /** [Property] (Ext.util.MixedCollection) */
   var selected: js.UndefOr[IMixedCollection] = js.undefined
   /** [Method] Sets a record as the last focused record
-  		* @param record Ext.data.Model
-  		*/
+    * @param record Ext.data.Model
+    */
   var setLastFocused: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Unit]] = js.undefined
   /** [Method] Locks the current selection and disables any changes from happening to the selection
-  		* @param locked Boolean True to lock, false to unlock.
-  		*/
+    * @param locked Boolean True to lock, false to unlock.
+    */
   var setLocked: js.UndefOr[js.Function1[/* locked */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the current selectionMode
-  		* @param selMode String 'SINGLE', 'MULTI' or 'SIMPLE'.
-  		*/
+    * @param selMode String 'SINGLE', 'MULTI' or 'SIMPLE'.
+    */
   var setSelectionMode: js.UndefOr[js.Function1[/* selMode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var toggleOnClick: js.UndefOr[Boolean] = js.undefined
   /** [Method] Unbinds listeners from this component to the store
-  		* @param store Ext.data.AbstractStore The store to unbind from
-  		*/
+    * @param store Ext.data.AbstractStore The store to unbind from
+    */
   var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[IAbstractStore], Unit]] = js.undefined
 }
 
@@ -237,7 +237,7 @@ object IAbstractSelectionModel {
     if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect.get.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (bindStore != null) __obj.updateDynamic("bindStore")(bindStore.asInstanceOf[js.Any])
     if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(js.Any.fromFunction1(bindStoreListeners))
@@ -268,7 +268,7 @@ object IAbstractSelectionModel {
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isFocused != null) __obj.updateDynamic("isFocused")(js.Any.fromFunction1(isFocused))
     if (isLocked != null) __obj.updateDynamic("isLocked")(js.Any.fromFunction0(isLocked))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (isRangeSelected != null) __obj.updateDynamic("isRangeSelected")(js.Any.fromFunction2(isRangeSelected))
     if (isSelected != null) __obj.updateDynamic("isSelected")(js.Any.fromFunction1(isSelected))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -279,7 +279,7 @@ object IAbstractSelectionModel {
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
     if (onBindStore != null) __obj.updateDynamic("onBindStore")(js.Any.fromFunction2(onBindStore))
     if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(js.Any.fromFunction2(onUnbindStore))
-    if (!js.isUndefined(pruneRemoved)) __obj.updateDynamic("pruneRemoved")(pruneRemoved.asInstanceOf[js.Any])
+    if (!js.isUndefined(pruneRemoved)) __obj.updateDynamic("pruneRemoved")(pruneRemoved.get.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
     if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
     if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
@@ -294,11 +294,11 @@ object IAbstractSelectionModel {
     if (setLastFocused != null) __obj.updateDynamic("setLastFocused")(js.Any.fromFunction1(setLastFocused))
     if (setLocked != null) __obj.updateDynamic("setLocked")(js.Any.fromFunction1(setLocked))
     if (setSelectionMode != null) __obj.updateDynamic("setSelectionMode")(js.Any.fromFunction1(setSelectionMode))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
-    if (!js.isUndefined(toggleOnClick)) __obj.updateDynamic("toggleOnClick")(toggleOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleOnClick)) __obj.updateDynamic("toggleOnClick")(toggleOnClick.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(js.Any.fromFunction1(unbindStoreListeners))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

@@ -11,10 +11,13 @@ trait AudioContextOptions extends js.Object {
 
 object AudioContextOptions {
   @scala.inline
-  def apply(latencyHint: AudioContextLatencyCategory | Double = null, sampleRate: Int | Double = null): AudioContextOptions = {
+  def apply(
+    latencyHint: AudioContextLatencyCategory | Double = null,
+    sampleRate: js.UndefOr[Double] = js.undefined
+  ): AudioContextOptions = {
     val __obj = js.Dynamic.literal()
     if (latencyHint != null) __obj.updateDynamic("latencyHint")(latencyHint.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioContextOptions]
   }
 }

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait RelativeTimeFormatterOptions extends js.Object {
   /**
-  		 * eg. "short" or "narrow". Or falsy for default long form
-  		 */
+    * eg. "short" or "narrow". Or falsy for default long form
+    */
   var form: js.UndefOr[short | narrow] = js.undefined
 }
 

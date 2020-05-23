@@ -20,7 +20,6 @@ object UserChangeResult {
     removedBatchIds: js.Array[BatchId]
   ): UserChangeResult = {
     val __obj = js.Dynamic.literal(addedBatchIds = addedBatchIds.asInstanceOf[js.Any], affectedDocuments = affectedDocuments.asInstanceOf[js.Any], removedBatchIds = removedBatchIds.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserChangeResult]
   }
 }

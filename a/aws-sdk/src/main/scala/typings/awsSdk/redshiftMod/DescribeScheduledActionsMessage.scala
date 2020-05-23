@@ -43,21 +43,21 @@ trait DescribeScheduledActionsMessage extends js.Object {
 object DescribeScheduledActionsMessage {
   @scala.inline
   def apply(
-    Active: js.UndefOr[scala.Boolean] = js.undefined,
+    Active: js.UndefOr[BooleanOptional] = js.undefined,
     EndTime: TStamp = null,
     Filters: ScheduledActionFilterList = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     ScheduledActionName: String = null,
     StartTime: TStamp = null,
     TargetActionType: ScheduledActionTypeValues = null
   ): DescribeScheduledActionsMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.asInstanceOf[js.Any])
+    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (ScheduledActionName != null) __obj.updateDynamic("ScheduledActionName")(ScheduledActionName.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (TargetActionType != null) __obj.updateDynamic("TargetActionType")(TargetActionType.asInstanceOf[js.Any])

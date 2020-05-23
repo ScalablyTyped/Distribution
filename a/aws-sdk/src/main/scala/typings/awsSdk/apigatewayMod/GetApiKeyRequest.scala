@@ -18,9 +18,9 @@ trait GetApiKeyRequest extends js.Object {
 
 object GetApiKeyRequest {
   @scala.inline
-  def apply(apiKey: String, includeValue: js.UndefOr[scala.Boolean] = js.undefined): GetApiKeyRequest = {
+  def apply(apiKey: String, includeValue: js.UndefOr[NullableBoolean] = js.undefined): GetApiKeyRequest = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeValue)) __obj.updateDynamic("includeValue")(includeValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeValue)) __obj.updateDynamic("includeValue")(includeValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApiKeyRequest]
   }
 }

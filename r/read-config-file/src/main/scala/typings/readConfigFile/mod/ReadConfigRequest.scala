@@ -21,8 +21,7 @@ object ReadConfigRequest {
     projectDir: String,
     packageMetadata: Lazy[StringDictionary[_] | Null] = null
   ): ReadConfigRequest = {
-    val __obj = js.Dynamic.literal(configFilename = configFilename.asInstanceOf[js.Any], packageKey = packageKey.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any])
-    if (packageMetadata != null) __obj.updateDynamic("packageMetadata")(packageMetadata.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(configFilename = configFilename.asInstanceOf[js.Any], packageKey = packageKey.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], packageMetadata = packageMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadConfigRequest]
   }
 }

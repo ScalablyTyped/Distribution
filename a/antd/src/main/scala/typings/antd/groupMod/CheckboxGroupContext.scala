@@ -18,7 +18,7 @@ object CheckboxGroupContext {
     value: js.Any = null
   ): CheckboxGroupContext = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (toggleOption != null) __obj.updateDynamic("toggleOption")(js.Any.fromFunction1(toggleOption))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxGroupContext]

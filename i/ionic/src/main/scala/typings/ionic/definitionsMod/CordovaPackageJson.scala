@@ -1,20 +1,20 @@
 package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ionic.AnonPlatforms
+import typings.ionic.anon.Platforms
 import typings.ionicCliFramework.definitionsMod.PackageJson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CordovaPackageJson extends PackageJson {
-  var cordova: AnonPlatforms
+  var cordova: Platforms
 }
 
 object CordovaPackageJson {
   @scala.inline
   def apply(
-    cordova: AnonPlatforms,
+    cordova: Platforms,
     name: String,
     version: String,
     bin: StringDictionary[js.UndefOr[String]] = null,

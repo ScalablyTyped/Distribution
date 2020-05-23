@@ -25,12 +25,12 @@ object ListVirtualMFADevicesRequest {
   def apply(
     AssignmentStatus: assignmentStatusType = null,
     Marker: markerType = null,
-    MaxItems: Int | Double = null
+    MaxItems: js.UndefOr[maxItemsType] = js.undefined
   ): ListVirtualMFADevicesRequest = {
     val __obj = js.Dynamic.literal()
     if (AssignmentStatus != null) __obj.updateDynamic("AssignmentStatus")(AssignmentStatus.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVirtualMFADevicesRequest]
   }
 }

@@ -55,18 +55,18 @@ object CasperOptions {
     page: WebPage = null,
     pageSettings: js.Any = null,
     remoteScripts: js.Array[_] = null,
-    retryTimeout: Int | Double = null,
+    retryTimeout: js.UndefOr[Double] = js.undefined,
     safeLogs: js.UndefOr[Boolean] = js.undefined,
     silentErrors: js.UndefOr[Boolean] = js.undefined,
-    stepTimeout: Int | Double = null,
-    timeout: Int | Double = null,
+    stepTimeout: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined,
     viewportSize: js.Any = null,
-    waitTimeout: Int | Double = null
+    waitTimeout: js.UndefOr[Double] = js.undefined
   ): CasperOptions = {
     val __obj = js.Dynamic.literal()
     if (clientScripts != null) __obj.updateDynamic("clientScripts")(clientScripts.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitOnError)) __obj.updateDynamic("exitOnError")(exitOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitOnError)) __obj.updateDynamic("exitOnError")(exitOnError.get.asInstanceOf[js.Any])
     if (httpStatusHandlers != null) __obj.updateDynamic("httpStatusHandlers")(httpStatusHandlers.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (onAlert != null) __obj.updateDynamic("onAlert")(onAlert.asInstanceOf[js.Any])
@@ -83,14 +83,14 @@ object CasperOptions {
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pageSettings != null) __obj.updateDynamic("pageSettings")(pageSettings.asInstanceOf[js.Any])
     if (remoteScripts != null) __obj.updateDynamic("remoteScripts")(remoteScripts.asInstanceOf[js.Any])
-    if (retryTimeout != null) __obj.updateDynamic("retryTimeout")(retryTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(safeLogs)) __obj.updateDynamic("safeLogs")(safeLogs.asInstanceOf[js.Any])
-    if (!js.isUndefined(silentErrors)) __obj.updateDynamic("silentErrors")(silentErrors.asInstanceOf[js.Any])
-    if (stepTimeout != null) __obj.updateDynamic("stepTimeout")(stepTimeout.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryTimeout)) __obj.updateDynamic("retryTimeout")(retryTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeLogs)) __obj.updateDynamic("safeLogs")(safeLogs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silentErrors)) __obj.updateDynamic("silentErrors")(silentErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepTimeout)) __obj.updateDynamic("stepTimeout")(stepTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     if (viewportSize != null) __obj.updateDynamic("viewportSize")(viewportSize.asInstanceOf[js.Any])
-    if (waitTimeout != null) __obj.updateDynamic("waitTimeout")(waitTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitTimeout)) __obj.updateDynamic("waitTimeout")(waitTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CasperOptions]
   }
 }

@@ -20,19 +20,19 @@ object NeighborsOptions {
   def apply(
     direction: EdgeDirection = null,
     edgeCollectionRestriction: js.Array[String] | String = null,
-    edgeExamples: Example = null,
-    maxDepth: Int | Double = null,
-    minDepth: Int | Double = null,
-    neighborExamples: Example = null,
+    edgeExamples: js.UndefOr[Null | Example] = js.undefined,
+    maxDepth: js.UndefOr[Double] = js.undefined,
+    minDepth: js.UndefOr[Double] = js.undefined,
+    neighborExamples: js.UndefOr[Null | Example] = js.undefined,
     vertexCollectionRestriction: js.Array[String] | String = null
   ): NeighborsOptions = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (edgeCollectionRestriction != null) __obj.updateDynamic("edgeCollectionRestriction")(edgeCollectionRestriction.asInstanceOf[js.Any])
-    if (edgeExamples != null) __obj.updateDynamic("edgeExamples")(edgeExamples.asInstanceOf[js.Any])
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
-    if (minDepth != null) __obj.updateDynamic("minDepth")(minDepth.asInstanceOf[js.Any])
-    if (neighborExamples != null) __obj.updateDynamic("neighborExamples")(neighborExamples.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeExamples)) __obj.updateDynamic("edgeExamples")(edgeExamples.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDepth)) __obj.updateDynamic("minDepth")(minDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(neighborExamples)) __obj.updateDynamic("neighborExamples")(neighborExamples.asInstanceOf[js.Any])
     if (vertexCollectionRestriction != null) __obj.updateDynamic("vertexCollectionRestriction")(vertexCollectionRestriction.asInstanceOf[js.Any])
     __obj.asInstanceOf[NeighborsOptions]
   }

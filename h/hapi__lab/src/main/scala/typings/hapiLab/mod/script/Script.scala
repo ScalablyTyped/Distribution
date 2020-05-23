@@ -1,6 +1,6 @@
 package typings.hapiLab.mod.script
 
-import typings.hapiLab.OmitTestOptionsplan
+import typings.hapiLab.anon.OmitTestOptionsplan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

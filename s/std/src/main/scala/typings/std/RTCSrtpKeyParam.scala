@@ -18,15 +18,15 @@ object RTCSrtpKeyParam {
     keyMethod: java.lang.String = null,
     keySalt: java.lang.String = null,
     lifetime: java.lang.String = null,
-    mkiLength: Int | Double = null,
-    mkiValue: Int | Double = null
+    mkiLength: js.UndefOr[Double] = js.undefined,
+    mkiValue: js.UndefOr[Double] = js.undefined
   ): RTCSrtpKeyParam = {
     val __obj = js.Dynamic.literal()
     if (keyMethod != null) __obj.updateDynamic("keyMethod")(keyMethod.asInstanceOf[js.Any])
     if (keySalt != null) __obj.updateDynamic("keySalt")(keySalt.asInstanceOf[js.Any])
     if (lifetime != null) __obj.updateDynamic("lifetime")(lifetime.asInstanceOf[js.Any])
-    if (mkiLength != null) __obj.updateDynamic("mkiLength")(mkiLength.asInstanceOf[js.Any])
-    if (mkiValue != null) __obj.updateDynamic("mkiValue")(mkiValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(mkiLength)) __obj.updateDynamic("mkiLength")(mkiLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mkiValue)) __obj.updateDynamic("mkiValue")(mkiValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSrtpKeyParam]
   }
 }

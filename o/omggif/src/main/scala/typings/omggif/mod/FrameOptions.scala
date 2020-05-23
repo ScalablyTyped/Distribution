@@ -14,16 +14,16 @@ trait FrameOptions extends js.Object {
 object FrameOptions {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
-    disposal: Int | Double = null,
-    palette: js.Array[Double] = null,
-    transparent: Int | Double = null
+    delay: js.UndefOr[Double] = js.undefined,
+    disposal: js.UndefOr[Double] = js.undefined,
+    palette: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    transparent: js.UndefOr[Double] = js.undefined
   ): FrameOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (disposal != null) __obj.updateDynamic("disposal")(disposal.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (transparent != null) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disposal)) __obj.updateDynamic("disposal")(disposal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(palette)) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameOptions]
   }
 }

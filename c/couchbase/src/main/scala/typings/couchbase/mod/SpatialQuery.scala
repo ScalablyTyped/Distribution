@@ -55,7 +55,7 @@ object SpatialQuery extends js.Object {
   /**
     * Instantiates a SpatialQuery object for the specified design document and view name.
     * @param ddoc The design document to use.
-    * @param name 	The view to use.
+    * @param name     The view to use.
     */
   def from(ddoc: String, name: String): SpatialQuery = js.native
   /**
@@ -64,7 +64,7 @@ object SpatialQuery extends js.Object {
   @js.native
   object Update extends js.Object {
     /**
-      * 	Forces the view to be indexed after the results of this query has been fetched.
+      *     Forces the view to be indexed after the results of this query has been fetched.
       */
     @js.native
     sealed trait AFTER extends Update

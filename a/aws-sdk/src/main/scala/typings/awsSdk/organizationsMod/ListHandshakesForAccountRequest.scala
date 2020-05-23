@@ -22,10 +22,14 @@ trait ListHandshakesForAccountRequest extends js.Object {
 
 object ListHandshakesForAccountRequest {
   @scala.inline
-  def apply(Filter: HandshakeFilter = null, MaxResults: Int | Double = null, NextToken: NextToken = null): ListHandshakesForAccountRequest = {
+  def apply(
+    Filter: HandshakeFilter = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: NextToken = null
+  ): ListHandshakesForAccountRequest = {
     val __obj = js.Dynamic.literal()
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHandshakesForAccountRequest]
   }

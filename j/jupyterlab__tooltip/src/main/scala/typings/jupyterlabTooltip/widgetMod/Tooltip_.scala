@@ -2,7 +2,7 @@ package typings.jupyterlabTooltip.widgetMod
 
 import typings.jupyterlabTooltip.widgetMod.Tooltip.IOptions
 import typings.luminoWidgets.mod.Widget
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,6 +39,6 @@ class Tooltip_ protected () extends Widget {
     * called in response to events on the dock panel's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
 }
 

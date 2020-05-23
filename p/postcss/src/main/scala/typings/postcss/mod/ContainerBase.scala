@@ -1,6 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.AnonFast
+import typings.postcss.anon.Fast
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -141,10 +141,10 @@ trait ContainerBase extends NodeBase {
     * that will return a new value. The callback will receive the same
     * arguments as those passed to a function parameter of String#replace.
     */
-  def replaceValues(pattern: String, options: AnonFast, callbackOrReplaceValue: String): this.type = js.native
+  def replaceValues(pattern: String, options: Fast, callbackOrReplaceValue: String): this.type = js.native
   def replaceValues(
     pattern: String,
-    options: AnonFast,
+    options: Fast,
     callbackOrReplaceValue: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
   ): this.type = js.native
   def replaceValues(pattern: RegExp, callbackOrReplaceValue: String): this.type = js.native
@@ -152,10 +152,10 @@ trait ContainerBase extends NodeBase {
     pattern: RegExp,
     callbackOrReplaceValue: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
   ): this.type = js.native
-  def replaceValues(pattern: RegExp, options: AnonFast, callbackOrReplaceValue: String): this.type = js.native
+  def replaceValues(pattern: RegExp, options: Fast, callbackOrReplaceValue: String): this.type = js.native
   def replaceValues(
     pattern: RegExp,
-    options: AnonFast,
+    options: Fast,
     callbackOrReplaceValue: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
   ): this.type = js.native
   /**

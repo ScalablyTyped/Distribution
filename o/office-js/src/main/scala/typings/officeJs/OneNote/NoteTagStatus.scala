@@ -1,6 +1,5 @@
 package typings.officeJs.OneNote
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,29 +33,6 @@ object NoteTagStatus extends js.Object {
   
   @js.native
   sealed trait unknown extends NoteTagStatus
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[NoteTagStatus with String] = js.native
-  /* "Completed" */ @js.native
-  object completed extends TopLevel[completed with String]
-  
-  /* "Disabled" */ @js.native
-  object disabled extends TopLevel[disabled with String]
-  
-  /* "Normal" */ @js.native
-  object normal extends TopLevel[normal with String]
-  
-  /* "OutlookTask" */ @js.native
-  object outlookTask extends TopLevel[outlookTask with String]
-  
-  /* "TaskNotSyncedYet" */ @js.native
-  object taskNotSyncedYet extends TopLevel[taskNotSyncedYet with String]
-  
-  /* "TaskRemoved" */ @js.native
-  object taskRemoved extends TopLevel[taskRemoved with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
   
 }
 

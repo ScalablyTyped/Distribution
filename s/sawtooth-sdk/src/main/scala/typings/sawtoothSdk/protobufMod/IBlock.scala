@@ -16,11 +16,15 @@ trait IBlock extends js.Object {
 
 object IBlock {
   @scala.inline
-  def apply(batches: js.Array[IBatch] = null, header: Uint8Array = null, headerSignature: String = null): IBlock = {
+  def apply(
+    batches: js.UndefOr[Null | js.Array[IBatch]] = js.undefined,
+    header: js.UndefOr[Null | Uint8Array] = js.undefined,
+    headerSignature: js.UndefOr[Null | String] = js.undefined
+  ): IBlock = {
     val __obj = js.Dynamic.literal()
-    if (batches != null) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (headerSignature != null) __obj.updateDynamic("headerSignature")(headerSignature.asInstanceOf[js.Any])
+    if (!js.isUndefined(batches)) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerSignature)) __obj.updateDynamic("headerSignature")(headerSignature.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBlock]
   }
 }

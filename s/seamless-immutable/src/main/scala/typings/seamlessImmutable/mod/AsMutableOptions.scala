@@ -10,7 +10,7 @@ trait AsMutableOptions[TDeep /* <: Boolean */] extends js.Object {
 
 object AsMutableOptions {
   @scala.inline
-  def apply[TDeep /* <: Boolean */](deep: TDeep): AsMutableOptions[TDeep] = {
+  def apply[TDeep](deep: TDeep): AsMutableOptions[TDeep] = {
     val __obj = js.Dynamic.literal(deep = deep.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsMutableOptions[TDeep]]
   }

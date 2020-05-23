@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when user interacts with a URL in the text area. See [handleLinks](Titanium.UI.TextArea.handleLinks).
-		 */
+  * Fired when user interacts with a URL in the text area. See [handleLinks](Titanium.UI.TextArea.handleLinks).
+  */
 trait TextAreaLinkEvent extends TextAreaBaseEvent {
   /**
-  			 * This is false. This event does not bubble.
-  			 */
+    * This is false. This event does not bubble.
+    */
   var bubbles: Boolean
   /**
-  			 * An array of two numbers [location, length] describing the character range of the text associated with this URL.
-  			 */
+    * An array of two numbers [location, length] describing the character range of the text associated with this URL.
+    */
   var range: js.Array[_]
   /**
-  			 * The URL that is associated with this event.
-  			 */
+    * The URL that is associated with this event.
+    */
   var url: String
 }
 

@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc", "TypeScript.createAbstractBuilder")
 @js.native
 object createAbstractBuilder extends js.Object {
-  def apply(): BuilderProgram = js.native
   /**
     * Creates a builder thats just abstraction over program and can be used with watch
     */
@@ -26,96 +25,13 @@ object createAbstractBuilder extends js.Object {
     oldProgram: BuilderProgram,
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): BuilderProgram = js.native
-  def apply(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): BuilderProgram = js.native
   def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: BuilderProgram
-  ): BuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): BuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): BuilderProgram = js.native
-  def apply(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): BuilderProgram = js.native
-  def apply(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): BuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: BuilderProgram
-  ): BuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): BuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): BuilderProgram = js.native
-  def apply(rootNames: js.Array[String]): BuilderProgram = js.native
-  def apply(rootNames: js.Array[String], options: js.UndefOr[scala.Nothing], host: CompilerHost): BuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: BuilderProgram
-  ): BuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): BuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): BuilderProgram = js.native
-  def apply(rootNames: js.Array[String], options: CompilerOptions): BuilderProgram = js.native
-  def apply(rootNames: js.Array[String], options: CompilerOptions, host: CompilerHost): BuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: BuilderProgram
-  ): BuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): BuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
+    rootNames: js.UndefOr[js.Array[String]],
+    options: js.UndefOr[CompilerOptions],
+    host: js.UndefOr[CompilerHost],
+    oldProgram: js.UndefOr[BuilderProgram],
+    configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]],
+    projectReferences: js.UndefOr[js.Array[ProjectReference]]
   ): BuilderProgram = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverProtocol.AnonValueSet
+import typings.vscodeLanguageserverProtocol.anon.ValueSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait PublishDiagnosticsClientCapabilities extends js.Object {
     *
     * @since 3.15.0
     */
-  var tagSupport: js.UndefOr[AnonValueSet] = js.undefined
+  var tagSupport: js.UndefOr[ValueSet] = js.undefined
   /**
     * Whether the client interprets the version property of the
     * `textDocument/publishDiagnostics` notification`s parameter.
@@ -30,13 +30,13 @@ object PublishDiagnosticsClientCapabilities {
   @scala.inline
   def apply(
     relatedInformation: js.UndefOr[Boolean] = js.undefined,
-    tagSupport: AnonValueSet = null,
+    tagSupport: ValueSet = null,
     versionSupport: js.UndefOr[Boolean] = js.undefined
   ): PublishDiagnosticsClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(relatedInformation)) __obj.updateDynamic("relatedInformation")(relatedInformation.asInstanceOf[js.Any])
+    if (!js.isUndefined(relatedInformation)) __obj.updateDynamic("relatedInformation")(relatedInformation.get.asInstanceOf[js.Any])
     if (tagSupport != null) __obj.updateDynamic("tagSupport")(tagSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(versionSupport)) __obj.updateDynamic("versionSupport")(versionSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionSupport)) __obj.updateDynamic("versionSupport")(versionSupport.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishDiagnosticsClientCapabilities]
   }
 }

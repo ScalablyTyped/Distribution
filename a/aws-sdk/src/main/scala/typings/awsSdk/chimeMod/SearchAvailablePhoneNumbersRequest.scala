@@ -42,7 +42,7 @@ object SearchAvailablePhoneNumbersRequest {
     AreaCode: String = null,
     City: String = null,
     Country: String = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[PhoneNumberMaxResults] = js.undefined,
     NextToken: String = null,
     State: String = null,
     TollFreePrefix: TollFreePrefix = null
@@ -51,7 +51,7 @@ object SearchAvailablePhoneNumbersRequest {
     if (AreaCode != null) __obj.updateDynamic("AreaCode")(AreaCode.asInstanceOf[js.Any])
     if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
     if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (TollFreePrefix != null) __obj.updateDynamic("TollFreePrefix")(TollFreePrefix.asInstanceOf[js.Any])

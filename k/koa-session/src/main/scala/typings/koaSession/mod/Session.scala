@@ -49,10 +49,7 @@ object Session {
     populated: Boolean,
     save: () => Unit,
     toJSON: () => js.Object,
-    StringDictionary: /**
-    * allow to put any value on session object
-    */
-  /* _ */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     maxAge: Double | session = null
   ): Session = {
     val __obj = js.Dynamic.literal(inspect = js.Any.fromFunction0(inspect), length = length.asInstanceOf[js.Any], populated = populated.asInstanceOf[js.Any], save = js.Any.fromFunction0(save), toJSON = js.Any.fromFunction0(toJSON))

@@ -20,18 +20,18 @@ trait Quota extends js.Object {
 object Quota {
   @scala.inline
   def apply(
-    deleted: Int | Double = null,
-    remaining: Int | Double = null,
+    deleted: js.UndefOr[Double] = js.undefined,
+    remaining: js.UndefOr[Double] = js.undefined,
     state: String = null,
-    total: Int | Double = null,
-    used: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined,
+    used: js.UndefOr[Double] = js.undefined
   ): Quota = {
     val __obj = js.Dynamic.literal()
-    if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (remaining != null) __obj.updateDynamic("remaining")(remaining.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remaining)) __obj.updateDynamic("remaining")(remaining.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    if (used != null) __obj.updateDynamic("used")(used.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(used)) __obj.updateDynamic("used")(used.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Quota]
   }
 }

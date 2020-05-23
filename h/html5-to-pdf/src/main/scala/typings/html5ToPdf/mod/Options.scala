@@ -62,7 +62,7 @@ object Options {
     options: LegacyOptions = null,
     outputPath: String = null,
     pdf: PDFOptions = null,
-    rendererDelay: Int | Double = null,
+    rendererDelay: js.UndefOr[Double] = js.undefined,
     template: String = null,
     templateUrl: String = null
   ): Options = {
@@ -74,7 +74,7 @@ object Options {
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
     if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (rendererDelay != null) __obj.updateDynamic("rendererDelay")(rendererDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(rendererDelay)) __obj.updateDynamic("rendererDelay")(rendererDelay.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

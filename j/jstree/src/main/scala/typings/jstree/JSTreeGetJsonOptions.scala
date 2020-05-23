@@ -47,13 +47,13 @@ object JSTreeGetJsonOptions {
     no_state: js.UndefOr[Boolean] = js.undefined
   ): JSTreeGetJsonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_a_attr)) __obj.updateDynamic("no_a_attr")(no_a_attr.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_children)) __obj.updateDynamic("no_children")(no_children.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_data)) __obj.updateDynamic("no_data")(no_data.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_id)) __obj.updateDynamic("no_id")(no_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_li_attr)) __obj.updateDynamic("no_li_attr")(no_li_attr.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_state)) __obj.updateDynamic("no_state")(no_state.asInstanceOf[js.Any])
+    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_a_attr)) __obj.updateDynamic("no_a_attr")(no_a_attr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_children)) __obj.updateDynamic("no_children")(no_children.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_data)) __obj.updateDynamic("no_data")(no_data.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_id)) __obj.updateDynamic("no_id")(no_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_li_attr)) __obj.updateDynamic("no_li_attr")(no_li_attr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_state)) __obj.updateDynamic("no_state")(no_state.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeGetJsonOptions]
   }
 }

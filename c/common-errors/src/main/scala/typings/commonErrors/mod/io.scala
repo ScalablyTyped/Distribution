@@ -95,8 +95,9 @@ object io extends js.Object {
     *
     * @example throw new errors.io.IOError("Could not open file", err)
     */
-  @js.native
-  class IOError protected () extends ErrorConstructor {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @js.native
+  class IOError protected () extends js.Object {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current

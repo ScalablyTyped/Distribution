@@ -1,6 +1,5 @@
 package typings.mathjax.MathJax
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,8 +68,4 @@ trait Localization extends js.Object {
   /*Sets the selected locale to the given one*/
   def setLocale(locale: String): Unit = js.native
 }
-
-@JSGlobal("MathJax.Localization")
-@js.native
-object Localization extends TopLevel[Localization]
 

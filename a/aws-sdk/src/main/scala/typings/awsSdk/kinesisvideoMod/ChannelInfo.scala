@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ChannelInfo extends js.Object {
   /**
-    * The ARN of the signaling channel.
+    * The Amazon Resource Name (ARN) of the signaling channel.
     */
   var ChannelARN: js.UndefOr[ResourceARN] = js.native
   /**

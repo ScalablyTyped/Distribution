@@ -17,17 +17,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Matrix")
 @js.native
-class Matrix protected () extends js.Object {
-  def this(
-    a: js.UndefOr[Double],
-    b: js.UndefOr[Double],
-    c: js.UndefOr[Double],
-    d: js.UndefOr[Double],
-    tx: js.UndefOr[Double],
-    ty: js.UndefOr[Double]
-  ) = this()
+trait Matrix extends js.Object {
   /**
     * @member {number} PIXI.Matrix#a
     * @default 1
@@ -210,27 +201,5 @@ class Matrix protected () extends js.Object {
     * @return {PIXI.Matrix} This matrix. Good for chaining method calls.
     */
   def translate(x: Double, y: Double): Matrix = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.Matrix")
-@js.native
-object Matrix extends js.Object {
-  /**
-    * A default (identity) matrix
-    *
-    * @static
-    * @const
-    * @member {PIXI.Matrix}
-    */
-  var IDENTITY: Matrix = js.native
-  /**
-    * A temp matrix
-    *
-    * @static
-    * @const
-    * @member {PIXI.Matrix}
-    */
-  var TEMP_MATRIX: Matrix = js.native
 }
 

@@ -14,16 +14,16 @@ trait MetricsOptions extends js.Object {
 object MetricsOptions {
   @scala.inline
   def apply(
-    flushTimer: Int | Double = null,
+    flushTimer: js.UndefOr[Double] = js.undefined,
     host: String = null,
-    maxQueueSize: Int | Double = null,
-    sampleRate: Int | Double = null
+    maxQueueSize: js.UndefOr[Double] = js.undefined,
+    sampleRate: js.UndefOr[Double] = js.undefined
   ): MetricsOptions = {
     val __obj = js.Dynamic.literal()
-    if (flushTimer != null) __obj.updateDynamic("flushTimer")(flushTimer.asInstanceOf[js.Any])
+    if (!js.isUndefined(flushTimer)) __obj.updateDynamic("flushTimer")(flushTimer.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (maxQueueSize != null) __obj.updateDynamic("maxQueueSize")(maxQueueSize.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxQueueSize)) __obj.updateDynamic("maxQueueSize")(maxQueueSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsOptions]
   }
 }

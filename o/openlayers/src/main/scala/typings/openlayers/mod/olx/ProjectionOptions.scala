@@ -29,7 +29,7 @@ object ProjectionOptions {
     extent: Extent_ = null,
     getPointResolution: (/* resolution */ Double, /* coords */ Coordinate_) => Double = null,
     global: js.UndefOr[Boolean] = js.undefined,
-    metersPerUnit: Int | Double = null,
+    metersPerUnit: js.UndefOr[Double] = js.undefined,
     units: Units | String = null,
     worldExtent: Extent_ = null
   ): ProjectionOptions = {
@@ -37,8 +37,8 @@ object ProjectionOptions {
     if (axisOrientation != null) __obj.updateDynamic("axisOrientation")(axisOrientation.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (getPointResolution != null) __obj.updateDynamic("getPointResolution")(js.Any.fromFunction2(getPointResolution))
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
-    if (metersPerUnit != null) __obj.updateDynamic("metersPerUnit")(metersPerUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(metersPerUnit)) __obj.updateDynamic("metersPerUnit")(metersPerUnit.get.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     if (worldExtent != null) __obj.updateDynamic("worldExtent")(worldExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectionOptions]

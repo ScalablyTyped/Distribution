@@ -8,10 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Pica")
 @js.native
-class Pica () extends js.Object {
-  def this(config: PicaOptions) = this()
+trait Pica extends js.Object {
   def resize(from: Blob, to: HTMLCanvasElement): js.Promise[HTMLCanvasElement] = js.native
   def resize(from: Blob, to: HTMLCanvasElement, options: PicaResizeOptions): js.Promise[HTMLCanvasElement] = js.native
   def resize(from: File, to: HTMLCanvasElement): js.Promise[HTMLCanvasElement] = js.native

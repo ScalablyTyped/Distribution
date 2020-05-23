@@ -27,11 +27,11 @@ object TeamMessagingSettings {
     allowUserEditMessages: js.UndefOr[Boolean] = js.undefined
   ): TeamMessagingSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowChannelMentions)) __obj.updateDynamic("allowChannelMentions")(allowChannelMentions.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowOwnerDeleteMessages)) __obj.updateDynamic("allowOwnerDeleteMessages")(allowOwnerDeleteMessages.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTeamMentions)) __obj.updateDynamic("allowTeamMentions")(allowTeamMentions.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowUserDeleteMessages)) __obj.updateDynamic("allowUserDeleteMessages")(allowUserDeleteMessages.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowUserEditMessages)) __obj.updateDynamic("allowUserEditMessages")(allowUserEditMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowChannelMentions)) __obj.updateDynamic("allowChannelMentions")(allowChannelMentions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOwnerDeleteMessages)) __obj.updateDynamic("allowOwnerDeleteMessages")(allowOwnerDeleteMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTeamMentions)) __obj.updateDynamic("allowTeamMentions")(allowTeamMentions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUserDeleteMessages)) __obj.updateDynamic("allowUserDeleteMessages")(allowUserDeleteMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUserEditMessages)) __obj.updateDynamic("allowUserEditMessages")(allowUserEditMessages.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamMessagingSettings]
   }
 }

@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonCheckedBoolean
+import typings.gestalt.anon.CheckedBoolean
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
 import scala.scalajs.js
@@ -14,14 +14,14 @@ trait RadioButtonProps extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[sm | md] = js.undefined
   var value: js.UndefOr[String] = js.undefined
-  def onChange(args: AnonCheckedBoolean): Unit
+  def onChange(args: CheckedBoolean): Unit
 }
 
 object RadioButtonProps {
   @scala.inline
   def apply(
     id: String,
-    onChange: AnonCheckedBoolean => Unit,
+    onChange: CheckedBoolean => Unit,
     checked: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
@@ -29,8 +29,8 @@ object RadioButtonProps {
     value: String = null
   ): RadioButtonProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

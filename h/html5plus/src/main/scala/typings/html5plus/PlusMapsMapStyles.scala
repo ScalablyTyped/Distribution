@@ -21,9 +21,9 @@ trait PlusMapsMapStyles extends js.Object {
   /**
     * 地图控件的高度
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于父Webview窗口的高度。
-    * 	默认值为"100%"。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于父Webview窗口的高度。
+    *     默认值为"100%"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -31,10 +31,10 @@ trait PlusMapsMapStyles extends js.Object {
   /**
     * 地图控件左上角的水平偏移量
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于父Webview窗口的宽度；
-    * 		自动计算，如"auto"，根据width值自动计算，相对于父Webview窗口水平居中。
-    * 	默认值为"0px"。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于父Webview窗口的宽度；
+    *         自动计算，如"auto"，根据width值自动计算，相对于父Webview窗口水平居中。
+    *     默认值为"0px"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -42,9 +42,9 @@ trait PlusMapsMapStyles extends js.Object {
   /**
     * 地图控件在Webview窗口的布局模式
     * 可取值：
-    * 		"static" - 静态布局模式，如果页面存在滚动条则随窗口内容滚动；
-    * 		"absolute" - 绝对布局模式，如果页面存在滚动条不随窗口内容滚动；
-    * 	默认值为"static"。
+    *         "static" - 静态布局模式，如果页面存在滚动条则随窗口内容滚动；
+    *         "absolute" - 绝对布局模式，如果页面存在滚动条不随窗口内容滚动；
+    *     默认值为"static"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -52,9 +52,9 @@ trait PlusMapsMapStyles extends js.Object {
   /**
     * 地图控件左上角的垂直偏移量
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于父Webview窗口的高度；
-    * 		自动计算，如"auto",根据height值自动计算，相对于父Webview窗口垂直居中。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于父Webview窗口的高度；
+    *         自动计算，如"auto",根据height值自动计算，相对于父Webview窗口垂直居中。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -76,9 +76,9 @@ trait PlusMapsMapStyles extends js.Object {
   /**
     * 地图控件的宽度
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于父Webview窗口的宽度。
-    * 	默认值为"100%"。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于父Webview窗口的宽度。
+    *     默认值为"100%"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -110,7 +110,7 @@ object PlusMapsMapStyles {
     traffic: js.UndefOr[Boolean] = js.undefined,
     `type`: PlusMapsMapType = null,
     width: String = null,
-    zoom: Int | Double = null,
+    zoom: js.UndefOr[Double] = js.undefined,
     zoomControls: js.UndefOr[Boolean] = js.undefined
   ): PlusMapsMapStyles = {
     val __obj = js.Dynamic.literal()
@@ -119,11 +119,11 @@ object PlusMapsMapStyles {
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(traffic)) __obj.updateDynamic("traffic")(traffic.asInstanceOf[js.Any])
+    if (!js.isUndefined(traffic)) __obj.updateDynamic("traffic")(traffic.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomControls)) __obj.updateDynamic("zoomControls")(zoomControls.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomControls)) __obj.updateDynamic("zoomControls")(zoomControls.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsMapStyles]
   }
 }

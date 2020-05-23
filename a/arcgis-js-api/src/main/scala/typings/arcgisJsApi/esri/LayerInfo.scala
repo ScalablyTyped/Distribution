@@ -67,12 +67,12 @@ object LayerInfo {
     updateEnabled: js.UndefOr[Boolean] = js.undefined
   ): LayerInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(addEnabled)) __obj.updateDynamic("addEnabled")(addEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAttachments)) __obj.updateDynamic("allowAttachments")(allowAttachments.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteEnabled)) __obj.updateDynamic("deleteEnabled")(deleteEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(addEnabled)) __obj.updateDynamic("addEnabled")(addEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAttachments)) __obj.updateDynamic("allowAttachments")(allowAttachments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteEnabled)) __obj.updateDynamic("deleteEnabled")(deleteEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateEnabled)) __obj.updateDynamic("updateEnabled")(updateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateEnabled)) __obj.updateDynamic("updateEnabled")(updateEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerInfo]
   }
 }

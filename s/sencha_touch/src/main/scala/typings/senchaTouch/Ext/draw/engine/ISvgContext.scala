@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 
 trait ISvgContext extends IBase {
   /** [Method] Adds points to the subpath such that the arc described by the circumference of the circle described by the arguments
-  		* @param x Number
-  		* @param y Number
-  		* @param radius Number
-  		* @param startAngle Number
-  		* @param endAngle Number
-  		* @param anticlockwise Number
-  		*/
+    * @param x Number
+    * @param y Number
+    * @param radius Number
+    * @param startAngle Number
+    * @param endAngle Number
+    * @param anticlockwise Number
+    */
   var arc: js.UndefOr[
     js.Function6[
       /* x */ js.UndefOr[Double], 
@@ -30,14 +30,14 @@ trait ISvgContext extends IBase {
     ]
   ] = js.undefined
   /** [Method] Arc command using svg parameters
-  		* @param r1 Number
-  		* @param r2 Number
-  		* @param rotation Number
-  		* @param large Number
-  		* @param swipe Number
-  		* @param x2 Number
-  		* @param y2 Number
-  		*/
+    * @param r1 Number
+    * @param r2 Number
+    * @param rotation Number
+    * @param large Number
+    * @param swipe Number
+    * @param x2 Number
+    * @param y2 Number
+    */
   var arcSvg: js.UndefOr[
     js.Function7[
       /* r1 */ js.UndefOr[Double], 
@@ -51,14 +51,14 @@ trait ISvgContext extends IBase {
     ]
   ] = js.undefined
   /** [Method] Adds an arc with the given control points and radius to the current subpath connected to the previous point by a str
-  		* @param x1 Number
-  		* @param y1 Number
-  		* @param x2 Number
-  		* @param y2 Number
-  		* @param radiusX Number
-  		* @param radiusY Number
-  		* @param rotation Number
-  		*/
+    * @param x1 Number
+    * @param y1 Number
+    * @param x2 Number
+    * @param y2 Number
+    * @param radiusX Number
+    * @param radiusY Number
+    * @param rotation Number
+    */
   var arcTo: js.UndefOr[
     js.Function7[
       /* x1 */ js.UndefOr[Double], 
@@ -74,13 +74,13 @@ trait ISvgContext extends IBase {
   /** [Method] Resets the current default path  */
   var beginPath: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Adds the given point to the current subpath connected to the previous one by a cubic B zier curve with the given con
-  		* @param x1 Number
-  		* @param y1 Number
-  		* @param x2 Number
-  		* @param y2 Number
-  		* @param x3 Number
-  		* @param y3 Number
-  		*/
+    * @param x1 Number
+    * @param y1 Number
+    * @param x2 Number
+    * @param y2 Number
+    * @param x3 Number
+    * @param y3 Number
+    */
   var bezierCurveTo: js.UndefOr[
     js.Function6[
       /* x1 */ js.UndefOr[Double], 
@@ -97,12 +97,12 @@ trait ISvgContext extends IBase {
   /** [Method] Marks the current subpath as closed and starts a new subpath with a point the same as the start and end of the newly  */
   var closePath: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns an object that represents a linear gradient that paints along the line given by the coordinates represented b
-  		* @param x0 Number
-  		* @param y0 Number
-  		* @param x1 Number
-  		* @param y1 Number
-  		* @returns Ext.draw.engine.SvgContext.Gradient
-  		*/
+    * @param x0 Number
+    * @param y0 Number
+    * @param x1 Number
+    * @param y1 Number
+    * @returns Ext.draw.engine.SvgContext.Gradient
+    */
   var createLinearGradient: js.UndefOr[
     js.Function4[
       /* x0 */ js.UndefOr[Double], 
@@ -113,14 +113,14 @@ trait ISvgContext extends IBase {
     ]
   ] = js.undefined
   /** [Method] Returns a CanvasGradient object that represents a radial gradient that paints along the cone given by the circles rep
-  		* @param x0 Number
-  		* @param y0 Number
-  		* @param r0 Number
-  		* @param x1 Number
-  		* @param y1 Number
-  		* @param r1 Number
-  		* @returns Ext.draw.engine.SvgContext.Gradient
-  		*/
+    * @param x0 Number
+    * @param y0 Number
+    * @param r0 Number
+    * @param x1 Number
+    * @param y1 Number
+    * @param r1 Number
+    * @returns Ext.draw.engine.SvgContext.Gradient
+    */
   var createRadialGradient: js.UndefOr[
     js.Function6[
       /* x0 */ js.UndefOr[Double], 
@@ -133,16 +133,16 @@ trait ISvgContext extends IBase {
     ]
   ] = js.undefined
   /** [Method] Draws the given image onto the canvas
-  		* @param image HTMLElement
-  		* @param sx Number
-  		* @param sy Number
-  		* @param sw Number
-  		* @param sh Number
-  		* @param dx Number
-  		* @param dy Number
-  		* @param dw Number
-  		* @param dh Number
-  		*/
+    * @param image HTMLElement
+    * @param sx Number
+    * @param sy Number
+    * @param sw Number
+    * @param sh Number
+    * @param dx Number
+    * @param dy Number
+    * @param dw Number
+    * @param dh Number
+    */
   var drawImage: js.UndefOr[
     js.Function9[
       /* image */ js.UndefOr[HTMLElement], 
@@ -158,15 +158,15 @@ trait ISvgContext extends IBase {
     ]
   ] = js.undefined
   /** [Method] Adds points to the subpath such that the arc described by the circumference of the ellipse described by the arguments
-  		* @param x Number
-  		* @param y Number
-  		* @param radiusX Number
-  		* @param radiusY Number
-  		* @param rotation Number
-  		* @param startAngle Number
-  		* @param endAngle Number
-  		* @param anticlockwise Number
-  		*/
+    * @param x Number
+    * @param y Number
+    * @param radiusX Number
+    * @param radiusY Number
+    * @param rotation Number
+    * @param startAngle Number
+    * @param endAngle Number
+    * @param anticlockwise Number
+    */
   var ellipse: js.UndefOr[
     js.Function8[
       /* x */ js.UndefOr[Double], 
@@ -183,11 +183,11 @@ trait ISvgContext extends IBase {
   /** [Method] Fills the subpaths of the current default path or the given path with the current fill style  */
   var fill: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Paints the given rectangle onto the canvas using the current fill style
-  		* @param x Number
-  		* @param y Number
-  		* @param width Number
-  		* @param height Number
-  		*/
+    * @param x Number
+    * @param y Number
+    * @param width Number
+    * @param height Number
+    */
   var fillRect: js.UndefOr[
     js.Function4[
       /* x */ js.UndefOr[Double], 
@@ -198,17 +198,17 @@ trait ISvgContext extends IBase {
     ]
   ] = js.undefined
   /** [Method] Note After the method guarantees the transform matrix will be inverted
-  		* @param attr Object The attribute object
-  		* @param transformFillStroke Boolean Indicate whether to transform fill and stroke. If this is not given, then uses attr.transformFillStroke instead.
-  		*/
+    * @param attr Object The attribute object
+    * @param transformFillStroke Boolean Indicate whether to transform fill and stroke. If this is not given, then uses attr.transformFillStroke instead.
+    */
   var fillStroke: js.UndefOr[
     js.Function2[/* attr */ js.UndefOr[js.Any], /* transformFillStroke */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Fills the given text at the given position
-  		* @param text String
-  		* @param x Number
-  		* @param y Number
-  		*/
+    * @param text String
+    * @param x Number
+    * @param y Number
+    */
   var fillText: js.UndefOr[
     js.Function3[
       /* text */ js.UndefOr[String], 
@@ -218,21 +218,21 @@ trait ISvgContext extends IBase {
     ]
   ] = js.undefined
   /** [Method] Adds the given point to the current subpath connected to the previous one by a straight line
-  		* @param x Number
-  		* @param y Number
-  		*/
+    * @param x Number
+    * @param y Number
+    */
   var lineTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Creates a new subpath with the given point
-  		* @param x Number
-  		* @param y Number
-  		*/
+    * @param x Number
+    * @param y Number
+    */
   var moveTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Adds a new closed subpath to the path representing the given rectangle
-  		* @param x Number
-  		* @param y Number
-  		* @param width Number
-  		* @param height Number
-  		*/
+    * @param x Number
+    * @param y Number
+    * @param width Number
+    * @param height Number
+    */
   var rect: js.UndefOr[
     js.Function4[
       /* x */ js.UndefOr[Double], 
@@ -247,13 +247,13 @@ trait ISvgContext extends IBase {
   /** [Method] Pushes the context state to the state stack  */
   var save: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Changes the transformation matrix to the matrix given by the arguments as described below
-  		* @param xx Number
-  		* @param yx Number
-  		* @param xy Number
-  		* @param yy Number
-  		* @param dx Number
-  		* @param dy Number
-  		*/
+    * @param xx Number
+    * @param yx Number
+    * @param xy Number
+    * @param yy Number
+    * @param dx Number
+    * @param dy Number
+    */
   var setTransform: js.UndefOr[
     js.Function6[
       /* xx */ js.UndefOr[Double], 
@@ -268,11 +268,11 @@ trait ISvgContext extends IBase {
   /** [Method] Strokes the subpaths of the current default path or the given path with the current stroke style  */
   var stroke: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Paints the box that outlines the given rectangle onto the canvas using the current stroke style
-  		* @param x Number
-  		* @param y Number
-  		* @param width Number
-  		* @param height Number
-  		*/
+    * @param x Number
+    * @param y Number
+    * @param width Number
+    * @param height Number
+    */
   var strokeRect: js.UndefOr[
     js.Function4[
       /* x */ js.UndefOr[Double], 
@@ -283,10 +283,10 @@ trait ISvgContext extends IBase {
     ]
   ] = js.undefined
   /** [Method] Strokes the given text at the given position
-  		* @param text String
-  		* @param x Number
-  		* @param y Number
-  		*/
+    * @param text String
+    * @param x Number
+    * @param y Number
+    */
   var strokeText: js.UndefOr[
     js.Function3[
       /* text */ js.UndefOr[String], 
@@ -296,13 +296,13 @@ trait ISvgContext extends IBase {
     ]
   ] = js.undefined
   /** [Method] Changes the transformation matrix to apply the matrix given by the arguments as described below
-  		* @param xx Number
-  		* @param yx Number
-  		* @param xy Number
-  		* @param yy Number
-  		* @param dx Number
-  		* @param dy Number
-  		*/
+    * @param xx Number
+    * @param yx Number
+    * @param xy Number
+    * @param yy Number
+    * @param dx Number
+    * @param dy Number
+    */
   var transform: js.UndefOr[
     js.Function6[
       /* xx */ js.UndefOr[Double], 
@@ -398,7 +398,7 @@ object ISvgContext {
     if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction0(save))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setTransform != null) __obj.updateDynamic("setTransform")(js.Any.fromFunction6(setTransform))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(js.Any.fromFunction0(stroke))
     if (strokeRect != null) __obj.updateDynamic("strokeRect")(js.Any.fromFunction4(strokeRect))

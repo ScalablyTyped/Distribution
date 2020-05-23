@@ -9,8 +9,6 @@ import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Math.Vector4
-import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -69,9 +67,8 @@ import scala.scalajs.js.annotation._
   * UI. The choice is up to you, just remember that you're dealing with standard HTML and CSS floating over the top
   * of your game, and should treat it accordingly.
   */
-@JSGlobal("Phaser.GameObjects.DOMElement")
 @js.native
-class DOMElement protected ()
+trait DOMElement
   extends GameObject
      with AlphaSingle
      with BlendMode
@@ -81,44 +78,9 @@ class DOMElement protected ()
      with Transform
      with Visible {
   /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this DOM Element in the world. Default 0.
-    * @param y The vertical position of this DOM Element in the world. Default 0.
-    * @param element An existing DOM element, or a string. If a string starting with a # it will do a `getElementById` look-up on the string (minus the hash). Without a hash, it represents the type of element to create, i.e. 'div'.
-    * @param style If a string, will be set directly as the elements `style` property value. If a plain object, will be iterated and the values transferred. In both cases the values replacing whatever CSS styles may have been previously set.
-    * @param innerText If given, will be set directly as the elements `innerText` property value, replacing whatever was there before.
-    */
-  def this(scene: Scene) = this()
-  def this(scene: Scene, x: Double) = this()
-  def this(scene: Scene, x: Double, y: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: js.Any) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: js.Any) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: String, innerText: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: js.Any, innerText: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: String, innerText: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: js.Any, innerText: String) = this()
-  /**
     * A reference to the HTML Cache.
     */
   var cache: BaseCache = js.native
-  /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    */
-  /* CompleteClass */
-  override var depth: Double = js.native
   /**
     * The computed display height of this Game Object, based on the `getBoundingClientRect` DOM call.
     * 
@@ -198,13 +160,6 @@ class DOMElement protected ()
     * picked-up by any of its children.
     */
   var transformOnly: Boolean = js.native
-  /**
-    * The visible state of the Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    */
-  /* CompleteClass */
-  override var visible: Boolean = js.native
   /**
     * The native (un-scaled) width of this Game Object.
     * 
@@ -366,20 +321,6 @@ class DOMElement protected ()
     */
   def setClassName(className: String): this.type = js.native
   /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
-  /**
     * Binds a new DOM Element to this Game Object. If this Game Object already has an Element it is removed from the DOM
     * entirely first. Any event listeners you may have previously created will need to be re-created on the new element.
     * 
@@ -468,14 +409,6 @@ class DOMElement protected ()
     * @param text A DOMString representing the rendered text content of the element.
     */
   def setText(text: String): this.type = js.native
-  /**
-    * Sets the visibility of this Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    * @param value The visible state of the Game Object.
-    */
-  /* CompleteClass */
-  override def setVisible(value: Boolean): this.type = js.native
   /**
     * Internal method that calls `getBoundingClientRect` on the `node` and then sets the bounds width
     * and height into the `displayWidth` and `displayHeight` properties, and the `clientWidth` and `clientHeight`

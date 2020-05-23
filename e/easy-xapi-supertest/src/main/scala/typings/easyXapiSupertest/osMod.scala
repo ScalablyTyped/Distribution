@@ -1,5 +1,6 @@
 package typings.easyXapiSupertest
 
+import typings.easyXapiSupertest.anon.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 object osMod extends js.Object {
   var EOL: String = js.native
   def arch(): String = js.native
-  def cpus(): js.Array[AnonModel] = js.native
+  def cpus(): js.Array[Model] = js.native
   def freemem(): Double = js.native
   def hostname(): String = js.native
   def loadavg(): js.Array[Double] = js.native

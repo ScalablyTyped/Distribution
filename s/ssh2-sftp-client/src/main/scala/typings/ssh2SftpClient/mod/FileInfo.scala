@@ -1,6 +1,6 @@
 package typings.ssh2SftpClient.mod
 
-import typings.ssh2SftpClient.AnonGroup
+import typings.ssh2SftpClient.anon.Group
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait FileInfo extends js.Object {
   var modifyTime: Double
   var name: String
   var owner: Double
-  var rights: AnonGroup
+  var rights: Group
   var size: Double
   var `type`: String
 }
@@ -24,7 +24,7 @@ object FileInfo {
     modifyTime: Double,
     name: String,
     owner: Double,
-    rights: AnonGroup,
+    rights: Group,
     size: Double,
     `type`: String
   ): FileInfo = {

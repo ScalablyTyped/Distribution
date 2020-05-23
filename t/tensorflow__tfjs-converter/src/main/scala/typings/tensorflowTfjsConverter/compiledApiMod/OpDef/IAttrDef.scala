@@ -26,22 +26,22 @@ trait IAttrDef extends js.Object {
 object IAttrDef {
   @scala.inline
   def apply(
-    allowedValues: IAttrValue = null,
-    defaultValue: IAttrValue = null,
-    description: String = null,
-    hasMinimum: js.UndefOr[Boolean] = js.undefined,
-    minimum: Double | String = null,
-    name: String = null,
-    `type`: String = null
+    allowedValues: js.UndefOr[Null | IAttrValue] = js.undefined,
+    defaultValue: js.UndefOr[Null | IAttrValue] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
+    hasMinimum: js.UndefOr[Null | Boolean] = js.undefined,
+    minimum: js.UndefOr[Null | Double | String] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    `type`: js.UndefOr[Null | String] = js.undefined
   ): IAttrDef = {
     val __obj = js.Dynamic.literal()
-    if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowedValues)) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(hasMinimum)) __obj.updateDynamic("hasMinimum")(hasMinimum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttrDef]
   }
 }

@@ -2,6 +2,22 @@ package typings.browserfs
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.browserfs.anon.TypeofAsyncMirror
+import typings.browserfs.anon.TypeofBFSUtils
+import typings.browserfs.anon.TypeofDropbox
+import typings.browserfs.anon.TypeofEmscripten
+import typings.browserfs.anon.TypeofFolderAdapter
+import typings.browserfs.anon.TypeofHTML5FS
+import typings.browserfs.anon.TypeofInMemory
+import typings.browserfs.anon.TypeofIndexedDB
+import typings.browserfs.anon.TypeofIsoFS
+import typings.browserfs.anon.TypeofLocalStorage
+import typings.browserfs.anon.TypeofMountableFileSystem
+import typings.browserfs.anon.TypeofOverlayFS
+import typings.browserfs.anon.TypeofWorkerFS
+import typings.browserfs.anon.TypeofXmlHttpRequest
+import typings.browserfs.anon.TypeofZipFS
+import typings.browserfs.anon.Typeofbuffer
 import typings.browserfs.apiErrorMod.ErrorCode
 import typings.browserfs.browserfsMod.FileSystemConfiguration
 import typings.browserfs.browserfsStrings.bfs_utils

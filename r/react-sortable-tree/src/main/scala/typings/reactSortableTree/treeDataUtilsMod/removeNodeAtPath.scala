@@ -1,6 +1,6 @@
 package typings.reactSortableTree.treeDataUtilsMod
 
-import typings.reactSortableTree.FullTreeTreePathgetNodeKe
+import typings.reactSortableTree.anon.FullTreeTreePathgetNodeKe
 import typings.reactSortableTree.mod.TreeItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`

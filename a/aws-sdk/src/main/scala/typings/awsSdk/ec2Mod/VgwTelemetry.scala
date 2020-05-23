@@ -35,7 +35,7 @@ trait VgwTelemetry extends js.Object {
 object VgwTelemetry {
   @scala.inline
   def apply(
-    AcceptedRouteCount: Int | scala.Double = null,
+    AcceptedRouteCount: js.UndefOr[Integer] = js.undefined,
     CertificateArn: String = null,
     LastStatusChange: DateTime = null,
     OutsideIpAddress: String = null,
@@ -43,7 +43,7 @@ object VgwTelemetry {
     StatusMessage: String = null
   ): VgwTelemetry = {
     val __obj = js.Dynamic.literal()
-    if (AcceptedRouteCount != null) __obj.updateDynamic("AcceptedRouteCount")(AcceptedRouteCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AcceptedRouteCount)) __obj.updateDynamic("AcceptedRouteCount")(AcceptedRouteCount.get.asInstanceOf[js.Any])
     if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
     if (LastStatusChange != null) __obj.updateDynamic("LastStatusChange")(LastStatusChange.asInstanceOf[js.Any])
     if (OutsideIpAddress != null) __obj.updateDynamic("OutsideIpAddress")(OutsideIpAddress.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/persistent_stream", "PersistentStream")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/persistent_stream", "PersistentStream")
 @js.native
 abstract class PersistentStream[SendType, ReceiveType, ListenerType /* <: PersistentStreamListener */] protected () extends js.Object {
   def this(

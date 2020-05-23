@@ -30,7 +30,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (exts != null) __obj.updateDynamic("exts")(exts.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreNodeModules)) __obj.updateDynamic("ignoreNodeModules")(ignoreNodeModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreNodeModules)) __obj.updateDynamic("ignoreNodeModules")(ignoreNodeModules.get.asInstanceOf[js.Any])
     if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction1(matcher))
     __obj.asInstanceOf[Options]
   }

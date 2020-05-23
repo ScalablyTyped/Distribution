@@ -18,9 +18,9 @@ trait ReceiveMessageOptions extends BaseOptions {
 
 object ReceiveMessageOptions {
   @scala.inline
-  def apply(qname: String, vt: Int | Double = null): ReceiveMessageOptions = {
+  def apply(qname: String, vt: js.UndefOr[Double] = js.undefined): ReceiveMessageOptions = {
     val __obj = js.Dynamic.literal(qname = qname.asInstanceOf[js.Any])
-    if (vt != null) __obj.updateDynamic("vt")(vt.asInstanceOf[js.Any])
+    if (!js.isUndefined(vt)) __obj.updateDynamic("vt")(vt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiveMessageOptions]
   }
 }

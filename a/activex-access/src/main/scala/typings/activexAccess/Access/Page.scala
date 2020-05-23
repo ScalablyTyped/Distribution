@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Page")
 @js.native
-class Page protected () extends js.Object {
+trait Page extends js.Object {
   @JSName("Access.Page_typekey")
   var AccessDotPage_typekey: Page = js.native
   val Application: typings.activexAccess.Access.Application = js.native

@@ -10,9 +10,9 @@ trait SelectChangeEventDetail extends js.Object {
 
 object SelectChangeEventDetail {
   @scala.inline
-  def apply(value: js.Any | js.Array[_] = null): SelectChangeEventDetail = {
+  def apply(value: js.UndefOr[Null | js.Any | js.Array[_]] = js.undefined): SelectChangeEventDetail = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectChangeEventDetail]
   }
 }

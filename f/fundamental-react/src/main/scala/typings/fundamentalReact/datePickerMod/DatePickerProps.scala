@@ -1,9 +1,8 @@
 package typings.fundamentalReact.datePickerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalReact.AnonDate
-import typings.fundamentalReact.AnonNextMonth
-import typings.fundamentalReact.AnonState
+import typings.fundamentalReact.anon.NextMonth
+import typings.fundamentalReact.anon.State
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,15 +27,17 @@ trait DatePickerProps
   var enableRangeSelection: js.UndefOr[Boolean] = js.undefined
   var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
-  var localizedText: js.UndefOr[AnonNextMonth] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* hasDateFormattedDate */ AnonDate, Unit]] = js.undefined
-  var validationState: js.UndefOr[AnonState] = js.undefined
+  var localizedText: js.UndefOr[NextMonth] = js.undefined
+  var onBlur: js.UndefOr[
+    js.Function1[/* hasDateFormattedDate */ typings.fundamentalReact.anon.Date, Unit]
+  ] = js.undefined
+  var validationState: js.UndefOr[State] = js.undefined
 }
 
 object DatePickerProps {
   @scala.inline
   def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     blockedDates: js.Array[Date] = null,
     buttonLabel: String = null,
     buttonProps: StringDictionary[js.Any] = null,
@@ -53,26 +54,26 @@ object DatePickerProps {
     enableRangeSelection: js.UndefOr[Boolean] = js.undefined,
     inputProps: StringDictionary[js.Any] = null,
     locale: String = null,
-    localizedText: AnonNextMonth = null,
-    onBlur: /* hasDateFormattedDate */ AnonDate => Unit = null,
-    validationState: AnonState = null
+    localizedText: NextMonth = null,
+    onBlur: /* hasDateFormattedDate */ typings.fundamentalReact.anon.Date => Unit = null,
+    validationState: State = null
   ): DatePickerProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (blockedDates != null) __obj.updateDynamic("blockedDates")(blockedDates.asInstanceOf[js.Any])
     if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel.asInstanceOf[js.Any])
     if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (disableAfterDate != null) __obj.updateDynamic("disableAfterDate")(disableAfterDate.asInstanceOf[js.Any])
     if (disableBeforeDate != null) __obj.updateDynamic("disableBeforeDate")(disableBeforeDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFutureDates)) __obj.updateDynamic("disableFutureDates")(disableFutureDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePastDates)) __obj.updateDynamic("disablePastDates")(disablePastDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFutureDates)) __obj.updateDynamic("disableFutureDates")(disableFutureDates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePastDates)) __obj.updateDynamic("disablePastDates")(disablePastDates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
     if (disableWeekday != null) __obj.updateDynamic("disableWeekday")(disableWeekday.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.get.asInstanceOf[js.Any])
     if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRangeSelection)) __obj.updateDynamic("enableRangeSelection")(enableRangeSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRangeSelection)) __obj.updateDynamic("enableRangeSelection")(enableRangeSelection.get.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])

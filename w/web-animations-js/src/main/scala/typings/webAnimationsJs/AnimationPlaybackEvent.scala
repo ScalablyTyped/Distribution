@@ -1,7 +1,5 @@
 package typings.webAnimationsJs
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,13 +17,23 @@ trait AnimationPlaybackEvent extends js.Object {
   var `type`: String
 }
 
-@JSGlobal("AnimationPlaybackEvent")
-@js.native
-object AnimationPlaybackEvent
-  extends Instantiable1[/* type */ String, AnimationPlaybackEvent]
-     with Instantiable2[
-      /* type */ String, 
-      /* eventInitDict */ AnimationPlaybackEventInit, 
-      AnimationPlaybackEvent
-    ]
+object AnimationPlaybackEvent {
+  @scala.inline
+  def apply(
+    bubbles: Boolean,
+    cancelable: Boolean,
+    currentTarget: Animation,
+    defaultPrevented: Boolean,
+    eventPhase: Double,
+    target: Animation,
+    timeStamp: Double,
+    `type`: String,
+    currentTime: Double = null.asInstanceOf[Double],
+    timelineTime: Double = null.asInstanceOf[Double]
+  ): AnimationPlaybackEvent = {
+    val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], timelineTime = timelineTime.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnimationPlaybackEvent]
+  }
+}
 

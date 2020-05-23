@@ -45,7 +45,7 @@ object SubmitContainerStateChangeRequest {
   def apply(
     cluster: String = null,
     containerName: String = null,
-    exitCode: Int | scala.Double = null,
+    exitCode: js.UndefOr[BoxedInteger] = js.undefined,
     networkBindings: NetworkBindings = null,
     reason: String = null,
     runtimeId: String = null,
@@ -55,7 +55,7 @@ object SubmitContainerStateChangeRequest {
     val __obj = js.Dynamic.literal()
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
     if (networkBindings != null) __obj.updateDynamic("networkBindings")(networkBindings.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (runtimeId != null) __obj.updateDynamic("runtimeId")(runtimeId.asInstanceOf[js.Any])

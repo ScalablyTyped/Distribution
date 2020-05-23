@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.ProtectedViewWindow")
 @js.native
-class ProtectedViewWindow protected () extends js.Object {
+trait ProtectedViewWindow extends js.Object {
   val Active: Boolean = js.native
   val Application: typings.activexWord.Word.Application = js.native
   var Caption: String = js.native

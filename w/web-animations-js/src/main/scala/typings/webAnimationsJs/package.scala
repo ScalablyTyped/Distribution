@@ -10,4 +10,6 @@ package object webAnimationsJs {
     /* evt */ typings.webAnimationsJs.AnimationPlaybackEvent, 
     js.Any
   ]) | scala.Null
+  type GroupEffect = typings.std.KeyframeEffect
+  type SequenceEffect = typings.std.KeyframeEffect
 }

@@ -1,6 +1,8 @@
 package typings.tstl
 
 import typings.std.Date
+import typings.tstl.anon.PickILockablelock
+import typings.tstl.anon.PickILockabletrylock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

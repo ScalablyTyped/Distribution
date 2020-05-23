@@ -6,10 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the accelerometer-shaken event. */
-@JSGlobal("Windows.Devices.Sensors.AccelerometerShakenEventArgs")
-@js.native
-abstract class AccelerometerShakenEventArgs () extends js.Object {
+trait AccelerometerShakenEventArgs extends js.Object {
   /** Gets the time at which the sensor reported the shaken event. */
-  var timestamp: Date = js.native
+  var timestamp: Date
+}
+
+object AccelerometerShakenEventArgs {
+  @scala.inline
+  def apply(timestamp: Date): AccelerometerShakenEventArgs = {
+    val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccelerometerShakenEventArgs]
+  }
 }
 

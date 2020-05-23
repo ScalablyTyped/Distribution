@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object components {
   type Collator = js.Function2[
     /* markup */ java.lang.String, 
-    /* item */ typings.frctlFractal.AnonHandle, 
+    /* item */ typings.frctlFractal.anon.Handle, 
     java.lang.String
   ]
 }

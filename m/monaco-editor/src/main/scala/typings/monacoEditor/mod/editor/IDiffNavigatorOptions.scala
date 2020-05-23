@@ -18,9 +18,9 @@ object IDiffNavigatorOptions {
     ignoreCharChanges: js.UndefOr[Boolean] = js.undefined
   ): IDiffNavigatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysRevealFirst)) __obj.updateDynamic("alwaysRevealFirst")(alwaysRevealFirst.asInstanceOf[js.Any])
-    if (!js.isUndefined(followsCaret)) __obj.updateDynamic("followsCaret")(followsCaret.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCharChanges)) __obj.updateDynamic("ignoreCharChanges")(ignoreCharChanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysRevealFirst)) __obj.updateDynamic("alwaysRevealFirst")(alwaysRevealFirst.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followsCaret)) __obj.updateDynamic("followsCaret")(followsCaret.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCharChanges)) __obj.updateDynamic("ignoreCharChanges")(ignoreCharChanges.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDiffNavigatorOptions]
   }
 }

@@ -41,7 +41,7 @@ trait Dinero extends js.Object {
   def toFormat(): String = js.native
   def toFormat(format: String): String = js.native
   def toFormat(format: String, roundingMode: RoundingMode): String = js.native
-  def toJson(): DineroObject = js.native
+  def toJSON(): DineroObject = js.native
   def toObject(): DineroObject = js.native
   def toRoundedUnit(digits: Double): Double = js.native
   def toRoundedUnit(digits: Double, roundingMode: RoundingMode): Double = js.native

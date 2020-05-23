@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** W3C-DOM XML Document 6.0 (Free threaded) */
-@JSGlobal("MSXML2.FreeThreadedDOMDocument60")
 @js.native
-class FreeThreadedDOMDocument60 protected () extends js.Object {
+trait FreeThreadedDOMDocument60 extends js.Object {
   @JSName("MSXML2.FreeThreadedDOMDocument60_typekey")
   var MSXML2DotFreeThreadedDOMDocument60_typekey: FreeThreadedDOMDocument60 = js.native
   /** flag for asynchronous download */

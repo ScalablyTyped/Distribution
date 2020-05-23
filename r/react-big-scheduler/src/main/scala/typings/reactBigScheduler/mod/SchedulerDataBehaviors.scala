@@ -1,6 +1,6 @@
 package typings.reactBigScheduler.mod
 
-import typings.reactBigScheduler.AnonCellUnit
+import typings.reactBigScheduler.anon.CellUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait SchedulerDataBehaviors extends js.Object {
       /* schedulerData */ SchedulerData, 
       /* num */ Double, 
       /* date */ js.UndefOr[String], 
-      AnonCellUnit
+      CellUnit
     ]
   ] = js.undefined
   var isNonWorkingTimeFunc: js.UndefOr[js.Function2[/* schedulerData */ SchedulerData, /* time */ String, Boolean]] = js.undefined
@@ -20,7 +20,7 @@ trait SchedulerDataBehaviors extends js.Object {
 object SchedulerDataBehaviors {
   @scala.inline
   def apply(
-    getCustomDateFunc: (/* schedulerData */ SchedulerData, /* num */ Double, /* date */ js.UndefOr[String]) => AnonCellUnit = null,
+    getCustomDateFunc: (/* schedulerData */ SchedulerData, /* num */ Double, /* date */ js.UndefOr[String]) => CellUnit = null,
     isNonWorkingTimeFunc: (/* schedulerData */ SchedulerData, /* time */ String) => Boolean = null
   ): SchedulerDataBehaviors = {
     val __obj = js.Dynamic.literal()

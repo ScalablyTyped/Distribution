@@ -29,12 +29,12 @@ object DescribeSubscriptionFiltersRequest {
   def apply(
     logGroupName: LogGroupName,
     filterNamePrefix: FilterName = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[DescribeLimit] = js.undefined,
     nextToken: NextToken = null
   ): DescribeSubscriptionFiltersRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
     if (filterNamePrefix != null) __obj.updateDynamic("filterNamePrefix")(filterNamePrefix.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSubscriptionFiltersRequest]
   }

@@ -1,6 +1,6 @@
 package typings.hapi.mod
 
-import typings.hapi.AnonHapi
+import typings.hapi.anon.Hapi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait PluginBase[T] extends js.Object {
     * Allows defining semver requirements for node and hapi.
     * @default Allows all.
     */
-  var requirements: js.UndefOr[AnonHapi] = js.undefined
+  var requirements: js.UndefOr[Hapi] = js.undefined
   /**
     * (required) the registration function with the signature async function(server, options) where:
     * * server - the server object with a plugin-specific server.realm.
@@ -32,12 +32,12 @@ object PluginBase {
     dependencies: Dependencies = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     once: js.UndefOr[Boolean] = js.undefined,
-    requirements: AnonHapi = null
+    requirements: Hapi = null
   ): PluginBase[T] = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
     if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginBase[T]]
   }

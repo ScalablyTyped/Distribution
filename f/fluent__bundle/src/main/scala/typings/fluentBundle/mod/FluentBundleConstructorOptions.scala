@@ -20,7 +20,7 @@ object FluentBundleConstructorOptions {
     val __obj = js.Dynamic.literal()
     if (functions != null) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
-    if (!js.isUndefined(useIsolating)) __obj.updateDynamic("useIsolating")(useIsolating.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIsolating)) __obj.updateDynamic("useIsolating")(useIsolating.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FluentBundleConstructorOptions]
   }
 }

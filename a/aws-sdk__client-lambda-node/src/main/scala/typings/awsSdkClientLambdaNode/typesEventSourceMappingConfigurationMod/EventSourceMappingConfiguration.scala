@@ -43,7 +43,7 @@ trait EventSourceMappingConfiguration extends js.Object {
 object EventSourceMappingConfiguration {
   @scala.inline
   def apply(
-    BatchSize: Int | Double = null,
+    BatchSize: js.UndefOr[Double] = js.undefined,
     EventSourceArn: String = null,
     FunctionArn: String = null,
     LastModified: Date | String | Double = null,
@@ -53,7 +53,7 @@ object EventSourceMappingConfiguration {
     UUID: String = null
   ): EventSourceMappingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (BatchSize != null) __obj.updateDynamic("BatchSize")(BatchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize.get.asInstanceOf[js.Any])
     if (EventSourceArn != null) __obj.updateDynamic("EventSourceArn")(EventSourceArn.asInstanceOf[js.Any])
     if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])

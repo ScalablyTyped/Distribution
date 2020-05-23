@@ -10,9 +10,6 @@ object expoStrings {
   sealed trait FaceAnchor extends js.Object
   
   @js.native
-  sealed trait __expoConsoleLog extends js.Object
-  
-  @js.native
   sealed trait cancel extends js.Object
   
   @js.native
@@ -77,8 +74,6 @@ object expoStrings {
   
   @scala.inline
   def FaceAnchor: FaceAnchor = "FaceAnchor".asInstanceOf[FaceAnchor]
-  @scala.inline
-  def __expoConsoleLog: __expoConsoleLog = "__expoConsoleLog".asInstanceOf[__expoConsoleLog]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline

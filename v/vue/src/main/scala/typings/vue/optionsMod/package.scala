@@ -10,7 +10,7 @@ package object optionsMod {
     */ typings.vue.vueStrings.Accessors with org.scalablytyped.runtime.TopLevel[js.Any]
   type ArrayPropsDefinition[T] = js.Array[/* keyof T */ java.lang.String]
   type AsyncComponent[Data, Methods, Computed, Props] = (typings.vue.optionsMod.AsyncComponentPromise[Data, Methods, Computed, Props]) | (typings.vue.optionsMod.AsyncComponentFactory[Data, Methods, Computed, Props])
-  type AsyncComponentFactory[Data, Methods, Computed, Props] = js.Function0[typings.vue.AnonComponent[Data, Methods, Computed, Props]]
+  type AsyncComponentFactory[Data, Methods, Computed, Props] = js.Function0[typings.vue.anon.Component[Data, Methods, Computed, Props]]
   type AsyncComponentPromise[Data, Methods, Computed, Props] = js.Function2[
     /* resolve */ js.Function1[
       /* component */ typings.vue.optionsMod.Component[Data, Methods, Computed, Props], 
@@ -40,11 +40,11 @@ package object optionsMod {
     scala.Unit
   ]
   type InjectKey = java.lang.String | js.Symbol
-  type InjectOptions = (org.scalablytyped.runtime.StringDictionary[typings.vue.optionsMod.InjectKey | typings.vue.AnonDefault]) | js.Array[java.lang.String]
+  type InjectOptions = (org.scalablytyped.runtime.StringDictionary[typings.vue.optionsMod.InjectKey | typings.vue.anon.Default]) | js.Array[java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - js.Function0[T]
-    - typings.vue.AnonInstantiable[T]
-    - typings.vue.AnonInstantiableFunction
+    - typings.vue.anon.Instantiable[T]
+    - typings.vue.anon.InstantiableFunction
   */
   type Prop[T] = typings.vue.optionsMod._Prop[T] | js.Function0[T]
   type PropType[T] = typings.vue.optionsMod.Prop[T] | js.Array[typings.vue.optionsMod.Prop[T]]

@@ -1,6 +1,6 @@
 package typings.obsoleteWeb.mod
 
-import typings.obsoleteWeb.ReadonlyRequiredOptions
+import typings.obsoleteWeb.anon.ReadonlyRequiredOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

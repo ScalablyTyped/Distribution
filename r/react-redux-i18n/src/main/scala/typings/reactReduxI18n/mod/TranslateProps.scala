@@ -20,7 +20,7 @@ object TranslateProps {
   @scala.inline
   def apply(
     value: String,
-    StringDictionary: /* prop */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
     dangerousHTML: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -29,7 +29,7 @@ object TranslateProps {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(dangerousHTML)) __obj.updateDynamic("dangerousHTML")(dangerousHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(dangerousHTML)) __obj.updateDynamic("dangerousHTML")(dangerousHTML.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateProps]

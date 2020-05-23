@@ -42,21 +42,21 @@ object ApplicationOptions {
     useNativeScrolling: js.UndefOr[Boolean] = js.undefined
   ): ApplicationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browserHistory)) __obj.updateDynamic("browserHistory")(browserHistory.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideAddressBar)) __obj.updateDynamic("hideAddressBar")(hideAddressBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserHistory)) __obj.updateDynamic("browserHistory")(browserHistory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideAddressBar)) __obj.updateDynamic("hideAddressBar")(hideAddressBar.get.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (modelScope != null) __obj.updateDynamic("modelScope")(modelScope.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (!js.isUndefined(retina)) __obj.updateDynamic("retina")(retina.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverNavigation)) __obj.updateDynamic("serverNavigation")(serverNavigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(retina)) __obj.updateDynamic("retina")(retina.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverNavigation)) __obj.updateDynamic("serverNavigation")(serverNavigation.get.asInstanceOf[js.Any])
     if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
     if (statusBarStyle != null) __obj.updateDynamic("statusBarStyle")(statusBarStyle.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateDocumentTitle)) __obj.updateDynamic("updateDocumentTitle")(updateDocumentTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeScrolling)) __obj.updateDynamic("useNativeScrolling")(useNativeScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateDocumentTitle)) __obj.updateDynamic("updateDocumentTitle")(updateDocumentTitle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeScrolling)) __obj.updateDynamic("useNativeScrolling")(useNativeScrolling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationOptions]
   }
 }

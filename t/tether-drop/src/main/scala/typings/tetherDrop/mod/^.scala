@@ -1,6 +1,6 @@
 package typings.tetherDrop.mod
 
-import typings.tetherDrop.TypeofDrop
+import typings.tetherDrop.anon.TypeofDrop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

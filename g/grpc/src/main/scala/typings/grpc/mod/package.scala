@@ -17,7 +17,7 @@ package object mod {
   ]
   type CloseRequester = js.Function1[/* next */ js.Function, scala.Unit]
   type Deadline = scala.Double | typings.std.Date
-  type Filename = java.lang.String | typings.grpc.AnonFile
+  type Filename = java.lang.String | typings.grpc.anon.File
   type GetPeerRequester = js.Function1[/* next */ js.Function, java.lang.String]
   type MessageListener = js.Function2[/* message */ js.Any, /* next */ js.Function, scala.Unit]
   type MessageRequester = js.Function2[/* message */ js.Any, /* next */ js.Function, scala.Unit]
@@ -73,7 +73,7 @@ package object mod {
     scala.Unit
   ]
   type metadataGenerator = js.Function2[
-    /* params */ typings.grpc.AnonServiceurl, 
+    /* params */ typings.grpc.anon.Serviceurl, 
     /* callback */ js.Function2[
       /* error */ typings.std.Error | scala.Null, 
       /* metadata */ js.UndefOr[typings.grpc.mod.Metadata], 

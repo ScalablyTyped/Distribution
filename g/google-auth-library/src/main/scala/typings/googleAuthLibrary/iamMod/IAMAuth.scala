@@ -1,6 +1,6 @@
 package typings.googleAuthLibrary.iamMod
 
-import typings.googleAuthLibrary.AnonXgoogiamauthorityselector
+import typings.googleAuthLibrary.anon.Xgoogiamauthorityselector
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ class IAMAuth protected () extends js.Object {
   /**
     * Acquire the HTTP headers required to make an authenticated request.
     */
-  def getRequestHeaders(): AnonXgoogiamauthorityselector = js.native
+  def getRequestHeaders(): Xgoogiamauthorityselector = js.native
   /**
     * Pass the selector and token to the metadataFn callback.
     * @deprecated

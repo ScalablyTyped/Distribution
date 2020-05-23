@@ -15,15 +15,15 @@ object PhotoSettings {
   @scala.inline
   def apply(
     fillLightMode: FillLightMode = null,
-    imageHeight: Int | Double = null,
-    imageWidth: Int | Double = null,
+    imageHeight: js.UndefOr[Double] = js.undefined,
+    imageWidth: js.UndefOr[Double] = js.undefined,
     redEyeReduction: js.UndefOr[Boolean] = js.undefined
   ): PhotoSettings = {
     val __obj = js.Dynamic.literal()
     if (fillLightMode != null) __obj.updateDynamic("fillLightMode")(fillLightMode.asInstanceOf[js.Any])
-    if (imageHeight != null) __obj.updateDynamic("imageHeight")(imageHeight.asInstanceOf[js.Any])
-    if (imageWidth != null) __obj.updateDynamic("imageWidth")(imageWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(redEyeReduction)) __obj.updateDynamic("redEyeReduction")(redEyeReduction.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageHeight)) __obj.updateDynamic("imageHeight")(imageHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageWidth)) __obj.updateDynamic("imageWidth")(imageWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redEyeReduction)) __obj.updateDynamic("redEyeReduction")(redEyeReduction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoSettings]
   }
 }

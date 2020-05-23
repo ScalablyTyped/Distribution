@@ -110,16 +110,16 @@ object TooltipTriggerProps {
     tooltip: TooltipArg => ReactNode,
     trigger: Trigger,
     usePortal: Boolean,
-    getTooltipRef: Ref = null,
-    getTriggerRef: Ref = null,
+    getTooltipRef: js.UndefOr[Null | Ref] = js.undefined,
+    getTriggerRef: js.UndefOr[Null | Ref] = js.undefined,
     modifiers: Modifiers = null,
     tooltipShown: js.UndefOr[Boolean] = js.undefined
   ): TooltipTriggerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries.asInstanceOf[js.Any], defaultTooltipShown = defaultTooltipShown.asInstanceOf[js.Any], delayHide = delayHide.asInstanceOf[js.Any], delayShow = delayShow.asInstanceOf[js.Any], followCursor = followCursor.asInstanceOf[js.Any], mutationObserverOptions = mutationObserverOptions.asInstanceOf[js.Any], onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement.asInstanceOf[js.Any], portalContainer = portalContainer.asInstanceOf[js.Any], tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal.asInstanceOf[js.Any])
-    if (getTooltipRef != null) __obj.updateDynamic("getTooltipRef")(getTooltipRef.asInstanceOf[js.Any])
-    if (getTriggerRef != null) __obj.updateDynamic("getTriggerRef")(getTriggerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(getTooltipRef)) __obj.updateDynamic("getTooltipRef")(getTooltipRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(getTriggerRef)) __obj.updateDynamic("getTriggerRef")(getTriggerRef.asInstanceOf[js.Any])
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipShown)) __obj.updateDynamic("tooltipShown")(tooltipShown.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipShown)) __obj.updateDynamic("tooltipShown")(tooltipShown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipTriggerProps]
   }
 }

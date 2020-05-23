@@ -30,13 +30,13 @@ object CacheParameterGroup {
     CacheParameterGroupFamily: String = null,
     CacheParameterGroupName: String = null,
     Description: String = null,
-    IsGlobal: js.UndefOr[scala.Boolean] = js.undefined
+    IsGlobal: js.UndefOr[Boolean] = js.undefined
   ): CacheParameterGroup = {
     val __obj = js.Dynamic.literal()
     if (CacheParameterGroupFamily != null) __obj.updateDynamic("CacheParameterGroupFamily")(CacheParameterGroupFamily.asInstanceOf[js.Any])
     if (CacheParameterGroupName != null) __obj.updateDynamic("CacheParameterGroupName")(CacheParameterGroupName.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsGlobal)) __obj.updateDynamic("IsGlobal")(IsGlobal.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsGlobal)) __obj.updateDynamic("IsGlobal")(IsGlobal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheParameterGroup]
   }
 }

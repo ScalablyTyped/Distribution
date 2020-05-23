@@ -1,11 +1,11 @@
 package typings.officeJs.Word
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.Word.Interfaces.FontData
 import typings.officeJs.Word.Interfaces.FontLoadOptions
 import typings.officeJs.Word.Interfaces.FontUpdateData
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.DashLine
 import typings.officeJs.officeJsStrings.DashLineHeavy
 import typings.officeJs.officeJsStrings.DashLineLong
@@ -35,9 +35,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.1]
   */
-@JSGlobal("Word.Font")
 @js.native
-class Font () extends ClientObject {
+trait Font extends ClientObject {
   /**
     *
     * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
@@ -137,8 +136,8 @@ class Font () extends ClientObject {
   def load(): Font = js.native
   def load(option: String): Font = js.native
   def load(option: js.Array[String]): Font = js.native
-  def load(option: AnonExpand): Font = js.native
   def load(option: FontLoadOptions): Font = js.native
+  def load(option: Expand): Font = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Font): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

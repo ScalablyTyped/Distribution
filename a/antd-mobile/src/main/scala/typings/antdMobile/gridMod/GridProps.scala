@@ -22,9 +22,9 @@ object GridProps {
   def apply(
     activeClassName: String = null,
     activeStyle: Boolean | CSSProperties = null,
-    carouselMaxRow: Int | Double = null,
+    carouselMaxRow: js.UndefOr[Double] = js.undefined,
     className: String = null,
-    columnNum: Int | Double = null,
+    columnNum: js.UndefOr[Double] = js.undefined,
     data: js.Array[js.UndefOr[DataItem]] = null,
     hasLine: js.UndefOr[Boolean] = js.undefined,
     isCarousel: js.UndefOr[Boolean] = js.undefined,
@@ -37,17 +37,17 @@ object GridProps {
     val __obj = js.Dynamic.literal()
     if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName.asInstanceOf[js.Any])
     if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
-    if (carouselMaxRow != null) __obj.updateDynamic("carouselMaxRow")(carouselMaxRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(carouselMaxRow)) __obj.updateDynamic("carouselMaxRow")(carouselMaxRow.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columnNum != null) __obj.updateDynamic("columnNum")(columnNum.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnNum)) __obj.updateDynamic("columnNum")(columnNum.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasLine)) __obj.updateDynamic("hasLine")(hasLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCarousel)) __obj.updateDynamic("isCarousel")(isCarousel.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasLine)) __obj.updateDynamic("hasLine")(hasLine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCarousel)) __obj.updateDynamic("isCarousel")(isCarousel.get.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction2(renderItem))
-    if (!js.isUndefined(square)) __obj.updateDynamic("square")(square.asInstanceOf[js.Any])
+    if (!js.isUndefined(square)) __obj.updateDynamic("square")(square.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]
   }
 }

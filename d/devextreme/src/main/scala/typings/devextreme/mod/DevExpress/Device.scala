@@ -48,14 +48,14 @@ object Device {
     version: js.Array[Double] = null
   ): Device = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(android)) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (!js.isUndefined(android)) __obj.updateDynamic("android")(android.get.asInstanceOf[js.Any])
     if (deviceType != null) __obj.updateDynamic("deviceType")(deviceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(generic)) __obj.updateDynamic("generic")(generic.asInstanceOf[js.Any])
+    if (!js.isUndefined(generic)) __obj.updateDynamic("generic")(generic.get.asInstanceOf[js.Any])
     if (grade != null) __obj.updateDynamic("grade")(grade.asInstanceOf[js.Any])
-    if (!js.isUndefined(ios)) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
-    if (!js.isUndefined(phone)) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (!js.isUndefined(ios)) __obj.updateDynamic("ios")(ios.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(phone)) __obj.updateDynamic("phone")(phone.get.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (!js.isUndefined(tablet)) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
+    if (!js.isUndefined(tablet)) __obj.updateDynamic("tablet")(tablet.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }

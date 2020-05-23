@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Updates a badge overlay on the specific tile that the updater is bound to. */
-@JSGlobal("Windows.UI.Notifications.BadgeUpdater")
 @js.native
-abstract class BadgeUpdater () extends js.Object {
+trait BadgeUpdater extends js.Object {
   /** Removes the badge from the tile that the updater is bound to. */
   def clear(): Unit = js.native
   /**

@@ -37,16 +37,16 @@ object ListWorkflowTypesInput {
   def apply(
     domain: DomainName,
     registrationStatus: RegistrationStatus,
-    maximumPageSize: Int | Double = null,
+    maximumPageSize: js.UndefOr[PageSize] = js.undefined,
     name: Name = null,
     nextPageToken: PageToken = null,
-    reverseOrder: js.UndefOr[Boolean] = js.undefined
+    reverseOrder: js.UndefOr[ReverseOrder] = js.undefined
   ): ListWorkflowTypesInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any])
-    if (maximumPageSize != null) __obj.updateDynamic("maximumPageSize")(maximumPageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumPageSize)) __obj.updateDynamic("maximumPageSize")(maximumPageSize.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkflowTypesInput]
   }
 }

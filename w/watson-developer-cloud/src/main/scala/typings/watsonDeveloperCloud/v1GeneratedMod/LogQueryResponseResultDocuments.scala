@@ -14,9 +14,12 @@ trait LogQueryResponseResultDocuments extends js.Object {
 
 object LogQueryResponseResultDocuments {
   @scala.inline
-  def apply(count: Int | Double = null, results: js.Array[LogQueryResponseResultDocumentsResult] = null): LogQueryResponseResultDocuments = {
+  def apply(
+    count: js.UndefOr[Double] = js.undefined,
+    results: js.Array[LogQueryResponseResultDocumentsResult] = null
+  ): LogQueryResponseResultDocuments = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogQueryResponseResultDocuments]
   }

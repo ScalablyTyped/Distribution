@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Display
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,59 +78,6 @@ object ResolutionScale extends js.Object {
   /** Specifies the scale of a display as 500 percent. */
   @js.native
   sealed trait scale500Percent extends ResolutionScale
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ResolutionScale with Double] = js.native
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 1 */ @js.native
-  object scale100Percent extends TopLevel[scale100Percent with Double]
-  
-  /* 2 */ @js.native
-  object scale120Percent extends TopLevel[scale120Percent with Double]
-  
-  /* 3 */ @js.native
-  object scale125Percent extends TopLevel[scale125Percent with Double]
-  
-  /* 4 */ @js.native
-  object scale140Percent extends TopLevel[scale140Percent with Double]
-  
-  /* 5 */ @js.native
-  object scale150Percent extends TopLevel[scale150Percent with Double]
-  
-  /* 6 */ @js.native
-  object scale160Percent extends TopLevel[scale160Percent with Double]
-  
-  /* 7 */ @js.native
-  object scale175Percent extends TopLevel[scale175Percent with Double]
-  
-  /* 8 */ @js.native
-  object scale180Percent extends TopLevel[scale180Percent with Double]
-  
-  /* 9 */ @js.native
-  object scale200Percent extends TopLevel[scale200Percent with Double]
-  
-  /* 10 */ @js.native
-  object scale225Percent extends TopLevel[scale225Percent with Double]
-  
-  /* 11 */ @js.native
-  object scale250Percent extends TopLevel[scale250Percent with Double]
-  
-  /* 12 */ @js.native
-  object scale300Percent extends TopLevel[scale300Percent with Double]
-  
-  /* 13 */ @js.native
-  object scale350Percent extends TopLevel[scale350Percent with Double]
-  
-  /* 14 */ @js.native
-  object scale400Percent extends TopLevel[scale400Percent with Double]
-  
-  /* 15 */ @js.native
-  object scale450Percent extends TopLevel[scale450Percent with Double]
-  
-  /* 16 */ @js.native
-  object scale500Percent extends TopLevel[scale500Percent with Double]
   
 }
 

@@ -18,9 +18,9 @@ trait ListWorkGroupsInput extends js.Object {
 
 object ListWorkGroupsInput {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: Token = null): ListWorkGroupsInput = {
+  def apply(MaxResults: js.UndefOr[MaxWorkGroupsCount] = js.undefined, NextToken: Token = null): ListWorkGroupsInput = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkGroupsInput]
   }

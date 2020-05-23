@@ -48,21 +48,21 @@ object SSH2StreamConfig {
     algorithms: Algorithms = null,
     banner: String = null,
     debug: /* information */ String => _ = null,
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     hostKeys: HostKeys = null,
     ident: String = null,
-    maxPacketSize: Int | Double = null,
+    maxPacketSize: js.UndefOr[Double] = js.undefined,
     server: js.UndefOr[Boolean] = js.undefined
   ): SSH2StreamConfig = {
     val __obj = js.Dynamic.literal()
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
     if (hostKeys != null) __obj.updateDynamic("hostKeys")(hostKeys.asInstanceOf[js.Any])
     if (ident != null) __obj.updateDynamic("ident")(ident.asInstanceOf[js.Any])
-    if (maxPacketSize != null) __obj.updateDynamic("maxPacketSize")(maxPacketSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPacketSize)) __obj.updateDynamic("maxPacketSize")(maxPacketSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SSH2StreamConfig]
   }
 }

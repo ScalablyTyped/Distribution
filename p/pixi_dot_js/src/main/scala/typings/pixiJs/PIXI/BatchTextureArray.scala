@@ -11,23 +11,29 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.BatchTextureArray")
-@js.native
-class BatchTextureArray () extends js.Object {
+trait BatchTextureArray extends js.Object {
   /**
     * number of filled elements
     * @member {number} PIXI.BatchTextureArray#count
     */
-  var count: Double = js.native
+  var count: Double
   /**
     * inside textures array
     * @member {PIXI.BaseTexture[]} PIXI.BatchTextureArray#elements
     */
-  var elements: js.Array[BaseTexture] = js.native
+  var elements: js.Array[BaseTexture]
   /**
     * Respective locations for textures
     * @member {number[]} PIXI.BatchTextureArray#ids
     */
-  var ids: js.Array[Double] = js.native
+  var ids: js.Array[Double]
+}
+
+object BatchTextureArray {
+  @scala.inline
+  def apply(count: Double, elements: js.Array[BaseTexture], ids: js.Array[Double]): BatchTextureArray = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BatchTextureArray]
+  }
 }
 

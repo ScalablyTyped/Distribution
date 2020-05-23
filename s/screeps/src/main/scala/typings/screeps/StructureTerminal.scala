@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,8 +36,4 @@ trait StructureTerminal
   def send(resourceType: ResourceConstant, amount: Double, destination: String): ScreepsReturnCode = js.native
   def send(resourceType: ResourceConstant, amount: Double, destination: String, description: String): ScreepsReturnCode = js.native
 }
-
-@JSGlobal("StructureTerminal")
-@js.native
-object StructureTerminal extends TopLevel[StructureTerminalConstructor]
 

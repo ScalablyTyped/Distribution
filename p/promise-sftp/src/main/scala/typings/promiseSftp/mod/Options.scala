@@ -2,7 +2,7 @@ package typings.promiseSftp.mod
 
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
-import typings.promiseSftp.AnonEcho
+import typings.promiseSftp.anon.Echo
 import typings.promiseSftp.promiseSftpStrings.force
 import typings.promiseSftp.promiseSftpStrings.md5
 import typings.promiseSftp.promiseSftpStrings.sha1
@@ -92,7 +92,7 @@ trait Options extends js.Object {
       /* name */ String, 
       /* instructions */ String, 
       /* instructionsLang */ String, 
-      /* prompts */ js.Array[AnonEcho], 
+      /* prompts */ js.Array[Echo], 
       (js.Array[String | typings.bluebird.mod.^[String]]) | typings.bluebird.mod.^[js.Array[String]]
     ])
   ] = js.native

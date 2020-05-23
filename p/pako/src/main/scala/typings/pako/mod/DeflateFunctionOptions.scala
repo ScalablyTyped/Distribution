@@ -31,20 +31,20 @@ object DeflateFunctionOptions {
   def apply(
     dictionary: js.Any = null,
     level: `-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` = null,
-    memLevel: Int | Double = null,
+    memLevel: js.UndefOr[Double] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
     strategy: StrategyValues = null,
     to: string = null,
-    windowBits: Int | Double = null
+    windowBits: js.UndefOr[Double] = js.undefined
   ): DeflateFunctionOptions = {
     val __obj = js.Dynamic.literal()
     if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (memLevel != null) __obj.updateDynamic("memLevel")(memLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(memLevel)) __obj.updateDynamic("memLevel")(memLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowBits)) __obj.updateDynamic("windowBits")(windowBits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeflateFunctionOptions]
   }
 }

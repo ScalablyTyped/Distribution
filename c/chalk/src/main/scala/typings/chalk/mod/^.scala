@@ -1,6 +1,6 @@
 package typings.chalk.mod
 
-import typings.chalk.ChalksupportsColorColorSu
+import typings.chalk.anon.ChalksupportsColorColorSu
 import typings.chalk.chalkBooleans.`false`
 import typings.std.TemplateStringsArray
 import scala.scalajs.js

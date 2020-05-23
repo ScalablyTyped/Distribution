@@ -26,7 +26,7 @@ trait Slider extends js.Object {
   var fillerColor: js.UndefOr[String] = js.undefined
   var filterMode: js.UndefOr[filter | weakFilter | empty | none] = js.undefined
   var handleIcon: js.UndefOr[String] = js.undefined
-  var handleSize: js.UndefOr[Double] = js.undefined
+  var handleSize: js.UndefOr[Double | String] = js.undefined
   var handleStyle: js.UndefOr[js.Object] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var labelFormatter: js.UndefOr[String | js.Function] = js.undefined
@@ -66,20 +66,20 @@ object Slider {
     borderColor: String = null,
     bottom: String | Double = null,
     dataBackground: js.Object = null,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     endValue: Double | String | Date = null,
     fillerColor: String = null,
     filterMode: filter | weakFilter | empty | none = null,
     handleIcon: String = null,
-    handleSize: Int | Double = null,
+    handleSize: Double | String = null,
     handleStyle: js.Object = null,
     id: String = null,
     labelFormatter: String | js.Function = null,
-    labelPrecision: Int | Double = null,
+    labelPrecision: js.UndefOr[Double] = js.undefined,
     left: String | Double = null,
-    maxSpan: Int | Double = null,
+    maxSpan: js.UndefOr[Double] = js.undefined,
     maxValueSpan: Double | String | Date = null,
-    minSpan: Int | Double = null,
+    minSpan: js.UndefOr[Double] = js.undefined,
     minValueSpan: Double | String | Date = null,
     orient: vertical | horizontal = null,
     radiusAxisIndex: Double | js.Array[Double] = null,
@@ -90,16 +90,16 @@ object Slider {
     showDataShadow: String = null,
     showDetail: js.UndefOr[Boolean] = js.undefined,
     singleAxisIndex: Double | js.Array[Double] = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     startValue: Double | String | Date = null,
     textStyle: BaseTextStyle = null,
-    throttle: Int | Double = null,
+    throttle: js.UndefOr[Double] = js.undefined,
     top: String | Double = null,
     `type`: String = null,
     xAxisIndex: Double | js.Array[Double] = null,
     yAxisIndex: Double | js.Array[Double] = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null,
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined,
     zoomLock: js.UndefOr[Boolean] = js.undefined
   ): Slider = {
     val __obj = js.Dynamic.literal()
@@ -108,7 +108,7 @@ object Slider {
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (dataBackground != null) __obj.updateDynamic("dataBackground")(dataBackground.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
     if (fillerColor != null) __obj.updateDynamic("fillerColor")(fillerColor.asInstanceOf[js.Any])
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
@@ -117,32 +117,32 @@ object Slider {
     if (handleStyle != null) __obj.updateDynamic("handleStyle")(handleStyle.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter.asInstanceOf[js.Any])
-    if (labelPrecision != null) __obj.updateDynamic("labelPrecision")(labelPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelPrecision)) __obj.updateDynamic("labelPrecision")(labelPrecision.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (maxSpan != null) __obj.updateDynamic("maxSpan")(maxSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSpan)) __obj.updateDynamic("maxSpan")(maxSpan.get.asInstanceOf[js.Any])
     if (maxValueSpan != null) __obj.updateDynamic("maxValueSpan")(maxValueSpan.asInstanceOf[js.Any])
-    if (minSpan != null) __obj.updateDynamic("minSpan")(minSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSpan)) __obj.updateDynamic("minSpan")(minSpan.get.asInstanceOf[js.Any])
     if (minValueSpan != null) __obj.updateDynamic("minValueSpan")(minValueSpan.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (radiusAxisIndex != null) __obj.updateDynamic("radiusAxisIndex")(radiusAxisIndex.asInstanceOf[js.Any])
     if (rangeMode != null) __obj.updateDynamic("rangeMode")(rangeMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.get.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (showDataShadow != null) __obj.updateDynamic("showDataShadow")(showDataShadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDetail)) __obj.updateDynamic("showDetail")(showDetail.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDetail)) __obj.updateDynamic("showDetail")(showDetail.get.asInstanceOf[js.Any])
     if (singleAxisIndex != null) __obj.updateDynamic("singleAxisIndex")(singleAxisIndex.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttle)) __obj.updateDynamic("throttle")(throttle.get.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
     if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomLock)) __obj.updateDynamic("zoomLock")(zoomLock.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomLock)) __obj.updateDynamic("zoomLock")(zoomLock.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Slider]
   }
 }

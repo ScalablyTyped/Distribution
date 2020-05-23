@@ -127,7 +127,7 @@ object TestOptions {
   @scala.inline
   def apply(
     affinity: String = null,
-    authenticationType: Int | Double = null,
+    authenticationType: js.UndefOr[Double] = js.undefined,
     bandwidthDown: String = null,
     bandwidthUp: String = null,
     block: String = null,
@@ -152,7 +152,7 @@ object TestOptions {
     fullResolutionScreenshot: js.UndefOr[Boolean] = js.undefined,
     htmlBody: js.UndefOr[Boolean] = js.undefined,
     ignoreSSL: js.UndefOr[Boolean] = js.undefined,
-    jpegQuality: Int | Double = null,
+    jpegQuality: js.UndefOr[Double] = js.undefined,
     keepOriginalUserAgent: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     latency: String = null,
@@ -160,16 +160,16 @@ object TestOptions {
     location: String = null,
     login: String = null,
     medianVideo: js.UndefOr[Boolean] = js.undefined,
-    minimumDuration: Int | Double = null,
+    minimumDuration: js.UndefOr[Double] = js.undefined,
     netLog: js.UndefOr[Boolean] = js.undefined,
     notifyEmail: String = null,
-    packetLossRate: Int | Double = null,
+    packetLossRate: js.UndefOr[Double] = js.undefined,
     password: String = null,
     pingback: String = null,
-    pollResults: Int | Double = null,
-    priority: Int | Double = null,
+    pollResults: js.UndefOr[Double] = js.undefined,
+    priority: js.UndefOr[Double] = js.undefined,
     `private`: js.UndefOr[Boolean] = js.undefined,
-    runs: Int | Double = null,
+    runs: js.UndefOr[Double] = js.undefined,
     saveResponseBodies: js.UndefOr[Boolean] = js.undefined,
     sensitive: js.UndefOr[Boolean] = js.undefined,
     spof: String = null,
@@ -178,7 +178,7 @@ object TestOptions {
     tester: String = null,
     timeline: js.UndefOr[Boolean] = js.undefined,
     timelineCallStack: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     tsView: String = null,
     tsViewConfigs: String = null,
     userAgent: String = null,
@@ -187,62 +187,62 @@ object TestOptions {
   ): TestOptions = {
     val __obj = js.Dynamic.literal()
     if (affinity != null) __obj.updateDynamic("affinity")(affinity.asInstanceOf[js.Any])
-    if (authenticationType != null) __obj.updateDynamic("authenticationType")(authenticationType.asInstanceOf[js.Any])
+    if (!js.isUndefined(authenticationType)) __obj.updateDynamic("authenticationType")(authenticationType.get.asInstanceOf[js.Any])
     if (bandwidthDown != null) __obj.updateDynamic("bandwidthDown")(bandwidthDown.asInstanceOf[js.Any])
     if (bandwidthUp != null) __obj.updateDynamic("bandwidthUp")(bandwidthUp.asInstanceOf[js.Any])
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (!js.isUndefined(blockAds)) __obj.updateDynamic("blockAds")(blockAds.asInstanceOf[js.Any])
-    if (!js.isUndefined(chromeTrace)) __obj.updateDynamic("chromeTrace")(chromeTrace.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearCerts)) __obj.updateDynamic("clearCerts")(clearCerts.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockAds)) __obj.updateDynamic("blockAds")(blockAds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chromeTrace)) __obj.updateDynamic("chromeTrace")(chromeTrace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearCerts)) __obj.updateDynamic("clearCerts")(clearCerts.get.asInstanceOf[js.Any])
     if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine.asInstanceOf[js.Any])
     if (connectivity != null) __obj.updateDynamic("connectivity")(connectivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(continuousVideoCapture)) __obj.updateDynamic("continuousVideoCapture")(continuousVideoCapture.asInstanceOf[js.Any])
+    if (!js.isUndefined(continuousVideoCapture)) __obj.updateDynamic("continuousVideoCapture")(continuousVideoCapture.get.asInstanceOf[js.Any])
     if (customMetrics != null) __obj.updateDynamic("customMetrics")(customMetrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataReduction)) __obj.updateDynamic("dataReduction")(dataReduction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCompatibilityView)) __obj.updateDynamic("disableCompatibilityView")(disableCompatibilityView.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHTTPHeaders)) __obj.updateDynamic("disableHTTPHeaders")(disableHTTPHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableJavaScript)) __obj.updateDynamic("disableJavaScript")(disableJavaScript.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOptimization)) __obj.updateDynamic("disableOptimization")(disableOptimization.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScreenshot)) __obj.updateDynamic("disableScreenshot")(disableScreenshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataReduction)) __obj.updateDynamic("dataReduction")(dataReduction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCompatibilityView)) __obj.updateDynamic("disableCompatibilityView")(disableCompatibilityView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHTTPHeaders)) __obj.updateDynamic("disableHTTPHeaders")(disableHTTPHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableJavaScript)) __obj.updateDynamic("disableJavaScript")(disableJavaScript.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableOptimization)) __obj.updateDynamic("disableOptimization")(disableOptimization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScreenshot)) __obj.updateDynamic("disableScreenshot")(disableScreenshot.get.asInstanceOf[js.Any])
     if (domElement != null) __obj.updateDynamic("domElement")(domElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(emulateMobile)) __obj.updateDynamic("emulateMobile")(emulateMobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstViewOnly)) __obj.updateDynamic("firstViewOnly")(firstViewOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSoftwareRendering)) __obj.updateDynamic("forceSoftwareRendering")(forceSoftwareRendering.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSpdy3)) __obj.updateDynamic("forceSpdy3")(forceSpdy3.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullResolutionScreenshot)) __obj.updateDynamic("fullResolutionScreenshot")(fullResolutionScreenshot.asInstanceOf[js.Any])
-    if (!js.isUndefined(htmlBody)) __obj.updateDynamic("htmlBody")(htmlBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSSL)) __obj.updateDynamic("ignoreSSL")(ignoreSSL.asInstanceOf[js.Any])
-    if (jpegQuality != null) __obj.updateDynamic("jpegQuality")(jpegQuality.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepOriginalUserAgent)) __obj.updateDynamic("keepOriginalUserAgent")(keepOriginalUserAgent.asInstanceOf[js.Any])
+    if (!js.isUndefined(emulateMobile)) __obj.updateDynamic("emulateMobile")(emulateMobile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstViewOnly)) __obj.updateDynamic("firstViewOnly")(firstViewOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSoftwareRendering)) __obj.updateDynamic("forceSoftwareRendering")(forceSoftwareRendering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSpdy3)) __obj.updateDynamic("forceSpdy3")(forceSpdy3.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullResolutionScreenshot)) __obj.updateDynamic("fullResolutionScreenshot")(fullResolutionScreenshot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(htmlBody)) __obj.updateDynamic("htmlBody")(htmlBody.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSSL)) __obj.updateDynamic("ignoreSSL")(ignoreSSL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jpegQuality)) __obj.updateDynamic("jpegQuality")(jpegQuality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepOriginalUserAgent)) __obj.updateDynamic("keepOriginalUserAgent")(keepOriginalUserAgent.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
-    if (!js.isUndefined(lighthouse)) __obj.updateDynamic("lighthouse")(lighthouse.asInstanceOf[js.Any])
+    if (!js.isUndefined(lighthouse)) __obj.updateDynamic("lighthouse")(lighthouse.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (login != null) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
-    if (!js.isUndefined(medianVideo)) __obj.updateDynamic("medianVideo")(medianVideo.asInstanceOf[js.Any])
-    if (minimumDuration != null) __obj.updateDynamic("minimumDuration")(minimumDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(netLog)) __obj.updateDynamic("netLog")(netLog.asInstanceOf[js.Any])
+    if (!js.isUndefined(medianVideo)) __obj.updateDynamic("medianVideo")(medianVideo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumDuration)) __obj.updateDynamic("minimumDuration")(minimumDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(netLog)) __obj.updateDynamic("netLog")(netLog.get.asInstanceOf[js.Any])
     if (notifyEmail != null) __obj.updateDynamic("notifyEmail")(notifyEmail.asInstanceOf[js.Any])
-    if (packetLossRate != null) __obj.updateDynamic("packetLossRate")(packetLossRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(packetLossRate)) __obj.updateDynamic("packetLossRate")(packetLossRate.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (pingback != null) __obj.updateDynamic("pingback")(pingback.asInstanceOf[js.Any])
-    if (pollResults != null) __obj.updateDynamic("pollResults")(pollResults.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
-    if (runs != null) __obj.updateDynamic("runs")(runs.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveResponseBodies)) __obj.updateDynamic("saveResponseBodies")(saveResponseBodies.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollResults)) __obj.updateDynamic("pollResults")(pollResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(runs)) __obj.updateDynamic("runs")(runs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveResponseBodies)) __obj.updateDynamic("saveResponseBodies")(saveResponseBodies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
     if (spof != null) __obj.updateDynamic("spof")(spof.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopAtDocumentComplete)) __obj.updateDynamic("stopAtDocumentComplete")(stopAtDocumentComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(tcpDump)) __obj.updateDynamic("tcpDump")(tcpDump.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopAtDocumentComplete)) __obj.updateDynamic("stopAtDocumentComplete")(stopAtDocumentComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tcpDump)) __obj.updateDynamic("tcpDump")(tcpDump.get.asInstanceOf[js.Any])
     if (tester != null) __obj.updateDynamic("tester")(tester.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeline)) __obj.updateDynamic("timeline")(timeline.asInstanceOf[js.Any])
-    if (!js.isUndefined(timelineCallStack)) __obj.updateDynamic("timelineCallStack")(timelineCallStack.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeline)) __obj.updateDynamic("timeline")(timeline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timelineCallStack)) __obj.updateDynamic("timelineCallStack")(timelineCallStack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (tsView != null) __obj.updateDynamic("tsView")(tsView.asInstanceOf[js.Any])
     if (tsViewConfigs != null) __obj.updateDynamic("tsViewConfigs")(tsViewConfigs.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
-    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
+    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.get.asInstanceOf[js.Any])
     if (waitResults != null) __obj.updateDynamic("waitResults")(waitResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestOptions]
   }

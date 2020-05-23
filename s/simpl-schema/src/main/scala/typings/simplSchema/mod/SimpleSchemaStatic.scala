@@ -3,8 +3,8 @@ package typings.simplSchema.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import typings.simplSchema.AnonBADDATE
-import typings.simplSchema.AnonDomain
+import typings.simplSchema.anon.BADDATE
+import typings.simplSchema.anon.Domain
 import typings.std.ArrayConstructor
 import typings.std.BooleanConstructor
 import typings.std.DateConstructor
@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation._
 trait SimpleSchemaStatic
   extends Instantiable1[/* schema */ SimpleSchemaDefinition, SimpleSchema]
      with Instantiable2[/* schema */ SimpleSchemaDefinition, /* options */ SimpleSchemaOptions, SimpleSchema] {
-  var ErrorTypes: AnonBADDATE = js.native
+  var ErrorTypes: BADDATE = js.native
   var Integer: RegExp = js.native
-  var RegEx: AnonDomain = js.native
+  var RegEx: Domain = js.native
   def addValidator(validator: js.Function0[Boolean]): js.Any = js.native
   def allowsKey(key: js.Any): String = js.native
   def clean(doc: js.Any): js.Any = js.native
@@ -49,7 +49,7 @@ trait SimpleSchemaStatic
   def schema(key: String): SchemaDefinition = js.native
   def validate(obj: js.Any): Unit = js.native
   def validate(obj: js.Any, options: ValidationOption): Unit = js.native
-  def validator(): js.Function0[Boolean] = js.native
-  def validator(options: ValidationOption): js.Function0[Boolean] = js.native
+  def validator(): js.Function1[/* obj */ js.Any, Boolean] = js.native
+  def validator(options: ValidationOption): js.Function1[/* obj */ js.Any, Boolean] = js.native
 }
 

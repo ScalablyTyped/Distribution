@@ -1,6 +1,6 @@
 package typings.antdMobile.activityIndicatorMod
 
-import typings.antdMobile.AnonAnimating
+import typings.antdMobile.anon.Animating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends ActivityIndicator
 @JSImport("antd-mobile/lib/activity-indicator", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAnimating = js.native
+  var defaultProps: Animating = js.native
 }
 

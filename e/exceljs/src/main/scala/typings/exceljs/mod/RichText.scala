@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.PartialFont
+import typings.exceljs.anon.PartialFont
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

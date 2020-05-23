@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Watches for activity related to the discovery of remote systems and raises the appropriate events. */
-@JSGlobal("Windows.System.RemoteSystems.RemoteSystemWatcher")
 @js.native
-abstract class RemoteSystemWatcher () extends js.Object {
+trait RemoteSystemWatcher extends js.Object {
   /** This event is raised when the initial remote system discovery process completes. */
   @JSName("onenumerationcompleted")
   var onenumerationcompleted_Original: TypedEventHandler[RemoteSystemWatcher, RemoteSystemEnumerationCompletedEventArgs] = js.native

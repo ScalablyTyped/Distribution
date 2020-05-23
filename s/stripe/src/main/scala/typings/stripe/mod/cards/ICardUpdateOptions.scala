@@ -39,8 +39,8 @@ object ICardUpdateOptions {
     address_state: String = null,
     address_zip: String = null,
     default_for_currency: js.UndefOr[Boolean] = js.undefined,
-    exp_month: Int | Double = null,
-    exp_year: Int | Double = null,
+    exp_month: js.UndefOr[Double] = js.undefined,
+    exp_year: js.UndefOr[Double] = js.undefined,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null,
@@ -53,9 +53,9 @@ object ICardUpdateOptions {
     if (address_line2 != null) __obj.updateDynamic("address_line2")(address_line2.asInstanceOf[js.Any])
     if (address_state != null) __obj.updateDynamic("address_state")(address_state.asInstanceOf[js.Any])
     if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip.asInstanceOf[js.Any])
-    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency.asInstanceOf[js.Any])
-    if (exp_month != null) __obj.updateDynamic("exp_month")(exp_month.asInstanceOf[js.Any])
-    if (exp_year != null) __obj.updateDynamic("exp_year")(exp_year.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp_month)) __obj.updateDynamic("exp_month")(exp_month.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp_year)) __obj.updateDynamic("exp_year")(exp_year.get.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])

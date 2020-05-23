@@ -1,6 +1,8 @@
 package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.TopLevel
+import typings.instagramPrivateApi.anon.Name
+import typings.instagramPrivateApi.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +10,5 @@ import scala.scalajs.js.annotation._
 @JSImport("instagram-private-api/dist/samples/supported-capabilities", JSImport.Namespace)
 @js.native
 object supportedCapabilitiesMod
-  extends TopLevel[js.Array[AnonName | AnonValue]]
+  extends TopLevel[js.Array[Name | Value]]
 

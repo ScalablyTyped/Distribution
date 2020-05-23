@@ -9,10 +9,10 @@ trait AgentStatus extends js.Object {
   var createSocketCount: Double
   var createSocketErrorCount: Double
   var errorSocketCount: Double
-  var freeSockets: js.Object
+  var freeSockets: PlainObject
   var requestCount: Double
-  var requests: js.Object
-  var sockets: js.Object
+  var requests: PlainObject
+  var sockets: PlainObject
   var timeoutSocketCount: Double
 }
 
@@ -23,10 +23,10 @@ object AgentStatus {
     createSocketCount: Double,
     createSocketErrorCount: Double,
     errorSocketCount: Double,
-    freeSockets: js.Object,
+    freeSockets: PlainObject,
     requestCount: Double,
-    requests: js.Object,
-    sockets: js.Object,
+    requests: PlainObject,
+    sockets: PlainObject,
     timeoutSocketCount: Double
   ): AgentStatus = {
     val __obj = js.Dynamic.literal(closeSocketCount = closeSocketCount.asInstanceOf[js.Any], createSocketCount = createSocketCount.asInstanceOf[js.Any], createSocketErrorCount = createSocketErrorCount.asInstanceOf[js.Any], errorSocketCount = errorSocketCount.asInstanceOf[js.Any], freeSockets = freeSockets.asInstanceOf[js.Any], requestCount = requestCount.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any], sockets = sockets.asInstanceOf[js.Any], timeoutSocketCount = timeoutSocketCount.asInstanceOf[js.Any])

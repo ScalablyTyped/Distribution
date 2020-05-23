@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import typings.luaparse.luaparseStrings.Numbersign
 import typings.luaparse.luaparseStrings.Tilde
 import typings.luaparse.luaparseStrings.`-_`
@@ -22,7 +22,7 @@ object UnaryExpression {
     argument: Expression,
     operator: not | `-_` | Tilde | Numbersign,
     `type`: typings.luaparse.luaparseStrings.UnaryExpression,
-    loc: AnonEnd = null
+    loc: End = null
   ): UnaryExpression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

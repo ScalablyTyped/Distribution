@@ -13,10 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a device picker that contains a list of casting devices for the user to choose from. */
-@JSGlobal("Windows.Media.Casting.CastingDevicePicker")
 @js.native
-/** Creates a CastingDevicePicker object. */
-class CastingDevicePicker () extends js.Object {
+trait CastingDevicePicker extends js.Object {
   /** Gets the colors of the picker UI. */
   var appearance: DevicePickerAppearance = js.native
   /** Gets the filter information for which devices to show in the picker. */

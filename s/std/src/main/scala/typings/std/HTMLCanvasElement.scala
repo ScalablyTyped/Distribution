@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.`2d`
 import typings.std.stdStrings.bitmaprenderer
 import typings.std.stdStrings.webgl
@@ -93,8 +92,4 @@ trait HTMLCanvasElement
   def toDataURL(`type`: java.lang.String, quality: js.Any): java.lang.String = js.native
   def transferControlToOffscreen(): OffscreenCanvas = js.native
 }
-
-@JSGlobal("HTMLCanvasElement")
-@js.native
-object HTMLCanvasElement extends Instantiable0[HTMLCanvasElement]
 

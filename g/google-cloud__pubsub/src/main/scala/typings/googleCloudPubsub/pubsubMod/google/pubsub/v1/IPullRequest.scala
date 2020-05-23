@@ -17,14 +17,14 @@ trait IPullRequest extends js.Object {
 object IPullRequest {
   @scala.inline
   def apply(
-    maxMessages: Int | Double = null,
-    returnImmediately: js.UndefOr[Boolean] = js.undefined,
-    subscription: String = null
+    maxMessages: js.UndefOr[Null | Double] = js.undefined,
+    returnImmediately: js.UndefOr[Null | Boolean] = js.undefined,
+    subscription: js.UndefOr[Null | String] = js.undefined
   ): IPullRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
     if (!js.isUndefined(returnImmediately)) __obj.updateDynamic("returnImmediately")(returnImmediately.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPullRequest]
   }
 }

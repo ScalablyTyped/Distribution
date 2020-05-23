@@ -1,6 +1,6 @@
 package typings.inAppPurchase.mod
 
-import typings.inAppPurchase.AnonClientEmail
+import typings.inAppPurchase.anon.ClientEmail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait Config_ extends js.Object {
   // optional, for Google Play subscriptions
   var googleRefreshToken: js.UndefOr[String] = js.undefined
   // Configurations for Google Service Account validation: You can validate with just packageName, productId, and purchaseToken
-  var googleServiceAccount: js.UndefOr[AnonClientEmail] = js.undefined
+  var googleServiceAccount: js.UndefOr[ClientEmail] = js.undefined
   /* Configurations for Roku */
   // this comes from Roku Developer Dashboard
   var rokuApiKey: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait Config_ extends js.Object {
 object Config_ {
   @scala.inline
   def apply(
-    amazonAPIVersion: Int | Double = null,
+    amazonAPIVersion: js.UndefOr[Double] = js.undefined,
     appleExcludeOldTransactions: js.UndefOr[Boolean] = js.undefined,
     applePassword: String = null,
     facebookAppId: String = null,
@@ -62,15 +62,15 @@ object Config_ {
     googlePublicKeyStrSandBox: String = null,
     googleRefToken: String = null,
     googleRefreshToken: String = null,
-    googleServiceAccount: AnonClientEmail = null,
+    googleServiceAccount: ClientEmail = null,
     rokuApiKey: String = null,
     secret: String = null,
     test: js.UndefOr[Boolean] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Config_ = {
     val __obj = js.Dynamic.literal()
-    if (amazonAPIVersion != null) __obj.updateDynamic("amazonAPIVersion")(amazonAPIVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(appleExcludeOldTransactions)) __obj.updateDynamic("appleExcludeOldTransactions")(appleExcludeOldTransactions.asInstanceOf[js.Any])
+    if (!js.isUndefined(amazonAPIVersion)) __obj.updateDynamic("amazonAPIVersion")(amazonAPIVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appleExcludeOldTransactions)) __obj.updateDynamic("appleExcludeOldTransactions")(appleExcludeOldTransactions.get.asInstanceOf[js.Any])
     if (applePassword != null) __obj.updateDynamic("applePassword")(applePassword.asInstanceOf[js.Any])
     if (facebookAppId != null) __obj.updateDynamic("facebookAppId")(facebookAppId.asInstanceOf[js.Any])
     if (facebookAppSecret != null) __obj.updateDynamic("facebookAppSecret")(facebookAppSecret.asInstanceOf[js.Any])
@@ -85,8 +85,8 @@ object Config_ {
     if (googleServiceAccount != null) __obj.updateDynamic("googleServiceAccount")(googleServiceAccount.asInstanceOf[js.Any])
     if (rokuApiKey != null) __obj.updateDynamic("rokuApiKey")(rokuApiKey.asInstanceOf[js.Any])
     if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config_]
   }
 }

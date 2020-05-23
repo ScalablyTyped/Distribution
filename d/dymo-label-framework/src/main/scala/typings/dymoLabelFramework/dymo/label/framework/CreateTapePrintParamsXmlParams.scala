@@ -21,14 +21,14 @@ object CreateTapePrintParamsXmlParams {
   @scala.inline
   def apply(
     alignment: TapeAlignment = null,
-    copies: Int | Double = null,
+    copies: js.UndefOr[Double] = js.undefined,
     cutMode: TapeCutMode = null,
     flowDirection: FlowDirection = null,
     jobTitle: String = null
   ): CreateTapePrintParamsXmlParams = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (copies != null) __obj.updateDynamic("copies")(copies.asInstanceOf[js.Any])
+    if (!js.isUndefined(copies)) __obj.updateDynamic("copies")(copies.get.asInstanceOf[js.Any])
     if (cutMode != null) __obj.updateDynamic("cutMode")(cutMode.asInstanceOf[js.Any])
     if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection.asInstanceOf[js.Any])
     if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle.asInstanceOf[js.Any])

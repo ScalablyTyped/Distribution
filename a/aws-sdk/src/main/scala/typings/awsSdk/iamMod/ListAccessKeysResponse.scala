@@ -24,11 +24,11 @@ object ListAccessKeysResponse {
   @scala.inline
   def apply(
     AccessKeyMetadata: accessKeyMetadataListType,
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    IsTruncated: js.UndefOr[booleanType] = js.undefined,
     Marker: responseMarkerType = null
   ): ListAccessKeysResponse = {
     val __obj = js.Dynamic.literal(AccessKeyMetadata = AccessKeyMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccessKeysResponse]
   }

@@ -105,7 +105,7 @@ object CloneStackRequest {
     Attributes: StackAttributes = null,
     ChefConfiguration: ChefConfiguration = null,
     CloneAppIds: Strings = null,
-    ClonePermissions: js.UndefOr[scala.Boolean] = js.undefined,
+    ClonePermissions: js.UndefOr[Boolean] = js.undefined,
     ConfigurationManager: StackConfigurationManager = null,
     CustomCookbooksSource: Source = null,
     CustomJson: String = null,
@@ -118,8 +118,8 @@ object CloneStackRequest {
     HostnameTheme: String = null,
     Name: String = null,
     Region: String = null,
-    UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined,
-    UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined,
+    UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined,
+    UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined,
     VpcId: String = null
   ): CloneStackRequest = {
     val __obj = js.Dynamic.literal(ServiceRoleArn = ServiceRoleArn.asInstanceOf[js.Any], SourceStackId = SourceStackId.asInstanceOf[js.Any])
@@ -127,7 +127,7 @@ object CloneStackRequest {
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     if (ChefConfiguration != null) __obj.updateDynamic("ChefConfiguration")(ChefConfiguration.asInstanceOf[js.Any])
     if (CloneAppIds != null) __obj.updateDynamic("CloneAppIds")(CloneAppIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(ClonePermissions)) __obj.updateDynamic("ClonePermissions")(ClonePermissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(ClonePermissions)) __obj.updateDynamic("ClonePermissions")(ClonePermissions.get.asInstanceOf[js.Any])
     if (ConfigurationManager != null) __obj.updateDynamic("ConfigurationManager")(ConfigurationManager.asInstanceOf[js.Any])
     if (CustomCookbooksSource != null) __obj.updateDynamic("CustomCookbooksSource")(CustomCookbooksSource.asInstanceOf[js.Any])
     if (CustomJson != null) __obj.updateDynamic("CustomJson")(CustomJson.asInstanceOf[js.Any])
@@ -140,8 +140,8 @@ object CloneStackRequest {
     if (HostnameTheme != null) __obj.updateDynamic("HostnameTheme")(HostnameTheme.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseCustomCookbooks)) __obj.updateDynamic("UseCustomCookbooks")(UseCustomCookbooks.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseOpsworksSecurityGroups)) __obj.updateDynamic("UseOpsworksSecurityGroups")(UseOpsworksSecurityGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseCustomCookbooks)) __obj.updateDynamic("UseCustomCookbooks")(UseCustomCookbooks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseOpsworksSecurityGroups)) __obj.updateDynamic("UseOpsworksSecurityGroups")(UseOpsworksSecurityGroups.get.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloneStackRequest]
   }

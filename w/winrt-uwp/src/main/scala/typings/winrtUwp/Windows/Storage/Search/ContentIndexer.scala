@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Enables Windows Store apps to place content properties in the system index. */
-@JSGlobal("Windows.Storage.Search.ContentIndexer")
 @js.native
-abstract class ContentIndexer () extends js.Object {
+trait ContentIndexer extends js.Object {
   /** Gets the version of the ContentIndexer . */
   var revision: Double = js.native
   /**
@@ -73,22 +72,5 @@ abstract class ContentIndexer () extends js.Object {
     * @param indexableContent The content properties to update.
     */
   def updateAsync(indexableContent: IIndexableContent): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Storage.Search.ContentIndexer")
-@js.native
-object ContentIndexer extends js.Object {
-  /**
-    * Gets an existing per-app index or creates a new one, if necessary.
-    * @return The index.
-    */
-  def getIndexer(): ContentIndexer = js.native
-  /**
-    * Gets the per-app index with the specified name or creates a new one, if necessary.
-    * @param indexName The index name.
-    * @return The index.
-    */
-  def getIndexer(indexName: String): ContentIndexer = js.native
 }
 

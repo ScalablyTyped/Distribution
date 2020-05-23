@@ -22,20 +22,20 @@ trait Photo extends js.Object {
 object Photo {
   @scala.inline
   def apply(
-    apertureFNumber: Int | Double = null,
+    apertureFNumber: js.UndefOr[Double] = js.undefined,
     cameraMake: String = null,
     cameraModel: String = null,
     exposureTime: String = null,
-    focalLength: Int | Double = null,
-    isoEquivalent: Int | Double = null
+    focalLength: js.UndefOr[Double] = js.undefined,
+    isoEquivalent: js.UndefOr[Double] = js.undefined
   ): Photo = {
     val __obj = js.Dynamic.literal()
-    if (apertureFNumber != null) __obj.updateDynamic("apertureFNumber")(apertureFNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(apertureFNumber)) __obj.updateDynamic("apertureFNumber")(apertureFNumber.get.asInstanceOf[js.Any])
     if (cameraMake != null) __obj.updateDynamic("cameraMake")(cameraMake.asInstanceOf[js.Any])
     if (cameraModel != null) __obj.updateDynamic("cameraModel")(cameraModel.asInstanceOf[js.Any])
     if (exposureTime != null) __obj.updateDynamic("exposureTime")(exposureTime.asInstanceOf[js.Any])
-    if (focalLength != null) __obj.updateDynamic("focalLength")(focalLength.asInstanceOf[js.Any])
-    if (isoEquivalent != null) __obj.updateDynamic("isoEquivalent")(isoEquivalent.asInstanceOf[js.Any])
+    if (!js.isUndefined(focalLength)) __obj.updateDynamic("focalLength")(focalLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isoEquivalent)) __obj.updateDynamic("isoEquivalent")(isoEquivalent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Photo]
   }
 }

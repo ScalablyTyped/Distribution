@@ -81,7 +81,7 @@ object Address {
     country_name: String = null,
     default: js.UndefOr[Boolean] = js.undefined,
     first_name: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     last_name: String = null,
     name: String = null,
     phone: String = null,
@@ -98,9 +98,9 @@ object Address {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (country_code != null) __obj.updateDynamic("country_code")(country_code.asInstanceOf[js.Any])
     if (country_name != null) __obj.updateDynamic("country_name")(country_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
     if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])

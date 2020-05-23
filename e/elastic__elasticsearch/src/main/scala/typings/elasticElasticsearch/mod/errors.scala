@@ -1,6 +1,7 @@
 package typings.elasticElasticsearch.mod
 
 import typings.elasticElasticsearch.transportMod.ApiResponse
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,15 +16,15 @@ object errors extends js.Object {
   }
   
   @js.native
-  class ConnectionError protected ()
-    extends typings.elasticElasticsearch.errorsMod.ConnectionError {
-    def this(message: String, meta: ApiResponse[_, _]) = this()
+  class ConnectionError[TResponse, TContext] protected ()
+    extends typings.elasticElasticsearch.errorsMod.ConnectionError[TResponse, TContext] {
+    def this(message: String, meta: ApiResponse[Record[String, _], _]) = this()
   }
   
   @js.native
   class DeserializationError protected ()
     extends typings.elasticElasticsearch.errorsMod.DeserializationError {
-    def this(message: String) = this()
+    def this(message: String, data: String) = this()
   }
   
   @js.native
@@ -31,27 +32,33 @@ object errors extends js.Object {
     extends typings.elasticElasticsearch.errorsMod.ElasticsearchClientError
   
   @js.native
-  class NoLivingConnectionsError protected ()
-    extends typings.elasticElasticsearch.errorsMod.NoLivingConnectionsError {
-    def this(message: String, meta: ApiResponse[_, _]) = this()
+  class NoLivingConnectionsError[TResponse, TContext] protected ()
+    extends typings.elasticElasticsearch.errorsMod.NoLivingConnectionsError[TResponse, TContext] {
+    def this(message: String, meta: ApiResponse[Record[String, _], _]) = this()
   }
   
   @js.native
-  class ResponseError protected ()
-    extends typings.elasticElasticsearch.errorsMod.ResponseError {
-    def this(meta: ApiResponse[_, _]) = this()
+  class RequestAbortedError[TResponse, TContext] protected ()
+    extends typings.elasticElasticsearch.errorsMod.RequestAbortedError[TResponse, TContext] {
+    def this(message: String, meta: ApiResponse[Record[String, _], _]) = this()
+  }
+  
+  @js.native
+  class ResponseError[TResponse, TContext] protected ()
+    extends typings.elasticElasticsearch.errorsMod.ResponseError[TResponse, TContext] {
+    def this(meta: ApiResponse[Record[String, _], _]) = this()
   }
   
   @js.native
   class SerializationError protected ()
     extends typings.elasticElasticsearch.errorsMod.SerializationError {
-    def this(message: String) = this()
+    def this(message: String, data: js.Any) = this()
   }
   
   @js.native
-  class TimeoutError protected ()
-    extends typings.elasticElasticsearch.errorsMod.TimeoutError {
-    def this(message: String, meta: ApiResponse[_, _]) = this()
+  class TimeoutError[TResponse, TContext] protected ()
+    extends typings.elasticElasticsearch.errorsMod.TimeoutError[TResponse, TContext] {
+    def this(message: String, meta: ApiResponse[Record[String, _], _]) = this()
   }
   
 }

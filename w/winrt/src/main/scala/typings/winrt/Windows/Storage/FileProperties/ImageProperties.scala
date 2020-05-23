@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.FileProperties.ImageProperties")
 @js.native
-class ImageProperties () extends IImageProperties
+trait ImageProperties extends IImageProperties
 

@@ -1,11 +1,11 @@
 package typings.oracleOraclejet.ojcolorpaletteMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonInstruction
-import typings.oracleOraclejet.AnonLabel
-import typings.oracleOraclejet.AnonLabelNone
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.Instruction
+import typings.oracleOraclejet.anon.Label
+import typings.oracleOraclejet.anon.LabelNone
 import typings.oracleOraclejet.ojmessagingMod.^
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.grid
@@ -27,17 +27,17 @@ trait ojColorPaletteSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
   var describedBy: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var displayOptions: js.UndefOr[AnonConverterHint] = js.undefined
-  var help: js.UndefOr[AnonInstruction] = js.undefined
-  var helpHints: js.UndefOr[AnonDefinition] = js.undefined
+  var displayOptions: js.UndefOr[ConverterHint] = js.undefined
+  var help: js.UndefOr[Instruction] = js.undefined
+  var helpHints: js.UndefOr[Definition] = js.undefined
   var labelDisplay: js.UndefOr[auto | off] = js.undefined
   var labelHint: js.UndefOr[String] = js.undefined
   var labelledBy: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[grid | list] = js.undefined
   var messagesCustom: js.UndefOr[js.Array[^]] = js.undefined
-  var palette: js.UndefOr[js.Array[AnonLabel]] = js.undefined
+  var palette: js.UndefOr[js.Array[Label]] = js.undefined
   var swatchSize: js.UndefOr[xs | sm | lg] = js.undefined
-  var translations: js.UndefOr[AnonLabelNone] = js.undefined
+  var translations: js.UndefOr[LabelNone] = js.undefined
   var valid: js.UndefOr[
     typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
   ] = js.undefined
@@ -47,27 +47,27 @@ trait ojColorPaletteSettablePropertiesLenient
 object ojColorPaletteSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     describedBy: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    displayOptions: AnonConverterHint = null,
-    help: AnonInstruction = null,
-    helpHints: AnonDefinition = null,
+    displayOptions: ConverterHint = null,
+    help: Instruction = null,
+    helpHints: Definition = null,
     labelDisplay: auto | off = null,
     labelHint: String = null,
     labelledBy: String = null,
     layout: grid | list = null,
     messagesCustom: js.Array[^] = null,
-    palette: js.Array[AnonLabel] = null,
+    palette: js.Array[Label] = null,
     swatchSize: xs | sm | lg = null,
-    translations: AnonLabelNone = null,
+    translations: LabelNone = null,
     valid: valid | pending | invalidHidden | invalidShown = null,
     value: typings.oracleOraclejet.ojcolorMod.^ = null
   ): ojColorPaletteSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (helpHints != null) __obj.updateDynamic("helpHints")(helpHints.asInstanceOf[js.Any])

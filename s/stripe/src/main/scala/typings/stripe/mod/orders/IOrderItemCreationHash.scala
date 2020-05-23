@@ -40,17 +40,17 @@ object IOrderItemCreationHash {
   @scala.inline
   def apply(
     parent: String,
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     currency: String = null,
     description: String = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     `type`: sku | tax | shipping | discount = null
   ): IOrderItemCreationHash = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrderItemCreationHash]
   }

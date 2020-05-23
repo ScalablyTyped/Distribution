@@ -69,9 +69,9 @@ trait IonVirtualScroll extends js.Object {
 object IonVirtualScroll {
   @scala.inline
   def apply(
-    approxFooterHeight: Int | Double = null,
-    approxHeaderHeight: Int | Double = null,
-    approxItemHeight: Int | Double = null,
+    approxFooterHeight: js.UndefOr[Double] = js.undefined,
+    approxHeaderHeight: js.UndefOr[Double] = js.undefined,
+    approxItemHeight: js.UndefOr[Double] = js.undefined,
     footerFn: (/* item */ js.Any, /* index */ Double, /* items */ js.Array[js.Any]) => js.UndefOr[String | Null] = null,
     footerHeight: (/* item */ js.Any, /* index */ Double) => Double = null,
     headerFn: (/* item */ js.Any, /* index */ Double, /* items */ js.Array[js.Any]) => js.UndefOr[String | Null] = null,
@@ -84,9 +84,9 @@ object IonVirtualScroll {
     renderItem: (/* item */ js.Any, /* index */ Double) => _ = null
   ): IonVirtualScroll = {
     val __obj = js.Dynamic.literal()
-    if (approxFooterHeight != null) __obj.updateDynamic("approxFooterHeight")(approxFooterHeight.asInstanceOf[js.Any])
-    if (approxHeaderHeight != null) __obj.updateDynamic("approxHeaderHeight")(approxHeaderHeight.asInstanceOf[js.Any])
-    if (approxItemHeight != null) __obj.updateDynamic("approxItemHeight")(approxItemHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(approxFooterHeight)) __obj.updateDynamic("approxFooterHeight")(approxFooterHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(approxHeaderHeight)) __obj.updateDynamic("approxHeaderHeight")(approxHeaderHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(approxItemHeight)) __obj.updateDynamic("approxItemHeight")(approxItemHeight.get.asInstanceOf[js.Any])
     if (footerFn != null) __obj.updateDynamic("footerFn")(js.Any.fromFunction3(footerFn))
     if (footerHeight != null) __obj.updateDynamic("footerHeight")(js.Any.fromFunction2(footerHeight))
     if (headerFn != null) __obj.updateDynamic("headerFn")(js.Any.fromFunction3(headerFn))

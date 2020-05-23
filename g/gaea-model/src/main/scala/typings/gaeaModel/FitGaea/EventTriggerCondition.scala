@@ -17,7 +17,7 @@ object EventTriggerCondition {
   def apply(name: String, `type`: String, selfCallback: js.UndefOr[Boolean] = js.undefined): EventTriggerCondition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfCallback)) __obj.updateDynamic("selfCallback")(selfCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfCallback)) __obj.updateDynamic("selfCallback")(selfCallback.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTriggerCondition]
   }
 }

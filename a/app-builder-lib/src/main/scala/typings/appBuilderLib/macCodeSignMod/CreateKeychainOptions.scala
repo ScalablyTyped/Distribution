@@ -21,12 +21,12 @@ object CreateKeychainOptions {
     cscLink: String,
     currentDir: String,
     tmpDir: TmpDir,
-    cscIKeyPassword: String = null,
-    cscILink: String = null
+    cscIKeyPassword: js.UndefOr[Null | String] = js.undefined,
+    cscILink: js.UndefOr[Null | String] = js.undefined
   ): CreateKeychainOptions = {
     val __obj = js.Dynamic.literal(cscKeyPassword = cscKeyPassword.asInstanceOf[js.Any], cscLink = cscLink.asInstanceOf[js.Any], currentDir = currentDir.asInstanceOf[js.Any], tmpDir = tmpDir.asInstanceOf[js.Any])
-    if (cscIKeyPassword != null) __obj.updateDynamic("cscIKeyPassword")(cscIKeyPassword.asInstanceOf[js.Any])
-    if (cscILink != null) __obj.updateDynamic("cscILink")(cscILink.asInstanceOf[js.Any])
+    if (!js.isUndefined(cscIKeyPassword)) __obj.updateDynamic("cscIKeyPassword")(cscIKeyPassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(cscILink)) __obj.updateDynamic("cscILink")(cscILink.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeychainOptions]
   }
 }

@@ -19,26 +19,26 @@ trait ConditionalFormat extends js.Object {
 object ConditionalFormat {
   @scala.inline
   def apply(
-    column: Int | Double = null,
+    column: js.UndefOr[Double] = js.undefined,
     format: Style = null,
     formatCSS: String = null,
     formula: String = null,
     hierarchy: String = null,
-    isTotal: Int | Double = null,
+    isTotal: js.UndefOr[Double] = js.undefined,
     measureName: String = null,
     member: String = null,
-    row: Int | Double = null
+    row: js.UndefOr[Double] = js.undefined
   ): ConditionalFormat = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formatCSS != null) __obj.updateDynamic("formatCSS")(formatCSS.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
     if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy.asInstanceOf[js.Any])
-    if (isTotal != null) __obj.updateDynamic("isTotal")(isTotal.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTotal)) __obj.updateDynamic("isTotal")(isTotal.get.asInstanceOf[js.Any])
     if (measureName != null) __obj.updateDynamic("measureName")(measureName.asInstanceOf[js.Any])
     if (member != null) __obj.updateDynamic("member")(member.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalFormat]
   }
 }

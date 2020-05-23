@@ -81,40 +81,40 @@ object BurnInDestinationSettings {
   def apply(
     Alignment: BurnInAlignment = null,
     BackgroundColor: BurnInBackgroundColor = null,
-    BackgroundOpacity: Int | Double = null,
+    BackgroundOpacity: js.UndefOr[integerMin0Max255] = js.undefined,
     Font: InputLocation = null,
     FontColor: BurnInFontColor = null,
-    FontOpacity: Int | Double = null,
-    FontResolution: Int | Double = null,
+    FontOpacity: js.UndefOr[integerMin0Max255] = js.undefined,
+    FontResolution: js.UndefOr[integerMin96Max600] = js.undefined,
     FontSize: string = null,
     OutlineColor: BurnInOutlineColor = null,
-    OutlineSize: Int | Double = null,
+    OutlineSize: js.UndefOr[integerMin0Max10] = js.undefined,
     ShadowColor: BurnInShadowColor = null,
-    ShadowOpacity: Int | Double = null,
-    ShadowXOffset: Int | Double = null,
-    ShadowYOffset: Int | Double = null,
+    ShadowOpacity: js.UndefOr[integerMin0Max255] = js.undefined,
+    ShadowXOffset: js.UndefOr[integer] = js.undefined,
+    ShadowYOffset: js.UndefOr[integer] = js.undefined,
     TeletextGridControl: BurnInTeletextGridControl = null,
-    XPosition: Int | Double = null,
-    YPosition: Int | Double = null
+    XPosition: js.UndefOr[integerMin0] = js.undefined,
+    YPosition: js.UndefOr[integerMin0] = js.undefined
   ): BurnInDestinationSettings = {
     val __obj = js.Dynamic.literal()
     if (Alignment != null) __obj.updateDynamic("Alignment")(Alignment.asInstanceOf[js.Any])
     if (BackgroundColor != null) __obj.updateDynamic("BackgroundColor")(BackgroundColor.asInstanceOf[js.Any])
-    if (BackgroundOpacity != null) __obj.updateDynamic("BackgroundOpacity")(BackgroundOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackgroundOpacity)) __obj.updateDynamic("BackgroundOpacity")(BackgroundOpacity.get.asInstanceOf[js.Any])
     if (Font != null) __obj.updateDynamic("Font")(Font.asInstanceOf[js.Any])
     if (FontColor != null) __obj.updateDynamic("FontColor")(FontColor.asInstanceOf[js.Any])
-    if (FontOpacity != null) __obj.updateDynamic("FontOpacity")(FontOpacity.asInstanceOf[js.Any])
-    if (FontResolution != null) __obj.updateDynamic("FontResolution")(FontResolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(FontOpacity)) __obj.updateDynamic("FontOpacity")(FontOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FontResolution)) __obj.updateDynamic("FontResolution")(FontResolution.get.asInstanceOf[js.Any])
     if (FontSize != null) __obj.updateDynamic("FontSize")(FontSize.asInstanceOf[js.Any])
     if (OutlineColor != null) __obj.updateDynamic("OutlineColor")(OutlineColor.asInstanceOf[js.Any])
-    if (OutlineSize != null) __obj.updateDynamic("OutlineSize")(OutlineSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(OutlineSize)) __obj.updateDynamic("OutlineSize")(OutlineSize.get.asInstanceOf[js.Any])
     if (ShadowColor != null) __obj.updateDynamic("ShadowColor")(ShadowColor.asInstanceOf[js.Any])
-    if (ShadowOpacity != null) __obj.updateDynamic("ShadowOpacity")(ShadowOpacity.asInstanceOf[js.Any])
-    if (ShadowXOffset != null) __obj.updateDynamic("ShadowXOffset")(ShadowXOffset.asInstanceOf[js.Any])
-    if (ShadowYOffset != null) __obj.updateDynamic("ShadowYOffset")(ShadowYOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShadowOpacity)) __obj.updateDynamic("ShadowOpacity")(ShadowOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShadowXOffset)) __obj.updateDynamic("ShadowXOffset")(ShadowXOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShadowYOffset)) __obj.updateDynamic("ShadowYOffset")(ShadowYOffset.get.asInstanceOf[js.Any])
     if (TeletextGridControl != null) __obj.updateDynamic("TeletextGridControl")(TeletextGridControl.asInstanceOf[js.Any])
-    if (XPosition != null) __obj.updateDynamic("XPosition")(XPosition.asInstanceOf[js.Any])
-    if (YPosition != null) __obj.updateDynamic("YPosition")(YPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(XPosition)) __obj.updateDynamic("XPosition")(XPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(YPosition)) __obj.updateDynamic("YPosition")(YPosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BurnInDestinationSettings]
   }
 }

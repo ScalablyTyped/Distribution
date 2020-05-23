@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.DirectX.Direct3D11
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object Direct3DUsage extends js.Object {
   /** A resource that supports data transfer (copy) from the GPU to the CPU. */
   @js.native
   sealed trait staging extends Direct3DUsage
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Direct3DUsage with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 2 */ @js.native
-  object dynamic extends TopLevel[dynamic with Double]
-  
-  /* 1 */ @js.native
-  object immutable extends TopLevel[immutable with Double]
-  
-  /* 3 */ @js.native
-  object staging extends TopLevel[staging with Double]
   
 }
 

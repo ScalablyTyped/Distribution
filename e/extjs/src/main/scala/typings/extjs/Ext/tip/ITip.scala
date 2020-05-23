@@ -15,7 +15,7 @@ object ITip {
   def apply(IPanel: IPanel = null, constrainPosition: js.UndefOr[Boolean] = js.undefined): ITip = {
     val __obj = js.Dynamic.literal()
     if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
-    if (!js.isUndefined(constrainPosition)) __obj.updateDynamic("constrainPosition")(constrainPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainPosition)) __obj.updateDynamic("constrainPosition")(constrainPosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITip]
   }
 }

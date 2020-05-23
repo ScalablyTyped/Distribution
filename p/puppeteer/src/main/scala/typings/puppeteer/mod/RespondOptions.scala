@@ -25,13 +25,13 @@ object RespondOptions {
     body: Buffer | String = null,
     contentType: String = null,
     headers: Headers = null,
-    status: Int | Double = null
+    status: js.UndefOr[Double] = js.undefined
   ): RespondOptions = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RespondOptions]
   }
 }

@@ -51,7 +51,7 @@ object AdminCreateUserRequest {
     Username: UsernameType,
     ClientMetadata: ClientMetadataType = null,
     DesiredDeliveryMediums: DeliveryMediumListType = null,
-    ForceAliasCreation: js.UndefOr[Boolean] = js.undefined,
+    ForceAliasCreation: js.UndefOr[ForceAliasCreation] = js.undefined,
     MessageAction: MessageActionType = null,
     TemporaryPassword: PasswordType = null,
     UserAttributes: AttributeListType = null,
@@ -60,7 +60,7 @@ object AdminCreateUserRequest {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     if (ClientMetadata != null) __obj.updateDynamic("ClientMetadata")(ClientMetadata.asInstanceOf[js.Any])
     if (DesiredDeliveryMediums != null) __obj.updateDynamic("DesiredDeliveryMediums")(DesiredDeliveryMediums.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceAliasCreation)) __obj.updateDynamic("ForceAliasCreation")(ForceAliasCreation.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceAliasCreation)) __obj.updateDynamic("ForceAliasCreation")(ForceAliasCreation.get.asInstanceOf[js.Any])
     if (MessageAction != null) __obj.updateDynamic("MessageAction")(MessageAction.asInstanceOf[js.Any])
     if (TemporaryPassword != null) __obj.updateDynamic("TemporaryPassword")(TemporaryPassword.asInstanceOf[js.Any])
     if (UserAttributes != null) __obj.updateDynamic("UserAttributes")(UserAttributes.asInstanceOf[js.Any])

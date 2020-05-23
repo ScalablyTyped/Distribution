@@ -40,7 +40,7 @@ object univariateColorSizeCreateVisualVariablesParamsSizeOptions {
     sizeScheme: SizeScheme = null
   ): univariateColorSizeCreateVisualVariablesParamsSizeOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParamsSizeOptions]

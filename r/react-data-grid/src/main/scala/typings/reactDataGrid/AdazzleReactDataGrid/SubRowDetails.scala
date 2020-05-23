@@ -38,17 +38,17 @@ object SubRowDetails {
     canExpand: js.UndefOr[Boolean] = js.undefined,
     children: js.Array[T] = null,
     group: js.UndefOr[Boolean] = js.undefined,
-    numberSiblings: Int | Double = null,
-    siblingIndex: Int | Double = null,
-    treeDepth: Int | Double = null
+    numberSiblings: js.UndefOr[Double] = js.undefined,
+    siblingIndex: js.UndefOr[Double] = js.undefined,
+    treeDepth: js.UndefOr[Double] = js.undefined
   ): SubRowDetails[T] = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
-    if (!js.isUndefined(canExpand)) __obj.updateDynamic("canExpand")(canExpand.asInstanceOf[js.Any])
+    if (!js.isUndefined(canExpand)) __obj.updateDynamic("canExpand")(canExpand.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (numberSiblings != null) __obj.updateDynamic("numberSiblings")(numberSiblings.asInstanceOf[js.Any])
-    if (siblingIndex != null) __obj.updateDynamic("siblingIndex")(siblingIndex.asInstanceOf[js.Any])
-    if (treeDepth != null) __obj.updateDynamic("treeDepth")(treeDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberSiblings)) __obj.updateDynamic("numberSiblings")(numberSiblings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(siblingIndex)) __obj.updateDynamic("siblingIndex")(siblingIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeDepth)) __obj.updateDynamic("treeDepth")(treeDepth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubRowDetails[T]]
   }
 }

@@ -108,8 +108,8 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    deadZone: Int | Double = null,
-    gamepadIndex: Int | Double = null,
+    deadZone: js.UndefOr[Double] = js.undefined,
+    gamepadIndex: js.UndefOr[Double] = js.undefined,
     layout: Layout = null,
     onA: () => Unit = null,
     onAxisChange: (/* axisName */ Axis, /* value */ Double, /* previousValue */ Double) => Unit = null,
@@ -131,11 +131,11 @@ object Props {
     onUp: () => Unit = null,
     onX: () => Unit = null,
     onY: () => Unit = null,
-    stickThreshold: Int | Double = null
+    stickThreshold: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (deadZone != null) __obj.updateDynamic("deadZone")(deadZone.asInstanceOf[js.Any])
-    if (gamepadIndex != null) __obj.updateDynamic("gamepadIndex")(gamepadIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(deadZone)) __obj.updateDynamic("deadZone")(deadZone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gamepadIndex)) __obj.updateDynamic("gamepadIndex")(gamepadIndex.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (onA != null) __obj.updateDynamic("onA")(js.Any.fromFunction0(onA))
     if (onAxisChange != null) __obj.updateDynamic("onAxisChange")(js.Any.fromFunction3(onAxisChange))
@@ -157,7 +157,7 @@ object Props {
     if (onUp != null) __obj.updateDynamic("onUp")(js.Any.fromFunction0(onUp))
     if (onX != null) __obj.updateDynamic("onX")(js.Any.fromFunction0(onX))
     if (onY != null) __obj.updateDynamic("onY")(js.Any.fromFunction0(onY))
-    if (stickThreshold != null) __obj.updateDynamic("stickThreshold")(stickThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickThreshold)) __obj.updateDynamic("stickThreshold")(stickThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

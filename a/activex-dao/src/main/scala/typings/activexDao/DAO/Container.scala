@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Container")
 @js.native
-class Container protected () extends js.Object {
+trait Container extends js.Object {
   val AllPermissions: Double = js.native
   @JSName("DAO.Container_typekey")
   var DAODotContainer_typekey: Container = js.native

@@ -17,8 +17,8 @@ trait TreeProps extends js.Object {
   var tree: TreeData = js.native
   /** Function that will be called when a parent item needs to be collapsed. */
   def onCollapse(itemId: ItemId, path: Path): Unit = js.native
-  def onDragEnd(sourcePosition: TreeSourcePosition): Unit = js.native
   /** Function that will be called when the user finishes dragging. */
+  def onDragEnd(sourcePosition: TreeSourcePosition): Unit = js.native
   def onDragEnd(sourcePosition: TreeSourcePosition, destinationPosition: TreeDestinationPosition): Unit = js.native
   /** Function that will be called when the user starts dragging. */
   def onDragStart(itemId: ItemId): Unit = js.native

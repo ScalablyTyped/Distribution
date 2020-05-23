@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.cardHeaderMod
 
-import typings.antDesignReactNative.PickCardStyleheaderConten
+import typings.antDesignReactNative.anon.PickCardStyleheaderConten
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.react.mod.ReactNode
 import typings.std.Partial

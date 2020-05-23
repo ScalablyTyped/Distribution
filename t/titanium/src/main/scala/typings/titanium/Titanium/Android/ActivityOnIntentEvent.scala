@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the activity is launched.
-		 */
+  * Fired when the activity is launched.
+  */
 trait ActivityOnIntentEvent extends ActivityBaseEvent {
   /**
-  			 * The `Intent` used to launch the Activity.
-  			 */
+    * The `Intent` used to launch the Activity.
+    */
   var intent: Intent
 }
 

@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.CSSStyleSheet
-import typings.surveyKnockout.AnonMedia
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,7 @@ class StylesManager () extends js.Object {
 @js.native
 object StylesManager extends js.Object {
   var Enabled: Boolean = js.native
-  var Media: StringDictionary[AnonMedia] = js.native
+  var Media: StringDictionary[typings.surveyKnockout.anon.Media] = js.native
   var Styles: StringDictionary[String] = js.native
   var ThemeColors: StringDictionary[StringDictionary[String]] = js.native
   var ThemeCss: StringDictionary[String] = js.native

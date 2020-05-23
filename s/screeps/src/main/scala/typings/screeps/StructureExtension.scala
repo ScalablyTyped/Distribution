@@ -1,6 +1,6 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typings.screeps.anon.StoreRESOURCEENERGYfalse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,28 @@ trait StructureExtension
   var store: StoreRESOURCEENERGYfalse
 }
 
-@JSGlobal("StructureExtension")
-@js.native
-object StructureExtension extends TopLevel[StructureExtensionConstructor]
+object StructureExtension {
+  @scala.inline
+  def apply(
+    destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
+    energy: Double,
+    energyCapacity: Double,
+    hits: Double,
+    hitsMax: Double,
+    id: Id[StructureExtension],
+    isActive: () => Boolean,
+    my: Boolean,
+    notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    pos: RoomPosition,
+    room: Room,
+    store: StoreRESOURCEENERGYfalse,
+    structureType: STRUCTURE_EXTENSION,
+    owner: Owner = null
+  ): StructureExtension = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], energyCapacity = energyCapacity.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructureExtension]
+  }
+}
 

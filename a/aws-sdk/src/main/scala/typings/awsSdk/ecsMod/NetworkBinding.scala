@@ -28,14 +28,14 @@ object NetworkBinding {
   @scala.inline
   def apply(
     bindIP: String = null,
-    containerPort: Int | scala.Double = null,
-    hostPort: Int | scala.Double = null,
+    containerPort: js.UndefOr[BoxedInteger] = js.undefined,
+    hostPort: js.UndefOr[BoxedInteger] = js.undefined,
     protocol: TransportProtocol = null
   ): NetworkBinding = {
     val __obj = js.Dynamic.literal()
     if (bindIP != null) __obj.updateDynamic("bindIP")(bindIP.asInstanceOf[js.Any])
-    if (containerPort != null) __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
-    if (hostPort != null) __obj.updateDynamic("hostPort")(hostPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerPort)) __obj.updateDynamic("containerPort")(containerPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hostPort)) __obj.updateDynamic("hostPort")(hostPort.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkBinding]
   }

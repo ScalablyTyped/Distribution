@@ -19,16 +19,16 @@ object Product {
   def apply(
     id: String,
     group_id: String = null,
-    price: Int | Double = null,
+    price: js.UndefOr[Double] = js.undefined,
     price_from: NumericBoolean = null,
-    price_old: Int | Double = null,
+    price_old: js.UndefOr[Double] = js.undefined,
     recommended_ids: String = null
   ): Product = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (group_id != null) __obj.updateDynamic("group_id")(group_id.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (!js.isUndefined(price)) __obj.updateDynamic("price")(price.get.asInstanceOf[js.Any])
     if (price_from != null) __obj.updateDynamic("price_from")(price_from.asInstanceOf[js.Any])
-    if (price_old != null) __obj.updateDynamic("price_old")(price_old.asInstanceOf[js.Any])
+    if (!js.isUndefined(price_old)) __obj.updateDynamic("price_old")(price_old.get.asInstanceOf[js.Any])
     if (recommended_ids != null) __obj.updateDynamic("recommended_ids")(recommended_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[Product]
   }

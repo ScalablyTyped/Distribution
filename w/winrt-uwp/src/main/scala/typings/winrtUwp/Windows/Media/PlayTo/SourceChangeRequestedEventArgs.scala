@@ -9,28 +9,45 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about the SourceChangeRequested event. */
-@JSGlobal("Windows.Media.PlayTo.SourceChangeRequestedEventArgs")
-@js.native
-abstract class SourceChangeRequestedEventArgs () extends js.Object {
+trait SourceChangeRequestedEventArgs extends js.Object {
   /** Gets the name of the album that contains the song in the audio stream. */
-  var album: String = js.native
+  var album: String
   /** Gets the author of the content in the media stream. */
-  var author: String = js.native
+  var author: String
   /** Gets the date that the content in the media stream was published. */
-  var date: Date = js.native
+  var date: Date
   /** Gets the description of the content in the media stream. */
-  var description: String = js.native
+  var description: String
   /** Gets the names of the genres that the content in the media stream belongs to. */
-  var genre: String = js.native
+  var genre: String
   /** Gets custom property names and values for the content in the media stream. */
-  var properties: IMapView[String, _] = js.native
+  var properties: IMapView[String, _]
   /** Gets the rating for the content in the media stream. */
-  var rating: Double = js.native
+  var rating: Double
   /** Gets the media stream for the Play To receiver. */
-  var stream: IRandomAccessStreamWithContentType = js.native
+  var stream: IRandomAccessStreamWithContentType
   /** Gets the thumbnail image for the content in the media stream. */
-  var thumbnail: IRandomAccessStreamReference = js.native
+  var thumbnail: IRandomAccessStreamReference
   /** Gets the title of the content in the media stream. */
-  var title: String = js.native
+  var title: String
+}
+
+object SourceChangeRequestedEventArgs {
+  @scala.inline
+  def apply(
+    album: String,
+    author: String,
+    date: Date,
+    description: String,
+    genre: String,
+    properties: IMapView[String, _],
+    rating: Double,
+    stream: IRandomAccessStreamWithContentType,
+    thumbnail: IRandomAccessStreamReference,
+    title: String
+  ): SourceChangeRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(album = album.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], genre = genre.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SourceChangeRequestedEventArgs]
+  }
 }
 

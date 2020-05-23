@@ -1,6 +1,9 @@
 package typings.vexflow.mod.Flow
 
-import typings.vexflow.AnonLastnote
+import typings.vexflow.Vex.IRenderContext
+import typings.vexflow.anon.Family
+import typings.vexflow.anon.Firstxpx
+import typings.vexflow.anon.Lastindices
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +27,21 @@ class StaveTie protected ()
     * two ties can be used, each with either "first_note" or "last_note" missing.
     *
     **/
-  def this(notes: AnonLastnote) = this()
-  def this(notes: AnonLastnote, text: String) = this()
+  def this(notes: Lastindices) = this()
+  def this(notes: Lastindices, text: String) = this()
+  /* CompleteClass */
+  override def draw(): Boolean = js.native
+  /* CompleteClass */
+  override def isPartial(): Boolean = js.native
+  /* CompleteClass */
+  override def renderText(first_x_px: Double, last_x_px: Double): Unit = js.native
+  /* CompleteClass */
+  override def renderTie(params: Firstxpx): Unit = js.native
+  /* CompleteClass */
+  override def setContext(context: IRenderContext): typings.vexflow.Vex.Flow.StaveTie = js.native
+  /* CompleteClass */
+  override def setFont(font: Family): typings.vexflow.Vex.Flow.StaveTie = js.native
+  /* CompleteClass */
+  override def setNotes(notes: Lastindices): typings.vexflow.Vex.Flow.StaveTie = js.native
 }
 

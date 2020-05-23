@@ -11,9 +11,9 @@ trait Buffer extends js.Object {
   /** Shorthand for `ref.deref`. */
   def deref(): js.Any = js.native
   /**
-  	 * Generate string for inspecting.
-  	 * String includes the hex-encoded memory address of the Buffer instance.
-  	 */
+    * Generate string for inspecting.
+    * String includes the hex-encoded memory address of the Buffer instance.
+    */
   def inspect(): String = js.native
   /** Shorthand for `ref.isNull`. */
   def isNull(): Boolean = js.native

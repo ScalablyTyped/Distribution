@@ -1,6 +1,6 @@
 package typings.antdMobileRn.searchBarIndexNativeMod
 
-import typings.antdMobileRn.AnonNativeEvent
+import typings.antdMobileRn.anon.NativeEvent
 import typings.antdMobileRn.searchBarPropsTypeMod.SearchBarPropsType
 import typings.antdMobileRn.searchBarStyleIndexNativeMod.ISearchBarStyle
 import typings.reactNative.mod.StyleProp
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait SearchBarNativeProps extends SearchBarPropsType {
   var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
-  var onSubmitEditing: js.UndefOr[js.Function1[/* event */ AnonNativeEvent, Unit]] = js.undefined
+  var onSubmitEditing: js.UndefOr[js.Function1[/* event */ NativeEvent, Unit]] = js.undefined
   var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   @JSName("styles")
   var styles_SearchBarNativeProps: ISearchBarStyle
@@ -26,7 +26,7 @@ object SearchBarNativeProps {
     defaultValue: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     focused: js.UndefOr[Boolean] = js.undefined,
-    maxLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
     onBlur: () => Unit = null,
     onCancel: /* value */ String => Unit = null,
     onChange: /* value */ String => Unit = null,
@@ -34,19 +34,19 @@ object SearchBarNativeProps {
     onClear: /* value */ String => Unit = null,
     onFocus: () => Unit = null,
     onSubmit: /* value */ String => Unit = null,
-    onSubmitEditing: /* event */ AnonNativeEvent => Unit = null,
+    onSubmitEditing: /* event */ NativeEvent => Unit = null,
     placeholder: String = null,
     showCancelButton: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[TextStyle] = null,
+    style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     value: String = null
   ): SearchBarNativeProps = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
@@ -56,8 +56,8 @@ object SearchBarNativeProps {
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction1(onSubmitEditing))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCancelButton)) __obj.updateDynamic("showCancelButton")(showCancelButton.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCancelButton)) __obj.updateDynamic("showCancelButton")(showCancelButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBarNativeProps]
   }

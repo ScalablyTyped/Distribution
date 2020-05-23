@@ -95,18 +95,18 @@ object User {
     notifications: js.UndefOr[Boolean] = js.undefined,
     status: Status = null,
     time_zone: String = null,
-    utc_offset: Int | Double = null
+    utc_offset: js.UndefOr[Double] = js.undefined
   ): User = {
     val __obj = js.Dynamic.literal(contributors_enabled = contributors_enabled.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], default_profile = default_profile.asInstanceOf[js.Any], default_profile_image = default_profile_image.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], entities = entities.asInstanceOf[js.Any], favourites_count = favourites_count.asInstanceOf[js.Any], followers_count = followers_count.asInstanceOf[js.Any], friends_count = friends_count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], id_str = id_str.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], listed_count = listed_count.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], profile_background_color = profile_background_color.asInstanceOf[js.Any], profile_background_image_url = profile_background_image_url.asInstanceOf[js.Any], profile_background_image_url_https = profile_background_image_url_https.asInstanceOf[js.Any], profile_background_tile = profile_background_tile.asInstanceOf[js.Any], profile_banner_url = profile_banner_url.asInstanceOf[js.Any], profile_image_url = profile_image_url.asInstanceOf[js.Any], profile_image_url_https = profile_image_url_https.asInstanceOf[js.Any], profile_link_color = profile_link_color.asInstanceOf[js.Any], profile_sidebar_border_color = profile_sidebar_border_color.asInstanceOf[js.Any], profile_sidebar_fill_color = profile_sidebar_fill_color.asInstanceOf[js.Any], profile_text_color = profile_text_color.asInstanceOf[js.Any], profile_use_background_image = profile_use_background_image.asInstanceOf[js.Any], screen_name = screen_name.asInstanceOf[js.Any], show_all_inline_media = show_all_inline_media.asInstanceOf[js.Any], statuses_count = statuses_count.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], withheld_in_countries = withheld_in_countries.asInstanceOf[js.Any], withheld_scope = withheld_scope.asInstanceOf[js.Any])
     __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow_request_sent)) __obj.updateDynamic("follow_request_sent")(follow_request_sent.asInstanceOf[js.Any])
-    if (!js.isUndefined(following)) __obj.updateDynamic("following")(following.asInstanceOf[js.Any])
-    if (!js.isUndefined(geo_enabled)) __obj.updateDynamic("geo_enabled")(geo_enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_translator)) __obj.updateDynamic("is_translator")(is_translator.asInstanceOf[js.Any])
-    if (!js.isUndefined(notifications)) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow_request_sent)) __obj.updateDynamic("follow_request_sent")(follow_request_sent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(following)) __obj.updateDynamic("following")(following.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(geo_enabled)) __obj.updateDynamic("geo_enabled")(geo_enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_translator)) __obj.updateDynamic("is_translator")(is_translator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notifications)) __obj.updateDynamic("notifications")(notifications.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone.asInstanceOf[js.Any])
-    if (utc_offset != null) __obj.updateDynamic("utc_offset")(utc_offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(utc_offset)) __obj.updateDynamic("utc_offset")(utc_offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

@@ -1,5 +1,6 @@
 package typings.domHelpers
 
+import typings.domHelpers.anon.PartialRecordPropertystri
 import typings.domHelpers.typesMod.CamelProperty
 import typings.domHelpers.typesMod.HyphenProperty
 import typings.std.HTMLElement

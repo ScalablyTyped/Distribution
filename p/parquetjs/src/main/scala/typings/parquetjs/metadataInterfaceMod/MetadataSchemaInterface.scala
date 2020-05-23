@@ -21,23 +21,16 @@ object MetadataSchemaInterface {
   def apply(
     name: String,
     converted_type: String = null,
-    field_id: Int | Double = null,
-    num_children: Int | Double = null,
-    precision: Int | Double = null,
+    field_id: Double = null.asInstanceOf[Double],
+    num_children: Double = null.asInstanceOf[Double],
+    precision: Double = null.asInstanceOf[Double],
     repetition_type: String = null,
-    scale: Int | Double = null,
-    `type`: Int | Double = null,
-    type_length: Int | Double = null
+    scale: Double = null.asInstanceOf[Double],
+    `type`: Double = null.asInstanceOf[Double],
+    type_length: Double = null.asInstanceOf[Double]
   ): MetadataSchemaInterface = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (converted_type != null) __obj.updateDynamic("converted_type")(converted_type.asInstanceOf[js.Any])
-    if (field_id != null) __obj.updateDynamic("field_id")(field_id.asInstanceOf[js.Any])
-    if (num_children != null) __obj.updateDynamic("num_children")(num_children.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (repetition_type != null) __obj.updateDynamic("repetition_type")(repetition_type.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (type_length != null) __obj.updateDynamic("type_length")(type_length.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], converted_type = converted_type.asInstanceOf[js.Any], field_id = field_id.asInstanceOf[js.Any], num_children = num_children.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], repetition_type = repetition_type.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], type_length = type_length.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataSchemaInterface]
   }
 }

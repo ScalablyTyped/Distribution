@@ -1,8 +1,8 @@
 package typings.postcssUrl.mod
 
-import typings.postcssUrl.AnonAbsolutePath
-import typings.postcssUrl.AnonAppend
-import typings.postcssUrl.AnonFile
+import typings.postcssUrl.anon.AbsolutePath
+import typings.postcssUrl.anon.Append
+import typings.postcssUrl.anon.File
 import typings.postcssUrl.postcssUrlStrings.`inline`
 import typings.postcssUrl.postcssUrlStrings.copy
 import typings.postcssUrl.postcssUrlStrings.rebase
@@ -33,7 +33,7 @@ trait Options extends js.Object {
   /**
     * Hash options
     */
-  var hashOptions: js.UndefOr[AnonAppend] = js.undefined
+  var hashOptions: js.UndefOr[Append] = js.undefined
   /**
     * Do not warn when an SVG URL with a fragment is inlined.
     * PostCSS-URL does not support partial inlining.
@@ -78,12 +78,12 @@ object Options {
   def apply(
     assetsPath: Boolean | String = null,
     basePath: String | js.Array[String] = null,
-    fallback: (/* asset */ AnonAbsolutePath, /* dir */ AnonFile) => String = null,
+    fallback: (/* asset */ AbsolutePath, /* dir */ File) => String = null,
     filter: RegExp | CustomFilterFunction | String = null,
-    hashOptions: AnonAppend = null,
+    hashOptions: Append = null,
     ignoreFragmentWarning: js.UndefOr[Boolean] = js.undefined,
     includeUriFragment: js.UndefOr[Boolean] = js.undefined,
-    maxSize: Int | Double = null,
+    maxSize: js.UndefOr[Double] = js.undefined,
     optimizeSvgEncode: js.UndefOr[Boolean] = js.undefined,
     url: copy | `inline` | rebase | CustomTransformFunction = null,
     useHash: js.UndefOr[Boolean] = js.undefined
@@ -94,12 +94,12 @@ object Options {
     if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction2(fallback))
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (hashOptions != null) __obj.updateDynamic("hashOptions")(hashOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreFragmentWarning)) __obj.updateDynamic("ignoreFragmentWarning")(ignoreFragmentWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeUriFragment)) __obj.updateDynamic("includeUriFragment")(includeUriFragment.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimizeSvgEncode)) __obj.updateDynamic("optimizeSvgEncode")(optimizeSvgEncode.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreFragmentWarning)) __obj.updateDynamic("ignoreFragmentWarning")(ignoreFragmentWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeUriFragment)) __obj.updateDynamic("includeUriFragment")(includeUriFragment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeSvgEncode)) __obj.updateDynamic("optimizeSvgEncode")(optimizeSvgEncode.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

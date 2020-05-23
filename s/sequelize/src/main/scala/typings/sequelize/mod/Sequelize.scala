@@ -1,7 +1,7 @@
 package typings.sequelize.mod
 
-import typings.sequelize.Anon1
-import typings.sequelize.AnonQuery
+import typings.sequelize.anon.Query
+import typings.sequelize.anon.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,7 +60,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def createSchema(schema: String, options: Anon1): typings.bluebird.mod.^[_] = js.native
+  def createSchema(schema: String, options: `1`): typings.bluebird.mod.^[_] = js.native
   /**
     * Returns the database version
     */
@@ -141,7 +141,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropAllSchemas(options: Anon1): typings.bluebird.mod.^[_] = js.native
+  def dropAllSchemas(options: `1`): typings.bluebird.mod.^[_] = js.native
   /**
     * Drop a single schema
     *
@@ -153,7 +153,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropSchema(schema: String, options: Anon1): typings.bluebird.mod.^[_] = js.native
+  def dropSchema(schema: String, options: `1`): typings.bluebird.mod.^[_] = js.native
   /**
     * Escape value.
     *
@@ -229,8 +229,8 @@ trait Sequelize
     */
   def query(sql: String): typings.bluebird.mod.^[_] = js.native
   def query(sql: String, options: QueryOptions): typings.bluebird.mod.^[_] = js.native
-  def query(sql: AnonQuery): typings.bluebird.mod.^[_] = js.native
-  def query(sql: AnonQuery, options: QueryOptions): typings.bluebird.mod.^[_] = js.native
+  def query(sql: Query): typings.bluebird.mod.^[_] = js.native
+  def query(sql: Query, options: QueryOptions): typings.bluebird.mod.^[_] = js.native
   /**
     * Get the fn for random based on the dialect
     */
@@ -255,7 +255,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def showAllSchemas(options: Anon1): typings.bluebird.mod.^[_] = js.native
+  def showAllSchemas(options: `1`): typings.bluebird.mod.^[_] = js.native
   /**
     * Sync all defined models to the DB.
     *

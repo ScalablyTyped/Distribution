@@ -58,28 +58,28 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     colors: js.Array[String] = null,
-    decay: Int | Double = null,
+    decay: js.UndefOr[Double] = js.undefined,
     origin: Origin = null,
-    particleCount: Int | Double = null,
+    particleCount: js.UndefOr[Double] = js.undefined,
     shapes: js.Array[shape] = null,
-    spread: Int | Double = null,
-    startVelocity: Int | Double = null,
-    ticks: Int | Double = null,
-    zIndex: Int | Double = null
+    spread: js.UndefOr[Double] = js.undefined,
+    startVelocity: js.UndefOr[Double] = js.undefined,
+    ticks: js.UndefOr[Double] = js.undefined,
+    zIndex: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (decay != null) __obj.updateDynamic("decay")(decay.asInstanceOf[js.Any])
+    if (!js.isUndefined(decay)) __obj.updateDynamic("decay")(decay.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (particleCount != null) __obj.updateDynamic("particleCount")(particleCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(particleCount)) __obj.updateDynamic("particleCount")(particleCount.get.asInstanceOf[js.Any])
     if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
-    if (spread != null) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
-    if (startVelocity != null) __obj.updateDynamic("startVelocity")(startVelocity.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startVelocity)) __obj.updateDynamic("startVelocity")(startVelocity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticks)) __obj.updateDynamic("ticks")(ticks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

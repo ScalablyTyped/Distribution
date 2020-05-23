@@ -1,8 +1,13 @@
 package typings.exceljs
 
 import typings.exceljs.mod.BorderStyle
+import typings.exceljs.mod.CellIsOperators
+import typings.exceljs.mod.CfvoTypes
+import typings.exceljs.mod.ContainsTextOperators
 import typings.exceljs.mod.DataValidationOperator
 import typings.exceljs.mod.FillPatterns
+import typings.exceljs.mod.IconSetTypes
+import typings.exceljs.mod.TimePeriodTypes
 import typings.exceljs.mod.WorksheetState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,10 +15,73 @@ import scala.scalajs.js.annotation._
 
 object exceljsStrings {
   @js.native
+  sealed trait `3Arrows` extends IconSetTypes
+  
+  @js.native
+  sealed trait `3ArrowsGray` extends IconSetTypes
+  
+  @js.native
+  sealed trait `3Flags` extends IconSetTypes
+  
+  @js.native
+  sealed trait `3Signs` extends IconSetTypes
+  
+  @js.native
+  sealed trait `3Stars` extends IconSetTypes
+  
+  @js.native
+  sealed trait `3Symbols` extends IconSetTypes
+  
+  @js.native
+  sealed trait `3Symbols2` extends IconSetTypes
+  
+  @js.native
+  sealed trait `3TrafficLights1` extends IconSetTypes
+  
+  @js.native
+  sealed trait `3TrafficLights2` extends IconSetTypes
+  
+  @js.native
+  sealed trait `3Triangles` extends IconSetTypes
+  
+  @js.native
+  sealed trait `4Arrows` extends IconSetTypes
+  
+  @js.native
+  sealed trait `4ArrowsGray` extends IconSetTypes
+  
+  @js.native
+  sealed trait `4Rating` extends IconSetTypes
+  
+  @js.native
+  sealed trait `4RedToBlack` extends IconSetTypes
+  
+  @js.native
+  sealed trait `4TrafficLights` extends IconSetTypes
+  
+  @js.native
+  sealed trait `5Arrows` extends IconSetTypes
+  
+  @js.native
+  sealed trait `5ArrowsGray` extends IconSetTypes
+  
+  @js.native
+  sealed trait `5Boxes` extends IconSetTypes
+  
+  @js.native
+  sealed trait `5Quarters` extends IconSetTypes
+  
+  @js.native
+  sealed trait `5Rating` extends IconSetTypes
+  
+  @js.native
   sealed trait DEFLATE extends js.Object
   
   @js.native
   sealed trait NA extends js.Object
+  
+  @js.native
+  sealed trait NoIcons extends IconSetTypes
   
   @js.native
   sealed trait None extends js.Object
@@ -223,6 +291,9 @@ object exceljsStrings {
   sealed trait TableStyleMedium9 extends js.Object
   
   @js.native
+  sealed trait aboveAverage extends js.Object
+  
+  @js.native
   sealed trait angle extends js.Object
   
   @js.native
@@ -232,10 +303,21 @@ object exceljsStrings {
   sealed trait atEnd extends js.Object
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
+  sealed trait autoMax extends CfvoTypes
+  
+  @js.native
+  sealed trait autoMin extends CfvoTypes
+  
+  @js.native
   sealed trait average extends js.Object
   
   @js.native
-  sealed trait between extends DataValidationOperator
+  sealed trait between
+    extends CellIsOperators
+       with DataValidationOperator
   
   @js.native
   sealed trait blank extends js.Object
@@ -250,10 +332,28 @@ object exceljsStrings {
   sealed trait bottomRight extends js.Object
   
   @js.native
+  sealed trait cellIs extends js.Object
+  
+  @js.native
   sealed trait center extends js.Object
   
   @js.native
   sealed trait centerContinuous extends js.Object
+  
+  @js.native
+  sealed trait colorScale extends js.Object
+  
+  @js.native
+  sealed trait containsBlanks extends ContainsTextOperators
+  
+  @js.native
+  sealed trait containsErrors extends ContainsTextOperators
+  
+  @js.native
+  sealed trait containsText extends ContainsTextOperators
+  
+  @js.native
+  sealed trait context extends js.Object
   
   @js.native
   sealed trait count extends js.Object
@@ -295,6 +395,9 @@ object exceljsStrings {
   sealed trait dashDotDot extends BorderStyle
   
   @js.native
+  sealed trait dataBar extends js.Object
+  
+  @js.native
   sealed trait date extends js.Object
   
   @js.native
@@ -319,10 +422,18 @@ object exceljsStrings {
   sealed trait downThenOver extends js.Object
   
   @js.native
-  sealed trait equal extends DataValidationOperator
+  sealed trait equal
+    extends CellIsOperators
+       with DataValidationOperator
+  
+  @js.native
+  sealed trait expression extends js.Object
   
   @js.native
   sealed trait fill extends js.Object
+  
+  @js.native
+  sealed trait formula extends CfvoTypes
   
   @js.native
   sealed trait frozen extends js.Object
@@ -340,7 +451,9 @@ object exceljsStrings {
   sealed trait gray125 extends FillPatterns
   
   @js.native
-  sealed trait greaterThan extends DataValidationOperator
+  sealed trait greaterThan
+    extends CellIsOperators
+       with DataValidationOperator
   
   @js.native
   sealed trait greaterThanOrEqual extends DataValidationOperator
@@ -350,6 +463,9 @@ object exceljsStrings {
   
   @js.native
   sealed trait hidden extends WorksheetState
+  
+  @js.native
+  sealed trait iconSet extends js.Object
   
   @js.native
   sealed trait image extends js.Object
@@ -364,10 +480,24 @@ object exceljsStrings {
   sealed trait landscape extends js.Object
   
   @js.native
+  sealed trait last7Days extends TimePeriodTypes
+  
+  @js.native
+  sealed trait lastMonth extends TimePeriodTypes
+  
+  @js.native
+  sealed trait lastWeek extends TimePeriodTypes
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait lessThan extends DataValidationOperator
+  sealed trait leftToRight extends js.Object
+  
+  @js.native
+  sealed trait lessThan
+    extends CellIsOperators
+       with DataValidationOperator
   
   @js.native
   sealed trait lessThanOrEqual extends DataValidationOperator
@@ -403,7 +533,7 @@ object exceljsStrings {
   sealed trait major extends js.Object
   
   @js.native
-  sealed trait max extends js.Object
+  sealed trait max extends CfvoTypes
   
   @js.native
   sealed trait medium extends BorderStyle
@@ -424,10 +554,16 @@ object exceljsStrings {
   sealed trait middle extends js.Object
   
   @js.native
-  sealed trait min extends js.Object
+  sealed trait min extends CfvoTypes
   
   @js.native
   sealed trait minor extends js.Object
+  
+  @js.native
+  sealed trait nextMonth extends TimePeriodTypes
+  
+  @js.native
+  sealed trait nextWeek extends TimePeriodTypes
   
   @js.native
   sealed trait none_ extends FillPatterns
@@ -439,7 +575,16 @@ object exceljsStrings {
   sealed trait notBetween extends DataValidationOperator
   
   @js.native
+  sealed trait notContainsBlanks extends ContainsTextOperators
+  
+  @js.native
+  sealed trait notContainsErrors extends ContainsTextOperators
+  
+  @js.native
   sealed trait notEqual extends DataValidationOperator
+  
+  @js.native
+  sealed trait num extends CfvoTypes
   
   @js.native
   sealed trait overThenDown extends js.Object
@@ -457,6 +602,12 @@ object exceljsStrings {
   sealed trait pattern extends js.Object
   
   @js.native
+  sealed trait percent extends CfvoTypes
+  
+  @js.native
+  sealed trait percentile extends CfvoTypes
+  
+  @js.native
   sealed trait png extends js.Object
   
   @js.native
@@ -467,6 +618,9 @@ object exceljsStrings {
   
   @js.native
   sealed trait right extends js.Object
+  
+  @js.native
+  sealed trait rightToLeft extends js.Object
   
   @js.native
   sealed trait rtl extends js.Object
@@ -508,7 +662,25 @@ object exceljsStrings {
   sealed trait thin extends BorderStyle
   
   @js.native
+  sealed trait thisMonth extends TimePeriodTypes
+  
+  @js.native
+  sealed trait thisWeek extends TimePeriodTypes
+  
+  @js.native
+  sealed trait timePeriod extends js.Object
+  
+  @js.native
+  sealed trait today extends TimePeriodTypes
+  
+  @js.native
+  sealed trait tomorrow extends TimePeriodTypes
+  
+  @js.native
   sealed trait top extends js.Object
+  
+  @js.native
+  sealed trait top10 extends js.Object
   
   @js.native
   sealed trait topLeft extends js.Object
@@ -531,10 +703,55 @@ object exceljsStrings {
   @js.native
   sealed trait whole extends js.Object
   
+  @js.native
+  sealed trait yesterday extends TimePeriodTypes
+  
+  @scala.inline
+  def `3Arrows`: `3Arrows` = "3Arrows".asInstanceOf[`3Arrows`]
+  @scala.inline
+  def `3ArrowsGray`: `3ArrowsGray` = "3ArrowsGray".asInstanceOf[`3ArrowsGray`]
+  @scala.inline
+  def `3Flags`: `3Flags` = "3Flags".asInstanceOf[`3Flags`]
+  @scala.inline
+  def `3Signs`: `3Signs` = "3Signs".asInstanceOf[`3Signs`]
+  @scala.inline
+  def `3Stars`: `3Stars` = "3Stars".asInstanceOf[`3Stars`]
+  @scala.inline
+  def `3Symbols`: `3Symbols` = "3Symbols".asInstanceOf[`3Symbols`]
+  @scala.inline
+  def `3Symbols2`: `3Symbols2` = "3Symbols2".asInstanceOf[`3Symbols2`]
+  @scala.inline
+  def `3TrafficLights1`: `3TrafficLights1` = "3TrafficLights1".asInstanceOf[`3TrafficLights1`]
+  @scala.inline
+  def `3TrafficLights2`: `3TrafficLights2` = "3TrafficLights2".asInstanceOf[`3TrafficLights2`]
+  @scala.inline
+  def `3Triangles`: `3Triangles` = "3Triangles".asInstanceOf[`3Triangles`]
+  @scala.inline
+  def `4Arrows`: `4Arrows` = "4Arrows".asInstanceOf[`4Arrows`]
+  @scala.inline
+  def `4ArrowsGray`: `4ArrowsGray` = "4ArrowsGray".asInstanceOf[`4ArrowsGray`]
+  @scala.inline
+  def `4Rating`: `4Rating` = "4Rating".asInstanceOf[`4Rating`]
+  @scala.inline
+  def `4RedToBlack`: `4RedToBlack` = "4RedToBlack".asInstanceOf[`4RedToBlack`]
+  @scala.inline
+  def `4TrafficLights`: `4TrafficLights` = "4TrafficLights".asInstanceOf[`4TrafficLights`]
+  @scala.inline
+  def `5Arrows`: `5Arrows` = "5Arrows".asInstanceOf[`5Arrows`]
+  @scala.inline
+  def `5ArrowsGray`: `5ArrowsGray` = "5ArrowsGray".asInstanceOf[`5ArrowsGray`]
+  @scala.inline
+  def `5Boxes`: `5Boxes` = "5Boxes".asInstanceOf[`5Boxes`]
+  @scala.inline
+  def `5Quarters`: `5Quarters` = "5Quarters".asInstanceOf[`5Quarters`]
+  @scala.inline
+  def `5Rating`: `5Rating` = "5Rating".asInstanceOf[`5Rating`]
   @scala.inline
   def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]
   @scala.inline
   def NA: NA = "NA".asInstanceOf[NA]
+  @scala.inline
+  def NoIcons: NoIcons = "NoIcons".asInstanceOf[NoIcons]
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
@@ -674,11 +891,19 @@ object exceljsStrings {
   @scala.inline
   def TableStyleMedium9: TableStyleMedium9 = "TableStyleMedium9".asInstanceOf[TableStyleMedium9]
   @scala.inline
+  def aboveAverage: aboveAverage = "aboveAverage".asInstanceOf[aboveAverage]
+  @scala.inline
   def angle: angle = "angle".asInstanceOf[angle]
   @scala.inline
   def asDisplayed: asDisplayed = "asDisplayed".asInstanceOf[asDisplayed]
   @scala.inline
   def atEnd: atEnd = "atEnd".asInstanceOf[atEnd]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def autoMax: autoMax = "autoMax".asInstanceOf[autoMax]
+  @scala.inline
+  def autoMin: autoMin = "autoMin".asInstanceOf[autoMin]
   @scala.inline
   def average: average = "average".asInstanceOf[average]
   @scala.inline
@@ -692,9 +917,21 @@ object exceljsStrings {
   @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   @scala.inline
+  def cellIs: cellIs = "cellIs".asInstanceOf[cellIs]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
   def centerContinuous: centerContinuous = "centerContinuous".asInstanceOf[centerContinuous]
+  @scala.inline
+  def colorScale: colorScale = "colorScale".asInstanceOf[colorScale]
+  @scala.inline
+  def containsBlanks: containsBlanks = "containsBlanks".asInstanceOf[containsBlanks]
+  @scala.inline
+  def containsErrors: containsErrors = "containsErrors".asInstanceOf[containsErrors]
+  @scala.inline
+  def containsText: containsText = "containsText".asInstanceOf[containsText]
+  @scala.inline
+  def context: context = "context".asInstanceOf[context]
   @scala.inline
   def count: count = "count".asInstanceOf[count]
   @scala.inline
@@ -722,6 +959,8 @@ object exceljsStrings {
   @scala.inline
   def dashDotDot: dashDotDot = "dashDotDot".asInstanceOf[dashDotDot]
   @scala.inline
+  def dataBar: dataBar = "dataBar".asInstanceOf[dataBar]
+  @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
@@ -740,7 +979,11 @@ object exceljsStrings {
   @scala.inline
   def equal: equal = "equal".asInstanceOf[equal]
   @scala.inline
+  def expression: expression = "expression".asInstanceOf[expression]
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
+  def formula: formula = "formula".asInstanceOf[formula]
   @scala.inline
   def frozen: frozen = "frozen".asInstanceOf[frozen]
   @scala.inline
@@ -760,6 +1003,8 @@ object exceljsStrings {
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
+  def iconSet: iconSet = "iconSet".asInstanceOf[iconSet]
+  @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
@@ -768,7 +1013,15 @@ object exceljsStrings {
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   @scala.inline
+  def last7Days: last7Days = "last7Days".asInstanceOf[last7Days]
+  @scala.inline
+  def lastMonth: lastMonth = "lastMonth".asInstanceOf[lastMonth]
+  @scala.inline
+  def lastWeek: lastWeek = "lastWeek".asInstanceOf[lastWeek]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
+  def leftToRight: leftToRight = "leftToRight".asInstanceOf[leftToRight]
   @scala.inline
   def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
   @scala.inline
@@ -812,13 +1065,23 @@ object exceljsStrings {
   @scala.inline
   def minor: minor = "minor".asInstanceOf[minor]
   @scala.inline
+  def nextMonth: nextMonth = "nextMonth".asInstanceOf[nextMonth]
+  @scala.inline
+  def nextWeek: nextWeek = "nextWeek".asInstanceOf[nextWeek]
+  @scala.inline
   def none_ : none_ = "none".asInstanceOf[none_]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def notBetween: notBetween = "notBetween".asInstanceOf[notBetween]
   @scala.inline
+  def notContainsBlanks: notContainsBlanks = "notContainsBlanks".asInstanceOf[notContainsBlanks]
+  @scala.inline
+  def notContainsErrors: notContainsErrors = "notContainsErrors".asInstanceOf[notContainsErrors]
+  @scala.inline
   def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
+  @scala.inline
+  def num: num = "num".asInstanceOf[num]
   @scala.inline
   def overThenDown: overThenDown = "overThenDown".asInstanceOf[overThenDown]
   @scala.inline
@@ -830,6 +1093,10 @@ object exceljsStrings {
   @scala.inline
   def pattern: pattern = "pattern".asInstanceOf[pattern]
   @scala.inline
+  def percent: percent = "percent".asInstanceOf[percent]
+  @scala.inline
+  def percentile: percentile = "percentile".asInstanceOf[percentile]
+  @scala.inline
   def png: png = "png".asInstanceOf[png]
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
@@ -837,6 +1104,8 @@ object exceljsStrings {
   def promise: promise = "promise".asInstanceOf[promise]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def rightToLeft: rightToLeft = "rightToLeft".asInstanceOf[rightToLeft]
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
@@ -864,7 +1133,19 @@ object exceljsStrings {
   @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
   @scala.inline
+  def thisMonth: thisMonth = "thisMonth".asInstanceOf[thisMonth]
+  @scala.inline
+  def thisWeek: thisWeek = "thisWeek".asInstanceOf[thisWeek]
+  @scala.inline
+  def timePeriod: timePeriod = "timePeriod".asInstanceOf[timePeriod]
+  @scala.inline
+  def today: today = "today".asInstanceOf[today]
+  @scala.inline
+  def tomorrow: tomorrow = "tomorrow".asInstanceOf[tomorrow]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
+  def top10: top10 = "top10".asInstanceOf[top10]
   @scala.inline
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   @scala.inline
@@ -879,5 +1160,7 @@ object exceljsStrings {
   def visible: visible = "visible".asInstanceOf[visible]
   @scala.inline
   def whole: whole = "whole".asInstanceOf[whole]
+  @scala.inline
+  def yesterday: yesterday = "yesterday".asInstanceOf[yesterday]
 }
 

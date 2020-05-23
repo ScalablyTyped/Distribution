@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.TouchEvent
 import scala.scalajs.js
@@ -25,7 +26,6 @@ class Pointer protected () extends js.Object {
     * Destroys the Pointer object and disconnects DOM events.
     */
   def destroy(): Unit = js.native
-  def findNearestKDPoints(series: js.Array[Series], shared: js.UndefOr[scala.Nothing], e: PointerEventObject): js.UndefOr[Point] = js.native
   /**
     * Finds the closest point to a set of coordinates, using the k-d-tree
     * algorithm.
@@ -42,7 +42,7 @@ class Pointer protected () extends js.Object {
     *
     * @return The point closest to given coordinates.
     */
-  def findNearestKDPoints(series: js.Array[Series], shared: Boolean, e: PointerEventObject): js.UndefOr[Point] = js.native
+  def findNearestKDPoints(series: js.Array[Series], shared: js.UndefOr[Boolean], e: PointerEventObject): js.UndefOr[Point] = js.native
   /**
     * Return the cached chartPosition if it is available on the Pointer,
     * otherwise find it. Running offset is quite expensive, so it should be
@@ -87,6 +87,8 @@ class Pointer protected () extends js.Object {
     *
     * @return A browser event with extended properties `chartX` and `chartY`.
     */
+  def normalize(e: MouseEvent): PointerEventObject = js.native
+  def normalize(e: MouseEvent, chartPosition: OffsetObject): PointerEventObject = js.native
   def normalize(e: PointerEvent): PointerEventObject = js.native
   def normalize(e: PointerEvent, chartPosition: OffsetObject): PointerEventObject = js.native
   def normalize(e: TouchEvent): PointerEventObject = js.native

@@ -140,23 +140,23 @@ trait MatterBodyConfig extends js.Object {
 object MatterBodyConfig {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     chamfer: Double | js.Array[Double] | MatterChamferConfig = null,
-    circleRadius: Int | Double = null,
+    circleRadius: js.UndefOr[Double] = js.undefined,
     collisionFilter: MatterCollisionFilter = null,
-    density: Int | Double = null,
+    density: js.UndefOr[Double] = js.undefined,
     force: Vector2Like = null,
-    friction: Int | Double = null,
-    frictionAir: Int | Double = null,
-    frictionStatic: Int | Double = null,
+    friction: js.UndefOr[Double] = js.undefined,
+    frictionAir: js.UndefOr[Double] = js.undefined,
+    frictionStatic: js.UndefOr[Double] = js.undefined,
     gravityScale: Vector2Like = null,
     ignoreGravity: js.UndefOr[Boolean] = js.undefined,
     ignorePointer: js.UndefOr[Boolean] = js.undefined,
-    inverseMass: Int | Double = null,
+    inverseMass: js.UndefOr[Double] = js.undefined,
     isSensor: js.UndefOr[Boolean] = js.undefined,
     isStatic: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
-    mass: Int | Double = null,
+    mass: js.UndefOr[Double] = js.undefined,
     onCollideActiveCallback: js.Function = null,
     onCollideCallback: js.Function = null,
     onCollideEndCallback: js.Function = null,
@@ -165,32 +165,32 @@ object MatterBodyConfig {
     plugin: js.Any = null,
     position: Vector2Like = null,
     render: MatterBodyRenderConfig = null,
-    restitution: Int | Double = null,
+    restitution: js.UndefOr[Double] = js.undefined,
     scale: Vector2Like = null,
-    sleepThreshold: Int | Double = null,
-    slop: Int | Double = null,
-    timeScale: Int | Double = null,
-    torque: Int | Double = null,
+    sleepThreshold: js.UndefOr[Double] = js.undefined,
+    slop: js.UndefOr[Double] = js.undefined,
+    timeScale: js.UndefOr[Double] = js.undefined,
+    torque: js.UndefOr[Double] = js.undefined,
     vertices: js.Array[Vector2Like] = null
   ): MatterBodyConfig = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (chamfer != null) __obj.updateDynamic("chamfer")(chamfer.asInstanceOf[js.Any])
-    if (circleRadius != null) __obj.updateDynamic("circleRadius")(circleRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(circleRadius)) __obj.updateDynamic("circleRadius")(circleRadius.get.asInstanceOf[js.Any])
     if (collisionFilter != null) __obj.updateDynamic("collisionFilter")(collisionFilter.asInstanceOf[js.Any])
-    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (!js.isUndefined(density)) __obj.updateDynamic("density")(density.get.asInstanceOf[js.Any])
     if (force != null) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (frictionAir != null) __obj.updateDynamic("frictionAir")(frictionAir.asInstanceOf[js.Any])
-    if (frictionStatic != null) __obj.updateDynamic("frictionStatic")(frictionStatic.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frictionAir)) __obj.updateDynamic("frictionAir")(frictionAir.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frictionStatic)) __obj.updateDynamic("frictionStatic")(frictionStatic.get.asInstanceOf[js.Any])
     if (gravityScale != null) __obj.updateDynamic("gravityScale")(gravityScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreGravity)) __obj.updateDynamic("ignoreGravity")(ignoreGravity.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePointer)) __obj.updateDynamic("ignorePointer")(ignorePointer.asInstanceOf[js.Any])
-    if (inverseMass != null) __obj.updateDynamic("inverseMass")(inverseMass.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSensor)) __obj.updateDynamic("isSensor")(isSensor.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreGravity)) __obj.updateDynamic("ignoreGravity")(ignoreGravity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePointer)) __obj.updateDynamic("ignorePointer")(ignorePointer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverseMass)) __obj.updateDynamic("inverseMass")(inverseMass.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSensor)) __obj.updateDynamic("isSensor")(isSensor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
+    if (!js.isUndefined(mass)) __obj.updateDynamic("mass")(mass.get.asInstanceOf[js.Any])
     if (onCollideActiveCallback != null) __obj.updateDynamic("onCollideActiveCallback")(onCollideActiveCallback.asInstanceOf[js.Any])
     if (onCollideCallback != null) __obj.updateDynamic("onCollideCallback")(onCollideCallback.asInstanceOf[js.Any])
     if (onCollideEndCallback != null) __obj.updateDynamic("onCollideEndCallback")(onCollideEndCallback.asInstanceOf[js.Any])
@@ -199,12 +199,12 @@ object MatterBodyConfig {
     if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (restitution != null) __obj.updateDynamic("restitution")(restitution.asInstanceOf[js.Any])
+    if (!js.isUndefined(restitution)) __obj.updateDynamic("restitution")(restitution.get.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (sleepThreshold != null) __obj.updateDynamic("sleepThreshold")(sleepThreshold.asInstanceOf[js.Any])
-    if (slop != null) __obj.updateDynamic("slop")(slop.asInstanceOf[js.Any])
-    if (timeScale != null) __obj.updateDynamic("timeScale")(timeScale.asInstanceOf[js.Any])
-    if (torque != null) __obj.updateDynamic("torque")(torque.asInstanceOf[js.Any])
+    if (!js.isUndefined(sleepThreshold)) __obj.updateDynamic("sleepThreshold")(sleepThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slop)) __obj.updateDynamic("slop")(slop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeScale)) __obj.updateDynamic("timeScale")(timeScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(torque)) __obj.updateDynamic("torque")(torque.get.asInstanceOf[js.Any])
     if (vertices != null) __obj.updateDynamic("vertices")(vertices.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterBodyConfig]
   }

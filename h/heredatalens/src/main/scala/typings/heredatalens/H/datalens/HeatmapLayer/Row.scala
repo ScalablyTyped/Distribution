@@ -17,11 +17,15 @@ trait Row extends js.Object {
 
 object Row {
   @scala.inline
-  def apply(count: Int | Double = null, tx: Int | Double = null, ty: Int | Double = null): Row = {
+  def apply(
+    count: js.UndefOr[Double] = js.undefined,
+    tx: js.UndefOr[Double] = js.undefined,
+    ty: js.UndefOr[Double] = js.undefined
+  ): Row = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (tx != null) __obj.updateDynamic("tx")(tx.asInstanceOf[js.Any])
-    if (ty != null) __obj.updateDynamic("ty")(ty.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tx)) __obj.updateDynamic("tx")(tx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ty)) __obj.updateDynamic("ty")(ty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Row]
   }
 }

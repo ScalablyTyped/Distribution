@@ -26,10 +26,10 @@ object OnSendHeadersListenerDetails {
     resourceType: String,
     timestamp: Double,
     url: String,
-    webContentsId: Int | Double = null
+    webContentsId: js.UndefOr[Double] = js.undefined
   ): OnSendHeadersListenerDetails = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], requestHeaders = requestHeaders.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
+    if (!js.isUndefined(webContentsId)) __obj.updateDynamic("webContentsId")(webContentsId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSendHeadersListenerDetails]
   }
 }

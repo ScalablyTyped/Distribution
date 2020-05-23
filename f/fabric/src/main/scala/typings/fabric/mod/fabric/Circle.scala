@@ -18,19 +18,19 @@ class Circle ()
 @js.native
 object Circle extends js.Object {
   /**
-  	 * List of attribute names to account for when parsing SVG element (used by {@link fabric.Circle.fromElement})
-  	 */
+    * List of attribute names to account for when parsing SVG element (used by {@link fabric.Circle.fromElement})
+    */
   var ATTRIBUTE_NAMES: js.Array[String] = js.native
   /**
-  	 * Returns Circle instance from an SVG element
-  	 * @param element Element to parse
-  	 * @param [options] Options object
-  	 */
+    * Returns Circle instance from an SVG element
+    * @param element Element to parse
+    * @param [options] Options object
+    */
   def fromElement(element: SVGElement, options: ICircleOptions): typings.fabric.fabricImplMod.Circle = js.native
   /**
-  	 * Returns Circle instance from an object representation
-  	 * @param object Object to create an instance from
-  	 */
+    * Returns Circle instance from an object representation
+    * @param object Object to create an instance from
+    */
   def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Circle = js.native
 }
 

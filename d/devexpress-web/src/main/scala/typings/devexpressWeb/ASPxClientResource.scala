@@ -7,32 +7,45 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the Resource class.
   */
-@JSGlobal("ASPxClientResource")
-@js.native
-class ASPxClientResource () extends js.Object {
+trait ASPxClientResource extends js.Object {
   /**
     * Returns the resource's caption.
     */
-  var caption: String = js.native
+  var caption: String
   /**
     * Gets the resource's color.
     */
-  var color: String = js.native
+  var color: String
   /**
     * Gets the resource ID.
     */
-  var resourceId: String = js.native
+  var resourceId: String
   /**
     * Returns the resource's caption.
     */
-  def GetCaption(): String = js.native
+  def GetCaption(): String
   /**
     * Gets the resource's color.
     */
-  def GetColor(): String = js.native
+  def GetColor(): String
   /**
     * Gets the ID of the client appointment.
     */
-  def GetId(): String = js.native
+  def GetId(): String
+}
+
+object ASPxClientResource {
+  @scala.inline
+  def apply(
+    GetCaption: () => String,
+    GetColor: () => String,
+    GetId: () => String,
+    caption: String,
+    color: String,
+    resourceId: String
+  ): ASPxClientResource = {
+    val __obj = js.Dynamic.literal(GetCaption = js.Any.fromFunction0(GetCaption), GetColor = js.Any.fromFunction0(GetColor), GetId = js.Any.fromFunction0(GetId), caption = caption.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientResource]
+  }
 }
 

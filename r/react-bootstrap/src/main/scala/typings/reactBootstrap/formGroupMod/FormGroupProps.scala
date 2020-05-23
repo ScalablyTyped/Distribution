@@ -27,7 +27,7 @@ object FormGroupProps {
     bsClass: String = null,
     bsSize: Sizes = null,
     controlId: String = null,
-    validationState: success | warning | error = null
+    validationState: js.UndefOr[Null | success | warning | error] = js.undefined
   ): FormGroupProps = {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
@@ -35,7 +35,7 @@ object FormGroupProps {
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
     if (controlId != null) __obj.updateDynamic("controlId")(controlId.asInstanceOf[js.Any])
-    if (validationState != null) __obj.updateDynamic("validationState")(validationState.asInstanceOf[js.Any])
+    if (!js.isUndefined(validationState)) __obj.updateDynamic("validationState")(validationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormGroupProps]
   }
 }

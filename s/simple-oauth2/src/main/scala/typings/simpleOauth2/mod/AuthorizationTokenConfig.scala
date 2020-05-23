@@ -20,7 +20,7 @@ object AuthorizationTokenConfig {
   def apply(
     code: AuthorizationCode,
     redirect_uri: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     scope: String | js.Array[String] = null
   ): AuthorizationTokenConfig = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], redirect_uri = redirect_uri.asInstanceOf[js.Any])

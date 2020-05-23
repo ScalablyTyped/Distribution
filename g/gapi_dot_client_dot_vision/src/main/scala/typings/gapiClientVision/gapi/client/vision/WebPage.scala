@@ -13,9 +13,9 @@ trait WebPage extends js.Object {
 
 object WebPage {
   @scala.inline
-  def apply(score: Int | Double = null, url: String = null): WebPage = {
+  def apply(score: js.UndefOr[Double] = js.undefined, url: String = null): WebPage = {
     val __obj = js.Dynamic.literal()
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebPage]
   }

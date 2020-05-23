@@ -1,7 +1,7 @@
 package typings.siesta.Siesta
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait IHarness extends js.Object {
   var isReadyTimeout: Double
   var keepNLastResults: Double
   var keepResults: Boolean
-  var listenters: StringDictionary[js.Function2[/* event */ Event_, /* repeated */ js.Any, Unit]]
+  var listenters: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]]
   var maxThreads: Double
   var needDone: Boolean
   var overrideSetTimeout: Boolean
@@ -48,7 +48,7 @@ object IHarness {
     isReadyTimeout: Double,
     keepNLastResults: Double,
     keepResults: Boolean,
-    listenters: StringDictionary[js.Function2[/* event */ Event_, /* repeated */ js.Any, Unit]],
+    listenters: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]],
     maxThreads: Double,
     needDone: Boolean,
     overrideSetTimeout: Boolean,

@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestDeferral")
-@js.native
-class SearchPaneSuggestionsRequestDeferral () extends ISearchPaneSuggestionsRequestDeferral {
-  /* CompleteClass */
-  override def complete(): Unit = js.native
+trait SearchPaneSuggestionsRequestDeferral extends ISearchPaneSuggestionsRequestDeferral
+
+object SearchPaneSuggestionsRequestDeferral {
+  @scala.inline
+  def apply(complete: () => Unit): SearchPaneSuggestionsRequestDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
+    __obj.asInstanceOf[SearchPaneSuggestionsRequestDeferral]
+  }
 }
 

@@ -44,19 +44,19 @@ object ResponseMetadata {
     cfId: String = null,
     extendedRequestId: String = null,
     httpHeaders: HeaderBag = null,
-    httpStatusCode: Int | Double = null,
+    httpStatusCode: js.UndefOr[Double] = js.undefined,
     requestId: String = null,
-    retries: Int | Double = null,
-    totalRetryDelay: Int | Double = null
+    retries: js.UndefOr[Double] = js.undefined,
+    totalRetryDelay: js.UndefOr[Double] = js.undefined
   ): ResponseMetadata = {
     val __obj = js.Dynamic.literal()
     if (cfId != null) __obj.updateDynamic("cfId")(cfId.asInstanceOf[js.Any])
     if (extendedRequestId != null) __obj.updateDynamic("extendedRequestId")(extendedRequestId.asInstanceOf[js.Any])
     if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders.asInstanceOf[js.Any])
-    if (httpStatusCode != null) __obj.updateDynamic("httpStatusCode")(httpStatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpStatusCode)) __obj.updateDynamic("httpStatusCode")(httpStatusCode.get.asInstanceOf[js.Any])
     if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (totalRetryDelay != null) __obj.updateDynamic("totalRetryDelay")(totalRetryDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalRetryDelay)) __obj.updateDynamic("totalRetryDelay")(totalRetryDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseMetadata]
   }
 }

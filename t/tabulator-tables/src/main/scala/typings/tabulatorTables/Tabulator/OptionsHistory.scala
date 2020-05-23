@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OptionsHistory extends js.Object {
-  /** Enable user interaction history functionality	 */
+  /** Enable user interaction history functionality     */
   var history: js.UndefOr[Boolean] = js.undefined
   /** The historyRedo event is triggered when the redo action is triggered. */
   var historyRedo: js.UndefOr[
@@ -35,7 +35,7 @@ object OptionsHistory {
     historyUndo: (/* action */ HistoryAction, /* component */ CellComponent | RowComponent, /* data */ js.Any) => Unit = null
   ): OptionsHistory = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
     if (historyRedo != null) __obj.updateDynamic("historyRedo")(js.Any.fromFunction3(historyRedo))
     if (historyUndo != null) __obj.updateDynamic("historyUndo")(js.Any.fromFunction3(historyUndo))
     __obj.asInstanceOf[OptionsHistory]

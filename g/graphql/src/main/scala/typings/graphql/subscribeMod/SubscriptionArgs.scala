@@ -28,19 +28,19 @@ object SubscriptionArgs {
     document: DocumentNode,
     schema: GraphQLSchema,
     contextValue: js.Any = null,
-    fieldResolver: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
-    operationName: Maybe[String] = null,
+    fieldResolver: js.UndefOr[Null | ((_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any)] = js.undefined,
+    operationName: js.UndefOr[Null | Maybe[String]] = js.undefined,
     rootValue: js.Any = null,
-    subscribeFieldResolver: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
-    variableValues: Maybe[Record[String, _]] = null
+    subscribeFieldResolver: js.UndefOr[Null | ((_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any)] = js.undefined,
+    variableValues: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined
   ): SubscriptionArgs = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue.asInstanceOf[js.Any])
-    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldResolver)) __obj.updateDynamic("fieldResolver")(if (fieldResolver != null) js.Any.fromFunction4(fieldResolver.asInstanceOf[(_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any]) else null)
+    if (!js.isUndefined(operationName)) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
-    if (subscribeFieldResolver != null) __obj.updateDynamic("subscribeFieldResolver")(js.Any.fromFunction4(subscribeFieldResolver))
-    if (variableValues != null) __obj.updateDynamic("variableValues")(variableValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscribeFieldResolver)) __obj.updateDynamic("subscribeFieldResolver")(if (subscribeFieldResolver != null) js.Any.fromFunction4(subscribeFieldResolver.asInstanceOf[(_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any]) else null)
+    if (!js.isUndefined(variableValues)) __obj.updateDynamic("variableValues")(variableValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionArgs]
   }
 }

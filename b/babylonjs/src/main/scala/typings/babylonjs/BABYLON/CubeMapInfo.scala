@@ -74,14 +74,8 @@ object CubeMapInfo {
     right: Nullable[ArrayBufferView] = null,
     up: Nullable[ArrayBufferView] = null
   ): CubeMapInfo = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], gammaSpace = gammaSpace.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], gammaSpace = gammaSpace.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], front = front.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (back != null) __obj.updateDynamic("back")(back.asInstanceOf[js.Any])
-    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
-    if (front != null) __obj.updateDynamic("front")(front.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
     __obj.asInstanceOf[CubeMapInfo]
   }
 }

@@ -6,8 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DeploymentTarget extends js.Object {
+  var cloudFormationTarget: js.UndefOr[CloudFormationTarget] = js.native
   /**
-    *  The deployment type that is specific to the deployment's compute platform. 
+    * The deployment type that is specific to the deployment's compute platform or deployments initiated by a CloudFormation stack update.
     */
   var deploymentTargetType: js.UndefOr[DeploymentTargetType] = js.native
   /**
@@ -27,12 +28,14 @@ trait DeploymentTarget extends js.Object {
 object DeploymentTarget {
   @scala.inline
   def apply(
+    cloudFormationTarget: CloudFormationTarget = null,
     deploymentTargetType: DeploymentTargetType = null,
     ecsTarget: ECSTarget = null,
     instanceTarget: InstanceTarget = null,
     lambdaTarget: LambdaTarget = null
   ): DeploymentTarget = {
     val __obj = js.Dynamic.literal()
+    if (cloudFormationTarget != null) __obj.updateDynamic("cloudFormationTarget")(cloudFormationTarget.asInstanceOf[js.Any])
     if (deploymentTargetType != null) __obj.updateDynamic("deploymentTargetType")(deploymentTargetType.asInstanceOf[js.Any])
     if (ecsTarget != null) __obj.updateDynamic("ecsTarget")(ecsTarget.asInstanceOf[js.Any])
     if (instanceTarget != null) __obj.updateDynamic("instanceTarget")(instanceTarget.asInstanceOf[js.Any])

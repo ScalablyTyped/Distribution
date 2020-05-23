@@ -13,7 +13,7 @@ object DialogHTMLAttributes {
   def apply[T](HTMLAttributes: HTMLAttributes[T] = null, open: js.UndefOr[Boolean] = js.undefined): DialogHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogHTMLAttributes[T]]
   }
 }

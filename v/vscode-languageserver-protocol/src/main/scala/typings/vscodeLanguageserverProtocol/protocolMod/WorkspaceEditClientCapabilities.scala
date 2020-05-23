@@ -33,7 +33,7 @@ object WorkspaceEditClientCapabilities {
     resourceOperations: js.Array[ResourceOperationKind] = null
   ): WorkspaceEditClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(documentChanges)) __obj.updateDynamic("documentChanges")(documentChanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentChanges)) __obj.updateDynamic("documentChanges")(documentChanges.get.asInstanceOf[js.Any])
     if (failureHandling != null) __obj.updateDynamic("failureHandling")(failureHandling.asInstanceOf[js.Any])
     if (resourceOperations != null) __obj.updateDynamic("resourceOperations")(resourceOperations.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceEditClientCapabilities]

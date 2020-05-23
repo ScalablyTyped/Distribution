@@ -15,18 +15,18 @@ trait IViewerOptions extends js.Object {
 object IViewerOptions {
   @scala.inline
   def apply(
-    bgColor: Int | Double = null,
+    bgColor: js.UndefOr[Double] = js.undefined,
     color: js.Array[Double] = null,
     drawFaces: js.UndefOr[Boolean] = js.undefined,
     drawLines: js.UndefOr[Boolean] = js.undefined,
     noWebGL: js.UndefOr[Boolean] = js.undefined
   ): IViewerOptions = {
     val __obj = js.Dynamic.literal()
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(bgColor)) __obj.updateDynamic("bgColor")(bgColor.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawFaces)) __obj.updateDynamic("drawFaces")(drawFaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawLines)) __obj.updateDynamic("drawLines")(drawLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(noWebGL)) __obj.updateDynamic("noWebGL")(noWebGL.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawFaces)) __obj.updateDynamic("drawFaces")(drawFaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawLines)) __obj.updateDynamic("drawLines")(drawLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noWebGL)) __obj.updateDynamic("noWebGL")(noWebGL.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IViewerOptions]
   }
 }

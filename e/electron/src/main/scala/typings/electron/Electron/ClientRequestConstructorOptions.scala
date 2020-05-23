@@ -69,7 +69,7 @@ object ClientRequestConstructorOptions {
     method: String = null,
     partition: String = null,
     path: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     redirect: String = null,
     session: Session_ = null,
@@ -82,12 +82,12 @@ object ClientRequestConstructorOptions {
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSessionCookies)) __obj.updateDynamic("useSessionCookies")(useSessionCookies.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSessionCookies)) __obj.updateDynamic("useSessionCookies")(useSessionCookies.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientRequestConstructorOptions]
   }
 }

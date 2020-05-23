@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait WorkspaceFolder extends ConfigurationScope {
   /**
-  		 * The ordinal number of this workspace folder.
-  		 */
+    * The ordinal number of this workspace folder.
+    */
   val index: Double
   /**
-  		 * The name of this workspace folder. Defaults to
-  		 * the basename of its [uri-path](#Uri.path)
-  		 */
+    * The name of this workspace folder. Defaults to
+    * the basename of its [uri-path](#Uri.path)
+    */
   val name: String
   /**
-  		 * The associated uri for this workspace folder.
-  		 *
-  		 * *Note:* The [Uri](#Uri)-type was intentionally chosen such that future releases of the editor can support
-  		 * workspace folders that are not stored on the local disk, e.g. `ftp://server/workspaces/foo`.
-  		 */
+    * The associated uri for this workspace folder.
+    *
+    * *Note:* The [Uri](#Uri)-type was intentionally chosen such that future releases of the editor can support
+    * workspace folders that are not stored on the local disk, e.g. `ftp://server/workspaces/foo`.
+    */
   val uri: Uri
 }
 

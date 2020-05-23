@@ -67,30 +67,16 @@ object ResultFields {
     sex: male | female | nonspecified = null,
     versionNumber: String = null
   ): ResultFields = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(birthDate = birthDate.asInstanceOf[js.Any], birthDateCheckDigit = birthDateCheckDigit.asInstanceOf[js.Any], compositeCheckDigit = compositeCheckDigit.asInstanceOf[js.Any], documentCode = documentCode.asInstanceOf[js.Any], documentNumber = documentNumber.asInstanceOf[js.Any], documentNumberCheckDigit = documentNumberCheckDigit.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], expirationDateCheckDigit = expirationDateCheckDigit.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], issueDate = issueDate.asInstanceOf[js.Any], issuingState = issuingState.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], nationality = nationality.asInstanceOf[js.Any], sex = sex.asInstanceOf[js.Any])
     if (administrativeCode != null) __obj.updateDynamic("administrativeCode")(administrativeCode.asInstanceOf[js.Any])
     if (administrativeCode2 != null) __obj.updateDynamic("administrativeCode2")(administrativeCode2.asInstanceOf[js.Any])
-    if (birthDate != null) __obj.updateDynamic("birthDate")(birthDate.asInstanceOf[js.Any])
-    if (birthDateCheckDigit != null) __obj.updateDynamic("birthDateCheckDigit")(birthDateCheckDigit.asInstanceOf[js.Any])
-    if (compositeCheckDigit != null) __obj.updateDynamic("compositeCheckDigit")(compositeCheckDigit.asInstanceOf[js.Any])
-    if (documentCode != null) __obj.updateDynamic("documentCode")(documentCode.asInstanceOf[js.Any])
-    if (documentNumber != null) __obj.updateDynamic("documentNumber")(documentNumber.asInstanceOf[js.Any])
-    if (documentNumberCheckDigit != null) __obj.updateDynamic("documentNumberCheckDigit")(documentNumberCheckDigit.asInstanceOf[js.Any])
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (expirationDateCheckDigit != null) __obj.updateDynamic("expirationDateCheckDigit")(expirationDateCheckDigit.asInstanceOf[js.Any])
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
-    if (issueDate != null) __obj.updateDynamic("issueDate")(issueDate.asInstanceOf[js.Any])
-    if (issuingState != null) __obj.updateDynamic("issuingState")(issuingState.asInstanceOf[js.Any])
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
-    if (nationality != null) __obj.updateDynamic("nationality")(nationality.asInstanceOf[js.Any])
     if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (optional1 != null) __obj.updateDynamic("optional1")(optional1.asInstanceOf[js.Any])
     if (optional2 != null) __obj.updateDynamic("optional2")(optional2.asInstanceOf[js.Any])
     if (personalNumber != null) __obj.updateDynamic("personalNumber")(personalNumber.asInstanceOf[js.Any])
     if (personalNumberCheckDigit != null) __obj.updateDynamic("personalNumberCheckDigit")(personalNumberCheckDigit.asInstanceOf[js.Any])
     if (pinCode != null) __obj.updateDynamic("pinCode")(pinCode.asInstanceOf[js.Any])
-    if (sex != null) __obj.updateDynamic("sex")(sex.asInstanceOf[js.Any])
     if (versionNumber != null) __obj.updateDynamic("versionNumber")(versionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultFields]
   }

@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Sites
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,23 +31,6 @@ object PageType extends js.Object {
   
   @js.native
   sealed trait WEB_PAGE extends PageType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PageType with Double] = js.native
-  /* 2 */ @js.native
-  object ANNOUNCEMENT extends TopLevel[ANNOUNCEMENT with Double]
-  
-  /* 3 */ @js.native
-  object ANNOUNCEMENTS_PAGE extends TopLevel[ANNOUNCEMENTS_PAGE with Double]
-  
-  /* 4 */ @js.native
-  object FILE_CABINET_PAGE extends TopLevel[FILE_CABINET_PAGE with Double]
-  
-  /* 1 */ @js.native
-  object LIST_PAGE extends TopLevel[LIST_PAGE with Double]
-  
-  /* 0 */ @js.native
-  object WEB_PAGE extends TopLevel[WEB_PAGE with Double]
   
 }
 

@@ -43,6 +43,7 @@ package object codedeployMod {
   */
   type BundleType = typings.awsSdk.codedeployMod._BundleType | java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.codedeployMod.ClientApiVersions
+  type CloudFormationResourceType = java.lang.String
   type CommitId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Server_
@@ -58,6 +59,9 @@ package object codedeployMod {
     - typings.awsSdk.awsSdkStrings.user__
     - typings.awsSdk.awsSdkStrings.autoscaling
     - typings.awsSdk.awsSdkStrings.codeDeployRollback
+    - typings.awsSdk.awsSdkStrings.CodeDeploy
+    - typings.awsSdk.awsSdkStrings.CloudFormation_
+    - typings.awsSdk.awsSdkStrings.CloudFormationRollback
     - java.lang.String
   */
   type DeploymentCreator = typings.awsSdk.codedeployMod._DeploymentCreator | java.lang.String
@@ -82,6 +86,7 @@ package object codedeployMod {
     - typings.awsSdk.awsSdkStrings.Created_
     - typings.awsSdk.awsSdkStrings.Queued_
     - typings.awsSdk.awsSdkStrings.InProgress_
+    - typings.awsSdk.awsSdkStrings.Baking_
     - typings.awsSdk.awsSdkStrings.Succeeded_
     - typings.awsSdk.awsSdkStrings.Failed_
     - typings.awsSdk.awsSdkStrings.Stopped_
@@ -96,6 +101,7 @@ package object codedeployMod {
     - typings.awsSdk.awsSdkStrings.InstanceTarget
     - typings.awsSdk.awsSdkStrings.LambdaTarget
     - typings.awsSdk.awsSdkStrings.ECSTarget
+    - typings.awsSdk.awsSdkStrings.CloudFormationTarget
     - java.lang.String
   */
   type DeploymentTargetType = typings.awsSdk.codedeployMod._DeploymentTargetType | java.lang.String
@@ -168,10 +174,12 @@ package object codedeployMod {
     - typings.awsSdk.awsSdkStrings.REVISION_MISSING
     - typings.awsSdk.awsSdkStrings.THROTTLED
     - typings.awsSdk.awsSdkStrings.TIMEOUT
+    - typings.awsSdk.awsSdkStrings.CLOUDFORMATION_STACK_FAILURE
     - java.lang.String
   */
   type ErrorCode = typings.awsSdk.codedeployMod._ErrorCode | java.lang.String
   type ErrorMessage = java.lang.String
+  type ExternalId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DISALLOW
     - typings.awsSdk.awsSdkStrings.OVERWRITE

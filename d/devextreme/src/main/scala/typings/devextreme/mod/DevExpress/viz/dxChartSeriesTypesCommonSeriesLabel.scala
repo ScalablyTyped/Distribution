@@ -1,7 +1,7 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonColorDashStyle
-import typings.devextreme.AnonColorVisible
+import typings.devextreme.anon.ColorDashStyle
+import typings.devextreme.anon.ColorVisible
 import typings.devextreme.devextremeStrings.center
 import typings.devextreme.devextremeStrings.inside
 import typings.devextreme.devextremeStrings.left
@@ -21,9 +21,9 @@ trait dxChartSeriesTypesCommonSeriesLabel extends js.Object {
   /** @name dxChartSeriesTypes.CommonSeries.label.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
   /** @name dxChartSeriesTypes.CommonSeries.label.border */
-  var border: js.UndefOr[AnonColorDashStyle] = js.undefined
+  var border: js.UndefOr[ColorDashStyle] = js.undefined
   /** @name dxChartSeriesTypes.CommonSeries.label.connector */
-  var connector: js.UndefOr[AnonColorVisible] = js.undefined
+  var connector: js.UndefOr[ColorVisible] = js.undefined
   /** @name dxChartSeriesTypes.CommonSeries.label.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.undefined
   /** @name dxChartSeriesTypes.CommonSeries.label.font */
@@ -50,16 +50,16 @@ object dxChartSeriesTypesCommonSeriesLabel {
     alignment: center | left | right = null,
     argumentFormat: format = null,
     backgroundColor: String = null,
-    border: AnonColorDashStyle = null,
-    connector: AnonColorVisible = null,
+    border: ColorDashStyle = null,
+    connector: ColorVisible = null,
     customizeText: /* pointInfo */ js.Any => String = null,
     font: Font = null,
     format: format = null,
-    horizontalOffset: Int | Double = null,
+    horizontalOffset: js.UndefOr[Double] = js.undefined,
     position: inside | outside = null,
-    rotationAngle: Int | Double = null,
+    rotationAngle: js.UndefOr[Double] = js.undefined,
     showForZeroValues: js.UndefOr[Boolean] = js.undefined,
-    verticalOffset: Int | Double = null,
+    verticalOffset: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): dxChartSeriesTypesCommonSeriesLabel = {
     val __obj = js.Dynamic.literal()
@@ -71,12 +71,12 @@ object dxChartSeriesTypesCommonSeriesLabel {
     if (customizeText != null) __obj.updateDynamic("customizeText")(js.Any.fromFunction1(customizeText))
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalOffset)) __obj.updateDynamic("horizontalOffset")(horizontalOffset.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showForZeroValues)) __obj.updateDynamic("showForZeroValues")(showForZeroValues.asInstanceOf[js.Any])
-    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationAngle)) __obj.updateDynamic("rotationAngle")(rotationAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showForZeroValues)) __obj.updateDynamic("showForZeroValues")(showForZeroValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalOffset)) __obj.updateDynamic("verticalOffset")(verticalOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesLabel]
   }
 }

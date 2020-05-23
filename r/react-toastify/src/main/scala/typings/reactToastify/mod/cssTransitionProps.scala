@@ -35,7 +35,7 @@ object cssTransitionProps {
     duration: Double | js.Array[Double] = null
   ): cssTransitionProps = {
     val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any])
-    if (!js.isUndefined(appendPosition)) __obj.updateDynamic("appendPosition")(appendPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendPosition)) __obj.updateDynamic("appendPosition")(appendPosition.get.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[cssTransitionProps]
   }

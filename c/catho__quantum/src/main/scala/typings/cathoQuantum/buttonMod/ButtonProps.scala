@@ -1,6 +1,6 @@
 package typings.cathoQuantum.buttonMod
 
-import typings.cathoQuantum.AnonBreakpoints
+import typings.cathoQuantum.anon.Breakpoints
 import typings.cathoQuantum.cathoQuantumStrings.button
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.large
@@ -19,7 +19,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,7 @@ trait ButtonProps extends js.Object {
   var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
   var skin: js.UndefOr[neutral | primary | secondary | success | warning | error] = js.undefined
   var stroked: js.UndefOr[Boolean] = js.undefined
-  var theme: js.UndefOr[AnonBreakpoints] = js.undefined
+  var theme: js.UndefOr[Breakpoints] = js.undefined
   var `type`: js.UndefOr[button | reset | submit] = js.undefined
 }
 
@@ -56,21 +56,21 @@ object ButtonProps {
     size: xsmall | small | medium | large | xlarge = null,
     skin: neutral | primary | secondary | success | warning | error = null,
     stroked: js.UndefOr[Boolean] = js.undefined,
-    theme: AnonBreakpoints = null,
+    theme: Breakpoints = null,
     `type`: button | reset | submit = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
     if ($as != null) __obj.updateDynamic("$as")($as.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (!js.isUndefined(stroked)) __obj.updateDynamic("stroked")(stroked.asInstanceOf[js.Any])
+    if (!js.isUndefined(stroked)) __obj.updateDynamic("stroked")(stroked.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]

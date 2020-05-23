@@ -19,7 +19,7 @@ trait GetDocumentRequest extends js.Object {
     */
   var Name: DocumentARN = js.native
   /**
-    * An optional field specifying the version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+    * An optional field specifying the version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document and can't be changed.
     */
   var VersionName: js.UndefOr[DocumentVersionName] = js.native
 }

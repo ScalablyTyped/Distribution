@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Http.Filters
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object HttpCacheReadBehavior extends js.Object {
   /** Only use data from the local HTTP cache. This is the offline behavior. */
   @js.native
   sealed trait onlyFromCache extends HttpCacheReadBehavior
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HttpCacheReadBehavior with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object mostRecent extends TopLevel[mostRecent with Double]
-  
-  /* 2 */ @js.native
-  object onlyFromCache extends TopLevel[onlyFromCache with Double]
   
 }
 

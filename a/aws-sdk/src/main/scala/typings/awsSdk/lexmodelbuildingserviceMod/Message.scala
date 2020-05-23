@@ -22,9 +22,13 @@ trait Message extends js.Object {
 
 object Message {
   @scala.inline
-  def apply(content: ContentString, contentType: ContentType, groupNumber: Int | Double = null): Message = {
+  def apply(
+    content: ContentString,
+    contentType: ContentType,
+    groupNumber: js.UndefOr[GroupNumber] = js.undefined
+  ): Message = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
-    if (groupNumber != null) __obj.updateDynamic("groupNumber")(groupNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupNumber)) __obj.updateDynamic("groupNumber")(groupNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

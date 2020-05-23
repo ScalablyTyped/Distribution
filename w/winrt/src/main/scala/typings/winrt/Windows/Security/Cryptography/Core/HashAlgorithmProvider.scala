@@ -5,23 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
-@js.native
-class HashAlgorithmProvider () extends IHashAlgorithmProvider {
-  /* CompleteClass */
-  override var algorithmName: String = js.native
-  /* CompleteClass */
-  override var hashLength: Double = js.native
-  /* CompleteClass */
-  override def createHash(): CryptographicHash = js.native
-  /* CompleteClass */
-  override def hashData(data: IBuffer): IBuffer = js.native
-}
+trait HashAlgorithmProvider extends IHashAlgorithmProvider
 
-/* static members */
-@JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
-@js.native
-object HashAlgorithmProvider extends js.Object {
-  def openAlgorithm(algorithm: String): HashAlgorithmProvider = js.native
+object HashAlgorithmProvider {
+  @scala.inline
+  def apply(
+    algorithmName: String,
+    createHash: () => CryptographicHash,
+    hashData: IBuffer => IBuffer,
+    hashLength: Double
+  ): HashAlgorithmProvider = {
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createHash = js.Any.fromFunction0(createHash), hashData = js.Any.fromFunction1(hashData), hashLength = hashLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HashAlgorithmProvider]
+  }
 }
 

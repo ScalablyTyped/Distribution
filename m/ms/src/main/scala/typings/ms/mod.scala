@@ -1,5 +1,6 @@
 package typings.ms
 
+import typings.ms.anon.Long
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +16,6 @@ object mod extends js.Object {
   */
   def apply(value: String): Double = js.native
   def apply(value: Double): String = js.native
-  def apply(value: Double, options: AnonLong): String = js.native
+  def apply(value: Double, options: Long): String = js.native
 }
 

@@ -35,7 +35,7 @@ package object licensemanagerMod {
   type LicenseConfigurationUsageList = js.Array[typings.awsSdk.licensemanagerMod.LicenseConfigurationUsage]
   type LicenseConfigurations = js.Array[typings.awsSdk.licensemanagerMod.LicenseConfiguration]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.vCPU
+    - typings.awsSdk.awsSdkStrings.vCPU_
     - typings.awsSdk.awsSdkStrings.Instance_
     - typings.awsSdk.awsSdkStrings.Core_
     - typings.awsSdk.awsSdkStrings.Socket

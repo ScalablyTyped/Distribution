@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object onVoicePlayEnd extends js.Object {
   /**
-  	 * 监听语音播放完毕接口
-  	 */
+    * 监听语音播放完毕接口
+    */
   def apply(params: IonVoicePlayEnd): Unit = js.native
 }
 

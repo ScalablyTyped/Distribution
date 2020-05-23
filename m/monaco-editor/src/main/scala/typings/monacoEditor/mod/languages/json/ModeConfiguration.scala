@@ -62,16 +62,16 @@ object ModeConfiguration {
     tokens: js.UndefOr[Boolean] = js.undefined
   ): ModeConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(completionItems)) __obj.updateDynamic("completionItems")(completionItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(diagnostics)) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
-    if (!js.isUndefined(documentFormattingEdits)) __obj.updateDynamic("documentFormattingEdits")(documentFormattingEdits.asInstanceOf[js.Any])
-    if (!js.isUndefined(documentRangeFormattingEdits)) __obj.updateDynamic("documentRangeFormattingEdits")(documentRangeFormattingEdits.asInstanceOf[js.Any])
-    if (!js.isUndefined(documentSymbols)) __obj.updateDynamic("documentSymbols")(documentSymbols.asInstanceOf[js.Any])
-    if (!js.isUndefined(foldingRanges)) __obj.updateDynamic("foldingRanges")(foldingRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(hovers)) __obj.updateDynamic("hovers")(hovers.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectionRanges)) __obj.updateDynamic("selectionRanges")(selectionRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(tokens)) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(completionItems)) __obj.updateDynamic("completionItems")(completionItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(diagnostics)) __obj.updateDynamic("diagnostics")(diagnostics.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentFormattingEdits)) __obj.updateDynamic("documentFormattingEdits")(documentFormattingEdits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentRangeFormattingEdits)) __obj.updateDynamic("documentRangeFormattingEdits")(documentRangeFormattingEdits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentSymbols)) __obj.updateDynamic("documentSymbols")(documentSymbols.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(foldingRanges)) __obj.updateDynamic("foldingRanges")(foldingRanges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hovers)) __obj.updateDynamic("hovers")(hovers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionRanges)) __obj.updateDynamic("selectionRanges")(selectionRanges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tokens)) __obj.updateDynamic("tokens")(tokens.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModeConfiguration]
   }
 }

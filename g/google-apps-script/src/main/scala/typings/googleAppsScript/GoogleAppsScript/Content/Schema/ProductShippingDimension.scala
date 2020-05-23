@@ -11,10 +11,10 @@ trait ProductShippingDimension extends js.Object {
 
 object ProductShippingDimension {
   @scala.inline
-  def apply(unit: String = null, value: Int | Double = null): ProductShippingDimension = {
+  def apply(unit: String = null, value: js.UndefOr[Double] = js.undefined): ProductShippingDimension = {
     val __obj = js.Dynamic.literal()
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductShippingDimension]
   }
 }

@@ -1,7 +1,7 @@
 package typings.storybookAddonInfo.mod.storybookAddonsAugmentingMod
 
 import typings.node.NodeModule
-import typings.storybookAddonInfo.ParametersinfoOptions
+import typings.storybookAddonInfo.anon.ParametersinfoOptions
 import typings.storybookAddons.typesMod.DecoratorFunction
 import typings.storybookAddons.typesMod.StoryApi
 import scala.scalajs.js

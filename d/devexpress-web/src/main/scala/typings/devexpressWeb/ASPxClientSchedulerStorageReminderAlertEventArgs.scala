@@ -7,21 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientSchedulerStorageControl.ReminderAlert event.
   */
-@JSGlobal("ASPxClientSchedulerStorageReminderAlertEventArgs")
-@js.native
-class ASPxClientSchedulerStorageReminderAlertEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientSchedulerStorageReminderAlertEventArgs class.
-    * @param completedNotifications An array of ASPxClientReminderAlertNotification objects.
-    * @param previousNotifications An array of ASPxClientReminderAlertNotification objects.
-    */
-  def this(
-    completedNotifications: js.Array[ASPxClientReminderAlertNotification],
-    previousNotifications: js.Array[ASPxClientReminderAlertNotification]
-  ) = this()
+trait ASPxClientSchedulerStorageReminderAlertEventArgs extends ASPxClientEventArgs {
   /**
     * Returns an array of currently triggered reminders.
     */
-  var alertNotifications: js.Array[ASPxClientReminderAlertNotification] = js.native
+  var alertNotifications: js.Array[ASPxClientReminderAlertNotification]
+}
+
+object ASPxClientSchedulerStorageReminderAlertEventArgs {
+  @scala.inline
+  def apply(alertNotifications: js.Array[ASPxClientReminderAlertNotification]): ASPxClientSchedulerStorageReminderAlertEventArgs = {
+    val __obj = js.Dynamic.literal(alertNotifications = alertNotifications.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSchedulerStorageReminderAlertEventArgs]
+  }
 }
 

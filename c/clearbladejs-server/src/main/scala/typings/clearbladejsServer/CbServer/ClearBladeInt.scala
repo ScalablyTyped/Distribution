@@ -1,6 +1,6 @@
 package typings.clearbladejsServer.CbServer
 
-import typings.clearbladejsServer.AnonRequest
+import typings.clearbladejsServer.anon.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,8 +35,8 @@ trait ClearBladeInt extends js.Object {
   def getAllDevicesForSystem(callback: CbCallback): Unit = js.native
   def getDeviceByName(name: String, callback: CbCallback): Unit = js.native
   def http(): js.Object = js.native
-  def init(options: AnonRequest): Unit = js.native
   def init(options: InitOptions): Unit = js.native
+  def init(options: Request): Unit = js.native
   def isCurrentUserAuthenticated(callback: CbCallback): Unit = js.native
   def isEdge(callback: CbCallback): Boolean = js.native
   def isObjectEmpty(obj: js.Object): Boolean = js.native

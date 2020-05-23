@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Services.Store
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object StoreConsumableStatus extends js.Object {
   /** The request succeeded. */
   @js.native
   sealed trait succeeded extends StoreConsumableStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StoreConsumableStatus with Double] = js.native
-  /* 1 */ @js.native
-  object insufficentQuantity extends TopLevel[insufficentQuantity with Double]
-  
-  /* 2 */ @js.native
-  object networkError extends TopLevel[networkError with Double]
-  
-  /* 3 */ @js.native
-  object serverError extends TopLevel[serverError with Double]
-  
-  /* 0 */ @js.native
-  object succeeded extends TopLevel[succeeded with Double]
   
 }
 

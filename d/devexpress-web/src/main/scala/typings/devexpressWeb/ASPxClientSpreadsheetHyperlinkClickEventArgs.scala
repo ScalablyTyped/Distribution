@@ -7,37 +7,35 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientSpreadsheet.HyperlinkClick event.
   */
-@JSGlobal("ASPxClientSpreadsheetHyperlinkClickEventArgs")
-@js.native
-class ASPxClientSpreadsheetHyperlinkClickEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientSpreadsheetHyperlinkClickEventArgs object. For internal use only.
-    * @param htmlEvent A DHTML event object that relates to the processed event.
-    * @param handled true if the event is handled and no default processing is required; otherwise false.
-    * @param hyperlinkType One of the ASPxClientOfficeDocumentLinkType values.
-    * @param targetUri A sting value specifying the link's URI.
-    */
-  def this(
-    htmlEvent: js.Any,
-    handled: Boolean,
-    hyperlinkType: ASPxClientOfficeDocumentLinkType,
-    targetUri: String
-  ) = this()
+trait ASPxClientSpreadsheetHyperlinkClickEventArgs extends ASPxClientEventArgs {
   /**
     * Gets or sets a value that specifies whether the event is handled, and the default processing is not required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   /**
     * Gets a value identifying the clicked hyperlink type.
     */
-  var hyperlinkType: ASPxClientOfficeDocumentLinkType = js.native
+  var hyperlinkType: ASPxClientOfficeDocumentLinkType
   /**
     * Gets the clicked link's URI.
     */
-  var targetUri: String = js.native
+  var targetUri: String
+}
+
+object ASPxClientSpreadsheetHyperlinkClickEventArgs {
+  @scala.inline
+  def apply(
+    handled: Boolean,
+    htmlEvent: js.Any,
+    hyperlinkType: ASPxClientOfficeDocumentLinkType,
+    targetUri: String
+  ): ASPxClientSpreadsheetHyperlinkClickEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], hyperlinkType = hyperlinkType.asInstanceOf[js.Any], targetUri = targetUri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSpreadsheetHyperlinkClickEventArgs]
+  }
 }
 

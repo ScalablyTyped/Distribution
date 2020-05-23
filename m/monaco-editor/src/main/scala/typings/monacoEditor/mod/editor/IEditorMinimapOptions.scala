@@ -44,17 +44,17 @@ object IEditorMinimapOptions {
   @scala.inline
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
-    maxColumn: Int | Double = null,
+    maxColumn: js.UndefOr[Double] = js.undefined,
     renderCharacters: js.UndefOr[Boolean] = js.undefined,
-    scale: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
     showSlider: always | mouseover = null,
     side: right | left = null
   ): IEditorMinimapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (maxColumn != null) __obj.updateDynamic("maxColumn")(maxColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderCharacters)) __obj.updateDynamic("renderCharacters")(renderCharacters.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxColumn)) __obj.updateDynamic("maxColumn")(maxColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderCharacters)) __obj.updateDynamic("renderCharacters")(renderCharacters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (showSlider != null) __obj.updateDynamic("showSlider")(showSlider.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorMinimapOptions]

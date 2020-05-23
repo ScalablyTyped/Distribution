@@ -1,6 +1,7 @@
 package typings.operationRetrier
 
 import typings.node.eventsMod.EventEmitter
+import typings.operationRetrier.anon.Initial
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,7 @@ object retrierMod extends js.Object {
     /**
       * Creates a new Retrier instance
       */
-    def this(options: AnonInitial) = this()
+    def this(options: Initial) = this()
     var attempt: js.Any = js.native
     var attemptNum: js.Any = js.native
     var cleanup: js.Any = js.native
@@ -54,7 +55,7 @@ object retrierMod extends js.Object {
     /**
       * Creates a new Retrier instance
       */
-    def this(options: AnonInitial) = this()
+    def this(options: Initial) = this()
   }
   
 }

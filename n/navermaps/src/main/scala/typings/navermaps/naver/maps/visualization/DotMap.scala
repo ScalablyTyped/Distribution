@@ -10,10 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.visualization.DotMap")
 @js.native
-class DotMap () extends KVO {
-  def this(dotMapOptions: DotMapOptions) = this()
+trait DotMap extends KVO {
   def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode): Unit = js.native
   def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode, id: String): Unit = js.native
   def addListener(eventName: DrawingEvent, listener: js.Function1[/* overlay */ DrawingOverlay, Unit]): MapEventListener = js.native

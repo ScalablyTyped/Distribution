@@ -19,7 +19,7 @@ object HasOneSetAssociationMixinOptions {
   @scala.inline
   def apply(save: js.UndefOr[Boolean] = js.undefined): HasOneSetAssociationMixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(save)) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
+    if (!js.isUndefined(save)) __obj.updateDynamic("save")(save.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasOneSetAssociationMixinOptions]
   }
 }

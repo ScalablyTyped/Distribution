@@ -52,8 +52,8 @@ object OptionSetting {
     DataType: String = null,
     DefaultValue: String = null,
     Description: String = null,
-    IsCollection: js.UndefOr[scala.Boolean] = js.undefined,
-    IsModifiable: js.UndefOr[scala.Boolean] = js.undefined,
+    IsCollection: js.UndefOr[Boolean] = js.undefined,
+    IsModifiable: js.UndefOr[Boolean] = js.undefined,
     Name: String = null,
     Value: String = null
   ): OptionSetting = {
@@ -63,8 +63,8 @@ object OptionSetting {
     if (DataType != null) __obj.updateDynamic("DataType")(DataType.asInstanceOf[js.Any])
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsCollection)) __obj.updateDynamic("IsCollection")(IsCollection.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsModifiable)) __obj.updateDynamic("IsModifiable")(IsModifiable.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsCollection)) __obj.updateDynamic("IsCollection")(IsCollection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsModifiable)) __obj.updateDynamic("IsModifiable")(IsModifiable.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionSetting]

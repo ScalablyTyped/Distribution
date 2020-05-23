@@ -30,11 +30,11 @@ object UpdateEndpointInput {
     EndpointConfigName: EndpointConfigName,
     EndpointName: EndpointName,
     ExcludeRetainedVariantProperties: VariantPropertyList = null,
-    RetainAllVariantProperties: js.UndefOr[scala.Boolean] = js.undefined
+    RetainAllVariantProperties: js.UndefOr[Boolean] = js.undefined
   ): UpdateEndpointInput = {
     val __obj = js.Dynamic.literal(EndpointConfigName = EndpointConfigName.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any])
     if (ExcludeRetainedVariantProperties != null) __obj.updateDynamic("ExcludeRetainedVariantProperties")(ExcludeRetainedVariantProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetainAllVariantProperties)) __obj.updateDynamic("RetainAllVariantProperties")(RetainAllVariantProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetainAllVariantProperties)) __obj.updateDynamic("RetainAllVariantProperties")(RetainAllVariantProperties.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointInput]
   }
 }

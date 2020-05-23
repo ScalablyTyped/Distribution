@@ -19,26 +19,8 @@ import scala.scalajs.js.annotation._
   * | 0 | 0 | 1  |
   * ```
   */
-@JSGlobal("Phaser.GameObjects.Components.TransformMatrix")
 @js.native
-class TransformMatrix protected () extends js.Object {
-  /**
-    * 
-    * @param a The Scale X value. Default 1.
-    * @param b The Skew Y value. Default 0.
-    * @param c The Skew X value. Default 0.
-    * @param d The Scale Y value. Default 1.
-    * @param tx The Translate X value. Default 0.
-    * @param ty The Translate Y value. Default 0.
-    */
-  def this(
-    a: js.UndefOr[Double],
-    b: js.UndefOr[Double],
-    c: js.UndefOr[Double],
-    d: js.UndefOr[Double],
-    tx: js.UndefOr[Double],
-    ty: js.UndefOr[Double]
-  ) = this()
+trait TransformMatrix extends js.Object {
   /**
     * The Scale X value.
     */
@@ -188,8 +170,8 @@ class TransformMatrix protected () extends js.Object {
     * @param rhs The Matrix to multiply by.
     * @param out An optional Matrix to store the results in.
     */
-  def multiply(rhs: TransformMatrix): TransformMatrix = js.native
-  def multiply(rhs: TransformMatrix, out: TransformMatrix): TransformMatrix = js.native
+  def multiply(rhs: TransformMatrix): this.type | TransformMatrix = js.native
+  def multiply(rhs: TransformMatrix, out: TransformMatrix): this.type | TransformMatrix = js.native
   /**
     * Multiply this Matrix by the matrix given, including the offset.
     * 

@@ -14,10 +14,10 @@ trait EnvironmentDocuments extends js.Object {
 
 object EnvironmentDocuments {
   @scala.inline
-  def apply(indexed: Int | Double = null, maximum_allowed: Int | Double = null): EnvironmentDocuments = {
+  def apply(indexed: js.UndefOr[Double] = js.undefined, maximum_allowed: js.UndefOr[Double] = js.undefined): EnvironmentDocuments = {
     val __obj = js.Dynamic.literal()
-    if (indexed != null) __obj.updateDynamic("indexed")(indexed.asInstanceOf[js.Any])
-    if (maximum_allowed != null) __obj.updateDynamic("maximum_allowed")(maximum_allowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum_allowed)) __obj.updateDynamic("maximum_allowed")(maximum_allowed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentDocuments]
   }
 }

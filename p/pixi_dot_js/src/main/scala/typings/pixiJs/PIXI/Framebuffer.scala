@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Framebuffer")
 @js.native
-class Framebuffer protected () extends js.Object {
-  def this(width: Double, height: Double) = this()
+trait Framebuffer extends js.Object {
   /**
     * Reference to the colorTexture.
     *

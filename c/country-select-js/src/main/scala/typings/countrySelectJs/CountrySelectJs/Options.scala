@@ -38,7 +38,7 @@ object Options {
     if (defaultCountry != null) __obj.updateDynamic("defaultCountry")(defaultCountry.asInstanceOf[js.Any])
     if (onlyCountries != null) __obj.updateDynamic("onlyCountries")(onlyCountries.asInstanceOf[js.Any])
     if (preferredCountries != null) __obj.updateDynamic("preferredCountries")(preferredCountries.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsiveDropdown)) __obj.updateDynamic("responsiveDropdown")(responsiveDropdown.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsiveDropdown)) __obj.updateDynamic("responsiveDropdown")(responsiveDropdown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

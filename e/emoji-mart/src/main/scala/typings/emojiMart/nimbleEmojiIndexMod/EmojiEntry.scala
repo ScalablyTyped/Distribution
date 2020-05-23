@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.emojiMart.nimbleEmojiIndexMod.EmojiData
-  - typings.emojiMart.variantinEmojiSkinEmojiDa
+  - typings.emojiMart.anon.variantinEmojiSkinEmojiDa
 */
 trait EmojiEntry extends js.Object
 
@@ -32,8 +32,7 @@ object EmojiEntry {
     unified: String,
     skin: EmojiSkin = null
   ): EmojiEntry = {
-    val __obj = js.Dynamic.literal(colons = colons.asInstanceOf[js.Any], emoticons = emoticons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colons = colons.asInstanceOf[js.Any], emoticons = emoticons.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any], skin = skin.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmojiEntry]
   }
   @scala.inline

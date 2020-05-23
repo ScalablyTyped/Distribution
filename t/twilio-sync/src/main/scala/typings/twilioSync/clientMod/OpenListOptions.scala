@@ -18,15 +18,15 @@ object OpenListOptions {
     includeItems: js.UndefOr[Boolean] = js.undefined,
     mode: OpenMode = null,
     purpose: String = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): OpenListOptions = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeItems)) __obj.updateDynamic("includeItems")(includeItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeItems)) __obj.updateDynamic("includeItems")(includeItems.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenListOptions]
   }
 }

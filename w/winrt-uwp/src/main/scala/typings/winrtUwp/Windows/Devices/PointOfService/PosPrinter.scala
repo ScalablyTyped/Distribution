@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a point-of-service printer. */
-@JSGlobal("Windows.Devices.PointOfService.PosPrinter")
 @js.native
-abstract class PosPrinter () extends js.Object {
+trait PosPrinter extends js.Object {
   /** Gets the capabilities of the point-of-service printer. */
   var capabilities: PosPrinterCapabilities = js.native
   /** Gets the identifier of the point-of-service printer. */
@@ -53,27 +52,5 @@ abstract class PosPrinter () extends js.Object {
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[PosPrinter, PosPrinterStatusUpdatedEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.PointOfService.PosPrinter")
-@js.native
-object PosPrinter extends js.Object {
-  /**
-    * Creates a PosPrinter object for point-of-service printer with the specified DeviceInformation.Id .
-    * @param deviceId The DeviceInformation.Id that identifies a specific point-of-service printer.
-    * @return The point-of-service printer that the unique device identifier identifies. Returns a null object in the following cases:
-    */
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[PosPrinter] = js.native
-  /**
-    * Gets the default paired or locally-connected printer.
-    * @return The default locally-connected printer.
-    */
-  def getDefaultAsync(): IPromiseWithIAsyncOperation[PosPrinter] = js.native
-  /**
-    * Gets an Advanced Query Syntax (AQS) string that you can use to list the available point-of-service printers.
-    * @return An Advanced Query Syntax (AQS) string that you can use to list the available point-of-service printers.
-    */
-  def getDeviceSelector(): String = js.native
 }
 

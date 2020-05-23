@@ -22,9 +22,13 @@ trait GetVariablesRequest extends js.Object {
 
 object GetVariablesRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, name: String = null, nextToken: String = null): GetVariablesRequest = {
+  def apply(
+    maxResults: js.UndefOr[VariablesMaxResults] = js.undefined,
+    name: String = null,
+    nextToken: String = null
+  ): GetVariablesRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVariablesRequest]

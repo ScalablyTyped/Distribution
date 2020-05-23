@@ -24,10 +24,10 @@ trait IShimmerCircleStyleProps extends js.Object {
 
 object IShimmerCircleStyleProps {
   @scala.inline
-  def apply(theme: ITheme, borderStyle: IRawStyle = null, height: Int | Double = null): IShimmerCircleStyleProps = {
+  def apply(theme: ITheme, borderStyle: IRawStyle = null, height: js.UndefOr[Double] = js.undefined): IShimmerCircleStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerCircleStyleProps]
   }
 }

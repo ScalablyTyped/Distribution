@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.overlayMod
 
-import typings.blueprintjsCore.AnonHasEverOpened
+import typings.blueprintjsCore.anon.HasEverOpened
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -39,6 +39,6 @@ object Overlay extends js.Object {
   var displayName: String = js.native
   var getLastOpened: js.Any = js.native
   var openStack: js.Any = js.native
-  def getDerivedStateFromProps(hasIsOpen: IOverlayProps): AnonHasEverOpened = js.native
+  def getDerivedStateFromProps(hasIsOpen: IOverlayProps): HasEverOpened = js.native
 }
 

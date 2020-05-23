@@ -21,8 +21,7 @@ object StylingInstructionCall {
     supportsInterpolation: Boolean,
     sourceSpan: ParseSourceSpan = null
   ): StylingInstructionCall = {
-    val __obj = js.Dynamic.literal(allocateBindingSlots = allocateBindingSlots.asInstanceOf[js.Any], params = js.Any.fromFunction1(params), supportsInterpolation = supportsInterpolation.asInstanceOf[js.Any])
-    if (sourceSpan != null) __obj.updateDynamic("sourceSpan")(sourceSpan.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allocateBindingSlots = allocateBindingSlots.asInstanceOf[js.Any], params = js.Any.fromFunction1(params), supportsInterpolation = supportsInterpolation.asInstanceOf[js.Any], sourceSpan = sourceSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[StylingInstructionCall]
   }
 }

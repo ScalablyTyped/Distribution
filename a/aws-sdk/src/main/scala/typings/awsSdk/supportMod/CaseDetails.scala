@@ -39,7 +39,7 @@ trait CaseDetails extends js.Object {
     */
   var severityCode: js.UndefOr[SeverityCode] = js.native
   /**
-    * The status of the case. Valid values: resolved | pending-customer-action | opened | unassigned | work-in-progress.
+    * The status of the case. Valid values:    opened     pending-customer-action     reopened     resolved     unassigned     work-in-progress   
     */
   var status: js.UndefOr[Status] = js.native
   /**

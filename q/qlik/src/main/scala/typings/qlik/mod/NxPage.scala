@@ -14,16 +14,16 @@ trait NxPage extends js.Object {
 object NxPage {
   @scala.inline
   def apply(
-    qHeight: Int | Double = null,
-    qLeft: Int | Double = null,
-    qTop: Int | Double = null,
-    qWidth: Int | Double = null
+    qHeight: js.UndefOr[Double] = js.undefined,
+    qLeft: js.UndefOr[Double] = js.undefined,
+    qTop: js.UndefOr[Double] = js.undefined,
+    qWidth: js.UndefOr[Double] = js.undefined
   ): NxPage = {
     val __obj = js.Dynamic.literal()
-    if (qHeight != null) __obj.updateDynamic("qHeight")(qHeight.asInstanceOf[js.Any])
-    if (qLeft != null) __obj.updateDynamic("qLeft")(qLeft.asInstanceOf[js.Any])
-    if (qTop != null) __obj.updateDynamic("qTop")(qTop.asInstanceOf[js.Any])
-    if (qWidth != null) __obj.updateDynamic("qWidth")(qWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(qHeight)) __obj.updateDynamic("qHeight")(qHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qLeft)) __obj.updateDynamic("qLeft")(qLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qTop)) __obj.updateDynamic("qTop")(qTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qWidth)) __obj.updateDynamic("qWidth")(qWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxPage]
   }
 }

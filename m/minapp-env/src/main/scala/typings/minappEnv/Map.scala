@@ -1,6 +1,5 @@
 package typings.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,8 +32,4 @@ trait Map[K, V] extends js.Object {
     */
   def values(): IterableIterator[V] = js.native
 }
-
-@JSGlobal("Map")
-@js.native
-object Map extends TopLevel[MapConstructor]
 

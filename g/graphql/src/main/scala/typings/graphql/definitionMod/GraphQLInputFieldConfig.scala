@@ -19,17 +19,17 @@ object GraphQLInputFieldConfig {
   @scala.inline
   def apply(
     `type`: GraphQLInputType,
-    astNode: Maybe[InputValueDefinitionNode] = null,
+    astNode: js.UndefOr[Null | Maybe[InputValueDefinitionNode]] = js.undefined,
     defaultValue: js.Any = null,
-    description: Maybe[String] = null,
-    extensions: Maybe[Record[String, _]] = null
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined,
+    extensions: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined
   ): GraphQLInputFieldConfig = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLInputFieldConfig]
   }
 }

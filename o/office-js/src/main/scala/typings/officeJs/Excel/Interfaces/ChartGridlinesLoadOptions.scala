@@ -25,7 +25,7 @@ trait ChartGridlinesLoadOptions extends js.Object {
   var format: js.UndefOr[ChartGridlinesFormatLoadOptions] = js.undefined
   /**
     *
-    * Boolean value representing if the axis gridlines are visible or not.
+    * Specifies if the axis gridlines are visible.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -40,9 +40,9 @@ object ChartGridlinesLoadOptions {
     visible: js.UndefOr[Boolean] = js.undefined
   ): ChartGridlinesLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartGridlinesLoadOptions]
   }
 }

@@ -44,9 +44,7 @@ object Context {
     currentId: String = null,
     startEmd: Node = null
   ): Context = {
-    val __obj = js.Dynamic.literal(clauseNumberer = clauseNumberer.asInstanceOf[js.Any], clauseStack = clauseStack.asInstanceOf[js.Any], importStack = importStack.asInstanceOf[js.Any], inAlg = inAlg.asInstanceOf[js.Any], inNoAutolink = inNoAutolink.asInstanceOf[js.Any], inNoEmd = inNoEmd.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], tagStack = tagStack.asInstanceOf[js.Any])
-    if (currentId != null) __obj.updateDynamic("currentId")(currentId.asInstanceOf[js.Any])
-    if (startEmd != null) __obj.updateDynamic("startEmd")(startEmd.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clauseNumberer = clauseNumberer.asInstanceOf[js.Any], clauseStack = clauseStack.asInstanceOf[js.Any], importStack = importStack.asInstanceOf[js.Any], inAlg = inAlg.asInstanceOf[js.Any], inNoAutolink = inNoAutolink.asInstanceOf[js.Any], inNoEmd = inNoEmd.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], tagStack = tagStack.asInstanceOf[js.Any], currentId = currentId.asInstanceOf[js.Any], startEmd = startEmd.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

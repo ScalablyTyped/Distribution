@@ -11,7 +11,7 @@ trait SetRepositoryPolicyRequest extends js.Object {
     */
   var force: js.UndefOr[ForceFlag] = js.native
   /**
-    * The JSON repository policy text to apply to the repository. For more information, see Amazon ECR Repository Policy Examples in the Amazon Elastic Container Registry User Guide.
+    * The JSON repository policy text to apply to the repository. For more information, see Amazon ECR Repository Policies in the Amazon Elastic Container Registry User Guide.
     */
   var policyText: RepositoryPolicyText = js.native
   /**
@@ -29,11 +29,11 @@ object SetRepositoryPolicyRequest {
   def apply(
     policyText: RepositoryPolicyText,
     repositoryName: RepositoryName,
-    force: js.UndefOr[Boolean] = js.undefined,
+    force: js.UndefOr[ForceFlag] = js.undefined,
     registryId: RegistryId = null
   ): SetRepositoryPolicyRequest = {
     val __obj = js.Dynamic.literal(policyText = policyText.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetRepositoryPolicyRequest]
   }

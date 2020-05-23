@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-magdir`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-uv`
 import typings.arcgisJsApi.arcgisJsApiStrings.elevation
@@ -138,7 +137,28 @@ trait RasterInfo extends JSONSupport {
   var width: Double
 }
 
-@JSGlobal("__esri.RasterInfo")
-@js.native
-object RasterInfo extends TopLevel[RasterInfoConstructor]
+object RasterInfo {
+  @scala.inline
+  def apply(
+    attributeTable: FeatureSet,
+    bandCount: Double,
+    colormap: js.Array[js.Array[Double]],
+    dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`,
+    extent: Extent,
+    height: Double,
+    histograms: js.Array[_],
+    keyProperties: js.Any,
+    multidimensionalInfo: js.Any,
+    noDataValue: Double | js.Array[Double],
+    pixelSize: RasterInfoPixelSize,
+    pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64,
+    spatialReference: SpatialReference,
+    statistics: js.Array[RasterInfoStatistics],
+    toJSON: () => js.Any,
+    width: Double
+  ): RasterInfo = {
+    val __obj = js.Dynamic.literal(attributeTable = attributeTable.asInstanceOf[js.Any], bandCount = bandCount.asInstanceOf[js.Any], colormap = colormap.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], histograms = histograms.asInstanceOf[js.Any], keyProperties = keyProperties.asInstanceOf[js.Any], multidimensionalInfo = multidimensionalInfo.asInstanceOf[js.Any], noDataValue = noDataValue.asInstanceOf[js.Any], pixelSize = pixelSize.asInstanceOf[js.Any], pixelType = pixelType.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RasterInfo]
+  }
+}
 

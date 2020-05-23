@@ -2,7 +2,7 @@ package typings.storybookAddonA11y.highlightToggleMod
 
 import typings.react.mod.Component
 import typings.std.HTMLElement
-import typings.storybookAddonA11y.ReadonlyToggleProps
+import typings.storybookAddonA11y.anon.ReadonlyToggleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,36 +9,36 @@ trait ISlot extends IDataView {
   /** [Config Option] (String) */
   var align: js.UndefOr[String] = js.undefined
   /** [Method] Looks at the data configuration and turns it into store
-  		* @param data Object
-  		* @returns Object
-  		*/
+    * @param data Object
+    * @returns Object
+    */
   var applyData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Sets the title for this dataview by creating element
-  		* @param title String
-  		* @returns String
-  		*/
+    * @param title String
+    * @returns String
+    */
   var applyTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], String]] = js.undefined
   /** [Config Option] (String) */
   var displayField: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of align
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getAlign: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of displayField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDisplayField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of name
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of title
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getTitle: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of valueField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getValueField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   @JSName("itemTpl")
@@ -46,36 +46,36 @@ trait ISlot extends IDataView {
   /** [Config Option] (String) */
   var name: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of align
-  		* @param align String The new value.
-  		*/
+    * @param align String The new value.
+    */
   var setAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of displayField
-  		* @param displayField String The new value.
-  		*/
+    * @param displayField String The new value.
+    */
   var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of itemTpl
-  		* @param itemTpl String The new value.
-  		*/
+    * @param itemTpl String The new value.
+    */
   @JSName("setItemTpl")
   var setItemTpl_ISlot: js.UndefOr[js.Function1[/* itemTpl */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of name
-  		* @param name String The new value.
-  		*/
+    * @param name String The new value.
+    */
   var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of title
-  		* @param title String The new value.
-  		*/
+    * @param title String The new value.
+    */
   var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of valueField
-  		* @param valueField String The new value.
-  		*/
+    * @param valueField String The new value.
+    */
   var setValueField: js.UndefOr[js.Function1[/* valueField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var title: js.UndefOr[String] = js.undefined
   /** [Method] Updates the align configuration
-  		* @param newAlign Object
-  		* @param oldAlign Object
-  		*/
+    * @param newAlign Object
+    * @param oldAlign Object
+    */
   var updateAlign: js.UndefOr[
     js.Function2[/* newAlign */ js.UndefOr[js.Any], /* oldAlign */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
@@ -108,7 +108,7 @@ object ISlot {
     setValueField: /* valueField */ js.UndefOr[String] => Unit = null,
     title: String = null,
     updateAlign: (/* newAlign */ js.UndefOr[js.Any], /* oldAlign */ js.UndefOr[js.Any]) => Unit = null,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     valueField: String = null
   ): ISlot = {
     val __obj = js.Dynamic.literal()
@@ -132,7 +132,7 @@ object ISlot {
     if (setValueField != null) __obj.updateDynamic("setValueField")(js.Any.fromFunction1(setValueField))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (updateAlign != null) __obj.updateDynamic("updateAlign")(js.Any.fromFunction2(updateAlign))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISlot]
   }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,38 +50,6 @@ object ContactPhoneKind extends js.Object {
   /** The work phone of the contact. */
   @js.native
   sealed trait work extends ContactPhoneKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactPhoneKind with Double] = js.native
-  /* 8 */ @js.native
-  object assistant extends TopLevel[assistant with Double]
-  
-  /* 5 */ @js.native
-  object businessFax extends TopLevel[businessFax with Double]
-  
-  /* 7 */ @js.native
-  object company extends TopLevel[company with Double]
-  
-  /* 0 */ @js.native
-  object home extends TopLevel[home with Double]
-  
-  /* 6 */ @js.native
-  object homeFax extends TopLevel[homeFax with Double]
-  
-  /* 1 */ @js.native
-  object mobile extends TopLevel[mobile with Double]
-  
-  /* 3 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 4 */ @js.native
-  object pager extends TopLevel[pager with Double]
-  
-  /* 9 */ @js.native
-  object radio extends TopLevel[radio with Double]
-  
-  /* 2 */ @js.native
-  object work extends TopLevel[work with Double]
   
 }
 

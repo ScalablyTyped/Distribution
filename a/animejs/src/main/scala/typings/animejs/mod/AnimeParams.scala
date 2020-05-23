@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.animejs.mod.AnimeCallBack because Already inherited
 - typings.animejs.mod.AnimeInstanceParams because var conflicts: begin, change, changeBegin, changeComplete, complete, loopBegin, loopComplete, update. Inlined loop, autoplay, direction */ trait AnimeParams extends AnimeAnimParams {
   var autoplay: js.UndefOr[Boolean] = js.undefined
@@ -33,11 +33,11 @@ object AnimeParams {
     loopBegin: /* anim */ AnimeInstance => Unit = null,
     loopComplete: /* anim */ AnimeInstance => Unit = null,
     round: Double | Boolean | FunctionBasedParameter = null,
-    targets: AnimeTarget | js.Array[AnimeTarget] = null,
+    targets: js.UndefOr[Null | AnimeTarget | js.Array[AnimeTarget]] = js.undefined,
     update: /* anim */ AnimeInstance => Unit = null
   ): AnimeParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (changeBegin != null) __obj.updateDynamic("changeBegin")(js.Any.fromFunction1(changeBegin))
@@ -54,7 +54,7 @@ object AnimeParams {
     if (loopBegin != null) __obj.updateDynamic("loopBegin")(js.Any.fromFunction1(loopBegin))
     if (loopComplete != null) __obj.updateDynamic("loopComplete")(js.Any.fromFunction1(loopComplete))
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    if (!js.isUndefined(targets)) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     __obj.asInstanceOf[AnimeParams]
   }

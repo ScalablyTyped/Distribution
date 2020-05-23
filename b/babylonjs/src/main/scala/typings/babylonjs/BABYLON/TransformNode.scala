@@ -1,16 +1,12 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonDoNotInstantiate
+import typings.babylonjs.anon.DoNotInstantiate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.TransformNode")
 @js.native
-class TransformNode protected () extends Node {
-  def this(name: String) = this()
-  def this(name: String, scene: Nullable[Scene]) = this()
-  def this(name: String, scene: Nullable[Scene], isPure: Boolean) = this()
+trait TransformNode extends Node {
   var _absolutePosition: js.Any = js.native
   var _absoluteRotationQuaternion: js.Any = js.native
   var _absoluteScaling: js.Any = js.native
@@ -241,10 +237,10 @@ class TransformNode protected () extends Node {
     */
   def instantiateHierarchy(): Nullable[TransformNode] = js.native
   def instantiateHierarchy(newParent: Nullable[TransformNode]): Nullable[TransformNode] = js.native
-  def instantiateHierarchy(newParent: Nullable[TransformNode], options: AnonDoNotInstantiate): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Nullable[TransformNode], options: DoNotInstantiate): Nullable[TransformNode] = js.native
   def instantiateHierarchy(
     newParent: Nullable[TransformNode],
-    options: AnonDoNotInstantiate,
+    options: DoNotInstantiate,
     onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
   ): Nullable[TransformNode] = js.native
   /**
@@ -456,45 +452,5 @@ class TransformNode protected () extends Node {
     * @returns this TransformNode.
     */
   def updatePoseMatrix(matrix: Matrix): TransformNode = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.TransformNode")
-@js.native
-object TransformNode extends js.Object {
-  /**
-    * Object will rotate to face the camera
-    */
-  var BILLBOARDMODE_ALL: Double = js.native
-  /**
-    * Object will not rotate to face the camera
-    */
-  var BILLBOARDMODE_NONE: Double = js.native
-  /**
-    * Object will rotate to face the camera's position instead of orientation
-    */
-  var BILLBOARDMODE_USE_POSITION: Double = js.native
-  /**
-    * Object will rotate to face the camera but only on the x axis
-    */
-  var BILLBOARDMODE_X: Double = js.native
-  /**
-    * Object will rotate to face the camera but only on the y axis
-    */
-  var BILLBOARDMODE_Y: Double = js.native
-  /**
-    * Object will rotate to face the camera but only on the z axis
-    */
-  var BILLBOARDMODE_Z: Double = js.native
-  var _lookAtVectorCache: js.Any = js.native
-  var _rotationAxisCache: js.Any = js.native
-  /**
-    * Returns a new TransformNode object parsed from the source provided.
-    * @param parsedTransformNode is the source.
-    * @param scene the scne the object belongs to
-    * @param rootUrl is a string, it's the root URL to prefix the `delayLoadingFile` property with
-    * @returns a new TransformNode object parsed from the source provided.
-    */
-  def Parse(parsedTransformNode: js.Any, scene: Scene, rootUrl: String): TransformNode = js.native
 }
 

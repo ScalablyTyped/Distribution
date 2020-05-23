@@ -20,7 +20,7 @@ object Wildcard {
   def apply(`type`: wildcard, value: Asterisk, subject: js.UndefOr[Boolean] = js.undefined): Wildcard = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Wildcard]
   }
 }

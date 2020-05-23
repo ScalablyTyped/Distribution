@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ConditionalRangeFillData
 import typings.officeJs.Excel.Interfaces.ConditionalRangeFillLoadOptions
 import typings.officeJs.Excel.Interfaces.ConditionalRangeFillUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.ConditionalRangeFill")
 @js.native
-class ConditionalRangeFill () extends ClientObject {
+trait ConditionalRangeFill extends ClientObject {
   /**
     *
-    * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the fill, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -42,7 +41,7 @@ class ConditionalRangeFill () extends ClientObject {
     */
   def load(): ConditionalRangeFill = js.native
   def load(options: ConditionalRangeFillLoadOptions): ConditionalRangeFill = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ConditionalRangeFill = js.native
+  def load(propertyNamesAndPaths: Expand): ConditionalRangeFill = js.native
   def load(propertyNames: String): ConditionalRangeFill = js.native
   def load(propertyNames: js.Array[String]): ConditionalRangeFill = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

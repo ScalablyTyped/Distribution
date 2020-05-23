@@ -20,7 +20,6 @@ trait Helmet extends js.Object {
     * @param {IHelmetContentSecurityPolicyConfiguration} options The options
     * @return {RequestHandler} The Request handler
     */
-  def contentSecurityPolicy(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def contentSecurityPolicy(options: IHelmetContentSecurityPolicyConfiguration): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   /**
     * @summary Stop browsers from doing DNS prefetching.

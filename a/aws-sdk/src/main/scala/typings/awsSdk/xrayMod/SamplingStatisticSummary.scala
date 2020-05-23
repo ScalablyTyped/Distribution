@@ -31,17 +31,17 @@ trait SamplingStatisticSummary extends js.Object {
 object SamplingStatisticSummary {
   @scala.inline
   def apply(
-    BorrowCount: Int | scala.Double = null,
-    RequestCount: Int | scala.Double = null,
+    BorrowCount: js.UndefOr[Integer] = js.undefined,
+    RequestCount: js.UndefOr[Integer] = js.undefined,
     RuleName: String = null,
-    SampledCount: Int | scala.Double = null,
+    SampledCount: js.UndefOr[Integer] = js.undefined,
     Timestamp: Timestamp = null
   ): SamplingStatisticSummary = {
     val __obj = js.Dynamic.literal()
-    if (BorrowCount != null) __obj.updateDynamic("BorrowCount")(BorrowCount.asInstanceOf[js.Any])
-    if (RequestCount != null) __obj.updateDynamic("RequestCount")(RequestCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(BorrowCount)) __obj.updateDynamic("BorrowCount")(BorrowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequestCount)) __obj.updateDynamic("RequestCount")(RequestCount.get.asInstanceOf[js.Any])
     if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName.asInstanceOf[js.Any])
-    if (SampledCount != null) __obj.updateDynamic("SampledCount")(SampledCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(SampledCount)) __obj.updateDynamic("SampledCount")(SampledCount.get.asInstanceOf[js.Any])
     if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingStatisticSummary]
   }

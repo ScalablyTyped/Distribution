@@ -19,14 +19,14 @@ object SearchParameters {
     content_ids: js.Array[String] = null,
     currency: String = null,
     search_string: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): SearchParameters = {
     val __obj = js.Dynamic.literal()
     if (content_category != null) __obj.updateDynamic("content_category")(content_category.asInstanceOf[js.Any])
     if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (search_string != null) __obj.updateDynamic("search_string")(search_string.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchParameters]
   }
 }

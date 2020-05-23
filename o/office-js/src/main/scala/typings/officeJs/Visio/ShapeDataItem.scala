@@ -1,9 +1,9 @@
 package typings.officeJs.Visio
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.Visio.Interfaces.ShapeDataItemData
 import typings.officeJs.Visio.Interfaces.ShapeDataItemLoadOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.ShapeDataItem")
 @js.native
-class ShapeDataItem () extends ClientObject {
+trait ShapeDataItem extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ShapeDataItem: RequestContext = js.native
@@ -66,8 +65,8 @@ class ShapeDataItem () extends ClientObject {
   def load(): ShapeDataItem = js.native
   def load(option: String): ShapeDataItem = js.native
   def load(option: js.Array[String]): ShapeDataItem = js.native
-  def load(option: AnonExpand): ShapeDataItem = js.native
   def load(option: ShapeDataItemLoadOptions): ShapeDataItem = js.native
+  def load(option: Expand): ShapeDataItem = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.ShapeDataItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeDataItemData`) that contains shallow copies of any loaded child properties from the original object.

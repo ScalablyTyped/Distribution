@@ -1,19 +1,19 @@
 package typings.reactNative.mod
 
-import typings.reactNative.AnonHasnextpage
-import typings.reactNative.AnonNode
+import typings.reactNative.anon.Hasnextpage
+import typings.reactNative.anon.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetPhotosReturnType extends js.Object {
-  var edges: js.Array[AnonNode]
-  var page_info: AnonHasnextpage
+  var edges: js.Array[Node]
+  var page_info: Hasnextpage
 }
 
 object GetPhotosReturnType {
   @scala.inline
-  def apply(edges: js.Array[AnonNode], page_info: AnonHasnextpage): GetPhotosReturnType = {
+  def apply(edges: js.Array[Node], page_info: Hasnextpage): GetPhotosReturnType = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], page_info = page_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPhotosReturnType]
   }

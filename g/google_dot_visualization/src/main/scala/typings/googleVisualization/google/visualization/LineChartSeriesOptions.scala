@@ -27,11 +27,11 @@ object LineChartSeriesOptions {
     curveType: none | function = null,
     labelInLegend: String = null,
     lineDashStyle: js.Array[Double] = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     pointShape: ChartPointShape = null,
-    pointSize: Int | Double = null,
+    pointSize: js.UndefOr[Double] = js.undefined,
     pointsVisible: js.UndefOr[Boolean] = js.undefined,
-    targetAxisIndex: Int | Double = null,
+    targetAxisIndex: js.UndefOr[Double] = js.undefined,
     visibleInLegend: js.UndefOr[Boolean] = js.undefined
   ): LineChartSeriesOptions = {
     val __obj = js.Dynamic.literal()
@@ -40,12 +40,12 @@ object LineChartSeriesOptions {
     if (curveType != null) __obj.updateDynamic("curveType")(curveType.asInstanceOf[js.Any])
     if (labelInLegend != null) __obj.updateDynamic("labelInLegend")(labelInLegend.asInstanceOf[js.Any])
     if (lineDashStyle != null) __obj.updateDynamic("lineDashStyle")(lineDashStyle.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.asInstanceOf[js.Any])
-    if (targetAxisIndex != null) __obj.updateDynamic("targetAxisIndex")(targetAxisIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetAxisIndex)) __obj.updateDynamic("targetAxisIndex")(targetAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineChartSeriesOptions]
   }
 }

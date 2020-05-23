@@ -34,13 +34,13 @@ object RevokeClientVpnIngressRequest {
     ClientVpnEndpointId: ClientVpnEndpointId,
     TargetNetworkCidr: String,
     AccessGroupId: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    RevokeAllGroups: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    RevokeAllGroups: js.UndefOr[Boolean] = js.undefined
   ): RevokeClientVpnIngressRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any], TargetNetworkCidr = TargetNetworkCidr.asInstanceOf[js.Any])
     if (AccessGroupId != null) __obj.updateDynamic("AccessGroupId")(AccessGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(RevokeAllGroups)) __obj.updateDynamic("RevokeAllGroups")(RevokeAllGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RevokeAllGroups)) __obj.updateDynamic("RevokeAllGroups")(RevokeAllGroups.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeClientVpnIngressRequest]
   }
 }

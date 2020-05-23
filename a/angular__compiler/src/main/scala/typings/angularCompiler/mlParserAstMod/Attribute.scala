@@ -15,13 +15,6 @@ class Attribute protected () extends NodeWithI18n {
     name: String,
     value: String,
     sourceSpan: ParseSourceSpan,
-    valueSpan: js.UndefOr[scala.Nothing],
-    i18n: I18nMeta
-  ) = this()
-  def this(
-    name: String,
-    value: String,
-    sourceSpan: ParseSourceSpan,
     valueSpan: ParseSourceSpan,
     i18n: I18nMeta
   ) = this()

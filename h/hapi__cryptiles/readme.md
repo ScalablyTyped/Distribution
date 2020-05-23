@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__cryptiles
 
-Typings are for version 5.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 General purpose crypto utilities

@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Sockets.StreamSocketListenerInformation")
-@js.native
-class StreamSocketListenerInformation () extends IStreamSocketListenerInformation {
-  /* CompleteClass */
-  override var localPort: String = js.native
+trait StreamSocketListenerInformation extends IStreamSocketListenerInformation
+
+object StreamSocketListenerInformation {
+  @scala.inline
+  def apply(localPort: String): StreamSocketListenerInformation = {
+    val __obj = js.Dynamic.literal(localPort = localPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StreamSocketListenerInformation]
+  }
 }
 

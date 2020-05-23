@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 
 trait IRemotingEvent extends IEvent {
   /** [Method] Returns the value of tid
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getTid: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Get the transaction associated with this event
-  		* @returns Ext.direct.Transaction The transaction
-  		*/
+    * @returns Ext.direct.Transaction The transaction
+    */
   @JSName("getTransaction")
   var getTransaction_IRemotingEvent: js.UndefOr[js.Function0[ITransaction]] = js.undefined
   /** [Method] Sets the value of tid
-  		* @param tid Object The new value.
-  		*/
+    * @param tid Object The new value.
+    */
   var setTid: js.UndefOr[js.Function1[/* tid */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -98,7 +98,7 @@ object IRemotingEvent {
     if (setTid != null) __obj.updateDynamic("setTid")(js.Any.fromFunction1(setTid))
     if (setTransaction != null) __obj.updateDynamic("setTransaction")(js.Any.fromFunction1(setTransaction))
     if (setXhr != null) __obj.updateDynamic("setXhr")(js.Any.fromFunction1(setXhr))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRemotingEvent]

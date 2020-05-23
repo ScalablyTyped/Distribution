@@ -1,8 +1,8 @@
 package typings.paypalRestSdk.mod.invoice
 
-import typings.paypalRestSdk.AnonAddress
-import typings.paypalRestSdk.AnonCancelledby
-import typings.paypalRestSdk.AnonOther
+import typings.paypalRestSdk.anon.Address
+import typings.paypalRestSdk.anon.Cancelledby
+import typings.paypalRestSdk.anon.Other
 import typings.paypalRestSdk.mod.Currency
 import typings.paypalRestSdk.mod.Link
 import typings.paypalRestSdk.mod.Phone
@@ -25,20 +25,20 @@ trait Invoice extends js.Object {
   var logo_url: js.UndefOr[String] = js.undefined
   var merchant_info: js.UndefOr[Merchant] = js.undefined
   var merchant_memo: js.UndefOr[String] = js.undefined
-  val metadata: js.UndefOr[AnonCancelledby] = js.undefined
+  val metadata: js.UndefOr[Cancelledby] = js.undefined
   var minimum_amount_due: js.UndefOr[Currency] = js.undefined
   var note: js.UndefOr[String] = js.undefined
   var number: js.UndefOr[String] = js.undefined
-  val paid_amount: js.UndefOr[AnonOther] = js.undefined
-  val payment_summary: js.UndefOr[AnonOther] = js.undefined
+  val paid_amount: js.UndefOr[Other] = js.undefined
+  val payment_summary: js.UndefOr[Other] = js.undefined
   var payment_term: js.UndefOr[PaymentTerm] = js.undefined
   val payments: js.UndefOr[js.Array[PaymentDetail]] = js.undefined
   var phone: js.UndefOr[Phone] = js.undefined
   var reference: js.UndefOr[String] = js.undefined
-  val refunded_amount: js.UndefOr[AnonOther] = js.undefined
+  val refunded_amount: js.UndefOr[Other] = js.undefined
   val refunds: js.UndefOr[js.Array[Detail]] = js.undefined
   var shipping_cost: js.UndefOr[ShippingCost] = js.undefined
-  var shipping_info: js.UndefOr[AnonAddress] = js.undefined
+  var shipping_info: js.UndefOr[Address] = js.undefined
   val status: js.UndefOr[String] = js.undefined
   var tax_calculated_after_discount: js.UndefOr[Boolean] = js.undefined
   var tax_inclusive: js.UndefOr[Boolean] = js.undefined
@@ -65,20 +65,20 @@ object Invoice {
     logo_url: String = null,
     merchant_info: Merchant = null,
     merchant_memo: String = null,
-    metadata: AnonCancelledby = null,
+    metadata: Cancelledby = null,
     minimum_amount_due: Currency = null,
     note: String = null,
     number: String = null,
-    paid_amount: AnonOther = null,
-    payment_summary: AnonOther = null,
+    paid_amount: Other = null,
+    payment_summary: Other = null,
     payment_term: PaymentTerm = null,
     payments: js.Array[PaymentDetail] = null,
     phone: Phone = null,
     reference: String = null,
-    refunded_amount: AnonOther = null,
+    refunded_amount: Other = null,
     refunds: js.Array[Detail] = null,
     shipping_cost: ShippingCost = null,
-    shipping_info: AnonAddress = null,
+    shipping_info: Address = null,
     status: String = null,
     tax_calculated_after_discount: js.UndefOr[Boolean] = js.undefined,
     tax_inclusive: js.UndefOr[Boolean] = js.undefined,
@@ -88,8 +88,8 @@ object Invoice {
     uri: String = null
   ): Invoice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_partial_payment)) __obj.updateDynamic("allow_partial_payment")(allow_partial_payment.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_tip)) __obj.updateDynamic("allow_tip")(allow_tip.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_partial_payment)) __obj.updateDynamic("allow_partial_payment")(allow_partial_payment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_tip)) __obj.updateDynamic("allow_tip")(allow_tip.get.asInstanceOf[js.Any])
     if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (billing_info != null) __obj.updateDynamic("billing_info")(billing_info.asInstanceOf[js.Any])
     if (cc_info != null) __obj.updateDynamic("cc_info")(cc_info.asInstanceOf[js.Any])
@@ -117,8 +117,8 @@ object Invoice {
     if (shipping_cost != null) __obj.updateDynamic("shipping_cost")(shipping_cost.asInstanceOf[js.Any])
     if (shipping_info != null) __obj.updateDynamic("shipping_info")(shipping_info.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(tax_calculated_after_discount)) __obj.updateDynamic("tax_calculated_after_discount")(tax_calculated_after_discount.asInstanceOf[js.Any])
-    if (!js.isUndefined(tax_inclusive)) __obj.updateDynamic("tax_inclusive")(tax_inclusive.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax_calculated_after_discount)) __obj.updateDynamic("tax_calculated_after_discount")(tax_calculated_after_discount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax_inclusive)) __obj.updateDynamic("tax_inclusive")(tax_inclusive.get.asInstanceOf[js.Any])
     if (template_id != null) __obj.updateDynamic("template_id")(template_id.asInstanceOf[js.Any])
     if (terms != null) __obj.updateDynamic("terms")(terms.asInstanceOf[js.Any])
     if (total_amount != null) __obj.updateDynamic("total_amount")(total_amount.asInstanceOf[js.Any])

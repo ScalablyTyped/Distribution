@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class StringCls protected () extends String {
   /**
-  		 * Constructs a new Sass string. Does not require use of the `new` keyword.
-  		 */
+    * Constructs a new Sass string. Does not require use of the `new` keyword.
+    */
   def this(value: java.lang.String) = this()
   /* CompleteClass */
   override def getValue(): java.lang.String = js.native

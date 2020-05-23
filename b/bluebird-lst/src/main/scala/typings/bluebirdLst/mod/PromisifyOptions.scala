@@ -14,7 +14,7 @@ object PromisifyOptions {
   def apply(context: js.Any = null, multiArgs: js.UndefOr[Boolean] = js.undefined): PromisifyOptions = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromisifyOptions]
   }
 }

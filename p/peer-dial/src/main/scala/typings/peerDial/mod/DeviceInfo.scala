@@ -1,6 +1,6 @@
 package typings.peerDial.mod
 
-import typings.peerDial.AnonIcon
+import typings.peerDial.anon.Icon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait DeviceInfo extends js.Object {
   var descriptionUrl: String
   var deviceType: String
   var friendlyName: String
-  var iconList: js.Array[js.Object] | AnonIcon
+  var iconList: js.Array[js.Object] | Icon
   var manufacturer: String
   var modelName: String
 }
@@ -24,7 +24,7 @@ object DeviceInfo {
     descriptionUrl: String,
     deviceType: String,
     friendlyName: String,
-    iconList: js.Array[js.Object] | AnonIcon,
+    iconList: js.Array[js.Object] | Icon,
     manufacturer: String,
     modelName: String
   ): DeviceInfo = {

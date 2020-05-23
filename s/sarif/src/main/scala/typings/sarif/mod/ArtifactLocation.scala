@@ -32,14 +32,14 @@ object ArtifactLocation {
   @scala.inline
   def apply(
     description: Message = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     properties: PropertyBag = null,
     uri: String = null,
     uriBaseId: String = null
   ): ArtifactLocation = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     if (uriBaseId != null) __obj.updateDynamic("uriBaseId")(uriBaseId.asInstanceOf[js.Any])

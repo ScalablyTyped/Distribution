@@ -17,12 +17,12 @@ trait ChooseCallbacks extends js.Object {
     *
     * May return `EnumerateAction.Stop` to stop the enumeration early.
     */
-  def onMatch(instance: typings.fridaGum.Wrapper): Unit | EnumerateAction
+  def onMatch(instance: typings.fridaGum.anon.Wrapper): Unit | EnumerateAction
 }
 
 object ChooseCallbacks {
   @scala.inline
-  def apply(onComplete: () => Unit, onMatch: typings.fridaGum.Wrapper => Unit | EnumerateAction): ChooseCallbacks = {
+  def apply(onComplete: () => Unit, onMatch: typings.fridaGum.anon.Wrapper => Unit | EnumerateAction): ChooseCallbacks = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction1(onMatch))
     __obj.asInstanceOf[ChooseCallbacks]
   }

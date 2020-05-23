@@ -29,9 +29,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Application")
 @js.native
-class Application protected () extends js.Object {
+trait Application extends js.Object {
   val ADOConnectString: String = js.native
   @JSName("Access.Application_typekey")
   var AccessDotApplication_typekey: typings.activexAccess.Access.Application = js.native

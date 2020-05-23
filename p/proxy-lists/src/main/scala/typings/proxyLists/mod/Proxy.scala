@@ -28,7 +28,7 @@ object Proxy {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], ipAddress = ipAddress.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (anonymityLevel != null) __obj.updateDynamic("anonymityLevel")(anonymityLevel.asInstanceOf[js.Any])
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (!js.isUndefined(tunnel)) __obj.updateDynamic("tunnel")(tunnel.asInstanceOf[js.Any])
+    if (!js.isUndefined(tunnel)) __obj.updateDynamic("tunnel")(tunnel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Proxy]
   }
 }

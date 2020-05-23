@@ -9,5 +9,5 @@ package object touchRippleMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionGroup.TransitionGroupProps */ _, 
     typings.materialUiCore.touchRippleMod.TouchRippleClassKey, 
     scala.Nothing
-  ]) with typings.materialUiCore.AnonCenter
+  ]) with typings.materialUiCore.anon.Center
 }

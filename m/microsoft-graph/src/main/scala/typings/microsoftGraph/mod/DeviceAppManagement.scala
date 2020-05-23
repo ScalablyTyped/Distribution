@@ -77,7 +77,7 @@ object DeviceAppManagement {
     if (defaultManagedAppProtections != null) __obj.updateDynamic("defaultManagedAppProtections")(defaultManagedAppProtections.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (iosManagedAppProtections != null) __obj.updateDynamic("iosManagedAppProtections")(iosManagedAppProtections.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnabledForMicrosoftStoreForBusiness)) __obj.updateDynamic("isEnabledForMicrosoftStoreForBusiness")(isEnabledForMicrosoftStoreForBusiness.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEnabledForMicrosoftStoreForBusiness)) __obj.updateDynamic("isEnabledForMicrosoftStoreForBusiness")(isEnabledForMicrosoftStoreForBusiness.get.asInstanceOf[js.Any])
     if (managedAppPolicies != null) __obj.updateDynamic("managedAppPolicies")(managedAppPolicies.asInstanceOf[js.Any])
     if (managedAppRegistrations != null) __obj.updateDynamic("managedAppRegistrations")(managedAppRegistrations.asInstanceOf[js.Any])
     if (managedAppStatuses != null) __obj.updateDynamic("managedAppStatuses")(managedAppStatuses.asInstanceOf[js.Any])

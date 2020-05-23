@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to insert a table of contents.
   */
-@JSGlobal("InsertTableOfContentsCommand")
-@js.native
-class InsertTableOfContentsCommand () extends CommandWithSimpleStateBase {
+trait InsertTableOfContentsCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the InsertTableOfContentsCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object InsertTableOfContentsCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertTableOfContentsCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[InsertTableOfContentsCommand]
+  }
 }
 

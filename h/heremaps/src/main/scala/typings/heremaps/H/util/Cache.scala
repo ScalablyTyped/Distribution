@@ -9,22 +9,8 @@ import scala.scalajs.js.annotation._
   * exceeds the maximum size the cache will drop the least recently retrieved elements until the size of the cache is within the bounds of its maximum size. Data elements are always
   * associated with an identifier that allow to retrieve them at a later stage and their content size.
   */
-@JSGlobal("H.util.Cache")
 @js.native
-class Cache protected () extends ICache {
-  /**
-    * Constructor
-    * @param maxSize {number} - the maximum size of the cache
-    * @param opt_onDrop {function(string, ?, number)=} - A callback to be invoked when a data element is dropped from the cache
-    * @param opt_filter {(function(string, ?, number): boolean)=} - A function to filter data elements that are not to be cached
-    */
-  def this(maxSize: Double) = this()
-  def this(maxSize: Double, opt_onDrop: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit]) = this()
-  def this(
-    maxSize: Double,
-    opt_onDrop: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit],
-    opt_filter: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Boolean]
-  ) = this()
+trait Cache extends ICache {
   def forEach(callback: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit], opt_ctx: js.Any): Unit = js.native
   def forEach(
     callback: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit],

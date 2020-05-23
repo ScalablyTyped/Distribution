@@ -8,28 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.Column")
 @js.native
-/**
-  * Constructor for a new Column.Accepts an object literal <code>mSettings</code> that defines
-  * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-  * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-  * object.
-  * @param sId id for the new control, generated automatically if no id is given
-  * @param mSettings initial settings for the new control
-  */
-class Column () extends Element {
-  def this(mSettings: js.Any) = this()
-  /**
-    * Constructor for a new Column.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait Column extends Element {
   /**
     * Apply text alignment of the Column to Text/Label/Link...TODO: This is so ugly to check content
     * functionsinstead we should document how to use our controlsto inherit text-alignment and we should

@@ -1,6 +1,6 @@
 package typings.pgPromise.mod
 
-import typings.pgPromise.AnonDeferrable
+import typings.pgPromise.anon.Deferrable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pg-promise", "TransactionMode")
 @js.native
 class TransactionMode () extends js.Object {
-  def this(options: AnonDeferrable) = this()
+  def this(options: Deferrable) = this()
   def begin(): String = js.native
   def begin(cap: Boolean): String = js.native
 }

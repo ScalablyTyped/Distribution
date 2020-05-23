@@ -34,8 +34,7 @@ trait Lifecycle[Attrs, State]
 object Lifecycle {
   @scala.inline
   def apply[Attrs, State](
-    NumberDictionary: /** WORKAROUND: TypeScript 2.4 does not allow extending an interface with all-optional properties. */
-  /* _ */ NumberDictionary[js.Any] = null,
+    NumberDictionary: /* index */ NumberDictionary[js.Any] = null,
     onbeforeremove: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | Unit] = null,
     onbeforeupdate: js.ThisFunction2[
       /* this */ State, 

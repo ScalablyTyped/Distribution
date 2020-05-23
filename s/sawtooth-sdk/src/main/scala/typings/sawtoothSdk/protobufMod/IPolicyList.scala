@@ -11,9 +11,9 @@ trait IPolicyList extends js.Object {
 
 object IPolicyList {
   @scala.inline
-  def apply(policies: js.Array[IPolicy] = null): IPolicyList = {
+  def apply(policies: js.UndefOr[Null | js.Array[IPolicy]] = js.undefined): IPolicyList = {
     val __obj = js.Dynamic.literal()
-    if (policies != null) __obj.updateDynamic("policies")(policies.asInstanceOf[js.Any])
+    if (!js.isUndefined(policies)) __obj.updateDynamic("policies")(policies.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPolicyList]
   }
 }

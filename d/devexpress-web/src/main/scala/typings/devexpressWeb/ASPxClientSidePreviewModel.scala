@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxClientSidePreviewModel")
 @js.native
-class ASPxClientSidePreviewModel () extends js.Object {
+trait ASPxClientSidePreviewModel extends js.Object {
   var reportPreview: ASPxClientReportPreview = js.native
   var tabPanel: ASPxClientDocumentPreviewTabPanel = js.native
   def Close(): Unit = js.native

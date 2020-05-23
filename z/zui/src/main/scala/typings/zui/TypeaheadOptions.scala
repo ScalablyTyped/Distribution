@@ -18,18 +18,18 @@ object TypeaheadOptions {
   @scala.inline
   def apply(
     highlighter: /* item */ js.Any => String = null,
-    items: Int | Double = null,
+    items: js.UndefOr[Double] = js.undefined,
     matcher: /* item */ js.Any => Boolean = null,
-    minLength: Int | Double = null,
+    minLength: js.UndefOr[Double] = js.undefined,
     sorter: /* items */ js.Array[_] => js.Array[_] = null,
     source: js.Any = null,
     updater: /* item */ js.Any => _ = null
   ): TypeaheadOptions = {
     val __obj = js.Dynamic.literal()
     if (highlighter != null) __obj.updateDynamic("highlighter")(js.Any.fromFunction1(highlighter))
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.get.asInstanceOf[js.Any])
     if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction1(matcher))
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     if (sorter != null) __obj.updateDynamic("sorter")(js.Any.fromFunction1(sorter))
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction1(updater))

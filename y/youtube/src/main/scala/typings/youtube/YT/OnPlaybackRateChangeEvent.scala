@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait OnPlaybackRateChangeEvent extends PlayerEvent {
   /**
-  		 * New playback rate.
-  		 */
+    * New playback rate.
+    */
   var data: Double
 }
 

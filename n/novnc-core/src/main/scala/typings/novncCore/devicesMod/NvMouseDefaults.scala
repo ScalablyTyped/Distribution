@@ -22,14 +22,14 @@ object NvMouseDefaults {
     onMouseButton: (/* x */ Double, /* y */ Double, /* down */ Boolean, /* bmask */ Double) => Unit = null,
     onMouseMove: (/* x */ Double, /* y */ Double) => Unit = null,
     target: Element = null,
-    touchButton: Int | Double = null
+    touchButton: js.UndefOr[Double] = js.undefined
   ): NvMouseDefaults = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.get.asInstanceOf[js.Any])
     if (onMouseButton != null) __obj.updateDynamic("onMouseButton")(js.Any.fromFunction4(onMouseButton))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (touchButton != null) __obj.updateDynamic("touchButton")(touchButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchButton)) __obj.updateDynamic("touchButton")(touchButton.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NvMouseDefaults]
   }
 }

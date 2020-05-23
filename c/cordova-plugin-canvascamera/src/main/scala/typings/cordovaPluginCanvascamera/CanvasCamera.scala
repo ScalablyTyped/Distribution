@@ -1,5 +1,6 @@
 package typings.cordovaPluginCanvascamera
 
+import typings.cordovaPluginCanvascamera.anon.Width
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.back
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.front
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.landscape
@@ -10,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CanvasCamera")
 @js.native
-class CanvasCamera () extends js.Object {
+trait CanvasCamera extends js.Object {
   @JSName("cameraPosition")
   def cameraPosition_back(cameraFacing: back): Unit = js.native
   @JSName("cameraPosition")
@@ -46,9 +46,9 @@ class CanvasCamera () extends js.Object {
     onSuccess: js.Function1[/* data */ js.Any, Unit]
   ): Unit = js.native
   def getUIOrientation(): portrait | landscape = js.native
-  def getUISize(): AnonHeight = js.native
+  def getUISize(): Width = js.native
   def initialize(fcanvas: HTMLCanvasElement, tcanvas: HTMLCanvasElement): Unit = js.native
-  def setRenderersSize(size: AnonHeight): CanvasCamera = js.native
+  def setRenderersSize(size: Width): CanvasCamera = js.native
   def setRenderingPresets(): CanvasCamera = js.native
   def start(options: CanvasCameraOptions): Unit = js.native
   def start(options: CanvasCameraOptions, onError: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = js.native

@@ -1,6 +1,5 @@
 package typings.bingmaps.Microsoft.Maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,35 +45,6 @@ object MapTypeId extends js.Object {
   /** Provides streetside panoramas from the street level. */
   @js.native
   sealed trait streetside extends MapTypeId
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MapTypeId with Double] = js.native
-  /* 0 */ @js.native
-  object aerial extends TopLevel[aerial with Double]
-  
-  /* 1 */ @js.native
-  object birdseye extends TopLevel[birdseye with Double]
-  
-  /* 2 */ @js.native
-  object canvasDark extends TopLevel[canvasDark with Double]
-  
-  /* 3 */ @js.native
-  object canvasLight extends TopLevel[canvasLight with Double]
-  
-  /* 4 */ @js.native
-  object grayscale extends TopLevel[grayscale with Double]
-  
-  /* 5 */ @js.native
-  object mercator extends TopLevel[mercator with Double]
-  
-  /* 6 */ @js.native
-  object ordnanceSurvey extends TopLevel[ordnanceSurvey with Double]
-  
-  /* 7 */ @js.native
-  object road extends TopLevel[road with Double]
-  
-  /* 8 */ @js.native
-  object streetside extends TopLevel[streetside with Double]
   
 }
 

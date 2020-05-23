@@ -38,12 +38,12 @@ object IOptions {
     renderer: IRenderer,
     alignment: Alignment = null,
     orientation: Orientation = null,
-    spacing: Int | Double = null
+    spacing: js.UndefOr[Double] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal(renderer = renderer.asInstanceOf[js.Any])
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

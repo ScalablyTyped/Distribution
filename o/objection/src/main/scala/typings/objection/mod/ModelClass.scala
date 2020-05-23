@@ -1,7 +1,7 @@
 package typings.objection.mod
 
 import typings.knex.mod.Knex
-import typings.objection.TypeofQueryBuilder
+import typings.objection.anon.TypeofQueryBuilder
 import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js

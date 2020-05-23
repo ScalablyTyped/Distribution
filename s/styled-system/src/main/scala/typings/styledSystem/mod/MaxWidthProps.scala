@@ -16,9 +16,9 @@ trait MaxWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends
 
 object MaxWidthProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](maxWidth: ResponsiveValue[TVal, ThemeType] = null): MaxWidthProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](maxWidth: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): MaxWidthProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxWidthProps[ThemeType, TVal]]
   }
 }

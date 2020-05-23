@@ -83,10 +83,6 @@ class Series protected () extends js.Object {
     */
   var data: js.Array[Point] = js.native
   /**
-    * Contains the maximum value of the series' data point.
-    */
-  val dataMax: Double = js.native
-  /**
     * Contains the minimum value of the series' data point.
     */
   val dataMin: Double = js.native

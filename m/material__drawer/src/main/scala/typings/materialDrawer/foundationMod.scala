@@ -2,7 +2,7 @@ package typings.materialDrawer
 
 import typings.materialBase.foundationMod.default
 import typings.materialDrawer.adapterMod.MDCDrawerAdapter
-import typings.std.Event_
+import typings.std.Event
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ object foundationMod extends js.Object {
     /**
       * Handles a transition end event on the root element.
       */
-    def handleTransitionEnd(evt: Event_): Unit = js.native
+    def handleTransitionEnd(evt: Event): Unit = js.native
     /**
       * Returns true if drawer is animating closed.
       */

@@ -1,11 +1,11 @@
 package typings.oracleOraclejet.ojdatetimepickerMod
 
-import typings.oracleOraclejet.AnonAmpmWheelLabel
-import typings.oracleOraclejet.AnonClass
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonFooterLayout
-import typings.oracleOraclejet.AnonInstruction
+import typings.oracleOraclejet.anon.AmpmWheelLabel
+import typings.oracleOraclejet.anon.Class
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.FooterLayout
+import typings.oracleOraclejet.anon.Instruction
 import typings.oracleOraclejet.ojinputtextMod.inputBaseSettableProperties
 import typings.oracleOraclejet.ojmessagingMod.^
 import typings.oracleOraclejet.ojvalidationBaseMod.AsyncValidator
@@ -32,11 +32,11 @@ trait ojInputTimeSettableProperties extends inputBaseSettableProperties[String, 
   var keyboardEdit: enabled | disabled
   var max: String | Null
   var min: String | Null
-  var pickerAttributes: AnonClass
+  var pickerAttributes: Class
   var renderMode: jet | native
-  var timePicker: AnonFooterLayout
+  var timePicker: FooterLayout
   @JSName("translations")
-  var translations_ojInputTimeSettableProperties: AnonAmpmWheelLabel
+  var translations_ojInputTimeSettableProperties: AmpmWheelLabel
 }
 
 object ojInputTimeSettableProperties {
@@ -47,20 +47,20 @@ object ojInputTimeSettableProperties {
     autofocus: Boolean,
     converter: Converter[String] | RegisteredConverter,
     disabled: Boolean,
-    displayOptions: AnonConverterHint,
-    help: AnonInstruction,
-    helpHints: AnonDefinition,
+    displayOptions: ConverterHint,
+    help: Instruction,
+    helpHints: Definition,
     keyboardEdit: enabled | disabled,
     labelHint: String,
     messagesCustom: js.Array[^],
-    pickerAttributes: AnonClass,
+    pickerAttributes: Class,
     placeholder: String,
     rawValue: String,
     readonly: Boolean,
     renderMode: jet | native,
     required: Boolean,
-    timePicker: AnonFooterLayout,
-    translations: AnonAmpmWheelLabel,
+    timePicker: FooterLayout,
+    translations: AmpmWheelLabel,
     valid: valid | pending | invalidHidden | invalidShown,
     value: String,
     describedBy: String = null,
@@ -68,11 +68,7 @@ object ojInputTimeSettableProperties {
     min: String = null,
     validators: js.Array[Validator[String] | RegisteredValidator] = null
   ): ojInputTimeSettableProperties = {
-    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], keyboardEdit = keyboardEdit.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], timePicker = timePicker.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], keyboardEdit = keyboardEdit.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], timePicker = timePicker.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], describedBy = describedBy.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], validators = validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojInputTimeSettableProperties]
   }
 }

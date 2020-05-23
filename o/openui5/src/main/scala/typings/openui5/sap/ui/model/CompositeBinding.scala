@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.CompositeBinding")
 @js.native
-/**
-  * Constructor for CompositeBinding
-  */
-class CompositeBinding () extends PropertyBinding {
+trait CompositeBinding extends PropertyBinding {
   /**
     * Returns the property bindings contained in this composite binding.
     * @returns the property bindings in this composite binding

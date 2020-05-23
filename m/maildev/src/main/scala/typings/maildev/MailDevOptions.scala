@@ -102,28 +102,28 @@ object MailDevOptions {
     open: js.UndefOr[Boolean] = js.undefined,
     outgoingHost: String = null,
     outgoingPass: String = null,
-    outgoingPort: Int | Double = null,
+    outgoingPort: js.UndefOr[Double] = js.undefined,
     outgoingSecure: js.UndefOr[Boolean] = js.undefined,
     outgoingUser: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    smtp: Int | Double = null,
-    web: Int | Double = null,
+    smtp: js.UndefOr[Double] = js.undefined,
+    web: js.UndefOr[Double] = js.undefined,
     webIp: String = null,
     webPass: String = null,
     webUser: String = null
   ): MailDevOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableWeb)) __obj.updateDynamic("disableWeb")(disableWeb.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableWeb)) __obj.updateDynamic("disableWeb")(disableWeb.get.asInstanceOf[js.Any])
     if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     if (outgoingHost != null) __obj.updateDynamic("outgoingHost")(outgoingHost.asInstanceOf[js.Any])
     if (outgoingPass != null) __obj.updateDynamic("outgoingPass")(outgoingPass.asInstanceOf[js.Any])
-    if (outgoingPort != null) __obj.updateDynamic("outgoingPort")(outgoingPort.asInstanceOf[js.Any])
-    if (!js.isUndefined(outgoingSecure)) __obj.updateDynamic("outgoingSecure")(outgoingSecure.asInstanceOf[js.Any])
+    if (!js.isUndefined(outgoingPort)) __obj.updateDynamic("outgoingPort")(outgoingPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outgoingSecure)) __obj.updateDynamic("outgoingSecure")(outgoingSecure.get.asInstanceOf[js.Any])
     if (outgoingUser != null) __obj.updateDynamic("outgoingUser")(outgoingUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (smtp != null) __obj.updateDynamic("smtp")(smtp.asInstanceOf[js.Any])
-    if (web != null) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smtp)) __obj.updateDynamic("smtp")(smtp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(web)) __obj.updateDynamic("web")(web.get.asInstanceOf[js.Any])
     if (webIp != null) __obj.updateDynamic("webIp")(webIp.asInstanceOf[js.Any])
     if (webPass != null) __obj.updateDynamic("webPass")(webPass.asInstanceOf[js.Any])
     if (webUser != null) __obj.updateDynamic("webUser")(webUser.asInstanceOf[js.Any])

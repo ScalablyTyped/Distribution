@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,4 @@ trait RouteResult
     */
   var stops: js.Array[Graphic] = js.native
 }
-
-@JSGlobal("__esri.RouteResult")
-@js.native
-object RouteResult extends TopLevel[RouteResultConstructor]
 

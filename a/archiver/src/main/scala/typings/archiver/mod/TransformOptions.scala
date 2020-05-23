@@ -20,19 +20,19 @@ object TransformOptions {
     allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
     decodeStrings: js.UndefOr[Boolean] = js.undefined,
     encoding: String = null,
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     objectmode: js.UndefOr[Boolean] = js.undefined,
     readableObjectMode: js.UndefOr[Boolean] = js.undefined,
     writeableObjectMode: js.UndefOr[Boolean] = js.undefined
   ): TransformOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectmode)) __obj.updateDynamic("objectmode")(objectmode.asInstanceOf[js.Any])
-    if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeableObjectMode)) __obj.updateDynamic("writeableObjectMode")(writeableObjectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectmode)) __obj.updateDynamic("objectmode")(objectmode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeableObjectMode)) __obj.updateDynamic("writeableObjectMode")(writeableObjectMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformOptions]
   }
 }

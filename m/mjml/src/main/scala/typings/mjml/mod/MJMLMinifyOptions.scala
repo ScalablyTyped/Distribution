@@ -18,9 +18,9 @@ object MJMLMinifyOptions {
     removeEmptyAttributes: js.UndefOr[Boolean] = js.undefined
   ): MJMLMinifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapseWhitespace)) __obj.updateDynamic("collapseWhitespace")(collapseWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(minifyCSS)) __obj.updateDynamic("minifyCSS")(minifyCSS.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeEmptyAttributes)) __obj.updateDynamic("removeEmptyAttributes")(removeEmptyAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseWhitespace)) __obj.updateDynamic("collapseWhitespace")(collapseWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minifyCSS)) __obj.updateDynamic("minifyCSS")(minifyCSS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeEmptyAttributes)) __obj.updateDynamic("removeEmptyAttributes")(removeEmptyAttributes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MJMLMinifyOptions]
   }
 }

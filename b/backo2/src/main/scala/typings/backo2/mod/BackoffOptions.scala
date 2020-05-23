@@ -15,16 +15,16 @@ trait BackoffOptions extends js.Object {
 object BackoffOptions {
   @scala.inline
   def apply(
-    factor: Int | Double = null,
-    jitter: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null
+    factor: js.UndefOr[Double] = js.undefined,
+    jitter: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined
   ): BackoffOptions = {
     val __obj = js.Dynamic.literal()
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (jitter != null) __obj.updateDynamic("jitter")(jitter.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jitter)) __obj.updateDynamic("jitter")(jitter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackoffOptions]
   }
 }

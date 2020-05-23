@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@xmpp/jid", "JID")
 @js.native
 class JID_ protected () extends js.Object {
-  def this(local: js.UndefOr[scala.Nothing], domain: String) = this()
-  def this(local: String, domain: String) = this()
-  def this(local: js.UndefOr[scala.Nothing], domain: String, resource: String) = this()
-  def this(local: String, domain: String, resource: String) = this()
+  def this(local: js.UndefOr[String], domain: String) = this()
+  def this(local: js.UndefOr[String], domain: String, resource: String) = this()
   var domain: String = js.native
   var local: String = js.native
   var resource: String = js.native

@@ -14,7 +14,7 @@ package object mod {
     js.UndefOr[scala.Double], 
     js.UndefOr[java.lang.String]
   ]
-  type AnchorContinuousSpec = typings.jsplumb.mod.AnchorContinuousId | (js.Tuple2[typings.jsplumb.mod.AnchorContinuousId, typings.jsplumb.AnonFaces])
+  type AnchorContinuousSpec = typings.jsplumb.mod.AnchorContinuousId | (js.Tuple2[typings.jsplumb.mod.AnchorContinuousId, typings.jsplumb.anon.Faces])
   type AnchorDynamicId = typings.jsplumb.jsplumbStrings.AutoDefault
   type AnchorDynamicSpec = js.Array[
     typings.jsplumb.mod.AnchorStaticSpec | typings.jsplumb.mod.AnchorDynamicId | typings.jsplumb.mod.AnchorPerimeterSpec | typings.jsplumb.mod.AnchorContinuousSpec
@@ -27,7 +27,7 @@ package object mod {
   */
   type AnchorId = typings.jsplumb.mod._AnchorId | typings.jsplumb.mod.AnchorDynamicId | typings.jsplumb.mod.AnchorPerimeterId
   type AnchorPerimeterId = typings.jsplumb.jsplumbStrings.Perimeter
-  type AnchorPerimeterSpec = typings.jsplumb.mod.AnchorPerimeterId | (js.Tuple2[typings.jsplumb.mod.AnchorPerimeterId, typings.jsplumb.AnonAnchorCount])
+  type AnchorPerimeterSpec = typings.jsplumb.mod.AnchorPerimeterId | (js.Tuple2[typings.jsplumb.mod.AnchorPerimeterId, typings.jsplumb.anon.AnchorCount])
   type AnchorSpec = typings.jsplumb.mod.AnchorStaticSpec | typings.jsplumb.mod.AnchorDynamicSpec | typings.jsplumb.mod.AnchorPerimeterSpec | typings.jsplumb.mod.AnchorContinuousSpec
   type AnchorStaticSpec = typings.jsplumb.mod.AnchorStaticId | typings.jsplumb.mod.AnchorArraySpec
   type ConnectionId = java.lang.String

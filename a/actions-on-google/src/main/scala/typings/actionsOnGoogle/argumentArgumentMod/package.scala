@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object argumentArgumentMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Double
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - typings.actionsOnGoogle.v2Mod.GoogleRpcStatus
     - scala.Boolean
     - java.lang.String

@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
   */
 trait HorizontalInsets extends js.Object {
   /**
-  	 * Left padding/inset
-  	 */
+    * Left padding/inset
+    */
   var left: js.UndefOr[Double] = js.undefined
   /**
-  	 * Right padding/inset
-  	 */
+    * Right padding/inset
+    */
   var right: js.UndefOr[Double] = js.undefined
 }
 
 object HorizontalInsets {
   @scala.inline
-  def apply(left: Int | Double = null, right: Int | Double = null): HorizontalInsets = {
+  def apply(left: js.UndefOr[Double] = js.undefined, right: js.UndefOr[Double] = js.undefined): HorizontalInsets = {
     val __obj = js.Dynamic.literal()
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HorizontalInsets]
   }
 }

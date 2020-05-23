@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,8 +26,4 @@ trait symbolPreview extends js.Object {
   def renderPreviewHTML(symbol: Symbol): js.Promise[HTMLElement] = js.native
   def renderPreviewHTML(symbol: Symbol, options: symbolPreviewRenderPreviewHTMLOptions): js.Promise[HTMLElement] = js.native
 }
-
-@JSGlobal("__esri.symbolPreview")
-@js.native
-object symbolPreview extends TopLevel[symbolPreview]
 

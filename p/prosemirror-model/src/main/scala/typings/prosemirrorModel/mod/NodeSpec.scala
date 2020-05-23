@@ -112,41 +112,38 @@ trait NodeSpec
 object NodeSpec {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Allow specifying arbitrary fields on a NodeSpec.
-    */
-  /* key */ StringDictionary[js.Any] = null,
-    atom: js.UndefOr[Boolean] = js.undefined,
-    attrs: StringDictionary[AttributeSpec] = null,
-    code: js.UndefOr[Boolean] = js.undefined,
-    content: String = null,
-    defining: js.UndefOr[Boolean] = js.undefined,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    group: String = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    isolating: js.UndefOr[Boolean] = js.undefined,
-    marks: String = null,
-    parseDOM: js.Array[ParseRule] = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    toDOM: /* node */ ProsemirrorNode[_] => DOMOutputSpec = null,
-    toDebugString: /* node */ ProsemirrorNode[_] => String = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    atom: js.UndefOr[Null | Boolean] = js.undefined,
+    attrs: js.UndefOr[Null | StringDictionary[AttributeSpec]] = js.undefined,
+    code: js.UndefOr[Null | Boolean] = js.undefined,
+    content: js.UndefOr[Null | String] = js.undefined,
+    defining: js.UndefOr[Null | Boolean] = js.undefined,
+    draggable: js.UndefOr[Null | Boolean] = js.undefined,
+    group: js.UndefOr[Null | String] = js.undefined,
+    `inline`: js.UndefOr[Null | Boolean] = js.undefined,
+    isolating: js.UndefOr[Null | Boolean] = js.undefined,
+    marks: js.UndefOr[Null | String] = js.undefined,
+    parseDOM: js.UndefOr[Null | js.Array[ParseRule]] = js.undefined,
+    selectable: js.UndefOr[Null | Boolean] = js.undefined,
+    toDOM: js.UndefOr[Null | (/* node */ ProsemirrorNode[_] => DOMOutputSpec)] = js.undefined,
+    toDebugString: js.UndefOr[Null | (/* node */ ProsemirrorNode[_] => String)] = js.undefined
   ): NodeSpec = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(atom)) __obj.updateDynamic("atom")(atom.asInstanceOf[js.Any])
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (!js.isUndefined(attrs)) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
     if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(defining)) __obj.updateDynamic("defining")(defining.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (!js.isUndefined(isolating)) __obj.updateDynamic("isolating")(isolating.asInstanceOf[js.Any])
-    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (parseDOM != null) __obj.updateDynamic("parseDOM")(parseDOM.asInstanceOf[js.Any])
+    if (!js.isUndefined(marks)) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseDOM)) __obj.updateDynamic("parseDOM")(parseDOM.asInstanceOf[js.Any])
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (toDOM != null) __obj.updateDynamic("toDOM")(js.Any.fromFunction1(toDOM))
-    if (toDebugString != null) __obj.updateDynamic("toDebugString")(js.Any.fromFunction1(toDebugString))
+    if (!js.isUndefined(toDOM)) __obj.updateDynamic("toDOM")(if (toDOM != null) js.Any.fromFunction1(toDOM.asInstanceOf[/* node */ ProsemirrorNode[_] => DOMOutputSpec]) else null)
+    if (!js.isUndefined(toDebugString)) __obj.updateDynamic("toDebugString")(if (toDebugString != null) js.Any.fromFunction1(toDebugString.asInstanceOf[/* node */ ProsemirrorNode[_] => String]) else null)
     __obj.asInstanceOf[NodeSpec]
   }
 }

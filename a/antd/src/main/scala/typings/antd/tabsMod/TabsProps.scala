@@ -1,6 +1,6 @@
 package typings.antd.tabsMod
 
-import typings.antd.AnonInkBar
+import typings.antd.anon.InkBar
 import typings.antd.antdStrings.add
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.remove
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 
 trait TabsProps extends js.Object {
   var activeKey: js.UndefOr[String] = js.undefined
-  var animated: js.UndefOr[Boolean | AnonInkBar] = js.undefined
+  var animated: js.UndefOr[Boolean | InkBar] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var defaultActiveKey: js.UndefOr[String] = js.undefined
   var destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined
@@ -58,7 +58,7 @@ object TabsProps {
   @scala.inline
   def apply(
     activeKey: String = null,
-    animated: Boolean | AnonInkBar = null,
+    animated: Boolean | InkBar = null,
     className: String = null,
     defaultActiveKey: String = null,
     destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined,
@@ -73,8 +73,8 @@ object TabsProps {
     renderTabBar: (/* props */ TabsProps, /* DefaultTabBar */ ComponentClass[_, ComponentState]) => ReactElement = null,
     size: large | typings.antd.antdStrings.default | small = null,
     style: CSSProperties = null,
-    tabBarExtraContent: ReactNode = null,
-    tabBarGutter: Int | Double = null,
+    tabBarExtraContent: js.UndefOr[Null | ReactNode] = js.undefined,
+    tabBarGutter: js.UndefOr[Double] = js.undefined,
     tabBarStyle: CSSProperties = null,
     tabPosition: TabsPosition = null,
     `type`: TabsType = null
@@ -84,9 +84,9 @@ object TabsProps {
     if (animated != null) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyInactiveTabPane)) __obj.updateDynamic("destroyInactiveTabPane")(destroyInactiveTabPane.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideAdd)) __obj.updateDynamic("hideAdd")(hideAdd.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyInactiveTabPane)) __obj.updateDynamic("destroyInactiveTabPane")(destroyInactiveTabPane.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideAdd)) __obj.updateDynamic("hideAdd")(hideAdd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onEdit != null) __obj.updateDynamic("onEdit")(js.Any.fromFunction2(onEdit))
     if (onNextClick != null) __obj.updateDynamic("onNextClick")(js.Any.fromFunction1(onNextClick))
@@ -96,8 +96,8 @@ object TabsProps {
     if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(js.Any.fromFunction2(renderTabBar))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabBarExtraContent != null) __obj.updateDynamic("tabBarExtraContent")(tabBarExtraContent.asInstanceOf[js.Any])
-    if (tabBarGutter != null) __obj.updateDynamic("tabBarGutter")(tabBarGutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBarExtraContent)) __obj.updateDynamic("tabBarExtraContent")(tabBarExtraContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBarGutter)) __obj.updateDynamic("tabBarGutter")(tabBarGutter.get.asInstanceOf[js.Any])
     if (tabBarStyle != null) __obj.updateDynamic("tabBarStyle")(tabBarStyle.asInstanceOf[js.Any])
     if (tabPosition != null) __obj.updateDynamic("tabPosition")(tabPosition.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

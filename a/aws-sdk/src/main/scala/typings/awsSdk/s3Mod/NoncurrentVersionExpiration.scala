@@ -14,9 +14,9 @@ trait NoncurrentVersionExpiration extends js.Object {
 
 object NoncurrentVersionExpiration {
   @scala.inline
-  def apply(NoncurrentDays: Int | Double = null): NoncurrentVersionExpiration = {
+  def apply(NoncurrentDays: js.UndefOr[Days] = js.undefined): NoncurrentVersionExpiration = {
     val __obj = js.Dynamic.literal()
-    if (NoncurrentDays != null) __obj.updateDynamic("NoncurrentDays")(NoncurrentDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(NoncurrentDays)) __obj.updateDynamic("NoncurrentDays")(NoncurrentDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoncurrentVersionExpiration]
   }
 }

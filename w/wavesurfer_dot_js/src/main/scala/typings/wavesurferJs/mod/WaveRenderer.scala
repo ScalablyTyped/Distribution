@@ -1,7 +1,7 @@
 package typings.wavesurferJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ class WaveRenderer protected () extends Observer {
   override def fireEvent(eventName: String, args: js.Any*): Unit = js.native
   def getScrollX(): Double = js.native
   def getWidth(): Double = js.native
-  def handleEvent(e: Event_, noPrevent: Boolean): Double = js.native
+  def handleEvent(e: Event, noPrevent: Boolean): Double = js.native
   /* CompleteClass */
   override def on(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): ListenerDescriptor = js.native
   /* CompleteClass */

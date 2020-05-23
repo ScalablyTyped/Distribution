@@ -1,5 +1,6 @@
 package typings.plottable
 
+import typings.plottable.anon.CenterPoint
 import typings.plottable.scaleMod.TransformableScale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +21,7 @@ object panZoomConstraintsMod extends js.Object {
     centerPoint: Double,
     minDomainValue: Double,
     maxDomainValue: Double
-  ): AnonCenterPoint = js.native
+  ): CenterPoint = js.native
   def constrainedTranslation(
     scale: TransformableScale[_, Double],
     translation: Double,
@@ -35,7 +36,7 @@ object panZoomConstraintsMod extends js.Object {
     maxDomainExtent: Double,
     minDomainValue: Double,
     maxDomainValue: Double
-  ): AnonCenterPoint = js.native
+  ): CenterPoint = js.native
   def zoomOut(value: Double, zoom: Double, center: Double): Double = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.stripe.mod.balance
 
-import typings.stripe.AnonAmount
+import typings.stripe.anon.Amount
 import typings.stripe.mod.IList
 import typings.stripe.mod.IResourceObject
 import typings.stripe.mod.transfers.ITransfer
@@ -31,7 +31,7 @@ trait IBalanceTransaction extends IResourceObject {
   /**
     * Detailed breakdown of fees (in cents/pence) paid for this transaction
     */
-  var fee_details: js.Array[AnonAmount]
+  var fee_details: js.Array[Amount]
   /**
     * Net amount of the transaction, in cents.
     */
@@ -65,7 +65,7 @@ object IBalanceTransaction {
     created: Double,
     currency: String,
     fee: Double,
-    fee_details: js.Array[AnonAmount],
+    fee_details: js.Array[Amount],
     id: String,
     net: Double,
     `object`: String,
@@ -73,14 +73,14 @@ object IBalanceTransaction {
     status: String,
     `type`: String,
     description: String = null,
-    exchange_rate: Int | Double = null,
+    exchange_rate: js.UndefOr[Null | Double] = js.undefined,
     source_transfers: IList[ITransfer] = null
   ): IBalanceTransaction = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], available_on = available_on.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fee = fee.asInstanceOf[js.Any], fee_details = fee_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (exchange_rate != null) __obj.updateDynamic("exchange_rate")(exchange_rate.asInstanceOf[js.Any])
+    if (!js.isUndefined(exchange_rate)) __obj.updateDynamic("exchange_rate")(exchange_rate.asInstanceOf[js.Any])
     if (source_transfers != null) __obj.updateDynamic("source_transfers")(source_transfers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBalanceTransaction]
   }

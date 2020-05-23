@@ -1,5 +1,6 @@
 package typings.nodeCleanup
 
+import typings.nodeCleanup.anon.CtrlC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ object mod extends js.Object {
   ): Unit = js.native
   def apply(
     cleanupHandler: js.Function2[/* exitCode */ Double | Null, /* signal */ String | Null, js.UndefOr[Boolean | Unit]],
-    stderrMessages: AnonCtrlC
+    stderrMessages: CtrlC
   ): Unit = js.native
   def uninstall(): Unit = js.native
 }

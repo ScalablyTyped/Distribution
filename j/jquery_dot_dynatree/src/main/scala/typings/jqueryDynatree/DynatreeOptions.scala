@@ -1,7 +1,7 @@
 package typings.jqueryDynatree
 
 import typings.jquery.JQueryAjaxSettings
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,25 +55,25 @@ trait DynatreeOptions extends js.Object {
   // Callback(isReloading, isError) when tree was (re)loaded.
   var onActivate: js.UndefOr[js.Function1[/* dtnode */ DynaTreeNode, Unit]] = js.undefined
    // null: set focus to node.
-  var onBlur: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event_, Boolean]] = js.undefined
+  var onBlur: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.undefined
   // Low level event handlers: onEvent(dtnode, event): return false, to stop default processing
-  var onClick: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event_, Boolean]] = js.undefined
+  var onClick: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.undefined
    // Callback(dtnode) before a node is rendered. Return a HTML string to override.
   var onCreate: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any, Unit]] = js.undefined
    // Callback(dtnode) when a lazy node is expanded for the first time.
   var onCustomRender: js.UndefOr[js.Function1[/* dtnode */ DynaTreeNode, Unit]] = js.undefined
    // null: generate focus, expand, activate, select events.
-  var onDblClick: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event_, Boolean]] = js.undefined
+  var onDblClick: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.undefined
    // Callback(dtnode) when a node is activated.
   var onDeactivate: js.UndefOr[js.Function1[/* dtnode */ DynaTreeNode, Unit]] = js.undefined
    // Callback(flag, dtnode) when a node is (de)selected.
   var onExpand: js.UndefOr[js.Function2[/* flag */ String, /* dtnode */ DynaTreeNode, Unit]] = js.undefined
    // (No default actions.)
-  var onFocus: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event_, Boolean]] = js.undefined
+  var onFocus: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.undefined
    // (No default actions.)
-  var onKeydown: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event_, Boolean]] = js.undefined
+  var onKeydown: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.undefined
    // null: generate keyboard navigation (focus, expand, activate).
-  var onKeypress: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event_, Boolean]] = js.undefined
+  var onKeypress: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.undefined
    // Callback(flag, dtnode) when a node is expanded/collapsed.
   var onLazyRead: js.UndefOr[js.Function1[/* dtnode */ DynaTreeNode, Unit]] = js.undefined
   // Callback(flag, dtnode) before a node is expanded/collpsed.
@@ -111,10 +111,10 @@ object DynatreeOptions {
     checkbox: js.UndefOr[Boolean] = js.undefined,
     children: js.Array[DynaTreeDataModel] = null,
     classNames: DynatreeClassNamesOptions = null,
-    clickFolderMode: Int | Double = null,
+    clickFolderMode: js.UndefOr[Double] = js.undefined,
     cookie: DynaTreeCookieOptions = null,
     cookieId: String = null,
-    debugLevel: Int | Double = null,
+    debugLevel: js.UndefOr[Double] = js.undefined,
     dnd: DynaTreeDNDOptions = null,
     fx: js.Any = null,
     generateIds: js.UndefOr[Boolean] = js.undefined,
@@ -124,19 +124,19 @@ object DynatreeOptions {
     initId: String = null,
     keyPathSeparator: String = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
-    minExpandLevel: Int | Double = null,
+    minExpandLevel: js.UndefOr[Double] = js.undefined,
     noLink: js.UndefOr[Boolean] = js.undefined,
     onActivate: /* dtnode */ DynaTreeNode => Unit = null,
-    onBlur: (/* dtnode */ DynaTreeNode, /* event */ Event_) => Boolean = null,
-    onClick: (/* dtnode */ DynaTreeNode, /* event */ Event_) => Boolean = null,
+    onBlur: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean = null,
+    onClick: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean = null,
     onCreate: (/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any) => Unit = null,
     onCustomRender: /* dtnode */ DynaTreeNode => Unit = null,
-    onDblClick: (/* dtnode */ DynaTreeNode, /* event */ Event_) => Boolean = null,
+    onDblClick: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean = null,
     onDeactivate: /* dtnode */ DynaTreeNode => Unit = null,
     onExpand: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit = null,
-    onFocus: (/* dtnode */ DynaTreeNode, /* event */ Event_) => Boolean = null,
-    onKeydown: (/* dtnode */ DynaTreeNode, /* event */ Event_) => Boolean = null,
-    onKeypress: (/* dtnode */ DynaTreeNode, /* event */ Event_) => Boolean = null,
+    onFocus: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean = null,
+    onKeydown: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean = null,
+    onKeypress: (/* dtnode */ DynaTreeNode, /* event */ Event) => Boolean = null,
     onLazyRead: /* dtnode */ DynaTreeNode => Unit = null,
     onPostInit: (/* isReloading */ Boolean, /* isError */ Boolean) => Unit = null,
     onQueryActivate: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit = null,
@@ -146,33 +146,33 @@ object DynatreeOptions {
     onSelect: (/* flag */ String, /* dtnode */ DynaTreeNode) => Unit = null,
     persist: js.UndefOr[Boolean] = js.undefined,
     postProcess: (/* data */ js.Any, /* dataType */ js.Any) => Unit = null,
-    selectMode: Int | Double = null,
+    selectMode: js.UndefOr[Double] = js.undefined,
     strings: DynaTreeStringsOptions = null,
     title: String = null
   ): DynatreeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeVisible)) __obj.updateDynamic("activeVisible")(activeVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeVisible)) __obj.updateDynamic("activeVisible")(activeVisible.get.asInstanceOf[js.Any])
     if (ajaxDefaults != null) __obj.updateDynamic("ajaxDefaults")(ajaxDefaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkbox)) __obj.updateDynamic("checkbox")(checkbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkbox)) __obj.updateDynamic("checkbox")(checkbox.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    if (clickFolderMode != null) __obj.updateDynamic("clickFolderMode")(clickFolderMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickFolderMode)) __obj.updateDynamic("clickFolderMode")(clickFolderMode.get.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (cookieId != null) __obj.updateDynamic("cookieId")(cookieId.asInstanceOf[js.Any])
-    if (debugLevel != null) __obj.updateDynamic("debugLevel")(debugLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugLevel)) __obj.updateDynamic("debugLevel")(debugLevel.get.asInstanceOf[js.Any])
     if (dnd != null) __obj.updateDynamic("dnd")(dnd.asInstanceOf[js.Any])
     if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateIds)) __obj.updateDynamic("generateIds")(generateIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateIds)) __obj.updateDynamic("generateIds")(generateIds.get.asInstanceOf[js.Any])
     if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
     if (imagePath != null) __obj.updateDynamic("imagePath")(imagePath.asInstanceOf[js.Any])
     if (initAjax != null) __obj.updateDynamic("initAjax")(initAjax.asInstanceOf[js.Any])
     if (initId != null) __obj.updateDynamic("initId")(initId.asInstanceOf[js.Any])
     if (keyPathSeparator != null) __obj.updateDynamic("keyPathSeparator")(keyPathSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (minExpandLevel != null) __obj.updateDynamic("minExpandLevel")(minExpandLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minExpandLevel)) __obj.updateDynamic("minExpandLevel")(minExpandLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink.get.asInstanceOf[js.Any])
     if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction1(onActivate))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
@@ -191,9 +191,9 @@ object DynatreeOptions {
     if (onQuerySelect != null) __obj.updateDynamic("onQuerySelect")(js.Any.fromFunction2(onQuerySelect))
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction2(onRender))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.get.asInstanceOf[js.Any])
     if (postProcess != null) __obj.updateDynamic("postProcess")(js.Any.fromFunction2(postProcess))
-    if (selectMode != null) __obj.updateDynamic("selectMode")(selectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectMode)) __obj.updateDynamic("selectMode")(selectMode.get.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynatreeOptions]

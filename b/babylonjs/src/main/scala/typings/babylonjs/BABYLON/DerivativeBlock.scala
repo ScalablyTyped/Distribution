@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.DerivativeBlock")
 @js.native
-class DerivativeBlock protected () extends NodeMaterialBlock {
-  /**
-    * Create a new DerivativeBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait DerivativeBlock extends NodeMaterialBlock {
   /**
     * Gets the derivative output on x
     */

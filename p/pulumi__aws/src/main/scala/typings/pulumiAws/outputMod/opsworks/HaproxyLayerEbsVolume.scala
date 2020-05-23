@@ -40,13 +40,13 @@ object HaproxyLayerEbsVolume {
     numberOfDisks: Double,
     size: Double,
     encrypted: js.UndefOr[Boolean] = js.undefined,
-    iops: Int | Double = null,
+    iops: js.UndefOr[Double] = js.undefined,
     raidLevel: String = null,
     `type`: String = null
   ): HaproxyLayerEbsVolume = {
     val __obj = js.Dynamic.literal(mountPoint = mountPoint.asInstanceOf[js.Any], numberOfDisks = numberOfDisks.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
-    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iops)) __obj.updateDynamic("iops")(iops.get.asInstanceOf[js.Any])
     if (raidLevel != null) __obj.updateDynamic("raidLevel")(raidLevel.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HaproxyLayerEbsVolume]

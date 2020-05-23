@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable3
 import typings.std.stdStrings.complete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,15 +48,4 @@ trait OfflineAudioContext extends BaseAudioContext {
   def startRendering(): js.Promise[AudioBuffer] = js.native
   def suspend(suspendTime: Double): js.Promise[Unit] = js.native
 }
-
-@JSGlobal("OfflineAudioContext")
-@js.native
-object OfflineAudioContext
-  extends Instantiable1[/* contextOptions */ OfflineAudioContextOptions, OfflineAudioContext]
-     with Instantiable3[
-      /* numberOfChannels */ Double, 
-      /* length */ Double, 
-      /* sampleRate */ Double, 
-      OfflineAudioContext
-    ]
 

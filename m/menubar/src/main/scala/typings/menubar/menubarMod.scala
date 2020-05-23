@@ -1,12 +1,13 @@
 package typings.menubar
 
-import typings.electron.Electron.App_
+import typings.electron.Electron.App
 import typings.electron.Electron.BrowserWindowConstructorOptions
 import typings.electron.Electron.LoadURLOptions
 import typings.electron.Electron.NativeImage_
 import typings.electron.Electron.Rectangle
 import typings.electron.mod.BrowserWindow
 import typings.electron.mod.Tray
+import typings.menubar.anon.PartialOptions
 import typings.menubar.menubarBooleans.`false`
 import typings.menubar.menubarStrings.bottomCenter
 import typings.menubar.menubarStrings.bottomLeft
@@ -45,11 +46,13 @@ import scala.scalajs.js.annotation._
 object menubarMod extends js.Object {
   @js.native
   class Menubar protected () extends EventEmitter {
-    def this(app: App_) = this()
-    def this(app: App_, options: PartialOptions) = this()
+    def this(app: App) = this()
+    def this(app: App, options: PartialOptions) = this()
     var _app: js.Any = js.native
+    var _blurTimeout: js.Any = js.native
     var _browserWindow: js.UndefOr[js.Any] = js.native
     var _cachedBounds: js.UndefOr[js.Any] = js.native
+    var _isVisible: js.Any = js.native
     var _options: js.Any = js.native
     var _positioner: js.Any = js.native
     var _tray: js.UndefOr[js.Any] = js.native
@@ -67,7 +70,7 @@ object menubarMod extends js.Object {
       * The Electron [App](https://electronjs.org/docs/api/app)
       * instance.
       */
-    def app: App_ = js.native
+    def app: App = js.native
     /**
       * Retrieve a menubar option.
       *

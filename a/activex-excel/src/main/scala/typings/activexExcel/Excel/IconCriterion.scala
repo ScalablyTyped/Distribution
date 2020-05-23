@@ -4,15 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.IconCriterion")
-@js.native
-class IconCriterion protected () extends js.Object {
+trait IconCriterion extends js.Object {
   @JSName("Excel.IconCriterion_typekey")
-  var ExcelDotIconCriterion_typekey: IconCriterion = js.native
-  var Icon: XlIcon = js.native
-  val Index: Double = js.native
-  var Operator: Double = js.native
-  var Type: XlConditionValueTypes = js.native
-  var Value: Double | String = js.native
+  var ExcelDotIconCriterion_typekey: IconCriterion
+  var Icon: XlIcon
+  val Index: Double
+  var Operator: Double
+  var Type: XlConditionValueTypes
+  var Value: Double | String
+}
+
+object IconCriterion {
+  @scala.inline
+  def apply(
+    ExcelDotIconCriterion_typekey: IconCriterion,
+    Icon: XlIcon,
+    Index: Double,
+    Operator: Double,
+    Type: XlConditionValueTypes,
+    Value: Double | String
+  ): IconCriterion = {
+    val __obj = js.Dynamic.literal(Icon = Icon.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Operator = Operator.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.IconCriterion_typekey")(ExcelDotIconCriterion_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IconCriterion]
+  }
 }
 

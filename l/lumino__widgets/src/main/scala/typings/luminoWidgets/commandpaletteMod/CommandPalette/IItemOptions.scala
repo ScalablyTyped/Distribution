@@ -40,10 +40,15 @@ trait IItemOptions extends js.Object {
 
 object IItemOptions {
   @scala.inline
-  def apply(category: String, command: String, args: ReadonlyJSONObject = null, rank: Int | Double = null): IItemOptions = {
+  def apply(
+    category: String,
+    command: String,
+    args: ReadonlyJSONObject = null,
+    rank: js.UndefOr[Double] = js.undefined
+  ): IItemOptions = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }
 }

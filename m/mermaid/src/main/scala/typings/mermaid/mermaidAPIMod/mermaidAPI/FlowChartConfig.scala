@@ -22,7 +22,7 @@ object FlowChartConfig {
   def apply(curve: String = null, htmlLabels: js.UndefOr[Boolean] = js.undefined): FlowChartConfig = {
     val __obj = js.Dynamic.literal()
     if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
-    if (!js.isUndefined(htmlLabels)) __obj.updateDynamic("htmlLabels")(htmlLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(htmlLabels)) __obj.updateDynamic("htmlLabels")(htmlLabels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowChartConfig]
   }
 }

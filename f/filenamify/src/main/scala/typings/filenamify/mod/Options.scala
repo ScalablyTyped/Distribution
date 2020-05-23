@@ -22,9 +22,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(maxLength: Int | Double = null, replacement: String = null): Options = {
+  def apply(maxLength: js.UndefOr[Double] = js.undefined, replacement: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (replacement != null) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

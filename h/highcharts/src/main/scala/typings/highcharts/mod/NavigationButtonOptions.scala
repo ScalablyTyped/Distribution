@@ -84,37 +84,37 @@ object NavigationButtonOptions {
   @scala.inline
   def apply(
     align: AlignValue = null,
-    buttonSpacing: Int | Double = null,
+    buttonSpacing: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     symbolFill: ColorString | GradientColorObject | PatternObject = null,
-    symbolSize: Int | Double = null,
+    symbolSize: js.UndefOr[Double] = js.undefined,
     symbolStroke: ColorString = null,
-    symbolStrokeWidth: Int | Double = null,
-    symbolX: Int | Double = null,
-    symbolY: Int | Double = null,
+    symbolStrokeWidth: js.UndefOr[Double] = js.undefined,
+    symbolX: js.UndefOr[Double] = js.undefined,
+    symbolY: js.UndefOr[Double] = js.undefined,
     text: String = null,
     theme: NavigationButtonThemeOptions = null,
     verticalAlign: VerticalAlignValue = null,
-    width: Int | Double = null,
-    y: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): NavigationButtonOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (buttonSpacing != null) __obj.updateDynamic("buttonSpacing")(buttonSpacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonSpacing)) __obj.updateDynamic("buttonSpacing")(buttonSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (symbolFill != null) __obj.updateDynamic("symbolFill")(symbolFill.asInstanceOf[js.Any])
-    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolSize)) __obj.updateDynamic("symbolSize")(symbolSize.get.asInstanceOf[js.Any])
     if (symbolStroke != null) __obj.updateDynamic("symbolStroke")(symbolStroke.asInstanceOf[js.Any])
-    if (symbolStrokeWidth != null) __obj.updateDynamic("symbolStrokeWidth")(symbolStrokeWidth.asInstanceOf[js.Any])
-    if (symbolX != null) __obj.updateDynamic("symbolX")(symbolX.asInstanceOf[js.Any])
-    if (symbolY != null) __obj.updateDynamic("symbolY")(symbolY.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolStrokeWidth)) __obj.updateDynamic("symbolStrokeWidth")(symbolStrokeWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolX)) __obj.updateDynamic("symbolX")(symbolX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolY)) __obj.updateDynamic("symbolY")(symbolY.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationButtonOptions]
   }
 }

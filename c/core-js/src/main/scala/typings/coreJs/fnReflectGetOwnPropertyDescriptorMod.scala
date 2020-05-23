@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/reflect/get-own-property-descriptor", JSImport.Namespace)
 @js.native
 object fnReflectGetOwnPropertyDescriptorMod
-  extends TopLevel[
-      js.Function2[/* target */ js.Any, /* propertyKey */ PropertyKey, PropertyDescriptor]
-    ]
+  extends TopLevel[js.Function2[/* o */ js.Any, /* propertyKey */ PropertyKey, PropertyDescriptor]]
 

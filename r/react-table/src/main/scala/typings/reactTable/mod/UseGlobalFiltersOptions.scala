@@ -22,7 +22,7 @@ trait UseGlobalFiltersOptions[D /* <: js.Object */] extends js.Object {
 
 object UseGlobalFiltersOptions {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     autoResetGlobalFilter: js.UndefOr[Boolean] = js.undefined,
     disableGlobalFilter: js.UndefOr[Boolean] = js.undefined,
     filterTypes: FilterTypes[D] = null,
@@ -35,11 +35,11 @@ object UseGlobalFiltersOptions {
     manualGlobalFilter: js.UndefOr[Boolean] = js.undefined
   ): UseGlobalFiltersOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetGlobalFilter)) __obj.updateDynamic("autoResetGlobalFilter")(autoResetGlobalFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableGlobalFilter)) __obj.updateDynamic("disableGlobalFilter")(disableGlobalFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResetGlobalFilter)) __obj.updateDynamic("autoResetGlobalFilter")(autoResetGlobalFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableGlobalFilter)) __obj.updateDynamic("disableGlobalFilter")(disableGlobalFilter.get.asInstanceOf[js.Any])
     if (filterTypes != null) __obj.updateDynamic("filterTypes")(filterTypes.asInstanceOf[js.Any])
     if (globalFilter != null) __obj.updateDynamic("globalFilter")(globalFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(manualGlobalFilter)) __obj.updateDynamic("manualGlobalFilter")(manualGlobalFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(manualGlobalFilter)) __obj.updateDynamic("manualGlobalFilter")(manualGlobalFilter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGlobalFiltersOptions[D]]
   }
 }

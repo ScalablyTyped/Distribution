@@ -13,7 +13,7 @@ object CheckboxRadioOptions {
   @scala.inline
   def apply(mini: js.UndefOr[Boolean] = js.undefined, theme: String = null): CheckboxRadioOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
+    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxRadioOptions]
   }

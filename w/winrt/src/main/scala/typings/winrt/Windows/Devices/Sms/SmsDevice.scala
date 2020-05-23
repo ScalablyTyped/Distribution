@@ -1,37 +1,25 @@
 package typings.winrt.Windows.Devices.Sms
 
-import typings.winrt.Windows.Foundation.IAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sms.SmsDevice")
-@js.native
-class SmsDevice () extends ISmsDevice {
-  /* CompleteClass */
-  override var accountPhoneNumber: String = js.native
-  /* CompleteClass */
-  override var cellularClass: CellularClass = js.native
-  /* CompleteClass */
-  override var deviceStatus: SmsDeviceStatus = js.native
-  /* CompleteClass */
-  override var messageStore: SmsDeviceMessageStore = js.native
-  /* CompleteClass */
-  override var onsmsdevicestatuschanged: js.Any = js.native
-  /* CompleteClass */
-  override var onsmsmessagereceived: js.Any = js.native
-  /* CompleteClass */
-  override def calculateLength(message: SmsTextMessage): SmsEncodedLength = js.native
-  /* CompleteClass */
-  override def sendMessageAsync(message: ISmsMessage): SendSmsMessageOperation = js.native
-}
+trait SmsDevice extends ISmsDevice
 
-/* static members */
-@JSGlobal("Windows.Devices.Sms.SmsDevice")
-@js.native
-object SmsDevice extends js.Object {
-  def fromIdAsync(deviceInstanceId: String): IAsyncOperation[SmsDevice] = js.native
-  def getDefaultAsync(): IAsyncOperation[SmsDevice] = js.native
-  def getDeviceSelector(): String = js.native
+object SmsDevice {
+  @scala.inline
+  def apply(
+    accountPhoneNumber: String,
+    calculateLength: SmsTextMessage => SmsEncodedLength,
+    cellularClass: CellularClass,
+    deviceStatus: SmsDeviceStatus,
+    messageStore: SmsDeviceMessageStore,
+    onsmsdevicestatuschanged: js.Any,
+    onsmsmessagereceived: js.Any,
+    sendMessageAsync: ISmsMessage => SendSmsMessageOperation
+  ): SmsDevice = {
+    val __obj = js.Dynamic.literal(accountPhoneNumber = accountPhoneNumber.asInstanceOf[js.Any], calculateLength = js.Any.fromFunction1(calculateLength), cellularClass = cellularClass.asInstanceOf[js.Any], deviceStatus = deviceStatus.asInstanceOf[js.Any], messageStore = messageStore.asInstanceOf[js.Any], onsmsdevicestatuschanged = onsmsdevicestatuschanged.asInstanceOf[js.Any], onsmsmessagereceived = onsmsmessagereceived.asInstanceOf[js.Any], sendMessageAsync = js.Any.fromFunction1(sendMessageAsync))
+    __obj.asInstanceOf[SmsDevice]
+  }
 }
 

@@ -18,9 +18,9 @@ object PushNotificationPermissions {
     sound: js.UndefOr[Boolean] = js.undefined
   ): PushNotificationPermissions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
-    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNotificationPermissions]
   }
 }

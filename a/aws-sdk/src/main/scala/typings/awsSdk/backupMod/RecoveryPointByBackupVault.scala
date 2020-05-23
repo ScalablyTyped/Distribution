@@ -75,7 +75,7 @@ trait RecoveryPointByBackupVault extends js.Object {
 object RecoveryPointByBackupVault {
   @scala.inline
   def apply(
-    BackupSizeInBytes: Int | Double = null,
+    BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
     BackupVaultArn: ARN = null,
     BackupVaultName: BackupVaultName = null,
     CalculatedLifecycle: CalculatedLifecycle = null,
@@ -93,7 +93,7 @@ object RecoveryPointByBackupVault {
     Status: RecoveryPointStatus = null
   ): RecoveryPointByBackupVault = {
     val __obj = js.Dynamic.literal()
-    if (BackupSizeInBytes != null) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
     if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn.asInstanceOf[js.Any])
     if (BackupVaultName != null) __obj.updateDynamic("BackupVaultName")(BackupVaultName.asInstanceOf[js.Any])
     if (CalculatedLifecycle != null) __obj.updateDynamic("CalculatedLifecycle")(CalculatedLifecycle.asInstanceOf[js.Any])
@@ -102,7 +102,7 @@ object RecoveryPointByBackupVault {
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (EncryptionKeyArn != null) __obj.updateDynamic("EncryptionKeyArn")(EncryptionKeyArn.asInstanceOf[js.Any])
     if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsEncrypted)) __obj.updateDynamic("IsEncrypted")(IsEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsEncrypted)) __obj.updateDynamic("IsEncrypted")(IsEncrypted.get.asInstanceOf[js.Any])
     if (LastRestoreTime != null) __obj.updateDynamic("LastRestoreTime")(LastRestoreTime.asInstanceOf[js.Any])
     if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
     if (RecoveryPointArn != null) __obj.updateDynamic("RecoveryPointArn")(RecoveryPointArn.asInstanceOf[js.Any])

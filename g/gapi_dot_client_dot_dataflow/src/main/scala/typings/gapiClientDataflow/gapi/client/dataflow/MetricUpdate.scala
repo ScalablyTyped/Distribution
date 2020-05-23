@@ -79,7 +79,7 @@ object MetricUpdate {
     updateTime: String = null
   ): MetricUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.asInstanceOf[js.Any])
+    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.get.asInstanceOf[js.Any])
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

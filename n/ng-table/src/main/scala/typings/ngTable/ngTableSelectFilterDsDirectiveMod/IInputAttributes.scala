@@ -1,7 +1,7 @@
 package typings.ngTable.ngTableSelectFilterDsDirectiveMod
 
 import typings.angular.mod.IAttributes
-import typings.angular.mod._Global_.Function
+import typings.angular.mod.global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,9 +12,9 @@ trait resetParams extends js.Object {
 
 object resetParams {
   @scala.inline
-  def apply(columnCount: Double, columnWidth: Double, spacer: Int | Double = null): resetParams = {
+  def apply(columnCount: Double, columnWidth: Double, spacer: js.UndefOr[Double] = js.undefined): resetParams = {
     val __obj = js.Dynamic.literal(columnCount = columnCount.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any])
-    if (spacer != null) __obj.updateDynamic("spacer")(spacer.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacer)) __obj.updateDynamic("spacer")(spacer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[resetParams]
   }
 }

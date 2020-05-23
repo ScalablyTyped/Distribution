@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ContactQueryDesiredFields extends js.Object {
   /** The contact must have a postal address. */
   @js.native
   sealed trait postalAddress extends ContactQueryDesiredFields
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactQueryDesiredFields with Double] = js.native
-  /* 2 */ @js.native
-  object emailAddress extends TopLevel[emailAddress with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object phoneNumber extends TopLevel[phoneNumber with Double]
-  
-  /* 3 */ @js.native
-  object postalAddress extends TopLevel[postalAddress with Double]
   
 }
 

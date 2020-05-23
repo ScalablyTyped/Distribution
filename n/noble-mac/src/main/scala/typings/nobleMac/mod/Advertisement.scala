@@ -1,6 +1,6 @@
 package typings.nobleMac.mod
 
-import typings.nobleMac.AnonData
+import typings.nobleMac.anon.Data
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Advertisement extends js.Object {
   var localName: String
   var manufacturerData: Buffer
-  var serviceData: AnonData
+  var serviceData: Data
   var serviceUuids: js.Array[String]
   var txPowerLevel: Double
 }
@@ -19,7 +19,7 @@ object Advertisement {
   def apply(
     localName: String,
     manufacturerData: Buffer,
-    serviceData: AnonData,
+    serviceData: Data,
     serviceUuids: js.Array[String],
     txPowerLevel: Double
   ): Advertisement = {

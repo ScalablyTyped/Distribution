@@ -42,7 +42,7 @@ object ReplyFormAttachment {
   ): ReplyFormAttachment = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(inLine)) __obj.updateDynamic("inLine")(inLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(inLine)) __obj.updateDynamic("inLine")(inLine.get.asInstanceOf[js.Any])
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplyFormAttachment]

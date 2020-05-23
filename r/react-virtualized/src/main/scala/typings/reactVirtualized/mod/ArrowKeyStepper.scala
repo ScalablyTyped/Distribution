@@ -1,6 +1,6 @@
 package typings.reactVirtualized.mod
 
-import typings.reactVirtualized.AnonDisabled
+import typings.reactVirtualized.anon.Disabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class ArrowKeyStepper ()
 @JSImport("react-virtualized", "ArrowKeyStepper")
 @js.native
 object ArrowKeyStepper extends js.Object {
-  var defaultProps: AnonDisabled = js.native
+  var defaultProps: Disabled = js.native
 }
 

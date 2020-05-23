@@ -1,6 +1,7 @@
 package typings.reactPose
 
 import typings.react.mod.Component
+import typings.reactPose.anon.FlipMove
 import typings.reactPose.transitionTypesMod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +20,7 @@ object poseGroupMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonFlipMove = js.native
+    var defaultProps: FlipMove = js.native
   }
   
 }

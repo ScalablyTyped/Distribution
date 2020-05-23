@@ -10,9 +10,9 @@ trait CoreOptions extends js.Object {
 
 object CoreOptions {
   @scala.inline
-  def apply(statConcurrency: Int | Double = null): CoreOptions = {
+  def apply(statConcurrency: js.UndefOr[Double] = js.undefined): CoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (statConcurrency != null) __obj.updateDynamic("statConcurrency")(statConcurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(statConcurrency)) __obj.updateDynamic("statConcurrency")(statConcurrency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreOptions]
   }
 }

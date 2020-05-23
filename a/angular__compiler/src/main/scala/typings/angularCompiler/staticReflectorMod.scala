@@ -1,6 +1,8 @@
 package typings.angularCompiler
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.angularCompiler.anon.Ctor
+import typings.angularCompiler.anon.FilePath
 import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.outputAstMod.ExternalReference
 import typings.angularCompiler.srcSummaryResolverMod.SummaryResolver
@@ -19,19 +21,19 @@ object staticReflectorMod extends js.Object {
     def this(
       summaryResolver: SummaryResolver[StaticSymbol],
       symbolResolver: StaticSymbolResolver,
-      knownMetadataClasses: js.Array[AnonCtor]
+      knownMetadataClasses: js.Array[Ctor]
     ) = this()
     def this(
       summaryResolver: SummaryResolver[StaticSymbol],
       symbolResolver: StaticSymbolResolver,
-      knownMetadataClasses: js.Array[AnonCtor],
-      knownMetadataFunctions: js.Array[AnonFilePath]
+      knownMetadataClasses: js.Array[Ctor],
+      knownMetadataFunctions: js.Array[FilePath]
     ) = this()
     def this(
       summaryResolver: SummaryResolver[StaticSymbol],
       symbolResolver: StaticSymbolResolver,
-      knownMetadataClasses: js.Array[AnonCtor],
-      knownMetadataFunctions: js.Array[AnonFilePath],
+      knownMetadataClasses: js.Array[Ctor],
+      knownMetadataFunctions: js.Array[FilePath],
       errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
     ) = this()
     var ANALYZE_FOR_ENTRY_COMPONENTS: js.Any = js.native

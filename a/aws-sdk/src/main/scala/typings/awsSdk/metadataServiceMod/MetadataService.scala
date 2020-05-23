@@ -1,7 +1,7 @@
 package typings.awsSdk.metadataServiceMod
 
-import typings.awsSdk.AnonHeaders
-import typings.awsSdk.AnonTimeoutNumber
+import typings.awsSdk.anon.Headers
+import typings.awsSdk.anon.TimeoutNumber
 import typings.awsSdk.errorMod.AWSError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,14 +17,14 @@ class MetadataService () extends js.Object {
   /**
     * A map of options to pass to the underlying HTTP request.
     */
-  var httpOptions: AnonTimeoutNumber = js.native
+  var httpOptions: TimeoutNumber = js.native
   /**
     * Sends a request to the instance metadata service for a given resource.
     */
   def request(path: String, callback: js.Function2[/* err */ AWSError, /* data */ String, Unit]): Unit = js.native
   def request(
     path: String,
-    options: AnonHeaders,
+    options: Headers,
     callback: js.Function2[/* err */ AWSError, /* data */ String, Unit]
   ): Unit = js.native
 }

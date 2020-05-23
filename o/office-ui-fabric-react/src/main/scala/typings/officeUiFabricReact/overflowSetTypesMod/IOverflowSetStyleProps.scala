@@ -15,7 +15,7 @@ object IOverflowSetStyleProps {
   def apply(className: String = null, vertical: js.UndefOr[Boolean] = js.undefined): IOverflowSetStyleProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOverflowSetStyleProps]
   }
 }

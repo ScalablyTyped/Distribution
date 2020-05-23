@@ -19,7 +19,7 @@ object ContextMenuSettings {
   @scala.inline
   def apply(enable: js.UndefOr[Boolean] = js.undefined, menuItems: ContextMenuSettingsMenuItems = null): ContextMenuSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuSettings]
   }

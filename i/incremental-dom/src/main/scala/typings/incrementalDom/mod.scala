@@ -1,5 +1,6 @@
 package typings.incrementalDom
 
+import typings.incrementalDom.anon.Instantiable
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.Node
@@ -76,6 +77,6 @@ object mod extends js.Object {
     def apply[T](node: Element, fn: js.Function1[/* data */ T, Unit], data: T): Node = js.native
   }
   
-  type NameOrCtorDef = String | AnonInstantiable
+  type NameOrCtorDef = String | Instantiable
 }
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.mesh
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.scene
@@ -247,8 +246,4 @@ trait SceneLayer
   def queryObjectIds(query: QueryProperties, options: SceneLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query, options: SceneLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
 }
-
-@JSGlobal("__esri.SceneLayer")
-@js.native
-object SceneLayer extends TopLevel[SceneLayerConstructor]
 

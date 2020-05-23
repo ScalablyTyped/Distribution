@@ -25,8 +25,8 @@ object CommonOptions {
   ): CommonOptions = {
     val __obj = js.Dynamic.literal()
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragment)) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragment)) __obj.updateDynamic("fragment")(fragment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonOptions]
   }
 }

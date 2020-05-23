@@ -24,14 +24,14 @@ object ReaderLinkedField {
     name: String,
     plural: Boolean,
     selections: js.Array[ReaderSelection],
-    alias: String = null,
-    concreteType: String = null,
-    storageKey: String = null
+    alias: js.UndefOr[Null | String] = js.undefined,
+    concreteType: js.UndefOr[Null | String] = js.undefined,
+    storageKey: js.UndefOr[Null | String] = js.undefined
   ): ReaderLinkedField = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (concreteType != null) __obj.updateDynamic("concreteType")(concreteType.asInstanceOf[js.Any])
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(concreteType)) __obj.updateDynamic("concreteType")(concreteType.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageKey)) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderLinkedField]
   }
 }

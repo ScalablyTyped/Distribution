@@ -14,10 +14,13 @@ trait IBatchDeleteIntentsRequest extends js.Object {
 
 object IBatchDeleteIntentsRequest {
   @scala.inline
-  def apply(intents: js.Array[IIntent] = null, parent: String = null): IBatchDeleteIntentsRequest = {
+  def apply(
+    intents: js.UndefOr[Null | js.Array[IIntent]] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): IBatchDeleteIntentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(intents)) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchDeleteIntentsRequest]
   }
 }

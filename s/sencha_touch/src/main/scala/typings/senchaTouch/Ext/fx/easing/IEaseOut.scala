@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 
 trait IEaseOut extends ILinear {
   /** [Method] Returns the value of exponent
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getExponent: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Sets the value of exponent
-  		* @param exponent Number The new value.
-  		*/
+    * @param exponent Number The new value.
+    */
   var setExponent: js.UndefOr[js.Function1[/* exponent */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -73,7 +73,7 @@ object IEaseOut {
     if (setExponent != null) __obj.updateDynamic("setExponent")(js.Any.fromFunction1(setExponent))
     if (setStartTime != null) __obj.updateDynamic("setStartTime")(js.Any.fromFunction1(setStartTime))
     if (setStartValue != null) __obj.updateDynamic("setStartValue")(js.Any.fromFunction1(setStartValue))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEaseOut]

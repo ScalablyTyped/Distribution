@@ -1,9 +1,9 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
-import typings.winjs.AnonX
+import typings.winjs.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,18 +11,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a menu flyout for displaying commands.
   **/
-@JSGlobal("WinJS.UI.Menu")
 @js.native
-//#region Constructors
-/**
-  * Creates a new Menu object.
-  * @constructor
-  * @param element The DOM element that will host the control.
-  * @param options The set of properties and values to apply to the new Menu.
-  **/
-class Menu () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait Menu extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
@@ -97,22 +87,22 @@ class Menu () extends js.Object {
     * Occurs immediately after the Menu is hidden.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterhide(eventInfo: Event_): Unit = js.native
+  def onafterhide(eventInfo: Event): Unit = js.native
   /**
     * Occurs after the Menu is shown.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onaftershow(eventInfo: Event_): Unit = js.native
+  def onaftershow(eventInfo: Event): Unit = js.native
   /**
     * Occurs before the Menu is hidden.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforehide(eventInfo: Event_): Unit = js.native
+  def onbeforehide(eventInfo: Event): Unit = js.native
   /**
     * Occurs before a hidden Menu is shown.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeshow(eventInfo: Event_): Unit = js.native
+  def onbeforeshow(eventInfo: Event): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param type The event type to unregister. It must be beforeshow, beforehide, aftershow, or afterhide.
@@ -134,7 +124,7 @@ class Menu () extends js.Object {
     * Shows the Menu, if hidden, regardless of other states, top and left aligned at the specified coordinates,
     * @param coordinates Required. The point where the top left corner of the Menu will appear, relative to the top and left edge of the visual viewport.
     **/
-  def showAt(coordinates: AnonX): Unit = js.native
+  def showAt(coordinates: X): Unit = js.native
   /**
     * Shows the Menu, if hidden, regardless of other states, top and left aligned at the location of the mouse event object,
     * @param mouseEventObj Required. The MouseEvent Object specifying where to show the Menu.
@@ -154,15 +144,5 @@ class Menu () extends js.Object {
     **/
   def showOnlyCommands(commands: js.Array[_]): Unit = js.native
   def showOnlyCommands(commands: js.Array[_], immediate: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.Menu")
-@js.native
-object Menu extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

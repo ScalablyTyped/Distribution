@@ -34,14 +34,14 @@ trait MountRendererProps extends js.Object {
 object MountRendererProps {
   @scala.inline
   def apply(
-    attachTo: HTMLElement = null,
+    attachTo: js.UndefOr[Null | HTMLElement] = js.undefined,
     childContextTypes: js.Object = null,
     context: js.Object = null,
     wrappingComponent: ComponentType[_] = null,
     wrappingComponentProps: js.Object = null
   ): MountRendererProps = {
     val __obj = js.Dynamic.literal()
-    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachTo)) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
     if (childContextTypes != null) __obj.updateDynamic("childContextTypes")(childContextTypes.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (wrappingComponent != null) __obj.updateDynamic("wrappingComponent")(wrappingComponent.asInstanceOf[js.Any])

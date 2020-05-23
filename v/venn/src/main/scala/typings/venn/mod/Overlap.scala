@@ -12,9 +12,9 @@ trait Overlap extends js.Object {
 
 object Overlap {
   @scala.inline
-  def apply(sets: js.Array[String], size: Double, weight: Int | Double = null): Overlap = {
+  def apply(sets: js.Array[String], size: Double, weight: js.UndefOr[Double] = js.undefined): Overlap = {
     val __obj = js.Dynamic.literal(sets = sets.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Overlap]
   }
 }

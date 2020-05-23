@@ -1,7 +1,7 @@
 
 # Scala.js typings for diagnostic-channel-publishers
 
-Typings are for version 0.3.3
+Typings are for version 0.3.4
 
 ## Library description:
 A collection of pre-built module patches that enable existing npm modules to publish diagnostic data

@@ -1,7 +1,7 @@
 package typings.emotionTheming
 
 import typings.react.mod.ComponentPropsWithRef
-import typings.react.mod._Global_.JSX.LibraryManagedAttributes
+import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Exclude
 import typings.std.Extract
 import typings.std.Partial

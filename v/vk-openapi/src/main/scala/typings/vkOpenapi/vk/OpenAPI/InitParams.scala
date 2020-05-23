@@ -18,8 +18,8 @@ object InitParams {
     status: js.UndefOr[Boolean] = js.undefined
   ): InitParams = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyWidgets)) __obj.updateDynamic("onlyWidgets")(onlyWidgets.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyWidgets)) __obj.updateDynamic("onlyWidgets")(onlyWidgets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitParams]
   }
 }

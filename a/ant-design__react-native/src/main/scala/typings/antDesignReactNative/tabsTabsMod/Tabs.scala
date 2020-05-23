@@ -2,9 +2,8 @@ package typings.antDesignReactNative.tabsTabsMod
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.antDesignReactNative.AnonAnimated
-import typings.antDesignReactNative.AnonComponent
-import typings.antDesignReactNative.TypeofDefaultTabBar
+import typings.antDesignReactNative.anon.Animated
+import typings.antDesignReactNative.anon.TypeofDefaultTabBar
 import typings.antDesignReactNative.antDesignReactNativeStrings.horizontal
 import typings.antDesignReactNative.antDesignReactNativeStrings.vertical
 import typings.antDesignReactNative.tabsPropsTypeMod.PropsType
@@ -13,7 +12,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeScrollEvent
 import typings.reactNative.mod.NativeSyntheticEvent
@@ -31,7 +30,7 @@ class Tabs protected ()
   /** compatible for different between react and preact in `setState`. */
   var nextCurrentTab: js.Any = js.native
   var prevCurrentTab: Double = js.native
-  var scrollView: AnonComponent = js.native
+  var scrollView: typings.antDesignReactNative.anon.Component = js.native
   var tabCache: NumberDictionary[ReactNode] = js.native
   var viewPager: default | Null = js.native
   @JSName("componentDidMount")
@@ -65,7 +64,7 @@ class Tabs protected ()
     /* allPrefix */ js.UndefOr[String], 
     StringDictionary[ReactNode]
   ] = js.native
-  def getTabBarBaseProps(): AnonAnimated = js.native
+  def getTabBarBaseProps(): Animated = js.native
   def getTabIndex(props: PropsType): Double = js.native
   def goToTab(index: Double): Boolean = js.native
   def goToTab(index: Double, force: Boolean): Boolean = js.native

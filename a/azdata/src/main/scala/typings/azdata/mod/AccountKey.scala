@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait AccountKey extends js.Object {
   /**
-  		 * Identifier for the account, unique to the provider
-  		 */
+    * Identifier for the account, unique to the provider
+    */
   var accountId: String
   /**
-  		 * Any arguments that identify an instantiation of the provider
-  		 */
+    * Any arguments that identify an instantiation of the provider
+    */
   var providerArgs: js.UndefOr[js.Any] = js.undefined
   /**
-  		 * Identifier of the provider
-  		 */
+    * Identifier of the provider
+    */
   var providerId: String
 }
 

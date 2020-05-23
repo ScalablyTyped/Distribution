@@ -45,15 +45,15 @@ object InputFieldOptions {
     autoCompleteHint: js.UndefOr[Boolean] = js.undefined,
     autoCompleteMenu: Boolean | Autocompletion = null,
     cancelable: js.UndefOr[Boolean] = js.undefined,
-    cursorPosition: Int | Double = null,
+    cursorPosition: js.UndefOr[Double] = js.undefined,
     default: String = null,
     echo: js.UndefOr[Boolean] = js.undefined,
     echoChar: String | `true` = null,
     hintStyle: CTerminal = null,
     history: js.Array[String] = null,
     keyBindings: StringDictionary[String] = null,
-    maxLength: Int | Double = null,
-    minLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
+    minLength: js.UndefOr[Double] = js.undefined,
     style: CTerminal = null,
     tokenHook: (/* token */ String, /* isEndOfInput */ Boolean, /* previousTokens */ js.Array[String], /* term */ Terminal, /* config */ HookConfig) => String | CTerminal | Null | Unit = null,
     tokenRegExp: RegExp = null,
@@ -61,18 +61,18 @@ object InputFieldOptions {
   ): InputFieldOptions = {
     val __obj = js.Dynamic.literal()
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCompleteHint)) __obj.updateDynamic("autoCompleteHint")(autoCompleteHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCompleteHint)) __obj.updateDynamic("autoCompleteHint")(autoCompleteHint.get.asInstanceOf[js.Any])
     if (autoCompleteMenu != null) __obj.updateDynamic("autoCompleteMenu")(autoCompleteMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (cursorPosition != null) __obj.updateDynamic("cursorPosition")(cursorPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorPosition)) __obj.updateDynamic("cursorPosition")(cursorPosition.get.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(echo)) __obj.updateDynamic("echo")(echo.asInstanceOf[js.Any])
+    if (!js.isUndefined(echo)) __obj.updateDynamic("echo")(echo.get.asInstanceOf[js.Any])
     if (echoChar != null) __obj.updateDynamic("echoChar")(echoChar.asInstanceOf[js.Any])
     if (hintStyle != null) __obj.updateDynamic("hintStyle")(hintStyle.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (keyBindings != null) __obj.updateDynamic("keyBindings")(keyBindings.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tokenHook != null) __obj.updateDynamic("tokenHook")(js.Any.fromFunction5(tokenHook))
     if (tokenRegExp != null) __obj.updateDynamic("tokenRegExp")(tokenRegExp.asInstanceOf[js.Any])

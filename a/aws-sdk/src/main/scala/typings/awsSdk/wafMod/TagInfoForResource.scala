@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TagInfoForResource extends js.Object {
+  /**
+    * 
+    */
   var ResourceARN: js.UndefOr[ResourceArn] = js.native
+  /**
+    * 
+    */
   var TagList: js.UndefOr[typings.awsSdk.wafMod.TagList] = js.native
 }
 

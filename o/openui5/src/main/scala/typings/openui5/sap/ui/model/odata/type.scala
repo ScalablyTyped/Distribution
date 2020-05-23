@@ -9,16 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object `type` extends js.Object {
   @js.native
-  class Boolean protected () extends ODataType {
-    /**
-      * Constructor for an OData primitive type <code>Edm.Boolean</code>.
-      * @param oFormatOptions format options as defined in the interface of {@link sap.ui.model.SimpleType};
-      * this  type ignores them since it does not support any format options
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Boolean extends ODataType {
     /**
       * Formats the given boolean value to the given target type.
       * @param bValue the value to be formatted
@@ -47,15 +38,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Byte protected () extends Int {
-    /**
-      * Constructor for a primitive type <code>Edm.Byte</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.NumberFormat}
-      * @param oConstraints constraints; {@link sap.ui.model.odata.type.Int#validateValue validateValue}
-      * throws an  error if any constraint is violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Byte extends Int {
     /**
       * Returns the type's supported range as object with properties <code>minimum</code>
       * and<code>maximum</code>.
@@ -65,15 +48,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Date protected () extends ODataType {
-    /**
-      * Constructor for an OData primitive type <code>Edm.Date</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.DateFormat}
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Date extends ODataType {
     /**
       * Formats the given value to the given target type.
       * @param sValue the value to be formatted
@@ -99,28 +74,10 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class DateTime protected () extends DateTimeBase {
-    /**
-      * Constructor for a primitive type <code>Edm.DateTime</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.DateFormat}
-      * @param oConstraints constraints; {@link sap.ui.model.odata.type.DateTimeBase#validateValue
-      * validateValue}  throws an error if any constraint is violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
-  }
+  trait DateTime extends DateTimeBase
   
   @js.native
-  abstract class DateTimeBase protected () extends ODataType {
-    /**
-      * Base constructor for the primitive types <code>Edm.DateTime</code>
-      * and<code>Edm.DateTimeOffset</code>.
-      * @param oFormatOptions Type-specific format options; see subtypes
-      * @param oConstraints Constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait DateTimeBase extends ODataType {
     /**
       * Formats the given value to the given target type.
       * @since 1.27.0
@@ -151,31 +108,12 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class DateTimeOffset protected () extends DateTimeBase {
-    /**
-      * Constructor for a primitive type <code>Edm.DateTimeOffset</code>.
-      * @param oFormatOptions Format options as defined in {@link sap.ui.core.format.DateFormat}
-      * @param oConstraints Constraints; {@link sap.ui.model.odata.type.DateTimeBase#validateValue
-      * validateValue}  throws an error if any constraint is violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait DateTimeOffset extends DateTimeBase {
     def formatValue(vValue: java.lang.String, sTargetType: java.lang.String): Date | java.lang.String = js.native
   }
   
   @js.native
-  class Decimal protected () extends ODataType {
-    /**
-      * Constructor for a primitive type <code>Edm.Decimal</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.NumberFormat}. In
-      * contrast to  NumberFormat <code>groupingEnabled</code> defaults to <code>true</code>.  Note that
-      * <code>maxFractionDigits</code> and <code>minFractionDigits</code> are set to  the value of the
-      * constraint <code>scale</code> unless it is "variable". They can however  be overwritten.
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Decimal extends ODataType {
     /**
       * Formats the given value to the given target type. When formatting to "string" the type'sconstraint
       * <code>scale</code> is taken into account.
@@ -205,16 +143,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Double protected () extends ODataType {
-    /**
-      * Constructor for a primitive type <code>Edm.Double</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.NumberFormat}. In
-      * contrast to  NumberFormat <code>groupingEnabled</code> defaults to <code>true</code>.
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Double extends ODataType {
     def formatValue(vValue: java.lang.String, sTargetType: java.lang.String): scala.Double | java.lang.String = js.native
     /**
       * Formats the given value to the given target type. When formatting to "string", very largeor very
@@ -248,16 +177,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Guid protected () extends ODataType {
-    /**
-      * Constructor for an OData primitive type <code>Edm.Guid</code>.
-      * @param oFormatOptions format options as defined in the interface of {@link sap.ui.model.SimpleType};
-      * this  type ignores them since it does not support any format options
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Guid extends ODataType {
     /**
       * Formats the given value to the given target type.
       * @param sValue the value to be formatted
@@ -283,15 +203,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Int protected () extends ODataType {
-    /**
-      * Constructor for a new <code>Int</code>.
-      * @param oFormatOptions type-specific format options; see subtypes
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Int extends ODataType {
     /**
       * Formats the given value to the given target type.When formatting to <code>string</code> the format
       * options are used.
@@ -321,16 +233,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Int16 protected () extends Int {
-    /**
-      * Constructor for a primitive type <code>Edm.Int16</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.NumberFormat}. In
-      * contrast to  NumberFormat <code>groupingEnabled</code> defaults to <code>true</code>.
-      * @param oConstraints constraints; {@link sap.ui.model.odata.type.Int#validateValue validateValue}
-      * throws an  error if any constraint is violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Int16 extends Int {
     /**
       * Returns the type's supported range as object with properties <code>minimum</code>
       * and<code>maximum</code>.
@@ -340,16 +243,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Int32 protected () extends Int {
-    /**
-      * Constructor for a primitive type <code>Edm.Int32</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.NumberFormat}. In
-      * contrast to  NumberFormat <code>groupingEnabled</code> defaults to <code>true</code>.
-      * @param oConstraints constraints; {@link sap.ui.model.odata.type.Int#validateValue validateValue}
-      * throws an  error if any constraint is violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Int32 extends Int {
     /**
       * Returns the type's supported range as object with properties <code>minimum</code>
       * and<code>maximum</code>.
@@ -359,15 +253,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Int64 protected () extends ODataType {
-    /**
-      * Constructor for a primitive type <code>Edm.Int64</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.NumberFormat}. In
-      * contrast to  NumberFormat <code>groupingEnabled</code> defaults to <code>true</code>.
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Int64 extends ODataType {
     /**
       * Formats the given value to the given target type.
       * @param sValue the value to be formatted, which is represented as a string in the model
@@ -396,26 +282,10 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class ODataType protected () extends SimpleType {
-    /**
-      * Constructor for a new <code>ODataType</code>.
-      * @param oFormatOptions type-specific format options; see subtypes
-      * @param oConstraints type-specific constraints (e.g. <code>oConstraints.nullable</code>), see
-      * subtypes
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
-  }
+  trait ODataType extends SimpleType
   
   @js.native
-  class Raw protected () extends ODataType {
-    /**
-      * Constructor for a placeholder for all unsupported OData primitive types.
-      * @param oFormatOptions Must be <code>undefined</code>
-      * @param oConstraints Must be <code>undefined</code>
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Raw extends ODataType {
     /**
       * Method not supported
       * @since 1.37.0
@@ -429,15 +299,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class SByte protected () extends Int {
-    /**
-      * Constructor for a primitive type <code>Edm.SByte</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.NumberFormat}
-      * @param oConstraints constraints; {@link sap.ui.model.odata.type.Int#validateValue validateValue}
-      * throws an  error if any constraint is violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait SByte extends Int {
     /**
       * Returns the type's supported range as object with properties <code>minimum</code>
       * and<code>maximum</code>.
@@ -447,16 +309,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Single protected () extends ODataType {
-    /**
-      * Constructor for a primitive type <code>Edm.Single</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.NumberFormat}. In
-      * contrast to  NumberFormat <code>groupingEnabled</code> defaults to <code>true</code>.
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Single extends ODataType {
     /**
       * Formats the given value to the given target type.
       * @param vValue the value to be formatted, which is represented as a number in the model
@@ -489,16 +342,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class String protected () extends ODataType {
-    /**
-      * Constructor for an OData primitive type <code>Edm.String</code>.
-      * @param oFormatOptions format options as defined in the interface of {@link sap.ui.model.SimpleType};
-      * this  type ignores them since it does not support any format options
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait String extends ODataType {
     /**
       * Formats the given value to the given target type.If <code>isDigitSequence</code> constraint of this
       * type is set to <code>true</code> and thetarget type is any or string and the given value contains
@@ -531,15 +375,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class Time protected () extends ODataType {
-    /**
-      * Constructor for an OData primitive type <code>Edm.Time</code>.
-      * @param oFormatOptions format options as defined in {@link sap.ui.core.format.DateFormat}
-      * @param oConstraints constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait Time extends ODataType {
     /**
       * Parses the given value, which is expected to be of the given type, to a time object.
       * @param sValue the value to be parsed, maps <code>""</code> to <code>null</code>
@@ -551,15 +387,7 @@ object `type` extends js.Object {
   }
   
   @js.native
-  class TimeOfDay protected () extends ODataType {
-    /**
-      * Constructor for an OData primitive type <code>Edm.TimeOfDay</code>.
-      * @param oFormatOptions Format options as defined in {@link sap.ui.core.format.DateFormat}
-      * @param oConstraints Constraints; {@link #validateValue validateValue} throws an error if any
-      * constraint is  violated
-      */
-    def this(oFormatOptions: js.Any) = this()
-    def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+  trait TimeOfDay extends ODataType {
     /**
       * Formats the given value to the given target type.
       * @since 1.37.0

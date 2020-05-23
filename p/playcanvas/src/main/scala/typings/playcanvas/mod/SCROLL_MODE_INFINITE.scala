@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.SCROLL_MODE_INFINITE
-  * @description Content can scroll forever.
+  * Content can scroll forever.
   */
 @JSImport("playcanvas", "SCROLL_MODE_INFINITE")
 @js.native

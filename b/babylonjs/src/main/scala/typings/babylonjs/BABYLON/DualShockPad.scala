@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.DualShockPad")
 @js.native
-class DualShockPad protected () extends Gamepad {
-  /**
-    * Creates a new DualShock gamepad object
-    * @param id defines the id of this gamepad
-    * @param index defines its index
-    * @param gamepad defines the internal HTML gamepad object
-    */
-  def this(id: String, index: Double, gamepad: js.Any) = this()
+trait DualShockPad extends Gamepad {
   var _buttonCircle: js.Any = js.native
   var _buttonCross: js.Any = js.native
   var _buttonL1: js.Any = js.native

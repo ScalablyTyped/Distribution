@@ -1,6 +1,6 @@
 package typings.prosemirrorDevTools.mod
 
-import typings.prosemirrorDevTools.TypeofEditorState
+import typings.prosemirrorDevTools.anon.TypeofEditorState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

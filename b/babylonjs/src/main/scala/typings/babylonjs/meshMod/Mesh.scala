@@ -1,13 +1,13 @@
 package typings.babylonjs.meshMod
 
-import typings.babylonjs.AnonData
-import typings.babylonjs.AnonFaceColors
-import typings.babylonjs.AnonH
-import typings.babylonjs.AnonMax
-import typings.babylonjs.AnonReport
-import typings.babylonjs.AnonUpdatable
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.animatableInterfaceMod.IAnimatable
+import typings.babylonjs.anon.Data
+import typings.babylonjs.anon.FaceColors
+import typings.babylonjs.anon.H
+import typings.babylonjs.anon.Max
+import typings.babylonjs.anon.Report
+import typings.babylonjs.anon.Updatable
 import typings.babylonjs.boundingSphereMod.BoundingSphere
 import typings.babylonjs.bufferMod.VertexBuffer
 import typings.babylonjs.cameraMod.Camera
@@ -96,7 +96,7 @@ class Mesh protected () extends AbstractMesh {
   var _shouldGenerateFlatShading: Boolean = js.native
   var _sortLODLevels: js.Any = js.native
   /** @hidden */
-  var _userInstancedBuffersStorage: AnonData = js.native
+  var _userInstancedBuffersStorage: Data = js.native
   /**
     * Gets the delay loading state of the mesh (when delay loading is turned on)
     * @see http://doc.babylonjs.com/how_to/using_the_incremental_loading_system
@@ -697,7 +697,7 @@ class Mesh protected () extends AbstractMesh {
     * the user know there was an issue with importing the mesh
     * @returns a validation object with skinned, valid and report string
     */
-  def validateSkinning(): AnonReport = js.native
+  def validateSkinning(): Report = js.native
   /** Gets the array buffer used to store the instanced buffer used for instances' world matrices */
   def worldMatrixInstancedBuffer: Float32Array = js.native
 }
@@ -792,7 +792,7 @@ object Mesh extends js.Object {
     * @param meshesOrMinMaxVector could be an array of meshes or a `{min:` Vector3`, max:` Vector3`}` object
     * @returns a vector3
     */
-  def Center(meshesOrMinMaxVector: AnonMax): Vector3 = js.native
+  def Center(meshesOrMinMaxVector: Max): Vector3 = js.native
   /**
     * Creates a box mesh. Please consider using the same method from the MeshBuilder class instead
     * @param name defines the name of the mesh to create
@@ -1047,7 +1047,7 @@ object Mesh extends js.Object {
     * @returns a new Mesh
     * @see http://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
-  def CreateIcoSphere(name: String, options: AnonUpdatable, scene: Scene): Mesh = js.native
+  def CreateIcoSphere(name: String, options: Updatable, scene: Scene): Mesh = js.native
   /**
     * Creates lathe mesh.
     * The lathe is a shape with a symetry axis : a 2D model shape is rotated around this axis to design the lathe.
@@ -1172,7 +1172,7 @@ object Mesh extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new Mesh
     */
-  def CreatePolyhedron(name: String, options: AnonFaceColors, scene: Scene): Mesh = js.native
+  def CreatePolyhedron(name: String, options: FaceColors, scene: Scene): Mesh = js.native
   /**
     * Creates a ribbon mesh. Please consider using the same method from the MeshBuilder class instead
     * @see http://doc.babylonjs.com/how_to/parametric_shapes
@@ -1273,8 +1273,8 @@ object Mesh extends js.Object {
     zmin: Double,
     xmax: Double,
     zmax: Double,
-    subdivisions: AnonH,
-    precision: AnonH,
+    subdivisions: H,
+    precision: H,
     scene: Scene
   ): Mesh = js.native
   def CreateTiledGround(
@@ -1283,8 +1283,8 @@ object Mesh extends js.Object {
     zmin: Double,
     xmax: Double,
     zmax: Double,
-    subdivisions: AnonH,
-    precision: AnonH,
+    subdivisions: H,
+    precision: H,
     scene: Scene,
     updatable: Boolean
   ): Mesh = js.native
@@ -1653,7 +1653,7 @@ object Mesh extends js.Object {
     * @param meshes defines the list of meshes to scan
     * @returns an object `{min:` Vector3`, max:` Vector3`}`
     */
-  def MinMax(meshes: js.Array[AbstractMesh]): AnonMax = js.native
+  def MinMax(meshes: js.Array[AbstractMesh]): Max = js.native
   /**
     * Returns a new Mesh object parsed from the source provided.
     * @param parsedMesh is the source

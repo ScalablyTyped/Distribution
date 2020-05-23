@@ -8,7 +8,7 @@ package object selectableMod {
   type ISelectedRegionTransform = js.Function3[
     /* region */ typings.blueprintjsTable.esmRegionsMod.IRegion, 
     /* event */ typings.std.MouseEvent | typings.std.KeyboardEvent, 
-    /* coords */ js.UndefOr[typings.blueprintjsTable.draggableMod.ICoordinateData], 
+    /* coords */ js.UndefOr[typings.blueprintjsTable.dragTypesMod.ICoordinateData], 
     typings.blueprintjsTable.esmRegionsMod.IRegion
   ]
 }

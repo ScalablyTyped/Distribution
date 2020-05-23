@@ -24,7 +24,7 @@ object FormItemLayout {
     val __obj = js.Dynamic.literal()
     if (componentHeight != null) __obj.updateDynamic("componentHeight")(componentHeight.asInstanceOf[js.Any])
     if (componentWidth != null) __obj.updateDynamic("componentWidth")(componentWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (titleFontSize != null) __obj.updateDynamic("titleFontSize")(titleFontSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormItemLayout]

@@ -1,6 +1,6 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonKey
+import typings.postmanCollection.anon.Key
 import typings.postmanCollection.postmanCollectionStrings.apikey
 import typings.postmanCollection.postmanCollectionStrings.awsv4
 import typings.postmanCollection.postmanCollectionStrings.basic
@@ -17,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.RequestAuthDefinition because var conflicts: description, disabled, id, name. Inlined `type`, oauth2, hawk, basic, oauth1, apikey, digest, bearer, awsv4, edgegrid, ntlm */ @JSImport("postman-collection", "RequestAuth")
@@ -46,14 +46,14 @@ class RequestAuth protected () extends Property[RequestAuthDefinition] {
   def clear(`type`: String): Unit = js.native
   def current(): js.Any = js.native
   def parameters(): VariableList = js.native
-  def update(options: js.Array[AnonKey]): Unit = js.native
-  def update(options: js.Array[AnonKey], `type`: String): Unit = js.native
-  def update(options: AnonKey): Unit = js.native
-  def update(options: AnonKey, `type`: String): Unit = js.native
+  def update(options: js.Array[Key]): Unit = js.native
+  def update(options: js.Array[Key], `type`: String): Unit = js.native
+  def update(options: Key): Unit = js.native
+  def update(options: Key, `type`: String): Unit = js.native
   def update(options: VariableList): Unit = js.native
   def update(options: VariableList, `type`: String): Unit = js.native
-  def use(`type`: String, options: js.Array[AnonKey]): Unit = js.native
-  def use(`type`: String, options: AnonKey): Unit = js.native
+  def use(`type`: String, options: js.Array[Key]): Unit = js.native
+  def use(`type`: String, options: Key): Unit = js.native
   def use(`type`: String, options: VariableList): Unit = js.native
 }
 

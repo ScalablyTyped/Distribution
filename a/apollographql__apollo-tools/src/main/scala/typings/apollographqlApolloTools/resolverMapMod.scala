@@ -1,6 +1,9 @@
 package typings.apollographqlApolloTools
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.apollographqlApolloTools.anon.Requires
+import typings.apollographqlApolloTools.anon.Resolve
+import typings.apollographqlApolloTools.anon.Subscribe
 import typings.graphql.definitionMod.GraphQLFieldResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +14,7 @@ import scala.scalajs.js.annotation._
 object resolverMapMod extends js.Object {
   type GraphQLResolverMap[TContext] = StringDictionary[
     StringDictionary[
-      (GraphQLFieldResolver[js.Any, TContext, StringDictionary[js.Any]]) | AnonRequires[TContext] | AnonResolve[TContext] | AnonSubscribe[TContext]
+      (GraphQLFieldResolver[js.Any, TContext, StringDictionary[js.Any]]) | Requires[TContext] | Resolve[TContext] | Subscribe[TContext]
     ]
   ]
 }

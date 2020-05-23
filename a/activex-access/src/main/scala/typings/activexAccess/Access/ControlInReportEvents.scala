@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access._ControlInReportEvents")
 @js.native
-class ControlInReportEvents protected () extends js.Object {
+trait ControlInReportEvents extends js.Object {
   @JSName("Access._ControlInReportEvents_typekey")
   var AccessDot_ControlInReportEvents_typekey: ControlInReportEvents = js.native
   val Application: typings.activexAccess.Access.Application = js.native

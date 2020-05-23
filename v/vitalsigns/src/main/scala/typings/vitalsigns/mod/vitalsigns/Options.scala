@@ -26,13 +26,13 @@ object Options {
   @scala.inline
   def apply(
     autoCheck: Double | Boolean = null,
-    httpHealthy: Int | Double = null,
-    httpUnhealthy: Int | Double = null
+    httpHealthy: js.UndefOr[Double] = js.undefined,
+    httpUnhealthy: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (autoCheck != null) __obj.updateDynamic("autoCheck")(autoCheck.asInstanceOf[js.Any])
-    if (httpHealthy != null) __obj.updateDynamic("httpHealthy")(httpHealthy.asInstanceOf[js.Any])
-    if (httpUnhealthy != null) __obj.updateDynamic("httpUnhealthy")(httpUnhealthy.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpHealthy)) __obj.updateDynamic("httpHealthy")(httpHealthy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpUnhealthy)) __obj.updateDynamic("httpUnhealthy")(httpUnhealthy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

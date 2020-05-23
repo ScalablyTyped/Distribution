@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxRoundPanel control.
   */
-@JSGlobal("ASPxClientRoundPanel")
 @js.native
-class ASPxClientRoundPanel () extends ASPxClientPanelBase {
+trait ASPxClientRoundPanel extends ASPxClientPanelBase {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -55,16 +54,5 @@ class ASPxClientRoundPanel () extends ASPxClientPanelBase {
     * @param text A string value that specifies the panel header's text.
     */
   def SetHeaderText(text: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientRoundPanel")
-@js.native
-object ASPxClientRoundPanel extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientRoundPanel type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientRoundPanel = js.native
 }
 

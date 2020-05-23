@@ -16,8 +16,8 @@ object shrinkOptions {
     skipBogus: js.UndefOr[Boolean] = js.undefined
   ): shrinkOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(shrinkOnBlockBoundary)) __obj.updateDynamic("shrinkOnBlockBoundary")(shrinkOnBlockBoundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipBogus)) __obj.updateDynamic("skipBogus")(skipBogus.asInstanceOf[js.Any])
+    if (!js.isUndefined(shrinkOnBlockBoundary)) __obj.updateDynamic("shrinkOnBlockBoundary")(shrinkOnBlockBoundary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipBogus)) __obj.updateDynamic("skipBogus")(skipBogus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[shrinkOptions]
   }
 }

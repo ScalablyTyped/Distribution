@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,4 @@ trait HTMLFormControlsCollection extends HTMLCollectionBase {
     */
   def namedItem(name: java.lang.String): RadioNodeList | Element | Null = js.native
 }
-
-@JSGlobal("HTMLFormControlsCollection")
-@js.native
-object HTMLFormControlsCollection extends Instantiable0[HTMLFormControlsCollection]
 

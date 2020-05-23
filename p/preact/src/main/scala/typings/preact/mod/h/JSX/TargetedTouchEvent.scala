@@ -2,7 +2,7 @@ package typings.preact.mod.h.JSX
 
 import typings.std.EventTarget
 import typings.std.TouchList
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +45,7 @@ trait TargetedTouchEvent[Target /* <: EventTarget */] extends js.Object {
   var timeStamp: Double = js.native
   var touches: TouchList = js.native
   var `type`: String = js.native
-  var view: js.UndefOr[Window_] = js.native
+  var view: js.UndefOr[Window] = js.native
   var which: Double = js.native
   def composedPath(): js.Array[EventTarget] = js.native
   def initEvent(`type`: String): Unit = js.native

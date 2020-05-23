@@ -20,7 +20,7 @@ trait PoserConfig[V]
 object PoserConfig {
   @scala.inline
   def apply[V](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     ancestorValues: AncestorValueList[V] = null,
     initialPose: String | js.Array[String] = null,
     label: String = null,

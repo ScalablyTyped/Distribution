@@ -73,7 +73,7 @@ object ImageServiceIdentifyParametersProperties {
   @scala.inline
   def apply(
     geometry: PointProperties | PolygonProperties = null,
-    maxItemCount: Int | Double = null,
+    maxItemCount: js.UndefOr[Double] = js.undefined,
     mosaicRule: MosaicRuleProperties = null,
     pixelSize: PointProperties = null,
     renderingRule: RasterFunctionProperties = null,
@@ -85,14 +85,14 @@ object ImageServiceIdentifyParametersProperties {
   ): ImageServiceIdentifyParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (maxItemCount != null) __obj.updateDynamic("maxItemCount")(maxItemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxItemCount)) __obj.updateDynamic("maxItemCount")(maxItemCount.get.asInstanceOf[js.Any])
     if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule.asInstanceOf[js.Any])
     if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize.asInstanceOf[js.Any])
     if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule.asInstanceOf[js.Any])
     if (renderingRules != null) __obj.updateDynamic("renderingRules")(renderingRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnCatalogItems)) __obj.updateDynamic("returnCatalogItems")(returnCatalogItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPixelValues)) __obj.updateDynamic("returnPixelValues")(returnPixelValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnCatalogItems)) __obj.updateDynamic("returnCatalogItems")(returnCatalogItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPixelValues)) __obj.updateDynamic("returnPixelValues")(returnPixelValues.get.asInstanceOf[js.Any])
     if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageServiceIdentifyParametersProperties]
   }

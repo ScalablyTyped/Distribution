@@ -1,5 +1,10 @@
 package typings.geolib
 
+import typings.geolib.anon.Altitude
+import typings.geolib.anon.AltitudeLatitude
+import typings.geolib.anon.Latitude
+import typings.geolib.anon.LatitudeLongitude
+import typings.geolib.anon.Longitude
 import typings.geolib.geolibBooleans.`false`
 import typings.geolib.geolibStrings.E
 import typings.geolib.geolibStrings.ENE
@@ -29,8 +34,8 @@ import scala.scalajs.js.annotation._
 @JSImport("geolib", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def computeDestinationPoint(start: GeolibInputCoordinates, distance: Double, bearing: Double): AnonLatitude = js.native
-  def computeDestinationPoint(start: GeolibInputCoordinates, distance: Double, bearing: Double, radius: Double): AnonLatitude = js.native
+  def computeDestinationPoint(start: GeolibInputCoordinates, distance: Double, bearing: Double): Latitude = js.native
+  def computeDestinationPoint(start: GeolibInputCoordinates, distance: Double, bearing: Double, radius: Double): Latitude = js.native
   def convertArea(squareMeters: Double): Double = js.native
   def convertArea(squareMeters: Double, targetUnit: String): Double = js.native
   def convertDistance(meters: Double): Double = js.native
@@ -41,14 +46,14 @@ object mod extends js.Object {
   def findNearest(point: GeolibInputCoordinates, coords: js.Array[GeolibInputCoordinates]): GeolibInputCoordinates = js.native
   def getAreaOfPolygon(points: js.Array[GeolibInputCoordinates]): Double = js.native
   def getBounds(points: js.Array[_]): js.Any = js.native
-  def getBoundsOfDistance(point: GeolibInputCoordinates, distance: Double): js.Array[AnonLatitude] = js.native
-  def getCenter(points: js.Array[GeolibInputCoordinates]): `false` | AnonLongitude = js.native
-  def getCenterOfBounds(coords: js.Array[GeolibInputCoordinates]): AnonLatitude = js.native
+  def getBoundsOfDistance(point: GeolibInputCoordinates, distance: Double): js.Array[Latitude] = js.native
+  def getCenter(points: js.Array[GeolibInputCoordinates]): `false` | Longitude = js.native
+  def getCenterOfBounds(coords: js.Array[GeolibInputCoordinates]): Latitude = js.native
   def getCompassDirection(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = js.native
   def getCompassDirection(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates, bearingFn: BearingFunction): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = js.native
   def getCoordinateKey[Keys](point: GeolibInputCoordinates, keysToLookup: js.Array[Keys]): js.UndefOr[Keys] = js.native
-  def getCoordinateKeys(point: GeolibInputCoordinates): AnonAltitudeLatitude | AnonLatitudeLongitude = js.native
-  def getCoordinateKeys(point: GeolibInputCoordinates, keysToLookup: AnonAltitude): AnonAltitudeLatitude | AnonLatitudeLongitude = js.native
+  def getCoordinateKeys(point: GeolibInputCoordinates): AltitudeLatitude | LatitudeLongitude = js.native
+  def getCoordinateKeys(point: GeolibInputCoordinates, keysToLookup: Altitude): AltitudeLatitude | LatitudeLongitude = js.native
   def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates): Double = js.native
   def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates, accuracy: Double): Double = js.native
   def getDistanceFromLine(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Double = js.native

@@ -44,12 +44,12 @@ object ActionConfigurationProperty {
     required: Boolean,
     secret: Boolean,
     description: Description = null,
-    queryable: js.UndefOr[scala.Boolean] = js.undefined,
+    queryable: js.UndefOr[Boolean] = js.undefined,
     `type`: ActionConfigurationPropertyType = null
   ): ActionConfigurationProperty = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryable)) __obj.updateDynamic("queryable")(queryable.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryable)) __obj.updateDynamic("queryable")(queryable.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionConfigurationProperty]
   }

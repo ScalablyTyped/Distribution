@@ -18,9 +18,9 @@ trait RecurringCharge extends js.Object {
 
 object RecurringCharge {
   @scala.inline
-  def apply(RecurringChargeAmount: Int | scala.Double = null, RecurringChargeFrequency: String = null): RecurringCharge = {
+  def apply(RecurringChargeAmount: js.UndefOr[Double] = js.undefined, RecurringChargeFrequency: String = null): RecurringCharge = {
     val __obj = js.Dynamic.literal()
-    if (RecurringChargeAmount != null) __obj.updateDynamic("RecurringChargeAmount")(RecurringChargeAmount.asInstanceOf[js.Any])
+    if (!js.isUndefined(RecurringChargeAmount)) __obj.updateDynamic("RecurringChargeAmount")(RecurringChargeAmount.get.asInstanceOf[js.Any])
     if (RecurringChargeFrequency != null) __obj.updateDynamic("RecurringChargeFrequency")(RecurringChargeFrequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurringCharge]
   }

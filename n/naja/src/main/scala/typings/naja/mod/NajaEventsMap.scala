@@ -1,6 +1,6 @@
 package typings.naja.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait NajaEventsMap extends js.Object {
   var error: NajaEventListener[ErrorEvent[_]]
   var init: NajaEventListener[InitEvent]
   var interaction: NajaEventListener[InteractionEvent]
-  var load: NajaEventListener[Event_]
+  var load: NajaEventListener[Event]
   var start: NajaEventListener[StartEvent]
   var success: NajaEventListener[SuccessEvent[_]]
 }
@@ -26,7 +26,7 @@ object NajaEventsMap {
     error: NajaEventListener[ErrorEvent[_]],
     init: NajaEventListener[InitEvent],
     interaction: NajaEventListener[InteractionEvent],
-    load: NajaEventListener[Event_],
+    load: NajaEventListener[Event],
     start: NajaEventListener[StartEvent],
     success: NajaEventListener[SuccessEvent[_]]
   ): NajaEventsMap = {

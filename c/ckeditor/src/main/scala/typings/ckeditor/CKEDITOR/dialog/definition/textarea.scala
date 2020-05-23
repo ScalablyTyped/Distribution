@@ -21,7 +21,7 @@ object textarea {
     align: String = null,
     bidi: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     commit: /* widget */ widget => Unit = null,
     controlStyle: String = null,
     default: String = null,
@@ -34,7 +34,7 @@ object textarea {
     onLoad: /* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement => Unit = null,
     onShow: /* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement => Unit = null,
     requiredContent: String | StringDictionary[js.Any] | style = null,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     setup: /* widget */ widget => Unit = null,
     style: String = null,
     title: String = null,
@@ -44,9 +44,9 @@ object textarea {
   ): textarea = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(bidi)) __obj.updateDynamic("bidi")(bidi.asInstanceOf[js.Any])
+    if (!js.isUndefined(bidi)) __obj.updateDynamic("bidi")(bidi.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (commit != null) __obj.updateDynamic("commit")(js.Any.fromFunction1(commit))
     if (controlStyle != null) __obj.updateDynamic("controlStyle")(controlStyle.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object textarea {
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (requiredContent != null) __obj.updateDynamic("requiredContent")(requiredContent.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

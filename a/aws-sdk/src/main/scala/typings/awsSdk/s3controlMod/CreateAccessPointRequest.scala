@@ -20,7 +20,7 @@ trait CreateAccessPointRequest extends js.Object {
   var Name: AccessPointName = js.native
   var PublicAccessBlockConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.PublicAccessBlockConfiguration] = js.native
   /**
-    * If you include this field, Amazon S3 restricts access to this access point to requests from the specified Virtual Private Cloud (VPC).
+    * If you include this field, Amazon S3 restricts access to this access point to requests from the specified virtual private cloud (VPC).
     */
   var VpcConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.VpcConfiguration] = js.native
 }

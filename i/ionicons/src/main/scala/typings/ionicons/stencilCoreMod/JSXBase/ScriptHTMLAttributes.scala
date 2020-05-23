@@ -8,7 +8,7 @@ import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
 import typings.std.DragEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -92,8 +92,8 @@ object ScriptHTMLAttributes {
     onAuxClick: /* event */ MouseEvent => Unit = null,
     onBlur: /* event */ FocusEvent => Unit = null,
     onBlurCapture: /* event */ FocusEvent => Unit = null,
-    onChange: /* event */ Event_ => Unit = null,
-    onChangeCapture: /* event */ Event_ => Unit = null,
+    onChange: /* event */ Event => Unit = null,
+    onChangeCapture: /* event */ Event => Unit = null,
     onClick: /* event */ MouseEvent => Unit = null,
     onClickCapture: /* event */ MouseEvent => Unit = null,
     onCompositionEnd: /* event */ CompositionEvent => Unit = null,
@@ -126,24 +126,24 @@ object ScriptHTMLAttributes {
     onDragStartCapture: /* event */ DragEvent => Unit = null,
     onDrop: /* event */ DragEvent => Unit = null,
     onDropCapture: /* event */ DragEvent => Unit = null,
-    onError: /* event */ Event_ => Unit = null,
-    onErrorCapture: /* event */ Event_ => Unit = null,
+    onError: /* event */ Event => Unit = null,
+    onErrorCapture: /* event */ Event => Unit = null,
     onFocus: /* event */ FocusEvent => Unit = null,
     onFocusCapture: /* event */ FocusEvent => Unit = null,
     onGotPointerCapture: /* event */ PointerEvent => Unit = null,
     onGotPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
-    onInput: /* event */ Event_ => Unit = null,
-    onInputCapture: /* event */ Event_ => Unit = null,
-    onInvalid: /* event */ Event_ => Unit = null,
-    onInvalidCapture: /* event */ Event_ => Unit = null,
+    onInput: /* event */ Event => Unit = null,
+    onInputCapture: /* event */ Event => Unit = null,
+    onInvalid: /* event */ Event => Unit = null,
+    onInvalidCapture: /* event */ Event => Unit = null,
     onKeyDown: /* event */ KeyboardEvent => Unit = null,
     onKeyDownCapture: /* event */ KeyboardEvent => Unit = null,
     onKeyPress: /* event */ KeyboardEvent => Unit = null,
     onKeyPressCapture: /* event */ KeyboardEvent => Unit = null,
     onKeyUp: /* event */ KeyboardEvent => Unit = null,
     onKeyUpCapture: /* event */ KeyboardEvent => Unit = null,
-    onLoad: /* event */ Event_ => Unit = null,
-    onLoadCapture: /* event */ Event_ => Unit = null,
+    onLoad: /* event */ Event => Unit = null,
+    onLoadCapture: /* event */ Event => Unit = null,
     onLostPointerCapture: /* event */ PointerEvent => Unit = null,
     onLostPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
     onMouseDown: /* event */ MouseEvent => Unit = null,
@@ -176,12 +176,12 @@ object ScriptHTMLAttributes {
     onPointerOverCapture: /* event */ PointerEvent => Unit = null,
     onPointerUp: /* event */ PointerEvent => Unit = null,
     onPointerUpCapture: /* event */ PointerEvent => Unit = null,
-    onReset: /* event */ Event_ => Unit = null,
-    onResetCapture: /* event */ Event_ => Unit = null,
+    onReset: /* event */ Event => Unit = null,
+    onResetCapture: /* event */ Event => Unit = null,
     onScroll: /* event */ UIEvent => Unit = null,
     onScrollCapture: /* event */ UIEvent => Unit = null,
-    onSubmit: /* event */ Event_ => Unit = null,
-    onSubmitCapture: /* event */ Event_ => Unit = null,
+    onSubmit: /* event */ Event => Unit = null,
+    onSubmitCapture: /* event */ Event => Unit = null,
     onTouchCancel: /* event */ TouchEvent => Unit = null,
     onTouchCancelCapture: /* event */ TouchEvent => Unit = null,
     onTouchEnd: /* event */ TouchEvent => Unit = null,
@@ -201,7 +201,7 @@ object ScriptHTMLAttributes {
     radiogroup: String = null,
     ref: /* elm */ js.UndefOr[T] => Unit = null,
     resource: String = null,
-    results: Int | Double = null,
+    results: js.UndefOr[Double] = js.undefined,
     role: String = null,
     security: String = null,
     slot: String = null,
@@ -209,7 +209,7 @@ object ScriptHTMLAttributes {
     spellcheck: Boolean | String = null,
     src: String = null,
     style: StringDictionary[js.UndefOr[String]] = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     tabindex: Double | String = null,
     title: String = null,
     `type`: String = null,
@@ -220,7 +220,7 @@ object ScriptHTMLAttributes {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
@@ -238,10 +238,10 @@ object ScriptHTMLAttributes {
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (crossorigin != null) __obj.updateDynamic("crossorigin")(crossorigin.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (importance != null) __obj.updateDynamic("importance")(importance.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
@@ -253,12 +253,12 @@ object ScriptHTMLAttributes {
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (itemid != null) __obj.updateDynamic("itemid")(itemid.asInstanceOf[js.Any])
     if (itemprop != null) __obj.updateDynamic("itemprop")(itemprop.asInstanceOf[js.Any])
     if (itemref != null) __obj.updateDynamic("itemref")(itemref.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemscope)) __obj.updateDynamic("itemscope")(itemscope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemscope)) __obj.updateDynamic("itemscope")(itemscope.get.asInstanceOf[js.Any])
     if (itemtype != null) __obj.updateDynamic("itemtype")(itemtype.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
@@ -381,20 +381,20 @@ object ScriptHTMLAttributes {
     if (radiogroup != null) __obj.updateDynamic("radiogroup")(radiogroup.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
     if (spellcheck != null) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
-    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
+    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable.get.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptHTMLAttributes[T]]
   }

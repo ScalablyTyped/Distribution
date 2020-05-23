@@ -9,7 +9,7 @@ package object wx {
   // 界面
   // 交互
   // tapIndex为用户点击的按钮序号，从上到下的顺序，从0开始
-  type ActionSheetSuccessCallback = js.Function1[/* res */ typings.weappApi.AnonTapIndex, scala.Unit]
+  type ActionSheetSuccessCallback = js.Function1[/* res */ typings.weappApi.anon.TapIndex, scala.Unit]
   type CompassChangeCallback = js.Function1[/* res */ typings.weappApi.mod.wx.CompassData, scala.Unit]
   type DataResponseCallback = js.Function1[/* res */ typings.weappApi.mod.wx.DataResponse, scala.Unit]
   type ErrorCallback = js.Function1[/* error */ js.Any, scala.Unit]

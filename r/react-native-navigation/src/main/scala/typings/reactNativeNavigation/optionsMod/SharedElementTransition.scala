@@ -13,9 +13,14 @@ trait SharedElementTransition extends js.Object {
 
 object SharedElementTransition {
   @scala.inline
-  def apply(fromId: String, interpolation: Interpolation, toId: String, duration: Int | Double = null): SharedElementTransition = {
+  def apply(
+    fromId: String,
+    interpolation: Interpolation,
+    toId: String,
+    duration: js.UndefOr[Double] = js.undefined
+  ): SharedElementTransition = {
     val __obj = js.Dynamic.literal(fromId = fromId.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], toId = toId.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedElementTransition]
   }
 }

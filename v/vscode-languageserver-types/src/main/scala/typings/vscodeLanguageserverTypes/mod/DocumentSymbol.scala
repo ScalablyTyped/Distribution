@@ -42,21 +42,6 @@ trait DocumentSymbol extends js.Object {
 @JSImport("vscode-languageserver-types", "DocumentSymbol")
 @js.native
 object DocumentSymbol extends js.Object {
-  def create(
-    name: String,
-    detail: js.UndefOr[scala.Nothing],
-    kind: SymbolKind,
-    range: Range,
-    selectionRange: Range
-  ): DocumentSymbol = js.native
-  def create(
-    name: String,
-    detail: js.UndefOr[scala.Nothing],
-    kind: SymbolKind,
-    range: Range,
-    selectionRange: Range,
-    children: js.Array[DocumentSymbol]
-  ): DocumentSymbol = js.native
   /**
     * Creates a new symbol information literal.
     *
@@ -67,10 +52,10 @@ object DocumentSymbol extends js.Object {
     * @param selectionRange The selectionRange of the symbol.
     * @param children Children of the symbol.
     */
-  def create(name: String, detail: String, kind: SymbolKind, range: Range, selectionRange: Range): DocumentSymbol = js.native
+  def create(name: String, detail: js.UndefOr[String], kind: SymbolKind, range: Range, selectionRange: Range): DocumentSymbol = js.native
   def create(
     name: String,
-    detail: String,
+    detail: js.UndefOr[String],
     kind: SymbolKind,
     range: Range,
     selectionRange: Range,

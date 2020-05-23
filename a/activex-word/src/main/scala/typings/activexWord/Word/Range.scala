@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Range")
 @js.native
-class Range protected () extends js.Object {
+trait Range extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   var Bold: Boolean | `9999999` | `9999998` = js.native
   var BoldBi: Boolean | `9999999` | `9999998` = js.native

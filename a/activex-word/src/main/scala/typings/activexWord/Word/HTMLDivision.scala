@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.HTMLDivision")
 @js.native
-class HTMLDivision protected () extends js.Object {
+trait HTMLDivision extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Borders: typings.activexWord.Word.Borders = js.native
   val Creator: Double = js.native

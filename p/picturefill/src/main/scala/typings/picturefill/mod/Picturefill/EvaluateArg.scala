@@ -14,7 +14,7 @@ object EvaluateArg {
   @scala.inline
   def apply(elements: NodeList | js.Array[ElementNullable], reevaluate: js.UndefOr[Boolean] = js.undefined): EvaluateArg = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    if (!js.isUndefined(reevaluate)) __obj.updateDynamic("reevaluate")(reevaluate.asInstanceOf[js.Any])
+    if (!js.isUndefined(reevaluate)) __obj.updateDynamic("reevaluate")(reevaluate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluateArg]
   }
 }

@@ -18,9 +18,9 @@ trait Category extends js.Object {
 
 object Category {
   @scala.inline
-  def apply(CategoryId: Int | Double = null, CategoryName: CategoryName = null): Category = {
+  def apply(CategoryId: js.UndefOr[CategoryId] = js.undefined, CategoryName: CategoryName = null): Category = {
     val __obj = js.Dynamic.literal()
-    if (CategoryId != null) __obj.updateDynamic("CategoryId")(CategoryId.asInstanceOf[js.Any])
+    if (!js.isUndefined(CategoryId)) __obj.updateDynamic("CategoryId")(CategoryId.get.asInstanceOf[js.Any])
     if (CategoryName != null) __obj.updateDynamic("CategoryName")(CategoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Category]
   }

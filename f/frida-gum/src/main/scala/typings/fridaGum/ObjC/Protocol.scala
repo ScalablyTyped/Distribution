@@ -10,27 +10,36 @@ import scala.scalajs.js.annotation._
 /**
   * Dynamically generated language binding for any Objective-C protocol.
   */
-@JSGlobal("ObjC.Protocol")
-@js.native
-class Protocol protected () extends ObjectWrapper {
-  def this(handle: NativePointer) = this()
-  /* CompleteClass */
-  override var handle: NativePointer = js.native
+trait Protocol extends ObjectWrapper {
   /**
     * Methods declared by this protocol.
     */
-  var methods: StringDictionary[ProtocolMethodDescription] = js.native
+  var methods: StringDictionary[ProtocolMethodDescription]
   /**
     * Name visible to the Objective-C runtime.
     */
-  var name: String = js.native
+  var name: String
   /**
     * Properties declared by this protocol.
     */
-  var properties: StringDictionary[ProtocolPropertyAttributes] = js.native
+  var properties: StringDictionary[ProtocolPropertyAttributes]
   /**
     * Protocols that this protocol conforms to.
     */
-  var protocols: StringDictionary[Protocol] = js.native
+  var protocols: StringDictionary[Protocol]
+}
+
+object Protocol {
+  @scala.inline
+  def apply(
+    handle: NativePointer,
+    methods: StringDictionary[ProtocolMethodDescription],
+    name: String,
+    properties: StringDictionary[ProtocolPropertyAttributes],
+    protocols: StringDictionary[Protocol]
+  ): Protocol = {
+    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Protocol]
+  }
 }
 

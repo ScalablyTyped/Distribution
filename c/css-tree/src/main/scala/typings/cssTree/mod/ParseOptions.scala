@@ -23,11 +23,11 @@ object ParseOptions {
   @scala.inline
   def apply(
     atrule: String = null,
-    column: Int | Double = null,
+    column: js.UndefOr[Double] = js.undefined,
     context: String = null,
     filename: String = null,
-    line: Int | Double = null,
-    offset: Int | Double = null,
+    line: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
     onParseError: (/* error */ SyntaxParseError, /* fallbackNode */ CssNode) => Unit = null,
     parseAtrulePrelude: js.UndefOr[Boolean] = js.undefined,
     parseCustomProperty: js.UndefOr[Boolean] = js.undefined,
@@ -37,17 +37,17 @@ object ParseOptions {
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (atrule != null) __obj.updateDynamic("atrule")(atrule.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (onParseError != null) __obj.updateDynamic("onParseError")(js.Any.fromFunction2(onParseError))
-    if (!js.isUndefined(parseAtrulePrelude)) __obj.updateDynamic("parseAtrulePrelude")(parseAtrulePrelude.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseCustomProperty)) __obj.updateDynamic("parseCustomProperty")(parseCustomProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseRulePrelude)) __obj.updateDynamic("parseRulePrelude")(parseRulePrelude.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseValue)) __obj.updateDynamic("parseValue")(parseValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(positions)) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseAtrulePrelude)) __obj.updateDynamic("parseAtrulePrelude")(parseAtrulePrelude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseCustomProperty)) __obj.updateDynamic("parseCustomProperty")(parseCustomProperty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseRulePrelude)) __obj.updateDynamic("parseRulePrelude")(parseRulePrelude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseValue)) __obj.updateDynamic("parseValue")(parseValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(positions)) __obj.updateDynamic("positions")(positions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

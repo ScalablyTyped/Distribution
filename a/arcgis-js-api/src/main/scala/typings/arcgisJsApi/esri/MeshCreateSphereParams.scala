@@ -58,15 +58,15 @@ object MeshCreateSphereParams {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    densificationFactor: Int | Double = null,
+    densificationFactor: js.UndefOr[Double] = js.undefined,
     geographic: js.UndefOr[Boolean] = js.undefined,
     material: MeshMaterial = null,
     size: Double | MeshCreateSphereParamsSize = null,
     unit: millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet` = null
   ): MeshCreateSphereParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (densificationFactor != null) __obj.updateDynamic("densificationFactor")(densificationFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic.asInstanceOf[js.Any])
+    if (!js.isUndefined(densificationFactor)) __obj.updateDynamic("densificationFactor")(densificationFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic.get.asInstanceOf[js.Any])
     if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])

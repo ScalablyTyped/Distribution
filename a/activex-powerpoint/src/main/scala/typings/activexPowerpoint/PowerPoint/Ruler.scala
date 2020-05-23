@@ -4,14 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.Ruler")
-@js.native
-class Ruler protected () extends js.Object {
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
-  val Levels: RulerLevels = js.native
-  val Parent: js.Any = js.native
+trait Ruler extends js.Object {
+  val Application: typings.activexPowerpoint.PowerPoint.Application
+  val Levels: RulerLevels
+  val Parent: js.Any
   @JSName("PowerPoint.Ruler_typekey")
-  var PowerPointDotRuler_typekey: Ruler = js.native
-  val TabStops: typings.activexPowerpoint.PowerPoint.TabStops = js.native
+  var PowerPointDotRuler_typekey: Ruler
+  val TabStops: typings.activexPowerpoint.PowerPoint.TabStops
+}
+
+object Ruler {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Levels: RulerLevels,
+    Parent: js.Any,
+    PowerPointDotRuler_typekey: Ruler,
+    TabStops: TabStops
+  ): Ruler = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Levels = Levels.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], TabStops = TabStops.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.Ruler_typekey")(PowerPointDotRuler_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ruler]
+  }
 }
 

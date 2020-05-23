@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`building-scene`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -67,8 +66,4 @@ trait BuildingSceneLayer
     */
   def loadAll(): js.Promise[BuildingSceneLayer] = js.native
 }
-
-@JSGlobal("__esri.BuildingSceneLayer")
-@js.native
-object BuildingSceneLayer extends TopLevel[BuildingSceneLayerConstructor]
 

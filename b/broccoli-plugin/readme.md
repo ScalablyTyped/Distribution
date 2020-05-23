@@ -1,7 +1,7 @@
 
 # Scala.js typings for broccoli-plugin
 
-Typings are for version 4.0.2
+Typings are for version 4.0.3
 
 ## Library description:
 Base class for all Broccoli plugins

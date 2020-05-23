@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__a11y
 
-Typings are for version 2.4
+Typings are for version 2.9.0
 
 ## Library description:
 Accessibility (a11y) utilities for WordPress.
@@ -24,7 +24,7 @@ Accessibility (a11y) utilities for WordPress.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

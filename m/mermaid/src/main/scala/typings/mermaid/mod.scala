@@ -1,5 +1,6 @@
 package typings.mermaid
 
+import typings.mermaid.anon.TypeofmermaidAPI
 import typings.mermaid.mermaidAPIMod.mermaidAPI.Config
 import typings.std.Element
 import typings.std.Node

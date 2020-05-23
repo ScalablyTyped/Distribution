@@ -13,12 +13,12 @@ trait SSM extends Service {
   @JSName("config")
   var config_SSM: ConfigBase with ClientConfiguration = js.native
   /**
-    * Adds or overwrites one or more tags for the specified resource. Tags are metadata that you can assign to your documents, managed instances, maintenance windows, Parameter Store parameters, and patch baselines. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value, both of which you define. For example, you could define a set of tags for your account's managed instances that helps you track each instance's owner and stack level. For example: Key=Owner and Value=DbAdmin, SysAdmin, or Dev. Or Key=Stack and Value=Production, Pre-Production, or Test. Each resource can have a maximum of 50 tags.  We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. Tags don't have any semantic meaning to Amazon EC2 and are interpreted strictly as a string of characters.  For more information about tags, see Tagging Your Amazon EC2 Resources in the Amazon EC2 User Guide.
+    * Adds or overwrites one or more tags for the specified resource. Tags are metadata that you can assign to your documents, managed instances, maintenance windows, Parameter Store parameters, and patch baselines. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value, both of which you define. For example, you could define a set of tags for your account's managed instances that helps you track each instance's owner and stack level. For example: Key=Owner and Value=DbAdmin, SysAdmin, or Dev. Or Key=Stack and Value=Production, Pre-Production, or Test. Each resource can have a maximum of 50 tags.  We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. Tags don't have any semantic meaning to and are interpreted strictly as a string of characters.  For more information about using tags with EC2 instances, see Tagging your Amazon EC2 resources in the Amazon EC2 User Guide.
     */
   def addTagsToResource(): Request[AddTagsToResourceResult, AWSError] = js.native
   def addTagsToResource(callback: js.Function2[/* err */ AWSError, /* data */ AddTagsToResourceResult, Unit]): Request[AddTagsToResourceResult, AWSError] = js.native
   /**
-    * Adds or overwrites one or more tags for the specified resource. Tags are metadata that you can assign to your documents, managed instances, maintenance windows, Parameter Store parameters, and patch baselines. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value, both of which you define. For example, you could define a set of tags for your account's managed instances that helps you track each instance's owner and stack level. For example: Key=Owner and Value=DbAdmin, SysAdmin, or Dev. Or Key=Stack and Value=Production, Pre-Production, or Test. Each resource can have a maximum of 50 tags.  We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. Tags don't have any semantic meaning to Amazon EC2 and are interpreted strictly as a string of characters.  For more information about tags, see Tagging Your Amazon EC2 Resources in the Amazon EC2 User Guide.
+    * Adds or overwrites one or more tags for the specified resource. Tags are metadata that you can assign to your documents, managed instances, maintenance windows, Parameter Store parameters, and patch baselines. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value, both of which you define. For example, you could define a set of tags for your account's managed instances that helps you track each instance's owner and stack level. For example: Key=Owner and Value=DbAdmin, SysAdmin, or Dev. Or Key=Stack and Value=Production, Pre-Production, or Test. Each resource can have a maximum of 50 tags.  We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. Tags don't have any semantic meaning to and are interpreted strictly as a string of characters.  For more information about using tags with EC2 instances, see Tagging your Amazon EC2 resources in the Amazon EC2 User Guide.
     */
   def addTagsToResource(params: AddTagsToResourceRequest): Request[AddTagsToResourceResult, AWSError] = js.native
   def addTagsToResource(
@@ -54,12 +54,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CancelMaintenanceWindowExecutionResult, Unit]
   ): Request[CancelMaintenanceWindowExecutionResult, AWSError] = js.native
   /**
-    * Generates an activation code and activation ID you can use to register your on-premises server or virtual machine (VM) with Systems Manager. Registering these machines with Systems Manager makes it possible to manage them using Systems Manager capabilities. You use the activation code and ID when installing SSM Agent on machines in your hybrid environment. For more information about requirements for managing on-premises instances and VMs using Systems Manager, see Setting Up AWS Systems Manager for Hybrid Environments in the AWS Systems Manager User Guide.   On-premises servers or VMs that are registered with Systems Manager and Amazon EC2 instances that you manage with Systems Manager are all called managed instances. 
+    * Generates an activation code and activation ID you can use to register your on-premises server or virtual machine (VM) with Systems Manager. Registering these machines with Systems Manager makes it possible to manage them using Systems Manager capabilities. You use the activation code and ID when installing SSM Agent on machines in your hybrid environment. For more information about requirements for managing on-premises instances and VMs using Systems Manager, see Setting up AWS Systems Manager for hybrid environments in the AWS Systems Manager User Guide.   On-premises servers or VMs that are registered with Systems Manager and EC2 instances that you manage with Systems Manager are all called managed instances. 
     */
   def createActivation(): Request[CreateActivationResult, AWSError] = js.native
   def createActivation(callback: js.Function2[/* err */ AWSError, /* data */ CreateActivationResult, Unit]): Request[CreateActivationResult, AWSError] = js.native
   /**
-    * Generates an activation code and activation ID you can use to register your on-premises server or virtual machine (VM) with Systems Manager. Registering these machines with Systems Manager makes it possible to manage them using Systems Manager capabilities. You use the activation code and ID when installing SSM Agent on machines in your hybrid environment. For more information about requirements for managing on-premises instances and VMs using Systems Manager, see Setting Up AWS Systems Manager for Hybrid Environments in the AWS Systems Manager User Guide.   On-premises servers or VMs that are registered with Systems Manager and Amazon EC2 instances that you manage with Systems Manager are all called managed instances. 
+    * Generates an activation code and activation ID you can use to register your on-premises server or virtual machine (VM) with Systems Manager. Registering these machines with Systems Manager makes it possible to manage them using Systems Manager capabilities. You use the activation code and ID when installing SSM Agent on machines in your hybrid environment. For more information about requirements for managing on-premises instances and VMs using Systems Manager, see Setting up AWS Systems Manager for hybrid environments in the AWS Systems Manager User Guide.   On-premises servers or VMs that are registered with Systems Manager and EC2 instances that you manage with Systems Manager are all called managed instances. 
     */
   def createActivation(params: CreateActivationRequest): Request[CreateActivationResult, AWSError] = js.native
   def createActivation(
@@ -93,12 +93,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAssociationBatchResult, Unit]
   ): Request[CreateAssociationBatchResult, AWSError] = js.native
   /**
-    * Creates a Systems Manager document. After you create a document, you can use CreateAssociation to associate it with one or more running instances.
+    * Creates a Systems Manager (SSM) document. An SSM document defines the actions that Systems Manager performs on your managed instances. For more information about SSM documents, including information about supported schemas, features, and syntax, see AWS Systems Manager Documents in the AWS Systems Manager User Guide.
     */
   def createDocument(): Request[CreateDocumentResult, AWSError] = js.native
   def createDocument(callback: js.Function2[/* err */ AWSError, /* data */ CreateDocumentResult, Unit]): Request[CreateDocumentResult, AWSError] = js.native
   /**
-    * Creates a Systems Manager document. After you create a document, you can use CreateAssociation to associate it with one or more running instances.
+    * Creates a Systems Manager (SSM) document. An SSM document defines the actions that Systems Manager performs on your managed instances. For more information about SSM documents, including information about supported schemas, features, and syntax, see AWS Systems Manager Documents in the AWS Systems Manager User Guide.
     */
   def createDocument(params: CreateDocumentRequest): Request[CreateDocumentResult, AWSError] = js.native
   def createDocument(
@@ -119,12 +119,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMaintenanceWindowResult, Unit]
   ): Request[CreateMaintenanceWindowResult, AWSError] = js.native
   /**
-    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
+    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def createOpsItem(): Request[CreateOpsItemResponse, AWSError] = js.native
   def createOpsItem(callback: js.Function2[/* err */ AWSError, /* data */ CreateOpsItemResponse, Unit]): Request[CreateOpsItemResponse, AWSError] = js.native
   /**
-    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
+    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def createOpsItem(params: CreateOpsItemRequest): Request[CreateOpsItemResponse, AWSError] = js.native
   def createOpsItem(
@@ -145,12 +145,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePatchBaselineResult, Unit]
   ): Request[CreatePatchBaselineResult, AWSError] = js.native
   /**
-    * A resource data sync helps you view data from multiple sources in a single location. Systems Manager offers two types of resource data sync: SyncToDestination and SyncFromSource. You can configure Systems Manager Inventory to use the SyncToDestination type to synchronize Inventory data from multiple AWS Regions to a single Amazon S3 bucket. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide. You can configure Systems Manager Explorer to use the SyncFromSource type to synchronize operational work items (OpsItems) and operational data (OpsData) from multiple AWS Regions to a single Amazon S3 bucket. This type can synchronize OpsItems and OpsData from multiple AWS accounts and Regions or EntireOrganization by using AWS Organizations. For more information, see Setting Up Explorer to Display Data from Multiple Accounts and Regions in the AWS Systems Manager User Guide. A resource data sync is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data. To check the status of a sync, use the ListResourceDataSync.  By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy.  
+    * A resource data sync helps you view data from multiple sources in a single location. Systems Manager offers two types of resource data sync: SyncToDestination and SyncFromSource. You can configure Systems Manager Inventory to use the SyncToDestination type to synchronize Inventory data from multiple AWS Regions to a single S3 bucket. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide. You can configure Systems Manager Explorer to use the SyncFromSource type to synchronize operational work items (OpsItems) and operational data (OpsData) from multiple AWS Regions to a single S3 bucket. This type can synchronize OpsItems and OpsData from multiple AWS accounts and Regions or EntireOrganization by using AWS Organizations. For more information, see Setting up Systems Manager Explorer to display data from multiple accounts and Regions in the AWS Systems Manager User Guide. A resource data sync is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data. To check the status of a sync, use the ListResourceDataSync.  By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy.  
     */
   def createResourceDataSync(): Request[CreateResourceDataSyncResult, AWSError] = js.native
   def createResourceDataSync(callback: js.Function2[/* err */ AWSError, /* data */ CreateResourceDataSyncResult, Unit]): Request[CreateResourceDataSyncResult, AWSError] = js.native
   /**
-    * A resource data sync helps you view data from multiple sources in a single location. Systems Manager offers two types of resource data sync: SyncToDestination and SyncFromSource. You can configure Systems Manager Inventory to use the SyncToDestination type to synchronize Inventory data from multiple AWS Regions to a single Amazon S3 bucket. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide. You can configure Systems Manager Explorer to use the SyncFromSource type to synchronize operational work items (OpsItems) and operational data (OpsData) from multiple AWS Regions to a single Amazon S3 bucket. This type can synchronize OpsItems and OpsData from multiple AWS accounts and Regions or EntireOrganization by using AWS Organizations. For more information, see Setting Up Explorer to Display Data from Multiple Accounts and Regions in the AWS Systems Manager User Guide. A resource data sync is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data. To check the status of a sync, use the ListResourceDataSync.  By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy.  
+    * A resource data sync helps you view data from multiple sources in a single location. Systems Manager offers two types of resource data sync: SyncToDestination and SyncFromSource. You can configure Systems Manager Inventory to use the SyncToDestination type to synchronize Inventory data from multiple AWS Regions to a single S3 bucket. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide. You can configure Systems Manager Explorer to use the SyncFromSource type to synchronize operational work items (OpsItems) and operational data (OpsData) from multiple AWS Regions to a single S3 bucket. This type can synchronize OpsItems and OpsData from multiple AWS accounts and Regions or EntireOrganization by using AWS Organizations. For more information, see Setting up Systems Manager Explorer to display data from multiple accounts and Regions in the AWS Systems Manager User Guide. A resource data sync is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data. To check the status of a sync, use the ListResourceDataSync.  By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy.  
     */
   def createResourceDataSync(params: CreateResourceDataSyncRequest): Request[CreateResourceDataSyncResult, AWSError] = js.native
   def createResourceDataSync(
@@ -499,12 +499,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceAssociationsStatusResult, Unit]
   ): Request[DescribeInstanceAssociationsStatusResult, AWSError] = js.native
   /**
-    * Describes one or more of your instances. You can use this to get information about instances like the operating system platform, the SSM Agent version (Linux), status etc. If you specify one or more instance IDs, it returns information for those instances. If you do not specify instance IDs, it returns information for all your instances. If you specify an instance ID that is not valid or an instance that you do not own, you receive an error.   The IamRole field for this API action is the Amazon Identity and Access Management (IAM) role assigned to on-premises instances. This call does not return the IAM role for Amazon EC2 instances. 
+    * Describes one or more of your instances, including information about the operating system platform, the version of SSM Agent installed on the instance, instance status, and so on. If you specify one or more instance IDs, it returns information for those instances. If you do not specify instance IDs, it returns information for all your instances. If you specify an instance ID that is not valid or an instance that you do not own, you receive an error.  The IamRole field for this API action is the Amazon Identity and Access Management (IAM) role assigned to on-premises instances. This call does not return the IAM role for EC2 instances. 
     */
   def describeInstanceInformation(): Request[DescribeInstanceInformationResult, AWSError] = js.native
   def describeInstanceInformation(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceInformationResult, Unit]): Request[DescribeInstanceInformationResult, AWSError] = js.native
   /**
-    * Describes one or more of your instances. You can use this to get information about instances like the operating system platform, the SSM Agent version (Linux), status etc. If you specify one or more instance IDs, it returns information for those instances. If you do not specify instance IDs, it returns information for all your instances. If you specify an instance ID that is not valid or an instance that you do not own, you receive an error.   The IamRole field for this API action is the Amazon Identity and Access Management (IAM) role assigned to on-premises instances. This call does not return the IAM role for Amazon EC2 instances. 
+    * Describes one or more of your instances, including information about the operating system platform, the version of SSM Agent installed on the instance, instance status, and so on. If you specify one or more instance IDs, it returns information for those instances. If you do not specify instance IDs, it returns information for all your instances. If you specify an instance ID that is not valid or an instance that you do not own, you receive an error.  The IamRole field for this API action is the Amazon Identity and Access Management (IAM) role assigned to on-premises instances. This call does not return the IAM role for EC2 instances. 
     */
   def describeInstanceInformation(params: DescribeInstanceInformationRequest): Request[DescribeInstanceInformationResult, AWSError] = js.native
   def describeInstanceInformation(
@@ -690,12 +690,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeMaintenanceWindowsForTargetResult, Unit]
   ): Request[DescribeMaintenanceWindowsForTargetResult, AWSError] = js.native
   /**
-    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
+    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def describeOpsItems(): Request[DescribeOpsItemsResponse, AWSError] = js.native
   def describeOpsItems(callback: js.Function2[/* err */ AWSError, /* data */ DescribeOpsItemsResponse, Unit]): Request[DescribeOpsItemsResponse, AWSError] = js.native
   /**
-    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
+    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def describeOpsItems(params: DescribeOpsItemsRequest): Request[DescribeOpsItemsResponse, AWSError] = js.native
   def describeOpsItems(
@@ -820,12 +820,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetCommandInvocationResult, Unit]
   ): Request[GetCommandInvocationResult, AWSError] = js.native
   /**
-    * Retrieves the Session Manager connection status for an instance to determine whether it is connected and ready to receive Session Manager connections.
+    * Retrieves the Session Manager connection status for an instance to determine whether it is running and ready to receive Session Manager connections.
     */
   def getConnectionStatus(): Request[GetConnectionStatusResponse, AWSError] = js.native
   def getConnectionStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetConnectionStatusResponse, Unit]): Request[GetConnectionStatusResponse, AWSError] = js.native
   /**
-    * Retrieves the Session Manager connection status for an instance to determine whether it is connected and ready to receive Session Manager connections.
+    * Retrieves the Session Manager connection status for an instance to determine whether it is running and ready to receive Session Manager connections.
     */
   def getConnectionStatus(params: GetConnectionStatusRequest): Request[GetConnectionStatusResponse, AWSError] = js.native
   def getConnectionStatus(
@@ -887,12 +887,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetInventoryResult, Unit]
   ): Request[GetInventoryResult, AWSError] = js.native
   /**
-    * Return a list of inventory type names for the account, or return a list of attribute names for a specific Inventory item type. 
+    * Return a list of inventory type names for the account, or return a list of attribute names for a specific Inventory item type.
     */
   def getInventorySchema(): Request[GetInventorySchemaResult, AWSError] = js.native
   def getInventorySchema(callback: js.Function2[/* err */ AWSError, /* data */ GetInventorySchemaResult, Unit]): Request[GetInventorySchemaResult, AWSError] = js.native
   /**
-    * Return a list of inventory type names for the account, or return a list of attribute names for a specific Inventory item type. 
+    * Return a list of inventory type names for the account, or return a list of attribute names for a specific Inventory item type.
     */
   def getInventorySchema(params: GetInventorySchemaRequest): Request[GetInventorySchemaResult, AWSError] = js.native
   def getInventorySchema(
@@ -977,12 +977,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetMaintenanceWindowTaskResult, Unit]
   ): Request[GetMaintenanceWindowTaskResult, AWSError] = js.native
   /**
-    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
+    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def getOpsItem(): Request[GetOpsItemResponse, AWSError] = js.native
   def getOpsItem(callback: js.Function2[/* err */ AWSError, /* data */ GetOpsItemResponse, Unit]): Request[GetOpsItemResponse, AWSError] = js.native
   /**
-    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
+    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def getOpsItem(params: GetOpsItemRequest): Request[GetOpsItemResponse, AWSError] = js.native
   def getOpsItem(
@@ -1159,12 +1159,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListCommandsResult, Unit]
   ): Request[ListCommandsResult, AWSError] = js.native
   /**
-    * For a specified resource ID, this API action returns a list of compliance statuses for different resource types. Currently, you can only specify one resource ID per call. List results depend on the criteria specified in the filter. 
+    * For a specified resource ID, this API action returns a list of compliance statuses for different resource types. Currently, you can only specify one resource ID per call. List results depend on the criteria specified in the filter.
     */
   def listComplianceItems(): Request[ListComplianceItemsResult, AWSError] = js.native
   def listComplianceItems(callback: js.Function2[/* err */ AWSError, /* data */ ListComplianceItemsResult, Unit]): Request[ListComplianceItemsResult, AWSError] = js.native
   /**
-    * For a specified resource ID, this API action returns a list of compliance statuses for different resource types. Currently, you can only specify one resource ID per call. List results depend on the criteria specified in the filter. 
+    * For a specified resource ID, this API action returns a list of compliance statuses for different resource types. Currently, you can only specify one resource ID per call. List results depend on the criteria specified in the filter.
     */
   def listComplianceItems(params: ListComplianceItemsRequest): Request[ListComplianceItemsResult, AWSError] = js.native
   def listComplianceItems(
@@ -1172,12 +1172,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListComplianceItemsResult, Unit]
   ): Request[ListComplianceItemsResult, AWSError] = js.native
   /**
-    * Returns a summary count of compliant and non-compliant resources for a compliance type. For example, this call can return State Manager associations, patches, or custom compliance types according to the filter criteria that you specify. 
+    * Returns a summary count of compliant and non-compliant resources for a compliance type. For example, this call can return State Manager associations, patches, or custom compliance types according to the filter criteria that you specify.
     */
   def listComplianceSummaries(): Request[ListComplianceSummariesResult, AWSError] = js.native
   def listComplianceSummaries(callback: js.Function2[/* err */ AWSError, /* data */ ListComplianceSummariesResult, Unit]): Request[ListComplianceSummariesResult, AWSError] = js.native
   /**
-    * Returns a summary count of compliant and non-compliant resources for a compliance type. For example, this call can return State Manager associations, patches, or custom compliance types according to the filter criteria that you specify. 
+    * Returns a summary count of compliant and non-compliant resources for a compliance type. For example, this call can return State Manager associations, patches, or custom compliance types according to the filter criteria that you specify.
     */
   def listComplianceSummaries(params: ListComplianceSummariesRequest): Request[ListComplianceSummariesResult, AWSError] = js.native
   def listComplianceSummaries(
@@ -1464,12 +1464,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartAutomationExecutionResult, Unit]
   ): Request[StartAutomationExecutionResult, AWSError] = js.native
   /**
-    * Initiates a connection to a target (for example, an instance) for a Session Manager session. Returns a URL and token that can be used to open a WebSocket connection for sending input and receiving outputs.  AWS CLI usage: start-session is an interactive command that requires the Session Manager plugin to be installed on the client machine making the call. For information, see  Install the Session Manager Plugin for the AWS CLI in the AWS Systems Manager User Guide. AWS Tools for PowerShell usage: Start-SSMSession is not currently supported by AWS Tools for PowerShell on Windows local machines. 
+    * Initiates a connection to a target (for example, an instance) for a Session Manager session. Returns a URL and token that can be used to open a WebSocket connection for sending input and receiving outputs.  AWS CLI usage: start-session is an interactive command that requires the Session Manager plugin to be installed on the client machine making the call. For information, see Install the Session Manager plugin for the AWS CLI in the AWS Systems Manager User Guide. AWS Tools for PowerShell usage: Start-SSMSession is not currently supported by AWS Tools for PowerShell on Windows local machines. 
     */
   def startSession(): Request[StartSessionResponse, AWSError] = js.native
   def startSession(callback: js.Function2[/* err */ AWSError, /* data */ StartSessionResponse, Unit]): Request[StartSessionResponse, AWSError] = js.native
   /**
-    * Initiates a connection to a target (for example, an instance) for a Session Manager session. Returns a URL and token that can be used to open a WebSocket connection for sending input and receiving outputs.  AWS CLI usage: start-session is an interactive command that requires the Session Manager plugin to be installed on the client machine making the call. For information, see  Install the Session Manager Plugin for the AWS CLI in the AWS Systems Manager User Guide. AWS Tools for PowerShell usage: Start-SSMSession is not currently supported by AWS Tools for PowerShell on Windows local machines. 
+    * Initiates a connection to a target (for example, an instance) for a Session Manager session. Returns a URL and token that can be used to open a WebSocket connection for sending input and receiving outputs.  AWS CLI usage: start-session is an interactive command that requires the Session Manager plugin to be installed on the client machine making the call. For information, see Install the Session Manager plugin for the AWS CLI in the AWS Systems Manager User Guide. AWS Tools for PowerShell usage: Start-SSMSession is not currently supported by AWS Tools for PowerShell on Windows local machines. 
     */
   def startSession(params: StartSessionRequest): Request[StartSessionResponse, AWSError] = js.native
   def startSession(
@@ -1594,12 +1594,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateMaintenanceWindowTaskResult, Unit]
   ): Request[UpdateMaintenanceWindowTaskResult, AWSError] = js.native
   /**
-    * Assigns or changes an Amazon Identity and Access Management (IAM) role for the managed instance.
+    * Changes the Amazon Identity and Access Management (IAM) role that is assigned to the on-premises instance or virtual machines (VM). IAM roles are first assigned to these hybrid instances during the activation process. For more information, see CreateActivation.
     */
   def updateManagedInstanceRole(): Request[UpdateManagedInstanceRoleResult, AWSError] = js.native
   def updateManagedInstanceRole(callback: js.Function2[/* err */ AWSError, /* data */ UpdateManagedInstanceRoleResult, Unit]): Request[UpdateManagedInstanceRoleResult, AWSError] = js.native
   /**
-    * Assigns or changes an Amazon Identity and Access Management (IAM) role for the managed instance.
+    * Changes the Amazon Identity and Access Management (IAM) role that is assigned to the on-premises instance or virtual machines (VM). IAM roles are first assigned to these hybrid instances during the activation process. For more information, see CreateActivation.
     */
   def updateManagedInstanceRole(params: UpdateManagedInstanceRoleRequest): Request[UpdateManagedInstanceRoleResult, AWSError] = js.native
   def updateManagedInstanceRole(
@@ -1607,12 +1607,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateManagedInstanceRoleResult, Unit]
   ): Request[UpdateManagedInstanceRoleResult, AWSError] = js.native
   /**
-    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
+    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def updateOpsItem(): Request[UpdateOpsItemResponse, AWSError] = js.native
   def updateOpsItem(callback: js.Function2[/* err */ AWSError, /* data */ UpdateOpsItemResponse, Unit]): Request[UpdateOpsItemResponse, AWSError] = js.native
   /**
-    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting Started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
+    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting started with OpsCenter in the AWS Systems Manager User Guide. Operations engineers and IT professionals use OpsCenter to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsCenter in the AWS Systems Manager User Guide. 
     */
   def updateOpsItem(params: UpdateOpsItemRequest): Request[UpdateOpsItemResponse, AWSError] = js.native
   def updateOpsItem(
@@ -1633,12 +1633,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePatchBaselineResult, Unit]
   ): Request[UpdatePatchBaselineResult, AWSError] = js.native
   /**
-    * Update a resource data sync. After you create a resource data sync for a Region, you can't change the account options for that sync. For example, if you create a sync in the us-east-2 (Ohio) Region and you choose the Include only the current account option, you can't edit that sync later and choose the Include all accounts from my AWS Organizations configuration option. Instead, you must delete the first resource data sync, and create a new one.
+    * Update a resource data sync. After you create a resource data sync for a Region, you can't change the account options for that sync. For example, if you create a sync in the us-east-2 (Ohio) Region and you choose the Include only the current account option, you can't edit that sync later and choose the Include all accounts from my AWS Organizations configuration option. Instead, you must delete the first resource data sync, and create a new one.  This API action only supports a resource data sync that was created with a SyncFromSource SyncType. 
     */
   def updateResourceDataSync(): Request[UpdateResourceDataSyncResult, AWSError] = js.native
   def updateResourceDataSync(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceDataSyncResult, Unit]): Request[UpdateResourceDataSyncResult, AWSError] = js.native
   /**
-    * Update a resource data sync. After you create a resource data sync for a Region, you can't change the account options for that sync. For example, if you create a sync in the us-east-2 (Ohio) Region and you choose the Include only the current account option, you can't edit that sync later and choose the Include all accounts from my AWS Organizations configuration option. Instead, you must delete the first resource data sync, and create a new one.
+    * Update a resource data sync. After you create a resource data sync for a Region, you can't change the account options for that sync. For example, if you create a sync in the us-east-2 (Ohio) Region and you choose the Include only the current account option, you can't edit that sync later and choose the Include all accounts from my AWS Organizations configuration option. Instead, you must delete the first resource data sync, and create a new one.  This API action only supports a resource data sync that was created with a SyncFromSource SyncType. 
     */
   def updateResourceDataSync(params: UpdateResourceDataSyncRequest): Request[UpdateResourceDataSyncResult, AWSError] = js.native
   def updateResourceDataSync(

@@ -88,17 +88,17 @@ object GetMLTransformResponse {
     EvaluationMetrics: EvaluationMetrics = null,
     GlueVersion: GlueVersionString = null,
     InputRecordTables: GlueTables = null,
-    LabelCount: Int | Double = null,
+    LabelCount: js.UndefOr[LabelCount] = js.undefined,
     LastModifiedOn: Timestamp = null,
-    MaxCapacity: Int | Double = null,
-    MaxRetries: Int | Double = null,
+    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
+    MaxRetries: js.UndefOr[NullableInteger] = js.undefined,
     Name: NameString = null,
-    NumberOfWorkers: Int | Double = null,
+    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
     Parameters: TransformParameters = null,
     Role: RoleString = null,
     Schema: TransformSchema = null,
     Status: TransformStatusType = null,
-    Timeout: Int | Double = null,
+    Timeout: js.UndefOr[Timeout] = js.undefined,
     TransformId: HashString = null,
     WorkerType: WorkerType = null
   ): GetMLTransformResponse = {
@@ -108,17 +108,17 @@ object GetMLTransformResponse {
     if (EvaluationMetrics != null) __obj.updateDynamic("EvaluationMetrics")(EvaluationMetrics.asInstanceOf[js.Any])
     if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
     if (InputRecordTables != null) __obj.updateDynamic("InputRecordTables")(InputRecordTables.asInstanceOf[js.Any])
-    if (LabelCount != null) __obj.updateDynamic("LabelCount")(LabelCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(LabelCount)) __obj.updateDynamic("LabelCount")(LabelCount.get.asInstanceOf[js.Any])
     if (LastModifiedOn != null) __obj.updateDynamic("LastModifiedOn")(LastModifiedOn.asInstanceOf[js.Any])
-    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
-    if (MaxRetries != null) __obj.updateDynamic("MaxRetries")(MaxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRetries)) __obj.updateDynamic("MaxRetries")(MaxRetries.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
     if (Schema != null) __obj.updateDynamic("Schema")(Schema.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     if (TransformId != null) __obj.updateDynamic("TransformId")(TransformId.asInstanceOf[js.Any])
     if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMLTransformResponse]

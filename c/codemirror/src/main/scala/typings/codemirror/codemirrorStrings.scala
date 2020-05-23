@@ -351,6 +351,9 @@ object codemirrorStrings {
   sealed trait paste extends DOMEvent
   
   @js.native
+  sealed trait pasteLinesPerSelection extends js.Object
+  
+  @js.native
   sealed trait pause extends js.Object
   
   @js.native
@@ -429,6 +432,9 @@ object codemirrorStrings {
   sealed trait rtlMoveVisually extends js.Object
   
   @js.native
+  sealed trait screenReaderLabel extends js.Object
+  
+  @js.native
   sealed trait scroll extends js.Object
   
   @js.native
@@ -454,6 +460,9 @@ object codemirrorStrings {
   
   @js.native
   sealed trait selectionchange extends js.Object
+  
+  @js.native
+  sealed trait selectionsMayTouch extends js.Object
   
   @js.native
   sealed trait selectstart extends js.Object
@@ -798,6 +807,8 @@ object codemirrorStrings {
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
   @scala.inline
+  def pasteLinesPerSelection: pasteLinesPerSelection = "pasteLinesPerSelection".asInstanceOf[pasteLinesPerSelection]
+  @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
   def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
@@ -850,6 +861,8 @@ object codemirrorStrings {
   @scala.inline
   def rtlMoveVisually: rtlMoveVisually = "rtlMoveVisually".asInstanceOf[rtlMoveVisually]
   @scala.inline
+  def screenReaderLabel: screenReaderLabel = "screenReaderLabel".asInstanceOf[screenReaderLabel]
+  @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline
   def scrollCursorIntoView: scrollCursorIntoView = "scrollCursorIntoView".asInstanceOf[scrollCursorIntoView]
@@ -867,6 +880,8 @@ object codemirrorStrings {
   def select: select = "select".asInstanceOf[select]
   @scala.inline
   def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
+  @scala.inline
+  def selectionsMayTouch: selectionsMayTouch = "selectionsMayTouch".asInstanceOf[selectionsMayTouch]
   @scala.inline
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline

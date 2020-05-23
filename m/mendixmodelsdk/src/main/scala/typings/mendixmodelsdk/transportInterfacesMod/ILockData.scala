@@ -18,11 +18,11 @@ object ILockData {
     lockType: LockType,
     requestedBy: String,
     timestamp: Double,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     lockId: String = null
   ): ILockData = {
     val __obj = js.Dynamic.literal(lockType = lockType.asInstanceOf[js.Any], requestedBy = requestedBy.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (lockId != null) __obj.updateDynamic("lockId")(lockId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILockData]
   }

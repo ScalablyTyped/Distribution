@@ -21,10 +21,14 @@ trait EnterAction extends js.Object {
 
 object EnterAction {
   @scala.inline
-  def apply(indentAction: IndentAction, appendText: String = null, removeText: Int | Double = null): EnterAction = {
+  def apply(
+    indentAction: IndentAction,
+    appendText: String = null,
+    removeText: js.UndefOr[Double] = js.undefined
+  ): EnterAction = {
     val __obj = js.Dynamic.literal(indentAction = indentAction.asInstanceOf[js.Any])
     if (appendText != null) __obj.updateDynamic("appendText")(appendText.asInstanceOf[js.Any])
-    if (removeText != null) __obj.updateDynamic("removeText")(removeText.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeText)) __obj.updateDynamic("removeText")(removeText.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterAction]
   }
 }

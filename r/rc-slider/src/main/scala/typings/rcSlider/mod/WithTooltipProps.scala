@@ -1,6 +1,6 @@
 package typings.rcSlider.mod
 
-import typings.rcSlider.PartialProps
+import typings.rcSlider.anon.PartialProps
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

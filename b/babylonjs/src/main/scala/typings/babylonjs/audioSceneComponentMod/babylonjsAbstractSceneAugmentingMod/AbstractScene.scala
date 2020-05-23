@@ -16,8 +16,7 @@ trait AbstractScene extends js.Object {
 object AbstractScene {
   @scala.inline
   def apply(sounds: Nullable[js.Array[Sound]] = null): AbstractScene = {
-    val __obj = js.Dynamic.literal()
-    if (sounds != null) __obj.updateDynamic("sounds")(sounds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(sounds = sounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractScene]
   }
 }

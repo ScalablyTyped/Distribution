@@ -1,7 +1,6 @@
 package typings.contractProxyKit.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.contractProxyKit.Typeofethers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,7 @@ object CPKConfig {
   }
   @scala.inline
   def EthersSpecificConfig(
-    ethers: Typeofethers,
+    ethers: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ethers */ js.Any,
     signer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ethers.Signer */ js.Any,
     networks: StringDictionary[NetworkConfigEntry] = null
   ): CPKConfig = {

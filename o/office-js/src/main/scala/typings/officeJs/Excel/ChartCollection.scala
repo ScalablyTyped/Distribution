@@ -20,15 +20,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartCollection")
 @js.native
-class ChartCollection () extends ClientObject {
+trait ChartCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartCollection: RequestContext = js.native
   /**
     *
-    * Returns the number of charts in the worksheet. Read-only.
+    * Returns the number of charts in the worksheet.
     *
     * [Api set: ExcelApi 1.1]
     */

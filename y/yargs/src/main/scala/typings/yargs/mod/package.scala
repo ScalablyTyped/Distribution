@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type Arguments[T] = T with typings.yargs.AnonDictargName
+  type Arguments[T] = T with typings.yargs.anon.DictargName
   type AsyncCompletionFunction = js.Function3[
     /* current */ java.lang.String, 
     /* argv */ js.Any, 

@@ -25,14 +25,14 @@ object GoogleCloudMlV1TrainingOutput {
   @scala.inline
   def apply(
     completedTrialCount: String = null,
-    consumedMLUnits: Int | Double = null,
+    consumedMLUnits: js.UndefOr[Double] = js.undefined,
     isHyperparameterTuningJob: js.UndefOr[Boolean] = js.undefined,
     trials: js.Array[GoogleCloudMlV1HyperparameterOutput] = null
   ): GoogleCloudMlV1TrainingOutput = {
     val __obj = js.Dynamic.literal()
     if (completedTrialCount != null) __obj.updateDynamic("completedTrialCount")(completedTrialCount.asInstanceOf[js.Any])
-    if (consumedMLUnits != null) __obj.updateDynamic("consumedMLUnits")(consumedMLUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHyperparameterTuningJob)) __obj.updateDynamic("isHyperparameterTuningJob")(isHyperparameterTuningJob.asInstanceOf[js.Any])
+    if (!js.isUndefined(consumedMLUnits)) __obj.updateDynamic("consumedMLUnits")(consumedMLUnits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHyperparameterTuningJob)) __obj.updateDynamic("isHyperparameterTuningJob")(isHyperparameterTuningJob.get.asInstanceOf[js.Any])
     if (trials != null) __obj.updateDynamic("trials")(trials.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1TrainingOutput]
   }

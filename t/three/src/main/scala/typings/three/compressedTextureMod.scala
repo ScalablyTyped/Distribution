@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.std.ImageData
+import typings.three.anon.HeightWidth
 import typings.three.constantsMod.CompressedPixelFormat
 import typings.three.constantsMod.Mapping
 import typings.three.constantsMod.TextureDataType
@@ -32,7 +33,7 @@ object compressedTextureMod extends js.Object {
       encoding: js.UndefOr[TextureEncoding]
     ) = this()
     @JSName("image")
-    var image_CompressedTexture: AnonHeightWidth = js.native
+    var image_CompressedTexture: HeightWidth = js.native
   }
   
 }

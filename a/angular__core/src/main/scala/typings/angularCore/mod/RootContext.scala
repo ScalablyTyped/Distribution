@@ -44,8 +44,7 @@ object RootContext {
     scheduler: js.Function0[Unit] => Unit,
     playerHandler: ɵPlayerHandler = null
   ): RootContext = {
-    val __obj = js.Dynamic.literal(clean = clean.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], scheduler = js.Any.fromFunction1(scheduler))
-    if (playerHandler != null) __obj.updateDynamic("playerHandler")(playerHandler.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clean = clean.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], scheduler = js.Any.fromFunction1(scheduler), playerHandler = playerHandler.asInstanceOf[js.Any])
     __obj.asInstanceOf[RootContext]
   }
 }

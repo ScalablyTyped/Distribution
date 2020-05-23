@@ -1,6 +1,6 @@
 package typings.apolloServer.mod
 
-import typings.apolloServer.ApolloServerExpressConfig
+import typings.apolloServer.anon.ApolloServerExpressConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

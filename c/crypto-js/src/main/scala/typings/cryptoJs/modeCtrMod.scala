@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object modeCtrMod
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CTR */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CFB */ js.Any
     ]
 

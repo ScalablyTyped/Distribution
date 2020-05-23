@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ydn.db.ICursor")
 @js.native
-class ICursor () extends js.Object {
+trait ICursor extends js.Object {
   def clear(): Request = js.native
   def clear(i: Double): Request = js.native
   def getKey(): js.Any = js.native

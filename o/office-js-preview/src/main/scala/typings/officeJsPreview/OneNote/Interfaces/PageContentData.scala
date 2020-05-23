@@ -68,18 +68,18 @@ object PageContentData {
     id: String = null,
     image: ImageData = null,
     ink: FloatingInkData = null,
-    left: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
     outline: OutlineData = null,
-    top: Int | Double = null,
+    top: js.UndefOr[Double] = js.undefined,
     `type`: PageContentType | Outline | Image | Ink | Other = null
   ): PageContentData = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (ink != null) __obj.updateDynamic("ink")(ink.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageContentData]
   }

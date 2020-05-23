@@ -64,31 +64,31 @@ object CommonSeriesOptionsErrorBar {
     cap: CommonSeriesOptionsErrorBarCap = null,
     direction: ErrorBarDirection | String = null,
     fill: String = null,
-    horizontalErrorValue: Int | Double = null,
-    horizontalNegativeErrorValue: Int | Double = null,
-    horizontalPositiveErrorValue: Int | Double = null,
+    horizontalErrorValue: js.UndefOr[Double] = js.undefined,
+    horizontalNegativeErrorValue: js.UndefOr[Double] = js.undefined,
+    horizontalPositiveErrorValue: js.UndefOr[Double] = js.undefined,
     mode: ErrorBarMode | String = null,
     `type`: ErrorBarType | String = null,
-    verticalErrorValue: Int | Double = null,
-    verticalNegativeErrorValue: Int | Double = null,
-    verticalPositiveErrorValue: Int | Double = null,
+    verticalErrorValue: js.UndefOr[Double] = js.undefined,
+    verticalNegativeErrorValue: js.UndefOr[Double] = js.undefined,
+    verticalPositiveErrorValue: js.UndefOr[Double] = js.undefined,
     visibility: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): CommonSeriesOptionsErrorBar = {
     val __obj = js.Dynamic.literal()
     if (cap != null) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (horizontalErrorValue != null) __obj.updateDynamic("horizontalErrorValue")(horizontalErrorValue.asInstanceOf[js.Any])
-    if (horizontalNegativeErrorValue != null) __obj.updateDynamic("horizontalNegativeErrorValue")(horizontalNegativeErrorValue.asInstanceOf[js.Any])
-    if (horizontalPositiveErrorValue != null) __obj.updateDynamic("horizontalPositiveErrorValue")(horizontalPositiveErrorValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalErrorValue)) __obj.updateDynamic("horizontalErrorValue")(horizontalErrorValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalNegativeErrorValue)) __obj.updateDynamic("horizontalNegativeErrorValue")(horizontalNegativeErrorValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalPositiveErrorValue)) __obj.updateDynamic("horizontalPositiveErrorValue")(horizontalPositiveErrorValue.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (verticalErrorValue != null) __obj.updateDynamic("verticalErrorValue")(verticalErrorValue.asInstanceOf[js.Any])
-    if (verticalNegativeErrorValue != null) __obj.updateDynamic("verticalNegativeErrorValue")(verticalNegativeErrorValue.asInstanceOf[js.Any])
-    if (verticalPositiveErrorValue != null) __obj.updateDynamic("verticalPositiveErrorValue")(verticalPositiveErrorValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalErrorValue)) __obj.updateDynamic("verticalErrorValue")(verticalErrorValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalNegativeErrorValue)) __obj.updateDynamic("verticalNegativeErrorValue")(verticalNegativeErrorValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalPositiveErrorValue)) __obj.updateDynamic("verticalPositiveErrorValue")(verticalPositiveErrorValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonSeriesOptionsErrorBar]
   }
 }

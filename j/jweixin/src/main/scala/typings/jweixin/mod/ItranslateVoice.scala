@@ -1,6 +1,6 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonTranslateResult
+import typings.jweixin.anon.TranslateResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait ItranslateVoice extends BaseParams {
   var localId: String
    // 默认为1，显示进度提示
   @JSName("success")
-  def success_MItranslateVoice(res: AnonTranslateResult): Unit
+  def success_MItranslateVoice(res: TranslateResult): Unit
 }
 
 object ItranslateVoice {
@@ -21,7 +21,7 @@ object ItranslateVoice {
   def apply(
     isShowProgressTips: Double,
     localId: String,
-    success: AnonTranslateResult => Unit,
+    success: TranslateResult => Unit,
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): ItranslateVoice = {

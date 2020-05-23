@@ -1,14 +1,14 @@
 package typings.gapiClientBooks.gapi.client.books
 
-import typings.gapiClientBooks.AnonDescription
-import typings.gapiClientBooks.AnonDisplayName
+import typings.gapiClientBooks.anon.Description
+import typings.gapiClientBooks.anon.DisplayName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Review extends js.Object {
   /** Author of this review. */
-  var author: js.UndefOr[AnonDisplayName] = js.undefined
+  var author: js.UndefOr[DisplayName] = js.undefined
   /** Review text. */
   var content: js.UndefOr[String] = js.undefined
   /** Date of this review. */
@@ -20,7 +20,7 @@ trait Review extends js.Object {
   /** Star rating for this review. Possible values are ONE, TWO, THREE, FOUR, FIVE or NOT_RATED. */
   var rating: js.UndefOr[String] = js.undefined
   /** Information regarding the source of this review, when the review is not from a Google Books user. */
-  var source: js.UndefOr[AnonDescription] = js.undefined
+  var source: js.UndefOr[Description] = js.undefined
   /** Title for this review. */
   var title: js.UndefOr[String] = js.undefined
   /** Source type for this review. Possible values are EDITORIAL, WEB_USER or GOOGLE_USER. */
@@ -32,13 +32,13 @@ trait Review extends js.Object {
 object Review {
   @scala.inline
   def apply(
-    author: AnonDisplayName = null,
+    author: DisplayName = null,
     content: String = null,
     date: String = null,
     fullTextUrl: String = null,
     kind: String = null,
     rating: String = null,
-    source: AnonDescription = null,
+    source: Description = null,
     title: String = null,
     `type`: String = null,
     volumeId: String = null

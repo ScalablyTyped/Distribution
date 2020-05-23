@@ -15,10 +15,13 @@ trait IUpdateDocumentRequest extends js.Object {
 
 object IUpdateDocumentRequest {
   @scala.inline
-  def apply(document: IDocument = null, updateMask: IFieldMask = null): IUpdateDocumentRequest = {
+  def apply(
+    document: js.UndefOr[Null | IDocument] = js.undefined,
+    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
+  ): IUpdateDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(document)) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateDocumentRequest]
   }
 }

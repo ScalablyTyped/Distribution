@@ -21,7 +21,7 @@ object SlicerItemUpdateData {
   @scala.inline
   def apply(isSelected: js.UndefOr[Boolean] = js.undefined): SlicerItemUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlicerItemUpdateData]
   }
 }

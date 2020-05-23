@@ -1,5 +1,6 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ object datePickerDatepickerMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonLocale = js.native
+    var defaultProps: Locale = js.native
   }
   
 }

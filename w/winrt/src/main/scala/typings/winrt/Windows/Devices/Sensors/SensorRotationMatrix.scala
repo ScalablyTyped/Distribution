@@ -4,26 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sensors.SensorRotationMatrix")
-@js.native
-class SensorRotationMatrix () extends ISensorRotationMatrix {
-  /* CompleteClass */
-  override var m11: Double = js.native
-  /* CompleteClass */
-  override var m12: Double = js.native
-  /* CompleteClass */
-  override var m13: Double = js.native
-  /* CompleteClass */
-  override var m21: Double = js.native
-  /* CompleteClass */
-  override var m22: Double = js.native
-  /* CompleteClass */
-  override var m23: Double = js.native
-  /* CompleteClass */
-  override var m31: Double = js.native
-  /* CompleteClass */
-  override var m32: Double = js.native
-  /* CompleteClass */
-  override var m33: Double = js.native
+trait SensorRotationMatrix extends ISensorRotationMatrix
+
+object SensorRotationMatrix {
+  @scala.inline
+  def apply(
+    m11: Double,
+    m12: Double,
+    m13: Double,
+    m21: Double,
+    m22: Double,
+    m23: Double,
+    m31: Double,
+    m32: Double,
+    m33: Double
+  ): SensorRotationMatrix = {
+    val __obj = js.Dynamic.literal(m11 = m11.asInstanceOf[js.Any], m12 = m12.asInstanceOf[js.Any], m13 = m13.asInstanceOf[js.Any], m21 = m21.asInstanceOf[js.Any], m22 = m22.asInstanceOf[js.Any], m23 = m23.asInstanceOf[js.Any], m31 = m31.asInstanceOf[js.Any], m32 = m32.asInstanceOf[js.Any], m33 = m33.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SensorRotationMatrix]
+  }
 }
 

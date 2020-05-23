@@ -1,13 +1,13 @@
 package typings.systeminformation.mod.Systeminformation
 
-import typings.systeminformation.AnonR
-import typings.systeminformation.AnonRx
+import typings.systeminformation.anon.R
+import typings.systeminformation.anon.Rx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DockerContainerStatsData extends js.Object {
-  var blockIO: AnonR
+  var blockIO: R
   var cpu_percent: Double
   var cpu_stats: js.Any
   var id: String
@@ -15,7 +15,7 @@ trait DockerContainerStatsData extends js.Object {
   var mem_percent: Double
   var mem_usage: Double
   var memory_stats: js.Any
-  var netIO: AnonRx
+  var netIO: Rx
   var networks: js.Any
   var precpu_stats: js.Any
   var restartCount: Double
@@ -24,7 +24,7 @@ trait DockerContainerStatsData extends js.Object {
 object DockerContainerStatsData {
   @scala.inline
   def apply(
-    blockIO: AnonR,
+    blockIO: R,
     cpu_percent: Double,
     cpu_stats: js.Any,
     id: String,
@@ -32,7 +32,7 @@ object DockerContainerStatsData {
     mem_percent: Double,
     mem_usage: Double,
     memory_stats: js.Any,
-    netIO: AnonRx,
+    netIO: Rx,
     networks: js.Any,
     precpu_stats: js.Any,
     restartCount: Double

@@ -18,10 +18,13 @@ trait TargetGroupStickinessConfig extends js.Object {
 
 object TargetGroupStickinessConfig {
   @scala.inline
-  def apply(DurationSeconds: Int | Double = null, Enabled: js.UndefOr[Boolean] = js.undefined): TargetGroupStickinessConfig = {
+  def apply(
+    DurationSeconds: js.UndefOr[TargetGroupStickinessDurationSeconds] = js.undefined,
+    Enabled: js.UndefOr[TargetGroupStickinessEnabled] = js.undefined
+  ): TargetGroupStickinessConfig = {
     val __obj = js.Dynamic.literal()
-    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetGroupStickinessConfig]
   }
 }

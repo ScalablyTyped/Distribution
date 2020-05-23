@@ -1,7 +1,7 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonExclude
-import typings.sequelize.AnonLevel
+import typings.sequelize.anon.Exclude
+import typings.sequelize.anon.Level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait FindOptions[T]
     * `Sequelize.literal`, `Sequelize.fn` and so on), and the second is the name you want the attribute to
     * have in the returned instance
     */
-  var attributes: js.UndefOr[FindOptionsAttributesArray | AnonExclude] = js.undefined
+  var attributes: js.UndefOr[FindOptionsAttributesArray | Exclude] = js.undefined
   /**
     * Apply DISTINCT(col) for FindAndCount(all)
     */
@@ -50,7 +50,7 @@ trait FindOptions[T]
     * Postgres also supports transaction.LOCK.KEY_SHARE, transaction.LOCK.NO_KEY_UPDATE and specific model
     * locks with joins. See [transaction.LOCK for an example](transaction#lock)
     */
-  var lock: js.UndefOr[TransactionLockLevel | AnonLevel] = js.undefined
+  var lock: js.UndefOr[TransactionLockLevel | Level] = js.undefined
   /**
     * Skip the results;
     */
@@ -98,16 +98,16 @@ trait FindOptions[T]
 object FindOptions {
   @scala.inline
   def apply[T](
-    attributes: FindOptionsAttributesArray | AnonExclude = null,
+    attributes: FindOptionsAttributesArray | Exclude = null,
     benchmark: js.UndefOr[Boolean] = js.undefined,
     distinct: js.UndefOr[Boolean] = js.undefined,
     group: String | js.Array[String] | js.Object = null,
     having: AnyWhereOptions = null,
     include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
-    limit: Int | Double = null,
-    lock: TransactionLockLevel | AnonLevel = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    lock: TransactionLockLevel | Level = null,
     logging: Boolean | js.Function = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     order: String | col | literal | FindOptionsOrderArray | fn | (js.Array[String | col | literal | FindOptionsOrderArray | fn]) = null,
     paranoid: js.UndefOr[Boolean] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
@@ -120,23 +120,23 @@ object FindOptions {
   ): FindOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.asInstanceOf[js.Any])
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (having != null) __obj.updateDynamic("having")(having.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (lock != null) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(paranoid)) __obj.updateDynamic("paranoid")(paranoid.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectOnEmpty)) __obj.updateDynamic("rejectOnEmpty")(rejectOnEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(paranoid)) __obj.updateDynamic("paranoid")(paranoid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectOnEmpty)) __obj.updateDynamic("rejectOnEmpty")(rejectOnEmpty.get.asInstanceOf[js.Any])
     if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(subQuery)) __obj.updateDynamic("subQuery")(subQuery.asInstanceOf[js.Any])
+    if (!js.isUndefined(subQuery)) __obj.updateDynamic("subQuery")(subQuery.get.asInstanceOf[js.Any])
     if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaster)) __obj.updateDynamic("useMaster")(useMaster.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMaster)) __obj.updateDynamic("useMaster")(useMaster.get.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOptions[T]]
   }

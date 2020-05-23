@@ -1,6 +1,6 @@
 package typings.storybookApi.mod
 
-import typings.storybookApi.AnonCustomQueryParams
+import typings.storybookApi.anon.CustomQueryParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,6 @@ class Provider protected () extends ManagerProvider {
 @js.native
 object Provider extends js.Object {
   var displayName: String = js.native
-  def getDerivedStateFromProps(props: Props, state: State): AnonCustomQueryParams = js.native
+  def getDerivedStateFromProps(props: Props, state: State): CustomQueryParams = js.native
 }
 

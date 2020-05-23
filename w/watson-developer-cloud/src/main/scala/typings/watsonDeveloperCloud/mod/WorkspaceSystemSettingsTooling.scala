@@ -14,7 +14,7 @@ object WorkspaceSystemSettingsTooling {
   @scala.inline
   def apply(store_generic_responses: js.UndefOr[Boolean] = js.undefined): WorkspaceSystemSettingsTooling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(store_generic_responses)) __obj.updateDynamic("store_generic_responses")(store_generic_responses.asInstanceOf[js.Any])
+    if (!js.isUndefined(store_generic_responses)) __obj.updateDynamic("store_generic_responses")(store_generic_responses.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceSystemSettingsTooling]
   }
 }

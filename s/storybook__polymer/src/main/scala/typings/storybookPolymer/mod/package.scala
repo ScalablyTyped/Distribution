@@ -12,7 +12,7 @@ package object mod {
   type Renderable = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateResult */ js.Any
   type StoryDecorator = js.Function2[
     /* story */ typings.storybookPolymer.mod.RenderFunction, 
-    /* context */ typings.storybookPolymer.AnonKind, 
+    /* context */ typings.storybookPolymer.anon.Kind, 
     typings.storybookPolymer.mod.Renderable | scala.Null
   ]
 }

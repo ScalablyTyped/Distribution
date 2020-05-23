@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,4 @@ trait SizeStop
     */
   var value: Double = js.native
 }
-
-@JSGlobal("__esri.SizeStop")
-@js.native
-object SizeStop extends TopLevel[SizeStopConstructor]
 

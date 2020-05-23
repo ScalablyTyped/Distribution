@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Sammy.Object")
 @js.native
-class Object protected () extends js.Object {
-  def this(obj: js.Any) = this()
+trait Object extends js.Object {
   def escapeHTML(s: String): String = js.native
   def h(s: String): String = js.native
   def has(key: String): Boolean = js.native

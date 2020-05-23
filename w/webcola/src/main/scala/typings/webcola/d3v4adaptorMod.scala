@@ -6,6 +6,9 @@ import typings.d3Drag.mod.DraggedElementBaseType
 import typings.d3Drag.mod.SubjectPosition
 import typings.d3Timer.mod.Timer_
 import typings.std.EventTarget
+import typings.webcola.anon.Fn0
+import typings.webcola.anon.FnCall
+import typings.webcola.anon.FnCallTypes
 import typings.webcola.d3adaptorMod.ID3StyleLayoutAdaptor
 import typings.webcola.layoutMod.Event
 import typings.webcola.layoutMod.Layout

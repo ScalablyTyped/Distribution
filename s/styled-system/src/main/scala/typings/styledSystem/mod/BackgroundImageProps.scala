@@ -16,9 +16,11 @@ trait BackgroundImageProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extend
 
 object BackgroundImageProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](backgroundImage: ResponsiveValue[BackgroundImageProperty, ThemeType] = null): BackgroundImageProps[ThemeType] = {
+  def apply[ThemeType](
+    backgroundImage: js.UndefOr[Null | (ResponsiveValue[BackgroundImageProperty, ThemeType])] = js.undefined
+  ): BackgroundImageProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundImage)) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundImageProps[ThemeType]]
   }
 }

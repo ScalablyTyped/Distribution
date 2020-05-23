@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.selectedItemWithContextMenuMod
 
 import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
 import typings.officeUiFabricReact.selectedPeopleListMod.IExtendedPersonaProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import typings.uifabricUtilities.createRefMod.IRefObject
 import scala.scalajs.js

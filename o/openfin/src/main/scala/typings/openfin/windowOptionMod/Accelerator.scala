@@ -20,10 +20,10 @@ object Accelerator {
     zoom: js.UndefOr[Boolean] = js.undefined
   ): Accelerator = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools.asInstanceOf[js.Any])
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadIgnoringCache)) __obj.updateDynamic("reloadIgnoringCache")(reloadIgnoringCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadIgnoringCache)) __obj.updateDynamic("reloadIgnoringCache")(reloadIgnoringCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accelerator]
   }
 }

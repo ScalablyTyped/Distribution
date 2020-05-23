@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/view_snapshot", "DocumentChangeSet")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/view_snapshot", "DocumentChangeSet")
 @js.native
 class DocumentChangeSet () extends js.Object {
   var changeMap: js.Any = js.native

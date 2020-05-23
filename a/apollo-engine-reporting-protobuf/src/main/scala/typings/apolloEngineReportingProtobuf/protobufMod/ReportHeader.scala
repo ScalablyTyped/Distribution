@@ -20,24 +20,21 @@ class ReportHeader () extends IReportHeader {
   /** ReportHeader agentVersion. */
   @JSName("agentVersion")
   var agentVersion_ReportHeader: String = js.native
+  /** ReportHeader executableSchemaId. */
+  @JSName("executableSchemaId")
+  var executableSchemaId_ReportHeader: String = js.native
   /** ReportHeader hostname. */
   @JSName("hostname")
   var hostname_ReportHeader: String = js.native
   /** ReportHeader runtimeVersion. */
   @JSName("runtimeVersion")
   var runtimeVersion_ReportHeader: String = js.native
-  /** ReportHeader schemaHash. */
-  @JSName("schemaHash")
-  var schemaHash_ReportHeader: String = js.native
   /** ReportHeader schemaTag. */
   @JSName("schemaTag")
   var schemaTag_ReportHeader: String = js.native
   /** ReportHeader serviceVersion. */
   @JSName("serviceVersion")
   var serviceVersion_ReportHeader: String = js.native
-  /** ReportHeader service. */
-  @JSName("service")
-  var service_ReportHeader: String = js.native
   /** ReportHeader uname. */
   @JSName("uname")
   var uname_ReportHeader: String = js.native

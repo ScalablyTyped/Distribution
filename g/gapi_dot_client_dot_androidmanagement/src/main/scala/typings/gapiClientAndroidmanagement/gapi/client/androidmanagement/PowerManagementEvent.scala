@@ -15,9 +15,13 @@ trait PowerManagementEvent extends js.Object {
 
 object PowerManagementEvent {
   @scala.inline
-  def apply(batteryLevel: Int | Double = null, createTime: String = null, eventType: String = null): PowerManagementEvent = {
+  def apply(
+    batteryLevel: js.UndefOr[Double] = js.undefined,
+    createTime: String = null,
+    eventType: String = null
+  ): PowerManagementEvent = {
     val __obj = js.Dynamic.literal()
-    if (batteryLevel != null) __obj.updateDynamic("batteryLevel")(batteryLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(batteryLevel)) __obj.updateDynamic("batteryLevel")(batteryLevel.get.asInstanceOf[js.Any])
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
     if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PowerManagementEvent]

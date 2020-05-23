@@ -3,8 +3,6 @@ package typings.jupyterlabDocumentsearch.notebooksearchproviderMod
 import typings.jupyterlabDocumentsearch.interfacesMod.IFiltersType
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchMatch
 import typings.jupyterlabDocumentsearch.interfacesMod.ISearchProvider
-import typings.jupyterlabDocumentsearch.jupyterlabDocumentsearchBooleans.`false`
-import typings.jupyterlabDocumentsearch.jupyterlabDocumentsearchBooleans.`true`
 import typings.jupyterlabNotebook.mod.NotebookPanel
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
@@ -49,7 +47,7 @@ class NotebookSearchProvider () extends ISearchProvider[NotebookPanel] {
   /* CompleteClass */
   override val currentMatchIndex: Double | Null = js.native
   @JSName("hasOutputs")
-  val hasOutputs_NotebookSearchProvider: `true` = js.native
+  val hasOutputs_NotebookSearchProvider: /* true */ Boolean = js.native
   /**
     * Set to true if the widget under search is read-only, false
     * if it is editable.  Will be used to determine whether to show
@@ -57,13 +55,6 @@ class NotebookSearchProvider () extends ISearchProvider[NotebookPanel] {
     */
   /* CompleteClass */
   override val isReadOnly: Boolean = js.native
-  /**
-    * Set to true if the widget under search is read-only, false
-    * if it is editable.  Will be used to determine whether to show
-    * the replace option.
-    */
-  @JSName("isReadOnly")
-  val isReadOnly_NotebookSearchProvider: `false` = js.native
   /**
     * The same list of matches provided by the startQuery promise resoluton
     */
@@ -139,6 +130,16 @@ class NotebookSearchProvider () extends ISearchProvider[NotebookPanel] {
     */
   /* CompleteClass */
   override def replaceCurrentMatch(newText: String): js.Promise[Boolean] = js.native
+  /**
+    * Initialize the search using the provided options. Should update the UI
+    * to highlight all matches and "select" whatever the first match should be.
+    *
+    * @param query A RegExp to be use to perform the search
+    * @param searchTarget The widget to be searched
+    * @param filters Filter parameters to pass to provider
+    *
+    * @returns A promise that resolves with a list of all matches
+    */
   def startQuery(query: RegExp, searchTarget: NotebookPanel): js.Promise[js.Array[ISearchMatch]] = js.native
   /**
     * Initialize the search using the provided options.  Should update the UI
@@ -152,16 +153,6 @@ class NotebookSearchProvider () extends ISearchProvider[NotebookPanel] {
     */
   /* CompleteClass */
   override def startQuery(query: RegExp, searchTarget: NotebookPanel, filters: IFiltersType): js.Promise[js.Array[ISearchMatch]] = js.native
-  /**
-    * Initialize the search using the provided options. Should update the UI
-    * to highlight all matches and "select" whatever the first match should be.
-    *
-    * @param query A RegExp to be use to perform the search
-    * @param searchTarget The widget to be searched
-    * @param filters Filter parameters to pass to provider
-    *
-    * @returns A promise that resolves with a list of all matches
-    */
   def startQuery(query: RegExp, searchTarget: NotebookPanel, filters: INotebookFilters): js.Promise[js.Array[ISearchMatch]] = js.native
 }
 

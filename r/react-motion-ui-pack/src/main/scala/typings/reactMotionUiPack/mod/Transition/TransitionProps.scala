@@ -35,7 +35,7 @@ object TransitionProps {
     if (leave != null) __obj.updateDynamic("leave")(leave.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
     if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction1(onLeave))
-    if (!js.isUndefined(runOnMount)) __obj.updateDynamic("runOnMount")(runOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(runOnMount)) __obj.updateDynamic("runOnMount")(runOnMount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionProps]
   }
 }

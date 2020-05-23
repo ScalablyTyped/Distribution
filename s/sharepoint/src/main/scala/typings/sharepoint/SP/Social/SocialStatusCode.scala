@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,59 +71,6 @@ object SocialStatusCode extends js.Object {
   
   @js.native
   sealed trait personalSiteNotFound extends SocialStatusCode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialStatusCode with Double] = js.native
-  /* 0 */ @js.native
-  object OK extends TopLevel[OK with Double]
-  
-  /* 2 */ @js.native
-  object accessDenied extends TopLevel[accessDenied with Double]
-  
-  /* 14 */ @js.native
-  object attachmentError extends TopLevel[attachmentError with Double]
-  
-  /* 7 */ @js.native
-  object cacheReadError extends TopLevel[cacheReadError with Double]
-  
-  /* 8 */ @js.native
-  object cacheUpdateError extends TopLevel[cacheUpdateError with Double]
-  
-  /* 12 */ @js.native
-  object cannotCreatePersonalSite extends TopLevel[cannotCreatePersonalSite with Double]
-  
-  /* 10 */ @js.native
-  object failedToCreatePersonalSite extends TopLevel[failedToCreatePersonalSite with Double]
-  
-  /* 16 */ @js.native
-  object featureDisabled extends TopLevel[featureDisabled with Double]
-  
-  /* 6 */ @js.native
-  object internalError extends TopLevel[internalError with Double]
-  
-  /* 4 */ @js.native
-  object invalidOperation extends TopLevel[invalidOperation with Double]
-  
-  /* 1 */ @js.native
-  object invalidRequest extends TopLevel[invalidRequest with Double]
-  
-  /* 3 */ @js.native
-  object itemNotFound extends TopLevel[itemNotFound with Double]
-  
-  /* 5 */ @js.native
-  object itemNotModified extends TopLevel[itemNotModified with Double]
-  
-  /* 13 */ @js.native
-  object limitReached extends TopLevel[limitReached with Double]
-  
-  /* 11 */ @js.native
-  object notAuthorizedToCreatePersonalSite extends TopLevel[notAuthorizedToCreatePersonalSite with Double]
-  
-  /* 15 */ @js.native
-  object partialData extends TopLevel[partialData with Double]
-  
-  /* 9 */ @js.native
-  object personalSiteNotFound extends TopLevel[personalSiteNotFound with Double]
   
 }
 

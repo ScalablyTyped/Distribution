@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.PartialIToggleState
-import typings.officeUiFabricReact.ReadonlyIToggleProps
-import typings.officeUiFabricReact.ReadonlyIToggleState
+import typings.officeUiFabricReact.anon.PartialIToggleState
+import typings.officeUiFabricReact.anon.ReadonlyIToggleProps
+import typings.officeUiFabricReact.anon.ReadonlyIToggleState
 import typings.officeUiFabricReact.toggleTypesMod.IToggleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

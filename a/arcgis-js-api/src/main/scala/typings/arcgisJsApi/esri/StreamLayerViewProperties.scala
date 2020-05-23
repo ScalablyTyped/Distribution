@@ -30,7 +30,7 @@ object StreamLayerViewProperties {
     val __obj = js.Dynamic.literal()
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamLayerViewProperties]
   }
 }

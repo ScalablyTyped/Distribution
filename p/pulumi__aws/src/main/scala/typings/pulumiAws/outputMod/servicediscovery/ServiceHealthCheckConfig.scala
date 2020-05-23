@@ -22,9 +22,13 @@ trait ServiceHealthCheckConfig extends js.Object {
 
 object ServiceHealthCheckConfig {
   @scala.inline
-  def apply(failureThreshold: Int | Double = null, resourcePath: String = null, `type`: String = null): ServiceHealthCheckConfig = {
+  def apply(
+    failureThreshold: js.UndefOr[Double] = js.undefined,
+    resourcePath: String = null,
+    `type`: String = null
+  ): ServiceHealthCheckConfig = {
     val __obj = js.Dynamic.literal()
-    if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(failureThreshold)) __obj.updateDynamic("failureThreshold")(failureThreshold.get.asInstanceOf[js.Any])
     if (resourcePath != null) __obj.updateDynamic("resourcePath")(resourcePath.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceHealthCheckConfig]

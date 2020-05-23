@@ -1,6 +1,5 @@
 package typings.tslint
 
-import typings.tslint.tslintStrings.Tildenil
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +41,7 @@ object linesMod extends js.Object {
     def this(startCol: Double) = this()
   }
   
-  val ZERO_LENGTH_ERROR: Tildenil = js.native
+  val ZERO_LENGTH_ERROR: /* "~nil" */ String = js.native
   def parseLine(text: String): Line = js.native
   def printLine(fileName: String, line: Line): js.UndefOr[String] = js.native
   def printLine(fileName: String, line: Line, code: String): js.UndefOr[String] = js.native

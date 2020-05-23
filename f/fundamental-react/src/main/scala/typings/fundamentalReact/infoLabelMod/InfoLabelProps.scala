@@ -25,24 +25,3 @@ trait InfoLabelProps
   var numeric: js.UndefOr[Boolean] = js.undefined
 }
 
-object InfoLabelProps {
-  @scala.inline
-  def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    className: String = null,
-    color: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` = null,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    glyph: IconGlyph = null,
-    numeric: js.UndefOr[Boolean] = js.undefined
-  ): InfoLabelProps = {
-    val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InfoLabelProps]
-  }
-}
-

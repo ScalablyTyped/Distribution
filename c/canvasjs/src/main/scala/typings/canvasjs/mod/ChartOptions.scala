@@ -139,7 +139,7 @@ object ChartOptions {
   def apply(
     data: js.Array[ChartDataSeriesOptions],
     title: ChartTitleOptions,
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationEnabled: js.UndefOr[Boolean] = js.undefined,
     axisX: ChartAxisXOptions | js.Array[ChartAxisXOptions] = null,
     axisX2: ChartAxisXOptions | js.Array[ChartAxisXOptions] = null,
@@ -148,21 +148,21 @@ object ChartOptions {
     backgroundColor: String = null,
     colorSet: String = null,
     culture: String = null,
-    dataPointMaxWidth: Int | Double = null,
+    dataPointMaxWidth: js.UndefOr[Double] = js.undefined,
     exportEnabled: js.UndefOr[Boolean] = js.undefined,
     exportFileName: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     interactivityEnabled: js.UndefOr[Boolean] = js.undefined,
     legend: ChartLegendOptions = null,
     subtitles: js.Array[ChartTitleOptions] = null,
     theme: String = null,
     toolTip: ChartToolTipOptions = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     zoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): ChartOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled.get.asInstanceOf[js.Any])
     if (axisX != null) __obj.updateDynamic("axisX")(axisX.asInstanceOf[js.Any])
     if (axisX2 != null) __obj.updateDynamic("axisX2")(axisX2.asInstanceOf[js.Any])
     if (axisY != null) __obj.updateDynamic("axisY")(axisY.asInstanceOf[js.Any])
@@ -170,17 +170,17 @@ object ChartOptions {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (colorSet != null) __obj.updateDynamic("colorSet")(colorSet.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (dataPointMaxWidth != null) __obj.updateDynamic("dataPointMaxWidth")(dataPointMaxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(exportEnabled)) __obj.updateDynamic("exportEnabled")(exportEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataPointMaxWidth)) __obj.updateDynamic("dataPointMaxWidth")(dataPointMaxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exportEnabled)) __obj.updateDynamic("exportEnabled")(exportEnabled.get.asInstanceOf[js.Any])
     if (exportFileName != null) __obj.updateDynamic("exportFileName")(exportFileName.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactivityEnabled)) __obj.updateDynamic("interactivityEnabled")(interactivityEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactivityEnabled)) __obj.updateDynamic("interactivityEnabled")(interactivityEnabled.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (subtitles != null) __obj.updateDynamic("subtitles")(subtitles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartOptions]
   }
 }

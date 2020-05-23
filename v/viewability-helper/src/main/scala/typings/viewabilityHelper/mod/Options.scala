@@ -17,19 +17,19 @@ object Options {
   @scala.inline
   def apply(
     callbackParams: js.Array[_] = null,
-    intersectionPercentage: Int | Double = null,
+    intersectionPercentage: js.UndefOr[Double] = js.undefined,
     rootMargin: String = null,
-    scrollDimmer: Int | Double = null,
+    scrollDimmer: js.UndefOr[Double] = js.undefined,
     threshold: js.Array[Double] = null,
     unobserve: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (callbackParams != null) __obj.updateDynamic("callbackParams")(callbackParams.asInstanceOf[js.Any])
-    if (intersectionPercentage != null) __obj.updateDynamic("intersectionPercentage")(intersectionPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(intersectionPercentage)) __obj.updateDynamic("intersectionPercentage")(intersectionPercentage.get.asInstanceOf[js.Any])
     if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin.asInstanceOf[js.Any])
-    if (scrollDimmer != null) __obj.updateDynamic("scrollDimmer")(scrollDimmer.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollDimmer)) __obj.updateDynamic("scrollDimmer")(scrollDimmer.get.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(unobserve)) __obj.updateDynamic("unobserve")(unobserve.asInstanceOf[js.Any])
+    if (!js.isUndefined(unobserve)) __obj.updateDynamic("unobserve")(unobserve.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

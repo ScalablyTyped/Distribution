@@ -1,9 +1,9 @@
 package typings.babylonjs.webXRAbstractMotionControllerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.AnonFilename
 import typings.babylonjs.XRFrame
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.Filename
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
@@ -89,7 +89,7 @@ abstract class WebXRAbstractMotionController protected () extends IDisposable {
     * Get the filename and path for this controller's model
     * @returns a map of filename and path
     */
-  /* protected */ def _getFilenameAndPath(): AnonFilename = js.native
+  /* protected */ def _getFilenameAndPath(): Filename = js.native
   /* protected */ def _getImmediateChildByName(node: AbstractMesh, name: String): AbstractMesh = js.native
   /**
     * This function is called before the mesh is loaded. It checks for loading constraints.

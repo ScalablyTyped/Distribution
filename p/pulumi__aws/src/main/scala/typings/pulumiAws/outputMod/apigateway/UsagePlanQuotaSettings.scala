@@ -22,9 +22,9 @@ trait UsagePlanQuotaSettings extends js.Object {
 
 object UsagePlanQuotaSettings {
   @scala.inline
-  def apply(limit: Double, period: String, offset: Int | Double = null): UsagePlanQuotaSettings = {
+  def apply(limit: Double, period: String, offset: js.UndefOr[Double] = js.undefined): UsagePlanQuotaSettings = {
     val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsagePlanQuotaSettings]
   }
 }

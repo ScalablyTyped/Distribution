@@ -36,16 +36,16 @@ object IPersonaStyleProps {
   def apply(
     theme: ITheme,
     className: String = null,
-    coinSize: Int | Double = null,
+    coinSize: js.UndefOr[Double] = js.undefined,
     presence: PersonaPresence = null,
     showSecondaryText: js.UndefOr[Boolean] = js.undefined,
     size: PersonaSize = null
   ): IPersonaStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (coinSize != null) __obj.updateDynamic("coinSize")(coinSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(coinSize)) __obj.updateDynamic("coinSize")(coinSize.get.asInstanceOf[js.Any])
     if (presence != null) __obj.updateDynamic("presence")(presence.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSecondaryText)) __obj.updateDynamic("showSecondaryText")(showSecondaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSecondaryText)) __obj.updateDynamic("showSecondaryText")(showSecondaryText.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonaStyleProps]
   }

@@ -13,9 +13,9 @@ trait PointOptionsObject extends js.Object {
 
 object PointOptionsObject {
   @scala.inline
-  def apply(x2: Int | Double = null): PointOptionsObject = {
+  def apply(x2: js.UndefOr[Double] = js.undefined): PointOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
+    if (!js.isUndefined(x2)) __obj.updateDynamic("x2")(x2.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointOptionsObject]
   }
 }

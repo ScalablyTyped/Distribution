@@ -22,11 +22,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.TextureMatrix")
 @js.native
-class TextureMatrix protected () extends js.Object {
-  def this(texture: Texture) = this()
-  def this(texture: Texture, clampMargin: Double) = this()
+trait TextureMatrix extends js.Object {
   /**
     * Tracks Texture frame changes
     * @member {number} PIXI.TextureMatrix#_updateID

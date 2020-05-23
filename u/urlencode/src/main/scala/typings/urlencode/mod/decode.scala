@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object decode extends js.Object {
   /**
-  	 * Decode string
-  	 * @param encodedString The encoded string.
-  	 */
+    * Decode string
+    * @param encodedString The encoded string.
+    */
   def apply(encodedString: String): String = js.native
   def apply(encodedString: String, charset: String): String = js.native
 }

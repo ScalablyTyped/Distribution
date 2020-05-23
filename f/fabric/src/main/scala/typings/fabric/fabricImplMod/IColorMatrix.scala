@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait IColorMatrix extends IBaseFilter {
   var matrix: js.UndefOr[js.Array[Double]] = js.native
   /**
-  	 * Applies filter to canvas element
-  	 * @param canvasEl Canvas element to apply filter to
-  	 */
+    * Applies filter to canvas element
+    * @param canvasEl Canvas element to apply filter to
+    */
   def applyTo(canvasEl: HTMLCanvasElement): Unit = js.native
 }
 

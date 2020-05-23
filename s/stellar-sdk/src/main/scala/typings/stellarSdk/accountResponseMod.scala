@@ -2,6 +2,7 @@ package typings.stellarSdk
 
 import typings.std.Record
 import typings.stellarBase.mod.AssetType
+import typings.stellarSdk.anon.Value
 import typings.stellarSdk.horizonApiMod.Horizon.AccountThresholds
 import typings.stellarSdk.horizonApiMod.Horizon.BalanceLine
 import typings.stellarSdk.horizonApiMod.Horizon.Flags
@@ -39,7 +40,7 @@ object accountResponseMod extends js.Object {
     val subentry_count: Double = js.native
     val thresholds: AccountThresholds = js.native
     def accountId(): String = js.native
-    def data(options: AnonValue): js.Promise[AnonValue] = js.native
+    def data(options: Value): js.Promise[Value] = js.native
     def effects(): js.Promise[CollectionPage[EffectRecord]] = js.native
     def effects(options: CallFunctionTemplateOptions): js.Promise[CollectionPage[EffectRecord]] = js.native
     def incrementSequenceNumber(): Unit = js.native

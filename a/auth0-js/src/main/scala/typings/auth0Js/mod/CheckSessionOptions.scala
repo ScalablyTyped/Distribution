@@ -2,14 +2,15 @@ package typings.auth0Js.mod
 
 import typings.auth0Js.auth0JsStrings.login
 import typings.auth0Js.auth0JsStrings.signUp
+import typings.auth0Js.auth0JsStrings.signup_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CheckSessionOptions extends AuthorizeOptions {
   /**
-  	 * optional parameter for auth0 to use postMessage to communicate between the silent callback and the SPA.
-  	 */
+    * optional parameter for auth0 to use postMessage to communicate between the silent callback and the SPA.
+    */
   var usePostMessage: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -33,6 +34,7 @@ object CheckSessionOptions {
     responseMode: String = null,
     responseType: String = null,
     scope: String = null,
+    screen_hint: signup_ = null,
     state: String = null,
     usePostMessage: js.UndefOr[Boolean] = js.undefined
   ): CheckSessionOptions = {
@@ -54,8 +56,9 @@ object CheckSessionOptions {
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (screen_hint != null) __obj.updateDynamic("screen_hint")(screen_hint.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePostMessage)) __obj.updateDynamic("usePostMessage")(usePostMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePostMessage)) __obj.updateDynamic("usePostMessage")(usePostMessage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckSessionOptions]
   }
 }

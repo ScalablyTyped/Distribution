@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.SATFactory")
-@js.native
-class SATFactory () extends js.Object {
+trait SATFactory extends js.Object {
   /**
     * Detect collision between two bodies using the Separating Axis Theorem.
     * @method collides
@@ -15,6 +13,14 @@ class SATFactory () extends js.Object {
     * @param {ICollisionData} previousCollision
     * @return {ICollisionData} collision
     */
-  def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData = js.native
+  def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData
+}
+
+object SATFactory {
+  @scala.inline
+  def apply(collides: (BodyType, BodyType, ICollisionData) => ICollisionData): SATFactory = {
+    val __obj = js.Dynamic.literal(collides = js.Any.fromFunction3(collides))
+    __obj.asInstanceOf[SATFactory]
+  }
 }
 

@@ -15,7 +15,7 @@ trait ChangeStreamEvents[TSchema /* <: StringDictionary[js.Any] */] extends js.O
 
 object ChangeStreamEvents {
   @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](
+  def apply[TSchema](
     change: ChangeEvent[TSchema] => Unit,
     close: () => Unit,
     end: () => Unit,

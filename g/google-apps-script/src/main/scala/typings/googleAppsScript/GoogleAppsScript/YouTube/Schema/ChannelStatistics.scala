@@ -23,7 +23,7 @@ object ChannelStatistics {
   ): ChannelStatistics = {
     val __obj = js.Dynamic.literal()
     if (commentCount != null) __obj.updateDynamic("commentCount")(commentCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(hiddenSubscriberCount)) __obj.updateDynamic("hiddenSubscriberCount")(hiddenSubscriberCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(hiddenSubscriberCount)) __obj.updateDynamic("hiddenSubscriberCount")(hiddenSubscriberCount.get.asInstanceOf[js.Any])
     if (subscriberCount != null) __obj.updateDynamic("subscriberCount")(subscriberCount.asInstanceOf[js.Any])
     if (videoCount != null) __obj.updateDynamic("videoCount")(videoCount.asInstanceOf[js.Any])
     if (viewCount != null) __obj.updateDynamic("viewCount")(viewCount.asInstanceOf[js.Any])

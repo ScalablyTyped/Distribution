@@ -78,7 +78,7 @@ object AtImportOptions {
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction3(resolve))
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipDuplicates)) __obj.updateDynamic("skipDuplicates")(skipDuplicates.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipDuplicates)) __obj.updateDynamic("skipDuplicates")(skipDuplicates.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtImportOptions]
   }
 }

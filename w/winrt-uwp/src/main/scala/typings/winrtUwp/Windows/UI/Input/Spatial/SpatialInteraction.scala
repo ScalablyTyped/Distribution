@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Spatial.SpatialInteraction")
-@js.native
-abstract class SpatialInteraction () extends js.Object {
-  var sourceState: js.Any = js.native
+trait SpatialInteraction extends js.Object {
+  var sourceState: js.Any
+}
+
+object SpatialInteraction {
+  @scala.inline
+  def apply(sourceState: js.Any): SpatialInteraction = {
+    val __obj = js.Dynamic.literal(sourceState = sourceState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialInteraction]
+  }
 }
 

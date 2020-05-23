@@ -15,7 +15,7 @@ trait URISchemeHandler[Components /* <: URIComponents */, Options /* <: URIOptio
 
 object URISchemeHandler {
   @scala.inline
-  def apply[Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */](
+  def apply[Components, Options, ParentComponents](
     parse: (ParentComponents, Options) => Components,
     scheme: String,
     serialize: (Components, Options) => ParentComponents,
@@ -24,9 +24,9 @@ object URISchemeHandler {
     unicodeSupport: js.UndefOr[Boolean] = js.undefined
   ): URISchemeHandler[Components, Options, ParentComponents] = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction2(parse), scheme = scheme.asInstanceOf[js.Any], serialize = js.Any.fromFunction2(serialize))
-    if (!js.isUndefined(absolutePath)) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(domainHost)) __obj.updateDynamic("domainHost")(domainHost.asInstanceOf[js.Any])
-    if (!js.isUndefined(unicodeSupport)) __obj.updateDynamic("unicodeSupport")(unicodeSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(absolutePath)) __obj.updateDynamic("absolutePath")(absolutePath.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainHost)) __obj.updateDynamic("domainHost")(domainHost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicodeSupport)) __obj.updateDynamic("unicodeSupport")(unicodeSupport.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[URISchemeHandler[Components, Options, ParentComponents]]
   }
 }

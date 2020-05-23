@@ -29,13 +29,13 @@ object WiFi {
     BSSID: String = null,
     SSID: String = null,
     secure: js.UndefOr[Boolean] = js.undefined,
-    signalStrength: Int | Double = null
+    signalStrength: js.UndefOr[Double] = js.undefined
   ): WiFi = {
     val __obj = js.Dynamic.literal()
     if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID.asInstanceOf[js.Any])
     if (SSID != null) __obj.updateDynamic("SSID")(SSID.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (signalStrength != null) __obj.updateDynamic("signalStrength")(signalStrength.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(signalStrength)) __obj.updateDynamic("signalStrength")(signalStrength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFi]
   }
 }

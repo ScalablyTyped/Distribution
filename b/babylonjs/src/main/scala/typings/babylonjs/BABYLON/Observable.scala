@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Observable")
 @js.native
-/**
-  * Creates a new observable
-  * @param onObserverAdded defines a callback to call when a new observer is added
-  */
-class Observable[T] () extends js.Object {
-  def this(onObserverAdded: js.Function1[/* observer */ Observer[T], Unit]) = this()
+trait Observable[T] extends js.Object {
   var _deferUnregister: js.Any = js.native
   var _eventState: js.Any = js.native
   var _observers: js.Any = js.native

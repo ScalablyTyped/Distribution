@@ -1,6 +1,6 @@
 package typings.rcMenu.menuMod
 
-import typings.rcMenu.ComponentClassSubPopupMen
+import typings.rcMenu.anon.ComponentClassSubPopupMen
 import typings.rcMenu.interfaceMod.MenuClickEventHandler
 import typings.rcMenu.interfaceMod.MiniStore
 import typings.rcMenu.interfaceMod.SelectInfo

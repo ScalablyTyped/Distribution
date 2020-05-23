@@ -125,7 +125,5 @@ object Sylvester extends js.Object {
     def create(elements: Vector): Vector = js.native
   }
   
-  var precision: Double = js.native
-  var version: String = js.native
 }
 

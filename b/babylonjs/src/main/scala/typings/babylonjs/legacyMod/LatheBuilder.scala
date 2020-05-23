@@ -1,6 +1,6 @@
 package typings.babylonjs.legacyMod
 
-import typings.babylonjs.AnonClip
+import typings.babylonjs.anon.Clip
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ object LatheBuilder extends js.Object {
     * @returns the lathe mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#lathe
     */
-  def CreateLathe(name: String, options: AnonClip): typings.babylonjs.meshMod.Mesh = js.native
-  def CreateLathe(name: String, options: AnonClip, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateLathe(name: String, options: Clip): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateLathe(name: String, options: Clip, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }
 

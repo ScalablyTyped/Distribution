@@ -221,7 +221,7 @@ object axisMod extends js.Object {
     def tickLabelPadding(padding: Double): this.type = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Bottom */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.left
     - typings.plottable.plottableStrings.right
     - typings.plottable.plottableStrings.top

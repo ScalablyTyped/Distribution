@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,4 @@ trait WMTSStyle
     */
   var title: String = js.native
 }
-
-@JSGlobal("__esri.WMTSStyle")
-@js.native
-object WMTSStyle extends TopLevel[WMTSStyleConstructor]
 

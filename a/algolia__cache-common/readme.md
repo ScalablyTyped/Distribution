@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__cache-common
 
-Typings are for version 4.1.0
+Typings are for version 4.2.0
 
 ## Library description:
 Common interfaces for promise-based caching libraries

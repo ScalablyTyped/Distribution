@@ -11,10 +11,10 @@ trait LineConnection extends js.Object {
 
 object LineConnection {
   @scala.inline
-  def apply(connectedObjectId: String = null, connectionSiteIndex: Int | Double = null): LineConnection = {
+  def apply(connectedObjectId: String = null, connectionSiteIndex: js.UndefOr[Double] = js.undefined): LineConnection = {
     val __obj = js.Dynamic.literal()
     if (connectedObjectId != null) __obj.updateDynamic("connectedObjectId")(connectedObjectId.asInstanceOf[js.Any])
-    if (connectionSiteIndex != null) __obj.updateDynamic("connectionSiteIndex")(connectionSiteIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionSiteIndex)) __obj.updateDynamic("connectionSiteIndex")(connectionSiteIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineConnection]
   }
 }

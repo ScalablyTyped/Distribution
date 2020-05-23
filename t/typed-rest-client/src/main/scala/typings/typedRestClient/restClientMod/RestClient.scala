@@ -10,28 +10,20 @@ import scala.scalajs.js.annotation._
 
 @JSImport("typed-rest-client/RestClient", "RestClient")
 @js.native
+/**
+  * Creates an instance of the RestClient
+  * @constructor
+  * @param {string} userAgent - userAgent for requests
+  * @param {string} baseUrl - (Optional) If not specified, use full urls per request.  If supplied and a function passes a relative url, it will be appended to this
+  * @param {ifm.IRequestHandler[]} handlers - handlers are typically auth handlers (basic, bearer, ntlm supplied)
+  * @param {ifm.IRequestOptions} requestOptions - options for each http requests (http proxy setting, socket timeout)
+  */
 class RestClient () extends js.Object {
-  /**
-    * Creates an instance of the RestClient
-    * @constructor
-    * @param {string} userAgent - userAgent for requests
-    * @param {string} baseUrl - (Optional) If not specified, use full urls per request.  If supplied and a function passes a relative url, it will be appended to this
-    * @param {ifm.IRequestHandler[]} handlers - handlers are typically auth handlers (basic, bearer, ntlm supplied)
-    * @param {ifm.IRequestOptions} requestOptions - options for each http requests (http proxy setting, socket timeout)
-    */
   def this(userAgent: String) = this()
-  def this(userAgent: js.UndefOr[scala.Nothing], baseUrl: String) = this()
   def this(userAgent: String, baseUrl: String) = this()
   def this(userAgent: Null, baseUrl: String) = this()
-  def this(userAgent: js.UndefOr[scala.Nothing], baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
   def this(userAgent: String, baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
   def this(userAgent: Null, baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-  def this(
-    userAgent: js.UndefOr[scala.Nothing],
-    baseUrl: String,
-    handlers: js.Array[IRequestHandler],
-    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
-  ) = this()
   def this(
     userAgent: String,
     baseUrl: String,

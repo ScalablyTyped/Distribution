@@ -76,7 +76,7 @@ object Options {
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (envs != null) __obj.updateDynamic("envs")(envs.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
+    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.get.asInstanceOf[js.Any])
     if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

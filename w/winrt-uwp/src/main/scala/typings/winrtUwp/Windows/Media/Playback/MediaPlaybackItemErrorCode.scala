@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Playback
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object MediaPlaybackItemErrorCode extends js.Object {
   /** The media source of the playback item is not supported. */
   @js.native
   sealed trait sourceNotSupportedError extends MediaPlaybackItemErrorCode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaPlaybackItemErrorCode with Double] = js.native
-  /* 1 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 3 */ @js.native
-  object decodeError extends TopLevel[decodeError with Double]
-  
-  /* 5 */ @js.native
-  object encryptionError extends TopLevel[encryptionError with Double]
-  
-  /* 2 */ @js.native
-  object networkError extends TopLevel[networkError with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 4 */ @js.native
-  object sourceNotSupportedError extends TopLevel[sourceNotSupportedError with Double]
   
 }
 

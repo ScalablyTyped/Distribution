@@ -31,9 +31,9 @@ object PublicationConfig {
     vhost: String = null
   ): PublicationConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreated)) __obj.updateDynamic("autoCreated")(autoCreated.asInstanceOf[js.Any])
-    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreated)) __obj.updateDynamic("autoCreated")(autoCreated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
     if (encryption != null) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])
     if (exchange != null) __obj.updateDynamic("exchange")(exchange.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

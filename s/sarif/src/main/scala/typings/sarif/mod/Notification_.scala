@@ -54,7 +54,7 @@ object Notification_ {
     level: level = null,
     locations: js.Array[Location] = null,
     properties: PropertyBag = null,
-    threadId: Int | Double = null,
+    threadId: js.UndefOr[Double] = js.undefined,
     timeUtc: String = null
   ): Notification_ = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
@@ -64,7 +64,7 @@ object Notification_ {
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
+    if (!js.isUndefined(threadId)) __obj.updateDynamic("threadId")(threadId.get.asInstanceOf[js.Any])
     if (timeUtc != null) __obj.updateDynamic("timeUtc")(timeUtc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification_]
   }

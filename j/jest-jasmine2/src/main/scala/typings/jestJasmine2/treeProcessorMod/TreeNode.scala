@@ -39,7 +39,7 @@ object TreeNode {
   ): TreeNode = {
     val __obj = js.Dynamic.literal(afterAllFns = afterAllFns.asInstanceOf[js.Any], beforeAllFns = beforeAllFns.asInstanceOf[js.Any], execute = js.Any.fromFunction2(execute), getResult = js.Any.fromFunction0(getResult), id = id.asInstanceOf[js.Any], onException = js.Any.fromFunction1(onException), result = result.asInstanceOf[js.Any], sharedUserContext = js.Any.fromFunction0(sharedUserContext))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (parentSuite != null) __obj.updateDynamic("parentSuite")(parentSuite.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeNode]
   }

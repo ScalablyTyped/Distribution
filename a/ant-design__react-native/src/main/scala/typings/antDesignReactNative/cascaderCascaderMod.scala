@@ -1,8 +1,11 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.Data
+import typings.antDesignReactNative.anon.DataValue
+import typings.antDesignReactNative.anon.ValueArray
 import typings.antDesignReactNative.cascaderTypesMod.CascaderProps
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +17,9 @@ object cascaderCascaderMod extends js.Object {
   trait Cascader
     extends Component[CascaderProps, js.Any, js.Any] {
     @JSName("state")
-    var state_Cascader: AnonValueArray = js.native
+    var state_Cascader: ValueArray = js.native
     @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MCascader(nextProps: AnonDataValue): Unit = js.native
+    def componentWillReceiveProps_MCascader(nextProps: DataValue): Unit = js.native
     def getCols(): js.Array[Element] = js.native
     def getValue(d: js.Any, `val`: js.Any): js.Array[_] = js.native
     def onValueChange(value: js.Any, index: js.Any): Unit = js.native
@@ -28,7 +31,7 @@ object cascaderCascaderMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonData = js.native
+    var defaultProps: Data = js.native
   }
   
 }

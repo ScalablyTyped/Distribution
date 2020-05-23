@@ -33,7 +33,7 @@ object ListActiveBreakpointsResponse {
     val __obj = js.Dynamic.literal()
     if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
     if (nextWaitToken != null) __obj.updateDynamic("nextWaitToken")(nextWaitToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitExpired)) __obj.updateDynamic("waitExpired")(waitExpired.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitExpired)) __obj.updateDynamic("waitExpired")(waitExpired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListActiveBreakpointsResponse]
   }
 }

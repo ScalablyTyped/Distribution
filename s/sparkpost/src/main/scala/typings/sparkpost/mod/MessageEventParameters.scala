@@ -49,8 +49,8 @@ object MessageEventParameters {
     friendly_froms: js.Array[String] | String = null,
     from: String = null,
     message_ids: js.Array[String] | String = null,
-    page: Int | Double = null,
-    per_page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
+    per_page: js.UndefOr[Double] = js.undefined,
     reason: js.Array[String] | String = null,
     recipients: js.Array[String] | String = null,
     subaccounts: js.Array[Double] | Double = null,
@@ -67,8 +67,8 @@ object MessageEventParameters {
     if (friendly_froms != null) __obj.updateDynamic("friendly_froms")(friendly_froms.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (message_ids != null) __obj.updateDynamic("message_ids")(message_ids.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(per_page)) __obj.updateDynamic("per_page")(per_page.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
     if (subaccounts != null) __obj.updateDynamic("subaccounts")(subaccounts.asInstanceOf[js.Any])

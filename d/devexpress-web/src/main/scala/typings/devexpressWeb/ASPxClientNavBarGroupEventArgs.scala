@@ -7,17 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events which concern manipulations on groups.
   */
-@JSGlobal("ASPxClientNavBarGroupEventArgs")
-@js.native
-class ASPxClientNavBarGroupEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientNavBarGroupEventArgs type with the specified value.
-    * @param group An ASPxClientNavBarGroup object representing the group related to the event.
-    */
-  def this(group: ASPxClientNavBarGroup) = this()
+trait ASPxClientNavBarGroupEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the group object related to the event.
     */
-  var group: ASPxClientNavBarGroup = js.native
+  var group: ASPxClientNavBarGroup
+}
+
+object ASPxClientNavBarGroupEventArgs {
+  @scala.inline
+  def apply(group: ASPxClientNavBarGroup): ASPxClientNavBarGroupEventArgs = {
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientNavBarGroupEventArgs]
+  }
 }
 

@@ -8,16 +8,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Compression.Decompressor")
-@js.native
-class Decompressor protected () extends IDecompressor {
-  def this(underlyingStream: IInputStream) = this()
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def detachStream(): IInputStream = js.native
-  def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double] = js.native
+trait Decompressor extends IDecompressor {
+  def dispose(): Unit
+}
+
+object Decompressor {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    detachStream: () => IInputStream,
+    dispose: () => Unit,
+    readAsync: (IBuffer, Double, InputStreamOptions) => IAsyncOperationWithProgress[IBuffer, Double]
+  ): Decompressor = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), detachStream = js.Any.fromFunction0(detachStream), dispose = js.Any.fromFunction0(dispose), readAsync = js.Any.fromFunction3(readAsync))
+    __obj.asInstanceOf[Decompressor]
+  }
 }
 

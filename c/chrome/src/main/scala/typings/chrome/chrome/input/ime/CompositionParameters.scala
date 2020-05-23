@@ -10,7 +10,7 @@ trait CompositionParameters extends js.Object {
   /** Position in the text of the cursor. */
   var cursor: Double
   /** Optional. List of segments and their associated types. */
-  var segments: js.Array[CompositionParameterSegment]
+  var segments: js.UndefOr[js.Array[CompositionParameterSegment]] = js.undefined
   /** Optional. Position in the text that the selection ends at. */
   var selectionEnd: js.UndefOr[Double] = js.undefined
   /** Optional. Position in the text that the selection starts at. */
@@ -24,14 +24,15 @@ object CompositionParameters {
   def apply(
     contextID: Double,
     cursor: Double,
-    segments: js.Array[CompositionParameterSegment],
     text: String,
-    selectionEnd: Int | Double = null,
-    selectionStart: Int | Double = null
+    segments: js.Array[CompositionParameterSegment] = null,
+    selectionEnd: js.UndefOr[Double] = js.undefined,
+    selectionStart: js.UndefOr[Double] = js.undefined
   ): CompositionParameters = {
-    val __obj = js.Dynamic.literal(contextID = contextID.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
-    if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contextID = contextID.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionEnd)) __obj.updateDynamic("selectionEnd")(selectionEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionStart)) __obj.updateDynamic("selectionStart")(selectionStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionParameters]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetInstancePortStatesRequest extends js.Object {
   /**
-    * The name of the instance.
+    * The name of the instance for which to return firewall port states.
     */
   var instanceName: ResourceName = js.native
 }

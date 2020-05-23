@@ -1,6 +1,6 @@
 package typings.css.mod
 
-import typings.css.AnonContent
+import typings.css.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Charset
 
 object Charset {
   @scala.inline
-  def apply(charset: String = null, parent: Node = null, position: AnonContent = null, `type`: String = null): Charset = {
+  def apply(charset: String = null, parent: Node = null, position: Content = null, `type`: String = null): Charset = {
     val __obj = js.Dynamic.literal()
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])

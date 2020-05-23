@@ -22,9 +22,13 @@ trait ListComplianceStatusRequest extends js.Object {
 
 object ListComplianceStatusRequest {
   @scala.inline
-  def apply(PolicyId: PolicyId, MaxResults: Int | Double = null, NextToken: PaginationToken = null): ListComplianceStatusRequest = {
+  def apply(
+    PolicyId: PolicyId,
+    MaxResults: js.UndefOr[PaginationMaxResults] = js.undefined,
+    NextToken: PaginationToken = null
+  ): ListComplianceStatusRequest = {
     val __obj = js.Dynamic.literal(PolicyId = PolicyId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListComplianceStatusRequest]
   }

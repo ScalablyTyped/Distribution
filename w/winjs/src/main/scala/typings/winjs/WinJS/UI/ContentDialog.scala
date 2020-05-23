@@ -1,8 +1,7 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
-import typings.winjs.AnonNone
 import typings.winjs.WinJS.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,17 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * Displays a modal dialog which can display arbitrary HTML content.
   **/
-@JSGlobal("WinJS.UI.ContentDialog")
 @js.native
-/**
-  * Creates a new ContentDialog control.
-  * @constructor
-  * @param The DOM element that hosts the ContentDialog control.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-  **/
-class ContentDialog () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait ContentDialog extends js.Object {
   /**
     * Gets the DOM element that hosts the ContentDialog control.
     **/
@@ -84,7 +74,7 @@ class ContentDialog () extends js.Object {
     * Raised immediately after a dialog is fully shown.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onaftershow(eventInfo: Event_): Unit = js.native
+  def onaftershow(eventInfo: Event): Unit = js.native
   /**
     * Raised just before hiding a dialog. Call preventDefault on this event to stop the dialog from being hidden.
     * @param eventInfo An object that contains information about the event.
@@ -94,7 +84,7 @@ class ContentDialog () extends js.Object {
     * Raised just before showing a dialog. Call preventDefault on this event to stop the dialog from being shown.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeshow(eventInfo: Event_): Unit = js.native
+  def onbeforeshow(eventInfo: Event): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.
@@ -108,19 +98,5 @@ class ContentDialog () extends js.Object {
     * @returns  A promise which is successfully fulfilled when the dialog is dismissed. The completion value indicates the dialog's dismissal result. This may be 'primary', 'secondary', 'none', or whatever custom value was passed to hide. If this ContentDialog cannot be shown because a ContentDialog is already showing or the ContentDialog is disposed, then the return value is a promise which is in an error state. If preventDefault() is called on the beforeshow event, then this promise will be canceled.
     **/
   def show(): Promise[ContentDialogHideInfo] = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.ContentDialog")
-@js.native
-object ContentDialog extends js.Object {
-  /**
-    * Specifies the result of dismissing the ContentDialog.
-    **/
-  var DismissalResult: AnonNone = js.native
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

@@ -25,7 +25,7 @@ trait SlicerStyleLoadOptions extends js.Object {
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether this SlicerStyle object is read-only. Read-only.
+    * Specifies if this SlicerStyle object is read-only.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -40,9 +40,9 @@ object SlicerStyleLoadOptions {
     readOnly: js.UndefOr[Boolean] = js.undefined
   ): SlicerStyleLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlicerStyleLoadOptions]
   }
 }

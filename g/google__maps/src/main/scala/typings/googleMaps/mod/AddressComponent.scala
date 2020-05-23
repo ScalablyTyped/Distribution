@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AddressComponent extends js.Object {
+trait AddressComponent[T] extends js.Object {
   /** is the full text description or name of the address component as returned by the Geocoder. */
   var long_name: String
   /**
@@ -14,18 +14,14 @@ trait AddressComponent extends js.Object {
     */
   var short_name: String
   /** is an array indicating the *type* of the address component. */
-  var types: js.Array[AddressType | GeocodingAddressComponentType]
+  var types: js.Array[T]
 }
 
 object AddressComponent {
   @scala.inline
-  def apply(
-    long_name: String,
-    short_name: String,
-    types: js.Array[AddressType | GeocodingAddressComponentType]
-  ): AddressComponent = {
+  def apply[T](long_name: String, short_name: String, types: js.Array[T]): AddressComponent[T] = {
     val __obj = js.Dynamic.literal(long_name = long_name.asInstanceOf[js.Any], short_name = short_name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AddressComponent]
+    __obj.asInstanceOf[AddressComponent[T]]
   }
 }
 

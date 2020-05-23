@@ -26,7 +26,7 @@ object SparklineSeriesItemLabels {
     background: String | js.Function = null,
     border: SparklineSeriesItemLabelsBorder = null,
     color: String | js.Function = null,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     font: String | js.Function = null,
     format: String | js.Function = null,
     margin: Double | js.Any = null,
@@ -40,7 +40,7 @@ object SparklineSeriesItemLabels {
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

@@ -13,8 +13,7 @@ trait ADCResponse extends js.Object {
 object ADCResponse {
   @scala.inline
   def apply(credential: OAuth2Client, projectId: String = null): ADCResponse = {
-    val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ADCResponse]
   }
 }

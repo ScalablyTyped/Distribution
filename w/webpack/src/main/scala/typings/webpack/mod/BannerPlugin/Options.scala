@@ -24,10 +24,10 @@ object Options {
     test: Filter | js.Array[Filter] = null
   ): Options = {
     val __obj = js.Dynamic.literal(banner = banner.asInstanceOf[js.Any])
-    if (!js.isUndefined(entryOnly)) __obj.updateDynamic("entryOnly")(entryOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(entryOnly)) __obj.updateDynamic("entryOnly")(entryOnly.get.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

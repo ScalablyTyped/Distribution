@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.ErrorsCollection")
 @js.native
-class ErrorsCollection protected () extends js.Object {
+trait ErrorsCollection extends js.Object {
   val Count: Double = js.native
   @JSName("InfoPath.ErrorsCollection_typekey")
   var InfoPathDotErrorsCollection_typekey: ErrorsCollection = js.native

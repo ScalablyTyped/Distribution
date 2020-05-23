@@ -11,7 +11,6 @@ trait Card
   var animate: js.Any = js.native
   var contentRef: js.Any = js.native
   var gestureActivationCriteria: js.Any = js.native
-  var gestureRef: js.Any = js.native
   var getAnimateToValue: js.Any = js.native
   var getCardAnimationContext: js.Any = js.native
   var getInterpolatedStyle: js.Any = js.native

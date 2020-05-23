@@ -75,36 +75,36 @@ trait Eac3AtmosSettings extends js.Object {
 object Eac3AtmosSettings {
   @scala.inline
   def apply(
-    Bitrate: Int | Double = null,
+    Bitrate: js.UndefOr[integerMin384000Max768000] = js.undefined,
     BitstreamMode: Eac3AtmosBitstreamMode = null,
     CodingMode: Eac3AtmosCodingMode = null,
     DialogueIntelligence: Eac3AtmosDialogueIntelligence = null,
     DynamicRangeCompressionLine: Eac3AtmosDynamicRangeCompressionLine = null,
     DynamicRangeCompressionRf: Eac3AtmosDynamicRangeCompressionRf = null,
-    LoRoCenterMixLevel: Int | Double = null,
-    LoRoSurroundMixLevel: Int | Double = null,
-    LtRtCenterMixLevel: Int | Double = null,
-    LtRtSurroundMixLevel: Int | Double = null,
+    LoRoCenterMixLevel: js.UndefOr[doubleMinNegative6Max3] = js.undefined,
+    LoRoSurroundMixLevel: js.UndefOr[doubleMinNegative60MaxNegative1] = js.undefined,
+    LtRtCenterMixLevel: js.UndefOr[doubleMinNegative6Max3] = js.undefined,
+    LtRtSurroundMixLevel: js.UndefOr[doubleMinNegative60MaxNegative1] = js.undefined,
     MeteringMode: Eac3AtmosMeteringMode = null,
-    SampleRate: Int | Double = null,
-    SpeechThreshold: Int | Double = null,
+    SampleRate: js.UndefOr[integerMin48000Max48000] = js.undefined,
+    SpeechThreshold: js.UndefOr[integerMin1Max100] = js.undefined,
     StereoDownmix: Eac3AtmosStereoDownmix = null,
     SurroundExMode: Eac3AtmosSurroundExMode = null
   ): Eac3AtmosSettings = {
     val __obj = js.Dynamic.literal()
-    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
     if (BitstreamMode != null) __obj.updateDynamic("BitstreamMode")(BitstreamMode.asInstanceOf[js.Any])
     if (CodingMode != null) __obj.updateDynamic("CodingMode")(CodingMode.asInstanceOf[js.Any])
     if (DialogueIntelligence != null) __obj.updateDynamic("DialogueIntelligence")(DialogueIntelligence.asInstanceOf[js.Any])
     if (DynamicRangeCompressionLine != null) __obj.updateDynamic("DynamicRangeCompressionLine")(DynamicRangeCompressionLine.asInstanceOf[js.Any])
     if (DynamicRangeCompressionRf != null) __obj.updateDynamic("DynamicRangeCompressionRf")(DynamicRangeCompressionRf.asInstanceOf[js.Any])
-    if (LoRoCenterMixLevel != null) __obj.updateDynamic("LoRoCenterMixLevel")(LoRoCenterMixLevel.asInstanceOf[js.Any])
-    if (LoRoSurroundMixLevel != null) __obj.updateDynamic("LoRoSurroundMixLevel")(LoRoSurroundMixLevel.asInstanceOf[js.Any])
-    if (LtRtCenterMixLevel != null) __obj.updateDynamic("LtRtCenterMixLevel")(LtRtCenterMixLevel.asInstanceOf[js.Any])
-    if (LtRtSurroundMixLevel != null) __obj.updateDynamic("LtRtSurroundMixLevel")(LtRtSurroundMixLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(LoRoCenterMixLevel)) __obj.updateDynamic("LoRoCenterMixLevel")(LoRoCenterMixLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LoRoSurroundMixLevel)) __obj.updateDynamic("LoRoSurroundMixLevel")(LoRoSurroundMixLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LtRtCenterMixLevel)) __obj.updateDynamic("LtRtCenterMixLevel")(LtRtCenterMixLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LtRtSurroundMixLevel)) __obj.updateDynamic("LtRtSurroundMixLevel")(LtRtSurroundMixLevel.get.asInstanceOf[js.Any])
     if (MeteringMode != null) __obj.updateDynamic("MeteringMode")(MeteringMode.asInstanceOf[js.Any])
-    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
-    if (SpeechThreshold != null) __obj.updateDynamic("SpeechThreshold")(SpeechThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SpeechThreshold)) __obj.updateDynamic("SpeechThreshold")(SpeechThreshold.get.asInstanceOf[js.Any])
     if (StereoDownmix != null) __obj.updateDynamic("StereoDownmix")(StereoDownmix.asInstanceOf[js.Any])
     if (SurroundExMode != null) __obj.updateDynamic("SurroundExMode")(SurroundExMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Eac3AtmosSettings]

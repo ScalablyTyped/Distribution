@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonBackgroundColor
+import typings.pixiJs.anon.BackgroundColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Renderer ()
   extends typings.pixiJs.PIXI.Renderer {
-  def this(options: AnonBackgroundColor) = this()
+  def this(options: BackgroundColor) = this()
 }
 
 /* static members */

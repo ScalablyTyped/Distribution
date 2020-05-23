@@ -1,6 +1,6 @@
 package typings.nise.mod
 
-import typings.nise.PartialFakeServerOptions
+import typings.nise.anon.PartialFakeServerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

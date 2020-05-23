@@ -1,11 +1,11 @@
 package typings.fingerprintjs2.mod
 
-import typings.fingerprintjs2.AnonAdBlock
-import typings.fingerprintjs2.AnonDetectScreenOrientation
-import typings.fingerprintjs2.AnonExcludeIE
-import typings.fingerprintjs2.AnonExcludeIOS11
-import typings.fingerprintjs2.AnonExtendedJsFonts
-import typings.fingerprintjs2.AnonGetData
+import typings.fingerprintjs2.anon.AdBlock
+import typings.fingerprintjs2.anon.DetectScreenOrientation
+import typings.fingerprintjs2.anon.ExcludeIE
+import typings.fingerprintjs2.anon.ExcludeIOS11
+import typings.fingerprintjs2.anon.ExtendedJsFonts
+import typings.fingerprintjs2.anon.GetData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,13 +14,13 @@ trait Options extends js.Object {
   var ERROR: js.UndefOr[String] = js.undefined
   var EXCLUDED: js.UndefOr[String] = js.undefined
   var NOT_AVAILABLE: js.UndefOr[String] = js.undefined
-  var audio: js.UndefOr[AnonExcludeIOS11] = js.undefined
-  var excludes: js.UndefOr[AnonAdBlock] = js.undefined
-  var extraComponents: js.UndefOr[js.Array[AnonGetData]] = js.undefined
-  var fonts: js.UndefOr[AnonExtendedJsFonts] = js.undefined
-  var plugins: js.UndefOr[AnonExcludeIE] = js.undefined
+  var audio: js.UndefOr[ExcludeIOS11] = js.undefined
+  var excludes: js.UndefOr[AdBlock] = js.undefined
+  var extraComponents: js.UndefOr[js.Array[GetData]] = js.undefined
+  var fonts: js.UndefOr[ExtendedJsFonts] = js.undefined
+  var plugins: js.UndefOr[ExcludeIE] = js.undefined
   var preprocessor: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.undefined
-  var screen: js.UndefOr[AnonDetectScreenOrientation] = js.undefined
+  var screen: js.UndefOr[DetectScreenOrientation] = js.undefined
 }
 
 object Options {
@@ -29,13 +29,13 @@ object Options {
     ERROR: String = null,
     EXCLUDED: String = null,
     NOT_AVAILABLE: String = null,
-    audio: AnonExcludeIOS11 = null,
-    excludes: AnonAdBlock = null,
-    extraComponents: js.Array[AnonGetData] = null,
-    fonts: AnonExtendedJsFonts = null,
-    plugins: AnonExcludeIE = null,
+    audio: ExcludeIOS11 = null,
+    excludes: AdBlock = null,
+    extraComponents: js.Array[GetData] = null,
+    fonts: ExtendedJsFonts = null,
+    plugins: ExcludeIE = null,
     preprocessor: (/* key */ String, /* value */ js.Any) => _ = null,
-    screen: AnonDetectScreenOrientation = null
+    screen: DetectScreenOrientation = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (ERROR != null) __obj.updateDynamic("ERROR")(ERROR.asInstanceOf[js.Any])

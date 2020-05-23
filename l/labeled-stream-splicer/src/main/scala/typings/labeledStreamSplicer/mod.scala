@@ -1,10 +1,11 @@
 package typings.labeledStreamSplicer
 
 import typings.labeledStreamSplicer.labeledStreamSplicerStrings.close
-import typings.node.AnonChunk
+import typings.node.BufferEncoding
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.Chunk
 import typings.node.streamMod.TransformOptions
 import typings.std.Error
 import scala.scalajs.js
@@ -26,13 +27,13 @@ object mod extends js.Object {
     @JSName("_write")
     var _write_Original: js.Function3[
         /* chunk */ js.Any, 
-        /* encoding */ String, 
+        /* encoding */ BufferEncoding, 
         /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
         Unit
       ] = js.native
     var _writev: js.UndefOr[
         js.Function2[
-          /* chunks */ js.Array[AnonChunk], 
+          /* chunks */ js.Array[Chunk], 
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
@@ -43,7 +44,7 @@ object mod extends js.Object {
     var constructor_Original: js.Function0[js.Any] = js.native
     @JSName("cork")
     var cork_Original: js.Function0[Unit] = js.native
-    var defaultMaxListeners: js.Any = js.native
+    var defaultMaxListeners: js.UndefOr[js.Any] = js.native
     @JSName("destroy")
     var destroy_Original: js.Function0[Unit] = js.native
     var destroyed: Boolean = js.native
@@ -51,9 +52,10 @@ object mod extends js.Object {
     var emit_Original: js.Function1[close, Boolean] = js.native
     @JSName("end")
     var end_Original: js.Function0[Unit] = js.native
+    var errorMonitor: js.UndefOr[js.Any] = js.native
     @JSName("eventNames")
     var eventNames_Original: js.Function0[js.Array[String | js.Symbol]] = js.native
-    var from: js.Any = js.native
+    var from: js.UndefOr[js.Any] = js.native
     @JSName("getMaxListeners")
     var getMaxListeners_Original: js.Function0[Double] = js.native
     @JSName("isPaused")
@@ -96,9 +98,9 @@ object mod extends js.Object {
     @JSName("resume")
     var resume_Original: js.Function0[this.type] = js.native
     @JSName("setDefaultEncoding")
-    var setDefaultEncoding_Original: js.Function1[/* encoding */ String, this.type] = js.native
+    var setDefaultEncoding_Original: js.Function1[/* encoding */ BufferEncoding, this.type] = js.native
     @JSName("setEncoding")
-    var setEncoding_Original: js.Function1[/* encoding */ String, this.type] = js.native
+    var setEncoding_Original: js.Function1[/* encoding */ BufferEncoding, this.type] = js.native
     @JSName("setMaxListeners")
     var setMaxListeners_Original: js.Function1[/* n */ Double, this.type] = js.native
     @JSName("uncork")
@@ -121,7 +123,7 @@ object mod extends js.Object {
     def _read(size: Double): Unit = js.native
     def _write(
       chunk: js.Any,
-      encoding: String,
+      encoding: BufferEncoding,
       callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
     @JSName("addListener")
@@ -158,8 +160,8 @@ object mod extends js.Object {
     @JSName("removeListener")
     def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     def resume(): this.type = js.native
-    def setDefaultEncoding(encoding: String): this.type = js.native
-    def setEncoding(encoding: String): this.type = js.native
+    def setDefaultEncoding(encoding: BufferEncoding): this.type = js.native
+    def setEncoding(encoding: BufferEncoding): this.type = js.native
     def setMaxListeners(n: Double): this.type = js.native
     def shift(): js.UndefOr[Stream] = js.native
     def splice(index: Index, howMany: Double, stream: Stream*): js.Array[Stream] = js.native

@@ -23,7 +23,7 @@ object UglifyJsOptions {
   @scala.inline
   def apply(
     compress: Boolean | js.Object = null,
-    ecma: Int | Double = null,
+    ecma: js.UndefOr[Double] = js.undefined,
     ie8: js.UndefOr[Boolean] = js.undefined,
     keep_classnames: js.UndefOr[Boolean] = js.undefined,
     keep_fnames: js.UndefOr[Boolean] = js.undefined,
@@ -37,17 +37,17 @@ object UglifyJsOptions {
   ): UglifyJsOptions = {
     val __obj = js.Dynamic.literal()
     if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (ecma != null) __obj.updateDynamic("ecma")(ecma.asInstanceOf[js.Any])
-    if (!js.isUndefined(ie8)) __obj.updateDynamic("ie8")(ie8.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_classnames)) __obj.updateDynamic("keep_classnames")(keep_classnames.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames.asInstanceOf[js.Any])
+    if (!js.isUndefined(ecma)) __obj.updateDynamic("ecma")(ecma.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ie8)) __obj.updateDynamic("ie8")(ie8.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_classnames)) __obj.updateDynamic("keep_classnames")(keep_classnames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames.get.asInstanceOf[js.Any])
     if (mangle != null) __obj.updateDynamic("mangle")(mangle.asInstanceOf[js.Any])
     if (nameCache != null) __obj.updateDynamic("nameCache")(nameCache.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
-    if (!js.isUndefined(safari10)) __obj.updateDynamic("safari10")(safari10.asInstanceOf[js.Any])
-    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(warnings)) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(safari10)) __obj.updateDynamic("safari10")(safari10.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(warnings)) __obj.updateDynamic("warnings")(warnings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UglifyJsOptions]
   }
 }

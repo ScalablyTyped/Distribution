@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * 登录授权认证信息
   * 此对象仅定义标准属性，登录授权认证服务可扩展自定义数据。
-  * 	例如“微信”登录授权服务，则包括以下数据：
-  * 	unionid - 用户统一标识，针对一个微信开放平台帐号下的应用，同一用户的unionid是唯一的。
+  *     例如“微信”登录授权服务，则包括以下数据：
+  *     unionid - 用户统一标识，针对一个微信开放平台帐号下的应用，同一用户的unionid是唯一的。
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
   */

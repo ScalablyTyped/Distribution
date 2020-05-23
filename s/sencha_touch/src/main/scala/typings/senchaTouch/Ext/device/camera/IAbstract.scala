@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IBase {
   /** [Method] Allows you to capture a photo
-  		* @param options Object The options to use when taking a photo.
-  		* @param scope Object The scope in which to call the success and failure functions, if specified.
-  		* @param destination String The destination of the image which is returned. Available options are:  data - returns a base64 encoded string file - returns the file's URI
-  		* @param encoding String The encoding of the returned image. Available options are:  jpg png
-  		* @param width Number The width of the image to return
-  		* @param height Number The height of the image to return
-  		*/
+    * @param options Object The options to use when taking a photo.
+    * @param scope Object The scope in which to call the success and failure functions, if specified.
+    * @param destination String The destination of the image which is returned. Available options are:  data - returns a base64 encoded string file - returns the file's URI
+    * @param encoding String The encoding of the returned image. Available options are:  jpg png
+    * @param width Number The width of the image to return
+    * @param height Number The height of the image to return
+    */
   var capture: js.UndefOr[
     js.Function6[
       /* options */ js.UndefOr[js.Any], 
@@ -67,7 +67,7 @@ object IAbstract {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstract]

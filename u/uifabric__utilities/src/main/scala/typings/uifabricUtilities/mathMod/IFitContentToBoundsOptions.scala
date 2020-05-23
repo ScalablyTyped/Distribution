@@ -28,9 +28,9 @@ trait IFitContentToBoundsOptions extends js.Object {
 
 object IFitContentToBoundsOptions {
   @scala.inline
-  def apply(boundsSize: ISize, contentSize: ISize, mode: FitMode, maxScale: Int | Double = null): IFitContentToBoundsOptions = {
+  def apply(boundsSize: ISize, contentSize: ISize, mode: FitMode, maxScale: js.UndefOr[Double] = js.undefined): IFitContentToBoundsOptions = {
     val __obj = js.Dynamic.literal(boundsSize = boundsSize.asInstanceOf[js.Any], contentSize = contentSize.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScale)) __obj.updateDynamic("maxScale")(maxScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFitContentToBoundsOptions]
   }
 }

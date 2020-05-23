@@ -15,9 +15,9 @@ trait DashEncryption extends js.Object {
 
 object DashEncryption {
   @scala.inline
-  def apply(SpekeKeyProvider: SpekeKeyProvider, KeyRotationIntervalSeconds: Int | Double = null): DashEncryption = {
+  def apply(SpekeKeyProvider: SpekeKeyProvider, KeyRotationIntervalSeconds: js.UndefOr[integer] = js.undefined): DashEncryption = {
     val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider.asInstanceOf[js.Any])
-    if (KeyRotationIntervalSeconds != null) __obj.updateDynamic("KeyRotationIntervalSeconds")(KeyRotationIntervalSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(KeyRotationIntervalSeconds)) __obj.updateDynamic("KeyRotationIntervalSeconds")(KeyRotationIntervalSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashEncryption]
   }
 }

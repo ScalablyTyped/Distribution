@@ -1,7 +1,7 @@
 package typings.draftConvert.mod
 
-import typings.draftConvert.AnonData
-import typings.draftConvert.AnonEntity
+import typings.draftConvert.anon.Data
+import typings.draftConvert.anon.Entity
 import typings.draftConvert.draftConvertBooleans.`false`
 import typings.draftJs.mod.Draft.Model.Constants.DraftBlockType
 import typings.draftJs.mod.Draft.Model.Constants.DraftInlineStyleType
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait IConvertFromHTMLConfig extends js.Object {
   // Block styles:
   var htmlToBlock: js.UndefOr[
-    js.Function2[/* nodeName */ String, /* node */ HTMLElement, DraftBlockType | AnonData | `false`]
+    js.Function2[/* nodeName */ String, /* node */ HTMLElement, DraftBlockType | Data | `false`]
   ] = js.undefined
   // Html entities
   var htmlToEntity: js.UndefOr[
@@ -45,7 +45,7 @@ trait IConvertFromHTMLConfig extends js.Object {
       ], 
       /* mergeEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], 
       /* replaceEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], 
-      js.Array[AnonEntity]
+      js.Array[Entity]
     ]
   ] = js.undefined
 }
@@ -53,7 +53,7 @@ trait IConvertFromHTMLConfig extends js.Object {
 object IConvertFromHTMLConfig {
   @scala.inline
   def apply(
-    htmlToBlock: (/* nodeName */ String, /* node */ HTMLElement) => DraftBlockType | AnonData | `false` = null,
+    htmlToBlock: (/* nodeName */ String, /* node */ HTMLElement) => DraftBlockType | Data | `false` = null,
     htmlToEntity: (/* nodeName */ String, /* node */ HTMLElement, /* createEntity */ js.Function3[/* type */ String, /* mutability */ String, /* data */ js.Object, EntityKey], /* getEntity */ js.Function1[
       /* key */ EntityKey, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ _
@@ -62,7 +62,7 @@ object IConvertFromHTMLConfig {
     textToEntity: (/* text */ String, /* createEntity */ js.Function3[/* type */ String, /* mutability */ String, /* data */ js.Object, EntityKey], /* getEntity */ js.Function1[
       /* key */ EntityKey, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ _
-    ], /* mergeEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], /* replaceEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit]) => js.Array[AnonEntity] = null
+    ], /* mergeEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], /* replaceEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit]) => js.Array[Entity] = null
   ): IConvertFromHTMLConfig = {
     val __obj = js.Dynamic.literal()
     if (htmlToBlock != null) __obj.updateDynamic("htmlToBlock")(js.Any.fromFunction2(htmlToBlock))

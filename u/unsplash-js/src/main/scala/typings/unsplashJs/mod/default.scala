@@ -1,8 +1,8 @@
 package typings.unsplashJs.mod
 
 import typings.std.Response
-import typings.unsplashJs.AnonAccessKey
-import typings.unsplashJs.AnonBody
+import typings.unsplashJs.anon.AccessKey
+import typings.unsplashJs.anon.Body
 import typings.unsplashJs.mod.UnsplashApi.Auth
 import typings.unsplashJs.mod.UnsplashApi.Collections
 import typings.unsplashJs.mod.UnsplashApi.CurrentUser
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("unsplash-js", JSImport.Default)
 @js.native
 class default protected () extends Unsplash {
-  def this(options: AnonAccessKey) = this()
+  def this(options: AccessKey) = this()
   /* CompleteClass */
   override var auth: Auth = js.native
   /* CompleteClass */
@@ -33,6 +33,6 @@ class default protected () extends Unsplash {
   /* CompleteClass */
   override var users: Users = js.native
   /* CompleteClass */
-  override def request(requestOptions: AnonBody): js.Promise[Response] = js.native
+  override def request(requestOptions: Body): js.Promise[Response] = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAvailability
+import typings.cesium.anon.Availability
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "Entity")
 @js.native
 class Entity () extends js.Object {
-  def this(options: AnonAvailability) = this()
+  def this(options: Availability) = this()
   var availability: TimeIntervalCollection = js.native
   var billboard: BillboardGraphics = js.native
   var box: BoxGraphics = js.native

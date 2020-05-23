@@ -13,14 +13,14 @@ trait ExpirationPluginConfig extends js.Object {
 object ExpirationPluginConfig {
   @scala.inline
   def apply(
-    maxAgeSeconds: Int | Double = null,
-    maxEntries: Int | Double = null,
+    maxAgeSeconds: js.UndefOr[Double] = js.undefined,
+    maxEntries: js.UndefOr[Double] = js.undefined,
     purgeOnQuotaError: js.UndefOr[Boolean] = js.undefined
   ): ExpirationPluginConfig = {
     val __obj = js.Dynamic.literal()
-    if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
-    if (maxEntries != null) __obj.updateDynamic("maxEntries")(maxEntries.asInstanceOf[js.Any])
-    if (!js.isUndefined(purgeOnQuotaError)) __obj.updateDynamic("purgeOnQuotaError")(purgeOnQuotaError.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAgeSeconds)) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEntries)) __obj.updateDynamic("maxEntries")(maxEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(purgeOnQuotaError)) __obj.updateDynamic("purgeOnQuotaError")(purgeOnQuotaError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpirationPluginConfig]
   }
 }

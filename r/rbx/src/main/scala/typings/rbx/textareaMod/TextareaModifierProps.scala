@@ -38,7 +38,7 @@ object TextareaModifierProps {
   ): TextareaModifierProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedSize)) __obj.updateDynamic("fixedSize")(fixedSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedSize)) __obj.updateDynamic("fixedSize")(fixedSize.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextareaModifierProps]

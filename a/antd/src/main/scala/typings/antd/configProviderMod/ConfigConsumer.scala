@@ -1,7 +1,7 @@
 package typings.antd.configProviderMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.Consumer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

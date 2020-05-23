@@ -38,9 +38,9 @@ object MaskProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (rounding != null) __obj.updateDynamic("rounding")(rounding.asInstanceOf[js.Any])
-    if (!js.isUndefined(wash)) __obj.updateDynamic("wash")(wash.asInstanceOf[js.Any])
+    if (!js.isUndefined(wash)) __obj.updateDynamic("wash")(wash.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(willChangeTransform)) __obj.updateDynamic("willChangeTransform")(willChangeTransform.asInstanceOf[js.Any])
+    if (!js.isUndefined(willChangeTransform)) __obj.updateDynamic("willChangeTransform")(willChangeTransform.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaskProps]
   }
 }

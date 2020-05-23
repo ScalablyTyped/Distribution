@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * Auth provider configuration interface. A SAML provider can be created via
   * {@link https://firebase.google.com/docs/reference/admin/node/admin.auth.Auth#createProviderConfig `createProviderConfig()`}.
   */
-trait SAMLAuthProviderConfig extends AuthProviderConfig {
+trait SAMLAuthProviderConfig
+  extends typings.firebaseAdmin.authMod.admin.auth.AuthProviderConfig {
   /**
     * This is fixed and must always be the same as the OAuth redirect URL
     * provisioned by Firebase Auth,

@@ -1,6 +1,6 @@
 package typings.babylonjs.legacyMod
 
-import typings.babylonjs.AnonName
+import typings.babylonjs.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,8 +31,8 @@ object Action extends js.Object {
     * Internal only
     * @hidden
     */
-  def _GetTargetProperty(target: typings.babylonjs.nodeMod.Node): AnonName = js.native
-  def _GetTargetProperty(target: typings.babylonjs.sceneMod.Scene): AnonName = js.native
+  def _GetTargetProperty(target: typings.babylonjs.nodeMod.Node): Name = js.native
+  def _GetTargetProperty(target: typings.babylonjs.sceneMod.Scene): Name = js.native
   /**
     * Internal only
     * @hidden

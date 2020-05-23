@@ -17,14 +17,14 @@ trait ISignatureDef extends js.Object {
 object ISignatureDef {
   @scala.inline
   def apply(
-    inputs: StringDictionary[ITensorInfo] = null,
-    methodName: String = null,
-    outputs: StringDictionary[ITensorInfo] = null
+    inputs: js.UndefOr[Null | StringDictionary[ITensorInfo]] = js.undefined,
+    methodName: js.UndefOr[Null | String] = js.undefined,
+    outputs: js.UndefOr[Null | StringDictionary[ITensorInfo]] = js.undefined
   ): ISignatureDef = {
     val __obj = js.Dynamic.literal()
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputs)) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(methodName)) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputs)) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISignatureDef]
   }
 }

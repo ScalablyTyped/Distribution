@@ -1,6 +1,6 @@
 package typings.ionicAngular
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonMenuElement
+import typings.ionicCore.componentsMod.global.HTMLIonMenuElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

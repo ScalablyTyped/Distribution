@@ -1,19 +1,12 @@
 package typings.amapJsApi.AMap
 
-import typings.amapJsApi.AMap.ContextMenu.Options
 import typings.std.HTMLLIElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.ContextMenu")
 @js.native
-/**
-  * 地图右键菜单
-  * @param options 选项
-  */
-class ContextMenu_[ExtraData] () extends Overlay[ExtraData] {
-  def this(options: Options) = this()
+trait ContextMenu_[ExtraData] extends Overlay[ExtraData] {
   /**
     * 右键菜单中添加菜单项
     * @param text 菜单显示内容

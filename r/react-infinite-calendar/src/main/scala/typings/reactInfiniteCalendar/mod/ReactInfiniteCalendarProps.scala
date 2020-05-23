@@ -1,9 +1,9 @@
 package typings.reactInfiniteCalendar.mod
 
-import typings.reactInfiniteCalendar.AnonAccentColor
-import typings.reactInfiniteCalendar.AnonBlank
-import typings.reactInfiniteCalendar.AnonEnd
-import typings.reactInfiniteCalendar.AnonHideYearsOnSelect
+import typings.reactInfiniteCalendar.anon.AccentColor
+import typings.reactInfiniteCalendar.anon.Blank
+import typings.reactInfiniteCalendar.anon.End
+import typings.reactInfiniteCalendar.anon.HideYearsOnSelect
 import typings.reactInfiniteCalendar.reactInfiniteCalendarBooleans.`false`
 import typings.reactInfiniteCalendar.reactInfiniteCalendarNumbers.`0`
 import typings.reactInfiniteCalendar.reactInfiniteCalendarNumbers.`1`
@@ -28,10 +28,10 @@ trait ReactInfiniteCalendarProps extends js.Object {
   var disabledDates: js.UndefOr[js.Array[DateType]] = js.undefined
   var disabledDays: js.UndefOr[js.Array[`0` | `1` | `2` | `3` | `4` | `5` | `6`]] = js.undefined
   var display: js.UndefOr[days | years] = js.undefined
-  var displayOptions: js.UndefOr[AnonHideYearsOnSelect] = js.undefined
+  var displayOptions: js.UndefOr[HideYearsOnSelect] = js.undefined
   var height: js.UndefOr[Double | auto] = js.undefined
   var interpolateSelection: js.UndefOr[js.Function2[/* date */ Date, /* selected */ js.Array[Date], js.Array[Date]]] = js.undefined
-  var locale: js.UndefOr[AnonBlank] = js.undefined
+  var locale: js.UndefOr[Blank] = js.undefined
   var max: js.UndefOr[DateType] = js.undefined
   var maxDate: js.UndefOr[DateType] = js.undefined
   var min: js.UndefOr[DateType] = js.undefined
@@ -40,9 +40,9 @@ trait ReactInfiniteCalendarProps extends js.Object {
   var onScrollEnd: js.UndefOr[js.Function1[/* scrollTop */ Double, Unit]] = js.undefined
   var onSelect: js.UndefOr[DateSelectFunction | RangedSelectFunction] = js.undefined
   var rowHeight: js.UndefOr[Double] = js.undefined
-  var selected: js.UndefOr[DateType | `false` | AnonEnd] = js.undefined
+  var selected: js.UndefOr[DateType | `false` | End] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
-  var theme: js.UndefOr[AnonAccentColor] = js.undefined
+  var theme: js.UndefOr[AccentColor] = js.undefined
   var width: js.UndefOr[Double | auto | `100Percentsign`] = js.undefined
 }
 
@@ -55,10 +55,10 @@ object ReactInfiniteCalendarProps {
     disabledDates: js.Array[DateType] = null,
     disabledDays: js.Array[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = null,
     display: days | years = null,
-    displayOptions: AnonHideYearsOnSelect = null,
+    displayOptions: HideYearsOnSelect = null,
     height: Double | auto = null,
     interpolateSelection: (/* date */ Date, /* selected */ js.Array[Date]) => js.Array[Date] = null,
-    locale: AnonBlank = null,
+    locale: Blank = null,
     max: DateType = null,
     maxDate: DateType = null,
     min: DateType = null,
@@ -66,15 +66,15 @@ object ReactInfiniteCalendarProps {
     onScroll: /* scrollTop */ Double => Unit = null,
     onScrollEnd: /* scrollTop */ Double => Unit = null,
     onSelect: (/* date */ Date) | (/* rangedDate */ RangedSelection) => Unit = null,
-    rowHeight: Int | Double = null,
-    selected: DateType | `false` | AnonEnd = null,
-    tabIndex: Int | Double = null,
-    theme: AnonAccentColor = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
+    selected: DateType | `false` | End = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
+    theme: AccentColor = null,
     width: Double | auto | `100Percentsign` = null
   ): ReactInfiniteCalendarProps = {
     val __obj = js.Dynamic.literal()
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
     if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays.asInstanceOf[js.Any])
@@ -90,9 +90,9 @@ object ReactInfiniteCalendarProps {
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onScrollEnd != null) __obj.updateDynamic("onScrollEnd")(js.Any.fromFunction1(onScrollEnd))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactInfiniteCalendarProps]

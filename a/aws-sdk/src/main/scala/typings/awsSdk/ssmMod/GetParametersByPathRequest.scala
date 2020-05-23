@@ -36,18 +36,18 @@ object GetParametersByPathRequest {
   @scala.inline
   def apply(
     Path: PSParameterName,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[GetParametersByPathMaxResults] = js.undefined,
     NextToken: NextToken = null,
     ParameterFilters: ParameterStringFilterList = null,
-    Recursive: js.UndefOr[scala.Boolean] = js.undefined,
-    WithDecryption: js.UndefOr[scala.Boolean] = js.undefined
+    Recursive: js.UndefOr[Boolean] = js.undefined,
+    WithDecryption: js.UndefOr[Boolean] = js.undefined
   ): GetParametersByPathRequest = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ParameterFilters != null) __obj.updateDynamic("ParameterFilters")(ParameterFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(Recursive)) __obj.updateDynamic("Recursive")(Recursive.asInstanceOf[js.Any])
-    if (!js.isUndefined(WithDecryption)) __obj.updateDynamic("WithDecryption")(WithDecryption.asInstanceOf[js.Any])
+    if (!js.isUndefined(Recursive)) __obj.updateDynamic("Recursive")(Recursive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(WithDecryption)) __obj.updateDynamic("WithDecryption")(WithDecryption.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersByPathRequest]
   }
 }

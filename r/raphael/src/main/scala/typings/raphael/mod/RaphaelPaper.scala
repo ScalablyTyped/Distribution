@@ -36,7 +36,7 @@ import typings.raphael.raphaelStrings.x
 import typings.raphael.raphaelStrings.y
 import typings.std.HTMLElement
 import typings.std.Record
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -346,7 +346,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     height: Double,
     callback: js.ThisFunction0[/* this */ RaphaelPaper[TTechnology], Unit]
   ): RaphaelPaper[TTechnology] = js.native
-  def raphael(onReadyCallback: js.ThisFunction0[/* this */ Window_, Unit]): RaphaelPaper[TTechnology] = js.native
+  def raphael(onReadyCallback: js.ThisFunction0[/* this */ Window, Unit]): RaphaelPaper[TTechnology] = js.native
   /**
     * Creates a canvas object on which to draw. You must do this first, as all future calls to drawing methods
     * from this instance will be bound to this canvas.

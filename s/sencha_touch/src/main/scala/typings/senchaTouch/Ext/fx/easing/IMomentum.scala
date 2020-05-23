@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation._
 
 trait IMomentum extends IAbstract {
   /** [Method] Returns the value of acceleration
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getAcceleration: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of friction
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getFriction: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of startVelocity
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Sets the value of acceleration
-  		* @param acceleration Number The new value.
-  		*/
+    * @param acceleration Number The new value.
+    */
   var setAcceleration: js.UndefOr[js.Function1[/* acceleration */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of friction
-  		* @param friction Number The new value.
-  		*/
+    * @param friction Number The new value.
+    */
   var setFriction: js.UndefOr[js.Function1[/* friction */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of startVelocity
-  		* @param startVelocity Number The new value.
-  		*/
+    * @param startVelocity Number The new value.
+    */
   var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -89,7 +89,7 @@ object IMomentum {
     if (setStartTime != null) __obj.updateDynamic("setStartTime")(js.Any.fromFunction1(setStartTime))
     if (setStartValue != null) __obj.updateDynamic("setStartValue")(js.Any.fromFunction1(setStartValue))
     if (setStartVelocity != null) __obj.updateDynamic("setStartVelocity")(js.Any.fromFunction1(setStartVelocity))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMomentum]

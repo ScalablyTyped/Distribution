@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonRsaprvkey
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,10 +29,7 @@ import scala.scalajs.js.annotation._
   * //     signatureAlgorithm   AlgorithmIdentifier,
   * //     signatureValue       BIT STRING  }
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.CRL")
-@js.native
-class CRL () extends ASN1Object {
-  def this(params: AnonRsaprvkey) = this()
+trait CRL extends ASN1Object {
   /**
     * get PEM formatted CRL string after signed
     * @return PEM formatted string of certificate
@@ -42,13 +38,33 @@ class CRL () extends ASN1Object {
     * cert.sign();
     * var sPEM =  cert.getPEMString();
     */
-  def getPEMString(): String = js.native
+  def getPEMString(): String
   /**
     * sign TBSCertList and set signature value internally
     * @example
     * var cert = new KJUR.asn1.x509.CRL({'tbsobj': tbs, 'prvkeyobj': prvKey});
     * cert.sign();
     */
-  def sign(): Unit = js.native
+  def sign(): Unit
+}
+
+object CRL {
+  @scala.inline
+  def apply(
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getPEMString: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    sign: () => Unit
+  ): CRL = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getPEMString = js.Any.fromFunction0(getPEMString), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], sign = js.Any.fromFunction0(sign))
+    __obj.asInstanceOf[CRL]
+  }
 }
 

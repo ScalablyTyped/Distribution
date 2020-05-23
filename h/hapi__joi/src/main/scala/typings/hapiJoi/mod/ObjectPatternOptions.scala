@@ -12,9 +12,8 @@ trait ObjectPatternOptions extends js.Object {
 object ObjectPatternOptions {
   @scala.inline
   def apply(fallthrough: js.UndefOr[Boolean] = js.undefined, matches: SchemaLike | Reference = null): ObjectPatternOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fallthrough)) __obj.updateDynamic("fallthrough")(fallthrough.asInstanceOf[js.Any])
-    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallthrough)) __obj.updateDynamic("fallthrough")(fallthrough.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectPatternOptions]
   }
 }

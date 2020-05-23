@@ -64,7 +64,7 @@ object Report {
     reportGroupArn: NonEmptyString = null,
     status: ReportStatusType = null,
     testSummary: TestReportSummary = null,
-    truncated: js.UndefOr[scala.Boolean] = js.undefined,
+    truncated: js.UndefOr[WrapperBoolean] = js.undefined,
     `type`: ReportType = null
   ): Report = {
     val __obj = js.Dynamic.literal()
@@ -77,7 +77,7 @@ object Report {
     if (reportGroupArn != null) __obj.updateDynamic("reportGroupArn")(reportGroupArn.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (testSummary != null) __obj.updateDynamic("testSummary")(testSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Report]
   }

@@ -9,7 +9,7 @@ package object sizeContextMod {
     - typings.antd.antdStrings.small
     - typings.antd.antdStrings.middle
     - typings.antd.antdStrings.large
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type SizeType = js.UndefOr[typings.antd.sizeContextMod._SizeType]
 }

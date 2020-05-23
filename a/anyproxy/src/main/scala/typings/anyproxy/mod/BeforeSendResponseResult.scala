@@ -1,6 +1,6 @@
 package typings.anyproxy.mod
 
-import typings.anyproxy.PartialResponse
+import typings.anyproxy.anon.PartialResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

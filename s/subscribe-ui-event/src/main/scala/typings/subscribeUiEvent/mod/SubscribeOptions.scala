@@ -23,17 +23,17 @@ object SubscribeOptions {
     enableScrollInfo: js.UndefOr[Boolean] = js.undefined,
     enableTouchInfo: js.UndefOr[Boolean] = js.undefined,
     eventOptions: AddEventListenerOptions = null,
-    throttleRate: Int | Double = null,
+    throttleRate: js.UndefOr[Double] = js.undefined,
     useRAF: js.UndefOr[Boolean] = js.undefined
   ): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResizeInfo)) __obj.updateDynamic("enableResizeInfo")(enableResizeInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableScrollInfo)) __obj.updateDynamic("enableScrollInfo")(enableScrollInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTouchInfo)) __obj.updateDynamic("enableTouchInfo")(enableTouchInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResizeInfo)) __obj.updateDynamic("enableResizeInfo")(enableResizeInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableScrollInfo)) __obj.updateDynamic("enableScrollInfo")(enableScrollInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouchInfo)) __obj.updateDynamic("enableTouchInfo")(enableTouchInfo.get.asInstanceOf[js.Any])
     if (eventOptions != null) __obj.updateDynamic("eventOptions")(eventOptions.asInstanceOf[js.Any])
-    if (throttleRate != null) __obj.updateDynamic("throttleRate")(throttleRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRAF)) __obj.updateDynamic("useRAF")(useRAF.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttleRate)) __obj.updateDynamic("throttleRate")(throttleRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useRAF)) __obj.updateDynamic("useRAF")(useRAF.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOptions]
   }
 }

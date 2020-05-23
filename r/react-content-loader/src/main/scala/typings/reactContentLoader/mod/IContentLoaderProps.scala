@@ -28,29 +28,29 @@ object IContentLoaderProps {
     SVGAttributes: SVGAttributes[SVGElement] = null,
     animate: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: String = null,
-    backgroundOpacity: Int | Double = null,
+    backgroundOpacity: js.UndefOr[Double] = js.undefined,
     baseUrl: String = null,
     foregroundColor: String = null,
-    foregroundOpacity: Int | Double = null,
-    gradientRatio: Int | Double = null,
-    interval: Int | Double = null,
+    foregroundOpacity: js.UndefOr[Double] = js.undefined,
+    gradientRatio: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
     rtl: js.UndefOr[Boolean] = js.undefined,
-    speed: Int | Double = null,
+    speed: js.UndefOr[Double] = js.undefined,
     title: String = null,
     uniqueKey: String = null
   ): IContentLoaderProps = {
     val __obj = js.Dynamic.literal()
     if (SVGAttributes != null) js.Dynamic.global.Object.assign(__obj, SVGAttributes)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundOpacity != null) __obj.updateDynamic("backgroundOpacity")(backgroundOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundOpacity)) __obj.updateDynamic("backgroundOpacity")(backgroundOpacity.get.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
-    if (foregroundOpacity != null) __obj.updateDynamic("foregroundOpacity")(foregroundOpacity.asInstanceOf[js.Any])
-    if (gradientRatio != null) __obj.updateDynamic("gradientRatio")(gradientRatio.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(foregroundOpacity)) __obj.updateDynamic("foregroundOpacity")(foregroundOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gradientRatio)) __obj.updateDynamic("gradientRatio")(gradientRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (uniqueKey != null) __obj.updateDynamic("uniqueKey")(uniqueKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContentLoaderProps]

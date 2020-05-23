@@ -1,12 +1,12 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonId
+import typings.postmanCollection.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CollectionDefinition extends ItemGroupDefinition {
-  var info: js.UndefOr[AnonId] = js.undefined
+  var info: js.UndefOr[Id] = js.undefined
   var variable: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object CollectionDefinition {
     disabled: js.UndefOr[Boolean] = js.undefined,
     event: js.Array[EventDefinition] = null,
     id: String = null,
-    info: AnonId = null,
+    info: Id = null,
     item: js.Array[ItemDefinition | ItemGroupDefinition] = null,
     name: String = null,
     variable: js.Array[VariableDefinition] = null
@@ -26,7 +26,7 @@ object CollectionDefinition {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])

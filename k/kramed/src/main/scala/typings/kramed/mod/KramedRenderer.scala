@@ -1,6 +1,6 @@
 package typings.kramed.mod
 
-import typings.kramed.AnonAlign
+import typings.kramed.anon.Align
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait KramedRenderer extends js.Object {
   def paragraph(text: String): String
   def strong(text: String): String
   def table(header: String, body: String): String
-  def tablecell(content: String, flags: AnonAlign): String
+  def tablecell(content: String, flags: Align): String
   def tablerow(content: String): String
   def text(text: String): String
 }
@@ -46,7 +46,7 @@ object KramedRenderer {
     paragraph: String => String,
     strong: String => String,
     table: (String, String) => String,
-    tablecell: (String, AnonAlign) => String,
+    tablecell: (String, Align) => String,
     tablerow: String => String,
     text: String => String
   ): KramedRenderer = {

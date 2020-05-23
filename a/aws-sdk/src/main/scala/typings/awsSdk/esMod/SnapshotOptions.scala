@@ -14,9 +14,9 @@ trait SnapshotOptions extends js.Object {
 
 object SnapshotOptions {
   @scala.inline
-  def apply(AutomatedSnapshotStartHour: Int | scala.Double = null): SnapshotOptions = {
+  def apply(AutomatedSnapshotStartHour: js.UndefOr[IntegerClass] = js.undefined): SnapshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (AutomatedSnapshotStartHour != null) __obj.updateDynamic("AutomatedSnapshotStartHour")(AutomatedSnapshotStartHour.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutomatedSnapshotStartHour)) __obj.updateDynamic("AutomatedSnapshotStartHour")(AutomatedSnapshotStartHour.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotOptions]
   }
 }

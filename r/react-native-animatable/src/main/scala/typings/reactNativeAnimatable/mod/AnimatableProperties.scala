@@ -26,14 +26,14 @@ trait AnimatableProperties[S /* <: js.Object */] extends js.Object {
 
 object AnimatableProperties {
   @scala.inline
-  def apply[S /* <: js.Object */](
+  def apply[S](
     animation: Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle]) = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     direction: Direction = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: Easing = null,
     iterationCount: Double | infinite = null,
-    iterationDelay: Int | Double = null,
+    iterationDelay: js.UndefOr[Double] = js.undefined,
     onAnimationBegin: js.Function = null,
     onAnimationEnd: js.Function = null,
     onTransitionBegin: /* property */ String => Unit = null,
@@ -43,18 +43,18 @@ object AnimatableProperties {
   ): AnimatableProperties[S] = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (iterationCount != null) __obj.updateDynamic("iterationCount")(iterationCount.asInstanceOf[js.Any])
-    if (iterationDelay != null) __obj.updateDynamic("iterationDelay")(iterationDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterationDelay)) __obj.updateDynamic("iterationDelay")(iterationDelay.get.asInstanceOf[js.Any])
     if (onAnimationBegin != null) __obj.updateDynamic("onAnimationBegin")(onAnimationBegin.asInstanceOf[js.Any])
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd.asInstanceOf[js.Any])
     if (onTransitionBegin != null) __obj.updateDynamic("onTransitionBegin")(js.Any.fromFunction1(onTransitionBegin))
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatableProperties[S]]
   }
 }

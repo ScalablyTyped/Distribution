@@ -12,14 +12,14 @@ sealed trait CommentMode extends js.Object
 @js.native
 object CommentMode extends js.Object {
   /**
-  		 * Displays the comment editor
-  		 */
+    * Displays the comment editor
+    */
   @js.native
   sealed trait Editing extends CommentMode
   
   /**
-  		 * Displays the preview of the comment
-  		 */
+    * Displays the preview of the comment
+    */
   @js.native
   sealed trait Preview extends CommentMode
   

@@ -36,23 +36,23 @@ object DiagramProps {
     deleteKeys: js.Array[Double] = null,
     extraProps: js.Any = null,
     inverseZoom: js.UndefOr[Boolean] = js.undefined,
-    maxNumberPointsPerLink: Int | Double = null,
+    maxNumberPointsPerLink: js.UndefOr[Double] = js.undefined,
     smartRouting: js.UndefOr[Boolean] = js.undefined
   ): DiagramProps = {
     val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any])
     if (actionStartedFiring != null) __obj.updateDynamic("actionStartedFiring")(js.Any.fromFunction1(actionStartedFiring))
     if (actionStillFiring != null) __obj.updateDynamic("actionStillFiring")(js.Any.fromFunction1(actionStillFiring))
     if (actionStoppedFiring != null) __obj.updateDynamic("actionStoppedFiring")(js.Any.fromFunction1(actionStoppedFiring))
-    if (!js.isUndefined(allowCanvasTranslation)) __obj.updateDynamic("allowCanvasTranslation")(allowCanvasTranslation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCanvasZoom)) __obj.updateDynamic("allowCanvasZoom")(allowCanvasZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowLooseLinks)) __obj.updateDynamic("allowLooseLinks")(allowLooseLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCanvasTranslation)) __obj.updateDynamic("allowCanvasTranslation")(allowCanvasTranslation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCanvasZoom)) __obj.updateDynamic("allowCanvasZoom")(allowCanvasZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLooseLinks)) __obj.updateDynamic("allowLooseLinks")(allowLooseLinks.get.asInstanceOf[js.Any])
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (deleteKeys != null) __obj.updateDynamic("deleteKeys")(deleteKeys.asInstanceOf[js.Any])
     if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverseZoom)) __obj.updateDynamic("inverseZoom")(inverseZoom.asInstanceOf[js.Any])
-    if (maxNumberPointsPerLink != null) __obj.updateDynamic("maxNumberPointsPerLink")(maxNumberPointsPerLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartRouting)) __obj.updateDynamic("smartRouting")(smartRouting.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverseZoom)) __obj.updateDynamic("inverseZoom")(inverseZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNumberPointsPerLink)) __obj.updateDynamic("maxNumberPointsPerLink")(maxNumberPointsPerLink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartRouting)) __obj.updateDynamic("smartRouting")(smartRouting.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramProps]
   }
 }

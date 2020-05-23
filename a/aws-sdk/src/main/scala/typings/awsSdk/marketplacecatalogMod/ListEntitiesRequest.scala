@@ -38,13 +38,13 @@ object ListEntitiesRequest {
     Catalog: Catalog,
     EntityType: EntityType,
     FilterList: FilterList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResultInteger] = js.undefined,
     NextToken: NextToken = null,
     Sort: Sort = null
   ): ListEntitiesRequest = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], EntityType = EntityType.asInstanceOf[js.Any])
     if (FilterList != null) __obj.updateDynamic("FilterList")(FilterList.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Sort != null) __obj.updateDynamic("Sort")(Sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEntitiesRequest]

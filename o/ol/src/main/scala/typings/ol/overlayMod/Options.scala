@@ -27,7 +27,7 @@ object Options {
   def apply(
     autoPan: PanIntoViewOptions | Boolean = null,
     autoPanAnimation: PanOptions = null,
-    autoPanMargin: Int | Double = null,
+    autoPanMargin: js.UndefOr[Double] = js.undefined,
     autoPanOptions: PanIntoViewOptions = null,
     className: String = null,
     element: HTMLElement = null,
@@ -41,16 +41,16 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (autoPan != null) __obj.updateDynamic("autoPan")(autoPan.asInstanceOf[js.Any])
     if (autoPanAnimation != null) __obj.updateDynamic("autoPanAnimation")(autoPanAnimation.asInstanceOf[js.Any])
-    if (autoPanMargin != null) __obj.updateDynamic("autoPanMargin")(autoPanMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPanMargin)) __obj.updateDynamic("autoPanMargin")(autoPanMargin.get.asInstanceOf[js.Any])
     if (autoPanOptions != null) __obj.updateDynamic("autoPanOptions")(autoPanOptions.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertFirst)) __obj.updateDynamic("insertFirst")(insertFirst.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertFirst)) __obj.updateDynamic("insertFirst")(insertFirst.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (positioning != null) __obj.updateDynamic("positioning")(positioning.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(stopEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(stopEvent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

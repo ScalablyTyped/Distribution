@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait TreeViewVisibilityChangeEvent extends js.Object {
   /**
-  		 * `true` if the [tree view](#TreeView) is visible otherwise `false`.
-  		 */
+    * `true` if the [tree view](#TreeView) is visible otherwise `false`.
+    */
   val visible: Boolean
 }
 

@@ -18,9 +18,9 @@ trait DeleteTargetRequest extends js.Object {
 
 object DeleteTargetRequest {
   @scala.inline
-  def apply(TargetAddress: TargetAddress, ForceUnsubscribeAll: js.UndefOr[Boolean] = js.undefined): DeleteTargetRequest = {
+  def apply(TargetAddress: TargetAddress, ForceUnsubscribeAll: js.UndefOr[ForceUnsubscribeAll] = js.undefined): DeleteTargetRequest = {
     val __obj = js.Dynamic.literal(TargetAddress = TargetAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceUnsubscribeAll)) __obj.updateDynamic("ForceUnsubscribeAll")(ForceUnsubscribeAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceUnsubscribeAll)) __obj.updateDynamic("ForceUnsubscribeAll")(ForceUnsubscribeAll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTargetRequest]
   }
 }

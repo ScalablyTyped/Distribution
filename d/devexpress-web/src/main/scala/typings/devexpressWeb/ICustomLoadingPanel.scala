@@ -26,7 +26,7 @@ object ICustomLoadingPanel {
   @scala.inline
   def apply(hide: () => Unit, show: () => Unit, visible: js.UndefOr[Boolean] = js.undefined): ICustomLoadingPanel = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomLoadingPanel]
   }
 }

@@ -53,25 +53,25 @@ trait Options[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions 
 
 object Options {
   @scala.inline
-  def apply[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */](
+  def apply[QueueType, QueueOptions](
     autoStart: js.UndefOr[Boolean] = js.undefined,
     carryoverConcurrencyCount: js.UndefOr[Boolean] = js.undefined,
-    concurrency: Int | Double = null,
-    interval: Int | Double = null,
-    intervalCap: Int | Double = null,
+    concurrency: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
+    intervalCap: js.UndefOr[Double] = js.undefined,
     queueClass: Instantiable0[QueueType] = null,
     throwOnTimeout: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): Options[QueueType, QueueOptions] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(carryoverConcurrencyCount)) __obj.updateDynamic("carryoverConcurrencyCount")(carryoverConcurrencyCount.asInstanceOf[js.Any])
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (intervalCap != null) __obj.updateDynamic("intervalCap")(intervalCap.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(carryoverConcurrencyCount)) __obj.updateDynamic("carryoverConcurrencyCount")(carryoverConcurrencyCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intervalCap)) __obj.updateDynamic("intervalCap")(intervalCap.get.asInstanceOf[js.Any])
     if (queueClass != null) __obj.updateDynamic("queueClass")(queueClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwOnTimeout)) __obj.updateDynamic("throwOnTimeout")(throwOnTimeout.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnTimeout)) __obj.updateDynamic("throwOnTimeout")(throwOnTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[QueueType, QueueOptions]]
   }
 }

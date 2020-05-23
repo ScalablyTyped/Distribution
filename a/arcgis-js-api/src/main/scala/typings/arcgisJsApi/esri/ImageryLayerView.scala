@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait ImageryLayerView extends LayerView {
     */
   var pixelData: ImageryLayerViewPixelData = js.native
 }
-
-@JSGlobal("__esri.ImageryLayerView")
-@js.native
-object ImageryLayerView extends TopLevel[ImageryLayerViewConstructor]
 

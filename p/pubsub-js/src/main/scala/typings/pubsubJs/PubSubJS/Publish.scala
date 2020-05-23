@@ -4,10 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Publish extends js.Object {
-  def publish(message: js.Any, data: js.Any): Boolean = js.native
-  def publish(message: js.Any, data: js.Any, sync: Boolean, immediateExceptions: js.Function): Boolean = js.native
-  def publishSync(message: js.Any, data: js.Any): Boolean = js.native
+  def publish(message: String, data: js.Any): Boolean
+  def publishSync(message: String, data: js.Any): Boolean
+}
+
+object Publish {
+  @scala.inline
+  def apply(publish: (String, js.Any) => Boolean, publishSync: (String, js.Any) => Boolean): Publish = {
+    val __obj = js.Dynamic.literal(publish = js.Any.fromFunction2(publish), publishSync = js.Any.fromFunction2(publishSync))
+    __obj.asInstanceOf[Publish]
+  }
 }
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object modeCtrGladmanMod
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CTRGladman */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CFB */ js.Any
     ]
 

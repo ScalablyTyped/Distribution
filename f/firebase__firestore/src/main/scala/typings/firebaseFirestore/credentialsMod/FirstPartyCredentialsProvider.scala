@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/credentials", "FirstPartyCredentialsProvider")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/credentials", "FirstPartyCredentialsProvider")
 @js.native
 class FirstPartyCredentialsProvider protected () extends CredentialsProvider {
   def this(gapi: Gapi, sessionIndex: String) = this()

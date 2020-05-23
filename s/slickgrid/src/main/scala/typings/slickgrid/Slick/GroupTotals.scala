@@ -4,14 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Slick.GroupTotals")
-@js.native
-class GroupTotals[T] () extends NonDataRow {
+trait GroupTotals[T] extends NonDataRow {
   /***
-  		* Parent Group.
-  		* @param group
-  		* @type {Group}
-  		*/
-  var group: Group[T] = js.native
+    * Parent Group.
+    * @param group
+    * @type {Group}
+    */
+  var group: Group[T]
+}
+
+object GroupTotals {
+  @scala.inline
+  def apply[T](group: Group[T]): GroupTotals[T] = {
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupTotals[T]]
+  }
 }
 

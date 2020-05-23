@@ -1,8 +1,7 @@
 package typings.reactNative.mod
 
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
-import typings.reactNative.AnonAnimated
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,8 @@ class RecyclerViewBackedScrollView ()
   def scrollTo(y: Double): Unit = js.native
   def scrollTo(y: Double, x: Double): Unit = js.native
   def scrollTo(y: Double, x: Double, animated: Boolean): Unit = js.native
-  def scrollTo(y: AnonAnimated): Unit = js.native
-  def scrollTo(y: AnonAnimated, x: Double): Unit = js.native
-  def scrollTo(y: AnonAnimated, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated, x: Double): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated, x: Double, animated: Boolean): Unit = js.native
 }
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.tinycolor2.mod._ColorInput because Already inherited
 - typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ trait HSLA
   extends HSL

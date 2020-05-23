@@ -12,7 +12,7 @@ trait FeathersAuthCredentials
 
 object FeathersAuthCredentials {
   @scala.inline
-  def apply(strategy: String, StringDictionary: /* index */ StringDictionary[js.Any] = null): FeathersAuthCredentials = {
+  def apply(strategy: String, StringDictionary: /* name */ StringDictionary[js.Any] = null): FeathersAuthCredentials = {
     val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[FeathersAuthCredentials]

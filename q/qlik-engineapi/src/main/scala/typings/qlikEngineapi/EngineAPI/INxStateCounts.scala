@@ -60,10 +60,10 @@ object INxStateCounts {
     qLockedExcluded: Double,
     qSelected: Double,
     qSelectedExcluded: Double,
-    qOption: Int | Double = null
+    qOption: js.UndefOr[Double] = js.undefined
   ): INxStateCounts = {
     val __obj = js.Dynamic.literal(qAlternative = qAlternative.asInstanceOf[js.Any], qDeselected = qDeselected.asInstanceOf[js.Any], qExcluded = qExcluded.asInstanceOf[js.Any], qLocked = qLocked.asInstanceOf[js.Any], qLockedExcluded = qLockedExcluded.asInstanceOf[js.Any], qSelected = qSelected.asInstanceOf[js.Any], qSelectedExcluded = qSelectedExcluded.asInstanceOf[js.Any])
-    if (qOption != null) __obj.updateDynamic("qOption")(qOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(qOption)) __obj.updateDynamic("qOption")(qOption.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxStateCounts]
   }
 }

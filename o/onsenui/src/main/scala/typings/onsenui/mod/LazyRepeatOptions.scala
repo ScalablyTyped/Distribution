@@ -31,16 +31,16 @@ trait LazyRepeatOptions extends js.Object {
 object LazyRepeatOptions {
   @scala.inline
   def apply(
-    calculateItemHeight: Int | Double = null,
-    configureItemScope: Int | Double = null,
-    countItems: Int | Double = null,
+    calculateItemHeight: js.UndefOr[Double] = js.undefined,
+    configureItemScope: js.UndefOr[Double] = js.undefined,
+    countItems: js.UndefOr[Double] = js.undefined,
     createItemContent: HTMLElement = null,
     destroyItem: String = null
   ): LazyRepeatOptions = {
     val __obj = js.Dynamic.literal()
-    if (calculateItemHeight != null) __obj.updateDynamic("calculateItemHeight")(calculateItemHeight.asInstanceOf[js.Any])
-    if (configureItemScope != null) __obj.updateDynamic("configureItemScope")(configureItemScope.asInstanceOf[js.Any])
-    if (countItems != null) __obj.updateDynamic("countItems")(countItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculateItemHeight)) __obj.updateDynamic("calculateItemHeight")(calculateItemHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(configureItemScope)) __obj.updateDynamic("configureItemScope")(configureItemScope.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(countItems)) __obj.updateDynamic("countItems")(countItems.get.asInstanceOf[js.Any])
     if (createItemContent != null) __obj.updateDynamic("createItemContent")(createItemContent.asInstanceOf[js.Any])
     if (destroyItem != null) __obj.updateDynamic("destroyItem")(destroyItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[LazyRepeatOptions]

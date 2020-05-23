@@ -35,7 +35,7 @@ object UIFailedUploadTextDisplay {
     responseProperty: String = null
   ): UIFailedUploadTextDisplay = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableTooltip)) __obj.updateDynamic("enableTooltip")(enableTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTooltip)) __obj.updateDynamic("enableTooltip")(enableTooltip.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (responseProperty != null) __obj.updateDynamic("responseProperty")(responseProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIFailedUploadTextDisplay]

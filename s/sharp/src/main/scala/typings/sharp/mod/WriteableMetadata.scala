@@ -11,9 +11,9 @@ trait WriteableMetadata extends js.Object {
 
 object WriteableMetadata {
   @scala.inline
-  def apply(orientation: Int | Double = null): WriteableMetadata = {
+  def apply(orientation: js.UndefOr[Double] = js.undefined): WriteableMetadata = {
     val __obj = js.Dynamic.literal()
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteableMetadata]
   }
 }

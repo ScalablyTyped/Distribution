@@ -41,7 +41,7 @@ object CreateLaunchTemplateVersionRequest {
   def apply(
     LaunchTemplateData: RequestLaunchTemplateData,
     ClientToken: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     LaunchTemplateId: LaunchTemplateId = null,
     LaunchTemplateName: LaunchTemplateName = null,
     SourceVersion: String = null,
@@ -49,7 +49,7 @@ object CreateLaunchTemplateVersionRequest {
   ): CreateLaunchTemplateVersionRequest = {
     val __obj = js.Dynamic.literal(LaunchTemplateData = LaunchTemplateData.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
     if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
     if (SourceVersion != null) __obj.updateDynamic("SourceVersion")(SourceVersion.asInstanceOf[js.Any])

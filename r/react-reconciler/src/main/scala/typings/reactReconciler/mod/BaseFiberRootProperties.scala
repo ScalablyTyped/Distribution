@@ -80,13 +80,7 @@ object BaseFiberRootProperties {
     pendingContext: js.Object = null,
     pingCache: (WeakMap[Thenable, Set[ExpirationTime]]) | (Map[Thenable, Set[ExpirationTime]]) = null
   ): BaseFiberRootProperties = {
-    val __obj = js.Dynamic.literal(containerInfo = containerInfo.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], didError = didError.asInstanceOf[js.Any], earliestPendingTime = earliestPendingTime.asInstanceOf[js.Any], earliestSuspendedTime = earliestSuspendedTime.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], hydrate = hydrate.asInstanceOf[js.Any], latestPendingTime = latestPendingTime.asInstanceOf[js.Any], latestPingedTime = latestPingedTime.asInstanceOf[js.Any], latestSuspendedTime = latestSuspendedTime.asInstanceOf[js.Any], nextExpirationTimeToWorkOn = nextExpirationTimeToWorkOn.asInstanceOf[js.Any], pendingChildren = pendingChildren.asInstanceOf[js.Any], pendingCommitExpirationTime = pendingCommitExpirationTime.asInstanceOf[js.Any], timeoutHandle = timeoutHandle.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (finishedWork != null) __obj.updateDynamic("finishedWork")(finishedWork.asInstanceOf[js.Any])
-    if (firstBatch != null) __obj.updateDynamic("firstBatch")(firstBatch.asInstanceOf[js.Any])
-    if (nextScheduledRoot != null) __obj.updateDynamic("nextScheduledRoot")(nextScheduledRoot.asInstanceOf[js.Any])
-    if (pendingContext != null) __obj.updateDynamic("pendingContext")(pendingContext.asInstanceOf[js.Any])
-    if (pingCache != null) __obj.updateDynamic("pingCache")(pingCache.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(containerInfo = containerInfo.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], didError = didError.asInstanceOf[js.Any], earliestPendingTime = earliestPendingTime.asInstanceOf[js.Any], earliestSuspendedTime = earliestSuspendedTime.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], hydrate = hydrate.asInstanceOf[js.Any], latestPendingTime = latestPendingTime.asInstanceOf[js.Any], latestPingedTime = latestPingedTime.asInstanceOf[js.Any], latestSuspendedTime = latestSuspendedTime.asInstanceOf[js.Any], nextExpirationTimeToWorkOn = nextExpirationTimeToWorkOn.asInstanceOf[js.Any], pendingChildren = pendingChildren.asInstanceOf[js.Any], pendingCommitExpirationTime = pendingCommitExpirationTime.asInstanceOf[js.Any], timeoutHandle = timeoutHandle.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], finishedWork = finishedWork.asInstanceOf[js.Any], firstBatch = firstBatch.asInstanceOf[js.Any], nextScheduledRoot = nextScheduledRoot.asInstanceOf[js.Any], pendingContext = pendingContext.asInstanceOf[js.Any], pingCache = pingCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseFiberRootProperties]
   }
 }

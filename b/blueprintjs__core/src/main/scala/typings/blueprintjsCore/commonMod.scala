@@ -3,23 +3,12 @@ package typings.blueprintjsCore
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.blueprintjsCore.alignmentMod.Alignment
+import typings.blueprintjsCore.anon.Key
 import typings.blueprintjsCore.blueprintjsCoreNumbers.`0`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`13`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`16`
 import typings.blueprintjsCore.blueprintjsCoreNumbers.`1`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`27`
 import typings.blueprintjsCore.blueprintjsCoreNumbers.`2`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`32`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`37`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`38`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`39`
 import typings.blueprintjsCore.blueprintjsCoreNumbers.`3`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`40`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`46`
 import typings.blueprintjsCore.blueprintjsCoreNumbers.`4`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`8`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`9`
-import typings.blueprintjsCore.blueprintjsCoreStrings.Blueprint3
 import typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-left`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-right`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`left-bottom`
@@ -42,17 +31,19 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.top
 import typings.blueprintjsCore.blueprintjsCoreStrings.warning
 import typings.blueprintjsCore.compareUtilsMod.IKeyBlacklist
 import typings.blueprintjsCore.compareUtilsMod.IKeyWhitelist
+import typings.blueprintjsCore.domUtilsMod.IThrottledReactEventOptions
 import typings.blueprintjsCore.elevationMod.Elevation
 import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.positionMod.Position
-import typings.blueprintjsCore.utilsMod.INamed
-import typings.blueprintjsCore.utilsMod.IThrottledReactEventOptions
+import typings.blueprintjsCore.reactUtilsMod.INamed
+import typings.blueprintjsCore.refsMod.IRef
+import typings.blueprintjsCore.refsMod.IRefObject
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -89,10 +80,16 @@ object commonMod extends js.Object {
     def this(props: P, context: js.Any) = this()
   }
   
-  val DISPLAYNAME_PREFIX: Blueprint3 = js.native
+  val DISPLAYNAME_PREFIX: /* "Blueprint3" */ String = js.native
   def getPositionIgnoreAngles(position: Position): left | right | bottom | top = js.native
+  def getRef[T](ref: T): T = js.native
+  def getRef[T](ref: IRefObject[T]): T = js.native
   def isPositionHorizontal(position: Position): Boolean = js.native
   def isPositionVertical(position: Position): Boolean = js.native
+  def isRefCallback[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = js.native
+  def isRefCallback[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = js.native
+  def isRefObject[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = js.native
+  def isRefObject[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = js.native
   def removeNonHTMLProps(props: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
   def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String]): StringDictionary[js.Any] = js.native
   def removeNonHTMLProps(props: StringDictionary[js.Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[js.Any] = js.native
@@ -197,6 +194,7 @@ object commonMod extends js.Object {
     val INPUT_ACTION: String = js.native
     val INPUT_GHOST: String = js.native
     val INPUT_GROUP: String = js.native
+    val INPUT_LEFT_CONTAINER: String = js.native
     val INTENT_DANGER: String = js.native
     val INTENT_PRIMARY: String = js.native
     val INTENT_SUCCESS: String = js.native
@@ -439,17 +437,17 @@ object commonMod extends js.Object {
   
   @js.native
   object Keys extends js.Object {
-    val ARROW_DOWN: `40` = js.native
-    val ARROW_LEFT: `37` = js.native
-    val ARROW_RIGHT: `39` = js.native
-    val ARROW_UP: `38` = js.native
-    val BACKSPACE: `8` = js.native
-    val DELETE: `46` = js.native
-    val ENTER: `13` = js.native
-    val ESCAPE: `27` = js.native
-    val SHIFT: `16` = js.native
-    val SPACE: `32` = js.native
-    val TAB: `9` = js.native
+    val ARROW_DOWN: /* 40 */ Double = js.native
+    val ARROW_LEFT: /* 37 */ Double = js.native
+    val ARROW_RIGHT: /* 39 */ Double = js.native
+    val ARROW_UP: /* 38 */ Double = js.native
+    val BACKSPACE: /* 8 */ Double = js.native
+    val DELETE: /* 46 */ Double = js.native
+    val ENTER: /* 13 */ Double = js.native
+    val ESCAPE: /* 27 */ Double = js.native
+    val SHIFT: /* 16 */ Double = js.native
+    val SPACE: /* 32 */ Double = js.native
+    val TAB: /* 9 */ Double = js.native
     def isKeyboardClick(keyCode: Double): Boolean = js.native
   }
   
@@ -488,17 +486,19 @@ object commonMod extends js.Object {
     def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String | Double | js.Symbol]): Boolean = js.native
     def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = js.native
     def ensureElement(): ReactElement = js.native
+    def ensureElement(child: ReactNode): ReactElement = js.native
     def ensureElement(
-      child: js.UndefOr[ReactNode],
+      child: ReactNode,
       tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
     ): ReactElement = js.native
-    def ensureElement(child: ReactNode): ReactElement = js.native
-    def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[AnonKey[T]] = js.native
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[AnonKey[T]] = js.native
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[AnonKey[T]] = js.native
-    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[AnonKey[T]] = js.native
+    def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[Key[T]] = js.native
+    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[Key[T]] = js.native
+    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[Key[T]] = js.native
+    def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = js.native
     def getDisplayName(ComponentClass: INamed): String = js.native
     def getDisplayName(ComponentClass: ComponentType[js.Object]): String = js.native
+    def getRef[T](ref: T): T = js.native
+    def getRef[T](ref: IRefObject[T]): T = js.native
     def isElementOfType[P](element: js.Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = js.native
     def isFunction(value: js.Any): /* is std.Function */ Boolean = js.native
     def isNodeEnv(env: String): Boolean = js.native
@@ -508,15 +508,16 @@ object commonMod extends js.Object {
     def isReactNodeEmpty(node: ReactNode, skipArray: Boolean): Boolean = js.native
     def safeInvoke[R](): js.UndefOr[R] = js.native
     def safeInvoke[R](func: js.Function0[R]): js.UndefOr[R] = js.native
-    def safeInvoke[A, R](func: js.UndefOr[scala.Nothing], arg1: A): js.UndefOr[R] = js.native
-    def safeInvoke[A, R](func: js.Function1[/* arg1 */ A, R], arg1: A): js.UndefOr[R] = js.native
-    def safeInvoke[A, B, R](func: js.UndefOr[scala.Nothing], arg1: A, arg2: B): js.UndefOr[R] = js.native
-    def safeInvoke[A, B, R](func: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): js.UndefOr[R] = js.native
-    def safeInvoke[A, B, C, R](func: js.UndefOr[scala.Nothing], arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
-    def safeInvoke[A, B, C, R](func: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
-    def safeInvoke[A, B, C, D, R](func: js.UndefOr[scala.Nothing], arg1: A, arg2: B, arg3: C, arg4: D): js.UndefOr[R] = js.native
+    def safeInvoke[A, R](func: js.UndefOr[js.Function1[/* arg1 */ A, R]], arg1: A): js.UndefOr[R] = js.native
+    def safeInvoke[A, B, R](func: js.UndefOr[js.Function2[/* arg1 */ A, /* arg2 */ B, R]], arg1: A, arg2: B): js.UndefOr[R] = js.native
+    def safeInvoke[A, B, C, R](
+      func: js.UndefOr[js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R]],
+      arg1: A,
+      arg2: B,
+      arg3: C
+    ): js.UndefOr[R] = js.native
     def safeInvoke[A, B, C, D, R](
-      func: js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R],
+      func: js.UndefOr[js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R]],
       arg1: A,
       arg2: B,
       arg3: C,
@@ -524,44 +525,29 @@ object commonMod extends js.Object {
     ): js.UndefOr[R] = js.native
     def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: T, key: K): js.UndefOr[R] = js.native
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: js.UndefOr[scala.Nothing], key: K): js.UndefOr[R] = js.native
+      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: js.UndefOr[T], key: K): js.UndefOr[R] = js.native
     def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (a : A): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: T, key: K, arg1: A): js.UndefOr[R] = js.native
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (a : A): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A): js.UndefOr[R] = js.native
+      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: js.UndefOr[T], key: K, arg1: A): js.UndefOr[R] = js.native
     def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (a : A, b : B): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: T, key: K, arg1: A, arg2: B): js.UndefOr[R] = js.native
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (a : A, b : B): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A, arg2: B): js.UndefOr[R] = js.native
+      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: js.UndefOr[T], key: K, arg1: A, arg2: B): js.UndefOr[R] = js.native
     def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in K ]:? (a : A, b : B, c : C): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: T, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
-    def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in K ]:? (a : A, b : B, c : C): R}
-      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
+      */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: js.UndefOr[T], key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
     def safeInvokeOrValue[R](): R = js.native
     def safeInvokeOrValue[R](funcOrValue: R): R = js.native
     def safeInvokeOrValue[R](funcOrValue: js.Function0[R]): R = js.native
-    def safeInvokeOrValue[A, R](funcOrValue: R, arg1: A): R = js.native
-    def safeInvokeOrValue[A, R](funcOrValue: js.UndefOr[scala.Nothing], arg1: A): R = js.native
-    def safeInvokeOrValue[A, R](funcOrValue: js.Function1[/* arg1 */ A, R], arg1: A): R = js.native
-    def safeInvokeOrValue[A, B, R](funcOrValue: R, arg1: A, arg2: B): R = js.native
-    def safeInvokeOrValue[A, B, R](funcOrValue: js.UndefOr[scala.Nothing], arg1: A, arg2: B): R = js.native
-    def safeInvokeOrValue[A, B, R](funcOrValue: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): R = js.native
-    def safeInvokeOrValue[A, B, C, R](funcOrValue: R, arg1: A, arg2: B, arg3: C): R = js.native
-    def safeInvokeOrValue[A, B, C, R](funcOrValue: js.UndefOr[scala.Nothing], arg1: A, arg2: B, arg3: C): R = js.native
-    def safeInvokeOrValue[A, B, C, R](funcOrValue: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): R = js.native
-    def safeInvokeOrValue[A, B, C, D, R](funcOrValue: R, arg1: A, arg2: B, arg3: C, arg4: D): R = js.native
-    def safeInvokeOrValue[A, B, C, D, R](funcOrValue: js.UndefOr[scala.Nothing], arg1: A, arg2: B, arg3: C, arg4: D): R = js.native
+    def safeInvokeOrValue[A, R](funcOrValue: js.UndefOr[(js.Function1[/* arg1 */ A, R]) | R], arg1: A): R = js.native
+    def safeInvokeOrValue[A, B, R](funcOrValue: js.UndefOr[(js.Function2[/* arg1 */ A, /* arg2 */ B, R]) | R], arg1: A, arg2: B): R = js.native
+    def safeInvokeOrValue[A, B, C, R](
+      funcOrValue: js.UndefOr[(js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R]) | R],
+      arg1: A,
+      arg2: B,
+      arg3: C
+    ): R = js.native
     def safeInvokeOrValue[A, B, C, D, R](
-      funcOrValue: js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R],
+      funcOrValue: js.UndefOr[(js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R]) | R],
       arg1: A,
       arg2: B,
       arg3: C,
@@ -571,12 +557,12 @@ object commonMod extends js.Object {
     def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyBlacklist[T]): Boolean = js.native
     def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyWhitelist[T]): Boolean = js.native
     def throttle[T /* <: js.Function */](method: T): T = js.native
-    def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event_, Unit] = js.native
-    def throttleReactEventCallback(callback: js.Function2[/* event */ SyntheticEvent[_, Event_], /* repeated */ js.Any, _]): js.Function1[/* event2 */ SyntheticEvent[_, Event_], Unit] = js.native
+    def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = js.native
+    def throttleReactEventCallback(callback: js.Function2[/* event */ SyntheticEvent[_, Event], /* repeated */ js.Any, _]): js.Function1[/* event2 */ SyntheticEvent[_, Event], Unit] = js.native
     def throttleReactEventCallback(
-      callback: js.Function2[/* event */ SyntheticEvent[_, Event_], /* repeated */ js.Any, _],
+      callback: js.Function2[/* event */ SyntheticEvent[_, Event], /* repeated */ js.Any, _],
       options: IThrottledReactEventOptions
-    ): js.Function1[/* event2 */ SyntheticEvent[_, Event_], Unit] = js.native
+    ): js.Function1[/* event2 */ SyntheticEvent[_, Event], Unit] = js.native
   }
   
 }

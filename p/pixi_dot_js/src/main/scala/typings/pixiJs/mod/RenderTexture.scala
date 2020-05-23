@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonResolution
+import typings.pixiJs.anon.Resolution
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   *
   * ```js
   * let renderer = PIXI.autoDetectRenderer();
-  * let renderTexture = PIXI.RenderTexture.create(800, 600);
+  * let renderTexture = PIXI.RenderTexture.create({ width: 800, height: 600 });
   * let sprite = PIXI.Sprite.from("spinObj_01.png");
   *
   * sprite.position.x = 800/2;
@@ -68,6 +68,6 @@ object RenderTexture extends js.Object {
     * @return {PIXI.RenderTexture} The new render texture
     */
   def create(): typings.pixiJs.PIXI.RenderTexture = js.native
-  def create(options: AnonResolution): typings.pixiJs.PIXI.RenderTexture = js.native
+  def create(options: Resolution): typings.pixiJs.PIXI.RenderTexture = js.native
 }
 

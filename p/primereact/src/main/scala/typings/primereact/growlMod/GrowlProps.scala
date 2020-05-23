@@ -18,7 +18,7 @@ trait GrowlProps extends js.Object {
 object GrowlProps {
   @scala.inline
   def apply(
-    baseZIndex: Int | Double = null,
+    baseZIndex: js.UndefOr[Double] = js.undefined,
     className: String = null,
     id: String = null,
     onClick: /* message */ GrowlMessage => Unit = null,
@@ -28,7 +28,7 @@ object GrowlProps {
     style: js.Object = null
   ): GrowlProps = {
     val __obj = js.Dynamic.literal()
-    if (baseZIndex != null) __obj.updateDynamic("baseZIndex")(baseZIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseZIndex)) __obj.updateDynamic("baseZIndex")(baseZIndex.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))

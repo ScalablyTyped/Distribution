@@ -28,14 +28,14 @@ object Options {
   @scala.inline
   def apply(
     cwd: String = null,
-    debounceDelay: Int | Double = null,
-    interval: Int | Double = null,
+    debounceDelay: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
     mode: Mode = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (debounceDelay != null) __obj.updateDynamic("debounceDelay")(debounceDelay.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(debounceDelay)) __obj.updateDynamic("debounceDelay")(debounceDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

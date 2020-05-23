@@ -23,7 +23,7 @@ object ChartData {
     label: String = null,
     measure: MeasureObject = null,
     rows: js.Array[js.Object] = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): ChartData = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
@@ -31,7 +31,7 @@ object ChartData {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartData]
   }
 }

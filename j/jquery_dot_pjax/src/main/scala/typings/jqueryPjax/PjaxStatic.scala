@@ -1,7 +1,7 @@
 package typings.jqueryPjax
 
+import typings.jquery.JQuery.Event
 import typings.jquery.JQueryXHR
-import typings.jquery.JQuery_.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

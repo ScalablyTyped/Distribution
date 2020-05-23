@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ScreenWidthMaxMedium")
 @js.native
-object ScreenWidthMaxMedium extends TopLevel[Double]
+object ScreenWidthMaxMedium extends TopLevel[/* 1000 */ Double]
 

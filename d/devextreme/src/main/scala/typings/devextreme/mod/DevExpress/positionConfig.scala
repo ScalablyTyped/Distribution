@@ -1,8 +1,8 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.AnonX
-import typings.devextreme.AnonXY
-import typings.devextreme.AnonY
+import typings.devextreme.anon.X
+import typings.devextreme.anon.XY
+import typings.devextreme.anon.Y
 import typings.devextreme.devextremeStrings.`fit flip`
 import typings.devextreme.devextremeStrings.`fit flipfit`
 import typings.devextreme.devextremeStrings.`fit none`
@@ -26,9 +26,9 @@ import typings.devextreme.devextremeStrings.left
 import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.right
 import typings.devextreme.devextremeStrings.top
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,36 +36,36 @@ import scala.scalajs.js.annotation._
 trait positionConfig extends js.Object {
   /** @name positionConfig.at */
   var at: js.UndefOr[
-    bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX
+    bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
   ] = js.undefined
   /** @name positionConfig.boundary */
-  var boundary: js.UndefOr[String | Element | JQuery | Window_] = js.undefined
+  var boundary: js.UndefOr[String | Element | JQuery | Window] = js.undefined
   /** @name positionConfig.boundaryOffset */
-  var boundaryOffset: js.UndefOr[String | AnonY] = js.undefined
+  var boundaryOffset: js.UndefOr[String | Y] = js.undefined
   /** @name positionConfig.collision */
   var collision: js.UndefOr[
-    fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | AnonXY
+    fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | XY
   ] = js.undefined
   /** @name positionConfig.my */
   var my: js.UndefOr[
-    bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX
+    bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
   ] = js.undefined
   /** @name positionConfig.of */
-  var of: js.UndefOr[String | Element | JQuery | Window_] = js.undefined
+  var of: js.UndefOr[String | Element | JQuery | Window] = js.undefined
   /** @name positionConfig.offset */
-  var offset: js.UndefOr[String | AnonY] = js.undefined
+  var offset: js.UndefOr[String | Y] = js.undefined
 }
 
 object positionConfig {
   @scala.inline
   def apply(
-    at: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX = null,
-    boundary: String | Element | JQuery | Window_ = null,
-    boundaryOffset: String | AnonY = null,
-    collision: fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | AnonXY = null,
-    my: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX = null,
-    of: String | Element | JQuery | Window_ = null,
-    offset: String | AnonY = null
+    at: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X = null,
+    boundary: String | Element | JQuery | Window = null,
+    boundaryOffset: String | Y = null,
+    collision: fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | XY = null,
+    my: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X = null,
+    of: String | Element | JQuery | Window = null,
+    offset: String | Y = null
   ): positionConfig = {
     val __obj = js.Dynamic.literal()
     if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])

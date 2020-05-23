@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Legend")
 @js.native
-class Legend protected () extends js.Object {
+trait Legend extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var AutoScaleFont: js.Any = js.native
   val Border: typings.activexExcel.Excel.Border = js.native

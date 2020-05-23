@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.LIGHTTYPE_DIRECTIONAL
-  * @type {number}
-  * @description Directional (global) light source.
+  * Directional (global) light source.
   */
 @JSImport("playcanvas", "LIGHTTYPE_DIRECTIONAL")
 @js.native

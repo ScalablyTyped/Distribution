@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rdflib", "fromNT")
 @js.native
 object fromNT extends js.Object {
-  def apply(str: String): Node = js.native
+  def apply(str: js.Any): js.Any = js.native
 }
 

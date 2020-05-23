@@ -35,19 +35,19 @@ trait TextDetection extends js.Object {
 object TextDetection {
   @scala.inline
   def apply(
-    Confidence: Int | Double = null,
+    Confidence: js.UndefOr[Percent] = js.undefined,
     DetectedText: String = null,
     Geometry: Geometry = null,
-    Id: Int | Double = null,
-    ParentId: Int | Double = null,
+    Id: js.UndefOr[UInteger] = js.undefined,
+    ParentId: js.UndefOr[UInteger] = js.undefined,
     Type: TextTypes = null
   ): TextDetection = {
     val __obj = js.Dynamic.literal()
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
     if (DetectedText != null) __obj.updateDynamic("DetectedText")(DetectedText.asInstanceOf[js.Any])
     if (Geometry != null) __obj.updateDynamic("Geometry")(Geometry.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (ParentId != null) __obj.updateDynamic("ParentId")(ParentId.asInstanceOf[js.Any])
+    if (!js.isUndefined(Id)) __obj.updateDynamic("Id")(Id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ParentId)) __obj.updateDynamic("ParentId")(ParentId.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDetection]
   }

@@ -9,7 +9,7 @@ package object checkboxMod {
     /* stateType */ java.lang.String, 
     /* nextState */ typings.baseui.checkboxMod.CheckboxState, 
     /* currentState */ typings.baseui.checkboxMod.CheckboxState, 
-    /* event */ typings.react.mod.SyntheticEvent[typings.std.HTMLInputElement, typings.std.Event_], 
+    /* event */ typings.react.mod.SyntheticEvent[typings.std.HTMLInputElement, typings.std.Event], 
     typings.baseui.checkboxMod.CheckboxState
   ]
 }

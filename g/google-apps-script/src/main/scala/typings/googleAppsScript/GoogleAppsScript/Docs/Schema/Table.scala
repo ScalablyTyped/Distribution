@@ -16,16 +16,16 @@ trait Table extends js.Object {
 object Table {
   @scala.inline
   def apply(
-    columns: Int | Double = null,
-    rows: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
+    rows: js.UndefOr[Double] = js.undefined,
     suggestedDeletionIds: js.Array[String] = null,
     suggestedInsertionIds: js.Array[String] = null,
     tableRows: js.Array[TableRow] = null,
     tableStyle: TableStyle = null
   ): Table = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
     if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds.asInstanceOf[js.Any])
     if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows.asInstanceOf[js.Any])

@@ -35,7 +35,7 @@ trait AuthorizationRule extends js.Object {
 object AuthorizationRule {
   @scala.inline
   def apply(
-    AccessAll: js.UndefOr[scala.Boolean] = js.undefined,
+    AccessAll: js.UndefOr[Boolean] = js.undefined,
     ClientVpnEndpointId: String = null,
     Description: String = null,
     DestinationCidr: String = null,
@@ -43,7 +43,7 @@ object AuthorizationRule {
     Status: ClientVpnAuthorizationRuleStatus = null
   ): AuthorizationRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AccessAll)) __obj.updateDynamic("AccessAll")(AccessAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(AccessAll)) __obj.updateDynamic("AccessAll")(AccessAll.get.asInstanceOf[js.Any])
     if (ClientVpnEndpointId != null) __obj.updateDynamic("ClientVpnEndpointId")(ClientVpnEndpointId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DestinationCidr != null) __obj.updateDynamic("DestinationCidr")(DestinationCidr.asInstanceOf[js.Any])

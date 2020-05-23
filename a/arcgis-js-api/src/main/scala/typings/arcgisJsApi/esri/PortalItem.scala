@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`array-buffer`
 import typings.arcgisJsApi.arcgisJsApiStrings.`null`
 import typings.arcgisJsApi.arcgisJsApiStrings.admin
@@ -361,8 +360,4 @@ trait PortalItem
     */
   def updateThumbnail(params: PortalItemUpdateThumbnailParams): js.Promise[PortalItem] = js.native
 }
-
-@JSGlobal("__esri.PortalItem")
-@js.native
-object PortalItem extends TopLevel[PortalItemConstructor]
 

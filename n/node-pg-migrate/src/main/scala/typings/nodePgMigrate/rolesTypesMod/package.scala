@@ -10,7 +10,7 @@ package object rolesTypesMod {
     /* roleOptions */ typings.nodePgMigrate.rolesTypesMod.RoleOptions, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type CreateRole = typings.nodePgMigrate.rolesTypesMod.CreateRoleFn with typings.nodePgMigrate.AnonReverseCreateRoleFn
+  type CreateRole = typings.nodePgMigrate.rolesTypesMod.CreateRoleFn with typings.nodePgMigrate.anon.ReverseCreateRoleFn
   type CreateRoleFn = js.Function2[
     /* roleName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* roleOptions */ js.UndefOr[
@@ -23,7 +23,7 @@ package object rolesTypesMod {
     /* options */ js.UndefOr[typings.nodePgMigrate.generalTypesMod.IfExistsOption], 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RenameRole = typings.nodePgMigrate.rolesTypesMod.RenameRoleFn with typings.nodePgMigrate.AnonReverseRenameRoleFn
+  type RenameRole = typings.nodePgMigrate.rolesTypesMod.RenameRoleFn with typings.nodePgMigrate.anon.ReverseRenameRoleFn
   type RenameRoleFn = js.Function2[
     /* oldRoleName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* newRoleName */ typings.nodePgMigrate.generalTypesMod.Name, 

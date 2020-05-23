@@ -1,6 +1,6 @@
 package typings.css.mod
 
-import typings.css.AnonContent
+import typings.css.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ object CustomMedia {
     media: String = null,
     name: String = null,
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     `type`: String = null
   ): CustomMedia = {
     val __obj = js.Dynamic.literal()

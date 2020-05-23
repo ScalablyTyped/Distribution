@@ -1,14 +1,14 @@
 package typings.officeUiFabricReact.spinButtonTypesMod
 
-import typings.officeUiFabricReact.PartialIButtonStyles
-import typings.officeUiFabricReact.PartialISpinButtonStyles
+import typings.officeUiFabricReact.anon.PartialIButtonStyles
+import typings.officeUiFabricReact.anon.PartialISpinButtonStyles
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 import typings.officeUiFabricReact.positioningTypesMod.Position
 import typings.officeUiFabricReact.spinButtonClassNamesMod.ISpinButtonClassNames
 import typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -76,7 +76,7 @@ import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -88,25 +88,24 @@ import scala.scalajs.js.annotation._
 
 trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
   /**
-    * Optional prop to add a string id that can be referenced inside the aria-describedby attribute
+    * ID of a label which describes the control, if not using the default label.
     */
   var ariaDescribedBy: js.UndefOr[String] = js.undefined
   /**
-    * A description of the SpinButton for the benefit of screen readers.
+    * A description of the control for the benefit of screen reader users.
     */
   var ariaLabel: js.UndefOr[String] = js.undefined
   /**
-    * The position in the parent set (if in a set) for aria-posinset.
+    * The position in the parent set (if in a set).
     */
   var ariaPositionInSet: js.UndefOr[Double] = js.undefined
   /**
-    * The total size of the parent set (if in a set) for aria-setsize.
+    * The total size of the parent set (if in a set).
     */
   var ariaSetSize: js.UndefOr[Double] = js.undefined
   /**
-    * Sets the aria-valuenow of the spin button. The component must be
-    * controlled by the creator who controls the value externally.
-    * ariaValueNow would be the numeric form of value.
+    * Sets the control's aria-valuenow. This is the numeric form of `value`.
+    * Providing this only makes sense when using as a controlled component.
     */
   var ariaValueNow: js.UndefOr[Double] = js.undefined
   var ariaValueText: js.UndefOr[String] = js.undefined
@@ -115,34 +114,35 @@ trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
     */
   var componentRef: js.UndefOr[IRefObject[ISpinButton]] = js.undefined
   /**
-    * Accessibile label text for the decrement button for the benefit of the screen reader.
+    * Accessible label text for the decrement button (for screen reader users).
     */
   var decrementButtonAriaLabel: js.UndefOr[String] = js.undefined
   /**
-    * Icon for the decrement button of the spinButton
+    * Custom props for the decrement button.
     */
   var decrementButtonIcon: js.UndefOr[IIconProps] = js.undefined
   /**
-    * The initial value of the SpinButton. Use this if you intend for the SpinButton to be an uncontrolled component.
-    * This value is mutually exclusive to value. Use one or the other.
+    * Initial value of the control. Updates to this prop will not be respected.
+    *
+    * Use this if you intend for the SpinButton to be an uncontrolled component which maintains its own value.
+    * Mutually exclusive with `value`.
     * @defaultvalue 0
     */
   @JSName("defaultValue")
   var defaultValue_ISpinButtonProps: js.UndefOr[String] = js.undefined
   /**
-    * Whether or not the SpinButton is disabled.
+    * Whether or not the control is disabled.
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * Custom styles for the downArrow button.
+    * Custom styles for the down arrow button.
     *
-    * Note: The buttons are in a checked state when arrow keys are used to
-    * incremenent/decrement the spinButton. Use rootChecked instead of rootPressed
-    * for styling when that is the case.
+    * Note: The buttons are in a checked state when arrow keys are used to incremenent/decrement
+    * the SpinButton. Use `rootChecked` instead of `rootPressed` for styling when that is the case.
     */
   var downArrowButtonStyles: js.UndefOr[PartialIButtonStyles] = js.undefined
   /**
-    * Custom function for providing the classNames for the spinbutton. Can be used to provide
+    * Custom function for providing the classNames for the control. Can be used to provide
     * all styles for the component instead of applying them on top of the default styles.
     */
   var getClassNames: js.UndefOr[
@@ -157,98 +157,97 @@ trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
     ]
   ] = js.undefined
   /**
-    * Optional iconButton props on spin button
+    * Additional props for the up and down arrow buttons.
     */
   var iconButtonProps: js.UndefOr[IButtonProps] = js.undefined
   /**
-    * Icon that goes along with the label for the whole SpinButton
+    * Props for an icon to display alongside the control's label.
     */
   var iconProps: js.UndefOr[IIconProps] = js.undefined
   /**
-    * Accessibile label text for the increment button for the benefit of the screen reader.
+    * Accessible label text for the increment button (for screen reader users).
     */
   var incrementButtonAriaLabel: js.UndefOr[String] = js.undefined
   /**
-    * Icon for the increment button of the spinButton
+    * Custom props for the increment button.
     */
   var incrementButtonIcon: js.UndefOr[IIconProps] = js.undefined
   /**
-    * Optional input props on spin button
+    * Additional props for the input field.
     */
   var inputProps: js.UndefOr[InputHTMLAttributes[HTMLElement | HTMLInputElement]] = js.undefined
   /**
-    * Optional keytip for this spin button
+    * Keytip for the control.
     */
   var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   /**
-    * Descriptive label for the SpinButton.
+    * Descriptive label for the control.
     */
   var label: js.UndefOr[String] = js.undefined
   /**
+    * Where to position the control's label.
     * @defaultvalue Left
     */
   var labelPosition: js.UndefOr[Position] = js.undefined
   /**
-    * The max value of the SpinButton.
+    * Max value of the control.
     * @defaultvalue 100
     */
   var max: js.UndefOr[Double] = js.undefined
   /**
-    * The min value of the SpinButton.
+    * Min value of the control.
     * @defaultvalue 0
     */
   var min: js.UndefOr[Double] = js.undefined
   /**
-    * A callback for when the user moves the focus away from the picker
+    * Callback for when the control loses focus.
     */
   @JSName("onBlur")
   var onBlur_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   /**
-    * This callback is triggered when the decrement button is pressed or if the user presses down arrow
-    * with focus on the input of the spinButton
-    * @returns If a string is returned, it will be used as the value of the SpinButton.
+    * Callback for when the decrement button or down arrow key is pressed.
+    * @returns If a string is returned, it will be used as the new value
     */
   var onDecrement: js.UndefOr[js.Function1[/* value */ String, String | Unit]] = js.undefined
   /**
-    * A callback for when the user put focus on the picker
+    * Callback for when the user focuses the control.
     */
   @JSName("onFocus")
   var onFocus_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   /**
-    * This callback is triggered when the increment button is pressed or if the user presses up arrow
-    * with focus on the input of the spinButton
-    * @returns If a string is returned, it will be used as the value of the SpinButton.
+    * Callback for when the increment button or up arrow key is pressed.
+    * @returns If a string is returned, it will be used as the new value
     */
   var onIncrement: js.UndefOr[js.Function1[/* value */ String, String | Unit]] = js.undefined
   /**
-    * This callback is triggered when the value inside the SpinButton should be validated.
-    * @param value - The value entered in the SpinButton to validate
-    * @param event - The event that triggered this validate, if any. (For accessibility)
-    * @returns If a string is returned, it will be used as the value of the SpinButton.
+    * Callback for when the entered value should be validated.
+    * @param value - The entered value to validate
+    * @param event - The event that triggered this validate, if any (for accessibility)
+    * @returns If a string is returned, it will be used as the new value
     */
   var onValidate: js.UndefOr[
     js.Function2[
       /* value */ String, 
-      /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event_]], 
+      /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
       String | Unit
     ]
   ] = js.undefined
   /**
     * How many decimal places the value should be rounded to.
+    *
     * The default is calculated based on the precision of `step`: i.e. if step = 1, precision = 0.
     * step = 0.0089, precision = 4. step = 300, precision = 2. step = 23.00, precision = 2.
     */
   var precision: js.UndefOr[Double] = js.undefined
   /**
-    * The difference between the two adjacent values of the SpinButton.
-    * This value is sued to calculate the precision of the input if no
-    * precision is given. The precision calculated this way will always
-    * be \>= 0.
+    * Difference between two adjacent values of the control.
+    * This value is used to calculate the precision of the input if no `precision` is given.
+    * The precision calculated this way will always be \>= 0.
     * @defaultvalue 1
     */
   var step: js.UndefOr[Double] = js.undefined
   /**
-    * Custom styling for individual elements within the button DOM.
+    * Custom styling for individual elements within the control.
     */
   var styles: js.UndefOr[PartialISpinButtonStyles] = js.undefined
   /**
@@ -256,16 +255,17 @@ trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
     */
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
-    * Custom styles for the upArrow button.
+    * Custom styles for the up arrow button.
     *
-    * Note: The buttons are in a checked state when arrow keys are used to
-    * incremenent/decrement the spinButton. Use rootChecked instead of rootPressed
-    * for styling when that is the case.
+    * Note: The buttons are in a checked state when arrow keys are used to incremenent/decrement
+    * the SpinButton. Use `rootChecked` instead of `rootPressed` for styling when that is the case.
     */
   var upArrowButtonStyles: js.UndefOr[PartialIButtonStyles] = js.undefined
   /**
-    * The value of the SpinButton. Use this if you intend to pass in a new value as a result of onChange events.
-    * This value is mutually exclusive to defaultValue. Use one or the other.
+    * Current value of the control.
+    *
+    * Use this if you intend to pass in a new value as a result of change events.
+    * Mutually exclusive with `defaultValue`.
     */
   var value: js.UndefOr[String] = js.undefined
 }
@@ -280,9 +280,9 @@ object ISpinButtonProps {
     `aria-autocomplete`: none | `inline` | list | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
+    `aria-colcount`: js.UndefOr[Double] = js.undefined,
+    `aria-colindex`: js.UndefOr[Double] = js.undefined,
+    `aria-colspan`: js.UndefOr[Double] = js.undefined,
     `aria-controls`: String = null,
     `aria-current`: Boolean | page | step | location | date | time = null,
     `aria-describedby`: String = null,
@@ -299,7 +299,7 @@ object ISpinButtonProps {
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
+    `aria-level`: js.UndefOr[Double] = js.undefined,
     `aria-live`: off | assertive | polite = null,
     `aria-modal`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
@@ -307,27 +307,27 @@ object ISpinButtonProps {
     `aria-orientation`: horizontal | vertical = null,
     `aria-owns`: String = null,
     `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
+    `aria-posinset`: js.UndefOr[Double] = js.undefined,
     `aria-pressed`: Boolean | mixed = null,
     `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
     `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
     `aria-required`: js.UndefOr[Boolean] = js.undefined,
     `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
+    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
+    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
+    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
     `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
+    `aria-setsize`: js.UndefOr[Double] = js.undefined,
     `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
+    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
+    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
+    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
     `aria-valuetext`: String = null,
     ariaDescribedBy: String = null,
     ariaLabel: String = null,
-    ariaPositionInSet: Int | Double = null,
-    ariaSetSize: Int | Double = null,
-    ariaValueNow: Int | Double = null,
+    ariaPositionInSet: js.UndefOr[Double] = js.undefined,
+    ariaSetSize: js.UndefOr[Double] = js.undefined,
+    ariaValueNow: js.UndefOr[Double] = js.undefined,
     ariaValueText: String = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
@@ -338,7 +338,7 @@ object ISpinButtonProps {
     componentRef: IRefObject[ISpinButton] = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     datatype: String = null,
     decrementButtonAriaLabel: String = null,
     decrementButtonIcon: IIconProps = null,
@@ -347,7 +347,7 @@ object ISpinButtonProps {
     dir: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     downArrowButtonStyles: PartialIButtonStyles = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
+    draggable: js.UndefOr[Booleanish] = js.undefined,
     getClassNames: (/* theme */ ITheme, /* disabled */ Boolean, /* isFocused */ Boolean, /* keyboardSpinDirection */ KeyboardSpinDirection, /* labelPosition */ js.UndefOr[Position], /* className */ js.UndefOr[String]) => ISpinButtonClassNames = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     iconButtonProps: IButtonProps = null,
@@ -368,17 +368,17 @@ object ISpinButtonProps {
     label: String = null,
     labelPosition: Position = null,
     lang: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    onAbort: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    onAbort: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLDivElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLDivElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLDivElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLDivElement] => Unit = null,
     onBlur: FocusEvent[HTMLInputElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onChange: FormEvent[HTMLDivElement] => Unit = null,
     onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLDivElement] => Unit = null,
@@ -397,11 +397,11 @@ object ISpinButtonProps {
     onDragOver: DragEvent[HTMLDivElement] => Unit = null,
     onDragStart: DragEvent[HTMLDivElement] => Unit = null,
     onDrop: DragEvent[HTMLDivElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onEnded: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onError: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onEnded: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onError: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onFocus: FocusEvent[HTMLInputElement] => Unit = null,
     onIncrement: /* value */ String => String | Unit = null,
     onInput: FormEvent[HTMLDivElement] => Unit = null,
@@ -409,10 +409,10 @@ object ISpinButtonProps {
     onKeyDown: KeyboardEvent[HTMLDivElement] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLDivElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLDivElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onLoad: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onMouseDown: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
@@ -421,9 +421,9 @@ object ISpinButtonProps {
     onMouseOver: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLDivElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onPlay: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onPause: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onPlay: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onPointerCancel: PointerEvent[HTMLDivElement] => Unit = null,
     onPointerDown: PointerEvent[HTMLDivElement] => Unit = null,
     onPointerEnter: PointerEvent[HTMLDivElement] => Unit = null,
@@ -432,43 +432,43 @@ object ISpinButtonProps {
     onPointerOut: PointerEvent[HTMLDivElement] => Unit = null,
     onPointerOver: PointerEvent[HTMLDivElement] => Unit = null,
     onPointerUp: PointerEvent[HTMLDivElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onProgress: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
     onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onStalled: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onSelect: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onStalled: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onSubmit: FormEvent[HTMLDivElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onTouchCancel: TouchEvent[HTMLDivElement] => Unit = null,
     onTouchEnd: TouchEvent[HTMLDivElement] => Unit = null,
     onTouchMove: TouchEvent[HTMLDivElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLDivElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLDivElement] => Unit = null,
-    onValidate: (/* value */ String, /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event_]]) => String | Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onValidate: (/* value */ String, /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => String | Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onWheel: WheelEvent[HTMLDivElement] => Unit = null,
     placeholder: String = null,
-    precision: Int | Double = null,
+    precision: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
     resource: String = null,
-    results: Int | Double = null,
+    results: js.UndefOr[Double] = js.undefined,
     role: String = null,
     security: String = null,
     slot: String = null,
-    spellCheck: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
+    spellCheck: js.UndefOr[Booleanish] = js.undefined,
+    step: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
     styles: PartialISpinButtonStyles = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     theme: ITheme = null,
     title: String = null,
     translate: yes | no = null,
@@ -482,58 +482,58 @@ object ISpinButtonProps {
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
     if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaPositionInSet != null) __obj.updateDynamic("ariaPositionInSet")(ariaPositionInSet.asInstanceOf[js.Any])
-    if (ariaSetSize != null) __obj.updateDynamic("ariaSetSize")(ariaSetSize.asInstanceOf[js.Any])
-    if (ariaValueNow != null) __obj.updateDynamic("ariaValueNow")(ariaValueNow.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaPositionInSet)) __obj.updateDynamic("ariaPositionInSet")(ariaPositionInSet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaSetSize)) __obj.updateDynamic("ariaSetSize")(ariaSetSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaValueNow)) __obj.updateDynamic("ariaValueNow")(ariaValueNow.get.asInstanceOf[js.Any])
     if (ariaValueText != null) __obj.updateDynamic("ariaValueText")(ariaValueText.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
@@ -548,14 +548,14 @@ object ISpinButtonProps {
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (decrementButtonAriaLabel != null) __obj.updateDynamic("decrementButtonAriaLabel")(decrementButtonAriaLabel.asInstanceOf[js.Any])
     if (decrementButtonIcon != null) __obj.updateDynamic("decrementButtonIcon")(decrementButtonIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (downArrowButtonStyles != null) __obj.updateDynamic("downArrowButtonStyles")(downArrowButtonStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (getClassNames != null) __obj.updateDynamic("getClassNames")(js.Any.fromFunction6(getClassNames))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (iconButtonProps != null) __obj.updateDynamic("iconButtonProps")(iconButtonProps.asInstanceOf[js.Any])
     if (iconProps != null) __obj.updateDynamic("iconProps")(iconProps.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -568,14 +568,14 @@ object ISpinButtonProps {
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
@@ -659,22 +659,22 @@ object ISpinButtonProps {
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])

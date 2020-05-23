@@ -18,10 +18,10 @@ trait LogGroupField extends js.Object {
 
 object LogGroupField {
   @scala.inline
-  def apply(name: Field = null, percent: Int | Double = null): LogGroupField = {
+  def apply(name: Field = null, percent: js.UndefOr[Percentage] = js.undefined): LogGroupField = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogGroupField]
   }
 }

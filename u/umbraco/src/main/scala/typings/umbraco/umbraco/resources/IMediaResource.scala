@@ -1,7 +1,7 @@
 package typings.umbraco.umbraco.resources
 
 import typings.angular.mod.IPromise
-import typings.umbraco.AnonFilter
+import typings.umbraco.anon.Filter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -148,7 +148,7 @@ trait IMediaResource extends js.Object {
     *
     */
   def getChildren(parentId: Double): IPromise[IResourcePromise] = js.native
-  def getChildren(parentId: Double, options: AnonFilter): IPromise[IResourcePromise] = js.native
+  def getChildren(parentId: Double, options: Filter): IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getScaffold

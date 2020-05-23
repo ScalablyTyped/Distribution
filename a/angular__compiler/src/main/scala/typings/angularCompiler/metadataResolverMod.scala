@@ -1,6 +1,6 @@
 package typings.angularCompiler
 
-import typings.angularCompiler.angularCompilerStrings.ngComponentType
+import typings.angularCompiler.anon.Annotation
 import typings.angularCompiler.compileMetadataMod.CompileDirectiveMetadata
 import typings.angularCompiler.compileMetadataMod.CompileDirectiveSummary
 import typings.angularCompiler.compileMetadataMod.CompileInjectableMetadata
@@ -132,7 +132,7 @@ object metadataResolverMod extends js.Object {
     def getNgModuleMetadata(moduleType: js.Any, throwIfNotFound: Boolean, alreadyCollecting: Set[_]): CompileNgModuleMetadata | Null = js.native
     def getNgModuleSummary(moduleType: js.Any): CompileNgModuleSummary | Null = js.native
     def getNgModuleSummary(moduleType: js.Any, alreadyCollecting: Set[_]): CompileNgModuleSummary | Null = js.native
-    def getNonNormalizedDirectiveMetadata(directiveType: js.Any): AnonAnnotation | Null = js.native
+    def getNonNormalizedDirectiveMetadata(directiveType: js.Any): Annotation | Null = js.native
     def getOrLoadPipeMetadata(pipeType: js.Any): CompilePipeMetadata = js.native
     /**
       * Gets the metadata for the given pipe.
@@ -156,7 +156,7 @@ object metadataResolverMod extends js.Object {
     def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: Boolean, throwIfNotFound: Boolean): js.Promise[_] = js.native
   }
   
-  val ERROR_COMPONENT_TYPE: ngComponentType = js.native
+  val ERROR_COMPONENT_TYPE: /* "ngComponentType" */ String = js.native
   type ErrorCollector = js.Function2[/* error */ js.Any, /* type */ js.UndefOr[js.Any], Unit]
 }
 

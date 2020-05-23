@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object BackgroundTaskThrottleCounter extends js.Object {
   /** Indicates a request for network throttle count. */
   @js.native
   sealed trait network extends BackgroundTaskThrottleCounter
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BackgroundTaskThrottleCounter with Double] = js.native
-  /* 0 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 1 */ @js.native
-  object cpu extends TopLevel[cpu with Double]
-  
-  /* 2 */ @js.native
-  object network extends TopLevel[network with Double]
   
 }
 

@@ -21,13 +21,13 @@ trait OperationMetadata extends js.Object {
 object OperationMetadata {
   @scala.inline
   def apply(
-    progressPercentage: Int | Double = null,
+    progressPercentage: js.UndefOr[Double] = js.undefined,
     resourceNames: js.Array[String] = null,
     startTime: String = null,
     steps: js.Array[Step] = null
   ): OperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (progressPercentage != null) __obj.updateDynamic("progressPercentage")(progressPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressPercentage)) __obj.updateDynamic("progressPercentage")(progressPercentage.get.asInstanceOf[js.Any])
     if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])

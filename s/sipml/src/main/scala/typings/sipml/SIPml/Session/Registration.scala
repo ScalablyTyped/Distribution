@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SIPml.Session.Registration")
 @js.native
-class Registration ()
+trait Registration
   extends typings.sipml.SIPml.Session {
   def register(): Unit = js.native
   def register(configuration: Configuration): Unit = js.native

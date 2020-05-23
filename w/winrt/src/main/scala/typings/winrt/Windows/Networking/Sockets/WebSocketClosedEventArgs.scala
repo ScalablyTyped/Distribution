@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Sockets.WebSocketClosedEventArgs")
-@js.native
-class WebSocketClosedEventArgs () extends IWebSocketClosedEventArgs {
-  /* CompleteClass */
-  override var code: Double = js.native
-  /* CompleteClass */
-  override var reason: String = js.native
+trait WebSocketClosedEventArgs extends IWebSocketClosedEventArgs
+
+object WebSocketClosedEventArgs {
+  @scala.inline
+  def apply(code: Double, reason: String): WebSocketClosedEventArgs = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebSocketClosedEventArgs]
+  }
 }
 

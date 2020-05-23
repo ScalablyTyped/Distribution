@@ -32,16 +32,16 @@ object VolumeiSCSIAttributes {
   @scala.inline
   def apply(
     ChapEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    LunNumber: Int | Double = null,
+    LunNumber: js.UndefOr[PositiveIntObject] = js.undefined,
     NetworkInterfaceId: NetworkInterfaceId = null,
-    NetworkInterfacePort: Int | Double = null,
+    NetworkInterfacePort: js.UndefOr[integer] = js.undefined,
     TargetARN: TargetARN = null
   ): VolumeiSCSIAttributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ChapEnabled)) __obj.updateDynamic("ChapEnabled")(ChapEnabled.asInstanceOf[js.Any])
-    if (LunNumber != null) __obj.updateDynamic("LunNumber")(LunNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(ChapEnabled)) __obj.updateDynamic("ChapEnabled")(ChapEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LunNumber)) __obj.updateDynamic("LunNumber")(LunNumber.get.asInstanceOf[js.Any])
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
-    if (NetworkInterfacePort != null) __obj.updateDynamic("NetworkInterfacePort")(NetworkInterfacePort.asInstanceOf[js.Any])
+    if (!js.isUndefined(NetworkInterfacePort)) __obj.updateDynamic("NetworkInterfacePort")(NetworkInterfacePort.get.asInstanceOf[js.Any])
     if (TargetARN != null) __obj.updateDynamic("TargetARN")(TargetARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeiSCSIAttributes]
   }

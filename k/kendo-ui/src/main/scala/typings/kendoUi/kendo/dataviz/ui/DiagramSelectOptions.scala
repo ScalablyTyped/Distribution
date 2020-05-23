@@ -12,7 +12,7 @@ object DiagramSelectOptions {
   @scala.inline
   def apply(addToSelection: js.UndefOr[Boolean] = js.undefined): DiagramSelectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addToSelection)) __obj.updateDynamic("addToSelection")(addToSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(addToSelection)) __obj.updateDynamic("addToSelection")(addToSelection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramSelectOptions]
   }
 }

@@ -41,12 +41,12 @@ object ClientMetadata {
   @scala.inline
   def apply(
     client_id: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     authorization_encrypted_response_alg: String = null,
     authorization_encrypted_response_enc: String = null,
     authorization_signed_response_alg: String = null,
     client_secret: String = null,
-    default_max_age: Int | Double = null,
+    default_max_age: js.UndefOr[Double] = js.undefined,
     id_token_encrypted_response_alg: String = null,
     id_token_encrypted_response_enc: String = null,
     id_token_signed_response_alg: String = null,
@@ -74,7 +74,7 @@ object ClientMetadata {
     if (authorization_encrypted_response_enc != null) __obj.updateDynamic("authorization_encrypted_response_enc")(authorization_encrypted_response_enc.asInstanceOf[js.Any])
     if (authorization_signed_response_alg != null) __obj.updateDynamic("authorization_signed_response_alg")(authorization_signed_response_alg.asInstanceOf[js.Any])
     if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
-    if (default_max_age != null) __obj.updateDynamic("default_max_age")(default_max_age.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_max_age)) __obj.updateDynamic("default_max_age")(default_max_age.get.asInstanceOf[js.Any])
     if (id_token_encrypted_response_alg != null) __obj.updateDynamic("id_token_encrypted_response_alg")(id_token_encrypted_response_alg.asInstanceOf[js.Any])
     if (id_token_encrypted_response_enc != null) __obj.updateDynamic("id_token_encrypted_response_enc")(id_token_encrypted_response_enc.asInstanceOf[js.Any])
     if (id_token_signed_response_alg != null) __obj.updateDynamic("id_token_signed_response_alg")(id_token_signed_response_alg.asInstanceOf[js.Any])
@@ -85,11 +85,11 @@ object ClientMetadata {
     if (request_object_encryption_alg != null) __obj.updateDynamic("request_object_encryption_alg")(request_object_encryption_alg.asInstanceOf[js.Any])
     if (request_object_encryption_enc != null) __obj.updateDynamic("request_object_encryption_enc")(request_object_encryption_enc.asInstanceOf[js.Any])
     if (request_object_signing_alg != null) __obj.updateDynamic("request_object_signing_alg")(request_object_signing_alg.asInstanceOf[js.Any])
-    if (!js.isUndefined(require_auth_time)) __obj.updateDynamic("require_auth_time")(require_auth_time.asInstanceOf[js.Any])
+    if (!js.isUndefined(require_auth_time)) __obj.updateDynamic("require_auth_time")(require_auth_time.get.asInstanceOf[js.Any])
     if (response_types != null) __obj.updateDynamic("response_types")(response_types.asInstanceOf[js.Any])
     if (revocation_endpoint_auth_method != null) __obj.updateDynamic("revocation_endpoint_auth_method")(revocation_endpoint_auth_method.asInstanceOf[js.Any])
     if (revocation_endpoint_auth_signing_alg != null) __obj.updateDynamic("revocation_endpoint_auth_signing_alg")(revocation_endpoint_auth_signing_alg.asInstanceOf[js.Any])
-    if (!js.isUndefined(tls_client_certificate_bound_access_tokens)) __obj.updateDynamic("tls_client_certificate_bound_access_tokens")(tls_client_certificate_bound_access_tokens.asInstanceOf[js.Any])
+    if (!js.isUndefined(tls_client_certificate_bound_access_tokens)) __obj.updateDynamic("tls_client_certificate_bound_access_tokens")(tls_client_certificate_bound_access_tokens.get.asInstanceOf[js.Any])
     if (token_endpoint_auth_method != null) __obj.updateDynamic("token_endpoint_auth_method")(token_endpoint_auth_method.asInstanceOf[js.Any])
     if (token_endpoint_auth_signing_alg != null) __obj.updateDynamic("token_endpoint_auth_signing_alg")(token_endpoint_auth_signing_alg.asInstanceOf[js.Any])
     if (userinfo_encrypted_response_alg != null) __obj.updateDynamic("userinfo_encrypted_response_alg")(userinfo_encrypted_response_alg.asInstanceOf[js.Any])

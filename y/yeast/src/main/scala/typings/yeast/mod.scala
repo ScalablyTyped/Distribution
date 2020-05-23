@@ -12,12 +12,12 @@ object mod extends js.Object {
     */
   def apply(): String = js.native
   /**
-  	 * Return the integer value specified by the given string.
-  	 */
+    * Return the integer value specified by the given string.
+    */
   def decode(str: String): Double = js.native
   /**
-  	 * Return a string representing the specified number.
-  	 */
+    * Return a string representing the specified number.
+    */
   def encode(num: Double): String = js.native
 }
 

@@ -23,12 +23,12 @@ trait DescribeOrganizationConformancePacksRequest extends js.Object {
 object DescribeOrganizationConformancePacksRequest {
   @scala.inline
   def apply(
-    Limit: Int | Double = null,
+    Limit: js.UndefOr[CosmosPageLimit] = js.undefined,
     NextToken: String = null,
     OrganizationConformancePackNames: OrganizationConformancePackNames = null
   ): DescribeOrganizationConformancePacksRequest = {
     val __obj = js.Dynamic.literal()
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (OrganizationConformancePackNames != null) __obj.updateDynamic("OrganizationConformancePackNames")(OrganizationConformancePackNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrganizationConformancePacksRequest]

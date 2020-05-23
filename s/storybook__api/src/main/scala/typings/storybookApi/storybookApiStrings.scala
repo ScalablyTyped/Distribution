@@ -9,12 +9,6 @@ import scala.scalajs.js.annotation._
 
 object storybookApiStrings {
   @js.native
-  sealed trait `5Dot3Dot18` extends js.Object
-  
-  @js.native
-  sealed trait `@storybookSlashuiSlashstore` extends js.Object
-  
-  @js.native
   sealed trait Optionkey extends js.Object
   
   @js.native
@@ -113,10 +107,6 @@ object storybookApiStrings {
   @js.native
   sealed trait toolbar extends Action
   
-  @scala.inline
-  def `5Dot3Dot18`: `5Dot3Dot18` = "5.3.18".asInstanceOf[`5Dot3Dot18`]
-  @scala.inline
-  def `@storybookSlashuiSlashstore`: `@storybookSlashuiSlashstore` = "@storybook/ui/store".asInstanceOf[`@storybookSlashuiSlashstore`]
   @scala.inline
   def Optionkey: Optionkey = "\u2325".asInstanceOf[Optionkey]
   @scala.inline

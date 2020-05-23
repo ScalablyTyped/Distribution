@@ -61,7 +61,7 @@ object ImportInstanceLaunchSpecification {
     GroupNames: SecurityGroupStringList = null,
     InstanceInitiatedShutdownBehavior: ShutdownBehavior = null,
     InstanceType: InstanceType = null,
-    Monitoring: js.UndefOr[scala.Boolean] = js.undefined,
+    Monitoring: js.UndefOr[Boolean] = js.undefined,
     Placement: Placement = null,
     PrivateIpAddress: String = null,
     SubnetId: SubnetId = null,
@@ -74,7 +74,7 @@ object ImportInstanceLaunchSpecification {
     if (GroupNames != null) __obj.updateDynamic("GroupNames")(GroupNames.asInstanceOf[js.Any])
     if (InstanceInitiatedShutdownBehavior != null) __obj.updateDynamic("InstanceInitiatedShutdownBehavior")(InstanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Monitoring)) __obj.updateDynamic("Monitoring")(Monitoring.asInstanceOf[js.Any])
+    if (!js.isUndefined(Monitoring)) __obj.updateDynamic("Monitoring")(Monitoring.get.asInstanceOf[js.Any])
     if (Placement != null) __obj.updateDynamic("Placement")(Placement.asInstanceOf[js.Any])
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])

@@ -17,19 +17,19 @@ object DownscaleOptions {
   @scala.inline
   def apply(
     imageType: String = null,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     returnBlob: js.UndefOr[Boolean] = js.undefined,
     returnCanvas: js.UndefOr[Boolean] = js.undefined,
-    sourceX: Int | Double = null,
-    sourceY: Int | Double = null
+    sourceX: js.UndefOr[Double] = js.undefined,
+    sourceY: js.UndefOr[Double] = js.undefined
   ): DownscaleOptions = {
     val __obj = js.Dynamic.literal()
     if (imageType != null) __obj.updateDynamic("imageType")(imageType.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnBlob)) __obj.updateDynamic("returnBlob")(returnBlob.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnCanvas)) __obj.updateDynamic("returnCanvas")(returnCanvas.asInstanceOf[js.Any])
-    if (sourceX != null) __obj.updateDynamic("sourceX")(sourceX.asInstanceOf[js.Any])
-    if (sourceY != null) __obj.updateDynamic("sourceY")(sourceY.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnBlob)) __obj.updateDynamic("returnBlob")(returnBlob.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnCanvas)) __obj.updateDynamic("returnCanvas")(returnCanvas.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceX)) __obj.updateDynamic("sourceX")(sourceX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceY)) __obj.updateDynamic("sourceY")(sourceY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownscaleOptions]
   }
 }

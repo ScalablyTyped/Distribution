@@ -10,5 +10,5 @@ package object mod {
   {[ P in std.Exclude<keyof T, K> ]: T[P]}
     */ typings.conventionalChangelogWriter.conventionalChangelogWriterStrings.Omit with org.scalablytyped.runtime.TopLevel[T]
   type Options[TCommit /* <: typings.conventionalCommitsParser.mod.Commit[java.lang.String | scala.Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias conventional-changelog-writer.conventional-changelog-writer.Options<TCommit, TContext> */ js.Object
-  type TransformedCommit[T /* <: typings.conventionalCommitsParser.mod.Commit[java.lang.String | scala.Double | js.Symbol] */] = (typings.conventionalChangelogWriter.mod.Omit[T, typings.conventionalChangelogWriter.conventionalChangelogWriterStrings.raw]) with typings.conventionalChangelogWriter.AnonRaw[T]
+  type TransformedCommit[T /* <: typings.conventionalCommitsParser.mod.Commit[java.lang.String | scala.Double | js.Symbol] */] = (typings.conventionalChangelogWriter.mod.Omit[T, typings.conventionalChangelogWriter.conventionalChangelogWriterStrings.raw]) with typings.conventionalChangelogWriter.anon.Raw[T]
 }

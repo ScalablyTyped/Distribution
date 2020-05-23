@@ -58,7 +58,7 @@ object SupressionSearchParameters {
     description: String = null,
     domain: String = null,
     from: String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     page: String | Double = null,
     per_page: String | Double = null,
     sources: String = null,
@@ -70,7 +70,7 @@ object SupressionSearchParameters {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])

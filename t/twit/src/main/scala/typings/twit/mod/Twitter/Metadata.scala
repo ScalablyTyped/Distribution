@@ -19,25 +19,25 @@ trait Metadata extends js.Object {
 object Metadata {
   @scala.inline
   def apply(
-    completed_in: Int | Double = null,
-    count: Int | Double = null,
-    max_id: Int | Double = null,
+    completed_in: js.UndefOr[Double] = js.undefined,
+    count: js.UndefOr[Double] = js.undefined,
+    max_id: js.UndefOr[Double] = js.undefined,
     max_id_str: String = null,
     next_results: String = null,
     query: String = null,
     refresh_url: String = null,
-    since_id: Int | Double = null,
+    since_id: js.UndefOr[Double] = js.undefined,
     since_id_str: String = null
   ): Metadata = {
     val __obj = js.Dynamic.literal()
-    if (completed_in != null) __obj.updateDynamic("completed_in")(completed_in.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (max_id != null) __obj.updateDynamic("max_id")(max_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(completed_in)) __obj.updateDynamic("completed_in")(completed_in.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_id)) __obj.updateDynamic("max_id")(max_id.get.asInstanceOf[js.Any])
     if (max_id_str != null) __obj.updateDynamic("max_id_str")(max_id_str.asInstanceOf[js.Any])
     if (next_results != null) __obj.updateDynamic("next_results")(next_results.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (refresh_url != null) __obj.updateDynamic("refresh_url")(refresh_url.asInstanceOf[js.Any])
-    if (since_id != null) __obj.updateDynamic("since_id")(since_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(since_id)) __obj.updateDynamic("since_id")(since_id.get.asInstanceOf[js.Any])
     if (since_id_str != null) __obj.updateDynamic("since_id_str")(since_id_str.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }

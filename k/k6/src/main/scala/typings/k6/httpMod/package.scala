@@ -23,7 +23,7 @@ package object httpMod {
   {[ K in keyof Q ]: Q[K] extends k6.k6/http.RefinedBatchRequest<infer RT>? k6.k6/http.RefinedResponse<any> : never}
     */ typings.k6.k6Strings.BatchResponses with org.scalablytyped.runtime.TopLevel[Q]
   type CookieJarCookies = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
-  type ParamsCookieValue = java.lang.String | typings.k6.AnonReplace
+  type ParamsCookieValue = java.lang.String | typings.k6.anon.Replace
   type RefinedBatchRequest[RT /* <: js.UndefOr[typings.k6.httpMod.ResponseType] */] = java.lang.String | typings.k6.httpMod.ArrayRefinedBatchRequest[RT] | typings.k6.httpMod.ObjectRefinedBatchRequest[RT]
   type RefinedResponseBody[RT /* <: js.UndefOr[typings.k6.httpMod.ResponseType] */] = java.lang.String | scala.Null | typings.k6.mod.bytes
   type RequestBody = java.lang.String | typings.k6.httpMod.StructuredRequestBody

@@ -15,7 +15,7 @@ package object Schema {
     typings.wordpressApiFetch.mod.Schema.BaseComment[T], 
     typings.wordpressApiFetch.mod.Schema.ViewKeys.Comment | typings.wordpressApiFetch.mod.Schema.EmbedKeys.Comment
   ])
-  type Contextual[T /* <: typings.wordpressApiFetch.mod.Schema.Context */, TAdditional, TEditAdditional] = (typings.wordpressApiFetch.AnonRendered with TAdditional) | (typings.wordpressApiFetch.AnonRaw with TAdditional with TEditAdditional)
+  type Contextual[T /* <: typings.wordpressApiFetch.mod.Schema.Context */, TAdditional, TEditAdditional] = (typings.wordpressApiFetch.anon.Rendered with TAdditional) | (typings.wordpressApiFetch.anon.Raw with TAdditional with TEditAdditional)
   type Decontextualize[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: T[k] extends @wordpress/api-fetch.@wordpress/api-fetch.Schema.Contextual<any, {}, {}>? string : T[k]}
     */ typings.wordpressApiFetch.wordpressApiFetchStrings.Decontextualize with org.scalablytyped.runtime.TopLevel[js.Any]

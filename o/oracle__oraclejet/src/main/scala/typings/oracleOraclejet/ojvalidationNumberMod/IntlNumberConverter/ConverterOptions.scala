@@ -48,9 +48,9 @@ object ConverterOptions {
     currencyFormat: standard | short | long = null,
     decimalFormat: standard | short | long = null,
     lenientParse: full | none = null,
-    maximumFractionDigits: Int | Double = null,
-    minimumFractionDigits: Int | Double = null,
-    minimumIntegerDigits: Int | Double = null,
+    maximumFractionDigits: js.UndefOr[Double] = js.undefined,
+    minimumFractionDigits: js.UndefOr[Double] = js.undefined,
+    minimumIntegerDigits: js.UndefOr[Double] = js.undefined,
     pattern: String = null,
     roundDuringParse: js.UndefOr[Boolean] = js.undefined,
     roundingMode: HALF_UP | HALF_DOWN | HALF_EVEN = null,
@@ -65,16 +65,16 @@ object ConverterOptions {
     if (currencyFormat != null) __obj.updateDynamic("currencyFormat")(currencyFormat.asInstanceOf[js.Any])
     if (decimalFormat != null) __obj.updateDynamic("decimalFormat")(decimalFormat.asInstanceOf[js.Any])
     if (lenientParse != null) __obj.updateDynamic("lenientParse")(lenientParse.asInstanceOf[js.Any])
-    if (maximumFractionDigits != null) __obj.updateDynamic("maximumFractionDigits")(maximumFractionDigits.asInstanceOf[js.Any])
-    if (minimumFractionDigits != null) __obj.updateDynamic("minimumFractionDigits")(minimumFractionDigits.asInstanceOf[js.Any])
-    if (minimumIntegerDigits != null) __obj.updateDynamic("minimumIntegerDigits")(minimumIntegerDigits.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumFractionDigits)) __obj.updateDynamic("maximumFractionDigits")(maximumFractionDigits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumFractionDigits)) __obj.updateDynamic("minimumFractionDigits")(minimumFractionDigits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumIntegerDigits)) __obj.updateDynamic("minimumIntegerDigits")(minimumIntegerDigits.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundDuringParse)) __obj.updateDynamic("roundDuringParse")(roundDuringParse.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundDuringParse)) __obj.updateDynamic("roundDuringParse")(roundDuringParse.get.asInstanceOf[js.Any])
     if (roundingMode != null) __obj.updateDynamic("roundingMode")(roundingMode.asInstanceOf[js.Any])
     if (separators != null) __obj.updateDynamic("separators")(separators.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGrouping)) __obj.updateDynamic("useGrouping")(useGrouping.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGrouping)) __obj.updateDynamic("useGrouping")(useGrouping.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConverterOptions]
   }
 }

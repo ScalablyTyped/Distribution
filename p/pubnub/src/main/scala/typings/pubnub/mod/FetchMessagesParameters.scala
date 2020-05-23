@@ -21,7 +21,7 @@ object FetchMessagesParameters {
   @scala.inline
   def apply(
     channels: js.Array[String],
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     end: String | Double = null,
     includeMessageActions: js.UndefOr[Boolean] = js.undefined,
     includeMeta: js.UndefOr[Boolean] = js.undefined,
@@ -30,13 +30,13 @@ object FetchMessagesParameters {
     withMessageActions: js.UndefOr[Boolean] = js.undefined
   ): FetchMessagesParameters = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeMessageActions)) __obj.updateDynamic("includeMessageActions")(includeMessageActions.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeMeta)) __obj.updateDynamic("includeMeta")(includeMeta.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeMessageActions)) __obj.updateDynamic("includeMessageActions")(includeMessageActions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeMeta)) __obj.updateDynamic("includeMeta")(includeMeta.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringifiedTimeToken)) __obj.updateDynamic("stringifiedTimeToken")(stringifiedTimeToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(withMessageActions)) __obj.updateDynamic("withMessageActions")(withMessageActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(stringifiedTimeToken)) __obj.updateDynamic("stringifiedTimeToken")(stringifiedTimeToken.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withMessageActions)) __obj.updateDynamic("withMessageActions")(withMessageActions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchMessagesParameters]
   }
 }

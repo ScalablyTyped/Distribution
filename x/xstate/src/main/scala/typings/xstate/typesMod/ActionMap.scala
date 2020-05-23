@@ -12,7 +12,7 @@ trait ActionMap[TContext, TEvent /* <: EventObject */] extends js.Object {
 
 object ActionMap {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  def apply[TContext, TEvent](
     actions: js.Array[Action[TContext, TEvent]],
     onEntry: js.Array[Action[TContext, TEvent]],
     onExit: js.Array[Action[TContext, TEvent]]

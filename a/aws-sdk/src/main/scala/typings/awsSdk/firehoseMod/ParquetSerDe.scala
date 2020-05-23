@@ -35,19 +35,19 @@ trait ParquetSerDe extends js.Object {
 object ParquetSerDe {
   @scala.inline
   def apply(
-    BlockSizeBytes: Int | Double = null,
+    BlockSizeBytes: js.UndefOr[BlockSizeBytes] = js.undefined,
     Compression: ParquetCompression = null,
-    EnableDictionaryCompression: js.UndefOr[Boolean] = js.undefined,
-    MaxPaddingBytes: Int | Double = null,
-    PageSizeBytes: Int | Double = null,
+    EnableDictionaryCompression: js.UndefOr[BooleanObject] = js.undefined,
+    MaxPaddingBytes: js.UndefOr[NonNegativeIntegerObject] = js.undefined,
+    PageSizeBytes: js.UndefOr[ParquetPageSizeBytes] = js.undefined,
     WriterVersion: ParquetWriterVersion = null
   ): ParquetSerDe = {
     val __obj = js.Dynamic.literal()
-    if (BlockSizeBytes != null) __obj.updateDynamic("BlockSizeBytes")(BlockSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockSizeBytes)) __obj.updateDynamic("BlockSizeBytes")(BlockSizeBytes.get.asInstanceOf[js.Any])
     if (Compression != null) __obj.updateDynamic("Compression")(Compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDictionaryCompression)) __obj.updateDynamic("EnableDictionaryCompression")(EnableDictionaryCompression.asInstanceOf[js.Any])
-    if (MaxPaddingBytes != null) __obj.updateDynamic("MaxPaddingBytes")(MaxPaddingBytes.asInstanceOf[js.Any])
-    if (PageSizeBytes != null) __obj.updateDynamic("PageSizeBytes")(PageSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableDictionaryCompression)) __obj.updateDynamic("EnableDictionaryCompression")(EnableDictionaryCompression.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxPaddingBytes)) __obj.updateDynamic("MaxPaddingBytes")(MaxPaddingBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSizeBytes)) __obj.updateDynamic("PageSizeBytes")(PageSizeBytes.get.asInstanceOf[js.Any])
     if (WriterVersion != null) __obj.updateDynamic("WriterVersion")(WriterVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParquetSerDe]
   }

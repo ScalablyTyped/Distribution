@@ -1,6 +1,6 @@
 package typings.webidl2.mod
 
-import typings.webidl2.AnonType
+import typings.webidl2.anon.Type
 import typings.webidl2.webidl2Strings.`callback interface`
 import typings.webidl2.webidl2Strings.`interface mixin`
 import typings.webidl2.webidl2Strings.callback
@@ -54,9 +54,8 @@ object IDLRootType {
     `type`: dictionary,
     inheritance: String = null
   ): IDLRootType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any], inheritance = inheritance.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (inheritance != null) __obj.updateDynamic("inheritance")(inheritance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDLRootType]
   }
   @scala.inline
@@ -68,9 +67,8 @@ object IDLRootType {
     `type`: interface | (`callback interface`),
     inheritance: String = null
   ): IDLRootType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any], inheritance = inheritance.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (inheritance != null) __obj.updateDynamic("inheritance")(inheritance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDLRootType]
   }
   @scala.inline
@@ -92,7 +90,7 @@ object IDLRootType {
     __obj.asInstanceOf[IDLRootType]
   }
   @scala.inline
-  def EnumType(extAttrs: js.Array[ExtendedAttribute], name: String, `type`: enum, values: js.Array[AnonType]): IDLRootType = {
+  def EnumType(extAttrs: js.Array[ExtendedAttribute], name: String, `type`: enum, values: js.Array[Type]): IDLRootType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDLRootType]

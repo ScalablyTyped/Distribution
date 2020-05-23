@@ -8,6 +8,6 @@ package object itemRendererMod {
   type ItemRenderer[T] = js.Function2[
     /* item */ T, 
     /* itemProps */ typings.blueprintjsSelect.itemRendererMod.IItemRendererProps, 
-    typings.react.mod._Global_.JSX.Element | scala.Null
+    typings.react.mod.global.JSX.Element | scala.Null
   ]
 }

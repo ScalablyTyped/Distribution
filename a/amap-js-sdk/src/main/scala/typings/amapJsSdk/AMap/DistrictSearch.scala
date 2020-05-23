@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.DistrictSearch")
 @js.native
-class DistrictSearch protected () extends js.Object {
-  def this(opts: DistrictSearchOptions) = this()
+trait DistrictSearch extends js.Object {
   def search(keywords: String): Unit = js.native
   def search(
     keywords: String,

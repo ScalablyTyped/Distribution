@@ -10,9 +10,9 @@ trait ActivityVersion extends js.Object {
 
 object ActivityVersion {
   @scala.inline
-  def apply(Version: Int | Double = null): ActivityVersion = {
+  def apply(Version: js.UndefOr[Double] = js.undefined): ActivityVersion = {
     val __obj = js.Dynamic.literal()
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityVersion]
   }
 }

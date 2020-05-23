@@ -22,13 +22,13 @@ object UseMultipleSelectionGetSelectedItemPropsOptions {
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     ClassAttributes: ClassAttributes[HTMLElement] = null,
     GetPropsWithRefKey: GetPropsWithRefKey = null,
-    index: Int | Double = null
+    index: js.UndefOr[Double] = js.undefined
   ): UseMultipleSelectionGetSelectedItemPropsOptions[Item] = {
     val __obj = js.Dynamic.literal(selectedItem = selectedItem.asInstanceOf[js.Any])
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (GetPropsWithRefKey != null) js.Dynamic.global.Object.assign(__obj, GetPropsWithRefKey)
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseMultipleSelectionGetSelectedItemPropsOptions[Item]]
   }
 }

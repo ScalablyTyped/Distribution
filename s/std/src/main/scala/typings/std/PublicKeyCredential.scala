@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +10,18 @@ trait PublicKeyCredential extends Credential {
   def getClientExtensionResults(): AuthenticationExtensionsClientOutputs
 }
 
-@JSGlobal("PublicKeyCredential")
-@js.native
-object PublicKeyCredential extends Instantiable0[PublicKeyCredential] {
-  def isUserVerifyingPlatformAuthenticatorAvailable(): js.Promise[scala.Boolean] = js.native
+object PublicKeyCredential {
+  @scala.inline
+  def apply(
+    getClientExtensionResults: () => AuthenticationExtensionsClientOutputs,
+    id: java.lang.String,
+    rawId: ArrayBuffer,
+    response: AuthenticatorResponse,
+    `type`: java.lang.String
+  ): PublicKeyCredential = {
+    val __obj = js.Dynamic.literal(getClientExtensionResults = js.Any.fromFunction0(getClientExtensionResults), id = id.asInstanceOf[js.Any], rawId = rawId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PublicKeyCredential]
+  }
 }
 

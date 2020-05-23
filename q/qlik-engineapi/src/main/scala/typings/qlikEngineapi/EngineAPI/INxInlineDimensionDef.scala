@@ -51,7 +51,7 @@ trait INxInlineDimensionDef extends js.Object {
 object INxInlineDimensionDef {
   @scala.inline
   def apply(
-    qActiveField: Int | Double = null,
+    qActiveField: js.UndefOr[Double] = js.undefined,
     qFieldDefs: js.Array[String] = null,
     qFieldLabels: js.Array[String] = null,
     qGrouping: NxGrpType = null,
@@ -60,12 +60,12 @@ object INxInlineDimensionDef {
     qSortCriterias: ISortCriteria = null
   ): INxInlineDimensionDef = {
     val __obj = js.Dynamic.literal()
-    if (qActiveField != null) __obj.updateDynamic("qActiveField")(qActiveField.asInstanceOf[js.Any])
+    if (!js.isUndefined(qActiveField)) __obj.updateDynamic("qActiveField")(qActiveField.get.asInstanceOf[js.Any])
     if (qFieldDefs != null) __obj.updateDynamic("qFieldDefs")(qFieldDefs.asInstanceOf[js.Any])
     if (qFieldLabels != null) __obj.updateDynamic("qFieldLabels")(qFieldLabels.asInstanceOf[js.Any])
     if (qGrouping != null) __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
     if (qNumberPresentations != null) __obj.updateDynamic("qNumberPresentations")(qNumberPresentations.asInstanceOf[js.Any])
-    if (!js.isUndefined(qReverseSort)) __obj.updateDynamic("qReverseSort")(qReverseSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(qReverseSort)) __obj.updateDynamic("qReverseSort")(qReverseSort.get.asInstanceOf[js.Any])
     if (qSortCriterias != null) __obj.updateDynamic("qSortCriterias")(qSortCriterias.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxInlineDimensionDef]
   }

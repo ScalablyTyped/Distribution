@@ -10,5 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rbx/grid/columns/column-group", "ColumnGroup")
 @js.native
 object ColumnGroup
-  extends TopLevel[ForwardRefAsExoticComponent[typings.rbx.ColumnGroupProps, ElementType[js.Any]]]
+  extends TopLevel[
+      ForwardRefAsExoticComponent[typings.rbx.anon.ColumnGroupProps, ElementType[js.Any]]
+    ]
 

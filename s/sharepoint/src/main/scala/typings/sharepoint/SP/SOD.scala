@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,8 +23,4 @@ trait SOD extends js.Object {
   def set_prefetch(value: Boolean): Unit = js.native
   def set_ribbonImagePrefetchEnabled(value: Boolean): Unit = js.native
 }
-
-@JSGlobal("SP.SOD")
-@js.native
-object SOD extends TopLevel[SOD]
 

@@ -1,9 +1,9 @@
 package typings.ejs.mod
 
-import typings.ejs.Optionsasyncfalseclientfa
-import typings.ejs.Optionsasyncfalseclienttr
-import typings.ejs.Optionsasynctrueclientfal
-import typings.ejs.Optionsasynctrueclienttru
+import typings.ejs.anon.Optionsasyncfalseclientfa
+import typings.ejs.anon.Optionsasyncfalseclienttr
+import typings.ejs.anon.Optionsasynctrueclientfal
+import typings.ejs.anon.Optionsasynctrueclienttru
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

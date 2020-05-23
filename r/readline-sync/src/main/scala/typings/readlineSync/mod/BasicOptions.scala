@@ -37,7 +37,7 @@ trait BasicOptions extends js.Object {
 object BasicOptions {
   @scala.inline
   def apply(
-    bufferSize: Int | Double = null,
+    bufferSize: js.UndefOr[Double] = js.undefined,
     cancel: js.Any = null,
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     cd: js.UndefOr[Boolean] = js.undefined,
@@ -66,23 +66,23 @@ object BasicOptions {
     validate: /* path */ String => Boolean | String = null
   ): BasicOptions = {
     val __obj = js.Dynamic.literal()
-    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
-    if (!js.isUndefined(cd)) __obj.updateDynamic("cd")(cd.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cd)) __obj.updateDynamic("cd")(cd.get.asInstanceOf[js.Any])
     if (charlist != null) __obj.updateDynamic("charlist")(charlist.asInstanceOf[js.Any])
     if (confirmMessage != null) __obj.updateDynamic("confirmMessage")(confirmMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create.get.asInstanceOf[js.Any])
     if (defaultInput != null) __obj.updateDynamic("defaultInput")(defaultInput.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (exists != null) __obj.updateDynamic("exists")(exists.asInstanceOf[js.Any])
     if (falseValue != null) __obj.updateDynamic("falseValue")(falseValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(guide)) __obj.updateDynamic("guide")(guide.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideEchoBack)) __obj.updateDynamic("hideEchoBack")(hideEchoBack.asInstanceOf[js.Any])
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDirectory)) __obj.updateDynamic("isDirectory")(isDirectory.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFile)) __obj.updateDynamic("isFile")(isFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepWhitespace)) __obj.updateDynamic("keepWhitespace")(keepWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(guide)) __obj.updateDynamic("guide")(guide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideEchoBack)) __obj.updateDynamic("hideEchoBack")(hideEchoBack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDirectory)) __obj.updateDynamic("isDirectory")(isDirectory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFile)) __obj.updateDynamic("isFile")(isFile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepWhitespace)) __obj.updateDynamic("keepWhitespace")(keepWhitespace.get.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (limitMessage != null) __obj.updateDynamic("limitMessage")(limitMessage.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])

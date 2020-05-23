@@ -41,7 +41,7 @@ object CollectionOptions {
     if (factories != null) __obj.updateDynamic("factories")(factories.asInstanceOf[js.Any])
     if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(models_only)) __obj.updateDynamic("models_only")(models_only.asInstanceOf[js.Any])
+    if (!js.isUndefined(models_only)) __obj.updateDynamic("models_only")(models_only.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (sort_attribute != null) __obj.updateDynamic("sort_attribute")(sort_attribute.asInstanceOf[js.Any])

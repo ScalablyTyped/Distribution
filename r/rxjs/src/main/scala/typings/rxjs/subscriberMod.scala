@@ -44,7 +44,7 @@ object subscriberMod extends js.Object {
     def _unsubscribe(): Unit = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.rxjs.typesMod.Observer because var conflicts: closed. Inlined next, error, complete */ @js.native
   /**
     * @param {Observer|function(value: T): void} [destinationOrNext] A partially

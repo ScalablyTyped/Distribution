@@ -18,9 +18,9 @@ trait ListTestGridProjectsRequest extends js.Object {
 
 object ListTestGridProjectsRequest {
   @scala.inline
-  def apply(maxResult: Int | scala.Double = null, nextToken: PaginationToken = null): ListTestGridProjectsRequest = {
+  def apply(maxResult: js.UndefOr[MaxPageSize] = js.undefined, nextToken: PaginationToken = null): ListTestGridProjectsRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResult != null) __obj.updateDynamic("maxResult")(maxResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResult)) __obj.updateDynamic("maxResult")(maxResult.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTestGridProjectsRequest]
   }

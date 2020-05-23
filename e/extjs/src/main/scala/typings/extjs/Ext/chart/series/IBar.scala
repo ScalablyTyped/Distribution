@@ -17,18 +17,10 @@ trait IBar extends ICartesian {
   var groupGutter: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
   var gutter: js.UndefOr[Double] = js.undefined
-  /** [Method] Highlight the given series item
-  		* @param item Object
-  		*/
-  @JSName("highlightItem")
-  var highlightItem_IBar: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var stacked: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Object) */
   var style: js.UndefOr[js.Any] = js.undefined
-  /** [Method] Un highlight any existing highlights */
-  @JSName("unHighlightItem")
-  var unHighlightItem_IBar: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Number/Object) */
   var xPadding: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Number/Object) */
@@ -66,14 +58,14 @@ object IBar {
     getRecordCount: () => Unit = null,
     getYValueAccessors: () => Array = null,
     getYValueCount: () => Double = null,
-    groupGutter: Int | Double = null,
-    gutter: Int | Double = null,
+    groupGutter: js.UndefOr[Double] = js.undefined,
+    gutter: js.UndefOr[Double] = js.undefined,
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
     hideAll: () => Unit = null,
     highlight: js.Any = null,
     highlightCfg: js.Any = null,
-    highlightItem: /* item */ js.UndefOr[js.Any] => Unit = null,
+    highlightItem: js.UndefOr[js.Any] => Unit = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IBar = null,
     isExcluded: /* index */ js.UndefOr[js.Any] => Unit = null,
@@ -127,7 +119,7 @@ object IBar {
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (drawSeries != null) __obj.updateDynamic("drawSeries")(js.Any.fromFunction0(drawSeries))
     if (eachRecord != null) __obj.updateDynamic("eachRecord")(js.Any.fromFunction2(eachRecord))
@@ -144,8 +136,8 @@ object IBar {
     if (getRecordCount != null) __obj.updateDynamic("getRecordCount")(js.Any.fromFunction0(getRecordCount))
     if (getYValueAccessors != null) __obj.updateDynamic("getYValueAccessors")(js.Any.fromFunction0(getYValueAccessors))
     if (getYValueCount != null) __obj.updateDynamic("getYValueCount")(js.Any.fromFunction0(getYValueCount))
-    if (groupGutter != null) __obj.updateDynamic("groupGutter")(groupGutter.asInstanceOf[js.Any])
-    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupGutter)) __obj.updateDynamic("groupGutter")(groupGutter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gutter)) __obj.updateDynamic("gutter")(gutter.get.asInstanceOf[js.Any])
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (hideAll != null) __obj.updateDynamic("hideAll")(js.Any.fromFunction0(hideAll))
@@ -155,7 +147,7 @@ object IBar {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isExcluded != null) __obj.updateDynamic("isExcluded")(js.Any.fromFunction1(isExcluded))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -175,9 +167,9 @@ object IBar {
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction2(setTitle))
     if (shadowAttributes != null) __obj.updateDynamic("shadowAttributes")(shadowAttributes.asInstanceOf[js.Any])
     if (showAll != null) __obj.updateDynamic("showAll")(js.Any.fromFunction0(showAll))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (!js.isUndefined(stacked)) __obj.updateDynamic("stacked")(stacked.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stacked)) __obj.updateDynamic("stacked")(stacked.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))

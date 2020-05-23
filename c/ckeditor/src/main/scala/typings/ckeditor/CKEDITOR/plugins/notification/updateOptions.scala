@@ -12,17 +12,17 @@ trait updateOptions extends optionsBase {
 object updateOptions {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     important: js.UndefOr[Boolean] = js.undefined,
     message: String = null,
-    progress: Int | Double = null,
+    progress: js.UndefOr[Double] = js.undefined,
     `type`: `type` = null
   ): updateOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(important)) __obj.updateDynamic("important")(important.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(important)) __obj.updateDynamic("important")(important.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[updateOptions]
   }

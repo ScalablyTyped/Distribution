@@ -17,13 +17,13 @@ object FilterProperties {
     `type`: String,
     measure: MeasureObject = null,
     members: js.Array[FilterItem] = null,
-    quantity: Int | Double = null
+    quantity: js.UndefOr[Double] = js.undefined
   ): FilterProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
     if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterProperties]
   }
 }

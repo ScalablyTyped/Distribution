@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object DomainNameType extends js.Object {
   /** The suffix of a domain name. */
   @js.native
   sealed trait suffix extends DomainNameType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DomainNameType with Double] = js.native
-  /* 1 */ @js.native
-  object fullyQualified extends TopLevel[fullyQualified with Double]
-  
-  /* 0 */ @js.native
-  object suffix extends TopLevel[suffix with Double]
   
 }
 

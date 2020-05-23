@@ -1,6 +1,7 @@
 package typings.backboneRelational.mod
 
 import typings.backbone.mod.Collection
+import typings.backbone.mod.ModelSetOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("backbone-relational", "Relation")
 @js.native
 class Relation ()
-  extends typings.backbone.mod.Model {
+  extends typings.backbone.mod.Model[js.Any, ModelSetOptions] {
   var instance: js.Any = js.native
   var key: js.Any = js.native
   var keyContents: js.Any = js.native
@@ -19,7 +20,7 @@ class Relation ()
   var reverseRelation: js.Any = js.native
   def checkPreconditions(): Boolean = js.native
   def getReverseRelations(model: Model): Relation = js.native
-  def setRelated(related: Collection[typings.backbone.mod.Model]): Unit = js.native
-  def setRelated(related: typings.backbone.mod.Model): Unit = js.native
+  def setRelated(related: Collection[typings.backbone.mod.Model[_, ModelSetOptions]]): Unit = js.native
+  def setRelated(related: typings.backbone.mod.Model[_, ModelSetOptions]): Unit = js.native
 }
 

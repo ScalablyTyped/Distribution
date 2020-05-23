@@ -47,10 +47,10 @@ object BubbleChartOptions {
     enableInteractivity: js.UndefOr[Boolean] = js.undefined,
     explorer: ChartExplorer = null,
     fontName: String = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     forceIFrame: js.UndefOr[Boolean] = js.undefined,
     hAxis: ChartAxis = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     legend: ChartLegend | none = null,
     selectionMode: ChartSelectionMode = null,
     series: js.Any = null,
@@ -62,7 +62,7 @@ object BubbleChartOptions {
     titleTextStyle: ChartTextStyle = null,
     tooltip: ChartTooltip = null,
     vAxis: ChartAxis = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): BubbleChartOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
@@ -72,25 +72,25 @@ object BubbleChartOptions {
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea.asInstanceOf[js.Any])
     if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.get.asInstanceOf[js.Any])
     if (explorer != null) __obj.updateDynamic("explorer")(explorer.asInstanceOf[js.Any])
     if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame.get.asInstanceOf[js.Any])
     if (hAxis != null) __obj.updateDynamic("hAxis")(hAxis.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (sizeAxis != null) __obj.updateDynamic("sizeAxis")(sizeAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortBubblesBySize)) __obj.updateDynamic("sortBubblesBySize")(sortBubblesBySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortBubblesBySize)) __obj.updateDynamic("sortBubblesBySize")(sortBubblesBySize.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titlePosition != null) __obj.updateDynamic("titlePosition")(titlePosition.asInstanceOf[js.Any])
     if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BubbleChartOptions]
   }
 }

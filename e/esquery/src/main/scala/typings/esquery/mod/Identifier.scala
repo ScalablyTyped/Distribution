@@ -19,7 +19,7 @@ object Identifier {
   def apply(`type`: identifier, value: String, subject: js.UndefOr[Boolean] = js.undefined): Identifier = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identifier]
   }
 }

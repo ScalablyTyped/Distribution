@@ -35,22 +35,22 @@ trait RoomP2PStatus extends js.Object {
 object RoomP2PStatus {
   @scala.inline
   def apply(
-    connectionSetupLatencyMillis: Int | Double = null,
+    connectionSetupLatencyMillis: js.UndefOr[Double] = js.undefined,
     error: String = null,
     error_reason: String = null,
     kind: String = null,
     participantId: String = null,
     status: String = null,
-    unreliableRoundtripLatencyMillis: Int | Double = null
+    unreliableRoundtripLatencyMillis: js.UndefOr[Double] = js.undefined
   ): RoomP2PStatus = {
     val __obj = js.Dynamic.literal()
-    if (connectionSetupLatencyMillis != null) __obj.updateDynamic("connectionSetupLatencyMillis")(connectionSetupLatencyMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionSetupLatencyMillis)) __obj.updateDynamic("connectionSetupLatencyMillis")(connectionSetupLatencyMillis.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (error_reason != null) __obj.updateDynamic("error_reason")(error_reason.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (participantId != null) __obj.updateDynamic("participantId")(participantId.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (unreliableRoundtripLatencyMillis != null) __obj.updateDynamic("unreliableRoundtripLatencyMillis")(unreliableRoundtripLatencyMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(unreliableRoundtripLatencyMillis)) __obj.updateDynamic("unreliableRoundtripLatencyMillis")(unreliableRoundtripLatencyMillis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomP2PStatus]
   }
 }

@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Reads color frames from a color frame source. */
-@JSGlobal("Windows.Devices.Perception.PerceptionColorFrameReader")
 @js.native
-abstract class PerceptionColorFrameReader () extends js.Object {
+trait PerceptionColorFrameReader extends js.Object {
   /** Gets or sets a boolean value indicating whether or not this reader is paused. */
   var isPaused: Boolean = js.native
   /** Subscribes to the FrameArrived event. This event is fired whenever a new frame arrives from the color frame source. */

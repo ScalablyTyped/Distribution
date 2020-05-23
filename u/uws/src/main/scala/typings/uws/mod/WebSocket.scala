@@ -3,14 +3,14 @@ package typings.uws.mod
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.std.Error
-import typings.uws.Anon0
-import typings.uws.AnonBinary
-import typings.uws.AnonBinaryBoolean
-import typings.uws.AnonCode
-import typings.uws.AnonData
-import typings.uws.AnonReason
-import typings.uws.AnonTarget
-import typings.uws.AnonType
+import typings.uws.anon.Binary
+import typings.uws.anon.BinaryBoolean
+import typings.uws.anon.Code
+import typings.uws.anon.Data
+import typings.uws.anon.Reason
+import typings.uws.anon.Target
+import typings.uws.anon.Type
+import typings.uws.anon.`0`
 import typings.uws.uwsStrings.close
 import typings.uws.uwsStrings.error
 import typings.uws.uwsStrings.message
@@ -39,7 +39,7 @@ trait WebSocket extends EventEmitter {
   @JSName("addEventListener")
   def addEventListener_close(method: close): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_close(method: close, cb: js.Function1[/* event */ AnonReason, Unit]): Unit = js.native
+  def addEventListener_close(method: close, cb: js.Function1[/* event */ Reason, Unit]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(method: error): Unit = js.native
   @JSName("addEventListener")
@@ -48,23 +48,23 @@ trait WebSocket extends EventEmitter {
   @JSName("addEventListener")
   def addEventListener_message(method: message): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_message(method: message, cb: js.Function1[/* event */ AnonType, Unit]): Unit = js.native
+  def addEventListener_message(method: message, cb: js.Function1[/* event */ Type, Unit]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(method: open): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_open(method: open, cb: js.Function1[/* event */ Anon0, Unit]): Unit = js.native
+  def addEventListener_open(method: open, cb: js.Function1[/* event */ `0`, Unit]): Unit = js.native
   @JSName("addListener")
   def addListener_close(event: close, cb: js.Function2[/* code */ Double, /* message */ String, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_message(event: message, cb: js.Function2[/* data */ js.Any, /* flags */ AnonBinaryBoolean, Unit]): this.type = js.native
+  def addListener_message(event: message, cb: js.Function2[/* data */ js.Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_open(event: open, cb: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_ping(event: ping, cb: js.Function2[/* data */ js.Any, /* flags */ AnonBinaryBoolean, Unit]): this.type = js.native
+  def addListener_ping(event: ping, cb: js.Function2[/* data */ js.Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_pong(event: pong, cb: js.Function2[/* data */ js.Any, /* flags */ AnonBinaryBoolean, Unit]): this.type = js.native
+  def addListener_pong(event: pong, cb: js.Function2[/* data */ js.Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
   def close(): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, data: js.Any): Unit = js.native
@@ -80,42 +80,42 @@ trait WebSocket extends EventEmitter {
   @JSName("on")
   def on_message(
     event: message,
-    cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ AnonBinaryBoolean, Unit]
+    cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ BinaryBoolean, Unit]
   ): this.type = js.native
   @JSName("on")
   def on_open(event: open, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
   @JSName("on")
   def on_ping(
     event: ping,
-    cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ AnonBinaryBoolean, Unit]
+    cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ BinaryBoolean, Unit]
   ): this.type = js.native
   @JSName("on")
   def on_pong(
     event: pong,
-    cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ AnonBinaryBoolean, Unit]
+    cb: js.ThisFunction2[/* this */ this.type, /* data */ js.Any, /* flags */ BinaryBoolean, Unit]
   ): this.type = js.native
-  def onclose(event: AnonCode): Unit = js.native
+  def onclose(event: Code): Unit = js.native
   def onerror(err: Error): Unit = js.native
-  def onmessage(event: AnonData): Unit = js.native
-  def onopen(event: AnonTarget): Unit = js.native
+  def onmessage(event: Data): Unit = js.native
+  def onopen(event: Target): Unit = js.native
   def pause(): Unit = js.native
   def ping(): Unit = js.native
   def ping(data: js.Any): Unit = js.native
-  def ping(data: js.Any, options: AnonBinary): Unit = js.native
-  def ping(data: js.Any, options: AnonBinary, dontFail: Boolean): Unit = js.native
+  def ping(data: js.Any, options: Binary): Unit = js.native
+  def ping(data: js.Any, options: Binary, dontFail: Boolean): Unit = js.native
   def pong(): Unit = js.native
   def pong(data: js.Any): Unit = js.native
-  def pong(data: js.Any, options: AnonBinary): Unit = js.native
-  def pong(data: js.Any, options: AnonBinary, dontFail: Boolean): Unit = js.native
+  def pong(data: js.Any, options: Binary): Unit = js.native
+  def pong(data: js.Any, options: Binary, dontFail: Boolean): Unit = js.native
   def resume(): Unit = js.native
   def send(data: js.Any): Unit = js.native
   def send(data: js.Any, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def send(data: js.Any, options: AnonBinary): Unit = js.native
-  def send(data: js.Any, options: AnonBinary, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def send(data: js.Any, options: Binary): Unit = js.native
+  def send(data: js.Any, options: Binary, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def stream(): Unit = js.native
   def stream(cb: js.Function2[/* err */ Error, /* final */ Boolean, Unit]): Unit = js.native
-  def stream(options: AnonBinary): Unit = js.native
-  def stream(options: AnonBinary, cb: js.Function2[/* err */ Error, /* final */ Boolean, Unit]): Unit = js.native
+  def stream(options: Binary): Unit = js.native
+  def stream(options: Binary, cb: js.Function2[/* err */ Error, /* final */ Boolean, Unit]): Unit = js.native
   def terminate(): Unit = js.native
 }
 

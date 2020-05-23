@@ -1,9 +1,9 @@
 package typings.dockerode.mod
 
-import typings.dockerode.AnonArgsEscaped
-import typings.dockerode.AnonAttachStdin
-import typings.dockerode.AnonBaseLayer
-import typings.dockerode.AnonData
+import typings.dockerode.anon.ArgsEscaped
+import typings.dockerode.anon.AttachStdin
+import typings.dockerode.anon.BaseLayer
+import typings.dockerode.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,18 +12,18 @@ trait ImageInspectInfo extends js.Object {
   var Architecture: String
   var Author: String
   var Comment: String
-  var Config: AnonAttachStdin
+  var Config: AttachStdin
   var Container: String
-  var ContainerConfig: AnonArgsEscaped
+  var ContainerConfig: ArgsEscaped
   var Created: String
   var DockerVersion: String
-  var GraphDriver: AnonData
+  var GraphDriver: Data
   var Id: String
   var Os: String
   var Parent: String
   var RepoDigests: js.Array[String]
   var RepoTags: js.Array[String]
-  var RootFS: AnonBaseLayer
+  var RootFS: BaseLayer
   var Size: Double
   var VirtualSize: Double
 }
@@ -34,18 +34,18 @@ object ImageInspectInfo {
     Architecture: String,
     Author: String,
     Comment: String,
-    Config: AnonAttachStdin,
+    Config: AttachStdin,
     Container: String,
-    ContainerConfig: AnonArgsEscaped,
+    ContainerConfig: ArgsEscaped,
     Created: String,
     DockerVersion: String,
-    GraphDriver: AnonData,
+    GraphDriver: Data,
     Id: String,
     Os: String,
     Parent: String,
     RepoDigests: js.Array[String],
     RepoTags: js.Array[String],
-    RootFS: AnonBaseLayer,
+    RootFS: BaseLayer,
     Size: Double,
     VirtualSize: Double
   ): ImageInspectInfo = {

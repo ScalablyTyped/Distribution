@@ -14,7 +14,7 @@ trait TensorData[D /* <: DataType */] extends js.Object {
 
 object TensorData {
   @scala.inline
-  def apply[D /* <: DataType */](
+  def apply[D](
     dataId: DataId = null,
     values: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any = null
   ): TensorData[D] = {

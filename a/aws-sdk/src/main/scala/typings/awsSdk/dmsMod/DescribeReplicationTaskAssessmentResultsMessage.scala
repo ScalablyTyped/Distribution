@@ -22,10 +22,14 @@ trait DescribeReplicationTaskAssessmentResultsMessage extends js.Object {
 
 object DescribeReplicationTaskAssessmentResultsMessage {
   @scala.inline
-  def apply(Marker: String = null, MaxRecords: Int | Double = null, ReplicationTaskArn: String = null): DescribeReplicationTaskAssessmentResultsMessage = {
+  def apply(
+    Marker: String = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    ReplicationTaskArn: String = null
+  ): DescribeReplicationTaskAssessmentResultsMessage = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (ReplicationTaskArn != null) __obj.updateDynamic("ReplicationTaskArn")(ReplicationTaskArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReplicationTaskAssessmentResultsMessage]
   }

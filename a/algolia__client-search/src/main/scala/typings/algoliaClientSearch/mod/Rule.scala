@@ -46,7 +46,7 @@ object Rule {
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     if (consequence != null) __obj.updateDynamic("consequence")(consequence.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (validity != null) __obj.updateDynamic("validity")(validity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }

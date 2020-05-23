@@ -13,11 +13,15 @@ trait XummCustomMeta extends js.Object {
 
 object XummCustomMeta {
   @scala.inline
-  def apply(blob: StringDictionary[js.Any] = null, identifier: String = null, instruction: String = null): XummCustomMeta = {
+  def apply(
+    blob: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined,
+    identifier: js.UndefOr[Null | String] = js.undefined,
+    instruction: js.UndefOr[Null | String] = js.undefined
+  ): XummCustomMeta = {
     val __obj = js.Dynamic.literal()
-    if (blob != null) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (instruction != null) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
+    if (!js.isUndefined(blob)) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
+    if (!js.isUndefined(identifier)) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(instruction)) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
     __obj.asInstanceOf[XummCustomMeta]
   }
 }

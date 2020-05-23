@@ -93,11 +93,11 @@ object AwsLambdaFunctionDetails {
     LastModified: NonEmptyString = null,
     Layers: AwsLambdaFunctionLayerList = null,
     MasterArn: NonEmptyString = null,
-    MemorySize: Int | scala.Double = null,
+    MemorySize: js.UndefOr[Integer] = js.undefined,
     RevisionId: NonEmptyString = null,
     Role: NonEmptyString = null,
     Runtime: NonEmptyString = null,
-    Timeout: Int | scala.Double = null,
+    Timeout: js.UndefOr[Integer] = js.undefined,
     TracingConfig: AwsLambdaFunctionTracingConfig = null,
     Version: NonEmptyString = null,
     VpcConfig: AwsLambdaFunctionVpcConfig = null
@@ -113,11 +113,11 @@ object AwsLambdaFunctionDetails {
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     if (Layers != null) __obj.updateDynamic("Layers")(Layers.asInstanceOf[js.Any])
     if (MasterArn != null) __obj.updateDynamic("MasterArn")(MasterArn.asInstanceOf[js.Any])
-    if (MemorySize != null) __obj.updateDynamic("MemorySize")(MemorySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize.get.asInstanceOf[js.Any])
     if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
     if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
     if (Runtime != null) __obj.updateDynamic("Runtime")(Runtime.asInstanceOf[js.Any])
-    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     if (TracingConfig != null) __obj.updateDynamic("TracingConfig")(TracingConfig.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])

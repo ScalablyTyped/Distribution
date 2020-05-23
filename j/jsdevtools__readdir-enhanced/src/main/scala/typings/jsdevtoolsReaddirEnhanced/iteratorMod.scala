@@ -1,5 +1,7 @@
 package typings.jsdevtoolsReaddirEnhanced
 
+import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatsfalse
+import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatstrue
 import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.Stats
 import typings.std.AsyncIterableIterator
 import scala.scalajs.js

@@ -1,8 +1,8 @@
 package typings.pacote.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pacote.AnonDirectory
-import typings.pacote.AnonEmail
+import typings.pacote.anon.Directory
+import typings.pacote.anon.Email
 import typings.pacote.pacoteBooleans.`false`
 import typings.std.Record
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait Manifest_
   extends CommonMetadata
-     with // Non-standard properties from package.json may also appear.
+     with // Non-standard properties may also appear when fullMetadata = true.
 /* key */ StringDictionary[js.Any] {
   var _id: js.UndefOr[String] = js.undefined
   var _nodeVersion: js.UndefOr[String] = js.undefined
@@ -48,7 +48,7 @@ object Manifest_ {
     dist: PackageDist,
     name: String,
     version: String,
-    StringDictionary: // Non-standard properties from package.json may also appear.
+    StringDictionary: // Non-standard properties may also appear when fullMetadata = true.
   /* key */ StringDictionary[js.Any] = null,
     _id: String = null,
     _nodeVersion: String = null,
@@ -57,7 +57,7 @@ object Manifest_ {
     author: Person = null,
     bin: Record[String, String] = null,
     browser: String = null,
-    bugs: AnonEmail = null,
+    bugs: Email = null,
     bundledDependencies: `false` | js.Array[String] = null,
     config: Record[String, _] = null,
     contributors: js.Array[Person] = null,
@@ -80,7 +80,7 @@ object Manifest_ {
     publishConfig: Record[String, _] = null,
     readme: String = null,
     readmeFilename: String = null,
-    repository: AnonDirectory = null,
+    repository: Directory = null,
     scripts: Record[String, String] = null,
     users: Record[String, Boolean] = null
   ): Manifest_ = {

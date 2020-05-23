@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.peoplePickerMod
 
-import typings.officeUiFabricReact.IGenericItemkeyKey
+import typings.officeUiFabricReact.anon.IGenericItemkeyKey
 import typings.officeUiFabricReact.basePickerTypesMod.ValidationState
 import scala.scalajs.js
 import scala.scalajs.js.`|`

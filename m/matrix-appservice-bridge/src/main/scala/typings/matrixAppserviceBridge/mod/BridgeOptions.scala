@@ -22,7 +22,7 @@ object BridgeOptions {
     suppressEcho: js.UndefOr[Boolean] = js.undefined
   ): BridgeOptions = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], homeserverUrl = homeserverUrl.asInstanceOf[js.Any], registration = registration.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressEcho)) __obj.updateDynamic("suppressEcho")(suppressEcho.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressEcho)) __obj.updateDynamic("suppressEcho")(suppressEcho.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BridgeOptions]
   }
 }

@@ -24,7 +24,7 @@ object RangeInputProps {
     min: Double | String = null,
     name: String = null,
     onChange: /* event */ ChangeEvent[Element] => Unit = null,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     value: Double | String = null
   ): RangeInputProps = {
     val __obj = js.Dynamic.literal()
@@ -33,7 +33,7 @@ object RangeInputProps {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeInputProps]
   }

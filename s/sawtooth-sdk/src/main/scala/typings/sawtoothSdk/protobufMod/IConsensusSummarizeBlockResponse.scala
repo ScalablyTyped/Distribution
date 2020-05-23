@@ -15,10 +15,13 @@ trait IConsensusSummarizeBlockResponse extends js.Object {
 
 object IConsensusSummarizeBlockResponse {
   @scala.inline
-  def apply(status: Status = null, summary: Uint8Array = null): IConsensusSummarizeBlockResponse = {
+  def apply(
+    status: js.UndefOr[Null | Status] = js.undefined,
+    summary: js.UndefOr[Null | Uint8Array] = js.undefined
+  ): IConsensusSummarizeBlockResponse = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(summary)) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusSummarizeBlockResponse]
   }
 }

@@ -20,28 +20,28 @@ trait IndexPage extends js.Object {
 object IndexPage {
   @scala.inline
   def apply(
-    current: Int | Double = null,
+    current: js.UndefOr[Double] = js.undefined,
     current_url: String = null,
-    next: Int | Double = null,
+    next: js.UndefOr[Double] = js.undefined,
     next_link: String = null,
     path: String = null,
-    per_page: Int | Double = null,
+    per_page: js.UndefOr[Double] = js.undefined,
     posts: js.Object = null,
-    prev: Int | Double = null,
+    prev: js.UndefOr[Double] = js.undefined,
     prev_link: String = null,
-    total: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined
   ): IndexPage = {
     val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
     if (current_url != null) __obj.updateDynamic("current_url")(current_url.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (!js.isUndefined(next)) __obj.updateDynamic("next")(next.get.asInstanceOf[js.Any])
     if (next_link != null) __obj.updateDynamic("next_link")(next_link.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
+    if (!js.isUndefined(per_page)) __obj.updateDynamic("per_page")(per_page.get.asInstanceOf[js.Any])
     if (posts != null) __obj.updateDynamic("posts")(posts.asInstanceOf[js.Any])
-    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    if (!js.isUndefined(prev)) __obj.updateDynamic("prev")(prev.get.asInstanceOf[js.Any])
     if (prev_link != null) __obj.updateDynamic("prev_link")(prev_link.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexPage]
   }
 }

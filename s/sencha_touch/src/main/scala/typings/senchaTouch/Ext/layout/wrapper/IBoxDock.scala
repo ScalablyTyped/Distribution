@@ -9,52 +9,52 @@ import scala.scalajs.js.annotation._
 
 trait IBoxDock extends IBase {
   /** [Method] Returns the value of bodyElement
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getBodyElement: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of container
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getContainer: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of direction
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of element
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getElement: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of innerWrapper
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getInnerWrapper: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of sizeState
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getSizeState: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Sets the value of bodyElement
-  		* @param bodyElement Object The new value.
-  		*/
+    * @param bodyElement Object The new value.
+    */
   var setBodyElement: js.UndefOr[js.Function1[/* bodyElement */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of container
-  		* @param container Object The new value.
-  		*/
+    * @param container Object The new value.
+    */
   var setContainer: js.UndefOr[js.Function1[/* container */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of direction
-  		* @param direction String The new value.
-  		*/
+    * @param direction String The new value.
+    */
   var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of element
-  		* @param element Object The new value.
-  		*/
+    * @param element Object The new value.
+    */
   var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of innerWrapper
-  		* @param innerWrapper Object The new value.
-  		*/
+    * @param innerWrapper Object The new value.
+    */
   var setInnerWrapper: js.UndefOr[js.Function1[/* innerWrapper */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of sizeState
-  		* @param sizeState Boolean The new value.
-  		*/
+    * @param sizeState Boolean The new value.
+    */
   var setSizeState: js.UndefOr[js.Function1[/* sizeState */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 
@@ -118,7 +118,7 @@ object IBoxDock {
     if (setElement != null) __obj.updateDynamic("setElement")(js.Any.fromFunction1(setElement))
     if (setInnerWrapper != null) __obj.updateDynamic("setInnerWrapper")(js.Any.fromFunction1(setInnerWrapper))
     if (setSizeState != null) __obj.updateDynamic("setSizeState")(js.Any.fromFunction1(setSizeState))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBoxDock]

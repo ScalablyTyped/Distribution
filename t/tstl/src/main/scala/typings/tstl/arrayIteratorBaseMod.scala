@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/internal/iterator/ArrayIteratorBase", JSImport.Namespace)
 @js.native
 object arrayIteratorBaseMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.icontainerMod.IContainer.Iterator because var conflicts: value. Inlined source, reverse */ @js.native
   abstract class ArrayIteratorBase[T /* <: ElemT */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseT, ElemT] */, ArrayT /* <: ArrayContainer[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, IteratorT /* <: ArrayIteratorBase[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, ReverseT /* <: ArrayReverseIteratorBase[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, ElemT] protected () extends IRandomAccessIterator[T, IteratorT] {
     /**

@@ -1,9 +1,9 @@
 package typings.officeJs.OneNote
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OneNote.Interfaces.NoteTagData
 import typings.officeJs.OneNote.Interfaces.NoteTagLoadOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Address
 import typings.officeJs.officeJsStrings.Completed
 import typings.officeJs.officeJsStrings.Contact
@@ -32,9 +32,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.NoteTag")
 @js.native
-class NoteTag () extends ClientObject {
+trait NoteTag extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_NoteTag: RequestContext = js.native
@@ -77,8 +76,8 @@ class NoteTag () extends ClientObject {
   def load(): NoteTag = js.native
   def load(option: String): NoteTag = js.native
   def load(option: js.Array[String]): NoteTag = js.native
-  def load(option: AnonExpand): NoteTag = js.native
   def load(option: NoteTagLoadOptions): NoteTag = js.native
+  def load(option: Expand): NoteTag = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original OneNote.NoteTag object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NoteTagData`) that contains shallow copies of any loaded child properties from the original object.

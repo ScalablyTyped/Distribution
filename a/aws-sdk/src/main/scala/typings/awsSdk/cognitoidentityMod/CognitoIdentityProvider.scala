@@ -25,12 +25,12 @@ object CognitoIdentityProvider {
   def apply(
     ClientId: CognitoIdentityProviderClientId = null,
     ProviderName: CognitoIdentityProviderName = null,
-    ServerSideTokenCheck: js.UndefOr[Boolean] = js.undefined
+    ServerSideTokenCheck: js.UndefOr[CognitoIdentityProviderTokenCheck] = js.undefined
   ): CognitoIdentityProvider = {
     val __obj = js.Dynamic.literal()
     if (ClientId != null) __obj.updateDynamic("ClientId")(ClientId.asInstanceOf[js.Any])
     if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ServerSideTokenCheck)) __obj.updateDynamic("ServerSideTokenCheck")(ServerSideTokenCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(ServerSideTokenCheck)) __obj.updateDynamic("ServerSideTokenCheck")(ServerSideTokenCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoIdentityProvider]
   }
 }

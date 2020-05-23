@@ -50,19 +50,19 @@ trait TestSuiteOverview extends js.Object {
 object TestSuiteOverview {
   @scala.inline
   def apply(
-    errorCount: Int | Double = null,
-    failureCount: Int | Double = null,
+    errorCount: js.UndefOr[Double] = js.undefined,
+    failureCount: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    skippedCount: Int | Double = null,
-    totalCount: Int | Double = null,
+    skippedCount: js.UndefOr[Double] = js.undefined,
+    totalCount: js.UndefOr[Double] = js.undefined,
     xmlSource: FileReference = null
   ): TestSuiteOverview = {
     val __obj = js.Dynamic.literal()
-    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount.asInstanceOf[js.Any])
-    if (failureCount != null) __obj.updateDynamic("failureCount")(failureCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorCount)) __obj.updateDynamic("errorCount")(errorCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failureCount)) __obj.updateDynamic("failureCount")(failureCount.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (skippedCount != null) __obj.updateDynamic("skippedCount")(skippedCount.asInstanceOf[js.Any])
-    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(skippedCount)) __obj.updateDynamic("skippedCount")(skippedCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalCount)) __obj.updateDynamic("totalCount")(totalCount.get.asInstanceOf[js.Any])
     if (xmlSource != null) __obj.updateDynamic("xmlSource")(xmlSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSuiteOverview]
   }

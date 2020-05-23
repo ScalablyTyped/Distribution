@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLHistory")
 @js.native
-class HTMLHistory protected () extends js.Object {
+trait HTMLHistory extends js.Object {
   @JSName("MSHTML.HTMLHistory_typekey")
   var MSHTMLDotHTMLHistory_typekey: HTMLHistory = js.native
   val constructor: js.Any = js.native

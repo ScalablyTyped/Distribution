@@ -12,10 +12,14 @@ trait AutoSaveOptions extends js.Object {
 
 object AutoSaveOptions {
   @scala.inline
-  def apply(uniqueId: String, delay: Int | Double = null, enabled: js.UndefOr[Boolean] = js.undefined): AutoSaveOptions = {
+  def apply(
+    uniqueId: String,
+    delay: js.UndefOr[Double] = js.undefined,
+    enabled: js.UndefOr[Boolean] = js.undefined
+  ): AutoSaveOptions = {
     val __obj = js.Dynamic.literal(uniqueId = uniqueId.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoSaveOptions]
   }
 }

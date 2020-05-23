@@ -1,16 +1,13 @@
 package typings.openfin.transportMod
 
 import typings.node.eventsMod.EventEmitter
-import typings.openfin.AnonReject
+import typings.openfin.anon.Reject
 import typings.openfin.entityTypeMod.EntityTypeHelpers
 import typings.openfin.environmentMod.Environment
 import typings.openfin.eventAggregatorMod.EventAggregator
 import typings.openfin.identityMod.Identity
-import typings.openfin.mainMod.Frame
-import typings.openfin.mainMod.Window
 import typings.openfin.openfinBooleans.`true`
 import typings.openfin.openfinStrings.`request-external-authorization`
-import typings.openfin.viewViewMod.View
 import typings.openfin.wireMod.ConnectConfig
 import typings.openfin.wireMod.ExistingConnectConfig
 import typings.openfin.wireMod.InternalConnectConfig
@@ -24,13 +21,13 @@ trait Transport extends EventEmitter {
   var READY_STATE: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ js.Any = js.native
   var environment: Environment = js.native
   var eventAggregator: EventAggregator = js.native
-  var me: (View | Window | Frame | js.Object) with Identity with EntityTypeHelpers = js.native
+  var me: Identity with EntityTypeHelpers = js.native
   var messageHandlers: js.Array[MessageHandler] = js.native
   @JSName("sendRaw")
   var sendRaw_Original: js.Function1[/* data */ js.Any, js.Promise[_]] = js.native
   var topicRefMap: Map[String, Double] = js.native
   var uncorrelatedListener: js.Function = js.native
-  var wireListeners: Map[Double, AnonReject] = js.native
+  var wireListeners: Map[Double, Reject] = js.native
   /* protected */ def addWireListener(id: Double, resolve: js.Function, reject: js.Function, uncorrelated: Boolean): Unit = js.native
   def connect(config: InternalConnectConfig): js.Promise[String] = js.native
   def connectByPort(config: ExistingConnectConfig): js.Promise[String] = js.native

@@ -43,15 +43,15 @@ object Options {
     entries: js.UndefOr[Boolean] = js.undefined,
     handler: (/* percentage */ Double, /* msg */ String, /* repeated */ String) => Unit = null,
     modules: js.UndefOr[Boolean] = js.undefined,
-    modulesCount: Int | Double = null,
-    profile: js.UndefOr[Boolean] = js.undefined
+    modulesCount: js.UndefOr[Double] = js.undefined,
+    profile: js.UndefOr[Null | Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeModules)) __obj.updateDynamic("activeModules")(activeModules.asInstanceOf[js.Any])
-    if (!js.isUndefined(entries)) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeModules)) __obj.updateDynamic("activeModules")(activeModules.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(entries)) __obj.updateDynamic("entries")(entries.get.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction3(handler))
-    if (!js.isUndefined(modules)) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (modulesCount != null) __obj.updateDynamic("modulesCount")(modulesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(modules)) __obj.updateDynamic("modules")(modules.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modulesCount)) __obj.updateDynamic("modulesCount")(modulesCount.get.asInstanceOf[js.Any])
     if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

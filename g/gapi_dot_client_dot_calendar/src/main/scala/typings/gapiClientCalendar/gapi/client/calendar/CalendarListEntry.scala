@@ -1,6 +1,6 @@
 package typings.gapiClientCalendar.gapi.client.calendar
 
-import typings.gapiClientCalendar.AnonNotifications
+import typings.gapiClientCalendar.anon.Notifications
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +26,8 @@ trait CalendarListEntry extends js.Object {
     * property is superseded by the backgroundColor and foregroundColor properties and can be ignored when using these properties. Optional.
     */
   var colorId: js.UndefOr[String] = js.undefined
+  /** Conferencing properties for this calendar, for example what types of conferences are allowed. */
+  var conferenceProperties: js.UndefOr[ConferenceProperties] = js.undefined
   /** The default reminders that the authenticated user has for this calendar. */
   var defaultReminders: js.UndefOr[js.Array[EventReminder]] = js.undefined
   /** Whether this calendar list entry has been deleted from the calendar list. Read-only. Optional. The default is False. */
@@ -39,7 +41,10 @@ trait CalendarListEntry extends js.Object {
     * this property, you need to specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional.
     */
   var foregroundColor: js.UndefOr[String] = js.undefined
-  /** Whether the calendar has been hidden from the list. Optional. The default is False. */
+  /**
+    * Whether the calendar has been hidden from the list. Optional. The attribute is only returned when the calendar is hidden, in which case the value is
+    * true.
+    */
   var hidden: js.UndefOr[Boolean] = js.undefined
   /** Identifier of the calendar. */
   var id: js.UndefOr[String] = js.undefined
@@ -48,7 +53,7 @@ trait CalendarListEntry extends js.Object {
   /** Geographic location of the calendar as free-form text. Optional. Read-only. */
   var location: js.UndefOr[String] = js.undefined
   /** The notifications that the authenticated user is receiving for this calendar. */
-  var notificationSettings: js.UndefOr[AnonNotifications] = js.undefined
+  var notificationSettings: js.UndefOr[Notifications] = js.undefined
   /** Whether the calendar is the primary calendar of the authenticated user. Read-only. Optional. The default is False. */
   var primary: js.UndefOr[Boolean] = js.undefined
   /** Whether the calendar content shows up in the calendar UI. Optional. The default is False. */
@@ -67,6 +72,7 @@ object CalendarListEntry {
     accessRole: String = null,
     backgroundColor: String = null,
     colorId: String = null,
+    conferenceProperties: ConferenceProperties = null,
     defaultReminders: js.Array[EventReminder] = null,
     deleted: js.UndefOr[Boolean] = js.undefined,
     description: String = null,
@@ -76,7 +82,7 @@ object CalendarListEntry {
     id: String = null,
     kind: String = null,
     location: String = null,
-    notificationSettings: AnonNotifications = null,
+    notificationSettings: Notifications = null,
     primary: js.UndefOr[Boolean] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined,
     summary: String = null,
@@ -87,18 +93,19 @@ object CalendarListEntry {
     if (accessRole != null) __obj.updateDynamic("accessRole")(accessRole.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (colorId != null) __obj.updateDynamic("colorId")(colorId.asInstanceOf[js.Any])
+    if (conferenceProperties != null) __obj.updateDynamic("conferenceProperties")(conferenceProperties.asInstanceOf[js.Any])
     if (defaultReminders != null) __obj.updateDynamic("defaultReminders")(defaultReminders.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (notificationSettings != null) __obj.updateDynamic("notificationSettings")(notificationSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     if (summaryOverride != null) __obj.updateDynamic("summaryOverride")(summaryOverride.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])

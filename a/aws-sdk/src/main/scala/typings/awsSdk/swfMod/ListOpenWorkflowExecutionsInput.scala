@@ -46,17 +46,17 @@ object ListOpenWorkflowExecutionsInput {
     domain: DomainName,
     startTimeFilter: ExecutionTimeFilter,
     executionFilter: WorkflowExecutionFilter = null,
-    maximumPageSize: Int | Double = null,
+    maximumPageSize: js.UndefOr[PageSize] = js.undefined,
     nextPageToken: PageToken = null,
-    reverseOrder: js.UndefOr[Boolean] = js.undefined,
+    reverseOrder: js.UndefOr[ReverseOrder] = js.undefined,
     tagFilter: TagFilter = null,
     typeFilter: WorkflowTypeFilter = null
   ): ListOpenWorkflowExecutionsInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], startTimeFilter = startTimeFilter.asInstanceOf[js.Any])
     if (executionFilter != null) __obj.updateDynamic("executionFilter")(executionFilter.asInstanceOf[js.Any])
-    if (maximumPageSize != null) __obj.updateDynamic("maximumPageSize")(maximumPageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumPageSize)) __obj.updateDynamic("maximumPageSize")(maximumPageSize.get.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder.get.asInstanceOf[js.Any])
     if (tagFilter != null) __obj.updateDynamic("tagFilter")(tagFilter.asInstanceOf[js.Any])
     if (typeFilter != null) __obj.updateDynamic("typeFilter")(typeFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOpenWorkflowExecutionsInput]

@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.PivotItemData
 import typings.officeJsPreview.Excel.Interfaces.PivotItemLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.PivotItemUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.PivotItem")
 @js.native
-class PivotItem () extends ClientObject {
+trait PivotItem extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PivotItem: RequestContext = js.native
@@ -45,7 +44,7 @@ class PivotItem () extends ClientObject {
   var name: String = js.native
   /**
     *
-    * Determines whether the PivotItem is visible or not.
+    * Specifies if the PivotItem is visible.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -57,7 +56,7 @@ class PivotItem () extends ClientObject {
     */
   def load(): PivotItem = js.native
   def load(options: PivotItemLoadOptions): PivotItem = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PivotItem = js.native
+  def load(propertyNamesAndPaths: Expand): PivotItem = js.native
   def load(propertyNames: String): PivotItem = js.native
   def load(propertyNames: js.Array[String]): PivotItem = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

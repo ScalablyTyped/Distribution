@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +20,4 @@ trait TreeAPI extends js.Object {
   def openAll(): Unit = js.native
   def setState(state: js.Any): Unit = js.native
 }
-
-@JSGlobal("webix.TreeAPI")
-@js.native
-object TreeAPI extends TopLevel[TreeAPI]
 

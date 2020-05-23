@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.AnonCompact
+import typings.officeUiFabricReact.anon.Compact
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +17,6 @@ class GroupedListBase protected ()
 @JSImport("office-ui-fabric-react/lib/index.bundle", "GroupedListBase")
 @js.native
 object GroupedListBase extends js.Object {
-  var defaultProps: AnonCompact = js.native
+  var defaultProps: Compact = js.native
 }
 

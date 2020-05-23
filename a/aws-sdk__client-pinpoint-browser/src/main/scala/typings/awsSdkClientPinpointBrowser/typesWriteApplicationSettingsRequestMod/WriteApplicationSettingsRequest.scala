@@ -36,7 +36,7 @@ object WriteApplicationSettingsRequest {
   ): WriteApplicationSettingsRequest = {
     val __obj = js.Dynamic.literal()
     if (CampaignHook != null) __obj.updateDynamic("CampaignHook")(CampaignHook.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudWatchMetricsEnabled)) __obj.updateDynamic("CloudWatchMetricsEnabled")(CloudWatchMetricsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(CloudWatchMetricsEnabled)) __obj.updateDynamic("CloudWatchMetricsEnabled")(CloudWatchMetricsEnabled.get.asInstanceOf[js.Any])
     if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
     if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteApplicationSettingsRequest]

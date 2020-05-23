@@ -1,9 +1,10 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.bufferedamountlow
+import typings.std.stdStrings.close
 import typings.std.stdStrings.error
 import typings.std.stdStrings.message
+import typings.std.stdStrings.open
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,44 +19,41 @@ trait RTCDataChannel extends EventTarget {
   val maxPacketLifeTime: Double | Null = js.native
   val maxRetransmits: Double | Null = js.native
   val negotiated: scala.Boolean = js.native
-  var onbufferedamountlow: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var onbufferedamountlow: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _]) | Null = js.native
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
-  var onopen: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var onopen: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val ordered: scala.Boolean = js.native
   val priority: RTCPriorityType = js.native
   val protocol: java.lang.String = js.native
   val readyState: RTCDataChannelState = js.native
   @JSName("addEventListener")
-  def addEventListener_bufferedamountlow(`type`: bufferedamountlow, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def addEventListener_bufferedamountlow(`type`: bufferedamountlow, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_bufferedamountlow(
     `type`: bufferedamountlow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_bufferedamountlow(
     `type`: bufferedamountlow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_close(
-    `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
+  def addEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
-    `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: close,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
-    `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: close,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -87,52 +85,46 @@ trait RTCDataChannel extends EventTarget {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
+  def addEventListener_open(`type`: open, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: open,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: open,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   def close(): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_bufferedamountlow(`type`: bufferedamountlow, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def removeEventListener_bufferedamountlow(`type`: bufferedamountlow, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_bufferedamountlow(
     `type`: bufferedamountlow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_bufferedamountlow(
     `type`: bufferedamountlow,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_close(
-    `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
+  def removeEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
-    `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: close,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
-    `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: close,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -164,20 +156,17 @@ trait RTCDataChannel extends EventTarget {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
+  def removeEventListener_open(`type`: open, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: open,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_open(
-    `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    `type`: open,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   def send(data: java.lang.String): Unit = js.native
@@ -185,8 +174,4 @@ trait RTCDataChannel extends EventTarget {
   def send(data: ArrayBufferView): Unit = js.native
   def send(data: Blob): Unit = js.native
 }
-
-@JSGlobal("RTCDataChannel")
-@js.native
-object RTCDataChannel extends Instantiable0[RTCDataChannel]
 

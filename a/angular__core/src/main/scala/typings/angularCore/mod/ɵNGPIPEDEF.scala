@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core", "\u0275NG_PIPE_DEF")
 @js.native
-object ɵNGPIPEDEF extends TopLevel[String]
+object ɵNGPIPEDEF extends TopLevel[/* "" */ String]
 

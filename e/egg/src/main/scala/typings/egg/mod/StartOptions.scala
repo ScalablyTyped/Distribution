@@ -23,7 +23,7 @@ object StartOptions {
     val __obj = js.Dynamic.literal()
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
     if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreWarning)) __obj.updateDynamic("ignoreWarning")(ignoreWarning.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWarning)) __obj.updateDynamic("ignoreWarning")(ignoreWarning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOptions]
   }
 }

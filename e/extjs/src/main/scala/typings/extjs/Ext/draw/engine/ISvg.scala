@@ -11,33 +11,33 @@ import scala.scalajs.js.annotation._
 
 trait ISvg extends ISurface {
   /** [Method] Insert or move a given sprite s element to the correct place in the DOM list for its zIndex
-  		* @param sprite Ext.draw.Sprite
-  		*/
+    * @param sprite Ext.draw.Sprite
+    */
   var applyZIndex: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.undefined
   /** [Method] Get the region for the surface s canvas area
-  		* @returns Ext.util.Region
-  		*/
+    * @returns Ext.util.Region
+    */
   var getRegion: js.UndefOr[js.Function0[IRegion]] = js.undefined
   /** [Method] Checks if the specified CSS class exists on this element s DOM node
-  		* @param sprite Ext.draw.Sprite The sprite to look into.
-  		* @param className String The CSS class to check for
-  		* @returns Boolean True if the class exists, else false
-  		*/
+    * @param sprite Ext.draw.Sprite The sprite to look into.
+    * @param className String The CSS class to check for
+    * @returns Boolean True if the class exists, else false
+    */
   var hasCls: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[ISprite], /* className */ js.UndefOr[String], Boolean]
   ] = js.undefined
   /** [Method] Sets the size of the surface
-  		* @param width Object
-  		* @param height Object
-  		*/
+    * @param width Object
+    * @param height Object
+    */
   @JSName("setSize")
   var setSize_ISvg: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Changes the text in the sprite element
-  		* @param sprite Object
-  		* @param textString Object
-  		*/
+    * @param sprite Object
+    * @param textString Object
+    */
   @JSName("setText")
   var setText_ISvg: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* textString */ js.UndefOr[js.Any], Unit]
@@ -74,7 +74,7 @@ object ISvg {
     hasCls: (/* sprite */ js.UndefOr[ISprite], /* className */ js.UndefOr[String]) => Boolean = null,
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => ISvg = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
@@ -103,7 +103,7 @@ object ISvg {
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ISvg = {
     val __obj = js.Dynamic.literal()
     if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
@@ -133,10 +133,10 @@ object ISvg {
     if (hasCls != null) __obj.updateDynamic("hasCls")(js.Any.fromFunction2(hasCls))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -156,13 +156,13 @@ object ISvg {
     if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2(setSize))
     if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
     if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction2(setText))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISvg]
   }
 }

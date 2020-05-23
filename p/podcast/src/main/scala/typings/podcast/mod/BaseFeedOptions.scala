@@ -55,7 +55,7 @@ object BaseFeedOptions {
     managingEditor: String = null,
     pubDate: Date | String = null,
     title: String = null,
-    ttl: Int | Double = null,
+    ttl: js.UndefOr[Double] = js.undefined,
     webMaster: String = null
   ): BaseFeedOptions = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any])
@@ -68,7 +68,7 @@ object BaseFeedOptions {
     if (generator != null) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
     if (itunesAuthor != null) __obj.updateDynamic("itunesAuthor")(itunesAuthor.asInstanceOf[js.Any])
     if (itunesCategory != null) __obj.updateDynamic("itunesCategory")(itunesCategory.asInstanceOf[js.Any])
-    if (!js.isUndefined(itunesExplicit)) __obj.updateDynamic("itunesExplicit")(itunesExplicit.asInstanceOf[js.Any])
+    if (!js.isUndefined(itunesExplicit)) __obj.updateDynamic("itunesExplicit")(itunesExplicit.get.asInstanceOf[js.Any])
     if (itunesImage != null) __obj.updateDynamic("itunesImage")(itunesImage.asInstanceOf[js.Any])
     if (itunesOwner != null) __obj.updateDynamic("itunesOwner")(itunesOwner.asInstanceOf[js.Any])
     if (itunesSubtitle != null) __obj.updateDynamic("itunesSubtitle")(itunesSubtitle.asInstanceOf[js.Any])
@@ -78,7 +78,7 @@ object BaseFeedOptions {
     if (managingEditor != null) __obj.updateDynamic("managingEditor")(managingEditor.asInstanceOf[js.Any])
     if (pubDate != null) __obj.updateDynamic("pubDate")(pubDate.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     if (webMaster != null) __obj.updateDynamic("webMaster")(webMaster.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseFeedOptions]
   }

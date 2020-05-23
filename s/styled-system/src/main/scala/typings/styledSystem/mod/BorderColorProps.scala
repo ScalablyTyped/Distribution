@@ -39,19 +39,19 @@ trait BorderColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exte
 
 object BorderColorProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](
-    borderBottomColor: ResponsiveValue[TVal, ThemeType] = null,
-    borderColor: ResponsiveValue[TVal, ThemeType] = null,
-    borderLeftColor: ResponsiveValue[TVal, ThemeType] = null,
-    borderRightColor: ResponsiveValue[TVal, ThemeType] = null,
-    borderTopColor: ResponsiveValue[TVal, ThemeType] = null
+  def apply[ThemeType, TVal](
+    borderBottomColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderLeftColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderRightColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderTopColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined
   ): BorderColorProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (borderBottomColor != null) __obj.updateDynamic("borderBottomColor")(borderBottomColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderLeftColor != null) __obj.updateDynamic("borderLeftColor")(borderLeftColor.asInstanceOf[js.Any])
-    if (borderRightColor != null) __obj.updateDynamic("borderRightColor")(borderRightColor.asInstanceOf[js.Any])
-    if (borderTopColor != null) __obj.updateDynamic("borderTopColor")(borderTopColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderBottomColor)) __obj.updateDynamic("borderBottomColor")(borderBottomColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderColor)) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderLeftColor)) __obj.updateDynamic("borderLeftColor")(borderLeftColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRightColor)) __obj.updateDynamic("borderRightColor")(borderRightColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderTopColor)) __obj.updateDynamic("borderTopColor")(borderTopColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderColorProps[ThemeType, TVal]]
   }
 }

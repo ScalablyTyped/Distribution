@@ -38,8 +38,8 @@ object VisibleElementsMenuItems {
     toggleColumns: js.Any = null
   ): VisibleElementsMenuItems = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(clearSelection)) __obj.updateDynamic("clearSelection")(clearSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshData)) __obj.updateDynamic("refreshData")(refreshData.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearSelection)) __obj.updateDynamic("clearSelection")(clearSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshData)) __obj.updateDynamic("refreshData")(refreshData.get.asInstanceOf[js.Any])
     if (toggleColumns != null) __obj.updateDynamic("toggleColumns")(toggleColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibleElementsMenuItems]
   }

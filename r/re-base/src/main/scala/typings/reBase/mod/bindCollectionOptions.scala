@@ -57,8 +57,8 @@ object bindCollectionOptions {
     if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction0(query))
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
-    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs.asInstanceOf[js.Any])
+    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[bindCollectionOptions]
   }
 }

@@ -22,9 +22,9 @@ object ListViewFilterable {
     placeholder: String = null
   ): ListViewFilterable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFilter)) __obj.updateDynamic("autoFilter")(autoFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFilter)) __obj.updateDynamic("autoFilter")(autoFilter.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewFilterable]

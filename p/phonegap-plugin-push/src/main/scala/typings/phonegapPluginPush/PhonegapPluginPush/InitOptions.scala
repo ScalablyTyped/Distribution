@@ -1,8 +1,8 @@
 package typings.phonegapPluginPush.PhonegapPluginPush
 
-import typings.phonegapPluginPush.AnonAlert
-import typings.phonegapPluginPush.AnonApplicationServerKey
-import typings.phonegapPluginPush.AnonClearBadge
+import typings.phonegapPluginPush.anon.Alert
+import typings.phonegapPluginPush.anon.ApplicationServerKey
+import typings.phonegapPluginPush.anon.ClearBadge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,15 +14,15 @@ trait InitOptions extends js.Object {
   /**
   		 * Android specific initialization options.
   		 */
-  var android: js.UndefOr[AnonClearBadge] = js.undefined
+  var android: js.UndefOr[ClearBadge] = js.undefined
   /**
   		 * Browser specific initialization options.
   		 */
-  var browser: js.UndefOr[AnonApplicationServerKey] = js.undefined
+  var browser: js.UndefOr[ApplicationServerKey] = js.undefined
   /**
   		 * iOS specific initialization options.
   		 */
-  var ios: js.UndefOr[AnonAlert] = js.undefined
+  var ios: js.UndefOr[Alert] = js.undefined
   /**
   		 * Windows specific initialization options.
   		 */
@@ -32,9 +32,9 @@ trait InitOptions extends js.Object {
 object InitOptions {
   @scala.inline
   def apply(
-    android: AnonClearBadge = null,
-    browser: AnonApplicationServerKey = null,
-    ios: AnonAlert = null,
+    android: ClearBadge = null,
+    browser: ApplicationServerKey = null,
+    ios: Alert = null,
     windows: js.Object = null
   ): InitOptions = {
     val __obj = js.Dynamic.literal()

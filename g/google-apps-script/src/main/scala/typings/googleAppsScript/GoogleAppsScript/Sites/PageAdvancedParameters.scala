@@ -25,17 +25,17 @@ object PageAdvancedParameters {
   def apply(
     includeDeleted: js.UndefOr[Boolean] = js.undefined,
     includeDrafts: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
+    max: js.UndefOr[Integer] = js.undefined,
     search: String = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Integer] = js.undefined,
     `type`: js.Array[PageType] = null
   ): PageAdvancedParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeDeleted)) __obj.updateDynamic("includeDeleted")(includeDeleted.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDrafts)) __obj.updateDynamic("includeDrafts")(includeDrafts.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDeleted)) __obj.updateDynamic("includeDeleted")(includeDeleted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDrafts)) __obj.updateDynamic("includeDrafts")(includeDrafts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageAdvancedParameters]
   }

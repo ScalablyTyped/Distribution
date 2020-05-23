@@ -36,16 +36,16 @@ object UpdateDevicePoolRequest {
   @scala.inline
   def apply(
     arn: AmazonResourceName,
-    clearMaxDevices: js.UndefOr[scala.Boolean] = js.undefined,
+    clearMaxDevices: js.UndefOr[Boolean] = js.undefined,
     description: Message = null,
-    maxDevices: Int | scala.Double = null,
+    maxDevices: js.UndefOr[Integer] = js.undefined,
     name: Name = null,
     rules: Rules = null
   ): UpdateDevicePoolRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearMaxDevices)) __obj.updateDynamic("clearMaxDevices")(clearMaxDevices.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearMaxDevices)) __obj.updateDynamic("clearMaxDevices")(clearMaxDevices.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (maxDevices != null) __obj.updateDynamic("maxDevices")(maxDevices.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDevices)) __obj.updateDynamic("maxDevices")(maxDevices.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDevicePoolRequest]

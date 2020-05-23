@@ -177,7 +177,7 @@ object ToolComponent_ {
     if (globalMessageStrings != null) __obj.updateDynamic("globalMessageStrings")(globalMessageStrings.asInstanceOf[js.Any])
     if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
     if (informationUri != null) __obj.updateDynamic("informationUri")(informationUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(isComprehensive)) __obj.updateDynamic("isComprehensive")(isComprehensive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isComprehensive)) __obj.updateDynamic("isComprehensive")(isComprehensive.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (localizedDataSemanticVersion != null) __obj.updateDynamic("localizedDataSemanticVersion")(localizedDataSemanticVersion.asInstanceOf[js.Any])
     if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])

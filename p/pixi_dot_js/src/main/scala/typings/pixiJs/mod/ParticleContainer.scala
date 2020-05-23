@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonPosition
+import typings.pixiJs.anon.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,8 +37,8 @@ import scala.scalajs.js.annotation._
 class ParticleContainer ()
   extends typings.pixiJs.PIXI.ParticleContainer {
   def this(maxSize: Double) = this()
-  def this(maxSize: Double, properties: AnonPosition) = this()
-  def this(maxSize: Double, properties: AnonPosition, batchSize: Double) = this()
-  def this(maxSize: Double, properties: AnonPosition, batchSize: Double, autoResize: Boolean) = this()
+  def this(maxSize: Double, properties: Position) = this()
+  def this(maxSize: Double, properties: Position, batchSize: Double) = this()
+  def this(maxSize: Double, properties: Position, batchSize: Double, autoResize: Boolean) = this()
 }
 

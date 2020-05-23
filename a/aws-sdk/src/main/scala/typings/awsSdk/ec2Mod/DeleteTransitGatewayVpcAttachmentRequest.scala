@@ -18,12 +18,9 @@ trait DeleteTransitGatewayVpcAttachmentRequest extends js.Object {
 
 object DeleteTransitGatewayVpcAttachmentRequest {
   @scala.inline
-  def apply(
-    TransitGatewayAttachmentId: TransitGatewayAttachmentId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  ): DeleteTransitGatewayVpcAttachmentRequest = {
+  def apply(TransitGatewayAttachmentId: TransitGatewayAttachmentId, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteTransitGatewayVpcAttachmentRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTransitGatewayVpcAttachmentRequest]
   }
 }

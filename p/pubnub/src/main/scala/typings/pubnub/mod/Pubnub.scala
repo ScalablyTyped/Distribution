@@ -1,7 +1,7 @@
 package typings.pubnub.mod
 
-import typings.pubnub.Anon0
-import typings.pubnub.AnonDataMessageAction
+import typings.pubnub.anon.DataMessageAction
+import typings.pubnub.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +16,10 @@ trait Pubnub extends js.Object {
     params: MembersInputParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ GetMembersResponse, Unit]
   ): Unit = js.native
-  def addMessageAction(params: AddMessageActionParameters): js.Promise[AnonDataMessageAction] = js.native
+  def addMessageAction(params: AddMessageActionParameters): js.Promise[DataMessageAction] = js.native
   def addMessageAction(
     params: AddMessageActionParameters,
-    callback: js.Function2[/* status */ PubnubStatus, /* response */ AnonDataMessageAction, Unit]
+    callback: js.Function2[/* status */ PubnubStatus, /* response */ DataMessageAction, Unit]
   ): Unit = js.native
   def createSpace(params: SpaceInputParameters): js.Promise[GetSpaceResponse] = js.native
   def createSpace(
@@ -146,10 +146,10 @@ trait Pubnub extends js.Object {
     params: RemoveMembersParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ GetMembersResponse, Unit]
   ): Unit = js.native
-  def removeMessageAction(params: RemoveMessageActionParameters): js.Promise[Anon0] = js.native
+  def removeMessageAction(params: RemoveMessageActionParameters): js.Promise[`0`] = js.native
   def removeMessageAction(
     params: RemoveMessageActionParameters,
-    callback: js.Function2[/* status */ PubnubStatus, /* response */ Anon0, Unit]
+    callback: js.Function2[/* status */ PubnubStatus, /* response */ `0`, Unit]
   ): Unit = js.native
   def setAuthKey(authKey: String): Unit = js.native
   def setFilterExpression(filterExpression: String): Unit = js.native

@@ -1,8 +1,8 @@
 package typings.puppeteer.mod
 
-import typings.puppeteer.AnonDelay
-import typings.puppeteer.AnonDelayNumber
-import typings.puppeteer.AnonText
+import typings.puppeteer.anon.Delay
+import typings.puppeteer.anon.DelayNumber
+import typings.puppeteer.anon.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +15,10 @@ trait Keyboard extends js.Object {
     * @param options Specifies a input text event.
     */
   def down(key: String): js.Promise[Unit] = js.native
-  def down(key: String, options: AnonText): js.Promise[Unit] = js.native
+  def down(key: String, options: Text): js.Promise[Unit] = js.native
   /** Shortcut for `keyboard.down` and `keyboard.up`. */
   def press(key: String): js.Promise[Unit] = js.native
-  def press(key: String, options: AnonDelay): js.Promise[Unit] = js.native
+  def press(key: String, options: Delay): js.Promise[Unit] = js.native
   /** Dispatches a `keypress` and `input` event. This does not send a `keydown` or keyup `event`. */
   def sendCharacter(char: String): js.Promise[Unit] = js.native
   /**
@@ -27,7 +27,7 @@ trait Keyboard extends js.Object {
     * @param options Specifies the typing options.
     */
   def `type`(text: String): js.Promise[Unit] = js.native
-  def `type`(text: String, options: AnonDelayNumber): js.Promise[Unit] = js.native
+  def `type`(text: String, options: DelayNumber): js.Promise[Unit] = js.native
   /**
     * Dispatches a keyup event.
     * @param key Name of key to release, such as ArrowLeft.

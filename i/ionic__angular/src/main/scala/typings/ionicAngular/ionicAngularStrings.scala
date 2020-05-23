@@ -33,6 +33,9 @@ object ionicAngularStrings {
   sealed trait back extends js.Object
   
   @js.native
+  sealed trait backButtonDefaultHref extends js.Object
+  
+  @js.native
   sealed trait backButtonIcon extends js.Object
   
   @js.native
@@ -114,6 +117,9 @@ object ionicAngularStrings {
   sealed trait rippleEffect extends js.Object
   
   @js.native
+  sealed trait sanitizerEnabled extends js.Object
+  
+  @js.native
   sealed trait scrollAssist extends js.Object
   
   @js.native
@@ -155,6 +161,8 @@ object ionicAngularStrings {
   def animated: animated = "animated".asInstanceOf[animated]
   @scala.inline
   def back: back = "back".asInstanceOf[back]
+  @scala.inline
+  def backButtonDefaultHref: backButtonDefaultHref = "backButtonDefaultHref".asInstanceOf[backButtonDefaultHref]
   @scala.inline
   def backButtonIcon: backButtonIcon = "backButtonIcon".asInstanceOf[backButtonIcon]
   @scala.inline
@@ -209,6 +217,8 @@ object ionicAngularStrings {
   def refreshingSpinner: refreshingSpinner = "refreshingSpinner".asInstanceOf[refreshingSpinner]
   @scala.inline
   def rippleEffect: rippleEffect = "rippleEffect".asInstanceOf[rippleEffect]
+  @scala.inline
+  def sanitizerEnabled: sanitizerEnabled = "sanitizerEnabled".asInstanceOf[sanitizerEnabled]
   @scala.inline
   def scrollAssist: scrollAssist = "scrollAssist".asInstanceOf[scrollAssist]
   @scala.inline

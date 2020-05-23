@@ -1,6 +1,7 @@
 package typings.plottable
 
 import org.scalablytyped.runtime.TopLevel
+import typings.plottable.anon.ValueOf
 import typings.plottable.componentMod.Component
 import typings.plottable.interfacesMod.Bounds
 import typings.plottable.interfacesMod.SimpleSelection
@@ -32,8 +33,8 @@ object selectionBoxLayerMod extends js.Object {
     /* private */ def _getXExtent(): js.Any = js.native
     /* private */ def _getYExtent(): js.Any = js.native
     /* protected */ def _setBounds(newBounds: Bounds): Unit = js.native
-    /* protected */ def _setXExtent(xExtent: js.Array[Double | AnonValueOf]): Unit = js.native
-    /* protected */ def _setYExtent(yExtent: js.Array[Double | AnonValueOf]): Unit = js.native
+    /* protected */ def _setXExtent(xExtent: js.Array[Double | ValueOf]): Unit = js.native
+    /* protected */ def _setYExtent(yExtent: js.Array[Double | ValueOf]): Unit = js.native
     /**
       * Sets the Bounds of the box.
       *
@@ -57,41 +58,41 @@ object selectionBoxLayerMod extends js.Object {
       *
       * Returns an undefined array if the edges are not backed by a scale.
       */
-    def xExtent(): js.Array[Double | AnonValueOf] = js.native
+    def xExtent(): js.Array[Double | ValueOf] = js.native
     /**
       * Sets the data values backing the left and right edges of the box.
       */
-    def xExtent(xExtent: js.Array[Double | AnonValueOf]): this.type = js.native
+    def xExtent(xExtent: js.Array[Double | ValueOf]): this.type = js.native
     /**
       * Gets the x scale for this SelectionBoxLayer.
       */
-    def xScale(): QuantitativeScale[Double | AnonValueOf] = js.native
+    def xScale(): QuantitativeScale[Double | ValueOf] = js.native
     /**
       * Sets the x scale for this SelectionBoxLayer.
       *
       * @returns {SelectionBoxLayer} The calling SelectionBoxLayer.
       */
-    def xScale(xScale: QuantitativeScale[Double | AnonValueOf]): this.type = js.native
+    def xScale(xScale: QuantitativeScale[Double | ValueOf]): this.type = js.native
     /**
       * Gets the data values backing the top and bottom edges of the box.
       *
       * Returns an undefined array if the edges are not backed by a scale.
       */
-    def yExtent(): js.Array[Double | AnonValueOf] = js.native
+    def yExtent(): js.Array[Double | ValueOf] = js.native
     /**
       * Sets the data values backing the top and bottom edges of the box.
       */
-    def yExtent(yExtent: js.Array[Double | AnonValueOf]): this.type = js.native
+    def yExtent(yExtent: js.Array[Double | ValueOf]): this.type = js.native
     /**
       * Gets the y scale for this SelectionBoxLayer.
       */
-    def yScale(): QuantitativeScale[Double | AnonValueOf] = js.native
+    def yScale(): QuantitativeScale[Double | ValueOf] = js.native
     /**
       * Sets the y scale for this SelectionBoxLayer.
       *
       * @returns {SelectionBoxLayer} The calling SelectionBoxLayer.
       */
-    def yScale(yScale: QuantitativeScale[Double | AnonValueOf]): this.type = js.native
+    def yScale(yScale: QuantitativeScale[Double | ValueOf]): this.type = js.native
   }
   
   @js.native

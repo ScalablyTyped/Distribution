@@ -20,12 +20,12 @@ import scala.scalajs.js.annotation._
   */
 trait StructuredHeader extends _HeaderValue {
   /**
-  	 * Additional arguments.
-  	 */
+    * Additional arguments.
+    */
   var params: StringDictionary[String]
   /**
-  	 * The main value.
-  	 */
+    * The main value.
+    */
   var value: String
 }
 

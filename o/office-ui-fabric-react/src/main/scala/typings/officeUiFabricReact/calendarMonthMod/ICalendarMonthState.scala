@@ -13,7 +13,7 @@ object ICalendarMonthState {
   @scala.inline
   def apply(isYearPickerVisible: js.UndefOr[Boolean] = js.undefined): ICalendarMonthState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isYearPickerVisible)) __obj.updateDynamic("isYearPickerVisible")(isYearPickerVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isYearPickerVisible)) __obj.updateDynamic("isYearPickerVisible")(isYearPickerVisible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalendarMonthState]
   }
 }

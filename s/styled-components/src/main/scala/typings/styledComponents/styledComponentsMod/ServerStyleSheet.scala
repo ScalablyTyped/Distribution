@@ -2,7 +2,7 @@ package typings.styledComponents.styledComponentsMod
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.styledComponents.styledComponentsMod._Global_.NodeJS.ReadableStream
+import typings.styledComponents.styledComponentsMod.global.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

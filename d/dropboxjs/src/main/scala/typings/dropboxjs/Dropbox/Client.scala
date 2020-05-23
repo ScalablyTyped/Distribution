@@ -15,10 +15,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Dropbox.Client")
 @js.native
-class Client protected () extends js.Object {
-  def this(options: Credentials) = this()
+trait Client extends js.Object {
   var authStep: Double = js.native
   var onAuthStepChange: EventSource = js.native
   var onError: EventSource = js.native
@@ -194,18 +192,5 @@ class Client protected () extends js.Object {
   def unlink(path: String, callback: FileStatCallback): Unit = js.native
   def writeFile(path: String, data: js.Any, callback: ClientFileWriteCallback): XMLHttpRequest = js.native
   def writeFile(path: String, data: js.Any, options: ClientFileWriteOptions, callback: ClientFileWriteCallback): XMLHttpRequest = js.native
-}
-
-/* static members */
-@JSGlobal("Dropbox.Client")
-@js.native
-object Client extends js.Object {
-  var AUTHORIZED: Double = js.native
-  var DONE: Double = js.native
-  var ERROR: Double = js.native
-  var PARAM_LOADED: Double = js.native
-  var PARAM_SET: Double = js.native
-  var RESET: Double = js.native
-  var SIGNED_OUT: Double = js.native
 }
 

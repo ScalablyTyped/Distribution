@@ -18,10 +18,15 @@ trait Redirect extends ShopifyObject {
 
 object Redirect {
   @scala.inline
-  def apply(path: String, target: String, admin_graphql_api_id: String = null, id: Int | Double = null): Redirect = {
+  def apply(
+    path: String,
+    target: String,
+    admin_graphql_api_id: String = null,
+    id: js.UndefOr[Double] = js.undefined
+  ): Redirect = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Redirect]
   }
 }

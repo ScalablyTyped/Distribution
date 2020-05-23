@@ -1,5 +1,6 @@
 package typings.arrayPrototypeFlat
 
+import typings.arrayPrototypeFlat.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,11 +22,11 @@ object Options {
     validateEntrySizes: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyEntries)) __obj.updateDynamic("lazyEntries")(lazyEntries.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictFileNames)) __obj.updateDynamic("strictFileNames")(strictFileNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateEntrySizes)) __obj.updateDynamic("validateEntrySizes")(validateEntrySizes.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyEntries)) __obj.updateDynamic("lazyEntries")(lazyEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictFileNames)) __obj.updateDynamic("strictFileNames")(strictFileNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateEntrySizes)) __obj.updateDynamic("validateEntrySizes")(validateEntrySizes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

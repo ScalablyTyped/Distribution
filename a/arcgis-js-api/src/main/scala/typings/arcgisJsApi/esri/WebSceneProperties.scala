@@ -92,7 +92,7 @@ object WebSceneProperties {
     if (authoringAppVersion != null) __obj.updateDynamic("authoringAppVersion")(authoringAppVersion.asInstanceOf[js.Any])
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (clippingArea != null) __obj.updateDynamic("clippingArea")(clippingArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(clippingEnabled)) __obj.updateDynamic("clippingEnabled")(clippingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(clippingEnabled)) __obj.updateDynamic("clippingEnabled")(clippingEnabled.get.asInstanceOf[js.Any])
     if (ground != null) __obj.updateDynamic("ground")(ground.asInstanceOf[js.Any])
     if (heightModelInfo != null) __obj.updateDynamic("heightModelInfo")(heightModelInfo.asInstanceOf[js.Any])
     if (initialViewProperties != null) __obj.updateDynamic("initialViewProperties")(initialViewProperties.asInstanceOf[js.Any])

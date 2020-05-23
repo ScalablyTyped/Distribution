@@ -7,84 +7,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FilesInput")
-@js.native
-class FilesInput protected () extends js.Object {
-  /**
-    * Creates a new FilesInput
-    * @param engine defines the rendering engine
-    * @param scene defines the hosting scene
-    * @param sceneLoadedCallback callback called when scene is loaded
-    * @param progressCallback callback called to track progress
-    * @param additionalRenderLoopLogicCallback callback called to add user logic to the rendering loop
-    * @param textureLoadingCallback callback called when a texture is loading
-    * @param startingProcessingFilesCallback callback called when the system is about to process all files
-    * @param onReloadCallback callback called when a reload is requested
-    * @param errorCallback callback call if an error occurs
-    */
-  def this(
-    engine: Engine,
-    scene: Scene,
-    sceneLoadedCallback: js.Function2[/* sceneFile */ File, /* scene */ Scene, Unit],
-    progressCallback: js.Function1[/* progress */ SceneLoaderProgressEvent, Unit],
-    additionalRenderLoopLogicCallback: js.Function0[Unit],
-    textureLoadingCallback: js.Function1[/* remaining */ Double, Unit],
-    startingProcessingFilesCallback: js.Function1[/* files */ js.UndefOr[js.Array[File]], Unit],
-    onReloadCallback: js.Function1[/* sceneFile */ File, Unit],
-    errorCallback: js.Function3[/* sceneFile */ File, /* scene */ Scene, /* message */ String, Unit]
-  ) = this()
-  var _additionalRenderLoopLogicCallback: js.Any = js.native
-  var _currentScene: js.Any = js.native
-  var _dragEnterHandler: js.Any = js.native
-  var _dragOverHandler: js.Any = js.native
-  var _dropHandler: js.Any = js.native
-  var _elementToMonitor: js.Any = js.native
-  var _engine: js.Any = js.native
-  var _errorCallback: js.Any = js.native
-  var _filesToLoad: js.Any = js.native
-  var _onReloadCallback: js.Any = js.native
-  var _processFiles: js.Any = js.native
-  var _processReload: js.Any = js.native
-  var _progressCallback: js.Any = js.native
-  var _sceneFileToLoad: js.Any = js.native
-  var _sceneLoadedCallback: js.Any = js.native
-  var _startingProcessingFilesCallback: js.Any = js.native
-  var _textureLoadingCallback: js.Any = js.native
-  var _traverseFolder: js.Any = js.native
-  var drag: js.Any = js.native
-  var drop: js.Any = js.native
-  var renderFunction: js.Any = js.native
+trait FilesInput extends js.Object {
+  var _additionalRenderLoopLogicCallback: js.Any
+  var _currentScene: js.Any
+  var _dragEnterHandler: js.Any
+  var _dragOverHandler: js.Any
+  var _dropHandler: js.Any
+  var _elementToMonitor: js.Any
+  var _engine: js.Any
+  var _errorCallback: js.Any
+  var _filesToLoad: js.Any
+  var _onReloadCallback: js.Any
+  var _processFiles: js.Any
+  var _processReload: js.Any
+  var _progressCallback: js.Any
+  var _sceneFileToLoad: js.Any
+  var _sceneLoadedCallback: js.Any
+  var _startingProcessingFilesCallback: js.Any
+  var _textureLoadingCallback: js.Any
+  var _traverseFolder: js.Any
+  var drag: js.Any
+  var drop: js.Any
+  var renderFunction: js.Any
   /**
     * Release all associated resources
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   /**
     * Load files from a drop event
     * @param event defines the drop event to use as source
     */
-  def loadFiles(event: js.Any): Unit = js.native
+  def loadFiles(event: js.Any): Unit
   /**
     * Calls this function to listen to drag'n'drop events on a specific DOM element
     * @param elementToMonitor defines the DOM element to track
     */
-  def monitorElementForDragNDrop(elementToMonitor: HTMLElement): Unit = js.native
+  def monitorElementForDragNDrop(elementToMonitor: HTMLElement): Unit
   /**
     * Callback called when a file is processed
     */
-  def onProcessFileCallback(file: File, name: String, extension: String): `true` = js.native
+  def onProcessFileCallback(file: File, name: String, extension: String): `true`
   /**
     * Reload the current scene from the loaded files
     */
-  def reload(): Unit = js.native
+  def reload(): Unit
 }
 
-/* static members */
-@JSGlobal("BABYLON.FilesInput")
-@js.native
-object FilesInput extends js.Object {
-  /**
-    * List of files ready to be loaded
-    */
-  def FilesToLoad: org.scalablytyped.runtime.StringDictionary[File] = js.native
+object FilesInput {
+  @scala.inline
+  def apply(
+    _additionalRenderLoopLogicCallback: js.Any,
+    _currentScene: js.Any,
+    _dragEnterHandler: js.Any,
+    _dragOverHandler: js.Any,
+    _dropHandler: js.Any,
+    _elementToMonitor: js.Any,
+    _engine: js.Any,
+    _errorCallback: js.Any,
+    _filesToLoad: js.Any,
+    _onReloadCallback: js.Any,
+    _processFiles: js.Any,
+    _processReload: js.Any,
+    _progressCallback: js.Any,
+    _sceneFileToLoad: js.Any,
+    _sceneLoadedCallback: js.Any,
+    _startingProcessingFilesCallback: js.Any,
+    _textureLoadingCallback: js.Any,
+    _traverseFolder: js.Any,
+    dispose: () => Unit,
+    drag: js.Any,
+    drop: js.Any,
+    loadFiles: js.Any => Unit,
+    monitorElementForDragNDrop: HTMLElement => Unit,
+    onProcessFileCallback: (File, String, String) => `true`,
+    reload: () => Unit,
+    renderFunction: js.Any
+  ): FilesInput = {
+    val __obj = js.Dynamic.literal(_additionalRenderLoopLogicCallback = _additionalRenderLoopLogicCallback.asInstanceOf[js.Any], _currentScene = _currentScene.asInstanceOf[js.Any], _dragEnterHandler = _dragEnterHandler.asInstanceOf[js.Any], _dragOverHandler = _dragOverHandler.asInstanceOf[js.Any], _dropHandler = _dropHandler.asInstanceOf[js.Any], _elementToMonitor = _elementToMonitor.asInstanceOf[js.Any], _engine = _engine.asInstanceOf[js.Any], _errorCallback = _errorCallback.asInstanceOf[js.Any], _filesToLoad = _filesToLoad.asInstanceOf[js.Any], _onReloadCallback = _onReloadCallback.asInstanceOf[js.Any], _processFiles = _processFiles.asInstanceOf[js.Any], _processReload = _processReload.asInstanceOf[js.Any], _progressCallback = _progressCallback.asInstanceOf[js.Any], _sceneFileToLoad = _sceneFileToLoad.asInstanceOf[js.Any], _sceneLoadedCallback = _sceneLoadedCallback.asInstanceOf[js.Any], _startingProcessingFilesCallback = _startingProcessingFilesCallback.asInstanceOf[js.Any], _textureLoadingCallback = _textureLoadingCallback.asInstanceOf[js.Any], _traverseFolder = _traverseFolder.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), drag = drag.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], loadFiles = js.Any.fromFunction1(loadFiles), monitorElementForDragNDrop = js.Any.fromFunction1(monitorElementForDragNDrop), onProcessFileCallback = js.Any.fromFunction3(onProcessFileCallback), reload = js.Any.fromFunction0(reload), renderFunction = renderFunction.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FilesInput]
+  }
 }
 

@@ -12,9 +12,9 @@ trait IRbmSuggestedActionOpenUri extends js.Object {
 
 object IRbmSuggestedActionOpenUri {
   @scala.inline
-  def apply(uri: String = null): IRbmSuggestedActionOpenUri = {
+  def apply(uri: js.UndefOr[Null | String] = js.undefined): IRbmSuggestedActionOpenUri = {
     val __obj = js.Dynamic.literal()
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    if (!js.isUndefined(uri)) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmSuggestedActionOpenUri]
   }
 }

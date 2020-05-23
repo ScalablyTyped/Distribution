@@ -1,7 +1,7 @@
 package typings.cassandraDriver.mappingMod.mapping
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cassandraDriver.AnonFields
+import typings.cassandraDriver.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +19,9 @@ trait ModelMapper[T] extends js.Object {
   def findAll(docInfo: FindDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
   def findAll(docInfo: FindDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
   def get(doc: StringDictionary[js.Any]): js.Promise[Null | T] = js.native
-  def get(doc: StringDictionary[js.Any], docInfo: AnonFields): js.Promise[Null | T] = js.native
-  def get(doc: StringDictionary[js.Any], docInfo: AnonFields, executionOptions: String): js.Promise[Null | T] = js.native
-  def get(doc: StringDictionary[js.Any], docInfo: AnonFields, executionOptions: MappingExecutionOptions): js.Promise[Null | T] = js.native
+  def get(doc: StringDictionary[js.Any], docInfo: Fields): js.Promise[Null | T] = js.native
+  def get(doc: StringDictionary[js.Any], docInfo: Fields, executionOptions: String): js.Promise[Null | T] = js.native
+  def get(doc: StringDictionary[js.Any], docInfo: Fields, executionOptions: MappingExecutionOptions): js.Promise[Null | T] = js.native
   def insert(doc: StringDictionary[js.Any]): js.Promise[Result[T]] = js.native
   def insert(doc: StringDictionary[js.Any], docInfo: InsertDocInfo): js.Promise[Result[T]] = js.native
   def insert(doc: StringDictionary[js.Any], docInfo: InsertDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native

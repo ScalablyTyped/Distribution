@@ -35,7 +35,7 @@ object SectionDescriptor {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement.asInstanceOf[js.Any])
     if (footerLinkText != null) __obj.updateDynamic("footerLinkText")(footerLinkText.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.get.asInstanceOf[js.Any])
     if (onDropdownClick != null) __obj.updateDynamic("onDropdownClick")(js.Any.fromFunction1(onDropdownClick))
     if (onFooterLinkClick != null) __obj.updateDynamic("onFooterLinkClick")(js.Any.fromFunction1(onFooterLinkClick))
     if (onTitleLinkClick != null) __obj.updateDynamic("onTitleLinkClick")(js.Any.fromFunction0(onTitleLinkClick))

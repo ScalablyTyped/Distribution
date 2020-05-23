@@ -29,10 +29,10 @@ trait SodaCollectionOptions extends js.Object {
 
 object SodaCollectionOptions {
   @scala.inline
-  def apply(metaData: SodaMetadata = null, mode: Int | Double = null): SodaCollectionOptions = {
+  def apply(metaData: SodaMetadata = null, mode: js.UndefOr[Double] = js.undefined): SodaCollectionOptions = {
     val __obj = js.Dynamic.literal()
     if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaCollectionOptions]
   }
 }

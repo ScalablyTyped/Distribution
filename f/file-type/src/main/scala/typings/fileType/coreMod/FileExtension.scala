@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.raf
   - typings.fileType.fileTypeStrings.tif
   - typings.fileType.fileTypeStrings.bmp
+  - typings.fileType.fileTypeStrings.icns
   - typings.fileType.fileTypeStrings.jxr
   - typings.fileType.fileTypeStrings.psd
   - typings.fileType.fileTypeStrings.zip
@@ -130,6 +131,10 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.s3m
   - typings.fileType.fileTypeStrings.xm
   - typings.fileType.fileTypeStrings.ai
+  - typings.fileType.fileTypeStrings.skp
+  - typings.fileType.fileTypeStrings.avif
+  - typings.fileType.fileTypeStrings.eps
+  - typings.fileType.fileTypeStrings.lzh
 */
 trait FileExtension extends js.Object
 
@@ -169,6 +174,8 @@ object FileExtension {
   @scala.inline
   def avi: typings.fileType.fileTypeStrings.avi = "avi".asInstanceOf[typings.fileType.fileTypeStrings.avi]
   @scala.inline
+  def avif: typings.fileType.fileTypeStrings.avif = "avif".asInstanceOf[typings.fileType.fileTypeStrings.avif]
+  @scala.inline
   def blend: typings.fileType.fileTypeStrings.blend = "blend".asInstanceOf[typings.fileType.fileTypeStrings.blend]
   @scala.inline
   def bmp: typings.fileType.fileTypeStrings.bmp = "bmp".asInstanceOf[typings.fileType.fileTypeStrings.bmp]
@@ -201,6 +208,8 @@ object FileExtension {
   @scala.inline
   def eot: typings.fileType.fileTypeStrings.eot = "eot".asInstanceOf[typings.fileType.fileTypeStrings.eot]
   @scala.inline
+  def eps: typings.fileType.fileTypeStrings.eps = "eps".asInstanceOf[typings.fileType.fileTypeStrings.eps]
+  @scala.inline
   def epub: typings.fileType.fileTypeStrings.epub = "epub".asInstanceOf[typings.fileType.fileTypeStrings.epub]
   @scala.inline
   def exe: typings.fileType.fileTypeStrings.exe = "exe".asInstanceOf[typings.fileType.fileTypeStrings.exe]
@@ -227,6 +236,8 @@ object FileExtension {
   @scala.inline
   def heic: typings.fileType.fileTypeStrings.heic = "heic".asInstanceOf[typings.fileType.fileTypeStrings.heic]
   @scala.inline
+  def icns: typings.fileType.fileTypeStrings.icns = "icns".asInstanceOf[typings.fileType.fileTypeStrings.icns]
+  @scala.inline
   def ico: typings.fileType.fileTypeStrings.ico = "ico".asInstanceOf[typings.fileType.fileTypeStrings.ico]
   @scala.inline
   def ics: typings.fileType.fileTypeStrings.ics = "ics".asInstanceOf[typings.fileType.fileTypeStrings.ics]
@@ -248,6 +259,8 @@ object FileExtension {
   def lnk: typings.fileType.fileTypeStrings.lnk = "lnk".asInstanceOf[typings.fileType.fileTypeStrings.lnk]
   @scala.inline
   def lz: typings.fileType.fileTypeStrings.lz = "lz".asInstanceOf[typings.fileType.fileTypeStrings.lz]
+  @scala.inline
+  def lzh: typings.fileType.fileTypeStrings.lzh = "lzh".asInstanceOf[typings.fileType.fileTypeStrings.lzh]
   @scala.inline
   def m4a: typings.fileType.fileTypeStrings.m4a = "m4a".asInstanceOf[typings.fileType.fileTypeStrings.m4a]
   @scala.inline
@@ -340,6 +353,8 @@ object FileExtension {
   def s3m: typings.fileType.fileTypeStrings.s3m = "s3m".asInstanceOf[typings.fileType.fileTypeStrings.s3m]
   @scala.inline
   def shp: typings.fileType.fileTypeStrings.shp = "shp".asInstanceOf[typings.fileType.fileTypeStrings.shp]
+  @scala.inline
+  def skp: typings.fileType.fileTypeStrings.skp = "skp".asInstanceOf[typings.fileType.fileTypeStrings.skp]
   @scala.inline
   def spx: typings.fileType.fileTypeStrings.spx = "spx".asInstanceOf[typings.fileType.fileTypeStrings.spx]
   @scala.inline

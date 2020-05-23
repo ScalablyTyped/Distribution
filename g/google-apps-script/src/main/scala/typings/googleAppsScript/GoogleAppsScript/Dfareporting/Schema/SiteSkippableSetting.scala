@@ -23,7 +23,7 @@ object SiteSkippableSetting {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (progressOffset != null) __obj.updateDynamic("progressOffset")(progressOffset.asInstanceOf[js.Any])
     if (skipOffset != null) __obj.updateDynamic("skipOffset")(skipOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(skippable)) __obj.updateDynamic("skippable")(skippable.asInstanceOf[js.Any])
+    if (!js.isUndefined(skippable)) __obj.updateDynamic("skippable")(skippable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteSkippableSetting]
   }
 }

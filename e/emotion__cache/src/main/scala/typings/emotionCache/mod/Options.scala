@@ -31,7 +31,7 @@ object Options {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy.asInstanceOf[js.Any])
+    if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy.get.asInstanceOf[js.Any])
     if (stylisPlugins != null) __obj.updateDynamic("stylisPlugins")(stylisPlugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

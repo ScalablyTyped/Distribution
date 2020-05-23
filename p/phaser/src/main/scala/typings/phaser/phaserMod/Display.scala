@@ -45,6 +45,26 @@ object Display extends js.Object {
     def this(key: String, fragmentSrc: String) = this()
     def this(key: String, fragmentSrc: String, vertexSrc: String) = this()
     def this(key: String, fragmentSrc: String, vertexSrc: String, uniforms: js.Any) = this()
+    /**
+      * The source code, as a string, of the fragment shader being used.
+      */
+    /* CompleteClass */
+    override var fragmentSrc: String = js.native
+    /**
+      * The key of this shader, unique within the shader cache of this Phaser game instance.
+      */
+    /* CompleteClass */
+    override var key: String = js.native
+    /**
+      * The default uniforms for this shader.
+      */
+    /* CompleteClass */
+    override var uniforms: js.Any = js.native
+    /**
+      * The source code, as a string, of the vertex shader being used.
+      */
+    /* CompleteClass */
+    override var vertexSrc: String = js.native
   }
   
   /**

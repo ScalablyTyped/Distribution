@@ -11,15 +11,20 @@ trait FetcherOptions extends js.Object {
   var path: js.UndefOr[String] = js.undefined
   /** Possible values are: `mac`, `win32`, `win64`, `linux`. Defaults to the current platform. */
   var platform: js.UndefOr[Platform] = js.undefined
+  /**
+    * @default 'chrome'
+    */
+  var product: js.UndefOr[Product] = js.undefined
 }
 
 object FetcherOptions {
   @scala.inline
-  def apply(host: String = null, path: String = null, platform: Platform = null): FetcherOptions = {
+  def apply(host: String = null, path: String = null, platform: Platform = null, product: Product = null): FetcherOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetcherOptions]
   }
 }

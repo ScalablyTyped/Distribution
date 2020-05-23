@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteThreatIntelSetRequest extends js.Object {
   /**
-    * The unique ID of the detector the threatIntelSet is associated with.
+    * The unique ID of the detector that the threatIntelSet is associated with.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**
-    * The unique ID of the threatIntelSet you want to delete.
+    * The unique ID of the threatIntelSet that you want to delete.
     */
   var ThreatIntelSetId: String = js.native
 }

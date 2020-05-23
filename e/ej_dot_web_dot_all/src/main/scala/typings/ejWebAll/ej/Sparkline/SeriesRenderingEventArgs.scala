@@ -40,7 +40,7 @@ object SeriesRenderingEventArgs {
     `type`: String = null
   ): SeriesRenderingEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (maxX != null) __obj.updateDynamic("maxX")(maxX.asInstanceOf[js.Any])
     if (maxY != null) __obj.updateDynamic("maxY")(maxY.asInstanceOf[js.Any])
     if (minX != null) __obj.updateDynamic("minX")(minX.asInstanceOf[js.Any])

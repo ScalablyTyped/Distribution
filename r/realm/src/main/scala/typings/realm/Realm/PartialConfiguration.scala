@@ -1,6 +1,6 @@
 package typings.realm.Realm
 
-import typings.realm.PartialSyncConfiguration
+import typings.realm.anon.PartialSyncConfiguration
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.Int8Array
@@ -40,21 +40,21 @@ object PartialConfiguration {
     path: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     schema: js.Array[ObjectClass | ObjectSchema] = null,
-    schemaVersion: Int | Double = null,
+    schemaVersion: js.UndefOr[Double] = js.undefined,
     shouldCompactOnLaunch: (/* totalBytes */ Double, /* usedBytes */ Double) => Boolean = null,
     sync: PartialSyncConfiguration = null
   ): PartialConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteRealmIfMigrationNeeded)) __obj.updateDynamic("deleteRealmIfMigrationNeeded")(deleteRealmIfMigrationNeeded.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFormatUpgrade)) __obj.updateDynamic("disableFormatUpgrade")(disableFormatUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteRealmIfMigrationNeeded)) __obj.updateDynamic("deleteRealmIfMigrationNeeded")(deleteRealmIfMigrationNeeded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFormatUpgrade)) __obj.updateDynamic("disableFormatUpgrade")(disableFormatUpgrade.get.asInstanceOf[js.Any])
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     if (fifoFilesFallbackPath != null) __obj.updateDynamic("fifoFilesFallbackPath")(fifoFilesFallbackPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(inMemory)) __obj.updateDynamic("inMemory")(inMemory.asInstanceOf[js.Any])
+    if (!js.isUndefined(inMemory)) __obj.updateDynamic("inMemory")(inMemory.get.asInstanceOf[js.Any])
     if (migration != null) __obj.updateDynamic("migration")(js.Any.fromFunction2(migration))
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (schemaVersion != null) __obj.updateDynamic("schemaVersion")(schemaVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(schemaVersion)) __obj.updateDynamic("schemaVersion")(schemaVersion.get.asInstanceOf[js.Any])
     if (shouldCompactOnLaunch != null) __obj.updateDynamic("shouldCompactOnLaunch")(js.Any.fromFunction2(shouldCompactOnLaunch))
     if (sync != null) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialConfiguration]

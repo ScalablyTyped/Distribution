@@ -38,7 +38,7 @@ trait PageInstanceBaseProps[D /* <: IAnyObject */] extends js.Object {
 
 object PageInstanceBaseProps {
   @scala.inline
-  def apply[D /* <: IAnyObject */](
+  def apply[D](
     data: D = null,
     route: String = null,
     setData: (/* data */ D | (Pick[D, /* keyof D */ String]) | IAnyObject, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit = null

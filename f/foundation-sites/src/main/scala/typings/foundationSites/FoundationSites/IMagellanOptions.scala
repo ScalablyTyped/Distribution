@@ -17,19 +17,19 @@ object IMagellanOptions {
   @scala.inline
   def apply(
     activeClass: String = null,
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationEasing: String = null,
-    barOffset: Int | Double = null,
+    barOffset: js.UndefOr[Double] = js.undefined,
     deepLinking: js.UndefOr[Boolean] = js.undefined,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): IMagellanOptions = {
     val __obj = js.Dynamic.literal()
     if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (barOffset != null) __obj.updateDynamic("barOffset")(barOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(deepLinking)) __obj.updateDynamic("deepLinking")(deepLinking.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(barOffset)) __obj.updateDynamic("barOffset")(barOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deepLinking)) __obj.updateDynamic("deepLinking")(deepLinking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMagellanOptions]
   }
 }

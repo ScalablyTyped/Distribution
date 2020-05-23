@@ -17,10 +17,10 @@ trait ReminderSettings extends js.Object {
 
 object ReminderSettings {
   @scala.inline
-  def apply(alertBefore: Int | Double = null, enable: js.UndefOr[Boolean] = js.undefined): ReminderSettings = {
+  def apply(alertBefore: js.UndefOr[Double] = js.undefined, enable: js.UndefOr[Boolean] = js.undefined): ReminderSettings = {
     val __obj = js.Dynamic.literal()
-    if (alertBefore != null) __obj.updateDynamic("alertBefore")(alertBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(alertBefore)) __obj.updateDynamic("alertBefore")(alertBefore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReminderSettings]
   }
 }

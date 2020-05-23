@@ -31,17 +31,17 @@ object ComposableMapProps {
   @scala.inline
   def apply(
     SVGAttributes: SVGAttributes[SVGSVGElement] = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     projection: String | ProjectionFunction = null,
     projectionConfig: ProjectionConfig = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ComposableMapProps = {
     val __obj = js.Dynamic.literal()
     if (SVGAttributes != null) js.Dynamic.global.Object.assign(__obj, SVGAttributes)
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (projectionConfig != null) __obj.updateDynamic("projectionConfig")(projectionConfig.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposableMapProps]
   }
 }

@@ -72,11 +72,11 @@ object ParseTemplateOptions {
     range: LexerRange = null
   ): ParseTemplateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableI18nLegacyMessageIdFormat)) __obj.updateDynamic("enableI18nLegacyMessageIdFormat")(enableI18nLegacyMessageIdFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapedString)) __obj.updateDynamic("escapedString")(escapedString.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableI18nLegacyMessageIdFormat)) __obj.updateDynamic("enableI18nLegacyMessageIdFormat")(enableI18nLegacyMessageIdFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapedString)) __obj.updateDynamic("escapedString")(escapedString.get.asInstanceOf[js.Any])
     if (interpolationConfig != null) __obj.updateDynamic("interpolationConfig")(interpolationConfig.asInstanceOf[js.Any])
     if (leadingTriviaChars != null) __obj.updateDynamic("leadingTriviaChars")(leadingTriviaChars.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseTemplateOptions]
   }

@@ -1,6 +1,6 @@
 package typings.argparse.mod
 
-import typings.argparse.Anon0
+import typings.argparse.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object SubArgumentParserOptions {
     debug: js.UndefOr[Boolean] = js.undefined,
     description: String = null,
     epilog: String = null,
-    formatterClass: Anon0 = null,
+    formatterClass: `0` = null,
     help: String = null,
     parents: js.Array[ArgumentParser] = null,
     prefixChars: String = null,
@@ -28,10 +28,10 @@ object SubArgumentParserOptions {
     version: String = null
   ): SubArgumentParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addHelp)) __obj.updateDynamic("addHelp")(addHelp.asInstanceOf[js.Any])
+    if (!js.isUndefined(addHelp)) __obj.updateDynamic("addHelp")(addHelp.get.asInstanceOf[js.Any])
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (argumentDefault != null) __obj.updateDynamic("argumentDefault")(argumentDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (epilog != null) __obj.updateDynamic("epilog")(epilog.asInstanceOf[js.Any])
     if (formatterClass != null) __obj.updateDynamic("formatterClass")(formatterClass.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,8 +71,4 @@ trait decorators extends js.Object {
   def subclass(): js.Function = js.native
   def subclass(declaredClass: String): js.Function = js.native
 }
-
-@JSGlobal("__esri.decorators")
-@js.native
-object decorators extends TopLevel[decorators]
 

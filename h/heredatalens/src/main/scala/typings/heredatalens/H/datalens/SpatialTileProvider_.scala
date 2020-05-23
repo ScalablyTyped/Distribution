@@ -1,6 +1,5 @@
 package typings.heredatalens.H.datalens
 
-import typings.heredatalens.H.datalens.SpatialTileProvider.Options
 import typings.heremaps.H.map.provider.RemoteTileProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,15 +10,8 @@ import scala.scalajs.js.annotation._
   * This provider defines the interface for accessing shape layers via the Data Lens REST API. The input data is provided as vector tiles in the MapBox format (Protobuf).
   * Data is loaded by tiles.
   */
-@JSGlobal("H.datalens.SpatialTileProvider")
 @js.native
-class SpatialTileProvider_ protected () extends RemoteTileProvider {
-  /**
-    * Constructor
-    * @param service - Data Lens REST API service
-    * @param options - Configures layer name
-    */
-  def this(service: Service, options: Options) = this()
+trait SpatialTileProvider_ extends RemoteTileProvider {
   /**
     * Updates the layer name to be used in the next call of the Data Lens REST API. Note that new data will be fetched only after the reload method is called.
     */

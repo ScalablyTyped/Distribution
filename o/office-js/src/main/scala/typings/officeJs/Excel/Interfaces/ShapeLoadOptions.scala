@@ -19,21 +19,21 @@ trait ShapeLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns or sets the alternative description text for a Shape object.
+    * Specifies the alternative description text for a Shape object.
     *
     * [Api set: ExcelApi 1.9]
     */
   var altTextDescription: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns or sets the alternative title text for a Shape object.
+    * Specifies the alternative title text for a Shape object.
     *
     * [Api set: ExcelApi 1.9]
     */
   var altTextTitle: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the number of connection sites on this shape. Read-only.
+    * Returns the number of connection sites on this shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -54,7 +54,7 @@ trait ShapeLoadOptions extends js.Object {
   var geometricShape: js.UndefOr[GeometricShapeLoadOptions] = js.undefined
   /**
     *
-    * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
+    * Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -68,7 +68,7 @@ trait ShapeLoadOptions extends js.Object {
   var group: js.UndefOr[ShapeGroupLoadOptions] = js.undefined
   /**
     *
-    * Represents the height, in points, of the shape.
+    * Specifies the height, in points, of the shape.
     Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi 1.9]
@@ -76,7 +76,7 @@ trait ShapeLoadOptions extends js.Object {
   var height: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the shape identifier. Read-only.
+    * Specifies the shape identifier.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -98,7 +98,7 @@ trait ShapeLoadOptions extends js.Object {
   var left: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
+    * Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -119,21 +119,21 @@ trait ShapeLoadOptions extends js.Object {
   var lineFormat: js.UndefOr[ShapeLineFormatLoadOptions] = js.undefined
   /**
     *
-    * Specifies whether or not the aspect ratio of this shape is locked.
+    * Specifies if the aspect ratio of this shape is locked.
     *
     * [Api set: ExcelApi 1.9]
     */
   var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the name of the shape.
+    * Specifies the name of the shape.
     *
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the parent group of this shape.
+    * Specifies the parent group of this shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -147,7 +147,7 @@ trait ShapeLoadOptions extends js.Object {
   var placement: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the rotation, in degrees, of the shape.
+    * Specifies the rotation, in degrees, of the shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -169,21 +169,21 @@ trait ShapeLoadOptions extends js.Object {
   var top: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+    * Returns the type of this shape. See Excel.ShapeType for details.
     *
     * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the visibility of this shape.
+    * Specifies if the shape is visible.
     *
     * [Api set: ExcelApi 1.9]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the width, in points, of the shape.
+    * Specifies the width, in points, of the shape.
     Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi 1.9]
@@ -191,7 +191,7 @@ trait ShapeLoadOptions extends js.Object {
   var width: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
+    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -229,32 +229,32 @@ object ShapeLoadOptions {
     zOrderPosition: js.UndefOr[Boolean] = js.undefined
   ): ShapeLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(altTextDescription)) __obj.updateDynamic("altTextDescription")(altTextDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(altTextTitle)) __obj.updateDynamic("altTextTitle")(altTextTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectionSiteCount)) __obj.updateDynamic("connectionSiteCount")(connectionSiteCount.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(altTextDescription)) __obj.updateDynamic("altTextDescription")(altTextDescription.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(altTextTitle)) __obj.updateDynamic("altTextTitle")(altTextTitle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionSiteCount)) __obj.updateDynamic("connectionSiteCount")(connectionSiteCount.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (geometricShape != null) __obj.updateDynamic("geometricShape")(geometricShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(geometricShapeType)) __obj.updateDynamic("geometricShapeType")(geometricShapeType.asInstanceOf[js.Any])
+    if (!js.isUndefined(geometricShapeType)) __obj.updateDynamic("geometricShapeType")(geometricShapeType.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (lineFormat != null) __obj.updateDynamic("lineFormat")(lineFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
     if (parentGroup != null) __obj.updateDynamic("parentGroup")(parentGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(placement)) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(placement)) __obj.updateDynamic("placement")(placement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (textFrame != null) __obj.updateDynamic("textFrame")(textFrame.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(zOrderPosition)) __obj.updateDynamic("zOrderPosition")(zOrderPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zOrderPosition)) __obj.updateDynamic("zOrderPosition")(zOrderPosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeLoadOptions]
   }
 }

@@ -59,7 +59,7 @@ trait DescribeBackupJobOutput extends js.Object {
     */
   var ResourceArn: js.UndefOr[ARN] = js.native
   /**
-    * The type of AWS resource to be backed-up; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
+    * The type of AWS resource to be backed up; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.native
   /**
@@ -80,10 +80,10 @@ object DescribeBackupJobOutput {
   @scala.inline
   def apply(
     BackupJobId: String = null,
-    BackupSizeInBytes: Int | Double = null,
+    BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
     BackupVaultArn: ARN = null,
     BackupVaultName: BackupVaultName = null,
-    BytesTransferred: Int | Double = null,
+    BytesTransferred: js.UndefOr[Long_] = js.undefined,
     CompletionDate: timestamp = null,
     CreatedBy: RecoveryPointCreator = null,
     CreationDate: timestamp = null,
@@ -99,10 +99,10 @@ object DescribeBackupJobOutput {
   ): DescribeBackupJobOutput = {
     val __obj = js.Dynamic.literal()
     if (BackupJobId != null) __obj.updateDynamic("BackupJobId")(BackupJobId.asInstanceOf[js.Any])
-    if (BackupSizeInBytes != null) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
     if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn.asInstanceOf[js.Any])
     if (BackupVaultName != null) __obj.updateDynamic("BackupVaultName")(BackupVaultName.asInstanceOf[js.Any])
-    if (BytesTransferred != null) __obj.updateDynamic("BytesTransferred")(BytesTransferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(BytesTransferred)) __obj.updateDynamic("BytesTransferred")(BytesTransferred.get.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
     if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])

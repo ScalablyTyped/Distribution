@@ -30,8 +30,8 @@ object ParsedNumber {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any])
     if (countryCallingCode != null) __obj.updateDynamic("countryCallingCode")(countryCallingCode.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (!js.isUndefined(possible)) __obj.updateDynamic("possible")(possible.asInstanceOf[js.Any])
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (!js.isUndefined(possible)) __obj.updateDynamic("possible")(possible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedNumber]
   }
 }

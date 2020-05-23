@@ -1,6 +1,5 @@
 package typings.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object SelectionMode extends js.Object {
   
   @js.native
   sealed trait start extends SelectionMode
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SelectionMode with String] = js.native
-  /* "End" */ @js.native
-  object end extends TopLevel[end with String]
-  
-  /* "Select" */ @js.native
-  object select extends TopLevel[select with String]
-  
-  /* "Start" */ @js.native
-  object start extends TopLevel[start with String]
   
 }
 

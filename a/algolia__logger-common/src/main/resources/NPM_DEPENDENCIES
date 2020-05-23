@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/logger-common" : "4.1.0"
+      "@algolia/logger-common" : "4.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/logger-common" : "4.1.0"
+      "@algolia/logger-common" : "4.2.0"
     }
   ],
   "compile-devDependencies" : [

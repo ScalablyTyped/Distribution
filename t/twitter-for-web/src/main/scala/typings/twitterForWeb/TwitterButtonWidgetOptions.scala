@@ -52,7 +52,7 @@ object TwitterButtonWidgetOptions {
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (counturl != null) __obj.updateDynamic("counturl")(counturl.asInstanceOf[js.Any])
-    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.asInstanceOf[js.Any])
+    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.get.asInstanceOf[js.Any])
     if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (related != null) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])

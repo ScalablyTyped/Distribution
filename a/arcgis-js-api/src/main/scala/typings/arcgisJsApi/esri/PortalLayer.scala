@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,11 @@ trait PortalLayer extends js.Object {
   var portalItem: PortalItem
 }
 
-@JSGlobal("__esri.PortalLayer")
-@js.native
-object PortalLayer extends TopLevel[PortalLayerConstructor]
+object PortalLayer {
+  @scala.inline
+  def apply(portalItem: PortalItem): PortalLayer = {
+    val __obj = js.Dynamic.literal(portalItem = portalItem.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PortalLayer]
+  }
+}
 

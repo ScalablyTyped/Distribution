@@ -47,8 +47,8 @@ object EditSettings {
     formPosition: FormPosition | String = null
   ): EditSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAdding)) __obj.updateDynamic("allowAdding")(allowAdding.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAdding)) __obj.updateDynamic("allowAdding")(allowAdding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.get.asInstanceOf[js.Any])
     if (dialogTemplate != null) __obj.updateDynamic("dialogTemplate")(dialogTemplate.asInstanceOf[js.Any])
     if (editItems != null) __obj.updateDynamic("editItems")(editItems.asInstanceOf[js.Any])
     if (editMode != null) __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])

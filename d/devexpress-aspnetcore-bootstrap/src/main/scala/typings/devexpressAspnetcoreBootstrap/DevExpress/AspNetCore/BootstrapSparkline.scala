@@ -13,9 +13,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapSparkline")
 @js.native
-class BootstrapSparkline () extends Control {
+trait BootstrapSparkline extends Control {
   def exportTo(fileName: String, format: String): Unit = js.native
   def getDataSource(): js.Any = js.native
   def getInstance(): js.Any = js.native

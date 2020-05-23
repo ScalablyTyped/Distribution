@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.WorksheetCollection")
 @js.native
-class WorksheetCollection () extends ClientObject {
+trait WorksheetCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_WorksheetCollection: RequestContext = js.native
@@ -97,6 +96,15 @@ class WorksheetCollection () extends ClientObject {
     * @eventproperty
     */
   val onFormatChanged: EventHandlers[WorksheetFormatChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
+    *
+    * [Api set: ExcelApi 1.11]
+    *
+    * @eventproperty
+    */
+  val onRowHiddenChanged: EventHandlers[WorksheetRowHiddenChangedEventArgs] = js.native
   /**
     *
     * Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.

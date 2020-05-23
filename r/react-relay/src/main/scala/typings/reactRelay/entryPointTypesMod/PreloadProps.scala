@@ -22,7 +22,7 @@ trait PreloadProps[TPreloadParams, TPreloadedQueries /* <: js.Object */, TPreloa
 
 object PreloadProps {
   @scala.inline
-  def apply[TPreloadParams, TPreloadedQueries /* <: js.Object */, TPreloadedEntryPoints /* <: js.Object */, TExtraProps, TEnvironmentProviderOptions](
+  def apply[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps, TEnvironmentProviderOptions](
     entryPoints: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in keyof TPreloadedEntryPoints ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ExtractEntryPointTypeHelper<TPreloadParams>}
     */ typings.reactRelay.reactRelayStrings.PreloadProps with TopLevel[js.Any] = null,

@@ -33,26 +33,26 @@ object NavBarProps {
     backButtonTitle: String = null,
     hideBackButton: js.UndefOr[Boolean] = js.undefined,
     hideNavBar: js.UndefOr[Boolean] = js.undefined,
-    navBarStyle: StyleProp[ViewStyle] = null,
+    navBarStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     renderLeftButton: /* props */ CardSubViewProps => ReactNode = null,
     renderNavBar: /* props */ CardSubViewProps => ReactNode = null,
     renderRightButton: /* props */ CardSubViewProps => ReactNode = null,
     renderTitle: /* props */ CardSubViewProps => ReactNode = null,
     title: String = null,
-    titleStyle: StyleProp[TextStyle] = null
+    titleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined
   ): NavBarProps = {
     val __obj = js.Dynamic.literal()
     if (backButtonTintColor != null) __obj.updateDynamic("backButtonTintColor")(backButtonTintColor.asInstanceOf[js.Any])
     if (backButtonTitle != null) __obj.updateDynamic("backButtonTitle")(backButtonTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNavBar)) __obj.updateDynamic("hideNavBar")(hideNavBar.asInstanceOf[js.Any])
-    if (navBarStyle != null) __obj.updateDynamic("navBarStyle")(navBarStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideNavBar)) __obj.updateDynamic("hideNavBar")(hideNavBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navBarStyle)) __obj.updateDynamic("navBarStyle")(navBarStyle.asInstanceOf[js.Any])
     if (renderLeftButton != null) __obj.updateDynamic("renderLeftButton")(js.Any.fromFunction1(renderLeftButton))
     if (renderNavBar != null) __obj.updateDynamic("renderNavBar")(js.Any.fromFunction1(renderNavBar))
     if (renderRightButton != null) __obj.updateDynamic("renderRightButton")(js.Any.fromFunction1(renderRightButton))
     if (renderTitle != null) __obj.updateDynamic("renderTitle")(js.Any.fromFunction1(renderTitle))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleStyle)) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavBarProps]
   }
 }

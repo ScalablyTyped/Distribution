@@ -34,14 +34,14 @@ object IWebHookGenerateTestHeaderStringOptions {
     scheme: String = null,
     secret: String = null,
     signature: String = null,
-    timestamp: Int | Double = null
+    timestamp: js.UndefOr[Double] = js.undefined
   ): IWebHookGenerateTestHeaderStringOptions = {
     val __obj = js.Dynamic.literal()
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebHookGenerateTestHeaderStringOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.broccoliNodeApi.mod
 
-import typings.broccoliNodeApi.AnonCachePath
+import typings.broccoliNodeApi.anon.CachePath
 import typings.broccoliNodeApi.broccoliNodeApiStrings.transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -66,7 +66,7 @@ trait TransformNodeInfo extends NodeInfoCommon[transform] {
     If a `cachePath` is not needed/desired, a plugin can opt-out of its creation
     via the `needsCache` flag metioned below.
     */
-  def setup(features: FeatureSet, options: AnonCachePath): Unit
+  def setup(features: FeatureSet, options: CachePath): Unit
 }
 
 object TransformNodeInfo {
@@ -79,13 +79,13 @@ object TransformNodeInfo {
     needsCache: Boolean,
     nodeType: transform,
     persistentOutput: Boolean,
-    setup: (FeatureSet, AnonCachePath) => Unit,
+    setup: (FeatureSet, CachePath) => Unit,
     trackInputChanges: Boolean,
     volatile: Boolean,
-    annotation: String = null
+    annotation: js.UndefOr[Null | String] = js.undefined
   ): TransformNodeInfo = {
     val __obj = js.Dynamic.literal(getCallbackObject = js.Any.fromFunction0(getCallbackObject), inputNodes = inputNodes.asInstanceOf[js.Any], instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], needsCache = needsCache.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], persistentOutput = persistentOutput.asInstanceOf[js.Any], setup = js.Any.fromFunction2(setup), trackInputChanges = trackInputChanges.asInstanceOf[js.Any], volatile = volatile.asInstanceOf[js.Any])
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotation)) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformNodeInfo]
   }
 }

@@ -11,7 +11,7 @@ trait CreateSampleFindingsRequest extends js.Object {
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**
-    * Types of sample findings to generate.
+    * The types of sample findings to generate.
     */
   var FindingTypes: js.UndefOr[typings.awsSdk.guarddutyMod.FindingTypes] = js.native
 }

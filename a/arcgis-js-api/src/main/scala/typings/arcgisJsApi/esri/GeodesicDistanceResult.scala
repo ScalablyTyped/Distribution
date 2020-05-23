@@ -33,14 +33,14 @@ object GeodesicDistanceResult {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    azimuth: Int | Double = null,
-    distance: Int | Double = null,
-    reverseAzimuth: Int | Double = null
+    azimuth: js.UndefOr[Double] = js.undefined,
+    distance: js.UndefOr[Double] = js.undefined,
+    reverseAzimuth: js.UndefOr[Double] = js.undefined
   ): GeodesicDistanceResult = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (reverseAzimuth != null) __obj.updateDynamic("reverseAzimuth")(reverseAzimuth.asInstanceOf[js.Any])
+    if (!js.isUndefined(azimuth)) __obj.updateDynamic("azimuth")(azimuth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseAzimuth)) __obj.updateDynamic("reverseAzimuth")(reverseAzimuth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeodesicDistanceResult]
   }
 }

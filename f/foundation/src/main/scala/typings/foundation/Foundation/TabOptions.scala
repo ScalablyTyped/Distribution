@@ -25,9 +25,9 @@ object TabOptions {
     val __obj = js.Dynamic.literal()
     if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (!js.isUndefined(deep_linking)) __obj.updateDynamic("deep_linking")(deep_linking.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll_to_content)) __obj.updateDynamic("scroll_to_content")(scroll_to_content.asInstanceOf[js.Any])
+    if (!js.isUndefined(deep_linking)) __obj.updateDynamic("deep_linking")(deep_linking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll_to_content)) __obj.updateDynamic("scroll_to_content")(scroll_to_content.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabOptions]
   }
 }

@@ -1,0 +1,21 @@
+package typings.consola.mod
+
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("consola", "BasicReporter")
+@js.native
+class BasicReporter () extends ConsolaReporter {
+  def this(options: BasicReporterOptions) = this()
+  var options: BasicReporterOptions = js.native
+  /* protected */ def filterAndJoin(arr: js.Array[js.UndefOr[String]]): String = js.native
+  /* protected */ def formatArgs(args: js.Array[_]): String = js.native
+  /* protected */ def formatDate(date: Date): String = js.native
+  /* protected */ def formatLogObj(logObj: ConsolaLogObject): String = js.native
+  /* protected */ def formatStack(stack: String): String = js.native
+  /* CompleteClass */
+  override def log(logObj: ConsolaLogObject, args: ConsolaReporterArgs): Unit = js.native
+}
+

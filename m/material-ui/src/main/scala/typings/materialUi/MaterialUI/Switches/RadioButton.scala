@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("__MaterialUI.Switches.RadioButton")
 @js.native
-class RadioButton ()
+trait RadioButton
   extends Component[RadioButtonProps, js.Object, js.Any] {
   def getValue(): String = js.native
   def isChecked(): Boolean = js.native

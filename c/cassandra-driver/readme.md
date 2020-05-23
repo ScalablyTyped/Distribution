@@ -1,7 +1,7 @@
 
 # Scala.js typings for cassandra-driver
 
-Typings are for version 4.5.1
+Typings are for version 4.5.2
 
 ## Library description:
 DataStax Node.js Driver for Apache Cassandra

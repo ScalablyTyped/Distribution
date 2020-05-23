@@ -29,13 +29,13 @@ object ListCertificatesRequest {
   def apply(
     CertificateStatuses: CertificateStatuses = null,
     Includes: Filters = null,
-    MaxItems: Int | Double = null,
+    MaxItems: js.UndefOr[MaxItems] = js.undefined,
     NextToken: NextToken = null
   ): ListCertificatesRequest = {
     val __obj = js.Dynamic.literal()
     if (CertificateStatuses != null) __obj.updateDynamic("CertificateStatuses")(CertificateStatuses.asInstanceOf[js.Any])
     if (Includes != null) __obj.updateDynamic("Includes")(Includes.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCertificatesRequest]
   }

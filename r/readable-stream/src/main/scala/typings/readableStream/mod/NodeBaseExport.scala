@@ -1,10 +1,10 @@
 package typings.readableStream.mod
 
-import typings.node.AnonEnd
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.readableStream.readableStreamStrings.close
 import typings.readableStream.readableStreamStrings.data
 import typings.readableStream.readableStreamStrings.end
@@ -124,7 +124,7 @@ object NodeBaseExport extends js.Object {
   def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def pause(): this.type = js.native
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   // Added in Node 6...
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -159,7 +159,7 @@ object NodeBaseExport extends js.Object {
   @JSName("prependOnceListener")
   def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def push(chunk: js.Any): Boolean = js.native
-  def push(chunk: js.Any, encoding: String): Boolean = js.native
+  def push(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
   def rawListeners(event: String): js.Array[js.Function] = js.native
   def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
   def read(): js.Any = js.native
@@ -188,7 +188,7 @@ object NodeBaseExport extends js.Object {
   @JSName("removeListener")
   def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def resume(): this.type = js.native
-  def setEncoding(encoding: String): this.type = js.native
+  def setEncoding(encoding: BufferEncoding): this.type = js.native
   def setMaxListeners(n: Double): this.type = js.native
   def unpipe(): this.type = js.native
   def unpipe(destination: WritableStream): this.type = js.native

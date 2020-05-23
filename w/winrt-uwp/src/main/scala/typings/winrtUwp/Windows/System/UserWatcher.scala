@@ -15,9 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides events that fire during enumeration of users, when the collection of users changes, or when a user's authentication status changes. */
-@JSGlobal("Windows.System.UserWatcher")
 @js.native
-abstract class UserWatcher () extends js.Object {
+trait UserWatcher extends js.Object {
   /** Fires when a user is added to the collection of users returned by User.FindAllAsync . */
   @JSName("onadded")
   var onadded_Original: TypedEventHandler[UserWatcher, UserChangedEventArgs] = js.native

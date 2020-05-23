@@ -18,7 +18,7 @@ trait NodeCommon[T /* <: NodeInfo */] extends js.Object {
 
 object NodeCommon {
   @scala.inline
-  def apply[T /* <: NodeInfo */](__broccoliFeatures__ : FeatureSet, __broccoliGetInfo__ : FeatureSet => T): NodeCommon[T] = {
+  def apply[T](__broccoliFeatures__ : FeatureSet, __broccoliGetInfo__ : FeatureSet => T): NodeCommon[T] = {
     val __obj = js.Dynamic.literal(__broccoliFeatures__ = __broccoliFeatures__.asInstanceOf[js.Any], __broccoliGetInfo__ = js.Any.fromFunction1(__broccoliGetInfo__))
     __obj.asInstanceOf[NodeCommon[T]]
   }

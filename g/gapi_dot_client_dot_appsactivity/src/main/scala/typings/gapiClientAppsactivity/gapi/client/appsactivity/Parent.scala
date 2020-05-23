@@ -18,7 +18,7 @@ object Parent {
   def apply(id: String = null, isRoot: js.UndefOr[Boolean] = js.undefined, title: String = null): Parent = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRoot)) __obj.updateDynamic("isRoot")(isRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRoot)) __obj.updateDynamic("isRoot")(isRoot.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }

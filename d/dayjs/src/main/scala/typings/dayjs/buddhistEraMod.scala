@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dayjs/plugin/buddhistEra", JSImport.Namespace)
 @js.native
-object buddhistEraMod extends TopLevel[PluginFunc]
+object buddhistEraMod
+  extends TopLevel[PluginFunc[js.Any]]
 

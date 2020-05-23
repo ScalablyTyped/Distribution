@@ -1,12 +1,13 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonGuardianId
-import typings.gapiClientClassroom.AnonPageToken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientClassroom.anon.GuardianId
+import typings.gapiClientClassroom.anon.PageToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GuardiansResource extends js.Object {
   /**
     * Deletes a guardian.
@@ -28,7 +29,8 @@ trait GuardiansResource extends js.Object {
     * the requested `student_id`, but no `Guardian` record exists for that
     * student with the provided `guardian_id`.
     */
-  def delete(request: AnonGuardianId): Request_[js.Object]
+  def delete(): Request[js.Object] = js.native
+  def delete(request: GuardianId): Request[js.Object] = js.native
   /**
     * Returns a specific guardian.
     *
@@ -46,7 +48,8 @@ trait GuardiansResource extends js.Object {
     * the requested `student_id`, but no `Guardian` record exists for that
     * student that matches the provided `guardian_id`.
     */
-  def get(request: AnonGuardianId): Request_[Guardian]
+  def get(): Request[Guardian] = js.native
+  def get(request: GuardianId): Request[Guardian] = js.native
   /**
     * Returns a list of guardians that the requesting user is permitted to
     * view, restricted to those that match the request.
@@ -69,18 +72,7 @@ trait GuardiansResource extends js.Object {
     * &#42; `NOT_FOUND` if a `student_id` is specified, and its format can be
     * recognized, but Classroom has no record of that student.
     */
-  def list(request: AnonPageToken): Request_[ListGuardiansResponse]
-}
-
-object GuardiansResource {
-  @scala.inline
-  def apply(
-    delete: AnonGuardianId => Request_[js.Object],
-    get: AnonGuardianId => Request_[Guardian],
-    list: AnonPageToken => Request_[ListGuardiansResponse]
-  ): GuardiansResource = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-    __obj.asInstanceOf[GuardiansResource]
-  }
+  def list(): Request[ListGuardiansResponse] = js.native
+  def list(request: PageToken): Request[ListGuardiansResponse] = js.native
 }
 

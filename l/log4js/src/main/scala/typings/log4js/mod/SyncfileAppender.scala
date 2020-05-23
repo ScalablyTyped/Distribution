@@ -22,13 +22,13 @@ object SyncfileAppender {
   def apply(
     filename: String,
     `type`: fileSync,
-    backups: Int | Double = null,
+    backups: js.UndefOr[Double] = js.undefined,
     layout: Layout = null,
     maxLogSize: Double | String = null
   ): SyncfileAppender = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
+    if (!js.isUndefined(backups)) __obj.updateDynamic("backups")(backups.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncfileAppender]

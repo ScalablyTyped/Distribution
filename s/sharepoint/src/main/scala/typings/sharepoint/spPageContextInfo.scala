@@ -1,6 +1,6 @@
 package typings.sharepoint
 
-import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.anon.High
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,7 +80,7 @@ trait spPageContextInfo extends js.Object {
    // 119
   var listId: String
    // "{06ee6d96-f27f-4160-b6bb-c18f187b18a7}"
-  var listPermsMask: AnonHigh
+  var listPermsMask: High
   var listTitle: String
    // "Site Pages"
   var listUrl: String
@@ -92,7 +92,7 @@ trait spPageContextInfo extends js.Object {
   var pageItemId: Double
    // true
   var pageListId: String
-  var pagePermsMask: AnonHigh
+  var pagePermsMask: High
   var pagePersonalizationScope: String
    // true
   var preferUserTimeZone: Boolean
@@ -155,7 +155,7 @@ trait spPageContextInfo extends js.Object {
    // 1049
   var webLogoUrl: String
    // "/_layouts/15/images/siteIcon.png?rev=23"
-  var webPermMasks: AnonHigh
+  var webPermMasks: High
   var webServerRelativeUrl: String
    // "/SPTypeScript"
   var webTemplate: String
@@ -165,7 +165,95 @@ trait spPageContextInfo extends js.Object {
   var webUIVersion: Double
 }
 
-@JSGlobal("_spPageContextInfo")
-@js.native
-object spPageContextInfo extends TopLevel[spPageContextInfo]
+object spPageContextInfo {
+  @scala.inline
+  def apply(
+    CorrelationId: String,
+    PreviewFeaturesEnabled: Boolean,
+    ProfileUrl: String,
+    PublishingFeatureOn: Boolean,
+    RecycleBinItemCount: Double,
+    alertsEnabled: Boolean,
+    allowSilverlightPrompt: String,
+    blockDownloadsExperienceEnabled: Boolean,
+    canUserCreateMicrosoftForm: Boolean,
+    cdnPrefix: String,
+    clientServerTimeDelta: Double,
+    crossDomainPhotosEnabled: Boolean,
+    currentCultureName: String,
+    currentLanguage: Double,
+    currentUICultureName: String,
+    disableAppViews: Boolean,
+    disableFlows: Boolean,
+    env: String,
+    farmLabel: String,
+    formDigestTimeoutSeconds: Double,
+    formDigestValue: String,
+    groupColor: String,
+    groupHasHomepage: Boolean,
+    groupId: String,
+    guestsEnabled: Boolean,
+    hasManageWebPermissions: Boolean,
+    isAnonymousGuestUser: Boolean,
+    isAppWeb: Boolean,
+    isExternalGuestUser: Boolean,
+    isNoScriptEnabled: Boolean,
+    isSPO: Boolean,
+    isSiteAdmin: Boolean,
+    isTenantDevSite: Boolean,
+    isWebWelcomePage: Boolean,
+    layoutsUrl: String,
+    listBaseTemplate: Double,
+    listId: String,
+    listPermsMask: High,
+    listTitle: String,
+    listUrl: String,
+    maximumFileSize: Double,
+    openInClient: Boolean,
+    pageItemId: Double,
+    pageListId: String,
+    pagePermsMask: High,
+    pagePersonalizationScope: String,
+    preferUserTimeZone: Boolean,
+    serverRedirectedUrl: String,
+    serverRequestPath: String,
+    serverTime: String,
+    siteAbsoluteUrl: String,
+    siteClassification: String,
+    siteClientTag: String,
+    siteColor: String,
+    siteId: String,
+    sitePagesEnabled: Boolean,
+    siteServerRelativeUrl: String,
+    siteSubscriptionId: String,
+    supportPercentStorePath: Boolean,
+    supportPoundStorePath: Boolean,
+    systemUserKey: String,
+    tenantAppVersion: String,
+    themeCacheToken: String,
+    themedCssFolderUrl: String,
+    themedImageFileNames: String,
+    updateFormDigestPageLoaded: String,
+    userDisplayName: String,
+    userEmail: String,
+    userId: Double,
+    userLoginName: String,
+    userPrincipalName: String,
+    viewId: String,
+    viewOnlyExperienceEnabled: Boolean,
+    webAbsoluteUrl: String,
+    webDescription: String,
+    webId: String,
+    webLanguage: Double,
+    webLogoUrl: String,
+    webPermMasks: High,
+    webServerRelativeUrl: String,
+    webTemplate: String,
+    webTitle: String,
+    webUIVersion: Double
+  ): spPageContextInfo = {
+    val __obj = js.Dynamic.literal(CorrelationId = CorrelationId.asInstanceOf[js.Any], PreviewFeaturesEnabled = PreviewFeaturesEnabled.asInstanceOf[js.Any], ProfileUrl = ProfileUrl.asInstanceOf[js.Any], PublishingFeatureOn = PublishingFeatureOn.asInstanceOf[js.Any], RecycleBinItemCount = RecycleBinItemCount.asInstanceOf[js.Any], alertsEnabled = alertsEnabled.asInstanceOf[js.Any], allowSilverlightPrompt = allowSilverlightPrompt.asInstanceOf[js.Any], blockDownloadsExperienceEnabled = blockDownloadsExperienceEnabled.asInstanceOf[js.Any], canUserCreateMicrosoftForm = canUserCreateMicrosoftForm.asInstanceOf[js.Any], cdnPrefix = cdnPrefix.asInstanceOf[js.Any], clientServerTimeDelta = clientServerTimeDelta.asInstanceOf[js.Any], crossDomainPhotosEnabled = crossDomainPhotosEnabled.asInstanceOf[js.Any], currentCultureName = currentCultureName.asInstanceOf[js.Any], currentLanguage = currentLanguage.asInstanceOf[js.Any], currentUICultureName = currentUICultureName.asInstanceOf[js.Any], disableAppViews = disableAppViews.asInstanceOf[js.Any], disableFlows = disableFlows.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], farmLabel = farmLabel.asInstanceOf[js.Any], formDigestTimeoutSeconds = formDigestTimeoutSeconds.asInstanceOf[js.Any], formDigestValue = formDigestValue.asInstanceOf[js.Any], groupColor = groupColor.asInstanceOf[js.Any], groupHasHomepage = groupHasHomepage.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], guestsEnabled = guestsEnabled.asInstanceOf[js.Any], hasManageWebPermissions = hasManageWebPermissions.asInstanceOf[js.Any], isAnonymousGuestUser = isAnonymousGuestUser.asInstanceOf[js.Any], isAppWeb = isAppWeb.asInstanceOf[js.Any], isExternalGuestUser = isExternalGuestUser.asInstanceOf[js.Any], isNoScriptEnabled = isNoScriptEnabled.asInstanceOf[js.Any], isSPO = isSPO.asInstanceOf[js.Any], isSiteAdmin = isSiteAdmin.asInstanceOf[js.Any], isTenantDevSite = isTenantDevSite.asInstanceOf[js.Any], isWebWelcomePage = isWebWelcomePage.asInstanceOf[js.Any], layoutsUrl = layoutsUrl.asInstanceOf[js.Any], listBaseTemplate = listBaseTemplate.asInstanceOf[js.Any], listId = listId.asInstanceOf[js.Any], listPermsMask = listPermsMask.asInstanceOf[js.Any], listTitle = listTitle.asInstanceOf[js.Any], listUrl = listUrl.asInstanceOf[js.Any], maximumFileSize = maximumFileSize.asInstanceOf[js.Any], openInClient = openInClient.asInstanceOf[js.Any], pageItemId = pageItemId.asInstanceOf[js.Any], pageListId = pageListId.asInstanceOf[js.Any], pagePermsMask = pagePermsMask.asInstanceOf[js.Any], pagePersonalizationScope = pagePersonalizationScope.asInstanceOf[js.Any], preferUserTimeZone = preferUserTimeZone.asInstanceOf[js.Any], serverRedirectedUrl = serverRedirectedUrl.asInstanceOf[js.Any], serverRequestPath = serverRequestPath.asInstanceOf[js.Any], serverTime = serverTime.asInstanceOf[js.Any], siteAbsoluteUrl = siteAbsoluteUrl.asInstanceOf[js.Any], siteClassification = siteClassification.asInstanceOf[js.Any], siteClientTag = siteClientTag.asInstanceOf[js.Any], siteColor = siteColor.asInstanceOf[js.Any], siteId = siteId.asInstanceOf[js.Any], sitePagesEnabled = sitePagesEnabled.asInstanceOf[js.Any], siteServerRelativeUrl = siteServerRelativeUrl.asInstanceOf[js.Any], siteSubscriptionId = siteSubscriptionId.asInstanceOf[js.Any], supportPercentStorePath = supportPercentStorePath.asInstanceOf[js.Any], supportPoundStorePath = supportPoundStorePath.asInstanceOf[js.Any], systemUserKey = systemUserKey.asInstanceOf[js.Any], tenantAppVersion = tenantAppVersion.asInstanceOf[js.Any], themeCacheToken = themeCacheToken.asInstanceOf[js.Any], themedCssFolderUrl = themedCssFolderUrl.asInstanceOf[js.Any], themedImageFileNames = themedImageFileNames.asInstanceOf[js.Any], updateFormDigestPageLoaded = updateFormDigestPageLoaded.asInstanceOf[js.Any], userDisplayName = userDisplayName.asInstanceOf[js.Any], userEmail = userEmail.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], userLoginName = userLoginName.asInstanceOf[js.Any], userPrincipalName = userPrincipalName.asInstanceOf[js.Any], viewId = viewId.asInstanceOf[js.Any], viewOnlyExperienceEnabled = viewOnlyExperienceEnabled.asInstanceOf[js.Any], webAbsoluteUrl = webAbsoluteUrl.asInstanceOf[js.Any], webDescription = webDescription.asInstanceOf[js.Any], webId = webId.asInstanceOf[js.Any], webLanguage = webLanguage.asInstanceOf[js.Any], webLogoUrl = webLogoUrl.asInstanceOf[js.Any], webPermMasks = webPermMasks.asInstanceOf[js.Any], webServerRelativeUrl = webServerRelativeUrl.asInstanceOf[js.Any], webTemplate = webTemplate.asInstanceOf[js.Any], webTitle = webTitle.asInstanceOf[js.Any], webUIVersion = webUIVersion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[spPageContextInfo]
+  }
+}
 

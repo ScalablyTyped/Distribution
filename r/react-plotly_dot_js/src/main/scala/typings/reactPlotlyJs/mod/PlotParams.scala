@@ -5,20 +5,20 @@ import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.Frame
 import typings.plotlyJs.mod.PlotRestyleEvent
 import typings.react.mod.CSSProperties
-import typings.reactPlotlyJs.PartialConfig
-import typings.reactPlotlyJs.PartialLayout
-import typings.reactPlotlyJs.ReadonlyClickAnnotationEv
-import typings.reactPlotlyJs.ReadonlyError
-import typings.reactPlotlyJs.ReadonlyFigure
-import typings.reactPlotlyJs.ReadonlyFrameAnimationEve
-import typings.reactPlotlyJs.ReadonlyHTMLElement
-import typings.reactPlotlyJs.ReadonlyLegendClickEvent
-import typings.reactPlotlyJs.ReadonlyPlotMouseEvent
-import typings.reactPlotlyJs.ReadonlyPlotRelayoutEvent
-import typings.reactPlotlyJs.ReadonlyPlotSelectionEven
-import typings.reactPlotlyJs.ReadonlySliderChangeEvent
-import typings.reactPlotlyJs.ReadonlySliderEndEvent
-import typings.reactPlotlyJs.ReadonlySliderStartEvent
+import typings.reactPlotlyJs.anon.PartialConfig
+import typings.reactPlotlyJs.anon.PartialLayout
+import typings.reactPlotlyJs.anon.ReadonlyClickAnnotationEv
+import typings.reactPlotlyJs.anon.ReadonlyError
+import typings.reactPlotlyJs.anon.ReadonlyFigure
+import typings.reactPlotlyJs.anon.ReadonlyFrameAnimationEve
+import typings.reactPlotlyJs.anon.ReadonlyHTMLElement
+import typings.reactPlotlyJs.anon.ReadonlyLegendClickEvent
+import typings.reactPlotlyJs.anon.ReadonlyPlotMouseEvent
+import typings.reactPlotlyJs.anon.ReadonlyPlotRelayoutEvent
+import typings.reactPlotlyJs.anon.ReadonlyPlotSelectionEven
+import typings.reactPlotlyJs.anon.ReadonlySliderChangeEvent
+import typings.reactPlotlyJs.anon.ReadonlySliderEndEvent
+import typings.reactPlotlyJs.anon.ReadonlySliderStartEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -151,14 +151,14 @@ object PlotParams {
     onTransitioning: () => Unit = null,
     onUnhover: /* event */ ReadonlyPlotMouseEvent => Unit = null,
     onUpdate: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Unit = null,
-    revision: Int | Double = null,
+    revision: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
     useResizeHandler: js.UndefOr[Boolean] = js.undefined
   ): PlotParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (divId != null) __obj.updateDynamic("divId")(divId.asInstanceOf[js.Any])
     if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
     if (onAfterExport != null) __obj.updateDynamic("onAfterExport")(js.Any.fromFunction0(onAfterExport))
@@ -192,9 +192,9 @@ object PlotParams {
     if (onTransitioning != null) __obj.updateDynamic("onTransitioning")(js.Any.fromFunction0(onTransitioning))
     if (onUnhover != null) __obj.updateDynamic("onUnhover")(js.Any.fromFunction1(onUnhover))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction2(onUpdate))
-    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
+    if (!js.isUndefined(revision)) __obj.updateDynamic("revision")(revision.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useResizeHandler)) __obj.updateDynamic("useResizeHandler")(useResizeHandler.asInstanceOf[js.Any])
+    if (!js.isUndefined(useResizeHandler)) __obj.updateDynamic("useResizeHandler")(useResizeHandler.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotParams]
   }
 }

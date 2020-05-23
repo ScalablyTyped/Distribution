@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UnderscoreStatic extends js.Object {
   /**
+    * Current version
+    */
+  val VERSION: String = js.native
+  /**
     * @see _.map
     **/
   var collect: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _.map */ js.Any = js.native
@@ -128,13 +132,13 @@ trait UnderscoreStatic extends js.Object {
     * @return Copy of `object`.
     **/
   def clone[T](`object`: T): T = js.native
-  def compact[T](): js.Array[T] = js.native
   /**
     * Returns a copy of the array with all falsy values removed. In JavaScript, false, null, 0, "",
     * undefined and NaN are all falsy.
     * @param array Array to compact.
     * @return Copy of `array` without false values.
     **/
+  def compact[T](): js.Array[T] = js.native
   def compact[T](array: List[js.UndefOr[T | Null | `false` | _empty | `0`]]): js.Array[T] = js.native
   /**
     * Returns the composition of a list of functions, where each function consumes the return value of the

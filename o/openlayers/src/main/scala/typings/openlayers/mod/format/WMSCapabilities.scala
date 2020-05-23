@@ -1,7 +1,7 @@
 package typings.openlayers.mod.format
 
 import typings.openlayers.mod.GlobalObject
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,7 @@ class WMSCapabilities () extends XML {
     * @return An object representing the WMS capabilities.
     * @api
     */
-  def read(source: Document_): GlobalObject = js.native
+  def read(source: Document): GlobalObject = js.native
   def read(source: Node): GlobalObject = js.native
 }
 

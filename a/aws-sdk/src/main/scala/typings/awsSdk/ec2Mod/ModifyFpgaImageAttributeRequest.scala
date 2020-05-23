@@ -54,7 +54,7 @@ object ModifyFpgaImageAttributeRequest {
     FpgaImageId: FpgaImageId,
     Attribute: FpgaImageAttributeName = null,
     Description: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     LoadPermission: LoadPermissionModifications = null,
     Name: String = null,
     OperationType: OperationType = null,
@@ -65,7 +65,7 @@ object ModifyFpgaImageAttributeRequest {
     val __obj = js.Dynamic.literal(FpgaImageId = FpgaImageId.asInstanceOf[js.Any])
     if (Attribute != null) __obj.updateDynamic("Attribute")(Attribute.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (LoadPermission != null) __obj.updateDynamic("LoadPermission")(LoadPermission.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (OperationType != null) __obj.updateDynamic("OperationType")(OperationType.asInstanceOf[js.Any])

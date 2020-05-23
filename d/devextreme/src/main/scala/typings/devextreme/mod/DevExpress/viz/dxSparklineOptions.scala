@@ -1,13 +1,13 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonCancelComponentData
-import typings.devextreme.AnonComponentTElementDxElementModelAny
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementDxElementModelAny
-import typings.devextreme.AnonFormatModel
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
-import typings.devextreme.AnonTargetAny
+import typings.devextreme.anon.CancelComponentData
+import typings.devextreme.anon.ComponentTElementDxElementModelAny
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.ElementDxElementModelAny
+import typings.devextreme.anon.FormatModel
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.TargetAny
 import typings.devextreme.devextremeStrings.area
 import typings.devextreme.devextremeStrings.bar
 import typings.devextreme.devextremeStrings.circle
@@ -103,27 +103,27 @@ object dxSparklineOptions {
     height: Double | String | (js.Function0[Double | String]) = null,
     ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined,
     lineColor: String = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     loadingIndicator: BaseWidgetLoadingIndicator = null,
     lossColor: String = null,
     margin: BaseWidgetMargin = null,
     maxColor: String = null,
-    maxValue: Int | Double = null,
+    maxValue: js.UndefOr[Double] = js.undefined,
     minColor: String = null,
-    minValue: Int | Double = null,
-    onDisposing: /* e */ AnonModel[dxSparkline] => _ = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[dxSparkline] => _ = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[dxSparkline] => _ = null,
-    onExporting: /* e */ AnonFormatModel[dxSparkline] => _ = null,
-    onFileSaving: /* e */ AnonCancelComponentData[dxSparkline] => _ = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[dxSparkline] => _ = null,
-    onInitialized: /* e */ AnonElement[dxSparkline] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxSparkline] => _ = null,
-    onTooltipHidden: /* e */ AnonElementDxElementModelAny[dxSparkline] => _ = null,
-    onTooltipShown: /* e */ AnonElementDxElementModelAny[dxSparkline] => _ = null,
+    minValue: js.UndefOr[Double] = js.undefined,
+    onDisposing: /* e */ Model[dxSparkline] => _ = null,
+    onDrawn: /* e */ ComponentTElementDxElementModelAny[dxSparkline] => _ = null,
+    onExported: /* e */ ComponentTElementDxElementModelAny[dxSparkline] => _ = null,
+    onExporting: /* e */ FormatModel[dxSparkline] => _ = null,
+    onFileSaving: /* e */ CancelComponentData[dxSparkline] => _ = null,
+    onIncidentOccurred: /* e */ TargetAny[dxSparkline] => _ = null,
+    onInitialized: /* e */ Element[dxSparkline] => _ = null,
+    onOptionChanged: /* e */ Name[dxSparkline] => _ = null,
+    onTooltipHidden: /* e */ ElementDxElementModelAny[dxSparkline] => _ = null,
+    onTooltipShown: /* e */ ElementDxElementModelAny[dxSparkline] => _ = null,
     pathModified: js.UndefOr[Boolean] = js.undefined,
     pointColor: String = null,
-    pointSize: Int | Double = null,
+    pointSize: js.UndefOr[Double] = js.undefined,
     pointSymbol: circle | cross | polygon | square | triangle = null,
     redrawOnResize: js.UndefOr[Boolean] = js.undefined,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -137,7 +137,7 @@ object dxSparklineOptions {
     valueField: String = null,
     width: Double | String | (js.Function0[Double | String]) = null,
     winColor: String = null,
-    winlossThreshold: Int | Double = null
+    winlossThreshold: js.UndefOr[Double] = js.undefined
   ): dxSparklineOptions = {
     val __obj = js.Dynamic.literal()
     if (argumentField != null) __obj.updateDynamic("argumentField")(argumentField.asInstanceOf[js.Any])
@@ -145,21 +145,21 @@ object dxSparklineOptions {
     if (barPositiveColor != null) __obj.updateDynamic("barPositiveColor")(barPositiveColor.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (firstLastColor != null) __obj.updateDynamic("firstLastColor")(firstLastColor.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmptyPoints)) __obj.updateDynamic("ignoreEmptyPoints")(ignoreEmptyPoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEmptyPoints)) __obj.updateDynamic("ignoreEmptyPoints")(ignoreEmptyPoints.get.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
     if (lossColor != null) __obj.updateDynamic("lossColor")(lossColor.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (maxColor != null) __obj.updateDynamic("maxColor")(maxColor.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
     if (minColor != null) __obj.updateDynamic("minColor")(minColor.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
     if (onDrawn != null) __obj.updateDynamic("onDrawn")(js.Any.fromFunction1(onDrawn))
     if (onExported != null) __obj.updateDynamic("onExported")(js.Any.fromFunction1(onExported))
@@ -170,14 +170,14 @@ object dxSparklineOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onTooltipHidden != null) __obj.updateDynamic("onTooltipHidden")(js.Any.fromFunction1(onTooltipHidden))
     if (onTooltipShown != null) __obj.updateDynamic("onTooltipShown")(js.Any.fromFunction1(onTooltipShown))
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
     if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
     if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(pointSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFirstLast)) __obj.updateDynamic("showFirstLast")(showFirstLast.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinMax)) __obj.updateDynamic("showMinMax")(showMinMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFirstLast)) __obj.updateDynamic("showFirstLast")(showFirstLast.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMinMax)) __obj.updateDynamic("showMinMax")(showMinMax.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
@@ -186,7 +186,7 @@ object dxSparklineOptions {
     if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (winColor != null) __obj.updateDynamic("winColor")(winColor.asInstanceOf[js.Any])
-    if (winlossThreshold != null) __obj.updateDynamic("winlossThreshold")(winlossThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(winlossThreshold)) __obj.updateDynamic("winlossThreshold")(winlossThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxSparklineOptions]
   }
 }

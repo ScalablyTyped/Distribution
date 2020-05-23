@@ -1,6 +1,5 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonAccountLimits
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.User")
 @js.native
 class User () extends js.Object {
-  def this(args: AnonAccountLimits) = this()
+  def this(args: typings.evernote.anon.AccountLimits) = this()
   var accountLimits: js.UndefOr[AccountLimits] = js.native
   var accounting: js.UndefOr[Accounting] = js.native
   var active: js.UndefOr[Boolean] = js.native

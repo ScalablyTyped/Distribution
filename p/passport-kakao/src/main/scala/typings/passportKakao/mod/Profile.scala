@@ -1,8 +1,8 @@
 package typings.passportKakao.mod
 
-import typings.passport.AnonFamilyName
-import typings.passport.AnonType
-import typings.passport.AnonValue
+import typings.passport.anon.FamilyName
+import typings.passport.anon.Type
+import typings.passport.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +21,9 @@ object Profile {
     displayName: String,
     id: String,
     provider: String,
-    emails: js.Array[AnonType] = null,
-    name: AnonFamilyName = null,
-    photos: js.Array[AnonValue] = null,
+    emails: js.Array[Type] = null,
+    name: FamilyName = null,
+    photos: js.Array[Value] = null,
     username: String = null
   ): Profile = {
     val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])

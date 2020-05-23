@@ -19,24 +19,24 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    decimals: Int | Double = null,
+    decimals: js.UndefOr[Double] = js.undefined,
     formatter: (/* value */ Double, Options) => String = null,
-    from: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
     onComplete: /* value */ Double => Unit = null,
     onUpdate: /* value */ Double => Unit = null,
-    refreshInterval: Int | Double = null,
-    speed: Int | Double = null,
-    to: Int | Double = null
+    refreshInterval: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction2(formatter))
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshInterval)) __obj.updateDynamic("refreshInterval")(refreshInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

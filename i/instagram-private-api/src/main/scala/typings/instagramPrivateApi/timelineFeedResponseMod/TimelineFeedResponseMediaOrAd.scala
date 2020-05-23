@@ -116,105 +116,103 @@ object TimelineFeedResponseMediaOrAd {
     top_likers: js.Array[String],
     user: TimelineFeedResponseUser,
     ad_action: String = null,
-    ad_header_style: Int | Double = null,
+    ad_header_style: js.UndefOr[Double] = js.undefined,
     ad_id: String = null,
-    ad_link_type: Int | Double = null,
+    ad_link_type: js.UndefOr[Double] = js.undefined,
     ad_metadata: js.Array[TimelineFeedResponseAdMetadataItem] = null,
     android_links: js.Array[TimelineFeedResponseAndroidLinksItem] = null,
     can_see_insights_as_brand: js.UndefOr[Boolean] = js.undefined,
     can_viewer_reshare: js.UndefOr[Boolean] = js.undefined,
     carousel_media: js.Array[TimelineFeedResponseCarouselMediaItem] = null,
-    carousel_media_count: Int | Double = null,
-    carousel_media_type: Int | Double = null,
+    carousel_media_count: js.UndefOr[Double] = js.undefined,
+    carousel_media_type: js.UndefOr[Double] = js.undefined,
     collapse_comments: js.UndefOr[Boolean] = js.undefined,
     dominant_color: String = null,
-    dr_ad_type: Int | Double = null,
-    expiring_at: Int | Double = null,
+    dr_ad_type: js.UndefOr[Double] = js.undefined,
+    expiring_at: js.UndefOr[Double] = js.undefined,
     facepile_top_likers: js.Array[TimelineFeedResponseFacepileTopLikersItem] = null,
     fb_page_url: String = null,
-    follower_count: Int | Double = null,
+    follower_count: js.UndefOr[Double] = js.undefined,
     force_overlay: js.UndefOr[Boolean] = js.undefined,
     has_audio: js.UndefOr[Boolean] = js.undefined,
     hide_nux_text: js.UndefOr[Boolean] = js.undefined,
-    iTunesItem: js.UndefOr[scala.Nothing] = js.undefined,
     image_versions2: TimelineFeedResponseImageVersions2 = null,
     injected: TimelineFeedResponseInjected = null,
     inline_composer_display_condition: String = null,
-    inline_composer_imp_trigger_time: Int | Double = null,
-    is_dash_eligible: Int | Double = null,
+    inline_composer_imp_trigger_time: js.UndefOr[Double] = js.undefined,
+    is_dash_eligible: js.UndefOr[Double] = js.undefined,
     is_sidecar_child: js.UndefOr[Boolean] = js.undefined,
-    lat: Int | Double = null,
+    lat: js.UndefOr[Double] = js.undefined,
     link: String = null,
     link_hint_text: String = null,
     link_text: String = null,
-    lng: Int | Double = null,
+    lng: js.UndefOr[Double] = js.undefined,
     location: TimelineFeedResponseLocation = null,
     next_max_id: String = null,
-    number_of_qualities: Int | Double = null,
-    original_height: Int | Double = null,
-    original_width: Int | Double = null,
+    number_of_qualities: js.UndefOr[Double] = js.undefined,
+    original_height: js.UndefOr[Double] = js.undefined,
+    original_width: js.UndefOr[Double] = js.undefined,
     overlay_subtitle: String = null,
     overlay_text: String = null,
     overlay_title: String = null,
-    post_count: Int | Double = null,
+    post_count: js.UndefOr[Double] = js.undefined,
     preview: String = null,
     usertags: TimelineFeedResponseUsertags = null,
     video_codec: String = null,
     video_dash_manifest: String = null,
-    video_duration: Int | Double = null,
+    video_duration: js.UndefOr[Double] = js.undefined,
     video_versions: js.Array[TimelineFeedResponseVideoVersionsItem] = null,
-    view_count: Int | Double = null
+    view_count: js.UndefOr[Double] = js.undefined
   ): TimelineFeedResponseMediaOrAd = {
     val __obj = js.Dynamic.literal(can_view_more_preview_comments = can_view_more_preview_comments.asInstanceOf[js.Any], can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], comment_likes_enabled = comment_likes_enabled.asInstanceOf[js.Any], comment_threading_enabled = comment_threading_enabled.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], direct_reply_to_author_enabled = direct_reply_to_author_enabled.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], has_liked = has_liked.asInstanceOf[js.Any], has_more_comments = has_more_comments.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inventory_source = inventory_source.asInstanceOf[js.Any], is_eof = is_eof.asInstanceOf[js.Any], is_seen = is_seen.asInstanceOf[js.Any], like_count = like_count.asInstanceOf[js.Any], max_num_visible_preview_comments = max_num_visible_preview_comments.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], preview_comments = preview_comments.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], top_likers = top_likers.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     if (ad_action != null) __obj.updateDynamic("ad_action")(ad_action.asInstanceOf[js.Any])
-    if (ad_header_style != null) __obj.updateDynamic("ad_header_style")(ad_header_style.asInstanceOf[js.Any])
+    if (!js.isUndefined(ad_header_style)) __obj.updateDynamic("ad_header_style")(ad_header_style.get.asInstanceOf[js.Any])
     if (ad_id != null) __obj.updateDynamic("ad_id")(ad_id.asInstanceOf[js.Any])
-    if (ad_link_type != null) __obj.updateDynamic("ad_link_type")(ad_link_type.asInstanceOf[js.Any])
+    if (!js.isUndefined(ad_link_type)) __obj.updateDynamic("ad_link_type")(ad_link_type.get.asInstanceOf[js.Any])
     if (ad_metadata != null) __obj.updateDynamic("ad_metadata")(ad_metadata.asInstanceOf[js.Any])
     if (android_links != null) __obj.updateDynamic("android_links")(android_links.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_see_insights_as_brand)) __obj.updateDynamic("can_see_insights_as_brand")(can_see_insights_as_brand.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_viewer_reshare)) __obj.updateDynamic("can_viewer_reshare")(can_viewer_reshare.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_see_insights_as_brand)) __obj.updateDynamic("can_see_insights_as_brand")(can_see_insights_as_brand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_viewer_reshare)) __obj.updateDynamic("can_viewer_reshare")(can_viewer_reshare.get.asInstanceOf[js.Any])
     if (carousel_media != null) __obj.updateDynamic("carousel_media")(carousel_media.asInstanceOf[js.Any])
-    if (carousel_media_count != null) __obj.updateDynamic("carousel_media_count")(carousel_media_count.asInstanceOf[js.Any])
-    if (carousel_media_type != null) __obj.updateDynamic("carousel_media_type")(carousel_media_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapse_comments)) __obj.updateDynamic("collapse_comments")(collapse_comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(carousel_media_count)) __obj.updateDynamic("carousel_media_count")(carousel_media_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(carousel_media_type)) __obj.updateDynamic("carousel_media_type")(carousel_media_type.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapse_comments)) __obj.updateDynamic("collapse_comments")(collapse_comments.get.asInstanceOf[js.Any])
     if (dominant_color != null) __obj.updateDynamic("dominant_color")(dominant_color.asInstanceOf[js.Any])
-    if (dr_ad_type != null) __obj.updateDynamic("dr_ad_type")(dr_ad_type.asInstanceOf[js.Any])
-    if (expiring_at != null) __obj.updateDynamic("expiring_at")(expiring_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(dr_ad_type)) __obj.updateDynamic("dr_ad_type")(dr_ad_type.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiring_at)) __obj.updateDynamic("expiring_at")(expiring_at.get.asInstanceOf[js.Any])
     if (facepile_top_likers != null) __obj.updateDynamic("facepile_top_likers")(facepile_top_likers.asInstanceOf[js.Any])
     if (fb_page_url != null) __obj.updateDynamic("fb_page_url")(fb_page_url.asInstanceOf[js.Any])
-    if (follower_count != null) __obj.updateDynamic("follower_count")(follower_count.asInstanceOf[js.Any])
-    if (!js.isUndefined(force_overlay)) __obj.updateDynamic("force_overlay")(force_overlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_audio)) __obj.updateDynamic("has_audio")(has_audio.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide_nux_text)) __obj.updateDynamic("hide_nux_text")(hide_nux_text.asInstanceOf[js.Any])
-    if (!js.isUndefined(iTunesItem)) __obj.updateDynamic("iTunesItem")(iTunesItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(follower_count)) __obj.updateDynamic("follower_count")(follower_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_overlay)) __obj.updateDynamic("force_overlay")(force_overlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_audio)) __obj.updateDynamic("has_audio")(has_audio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide_nux_text)) __obj.updateDynamic("hide_nux_text")(hide_nux_text.get.asInstanceOf[js.Any])
     if (image_versions2 != null) __obj.updateDynamic("image_versions2")(image_versions2.asInstanceOf[js.Any])
     if (injected != null) __obj.updateDynamic("injected")(injected.asInstanceOf[js.Any])
     if (inline_composer_display_condition != null) __obj.updateDynamic("inline_composer_display_condition")(inline_composer_display_condition.asInstanceOf[js.Any])
-    if (inline_composer_imp_trigger_time != null) __obj.updateDynamic("inline_composer_imp_trigger_time")(inline_composer_imp_trigger_time.asInstanceOf[js.Any])
-    if (is_dash_eligible != null) __obj.updateDynamic("is_dash_eligible")(is_dash_eligible.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_sidecar_child)) __obj.updateDynamic("is_sidecar_child")(is_sidecar_child.asInstanceOf[js.Any])
-    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
+    if (!js.isUndefined(inline_composer_imp_trigger_time)) __obj.updateDynamic("inline_composer_imp_trigger_time")(inline_composer_imp_trigger_time.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_dash_eligible)) __obj.updateDynamic("is_dash_eligible")(is_dash_eligible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_sidecar_child)) __obj.updateDynamic("is_sidecar_child")(is_sidecar_child.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lat)) __obj.updateDynamic("lat")(lat.get.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (link_hint_text != null) __obj.updateDynamic("link_hint_text")(link_hint_text.asInstanceOf[js.Any])
     if (link_text != null) __obj.updateDynamic("link_text")(link_text.asInstanceOf[js.Any])
-    if (lng != null) __obj.updateDynamic("lng")(lng.asInstanceOf[js.Any])
+    if (!js.isUndefined(lng)) __obj.updateDynamic("lng")(lng.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (next_max_id != null) __obj.updateDynamic("next_max_id")(next_max_id.asInstanceOf[js.Any])
-    if (number_of_qualities != null) __obj.updateDynamic("number_of_qualities")(number_of_qualities.asInstanceOf[js.Any])
-    if (original_height != null) __obj.updateDynamic("original_height")(original_height.asInstanceOf[js.Any])
-    if (original_width != null) __obj.updateDynamic("original_width")(original_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(number_of_qualities)) __obj.updateDynamic("number_of_qualities")(number_of_qualities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(original_height)) __obj.updateDynamic("original_height")(original_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(original_width)) __obj.updateDynamic("original_width")(original_width.get.asInstanceOf[js.Any])
     if (overlay_subtitle != null) __obj.updateDynamic("overlay_subtitle")(overlay_subtitle.asInstanceOf[js.Any])
     if (overlay_text != null) __obj.updateDynamic("overlay_text")(overlay_text.asInstanceOf[js.Any])
     if (overlay_title != null) __obj.updateDynamic("overlay_title")(overlay_title.asInstanceOf[js.Any])
-    if (post_count != null) __obj.updateDynamic("post_count")(post_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(post_count)) __obj.updateDynamic("post_count")(post_count.get.asInstanceOf[js.Any])
     if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
     if (video_codec != null) __obj.updateDynamic("video_codec")(video_codec.asInstanceOf[js.Any])
     if (video_dash_manifest != null) __obj.updateDynamic("video_dash_manifest")(video_dash_manifest.asInstanceOf[js.Any])
-    if (video_duration != null) __obj.updateDynamic("video_duration")(video_duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(video_duration)) __obj.updateDynamic("video_duration")(video_duration.get.asInstanceOf[js.Any])
     if (video_versions != null) __obj.updateDynamic("video_versions")(video_versions.asInstanceOf[js.Any])
-    if (view_count != null) __obj.updateDynamic("view_count")(view_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(view_count)) __obj.updateDynamic("view_count")(view_count.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponseMediaOrAd]
   }
 }

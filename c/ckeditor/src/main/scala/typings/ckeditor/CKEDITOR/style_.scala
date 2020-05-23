@@ -9,10 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.style")
 @js.native
-class style_ protected () extends js.Object {
-  def this(styleDefinition: definition, variableValues: js.Any) = this()
+trait style_ extends js.Object {
   var alwaysRemoveElement: Boolean = js.native
   var includeReadonly: Boolean = js.native
   @JSName("apply")

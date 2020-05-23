@@ -1,7 +1,8 @@
 package typings.vscodeLanguageserver.mod
 
+import typings.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashdidOpen
+import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
 import typings.vscodeLanguageserverProtocol.protocolMod.DidOpenTextDocumentParams
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,10 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver", "DidOpenTextDocumentNotification")
 @js.native
 object DidOpenTextDocumentNotification extends js.Object {
-  val `type`: typings.vscodeJsonrpc.mod.NotificationType[DidOpenTextDocumentParams, TextDocumentRegistrationOptions] = js.native
+  val method: textDocumentSlashdidOpen = js.native
+  val `type`: ProtocolNotificationType[
+    DidOpenTextDocumentParams, 
+    typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+  ] = js.native
 }
 

@@ -16,13 +16,13 @@ object KeyboardSpacerProps {
   @scala.inline
   def apply(
     onToggle: (/* keyboardIsOpen */ Boolean, /* keyboardSpace */ Double) => Unit = null,
-    style: StyleProp[ViewStyle] = null,
-    topSpacing: Int | Double = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    topSpacing: js.UndefOr[Double] = js.undefined
   ): KeyboardSpacerProps = {
     val __obj = js.Dynamic.literal()
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction2(onToggle))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (topSpacing != null) __obj.updateDynamic("topSpacing")(topSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(topSpacing)) __obj.updateDynamic("topSpacing")(topSpacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardSpacerProps]
   }
 }

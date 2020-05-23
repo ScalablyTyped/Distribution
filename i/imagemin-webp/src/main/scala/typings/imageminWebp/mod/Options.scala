@@ -85,38 +85,38 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    alphaQuality: Int | Double = null,
+    alphaQuality: js.UndefOr[Double] = js.undefined,
     autoFilter: js.UndefOr[Boolean] = js.undefined,
     buffer: Buffer = null,
     crop: Crop = null,
-    filter: Int | Double = null,
+    filter: js.UndefOr[Double] = js.undefined,
     lossless: js.UndefOr[Boolean] = js.undefined,
     metadata: Metadata | js.Array[Metadata] = null,
-    method: Int | Double = null,
-    nearLossless: Int | Double = null,
+    method: js.UndefOr[Double] = js.undefined,
+    nearLossless: js.UndefOr[Double] = js.undefined,
     preset: Preset = null,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     resize: Resize = null,
-    sharpness: Int | Double = null,
-    size: Int | Double = null,
-    sns: Int | Double = null
+    sharpness: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
+    sns: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (alphaQuality != null) __obj.updateDynamic("alphaQuality")(alphaQuality.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFilter)) __obj.updateDynamic("autoFilter")(autoFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaQuality)) __obj.updateDynamic("alphaQuality")(alphaQuality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFilter)) __obj.updateDynamic("autoFilter")(autoFilter.get.asInstanceOf[js.Any])
     if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
     if (crop != null) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(lossless)) __obj.updateDynamic("lossless")(lossless.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lossless)) __obj.updateDynamic("lossless")(lossless.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (nearLossless != null) __obj.updateDynamic("nearLossless")(nearLossless.asInstanceOf[js.Any])
+    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nearLossless)) __obj.updateDynamic("nearLossless")(nearLossless.get.asInstanceOf[js.Any])
     if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
-    if (sharpness != null) __obj.updateDynamic("sharpness")(sharpness.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sns != null) __obj.updateDynamic("sns")(sns.asInstanceOf[js.Any])
+    if (!js.isUndefined(sharpness)) __obj.updateDynamic("sharpness")(sharpness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sns)) __obj.updateDynamic("sns")(sns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

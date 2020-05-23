@@ -1,6 +1,6 @@
 package typings.evernote.mod.NoteStore
 
-import typings.evernote.AnonCurrentTime
+import typings.evernote.anon.CurrentTime
 import typings.evernote.mod.Types.MessageEventID
 import typings.evernote.mod.Types.Timestamp
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "NoteStore.SyncState")
 @js.native
 class SyncState () extends js.Object {
-  def this(args: AnonCurrentTime) = this()
+  def this(args: CurrentTime) = this()
   var currentTime: js.UndefOr[Timestamp] = js.native
   var fullSyncBefore: js.UndefOr[Timestamp] = js.native
   var updateCount: js.UndefOr[Double] = js.native

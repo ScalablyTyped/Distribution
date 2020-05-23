@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Parameter")
 @js.native
-class Parameter protected () extends js.Object {
+trait Parameter extends js.Object {
   @JSName("DAO.Parameter_typekey")
   var DAODotParameter_typekey: Parameter = js.native
   var Direction: Double = js.native

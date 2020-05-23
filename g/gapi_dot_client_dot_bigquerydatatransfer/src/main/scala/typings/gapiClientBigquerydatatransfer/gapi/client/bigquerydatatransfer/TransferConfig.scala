@@ -71,7 +71,7 @@ trait TransferConfig extends js.Object {
 object TransferConfig {
   @scala.inline
   def apply(
-    dataRefreshWindowDays: Int | Double = null,
+    dataRefreshWindowDays: js.UndefOr[Double] = js.undefined,
     dataSourceId: String = null,
     datasetRegion: String = null,
     destinationDatasetId: String = null,
@@ -86,11 +86,11 @@ object TransferConfig {
     userId: String = null
   ): TransferConfig = {
     val __obj = js.Dynamic.literal()
-    if (dataRefreshWindowDays != null) __obj.updateDynamic("dataRefreshWindowDays")(dataRefreshWindowDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataRefreshWindowDays)) __obj.updateDynamic("dataRefreshWindowDays")(dataRefreshWindowDays.get.asInstanceOf[js.Any])
     if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
     if (datasetRegion != null) __obj.updateDynamic("datasetRegion")(datasetRegion.asInstanceOf[js.Any])
     if (destinationDatasetId != null) __obj.updateDynamic("destinationDatasetId")(destinationDatasetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nextRunTime != null) __obj.updateDynamic("nextRunTime")(nextRunTime.asInstanceOf[js.Any])

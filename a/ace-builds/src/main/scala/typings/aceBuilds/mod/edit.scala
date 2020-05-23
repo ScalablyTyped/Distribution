@@ -1,6 +1,6 @@
 package typings.aceBuilds.mod
 
-import typings.aceBuilds.PartialEditorOptions
+import typings.aceBuilds.anon.PartialEditorOptions
 import typings.aceBuilds.mod.Ace.Editor
 import typings.std.Element
 import scala.scalajs.js

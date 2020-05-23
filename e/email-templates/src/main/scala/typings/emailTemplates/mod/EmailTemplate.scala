@@ -1,6 +1,6 @@
 package typings.emailTemplates.mod
 
-import typings.emailTemplates.PartialEmailMessage
+import typings.emailTemplates.anon.PartialEmailMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -20,10 +20,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(max: Int | Double = null, maxWaiting: Int | Double = null): Options = {
+  def apply(max: js.UndefOr[Double] = js.undefined, maxWaiting: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxWaiting != null) __obj.updateDynamic("maxWaiting")(maxWaiting.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWaiting)) __obj.updateDynamic("maxWaiting")(maxWaiting.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

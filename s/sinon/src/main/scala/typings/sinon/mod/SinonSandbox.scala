@@ -1,7 +1,7 @@
 package typings.sinon.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sinon.PartialSinonFakeTimersCon
+import typings.sinon.anon.PartialSinonFakeTimersCon
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

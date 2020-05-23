@@ -1,7 +1,7 @@
 package typings.sipJs.uAMod.UA
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.sipJs.AnonBuiltinEnabled
+import typings.sipJs.anon.BuiltinEnabled
 import typings.sipJs.coreMod.DigestAuthentication
 import typings.sipJs.coreMod.URI
 import typings.sipJs.libConstantsMod.C.supported
@@ -34,7 +34,7 @@ trait Options extends js.Object {
   var hackViaTcp: js.UndefOr[Boolean] = js.undefined
   var hackWssInTransport: js.UndefOr[Boolean] = js.undefined
   var hostportParams: js.UndefOr[js.Any] = js.undefined
-  var log: js.UndefOr[AnonBuiltinEnabled] = js.undefined
+  var log: js.UndefOr[BuiltinEnabled] = js.undefined
   var noAnswerTimeout: js.UndefOr[Double] = js.undefined
   var password: js.UndefOr[String] = js.undefined
   var register: js.UndefOr[Boolean] = js.undefined
@@ -71,8 +71,8 @@ object Options {
     hackViaTcp: js.UndefOr[Boolean] = js.undefined,
     hackWssInTransport: js.UndefOr[Boolean] = js.undefined,
     hostportParams: js.Any = null,
-    log: AnonBuiltinEnabled = null,
-    noAnswerTimeout: Int | Double = null,
+    log: BuiltinEnabled = null,
+    noAnswerTimeout: js.UndefOr[Double] = js.undefined,
     password: String = null,
     register: js.UndefOr[Boolean] = js.undefined,
     registerOptions: RegisterOptions = null,
@@ -89,26 +89,26 @@ object Options {
     viaHost: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowLegacyNotifications)) __obj.updateDynamic("allowLegacyNotifications")(allowLegacyNotifications.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowOutOfDialogRefers)) __obj.updateDynamic("allowOutOfDialogRefers")(allowOutOfDialogRefers.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLegacyNotifications)) __obj.updateDynamic("allowLegacyNotifications")(allowLegacyNotifications.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOutOfDialogRefers)) __obj.updateDynamic("allowOutOfDialogRefers")(allowOutOfDialogRefers.get.asInstanceOf[js.Any])
     if (authenticationFactory != null) __obj.updateDynamic("authenticationFactory")(js.Any.fromFunction1(authenticationFactory))
     if (authorizationUser != null) __obj.updateDynamic("authorizationUser")(authorizationUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.asInstanceOf[js.Any])
-    if (!js.isUndefined(autostop)) __obj.updateDynamic("autostop")(autostop.asInstanceOf[js.Any])
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autostop)) __obj.updateDynamic("autostop")(autostop.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (dtmfType != null) __obj.updateDynamic("dtmfType")(dtmfType.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimentalFeatures)) __obj.updateDynamic("experimentalFeatures")(experimentalFeatures.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentalFeatures)) __obj.updateDynamic("experimentalFeatures")(experimentalFeatures.get.asInstanceOf[js.Any])
     if (extraSupported != null) __obj.updateDynamic("extraSupported")(extraSupported.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRport)) __obj.updateDynamic("forceRport")(forceRport.asInstanceOf[js.Any])
-    if (!js.isUndefined(hackAllowUnregisteredOptionTags)) __obj.updateDynamic("hackAllowUnregisteredOptionTags")(hackAllowUnregisteredOptionTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(hackIpInContact)) __obj.updateDynamic("hackIpInContact")(hackIpInContact.asInstanceOf[js.Any])
-    if (!js.isUndefined(hackViaTcp)) __obj.updateDynamic("hackViaTcp")(hackViaTcp.asInstanceOf[js.Any])
-    if (!js.isUndefined(hackWssInTransport)) __obj.updateDynamic("hackWssInTransport")(hackWssInTransport.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRport)) __obj.updateDynamic("forceRport")(forceRport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hackAllowUnregisteredOptionTags)) __obj.updateDynamic("hackAllowUnregisteredOptionTags")(hackAllowUnregisteredOptionTags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hackIpInContact)) __obj.updateDynamic("hackIpInContact")(hackIpInContact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hackViaTcp)) __obj.updateDynamic("hackViaTcp")(hackViaTcp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hackWssInTransport)) __obj.updateDynamic("hackWssInTransport")(hackWssInTransport.get.asInstanceOf[js.Any])
     if (hostportParams != null) __obj.updateDynamic("hostportParams")(hostportParams.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (noAnswerTimeout != null) __obj.updateDynamic("noAnswerTimeout")(noAnswerTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAnswerTimeout)) __obj.updateDynamic("noAnswerTimeout")(noAnswerTimeout.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(register)) __obj.updateDynamic("register")(register.asInstanceOf[js.Any])
+    if (!js.isUndefined(register)) __obj.updateDynamic("register")(register.get.asInstanceOf[js.Any])
     if (registerOptions != null) __obj.updateDynamic("registerOptions")(registerOptions.asInstanceOf[js.Any])
     if (rel100 != null) __obj.updateDynamic("rel100")(rel100.asInstanceOf[js.Any])
     if (replaces != null) __obj.updateDynamic("replaces")(replaces.asInstanceOf[js.Any])
@@ -118,7 +118,7 @@ object Options {
     if (transportConstructor != null) __obj.updateDynamic("transportConstructor")(transportConstructor.asInstanceOf[js.Any])
     if (transportOptions != null) __obj.updateDynamic("transportOptions")(transportOptions.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePreloadedRoute)) __obj.updateDynamic("usePreloadedRoute")(usePreloadedRoute.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePreloadedRoute)) __obj.updateDynamic("usePreloadedRoute")(usePreloadedRoute.get.asInstanceOf[js.Any])
     if (userAgentString != null) __obj.updateDynamic("userAgentString")(userAgentString.asInstanceOf[js.Any])
     if (viaHost != null) __obj.updateDynamic("viaHost")(viaHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

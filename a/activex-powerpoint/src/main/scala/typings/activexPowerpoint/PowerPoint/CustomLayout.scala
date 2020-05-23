@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.CustomLayout")
 @js.native
-class CustomLayout protected () extends js.Object {
+trait CustomLayout extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val Background: ShapeRange = js.native
   val CustomerData: typings.activexPowerpoint.PowerPoint.CustomerData = js.native

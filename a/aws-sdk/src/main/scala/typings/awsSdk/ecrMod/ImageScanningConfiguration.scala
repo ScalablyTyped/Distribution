@@ -14,9 +14,9 @@ trait ImageScanningConfiguration extends js.Object {
 
 object ImageScanningConfiguration {
   @scala.inline
-  def apply(scanOnPush: js.UndefOr[Boolean] = js.undefined): ImageScanningConfiguration = {
+  def apply(scanOnPush: js.UndefOr[ScanOnPushFlag] = js.undefined): ImageScanningConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(scanOnPush)) __obj.updateDynamic("scanOnPush")(scanOnPush.asInstanceOf[js.Any])
+    if (!js.isUndefined(scanOnPush)) __obj.updateDynamic("scanOnPush")(scanOnPush.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageScanningConfiguration]
   }
 }

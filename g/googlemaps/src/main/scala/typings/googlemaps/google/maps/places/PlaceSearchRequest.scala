@@ -28,11 +28,11 @@ object PlaceSearchRequest {
     bounds: LatLngBounds | LatLngBoundsLiteral = null,
     keyword: String = null,
     location: LatLng | LatLngLiteral = null,
-    maxPriceLevel: Int | Double = null,
-    minPriceLevel: Int | Double = null,
+    maxPriceLevel: js.UndefOr[Double] = js.undefined,
+    minPriceLevel: js.UndefOr[Double] = js.undefined,
     name: String = null,
     openNow: js.UndefOr[Boolean] = js.undefined,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     rankBy: RankBy = null,
     `type`: String = null,
     types: js.Array[String] = null
@@ -41,11 +41,11 @@ object PlaceSearchRequest {
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (keyword != null) __obj.updateDynamic("keyword")(keyword.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (maxPriceLevel != null) __obj.updateDynamic("maxPriceLevel")(maxPriceLevel.asInstanceOf[js.Any])
-    if (minPriceLevel != null) __obj.updateDynamic("minPriceLevel")(minPriceLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPriceLevel)) __obj.updateDynamic("maxPriceLevel")(maxPriceLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPriceLevel)) __obj.updateDynamic("minPriceLevel")(minPriceLevel.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(openNow)) __obj.updateDynamic("openNow")(openNow.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(openNow)) __obj.updateDynamic("openNow")(openNow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (rankBy != null) __obj.updateDynamic("rankBy")(rankBy.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])

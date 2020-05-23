@@ -25,7 +25,7 @@ object CaptchaProps {
     onResponse: /* response */ js.Any => Unit = null,
     siteKey: String = null,
     size: String = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     theme: String = null,
     `type`: String = null
   ): CaptchaProps = {
@@ -36,7 +36,7 @@ object CaptchaProps {
     if (onResponse != null) __obj.updateDynamic("onResponse")(js.Any.fromFunction1(onResponse))
     if (siteKey != null) __obj.updateDynamic("siteKey")(siteKey.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptchaProps]

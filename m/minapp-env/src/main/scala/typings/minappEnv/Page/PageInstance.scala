@@ -73,7 +73,7 @@ trait PageInstance[D /* <: IAnyObject */, T /* <: IAnyObject */] extends PageIns
 
 object PageInstance {
   @scala.inline
-  def apply[D /* <: IAnyObject */, T /* <: IAnyObject */](
+  def apply[D, T](
     data: D = null,
     onHide: () => Unit = null,
     onLoad: /* query */ js.UndefOr[StringDictionary[String]] => Unit = null,

@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonAvailable
+import typings.aliApp.anon.Available
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait BeaconServiceChangeOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_BeaconServiceChangeOptions: js.UndefOr[js.Function1[/* res */ AnonAvailable, Unit]] = js.undefined
+  var success_BeaconServiceChangeOptions: js.UndefOr[js.Function1[/* res */ Available, Unit]] = js.undefined
 }
 
 object BeaconServiceChangeOptions {
@@ -16,7 +16,7 @@ object BeaconServiceChangeOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonAvailable => Unit = null
+    success: /* res */ Available => Unit = null
   ): BeaconServiceChangeOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

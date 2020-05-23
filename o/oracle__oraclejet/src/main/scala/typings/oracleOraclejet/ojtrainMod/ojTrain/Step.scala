@@ -27,9 +27,9 @@ object Step {
     visited: js.UndefOr[Boolean] = js.undefined
   ): Step = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited.asInstanceOf[js.Any])
+    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
 }

@@ -4,16 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext")
-@js.native
-abstract class ApplicationViewTransferContext () extends js.Object {
-   /* unmapped type */ var viewId: js.Any = js.native
+trait ApplicationViewTransferContext extends js.Object {
+   /* unmapped type */ var viewId: js.Any
 }
 
-/* static members */
-@JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext")
-@js.native
-object ApplicationViewTransferContext extends js.Object {
-  var dataPackageFormatId: js.Any = js.native
+object ApplicationViewTransferContext {
+  @scala.inline
+  def apply(viewId: js.Any): ApplicationViewTransferContext = {
+    val __obj = js.Dynamic.literal(viewId = viewId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationViewTransferContext]
+  }
 }
 

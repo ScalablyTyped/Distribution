@@ -42,9 +42,9 @@ object ExportImageSettings {
     format: FileFormats = null,
     margin: js.Any = null,
     multiplePage: js.UndefOr[Boolean] = js.undefined,
-    pageHeight: Int | Double = null,
+    pageHeight: js.UndefOr[Double] = js.undefined,
     pageOrientation: PageOrientations = null,
-    pageWidth: Int | Double = null,
+    pageWidth: js.UndefOr[Double] = js.undefined,
     region: Region = null
   ): ExportImageSettings = {
     val __obj = js.Dynamic.literal()
@@ -52,10 +52,10 @@ object ExportImageSettings {
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage.asInstanceOf[js.Any])
-    if (pageHeight != null) __obj.updateDynamic("pageHeight")(pageHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageHeight)) __obj.updateDynamic("pageHeight")(pageHeight.get.asInstanceOf[js.Any])
     if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation.asInstanceOf[js.Any])
-    if (pageWidth != null) __obj.updateDynamic("pageWidth")(pageWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageWidth)) __obj.updateDynamic("pageWidth")(pageWidth.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportImageSettings]
   }

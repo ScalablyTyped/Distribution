@@ -2,14 +2,14 @@ package typings.hubot.mod
 
 import typings.express.mod.Express
 import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
-import typings.hubot.AnonListener
+import typings.hubot.anon.Listener
 import typings.node.NodeJS.Timeout
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
+import typings.qs.mod.ParsedQs
 import typings.scopedHttpClient.mod.Options
 import typings.scopedHttpClient.mod.ScopedClient
 import typings.std.Error
@@ -35,7 +35,7 @@ class Robot[A /* <: Adapter */] protected () extends js.Object {
   val globalHttpOptions: Options = js.native
   @JSName("logger")
   val logger_Original: Log = js.native
-  val middleware: AnonListener[A] = js.native
+  val middleware: Listener[A] = js.native
   val name: String = js.native
   val pingIntervalId: Null | Timeout = js.native
   @JSName("router")
@@ -83,8 +83,11 @@ class Robot[A /* <: Adapter */] protected () extends js.Object {
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def router(req: Request[ParamsDictionary, _, _, Query], res: typings.expressServeStaticCore.mod.Response[_]): js.Any = js.native
-  def router(req: Request[ParamsDictionary, _, _, Query], res: ServerResponse): js.Any = js.native
+  def router(
+    req: Request[ParamsDictionary, _, _, ParsedQs],
+    res: typings.expressServeStaticCore.mod.Response[_]
+  ): js.Any = js.native
+  def router(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
   def router(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[_]): js.Any = js.native
   def router(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   def run(): Unit = js.native

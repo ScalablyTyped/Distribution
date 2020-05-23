@@ -2,7 +2,7 @@ package typings.websocketAsync.mod
 
 import typings.std.CloseEvent
 import typings.std.WebSocket
-import typings.websocketAsync.AnonReject
+import typings.websocketAsync.anon.Reject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebSocketClient extends js.Object {
   var _closeEvent: CloseEvent | Null = js.native
-  var _receiveCallbacksQueue: js.Array[AnonReject] = js.native
+  var _receiveCallbacksQueue: js.Array[Reject] = js.native
   var _receiveDataQueue: js.Array[_] = js.native
   var _socket: WebSocket = js.native
   /**

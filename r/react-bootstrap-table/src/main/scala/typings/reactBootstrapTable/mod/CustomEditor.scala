@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] extends js.Object {
   /**
-  	 * Additional parameters to pass to the getElement function inside the props argument.
-  	 */
+    * Additional parameters to pass to the getElement function inside the props argument.
+    */
   var customEditorParameters: js.UndefOr[js.Object] = js.undefined
   /**
-  	 * Required. Function to use to create the custom cell editor. Takes two parameters:
-  	 *   `onUpdate`: callback function to call to update the value inside the cell.
-  	 *   `props`:
-  	 */
+    * Required. Function to use to create the custom cell editor. Takes two parameters:
+    *   `onUpdate`: callback function to call to update the value inside the cell.
+    *   `props`:
+    */
   def getElement(
     onUpdate: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
@@ -26,7 +26,7 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] 
 
 object CustomEditor {
   @scala.inline
-  def apply[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](
+  def apply[TRow, K](
     getElement: (js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
       Unit

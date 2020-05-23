@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object FindOptions extends js.Object {
   /** Match whole words. */
   @js.native
   sealed trait word extends FindOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FindOptions with Double] = js.native
-  /* 2 */ @js.native
-  object `case` extends TopLevel[`case` with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object word extends TopLevel[word with Double]
   
 }
 

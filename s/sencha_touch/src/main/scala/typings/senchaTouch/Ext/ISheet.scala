@@ -10,36 +10,36 @@ trait ISheet extends IPanel {
   /** [Config Option] (String) */
   var exit: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Returns the value of enter
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getEnter: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of exit
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getExit: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of stretchX
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getStretchX: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of stretchY
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getStretchY: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Sets the value of enter
-  		* @param enter String The new value.
-  		*/
+    * @param enter String The new value.
+    */
   var setEnter: js.UndefOr[js.Function1[/* enter */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of exit
-  		* @param exit String The new value.
-  		*/
+    * @param exit String The new value.
+    */
   var setExit: js.UndefOr[js.Function1[/* exit */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of stretchX
-  		* @param stretchX Boolean The new value.
-  		*/
+    * @param stretchX Boolean The new value.
+    */
   var setStretchX: js.UndefOr[js.Function1[/* stretchX */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of stretchY
-  		* @param stretchY Boolean The new value.
-  		*/
+    * @param stretchY Boolean The new value.
+    */
   var setStretchY: js.UndefOr[js.Function1[/* stretchY */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var stretchX: js.UndefOr[Boolean] = js.undefined
@@ -76,8 +76,8 @@ object ISheet {
     if (setExit != null) __obj.updateDynamic("setExit")(js.Any.fromFunction1(setExit))
     if (setStretchX != null) __obj.updateDynamic("setStretchX")(js.Any.fromFunction1(setStretchX))
     if (setStretchY != null) __obj.updateDynamic("setStretchY")(js.Any.fromFunction1(setStretchY))
-    if (!js.isUndefined(stretchX)) __obj.updateDynamic("stretchX")(stretchX.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchY)) __obj.updateDynamic("stretchY")(stretchY.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretchX)) __obj.updateDynamic("stretchX")(stretchX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretchY)) __obj.updateDynamic("stretchY")(stretchY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISheet]
   }
 }

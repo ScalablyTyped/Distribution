@@ -1,6 +1,6 @@
 package typings.luminoVirtualdom.mod
 
-import typings.luminoVirtualdom.AnonAttrs
+import typings.luminoVirtualdom.anon.Attrs
 import typings.luminoVirtualdom.luminoVirtualdomStrings.element
 import typings.luminoVirtualdom.mod.VirtualElement.IRenderer
 import typings.std.HTMLElement
@@ -80,7 +80,7 @@ object VirtualElement extends js.Object {
       * @param options - Will be populated with the .attrs and .children fields
       * set on the VirtualElement being unrendered.
       */
-    var unrender: js.UndefOr[js.Function2[/* host */ HTMLElement, /* options */ js.UndefOr[AnonAttrs], Unit]] = js.native
+    var unrender: js.UndefOr[js.Function2[/* host */ HTMLElement, /* options */ js.UndefOr[Attrs], Unit]] = js.native
     /**
       * Customize how a DOM node is rendered. If .renderer is set on a given
       * instance of VirtualElement, this function will be called every time
@@ -102,7 +102,7 @@ object VirtualElement extends js.Object {
       * set on the VirtualElement being rendered.
       */
     def render(host: HTMLElement): Unit = js.native
-    def render(host: HTMLElement, options: AnonAttrs): Unit = js.native
+    def render(host: HTMLElement, options: Attrs): Unit = js.native
   }
   
 }

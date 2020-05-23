@@ -31,18 +31,18 @@ trait ICalloutContentStyles extends js.Object {
 object ICalloutContentStyles {
   @scala.inline
   def apply(
-    beak: IStyle = null,
-    beakCurtain: IStyle = null,
-    calloutMain: IStyle = null,
-    container: IStyle = null,
-    root: IStyle = null
+    beak: js.UndefOr[Null | IStyle] = js.undefined,
+    beakCurtain: js.UndefOr[Null | IStyle] = js.undefined,
+    calloutMain: js.UndefOr[Null | IStyle] = js.undefined,
+    container: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
   ): ICalloutContentStyles = {
     val __obj = js.Dynamic.literal()
-    if (beak != null) __obj.updateDynamic("beak")(beak.asInstanceOf[js.Any])
-    if (beakCurtain != null) __obj.updateDynamic("beakCurtain")(beakCurtain.asInstanceOf[js.Any])
-    if (calloutMain != null) __obj.updateDynamic("calloutMain")(calloutMain.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(beak)) __obj.updateDynamic("beak")(beak.asInstanceOf[js.Any])
+    if (!js.isUndefined(beakCurtain)) __obj.updateDynamic("beakCurtain")(beakCurtain.asInstanceOf[js.Any])
+    if (!js.isUndefined(calloutMain)) __obj.updateDynamic("calloutMain")(calloutMain.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalloutContentStyles]
   }
 }

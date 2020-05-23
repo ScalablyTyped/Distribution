@@ -11,7 +11,7 @@ trait ListOnPremisesInstancesInput extends js.Object {
     */
   var nextToken: js.UndefOr[NextToken] = js.native
   /**
-    * The registration status of the on-premises instances:   Deregistered: Include deregistered on-premises instances in the resulting list.   Registered: Include registered on-premises instances in the resulting list.  
+    * The registration status of the on-premises instances:    Deregistered: Include deregistered on-premises instances in the resulting list.    Registered: Include registered on-premises instances in the resulting list.  
     */
   var registrationStatus: js.UndefOr[RegistrationStatus] = js.native
   /**

@@ -25,10 +25,15 @@ trait ListPrefixOptions extends js.Object {
 
 object ListPrefixOptions {
   @scala.inline
-  def apply(delimiter: String = null, limit: Int | Double = null, marker: js.Any = null, prefix: String = null): ListPrefixOptions = {
+  def apply(
+    delimiter: String = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    marker: js.Any = null,
+    prefix: String = null
+  ): ListPrefixOptions = {
     val __obj = js.Dynamic.literal()
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPrefixOptions]

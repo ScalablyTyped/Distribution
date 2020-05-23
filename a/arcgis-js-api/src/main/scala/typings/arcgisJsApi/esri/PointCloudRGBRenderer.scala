@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`point-cloud-rgb`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,8 +24,4 @@ trait PointCloudRGBRenderer
   @JSName("type")
   val type_PointCloudRGBRenderer: `point-cloud-rgb` = js.native
 }
-
-@JSGlobal("__esri.PointCloudRGBRenderer")
-@js.native
-object PointCloudRGBRenderer extends TopLevel[PointCloudRGBRendererConstructor]
 

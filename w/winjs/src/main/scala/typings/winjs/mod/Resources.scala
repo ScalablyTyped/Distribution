@@ -2,7 +2,7 @@ package typings.winjs.mod
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
-import typings.winjs.AnonEmpty
+import typings.winjs.anon.Empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ object Resources extends js.Object {
     * @param resourceId The resource ID of the string to retrieve.
     * @returns An object that can contain these properties: value, empty, lang.
     **/
-  def getString(resourceId: String): AnonEmpty = js.native
+  def getString(resourceId: String): Empty = js.native
   //#endregion Functions
   //#region Events
   /**

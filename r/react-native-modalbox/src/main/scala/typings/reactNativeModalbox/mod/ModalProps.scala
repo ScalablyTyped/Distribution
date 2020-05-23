@@ -161,52 +161,52 @@ trait ModalProps extends js.Object {
 object ModalProps {
   @scala.inline
   def apply(
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     backButtonClose: js.UndefOr[Boolean] = js.undefined,
     backdrop: js.UndefOr[Boolean] = js.undefined,
     backdropColor: String = null,
     backdropContent: ReactNode = null,
-    backdropOpacity: Int | Double = null,
+    backdropOpacity: js.UndefOr[Double] = js.undefined,
     backdropPressToClose: js.UndefOr[Boolean] = js.undefined,
     coverScreen: js.UndefOr[Boolean] = js.undefined,
     entry: top | bottom | String = null,
     isDisabled: js.UndefOr[Boolean] = js.undefined,
     isOpen: js.UndefOr[Boolean] = js.undefined,
-    keyboardTopOffset: Int | Double = null,
+    keyboardTopOffset: js.UndefOr[Double] = js.undefined,
     onClosed: () => Unit = null,
     onClosingState: /* state */ Boolean => Unit = null,
     onOpened: () => Unit = null,
     position: top | center | bottom | String = null,
     startOpen: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    swipeArea: Int | Double = null,
-    swipeThreshold: Int | Double = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    swipeArea: js.UndefOr[Double] = js.undefined,
+    swipeThreshold: js.UndefOr[Double] = js.undefined,
     swipeToClose: js.UndefOr[Boolean] = js.undefined,
     useNativeDriver: js.UndefOr[Boolean] = js.undefined
   ): ModalProps = {
     val __obj = js.Dynamic.literal()
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(backButtonClose)) __obj.updateDynamic("backButtonClose")(backButtonClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backButtonClose)) __obj.updateDynamic("backButtonClose")(backButtonClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.get.asInstanceOf[js.Any])
     if (backdropColor != null) __obj.updateDynamic("backdropColor")(backdropColor.asInstanceOf[js.Any])
     if (backdropContent != null) __obj.updateDynamic("backdropContent")(backdropContent.asInstanceOf[js.Any])
-    if (backdropOpacity != null) __obj.updateDynamic("backdropOpacity")(backdropOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdropPressToClose)) __obj.updateDynamic("backdropPressToClose")(backdropPressToClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverScreen)) __obj.updateDynamic("coverScreen")(coverScreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(backdropOpacity)) __obj.updateDynamic("backdropOpacity")(backdropOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backdropPressToClose)) __obj.updateDynamic("backdropPressToClose")(backdropPressToClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverScreen)) __obj.updateDynamic("coverScreen")(coverScreen.get.asInstanceOf[js.Any])
     if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    if (keyboardTopOffset != null) __obj.updateDynamic("keyboardTopOffset")(keyboardTopOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardTopOffset)) __obj.updateDynamic("keyboardTopOffset")(keyboardTopOffset.get.asInstanceOf[js.Any])
     if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction0(onClosed))
     if (onClosingState != null) __obj.updateDynamic("onClosingState")(js.Any.fromFunction1(onClosingState))
     if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction0(onOpened))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOpen)) __obj.updateDynamic("startOpen")(startOpen.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (swipeArea != null) __obj.updateDynamic("swipeArea")(swipeArea.asInstanceOf[js.Any])
-    if (swipeThreshold != null) __obj.updateDynamic("swipeThreshold")(swipeThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeToClose)) __obj.updateDynamic("swipeToClose")(swipeToClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOpen)) __obj.updateDynamic("startOpen")(startOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeArea)) __obj.updateDynamic("swipeArea")(swipeArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeThreshold)) __obj.updateDynamic("swipeThreshold")(swipeThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeToClose)) __obj.updateDynamic("swipeToClose")(swipeToClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalProps]
   }
 }

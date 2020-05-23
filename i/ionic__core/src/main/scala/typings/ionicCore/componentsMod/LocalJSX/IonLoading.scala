@@ -6,6 +6,7 @@ import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
+import typings.ionicCore.typesMod.IonicSafeString
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,7 +44,7 @@ trait IonLoading extends js.Object {
   /**
     * Optional text content to display in the loading indicator.
     */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String | IonicSafeString] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -84,27 +85,27 @@ object IonLoading {
     animated: js.UndefOr[Boolean] = js.undefined,
     backdropDismiss: js.UndefOr[Boolean] = js.undefined,
     cssClass: String | js.Array[String] = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     enterAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
     leaveAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    message: String = null,
+    message: String | IonicSafeString = null,
     mode: ios | md = null,
     onIonLoadingDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonLoadingDidPresent: /* event */ CustomEvent[Unit] => Unit = null,
     onIonLoadingWillDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonLoadingWillPresent: /* event */ CustomEvent[Unit] => Unit = null,
     showBackdrop: js.UndefOr[Boolean] = js.undefined,
-    spinner: SpinnerTypes = null,
+    spinner: js.UndefOr[Null | SpinnerTypes] = js.undefined,
     translucent: js.UndefOr[Boolean] = js.undefined
   ): IonLoading = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss.get.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
-    if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.get.asInstanceOf[js.Any])
     if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction2(leaveAnimation))
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
@@ -112,9 +113,9 @@ object IonLoading {
     if (onIonLoadingDidPresent != null) __obj.updateDynamic("onIonLoadingDidPresent")(js.Any.fromFunction1(onIonLoadingDidPresent))
     if (onIonLoadingWillDismiss != null) __obj.updateDynamic("onIonLoadingWillDismiss")(js.Any.fromFunction1(onIonLoadingWillDismiss))
     if (onIonLoadingWillPresent != null) __obj.updateDynamic("onIonLoadingWillPresent")(js.Any.fromFunction1(onIonLoadingWillPresent))
-    if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop.asInstanceOf[js.Any])
-    if (spinner != null) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinner)) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonLoading]
   }
 }

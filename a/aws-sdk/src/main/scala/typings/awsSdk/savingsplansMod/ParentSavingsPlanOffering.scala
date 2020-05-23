@@ -36,7 +36,7 @@ object ParentSavingsPlanOffering {
   @scala.inline
   def apply(
     currency: CurrencyCode = null,
-    durationSeconds: Int | Double = null,
+    durationSeconds: js.UndefOr[SavingsPlansDuration] = js.undefined,
     offeringId: UUID = null,
     paymentOption: SavingsPlanPaymentOption = null,
     planDescription: SavingsPlanDescription = null,
@@ -44,7 +44,7 @@ object ParentSavingsPlanOffering {
   ): ParentSavingsPlanOffering = {
     val __obj = js.Dynamic.literal()
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (durationSeconds != null) __obj.updateDynamic("durationSeconds")(durationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationSeconds)) __obj.updateDynamic("durationSeconds")(durationSeconds.get.asInstanceOf[js.Any])
     if (offeringId != null) __obj.updateDynamic("offeringId")(offeringId.asInstanceOf[js.Any])
     if (paymentOption != null) __obj.updateDynamic("paymentOption")(paymentOption.asInstanceOf[js.Any])
     if (planDescription != null) __obj.updateDynamic("planDescription")(planDescription.asInstanceOf[js.Any])

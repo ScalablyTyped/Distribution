@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a gyrometer sensor. */
-@JSGlobal("Windows.Devices.Sensors.Gyrometer")
 @js.native
-abstract class Gyrometer () extends js.Object {
+trait Gyrometer extends js.Object {
   /** Gets the device identifier. */
   var deviceId: String = js.native
   /** Gets the minimum report interval supported by the gyrometer. */
@@ -37,16 +36,5 @@ abstract class Gyrometer () extends js.Object {
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Gyrometer, GyrometerReadingChangedEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.Gyrometer")
-@js.native
-object Gyrometer extends js.Object {
-  /**
-    * Returns the default gyrometer.
-    * @return The default gyrometer or null if no integrated gyrometers are found.
-    */
-  def getDefault(): Gyrometer = js.native
 }
 

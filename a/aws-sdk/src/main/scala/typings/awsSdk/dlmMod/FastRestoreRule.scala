@@ -28,13 +28,13 @@ object FastRestoreRule {
   @scala.inline
   def apply(
     AvailabilityZones: AvailabilityZoneList,
-    Count: Int | Double = null,
-    Interval: Int | Double = null,
+    Count: js.UndefOr[Count] = js.undefined,
+    Interval: js.UndefOr[Interval] = js.undefined,
     IntervalUnit: RetentionIntervalUnitValues = null
   ): FastRestoreRule = {
     val __obj = js.Dynamic.literal(AvailabilityZones = AvailabilityZones.asInstanceOf[js.Any])
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
-    if (Interval != null) __obj.updateDynamic("Interval")(Interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval.get.asInstanceOf[js.Any])
     if (IntervalUnit != null) __obj.updateDynamic("IntervalUnit")(IntervalUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastRestoreRule]
   }

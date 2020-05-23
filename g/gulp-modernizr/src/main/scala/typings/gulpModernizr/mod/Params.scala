@@ -1,7 +1,7 @@
 package typings.gulpModernizr.mod
 
-import typings.gulpModernizr.AnonClassPrefix
-import typings.gulpModernizr.AnonSrc
+import typings.gulpModernizr.anon.ClassPrefix
+import typings.gulpModernizr.anon.Src
 import typings.gulpModernizr.gulpModernizrBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,11 +38,11 @@ trait Params extends js.Object {
   /**
     * By default, this task will crawl all *.js, *.css, *.scss files.
     */
-  var files: js.UndefOr[AnonSrc] = js.undefined
+  var files: js.UndefOr[Src] = js.undefined
   /**
     * Based on default settings on http://modernizr.com/download/
     */
-  var options: js.UndefOr[AnonClassPrefix] = js.undefined
+  var options: js.UndefOr[ClassPrefix] = js.undefined
   /**
     * Define any tests you want to explicitly include
     */
@@ -66,15 +66,15 @@ object Params {
     dest: String | `false` = null,
     devFile: String | `false` = null,
     excludeTests: js.Array[String] = null,
-    files: AnonSrc = null,
-    options: AnonClassPrefix = null,
+    files: Src = null,
+    options: ClassPrefix = null,
     tests: js.Array[String] = null,
     uglify: js.UndefOr[Boolean] = js.undefined,
     useBuffers: js.UndefOr[Boolean] = js.undefined
   ): Params = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(crawl)) __obj.updateDynamic("crawl")(crawl.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(crawl)) __obj.updateDynamic("crawl")(crawl.get.asInstanceOf[js.Any])
     if (customTests != null) __obj.updateDynamic("customTests")(customTests.asInstanceOf[js.Any])
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (devFile != null) __obj.updateDynamic("devFile")(devFile.asInstanceOf[js.Any])
@@ -82,8 +82,8 @@ object Params {
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (tests != null) __obj.updateDynamic("tests")(tests.asInstanceOf[js.Any])
-    if (!js.isUndefined(uglify)) __obj.updateDynamic("uglify")(uglify.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBuffers)) __obj.updateDynamic("useBuffers")(useBuffers.asInstanceOf[js.Any])
+    if (!js.isUndefined(uglify)) __obj.updateDynamic("uglify")(uglify.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBuffers)) __obj.updateDynamic("useBuffers")(useBuffers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

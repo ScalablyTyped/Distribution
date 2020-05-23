@@ -36,9 +36,13 @@ object TextEncodeEntry {
   def apply(
     align: ProductionRule[ScaledValueRef[Align]] = null,
     angle: ProductionRule[NumericValueRef] = null,
+    aria: ProductionRule[BooleanValueRef] = null,
+    ariaRole: ProductionRule[StringValueRef] = null,
+    ariaRoleDescription: ProductionRule[StringValueRef] = null,
     baseline: ProductionRule[TextBaselineValueRef] = null,
     blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
+    description: ProductionRule[StringValueRef] = null,
     dir: ProductionRule[ScaledValueRef[TextDirection]] = null,
     dx: ProductionRule[NumericValueRef] = null,
     dy: ProductionRule[NumericValueRef] = null,
@@ -78,9 +82,13 @@ object TextEncodeEntry {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
+    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
+    if (ariaRoleDescription != null) __obj.updateDynamic("ariaRoleDescription")(ariaRoleDescription.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
     if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])

@@ -1,8 +1,8 @@
 package typings.gapiClientTesting.gapi.client.testing
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientTesting.AnonAccesstoken
-import typings.gapiClientTesting.AnonAlt
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientTesting.anon.Accesstoken
+import typings.gapiClientTesting.anon.Alt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait TestMatricesResource extends js.Object {
     * - INVALID_ARGUMENT - if the request is malformed
     * - NOT_FOUND - if the Test Matrix does not exist
     */
-  def cancel(request: AnonAccesstoken): Request_[CancelTestMatrixResponse]
+  def cancel(request: Accesstoken): Request[CancelTestMatrixResponse]
   /**
     * Request to run a matrix of tests according to the given specifications.
     * Unsupported environments will be returned in the state UNSUPPORTED.
@@ -31,7 +31,7 @@ trait TestMatricesResource extends js.Object {
     * - INVALID_ARGUMENT - if the request is malformed or if the matrix expands
     * to more than 200 supported executions
     */
-  def create(request: AnonAlt): Request_[TestMatrix]
+  def create(request: Alt): Request[TestMatrix]
   /**
     * Check the status of a test matrix.
     *
@@ -41,15 +41,15 @@ trait TestMatricesResource extends js.Object {
     * - INVALID_ARGUMENT - if the request is malformed
     * - NOT_FOUND - if the Test Matrix does not exist
     */
-  def get(request: AnonAccesstoken): Request_[TestMatrix]
+  def get(request: Accesstoken): Request[TestMatrix]
 }
 
 object TestMatricesResource {
   @scala.inline
   def apply(
-    cancel: AnonAccesstoken => Request_[CancelTestMatrixResponse],
-    create: AnonAlt => Request_[TestMatrix],
-    get: AnonAccesstoken => Request_[TestMatrix]
+    cancel: Accesstoken => Request[CancelTestMatrixResponse],
+    create: Alt => Request[TestMatrix],
+    get: Accesstoken => Request[TestMatrix]
   ): TestMatricesResource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[TestMatricesResource]

@@ -28,7 +28,7 @@ object JsonSchema {
   @scala.inline
   def apply(
     $schema: String = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     additionalProperties: js.UndefOr[Boolean] = js.undefined,
     default: js.Any = null,
     definitions: js.Any = null,
@@ -44,7 +44,7 @@ object JsonSchema {
     val __obj = js.Dynamic.literal()
     if ($schema != null) __obj.updateDynamic("$schema")($schema.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(additionalProperties)) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(additionalProperties)) __obj.updateDynamic("additionalProperties")(additionalProperties.get.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

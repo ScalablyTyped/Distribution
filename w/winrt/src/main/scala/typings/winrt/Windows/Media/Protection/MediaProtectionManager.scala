@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Protection.MediaProtectionManager")
-@js.native
-class MediaProtectionManager () extends IMediaProtectionManager {
-  /* CompleteClass */
-  override var oncomponentloadfailed: js.Any = js.native
-  /* CompleteClass */
-  override var onrebootneeded: js.Any = js.native
-  /* CompleteClass */
-  override var onservicerequested: js.Any = js.native
-  /* CompleteClass */
-  override var properties: IPropertySet = js.native
+trait MediaProtectionManager extends IMediaProtectionManager
+
+object MediaProtectionManager {
+  @scala.inline
+  def apply(
+    oncomponentloadfailed: js.Any,
+    onrebootneeded: js.Any,
+    onservicerequested: js.Any,
+    properties: IPropertySet
+  ): MediaProtectionManager = {
+    val __obj = js.Dynamic.literal(oncomponentloadfailed = oncomponentloadfailed.asInstanceOf[js.Any], onrebootneeded = onrebootneeded.asInstanceOf[js.Any], onservicerequested = onservicerequested.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaProtectionManager]
+  }
 }
 

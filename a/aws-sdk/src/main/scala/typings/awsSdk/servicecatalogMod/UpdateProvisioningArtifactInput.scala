@@ -42,14 +42,14 @@ object UpdateProvisioningArtifactInput {
     ProductId: Id,
     ProvisioningArtifactId: Id,
     AcceptLanguage: AcceptLanguage = null,
-    Active: js.UndefOr[Boolean] = js.undefined,
+    Active: js.UndefOr[ProvisioningArtifactActive] = js.undefined,
     Description: ProvisioningArtifactDescription = null,
     Guidance: ProvisioningArtifactGuidance = null,
     Name: ProvisioningArtifactName = null
   ): UpdateProvisioningArtifactInput = {
     val __obj = js.Dynamic.literal(ProductId = ProductId.asInstanceOf[js.Any], ProvisioningArtifactId = ProvisioningArtifactId.asInstanceOf[js.Any])
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.asInstanceOf[js.Any])
+    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Guidance != null) __obj.updateDynamic("Guidance")(Guidance.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

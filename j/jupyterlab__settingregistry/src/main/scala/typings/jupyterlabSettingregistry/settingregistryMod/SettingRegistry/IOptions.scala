@@ -39,12 +39,12 @@ object IOptions {
   def apply(
     connector: IDataConnector[IPlugin, String, String, String],
     plugins: js.Array[IPlugin] = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     validator: ISchemaValidator = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

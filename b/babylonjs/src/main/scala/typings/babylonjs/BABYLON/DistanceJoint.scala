@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.DistanceJoint")
 @js.native
-class DistanceJoint protected () extends PhysicsJoint {
-  /**
-    *
-    * @param jointData The data for the Distance-Joint
-    */
-  def this(jointData: DistanceJointData) = this()
+trait DistanceJoint extends PhysicsJoint {
   /**
     * Update the predefined distance.
     * @param maxDistance The maximum preferred distance

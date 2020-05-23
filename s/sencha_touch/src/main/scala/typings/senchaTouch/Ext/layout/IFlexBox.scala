@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 
 trait IFlexBox extends IBox {
   /** [Method] Sets the flex of an item in this box layout
-  		* @param item Ext.Component The item of this layout which you want to update the flex of.
-  		* @param flex Number The flex to set on this method
-  		*/
+    * @param item Ext.Component The item of this layout which you want to update the flex of.
+    * @param flex Number The flex to set on this method
+    */
   var setItemFlex: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[IComponent], /* flex */ js.UndefOr[Double], Unit]
   ] = js.undefined
@@ -140,7 +140,7 @@ object IFlexBox {
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setOrient != null) __obj.updateDynamic("setOrient")(js.Any.fromFunction1(setOrient))
     if (setPack != null) __obj.updateDynamic("setPack")(js.Any.fromFunction1(setPack))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

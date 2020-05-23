@@ -15,12 +15,12 @@ object Web3ProviderEngineOptions {
   def apply(
     blockTracker: js.Any = null,
     blockTrackerProvider: js.Any = null,
-    pollingInterval: Int | Double = null
+    pollingInterval: js.UndefOr[Double] = js.undefined
   ): Web3ProviderEngineOptions = {
     val __obj = js.Dynamic.literal()
     if (blockTracker != null) __obj.updateDynamic("blockTracker")(blockTracker.asInstanceOf[js.Any])
     if (blockTrackerProvider != null) __obj.updateDynamic("blockTrackerProvider")(blockTrackerProvider.asInstanceOf[js.Any])
-    if (pollingInterval != null) __obj.updateDynamic("pollingInterval")(pollingInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollingInterval)) __obj.updateDynamic("pollingInterval")(pollingInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Web3ProviderEngineOptions]
   }
 }

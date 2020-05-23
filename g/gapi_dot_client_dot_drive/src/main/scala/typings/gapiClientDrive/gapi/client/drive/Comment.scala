@@ -1,6 +1,6 @@
 package typings.gapiClientDrive.gapi.client.drive
 
-import typings.gapiClientDrive.AnonMimeType
+import typings.gapiClientDrive.anon.MimeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait Comment extends js.Object {
     * The file content to which the comment refers, typically within the anchor region. For a text file, for example, this would be the text at the location
     * of the comment.
     */
-  var quotedFileContent: js.UndefOr[AnonMimeType] = js.undefined
+  var quotedFileContent: js.UndefOr[MimeType] = js.undefined
   /** The full list of replies to the comment in chronological order. */
   var replies: js.UndefOr[js.Array[Reply]] = js.undefined
   /** Whether the comment has been resolved by one of its replies. */
@@ -47,7 +47,7 @@ object Comment {
     id: String = null,
     kind: String = null,
     modifiedTime: String = null,
-    quotedFileContent: AnonMimeType = null,
+    quotedFileContent: MimeType = null,
     replies: js.Array[Reply] = null,
     resolved: js.UndefOr[Boolean] = js.undefined
   ): Comment = {
@@ -56,14 +56,14 @@ object Comment {
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
     if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime.asInstanceOf[js.Any])
     if (quotedFileContent != null) __obj.updateDynamic("quotedFileContent")(quotedFileContent.asInstanceOf[js.Any])
     if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

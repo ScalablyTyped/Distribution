@@ -1,6 +1,6 @@
 package typings.vision.mod.hapiAugmentingMod
 
-import typings.vision.AnonContext
+import typings.vision.anon.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait HandlerDecorations extends js.Object {
     * (these can be overriden by values explicitly set via the options).
     * @see {@link https://github.com/hapijs/vision/blob/master/API.md#the-view-handler}
     */
-  var view: js.UndefOr[String | AnonContext] = js.undefined
+  var view: js.UndefOr[String | Context] = js.undefined
 }
 
 object HandlerDecorations {
   @scala.inline
-  def apply(view: String | AnonContext = null): HandlerDecorations = {
+  def apply(view: String | Context = null): HandlerDecorations = {
     val __obj = js.Dynamic.literal()
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandlerDecorations]

@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.resourceManager")
 @js.native
-class resourceManager protected () extends js.Object {
-  def this(basePath: String, fileName: String) = this()
+trait resourceManager extends js.Object {
   var basePath: String = js.native
   var externals: StringDictionary[js.Any] = js.native
   var fileName: String = js.native

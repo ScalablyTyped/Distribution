@@ -1,6 +1,6 @@
 package typings.flatpickr.minMaxTimePluginMod
 
-import typings.flatpickr.globalsMod._Global_.Date
+import typings.flatpickr.globalsMod.global.Date
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

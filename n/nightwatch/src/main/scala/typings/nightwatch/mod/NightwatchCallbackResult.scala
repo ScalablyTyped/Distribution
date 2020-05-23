@@ -1,6 +1,6 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.AnonClass
+import typings.nightwatch.anon.Class
 import typings.nightwatch.nightwatchNumbers.`0`
 import typings.nightwatch.nightwatchNumbers.`1`
 import typings.std.Error
@@ -21,7 +21,7 @@ object NightwatchCallbackResult {
     __obj.asInstanceOf[NightwatchCallbackResult[T]]
   }
   @scala.inline
-  def NightwatchCallbackResultError[T](state: Error | String, status: `1`, value: AnonClass): NightwatchCallbackResult[T] = {
+  def NightwatchCallbackResultError[T](state: Error | String, status: `1`, value: Class): NightwatchCallbackResult[T] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchCallbackResult[T]]
   }

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/index.node", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/index.node", JSImport.Namespace)
 @js.native
 object indexDotnodeMod extends js.Object {
   def registerFirestore(instance: FirebaseNamespace): Unit = js.native

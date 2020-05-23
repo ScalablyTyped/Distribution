@@ -1,7 +1,7 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyWaitablePromiseSaCatch
-import typings.algoliaClientSearch.RequestOptionsPickSaveSyn
+import typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaCatch
+import typings.algoliaClientSearch.anon.RequestOptionsPickSaveSyn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

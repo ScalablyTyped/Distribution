@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.CommandBarButton")
 @js.native
-class CommandBarButton protected () extends js.Object {
+trait CommandBarButton extends js.Object {
   val Application: js.Any = js.native
   var BeginGroup: Boolean = js.native
   val BuiltIn: Boolean = js.native

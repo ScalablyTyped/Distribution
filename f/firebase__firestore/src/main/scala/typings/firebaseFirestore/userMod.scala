@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/auth/user", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/auth/user", JSImport.Namespace)
 @js.native
 object userMod extends js.Object {
   @js.native

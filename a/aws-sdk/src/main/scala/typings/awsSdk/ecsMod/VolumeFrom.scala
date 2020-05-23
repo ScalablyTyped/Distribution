@@ -18,9 +18,9 @@ trait VolumeFrom extends js.Object {
 
 object VolumeFrom {
   @scala.inline
-  def apply(readOnly: js.UndefOr[scala.Boolean] = js.undefined, sourceContainer: String = null): VolumeFrom = {
+  def apply(readOnly: js.UndefOr[BoxedBoolean] = js.undefined, sourceContainer: String = null): VolumeFrom = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (sourceContainer != null) __obj.updateDynamic("sourceContainer")(sourceContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeFrom]
   }

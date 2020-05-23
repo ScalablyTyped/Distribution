@@ -33,14 +33,14 @@ object ReportingDescriptorReference {
   def apply(
     guid: String = null,
     id: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     properties: PropertyBag = null,
     toolComponent: ToolComponentReference = null
   ): ReportingDescriptorReference = {
     val __obj = js.Dynamic.literal()
     if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (toolComponent != null) __obj.updateDynamic("toolComponent")(toolComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportingDescriptorReference]

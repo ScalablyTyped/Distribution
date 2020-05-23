@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.accordionMod
 
-import typings.antDesignReactNative.PartialAccordionStyle
+import typings.antDesignReactNative.anon.PartialAccordionStyle
 import typings.antDesignReactNative.antDesignReactNativeStrings.bottom
 import typings.antDesignReactNative.antDesignReactNativeStrings.center
 import typings.antDesignReactNative.antDesignReactNativeStrings.top
@@ -76,9 +76,9 @@ object AccordionNativeProps {
   def apply[T](
     activeSections: js.Array[Double] = null,
     align: top | center | bottom = null,
-    containerStyle: StyleProp[ViewStyle] = null,
+    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: EasingMode | js.Any = null,
     expandFromBottom: js.UndefOr[Boolean] = js.undefined,
     expandMultiple: js.UndefOr[Boolean] = js.undefined,
@@ -87,9 +87,9 @@ object AccordionNativeProps {
     renderFooter: (/* content */ T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => ReactElement = null,
     renderHeader: (/* content */ T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => ReactElement = null,
     renderSectionTitle: (/* content */ T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => ReactElement = null,
-    sectionContainerStyle: StyleProp[ViewStyle] = null,
+    sectionContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     sections: js.Array[T] = null,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     styles: PartialAccordionStyle = null,
     touchableComponent: ComponentClass[js.Object, ComponentState] = null,
     touchableProps: js.Object = null,
@@ -98,20 +98,20 @@ object AccordionNativeProps {
     val __obj = js.Dynamic.literal()
     if (activeSections != null) __obj.updateDynamic("activeSections")(activeSections.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandFromBottom)) __obj.updateDynamic("expandFromBottom")(expandFromBottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandMultiple)) __obj.updateDynamic("expandMultiple")(expandMultiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandFromBottom)) __obj.updateDynamic("expandFromBottom")(expandFromBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandMultiple)) __obj.updateDynamic("expandMultiple")(expandMultiple.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (renderContent != null) __obj.updateDynamic("renderContent")(js.Any.fromFunction4(renderContent))
     if (renderFooter != null) __obj.updateDynamic("renderFooter")(js.Any.fromFunction4(renderFooter))
     if (renderHeader != null) __obj.updateDynamic("renderHeader")(js.Any.fromFunction4(renderHeader))
     if (renderSectionTitle != null) __obj.updateDynamic("renderSectionTitle")(js.Any.fromFunction4(renderSectionTitle))
-    if (sectionContainerStyle != null) __obj.updateDynamic("sectionContainerStyle")(sectionContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(sectionContainerStyle)) __obj.updateDynamic("sectionContainerStyle")(sectionContainerStyle.asInstanceOf[js.Any])
     if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (touchableComponent != null) __obj.updateDynamic("touchableComponent")(touchableComponent.asInstanceOf[js.Any])
     if (touchableProps != null) __obj.updateDynamic("touchableProps")(touchableProps.asInstanceOf[js.Any])

@@ -24,7 +24,7 @@ trait PageOptions
 object PageOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     data: js.Any = null,
     onHide: () => Unit = null,
     onLoad: /* options */ js.Any => Unit = null,

@@ -23,14 +23,14 @@ trait JQuery extends js.Object {
   /** Note that in IE the textarea or text input must have the focus before calling this method. You can ensure this by calling the focus() method of the element (or its jQuery object). */
   def getSelection(): Selection = js.native
   /**
-  	 * Inserts the specified text at the specified character position within the text input or textarea element and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
-  	 *
-  	 * - "select": Selects the inserted text
-  	 * - "collapseToStart": Collapses the selection to a caret at the start of the inserted text
-  	 * - "collapseToEnd": Collapses the selection to a caret at the end of the inserted text
-  	 *
-  	 * If no value is supplied for selectionBehaviour, the selection is not changed and left at the mercy of the browser (placing the caret at the start is not uncommon when the textarea's value is changed).
-  	 */
+    * Inserts the specified text at the specified character position within the text input or textarea element and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
+    *
+    * - "select": Selects the inserted text
+    * - "collapseToStart": Collapses the selection to a caret at the start of the inserted text
+    * - "collapseToEnd": Collapses the selection to a caret at the end of the inserted text
+    *
+    * If no value is supplied for selectionBehaviour, the selection is not changed and left at the mercy of the browser (placing the caret at the start is not uncommon when the textarea's value is changed).
+    */
   def insertText(text: String, pos: Double): JQuery = js.native
   @JSName("insertText")
   def insertText_collapseToEnd(text: String, pos: Double, selectionBehaviour: collapseToEnd): JQuery = js.native
@@ -39,14 +39,14 @@ trait JQuery extends js.Object {
   @JSName("insertText")
   def insertText_select(text: String, pos: Double, selectionBehaviour: select): JQuery = js.native
   /**
-  	 * Replaces the currently selected text in the text input or textarea element with the specified text and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
-  	 *
-  	 * - "select": Selects the inserted text
-  	 * - "collapseToStart": Collapses the selection to a caret at the start of the inserted text
-  	 * - "collapseToEnd": Collapses the selection to a caret at the end of the inserted text
-  	 *
-  	 * If no value is supplied for selectionBehaviour, "collapseToEnd" is assumed.
-  	 */
+    * Replaces the currently selected text in the text input or textarea element with the specified text and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
+    *
+    * - "select": Selects the inserted text
+    * - "collapseToStart": Collapses the selection to a caret at the start of the inserted text
+    * - "collapseToEnd": Collapses the selection to a caret at the end of the inserted text
+    *
+    * If no value is supplied for selectionBehaviour, "collapseToEnd" is assumed.
+    */
   def replaceSelectedText(text: String): JQuery = js.native
   @JSName("replaceSelectedText")
   def replaceSelectedText_collapseToEnd(text: String, selectionBehaviour: collapseToEnd): JQuery = js.native
@@ -58,14 +58,14 @@ trait JQuery extends js.Object {
   def setSelection(start: Double): JQuery = js.native
   def setSelection(start: Double, end: Double): JQuery = js.native
   /**
-  	 * Surrounds the currently selected text in the text input or textarea element with the specified pieces of text and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
-  	 *
-  	 * - "select": Selects the inserted text
-  	 * - "collapseToStart": Collapses the selection to a caret at the start of the inserted text
-  	 * - "collapseToEnd": Collapses the selection to a caret at the end of the inserted text
-  	 *
-  	 * If no value is supplied for selectionBehaviour, "select" is assumed.
-  	 */
+    * Surrounds the currently selected text in the text input or textarea element with the specified pieces of text and optionally updates the selection depending on the value of selectionBehaviour. Possible values are:
+    *
+    * - "select": Selects the inserted text
+    * - "collapseToStart": Collapses the selection to a caret at the start of the inserted text
+    * - "collapseToEnd": Collapses the selection to a caret at the end of the inserted text
+    *
+    * If no value is supplied for selectionBehaviour, "select" is assumed.
+    */
   def surroundSelectedText(textBefore: String, textAfter: String): JQuery = js.native
   @JSName("surroundSelectedText")
   def surroundSelectedText_collapseToEnd(textBefore: String, textAfter: String, selectionBehaviour: collapseToEnd): JQuery = js.native

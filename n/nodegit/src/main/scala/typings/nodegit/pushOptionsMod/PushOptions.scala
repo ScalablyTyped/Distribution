@@ -20,20 +20,20 @@ trait PushOptions
 object PushOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     callbacks: RemoteCallbacks = null,
     customHeaders: Strarray | String | js.Array[String] = null,
-    pbParallelism: Int | Double = null,
+    pbParallelism: js.UndefOr[Double] = js.undefined,
     proxyOpts: ProxyOptions = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): PushOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (pbParallelism != null) __obj.updateDynamic("pbParallelism")(pbParallelism.asInstanceOf[js.Any])
+    if (!js.isUndefined(pbParallelism)) __obj.updateDynamic("pbParallelism")(pbParallelism.get.asInstanceOf[js.Any])
     if (proxyOpts != null) __obj.updateDynamic("proxyOpts")(proxyOpts.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushOptions]
   }
 }

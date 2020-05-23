@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorSettings {
-  type Param = (typings.semanticUiProgress.PickImplbar | typings.semanticUiProgress.PickImpllabelLabel | typings.semanticUiProgress.PickImplprogress) with typings.semanticUiProgress.PartialPickImplkeyofImplBar
+  type Param = (typings.semanticUiProgress.anon.PickImplbar | typings.semanticUiProgress.anon.PickImpllabelLabel | typings.semanticUiProgress.anon.PickImplprogress) with typings.semanticUiProgress.anon.PartialPickImplkeyofImplBar
 }

@@ -1,6 +1,6 @@
 package typings.sipJs.libSessionMod
 
-import typings.sipJs.AnonModifiers
+import typings.sipJs.anon.Modifiers
 import typings.sipJs.bodyMod.Body
 import typings.sipJs.coreMod.IncomingRequestMessage
 import typings.sipJs.coreMod.InviteServerTransaction
@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.events.mod.EventEmitter because Already inherited
 - typings.sipJs.serverContextMod.ServerContext because Inheritance from two classes. Inlined incomingRequest, request, transaction, progress, progress, accept, accept, reject, reject, reply, reply, onRequestTimeout, onTransportError */ @JSImport("sip.js/lib/Session", "InviteServerContext")
 @js.native
@@ -136,8 +136,8 @@ class InviteServerContext_ protected () extends Session {
     */
   @JSName("accept")
   def accept_This(): this.type = js.native
-  /* protected */ def generateResponseOfferAnswer(options: AnonModifiers): js.Promise[js.UndefOr[Body]] = js.native
-  /* protected */ def handlePrackOfferAnswer(request: IncomingPrackRequest, options: AnonModifiers): js.Promise[js.UndefOr[Body]] = js.native
+  /* protected */ def generateResponseOfferAnswer(options: Modifiers): js.Promise[js.UndefOr[Body]] = js.native
+  /* protected */ def handlePrackOfferAnswer(request: IncomingPrackRequest, options: Modifiers): js.Promise[js.UndefOr[Body]] = js.native
   def onCancel(message: IncomingRequestMessage): Unit = js.native
   def progress(): js.Any = js.native
   def progress(options: js.Any): js.Any = js.native

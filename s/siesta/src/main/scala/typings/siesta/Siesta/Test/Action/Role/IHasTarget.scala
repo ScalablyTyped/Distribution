@@ -18,7 +18,7 @@ object IHasTarget {
   def apply(el: js.Any = null, passTargetToNext: js.UndefOr[Boolean] = js.undefined, target: js.Any = null): IHasTarget = {
     val __obj = js.Dynamic.literal()
     if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext.asInstanceOf[js.Any])
+    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHasTarget]
   }

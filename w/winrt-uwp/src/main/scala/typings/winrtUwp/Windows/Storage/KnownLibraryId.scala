@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object KnownLibraryId extends js.Object {
   /** Videos library. */
   @js.native
   sealed trait videos extends KnownLibraryId
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KnownLibraryId with Double] = js.native
-  /* 3 */ @js.native
-  object documents extends TopLevel[documents with Double]
-  
-  /* 0 */ @js.native
-  object music extends TopLevel[music with Double]
-  
-  /* 1 */ @js.native
-  object pictures extends TopLevel[pictures with Double]
-  
-  /* 2 */ @js.native
-  object videos extends TopLevel[videos with Double]
   
 }
 

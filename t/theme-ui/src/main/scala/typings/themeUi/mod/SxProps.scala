@@ -21,9 +21,9 @@ trait SxProps extends js.Object {
 
 object SxProps {
   @scala.inline
-  def apply(sx: SxStyleProp = null): SxProps = {
+  def apply(sx: js.UndefOr[Null | SxStyleProp] = js.undefined): SxProps = {
     val __obj = js.Dynamic.literal()
-    if (sx != null) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
+    if (!js.isUndefined(sx)) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
     __obj.asInstanceOf[SxProps]
   }
 }

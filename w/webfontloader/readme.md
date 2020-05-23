@@ -1,7 +1,7 @@
 
 # Scala.js typings for webfontloader
 
-Typings are for version 1.6.4
+Typings are for version 1.6.28
 
 ## Library description:
 Web Font Loader gives you added control when using linked fonts via @font-face.

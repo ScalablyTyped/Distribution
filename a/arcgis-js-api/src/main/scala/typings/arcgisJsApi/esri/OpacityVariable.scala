@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +26,4 @@ trait OpacityVariable extends VisualVariable {
   @JSName("type")
   val type_OpacityVariable: typings.arcgisJsApi.arcgisJsApiStrings.opacity = js.native
 }
-
-@JSGlobal("__esri.OpacityVariable")
-@js.native
-object OpacityVariable extends TopLevel[OpacityVariableConstructor]
 

@@ -12,11 +12,15 @@ trait BaseOptions extends js.Object {
 
 object BaseOptions {
   @scala.inline
-  def apply(fill: js.UndefOr[Boolean] = js.undefined, height: Int | Double = null, width: Int | Double = null): BaseOptions = {
+  def apply(
+    fill: js.UndefOr[Boolean] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): BaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]
   }
 }

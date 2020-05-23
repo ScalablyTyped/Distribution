@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-beautify
 
-Typings are for version 1.8.3
+Typings are for version 1.11.0
 
 ## Library description:
 beautifier.io for node

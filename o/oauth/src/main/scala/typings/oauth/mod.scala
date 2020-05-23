@@ -8,6 +8,8 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.UrlWithStringQuery
+import typings.oauth.anon.AccessTokenHttpMethod
+import typings.oauth.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,7 +82,7 @@ object mod extends js.Object {
     var NONCE_CHARS: js.Array[String] = js.native
     var _accessUrl: String = js.native
     var _authorize_callback: String = js.native
-    var _clientOptions: AnonAccessTokenHttpMethod = js.native
+    var _clientOptions: AccessTokenHttpMethod = js.native
     var _consumerKey: String = js.native
     var _consumerSecret: String = js.native
     var _headers: OutgoingHttpHeaders = js.native
@@ -220,7 +222,7 @@ object mod extends js.Object {
       post_content_type: String,
       callback: dataCallback
     ): ClientRequest = js.native
-    def setClientOptions(options: AnonAccessTokenHttpMethod): Unit = js.native
+    def setClientOptions(options: AccessTokenHttpMethod): Unit = js.native
     def signUrl(url: String, oauth_token: String, oauth_token_secret: String): String = js.native
     def signUrl(url: String, oauth_token: String, oauth_token_secret: String, method: String): String = js.native
   }
@@ -336,20 +338,20 @@ object mod extends js.Object {
   }
   
   type dataCallback = js.Function3[
-    /* err */ AnonData, 
+    /* err */ Data, 
     /* result */ js.UndefOr[String | Buffer], 
     /* response */ js.UndefOr[IncomingMessage], 
     js.Any
   ]
   type oauth1tokenCallback = js.Function4[
-    /* err */ AnonData, 
+    /* err */ Data, 
     /* token */ String, 
     /* token_secret */ String, 
     /* parsedQueryString */ js.Any, 
     js.Any
   ]
   type oauth2tokenCallback = js.Function4[
-    /* err */ AnonData, 
+    /* err */ Data, 
     /* access_token */ String, 
     /* refresh_token */ String, 
     /* result */ js.Any, 

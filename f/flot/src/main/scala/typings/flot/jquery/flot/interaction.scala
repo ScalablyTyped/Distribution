@@ -10,9 +10,9 @@ trait interaction extends js.Object {
 
 object interaction {
   @scala.inline
-  def apply(redrawOverlayInterval: Int | Double = null): interaction = {
+  def apply(redrawOverlayInterval: js.UndefOr[Double] = js.undefined): interaction = {
     val __obj = js.Dynamic.literal()
-    if (redrawOverlayInterval != null) __obj.updateDynamic("redrawOverlayInterval")(redrawOverlayInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOverlayInterval)) __obj.updateDynamic("redrawOverlayInterval")(redrawOverlayInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[interaction]
   }
 }

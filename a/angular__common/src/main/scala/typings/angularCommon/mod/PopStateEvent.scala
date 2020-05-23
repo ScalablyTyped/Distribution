@@ -20,7 +20,7 @@ object PopStateEvent {
     url: String = null
   ): PopStateEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pop)) __obj.updateDynamic("pop")(pop.asInstanceOf[js.Any])
+    if (!js.isUndefined(pop)) __obj.updateDynamic("pop")(pop.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

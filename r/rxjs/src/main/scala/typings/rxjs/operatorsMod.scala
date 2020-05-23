@@ -33,34 +33,15 @@ object operatorsMod extends js.Object {
   def bufferCount[T](bufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
   def bufferCount[T](bufferSize: Double, startBufferEvery: Double): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double): OperatorFunction[T, js.Array[T]] = js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[scala.Nothing], maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[Double | Null], maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](
     bufferTimeSpan: Double,
-    bufferCreationInterval: js.UndefOr[scala.Nothing],
+    bufferCreationInterval: js.UndefOr[Double | Null],
     maxBufferSize: Double,
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, js.Array[T]] = js.native
-  def bufferTime[T](
-    bufferTimeSpan: Double,
-    bufferCreationInterval: js.UndefOr[scala.Nothing],
     scheduler: SchedulerLike
   ): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): OperatorFunction[T, js.Array[T]] = js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
-  def bufferTime[T](
-    bufferTimeSpan: Double,
-    bufferCreationInterval: Double,
-    maxBufferSize: Double,
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
-  def bufferTime[T](
-    bufferTimeSpan: Double,
-    bufferCreationInterval: Null,
-    maxBufferSize: Double,
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
   def bufferToggle[T, O](
@@ -698,31 +679,21 @@ object operatorsMod extends js.Object {
   @JSName("takeWhile")
   def takeWhile_false[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], inclusive: `false`): OperatorFunction[T, S] = js.native
   def tap[T](): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* error */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.UndefOr[Null], error: js.UndefOr[Null], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.UndefOr[Null], error: js.Function1[/* error */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](
-    next: js.UndefOr[scala.Nothing],
+    next: js.UndefOr[Null],
     error: js.Function1[/* error */ js.Any, Unit],
     complete: js.Function0[Unit]
   ): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.UndefOr[scala.Nothing], error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](next: js.Function1[/* x */ T, Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](
-    next: js.Function1[/* value */ T, Unit],
-    error: js.UndefOr[scala.Nothing],
-    complete: js.Function0[Unit]
-  ): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.Function1[/* value */ T, Unit], error: js.UndefOr[Null], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](
     next: js.Function1[/* x */ T, Unit],
     error: js.Function1[/* e */ js.Any, Unit],
     complete: js.Function0[Unit]
   ): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.Function1[/* value */ T, Unit], error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: Null, error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: Null, error: js.Function1[/* error */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: Null, error: js.Function1[/* error */ js.Any, Unit], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: Null, error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](observer: PartialObserver[T]): MonoTypeOperatorFunction[T] = js.native
   def throttle[T](durationSelector: js.Function1[/* value */ T, SubscribableOrPromise[_]]): MonoTypeOperatorFunction[T] = js.native
   def throttle[T](durationSelector: js.Function1[/* value */ T, SubscribableOrPromise[_]], config: ThrottleConfig): MonoTypeOperatorFunction[T] = js.native

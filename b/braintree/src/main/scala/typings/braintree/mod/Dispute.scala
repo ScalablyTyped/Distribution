@@ -1,6 +1,6 @@
 package typings.braintree.mod
 
-import typings.braintree.AnonAmount
+import typings.braintree.anon.Amount
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +28,7 @@ class Dispute () extends js.Object {
   var replyByDate: Date = js.native
   var status: DisputeStatus = js.native
   var statusHistory: DisputeStatusHistory = js.native
-  var transaction: AnonAmount = js.native
+  var transaction: Amount = js.native
   var updatedAt: Date = js.native
 }
 

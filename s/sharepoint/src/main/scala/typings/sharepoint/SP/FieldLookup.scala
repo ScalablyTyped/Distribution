@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.FieldLookup")
 @js.native
-class FieldLookup () extends Field {
+trait FieldLookup extends Field {
   def get_allowMultipleValues(): Boolean = js.native
   def get_isRelationship(): Boolean = js.native
   def get_lookupField(): String = js.native

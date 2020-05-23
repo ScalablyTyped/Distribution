@@ -21,12 +21,12 @@ object WriteRecord {
     path: Path,
     visible: Boolean,
     writeId: Double,
-    children: StringDictionary[Node] = null,
-    snap: Node = null
+    children: js.UndefOr[Null | StringDictionary[Node]] = js.undefined,
+    snap: js.UndefOr[Null | Node] = js.undefined
   ): WriteRecord = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], writeId = writeId.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteRecord]
   }
 }

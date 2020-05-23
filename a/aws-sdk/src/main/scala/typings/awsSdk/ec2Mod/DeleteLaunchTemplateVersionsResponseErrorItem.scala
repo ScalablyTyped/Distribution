@@ -30,13 +30,13 @@ object DeleteLaunchTemplateVersionsResponseErrorItem {
     LaunchTemplateId: String = null,
     LaunchTemplateName: String = null,
     ResponseError: ResponseError = null,
-    VersionNumber: Int | scala.Double = null
+    VersionNumber: js.UndefOr[Long] = js.undefined
   ): DeleteLaunchTemplateVersionsResponseErrorItem = {
     val __obj = js.Dynamic.literal()
     if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
     if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
     if (ResponseError != null) __obj.updateDynamic("ResponseError")(ResponseError.asInstanceOf[js.Any])
-    if (VersionNumber != null) __obj.updateDynamic("VersionNumber")(VersionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLaunchTemplateVersionsResponseErrorItem]
   }
 }

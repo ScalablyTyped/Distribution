@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.UserProfiles
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,53 +55,6 @@ object ObjectTypes extends js.Object {
   
   @js.native
   sealed trait webLog extends ObjectTypes
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ObjectTypes with Double] = js.native
-  /* 14 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 3 */ @js.native
-  object anniversary extends TopLevel[anniversary with Double]
-  
-  /* 7 */ @js.native
-  object colleague extends TopLevel[colleague with Double]
-  
-  /* 11 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 4 */ @js.native
-  object dlMembership extends TopLevel[dlMembership with Double]
-  
-  /* 2 */ @js.native
-  object multiValueProperty extends TopLevel[multiValueProperty with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 13 */ @js.native
-  object organizationMembership extends TopLevel[organizationMembership with Double]
-  
-  /* 12 */ @js.native
-  object organizationProfile extends TopLevel[organizationProfile with Double]
-  
-  /* 8 */ @js.native
-  object personalizationSite extends TopLevel[personalizationSite with Double]
-  
-  /* 6 */ @js.native
-  object quickLink extends TopLevel[quickLink with Double]
-  
-  /* 1 */ @js.native
-  object singleValueProperty extends TopLevel[singleValueProperty with Double]
-  
-  /* 5 */ @js.native
-  object siteMembership extends TopLevel[siteMembership with Double]
-  
-  /* 9 */ @js.native
-  object userProfile extends TopLevel[userProfile with Double]
-  
-  /* 10 */ @js.native
-  object webLog extends TopLevel[webLog with Double]
   
 }
 

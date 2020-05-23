@@ -1,0 +1,58 @@
+package typings.sharepoint.global.SP
+
+import typings.microsoftAjax.Sys.Net.WebRequest
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("SP.ClientRequest")
+@js.native
+class ClientRequest ()
+  extends typings.sharepoint.SP.ClientRequest {
+  /* CompleteClass */
+  override def add_requestFailed(
+    value: js.Function2[
+      /* sender */ js.Any, 
+      /* args */ typings.sharepoint.SP.ClientRequestFailedEventArgs, 
+      Unit
+    ]
+  ): Unit = js.native
+  /* CompleteClass */
+  override def add_requestSucceeded(
+    value: js.Function2[
+      /* sender */ js.Any, 
+      /* args */ typings.sharepoint.SP.ClientRequestSucceededEventArgs, 
+      Unit
+    ]
+  ): Unit = js.native
+  /* CompleteClass */
+  override def get_navigateWhenServerRedirect(): Boolean = js.native
+  /* CompleteClass */
+  override def get_webRequest(): WebRequest = js.native
+  /* CompleteClass */
+  override def remove_requestFailed(
+    value: js.Function2[
+      /* sender */ js.Any, 
+      /* args */ typings.sharepoint.SP.ClientRequestFailedEventArgs, 
+      Unit
+    ]
+  ): Unit = js.native
+  /* CompleteClass */
+  override def remove_requestSucceeded(
+    value: js.Function2[
+      /* sender */ js.Any, 
+      /* args */ typings.sharepoint.SP.ClientRequestSucceededEventArgs, 
+      Unit
+    ]
+  ): Unit = js.native
+  /* CompleteClass */
+  override def set_navigateWhenServerRedirect(value: Boolean): Unit = js.native
+}
+
+/* static members */
+@JSGlobal("SP.ClientRequest")
+@js.native
+object ClientRequest extends js.Object {
+  def get_nextSequenceId(): Double = js.native
+}
+

@@ -1,7 +1,7 @@
 package typings.qlik.mod
 
-import typings.qlik.AnonGetContent
-import typings.qlik.AnonNoInteraction
+import typings.qlik.anon.GetContent
+import typings.qlik.anon.NoInteraction
 import typings.qlik.qlikStrings.CurrentSelections
 import typings.qlik.qlikStrings.`0`
 import typings.qlik.qlikStrings.`1`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait App extends js.Object {
-  var variable: AnonGetContent = js.native
+  var variable: GetContent = js.native
   def addAlternateState(qStateName: String): js.Promise[_] = js.native
   def back(): js.Promise[_] = js.native
   def clearrAll(): js.Promise[_] = js.native
@@ -63,19 +63,19 @@ trait App extends js.Object {
   def getobject(): js.Promise[_] = js.native
   def getobject(elem: String): js.Promise[_] = js.native
   def getobject(elem: String, id: String): js.Promise[_] = js.native
-  def getobject(elem: String, id: String, options: AnonNoInteraction): js.Promise[_] = js.native
+  def getobject(elem: String, id: String, options: NoInteraction): js.Promise[_] = js.native
   def getobject(elem: HTMLElement): js.Promise[_] = js.native
   def getobject(elem: HTMLElement, id: String): js.Promise[_] = js.native
-  def getobject(elem: HTMLElement, id: String, options: AnonNoInteraction): js.Promise[_] = js.native
+  def getobject(elem: HTMLElement, id: String, options: NoInteraction): js.Promise[_] = js.native
   def getobjectProperties(id: String): js.Promise[_] = js.native
   @JSName("getobject")
   def getobject_CurrentSelections(elem: String, id: CurrentSelections): js.Promise[_] = js.native
   @JSName("getobject")
-  def getobject_CurrentSelections(elem: String, id: CurrentSelections, options: AnonNoInteraction): js.Promise[_] = js.native
+  def getobject_CurrentSelections(elem: String, id: CurrentSelections, options: NoInteraction): js.Promise[_] = js.native
   @JSName("getobject")
   def getobject_CurrentSelections(elem: HTMLElement, id: CurrentSelections): js.Promise[_] = js.native
   @JSName("getobject")
-  def getobject_CurrentSelections(elem: HTMLElement, id: CurrentSelections, options: AnonNoInteraction): js.Promise[_] = js.native
+  def getobject_CurrentSelections(elem: HTMLElement, id: CurrentSelections, options: NoInteraction): js.Promise[_] = js.native
   def lockAll(): js.Promise[_] = js.native
   def lockAll(state: String): js.Promise[_] = js.native
   def removeAlternateState(qStateName: String): js.Promise[_] = js.native

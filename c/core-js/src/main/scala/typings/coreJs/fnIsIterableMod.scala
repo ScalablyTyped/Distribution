@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/is-iterable", JSImport.Namespace)
 @js.native
 object fnIsIterableMod
-  extends TopLevel[js.Function1[/* value */ js.Any, Boolean]]
+  extends TopLevel[js.Function1[/* target */ js.Any, Boolean]]
 

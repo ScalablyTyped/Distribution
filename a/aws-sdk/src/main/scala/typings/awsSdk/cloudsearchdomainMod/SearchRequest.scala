@@ -73,13 +73,13 @@ object SearchRequest {
     facet: Facet = null,
     filterQuery: FilterQuery = null,
     highlight: Highlight = null,
-    partial: js.UndefOr[Boolean] = js.undefined,
+    partial: js.UndefOr[Partial] = js.undefined,
     queryOptions: QueryOptions = null,
     queryParser: QueryParser = null,
     `return`: Return = null,
-    size: Int | scala.Double = null,
+    size: js.UndefOr[Size] = js.undefined,
     sort: Sort = null,
-    start: Int | scala.Double = null,
+    start: js.UndefOr[Start] = js.undefined,
     stats: Stat = null
   ): SearchRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
@@ -88,13 +88,13 @@ object SearchRequest {
     if (facet != null) __obj.updateDynamic("facet")(facet.asInstanceOf[js.Any])
     if (filterQuery != null) __obj.updateDynamic("filterQuery")(filterQuery.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.get.asInstanceOf[js.Any])
     if (queryOptions != null) __obj.updateDynamic("queryOptions")(queryOptions.asInstanceOf[js.Any])
     if (queryParser != null) __obj.updateDynamic("queryParser")(queryParser.asInstanceOf[js.Any])
     if (`return` != null) __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchRequest]
   }

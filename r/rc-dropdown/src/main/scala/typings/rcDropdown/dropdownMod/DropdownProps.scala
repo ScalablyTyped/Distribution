@@ -2,7 +2,7 @@ package typings.rcDropdown.dropdownMod
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,15 +16,15 @@ trait DropdownProps extends js.Object {
   var animation: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationType */ js.Any
   ] = js.undefined
-  var children: js.Any
-  var getPopupContainer: js.Any
+  var children: js.UndefOr[js.Any] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Any] = js.undefined
   var hideAction: js.UndefOr[
     js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ _
     ]
   ] = js.undefined
   var minOverlayWidthMatchTrigger: js.UndefOr[Boolean] = js.undefined
-  var onOverlayClick: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  var onOverlayClick: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
   var openClassName: js.UndefOr[String] = js.undefined
   var overlay: js.UndefOr[js.Function0[ReactElement] | ReactElement] = js.undefined
@@ -52,16 +52,16 @@ trait DropdownProps extends js.Object {
 object DropdownProps {
   @scala.inline
   def apply(
-    children: js.Any,
-    getPopupContainer: js.Any,
     align: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     alignPoint: js.UndefOr[Boolean] = js.undefined,
     animation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationType */ js.Any = null,
+    children: js.Any = null,
+    getPopupContainer: js.Any = null,
     hideAction: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ _
     ] = null,
     minOverlayWidthMatchTrigger: js.UndefOr[Boolean] = js.undefined,
-    onOverlayClick: /* e */ Event_ => Unit = null,
+    onOverlayClick: /* e */ Event => Unit = null,
     onVisibleChange: /* visible */ Boolean => Unit = null,
     openClassName: String = null,
     overlay: js.Function0[ReactElement] | ReactElement = null,
@@ -79,12 +79,14 @@ object DropdownProps {
     ]) = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): DropdownProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], getPopupContainer = getPopupContainer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignPoint)) __obj.updateDynamic("alignPoint")(alignPoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignPoint)) __obj.updateDynamic("alignPoint")(alignPoint.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer.asInstanceOf[js.Any])
     if (hideAction != null) __obj.updateDynamic("hideAction")(hideAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(minOverlayWidthMatchTrigger)) __obj.updateDynamic("minOverlayWidthMatchTrigger")(minOverlayWidthMatchTrigger.asInstanceOf[js.Any])
+    if (!js.isUndefined(minOverlayWidthMatchTrigger)) __obj.updateDynamic("minOverlayWidthMatchTrigger")(minOverlayWidthMatchTrigger.get.asInstanceOf[js.Any])
     if (onOverlayClick != null) __obj.updateDynamic("onOverlayClick")(js.Any.fromFunction1(onOverlayClick))
     if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1(onVisibleChange))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName.asInstanceOf[js.Any])
@@ -97,7 +99,7 @@ object DropdownProps {
     if (showAction != null) __obj.updateDynamic("showAction")(showAction.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownProps]
   }
 }

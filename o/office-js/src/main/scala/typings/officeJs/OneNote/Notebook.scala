@@ -1,10 +1,10 @@
 package typings.officeJs.OneNote
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OneNote.Interfaces.NotebookData
 import typings.officeJs.OneNote.Interfaces.NotebookLoadOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.Notebook")
 @js.native
-class Notebook () extends ClientObject {
+trait Notebook extends ClientObject {
   /**
     *
     * The url of the site that this notebook is located. Read only
@@ -113,8 +112,8 @@ class Notebook () extends ClientObject {
   def load(): Notebook = js.native
   def load(option: String): Notebook = js.native
   def load(option: js.Array[String]): Notebook = js.native
-  def load(option: AnonExpand): Notebook = js.native
   def load(option: NotebookLoadOptions): Notebook = js.native
+  def load(option: Expand): Notebook = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original OneNote.Notebook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.NotebookData`) that contains shallow copies of any loaded child properties from the original object.

@@ -1,6 +1,6 @@
 package typings.onfleetNodeOnfleet.recipientsMod
 
-import typings.onfleetNodeOnfleet.PartialCreateRecipientPro
+import typings.onfleetNodeOnfleet.anon.PartialCreateRecipientPro
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

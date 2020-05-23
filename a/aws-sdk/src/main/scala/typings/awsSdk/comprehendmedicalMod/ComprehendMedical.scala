@@ -28,6 +28,19 @@ trait ComprehendMedical extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEntitiesDetectionV2JobResponse, Unit]
   ): Request[DescribeEntitiesDetectionV2JobResponse, AWSError] = js.native
   /**
+    * Gets the properties associated with an InferICD10CM job. Use this operation to get the status of an inference job.
+    */
+  def describeICD10CMInferenceJob(): Request[DescribeICD10CMInferenceJobResponse, AWSError] = js.native
+  def describeICD10CMInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeICD10CMInferenceJobResponse, Unit]): Request[DescribeICD10CMInferenceJobResponse, AWSError] = js.native
+  /**
+    * Gets the properties associated with an InferICD10CM job. Use this operation to get the status of an inference job.
+    */
+  def describeICD10CMInferenceJob(params: DescribeICD10CMInferenceJobRequest): Request[DescribeICD10CMInferenceJobResponse, AWSError] = js.native
+  def describeICD10CMInferenceJob(
+    params: DescribeICD10CMInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeICD10CMInferenceJobResponse, Unit]
+  ): Request[DescribeICD10CMInferenceJobResponse, AWSError] = js.native
+  /**
     * Gets the properties associated with a protected health information (PHI) detection job. Use this operation to get the status of a detection job.
     */
   def describePHIDetectionJob(): Request[DescribePHIDetectionJobResponse, AWSError] = js.native
@@ -40,6 +53,19 @@ trait ComprehendMedical extends Service {
     params: DescribePHIDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePHIDetectionJobResponse, Unit]
   ): Request[DescribePHIDetectionJobResponse, AWSError] = js.native
+  /**
+    * Gets the properties associated with an InferRxNorm job. Use this operation to get the status of an inference job.
+    */
+  def describeRxNormInferenceJob(): Request[DescribeRxNormInferenceJobResponse, AWSError] = js.native
+  def describeRxNormInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRxNormInferenceJobResponse, Unit]): Request[DescribeRxNormInferenceJobResponse, AWSError] = js.native
+  /**
+    * Gets the properties associated with an InferRxNorm job. Use this operation to get the status of an inference job.
+    */
+  def describeRxNormInferenceJob(params: DescribeRxNormInferenceJobRequest): Request[DescribeRxNormInferenceJobResponse, AWSError] = js.native
+  def describeRxNormInferenceJob(
+    params: DescribeRxNormInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRxNormInferenceJobResponse, Unit]
+  ): Request[DescribeRxNormInferenceJobResponse, AWSError] = js.native
   /**
     * The DetectEntities operation is deprecated. You should use the DetectEntitiesV2 operation instead.  Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information .
     */
@@ -119,6 +145,19 @@ trait ComprehendMedical extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListEntitiesDetectionV2JobsResponse, Unit]
   ): Request[ListEntitiesDetectionV2JobsResponse, AWSError] = js.native
   /**
+    * Gets a list of InferICD10CM jobs that you have submitted.
+    */
+  def listICD10CMInferenceJobs(): Request[ListICD10CMInferenceJobsResponse, AWSError] = js.native
+  def listICD10CMInferenceJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListICD10CMInferenceJobsResponse, Unit]): Request[ListICD10CMInferenceJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of InferICD10CM jobs that you have submitted.
+    */
+  def listICD10CMInferenceJobs(params: ListICD10CMInferenceJobsRequest): Request[ListICD10CMInferenceJobsResponse, AWSError] = js.native
+  def listICD10CMInferenceJobs(
+    params: ListICD10CMInferenceJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListICD10CMInferenceJobsResponse, Unit]
+  ): Request[ListICD10CMInferenceJobsResponse, AWSError] = js.native
+  /**
     * Gets a list of protected health information (PHI) detection jobs that you have submitted.
     */
   def listPHIDetectionJobs(): Request[ListPHIDetectionJobsResponse, AWSError] = js.native
@@ -131,6 +170,19 @@ trait ComprehendMedical extends Service {
     params: ListPHIDetectionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPHIDetectionJobsResponse, Unit]
   ): Request[ListPHIDetectionJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of InferRxNorm jobs that you have submitted.
+    */
+  def listRxNormInferenceJobs(): Request[ListRxNormInferenceJobsResponse, AWSError] = js.native
+  def listRxNormInferenceJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListRxNormInferenceJobsResponse, Unit]): Request[ListRxNormInferenceJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of InferRxNorm jobs that you have submitted.
+    */
+  def listRxNormInferenceJobs(params: ListRxNormInferenceJobsRequest): Request[ListRxNormInferenceJobsResponse, AWSError] = js.native
+  def listRxNormInferenceJobs(
+    params: ListRxNormInferenceJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRxNormInferenceJobsResponse, Unit]
+  ): Request[ListRxNormInferenceJobsResponse, AWSError] = js.native
   /**
     * Starts an asynchronous medical entity detection job for a collection of documents. Use the DescribeEntitiesDetectionV2Job operation to track the status of a job.
     */
@@ -145,6 +197,19 @@ trait ComprehendMedical extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartEntitiesDetectionV2JobResponse, Unit]
   ): Request[StartEntitiesDetectionV2JobResponse, AWSError] = js.native
   /**
+    * Starts an asynchronous job to detect medical conditions and link them to the ICD-10-CM ontology. Use the DescribeICD10CMInferenceJob operation to track the status of a job.
+    */
+  def startICD10CMInferenceJob(): Request[StartICD10CMInferenceJobResponse, AWSError] = js.native
+  def startICD10CMInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ StartICD10CMInferenceJobResponse, Unit]): Request[StartICD10CMInferenceJobResponse, AWSError] = js.native
+  /**
+    * Starts an asynchronous job to detect medical conditions and link them to the ICD-10-CM ontology. Use the DescribeICD10CMInferenceJob operation to track the status of a job.
+    */
+  def startICD10CMInferenceJob(params: StartICD10CMInferenceJobRequest): Request[StartICD10CMInferenceJobResponse, AWSError] = js.native
+  def startICD10CMInferenceJob(
+    params: StartICD10CMInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartICD10CMInferenceJobResponse, Unit]
+  ): Request[StartICD10CMInferenceJobResponse, AWSError] = js.native
+  /**
     * Starts an asynchronous job to detect protected health information (PHI). Use the DescribePHIDetectionJob operation to track the status of a job.
     */
   def startPHIDetectionJob(): Request[StartPHIDetectionJobResponse, AWSError] = js.native
@@ -157,6 +222,19 @@ trait ComprehendMedical extends Service {
     params: StartPHIDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartPHIDetectionJobResponse, Unit]
   ): Request[StartPHIDetectionJobResponse, AWSError] = js.native
+  /**
+    * Starts an asynchronous job to detect medication entities and link them to the RxNorm ontology. Use the DescribeRxNormInferenceJob operation to track the status of a job.
+    */
+  def startRxNormInferenceJob(): Request[StartRxNormInferenceJobResponse, AWSError] = js.native
+  def startRxNormInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ StartRxNormInferenceJobResponse, Unit]): Request[StartRxNormInferenceJobResponse, AWSError] = js.native
+  /**
+    * Starts an asynchronous job to detect medication entities and link them to the RxNorm ontology. Use the DescribeRxNormInferenceJob operation to track the status of a job.
+    */
+  def startRxNormInferenceJob(params: StartRxNormInferenceJobRequest): Request[StartRxNormInferenceJobResponse, AWSError] = js.native
+  def startRxNormInferenceJob(
+    params: StartRxNormInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartRxNormInferenceJobResponse, Unit]
+  ): Request[StartRxNormInferenceJobResponse, AWSError] = js.native
   /**
     * Stops a medical entities detection job in progress.
     */
@@ -171,6 +249,19 @@ trait ComprehendMedical extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StopEntitiesDetectionV2JobResponse, Unit]
   ): Request[StopEntitiesDetectionV2JobResponse, AWSError] = js.native
   /**
+    * Stops an InferICD10CM inference job in progress.
+    */
+  def stopICD10CMInferenceJob(): Request[StopICD10CMInferenceJobResponse, AWSError] = js.native
+  def stopICD10CMInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ StopICD10CMInferenceJobResponse, Unit]): Request[StopICD10CMInferenceJobResponse, AWSError] = js.native
+  /**
+    * Stops an InferICD10CM inference job in progress.
+    */
+  def stopICD10CMInferenceJob(params: StopICD10CMInferenceJobRequest): Request[StopICD10CMInferenceJobResponse, AWSError] = js.native
+  def stopICD10CMInferenceJob(
+    params: StopICD10CMInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopICD10CMInferenceJobResponse, Unit]
+  ): Request[StopICD10CMInferenceJobResponse, AWSError] = js.native
+  /**
     * Stops a protected health information (PHI) detection job in progress.
     */
   def stopPHIDetectionJob(): Request[StopPHIDetectionJobResponse, AWSError] = js.native
@@ -183,5 +274,18 @@ trait ComprehendMedical extends Service {
     params: StopPHIDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopPHIDetectionJobResponse, Unit]
   ): Request[StopPHIDetectionJobResponse, AWSError] = js.native
+  /**
+    * Stops an InferRxNorm inference job in progress.
+    */
+  def stopRxNormInferenceJob(): Request[StopRxNormInferenceJobResponse, AWSError] = js.native
+  def stopRxNormInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ StopRxNormInferenceJobResponse, Unit]): Request[StopRxNormInferenceJobResponse, AWSError] = js.native
+  /**
+    * Stops an InferRxNorm inference job in progress.
+    */
+  def stopRxNormInferenceJob(params: StopRxNormInferenceJobRequest): Request[StopRxNormInferenceJobResponse, AWSError] = js.native
+  def stopRxNormInferenceJob(
+    params: StopRxNormInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopRxNormInferenceJobResponse, Unit]
+  ): Request[StopRxNormInferenceJobResponse, AWSError] = js.native
 }
 

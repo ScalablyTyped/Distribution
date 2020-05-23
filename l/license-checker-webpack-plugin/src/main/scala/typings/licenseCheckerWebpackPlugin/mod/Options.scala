@@ -1,6 +1,6 @@
 package typings.licenseCheckerWebpackPlugin.mod
 
-import typings.licenseCheckerWebpackPlugin.PartialDependency
+import typings.licenseCheckerWebpackPlugin.anon.PartialDependency
 import typings.std.Record
 import typings.std.RegExp
 import scala.scalajs.js

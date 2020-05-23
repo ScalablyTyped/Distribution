@@ -30,14 +30,14 @@ object MountOptions {
   def apply(
     displayName: String,
     fileSystemId: String,
-    openedFilesLimit: Int | Double = null,
+    openedFilesLimit: js.UndefOr[Double] = js.undefined,
     supportsNotifyTag: js.UndefOr[Boolean] = js.undefined,
     writable: js.UndefOr[Boolean] = js.undefined
   ): MountOptions = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any])
-    if (openedFilesLimit != null) __obj.updateDynamic("openedFilesLimit")(openedFilesLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsNotifyTag)) __obj.updateDynamic("supportsNotifyTag")(supportsNotifyTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
+    if (!js.isUndefined(openedFilesLimit)) __obj.updateDynamic("openedFilesLimit")(openedFilesLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsNotifyTag)) __obj.updateDynamic("supportsNotifyTag")(supportsNotifyTag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MountOptions]
   }
 }

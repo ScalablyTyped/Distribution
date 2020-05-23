@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "meteor-publish-composite"
-version := "0.0-unknown-dt-20200226Z-2ecc16"
-scalaVersion := "2.13.1"
+version := "0.0-unknown-dt-20200515Z-dd0fc3"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20200319Z-de87da",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200226Z-677666",
-  "org.scalablytyped" %%% "csstype" % "2.6.9-313239",
-  "org.scalablytyped" %%% "meteor" % "1.4-dt-20200322Z-beebb3",
-  "org.scalablytyped" %%% "mongodb" % "3.5-dt-20200415Z-523dda",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-11830c",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200409Z-0bc722",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470",
-  "org.scalablytyped" %%% "underscore" % "1.9-dt-20200225Z-0eb5d0")
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20200515Z-350996",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-4db3c4",
+  "org.scalablytyped" %%% "csstype" % "2.6.9-03f85a",
+  "org.scalablytyped" %%% "meteor" % "1.4-dt-20200515Z-d3b543",
+  "org.scalablytyped" %%% "mongodb" % "3.5-dt-20200518Z-17cb2a",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-4fb81d",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200515Z-0f8114",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
+  "org.scalablytyped" %%% "underscore" % "1.10-dt-20200515Z-647b59")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

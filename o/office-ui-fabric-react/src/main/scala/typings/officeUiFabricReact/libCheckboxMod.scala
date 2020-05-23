@@ -1,5 +1,7 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.ReadonlyICheckboxProps
+import typings.officeUiFabricReact.anon.ReadonlyICheckboxState
 import typings.officeUiFabricReact.checkboxBaseMod.ICheckboxState
 import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
 import typings.react.mod.FunctionComponent

@@ -20,7 +20,7 @@ trait ManagedAppPolicyDeploymentSummary extends Entity {
 object ManagedAppPolicyDeploymentSummary {
   @scala.inline
   def apply(
-    configurationDeployedUserCount: Int | Double = null,
+    configurationDeployedUserCount: js.UndefOr[Double] = js.undefined,
     configurationDeploymentSummaryPerApp: js.Array[ManagedAppPolicyDeploymentSummaryPerApp] = null,
     displayName: String = null,
     id: String = null,
@@ -28,7 +28,7 @@ object ManagedAppPolicyDeploymentSummary {
     version: String = null
   ): ManagedAppPolicyDeploymentSummary = {
     val __obj = js.Dynamic.literal()
-    if (configurationDeployedUserCount != null) __obj.updateDynamic("configurationDeployedUserCount")(configurationDeployedUserCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(configurationDeployedUserCount)) __obj.updateDynamic("configurationDeployedUserCount")(configurationDeployedUserCount.get.asInstanceOf[js.Any])
     if (configurationDeploymentSummaryPerApp != null) __obj.updateDynamic("configurationDeploymentSummaryPerApp")(configurationDeploymentSummaryPerApp.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

@@ -1,11 +1,11 @@
 package typings.roads.pjaxMod
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLElement
 import typings.std.HTMLFormElement
 import typings.std.MouseEvent
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait RoadsPjax extends js.Object {
   var _container_element: HTMLElement
   var _page_title: js.UndefOr[String] = js.undefined
   var _road: typings.roads.roadMod.default
-  var _window: Window_
+  var _window: Window
   /**
     * Handles all click events, and directs
     * @param {MouseEvent} event
@@ -38,7 +38,7 @@ trait RoadsPjax extends js.Object {
     * @param {Document} document - The pages document object to properly parse and set cookies
     * @returns {RoadsPjax} this object, useful for chaining
     */
-  def addCookieMiddleware(document: Document_): RoadsPjax
+  def addCookieMiddleware(document: Document): RoadsPjax
   /**
     * Adds middleware to the assigned road whcih will adds setTitle to the PJAX object (as opposed to the request object like the setTitle middlweare does).
     * This allows you to easily update the page title.
@@ -71,8 +71,8 @@ object RoadsPjax {
     _road: typings.roads.roadMod.default,
     _roadsFormEvent: HTMLFormElement => Unit,
     _roadsLinkEvent: HTMLAnchorElement => Unit,
-    _window: Window_,
-    addCookieMiddleware: Document_ => RoadsPjax,
+    _window: Window,
+    addCookieMiddleware: Document => RoadsPjax,
     addTitleMiddleware: () => RoadsPjax,
     register: () => Unit,
     registerAdditionalElement: HTMLAnchorElement => Unit,

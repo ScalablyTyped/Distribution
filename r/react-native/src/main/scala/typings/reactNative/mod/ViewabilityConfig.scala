@@ -33,16 +33,16 @@ trait ViewabilityConfig extends js.Object {
 object ViewabilityConfig {
   @scala.inline
   def apply(
-    itemVisiblePercentThreshold: Int | Double = null,
-    minimumViewTime: Int | Double = null,
-    viewAreaCoveragePercentThreshold: Int | Double = null,
+    itemVisiblePercentThreshold: js.UndefOr[Double] = js.undefined,
+    minimumViewTime: js.UndefOr[Double] = js.undefined,
+    viewAreaCoveragePercentThreshold: js.UndefOr[Double] = js.undefined,
     waitForInteraction: js.UndefOr[Boolean] = js.undefined
   ): ViewabilityConfig = {
     val __obj = js.Dynamic.literal()
-    if (itemVisiblePercentThreshold != null) __obj.updateDynamic("itemVisiblePercentThreshold")(itemVisiblePercentThreshold.asInstanceOf[js.Any])
-    if (minimumViewTime != null) __obj.updateDynamic("minimumViewTime")(minimumViewTime.asInstanceOf[js.Any])
-    if (viewAreaCoveragePercentThreshold != null) __obj.updateDynamic("viewAreaCoveragePercentThreshold")(viewAreaCoveragePercentThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForInteraction)) __obj.updateDynamic("waitForInteraction")(waitForInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemVisiblePercentThreshold)) __obj.updateDynamic("itemVisiblePercentThreshold")(itemVisiblePercentThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumViewTime)) __obj.updateDynamic("minimumViewTime")(minimumViewTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewAreaCoveragePercentThreshold)) __obj.updateDynamic("viewAreaCoveragePercentThreshold")(viewAreaCoveragePercentThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForInteraction)) __obj.updateDynamic("waitForInteraction")(waitForInteraction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewabilityConfig]
   }
 }

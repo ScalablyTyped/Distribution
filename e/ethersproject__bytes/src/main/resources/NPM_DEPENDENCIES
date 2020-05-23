@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/bytes" : "5.0.0-beta.138"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/bytes" : "5.0.0-beta.138"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

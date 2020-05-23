@@ -12,7 +12,7 @@ object KnobsOptions {
   @scala.inline
   def apply(addDecorator: js.UndefOr[Boolean] = js.undefined): KnobsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addDecorator)) __obj.updateDynamic("addDecorator")(addDecorator.asInstanceOf[js.Any])
+    if (!js.isUndefined(addDecorator)) __obj.updateDynamic("addDecorator")(addDecorator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnobsOptions]
   }
 }

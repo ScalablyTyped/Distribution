@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.Mat3")
 @js.native
-class Mat3 () extends js.Object {
-  def this(elements: js.Array[Double]) = this()
+trait Mat3 extends js.Object {
   def copy(source: Mat3): Mat3 = js.native
   def e(row: Double, column: Double): Double = js.native
   def e(row: Double, column: Double, value: Double): Double = js.native

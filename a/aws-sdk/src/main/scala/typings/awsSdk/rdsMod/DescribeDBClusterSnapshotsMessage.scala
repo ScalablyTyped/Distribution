@@ -46,20 +46,20 @@ object DescribeDBClusterSnapshotsMessage {
     DBClusterIdentifier: String = null,
     DBClusterSnapshotIdentifier: String = null,
     Filters: FilterList = null,
-    IncludePublic: js.UndefOr[scala.Boolean] = js.undefined,
-    IncludeShared: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludePublic: js.UndefOr[Boolean] = js.undefined,
+    IncludeShared: js.UndefOr[Boolean] = js.undefined,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     SnapshotType: String = null
   ): DescribeDBClusterSnapshotsMessage = {
     val __obj = js.Dynamic.literal()
     if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
     if (DBClusterSnapshotIdentifier != null) __obj.updateDynamic("DBClusterSnapshotIdentifier")(DBClusterSnapshotIdentifier.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludePublic)) __obj.updateDynamic("IncludePublic")(IncludePublic.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeShared)) __obj.updateDynamic("IncludeShared")(IncludeShared.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludePublic)) __obj.updateDynamic("IncludePublic")(IncludePublic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeShared)) __obj.updateDynamic("IncludeShared")(IncludeShared.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBClusterSnapshotsMessage]
   }

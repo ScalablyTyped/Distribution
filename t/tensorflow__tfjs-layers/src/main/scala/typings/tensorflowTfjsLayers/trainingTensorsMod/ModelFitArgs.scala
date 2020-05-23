@@ -142,36 +142,36 @@ trait ModelFitArgs extends js.Object {
 object ModelFitArgs {
   @scala.inline
   def apply(
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     callbacks: (js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs = null,
     classWeight: ClassWeight | js.Array[ClassWeight] | ClassWeightMap = null,
-    epochs: Int | Double = null,
-    initialEpoch: Int | Double = null,
+    epochs: js.UndefOr[Double] = js.undefined,
+    initialEpoch: js.UndefOr[Double] = js.undefined,
     sampleWeight: Tensor[Rank] = null,
     shuffle: js.UndefOr[Boolean] = js.undefined,
-    stepsPerEpoch: Int | Double = null,
+    stepsPerEpoch: js.UndefOr[Double] = js.undefined,
     validationData: (js.Tuple2[Tensor[Rank] | js.Array[Tensor[Rank]], Tensor[Rank] | js.Array[Tensor[Rank]]]) | (js.Tuple3[
       Tensor[Rank] | js.Array[Tensor[Rank]], 
       Tensor[Rank] | js.Array[Tensor[Rank]], 
       Tensor[Rank] | js.Array[Tensor[Rank]]
     ]) = null,
-    validationSplit: Int | Double = null,
-    validationSteps: Int | Double = null,
+    validationSplit: js.UndefOr[Double] = js.undefined,
+    validationSteps: js.UndefOr[Double] = js.undefined,
     verbose: ModelLoggingVerbosity = null,
     yieldEvery: YieldEveryOptions = null
   ): ModelFitArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (classWeight != null) __obj.updateDynamic("classWeight")(classWeight.asInstanceOf[js.Any])
-    if (epochs != null) __obj.updateDynamic("epochs")(epochs.asInstanceOf[js.Any])
-    if (initialEpoch != null) __obj.updateDynamic("initialEpoch")(initialEpoch.asInstanceOf[js.Any])
+    if (!js.isUndefined(epochs)) __obj.updateDynamic("epochs")(epochs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialEpoch)) __obj.updateDynamic("initialEpoch")(initialEpoch.get.asInstanceOf[js.Any])
     if (sampleWeight != null) __obj.updateDynamic("sampleWeight")(sampleWeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
-    if (stepsPerEpoch != null) __obj.updateDynamic("stepsPerEpoch")(stepsPerEpoch.asInstanceOf[js.Any])
+    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepsPerEpoch)) __obj.updateDynamic("stepsPerEpoch")(stepsPerEpoch.get.asInstanceOf[js.Any])
     if (validationData != null) __obj.updateDynamic("validationData")(validationData.asInstanceOf[js.Any])
-    if (validationSplit != null) __obj.updateDynamic("validationSplit")(validationSplit.asInstanceOf[js.Any])
-    if (validationSteps != null) __obj.updateDynamic("validationSteps")(validationSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(validationSplit)) __obj.updateDynamic("validationSplit")(validationSplit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validationSteps)) __obj.updateDynamic("validationSteps")(validationSteps.get.asInstanceOf[js.Any])
     if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     if (yieldEvery != null) __obj.updateDynamic("yieldEvery")(yieldEvery.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelFitArgs]

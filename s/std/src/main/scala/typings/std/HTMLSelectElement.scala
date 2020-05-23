@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -136,8 +135,4 @@ trait HTMLSelectElement
     */
   def setCustomValidity(error: java.lang.String): Unit = js.native
 }
-
-@JSGlobal("HTMLSelectElement")
-@js.native
-object HTMLSelectElement extends Instantiable0[HTMLSelectElement]
 

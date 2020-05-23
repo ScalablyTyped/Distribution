@@ -11,9 +11,9 @@ trait SpatialReference extends js.Object {
 
 object SpatialReference {
   @scala.inline
-  def apply(wkid: Int | Double = null, wkt: String = null): SpatialReference = {
+  def apply(wkid: js.UndefOr[Double] = js.undefined, wkt: String = null): SpatialReference = {
     val __obj = js.Dynamic.literal()
-    if (wkid != null) __obj.updateDynamic("wkid")(wkid.asInstanceOf[js.Any])
+    if (!js.isUndefined(wkid)) __obj.updateDynamic("wkid")(wkid.get.asInstanceOf[js.Any])
     if (wkt != null) __obj.updateDynamic("wkt")(wkt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialReference]
   }

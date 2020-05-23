@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DirectoryLocations
-  extends /* directoryType */ StringDictionary[js.Any] {
+  extends /* key */ StringDictionary[js.Any] {
   /**
   		Location for executable scripts. Sugar to generate entries in the `bin` property by walking the folder.
   		*/
@@ -36,7 +36,7 @@ trait DirectoryLocations
 object DirectoryLocations {
   @scala.inline
   def apply(
-    StringDictionary: /* directoryType */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     bin: String = null,
     doc: String = null,
     example: String = null,

@@ -7,27 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait IgPivotViewPivotGridOptionsLevelSortDirection
   extends /**
-	 * Option for IgPivotViewPivotGridOptionsLevelSortDirection
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Specifies the unique name of the level, which will be sorted.
-  	 */
+    * Specifies the unique name of the level, which will be sorted.
+    */
   var levelUniqueName: js.UndefOr[String] = js.undefined
   /**
-  	 * optional="true" Specifies the sort direction. If no direction is specified,the level is going to be sorted in the direction specified by the firstLevelSortDirection option.
-  	 *
-  	 */
+    * optional="true" Specifies the sort direction. If no direction is specified,the level is going to be sorted in the direction specified by the firstLevelSortDirection option.
+    *
+    */
   var sortDirection: js.UndefOr[js.Any] = js.undefined
 }
 
 object IgPivotViewPivotGridOptionsLevelSortDirection {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotViewPivotGridOptionsLevelSortDirection
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     levelUniqueName: String = null,
     sortDirection: js.Any = null
   ): IgPivotViewPivotGridOptionsLevelSortDirection = {

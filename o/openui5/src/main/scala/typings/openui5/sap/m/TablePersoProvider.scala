@@ -5,12 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.TablePersoProvider")
 @js.native
-/**
-  * This is an abstract TablePersoProvider, describing the interface for a realTablePersoProvider.
-  */
-abstract class TablePersoProvider () extends ManagedObject {
+trait TablePersoProvider extends ManagedObject {
   /**
     * Removes the personalization bundleThis must return a jQuery promise (see
     * http://api.jquery.com/promise/)

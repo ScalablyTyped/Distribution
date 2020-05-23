@@ -31,13 +31,13 @@ object TriggerAction {
     arguments: StringDictionary[js.Any] = null,
     crawlerName: String = null,
     jobName: String = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): TriggerAction = {
     val __obj = js.Dynamic.literal()
     if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
     if (crawlerName != null) __obj.updateDynamic("crawlerName")(crawlerName.asInstanceOf[js.Any])
     if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerAction]
   }
 }

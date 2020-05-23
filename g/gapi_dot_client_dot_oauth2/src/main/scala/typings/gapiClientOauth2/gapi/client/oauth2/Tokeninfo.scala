@@ -31,7 +31,7 @@ object Tokeninfo {
     access_type: String = null,
     audience: String = null,
     email: String = null,
-    expires_in: Int | Double = null,
+    expires_in: js.UndefOr[Double] = js.undefined,
     issued_to: String = null,
     scope: String = null,
     token_handle: String = null,
@@ -42,12 +42,12 @@ object Tokeninfo {
     if (access_type != null) __obj.updateDynamic("access_type")(access_type.asInstanceOf[js.Any])
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires_in)) __obj.updateDynamic("expires_in")(expires_in.get.asInstanceOf[js.Any])
     if (issued_to != null) __obj.updateDynamic("issued_to")(issued_to.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (token_handle != null) __obj.updateDynamic("token_handle")(token_handle.asInstanceOf[js.Any])
     if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tokeninfo]
   }
 }

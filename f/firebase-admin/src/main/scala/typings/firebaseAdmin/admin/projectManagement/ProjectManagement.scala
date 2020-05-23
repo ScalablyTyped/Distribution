@@ -1,6 +1,5 @@
 package typings.firebaseAdmin.admin.projectManagement
 
-import typings.firebaseAdmin.admin.app.App
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ProjectManagement extends js.Object {
-  var app: App = js.native
+  var app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.app.App */ js.Any = js.native
   /**
     * Creates an `AndroidApp` object, referencing the specified Android app within
     * this Firebase project.
@@ -24,7 +23,7 @@ trait ProjectManagement extends js.Object {
     *
     * @return An `AndroidApp` object that references the specified Firebase Android app.
     */
-  def androidApp(appId: String): AndroidApp = js.native
+  def androidApp(appId: String): typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AndroidApp = js.native
   /**
     * Creates a new Firebase Android app associated with this Firebase project.
     *
@@ -35,8 +34,8 @@ trait ProjectManagement extends js.Object {
     *
     * @return A promise that resolves to the newly created Android app.
     */
-  def createAndroidApp(packageName: String): js.Promise[AndroidApp] = js.native
-  def createAndroidApp(packageName: String, displayName: String): js.Promise[AndroidApp] = js.native
+  def createAndroidApp(packageName: String): js.Promise[typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AndroidApp] = js.native
+  def createAndroidApp(packageName: String, displayName: String): js.Promise[typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AndroidApp] = js.native
   /**
     * Creates a new Firebase iOS app associated with this Firebase project.
     *
@@ -46,8 +45,8 @@ trait ProjectManagement extends js.Object {
     *
     * @return A promise that resolves to the newly created iOS app.
     */
-  def createIosApp(bundleId: String): js.Promise[IosApp] = js.native
-  def createIosApp(bundleId: String, displayName: String): js.Promise[IosApp] = js.native
+  def createIosApp(bundleId: String): js.Promise[typings.firebaseAdmin.projectManagementMod.admin.projectManagement.IosApp] = js.native
+  def createIosApp(bundleId: String, displayName: String): js.Promise[typings.firebaseAdmin.projectManagementMod.admin.projectManagement.IosApp] = js.native
   /**
     * Creates an `iOSApp` object, referencing the specified iOS app within
     * this Firebase project.
@@ -58,25 +57,31 @@ trait ProjectManagement extends js.Object {
     *
     * @return An `iOSApp` object that references the specified Firebase iOS app.
     */
-  def iosApp(appId: String): IosApp = js.native
+  def iosApp(appId: String): typings.firebaseAdmin.projectManagementMod.admin.projectManagement.IosApp = js.native
   /**
     * Lists up to 100 Firebase Android apps associated with this Firebase project.
     *
     * @return The list of Android apps.
     */
-  def listAndroidApps(): js.Promise[js.Array[AndroidApp]] = js.native
+  def listAndroidApps(): js.Promise[
+    js.Array[typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AndroidApp]
+  ] = js.native
   /**
     * Lists up to 100 Firebase apps associated with this Firebase project.
     *
     * @return A promise that resolves to the metadata list of the apps.
     */
-  def listAppMetadata(): js.Promise[js.Array[AppMetadata]] = js.native
+  def listAppMetadata(): js.Promise[
+    js.Array[typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AppMetadata]
+  ] = js.native
   /**
     * Lists up to 100 Firebase iOS apps associated with this Firebase project.
     *
     * @return The list of iOS apps.
     */
-  def listIosApps(): js.Promise[js.Array[IosApp]] = js.native
+  def listIosApps(): js.Promise[
+    js.Array[typings.firebaseAdmin.projectManagementMod.admin.projectManagement.IosApp]
+  ] = js.native
   /**
     * Update the display name of this Firebase project.
     *
@@ -94,6 +99,6 @@ trait ProjectManagement extends js.Object {
     *
     * @return A `ShaCertificate` object contains the specified SHA hash.
     */
-  def shaCertificate(shaHash: String): ShaCertificate = js.native
+  def shaCertificate(shaHash: String): typings.firebaseAdmin.projectManagementMod.admin.projectManagement.ShaCertificate = js.native
 }
 

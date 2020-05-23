@@ -32,10 +32,10 @@ object GetValueParams {
     return_response: js.UndefOr[Boolean] = js.undefined
   ): GetValueParams = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(_export)) __obj.updateDynamic("_export")(_export.asInstanceOf[js.Any])
+    if (!js.isUndefined(_export)) __obj.updateDynamic("_export")(_export.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_audit)) __obj.updateDynamic("include_audit")(include_audit.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_audit)) __obj.updateDynamic("include_audit")(include_audit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetValueParams]
   }
 }

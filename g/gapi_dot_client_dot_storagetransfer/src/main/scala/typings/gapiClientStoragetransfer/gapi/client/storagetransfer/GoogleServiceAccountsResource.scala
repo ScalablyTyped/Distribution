@@ -1,7 +1,7 @@
 package typings.gapiClientStoragetransfer.gapi.client.storagetransfer
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientStoragetransfer.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientStoragetransfer.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +17,12 @@ trait GoogleServiceAccountsResource extends js.Object {
     * account is created and owned by Storage Transfer Service and can
     * only be used by Storage Transfer Service.
     */
-  def get(request: AnonAccesstoken): Request_[GoogleServiceAccount]
+  def get(request: Accesstoken): Request[GoogleServiceAccount]
 }
 
 object GoogleServiceAccountsResource {
   @scala.inline
-  def apply(get: AnonAccesstoken => Request_[GoogleServiceAccount]): GoogleServiceAccountsResource = {
+  def apply(get: Accesstoken => Request[GoogleServiceAccount]): GoogleServiceAccountsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[GoogleServiceAccountsResource]
   }

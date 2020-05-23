@@ -8,11 +8,11 @@ trait ListIndicesResponse extends js.Object {
   /**
     * List of index response
     */
-  val items: js.Array[Indice]
+  var items: js.Array[Indice]
   /**
     * Number of pages
     */
-  val nbPages: Double
+  var nbPages: Double
 }
 
 object ListIndicesResponse {

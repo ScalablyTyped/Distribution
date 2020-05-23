@@ -14,7 +14,7 @@ package object interfacesMod {
   ]
   type ProjectorPerformanceLogger = js.Function2[
     /* eventType */ typings.maquette.interfacesMod.PerformanceLoggerEvent, 
-    /* trigger */ js.UndefOr[typings.std.Event_], 
+    /* trigger */ js.UndefOr[typings.std.Event], 
     scala.Unit
   ]
   /* Rewritten from type alias, can be one of: 
@@ -23,7 +23,7 @@ package object interfacesMod {
     - typings.maquette.interfacesMod.VNodeChildren
     - typings.maquette.maquetteBooleans.`false`
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type VNodeChild = js.UndefOr[typings.maquette.interfacesMod._VNodeChild | java.lang.String | scala.Null]
 }

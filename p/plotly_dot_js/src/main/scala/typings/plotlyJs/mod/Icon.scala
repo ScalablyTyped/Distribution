@@ -18,24 +18,24 @@ trait Icon extends js.Object {
 object Icon {
   @scala.inline
   def apply(
-    ascent: Int | Double = null,
-    descent: Int | Double = null,
-    height: Int | Double = null,
+    ascent: js.UndefOr[Double] = js.undefined,
+    descent: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     name: String = null,
     path: String = null,
     svg: String = null,
     transform: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Icon = {
     val __obj = js.Dynamic.literal()
-    if (ascent != null) __obj.updateDynamic("ascent")(ascent.asInstanceOf[js.Any])
-    if (descent != null) __obj.updateDynamic("descent")(descent.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(ascent)) __obj.updateDynamic("ascent")(ascent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(descent)) __obj.updateDynamic("descent")(descent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Icon]
   }
 }

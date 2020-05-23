@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Perception.Spatial.SpatialAnchorRawCoordinateSystemAdjustedEventArgs")
-@js.native
-abstract class SpatialAnchorRawCoordinateSystemAdjustedEventArgs () extends js.Object {
-  var oldRawCoordinateSystemToNewRawCoordinateSystemTransform: js.Any = js.native
+trait SpatialAnchorRawCoordinateSystemAdjustedEventArgs extends js.Object {
+  var oldRawCoordinateSystemToNewRawCoordinateSystemTransform: js.Any
+}
+
+object SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
+  @scala.inline
+  def apply(oldRawCoordinateSystemToNewRawCoordinateSystemTransform: js.Any): SpatialAnchorRawCoordinateSystemAdjustedEventArgs = {
+    val __obj = js.Dynamic.literal(oldRawCoordinateSystemToNewRawCoordinateSystemTransform = oldRawCoordinateSystemToNewRawCoordinateSystemTransform.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialAnchorRawCoordinateSystemAdjustedEventArgs]
+  }
 }
 

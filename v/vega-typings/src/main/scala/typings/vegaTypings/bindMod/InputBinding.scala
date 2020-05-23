@@ -16,7 +16,7 @@ object InputBinding {
   @scala.inline
   def apply(
     autocomplete: String = null,
-    debounce: Int | Double = null,
+    debounce: js.UndefOr[Double] = js.undefined,
     element: Element = null,
     input: String = null,
     name: String = null,
@@ -25,7 +25,7 @@ object InputBinding {
   ): InputBinding = {
     val __obj = js.Dynamic.literal()
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
+    if (!js.isUndefined(debounce)) __obj.updateDynamic("debounce")(debounce.get.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

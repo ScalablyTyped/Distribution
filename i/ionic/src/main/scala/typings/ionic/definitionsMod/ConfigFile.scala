@@ -48,7 +48,7 @@ object ConfigFile {
     version: String,
     `featuresDotssl-commands`: js.UndefOr[Boolean] = js.undefined,
     gitDothost: String = null,
-    gitDotport: Int | Double = null,
+    gitDotport: js.UndefOr[Double] = js.undefined,
     gitDotsetup: js.UndefOr[Boolean] = js.undefined,
     interactive: js.UndefOr[Boolean] = js.undefined,
     orgDotid: String = null,
@@ -61,14 +61,14 @@ object ConfigFile {
     urlsDotapi: String = null,
     urlsDotdash: String = null,
     userDotemail: String = null,
-    userDotid: Int | Double = null
+    userDotid: js.UndefOr[Double] = js.undefined
   ): ConfigFile = {
     val __obj = js.Dynamic.literal(npmClient = npmClient.asInstanceOf[js.Any], telemetry = telemetry.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (!js.isUndefined(`featuresDotssl-commands`)) __obj.updateDynamic("features.ssl-commands")(`featuresDotssl-commands`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`featuresDotssl-commands`)) __obj.updateDynamic("features.ssl-commands")(`featuresDotssl-commands`.get.asInstanceOf[js.Any])
     if (gitDothost != null) __obj.updateDynamic("git.host")(gitDothost.asInstanceOf[js.Any])
-    if (gitDotport != null) __obj.updateDynamic("git.port")(gitDotport.asInstanceOf[js.Any])
-    if (!js.isUndefined(gitDotsetup)) __obj.updateDynamic("git.setup")(gitDotsetup.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(gitDotport)) __obj.updateDynamic("git.port")(gitDotport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gitDotsetup)) __obj.updateDynamic("git.setup")(gitDotsetup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
     if (orgDotid != null) __obj.updateDynamic("org.id")(orgDotid.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (sslDotcafile != null) __obj.updateDynamic("ssl.cafile")(sslDotcafile.asInstanceOf[js.Any])
@@ -79,7 +79,7 @@ object ConfigFile {
     if (urlsDotapi != null) __obj.updateDynamic("urls.api")(urlsDotapi.asInstanceOf[js.Any])
     if (urlsDotdash != null) __obj.updateDynamic("urls.dash")(urlsDotdash.asInstanceOf[js.Any])
     if (userDotemail != null) __obj.updateDynamic("user.email")(userDotemail.asInstanceOf[js.Any])
-    if (userDotid != null) __obj.updateDynamic("user.id")(userDotid.asInstanceOf[js.Any])
+    if (!js.isUndefined(userDotid)) __obj.updateDynamic("user.id")(userDotid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigFile]
   }
 }

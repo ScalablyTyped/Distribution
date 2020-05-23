@@ -21,7 +21,7 @@ trait TableSelectionChangedEventArgs extends js.Object {
   var address: String
   /**
     *
-    * Indicates if the selection is inside a table, address will be useless if IsInsideTable is false.
+    * Specifies if the selection is inside a table, address will be useless if IsInsideTable is false.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -35,7 +35,7 @@ trait TableSelectionChangedEventArgs extends js.Object {
   var tableId: String
   /**
     *
-    * Gets the type of the event. See Excel.EventType for details. Read-only.
+    * Gets the type of the event. See Excel.EventType for details.
     *
     * [Api set: ExcelApi 1.7]
     */

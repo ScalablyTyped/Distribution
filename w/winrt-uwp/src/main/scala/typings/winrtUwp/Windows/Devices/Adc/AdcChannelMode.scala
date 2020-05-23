@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Adc
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object AdcChannelMode extends js.Object {
   /** Simple value of a particular pin. */
   @js.native
   sealed trait singleEnded extends AdcChannelMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AdcChannelMode with Double] = js.native
-  /* 1 */ @js.native
-  object differential extends TopLevel[differential with Double]
-  
-  /* 0 */ @js.native
-  object singleEnded extends TopLevel[singleEnded with Double]
   
 }
 

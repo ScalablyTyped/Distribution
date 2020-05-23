@@ -26,16 +26,16 @@ object ZoomChangeEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    currentZoomPercentage: Int | Double = null,
+    currentZoomPercentage: js.UndefOr[Double] = js.undefined,
     model: js.Any = null,
-    previousZoomPercentage: Int | Double = null,
+    previousZoomPercentage: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): ZoomChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (currentZoomPercentage != null) __obj.updateDynamic("currentZoomPercentage")(currentZoomPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentZoomPercentage)) __obj.updateDynamic("currentZoomPercentage")(currentZoomPercentage.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (previousZoomPercentage != null) __obj.updateDynamic("previousZoomPercentage")(previousZoomPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(previousZoomPercentage)) __obj.updateDynamic("previousZoomPercentage")(previousZoomPercentage.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomChangeEventArgs]
   }

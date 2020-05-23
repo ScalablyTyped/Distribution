@@ -3,8 +3,8 @@ package typings.reactRouterNavigation.mod
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.reactRouterNavigation.AnonKey
-import typings.reactRouterNavigation.AnonLazy
+import typings.reactRouterNavigation.anon.Key
+import typings.reactRouterNavigation.anon.Lazy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-router-navigation", "BottomNavigation")
 @js.native
 class BottomNavigation ()
-  extends Component[BottomNavigationProps, AnonKey, js.Any] {
+  extends Component[BottomNavigationProps, Key, js.Any] {
   def renderNavigationBar(sceneProps: TabSubViewProps, props: TabSubViewProps): ReactNode = js.native
   def renderPager(sceneProps: TabSubViewProps): ReactNode = js.native
   def renderScene(sceneProps: TabSubViewProps): ReactElement = js.native
@@ -23,6 +23,6 @@ class BottomNavigation ()
 @JSImport("react-router-navigation", "BottomNavigation")
 @js.native
 object BottomNavigation extends js.Object {
-  var defaultProps: AnonLazy = js.native
+  var defaultProps: Lazy = js.native
 }
 

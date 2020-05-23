@@ -22,16 +22,16 @@ trait PicaOptions extends js.Object {
 object PicaOptions {
   @scala.inline
   def apply(
-    concurrency: Int | Double = null,
+    concurrency: js.UndefOr[Double] = js.undefined,
     features: js.Array[String] = null,
-    idle: Int | Double = null,
-    tile: Int | Double = null
+    idle: js.UndefOr[Double] = js.undefined,
+    tile: js.UndefOr[Double] = js.undefined
   ): PicaOptions = {
     val __obj = js.Dynamic.literal()
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (idle != null) __obj.updateDynamic("idle")(idle.asInstanceOf[js.Any])
-    if (tile != null) __obj.updateDynamic("tile")(tile.asInstanceOf[js.Any])
+    if (!js.isUndefined(idle)) __obj.updateDynamic("idle")(idle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PicaOptions]
   }
 }

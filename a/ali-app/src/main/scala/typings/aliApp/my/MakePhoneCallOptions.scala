@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait MakePhoneCallOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 需要拨打的电话号码
-  		 */
+    * 需要拨打的电话号码
+    */
   var number: String
 }
 

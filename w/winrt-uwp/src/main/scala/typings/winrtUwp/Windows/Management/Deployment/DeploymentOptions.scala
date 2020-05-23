@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Management.Deployment
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object DeploymentOptions extends js.Object {
   /** The default behavior is used. */
   @js.native
   sealed trait none extends DeploymentOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeploymentOptions with Double] = js.native
-  /* 2 */ @js.native
-  object developmentMode extends TopLevel[developmentMode with Double]
-  
-  /* 1 */ @js.native
-  object forceApplicationShutdown extends TopLevel[forceApplicationShutdown with Double]
-  
-  /* 4 */ @js.native
-  object forceTargetApplicationShutdown extends TopLevel[forceTargetApplicationShutdown with Double]
-  
-  /* 3 */ @js.native
-  object installAllResources extends TopLevel[installAllResources with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

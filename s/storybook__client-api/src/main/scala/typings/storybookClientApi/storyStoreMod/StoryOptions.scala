@@ -12,7 +12,7 @@ object StoryOptions {
   @scala.inline
   def apply(includeDocsOnly: js.UndefOr[Boolean] = js.undefined): StoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeDocsOnly)) __obj.updateDynamic("includeDocsOnly")(includeDocsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDocsOnly)) __obj.updateDynamic("includeDocsOnly")(includeDocsOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoryOptions]
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dmg-builder" : "22.5.1"
+      "dmg-builder" : "22.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "dmg-builder" : "22.5.1"
+      "dmg-builder" : "22.6.1"
     }
   ],
   "compile-devDependencies" : [

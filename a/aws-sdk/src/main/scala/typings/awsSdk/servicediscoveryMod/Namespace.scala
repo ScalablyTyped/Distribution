@@ -39,7 +39,7 @@ trait Namespace extends js.Object {
     */
   var ServiceCount: js.UndefOr[ResourceCount] = js.native
   /**
-    * The type of the namespace. Valid values are DNS_PUBLIC and DNS_PRIVATE.
+    * The type of the namespace. The methods for discovering instances depends on the value that you specify:    HTTP: Instances can be discovered only programmatically, using the AWS Cloud Map DiscoverInstances API.    DNS_PUBLIC: Instances can be discovered using public DNS queries and using the DiscoverInstances API.    DNS_PRIVATE: Instances can be discovered using DNS queries in VPCs and using the DiscoverInstances API.  
     */
   var Type: js.UndefOr[NamespaceType] = js.native
 }
@@ -54,7 +54,7 @@ object Namespace {
     Id: ResourceId = null,
     Name: NamespaceName = null,
     Properties: NamespaceProperties = null,
-    ServiceCount: Int | Double = null,
+    ServiceCount: js.UndefOr[ResourceCount] = js.undefined,
     Type: NamespaceType = null
   ): Namespace = {
     val __obj = js.Dynamic.literal()
@@ -65,7 +65,7 @@ object Namespace {
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Properties != null) __obj.updateDynamic("Properties")(Properties.asInstanceOf[js.Any])
-    if (ServiceCount != null) __obj.updateDynamic("ServiceCount")(ServiceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ServiceCount)) __obj.updateDynamic("ServiceCount")(ServiceCount.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Namespace]
   }

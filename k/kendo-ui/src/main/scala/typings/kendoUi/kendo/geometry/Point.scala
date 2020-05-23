@@ -1,14 +1,12 @@
 package typings.kendoUi.kendo.geometry
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.geometry.Point")
 @js.native
-class Point protected () extends Observable_ {
-  def this(x: Double, y: Double) = this()
+trait Point extends Observable {
   var options: PointOptions = js.native
   var x: Double = js.native
   var y: Double = js.native
@@ -31,18 +29,5 @@ class Point protected () extends Observable_ {
   def translate(dx: Double, dy: Double): Point = js.native
   def translateWith(vector: js.Any): Point = js.native
   def translateWith(vector: Point): Point = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.geometry.Point")
-@js.native
-object Point extends js.Object {
-  def create(x: js.Any, y: Double): Point = js.native
-  def create(x: Double, y: Double): Point = js.native
-  def create(x: Point, y: Double): Point = js.native
-  def max(): Point = js.native
-  def maxPoint(): Point = js.native
-  def min(): Point = js.native
-  def minPoint(): Point = js.native
 }
 

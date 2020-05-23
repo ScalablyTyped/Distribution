@@ -2,6 +2,7 @@ package typings.expressServeStaticCore.mod
 
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.qs.mod.ParsedQs
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Response[ResBody]
   extends ServerResponse
-     with typings.expressServeStaticCore.mod._Global_.Express.Response {
+     with typings.expressServeStaticCore.mod.global.Express.Response {
   @JSName("app")
   var app_Original: Application = js.native
   var charset: String = js.native
@@ -43,7 +44,7 @@ trait Response[ResBody]
     * After middleware.init executed, Response will contain req property
     * See: express/lib/middleware/init.js
     */
-  var req: js.UndefOr[Request[ParamsDictionary, _, _, Query]] = js.native
+  var req: js.UndefOr[Request[ParamsDictionary, _, _, ParsedQs]] = js.native
   /**
     * Send a response.
     *
@@ -60,8 +61,8 @@ trait Response[ResBody]
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def app(req: Request[ParamsDictionary, _, _, Query], res: Response[_]): js.Any = js.native
-  def app(req: Request[ParamsDictionary, _, _, Query], res: ServerResponse): js.Any = js.native
+  def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_]): js.Any = js.native
+  def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
   def app(req: IncomingMessage, res: Response[_]): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   /**

@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.System.Profile.HardwareToken")
-@js.native
-class HardwareToken () extends IHardwareToken {
-  /* CompleteClass */
-  override var certificate: IBuffer = js.native
-  /* CompleteClass */
-  override var id: IBuffer = js.native
-  /* CompleteClass */
-  override var signature: IBuffer = js.native
+trait HardwareToken extends IHardwareToken
+
+object HardwareToken {
+  @scala.inline
+  def apply(certificate: IBuffer, id: IBuffer, signature: IBuffer): HardwareToken = {
+    val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HardwareToken]
+  }
 }
 

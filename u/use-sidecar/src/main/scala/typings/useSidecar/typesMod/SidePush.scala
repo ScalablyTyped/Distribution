@@ -15,10 +15,10 @@ object SidePush {
   def apply[T](
     filter: js.Function1[/* x */ T, Boolean] => SidePush[T],
     push: T => Unit,
-    length: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined
   ): SidePush[T] = {
     val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), push = js.Any.fromFunction1(push))
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidePush[T]]
   }
 }

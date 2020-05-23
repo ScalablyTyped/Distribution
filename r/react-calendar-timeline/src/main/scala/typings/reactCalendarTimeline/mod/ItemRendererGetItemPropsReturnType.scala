@@ -10,7 +10,7 @@ import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ object ItemRendererGetItemPropsReturnType {
   def apply(
     className: String,
     key: Id,
-    onContextMenu: SyntheticEvent[Element, Event_] => scala.Unit,
+    onContextMenu: SyntheticEvent[Element, Event] => scala.Unit,
     onDoubleClick: MouseEvent[Element, NativeMouseEvent] => scala.Unit,
     onMouseDown: MouseEvent[Element, NativeMouseEvent] => scala.Unit,
     onMouseUp: MouseEvent[Element, NativeMouseEvent] => scala.Unit,
@@ -42,8 +42,7 @@ object ItemRendererGetItemPropsReturnType {
     style: CSSProperties,
     ref: Ref[_] = null
   ): ItemRendererGetItemPropsReturnType = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onContextMenu = js.Any.fromFunction1(onContextMenu), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), style = style.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onContextMenu = js.Any.fromFunction1(onContextMenu), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseUp = js.Any.fromFunction1(onMouseUp), onTouchEnd = js.Any.fromFunction1(onTouchEnd), onTouchStart = js.Any.fromFunction1(onTouchStart), style = style.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemRendererGetItemPropsReturnType]
   }
 }

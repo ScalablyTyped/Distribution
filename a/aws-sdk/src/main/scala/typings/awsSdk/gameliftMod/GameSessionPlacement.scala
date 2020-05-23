@@ -94,11 +94,11 @@ object GameSessionPlacement {
     GameSessionRegion: NonZeroAndMaxString = null,
     IpAddress: IpAddress = null,
     MatchmakerData: MatchmakerData = null,
-    MaximumPlayerSessionCount: Int | scala.Double = null,
+    MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
     PlacedPlayerSessions: PlacedPlayerSessionList = null,
     PlacementId: IdStringModel = null,
     PlayerLatencies: PlayerLatencyList = null,
-    Port: Int | scala.Double = null,
+    Port: js.UndefOr[PortNumber] = js.undefined,
     StartTime: Timestamp = null,
     Status: GameSessionPlacementState = null
   ): GameSessionPlacement = {
@@ -114,11 +114,11 @@ object GameSessionPlacement {
     if (GameSessionRegion != null) __obj.updateDynamic("GameSessionRegion")(GameSessionRegion.asInstanceOf[js.Any])
     if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
     if (MatchmakerData != null) __obj.updateDynamic("MatchmakerData")(MatchmakerData.asInstanceOf[js.Any])
-    if (MaximumPlayerSessionCount != null) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaximumPlayerSessionCount)) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount.get.asInstanceOf[js.Any])
     if (PlacedPlayerSessions != null) __obj.updateDynamic("PlacedPlayerSessions")(PlacedPlayerSessions.asInstanceOf[js.Any])
     if (PlacementId != null) __obj.updateDynamic("PlacementId")(PlacementId.asInstanceOf[js.Any])
     if (PlayerLatencies != null) __obj.updateDynamic("PlayerLatencies")(PlayerLatencies.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSessionPlacement]

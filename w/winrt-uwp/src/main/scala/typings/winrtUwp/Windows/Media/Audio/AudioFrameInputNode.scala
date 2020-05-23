@@ -15,9 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an audio frame input node. */
-@JSGlobal("Windows.Media.Audio.AudioFrameInputNode")
 @js.native
-abstract class AudioFrameInputNode () extends js.Object {
+trait AudioFrameInputNode extends js.Object {
   /** Gets or sets a value indicating if the audio frame input node consumes input. */
   var consumeInput: Boolean = js.native
   /** Gets the list of effect definitions for the audio frame input node. */

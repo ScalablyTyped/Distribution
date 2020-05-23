@@ -75,28 +75,28 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    delayAfter: Int | Double = null,
-    delayMs: Int | Double = null,
+    delayAfter: js.UndefOr[Double] = js.undefined,
+    delayMs: js.UndefOr[Double] = js.undefined,
     keyGenerator: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => String = null,
-    maxDelayMs: Int | Double = null,
+    maxDelayMs: js.UndefOr[Double] = js.undefined,
     onLimitReached: (/* req */ RequestWithSlowDown, /* res */ Response_[_], Options) => Unit = null,
     skip: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean = null,
     skipFailedRequests: js.UndefOr[Boolean] = js.undefined,
     skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined,
     store: Store = null,
-    windowMs: Int | Double = null
+    windowMs: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (delayAfter != null) __obj.updateDynamic("delayAfter")(delayAfter.asInstanceOf[js.Any])
-    if (delayMs != null) __obj.updateDynamic("delayMs")(delayMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayAfter)) __obj.updateDynamic("delayAfter")(delayAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayMs)) __obj.updateDynamic("delayMs")(delayMs.get.asInstanceOf[js.Any])
     if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(js.Any.fromFunction2(keyGenerator))
-    if (maxDelayMs != null) __obj.updateDynamic("maxDelayMs")(maxDelayMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelayMs)) __obj.updateDynamic("maxDelayMs")(maxDelayMs.get.asInstanceOf[js.Any])
     if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(js.Any.fromFunction3(onLimitReached))
     if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
-    if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipSuccessfulRequests)) __obj.updateDynamic("skipSuccessfulRequests")(skipSuccessfulRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipSuccessfulRequests)) __obj.updateDynamic("skipSuccessfulRequests")(skipSuccessfulRequests.get.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (windowMs != null) __obj.updateDynamic("windowMs")(windowMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowMs)) __obj.updateDynamic("windowMs")(windowMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

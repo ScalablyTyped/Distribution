@@ -1,7 +1,7 @@
 package typings.matrixJsSdk.mod
 
-import typings.matrixJsSdk.AnonNeedsUpgrade
-import typings.matrixJsSdk.AnonPendingEventOrdering
+import typings.matrixJsSdk.anon.NeedsUpgrade
+import typings.matrixJsSdk.anon.PendingEventOrdering
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class Room protected () extends js.Object {
                    // A token which a data store can use to remember the state of the room.
   def this(roomId: String, client: MatrixClient, myUserId: String) = this()
-  def this(roomId: String, client: MatrixClient, myUserId: String, opts: AnonPendingEventOrdering) = this()
+  def this(roomId: String, client: MatrixClient, myUserId: String, opts: PendingEventOrdering) = this()
                 // Dict of room tags; the keys are the tag name and the values are any metadata associated with the tag - e.g. { "fav" : { order: 1 } }
   var accountData: js.Object = js.native
              // The state of the room at the time of the oldest event in the live timeline. Present for backwards compatibility -
@@ -64,7 +64,7 @@ class Room protected () extends js.Object {
   def getOrCreateFilteredTimelineSet(filter: Filter): EventTimelineSet = js.native
   def getPendingEvents(): js.Array[MatrixEvent] = js.native
   def getReceiptsForEvent(event: MatrixEvent): js.Array[js.Object] = js.native
-  def getRecommendedVersion(): js.Promise[AnonNeedsUpgrade] = js.native
+  def getRecommendedVersion(): js.Promise[NeedsUpgrade] = js.native
   def getTimelineForEvent(eventId: String): Null | EventTimeline = js.native
   def getTimelineSets(): js.Array[EventTimelineSet] = js.native
   def getUnfilteredTimelineSet(): EventTimelineSet = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/Constants", "C.INVITE")
 @js.native
 object INVITE
-  extends TopLevel[typings.sipJs.sipJsStrings.INVITE]
+  extends TopLevel[/* "0.15.11" */ String]
 

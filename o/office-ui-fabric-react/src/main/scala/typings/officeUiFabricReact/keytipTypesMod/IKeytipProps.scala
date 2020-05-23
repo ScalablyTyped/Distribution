@@ -4,7 +4,7 @@ import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
-import typings.uifabricUtilities.ipointMod.IPoint
+import typings.uifabricUtilities.pointMod.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait IKeytipProps extends js.Object {
     * Offset x and y for the keytip, added from the top-left corner
     * By default the keytip will be anchored to the bottom-center of the element
     */
-  var offset: js.UndefOr[IPoint] = js.undefined
+  var offset: js.UndefOr[Point] = js.undefined
   /**
     * Function to call when this keytip is activated.
     * 'executeTarget' is the DOM element marked with 'data-ktp-execute-target'.
@@ -85,7 +85,7 @@ object IKeytipProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     hasDynamicChildren: js.UndefOr[Boolean] = js.undefined,
     hasMenu: js.UndefOr[Boolean] = js.undefined,
-    offset: IPoint = null,
+    offset: Point = null,
     onExecute: (/* executeTarget */ HTMLElement | Null, /* target */ HTMLElement | Null) => Unit = null,
     onReturn: (/* executeTarget */ HTMLElement | Null, /* target */ HTMLElement | Null) => Unit = null,
     overflowSetSequence: js.Array[String] = null,
@@ -95,16 +95,16 @@ object IKeytipProps {
   ): IKeytipProps = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], keySequences = keySequences.asInstanceOf[js.Any])
     if (calloutProps != null) __obj.updateDynamic("calloutProps")(calloutProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDynamicChildren)) __obj.updateDynamic("hasDynamicChildren")(hasDynamicChildren.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMenu)) __obj.updateDynamic("hasMenu")(hasMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDynamicChildren)) __obj.updateDynamic("hasDynamicChildren")(hasDynamicChildren.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMenu)) __obj.updateDynamic("hasMenu")(hasMenu.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onExecute != null) __obj.updateDynamic("onExecute")(js.Any.fromFunction2(onExecute))
     if (onReturn != null) __obj.updateDynamic("onReturn")(js.Any.fromFunction2(onReturn))
     if (overflowSetSequence != null) __obj.updateDynamic("overflowSetSequence")(overflowSetSequence.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeytipProps]
   }
 }

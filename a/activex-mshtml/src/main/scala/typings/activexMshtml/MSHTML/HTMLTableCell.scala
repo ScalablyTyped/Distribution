@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLTableCell")
 @js.native
-class HTMLTableCell protected () extends js.Object {
+trait HTMLTableCell extends js.Object {
   @JSName("MSHTML.HTMLTableCell_typekey")
   var MSHTMLDotHTMLTableCell_typekey: HTMLTableCell = js.native
   var abbr: String = js.native

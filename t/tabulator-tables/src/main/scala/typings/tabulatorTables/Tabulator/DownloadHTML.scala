@@ -13,7 +13,7 @@ object DownloadHTML {
   @scala.inline
   def apply(style: js.UndefOr[Boolean] = js.undefined): DownloadHTML = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadHTML]
   }
 }

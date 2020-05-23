@@ -2,7 +2,7 @@ package typings.uifabricUtilities
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.asyncMod.Async
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import typings.uifabricUtilities.eventGroupMod.EventGroup

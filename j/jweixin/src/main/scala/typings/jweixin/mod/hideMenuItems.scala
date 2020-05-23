@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object hideMenuItems extends js.Object {
   /**
-  	 * 批量隐藏功能按钮接口
-  	 */
+    * 批量隐藏功能按钮接口
+    */
   def apply(): Unit = js.native
 }
 

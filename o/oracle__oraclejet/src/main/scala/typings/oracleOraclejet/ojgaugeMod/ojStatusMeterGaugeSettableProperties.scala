@@ -1,11 +1,11 @@
 package typings.oracleOraclejet.ojgaugeMod
 
-import typings.oracleOraclejet.Anon10
-import typings.oracleOraclejet.Anon11
-import typings.oracleOraclejet.AnonBorderColorBorderRadius
-import typings.oracleOraclejet.AnonConverterPosition
-import typings.oracleOraclejet.AnonLabelAndValue
-import typings.oracleOraclejet.AnonPositionStyle
+import typings.oracleOraclejet.anon.BorderColorBorderRadius
+import typings.oracleOraclejet.anon.ConverterPosition
+import typings.oracleOraclejet.anon.LabelAndValue
+import typings.oracleOraclejet.anon.PositionStyle
+import typings.oracleOraclejet.anon.`10`
+import typings.oracleOraclejet.anon.`11`
 import typings.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.ReferenceLine
 import typings.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.Threshold
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -29,16 +29,16 @@ trait ojStatusMeterGaugeSettableProperties extends dvtBaseGaugeSettablePropertie
   var animationOnDisplay: auto | none
   var borderColor: String
   var borderRadius: String
-  var center: Anon10
+  var center: `10`
   var color: String
   var indicatorSize: Double
   var innerRadius: Double
-  var label: AnonPositionStyle
+  var label: PositionStyle
   var max: Double
-  var metricLabel: AnonConverterPosition
+  var metricLabel: ConverterPosition
   var min: Double
   var orientation: circular | vertical | horizontal
-  var plotArea: AnonBorderColorBorderRadius
+  var plotArea: BorderColorBorderRadius
   var readonly: Boolean
   var referenceLines: js.Array[ReferenceLine]
   var startAngle: Double
@@ -47,7 +47,7 @@ trait ojStatusMeterGaugeSettableProperties extends dvtBaseGaugeSettablePropertie
   var svgStyle: js.Object
   var thresholdDisplay: currentOnly | all | onIndicator
   var thresholds: js.Array[Threshold]
-  var tooltip: Anon11
+  var tooltip: `11`
   val transientValue: Double | Null
   var value: Double | Null
   var visualEffects: none | auto
@@ -61,16 +61,16 @@ object ojStatusMeterGaugeSettableProperties {
     animationOnDisplay: auto | none,
     borderColor: String,
     borderRadius: String,
-    center: Anon10,
+    center: `10`,
     color: String,
     indicatorSize: Double,
     innerRadius: Double,
-    label: AnonPositionStyle,
+    label: PositionStyle,
     max: Double,
-    metricLabel: AnonConverterPosition,
+    metricLabel: ConverterPosition,
     min: Double,
     orientation: circular | vertical | horizontal,
-    plotArea: AnonBorderColorBorderRadius,
+    plotArea: BorderColorBorderRadius,
     readonly: Boolean,
     referenceLines: js.Array[ReferenceLine],
     startAngle: Double,
@@ -78,20 +78,17 @@ object ojStatusMeterGaugeSettableProperties {
     svgStyle: js.Object,
     thresholdDisplay: currentOnly | all | onIndicator,
     thresholds: js.Array[Threshold],
-    tooltip: Anon11,
+    tooltip: `11`,
     trackResize: on | off,
-    translations: AnonLabelAndValue,
+    translations: LabelAndValue,
     visualEffects: none | auto,
-    animationDuration: Int | Double = null,
-    step: Int | Double = null,
-    transientValue: Int | Double = null,
-    value: Int | Double = null
+    animationDuration: js.UndefOr[Double] = js.undefined,
+    step: Double = null.asInstanceOf[Double],
+    transientValue: Double = null.asInstanceOf[Double],
+    value: Double = null.asInstanceOf[Double]
   ): ojStatusMeterGaugeSettableProperties = {
-    val __obj = js.Dynamic.literal(angleExtent = angleExtent.asInstanceOf[js.Any], animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], indicatorSize = indicatorSize.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], metricLabel = metricLabel.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], plotArea = plotArea.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], referenceLines = referenceLines.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], thresholdDisplay = thresholdDisplay.asInstanceOf[js.Any], thresholds = thresholds.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], visualEffects = visualEffects.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (transientValue != null) __obj.updateDynamic("transientValue")(transientValue.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(angleExtent = angleExtent.asInstanceOf[js.Any], animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], indicatorSize = indicatorSize.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], metricLabel = metricLabel.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], plotArea = plotArea.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], referenceLines = referenceLines.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], thresholdDisplay = thresholdDisplay.asInstanceOf[js.Any], thresholds = thresholds.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], visualEffects = visualEffects.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], transientValue = transientValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojStatusMeterGaugeSettableProperties]
   }
 }

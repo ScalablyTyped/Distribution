@@ -136,17 +136,17 @@ object StartBuildInput {
     encryptionKeyOverride: NonEmptyString = null,
     environmentTypeOverride: EnvironmentType = null,
     environmentVariablesOverride: EnvironmentVariables = null,
-    gitCloneDepthOverride: Int | Double = null,
+    gitCloneDepthOverride: js.UndefOr[GitCloneDepth] = js.undefined,
     gitSubmodulesConfigOverride: GitSubmodulesConfig = null,
     idempotencyToken: String = null,
     imageOverride: NonEmptyString = null,
     imagePullCredentialsTypeOverride: ImagePullCredentialsType = null,
-    insecureSslOverride: js.UndefOr[scala.Boolean] = js.undefined,
+    insecureSslOverride: js.UndefOr[WrapperBoolean] = js.undefined,
     logsConfigOverride: LogsConfig = null,
-    privilegedModeOverride: js.UndefOr[scala.Boolean] = js.undefined,
-    queuedTimeoutInMinutesOverride: Int | Double = null,
+    privilegedModeOverride: js.UndefOr[WrapperBoolean] = js.undefined,
+    queuedTimeoutInMinutesOverride: js.UndefOr[TimeOut] = js.undefined,
     registryCredentialOverride: RegistryCredential = null,
-    reportBuildStatusOverride: js.UndefOr[scala.Boolean] = js.undefined,
+    reportBuildStatusOverride: js.UndefOr[WrapperBoolean] = js.undefined,
     secondaryArtifactsOverride: ProjectArtifactsList = null,
     secondarySourcesOverride: ProjectSources = null,
     secondarySourcesVersionOverride: ProjectSecondarySourceVersions = null,
@@ -155,7 +155,7 @@ object StartBuildInput {
     sourceLocationOverride: String = null,
     sourceTypeOverride: SourceType = null,
     sourceVersion: String = null,
-    timeoutInMinutesOverride: Int | Double = null
+    timeoutInMinutesOverride: js.UndefOr[TimeOut] = js.undefined
   ): StartBuildInput = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
     if (artifactsOverride != null) __obj.updateDynamic("artifactsOverride")(artifactsOverride.asInstanceOf[js.Any])
@@ -166,17 +166,17 @@ object StartBuildInput {
     if (encryptionKeyOverride != null) __obj.updateDynamic("encryptionKeyOverride")(encryptionKeyOverride.asInstanceOf[js.Any])
     if (environmentTypeOverride != null) __obj.updateDynamic("environmentTypeOverride")(environmentTypeOverride.asInstanceOf[js.Any])
     if (environmentVariablesOverride != null) __obj.updateDynamic("environmentVariablesOverride")(environmentVariablesOverride.asInstanceOf[js.Any])
-    if (gitCloneDepthOverride != null) __obj.updateDynamic("gitCloneDepthOverride")(gitCloneDepthOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(gitCloneDepthOverride)) __obj.updateDynamic("gitCloneDepthOverride")(gitCloneDepthOverride.get.asInstanceOf[js.Any])
     if (gitSubmodulesConfigOverride != null) __obj.updateDynamic("gitSubmodulesConfigOverride")(gitSubmodulesConfigOverride.asInstanceOf[js.Any])
     if (idempotencyToken != null) __obj.updateDynamic("idempotencyToken")(idempotencyToken.asInstanceOf[js.Any])
     if (imageOverride != null) __obj.updateDynamic("imageOverride")(imageOverride.asInstanceOf[js.Any])
     if (imagePullCredentialsTypeOverride != null) __obj.updateDynamic("imagePullCredentialsTypeOverride")(imagePullCredentialsTypeOverride.asInstanceOf[js.Any])
-    if (!js.isUndefined(insecureSslOverride)) __obj.updateDynamic("insecureSslOverride")(insecureSslOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(insecureSslOverride)) __obj.updateDynamic("insecureSslOverride")(insecureSslOverride.get.asInstanceOf[js.Any])
     if (logsConfigOverride != null) __obj.updateDynamic("logsConfigOverride")(logsConfigOverride.asInstanceOf[js.Any])
-    if (!js.isUndefined(privilegedModeOverride)) __obj.updateDynamic("privilegedModeOverride")(privilegedModeOverride.asInstanceOf[js.Any])
-    if (queuedTimeoutInMinutesOverride != null) __obj.updateDynamic("queuedTimeoutInMinutesOverride")(queuedTimeoutInMinutesOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(privilegedModeOverride)) __obj.updateDynamic("privilegedModeOverride")(privilegedModeOverride.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queuedTimeoutInMinutesOverride)) __obj.updateDynamic("queuedTimeoutInMinutesOverride")(queuedTimeoutInMinutesOverride.get.asInstanceOf[js.Any])
     if (registryCredentialOverride != null) __obj.updateDynamic("registryCredentialOverride")(registryCredentialOverride.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportBuildStatusOverride)) __obj.updateDynamic("reportBuildStatusOverride")(reportBuildStatusOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportBuildStatusOverride)) __obj.updateDynamic("reportBuildStatusOverride")(reportBuildStatusOverride.get.asInstanceOf[js.Any])
     if (secondaryArtifactsOverride != null) __obj.updateDynamic("secondaryArtifactsOverride")(secondaryArtifactsOverride.asInstanceOf[js.Any])
     if (secondarySourcesOverride != null) __obj.updateDynamic("secondarySourcesOverride")(secondarySourcesOverride.asInstanceOf[js.Any])
     if (secondarySourcesVersionOverride != null) __obj.updateDynamic("secondarySourcesVersionOverride")(secondarySourcesVersionOverride.asInstanceOf[js.Any])
@@ -185,7 +185,7 @@ object StartBuildInput {
     if (sourceLocationOverride != null) __obj.updateDynamic("sourceLocationOverride")(sourceLocationOverride.asInstanceOf[js.Any])
     if (sourceTypeOverride != null) __obj.updateDynamic("sourceTypeOverride")(sourceTypeOverride.asInstanceOf[js.Any])
     if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
-    if (timeoutInMinutesOverride != null) __obj.updateDynamic("timeoutInMinutesOverride")(timeoutInMinutesOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInMinutesOverride)) __obj.updateDynamic("timeoutInMinutesOverride")(timeoutInMinutesOverride.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartBuildInput]
   }
 }

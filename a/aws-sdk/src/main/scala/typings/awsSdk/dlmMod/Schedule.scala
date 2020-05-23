@@ -43,7 +43,7 @@ trait Schedule extends js.Object {
 object Schedule {
   @scala.inline
   def apply(
-    CopyTags: js.UndefOr[Boolean] = js.undefined,
+    CopyTags: js.UndefOr[CopyTags] = js.undefined,
     CreateRule: CreateRule = null,
     CrossRegionCopyRules: CrossRegionCopyRules = null,
     FastRestoreRule: FastRestoreRule = null,
@@ -53,7 +53,7 @@ object Schedule {
     VariableTags: VariableTagsList = null
   ): Schedule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.get.asInstanceOf[js.Any])
     if (CreateRule != null) __obj.updateDynamic("CreateRule")(CreateRule.asInstanceOf[js.Any])
     if (CrossRegionCopyRules != null) __obj.updateDynamic("CrossRegionCopyRules")(CrossRegionCopyRules.asInstanceOf[js.Any])
     if (FastRestoreRule != null) __obj.updateDynamic("FastRestoreRule")(FastRestoreRule.asInstanceOf[js.Any])

@@ -99,7 +99,7 @@ object Output {
   def apply(
     auxiliaryComment: String | AuxiliaryCommentObject = null,
     chunkFilename: String = null,
-    chunkLoadTimeout: Int | Double = null,
+    chunkLoadTimeout: js.UndefOr[Double] = js.undefined,
     crossOriginLoading: String | Boolean = null,
     devtoolFallbackModuleFilenameTemplate: String | (js.Function1[/* info */ DevtoolModuleFilenameTemplateInfo, String]) = null,
     devtoolLineToLine: js.UndefOr[Boolean] = js.undefined,
@@ -109,7 +109,7 @@ object Output {
     futureEmitAssets: js.UndefOr[Boolean] = js.undefined,
     globalObject: String = null,
     hashDigest: hex | latin1 | base64 = null,
-    hashDigestLength: Int | Double = null,
+    hashDigestLength: js.UndefOr[Double] = js.undefined,
     hashFunction: String | (js.Function2[/* algorithm */ String, /* options */ js.UndefOr[js.Any], _]) = null,
     hashSalt: String = null,
     hotUpdateChunkFilename: String = null,
@@ -130,17 +130,17 @@ object Output {
     val __obj = js.Dynamic.literal()
     if (auxiliaryComment != null) __obj.updateDynamic("auxiliaryComment")(auxiliaryComment.asInstanceOf[js.Any])
     if (chunkFilename != null) __obj.updateDynamic("chunkFilename")(chunkFilename.asInstanceOf[js.Any])
-    if (chunkLoadTimeout != null) __obj.updateDynamic("chunkLoadTimeout")(chunkLoadTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkLoadTimeout)) __obj.updateDynamic("chunkLoadTimeout")(chunkLoadTimeout.get.asInstanceOf[js.Any])
     if (crossOriginLoading != null) __obj.updateDynamic("crossOriginLoading")(crossOriginLoading.asInstanceOf[js.Any])
     if (devtoolFallbackModuleFilenameTemplate != null) __obj.updateDynamic("devtoolFallbackModuleFilenameTemplate")(devtoolFallbackModuleFilenameTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(devtoolLineToLine)) __obj.updateDynamic("devtoolLineToLine")(devtoolLineToLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(devtoolLineToLine)) __obj.updateDynamic("devtoolLineToLine")(devtoolLineToLine.get.asInstanceOf[js.Any])
     if (devtoolModuleFilenameTemplate != null) __obj.updateDynamic("devtoolModuleFilenameTemplate")(devtoolModuleFilenameTemplate.asInstanceOf[js.Any])
     if (devtoolNamespace != null) __obj.updateDynamic("devtoolNamespace")(devtoolNamespace.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(futureEmitAssets)) __obj.updateDynamic("futureEmitAssets")(futureEmitAssets.asInstanceOf[js.Any])
+    if (!js.isUndefined(futureEmitAssets)) __obj.updateDynamic("futureEmitAssets")(futureEmitAssets.get.asInstanceOf[js.Any])
     if (globalObject != null) __obj.updateDynamic("globalObject")(globalObject.asInstanceOf[js.Any])
     if (hashDigest != null) __obj.updateDynamic("hashDigest")(hashDigest.asInstanceOf[js.Any])
-    if (hashDigestLength != null) __obj.updateDynamic("hashDigestLength")(hashDigestLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashDigestLength)) __obj.updateDynamic("hashDigestLength")(hashDigestLength.get.asInstanceOf[js.Any])
     if (hashFunction != null) __obj.updateDynamic("hashFunction")(hashFunction.asInstanceOf[js.Any])
     if (hashSalt != null) __obj.updateDynamic("hashSalt")(hashSalt.asInstanceOf[js.Any])
     if (hotUpdateChunkFilename != null) __obj.updateDynamic("hotUpdateChunkFilename")(hotUpdateChunkFilename.asInstanceOf[js.Any])
@@ -152,11 +152,11 @@ object Output {
     if (libraryExport != null) __obj.updateDynamic("libraryExport")(libraryExport.asInstanceOf[js.Any])
     if (libraryTarget != null) __obj.updateDynamic("libraryTarget")(libraryTarget.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathinfo)) __obj.updateDynamic("pathinfo")(pathinfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathinfo)) __obj.updateDynamic("pathinfo")(pathinfo.get.asInstanceOf[js.Any])
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
     if (sourceMapFilename != null) __obj.updateDynamic("sourceMapFilename")(sourceMapFilename.asInstanceOf[js.Any])
     if (sourcePrefix != null) __obj.updateDynamic("sourcePrefix")(sourcePrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(umdNamedDefine)) __obj.updateDynamic("umdNamedDefine")(umdNamedDefine.asInstanceOf[js.Any])
+    if (!js.isUndefined(umdNamedDefine)) __obj.updateDynamic("umdNamedDefine")(umdNamedDefine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
 }

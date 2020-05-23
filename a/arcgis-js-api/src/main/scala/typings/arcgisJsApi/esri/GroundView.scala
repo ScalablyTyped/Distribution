@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,4 @@ trait GroundView extends Accessor {
     */
   val updating: Boolean = js.native
 }
-
-@JSGlobal("__esri.GroundView")
-@js.native
-object GroundView extends TopLevel[GroundViewConstructor]
 

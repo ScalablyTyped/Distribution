@@ -1,13 +1,13 @@
 package typings.gapiClientFusiontables.gapi.client.fusiontables
 
-import typings.gapiClientFusiontables.AnonColumnId
+import typings.gapiClientFusiontables.anon.ColumnId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Column extends js.Object {
   /** Identifier of the base column. If present, this column is derived from the specified base column. */
-  var baseColumn: js.UndefOr[AnonColumnId] = js.undefined
+  var baseColumn: js.UndefOr[ColumnId] = js.undefined
   /** Identifier for the column. */
   var columnId: js.UndefOr[Double] = js.undefined
   /** JSON schema for interpreting JSON in this column. */
@@ -52,8 +52,8 @@ trait Column extends js.Object {
 object Column {
   @scala.inline
   def apply(
-    baseColumn: AnonColumnId = null,
-    columnId: Int | Double = null,
+    baseColumn: ColumnId = null,
+    columnId: js.UndefOr[Double] = js.undefined,
     columnJsonSchema: String = null,
     columnPropertiesJson: String = null,
     description: String = null,
@@ -67,7 +67,7 @@ object Column {
   ): Column = {
     val __obj = js.Dynamic.literal()
     if (baseColumn != null) __obj.updateDynamic("baseColumn")(baseColumn.asInstanceOf[js.Any])
-    if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnId)) __obj.updateDynamic("columnId")(columnId.get.asInstanceOf[js.Any])
     if (columnJsonSchema != null) __obj.updateDynamic("columnJsonSchema")(columnJsonSchema.asInstanceOf[js.Any])
     if (columnPropertiesJson != null) __obj.updateDynamic("columnPropertiesJson")(columnPropertiesJson.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -77,7 +77,7 @@ object Column {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validValues != null) __obj.updateDynamic("validValues")(validValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateData)) __obj.updateDynamic("validateData")(validateData.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateData)) __obj.updateDynamic("validateData")(validateData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
 }

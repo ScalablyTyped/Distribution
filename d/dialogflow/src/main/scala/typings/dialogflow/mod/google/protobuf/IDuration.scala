@@ -15,10 +15,13 @@ trait IDuration extends js.Object {
 
 object IDuration {
   @scala.inline
-  def apply(nanos: Int | Double = null, seconds: Double | Long | String = null): IDuration = {
+  def apply(
+    nanos: js.UndefOr[Null | Double] = js.undefined,
+    seconds: js.UndefOr[Null | Double | Long | String] = js.undefined
+  ): IDuration = {
     val __obj = js.Dynamic.literal()
-    if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(nanos)) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
+    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDuration]
   }
 }

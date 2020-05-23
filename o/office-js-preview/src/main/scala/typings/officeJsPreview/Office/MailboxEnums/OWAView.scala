@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,7 @@ object OWAView extends js.Object {
   sealed trait OneColumn extends OWAView
   
   /**
-    Three-column view. Displayed when the screen is wide. For example, Outlook on the web uses this view in a full screen window on a desktop 
+    Three-column view. Displayed when the screen is wide. For example, Outlook on the web uses this view in a full screen window on a desktop
     computer.
     */
   @js.native
@@ -32,17 +31,6 @@ object OWAView extends js.Object {
     */
   @js.native
   sealed trait TwoColumns extends OWAView
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[OWAView with String] = js.native
-  /* "OneColumn" */ @js.native
-  object OneColumn extends TopLevel[OneColumn with String]
-  
-  /* "ThreeColumns" */ @js.native
-  object ThreeColumns extends TopLevel[ThreeColumns with String]
-  
-  /* "TwoColumns" */ @js.native
-  object TwoColumns extends TopLevel[TwoColumns with String]
   
 }
 

@@ -21,10 +21,13 @@ trait IErrorHandlingConfig extends js.Object {
 
 object IErrorHandlingConfig {
   @scala.inline
-  def apply(objectMaxDepth: Int | Double = null, urlErrorParamsEnabled: js.UndefOr[Boolean] = js.undefined): IErrorHandlingConfig = {
+  def apply(
+    objectMaxDepth: js.UndefOr[Double] = js.undefined,
+    urlErrorParamsEnabled: js.UndefOr[Boolean] = js.undefined
+  ): IErrorHandlingConfig = {
     val __obj = js.Dynamic.literal()
-    if (objectMaxDepth != null) __obj.updateDynamic("objectMaxDepth")(objectMaxDepth.asInstanceOf[js.Any])
-    if (!js.isUndefined(urlErrorParamsEnabled)) __obj.updateDynamic("urlErrorParamsEnabled")(urlErrorParamsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMaxDepth)) __obj.updateDynamic("objectMaxDepth")(objectMaxDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(urlErrorParamsEnabled)) __obj.updateDynamic("urlErrorParamsEnabled")(urlErrorParamsEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IErrorHandlingConfig]
   }
 }

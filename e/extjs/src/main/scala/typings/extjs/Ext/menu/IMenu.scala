@@ -13,19 +13,19 @@ trait IMenu extends IPanel {
   /** [Config Option] (Boolean) */
   var allowOtherMenus: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns whether a menu item can be activated or not
-  		* @param item Object
-  		* @returns Boolean
-  		*/
+    * @param item Object
+    * @returns Boolean
+    */
   var canActivateItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Method] Deactivates the current active item on the menu if one exists
-  		* @param andBlurFocusedItem Object
-  		*/
+    * @param andBlurFocusedItem Object
+    */
   var deactivateActiveItem: js.UndefOr[js.Function1[/* andBlurFocusedItem */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var enableKeyNav: js.UndefOr[Boolean] = js.undefined
   /** [Method] Hides this Component setting it to invisible using the configured hideMode
-  		* @returns Ext.Component this
-  		*/
+    * @returns Ext.Component this
+    */
   @JSName("hide")
   var hide_IMenu: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Config Option] (Boolean) */
@@ -33,8 +33,8 @@ trait IMenu extends IPanel {
   /** [Property] (Boolean) */
   var isMenu: js.UndefOr[Boolean] = js.undefined
   /** [Method] Menus are never contained and must not ascertain their visibility from the ancestor hierarchy
-  		* @returns Boolean true if this component is visible, false otherwise.
-  		*/
+    * @returns Boolean true if this component is visible, false otherwise.
+    */
   @JSName("isVisible")
   var isVisible_IMenu: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Property] (Ext.menu.Menu) */
@@ -42,11 +42,11 @@ trait IMenu extends IPanel {
   /** [Config Option] (Boolean) */
   var plain: js.UndefOr[Boolean] = js.undefined
   /** [Method] Shows this component by the specified Component or Element
-  		* @param cmp Object
-  		* @param pos Object
-  		* @param off Object
-  		* @returns Ext.Component this
-  		*/
+    * @param cmp Object
+    * @param pos Object
+    * @param off Object
+    * @returns Ext.Component this
+    */
   @JSName("showBy")
   var showBy_IMenu: js.UndefOr[
     js.Function3[
@@ -81,18 +81,18 @@ object IMenu {
     val __obj = js.Dynamic.literal()
     if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
     if (afterShow != null) __obj.updateDynamic("afterShow")(js.Any.fromFunction0(afterShow))
-    if (!js.isUndefined(allowOtherMenus)) __obj.updateDynamic("allowOtherMenus")(allowOtherMenus.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOtherMenus)) __obj.updateDynamic("allowOtherMenus")(allowOtherMenus.get.asInstanceOf[js.Any])
     if (canActivateItem != null) __obj.updateDynamic("canActivateItem")(js.Any.fromFunction1(canActivateItem))
     if (deactivateActiveItem != null) __obj.updateDynamic("deactivateActiveItem")(js.Any.fromFunction1(deactivateActiveItem))
-    if (!js.isUndefined(enableKeyNav)) __obj.updateDynamic("enableKeyNav")(enableKeyNav.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKeyNav)) __obj.updateDynamic("enableKeyNav")(enableKeyNav.get.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
-    if (!js.isUndefined(ignoreParentClicks)) __obj.updateDynamic("ignoreParentClicks")(ignoreParentClicks.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMenu)) __obj.updateDynamic("isMenu")(isMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreParentClicks)) __obj.updateDynamic("ignoreParentClicks")(ignoreParentClicks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMenu)) __obj.updateDynamic("isMenu")(isMenu.get.asInstanceOf[js.Any])
     if (isVisible != null) __obj.updateDynamic("isVisible")(js.Any.fromFunction0(isVisible))
     if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.get.asInstanceOf[js.Any])
     if (showBy != null) __obj.updateDynamic("showBy")(js.Any.fromFunction3(showBy))
-    if (!js.isUndefined(showSeparator)) __obj.updateDynamic("showSeparator")(showSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSeparator)) __obj.updateDynamic("showSeparator")(showSeparator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMenu]
   }
 }

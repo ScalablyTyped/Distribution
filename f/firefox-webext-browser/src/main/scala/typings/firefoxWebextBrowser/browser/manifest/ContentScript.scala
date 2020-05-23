@@ -48,13 +48,13 @@ object ContentScript {
     run_at: RunAt = null
   ): ContentScript = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
-    if (!js.isUndefined(all_frames)) __obj.updateDynamic("all_frames")(all_frames.asInstanceOf[js.Any])
+    if (!js.isUndefined(all_frames)) __obj.updateDynamic("all_frames")(all_frames.get.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (exclude_globs != null) __obj.updateDynamic("exclude_globs")(exclude_globs.asInstanceOf[js.Any])
     if (exclude_matches != null) __obj.updateDynamic("exclude_matches")(exclude_matches.asInstanceOf[js.Any])
     if (include_globs != null) __obj.updateDynamic("include_globs")(include_globs.asInstanceOf[js.Any])
     if (js_ != null) __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
-    if (!js.isUndefined(match_about_blank)) __obj.updateDynamic("match_about_blank")(match_about_blank.asInstanceOf[js.Any])
+    if (!js.isUndefined(match_about_blank)) __obj.updateDynamic("match_about_blank")(match_about_blank.get.asInstanceOf[js.Any])
     if (run_at != null) __obj.updateDynamic("run_at")(run_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentScript]
   }

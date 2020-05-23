@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +16,4 @@ trait HTMLModElement extends HTMLElement {
     */
   var dateTime: java.lang.String = js.native
 }
-
-@JSGlobal("HTMLModElement")
-@js.native
-object HTMLModElement extends Instantiable0[HTMLModElement]
 

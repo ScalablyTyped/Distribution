@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when <Titanium.UI.WebView.allowedURLSchemes> contains scheme of opening url.
-		 */
+  * Fired when <Titanium.UI.WebView.allowedURLSchemes> contains scheme of opening url.
+  */
 trait WebViewHandleurlEvent extends WebViewBaseEvent {
   /**
-  			 * Handler <Titanium.UI.iOS.WebViewDecisionHandler>.
-  			 */
+    * Handler <Titanium.UI.iOS.WebViewDecisionHandler>.
+    */
   var handler: String
   /**
-  			 * URL of the web document being loaded.
-  			 */
+    * URL of the web document being loaded.
+    */
   var url: String
 }
 

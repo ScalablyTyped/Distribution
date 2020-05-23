@@ -39,21 +39,21 @@ object ChartAxis {
   @scala.inline
   def apply(
     allowContainerBoundaryTextCufoff: js.UndefOr[Boolean] = js.undefined,
-    baseline: Int | Double = null,
+    baseline: js.UndefOr[Double] = js.undefined,
     baselineColor: String = null,
-    direction: Int | Double = null,
+    direction: js.UndefOr[Double] = js.undefined,
     format: String = null,
     gridlines: ChartGridlines = null,
     logScale: js.UndefOr[Boolean] = js.undefined,
-    maxAlternation: Int | Double = null,
-    maxTextLines: Int | Double = null,
+    maxAlternation: js.UndefOr[Double] = js.undefined,
+    maxTextLines: js.UndefOr[Double] = js.undefined,
     maxValue: Double | Date | js.Array[Double] = null,
-    minTextSpacing: Int | Double = null,
+    minTextSpacing: js.UndefOr[Double] = js.undefined,
     minValue: Double | Date | js.Array[Double] = null,
     minorGridlines: ChartGridlines = null,
-    showTextEvery: Int | Double = null,
+    showTextEvery: js.UndefOr[Double] = js.undefined,
     slantedText: js.UndefOr[Boolean] = js.undefined,
-    slantedTextAngle: Int | Double = null,
+    slantedTextAngle: js.UndefOr[Double] = js.undefined,
     textPosition: String = null,
     textStyle: ChartTextStyle = null,
     ticks: js.Array[_] = null,
@@ -63,22 +63,22 @@ object ChartAxis {
     viewWindowMode: String = null
   ): ChartAxis = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowContainerBoundaryTextCufoff)) __obj.updateDynamic("allowContainerBoundaryTextCufoff")(allowContainerBoundaryTextCufoff.asInstanceOf[js.Any])
-    if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowContainerBoundaryTextCufoff)) __obj.updateDynamic("allowContainerBoundaryTextCufoff")(allowContainerBoundaryTextCufoff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseline)) __obj.updateDynamic("baseline")(baseline.get.asInstanceOf[js.Any])
     if (baselineColor != null) __obj.updateDynamic("baselineColor")(baselineColor.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (gridlines != null) __obj.updateDynamic("gridlines")(gridlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(logScale)) __obj.updateDynamic("logScale")(logScale.asInstanceOf[js.Any])
-    if (maxAlternation != null) __obj.updateDynamic("maxAlternation")(maxAlternation.asInstanceOf[js.Any])
-    if (maxTextLines != null) __obj.updateDynamic("maxTextLines")(maxTextLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(logScale)) __obj.updateDynamic("logScale")(logScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAlternation)) __obj.updateDynamic("maxAlternation")(maxAlternation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTextLines)) __obj.updateDynamic("maxTextLines")(maxTextLines.get.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minTextSpacing != null) __obj.updateDynamic("minTextSpacing")(minTextSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTextSpacing)) __obj.updateDynamic("minTextSpacing")(minTextSpacing.get.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (minorGridlines != null) __obj.updateDynamic("minorGridlines")(minorGridlines.asInstanceOf[js.Any])
-    if (showTextEvery != null) __obj.updateDynamic("showTextEvery")(showTextEvery.asInstanceOf[js.Any])
-    if (!js.isUndefined(slantedText)) __obj.updateDynamic("slantedText")(slantedText.asInstanceOf[js.Any])
-    if (slantedTextAngle != null) __obj.updateDynamic("slantedTextAngle")(slantedTextAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTextEvery)) __obj.updateDynamic("showTextEvery")(showTextEvery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slantedText)) __obj.updateDynamic("slantedText")(slantedText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slantedTextAngle)) __obj.updateDynamic("slantedTextAngle")(slantedTextAngle.get.asInstanceOf[js.Any])
     if (textPosition != null) __obj.updateDynamic("textPosition")(textPosition.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])

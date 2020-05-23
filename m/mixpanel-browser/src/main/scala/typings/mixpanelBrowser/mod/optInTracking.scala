@@ -1,6 +1,6 @@
 package typings.mixpanelBrowser.mod
 
-import typings.mixpanelBrowser.PartialInTrackingOptions
+import typings.mixpanelBrowser.anon.PartialInTrackingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

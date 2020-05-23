@@ -1,6 +1,6 @@
 package typings.ejWebAll.ej.TagCloud
 
-import typings.ejWebAll.ej.Format_
+import typings.ejWebAll.ej.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait Model extends js.Object {
   /** Defines the format for the TagCloud to display the tag items.See Format
     * @Default {ej.Format.Cloud}
     */
-  var format: js.UndefOr[String | Format_] = js.undefined
+  var format: js.UndefOr[String | Format] = js.undefined
   /** Specifies the list of HTML attributes to be added to TagCloud control.
     * @Default {{}}
     */
@@ -80,7 +80,7 @@ object Model {
     destroy: /* e */ DestroyEventArgs => Unit = null,
     enableRTL: js.UndefOr[Boolean] = js.undefined,
     fields: Fields = null,
-    format: String | Format_ = null,
+    format: String | Format = null,
     htmlAttributes: js.Any = null,
     maxFontSize: String | Double = null,
     minFontSize: String | Double = null,
@@ -97,7 +97,7 @@ object Model {
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
@@ -106,7 +106,7 @@ object Model {
     if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
     if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.get.asInstanceOf[js.Any])
     if (titleImage != null) __obj.updateDynamic("titleImage")(titleImage.asInstanceOf[js.Any])
     if (titleText != null) __obj.updateDynamic("titleText")(titleText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]

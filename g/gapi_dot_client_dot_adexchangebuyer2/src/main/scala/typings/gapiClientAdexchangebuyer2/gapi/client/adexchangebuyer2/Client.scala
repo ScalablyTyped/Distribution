@@ -76,7 +76,7 @@ object Client {
     if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleToSeller)) __obj.updateDynamic("visibleToSeller")(visibleToSeller.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleToSeller)) __obj.updateDynamic("visibleToSeller")(visibleToSeller.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Client]
   }
 }

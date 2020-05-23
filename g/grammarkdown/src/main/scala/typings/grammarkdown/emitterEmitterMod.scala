@@ -1,5 +1,7 @@
 package typings.grammarkdown
 
+import typings.esfxAsyncCanceltoken.mod.CancelToken
+import typings.esfxCancelable.distMod.Cancelable
 import typings.grammarkdown.checkerMod.Resolver
 import typings.grammarkdown.coreMod.TextRange
 import typings.grammarkdown.diagnosticsMod.DiagnosticMessages
@@ -48,7 +50,7 @@ object emitterEmitterMod extends js.Object {
   @js.native
   class Emitter protected () extends js.Object {
     def this(options: CompilerOptions) = this()
-    var cancellationToken: js.Any = js.native
+    var cancelToken: js.UndefOr[js.Any] = js.native
     var diagnostics: js.Any = js.native
     var extension: String = js.native
     var options: CompilerOptions = js.native
@@ -59,6 +61,7 @@ object emitterEmitterMod extends js.Object {
     /* protected */ def afterEmitNode(node: Node[SyntaxKind]): Unit = js.native
     /* protected */ def beforeEmitNode(node: Node[SyntaxKind]): Unit = js.native
     /* protected */ def createWriter(options: CompilerOptions): StringWriter = js.native
+    /** @deprecated since 2.1.0 - `prex.CancellationToken` may no longer be accepted in future releases. Please use a token that implements `@esfx/cancelable.Cancelable` */
     def emit(
       node: SourceFile,
       resolver: Resolver,
@@ -66,10 +69,10 @@ object emitterEmitterMod extends js.Object {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          /* cancellationToken */ js.UndefOr[CancellationToken], 
-          Unit | js.Promise[Unit]
+          js.UndefOr[(CancellationToken with CancelToken) | CancelToken], 
+          js.Thenable[Unit] | Unit
         ]
-    ): Unit | js.Promise[Unit] = js.native
+    ): js.Promise[Unit] = js.native
     def emit(
       node: SourceFile,
       resolver: Resolver,
@@ -77,11 +80,23 @@ object emitterEmitterMod extends js.Object {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          /* cancellationToken */ js.UndefOr[CancellationToken], 
-          Unit | js.Promise[Unit]
+          js.UndefOr[(CancellationToken with CancelToken) | CancelToken], 
+          js.Thenable[Unit] | Unit
         ],
-      cancellationToken: CancellationToken
-    ): Unit | js.Promise[Unit] = js.native
+      cancelable: Cancelable
+    ): js.Promise[Unit] = js.native
+    def emit(
+      node: SourceFile,
+      resolver: Resolver,
+      diagnostics: DiagnosticMessages,
+      writeFile: js.Function3[
+          /* file */ String, 
+          /* text */ String, 
+          /* cancelToken */ js.UndefOr[CancellationToken with CancelToken], 
+          Unit | js.Thenable[Unit]
+        ],
+      cancelable: CancellationToken
+    ): js.Promise[Unit] = js.native
     /* protected */ def emitArgument(node: Argument): Unit = js.native
     /* protected */ def emitArgumentList(node: ArgumentList): Unit = js.native
     /* protected */ def emitButNotSymbol(node: ButNotSymbol): Unit = js.native
@@ -111,14 +126,16 @@ object emitterEmitterMod extends js.Object {
     /* protected */ def emitRightHandSideList(node: RightHandSideList): Unit = js.native
     /* protected */ def emitSourceFile(node: SourceFile): Unit = js.native
     def emitString(node: SourceFile, resolver: Resolver, diagnostics: DiagnosticMessages): String = js.native
+    def emitString(node: SourceFile, resolver: Resolver, diagnostics: DiagnosticMessages, cancelable: Cancelable): String = js.native
     def emitString(
       node: SourceFile,
       resolver: Resolver,
       diagnostics: DiagnosticMessages,
-      cancellationToken: CancellationToken
+      cancelable: CancellationToken
     ): String = js.native
     /* protected */ def emitSymbolSet(node: SymbolSet): Unit = js.native
     /* protected */ def emitSymbolSpan(node: SymbolSpan): Unit = js.native
+    /** @deprecated since 2.1.0 - `prex.CancellationToken` may no longer be accepted in future releases. Please use a token that implements `@esfx/cancelable.Cancelable` */
     def emitSync(
       node: SourceFile,
       resolver: Resolver,
@@ -126,7 +143,7 @@ object emitterEmitterMod extends js.Object {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          /* cancellationToken */ js.UndefOr[CancellationToken], 
+          js.UndefOr[(CancellationToken with CancelToken) | CancelToken], 
           Unit
         ]
     ): Unit = js.native
@@ -137,10 +154,22 @@ object emitterEmitterMod extends js.Object {
       writeFile: js.Function3[
           /* file */ String, 
           /* text */ String, 
-          /* cancellationToken */ js.UndefOr[CancellationToken], 
+          js.UndefOr[(CancellationToken with CancelToken) | CancelToken], 
           Unit
         ],
-      cancellationToken: CancellationToken
+      cancelable: Cancelable
+    ): Unit = js.native
+    def emitSync(
+      node: SourceFile,
+      resolver: Resolver,
+      diagnostics: DiagnosticMessages,
+      writeFile: js.Function3[
+          /* file */ String, 
+          /* text */ String, 
+          /* cancelToken */ js.UndefOr[CancellationToken with CancelToken], 
+          Unit
+        ],
+      cancelable: CancellationToken
     ): Unit = js.native
     /* protected */ def emitTerminal(node: Terminal): Unit = js.native
     /* protected */ def emitTextContent(node: TextContent): Unit = js.native

@@ -18,16 +18,13 @@ trait Instance
 object Instance {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     c: js.Array[Double] = null,
-    e: Int | Double = null,
-    s: Int | Double = null
+    e: Double = null.asInstanceOf[Double],
+    s: Double = null.asInstanceOf[Double]
   ): Instance = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
-    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
 }

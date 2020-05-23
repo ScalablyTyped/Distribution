@@ -36,14 +36,14 @@ object AndroidMinimumOperatingSystem {
     v5_1: js.UndefOr[Boolean] = js.undefined
   ): AndroidMinimumOperatingSystem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(v4_0)) __obj.updateDynamic("v4_0")(v4_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_0_3)) __obj.updateDynamic("v4_0_3")(v4_0_3.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_1)) __obj.updateDynamic("v4_1")(v4_1.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_2)) __obj.updateDynamic("v4_2")(v4_2.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_3)) __obj.updateDynamic("v4_3")(v4_3.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_4)) __obj.updateDynamic("v4_4")(v4_4.asInstanceOf[js.Any])
-    if (!js.isUndefined(v5_0)) __obj.updateDynamic("v5_0")(v5_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v5_1)) __obj.updateDynamic("v5_1")(v5_1.asInstanceOf[js.Any])
+    if (!js.isUndefined(v4_0)) __obj.updateDynamic("v4_0")(v4_0.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v4_0_3)) __obj.updateDynamic("v4_0_3")(v4_0_3.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v4_1)) __obj.updateDynamic("v4_1")(v4_1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v4_2)) __obj.updateDynamic("v4_2")(v4_2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v4_3)) __obj.updateDynamic("v4_3")(v4_3.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v4_4)) __obj.updateDynamic("v4_4")(v4_4.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v5_0)) __obj.updateDynamic("v5_0")(v5_0.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v5_1)) __obj.updateDynamic("v5_1")(v5_1.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidMinimumOperatingSystem]
   }
 }

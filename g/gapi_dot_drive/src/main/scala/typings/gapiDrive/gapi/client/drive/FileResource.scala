@@ -1,12 +1,12 @@
 package typings.gapiDrive.gapi.client.drive
 
-import typings.gapiDrive.AnonAperture
-import typings.gapiDrive.AnonCanAddChildren
-import typings.gapiDrive.AnonDisplayName
-import typings.gapiDrive.AnonDurationMillis
-import typings.gapiDrive.AnonHidden
-import typings.gapiDrive.AnonImage
-import typings.gapiDrive.AnonText
+import typings.gapiDrive.anon.Aperture
+import typings.gapiDrive.anon.CanAddChildren
+import typings.gapiDrive.anon.DisplayName
+import typings.gapiDrive.anon.DurationMillis
+import typings.gapiDrive.anon.Hidden
+import typings.gapiDrive.anon.Image
+import typings.gapiDrive.anon.Text
 import typings.gapiDrive.gapiDriveStrings.driveNumbersignfile
 import typings.std.Date
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait FileResource extends js.Object {
   var appDataContents: Boolean
   var canComment: Boolean
   var canReadRevisions: Boolean
-  var capabilities: AnonCanAddChildren
+  var capabilities: CanAddChildren
   var copyable: Boolean
   var createdDate: Date
   // openWithLinks
@@ -38,13 +38,13 @@ trait FileResource extends js.Object {
   var headRevisionId: String
   var iconLink: String
   var id: String
-  var imageMediaMetadata: AnonAperture
+  var imageMediaMetadata: Aperture
   // exportLinks
-  var indexableText: AnonText
+  var indexableText: Text
   var isAppAuthorized: Boolean
   var kind: driveNumbersignfile
-  var labels: AnonHidden
-  var lastModifyingUser: AnonDisplayName
+  var labels: Hidden
+  var lastModifyingUser: DisplayName
   var lastModifyingUserName: String
   var lastViewedByMeDate: Date
   var markedViewedByMeDate: Date
@@ -55,7 +55,7 @@ trait FileResource extends js.Object {
   var originalFilename: String
   var ownedByMe: Boolean
   var ownerNames: js.Array[String]
-  var owners: js.Array[AnonDisplayName]
+  var owners: js.Array[DisplayName]
   var parents: js.Array[ParentResource]
   var permissions: js.Array[PermissionResource]
   var properties: js.Array[PropertiesResource]
@@ -64,17 +64,17 @@ trait FileResource extends js.Object {
   var shareable: Boolean
   var shared: Boolean
   var sharedWithMeDate: Date
-  var sharingUser: AnonDisplayName
+  var sharingUser: DisplayName
   var spaces: js.Array[String]
   var teamDriveId: String
-  var thumbnail: AnonImage
+  var thumbnail: Image
   var thumbnailLink: String
   var title: String
   var trashedDate: Date
-  var trashingUser: AnonDisplayName
+  var trashingUser: DisplayName
   var userPermission: PermissionResource
   var version: Double
-  var videoMediaMetadata: AnonDurationMillis
+  var videoMediaMetadata: DurationMillis
   var webContentLink: String
   var webViewLink: String
   var writersCanShare: Boolean
@@ -87,7 +87,7 @@ object FileResource {
     appDataContents: Boolean,
     canComment: Boolean,
     canReadRevisions: Boolean,
-    capabilities: AnonCanAddChildren,
+    capabilities: CanAddChildren,
     copyable: Boolean,
     createdDate: Date,
     defaultOpenWithLink: String,
@@ -106,12 +106,12 @@ object FileResource {
     headRevisionId: String,
     iconLink: String,
     id: String,
-    imageMediaMetadata: AnonAperture,
-    indexableText: AnonText,
+    imageMediaMetadata: Aperture,
+    indexableText: Text,
     isAppAuthorized: Boolean,
     kind: driveNumbersignfile,
-    labels: AnonHidden,
-    lastModifyingUser: AnonDisplayName,
+    labels: Hidden,
+    lastModifyingUser: DisplayName,
     lastModifyingUserName: String,
     lastViewedByMeDate: Date,
     markedViewedByMeDate: Date,
@@ -122,7 +122,7 @@ object FileResource {
     originalFilename: String,
     ownedByMe: Boolean,
     ownerNames: js.Array[String],
-    owners: js.Array[AnonDisplayName],
+    owners: js.Array[DisplayName],
     parents: js.Array[ParentResource],
     permissions: js.Array[PermissionResource],
     properties: js.Array[PropertiesResource],
@@ -131,17 +131,17 @@ object FileResource {
     shareable: Boolean,
     shared: Boolean,
     sharedWithMeDate: Date,
-    sharingUser: AnonDisplayName,
+    sharingUser: DisplayName,
     spaces: js.Array[String],
     teamDriveId: String,
-    thumbnail: AnonImage,
+    thumbnail: Image,
     thumbnailLink: String,
     title: String,
     trashedDate: Date,
-    trashingUser: AnonDisplayName,
+    trashingUser: DisplayName,
     userPermission: PermissionResource,
     version: Double,
-    videoMediaMetadata: AnonDurationMillis,
+    videoMediaMetadata: DurationMillis,
     webContentLink: String,
     webViewLink: String,
     writersCanShare: Boolean

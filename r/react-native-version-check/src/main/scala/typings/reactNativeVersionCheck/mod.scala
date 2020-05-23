@@ -1,5 +1,10 @@
 package typings.reactNativeVersionCheck
 
+import typings.reactNativeVersionCheck.anon.AppID
+import typings.reactNativeVersionCheck.anon.CurrentVersion
+import typings.reactNativeVersionCheck.anon.FetchOptions
+import typings.reactNativeVersionCheck.anon.IgnoreErrors
+import typings.reactNativeVersionCheck.anon.IsNeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +18,7 @@ object mod extends js.Object {
       * Returns url of App Store of app.
       */
     def getAppStoreUrl(): js.Promise[String] = js.native
-    def getAppStoreUrl(option: AnonAppID): js.Promise[String] = js.native
+    def getAppStoreUrl(option: AppID): js.Promise[String] = js.native
     /**
       * Returns device's country code of 2 characters.
       */
@@ -30,7 +35,7 @@ object mod extends js.Object {
       * Returns the latest app version parsed from url. Returns null when parsing error occurs.
       */
     def getLatestVersion(): js.Promise[String] = js.native
-    def getLatestVersion(option: AnonFetchOptions): js.Promise[String] = js.native
+    def getLatestVersion(option: FetchOptions): js.Promise[String] = js.native
     /**
       * Returns package name of app.
       */
@@ -39,18 +44,18 @@ object mod extends js.Object {
       * Returns url of Play Store of app.
       */
     def getPlayStoreUrl(): js.Promise[String] = js.native
-    def getPlayStoreUrl(option: AnonIgnoreErrors): js.Promise[String] = js.native
+    def getPlayStoreUrl(option: IgnoreErrors): js.Promise[String] = js.native
     /**
       * Returns url of Play Market or App Store of app.
       */
     def getStoreUrl(): js.Promise[String] = js.native
-    def getStoreUrl(option: AnonAppID): js.Promise[String] = js.native
+    def getStoreUrl(option: AppID): js.Promise[String] = js.native
     /**
       * Returns an object contains with boolean value whether update needed, current version and latest version.
       * Current and the latest app versions are first split by delimiter, and check each split numbers into depth.
       */
-    def needUpdate(): js.Promise[AnonIsNeeded] = js.native
-    def needUpdate(option: AnonCurrentVersion): js.Promise[AnonIsNeeded] = js.native
+    def needUpdate(): js.Promise[IsNeeded] = js.native
+    def needUpdate(option: CurrentVersion): js.Promise[IsNeeded] = js.native
   }
   
 }

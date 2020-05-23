@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
   * Define table-extension options
   */
 trait Table
-  extends /**
-  * Support misc options
-  */
-/* key */ StringDictionary[js.Any] {
+  extends /* extension */ StringDictionary[js.Any] {
   /**
     * Render the checkboxes into the this column index (default: nodeColumnIdx)
     */
@@ -33,10 +30,7 @@ object Table {
     checkboxColumnIdx: js.Any,
     indentation: Double,
     nodeColumnIdx: Double,
-    StringDictionary: /**
-    * Support misc options
-    */
-  /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Table = {
     val __obj = js.Dynamic.literal(checkboxColumnIdx = checkboxColumnIdx.asInstanceOf[js.Any], indentation = indentation.asInstanceOf[js.Any], nodeColumnIdx = nodeColumnIdx.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

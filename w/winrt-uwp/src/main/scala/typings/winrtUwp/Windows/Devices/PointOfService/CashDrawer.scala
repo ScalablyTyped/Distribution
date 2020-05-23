@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A cash drawer device in a retail scenario. */
-@JSGlobal("Windows.Devices.PointOfService.CashDrawer")
 @js.native
-abstract class CashDrawer () extends js.Object {
+trait CashDrawer extends js.Object {
   /** The functionality of the cash drawer device as exposed by API. */
   var capabilities: CashDrawerCapabilities = js.native
   /** The identifier string of the cash drawer device. */
@@ -52,27 +51,5 @@ abstract class CashDrawer () extends js.Object {
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[CashDrawer, CashDrawerStatusUpdatedEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.PointOfService.CashDrawer")
-@js.native
-object CashDrawer extends js.Object {
-  /**
-    * Creates CashDrawer object from the DeviceInformation.Id .
-    * @param deviceId The DeviceInformation.Id that identifies a specific cash drawer, which can be retrieved from the DeviceId property.
-    * @return The cash drawer specified by the unique device identifier. Returns a null object in the following cases:
-    */
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[CashDrawer] = js.native
-  /**
-    * Gets the default paired or locally-connected cash drawer.
-    * @return The default locally-connected drawer. May return null if there is no drawer available.
-    */
-  def getDefaultAsync(): IPromiseWithIAsyncOperation[CashDrawer] = js.native
-  /**
-    * Gets an Advanced Query Syntax (AQS) string that you can use to list the available cash drawers.
-    * @return An Advanced Query Syntax (AQS) string that is used to enumerate available cash drawers.
-    */
-  def getDeviceSelector(): String = js.native
 }
 

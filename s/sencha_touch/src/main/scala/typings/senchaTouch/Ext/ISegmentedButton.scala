@@ -14,57 +14,57 @@ trait ISegmentedButton extends IContainer {
   /** [Method] We override initItems so we can check for the pressed config  */
   var applyItems: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the value of allowDepress
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAllowDepress: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of allowMultiple
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAllowMultiple: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of allowToggle
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAllowToggle: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of layout
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getLayout: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Gets the currently pressed button s */
   var getPressed: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the value of pressedButtons
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getPressedButtons: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of pressedCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPressedCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns true if a specified Ext Button is pressed
-  		* @param button Ext.Button The button to check if pressed.
-  		* @returns Boolean pressed
-  		*/
+    * @param button Ext.Button The button to check if pressed.
+    * @returns Boolean pressed
+    */
   var isPressed: js.UndefOr[js.Function1[/* button */ js.UndefOr[IButton], Boolean]] = js.undefined
   /** [Config Option] (Array) */
   var pressedButtons: js.UndefOr[Array] = js.undefined
   /** [Config Option] (String) */
   var pressedCls: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Sets the value of allowDepress
-  		* @param allowDepress Boolean The new value.
-  		*/
+    * @param allowDepress Boolean The new value.
+    */
   var setAllowDepress: js.UndefOr[js.Function1[/* allowDepress */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of allowMultiple
-  		* @param allowMultiple Boolean The new value.
-  		*/
+    * @param allowMultiple Boolean The new value.
+    */
   var setAllowMultiple: js.UndefOr[js.Function1[/* allowMultiple */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of allowToggle
-  		* @param allowToggle Boolean The new value.
-  		*/
+    * @param allowToggle Boolean The new value.
+    */
   var setAllowToggle: js.UndefOr[js.Function1[/* allowToggle */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Activates a button
-  		* @param button Number/String/Ext.Button The button to activate.
-  		* @param pressed Boolean If defined, sets the pressed state of the button, otherwise the pressed state is toggled.
-  		* @param suppressEvents Boolean true to suppress toggle events during the action. If allowMultiple is true, then setPressed will toggle the button state.
-  		*/
+    * @param button Number/String/Ext.Button The button to activate.
+    * @param pressed Boolean If defined, sets the pressed state of the button, otherwise the pressed state is toggled.
+    * @param suppressEvents Boolean true to suppress toggle events during the action. If allowMultiple is true, then setPressed will toggle the button state.
+    */
   var setPressed: js.UndefOr[
     js.Function3[
       /* button */ js.UndefOr[js.Any], 
@@ -74,12 +74,12 @@ trait ISegmentedButton extends IContainer {
     ]
   ] = js.undefined
   /** [Method] Sets the value of pressedButtons
-  		* @param pressedButtons Array The new value.
-  		*/
+    * @param pressedButtons Array The new value.
+    */
   var setPressedButtons: js.UndefOr[js.Function1[/* pressedButtons */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of pressedCls
-  		* @param pressedCls String The new value.
-  		*/
+    * @param pressedCls String The new value.
+    */
   var setPressedCls: js.UndefOr[js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
 }
 
@@ -110,9 +110,9 @@ object ISegmentedButton {
   ): ISegmentedButton = {
     val __obj = js.Dynamic.literal()
     if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(allowDepress)) __obj.updateDynamic("allowDepress")(allowDepress.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowToggle)) __obj.updateDynamic("allowToggle")(allowToggle.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDepress)) __obj.updateDynamic("allowDepress")(allowDepress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowToggle)) __obj.updateDynamic("allowToggle")(allowToggle.get.asInstanceOf[js.Any])
     if (applyItems != null) __obj.updateDynamic("applyItems")(js.Any.fromFunction0(applyItems))
     if (getAllowDepress != null) __obj.updateDynamic("getAllowDepress")(js.Any.fromFunction0(getAllowDepress))
     if (getAllowMultiple != null) __obj.updateDynamic("getAllowMultiple")(js.Any.fromFunction0(getAllowMultiple))

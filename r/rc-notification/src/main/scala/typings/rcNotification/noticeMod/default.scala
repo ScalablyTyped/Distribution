@@ -1,6 +1,6 @@
 package typings.rcNotification.noticeMod
 
-import typings.rcNotification.AnonDuration
+import typings.rcNotification.anon.Duration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Notice
 @JSImport("rc-notification/lib/Notice", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonDuration = js.native
+  var defaultProps: Duration = js.native
 }
 

@@ -43,7 +43,7 @@ trait StartTranscriptionJobRequest extends js.Object {
     */
   var Settings: js.UndefOr[typings.awsSdk.transcribeserviceMod.Settings] = js.native
   /**
-    * The name of the job. Note that you can't use the strings "." or ".." by themselves as the job name. The name must also be unique within an AWS account.
+    * The name of the job. Note that you can't use the strings "." or ".." by themselves as the job name. The name must also be unique within an AWS account. If you try to create a transcription job with the same name as a previous transcription job you will receive a ConflictException error.
     */
   var TranscriptionJobName: typings.awsSdk.transcribeserviceMod.TranscriptionJobName = js.native
 }
@@ -57,7 +57,7 @@ object StartTranscriptionJobRequest {
     ContentRedaction: ContentRedaction = null,
     JobExecutionSettings: JobExecutionSettings = null,
     MediaFormat: MediaFormat = null,
-    MediaSampleRateHertz: Int | Double = null,
+    MediaSampleRateHertz: js.UndefOr[MediaSampleRateHertz] = js.undefined,
     OutputBucketName: OutputBucketName = null,
     OutputEncryptionKMSKeyId: KMSKeyId = null,
     Settings: Settings = null
@@ -66,7 +66,7 @@ object StartTranscriptionJobRequest {
     if (ContentRedaction != null) __obj.updateDynamic("ContentRedaction")(ContentRedaction.asInstanceOf[js.Any])
     if (JobExecutionSettings != null) __obj.updateDynamic("JobExecutionSettings")(JobExecutionSettings.asInstanceOf[js.Any])
     if (MediaFormat != null) __obj.updateDynamic("MediaFormat")(MediaFormat.asInstanceOf[js.Any])
-    if (MediaSampleRateHertz != null) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(MediaSampleRateHertz)) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.get.asInstanceOf[js.Any])
     if (OutputBucketName != null) __obj.updateDynamic("OutputBucketName")(OutputBucketName.asInstanceOf[js.Any])
     if (OutputEncryptionKMSKeyId != null) __obj.updateDynamic("OutputEncryptionKMSKeyId")(OutputEncryptionKMSKeyId.asInstanceOf[js.Any])
     if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])

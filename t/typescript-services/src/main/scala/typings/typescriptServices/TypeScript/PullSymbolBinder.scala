@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullSymbolBinder")
 @js.native
-class PullSymbolBinder protected () extends js.Object {
-  def this(semanticInfoChain: SemanticInfoChain) = this()
+trait PullSymbolBinder extends js.Object {
   var declsBeingBound: js.Any = js.native
   var inBindingOtherDeclsWalker: js.Any = js.native
   var semanticInfoChain: js.Any = js.native

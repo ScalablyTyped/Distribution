@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.graphics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -78,8 +77,4 @@ trait GraphicsLayer
     */
   def removeMany(graphics: js.Array[Graphic]): Unit = js.native
 }
-
-@JSGlobal("__esri.GraphicsLayer")
-@js.native
-object GraphicsLayer extends TopLevel[GraphicsLayerConstructor]
 

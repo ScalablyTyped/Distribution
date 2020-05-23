@@ -1,7 +1,7 @@
 package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.postmanCollection.AnonCreated
+import typings.postmanCollection.anon.Created
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ class Collection () extends ItemGroup[Item] {
   def this(definition: CollectionDefinition, environments: js.Array[_]) = this()
   var variables: VariableList = js.native
   var version: js.UndefOr[Version] = js.native
-  def syncVariablesFrom(obj: StringDictionary[VariableDefinition]): js.UndefOr[AnonCreated] = js.native
-  def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Boolean): js.UndefOr[AnonCreated] = js.native
-  def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Boolean, prune: Boolean): js.UndefOr[AnonCreated] = js.native
+  def syncVariablesFrom(obj: StringDictionary[VariableDefinition]): js.UndefOr[Created] = js.native
+  def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Boolean): js.UndefOr[Created] = js.native
+  def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Boolean, prune: Boolean): js.UndefOr[Created] = js.native
   def syncVariablesTo(): StringDictionary[VariableDefinition] = js.native
   def syncVariablesTo(obj: StringDictionary[VariableDefinition]): StringDictionary[VariableDefinition] = js.native
 }

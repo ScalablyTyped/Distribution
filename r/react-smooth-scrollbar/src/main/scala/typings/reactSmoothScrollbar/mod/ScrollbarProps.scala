@@ -42,26 +42,26 @@ object ScrollbarProps {
     alwaysShowTracks: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     continuousScrolling: js.UndefOr[Boolean] = js.undefined,
-    damping: Int | Double = null,
+    damping: js.UndefOr[Double] = js.undefined,
     delegateTo: EventTarget = null,
     onScroll: (/* status */ ScrollStatus, /* scrollbarInstance */ default) => Unit = null,
     plugins: js.Any = null,
     renderByPixels: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    thumbMinSize: Int | Double = null,
+    thumbMinSize: js.UndefOr[Double] = js.undefined,
     wheelEventTarget: EventTarget = null
   ): ScrollbarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysShowTracks)) __obj.updateDynamic("alwaysShowTracks")(alwaysShowTracks.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysShowTracks)) __obj.updateDynamic("alwaysShowTracks")(alwaysShowTracks.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(continuousScrolling)) __obj.updateDynamic("continuousScrolling")(continuousScrolling.asInstanceOf[js.Any])
-    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
+    if (!js.isUndefined(continuousScrolling)) __obj.updateDynamic("continuousScrolling")(continuousScrolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(damping)) __obj.updateDynamic("damping")(damping.get.asInstanceOf[js.Any])
     if (delegateTo != null) __obj.updateDynamic("delegateTo")(delegateTo.asInstanceOf[js.Any])
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction2(onScroll))
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderByPixels)) __obj.updateDynamic("renderByPixels")(renderByPixels.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderByPixels)) __obj.updateDynamic("renderByPixels")(renderByPixels.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (thumbMinSize != null) __obj.updateDynamic("thumbMinSize")(thumbMinSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbMinSize)) __obj.updateDynamic("thumbMinSize")(thumbMinSize.get.asInstanceOf[js.Any])
     if (wheelEventTarget != null) __obj.updateDynamic("wheelEventTarget")(wheelEventTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollbarProps]
   }

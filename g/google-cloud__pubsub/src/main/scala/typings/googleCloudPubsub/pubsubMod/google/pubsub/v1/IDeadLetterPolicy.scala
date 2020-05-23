@@ -14,10 +14,13 @@ trait IDeadLetterPolicy extends js.Object {
 
 object IDeadLetterPolicy {
   @scala.inline
-  def apply(deadLetterTopic: String = null, maxDeliveryAttempts: Int | Double = null): IDeadLetterPolicy = {
+  def apply(
+    deadLetterTopic: js.UndefOr[Null | String] = js.undefined,
+    maxDeliveryAttempts: js.UndefOr[Null | Double] = js.undefined
+  ): IDeadLetterPolicy = {
     val __obj = js.Dynamic.literal()
-    if (deadLetterTopic != null) __obj.updateDynamic("deadLetterTopic")(deadLetterTopic.asInstanceOf[js.Any])
-    if (maxDeliveryAttempts != null) __obj.updateDynamic("maxDeliveryAttempts")(maxDeliveryAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(deadLetterTopic)) __obj.updateDynamic("deadLetterTopic")(deadLetterTopic.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDeliveryAttempts)) __obj.updateDynamic("maxDeliveryAttempts")(maxDeliveryAttempts.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeadLetterPolicy]
   }
 }

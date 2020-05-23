@@ -24,9 +24,6 @@ object firebaseComponentStrings {
   sealed trait VERSION extends ComponentType
   
   @js.native
-  sealed trait `[DEFAULT]` extends js.Object
-  
-  @js.native
   sealed trait badtest extends Name
   
   @js.native
@@ -51,8 +48,6 @@ object firebaseComponentStrings {
   def PUBLIC: PUBLIC = "PUBLIC".asInstanceOf[PUBLIC]
   @scala.inline
   def VERSION: VERSION = "VERSION".asInstanceOf[VERSION]
-  @scala.inline
-  def `[DEFAULT]`: `[DEFAULT]` = "[DEFAULT]".asInstanceOf[`[DEFAULT]`]
   @scala.inline
   def badtest: badtest = "badtest".asInstanceOf[badtest]
   @scala.inline

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * An abstract base object that defines the methods and attributes for map overlays.
   */
-@JSGlobal("mapkit.Overlay")
 @js.native
-abstract class Overlay () extends js.Object {
+trait Overlay extends js.Object {
   /**
     * Custom data to associate with this overlay.
     */

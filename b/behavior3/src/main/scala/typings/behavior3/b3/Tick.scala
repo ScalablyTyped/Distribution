@@ -19,31 +19,40 @@ import scala.scalajs.js.annotation._
   * node state to the debug if the last is provided.
   *
   */
-@JSGlobal("b3.Tick")
-@js.native
-/**
-  * Initialization method.
-  */
-class Tick () extends js.Object {
+trait Tick extends js.Object {
   /**
     * Callback when closing a node (called by BaseNode).
     */
-  def _closeNode(node: js.Any): Unit = js.native
+  def _closeNode(node: js.Any): Unit
   /**
     * Called when entering a node (called by BaseNode).
     */
-  def _enterNode(node: js.Any): Unit = js.native
+  def _enterNode(node: js.Any): Unit
   /**
     * Callback when exiting a node (called by BaseNode).
     */
-  def _exitNode(node: js.Any): Unit = js.native
+  def _exitNode(node: js.Any): Unit
   /**
     * Callback when opening a node (called by BaseNode).
     */
-  def _openNode(node: js.Any): Unit = js.native
+  def _openNode(node: js.Any): Unit
   /**
     * Callback when ticking a node (called by BaseNode).
     */
-  def _tickNode(node: js.Any): Unit = js.native
+  def _tickNode(node: js.Any): Unit
+}
+
+object Tick {
+  @scala.inline
+  def apply(
+    _closeNode: js.Any => Unit,
+    _enterNode: js.Any => Unit,
+    _exitNode: js.Any => Unit,
+    _openNode: js.Any => Unit,
+    _tickNode: js.Any => Unit
+  ): Tick = {
+    val __obj = js.Dynamic.literal(_closeNode = js.Any.fromFunction1(_closeNode), _enterNode = js.Any.fromFunction1(_enterNode), _exitNode = js.Any.fromFunction1(_exitNode), _openNode = js.Any.fromFunction1(_openNode), _tickNode = js.Any.fromFunction1(_tickNode))
+    __obj.asInstanceOf[Tick]
+  }
 }
 

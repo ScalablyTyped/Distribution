@@ -1,8 +1,8 @@
 package typings.googleProtobuf.mod
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.googleProtobuf.AnonInstantiable
-import typings.googleProtobuf.TypeofMessage
+import typings.googleProtobuf.anon.Instantiable
+import typings.googleProtobuf.anon.TypeofMessage
 import typings.googleProtobuf.mod.Message.MessageArray
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -42,16 +42,8 @@ object Message extends js.Object {
   var extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
   def addToRepeatedField(msg: Message, fieldNumber: Double, value: js.Any): Unit = js.native
   def addToRepeatedField(msg: Message, fieldNumber: Double, value: js.Any, index: Double): Unit = js.native
-  def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T, ctor: AnonInstantiable[T]): T = js.native
-  def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T, ctor: AnonInstantiable[T], index: Double): T = js.native
-  def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: js.UndefOr[scala.Nothing], ctor: AnonInstantiable[T]): T = js.native
-  def addToRepeatedWrapperField[T /* <: Message */](
-    msg: Message,
-    fieldNumber: Double,
-    value: js.UndefOr[scala.Nothing],
-    ctor: AnonInstantiable[T],
-    index: Double
-  ): T = js.native
+  def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: js.UndefOr[T], ctor: Instantiable[T]): T = js.native
+  def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: js.UndefOr[T], ctor: Instantiable[T], index: Double): T = js.native
   def bytesAsB64(bytes: Uint8Array): String = js.native
   def bytesAsU8(str: String): Uint8Array = js.native
   def bytesListAsB64(bytesList: js.Array[Uint8Array]): js.Array[String] = js.native
@@ -73,9 +65,9 @@ object Message extends js.Object {
   def getMapField(msg: Message, fieldNumber: Double, noLazyCreate: Boolean, valueCtor: TypeofMessage): Map[_, _] = js.native
   def getOptionalFloatingPointField(msg: Message, fieldNumber: Double): js.UndefOr[Double] = js.native
   def getRepeatedFloatingPointField(msg: Message, fieldNumber: Double): js.Array[Double] = js.native
-  def getRepeatedWrapperField[T /* <: Message */](msg: Message, ctor: AnonInstantiable[T], fieldNumber: Double): js.Array[T] = js.native
-  def getWrapperField[T /* <: Message */](msg: Message, ctor: AnonInstantiable[T], fieldNumber: Double): T = js.native
-  def getWrapperField[T /* <: Message */](msg: Message, ctor: AnonInstantiable[T], fieldNumber: Double, required: Double): T = js.native
+  def getRepeatedWrapperField[T /* <: Message */](msg: Message, ctor: Instantiable[T], fieldNumber: Double): js.Array[T] = js.native
+  def getWrapperField[T /* <: Message */](msg: Message, ctor: Instantiable[T], fieldNumber: Double): T = js.native
+  def getWrapperField[T /* <: Message */](msg: Message, ctor: Instantiable[T], fieldNumber: Double, required: Double): T = js.native
   def initialize(msg: Message, data: MessageArray, messageId: String, suggestedPivot: Double): Unit = js.native
   def initialize(
     msg: Message,

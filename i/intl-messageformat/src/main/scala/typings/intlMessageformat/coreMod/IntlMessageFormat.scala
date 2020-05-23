@@ -1,9 +1,8 @@
 package typings.intlMessageformat.coreMod
 
-import typings.intlMessageformat.AnonDate
-import typings.intlMessageformat.AnonLocale
-import typings.intlMessageformat.FnCall
-import typings.intlMessageformat.PartialFormats
+import typings.intlMessageformat.anon.FnCall
+import typings.intlMessageformat.anon.Locale
+import typings.intlMessageformat.anon.PartialFormats
 import typings.intlMessageformat.formattersMod.FormatXMLElementFn
 import typings.intlMessageformat.formattersMod.MessageFormatPart
 import typings.intlMessageformat.formattersMod.PrimitiveType
@@ -63,7 +62,7 @@ class IntlMessageFormat protected () extends js.Object {
   def formatToParts(): js.Array[MessageFormatPart] = js.native
   def formatToParts(values: Record[String, _]): js.Array[MessageFormatPart] = js.native
   def getAst(): js.Array[MessageFormatElement] = js.native
-  def resolvedOptions(): AnonLocale = js.native
+  def resolvedOptions(): Locale = js.native
 }
 
 /* static members */
@@ -72,6 +71,6 @@ class IntlMessageFormat protected () extends js.Object {
 object IntlMessageFormat extends js.Object {
   var __parse: js.UndefOr[FnCall] = js.native
   var defaultLocale: String = js.native
-  var formats: AnonDate = js.native
+  var formats: typings.intlMessageformat.anon.Date = js.native
 }
 

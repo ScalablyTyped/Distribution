@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PickUnionTypetype
 import typings.typedoc.modelsMod.UnionType
 import typings.typedoc.serializationComponentsMod.TypeSerializerComponent
 import scala.scalajs.js

@@ -51,7 +51,7 @@ object SortableOptions {
     start: /* e */ SortableStartEvent => Unit = null
   ): SortableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.get.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
@@ -64,7 +64,7 @@ object SortableOptions {
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(holdToDrag)) __obj.updateDynamic("holdToDrag")(holdToDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(holdToDrag)) __obj.updateDynamic("holdToDrag")(holdToDrag.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction1(move))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

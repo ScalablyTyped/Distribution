@@ -1,6 +1,6 @@
 package typings.angular.mod
 
-import typings.angular.AnonCapacity
+import typings.angular.anon.Capacity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait ICacheFactoryService extends js.Object {
     * capacity — turns the cache into LRU cache.
     */
   def apply(cacheId: String): ICacheObject = js.native
-  def apply(cacheId: String, optionsMap: AnonCapacity): ICacheObject = js.native
+  def apply(cacheId: String, optionsMap: Capacity): ICacheObject = js.native
   /**
     * Get access to a cache object by the cacheId used when it was created.
     *

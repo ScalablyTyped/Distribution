@@ -11,9 +11,9 @@ trait JasmineAjaxRequestStubErrorOptions extends js.Object {
 
 object JasmineAjaxRequestStubErrorOptions {
   @scala.inline
-  def apply(status: Int | Double = null, statusText: String = null): JasmineAjaxRequestStubErrorOptions = {
+  def apply(status: js.UndefOr[Double] = js.undefined, statusText: String = null): JasmineAjaxRequestStubErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[JasmineAjaxRequestStubErrorOptions]
   }

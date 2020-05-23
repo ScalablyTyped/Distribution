@@ -11,10 +11,10 @@ trait GeoChartMagnifyingGlass extends js.Object {
 
 object GeoChartMagnifyingGlass {
   @scala.inline
-  def apply(enable: js.UndefOr[Boolean] = js.undefined, zoomFactor: Int | Double = null): GeoChartMagnifyingGlass = {
+  def apply(enable: js.UndefOr[Boolean] = js.undefined, zoomFactor: js.UndefOr[Double] = js.undefined): GeoChartMagnifyingGlass = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomFactor)) __obj.updateDynamic("zoomFactor")(zoomFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoChartMagnifyingGlass]
   }
 }

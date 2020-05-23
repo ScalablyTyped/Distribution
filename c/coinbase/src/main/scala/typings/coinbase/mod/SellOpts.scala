@@ -47,11 +47,11 @@ object SellOpts {
     total: String = null
   ): SellOpts = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(agree_btc_amount_varies)) __obj.updateDynamic("agree_btc_amount_varies")(agree_btc_amount_varies.asInstanceOf[js.Any])
+    if (!js.isUndefined(agree_btc_amount_varies)) __obj.updateDynamic("agree_btc_amount_varies")(agree_btc_amount_varies.get.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
+    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.get.asInstanceOf[js.Any])
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
-    if (!js.isUndefined(quote)) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
+    if (!js.isUndefined(quote)) __obj.updateDynamic("quote")(quote.get.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[SellOpts]
   }

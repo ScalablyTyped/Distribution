@@ -1,6 +1,5 @@
 package typings.mathjax.MathJax
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +70,27 @@ trait Ajax extends js.Object {
   def loadTimeout(file: String): Unit
 }
 
-@JSGlobal("MathJax.Ajax")
-@js.native
-object Ajax extends TopLevel[Ajax]
+object Ajax {
+  @scala.inline
+  def apply(
+    Load: (String, js.Any) => js.Any,
+    LoadHook: (String, js.Any) => js.Any,
+    Preloading: /* repeated */ js.Any => Unit,
+    Require: (String, js.Any) => js.Any,
+    STATUS: STATUS,
+    Styles: (js.Any, js.Any) => js.Any,
+    fileURL: String => String,
+    loadComplete: String => Unit,
+    loadError: String => Unit,
+    loadHooks: js.Any,
+    loadTimeout: String => Unit,
+    loaded: js.Any,
+    loading: Boolean,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): Ajax = {
+    val __obj = js.Dynamic.literal(Load = js.Any.fromFunction2(Load), LoadHook = js.Any.fromFunction2(LoadHook), Preloading = js.Any.fromFunction1(Preloading), Require = js.Any.fromFunction2(Require), STATUS = STATUS.asInstanceOf[js.Any], Styles = js.Any.fromFunction2(Styles), fileURL = js.Any.fromFunction1(fileURL), loadComplete = js.Any.fromFunction1(loadComplete), loadError = js.Any.fromFunction1(loadError), loadHooks = loadHooks.asInstanceOf[js.Any], loadTimeout = js.Any.fromFunction1(loadTimeout), loaded = loaded.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ajax]
+  }
+}
 

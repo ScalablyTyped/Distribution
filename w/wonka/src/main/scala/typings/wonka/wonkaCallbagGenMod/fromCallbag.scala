@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("wonka/dist/types/src/web/Wonka_callbag.gen", "fromCallbag")
 @js.native
 object fromCallbag extends js.Object {
-  def apply[a](_1: callbagT[a]): sourceT[a] = js.native
+  def apply[a](callbag: callbagT[a]): sourceT[a] = js.native
 }
 

@@ -11,10 +11,10 @@ trait PollOptions extends js.Object {
 
 object PollOptions {
   @scala.inline
-  def apply(pageUrl: String = null, width: Int | Double = null): PollOptions = {
+  def apply(pageUrl: String = null, width: js.UndefOr[Double] = js.undefined): PollOptions = {
     val __obj = js.Dynamic.literal()
     if (pageUrl != null) __obj.updateDynamic("pageUrl")(pageUrl.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollOptions]
   }
 }

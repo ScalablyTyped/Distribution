@@ -37,7 +37,7 @@ object AwsIamRoleDetails {
   def apply(
     AssumeRolePolicyDocument: AwsIamRoleAssumeRolePolicyDocument = null,
     CreateDate: NonEmptyString = null,
-    MaxSessionDuration: Int | scala.Double = null,
+    MaxSessionDuration: js.UndefOr[Integer] = js.undefined,
     Path: NonEmptyString = null,
     RoleId: NonEmptyString = null,
     RoleName: NonEmptyString = null
@@ -45,7 +45,7 @@ object AwsIamRoleDetails {
     val __obj = js.Dynamic.literal()
     if (AssumeRolePolicyDocument != null) __obj.updateDynamic("AssumeRolePolicyDocument")(AssumeRolePolicyDocument.asInstanceOf[js.Any])
     if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (MaxSessionDuration != null) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxSessionDuration)) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration.get.asInstanceOf[js.Any])
     if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
     if (RoleId != null) __obj.updateDynamic("RoleId")(RoleId.asInstanceOf[js.Any])
     if (RoleName != null) __obj.updateDynamic("RoleName")(RoleName.asInstanceOf[js.Any])

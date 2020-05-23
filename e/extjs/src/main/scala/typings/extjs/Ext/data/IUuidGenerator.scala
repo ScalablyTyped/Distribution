@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait IUuidGenerator extends IIdGenerator {
   /** [Method] Reconfigures this generator given new config properties
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var reconfigure: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Property] (Number/Object) */
   var salt: js.UndefOr[js.Any] = js.undefined
@@ -44,7 +44,7 @@ object IUuidGenerator {
     statics: js.Any = null,
     timestamp: js.Any = null,
     uses: Array = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): IUuidGenerator = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
@@ -59,17 +59,17 @@ object IUuidGenerator {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isGenerator)) __obj.updateDynamic("isGenerator")(isGenerator.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGenerator)) __obj.updateDynamic("isGenerator")(isGenerator.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (reconfigure != null) __obj.updateDynamic("reconfigure")(js.Any.fromFunction1(reconfigure))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUuidGenerator]
   }
 }

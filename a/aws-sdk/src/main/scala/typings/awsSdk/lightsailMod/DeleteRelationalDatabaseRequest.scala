@@ -29,7 +29,7 @@ object DeleteRelationalDatabaseRequest {
   ): DeleteRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     if (finalRelationalDatabaseSnapshotName != null) __obj.updateDynamic("finalRelationalDatabaseSnapshotName")(finalRelationalDatabaseSnapshotName.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipFinalSnapshot)) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipFinalSnapshot)) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRelationalDatabaseRequest]
   }
 }

@@ -1,6 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,12 +45,4 @@ trait UndoManager extends js.Object {
   def undo(): Range = js.native
   def undo(dontSelect: Boolean): Range = js.native
 }
-
-@JSGlobal("AceAjax.UndoManager")
-@js.native
-object UndoManager
-  extends /**
-  * Resets the current undo state and creates a new `UndoManager`.
-  **/
-Instantiable0[UndoManager]
 

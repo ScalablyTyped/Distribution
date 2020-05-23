@@ -22,9 +22,9 @@ trait ISwatchColorPickerStyleProps extends js.Object {
 
 object ISwatchColorPickerStyleProps {
   @scala.inline
-  def apply(theme: ITheme, cellMargin: Int | Double = null, className: String = null): ISwatchColorPickerStyleProps = {
+  def apply(theme: ITheme, cellMargin: js.UndefOr[Double] = js.undefined, className: String = null): ISwatchColorPickerStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    if (cellMargin != null) __obj.updateDynamic("cellMargin")(cellMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellMargin)) __obj.updateDynamic("cellMargin")(cellMargin.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISwatchColorPickerStyleProps]
   }

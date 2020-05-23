@@ -1,5 +1,6 @@
 package typings.slickCarousel
 
+import typings.slickCarousel.anon.CurX
 import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -127,7 +128,7 @@ trait JQuerySlickInitials extends js.Object {
   /**
     * Object that contains properties relative to "touch" behavior.
     */
-  var touchObject: AnonCurX
+  var touchObject: CurX
   /**
     * Default: false
     */
@@ -152,7 +153,7 @@ object JQuerySlickInitials {
     slideOffset: Double,
     sliding: Boolean,
     swiping: Boolean,
-    touchObject: AnonCurX,
+    touchObject: CurX,
     transformsEnabled: Boolean,
     unslicked: Boolean,
     $dots: JQuery = null,
@@ -160,27 +161,15 @@ object JQuerySlickInitials {
     $prevArrow: JQuery = null,
     $slideTrack: JQuery = null,
     $slides: JQuery = null,
-    autoPlayTimer: Int | Double = null,
-    currentLeft: Int | Double = null,
-    listHeight: Int | Double = null,
-    listWidth: Int | Double = null,
-    slideCount: Int | Double = null,
+    autoPlayTimer: Double = null.asInstanceOf[Double],
+    currentLeft: Double = null.asInstanceOf[Double],
+    listHeight: Double = null.asInstanceOf[Double],
+    listWidth: Double = null.asInstanceOf[Double],
+    slideCount: Double = null.asInstanceOf[Double],
     slideWidth: Number = null,
-    swipeLeft: Int | Double = null
+    swipeLeft: Double = null.asInstanceOf[Double]
   ): JQuerySlickInitials = {
-    val __obj = js.Dynamic.literal($list = $list.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any], currentDirection = currentDirection.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], loadIndex = loadIndex.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], slideOffset = slideOffset.asInstanceOf[js.Any], sliding = sliding.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any], touchObject = touchObject.asInstanceOf[js.Any], transformsEnabled = transformsEnabled.asInstanceOf[js.Any], unslicked = unslicked.asInstanceOf[js.Any])
-    if ($dots != null) __obj.updateDynamic("$dots")($dots.asInstanceOf[js.Any])
-    if ($nextArrow != null) __obj.updateDynamic("$nextArrow")($nextArrow.asInstanceOf[js.Any])
-    if ($prevArrow != null) __obj.updateDynamic("$prevArrow")($prevArrow.asInstanceOf[js.Any])
-    if ($slideTrack != null) __obj.updateDynamic("$slideTrack")($slideTrack.asInstanceOf[js.Any])
-    if ($slides != null) __obj.updateDynamic("$slides")($slides.asInstanceOf[js.Any])
-    if (autoPlayTimer != null) __obj.updateDynamic("autoPlayTimer")(autoPlayTimer.asInstanceOf[js.Any])
-    if (currentLeft != null) __obj.updateDynamic("currentLeft")(currentLeft.asInstanceOf[js.Any])
-    if (listHeight != null) __obj.updateDynamic("listHeight")(listHeight.asInstanceOf[js.Any])
-    if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
-    if (slideCount != null) __obj.updateDynamic("slideCount")(slideCount.asInstanceOf[js.Any])
-    if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
-    if (swipeLeft != null) __obj.updateDynamic("swipeLeft")(swipeLeft.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal($list = $list.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any], currentDirection = currentDirection.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], loadIndex = loadIndex.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], slideOffset = slideOffset.asInstanceOf[js.Any], sliding = sliding.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any], touchObject = touchObject.asInstanceOf[js.Any], transformsEnabled = transformsEnabled.asInstanceOf[js.Any], unslicked = unslicked.asInstanceOf[js.Any], $dots = $dots.asInstanceOf[js.Any], $nextArrow = $nextArrow.asInstanceOf[js.Any], $prevArrow = $prevArrow.asInstanceOf[js.Any], $slideTrack = $slideTrack.asInstanceOf[js.Any], $slides = $slides.asInstanceOf[js.Any], autoPlayTimer = autoPlayTimer.asInstanceOf[js.Any], currentLeft = currentLeft.asInstanceOf[js.Any], listHeight = listHeight.asInstanceOf[js.Any], listWidth = listWidth.asInstanceOf[js.Any], slideCount = slideCount.asInstanceOf[js.Any], slideWidth = slideWidth.asInstanceOf[js.Any], swipeLeft = swipeLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuerySlickInitials]
   }
 }

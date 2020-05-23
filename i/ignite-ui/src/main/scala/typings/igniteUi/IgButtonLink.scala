@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait IgButtonLink
   extends /**
-	 * Option for IgButtonLink
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   var href: js.UndefOr[js.Any] = js.undefined
   var target: js.UndefOr[js.Any] = js.undefined
@@ -18,10 +18,7 @@ trait IgButtonLink
 object IgButtonLink {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgButtonLink
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     href: js.Any = null,
     target: js.Any = null,
     title: js.Any = null

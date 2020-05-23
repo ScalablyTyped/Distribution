@@ -4,26 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.EventTimeline")
-@js.native
-class EventTimeline protected () extends Timeline {
-  def this(frameCount: Double) = this()
-  var events: js.Array[Event] = js.native
-  var frames: ArrayLike[Double] = js.native
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(
-    skeleton: Skeleton,
-    lastTime: Double,
-    time: Double,
+trait EventTimeline extends Timeline {
+  var events: js.Array[Event]
+  var frames: ArrayLike[Double]
+  def getFrameCount(): Double
+  def setFrame(frameIndex: Double, event: Event): Unit
+}
+
+object EventTimeline {
+  @scala.inline
+  def apply(
+    apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     events: js.Array[Event],
-    alpha: Double,
-    blend: MixBlend,
-    direction: MixDirection
-  ): Unit = js.native
-  def getFrameCount(): Double = js.native
-  /* CompleteClass */
-  override def getPropertyId(): Double = js.native
-  def setFrame(frameIndex: Double, event: Event): Unit = js.native
+    frames: ArrayLike[Double],
+    getFrameCount: () => Double,
+    getPropertyId: () => Double,
+    setFrame: (Double, Event) => Unit
+  ): EventTimeline = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction7(apply), events = events.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], getFrameCount = js.Any.fromFunction0(getFrameCount), getPropertyId = js.Any.fromFunction0(getPropertyId), setFrame = js.Any.fromFunction2(setFrame))
+    __obj.asInstanceOf[EventTimeline]
+  }
 }
 

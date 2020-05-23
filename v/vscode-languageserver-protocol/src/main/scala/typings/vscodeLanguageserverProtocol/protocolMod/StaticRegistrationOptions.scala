@@ -15,6 +15,6 @@ trait StaticRegistrationOptions extends js.Object {
 @JSImport("vscode-languageserver-protocol/lib/protocol", "StaticRegistrationOptions")
 @js.native
 object StaticRegistrationOptions extends js.Object {
-  def hasId(value: js.Object): /* is vscode-languageserver-protocol.AnonId */ Boolean = js.native
+  def hasId(value: js.Object): /* is vscode-languageserver-protocol.anon.Id */ Boolean = js.native
 }
 

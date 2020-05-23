@@ -10,7 +10,7 @@ import typings.sizzle.mod.Selectors.PreFilterFunctions
 import typings.sizzle.mod.Selectors.PseudoFunction
 import typings.sizzle.mod.Selectors.PseudoFunctions
 import typings.sizzle.mod.Selectors.SetFilterFunctions
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.RegExp
 import typings.std.RegExpMatchArray
@@ -40,7 +40,7 @@ object Selectors extends js.Object {
   type FilterFunctions = StringDictionary[FilterFunction]
   type FindFunction = js.Function3[
     /* match */ RegExpMatchArray, 
-    /* context */ Element | Document_, 
+    /* context */ Element | Document, 
     /* isXML */ Boolean, 
     js.Array[Element] | Unit
   ]

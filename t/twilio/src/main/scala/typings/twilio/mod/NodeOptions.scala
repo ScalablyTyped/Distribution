@@ -24,7 +24,7 @@ object NodeOptions {
     val __obj = js.Dynamic.literal(legalNodes = legalNodes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(topLevel)) __obj.updateDynamic("topLevel")(topLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(topLevel)) __obj.updateDynamic("topLevel")(topLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeOptions]
   }
 }

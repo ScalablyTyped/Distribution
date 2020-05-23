@@ -24,12 +24,12 @@ object Notification {
   @scala.inline
   def apply(
     JobStatesToNotify: JobStateList = null,
-    NotifyAll: js.UndefOr[scala.Boolean] = js.undefined,
+    NotifyAll: js.UndefOr[Boolean] = js.undefined,
     SnsTopicARN: SnsTopicARN = null
   ): Notification = {
     val __obj = js.Dynamic.literal()
     if (JobStatesToNotify != null) __obj.updateDynamic("JobStatesToNotify")(JobStatesToNotify.asInstanceOf[js.Any])
-    if (!js.isUndefined(NotifyAll)) __obj.updateDynamic("NotifyAll")(NotifyAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(NotifyAll)) __obj.updateDynamic("NotifyAll")(NotifyAll.get.asInstanceOf[js.Any])
     if (SnsTopicARN != null) __obj.updateDynamic("SnsTopicARN")(SnsTopicARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }

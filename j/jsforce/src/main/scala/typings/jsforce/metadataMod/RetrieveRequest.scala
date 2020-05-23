@@ -24,7 +24,7 @@ object RetrieveRequest {
     val __obj = js.Dynamic.literal()
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
     if (packageNames != null) __obj.updateDynamic("packageNames")(packageNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(singlePackage)) __obj.updateDynamic("singlePackage")(singlePackage.asInstanceOf[js.Any])
+    if (!js.isUndefined(singlePackage)) __obj.updateDynamic("singlePackage")(singlePackage.get.asInstanceOf[js.Any])
     if (specificFiles != null) __obj.updateDynamic("specificFiles")(specificFiles.asInstanceOf[js.Any])
     if (unpackaged != null) __obj.updateDynamic("unpackaged")(unpackaged.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrieveRequest]

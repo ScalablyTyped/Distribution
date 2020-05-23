@@ -1,7 +1,7 @@
 package typings.baseui.toastMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.baseui.ReadonlyToastProps
+import typings.baseui.anon.ReadonlyToastProps
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref

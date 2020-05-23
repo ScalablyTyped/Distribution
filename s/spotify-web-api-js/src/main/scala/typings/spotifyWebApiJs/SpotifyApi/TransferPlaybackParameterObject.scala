@@ -12,7 +12,7 @@ object TransferPlaybackParameterObject {
   @scala.inline
   def apply(play: js.UndefOr[Boolean] = js.undefined): TransferPlaybackParameterObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
+    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferPlaybackParameterObject]
   }
 }

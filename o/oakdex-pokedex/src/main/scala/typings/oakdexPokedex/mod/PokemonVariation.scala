@@ -1,6 +1,6 @@
 package typings.oakdexPokedex.mod
 
-import typings.oakdexPokedex.AnonJump
+import typings.oakdexPokedex.anon.Jump
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait PokemonVariation extends js.Object {
   var height_us: js.UndefOr[String] = js.undefined
   var image_suffix: js.UndefOr[String] = js.undefined
   var names: Translations
-  var pokeathlon_stats: js.UndefOr[AnonJump] = js.undefined
+  var pokeathlon_stats: js.UndefOr[Jump] = js.undefined
   var types: js.Array[String]
   var weight_eu: js.UndefOr[String] = js.undefined
   var weight_us: js.UndefOr[String] = js.undefined
@@ -30,7 +30,7 @@ object PokemonVariation {
     height_eu: String = null,
     height_us: String = null,
     image_suffix: String = null,
-    pokeathlon_stats: AnonJump = null,
+    pokeathlon_stats: Jump = null,
     weight_eu: String = null,
     weight_us: String = null
   ): PokemonVariation = {

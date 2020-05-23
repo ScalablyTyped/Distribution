@@ -1,5 +1,15 @@
 package typings.cordovaPluginsDiagnostic
 
+import typings.cordovaPluginsDiagnostic.anon.ACCESSBACKGROUNDLOCATION
+import typings.cordovaPluginsDiagnostic.anon.ALERT
+import typings.cordovaPluginsDiagnostic.anon.ALWAYS
+import typings.cordovaPluginsDiagnostic.anon.ARMv6
+import typings.cordovaPluginsDiagnostic.anon.BATTERYSAVING
+import typings.cordovaPluginsDiagnostic.anon.CALENDAR
+import typings.cordovaPluginsDiagnostic.anon.DENIEDALWAYS
+import typings.cordovaPluginsDiagnostic.anon.GRANTED
+import typings.cordovaPluginsDiagnostic.anon.POWEREDOFF
+import typings.cordovaPluginsDiagnostic.anon.POWEREDON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,19 +24,19 @@ trait Diagnostic extends js.Object {
     * Constants for the various NFC power states.
     * @type {Object}
     */
-  var NFCState: AnonPOWEREDON = js.native
+  var NFCState: POWEREDON = js.native
   /**
     * ANDROID and iOS ONLY
     * Constants for the various Bluetooth hardware states.
     * @type {Object}
     */
-  var bluetoothState: AnonPOWEREDOFF = js.native
+  var bluetoothState: POWEREDOFF = js.native
   /**
     * ANDROID ONLY
     * Constants for the various CPU architectures.
     * @type {Object}
     */
-  var cpuArchitecture: AnonARMv6 = js.native
+  var cpuArchitecture: ARMv6 = js.native
   /**
     * ANDROID and iOS ONLY
     * Enables debug mode, which logs native plugin debug messages to the native and JS consoles.
@@ -678,43 +688,43 @@ trait Diagnostic extends js.Object {
     ]
   ] = js.native
   /**
-    * iOS ONLY
+    * ANDROID and iOS ONLY
     * Location authorization mode
     * @type {Object}
     */
-  var locationAuthorizationMode: AnonALWAYS = js.native
+  var locationAuthorizationMode: ALWAYS = js.native
   /**
     * ANDROID ONLY
     * Constants for the various location modes on Android.
     * @type {Object}
     */
-  var locationMode: AnonBATTERYSAVING = js.native
+  var locationMode: BATTERYSAVING = js.native
   /**
     * iOS ONLY
     * Constants for requesting and reporting the various motion states.
     * @type {Object}
     */
-  var motionStatus: AnonGRANTED = js.native
+  var motionStatus: GRANTED = js.native
   /**
     * ANDROID ONLY
     * "Dangerous" permissions that need to be requested at run-time (Android 6.0/API 23 and above)
     * See http://developer.android.com/guide/topics/security/permissions.html#perm-groups
     * @type {Object}
     */
-  var permission: AnonACCESSCOARSELOCATION = js.native
+  var permission: ACCESSBACKGROUNDLOCATION = js.native
   /**
     * ANDROID ONLY
     * Permission groups indicate which associated permissions will also be requested if a given permission is requested.
     * See http://developer.android.com/guide/topics/security/permissions.html#perm-groups
     * @type {Object}
     */
-  var permissionGroups: AnonCALENDAR = js.native
+  var permissionGroups: CALENDAR = js.native
   /**
     * ANDROID and iOS ONLY
     * Constants for requesting and reporting the various permission states.
     * @type {Object}
     */
-  var permissionStatus: AnonDENIEDALWAYS = js.native
+  var permissionStatus: DENIEDALWAYS = js.native
   /**
     * ANDROID and iOS ONLY
     * Registers a function to be called when a change in Bluetooth state occurs. Pass in a falsey value to de-register the currently registered function.
@@ -749,7 +759,7 @@ trait Diagnostic extends js.Object {
     * Constants for requesting/reporting the various types of remote notification permission types on iOS devices.
     * @type {Object}
     */
-  var remoteNotificationType: AnonALERT = js.native
+  var remoteNotificationType: ALERT = js.native
   /**
     * iOS ONLY
     * Requests Bluetooth authorization for the application.
@@ -835,7 +845,7 @@ trait Diagnostic extends js.Object {
     * Requests location authorization for the application.
     * @param successCallback
     * @param errorCallback
-    * @param mode - (iOS-only / optional) location authorization mode specified as a locationAuthorizationMode constant. If not specified, defaults to WHEN_IN_USE.
+    * @param mode - (optional / iOS & Android >= 10) location authorization mode specified as a locationAuthorizationMode constant. If not specified, defaults to WHEN_IN_USE.
     */
   var requestLocationAuthorization: js.UndefOr[
     js.Function3[

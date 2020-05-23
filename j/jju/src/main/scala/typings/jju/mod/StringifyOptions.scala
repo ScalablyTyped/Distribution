@@ -80,12 +80,12 @@ object StringifyOptions {
     sort_keys: Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double]) = null
   ): StringifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascii)) __obj.updateDynamic("ascii")(ascii.asInstanceOf[js.Any])
+    if (!js.isUndefined(ascii)) __obj.updateDynamic("ascii")(ascii.get.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_trailing_comma)) __obj.updateDynamic("no_trailing_comma")(no_trailing_comma.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_trailing_comma)) __obj.updateDynamic("no_trailing_comma")(no_trailing_comma.get.asInstanceOf[js.Any])
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (!js.isUndefined(quote_keys)) __obj.updateDynamic("quote_keys")(quote_keys.asInstanceOf[js.Any])
+    if (!js.isUndefined(quote_keys)) __obj.updateDynamic("quote_keys")(quote_keys.get.asInstanceOf[js.Any])
     if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
     if (sort_keys != null) __obj.updateDynamic("sort_keys")(sort_keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringifyOptions]

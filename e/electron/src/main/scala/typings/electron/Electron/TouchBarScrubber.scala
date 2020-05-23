@@ -10,14 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.TouchBarScrubber")
 @js.native
-class TouchBarScrubber protected () extends EventEmitter {
-  // Docs: http://electronjs.org/docs/api/touch-bar-scrubber
-  /**
-    * TouchBarScrubber
-    */
-  def this(options: TouchBarScrubberConstructorOptions) = this()
+trait TouchBarScrubber extends EventEmitter {
   var continuous: Boolean = js.native
   var items: js.Array[ScrubberItem] = js.native
   var mode: fixed | free = js.native

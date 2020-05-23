@@ -57,8 +57,8 @@ object StockChartCategoryAxisItem {
     majorGridLines: StockChartCategoryAxisItemMajorGridLines = null,
     majorTicks: StockChartCategoryAxisItemMajorTicks = null,
     max: js.Any = null,
-    maxDateGroups: Int | Double = null,
-    maxDivisions: Int | Double = null,
+    maxDateGroups: js.UndefOr[Double] = js.undefined,
+    maxDivisions: js.UndefOr[Double] = js.undefined,
     min: js.Any = null,
     minorGridLines: StockChartCategoryAxisItemMinorGridLines = null,
     minorTicks: StockChartCategoryAxisItemMinorTicks = null,
@@ -72,7 +72,7 @@ object StockChartCategoryAxisItem {
     title: StockChartCategoryAxisItemTitle = null,
     `type`: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    weekStartDay: Int | Double = null
+    weekStartDay: js.UndefOr[Double] = js.undefined
   ): StockChartCategoryAxisItem = {
     val __obj = js.Dynamic.literal()
     if (autoBaseUnitSteps != null) __obj.updateDynamic("autoBaseUnitSteps")(autoBaseUnitSteps.asInstanceOf[js.Any])
@@ -84,14 +84,14 @@ object StockChartCategoryAxisItem {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(justified)) __obj.updateDynamic("justified")(justified.asInstanceOf[js.Any])
+    if (!js.isUndefined(justified)) __obj.updateDynamic("justified")(justified.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (majorGridLines != null) __obj.updateDynamic("majorGridLines")(majorGridLines.asInstanceOf[js.Any])
     if (majorTicks != null) __obj.updateDynamic("majorTicks")(majorTicks.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxDateGroups != null) __obj.updateDynamic("maxDateGroups")(maxDateGroups.asInstanceOf[js.Any])
-    if (maxDivisions != null) __obj.updateDynamic("maxDivisions")(maxDivisions.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDateGroups)) __obj.updateDynamic("maxDateGroups")(maxDateGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDivisions)) __obj.updateDynamic("maxDivisions")(maxDivisions.get.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minorGridLines != null) __obj.updateDynamic("minorGridLines")(minorGridLines.asInstanceOf[js.Any])
     if (minorTicks != null) __obj.updateDynamic("minorTicks")(minorTicks.asInstanceOf[js.Any])
@@ -99,13 +99,13 @@ object StockChartCategoryAxisItem {
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (plotBands != null) __obj.updateDynamic("plotBands")(plotBands.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundToBaseUnit)) __obj.updateDynamic("roundToBaseUnit")(roundToBaseUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundToBaseUnit)) __obj.updateDynamic("roundToBaseUnit")(roundToBaseUnit.get.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (weekStartDay != null) __obj.updateDynamic("weekStartDay")(weekStartDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekStartDay)) __obj.updateDynamic("weekStartDay")(weekStartDay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartCategoryAxisItem]
   }
 }

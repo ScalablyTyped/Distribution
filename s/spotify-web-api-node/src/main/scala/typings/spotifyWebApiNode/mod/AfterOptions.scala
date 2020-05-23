@@ -10,10 +10,10 @@ trait AfterOptions extends LimitOptions {
 
 object AfterOptions {
   @scala.inline
-  def apply(after: Int | Double = null, limit: Int | Double = null): AfterOptions = {
+  def apply(after: js.UndefOr[Double] = js.undefined, limit: js.UndefOr[Double] = js.undefined): AfterOptions = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(after)) __obj.updateDynamic("after")(after.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AfterOptions]
   }
 }

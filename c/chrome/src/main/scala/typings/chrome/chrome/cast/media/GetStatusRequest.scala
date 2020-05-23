@@ -4,13 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.media.GetStatusRequest")
-@js.native
-/**
-  * @constructor
-  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.GetStatusRequest
-  */
-class GetStatusRequest () extends js.Object {
-  var customData: js.Object = js.native
+trait GetStatusRequest extends js.Object {
+  var customData: js.Object
+}
+
+object GetStatusRequest {
+  @scala.inline
+  def apply(customData: js.Object): GetStatusRequest = {
+    val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetStatusRequest]
+  }
 }
 

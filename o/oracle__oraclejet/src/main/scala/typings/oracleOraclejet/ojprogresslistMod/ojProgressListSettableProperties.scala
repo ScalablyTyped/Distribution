@@ -13,8 +13,7 @@ trait ojProgressListSettableProperties extends JetSettableProperties {
 object ojProgressListSettableProperties {
   @scala.inline
   def apply(data: DataProvider[_, _] = null): ojProgressListSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojProgressListSettableProperties]
   }
 }

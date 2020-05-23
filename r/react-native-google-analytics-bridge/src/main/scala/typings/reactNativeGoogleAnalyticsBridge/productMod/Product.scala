@@ -23,16 +23,16 @@ object Product {
     brand: String = null,
     category: String = null,
     couponCode: String = null,
-    price: Int | Double = null,
-    quantity: Int | Double = null,
+    price: js.UndefOr[Double] = js.undefined,
+    quantity: js.UndefOr[Double] = js.undefined,
     variant: String = null
   ): Product = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (couponCode != null) __obj.updateDynamic("couponCode")(couponCode.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(price)) __obj.updateDynamic("price")(price.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[Product]
   }

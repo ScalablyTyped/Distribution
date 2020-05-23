@@ -19,10 +19,10 @@ trait TableColumnFilterProps[FT, T /* <: js.Object */] extends js.Object {
 
 object TableColumnFilterProps {
   @scala.inline
-  def apply[FT, T /* <: js.Object */](
+  def apply[FT, T](
     className: String = null,
     defaultValue: js.Any = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     getFilter: /* filter */ FT => Unit = null,
     id: String = null,
     onFilter: /* filterValue */ FT => Unit | js.Array[T] = null,
@@ -32,7 +32,7 @@ object TableColumnFilterProps {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (getFilter != null) __obj.updateDynamic("getFilter")(js.Any.fromFunction1(getFilter))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1(onFilter))

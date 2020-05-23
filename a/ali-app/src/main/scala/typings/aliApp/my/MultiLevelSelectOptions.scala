@@ -1,21 +1,21 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonResult
+import typings.aliApp.anon.Result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MultiLevelSelectOptions
   extends BaseOptions[js.Any, js.Any] {
-  						// 标题
+                          // 标题
   var list: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.undefined
-  		// 选择数据列表
+          // 选择数据列表
   var name: js.UndefOr[String] = js.undefined
-  						// 条目名称
+                          // 条目名称
   var subList: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.undefined
-  	// 子条目列表
+      // 子条目列表
   @JSName("success")
-  var success_MultiLevelSelectOptions: js.UndefOr[js.Function1[/* res */ AnonResult, Unit]] = js.undefined
+  var success_MultiLevelSelectOptions: js.UndefOr[js.Function1[/* res */ Result, Unit]] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
 
@@ -27,7 +27,7 @@ object MultiLevelSelectOptions {
     list: js.Array[MultiLevelSelectItem] = null,
     name: String = null,
     subList: js.Array[MultiLevelSelectItem] = null,
-    success: /* res */ AnonResult => Unit = null,
+    success: /* res */ Result => Unit = null,
     title: String = null
   ): MultiLevelSelectOptions = {
     val __obj = js.Dynamic.literal()

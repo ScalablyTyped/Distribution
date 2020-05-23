@@ -15,10 +15,13 @@ trait IFlattenNode extends js.Object {
 
 object IFlattenNode {
   @scala.inline
-  def apply(node: IQueryPlanNode = null, responsePath: js.Array[IResponsePathElement] = null): IFlattenNode = {
+  def apply(
+    node: js.UndefOr[Null | IQueryPlanNode] = js.undefined,
+    responsePath: js.UndefOr[Null | js.Array[IResponsePathElement]] = js.undefined
+  ): IFlattenNode = {
     val __obj = js.Dynamic.literal()
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (responsePath != null) __obj.updateDynamic("responsePath")(responsePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(node)) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsePath)) __obj.updateDynamic("responsePath")(responsePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFlattenNode]
   }
 }

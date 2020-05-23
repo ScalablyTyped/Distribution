@@ -1,6 +1,5 @@
 package typings.jupyterlabServices
 
-import typings.jupyterlabServices.jupyterlabServicesStrings.apiSlashkernels
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
 import typings.jupyterlabServices.kernelManagerMod.KernelManager.IOptions
@@ -59,7 +58,7 @@ object kernelMod extends js.Object {
   
   @js.native
   object KernelAPI extends js.Object {
-    val KERNEL_SERVICE_URL: apiSlashkernels = js.native
+    val KERNEL_SERVICE_URL: /* "api/kernels" */ String = js.native
     def getKernelModel(id: String): js.Promise[js.UndefOr[IModel]] = js.native
     def getKernelModel(id: String, settings: ISettings): js.Promise[js.UndefOr[IModel]] = js.native
     def interruptKernel(id: String): js.Promise[Unit] = js.native

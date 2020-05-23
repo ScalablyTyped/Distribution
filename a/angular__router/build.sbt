@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "angular__router"
-version := "9.1.2-7b5e0d"
-scalaVersion := "2.13.1"
+version := "9.1.9-c60eb9"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__common" % "9.1.2-9800e1",
-  "org.scalablytyped" %%% "angular__compiler" % "9.1.2-cf144c",
-  "org.scalablytyped" %%% "angular__core" % "9.1.2-795c54",
-  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20200226Z-8b5ea8",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "rxjs" % "6.5.5-62f03a",
-  "org.scalablytyped" %%% "rxjs-compat" % "6.5.5-7f568a",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20200225Z-9f3b8d",
-  "org.scalablytyped" %%% "typescript" % "3.8.3-9c93d4")
+  "org.scalablytyped" %%% "angular__common" % "9.1.9-82d5f1",
+  "org.scalablytyped" %%% "angular__compiler" % "9.1.9-1e0b57",
+  "org.scalablytyped" %%% "angular__core" % "9.1.9-28bd96",
+  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20200226Z-bb8752",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "rxjs" % "6.5.5-1eb77e",
+  "org.scalablytyped" %%% "rxjs-compat" % "6.5.5-d1f890",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20200515Z-dc9245",
+  "org.scalablytyped" %%% "typescript" % "3.9.3-b53cb0")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

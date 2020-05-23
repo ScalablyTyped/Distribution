@@ -15,11 +15,11 @@ trait dxSankeyConnectionInfoObject extends js.Object {
 
 object dxSankeyConnectionInfoObject {
   @scala.inline
-  def apply(source: String = null, target: String = null, weight: Int | Double = null): dxSankeyConnectionInfoObject = {
+  def apply(source: String = null, target: String = null, weight: js.UndefOr[Double] = js.undefined): dxSankeyConnectionInfoObject = {
     val __obj = js.Dynamic.literal()
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxSankeyConnectionInfoObject]
   }
 }

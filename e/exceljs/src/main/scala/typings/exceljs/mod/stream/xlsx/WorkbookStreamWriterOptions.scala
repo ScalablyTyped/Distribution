@@ -1,6 +1,6 @@
 package typings.exceljs.mod.stream.xlsx
 
-import typings.exceljs.PartialArchiverZipOptions
+import typings.exceljs.anon.PartialArchiverZipOptions
 import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

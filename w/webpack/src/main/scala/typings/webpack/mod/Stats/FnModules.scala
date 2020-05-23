@@ -1,6 +1,6 @@
 package typings.webpack.mod.Stats
 
-import typings.webpack.AnonId
+import typings.webpack.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait FnModules extends js.Object {
   var issuer: js.UndefOr[String] = js.undefined
   var issuerId: js.UndefOr[Double | String] = js.undefined
   var issuerName: js.UndefOr[String] = js.undefined
-  var issuerPath: js.Array[AnonId]
+  var issuerPath: js.Array[Id]
   var modules: js.Array[FnModules]
   var name: String
   var optimizationBailout: js.UndefOr[String] = js.undefined
@@ -50,7 +50,7 @@ object FnModules {
     identifier: String,
     index: Double,
     index2: Double,
-    issuerPath: js.Array[AnonId],
+    issuerPath: js.Array[Id],
     modules: js.Array[FnModules],
     name: String,
     optional: Boolean,
@@ -60,7 +60,7 @@ object FnModules {
     size: Double,
     warnings: Double,
     assets: js.Array[String] = null,
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     filteredModules: js.UndefOr[Boolean] = js.undefined,
     issuer: String = null,
     issuerId: Double | String = null,
@@ -72,15 +72,15 @@ object FnModules {
   ): FnModules = {
     val __obj = js.Dynamic.literal(built = built.asInstanceOf[js.Any], cacheable = cacheable.asInstanceOf[js.Any], chunks = chunks.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], index2 = index2.asInstanceOf[js.Any], issuerPath = issuerPath.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], prefetched = prefetched.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
     if (assets != null) __obj.updateDynamic("assets")(assets.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(filteredModules)) __obj.updateDynamic("filteredModules")(filteredModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filteredModules)) __obj.updateDynamic("filteredModules")(filteredModules.get.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (issuerId != null) __obj.updateDynamic("issuerId")(issuerId.asInstanceOf[js.Any])
     if (issuerName != null) __obj.updateDynamic("issuerName")(issuerName.asInstanceOf[js.Any])
     if (optimizationBailout != null) __obj.updateDynamic("optimizationBailout")(optimizationBailout.asInstanceOf[js.Any])
     if (providedExports != null) __obj.updateDynamic("providedExports")(providedExports.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(usedExports)) __obj.updateDynamic("usedExports")(usedExports.asInstanceOf[js.Any])
+    if (!js.isUndefined(usedExports)) __obj.updateDynamic("usedExports")(usedExports.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FnModules]
   }
 }

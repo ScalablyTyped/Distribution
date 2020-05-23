@@ -39,11 +39,11 @@ object FindInPageOptions {
     wordStart: js.UndefOr[Boolean] = js.undefined
   ): FindInPageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(findNext)) __obj.updateDynamic("findNext")(findNext.asInstanceOf[js.Any])
-    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(medialCapitalAsWordStart)) __obj.updateDynamic("medialCapitalAsWordStart")(medialCapitalAsWordStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordStart)) __obj.updateDynamic("wordStart")(wordStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(findNext)) __obj.updateDynamic("findNext")(findNext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(medialCapitalAsWordStart)) __obj.updateDynamic("medialCapitalAsWordStart")(medialCapitalAsWordStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordStart)) __obj.updateDynamic("wordStart")(wordStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindInPageOptions]
   }
 }

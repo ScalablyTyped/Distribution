@@ -11,10 +11,10 @@ trait StellarTomlResolveOptions extends js.Object {
 
 object StellarTomlResolveOptions {
   @scala.inline
-  def apply(allowHttp: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): StellarTomlResolveOptions = {
+  def apply(allowHttp: js.UndefOr[Boolean] = js.undefined, timeout: js.UndefOr[Double] = js.undefined): StellarTomlResolveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHttp)) __obj.updateDynamic("allowHttp")(allowHttp.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHttp)) __obj.updateDynamic("allowHttp")(allowHttp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StellarTomlResolveOptions]
   }
 }

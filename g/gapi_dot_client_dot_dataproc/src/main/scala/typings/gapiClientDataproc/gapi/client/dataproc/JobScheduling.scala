@@ -14,9 +14,9 @@ trait JobScheduling extends js.Object {
 
 object JobScheduling {
   @scala.inline
-  def apply(maxFailuresPerHour: Int | Double = null): JobScheduling = {
+  def apply(maxFailuresPerHour: js.UndefOr[Double] = js.undefined): JobScheduling = {
     val __obj = js.Dynamic.literal()
-    if (maxFailuresPerHour != null) __obj.updateDynamic("maxFailuresPerHour")(maxFailuresPerHour.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFailuresPerHour)) __obj.updateDynamic("maxFailuresPerHour")(maxFailuresPerHour.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobScheduling]
   }
 }

@@ -2,6 +2,9 @@ package typings.typedoc
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.PropertyKey
+import typings.typedoc.anon.Application
+import typings.typedoc.anon.ApplicationApplication
+import typings.typedoc.anon.OptionsOptions
 import typings.typedoc.loggersMod.Logger
 import typings.typedoc.optionsDeclarationMod.DeclarationOption
 import typings.typedoc.typedocStrings.BindOption
@@ -69,229 +72,225 @@ object optionsMod extends js.Object {
   class TypeDocReader ()
     extends typings.typedoc.typedocMod.TypeDocReader
   
-  def BindOption(name: String): js.Function2[
-    /* target */ AnonApplicationApplication | AnonOptionsOptions, 
-    /* key */ PropertyKey, 
-    Unit
-  ] = js.native
+  def BindOption(name: String): js.Function2[/* target */ ApplicationApplication | OptionsOptions, /* key */ PropertyKey, Unit] = js.native
   @JSName("BindOption")
   def BindOption_categorizeByGroup(name: categorizeByGroup): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_categoryOrder(name: categoryOrder): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_defaultCategory(name: defaultCategory): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_disableOutputCheck(name: disableOutputCheck): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_entryPoint(name: entryPoint): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_exclude(name: exclude): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_excludeExternals(name: excludeExternals): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_excludeNotExported(name: excludeNotExported): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_excludePrivate(name: excludePrivate): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_excludeProtected(name: excludeProtected): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_excludeTags(name: excludeTags): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_externalPattern(name: externalPattern): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_gaID(name: gaID): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_gaSite(name: gaSite): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_gitRevision(name: gitRevision): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_help(name: help): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_hideGenerator(name: hideGenerator): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_ignoreCompilerErrors(name: ignoreCompilerErrors): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_includeDeclarations(name: includeDeclarations): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_includeVersion(name: includeVersion): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_includes(name: includes): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_inputFiles(name: inputFiles): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_json(name: json): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_listInvalidSymbolLinks(name: listInvalidSymbolLinks): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_logger(name: logger): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_media(name: media): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_mode(name: mode): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_name(name: name): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_options(name: options): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_out(name: out): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_plugin(name: plugin): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_readme(name: readme): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_theme(name: theme): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_toc(name: toc): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_tsconfig(name: tsconfig): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   @JSName("BindOption")
   def BindOption_version(name: version): js.Function2[
-    /* target */ (AnonApplicationApplication | AnonOptionsOptions) with BindOption with TopLevel[js.Any], 
+    /* target */ (ApplicationApplication | OptionsOptions) with BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native
   def Option(option: DeclarationOption): js.Function2[
-    /* target */ AnonApplication | AnonOptions, 
+    /* target */ Application | typings.typedoc.anon.Options, 
     /* key */ String | Double | js.Symbol, 
     Unit
   ] = js.native

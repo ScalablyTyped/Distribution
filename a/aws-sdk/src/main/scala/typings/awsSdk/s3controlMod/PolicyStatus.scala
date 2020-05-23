@@ -14,9 +14,9 @@ trait PolicyStatus extends js.Object {
 
 object PolicyStatus {
   @scala.inline
-  def apply(IsPublic: js.UndefOr[scala.Boolean] = js.undefined): PolicyStatus = {
+  def apply(IsPublic: js.UndefOr[IsPublic] = js.undefined): PolicyStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsPublic)) __obj.updateDynamic("IsPublic")(IsPublic.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsPublic)) __obj.updateDynamic("IsPublic")(IsPublic.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyStatus]
   }
 }

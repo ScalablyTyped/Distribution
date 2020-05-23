@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 package object mod {
   type CellFormatter = js.Function2[
     /* value */ js.Any, 
-    /* props */ typings.reactabularTable.AnonRowIndex, 
-    java.lang.String | typings.react.mod._Global_.JSX.Element
+    /* props */ typings.reactabularTable.anon.RowIndex, 
+    java.lang.String | typings.react.mod.global.JSX.Element
   ]
-  type CellTransform = js.Function2[/* value */ js.Any, /* props */ typings.reactabularTable.AnonColumnIndex, js.Any]
+  type CellTransform = js.Function2[/* value */ js.Any, /* props */ typings.reactabularTable.anon.ColumnIndex, js.Any]
   type ColumnFormatter = js.Function2[
-    /* label */ java.lang.String | typings.react.mod._Global_.JSX.Element, 
-    /* props */ typings.reactabularTable.AnonRowData, 
-    java.lang.String | typings.react.mod._Global_.JSX.Element
+    /* label */ java.lang.String | typings.react.mod.global.JSX.Element, 
+    /* props */ typings.reactabularTable.anon.RowData, 
+    java.lang.String | typings.react.mod.global.JSX.Element
   ]
   type ColumnTransform = js.Function2[
-    /* label */ java.lang.String | typings.react.mod._Global_.JSX.Element | typings.react.mod.ReactInstance, 
-    /* props */ typings.reactabularTable.AnonColumn, 
+    /* label */ java.lang.String | typings.react.mod.global.JSX.Element | typings.react.mod.ReactInstance, 
+    /* props */ typings.reactabularTable.anon.Column, 
     js.Any
   ]
 }

@@ -25,7 +25,7 @@ object SliderOptions {
     val __obj = js.Dynamic.literal()
     if (barName != null) __obj.updateDynamic("barName")(barName.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOptions]
   }
 }

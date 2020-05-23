@@ -40,9 +40,6 @@ object googleCloudStorageStrings {
   sealed trait delete_ extends js.Object
   
   @js.native
-  sealed trait httpsColonSlashSlashstorageDotgoogleapisDotcom extends js.Object
-  
-  @js.native
   sealed trait list extends js.Object
   
   @js.native
@@ -94,8 +91,6 @@ object googleCloudStorageStrings {
   def crc32c: crc32c = "crc32c".asInstanceOf[crc32c]
   @scala.inline
   def delete_ : delete_ = "delete".asInstanceOf[delete_]
-  @scala.inline
-  def httpsColonSlashSlashstorageDotgoogleapisDotcom: httpsColonSlashSlashstorageDotgoogleapisDotcom = "https://storage.googleapis.com".asInstanceOf[httpsColonSlashSlashstorageDotgoogleapisDotcom]
   @scala.inline
   def list: list = "list".asInstanceOf[list]
   @scala.inline

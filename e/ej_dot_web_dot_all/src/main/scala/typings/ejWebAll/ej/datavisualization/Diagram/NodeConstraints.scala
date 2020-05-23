@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,74 +97,6 @@ object NodeConstraints extends js.Object {
   //Enables shadow
   @js.native
   sealed trait Shadow extends NodeConstraints
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NodeConstraints with Double] = js.native
-  /* 17 */ @js.native
-  object AllowPan extends TopLevel[AllowPan with Double]
-  
-  /* 18 */ @js.native
-  object AspectRatio extends TopLevel[AspectRatio with Double]
-  
-  /* 5 */ @js.native
-  object Connect extends TopLevel[Connect with Double]
-  
-  /* 20 */ @js.native
-  object CrispEdges extends TopLevel[CrispEdges with Double]
-  
-  /* 21 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 2 */ @js.native
-  object Delete extends TopLevel[Delete with Double]
-  
-  /* 3 */ @js.native
-  object Drag extends TopLevel[Drag with Double]
-  
-  /* 16 */ @js.native
-  object DragLabel extends TopLevel[DragLabel with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 19 */ @js.native
-  object PointerEvents extends TopLevel[PointerEvents with Double]
-  
-  /* 14 */ @js.native
-  object Resize extends TopLevel[Resize with Double]
-  
-  /* 7 */ @js.native
-  object ResizeEast extends TopLevel[ResizeEast with Double]
-  
-  /* 13 */ @js.native
-  object ResizeNorth extends TopLevel[ResizeNorth with Double]
-  
-  /* 6 */ @js.native
-  object ResizeNorthEast extends TopLevel[ResizeNorthEast with Double]
-  
-  /* 12 */ @js.native
-  object ResizeNorthWest extends TopLevel[ResizeNorthWest with Double]
-  
-  /* 9 */ @js.native
-  object ResizeSouth extends TopLevel[ResizeSouth with Double]
-  
-  /* 8 */ @js.native
-  object ResizeSouthEast extends TopLevel[ResizeSouthEast with Double]
-  
-  /* 10 */ @js.native
-  object ResizeSouthWest extends TopLevel[ResizeSouthWest with Double]
-  
-  /* 11 */ @js.native
-  object ResizeWest extends TopLevel[ResizeWest with Double]
-  
-  /* 4 */ @js.native
-  object Rotate extends TopLevel[Rotate with Double]
-  
-  /* 1 */ @js.native
-  object Select extends TopLevel[Select with Double]
-  
-  /* 15 */ @js.native
-  object Shadow extends TopLevel[Shadow with Double]
   
 }
 

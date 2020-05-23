@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "urllib" : "2.34.2"
+      "urllib" : "2.35.0"
     }
   ],
   "test-dependencies" : [
     {
-      "urllib" : "2.34.2"
+      "urllib" : "2.35.0"
     }
   ],
   "compile-devDependencies" : [

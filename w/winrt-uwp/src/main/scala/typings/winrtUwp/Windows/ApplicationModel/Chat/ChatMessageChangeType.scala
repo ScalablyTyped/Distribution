@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ChatMessageChangeType extends js.Object {
   /** Message modified. */
   @js.native
   sealed trait messageModified extends ChatMessageChangeType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatMessageChangeType with Double] = js.native
-  /* 3 */ @js.native
-  object changeTrackingLost extends TopLevel[changeTrackingLost with Double]
-  
-  /* 0 */ @js.native
-  object messageCreated extends TopLevel[messageCreated with Double]
-  
-  /* 2 */ @js.native
-  object messageDeleted extends TopLevel[messageDeleted with Double]
-  
-  /* 1 */ @js.native
-  object messageModified extends TopLevel[messageModified with Double]
   
 }
 

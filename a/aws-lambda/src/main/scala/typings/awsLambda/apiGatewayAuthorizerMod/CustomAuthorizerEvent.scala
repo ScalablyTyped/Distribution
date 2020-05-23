@@ -38,10 +38,10 @@ object CustomAuthorizerEvent {
     headers: StringDictionary[String] = null,
     httpMethod: String = null,
     multiValueHeaders: StringDictionary[js.Array[String]] = null,
-    multiValueQueryStringParameters: StringDictionary[js.Array[String]] = null,
+    multiValueQueryStringParameters: js.UndefOr[Null | StringDictionary[js.Array[String]]] = js.undefined,
     path: String = null,
-    pathParameters: StringDictionary[String] = null,
-    queryStringParameters: StringDictionary[String] = null,
+    pathParameters: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    queryStringParameters: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
     requestContext: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext] = null,
     resource: String = null,
     stageVariables: StringDictionary[String] = null
@@ -54,10 +54,10 @@ object CustomAuthorizerEvent {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
     if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders.asInstanceOf[js.Any])
-    if (multiValueQueryStringParameters != null) __obj.updateDynamic("multiValueQueryStringParameters")(multiValueQueryStringParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiValueQueryStringParameters)) __obj.updateDynamic("multiValueQueryStringParameters")(multiValueQueryStringParameters.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters.asInstanceOf[js.Any])
-    if (queryStringParameters != null) __obj.updateDynamic("queryStringParameters")(queryStringParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathParameters)) __obj.updateDynamic("pathParameters")(pathParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryStringParameters)) __obj.updateDynamic("queryStringParameters")(queryStringParameters.asInstanceOf[js.Any])
     if (requestContext != null) __obj.updateDynamic("requestContext")(requestContext.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (stageVariables != null) __obj.updateDynamic("stageVariables")(stageVariables.asInstanceOf[js.Any])

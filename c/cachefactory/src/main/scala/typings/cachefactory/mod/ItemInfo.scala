@@ -14,16 +14,16 @@ trait ItemInfo extends js.Object {
 object ItemInfo {
   @scala.inline
   def apply(
-    accessed: Int | Double = null,
-    created: Int | Double = null,
-    expires: Int | Double = null,
+    accessed: js.UndefOr[Double] = js.undefined,
+    created: js.UndefOr[Double] = js.undefined,
+    expires: js.UndefOr[Double] = js.undefined,
     isExpired: js.UndefOr[Boolean] = js.undefined
   ): ItemInfo = {
     val __obj = js.Dynamic.literal()
-    if (accessed != null) __obj.updateDynamic("accessed")(accessed.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessed)) __obj.updateDynamic("accessed")(accessed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(created)) __obj.updateDynamic("created")(created.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemInfo]
   }
 }

@@ -1,6 +1,6 @@
 package typings.nivoLine.mod
 
-import typings.nivoLine.AnonXFormatted
+import typings.nivoLine.anon.XFormatted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Point extends js.Object {
   var borderColor: String
   var color: String
-  var data: AnonXFormatted
+  var data: XFormatted
   var id: String
   var index: Double
   var serieColor: String
@@ -22,7 +22,7 @@ object Point {
   def apply(
     borderColor: String,
     color: String,
-    data: AnonXFormatted,
+    data: XFormatted,
     id: String,
     index: Double,
     serieColor: String,

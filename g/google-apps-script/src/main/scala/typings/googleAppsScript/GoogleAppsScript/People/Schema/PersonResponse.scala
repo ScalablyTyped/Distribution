@@ -14,13 +14,13 @@ trait PersonResponse extends js.Object {
 object PersonResponse {
   @scala.inline
   def apply(
-    httpStatusCode: Int | Double = null,
+    httpStatusCode: js.UndefOr[Double] = js.undefined,
     person: Person = null,
     requestedResourceName: String = null,
     status: Status = null
   ): PersonResponse = {
     val __obj = js.Dynamic.literal()
-    if (httpStatusCode != null) __obj.updateDynamic("httpStatusCode")(httpStatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpStatusCode)) __obj.updateDynamic("httpStatusCode")(httpStatusCode.get.asInstanceOf[js.Any])
     if (person != null) __obj.updateDynamic("person")(person.asInstanceOf[js.Any])
     if (requestedResourceName != null) __obj.updateDynamic("requestedResourceName")(requestedResourceName.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

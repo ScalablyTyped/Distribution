@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.attachments
 import typings.arcgisJsApi.arcgisJsApiStrings.fields
 import typings.arcgisJsApi.arcgisJsApiStrings.media
@@ -20,8 +19,4 @@ trait Content_
     */
   val `type`: text | fields | media | attachments = js.native
 }
-
-@JSGlobal("__esri.Content")
-@js.native
-object Content_ extends TopLevel[ContentConstructor]
 

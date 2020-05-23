@@ -142,7 +142,7 @@ trait PlusStream extends js.Object {
   /**
     * 预加载流应用
     * 预加载指定的流应用资源，下载应用资源等，并不运行流应用。
-    * 	如果应用资源已经下载，则不做任何操作。
+    *     如果应用资源已经下载，则不做任何操作。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
@@ -159,9 +159,9 @@ trait PlusStream extends js.Object {
   /**
     * 设置流应用恢复运行的参数
     * 当流应用运行数目超过限制（通常最多运行2个流应用），会自动关闭之前切换到后台运行的应用。
-    * 	可通过此方法设置应用被自动关闭后再次被唤醒恢复运行时的参数，流应用恢复运行流程与第一次启动一致（差别是会使用StreamRestoreOptions中配置的参数）。
-    * 	如果没有调用setRestoreState方法，则恢复运行时使用启动时（调用plus.stream.open方法）传入的参数。
-    * 	注意：如果通过plus.stream.open方法启动应用，则忽略此方法设置的参数。
+    *     可通过此方法设置应用被自动关闭后再次被唤醒恢复运行时的参数，流应用恢复运行流程与第一次启动一致（差别是会使用StreamRestoreOptions中配置的参数）。
+    *     如果没有调用setRestoreState方法，则恢复运行时使用启动时（调用plus.stream.open方法）传入的参数。
+    *     注意：如果通过plus.stream.open方法启动应用，则忽略此方法设置的参数。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */

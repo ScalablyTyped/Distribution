@@ -55,15 +55,15 @@ object CommonOptions {
   @scala.inline
   def apply(
     loading: ComponentType[LoadingComponentProps],
-    delay: Double | `false` = null,
+    delay: js.UndefOr[Null | Double | `false`] = js.undefined,
     modules: js.Array[String] = null,
-    timeout: Double | `false` = null,
+    timeout: js.UndefOr[Null | Double | `false`] = js.undefined,
     webpack: () => js.Array[String | Double] = null
   ): CommonOptions = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (webpack != null) __obj.updateDynamic("webpack")(js.Any.fromFunction0(webpack))
     __obj.asInstanceOf[CommonOptions]
   }

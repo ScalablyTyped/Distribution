@@ -6,33 +6,6 @@ import scala.scalajs.js.annotation._
 
 object tensorflowTfjsNodeStrings {
   @js.native
-  sealed trait `1Dot7Dot2` extends js.Object
-  
-  @js.native
-  sealed trait Add extends js.Object
-  
-  @js.native
-  sealed trait AddN extends js.Object
-  
-  @js.native
-  sealed trait BroadcastTo extends js.Object
-  
-  @js.native
-  sealed trait Div extends js.Object
-  
-  @js.native
-  sealed trait FromPixels extends js.Object
-  
-  @js.native
-  sealed trait FusedBatchNorm extends js.Object
-  
-  @js.native
-  sealed trait Identity extends js.Object
-  
-  @js.native
-  sealed trait MaxPoolWithArgmax extends js.Object
-  
-  @js.native
   sealed trait NCDHW extends js.Object
   
   @js.native
@@ -49,27 +22,6 @@ object tensorflowTfjsNodeStrings {
   
   @js.native
   sealed trait NWC extends js.Object
-  
-  @js.native
-  sealed trait NonMaxSuppressionV5 extends js.Object
-  
-  @js.native
-  sealed trait OneHot extends js.Object
-  
-  @js.native
-  sealed trait PadV2 extends js.Object
-  
-  @js.native
-  sealed trait Square extends js.Object
-  
-  @js.native
-  sealed trait SquaredDifference extends js.Object
-  
-  @js.native
-  sealed trait Tile extends js.Object
-  
-  @js.native
-  sealed trait Transpose extends js.Object
   
   @js.native
   sealed trait _empty extends js.Object
@@ -108,9 +60,6 @@ object tensorflowTfjsNodeStrings {
   sealed trait euclidean extends js.Object
   
   @js.native
-  sealed trait fileColonSlashSlash extends js.Object
-  
-  @js.native
   sealed trait float32 extends js.Object
   
   @js.native
@@ -132,9 +81,6 @@ object tensorflowTfjsNodeStrings {
   sealed trait max extends js.Object
   
   @js.native
-  sealed trait modelDotjson extends js.Object
-  
-  @js.native
   sealed trait nearest extends js.Object
   
   @js.native
@@ -150,32 +96,8 @@ object tensorflowTfjsNodeStrings {
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait tensorflowjsDotpb extends js.Object
-  
-  @js.native
   sealed trait valid extends js.Object
   
-  @js.native
-  sealed trait weightsDotbin extends js.Object
-  
-  @scala.inline
-  def `1Dot7Dot2`: `1Dot7Dot2` = "1.7.2".asInstanceOf[`1Dot7Dot2`]
-  @scala.inline
-  def Add: Add = "Add".asInstanceOf[Add]
-  @scala.inline
-  def AddN: AddN = "AddN".asInstanceOf[AddN]
-  @scala.inline
-  def BroadcastTo: BroadcastTo = "BroadcastTo".asInstanceOf[BroadcastTo]
-  @scala.inline
-  def Div: Div = "Div".asInstanceOf[Div]
-  @scala.inline
-  def FromPixels: FromPixels = "FromPixels".asInstanceOf[FromPixels]
-  @scala.inline
-  def FusedBatchNorm: FusedBatchNorm = "FusedBatchNorm".asInstanceOf[FusedBatchNorm]
-  @scala.inline
-  def Identity: Identity = "Identity".asInstanceOf[Identity]
-  @scala.inline
-  def MaxPoolWithArgmax: MaxPoolWithArgmax = "MaxPoolWithArgmax".asInstanceOf[MaxPoolWithArgmax]
   @scala.inline
   def NCDHW: NCDHW = "NCDHW".asInstanceOf[NCDHW]
   @scala.inline
@@ -188,20 +110,6 @@ object tensorflowTfjsNodeStrings {
   def NHWC: NHWC = "NHWC".asInstanceOf[NHWC]
   @scala.inline
   def NWC: NWC = "NWC".asInstanceOf[NWC]
-  @scala.inline
-  def NonMaxSuppressionV5: NonMaxSuppressionV5 = "NonMaxSuppressionV5".asInstanceOf[NonMaxSuppressionV5]
-  @scala.inline
-  def OneHot: OneHot = "OneHot".asInstanceOf[OneHot]
-  @scala.inline
-  def PadV2: PadV2 = "PadV2".asInstanceOf[PadV2]
-  @scala.inline
-  def Square: Square = "Square".asInstanceOf[Square]
-  @scala.inline
-  def SquaredDifference: SquaredDifference = "SquaredDifference".asInstanceOf[SquaredDifference]
-  @scala.inline
-  def Tile: Tile = "Tile".asInstanceOf[Tile]
-  @scala.inline
-  def Transpose: Transpose = "Transpose".asInstanceOf[Transpose]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
@@ -227,8 +135,6 @@ object tensorflowTfjsNodeStrings {
   @scala.inline
   def euclidean: euclidean = "euclidean".asInstanceOf[euclidean]
   @scala.inline
-  def fileColonSlashSlash: fileColonSlashSlash = "file://".asInstanceOf[fileColonSlashSlash]
-  @scala.inline
   def float32: float32 = "float32".asInstanceOf[float32]
   @scala.inline
   def floor: floor = "floor".asInstanceOf[floor]
@@ -243,8 +149,6 @@ object tensorflowTfjsNodeStrings {
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
-  def modelDotjson: modelDotjson = "model.json".asInstanceOf[modelDotjson]
-  @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
@@ -255,10 +159,6 @@ object tensorflowTfjsNodeStrings {
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
-  def tensorflowjsDotpb: tensorflowjsDotpb = "tensorflowjs.pb".asInstanceOf[tensorflowjsDotpb]
-  @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
-  @scala.inline
-  def weightsDotbin: weightsDotbin = "weights.bin".asInstanceOf[weightsDotbin]
 }
 

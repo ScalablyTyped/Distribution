@@ -1,6 +1,5 @@
 package typings.heredatalens.H.datalens.HeatmapLayer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,17 +25,6 @@ object InputScale extends js.Object {
   /** Logarithmic scale */
   @js.native
   sealed trait LOG extends InputScale
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InputScale with Double] = js.native
-  /* 0 */ @js.native
-  object DB extends TopLevel[DB with Double]
-  
-  /* 1 */ @js.native
-  object LINEAR extends TopLevel[LINEAR with Double]
-  
-  /* 2 */ @js.native
-  object LOG extends TopLevel[LOG with Double]
   
 }
 

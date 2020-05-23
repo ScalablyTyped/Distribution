@@ -19,7 +19,7 @@ trait Document extends js.Object
 
 object Document {
   @scala.inline
-  def Document(
+  def apply(
     info: InfoObject,
     openapi: String,
     paths: PathsObject,

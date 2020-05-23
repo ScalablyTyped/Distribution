@@ -17,10 +17,10 @@ trait AxesAlternateGridBandOdd extends js.Object {
 
 object AxesAlternateGridBandOdd {
   @scala.inline
-  def apply(fill: String = null, opacity: Int | Double = null): AxesAlternateGridBandOdd = {
+  def apply(fill: String = null, opacity: js.UndefOr[Double] = js.undefined): AxesAlternateGridBandOdd = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxesAlternateGridBandOdd]
   }
 }

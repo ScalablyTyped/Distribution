@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonData
+import typings.gestalt.anon.Data
 import typings.gestalt.gestaltStrings.MasonryDefaultLayout
 import typings.gestalt.gestaltStrings.MasonryUniformRowLayout
 import typings.react.mod.ComponentType
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait MasonryProps extends js.Object {
   var columnWidth: js.UndefOr[Double] = js.undefined
-  var comp: ComponentType[AnonData]
+  var comp: ComponentType[Data]
   var flexible: js.UndefOr[Boolean] = js.undefined
   var gutterWidth: js.UndefOr[Double] = js.undefined
   var items: js.Array[_]
@@ -28,32 +28,32 @@ trait MasonryProps extends js.Object {
 object MasonryProps {
   @scala.inline
   def apply(
-    comp: ComponentType[AnonData],
+    comp: ComponentType[Data],
     items: js.Array[_],
-    columnWidth: Int | Double = null,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     flexible: js.UndefOr[Boolean] = js.undefined,
-    gutterWidth: Int | Double = null,
+    gutterWidth: js.UndefOr[Double] = js.undefined,
     layout: MasonryDefaultLayout | MasonryUniformRowLayout = null,
     loadItems: () => Unit = null,
     measurementStore: js.Any = null,
-    minCols: Int | Double = null,
+    minCols: js.UndefOr[Double] = js.undefined,
     scrollContainer: () => HTMLElement = null,
-    virtualBoundsBottom: Int | Double = null,
-    virtualBoundsTop: Int | Double = null,
+    virtualBoundsBottom: js.UndefOr[Double] = js.undefined,
+    virtualBoundsTop: js.UndefOr[Double] = js.undefined,
     virtualize: js.UndefOr[Boolean] = js.undefined
   ): MasonryProps = {
     val __obj = js.Dynamic.literal(comp = comp.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexible)) __obj.updateDynamic("flexible")(flexible.asInstanceOf[js.Any])
-    if (gutterWidth != null) __obj.updateDynamic("gutterWidth")(gutterWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexible)) __obj.updateDynamic("flexible")(flexible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gutterWidth)) __obj.updateDynamic("gutterWidth")(gutterWidth.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (loadItems != null) __obj.updateDynamic("loadItems")(js.Any.fromFunction0(loadItems))
     if (measurementStore != null) __obj.updateDynamic("measurementStore")(measurementStore.asInstanceOf[js.Any])
-    if (minCols != null) __obj.updateDynamic("minCols")(minCols.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCols)) __obj.updateDynamic("minCols")(minCols.get.asInstanceOf[js.Any])
     if (scrollContainer != null) __obj.updateDynamic("scrollContainer")(js.Any.fromFunction0(scrollContainer))
-    if (virtualBoundsBottom != null) __obj.updateDynamic("virtualBoundsBottom")(virtualBoundsBottom.asInstanceOf[js.Any])
-    if (virtualBoundsTop != null) __obj.updateDynamic("virtualBoundsTop")(virtualBoundsTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtualize)) __obj.updateDynamic("virtualize")(virtualize.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualBoundsBottom)) __obj.updateDynamic("virtualBoundsBottom")(virtualBoundsBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualBoundsTop)) __obj.updateDynamic("virtualBoundsTop")(virtualBoundsTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualize)) __obj.updateDynamic("virtualize")(virtualize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasonryProps]
   }
 }

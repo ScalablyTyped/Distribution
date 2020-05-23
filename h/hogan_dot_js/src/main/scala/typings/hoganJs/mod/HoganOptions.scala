@@ -20,9 +20,9 @@ object HoganOptions {
     sectionTags: js.Array[SectionTags] = null
   ): HoganOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asString)) __obj.updateDynamic("asString")(asString.asInstanceOf[js.Any])
+    if (!js.isUndefined(asString)) __obj.updateDynamic("asString")(asString.get.asInstanceOf[js.Any])
     if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableLambda)) __obj.updateDynamic("disableLambda")(disableLambda.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableLambda)) __obj.updateDynamic("disableLambda")(disableLambda.get.asInstanceOf[js.Any])
     if (sectionTags != null) __obj.updateDynamic("sectionTags")(sectionTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoganOptions]
   }

@@ -47,7 +47,7 @@ object OrbitOptions {
     active_slide_class: String = null,
     after_slide_change: () => _ = null,
     animation: String = null,
-    animation_speed: Int | Double = null,
+    animation_speed: js.UndefOr[Double] = js.undefined,
     before_slide_change: () => _ = null,
     bullets: js.UndefOr[Boolean] = js.undefined,
     bullets_active_class: String = null,
@@ -75,43 +75,43 @@ object OrbitOptions {
     timer_container_class: String = null,
     timer_paused_class: String = null,
     timer_progress_class: String = null,
-    timer_speed: Int | Double = null,
+    timer_speed: js.UndefOr[Double] = js.undefined,
     variable_height: js.UndefOr[Boolean] = js.undefined
   ): OrbitOptions = {
     val __obj = js.Dynamic.literal()
     if (active_slide_class != null) __obj.updateDynamic("active_slide_class")(active_slide_class.asInstanceOf[js.Any])
     if (after_slide_change != null) __obj.updateDynamic("after_slide_change")(js.Any.fromFunction0(after_slide_change))
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animation_speed != null) __obj.updateDynamic("animation_speed")(animation_speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation_speed)) __obj.updateDynamic("animation_speed")(animation_speed.get.asInstanceOf[js.Any])
     if (before_slide_change != null) __obj.updateDynamic("before_slide_change")(js.Any.fromFunction0(before_slide_change))
-    if (!js.isUndefined(bullets)) __obj.updateDynamic("bullets")(bullets.asInstanceOf[js.Any])
+    if (!js.isUndefined(bullets)) __obj.updateDynamic("bullets")(bullets.get.asInstanceOf[js.Any])
     if (bullets_active_class != null) __obj.updateDynamic("bullets_active_class")(bullets_active_class.asInstanceOf[js.Any])
     if (bullets_container_class != null) __obj.updateDynamic("bullets_container_class")(bullets_container_class.asInstanceOf[js.Any])
     if (caption_class != null) __obj.updateDynamic("caption_class")(caption_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
+    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.get.asInstanceOf[js.Any])
     if (container_class != null) __obj.updateDynamic("container_class")(container_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigation_arrows)) __obj.updateDynamic("navigation_arrows")(navigation_arrows.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigation_arrows)) __obj.updateDynamic("navigation_arrows")(navigation_arrows.get.asInstanceOf[js.Any])
     if (next_class != null) __obj.updateDynamic("next_class")(next_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(next_on_click)) __obj.updateDynamic("next_on_click")(next_on_click.asInstanceOf[js.Any])
+    if (!js.isUndefined(next_on_click)) __obj.updateDynamic("next_on_click")(next_on_click.get.asInstanceOf[js.Any])
     if (orbit_transition_class != null) __obj.updateDynamic("orbit_transition_class")(orbit_transition_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(pause_on_hover)) __obj.updateDynamic("pause_on_hover")(pause_on_hover.asInstanceOf[js.Any])
+    if (!js.isUndefined(pause_on_hover)) __obj.updateDynamic("pause_on_hover")(pause_on_hover.get.asInstanceOf[js.Any])
     if (preloader_class != null) __obj.updateDynamic("preloader_class")(preloader_class.asInstanceOf[js.Any])
     if (prev_class != null) __obj.updateDynamic("prev_class")(prev_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(resume_on_mouseout)) __obj.updateDynamic("resume_on_mouseout")(resume_on_mouseout.asInstanceOf[js.Any])
-    if (!js.isUndefined(slide_number)) __obj.updateDynamic("slide_number")(slide_number.asInstanceOf[js.Any])
+    if (!js.isUndefined(resume_on_mouseout)) __obj.updateDynamic("resume_on_mouseout")(resume_on_mouseout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slide_number)) __obj.updateDynamic("slide_number")(slide_number.get.asInstanceOf[js.Any])
     if (slide_number_class != null) __obj.updateDynamic("slide_number_class")(slide_number_class.asInstanceOf[js.Any])
     if (slide_number_text != null) __obj.updateDynamic("slide_number_text")(slide_number_text.asInstanceOf[js.Any])
     if (slide_selector != null) __obj.updateDynamic("slide_selector")(slide_selector.asInstanceOf[js.Any])
     if (slides_container_class != null) __obj.updateDynamic("slides_container_class")(slides_container_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(stack_on_small)) __obj.updateDynamic("stack_on_small")(stack_on_small.asInstanceOf[js.Any])
+    if (!js.isUndefined(stack_on_small)) __obj.updateDynamic("stack_on_small")(stack_on_small.get.asInstanceOf[js.Any])
     if (stack_on_small_class != null) __obj.updateDynamic("stack_on_small_class")(stack_on_small_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipe)) __obj.updateDynamic("swipe")(swipe.asInstanceOf[js.Any])
-    if (!js.isUndefined(timer)) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipe)) __obj.updateDynamic("swipe")(swipe.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timer)) __obj.updateDynamic("timer")(timer.get.asInstanceOf[js.Any])
     if (timer_container_class != null) __obj.updateDynamic("timer_container_class")(timer_container_class.asInstanceOf[js.Any])
     if (timer_paused_class != null) __obj.updateDynamic("timer_paused_class")(timer_paused_class.asInstanceOf[js.Any])
     if (timer_progress_class != null) __obj.updateDynamic("timer_progress_class")(timer_progress_class.asInstanceOf[js.Any])
-    if (timer_speed != null) __obj.updateDynamic("timer_speed")(timer_speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(variable_height)) __obj.updateDynamic("variable_height")(variable_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(timer_speed)) __obj.updateDynamic("timer_speed")(timer_speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(variable_height)) __obj.updateDynamic("variable_height")(variable_height.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrbitOptions]
   }
 }

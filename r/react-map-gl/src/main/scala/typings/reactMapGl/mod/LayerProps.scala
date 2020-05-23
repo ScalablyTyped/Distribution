@@ -35,8 +35,8 @@ object LayerProps {
     filter: js.Array[_] = null,
     id: String = null,
     layout: AnyLayout = null,
-    maxzoom: Int | Double = null,
-    minzoom: Int | Double = null,
+    maxzoom: js.UndefOr[Double] = js.undefined,
+    minzoom: js.UndefOr[Double] = js.undefined,
     source: String = null
   ): LayerProps = {
     val __obj = js.Dynamic.literal(paint = paint.asInstanceOf[js.Any])
@@ -45,8 +45,8 @@ object LayerProps {
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
-    if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxzoom)) __obj.updateDynamic("maxzoom")(maxzoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minzoom)) __obj.updateDynamic("minzoom")(minzoom.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerProps]
   }

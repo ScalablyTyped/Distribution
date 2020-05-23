@@ -18,12 +18,8 @@ class Memo[T /* <: MemoType */] protected ()
   extends typings.stellarBase.mod.Memo[T] {
   def this(`type`: None) = this()
   def this(`type`: T, value: MemoValue) = this()
-  def this(`type`: Hash, value: String) = this()
-  def this(`type`: Hash, value: Buffer) = this()
-  def this(`type`: ID, value: String) = this()
-  def this(`type`: Return, value: String) = this()
-  def this(`type`: Return, value: Buffer) = this()
-  def this(`type`: Text, value: String) = this()
+  def this(`type`: Hash | ID | Return | Text, value: String) = this()
+  def this(`type`: Hash | Return, value: Buffer) = this()
 }
 
 /* static members */

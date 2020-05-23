@@ -73,14 +73,14 @@ object SerializeOptions {
     space: Double | String = null
   ): SerializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bracesSameLine)) __obj.updateDynamic("bracesSameLine")(bracesSameLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitRootBraces)) __obj.updateDynamic("emitRootBraces")(emitRootBraces.asInstanceOf[js.Any])
+    if (!js.isUndefined(bracesSameLine)) __obj.updateDynamic("bracesSameLine")(bracesSameLine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitRootBraces)) __obj.updateDynamic("emitRootBraces")(emitRootBraces.get.asInstanceOf[js.Any])
     if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepWsc)) __obj.updateDynamic("keepWsc")(keepWsc.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepWsc)) __obj.updateDynamic("keepWsc")(keepWsc.get.asInstanceOf[js.Any])
     if (multiline != null) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
     if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.get.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializeOptions]
   }

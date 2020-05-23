@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.HeaderFooterGroupData
 import typings.officeJs.Excel.Interfaces.HeaderFooterGroupLoadOptions
 import typings.officeJs.Excel.Interfaces.HeaderFooterGroupUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Default
 import typings.officeJs.officeJsStrings.FirstAndDefault
 import typings.officeJs.officeJsStrings.FirstOddAndEven
@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
 /**
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.HeaderFooterGroup")
 @js.native
-class HeaderFooterGroup () extends ClientObject {
+trait HeaderFooterGroup extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_HeaderFooterGroup: RequestContext = js.native
@@ -53,7 +52,7 @@ class HeaderFooterGroup () extends ClientObject {
   val oddPages: HeaderFooter = js.native
   /**
     *
-    * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+    * The state by which headers/footers are set. See Excel.HeaderFooterState for details.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -79,7 +78,7 @@ class HeaderFooterGroup () extends ClientObject {
     */
   def load(): HeaderFooterGroup = js.native
   def load(options: HeaderFooterGroupLoadOptions): HeaderFooterGroup = js.native
-  def load(propertyNamesAndPaths: AnonExpand): HeaderFooterGroup = js.native
+  def load(propertyNamesAndPaths: Expand): HeaderFooterGroup = js.native
   def load(propertyNames: String): HeaderFooterGroup = js.native
   def load(propertyNames: js.Array[String]): HeaderFooterGroup = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

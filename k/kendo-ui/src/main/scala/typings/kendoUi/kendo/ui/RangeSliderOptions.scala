@@ -25,33 +25,33 @@ object RangeSliderOptions {
   @scala.inline
   def apply(
     change: /* e */ RangeSliderChangeEvent => Unit = null,
-    largeStep: Int | Double = null,
+    largeStep: js.UndefOr[Double] = js.undefined,
     leftDragHandleTitle: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     name: String = null,
     orientation: String = null,
     rightDragHandleTitle: String = null,
-    selectionEnd: Int | Double = null,
-    selectionStart: Int | Double = null,
+    selectionEnd: js.UndefOr[Double] = js.undefined,
+    selectionStart: js.UndefOr[Double] = js.undefined,
     slide: /* e */ RangeSliderSlideEvent => Unit = null,
-    smallStep: Int | Double = null,
+    smallStep: js.UndefOr[Double] = js.undefined,
     tickPlacement: String = null,
     tooltip: RangeSliderTooltip = null
   ): RangeSliderOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (largeStep != null) __obj.updateDynamic("largeStep")(largeStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(largeStep)) __obj.updateDynamic("largeStep")(largeStep.get.asInstanceOf[js.Any])
     if (leftDragHandleTitle != null) __obj.updateDynamic("leftDragHandleTitle")(leftDragHandleTitle.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (rightDragHandleTitle != null) __obj.updateDynamic("rightDragHandleTitle")(rightDragHandleTitle.asInstanceOf[js.Any])
-    if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
-    if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionEnd)) __obj.updateDynamic("selectionEnd")(selectionEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionStart)) __obj.updateDynamic("selectionStart")(selectionStart.get.asInstanceOf[js.Any])
     if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction1(slide))
-    if (smallStep != null) __obj.updateDynamic("smallStep")(smallStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(smallStep)) __obj.updateDynamic("smallStep")(smallStep.get.asInstanceOf[js.Any])
     if (tickPlacement != null) __obj.updateDynamic("tickPlacement")(tickPlacement.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSliderOptions]

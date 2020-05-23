@@ -26,12 +26,12 @@ object QueryResult {
     query: EntityQuery,
     results: js.Array[Entity],
     entityManager: EntityManager = null,
-    inlineCount: Int | Double = null,
+    inlineCount: js.UndefOr[Double] = js.undefined,
     retrievedEntities: js.Array[Entity] = null
   ): QueryResult = {
     val __obj = js.Dynamic.literal(httpResponse = httpResponse.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
     if (entityManager != null) __obj.updateDynamic("entityManager")(entityManager.asInstanceOf[js.Any])
-    if (inlineCount != null) __obj.updateDynamic("inlineCount")(inlineCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineCount)) __obj.updateDynamic("inlineCount")(inlineCount.get.asInstanceOf[js.Any])
     if (retrievedEntities != null) __obj.updateDynamic("retrievedEntities")(retrievedEntities.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult]
   }

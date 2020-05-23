@@ -81,17 +81,17 @@ object UpdateAutoScalingGroupType {
   def apply(
     AutoScalingGroupName: ResourceName,
     AvailabilityZones: AvailabilityZones = null,
-    DefaultCooldown: Int | Double = null,
-    DesiredCapacity: Int | Double = null,
-    HealthCheckGracePeriod: Int | Double = null,
+    DefaultCooldown: js.UndefOr[Cooldown] = js.undefined,
+    DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined,
+    HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined,
     HealthCheckType: XmlStringMaxLen32 = null,
     LaunchConfigurationName: ResourceName = null,
     LaunchTemplate: LaunchTemplateSpecification = null,
-    MaxInstanceLifetime: Int | Double = null,
-    MaxSize: Int | Double = null,
-    MinSize: Int | Double = null,
+    MaxInstanceLifetime: js.UndefOr[MaxInstanceLifetime] = js.undefined,
+    MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.undefined,
+    MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined,
     MixedInstancesPolicy: MixedInstancesPolicy = null,
-    NewInstancesProtectedFromScaleIn: js.UndefOr[Boolean] = js.undefined,
+    NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined,
     PlacementGroup: XmlStringMaxLen255 = null,
     ServiceLinkedRoleARN: ResourceName = null,
     TerminationPolicies: TerminationPolicies = null,
@@ -99,17 +99,17 @@ object UpdateAutoScalingGroupType {
   ): UpdateAutoScalingGroupType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (DefaultCooldown != null) __obj.updateDynamic("DefaultCooldown")(DefaultCooldown.asInstanceOf[js.Any])
-    if (DesiredCapacity != null) __obj.updateDynamic("DesiredCapacity")(DesiredCapacity.asInstanceOf[js.Any])
-    if (HealthCheckGracePeriod != null) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultCooldown)) __obj.updateDynamic("DefaultCooldown")(DefaultCooldown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredCapacity)) __obj.updateDynamic("DesiredCapacity")(DesiredCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HealthCheckGracePeriod)) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod.get.asInstanceOf[js.Any])
     if (HealthCheckType != null) __obj.updateDynamic("HealthCheckType")(HealthCheckType.asInstanceOf[js.Any])
     if (LaunchConfigurationName != null) __obj.updateDynamic("LaunchConfigurationName")(LaunchConfigurationName.asInstanceOf[js.Any])
     if (LaunchTemplate != null) __obj.updateDynamic("LaunchTemplate")(LaunchTemplate.asInstanceOf[js.Any])
-    if (MaxInstanceLifetime != null) __obj.updateDynamic("MaxInstanceLifetime")(MaxInstanceLifetime.asInstanceOf[js.Any])
-    if (MaxSize != null) __obj.updateDynamic("MaxSize")(MaxSize.asInstanceOf[js.Any])
-    if (MinSize != null) __obj.updateDynamic("MinSize")(MinSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxInstanceLifetime)) __obj.updateDynamic("MaxInstanceLifetime")(MaxInstanceLifetime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxSize)) __obj.updateDynamic("MaxSize")(MaxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinSize)) __obj.updateDynamic("MinSize")(MinSize.get.asInstanceOf[js.Any])
     if (MixedInstancesPolicy != null) __obj.updateDynamic("MixedInstancesPolicy")(MixedInstancesPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(NewInstancesProtectedFromScaleIn)) __obj.updateDynamic("NewInstancesProtectedFromScaleIn")(NewInstancesProtectedFromScaleIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(NewInstancesProtectedFromScaleIn)) __obj.updateDynamic("NewInstancesProtectedFromScaleIn")(NewInstancesProtectedFromScaleIn.get.asInstanceOf[js.Any])
     if (PlacementGroup != null) __obj.updateDynamic("PlacementGroup")(PlacementGroup.asInstanceOf[js.Any])
     if (ServiceLinkedRoleARN != null) __obj.updateDynamic("ServiceLinkedRoleARN")(ServiceLinkedRoleARN.asInstanceOf[js.Any])
     if (TerminationPolicies != null) __obj.updateDynamic("TerminationPolicies")(TerminationPolicies.asInstanceOf[js.Any])

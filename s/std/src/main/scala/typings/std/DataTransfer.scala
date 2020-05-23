@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,8 +53,4 @@ trait DataTransfer extends js.Object {
     */
   def setDragImage(image: Element, x: Double, y: Double): Unit = js.native
 }
-
-@JSGlobal("DataTransfer")
-@js.native
-object DataTransfer extends Instantiable0[DataTransfer]
 

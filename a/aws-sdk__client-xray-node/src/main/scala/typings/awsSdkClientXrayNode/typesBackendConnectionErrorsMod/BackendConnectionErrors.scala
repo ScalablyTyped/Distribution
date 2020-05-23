@@ -34,20 +34,20 @@ trait BackendConnectionErrors extends js.Object {
 object BackendConnectionErrors {
   @scala.inline
   def apply(
-    ConnectionRefusedCount: Int | Double = null,
-    HTTPCode4XXCount: Int | Double = null,
-    HTTPCode5XXCount: Int | Double = null,
-    OtherCount: Int | Double = null,
-    TimeoutCount: Int | Double = null,
-    UnknownHostCount: Int | Double = null
+    ConnectionRefusedCount: js.UndefOr[Double] = js.undefined,
+    HTTPCode4XXCount: js.UndefOr[Double] = js.undefined,
+    HTTPCode5XXCount: js.UndefOr[Double] = js.undefined,
+    OtherCount: js.UndefOr[Double] = js.undefined,
+    TimeoutCount: js.UndefOr[Double] = js.undefined,
+    UnknownHostCount: js.UndefOr[Double] = js.undefined
   ): BackendConnectionErrors = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionRefusedCount != null) __obj.updateDynamic("ConnectionRefusedCount")(ConnectionRefusedCount.asInstanceOf[js.Any])
-    if (HTTPCode4XXCount != null) __obj.updateDynamic("HTTPCode4XXCount")(HTTPCode4XXCount.asInstanceOf[js.Any])
-    if (HTTPCode5XXCount != null) __obj.updateDynamic("HTTPCode5XXCount")(HTTPCode5XXCount.asInstanceOf[js.Any])
-    if (OtherCount != null) __obj.updateDynamic("OtherCount")(OtherCount.asInstanceOf[js.Any])
-    if (TimeoutCount != null) __obj.updateDynamic("TimeoutCount")(TimeoutCount.asInstanceOf[js.Any])
-    if (UnknownHostCount != null) __obj.updateDynamic("UnknownHostCount")(UnknownHostCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConnectionRefusedCount)) __obj.updateDynamic("ConnectionRefusedCount")(ConnectionRefusedCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HTTPCode4XXCount)) __obj.updateDynamic("HTTPCode4XXCount")(HTTPCode4XXCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HTTPCode5XXCount)) __obj.updateDynamic("HTTPCode5XXCount")(HTTPCode5XXCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OtherCount)) __obj.updateDynamic("OtherCount")(OtherCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeoutCount)) __obj.updateDynamic("TimeoutCount")(TimeoutCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UnknownHostCount)) __obj.updateDynamic("UnknownHostCount")(UnknownHostCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendConnectionErrors]
   }
 }

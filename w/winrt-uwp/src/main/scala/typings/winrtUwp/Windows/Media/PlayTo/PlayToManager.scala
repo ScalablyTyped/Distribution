@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to Play To capabilities. */
-@JSGlobal("Windows.Media.PlayTo.PlayToManager")
 @js.native
-abstract class PlayToManager () extends js.Object {
+trait PlayToManager extends js.Object {
   /** Enables or disables the default source selection for Play To. */
   var defaultSourceSelection: Boolean = js.native
   /** Occurs when a user requests media to stream to a Play To target device. */
@@ -41,18 +40,5 @@ abstract class PlayToManager () extends js.Object {
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_sourceselected(`type`: sourceselected, listener: TypedEventHandler[PlayToManager, PlayToSourceSelectedEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Media.PlayTo.PlayToManager")
-@js.native
-object PlayToManager extends js.Object {
-  /**
-    * Gets the Play To manager for the current view.
-    * @return The Play To manager for the current view.
-    */
-  def getForCurrentView(): PlayToManager = js.native
-  /** Displays the Play To UI. */
-  def showPlayToUI(): Unit = js.native
 }
 

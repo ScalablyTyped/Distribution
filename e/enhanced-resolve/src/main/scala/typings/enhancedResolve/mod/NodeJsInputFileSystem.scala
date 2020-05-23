@@ -1,7 +1,7 @@
 package typings.enhancedResolve.mod
 
-import typings.enhancedResolve.AnonEncoding
-import typings.enhancedResolve.AnonFlag
+import typings.enhancedResolve.anon.Encoding
+import typings.enhancedResolve.anon.Flag
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Stats
@@ -21,18 +21,18 @@ class NodeJsInputFileSystem () extends js.Object {
   ): Unit = js.native
   def readFile(
     filename: String,
-    options: AnonEncoding,
+    options: Encoding,
     callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
   ): Unit = js.native
   def readFile(
     filename: String,
-    options: AnonFlag,
+    options: Flag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
   ): Unit = js.native
   def readFileSync(filename: String): Buffer = js.native
   def readFileSync(filename: String, encoding: String): String = js.native
-  def readFileSync(filename: String, options: AnonEncoding): String = js.native
-  def readFileSync(filename: String, options: AnonFlag): Buffer = js.native
+  def readFileSync(filename: String, options: Encoding): String = js.native
+  def readFileSync(filename: String, options: Flag): Buffer = js.native
   def readdir(path: String, callback: js.Function2[/* err */ Error, /* files */ js.Array[String], Unit]): Unit = js.native
   def readdirSync(path: String): js.Array[String] = js.native
   def readlink(path: String): Unit = js.native

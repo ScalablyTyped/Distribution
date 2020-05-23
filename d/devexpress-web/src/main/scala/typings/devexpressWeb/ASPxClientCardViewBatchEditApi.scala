@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Provides members related to Batch Edit Mode
   */
-@JSGlobal("ASPxClientCardViewBatchEditApi")
 @js.native
-class ASPxClientCardViewBatchEditApi () extends js.Object {
+trait ASPxClientCardViewBatchEditApi extends js.Object {
   /**
     * Adds a new card when ASPxCardView is in Batch Edit mode.
     */

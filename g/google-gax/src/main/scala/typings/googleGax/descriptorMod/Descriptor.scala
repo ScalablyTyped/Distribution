@@ -14,7 +14,6 @@ object Descriptor {
   @scala.inline
   def apply(getApiCaller: CallSettings => APICaller): Descriptor = {
     val __obj = js.Dynamic.literal(getApiCaller = js.Any.fromFunction1(getApiCaller))
-  
     __obj.asInstanceOf[Descriptor]
   }
 }

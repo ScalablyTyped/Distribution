@@ -41,8 +41,8 @@ object AwsEc2NetworkInterfaceAttachment {
   def apply(
     AttachTime: NonEmptyString = null,
     AttachmentId: NonEmptyString = null,
-    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
-    DeviceIndex: Int | scala.Double = null,
+    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
+    DeviceIndex: js.UndefOr[Integer] = js.undefined,
     InstanceId: NonEmptyString = null,
     InstanceOwnerId: NonEmptyString = null,
     Status: NonEmptyString = null
@@ -50,8 +50,8 @@ object AwsEc2NetworkInterfaceAttachment {
     val __obj = js.Dynamic.literal()
     if (AttachTime != null) __obj.updateDynamic("AttachTime")(AttachTime.asInstanceOf[js.Any])
     if (AttachmentId != null) __obj.updateDynamic("AttachmentId")(AttachmentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.asInstanceOf[js.Any])
-    if (DeviceIndex != null) __obj.updateDynamic("DeviceIndex")(DeviceIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeviceIndex)) __obj.updateDynamic("DeviceIndex")(DeviceIndex.get.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     if (InstanceOwnerId != null) __obj.updateDynamic("InstanceOwnerId")(InstanceOwnerId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

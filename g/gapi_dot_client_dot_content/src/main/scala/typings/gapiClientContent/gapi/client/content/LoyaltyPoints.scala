@@ -15,11 +15,11 @@ trait LoyaltyPoints extends js.Object {
 
 object LoyaltyPoints {
   @scala.inline
-  def apply(name: String = null, pointsValue: String = null, ratio: Int | Double = null): LoyaltyPoints = {
+  def apply(name: String = null, pointsValue: String = null, ratio: js.UndefOr[Double] = js.undefined): LoyaltyPoints = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pointsValue != null) __obj.updateDynamic("pointsValue")(pointsValue.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoyaltyPoints]
   }
 }

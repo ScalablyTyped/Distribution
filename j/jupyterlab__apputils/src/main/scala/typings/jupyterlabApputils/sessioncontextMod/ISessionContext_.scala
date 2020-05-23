@@ -1,6 +1,6 @@
 package typings.jupyterlabApputils.sessioncontextMod
 
-import typings.jupyterlabApputils.PartialIModel
+import typings.jupyterlabApputils.anon.PartialIModel
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.kernel
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.session
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IKernelPreference

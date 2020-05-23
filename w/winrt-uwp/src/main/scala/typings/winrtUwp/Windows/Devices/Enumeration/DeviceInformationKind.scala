@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object DeviceInformationKind extends js.Object {
   /** The object is of an unknown type. This value is not used. */
   @js.native
   sealed trait unknown extends DeviceInformationKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceInformationKind with Double] = js.native
-  /* 5 */ @js.native
-  object associationEndpoint extends TopLevel[associationEndpoint with Double]
-  
-  /* 6 */ @js.native
-  object associationEndpointContainer extends TopLevel[associationEndpointContainer with Double]
-  
-  /* 7 */ @js.native
-  object associationEndpointService extends TopLevel[associationEndpointService with Double]
-  
-  /* 3 */ @js.native
-  object device extends TopLevel[device with Double]
-  
-  /* 2 */ @js.native
-  object deviceContainer extends TopLevel[deviceContainer with Double]
-  
-  /* 1 */ @js.native
-  object deviceInterface extends TopLevel[deviceInterface with Double]
-  
-  /* 4 */ @js.native
-  object deviceInterfaceClass extends TopLevel[deviceInterfaceClass with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

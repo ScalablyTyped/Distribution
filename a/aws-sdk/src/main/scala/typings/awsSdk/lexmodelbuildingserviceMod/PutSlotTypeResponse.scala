@@ -56,7 +56,7 @@ object PutSlotTypeResponse {
   @scala.inline
   def apply(
     checksum: String = null,
-    createVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    createVersion: js.UndefOr[Boolean] = js.undefined,
     createdDate: Timestamp = null,
     description: Description = null,
     enumerationValues: EnumerationValues = null,
@@ -69,7 +69,7 @@ object PutSlotTypeResponse {
   ): PutSlotTypeResponse = {
     val __obj = js.Dynamic.literal()
     if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.get.asInstanceOf[js.Any])
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (enumerationValues != null) __obj.updateDynamic("enumerationValues")(enumerationValues.asInstanceOf[js.Any])

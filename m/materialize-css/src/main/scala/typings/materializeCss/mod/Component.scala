@@ -15,5 +15,20 @@ abstract class Component[TOptions] protected ()
     */
   def this(elem: Element) = this()
   def this(elem: Element, options: Partial[TOptions]) = this()
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  override var el: Element = js.native
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  override var options: TOptions = js.native
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
 }
 

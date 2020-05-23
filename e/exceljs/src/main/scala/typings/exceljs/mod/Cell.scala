@@ -1,7 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.AnonAddress
-import typings.exceljs.PartialStyle
+import typings.exceljs.anon.PartialStyle
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +24,7 @@ trait Cell
   	 * The type of the cell's formula
   	 */
   val formulaType: FormulaType = js.native
-  val fullAddress: AnonAddress = js.native
+  val fullAddress: typings.exceljs.anon.Address = js.native
   val hyperlink: String = js.native
   val isHyperlink: Boolean = js.native
   val isMerged: Boolean = js.native

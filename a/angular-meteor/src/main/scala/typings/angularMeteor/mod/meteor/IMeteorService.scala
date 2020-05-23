@@ -1,15 +1,15 @@
 package typings.angularMeteor.mod.meteor
 
 import typings.angular.mod.IPromise
-import typings.angular.mod._Global_.Function
-import typings.angularMeteor.AnonBind
-import typings.angularMeteor.AnonEmail
-import typings.angularMeteor.AnonHeight
-import typings.angularMeteor.AnonId
-import typings.angularMeteor.AnonPassword
-import typings.angularMeteor.AnonUsername
+import typings.angular.mod.global.Function
+import typings.angularMeteor.anon.Bind
+import typings.angularMeteor.anon.Email
+import typings.angularMeteor.anon.Height
+import typings.angularMeteor.anon.Id
+import typings.angularMeteor.anon.Password
+import typings.angularMeteor.anon.Username
 import typings.meteor.Meteor.SubscriptionHandle
-import typings.meteor.Meteor.User_
+import typings.meteor.Meteor.User
 import typings.meteor.Mongo.Collection
 import typings.meteor.Mongo.ObjectID
 import typings.meteor.Mongo.Selector
@@ -88,13 +88,13 @@ trait IMeteorService extends js.Object {
     * @param options.password - The user's password. This is not sent in plain text over the wire.
     * @param options.profile - The user's profile, typically including the name field.
     */
-  def createUser(options: AnonPassword): IPromise[Unit] = js.native
+  def createUser(options: Password): IPromise[Unit] = js.native
   /**
     * Request a forgot password email.
     *
     * @param options.email - The email address to send a password reset link.
     */
-  def forgotPassword(options: AnonEmail): IPromise[Unit] = js.native
+  def forgotPassword(options: Email): IPromise[Unit] = js.native
   /**
     * @param collectionName - The name of the collection you want to get back
     */
@@ -113,7 +113,7 @@ trait IMeteorService extends js.Object {
     * @return The promise solved successfully when the picture is taken with the data as a parameter or rejected with an error as a parameter in case of error.
     */
   def getPicture(): IPromise[_] = js.native
-  def getPicture(options: AnonHeight): IPromise[_] = js.native
+  def getPicture(options: Height): IPromise[_] = js.native
   /**
     * Log the user in with a password.
     *
@@ -121,9 +121,9 @@ trait IMeteorService extends js.Object {
     * @param password - The user's password.
     */
   def loginWithPassword(user: String, password: String): IPromise[Unit] = js.native
-  def loginWithPassword(user: AnonEmail, password: String): IPromise[Unit] = js.native
-  def loginWithPassword(user: AnonId, password: String): IPromise[Unit] = js.native
-  def loginWithPassword(user: AnonUsername, password: String): IPromise[Unit] = js.native
+  def loginWithPassword(user: Email, password: String): IPromise[Unit] = js.native
+  def loginWithPassword(user: Id, password: String): IPromise[Unit] = js.native
+  def loginWithPassword(user: Username, password: String): IPromise[Unit] = js.native
   /**
     * Log the user out.
     *
@@ -161,7 +161,7 @@ trait IMeteorService extends js.Object {
     * You can catch the rejected promise and redirect the unauthenticated user to a different page, such as the login page.
     * See the “Authentication with Routers” section of our tutorial for more information and a full example.
     */
-  def requireUser(): IPromise[User_] = js.native
+  def requireUser(): IPromise[User] = js.native
   /**
     * Resolves the promise successfully if a user is authenticated and the validatorFn returns true; rejects otherwise.
     * This is useful in cases where you want to require a route to have an authenticated user and do extra validation like the user's role or group.
@@ -172,7 +172,7 @@ trait IMeteorService extends js.Object {
     * If it returns a string, the promise will be rejected using said string as the reason.
     * Any other return (false, null, undefined) will be rejected with the default "FORBIDDEN" reason.
     */
-  def requireValidUser(validatorFn: js.Function1[/* user */ User_, Boolean | String]): IPromise[User_] = js.native
+  def requireValidUser(validatorFn: js.Function1[/* user */ User, Boolean | String]): IPromise[User] = js.native
   /**
     * Reset the password for a user using a token received in email. Logs the user in afterwards.
     *
@@ -187,7 +187,7 @@ trait IMeteorService extends js.Object {
     * @param sessionKey - The name of the session variable
     * @return An object with a single function bind - to bind to that variable.
     */
-  def session(sessionKey: String): AnonBind = js.native
+  def session(sessionKey: String): Bind = js.native
   /**
     * A service which is a wrapper for Meteor.subscribe. It subscribes to a Meteor.publish method in the client and returns a AngularJS promise when ready.
     *
@@ -210,6 +210,6 @@ trait IMeteorService extends js.Object {
     * If there is no logged in user, it will return null.
     * See the “Authentication with Routers” section of our tutorial for more information and a full example.
     */
-  def waitForUser(): IPromise[User_] = js.native
+  def waitForUser(): IPromise[User] = js.native
 }
 

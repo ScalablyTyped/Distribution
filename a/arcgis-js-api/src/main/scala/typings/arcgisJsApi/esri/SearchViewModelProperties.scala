@@ -171,17 +171,17 @@ trait SearchViewModelProperties extends GoToProperties {
 object SearchViewModelProperties {
   @scala.inline
   def apply(
-    activeSourceIndex: Int | Double = null,
+    activeSourceIndex: js.UndefOr[Double] = js.undefined,
     allPlaceholder: String = null,
     autoSelect: js.UndefOr[Boolean] = js.undefined,
     defaultSymbol: SymbolProperties = null,
     goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     includeDefaultSources: Boolean | js.Function = null,
     locationEnabled: js.UndefOr[Boolean] = js.undefined,
-    maxInputLength: Int | Double = null,
-    maxResults: Int | Double = null,
-    maxSuggestions: Int | Double = null,
-    minSuggestCharacters: Int | Double = null,
+    maxInputLength: js.UndefOr[Double] = js.undefined,
+    maxResults: js.UndefOr[Double] = js.undefined,
+    maxSuggestions: js.UndefOr[Double] = js.undefined,
+    minSuggestCharacters: js.UndefOr[Double] = js.undefined,
     popupEnabled: js.UndefOr[Boolean] = js.undefined,
     popupTemplate: PopupTemplateProperties = null,
     portal: PortalProperties = null,
@@ -189,31 +189,31 @@ object SearchViewModelProperties {
     searchAllEnabled: js.UndefOr[Boolean] = js.undefined,
     searchTerm: String = null,
     sources: CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties] = null,
-    suggestionDelay: Int | Double = null,
+    suggestionDelay: js.UndefOr[Double] = js.undefined,
     suggestionsEnabled: js.UndefOr[Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null
   ): SearchViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (activeSourceIndex != null) __obj.updateDynamic("activeSourceIndex")(activeSourceIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeSourceIndex)) __obj.updateDynamic("activeSourceIndex")(activeSourceIndex.get.asInstanceOf[js.Any])
     if (allPlaceholder != null) __obj.updateDynamic("allPlaceholder")(allPlaceholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.get.asInstanceOf[js.Any])
     if (defaultSymbol != null) __obj.updateDynamic("defaultSymbol")(defaultSymbol.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     if (includeDefaultSources != null) __obj.updateDynamic("includeDefaultSources")(includeDefaultSources.asInstanceOf[js.Any])
-    if (!js.isUndefined(locationEnabled)) __obj.updateDynamic("locationEnabled")(locationEnabled.asInstanceOf[js.Any])
-    if (maxInputLength != null) __obj.updateDynamic("maxInputLength")(maxInputLength.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
-    if (minSuggestCharacters != null) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationEnabled)) __obj.updateDynamic("locationEnabled")(locationEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxInputLength)) __obj.updateDynamic("maxInputLength")(maxInputLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSuggestions)) __obj.updateDynamic("maxSuggestions")(maxSuggestions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSuggestCharacters)) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.get.asInstanceOf[js.Any])
     if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
     if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
-    if (!js.isUndefined(resultGraphicEnabled)) __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchAllEnabled)) __obj.updateDynamic("searchAllEnabled")(searchAllEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultGraphicEnabled)) __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchAllEnabled)) __obj.updateDynamic("searchAllEnabled")(searchAllEnabled.get.asInstanceOf[js.Any])
     if (searchTerm != null) __obj.updateDynamic("searchTerm")(searchTerm.asInstanceOf[js.Any])
     if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
-    if (suggestionDelay != null) __obj.updateDynamic("suggestionDelay")(suggestionDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(suggestionsEnabled)) __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestionDelay)) __obj.updateDynamic("suggestionDelay")(suggestionDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestionsEnabled)) __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchViewModelProperties]
   }

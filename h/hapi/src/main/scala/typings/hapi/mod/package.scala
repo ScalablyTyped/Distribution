@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type CachePolicyOptions[T] = typings.catbox.mod.PolicyOptionVariants[T] with typings.hapi.AnonCache
-  type CacheProvider[T /* <: typings.catbox.mod.ClientOptions */] = typings.catbox.mod.EnginePrototype[js.Any] | typings.hapi.AnonConstructor[T]
+  type CachePolicyOptions[T] = typings.catbox.mod.PolicyOptionVariants[T] with typings.hapi.anon.Cache
+  type CacheProvider[T /* <: typings.catbox.mod.ClientOptions */] = typings.catbox.mod.EnginePrototype[js.Any] | typings.hapi.anon.Constructor[T]
   type DecorateName = java.lang.String | js.Symbol
   type DecorationMethod[T] = js.ThisFunction1[/* this */ T, /* repeated */ js.Any, js.Any]
   type Dependencies = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
@@ -36,7 +36,7 @@ package object mod {
   */
   type RouteOptionsAccessObject = typings.hapi.mod._RouteOptionsAccessObject | (typings.hapi.mod.RouteOptionsAccessScopeObject with typings.hapi.mod.RouteOptionsAccessEntityObject)
   type RouteOptionsAccessScope = typings.hapi.hapiBooleans.`false` | java.lang.String | js.Array[java.lang.String]
-  type RouteOptionsCache = typings.hapi.AnonOtherwise with (typings.hapi.AnonExpiresAt | typings.hapi.AnonExpiresIn | typings.hapi.AnonExpiresAtExpiresIn)
+  type RouteOptionsCache = typings.hapi.anon.Otherwise with (typings.hapi.anon.ExpiresAt | typings.hapi.anon.ExpiresIn | typings.hapi.anon.ExpiresAtExpiresIn)
   type RouteOptionsPreAllOptions = typings.hapi.mod.RouteOptionsPreObject | js.Array[typings.hapi.mod.RouteOptionsPreObject] | typings.hapi.mod.Lifecycle.Method
   type RouteOptionsPreArray = js.Array[typings.hapi.mod.RouteOptionsPreAllOptions]
   type RouteOptionsResponseSchema = scala.Boolean | typings.hapi.mod.ValidationObject | typings.joi.mod.Schema | (js.Function2[

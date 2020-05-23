@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.CClientCaps")
 @js.native
-class CClientCaps protected () extends js.Object {
+trait CClientCaps extends js.Object {
   @JSName("MSHTML.CClientCaps_typekey")
   var MSHTMLDotCClientCaps_typekey: CClientCaps = js.native
   val availHeight: Double = js.native

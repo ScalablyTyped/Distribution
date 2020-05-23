@@ -32,15 +32,15 @@ object Options {
     removeStyleTags: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyLinkTags)) __obj.updateDynamic("applyLinkTags")(applyLinkTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyStyleTags)) __obj.updateDynamic("applyStyleTags")(applyStyleTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyTableAttributes)) __obj.updateDynamic("applyTableAttributes")(applyTableAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyWidthAttributes)) __obj.updateDynamic("applyWidthAttributes")(applyWidthAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyLinkTags)) __obj.updateDynamic("applyLinkTags")(applyLinkTags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyStyleTags)) __obj.updateDynamic("applyStyleTags")(applyStyleTags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyTableAttributes)) __obj.updateDynamic("applyTableAttributes")(applyTableAttributes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyWidthAttributes)) __obj.updateDynamic("applyWidthAttributes")(applyWidthAttributes.get.asInstanceOf[js.Any])
     if (extraCss != null) __obj.updateDynamic("extraCss")(extraCss.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveMediaQueries)) __obj.updateDynamic("preserveMediaQueries")(preserveMediaQueries.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeHtmlSelectors)) __obj.updateDynamic("removeHtmlSelectors")(removeHtmlSelectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeLinkTags)) __obj.updateDynamic("removeLinkTags")(removeLinkTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeStyleTags)) __obj.updateDynamic("removeStyleTags")(removeStyleTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveMediaQueries)) __obj.updateDynamic("preserveMediaQueries")(preserveMediaQueries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeHtmlSelectors)) __obj.updateDynamic("removeHtmlSelectors")(removeHtmlSelectors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeLinkTags)) __obj.updateDynamic("removeLinkTags")(removeLinkTags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeStyleTags)) __obj.updateDynamic("removeStyleTags")(removeStyleTags.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

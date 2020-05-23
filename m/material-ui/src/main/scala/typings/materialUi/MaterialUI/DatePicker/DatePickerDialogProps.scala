@@ -1,8 +1,8 @@
 package typings.materialUi.MaterialUI.DatePicker
 
-import typings.materialUi.AnonCall
 import typings.materialUi.MaterialUI.Popover.PopoverAnimationProps
 import typings.materialUi.MaterialUI.propTypes.utils
+import typings.materialUi.anon.Call
 import typings.materialUi.materialUiStrings.`inline`
 import typings.materialUi.materialUiStrings.dialog
 import typings.materialUi.materialUiStrings.landscape
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerDialogProps extends js.Object {
   // <Container/> is the element that get the 'other' properties
-  var DateTimeFormat: js.UndefOr[AnonCall] = js.undefined
+  var DateTimeFormat: js.UndefOr[Call] = js.undefined
   var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
   var autoOk: js.UndefOr[Boolean] = js.undefined
   var cancelLabel: js.UndefOr[ReactNode] = js.undefined
@@ -42,13 +42,13 @@ trait DatePickerDialogProps extends js.Object {
 object DatePickerDialogProps {
   @scala.inline
   def apply(
-    DateTimeFormat: AnonCall = null,
+    DateTimeFormat: Call = null,
     animation: ComponentClass[PopoverAnimationProps, ComponentState] = null,
     autoOk: js.UndefOr[Boolean] = js.undefined,
     cancelLabel: ReactNode = null,
     container: dialog | `inline` = null,
     disableYearSelection: js.UndefOr[Boolean] = js.undefined,
-    firstDayOfWeek: Int | Double = null,
+    firstDayOfWeek: js.UndefOr[Double] = js.undefined,
     initialDate: Date = null,
     locale: String = null,
     maxDate: Date = null,
@@ -65,11 +65,11 @@ object DatePickerDialogProps {
     val __obj = js.Dynamic.literal()
     if (DateTimeFormat != null) __obj.updateDynamic("DateTimeFormat")(DateTimeFormat.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoOk)) __obj.updateDynamic("autoOk")(autoOk.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoOk)) __obj.updateDynamic("autoOk")(autoOk.get.asInstanceOf[js.Any])
     if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableYearSelection)) __obj.updateDynamic("disableYearSelection")(disableYearSelection.asInstanceOf[js.Any])
-    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableYearSelection)) __obj.updateDynamic("disableYearSelection")(disableYearSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDayOfWeek)) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.get.asInstanceOf[js.Any])
     if (initialDate != null) __obj.updateDynamic("initialDate")(initialDate.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])

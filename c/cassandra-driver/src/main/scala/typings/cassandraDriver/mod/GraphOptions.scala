@@ -20,7 +20,7 @@ object GraphOptions {
     language: String = null,
     name: String = null,
     readConsistency: consistencies = null,
-    readTimeout: Int | Double = null,
+    readTimeout: js.UndefOr[Double] = js.undefined,
     source: String = null,
     writeConsistency: consistencies = null
   ): GraphOptions = {
@@ -28,7 +28,7 @@ object GraphOptions {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (readConsistency != null) __obj.updateDynamic("readConsistency")(readConsistency.asInstanceOf[js.Any])
-    if (readTimeout != null) __obj.updateDynamic("readTimeout")(readTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(readTimeout)) __obj.updateDynamic("readTimeout")(readTimeout.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (writeConsistency != null) __obj.updateDynamic("writeConsistency")(writeConsistency.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphOptions]

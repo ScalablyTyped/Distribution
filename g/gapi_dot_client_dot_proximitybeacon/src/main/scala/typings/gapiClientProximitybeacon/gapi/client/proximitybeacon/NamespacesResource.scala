@@ -1,8 +1,8 @@
 package typings.gapiClientProximitybeacon.gapi.client.proximitybeacon
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientProximitybeacon.AnonCallback
-import typings.gapiClientProximitybeacon.AnonFields
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientProximitybeacon.anon.Callback
+import typings.gapiClientProximitybeacon.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,17 +17,17 @@ trait NamespacesResource extends js.Object {
     * from a signed-in user with &#42;&#42;viewer&#42;&#42;, &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42;
     * permissions in the Google Developers Console project.
     */
-  def list(request: AnonCallback): Request_[ListNamespacesResponse]
+  def list(request: Callback): Request[ListNamespacesResponse]
   /**
     * Updates the information about the specified namespace. Only the namespace
     * visibility can be updated.
     */
-  def update(request: AnonFields): Request_[Namespace]
+  def update(request: Fields): Request[Namespace]
 }
 
 object NamespacesResource {
   @scala.inline
-  def apply(list: AnonCallback => Request_[ListNamespacesResponse], update: AnonFields => Request_[Namespace]): NamespacesResource = {
+  def apply(list: Callback => Request[ListNamespacesResponse], update: Fields => Request[Namespace]): NamespacesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[NamespacesResource]
   }

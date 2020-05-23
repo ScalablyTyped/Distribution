@@ -7,26 +7,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.WebOptions")
-@js.native
-class WebOptions protected () extends js.Object {
-  var AllowPNG: Boolean = js.native
-  val Application: typings.activexWord.Word.Application = js.native
-  var BrowserLevel: WdBrowserLevel = js.native
-  val Creator: Double = js.native
-  var Encoding: MsoEncoding = js.native
-  val FolderSuffix: String = js.native
-  var OptimizeForBrowser: Boolean = js.native
-  var OrganizeInFolder: Boolean = js.native
-  val Parent: js.Any = js.native
-  var PixelsPerInch: Double = js.native
-  var RelyOnCSS: Boolean = js.native
-  var RelyOnVML: Boolean = js.native
-  var ScreenSize: MsoScreenSize = js.native
-  var TargetBrowser: MsoTargetBrowser = js.native
-  var UseLongFileNames: Boolean = js.native
+trait WebOptions extends js.Object {
+  var AllowPNG: Boolean
+  val Application: typings.activexWord.Word.Application
+  var BrowserLevel: WdBrowserLevel
+  val Creator: Double
+  var Encoding: MsoEncoding
+  val FolderSuffix: String
+  var OptimizeForBrowser: Boolean
+  var OrganizeInFolder: Boolean
+  val Parent: js.Any
+  var PixelsPerInch: Double
+  var RelyOnCSS: Boolean
+  var RelyOnVML: Boolean
+  var ScreenSize: MsoScreenSize
+  var TargetBrowser: MsoTargetBrowser
+  var UseLongFileNames: Boolean
   @JSName("Word.WebOptions_typekey")
-  var WordDotWebOptions_typekey: WebOptions = js.native
-  def UseDefaultFolderSuffix(): Unit = js.native
+  var WordDotWebOptions_typekey: WebOptions
+  def UseDefaultFolderSuffix(): Unit
+}
+
+object WebOptions {
+  @scala.inline
+  def apply(
+    AllowPNG: Boolean,
+    Application: Application,
+    BrowserLevel: WdBrowserLevel,
+    Creator: Double,
+    Encoding: MsoEncoding,
+    FolderSuffix: String,
+    OptimizeForBrowser: Boolean,
+    OrganizeInFolder: Boolean,
+    Parent: js.Any,
+    PixelsPerInch: Double,
+    RelyOnCSS: Boolean,
+    RelyOnVML: Boolean,
+    ScreenSize: MsoScreenSize,
+    TargetBrowser: MsoTargetBrowser,
+    UseDefaultFolderSuffix: () => Unit,
+    UseLongFileNames: Boolean,
+    WordDotWebOptions_typekey: WebOptions
+  ): WebOptions = {
+    val __obj = js.Dynamic.literal(AllowPNG = AllowPNG.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], BrowserLevel = BrowserLevel.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Encoding = Encoding.asInstanceOf[js.Any], FolderSuffix = FolderSuffix.asInstanceOf[js.Any], OptimizeForBrowser = OptimizeForBrowser.asInstanceOf[js.Any], OrganizeInFolder = OrganizeInFolder.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PixelsPerInch = PixelsPerInch.asInstanceOf[js.Any], RelyOnCSS = RelyOnCSS.asInstanceOf[js.Any], RelyOnVML = RelyOnVML.asInstanceOf[js.Any], ScreenSize = ScreenSize.asInstanceOf[js.Any], TargetBrowser = TargetBrowser.asInstanceOf[js.Any], UseDefaultFolderSuffix = js.Any.fromFunction0(UseDefaultFolderSuffix), UseLongFileNames = UseLongFileNames.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.WebOptions_typekey")(WordDotWebOptions_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebOptions]
+  }
 }
 

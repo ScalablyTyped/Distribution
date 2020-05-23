@@ -21,7 +21,7 @@ package object modelMod {
   ]
   type IdKey[M /* <: typings.reduxOrm.modelMod.AnyModel */] = typings.reduxOrm.tableMod.IdAttribute[typings.reduxOrm.modelMod.ModelClass[M]]
   type IdKeyOpt[M /* <: typings.reduxOrm.modelMod.AnyModel */] = typings.reduxOrm.modelMod.IdKey[M]
-  type IdOrModelLike[M /* <: typings.reduxOrm.modelMod.Model[org.scalablytyped.runtime.Instantiable0[typings.reduxOrm.modelMod.AnyModel], _] */] = typings.reduxOrm.modelMod.IdType[M] | typings.reduxOrm.AnonGetId[M]
+  type IdOrModelLike[M /* <: typings.reduxOrm.modelMod.Model[org.scalablytyped.runtime.Instantiable0[typings.reduxOrm.modelMod.AnyModel], _] */] = typings.reduxOrm.modelMod.IdType[M] | typings.reduxOrm.anon.GetId[M]
   type IdType[M /* <: typings.reduxOrm.modelMod.Model[org.scalablytyped.runtime.Instantiable0[typings.reduxOrm.modelMod.AnyModel], _] */] = scala.Double | (/* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.ModelFields<M>[any] */ js.Any)
   type ModelBlueprint[M /* <: typings.reduxOrm.modelMod.AnyModel */, Fields /* <: typings.std.Required[typings.reduxOrm.modelMod.ModelFields[M]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Fields ]: Fields[K] extends redux-orm.redux-orm/Model.AnyModel? redux-orm.redux-orm/Model.IdOrModelLike<Fields[K]> : Fields[K] extends redux-orm.redux-orm/QuerySet.MutableQuerySet<infer RM, {}>? std.ReadonlyArray<redux-orm.redux-orm/Model.IdOrModelLike<any>> : Fields[K]}

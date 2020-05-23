@@ -22,9 +22,13 @@ trait TeamMember extends js.Object {
 
 object TeamMember {
   @scala.inline
-  def apply(projectRole: Role, userArn: UserArn, remoteAccessAllowed: js.UndefOr[Boolean] = js.undefined): TeamMember = {
+  def apply(
+    projectRole: Role,
+    userArn: UserArn,
+    remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined
+  ): TeamMember = {
     val __obj = js.Dynamic.literal(projectRole = projectRole.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteAccessAllowed)) __obj.updateDynamic("remoteAccessAllowed")(remoteAccessAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteAccessAllowed)) __obj.updateDynamic("remoteAccessAllowed")(remoteAccessAllowed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamMember]
   }
 }

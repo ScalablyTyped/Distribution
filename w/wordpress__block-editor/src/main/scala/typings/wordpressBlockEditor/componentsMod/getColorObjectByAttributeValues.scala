@@ -1,0 +1,14 @@
+package typings.wordpressBlockEditor.componentsMod
+
+import typings.wordpressBlockEditor.anon.PickEditorColorcolor
+import typings.wordpressBlockEditor.mod.EditorColor
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@wordpress/block-editor/components", "getColorObjectByAttributeValues")
+@js.native
+object getColorObjectByAttributeValues extends js.Object {
+  def apply(colors: js.Array[EditorColor], definedColor: js.UndefOr[String], customColor: String): EditorColor | PickEditorColorcolor = js.native
+}
+

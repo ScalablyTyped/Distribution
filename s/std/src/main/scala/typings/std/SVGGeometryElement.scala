@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,4 @@ trait SVGGeometryElement extends SVGGraphicsElement {
   def isPointInStroke(): scala.Boolean = js.native
   def isPointInStroke(point: DOMPointInit): scala.Boolean = js.native
 }
-
-@JSGlobal("SVGGeometryElement")
-@js.native
-object SVGGeometryElement extends Instantiable0[SVGGeometryElement]
 

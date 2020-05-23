@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class NumberCls protected () extends Number {
   /**
-  		 * Constructs a new Sass number. Does not require use of the `new` keyword.
-  		 */
+    * Constructs a new Sass number. Does not require use of the `new` keyword.
+    */
   def this(value: Double) = this()
   def this(value: Double, unit: java.lang.String) = this()
   /* CompleteClass */

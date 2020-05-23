@@ -44,8 +44,8 @@ object TranslationModel {
   ): TranslationModel = {
     val __obj = js.Dynamic.literal(model_id = model_id.asInstanceOf[js.Any])
     if (base_model_id != null) __obj.updateDynamic("base_model_id")(base_model_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(customizable)) __obj.updateDynamic("customizable")(customizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(default_model)) __obj.updateDynamic("default_model")(default_model.asInstanceOf[js.Any])
+    if (!js.isUndefined(customizable)) __obj.updateDynamic("customizable")(customizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_model)) __obj.updateDynamic("default_model")(default_model.get.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])

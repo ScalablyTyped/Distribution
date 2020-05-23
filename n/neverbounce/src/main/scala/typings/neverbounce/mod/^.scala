@@ -1,7 +1,7 @@
 package typings.neverbounce.mod
 
-import typings.neverbounce.Anon0
-import typings.neverbounce.AnonInputType
+import typings.neverbounce.anon.InputType
+import typings.neverbounce.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ class ^ protected () extends NeverBounce {
 @js.native
 object ^ extends js.Object {
   var defaultConfig: Config = js.native
-  var job: AnonInputType = js.native
-  var result: Anon0 = js.native
+  var job: InputType = js.native
+  var result: `0` = js.native
 }
 

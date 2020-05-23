@@ -58,22 +58,22 @@ object GroupConfig {
     createMultipleCallback: /* items */ js.Array[GameObject] => Unit = null,
     defaultFrame: String | integer = null,
     defaultKey: String = null,
-    maxSize: Int | Double = null,
+    maxSize: js.UndefOr[Double] = js.undefined,
     name: String = null,
     removeCallback: /* item */ GameObject => Unit = null,
     runChildUpdate: js.UndefOr[Boolean] = js.undefined
   ): GroupConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (classType != null) __obj.updateDynamic("classType")(classType.asInstanceOf[js.Any])
     if (createCallback != null) __obj.updateDynamic("createCallback")(js.Any.fromFunction1(createCallback))
     if (createMultipleCallback != null) __obj.updateDynamic("createMultipleCallback")(js.Any.fromFunction1(createMultipleCallback))
     if (defaultFrame != null) __obj.updateDynamic("defaultFrame")(defaultFrame.asInstanceOf[js.Any])
     if (defaultKey != null) __obj.updateDynamic("defaultKey")(defaultKey.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (removeCallback != null) __obj.updateDynamic("removeCallback")(js.Any.fromFunction1(removeCallback))
-    if (!js.isUndefined(runChildUpdate)) __obj.updateDynamic("runChildUpdate")(runChildUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(runChildUpdate)) __obj.updateDynamic("runChildUpdate")(runChildUpdate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupConfig]
   }
 }

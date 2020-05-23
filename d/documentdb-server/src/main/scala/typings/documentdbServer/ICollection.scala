@@ -45,12 +45,12 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Create a document under the collection.
-  	 * @param collectionLink resource link of the collection under which the document will be created
-  	 * @param body of the document. The "id" property is required and will be generated automatically if not provided (this behaviour can be overriden using the CreateOptions). Any other properties can be added.
-  	 * @param optional create options
-  	 * @param optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Create a document under the collection.
+    * @param collectionLink resource link of the collection under which the document will be created
+    * @param body of the document. The "id" property is required and will be generated automatically if not provided (this behaviour can be overriden using the CreateOptions). Any other properties can be added.
+    * @param optional create options
+    * @param optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def createDocument(collectionLink: String, body: js.Object): Boolean = js.native
   def createDocument(
     collectionLink: String,
@@ -75,11 +75,11 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Delete an attachment.
-  	 * @param attachmentLink resource link of the attachment to be deleted
-  	 * @param options optional delete options.
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Delete an attachment.
+    * @param attachmentLink resource link of the attachment to be deleted
+    * @param options optional delete options.
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def deleteAttachment(attachmentLink: String): Boolean = js.native
   def deleteAttachment(
     attachmentLink: String,
@@ -102,11 +102,11 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Delete a document.
-  	 * @param documentLink resource link of the document to delete
-  	 * @param options optional delete options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Delete a document.
+    * @param documentLink resource link of the document to delete
+    * @param options optional delete options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def deleteDocument(documentLink: String): Boolean = js.native
   def deleteDocument(
     documentLink: String,
@@ -133,12 +133,12 @@ trait ICollection extends IQueryAPI {
   /** Get self link of current collection. */
   def getSelfLink(): String = js.native
   /**
-  	 * Execute a SQL query on the attachments for the document.
-  	 * @param documentLink resource link of the document whose attachments are being queried
-  	 * @param query SQL query string. This can also be a JSON object to pass in a parameterized query along with the values.
-  	 * @param options optional query options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Execute a SQL query on the attachments for the document.
+    * @param documentLink resource link of the document whose attachments are being queried
+    * @param query SQL query string. This can also be a JSON object to pass in a parameterized query along with the values.
+    * @param options optional query options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def queryAttachments(documentLink: String, query: String): Boolean = js.native
   def queryAttachments(
     documentLink: String,
@@ -186,12 +186,12 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Execute a SQL query on the documents of the collection.
-  	 * @param collectionLink resource link of the collection whose documents are being queried
-  	 * @param filterQuery SQL query string. This can also be a JSON object to pass in a parameterized query along with the values.
-  	 * @param options optional query options.
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Execute a SQL query on the documents of the collection.
+    * @param collectionLink resource link of the collection whose documents are being queried
+    * @param filterQuery SQL query string. This can also be a JSON object to pass in a parameterized query along with the values.
+    * @param options optional query options.
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def queryDocuments(collectionLink: String, filterQuery: String): Boolean = js.native
   def queryDocuments(
     collectionLink: String,
@@ -293,11 +293,11 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Read an Attachment.
-  	 * @param attachmenLink resource link of the attachment to read
-  	 * @param options optional read options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Read an Attachment.
+    * @param attachmenLink resource link of the attachment to read
+    * @param options optional read options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def readAttachment(attachmenLink: String): Boolean = js.native
   def readAttachment(
     attachmenLink: String,
@@ -320,11 +320,11 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Get all attachments for the document.
-  	 * @param documentLink resource link of the document whose attachments are being read
-  	 * @param options optional read feed options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Get all attachments for the document.
+    * @param documentLink resource link of the document whose attachments are being read
+    * @param options optional read feed options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def readAttachments(documentLink: String): Boolean = js.native
   def readAttachments(
     documentLink: String,
@@ -347,11 +347,11 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Read a document.
-  	 * @param documentLink resource link of the document to read
-  	 * @param options optional read options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Read a document.
+    * @param documentLink resource link of the document to read
+    * @param options optional read options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def readDocument(documentLink: String): Boolean = js.native
   def readDocument(
     documentLink: String,
@@ -389,11 +389,11 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Get all documents for the collection.
-  	 * @param collectionLink resource link of the collection whose documents are being read
-  	 * @param options optional read feed options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Get all documents for the collection.
+    * @param collectionLink resource link of the collection whose documents are being read
+    * @param options optional read feed options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def readDocuments(collectionLink: String): Boolean = js.native
   def readDocuments(
     collectionLink: String,
@@ -431,12 +431,12 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Replace an attachment.
-  	 * @param attachmentLink resource link of the attachment to be replaced
-  	 * @param attachment new attachment body
-  	 * @param options optional replace options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Replace an attachment.
+    * @param attachmentLink resource link of the attachment to be replaced
+    * @param attachment new attachment body
+    * @param options optional replace options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def replaceAttachment(attachmentLink: String, attachment: js.Object): Boolean = js.native
   def replaceAttachment(
     attachmentLink: String,
@@ -461,12 +461,12 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Replace a document.
-  	 * @param documentLink resource link of the document
-  	 * @param document new document body
-  	 * @param options optional replace options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Replace a document.
+    * @param documentLink resource link of the document
+    * @param document new document body
+    * @param options optional replace options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def replaceDocument(documentLink: String, document: js.Object): Boolean = js.native
   def replaceDocument(
     documentLink: String,
@@ -491,12 +491,12 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Upsert an attachment for the document.
-  	 * @param documentLink resource link of the document under which the attachment will be upserted
-  	 * @param body metadata that defines the attachment media like media, contentType. It can include any other properties as part of the metadata.
-  	 * @param options optional upsert options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Upsert an attachment for the document.
+    * @param documentLink resource link of the document under which the attachment will be upserted
+    * @param body metadata that defines the attachment media like media, contentType. It can include any other properties as part of the metadata.
+    * @param options optional upsert options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def upsertAttachment(documentLink: String, body: js.Object): Boolean = js.native
   def upsertAttachment(
     documentLink: String,
@@ -521,12 +521,12 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   /**
-  	 * Upsert a document under the collection.
-  	 * @param collectionLink resource link of the collection under which the document will be upserted
-  	 * @param body body of the document. The "id" property is required and will be generated automatically if not provided (this behaviour can be overriden using the UpsertOptions). Any other properties can be added.
-  	 * @param options optional upsert options
-  	 * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
-  	 */
+    * Upsert a document under the collection.
+    * @param collectionLink resource link of the collection under which the document will be upserted
+    * @param body body of the document. The "id" property is required and will be generated automatically if not provided (this behaviour can be overriden using the UpsertOptions). Any other properties can be added.
+    * @param options optional upsert options
+    * @param callback optional callback for the operation. If no callback is provided, any error in the operation will be thrown.
+    */
   def upsertDocument(collectionLink: String, body: js.Object): Boolean = js.native
   def upsertDocument(
     collectionLink: String,

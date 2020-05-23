@@ -24,10 +24,10 @@ trait GoogleActionsV2DevicesAndroidAppVersionFilter extends js.Object {
 
 object GoogleActionsV2DevicesAndroidAppVersionFilter {
   @scala.inline
-  def apply(maxVersion: Int | Double = null, minVersion: Int | Double = null): GoogleActionsV2DevicesAndroidAppVersionFilter = {
+  def apply(maxVersion: js.UndefOr[Double] = js.undefined, minVersion: js.UndefOr[Double] = js.undefined): GoogleActionsV2DevicesAndroidAppVersionFilter = {
     val __obj = js.Dynamic.literal()
-    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
-    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxVersion)) __obj.updateDynamic("maxVersion")(maxVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVersion)) __obj.updateDynamic("minVersion")(minVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2DevicesAndroidAppVersionFilter]
   }
 }

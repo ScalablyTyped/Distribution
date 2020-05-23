@@ -110,16 +110,11 @@ object Refund {
     source_transfer_reversal: String = null,
     transfer_reversal: String = null
   ): Refund = {
-    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], receipt_number = receipt_number.asInstanceOf[js.Any], source_transfer_reversal = source_transfer_reversal.asInstanceOf[js.Any], transfer_reversal = transfer_reversal.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (balance_transaction != null) __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (failure_balance_transaction != null) __obj.updateDynamic("failure_balance_transaction")(failure_balance_transaction.asInstanceOf[js.Any])
     if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (receipt_number != null) __obj.updateDynamic("receipt_number")(receipt_number.asInstanceOf[js.Any])
-    if (source_transfer_reversal != null) __obj.updateDynamic("source_transfer_reversal")(source_transfer_reversal.asInstanceOf[js.Any])
-    if (transfer_reversal != null) __obj.updateDynamic("transfer_reversal")(transfer_reversal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Refund]
   }
 }

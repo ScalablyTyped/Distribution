@@ -4,17 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("GlideLocale")
-@js.native
-class GlideLocale () extends js.Object {
-  def getDecimalSeparator(): String = js.native
-  def getGroupingSeparator(): String = js.native
+trait GlideLocale extends js.Object {
+  def getDecimalSeparator(): String
+  def getGroupingSeparator(): String
 }
 
-/* static members */
-@JSGlobal("GlideLocale")
-@js.native
-object GlideLocale extends js.Object {
-  def get(): GlideLocale = js.native
+object GlideLocale {
+  @scala.inline
+  def apply(getDecimalSeparator: () => String, getGroupingSeparator: () => String): GlideLocale = {
+    val __obj = js.Dynamic.literal(getDecimalSeparator = js.Any.fromFunction0(getDecimalSeparator), getGroupingSeparator = js.Any.fromFunction0(getGroupingSeparator))
+    __obj.asInstanceOf[GlideLocale]
+  }
 }
 

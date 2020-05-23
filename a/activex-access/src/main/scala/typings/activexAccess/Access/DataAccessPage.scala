@@ -5,29 +5,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.DataAccessPage")
-@js.native
-class DataAccessPage protected () extends js.Object {
+trait DataAccessPage extends js.Object {
   @JSName("Access.DataAccessPage_typekey")
-  var AccessDotDataAccessPage_typekey: DataAccessPage = js.native
-  val Application: typings.activexAccess.Access.Application = js.native
-  var ConnectionString: String = js.native
-  val CurrentSelection: js.Any = js.native
-  val CurrentView: Double = js.native
-  val Document: js.Any = js.native
-  val FieldListConnection: js.Any = js.native
-  val MSODSC: js.Any = js.native
-  val MailEnvelope: MsoEnvelope = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
-  var RemovePersonalInformation: Boolean = js.native
-  var Tag: String = js.native
-  var Visible: Boolean = js.native
-  val WebOptions: typings.activexAccess.Access.WebOptions = js.native
-  val WindowHeight: Double = js.native
-  val WindowWidth: Double = js.native
-  val _Name: String = js.native
-  def ApplyTheme(ThemeName: String): Unit = js.native
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  var AccessDotDataAccessPage_typekey: DataAccessPage
+  val Application: typings.activexAccess.Access.Application
+  var ConnectionString: String
+  val CurrentSelection: js.Any
+  val CurrentView: Double
+  val Document: js.Any
+  val FieldListConnection: js.Any
+  val MSODSC: js.Any
+  val MailEnvelope: MsoEnvelope
+  val Name: String
+  val Parent: js.Any
+  var RemovePersonalInformation: Boolean
+  var Tag: String
+  var Visible: Boolean
+  val WebOptions: typings.activexAccess.Access.WebOptions
+  val WindowHeight: Double
+  val WindowWidth: Double
+  val _Name: String
+  def ApplyTheme(ThemeName: String): Unit
+  def IsMemberSafe(dispid: Double): Boolean
+}
+
+object DataAccessPage {
+  @scala.inline
+  def apply(
+    AccessDotDataAccessPage_typekey: DataAccessPage,
+    Application: Application,
+    ApplyTheme: String => Unit,
+    ConnectionString: String,
+    CurrentSelection: js.Any,
+    CurrentView: Double,
+    Document: js.Any,
+    FieldListConnection: js.Any,
+    IsMemberSafe: Double => Boolean,
+    MSODSC: js.Any,
+    MailEnvelope: MsoEnvelope,
+    Name: String,
+    Parent: js.Any,
+    RemovePersonalInformation: Boolean,
+    Tag: String,
+    Visible: Boolean,
+    WebOptions: WebOptions,
+    WindowHeight: Double,
+    WindowWidth: Double,
+    _Name: String
+  ): DataAccessPage = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ApplyTheme = js.Any.fromFunction1(ApplyTheme), ConnectionString = ConnectionString.asInstanceOf[js.Any], CurrentSelection = CurrentSelection.asInstanceOf[js.Any], CurrentView = CurrentView.asInstanceOf[js.Any], Document = Document.asInstanceOf[js.Any], FieldListConnection = FieldListConnection.asInstanceOf[js.Any], IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), MSODSC = MSODSC.asInstanceOf[js.Any], MailEnvelope = MailEnvelope.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], RemovePersonalInformation = RemovePersonalInformation.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any], WebOptions = WebOptions.asInstanceOf[js.Any], WindowHeight = WindowHeight.asInstanceOf[js.Any], WindowWidth = WindowWidth.asInstanceOf[js.Any], _Name = _Name.asInstanceOf[js.Any])
+    __obj.updateDynamic("Access.DataAccessPage_typekey")(AccessDotDataAccessPage_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataAccessPage]
+  }
 }
 

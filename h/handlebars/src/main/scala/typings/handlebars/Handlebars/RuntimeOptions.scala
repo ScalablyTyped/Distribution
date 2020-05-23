@@ -38,9 +38,9 @@ object RuntimeOptions {
     partials: StringDictionary[HandlebarsTemplateDelegate[_]] = null
   ): RuntimeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCallsToHelperMissing)) __obj.updateDynamic("allowCallsToHelperMissing")(allowCallsToHelperMissing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowProtoMethodsByDefault)) __obj.updateDynamic("allowProtoMethodsByDefault")(allowProtoMethodsByDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowProtoPropertiesByDefault)) __obj.updateDynamic("allowProtoPropertiesByDefault")(allowProtoPropertiesByDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCallsToHelperMissing)) __obj.updateDynamic("allowCallsToHelperMissing")(allowCallsToHelperMissing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowProtoMethodsByDefault)) __obj.updateDynamic("allowProtoMethodsByDefault")(allowProtoMethodsByDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowProtoPropertiesByDefault)) __obj.updateDynamic("allowProtoPropertiesByDefault")(allowProtoPropertiesByDefault.get.asInstanceOf[js.Any])
     if (allowedProtoMethods != null) __obj.updateDynamic("allowedProtoMethods")(allowedProtoMethods.asInstanceOf[js.Any])
     if (allowedProtoProperties != null) __obj.updateDynamic("allowedProtoProperties")(allowedProtoProperties.asInstanceOf[js.Any])
     if (blockParams != null) __obj.updateDynamic("blockParams")(blockParams.asInstanceOf[js.Any])
@@ -48,7 +48,7 @@ object RuntimeOptions {
     if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
     if (depths != null) __obj.updateDynamic("depths")(depths.asInstanceOf[js.Any])
     if (helpers != null) __obj.updateDynamic("helpers")(helpers.asInstanceOf[js.Any])
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.get.asInstanceOf[js.Any])
     if (partials != null) __obj.updateDynamic("partials")(partials.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeOptions]
   }

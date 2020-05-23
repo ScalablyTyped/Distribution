@@ -19,7 +19,7 @@ trait ListFindingsRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[typings.awsSdk.guarddutyMod.MaxResults] = js.native
   /**
-    * You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the list action. For subsequent calls to the action fill nextToken in the request with the value of NextToken from the previous response to continue listing data.
+    * You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the list action. For subsequent calls to the action, fill nextToken in the request with the value of NextToken from the previous response to continue listing data.
     */
   var NextToken: js.UndefOr[String] = js.native
   /**
@@ -33,13 +33,13 @@ object ListFindingsRequest {
   def apply(
     DetectorId: DetectorId,
     FindingCriteria: FindingCriteria = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: String = null,
     SortCriteria: SortCriteria = null
   ): ListFindingsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
     if (FindingCriteria != null) __obj.updateDynamic("FindingCriteria")(FindingCriteria.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SortCriteria != null) __obj.updateDynamic("SortCriteria")(SortCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFindingsRequest]

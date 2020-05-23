@@ -39,7 +39,7 @@ trait ConfigurationPropertyDefinition[InputType, ResolvedType /* <: InputType */
 
 object ConfigurationPropertyDefinition {
   @scala.inline
-  def apply[InputType, ResolvedType /* <: InputType */, ServiceConfiguration /* <: StringDictionary[js.Any] */, ResolvedConfiguration /* <: ServiceConfiguration */](
+  def apply[InputType, ResolvedType, ServiceConfiguration, ResolvedConfiguration](
     apply: (ResolvedConfiguration, /* clientMiddlewareStack */ MiddlewareStack[js.Any, js.Any, js.Any]) => Unit = null,
     defaultProvider: /* config */ ResolvedConfiguration => ResolvedType = null,
     defaultValue: ResolvedType = null,
@@ -51,7 +51,7 @@ object ConfigurationPropertyDefinition {
     if (defaultProvider != null) __obj.updateDynamic("defaultProvider")(js.Any.fromFunction1(defaultProvider))
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction2(normalize))
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationPropertyDefinition[InputType, ResolvedType, ServiceConfiguration, ResolvedConfiguration]]
   }
 }

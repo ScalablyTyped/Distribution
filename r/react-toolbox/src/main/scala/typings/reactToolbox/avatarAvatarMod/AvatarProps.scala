@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait AvatarProps
   extends Props
      with /**
-  * Additional properties for component root element.
+  * Additional properties passed to inner input element.
   */
 /* key */ StringDictionary[js.Any] {
   /**
@@ -46,7 +46,7 @@ object AvatarProps {
   @scala.inline
   def apply(
     StringDictionary: /**
-    * Additional properties for component root element.
+    * Additional properties passed to inner input element.
     */
   /* key */ StringDictionary[js.Any] = null,
     children: ReactNode = null,
@@ -85,7 +85,7 @@ object AvatarProps {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover.asInstanceOf[js.Any])
+    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

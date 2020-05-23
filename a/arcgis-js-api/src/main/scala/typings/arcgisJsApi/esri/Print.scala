@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,8 +53,4 @@ trait Print extends Widget_ {
     */
   var viewModel: PrintViewModel = js.native
 }
-
-@JSGlobal("__esri.Print")
-@js.native
-object Print extends TopLevel[PrintConstructor]
 

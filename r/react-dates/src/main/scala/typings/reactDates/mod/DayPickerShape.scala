@@ -1,7 +1,7 @@
 package typings.reactDates.mod
 
-import typings.react.mod._Global_.JSX.Element
-import typings.reactDates.AnonIsVisible
+import typings.react.mod.global.JSX.Element
+import typings.reactDates.anon.IsVisible
 import typings.reactDates.mod.momentPropTypes.momentObj
 import typings.reactDates.reactDatesNumbers.`0`
 import typings.reactDates.reactDatesNumbers.`1`
@@ -42,7 +42,7 @@ trait DayPickerShape extends js.Object {
   var renderCalendarDay: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.undefined
   var renderCalendarInfo: js.UndefOr[js.Function0[String | Element]] = js.undefined
   var renderDayContents: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.undefined
-  var renderMonthElement: js.UndefOr[js.Function1[/* props */ AnonIsVisible, String | Element]] = js.undefined
+  var renderMonthElement: js.UndefOr[js.Function1[/* props */ IsVisible, String | Element]] = js.undefined
   var renderMonthText: js.UndefOr[js.Function1[/* day */ momentObj, String | Element]] = js.undefined
   var showKeyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -56,11 +56,11 @@ object DayPickerShape {
   def apply(
     calendarInfoPosition: CalendarInfoPositionShape = null,
     dayAriaLabelFormat: String = null,
-    daySize: Int | Double = null,
+    daySize: js.UndefOr[Double] = js.undefined,
     enableOutsideDays: js.UndefOr[Boolean] = js.undefined,
     firstDayOfWeek: `0` | `1` | `2` | `3` | `4` | `5` | `6` = null,
     hideKeyboardShortcutsPanel: js.UndefOr[Boolean] = js.undefined,
-    horizontalMonthPadding: Int | Double = null,
+    horizontalMonthPadding: js.UndefOr[Double] = js.undefined,
     initialVisibleMonth: () => momentObj = null,
     isFocused: js.UndefOr[Boolean] = js.undefined,
     isRTL: js.UndefOr[Boolean] = js.undefined,
@@ -68,7 +68,7 @@ object DayPickerShape {
     navNext: String | Element = null,
     navPrev: String | Element = null,
     noBorder: js.UndefOr[Boolean] = js.undefined,
-    numberOfMonths: Int | Double = null,
+    numberOfMonths: js.UndefOr[Double] = js.undefined,
     onBlur: () => Unit = null,
     onNextMonthClick: /* newCurrentMonth */ momentObj => Unit = null,
     onOutsideClick: /* e */ js.Any => Unit = null,
@@ -78,30 +78,30 @@ object DayPickerShape {
     renderCalendarDay: /* day */ momentObj => String | Element = null,
     renderCalendarInfo: () => String | Element = null,
     renderDayContents: /* day */ momentObj => String | Element = null,
-    renderMonthElement: /* props */ AnonIsVisible => String | Element = null,
+    renderMonthElement: /* props */ IsVisible => String | Element = null,
     renderMonthText: /* day */ momentObj => String | Element = null,
     showKeyboardShortcuts: js.UndefOr[Boolean] = js.undefined,
-    transitionDuration: Int | Double = null,
-    verticalHeight: Int | Double = null,
+    transitionDuration: js.UndefOr[Double] = js.undefined,
+    verticalHeight: js.UndefOr[Double] = js.undefined,
     weekDayFormat: String = null,
     withPortal: js.UndefOr[Boolean] = js.undefined
   ): DayPickerShape = {
     val __obj = js.Dynamic.literal()
     if (calendarInfoPosition != null) __obj.updateDynamic("calendarInfoPosition")(calendarInfoPosition.asInstanceOf[js.Any])
     if (dayAriaLabelFormat != null) __obj.updateDynamic("dayAriaLabelFormat")(dayAriaLabelFormat.asInstanceOf[js.Any])
-    if (daySize != null) __obj.updateDynamic("daySize")(daySize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableOutsideDays)) __obj.updateDynamic("enableOutsideDays")(enableOutsideDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(daySize)) __obj.updateDynamic("daySize")(daySize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableOutsideDays)) __obj.updateDynamic("enableOutsideDays")(enableOutsideDays.get.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideKeyboardShortcutsPanel)) __obj.updateDynamic("hideKeyboardShortcutsPanel")(hideKeyboardShortcutsPanel.asInstanceOf[js.Any])
-    if (horizontalMonthPadding != null) __obj.updateDynamic("horizontalMonthPadding")(horizontalMonthPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideKeyboardShortcutsPanel)) __obj.updateDynamic("hideKeyboardShortcutsPanel")(hideKeyboardShortcutsPanel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalMonthPadding)) __obj.updateDynamic("horizontalMonthPadding")(horizontalMonthPadding.get.asInstanceOf[js.Any])
     if (initialVisibleMonth != null) __obj.updateDynamic("initialVisibleMonth")(js.Any.fromFunction0(initialVisibleMonth))
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.get.asInstanceOf[js.Any])
     if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat.asInstanceOf[js.Any])
     if (navNext != null) __obj.updateDynamic("navNext")(navNext.asInstanceOf[js.Any])
     if (navPrev != null) __obj.updateDynamic("navPrev")(navPrev.asInstanceOf[js.Any])
-    if (!js.isUndefined(noBorder)) __obj.updateDynamic("noBorder")(noBorder.asInstanceOf[js.Any])
-    if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
+    if (!js.isUndefined(noBorder)) __obj.updateDynamic("noBorder")(noBorder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfMonths)) __obj.updateDynamic("numberOfMonths")(numberOfMonths.get.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onNextMonthClick != null) __obj.updateDynamic("onNextMonthClick")(js.Any.fromFunction1(onNextMonthClick))
     if (onOutsideClick != null) __obj.updateDynamic("onOutsideClick")(js.Any.fromFunction1(onOutsideClick))
@@ -113,11 +113,11 @@ object DayPickerShape {
     if (renderDayContents != null) __obj.updateDynamic("renderDayContents")(js.Any.fromFunction1(renderDayContents))
     if (renderMonthElement != null) __obj.updateDynamic("renderMonthElement")(js.Any.fromFunction1(renderMonthElement))
     if (renderMonthText != null) __obj.updateDynamic("renderMonthText")(js.Any.fromFunction1(renderMonthText))
-    if (!js.isUndefined(showKeyboardShortcuts)) __obj.updateDynamic("showKeyboardShortcuts")(showKeyboardShortcuts.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
-    if (verticalHeight != null) __obj.updateDynamic("verticalHeight")(verticalHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(showKeyboardShortcuts)) __obj.updateDynamic("showKeyboardShortcuts")(showKeyboardShortcuts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalHeight)) __obj.updateDynamic("verticalHeight")(verticalHeight.get.asInstanceOf[js.Any])
     if (weekDayFormat != null) __obj.updateDynamic("weekDayFormat")(weekDayFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(withPortal)) __obj.updateDynamic("withPortal")(withPortal.asInstanceOf[js.Any])
+    if (!js.isUndefined(withPortal)) __obj.updateDynamic("withPortal")(withPortal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayPickerShape]
   }
 }

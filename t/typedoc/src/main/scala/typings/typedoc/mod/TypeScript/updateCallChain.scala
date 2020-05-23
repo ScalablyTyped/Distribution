@@ -14,29 +14,8 @@ object updateCallChain extends js.Object {
   def apply(
     node: CallChain,
     expression: Expression,
-    questionDotToken: js.UndefOr[scala.Nothing],
-    typeArguments: js.UndefOr[scala.Nothing],
-    argumentsArray: js.Array[Expression]
-  ): CallChain = js.native
-  def apply(
-    node: CallChain,
-    expression: Expression,
-    questionDotToken: js.UndefOr[scala.Nothing],
-    typeArguments: js.Array[TypeNode],
-    argumentsArray: js.Array[Expression]
-  ): CallChain = js.native
-  def apply(
-    node: CallChain,
-    expression: Expression,
-    questionDotToken: QuestionDotToken,
-    typeArguments: js.UndefOr[scala.Nothing],
-    argumentsArray: js.Array[Expression]
-  ): CallChain = js.native
-  def apply(
-    node: CallChain,
-    expression: Expression,
-    questionDotToken: QuestionDotToken,
-    typeArguments: js.Array[TypeNode],
+    questionDotToken: js.UndefOr[QuestionDotToken],
+    typeArguments: js.UndefOr[js.Array[TypeNode]],
     argumentsArray: js.Array[Expression]
   ): CallChain = js.native
 }

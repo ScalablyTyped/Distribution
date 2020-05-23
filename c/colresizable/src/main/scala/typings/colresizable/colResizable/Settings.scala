@@ -140,7 +140,7 @@ object Settings {
     liveDrag: js.UndefOr[Boolean] = js.undefined,
     marginLeft: String = null,
     marginRight: String = null,
-    minWidth: Int | Double = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
     onDrag: /* e */ JQueryMouseEventObject => Unit = null,
     onResize: /* e */ JQueryMouseEventObject => Unit = null,
     partialRefresh: js.UndefOr[Boolean] = js.undefined,
@@ -148,23 +148,23 @@ object Settings {
     resizeMode: fit | flex | overflow = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.get.asInstanceOf[js.Any])
     if (disabledColumns != null) __obj.updateDynamic("disabledColumns")(disabledColumns.asInstanceOf[js.Any])
     if (dragCursor != null) __obj.updateDynamic("dragCursor")(dragCursor.asInstanceOf[js.Any])
     if (draggingClass != null) __obj.updateDynamic("draggingClass")(draggingClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (!js.isUndefined(flush)) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flush)) __obj.updateDynamic("flush")(flush.get.asInstanceOf[js.Any])
     if (gripInnerHtml != null) __obj.updateDynamic("gripInnerHtml")(gripInnerHtml.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerOnly)) __obj.updateDynamic("headerOnly")(headerOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerOnly)) __obj.updateDynamic("headerOnly")(headerOnly.get.asInstanceOf[js.Any])
     if (hoverCursor != null) __obj.updateDynamic("hoverCursor")(hoverCursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveDrag)) __obj.updateDynamic("liveDrag")(liveDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveDrag)) __obj.updateDynamic("liveDrag")(liveDrag.get.asInstanceOf[js.Any])
     if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
     if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
-    if (!js.isUndefined(partialRefresh)) __obj.updateDynamic("partialRefresh")(partialRefresh.asInstanceOf[js.Any])
-    if (!js.isUndefined(postbackSafe)) __obj.updateDynamic("postbackSafe")(postbackSafe.asInstanceOf[js.Any])
+    if (!js.isUndefined(partialRefresh)) __obj.updateDynamic("partialRefresh")(partialRefresh.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(postbackSafe)) __obj.updateDynamic("postbackSafe")(postbackSafe.get.asInstanceOf[js.Any])
     if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }

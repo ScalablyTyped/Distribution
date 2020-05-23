@@ -22,10 +22,14 @@ trait SetTimerAction extends js.Object {
 
 object SetTimerAction {
   @scala.inline
-  def apply(timerName: TimerName, durationExpression: VariableValue = null, seconds: Int | Double = null): SetTimerAction = {
+  def apply(
+    timerName: TimerName,
+    durationExpression: VariableValue = null,
+    seconds: js.UndefOr[Seconds] = js.undefined
+  ): SetTimerAction = {
     val __obj = js.Dynamic.literal(timerName = timerName.asInstanceOf[js.Any])
     if (durationExpression != null) __obj.updateDynamic("durationExpression")(durationExpression.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTimerAction]
   }
 }

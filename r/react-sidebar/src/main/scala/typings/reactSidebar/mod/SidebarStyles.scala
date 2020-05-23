@@ -1,6 +1,6 @@
 package typings.reactSidebar.mod
 
-import typings.reactSidebar.PartialCSSStyleDeclaratio
+import typings.reactSidebar.anon.PartialCSSStyleDeclaratio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

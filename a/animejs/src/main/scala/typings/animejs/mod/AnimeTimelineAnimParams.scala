@@ -27,7 +27,7 @@ object AnimeTimelineAnimParams {
     loopBegin: /* anim */ AnimeInstance => Unit = null,
     loopComplete: /* anim */ AnimeInstance => Unit = null,
     round: Double | Boolean | FunctionBasedParameter = null,
-    targets: AnimeTarget | js.Array[AnimeTarget] = null,
+    targets: js.UndefOr[Null | AnimeTarget | js.Array[AnimeTarget]] = js.undefined,
     update: /* anim */ AnimeInstance => Unit = null
   ): AnimeTimelineAnimParams = {
     val __obj = js.Dynamic.literal(timelineOffset = timelineOffset.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object AnimeTimelineAnimParams {
     if (loopBegin != null) __obj.updateDynamic("loopBegin")(js.Any.fromFunction1(loopBegin))
     if (loopComplete != null) __obj.updateDynamic("loopComplete")(js.Any.fromFunction1(loopComplete))
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    if (!js.isUndefined(targets)) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     __obj.asInstanceOf[AnimeTimelineAnimParams]
   }

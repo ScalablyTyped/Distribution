@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FollowCameraInputsManager")
 @js.native
-class FollowCameraInputsManager protected () extends CameraInputsManager[FollowCamera] {
-  /**
-    * Instantiates a new FollowCameraInputsManager.
-    * @param camera Defines the camera the inputs belong to
-    */
-  def this(camera: FollowCamera) = this()
+trait FollowCameraInputsManager extends CameraInputsManager[FollowCamera] {
   /**
     * Add keyboard input support to the input manager.
     * @returns the current input manager

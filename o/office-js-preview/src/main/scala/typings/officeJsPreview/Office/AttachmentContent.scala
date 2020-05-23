@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox 1.8]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait AttachmentContent extends js.Object {
@@ -23,17 +23,17 @@ trait AttachmentContent extends js.Object {
   var content: String
   /**
     * The string format to use for an attachment's content.
-    * 
+    *
     * For file attachments, the formatting is a base64-encoded string.
-    * 
+    *
     * For item attachments that represent messages and were attached by drag-and-drop or "Attach Item",
     * the formatting is a string representing an .eml formatted file.
     * **Important**: If a message item was attached by drag-and-drop in Outlook on the web, then `getAttachmentContentAsync` throws an error.
-    * 
+    *
     * For item attachments that represent calendar items and were attached by drag-and-drop or "Attach Item",
     * the formatting is a string representing an .icalendar file.
     * **Important**: If a calendar item was attached by drag-and-drop in Outlook on the web, then `getAttachmentContentAsync` throws an error.
-    * 
+    *
     * For cloud attachments, the formatting is a URL string.
     */
   var format: AttachmentContentFormat | String

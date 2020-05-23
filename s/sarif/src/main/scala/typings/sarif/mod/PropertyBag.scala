@@ -18,13 +18,7 @@ trait PropertyBag
 
 object PropertyBag {
   @scala.inline
-  def apply(
-    StringDictionary: /**
-    * Additional Properties
-    */
-  /* key */ StringDictionary[js.Any] = null,
-    tags: js.Array[String] = null
-  ): PropertyBag = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, tags: js.Array[String] = null): PropertyBag = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

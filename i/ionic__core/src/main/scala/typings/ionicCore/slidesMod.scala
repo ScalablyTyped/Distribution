@@ -1,6 +1,6 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonSlidesElement
+import typings.ionicCore.componentsMod.global.HTMLIonSlidesElement
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import scala.scalajs.js
@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 object slidesMod extends js.Object {
   @js.native
   class Slides () extends ComponentInterface {
+    var didInit: js.Any = js.native
     var el: HTMLIonSlidesElement = js.native
     var initSwiper: js.Any = js.native
     /**
@@ -98,10 +99,11 @@ object slidesMod extends js.Object {
     var scrollbarEl: js.UndefOr[js.Any] = js.native
     var swiper: js.Any = js.native
     var swiperReady: js.Any = js.native
+    var syncSwiper: js.UndefOr[js.Any] = js.native
     @JSName("connectedCallback")
     def connectedCallback_MSlides(): Unit = js.native
     @JSName("disconnectedCallback")
-    def disconnectedCallback_MSlides(): js.Promise[Unit] = js.native
+    def disconnectedCallback_MSlides(): Unit = js.native
     /**
       * Get the index of the active slide.
       */

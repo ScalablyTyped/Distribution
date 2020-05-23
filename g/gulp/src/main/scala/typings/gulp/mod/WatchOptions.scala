@@ -26,39 +26,39 @@ object WatchOptions {
     alwaysStat: js.UndefOr[Boolean] = js.undefined,
     atomic: Boolean | Double = null,
     awaitWriteFinish: AwaitWriteFinishOptions | Boolean = null,
-    binaryInterval: Int | Double = null,
+    binaryInterval: js.UndefOr[Double] = js.undefined,
     cwd: String = null,
-    delay: Int | Double = null,
-    depth: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    depth: js.UndefOr[Double] = js.undefined,
     disableGlobbing: js.UndefOr[Boolean] = js.undefined,
     followSymlinks: js.UndefOr[Boolean] = js.undefined,
     ignoreInitial: js.UndefOr[Boolean] = js.undefined,
     ignorePermissionErrors: js.UndefOr[Boolean] = js.undefined,
     ignored: js.Any = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     persistent: js.UndefOr[Boolean] = js.undefined,
     queue: js.UndefOr[Boolean] = js.undefined,
     useFsEvents: js.UndefOr[Boolean] = js.undefined,
     usePolling: js.UndefOr[Boolean] = js.undefined
   ): WatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysStat)) __obj.updateDynamic("alwaysStat")(alwaysStat.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysStat)) __obj.updateDynamic("alwaysStat")(alwaysStat.get.asInstanceOf[js.Any])
     if (atomic != null) __obj.updateDynamic("atomic")(atomic.asInstanceOf[js.Any])
     if (awaitWriteFinish != null) __obj.updateDynamic("awaitWriteFinish")(awaitWriteFinish.asInstanceOf[js.Any])
-    if (binaryInterval != null) __obj.updateDynamic("binaryInterval")(binaryInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(binaryInterval)) __obj.updateDynamic("binaryInterval")(binaryInterval.get.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableGlobbing)) __obj.updateDynamic("disableGlobbing")(disableGlobbing.asInstanceOf[js.Any])
-    if (!js.isUndefined(followSymlinks)) __obj.updateDynamic("followSymlinks")(followSymlinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreInitial)) __obj.updateDynamic("ignoreInitial")(ignoreInitial.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePermissionErrors)) __obj.updateDynamic("ignorePermissionErrors")(ignorePermissionErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableGlobbing)) __obj.updateDynamic("disableGlobbing")(disableGlobbing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followSymlinks)) __obj.updateDynamic("followSymlinks")(followSymlinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreInitial)) __obj.updateDynamic("ignoreInitial")(ignoreInitial.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePermissionErrors)) __obj.updateDynamic("ignorePermissionErrors")(ignorePermissionErrors.get.asInstanceOf[js.Any])
     if (ignored != null) __obj.updateDynamic("ignored")(ignored.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
-    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFsEvents)) __obj.updateDynamic("useFsEvents")(useFsEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePolling)) __obj.updateDynamic("usePolling")(usePolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFsEvents)) __obj.updateDynamic("useFsEvents")(useFsEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePolling)) __obj.updateDynamic("usePolling")(usePolling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchOptions]
   }
 }

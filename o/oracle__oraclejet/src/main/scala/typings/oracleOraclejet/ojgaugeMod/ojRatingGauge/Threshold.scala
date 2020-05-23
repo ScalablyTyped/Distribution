@@ -17,13 +17,13 @@ object Threshold {
   def apply(
     borderColor: String = null,
     color: String = null,
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     shortDesc: String = null
   ): Threshold = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Threshold]
   }

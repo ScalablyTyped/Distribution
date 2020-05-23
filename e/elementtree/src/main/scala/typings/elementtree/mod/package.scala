@@ -11,5 +11,5 @@ package object mod {
     /* text */ js.UndefOr[typings.elementtree.mod.ElementText], 
     typings.elementtree.mod.Element
   ]) | java.lang.String
-  type ElementText = typings.elementtree.AnonToString | java.lang.String
+  type ElementText = typings.elementtree.anon.ToString | java.lang.String
 }

@@ -27,7 +27,7 @@ object CredentialsOptions {
     clientId: String = null,
     clientSecret: String = null,
     constructor: /* options */ js.UndefOr[CredentialsOptions] => js.Any = null,
-    expiration: Int | Double = null,
+    expiration: js.UndefOr[Double] = js.undefined,
     password: String = null,
     redirectUrl: String = null,
     refreshToken: String = null,
@@ -40,7 +40,7 @@ object CredentialsOptions {
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
     if (constructor != null) __obj.updateDynamic("constructor")(js.Any.fromFunction1(constructor))
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiration)) __obj.updateDynamic("expiration")(expiration.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])

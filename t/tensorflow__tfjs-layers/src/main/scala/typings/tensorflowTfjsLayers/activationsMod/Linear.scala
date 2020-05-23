@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.activationsMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.linear
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ class Linear () extends Activation
 @js.native
 object Linear extends js.Object {
   /** @nocollapse */
-  val className: linear = js.native
+  val className: /* "linear" */ String = js.native
 }
 

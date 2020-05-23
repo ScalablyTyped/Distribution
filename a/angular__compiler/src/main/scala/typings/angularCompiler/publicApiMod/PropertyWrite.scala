@@ -11,6 +11,7 @@ class PropertyWrite protected ()
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
+    nameSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
     receiver: typings.angularCompiler.astMod.AST,
     name: String,
     value: typings.angularCompiler.astMod.AST

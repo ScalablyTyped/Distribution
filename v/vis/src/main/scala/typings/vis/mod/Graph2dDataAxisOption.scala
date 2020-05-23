@@ -25,13 +25,13 @@ object Graph2dDataAxisOption {
   @scala.inline
   def apply(
     alignZeros: js.UndefOr[Boolean] = js.undefined,
-    iconWidth: Int | Double = null,
+    iconWidth: js.UndefOr[Double] = js.undefined,
     icons: js.UndefOr[Boolean] = js.undefined,
-    labelOffsetX: Int | Double = null,
-    labelOffsetY: Int | Double = null,
+    labelOffsetX: js.UndefOr[Double] = js.undefined,
+    labelOffsetY: js.UndefOr[Double] = js.undefined,
     left: DataAxisSideOption = null,
-    majorLinesOffset: Int | Double = null,
-    minorLinesOffset: Int | Double = null,
+    majorLinesOffset: js.UndefOr[Double] = js.undefined,
+    minorLinesOffset: js.UndefOr[Double] = js.undefined,
     orientation: TimelineOptionsOrientationType = null,
     right: DataAxisSideOption = null,
     showMajorLabels: js.UndefOr[Boolean] = js.undefined,
@@ -40,19 +40,19 @@ object Graph2dDataAxisOption {
     width: String = null
   ): Graph2dDataAxisOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignZeros)) __obj.updateDynamic("alignZeros")(alignZeros.asInstanceOf[js.Any])
-    if (iconWidth != null) __obj.updateDynamic("iconWidth")(iconWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(icons)) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (labelOffsetX != null) __obj.updateDynamic("labelOffsetX")(labelOffsetX.asInstanceOf[js.Any])
-    if (labelOffsetY != null) __obj.updateDynamic("labelOffsetY")(labelOffsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignZeros)) __obj.updateDynamic("alignZeros")(alignZeros.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconWidth)) __obj.updateDynamic("iconWidth")(iconWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icons)) __obj.updateDynamic("icons")(icons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelOffsetX)) __obj.updateDynamic("labelOffsetX")(labelOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelOffsetY)) __obj.updateDynamic("labelOffsetY")(labelOffsetY.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (majorLinesOffset != null) __obj.updateDynamic("majorLinesOffset")(majorLinesOffset.asInstanceOf[js.Any])
-    if (minorLinesOffset != null) __obj.updateDynamic("minorLinesOffset")(minorLinesOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(majorLinesOffset)) __obj.updateDynamic("majorLinesOffset")(majorLinesOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorLinesOffset)) __obj.updateDynamic("minorLinesOffset")(minorLinesOffset.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMajorLabels)) __obj.updateDynamic("showMajorLabels")(showMajorLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinorLabels)) __obj.updateDynamic("showMinorLabels")(showMinorLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMajorLabels)) __obj.updateDynamic("showMajorLabels")(showMajorLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMinorLabels)) __obj.updateDynamic("showMinorLabels")(showMinorLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graph2dDataAxisOption]
   }

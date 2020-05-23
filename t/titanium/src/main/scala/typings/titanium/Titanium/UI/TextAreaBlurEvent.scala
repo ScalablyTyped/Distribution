@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when this text area loses focus.
-		 */
+  * Fired when this text area loses focus.
+  */
 trait TextAreaBlurEvent extends TextAreaBaseEvent {
   /**
-  			 * Value of this text area.
-  			 */
+    * Value of this text area.
+    */
   var value: String
 }
 

@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojcolorspectrumMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonLabelHue
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.Element
+import typings.oracleOraclejet.anon.LabelHue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojcolorMod.^
 import typings.oracleOraclejet.ojcolorspectrumMod.ojColorSpectrum.ojAnimateEnd
@@ -29,7 +29,7 @@ trait ojColorSpectrum extends editableValue[^, ojColorSpectrumSettableProperties
   var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[^], _]) | Null = js.native
   val transientValue: ^ = js.native
   @JSName("translations")
-  var translations_ojColorSpectrum: AnonLabelHue = js.native
+  var translations_ojColorSpectrum: LabelHue = js.native
   @JSName("addEventListener")
   def addEventListener_labelledByChanged(
     `type`: labelledByChanged,
@@ -64,13 +64,13 @@ trait ojColorSpectrum extends editableValue[^, ojColorSpectrumSettableProperties
   @JSName("setProperty")
   def setProperty_transientValue(property: typings.oracleOraclejet.oracleOraclejetStrings.transientValue, value: ^): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonLabelHue): Unit = js.native
+  def setProperty_translations(property: translations, value: LabelHue): Unit = js.native
 }
 
 @JSImport("@oracle/oraclejet/ojcolorspectrum", "ojColorSpectrum")
 @js.native
 object ojColorSpectrum extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[Element]
 }
 

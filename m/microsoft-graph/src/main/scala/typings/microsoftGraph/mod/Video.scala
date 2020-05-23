@@ -30,28 +30,28 @@ trait Video extends js.Object {
 object Video {
   @scala.inline
   def apply(
-    audioBitsPerSample: Int | Double = null,
-    audioChannels: Int | Double = null,
+    audioBitsPerSample: js.UndefOr[Double] = js.undefined,
+    audioChannels: js.UndefOr[Double] = js.undefined,
     audioFormat: String = null,
-    audioSamplesPerSecond: Int | Double = null,
-    bitrate: Int | Double = null,
-    duration: Int | Double = null,
+    audioSamplesPerSecond: js.UndefOr[Double] = js.undefined,
+    bitrate: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     fourCC: String = null,
-    frameRate: Int | Double = null,
-    height: Int | Double = null,
-    width: Int | Double = null
+    frameRate: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): Video = {
     val __obj = js.Dynamic.literal()
-    if (audioBitsPerSample != null) __obj.updateDynamic("audioBitsPerSample")(audioBitsPerSample.asInstanceOf[js.Any])
-    if (audioChannels != null) __obj.updateDynamic("audioChannels")(audioChannels.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioBitsPerSample)) __obj.updateDynamic("audioBitsPerSample")(audioBitsPerSample.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioChannels)) __obj.updateDynamic("audioChannels")(audioChannels.get.asInstanceOf[js.Any])
     if (audioFormat != null) __obj.updateDynamic("audioFormat")(audioFormat.asInstanceOf[js.Any])
-    if (audioSamplesPerSecond != null) __obj.updateDynamic("audioSamplesPerSecond")(audioSamplesPerSecond.asInstanceOf[js.Any])
-    if (bitrate != null) __obj.updateDynamic("bitrate")(bitrate.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioSamplesPerSecond)) __obj.updateDynamic("audioSamplesPerSecond")(audioSamplesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitrate)) __obj.updateDynamic("bitrate")(bitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (fourCC != null) __obj.updateDynamic("fourCC")(fourCC.asInstanceOf[js.Any])
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameRate)) __obj.updateDynamic("frameRate")(frameRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Video]
   }
 }

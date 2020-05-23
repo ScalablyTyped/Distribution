@@ -12,22 +12,33 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
-@JSGlobal("Excel.DataConnectionCollection")
-@js.native
-class DataConnectionCollection () extends ClientObject {
+trait DataConnectionCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
-  var context_DataConnectionCollection: RequestContext = js.native
+  var context_DataConnectionCollection: RequestContext
   /**
     * Refreshes all the Data Connections in the collection.
     *
     * [Api set: ExcelApi 1.7]
     */
-  def refreshAll(): Unit = js.native
+  def refreshAll(): Unit
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.DataConnectionCollection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataConnectionCollectionData`) that contains shallow copies of any loaded child properties from the original object.
     */
-  def toJSON(): StringDictionary[String] = js.native
+  def toJSON(): StringDictionary[String]
+}
+
+object DataConnectionCollection {
+  @scala.inline
+  def apply(
+    context: RequestContext,
+    isNullObject: Boolean,
+    refreshAll: () => Unit,
+    toJSON: () => StringDictionary[String]
+  ): DataConnectionCollection = {
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], isNullObject = isNullObject.asInstanceOf[js.Any], refreshAll = js.Any.fromFunction0(refreshAll), toJSON = js.Any.fromFunction0(toJSON))
+    __obj.asInstanceOf[DataConnectionCollection]
+  }
 }
 

@@ -19,7 +19,7 @@ object Stream {
   @scala.inline
   def apply(
     closeOnExit: js.UndefOr[Boolean] = js.undefined,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     level: LogLevel = null,
     path: String = null,
     period: String = null,
@@ -27,8 +27,8 @@ object Stream {
     `type`: String = null
   ): Stream = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closeOnExit)) __obj.updateDynamic("closeOnExit")(closeOnExit.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnExit)) __obj.updateDynamic("closeOnExit")(closeOnExit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])

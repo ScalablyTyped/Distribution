@@ -81,7 +81,7 @@ object Person {
     if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (imAddress != null) __obj.updateDynamic("imAddress")(imAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFavorite)) __obj.updateDynamic("isFavorite")(isFavorite.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFavorite)) __obj.updateDynamic("isFavorite")(isFavorite.get.asInstanceOf[js.Any])
     if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle.asInstanceOf[js.Any])
     if (officeLocation != null) __obj.updateDynamic("officeLocation")(officeLocation.asInstanceOf[js.Any])
     if (personNotes != null) __obj.updateDynamic("personNotes")(personNotes.asInstanceOf[js.Any])

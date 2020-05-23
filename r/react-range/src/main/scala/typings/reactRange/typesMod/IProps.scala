@@ -1,8 +1,8 @@
 package typings.reactRange.typesMod
 
 import typings.react.mod.ReactNode
-import typings.reactRange.AnonChildren
-import typings.reactRange.AnonIndex
+import typings.reactRange.anon.Children
+import typings.reactRange.anon.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +18,8 @@ trait IProps extends js.Object {
   var step: Double
   var values: js.Array[Double]
   def onChange(values: js.Array[Double]): Unit
-  def renderThumb(params: AnonIndex): ReactNode
-  def renderTrack(params: AnonChildren): ReactNode
+  def renderThumb(params: Index): ReactNode
+  def renderTrack(params: Children): ReactNode
 }
 
 object IProps {
@@ -31,8 +31,8 @@ object IProps {
     max: Double,
     min: Double,
     onChange: js.Array[Double] => Unit,
-    renderThumb: AnonIndex => ReactNode,
-    renderTrack: AnonChildren => ReactNode,
+    renderThumb: Index => ReactNode,
+    renderTrack: Children => ReactNode,
     rtl: Boolean,
     step: Double,
     values: js.Array[Double],

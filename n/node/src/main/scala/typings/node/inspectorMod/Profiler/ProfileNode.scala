@@ -42,13 +42,13 @@ object ProfileNode {
     id: Double,
     children: js.Array[Double] = null,
     deoptReason: String = null,
-    hitCount: Int | Double = null,
+    hitCount: js.UndefOr[Double] = js.undefined,
     positionTicks: js.Array[PositionTickInfo] = null
   ): ProfileNode = {
     val __obj = js.Dynamic.literal(callFrame = callFrame.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (deoptReason != null) __obj.updateDynamic("deoptReason")(deoptReason.asInstanceOf[js.Any])
-    if (hitCount != null) __obj.updateDynamic("hitCount")(hitCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitCount)) __obj.updateDynamic("hitCount")(hitCount.get.asInstanceOf[js.Any])
     if (positionTicks != null) __obj.updateDynamic("positionTicks")(positionTicks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileNode]
   }

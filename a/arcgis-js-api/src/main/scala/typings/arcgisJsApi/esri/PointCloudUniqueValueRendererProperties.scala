@@ -47,7 +47,7 @@ object PointCloudUniqueValueRendererProperties {
     fieldTransformType: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten` = null,
     legendOptions: PointCloudUniqueValueRendererLegendOptions = null,
     pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
-    pointsPerInch: Int | Double = null
+    pointsPerInch: js.UndefOr[Double] = js.undefined
   ): PointCloudUniqueValueRendererProperties = {
     val __obj = js.Dynamic.literal()
     if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation.asInstanceOf[js.Any])
@@ -56,7 +56,7 @@ object PointCloudUniqueValueRendererProperties {
     if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm.asInstanceOf[js.Any])
-    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsPerInch)) __obj.updateDynamic("pointsPerInch")(pointsPerInch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudUniqueValueRendererProperties]
   }
 }

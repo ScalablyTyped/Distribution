@@ -1,6 +1,6 @@
 package typings.reResizable.mod
 
-import typings.reResizable.AnonX
+import typings.reResizable.anon.X
 import typings.reResizable.reResizableStrings.parent
 import typings.reResizable.reResizableStrings.window
 import typings.reResizable.resizerMod.Direction
@@ -40,7 +40,7 @@ trait ResizableProps extends js.Object {
   var resizeRatio: js.UndefOr[Double] = js.undefined
   var scale: js.UndefOr[Double] = js.undefined
   var size: js.UndefOr[Size] = js.undefined
-  var snap: js.UndefOr[AnonX] = js.undefined
+  var snap: js.UndefOr[X] = js.undefined
   var snapGap: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
@@ -60,8 +60,8 @@ object ResizableProps {
     handleWrapperClass: String = null,
     handleWrapperStyle: CSSProperties = null,
     lockAspectRatio: Boolean | Double = null,
-    lockAspectRatioExtraHeight: Int | Double = null,
-    lockAspectRatioExtraWidth: Int | Double = null,
+    lockAspectRatioExtraHeight: js.UndefOr[Double] = js.undefined,
+    lockAspectRatioExtraWidth: js.UndefOr[Double] = js.undefined,
     maxHeight: String | Double = null,
     maxWidth: String | Double = null,
     minHeight: String | Double = null,
@@ -69,11 +69,11 @@ object ResizableProps {
     onResize: (/* event */ MouseEvent | TouchEvent, /* direction */ Direction, /* elementRef */ HTMLDivElement, /* delta */ NumberSize) => Unit = null,
     onResizeStart: (/* e */ (typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent]) | typings.react.mod.TouchEvent[HTMLDivElement], /* dir */ Direction, /* elementRef */ HTMLDivElement) => Unit | Boolean = null,
     onResizeStop: (/* event */ MouseEvent | TouchEvent, /* direction */ Direction, /* elementRef */ HTMLDivElement, /* delta */ NumberSize) => Unit = null,
-    resizeRatio: Int | Double = null,
-    scale: Int | Double = null,
+    resizeRatio: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined,
     size: Size = null,
-    snap: AnonX = null,
-    snapGap: Int | Double = null,
+    snap: X = null,
+    snapGap: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null
   ): ResizableProps = {
     val __obj = js.Dynamic.literal()
@@ -89,8 +89,8 @@ object ResizableProps {
     if (handleWrapperClass != null) __obj.updateDynamic("handleWrapperClass")(handleWrapperClass.asInstanceOf[js.Any])
     if (handleWrapperStyle != null) __obj.updateDynamic("handleWrapperStyle")(handleWrapperStyle.asInstanceOf[js.Any])
     if (lockAspectRatio != null) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.asInstanceOf[js.Any])
-    if (lockAspectRatioExtraHeight != null) __obj.updateDynamic("lockAspectRatioExtraHeight")(lockAspectRatioExtraHeight.asInstanceOf[js.Any])
-    if (lockAspectRatioExtraWidth != null) __obj.updateDynamic("lockAspectRatioExtraWidth")(lockAspectRatioExtraWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockAspectRatioExtraHeight)) __obj.updateDynamic("lockAspectRatioExtraHeight")(lockAspectRatioExtraHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockAspectRatioExtraWidth)) __obj.updateDynamic("lockAspectRatioExtraWidth")(lockAspectRatioExtraWidth.get.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
@@ -98,11 +98,11 @@ object ResizableProps {
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction4(onResize))
     if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction3(onResizeStart))
     if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(js.Any.fromFunction4(onResizeStop))
-    if (resizeRatio != null) __obj.updateDynamic("resizeRatio")(resizeRatio.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeRatio)) __obj.updateDynamic("resizeRatio")(resizeRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
-    if (snapGap != null) __obj.updateDynamic("snapGap")(snapGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapGap)) __obj.updateDynamic("snapGap")(snapGap.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizableProps]
   }

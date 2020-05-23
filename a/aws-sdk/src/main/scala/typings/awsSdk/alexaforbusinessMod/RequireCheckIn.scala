@@ -18,10 +18,13 @@ trait RequireCheckIn extends js.Object {
 
 object RequireCheckIn {
   @scala.inline
-  def apply(Enabled: js.UndefOr[scala.Boolean] = js.undefined, ReleaseAfterMinutes: Int | Double = null): RequireCheckIn = {
+  def apply(
+    Enabled: js.UndefOr[Boolean] = js.undefined,
+    ReleaseAfterMinutes: js.UndefOr[Minutes] = js.undefined
+  ): RequireCheckIn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
-    if (ReleaseAfterMinutes != null) __obj.updateDynamic("ReleaseAfterMinutes")(ReleaseAfterMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReleaseAfterMinutes)) __obj.updateDynamic("ReleaseAfterMinutes")(ReleaseAfterMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequireCheckIn]
   }
 }

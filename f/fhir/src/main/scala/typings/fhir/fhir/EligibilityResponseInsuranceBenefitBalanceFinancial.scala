@@ -57,13 +57,13 @@ object EligibilityResponseInsuranceBenefitBalanceFinancial {
     _usedUnsignedInt: Element = null,
     allowedMoney: Money = null,
     allowedString: String = null,
-    allowedUnsignedInt: Int | Double = null,
+    allowedUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
     usedMoney: Money = null,
-    usedUnsignedInt: Int | Double = null
+    usedUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
   ): EligibilityResponseInsuranceBenefitBalanceFinancial = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -74,13 +74,13 @@ object EligibilityResponseInsuranceBenefitBalanceFinancial {
     if (_usedUnsignedInt != null) __obj.updateDynamic("_usedUnsignedInt")(_usedUnsignedInt.asInstanceOf[js.Any])
     if (allowedMoney != null) __obj.updateDynamic("allowedMoney")(allowedMoney.asInstanceOf[js.Any])
     if (allowedString != null) __obj.updateDynamic("allowedString")(allowedString.asInstanceOf[js.Any])
-    if (allowedUnsignedInt != null) __obj.updateDynamic("allowedUnsignedInt")(allowedUnsignedInt.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowedUnsignedInt)) __obj.updateDynamic("allowedUnsignedInt")(allowedUnsignedInt.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (usedMoney != null) __obj.updateDynamic("usedMoney")(usedMoney.asInstanceOf[js.Any])
-    if (usedUnsignedInt != null) __obj.updateDynamic("usedUnsignedInt")(usedUnsignedInt.asInstanceOf[js.Any])
+    if (!js.isUndefined(usedUnsignedInt)) __obj.updateDynamic("usedUnsignedInt")(usedUnsignedInt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EligibilityResponseInsuranceBenefitBalanceFinancial]
   }
 }

@@ -4,22 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.EndpointPair")
-@js.native
-class EndpointPair protected () extends IEndpointPair {
-  def this(
+trait EndpointPair extends IEndpointPair
+
+object EndpointPair {
+  @scala.inline
+  def apply(
     localHostName: HostName,
     localServiceName: String,
     remoteHostName: HostName,
     remoteServiceName: String
-  ) = this()
-  /* CompleteClass */
-  override var localHostName: HostName = js.native
-  /* CompleteClass */
-  override var localServiceName: String = js.native
-  /* CompleteClass */
-  override var remoteHostName: HostName = js.native
-  /* CompleteClass */
-  override var remoteServiceName: String = js.native
+  ): EndpointPair = {
+    val __obj = js.Dynamic.literal(localHostName = localHostName.asInstanceOf[js.Any], localServiceName = localServiceName.asInstanceOf[js.Any], remoteHostName = remoteHostName.asInstanceOf[js.Any], remoteServiceName = remoteServiceName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EndpointPair]
+  }
 }
 

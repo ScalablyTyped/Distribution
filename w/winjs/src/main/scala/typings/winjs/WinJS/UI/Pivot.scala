@@ -1,6 +1,6 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.winjs.WinJS.Binding.List
 import scala.scalajs.js
@@ -10,18 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * A tab control that displays multiple items.
   **/
-@JSGlobal("WinJS.UI.Pivot")
 @js.native
-//#region Constructors
-/**
-  * Creates a new Pivot.
-  * @constructor
-  * @param element The DOM element hosts the new Pivot.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-  **/
-class Pivot () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait Pivot extends js.Object {
   /**
     * Gets or sets the left custom header.
     **/
@@ -88,17 +78,17 @@ class Pivot () extends js.Object {
     * Raised when a PivotItem control's animation ends.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onitemanimationend(eventInfo: Event_): Unit = js.native
+  def onitemanimationend(eventInfo: Event): Unit = js.native
   /**
     * Raised when a PivotItem control's animation starts.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onitemanimationstart(eventInfo: Event_): Unit = js.native
+  def onitemanimationstart(eventInfo: Event): Unit = js.native
   /**
     * Raised when the user navigates to a different PivotItem.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onselectionchanged(eventInfo: Event_): Unit = js.native
+  def onselectionchanged(eventInfo: Event): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.
@@ -107,15 +97,5 @@ class Pivot () extends js.Object {
     **/
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.Pivot")
-@js.native
-object Pivot extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

@@ -1,6 +1,8 @@
 package typings.emberRouting
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.emberRouting.anon.Outlet
+import typings.emberRouting.anon.QueryParams
 import typings.emberRouting.transitionMod.Transition
 import typings.emberRouting.typesMod.RenderOptions
 import typings.emberRouting.typesMod.RouteQueryParam
@@ -110,7 +112,7 @@ object routeMod extends js.Object {
       * Disconnects a view that has been rendered into an outlet.
       */
     def disconnectOutlet(options: String): Unit = js.native
-    def disconnectOutlet(options: AnonOutlet): Unit = js.native
+    def disconnectOutlet(options: Outlet): Unit = js.native
     /**
       * When attempting to transition into a route, any of the hooks may return a promise
       * that rejects, at which point an error action will be fired on the partially-entered
@@ -455,19 +457,13 @@ object routeMod extends js.Object {
       modelsB: RouteModel,
       modelsC: RouteModel,
       modelsD: RouteModel,
-      options: AnonQueryParams
+      options: QueryParams
     ): Transition = js.native
-    def transitionTo(
-      name: String,
-      modelsA: RouteModel,
-      modelsB: RouteModel,
-      modelsC: RouteModel,
-      options: AnonQueryParams
-    ): Transition = js.native
-    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, options: AnonQueryParams): Transition = js.native
-    def transitionTo(name: String, modelsA: RouteModel, options: AnonQueryParams): Transition = js.native
-    def transitionTo(name: String, options: AnonQueryParams): Transition = js.native
-    def transitionTo(options: AnonQueryParams): Transition = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, modelsC: RouteModel, options: QueryParams): Transition = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, options: QueryParams): Transition = js.native
+    def transitionTo(name: String, modelsA: RouteModel, options: QueryParams): Transition = js.native
+    def transitionTo(name: String, options: QueryParams): Transition = js.native
+    def transitionTo(options: QueryParams): Transition = js.native
     /**
       * The willTransition action is fired at the beginning of any attempted transition
       * with a Transition object as the sole argument. This action can be used for aborting,

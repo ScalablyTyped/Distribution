@@ -1,6 +1,5 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,32 +41,6 @@ object RouteAvoidance extends js.Object {
   /** Calculate the best route using any travel option available. */
   @js.native
   sealed trait none extends RouteAvoidance
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RouteAvoidance with Double] = js.native
-  /* 32 */ @js.native
-  object avoidAirline extends TopLevel[avoidAirline with Double]
-  
-  /* 64 */ @js.native
-  object avoidBulletTrain extends TopLevel[avoidBulletTrain with Double]
-  
-  /* 16 */ @js.native
-  object avoidExpressTrain extends TopLevel[avoidExpressTrain with Double]
-  
-  /* 4 */ @js.native
-  object avoidHighways extends TopLevel[avoidHighways with Double]
-  
-  /* 8 */ @js.native
-  object avoidToll extends TopLevel[avoidToll with Double]
-  
-  /* 1 */ @js.native
-  object minimizeHighways extends TopLevel[minimizeHighways with Double]
-  
-  /* 2 */ @js.native
-  object minimizeToll extends TopLevel[minimizeToll with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

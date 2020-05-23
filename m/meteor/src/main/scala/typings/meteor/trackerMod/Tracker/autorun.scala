@@ -1,6 +1,6 @@
 package typings.meteor.trackerMod.Tracker
 
-import typings.meteor.AnonOnError
+import typings.meteor.anon.OnError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object autorun extends js.Object {
   def apply(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
-  def apply(runFunc: js.Function1[/* computation */ Computation, Unit], options: AnonOnError): Computation = js.native
+  def apply(runFunc: js.Function1[/* computation */ Computation, Unit], options: OnError): Computation = js.native
 }
 

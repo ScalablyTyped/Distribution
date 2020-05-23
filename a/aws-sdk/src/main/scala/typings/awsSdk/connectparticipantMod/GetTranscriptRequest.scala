@@ -41,7 +41,7 @@ object GetTranscriptRequest {
   def apply(
     ConnectionToken: ParticipantToken,
     ContactId: ContactId = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     ScanDirection: ScanDirection = null,
     SortOrder: SortKey = null,
@@ -49,7 +49,7 @@ object GetTranscriptRequest {
   ): GetTranscriptRequest = {
     val __obj = js.Dynamic.literal(ConnectionToken = ConnectionToken.asInstanceOf[js.Any])
     if (ContactId != null) __obj.updateDynamic("ContactId")(ContactId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ScanDirection != null) __obj.updateDynamic("ScanDirection")(ScanDirection.asInstanceOf[js.Any])
     if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])

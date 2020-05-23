@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Window extends js.Object {
-  var BluetoothClassicSerial: BluetoothClassicSerial_
+  var BluetoothClassicSerial: typings.cordovaPluginBluetoothclassicSerial.BluetoothClassicSerial
 }
 
 object Window {
   @scala.inline
-  def apply(BluetoothClassicSerial: BluetoothClassicSerial_): Window = {
+  def apply(BluetoothClassicSerial: BluetoothClassicSerial): Window = {
     val __obj = js.Dynamic.literal(BluetoothClassicSerial = BluetoothClassicSerial.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }

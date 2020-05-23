@@ -2,7 +2,7 @@ package typings.reactSelect.menuMod
 
 import typings.react.mod.Component
 import typings.react.mod.Ref
-import typings.reactSelect.AnonGetPortalPlacement
+import typings.reactSelect.anon.GetPortalPlacement
 import typings.reactSelect.typesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +20,6 @@ class Menu[OptionType /* <: OptionTypeBase */] ()
 @JSImport("react-select/src/components/Menu", "Menu")
 @js.native
 object Menu extends js.Object {
-  var contextTypes: AnonGetPortalPlacement = js.native
+  var contextTypes: GetPortalPlacement = js.native
 }
 

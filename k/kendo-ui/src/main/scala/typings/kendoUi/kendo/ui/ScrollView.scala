@@ -2,16 +2,12 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.DataSource
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.ScrollView")
 @js.native
-class ScrollView protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: ScrollViewOptions) = this()
+trait ScrollView extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_ScrollView: ScrollViewOptions = js.native
@@ -23,13 +19,5 @@ class ScrollView protected () extends Widget {
   def refresh(): Unit = js.native
   def scrollTo(page: Double, instant: Boolean): Unit = js.native
   def setDataSource(dataSource: DataSource): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.ScrollView")
-@js.native
-object ScrollView extends js.Object {
-  var fn: ScrollView = js.native
-  def extend(proto: js.Object): ScrollView = js.native
 }
 

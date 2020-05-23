@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the page size.
   */
-@JSGlobal("ChangePageSizeCommand")
 @js.native
-class ChangePageSizeCommand () extends CommandBase {
+trait ChangePageSizeCommand extends CommandBase {
   /**
     * Executes the ChangePageSizeCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param size The page size.

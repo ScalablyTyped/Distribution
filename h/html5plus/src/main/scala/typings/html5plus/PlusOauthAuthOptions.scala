@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * JSON对象，授权认证参数选项
   * 此对象支持的属性值由登录授权认证服务定义。
-  * 	例如“微信”，则可配置以下参数：
-  * 	scope - 应用授权作用域；
-  * 	state - 用于保持请求和回调的状态参数。
+  *     例如“微信”，则可配置以下参数：
+  *     scope - 应用授权作用域；
+  *     state - 用于保持请求和回调的状态参数。
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
   */
@@ -17,7 +17,7 @@ trait PlusOauthAuthOptions extends js.Object {
   /**
     * 登录授权认证服务平台申请的appid
     * 动态设置登录授权服务中需要使用的appid，仅需要此参数的登录授权服务（如“微信登录”、“QQ登录”）支持。
-    * 	如果未设置则使用运行环境中内置的appid值（如在HBuilder中可在manifest.json的SDK配置项中进行设置）。
+    *     如果未设置则使用运行环境中内置的appid值（如在HBuilder中可在manifest.json的SDK配置项中进行设置）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
@@ -25,7 +25,7 @@ trait PlusOauthAuthOptions extends js.Object {
   /**
     * 登录授权认证服务平台申请的appkey
     * 动态设置登录授权服务中需要使用的appkey，仅需要此参数的登录授权服务（如“新浪微博登录”、“360登录”）支持。
-    * 	如果未设置则使用运行环境中内置的appkey值（如在HBuilder中可在manifest.json的SDK配置项中进行设置）。
+    *     如果未设置则使用运行环境中内置的appkey值（如在HBuilder中可在manifest.json的SDK配置项中进行设置）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
@@ -33,7 +33,7 @@ trait PlusOauthAuthOptions extends js.Object {
   /**
     * 登录授权认证服务平台申请的appsecret
     * 动态设置登录授权服务中需要使用的appsecret，仅需要此参数的登录授权服务（如“微信登录”、“新浪微博登录”）支持。
-    * 	如果未设置则使用运行环境中内置的appkey值（如在HBuilder中可在manifest.json的SDK配置项中进行设置）；当开放平台申请的appsecret值涉及到安全问题时，可在应用运行时从服务器获取，然后通过此api动态设置。
+    *     如果未设置则使用运行环境中内置的appkey值（如在HBuilder中可在manifest.json的SDK配置项中进行设置）；当开放平台申请的appsecret值涉及到安全问题时，可在应用运行时从服务器获取，然后通过此api动态设置。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
@@ -41,7 +41,7 @@ trait PlusOauthAuthOptions extends js.Object {
   /**
     * 登录授权认证服务平台申请的redirect_url
     * 动态设置登录授权服务中需要使用的redirect_url，仅需要此参数的登录授权服务（如“新浪微博登录”）支持。
-    * 	如果未设置则使用运行环境中内置的redirect_url值（如在HBuilder中可在manifest.json的SDK配置项中进行设置）。
+    *     如果未设置则使用运行环境中内置的redirect_url值（如在HBuilder中可在manifest.json的SDK配置项中进行设置）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */

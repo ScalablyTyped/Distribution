@@ -21,18 +21,18 @@ trait IStreamingPullRequest extends js.Object {
 object IStreamingPullRequest {
   @scala.inline
   def apply(
-    ackIds: js.Array[String] = null,
-    modifyDeadlineAckIds: js.Array[String] = null,
-    modifyDeadlineSeconds: js.Array[Double] = null,
-    streamAckDeadlineSeconds: Int | Double = null,
-    subscription: String = null
+    ackIds: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    modifyDeadlineAckIds: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    modifyDeadlineSeconds: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    streamAckDeadlineSeconds: js.UndefOr[Null | Double] = js.undefined,
+    subscription: js.UndefOr[Null | String] = js.undefined
   ): IStreamingPullRequest = {
     val __obj = js.Dynamic.literal()
-    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
-    if (modifyDeadlineAckIds != null) __obj.updateDynamic("modifyDeadlineAckIds")(modifyDeadlineAckIds.asInstanceOf[js.Any])
-    if (modifyDeadlineSeconds != null) __obj.updateDynamic("modifyDeadlineSeconds")(modifyDeadlineSeconds.asInstanceOf[js.Any])
-    if (streamAckDeadlineSeconds != null) __obj.updateDynamic("streamAckDeadlineSeconds")(streamAckDeadlineSeconds.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackIds)) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifyDeadlineAckIds)) __obj.updateDynamic("modifyDeadlineAckIds")(modifyDeadlineAckIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifyDeadlineSeconds)) __obj.updateDynamic("modifyDeadlineSeconds")(modifyDeadlineSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(streamAckDeadlineSeconds)) __obj.updateDynamic("streamAckDeadlineSeconds")(streamAckDeadlineSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamingPullRequest]
   }
 }

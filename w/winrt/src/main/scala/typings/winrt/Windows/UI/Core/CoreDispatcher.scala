@@ -5,18 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Core.CoreDispatcher")
-@js.native
-class CoreDispatcher () extends ICoreDispatcher {
-  /* CompleteClass */
-  override var hasThreadAccess: Boolean = js.native
-  /* CompleteClass */
-  override var onacceleratorkeyactivated: js.Any = js.native
-  /* CompleteClass */
-  override def processEvents(options: CoreProcessEventsOption): Unit = js.native
-  /* CompleteClass */
-  override def runAsync(priority: CoreDispatcherPriority, agileCallback: DispatchedHandler): IAsyncAction = js.native
-  /* CompleteClass */
-  override def runIdleAsync(agileCallback: IdleDispatchedHandler): IAsyncAction = js.native
+trait CoreDispatcher extends ICoreDispatcher
+
+object CoreDispatcher {
+  @scala.inline
+  def apply(
+    hasThreadAccess: Boolean,
+    onacceleratorkeyactivated: js.Any,
+    processEvents: CoreProcessEventsOption => Unit,
+    runAsync: (CoreDispatcherPriority, DispatchedHandler) => IAsyncAction,
+    runIdleAsync: IdleDispatchedHandler => IAsyncAction
+  ): CoreDispatcher = {
+    val __obj = js.Dynamic.literal(hasThreadAccess = hasThreadAccess.asInstanceOf[js.Any], onacceleratorkeyactivated = onacceleratorkeyactivated.asInstanceOf[js.Any], processEvents = js.Any.fromFunction1(processEvents), runAsync = js.Any.fromFunction2(runAsync), runIdleAsync = js.Any.fromFunction1(runIdleAsync))
+    __obj.asInstanceOf[CoreDispatcher]
+  }
 }
 

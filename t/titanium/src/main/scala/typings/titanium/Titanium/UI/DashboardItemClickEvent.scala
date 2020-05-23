@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a click is detected against the view.
-		 */
+  * Fired when a click is detected against the view.
+  */
 trait DashboardItemClickEvent extends DashboardItemBaseEvent {
   /**
-  			 * Item that was clicked.
-  			 */
+    * Item that was clicked.
+    */
   var item: DashboardItem
   /**
-  			 * Coordinates `x` and `y` of the event from the parent view's coordinate system.
-  			 */
+    * Coordinates `x` and `y` of the event from the parent view's coordinate system.
+    */
   var location: Point
 }
 

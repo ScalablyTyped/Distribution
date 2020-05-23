@@ -1,6 +1,6 @@
 package typings.jqueryCleditor
 
-import typings.std.Document_
+import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait CLEditor extends js.Object {
   @JSName("$toolbar")
   var $toolbar: JQuery = js.native
   var disabled: Boolean = js.native
-  var doc: Document_ = js.native
+  var doc: Document = js.native
   var options: JQueryCLEditorOptions = js.native
   def change(handler: js.Function): CLEditor = js.native
   def clear(): CLEditor = js.native

@@ -43,7 +43,7 @@ trait HeaderFooterGroupLoadOptions extends js.Object {
   var oddPages: js.UndefOr[HeaderFooterLoadOptions] = js.undefined
   /**
     *
-    * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+    * The state by which headers/footers are set. See Excel.HeaderFooterState for details.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -77,14 +77,14 @@ object HeaderFooterGroupLoadOptions {
     useSheetScale: js.UndefOr[Boolean] = js.undefined
   ): HeaderFooterGroupLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (defaultForAllPages != null) __obj.updateDynamic("defaultForAllPages")(defaultForAllPages.asInstanceOf[js.Any])
     if (evenPages != null) __obj.updateDynamic("evenPages")(evenPages.asInstanceOf[js.Any])
     if (firstPage != null) __obj.updateDynamic("firstPage")(firstPage.asInstanceOf[js.Any])
     if (oddPages != null) __obj.updateDynamic("oddPages")(oddPages.asInstanceOf[js.Any])
-    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSheetMargins)) __obj.updateDynamic("useSheetMargins")(useSheetMargins.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSheetScale)) __obj.updateDynamic("useSheetScale")(useSheetScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSheetMargins)) __obj.updateDynamic("useSheetMargins")(useSheetMargins.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSheetScale)) __obj.updateDynamic("useSheetScale")(useSheetScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderFooterGroupLoadOptions]
   }
 }

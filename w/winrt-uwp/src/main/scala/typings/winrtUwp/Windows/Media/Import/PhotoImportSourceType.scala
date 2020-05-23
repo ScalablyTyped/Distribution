@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Import
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object PhotoImportSourceType extends js.Object {
   /** The device is a video camera. */
   @js.native
   sealed trait video extends PhotoImportSourceType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhotoImportSourceType with Double] = js.native
-  /* 6 */ @js.native
-  object audioRecorder extends TopLevel[audioRecorder with Double]
-  
-  /* 1 */ @js.native
-  object camera extends TopLevel[camera with Double]
-  
-  /* 0 */ @js.native
-  object generic extends TopLevel[generic with Double]
-  
-  /* 2 */ @js.native
-  object mediaPlayer extends TopLevel[mediaPlayer with Double]
-  
-  /* 5 */ @js.native
-  object personalInfoManager extends TopLevel[personalInfoManager with Double]
-  
-  /* 3 */ @js.native
-  object phone extends TopLevel[phone with Double]
-  
-  /* 4 */ @js.native
-  object video extends TopLevel[video with Double]
   
 }
 

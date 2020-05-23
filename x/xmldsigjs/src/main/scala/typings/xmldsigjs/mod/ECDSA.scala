@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("xmldsigjs", "ECDSA")
 @js.native
 object ECDSA
-  extends TopLevel[typings.xmldsigjs.xmldsigjsStrings.ECDSA]
+  extends TopLevel[/* "http://www.w3.org/2007/05/xmldsig-more#sha1-rsa-MGF1" */ String]
 

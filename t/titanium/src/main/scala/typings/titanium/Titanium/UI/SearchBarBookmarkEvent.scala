@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the bookmark button is pressed.
-		 */
+  * Fired when the bookmark button is pressed.
+  */
 trait SearchBarBookmarkEvent extends SearchBarBaseEvent {
   /**
-  			 * Value of the search bar.
-  			 */
+    * Value of the search bar.
+    */
   var value: String
 }
 

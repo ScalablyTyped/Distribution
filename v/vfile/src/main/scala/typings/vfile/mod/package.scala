@@ -12,6 +12,12 @@ package object mod {
     - typings.vfile.mod.VFileContents
   */
   type VFileCompatible = typings.vfile.mod._VFileCompatible | typings.vfile.mod.VFileContents
-  type VFileContents = java.lang.String | typings.node.Buffer
+  /**
+    * VFileContents can either be text, or a Buffer like structure
+    * @remarks
+    * This does not directly use type `Buffer, because it can also be used in a browser context.
+    * Instead this leverages `Uint8Array` which is the base type for `Buffer`, and a native JavaScript construct.
+    */
+  type VFileContents = java.lang.String | typings.std.Uint8Array
   type VFileReporter[T] = js.Function2[/* files */ js.Array[typings.vfile.mod.VFile], /* options */ T, java.lang.String]
 }

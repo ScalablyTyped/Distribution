@@ -1,6 +1,6 @@
 package typings.agGrid.columnControllerMod
 
-import typings.agGrid.AnonGroupId
+import typings.agGrid.anon.GroupId
 import typings.agGrid.colDefMod.ColDef
 import typings.agGrid.colDefMod.ColGroupDef
 import typings.agGrid.columnGroupChildMod.ColumnGroupChild
@@ -140,7 +140,7 @@ class ColumnController () extends js.Object {
   def getColumnGroup(colId: String, instanceId: Double): ColumnGroup = js.native
   def getColumnGroup(colId: ColumnGroup): ColumnGroup = js.native
   def getColumnGroup(colId: ColumnGroup, instanceId: Double): ColumnGroup = js.native
-  def getColumnGroupState(): js.Array[AnonGroupId] = js.native
+  def getColumnGroupState(): js.Array[GroupId] = js.native
   def getColumnState(): js.Array[ColumnState] = js.native
   def getColumnWithValidation(key: String): Column = js.native
   def getColumnWithValidation(key: Column): Column = js.native
@@ -252,8 +252,8 @@ class ColumnController () extends js.Object {
   def setColumnGroupOpened(key: String, newValue: Boolean, source: ColumnEventType): Unit = js.native
   def setColumnGroupOpened(key: OriginalColumnGroup, newValue: Boolean): Unit = js.native
   def setColumnGroupOpened(key: OriginalColumnGroup, newValue: Boolean, source: ColumnEventType): Unit = js.native
-  def setColumnGroupState(stateItems: js.Array[AnonGroupId]): Unit = js.native
-  def setColumnGroupState(stateItems: js.Array[AnonGroupId], source: ColumnEventType): Unit = js.native
+  def setColumnGroupState(stateItems: js.Array[GroupId]): Unit = js.native
+  def setColumnGroupState(stateItems: js.Array[GroupId], source: ColumnEventType): Unit = js.native
   def setColumnPinned(key: String, pinned: String): Unit = js.native
   def setColumnPinned(key: String, pinned: String, source: ColumnEventType): Unit = js.native
   def setColumnPinned(key: String, pinned: Boolean): Unit = js.native

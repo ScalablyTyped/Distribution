@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.Frame")
 @js.native
-class Frame protected () extends js.Object {
+trait Frame extends js.Object {
   val ActiveControl: Control = js.native
   var BackColor: Double = js.native
   var BorderColor: Double = js.native

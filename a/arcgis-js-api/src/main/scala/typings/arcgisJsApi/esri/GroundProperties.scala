@@ -40,13 +40,13 @@ object GroundProperties {
   def apply(
     layers: CollectionProperties[ElevationLayerProperties] = null,
     navigationConstraint: GroundNavigationConstraintProperties = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     surfaceColor: Color_ | js.Array[Double] | String = null
   ): GroundProperties = {
     val __obj = js.Dynamic.literal()
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (navigationConstraint != null) __obj.updateDynamic("navigationConstraint")(navigationConstraint.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (surfaceColor != null) __obj.updateDynamic("surfaceColor")(surfaceColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroundProperties]
   }

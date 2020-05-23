@@ -23,12 +23,12 @@ trait BatchDetectSentimentItemResult extends js.Object {
 object BatchDetectSentimentItemResult {
   @scala.inline
   def apply(
-    Index: Int | scala.Double = null,
+    Index: js.UndefOr[Integer] = js.undefined,
     Sentiment: SentimentType = null,
     SentimentScore: SentimentScore = null
   ): BatchDetectSentimentItemResult = {
     val __obj = js.Dynamic.literal()
-    if (Index != null) __obj.updateDynamic("Index")(Index.asInstanceOf[js.Any])
+    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index.get.asInstanceOf[js.Any])
     if (Sentiment != null) __obj.updateDynamic("Sentiment")(Sentiment.asInstanceOf[js.Any])
     if (SentimentScore != null) __obj.updateDynamic("SentimentScore")(SentimentScore.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectSentimentItemResult]

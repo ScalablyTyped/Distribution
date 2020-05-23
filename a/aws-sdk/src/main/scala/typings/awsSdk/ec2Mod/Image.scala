@@ -119,7 +119,7 @@ object Image {
     BlockDeviceMappings: BlockDeviceMappingList = null,
     CreationDate: String = null,
     Description: String = null,
-    EnaSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    EnaSupport: js.UndefOr[Boolean] = js.undefined,
     Hypervisor: HypervisorType = null,
     ImageId: String = null,
     ImageLocation: String = null,
@@ -131,7 +131,7 @@ object Image {
     Platform: PlatformValues = null,
     PlatformDetails: String = null,
     ProductCodes: ProductCodeList = null,
-    Public: js.UndefOr[scala.Boolean] = js.undefined,
+    Public: js.UndefOr[Boolean] = js.undefined,
     RamdiskId: String = null,
     RootDeviceName: String = null,
     RootDeviceType: DeviceType = null,
@@ -147,7 +147,7 @@ object Image {
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnaSupport)) __obj.updateDynamic("EnaSupport")(EnaSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnaSupport)) __obj.updateDynamic("EnaSupport")(EnaSupport.get.asInstanceOf[js.Any])
     if (Hypervisor != null) __obj.updateDynamic("Hypervisor")(Hypervisor.asInstanceOf[js.Any])
     if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId.asInstanceOf[js.Any])
     if (ImageLocation != null) __obj.updateDynamic("ImageLocation")(ImageLocation.asInstanceOf[js.Any])
@@ -159,7 +159,7 @@ object Image {
     if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
     if (PlatformDetails != null) __obj.updateDynamic("PlatformDetails")(PlatformDetails.asInstanceOf[js.Any])
     if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(Public)) __obj.updateDynamic("Public")(Public.asInstanceOf[js.Any])
+    if (!js.isUndefined(Public)) __obj.updateDynamic("Public")(Public.get.asInstanceOf[js.Any])
     if (RamdiskId != null) __obj.updateDynamic("RamdiskId")(RamdiskId.asInstanceOf[js.Any])
     if (RootDeviceName != null) __obj.updateDynamic("RootDeviceName")(RootDeviceName.asInstanceOf[js.Any])
     if (RootDeviceType != null) __obj.updateDynamic("RootDeviceType")(RootDeviceType.asInstanceOf[js.Any])

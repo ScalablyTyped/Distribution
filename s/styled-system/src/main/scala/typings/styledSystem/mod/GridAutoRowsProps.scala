@@ -15,9 +15,9 @@ trait GridAutoRowsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ext
 
 object GridAutoRowsProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](gridAutoRows: ResponsiveValue[TVal, ThemeType] = null): GridAutoRowsProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](gridAutoRows: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): GridAutoRowsProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (gridAutoRows != null) __obj.updateDynamic("gridAutoRows")(gridAutoRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridAutoRows)) __obj.updateDynamic("gridAutoRows")(gridAutoRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridAutoRowsProps[ThemeType, TVal]]
   }
 }

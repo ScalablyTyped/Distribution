@@ -5,7 +5,7 @@ import typings.jupyterlabCompleter.widgetMod.Completer.IModel
 import typings.jupyterlabCompleter.widgetMod.Completer.IOptions
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.mod.Widget
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,7 +72,7 @@ class Completer_ protected () extends Widget {
     * called in response to events on the dock panel's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   def model(): js.Any = js.native
   def model(model: IModel): js.Any = js.native
   /**

@@ -1,6 +1,5 @@
 package typings.meteor.Blaze
 
-import org.scalablytyped.runtime.TopLevel
 import typings.meteor.Tracker.Computation
 import typings.std.Node
 import scala.scalajs.js
@@ -24,7 +23,26 @@ trait View extends js.Object {
   def templateInstance(): TemplateInstance
 }
 
-@JSGlobal("Blaze.View")
-@js.native
-object View extends TopLevel[ViewStatic]
+object View {
+  @scala.inline
+  def apply(
+    autorun: js.Function1[/* computation */ Computation, Unit] => Computation,
+    firstNode: () => Node,
+    isCreated: Boolean,
+    isDestroyed: Boolean,
+    isRendered: Boolean,
+    lastNode: () => Node,
+    name: String,
+    onViewCreated: js.Function => Unit,
+    onViewDestroyed: js.Function => Unit,
+    onViewReady: js.Function => Unit,
+    parentView: View,
+    renderCount: Double,
+    template: Template,
+    templateInstance: () => TemplateInstance
+  ): View = {
+    val __obj = js.Dynamic.literal(autorun = js.Any.fromFunction1(autorun), firstNode = js.Any.fromFunction0(firstNode), isCreated = isCreated.asInstanceOf[js.Any], isDestroyed = isDestroyed.asInstanceOf[js.Any], isRendered = isRendered.asInstanceOf[js.Any], lastNode = js.Any.fromFunction0(lastNode), name = name.asInstanceOf[js.Any], onViewCreated = js.Any.fromFunction1(onViewCreated), onViewDestroyed = js.Any.fromFunction1(onViewDestroyed), onViewReady = js.Any.fromFunction1(onViewReady), parentView = parentView.asInstanceOf[js.Any], renderCount = renderCount.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], templateInstance = js.Any.fromFunction0(templateInstance))
+    __obj.asInstanceOf[View]
+  }
+}
 

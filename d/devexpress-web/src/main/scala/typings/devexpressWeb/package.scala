@@ -26,6 +26,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents the client-side equivalent of the Annotation class.
+    */
+  type ASPxClientAnnotation = typings.devexpressWeb.ASPxClientWebChartElementNamed
+  /**
     * A method that will handle the ASPxClientScheduler.AppointmentDeleting event.
     * @param source The event sender (typically an ASPxClientScheduler control).
     * @param e A ASPxClientAppointmentDeletingEventArgs object that contains event data.
@@ -45,6 +49,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientAppointmentToolTipShowingEventArgs, 
     scala.Unit
   ]
+  /**
+    * Represents the client-side equivalent of the Axis3D class.
+    */
+  type ASPxClientAxis3D = typings.devexpressWeb.ASPxClientAxisBase
   /**
     * A method that will handle the ASPxClientSpellChecker.BeforeCheck event.
     * @param source The ASPxClientSpellChecker control which fires the event.
@@ -75,6 +83,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientButtonClickEventArgs, 
     scala.Unit
   ]
+  /**
+    * Represents the client-side equivalent of the ASPxButtonEdit control.
+    */
+  type ASPxClientButtonEdit = typings.devexpressWeb.ASPxClientButtonEditBase
   /**
     * A method that will handle the ASPxClientButtonEditBase.ButtonClick event.
     * @param source An object representing the event source. Identifies the button editor that raised the event.
@@ -277,6 +289,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Lists values that specify the document formats available for export from the grid.
+    */
+  type ASPxClientCardViewExportFormat = typings.devexpressWeb.ASPxClientGridExportFormat
+  /**
     * Represents a method that will handle the ASPxClientCardView.FocusedCardChanged event.
     * @param source The event source.
     * @param e An ASPxClientCardViewFocusEventArgs object which contains event data.
@@ -332,6 +348,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents the client-side equivalent of the ChartTitle class.
+    */
+  type ASPxClientChartTitle = typings.devexpressWeb.ASPxClientTitleBase
+  /**
     * A method that will handle the ASPxClientPivotGrid.CellClick or ASPxClientPivotGrid.CellDblClick event.
     * @param source The event source.
     * @param e An ASPxClientClickEventArgs object that contains event data.
@@ -371,6 +391,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientControlsInitializedEventArgs, 
     scala.Unit
   ]
+  /**
+    * The client-side equivalent of the CrosshairMousePosition class.
+    */
+  type ASPxClientCrosshairMousePosition = typings.devexpressWeb.ASPxClientCrosshairPosition
   /**
     * A method that will handle the client CustomCallback event of some controls.
     * @param source An object representing the event source.
@@ -584,6 +608,10 @@ package object devexpressWeb {
     */
   type ASPxClientDataCallback = js.Function2[/* sender */ js.Any, /* result */ java.lang.String, scala.Unit]
   /**
+    * Represents the client-side equivalent of the DataSourceBasedErrorBars class.
+    */
+  type ASPxClientDataSourceBasedErrorBars = typings.devexpressWeb.ASPxClientIndicator
+  /**
     * A method that will handle the ASPxClientDateNavigator.DayCellCustomHighlight event.
     * @param source The event source.
     * @param e A ASPxClientDateNavigatorDayCellCustomHighlightEventArgs object that contains event data.
@@ -765,6 +793,18 @@ package object devexpressWeb {
     */
   type ASPxClientEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ typings.devexpressWeb.ASPxClientEventArgs, scala.Unit]
   /**
+    * The client-side equivalent of the ExponentialMovingAverage class.
+    */
+  type ASPxClientExponentialMovingAverage = typings.devexpressWeb.ASPxClientMovingAverage
+  /**
+    * A client-side equivalent of the floating action button's action item object.
+    */
+  type ASPxClientFABActionItem = typings.devexpressWeb.ASPxClientFABActionItemBase
+  /**
+    * Represents the client-side equivalent of the FibonacciIndicator class.
+    */
+  type ASPxClientFibonacciIndicator = typings.devexpressWeb.ASPxClientFinancialIndicator
+  /**
     * A JavaScript function which receives callback data obtained by a call to the client ASPxClientFileManager.GetAllItems method.
     * @param items An array of ASPxClientFileManagerItem objects that are items contained in the current folder.
     */
@@ -915,6 +955,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Provides data for the ASPxClientFileManager.FolderCreated event.
+    */
+  type ASPxClientFileManagerItemCreatedEventArgs = typings.devexpressWeb.ASPxClientFileManagerActionEventArgsBase
+  /**
     * A method that will handle the ASPxClientFileManager.FolderCreated event.
     * @param source The event source. Identifies the ASPxFileManager control that raised the event.
     * @param e A ASPxClientFileManagerItemCreatedEventArgs object that contains event data.
@@ -924,6 +968,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientFileManagerItemCreatedEventArgs, 
     scala.Unit
   ]
+  /**
+    * Provides data for the ASPxClientFileManager.ItemDeleted event.
+    */
+  type ASPxClientFileManagerItemDeletedEventArgs = typings.devexpressWeb.ASPxClientFileManagerActionEventArgsBase
   /**
     * A method that will handle the ASPxClientFileManager.ItemDeleted event.
     * @param source The event source. Identifies the ASPxFileManager control that raised the event.
@@ -1281,6 +1329,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Lists values that specify the document formats available for export from the grid.
+    */
+  type ASPxClientGridViewExportFormat = typings.devexpressWeb.ASPxClientGridExportFormat
+  /**
     * Represents a method that will handle the ASPxClientGridView.FocusedRowChanged event.
     * @param source The event source.
     * @param e An ASPxClientGridViewFocusEventArgs object which contains event data.
@@ -1376,6 +1428,26 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Contains settings related to the ASPxClientCommandConsts.CHANGEAUDIO_COMMAND command parameter.
+    */
+  type ASPxClientHtmlEditorChangeAudioCommandArguments = typings.devexpressWeb.ASPxClientHtmlEditorInsertAudioCommandArguments
+  /**
+    * Contains settings related to the ASPxClientCommandConsts.CHANGEFLASH_COMMAND command parameter.
+    */
+  type ASPxClientHtmlEditorChangeFlashCommandArguments = typings.devexpressWeb.ASPxClientHtmlEditorInsertFlashCommandArguments
+  /**
+    * Contains settings related to the ASPxClientCommandConsts.CHANGEIMAGE_COMMAND command parameter.
+    */
+  type ASPxClientHtmlEditorChangeImageCommandArguments = typings.devexpressWeb.ASPxClientHtmlEditorInsertImageCommandArguments
+  /**
+    * Contains settings related to the ASPxClientCommandConsts.CHANGEVIDEO_COMMAND command parameter.
+    */
+  type ASPxClientHtmlEditorChangeVideoCommandArguments = typings.devexpressWeb.ASPxClientHtmlEditorInsertVideoCommandArguments
+  /**
+    * Contains settings related to the ASPxClientCommandConsts.CHANGEYOUTUBEVIDEO_COMMAND command parameter.
+    */
+  type ASPxClientHtmlEditorChangeYouTubeVideoCommandArguments = typings.devexpressWeb.ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments
+  /**
     * A method that will handle the corresponding client event.
     * @param source The event source. This parameter identifies the editor which raised the event.
     * @param e An ASPxClientHtmlEditorCommandEventArgs object that contains event data.
@@ -1426,6 +1498,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Provides data for the ASPxClientHtmlEditor.DialogClosed event.
+    */
+  type ASPxClientHtmlEditorDialogClosedEventArgs = typings.devexpressWeb.ASPxClientHtmlEditorDialogCloseEventArgs
+  /**
     * A method that will handle the ASPxClientHtmlEditor.DialogClosed event.
     * @param source The event source.
     * @param e An ASPxClientHtmlEditorDialogClosedEventArgs object that contains event data.
@@ -1455,6 +1531,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientHtmlEditorDialogInitializedEventArgs, 
     scala.Unit
   ]
+  /**
+    * Contains settings related to the ASPxClientCommandConsts.INSERTAUDIO_COMMAND command parameter.
+    */
+  type ASPxClientHtmlEditorInsertAudioCommandArguments = typings.devexpressWeb.ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments
   /**
     * A method that will handle the client ASPxClientHtmlEditor.ActiveTabChanging event.
     * @param source The event's source.
@@ -1486,6 +1566,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents the client-side equivalent of the ImageAnnotation class.
+    */
+  type ASPxClientImageAnnotation = typings.devexpressWeb.ASPxClientAnnotation
+  /**
     * A method that will handle the ASPxClientImageGallery.FullscreenViewerShowing event.
     * @param source The event source. Identifies the ASPxImageGallery control that raised the event.
     * @param e An ASPxClientImageGalleryCancelEventArgs object that contains event data.
@@ -1515,6 +1599,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientImageSliderItemEventArgs, 
     scala.Unit
   ]
+  /**
+    * The client-side equivalent of the ASPxImageZoomNavigator object.
+    */
+  type ASPxClientImageZoomNavigator = typings.devexpressWeb.ASPxClientImageSlider
   /**
     * References a method that handles the ASPxClientDashboard.ItemBeginUpdate event.
     * @param source The event source.
@@ -1565,6 +1653,14 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientListEditItemSelectedChangedEventArgs, 
     scala.Unit
   ]
+  /**
+    * Represents the client-side equivalent of the MedianPrice class.
+    */
+  type ASPxClientMedianPrice = typings.devexpressWeb.ASPxClientIndicator
+  /**
+    * A client-side equivalent of the ASPxMemo control.
+    */
+  type ASPxClientMemo = typings.devexpressWeb.ASPxClientTextEdit
   /**
     * A method that will handle client ASPxClientMenuBase.ItemClick events.
     * @param source An object representing the event source.
@@ -1646,6 +1742,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents the client-side equivalent of the ASPxPager control.
+    */
+  type ASPxClientPager = typings.devexpressWeb.ASPxClientControl
+  /**
     * A method that will handle the ASPxClientDateEdit.ParseDate event.
     * @param source An object representing the event source. Identifies the button editor that raised the event.
     * @param e An ASPxClientParseDateEventArgs object that contains event data.
@@ -1655,6 +1755,7 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientParseDateEventArgs, 
     scala.Unit
   ]
+  type ASPxClientPivotGridControlCollection = typings.devexpressWeb.ASPxClientControlCollection
   /**
     * A method that will handle the ASPxClientPivotGrid.PopupMenuItemClick event.
     * @param source The event source.
@@ -1776,6 +1877,14 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents the client-side equivalent of the RadarAxis class.
+    */
+  type ASPxClientRadarAxis = typings.devexpressWeb.ASPxClientAxisBase
+  /**
+    * Represents the client-side equivalent of the ASPxRadioButtonList control.
+    */
+  type ASPxClientRadioButtonList = typings.devexpressWeb.ASPxClientCheckListBase
+  /**
     * A method that will handle the client ASPxClientRatingControl.ItemClick event.
     * @param source An object representing the event source.
     * @param e A ASPxClientRatingControlItemClickEventArgs object that contains event data.
@@ -1795,6 +1904,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientRatingControlItemMouseEventArgs, 
     scala.Unit
   ]
+  /**
+    * Represents the client-side equivalent of the RegressionLine class.
+    */
+  type ASPxClientRegressionLine = typings.devexpressWeb.ASPxClientSingleLevelIndicator
   /**
     * A method that will handle the ASPxClientReportDesigner.BeforeRender event.
     * @param source The event sender.
@@ -1916,6 +2029,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientErrorEventArgs, 
     scala.Unit
   ]
+  /**
+    * Provides data for the ASPxClientReportDesigner.ExitDesigner event.
+    */
+  type ASPxClientReportDesignerExitDesignerEventArgs = typings.devexpressWeb.ASPxClientEventArgs
   /**
     * A method that will handle the ASPxClientReportDesigner.ExitDesigner event.
     * @param source The event sender.
@@ -2197,6 +2314,14 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents the client-side equivalent of the SimpleDiagram class.
+    */
+  type ASPxClientSimpleDiagram = typings.devexpressWeb.ASPxClientWebChartEmptyElement
+  /**
+    * The client-side equivalent of the SimpleMovingAverage class.
+    */
+  type ASPxClientSimpleMovingAverage = typings.devexpressWeb.ASPxClientMovingAverage
+  /**
     * A method that will handle a splitter control's cancelable client events concerning pane manipulations.
     * @param source An object representing the event's source. Identifies the splitter control object that raised the event.
     * @param e An ASPxClientSplitterPaneCancelEventArgs object that contains event data.
@@ -2257,6 +2382,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Provides data for the ASPxClientSpreadsheet.DocumentChanged event.
+    */
+  type ASPxClientSpreadsheetDocumentChangedEventArgs = typings.devexpressWeb.ASPxClientEventArgs
+  /**
     * A method that will handle the ASPxClientSpreadsheet.DocumentChanged event.
     * @param source An object representing the event source. Identifies the Spreadsheet that raised the event.
     * @param e A ASPxClientSpreadsheetDocumentChangedEventArgs object that contains event data.
@@ -2297,6 +2426,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Provides data for the ASPxClientSpreadsheet.BeginSynchronization and ASPxClientSpreadsheet.EndSynchronization events.
+    */
+  type ASPxClientSpreadsheetSynchronizationEventArgs = typings.devexpressWeb.ASPxClientEventArgs
+  /**
     * A method that will handle the ASPxClientSpreadsheet.BeginSynchronization and ASPxClientSpreadsheet.EndSynchronization events.
     * @param source An object representing the event source. Identifies the Spreadsheet that raised the event.
     * @param e A ASPxClientSpreadsheetSynchronizationEventArgs object that contains event data.
@@ -2316,6 +2449,22 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientSpreadsheetViewModeChangedEventArgs, 
     scala.Unit
   ]
+  /**
+    * Represents the client-side equivalent of the StandardErrorBars class.
+    */
+  type ASPxClientStandardErrorBars = typings.devexpressWeb.ASPxClientIndicator
+  /**
+    * Represents the client-side equivalent of the SwiftPlotDiagram class.
+    */
+  type ASPxClientSwiftPlotDiagram = typings.devexpressWeb.ASPxClientXYDiagram2D
+  /**
+    * Represents the client-side equivalent of the SwiftPlotDiagramAxis class.
+    */
+  type ASPxClientSwiftPlotDiagramAxis = typings.devexpressWeb.ASPxClientAxis2D
+  /**
+    * Represents a client-side equivalent of the ASPxTabControl object.
+    */
+  type ASPxClientTabControl = typings.devexpressWeb.ASPxClientTabControlBase
   /**
     * A method that will handle a tab control's cancelable client events concerning manipulations with a tab.
     * @param source An object representing the event's source. Identifies the tab control object that raised the event.
@@ -2347,6 +2496,14 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * A client-side equivalent of the ASPxTextBox control.
+    */
+  type ASPxClientTextBox = typings.devexpressWeb.ASPxClientTextBoxBase
+  /**
+    * Represents a base for client-side editors which are capable of displaying and editing text data in their edit regions.
+    */
+  type ASPxClientTextBoxBase = typings.devexpressWeb.ASPxClientTextEdit
+  /**
     * A method that will handle the title index control's client events concerning manipulations with an item.
     * @param source An object representing the event's source. Identifies the title index control object that raised the event.
     * @param e An ASPxClientTitleIndexItemEventArgs object that contains event data.
@@ -2356,6 +2513,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientTitleIndexItemEventArgs, 
     scala.Unit
   ]
+  /**
+    * The client-side equivalent of the ToolTipMousePosition class.
+    */
+  type ASPxClientToolTipMousePosition = typings.devexpressWeb.ASPxClientToolTipPosition
   /**
     * A method that will handle the ASPxClientDocumentViewer.ToolbarItemValueChanged event.
     * @param source A Object that is the event source.
@@ -2622,6 +2783,22 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents the client-side equivalent of the TrendLine class.
+    */
+  type ASPxClientTrendLine = typings.devexpressWeb.ASPxClientFinancialIndicator
+  /**
+    * The client-side equivalent of the TriangularMovingAverage class.
+    */
+  type ASPxClientTriangularMovingAverage = typings.devexpressWeb.ASPxClientMovingAverage
+  /**
+    * Represents the client-side equivalent of the TripleExponentialMovingAverageTema class.
+    */
+  type ASPxClientTripleExponentialMovingAverageTema = typings.devexpressWeb.ASPxClientMovingAverage
+  /**
+    * Represents the client-side equivalent of the TypicalPrice class.
+    */
+  type ASPxClientTypicalPrice = typings.devexpressWeb.ASPxClientIndicator
+  /**
     * A method that will handle the ASPxClientUploadControl.DropZoneEnter event.
     * @param source The event source. This parameter identifies the upload control object which raised the event.
     * @param e An ASPxClientUploadControlDropZoneEnterEventArgs object that contains event data.
@@ -2833,6 +3010,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Lists values that specify the document formats available for export from the grid.
+    */
+  type ASPxClientVerticalGridExportFormat = typings.devexpressWeb.ASPxClientGridExportFormat
+  /**
     * A method that will handle the ASPxClientVerticalGrid.FocusedCellChanging event.
     * @param source The event source.
     * @param e An ASPxClientVerticalGridFocusedCellChangingEventArgs object that contains event data.
@@ -2917,6 +3098,14 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientWebChartControlHotTrackEventArgs, 
     scala.Unit
   ]
+  /**
+    * Represents a base class for chart elements, which are not necessarily required to be present on the client side.
+    */
+  type ASPxClientWebChartEmptyElement = typings.devexpressWeb.ASPxClientWebChartElement
+  /**
+    * Represents a base class for chart elements, which are required to be present on the client side.
+    */
+  type ASPxClientWebChartRequiredElement = typings.devexpressWeb.ASPxClientWebChartElement
   /**
     * A method that will handle the ASPxClientWebDocumentViewer.BeforeRender event.
     * @param source The event sender.
@@ -3039,6 +3228,14 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents the client-side equivalent of the WeightedClose class.
+    */
+  type ASPxClientWeightedClose = typings.devexpressWeb.ASPxClientIndicator
+  /**
+    * The client-side equivalent of the WeightedMovingAverage class.
+    */
+  type ASPxClientWeightedMovingAverage = typings.devexpressWeb.ASPxClientMovingAverage
+  /**
     * A method that will handle the ASPxClientSpellChecker.AfterCheck event.
     * @param source The event source.
     * @param e An ASPxClientSpellCheckerAfterCheckEventArgs object which contains event data.
@@ -3048,6 +3245,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.ASPxClientSpellCheckerAfterCheckEventArgs, 
     scala.Unit
   ]
+  /**
+    * Represents the client-side equivalent of the XYDiagram3D class.
+    */
+  type ASPxClientXYDiagram3D = typings.devexpressWeb.ASPxClientXYDiagramBase
   /**
     * A method that will handle the ASPxClientScheduler.ActiveViewChanging event.
     * @param source The ASPxClientScheduler control which fires the event.
@@ -3159,6 +3360,18 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents the client-side equivalent of the BootstrapBinaryImage control.
+    */
+  type BootstrapClientBinaryImage = typings.devexpressWeb.ASPxClientBinaryImage
+  /**
+    * Represents a client-side equivalent of the BootstrapButtonEdit control.
+    */
+  type BootstrapClientButtonEdit = typings.devexpressWeb.ASPxClientButtonEdit
+  /**
+    * Represents a client-side equivalent of the BootstrapCalendar control.
+    */
+  type BootstrapClientCalendar = typings.devexpressWeb.ASPxClientCalendar
+  /**
     * A method that will handle the BootstrapClientChartBase.Done event.
     * @param source The event source.
     * @param e A BootstrapUIWidgetEventArgsBase object that contains event data.
@@ -3213,6 +3426,14 @@ package object devexpressWeb {
     */
   type BootstrapClientChartZoomStartEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, scala.Unit]
   /**
+    * Represents a client-side equivalent of the BootstrapCheckBoxList control.
+    */
+  type BootstrapClientCheckBoxList = typings.devexpressWeb.ASPxClientCheckBoxList
+  /**
+    * Represents a client-side equivalent of the BootstrapColorEdit control.
+    */
+  type BootstrapClientColorEdit = typings.devexpressWeb.ASPxClientColorEdit
+  /**
     * A method that will handle the Invoke event.
     * @param source The event source.
     * @param e An object that contains event data.
@@ -3236,11 +3457,31 @@ package object devexpressWeb {
     * @param e An object that contains event data.
     */
   type BootstrapClientCoordinateSystemChartSeriesSelectionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, scala.Unit]
+  /**
+    * Represents a client-side equivalent of the BootstrapDropDownEdit control.
+    */
+  type BootstrapClientDropDownEdit = typings.devexpressWeb.ASPxClientDropDownEdit
+  /**
+    * Represents a client-side equivalent of the BootstrapFileManager control.
+    */
+  type BootstrapClientFileManager = typings.devexpressWeb.ASPxClientFileManager
   type BootstrapClientFloatingActionButtonContextChangingEventHandler[Sender] = js.Function2[
     /* source */ Sender, 
     /* e */ typings.devexpressWeb.BootstrapClientFloatingActionButtonContextChangingEventArgs, 
     scala.Unit
   ]
+  /**
+    * Represents a client-side equivalent of the BootstrapFormLayout control.
+    */
+  type BootstrapClientFormLayout = typings.devexpressWeb.ASPxClientFormLayout
+  /**
+    * Represents the client-side equivalent of the BootstrapImage control.
+    */
+  type BootstrapClientImage = typings.devexpressWeb.ASPxClientImage
+  /**
+    * Represents a client-side equivalent of the BootstrapMemo control.
+    */
+  type BootstrapClientMemo = typings.devexpressWeb.ASPxClientMemo
   /**
     * A method that will handle client ASPxClientMenuBase.ItemClick events.
     * @param source An object representing the event source. Identifies the BootstrapMenu control that raised the event.
@@ -3262,6 +3503,10 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Provides data for client events related to mouse hovering over menu items.
+    */
+  type BootstrapClientMenuItemMouseEventArgs = typings.devexpressWeb.BootstrapClientMenuItemEventArgs
+  /**
     * A method that will handle the ASPxClientMenuBase.ItemMouseOut and ASPxClientMenuBase.ItemMouseOver events.
     * @param source An object representing the event source. Identifies the BootstrapMenu control that raised the event.
     * @param e An BootstrapClientMenuItemMouseEventArgs object that contains event data.
@@ -3272,13 +3517,50 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Represents a client-side equivalent of the BootstrapPager control.
+    */
+  type BootstrapClientPager = typings.devexpressWeb.ASPxClientPager
+  /**
+    * Represents a client-side equivalent of the BootstrapPieChart control.
+    */
+  type BootstrapClientPieChart = typings.devexpressWeb.BootstrapClientChartBase
+  /**
+    * Represents a client-side equivalent of the BootstrapPolarChart control.
+    */
+  type BootstrapClientPolarChart = typings.devexpressWeb.BootstrapClientChartBase
+  /**
+    * Represents a client-side equivalent of the BootstrapProgressBar control.
+    */
+  type BootstrapClientProgressBar = typings.devexpressWeb.ASPxClientProgressBar
+  /**
+    * Represents a client-side equivalent of the BootstrapRadioButton control.
+    */
+  type BootstrapClientRadioButton = typings.devexpressWeb.BootstrapClientCheckBox
+  /**
+    * Represents a client-side equivalent of the BootstrapRadioButtonList control.
+    */
+  type BootstrapClientRadioButtonList = typings.devexpressWeb.ASPxClientRadioButtonList
+  /**
     * A method that will handle the BootstrapClientRangeSelector.ValueChanged event.
     * @param source The event source.
     * @param e An object that contains event data.
     */
   type BootstrapClientRangeSelectorValueChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, scala.Unit]
+  /**
+    * Represents a client-side equivalent of the BootstrapRichEdit control.
+    */
+  type BootstrapClientRichEdit = typings.devexpressWeb.ASPxClientRichEdit
   type BootstrapClientSparklineTooltipHiddenEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, scala.Unit]
   type BootstrapClientSparklineTooltipShownEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, scala.Unit]
+  /**
+    * Represents a client-side equivalent of the BootstrapSpinEdit control.
+    */
+  type BootstrapClientSpinEdit = typings.devexpressWeb.ASPxClientSpinEdit
+  /**
+    * Represents a client-side equivalent of the BootstrapSpreadsheet control.
+    */
+  type BootstrapClientSpreadsheet = typings.devexpressWeb.ASPxClientSpreadsheet
+  type BootstrapClientSpreadsheetTabControl = typings.devexpressWeb.BootstrapClientTabControlWithClientTabAPI
   /**
     * A method that will handle a tab control's cancelable client events concerning manipulations with a tab.
     * @param source An object representing the event source. Identifies the BootstrapTabControl that raised the event.
@@ -3309,6 +3591,19 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.BootstrapClientTabControlTabEventArgs, 
     scala.Unit
   ]
+  type BootstrapClientTabControlWithClientTabAPI = typings.devexpressWeb.BootstrapClientTabControl
+  /**
+    * Represents a client-side equivalent of the BootstrapTextBox control.
+    */
+  type BootstrapClientTextBox = typings.devexpressWeb.ASPxClientTextBox
+  /**
+    * Represents the client-side equivalent of the BootstrapClientTimeEdit control.
+    */
+  type BootstrapClientTimeEdit = typings.devexpressWeb.ASPxClientTimeEdit
+  /**
+    * Represents the client-side equivalent of the BootstrapToolbar control.
+    */
+  type BootstrapClientToolbar = typings.devexpressWeb.BootstrapClientMenu
   /**
     * A method that will handle the Tree View's cancelable client events, concerning manipulations with nodes.
     * @param source An object representing the event source. Identifies the BootstrapClientTreeView control that raised the event.
@@ -3349,6 +3644,10 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.BootstrapClientTreeViewNodeProcessingModeEventArgs, 
     scala.Unit
   ]
+  /**
+    * Represents a client-side equivalent of the BootstrapUploadControl.
+    */
+  type BootstrapClientUploadControl = typings.devexpressWeb.ASPxClientUploadControl
   /**
     * A method that will handle the BootstrapUIWidgetBase.Disposing event.
     * @param source The event source.
@@ -3408,6 +3707,14 @@ package object devexpressWeb {
     scala.Unit
   ]
   /**
+    * Serves as a base for objects that implement different dialog-related client command functionalities.
+    */
+  type CommandDialogBase = typings.devexpressWeb.CommandBase
+  /**
+    * Contains floating pictures settings.
+    */
+  type FloatingPictureInfo = typings.devexpressWeb.FloatingObjectInfo
+  /**
     * A method that will handle the MVCxClientReportViewer.BeforeExportRequest event.
     * @param source An object which is the event source. Identifies the client object that raised the event.
     * @param e A MVCxClientBeforeExportRequestEventArgs object that contains event data.
@@ -3427,6 +3734,14 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.MVCxClientBeginCallbackEventArgs, 
     scala.Unit
   ]
+  /**
+    * A client-side counterpart of the DateEdit extension.
+    */
+  type MVCxClientDateEdit = typings.devexpressWeb.ASPxClientDateEdit
+  /**
+    * A client-side counterpart of the Gantt extension.
+    */
+  type MVCxClientGantt = typings.devexpressWeb.ASPxClientGantt
   /**
     * A method that will handle the ASPxClientGlobalEvents.BeginCallback event.
     * @param source An object which is the event source. Identifies the client object that raised the event.
@@ -3467,6 +3782,14 @@ package object devexpressWeb {
     /* e */ typings.devexpressWeb.MVCxClientSchedulerToolTipDisplayingEventArgs, 
     scala.Unit
   ]
+  /**
+    * A client-side counterpart of the UploadControl extension.
+    */
+  type MVCxClientUploadControl = typings.devexpressWeb.ASPxClientUploadControl
+  /**
+    * A client-side equivalent of the MVCxWebDocumentViewer class.
+    */
+  type MVCxClientWebDocumentViewer = typings.devexpressWeb.ASPxClientWebDocumentViewer
   /**
     * A method that will handle the ASPxClientScheduler.MenuItemClicked event.
     * @param source The ASPxClientScheduler control which fires the event.

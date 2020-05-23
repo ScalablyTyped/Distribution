@@ -1,5 +1,6 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.Part1Value
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ object radioDemoBasicMod extends js.Object {
   trait BasicRadioExample
     extends Component[js.Any, js.Any, js.Any] {
     @JSName("state")
-    var state_BasicRadioExample: AnonPart1Value = js.native
+    var state_BasicRadioExample: Part1Value = js.native
   }
   
   @js.native

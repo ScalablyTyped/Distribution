@@ -15,7 +15,7 @@ object IStoreOptions {
   @scala.inline
   def apply(clean: js.UndefOr[Boolean] = js.undefined): IStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStoreOptions]
   }
 }

@@ -7,32 +7,29 @@ import scala.scalajs.js.annotation._
 
 trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension
   extends /**
-	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * A caption for the dimension.
-  	 */
+    * A caption for the dimension.
+    */
   var caption: js.UndefOr[String] = js.undefined
   /**
-  	 * An array of hierarchy metadata objects.
-  	 */
+    * An array of hierarchy metadata objects.
+    */
   var hierarchies: js.UndefOr[
     js.Array[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie]
   ] = js.undefined
   /**
-  	 * Optional="false" A unique name for the dimension.
-  	 */
+    * Optional="false" A unique name for the dimension.
+    */
   var name: js.UndefOr[String] = js.undefined
 }
 
 object IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     caption: String = null,
     hierarchies: js.Array[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie] = null,
     name: String = null

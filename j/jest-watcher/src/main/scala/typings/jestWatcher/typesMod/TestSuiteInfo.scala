@@ -13,9 +13,9 @@ trait TestSuiteInfo extends js.Object {
 
 object TestSuiteInfo {
   @scala.inline
-  def apply(config: ProjectConfig, testPath: String, duration: Int | Double = null): TestSuiteInfo = {
+  def apply(config: ProjectConfig, testPath: String, duration: js.UndefOr[Double] = js.undefined): TestSuiteInfo = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSuiteInfo]
   }
 }

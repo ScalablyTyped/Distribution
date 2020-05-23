@@ -23,13 +23,13 @@ trait RecordingGroup extends js.Object {
 object RecordingGroup {
   @scala.inline
   def apply(
-    allSupported: js.UndefOr[scala.Boolean] = js.undefined,
-    includeGlobalResourceTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    allSupported: js.UndefOr[AllSupported] = js.undefined,
+    includeGlobalResourceTypes: js.UndefOr[IncludeGlobalResourceTypes] = js.undefined,
     resourceTypes: ResourceTypeList = null
   ): RecordingGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allSupported)) __obj.updateDynamic("allSupported")(allSupported.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeGlobalResourceTypes)) __obj.updateDynamic("includeGlobalResourceTypes")(includeGlobalResourceTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(allSupported)) __obj.updateDynamic("allSupported")(allSupported.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeGlobalResourceTypes)) __obj.updateDynamic("includeGlobalResourceTypes")(includeGlobalResourceTypes.get.asInstanceOf[js.Any])
     if (resourceTypes != null) __obj.updateDynamic("resourceTypes")(resourceTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordingGroup]
   }

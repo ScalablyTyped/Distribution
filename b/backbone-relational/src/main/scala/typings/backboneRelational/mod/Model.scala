@@ -1,5 +1,6 @@
 package typings.backboneRelational.mod
 
+import typings.backbone.mod.ModelSetOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("backbone-relational", "Model")
 @js.native
 class Model ()
-  extends typings.backbone.mod.Model {
+  extends typings.backbone.mod.Model[js.Any, ModelSetOptions] {
   /**
     * Do not use, prefer TypeScript's extend functionality.
     **/

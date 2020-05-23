@@ -1,11 +1,11 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.Anon1
-import typings.victory.AnonActive
-import typings.victory.AnonEndAngle
-import typings.victory.AnonXBoolean
-import typings.victory.AnonY
+import typings.victory.anon.Active
+import typings.victory.anon.EndAngle
+import typings.victory.anon.XBoolean
+import typings.victory.anon.Y
+import typings.victory.anon.`1`
 import typings.victory.victoryStrings.cornerRadius
 import typings.victory.victoryStrings.padAngle
 import typings.victory.victoryStrings.radius
@@ -33,7 +33,7 @@ trait VictorySliceProps extends VictoryCommonProps {
     * When this prop is given as a function
     * it will be called with datum and active.
     */
-  var innerRadius: js.UndefOr[Double | (js.Function1[/* props */ AnonActive, Double])] = js.undefined
+  var innerRadius: js.UndefOr[Double | (js.Function1[/* props */ Active, Double])] = js.undefined
   /**
     * the angular padding to add to the slice.
     * When this prop is given as a function it will be called with
@@ -62,7 +62,7 @@ trait VictorySliceProps extends VictoryCommonProps {
     * an object specifying the `startAngle`, `endAngle`, `padAngle`,
     * and `data` of the slice
     */
-  var slice: AnonEndAngle
+  var slice: EndAngle
   /**
     * the end angle the slice.
     * When this prop is given as a function it will be called
@@ -84,30 +84,30 @@ trait VictorySliceProps extends VictoryCommonProps {
 object VictorySliceProps {
   @scala.inline
   def apply(
-    slice: AnonEndAngle,
+    slice: EndAngle,
     animate: Boolean | AnimatePropTypeInterface = null,
     containerComponent: ReactElement = null,
     cornerRadius: SliceNumberOrCallback[VictorySliceProps, cornerRadius] = null,
     datum: js.Object = null,
     groupComponent: ReactElement = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizontal: js.UndefOr[Boolean] = js.undefined,
-    innerRadius: Double | (js.Function1[/* props */ AnonActive, Double]) = null,
-    maxDomain: Double | AnonY = null,
-    minDomain: Double | AnonY = null,
+    innerRadius: Double | (js.Function1[/* props */ Active, Double]) = null,
+    maxDomain: Double | Y = null,
+    minDomain: Double | Y = null,
     name: String = null,
     padAngle: SliceNumberOrCallback[VictorySliceProps, padAngle] = null,
     padding: PaddingProps = null,
     pathComponent: ReactElement = null,
     pathFunction: /* props */ VictorySliceProps => String = null,
     radius: SliceNumberOrCallback[VictorySliceProps, radius] = null,
-    scale: ScalePropType | D3Scale | Anon1 = null,
-    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
+    scale: ScalePropType | D3Scale | `1` = null,
+    singleQuadrantDomainPadding: Boolean | XBoolean = null,
     sliceEndAngle: SliceNumberOrCallback[VictorySliceProps, sliceEndAngle] = null,
     sliceStartAngle: SliceNumberOrCallback[VictorySliceProps, sliceStartAngle] = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     theme: VictoryThemeDefinition = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): VictorySliceProps = {
     val __obj = js.Dynamic.literal(slice = slice.asInstanceOf[js.Any])
     if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
@@ -115,8 +115,8 @@ object VictorySliceProps {
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (datum != null) __obj.updateDynamic("datum")(datum.asInstanceOf[js.Any])
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
     if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
     if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
     if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
@@ -130,9 +130,9 @@ object VictorySliceProps {
     if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
     if (sliceEndAngle != null) __obj.updateDynamic("sliceEndAngle")(sliceEndAngle.asInstanceOf[js.Any])
     if (sliceStartAngle != null) __obj.updateDynamic("sliceStartAngle")(sliceStartAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictorySliceProps]
   }
 }

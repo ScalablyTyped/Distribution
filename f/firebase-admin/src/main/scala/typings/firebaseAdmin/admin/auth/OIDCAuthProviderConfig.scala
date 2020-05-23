@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
   * provider configuration interface. An OIDC provider can be created via
   * {@link https://firebase.google.com/docs/reference/admin/node/admin.auth.Auth#createProviderConfig `createProviderConfig()`}.
   */
-trait OIDCAuthProviderConfig extends AuthProviderConfig {
+trait OIDCAuthProviderConfig
+  extends typings.firebaseAdmin.authMod.admin.auth.AuthProviderConfig {
   /**
     * This is the required client ID used to confirm the audience of an OIDC
     * provider's

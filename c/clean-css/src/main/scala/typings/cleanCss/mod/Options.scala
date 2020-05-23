@@ -37,7 +37,7 @@ object Options {
     format: beautify | `keep-breaks` | FormatOptions | `false` = null,
     `inline`: js.Array[String] | `false` = null,
     inlineRequest: RequestOptions | typings.node.httpsMod.RequestOptions = null,
-    inlineTimeout: Int | Double = null,
+    inlineTimeout: js.UndefOr[Double] = js.undefined,
     level: `0` | `1` | `2` | OptimizationsOptions = null,
     rebase: js.UndefOr[Boolean] = js.undefined,
     rebaseTo: String = null,
@@ -50,12 +50,12 @@ object Options {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (inlineRequest != null) __obj.updateDynamic("inlineRequest")(inlineRequest.asInstanceOf[js.Any])
-    if (inlineTimeout != null) __obj.updateDynamic("inlineTimeout")(inlineTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineTimeout)) __obj.updateDynamic("inlineTimeout")(inlineTimeout.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(rebase)) __obj.updateDynamic("rebase")(rebase.asInstanceOf[js.Any])
+    if (!js.isUndefined(rebase)) __obj.updateDynamic("rebase")(rebase.get.asInstanceOf[js.Any])
     if (rebaseTo != null) __obj.updateDynamic("rebaseTo")(rebaseTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMapInlineSources)) __obj.updateDynamic("sourceMapInlineSources")(sourceMapInlineSources.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMapInlineSources)) __obj.updateDynamic("sourceMapInlineSources")(sourceMapInlineSources.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   @scala.inline
@@ -65,7 +65,7 @@ object Options {
     format: beautify | `keep-breaks` | FormatOptions | `false` = null,
     `inline`: js.Array[String] | `false` = null,
     inlineRequest: RequestOptions | typings.node.httpsMod.RequestOptions = null,
-    inlineTimeout: Int | Double = null,
+    inlineTimeout: js.UndefOr[Double] = js.undefined,
     level: `0` | `1` | `2` | OptimizationsOptions = null,
     rebase: js.UndefOr[Boolean] = js.undefined,
     rebaseTo: String = null,
@@ -79,13 +79,13 @@ object Options {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (inlineRequest != null) __obj.updateDynamic("inlineRequest")(inlineRequest.asInstanceOf[js.Any])
-    if (inlineTimeout != null) __obj.updateDynamic("inlineTimeout")(inlineTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineTimeout)) __obj.updateDynamic("inlineTimeout")(inlineTimeout.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(rebase)) __obj.updateDynamic("rebase")(rebase.asInstanceOf[js.Any])
+    if (!js.isUndefined(rebase)) __obj.updateDynamic("rebase")(rebase.get.asInstanceOf[js.Any])
     if (rebaseTo != null) __obj.updateDynamic("rebaseTo")(rebaseTo.asInstanceOf[js.Any])
     if (returnPromise != null) __obj.updateDynamic("returnPromise")(returnPromise.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMapInlineSources)) __obj.updateDynamic("sourceMapInlineSources")(sourceMapInlineSources.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMapInlineSources)) __obj.updateDynamic("sourceMapInlineSources")(sourceMapInlineSources.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

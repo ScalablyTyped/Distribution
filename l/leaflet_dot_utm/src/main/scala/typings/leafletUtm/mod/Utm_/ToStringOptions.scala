@@ -30,14 +30,14 @@ trait ToStringOptions extends js.Object {
 object ToStringOptions {
   @scala.inline
   def apply(
-    decimals: Int | Double = null,
+    decimals: js.UndefOr[Double] = js.undefined,
     format: String = null,
     north: String = null,
     sep: String = null,
     south: String = null
   ): ToStringOptions = {
     val __obj = js.Dynamic.literal()
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (north != null) __obj.updateDynamic("north")(north.asInstanceOf[js.Any])
     if (sep != null) __obj.updateDynamic("sep")(sep.asInstanceOf[js.Any])

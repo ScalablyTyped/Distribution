@@ -28,14 +28,14 @@ object UglifyCSSOptions {
   def apply(
     cuteComments: js.UndefOr[Boolean] = js.undefined,
     expandVars: js.UndefOr[Boolean] = js.undefined,
-    maxLineLen: Int | Double = null,
+    maxLineLen: js.UndefOr[Double] = js.undefined,
     uglyComments: js.UndefOr[Boolean] = js.undefined
   ): UglifyCSSOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cuteComments)) __obj.updateDynamic("cuteComments")(cuteComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandVars)) __obj.updateDynamic("expandVars")(expandVars.asInstanceOf[js.Any])
-    if (maxLineLen != null) __obj.updateDynamic("maxLineLen")(maxLineLen.asInstanceOf[js.Any])
-    if (!js.isUndefined(uglyComments)) __obj.updateDynamic("uglyComments")(uglyComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(cuteComments)) __obj.updateDynamic("cuteComments")(cuteComments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandVars)) __obj.updateDynamic("expandVars")(expandVars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLineLen)) __obj.updateDynamic("maxLineLen")(maxLineLen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uglyComments)) __obj.updateDynamic("uglyComments")(uglyComments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UglifyCSSOptions]
   }
 }

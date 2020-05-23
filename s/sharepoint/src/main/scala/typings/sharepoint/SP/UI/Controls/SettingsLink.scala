@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.UI.Controls.SettingsLink")
-@js.native
-class SettingsLink () extends ISettingsLink {
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /* CompleteClass */
-  override var linkUrl: String = js.native
+trait SettingsLink extends ISettingsLink
+
+object SettingsLink {
+  @scala.inline
+  def apply(displayName: String, linkUrl: String): SettingsLink = {
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], linkUrl = linkUrl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SettingsLink]
+  }
 }
 

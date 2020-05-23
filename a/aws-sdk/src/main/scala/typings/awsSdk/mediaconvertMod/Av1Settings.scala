@@ -62,28 +62,28 @@ object Av1Settings {
     AdaptiveQuantization: Av1AdaptiveQuantization = null,
     FramerateControl: Av1FramerateControl = null,
     FramerateConversionAlgorithm: Av1FramerateConversionAlgorithm = null,
-    FramerateDenominator: Int | Double = null,
-    FramerateNumerator: Int | Double = null,
-    GopSize: Int | Double = null,
-    MaxBitrate: Int | Double = null,
-    NumberBFramesBetweenReferenceFrames: Int | Double = null,
+    FramerateDenominator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
+    FramerateNumerator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
+    GopSize: js.UndefOr[doubleMin0] = js.undefined,
+    MaxBitrate: js.UndefOr[integerMin1000Max1152000000] = js.undefined,
+    NumberBFramesBetweenReferenceFrames: js.UndefOr[integerMin7Max15] = js.undefined,
     QvbrSettings: Av1QvbrSettings = null,
     RateControlMode: Av1RateControlMode = null,
-    Slices: Int | Double = null,
+    Slices: js.UndefOr[integerMin1Max32] = js.undefined,
     SpatialAdaptiveQuantization: Av1SpatialAdaptiveQuantization = null
   ): Av1Settings = {
     val __obj = js.Dynamic.literal()
     if (AdaptiveQuantization != null) __obj.updateDynamic("AdaptiveQuantization")(AdaptiveQuantization.asInstanceOf[js.Any])
     if (FramerateControl != null) __obj.updateDynamic("FramerateControl")(FramerateControl.asInstanceOf[js.Any])
     if (FramerateConversionAlgorithm != null) __obj.updateDynamic("FramerateConversionAlgorithm")(FramerateConversionAlgorithm.asInstanceOf[js.Any])
-    if (FramerateDenominator != null) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.asInstanceOf[js.Any])
-    if (FramerateNumerator != null) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.asInstanceOf[js.Any])
-    if (GopSize != null) __obj.updateDynamic("GopSize")(GopSize.asInstanceOf[js.Any])
-    if (MaxBitrate != null) __obj.updateDynamic("MaxBitrate")(MaxBitrate.asInstanceOf[js.Any])
-    if (NumberBFramesBetweenReferenceFrames != null) __obj.updateDynamic("NumberBFramesBetweenReferenceFrames")(NumberBFramesBetweenReferenceFrames.asInstanceOf[js.Any])
+    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GopSize)) __obj.updateDynamic("GopSize")(GopSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberBFramesBetweenReferenceFrames)) __obj.updateDynamic("NumberBFramesBetweenReferenceFrames")(NumberBFramesBetweenReferenceFrames.get.asInstanceOf[js.Any])
     if (QvbrSettings != null) __obj.updateDynamic("QvbrSettings")(QvbrSettings.asInstanceOf[js.Any])
     if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
-    if (Slices != null) __obj.updateDynamic("Slices")(Slices.asInstanceOf[js.Any])
+    if (!js.isUndefined(Slices)) __obj.updateDynamic("Slices")(Slices.get.asInstanceOf[js.Any])
     if (SpatialAdaptiveQuantization != null) __obj.updateDynamic("SpatialAdaptiveQuantization")(SpatialAdaptiveQuantization.asInstanceOf[js.Any])
     __obj.asInstanceOf[Av1Settings]
   }

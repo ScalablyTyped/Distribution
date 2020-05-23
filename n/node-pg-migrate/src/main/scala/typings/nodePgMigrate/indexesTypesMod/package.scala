@@ -11,7 +11,7 @@ package object indexesTypesMod {
     /* options */ js.UndefOr[typings.nodePgMigrate.indexesTypesMod.CreateIndexOptions], 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type CreateIndex = typings.nodePgMigrate.indexesTypesMod.CreateIndexFn with typings.nodePgMigrate.AnonReverseCreateIndexFn
+  type CreateIndex = typings.nodePgMigrate.indexesTypesMod.CreateIndexFn with typings.nodePgMigrate.anon.ReverseCreateIndexFn
   type CreateIndexFn = js.Function3[
     /* tableName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* columns */ java.lang.String | js.Array[java.lang.String], 

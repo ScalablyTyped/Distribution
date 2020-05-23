@@ -11,10 +11,10 @@ trait FieldMask extends js.Object {
 
 object FieldMask {
   @scala.inline
-  def apply(fields: js.Array[FieldMask] = null, id: Int | Double = null): FieldMask = {
+  def apply(fields: js.Array[FieldMask] = null, id: js.UndefOr[Double] = js.undefined): FieldMask = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldMask]
   }
 }

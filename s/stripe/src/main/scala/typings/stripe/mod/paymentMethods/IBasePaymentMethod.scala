@@ -1,6 +1,6 @@
 package typings.stripe.mod.paymentMethods
 
-import typings.stripe.AnonEmail
+import typings.stripe.anon.Email
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
 import typings.stripe.mod.customers.ICustomer
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait IBasePaymentMethod extends IResourceObject {
   /** Billing information associated with the PaymentMethod that may be used or required by particular types of payment methods. */
-  var billing_details: Null | AnonEmail
+  var billing_details: Null | Email
   /** Time at which the object was created. Measured in seconds since the Unix epoch. */
   var created: Double
   /** The ID of the Customer to which this PaymentMethod is saved. This will not be set when the PaymentMethod has not been saved to a Customer. [Expandable] */
@@ -32,13 +32,11 @@ object IBasePaymentMethod {
     livemode: Boolean,
     metadata: IMetadata,
     `object`: payment_method,
-    billing_details: AnonEmail = null,
+    billing_details: Email = null,
     customer: String | ICustomer = null
   ): IBasePaymentMethod = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], billing_details = billing_details.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBasePaymentMethod]
   }
 }

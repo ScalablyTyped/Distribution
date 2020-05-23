@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Prescription for vision correction products for a patient
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait VisionPrescription extends DomainResource {
   /**
     * Contains extended information for property 'dateWritten'.

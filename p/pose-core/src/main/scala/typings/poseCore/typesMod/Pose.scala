@@ -25,7 +25,7 @@ trait Pose[A, TD]
 object Pose {
   @scala.inline
   def apply[A, TD](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     afterChildren: Boolean | BooleanPropFactory = null,
     applyAtEnd: ApplyMap = null,
     applyAtStart: ApplyMap = null,

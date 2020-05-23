@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Line")
 @js.native
-class Line protected () extends js.Object {
+trait Line extends js.Object {
   @JSName("Access.Line_typekey")
   var AccessDotLine_typekey: Line = js.native
   val Application: typings.activexAccess.Access.Application = js.native

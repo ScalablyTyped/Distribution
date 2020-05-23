@@ -1,6 +1,6 @@
 package typings.jsreportChromePdf.mod
 
-import typings.jsreportChromePdf.AnonHeight
+import typings.jsreportChromePdf.anon.Height
 import typings.jsreportChromePdf.jsreportChromePdfStrings.base64
 import typings.jsreportChromePdf.jsreportChromePdfStrings.binary
 import typings.jsreportChromePdf.jsreportChromePdfStrings.jpeg
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
 // https://jsreport.net/learn/chrome-image
 // https://github.com/puppeteer/puppeteer/blob/v1.11.0/docs/api.md#pagescreenshotoptions
 trait ChromeImage extends js.Object {
-  var clip: AnonHeight
+  var clip: Height
   var encoding: base64 | binary
-  	// 0-100
+      // 0-100
   var fullPage: Boolean
   var omitBackground: Boolean
   var path: String
@@ -25,7 +25,7 @@ trait ChromeImage extends js.Object {
 object ChromeImage {
   @scala.inline
   def apply(
-    clip: AnonHeight,
+    clip: Height,
     encoding: base64 | binary,
     fullPage: Boolean,
     omitBackground: Boolean,

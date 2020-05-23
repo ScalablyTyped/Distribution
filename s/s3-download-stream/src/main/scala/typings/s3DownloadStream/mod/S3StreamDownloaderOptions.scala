@@ -15,10 +15,15 @@ trait S3StreamDownloaderOptions extends js.Object {
 
 object S3StreamDownloaderOptions {
   @scala.inline
-  def apply(client: S3, params: GetObjectRequest, chunkSize: String = null, concurrency: Int | Double = null): S3StreamDownloaderOptions = {
+  def apply(
+    client: S3,
+    params: GetObjectRequest,
+    chunkSize: String = null,
+    concurrency: js.UndefOr[Double] = js.undefined
+  ): S3StreamDownloaderOptions = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3StreamDownloaderOptions]
   }
 }

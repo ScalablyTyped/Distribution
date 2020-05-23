@@ -16,14 +16,14 @@ object HumaneMessageOptions {
   def apply(
     addnCls: String = null,
     clickToClose: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     waitForMove: js.UndefOr[Boolean] = js.undefined
   ): HumaneMessageOptions = {
     val __obj = js.Dynamic.literal()
     if (addnCls != null) __obj.updateDynamic("addnCls")(addnCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForMove)) __obj.updateDynamic("waitForMove")(waitForMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForMove)) __obj.updateDynamic("waitForMove")(waitForMove.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumaneMessageOptions]
   }
 }

@@ -15,34 +15,34 @@ trait ComputedEffectTiming extends EffectTiming {
 object ComputedEffectTiming {
   @scala.inline
   def apply(
-    activeDuration: Int | Double = null,
-    currentIteration: Int | Double = null,
-    delay: Int | Double = null,
+    activeDuration: js.UndefOr[Double] = js.undefined,
+    currentIteration: js.UndefOr[Null | Double] = js.undefined,
+    delay: js.UndefOr[Double] = js.undefined,
     direction: PlaybackDirection = null,
     duration: Double | java.lang.String = null,
     easing: java.lang.String = null,
-    endDelay: Int | Double = null,
-    endTime: Int | Double = null,
+    endDelay: js.UndefOr[Double] = js.undefined,
+    endTime: js.UndefOr[Double] = js.undefined,
     fill: FillMode = null,
-    iterationStart: Int | Double = null,
-    iterations: Int | Double = null,
-    localTime: Int | Double = null,
-    progress: Int | Double = null
+    iterationStart: js.UndefOr[Double] = js.undefined,
+    iterations: js.UndefOr[Double] = js.undefined,
+    localTime: js.UndefOr[Null | Double] = js.undefined,
+    progress: js.UndefOr[Null | Double] = js.undefined
   ): ComputedEffectTiming = {
     val __obj = js.Dynamic.literal()
-    if (activeDuration != null) __obj.updateDynamic("activeDuration")(activeDuration.asInstanceOf[js.Any])
-    if (currentIteration != null) __obj.updateDynamic("currentIteration")(currentIteration.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeDuration)) __obj.updateDynamic("activeDuration")(activeDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentIteration)) __obj.updateDynamic("currentIteration")(currentIteration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (endDelay != null) __obj.updateDynamic("endDelay")(endDelay.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(endDelay)) __obj.updateDynamic("endDelay")(endDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (iterationStart != null) __obj.updateDynamic("iterationStart")(iterationStart.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (localTime != null) __obj.updateDynamic("localTime")(localTime.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterationStart)) __obj.updateDynamic("iterationStart")(iterationStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(localTime)) __obj.updateDynamic("localTime")(localTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputedEffectTiming]
   }
 }

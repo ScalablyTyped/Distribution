@@ -20,7 +20,7 @@ trait PlusWebviewAnimationTypeShow extends js.Object {
   /**
     * 从透明到不透明逐渐显示效果
     * 页面从完全透明到不透明逐渐显示。
-    * 	对应关闭动画"fade-out"。
+    *     对应关闭动画"fade-out"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -28,8 +28,8 @@ trait PlusWebviewAnimationTypeShow extends js.Object {
   /**
     * 无动画效果
     * 立即显示页面，无任何动画效果，页面显示默认的动画效果。
-    * 	此效果忽略动画时间参数，立即显示。
-    * 	对应关闭动画"none"。
+    *     此效果忽略动画时间参数，立即显示。
+    *     对应关闭动画"none"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -37,7 +37,7 @@ trait PlusWebviewAnimationTypeShow extends js.Object {
   /**
     * 从右侧平移入栈动画效果
     * 页面从屏幕右侧滑入显示，同时上一个页面带阴影效果从屏幕左侧滑出隐藏。
-    * 	对应关闭动画"pop-out"。
+    *     对应关闭动画"pop-out"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -45,7 +45,7 @@ trait PlusWebviewAnimationTypeShow extends js.Object {
   /**
     * 从下侧竖向滑动效果
     * 页面从屏幕下侧向上竖向滑动显示。
-    * 	对应关闭动画"slide-out-bottom"。
+    *     对应关闭动画"slide-out-bottom"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -53,7 +53,7 @@ trait PlusWebviewAnimationTypeShow extends js.Object {
   /**
     * 从左侧横向滑动效果
     * 页面从屏幕左侧向右横向滑动显示。
-    * 	对应关闭动画"slide-out-left"。
+    *     对应关闭动画"slide-out-left"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -61,7 +61,7 @@ trait PlusWebviewAnimationTypeShow extends js.Object {
   /**
     * 从右侧横向滑动效果
     * 页面从屏幕右侧外向内横向滑动显示。
-    * 	对应关闭动画"slide-out-right"。
+    *     对应关闭动画"slide-out-right"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -69,7 +69,7 @@ trait PlusWebviewAnimationTypeShow extends js.Object {
   /**
     * 从上侧竖向滑动效果
     * 页面从屏幕上侧向下竖向滑动显示。
-    * 	对应关闭动画"slide-out-top"。
+    *     对应关闭动画"slide-out-top"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -77,7 +77,7 @@ trait PlusWebviewAnimationTypeShow extends js.Object {
   /**
     * 从小到大逐渐放大并且从透明到不透明逐渐显示效果
     * 页面在屏幕中间从小到大逐渐放大并且从透明到不透明逐渐显示。
-    * 	对应关闭动画"zoom-fade-in"。
+    *     对应关闭动画"zoom-fade-in"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -85,7 +85,7 @@ trait PlusWebviewAnimationTypeShow extends js.Object {
   /**
     * 从小到大逐渐放大显示效果
     * 页面在屏幕中间从小到大逐渐放大显示。
-    * 	对应关闭动画"zoom-in"。
+    *     对应关闭动画"zoom-in"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */

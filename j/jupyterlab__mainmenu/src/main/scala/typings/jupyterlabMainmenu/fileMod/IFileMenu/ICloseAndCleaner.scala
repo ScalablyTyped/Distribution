@@ -28,7 +28,7 @@ trait ICloseAndCleaner[T /* <: Widget */] extends IMenuExtender[T] {
 
 object ICloseAndCleaner {
   @scala.inline
-  def apply[T /* <: Widget */](
+  def apply[T](
     action: String,
     closeAndCleanup: T => js.Promise[Unit],
     name: String,

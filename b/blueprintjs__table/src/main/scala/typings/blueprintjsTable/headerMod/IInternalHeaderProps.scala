@@ -1,11 +1,11 @@
 package typings.blueprintjsTable.headerMod
 
-import typings.blueprintjsTable.draggableMod.IClientCoordinates
+import typings.blueprintjsTable.dragTypesMod.IClientCoordinates
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.blueprintjsTable.esmRegionsMod.RegionCardinality
 import typings.blueprintjsTable.resizeHandleMod.Orientation
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

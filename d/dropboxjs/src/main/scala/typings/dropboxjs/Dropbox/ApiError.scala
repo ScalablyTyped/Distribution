@@ -1,35 +1,21 @@
 package typings.dropboxjs.Dropbox
 
-import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Dropbox.ApiError")
-@js.native
-class ApiError protected () extends js.Object {
-  def this(xhr: XMLHttpRequest, method: String, url: String) = this()
-  var method: String = js.native
-  var responseText: String = js.native
-  var status: Double = js.native
-  var url: String = js.native
+trait ApiError extends js.Object {
+  var method: String
+  var responseText: String
+  var status: Double
+  var url: String
 }
 
-/* static members */
-@JSGlobal("Dropbox.ApiError")
-@js.native
-object ApiError extends js.Object {
-  var CONFLICT: Double = js.native
-  var INVALID_METHOD: Double = js.native
-  var INVALID_PARAM: Double = js.native
-  var INVALID_TOKEN: Double = js.native
-  var NETWORK_ERROR: Double = js.native
-  var NOT_ACCEPTABLE: Double = js.native
-  var NOT_FOUND: Double = js.native
-  var NO_CONTENT: Double = js.native
-  var OAUTH_ERROR: Double = js.native
-  var OVER_QUOTA: Double = js.native
-  var RATE_LIMITED: Double = js.native
-  var SERVER_ERROR: Double = js.native
+object ApiError {
+  @scala.inline
+  def apply(method: String, responseText: String, status: Double, url: String): ApiError = {
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApiError]
+  }
 }
 

@@ -36,7 +36,7 @@ object PurchasedItem {
     transactionId: String,
     appItemId: String = null,
     bundleId: String = null,
-    cancellationDate: Int | Double = null,
+    cancellationDate: js.UndefOr[Double] = js.undefined,
     expirationDate: Double | String = null,
     isTrial: js.UndefOr[Boolean] = js.undefined,
     orderId: String = null,
@@ -46,9 +46,9 @@ object PurchasedItem {
     val __obj = js.Dynamic.literal(productId = productId.asInstanceOf[js.Any], purchaseDate = purchaseDate.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
     if (appItemId != null) __obj.updateDynamic("appItemId")(appItemId.asInstanceOf[js.Any])
     if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (cancellationDate != null) __obj.updateDynamic("cancellationDate")(cancellationDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancellationDate)) __obj.updateDynamic("cancellationDate")(cancellationDate.get.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTrial)) __obj.updateDynamic("isTrial")(isTrial.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTrial)) __obj.updateDynamic("isTrial")(isTrial.get.asInstanceOf[js.Any])
     if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
     if (originalPurchaseDate != null) __obj.updateDynamic("originalPurchaseDate")(originalPurchaseDate.asInstanceOf[js.Any])
     if (originalTransactionId != null) __obj.updateDynamic("originalTransactionId")(originalTransactionId.asInstanceOf[js.Any])

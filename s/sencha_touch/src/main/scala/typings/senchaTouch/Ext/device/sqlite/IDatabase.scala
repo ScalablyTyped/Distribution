@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 
 trait IDatabase extends IBase {
   /** [Method] Verifies and changes the version of the database at the same time as doing a schema update with a Ext device sqlite S
-  		* @param config Object The object which contains the following config options:
-  		*/
+    * @param config Object The object which contains the following config options:
+    */
   var changeVersion: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Returns the current version of the database
-  		* @returns String The database current version.
-  		*/
+    * @returns String The database current version.
+    */
   var getVersion: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Works the same way as transaction but performs a Ext device sqlite SQLTransaction instance in a read only mode
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var readTransaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Performs a Ext device sqlite SQLTransaction instance in a read write mode
-  		* @param config Object The object which contains the following config options:
-  		*/
+    * @param config Object The object which contains the following config options:
+    */
   var transaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -69,7 +69,7 @@ object IDatabase {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (readTransaction != null) __obj.updateDynamic("readTransaction")(js.Any.fromFunction1(readTransaction))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (transaction != null) __obj.updateDynamic("transaction")(js.Any.fromFunction1(transaction))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.qunitDom.assertionsMod
 
-import typings.qunitDom.AnonAny
+import typings.qunitDom.anon.Any
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -240,8 +240,8 @@ trait DOMAssertions extends js.Object {
   def hasAria(name: String): DOMAssertions = js.native
   def hasAria(name: String, value: String): DOMAssertions = js.native
   def hasAria(name: String, value: String, message: String): DOMAssertions = js.native
-  def hasAria(name: String, value: AnonAny): DOMAssertions = js.native
-  def hasAria(name: String, value: AnonAny, message: String): DOMAssertions = js.native
+  def hasAria(name: String, value: Any): DOMAssertions = js.native
+  def hasAria(name: String, value: Any, message: String): DOMAssertions = js.native
   def hasAria(name: String, value: RegExp): DOMAssertions = js.native
   def hasAria(name: String, value: RegExp, message: String): DOMAssertions = js.native
   /**
@@ -271,8 +271,8 @@ trait DOMAssertions extends js.Object {
     */
   def hasAttribute(name: String, value: String): DOMAssertions = js.native
   def hasAttribute(name: String, value: String, message: String): DOMAssertions = js.native
-  def hasAttribute(name: String, value: AnonAny): DOMAssertions = js.native
-  def hasAttribute(name: String, value: AnonAny, message: String): DOMAssertions = js.native
+  def hasAttribute(name: String, value: Any): DOMAssertions = js.native
+  def hasAttribute(name: String, value: Any, message: String): DOMAssertions = js.native
   def hasAttribute(name: String, value: RegExp): DOMAssertions = js.native
   def hasAttribute(name: String, value: RegExp, message: String): DOMAssertions = js.native
   /**
@@ -417,8 +417,8 @@ trait DOMAssertions extends js.Object {
     */
   def hasText(expected: String): DOMAssertions = js.native
   def hasText(expected: String, message: String): DOMAssertions = js.native
-  def hasText(expected: AnonAny): DOMAssertions = js.native
-  def hasText(expected: AnonAny, message: String): DOMAssertions = js.native
+  def hasText(expected: Any): DOMAssertions = js.native
+  def hasText(expected: Any, message: String): DOMAssertions = js.native
   def hasText(expected: RegExp): DOMAssertions = js.native
   def hasText(expected: RegExp, message: String): DOMAssertions = js.native
   def hasTextContaining(expected: String): DOMAssertions = js.native
@@ -442,8 +442,8 @@ trait DOMAssertions extends js.Object {
   def hasValue(): DOMAssertions = js.native
   def hasValue(expected: String): DOMAssertions = js.native
   def hasValue(expected: String, message: String): DOMAssertions = js.native
-  def hasValue(expected: AnonAny): DOMAssertions = js.native
-  def hasValue(expected: AnonAny, message: String): DOMAssertions = js.native
+  def hasValue(expected: Any): DOMAssertions = js.native
+  def hasValue(expected: Any, message: String): DOMAssertions = js.native
   def hasValue(expected: RegExp): DOMAssertions = js.native
   def hasValue(expected: RegExp, message: String): DOMAssertions = js.native
   /**
@@ -668,8 +668,8 @@ trait DOMAssertions extends js.Object {
   def matchesSelector(compareSelector: String, message: String): DOMAssertions = js.native
   def matchesText(expected: String): DOMAssertions = js.native
   def matchesText(expected: String, message: String): DOMAssertions = js.native
-  def matchesText(expected: AnonAny): DOMAssertions = js.native
-  def matchesText(expected: AnonAny, message: String): DOMAssertions = js.native
+  def matchesText(expected: Any): DOMAssertions = js.native
+  def matchesText(expected: Any, message: String): DOMAssertions = js.native
   def matchesText(expected: RegExp): DOMAssertions = js.native
   def matchesText(expected: RegExp, message: String): DOMAssertions = js.native
   /**

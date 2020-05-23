@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line no-unnecessary-class
 @JSImport("@rdfjs/dataset/DatasetCore", JSImport.Namespace)
 @js.native
-class ^ protected ()
-  extends typings.rdfJs.mod.DatasetCore[Quad, Quad] {
-  def this(quads: js.Array[Quad]) = this()
+class ^[InQuad] protected ()
+  extends typings.rdfJs.mod.DatasetCore[Quad, InQuad] {
+  def this(quads: js.Array[InQuad]) = this()
 }
 

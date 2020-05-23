@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,11 @@ trait PushSubscriptionOptions extends js.Object {
   val userVisibleOnly: scala.Boolean
 }
 
-@JSGlobal("PushSubscriptionOptions")
-@js.native
-object PushSubscriptionOptions extends Instantiable0[PushSubscriptionOptions]
+object PushSubscriptionOptions {
+  @scala.inline
+  def apply(userVisibleOnly: scala.Boolean, applicationServerKey: ArrayBuffer = null): PushSubscriptionOptions = {
+    val __obj = js.Dynamic.literal(userVisibleOnly = userVisibleOnly.asInstanceOf[js.Any], applicationServerKey = applicationServerKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PushSubscriptionOptions]
+  }
+}
 

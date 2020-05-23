@@ -17,13 +17,13 @@ trait IClientBatchStatusRequest extends js.Object {
 object IClientBatchStatusRequest {
   @scala.inline
   def apply(
-    batchIds: js.Array[String] = null,
-    timeout: Int | Double = null,
-    wait: js.UndefOr[Boolean] = js.undefined
+    batchIds: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    timeout: js.UndefOr[Null | Double] = js.undefined,
+    wait: js.UndefOr[Null | Boolean] = js.undefined
   ): IClientBatchStatusRequest = {
     val __obj = js.Dynamic.literal()
-    if (batchIds != null) __obj.updateDynamic("batchIds")(batchIds.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchIds)) __obj.updateDynamic("batchIds")(batchIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBatchStatusRequest]
   }

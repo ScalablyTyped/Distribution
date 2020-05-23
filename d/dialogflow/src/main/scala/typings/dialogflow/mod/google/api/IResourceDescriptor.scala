@@ -26,20 +26,22 @@ trait IResourceDescriptor extends js.Object {
 object IResourceDescriptor {
   @scala.inline
   def apply(
-    history: History | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.api.ResourceDescriptor.History * / any */ String) = null,
-    nameField: String = null,
-    pattern: js.Array[String] = null,
-    plural: String = null,
-    singular: String = null,
-    `type`: String = null
+    history: js.UndefOr[
+      Null | History | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.api.ResourceDescriptor.History * / any */ String)
+    ] = js.undefined,
+    nameField: js.UndefOr[Null | String] = js.undefined,
+    pattern: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    plural: js.UndefOr[Null | String] = js.undefined,
+    singular: js.UndefOr[Null | String] = js.undefined,
+    `type`: js.UndefOr[Null | String] = js.undefined
   ): IResourceDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (nameField != null) __obj.updateDynamic("nameField")(nameField.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (plural != null) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
-    if (singular != null) __obj.updateDynamic("singular")(singular.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (!js.isUndefined(nameField)) __obj.updateDynamic("nameField")(nameField.asInstanceOf[js.Any])
+    if (!js.isUndefined(pattern)) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(plural)) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
+    if (!js.isUndefined(singular)) __obj.updateDynamic("singular")(singular.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceDescriptor]
   }
 }

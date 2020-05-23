@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class FileCopier () extends js.Object {
   def this(isUseHardLinkFunction: js.Function1[/* file */ String, Boolean]) = this()
-  def this(isUseHardLinkFunction: js.UndefOr[scala.Nothing], transformer: FileTransformer) = this()
   def this(isUseHardLinkFunction: js.Function1[/* file */ String, Boolean], transformer: FileTransformer) = this()
   def this(isUseHardLinkFunction: Null, transformer: FileTransformer) = this()
   var isUseHardLink: Boolean = js.native

@@ -12,9 +12,9 @@ trait IHttp extends js.Object {
 
 object IHttp {
   @scala.inline
-  def apply(rules: js.Array[IHttpRule] = null): IHttp = {
+  def apply(rules: js.UndefOr[Null | js.Array[IHttpRule]] = js.undefined): IHttp = {
     val __obj = js.Dynamic.literal()
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (!js.isUndefined(rules)) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHttp]
   }
 }

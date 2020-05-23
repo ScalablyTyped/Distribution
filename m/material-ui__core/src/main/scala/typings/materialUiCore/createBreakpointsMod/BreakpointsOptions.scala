@@ -25,7 +25,7 @@ object BreakpointsOptions {
     down: /* key */ Breakpoint | Double => String = null,
     keys: js.Array[Breakpoint] = null,
     only: /* key */ Breakpoint => String = null,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     unit: String = null,
     up: /* key */ Breakpoint | Double => String = null,
     values: BreakpointValues = null,
@@ -36,7 +36,7 @@ object BreakpointsOptions {
     if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (only != null) __obj.updateDynamic("only")(js.Any.fromFunction1(only))
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction1(up))
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])

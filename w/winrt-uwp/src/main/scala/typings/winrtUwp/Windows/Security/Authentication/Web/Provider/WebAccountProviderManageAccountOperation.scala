@@ -6,14 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a manage account operation. */
-@JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountProviderManageAccountOperation")
-@js.native
-abstract class WebAccountProviderManageAccountOperation () extends js.Object {
+trait WebAccountProviderManageAccountOperation extends js.Object {
   /** Gets the kind of web provider operation. */
-  var kind: WebAccountProviderOperationKind = js.native
+  var kind: WebAccountProviderOperationKind
   /** Gets the web account to manage. */
-  var webAccount: WebAccount = js.native
+  var webAccount: WebAccount
   /** Informs the activating application that the operation completed successfully. */
-  def reportCompleted(): Unit = js.native
+  def reportCompleted(): Unit
+}
+
+object WebAccountProviderManageAccountOperation {
+  @scala.inline
+  def apply(kind: WebAccountProviderOperationKind, reportCompleted: () => Unit, webAccount: WebAccount): WebAccountProviderManageAccountOperation = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], reportCompleted = js.Any.fromFunction0(reportCompleted), webAccount = webAccount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebAccountProviderManageAccountOperation]
+  }
 }
 

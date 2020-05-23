@@ -55,15 +55,15 @@ object PaceOptions {
   @scala.inline
   def apply(
     ajax: Boolean | PaceAjaxOptions = null,
-    catchupTime: Int | Double = null,
+    catchupTime: js.UndefOr[Double] = js.undefined,
     document: Boolean | String = null,
-    easeFactor: Int | Double = null,
+    easeFactor: js.UndefOr[Double] = js.undefined,
     elements: Boolean | PaceElementsOptions = null,
     eventLag: Boolean | PaceEventLagOptions = null,
-    ghostTime: Int | Double = null,
-    initialRate: Int | Double = null,
-    maxProgressPerFrame: Int | Double = null,
-    minTime: Int | Double = null,
+    ghostTime: js.UndefOr[Double] = js.undefined,
+    initialRate: js.UndefOr[Double] = js.undefined,
+    maxProgressPerFrame: js.UndefOr[Double] = js.undefined,
+    minTime: js.UndefOr[Double] = js.undefined,
     restartOnPushState: js.UndefOr[Boolean] = js.undefined,
     restartOnRequestAfter: Boolean | Double = null,
     startOnPageLoad: js.UndefOr[Boolean] = js.undefined,
@@ -71,18 +71,18 @@ object PaceOptions {
   ): PaceOptions = {
     val __obj = js.Dynamic.literal()
     if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
-    if (catchupTime != null) __obj.updateDynamic("catchupTime")(catchupTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(catchupTime)) __obj.updateDynamic("catchupTime")(catchupTime.get.asInstanceOf[js.Any])
     if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (easeFactor != null) __obj.updateDynamic("easeFactor")(easeFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(easeFactor)) __obj.updateDynamic("easeFactor")(easeFactor.get.asInstanceOf[js.Any])
     if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
     if (eventLag != null) __obj.updateDynamic("eventLag")(eventLag.asInstanceOf[js.Any])
-    if (ghostTime != null) __obj.updateDynamic("ghostTime")(ghostTime.asInstanceOf[js.Any])
-    if (initialRate != null) __obj.updateDynamic("initialRate")(initialRate.asInstanceOf[js.Any])
-    if (maxProgressPerFrame != null) __obj.updateDynamic("maxProgressPerFrame")(maxProgressPerFrame.asInstanceOf[js.Any])
-    if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(restartOnPushState)) __obj.updateDynamic("restartOnPushState")(restartOnPushState.asInstanceOf[js.Any])
+    if (!js.isUndefined(ghostTime)) __obj.updateDynamic("ghostTime")(ghostTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialRate)) __obj.updateDynamic("initialRate")(initialRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxProgressPerFrame)) __obj.updateDynamic("maxProgressPerFrame")(maxProgressPerFrame.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTime)) __obj.updateDynamic("minTime")(minTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restartOnPushState)) __obj.updateDynamic("restartOnPushState")(restartOnPushState.get.asInstanceOf[js.Any])
     if (restartOnRequestAfter != null) __obj.updateDynamic("restartOnRequestAfter")(restartOnRequestAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOnPageLoad)) __obj.updateDynamic("startOnPageLoad")(startOnPageLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOnPageLoad)) __obj.updateDynamic("startOnPageLoad")(startOnPageLoad.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaceOptions]
   }

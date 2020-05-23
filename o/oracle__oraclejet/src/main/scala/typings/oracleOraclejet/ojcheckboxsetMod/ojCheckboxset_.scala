@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojcheckboxsetMod
 
-import typings.oracleOraclejet.AnonRequired
+import typings.oracleOraclejet.anon.Required
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojcheckboxsetMod.ojCheckboxset.OptionContext
 import typings.oracleOraclejet.ojcheckboxsetMod.ojCheckboxset.OptionsKeys
@@ -53,7 +53,7 @@ trait ojCheckboxset_[K, D]
   var optionsKeys: js.UndefOr[OptionsKeys] = js.native
   var required: Boolean = js.native
   @JSName("translations")
-  var translations_ojCheckboxset_ : AnonRequired = js.native
+  var translations_ojCheckboxset_ : Required = js.native
   @JSName("value")
   var value_ojCheckboxset_ : js.Array[_] = js.native
   @JSName("addEventListener")
@@ -155,7 +155,7 @@ trait ojCheckboxset_[K, D]
   @JSName("setProperty")
   def setProperty_required(property: required, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonRequired): Unit = js.native
+  def setProperty_translations(property: translations, value: Required): Unit = js.native
   def validate(): js.Promise[String] = js.native
 }
 

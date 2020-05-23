@@ -10,27 +10,27 @@ import scala.scalajs.js.annotation._
 
 trait IContinuous extends ILayout {
   /** [Method] Returns the value of adjustMaximumByMajorUnit
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAdjustMaximumByMajorUnit: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of adjustMinimumByMajorUnit
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAdjustMinimumByMajorUnit: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Sets the value of adjustMaximumByMajorUnit
-  		* @param adjustMaximumByMajorUnit Boolean The new value.
-  		*/
+    * @param adjustMaximumByMajorUnit Boolean The new value.
+    */
   var setAdjustMaximumByMajorUnit: js.UndefOr[js.Function1[/* adjustMaximumByMajorUnit */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of adjustMinimumByMajorUnit
-  		* @param adjustMinimumByMajorUnit Boolean The new value.
-  		*/
+    * @param adjustMinimumByMajorUnit Boolean The new value.
+    */
   var setAdjustMinimumByMajorUnit: js.UndefOr[js.Function1[/* adjustMinimumByMajorUnit */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Snaps the data bound to the axis to meaningful tick marks
-  		* @param context Object
-  		* @param min Object
-  		* @param max Object
-  		* @param estStepSize Object
-  		*/
+    * @param context Object
+    * @param min Object
+    * @param max Object
+    * @param estStepSize Object
+    */
   @JSName("snapEnds")
   var snapEnds_IContinuous: js.UndefOr[
     js.Function4[
@@ -103,7 +103,7 @@ object IContinuous {
     if (setAdjustMaximumByMajorUnit != null) __obj.updateDynamic("setAdjustMaximumByMajorUnit")(js.Any.fromFunction1(setAdjustMaximumByMajorUnit))
     if (setAdjustMinimumByMajorUnit != null) __obj.updateDynamic("setAdjustMinimumByMajorUnit")(js.Any.fromFunction1(setAdjustMinimumByMajorUnit))
     if (setAxis != null) __obj.updateDynamic("setAxis")(js.Any.fromFunction1(setAxis))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (snapEnds != null) __obj.updateDynamic("snapEnds")(js.Any.fromFunction4(snapEnds))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (trimByRange != null) __obj.updateDynamic("trimByRange")(js.Any.fromFunction4(trimByRange))

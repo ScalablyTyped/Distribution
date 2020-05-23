@@ -32,12 +32,12 @@ object PostmateOptions {
   def apply(
     url: String,
     classListArray: js.Array[String] = null,
-    container: HTMLElement = null,
+    container: js.UndefOr[Null | HTMLElement] = js.undefined,
     model: js.Any = null
   ): PostmateOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (classListArray != null) __obj.updateDynamic("classListArray")(classListArray.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostmateOptions]
   }

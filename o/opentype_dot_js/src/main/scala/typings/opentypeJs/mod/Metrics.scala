@@ -21,10 +21,10 @@ object Metrics {
     xMin: Double,
     yMax: Double,
     yMin: Double,
-    rightSideBearing: Int | Double = null
+    rightSideBearing: js.UndefOr[Double] = js.undefined
   ): Metrics = {
     val __obj = js.Dynamic.literal(leftSideBearing = leftSideBearing.asInstanceOf[js.Any], xMax = xMax.asInstanceOf[js.Any], xMin = xMin.asInstanceOf[js.Any], yMax = yMax.asInstanceOf[js.Any], yMin = yMin.asInstanceOf[js.Any])
-    if (rightSideBearing != null) __obj.updateDynamic("rightSideBearing")(rightSideBearing.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightSideBearing)) __obj.updateDynamic("rightSideBearing")(rightSideBearing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metrics]
   }
 }

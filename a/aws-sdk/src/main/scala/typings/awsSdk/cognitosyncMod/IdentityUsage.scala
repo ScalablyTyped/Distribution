@@ -31,15 +31,15 @@ trait IdentityUsage extends js.Object {
 object IdentityUsage {
   @scala.inline
   def apply(
-    DataStorage: Int | Double = null,
-    DatasetCount: Int | Double = null,
+    DataStorage: js.UndefOr[Long] = js.undefined,
+    DatasetCount: js.UndefOr[Integer] = js.undefined,
     IdentityId: IdentityId = null,
     IdentityPoolId: IdentityPoolId = null,
     LastModifiedDate: Date = null
   ): IdentityUsage = {
     val __obj = js.Dynamic.literal()
-    if (DataStorage != null) __obj.updateDynamic("DataStorage")(DataStorage.asInstanceOf[js.Any])
-    if (DatasetCount != null) __obj.updateDynamic("DatasetCount")(DatasetCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataStorage)) __obj.updateDynamic("DataStorage")(DataStorage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DatasetCount)) __obj.updateDynamic("DatasetCount")(DatasetCount.get.asInstanceOf[js.Any])
     if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
     if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId.asInstanceOf[js.Any])
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])

@@ -16,7 +16,7 @@ trait ProductstatusesCustomBatchRequestEntry extends js.Object {
 object ProductstatusesCustomBatchRequestEntry {
   @scala.inline
   def apply(
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     destinations: js.Array[String] = null,
     includeAttributes: js.UndefOr[Boolean] = js.undefined,
     merchantId: String = null,
@@ -24,9 +24,9 @@ object ProductstatusesCustomBatchRequestEntry {
     productId: String = null
   ): ProductstatusesCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (destinations != null) __obj.updateDynamic("destinations")(destinations.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAttributes)) __obj.updateDynamic("includeAttributes")(includeAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAttributes)) __obj.updateDynamic("includeAttributes")(includeAttributes.get.asInstanceOf[js.Any])
     if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])

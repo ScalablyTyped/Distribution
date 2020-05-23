@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait OnStateChangeEvent extends PlayerEvent {
   /**
-  		 * New player state.
-  		 */
+    * New player state.
+    */
   var data: PlayerState
 }
 

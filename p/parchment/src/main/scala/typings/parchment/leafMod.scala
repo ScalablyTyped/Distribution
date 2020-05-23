@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parchment/dist/src/blot/abstract/leaf", JSImport.Namespace)
 @js.native
 object leafMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.parchment.linkedNodeMod.LinkedNode because Already inherited
   - typings.parchment.blotMod.Blot because Already inherited
   - typings.parchment.blotMod.Leaf because var conflicts: domNode, next, parent, prev, scroll. Inlined index, position, value */ @js.native

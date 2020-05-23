@@ -28,12 +28,12 @@ object ListAnalyzedResourcesRequest {
   @scala.inline
   def apply(
     analyzerArn: AnalyzerArn,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Integer] = js.undefined,
     nextToken: Token = null,
     resourceType: ResourceType = null
   ): ListAnalyzedResourcesRequest = {
     val __obj = js.Dynamic.literal(analyzerArn = analyzerArn.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAnalyzedResourcesRequest]

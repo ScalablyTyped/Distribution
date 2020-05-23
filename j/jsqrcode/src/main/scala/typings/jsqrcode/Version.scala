@@ -4,36 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Version")
-@js.native
-class Version protected () extends js.Object {
-  def this(
-    versionNumber: Double,
-    alignmentPatternCenters: js.Array[Double],
-    ecBlocks1: ECBlocks,
-    ecBlocks2: ECBlocks,
-    ecBlocks3: ECBlocks,
-    ecBlocks4: ECBlocks
-  ) = this()
-  val AlignmentPatternCenters: js.Array[Double] = js.native
-  val DimensionForVersion: Double = js.native
-  val TotalCodewords: Double = js.native
-  val VersionNumber: Double = js.native
-  var alignmentPatternCenters: js.Array[Double] = js.native
-  var ecBlocks: js.Array[ECBlocks] = js.native
-  var versionNumber: Double = js.native
-  def buildFunctionPattern(): BitMatrix = js.native
-  def getECBlocksForLevel(ecLevel: ErrorCorrectionLevel): ECBlocks = js.native
+trait Version extends js.Object {
+  val AlignmentPatternCenters: js.Array[Double]
+  val DimensionForVersion: Double
+  val TotalCodewords: Double
+  val VersionNumber: Double
+  var alignmentPatternCenters: js.Array[Double]
+  var ecBlocks: js.Array[ECBlocks]
+  var versionNumber: Double
+  def buildFunctionPattern(): BitMatrix
+  def getECBlocksForLevel(ecLevel: ErrorCorrectionLevel): ECBlocks
 }
 
-/* static members */
-@JSGlobal("Version")
-@js.native
-object Version extends js.Object {
-  val VERSIONS: js.Array[Version] = js.native
-  val VERSION_DECODE_INFO: js.Array[js.Any] = js.native
-  def decodeVersionInformation(versionBits: Double): Version = js.native
-  def getProvisionalVersionForDimension(dimension: Double): Version = js.native
-  def getVersionForNumber(versionNumber: Double): Version = js.native
+object Version {
+  @scala.inline
+  def apply(
+    AlignmentPatternCenters: js.Array[Double],
+    DimensionForVersion: Double,
+    TotalCodewords: Double,
+    VersionNumber: Double,
+    alignmentPatternCenters: js.Array[Double],
+    buildFunctionPattern: () => BitMatrix,
+    ecBlocks: js.Array[ECBlocks],
+    getECBlocksForLevel: ErrorCorrectionLevel => ECBlocks,
+    versionNumber: Double
+  ): Version = {
+    val __obj = js.Dynamic.literal(AlignmentPatternCenters = AlignmentPatternCenters.asInstanceOf[js.Any], DimensionForVersion = DimensionForVersion.asInstanceOf[js.Any], TotalCodewords = TotalCodewords.asInstanceOf[js.Any], VersionNumber = VersionNumber.asInstanceOf[js.Any], alignmentPatternCenters = alignmentPatternCenters.asInstanceOf[js.Any], buildFunctionPattern = js.Any.fromFunction0(buildFunctionPattern), ecBlocks = ecBlocks.asInstanceOf[js.Any], getECBlocksForLevel = js.Any.fromFunction1(getECBlocksForLevel), versionNumber = versionNumber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Version]
+  }
 }
 

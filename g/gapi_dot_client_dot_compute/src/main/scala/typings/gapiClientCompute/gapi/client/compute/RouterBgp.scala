@@ -14,9 +14,9 @@ trait RouterBgp extends js.Object {
 
 object RouterBgp {
   @scala.inline
-  def apply(asn: Int | Double = null): RouterBgp = {
+  def apply(asn: js.UndefOr[Double] = js.undefined): RouterBgp = {
     val __obj = js.Dynamic.literal()
-    if (asn != null) __obj.updateDynamic("asn")(asn.asInstanceOf[js.Any])
+    if (!js.isUndefined(asn)) __obj.updateDynamic("asn")(asn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterBgp]
   }
 }

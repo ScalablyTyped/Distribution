@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,8 +29,4 @@ trait VRDisplay extends EventTarget {
   def submitFrame(): Unit = js.native
   def submitFrame(pose: VRPose): Unit = js.native
 }
-
-@JSGlobal("VRDisplay")
-@js.native
-object VRDisplay extends Instantiable0[VRDisplay]
 

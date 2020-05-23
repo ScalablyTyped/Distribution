@@ -1,6 +1,6 @@
 package typings.gatsby.mod
 
-import typings.gatsby.AnonDel
+import typings.gatsby.anon.Del
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ object CreateWebpackConfigArgs {
   def apply(
     actions: Actions,
     boundActionCreators: Actions,
-    cache: AnonDel,
+    cache: Del,
     createContentDigest: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof createContentDigest */ js.Any,
     createNodeId: js.Function,
     emitter: EventEmitter,

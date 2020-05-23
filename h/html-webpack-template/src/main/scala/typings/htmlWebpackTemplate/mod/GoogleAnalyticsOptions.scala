@@ -14,7 +14,7 @@ object GoogleAnalyticsOptions {
   @scala.inline
   def apply(trackingId: String, pageViewOnLoad: js.UndefOr[Boolean] = js.undefined): GoogleAnalyticsOptions = {
     val __obj = js.Dynamic.literal(trackingId = trackingId.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageViewOnLoad)) __obj.updateDynamic("pageViewOnLoad")(pageViewOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageViewOnLoad)) __obj.updateDynamic("pageViewOnLoad")(pageViewOnLoad.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleAnalyticsOptions]
   }
 }

@@ -1,16 +1,13 @@
 package typings.swipeview
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SwipeView")
 @js.native
-class SwipeView protected () extends js.Object {
-  def this(element: String) = this()
-  def this(element: String, options: SwipeViewOptions) = this()
+trait SwipeView extends js.Object {
   var currentMasterPage: Double = js.native
   var masterPages: js.Array[HTMLElement] = js.native
   @JSName("onFlip")
@@ -26,7 +23,7 @@ class SwipeView protected () extends js.Object {
   var wrapperHeight: Double = js.native
   def destroy(): Unit = js.native
   def goToPage(p: Double): Unit = js.native
-  def handleEvent(e: Event_): Unit = js.native
+  def handleEvent(e: Event): Unit = js.native
   def next(): Unit = js.native
   def onFlip(fn: js.Function): Unit = js.native
   def onMoveIn(fn: js.Function): Unit = js.native

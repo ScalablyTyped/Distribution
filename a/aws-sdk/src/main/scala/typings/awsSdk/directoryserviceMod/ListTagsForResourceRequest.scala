@@ -22,9 +22,9 @@ trait ListTagsForResourceRequest extends js.Object {
 
 object ListTagsForResourceRequest {
   @scala.inline
-  def apply(ResourceId: ResourceId, Limit: Int | Double = null, NextToken: NextToken = null): ListTagsForResourceRequest = {
+  def apply(ResourceId: ResourceId, Limit: js.UndefOr[Limit] = js.undefined, NextToken: NextToken = null): ListTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }

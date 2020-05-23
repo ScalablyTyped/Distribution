@@ -89,28 +89,28 @@ trait ImageParametersProperties extends js.Object {
 object ImageParametersProperties {
   @scala.inline
   def apply(
-    dpi: Int | Double = null,
+    dpi: js.UndefOr[Double] = js.undefined,
     extent: ExtentProperties = null,
     format: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     imageSpatialReference: SpatialReferenceProperties = null,
     layerDefinitions: js.Array[String] = null,
     layerIds: js.Array[Double] = null,
     layerOption: show | hide | include | exclude = null,
     transparent: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ImageParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (!js.isUndefined(dpi)) __obj.updateDynamic("dpi")(dpi.get.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (imageSpatialReference != null) __obj.updateDynamic("imageSpatialReference")(imageSpatialReference.asInstanceOf[js.Any])
     if (layerDefinitions != null) __obj.updateDynamic("layerDefinitions")(layerDefinitions.asInstanceOf[js.Any])
     if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds.asInstanceOf[js.Any])
     if (layerOption != null) __obj.updateDynamic("layerOption")(layerOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageParametersProperties]
   }
 }

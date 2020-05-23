@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the result of a query selector, and provides various operations that perform actions over the elements of the collection.
   **/
-@JSGlobal("WinJS.Utilities.QueryCollection")
 @js.native
-class QueryCollection[T] () extends Array[T] {
+trait QueryCollection[T] extends Array[T] {
   //#region Methods
   /**
     * Adds the specified class to all the elements in the collection.
@@ -180,16 +179,5 @@ class QueryCollection[T] () extends Array[T] {
     * @returns This QueryCollection object.
     **/
   def toggleClass(name: String): QueryCollection[T] = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.Utilities.QueryCollection")
-@js.native
-object QueryCollection extends js.Object {
-  //#endregion Methods
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

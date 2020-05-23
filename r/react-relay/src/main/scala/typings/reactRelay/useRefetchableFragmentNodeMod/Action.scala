@@ -1,6 +1,5 @@
 package typings.reactRelay.useRefetchableFragmentNodeMod
 
-import typings.reactRelay.queryResourceMod.FetchPolicy
 import typings.reactRelay.queryResourceMod.RenderPolicy
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.relayRuntime.relayStoreTypesMod.Environment
@@ -10,24 +9,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.reactRelay.AnonEnvironment
-  - typings.reactRelay.AnonFetchPolicy
+  - typings.reactRelay.anon.Environment
+  - typings.reactRelay.anon.FetchPolicy
 */
 trait Action extends js.Object
 
 object Action {
   @scala.inline
-  def AnonEnvironment(environment: Environment, fragmentIdentifier: String, `type`: String): Action = {
+  def Environment(
+    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    fragmentIdentifier: String,
+    `type`: String
+  ): Action = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], fragmentIdentifier = fragmentIdentifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
   @scala.inline
-  def AnonFetchPolicy(
+  def FetchPolicy(
     environment: Environment,
     refetchVariables: Variables,
     `type`: String,
-    fetchPolicy: FetchPolicy = null,
+    fetchPolicy: typings.reactRelay.queryResourceMod.FetchPolicy = null,
     onComplete: /* args */ Error | Null => Unit = null,
     renderPolicy: RenderPolicy = null
   ): Action = {

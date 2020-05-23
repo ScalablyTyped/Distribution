@@ -58,17 +58,17 @@ object IConstraintRenderDefinition {
   @scala.inline
   def apply(
     anchors: js.UndefOr[Boolean] = js.undefined,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     strokeStyle: String = null,
     `type`: line | pin | spring = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): IConstraintRenderDefinition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anchors)) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchors)) __obj.updateDynamic("anchors")(anchors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConstraintRenderDefinition]
   }
 }

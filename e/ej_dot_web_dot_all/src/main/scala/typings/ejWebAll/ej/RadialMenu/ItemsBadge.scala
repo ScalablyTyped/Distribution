@@ -15,10 +15,10 @@ trait ItemsBadge extends js.Object {
 
 object ItemsBadge {
   @scala.inline
-  def apply(enabled: js.UndefOr[Boolean] = js.undefined, value: Int | Double = null): ItemsBadge = {
+  def apply(enabled: js.UndefOr[Boolean] = js.undefined, value: js.UndefOr[Double] = js.undefined): ItemsBadge = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsBadge]
   }
 }

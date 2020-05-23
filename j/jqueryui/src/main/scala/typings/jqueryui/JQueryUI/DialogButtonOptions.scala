@@ -17,7 +17,7 @@ trait DialogButtonOptions
 object DialogButtonOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* attr */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     click: /* eventObject */ JQueryEventObject => _ = null,
     icons: js.Any = null,
     showText: String | Boolean = null,

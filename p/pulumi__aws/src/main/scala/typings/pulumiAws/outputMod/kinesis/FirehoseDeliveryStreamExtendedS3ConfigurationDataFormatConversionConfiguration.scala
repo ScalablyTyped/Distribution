@@ -33,7 +33,7 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigur
     enabled: js.UndefOr[Boolean] = js.undefined
   ): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration = {
     val __obj = js.Dynamic.literal(inputFormatConfiguration = inputFormatConfiguration.asInstanceOf[js.Any], outputFormatConfiguration = outputFormatConfiguration.asInstanceOf[js.Any], schemaConfiguration = schemaConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration]
   }
 }

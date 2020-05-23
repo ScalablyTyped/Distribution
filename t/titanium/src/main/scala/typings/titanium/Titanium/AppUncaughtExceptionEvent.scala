@@ -5,67 +5,67 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when an uncaught JavaScript exception occurs.
-	 */
+  * Fired when an uncaught JavaScript exception occurs.
+  */
 trait AppUncaughtExceptionEvent extends AppBaseEvent {
   /**
-  		 * The column offset on the line where the error occured.
-  		 */
+    * The column offset on the line where the error occured.
+    */
   var column: Double
   /**
-  		 * The java stack trace of the exception.
-  		 * @deprecated Use `nativeStack` property for cross-platform parity.
-  		 */
+    * The java stack trace of the exception.
+    * @deprecated Use `nativeStack` property for cross-platform parity.
+    */
   var javaStack: String
   /**
-  		 * The javascript stack trace of the exception.
-  		 * @deprecated Use `stack` property for cross-platform parity.
-  		 */
+    * The javascript stack trace of the exception.
+    * @deprecated Use `stack` property for cross-platform parity.
+    */
   var jsStack: String
   /**
-  		 * The line where the error occurred.
-  		 */
+    * The line where the error occurred.
+    */
   var line: Double
   /**
-  		 * The offset on the line where the error occurred.
-  		 * @deprecated Use `column` property for cross-platform parity.
-  		 */
+    * The offset on the line where the error occurred.
+    * @deprecated Use `column` property for cross-platform parity.
+    */
   var lineOffset: Double
   /**
-  		 * The line source reference.
-  		 */
+    * The line source reference.
+    */
   var lineSource: String
   /**
-  		 * The error message.
-  		 */
+    * The error message.
+    */
   var message: String
   /**
-  		 * The native platform stack trace of the exception.
-  		 */
+    * The native platform stack trace of the exception.
+    */
   var nativeStack: String
   /**
-  		 * A unique identification for the source file.
-  		 */
+    * A unique identification for the source file.
+    */
   var sourceId: Double
   /**
-  		 * The name of the source file.
-  		 */
+    * The name of the source file.
+    */
   var sourceName: String
   /**
-  		 * The URL to the source file.
-  		 */
+    * The URL to the source file.
+    */
   var sourceURL: String
   /**
-  		 * The javascript stack trace of the exception.
-  		 */
+    * The javascript stack trace of the exception.
+    */
   var stack: String
   /**
-  		 * The title for the error.
-  		 */
+    * The title for the error.
+    */
   var title: String
   /**
-  		 * The type of error.
-  		 */
+    * The type of error.
+    */
   var `type`: String
 }
 

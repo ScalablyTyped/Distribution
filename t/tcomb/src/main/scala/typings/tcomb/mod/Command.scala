@@ -1,6 +1,6 @@
 package typings.tcomb.mod
 
-import typings.tcomb.AnonFrom
+import typings.tcomb.anon.From
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ object Command {
     __obj.asInstanceOf[Command]
   }
   @scala.inline
-  def SwapCommand($swap: AnonFrom): Command = {
+  def SwapCommand($swap: From): Command = {
     val __obj = js.Dynamic.literal($swap = $swap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }

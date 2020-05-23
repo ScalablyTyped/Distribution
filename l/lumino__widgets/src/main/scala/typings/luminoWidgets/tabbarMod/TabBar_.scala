@@ -13,7 +13,7 @@ import typings.luminoWidgets.tabbarMod.TabBar.Orientation
 import typings.luminoWidgets.tabbarMod.TabBar.RemoveBehavior
 import typings.luminoWidgets.titleMod.Title
 import typings.luminoWidgets.widgetMod.Widget
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLUListElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -240,7 +240,7 @@ class TabBar_[T] () extends Widget {
     *
     * This should not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Insert a tab into the tab bar at the specified index.
     *

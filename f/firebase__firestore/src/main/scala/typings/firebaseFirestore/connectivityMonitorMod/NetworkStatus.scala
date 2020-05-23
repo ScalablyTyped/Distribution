@@ -14,10 +14,8 @@ trait NetworkStatus extends js.Object
 
 object NetworkStatus {
   @scala.inline
-  def AVAILABLE: `0` = this.cast(0)
+  def AVAILABLE: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def UNAVAILABLE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def UNAVAILABLE: `1` = 1.asInstanceOf[`1`]
 }
 

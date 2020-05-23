@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ListTagsForResourceRequest extends js.Object {
+  /**
+    * The ARN of the resource.
+    */
   var ResourceArn: string = js.native
 }
 

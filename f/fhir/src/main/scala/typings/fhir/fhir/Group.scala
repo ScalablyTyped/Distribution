@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Group of multiple entities
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Group extends DomainResource {
   /**
     * Contains extended information for property 'active'.
@@ -94,7 +94,7 @@ object Group {
     meta: Meta = null,
     modifierExtension: js.Array[Extension] = null,
     name: String = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[unsignedInt] = js.undefined,
     resourceType: code = null,
     text: Narrative = null
   ): Group = {
@@ -109,7 +109,7 @@ object Group {
     if (_quantity != null) __obj.updateDynamic("_quantity")(_quantity.asInstanceOf[js.Any])
     if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
     if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (characteristic != null) __obj.updateDynamic("characteristic")(characteristic.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
@@ -122,7 +122,7 @@ object Group {
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]

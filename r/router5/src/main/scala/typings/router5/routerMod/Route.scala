@@ -18,7 +18,7 @@ trait Route[Dependencies /* <: DefaultDependencies */] extends js.Object {
 
 object Route {
   @scala.inline
-  def apply[Dependencies /* <: DefaultDependencies */](
+  def apply[Dependencies](
     name: String,
     path: String,
     canActivate: (/* router */ Router[DefaultDependencies], /* dependencies */ js.UndefOr[Dependencies]) => ActivationFn = null,

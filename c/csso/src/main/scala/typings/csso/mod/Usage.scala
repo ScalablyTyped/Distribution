@@ -1,12 +1,12 @@
 package typings.csso.mod
 
-import typings.csso.AnonClasses
+import typings.csso.anon.Classes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Usage extends js.Object {
-  var blacklist: js.UndefOr[AnonClasses] = js.undefined
+  var blacklist: js.UndefOr[Classes] = js.undefined
   var classes: js.UndefOr[js.Array[String]] = js.undefined
   var ids: js.UndefOr[js.Array[String]] = js.undefined
   var scopes: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
@@ -16,7 +16,7 @@ trait Usage extends js.Object {
 object Usage {
   @scala.inline
   def apply(
-    blacklist: AnonClasses = null,
+    blacklist: Classes = null,
     classes: js.Array[String] = null,
     ids: js.Array[String] = null,
     scopes: js.Array[js.Array[String]] = null,

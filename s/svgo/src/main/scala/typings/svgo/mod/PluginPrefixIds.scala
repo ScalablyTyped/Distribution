@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PluginPrefixIds extends PluginConfig {
-  /** prefix IDs and classes with the SVG filename or an arbitrary string	 */
+  /** prefix IDs and classes with the SVG filename or an arbitrary string     */
   var prefixIds: Boolean | js.Object
 }
 

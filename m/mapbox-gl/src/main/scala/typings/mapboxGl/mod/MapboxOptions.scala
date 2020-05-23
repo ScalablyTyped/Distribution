@@ -161,6 +161,8 @@ trait MapboxOptions extends js.Object {
   var scrollZoom: js.UndefOr[Boolean] = js.undefined
   /** stylesheet location */
   var style: js.UndefOr[Style | String] = js.undefined
+  /** If true, the "drag to pitch" interaction is enabled */
+  var touchPitch: js.UndefOr[Boolean] = js.undefined
   /** If true, enable the "pinch to rotate and zoom" interaction (see TouchZoomRotateHandler). */
   var touchZoomRotate: js.UndefOr[Boolean] = js.undefined
   /** If  true, the map will automatically resize when the browser window resizes */
@@ -183,19 +185,19 @@ object MapboxOptions {
     accessToken: String = null,
     antialias: js.UndefOr[Boolean] = js.undefined,
     attributionControl: js.UndefOr[Boolean] = js.undefined,
-    bearing: Int | Double = null,
-    bearingSnap: Int | Double = null,
+    bearing: js.UndefOr[Double] = js.undefined,
+    bearingSnap: js.UndefOr[Double] = js.undefined,
     bounds: LngLatBoundsLike = null,
     boxZoom: js.UndefOr[Boolean] = js.undefined,
     center: LngLatLike = null,
-    clickTolerance: Int | Double = null,
+    clickTolerance: js.UndefOr[Double] = js.undefined,
     collectResourceTiming: js.UndefOr[Boolean] = js.undefined,
     crossSourceCollisions: js.UndefOr[Boolean] = js.undefined,
     customAttribution: String | js.Array[String] = null,
     doubleClickZoom: js.UndefOr[Boolean] = js.undefined,
     dragPan: js.UndefOr[Boolean] = js.undefined,
     dragRotate: js.UndefOr[Boolean] = js.undefined,
-    fadeDuration: Int | Double = null,
+    fadeDuration: js.UndefOr[Double] = js.undefined,
     failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined,
     fitBoundsOptions: FitBoundsOptions = null,
     hash: Boolean | String = null,
@@ -205,65 +207,67 @@ object MapboxOptions {
     locale: StringDictionary[String] = null,
     logoPosition: `top-left` | `top-right` | `bottom-left` | `bottom-right` = null,
     maxBounds: LngLatBoundsLike = null,
-    maxPitch: Int | Double = null,
-    maxTileCacheSize: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minPitch: Int | Double = null,
-    minZoom: Int | Double = null,
-    pitch: Int | Double = null,
+    maxPitch: js.UndefOr[Double] = js.undefined,
+    maxTileCacheSize: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minPitch: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
+    pitch: js.UndefOr[Double] = js.undefined,
     pitchWithRotate: js.UndefOr[Boolean] = js.undefined,
     preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
     refreshExpiredTiles: js.UndefOr[Boolean] = js.undefined,
     renderWorldCopies: js.UndefOr[Boolean] = js.undefined,
     scrollZoom: js.UndefOr[Boolean] = js.undefined,
     style: Style | String = null,
+    touchPitch: js.UndefOr[Boolean] = js.undefined,
     touchZoomRotate: js.UndefOr[Boolean] = js.undefined,
     trackResize: js.UndefOr[Boolean] = js.undefined,
     transformRequest: (/* url */ String, /* resourceType */ ResourceType) => RequestParameters = null,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): MapboxOptions = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
-    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
-    if (bearingSnap != null) __obj.updateDynamic("bearingSnap")(bearingSnap.asInstanceOf[js.Any])
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bearingSnap)) __obj.updateDynamic("bearingSnap")(bearingSnap.get.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(boxZoom)) __obj.updateDynamic("boxZoom")(boxZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxZoom)) __obj.updateDynamic("boxZoom")(boxZoom.get.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (clickTolerance != null) __obj.updateDynamic("clickTolerance")(clickTolerance.asInstanceOf[js.Any])
-    if (!js.isUndefined(collectResourceTiming)) __obj.updateDynamic("collectResourceTiming")(collectResourceTiming.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossSourceCollisions)) __obj.updateDynamic("crossSourceCollisions")(crossSourceCollisions.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickTolerance)) __obj.updateDynamic("clickTolerance")(clickTolerance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collectResourceTiming)) __obj.updateDynamic("collectResourceTiming")(collectResourceTiming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossSourceCollisions)) __obj.updateDynamic("crossSourceCollisions")(crossSourceCollisions.get.asInstanceOf[js.Any])
     if (customAttribution != null) __obj.updateDynamic("customAttribution")(customAttribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate.asInstanceOf[js.Any])
-    if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeDuration)) __obj.updateDynamic("fadeDuration")(fadeDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat.get.asInstanceOf[js.Any])
     if (fitBoundsOptions != null) __obj.updateDynamic("fitBoundsOptions")(fitBoundsOptions.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (localIdeographFontFamily != null) __obj.updateDynamic("localIdeographFontFamily")(localIdeographFontFamily.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (logoPosition != null) __obj.updateDynamic("logoPosition")(logoPosition.asInstanceOf[js.Any])
     if (maxBounds != null) __obj.updateDynamic("maxBounds")(maxBounds.asInstanceOf[js.Any])
-    if (maxPitch != null) __obj.updateDynamic("maxPitch")(maxPitch.asInstanceOf[js.Any])
-    if (maxTileCacheSize != null) __obj.updateDynamic("maxTileCacheSize")(maxTileCacheSize.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minPitch != null) __obj.updateDynamic("minPitch")(minPitch.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitchWithRotate)) __obj.updateDynamic("pitchWithRotate")(pitchWithRotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshExpiredTiles)) __obj.updateDynamic("refreshExpiredTiles")(refreshExpiredTiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderWorldCopies)) __obj.updateDynamic("renderWorldCopies")(renderWorldCopies.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPitch)) __obj.updateDynamic("maxPitch")(maxPitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTileCacheSize)) __obj.updateDynamic("maxTileCacheSize")(maxTileCacheSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPitch)) __obj.updateDynamic("minPitch")(minPitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitchWithRotate)) __obj.updateDynamic("pitchWithRotate")(pitchWithRotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshExpiredTiles)) __obj.updateDynamic("refreshExpiredTiles")(refreshExpiredTiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderWorldCopies)) __obj.updateDynamic("renderWorldCopies")(renderWorldCopies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchZoomRotate)) __obj.updateDynamic("touchZoomRotate")(touchZoomRotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackResize)) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchPitch)) __obj.updateDynamic("touchPitch")(touchPitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchZoomRotate)) __obj.updateDynamic("touchZoomRotate")(touchZoomRotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackResize)) __obj.updateDynamic("trackResize")(trackResize.get.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction2(transformRequest))
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapboxOptions]
   }
 }

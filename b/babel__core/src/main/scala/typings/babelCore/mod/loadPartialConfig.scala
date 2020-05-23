@@ -1,6 +1,6 @@
 package typings.babelCore.mod
 
-import typings.babelCore.ReadonlyPartialConfig
+import typings.babelCore.anon.ReadonlyPartialConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

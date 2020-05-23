@@ -40,11 +40,11 @@ object RailStop {
     name: String,
     time: Double,
     segment: RailwaySegment = null,
-    wait: Int | Double = null
+    wait: js.UndefOr[Double] = js.undefined
   ): RailStop = {
     val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
-    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RailStop]
   }
 }

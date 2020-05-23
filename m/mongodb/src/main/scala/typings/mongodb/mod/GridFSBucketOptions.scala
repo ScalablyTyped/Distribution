@@ -15,13 +15,13 @@ object GridFSBucketOptions {
   @scala.inline
   def apply(
     bucketName: String = null,
-    chunkSizeBytes: Int | scala.Double = null,
+    chunkSizeBytes: js.UndefOr[scala.Double] = js.undefined,
     readPreference: ReadPreferenceOrMode = null,
     writeConcern: WriteConcern = null
   ): GridFSBucketOptions = {
     val __obj = js.Dynamic.literal()
     if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    if (chunkSizeBytes != null) __obj.updateDynamic("chunkSizeBytes")(chunkSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSizeBytes)) __obj.updateDynamic("chunkSizeBytes")(chunkSizeBytes.get.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (writeConcern != null) __obj.updateDynamic("writeConcern")(writeConcern.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFSBucketOptions]

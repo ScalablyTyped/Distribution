@@ -1,19 +1,19 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonCancelComponentData
-import typings.devextreme.AnonColorCodeField
-import typings.devextreme.AnonComponentTElementDxElementModelAny
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementModelNode
-import typings.devextreme.AnonFormatModel
-import typings.devextreme.AnonHeaderHeight
-import typings.devextreme.AnonJQueryEventModelNode
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonModelRoot
-import typings.devextreme.AnonName
-import typings.devextreme.AnonRect
-import typings.devextreme.AnonSelectionStyle
-import typings.devextreme.AnonTargetAny
+import typings.devextreme.anon.CancelComponentData
+import typings.devextreme.anon.ColorCodeField
+import typings.devextreme.anon.ComponentTElementDxElementModelAny
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.ElementModelNode
+import typings.devextreme.anon.FormatModel
+import typings.devextreme.anon.HeaderHeight
+import typings.devextreme.anon.JQueryEventModelNode
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.ModelRoot
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.Rect
+import typings.devextreme.anon.SelectionStyle
+import typings.devextreme.anon.TargetAny
 import typings.devextreme.devextremeStrings.ellipsis
 import typings.devextreme.devextremeStrings.genericDotcarmine
 import typings.devextreme.devextremeStrings.genericDotcontrast
@@ -52,11 +52,11 @@ trait dxTreeMapOptions extends BaseWidgetOptions[dxTreeMap] {
   /** @name dxTreeMap.Options.colorField */
   var colorField: js.UndefOr[String] = js.undefined
   /** @name dxTreeMap.Options.colorizer */
-  var colorizer: js.UndefOr[AnonColorCodeField] = js.undefined
+  var colorizer: js.UndefOr[ColorCodeField] = js.undefined
   /** @name dxTreeMap.Options.dataSource */
   var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.undefined
   /** @name dxTreeMap.Options.group */
-  var group: js.UndefOr[AnonHeaderHeight] = js.undefined
+  var group: js.UndefOr[HeaderHeight] = js.undefined
   /** @name dxTreeMap.Options.hoverEnabled */
   var hoverEnabled: js.UndefOr[Boolean] = js.undefined
   /** @name dxTreeMap.Options.idField */
@@ -66,7 +66,7 @@ trait dxTreeMapOptions extends BaseWidgetOptions[dxTreeMap] {
   /** @name dxTreeMap.Options.labelField */
   var labelField: js.UndefOr[String] = js.undefined
   /** @name dxTreeMap.Options.layoutAlgorithm */
-  var layoutAlgorithm: js.UndefOr[sliceanddice | squarified | strip | (js.Function1[/* e */ AnonRect, _])] = js.undefined
+  var layoutAlgorithm: js.UndefOr[sliceanddice | squarified | strip | (js.Function1[/* e */ Rect, _])] = js.undefined
   /** @name dxTreeMap.Options.layoutDirection */
   var layoutDirection: js.UndefOr[
     leftBottomRightTop | leftTopRightBottom | rightBottomLeftTop | rightTopLeftBottom
@@ -74,17 +74,17 @@ trait dxTreeMapOptions extends BaseWidgetOptions[dxTreeMap] {
   /** @name dxTreeMap.Options.maxDepth */
   var maxDepth: js.UndefOr[Double] = js.undefined
   /** @name dxTreeMap.Options.onClick */
-  var onClick: js.UndefOr[(js.Function1[/* e */ AnonJQueryEventModelNode, _]) | String] = js.undefined
+  var onClick: js.UndefOr[(js.Function1[/* e */ JQueryEventModelNode, _]) | String] = js.undefined
   /** @name dxTreeMap.Options.onDrill */
-  var onDrill: js.UndefOr[js.Function1[/* e */ AnonElementModelNode, _]] = js.undefined
+  var onDrill: js.UndefOr[js.Function1[/* e */ ElementModelNode, _]] = js.undefined
   /** @name dxTreeMap.Options.onHoverChanged */
-  var onHoverChanged: js.UndefOr[js.Function1[/* e */ AnonElementModelNode, _]] = js.undefined
+  var onHoverChanged: js.UndefOr[js.Function1[/* e */ ElementModelNode, _]] = js.undefined
   /** @name dxTreeMap.Options.onNodesInitialized */
-  var onNodesInitialized: js.UndefOr[js.Function1[/* e */ AnonModelRoot, _]] = js.undefined
+  var onNodesInitialized: js.UndefOr[js.Function1[/* e */ ModelRoot, _]] = js.undefined
   /** @name dxTreeMap.Options.onNodesRendering */
-  var onNodesRendering: js.UndefOr[js.Function1[/* e */ AnonElementModelNode, _]] = js.undefined
+  var onNodesRendering: js.UndefOr[js.Function1[/* e */ ElementModelNode, _]] = js.undefined
   /** @name dxTreeMap.Options.onSelectionChanged */
-  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonElementModelNode, _]] = js.undefined
+  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementModelNode, _]] = js.undefined
   /** @name dxTreeMap.Options.parentField */
   var parentField: js.UndefOr[String] = js.undefined
   /** @deprecated */
@@ -93,7 +93,7 @@ trait dxTreeMapOptions extends BaseWidgetOptions[dxTreeMap] {
   /** @name dxTreeMap.Options.selectionMode */
   var selectionMode: js.UndefOr[multiple | none | single_] = js.undefined
   /** @name dxTreeMap.Options.tile */
-  var tile: js.UndefOr[AnonSelectionStyle] = js.undefined
+  var tile: js.UndefOr[SelectionStyle] = js.undefined
   /** @name dxTreeMap.Options.tooltip */
   @JSName("tooltip")
   var tooltip_dxTreeMapOptions: js.UndefOr[dxTreeMapTooltip] = js.undefined
@@ -107,36 +107,36 @@ object dxTreeMapOptions {
     bindingOptions: js.Any = null,
     childrenField: String = null,
     colorField: String = null,
-    colorizer: AnonColorCodeField = null,
+    colorizer: ColorCodeField = null,
     dataSource: js.Array[_] | DataSource | DataSourceOptions | String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     elementAttr: js.Any = null,
     export: BaseWidgetExport = null,
-    group: AnonHeaderHeight = null,
+    group: HeaderHeight = null,
     height: Double | String | (js.Function0[Double | String]) = null,
     hoverEnabled: js.UndefOr[Boolean] = js.undefined,
     idField: String = null,
     interactWithGroup: js.UndefOr[Boolean] = js.undefined,
     labelField: String = null,
-    layoutAlgorithm: sliceanddice | squarified | strip | (js.Function1[/* e */ AnonRect, _]) = null,
+    layoutAlgorithm: sliceanddice | squarified | strip | (js.Function1[/* e */ Rect, _]) = null,
     layoutDirection: leftBottomRightTop | leftTopRightBottom | rightBottomLeftTop | rightTopLeftBottom = null,
     loadingIndicator: BaseWidgetLoadingIndicator = null,
     margin: BaseWidgetMargin = null,
-    maxDepth: Int | Double = null,
-    onClick: (js.Function1[/* e */ AnonJQueryEventModelNode, _]) | String = null,
-    onDisposing: /* e */ AnonModel[dxTreeMap] => _ = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[dxTreeMap] => _ = null,
-    onDrill: /* e */ AnonElementModelNode => _ = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[dxTreeMap] => _ = null,
-    onExporting: /* e */ AnonFormatModel[dxTreeMap] => _ = null,
-    onFileSaving: /* e */ AnonCancelComponentData[dxTreeMap] => _ = null,
-    onHoverChanged: /* e */ AnonElementModelNode => _ = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[dxTreeMap] => _ = null,
-    onInitialized: /* e */ AnonElement[dxTreeMap] => _ = null,
-    onNodesInitialized: /* e */ AnonModelRoot => _ = null,
-    onNodesRendering: /* e */ AnonElementModelNode => _ = null,
-    onOptionChanged: /* e */ AnonName[dxTreeMap] => _ = null,
-    onSelectionChanged: /* e */ AnonElementModelNode => _ = null,
+    maxDepth: js.UndefOr[Double] = js.undefined,
+    onClick: (js.Function1[/* e */ JQueryEventModelNode, _]) | String = null,
+    onDisposing: /* e */ Model[dxTreeMap] => _ = null,
+    onDrawn: /* e */ ComponentTElementDxElementModelAny[dxTreeMap] => _ = null,
+    onDrill: /* e */ ElementModelNode => _ = null,
+    onExported: /* e */ ComponentTElementDxElementModelAny[dxTreeMap] => _ = null,
+    onExporting: /* e */ FormatModel[dxTreeMap] => _ = null,
+    onFileSaving: /* e */ CancelComponentData[dxTreeMap] => _ = null,
+    onHoverChanged: /* e */ ElementModelNode => _ = null,
+    onIncidentOccurred: /* e */ TargetAny[dxTreeMap] => _ = null,
+    onInitialized: /* e */ Element[dxTreeMap] => _ = null,
+    onNodesInitialized: /* e */ ModelRoot => _ = null,
+    onNodesRendering: /* e */ ElementModelNode => _ = null,
+    onOptionChanged: /* e */ Name[dxTreeMap] => _ = null,
+    onSelectionChanged: /* e */ ElementModelNode => _ = null,
     parentField: String = null,
     pathModified: js.UndefOr[Boolean] = js.undefined,
     redrawOnResize: js.UndefOr[Boolean] = js.undefined,
@@ -145,7 +145,7 @@ object dxTreeMapOptions {
     selectionMode: multiple | none | single_ = null,
     size: BaseWidgetSize = null,
     theme: genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight = null,
-    tile: AnonSelectionStyle = null,
+    tile: SelectionStyle = null,
     title: BaseWidgetTitle | String = null,
     tooltip: dxTreeMapTooltip = null,
     valueField: String = null,
@@ -157,20 +157,20 @@ object dxTreeMapOptions {
     if (colorField != null) __obj.updateDynamic("colorField")(colorField.asInstanceOf[js.Any])
     if (colorizer != null) __obj.updateDynamic("colorizer")(colorizer.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverEnabled)) __obj.updateDynamic("hoverEnabled")(hoverEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverEnabled)) __obj.updateDynamic("hoverEnabled")(hoverEnabled.get.asInstanceOf[js.Any])
     if (idField != null) __obj.updateDynamic("idField")(idField.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactWithGroup)) __obj.updateDynamic("interactWithGroup")(interactWithGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactWithGroup)) __obj.updateDynamic("interactWithGroup")(interactWithGroup.get.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
     if (layoutAlgorithm != null) __obj.updateDynamic("layoutAlgorithm")(layoutAlgorithm.asInstanceOf[js.Any])
     if (layoutDirection != null) __obj.updateDynamic("layoutDirection")(layoutDirection.asInstanceOf[js.Any])
     if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
     if (onDrawn != null) __obj.updateDynamic("onDrawn")(js.Any.fromFunction1(onDrawn))
@@ -186,10 +186,10 @@ object dxTreeMapOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1(onSelectionChanged))
     if (parentField != null) __obj.updateDynamic("parentField")(parentField.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
     if (resolveLabelOverflow != null) __obj.updateDynamic("resolveLabelOverflow")(resolveLabelOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

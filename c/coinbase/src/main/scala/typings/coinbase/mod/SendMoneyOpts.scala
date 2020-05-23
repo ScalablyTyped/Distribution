@@ -69,8 +69,8 @@ object SendMoneyOpts {
     if (fee != null) __obj.updateDynamic("fee")(fee.asInstanceOf[js.Any])
     if (financial_institution_website != null) __obj.updateDynamic("financial_institution_website")(financial_institution_website.asInstanceOf[js.Any])
     if (idem != null) __obj.updateDynamic("idem")(idem.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip_notifications)) __obj.updateDynamic("skip_notifications")(skip_notifications.asInstanceOf[js.Any])
-    if (!js.isUndefined(to_financial_institution)) __obj.updateDynamic("to_financial_institution")(to_financial_institution.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip_notifications)) __obj.updateDynamic("skip_notifications")(skip_notifications.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to_financial_institution)) __obj.updateDynamic("to_financial_institution")(to_financial_institution.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMoneyOpts]
   }
 }

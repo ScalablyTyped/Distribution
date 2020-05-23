@@ -1,7 +1,7 @@
 package typings.fundamentalReact.selectMod
 
-import typings.fundamentalReact.PartialSelectProps
-import typings.fundamentalReact.WeakValidationMapSelectPr
+import typings.fundamentalReact.anon.PartialSelectProps
+import typings.fundamentalReact.anon.WeakValidationMapSelectPr
 import typings.fundamentalReact.fundamentalReactStrings.Select
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

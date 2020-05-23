@@ -15,12 +15,12 @@ trait GraphQLExecutionResult extends js.Object {
 object GraphQLExecutionResult {
   @scala.inline
   def apply(
-    data: Record[String, _] = null,
+    data: js.UndefOr[Null | (Record[String, _])] = js.undefined,
     errors: js.Array[GraphQLError] = null,
     extensions: Record[String, _] = null
   ): GraphQLExecutionResult = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLExecutionResult]

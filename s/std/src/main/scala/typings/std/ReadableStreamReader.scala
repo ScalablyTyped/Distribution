@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +10,15 @@ trait ReadableStreamReader[R] extends js.Object {
   def releaseLock(): Unit
 }
 
-@JSGlobal("ReadableStreamReader")
-@js.native
-object ReadableStreamReader
-  extends Instantiable0[ReadableStreamReader[js.Any]]
+object ReadableStreamReader {
+  @scala.inline
+  def apply[R](
+    cancel: () => js.Promise[Unit],
+    read: () => js.Promise[ReadableStreamReadResult[R]],
+    releaseLock: () => Unit
+  ): ReadableStreamReader[R] = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), read = js.Any.fromFunction0(read), releaseLock = js.Any.fromFunction0(releaseLock))
+    __obj.asInstanceOf[ReadableStreamReader[R]]
+  }
+}
 

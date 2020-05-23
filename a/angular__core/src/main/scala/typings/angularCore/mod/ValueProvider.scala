@@ -23,7 +23,7 @@ object ValueProvider {
   @scala.inline
   def apply(provide: js.Any, useValue: js.Any, multi: js.UndefOr[Boolean] = js.undefined): ValueProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useValue = useValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueProvider]
   }
 }

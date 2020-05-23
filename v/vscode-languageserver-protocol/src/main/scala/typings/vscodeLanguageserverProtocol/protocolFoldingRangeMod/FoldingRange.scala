@@ -34,14 +34,14 @@ object FoldingRange {
   def apply(
     endLine: Double,
     startLine: Double,
-    endCharacter: Int | Double = null,
+    endCharacter: js.UndefOr[Double] = js.undefined,
     kind: String = null,
-    startCharacter: Int | Double = null
+    startCharacter: js.UndefOr[Double] = js.undefined
   ): FoldingRange = {
     val __obj = js.Dynamic.literal(endLine = endLine.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any])
-    if (endCharacter != null) __obj.updateDynamic("endCharacter")(endCharacter.asInstanceOf[js.Any])
+    if (!js.isUndefined(endCharacter)) __obj.updateDynamic("endCharacter")(endCharacter.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (startCharacter != null) __obj.updateDynamic("startCharacter")(startCharacter.asInstanceOf[js.Any])
+    if (!js.isUndefined(startCharacter)) __obj.updateDynamic("startCharacter")(startCharacter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoldingRange]
   }
 }

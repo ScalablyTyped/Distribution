@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-field-form/lib/useForm", "FormStore")
+@JSImport("rc-field-form/es/useForm", "FormStore")
 @js.native
 class FormStore protected () extends js.Object {
   def this(forceRootUpdate: js.Function0[Unit]) = this()
@@ -38,6 +38,11 @@ class FormStore protected () extends js.Object {
   var notifyObservers: js.Any = js.native
   var registerField: js.Any = js.native
   var resetFields: js.Any = js.native
+  /**
+    * Reset Field with field `initialValue` prop.
+    * Can pass `entities` or `namePathList` or just nothing.
+    */
+  var resetWithFieldInitialValue: js.Any = js.native
   var setCallbacks: js.Any = js.native
   var setFields: js.Any = js.native
   var setFieldsValue: js.Any = js.native

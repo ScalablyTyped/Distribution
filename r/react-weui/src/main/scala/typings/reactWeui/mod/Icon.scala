@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonSize
+import typings.reactWeui.anon.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Icon protected () extends js.Object {
 @JSImport("react-weui", "Icon")
 @js.native
 object Icon extends js.Object {
-  var defaultProps: AnonSize = js.native
+  var defaultProps: Size = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

@@ -16,7 +16,7 @@ package object mod {
     scala.Unit
   ]
   type HistoryAction = java.lang.String
-  type HistoryEntries = js.Array[typings.reduxFirstRouter.AnonPathname]
+  type HistoryEntries = js.Array[typings.reduxFirstRouter.anon.Pathname]
   type Listener = js.Function2[
     /* location */ typings.reduxFirstRouter.mod.HistoryLocation, 
     /* action */ typings.reduxFirstRouter.mod.HistoryAction, 
@@ -27,7 +27,7 @@ package object mod {
   type Params = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Query = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   type Route[TKeys, TState] = typings.reduxFirstRouter.mod.RouteString | (typings.reduxFirstRouter.mod.RouteObject[TKeys, TState])
-  type RouteObject[TKeys, TState] = TKeys with typings.reduxFirstRouter.AnonCapitalizedWords[TState]
+  type RouteObject[TKeys, TState] = TKeys with typings.reduxFirstRouter.anon.CapitalizedWords[TState]
   type RouteString = java.lang.String
   type RouteThunk[TState] = js.Function2[
     /* dispatch */ typings.redux.mod.Dispatch[js.Any], 

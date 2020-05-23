@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
   */
 trait UserNotificationCallbackResponse extends js.Object {
   /**
-  	 * An array of identifiers used to create notifications.
-  	 */
+    * An array of identifiers used to create notifications.
+    */
   var notifications: js.UndefOr[js.Array[UserNotificationDictionary]] = js.undefined
 }
 

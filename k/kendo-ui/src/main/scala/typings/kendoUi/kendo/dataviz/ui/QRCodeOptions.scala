@@ -26,7 +26,7 @@ object QRCodeOptions {
     encoding: String = null,
     errorCorrection: String = null,
     name: String = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     renderAs: String = null,
     size: Double | String = null,
     value: Double | String = null
@@ -38,7 +38,7 @@ object QRCodeOptions {
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (errorCorrection != null) __obj.updateDynamic("errorCorrection")(errorCorrection.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

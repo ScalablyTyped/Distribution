@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.headerMod
 
-import typings.antDesignProLayout.AnonDefaultOpenAll
+import typings.antDesignProLayout.anon.DefaultOpenAll
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.sidemenu
 import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
@@ -30,7 +30,7 @@ trait HeaderViewProps extends js.Object {
   var isMobile: js.UndefOr[Boolean] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var logo: js.UndefOr[ReactNode] = js.undefined
-  var menu: js.UndefOr[AnonDefaultOpenAll] = js.undefined
+  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
   var menuHeaderRender: js.UndefOr[
     WithFalse[
       js.Function3[
@@ -71,7 +71,7 @@ object HeaderViewProps {
     isMobile: js.UndefOr[Boolean] = js.undefined,
     layout: sidemenu | topmenu = null,
     logo: ReactNode = null,
-    menu: AnonDefaultOpenAll = null,
+    menu: DefaultOpenAll = null,
     menuHeaderRender: WithFalse[
       js.Function3[
         /* logo */ ReactNode, 
@@ -85,22 +85,22 @@ object HeaderViewProps {
     onCollapse: /* collapsed */ Boolean => Unit = null,
     primaryColor: String = null,
     rightContentRender: WithFalse[js.Function1[HeaderViewProps, ReactNode]] = null,
-    siderWidth: Int | Double = null,
+    siderWidth: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
     title: String = null
   ): HeaderViewProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (collapsedButtonRender != null) __obj.updateDynamic("collapsedButtonRender")(collapsedButtonRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.get.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasSiderMenu)) __obj.updateDynamic("hasSiderMenu")(hasSiderMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasSiderMenu)) __obj.updateDynamic("hasSiderMenu")(hasSiderMenu.get.asInstanceOf[js.Any])
     if (headerRender != null) __obj.updateDynamic("headerRender")(headerRender.asInstanceOf[js.Any])
     if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
@@ -110,7 +110,7 @@ object HeaderViewProps {
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
     if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
     if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])
-    if (siderWidth != null) __obj.updateDynamic("siderWidth")(siderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(siderWidth)) __obj.updateDynamic("siderWidth")(siderWidth.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderViewProps]

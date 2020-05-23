@@ -25,7 +25,7 @@ object SpecReporterOptions {
   @scala.inline
   def apply(
     failFast: js.UndefOr[Boolean] = js.undefined,
-    maxLogLines: Int | Double = null,
+    maxLogLines: js.UndefOr[Double] = js.undefined,
     showSpecTiming: js.UndefOr[Boolean] = js.undefined,
     suppressErrorSummary: js.UndefOr[Boolean] = js.undefined,
     suppressFailed: js.UndefOr[Boolean] = js.undefined,
@@ -33,13 +33,13 @@ object SpecReporterOptions {
     suppressSkipped: js.UndefOr[Boolean] = js.undefined
   ): SpecReporterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(failFast)) __obj.updateDynamic("failFast")(failFast.asInstanceOf[js.Any])
-    if (maxLogLines != null) __obj.updateDynamic("maxLogLines")(maxLogLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSpecTiming)) __obj.updateDynamic("showSpecTiming")(showSpecTiming.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressErrorSummary)) __obj.updateDynamic("suppressErrorSummary")(suppressErrorSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressFailed)) __obj.updateDynamic("suppressFailed")(suppressFailed.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressPassed)) __obj.updateDynamic("suppressPassed")(suppressPassed.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressSkipped)) __obj.updateDynamic("suppressSkipped")(suppressSkipped.asInstanceOf[js.Any])
+    if (!js.isUndefined(failFast)) __obj.updateDynamic("failFast")(failFast.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLogLines)) __obj.updateDynamic("maxLogLines")(maxLogLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSpecTiming)) __obj.updateDynamic("showSpecTiming")(showSpecTiming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressErrorSummary)) __obj.updateDynamic("suppressErrorSummary")(suppressErrorSummary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressFailed)) __obj.updateDynamic("suppressFailed")(suppressFailed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressPassed)) __obj.updateDynamic("suppressPassed")(suppressPassed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressSkipped)) __obj.updateDynamic("suppressSkipped")(suppressSkipped.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecReporterOptions]
   }
 }

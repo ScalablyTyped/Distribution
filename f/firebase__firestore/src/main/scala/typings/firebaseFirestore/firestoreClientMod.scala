@@ -1,6 +1,7 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
+import typings.firebaseFirestore.componentProviderMod.ComponentProvider
 import typings.firebaseFirestore.credentialsMod.CredentialsProvider
 import typings.firebaseFirestore.databaseInfoMod.DatabaseId
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
@@ -10,7 +11,6 @@ import typings.firebaseFirestore.eventManagerMod.ListenOptions
 import typings.firebaseFirestore.eventManagerMod.Observer
 import typings.firebaseFirestore.eventManagerMod.QueryListener
 import typings.firebaseFirestore.mutationMod.Mutation
-import typings.firebaseFirestore.persistenceMod.PersistenceProvider
 import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.queryMod.Query
 import typings.firebaseFirestore.transactionMod.Transaction
@@ -19,7 +19,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/firestore_client", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/firestore_client", JSImport.Namespace)
 @js.native
 object firestoreClientMod extends js.Object {
   @js.native
@@ -66,8 +66,8 @@ object firestoreClientMod extends js.Object {
       * platform can't possibly support our implementation then this method rejects
       * the persistenceResult and falls back on memory-only persistence.
       *
-      * @param persistenceProvider The provider that provides either IndexedDb or
-      *     memory-backed persistence
+      * @param componentProvider The provider that provides all core componennts
+      *     for IndexedDB or memory-backed persistence
       * @param persistenceSettings Settings object to configure offline persistence
       * @param user The initial user
       * @param persistenceResult A deferred result indicating the user-visible
@@ -78,13 +78,7 @@ object firestoreClientMod extends js.Object {
       *     continue, i.e. that one of the persistence implementations actually
       *     succeeded.
       */
-    var initializePersistence: js.Any = js.native
-    /**
-      * Initializes the rest of the FirestoreClient, assuming the initial user
-      * has been obtained from the credential provider and some persistence
-      * implementation is available in this.persistence.
-      */
-    var initializeRest: js.Any = js.native
+    var initializeComponents: js.Any = js.native
     var localStore: js.Any = js.native
     var persistence: js.Any = js.native
     var platform: js.Any = js.native
@@ -97,7 +91,7 @@ object firestoreClientMod extends js.Object {
       */
     var verifyNotTerminated: js.Any = js.native
     def addSnapshotsInSyncListener(observer: Observer[Unit]): Unit = js.native
-    def clientTerminated(): Boolean = js.native
+    def clientTerminated: Boolean = js.native
     def databaseId(): DatabaseId = js.native
     /** Disables the network connection. Pending operations will not complete. */
     def disableNetwork(): js.Promise[Unit] = js.native
@@ -135,8 +129,7 @@ object firestoreClientMod extends js.Object {
       * fallback succeeds we signal success to the async queue even though the
       * start() itself signals failure.
       *
-      * @param persistenceProvider Provider that returns the persistence
-      *    implementation.
+      * @param componentProvider Provider that returns all core components.
       * @param persistenceSettings Settings object to configure offline
       *     persistence.
       * @returns A deferred result indicating the user-visible result of enabling
@@ -144,7 +137,7 @@ object firestoreClientMod extends js.Object {
       *     start for any reason. If usePersistence is false this is
       *     unconditionally resolved.
       */
-    def start(persistenceProvider: PersistenceProvider, persistenceSettings: PersistenceSettings): js.Promise[Unit] = js.native
+    def start(componentProvider: ComponentProvider, persistenceSettings: PersistenceSettings): js.Promise[Unit] = js.native
     def terminate(): js.Promise[Unit] = js.native
     def transaction[T](updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]]): js.Promise[T] = js.native
     def unlisten(listener: QueryListener): Unit = js.native
@@ -158,8 +151,8 @@ object firestoreClientMod extends js.Object {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.AnonDurable
-    - typings.firebaseFirestore.AnonCacheSizeBytes
+    - typings.firebaseFirestore.anon.Durable
+    - typings.firebaseFirestore.anon.CacheSizeBytes
   */
   trait PersistenceSettings extends js.Object
   

@@ -1,7 +1,7 @@
 package typings.gulpConnect.mod
 
 import typings.connect.mod.HandleFunction
-import typings.gulpConnect.TypeofconnectModule
+import typings.gulpConnect.anon.TypeofconnectModule
 import typings.node.httpMod.Server
 import typings.node.httpsMod.ServerOptions
 import scala.scalajs.js
@@ -50,13 +50,13 @@ object ConnectAppOptions {
     livereload: Boolean | LiveReloadOptions = null,
     middleware: (/* connect */ js.Function0[typings.connect.mod.Server] with TypeofconnectModule, /* options */ ConnectAppOptions) => js.Array[HandleFunction | ConnectRouteHandler] = null,
     name: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     root: String | js.Array[String] = null,
     serverInit: /* server */ Server | typings.node.httpsMod.Server => Unit = null,
     silent: js.UndefOr[Boolean] = js.undefined
   ): ConnectAppOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
@@ -64,10 +64,10 @@ object ConnectAppOptions {
     if (livereload != null) __obj.updateDynamic("livereload")(livereload.asInstanceOf[js.Any])
     if (middleware != null) __obj.updateDynamic("middleware")(js.Any.fromFunction2(middleware))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (serverInit != null) __obj.updateDynamic("serverInit")(js.Any.fromFunction1(serverInit))
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectAppOptions]
   }
 }

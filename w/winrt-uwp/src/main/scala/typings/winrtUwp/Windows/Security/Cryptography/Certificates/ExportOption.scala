@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ExportOption extends js.Object {
   /** The private key is not exportable. */
   @js.native
   sealed trait notExportable extends ExportOption
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ExportOption with Double] = js.native
-  /* 1 */ @js.native
-  object exportable extends TopLevel[exportable with Double]
-  
-  /* 0 */ @js.native
-  object notExportable extends TopLevel[notExportable with Double]
   
 }
 

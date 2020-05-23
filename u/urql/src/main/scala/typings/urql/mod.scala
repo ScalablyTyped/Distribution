@@ -12,13 +12,14 @@ import typings.urql.useQueryMod.UseQueryResponse
 import typings.urql.useSubscriptionMod.SubscriptionHandler
 import typings.urql.useSubscriptionMod.UseSubscriptionArgs
 import typings.urql.useSubscriptionMod.UseSubscriptionResponse
-import typings.urqlCore.AnonNetworkError
+import typings.urqlCore.anon.NetworkError
 import typings.urqlCore.clientMod.ClientOptions
 import typings.urqlCore.ssrMod.SSRExchangeParams
 import typings.urqlCore.ssrMod.SSRExchange_
 import typings.urqlCore.subscriptionMod.SubscriptionExchangeOpts
 import typings.urqlCore.typesMod.Exchange
 import typings.urqlCore.typesMod.ExchangeIO
+import typings.urqlCore.typesMod.ExchangeInput
 import typings.urqlCore.typesMod.GraphQLRequest
 import typings.urqlCore.typesMod.Operation
 import typings.urqlCore.typesMod.OperationResult
@@ -38,7 +39,7 @@ object mod extends js.Object {
   @js.native
   class CombinedError protected ()
     extends typings.urqlCore.mod.CombinedError {
-    def this(hasNetworkErrorGraphQLErrorsResponse: AnonNetworkError) = this()
+    def this(hasNetworkErrorGraphQLErrorsResponse: NetworkError) = this()
   }
   
   val Consumer: typings.react.mod.Consumer[typings.urqlCore.mod.Client] = js.native
@@ -53,7 +54,7 @@ object mod extends js.Object {
   def Mutation[T, V](props: MutationProps[T, V]): ReactElement = js.native
   def Query[T, V](props: QueryProps[T, V]): ReactElement = js.native
   def Subscription[T, R, V](props: SubscriptionProps[T, R, V]): ReactElement = js.native
-  def composeExchanges(exchanges: js.Array[Exchange]): Exchange = js.native
+  def composeExchanges(exchanges: js.Array[Exchange]): js.Function1[/* hasClientForwardDispatchDebug */ ExchangeInput, ExchangeIO] = js.native
   def createClient(opts: ClientOptions): typings.urqlCore.clientMod.Client = js.native
   def createRequest(q: String): GraphQLRequest = js.native
   def createRequest(q: String, vars: js.Object): GraphQLRequest = js.native

@@ -1,8 +1,8 @@
 package typings.awsSdk.acmpcaMod
 
-import typings.awsSdk.DescribeCertificateAuthor
-import typings.awsSdk.GetCertificateAuthorityCs
-import typings.awsSdk.GetCertificateRequestwait
+import typings.awsSdk.anon.DescribeCertificateAuthor
+import typings.awsSdk.anon.GetCertificateAuthorityCs
+import typings.awsSdk.anon.GetCertificateRequestwait
 import typings.awsSdk.awsSdkStrings.auditReportCreated
 import typings.awsSdk.awsSdkStrings.certificateAuthorityCSRCreated
 import typings.awsSdk.awsSdkStrings.certificateIssued

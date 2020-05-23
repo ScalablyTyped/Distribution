@@ -6,22 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Sends PlayReady-ND messages and challenges using the TCP network protocol. */
-@JSGlobal("Windows.Media.Protection.PlayReady.NDTCPMessenger")
-@js.native
-class NDTCPMessenger protected () extends js.Object {
-  /**
-    * Creates a new instance of the NDTCPMessenger class.
-    * @param remoteHostName The IP address of the remote host that will receive messages. The format is either an IPv4 address in dotted-decimal notation or an IPv6 address in colon-hex notation.
-    * @param remoteHostPort The TCP port of the remote host that will receive messages.
-    */
-  def this(remoteHostName: String, remoteHostPort: Double) = this()
+trait NDTCPMessenger extends js.Object {
   /**
     * Sends the specified data in an asynchronous license fetch request message.
     * @param sessionIDBytes The session identifier. The session identifier must be 16 bytes.
     * @param challengeDataBytes The data for the challenge message.
     * @return The result of the license fetch request.
     */
-  def sendLicenseFetchRequestAsync(sessionIDBytes: js.Array[Double], challengeDataBytes: js.Array[Double]): IPromiseWithIAsyncOperation[INDSendResult] = js.native
+  def sendLicenseFetchRequestAsync(sessionIDBytes: js.Array[Double], challengeDataBytes: js.Array[Double]): IPromiseWithIAsyncOperation[INDSendResult]
   /**
     * Sends the specified data in an asynchronous proximity detection response message.
     * @param pdType The type of proximity detection operation. This value can be UDP, TCP, or Transport-Agnostic.
@@ -35,7 +27,7 @@ class NDTCPMessenger protected () extends js.Object {
     transmitterChannelBytes: js.Array[Double],
     sessionIDBytes: js.Array[Double],
     responseDataBytes: js.Array[Double]
-  ): IPromiseWithIAsyncOperation[INDSendResult] = js.native
+  ): IPromiseWithIAsyncOperation[INDSendResult]
   /**
     * Sends the specified data in an asynchronous proximity detection start message.
     * @param pdType The type of proximity detection operation. This value can be UDP, TCP, or Transport-Agnostic.
@@ -49,13 +41,26 @@ class NDTCPMessenger protected () extends js.Object {
     transmitterChannelBytes: js.Array[Double],
     sessionIDBytes: js.Array[Double],
     challengeDataBytes: js.Array[Double]
-  ): IPromiseWithIAsyncOperation[INDSendResult] = js.native
+  ): IPromiseWithIAsyncOperation[INDSendResult]
   /**
     * Sends the specified data in an asynchronous registration request message.
     * @param sessionIDBytes The session identifier. The session identifier must be 16 bytes.
     * @param challengeDataBytes The data for the challenge message.
     * @return The result of the registration request.
     */
-  def sendRegistrationRequestAsync(sessionIDBytes: js.Array[Double], challengeDataBytes: js.Array[Double]): IPromiseWithIAsyncOperation[INDSendResult] = js.native
+  def sendRegistrationRequestAsync(sessionIDBytes: js.Array[Double], challengeDataBytes: js.Array[Double]): IPromiseWithIAsyncOperation[INDSendResult]
+}
+
+object NDTCPMessenger {
+  @scala.inline
+  def apply(
+    sendLicenseFetchRequestAsync: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult],
+    sendProximityDetectionResponseAsync: (NDProximityDetectionType, js.Array[Double], js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult],
+    sendProximityDetectionStartAsync: (NDProximityDetectionType, js.Array[Double], js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult],
+    sendRegistrationRequestAsync: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]
+  ): NDTCPMessenger = {
+    val __obj = js.Dynamic.literal(sendLicenseFetchRequestAsync = js.Any.fromFunction2(sendLicenseFetchRequestAsync), sendProximityDetectionResponseAsync = js.Any.fromFunction4(sendProximityDetectionResponseAsync), sendProximityDetectionStartAsync = js.Any.fromFunction4(sendProximityDetectionStartAsync), sendRegistrationRequestAsync = js.Any.fromFunction2(sendRegistrationRequestAsync))
+    __obj.asInstanceOf[NDTCPMessenger]
+  }
 }
 

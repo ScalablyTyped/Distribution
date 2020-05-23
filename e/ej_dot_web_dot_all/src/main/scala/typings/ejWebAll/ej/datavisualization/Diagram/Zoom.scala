@@ -21,12 +21,12 @@ object Zoom {
   def apply(
     focusPoint: ConnectorsSourcePoint = null,
     zoomCommand: ZoomCommand = null,
-    zoomFactor: Int | Double = null
+    zoomFactor: js.UndefOr[Double] = js.undefined
   ): Zoom = {
     val __obj = js.Dynamic.literal()
     if (focusPoint != null) __obj.updateDynamic("focusPoint")(focusPoint.asInstanceOf[js.Any])
     if (zoomCommand != null) __obj.updateDynamic("zoomCommand")(zoomCommand.asInstanceOf[js.Any])
-    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomFactor)) __obj.updateDynamic("zoomFactor")(zoomFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Zoom]
   }
 }

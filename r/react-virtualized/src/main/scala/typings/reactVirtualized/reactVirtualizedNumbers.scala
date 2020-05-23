@@ -24,9 +24,6 @@ object reactVirtualizedNumbers {
   sealed trait `15` extends js.Object
   
   @js.native
-  sealed trait `150` extends js.Object
-  
-  @js.native
   sealed trait `20` extends js.Object
   
   @js.native
@@ -44,8 +41,6 @@ object reactVirtualizedNumbers {
   def `100`: `100` = 100.asInstanceOf[`100`]
   @scala.inline
   def `15`: `15` = 15.asInstanceOf[`15`]
-  @scala.inline
-  def `150`: `150` = 150.asInstanceOf[`150`]
   @scala.inline
   def `20`: `20` = 20.asInstanceOf[`20`]
   @scala.inline

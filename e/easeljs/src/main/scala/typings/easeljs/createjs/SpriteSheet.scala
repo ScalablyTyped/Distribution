@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.SpriteSheet")
 @js.native
-class SpriteSheet protected () extends EventDispatcher {
-  def this(data: js.Object) = this()
+trait SpriteSheet extends EventDispatcher {
   // properties
   var animations: js.Array[String] = js.native
   var complete: Boolean = js.native

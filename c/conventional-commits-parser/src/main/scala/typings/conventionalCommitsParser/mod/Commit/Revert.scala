@@ -15,13 +15,13 @@ object Revert {
   @scala.inline
   def apply(
     StringDictionary: /* field */ StringDictionary[js.UndefOr[Field]] = null,
-    hash: Field = null,
-    header: Field = null
+    hash: js.UndefOr[Null | Field] = js.undefined,
+    header: js.UndefOr[Null | Field] = js.undefined
   ): Revert = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     __obj.asInstanceOf[Revert]
   }
 }

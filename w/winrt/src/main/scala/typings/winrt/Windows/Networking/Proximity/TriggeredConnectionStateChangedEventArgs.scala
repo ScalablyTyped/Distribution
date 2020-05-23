@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs")
-@js.native
-class TriggeredConnectionStateChangedEventArgs () extends ITriggeredConnectionStateChangedEventArgs {
-  /* CompleteClass */
-  override var id: Double = js.native
-  /* CompleteClass */
-  override var socket: StreamSocket = js.native
-  /* CompleteClass */
-  override var state: TriggeredConnectState = js.native
+trait TriggeredConnectionStateChangedEventArgs extends ITriggeredConnectionStateChangedEventArgs
+
+object TriggeredConnectionStateChangedEventArgs {
+  @scala.inline
+  def apply(id: Double, socket: StreamSocket, state: TriggeredConnectState): TriggeredConnectionStateChangedEventArgs = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TriggeredConnectionStateChangedEventArgs]
+  }
 }
 

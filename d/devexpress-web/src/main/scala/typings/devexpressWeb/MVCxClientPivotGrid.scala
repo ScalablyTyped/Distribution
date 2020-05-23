@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the PivotGrid extension.
   */
-@JSGlobal("MVCxClientPivotGrid")
 @js.native
-class MVCxClientPivotGrid () extends ASPxClientPivotGrid {
+trait MVCxClientPivotGrid extends ASPxClientPivotGrid {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -27,16 +26,5 @@ class MVCxClientPivotGrid () extends ASPxClientPivotGrid {
     */
   def PerformCallback(data: js.Any): Unit = js.native
   def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientPivotGrid")
-@js.native
-object MVCxClientPivotGrid extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientPivotGrid type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientPivotGrid = js.native
 }
 

@@ -10,9 +10,9 @@ trait BrowserHttpOptions extends HttpOptions {
 
 object BrowserHttpOptions {
   @scala.inline
-  def apply(requestTimeout: Int | Double = null): BrowserHttpOptions = {
+  def apply(requestTimeout: js.UndefOr[Double] = js.undefined): BrowserHttpOptions = {
     val __obj = js.Dynamic.literal()
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserHttpOptions]
   }
 }

@@ -2,7 +2,7 @@ package typings.xmlCore
 
 import typings.std.BufferSource
 import typings.std.Date
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.Node
 import typings.std.Uint8Array
@@ -15,8 +15,6 @@ import typings.xmlCore.typesMod.XmlChildElementType
 import typings.xmlCore.typesMod.XmlContentType
 import typings.xmlCore.typesMod.XmlElementType
 import typings.xmlCore.utilsMod.SelectNodes
-import typings.xmlCore.xmlCoreStrings._empty
-import typings.xmlCore.xmlCoreStrings.applicationSlashxml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +50,14 @@ object mod extends js.Object {
   class XmlObject ()
     extends typings.xmlCore.xmlObjectMod.XmlObject
   
-  val APPLICATION_XML: applicationSlashxml = js.native
-  val DEFAULT_NAMESPACE_URI: _empty = js.native
-  val DEFAULT_PREFIX: _empty = js.native
+  val APPLICATION_XML: /* "application/xml" */ String = js.native
+  val DEFAULT_NAMESPACE_URI: /* "" */ String = js.native
+  val DEFAULT_PREFIX: /* "" */ String = js.native
   val Select: SelectNodes = js.native
   val XmlBase64Converter: IConverter[Uint8Array] = js.native
   val XmlBooleanConverter: IConverter[Boolean] = js.native
   val XmlNumberConverter: IConverter[Double] = js.native
-  def Parse(xmlString: String): Document_ = js.native
+  def Parse(xmlString: String): Document = js.native
   def SelectNamespaces(node: Element): AssocArray[String] = js.native
   def SelectSingleNode(node: Node, path: String): Node | Null = js.native
   def Stringify(target: Node): String = js.native
@@ -197,11 +195,11 @@ object mod extends js.Object {
       * @param  {string} prefix
       * @returns Document
       */
-    def CreateDocument(): Document_ = js.native
-    def CreateDocument(root: String): Document_ = js.native
-    def CreateDocument(root: String, namespaceUri: String): Document_ = js.native
-    def CreateDocument(root: String, namespaceUri: String, prefix: String): Document_ = js.native
-    def CreateDocument(root: String, namespaceUri: Null, prefix: String): Document_ = js.native
+    def CreateDocument(): Document = js.native
+    def CreateDocument(root: String): Document = js.native
+    def CreateDocument(root: String, namespaceUri: String): Document = js.native
+    def CreateDocument(root: String, namespaceUri: String, prefix: String): Document = js.native
+    def CreateDocument(root: String, namespaceUri: Null, prefix: String): Document = js.native
     def GetAttribute(element: Element, attrName: String): String | Null = js.native
     def GetAttribute(element: Element, attrName: String, defaultValue: String): String | Null = js.native
     def GetAttribute(element: Element, attrName: String, defaultValue: String, required: Boolean): String | Null = js.native
@@ -213,7 +211,7 @@ object mod extends js.Object {
     def GetChildren(node: Node, localName: String, nameSpace: String): js.Array[Element] = js.native
     def GetElement(element: Element, name: String): Element = js.native
     def GetElement(element: Element, name: String, required: Boolean): Element = js.native
-    def GetElementById(element: Document_, idValue: String): Element | Null = js.native
+    def GetElementById(element: Document, idValue: String): Element | Null = js.native
     def GetElementById(element: Element, idValue: String): Element | Null = js.native
     def GetFirstChild(node: Node, localName: String): Element | Null = js.native
     def GetFirstChild(node: Node, localName: String, nameSpace: String): Element | Null = js.native

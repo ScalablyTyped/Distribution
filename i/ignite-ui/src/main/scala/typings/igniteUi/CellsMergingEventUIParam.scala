@@ -6,32 +6,32 @@ import scala.scalajs.js.annotation._
 
 trait CellsMergingEventUIParam extends js.Object {
   /**
-  	 * Gets the column key the merge is being executed for.
-  	 */
+    * Gets the column key the merge is being executed for.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the first record in the merging chain that the merge is executed for.
-  	 */
+    * Gets the first record in the merging chain that the merge is executed for.
+    */
   var firstRecord: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets reference to igGridCellMerging.
-  	 */
+    * Gets reference to igGridCellMerging.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets the next record in the merging chain that the merge is executed for.
-  	 */
+    * Gets the next record in the merging chain that the merge is executed for.
+    */
   var record: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets a reference to the row the merged group starts in if available in the DOM.
-  	 */
+    * Gets a reference to the row the merged group starts in if available in the DOM.
+    */
   var row: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the PK of the row the merged group starts in if available.
-  	 */
+    * Gets the PK of the row the merged group starts in if available.
+    */
   var rowId: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets the data index of the row the merged group starts in.
-  	 */
+    * Gets the data index of the row the merged group starts in.
+    */
   var rowIndex: js.UndefOr[Double] = js.undefined
 }
 
@@ -44,7 +44,7 @@ object CellsMergingEventUIParam {
     record: js.Any = null,
     row: String = null,
     rowId: js.Any = null,
-    rowIndex: Int | Double = null
+    rowIndex: js.UndefOr[Double] = js.undefined
   ): CellsMergingEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
@@ -53,7 +53,7 @@ object CellsMergingEventUIParam {
     if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellsMergingEventUIParam]
   }
 }

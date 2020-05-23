@@ -1,16 +1,16 @@
 package typings.c3.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.c3.AnonAxes
-import typings.c3.AnonCall
-import typings.c3.AnonCallHide
-import typings.c3.AnonColumns
-import typings.c3.AnonDone
-import typings.c3.AnonEnable
-import typings.c3.AnonHeight
-import typings.c3.AnonHide
-import typings.c3.AnonLabels
-import typings.c3.AnonNames
+import typings.c3.anon.Axes
+import typings.c3.anon.Call
+import typings.c3.anon.CallHide
+import typings.c3.anon.Columns
+import typings.c3.anon.Done
+import typings.c3.anon.Enable
+import typings.c3.anon.Height
+import typings.c3.anon.Hide
+import typings.c3.anon.Labels
+import typings.c3.anon.Names
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,22 +18,22 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ChartAPI extends js.Object {
   @JSName("axis")
-  var axis_Original: AnonLabels = js.native
+  var axis_Original: Labels = js.native
   @JSName("data")
-  var data_Original: AnonNames = js.native
+  var data_Original: Names = js.native
   var internal: ChartInternal = js.native
   @JSName("legend")
-  var legend_Original: AnonHide = js.native
+  var legend_Original: Hide = js.native
   @JSName("regions")
-  var regions_Original: AnonCall = js.native
+  var regions_Original: Call = js.native
   @JSName("tooltip")
-  var tooltip_Original: AnonCallHide = js.native
+  var tooltip_Original: CallHide = js.native
   @JSName("xgrids")
   var xgrids_Original: GridOperations = js.native
   @JSName("ygrids")
   var ygrids_Original: GridOperations = js.native
   @JSName("zoom")
-  var zoom_Original: AnonEnable = js.native
+  var zoom_Original: Enable = js.native
   def axis(): Unit = js.native
   /**
     * Get and/or set the categories.
@@ -77,7 +77,7 @@ trait ChartAPI extends js.Object {
     * If data that has the same target id is given, the chart will be appended. Otherwise, new target will be added.
     * @param args The arguments object for this method.
     */
-  def flow(args: AnonColumns): Unit = js.native
+  def flow(args: Columns): Unit = js.native
   /**
     * Force to redraw.
     */
@@ -111,7 +111,7 @@ trait ChartAPI extends js.Object {
     * because of cancel of animation.
     * NOTE: done will be called after data loaded, but it's not after rendering. It's because rendering will finish after some transition and there is some time lag between loading and rendering.
     */
-  def load(args: AnonAxes): Unit = js.native
+  def load(args: Axes): Unit = js.native
   /**
     * Either get the regions or override the regions.
     * @param regions Regions will be replaced with this argument.
@@ -124,7 +124,7 @@ trait ChartAPI extends js.Object {
     * @param size This argument should include width and height in pixels.
     */
   def resize(): Unit = js.native
-  def resize(size: AnonHeight): Unit = js.native
+  def resize(size: Height): Unit = js.native
   /**
     * This API reverts specified targets.
     * You can specify multiple targets by giving an array that includes id as String. If no argument is given, all of targets will be reverted.
@@ -177,7 +177,7 @@ trait ChartAPI extends js.Object {
     * NOTE: If you call load API soon after/before unload, unload param of load should be used. Otherwise chart will not be rendered properly because of cancel of animation.
     */
   def unload(): Unit = js.native
-  def unload(args: AnonDone): Unit = js.native
+  def unload(args: Done): Unit = js.native
   def unload(args: ArrayOrString): Unit = js.native
   /**
     * Change data point state to unselected. By this API, you can unselect data points. To use this API, `data.selection.enabled` needs to be `true`.

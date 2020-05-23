@@ -51,9 +51,9 @@ object JsonPropertyOptions {
   ): JsonPropertyOptions = {
     val __obj = js.Dynamic.literal()
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreType)) __obj.updateDynamic("ignoreType")(ignoreType.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreType)) __obj.updateDynamic("ignoreType")(ignoreType.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonPropertyOptions]
   }

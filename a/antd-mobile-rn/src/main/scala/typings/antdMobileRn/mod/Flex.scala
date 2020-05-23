@@ -1,6 +1,6 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.AnonAlign
+import typings.antdMobileRn.anon.Align
 import typings.antdMobileRn.flexIndexNativeMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class Flex () extends default
 @js.native
 object Flex extends js.Object {
   var Item: js.Any = js.native
-  var defaultProps: AnonAlign = js.native
+  var defaultProps: Align = js.native
 }
 

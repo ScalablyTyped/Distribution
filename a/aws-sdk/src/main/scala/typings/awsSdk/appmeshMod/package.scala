@@ -32,7 +32,7 @@ package object appmeshMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.cancelled__
     - typings.awsSdk.awsSdkStrings.`deadline-exceeded`
-    - typings.awsSdk.awsSdkStrings.internal
+    - typings.awsSdk.awsSdkStrings.internal_
     - typings.awsSdk.awsSdkStrings.`resource-exhausted`
     - typings.awsSdk.awsSdkStrings.unavailable__
     - java.lang.String

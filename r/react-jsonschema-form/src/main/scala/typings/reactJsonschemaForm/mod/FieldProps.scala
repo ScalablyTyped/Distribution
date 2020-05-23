@@ -2,7 +2,7 @@ package typings.reactJsonschemaForm.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsonSchema.mod.JSONSchema6
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -20,7 +20,7 @@ import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
-import typings.reactJsonschemaForm.AnonDefinitions
+import typings.reactJsonschemaForm.anon.Definitions
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.`additions text`
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.`inline`
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.additions
@@ -74,7 +74,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLElement>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'onBlur'>> */
 @js.native
 trait FieldProps[T]
-  extends /* prop */ StringDictionary[js.Any] {
+  extends /* name */ StringDictionary[js.Any] {
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
   var `aria-activedescendant`: js.UndefOr[String] = js.native
@@ -134,7 +134,7 @@ trait FieldProps[T]
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   var datatype: js.UndefOr[String] = js.native
   var defaultChecked: js.UndefOr[Boolean] = js.native
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
@@ -240,7 +240,7 @@ trait FieldProps[T]
   var property: js.UndefOr[String] = js.native
   var radioGroup: js.UndefOr[String] = js.native
   var readonly: Boolean = js.native
-  var registry: AnonDefinitions = js.native
+  var registry: Definitions = js.native
   var required: Boolean = js.native
   var resource: js.UndefOr[String] = js.native
   var results: js.UndefOr[Double] = js.native

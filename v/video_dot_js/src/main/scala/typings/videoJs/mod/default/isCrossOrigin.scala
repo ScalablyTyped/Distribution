@@ -13,7 +13,7 @@ object isCrossOrigin extends js.Object {
     * @param url
     *        The url to check.
     *
-    * @return	Whether it is a cross domain request or not.
+    * @return    Whether it is a cross domain request or not.
     */
   def apply(url: String): Boolean = js.native
 }

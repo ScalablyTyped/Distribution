@@ -1,6 +1,6 @@
 package typings.gulpTypescript.projectMod
 
-import typings.gulpTypescript.Typeofts
+import typings.gulpTypescript.anon.Typeofts
 import typings.gulpTypescript.typesMod.FinalTransformers
 import typings.gulpTypescript.typesMod.TsConfig
 import typings.typescript.mod.CompilerOptions

@@ -51,7 +51,7 @@ object ImportVariantsRequest {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (infoMergeConfig != null) __obj.updateDynamic("infoMergeConfig")(infoMergeConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalizeReferenceNames)) __obj.updateDynamic("normalizeReferenceNames")(normalizeReferenceNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeReferenceNames)) __obj.updateDynamic("normalizeReferenceNames")(normalizeReferenceNames.get.asInstanceOf[js.Any])
     if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris.asInstanceOf[js.Any])
     if (variantSetId != null) __obj.updateDynamic("variantSetId")(variantSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportVariantsRequest]

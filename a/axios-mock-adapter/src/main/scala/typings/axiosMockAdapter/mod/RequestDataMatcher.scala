@@ -13,7 +13,7 @@ trait RequestDataMatcher
 object RequestDataMatcher {
   @scala.inline
   def apply(
-    StringDictionary: /* index */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     params: StringDictionary[js.Any] = null
   ): RequestDataMatcher = {
     val __obj = js.Dynamic.literal()

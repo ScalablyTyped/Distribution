@@ -1,39 +1,33 @@
 package typings.gapiClientCalendar.gapi.client.calendar
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCalendar.AnonCalendarId
-import typings.gapiClientCalendar.AnonPrettyPrint
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCalendar.anon.AltFields
+import typings.gapiClientCalendar.anon.CalendarIdFields
+import typings.gapiClientCalendar.anon.FieldsKey
+import typings.gapiClientCalendar.anon.QuotaUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalendarsResource extends js.Object {
   /** Clears a primary calendar. This operation deletes all events associated with the primary calendar of an account. */
-  def clear(request: AnonCalendarId): Request_[Unit]
+  def clear(): Request[Unit] = js.native
+  def clear(request: QuotaUser): Request[Unit] = js.native
   /** Deletes a secondary calendar. Use calendars.clear for clearing all events on primary calendars. */
-  def delete(request: AnonCalendarId): Request_[Unit]
+  def delete(): Request[Unit] = js.native
+  def delete(request: QuotaUser): Request[Unit] = js.native
   /** Returns metadata for a calendar. */
-  def get(request: AnonCalendarId): Request_[Calendar]
+  def get(): Request[Calendar] = js.native
+  def get(request: QuotaUser): Request[Calendar] = js.native
   /** Creates a secondary calendar. */
-  def insert(request: AnonPrettyPrint): Request_[Calendar]
+  def insert(request: AltFields): Request[Calendar] = js.native
+  def insert(request: FieldsKey, body: Calendar): Request[Calendar] = js.native
   /** Updates metadata for a calendar. This method supports patch semantics. */
-  def patch(request: AnonCalendarId): Request_[Calendar]
+  def patch(request: CalendarIdFields): Request[Calendar] = js.native
+  def patch(request: QuotaUser, body: Calendar): Request[Calendar] = js.native
   /** Updates metadata for a calendar. */
-  def update(request: AnonCalendarId): Request_[Calendar]
-}
-
-object CalendarsResource {
-  @scala.inline
-  def apply(
-    clear: AnonCalendarId => Request_[Unit],
-    delete: AnonCalendarId => Request_[Unit],
-    get: AnonCalendarId => Request_[Calendar],
-    insert: AnonPrettyPrint => Request_[Calendar],
-    patch: AnonCalendarId => Request_[Calendar],
-    update: AnonCalendarId => Request_[Calendar]
-  ): CalendarsResource = {
-    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction1(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
-    __obj.asInstanceOf[CalendarsResource]
-  }
+  def update(request: CalendarIdFields): Request[Calendar] = js.native
+  def update(request: QuotaUser, body: Calendar): Request[Calendar] = js.native
 }
 

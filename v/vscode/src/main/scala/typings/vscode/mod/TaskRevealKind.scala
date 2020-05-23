@@ -12,21 +12,21 @@ sealed trait TaskRevealKind extends js.Object
 @js.native
 object TaskRevealKind extends js.Object {
   /**
-  		 * Always brings the terminal to front if the task is executed.
-  		 */
+    * Always brings the terminal to front if the task is executed.
+    */
   @js.native
   sealed trait Always extends TaskRevealKind
   
   /**
-  		 * The terminal never comes to front when the task is executed.
-  		 */
+    * The terminal never comes to front when the task is executed.
+    */
   @js.native
   sealed trait Never extends TaskRevealKind
   
   /**
-  		 * Only brings the terminal to front if a problem is detected executing the task
-  		 * (e.g. the task couldn't be started because).
-  		 */
+    * Only brings the terminal to front if a problem is detected executing the task
+    * (e.g. the task couldn't be started because).
+    */
   @js.native
   sealed trait Silent extends TaskRevealKind
   

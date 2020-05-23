@@ -26,7 +26,7 @@ trait ShortcutsArray
 object ShortcutsArray {
   @scala.inline
   def apply(
-    StringDictionary: /* action */ StringDictionary[js.UndefOr[String]] = null,
+    StringDictionary: /* header */ StringDictionary[js.UndefOr[String]] = null,
     cleanBlock: String = null,
     drawImage: String = null,
     drawLink: String = null,

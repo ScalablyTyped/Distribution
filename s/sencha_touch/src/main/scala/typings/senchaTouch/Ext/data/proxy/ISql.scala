@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 
 trait ISql extends IClient {
   /** [Method] Performs the given create operation
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("create")
   var create_ISql: js.UndefOr[
     js.Function3[
@@ -26,10 +26,10 @@ trait ISql extends IClient {
   /** [Config Option] (String) */
   var database: js.UndefOr[String] = js.undefined
   /** [Method] Performs the given destroy operation
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("destroy")
   var destroy_ISql: js.UndefOr[
     js.Function3[
@@ -40,39 +40,39 @@ trait ISql extends IClient {
     ]
   ] = js.undefined
   /** [Method] Returns the value of columns
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getColumns: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of database
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDatabase: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of defaultDateFormat
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDefaultDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Formats the data for each record before sending it to the server
-  		* @param record Object The record that we are writing to the server.
-  		* @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
-  		*/
+    * @param record Object The record that we are writing to the server.
+    * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
+    */
   var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the value of table
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getTable: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of tableExists
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getTableExists: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of uniqueIdStrategy
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getUniqueIdStrategy: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Performs the given read operation
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("read")
   var read_ISql: js.UndefOr[
     js.Function3[
@@ -83,36 +83,36 @@ trait ISql extends IClient {
     ]
   ] = js.undefined
   /** [Method] Sets the value of columns
-  		* @param columns String The new value.
-  		*/
+    * @param columns String The new value.
+    */
   var setColumns: js.UndefOr[js.Function1[/* columns */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of database
-  		* @param database String The new value.
-  		*/
+    * @param database String The new value.
+    */
   var setDatabase: js.UndefOr[js.Function1[/* database */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of defaultDateFormat
-  		* @param defaultDateFormat String The new value.
-  		*/
+    * @param defaultDateFormat String The new value.
+    */
   var setDefaultDateFormat: js.UndefOr[js.Function1[/* defaultDateFormat */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of table
-  		* @param table String The new value.
-  		*/
+    * @param table String The new value.
+    */
   var setTable: js.UndefOr[js.Function1[/* table */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of tableExists
-  		* @param tableExists Boolean The new value.
-  		*/
+    * @param tableExists Boolean The new value.
+    */
   var setTableExists: js.UndefOr[js.Function1[/* tableExists */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of uniqueIdStrategy
-  		* @param uniqueIdStrategy Boolean The new value.
-  		*/
+    * @param uniqueIdStrategy Boolean The new value.
+    */
   var setUniqueIdStrategy: js.UndefOr[js.Function1[/* uniqueIdStrategy */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (String) */
   var table: js.UndefOr[String] = js.undefined
   /** [Method] Performs the given update operation
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("update")
   var update_ISql: js.UndefOr[
     js.Function3[
@@ -221,7 +221,7 @@ object ISql {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(js.Any.fromFunction1(batch))
-    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.get.asInstanceOf[js.Any])
     if (batchOrder != null) __obj.updateDynamic("batchOrder")(batchOrder.asInstanceOf[js.Any])
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
@@ -287,7 +287,7 @@ object ISql {
     if (setTableExists != null) __obj.updateDynamic("setTableExists")(js.Any.fromFunction1(setTableExists))
     if (setUniqueIdStrategy != null) __obj.updateDynamic("setUniqueIdStrategy")(js.Any.fromFunction1(setUniqueIdStrategy))
     if (setWriter != null) __obj.updateDynamic("setWriter")(js.Any.fromFunction1(setWriter))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])

@@ -14,9 +14,9 @@ trait DeleteSpotDatafeedSubscriptionRequest extends js.Object {
 
 object DeleteSpotDatafeedSubscriptionRequest {
   @scala.inline
-  def apply(DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteSpotDatafeedSubscriptionRequest = {
+  def apply(DryRun: js.UndefOr[Boolean] = js.undefined): DeleteSpotDatafeedSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSpotDatafeedSubscriptionRequest]
   }
 }

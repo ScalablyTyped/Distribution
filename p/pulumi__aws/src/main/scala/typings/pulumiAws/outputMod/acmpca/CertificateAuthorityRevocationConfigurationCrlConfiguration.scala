@@ -34,7 +34,7 @@ object CertificateAuthorityRevocationConfigurationCrlConfiguration {
   ): CertificateAuthorityRevocationConfigurationCrlConfiguration = {
     val __obj = js.Dynamic.literal(expirationInDays = expirationInDays.asInstanceOf[js.Any])
     if (customCname != null) __obj.updateDynamic("customCname")(customCname.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthorityRevocationConfigurationCrlConfiguration]
   }

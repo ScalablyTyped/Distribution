@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.SettingData
 import typings.officeJs.Excel.Interfaces.SettingLoadOptions
 import typings.officeJs.Excel.Interfaces.SettingUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,15 +16,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.4]
   */
-@JSGlobal("Excel.Setting")
 @js.native
-class Setting () extends ClientObject {
+trait Setting extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Setting: RequestContext = js.native
   /**
     *
-    * Returns the key that represents the id of the Setting. Read-only.
+    * The key that represents the id of the Setting.
     *
     * [Api set: ExcelApi 1.4]
     */
@@ -49,7 +48,7 @@ class Setting () extends ClientObject {
     */
   def load(): Setting = js.native
   def load(options: SettingLoadOptions): Setting = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Setting = js.native
+  def load(propertyNamesAndPaths: Expand): Setting = js.native
   def load(propertyNames: String): Setting = js.native
   def load(propertyNames: js.Array[String]): Setting = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

@@ -15,6 +15,15 @@ object amplitudeJsStrings {
   sealed trait INFO extends js.Object
   
   @js.native
+  sealed trait Lax extends js.Object
+  
+  @js.native
+  sealed trait None extends js.Object
+  
+  @js.native
+  sealed trait Strict extends js.Object
+  
+  @js.native
   sealed trait WARN extends js.Object
   
   @scala.inline
@@ -23,6 +32,12 @@ object amplitudeJsStrings {
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
+  @scala.inline
+  def Lax: Lax = "Lax".asInstanceOf[Lax]
+  @scala.inline
+  def None: None = "None".asInstanceOf[None]
+  @scala.inline
+  def Strict: Strict = "Strict".asInstanceOf[Strict]
   @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
 }

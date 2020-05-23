@@ -5,21 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Dropbox.File.ShareUrl")
-@js.native
-class ShareUrl () extends js.Object {
-  var expiresAt: Date = js.native
-  var isDirect: Boolean = js.native
-  var isPreview: Boolean = js.native
-  var url: String = js.native
-  def toJSON(): js.Object = js.native
+trait ShareUrl extends js.Object {
+  var expiresAt: Date
+  var isDirect: Boolean
+  var isPreview: Boolean
+  var url: String
+  def toJSON(): js.Object
 }
 
-/* static members */
-@JSGlobal("Dropbox.File.ShareUrl")
-@js.native
-object ShareUrl extends js.Object {
-  def parse(urlData: String, isDirect: Boolean): ShareUrl = js.native
-  def parse(urlData: js.Object, isDirect: Boolean): ShareUrl = js.native
+object ShareUrl {
+  @scala.inline
+  def apply(expiresAt: Date, isDirect: Boolean, isPreview: Boolean, toJSON: () => js.Object, url: String): ShareUrl = {
+    val __obj = js.Dynamic.literal(expiresAt = expiresAt.asInstanceOf[js.Any], isDirect = isDirect.asInstanceOf[js.Any], isPreview = isPreview.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), url = url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShareUrl]
+  }
 }
 

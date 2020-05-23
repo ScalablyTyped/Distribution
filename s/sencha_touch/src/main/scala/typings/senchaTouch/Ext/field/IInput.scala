@@ -13,8 +13,8 @@ trait IInput extends IComponent {
   /** [Config Option] (Boolean) */
   var autoCorrect: js.UndefOr[Boolean] = js.undefined
   /** [Method] Attempts to forcefully blur input focus for the field
-  		* @returns Ext.field.Input this
-  		*/
+    * @returns Ext.field.Input this
+    */
   var blur: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (Boolean) */
   var checked: js.UndefOr[Boolean] = js.undefined
@@ -24,95 +24,95 @@ trait IInput extends IComponent {
   /** [Config Option] (Boolean) */
   var fastFocus: js.UndefOr[Boolean] = js.undefined
   /** [Method] Attempts to set the field as the active input focus
-  		* @returns Ext.field.Input this
-  		*/
+    * @returns Ext.field.Input this
+    */
   var focus: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (String) */
   var focusCls: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of autoCapitalize
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoCapitalize: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of autoComplete
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoComplete: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of autoCorrect
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoCorrect: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the checked value of this field
-  		* @returns Mixed value The field value
-  		*/
+    * @returns Mixed value The field value
+    */
   var getChecked: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of cls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   @JSName("getCls")
   var getCls_IInput: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of fastFocus
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getFastFocus: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of focusCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getFocusCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of maxLength
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxLength: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of maxRows
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxRows: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of maxValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxValue: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinValue: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of name
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of pattern
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPattern: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of placeHolder
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPlaceHolder: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of readOnly
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getReadOnly: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of startValue
-  		* @returns Mixed
-  		*/
+    * @returns Mixed
+    */
   var getStartValue: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of stepValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getStepValue: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of tabIndex
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getTabIndex: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of type
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the field data value
-  		* @returns Mixed value The field value.
-  		*/
+    * @returns Mixed value The field value.
+    */
   var getValue: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns true if the value of this Field has been changed from its original value
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isDirty: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Property] (Boolean) */
   var isFocused: js.UndefOr[Boolean] = js.undefined
@@ -135,81 +135,81 @@ trait IInput extends IComponent {
   /** [Method] Resets the current field value to the original value  */
   var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Attempts to forcefully select all the contents of the input field
-  		* @returns Ext.field.Input this
-  		*/
+    * @returns Ext.field.Input this
+    */
   var select: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Sets the value of autoCapitalize
-  		* @param autoCapitalize Boolean The new value.
-  		*/
+    * @param autoCapitalize Boolean The new value.
+    */
   var setAutoCapitalize: js.UndefOr[js.Function1[/* autoCapitalize */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of autoComplete
-  		* @param autoComplete Boolean The new value.
-  		*/
+    * @param autoComplete Boolean The new value.
+    */
   var setAutoComplete: js.UndefOr[js.Function1[/* autoComplete */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of autoCorrect
-  		* @param autoCorrect Boolean The new value.
-  		*/
+    * @param autoCorrect Boolean The new value.
+    */
   var setAutoCorrect: js.UndefOr[js.Function1[/* autoCorrect */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of cls
-  		* @param cls String The new value.
-  		*/
+    * @param cls String The new value.
+    */
   @JSName("setCls")
   var setCls_IInput: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of fastFocus
-  		* @param fastFocus Boolean The new value.
-  		*/
+    * @param fastFocus Boolean The new value.
+    */
   var setFastFocus: js.UndefOr[js.Function1[/* fastFocus */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of focusCls
-  		* @param focusCls String The new value.
-  		*/
+    * @param focusCls String The new value.
+    */
   var setFocusCls: js.UndefOr[js.Function1[/* focusCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of maxLength
-  		* @param maxLength Number The new value.
-  		*/
+    * @param maxLength Number The new value.
+    */
   var setMaxLength: js.UndefOr[js.Function1[/* maxLength */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of maxRows
-  		* @param maxRows Number The new value.
-  		*/
+    * @param maxRows Number The new value.
+    */
   var setMaxRows: js.UndefOr[js.Function1[/* maxRows */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of maxValue
-  		* @param maxValue Number The new value.
-  		*/
+    * @param maxValue Number The new value.
+    */
   var setMaxValue: js.UndefOr[js.Function1[/* maxValue */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minValue
-  		* @param minValue Number The new value.
-  		*/
+    * @param minValue Number The new value.
+    */
   var setMinValue: js.UndefOr[js.Function1[/* minValue */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of name
-  		* @param name String The new value.
-  		*/
+    * @param name String The new value.
+    */
   var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pattern
-  		* @param pattern String The new value.
-  		*/
+    * @param pattern String The new value.
+    */
   var setPattern: js.UndefOr[js.Function1[/* pattern */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of placeHolder
-  		* @param placeHolder String The new value.
-  		*/
+    * @param placeHolder String The new value.
+    */
   var setPlaceHolder: js.UndefOr[js.Function1[/* placeHolder */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of readOnly
-  		* @param readOnly Boolean The new value.
-  		*/
+    * @param readOnly Boolean The new value.
+    */
   var setReadOnly: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of startValue
-  		* @param startValue Mixed The new value.
-  		*/
+    * @param startValue Mixed The new value.
+    */
   var setStartValue: js.UndefOr[js.Function1[/* startValue */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of stepValue
-  		* @param stepValue Number The new value.
-  		*/
+    * @param stepValue Number The new value.
+    */
   var setStepValue: js.UndefOr[js.Function1[/* stepValue */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of tabIndex
-  		* @param tabIndex Number The new value.
-  		*/
+    * @param tabIndex Number The new value.
+    */
   var setTabIndex: js.UndefOr[js.Function1[/* tabIndex */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of type
-  		* @param type String The new value.
-  		*/
+    * @param type String The new value.
+    */
   var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (Mixed) */
   var startValue: js.UndefOr[js.Any] = js.undefined
@@ -220,15 +220,15 @@ trait IInput extends IComponent {
   /** [Config Option] (String) */
   var `type`: js.UndefOr[String] = js.undefined
   /** [Method] Updates the cls configuration
-  		* @param newCls Object
-  		* @param oldCls Object
-  		*/
+    * @param newCls Object
+    * @param oldCls Object
+    */
   var updateCls: js.UndefOr[
     js.Function2[/* newCls */ js.UndefOr[js.Any], /* oldCls */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Updates the useMask configuration
-  		* @param newUseMask Object
-  		*/
+    * @param newUseMask Object
+    */
   var updateUseMask: js.UndefOr[js.Function1[/* newUseMask */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Mixed) */
   var value: js.UndefOr[js.Any] = js.undefined
@@ -269,10 +269,10 @@ object IInput {
     getValue: () => _ = null,
     isDirty: () => Boolean = null,
     isFocused: js.UndefOr[Boolean] = js.undefined,
-    maxLength: Int | Double = null,
-    maxRows: Int | Double = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
+    maxRows: js.UndefOr[Double] = js.undefined,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined,
     name: String = null,
     pattern: String = null,
     placeHolder: String = null,
@@ -298,8 +298,8 @@ object IInput {
     setTabIndex: /* tabIndex */ js.UndefOr[Double] => Unit = null,
     setType: /* type */ js.UndefOr[String] => Unit = null,
     startValue: js.Any = null,
-    stepValue: Int | Double = null,
-    tabIndex: Int | Double = null,
+    stepValue: js.UndefOr[Double] = js.undefined,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     updateCls: (/* newCls */ js.UndefOr[js.Any], /* oldCls */ js.UndefOr[js.Any]) => Unit = null,
     updateUseMask: /* newUseMask */ js.UndefOr[js.Any] => Unit = null,
@@ -307,13 +307,13 @@ object IInput {
   ): IInput = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(autoCapitalize)) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCapitalize)) __obj.updateDynamic("autoCapitalize")(autoCapitalize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.get.asInstanceOf[js.Any])
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction0(blur))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastFocus)) __obj.updateDynamic("fastFocus")(fastFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastFocus)) __obj.updateDynamic("fastFocus")(fastFocus.get.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction0(focus))
     if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls.asInstanceOf[js.Any])
     if (getAutoCapitalize != null) __obj.updateDynamic("getAutoCapitalize")(js.Any.fromFunction0(getAutoCapitalize))
@@ -337,15 +337,15 @@ object IInput {
     if (getType != null) __obj.updateDynamic("getType")(js.Any.fromFunction0(getType))
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRows)) __obj.updateDynamic("maxRows")(maxRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction0(select))
     if (setAutoCapitalize != null) __obj.updateDynamic("setAutoCapitalize")(js.Any.fromFunction1(setAutoCapitalize))
@@ -367,8 +367,8 @@ object IInput {
     if (setTabIndex != null) __obj.updateDynamic("setTabIndex")(js.Any.fromFunction1(setTabIndex))
     if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
     if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
-    if (stepValue != null) __obj.updateDynamic("stepValue")(stepValue.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepValue)) __obj.updateDynamic("stepValue")(stepValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (updateCls != null) __obj.updateDynamic("updateCls")(js.Any.fromFunction2(updateCls))
     if (updateUseMask != null) __obj.updateDynamic("updateUseMask")(js.Any.fromFunction1(updateUseMask))

@@ -1,5 +1,6 @@
 package typings.jpm
 
+import typings.jpm.anon.BadgeColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/ui/button/toggle", JSImport.Namespace)
 @js.native
 object toggleMod extends js.Object {
-  def ToggleButton(options: AnonBadgeColor): typings.jpm.FFAddonSDK.ToggleButton = js.native
+  def ToggleButton(options: BadgeColor): typings.jpm.FFAddonSDK.ToggleButton = js.native
 }
 

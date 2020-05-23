@@ -1,10 +1,10 @@
 package typings.antd.paginationPaginationMod
 
-import typings.antd.AnonJumpNextIcon
+import typings.antd.anon.JumpNextIcon
 import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.rtl
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,11 +18,11 @@ trait Pagination
   def componentDidMount_MPagination(): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MPagination(): Unit = js.native
-  def getIconsProps(prefixCls: String): AnonJumpNextIcon = js.native
+  def getIconsProps(prefixCls: String): JumpNextIcon = js.native
   @JSName("getIconsProps")
-  def getIconsProps_ltr(prefixCls: String, direction: ltr): AnonJumpNextIcon = js.native
+  def getIconsProps_ltr(prefixCls: String, direction: ltr): JumpNextIcon = js.native
   @JSName("getIconsProps")
-  def getIconsProps_rtl(prefixCls: String, direction: rtl): AnonJumpNextIcon = js.native
-  def renderPagination(contextLocale: js.Any): Element = js.native
+  def getIconsProps_rtl(prefixCls: String, direction: rtl): JumpNextIcon = js.native
+  def renderPagination(contextLocale: PaginationLocale): Element = js.native
 }
 

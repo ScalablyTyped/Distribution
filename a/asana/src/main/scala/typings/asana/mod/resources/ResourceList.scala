@@ -1,14 +1,14 @@
 package typings.asana.mod.resources
 
-import typings.asana.AnonAsanaBaseUrl
-import typings.asana.AnonData
+import typings.asana.anon.AsanaBaseUrl
+import typings.asana.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResourceList[T /* <: Resource */] extends js.Object {
-  var _dispatcher: AnonAsanaBaseUrl
-  var _response: AnonData[T]
+  var _dispatcher: AsanaBaseUrl
+  var _response: Data[T]
   var data: js.Array[T]
   /**
     * Get the next page of results in a collection.
@@ -21,9 +21,9 @@ trait ResourceList[T /* <: Resource */] extends js.Object {
 
 object ResourceList {
   @scala.inline
-  def apply[T /* <: Resource */](
-    _dispatcher: AnonAsanaBaseUrl,
-    _response: AnonData[T],
+  def apply[T](
+    _dispatcher: AsanaBaseUrl,
+    _response: Data[T],
     data: js.Array[T],
     nextPage: () => typings.bluebird.mod.^[ResourceList[T] | Null]
   ): ResourceList[T] = {

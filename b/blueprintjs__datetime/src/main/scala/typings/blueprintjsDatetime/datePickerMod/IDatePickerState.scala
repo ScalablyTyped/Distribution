@@ -18,14 +18,12 @@ object IDatePickerState {
   def apply(
     displayMonth: Double,
     displayYear: Double,
-    selectedDay: Int | Double = null,
-    selectedShortcutIndex: Int | Double = null,
+    selectedDay: Double = null.asInstanceOf[Double],
+    selectedShortcutIndex: js.UndefOr[Double] = js.undefined,
     value: Date = null
   ): IDatePickerState = {
-    val __obj = js.Dynamic.literal(displayMonth = displayMonth.asInstanceOf[js.Any], displayYear = displayYear.asInstanceOf[js.Any])
-    if (selectedDay != null) __obj.updateDynamic("selectedDay")(selectedDay.asInstanceOf[js.Any])
-    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(displayMonth = displayMonth.asInstanceOf[js.Any], displayYear = displayYear.asInstanceOf[js.Any], selectedDay = selectedDay.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedShortcutIndex)) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePickerState]
   }
 }

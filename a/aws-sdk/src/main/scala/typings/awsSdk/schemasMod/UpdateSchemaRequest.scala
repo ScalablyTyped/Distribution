@@ -18,7 +18,13 @@ trait UpdateSchemaRequest extends js.Object {
     * The description of the schema.
     */
   var Description: js.UndefOr[stringMin0Max256] = js.native
+  /**
+    * The name of the registry.
+    */
   var RegistryName: string = js.native
+  /**
+    * The name of the schema.
+    */
   var SchemaName: string = js.native
   /**
     * The schema type for the events schema.

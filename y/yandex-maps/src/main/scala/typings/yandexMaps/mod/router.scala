@@ -1,6 +1,6 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.AnonAddViaPoints
+import typings.yandexMaps.anon.AddViaPoints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object router extends js.Object {
     /* CompleteClass */
     override var options: IOptionManager = js.native
     def start(): Unit = js.native
-    def start(options: AnonAddViaPoints): Unit = js.native
+    def start(options: AddViaPoints): Unit = js.native
     def stop(): Unit = js.native
   }
   

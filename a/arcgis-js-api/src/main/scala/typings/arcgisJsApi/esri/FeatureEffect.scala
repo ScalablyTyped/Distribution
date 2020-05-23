@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,8 +35,4 @@ trait FeatureEffect
     */
   var includedEffect: String = js.native
 }
-
-@JSGlobal("__esri.FeatureEffect")
-@js.native
-object FeatureEffect extends TopLevel[FeatureEffectConstructor]
 

@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.STENCILOP_KEEP
-  * @type {number}
-  * @description Don't change the stencil buffer value.
+  * Don't change the stencil buffer value.
   */
 @JSImport("playcanvas", "STENCILOP_KEEP")
 @js.native

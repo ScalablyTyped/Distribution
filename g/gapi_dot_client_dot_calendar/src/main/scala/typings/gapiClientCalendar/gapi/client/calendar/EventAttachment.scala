@@ -13,6 +13,7 @@ trait EventAttachment extends js.Object {
   /**
     * URL link to the attachment.
     * For adding Google Drive file attachments use the same format as in alternateLink property of the Files resource in the Drive API.
+    * Required when adding an attachment.
     */
   var fileUrl: js.UndefOr[String] = js.undefined
   /** URL link to the attachment's icon. Read-only. */

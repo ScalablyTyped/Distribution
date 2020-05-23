@@ -21,9 +21,9 @@ object MatchFor {
     SVG: js.UndefOr[Boolean] = js.undefined
   ): MatchFor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`HTML-CSS`)) __obj.updateDynamic("HTML-CSS")(`HTML-CSS`.asInstanceOf[js.Any])
-    if (!js.isUndefined(NativeMML)) __obj.updateDynamic("NativeMML")(NativeMML.asInstanceOf[js.Any])
-    if (!js.isUndefined(SVG)) __obj.updateDynamic("SVG")(SVG.asInstanceOf[js.Any])
+    if (!js.isUndefined(`HTML-CSS`)) __obj.updateDynamic("HTML-CSS")(`HTML-CSS`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NativeMML)) __obj.updateDynamic("NativeMML")(NativeMML.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SVG)) __obj.updateDynamic("SVG")(SVG.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchFor]
   }
 }

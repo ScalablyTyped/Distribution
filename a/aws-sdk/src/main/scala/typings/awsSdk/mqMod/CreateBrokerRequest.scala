@@ -79,7 +79,7 @@ trait CreateBrokerRequest extends js.Object {
 object CreateBrokerRequest {
   @scala.inline
   def apply(
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined,
     BrokerName: string = null,
     Configuration: ConfigurationId = null,
     CreatorRequestId: string = null,
@@ -90,7 +90,7 @@ object CreateBrokerRequest {
     HostInstanceType: string = null,
     Logs: Logs = null,
     MaintenanceWindowStartTime: WeeklyStartTime = null,
-    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
+    PubliclyAccessible: js.UndefOr[boolean] = js.undefined,
     SecurityGroups: listOfString = null,
     StorageType: BrokerStorageType = null,
     SubnetIds: listOfString = null,
@@ -98,7 +98,7 @@ object CreateBrokerRequest {
     Users: listOfUser = null
   ): CreateBrokerRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
     if (BrokerName != null) __obj.updateDynamic("BrokerName")(BrokerName.asInstanceOf[js.Any])
     if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
     if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
@@ -109,7 +109,7 @@ object CreateBrokerRequest {
     if (HostInstanceType != null) __obj.updateDynamic("HostInstanceType")(HostInstanceType.asInstanceOf[js.Any])
     if (Logs != null) __obj.updateDynamic("Logs")(Logs.asInstanceOf[js.Any])
     if (MaintenanceWindowStartTime != null) __obj.updateDynamic("MaintenanceWindowStartTime")(MaintenanceWindowStartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.asInstanceOf[js.Any])
+    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
     if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])

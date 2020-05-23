@@ -27,10 +27,10 @@ trait PlusNativeUIConfirmOptions extends js.Object {
   /**
     * 对话框在屏幕中的垂直分享对齐方式
     * 可取值：
-    * 		"top" - 表示垂直居顶对齐；
-    * 		"center" - 表示垂直居中对齐；
-    * 		"bottom" - 表示垂直居底对齐。
-    * 	默认值为"center"（垂直居中对齐）。
+    *         "top" - 表示垂直居顶对齐；
+    *         "center" - 表示垂直居中对齐；
+    *         "bottom" - 表示垂直居底对齐。
+    *     默认值为"center"（垂直居中对齐）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */

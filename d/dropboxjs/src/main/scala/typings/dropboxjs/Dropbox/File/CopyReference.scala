@@ -5,19 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Dropbox.File.CopyReference")
-@js.native
-class CopyReference () extends js.Object {
-  var expiresAt: Date = js.native
-  var tag: String = js.native
-  def toJSON(): js.Object = js.native
+trait CopyReference extends js.Object {
+  var expiresAt: Date
+  var tag: String
+  def toJSON(): js.Object
 }
 
-/* static members */
-@JSGlobal("Dropbox.File.CopyReference")
-@js.native
-object CopyReference extends js.Object {
-  def parse(refData: String): CopyReference = js.native
-  def parse(refData: js.Object): CopyReference = js.native
+object CopyReference {
+  @scala.inline
+  def apply(expiresAt: Date, tag: String, toJSON: () => js.Object): CopyReference = {
+    val __obj = js.Dynamic.literal(expiresAt = expiresAt.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.asInstanceOf[CopyReference]
+  }
 }
 

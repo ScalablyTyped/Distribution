@@ -1,6 +1,6 @@
 package typings.sipJs.registererOptionsMod
 
-import typings.sipJs.AnonFromTag
+import typings.sipJs.anon.FromTag
 import typings.sipJs.coreMod.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ trait RegistererOptions extends js.Object {
     */
   var logConfiguration: js.UndefOr[Boolean] = js.undefined
   /** @deprecated TODO: provide alternative. */
-  var params: js.UndefOr[AnonFromTag] = js.undefined
+  var params: js.UndefOr[FromTag] = js.undefined
   /**
     * Value to provide with "reg-id" Contact parameter.
     * @defaultValue 1
@@ -40,23 +40,23 @@ trait RegistererOptions extends js.Object {
 object RegistererOptions {
   @scala.inline
   def apply(
-    expires: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
     extraContactHeaderParams: js.Array[String] = null,
     extraHeaders: js.Array[String] = null,
     instanceId: String = null,
     logConfiguration: js.UndefOr[Boolean] = js.undefined,
-    params: AnonFromTag = null,
-    regId: Int | Double = null,
+    params: FromTag = null,
+    regId: js.UndefOr[Double] = js.undefined,
     registrar: URI = null
   ): RegistererOptions = {
     val __obj = js.Dynamic.literal()
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     if (extraContactHeaderParams != null) __obj.updateDynamic("extraContactHeaderParams")(extraContactHeaderParams.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(logConfiguration)) __obj.updateDynamic("logConfiguration")(logConfiguration.asInstanceOf[js.Any])
+    if (!js.isUndefined(logConfiguration)) __obj.updateDynamic("logConfiguration")(logConfiguration.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (regId != null) __obj.updateDynamic("regId")(regId.asInstanceOf[js.Any])
+    if (!js.isUndefined(regId)) __obj.updateDynamic("regId")(regId.get.asInstanceOf[js.Any])
     if (registrar != null) __obj.updateDynamic("registrar")(registrar.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistererOptions]
   }

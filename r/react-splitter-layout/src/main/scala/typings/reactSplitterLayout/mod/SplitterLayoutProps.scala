@@ -89,9 +89,9 @@ object SplitterLayoutProps {
     onSecondaryPaneSizeChange: /* value */ Double => Unit = null,
     percentage: js.UndefOr[Boolean] = js.undefined,
     primaryIndex: TPrimaryIndex = null,
-    primaryMinSize: Int | Double = null,
-    secondaryInitialSize: Int | Double = null,
-    secondaryMinSize: Int | Double = null,
+    primaryMinSize: js.UndefOr[Double] = js.undefined,
+    secondaryInitialSize: js.UndefOr[Double] = js.undefined,
+    secondaryMinSize: js.UndefOr[Double] = js.undefined,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): SplitterLayoutProps = {
     val __obj = js.Dynamic.literal()
@@ -99,12 +99,12 @@ object SplitterLayoutProps {
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction0(onDragEnd))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
     if (onSecondaryPaneSizeChange != null) __obj.updateDynamic("onSecondaryPaneSizeChange")(js.Any.fromFunction1(onSecondaryPaneSizeChange))
-    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     if (primaryIndex != null) __obj.updateDynamic("primaryIndex")(primaryIndex.asInstanceOf[js.Any])
-    if (primaryMinSize != null) __obj.updateDynamic("primaryMinSize")(primaryMinSize.asInstanceOf[js.Any])
-    if (secondaryInitialSize != null) __obj.updateDynamic("secondaryInitialSize")(secondaryInitialSize.asInstanceOf[js.Any])
-    if (secondaryMinSize != null) __obj.updateDynamic("secondaryMinSize")(secondaryMinSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryMinSize)) __obj.updateDynamic("primaryMinSize")(primaryMinSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondaryInitialSize)) __obj.updateDynamic("secondaryInitialSize")(secondaryInitialSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondaryMinSize)) __obj.updateDynamic("secondaryMinSize")(secondaryMinSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitterLayoutProps]
   }
 }

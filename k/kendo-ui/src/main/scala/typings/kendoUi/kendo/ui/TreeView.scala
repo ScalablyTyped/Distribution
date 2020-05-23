@@ -9,11 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.TreeView")
 @js.native
-class TreeView protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: TreeViewOptions) = this()
+trait TreeView extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_TreeView: TreeViewOptions = js.native
@@ -76,13 +73,5 @@ class TreeView protected () extends Widget {
   def toggle(node: JQuery): Unit = js.native
   def toggle(node: Element): Unit = js.native
   def updateIndeterminate(node: JQuery): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.TreeView")
-@js.native
-object TreeView extends js.Object {
-  var fn: TreeView = js.native
-  def extend(proto: js.Object): TreeView = js.native
 }
 

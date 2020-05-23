@@ -17,9 +17,9 @@ trait GeneratedSourcePosition extends js.Object {
 
 object GeneratedSourcePosition {
   @scala.inline
-  def apply(line: Double, column: Int | Double = null): GeneratedSourcePosition = {
+  def apply(line: Double, column: js.UndefOr[Double] = js.undefined): GeneratedSourcePosition = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedSourcePosition]
   }
 }

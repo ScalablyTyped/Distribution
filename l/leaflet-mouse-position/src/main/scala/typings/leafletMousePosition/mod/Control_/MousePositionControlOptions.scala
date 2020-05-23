@@ -26,7 +26,7 @@ object MousePositionControlOptions {
     latFormatter: /* lat */ Double => String = null,
     lngFirst: js.UndefOr[Boolean] = js.undefined,
     lngFormatter: /* lng */ Double => String = null,
-    numDigits: Int | Double = null,
+    numDigits: js.UndefOr[Double] = js.undefined,
     position: ControlPosition = null,
     prefix: String = null,
     separator: String = null,
@@ -36,13 +36,13 @@ object MousePositionControlOptions {
     if (emptyString != null) __obj.updateDynamic("emptyString")(emptyString.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction2(formatter))
     if (latFormatter != null) __obj.updateDynamic("latFormatter")(js.Any.fromFunction1(latFormatter))
-    if (!js.isUndefined(lngFirst)) __obj.updateDynamic("lngFirst")(lngFirst.asInstanceOf[js.Any])
+    if (!js.isUndefined(lngFirst)) __obj.updateDynamic("lngFirst")(lngFirst.get.asInstanceOf[js.Any])
     if (lngFormatter != null) __obj.updateDynamic("lngFormatter")(js.Any.fromFunction1(lngFormatter))
-    if (numDigits != null) __obj.updateDynamic("numDigits")(numDigits.asInstanceOf[js.Any])
+    if (!js.isUndefined(numDigits)) __obj.updateDynamic("numDigits")(numDigits.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapLng)) __obj.updateDynamic("wrapLng")(wrapLng.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapLng)) __obj.updateDynamic("wrapLng")(wrapLng.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MousePositionControlOptions]
   }
 }

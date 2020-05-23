@@ -1,6 +1,6 @@
 package typings.jpm.pageModMod
 
-import typings.jpm.AnonAttachTo
+import typings.jpm.anon.AttachTo
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ trait PageMod extends js.Object {
 @JSImport("sdk/page-mod", "PageMod")
 @js.native
 object PageMod extends js.Object {
-  def apply(options: AnonAttachTo): PageMod = js.native
+  def apply(options: AttachTo): PageMod = js.native
 }
 

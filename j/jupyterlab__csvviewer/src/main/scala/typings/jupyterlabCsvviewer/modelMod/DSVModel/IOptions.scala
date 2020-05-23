@@ -65,16 +65,16 @@ object IOptions {
     data: String,
     delimiter: String,
     header: js.UndefOr[Boolean] = js.undefined,
-    initialRows: Int | Double = null,
+    initialRows: js.UndefOr[Double] = js.undefined,
     quote: String = null,
     quoteParser: js.UndefOr[Boolean] = js.undefined,
     rowDelimiter: CarriagereturnLinefeed | Carriagereturn | Linefeed = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (initialRows != null) __obj.updateDynamic("initialRows")(initialRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialRows)) __obj.updateDynamic("initialRows")(initialRows.get.asInstanceOf[js.Any])
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (!js.isUndefined(quoteParser)) __obj.updateDynamic("quoteParser")(quoteParser.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoteParser)) __obj.updateDynamic("quoteParser")(quoteParser.get.asInstanceOf[js.Any])
     if (rowDelimiter != null) __obj.updateDynamic("rowDelimiter")(rowDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

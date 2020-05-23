@@ -19,26 +19,26 @@ trait ThrottleOptions extends js.Object {
 object ThrottleOptions {
   @scala.inline
   def apply(
-    burst: Int | Double = null,
+    burst: js.UndefOr[Double] = js.undefined,
     ip: js.UndefOr[Boolean] = js.undefined,
-    maxKeys: Int | Double = null,
+    maxKeys: js.UndefOr[Double] = js.undefined,
     overrides: js.Any = null,
-    rate: Int | Double = null,
+    rate: js.UndefOr[Double] = js.undefined,
     setHeaders: js.UndefOr[Boolean] = js.undefined,
     tokensTable: js.Any = null,
     username: js.UndefOr[Boolean] = js.undefined,
     xff: js.UndefOr[Boolean] = js.undefined
   ): ThrottleOptions = {
     val __obj = js.Dynamic.literal()
-    if (burst != null) __obj.updateDynamic("burst")(burst.asInstanceOf[js.Any])
-    if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
-    if (maxKeys != null) __obj.updateDynamic("maxKeys")(maxKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(burst)) __obj.updateDynamic("burst")(burst.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxKeys)) __obj.updateDynamic("maxKeys")(maxKeys.get.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (!js.isUndefined(setHeaders)) __obj.updateDynamic("setHeaders")(setHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setHeaders)) __obj.updateDynamic("setHeaders")(setHeaders.get.asInstanceOf[js.Any])
     if (tokensTable != null) __obj.updateDynamic("tokensTable")(tokensTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(username)) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (!js.isUndefined(xff)) __obj.updateDynamic("xff")(xff.asInstanceOf[js.Any])
+    if (!js.isUndefined(username)) __obj.updateDynamic("username")(username.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xff)) __obj.updateDynamic("xff")(xff.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrottleOptions]
   }
 }

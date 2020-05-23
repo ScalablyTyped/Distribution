@@ -7,18 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Generates machine code for x86.
   */
-@JSGlobal("X86Writer")
 @js.native
-class X86Writer protected () extends js.Object {
-  /**
-    * Creates a new code writer for generating x86 machine code
-    * written directly to memory at `codeAddress`.
-    *
-    * @param codeAddress Memory address to write generated code to.
-    * @param options Options for customizing code generation.
-    */
-  def this(codeAddress: NativePointerValue) = this()
-  def this(codeAddress: NativePointerValue, options: X86WriterOptions) = this()
+trait X86Writer extends js.Object {
   /**
     * Memory location of the first byte of output.
     */
@@ -50,8 +40,8 @@ class X86Writer protected () extends js.Object {
     * Puts an ADD instruction.
     */
   def putAddRegImm(reg: X86Register, immValue: Double): Unit = js.native
-  def putAddRegImm(reg: X86Register, immValue: Int64_): Unit = js.native
-  def putAddRegImm(reg: X86Register, immValue: UInt64_): Unit = js.native
+  def putAddRegImm(reg: X86Register, immValue: Int64): Unit = js.native
+  def putAddRegImm(reg: X86Register, immValue: UInt64): Unit = js.native
   /**
     * Puts an ADD instruction.
     */
@@ -113,14 +103,14 @@ class X86Writer protected () extends js.Object {
     * Puts a CALL instruction.
     */
   def putCallRegOffsetPtr(reg: X86Register, offset: Double): Unit = js.native
-  def putCallRegOffsetPtr(reg: X86Register, offset: Int64_): Unit = js.native
-  def putCallRegOffsetPtr(reg: X86Register, offset: UInt64_): Unit = js.native
+  def putCallRegOffsetPtr(reg: X86Register, offset: Int64): Unit = js.native
+  def putCallRegOffsetPtr(reg: X86Register, offset: UInt64): Unit = js.native
   /**
     * Puts code needed for calling a C function with the specified `args`.
     */
   def putCallRegOffsetPtrWithArguments(reg: X86Register, offset: Double, args: js.Array[X86CallArgument]): Unit = js.native
-  def putCallRegOffsetPtrWithArguments(reg: X86Register, offset: Int64_, args: js.Array[X86CallArgument]): Unit = js.native
-  def putCallRegOffsetPtrWithArguments(reg: X86Register, offset: UInt64_, args: js.Array[X86CallArgument]): Unit = js.native
+  def putCallRegOffsetPtrWithArguments(reg: X86Register, offset: Int64, args: js.Array[X86CallArgument]): Unit = js.native
+  def putCallRegOffsetPtrWithArguments(reg: X86Register, offset: UInt64, args: js.Array[X86CallArgument]): Unit = js.native
   /**
     * Like `putCallWithArguments()`, but also
     * ensures that the argument list is aligned on a 16 byte boundary.
@@ -150,8 +140,8 @@ class X86Writer protected () extends js.Object {
     * Puts a CMP instruction.
     */
   def putCmpRegOffsetPtrReg(regA: X86Register, offset: Double, regB: X86Register): Unit = js.native
-  def putCmpRegOffsetPtrReg(regA: X86Register, offset: Int64_, regB: X86Register): Unit = js.native
-  def putCmpRegOffsetPtrReg(regA: X86Register, offset: UInt64_, regB: X86Register): Unit = js.native
+  def putCmpRegOffsetPtrReg(regA: X86Register, offset: Int64, regB: X86Register): Unit = js.native
+  def putCmpRegOffsetPtrReg(regA: X86Register, offset: UInt64, regB: X86Register): Unit = js.native
   /**
     * Puts a CMP instruction.
     */
@@ -215,8 +205,8 @@ class X86Writer protected () extends js.Object {
     * Puts a JMP instruction.
     */
   def putJmpRegOffsetPtr(reg: X86Register, offset: Double): Unit = js.native
-  def putJmpRegOffsetPtr(reg: X86Register, offset: Int64_): Unit = js.native
-  def putJmpRegOffsetPtr(reg: X86Register, offset: UInt64_): Unit = js.native
+  def putJmpRegOffsetPtr(reg: X86Register, offset: Int64): Unit = js.native
+  def putJmpRegOffsetPtr(reg: X86Register, offset: UInt64): Unit = js.native
   /**
     * Puts a JMP instruction.
     */
@@ -235,8 +225,8 @@ class X86Writer protected () extends js.Object {
     * Puts a LEA instruction.
     */
   def putLeaRegRegOffset(dstReg: X86Register, srcReg: X86Register, srcOffset: Double): Unit = js.native
-  def putLeaRegRegOffset(dstReg: X86Register, srcReg: X86Register, srcOffset: Int64_): Unit = js.native
-  def putLeaRegRegOffset(dstReg: X86Register, srcReg: X86Register, srcOffset: UInt64_): Unit = js.native
+  def putLeaRegRegOffset(dstReg: X86Register, srcReg: X86Register, srcOffset: Int64): Unit = js.native
+  def putLeaRegRegOffset(dstReg: X86Register, srcReg: X86Register, srcOffset: UInt64): Unit = js.native
   /**
     * Puts a LEAVE instruction.
     */
@@ -281,8 +271,8 @@ class X86Writer protected () extends js.Object {
     * Puts a MOV instruction.
     */
   def putMovRegBaseIndexScaleOffsetPtr(dstReg: X86Register, baseReg: X86Register, indexReg: X86Register, scale: Double, offset: Double): Unit = js.native
-  def putMovRegBaseIndexScaleOffsetPtr(dstReg: X86Register, baseReg: X86Register, indexReg: X86Register, scale: Double, offset: Int64_): Unit = js.native
-  def putMovRegBaseIndexScaleOffsetPtr(dstReg: X86Register, baseReg: X86Register, indexReg: X86Register, scale: Double, offset: UInt64_): Unit = js.native
+  def putMovRegBaseIndexScaleOffsetPtr(dstReg: X86Register, baseReg: X86Register, indexReg: X86Register, scale: Double, offset: Int64): Unit = js.native
+  def putMovRegBaseIndexScaleOffsetPtr(dstReg: X86Register, baseReg: X86Register, indexReg: X86Register, scale: Double, offset: UInt64): Unit = js.native
   /**
     * Puts a MOV FS instruction.
     */
@@ -299,14 +289,14 @@ class X86Writer protected () extends js.Object {
     * Puts a MOV instruction.
     */
   def putMovRegOffsetPtrReg(dstReg: X86Register, dstOffset: Double, srcReg: X86Register): Unit = js.native
-  def putMovRegOffsetPtrReg(dstReg: X86Register, dstOffset: Int64_, srcReg: X86Register): Unit = js.native
-  def putMovRegOffsetPtrReg(dstReg: X86Register, dstOffset: UInt64_, srcReg: X86Register): Unit = js.native
+  def putMovRegOffsetPtrReg(dstReg: X86Register, dstOffset: Int64, srcReg: X86Register): Unit = js.native
+  def putMovRegOffsetPtrReg(dstReg: X86Register, dstOffset: UInt64, srcReg: X86Register): Unit = js.native
   /**
     * Puts a MOV instruction.
     */
   def putMovRegOffsetPtrU32(dstReg: X86Register, dstOffset: Double, immValue: Double): Unit = js.native
-  def putMovRegOffsetPtrU32(dstReg: X86Register, dstOffset: Int64_, immValue: Double): Unit = js.native
-  def putMovRegOffsetPtrU32(dstReg: X86Register, dstOffset: UInt64_, immValue: Double): Unit = js.native
+  def putMovRegOffsetPtrU32(dstReg: X86Register, dstOffset: Int64, immValue: Double): Unit = js.native
+  def putMovRegOffsetPtrU32(dstReg: X86Register, dstOffset: UInt64, immValue: Double): Unit = js.native
   /**
     * Puts a MOV instruction.
     */
@@ -323,8 +313,8 @@ class X86Writer protected () extends js.Object {
     * Puts a MOV instruction.
     */
   def putMovRegRegOffsetPtr(dstReg: X86Register, srcReg: X86Register, srcOffset: Double): Unit = js.native
-  def putMovRegRegOffsetPtr(dstReg: X86Register, srcReg: X86Register, srcOffset: Int64_): Unit = js.native
-  def putMovRegRegOffsetPtr(dstReg: X86Register, srcReg: X86Register, srcOffset: UInt64_): Unit = js.native
+  def putMovRegRegOffsetPtr(dstReg: X86Register, srcReg: X86Register, srcOffset: Int64): Unit = js.native
+  def putMovRegRegOffsetPtr(dstReg: X86Register, srcReg: X86Register, srcOffset: UInt64): Unit = js.native
   /**
     * Puts a MOV instruction.
     */
@@ -337,7 +327,7 @@ class X86Writer protected () extends js.Object {
     * Puts a MOV instruction.
     */
   def putMovRegU64(dstReg: X86Register, immValue: Double): Unit = js.native
-  def putMovRegU64(dstReg: X86Register, immValue: UInt64_): Unit = js.native
+  def putMovRegU64(dstReg: X86Register, immValue: UInt64): Unit = js.native
   /**
     * Puts a MOVDQU EAX XMM0 instruction.
     */
@@ -442,8 +432,8 @@ class X86Writer protected () extends js.Object {
     * Puts a SUB instruction.
     */
   def putSubRegImm(reg: X86Register, immValue: Double): Unit = js.native
-  def putSubRegImm(reg: X86Register, immValue: Int64_): Unit = js.native
-  def putSubRegImm(reg: X86Register, immValue: UInt64_): Unit = js.native
+  def putSubRegImm(reg: X86Register, immValue: Int64): Unit = js.native
+  def putSubRegImm(reg: X86Register, immValue: UInt64): Unit = js.native
   /**
     * Puts a SUB instruction.
     */

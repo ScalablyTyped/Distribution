@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,29 +45,6 @@ object TYPES extends js.Object {
   
   @js.native
   sealed trait UNSIGNED_SHORT_5_6_5 extends TYPES
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TYPES with Double] = js.native
-  /* 5 */ @js.native
-  object FLOAT extends TopLevel[FLOAT with Double]
-  
-  /* 6 */ @js.native
-  object HALF_FLOAT extends TopLevel[HALF_FLOAT with Double]
-  
-  /* 0 */ @js.native
-  object UNSIGNED_BYTE extends TopLevel[UNSIGNED_BYTE with Double]
-  
-  /* 1 */ @js.native
-  object UNSIGNED_SHORT extends TopLevel[UNSIGNED_SHORT with Double]
-  
-  /* 3 */ @js.native
-  object UNSIGNED_SHORT_4_4_4_4 extends TopLevel[UNSIGNED_SHORT_4_4_4_4 with Double]
-  
-  /* 4 */ @js.native
-  object UNSIGNED_SHORT_5_5_5_1 extends TopLevel[UNSIGNED_SHORT_5_5_5_1 with Double]
-  
-  /* 2 */ @js.native
-  object UNSIGNED_SHORT_5_6_5 extends TopLevel[UNSIGNED_SHORT_5_6_5 with Double]
   
 }
 

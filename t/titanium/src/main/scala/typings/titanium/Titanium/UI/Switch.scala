@@ -23,75 +23,74 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * An on/off switch control.
-		 */
-@JSGlobal("Titanium.UI.Switch")
+  * An on/off switch control.
+  */
 @js.native
-class Switch () extends View {
+trait Switch extends View {
   /**
-  			 * Determines if there is animation when the switch value changes.
-  			 */
+    * Determines if there is animation when the switch value changes.
+    */
   var animated: Boolean = js.native
   /**
-  			 * Color to use for switch text, as a color name or hex triplet.
-  			 */
+    * Color to use for switch text, as a color name or hex triplet.
+    */
   var color: String = js.native
   /**
-  			 * Determines whether the switch is enabled.
-  			 */
+    * Determines whether the switch is enabled.
+    */
   var enabled: Boolean = js.native
   /**
-  			 * Font to use for the switch text.
-  			 */
+    * Font to use for the switch text.
+    */
   var font: Font = js.native
   /**
-  			 * The color used to tint the appearance of the switch when it is turned on.
-  			 */
+    * The color used to tint the appearance of the switch when it is turned on.
+    */
   var onTintColor: String = js.native
   /**
-  			 * Style of the switch.
-  			 */
+    * Style of the switch.
+    */
   var style: Double = js.native
   /**
-  			 * Horizontal text alignment of the switch title.
-  			 */
+    * Horizontal text alignment of the switch title.
+    */
   var textAlign: String | Double = js.native
   /**
-  			 * The color used to tint the appearance of the thumb.
-  			 */
+    * The color used to tint the appearance of the thumb.
+    */
   var thumbTintColor: String = js.native
   /**
-  			 * Text to display next to the switch, when the checkbox style is in use.
-  			 */
+    * Text to display next to the switch, when the checkbox style is in use.
+    */
   var title: String = js.native
   /**
-  			 * Text to display on the switch in its "off" state, when the toggle button style is in use.
-  			 */
+    * Text to display on the switch in its "off" state, when the toggle button style is in use.
+    */
   var titleOff: String = js.native
   /**
-  			 * Text to display on the switch in its "on" state, when the toggle button style is in use.
-  			 */
+    * Text to display on the switch in its "on" state, when the toggle button style is in use.
+    */
   var titleOn: String = js.native
   /**
-  			 * Indicates whether the switch has been turned on or off by the user. May also be set
-  			 * programmatically.
-  			 */
+    * Indicates whether the switch has been turned on or off by the user. May also be set
+    * programmatically.
+    */
   var value: Boolean = js.native
   /**
-  			 * Vertical alignment for the text field.
-  			 */
+    * Vertical alignment for the text field.
+    */
   var verticalAlign: Double | String = js.native
   /**
-  			 * Adds the specified callback as an event listener for the named event.
-  			 */
+    * Adds the specified callback as an event listener for the named event.
+    */
   @JSName("addEventListener")
   def addEventListener_change(
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ SwitchChangeEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Fires a synthesized event to any registered listeners.
-  			 */
+    * Fires a synthesized event to any registered listeners.
+    */
   @JSName("fireEvent")
   def fireEvent_change(name: change): Unit = js.native
   @JSName("fireEvent")
@@ -129,144 +128,144 @@ class Switch () extends View {
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: SwitchTwofingertapEvent): Unit = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.animated> property.
-  			 * @deprecated Access <Titanium.UI.Switch.animated> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.animated> property.
+    * @deprecated Access <Titanium.UI.Switch.animated> instead.
+    */
   def getAnimated(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.color> property.
-  			 * @deprecated Access <Titanium.UI.Switch.color> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.color> property.
+    * @deprecated Access <Titanium.UI.Switch.color> instead.
+    */
   def getColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.enabled> property.
-  			 * @deprecated Access <Titanium.UI.Switch.enabled> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.enabled> property.
+    * @deprecated Access <Titanium.UI.Switch.enabled> instead.
+    */
   def getEnabled(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.font> property.
-  			 * @deprecated Access <Titanium.UI.Switch.font> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.font> property.
+    * @deprecated Access <Titanium.UI.Switch.font> instead.
+    */
   def getFont(): Font = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.onTintColor> property.
-  			 * @deprecated Access <Titanium.UI.Switch.onTintColor> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.onTintColor> property.
+    * @deprecated Access <Titanium.UI.Switch.onTintColor> instead.
+    */
   def getOnTintColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.style> property.
-  			 * @deprecated Access <Titanium.UI.Switch.style> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.style> property.
+    * @deprecated Access <Titanium.UI.Switch.style> instead.
+    */
   def getStyle(): Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.textAlign> property.
-  			 * @deprecated Access <Titanium.UI.Switch.textAlign> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.textAlign> property.
+    * @deprecated Access <Titanium.UI.Switch.textAlign> instead.
+    */
   def getTextAlign(): String | Double = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.thumbTintColor> property.
-  			 * @deprecated Access <Titanium.UI.Switch.thumbTintColor> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.thumbTintColor> property.
+    * @deprecated Access <Titanium.UI.Switch.thumbTintColor> instead.
+    */
   def getThumbTintColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.title> property.
-  			 * @deprecated Access <Titanium.UI.Switch.title> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.title> property.
+    * @deprecated Access <Titanium.UI.Switch.title> instead.
+    */
   def getTitle(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.titleOff> property.
-  			 * @deprecated Access <Titanium.UI.Switch.titleOff> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.titleOff> property.
+    * @deprecated Access <Titanium.UI.Switch.titleOff> instead.
+    */
   def getTitleOff(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.titleOn> property.
-  			 * @deprecated Access <Titanium.UI.Switch.titleOn> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.titleOn> property.
+    * @deprecated Access <Titanium.UI.Switch.titleOn> instead.
+    */
   def getTitleOn(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.value> property.
-  			 * @deprecated Access <Titanium.UI.Switch.value> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.value> property.
+    * @deprecated Access <Titanium.UI.Switch.value> instead.
+    */
   def getValue(): Boolean = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.Switch.verticalAlign> property.
-  			 * @deprecated Access <Titanium.UI.Switch.verticalAlign> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.Switch.verticalAlign> property.
+    * @deprecated Access <Titanium.UI.Switch.verticalAlign> instead.
+    */
   def getVerticalAlign(): Double | String = js.native
   /**
-  			 * Removes the specified callback as an event listener for the named event.
-  			 */
+    * Removes the specified callback as an event listener for the named event.
+    */
   @JSName("removeEventListener")
   def removeEventListener_change(
     name: change,
     callback: js.ThisFunction1[/* this */ this.type, /* event */ SwitchChangeEvent, Unit]
   ): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.animated> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.animated> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.animated> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.animated> instead.
+    */
   def setAnimated(animated: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.color> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.color> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.color> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.color> instead.
+    */
   def setColor(color: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.enabled> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.enabled> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.enabled> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.enabled> instead.
+    */
   def setEnabled(enabled: Boolean): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.font> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.font> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.font> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.font> instead.
+    */
   def setFont(font: Font): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.onTintColor> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.onTintColor> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.onTintColor> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.onTintColor> instead.
+    */
   def setOnTintColor(onTintColor: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.style> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.style> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.style> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.style> instead.
+    */
   def setStyle(style: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.textAlign> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.textAlign> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.textAlign> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.textAlign> instead.
+    */
   def setTextAlign(textAlign: String): Unit = js.native
   def setTextAlign(textAlign: Double): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.thumbTintColor> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.thumbTintColor> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.thumbTintColor> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.thumbTintColor> instead.
+    */
   def setThumbTintColor(thumbTintColor: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.title> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.title> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.title> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.title> instead.
+    */
   def setTitle(title: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.titleOff> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.titleOff> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.titleOff> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.titleOff> instead.
+    */
   def setTitleOff(titleOff: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.titleOn> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.titleOn> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.titleOn> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.titleOn> instead.
+    */
   def setTitleOn(titleOn: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.value> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.value> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.value> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.value> instead.
+    */
   def setValue(value: Boolean): Unit = js.native
   def setVerticalAlign(verticalAlign: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.Switch.verticalAlign> property.
-  			 * @deprecated Set the value using <Titanium.UI.Switch.verticalAlign> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.Switch.verticalAlign> property.
+    * @deprecated Set the value using <Titanium.UI.Switch.verticalAlign> instead.
+    */
   def setVerticalAlign(verticalAlign: Double): Unit = js.native
 }
 

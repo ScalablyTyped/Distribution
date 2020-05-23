@@ -10,9 +10,9 @@ trait EnsureOptions extends js.Object {
 
 object EnsureOptions {
   @scala.inline
-  def apply(mode: Int | Double = null): EnsureOptions = {
+  def apply(mode: js.UndefOr[Double] = js.undefined): EnsureOptions = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnsureOptions]
   }
 }

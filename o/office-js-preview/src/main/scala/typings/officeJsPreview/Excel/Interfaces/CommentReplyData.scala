@@ -27,14 +27,14 @@ trait CommentReplyData extends js.Object {
   var authorName: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the comment reply's content. The string is plain text.
+    * The comment reply's content. The string is plain text.
     *
     * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets the content type of the comment.
+    * The content type of the reply.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -49,31 +49,30 @@ trait CommentReplyData extends js.Object {
   var creationDate: js.UndefOr[Date] = js.undefined
   /**
     *
-    * Represents the comment reply identifier. Read-only.
+    * Specifies the comment reply identifier.
     *
     * [Api set: ExcelApi 1.10]
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets the entities (e.g. people) that are mentioned in comments.
+    * The entities (e.g., people) that are mentioned in comments.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     */
   var mentions: js.UndefOr[js.Array[CommentMention]] = js.undefined
   /**
     *
-    * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+    * The comment reply status. A value of "true" means the reply is in the resolved state.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var resolved: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    * The rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     */
   var richContent: js.UndefOr[String] = js.undefined
 }
@@ -99,7 +98,7 @@ object CommentReplyData {
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.get.asInstanceOf[js.Any])
     if (richContent != null) __obj.updateDynamic("richContent")(richContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentReplyData]
   }

@@ -48,17 +48,17 @@ object IDetailsRowStyleProps {
     isSelected: js.UndefOr[Boolean] = js.undefined
   ): IDetailsRowStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(anySelected)) __obj.updateDynamic("anySelected")(anySelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(canSelect)) __obj.updateDynamic("canSelect")(canSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(anySelected)) __obj.updateDynamic("anySelected")(anySelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSelect)) __obj.updateDynamic("canSelect")(canSelect.get.asInstanceOf[js.Any])
     if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
     if (checkboxCellClassName != null) __obj.updateDynamic("checkboxCellClassName")(checkboxCellClassName.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
     if (droppingClassName != null) __obj.updateDynamic("droppingClassName")(droppingClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCheckVisible)) __obj.updateDynamic("isCheckVisible")(isCheckVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRowHeader)) __obj.updateDynamic("isRowHeader")(isRowHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCheckVisible)) __obj.updateDynamic("isCheckVisible")(isCheckVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRowHeader)) __obj.updateDynamic("isRowHeader")(isRowHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsRowStyleProps]
   }
 }

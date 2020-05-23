@@ -1,6 +1,6 @@
 package typings.phaser.phaserMod.Math
 
-import typings.phaser.Phaser.Geom.Point
+import typings.phaser.Phaser.Types.Math.Vector2Like
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,6 @@ object Angle extends js.Object {
     * @param y2 The y coordinate of the second point.
     */
   def Between(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
-  def BetweenPoints(point1: js.Object, point2: js.Object): Double = js.native
-  def BetweenPoints(point1: js.Object, point2: Point): Double = js.native
-  def BetweenPoints(point1: Point, point2: js.Object): Double = js.native
   /**
     * Find the angle of a segment from (point1.x, point1.y) -> (point2.x, point2.y).
     * 
@@ -26,10 +23,7 @@ object Angle extends js.Object {
     * @param point1 The first point.
     * @param point2 The second point.
     */
-  def BetweenPoints(point1: Point, point2: Point): Double = js.native
-  def BetweenPointsY(point1: js.Object, point2: js.Object): Double = js.native
-  def BetweenPointsY(point1: js.Object, point2: Point): Double = js.native
-  def BetweenPointsY(point1: Point, point2: js.Object): Double = js.native
+  def BetweenPoints(point1: Vector2Like, point2: Vector2Like): Double = js.native
   /**
     * Find the angle of a segment from (point1.x, point1.y) -> (point2.x, point2.y).
     * 
@@ -38,7 +32,7 @@ object Angle extends js.Object {
     * @param point1 The first point.
     * @param point2 The second point.
     */
-  def BetweenPointsY(point1: Point, point2: Point): Double = js.native
+  def BetweenPointsY(point1: Vector2Like, point2: Vector2Like): Double = js.native
   /**
     * Find the angle of a segment from (x1, y1) -> (x2, y2).
     * 
@@ -70,6 +64,14 @@ object Angle extends js.Object {
     * @param angle The angle to normalize, in radians.
     */
   def Normalize(angle: Double): Double = js.native
+  /**
+    * Returns a random angle in the range [-pi, pi].
+    */
+  def Random(): Double = js.native
+  /**
+    * Returns a random angle in the range [-180, 180].
+    */
+  def RandomDegrees(): Double = js.native
   /**
     * Reverse the given angle.
     * @param angle The angle to reverse, in radians.

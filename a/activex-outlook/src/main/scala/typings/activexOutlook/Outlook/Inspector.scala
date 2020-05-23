@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.Inspector")
 @js.native
-class Inspector protected () extends js.Object {
+trait Inspector extends js.Object {
   val Application: typings.activexOutlook.Outlook.Application = js.native
   val AttachmentSelection: typings.activexOutlook.Outlook.AttachmentSelection = js.native
   val Caption: String = js.native

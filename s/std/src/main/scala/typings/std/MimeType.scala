@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +24,17 @@ trait MimeType extends js.Object {
   val `type`: java.lang.String
 }
 
-@JSGlobal("MimeType")
-@js.native
-object MimeType extends Instantiable0[MimeType]
+object MimeType {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    enabledPlugin: Plugin,
+    suffixes: java.lang.String,
+    `type`: java.lang.String
+  ): MimeType = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabledPlugin = enabledPlugin.asInstanceOf[js.Any], suffixes = suffixes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MimeType]
+  }
+}
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 // acl permissions
 @JSImport("zookeeper", "ZOO_OPEN_ACL_UNSAFE")
 @js.native
-object ZOO_OPEN_ACL_UNSAFE extends TopLevel[Double]
+object ZOO_OPEN_ACL_UNSAFE extends TopLevel[/* 31 */ Double]
 

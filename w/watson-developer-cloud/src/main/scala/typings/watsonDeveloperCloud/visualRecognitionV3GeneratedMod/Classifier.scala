@@ -44,7 +44,7 @@ object Classifier {
   ): Classifier = {
     val __obj = js.Dynamic.literal(classifier_id = classifier_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(core_ml_enabled)) __obj.updateDynamic("core_ml_enabled")(core_ml_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(core_ml_enabled)) __obj.updateDynamic("core_ml_enabled")(core_ml_enabled.get.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (explanation != null) __obj.updateDynamic("explanation")(explanation.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])

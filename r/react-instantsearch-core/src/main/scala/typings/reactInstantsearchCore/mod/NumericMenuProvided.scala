@@ -1,6 +1,6 @@
 package typings.reactInstantsearchCore.mod
 
-import typings.reactInstantsearchCore.AnonIsRefined
+import typings.reactInstantsearchCore.anon.IsRefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait NumericMenuProvided extends js.Object {
     */
   var currentRefinement: String
   /** the list of ranges the NumericMenu can display. */
-  var items: js.Array[AnonIsRefined]
+  var items: js.Array[IsRefined]
   /** a function to generate a URL for the corresponding search state */
   def createURL(args: js.Any*): js.Any
   /** a function to select a range. */
@@ -25,7 +25,7 @@ object NumericMenuProvided {
   def apply(
     createURL: /* repeated */ js.Any => js.Any,
     currentRefinement: String,
-    items: js.Array[AnonIsRefined],
+    items: js.Array[IsRefined],
     refine: /* repeated */ js.Any => js.Any
   ): NumericMenuProvided = {
     val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine))

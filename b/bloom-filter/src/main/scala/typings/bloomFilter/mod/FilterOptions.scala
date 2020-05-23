@@ -14,10 +14,15 @@ trait FilterOptions extends js.Object {
 
 object FilterOptions {
   @scala.inline
-  def apply(nHashFuncs: Double, vData: Buffer, nFlags: Int | Double = null, nTweak: Int | Double = null): FilterOptions = {
+  def apply(
+    nHashFuncs: Double,
+    vData: Buffer,
+    nFlags: js.UndefOr[Double] = js.undefined,
+    nTweak: js.UndefOr[Double] = js.undefined
+  ): FilterOptions = {
     val __obj = js.Dynamic.literal(nHashFuncs = nHashFuncs.asInstanceOf[js.Any], vData = vData.asInstanceOf[js.Any])
-    if (nFlags != null) __obj.updateDynamic("nFlags")(nFlags.asInstanceOf[js.Any])
-    if (nTweak != null) __obj.updateDynamic("nTweak")(nTweak.asInstanceOf[js.Any])
+    if (!js.isUndefined(nFlags)) __obj.updateDynamic("nFlags")(nFlags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nTweak)) __obj.updateDynamic("nTweak")(nTweak.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions]
   }
 }

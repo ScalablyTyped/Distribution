@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSXML2.IXMLDOMEntityReference")
 @js.native
-class IXMLDOMEntityReference protected () extends js.Object {
+trait IXMLDOMEntityReference extends js.Object {
   @JSName("MSXML2.IXMLDOMEntityReference_typekey")
   var MSXML2DotIXMLDOMEntityReference_typekey: IXMLDOMEntityReference = js.native
   /** the collection of the node's attributes */

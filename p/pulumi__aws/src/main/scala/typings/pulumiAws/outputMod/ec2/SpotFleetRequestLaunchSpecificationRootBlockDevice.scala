@@ -25,7 +25,7 @@ object SpotFleetRequestLaunchSpecificationRootBlockDevice {
     deleteOnTermination: js.UndefOr[Boolean] = js.undefined
   ): SpotFleetRequestLaunchSpecificationRootBlockDevice = {
     val __obj = js.Dynamic.literal(encrypted = encrypted.asInstanceOf[js.Any], iops = iops.asInstanceOf[js.Any], kmsKeyId = kmsKeyId.asInstanceOf[js.Any], volumeSize = volumeSize.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotFleetRequestLaunchSpecificationRootBlockDevice]
   }
 }

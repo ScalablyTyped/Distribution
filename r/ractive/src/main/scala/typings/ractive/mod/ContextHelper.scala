@@ -1,7 +1,7 @@
 package typings.ractive.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,11 +15,11 @@ class ContextHelper () extends js.Object {
   /** A map of currently attached decorator handles, by name, that are associated with the element, if any, that this Context is associated with. */
   var decorators: Registry[DecoratorHandle] = js.native
   /** The event associated with this Context, if any. */
-  var event: js.UndefOr[Event_] = js.native
+  var event: js.UndefOr[Event] = js.native
   /** The element associated with this Context, if any. */
   var node: js.UndefOr[HTMLElement] = js.native
   /** The event associated with this Context, if any. */
-  var original: js.UndefOr[Event_] = js.native
+  var original: js.UndefOr[Event] = js.native
   /** The Ractive instance associated with this Context. */
   var ractive: Ractive[Ractive[_]] = js.native
   /** Add to the number at the given keypath
@@ -89,7 +89,7 @@ class ContextHelper () extends js.Object {
   	 * @param event the name of DOM event for which to listen
   	 * @param callback the callback to call when the given event is fired
   	 */
-  def listen(event: String, callback: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, Unit]): ListenerHandle = js.native
+  def listen(event: String, callback: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Unit]): ListenerHandle = js.native
   /**
   	 * Create an observer at the given keypath that will be called when the value at that Context-relative keypath mutates.
   	 * @param keypath the keypath(s) to observe - multiple keypaths can be separated by a space
@@ -245,7 +245,7 @@ class ContextHelper () extends js.Object {
   	 * @param event name of the event for which to stop listening
   	 * @param callback the callback listener to remove
   	 */
-  def unlisten(event: String, callback: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event_, Unit]): Unit = js.native
+  def unlisten(event: String, callback: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Unit]): Unit = js.native
   /**
   	 * Unshift the given value onto the array at the given Context-relative keypath. If there is nothing at the given keypath (undefined), then an array will ne created.
   	 * @param keypath

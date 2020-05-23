@@ -92,7 +92,7 @@ package object styledComponentsMod {
     ]) with (typings.std.Partial[typings.std.Pick[typings.react.mod.ComponentPropsWithRef[C] with O, A]]), 
     T
   ]) with typings.styledComponents.styledComponentsMod.WithChildrenIfReactComponentClass[C]
-  type StyledComponentPropsWithAs[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: /* keyof any */ java.lang.String */] = (typings.styledComponents.styledComponentsMod.StyledComponentProps[C, T, O, A]) with typings.styledComponents.AnonForwardedAs[C]
+  type StyledComponentPropsWithAs[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: /* keyof any */ java.lang.String */] = (typings.styledComponents.styledComponentsMod.StyledComponentProps[C, T, O, A]) with typings.styledComponents.anon.ForwardedAs[C]
   type StyledComponentPropsWithRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = typings.react.mod.ComponentPropsWithRef[
     C | typings.styledComponents.styledComponentsMod.StyledComponentInnerComponent[C]
   ]
@@ -116,14 +116,14 @@ package object styledComponentsMod {
     typings.styledComponents.styledComponentsMod.AnyIfEmpty[U]
   ]
   type ThemedCssFunction[T /* <: js.Object */] = typings.styledComponents.styledComponentsMod.BaseThemedCssFunction[typings.styledComponents.styledComponentsMod.AnyIfEmpty[T]]
-  type ThemedGlobalStyledClassProps[P, T] = (typings.styledComponents.styledComponentsMod.WithOptionalTheme[P, T]) with typings.styledComponents.AnonSuppressMultiMountWarning
+  type ThemedGlobalStyledClassProps[P, T] = (typings.styledComponents.styledComponentsMod.WithOptionalTheme[P, T]) with typings.styledComponents.anon.SuppressMultiMountWarning
   type ThemedStyledInterface[T /* <: js.Object */] = typings.styledComponents.styledComponentsMod.ThemedBaseStyledInterface[typings.styledComponents.styledComponentsMod.AnyIfEmpty[T]]
   type ThemedStyledProps[P, T] = P with typings.styledComponents.styledComponentsMod.ThemeProps[T]
   // Because of React typing quirks, when getting props from a React.ComponentClass,
   // we need to manually add a `children` field.
   // See https://github.com/DefinitelyTyped/DefinitelyTyped/pull/31945
   // and https://github.com/DefinitelyTyped/DefinitelyTyped/pull/32843
-  type WithChildrenIfReactComponentClass[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = js.Object | typings.styledComponents.AnonChildren
-  type WithOptionalTheme[P /* <: typings.styledComponents.AnonThemeT[T] */, T] = P with typings.styledComponents.AnonThemeT[T]
+  type WithChildrenIfReactComponentClass[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = js.Object | typings.styledComponents.anon.Children
+  type WithOptionalTheme[P /* <: typings.styledComponents.anon.ThemeT[T] */, T] = P with typings.styledComponents.anon.ThemeT[T]
   type WithThemeFnInterface[T /* <: js.Object */] = typings.styledComponents.styledComponentsMod.BaseWithThemeFnInterface[typings.styledComponents.styledComponentsMod.AnyIfEmpty[T]]
 }

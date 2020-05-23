@@ -38,22 +38,22 @@ trait MatterRunnerConfig extends js.Object {
 object MatterRunnerConfig {
   @scala.inline
   def apply(
-    correction: Int | Double = null,
-    delta: Int | Double = null,
-    deltaMax: Int | Double = null,
-    deltaMin: Int | Double = null,
-    deltaSampleSize: Int | Double = null,
-    fps: Int | Double = null,
+    correction: js.UndefOr[Double] = js.undefined,
+    delta: js.UndefOr[Double] = js.undefined,
+    deltaMax: js.UndefOr[Double] = js.undefined,
+    deltaMin: js.UndefOr[Double] = js.undefined,
+    deltaSampleSize: js.UndefOr[Double] = js.undefined,
+    fps: js.UndefOr[Double] = js.undefined,
     isFixed: js.UndefOr[Boolean] = js.undefined
   ): MatterRunnerConfig = {
     val __obj = js.Dynamic.literal()
-    if (correction != null) __obj.updateDynamic("correction")(correction.asInstanceOf[js.Any])
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (deltaMax != null) __obj.updateDynamic("deltaMax")(deltaMax.asInstanceOf[js.Any])
-    if (deltaMin != null) __obj.updateDynamic("deltaMin")(deltaMin.asInstanceOf[js.Any])
-    if (deltaSampleSize != null) __obj.updateDynamic("deltaSampleSize")(deltaSampleSize.asInstanceOf[js.Any])
-    if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(correction)) __obj.updateDynamic("correction")(correction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deltaMax)) __obj.updateDynamic("deltaMax")(deltaMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deltaMin)) __obj.updateDynamic("deltaMin")(deltaMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deltaSampleSize)) __obj.updateDynamic("deltaSampleSize")(deltaSampleSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fps)) __obj.updateDynamic("fps")(fps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterRunnerConfig]
   }
 }

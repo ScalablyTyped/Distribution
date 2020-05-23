@@ -16,15 +16,15 @@ object AnimationPlaybackEventInit {
     bubbles: js.UndefOr[Boolean] = js.undefined,
     cancelable: js.UndefOr[Boolean] = js.undefined,
     composed: js.UndefOr[Boolean] = js.undefined,
-    currentTime: Int | Double = null,
-    timelineTime: Int | Double = null
+    currentTime: js.UndefOr[Null | Double] = js.undefined,
+    timelineTime: js.UndefOr[Null | Double] = js.undefined
   ): AnimationPlaybackEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
-    if (timelineTime != null) __obj.updateDynamic("timelineTime")(timelineTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentTime)) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(timelineTime)) __obj.updateDynamic("timelineTime")(timelineTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationPlaybackEventInit]
   }
 }

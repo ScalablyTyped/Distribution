@@ -79,7 +79,7 @@ object ClusterIconStyle {
     fontWeight: java.lang.String = null,
     textColor: java.lang.String = null,
     textDecoration: java.lang.String = null,
-    textSize: Int | Double = null
+    textSize: js.UndefOr[Double] = js.undefined
   ): ClusterIconStyle = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (anchorIcon != null) __obj.updateDynamic("anchorIcon")(anchorIcon.asInstanceOf[js.Any])
@@ -90,7 +90,7 @@ object ClusterIconStyle {
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
-    if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(textSize)) __obj.updateDynamic("textSize")(textSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterIconStyle]
   }
 }

@@ -69,9 +69,9 @@ object Service {
     EndTime: Timestamp = null,
     Name: String = null,
     Names: ServiceNames = null,
-    ReferenceId: Int | scala.Double = null,
+    ReferenceId: js.UndefOr[NullableInteger] = js.undefined,
     ResponseTimeHistogram: Histogram = null,
-    Root: js.UndefOr[scala.Boolean] = js.undefined,
+    Root: js.UndefOr[NullableBoolean] = js.undefined,
     StartTime: Timestamp = null,
     State: String = null,
     SummaryStatistics: ServiceStatistics = null,
@@ -84,9 +84,9 @@ object Service {
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
-    if (ReferenceId != null) __obj.updateDynamic("ReferenceId")(ReferenceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReferenceId)) __obj.updateDynamic("ReferenceId")(ReferenceId.get.asInstanceOf[js.Any])
     if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram.asInstanceOf[js.Any])
-    if (!js.isUndefined(Root)) __obj.updateDynamic("Root")(Root.asInstanceOf[js.Any])
+    if (!js.isUndefined(Root)) __obj.updateDynamic("Root")(Root.get.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (SummaryStatistics != null) __obj.updateDynamic("SummaryStatistics")(SummaryStatistics.asInstanceOf[js.Any])

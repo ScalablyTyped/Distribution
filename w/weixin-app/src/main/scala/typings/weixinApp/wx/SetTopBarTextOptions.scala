@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait SetTopBarTextOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 置顶栏文字内容
-  		 */
+    * 置顶栏文字内容
+    */
   var text: String
 }
 

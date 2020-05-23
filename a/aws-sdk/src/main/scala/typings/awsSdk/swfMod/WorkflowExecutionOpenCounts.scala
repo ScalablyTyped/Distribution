@@ -35,10 +35,10 @@ object WorkflowExecutionOpenCounts {
     openChildWorkflowExecutions: Count,
     openDecisionTasks: OpenDecisionTasksCount,
     openTimers: Count,
-    openLambdaFunctions: Int | Double = null
+    openLambdaFunctions: js.UndefOr[Count] = js.undefined
   ): WorkflowExecutionOpenCounts = {
     val __obj = js.Dynamic.literal(openActivityTasks = openActivityTasks.asInstanceOf[js.Any], openChildWorkflowExecutions = openChildWorkflowExecutions.asInstanceOf[js.Any], openDecisionTasks = openDecisionTasks.asInstanceOf[js.Any], openTimers = openTimers.asInstanceOf[js.Any])
-    if (openLambdaFunctions != null) __obj.updateDynamic("openLambdaFunctions")(openLambdaFunctions.asInstanceOf[js.Any])
+    if (!js.isUndefined(openLambdaFunctions)) __obj.updateDynamic("openLambdaFunctions")(openLambdaFunctions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionOpenCounts]
   }
 }

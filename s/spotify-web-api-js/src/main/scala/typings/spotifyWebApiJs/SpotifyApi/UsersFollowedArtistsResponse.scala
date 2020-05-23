@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Get User’s Followed Artists
-  * 
+  *
   * GET /v1/me/following
   * https://developer.spotify.com/web-api/get-followed-artists/
   */

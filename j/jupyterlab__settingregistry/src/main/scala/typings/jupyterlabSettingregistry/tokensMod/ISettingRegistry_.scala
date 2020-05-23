@@ -1,8 +1,8 @@
 package typings.jupyterlabSettingregistry.tokensMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jupyterlabSettingregistry.AnonComposite
-import typings.jupyterlabSettingregistry.phaseinPhaseTransform
+import typings.jupyterlabSettingregistry.anon.Composite
+import typings.jupyterlabSettingregistry.anon.phaseinPhaseTransform
 import typings.jupyterlabSettingregistry.settingregistryMod.ISchemaValidator
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISchema
@@ -45,7 +45,7 @@ trait ISettingRegistry_ extends js.Object {
     *
     * @returns A promise that resolves when the setting is retrieved.
     */
-  def get(plugin: String, key: String): js.Promise[AnonComposite]
+  def get(plugin: String, key: String): js.Promise[Composite]
   /**
     * Load a plugin's settings into the setting registry.
     *
@@ -122,7 +122,7 @@ object ISettingRegistry_ {
   @scala.inline
   def apply(
     connector: IDataConnector[IPlugin, String, String, String],
-    get: (String, String) => js.Promise[AnonComposite],
+    get: (String, String) => js.Promise[Composite],
     load: String => js.Promise[ISettings],
     pluginChanged: ISignal[ISettingRegistry_, String],
     plugins: StringDictionary[js.UndefOr[IPlugin]],

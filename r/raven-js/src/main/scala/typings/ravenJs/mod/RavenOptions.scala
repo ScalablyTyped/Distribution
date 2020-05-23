@@ -97,11 +97,11 @@ object RavenOptions {
     instrument: Boolean | RavenInstrumentationOptions = null,
     level: LogLevel = null,
     logger: String = null,
-    maxBreadcrumbs: Int | Double = null,
-    maxMessageLength: Int | Double = null,
-    maxUrlLength: Int | Double = null,
+    maxBreadcrumbs: js.UndefOr[Double] = js.undefined,
+    maxMessageLength: js.UndefOr[Double] = js.undefined,
+    maxUrlLength: js.UndefOr[Double] = js.undefined,
     release: String = null,
-    sampleRate: Int | Double = null,
+    sampleRate: js.UndefOr[Double] = js.undefined,
     sanitizeKeys: js.Array[RegExp | String] = null,
     serverName: String = null,
     shouldSendCallback: /* data */ js.Any => Boolean = null,
@@ -111,13 +111,13 @@ object RavenOptions {
     whitelistUrls: js.Array[RegExp | String] = null
   ): RavenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDuplicates)) __obj.updateDynamic("allowDuplicates")(allowDuplicates.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSecretKey)) __obj.updateDynamic("allowSecretKey")(allowSecretKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDuplicates)) __obj.updateDynamic("allowDuplicates")(allowDuplicates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSecretKey)) __obj.updateDynamic("allowSecretKey")(allowSecretKey.get.asInstanceOf[js.Any])
     if (autoBreadcrumbs != null) __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs.asInstanceOf[js.Any])
     if (breadcrumbCallback != null) __obj.updateDynamic("breadcrumbCallback")(js.Any.fromFunction1(breadcrumbCallback))
-    if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections.get.asInstanceOf[js.Any])
     if (dataCallback != null) __obj.updateDynamic("dataCallback")(js.Any.fromFunction1(dataCallback))
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (fetchParameters != null) __obj.updateDynamic("fetchParameters")(fetchParameters.asInstanceOf[js.Any])
@@ -129,15 +129,15 @@ object RavenOptions {
     if (instrument != null) __obj.updateDynamic("instrument")(instrument.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (maxBreadcrumbs != null) __obj.updateDynamic("maxBreadcrumbs")(maxBreadcrumbs.asInstanceOf[js.Any])
-    if (maxMessageLength != null) __obj.updateDynamic("maxMessageLength")(maxMessageLength.asInstanceOf[js.Any])
-    if (maxUrlLength != null) __obj.updateDynamic("maxUrlLength")(maxUrlLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBreadcrumbs)) __obj.updateDynamic("maxBreadcrumbs")(maxBreadcrumbs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessageLength)) __obj.updateDynamic("maxMessageLength")(maxMessageLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxUrlLength)) __obj.updateDynamic("maxUrlLength")(maxUrlLength.get.asInstanceOf[js.Any])
     if (release != null) __obj.updateDynamic("release")(release.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     if (sanitizeKeys != null) __obj.updateDynamic("sanitizeKeys")(sanitizeKeys.asInstanceOf[js.Any])
     if (serverName != null) __obj.updateDynamic("serverName")(serverName.asInstanceOf[js.Any])
     if (shouldSendCallback != null) __obj.updateDynamic("shouldSendCallback")(js.Any.fromFunction1(shouldSendCallback))
-    if (!js.isUndefined(stacktrace)) __obj.updateDynamic("stacktrace")(stacktrace.asInstanceOf[js.Any])
+    if (!js.isUndefined(stacktrace)) __obj.updateDynamic("stacktrace")(stacktrace.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (transport != null) __obj.updateDynamic("transport")(js.Any.fromFunction1(transport))
     if (whitelistUrls != null) __obj.updateDynamic("whitelistUrls")(whitelistUrls.asInstanceOf[js.Any])

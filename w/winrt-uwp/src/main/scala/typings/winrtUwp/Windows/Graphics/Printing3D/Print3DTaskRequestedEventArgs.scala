@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the TaskRequested event. */
-@JSGlobal("Windows.Graphics.Printing3D.Print3DTaskRequestedEventArgs")
-@js.native
-abstract class Print3DTaskRequestedEventArgs () extends js.Object {
+trait Print3DTaskRequestedEventArgs extends js.Object {
   /** Gets the 3D print job request associated with the Print3DManager . */
-  var request: Print3DTaskRequest = js.native
+  var request: Print3DTaskRequest
+}
+
+object Print3DTaskRequestedEventArgs {
+  @scala.inline
+  def apply(request: Print3DTaskRequest): Print3DTaskRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Print3DTaskRequestedEventArgs]
+  }
 }
 

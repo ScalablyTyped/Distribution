@@ -36,20 +36,20 @@ trait Options[T /* <: js.Thenable[Unit] */] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[T /* <: js.Thenable[Unit] */](
+  def apply[T](
     Promise: Instantiable1[/* args (repeated) */ js.Any, T] = null,
     fs: js.Any = null,
     getuid: js.Any = null,
     isWindows: js.UndefOr[Boolean] = js.undefined,
-    maxConcurrency: Int | Double = null,
+    maxConcurrency: js.UndefOr[Double] = js.undefined,
     writeStreamAtomic: js.Any = null
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
     if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (getuid != null) __obj.updateDynamic("getuid")(getuid.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWindows)) __obj.updateDynamic("isWindows")(isWindows.asInstanceOf[js.Any])
-    if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWindows)) __obj.updateDynamic("isWindows")(isWindows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrency)) __obj.updateDynamic("maxConcurrency")(maxConcurrency.get.asInstanceOf[js.Any])
     if (writeStreamAtomic != null) __obj.updateDynamic("writeStreamAtomic")(writeStreamAtomic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[T]]
   }

@@ -1,7 +1,7 @@
 package typings.jupyterlabCodeeditor.editorMod.CodeEditor
 
-import typings.jupyterlabCodeeditor.PartialIConfig
-import typings.jupyterlabCodeeditor.PartialISelectionStyle
+import typings.jupyterlabCodeeditor.anon.PartialIConfig
+import typings.jupyterlabCodeeditor.anon.PartialISelectionStyle
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

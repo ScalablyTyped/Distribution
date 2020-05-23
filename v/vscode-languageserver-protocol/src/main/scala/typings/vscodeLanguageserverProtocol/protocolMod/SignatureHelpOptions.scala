@@ -30,7 +30,7 @@ object SignatureHelpOptions {
     val __obj = js.Dynamic.literal()
     if (retriggerCharacters != null) __obj.updateDynamic("retriggerCharacters")(retriggerCharacters.asInstanceOf[js.Any])
     if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpOptions]
   }
 }

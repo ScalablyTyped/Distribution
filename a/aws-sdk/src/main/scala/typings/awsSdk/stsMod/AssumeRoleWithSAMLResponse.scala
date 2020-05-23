@@ -48,7 +48,7 @@ object AssumeRoleWithSAMLResponse {
     Credentials: Credentials = null,
     Issuer: Issuer = null,
     NameQualifier: NameQualifier = null,
-    PackedPolicySize: Int | Double = null,
+    PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined,
     Subject: Subject = null,
     SubjectType: SubjectType = null
   ): AssumeRoleWithSAMLResponse = {
@@ -58,7 +58,7 @@ object AssumeRoleWithSAMLResponse {
     if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
     if (Issuer != null) __obj.updateDynamic("Issuer")(Issuer.asInstanceOf[js.Any])
     if (NameQualifier != null) __obj.updateDynamic("NameQualifier")(NameQualifier.asInstanceOf[js.Any])
-    if (PackedPolicySize != null) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PackedPolicySize)) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.get.asInstanceOf[js.Any])
     if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
     if (SubjectType != null) __obj.updateDynamic("SubjectType")(SubjectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeRoleWithSAMLResponse]

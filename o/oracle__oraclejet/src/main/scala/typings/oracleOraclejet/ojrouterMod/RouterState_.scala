@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojrouterMod
 
-import typings.oracleOraclejet.AnonHasChanged
+import typings.oracleOraclejet.anon.HasChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait RouterState_ extends js.Object {
   var title: String | js.Function0[js.UndefOr[String]]
   var value: js.Any
   // constructor(id: string, options?: RouterState.ConfigOptions, router?: Router);
-  def go(): js.Promise[AnonHasChanged]
+  def go(): js.Promise[HasChanged]
   def isCurrent(): Boolean
 }
 
@@ -27,7 +27,7 @@ object RouterState_ {
     canExit: () => Boolean | js.Promise[Boolean],
     enter: () => js.Promise[Unit] | Unit,
     exit: () => js.Promise[Unit] | Unit,
-    go: () => js.Promise[AnonHasChanged],
+    go: () => js.Promise[HasChanged],
     id: String,
     isCurrent: () => Boolean,
     parameters: js.Object,

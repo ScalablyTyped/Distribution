@@ -1,7 +1,7 @@
 package typings.jest.mod.jest
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jest.AnonBOLDWEIGHT
+import typings.jest.anon.BOLDWEIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait MatcherUtils
   val promise: String = js.native
   val suppressedErrors: js.Array[_] = js.native
   val testPath: String = js.native
-  var utils: AnonBOLDWEIGHT = js.native
+  var utils: BOLDWEIGHT = js.native
   def dontThrow(): Unit = js.native
   /**
     *  This is a deep-equality function that will return true if two objects have the same values (recursively).

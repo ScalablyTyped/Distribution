@@ -20,10 +20,10 @@ object GameServerGroupAutoScalingPolicy {
   @scala.inline
   def apply(
     TargetTrackingConfiguration: TargetTrackingConfiguration,
-    EstimatedInstanceWarmup: Int | scala.Double = null
+    EstimatedInstanceWarmup: js.UndefOr[PositiveInteger] = js.undefined
   ): GameServerGroupAutoScalingPolicy = {
     val __obj = js.Dynamic.literal(TargetTrackingConfiguration = TargetTrackingConfiguration.asInstanceOf[js.Any])
-    if (EstimatedInstanceWarmup != null) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.asInstanceOf[js.Any])
+    if (!js.isUndefined(EstimatedInstanceWarmup)) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameServerGroupAutoScalingPolicy]
   }
 }

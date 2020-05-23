@@ -1,6 +1,6 @@
 package typings.highcharts.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +12,8 @@ object fireEvent extends js.Object {
   def apply[T](el: T, `type`: String, eventArguments: Dictionary[_]): Unit = js.native
   def apply[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: js.Function): Unit = js.native
   def apply[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: EventCallbackFunction[T]): Unit = js.native
-  def apply[T](el: T, `type`: String, eventArguments: Event_): Unit = js.native
-  def apply[T](el: T, `type`: String, eventArguments: Event_, defaultFunction: js.Function): Unit = js.native
-  def apply[T](el: T, `type`: String, eventArguments: Event_, defaultFunction: EventCallbackFunction[T]): Unit = js.native
+  def apply[T](el: T, `type`: String, eventArguments: Event): Unit = js.native
+  def apply[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = js.native
+  def apply[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = js.native
 }
 

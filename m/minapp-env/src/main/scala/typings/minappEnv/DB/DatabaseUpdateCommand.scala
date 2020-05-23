@@ -6,15 +6,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DB.DatabaseUpdateCommand")
-@js.native
-class DatabaseUpdateCommand protected () extends js.Object {
-  def this(operator: UPDATE_COMMANDS_LITERAL, operands: Array[_]) = this()
-  def this(operator: UPDATE_COMMANDS_LITERAL, operands: Array[_], fieldName: String) = this()
-  def this(operator: UPDATE_COMMANDS_LITERAL, operands: Array[_], fieldName: InternalSymbol) = this()
-  var fieldName: String | InternalSymbol = js.native
-  var operands: Array[_] = js.native
-  var operator: UPDATE_COMMANDS_LITERAL = js.native
-  def _setFieldName(fieldName: String): DatabaseUpdateCommand = js.native
+trait DatabaseUpdateCommand extends js.Object {
+  var fieldName: String | InternalSymbol
+  var operands: Array[_]
+  var operator: UPDATE_COMMANDS_LITERAL
+  def _setFieldName(fieldName: String): DatabaseUpdateCommand
+}
+
+object DatabaseUpdateCommand {
+  @scala.inline
+  def apply(
+    _setFieldName: String => DatabaseUpdateCommand,
+    fieldName: String | InternalSymbol,
+    operands: Array[_],
+    operator: UPDATE_COMMANDS_LITERAL
+  ): DatabaseUpdateCommand = {
+    val __obj = js.Dynamic.literal(_setFieldName = js.Any.fromFunction1(_setFieldName), fieldName = fieldName.asInstanceOf[js.Any], operands = operands.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatabaseUpdateCommand]
+  }
 }
 

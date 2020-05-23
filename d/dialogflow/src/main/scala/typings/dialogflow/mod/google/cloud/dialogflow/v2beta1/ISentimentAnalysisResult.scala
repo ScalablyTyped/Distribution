@@ -12,9 +12,9 @@ trait ISentimentAnalysisResult extends js.Object {
 
 object ISentimentAnalysisResult {
   @scala.inline
-  def apply(queryTextSentiment: ISentiment = null): ISentimentAnalysisResult = {
+  def apply(queryTextSentiment: js.UndefOr[Null | ISentiment] = js.undefined): ISentimentAnalysisResult = {
     val __obj = js.Dynamic.literal()
-    if (queryTextSentiment != null) __obj.updateDynamic("queryTextSentiment")(queryTextSentiment.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryTextSentiment)) __obj.updateDynamic("queryTextSentiment")(queryTextSentiment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISentimentAnalysisResult]
   }
 }

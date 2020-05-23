@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Dynamically discovers peer apps within wireless range. */
-@JSGlobal("Windows.Networking.Proximity.PeerWatcher")
 @js.native
-abstract class PeerWatcher () extends js.Object {
+trait PeerWatcher extends js.Object {
   /** Occurs when a peer app is found within wireless range. */
   @JSName("onadded")
   var onadded_Original: TypedEventHandler[PeerWatcher, PeerInformation] = js.native

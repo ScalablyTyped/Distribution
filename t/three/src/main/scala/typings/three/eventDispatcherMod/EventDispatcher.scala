@@ -1,6 +1,6 @@
 package typings.three.eventDispatcherMod
 
-import typings.three.AnonDictattachment
+import typings.three.anon.Dictattachment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ class EventDispatcher () extends js.Object {
   	 * Fire an event type.
   	 * @param type The type of event that gets fired.
   	 */
-  def dispatchEvent(event: AnonDictattachment): Unit = js.native
+  def dispatchEvent(event: Dictattachment): Unit = js.native
   /**
   	 * Checks if listener is added to an event type.
   	 * @param type The type of event to listen to.

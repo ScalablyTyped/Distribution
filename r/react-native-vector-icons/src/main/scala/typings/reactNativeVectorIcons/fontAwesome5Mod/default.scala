@@ -2,7 +2,7 @@ package typings.reactNativeVectorIcons.fontAwesome5Mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Component
-import typings.reactNativeVectorIcons.AnonBrand
+import typings.reactNativeVectorIcons.anon.Brand
 import typings.reactNativeVectorIcons.iconMod.ImageSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ object default extends js.Object {
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native
-  def getImageSource(name: String, size: Double, color: String, fa5Style: ValueOf[AnonBrand]): js.Promise[ImageSource] = js.native
+  def getImageSource(name: String, size: Double, color: String, fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = js.native
   def hasIcon(name: String): Boolean = js.native
   def loadFont(): js.Promise[Unit] = js.native
   def loadFont(file: String): js.Promise[Unit] = js.native

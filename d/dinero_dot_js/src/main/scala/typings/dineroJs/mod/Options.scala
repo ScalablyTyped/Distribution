@@ -12,11 +12,15 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(amount: Int | Double = null, currency: Currency = null, precision: Int | Double = null): Options = {
+  def apply(
+    amount: js.UndefOr[Double] = js.undefined,
+    currency: Currency = null,
+    precision: js.UndefOr[Double] = js.undefined
+  ): Options = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

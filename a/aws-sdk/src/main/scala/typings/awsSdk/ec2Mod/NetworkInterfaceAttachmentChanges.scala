@@ -20,11 +20,11 @@ object NetworkInterfaceAttachmentChanges {
   @scala.inline
   def apply(
     AttachmentId: NetworkInterfaceAttachmentId = null,
-    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   ): NetworkInterfaceAttachmentChanges = {
     val __obj = js.Dynamic.literal()
     if (AttachmentId != null) __obj.updateDynamic("AttachmentId")(AttachmentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfaceAttachmentChanges]
   }
 }

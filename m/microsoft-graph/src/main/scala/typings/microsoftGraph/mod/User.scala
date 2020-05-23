@@ -326,7 +326,7 @@ object User {
     createdObjects: js.Array[DirectoryObject] = null,
     deletedDateTime: String = null,
     department: String = null,
-    deviceEnrollmentLimit: Int | Double = null,
+    deviceEnrollmentLimit: js.UndefOr[Double] = js.undefined,
     deviceManagementTroubleshootingEvents: js.Array[DeviceManagementTroubleshootingEvent] = null,
     directReports: js.Array[DirectoryObject] = null,
     displayName: String = null,
@@ -406,7 +406,7 @@ object User {
   ): User = {
     val __obj = js.Dynamic.literal()
     if (aboutMe != null) __obj.updateDynamic("aboutMe")(aboutMe.asInstanceOf[js.Any])
-    if (!js.isUndefined(accountEnabled)) __obj.updateDynamic("accountEnabled")(accountEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountEnabled)) __obj.updateDynamic("accountEnabled")(accountEnabled.get.asInstanceOf[js.Any])
     if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
     if (ageGroup != null) __obj.updateDynamic("ageGroup")(ageGroup.asInstanceOf[js.Any])
     if (assignedLicenses != null) __obj.updateDynamic("assignedLicenses")(assignedLicenses.asInstanceOf[js.Any])
@@ -426,7 +426,7 @@ object User {
     if (createdObjects != null) __obj.updateDynamic("createdObjects")(createdObjects.asInstanceOf[js.Any])
     if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime.asInstanceOf[js.Any])
     if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
-    if (deviceEnrollmentLimit != null) __obj.updateDynamic("deviceEnrollmentLimit")(deviceEnrollmentLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceEnrollmentLimit)) __obj.updateDynamic("deviceEnrollmentLimit")(deviceEnrollmentLimit.get.asInstanceOf[js.Any])
     if (deviceManagementTroubleshootingEvents != null) __obj.updateDynamic("deviceManagementTroubleshootingEvents")(deviceManagementTroubleshootingEvents.asInstanceOf[js.Any])
     if (directReports != null) __obj.updateDynamic("directReports")(directReports.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
@@ -443,7 +443,7 @@ object User {
     if (inferenceClassification != null) __obj.updateDynamic("inferenceClassification")(inferenceClassification.asInstanceOf[js.Any])
     if (insights != null) __obj.updateDynamic("insights")(insights.asInstanceOf[js.Any])
     if (interests != null) __obj.updateDynamic("interests")(interests.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResourceAccount)) __obj.updateDynamic("isResourceAccount")(isResourceAccount.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResourceAccount)) __obj.updateDynamic("isResourceAccount")(isResourceAccount.get.asInstanceOf[js.Any])
     if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle.asInstanceOf[js.Any])
     if (joinedTeams != null) __obj.updateDynamic("joinedTeams")(joinedTeams.asInstanceOf[js.Any])
     if (legalAgeGroupClassification != null) __obj.updateDynamic("legalAgeGroupClassification")(legalAgeGroupClassification.asInstanceOf[js.Any])
@@ -469,7 +469,7 @@ object User {
     if (onPremisesProvisioningErrors != null) __obj.updateDynamic("onPremisesProvisioningErrors")(onPremisesProvisioningErrors.asInstanceOf[js.Any])
     if (onPremisesSamAccountName != null) __obj.updateDynamic("onPremisesSamAccountName")(onPremisesSamAccountName.asInstanceOf[js.Any])
     if (onPremisesSecurityIdentifier != null) __obj.updateDynamic("onPremisesSecurityIdentifier")(onPremisesSecurityIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.get.asInstanceOf[js.Any])
     if (onPremisesUserPrincipalName != null) __obj.updateDynamic("onPremisesUserPrincipalName")(onPremisesUserPrincipalName.asInstanceOf[js.Any])
     if (onenote != null) __obj.updateDynamic("onenote")(onenote.asInstanceOf[js.Any])
     if (onlineMeetings != null) __obj.updateDynamic("onlineMeetings")(onlineMeetings.asInstanceOf[js.Any])
@@ -493,7 +493,7 @@ object User {
     if (responsibilities != null) __obj.updateDynamic("responsibilities")(responsibilities.asInstanceOf[js.Any])
     if (schools != null) __obj.updateDynamic("schools")(schools.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInAddressList)) __obj.updateDynamic("showInAddressList")(showInAddressList.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInAddressList)) __obj.updateDynamic("showInAddressList")(showInAddressList.get.asInstanceOf[js.Any])
     if (signInSessionsValidFromDateTime != null) __obj.updateDynamic("signInSessionsValidFromDateTime")(signInSessionsValidFromDateTime.asInstanceOf[js.Any])
     if (skills != null) __obj.updateDynamic("skills")(skills.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

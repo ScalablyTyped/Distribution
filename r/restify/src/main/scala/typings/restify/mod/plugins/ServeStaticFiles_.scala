@@ -15,12 +15,12 @@ object ServeStaticFiles_ {
   @scala.inline
   def apply(
     etag: String = null,
-    maxAge: Int | Double = null,
+    maxAge: js.UndefOr[Double] = js.undefined,
     setHeaders: (/* res */ Response, /* path */ String, /* stat */ js.Any) => _ = null
   ): ServeStaticFiles_ = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3(setHeaders))
     __obj.asInstanceOf[ServeStaticFiles_]
   }

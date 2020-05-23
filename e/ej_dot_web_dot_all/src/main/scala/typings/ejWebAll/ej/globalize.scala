@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,8 +26,4 @@ trait globalize extends js.Object {
   def preferredCulture(): culture = js.native
   def preferredCulture(culture: String): culture = js.native
 }
-
-@JSGlobal("ej.globalize")
-@js.native
-object globalize extends TopLevel[globalize]
 

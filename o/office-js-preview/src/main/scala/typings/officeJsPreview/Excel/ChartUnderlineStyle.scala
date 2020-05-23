@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ChartUnderlineStyle extends js.Object {
   
   @js.native
   sealed trait single extends ChartUnderlineStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartUnderlineStyle with String] = js.native
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Single" */ @js.native
-  object single extends TopLevel[single with String]
   
 }
 

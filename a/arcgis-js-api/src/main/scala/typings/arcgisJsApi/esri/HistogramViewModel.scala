@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,8 +64,4 @@ trait HistogramViewModel extends Accessor {
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
 }
-
-@JSGlobal("__esri.HistogramViewModel")
-@js.native
-object HistogramViewModel extends TopLevel[HistogramViewModelConstructor]
 

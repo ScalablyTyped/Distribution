@@ -22,14 +22,14 @@ object ButtonProps {
   def apply(
     iconSrc: ImageSourcePropType,
     onPress: () => Unit,
-    buttonStyle: StyleProp[ViewProps] = null,
+    buttonStyle: js.UndefOr[Null | StyleProp[ViewProps]] = js.undefined,
     children: ReactNode = null,
-    textStyle: StyleProp[TextProps] = null
+    textStyle: js.UndefOr[Null | StyleProp[TextProps]] = js.undefined
   ): ButtonProps = {
     val __obj = js.Dynamic.literal(iconSrc = iconSrc.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonStyle)) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(textStyle)) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
 }

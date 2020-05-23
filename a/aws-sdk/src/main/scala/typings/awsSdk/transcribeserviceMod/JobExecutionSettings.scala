@@ -19,11 +19,11 @@ trait JobExecutionSettings extends js.Object {
 object JobExecutionSettings {
   @scala.inline
   def apply(
-    AllowDeferredExecution: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowDeferredExecution: js.UndefOr[Boolean] = js.undefined,
     DataAccessRoleArn: DataAccessRoleArn = null
   ): JobExecutionSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowDeferredExecution)) __obj.updateDynamic("AllowDeferredExecution")(AllowDeferredExecution.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowDeferredExecution)) __obj.updateDynamic("AllowDeferredExecution")(AllowDeferredExecution.get.asInstanceOf[js.Any])
     if (DataAccessRoleArn != null) __obj.updateDynamic("DataAccessRoleArn")(DataAccessRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionSettings]
   }

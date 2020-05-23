@@ -85,12 +85,12 @@ object SchedulerOptions {
     group: SchedulerGroup = null,
     groupHeaderTemplate: String | js.Function = null,
     height: Double | String = null,
-    majorTick: Int | Double = null,
+    majorTick: js.UndefOr[Double] = js.undefined,
     majorTimeHeaderTemplate: String | js.Function = null,
     max: Date = null,
     messages: SchedulerMessages = null,
     min: Date = null,
-    minorTickCount: Int | Double = null,
+    minorTickCount: js.UndefOr[Double] = js.undefined,
     minorTimeHeaderTemplate: String | js.Function = null,
     mobile: Boolean | String = null,
     move: /* e */ SchedulerMoveEvent => Unit = null,
@@ -116,14 +116,14 @@ object SchedulerOptions {
     width: Double | String = null,
     workDayEnd: Date = null,
     workDayStart: Date = null,
-    workWeekEnd: Int | Double = null,
-    workWeekStart: Int | Double = null
+    workWeekEnd: js.UndefOr[Double] = js.undefined,
+    workWeekStart: js.UndefOr[Double] = js.undefined
   ): SchedulerOptions = {
     val __obj = js.Dynamic.literal()
     if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
     if (allDayEventTemplate != null) __obj.updateDynamic("allDayEventTemplate")(allDayEventTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(allDaySlot)) __obj.updateDynamic("allDaySlot")(allDaySlot.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(allDaySlot)) __obj.updateDynamic("allDaySlot")(allDaySlot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (currentTimeMarker != null) __obj.updateDynamic("currentTimeMarker")(currentTimeMarker.asInstanceOf[js.Any])
@@ -140,12 +140,12 @@ object SchedulerOptions {
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (groupHeaderTemplate != null) __obj.updateDynamic("groupHeaderTemplate")(groupHeaderTemplate.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (majorTick != null) __obj.updateDynamic("majorTick")(majorTick.asInstanceOf[js.Any])
+    if (!js.isUndefined(majorTick)) __obj.updateDynamic("majorTick")(majorTick.get.asInstanceOf[js.Any])
     if (majorTimeHeaderTemplate != null) __obj.updateDynamic("majorTimeHeaderTemplate")(majorTimeHeaderTemplate.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minorTickCount != null) __obj.updateDynamic("minorTickCount")(minorTickCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTickCount)) __obj.updateDynamic("minorTickCount")(minorTickCount.get.asInstanceOf[js.Any])
     if (minorTimeHeaderTemplate != null) __obj.updateDynamic("minorTimeHeaderTemplate")(minorTimeHeaderTemplate.asInstanceOf[js.Any])
     if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
     if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction1(move))
@@ -161,9 +161,9 @@ object SchedulerOptions {
     if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction1(resizeStart))
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWorkHours)) __obj.updateDynamic("showWorkHours")(showWorkHours.asInstanceOf[js.Any])
-    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWorkHours)) __obj.updateDynamic("showWorkHours")(showWorkHours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
@@ -171,8 +171,8 @@ object SchedulerOptions {
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (workDayEnd != null) __obj.updateDynamic("workDayEnd")(workDayEnd.asInstanceOf[js.Any])
     if (workDayStart != null) __obj.updateDynamic("workDayStart")(workDayStart.asInstanceOf[js.Any])
-    if (workWeekEnd != null) __obj.updateDynamic("workWeekEnd")(workWeekEnd.asInstanceOf[js.Any])
-    if (workWeekStart != null) __obj.updateDynamic("workWeekStart")(workWeekStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(workWeekEnd)) __obj.updateDynamic("workWeekEnd")(workWeekEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workWeekStart)) __obj.updateDynamic("workWeekStart")(workWeekStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerOptions]
   }
 }

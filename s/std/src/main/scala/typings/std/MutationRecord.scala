@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,7 +44,22 @@ trait MutationRecord extends js.Object {
   val `type`: MutationRecordType
 }
 
-@JSGlobal("MutationRecord")
-@js.native
-object MutationRecord extends Instantiable0[MutationRecord]
+object MutationRecord {
+  @scala.inline
+  def apply(
+    addedNodes: NodeList,
+    removedNodes: NodeList,
+    target: Node,
+    `type`: MutationRecordType,
+    attributeName: java.lang.String = null,
+    attributeNamespace: java.lang.String = null,
+    nextSibling: Node = null,
+    oldValue: java.lang.String = null,
+    previousSibling: Node = null
+  ): MutationRecord = {
+    val __obj = js.Dynamic.literal(addedNodes = addedNodes.asInstanceOf[js.Any], removedNodes = removedNodes.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], attributeName = attributeName.asInstanceOf[js.Any], attributeNamespace = attributeNamespace.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MutationRecord]
+  }
+}
 

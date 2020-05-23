@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type ExtensionBoundSchema = typings.reactNativeJoi.mod.Schema with typings.reactNativeJoi.AnonCreateError
+  type ExtensionBoundSchema = typings.reactNativeJoi.mod.Schema with typings.reactNativeJoi.anon.CreateError
   type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | (org.scalablytyped.runtime.StringDictionary[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-native-joi.react-native-joi.LanguageOptions */ js.Object
   ])

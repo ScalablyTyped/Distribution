@@ -11,9 +11,9 @@ trait HmacKeyGenParams extends Algorithm {
 
 object HmacKeyGenParams {
   @scala.inline
-  def apply(hash: HashAlgorithmIdentifier, name: java.lang.String, length: Int | Double = null): HmacKeyGenParams = {
+  def apply(hash: HashAlgorithmIdentifier, name: java.lang.String, length: js.UndefOr[Double] = js.undefined): HmacKeyGenParams = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HmacKeyGenParams]
   }
 }

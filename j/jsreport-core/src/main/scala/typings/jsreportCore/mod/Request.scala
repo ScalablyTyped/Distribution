@@ -1,6 +1,6 @@
 package typings.jsreportCore.mod
 
-import typings.jsreportCore.PartialTemplate
+import typings.jsreportCore.anon.PartialTemplate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

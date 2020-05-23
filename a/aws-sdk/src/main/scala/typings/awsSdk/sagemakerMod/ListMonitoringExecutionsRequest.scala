@@ -68,7 +68,7 @@ object ListMonitoringExecutionsRequest {
     EndpointName: EndpointName = null,
     LastModifiedTimeAfter: Timestamp = null,
     LastModifiedTimeBefore: Timestamp = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     MonitoringScheduleName: MonitoringScheduleName = null,
     NextToken: NextToken = null,
     ScheduledTimeAfter: Timestamp = null,
@@ -83,7 +83,7 @@ object ListMonitoringExecutionsRequest {
     if (EndpointName != null) __obj.updateDynamic("EndpointName")(EndpointName.asInstanceOf[js.Any])
     if (LastModifiedTimeAfter != null) __obj.updateDynamic("LastModifiedTimeAfter")(LastModifiedTimeAfter.asInstanceOf[js.Any])
     if (LastModifiedTimeBefore != null) __obj.updateDynamic("LastModifiedTimeBefore")(LastModifiedTimeBefore.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (MonitoringScheduleName != null) __obj.updateDynamic("MonitoringScheduleName")(MonitoringScheduleName.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ScheduledTimeAfter != null) __obj.updateDynamic("ScheduledTimeAfter")(ScheduledTimeAfter.asInstanceOf[js.Any])

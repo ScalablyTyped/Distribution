@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.react.mod.Factory
 import typings.react.mod.StatelessComponent
+import typings.reactResolver.anon.Data
 import typings.std.Node
 import typings.std.Record
 import scala.scalajs.js
@@ -17,7 +18,7 @@ object mod extends js.Object {
   trait Resolver extends js.Object {
     def render(factory: Factory[_]): Unit = js.native
     def render(factory: Factory[_], root: Node): Unit = js.native
-    def resolve[P](factory: Factory[P]): js.Promise[AnonData[P]] = js.native
+    def resolve[P](factory: Factory[P]): js.Promise[Data[P]] = js.native
   }
   
   def client(loadingComponent: ComponentType[_]): js.Function1[/* component */ ComponentType[_], StatelessComponent[_]] = js.native

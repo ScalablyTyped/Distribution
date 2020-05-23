@@ -31,7 +31,7 @@ object IMetadata {
     spineAtlasFile: String = null,
     spineAtlasSuffix: String = null,
     spineMetadata: js.Any = null,
-    spineSkeletonScale: Int | Double = null
+    spineSkeletonScale: js.UndefOr[Double] = js.undefined
   ): IMetadata = {
     val __obj = js.Dynamic.literal()
     if (atlasRawData != null) __obj.updateDynamic("atlasRawData")(atlasRawData.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object IMetadata {
     if (spineAtlasFile != null) __obj.updateDynamic("spineAtlasFile")(spineAtlasFile.asInstanceOf[js.Any])
     if (spineAtlasSuffix != null) __obj.updateDynamic("spineAtlasSuffix")(spineAtlasSuffix.asInstanceOf[js.Any])
     if (spineMetadata != null) __obj.updateDynamic("spineMetadata")(spineMetadata.asInstanceOf[js.Any])
-    if (spineSkeletonScale != null) __obj.updateDynamic("spineSkeletonScale")(spineSkeletonScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(spineSkeletonScale)) __obj.updateDynamic("spineSkeletonScale")(spineSkeletonScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetadata]
   }
 }

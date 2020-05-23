@@ -1,6 +1,7 @@
 package typings.vegaTypings
 
 import typings.vegaTypings.colorMod.Color
+import typings.vegaTypings.configMod.StrokeCap
 import typings.vegaTypings.encodeMod.Align
 import typings.vegaTypings.encodeMod.AlignValueRef
 import typings.vegaTypings.encodeMod.AnchorValueRef
@@ -15,6 +16,7 @@ import typings.vegaTypings.encodeMod.NumericValueRef
 import typings.vegaTypings.encodeMod.Orient
 import typings.vegaTypings.encodeMod.OrientValueRef
 import typings.vegaTypings.encodeMod.StringValueRef
+import typings.vegaTypings.encodeMod.StrokeCapValueRef
 import typings.vegaTypings.encodeMod.SymbolShape
 import typings.vegaTypings.encodeMod.SymbolShapeValueRef
 import typings.vegaTypings.encodeMod.TextBaseline
@@ -37,6 +39,7 @@ object valuesMod extends js.Object {
   type NumberValue = Double | NumericValueRef
   type OrientValue = Orient | OrientValueRef
   type StringValue = String | StringValueRef
+  type StrokeCapValue = StrokeCap | StrokeCapValueRef
   type SymbolShapeValue = SymbolShape | SymbolShapeValueRef
   type TextBaselineValue = TextBaseline | TextBaselineValueRef
 }

@@ -1,6 +1,6 @@
 package typings.fastGlob.typesMod
 
-import typings.nodelibFsWalk.PartialFileSystemAdapter
+import typings.nodelibFsWalk.anon.PartialFileSystemAdapter
 import typings.nodelibFsWalk.typesMod.Errno
 import scala.scalajs.js
 import scala.scalajs.js.`|`

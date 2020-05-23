@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Characters")
 @js.native
-class Characters protected () extends js.Object {
+trait Characters extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var Caption: String = js.native
   val Count: Double = js.native

@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonActive
+import typings.reactWeui.anon.Active
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class NavBarItem protected () extends js.Object {
 @JSImport("react-weui", "NavBarItem")
 @js.native
 object NavBarItem extends js.Object {
-  var defaultProps: AnonActive = js.native
+  var defaultProps: Active = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

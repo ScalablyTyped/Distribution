@@ -1,5 +1,6 @@
 package typings.reactRelay
 
+import typings.reactRelay.anon.FetchKey
 import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import scala.scalajs.js
@@ -18,7 +19,7 @@ object useLazyLoadQueryMod extends js.Object {
   def useLazyLoadQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
-    options: AnonFetchKey
+    options: FetchKey
   ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
 }
 

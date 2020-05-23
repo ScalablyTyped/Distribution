@@ -9,11 +9,5 @@ import scala.scalajs.js.annotation._
   **/
 @JSGlobal("WinJS.UI.DOMEventMixin")
 @js.native
-object DOMEventMixin extends js.Object {
-  def addEventListener(`type`: String, listener: js.Function): Unit = js.native
-  def addEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
-  def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
-}
+object DOMEventMixin extends js.Object
 

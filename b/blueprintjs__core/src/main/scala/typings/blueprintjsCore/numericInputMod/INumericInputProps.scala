@@ -8,7 +8,7 @@ import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.propsMod.MaybeElement
 import typings.blueprintjsIcons.iconNameMod.IconName
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -122,42 +122,42 @@ object INumericInputProps {
     inputRef: /* ref */ HTMLInputElement | Null => _ = null,
     intent: Intent = null,
     large: js.UndefOr[Boolean] = js.undefined,
-    leftIcon: IconName | MaybeElement = null,
-    majorStepSize: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    minorStepSize: Int | Double = null,
+    leftIcon: js.UndefOr[Null | IconName | MaybeElement] = js.undefined,
+    majorStepSize: js.UndefOr[Null | Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    minorStepSize: js.UndefOr[Null | Double] = js.undefined,
     onButtonClick: (/* valueAsNumber */ Double, /* valueAsString */ String) => Unit = null,
     onValueChange: (/* valueAsNumber */ Double, /* valueAsString */ String, /* inputElement */ HTMLInputElement | Null) => Unit = null,
     placeholder: String = null,
     rightElement: Element = null,
     selectAllOnFocus: js.UndefOr[Boolean] = js.undefined,
     selectAllOnIncrement: js.UndefOr[Boolean] = js.undefined,
-    stepSize: Int | Double = null,
+    stepSize: js.UndefOr[Double] = js.undefined,
     value: Double | String = null
   ): INumericInputProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNumericCharactersOnly)) __obj.updateDynamic("allowNumericCharactersOnly")(allowNumericCharactersOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNumericCharactersOnly)) __obj.updateDynamic("allowNumericCharactersOnly")(allowNumericCharactersOnly.get.asInstanceOf[js.Any])
     if (buttonPosition != null) __obj.updateDynamic("buttonPosition")(buttonPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(clampValueOnBlur)) __obj.updateDynamic("clampValueOnBlur")(clampValueOnBlur.asInstanceOf[js.Any])
+    if (!js.isUndefined(clampValueOnBlur)) __obj.updateDynamic("clampValueOnBlur")(clampValueOnBlur.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
     if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
-    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
-    if (majorStepSize != null) __obj.updateDynamic("majorStepSize")(majorStepSize.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minorStepSize != null) __obj.updateDynamic("minorStepSize")(minorStepSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftIcon)) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(majorStepSize)) __obj.updateDynamic("majorStepSize")(majorStepSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorStepSize)) __obj.updateDynamic("minorStepSize")(minorStepSize.asInstanceOf[js.Any])
     if (onButtonClick != null) __obj.updateDynamic("onButtonClick")(js.Any.fromFunction2(onButtonClick))
     if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction3(onValueChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectAllOnFocus)) __obj.updateDynamic("selectAllOnFocus")(selectAllOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectAllOnIncrement)) __obj.updateDynamic("selectAllOnIncrement")(selectAllOnIncrement.asInstanceOf[js.Any])
-    if (stepSize != null) __obj.updateDynamic("stepSize")(stepSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectAllOnFocus)) __obj.updateDynamic("selectAllOnFocus")(selectAllOnFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectAllOnIncrement)) __obj.updateDynamic("selectAllOnIncrement")(selectAllOnIncrement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepSize)) __obj.updateDynamic("stepSize")(stepSize.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[INumericInputProps]
   }

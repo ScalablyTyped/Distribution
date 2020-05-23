@@ -19,14 +19,14 @@ object tapeMod
       ]
     ] {
   /**
-  	 * Options for the createStream function.
-  	 */
+    * Options for the createStream function.
+    */
   type StreamOptions = typings.tape.mod.StreamOptions
   type Test = typings.tapePromise.mod.Test
   type TestCase = typings.tapePromise.mod.TestCase
   /**
-  	 * Available opts options for the tape function.
-  	 */
+    * Available opts options for the tape function.
+    */
   type TestOptions = typings.tape.mod.TestOptions
 }
 

@@ -36,18 +36,18 @@ object NetworkInfo {
   @scala.inline
   def apply(
     EnaSupport: EnaSupport = null,
-    Ipv4AddressesPerInterface: Int | scala.Double = null,
-    Ipv6AddressesPerInterface: Int | scala.Double = null,
-    Ipv6Supported: js.UndefOr[scala.Boolean] = js.undefined,
-    MaximumNetworkInterfaces: Int | scala.Double = null,
+    Ipv4AddressesPerInterface: js.UndefOr[MaxIpv4AddrPerInterface] = js.undefined,
+    Ipv6AddressesPerInterface: js.UndefOr[MaxIpv6AddrPerInterface] = js.undefined,
+    Ipv6Supported: js.UndefOr[Ipv6Flag] = js.undefined,
+    MaximumNetworkInterfaces: js.UndefOr[MaxNetworkInterfaces] = js.undefined,
     NetworkPerformance: NetworkPerformance = null
   ): NetworkInfo = {
     val __obj = js.Dynamic.literal()
     if (EnaSupport != null) __obj.updateDynamic("EnaSupport")(EnaSupport.asInstanceOf[js.Any])
-    if (Ipv4AddressesPerInterface != null) __obj.updateDynamic("Ipv4AddressesPerInterface")(Ipv4AddressesPerInterface.asInstanceOf[js.Any])
-    if (Ipv6AddressesPerInterface != null) __obj.updateDynamic("Ipv6AddressesPerInterface")(Ipv6AddressesPerInterface.asInstanceOf[js.Any])
-    if (!js.isUndefined(Ipv6Supported)) __obj.updateDynamic("Ipv6Supported")(Ipv6Supported.asInstanceOf[js.Any])
-    if (MaximumNetworkInterfaces != null) __obj.updateDynamic("MaximumNetworkInterfaces")(MaximumNetworkInterfaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(Ipv4AddressesPerInterface)) __obj.updateDynamic("Ipv4AddressesPerInterface")(Ipv4AddressesPerInterface.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Ipv6AddressesPerInterface)) __obj.updateDynamic("Ipv6AddressesPerInterface")(Ipv6AddressesPerInterface.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Ipv6Supported)) __obj.updateDynamic("Ipv6Supported")(Ipv6Supported.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaximumNetworkInterfaces)) __obj.updateDynamic("MaximumNetworkInterfaces")(MaximumNetworkInterfaces.get.asInstanceOf[js.Any])
     if (NetworkPerformance != null) __obj.updateDynamic("NetworkPerformance")(NetworkPerformance.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInfo]
   }

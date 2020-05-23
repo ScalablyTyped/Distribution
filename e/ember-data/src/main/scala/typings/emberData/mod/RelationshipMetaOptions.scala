@@ -15,16 +15,16 @@ trait RelationshipMetaOptions
 object RelationshipMetaOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     async: js.UndefOr[Boolean] = js.undefined,
     inverse: String = null,
     polymorphic: js.UndefOr[Boolean] = js.undefined
   ): RelationshipMetaOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (inverse != null) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
-    if (!js.isUndefined(polymorphic)) __obj.updateDynamic("polymorphic")(polymorphic.asInstanceOf[js.Any])
+    if (!js.isUndefined(polymorphic)) __obj.updateDynamic("polymorphic")(polymorphic.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipMetaOptions]
   }
 }

@@ -28,16 +28,16 @@ object UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription {
     IndexName: String,
     IndexStatus: CREATING | UPDATING | DELETING | ACTIVE | String = null,
     ProvisionedReadCapacityAutoScalingSettings: UnmarshalledAutoScalingSettingsDescription = null,
-    ProvisionedReadCapacityUnits: Int | Double = null,
+    ProvisionedReadCapacityUnits: js.UndefOr[Double] = js.undefined,
     ProvisionedWriteCapacityAutoScalingSettings: UnmarshalledAutoScalingSettingsDescription = null,
-    ProvisionedWriteCapacityUnits: Int | Double = null
+    ProvisionedWriteCapacityUnits: js.UndefOr[Double] = js.undefined
   ): UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
     if (IndexStatus != null) __obj.updateDynamic("IndexStatus")(IndexStatus.asInstanceOf[js.Any])
     if (ProvisionedReadCapacityAutoScalingSettings != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingSettings")(ProvisionedReadCapacityAutoScalingSettings.asInstanceOf[js.Any])
-    if (ProvisionedReadCapacityUnits != null) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProvisionedReadCapacityUnits)) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits.get.asInstanceOf[js.Any])
     if (ProvisionedWriteCapacityAutoScalingSettings != null) __obj.updateDynamic("ProvisionedWriteCapacityAutoScalingSettings")(ProvisionedWriteCapacityAutoScalingSettings.asInstanceOf[js.Any])
-    if (ProvisionedWriteCapacityUnits != null) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProvisionedWriteCapacityUnits)) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription]
   }
 }

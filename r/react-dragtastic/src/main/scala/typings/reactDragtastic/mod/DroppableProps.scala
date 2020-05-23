@@ -1,7 +1,7 @@
 package typings.reactDragtastic.mod
 
 import typings.react.mod.ReactNode
-import typings.reactDragtastic.StateisOverbooleanwillAcc
+import typings.reactDragtastic.anon.StateisOverbooleanwillAcc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ object DroppableProps {
     onDragEnter: () => Unit = null,
     onDragLeave: () => Unit = null,
     onDrop: /* data */ js.Any => Unit = null,
-    subscribeTo: js.Array[String] = null
+    subscribeTo: js.UndefOr[Null | js.Array[String]] = js.undefined
   ): DroppableProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
@@ -48,7 +48,7 @@ object DroppableProps {
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction0(onDragEnter))
     if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction0(onDragLeave))
     if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscribeTo)) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableProps]
   }
 }

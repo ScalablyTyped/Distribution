@@ -30,22 +30,22 @@ trait ITileLayerOptions extends js.Object {
 object ITileLayerOptions {
   @scala.inline
   def apply(
-    downloadTimeout: Int | Double = null,
+    downloadTimeout: js.UndefOr[Double] = js.undefined,
     enableCORS: js.UndefOr[Boolean] = js.undefined,
     mercator: TileSource = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     useCredentialsForCORS: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): ITileLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (downloadTimeout != null) __obj.updateDynamic("downloadTimeout")(downloadTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCORS)) __obj.updateDynamic("enableCORS")(enableCORS.asInstanceOf[js.Any])
+    if (!js.isUndefined(downloadTimeout)) __obj.updateDynamic("downloadTimeout")(downloadTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCORS)) __obj.updateDynamic("enableCORS")(enableCORS.get.asInstanceOf[js.Any])
     if (mercator != null) __obj.updateDynamic("mercator")(mercator.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCredentialsForCORS)) __obj.updateDynamic("useCredentialsForCORS")(useCredentialsForCORS.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCredentialsForCORS)) __obj.updateDynamic("useCredentialsForCORS")(useCredentialsForCORS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITileLayerOptions]
   }
 }

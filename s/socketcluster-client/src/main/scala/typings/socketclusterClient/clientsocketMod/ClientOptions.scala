@@ -87,74 +87,74 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(
-    ackTimeout: Int | Double = null,
-    authEngine: AGAuthEngine = null,
+    ackTimeout: js.UndefOr[Double] = js.undefined,
+    authEngine: js.UndefOr[Null | AGAuthEngine] = js.undefined,
     authTokenName: String = null,
     autoConnect: js.UndefOr[Boolean] = js.undefined,
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
     autoReconnectOptions: AutoReconnectOptions = null,
     autoSubscribeOnConnect: js.UndefOr[Boolean] = js.undefined,
-    batchInterval: Int | Double = null,
+    batchInterval: js.UndefOr[Double] = js.undefined,
     batchOnHandshake: js.UndefOr[Boolean] = js.undefined,
-    batchOnHandshakeDuration: Int | Double = null,
+    batchOnHandshakeDuration: js.UndefOr[Double] = js.undefined,
     binaryType: String = null,
     callIdGenerator: () => Double = null,
-    channelPrefix: String = null,
+    channelPrefix: js.UndefOr[Null | String] = js.undefined,
     clientId: String = null,
     cloneData: js.UndefOr[Boolean] = js.undefined,
-    codecEngine: CodecEngine = null,
-    connectTimeout: Int | Double = null,
+    codecEngine: js.UndefOr[Null | CodecEngine] = js.undefined,
+    connectTimeout: js.UndefOr[Double] = js.undefined,
     disconnectOnUnload: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
     hostname: String = null,
     path: String = null,
-    pingTimeout: Int | Double = null,
+    pingTimeout: js.UndefOr[Double] = js.undefined,
     pingTimeoutDisabled: js.UndefOr[Boolean] = js.undefined,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocolScheme: String = null,
     protocolVersion: ProtocolVersions = null,
     query: String | StringDictionary[String] = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     socketPath: String = null,
-    subscriptionRetryOptions: js.Object = null,
+    subscriptionRetryOptions: js.UndefOr[Null | js.Object] = js.undefined,
     timestampParam: String = null,
     timestampRequests: js.UndefOr[Boolean] = js.undefined,
     version: String = null,
     wsOptions: typings.ws.mod.ClientOptions = null
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (ackTimeout != null) __obj.updateDynamic("ackTimeout")(ackTimeout.asInstanceOf[js.Any])
-    if (authEngine != null) __obj.updateDynamic("authEngine")(authEngine.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackTimeout)) __obj.updateDynamic("ackTimeout")(ackTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(authEngine)) __obj.updateDynamic("authEngine")(authEngine.asInstanceOf[js.Any])
     if (authTokenName != null) __obj.updateDynamic("authTokenName")(authTokenName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.get.asInstanceOf[js.Any])
     if (autoReconnectOptions != null) __obj.updateDynamic("autoReconnectOptions")(autoReconnectOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSubscribeOnConnect)) __obj.updateDynamic("autoSubscribeOnConnect")(autoSubscribeOnConnect.asInstanceOf[js.Any])
-    if (batchInterval != null) __obj.updateDynamic("batchInterval")(batchInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchOnHandshake)) __obj.updateDynamic("batchOnHandshake")(batchOnHandshake.asInstanceOf[js.Any])
-    if (batchOnHandshakeDuration != null) __obj.updateDynamic("batchOnHandshakeDuration")(batchOnHandshakeDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSubscribeOnConnect)) __obj.updateDynamic("autoSubscribeOnConnect")(autoSubscribeOnConnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchInterval)) __obj.updateDynamic("batchInterval")(batchInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchOnHandshake)) __obj.updateDynamic("batchOnHandshake")(batchOnHandshake.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchOnHandshakeDuration)) __obj.updateDynamic("batchOnHandshakeDuration")(batchOnHandshakeDuration.get.asInstanceOf[js.Any])
     if (binaryType != null) __obj.updateDynamic("binaryType")(binaryType.asInstanceOf[js.Any])
     if (callIdGenerator != null) __obj.updateDynamic("callIdGenerator")(js.Any.fromFunction0(callIdGenerator))
-    if (channelPrefix != null) __obj.updateDynamic("channelPrefix")(channelPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelPrefix)) __obj.updateDynamic("channelPrefix")(channelPrefix.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(cloneData)) __obj.updateDynamic("cloneData")(cloneData.asInstanceOf[js.Any])
-    if (codecEngine != null) __obj.updateDynamic("codecEngine")(codecEngine.asInstanceOf[js.Any])
-    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(disconnectOnUnload)) __obj.updateDynamic("disconnectOnUnload")(disconnectOnUnload.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloneData)) __obj.updateDynamic("cloneData")(cloneData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(codecEngine)) __obj.updateDynamic("codecEngine")(codecEngine.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectTimeout)) __obj.updateDynamic("connectTimeout")(connectTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disconnectOnUnload)) __obj.updateDynamic("disconnectOnUnload")(disconnectOnUnload.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(pingTimeoutDisabled)) __obj.updateDynamic("pingTimeoutDisabled")(pingTimeoutDisabled.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(pingTimeout)) __obj.updateDynamic("pingTimeout")(pingTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pingTimeoutDisabled)) __obj.updateDynamic("pingTimeoutDisabled")(pingTimeoutDisabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocolScheme != null) __obj.updateDynamic("protocolScheme")(protocolScheme.asInstanceOf[js.Any])
     if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
-    if (subscriptionRetryOptions != null) __obj.updateDynamic("subscriptionRetryOptions")(subscriptionRetryOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscriptionRetryOptions)) __obj.updateDynamic("subscriptionRetryOptions")(subscriptionRetryOptions.asInstanceOf[js.Any])
     if (timestampParam != null) __obj.updateDynamic("timestampParam")(timestampParam.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestampRequests)) __obj.updateDynamic("timestampRequests")(timestampRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestampRequests)) __obj.updateDynamic("timestampRequests")(timestampRequests.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (wsOptions != null) __obj.updateDynamic("wsOptions")(wsOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]

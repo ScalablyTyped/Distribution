@@ -1,7 +1,7 @@
 package typings.jsData.queryMod
 
-import typings.jsData.AnonFields
-import typings.jsData.AnonFirst
+import typings.jsData.anon.Fields
+import typings.jsData.anon.First
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,9 +20,9 @@ trait Query
     */
   var data: js.Any = js.native
   def _applyWhereFromArray(where: js.Any): js.Any = js.native
-  def _applyWhereFromObject(where: js.Any): AnonFields = js.native
-  def _testArrayGroup(keep: js.Any, first: js.Any, groups: js.Any, item: js.Any): AnonFirst = js.native
-  def _testObjectGroup(keep: js.Any, first: js.Any, group: js.Any, item: js.Any): AnonFirst = js.native
+  def _applyWhereFromObject(where: js.Any): Fields = js.native
+  def _testArrayGroup(keep: js.Any, first: js.Any, groups: js.Any, item: js.Any): First = js.native
+  def _testObjectGroup(keep: js.Any, first: js.Any, group: js.Any, item: js.Any): First = js.native
   /**
     * Find all entities between two boundaries.
     *

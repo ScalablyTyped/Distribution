@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.DOMTextEvent")
 @js.native
-class DOMTextEvent protected () extends js.Object {
+trait DOMTextEvent extends js.Object {
   @JSName("MSHTML.DOMTextEvent_typekey")
   var MSHTMLDotDOMTextEvent_typekey: DOMTextEvent = js.native
   val bubbles: Boolean = js.native

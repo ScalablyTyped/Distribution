@@ -6,14 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Sockets.MessageWebSocketMessageReceivedEventArgs")
-@js.native
-class MessageWebSocketMessageReceivedEventArgs () extends IMessageWebSocketMessageReceivedEventArgs {
-  /* CompleteClass */
-  override var messageType: SocketMessageType = js.native
-  /* CompleteClass */
-  override def getDataReader(): DataReader = js.native
-  /* CompleteClass */
-  override def getDataStream(): IInputStream = js.native
+trait MessageWebSocketMessageReceivedEventArgs extends IMessageWebSocketMessageReceivedEventArgs
+
+object MessageWebSocketMessageReceivedEventArgs {
+  @scala.inline
+  def apply(getDataReader: () => DataReader, getDataStream: () => IInputStream, messageType: SocketMessageType): MessageWebSocketMessageReceivedEventArgs = {
+    val __obj = js.Dynamic.literal(getDataReader = js.Any.fromFunction0(getDataReader), getDataStream = js.Any.fromFunction0(getDataStream), messageType = messageType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MessageWebSocketMessageReceivedEventArgs]
+  }
 }
 

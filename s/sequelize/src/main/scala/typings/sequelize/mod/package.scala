@@ -94,7 +94,7 @@ package object mod {
   type BelongsToManyAddAssociationMixin[TInstance, TInstancePrimaryKey, TJoinTableAttributes] = js.Function2[
     /* newAssociation */ js.UndefOr[TInstance | TInstancePrimaryKey], 
     /* options */ js.UndefOr[
-      typings.sequelize.mod.BelongsToManyAddAssociationMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.BulkCreateOptions | typings.sequelize.mod.InstanceUpdateOptions | typings.sequelize.mod.InstanceDestroyOptions | typings.sequelize.AnonThrough[TJoinTableAttributes]
+      typings.sequelize.mod.BelongsToManyAddAssociationMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.BulkCreateOptions | typings.sequelize.mod.InstanceUpdateOptions | typings.sequelize.mod.InstanceDestroyOptions | typings.sequelize.anon.Through[TJoinTableAttributes]
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
@@ -126,7 +126,7 @@ package object mod {
   type BelongsToManyAddAssociationsMixin[TInstance, TInstancePrimaryKey, TJoinTableAttributes] = js.Function2[
     /* newAssociations */ js.UndefOr[js.Array[TInstance | TInstancePrimaryKey]], 
     /* options */ js.UndefOr[
-      typings.sequelize.mod.BelongsToManyAddAssociationsMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.BulkCreateOptions | typings.sequelize.mod.InstanceUpdateOptions | typings.sequelize.mod.InstanceDestroyOptions | typings.sequelize.AnonThrough[TJoinTableAttributes]
+      typings.sequelize.mod.BelongsToManyAddAssociationsMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.BulkCreateOptions | typings.sequelize.mod.InstanceUpdateOptions | typings.sequelize.mod.InstanceDestroyOptions | typings.sequelize.anon.Through[TJoinTableAttributes]
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
@@ -187,7 +187,7 @@ package object mod {
   type BelongsToManyCreateAssociationMixin[TAttributes, TInstance, TJoinTableAttributes] = js.Function2[
     /* values */ js.UndefOr[TAttributes], 
     /* options */ js.UndefOr[
-      typings.sequelize.mod.BelongsToManyCreateAssociationMixinOptions | typings.sequelize.mod.CreateOptions | typings.sequelize.AnonThrough[TJoinTableAttributes]
+      typings.sequelize.mod.BelongsToManyCreateAssociationMixinOptions | typings.sequelize.mod.CreateOptions | typings.sequelize.anon.Through[TJoinTableAttributes]
     ], 
     typings.bluebird.mod.^[TInstance]
   ]
@@ -376,7 +376,7 @@ package object mod {
   type BelongsToManySetAssociationsMixin[TInstance, TInstancePrimaryKey, TJoinTableAttributes] = js.Function2[
     /* newAssociations */ js.UndefOr[js.Array[TInstance | TInstancePrimaryKey]], 
     /* options */ js.UndefOr[
-      typings.sequelize.mod.BelongsToManySetAssociationsMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.BulkCreateOptions | typings.sequelize.mod.InstanceUpdateOptions | typings.sequelize.mod.InstanceDestroyOptions | typings.sequelize.AnonThrough[TJoinTableAttributes]
+      typings.sequelize.mod.BelongsToManySetAssociationsMixinOptions | typings.sequelize.mod.AnyFindOptions | typings.sequelize.mod.BulkCreateOptions | typings.sequelize.mod.InstanceUpdateOptions | typings.sequelize.mod.InstanceDestroyOptions | typings.sequelize.anon.Through[TJoinTableAttributes]
     ], 
     typings.bluebird.mod.^[scala.Unit]
   ]
@@ -465,7 +465,7 @@ package object mod {
     * Shortcut for order type in FindOptions.attributes
     */
   type FindOptionsOrderArray = js.Array[
-    java.lang.String | scala.Double | (typings.sequelize.mod.Model[js.Any, js.Any, js.Any]) | typings.sequelize.AnonAs | typings.sequelize.mod.fn
+    java.lang.String | scala.Double | (typings.sequelize.mod.Model[js.Any, js.Any, js.Any]) | typings.sequelize.anon.As | typings.sequelize.mod.fn
   ]
   /**
     * GetTableName Options

@@ -21,35 +21,8 @@ class LexicalGoalAssertion protected ()
   def this(
     openBracketToken: Token[OpenBracketToken],
     lexicalKeyword: Token[LexicalKeyword],
-    goalKeyword: js.UndefOr[scala.Nothing],
-    symbol: Identifier
-  ) = this()
-  def this(
-    openBracketToken: Token[OpenBracketToken],
-    lexicalKeyword: Token[LexicalKeyword],
     goalKeyword: Token[GoalKeyword],
     symbol: Identifier
-  ) = this()
-  def this(
-    openBracketToken: Token[OpenBracketToken],
-    lexicalKeyword: Token[LexicalKeyword],
-    goalKeyword: js.UndefOr[scala.Nothing],
-    symbol: js.UndefOr[scala.Nothing],
-    closeBracketToken: Token[CloseBracketToken]
-  ) = this()
-  def this(
-    openBracketToken: Token[OpenBracketToken],
-    lexicalKeyword: Token[LexicalKeyword],
-    goalKeyword: js.UndefOr[scala.Nothing],
-    symbol: Identifier,
-    closeBracketToken: Token[CloseBracketToken]
-  ) = this()
-  def this(
-    openBracketToken: Token[OpenBracketToken],
-    lexicalKeyword: Token[LexicalKeyword],
-    goalKeyword: Token[GoalKeyword],
-    symbol: js.UndefOr[scala.Nothing],
-    closeBracketToken: Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],

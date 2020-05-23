@@ -1,5 +1,6 @@
 package typings.jestCli
 
+import typings.jestCli.anon.ArgumentsPartialallboolea
 import typings.jestTypes.configMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`

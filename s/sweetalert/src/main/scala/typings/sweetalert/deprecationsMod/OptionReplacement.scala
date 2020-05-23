@@ -21,7 +21,7 @@ object OptionReplacement {
   ): OptionReplacement = {
     val __obj = js.Dynamic.literal()
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyRename)) __obj.updateDynamic("onlyRename")(onlyRename.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyRename)) __obj.updateDynamic("onlyRename")(onlyRename.get.asInstanceOf[js.Any])
     if (replacement != null) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
     if (subOption != null) __obj.updateDynamic("subOption")(subOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionReplacement]

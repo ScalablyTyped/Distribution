@@ -17,7 +17,6 @@ import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
-import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Renderer.Snapshot.SnapshotCallback
@@ -43,9 +42,8 @@ import scala.scalajs.js.annotation._
   * is a technical limitation of WebGL. To get around it, create your shape as a texture in an art package, then draw that
   * to the Render Texture.
   */
-@JSGlobal("Phaser.GameObjects.RenderTexture")
 @js.native
-class RenderTexture protected ()
+trait RenderTexture
   extends GameObject
      with Alpha
      with BlendMode
@@ -62,19 +60,6 @@ class RenderTexture protected ()
      with Transform
      with Visible {
   /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this Game Object in the world. Default 0.
-    * @param y The vertical position of this Game Object in the world. Default 0.
-    * @param width The width of the Render Texture. Default 32.
-    * @param height The height of the Render Texture. Default 32.
-    */
-  def this(scene: Scene) = this()
-  def this(scene: Scene, x: Double) = this()
-  def this(scene: Scene, x: Double, y: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, width: integer) = this()
-  def this(scene: Scene, x: Double, y: Double, width: integer, height: integer) = this()
-  /**
     * An internal Camera that can be used to move around the Render Texture.
     * Control it just like you would any Scene Camera. The difference is that it only impacts the placement of what
     * is drawn to the Render Texture. You can scroll, zoom and rotate this Camera.
@@ -89,58 +74,9 @@ class RenderTexture protected ()
     */
   var context: CanvasRenderingContext2D = js.native
   /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    */
-  /* CompleteClass */
-  override var depth: Double = js.native
-  /**
     * Is this Render Texture dirty or not? If not it won't spend time clearing or filling itself.
     */
   var dirty: Boolean = js.native
-  /**
-    * The displayed height of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  override var displayHeight: Double = js.native
-  /**
-    * The displayed width of this Game Object.
-    * 
-    * This value takes into account the scale factor.
-    * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  override var displayWidth: Double = js.native
-  /**
-    * The horizontally flipped state of the Game Object.
-    * 
-    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    */
-  /* CompleteClass */
-  override var flipX: Boolean = js.native
-  /**
-    * The vertically flipped state of the Game Object.
-    * 
-    * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    */
-  /* CompleteClass */
-  override var flipY: Boolean = js.native
   /**
     * A reference to the GL Frame Buffer this Render Texture is drawing to.
     * This is only set if Phaser is running with the WebGL Renderer.
@@ -163,15 +99,6 @@ class RenderTexture protected ()
     */
   var globalTint: Double = js.native
   /**
-    * The native (un-scaled) height of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayHeight` property.
-    */
-  /* CompleteClass */
-  override var height: Double = js.native
-  /**
     * A reference to either the Canvas or WebGL Renderer that the Game instance is using.
     */
   var renderer: CanvasRenderer | WebGLRenderer = js.native
@@ -184,22 +111,6 @@ class RenderTexture protected ()
     */
   @JSName("texture")
   var texture_RenderTexture: Texture = js.native
-  /**
-    * The visible state of the Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    */
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-  /**
-    * The native (un-scaled) width of this Game Object.
-    * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayWidth` property.
-    */
-  /* CompleteClass */
-  override var width: Double = js.native
   /**
     * Clears the Render Texture.
     */
@@ -354,11 +265,6 @@ class RenderTexture protected ()
     */
   /* protected */ def preDestroy(): Unit = js.native
   /**
-    * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
-    */
-  /* CompleteClass */
-  override def resetFlip(): this.type = js.native
-  /**
     * Resizes the Render Texture to the new dimensions given.
     * 
     * If Render Texture was created from specific frame, only the size of the frame will be changed. The size of the source
@@ -402,56 +308,6 @@ class RenderTexture protected ()
     */
   def saveTexture(key: String): Texture = js.native
   /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
-  /**
-    * Sets the display size of this Game Object.
-    * 
-    * Calling this will adjust the scale.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDisplaySize(width: Double, height: Double): this.type = js.native
-  /**
-    * Sets the horizontal and vertical flipped state of this Game Object.
-    * 
-    * A Game Object that is flipped will render inversed on the flipped axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-    * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-    */
-  /* CompleteClass */
-  override def setFlip(x: Boolean, y: Boolean): this.type = js.native
-  /**
-    * Sets the horizontal flipped state of this Game Object.
-    * 
-    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-    */
-  /* CompleteClass */
-  override def setFlipX(value: Boolean): this.type = js.native
-  /**
-    * Sets the vertical flipped state of this Game Object.
-    * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-    */
-  /* CompleteClass */
-  override def setFlipY(value: Boolean): this.type = js.native
-  /**
     * Set the alpha to use when rendering this Render Texture.
     * @param alpha The alpha value.
     */
@@ -461,29 +317,6 @@ class RenderTexture protected ()
     * @param tint The tint value.
     */
   def setGlobalTint(tint: integer): this.type = js.native
-  /**
-    * Sets the internal size of this Game Object, as used for frame or physics body creation.
-    * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
-    */
-  /* CompleteClass */
-  override def setSize(width: Double, height: Double): this.type = js.native
-  /**
-    * Sets the visibility of this Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    * @param value The visible state of the Game Object.
-    */
-  /* CompleteClass */
-  override def setVisible(value: Boolean): this.type = js.native
   /**
     * Takes a snapshot of the whole of this Render Texture.
     * 
@@ -554,19 +387,5 @@ class RenderTexture protected ()
     * @param callback The Function to invoke after the snapshot pixel data is extracted.
     */
   def snapshotPixel(x: integer, y: integer, callback: SnapshotCallback): this.type = js.native
-  /**
-    * Toggles the horizontal flipped state of this Game Object.
-    * 
-    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    */
-  /* CompleteClass */
-  override def toggleFlipX(): this.type = js.native
-  /**
-    * Toggles the vertical flipped state of this Game Object.
-    */
-  /* CompleteClass */
-  override def toggleFlipY(): this.type = js.native
 }
 

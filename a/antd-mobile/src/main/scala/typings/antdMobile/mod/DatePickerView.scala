@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonAntLocale
-import typings.antdMobile.AnonExtra
+import typings.antdMobile.anon.AntLocale
+import typings.antdMobile.anon.Extra
 import typings.antdMobile.datePickerViewMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ class DatePickerView () extends default
 @JSImport("antd-mobile", "DatePickerView")
 @js.native
 object DatePickerView extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonExtra = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: Extra = js.native
 }
 

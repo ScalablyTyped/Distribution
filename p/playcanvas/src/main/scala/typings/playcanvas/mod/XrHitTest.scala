@@ -5,14 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.XrHitTest
-  * @augments pc.EventHandler
-  * @classdesc Hit Test provides ability to get position and rotation of ray intersecting point with representation of real world geometry by underlying AR system.
-  * @description Hit Test provides ability to get position and rotation of ray intersecting point with representation of real world geometry by underlying AR system.
-  * @param {pc.XrManager} manager - WebXR Manager.
-  * @property {boolean} supported True if AR Hit Test is supported.
-  * @property {pc.XrHitTestSource[]} sources list of active {@link pc.XrHitTestSource}.
+  * Hit Test provides ability to get position and rotation of ray intersecting point with representation of real world geometry by underlying AR system.
+  * @property supported - True if AR Hit Test is supported.
+  * @property sources - list of active {@link pc.XrHitTestSource}.
+  * @param manager - WebXR Manager.
   */
 @JSImport("playcanvas", "XrHitTest")
 @js.native

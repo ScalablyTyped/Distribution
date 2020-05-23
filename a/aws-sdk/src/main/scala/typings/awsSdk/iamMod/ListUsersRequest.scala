@@ -22,10 +22,14 @@ trait ListUsersRequest extends js.Object {
 
 object ListUsersRequest {
   @scala.inline
-  def apply(Marker: markerType = null, MaxItems: Int | Double = null, PathPrefix: pathPrefixType = null): ListUsersRequest = {
+  def apply(
+    Marker: markerType = null,
+    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
+    PathPrefix: pathPrefixType = null
+  ): ListUsersRequest = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     if (PathPrefix != null) __obj.updateDynamic("PathPrefix")(PathPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUsersRequest]
   }

@@ -16,11 +16,15 @@ trait _FormatterParams extends js.Object
 
 object _FormatterParams {
   @scala.inline
-  def TrafficParams(color: Color = null, max: Int | Double = null, min: Int | Double = null): _FormatterParams = {
+  def TrafficParams(
+    color: Color = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined
+  ): _FormatterParams = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FormatterParams]
   }
   @scala.inline
@@ -31,8 +35,8 @@ object _FormatterParams {
     tickElement: Boolean | String = null
   ): _FormatterParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTruthy)) __obj.updateDynamic("allowTruthy")(allowTruthy.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTruthy)) __obj.updateDynamic("allowTruthy")(allowTruthy.get.asInstanceOf[js.Any])
     if (crossElement != null) __obj.updateDynamic("crossElement")(crossElement.asInstanceOf[js.Any])
     if (tickElement != null) __obj.updateDynamic("tickElement")(tickElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FormatterParams]
@@ -61,18 +65,18 @@ object _FormatterParams {
   ): _FormatterParams = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(humanize)) __obj.updateDynamic("humanize")(humanize.asInstanceOf[js.Any])
+    if (!js.isUndefined(humanize)) __obj.updateDynamic("humanize")(humanize.get.asInstanceOf[js.Any])
     if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat.asInstanceOf[js.Any])
     if (invalidPlaceholder != null) __obj.updateDynamic("invalidPlaceholder")(invalidPlaceholder.asInstanceOf[js.Any])
     if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.get.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FormatterParams]
   }
   @scala.inline
-  def StarRatingParams(stars: Int | Double = null): _FormatterParams = {
+  def StarRatingParams(stars: js.UndefOr[Double] = js.undefined): _FormatterParams = {
     val __obj = js.Dynamic.literal()
-    if (stars != null) __obj.updateDynamic("stars")(stars.asInstanceOf[js.Any])
+    if (!js.isUndefined(stars)) __obj.updateDynamic("stars")(stars.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FormatterParams]
   }
   @scala.inline
@@ -87,7 +91,7 @@ object _FormatterParams {
     if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolAfter)) __obj.updateDynamic("symbolAfter")(symbolAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolAfter)) __obj.updateDynamic("symbolAfter")(symbolAfter.get.asInstanceOf[js.Any])
     if (thousand != null) __obj.updateDynamic("thousand")(thousand.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FormatterParams]
   }
@@ -101,7 +105,7 @@ object _FormatterParams {
   @scala.inline
   def LinkParams(
     download: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
+    label: String | (js.Function1[/* cell */ CellComponent, String]) = null,
     labelField: String = null,
     target: String = null,
     url: String = null,
@@ -109,7 +113,7 @@ object _FormatterParams {
     urlPrefix: String = null
   ): _FormatterParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

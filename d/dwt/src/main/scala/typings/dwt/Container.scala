@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * interface for a DWT container which basically defines a DIV on the page
   */
-/** 
-  * interface for a DWT container which basically defines a DIV on the page
-  */
 trait Container extends js.Object {
   var ContainerId: String
   var Height: String | Double

@@ -20,13 +20,13 @@ object SectionTitles {
   @scala.inline
   def apply(
     element_locations: js.Array[ElementLocations] = null,
-    level: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
     location: Location = null,
     text: String = null
   ): SectionTitles = {
     val __obj = js.Dynamic.literal()
     if (element_locations != null) __obj.updateDynamic("element_locations")(element_locations.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionTitles]

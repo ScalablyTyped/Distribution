@@ -17,14 +17,14 @@ object DialogflowV1Metadata {
   def apply(
     intentId: String = null,
     intentName: String = null,
-    nluResponseTime: Int | Double = null,
+    nluResponseTime: js.UndefOr[Double] = js.undefined,
     webhookForSlotFillingUsed: String = null,
     webhookUsed: String = null
   ): DialogflowV1Metadata = {
     val __obj = js.Dynamic.literal()
     if (intentId != null) __obj.updateDynamic("intentId")(intentId.asInstanceOf[js.Any])
     if (intentName != null) __obj.updateDynamic("intentName")(intentName.asInstanceOf[js.Any])
-    if (nluResponseTime != null) __obj.updateDynamic("nluResponseTime")(nluResponseTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(nluResponseTime)) __obj.updateDynamic("nluResponseTime")(nluResponseTime.get.asInstanceOf[js.Any])
     if (webhookForSlotFillingUsed != null) __obj.updateDynamic("webhookForSlotFillingUsed")(webhookForSlotFillingUsed.asInstanceOf[js.Any])
     if (webhookUsed != null) __obj.updateDynamic("webhookUsed")(webhookUsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1Metadata]

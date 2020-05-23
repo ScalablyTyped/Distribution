@@ -19,12 +19,12 @@ trait AutoDeployment extends js.Object {
 object AutoDeployment {
   @scala.inline
   def apply(
-    Enabled: js.UndefOr[Boolean] = js.undefined,
-    RetainStacksOnAccountRemoval: js.UndefOr[Boolean] = js.undefined
+    Enabled: js.UndefOr[AutoDeploymentNullable] = js.undefined,
+    RetainStacksOnAccountRemoval: js.UndefOr[RetainStacksOnAccountRemovalNullable] = js.undefined
   ): AutoDeployment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetainStacksOnAccountRemoval)) __obj.updateDynamic("RetainStacksOnAccountRemoval")(RetainStacksOnAccountRemoval.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetainStacksOnAccountRemoval)) __obj.updateDynamic("RetainStacksOnAccountRemoval")(RetainStacksOnAccountRemoval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoDeployment]
   }
 }

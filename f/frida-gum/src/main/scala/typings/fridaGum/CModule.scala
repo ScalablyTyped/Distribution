@@ -30,23 +30,21 @@ import scala.scalajs.js.annotation._
   * `extern`, allocated using e.g. `Memory.alloc()`, and passed in as symbols
   * through the constructor's second argument.
   */
-@JSGlobal("CModule")
-@js.native
-class CModule protected ()
+trait CModule
   extends /* name */ StringDictionary[js.Any] {
-  /**
-    * Creates a new C module by compiling the provided C source code to machine
-    * code, straight to memory.
-    *
-    * @param source C source code to compile.
-    * @param symbols Symbols to expose to the C module. Declare them as `extern`.
-    */
-  def this(source: String) = this()
-  def this(source: String, symbols: CSymbols) = this()
   /**
     * Eagerly unmaps the module from memory. Useful for short-lived modules
     * when waiting for a future garbage collection isn't desirable.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
+}
+
+object CModule {
+  @scala.inline
+  def apply(dispose: () => Unit, StringDictionary: /* name */ StringDictionary[js.Any] = null): CModule = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[CModule]
+  }
 }
 

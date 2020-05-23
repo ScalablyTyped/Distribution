@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ErrorSettings {
-  type Param = (typings.semanticUiNag.PickImplnoCookieStorage | typings.semanticUiNag.PickImplnoStorage | typings.semanticUiNag.PickImplmethod) with typings.semanticUiNag.PartialPickImplkeyofImplMethod
+  type Param = (typings.semanticUiNag.anon.PickImplnoCookieStorage | typings.semanticUiNag.anon.PickImplnoStorage | typings.semanticUiNag.anon.PickImplmethod) with typings.semanticUiNag.anon.PartialPickImplkeyofImplMethod
 }

@@ -28,8 +28,8 @@ object MonkeyPatchOptions {
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (instead != null) __obj.updateDynamic("instead")(js.Any.fromFunction1(instead))
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonkeyPatchOptions]
   }
 }

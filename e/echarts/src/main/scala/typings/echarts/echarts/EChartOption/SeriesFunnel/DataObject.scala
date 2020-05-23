@@ -1,10 +1,10 @@
 package typings.echarts.echarts.EChartOption.SeriesFunnel
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLabelLabelLine
-import typings.echarts.AnonLength
-import typings.echarts.AnonLineHeight
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.LabelLabelLine
+import typings.echarts.anon.Length
+import typings.echarts.anon.LineHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelLabelLine] = js.undefined
+  var emphasis: js.UndefOr[LabelLabelLine] = js.undefined
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -21,18 +21,18 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * The label configuration of a single data item.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.label
     */
-  var label: js.UndefOr[AnonLineHeight] = js.undefined
+  var label: js.UndefOr[LineHeight] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.labelLine
     */
-  var labelLine: js.UndefOr[AnonLength] = js.undefined
+  var labelLine: js.UndefOr[Length] = js.undefined
   /**
     * the name of data item.
     *
@@ -46,7 +46,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * data value.
     *
@@ -59,13 +59,13 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonLabelLabelLine = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonLineHeight = null,
-    labelLine: AnonLength = null,
+    emphasis: LabelLabelLine = null,
+    itemStyle: BorderType = null,
+    label: LineHeight = null,
+    labelLine: Length = null,
     name: String = null,
-    tooltip: AnonExtraCssText = null,
-    value: Int | Double = null
+    tooltip: ExtraCssText = null,
+    value: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
@@ -74,7 +74,7 @@ object DataObject {
     if (labelLine != null) __obj.updateDynamic("labelLine")(labelLine.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

@@ -8,25 +8,24 @@ import scala.scalajs.js.annotation._
   * _Structure representing a size._
   * @see https://docs.scriptable.app/size/#-new-size
   */
-@JSGlobal("Size")
-@js.native
-class Size protected () extends js.Object {
-  /**
-    * _Structure representing a size._
-    * @param width - Width value.
-    * @param height - Height value.
-    * @see https://docs.scriptable.app/size/#-new-size
-    */
-  def this(width: Double, height: Double) = this()
+trait Size extends js.Object {
   /**
     * _Height value._
     * @see https://docs.scriptable.app/size/#height
     */
-  var height: Double = js.native
+  var height: Double
   /**
     * _Width value._
     * @see https://docs.scriptable.app/size/#width
     */
-  var width: Double = js.native
+  var width: Double
+}
+
+object Size {
+  @scala.inline
+  def apply(height: Double, width: Double): Size = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Size]
+  }
 }
 

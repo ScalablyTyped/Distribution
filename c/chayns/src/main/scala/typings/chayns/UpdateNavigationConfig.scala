@@ -14,8 +14,8 @@ object UpdateNavigationConfig {
   @scala.inline
   def apply(stateOnly: js.UndefOr[Boolean] = js.undefined, updateTapp: js.UndefOr[Boolean] = js.undefined): UpdateNavigationConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stateOnly)) __obj.updateDynamic("stateOnly")(stateOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateTapp)) __obj.updateDynamic("updateTapp")(updateTapp.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateOnly)) __obj.updateDynamic("stateOnly")(stateOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateTapp)) __obj.updateDynamic("updateTapp")(updateTapp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNavigationConfig]
   }
 }

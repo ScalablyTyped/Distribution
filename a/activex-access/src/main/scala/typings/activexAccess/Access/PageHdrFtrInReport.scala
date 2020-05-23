@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access._PageHdrFtrInReport")
 @js.native
-class PageHdrFtrInReport protected () extends js.Object {
+trait PageHdrFtrInReport extends js.Object {
   @JSName("Access._PageHdrFtrInReport_typekey")
   var AccessDot_PageHdrFtrInReport_typekey: PageHdrFtrInReport = js.native
   var AlternateBackColor: Double = js.native

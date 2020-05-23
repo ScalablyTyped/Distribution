@@ -1,7 +1,7 @@
 package typings.gapiClientServicecontrol.gapi.client.servicecontrol
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientServicecontrol.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientServicecontrol.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait ServicesResource extends js.Object {
     * reliability, the server may inject these errors to prohibit any hard
     * dependency on the quota functionality.
     */
-  def allocateQuota(request: AnonAccesstoken): Request_[AllocateQuotaResponse]
+  def allocateQuota(request: Accesstoken): Request[AllocateQuotaResponse]
   /**
     * Checks an operation with Google Service Control to decide whether
     * the given operation should proceed. It should be called before the
@@ -36,7 +36,7 @@ trait ServicesResource extends js.Object {
     * on the specified service. For more information, see
     * [Google Cloud IAM](https://cloud.google.com/iam).
     */
-  def check(request: AnonAccesstoken): Request_[CheckResponse]
+  def check(request: Accesstoken): Request[CheckResponse]
   /**
     * Signals the quota controller that service ends the ongoing usage
     * reconciliation.
@@ -45,7 +45,7 @@ trait ServicesResource extends js.Object {
     * permission on the specified service. For more information, see
     * [Google Cloud IAM](https://cloud.google.com/iam).
     */
-  def endReconciliation(request: AnonAccesstoken): Request_[EndReconciliationResponse]
+  def endReconciliation(request: Accesstoken): Request[EndReconciliationResponse]
   /**
     * Releases previously allocated quota done through AllocateQuota method.
     *
@@ -59,7 +59,7 @@ trait ServicesResource extends js.Object {
     * reliability, the server may inject these errors to prohibit any hard
     * dependency on the quota functionality.
     */
-  def releaseQuota(request: AnonAccesstoken): Request_[ReleaseQuotaResponse]
+  def releaseQuota(request: Accesstoken): Request[ReleaseQuotaResponse]
   /**
     * Reports operation results to Google Service Control, such as logs and
     * metrics. It should be called after an operation is completed.
@@ -76,7 +76,7 @@ trait ServicesResource extends js.Object {
     * on the specified service. For more information, see
     * [Google Cloud IAM](https://cloud.google.com/iam).
     */
-  def report(request: AnonAccesstoken): Request_[ReportResponse]
+  def report(request: Accesstoken): Request[ReportResponse]
   /**
     * Unlike rate quota, allocation quota does not get refilled periodically.
     * So, it is possible that the quota usage as seen by the service differs from
@@ -104,18 +104,18 @@ trait ServicesResource extends js.Object {
     * permission on the specified service. For more information, see
     * [Google Cloud IAM](https://cloud.google.com/iam).
     */
-  def startReconciliation(request: AnonAccesstoken): Request_[StartReconciliationResponse]
+  def startReconciliation(request: Accesstoken): Request[StartReconciliationResponse]
 }
 
 object ServicesResource {
   @scala.inline
   def apply(
-    allocateQuota: AnonAccesstoken => Request_[AllocateQuotaResponse],
-    check: AnonAccesstoken => Request_[CheckResponse],
-    endReconciliation: AnonAccesstoken => Request_[EndReconciliationResponse],
-    releaseQuota: AnonAccesstoken => Request_[ReleaseQuotaResponse],
-    report: AnonAccesstoken => Request_[ReportResponse],
-    startReconciliation: AnonAccesstoken => Request_[StartReconciliationResponse]
+    allocateQuota: Accesstoken => Request[AllocateQuotaResponse],
+    check: Accesstoken => Request[CheckResponse],
+    endReconciliation: Accesstoken => Request[EndReconciliationResponse],
+    releaseQuota: Accesstoken => Request[ReleaseQuotaResponse],
+    report: Accesstoken => Request[ReportResponse],
+    startReconciliation: Accesstoken => Request[StartReconciliationResponse]
   ): ServicesResource = {
     val __obj = js.Dynamic.literal(allocateQuota = js.Any.fromFunction1(allocateQuota), check = js.Any.fromFunction1(check), endReconciliation = js.Any.fromFunction1(endReconciliation), releaseQuota = js.Any.fromFunction1(releaseQuota), report = js.Any.fromFunction1(report), startReconciliation = js.Any.fromFunction1(startReconciliation))
     __obj.asInstanceOf[ServicesResource]

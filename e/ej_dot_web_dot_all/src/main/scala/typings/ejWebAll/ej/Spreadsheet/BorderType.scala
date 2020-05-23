@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,38 +49,6 @@ object BorderType extends js.Object {
   ///To apply top and thick bottom border for the given range of cell.
   @js.native
   sealed trait TopandThickBottom extends BorderType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BorderType with Double] = js.native
-  /* 5 */ @js.native
-  object AllBorder extends TopLevel[AllBorder with Double]
-  
-  /* 3 */ @js.native
-  object Bottom extends TopLevel[Bottom with Double]
-  
-  /* 1 */ @js.native
-  object Left extends TopLevel[Left with Double]
-  
-  /* 4 */ @js.native
-  object OutSide extends TopLevel[OutSide with Double]
-  
-  /* 2 */ @js.native
-  object Right extends TopLevel[Right with Double]
-  
-  /* 7 */ @js.native
-  object ThickBottom extends TopLevel[ThickBottom with Double]
-  
-  /* 6 */ @js.native
-  object ThickBox extends TopLevel[ThickBox with Double]
-  
-  /* 0 */ @js.native
-  object Top extends TopLevel[Top with Double]
-  
-  /* 8 */ @js.native
-  object TopandBottom extends TopLevel[TopandBottom with Double]
-  
-  /* 9 */ @js.native
-  object TopandThickBottom extends TopLevel[TopandThickBottom with Double]
   
 }
 

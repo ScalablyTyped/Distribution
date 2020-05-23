@@ -18,9 +18,9 @@ trait WorkbookIcon extends js.Object {
 
 object WorkbookIcon {
   @scala.inline
-  def apply(index: Int | Double = null, set: String = null): WorkbookIcon = {
+  def apply(index: js.UndefOr[Double] = js.undefined, set: String = null): WorkbookIcon = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookIcon]
   }

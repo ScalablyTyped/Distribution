@@ -5,8 +5,8 @@ import typings.node.Buffer
 import typings.node.httpMod.Agent
 import typings.node.streamMod.Stream
 import typings.npmPackageArg.mod.Result
-import typings.npmRegistryFetch.PartialAuthOptions
-import typings.npmRegistryFetch.PartialFetchRetryOptions
+import typings.npmRegistryFetch.anon.PartialAuthOptions
+import typings.npmRegistryFetch.anon.PartialFetchRetryOptions
 import typings.npmlog.mod.Logger
 import typings.ssri.mod.Integrity
 import typings.std.Record
@@ -301,10 +301,10 @@ trait FetchOptions
 object FetchOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     agent: Agent = null,
     body: Buffer | Stream | js.Object | String = null,
-    ca: String | Buffer | (js.Array[String | Buffer]) = null,
+    ca: js.UndefOr[Null | String | Buffer | (js.Array[String | Buffer])] = js.undefined,
     cache: String = null,
     cert: String = null,
     forceAuth: PartialAuthOptions = null,
@@ -317,7 +317,7 @@ object FetchOptions {
     localAddress: String = null,
     log: Logger = null,
     mapJSON: /* v */ js.Any => _ = null,
-    maxSockets: Int | Double = null,
+    maxSockets: js.UndefOr[Double] = js.undefined,
     method: String = null,
     noproxy: js.UndefOr[Boolean] = js.undefined,
     npmSession: String = null,
@@ -332,33 +332,33 @@ object FetchOptions {
     scope: String = null,
     spec: String | Result = null,
     strictSSL: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     userAgent: String = null
   ): FetchOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (!js.isUndefined(ca)) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (forceAuth != null) __obj.updateDynamic("forceAuth")(forceAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBody)) __obj.updateDynamic("ignoreBody")(ignoreBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBody)) __obj.updateDynamic("ignoreBody")(ignoreBody.get.asInstanceOf[js.Any])
     if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFromCI)) __obj.updateDynamic("isFromCI")(isFromCI.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFromCI)) __obj.updateDynamic("isFromCI")(isFromCI.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (mapJSON != null) __obj.updateDynamic("mapJSON")(js.Any.fromFunction1(mapJSON))
-    if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSockets)) __obj.updateDynamic("maxSockets")(maxSockets.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(noproxy)) __obj.updateDynamic("noproxy")(noproxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(noproxy)) __obj.updateDynamic("noproxy")(noproxy.get.asInstanceOf[js.Any])
     if (npmSession != null) __obj.updateDynamic("npmSession")(npmSession.asInstanceOf[js.Any])
-    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferOffline)) __obj.updateDynamic("preferOffline")(preferOffline.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferOnline)) __obj.updateDynamic("preferOnline")(preferOnline.asInstanceOf[js.Any])
+    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferOffline)) __obj.updateDynamic("preferOffline")(preferOffline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferOnline)) __obj.updateDynamic("preferOnline")(preferOnline.get.asInstanceOf[js.Any])
     if (projectScope != null) __obj.updateDynamic("projectScope")(projectScope.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
@@ -366,8 +366,8 @@ object FetchOptions {
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchOptions]
   }

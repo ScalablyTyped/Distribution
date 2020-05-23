@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.ContactItem")
 @js.native
-class ContactItem protected () extends js.Object {
+trait ContactItem extends js.Object {
   var Account: String = js.native
   val Actions: typings.activexOutlook.Outlook.Actions = js.native
   var Anniversary: VarDate = js.native

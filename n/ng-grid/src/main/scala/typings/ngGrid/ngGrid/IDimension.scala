@@ -14,13 +14,13 @@ object IDimension {
   @scala.inline
   def apply(
     autoFitHeight: js.UndefOr[Boolean] = js.undefined,
-    outerHeight: Int | Double = null,
-    outerWidth: Int | Double = null
+    outerHeight: js.UndefOr[Double] = js.undefined,
+    outerWidth: js.UndefOr[Double] = js.undefined
   ): IDimension = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFitHeight)) __obj.updateDynamic("autoFitHeight")(autoFitHeight.asInstanceOf[js.Any])
-    if (outerHeight != null) __obj.updateDynamic("outerHeight")(outerHeight.asInstanceOf[js.Any])
-    if (outerWidth != null) __obj.updateDynamic("outerWidth")(outerWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFitHeight)) __obj.updateDynamic("autoFitHeight")(autoFitHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outerHeight)) __obj.updateDynamic("outerHeight")(outerHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outerWidth)) __obj.updateDynamic("outerWidth")(outerWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDimension]
   }
 }

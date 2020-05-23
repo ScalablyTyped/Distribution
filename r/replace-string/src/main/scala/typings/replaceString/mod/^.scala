@@ -19,7 +19,7 @@ object ^ extends js.Object {
   const string = 'My friend has a 🐑. I want a 🐑 too!';
   replaceString(string, '🐑', '🦄');
   //=> 'My friend has a 🦄. I want a 🦄 too!'
-  replaceString('Foo 🐑 Bar', '🐑', (needle, matchCount, input, matchIndex) => `${needle}❤️`);
+  replaceString('Foo 🐑 Bar', '🐑', (matchedSubstring, matchCount, input, matchIndex) => `${matchedSubstring}❤️`);
   //=> 'Foo 🐑❤️ Bar'
   ```
   */

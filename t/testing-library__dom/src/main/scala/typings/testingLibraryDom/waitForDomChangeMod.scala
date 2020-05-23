@@ -1,5 +1,6 @@
 package typings.testingLibraryDom
 
+import typings.testingLibraryDom.anon.MutationObserverOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object waitForDomChangeMod extends js.Object {
   def waitForDomChange(): js.Promise[_] = js.native
-  def waitForDomChange(options: AnonMutationObserverOptions): js.Promise[_] = js.native
+  def waitForDomChange(options: MutationObserverOptions): js.Promise[_] = js.native
 }
 

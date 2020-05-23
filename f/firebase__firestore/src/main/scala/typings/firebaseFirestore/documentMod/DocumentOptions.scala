@@ -16,8 +16,8 @@ object DocumentOptions {
     hasLocalMutations: js.UndefOr[Boolean] = js.undefined
   ): DocumentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasCommittedMutations)) __obj.updateDynamic("hasCommittedMutations")(hasCommittedMutations.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasLocalMutations)) __obj.updateDynamic("hasLocalMutations")(hasLocalMutations.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCommittedMutations)) __obj.updateDynamic("hasCommittedMutations")(hasCommittedMutations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasLocalMutations)) __obj.updateDynamic("hasLocalMutations")(hasLocalMutations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentOptions]
   }
 }

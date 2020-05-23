@@ -21,24 +21,24 @@ trait FetchOptions
 object FetchOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     callbacks: RemoteCallbacks = null,
     customHeaders: Strarray | String | js.Array[String] = null,
-    downloadTags: Int | Double = null,
+    downloadTags: js.UndefOr[Double] = js.undefined,
     proxyOpts: js.Any = null,
-    prune: Int | Double = null,
-    updateFetchhead: Int | Double = null,
-    version: Int | Double = null
+    prune: js.UndefOr[Double] = js.undefined,
+    updateFetchhead: js.UndefOr[Double] = js.undefined,
+    version: js.UndefOr[Double] = js.undefined
   ): FetchOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (downloadTags != null) __obj.updateDynamic("downloadTags")(downloadTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(downloadTags)) __obj.updateDynamic("downloadTags")(downloadTags.get.asInstanceOf[js.Any])
     if (proxyOpts != null) __obj.updateDynamic("proxyOpts")(proxyOpts.asInstanceOf[js.Any])
-    if (prune != null) __obj.updateDynamic("prune")(prune.asInstanceOf[js.Any])
-    if (updateFetchhead != null) __obj.updateDynamic("updateFetchhead")(updateFetchhead.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateFetchhead)) __obj.updateDynamic("updateFetchhead")(updateFetchhead.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchOptions]
   }
 }

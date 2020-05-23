@@ -101,10 +101,10 @@ object FormatOptions {
     showLeafArrayIndexes: js.UndefOr[Boolean] = js.undefined
   ): FormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeNullValues)) __obj.updateDynamic("includeNullValues")(includeNullValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNullValues)) __obj.updateDynamic("includeNullValues")(includeNullValues.get.asInstanceOf[js.Any])
     if (initialFormData != null) __obj.updateDynamic("initialFormData")(initialFormData.asInstanceOf[js.Any])
     if (mapping != null) __obj.updateDynamic("mapping")(js.Any.fromFunction1(mapping))
-    if (!js.isUndefined(showLeafArrayIndexes)) __obj.updateDynamic("showLeafArrayIndexes")(showLeafArrayIndexes.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLeafArrayIndexes)) __obj.updateDynamic("showLeafArrayIndexes")(showLeafArrayIndexes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptions]
   }
 }

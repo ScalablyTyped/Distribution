@@ -8,50 +8,46 @@ import scala.scalajs.js.annotation._
   * Class for an XML tag.
   * @private
   */
-@JSGlobal("MakerJs.exporter.XmlTag")
-@js.native
-class XmlTag protected () extends js.Object {
-  /**
-    * @param name Name of the XML tag.
-    * @param attrs Optional attributes for the tag.
-    */
-  def this(name: String) = this()
-  def this(name: String, attrs: IXmlTagAttrs) = this()
-  var attrs: IXmlTagAttrs = js.native
+trait XmlTag extends js.Object {
+  var attrs: IXmlTagAttrs
   /**
     * Text between the opening and closing tags.
     */
-  var innerText: String = js.native
+  var innerText: String
   /**
     * Boolean to indicate that the innerText has been escaped.
     */
-  var innerTextEscaped: Boolean = js.native
-  var name: String = js.native
+  var innerTextEscaped: Boolean
+  var name: String
   /**
     * Get the closing tag.
     */
-  def getClosingTag(): String = js.native
+  def getClosingTag(): String
   /**
     * Get the inner text.
     */
-  def getInnerText(): String = js.native
+  def getInnerText(): String
   /**
     * Get the opening tag.
     *
     * @param selfClose Flag to determine if opening tag should be self closing.
     */
-  def getOpeningTag(selfClose: Boolean): String = js.native
+  def getOpeningTag(selfClose: Boolean): String
 }
 
-/* static members */
-@JSGlobal("MakerJs.exporter.XmlTag")
-@js.native
-object XmlTag extends js.Object {
-  /**
-    * Escapes certain characters within a string so that it can appear in a tag or its attribute.
-    *
-    * @returns Escaped string.
-    */
-  def escapeString(value: String): String = js.native
+object XmlTag {
+  @scala.inline
+  def apply(
+    attrs: IXmlTagAttrs,
+    getClosingTag: () => String,
+    getInnerText: () => String,
+    getOpeningTag: Boolean => String,
+    innerText: String,
+    innerTextEscaped: Boolean,
+    name: String
+  ): XmlTag = {
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], getClosingTag = js.Any.fromFunction0(getClosingTag), getInnerText = js.Any.fromFunction0(getInnerText), getOpeningTag = js.Any.fromFunction1(getOpeningTag), innerText = innerText.asInstanceOf[js.Any], innerTextEscaped = innerTextEscaped.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[XmlTag]
+  }
 }
 

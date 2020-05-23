@@ -4,19 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.SceneInstrumentation")
 @js.native
-class SceneInstrumentation protected () extends IDisposable {
-  /**
-    * Instantiates a new scene instrumentation.
-    * This class can be used to get instrumentation data from a Babylon engine
-    * @see http://doc.babylonjs.com/how_to/optimizing_your_scene#sceneinstrumentation
-    * @param scene Defines the scene to instrument
-    */
-  def this(/**
-    * Defines the scene to instrument
-    */
-  scene: Scene) = this()
+trait SceneInstrumentation extends IDisposable {
   var _activeMeshesEvaluationTime: js.Any = js.native
   var _animationsTime: js.Any = js.native
   var _cameraRenderTime: js.Any = js.native
@@ -150,11 +139,6 @@ class SceneInstrumentation protected () extends IDisposable {
     * Enable or disable the sprites render time capture
     */
   def captureSpritesRenderTime(value: Boolean): js.Any = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Gets the perf counter used for draw calls
     */

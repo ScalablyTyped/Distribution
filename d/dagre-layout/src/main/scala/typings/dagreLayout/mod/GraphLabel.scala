@@ -25,29 +25,29 @@ object GraphLabel {
     acyclicer: String = null,
     align: String = null,
     compound: js.UndefOr[Boolean] = js.undefined,
-    edgesep: Int | Double = null,
-    height: Int | Double = null,
-    marginx: Int | Double = null,
-    marginy: Int | Double = null,
-    nodesep: Int | Double = null,
+    edgesep: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    marginx: js.UndefOr[Double] = js.undefined,
+    marginy: js.UndefOr[Double] = js.undefined,
+    nodesep: js.UndefOr[Double] = js.undefined,
     rankdir: String = null,
     ranker: String = null,
-    ranksep: Int | Double = null,
-    width: Int | Double = null
+    ranksep: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): GraphLabel = {
     val __obj = js.Dynamic.literal()
     if (acyclicer != null) __obj.updateDynamic("acyclicer")(acyclicer.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(compound)) __obj.updateDynamic("compound")(compound.asInstanceOf[js.Any])
-    if (edgesep != null) __obj.updateDynamic("edgesep")(edgesep.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (marginx != null) __obj.updateDynamic("marginx")(marginx.asInstanceOf[js.Any])
-    if (marginy != null) __obj.updateDynamic("marginy")(marginy.asInstanceOf[js.Any])
-    if (nodesep != null) __obj.updateDynamic("nodesep")(nodesep.asInstanceOf[js.Any])
+    if (!js.isUndefined(compound)) __obj.updateDynamic("compound")(compound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgesep)) __obj.updateDynamic("edgesep")(edgesep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginx)) __obj.updateDynamic("marginx")(marginx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginy)) __obj.updateDynamic("marginy")(marginy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodesep)) __obj.updateDynamic("nodesep")(nodesep.get.asInstanceOf[js.Any])
     if (rankdir != null) __obj.updateDynamic("rankdir")(rankdir.asInstanceOf[js.Any])
     if (ranker != null) __obj.updateDynamic("ranker")(ranker.asInstanceOf[js.Any])
-    if (ranksep != null) __obj.updateDynamic("ranksep")(ranksep.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(ranksep)) __obj.updateDynamic("ranksep")(ranksep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphLabel]
   }
 }

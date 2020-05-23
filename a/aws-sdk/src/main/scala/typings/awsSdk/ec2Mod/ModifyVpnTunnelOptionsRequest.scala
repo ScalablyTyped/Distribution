@@ -30,10 +30,10 @@ object ModifyVpnTunnelOptionsRequest {
     TunnelOptions: ModifyVpnTunnelOptionsSpecification,
     VpnConnectionId: VpnConnectionId,
     VpnTunnelOutsideIpAddress: String,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): ModifyVpnTunnelOptionsRequest = {
     val __obj = js.Dynamic.literal(TunnelOptions = TunnelOptions.asInstanceOf[js.Any], VpnConnectionId = VpnConnectionId.asInstanceOf[js.Any], VpnTunnelOutsideIpAddress = VpnTunnelOutsideIpAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpnTunnelOptionsRequest]
   }
 }

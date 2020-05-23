@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait FetchInfo extends js.Object {
   /**
-  	 * Total number of rows that match the current table filter/search properties.
-  	 */
+    * Total number of rows that match the current table filter/search properties.
+    */
   var dataTotalSize: Double
 }
 

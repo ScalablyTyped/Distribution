@@ -110,11 +110,11 @@ object AppointmentSettings {
   ): AppointmentSettings = {
     val __obj = js.Dynamic.literal()
     if (allDay != null) __obj.updateDynamic("allDay")(allDay.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyTimeOffset)) __obj.updateDynamic("applyTimeOffset")(applyTimeOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyTimeOffset)) __obj.updateDynamic("applyTimeOffset")(applyTimeOffset.get.asInstanceOf[js.Any])
     if (categorize != null) __obj.updateDynamic("categorize")(categorize.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(editFutureEventsOnly)) __obj.updateDynamic("editFutureEventsOnly")(editFutureEventsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(editFutureEventsOnly)) __obj.updateDynamic("editFutureEventsOnly")(editFutureEventsOnly.get.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (endTimeZone != null) __obj.updateDynamic("endTimeZone")(endTimeZone.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

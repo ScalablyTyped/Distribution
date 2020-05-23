@@ -11,7 +11,7 @@ trait ISpinButtonStyles extends js.Object {
     */
   var arrowButtonsContainer: IStyle
   /**
-    * Style override for the arrowButtonsContainer when spin button is disabled.
+    * Style override for the arrowButtonsContainer when control is disabled.
     */
   var arrowButtonsContainerDisabled: IStyle
   /**
@@ -19,7 +19,7 @@ trait ISpinButtonStyles extends js.Object {
     */
   var icon: IStyle
   /**
-    * Style for the icon.
+    * Style for the icon when the control is disabled.
     */
   var iconDisabled: IStyle
   /**
@@ -27,7 +27,7 @@ trait ISpinButtonStyles extends js.Object {
     */
   var input: IStyle
   /**
-    * Style override when spinButton is disabled.
+    * Style override when control is disabled.
     */
   var inputDisabled: IStyle
   /**
@@ -35,17 +35,16 @@ trait ISpinButtonStyles extends js.Object {
     */
   var inputTextSelected: IStyle
   /**
-    * Style for the label text
+    * Style for the label text.
     */
   var label: IStyle
   /**
-    * Style for the label text
+    * Style for the label text when the control is disabled.
     * @deprecated Disabled styles taken care by `Label` component.
     */
   var labelDisabled: IStyle
   /**
-    * Style for the label wrapper element of the component.
-    * The label wrapper contains the icon and the label.
+    * Style for the label wrapper element, which contains the icon and label.
     */
   var labelWrapper: IStyle
   /**
@@ -65,23 +64,23 @@ trait ISpinButtonStyles extends js.Object {
     */
   var labelWrapperTop: IStyle
   /**
-    * Styles for the root of the spin button component.
+    * Styles for the root of the component.
     */
   var root: IStyle
   /**
-    * Style for spinButtonWrapper when enabled.
+    * Style for the wrapper element of the input field and arrow buttons.
     */
   var spinButtonWrapper: IStyle
   /**
-    * Style override when spinButton is disabled.
+    * Style override when control is disabled.
     */
   var spinButtonWrapperDisabled: IStyle
   /**
-    * Style override when spinButton is enabled/focused.
+    * Style override when SpinButton is enabled/focused.
     */
   var spinButtonWrapperFocused: IStyle
   /**
-    * Style override when spinButton is enabled/hovered.
+    * Style override when control is enabled/hovered.
     */
   var spinButtonWrapperHovered: IStyle
   /**
@@ -93,48 +92,48 @@ trait ISpinButtonStyles extends js.Object {
 object ISpinButtonStyles {
   @scala.inline
   def apply(
-    arrowButtonsContainer: IStyle = null,
-    arrowButtonsContainerDisabled: IStyle = null,
-    icon: IStyle = null,
-    iconDisabled: IStyle = null,
-    input: IStyle = null,
-    inputDisabled: IStyle = null,
-    inputTextSelected: IStyle = null,
-    label: IStyle = null,
-    labelDisabled: IStyle = null,
-    labelWrapper: IStyle = null,
-    labelWrapperBottom: IStyle = null,
-    labelWrapperEnd: IStyle = null,
-    labelWrapperStart: IStyle = null,
-    labelWrapperTop: IStyle = null,
-    root: IStyle = null,
-    spinButtonWrapper: IStyle = null,
-    spinButtonWrapperDisabled: IStyle = null,
-    spinButtonWrapperFocused: IStyle = null,
-    spinButtonWrapperHovered: IStyle = null,
-    spinButtonWrapperTopBottom: IStyle = null
+    arrowButtonsContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    arrowButtonsContainerDisabled: js.UndefOr[Null | IStyle] = js.undefined,
+    icon: js.UndefOr[Null | IStyle] = js.undefined,
+    iconDisabled: js.UndefOr[Null | IStyle] = js.undefined,
+    input: js.UndefOr[Null | IStyle] = js.undefined,
+    inputDisabled: js.UndefOr[Null | IStyle] = js.undefined,
+    inputTextSelected: js.UndefOr[Null | IStyle] = js.undefined,
+    label: js.UndefOr[Null | IStyle] = js.undefined,
+    labelDisabled: js.UndefOr[Null | IStyle] = js.undefined,
+    labelWrapper: js.UndefOr[Null | IStyle] = js.undefined,
+    labelWrapperBottom: js.UndefOr[Null | IStyle] = js.undefined,
+    labelWrapperEnd: js.UndefOr[Null | IStyle] = js.undefined,
+    labelWrapperStart: js.UndefOr[Null | IStyle] = js.undefined,
+    labelWrapperTop: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    spinButtonWrapper: js.UndefOr[Null | IStyle] = js.undefined,
+    spinButtonWrapperDisabled: js.UndefOr[Null | IStyle] = js.undefined,
+    spinButtonWrapperFocused: js.UndefOr[Null | IStyle] = js.undefined,
+    spinButtonWrapperHovered: js.UndefOr[Null | IStyle] = js.undefined,
+    spinButtonWrapperTopBottom: js.UndefOr[Null | IStyle] = js.undefined
   ): ISpinButtonStyles = {
     val __obj = js.Dynamic.literal()
-    if (arrowButtonsContainer != null) __obj.updateDynamic("arrowButtonsContainer")(arrowButtonsContainer.asInstanceOf[js.Any])
-    if (arrowButtonsContainerDisabled != null) __obj.updateDynamic("arrowButtonsContainerDisabled")(arrowButtonsContainerDisabled.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconDisabled != null) __obj.updateDynamic("iconDisabled")(iconDisabled.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (inputDisabled != null) __obj.updateDynamic("inputDisabled")(inputDisabled.asInstanceOf[js.Any])
-    if (inputTextSelected != null) __obj.updateDynamic("inputTextSelected")(inputTextSelected.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelDisabled != null) __obj.updateDynamic("labelDisabled")(labelDisabled.asInstanceOf[js.Any])
-    if (labelWrapper != null) __obj.updateDynamic("labelWrapper")(labelWrapper.asInstanceOf[js.Any])
-    if (labelWrapperBottom != null) __obj.updateDynamic("labelWrapperBottom")(labelWrapperBottom.asInstanceOf[js.Any])
-    if (labelWrapperEnd != null) __obj.updateDynamic("labelWrapperEnd")(labelWrapperEnd.asInstanceOf[js.Any])
-    if (labelWrapperStart != null) __obj.updateDynamic("labelWrapperStart")(labelWrapperStart.asInstanceOf[js.Any])
-    if (labelWrapperTop != null) __obj.updateDynamic("labelWrapperTop")(labelWrapperTop.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (spinButtonWrapper != null) __obj.updateDynamic("spinButtonWrapper")(spinButtonWrapper.asInstanceOf[js.Any])
-    if (spinButtonWrapperDisabled != null) __obj.updateDynamic("spinButtonWrapperDisabled")(spinButtonWrapperDisabled.asInstanceOf[js.Any])
-    if (spinButtonWrapperFocused != null) __obj.updateDynamic("spinButtonWrapperFocused")(spinButtonWrapperFocused.asInstanceOf[js.Any])
-    if (spinButtonWrapperHovered != null) __obj.updateDynamic("spinButtonWrapperHovered")(spinButtonWrapperHovered.asInstanceOf[js.Any])
-    if (spinButtonWrapperTopBottom != null) __obj.updateDynamic("spinButtonWrapperTopBottom")(spinButtonWrapperTopBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowButtonsContainer)) __obj.updateDynamic("arrowButtonsContainer")(arrowButtonsContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowButtonsContainerDisabled)) __obj.updateDynamic("arrowButtonsContainerDisabled")(arrowButtonsContainerDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconDisabled)) __obj.updateDynamic("iconDisabled")(iconDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputDisabled)) __obj.updateDynamic("inputDisabled")(inputDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputTextSelected)) __obj.updateDynamic("inputTextSelected")(inputTextSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelDisabled)) __obj.updateDynamic("labelDisabled")(labelDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelWrapper)) __obj.updateDynamic("labelWrapper")(labelWrapper.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelWrapperBottom)) __obj.updateDynamic("labelWrapperBottom")(labelWrapperBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelWrapperEnd)) __obj.updateDynamic("labelWrapperEnd")(labelWrapperEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelWrapperStart)) __obj.updateDynamic("labelWrapperStart")(labelWrapperStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelWrapperTop)) __obj.updateDynamic("labelWrapperTop")(labelWrapperTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinButtonWrapper)) __obj.updateDynamic("spinButtonWrapper")(spinButtonWrapper.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinButtonWrapperDisabled)) __obj.updateDynamic("spinButtonWrapperDisabled")(spinButtonWrapperDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinButtonWrapperFocused)) __obj.updateDynamic("spinButtonWrapperFocused")(spinButtonWrapperFocused.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinButtonWrapperHovered)) __obj.updateDynamic("spinButtonWrapperHovered")(spinButtonWrapperHovered.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinButtonWrapperTopBottom)) __obj.updateDynamic("spinButtonWrapperTopBottom")(spinButtonWrapperTopBottom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpinButtonStyles]
   }
 }

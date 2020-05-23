@@ -1,5 +1,6 @@
 package typings.reactRelay
 
+import typings.reactRelay.anon.NetworkCacheConfig
 import typings.relayRuntime.mod.Observable
 import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
@@ -24,7 +25,7 @@ object fetchQueryMod extends js.Object {
     environment: Environment,
     query: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
-    options: AnonNetworkCacheConfig
+    options: NetworkCacheConfig
   ): Observable[
     /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native

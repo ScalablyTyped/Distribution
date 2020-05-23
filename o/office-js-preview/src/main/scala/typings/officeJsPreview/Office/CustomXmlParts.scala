@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents a collection of CustomXmlPart objects.
-  * 
+  *
   * @remarks
-  * 
+  *
   * **Hosts**: Word
   */
 @js.native
 trait CustomXmlParts extends js.Object {
   /**
     * Asynchronously adds a new custom XML part to a file.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xml The XML to add to the newly created custom XML part.
@@ -35,9 +35,9 @@ trait CustomXmlParts extends js.Object {
   ): Unit = js.native
   /**
     * Asynchronously gets the specified custom XML part by its id.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param id The GUID of the custom XML part, including opening and closing braces.
@@ -56,9 +56,9 @@ trait CustomXmlParts extends js.Object {
   ): Unit = js.native
   /**
     * Asynchronously gets the specified custom XML part(s) by its namespace.
-    * 
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param ns  The namespace URI.

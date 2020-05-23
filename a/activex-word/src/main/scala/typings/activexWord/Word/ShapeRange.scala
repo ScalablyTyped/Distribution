@@ -15,9 +15,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.ShapeRange")
 @js.native
-class ShapeRange protected () extends js.Object {
+trait ShapeRange extends js.Object {
   val Adjustments: typings.activexWord.Word.Adjustments = js.native
   var AlternativeText: String = js.native
   val Anchor: Range = js.native

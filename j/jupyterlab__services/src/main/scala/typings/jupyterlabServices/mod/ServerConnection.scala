@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.mod
 
-import typings.jupyterlabServices.PartialISettings
+import typings.jupyterlabServices.anon.PartialISettings
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.std.RequestInit
 import typings.std.Response

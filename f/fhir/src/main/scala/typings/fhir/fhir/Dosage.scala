@@ -124,7 +124,7 @@ object Dosage {
     rateRange: Range = null,
     rateRatio: Ratio = null,
     route: CodeableConcept = null,
-    sequence: Int | Double = null,
+    sequence: js.UndefOr[integer] = js.undefined,
     site: CodeableConcept = null,
     text: String = null,
     timing: Timing = null
@@ -137,7 +137,7 @@ object Dosage {
     if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence.asInstanceOf[js.Any])
     if (_text != null) __obj.updateDynamic("_text")(_text.asInstanceOf[js.Any])
     if (additionalInstruction != null) __obj.updateDynamic("additionalInstruction")(additionalInstruction.asInstanceOf[js.Any])
-    if (!js.isUndefined(asNeededBoolean)) __obj.updateDynamic("asNeededBoolean")(asNeededBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(asNeededBoolean)) __obj.updateDynamic("asNeededBoolean")(asNeededBoolean.get.asInstanceOf[js.Any])
     if (asNeededCodeableConcept != null) __obj.updateDynamic("asNeededCodeableConcept")(asNeededCodeableConcept.asInstanceOf[js.Any])
     if (doseQuantity != null) __obj.updateDynamic("doseQuantity")(doseQuantity.asInstanceOf[js.Any])
     if (doseRange != null) __obj.updateDynamic("doseRange")(doseRange.asInstanceOf[js.Any])
@@ -153,7 +153,7 @@ object Dosage {
     if (rateRange != null) __obj.updateDynamic("rateRange")(rateRange.asInstanceOf[js.Any])
     if (rateRatio != null) __obj.updateDynamic("rateRatio")(rateRatio.asInstanceOf[js.Any])
     if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequence)) __obj.updateDynamic("sequence")(sequence.get.asInstanceOf[js.Any])
     if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])

@@ -28,14 +28,14 @@ object CmafPackage {
   def apply(
     Encryption: CmafEncryption = null,
     HlsManifests: listOfHlsManifest = null,
-    SegmentDurationSeconds: Int | Double = null,
+    SegmentDurationSeconds: js.UndefOr[integer] = js.undefined,
     SegmentPrefix: string = null,
     StreamSelection: StreamSelection = null
   ): CmafPackage = {
     val __obj = js.Dynamic.literal()
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
     if (HlsManifests != null) __obj.updateDynamic("HlsManifests")(HlsManifests.asInstanceOf[js.Any])
-    if (SegmentDurationSeconds != null) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.get.asInstanceOf[js.Any])
     if (SegmentPrefix != null) __obj.updateDynamic("SegmentPrefix")(SegmentPrefix.asInstanceOf[js.Any])
     if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmafPackage]

@@ -12,7 +12,7 @@ trait RequestParams
 
 object RequestParams {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, base: String = null): RequestParams = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, base: String = null): RequestParams = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])

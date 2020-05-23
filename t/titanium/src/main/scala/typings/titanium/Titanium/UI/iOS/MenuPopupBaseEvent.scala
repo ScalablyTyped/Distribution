@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Base event for class Titanium.UI.iOS.MenuPopup
-			 */
+  * Base event for class Titanium.UI.iOS.MenuPopup
+  */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ti.Event * / any */ trait MenuPopupBaseEvent extends js.Object {
   /**
-  				 * Source object that fired the event.
-  				 */
+    * Source object that fired the event.
+    */
   var source: MenuPopup
 }
 

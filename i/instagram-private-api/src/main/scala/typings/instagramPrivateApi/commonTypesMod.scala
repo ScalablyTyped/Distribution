@@ -2,13 +2,14 @@ package typings.instagramPrivateApi
 
 import typings.caseless.mod.Caseless
 import typings.instagramPrivateApi.instagramPrivateApiStrings.close
+import typings.node.BufferEncoding
 import typings.node.NodeJS.Dict
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.netMod.Socket
-import typings.request.AnonConnect
-import typings.request.AnonDns
+import typings.request.anon.Connect
+import typings.request.anon.Dns
 import typings.request.mod.Request
 import typings.request.mod.ResponseAsJSON
 import typings.std.Error
@@ -39,16 +40,17 @@ object commonTypesMod extends js.Object {
     var connection: Socket = js.native
     @JSName("constructor")
     var constructor_Original: js.Function1[/* socket */ Socket, js.Any] = js.native
-    var defaultMaxListeners: js.Any = js.native
+    var defaultMaxListeners: js.UndefOr[js.Any] = js.native
     @JSName("destroy")
     var destroy_Original: js.Function0[Unit] = js.native
     var destroyed: Boolean = js.native
     var elapsedTime: js.UndefOr[Double] = js.native
     @JSName("emit")
     var emit_Original: js.Function1[close, Boolean] = js.native
+    var errorMonitor: js.UndefOr[js.Any] = js.native
     @JSName("eventNames")
     var eventNames_Original: js.Function0[js.Array[String | js.Symbol]] = js.native
-    var from: js.Any = js.native
+    var from: js.UndefOr[js.Any] = js.native
     @JSName("getMaxListeners")
     var getMaxListeners_Original: js.Function0[Double] = js.native
     var headers: IncomingHttpHeaders = js.native
@@ -100,7 +102,7 @@ object commonTypesMod extends js.Object {
     @JSName("resume")
     var resume_Original: js.Function0[this.type] = js.native
     @JSName("setEncoding")
-    var setEncoding_Original: js.Function1[/* encoding */ String, this.type] = js.native
+    var setEncoding_Original: js.Function1[/* encoding */ BufferEncoding, this.type] = js.native
     @JSName("setMaxListeners")
     var setMaxListeners_Original: js.Function1[/* n */ Double, this.type] = js.native
     @JSName("setTimeout")
@@ -108,9 +110,9 @@ object commonTypesMod extends js.Object {
     var socket: Socket = js.native
     var statusCode: Double = js.native
     var statusMessage: String = js.native
-    var timingPhases: js.UndefOr[AnonDns] = js.native
+    var timingPhases: js.UndefOr[Dns] = js.native
     var timingStart: js.UndefOr[Double] = js.native
-    var timings: js.UndefOr[AnonConnect] = js.native
+    var timings: js.UndefOr[Connect] = js.native
     @JSName("toJSON")
     var toJSON_Original: js.Function0[ResponseAsJSON] = js.native
     var trailers: Dict[String] = js.native
@@ -151,7 +153,7 @@ object commonTypesMod extends js.Object {
     @JSName("removeListener")
     def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     def resume(): this.type = js.native
-    def setEncoding(encoding: String): this.type = js.native
+    def setEncoding(encoding: BufferEncoding): this.type = js.native
     def setMaxListeners(n: Double): this.type = js.native
     def setTimeout(msecs: Double): this.type = js.native
     def toJSON(): ResponseAsJSON = js.native

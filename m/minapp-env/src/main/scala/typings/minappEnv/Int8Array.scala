@@ -1,7 +1,6 @@
 package typings.minappEnv
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -325,8 +324,4 @@ trait Int8Array extends /* index */ NumberDictionary[Double] {
     */
   def values(): IterableIterator[Double] = js.native
 }
-
-@JSGlobal("Int8Array")
-@js.native
-object Int8Array extends TopLevel[Int8ArrayConstructor]
 

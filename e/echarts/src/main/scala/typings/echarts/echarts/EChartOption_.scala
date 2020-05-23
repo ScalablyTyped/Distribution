@@ -448,11 +448,11 @@ object EChartOption_ {
     animation: js.UndefOr[Boolean] = js.undefined,
     animationDelay: Double | js.Function = null,
     animationDelayUpdate: Double | js.Function = null,
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationDurationUpdate: Double | js.Function = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: Int | Double = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
     aria: js.Object = null,
     axisPointer: AxisPointer = null,
     backgroundColor: String = null,
@@ -465,13 +465,13 @@ object EChartOption_ {
     geo: js.Object = null,
     graphic: js.Object | js.Array[js.Object] = null,
     grid: Grid | js.Array[Grid] = null,
-    hoverLayerThreshold: Int | Double = null,
+    hoverLayerThreshold: js.UndefOr[Double] = js.undefined,
     legend: Legend = null,
     parallel: js.Object = null,
     parallelAxis: js.Object = null,
     polar: js.Object = null,
-    progressive: Int | Double = null,
-    progressiveThreshold: Int | Double = null,
+    progressive: js.UndefOr[Double] = js.undefined,
+    progressiveThreshold: js.UndefOr[Double] = js.undefined,
     radar: js.Object = null,
     radiusAxis: js.Object = null,
     series: js.Array[TSeries] = null,
@@ -488,14 +488,14 @@ object EChartOption_ {
   ): EChartOption_[TSeries] = {
     val __obj = js.Dynamic.literal()
     if (angleAxis != null) __obj.updateDynamic("angleAxis")(angleAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
     if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
     if (axisPointer != null) __obj.updateDynamic("axisPointer")(axisPointer.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
@@ -508,13 +508,13 @@ object EChartOption_ {
     if (geo != null) __obj.updateDynamic("geo")(geo.asInstanceOf[js.Any])
     if (graphic != null) __obj.updateDynamic("graphic")(graphic.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (hoverLayerThreshold != null) __obj.updateDynamic("hoverLayerThreshold")(hoverLayerThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverLayerThreshold)) __obj.updateDynamic("hoverLayerThreshold")(hoverLayerThreshold.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
     if (parallelAxis != null) __obj.updateDynamic("parallelAxis")(parallelAxis.asInstanceOf[js.Any])
     if (polar != null) __obj.updateDynamic("polar")(polar.asInstanceOf[js.Any])
-    if (progressive != null) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
-    if (progressiveThreshold != null) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressiveThreshold)) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.get.asInstanceOf[js.Any])
     if (radar != null) __obj.updateDynamic("radar")(radar.asInstanceOf[js.Any])
     if (radiusAxis != null) __obj.updateDynamic("radiusAxis")(radiusAxis.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
@@ -524,7 +524,7 @@ object EChartOption_ {
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (toolbox != null) __obj.updateDynamic("toolbox")(toolbox.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC.get.asInstanceOf[js.Any])
     if (visualMap != null) __obj.updateDynamic("visualMap")(visualMap.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])

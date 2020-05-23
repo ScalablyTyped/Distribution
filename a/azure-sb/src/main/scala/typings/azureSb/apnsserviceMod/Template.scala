@@ -20,7 +20,7 @@ object Template {
   def apply(
     alert: String = null,
     aps: js.Object = null,
-    badge: Int | Double = null,
+    badge: js.UndefOr[Double] = js.undefined,
     expiry: Date = null,
     payload: js.Object = null,
     sound: String = null
@@ -28,7 +28,7 @@ object Template {
     val __obj = js.Dynamic.literal()
     if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
     if (aps != null) __obj.updateDynamic("aps")(aps.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
     if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])

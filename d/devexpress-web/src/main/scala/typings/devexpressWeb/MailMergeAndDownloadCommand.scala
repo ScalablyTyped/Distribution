@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to start the mail merge process and download the resulting document containing the merged information.
   */
-@JSGlobal("MailMergeAndDownloadCommand")
 @js.native
-class MailMergeAndDownloadCommand () extends js.Object {
+trait MailMergeAndDownloadCommand extends js.Object {
   /**
     * Executes the MailMergeAndDownloadCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param fileExtension A string value specifying the file extension of the resulting document.

@@ -4,16 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gsap.SlowMo")
-@js.native
-class SlowMo () extends Ease {
-  def config(linearRatio: Double, power: Double, yoyoMode: Boolean): SlowMo = js.native
+trait SlowMo extends Ease {
+  def config(linearRatio: Double, power: Double, yoyoMode: Boolean): SlowMo
 }
 
-/* static members */
-@JSGlobal("gsap.SlowMo")
-@js.native
-object SlowMo extends js.Object {
-  var ease: SlowMo = js.native
+object SlowMo {
+  @scala.inline
+  def apply(config: (Double, Double, Boolean) => SlowMo, getRatio: Double => Double): SlowMo = {
+    val __obj = js.Dynamic.literal(config = js.Any.fromFunction3(config), getRatio = js.Any.fromFunction1(getRatio))
+    __obj.asInstanceOf[SlowMo]
+  }
 }
 

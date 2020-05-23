@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the service has been published (or errored).
-		 */
+  * Fired when the service has been published (or errored).
+  */
 trait BonjourServicePublishEvent extends BonjourServiceBaseEvent {
   /**
-  			 * Error code
-  			 */
+    * Error code
+    */
   var code: Double
   /**
-  			 * Error message
-  			 */
+    * Error message
+    */
   var error: String
   /**
-  			 * Reports if the publish operation was successful
-  			 */
+    * Reports if the publish operation was successful
+    */
   var success: Boolean
 }
 

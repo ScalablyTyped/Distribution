@@ -36,15 +36,15 @@ object DescribeLogStreamsRequest {
   @scala.inline
   def apply(
     logGroupName: LogGroupName,
-    descending: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
+    descending: js.UndefOr[Descending] = js.undefined,
+    limit: js.UndefOr[DescribeLimit] = js.undefined,
     logStreamNamePrefix: LogStreamName = null,
     nextToken: NextToken = null,
     orderBy: OrderBy = null
   ): DescribeLogStreamsRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (logStreamNamePrefix != null) __obj.updateDynamic("logStreamNamePrefix")(logStreamNamePrefix.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])

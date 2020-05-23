@@ -40,7 +40,7 @@ object ApplicationInfo {
     computePlatform: ComputePlatform = null,
     createTime: Timestamp = null,
     gitHubAccountName: GitHubAccountTokenName = null,
-    linkedToGitHub: js.UndefOr[scala.Boolean] = js.undefined
+    linkedToGitHub: js.UndefOr[Boolean] = js.undefined
   ): ApplicationInfo = {
     val __obj = js.Dynamic.literal()
     if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
@@ -48,7 +48,7 @@ object ApplicationInfo {
     if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
     if (gitHubAccountName != null) __obj.updateDynamic("gitHubAccountName")(gitHubAccountName.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkedToGitHub)) __obj.updateDynamic("linkedToGitHub")(linkedToGitHub.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkedToGitHub)) __obj.updateDynamic("linkedToGitHub")(linkedToGitHub.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationInfo]
   }
 }

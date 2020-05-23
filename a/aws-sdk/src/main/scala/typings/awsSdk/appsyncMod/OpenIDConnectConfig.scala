@@ -26,11 +26,16 @@ trait OpenIDConnectConfig extends js.Object {
 
 object OpenIDConnectConfig {
   @scala.inline
-  def apply(issuer: String, authTTL: Int | Double = null, clientId: String = null, iatTTL: Int | Double = null): OpenIDConnectConfig = {
+  def apply(
+    issuer: String,
+    authTTL: js.UndefOr[Long] = js.undefined,
+    clientId: String = null,
+    iatTTL: js.UndefOr[Long] = js.undefined
+  ): OpenIDConnectConfig = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
-    if (authTTL != null) __obj.updateDynamic("authTTL")(authTTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(authTTL)) __obj.updateDynamic("authTTL")(authTTL.get.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (iatTTL != null) __obj.updateDynamic("iatTTL")(iatTTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(iatTTL)) __obj.updateDynamic("iatTTL")(iatTTL.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenIDConnectConfig]
   }
 }

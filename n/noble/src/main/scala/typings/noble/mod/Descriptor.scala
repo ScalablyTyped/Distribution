@@ -19,6 +19,11 @@ class Descriptor () extends EventEmitter {
   def on_valueRead(event: valueRead, listener: js.Function2[/* error */ String, /* data */ Buffer, Unit]): this.type = js.native
   @JSName("on")
   def on_valueWrite(event: valueWrite, listener: js.Function1[/* error */ String, Unit]): this.type = js.native
+  def once(event: String, listener: js.Function): this.type = js.native
+  @JSName("once")
+  def once_valueRead(event: valueRead, listener: js.Function2[/* error */ String, /* data */ Buffer, Unit]): this.type = js.native
+  @JSName("once")
+  def once_valueWrite(event: valueWrite, listener: js.Function1[/* error */ String, Unit]): this.type = js.native
   def readValue(): Unit = js.native
   def readValue(callback: js.Function2[/* error */ String, /* data */ Buffer, Unit]): Unit = js.native
   def writeValue(data: Buffer): Unit = js.native

@@ -41,7 +41,7 @@ object IRelation {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], relatedModel = relatedModel.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (collectionType != null) __obj.updateDynamic("collectionType")(collectionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTransient)) __obj.updateDynamic("isTransient")(isTransient.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTransient)) __obj.updateDynamic("isTransient")(isTransient.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (remoteKey != null) __obj.updateDynamic("remoteKey")(remoteKey.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])

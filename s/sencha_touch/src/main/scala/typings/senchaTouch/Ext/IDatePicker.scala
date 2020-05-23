@@ -9,85 +9,85 @@ trait IDatePicker
   /** [Config Option] (String) */
   var dayText: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Returns the value of dayText
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDayText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of monthText
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getMonthText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of slotOrder
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getSlotOrder: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of yearFrom
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getYearFrom: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of yearText
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getYearText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Returns the value of yearTo
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getYearTo: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (String) */
   var monthText: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Sets the value of dayText
-  		* @param dayText String The new value.
-  		*/
+    * @param dayText String The new value.
+    */
   var setDayText: js.UndefOr[js.Function1[/* dayText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of monthText
-  		* @param monthText String The new value.
-  		*/
+    * @param monthText String The new value.
+    */
   var setMonthText: js.UndefOr[js.Function1[/* monthText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of slotOrder
-  		* @param slotOrder Array The new value.
-  		*/
+    * @param slotOrder Array The new value.
+    */
   var setSlotOrder: js.UndefOr[js.Function1[/* slotOrder */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the values of the pickers slots
-  		* @param value Object
-  		* @param animated Object
-  		* @returns Ext.Picker this This picker.
-  		*/
+    * @param value Object
+    * @param animated Object
+    * @returns Ext.Picker this This picker.
+    */
   @JSName("setValue")
   var setValue_IDatePicker: js.UndefOr[
     js.Function2[/* value */ js.UndefOr[js.Any], /* animated */ js.UndefOr[js.Any], IPicker]
   ] = js.undefined
   /** [Method] Sets the value of yearFrom
-  		* @param yearFrom Number The new value.
-  		*/
+    * @param yearFrom Number The new value.
+    */
   var setYearFrom: js.UndefOr[js.Function1[/* yearFrom */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of yearText
-  		* @param yearText String The new value.
-  		*/
+    * @param yearText String The new value.
+    */
   var setYearText: js.UndefOr[js.Function1[/* yearText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the value of yearTo
-  		* @param yearTo Number The new value.
-  		*/
+    * @param yearTo Number The new value.
+    */
   var setYearTo: js.UndefOr[js.Function1[/* yearTo */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Config Option] (Array) */
   var slotOrder: js.UndefOr[Array] = js.undefined
   /** [Method] Updates the dayText configuration
-  		* @param newDayText Object
-  		* @param oldDayText Object
-  		*/
+    * @param newDayText Object
+    * @param oldDayText Object
+    */
   var updateDayText: js.UndefOr[
     js.Function2[/* newDayText */ js.UndefOr[js.Any], /* oldDayText */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Updates the monthText configuration
-  		* @param newMonthText Object
-  		* @param oldMonthText Object
-  		*/
+    * @param newMonthText Object
+    * @param oldMonthText Object
+    */
   var updateMonthText: js.UndefOr[
     js.Function2[/* newMonthText */ js.UndefOr[js.Any], /* oldMonthText */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Updates the yearFrom configuration */
   var updateYearFrom: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Updates the yearText configuration
-  		* @param yearText Object
-  		*/
+    * @param yearText Object
+    */
   var updateYearText: js.UndefOr[js.Function1[/* yearText */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Updates the yearTo configuration */
   var updateYearTo: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -124,9 +124,9 @@ object IDatePicker {
     updateYearFrom: () => Unit = null,
     updateYearText: /* yearText */ js.UndefOr[js.Any] => Unit = null,
     updateYearTo: () => Unit = null,
-    yearFrom: Int | Double = null,
+    yearFrom: js.UndefOr[Double] = js.undefined,
     yearText: java.lang.String = null,
-    yearTo: Int | Double = null
+    yearTo: js.UndefOr[Double] = js.undefined
   ): IDatePicker = {
     val __obj = js.Dynamic.literal()
     if (IPicker != null) js.Dynamic.global.Object.assign(__obj, IPicker)
@@ -151,9 +151,9 @@ object IDatePicker {
     if (updateYearFrom != null) __obj.updateDynamic("updateYearFrom")(js.Any.fromFunction0(updateYearFrom))
     if (updateYearText != null) __obj.updateDynamic("updateYearText")(js.Any.fromFunction1(updateYearText))
     if (updateYearTo != null) __obj.updateDynamic("updateYearTo")(js.Any.fromFunction0(updateYearTo))
-    if (yearFrom != null) __obj.updateDynamic("yearFrom")(yearFrom.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearFrom)) __obj.updateDynamic("yearFrom")(yearFrom.get.asInstanceOf[js.Any])
     if (yearText != null) __obj.updateDynamic("yearText")(yearText.asInstanceOf[js.Any])
-    if (yearTo != null) __obj.updateDynamic("yearTo")(yearTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(yearTo)) __obj.updateDynamic("yearTo")(yearTo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePicker]
   }
 }

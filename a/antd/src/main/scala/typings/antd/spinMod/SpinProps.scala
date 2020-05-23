@@ -21,7 +21,7 @@ object SpinProps {
   @scala.inline
   def apply(
     className: String = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     indicator: SpinIndicator = null,
     prefixCls: String = null,
     size: SpinSize = null,
@@ -32,11 +32,11 @@ object SpinProps {
   ): SpinProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(spinning)) __obj.updateDynamic("spinning")(spinning.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinning)) __obj.updateDynamic("spinning")(spinning.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tip != null) __obj.updateDynamic("tip")(tip.asInstanceOf[js.Any])
     if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName.asInstanceOf[js.Any])

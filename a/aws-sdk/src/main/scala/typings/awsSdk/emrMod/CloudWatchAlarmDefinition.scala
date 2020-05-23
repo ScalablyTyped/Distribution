@@ -52,14 +52,14 @@ object CloudWatchAlarmDefinition {
     Period: Integer,
     Threshold: NonNegativeDouble,
     Dimensions: MetricDimensionList = null,
-    EvaluationPeriods: Int | Double = null,
+    EvaluationPeriods: js.UndefOr[Integer] = js.undefined,
     Namespace: String = null,
     Statistic: Statistic = null,
     Unit: Unit = null
   ): CloudWatchAlarmDefinition = {
     val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], MetricName = MetricName.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], Threshold = Threshold.asInstanceOf[js.Any])
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (EvaluationPeriods != null) __obj.updateDynamic("EvaluationPeriods")(EvaluationPeriods.asInstanceOf[js.Any])
+    if (!js.isUndefined(EvaluationPeriods)) __obj.updateDynamic("EvaluationPeriods")(EvaluationPeriods.get.asInstanceOf[js.Any])
     if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
     if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])

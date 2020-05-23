@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 
 trait IDirectProxy extends IServer {
   /** [Method] Generates a url based on a given Ext data Request object
-  		* @returns String The url
-  		*/
+    * @returns String The url
+    */
   @JSName("buildUrl")
   var buildUrl_IDirectProxy: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (Function/String) */
   var directFn: js.UndefOr[js.Any] = js.undefined
   /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
-  		* @param operation Object
-  		* @param callback Object
-  		* @param scope Object
-  		*/
+    * @param operation Object
+    * @param callback Object
+    * @param scope Object
+    */
   @JSName("doRequest")
   var doRequest_IDirectProxy: js.UndefOr[
     js.Function3[
@@ -31,32 +31,32 @@ trait IDirectProxy extends IServer {
     ]
   ] = js.undefined
   /** [Method] Returns the value of directFn
-  		* @returns Function/String
-  		*/
+    * @returns Function/String
+    */
   var getDirectFn: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of paramOrder
-  		* @returns String/String[]
-  		*/
+    * @returns String/String[]
+    */
   var getParamOrder: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of paramsAsHash
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getParamsAsHash: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (String/String[]) */
   var paramOrder: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
   var paramsAsHash: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the value of directFn
-  		* @param directFn Function/String The new value.
-  		*/
+    * @param directFn Function/String The new value.
+    */
   var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of paramOrder
-  		* @param paramOrder String/String[] The new value.
-  		*/
+    * @param paramOrder String/String[] The new value.
+    */
   var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of paramsAsHash
-  		* @param paramsAsHash Boolean The new value.
-  		*/
+    * @param paramsAsHash Boolean The new value.
+    */
   var setParamsAsHash: js.UndefOr[js.Function1[/* paramsAsHash */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 
@@ -184,7 +184,7 @@ object IDirectProxy {
     startParam: String = null,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -204,7 +204,7 @@ object IDirectProxy {
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(js.Any.fromFunction1(batch))
-    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.get.asInstanceOf[js.Any])
     if (batchOrder != null) __obj.updateDynamic("batchOrder")(batchOrder.asInstanceOf[js.Any])
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (buildRequest != null) __obj.updateDynamic("buildRequest")(js.Any.fromFunction1(buildRequest))
@@ -221,7 +221,7 @@ object IDirectProxy {
     if (directionParam != null) __obj.updateDynamic("directionParam")(directionParam.asInstanceOf[js.Any])
     if (doRequest != null) __obj.updateDynamic("doRequest")(js.Any.fromFunction3(doRequest))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (!js.isUndefined(enablePagingParams)) __obj.updateDynamic("enablePagingParams")(enablePagingParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePagingParams)) __obj.updateDynamic("enablePagingParams")(enablePagingParams.get.asInstanceOf[js.Any])
     if (encodeFilters != null) __obj.updateDynamic("encodeFilters")(js.Any.fromFunction1(encodeFilters))
     if (encodeSorters != null) __obj.updateDynamic("encodeSorters")(js.Any.fromFunction1(encodeSorters))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -265,13 +265,13 @@ object IDirectProxy {
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
     if (pageParam != null) __obj.updateDynamic("pageParam")(pageParam.asInstanceOf[js.Any])
     if (paramOrder != null) __obj.updateDynamic("paramOrder")(paramOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash.get.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (processResponse != null) __obj.updateDynamic("processResponse")(js.Any.fromFunction6(processResponse))
     if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction0(read))
@@ -309,13 +309,13 @@ object IDirectProxy {
     if (setTimeout != null) __obj.updateDynamic("setTimeout")(js.Any.fromFunction1(setTimeout))
     if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
     if (setWriter != null) __obj.updateDynamic("setWriter")(js.Any.fromFunction1(setWriter))
-    if (!js.isUndefined(simpleSortMode)) __obj.updateDynamic("simpleSortMode")(simpleSortMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(simpleSortMode)) __obj.updateDynamic("simpleSortMode")(simpleSortMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sortParam != null) __obj.updateDynamic("sortParam")(sortParam.asInstanceOf[js.Any])
     if (startParam != null) __obj.updateDynamic("startParam")(startParam.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

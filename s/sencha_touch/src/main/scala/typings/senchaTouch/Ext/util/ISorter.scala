@@ -11,28 +11,28 @@ trait ISorter extends IBase {
   /** [Config Option] (String) */
   var direction: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of direction
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of id
-  		* @returns Mixed
-  		*/
+    * @returns Mixed
+    */
   var getId: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of property
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of root
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getRoot: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of sorterFn
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getSorterFn: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of transform
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getTransform: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Mixed) */
   var id: js.UndefOr[js.Any] = js.undefined
@@ -41,28 +41,28 @@ trait ISorter extends IBase {
   /** [Config Option] (String) */
   var root: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of direction
-  		* @param direction String The new value.
-  		*/
+    * @param direction String The new value.
+    */
   var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of id
-  		* @param id Mixed The new value.
-  		*/
+    * @param id Mixed The new value.
+    */
   var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of property
-  		* @param property String The new value.
-  		*/
+    * @param property String The new value.
+    */
   var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of root
-  		* @param root String The new value.
-  		*/
+    * @param root String The new value.
+    */
   var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of sorterFn
-  		* @param sorterFn Function The new value.
-  		*/
+    * @param sorterFn Function The new value.
+    */
   var setSorterFn: js.UndefOr[js.Function1[/* sorterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of transform
-  		* @param transform Function The new value.
-  		*/
+    * @param transform Function The new value.
+    */
   var setTransform: js.UndefOr[js.Function1[/* transform */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Function) */
   var sorterFn: js.UndefOr[js.Any] = js.undefined
@@ -143,7 +143,7 @@ object ISorter {
     if (setRoot != null) __obj.updateDynamic("setRoot")(js.Any.fromFunction1(setRoot))
     if (setSorterFn != null) __obj.updateDynamic("setSorterFn")(js.Any.fromFunction1(setSorterFn))
     if (setTransform != null) __obj.updateDynamic("setTransform")(js.Any.fromFunction1(setTransform))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sorterFn != null) __obj.updateDynamic("sorterFn")(sorterFn.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))

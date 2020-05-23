@@ -18,24 +18,24 @@ trait UnitMeasuresOptions extends js.Object {
 object UnitMeasuresOptions {
   @scala.inline
   def apply(
-    d: Int | Double = null,
-    h: Int | Double = null,
-    m: Int | Double = null,
-    mo: Int | Double = null,
-    ms: Int | Double = null,
-    s: Int | Double = null,
-    w: Int | Double = null,
-    y: Int | Double = null
+    d: js.UndefOr[Double] = js.undefined,
+    h: js.UndefOr[Double] = js.undefined,
+    m: js.UndefOr[Double] = js.undefined,
+    mo: js.UndefOr[Double] = js.undefined,
+    ms: js.UndefOr[Double] = js.undefined,
+    s: js.UndefOr[Double] = js.undefined,
+    w: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): UnitMeasuresOptions = {
     val __obj = js.Dynamic.literal()
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (mo != null) __obj.updateDynamic("mo")(mo.asInstanceOf[js.Any])
-    if (ms != null) __obj.updateDynamic("ms")(ms.asInstanceOf[js.Any])
-    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(d)) __obj.updateDynamic("d")(d.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(h)) __obj.updateDynamic("h")(h.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mo)) __obj.updateDynamic("mo")(mo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ms)) __obj.updateDynamic("ms")(ms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(s)) __obj.updateDynamic("s")(s.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(w)) __obj.updateDynamic("w")(w.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitMeasuresOptions]
   }
 }

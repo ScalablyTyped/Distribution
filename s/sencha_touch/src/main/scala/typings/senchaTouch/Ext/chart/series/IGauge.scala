@@ -15,72 +15,72 @@ trait IGauge extends ISeries {
   /** [Config Option] (String) */
   var field: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of angleField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getAngleField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of center
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getCenter: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of donut
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getDonut: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of field
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of maximum
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaximum: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of minimum
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinimum: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of needle
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getNeedle: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of needleLength
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getNeedleLength: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of needleLengthRatio
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getNeedleLengthRatio: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of needleWidth
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getNeedleWidth: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of radius
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getRadius: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of region
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getRegion: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of rotation
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getRotation: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of sectors
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getSectors: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of totalAngle
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getTotalAngle: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of value
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getValue: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of wholeDisk
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getWholeDisk: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (Number) */
   var maximum: js.UndefOr[Double] = js.undefined
@@ -97,72 +97,72 @@ trait IGauge extends ISeries {
   /** [Config Option] (Array) */
   var sectors: js.UndefOr[Array] = js.undefined
   /** [Method] Sets the value of angleField
-  		* @param angleField String The new value.
-  		*/
+    * @param angleField String The new value.
+    */
   var setAngleField: js.UndefOr[js.Function1[/* angleField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of center
-  		* @param center Array The new value.
-  		*/
+    * @param center Array The new value.
+    */
   var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of donut
-  		* @param donut Number The new value.
-  		*/
+    * @param donut Number The new value.
+    */
   var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of field
-  		* @param field String The new value.
-  		*/
+    * @param field String The new value.
+    */
   var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of maximum
-  		* @param maximum Number The new value.
-  		*/
+    * @param maximum Number The new value.
+    */
   var setMaximum: js.UndefOr[js.Function1[/* maximum */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of minimum
-  		* @param minimum Number The new value.
-  		*/
+    * @param minimum Number The new value.
+    */
   var setMinimum: js.UndefOr[js.Function1[/* minimum */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of needle
-  		* @param needle Boolean The new value.
-  		*/
+    * @param needle Boolean The new value.
+    */
   var setNeedle: js.UndefOr[js.Function1[/* needle */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of needleLength
-  		* @param needleLength Number The new value.
-  		*/
+    * @param needleLength Number The new value.
+    */
   var setNeedleLength: js.UndefOr[js.Function1[/* needleLength */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of needleLengthRatio
-  		* @param needleLengthRatio Number The new value.
-  		*/
+    * @param needleLengthRatio Number The new value.
+    */
   var setNeedleLengthRatio: js.UndefOr[js.Function1[/* needleLengthRatio */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of needleWidth
-  		* @param needleWidth Number The new value.
-  		*/
+    * @param needleWidth Number The new value.
+    */
   var setNeedleWidth: js.UndefOr[js.Function1[/* needleWidth */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of radius
-  		* @param radius Number The new value.
-  		*/
+    * @param radius Number The new value.
+    */
   var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of region
-  		* @param region Array The new value.
-  		*/
+    * @param region Array The new value.
+    */
   var setRegion: js.UndefOr[js.Function1[/* region */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of rotation
-  		* @param rotation Number The new value.
-  		*/
+    * @param rotation Number The new value.
+    */
   var setRotation: js.UndefOr[js.Function1[/* rotation */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of sectors
-  		* @param sectors Array The new value.
-  		*/
+    * @param sectors Array The new value.
+    */
   var setSectors: js.UndefOr[js.Function1[/* sectors */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of totalAngle
-  		* @param totalAngle Object The new value.
-  		*/
+    * @param totalAngle Object The new value.
+    */
   var setTotalAngle: js.UndefOr[js.Function1[/* totalAngle */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of value
-  		* @param value Number The new value.
-  		*/
+    * @param value Number The new value.
+    */
   var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of wholeDisk
-  		* @param wholeDisk Boolean The new value.
-  		*/
+    * @param wholeDisk Boolean The new value.
+    */
   var setWholeDisk: js.UndefOr[js.Function1[/* wholeDisk */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var value: js.UndefOr[Double] = js.undefined
@@ -191,7 +191,7 @@ object IGauge {
     colors: Array = null,
     config: js.Any = null,
     destroy: () => Unit = null,
-    donut: Int | Double = null,
+    donut: js.UndefOr[Double] = js.undefined,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     extend: String = null,
     field: String = null,
@@ -248,19 +248,19 @@ object IGauge {
     itemInstancing: js.Any = null,
     label: js.Any = null,
     labelField: js.Any = null,
-    labelOverflowPadding: Int | Double = null,
+    labelOverflowPadding: js.UndefOr[Double] = js.undefined,
     listeners: js.Any = null,
     marker: js.Any = null,
     markerSubStyle: js.Any = null,
-    maximum: Int | Double = null,
-    minimum: Int | Double = null,
+    maximum: js.UndefOr[Double] = js.undefined,
+    minimum: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     needle: js.UndefOr[Boolean] = js.undefined,
-    needleLength: Int | Double = null,
-    needleLengthRatio: Int | Double = null,
-    needleWidth: Int | Double = null,
+    needleLength: js.UndefOr[Double] = js.undefined,
+    needleLengthRatio: js.UndefOr[Double] = js.undefined,
+    needleWidth: js.UndefOr[Double] = js.undefined,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -331,7 +331,7 @@ object IGauge {
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     wholeDisk: js.UndefOr[Boolean] = js.undefined
   ): IGauge = {
     val __obj = js.Dynamic.literal()
@@ -353,7 +353,7 @@ object IGauge {
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (donut != null) __obj.updateDynamic("donut")(donut.asInstanceOf[js.Any])
+    if (!js.isUndefined(donut)) __obj.updateDynamic("donut")(donut.get.asInstanceOf[js.Any])
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
@@ -410,19 +410,19 @@ object IGauge {
     if (itemInstancing != null) __obj.updateDynamic("itemInstancing")(itemInstancing.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
-    if (labelOverflowPadding != null) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelOverflowPadding)) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (markerSubStyle != null) __obj.updateDynamic("markerSubStyle")(markerSubStyle.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (!js.isUndefined(needle)) __obj.updateDynamic("needle")(needle.asInstanceOf[js.Any])
-    if (needleLength != null) __obj.updateDynamic("needleLength")(needleLength.asInstanceOf[js.Any])
-    if (needleLengthRatio != null) __obj.updateDynamic("needleLengthRatio")(needleLengthRatio.asInstanceOf[js.Any])
-    if (needleWidth != null) __obj.updateDynamic("needleWidth")(needleWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(needle)) __obj.updateDynamic("needle")(needle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(needleLength)) __obj.updateDynamic("needleLength")(needleLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(needleLengthRatio)) __obj.updateDynamic("needleLengthRatio")(needleLengthRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(needleWidth)) __obj.updateDynamic("needleWidth")(needleWidth.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
@@ -479,8 +479,8 @@ object IGauge {
     if (setTotalAngle != null) __obj.updateDynamic("setTotalAngle")(js.Any.fromFunction1(setTotalAngle))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (setWholeDisk != null) __obj.updateDynamic("setWholeDisk")(js.Any.fromFunction1(setWholeDisk))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
@@ -493,8 +493,8 @@ object IGauge {
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(wholeDisk)) __obj.updateDynamic("wholeDisk")(wholeDisk.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wholeDisk)) __obj.updateDynamic("wholeDisk")(wholeDisk.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGauge]
   }
 }

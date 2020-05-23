@@ -31,18 +31,18 @@ trait HostProperties extends js.Object {
 object HostProperties {
   @scala.inline
   def apply(
-    Cores: Int | scala.Double = null,
+    Cores: js.UndefOr[Integer] = js.undefined,
     InstanceFamily: String = null,
     InstanceType: String = null,
-    Sockets: Int | scala.Double = null,
-    TotalVCpus: Int | scala.Double = null
+    Sockets: js.UndefOr[Integer] = js.undefined,
+    TotalVCpus: js.UndefOr[Integer] = js.undefined
   ): HostProperties = {
     val __obj = js.Dynamic.literal()
-    if (Cores != null) __obj.updateDynamic("Cores")(Cores.asInstanceOf[js.Any])
+    if (!js.isUndefined(Cores)) __obj.updateDynamic("Cores")(Cores.get.asInstanceOf[js.Any])
     if (InstanceFamily != null) __obj.updateDynamic("InstanceFamily")(InstanceFamily.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (Sockets != null) __obj.updateDynamic("Sockets")(Sockets.asInstanceOf[js.Any])
-    if (TotalVCpus != null) __obj.updateDynamic("TotalVCpus")(TotalVCpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(Sockets)) __obj.updateDynamic("Sockets")(Sockets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalVCpus)) __obj.updateDynamic("TotalVCpus")(TotalVCpus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostProperties]
   }
 }

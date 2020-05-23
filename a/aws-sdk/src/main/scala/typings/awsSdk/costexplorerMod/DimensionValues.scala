@@ -11,16 +11,21 @@ trait DimensionValues extends js.Object {
     */
   var Key: js.UndefOr[Dimension] = js.native
   /**
-    * The metadata values that you can use to filter and group your results. You can use GetDimensionValues to find specific values. Valid values for the SERVICE dimension are Amazon Elastic Compute Cloud - Compute, Amazon Elasticsearch Service, Amazon ElastiCache, Amazon Redshift, and Amazon Relational Database Service.
+    * The match options that you can use to filter your results. MatchOptions is only applicable for actions related to Cost Category. The default values for MatchOptions is EQUALS and CASE_SENSITIVE.
+    */
+  var MatchOptions: js.UndefOr[typings.awsSdk.costexplorerMod.MatchOptions] = js.native
+  /**
+    * The metadata values that you can use to filter and group your results. You can use GetDimensionValues to find specific values.
     */
   var Values: js.UndefOr[typings.awsSdk.costexplorerMod.Values] = js.native
 }
 
 object DimensionValues {
   @scala.inline
-  def apply(Key: Dimension = null, Values: Values = null): DimensionValues = {
+  def apply(Key: Dimension = null, MatchOptions: MatchOptions = null, Values: Values = null): DimensionValues = {
     val __obj = js.Dynamic.literal()
     if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
+    if (MatchOptions != null) __obj.updateDynamic("MatchOptions")(MatchOptions.asInstanceOf[js.Any])
     if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionValues]
   }

@@ -7,27 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait IgResponsiveContainer
   extends /**
-	 * Option for igResponsiveContainer
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * The time between two resize checks in milliseconds.
-  	 */
+    * The time between two resize checks in milliseconds.
+    */
   var pollingInterval: js.UndefOr[Double] = js.undefined
 }
 
 object IgResponsiveContainer {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for igResponsiveContainer
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    pollingInterval: Int | Double = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    pollingInterval: js.UndefOr[Double] = js.undefined
   ): IgResponsiveContainer = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (pollingInterval != null) __obj.updateDynamic("pollingInterval")(pollingInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollingInterval)) __obj.updateDynamic("pollingInterval")(pollingInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgResponsiveContainer]
   }
 }

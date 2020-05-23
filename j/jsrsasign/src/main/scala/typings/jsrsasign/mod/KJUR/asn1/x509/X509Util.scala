@@ -1,6 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonCakey
+import typings.jsrsasign.anon.Cakey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -77,6 +77,6 @@ object X509Util extends js.Object {
     * });
     */
   def newCertPEM(): String = js.native
-  def newCertPEM(param: AnonCakey): String = js.native
+  def newCertPEM(param: Cakey): String = js.native
 }
 

@@ -37,21 +37,21 @@ trait ScalesCustomLabel extends js.Object {
 object ScalesCustomLabel {
   @scala.inline
   def apply(
-    color: Int | Double = null,
+    color: js.UndefOr[Double] = js.undefined,
     font: ScalesCustomLabelsFont = null,
     opacity: String = null,
     position: ScalesCustomLabelsPosition = null,
     positionType: js.Any = null,
-    textAngle: Int | Double = null,
+    textAngle: js.UndefOr[Double] = js.undefined,
     value: String = null
   ): ScalesCustomLabel = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (positionType != null) __obj.updateDynamic("positionType")(positionType.asInstanceOf[js.Any])
-    if (textAngle != null) __obj.updateDynamic("textAngle")(textAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(textAngle)) __obj.updateDynamic("textAngle")(textAngle.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesCustomLabel]
   }

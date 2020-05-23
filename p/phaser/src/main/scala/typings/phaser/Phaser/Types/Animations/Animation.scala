@@ -60,31 +60,31 @@ object Animation {
   @scala.inline
   def apply(
     defaultTextureKey: String = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
-    frameRate: Int | Double = null,
+    delay: js.UndefOr[integer] = js.undefined,
+    duration: js.UndefOr[integer] = js.undefined,
+    frameRate: js.UndefOr[integer] = js.undefined,
     frames: js.Array[AnimationFrame] = null,
     hideOnComplete: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
-    repeat: Int | Double = null,
-    repeatDelay: Int | Double = null,
+    repeat: js.UndefOr[integer] = js.undefined,
+    repeatDelay: js.UndefOr[integer] = js.undefined,
     showOnStart: js.UndefOr[Boolean] = js.undefined,
     skipMissedFrames: js.UndefOr[Boolean] = js.undefined,
     yoyo: js.UndefOr[Boolean] = js.undefined
   ): Animation = {
     val __obj = js.Dynamic.literal()
     if (defaultTextureKey != null) __obj.updateDynamic("defaultTextureKey")(defaultTextureKey.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameRate)) __obj.updateDynamic("frameRate")(frameRate.get.asInstanceOf[js.Any])
     if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnComplete)) __obj.updateDynamic("hideOnComplete")(hideOnComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnComplete)) __obj.updateDynamic("hideOnComplete")(hideOnComplete.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnStart)) __obj.updateDynamic("showOnStart")(showOnStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipMissedFrames)) __obj.updateDynamic("skipMissedFrames")(skipMissedFrames.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatDelay)) __obj.updateDynamic("repeatDelay")(repeatDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnStart)) __obj.updateDynamic("showOnStart")(showOnStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipMissedFrames)) __obj.updateDynamic("skipMissedFrames")(skipMissedFrames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animation]
   }
 }

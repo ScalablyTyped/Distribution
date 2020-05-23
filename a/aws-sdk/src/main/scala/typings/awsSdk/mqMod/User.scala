@@ -27,13 +27,13 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(
-    ConsoleAccess: js.UndefOr[Boolean] = js.undefined,
+    ConsoleAccess: js.UndefOr[boolean] = js.undefined,
     Groups: listOfString = null,
     Password: string = null,
     Username: string = null
   ): User = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.get.asInstanceOf[js.Any])
     if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
     if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
     if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])

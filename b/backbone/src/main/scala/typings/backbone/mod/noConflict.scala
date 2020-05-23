@@ -1,6 +1,6 @@
 package typings.backbone.mod
 
-import typings.backbone.Typeofbackbone
+import typings.backbone.anon.Typeofbackbone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

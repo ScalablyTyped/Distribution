@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation._
 trait BoundsProps
   extends Styleable
      with /**
-  * Allow for customer props due to ability to add
+  *  Allow for customer props due to ability to add
   * custom breakpoints
   */
 /* x */ StringDictionary[js.Any] {
@@ -78,7 +78,7 @@ object BoundsProps {
   @scala.inline
   def apply(
     StringDictionary: /**
-    * Allow for customer props due to ability to add
+    *  Allow for customer props due to ability to add
     * custom breakpoints
     */
   /* x */ StringDictionary[js.Any] = null,
@@ -92,7 +92,7 @@ object BoundsProps {
     height: String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     margin: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     padding: String = null,
     valign: top | center | bottom = null,
     visibility: visible | hidden | collapse | initial | inherit = null,
@@ -103,20 +103,20 @@ object BoundsProps {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (halign != null) __obj.updateDynamic("halign")(halign.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundsProps]
   }
 }

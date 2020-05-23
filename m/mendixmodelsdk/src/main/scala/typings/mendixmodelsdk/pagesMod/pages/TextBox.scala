@@ -29,6 +29,11 @@ class TextBox protected () extends TextWidget {
   ) = this()
   @JSName("model")
   var model_FTextBox: IModel = js.native
+  /**
+    * In version 8.10.0: introduced
+    */
+  def autocomplete: Boolean = js.native
+  def autocomplete(newValue: Boolean): js.Any = js.native
   def formattingInfo: FormattingInfo = js.native
   def formattingInfo(newValue: FormattingInfo): js.Any = js.native
   def inputMask: String = js.native

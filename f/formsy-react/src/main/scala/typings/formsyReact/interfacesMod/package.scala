@@ -8,7 +8,7 @@ package object interfacesMod {
   type IModel = js.Any
   type IResetModel = js.Function1[/* model */ js.UndefOr[typings.formsyReact.interfacesMod.IModel], scala.Unit]
   type IUpdateInputsWithError = js.Function2[
-    /* errors */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
+    /* errors */ org.scalablytyped.runtime.StringDictionary[typings.formsyReact.interfacesMod.ValidationError], 
     /* invalidate */ js.UndefOr[scala.Boolean], 
     scala.Unit
   ]

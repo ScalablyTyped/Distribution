@@ -33,15 +33,15 @@ object ICombineOptions {
     farPoint: IPoint = null,
     measureA: Atlas = null,
     measureB: Atlas = null,
-    pointMatchingDistance: Int | Double = null,
+    pointMatchingDistance: js.UndefOr[Double] = js.undefined,
     trimDeadEnds: js.UndefOr[Boolean] = js.undefined
   ): ICombineOptions = {
     val __obj = js.Dynamic.literal()
     if (farPoint != null) __obj.updateDynamic("farPoint")(farPoint.asInstanceOf[js.Any])
     if (measureA != null) __obj.updateDynamic("measureA")(measureA.asInstanceOf[js.Any])
     if (measureB != null) __obj.updateDynamic("measureB")(measureB.asInstanceOf[js.Any])
-    if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimDeadEnds)) __obj.updateDynamic("trimDeadEnds")(trimDeadEnds.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointMatchingDistance)) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimDeadEnds)) __obj.updateDynamic("trimDeadEnds")(trimDeadEnds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICombineOptions]
   }
 }

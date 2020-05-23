@@ -1,8 +1,8 @@
 package typings.meteorRoles.mod.Roles
 
-import typings.meteor.Meteor.User_
+import typings.meteor.Meteor.User
 import typings.meteor.Mongo.Cursor
-import typings.meteorRoles.AnonFields
+import typings.meteorRoles.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,11 +28,11 @@ object getUsersInRole extends js.Object {
     *                           through to `Meteor.users.find(query, options)`
     * @return {Cursor} cursor of users in role
     */
-  def apply(role: String): Cursor[User_] = js.native
-  def apply(role: String, group: String): Cursor[User_] = js.native
-  def apply(role: String, group: String, options: AnonFields): Cursor[User_] = js.native
-  def apply(role: js.Array[String]): Cursor[User_] = js.native
-  def apply(role: js.Array[String], group: String): Cursor[User_] = js.native
-  def apply(role: js.Array[String], group: String, options: AnonFields): Cursor[User_] = js.native
+  def apply(role: String): Cursor[User] = js.native
+  def apply(role: String, group: String): Cursor[User] = js.native
+  def apply(role: String, group: String, options: Fields): Cursor[User] = js.native
+  def apply(role: js.Array[String]): Cursor[User] = js.native
+  def apply(role: js.Array[String], group: String): Cursor[User] = js.native
+  def apply(role: js.Array[String], group: String, options: Fields): Cursor[User] = js.native
 }
 

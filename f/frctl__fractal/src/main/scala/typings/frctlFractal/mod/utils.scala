@@ -1,7 +1,7 @@
 package typings.frctlFractal.mod
 
-import typings.frctlFractal.AnonArgs
-import typings.frctlFractal.AnonColor
+import typings.frctlFractal.anon.Args
+import typings.frctlFractal.anon.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +15,10 @@ object utils extends js.Object {
   def isPromise(value: js.Any): /* is std.PromiseLike<any> */ Boolean = js.native
   def isPromise[T](value: T): /* is std.PromiseLike<T> */ Boolean = js.native
   def isPromise[T](value: js.Thenable[T]): /* is std.PromiseLike<T> */ Boolean = js.native
-  def lang(filePath: String): AnonColor = js.native
+  def lang(filePath: String): Color = js.native
   def md5(str: String): String = js.native
   def mergeProp(prop: js.Any, upstream: js.Any): js.Any = js.native
-  def parseArgv(): AnonArgs = js.native
+  def parseArgv(): Args = js.native
   def relUrlPath(toPath: String, fromPath: String): String = js.native
   def relUrlPath(toPath: String, fromPath: String, opts: js.Any): String = js.native
   def slugify(str: String): String = js.native

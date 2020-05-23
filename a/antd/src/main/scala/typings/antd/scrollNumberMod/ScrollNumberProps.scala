@@ -22,22 +22,22 @@ object ScrollNumberProps {
   def apply(
     className: String = null,
     component: String = null,
-    count: String | Double = null,
+    count: js.UndefOr[Null | String | Double] = js.undefined,
     displayComponent: ReactElement = null,
     onAnimated: js.Function = null,
     prefixCls: String = null,
     style: CSSProperties = null,
-    title: String | Double = null
+    title: js.UndefOr[Null | String | Double] = js.undefined
   ): ScrollNumberProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (displayComponent != null) __obj.updateDynamic("displayComponent")(displayComponent.asInstanceOf[js.Any])
     if (onAnimated != null) __obj.updateDynamic("onAnimated")(onAnimated.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollNumberProps]
   }
 }

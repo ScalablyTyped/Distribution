@@ -10,9 +10,6 @@ object fullcalendarStrings {
   sealed trait ISO extends js.Object
   
   @js.native
-  sealed trait `LessthansignPercentsignEqualssign version PercentsignGreaterthansign` extends js.Object
-  
-  @js.native
   sealed trait addEventSource extends js.Object
   
   @js.native
@@ -149,8 +146,6 @@ object fullcalendarStrings {
   
   @scala.inline
   def ISO: ISO = "ISO".asInstanceOf[ISO]
-  @scala.inline
-  def `LessthansignPercentsignEqualssign version PercentsignGreaterthansign`: `LessthansignPercentsignEqualssign version PercentsignGreaterthansign` = ("<%= version %>").asInstanceOf[`LessthansignPercentsignEqualssign version PercentsignGreaterthansign`]
   @scala.inline
   def addEventSource: addEventSource = "addEventSource".asInstanceOf[addEventSource]
   @scala.inline

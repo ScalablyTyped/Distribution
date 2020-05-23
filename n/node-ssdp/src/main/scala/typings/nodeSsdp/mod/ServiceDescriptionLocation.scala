@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait ServiceDescriptionLocation extends js.Object {
   /**
-  	 * Location path.
-  	 */
+    * Location path.
+    */
   var path: String
   /**
-  	 * Location port.
-  	 */
+    * Location port.
+    */
   var port: Double
   /**
-  	 * Location protocol.
-  	 * @default 'http://'
-  	 */
+    * Location protocol.
+    * @default 'http://'
+    */
   var protocol: js.UndefOr[String] = js.undefined
 }
 

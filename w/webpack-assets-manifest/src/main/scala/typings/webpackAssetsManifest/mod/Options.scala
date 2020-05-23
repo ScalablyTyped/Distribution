@@ -72,48 +72,54 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    apply: /* manifest */ WebpackAssetsManifest => Unit = null,
+    apply: js.UndefOr[Null | (/* manifest */ WebpackAssetsManifest => Unit)] = js.undefined,
     assets: js.Object = null,
-    customize: (/* entry */ Entry, /* original */ AnyObject, /* manifest */ WebpackAssetsManifest, /* asset */ AnyObject) => Entry | `false` = null,
-    done: (/* manifest */ WebpackAssetsManifest, /* stats */ AnyObject) => Unit = null,
+    customize: js.UndefOr[
+      Null | ((/* entry */ Entry, /* original */ AnyObject, /* manifest */ WebpackAssetsManifest, /* asset */ AnyObject) => Entry | `false`)
+    ] = js.undefined,
+    done: js.UndefOr[Null | ((/* manifest */ WebpackAssetsManifest, /* stats */ AnyObject) => Unit)] = js.undefined,
     entrypoints: js.UndefOr[Boolean] = js.undefined,
     entrypointsKey: String | `false` = null,
-    fileExtRegex: RegExp | `false` = null,
+    fileExtRegex: js.UndefOr[Null | RegExp | `false`] = js.undefined,
     integrity: js.UndefOr[Boolean] = js.undefined,
     integrityHashes: js.Array[String] = null,
     integrityPropertyName: String = null,
     merge: Boolean | customize = null,
     output: String = null,
-    publicPath: String | Boolean | (js.Function2[/* filename */ String, /* manifest */ WebpackAssetsManifest, String]) = null,
-    replacer: js.Array[String] | (js.Function2[
-      /* key */ String, 
-      /* value */ String, 
-      js.UndefOr[Double | String | Boolean | Null | js.Object]
-    ]) = null,
+    publicPath: js.UndefOr[
+      Null | String | Boolean | (js.Function2[/* filename */ String, /* manifest */ WebpackAssetsManifest, String])
+    ] = js.undefined,
+    replacer: js.UndefOr[
+      Null | js.Array[String] | (js.Function2[
+        /* key */ String, 
+        /* value */ String, 
+        js.UndefOr[Double | String | Boolean | Null | js.Object]
+      ])
+    ] = js.undefined,
     sortManifest: Boolean | (js.ThisFunction2[/* this */ WebpackAssetsManifest, /* a */ String, /* b */ String, Double]) = null,
-    space: Int | Double = null,
-    transform: (/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest) => _ = null,
+    space: js.UndefOr[Double] = js.undefined,
+    transform: js.UndefOr[Null | ((/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest) => _)] = js.undefined,
     writeToDisk: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (apply != null) __obj.updateDynamic("apply")(js.Any.fromFunction1(apply))
+    if (!js.isUndefined(apply)) __obj.updateDynamic("apply")(if (apply != null) js.Any.fromFunction1(apply.asInstanceOf[/* manifest */ WebpackAssetsManifest => Unit]) else null)
     if (assets != null) __obj.updateDynamic("assets")(assets.asInstanceOf[js.Any])
-    if (customize != null) __obj.updateDynamic("customize")(js.Any.fromFunction4(customize))
-    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction2(done))
-    if (!js.isUndefined(entrypoints)) __obj.updateDynamic("entrypoints")(entrypoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(customize)) __obj.updateDynamic("customize")(if (customize != null) js.Any.fromFunction4(customize.asInstanceOf[(/* entry */ Entry, /* original */ AnyObject, /* manifest */ WebpackAssetsManifest, /* asset */ AnyObject) => Entry | `false`]) else null)
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(if (done != null) js.Any.fromFunction2(done.asInstanceOf[(/* manifest */ WebpackAssetsManifest, /* stats */ AnyObject) => Unit]) else null)
+    if (!js.isUndefined(entrypoints)) __obj.updateDynamic("entrypoints")(entrypoints.get.asInstanceOf[js.Any])
     if (entrypointsKey != null) __obj.updateDynamic("entrypointsKey")(entrypointsKey.asInstanceOf[js.Any])
-    if (fileExtRegex != null) __obj.updateDynamic("fileExtRegex")(fileExtRegex.asInstanceOf[js.Any])
-    if (!js.isUndefined(integrity)) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileExtRegex)) __obj.updateDynamic("fileExtRegex")(fileExtRegex.asInstanceOf[js.Any])
+    if (!js.isUndefined(integrity)) __obj.updateDynamic("integrity")(integrity.get.asInstanceOf[js.Any])
     if (integrityHashes != null) __obj.updateDynamic("integrityHashes")(integrityHashes.asInstanceOf[js.Any])
     if (integrityPropertyName != null) __obj.updateDynamic("integrityPropertyName")(integrityPropertyName.asInstanceOf[js.Any])
     if (merge != null) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
-    if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
+    if (!js.isUndefined(publicPath)) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(replacer)) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
     if (sortManifest != null) __obj.updateDynamic("sortManifest")(sortManifest.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
-    if (!js.isUndefined(writeToDisk)) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
+    if (!js.isUndefined(space)) __obj.updateDynamic("space")(space.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transform)) __obj.updateDynamic("transform")(if (transform != null) js.Any.fromFunction2(transform.asInstanceOf[(/* assets */ AnyObject, /* manifest */ WebpackAssetsManifest) => _]) else null)
+    if (!js.isUndefined(writeToDisk)) __obj.updateDynamic("writeToDisk")(writeToDisk.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

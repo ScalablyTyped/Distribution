@@ -1,7 +1,7 @@
 package typings.gapiClientFirebaserules.gapi.client.firebaserules
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientFirebaserules.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientFirebaserules.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait ProjectsResource extends js.Object {
     * }
     * }
     */
-  def test(request: AnonAccesstoken): Request_[TestRulesetResponse]
+  def test(request: Accesstoken): Request[TestRulesetResponse]
 }
 
 object ProjectsResource {
@@ -41,7 +41,7 @@ object ProjectsResource {
   def apply(
     releases: ReleasesResource,
     rulesets: RulesetsResource,
-    test: AnonAccesstoken => Request_[TestRulesetResponse]
+    test: Accesstoken => Request[TestRulesetResponse]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(releases = releases.asInstanceOf[js.Any], rulesets = rulesets.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
     __obj.asInstanceOf[ProjectsResource]

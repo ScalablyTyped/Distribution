@@ -28,12 +28,12 @@ object MonthBodyProps {
     viewDate: DateType,
     disabledDate: /* date */ DateType => Boolean = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
-    value: DateType = null
+    value: js.UndefOr[Null | DateType] = js.undefined
   ): MonthBodyProps[DateType] = {
     val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], onSelect = js.Any.fromFunction1(onSelect), prefixCls = prefixCls.asInstanceOf[js.Any], viewDate = viewDate.asInstanceOf[js.Any])
     if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1(disabledDate))
     if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction2(monthCellRender))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonthBodyProps[DateType]]
   }
 }

@@ -14,8 +14,8 @@ trait PlusDevice extends js.Object {
   /**
     * 设备的国际移动设备身份码
     * 调用此属性获取设备的国际移动设备身份码。
-    * 	如果设备不支持则返回空字符串。
-    * 	如果设备存在多个身份码，则以“,”字符分割拼接，如“862470039452950,862470039452943”。
+    *     如果设备不支持则返回空字符串。
+    *     如果设备存在多个身份码，则以“,”字符分割拼接，如“862470039452950,862470039452943”。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
@@ -23,8 +23,8 @@ trait PlusDevice extends js.Object {
   /**
     * 设备的国际移动用户识别码
     * 字符串数组类型，获取设备上插入SIM的国际移动设备身份码。
-    * 	如果设备支持多卡模式则返回所有SIM身份码。
-    * 	如果设备不支持或没有插入SIM卡则返回空数组。
+    *     如果设备支持多卡模式则返回所有SIM身份码。
+    *     如果设备不支持或没有插入SIM卡则返回空数组。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
@@ -32,7 +32,7 @@ trait PlusDevice extends js.Object {
   /**
     * 设备的型号
     * 调用此属性获取设备的型号信息。
-    * 	如果设备不支持则返回空字符串。
+    *     如果设备不支持则返回空字符串。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
@@ -47,7 +47,7 @@ trait PlusDevice extends js.Object {
   /**
     * 设备的生产厂商
     * 调用此属性获取设备的生产厂商信息。
-    * 	如果设备不支持则返回空字符串。
+    *     如果设备不支持则返回空字符串。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */

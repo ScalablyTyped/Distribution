@@ -11,7 +11,7 @@ package object validateMod {
   type JSONSchema7 = typings.jsonSchema.mod.JSONSchema7
   type PostFormatter = js.Function2[
     /* formattedError */ java.lang.String, 
-    /* error */ typings.schemaUtils.ErrorObjectchildrenArrayE, 
+    /* error */ typings.schemaUtils.anon.ErrorObjectchildrenArrayE, 
     java.lang.String
   ]
   type Schema = typings.jsonSchema.mod.JSONSchema4 | typings.jsonSchema.mod.JSONSchema6 | typings.jsonSchema.mod.JSONSchema7

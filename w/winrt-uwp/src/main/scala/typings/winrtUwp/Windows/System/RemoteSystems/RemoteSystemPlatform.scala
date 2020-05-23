@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System.RemoteSystems
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object RemoteSystemPlatform extends js.Object {
   /** The device is running Windows. */
   @js.native
   sealed trait windows extends RemoteSystemPlatform
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RemoteSystemPlatform with Double] = js.native
-  /* 2 */ @js.native
-  object android extends TopLevel[android with Double]
-  
-  /* 3 */ @js.native
-  object ios extends TopLevel[ios with Double]
-  
-  /* 4 */ @js.native
-  object linux extends TopLevel[linux with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 1 */ @js.native
-  object windows extends TopLevel[windows with Double]
   
 }
 

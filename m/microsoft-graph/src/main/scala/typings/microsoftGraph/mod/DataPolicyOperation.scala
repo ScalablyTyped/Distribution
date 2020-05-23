@@ -30,7 +30,7 @@ object DataPolicyOperation {
   def apply(
     completedDateTime: String = null,
     id: String = null,
-    progress: Int | Double = null,
+    progress: js.UndefOr[Double] = js.undefined,
     status: DataPolicyOperationStatus = null,
     storageLocation: String = null,
     submittedDateTime: String = null,
@@ -39,7 +39,7 @@ object DataPolicyOperation {
     val __obj = js.Dynamic.literal()
     if (completedDateTime != null) __obj.updateDynamic("completedDateTime")(completedDateTime.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (storageLocation != null) __obj.updateDynamic("storageLocation")(storageLocation.asInstanceOf[js.Any])
     if (submittedDateTime != null) __obj.updateDynamic("submittedDateTime")(submittedDateTime.asInstanceOf[js.Any])

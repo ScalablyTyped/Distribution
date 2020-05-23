@@ -64,7 +64,7 @@ object ^ extends js.Object {
     * @param host is the host on which the TCP or TLS socket resides.
     * This will default to ipc.config.networkHost if not specified
     * @param port the port on which the TCP or TLS socket resides
-    * @param callback 	this is the function to execute when the socket has been created
+    * @param callback     this is the function to execute when the socket has been created
     */
   /**
     * https://www.npmjs.com/package/node-ipc#connecttonet
@@ -75,7 +75,7 @@ object ^ extends js.Object {
     * They have a few additional requirements, and things to know about and so have their own doc.
     * @param id is the string id of the socket being connected to. For TCP & TLS sockets,
     * this id is added to the ipc.of object when the socket is created with a reference to the socket
-    * @param callback 	this is the function to execute when the socket has been created
+    * @param callback     this is the function to execute when the socket has been created
     */
   def connectToNet(id: String): Unit = js.native
   def connectToNet(id: String, callback: js.Function0[Unit]): Unit = js.native
@@ -91,7 +91,7 @@ object ^ extends js.Object {
     * For TCP & TLS sockets, this id is added to the ipc.of object when the socket is created with a reference to the socket
     * @param host is the host on which the TCP or TLS socket resides. This will default to ipc.config.networkHost if not specified
     * @param port the port on which the TCP or TLS socket resides
-    * @param callback 	this is the function to execute when the socket has been created
+    * @param callback     this is the function to execute when the socket has been created
     */
   def connectToNet(id: String, hostOrPort: Double): Unit = js.native
   def connectToNet(id: String, hostOrPort: Double, callback: js.Function0[Unit]): Unit = js.native

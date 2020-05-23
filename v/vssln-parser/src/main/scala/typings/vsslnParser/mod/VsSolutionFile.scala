@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.vsslnParser.mod.VsSolutionSectionCollection because Already inherited */ trait VsSolutionFile extends VsSolutionSection {
   var minimumVisualStudioVersion: js.UndefOr[String] = js.undefined
   var nestedProjects: js.UndefOr[VsSolutionSection] = js.undefined

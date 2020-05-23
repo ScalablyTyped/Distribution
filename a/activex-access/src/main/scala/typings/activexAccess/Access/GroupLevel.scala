@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.GroupLevel")
 @js.native
-class GroupLevel protected () extends js.Object {
+trait GroupLevel extends js.Object {
   @JSName("Access.GroupLevel_typekey")
   var AccessDotGroupLevel_typekey: GroupLevel = js.native
   val Application: typings.activexAccess.Access.Application = js.native

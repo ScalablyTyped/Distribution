@@ -1,6 +1,5 @@
 package typings.chromecastCafSender.cast.framework
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,29 +30,6 @@ object SessionState extends js.Object {
   
   @js.native
   sealed trait SESSION_START_FAILED extends SessionState
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SessionState with String] = js.native
-  /* "NO_SESSION" */ @js.native
-  object NO_SESSION extends TopLevel[NO_SESSION with String]
-  
-  /* "SESSION_ENDED" */ @js.native
-  object SESSION_ENDED extends TopLevel[SESSION_ENDED with String]
-  
-  /* "SESSION_ENDING" */ @js.native
-  object SESSION_ENDING extends TopLevel[SESSION_ENDING with String]
-  
-  /* "SESSION_RESUMED" */ @js.native
-  object SESSION_RESUMED extends TopLevel[SESSION_RESUMED with String]
-  
-  /* "SESSION_STARTED" */ @js.native
-  object SESSION_STARTED extends TopLevel[SESSION_STARTED with String]
-  
-  /* "SESSION_STARTING" */ @js.native
-  object SESSION_STARTING extends TopLevel[SESSION_STARTING with String]
-  
-  /* "SESSION_START_FAILED" */ @js.native
-  object SESSION_START_FAILED extends TopLevel[SESSION_START_FAILED with String]
   
 }
 

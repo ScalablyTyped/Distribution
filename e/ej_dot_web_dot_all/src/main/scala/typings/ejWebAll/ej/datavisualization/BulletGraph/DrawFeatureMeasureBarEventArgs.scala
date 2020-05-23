@@ -24,13 +24,13 @@ object DrawFeatureMeasureBarEventArgs {
   @scala.inline
   def apply(
     Object: js.Any = null,
-    Value: Int | Double = null,
+    Value: js.UndefOr[Double] = js.undefined,
     currentElement: HTMLElement = null,
     scaleElement: HTMLElement = null
   ): DrawFeatureMeasureBarEventArgs = {
     val __obj = js.Dynamic.literal()
     if (Object != null) __obj.updateDynamic("Object")(Object.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement.asInstanceOf[js.Any])
     if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawFeatureMeasureBarEventArgs]

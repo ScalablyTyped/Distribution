@@ -77,14 +77,14 @@ object ContainerProperties {
     instanceType: String = null,
     jobRoleArn: String = null,
     linuxParameters: LinuxParameters = null,
-    memory: Int | Double = null,
+    memory: js.UndefOr[Integer] = js.undefined,
     mountPoints: MountPoints = null,
-    privileged: js.UndefOr[scala.Boolean] = js.undefined,
-    readonlyRootFilesystem: js.UndefOr[scala.Boolean] = js.undefined,
+    privileged: js.UndefOr[Boolean] = js.undefined,
+    readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined,
     resourceRequirements: ResourceRequirements = null,
     ulimits: Ulimits = null,
     user: String = null,
-    vcpus: Int | Double = null,
+    vcpus: js.UndefOr[Integer] = js.undefined,
     volumes: Volumes = null
   ): ContainerProperties = {
     val __obj = js.Dynamic.literal()
@@ -94,14 +94,14 @@ object ContainerProperties {
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
     if (jobRoleArn != null) __obj.updateDynamic("jobRoleArn")(jobRoleArn.asInstanceOf[js.Any])
     if (linuxParameters != null) __obj.updateDynamic("linuxParameters")(linuxParameters.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
     if (mountPoints != null) __obj.updateDynamic("mountPoints")(mountPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonlyRootFilesystem)) __obj.updateDynamic("readonlyRootFilesystem")(readonlyRootFilesystem.asInstanceOf[js.Any])
+    if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonlyRootFilesystem)) __obj.updateDynamic("readonlyRootFilesystem")(readonlyRootFilesystem.get.asInstanceOf[js.Any])
     if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements.asInstanceOf[js.Any])
     if (ulimits != null) __obj.updateDynamic("ulimits")(ulimits.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (vcpus != null) __obj.updateDynamic("vcpus")(vcpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(vcpus)) __obj.updateDynamic("vcpus")(vcpus.get.asInstanceOf[js.Any])
     if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerProperties]
   }

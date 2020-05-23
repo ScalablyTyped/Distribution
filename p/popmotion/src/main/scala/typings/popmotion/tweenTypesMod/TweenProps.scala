@@ -26,34 +26,34 @@ trait TweenProps extends js.Object {
 object TweenProps {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     ease: Easing | js.Array[Easing] | StringDictionary[Easing] = null,
-    elapsed: Int | Double = null,
-    flip: Int | Double = null,
-    flipCount: Int | Double = null,
+    elapsed: js.UndefOr[Double] = js.undefined,
+    flip: js.UndefOr[Double] = js.undefined,
+    flipCount: js.UndefOr[Double] = js.undefined,
     from: Value = null,
-    loop: Int | Double = null,
-    loopCount: Int | Double = null,
-    playDirection: Int | Double = null,
-    repeatDelay: Int | Double = null,
+    loop: js.UndefOr[Double] = js.undefined,
+    loopCount: js.UndefOr[Double] = js.undefined,
+    playDirection: js.UndefOr[Double] = js.undefined,
+    repeatDelay: js.UndefOr[Double] = js.undefined,
     to: Value = null,
-    yoyo: Int | Double = null,
-    yoyoCount: Int | Double = null
+    yoyo: js.UndefOr[Double] = js.undefined,
+    yoyoCount: js.UndefOr[Double] = js.undefined
   ): TweenProps = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
-    if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed.asInstanceOf[js.Any])
-    if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
-    if (flipCount != null) __obj.updateDynamic("flipCount")(flipCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(elapsed)) __obj.updateDynamic("elapsed")(elapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipCount)) __obj.updateDynamic("flipCount")(flipCount.get.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (loopCount != null) __obj.updateDynamic("loopCount")(loopCount.asInstanceOf[js.Any])
-    if (playDirection != null) __obj.updateDynamic("playDirection")(playDirection.asInstanceOf[js.Any])
-    if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopCount)) __obj.updateDynamic("loopCount")(loopCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playDirection)) __obj.updateDynamic("playDirection")(playDirection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatDelay)) __obj.updateDynamic("repeatDelay")(repeatDelay.get.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (yoyo != null) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
-    if (yoyoCount != null) __obj.updateDynamic("yoyoCount")(yoyoCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoyoCount)) __obj.updateDynamic("yoyoCount")(yoyoCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TweenProps]
   }
 }

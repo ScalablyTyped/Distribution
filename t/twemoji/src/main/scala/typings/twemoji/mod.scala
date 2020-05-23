@@ -1,6 +1,7 @@
 package typings.twemoji
 
 import typings.std.HTMLElement
+import typings.twemoji.anon.PartialParseObject
 import typings.twemoji.twemojiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 
 # Scala.js typings for egg-logger
 
-Typings are for version 2.4.1
+Typings are for version 2.4.2
 
 ## Library description:
 egg logger

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 trait ChartErrorBarsData extends js.Object {
   /**
     *
-    * Specifies whether or not the error bars have an end style cap.
+    * Specifies if error bars have an end style cap.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -46,7 +46,7 @@ trait ChartErrorBarsData extends js.Object {
   var `type`: js.UndefOr[ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom] = js.undefined
   /**
     *
-    * Specifies whether or not the error bars are displayed.
+    * Specifies whether the error bars are displayed.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -63,11 +63,11 @@ object ChartErrorBarsData {
     visible: js.UndefOr[Boolean] = js.undefined
   ): ChartErrorBarsData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(endStyleCap)) __obj.updateDynamic("endStyleCap")(endStyleCap.asInstanceOf[js.Any])
+    if (!js.isUndefined(endStyleCap)) __obj.updateDynamic("endStyleCap")(endStyleCap.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartErrorBarsData]
   }
 }

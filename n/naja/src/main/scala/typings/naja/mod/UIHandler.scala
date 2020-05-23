@@ -1,6 +1,6 @@
 package typings.naja.mod
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLFormElement
 import scala.scalajs.js
@@ -14,11 +14,11 @@ trait UIHandler extends js.Object {
   def bindUI(element: HTMLElement): Unit = js.native
   def clickElement(element: HTMLElement): Unit = js.native
   def clickElement(element: HTMLElement, options: js.Object): Unit = js.native
-  def clickElement(element: HTMLElement, options: js.Object, event: Event_): Unit = js.native
-  def handleUI(event: Event_): Unit = js.native
+  def clickElement(element: HTMLElement, options: js.Object, event: Event): Unit = js.native
+  def handleUI(event: Event): Unit = js.native
   def isUrlAllowed(url: String): Boolean = js.native
   def submitForm(element: HTMLFormElement): Unit = js.native
   def submitForm(element: HTMLFormElement, options: js.Object): Unit = js.native
-  def submitForm(element: HTMLFormElement, options: js.Object, event: Event_): Unit = js.native
+  def submitForm(element: HTMLFormElement, options: js.Object, event: Event): Unit = js.native
 }
 

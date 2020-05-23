@@ -1,20 +1,14 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonAxisMeshNames
+import typings.babylonjs.anon.AxisMeshNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WindowsMotionController")
 @js.native
-class WindowsMotionController protected () extends WebVRController {
-  /**
-    * Creates a new WindowsMotionController from a gamepad
-    * @param vrGamepad the gamepad that the controller should be created from
-    */
-  def this(vrGamepad: js.Any) = this()
+trait WindowsMotionController extends WebVRController {
   var _loadedMeshInfo: js.Any = js.native
-  val _mapping: AnonAxisMeshNames = js.native
+  val _mapping: AxisMeshNames = js.native
   var createMeshInfo: js.Any = js.native
   /**
     * Fired when the trackpad on this controller is clicked
@@ -76,31 +70,5 @@ class WindowsMotionController protected () extends WebVRController {
     * Fired when the trigger on this controller is modified
     */
   def onTriggerButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.WindowsMotionController")
-@js.native
-object WindowsMotionController extends js.Object {
-  /**
-    * The controller id pattern for this controller type
-    */
-  val GAMEPAD_ID_PATTERN: js.Any = js.native
-  /**
-    * The controller name prefix for this controller type
-    */
-  val GAMEPAD_ID_PREFIX: String = js.native
-  /**
-    * The base url used to load the left and right controller models
-    */
-  var MODEL_BASE_URL: String = js.native
-  /**
-    * The name of the left controller model file
-    */
-  var MODEL_LEFT_FILENAME: String = js.native
-  /**
-    * The name of the right controller model file
-    */
-  var MODEL_RIGHT_FILENAME: String = js.native
 }
 

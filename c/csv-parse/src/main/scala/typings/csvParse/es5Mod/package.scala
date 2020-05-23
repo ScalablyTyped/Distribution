@@ -23,10 +23,10 @@ package object es5Mod {
   ]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - scala.Null
     - typings.csvParse.csvParseBooleans.`false`
-    - typings.csvParse.AnonName
+    - typings.csvParse.anon.Name
   */
   type ColumnOption = js.UndefOr[typings.csvParse.es5Mod._ColumnOption | java.lang.String | scala.Null]
 }

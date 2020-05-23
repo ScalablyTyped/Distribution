@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@JSGlobal("Word.CustomXmlPartCollection")
 @js.native
-class CustomXmlPartCollection () extends ClientObject {
+trait CustomXmlPartCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_CustomXmlPartCollection: RequestContext = js.native

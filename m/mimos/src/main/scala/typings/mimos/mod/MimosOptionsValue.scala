@@ -1,6 +1,7 @@
 package typings.mimos.mod
 
 import typings.mimeDb.mod.MimeEntry
+import typings.mimeDb.mod.MimeSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,12 +20,12 @@ object MimosOptionsValue {
     compressible: js.UndefOr[Boolean] = js.undefined,
     extensions: js.Array[String] = null,
     predicate: /* mime */ MimosOptionsValue => MimosOptionsValue = null,
-    source: String = null,
+    source: MimeSource = null,
     `type`: String = null
   ): MimosOptionsValue = {
     val __obj = js.Dynamic.literal()
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (!js.isUndefined(compressible)) __obj.updateDynamic("compressible")(compressible.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressible)) __obj.updateDynamic("compressible")(compressible.get.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])

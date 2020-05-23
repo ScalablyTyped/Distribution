@@ -34,9 +34,9 @@ object GetPropertiesParameterType {
     ownProperties: js.UndefOr[Boolean] = js.undefined
   ): GetPropertiesParameterType = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessorPropertiesOnly)) __obj.updateDynamic("accessorPropertiesOnly")(accessorPropertiesOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview.asInstanceOf[js.Any])
-    if (!js.isUndefined(ownProperties)) __obj.updateDynamic("ownProperties")(ownProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessorPropertiesOnly)) __obj.updateDynamic("accessorPropertiesOnly")(accessorPropertiesOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ownProperties)) __obj.updateDynamic("ownProperties")(ownProperties.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPropertiesParameterType]
   }
 }

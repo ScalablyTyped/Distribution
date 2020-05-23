@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,11 @@ trait GeographicTransformation extends js.Object {
   def getInverse(): GeographicTransformation
 }
 
-@JSGlobal("__esri.GeographicTransformation")
-@js.native
-object GeographicTransformation extends TopLevel[GeographicTransformationConstructor]
+object GeographicTransformation {
+  @scala.inline
+  def apply(getInverse: () => GeographicTransformation, steps: js.Array[GeographicTransformationStep]): GeographicTransformation = {
+    val __obj = js.Dynamic.literal(getInverse = js.Any.fromFunction0(getInverse), steps = steps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeographicTransformation]
+  }
+}
 

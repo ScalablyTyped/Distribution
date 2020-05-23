@@ -1,12 +1,12 @@
 package typings.contextjs.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MenuObject extends js.Object {
-  var action: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  var action: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   var divider: js.UndefOr[Boolean] = js.undefined
   var header: js.UndefOr[String] = js.undefined
   var href: js.UndefOr[String] = js.undefined
@@ -18,7 +18,7 @@ trait MenuObject extends js.Object {
 object MenuObject {
   @scala.inline
   def apply(
-    action: /* e */ Event_ => Unit = null,
+    action: /* e */ Event => Unit = null,
     divider: js.UndefOr[Boolean] = js.undefined,
     header: String = null,
     href: String = null,
@@ -28,7 +28,7 @@ object MenuObject {
   ): MenuObject = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
-    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.get.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (subMenu != null) __obj.updateDynamic("subMenu")(subMenu.asInstanceOf[js.Any])

@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(noCommittish: js.UndefOr[Boolean] = js.undefined, noGitPlus: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noCommittish)) __obj.updateDynamic("noCommittish")(noCommittish.asInstanceOf[js.Any])
-    if (!js.isUndefined(noGitPlus)) __obj.updateDynamic("noGitPlus")(noGitPlus.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCommittish)) __obj.updateDynamic("noCommittish")(noCommittish.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noGitPlus)) __obj.updateDynamic("noGitPlus")(noGitPlus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

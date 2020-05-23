@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@esfx/internal-murmur3" : "1.0.0-pre.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@esfx/internal-murmur3" : "1.0.0-pre.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

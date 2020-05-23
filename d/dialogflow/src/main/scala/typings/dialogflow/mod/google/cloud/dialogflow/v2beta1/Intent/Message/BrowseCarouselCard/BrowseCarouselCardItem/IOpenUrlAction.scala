@@ -18,12 +18,14 @@ trait IOpenUrlAction extends js.Object {
 object IOpenUrlAction {
   @scala.inline
   def apply(
-    url: String = null,
-    urlTypeHint: UrlTypeHint | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint * / any */ String) = null
+    url: js.UndefOr[Null | String] = js.undefined,
+    urlTypeHint: js.UndefOr[
+      Null | UrlTypeHint | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint * / any */ String)
+    ] = js.undefined
   ): IOpenUrlAction = {
     val __obj = js.Dynamic.literal()
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (urlTypeHint != null) __obj.updateDynamic("urlTypeHint")(urlTypeHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(urlTypeHint)) __obj.updateDynamic("urlTypeHint")(urlTypeHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenUrlAction]
   }
 }

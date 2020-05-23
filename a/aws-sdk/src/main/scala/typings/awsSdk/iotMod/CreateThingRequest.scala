@@ -15,7 +15,7 @@ trait CreateThingRequest extends js.Object {
     */
   var billingGroupName: js.UndefOr[BillingGroupName] = js.native
   /**
-    * The name of the thing to create.
+    * The name of the thing to create. You can't change a thing's name after you create it. To change a thing's name, you must create a new thing, give it the new name, and then delete the old thing.
     */
   var thingName: ThingName = js.native
   /**

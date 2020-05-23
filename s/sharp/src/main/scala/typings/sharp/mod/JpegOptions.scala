@@ -38,24 +38,24 @@ object JpegOptions {
     optimizeScans: js.UndefOr[Boolean] = js.undefined,
     overshootDeringing: js.UndefOr[Boolean] = js.undefined,
     progressive: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null,
-    quantisationTable: Int | Double = null,
-    quantizationTable: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
+    quantisationTable: js.UndefOr[Double] = js.undefined,
+    quantizationTable: js.UndefOr[Double] = js.undefined,
     trellisQuantisation: js.UndefOr[Boolean] = js.undefined
   ): JpegOptions = {
     val __obj = js.Dynamic.literal()
     if (chromaSubsampling != null) __obj.updateDynamic("chromaSubsampling")(chromaSubsampling.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimiseCoding)) __obj.updateDynamic("optimiseCoding")(optimiseCoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimiseScans)) __obj.updateDynamic("optimiseScans")(optimiseScans.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimizeCoding)) __obj.updateDynamic("optimizeCoding")(optimizeCoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimizeScans)) __obj.updateDynamic("optimizeScans")(optimizeScans.asInstanceOf[js.Any])
-    if (!js.isUndefined(overshootDeringing)) __obj.updateDynamic("overshootDeringing")(overshootDeringing.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (quantisationTable != null) __obj.updateDynamic("quantisationTable")(quantisationTable.asInstanceOf[js.Any])
-    if (quantizationTable != null) __obj.updateDynamic("quantizationTable")(quantizationTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(trellisQuantisation)) __obj.updateDynamic("trellisQuantisation")(trellisQuantisation.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimiseCoding)) __obj.updateDynamic("optimiseCoding")(optimiseCoding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimiseScans)) __obj.updateDynamic("optimiseScans")(optimiseScans.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeCoding)) __obj.updateDynamic("optimizeCoding")(optimizeCoding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeScans)) __obj.updateDynamic("optimizeScans")(optimizeScans.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overshootDeringing)) __obj.updateDynamic("overshootDeringing")(overshootDeringing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantisationTable)) __obj.updateDynamic("quantisationTable")(quantisationTable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantizationTable)) __obj.updateDynamic("quantizationTable")(quantizationTable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trellisQuantisation)) __obj.updateDynamic("trellisQuantisation")(trellisQuantisation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JpegOptions]
   }
 }

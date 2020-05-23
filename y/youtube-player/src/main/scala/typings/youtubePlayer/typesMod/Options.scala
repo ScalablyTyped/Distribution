@@ -1,27 +1,27 @@
 package typings.youtubePlayer.typesMod
 
-import typings.youtubePlayer.AnonAutoplay
-import typings.youtubePlayer.eventTypeinEventTypeevent
+import typings.youtubePlayer.anon.Autoplay
+import typings.youtubePlayer.anon.eventTypeinEventTypeevent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var events: js.UndefOr[eventTypeinEventTypeevent] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var playerVars: js.UndefOr[AnonAutoplay] = js.undefined
+  var height: js.UndefOr[Double | String] = js.undefined
+  var playerVars: js.UndefOr[Autoplay] = js.undefined
   var videoId: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
     events: eventTypeinEventTypeevent = null,
-    height: Int | Double = null,
-    playerVars: AnonAutoplay = null,
+    height: Double | String = null,
+    playerVars: Autoplay = null,
     videoId: String = null,
-    width: Int | Double = null
+    width: Double | String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.StartScreen
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Point
@@ -16,60 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Creates, enumerates, and provides information about a secondary tile. */
-@JSGlobal("Windows.UI.StartScreen.SecondaryTile")
 @js.native
-/** Creates a SecondaryTile object. The caller must then set any mandatory properties through the object before attempting to pin, update, or delete the tile. */
-class SecondaryTile () extends js.Object {
-  /**
-    * Creates a SecondaryTile object with a specific ID. This form of the constructor should be used to create a secondary tile object to perform a tile update or deletion.
-    * @param tileId A string that will uniquely identify the tile within your app. Choose a unique ID that is descriptive and meaningful to your app. If you provide the same ID as that of an existing secondary tile, the existing secondary tile will be overwritten.
-    */
-  def this(tileId: String) = this()
-  /**
-    * Creates a SecondaryTile object that includes all of the mandatory properties required to create a medium tile.
-    * @param tileId A string that will uniquely identify the tile within your app's package. Choose a unique ID that is descriptive and meaningful to your app. It is limited to 64 characters and must begin with a number or letter and be composed of the characters a-z, A-Z, 0-9, period (.), or underscore (_). If you provide the same ID as that of an existing secondary tile, the existing secondary tile will be overwritten. Can be set or retrieved through the TileId property.
-    * @param displayName A name to be displayed on the tile, in the tile's tooltip, and when showing small tiles, such as on the Apps or search results screens. This string is equivalent to the display name given in the manifest for the main tile. It is restricted to 256 characters, but in practice should be kept short to avoid truncation. This value can be set or retrieved through the DisplayName property.
-    * @param arguments An app-defined string meaningful to the calling application. This argument string is passed back to the app when the app is activated from the secondary tile. It will be truncated after 2048 characters. Can be set or retrieved through the Arguments property.
-    * @param square150x150Logo A reference to a medium logo image stored at a URI. Can be set or retrieved through the SecondaryTileVisualElements.Square150x150Logo property. This value can be expressed using one of these schemes:
-    * @param desiredSize The size of tile to pin. This value must be Default (which provides Windows 8 behavior), Square150x150, or Wide310x150. Any other TileSize value causes an exception to be thrown during runtime.
-    */
-  def this(tileId: String, displayName: String, args: String, square150x150Logo: Uri, desiredSize: TileSize) = this()
-  /**
-    * Creates a SecondaryTile object as a medium tile.
-    * @param tileId A string that will uniquely identify the tile within your app's package. Choose a unique ID that is descriptive and meaningful to your app. It is limited to 64 characters and must begin with a number or letter and be composed of the characters a-z, A-Z, 0-9, period (.), or underscore (_). If you provide the same ID as that of an existing secondary tile, the existing secondary tile will be overwritten. Can be set or retrieved through the TileId property.
-    * @param shortName A short name to display directly on the tile if the app chooses to do so. Anything over 40 characters will be truncated. The user has the option to change this value as part of the pinning process. Can be set or retrieved through the ShortName property.
-    * @param displayName A name to be displayed on the tile, in the tile's tooltip, and when showing small tiles, such as on the Apps or search results screens. This string is equivalent to the display name given in the manifest for the main tile. It is restricted to 256 characters, but in practice should be kept short to avoid truncation. This value can be set or retrieved through the DisplayName property.
-    * @param arguments An app-defined string meaningful to the calling application. This argument string is passed back to the app when the app is activated from the secondary tile. It will be truncated after 2048 characters. Can be set or retrieved through the Arguments property.
-    * @param tileOptions A value that specifies various options such as whether the name will be displayed on the secondary tile. Can be set or retrieved through the TileOptions property.
-    * @param logoReference A reference to a square logo image stored at a URI. Can be set or retrieved through the Logo property. This value can be expressed using one of these schemes:
-    */
-  def this(
-    tileId: String,
-    shortName: String,
-    displayName: String,
-    args: String,
-    tileOptions: TileOptions,
-    logoReference: Uri
-  ) = this()
-  /**
-    * Creates a SecondaryTile object as a wide tile.
-    * @param tileId A string that will uniquely identify the tile within your app's package. Choose a unique ID that is descriptive and meaningful to your app. It is limited to 64 characters and must begin with a number or letter and be composed of the characters a-z, A-Z, 0-9, period (.), or underscore (_). If you provide the same ID as that of an existing secondary tile, the existing secondary tile will be overwritten. Can be set or retrieved through the TileId property.
-    * @param shortName A short name to display directly on the tile if the app chooses to do so. Anything over 40 characters will be truncated. The user has the option to change this value as part of the pinning process. Can be set or retrieved through the ShortName property.
-    * @param displayName A name to be displayed on the tile, in the tile's tooltip, and when showing small tiles, such as on the Apps or search results screens. This string is equivalent to the display name given in the manifest for the main tile. It is restricted to 256 characters, but in practice should be kept short to avoid truncation. This value can be set or retrieved through the DisplayName property.
-    * @param arguments An app-defined string meaningful to the calling application. This argument string is passed back to the app when the app is activated from the secondary tile. It will be truncated after 2048 characters. Can be set or retrieved through the Arguments property.
-    * @param tileOptions A value that specifies various options such as whether the name will be displayed on the secondary tile. Can be set or retrieved through the TileOptions property.
-    * @param logoReference A reference to a medium logo image stored at a URI. Can be set or retrieved through the Square150x150Logo property. This value can be expressed using one of these schemes:
-    * @param wideLogoReference A reference to a wide logo image stored at a URI. Can be set or retrieved through the WideLogo property. This value can be expressed using one of these schemes:
-    */
-  def this(
-    tileId: String,
-    shortName: String,
-    displayName: String,
-    args: String,
-    tileOptions: TileOptions,
-    logoReference: Uri,
-    wideLogoReference: Uri
-  ) = this()
+trait SecondaryTile extends js.Object {
   /** Gets or sets an app-defined set of information that is passed from the secondary tile to the app on activation. This property is required when you create a tile. */
   var arguments: String = js.native
   /** Gets or sets the tile's background color. */
@@ -170,33 +117,5 @@ class SecondaryTile () extends js.Object {
     * @return An object used to launch the asynchronous create operation as well as to retrieve information about it.
     */
   def updateAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.UI.StartScreen.SecondaryTile")
-@js.native
-object SecondaryTile extends js.Object {
-  /**
-    * Checks whether a specific secondary tile exists for the calling app.
-    * @param tileId The unique ID string that was assigned to the tile when it was created.
-    * @return True if the tile exists in the calling application; otherwise, false.
-    */
-  def exists(tileId: String): Boolean = js.native
-  /**
-    * Retrieves a list of secondary tiles created for the calling app.
-    * @return An enumeration object that allows you to examine the set of tiles.
-    */
-  def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
-  /**
-    * Retrieves a list of secondary tiles created for another app in the same package as the calling app.
-    * @param applicationId The Package Relative Application ID (PRAID) of the app.
-    * @return An enumeration object that allows you to examine the set of tiles.
-    */
-  def findAllAsync(applicationId: String): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
-  /**
-    * Retrieves a list of secondary tiles created for all of the apps in the package of the calling app.
-    * @return An enumeration object that allows you to examine the set of tiles.
-    */
-  def findAllForPackageAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
 }
 

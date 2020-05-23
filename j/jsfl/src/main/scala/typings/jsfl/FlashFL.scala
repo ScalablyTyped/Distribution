@@ -1,5 +1,6 @@
 package typings.jsfl
 
+import typings.jsfl.anon.Keyframe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,16 +67,16 @@ trait FlashFL extends js.Object {
   def fileExists(fileURI: String): Boolean = js.native
   def findDocumentDOM(id: Double): FlashDocument = js.native
   def findDocumentIndex(name: String): js.Array[Double] = js.native
-  def findObjectInDocByName(instanceName: String, document: FlashDocument): js.Array[AnonKeyframe] = js.native
+  def findObjectInDocByName(instanceName: String, document: FlashDocument): js.Array[Keyframe] = js.native
   /** elementType = "shape", "text", "instance", or "shapeObj". */
   def findObjectInDocByType(elementType: String, document: FlashDocument): js.Array[_] = js.native
   def getAppMemoryInfo(memType: Double): js.Any = js.native
   /*
-  	 * Method; retrieves the DOM (Document object) of the currently active document (FLA file).
-  	 * If one or more documents are open but a document does not currently have focus (for
-  	 * example, if a JSFL file has focus), retrieves the DOM of the most recently active document.
-  	 * getDocumentDOM(): Document;
-  	 */
+    * Method; retrieves the DOM (Document object) of the currently active document (FLA file).
+    * If one or more documents are open but a document does not currently have focus (for
+    * example, if a JSFL file has focus), retrieves the DOM of the most recently active document.
+    * getDocumentDOM(): Document;
+    */
   def getDocumentDOM(): FlashDocument = js.native
   //getProject();
   def getSwfPanel(): js.Any = js.native

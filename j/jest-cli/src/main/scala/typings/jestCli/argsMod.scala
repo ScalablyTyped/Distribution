@@ -1,8 +1,55 @@
 package typings.jestCli
 
+import typings.jestCli.anon.Alias
+import typings.jestCli.anon.AliasDefault
+import typings.jestCli.anon.AliasDefaultDescription
+import typings.jestCli.anon.AliasDefaultDescriptionType
+import typings.jestCli.anon.AliasDefaultUndefined
+import typings.jestCli.anon.AliasDefaultUndefinedDescription
+import typings.jestCli.anon.AliasDefaultUndefinedDescriptionString
+import typings.jestCli.anon.AliasDescription
+import typings.jestCli.anon.AliasDescriptionType
+import typings.jestCli.anon.Choices
+import typings.jestCli.anon.Default
+import typings.jestCli.anon.DefaultDescription
+import typings.jestCli.anon.DefaultDescriptionString
+import typings.jestCli.anon.DefaultDescriptionType
+import typings.jestCli.anon.DefaultUndefined
+import typings.jestCli.anon.DefaultUndefinedDescription
+import typings.jestCli.anon.DefaultUndefinedDescriptionString
+import typings.jestCli.anon.DefaultUndefinedDescriptionType
+import typings.jestCli.anon.Description
+import typings.jestCli.anon.DescriptionString
+import typings.jestCli.anon.DescriptionStringType
+import typings.jestCli.anon.DescriptionType
+import typings.jestCli.anon.Nargs
+import typings.jestCli.anon.StringType
+import typings.jestCli.anon.Type
+import typings.jestCli.anon.`0`
+import typings.jestCli.anon.`10`
+import typings.jestCli.anon.`11`
+import typings.jestCli.anon.`12`
+import typings.jestCli.anon.`13`
+import typings.jestCli.anon.`14`
+import typings.jestCli.anon.`15`
+import typings.jestCli.anon.`16`
+import typings.jestCli.anon.`17`
+import typings.jestCli.anon.`18`
+import typings.jestCli.anon.`19`
+import typings.jestCli.anon.`1`
+import typings.jestCli.anon.`20`
+import typings.jestCli.anon.`21`
+import typings.jestCli.anon.`22`
+import typings.jestCli.anon.`23`
+import typings.jestCli.anon.`2`
+import typings.jestCli.anon.`3`
+import typings.jestCli.anon.`4`
+import typings.jestCli.anon.`5`
+import typings.jestCli.anon.`6`
+import typings.jestCli.anon.`7`
+import typings.jestCli.anon.`8`
+import typings.jestCli.anon.`9`
 import typings.jestCli.jestCliBooleans.`true`
-import typings.jestCli.jestCliStrings.`DocumentationColon httpsColonSlashSlashjestjsDotioSlash`
-import typings.jestCli.jestCliStrings.`UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]`
 import typings.jestTypes.configMod.Argv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,113 +58,113 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-cli/build/cli/args", JSImport.Namespace)
 @js.native
 object argsMod extends js.Object {
-  val docs: `DocumentationColon httpsColonSlashSlashjestjsDotioSlash` = js.native
-  val usage: `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]` = js.native
+  val docs: /* "Documentation: https://jestjs.io/" */ String = js.native
+  val usage: /* "Usage: $0 [--config=<pathToConfigFile>] [TestPathPattern]" */ String = js.native
   def check(argv: Argv): `true` = js.native
   @js.native
   object options extends js.Object {
-    val all: AnonDefault = js.native
-    val automock: AnonDescription = js.native
-    val bail: AnonAlias = js.native
-    val browser: AnonDefault = js.native
-    val cache: AnonDefault = js.native
-    val cacheDirectory: AnonType = js.native
-    val changedFilesWithAncestor: AnonDefault = js.native
-    val changedSince: AnonNargs = js.native
-    val ci: AnonDefaultDescription = js.native
-    val clearCache: AnonDefault = js.native
-    val clearMocks: AnonDefault = js.native
-    val collectCoverage: AnonDescriptionType = js.native
-    val collectCoverageFrom: AnonType = js.native
-    val collectCoverageOnlyFrom: AnonString = js.native
-    val color: AnonDefault = js.native
-    val colors: AnonDefaultDescriptionType = js.native
-    val config: AnonAliasDescription = js.native
-    val coverage: AnonDefault = js.native
-    val coverageDirectory: Anon0 = js.native
-    val coveragePathIgnorePatterns: AnonDescriptionString = js.native
-    val coverageProvider: AnonChoices = js.native
-    val coverageReporters: AnonDescriptionString = js.native
-    val coverageThreshold: AnonType = js.native
-    val debug: AnonDefaultUndefined = js.native
-    val detectLeaks: AnonDefaultDescriptionString = js.native
-    val detectOpenHandles: AnonDefaultDescriptionString = js.native
-    val env: AnonType = js.native
-    val errorOnDeprecated: Anon1 = js.native
-    val expand: AnonAliasDefault = js.native
-    val filter: AnonDefaultUndefinedDescriptionString = js.native
-    val findRelatedTests: AnonDefault = js.native
-    val forceExit: AnonDefault = js.native
-    val globalSetup: Anon2 = js.native
-    val globalTeardown: Anon3 = js.native
-    val globals: AnonType = js.native
-    val haste: Anon4 = js.native
-    val init: Anon5 = js.native
-    val json: AnonDefault = js.native
-    val lastCommit: AnonDefault = js.native
-    val listTests: AnonDefaultDescriptionString = js.native
-    val logHeapUsage: AnonDefault = js.native
-    val mapCoverage: AnonDefault = js.native
-    val maxConcurrency: AnonDescriptionStringType = js.native
-    val maxWorkers: AnonAliasDescriptionType = js.native
-    val moduleDirectories: AnonDescriptionString = js.native
-    val moduleFileExtensions: AnonDescriptionString = js.native
-    val moduleNameMapper: AnonType = js.native
-    val modulePathIgnorePatterns: AnonDescriptionString = js.native
-    val modulePaths: AnonDescriptionString = js.native
-    val noStackTrace: AnonDefaultUndefinedDescription = js.native
-    val notifyMode: Anon6 = js.native
+    val all: Default = js.native
+    val automock: Description = js.native
+    val bail: Alias = js.native
+    val browser: Default = js.native
+    val cache: Default = js.native
+    val cacheDirectory: Type = js.native
+    val changedFilesWithAncestor: Default = js.native
+    val changedSince: Nargs = js.native
+    val ci: DefaultDescription = js.native
+    val clearCache: Default = js.native
+    val clearMocks: Default = js.native
+    val collectCoverage: DescriptionType = js.native
+    val collectCoverageFrom: Type = js.native
+    val collectCoverageOnlyFrom: typings.jestCli.anon.String = js.native
+    val color: Default = js.native
+    val colors: DefaultDescriptionType = js.native
+    val config: AliasDescription = js.native
+    val coverage: Default = js.native
+    val coverageDirectory: `0` = js.native
+    val coveragePathIgnorePatterns: DescriptionString = js.native
+    val coverageProvider: Choices = js.native
+    val coverageReporters: DescriptionString = js.native
+    val coverageThreshold: Type = js.native
+    val debug: DefaultUndefined = js.native
+    val detectLeaks: DefaultDescriptionString = js.native
+    val detectOpenHandles: DefaultDescriptionString = js.native
+    val env: Type = js.native
+    val errorOnDeprecated: `1` = js.native
+    val expand: AliasDefault = js.native
+    val filter: DefaultUndefinedDescriptionString = js.native
+    val findRelatedTests: Default = js.native
+    val forceExit: Default = js.native
+    val globalSetup: `2` = js.native
+    val globalTeardown: `3` = js.native
+    val globals: Type = js.native
+    val haste: `4` = js.native
+    val init: `5` = js.native
+    val json: Default = js.native
+    val lastCommit: Default = js.native
+    val listTests: DefaultDescriptionString = js.native
+    val logHeapUsage: Default = js.native
+    val mapCoverage: Default = js.native
+    val maxConcurrency: DescriptionStringType = js.native
+    val maxWorkers: AliasDescriptionType = js.native
+    val moduleDirectories: DescriptionString = js.native
+    val moduleFileExtensions: DescriptionString = js.native
+    val moduleNameMapper: Type = js.native
+    val modulePathIgnorePatterns: DescriptionString = js.native
+    val modulePaths: DescriptionString = js.native
+    val noStackTrace: DefaultUndefinedDescription = js.native
+    val notifyMode: `6` = js.native
     @JSName("notify")
-    val notify_Foptions: AnonDefaultUndefinedDescriptionType = js.native
-    val onlyChanged: AnonAliasDefaultDescription = js.native
-    val onlyFailures: AnonAliasDefaultDescriptionType = js.native
-    val outputFile: AnonType = js.native
-    val passWithNoTests: Anon7 = js.native
-    val preset: Anon8 = js.native
-    val prettierPath: Anon9 = js.native
-    val projects: AnonDescriptionString = js.native
-    val reporters: AnonStringType = js.native
-    val resetMocks: AnonDefault = js.native
-    val resetModules: AnonDefault = js.native
-    val resolver: Anon10 = js.native
-    val restoreMocks: AnonDefault = js.native
-    val rootDir: AnonType = js.native
-    val roots: AnonDescriptionString = js.native
-    val runInBand: AnonAliasDefaultUndefined = js.native
-    val runTestsByPath: AnonDefaultDescriptionString = js.native
-    val runner: Anon11 = js.native
-    val setupFiles: AnonDescriptionString = js.native
-    val setupFilesAfterEnv: AnonDescriptionString = js.native
-    val showConfig: Anon12 = js.native
-    val silent: Anon13 = js.native
-    val skipFilter: AnonDefault = js.native
-    val snapshotSerializers: AnonDescriptionString = js.native
-    val testEnvironment: Anon14 = js.native
-    val testEnvironmentOptions: AnonType = js.native
-    val testFailureExitCode: Anon15 = js.native
-    val testLocationInResults: Anon16 = js.native
-    val testMatch: Anon17 = js.native
-    val testNamePattern: Anon18 = js.native
-    val testPathIgnorePatterns: AnonDescriptionString = js.native
-    val testPathPattern: AnonDescriptionString = js.native
-    val testRegex: Anon19 = js.native
-    val testResultsProcessor: AnonType = js.native
-    val testRunner: AnonType = js.native
-    val testSequencer: AnonType = js.native
-    val testTimeout: Anon20 = js.native
-    val testURL: Anon21 = js.native
-    val timers: AnonType = js.native
-    val transform: AnonType = js.native
-    val transformIgnorePatterns: AnonDescriptionString = js.native
-    val unmockedModulePathPatterns: AnonDescriptionString = js.native
-    val updateSnapshot: AnonAliasDefaultUndefinedDescriptionString = js.native
-    val useStderr: Anon22 = js.native
-    val verbose: Anon23 = js.native
-    val version: AnonAliasDefaultUndefinedDescription = js.native
-    val watch: AnonDefault = js.native
-    val watchAll: AnonDefault = js.native
-    val watchPathIgnorePatterns: AnonDescriptionString = js.native
-    val watchman: AnonDefault = js.native
+    val notify_Foptions: DefaultUndefinedDescriptionType = js.native
+    val onlyChanged: AliasDefaultDescription = js.native
+    val onlyFailures: AliasDefaultDescriptionType = js.native
+    val outputFile: Type = js.native
+    val passWithNoTests: `7` = js.native
+    val preset: `8` = js.native
+    val prettierPath: `9` = js.native
+    val projects: DescriptionString = js.native
+    val reporters: StringType = js.native
+    val resetMocks: Default = js.native
+    val resetModules: Default = js.native
+    val resolver: `10` = js.native
+    val restoreMocks: Default = js.native
+    val rootDir: Type = js.native
+    val roots: DescriptionString = js.native
+    val runInBand: AliasDefaultUndefined = js.native
+    val runTestsByPath: DefaultDescriptionString = js.native
+    val runner: `11` = js.native
+    val setupFiles: DescriptionString = js.native
+    val setupFilesAfterEnv: DescriptionString = js.native
+    val showConfig: `12` = js.native
+    val silent: `13` = js.native
+    val skipFilter: Default = js.native
+    val snapshotSerializers: DescriptionString = js.native
+    val testEnvironment: `14` = js.native
+    val testEnvironmentOptions: Type = js.native
+    val testFailureExitCode: `15` = js.native
+    val testLocationInResults: `16` = js.native
+    val testMatch: `17` = js.native
+    val testNamePattern: `18` = js.native
+    val testPathIgnorePatterns: DescriptionString = js.native
+    val testPathPattern: DescriptionString = js.native
+    val testRegex: `19` = js.native
+    val testResultsProcessor: Type = js.native
+    val testRunner: Type = js.native
+    val testSequencer: Type = js.native
+    val testTimeout: `20` = js.native
+    val testURL: `21` = js.native
+    val timers: Type = js.native
+    val transform: Type = js.native
+    val transformIgnorePatterns: DescriptionString = js.native
+    val unmockedModulePathPatterns: DescriptionString = js.native
+    val updateSnapshot: AliasDefaultUndefinedDescriptionString = js.native
+    val useStderr: `22` = js.native
+    val verbose: `23` = js.native
+    val version: AliasDefaultUndefinedDescription = js.native
+    val watch: Default = js.native
+    val watchAll: Default = js.native
+    val watchPathIgnorePatterns: DescriptionString = js.native
+    val watchman: Default = js.native
   }
   
 }

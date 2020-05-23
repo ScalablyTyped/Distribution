@@ -17,9 +17,9 @@ trait IntrospectionScalarType
 
 object IntrospectionScalarType {
   @scala.inline
-  def apply(kind: SCALAR, name: String, description: Maybe[String] = null): IntrospectionScalarType = {
+  def apply(kind: SCALAR, name: String, description: js.UndefOr[Null | Maybe[String]] = js.undefined): IntrospectionScalarType = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionScalarType]
   }
 }

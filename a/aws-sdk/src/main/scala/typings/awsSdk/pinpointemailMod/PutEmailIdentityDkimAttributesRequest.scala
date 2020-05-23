@@ -18,9 +18,9 @@ trait PutEmailIdentityDkimAttributesRequest extends js.Object {
 
 object PutEmailIdentityDkimAttributesRequest {
   @scala.inline
-  def apply(EmailIdentity: Identity, SigningEnabled: js.UndefOr[Boolean] = js.undefined): PutEmailIdentityDkimAttributesRequest = {
+  def apply(EmailIdentity: Identity, SigningEnabled: js.UndefOr[Enabled] = js.undefined): PutEmailIdentityDkimAttributesRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
-    if (!js.isUndefined(SigningEnabled)) __obj.updateDynamic("SigningEnabled")(SigningEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(SigningEnabled)) __obj.updateDynamic("SigningEnabled")(SigningEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEmailIdentityDkimAttributesRequest]
   }
 }

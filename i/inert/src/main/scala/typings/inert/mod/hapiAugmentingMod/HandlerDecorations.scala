@@ -1,6 +1,6 @@
 package typings.inert.mod.hapiAugmentingMod
 
-import typings.inert.AnonRelativeTo
+import typings.inert.anon.RelativeTo
 import typings.inert.mod.DirectoryHandlerRouteObject
 import typings.inert.mod.FileHandlerRouteObject
 import typings.inert.mod.RequestHandler
@@ -32,7 +32,7 @@ trait HandlerDecorations extends js.Object {
     * @see {@link https://github.com/hapijs/inert#the-file-handler}
     */
   var file: js.UndefOr[String | RequestHandler[String] | FileHandlerRouteObject] = js.undefined
-  var files: js.UndefOr[AnonRelativeTo] = js.undefined
+  var files: js.UndefOr[RelativeTo] = js.undefined
 }
 
 object HandlerDecorations {
@@ -40,7 +40,7 @@ object HandlerDecorations {
   def apply(
     directory: DirectoryHandlerRouteObject = null,
     file: String | RequestHandler[String] | FileHandlerRouteObject = null,
-    files: AnonRelativeTo = null
+    files: RelativeTo = null
   ): HandlerDecorations = {
     val __obj = js.Dynamic.literal()
     if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])

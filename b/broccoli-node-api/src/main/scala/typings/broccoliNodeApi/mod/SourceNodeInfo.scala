@@ -27,10 +27,10 @@ object SourceNodeInfo {
     nodeType: source,
     sourceDirectory: String,
     watched: Boolean,
-    annotation: String = null
+    annotation: js.UndefOr[Null | String] = js.undefined
   ): SourceNodeInfo = {
     val __obj = js.Dynamic.literal(instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], sourceDirectory = sourceDirectory.asInstanceOf[js.Any], watched = watched.asInstanceOf[js.Any])
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotation)) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceNodeInfo]
   }
 }

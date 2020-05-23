@@ -7,24 +7,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when an item collides with a boundary.
-			 */
+  * Fired when an item collides with a boundary.
+  */
 trait CollisionBehaviorBoundarycollisionEvent extends CollisionBehaviorBaseEvent {
   /**
-  				 * Identifier of the boundary the item collided with.
-  				 */
+    * Identifier of the boundary the item collided with.
+    */
   var identifier: String
   /**
-  				 * Item that collided with the boundary.
-  				 */
+    * Item that collided with the boundary.
+    */
   var item: View
   /**
-  				 * Point of the collision when it started. Only returned when `start` is `true`.
-  				 */
+    * Point of the collision when it started. Only returned when `start` is `true`.
+    */
   var point: Point
   /**
-  				 * Returns `true` if the collision started else `false`.
-  				 */
+    * Returns `true` if the collision started else `false`.
+    */
   var start: Boolean
 }
 

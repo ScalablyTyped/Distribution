@@ -21,11 +21,15 @@ trait GetStorageInfoSuccess extends js.Object {
 
 object GetStorageInfoSuccess {
   @scala.inline
-  def apply(currentSize: Int | Double = null, keys: js.Array[String] = null, limitSize: Int | Double = null): GetStorageInfoSuccess = {
+  def apply(
+    currentSize: js.UndefOr[Double] = js.undefined,
+    keys: js.Array[String] = null,
+    limitSize: js.UndefOr[Double] = js.undefined
+  ): GetStorageInfoSuccess = {
     val __obj = js.Dynamic.literal()
-    if (currentSize != null) __obj.updateDynamic("currentSize")(currentSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentSize)) __obj.updateDynamic("currentSize")(currentSize.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (limitSize != null) __obj.updateDynamic("limitSize")(limitSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(limitSize)) __obj.updateDynamic("limitSize")(limitSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStorageInfoSuccess]
   }
 }

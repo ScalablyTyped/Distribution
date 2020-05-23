@@ -33,14 +33,14 @@ object GetResourcesRequest {
   def apply(
     AuthenticationToken: AuthenticationHeaderType = null,
     CollectionType: ResourceCollectionType = null,
-    Limit: Int | Double = null,
+    Limit: js.UndefOr[LimitType] = js.undefined,
     Marker: PageMarkerType = null,
     UserId: IdType = null
   ): GetResourcesRequest = {
     val __obj = js.Dynamic.literal()
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
     if (CollectionType != null) __obj.updateDynamic("CollectionType")(CollectionType.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcesRequest]

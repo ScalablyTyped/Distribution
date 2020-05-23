@@ -5,15 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.DrawingTools")
 @js.native
-class DrawingTools_ protected () extends js.Object {
-  /**
-    * @constructor
-    * @requires The Microsoft.Maps.DrawingTools module.
-    * @param map A map instanct to attach the drawing tools to.
-    */
-  def this(map: Map) = this()
+trait DrawingTools_ extends js.Object {
   /**
     * Initializes the drawing layer and instructs it to create a new shape of a given type.
     * @param shapeType The type of new shape to create.

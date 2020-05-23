@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 trait ShapeUpdateData extends js.Object {
   /**
     *
-    * Returns or sets the alternative description text for a Shape object.
+    * Specifies the alternative description text for a Shape object.
     *
     * [Api set: ExcelApi 1.9]
     */
   var altTextDescription: js.UndefOr[String] = js.undefined
   /**
     *
-    * Returns or sets the alternative title text for a Shape object.
+    * Specifies the alternative title text for a Shape object.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -33,7 +33,7 @@ trait ShapeUpdateData extends js.Object {
   var fill: js.UndefOr[ShapeFillUpdateData] = js.undefined
   /**
     *
-    * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
+    * Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -42,7 +42,7 @@ trait ShapeUpdateData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Represents the height, in points, of the shape.
+    * Specifies the height, in points, of the shape.
     Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi 1.9]
@@ -65,14 +65,14 @@ trait ShapeUpdateData extends js.Object {
   var lineFormat: js.UndefOr[ShapeLineFormatUpdateData] = js.undefined
   /**
     *
-    * Specifies whether or not the aspect ratio of this shape is locked.
+    * Specifies if the aspect ratio of this shape is locked.
     *
     * [Api set: ExcelApi 1.9]
     */
   var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the name of the shape.
+    * Specifies the name of the shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -86,7 +86,7 @@ trait ShapeUpdateData extends js.Object {
   var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.undefined
   /**
     *
-    * Represents the rotation, in degrees, of the shape.
+    * Specifies the rotation, in degrees, of the shape.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -101,14 +101,14 @@ trait ShapeUpdateData extends js.Object {
   var top: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the visibility of this shape.
+    * Specifies if the shape is visible.
     *
     * [Api set: ExcelApi 1.9]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the width, in points, of the shape.
+    * Specifies the width, in points, of the shape.
     Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi 1.9]
@@ -123,32 +123,32 @@ object ShapeUpdateData {
     altTextTitle: String = null,
     fill: ShapeFillUpdateData = null,
     geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any = null,
-    height: Int | Double = null,
-    left: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    left: js.UndefOr[Double] = js.undefined,
     lineFormat: ShapeLineFormatUpdateData = null,
     lockAspectRatio: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     placement: Placement | TwoCell | OneCell | Absolute = null,
-    rotation: Int | Double = null,
-    top: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
+    top: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ShapeUpdateData = {
     val __obj = js.Dynamic.literal()
     if (altTextDescription != null) __obj.updateDynamic("altTextDescription")(altTextDescription.asInstanceOf[js.Any])
     if (altTextTitle != null) __obj.updateDynamic("altTextTitle")(altTextTitle.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (geometricShapeType != null) __obj.updateDynamic("geometricShapeType")(geometricShapeType.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (lineFormat != null) __obj.updateDynamic("lineFormat")(lineFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeUpdateData]
   }
 }

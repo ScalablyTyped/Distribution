@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object NetworkCostType extends js.Object {
   /** The connection is costed on a per-byte basis. */
   @js.native
   sealed trait variable extends NetworkCostType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NetworkCostType with Double] = js.native
-  /* 2 */ @js.native
-  object fixed extends TopLevel[fixed with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 1 */ @js.native
-  object unrestricted extends TopLevel[unrestricted with Double]
-  
-  /* 3 */ @js.native
-  object variable extends TopLevel[variable with Double]
   
 }
 

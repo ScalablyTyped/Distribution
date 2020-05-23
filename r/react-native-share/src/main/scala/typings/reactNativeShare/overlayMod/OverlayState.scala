@@ -14,9 +14,9 @@ trait OverlayState extends js.Object {
 
 object OverlayState {
   @scala.inline
-  def apply(fadeAnim: Value, overlayStyle: StyleProp[ViewProps] = null): OverlayState = {
+  def apply(fadeAnim: Value, overlayStyle: js.UndefOr[Null | StyleProp[ViewProps]] = js.undefined): OverlayState = {
     val __obj = js.Dynamic.literal(fadeAnim = fadeAnim.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayStyle)) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayState]
   }
 }

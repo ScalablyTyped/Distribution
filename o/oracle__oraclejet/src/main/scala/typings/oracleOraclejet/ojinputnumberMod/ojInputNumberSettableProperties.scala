@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojinputnumberMod
 
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonInstruction
-import typings.oracleOraclejet.AnonNumberRange
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.Instruction
+import typings.oracleOraclejet.anon.NumberRange
 import typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties
 import typings.oracleOraclejet.ojmessagingMod.^
 import typings.oracleOraclejet.ojvalidationBaseMod.AsyncValidator
@@ -37,7 +37,7 @@ trait ojInputNumberSettableProperties extends editableValueSettableProperties[Do
   var required: Boolean
   var step: Double | Null
   @JSName("translations")
-  var translations_ojInputNumberSettableProperties: AnonNumberRange
+  var translations_ojInputNumberSettableProperties: NumberRange
   var validators: js.Array[Validator[Double] | RegisteredValidator]
   var virtualKeyboard: auto | number | text
 }
@@ -50,33 +50,26 @@ object ojInputNumberSettableProperties {
     autofocus: Boolean,
     converter: Converter[Double] | RegisteredConverter,
     disabled: Boolean,
-    displayOptions: AnonConverterHint,
-    help: AnonInstruction,
-    helpHints: AnonDefinition,
+    displayOptions: ConverterHint,
+    help: Instruction,
+    helpHints: Definition,
     labelHint: String,
     messagesCustom: js.Array[^],
     rawValue: String,
     required: Boolean,
-    translations: AnonNumberRange,
+    translations: NumberRange,
     valid: valid | pending | invalidHidden | invalidShown,
     validators: js.Array[Validator[Double] | RegisteredValidator],
     virtualKeyboard: auto | number | text,
     describedBy: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: Double = null.asInstanceOf[Double],
+    min: Double = null.asInstanceOf[Double],
     placeholder: String = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
-    value: Int | Double = null
+    readonly: Boolean = null.asInstanceOf[Boolean],
+    step: Double = null.asInstanceOf[Double],
+    value: Double = null.asInstanceOf[Double]
   ): ojInputNumberSettableProperties = {
-    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validators = validators.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any])
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validators = validators.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any], describedBy = describedBy.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojInputNumberSettableProperties]
   }
 }

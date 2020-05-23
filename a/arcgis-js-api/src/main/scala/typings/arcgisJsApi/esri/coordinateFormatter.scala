@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`latitude-band-indicators`
 import typings.arcgisJsApi.arcgisJsApiStrings.`new-180-in-zone-01`
 import typings.arcgisJsApi.arcgisJsApiStrings.`new-180-in-zone-60`
@@ -287,8 +286,4 @@ trait coordinateFormatter extends js.Object {
   @JSName("toUtm")
   def toUtm_northsouthindicators(point: Point, conversionMode: `north-south-indicators`, addSpaces: Boolean): String = js.native
 }
-
-@JSGlobal("__esri.coordinateFormatter")
-@js.native
-object coordinateFormatter extends TopLevel[coordinateFormatter]
 

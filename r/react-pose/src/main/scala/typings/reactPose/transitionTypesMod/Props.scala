@@ -21,7 +21,7 @@ object Props {
   @scala.inline
   def apply(
     children: TransitionChildren[_],
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     animateOnMount: js.UndefOr[Boolean] = js.undefined,
     enterAfterExit: js.UndefOr[Boolean] = js.undefined,
     enterPose: String = null,
@@ -32,11 +32,11 @@ object Props {
   ): Props = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animateOnMount)) __obj.updateDynamic("animateOnMount")(animateOnMount.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterAfterExit)) __obj.updateDynamic("enterAfterExit")(enterAfterExit.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateOnMount)) __obj.updateDynamic("animateOnMount")(animateOnMount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterAfterExit)) __obj.updateDynamic("enterAfterExit")(enterAfterExit.get.asInstanceOf[js.Any])
     if (enterPose != null) __obj.updateDynamic("enterPose")(enterPose.asInstanceOf[js.Any])
     if (exitPose != null) __obj.updateDynamic("exitPose")(exitPose.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipMove)) __obj.updateDynamic("flipMove")(flipMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipMove)) __obj.updateDynamic("flipMove")(flipMove.get.asInstanceOf[js.Any])
     if (onRest != null) __obj.updateDynamic("onRest")(js.Any.fromFunction0(onRest))
     if (preEnterPose != null) __obj.updateDynamic("preEnterPose")(preEnterPose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

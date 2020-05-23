@@ -1,7 +1,7 @@
 package typings.antd.formItemLabelMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.antd.FormItemLabelPropsrequire
+import typings.antd.anon.FormItemLabelPropsrequire
 import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`

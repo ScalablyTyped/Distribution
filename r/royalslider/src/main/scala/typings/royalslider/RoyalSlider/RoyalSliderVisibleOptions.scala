@@ -34,20 +34,20 @@ trait RoyalSliderVisibleOptions extends js.Object {
 object RoyalSliderVisibleOptions {
   @scala.inline
   def apply(
-    breakpoint: Int | Double = null,
-    breakpointCenterArea: Int | Double = null,
+    breakpoint: js.UndefOr[Double] = js.undefined,
+    breakpointCenterArea: js.UndefOr[Double] = js.undefined,
     center: js.UndefOr[Boolean] = js.undefined,
-    centerArea: Int | Double = null,
+    centerArea: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     navigateByCenterClick: js.UndefOr[Boolean] = js.undefined
   ): RoyalSliderVisibleOptions = {
     val __obj = js.Dynamic.literal()
-    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
-    if (breakpointCenterArea != null) __obj.updateDynamic("breakpointCenterArea")(breakpointCenterArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (centerArea != null) __obj.updateDynamic("centerArea")(centerArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigateByCenterClick)) __obj.updateDynamic("navigateByCenterClick")(navigateByCenterClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakpoint)) __obj.updateDynamic("breakpoint")(breakpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakpointCenterArea)) __obj.updateDynamic("breakpointCenterArea")(breakpointCenterArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerArea)) __obj.updateDynamic("centerArea")(centerArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigateByCenterClick)) __obj.updateDynamic("navigateByCenterClick")(navigateByCenterClick.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderVisibleOptions]
   }
 }

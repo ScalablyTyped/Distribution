@@ -4,7 +4,6 @@ import typings.gaxios.commonMod.GaxiosOptions
 import typings.gaxios.commonMod.GaxiosPromise
 import typings.gaxios.commonMod.GaxiosResponse
 import typings.googleAuthLibrary.authclientMod.AuthClient
-import typings.googleAuthLibrary.googleAuthLibraryStrings.httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo
 import typings.googleAuthLibrary.loginticketMod.LoginTicket
 import typings.googleAuthLibrary.transportersMod.BodyResponseCallback
 import typings.std.Error
@@ -246,7 +245,7 @@ object OAuth2Client extends js.Object {
     * The base endpoint for token retrieval.
     */
   val GOOGLE_OAUTH2_TOKEN_URL_ : js.Any = js.native
-  val GOOGLE_TOKEN_INFO_URL: httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo = js.native
+  val GOOGLE_TOKEN_INFO_URL: /* "https://oauth2.googleapis.com/tokeninfo" */ String = js.native
   /**
     * The allowed oauth token issuers.
     */

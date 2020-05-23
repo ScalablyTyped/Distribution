@@ -27,13 +27,13 @@ trait GpuDeviceInfo extends js.Object {
 object GpuDeviceInfo {
   @scala.inline
   def apply(
-    Count: Int | scala.Double = null,
+    Count: js.UndefOr[GpuDeviceCount] = js.undefined,
     Manufacturer: GpuDeviceManufacturerName = null,
     MemoryInfo: GpuDeviceMemoryInfo = null,
     Name: GpuDeviceName = null
   ): GpuDeviceInfo = {
     val __obj = js.Dynamic.literal()
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
     if (Manufacturer != null) __obj.updateDynamic("Manufacturer")(Manufacturer.asInstanceOf[js.Any])
     if (MemoryInfo != null) __obj.updateDynamic("MemoryInfo")(MemoryInfo.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

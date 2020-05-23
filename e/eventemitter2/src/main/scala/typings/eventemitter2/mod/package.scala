@@ -10,7 +10,8 @@ package object mod {
     /* repeated */ js.Any, 
     scala.Unit
   ]
-  type Listener = js.Function1[/* repeated */ js.Any, scala.Unit]
+  type ListenerFn = js.Function1[/* repeated */ js.Any, scala.Unit]
   type WaitForFilter = js.Function1[/* repeated */ js.Any, scala.Boolean]
-  type eventNS = js.Array[java.lang.String]
+  type event = js.Symbol | java.lang.String
+  type eventNS = java.lang.String | js.Array[typings.eventemitter2.mod.event]
 }

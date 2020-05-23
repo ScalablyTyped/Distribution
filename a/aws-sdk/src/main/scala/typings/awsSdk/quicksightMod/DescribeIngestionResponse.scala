@@ -22,11 +22,15 @@ trait DescribeIngestionResponse extends js.Object {
 
 object DescribeIngestionResponse {
   @scala.inline
-  def apply(Ingestion: Ingestion = null, RequestId: java.lang.String = null, Status: Int | scala.Double = null): DescribeIngestionResponse = {
+  def apply(
+    Ingestion: Ingestion = null,
+    RequestId: java.lang.String = null,
+    Status: js.UndefOr[StatusCode] = js.undefined
+  ): DescribeIngestionResponse = {
     val __obj = js.Dynamic.literal()
     if (Ingestion != null) __obj.updateDynamic("Ingestion")(Ingestion.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIngestionResponse]
   }
 }

@@ -13,10 +13,13 @@ trait ScanContextOptions extends js.Object {
 
 object ScanContextOptions {
   @scala.inline
-  def apply(leadingContextLineCount: Int | Double = null, trailingContextLineCount: Int | Double = null): ScanContextOptions = {
+  def apply(
+    leadingContextLineCount: js.UndefOr[Double] = js.undefined,
+    trailingContextLineCount: js.UndefOr[Double] = js.undefined
+  ): ScanContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (leadingContextLineCount != null) __obj.updateDynamic("leadingContextLineCount")(leadingContextLineCount.asInstanceOf[js.Any])
-    if (trailingContextLineCount != null) __obj.updateDynamic("trailingContextLineCount")(trailingContextLineCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(leadingContextLineCount)) __obj.updateDynamic("leadingContextLineCount")(leadingContextLineCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailingContextLineCount)) __obj.updateDynamic("trailingContextLineCount")(trailingContextLineCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanContextOptions]
   }
 }

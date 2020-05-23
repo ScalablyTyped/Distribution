@@ -89,20 +89,20 @@ object IGridOptions {
     modifierKeysToMultiSelect: js.UndefOr[Boolean] = js.undefined,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
     noUnselect: js.UndefOr[Boolean] = js.undefined,
-    selectionRowHeaderWidth: Int | Double = null
+    selectionRowHeaderWidth: js.UndefOr[Double] = js.undefined
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableFooterTotalSelected)) __obj.updateDynamic("enableFooterTotalSelected")(enableFooterTotalSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFullRowSelection)) __obj.updateDynamic("enableFullRowSelection")(enableFullRowSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowHeaderSelection)) __obj.updateDynamic("enableRowHeaderSelection")(enableRowHeaderSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSelectionBatchEvent)) __obj.updateDynamic("enableSelectionBatchEvent")(enableSelectionBatchEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFooterTotalSelected)) __obj.updateDynamic("enableFooterTotalSelected")(enableFooterTotalSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFullRowSelection)) __obj.updateDynamic("enableFullRowSelection")(enableFullRowSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowHeaderSelection)) __obj.updateDynamic("enableRowHeaderSelection")(enableRowHeaderSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSelectionBatchEvent)) __obj.updateDynamic("enableSelectionBatchEvent")(enableSelectionBatchEvent.get.asInstanceOf[js.Any])
     if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction1(isRowSelectable))
-    if (!js.isUndefined(modifierKeysToMultiSelect)) __obj.updateDynamic("modifierKeysToMultiSelect")(modifierKeysToMultiSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(noUnselect)) __obj.updateDynamic("noUnselect")(noUnselect.asInstanceOf[js.Any])
-    if (selectionRowHeaderWidth != null) __obj.updateDynamic("selectionRowHeaderWidth")(selectionRowHeaderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifierKeysToMultiSelect)) __obj.updateDynamic("modifierKeysToMultiSelect")(modifierKeysToMultiSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noUnselect)) __obj.updateDynamic("noUnselect")(noUnselect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionRowHeaderWidth)) __obj.updateDynamic("selectionRowHeaderWidth")(selectionRowHeaderWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

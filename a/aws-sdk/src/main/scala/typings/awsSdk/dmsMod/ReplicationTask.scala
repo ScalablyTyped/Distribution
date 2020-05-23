@@ -74,6 +74,10 @@ trait ReplicationTask extends js.Object {
     * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
     */
   var TargetEndpointArn: js.UndefOr[String] = js.native
+  /**
+    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration User Guide. 
+    */
+  var TaskData: js.UndefOr[String] = js.native
 }
 
 object ReplicationTask {
@@ -95,7 +99,8 @@ object ReplicationTask {
     Status: String = null,
     StopReason: String = null,
     TableMappings: String = null,
-    TargetEndpointArn: String = null
+    TargetEndpointArn: String = null,
+    TaskData: String = null
   ): ReplicationTask = {
     val __obj = js.Dynamic.literal()
     if (CdcStartPosition != null) __obj.updateDynamic("CdcStartPosition")(CdcStartPosition.asInstanceOf[js.Any])
@@ -115,6 +120,7 @@ object ReplicationTask {
     if (StopReason != null) __obj.updateDynamic("StopReason")(StopReason.asInstanceOf[js.Any])
     if (TableMappings != null) __obj.updateDynamic("TableMappings")(TableMappings.asInstanceOf[js.Any])
     if (TargetEndpointArn != null) __obj.updateDynamic("TargetEndpointArn")(TargetEndpointArn.asInstanceOf[js.Any])
+    if (TaskData != null) __obj.updateDynamic("TaskData")(TaskData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationTask]
   }
 }

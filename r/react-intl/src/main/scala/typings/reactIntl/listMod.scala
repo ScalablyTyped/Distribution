@@ -1,6 +1,8 @@
 package typings.reactIntl
 
 import typings.formatjsIntlListformat.mod.default
+import typings.reactIntl.anon.PickIntlConfiglocaleonErr
+import typings.reactIntl.anon.TypeofIntlListFormat
 import typings.std.ConstructorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +16,7 @@ object listMod extends js.Object {
     hasLocaleOnError: PickIntlConfiglocaleonErr,
     getListFormat: js.Function1[/* args */ ConstructorParameters[TypeofIntlListFormat], default],
     values: js.Array[String],
-    options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.FnCall>[1] */ js.Any
+    options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCall>[1] */ js.Any
   ): String = js.native
 }
 

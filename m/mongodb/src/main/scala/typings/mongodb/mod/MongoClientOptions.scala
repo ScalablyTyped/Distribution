@@ -1,6 +1,7 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonPassword
+import typings.mongodb.anon.Compressors
+import typings.mongodb.anon.Password
 import typings.mongodb.mongodbNumbers.`4`
 import typings.mongodb.mongodbNumbers.`6`
 import typings.mongodb.mongodbStrings.DEFAULT
@@ -19,7 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mongodb.mod.HighAvailabilityOptions because var conflicts: domainsEnabled, haInterval, readPreference. Inlined ha, readPreferenceTags
 - typings.mongodb.mod.SSLOptions because Already inherited
 - typings.mongodb.mod.ReplSetOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined maxStalenessSeconds, replicaSet, secondaryAcceptableLatencyMS, connectWithNoPrimary
@@ -39,13 +40,15 @@ import scala.scalajs.js.annotation._
   /**
     * Authentication credentials
     */
-  var auth: js.UndefOr[AnonPassword] = js.undefined
+  var auth: js.UndefOr[Password] = js.undefined
   /**
     * Mechanism for authentication: DEFAULT, GSSAPI, PLAIN, MONGODB-X509, 'MONGODB-CR', SCRAM-SHA-1 or SCRAM-SHA-256
     */
   var authMechanism: js.UndefOr[
     DEFAULT | GSSAPI | PLAIN | `MONGODB-X509` | `MONGODB-CR` | `SCRAM-SHA-1` | `SCRAM-SHA-256` | String
   ] = js.undefined
+  /** Type of compression to use */
+  var compression: js.UndefOr[Compressors] = js.undefined
   var connectWithNoPrimary: js.UndefOr[Boolean] = js.undefined
   /**
     * Default: true; Turn on high availability monitoring.
@@ -104,39 +107,40 @@ import scala.scalajs.js.annotation._
 object MongoClientOptions {
   @scala.inline
   def apply(
-    acceptableLatencyMS: Int | scala.Double = null,
+    acceptableLatencyMS: js.UndefOr[scala.Double] = js.undefined,
     appname: String = null,
-    auth: AnonPassword = null,
+    auth: Password = null,
     authMechanism: DEFAULT | GSSAPI | PLAIN | `MONGODB-X509` | `MONGODB-CR` | `SCRAM-SHA-1` | `SCRAM-SHA-256` | String = null,
     authSource: String = null,
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
-    bufferMaxEntries: Int | scala.Double = null,
+    bufferMaxEntries: js.UndefOr[scala.Double] = js.undefined,
     checkServerIdentity: Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]) = null,
     ciphers: String = null,
-    connectTimeoutMS: Int | scala.Double = null,
+    compression: Compressors = null,
+    connectTimeoutMS: js.UndefOr[scala.Double] = js.undefined,
     connectWithNoPrimary: js.UndefOr[Boolean] = js.undefined,
     domainsEnabled: js.UndefOr[Boolean] = js.undefined,
     ecdhCurve: String = null,
-    family: `4` | `6` = null,
+    family: js.UndefOr[Null | `4` | `6`] = js.undefined,
     forceServerObjectId: js.UndefOr[Boolean] = js.undefined,
     fsync: js.UndefOr[Boolean] = js.undefined,
     ha: js.UndefOr[Boolean] = js.undefined,
-    haInterval: Int | scala.Double = null,
+    haInterval: js.UndefOr[scala.Double] = js.undefined,
     ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
     j: js.UndefOr[Boolean] = js.undefined,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
-    keepAliveInitialDelay: Int | scala.Double = null,
+    keepAliveInitialDelay: js.UndefOr[scala.Double] = js.undefined,
     logger: js.Object | log = null,
     loggerLevel: String = null,
-    maxStalenessSeconds: Int | scala.Double = null,
-    minSize: Int | scala.Double = null,
+    maxStalenessSeconds: js.UndefOr[scala.Double] = js.undefined,
+    minSize: js.UndefOr[scala.Double] = js.undefined,
     monitorCommands: js.UndefOr[Boolean] = js.undefined,
     monitoring: js.UndefOr[Boolean] = js.undefined,
     native_parser: js.UndefOr[Boolean] = js.undefined,
     noDelay: js.UndefOr[Boolean] = js.undefined,
-    numberOfRetries: Int | scala.Double = null,
+    numberOfRetries: js.UndefOr[scala.Double] = js.undefined,
     pkFactory: js.Object = null,
-    poolSize: Int | scala.Double = null,
+    poolSize: js.UndefOr[scala.Double] = js.undefined,
     promiseLibrary: PromiseConstructor = null,
     promoteBuffers: js.UndefOr[Boolean] = js.undefined,
     promoteLongs: js.UndefOr[Boolean] = js.undefined,
@@ -145,16 +149,16 @@ object MongoClientOptions {
     readConcern: ReadConcern | String = null,
     readPreference: ReadPreferenceOrMode = null,
     readPreferenceTags: js.Array[String] = null,
-    reconnectInterval: Int | scala.Double = null,
-    reconnectTries: Int | scala.Double = null,
+    reconnectInterval: js.UndefOr[scala.Double] = js.undefined,
+    reconnectTries: js.UndefOr[scala.Double] = js.undefined,
     replicaSet: String = null,
-    secondaryAcceptableLatencyMS: Int | scala.Double = null,
+    secondaryAcceptableLatencyMS: js.UndefOr[scala.Double] = js.undefined,
     serializeFunctions: js.UndefOr[Boolean] = js.undefined,
-    serverSelectionTimeoutMS: Int | scala.Double = null,
+    serverSelectionTimeoutMS: js.UndefOr[scala.Double] = js.undefined,
     servername: String = null,
     session: ClientSession = null,
     socketOptions: SocketOptions = null,
-    socketTimeoutMS: Int | scala.Double = null,
+    socketTimeoutMS: js.UndefOr[scala.Double] = js.undefined,
     ssl: js.UndefOr[Boolean] = js.undefined,
     sslCA: js.Array[Buffer | String] = null,
     sslCRL: js.Array[Buffer | String] = null,
@@ -173,79 +177,80 @@ object MongoClientOptions {
     useUnifiedTopology: js.UndefOr[Boolean] = js.undefined,
     validateOptions: js.Object | Boolean = null,
     w: scala.Double | majority | String = null,
-    wtimeout: Int | scala.Double = null
+    wtimeout: js.UndefOr[scala.Double] = js.undefined
   ): MongoClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (acceptableLatencyMS != null) __obj.updateDynamic("acceptableLatencyMS")(acceptableLatencyMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptableLatencyMS)) __obj.updateDynamic("acceptableLatencyMS")(acceptableLatencyMS.get.asInstanceOf[js.Any])
     if (appname != null) __obj.updateDynamic("appname")(appname.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (authMechanism != null) __obj.updateDynamic("authMechanism")(authMechanism.asInstanceOf[js.Any])
     if (authSource != null) __obj.updateDynamic("authSource")(authSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
-    if (bufferMaxEntries != null) __obj.updateDynamic("bufferMaxEntries")(bufferMaxEntries.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferMaxEntries)) __obj.updateDynamic("bufferMaxEntries")(bufferMaxEntries.get.asInstanceOf[js.Any])
     if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity.asInstanceOf[js.Any])
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (connectTimeoutMS != null) __obj.updateDynamic("connectTimeoutMS")(connectTimeoutMS.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectWithNoPrimary)) __obj.updateDynamic("connectWithNoPrimary")(connectWithNoPrimary.asInstanceOf[js.Any])
-    if (!js.isUndefined(domainsEnabled)) __obj.updateDynamic("domainsEnabled")(domainsEnabled.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectTimeoutMS)) __obj.updateDynamic("connectTimeoutMS")(connectTimeoutMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectWithNoPrimary)) __obj.updateDynamic("connectWithNoPrimary")(connectWithNoPrimary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainsEnabled)) __obj.updateDynamic("domainsEnabled")(domainsEnabled.get.asInstanceOf[js.Any])
     if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceServerObjectId)) __obj.updateDynamic("forceServerObjectId")(forceServerObjectId.asInstanceOf[js.Any])
-    if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync.asInstanceOf[js.Any])
-    if (!js.isUndefined(ha)) __obj.updateDynamic("ha")(ha.asInstanceOf[js.Any])
-    if (haInterval != null) __obj.updateDynamic("haInterval")(haInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
-    if (keepAliveInitialDelay != null) __obj.updateDynamic("keepAliveInitialDelay")(keepAliveInitialDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(family)) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceServerObjectId)) __obj.updateDynamic("forceServerObjectId")(forceServerObjectId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ha)) __obj.updateDynamic("ha")(ha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(haInterval)) __obj.updateDynamic("haInterval")(haInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAliveInitialDelay)) __obj.updateDynamic("keepAliveInitialDelay")(keepAliveInitialDelay.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (loggerLevel != null) __obj.updateDynamic("loggerLevel")(loggerLevel.asInstanceOf[js.Any])
-    if (maxStalenessSeconds != null) __obj.updateDynamic("maxStalenessSeconds")(maxStalenessSeconds.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitorCommands)) __obj.updateDynamic("monitorCommands")(monitorCommands.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
-    if (!js.isUndefined(native_parser)) __obj.updateDynamic("native_parser")(native_parser.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDelay)) __obj.updateDynamic("noDelay")(noDelay.asInstanceOf[js.Any])
-    if (numberOfRetries != null) __obj.updateDynamic("numberOfRetries")(numberOfRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxStalenessSeconds)) __obj.updateDynamic("maxStalenessSeconds")(maxStalenessSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorCommands)) __obj.updateDynamic("monitorCommands")(monitorCommands.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(native_parser)) __obj.updateDynamic("native_parser")(native_parser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDelay)) __obj.updateDynamic("noDelay")(noDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfRetries)) __obj.updateDynamic("numberOfRetries")(numberOfRetries.get.asInstanceOf[js.Any])
     if (pkFactory != null) __obj.updateDynamic("pkFactory")(pkFactory.asInstanceOf[js.Any])
-    if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(poolSize)) __obj.updateDynamic("poolSize")(poolSize.get.asInstanceOf[js.Any])
     if (promiseLibrary != null) __obj.updateDynamic("promiseLibrary")(promiseLibrary.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (readPreferenceTags != null) __obj.updateDynamic("readPreferenceTags")(readPreferenceTags.asInstanceOf[js.Any])
-    if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])
-    if (reconnectTries != null) __obj.updateDynamic("reconnectTries")(reconnectTries.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectInterval)) __obj.updateDynamic("reconnectInterval")(reconnectInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectTries)) __obj.updateDynamic("reconnectTries")(reconnectTries.get.asInstanceOf[js.Any])
     if (replicaSet != null) __obj.updateDynamic("replicaSet")(replicaSet.asInstanceOf[js.Any])
-    if (secondaryAcceptableLatencyMS != null) __obj.updateDynamic("secondaryAcceptableLatencyMS")(secondaryAcceptableLatencyMS.asInstanceOf[js.Any])
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
-    if (serverSelectionTimeoutMS != null) __obj.updateDynamic("serverSelectionTimeoutMS")(serverSelectionTimeoutMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondaryAcceptableLatencyMS)) __obj.updateDynamic("secondaryAcceptableLatencyMS")(secondaryAcceptableLatencyMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverSelectionTimeoutMS)) __obj.updateDynamic("serverSelectionTimeoutMS")(serverSelectionTimeoutMS.get.asInstanceOf[js.Any])
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (socketOptions != null) __obj.updateDynamic("socketOptions")(socketOptions.asInstanceOf[js.Any])
-    if (socketTimeoutMS != null) __obj.updateDynamic("socketTimeoutMS")(socketTimeoutMS.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketTimeoutMS)) __obj.updateDynamic("socketTimeoutMS")(socketTimeoutMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
     if (sslCA != null) __obj.updateDynamic("sslCA")(sslCA.asInstanceOf[js.Any])
     if (sslCRL != null) __obj.updateDynamic("sslCRL")(sslCRL.asInstanceOf[js.Any])
     if (sslCert != null) __obj.updateDynamic("sslCert")(sslCert.asInstanceOf[js.Any])
     if (sslKey != null) __obj.updateDynamic("sslKey")(sslKey.asInstanceOf[js.Any])
     if (sslPass != null) __obj.updateDynamic("sslPass")(sslPass.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate.asInstanceOf[js.Any])
-    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
-    if (!js.isUndefined(tlsAllowInvalidCertificates)) __obj.updateDynamic("tlsAllowInvalidCertificates")(tlsAllowInvalidCertificates.asInstanceOf[js.Any])
-    if (!js.isUndefined(tlsAllowInvalidHostnames)) __obj.updateDynamic("tlsAllowInvalidHostnames")(tlsAllowInvalidHostnames.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsAllowInvalidCertificates)) __obj.updateDynamic("tlsAllowInvalidCertificates")(tlsAllowInvalidCertificates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsAllowInvalidHostnames)) __obj.updateDynamic("tlsAllowInvalidHostnames")(tlsAllowInvalidHostnames.get.asInstanceOf[js.Any])
     if (tlsCAFile != null) __obj.updateDynamic("tlsCAFile")(tlsCAFile.asInstanceOf[js.Any])
     if (tlsCertificateKeyFile != null) __obj.updateDynamic("tlsCertificateKeyFile")(tlsCertificateKeyFile.asInstanceOf[js.Any])
     if (tlsCertificateKeyFilePassword != null) __obj.updateDynamic("tlsCertificateKeyFilePassword")(tlsCertificateKeyFilePassword.asInstanceOf[js.Any])
-    if (!js.isUndefined(tlsInsecure)) __obj.updateDynamic("tlsInsecure")(tlsInsecure.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNewUrlParser)) __obj.updateDynamic("useNewUrlParser")(useNewUrlParser.asInstanceOf[js.Any])
-    if (!js.isUndefined(useUnifiedTopology)) __obj.updateDynamic("useUnifiedTopology")(useUnifiedTopology.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsInsecure)) __obj.updateDynamic("tlsInsecure")(tlsInsecure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNewUrlParser)) __obj.updateDynamic("useNewUrlParser")(useNewUrlParser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUnifiedTopology)) __obj.updateDynamic("useUnifiedTopology")(useUnifiedTopology.get.asInstanceOf[js.Any])
     if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(wtimeout)) __obj.updateDynamic("wtimeout")(wtimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoClientOptions]
   }
 }

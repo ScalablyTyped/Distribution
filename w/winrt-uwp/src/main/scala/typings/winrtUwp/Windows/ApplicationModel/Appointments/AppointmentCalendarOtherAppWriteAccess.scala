@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object AppointmentCalendarOtherAppWriteAccess extends js.Object {
   /** The operating system can write to the calendar. */
   @js.native
   sealed trait systemOnly extends AppointmentCalendarOtherAppWriteAccess
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppointmentCalendarOtherAppWriteAccess with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object systemOnly extends TopLevel[systemOnly with Double]
   
 }
 

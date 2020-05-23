@@ -153,7 +153,7 @@ trait NotificationMessagePayload
 object NotificationMessagePayload {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.UndefOr[String]] = null,
+    StringDictionary: /* header */ StringDictionary[js.UndefOr[String]] = null,
     badge: String = null,
     body: String = null,
     bodyLocArgs: String = null,

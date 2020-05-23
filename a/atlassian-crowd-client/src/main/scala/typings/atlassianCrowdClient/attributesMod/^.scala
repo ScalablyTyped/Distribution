@@ -1,7 +1,7 @@
 package typings.atlassianCrowdClient.attributesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atlassianCrowdClient.AnonName
+import typings.atlassianCrowdClient.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class ^ protected () extends Attributes {
 @JSImport("atlassian-crowd-client/lib/models/attributes", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def fromCrowd(attributesArr: js.Array[AnonName]): Attributes = js.native
-  def fromCrowd(attributesArr: js.Array[AnonName], parse: js.Function1[/* json */ String, _]): Attributes = js.native
+  def fromCrowd(attributesArr: js.Array[Name]): Attributes = js.native
+  def fromCrowd(attributesArr: js.Array[Name], parse: js.Function1[/* json */ String, _]): Attributes = js.native
 }
 

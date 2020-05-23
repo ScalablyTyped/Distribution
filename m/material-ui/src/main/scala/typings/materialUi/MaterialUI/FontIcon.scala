@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("__MaterialUI.FontIcon")
 @js.native
-class FontIcon ()
+trait FontIcon
   extends Component[FontIconProps, js.Object, js.Any]
 

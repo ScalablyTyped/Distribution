@@ -1,5 +1,6 @@
 package typings.antdMobile
 
+import typings.antdMobile.anon.EnableDragHandle
 import typings.antdMobile.drawerPropsTypeMod.DrawerWebProps
 import typings.react.mod.Component
 import scala.scalajs.js
@@ -19,7 +20,7 @@ object drawerMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonEnableDragHandle = js.native
+    var defaultProps: EnableDragHandle = js.native
   }
   
 }

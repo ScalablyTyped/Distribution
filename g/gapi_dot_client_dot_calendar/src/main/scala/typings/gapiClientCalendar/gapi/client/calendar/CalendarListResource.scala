@@ -1,44 +1,39 @@
 package typings.gapiClientCalendar.gapi.client.calendar
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCalendar.AnonCalendarId
-import typings.gapiClientCalendar.AnonColorRgbFormat
-import typings.gapiClientCalendar.AnonKey
-import typings.gapiClientCalendar.AnonOauthtoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCalendar.anon.AltCalendarId
+import typings.gapiClientCalendar.anon.ColorRgbFormat
+import typings.gapiClientCalendar.anon.MinAccessRole
+import typings.gapiClientCalendar.anon.PageToken
+import typings.gapiClientCalendar.anon.QuotaUser
+import typings.gapiClientCalendar.anon.Resource
+import typings.gapiClientCalendar.anon.UserIp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalendarListResource extends js.Object {
-  /** Deletes an entry on the user's calendar list. */
-  def delete(request: AnonCalendarId): Request_[Unit]
-  /** Returns an entry on the user's calendar list. */
-  def get(request: AnonCalendarId): Request_[CalendarListEntry]
-  /** Adds an entry to the user's calendar list. */
-  def insert(request: AnonColorRgbFormat): Request_[CalendarListEntry]
-  /** Returns entries on the user's calendar list. */
-  def list(request: AnonKey): Request_[CalendarList]
-  /** Updates an entry on the user's calendar list. This method supports patch semantics. */
-  def patch(request: AnonOauthtoken): Request_[CalendarListEntry]
-  /** Updates an entry on the user's calendar list. */
-  def update(request: AnonOauthtoken): Request_[CalendarListEntry]
+  /** Removes a calendar from the user's calendar list. */
+  def delete(): Request[Unit] = js.native
+  def delete(request: QuotaUser): Request[Unit] = js.native
+  /** Returns a calendar from the user's calendar list. */
+  def get(): Request[CalendarListEntry] = js.native
+  def get(request: QuotaUser): Request[CalendarListEntry] = js.native
+  /** Inserts an existing calendar into the user's calendar list. */
+  def insert(request: ColorRgbFormat): Request[CalendarListEntry] = js.native
+  def insert(request: UserIp, body: CalendarListEntry): Request[CalendarListEntry] = js.native
+  /** Returns the calendars on the user's calendar list. */
+  def list(): Request[CalendarList] = js.native
+  def list(request: MinAccessRole): Request[CalendarList] = js.native
+  def patch(request: AltCalendarId, body: CalendarListEntry): Request[CalendarListEntry] = js.native
+  /** Updates an existing calendar on the user's calendar list. This method supports patch semantics. */
+  def patch(request: Resource): Request[CalendarListEntry] = js.native
+  def update(request: AltCalendarId, body: CalendarListEntry): Request[CalendarListEntry] = js.native
+  /** Updates an existing calendar on the user's calendar list. */
+  def update(request: Resource): Request[CalendarListEntry] = js.native
+  def watch(request: MinAccessRole, body: Channel): Request[Channel] = js.native
   /** Watch for changes to CalendarList resources. */
-  def watch(request: AnonKey): Request_[Channel]
-}
-
-object CalendarListResource {
-  @scala.inline
-  def apply(
-    delete: AnonCalendarId => Request_[Unit],
-    get: AnonCalendarId => Request_[CalendarListEntry],
-    insert: AnonColorRgbFormat => Request_[CalendarListEntry],
-    list: AnonKey => Request_[CalendarList],
-    patch: AnonOauthtoken => Request_[CalendarListEntry],
-    update: AnonOauthtoken => Request_[CalendarListEntry],
-    watch: AnonKey => Request_[Channel]
-  ): CalendarListResource = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update), watch = js.Any.fromFunction1(watch))
-    __obj.asInstanceOf[CalendarListResource]
-  }
+  def watch(request: PageToken): Request[Channel] = js.native
 }
 

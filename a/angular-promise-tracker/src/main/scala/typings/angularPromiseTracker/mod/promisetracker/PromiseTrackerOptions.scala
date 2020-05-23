@@ -11,10 +11,10 @@ trait PromiseTrackerOptions extends js.Object {
 
 object PromiseTrackerOptions {
   @scala.inline
-  def apply(activationDelay: Int | Double = null, minDuration: Int | Double = null): PromiseTrackerOptions = {
+  def apply(activationDelay: js.UndefOr[Double] = js.undefined, minDuration: js.UndefOr[Double] = js.undefined): PromiseTrackerOptions = {
     val __obj = js.Dynamic.literal()
-    if (activationDelay != null) __obj.updateDynamic("activationDelay")(activationDelay.asInstanceOf[js.Any])
-    if (minDuration != null) __obj.updateDynamic("minDuration")(minDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(activationDelay)) __obj.updateDynamic("activationDelay")(activationDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDuration)) __obj.updateDynamic("minDuration")(minDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseTrackerOptions]
   }
 }

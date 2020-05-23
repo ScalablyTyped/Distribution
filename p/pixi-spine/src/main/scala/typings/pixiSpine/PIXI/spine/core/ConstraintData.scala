@@ -4,12 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.ConstraintData")
-@js.native
-abstract class ConstraintData protected () extends js.Object {
-  def this(name: String, order: Double, skinRequired: Boolean) = this()
-  var name: String = js.native
-  var order: Double = js.native
-  var skinRequired: Boolean = js.native
+trait ConstraintData extends js.Object {
+  var name: String
+  var order: Double
+  var skinRequired: Boolean
+}
+
+object ConstraintData {
+  @scala.inline
+  def apply(name: String, order: Double, skinRequired: Boolean): ConstraintData = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], skinRequired = skinRequired.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConstraintData]
+  }
 }
 

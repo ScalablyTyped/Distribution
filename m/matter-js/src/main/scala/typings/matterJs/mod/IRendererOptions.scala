@@ -54,18 +54,18 @@ object IRendererOptions {
   def apply(
     background: String = null,
     hasBounds: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    width: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
     wireframeBackground: String = null,
     wireframes: js.UndefOr[Boolean] = js.undefined
   ): IRendererOptions = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasBounds)) __obj.updateDynamic("hasBounds")(hasBounds.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasBounds)) __obj.updateDynamic("hasBounds")(hasBounds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (wireframeBackground != null) __obj.updateDynamic("wireframeBackground")(wireframeBackground.asInstanceOf[js.Any])
-    if (!js.isUndefined(wireframes)) __obj.updateDynamic("wireframes")(wireframes.asInstanceOf[js.Any])
+    if (!js.isUndefined(wireframes)) __obj.updateDynamic("wireframes")(wireframes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRendererOptions]
   }
 }

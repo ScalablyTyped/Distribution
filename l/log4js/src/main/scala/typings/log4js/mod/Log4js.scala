@@ -1,6 +1,5 @@
 package typings.log4js.mod
 
-import typings.log4js.AnonFormat
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +15,7 @@ trait Log4js extends js.Object {
   ): Unit = js.native
   def configure(config: Configuration): Log4js = js.native
   def configure(filename: String): Log4js = js.native
-  def connectLogger(logger: Logger, options: AnonFormat): js.Any = js.native
+  def connectLogger(logger: Logger, options: typings.log4js.anon.Format): js.Any = js.native
   def getLogger(): Logger = js.native
   def getLogger(category: String): Logger = js.native
   def shutdown(cb: js.Function1[/* error */ Error, Unit]): Unit | Null = js.native

@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.libSettingDrawerMod
 
-import typings.antDesignProLayout.MergerSettingsTypeSetting
+import typings.antDesignProLayout.anon.MergerSettingsTypeSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,12 +33,12 @@ object SettingDrawerProps {
     settings: MergerSettingsTypeSetting = null
   ): SettingDrawerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.get.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideColors)) __obj.updateDynamic("hideColors")(hideColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideCopyButton)) __obj.updateDynamic("hideCopyButton")(hideCopyButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideHintAlert)) __obj.updateDynamic("hideHintAlert")(hideHintAlert.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideLoading)) __obj.updateDynamic("hideLoading")(hideLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideColors)) __obj.updateDynamic("hideColors")(hideColors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCopyButton)) __obj.updateDynamic("hideCopyButton")(hideCopyButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideHintAlert)) __obj.updateDynamic("hideHintAlert")(hideHintAlert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideLoading)) __obj.updateDynamic("hideLoading")(hideLoading.get.asInstanceOf[js.Any])
     if (onCollapseChange != null) __obj.updateDynamic("onCollapseChange")(js.Any.fromFunction1(onCollapseChange))
     if (onSettingChange != null) __obj.updateDynamic("onSettingChange")(js.Any.fromFunction1(onSettingChange))
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])

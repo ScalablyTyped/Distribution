@@ -39,8 +39,8 @@ object ParserOptions {
     treeAdapter: TreeAdapter = null
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(scriptingEnabled)) __obj.updateDynamic("scriptingEnabled")(scriptingEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceCodeLocationInfo)) __obj.updateDynamic("sourceCodeLocationInfo")(sourceCodeLocationInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(scriptingEnabled)) __obj.updateDynamic("scriptingEnabled")(scriptingEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceCodeLocationInfo)) __obj.updateDynamic("sourceCodeLocationInfo")(sourceCodeLocationInfo.get.asInstanceOf[js.Any])
     if (treeAdapter != null) __obj.updateDynamic("treeAdapter")(treeAdapter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }

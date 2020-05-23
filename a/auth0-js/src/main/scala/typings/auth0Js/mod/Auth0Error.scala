@@ -30,7 +30,7 @@ object Auth0Error {
     name: String = null,
     original: js.Any = null,
     policy: String = null,
-    statusCode: Int | Double = null,
+    statusCode: js.UndefOr[Double] = js.undefined,
     statusText: String = null
   ): Auth0Error = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
@@ -41,7 +41,7 @@ object Auth0Error {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
     if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0Error]
   }

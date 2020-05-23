@@ -17,9 +17,13 @@ trait TruncateOptions extends js.Object {
 
 object TruncateOptions {
   @scala.inline
-  def apply(length: Int | Double = null, omission: String = null, separator: String | RegExp = null): TruncateOptions = {
+  def apply(
+    length: js.UndefOr[Double] = js.undefined,
+    omission: String = null,
+    separator: String | RegExp = null
+  ): TruncateOptions = {
     val __obj = js.Dynamic.literal()
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (omission != null) __obj.updateDynamic("omission")(omission.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[TruncateOptions]

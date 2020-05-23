@@ -33,15 +33,15 @@ object TextArrayOptions {
   def apply(
     AnalysisScheme: Word = null,
     DefaultValue: FieldValue = null,
-    HighlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    HighlightEnabled: js.UndefOr[Boolean] = js.undefined,
+    ReturnEnabled: js.UndefOr[Boolean] = js.undefined,
     SourceFields: FieldNameCommaList = null
   ): TextArrayOptions = {
     val __obj = js.Dynamic.literal()
     if (AnalysisScheme != null) __obj.updateDynamic("AnalysisScheme")(AnalysisScheme.asInstanceOf[js.Any])
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(HighlightEnabled)) __obj.updateDynamic("HighlightEnabled")(HighlightEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(HighlightEnabled)) __obj.updateDynamic("HighlightEnabled")(HighlightEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled.get.asInstanceOf[js.Any])
     if (SourceFields != null) __obj.updateDynamic("SourceFields")(SourceFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextArrayOptions]
   }

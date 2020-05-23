@@ -34,14 +34,14 @@ object StackFrame {
     module: String = null,
     parameters: js.Array[String] = null,
     properties: PropertyBag = null,
-    threadId: Int | Double = null
+    threadId: js.UndefOr[Double] = js.undefined
   ): StackFrame = {
     val __obj = js.Dynamic.literal()
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
+    if (!js.isUndefined(threadId)) __obj.updateDynamic("threadId")(threadId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrame]
   }
 }

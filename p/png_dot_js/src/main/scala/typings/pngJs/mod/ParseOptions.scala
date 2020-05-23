@@ -12,7 +12,7 @@ object ParseOptions {
   @scala.inline
   def apply(data: js.UndefOr[Boolean] = js.undefined): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

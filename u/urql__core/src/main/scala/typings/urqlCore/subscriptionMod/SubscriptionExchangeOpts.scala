@@ -1,6 +1,6 @@
 package typings.urqlCore.subscriptionMod
 
-import typings.urqlCore.ExecutionResultExecutionR
+import typings.urqlCore.anon.ExecutionResultExecutionR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

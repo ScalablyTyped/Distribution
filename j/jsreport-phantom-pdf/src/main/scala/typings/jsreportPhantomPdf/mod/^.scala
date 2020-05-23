@@ -1,7 +1,7 @@
 package typings.jsreportPhantomPdf.mod
 
 import typings.jsreportCore.mod.ExtensionDefinition
-import typings.jsreportPhantomPdf.PartialOptions
+import typings.jsreportPhantomPdf.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,12 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.DepthCullingState")
 @js.native
-/**
-  * Initializes the state.
-  */
-class DepthCullingState () extends js.Object {
+trait DepthCullingState extends js.Object {
   var _cull: js.Any = js.native
   var _cullFace: js.Any = js.native
   var _depthFunc: js.Any = js.native

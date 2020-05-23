@@ -1,13 +1,13 @@
 package typings.browserfs.emscriptenFsMod
 
-import typings.browserfs.AnonOpts
+import typings.browserfs.anon.Opts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EmscriptenFSNode extends js.Object {
   var mode: Double
-  var mount: AnonOpts
+  var mount: Opts
   var name: String
   var node_ops: EmscriptenNodeOps
   var parent: EmscriptenFSNode
@@ -18,7 +18,7 @@ object EmscriptenFSNode {
   @scala.inline
   def apply(
     mode: Double,
-    mount: AnonOpts,
+    mount: Opts,
     name: String,
     node_ops: EmscriptenNodeOps,
     parent: EmscriptenFSNode,

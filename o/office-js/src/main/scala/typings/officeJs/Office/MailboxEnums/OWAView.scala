@@ -1,6 +1,5 @@
 package typings.officeJs.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,17 +31,6 @@ object OWAView extends js.Object {
     */
   @js.native
   sealed trait TwoColumns extends OWAView
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[OWAView with String] = js.native
-  /* "OneColumn" */ @js.native
-  object OneColumn extends TopLevel[OneColumn with String]
-  
-  /* "ThreeColumns" */ @js.native
-  object ThreeColumns extends TopLevel[ThreeColumns with String]
-  
-  /* "TwoColumns" */ @js.native
-  object TwoColumns extends TopLevel[TwoColumns with String]
   
 }
 

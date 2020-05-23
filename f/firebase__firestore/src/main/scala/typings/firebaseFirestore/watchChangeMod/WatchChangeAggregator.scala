@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/watch_change", "WatchChangeAggregator")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/watch_change", "WatchChangeAggregator")
 @js.native
 class WatchChangeAggregator protected () extends js.Object {
   def this(metadataProvider: TargetMetadataProvider) = this()

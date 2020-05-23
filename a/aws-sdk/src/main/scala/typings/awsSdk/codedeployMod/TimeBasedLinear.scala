@@ -18,10 +18,13 @@ trait TimeBasedLinear extends js.Object {
 
 object TimeBasedLinear {
   @scala.inline
-  def apply(linearInterval: Int | Double = null, linearPercentage: Int | Double = null): TimeBasedLinear = {
+  def apply(
+    linearInterval: js.UndefOr[WaitTimeInMins] = js.undefined,
+    linearPercentage: js.UndefOr[Percentage] = js.undefined
+  ): TimeBasedLinear = {
     val __obj = js.Dynamic.literal()
-    if (linearInterval != null) __obj.updateDynamic("linearInterval")(linearInterval.asInstanceOf[js.Any])
-    if (linearPercentage != null) __obj.updateDynamic("linearPercentage")(linearPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(linearInterval)) __obj.updateDynamic("linearInterval")(linearInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linearPercentage)) __obj.updateDynamic("linearPercentage")(linearPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeBasedLinear]
   }
 }

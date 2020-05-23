@@ -31,18 +31,18 @@ trait IScrollablePaneStyles extends js.Object {
 object IScrollablePaneStyles {
   @scala.inline
   def apply(
-    contentContainer: IStyle = null,
-    root: IStyle = null,
-    stickyAbove: IStyle = null,
-    stickyBelow: IStyle = null,
-    stickyBelowItems: IStyle = null
+    contentContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    stickyAbove: js.UndefOr[Null | IStyle] = js.undefined,
+    stickyBelow: js.UndefOr[Null | IStyle] = js.undefined,
+    stickyBelowItems: js.UndefOr[Null | IStyle] = js.undefined
   ): IScrollablePaneStyles = {
     val __obj = js.Dynamic.literal()
-    if (contentContainer != null) __obj.updateDynamic("contentContainer")(contentContainer.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (stickyAbove != null) __obj.updateDynamic("stickyAbove")(stickyAbove.asInstanceOf[js.Any])
-    if (stickyBelow != null) __obj.updateDynamic("stickyBelow")(stickyBelow.asInstanceOf[js.Any])
-    if (stickyBelowItems != null) __obj.updateDynamic("stickyBelowItems")(stickyBelowItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentContainer)) __obj.updateDynamic("contentContainer")(contentContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyAbove)) __obj.updateDynamic("stickyAbove")(stickyAbove.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyBelow)) __obj.updateDynamic("stickyBelow")(stickyBelow.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyBelowItems)) __obj.updateDynamic("stickyBelowItems")(stickyBelowItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScrollablePaneStyles]
   }
 }

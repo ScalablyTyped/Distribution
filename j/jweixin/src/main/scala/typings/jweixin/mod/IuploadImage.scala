@@ -1,6 +1,6 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonServerId
+import typings.jweixin.anon.ServerId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait IuploadImage extends BaseParams {
    // 默认为1，显示进度提示
   // 返回图片的服务器端ID
   @JSName("success")
-  def success_MIuploadImage(res: AnonServerId): Unit
+  def success_MIuploadImage(res: ServerId): Unit
 }
 
 object IuploadImage {
@@ -20,7 +20,7 @@ object IuploadImage {
   def apply(
     isShowProgressTips: Double,
     localId: String,
-    success: AnonServerId => Unit,
+    success: ServerId => Unit,
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IuploadImage = {

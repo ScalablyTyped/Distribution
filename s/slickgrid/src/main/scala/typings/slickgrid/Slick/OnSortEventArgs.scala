@@ -15,7 +15,7 @@ trait OnSortEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
 
 object OnSortEventArgs {
   @scala.inline
-  def apply[T /* <: SlickData */](
+  def apply[T](
     grid: Grid[T],
     multiColumnSort: Boolean,
     sortAsc: Boolean,

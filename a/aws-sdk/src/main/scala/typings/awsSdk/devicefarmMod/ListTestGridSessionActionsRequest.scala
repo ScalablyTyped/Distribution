@@ -22,9 +22,13 @@ trait ListTestGridSessionActionsRequest extends js.Object {
 
 object ListTestGridSessionActionsRequest {
   @scala.inline
-  def apply(sessionArn: DeviceFarmArn, maxResult: Int | scala.Double = null, nextToken: PaginationToken = null): ListTestGridSessionActionsRequest = {
+  def apply(
+    sessionArn: DeviceFarmArn,
+    maxResult: js.UndefOr[MaxPageSize] = js.undefined,
+    nextToken: PaginationToken = null
+  ): ListTestGridSessionActionsRequest = {
     val __obj = js.Dynamic.literal(sessionArn = sessionArn.asInstanceOf[js.Any])
-    if (maxResult != null) __obj.updateDynamic("maxResult")(maxResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResult)) __obj.updateDynamic("maxResult")(maxResult.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTestGridSessionActionsRequest]
   }

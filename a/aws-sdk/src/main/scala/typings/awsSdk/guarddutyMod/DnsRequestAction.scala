@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DnsRequestAction extends js.Object {
   /**
-    * Domain information for the API request.
+    * The domain information for the API request.
     */
   var Domain: js.UndefOr[String] = js.native
 }

@@ -13,7 +13,7 @@ trait ReductionContext
 
 object ReductionContext {
   @scala.inline
-  def apply(m: Double, prime: MPrime, StringDictionary: /* key */ StringDictionary[js.Any] = null): ReductionContext = {
+  def apply(m: Double, prime: MPrime, StringDictionary: /* name */ StringDictionary[js.Any] = null): ReductionContext = {
     val __obj = js.Dynamic.literal(m = m.asInstanceOf[js.Any], prime = prime.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ReductionContext]

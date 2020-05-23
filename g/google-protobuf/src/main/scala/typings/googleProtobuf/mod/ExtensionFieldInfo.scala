@@ -1,7 +1,7 @@
 package typings.googleProtobuf.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleProtobuf.TypeofMessageInstantiable
+import typings.googleProtobuf.anon.TypeofMessageInstantiable
 import typings.googleProtobuf.mod.Message.StaticToObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`

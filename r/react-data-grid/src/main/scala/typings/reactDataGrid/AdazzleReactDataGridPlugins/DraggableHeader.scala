@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AdazzleReactDataGridPlugins.DraggableHeader")
 @js.native
 object DraggableHeader extends js.Object {
-  @js.native
-  class DraggableContainer ()
-    extends Component[js.Any, js.Object, js.Any]
-  
+  type DraggableContainer = Component[js.Any, js.Object, js.Any]
 }
 

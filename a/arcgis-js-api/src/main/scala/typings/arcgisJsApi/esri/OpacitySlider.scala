@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,8 +36,4 @@ trait OpacitySlider extends SmartMappingSliderBase {
   def updateFromVisualVariableResult(visualVariableResult: opacityVisualVariableResult): Unit = js.native
   def updateFromVisualVariableResult(visualVariableResult: opacityVisualVariableResult, histogramResult: HistogramResult): Unit = js.native
 }
-
-@JSGlobal("__esri.OpacitySlider")
-@js.native
-object OpacitySlider extends TopLevel[OpacitySliderConstructor]
 

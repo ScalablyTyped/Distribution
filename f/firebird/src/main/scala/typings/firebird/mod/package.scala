@@ -11,18 +11,18 @@ package object mod {
     *
     * | Firebird  | Node      |
     * | :-------  | :-------- |
-    * | DATE	   |	Date   |
-    * | TIME	   |	Date   |
-    * | TIMESTAMP | 	Date   |
-    * | CHAR      | 	String |
-    * | VARCHAR   | 	String |
-    * | SMALLINT  | 	Integer|
-    * | INTEGER   | 	Integer|
-    * | NUMERIC   | 	Number |
-    * | DECIMAL   | 	Number |
-    * | FLOAT     | 	Number |
-    * | DOUBLE    | 	Number |
-    * | BLOB      | 	FBblob |
+    * | DATE       |    Date   |
+    * | TIME       |    Date   |
+    * | TIMESTAMP |     Date   |
+    * | CHAR      |     String |
+    * | VARCHAR   |     String |
+    * | SMALLINT  |     Integer|
+    * | INTEGER   |     Integer|
+    * | NUMERIC   |     Number |
+    * | DECIMAL   |     Number |
+    * | FLOAT     |     Number |
+    * | DOUBLE    |     Number |
+    * | BLOB      |     FBblob |
     */
   type DataType = typings.std.Date | java.lang.String | scala.Double | typings.firebird.mod.FBBlob
 }

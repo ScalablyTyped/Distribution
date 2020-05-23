@@ -39,14 +39,14 @@ object CreateImageRequest {
     Name: String,
     BlockDeviceMappings: BlockDeviceMappingRequestList = null,
     Description: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    NoReboot: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    NoReboot: js.UndefOr[Boolean] = js.undefined
   ): CreateImageRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(NoReboot)) __obj.updateDynamic("NoReboot")(NoReboot.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NoReboot)) __obj.updateDynamic("NoReboot")(NoReboot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateImageRequest]
   }
 }

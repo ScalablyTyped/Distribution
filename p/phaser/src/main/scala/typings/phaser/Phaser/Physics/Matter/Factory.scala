@@ -30,14 +30,8 @@ import scala.scalajs.js.annotation._
   * directly via your own code or constructors. It is provided as a means to keep your
   * code concise.
   */
-@JSGlobal("Phaser.Physics.Matter.Factory")
 @js.native
-class Factory protected () extends js.Object {
-  /**
-    * 
-    * @param world The Matter World which this Factory adds to.
-    */
-  def this(world: World) = this()
+trait Factory extends js.Object {
   /**
     * The Scene which this Factory's Matter World belongs to.
     */

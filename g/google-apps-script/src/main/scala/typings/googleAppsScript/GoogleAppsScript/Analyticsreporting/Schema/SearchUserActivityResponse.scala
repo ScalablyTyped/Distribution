@@ -15,15 +15,15 @@ object SearchUserActivityResponse {
   @scala.inline
   def apply(
     nextPageToken: String = null,
-    sampleRate: Int | Double = null,
+    sampleRate: js.UndefOr[Double] = js.undefined,
     sessions: js.Array[UserActivitySession] = null,
-    totalRows: Int | Double = null
+    totalRows: js.UndefOr[Double] = js.undefined
   ): SearchUserActivityResponse = {
     val __obj = js.Dynamic.literal()
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     if (sessions != null) __obj.updateDynamic("sessions")(sessions.asInstanceOf[js.Any])
-    if (totalRows != null) __obj.updateDynamic("totalRows")(totalRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalRows)) __obj.updateDynamic("totalRows")(totalRows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchUserActivityResponse]
   }
 }

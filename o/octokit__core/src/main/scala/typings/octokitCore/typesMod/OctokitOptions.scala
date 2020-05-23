@@ -1,27 +1,26 @@
 package typings.octokitCore.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OctokitOptions
-  extends /* option */ StringDictionary[js.Any] {
+  extends /* key */ StringDictionary[js.Any] {
   var auth: js.UndefOr[js.Any] = js.undefined
   var authStrategy: js.UndefOr[js.Any] = js.undefined
-  var request: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitTypes.RequestRequestOptions */ js.Any
-  ] = js.undefined
+  var request: js.UndefOr[RequestRequestOptions] = js.undefined
   var timeZone: js.UndefOr[String] = js.undefined
 }
 
 object OctokitOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* option */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     auth: js.Any = null,
     authStrategy: js.Any = null,
-    request: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitTypes.RequestRequestOptions */ js.Any = null,
+    request: RequestRequestOptions = null,
     timeZone: String = null
   ): OctokitOptions = {
     val __obj = js.Dynamic.literal()

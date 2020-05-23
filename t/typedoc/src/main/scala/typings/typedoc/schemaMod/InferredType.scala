@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.InferredType, 'type' | 'name'> */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait InferredType extends SomeType {
   var name: ModelToObject[String] | String
   var `type`: ModelToObject[String] | String

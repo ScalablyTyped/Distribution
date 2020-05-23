@@ -19,12 +19,12 @@ object AttachmentParams {
     data: String | Buffer | ReadWriteStream,
     contentType: String = null,
     filename: String = null,
-    knownLength: Int | Double = null
+    knownLength: js.UndefOr[Double] = js.undefined
   ): AttachmentParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (knownLength != null) __obj.updateDynamic("knownLength")(knownLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(knownLength)) __obj.updateDynamic("knownLength")(knownLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentParams]
   }
 }

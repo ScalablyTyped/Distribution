@@ -1,7 +1,7 @@
 package typings.babylonjs.vrExperienceHelperMod
 
-import typings.babylonjs.AnonController
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.Controller
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.deviceOrientationCameraMod.DeviceOrientationCamera
 import typings.babylonjs.mathColorMod.Color3
@@ -155,7 +155,7 @@ class VRExperienceHelper protected () extends js.Object {
     * Observable raised when a new mesh is selected based on meshSelectionPredicate.
     * This observable will provide the mesh and the controller used to select the mesh
     */
-  var onMeshSelectedWithController: Observable[AnonController] = js.native
+  var onMeshSelectedWithController: Observable[Controller] = js.native
   /**
     * Observable raised when a new mesh is picked based on meshSelectionPredicate
     */

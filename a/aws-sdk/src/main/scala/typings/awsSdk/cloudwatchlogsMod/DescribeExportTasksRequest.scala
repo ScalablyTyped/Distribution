@@ -27,13 +27,13 @@ trait DescribeExportTasksRequest extends js.Object {
 object DescribeExportTasksRequest {
   @scala.inline
   def apply(
-    limit: Int | Double = null,
+    limit: js.UndefOr[DescribeLimit] = js.undefined,
     nextToken: NextToken = null,
     statusCode: ExportTaskStatusCode = null,
     taskId: ExportTaskId = null
   ): DescribeExportTasksRequest = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])

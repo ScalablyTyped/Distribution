@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Investigation to increase healthcare-related patient-independent knowledge
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ResearchSubject extends DomainResource {
   /**
     * Contains extended information for property 'actualArm'.

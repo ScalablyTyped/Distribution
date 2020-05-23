@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,26 +33,6 @@ object DecoratorShapes extends js.Object {
   //Used to set decorator shape as path
   @js.native
   sealed trait Path extends DecoratorShapes
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DecoratorShapes with Double] = js.native
-  /* 1 */ @js.native
-  object Arrow extends TopLevel[Arrow with Double]
-  
-  /* 3 */ @js.native
-  object Circle extends TopLevel[Circle with Double]
-  
-  /* 4 */ @js.native
-  object Diamond extends TopLevel[Diamond with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 2 */ @js.native
-  object OpenArrow extends TopLevel[OpenArrow with Double]
-  
-  /* 5 */ @js.native
-  object Path extends TopLevel[Path with Double]
   
 }
 

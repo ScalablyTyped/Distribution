@@ -1,21 +1,11 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonMaxAngle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.BoneIKController")
 @js.native
-class BoneIKController protected () extends js.Object {
-  /**
-    * Creates a new BoneIKController
-    * @param mesh defines the mesh to control
-    * @param bone defines the bone to control
-    * @param options defines options to set up the controller
-    */
-  def this(mesh: AbstractMesh, bone: Bone) = this()
-  def this(mesh: AbstractMesh, bone: Bone, options: AnonMaxAngle) = this()
+trait BoneIKController extends js.Object {
   var _adjustRoll: js.Any = js.native
   var _bendAxis: js.Any = js.native
   var _bone1: js.Any = js.native
@@ -73,14 +63,5 @@ class BoneIKController protected () extends js.Object {
     * Force the controller to update the bones
     */
   def update(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.BoneIKController")
-@js.native
-object BoneIKController extends js.Object {
-  var _tmpMats: js.Any = js.native
-  var _tmpQuat: js.Any = js.native
-  var _tmpVecs: js.Any = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.node.NodeJS
 
-import typings.node.AnonEnd
 import typings.node.Buffer
 import typings.node.BufferEncoding
+import typings.node.anon.End
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,11 +14,11 @@ trait ReadableStream extends EventEmitter {
   def isPaused(): Boolean = js.native
   def pause(): this.type = js.native
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   def read(): String | Buffer = js.native
   def read(size: Double): String | Buffer = js.native
   def resume(): this.type = js.native
-  def setEncoding(encoding: String): this.type = js.native
+  def setEncoding(encoding: BufferEncoding): this.type = js.native
   def unpipe(): this.type = js.native
   def unpipe(destination: WritableStream): this.type = js.native
   def unshift(chunk: String): Unit = js.native

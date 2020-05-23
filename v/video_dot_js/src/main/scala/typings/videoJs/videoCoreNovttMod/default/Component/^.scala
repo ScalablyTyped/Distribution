@@ -4,17 +4,17 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.TopLevel
-import typings.videoJs.AnonInstantiable
-import typings.videoJs.AnonInstantiableClickableComponent
-import typings.videoJs.AnonInstantiableMenu
-import typings.videoJs.AnonInstantiableMenuButton
-import typings.videoJs.AnonInstantiableMenuItem
-import typings.videoJs.AnonInstantiableModalDialog
-import typings.videoJs.AnonInstantiableMouseTimeDisplay
-import typings.videoJs.AnonInstantiableSpacer
-import typings.videoJs.AnonInstantiableTimeToolTip
-import typings.videoJs.TypeofComponent
-import typings.videoJs.TypeofPlayer
+import typings.videoJs.anon.Instantiable
+import typings.videoJs.anon.InstantiableClickableComponent
+import typings.videoJs.anon.InstantiableMenu
+import typings.videoJs.anon.InstantiableMenuButton
+import typings.videoJs.anon.InstantiableMenuItem
+import typings.videoJs.anon.InstantiableModalDialog
+import typings.videoJs.anon.InstantiableMouseTimeDisplay
+import typings.videoJs.anon.InstantiableSpacer
+import typings.videoJs.anon.InstantiableTimeToolTip
+import typings.videoJs.anon.TypeofComponent
+import typings.videoJs.anon.TypeofPlayer
 import typings.videoJs.mod.videojs.Component.ReadyCallback
 import typings.videoJs.mod.videojs.ComponentOptions
 import typings.videoJs.mod.videojs.Player
@@ -115,49 +115,49 @@ Instantiable1[/* player */ Player, typings.videoJs.mod.videojs.Component]) with 
     *             return that if it exists.
     */
   @JSName("getComponent")
-  def getComponent_Button(name: Button): AnonInstantiable = js.native
+  def getComponent_Button(name: Button): Instantiable = js.native
   @JSName("getComponent")
-  def getComponent_ClickableComponent(name: ClickableComponent): AnonInstantiableClickableComponent = js.native
+  def getComponent_ClickableComponent(name: ClickableComponent): InstantiableClickableComponent = js.native
   @JSName("getComponent")
   def getComponent_Component(name: typings.videoJs.videoJsStrings.Component): TypeofComponent = js.native
   @JSName("getComponent")
-  def getComponent_Menu(name: Menu): AnonInstantiableMenu = js.native
+  def getComponent_Menu(name: Menu): InstantiableMenu = js.native
   @JSName("getComponent")
-  def getComponent_MenuButton(name: MenuButton): AnonInstantiableMenuButton = js.native
+  def getComponent_MenuButton(name: MenuButton): InstantiableMenuButton = js.native
   @JSName("getComponent")
-  def getComponent_MenuItem(name: MenuItem): AnonInstantiableMenuItem = js.native
+  def getComponent_MenuItem(name: MenuItem): InstantiableMenuItem = js.native
   @JSName("getComponent")
-  def getComponent_ModalDialog(name: ModalDialog): AnonInstantiableModalDialog = js.native
+  def getComponent_ModalDialog(name: ModalDialog): InstantiableModalDialog = js.native
   @JSName("getComponent")
-  def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): AnonInstantiableMouseTimeDisplay = js.native
+  def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): InstantiableMouseTimeDisplay = js.native
   @JSName("getComponent")
   def getComponent_Player(name: typings.videoJs.videoJsStrings.Player): TypeofPlayer = js.native
   @JSName("getComponent")
-  def getComponent_Spacer(name: Spacer): AnonInstantiableSpacer = js.native
+  def getComponent_Spacer(name: Spacer): InstantiableSpacer = js.native
   @JSName("getComponent")
-  def getComponent_TimeTooltip(name: TimeTooltip): AnonInstantiableTimeToolTip = js.native
+  def getComponent_TimeTooltip(name: TimeTooltip): InstantiableTimeToolTip = js.native
   @JSName("getComponent")
-  def getComponent_button(name: button_): AnonInstantiable = js.native
+  def getComponent_button(name: button_): Instantiable = js.native
   @JSName("getComponent")
-  def getComponent_clickablecomponent(name: clickablecomponent_): AnonInstantiableClickableComponent = js.native
+  def getComponent_clickablecomponent(name: clickablecomponent_): InstantiableClickableComponent = js.native
   @JSName("getComponent")
   def getComponent_component(name: component_): TypeofComponent = js.native
   @JSName("getComponent")
-  def getComponent_menu(name: menu_): AnonInstantiableMenu = js.native
+  def getComponent_menu(name: menu_): InstantiableMenu = js.native
   @JSName("getComponent")
-  def getComponent_menubutton(name: menubutton_): AnonInstantiableMenuButton = js.native
+  def getComponent_menubutton(name: menubutton_): InstantiableMenuButton = js.native
   @JSName("getComponent")
-  def getComponent_menuitem(name: menuitem_): AnonInstantiableMenuItem = js.native
+  def getComponent_menuitem(name: menuitem_): InstantiableMenuItem = js.native
   @JSName("getComponent")
-  def getComponent_modaldialog(name: modaldialog_): AnonInstantiableModalDialog = js.native
+  def getComponent_modaldialog(name: modaldialog_): InstantiableModalDialog = js.native
   @JSName("getComponent")
-  def getComponent_mouseTimeDisplay(name: mouseTimeDisplay_): AnonInstantiableMouseTimeDisplay = js.native
+  def getComponent_mouseTimeDisplay(name: mouseTimeDisplay_): InstantiableMouseTimeDisplay = js.native
   @JSName("getComponent")
   def getComponent_player(name: player_): TypeofPlayer = js.native
   @JSName("getComponent")
-  def getComponent_spacer(name: spacer_): AnonInstantiableSpacer = js.native
+  def getComponent_spacer(name: spacer_): InstantiableSpacer = js.native
   @JSName("getComponent")
-  def getComponent_timeTooltip(name: timeTooltip_): AnonInstantiableTimeToolTip = js.native
+  def getComponent_timeTooltip(name: timeTooltip_): InstantiableTimeToolTip = js.native
   /**
     * Register a `Component` with `videojs` given the name and the component.
     *

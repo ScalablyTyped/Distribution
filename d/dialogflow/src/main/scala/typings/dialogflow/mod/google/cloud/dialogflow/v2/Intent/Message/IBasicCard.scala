@@ -22,18 +22,18 @@ trait IBasicCard extends js.Object {
 object IBasicCard {
   @scala.inline
   def apply(
-    buttons: js.Array[IButton] = null,
-    formattedText: String = null,
-    image: IImage = null,
-    subtitle: String = null,
-    title: String = null
+    buttons: js.UndefOr[Null | js.Array[IButton]] = js.undefined,
+    formattedText: js.UndefOr[Null | String] = js.undefined,
+    image: js.UndefOr[Null | IImage] = js.undefined,
+    subtitle: js.UndefOr[Null | String] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined
   ): IBasicCard = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (formattedText != null) __obj.updateDynamic("formattedText")(formattedText.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttons)) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (!js.isUndefined(formattedText)) __obj.updateDynamic("formattedText")(formattedText.asInstanceOf[js.Any])
+    if (!js.isUndefined(image)) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtitle)) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBasicCard]
   }
 }

@@ -65,7 +65,7 @@ object MeshCreateBoxParams {
     unit: millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet` = null
   ): MeshCreateBoxParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic.asInstanceOf[js.Any])
+    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic.get.asInstanceOf[js.Any])
     if (imageFace != null) __obj.updateDynamic("imageFace")(imageFace.asInstanceOf[js.Any])
     if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

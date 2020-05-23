@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jest/globals" : "25.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jest/globals" : "25.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

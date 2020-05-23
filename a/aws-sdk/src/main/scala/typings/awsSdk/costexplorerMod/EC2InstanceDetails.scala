@@ -44,22 +44,22 @@ object EC2InstanceDetails {
   @scala.inline
   def apply(
     AvailabilityZone: GenericString = null,
-    CurrentGeneration: js.UndefOr[Boolean] = js.undefined,
+    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
     Family: GenericString = null,
     InstanceType: GenericString = null,
     Platform: GenericString = null,
     Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[Boolean] = js.undefined,
+    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined,
     Tenancy: GenericString = null
   ): EC2InstanceDetails = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.get.asInstanceOf[js.Any])
     if (Family != null) __obj.updateDynamic("Family")(Family.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.get.asInstanceOf[js.Any])
     if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
     __obj.asInstanceOf[EC2InstanceDetails]
   }

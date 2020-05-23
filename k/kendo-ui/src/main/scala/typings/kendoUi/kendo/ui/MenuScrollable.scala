@@ -10,9 +10,9 @@ trait MenuScrollable extends js.Object {
 
 object MenuScrollable {
   @scala.inline
-  def apply(distance: Int | Double = null): MenuScrollable = {
+  def apply(distance: js.UndefOr[Double] = js.undefined): MenuScrollable = {
     val __obj = js.Dynamic.literal()
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuScrollable]
   }
 }

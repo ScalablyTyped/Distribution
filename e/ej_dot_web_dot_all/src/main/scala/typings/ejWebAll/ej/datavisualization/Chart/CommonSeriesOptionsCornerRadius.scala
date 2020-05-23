@@ -26,16 +26,16 @@ trait CommonSeriesOptionsCornerRadius extends js.Object {
 object CommonSeriesOptionsCornerRadius {
   @scala.inline
   def apply(
-    bottomLeft: Int | Double = null,
-    bottomRight: Int | Double = null,
-    topLeft: Int | Double = null,
-    topRight: Int | Double = null
+    bottomLeft: js.UndefOr[Double] = js.undefined,
+    bottomRight: js.UndefOr[Double] = js.undefined,
+    topLeft: js.UndefOr[Double] = js.undefined,
+    topRight: js.UndefOr[Double] = js.undefined
   ): CommonSeriesOptionsCornerRadius = {
     val __obj = js.Dynamic.literal()
-    if (bottomLeft != null) __obj.updateDynamic("bottomLeft")(bottomLeft.asInstanceOf[js.Any])
-    if (bottomRight != null) __obj.updateDynamic("bottomRight")(bottomRight.asInstanceOf[js.Any])
-    if (topLeft != null) __obj.updateDynamic("topLeft")(topLeft.asInstanceOf[js.Any])
-    if (topRight != null) __obj.updateDynamic("topRight")(topRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomLeft)) __obj.updateDynamic("bottomLeft")(bottomLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomRight)) __obj.updateDynamic("bottomRight")(bottomRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topLeft)) __obj.updateDynamic("topLeft")(topLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topRight)) __obj.updateDynamic("topRight")(topRight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonSeriesOptionsCornerRadius]
   }
 }

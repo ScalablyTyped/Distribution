@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object UIStatus extends js.Object {
   
   @js.native
   sealed trait visible extends UIStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UIStatus with Double] = js.native
-  /* 3 */ @js.native
-  object complete extends TopLevel[complete with Double]
-  
-  /* 1 */ @js.native
-  object hidden extends TopLevel[hidden with Double]
-  
-  /* 0 */ @js.native
-  object unavailable extends TopLevel[unavailable with Double]
-  
-  /* 2 */ @js.native
-  object visible extends TopLevel[visible with Double]
   
 }
 

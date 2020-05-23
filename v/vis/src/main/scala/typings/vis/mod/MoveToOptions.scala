@@ -17,13 +17,13 @@ object MoveToOptions {
     animation: AnimationOptions | Boolean = null,
     offset: Position = null,
     position: Position = null,
-    scale: Int | Double = null
+    scale: js.UndefOr[Double] = js.undefined
   ): MoveToOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveToOptions]
   }
 }

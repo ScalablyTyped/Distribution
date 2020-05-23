@@ -1,7 +1,7 @@
 package typings.prosemirrorState.mod
 
 import typings.prosemirrorModel.mod.Schema
-import typings.prosemirrorState.AnonDestroy
+import typings.prosemirrorState.anon.Destroy
 import typings.prosemirrorView.mod.EditorProps
 import typings.prosemirrorView.mod.EditorView
 import scala.scalajs.js
@@ -55,26 +55,28 @@ trait PluginSpec[T, S /* <: Schema[_, _] */] extends js.Object {
     * will be called when the plugin's state is associated with an
     * editor view.
     */
-  var view: js.UndefOr[(js.Function1[/* p */ EditorView[S], AnonDestroy[S]]) | Null] = js.undefined
+  var view: js.UndefOr[(js.Function1[/* p */ EditorView[S], Destroy[S]]) | Null] = js.undefined
 }
 
 object PluginSpec {
   @scala.inline
-  def apply[T, S /* <: Schema[_, _] */](
-    appendTransaction: (/* transactions */ js.Array[Transaction[S]], /* oldState */ EditorState[S], /* newState */ EditorState[S]) => js.UndefOr[Transaction[S] | Null | Unit] = null,
-    filterTransaction: (/* p1 */ Transaction[S], /* p2 */ EditorState[S]) => Boolean = null,
-    key: PluginKey[T, S] = null,
-    props: EditorProps[S] = null,
-    state: StateField[T, S] = null,
-    view: /* p */ EditorView[S] => AnonDestroy[S] = null
+  def apply[T, S](
+    appendTransaction: js.UndefOr[
+      Null | ((/* transactions */ js.Array[Transaction[S]], /* oldState */ EditorState[S], /* newState */ EditorState[S]) => js.UndefOr[Transaction[S] | Null | Unit])
+    ] = js.undefined,
+    filterTransaction: js.UndefOr[Null | ((/* p1 */ Transaction[S], /* p2 */ EditorState[S]) => Boolean)] = js.undefined,
+    key: js.UndefOr[Null | (PluginKey[T, S])] = js.undefined,
+    props: js.UndefOr[Null | EditorProps[S]] = js.undefined,
+    state: js.UndefOr[Null | (StateField[T, S])] = js.undefined,
+    view: js.UndefOr[Null | (/* p */ EditorView[S] => Destroy[S])] = js.undefined
   ): PluginSpec[T, S] = {
     val __obj = js.Dynamic.literal()
-    if (appendTransaction != null) __obj.updateDynamic("appendTransaction")(js.Any.fromFunction3(appendTransaction))
-    if (filterTransaction != null) __obj.updateDynamic("filterTransaction")(js.Any.fromFunction2(filterTransaction))
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(js.Any.fromFunction1(view))
+    if (!js.isUndefined(appendTransaction)) __obj.updateDynamic("appendTransaction")(if (appendTransaction != null) js.Any.fromFunction3(appendTransaction.asInstanceOf[(/* transactions */ js.Array[Transaction[S]], /* oldState */ EditorState[S], /* newState */ EditorState[S]) => js.UndefOr[Transaction[S] | Null | Unit]]) else null)
+    if (!js.isUndefined(filterTransaction)) __obj.updateDynamic("filterTransaction")(if (filterTransaction != null) js.Any.fromFunction2(filterTransaction.asInstanceOf[(/* p1 */ Transaction[S], /* p2 */ EditorState[S]) => Boolean]) else null)
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(props)) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(view)) __obj.updateDynamic("view")(if (view != null) js.Any.fromFunction1(view.asInstanceOf[/* p */ EditorView[S] => Destroy[S]]) else null)
     __obj.asInstanceOf[PluginSpec[T, S]]
   }
 }

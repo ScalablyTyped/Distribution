@@ -24,19 +24,19 @@ trait IStreamingDetectIntentRequest extends js.Object {
 object IStreamingDetectIntentRequest {
   @scala.inline
   def apply(
-    inputAudio: Uint8Array | String = null,
-    outputAudioConfig: IOutputAudioConfig = null,
-    queryInput: IQueryInput = null,
-    queryParams: IQueryParameters = null,
-    session: String = null,
-    singleUtterance: js.UndefOr[Boolean] = js.undefined
+    inputAudio: js.UndefOr[Null | Uint8Array | String] = js.undefined,
+    outputAudioConfig: js.UndefOr[Null | IOutputAudioConfig] = js.undefined,
+    queryInput: js.UndefOr[Null | IQueryInput] = js.undefined,
+    queryParams: js.UndefOr[Null | IQueryParameters] = js.undefined,
+    session: js.UndefOr[Null | String] = js.undefined,
+    singleUtterance: js.UndefOr[Null | Boolean] = js.undefined
   ): IStreamingDetectIntentRequest = {
     val __obj = js.Dynamic.literal()
-    if (inputAudio != null) __obj.updateDynamic("inputAudio")(inputAudio.asInstanceOf[js.Any])
-    if (outputAudioConfig != null) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
-    if (queryInput != null) __obj.updateDynamic("queryInput")(queryInput.asInstanceOf[js.Any])
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputAudio)) __obj.updateDynamic("inputAudio")(inputAudio.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputAudioConfig)) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryInput)) __obj.updateDynamic("queryInput")(queryInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryParams)) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (!js.isUndefined(singleUtterance)) __obj.updateDynamic("singleUtterance")(singleUtterance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamingDetectIntentRequest]
   }

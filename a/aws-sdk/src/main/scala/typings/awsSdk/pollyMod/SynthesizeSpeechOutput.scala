@@ -25,12 +25,12 @@ object SynthesizeSpeechOutput {
   def apply(
     AudioStream: AudioStream = null,
     ContentType: ContentType = null,
-    RequestCharacters: Int | Double = null
+    RequestCharacters: js.UndefOr[RequestCharacters] = js.undefined
   ): SynthesizeSpeechOutput = {
     val __obj = js.Dynamic.literal()
     if (AudioStream != null) __obj.updateDynamic("AudioStream")(AudioStream.asInstanceOf[js.Any])
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (RequestCharacters != null) __obj.updateDynamic("RequestCharacters")(RequestCharacters.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequestCharacters)) __obj.updateDynamic("RequestCharacters")(RequestCharacters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynthesizeSpeechOutput]
   }
 }

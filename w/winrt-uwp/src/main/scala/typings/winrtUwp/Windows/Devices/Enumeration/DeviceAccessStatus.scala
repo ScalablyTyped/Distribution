@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object DeviceAccessStatus extends js.Object {
   /** The device access is not specified. */
   @js.native
   sealed trait unspecified extends DeviceAccessStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceAccessStatus with Double] = js.native
-  /* 1 */ @js.native
-  object allowed extends TopLevel[allowed with Double]
-  
-  /* 3 */ @js.native
-  object deniedBySystem extends TopLevel[deniedBySystem with Double]
-  
-  /* 2 */ @js.native
-  object deniedByUser extends TopLevel[deniedByUser with Double]
-  
-  /* 0 */ @js.native
-  object unspecified extends TopLevel[unspecified with Double]
   
 }
 

@@ -28,13 +28,13 @@ object GetWorkflowRunsRequest {
   @scala.inline
   def apply(
     Name: NameString,
-    IncludeGraph: js.UndefOr[scala.Boolean] = js.undefined,
-    MaxResults: Int | Double = null,
+    IncludeGraph: js.UndefOr[NullableBoolean] = js.undefined,
+    MaxResults: js.UndefOr[PageSize] = js.undefined,
     NextToken: GenericString = null
   ): GetWorkflowRunsRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeGraph)) __obj.updateDynamic("IncludeGraph")(IncludeGraph.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeGraph)) __obj.updateDynamic("IncludeGraph")(IncludeGraph.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWorkflowRunsRequest]
   }

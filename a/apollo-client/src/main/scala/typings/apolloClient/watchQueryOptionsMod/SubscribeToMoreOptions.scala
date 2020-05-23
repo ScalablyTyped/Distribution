@@ -1,6 +1,6 @@
 package typings.apolloClient.watchQueryOptionsMod
 
-import typings.apolloClient.AnonSubscriptionData
+import typings.apolloClient.anon.SubscriptionData
 import typings.graphql.astMod.DocumentNode
 import typings.std.Error
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object SubscribeToMoreOptions {
   def apply[TData, TSubscriptionVariables, TSubscriptionData](
     document: DocumentNode,
     onError: /* error */ Error => Unit = null,
-    updateQuery: (TData, /* options */ AnonSubscriptionData[TSubscriptionData, TSubscriptionVariables]) => TData = null,
+    updateQuery: (TData, /* options */ SubscriptionData[TSubscriptionData, TSubscriptionVariables]) => TData = null,
     variables: TSubscriptionVariables = null
   ): SubscribeToMoreOptions[TData, TSubscriptionVariables, TSubscriptionData] = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])

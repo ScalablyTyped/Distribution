@@ -43,9 +43,9 @@ object MangoQuery {
     bookmark: String = null,
     execution_stats: js.UndefOr[Boolean] = js.undefined,
     fields: js.Array[String] = null,
-    limit: Int | Double = null,
-    r: Int | Double = null,
-    skip: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    r: js.UndefOr[Double] = js.undefined,
+    skip: js.UndefOr[Double] = js.undefined,
     sort: js.Array[SortOrder] = null,
     stable: js.UndefOr[Boolean] = js.undefined,
     stale: ok | `false` = null,
@@ -54,15 +54,15 @@ object MangoQuery {
   ): MangoQuery = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark.asInstanceOf[js.Any])
-    if (!js.isUndefined(execution_stats)) __obj.updateDynamic("execution_stats")(execution_stats.asInstanceOf[js.Any])
+    if (!js.isUndefined(execution_stats)) __obj.updateDynamic("execution_stats")(execution_stats.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable.asInstanceOf[js.Any])
+    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable.get.asInstanceOf[js.Any])
     if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
     if (use_index != null) __obj.updateDynamic("use_index")(use_index.asInstanceOf[js.Any])
     __obj.asInstanceOf[MangoQuery]
   }

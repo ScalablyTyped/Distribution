@@ -20,27 +20,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * An iOS toolbar, which can contain buttons and certain other controls.
-			 * @deprecated Use the cross-platform [Titanium.UI.Toolbar](Titanium.UI.Toolbar) instead.
-			 */
-@JSGlobal("Titanium.UI.iOS.Toolbar")
+  * An iOS toolbar, which can contain buttons and certain other controls.
+  * @deprecated Use the cross-platform [Titanium.UI.Toolbar](Titanium.UI.Toolbar) instead.
+  */
 @js.native
-class Toolbar () extends View {
+trait Toolbar extends View {
   /**
-  				 * Background color for the toolbar, as a color name or hex triplet.
-  				 */
+    * Background color for the toolbar, as a color name or hex triplet.
+    */
   var barColor: String = js.native
   /**
-  				 * If `true`, the background of the toolbar extends upwards.
-  				 */
+    * If `true`, the background of the toolbar extends upwards.
+    */
   var extendBackground: Boolean = js.native
   /**
-  				 * An array of buttons (or other widgets) contained in the toolbar.
-  				 */
+    * An array of buttons (or other widgets) contained in the toolbar.
+    */
   var items: js.Array[View] = js.native
   /**
-  				 * If `true`, a translucent background color is used for the toolbar.
-  				 */
+    * If `true`, a translucent background color is used for the toolbar.
+    */
   var translucent: Boolean = js.native
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: ToolbarClickEvent): Unit = js.native
@@ -71,44 +70,44 @@ class Toolbar () extends View {
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: ToolbarTwofingertapEvent): Unit = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.Toolbar.barColor> property.
-  				 * @deprecated Access <Titanium.UI.iOS.Toolbar.barColor> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.Toolbar.barColor> property.
+    * @deprecated Access <Titanium.UI.iOS.Toolbar.barColor> instead.
+    */
   def getBarColor(): String = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.Toolbar.extendBackground> property.
-  				 * @deprecated Access <Titanium.UI.iOS.Toolbar.extendBackground> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.Toolbar.extendBackground> property.
+    * @deprecated Access <Titanium.UI.iOS.Toolbar.extendBackground> instead.
+    */
   def getExtendBackground(): Boolean = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.Toolbar.items> property.
-  				 * @deprecated Access <Titanium.UI.iOS.Toolbar.items> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.Toolbar.items> property.
+    * @deprecated Access <Titanium.UI.iOS.Toolbar.items> instead.
+    */
   def getItems(): js.Array[View] = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.Toolbar.translucent> property.
-  				 * @deprecated Access <Titanium.UI.iOS.Toolbar.translucent> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.Toolbar.translucent> property.
+    * @deprecated Access <Titanium.UI.iOS.Toolbar.translucent> instead.
+    */
   def getTranslucent(): Boolean = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.Toolbar.barColor> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.Toolbar.barColor> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.Toolbar.barColor> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.Toolbar.barColor> instead.
+    */
   def setBarColor(barColor: String): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.Toolbar.extendBackground> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.Toolbar.extendBackground> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.Toolbar.extendBackground> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.Toolbar.extendBackground> instead.
+    */
   def setExtendBackground(extendBackground: Boolean): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.Toolbar.items> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.Toolbar.items> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.Toolbar.items> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.Toolbar.items> instead.
+    */
   def setItems(items: js.Array[View]): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.Toolbar.translucent> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.Toolbar.translucent> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.Toolbar.translucent> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.Toolbar.translucent> instead.
+    */
   def setTranslucent(translucent: Boolean): Unit = js.native
 }
 

@@ -14,8 +14,8 @@ object diff extends js.Object {
   }
   
   /**
-  		 * Compare two virtual nodes and return an array of changes to turn the left into the right.
-  		 */
+    * Compare two virtual nodes and return an array of changes to turn the left into the right.
+    */
   def diffNode(prevNode: VirtualElement, nextNode: VirtualElement): js.Array[_] = js.native
   /* static members */
   @js.native

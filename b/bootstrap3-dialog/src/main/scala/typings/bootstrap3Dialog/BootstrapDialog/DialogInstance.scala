@@ -1,6 +1,6 @@
 package typings.bootstrap3Dialog.BootstrapDialog
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 
 trait DialogInstance extends js.Object {
   @JSName("$modal")
-  var $modal: JQuery_[HTMLElement]
+  var $modal: JQuery[HTMLElement]
   @JSName("$modalBody")
-  var $modalBody: JQuery_[HTMLElement]
+  var $modalBody: JQuery[HTMLElement]
   @JSName("$modalContent")
-  var $modalContent: JQuery_[HTMLElement]
+  var $modalContent: JQuery[HTMLElement]
   @JSName("$modalDialog")
-  var $modalDialog: JQuery_[HTMLElement]
+  var $modalDialog: JQuery[HTMLElement]
   @JSName("$modalFooter")
-  var $modalFooter: JQuery_[HTMLElement]
+  var $modalFooter: JQuery[HTMLElement]
   @JSName("$modalHeader")
-  var $modalHeader: JQuery_[HTMLElement]
+  var $modalHeader: JQuery[HTMLElement]
   var opened: Boolean
   var options: DialogOptions
 }
@@ -26,12 +26,12 @@ trait DialogInstance extends js.Object {
 object DialogInstance {
   @scala.inline
   def apply(
-    $modal: JQuery_[HTMLElement],
-    $modalBody: JQuery_[HTMLElement],
-    $modalContent: JQuery_[HTMLElement],
-    $modalDialog: JQuery_[HTMLElement],
-    $modalFooter: JQuery_[HTMLElement],
-    $modalHeader: JQuery_[HTMLElement],
+    $modal: JQuery[HTMLElement],
+    $modalBody: JQuery[HTMLElement],
+    $modalContent: JQuery[HTMLElement],
+    $modalDialog: JQuery[HTMLElement],
+    $modalFooter: JQuery[HTMLElement],
+    $modalHeader: JQuery[HTMLElement],
     opened: Boolean,
     options: DialogOptions
   ): DialogInstance = {

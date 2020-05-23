@@ -26,8 +26,8 @@ object DeviceEnrollmentPlatformRestriction {
     val __obj = js.Dynamic.literal()
     if (osMaximumVersion != null) __obj.updateDynamic("osMaximumVersion")(osMaximumVersion.asInstanceOf[js.Any])
     if (osMinimumVersion != null) __obj.updateDynamic("osMinimumVersion")(osMinimumVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(personalDeviceEnrollmentBlocked)) __obj.updateDynamic("personalDeviceEnrollmentBlocked")(personalDeviceEnrollmentBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(platformBlocked)) __obj.updateDynamic("platformBlocked")(platformBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(personalDeviceEnrollmentBlocked)) __obj.updateDynamic("personalDeviceEnrollmentBlocked")(personalDeviceEnrollmentBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(platformBlocked)) __obj.updateDynamic("platformBlocked")(platformBlocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceEnrollmentPlatformRestriction]
   }
 }

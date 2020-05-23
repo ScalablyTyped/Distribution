@@ -54,8 +54,8 @@ object IosVppApp {
     publisher: String = null,
     publishingState: MobileAppPublishingState = null,
     releaseDateTime: String = null,
-    totalLicenseCount: Int | Double = null,
-    usedLicenseCount: Int | Double = null,
+    totalLicenseCount: js.UndefOr[Double] = js.undefined,
+    usedLicenseCount: js.UndefOr[Double] = js.undefined,
     vppTokenAccountType: VppTokenAccountType = null,
     vppTokenAppleId: String = null,
     vppTokenOrganizationName: String = null
@@ -72,7 +72,7 @@ object IosVppApp {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (informationUrl != null) __obj.updateDynamic("informationUrl")(informationUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.get.asInstanceOf[js.Any])
     if (largeIcon != null) __obj.updateDynamic("largeIcon")(largeIcon.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (licensingType != null) __obj.updateDynamic("licensingType")(licensingType.asInstanceOf[js.Any])
@@ -82,8 +82,8 @@ object IosVppApp {
     if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
     if (publishingState != null) __obj.updateDynamic("publishingState")(publishingState.asInstanceOf[js.Any])
     if (releaseDateTime != null) __obj.updateDynamic("releaseDateTime")(releaseDateTime.asInstanceOf[js.Any])
-    if (totalLicenseCount != null) __obj.updateDynamic("totalLicenseCount")(totalLicenseCount.asInstanceOf[js.Any])
-    if (usedLicenseCount != null) __obj.updateDynamic("usedLicenseCount")(usedLicenseCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalLicenseCount)) __obj.updateDynamic("totalLicenseCount")(totalLicenseCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usedLicenseCount)) __obj.updateDynamic("usedLicenseCount")(usedLicenseCount.get.asInstanceOf[js.Any])
     if (vppTokenAccountType != null) __obj.updateDynamic("vppTokenAccountType")(vppTokenAccountType.asInstanceOf[js.Any])
     if (vppTokenAppleId != null) __obj.updateDynamic("vppTokenAppleId")(vppTokenAppleId.asInstanceOf[js.Any])
     if (vppTokenOrganizationName != null) __obj.updateDynamic("vppTokenOrganizationName")(vppTokenOrganizationName.asInstanceOf[js.Any])

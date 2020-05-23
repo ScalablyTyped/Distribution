@@ -25,11 +25,11 @@ object GetDocumentRequest {
   def apply(
     DocumentId: ResourceIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    IncludeCustomMetadata: js.UndefOr[Boolean] = js.undefined
+    IncludeCustomMetadata: js.UndefOr[BooleanType] = js.undefined
   ): GetDocumentRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any])
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeCustomMetadata)) __obj.updateDynamic("IncludeCustomMetadata")(IncludeCustomMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeCustomMetadata)) __obj.updateDynamic("IncludeCustomMetadata")(IncludeCustomMetadata.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentRequest]
   }
 }

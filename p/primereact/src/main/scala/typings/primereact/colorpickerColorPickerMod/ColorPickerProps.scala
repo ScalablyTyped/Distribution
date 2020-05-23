@@ -1,6 +1,6 @@
 package typings.primereact.colorpickerColorPickerMod
 
-import typings.primereact.AnonId
+import typings.primereact.anon.Id
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait ColorPickerProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var inputId: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function2[/* value */ js.Any, /* target */ AnonId, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function2[/* value */ js.Any, /* target */ Id, Unit]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tabindex: js.UndefOr[String] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
@@ -34,7 +34,7 @@ object ColorPickerProps {
     id: String = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     inputId: String = null,
-    onChange: (/* value */ js.Any, /* target */ AnonId) => Unit = null,
+    onChange: (/* value */ js.Any, /* target */ Id) => Unit = null,
     style: js.Object = null,
     tabindex: String = null,
     tooltip: js.Any = null,
@@ -45,10 +45,10 @@ object ColorPickerProps {
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultColor != null) __obj.updateDynamic("defaultColor")(defaultColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

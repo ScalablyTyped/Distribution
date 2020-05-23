@@ -54,20 +54,20 @@ object SearchOptions {
   @scala.inline
   def apply(
     detailed: js.UndefOr[Boolean] = js.undefined,
-    from: Int | Double = null,
-    limit: Int | Double = null,
-    maintenance: Int | Double = null,
-    popularity: Int | Double = null,
-    quality: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined,
+    maintenance: js.UndefOr[Double] = js.undefined,
+    popularity: js.UndefOr[Double] = js.undefined,
+    quality: js.UndefOr[Double] = js.undefined,
     sortBy: optimal | quality | maintenance | popularity = null
   ): SearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (maintenance != null) __obj.updateDynamic("maintenance")(maintenance.asInstanceOf[js.Any])
-    if (popularity != null) __obj.updateDynamic("popularity")(popularity.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintenance)) __obj.updateDynamic("maintenance")(maintenance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(popularity)) __obj.updateDynamic("popularity")(popularity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }

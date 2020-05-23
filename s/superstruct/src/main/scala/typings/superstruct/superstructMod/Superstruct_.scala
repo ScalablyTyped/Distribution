@@ -1,7 +1,7 @@
 package typings.superstruct.superstructMod
 
 import typings.std.Record
-import typings.superstruct.AnonInstantiable
+import typings.superstruct.anon.Instantiable
 import typings.superstruct.structErrorMod.Branch
 import typings.superstruct.structErrorMod.Path
 import typings.superstruct.structMod.Struct
@@ -15,7 +15,7 @@ trait Superstruct_ extends js.Object {
   /**
     * The class for errors thrown by `Structs`, defaults to [[StructError]].
     */
-  var Error: AnonInstantiable = js.native
+  var Error: Instantiable = js.native
   /**
     * The set of data types that the factory knows.
     */

@@ -35,14 +35,8 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   *
   */
-@JSGlobal("PIXI.NineSlicePlane")
 @js.native
-class NineSlicePlane protected () extends SimplePlane {
-  def this(texture: Texture) = this()
-  def this(texture: Texture, leftWidth: Double) = this()
-  def this(texture: Texture, leftWidth: Double, topHeight: Double) = this()
-  def this(texture: Texture, leftWidth: Double, topHeight: Double, rightWidth: Double) = this()
-  def this(texture: Texture, leftWidth: Double, topHeight: Double, rightWidth: Double, bottomHeight: Double) = this()
+trait NineSlicePlane extends SimplePlane {
   /**
     * The height of the NineSlicePlane, setting this will actually modify the vertices and UV's of this plane
     *

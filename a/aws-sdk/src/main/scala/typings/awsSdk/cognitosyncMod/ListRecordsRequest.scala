@@ -42,14 +42,14 @@ object ListRecordsRequest {
     DatasetName: DatasetName,
     IdentityId: IdentityId,
     IdentityPoolId: IdentityPoolId,
-    LastSyncCount: Int | Double = null,
-    MaxResults: Int | Double = null,
+    LastSyncCount: js.UndefOr[Long] = js.undefined,
+    MaxResults: js.UndefOr[IntegerString] = js.undefined,
     NextToken: String = null,
     SyncSessionToken: SyncSessionToken = null
   ): ListRecordsRequest = {
     val __obj = js.Dynamic.literal(DatasetName = DatasetName.asInstanceOf[js.Any], IdentityId = IdentityId.asInstanceOf[js.Any], IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
-    if (LastSyncCount != null) __obj.updateDynamic("LastSyncCount")(LastSyncCount.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(LastSyncCount)) __obj.updateDynamic("LastSyncCount")(LastSyncCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SyncSessionToken != null) __obj.updateDynamic("SyncSessionToken")(SyncSessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecordsRequest]

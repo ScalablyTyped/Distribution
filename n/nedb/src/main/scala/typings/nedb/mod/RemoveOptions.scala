@@ -15,7 +15,7 @@ object RemoveOptions {
   @scala.inline
   def apply(multi: js.UndefOr[Boolean] = js.undefined): RemoveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveOptions]
   }
 }

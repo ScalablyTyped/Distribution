@@ -8,22 +8,21 @@ trait GetABTestsResponse extends js.Object {
   /**
     * The list of ab tests.
     */
-  val abtests: js.Array[GetABTestResponse] | Null
+  var abtests: js.Array[GetABTestResponse] | Null
   /**
     * The number of ab tests within this response.
     */
-  val count: Double
+  var count: Double
   /**
     * The total of ab tests.
     */
-  val total: Double
+  var total: Double
 }
 
 object GetABTestsResponse {
   @scala.inline
   def apply(count: Double, total: Double, abtests: js.Array[GetABTestResponse] = null): GetABTestsResponse = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-    if (abtests != null) __obj.updateDynamic("abtests")(abtests.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], abtests = abtests.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetABTestsResponse]
   }
 }

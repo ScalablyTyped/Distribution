@@ -1,7 +1,8 @@
 package typings.angularHttpAuth
 
 import typings.angular.mod.IRequestConfig
-import typings.angular.mod._Global_.Function
+import typings.angular.mod.global.Function
+import typings.angularHttpAuth.anon.Reject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +25,7 @@ object mod extends js.Object {
     
     @js.native
     trait IHttpBuffer extends js.Object {
-      def append(config: IRequestConfig, deferred: AnonReject): Unit = js.native
+      def append(config: IRequestConfig, deferred: Reject): Unit = js.native
       def rejectAll(): Unit = js.native
       def rejectAll(reason: js.Any): Unit = js.native
       def retryAll(): Unit = js.native

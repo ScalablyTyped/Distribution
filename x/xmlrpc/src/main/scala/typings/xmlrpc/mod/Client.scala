@@ -1,13 +1,13 @@
 package typings.xmlrpc.mod
 
-import typings.xmlrpc.AnonProcessors
+import typings.xmlrpc.anon.Processors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Client extends js.Object {
   var cookies: js.UndefOr[Cookies] = js.undefined
-  var headersProcessors: AnonProcessors
+  var headersProcessors: Processors
   var isSecure: Boolean
   var options: ClientOptions
   def getCookie(name: String): String
@@ -23,7 +23,7 @@ object Client {
   @scala.inline
   def apply(
     getCookie: String => String,
-    headersProcessors: AnonProcessors,
+    headersProcessors: Processors,
     isSecure: Boolean,
     methodCall: (String, js.Array[_], js.Function2[/* error */ js.Object, /* value */ js.Any, Unit]) => Unit,
     options: ClientOptions,

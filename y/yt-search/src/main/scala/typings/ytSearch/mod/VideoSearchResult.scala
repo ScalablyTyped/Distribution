@@ -1,6 +1,6 @@
 package typings.ytSearch.mod
 
-import typings.ytSearch.AnonSeconds
+import typings.ytSearch.anon.Seconds
 import typings.ytSearch.ytSearchStrings.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait VideoSearchResult extends js.Object {
   var ago: String
   var author: Author
   var description: String
-  var duration: AnonSeconds
+  var duration: Seconds
   var image: String
   var seconds: Double
   var thumbnail: String
@@ -28,7 +28,7 @@ object VideoSearchResult {
     ago: String,
     author: Author,
     description: String,
-    duration: AnonSeconds,
+    duration: Seconds,
     image: String,
     seconds: Double,
     thumbnail: String,

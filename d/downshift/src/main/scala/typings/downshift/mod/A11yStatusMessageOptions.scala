@@ -9,7 +9,7 @@ trait A11yStatusMessageOptions[Item] extends js.Object {
   var highlightedItem: Item
   var inputValue: String
   var isOpen: Boolean
-  var previousResultCount: js.UndefOr[Double] = js.undefined
+  var previousResultCount: Double
   var resultCount: Double
   var selectedItem: Item
   def itemToString(item: Item): String
@@ -22,14 +22,12 @@ object A11yStatusMessageOptions {
     inputValue: String,
     isOpen: Boolean,
     itemToString: Item => String,
+    previousResultCount: Double,
     resultCount: Double,
     selectedItem: Item,
-    highlightedIndex: Int | Double = null,
-    previousResultCount: Int | Double = null
+    highlightedIndex: Double = null.asInstanceOf[Double]
   ): A11yStatusMessageOptions[Item] = {
-    val __obj = js.Dynamic.literal(highlightedItem = highlightedItem.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], itemToString = js.Any.fromFunction1(itemToString), resultCount = resultCount.asInstanceOf[js.Any], selectedItem = selectedItem.asInstanceOf[js.Any])
-    if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
-    if (previousResultCount != null) __obj.updateDynamic("previousResultCount")(previousResultCount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(highlightedItem = highlightedItem.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], itemToString = js.Any.fromFunction1(itemToString), previousResultCount = previousResultCount.asInstanceOf[js.Any], resultCount = resultCount.asInstanceOf[js.Any], selectedItem = selectedItem.asInstanceOf[js.Any], highlightedIndex = highlightedIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[A11yStatusMessageOptions[Item]]
   }
 }

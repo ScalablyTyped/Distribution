@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides access to the parameter value and display text.
   */
-@JSGlobal("ASPxClientDashboardParameterValue")
-@js.native
-class ASPxClientDashboardParameterValue () extends js.Object {
+trait ASPxClientDashboardParameterValue extends js.Object {
   /**
     * Returns the parameter display text.
     */
-  def GetDisplayText(): String = js.native
+  def GetDisplayText(): String
   /**
     * Returns a parameter value.
     */
-  def GetValue(): js.Any = js.native
+  def GetValue(): js.Any
+}
+
+object ASPxClientDashboardParameterValue {
+  @scala.inline
+  def apply(GetDisplayText: () => String, GetValue: () => js.Any): ASPxClientDashboardParameterValue = {
+    val __obj = js.Dynamic.literal(GetDisplayText = js.Any.fromFunction0(GetDisplayText), GetValue = js.Any.fromFunction0(GetValue))
+    __obj.asInstanceOf[ASPxClientDashboardParameterValue]
+  }
 }
 

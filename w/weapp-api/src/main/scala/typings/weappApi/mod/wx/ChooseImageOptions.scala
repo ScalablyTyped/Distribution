@@ -24,14 +24,14 @@ object ChooseImageOptions {
   def apply(
     success: TempFilesData => Unit,
     complete: /* res */ js.Any => Unit = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     fail: /* res */ js.Any => Unit = null,
     sizeType: js.Array[ImageSizeType] = null,
     sourceType: js.Array[ImageSourceType] = null
   ): ChooseImageOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType.asInstanceOf[js.Any])
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])

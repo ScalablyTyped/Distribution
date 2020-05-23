@@ -8,11 +8,11 @@ trait BrowseResponse[TObject] extends js.Object {
   /**
     * The cursor used for iterate on the next page.
     */
-  val cursor: js.UndefOr[String] = js.undefined
+  var cursor: js.UndefOr[String] = js.undefined
   /**
     * The hits per page.
     */
-  val hits: js.Array[TObject with ObjectWithObjectID]
+  var hits: js.Array[TObject with ObjectWithObjectID]
 }
 
 object BrowseResponse {

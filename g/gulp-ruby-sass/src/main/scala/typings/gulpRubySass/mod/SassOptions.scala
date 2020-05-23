@@ -54,7 +54,7 @@ object SassOptions {
     lineNumbers: js.UndefOr[Boolean] = js.undefined,
     loadPath: String | js.Array[String] = null,
     noCache: js.UndefOr[Boolean] = js.undefined,
-    precision: Int | Double = null,
+    precision: js.UndefOr[Double] = js.undefined,
     quiet: js.UndefOr[Boolean] = js.undefined,
     require: String = null,
     scss: js.UndefOr[Boolean] = js.undefined,
@@ -69,26 +69,26 @@ object SassOptions {
   ): SassOptions = {
     val __obj = js.Dynamic.literal()
     if (cacheLocation != null) __obj.updateDynamic("cacheLocation")(cacheLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
-    if (!js.isUndefined(compass)) __obj.updateDynamic("compass")(compass.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugInfo)) __obj.updateDynamic("debugInfo")(debugInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compass)) __obj.updateDynamic("compass")(compass.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugInfo)) __obj.updateDynamic("debugInfo")(debugInfo.get.asInstanceOf[js.Any])
     if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineComments)) __obj.updateDynamic("lineComments")(lineComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineComments)) __obj.updateDynamic("lineComments")(lineComments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers.get.asInstanceOf[js.Any])
     if (loadPath != null) __obj.updateDynamic("loadPath")(loadPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
     if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
-    if (!js.isUndefined(scss)) __obj.updateDynamic("scss")(scss.asInstanceOf[js.Any])
+    if (!js.isUndefined(scss)) __obj.updateDynamic("scss")(scss.get.asInstanceOf[js.Any])
     if (sourcemap != null) __obj.updateDynamic("sourcemap")(sourcemap.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopOnError)) __obj.updateDynamic("stopOnError")(stopOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnError)) __obj.updateDynamic("stopOnError")(stopOnError.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
-    if (!js.isUndefined(unixNewlines)) __obj.updateDynamic("unixNewlines")(unixNewlines.asInstanceOf[js.Any])
+    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unixNewlines)) __obj.updateDynamic("unixNewlines")(unixNewlines.get.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SassOptions]

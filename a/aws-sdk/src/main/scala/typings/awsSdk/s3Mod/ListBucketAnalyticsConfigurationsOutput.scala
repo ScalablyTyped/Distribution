@@ -29,13 +29,13 @@ object ListBucketAnalyticsConfigurationsOutput {
   def apply(
     AnalyticsConfigurationList: AnalyticsConfigurationList = null,
     ContinuationToken: Token = null,
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
     NextContinuationToken: NextToken = null
   ): ListBucketAnalyticsConfigurationsOutput = {
     val __obj = js.Dynamic.literal()
     if (AnalyticsConfigurationList != null) __obj.updateDynamic("AnalyticsConfigurationList")(AnalyticsConfigurationList.asInstanceOf[js.Any])
     if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketAnalyticsConfigurationsOutput]
   }

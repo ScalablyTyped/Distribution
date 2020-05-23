@@ -12,8 +12,8 @@ trait Settings extends js.Object {
   /** Contains the country code used by the store on this device. */
   var storefrontCountryCode: String
   /**
-  		* Called when changes to a device’s restriction information changes.
-  		*/
+    * Called when changes to a device’s restriction information changes.
+    */
   def onRestrictionsChange(): Unit
 }
 

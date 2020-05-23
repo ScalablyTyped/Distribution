@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** QueryResult. */
 trait QueryResult
-  extends /** QueryResult accepts additional properties. */
+  extends /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   /** The collection ID of the collection containing the document for this result. */
   var collection_id: js.UndefOr[String] = js.undefined
@@ -24,8 +24,7 @@ trait QueryResult
 object QueryResult {
   @scala.inline
   def apply(
-    StringDictionary: /** QueryResult accepts additional properties. */
-  /* propName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     collection_id: String = null,
     id: String = null,
     metadata: js.Object = null,

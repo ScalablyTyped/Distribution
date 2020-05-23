@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Show property
-	 */
+  * Show property
+  */
 trait Show extends js.Object {
   var delay: js.UndefOr[Double] = js.undefined
   var effect: js.UndefOr[Boolean | (js.Function1[/* offset */ js.Any, Unit])] = js.undefined
@@ -21,7 +21,7 @@ trait Show extends js.Object {
 object Show {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     effect: Boolean | (js.Function1[/* offset */ js.Any, Unit]) = null,
     event: String | Boolean = null,
     modal: Boolean | Modal = null,
@@ -30,11 +30,11 @@ object Show {
     target: JQuery | Boolean = null
   ): Show = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
+    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.get.asInstanceOf[js.Any])
     if (solo != null) __obj.updateDynamic("solo")(solo.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Show]

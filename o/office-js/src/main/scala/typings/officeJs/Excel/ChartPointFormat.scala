@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartPointFormatData
 import typings.officeJs.Excel.Interfaces.ChartPointFormatLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartPointFormatUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartPointFormat")
 @js.native
-class ChartPointFormat () extends ClientObject {
+trait ChartPointFormat extends ClientObject {
   /**
     *
-    * Represents the border format of a chart data point, which includes color, style, and weight information. Read-only.
+    * Represents the border format of a chart data point, which includes color, style, and weight information.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -31,7 +30,7 @@ class ChartPointFormat () extends ClientObject {
   var context_ChartPointFormat: RequestContext = js.native
   /**
     *
-    * Represents the fill format of a chart, which includes background formatting information. Read-only.
+    * Represents the fill format of a chart, which includes background formatting information.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -43,7 +42,7 @@ class ChartPointFormat () extends ClientObject {
     */
   def load(): ChartPointFormat = js.native
   def load(options: ChartPointFormatLoadOptions): ChartPointFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartPointFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ChartPointFormat = js.native
   def load(propertyNames: String): ChartPointFormat = js.native
   def load(propertyNames: js.Array[String]): ChartPointFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

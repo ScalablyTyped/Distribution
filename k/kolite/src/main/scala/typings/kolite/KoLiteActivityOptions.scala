@@ -22,24 +22,24 @@ object KoLiteActivityOptions {
   def apply(
     align: String = null,
     color: js.Any = null,
-    length: Int | Double = null,
-    padding: Int | Double = null,
-    segments: Int | Double = null,
-    space: Int | Double = null,
-    speed: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
+    padding: js.UndefOr[Double] = js.undefined,
+    segments: js.UndefOr[Double] = js.undefined,
+    space: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined,
     valign: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): KoLiteActivityOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(segments)) __obj.updateDynamic("segments")(segments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(space)) __obj.updateDynamic("space")(space.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KoLiteActivityOptions]
   }
 }

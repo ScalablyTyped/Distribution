@@ -19,11 +19,11 @@ object OAuth2FlowOptions {
     clientId: String,
     tokenUrl: String,
     redirectHost: String = null,
-    redirectPort: Int | Double = null
+    redirectPort: js.UndefOr[Double] = js.undefined
   ): OAuth2FlowOptions = {
     val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
     if (redirectHost != null) __obj.updateDynamic("redirectHost")(redirectHost.asInstanceOf[js.Any])
-    if (redirectPort != null) __obj.updateDynamic("redirectPort")(redirectPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirectPort)) __obj.updateDynamic("redirectPort")(redirectPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2FlowOptions]
   }
 }

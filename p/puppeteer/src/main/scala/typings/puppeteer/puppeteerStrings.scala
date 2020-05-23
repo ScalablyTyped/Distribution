@@ -10,6 +10,7 @@ import typings.puppeteer.mod.MouseButtons
 import typings.puppeteer.mod.PDFFormat
 import typings.puppeteer.mod.Permission
 import typings.puppeteer.mod.Platform
+import typings.puppeteer.mod.Product
 import typings.puppeteer.mod.ResourceType
 import typings.puppeteer.mod.SameSiteSetting
 import typings.puppeteer.mod.TargetType
@@ -127,6 +128,9 @@ object puppeteerStrings {
   sealed trait camera extends Permission
   
   @js.native
+  sealed trait chrome extends Product
+  
+  @js.native
   sealed trait clear extends ConsoleMessageType
   
   @js.native
@@ -197,6 +201,9 @@ object puppeteerStrings {
   
   @js.native
   sealed trait fetch extends ResourceType
+  
+  @js.native
+  sealed trait firefox extends Product
   
   @js.native
   sealed trait font extends ResourceType
@@ -477,6 +484,8 @@ object puppeteerStrings {
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   @scala.inline
+  def chrome: chrome = "chrome".asInstanceOf[chrome]
+  @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
   def `clipboard-read`: `clipboard-read` = "clipboard-read".asInstanceOf[`clipboard-read`]
@@ -524,6 +533,8 @@ object puppeteerStrings {
   def failed: failed = "failed".asInstanceOf[failed]
   @scala.inline
   def fetch: fetch = "fetch".asInstanceOf[fetch]
+  @scala.inline
+  def firefox: firefox = "firefox".asInstanceOf[firefox]
   @scala.inline
   def font: font = "font".asInstanceOf[font]
   @scala.inline

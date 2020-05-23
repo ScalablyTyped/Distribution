@@ -1,6 +1,7 @@
 package typings.backboneAssociations.mod
 
 import typings.backbone.mod.Model
+import typings.backbone.mod.ModelSetOptions
 import typings.backboneAssociations.mod.Associations.IRelation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone", "AssociatedModel")
 @js.native
-class AssociatedModel () extends Model {
+class AssociatedModel ()
+  extends Model[js.Any, ModelSetOptions] {
   var _proxyCalls: js.Any = js.native
   /** Reverse association lookup for objects that contain this object */
   var parents: js.Array[_] = js.native

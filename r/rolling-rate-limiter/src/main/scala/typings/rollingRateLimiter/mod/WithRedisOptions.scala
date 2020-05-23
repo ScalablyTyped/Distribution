@@ -15,11 +15,11 @@ object WithRedisOptions {
     interval: Double,
     maxInInterval: Double,
     redis: CompatibleRedisClient,
-    minDifference: Int | Double = null,
+    minDifference: js.UndefOr[Double] = js.undefined,
     namespace: String = null
   ): WithRedisOptions = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], maxInInterval = maxInInterval.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any])
-    if (minDifference != null) __obj.updateDynamic("minDifference")(minDifference.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDifference)) __obj.updateDynamic("minDifference")(minDifference.get.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithRedisOptions]
   }

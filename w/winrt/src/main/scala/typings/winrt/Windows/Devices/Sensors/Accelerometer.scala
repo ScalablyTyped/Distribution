@@ -4,25 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sensors.Accelerometer")
-@js.native
-class Accelerometer () extends IAccelerometer {
-  /* CompleteClass */
-  override var minimumReportInterval: Double = js.native
-  /* CompleteClass */
-  override var onreadingchanged: js.Any = js.native
-  /* CompleteClass */
-  override var onshaken: js.Any = js.native
-  /* CompleteClass */
-  override var reportInterval: Double = js.native
-  /* CompleteClass */
-  override def getCurrentReading(): AccelerometerReading = js.native
-}
+trait Accelerometer extends IAccelerometer
 
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.Accelerometer")
-@js.native
-object Accelerometer extends js.Object {
-  def getDefault(): Accelerometer = js.native
+object Accelerometer {
+  @scala.inline
+  def apply(
+    getCurrentReading: () => AccelerometerReading,
+    minimumReportInterval: Double,
+    onreadingchanged: js.Any,
+    onshaken: js.Any,
+    reportInterval: Double
+  ): Accelerometer = {
+    val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], onshaken = onshaken.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Accelerometer]
+  }
 }
 

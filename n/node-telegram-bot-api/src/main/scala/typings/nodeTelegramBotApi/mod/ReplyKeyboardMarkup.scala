@@ -20,9 +20,9 @@ object ReplyKeyboardMarkup {
     selective: js.UndefOr[Boolean] = js.undefined
   ): ReplyKeyboardMarkup = {
     val __obj = js.Dynamic.literal(keyboard = keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(one_time_keyboard)) __obj.updateDynamic("one_time_keyboard")(one_time_keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize_keyboard)) __obj.updateDynamic("resize_keyboard")(resize_keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(selective)) __obj.updateDynamic("selective")(selective.asInstanceOf[js.Any])
+    if (!js.isUndefined(one_time_keyboard)) __obj.updateDynamic("one_time_keyboard")(one_time_keyboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize_keyboard)) __obj.updateDynamic("resize_keyboard")(resize_keyboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selective)) __obj.updateDynamic("selective")(selective.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplyKeyboardMarkup]
   }
 }

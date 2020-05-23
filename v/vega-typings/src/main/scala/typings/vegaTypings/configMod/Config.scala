@@ -1,9 +1,10 @@
 package typings.vegaTypings.configMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vegaTypings.AnonBind
+import typings.vegaTypings.anon.Bind
 import typings.vegaTypings.autosizeMod.AutoSize
 import typings.vegaTypings.colorMod.Color
+import typings.vegaTypings.localeMod.Locale
 import typings.vegaTypings.paddingMod.Padding
 import typings.vegaTypings.signalMod.InitSignal
 import typings.vegaTypings.signalMod.NewSignal
@@ -28,7 +29,7 @@ trait Config extends js.Object {
   var axisY: js.UndefOr[AxisConfig] = js.undefined
   var background: js.UndefOr[Null | Color | SignalRef] = js.undefined
    // TODO
-  var events: js.UndefOr[AnonBind] = js.undefined
+  var events: js.UndefOr[Bind] = js.undefined
   var group: js.UndefOr[js.Any] = js.undefined
   var image: js.UndefOr[MarkConfig] = js.undefined
   var legend: js.UndefOr[LegendConfig] = js.undefined
@@ -37,6 +38,7 @@ trait Config extends js.Object {
     * A delimiter, such as a newline character, upon which to break text strings into multiple lines. This property provides a global default for text marks, which is overridden by mark or style config settings, and by the "lineBreak" mark encoding channel. If signal-valued, either string or regular expression (regexp) values are valid.
     */
   var lineBreak: js.UndefOr[String | SignalRef] = js.undefined
+  var locale: js.UndefOr[Locale] = js.undefined
   var mark: js.UndefOr[MarkConfig] = js.undefined
   var padding: js.UndefOr[Padding | SignalRef] = js.undefined
   var path: js.UndefOr[MarkConfig] = js.undefined
@@ -67,13 +69,14 @@ object Config {
     axisTop: AxisConfig = null,
     axisX: AxisConfig = null,
     axisY: AxisConfig = null,
-    background: Color | SignalRef = null,
-    events: AnonBind = null,
+    background: js.UndefOr[Null | Color | SignalRef] = js.undefined,
+    events: Bind = null,
     group: js.Any = null,
     image: MarkConfig = null,
     legend: LegendConfig = null,
     line: MarkConfig = null,
     lineBreak: String | SignalRef = null,
+    locale: Locale = null,
     mark: MarkConfig = null,
     padding: Padding | SignalRef = null,
     path: MarkConfig = null,
@@ -101,13 +104,14 @@ object Config {
     if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
     if (axisX != null) __obj.updateDynamic("axisX")(axisX.asInstanceOf[js.Any])
     if (axisY != null) __obj.updateDynamic("axisY")(axisY.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mark != null) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])

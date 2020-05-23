@@ -74,10 +74,10 @@ object CSVConfig {
     val __obj = js.Dynamic.literal()
     if (columnConfigs != null) __obj.updateDynamic("columnConfigs")(columnConfigs.asInstanceOf[js.Any])
     if (columnNames != null) __obj.updateDynamic("columnNames")(columnNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(configuredColumnsOnly)) __obj.updateDynamic("configuredColumnsOnly")(configuredColumnsOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(delimWhitespace)) __obj.updateDynamic("delimWhitespace")(delimWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(configuredColumnsOnly)) __obj.updateDynamic("configuredColumnsOnly")(configuredColumnsOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delimWhitespace)) __obj.updateDynamic("delimWhitespace")(delimWhitespace.get.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasHeader)) __obj.updateDynamic("hasHeader")(hasHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasHeader)) __obj.updateDynamic("hasHeader")(hasHeader.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSVConfig]
   }
 }

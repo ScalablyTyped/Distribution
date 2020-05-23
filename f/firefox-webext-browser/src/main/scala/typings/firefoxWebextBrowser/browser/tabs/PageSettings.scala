@@ -55,52 +55,52 @@ trait PageSettings extends js.Object {
 object PageSettings {
   @scala.inline
   def apply(
-    edgeBottom: Int | Double = null,
-    edgeLeft: Int | Double = null,
-    edgeRight: Int | Double = null,
-    edgeTop: Int | Double = null,
+    edgeBottom: js.UndefOr[Double] = js.undefined,
+    edgeLeft: js.UndefOr[Double] = js.undefined,
+    edgeRight: js.UndefOr[Double] = js.undefined,
+    edgeTop: js.UndefOr[Double] = js.undefined,
     footerCenter: String = null,
     footerLeft: String = null,
     footerRight: String = null,
     headerCenter: String = null,
     headerLeft: String = null,
     headerRight: String = null,
-    marginBottom: Int | Double = null,
-    marginLeft: Int | Double = null,
-    marginRight: Int | Double = null,
-    marginTop: Int | Double = null,
-    orientation: Int | Double = null,
-    paperHeight: Int | Double = null,
-    paperSizeUnit: Int | Double = null,
-    paperWidth: Int | Double = null,
-    scaling: Int | Double = null,
+    marginBottom: js.UndefOr[Double] = js.undefined,
+    marginLeft: js.UndefOr[Double] = js.undefined,
+    marginRight: js.UndefOr[Double] = js.undefined,
+    marginTop: js.UndefOr[Double] = js.undefined,
+    orientation: js.UndefOr[Double] = js.undefined,
+    paperHeight: js.UndefOr[Double] = js.undefined,
+    paperSizeUnit: js.UndefOr[Double] = js.undefined,
+    paperWidth: js.UndefOr[Double] = js.undefined,
+    scaling: js.UndefOr[Double] = js.undefined,
     showBackgroundColors: js.UndefOr[Boolean] = js.undefined,
     showBackgroundImages: js.UndefOr[Boolean] = js.undefined,
     shrinkToFit: js.UndefOr[Boolean] = js.undefined
   ): PageSettings = {
     val __obj = js.Dynamic.literal()
-    if (edgeBottom != null) __obj.updateDynamic("edgeBottom")(edgeBottom.asInstanceOf[js.Any])
-    if (edgeLeft != null) __obj.updateDynamic("edgeLeft")(edgeLeft.asInstanceOf[js.Any])
-    if (edgeRight != null) __obj.updateDynamic("edgeRight")(edgeRight.asInstanceOf[js.Any])
-    if (edgeTop != null) __obj.updateDynamic("edgeTop")(edgeTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBottom)) __obj.updateDynamic("edgeBottom")(edgeBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeLeft)) __obj.updateDynamic("edgeLeft")(edgeLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeRight)) __obj.updateDynamic("edgeRight")(edgeRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeTop)) __obj.updateDynamic("edgeTop")(edgeTop.get.asInstanceOf[js.Any])
     if (footerCenter != null) __obj.updateDynamic("footerCenter")(footerCenter.asInstanceOf[js.Any])
     if (footerLeft != null) __obj.updateDynamic("footerLeft")(footerLeft.asInstanceOf[js.Any])
     if (footerRight != null) __obj.updateDynamic("footerRight")(footerRight.asInstanceOf[js.Any])
     if (headerCenter != null) __obj.updateDynamic("headerCenter")(headerCenter.asInstanceOf[js.Any])
     if (headerLeft != null) __obj.updateDynamic("headerLeft")(headerLeft.asInstanceOf[js.Any])
     if (headerRight != null) __obj.updateDynamic("headerRight")(headerRight.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (paperHeight != null) __obj.updateDynamic("paperHeight")(paperHeight.asInstanceOf[js.Any])
-    if (paperSizeUnit != null) __obj.updateDynamic("paperSizeUnit")(paperSizeUnit.asInstanceOf[js.Any])
-    if (paperWidth != null) __obj.updateDynamic("paperWidth")(paperWidth.asInstanceOf[js.Any])
-    if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBackgroundColors)) __obj.updateDynamic("showBackgroundColors")(showBackgroundColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBackgroundImages)) __obj.updateDynamic("showBackgroundImages")(showBackgroundImages.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paperHeight)) __obj.updateDynamic("paperHeight")(paperHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paperSizeUnit)) __obj.updateDynamic("paperSizeUnit")(paperSizeUnit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paperWidth)) __obj.updateDynamic("paperWidth")(paperWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaling)) __obj.updateDynamic("scaling")(scaling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBackgroundColors)) __obj.updateDynamic("showBackgroundColors")(showBackgroundColors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBackgroundImages)) __obj.updateDynamic("showBackgroundImages")(showBackgroundImages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSettings]
   }
 }

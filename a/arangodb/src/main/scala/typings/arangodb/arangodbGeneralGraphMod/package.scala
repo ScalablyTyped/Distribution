@@ -8,7 +8,7 @@ package object arangodbGeneralGraphMod {
   type Betweenness = typings.arangodb.arangodbGeneralGraphMod.Eccentricity
   type Closeness = typings.arangodb.arangodbGeneralGraphMod.Eccentricity
   type ClosenessOptions = typings.arangodb.arangodbGeneralGraphMod.ShortestPathOptions
-  type CommonProperties = org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Array[typings.arangodb.AnonId]]]
+  type CommonProperties = org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Array[typings.arangodb.anon.Dictkey]]]
   type CountCommonNeighbors = org.scalablytyped.runtime.StringDictionary[
     js.UndefOr[js.Array[org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]]]]
   ]

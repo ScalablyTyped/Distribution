@@ -1,7 +1,7 @@
 package typings.uiGrid.mod
 
 import typings.angular.mod.IPromise
-import typings.uiGrid.AnonCanvasHeightChanged
+import typings.uiGrid.anon.CanvasHeightChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IGridCoreApi[TEntity] extends js.Object {
   // Events
-  var on: AnonCanvasHeightChanged[TEntity] = js.native
+  var on: CanvasHeightChanged[TEntity] = js.native
   // Methods
   /**
     * adds a row header column to the grid

@@ -35,11 +35,10 @@ object IEffectLayerOptions {
     mainTextureRatio: Double,
     renderingGroupId: Double,
     camera: Nullable[Camera] = null,
-    mainTextureFixedSize: Int | Double = null
+    mainTextureFixedSize: js.UndefOr[Double] = js.undefined
   ): IEffectLayerOptions = {
-    val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any])
-    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (mainTextureFixedSize != null) __obj.updateDynamic("mainTextureFixedSize")(mainTextureFixedSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any])
+    if (!js.isUndefined(mainTextureFixedSize)) __obj.updateDynamic("mainTextureFixedSize")(mainTextureFixedSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEffectLayerOptions]
   }
 }

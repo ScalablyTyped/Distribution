@@ -2,21 +2,21 @@ package typings.parse.nodeMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
-import typings.parse.mod._Global_.Parse.Attributes
-import typings.parse.mod._Global_.Parse.Cloud.AfterDeleteRequest
-import typings.parse.mod._Global_.Parse.Cloud.AfterFindRequest
-import typings.parse.mod._Global_.Parse.Cloud.AfterSaveRequest
-import typings.parse.mod._Global_.Parse.Cloud.BeforeDeleteRequest
-import typings.parse.mod._Global_.Parse.Cloud.BeforeFindRequest
-import typings.parse.mod._Global_.Parse.Cloud.BeforeSaveRequest
-import typings.parse.mod._Global_.Parse.Cloud.FileTriggerRequest
-import typings.parse.mod._Global_.Parse.Cloud.FunctionRequest
-import typings.parse.mod._Global_.Parse.Cloud.HTTPOptions
-import typings.parse.mod._Global_.Parse.Cloud.HttpResponse
-import typings.parse.mod._Global_.Parse.Cloud.JobRequest
-import typings.parse.mod._Global_.Parse.Cloud.Params
-import typings.parse.mod._Global_.Parse.Cloud.RunOptions
-import typings.parse.mod._Global_.Parse.Cloud.TriggerRequest
+import typings.parse.mod.global.Parse.Attributes
+import typings.parse.mod.global.Parse.Cloud.AfterDeleteRequest
+import typings.parse.mod.global.Parse.Cloud.AfterFindRequest
+import typings.parse.mod.global.Parse.Cloud.AfterSaveRequest
+import typings.parse.mod.global.Parse.Cloud.BeforeDeleteRequest
+import typings.parse.mod.global.Parse.Cloud.BeforeFindRequest
+import typings.parse.mod.global.Parse.Cloud.BeforeSaveRequest
+import typings.parse.mod.global.Parse.Cloud.FileTriggerRequest
+import typings.parse.mod.global.Parse.Cloud.FunctionRequest
+import typings.parse.mod.global.Parse.Cloud.HTTPOptions
+import typings.parse.mod.global.Parse.Cloud.HttpResponse
+import typings.parse.mod.global.Parse.Cloud.JobRequest
+import typings.parse.mod.global.Parse.Cloud.Params
+import typings.parse.mod.global.Parse.Cloud.RunOptions
+import typings.parse.mod.global.Parse.Cloud.TriggerRequest
 import typings.parse.parseStrings.define
 import typings.parse.parseStrings.run
 import typings.std.Parameters
@@ -40,7 +40,7 @@ object Cloud extends js.Object {
     *
     *     import Buffer = require("buffer").Buffer;
     */
-  var HTTPOptions: Instantiable0[typings.parse.mod._Global_.Parse.Cloud.HTTPOptions] = js.native
+  var HTTPOptions: Instantiable0[typings.parse.mod.global.Parse.Cloud.HTTPOptions] = js.native
   def afterDelete(arg1: js.Any): Unit = js.native
   def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
   def afterDeleteFile(): Unit = js.native
@@ -65,8 +65,8 @@ object Cloud extends js.Object {
     func: js.Function1[
       /* request */ BeforeFindRequest, 
       (js.Promise[
-        typings.parse.mod._Global_.Parse.Query[typings.parse.mod._Global_.Parse.Object[Attributes]] | Unit
-      ]) | typings.parse.mod._Global_.Parse.Query[typings.parse.mod._Global_.Parse.Object[Attributes]] | Unit
+        typings.parse.mod.global.Parse.Query[typings.parse.mod.global.Parse.Object[Attributes]] | Unit
+      ]) | typings.parse.mod.global.Parse.Query[typings.parse.mod.global.Parse.Object[Attributes]] | Unit
     ]
   ): Unit = js.native
   def beforeLogin(): Unit = js.native
@@ -77,7 +77,7 @@ object Cloud extends js.Object {
   def beforeSaveFile(
     func: js.Function1[
       /* request */ FileTriggerRequest, 
-      js.Thenable[typings.parse.mod._Global_.Parse.File] | Unit
+      js.Thenable[typings.parse.mod.global.Parse.File] | Unit
     ]
   ): Unit = js.native
   def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], _]): Unit = js.native
@@ -109,12 +109,12 @@ object Cloud extends js.Object {
     * @param jobStatusId The Id of Job Status.
     * @returns Status of Job.
     */
-  def getJobStatus(jobStatusId: String): js.Promise[typings.parse.mod._Global_.Parse.Object[Attributes]] = js.native
+  def getJobStatus(jobStatusId: String): js.Promise[typings.parse.mod.global.Parse.Object[Attributes]] = js.native
   /**
     * Gets data for the current set of cloud jobs.
     * @returns A promise that will be resolved with the result of the function.
     */
-  def getJobsData(): js.Promise[typings.parse.mod._Global_.Parse.Object[Attributes]] = js.native
+  def getJobsData(): js.Promise[typings.parse.mod.global.Parse.Object[Attributes]] = js.native
   def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = js.native
   def job(name: String): HttpResponse = js.native
   def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = js.native
@@ -156,13 +156,13 @@ object Cloud extends js.Object {
   // Read preference describes how MongoDB driver route read operations to the members of a replica set.
   @js.native
   object ReadPreferenceOption extends js.Object {
-    /* "NEAREST" */ val Nearest: typings.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.Nearest with String = js.native
-    /* "PRIMARY" */ val Primary: typings.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.Primary with String = js.native
-    /* "PRIMARY_PREFERRED" */ val PrimaryPreferred: typings.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred with String = js.native
-    /* "SECONDARY" */ val Secondary: typings.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.Secondary with String = js.native
-    /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typings.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred with String = js.native
+    /* "NEAREST" */ val Nearest: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Nearest with String = js.native
+    /* "PRIMARY" */ val Primary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Primary with String = js.native
+    /* "PRIMARY_PREFERRED" */ val PrimaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred with String = js.native
+    /* "SECONDARY" */ val Secondary: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Secondary with String = js.native
+    /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred with String = js.native
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption with String] = js.native
+    def apply(value: String): js.UndefOr[typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption with String] = js.native
   }
   
 }

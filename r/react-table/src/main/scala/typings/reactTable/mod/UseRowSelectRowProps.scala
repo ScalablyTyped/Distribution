@@ -1,6 +1,6 @@
 package typings.reactTable.mod
 
-import typings.reactTable.PartialTableToggleRowsSel
+import typings.reactTable.anon.PartialTableToggleRowsSel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

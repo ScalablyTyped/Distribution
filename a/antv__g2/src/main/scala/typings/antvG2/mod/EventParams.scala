@@ -29,8 +29,8 @@ object EventParams {
     target: HTMLCanvasElement = null,
     toElement: HTMLElement = null,
     views: js.Array[View] = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): EventParams = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -39,8 +39,8 @@ object EventParams {
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (toElement != null) __obj.updateDynamic("toElement")(toElement.asInstanceOf[js.Any])
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventParams]
   }
 }

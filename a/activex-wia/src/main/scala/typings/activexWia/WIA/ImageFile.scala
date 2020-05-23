@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
   * The ImageFile object is a container for images transferred to your computer when you call Transfer or ShowTransfer. It also supports image files
   * through LoadFile. An ImageFile object can be created using "WIA.ImageFile" in a call to CreateObject.
   */
-@JSGlobal("WIA.ImageFile")
 @js.native
-class ImageFile protected () extends js.Object {
+trait ImageFile extends js.Object {
   /** Returns the raw image bits as a Vector of Long values */
   @JSName("ARGBData")
   val ARGBData_Original: Vector[_] = js.native

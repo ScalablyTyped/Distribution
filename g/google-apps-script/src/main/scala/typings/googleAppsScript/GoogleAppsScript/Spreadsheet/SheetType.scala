@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object SheetType extends js.Object {
   
   @js.native
   sealed trait OBJECT extends SheetType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SheetType with Double] = js.native
-  /* 0 */ @js.native
-  object GRID extends TopLevel[GRID with Double]
-  
-  /* 1 */ @js.native
-  object OBJECT extends TopLevel[OBJECT with Double]
   
 }
 

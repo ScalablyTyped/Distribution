@@ -11,9 +11,9 @@ trait DropDownTreeAnimationOpen extends js.Object {
 
 object DropDownTreeAnimationOpen {
   @scala.inline
-  def apply(duration: Int | Double = null, effects: String = null): DropDownTreeAnimationOpen = {
+  def apply(duration: js.UndefOr[Double] = js.undefined, effects: String = null): DropDownTreeAnimationOpen = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownTreeAnimationOpen]
   }

@@ -17,10 +17,10 @@ trait AudioOptions extends js.Object {
 
 object AudioOptions {
   @scala.inline
-  def apply(duration: Int | Double = null, limit: Int | Double = null): AudioOptions = {
+  def apply(duration: js.UndefOr[Double] = js.undefined, limit: js.UndefOr[Double] = js.undefined): AudioOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioOptions]
   }
 }

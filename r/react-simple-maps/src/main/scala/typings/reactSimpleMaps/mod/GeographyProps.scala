@@ -1,6 +1,6 @@
 package typings.reactSimpleMaps.mod
 
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.ClipboardEventHandler
@@ -20,7 +20,7 @@ import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
-import typings.reactSimpleMaps.AnonDefault
+import typings.reactSimpleMaps.anon.Default
 import typings.reactSimpleMaps.reactSimpleMapsStrings._empty
 import typings.reactSimpleMaps.reactSimpleMapsStrings.`additions text`
 import typings.reactSimpleMaps.reactSimpleMapsStrings.`after-edge`
@@ -188,7 +188,7 @@ trait GeographyProps extends js.Object {
   var cx: js.UndefOr[Double | String] = js.native
   var cy: js.UndefOr[Double | String] = js.native
   var d: js.UndefOr[String] = js.native
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   var decelerate: js.UndefOr[Double | String] = js.native
   var descent: js.UndefOr[Double | String] = js.native
   var diffuseConstant: js.UndefOr[Double | String] = js.native
@@ -439,7 +439,7 @@ trait GeographyProps extends js.Object {
   var strokeMiterlimit: js.UndefOr[Double | String] = js.native
   var strokeOpacity: js.UndefOr[Double | String] = js.native
   var strokeWidth: js.UndefOr[Double | String] = js.native
-  var style: js.UndefOr[AnonDefault] = js.native
+  var style: js.UndefOr[Default] = js.native
   var surfaceScale: js.UndefOr[Double | String] = js.native
   var systemLanguage: js.UndefOr[Double | String] = js.native
   var tabIndex: js.UndefOr[Double] = js.native

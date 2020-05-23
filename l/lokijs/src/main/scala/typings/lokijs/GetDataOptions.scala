@@ -22,8 +22,7 @@ object GetDataOptions {
     removeMeta: Boolean,
     forceCloneMethod: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects` = null
   ): GetDataOptions = {
-    val __obj = js.Dynamic.literal(forceClones = forceClones.asInstanceOf[js.Any], removeMeta = removeMeta.asInstanceOf[js.Any])
-    if (forceCloneMethod != null) __obj.updateDynamic("forceCloneMethod")(forceCloneMethod.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(forceClones = forceClones.asInstanceOf[js.Any], removeMeta = removeMeta.asInstanceOf[js.Any], forceCloneMethod = forceCloneMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDataOptions]
   }
 }

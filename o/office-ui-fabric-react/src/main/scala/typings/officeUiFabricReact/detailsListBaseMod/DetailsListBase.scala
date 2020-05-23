@@ -1,11 +1,11 @@
 package typings.officeUiFabricReact.detailsListBaseMod
 
-import typings.officeUiFabricReact.AnonCheckboxVisibility
+import typings.officeUiFabricReact.anon.CheckboxVisibility
 import typings.officeUiFabricReact.detailsListTypesMod.IDetailsList
 import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps
 import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowProps
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -102,6 +102,6 @@ class DetailsListBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.base", "DetailsListBase")
 @js.native
 object DetailsListBase extends js.Object {
-  var defaultProps: AnonCheckboxVisibility = js.native
+  var defaultProps: CheckboxVisibility = js.native
 }
 

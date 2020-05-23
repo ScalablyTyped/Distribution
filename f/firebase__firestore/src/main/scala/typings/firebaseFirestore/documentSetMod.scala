@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/document_set", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/document_set", JSImport.Namespace)
 @js.native
 object documentSetMod extends js.Object {
   @js.native
@@ -36,7 +36,7 @@ object documentSetMod extends js.Object {
     def isEqual(): Boolean = js.native
     def isEqual(other: DocumentSet): Boolean = js.native
     def last(): Document | Null = js.native
-    def size(): Double = js.native
+    def size: Double = js.native
   }
   
   /* static members */

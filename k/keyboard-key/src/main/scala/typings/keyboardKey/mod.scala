@@ -2,6 +2,8 @@ package typings.keyboardKey
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.TopLevel
+import typings.keyboardKey.anon.PickKeyboardEventkeykeyCo
+import typings.keyboardKey.anon.PickKeyboardEventkeykeyCoKey
 import typings.keyboardKey.keyboardKeyNumbers.`112`
 import typings.keyboardKey.keyboardKeyNumbers.`113`
 import typings.keyboardKey.keyboardKeyNumbers.`114`

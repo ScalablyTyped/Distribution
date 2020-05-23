@@ -9,14 +9,14 @@ trait IStreamResult
   extends ICellOutput
      with Output {
   /**
-  			 * Stream output field defining the stream name, for example stdout
-  			 */
+    * Stream output field defining the stream name, for example stdout
+    */
   var name: StreamType
   @JSName("output_type")
   var output_type_IStreamResult: stream
   /**
-  			 * Stream output field defining the multiline stream text
-  			 */
+    * Stream output field defining the multiline stream text
+    */
   var text: MultilineString
 }
 

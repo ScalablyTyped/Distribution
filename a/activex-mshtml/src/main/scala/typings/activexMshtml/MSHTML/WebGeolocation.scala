@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.WebGeolocation")
 @js.native
-class WebGeolocation protected () extends js.Object {
+trait WebGeolocation extends js.Object {
   @JSName("MSHTML.WebGeolocation_typekey")
   var MSHTMLDotWebGeolocation_typekey: WebGeolocation = js.native
   def clearWatch(watchId: Double): Unit = js.native

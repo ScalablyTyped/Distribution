@@ -20,10 +20,10 @@ object DeleteTransitGatewayMulticastDomainRequest {
   @scala.inline
   def apply(
     TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): DeleteTransitGatewayMulticastDomainRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayMulticastDomainId = TransitGatewayMulticastDomainId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTransitGatewayMulticastDomainRequest]
   }
 }

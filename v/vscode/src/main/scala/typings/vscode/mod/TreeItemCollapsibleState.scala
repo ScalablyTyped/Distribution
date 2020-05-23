@@ -12,20 +12,20 @@ sealed trait TreeItemCollapsibleState extends js.Object
 @js.native
 object TreeItemCollapsibleState extends js.Object {
   /**
-  		 * Determines an item is collapsed
-  		 */
+    * Determines an item is collapsed
+    */
   @js.native
   sealed trait Collapsed extends TreeItemCollapsibleState
   
   /**
-  		 * Determines an item is expanded
-  		 */
+    * Determines an item is expanded
+    */
   @js.native
   sealed trait Expanded extends TreeItemCollapsibleState
   
   /**
-  		 * Determines an item can be neither collapsed nor expanded. Implies it has no children.
-  		 */
+    * Determines an item can be neither collapsed nor expanded. Implies it has no children.
+    */
   @js.native
   sealed trait None extends TreeItemCollapsibleState
   

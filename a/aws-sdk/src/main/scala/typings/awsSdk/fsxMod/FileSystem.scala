@@ -84,7 +84,7 @@ object FileSystem {
     NetworkInterfaceIds: NetworkInterfaceIds = null,
     OwnerId: AWSAccountId = null,
     ResourceARN: ResourceARN = null,
-    StorageCapacity: Int | Double = null,
+    StorageCapacity: js.UndefOr[StorageCapacity] = js.undefined,
     StorageType: StorageType = null,
     SubnetIds: SubnetIds = null,
     Tags: Tags = null,
@@ -103,7 +103,7 @@ object FileSystem {
     if (NetworkInterfaceIds != null) __obj.updateDynamic("NetworkInterfaceIds")(NetworkInterfaceIds.asInstanceOf[js.Any])
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN.asInstanceOf[js.Any])
-    if (StorageCapacity != null) __obj.updateDynamic("StorageCapacity")(StorageCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(StorageCapacity)) __obj.updateDynamic("StorageCapacity")(StorageCapacity.get.asInstanceOf[js.Any])
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
     if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

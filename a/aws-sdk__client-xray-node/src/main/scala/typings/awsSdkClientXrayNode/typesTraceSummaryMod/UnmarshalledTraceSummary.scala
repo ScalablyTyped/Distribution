@@ -36,27 +36,27 @@ object UnmarshalledTraceSummary {
   @scala.inline
   def apply(
     Annotations: StringDictionary[js.Array[UnmarshalledValueWithServiceIds]] = null,
-    Duration: Int | Double = null,
+    Duration: js.UndefOr[Double] = js.undefined,
     HasError: js.UndefOr[Boolean] = js.undefined,
     HasFault: js.UndefOr[Boolean] = js.undefined,
     HasThrottle: js.UndefOr[Boolean] = js.undefined,
     Http: UnmarshalledHttp = null,
     Id: String = null,
     IsPartial: js.UndefOr[Boolean] = js.undefined,
-    ResponseTime: Int | Double = null,
+    ResponseTime: js.UndefOr[Double] = js.undefined,
     ServiceIds: js.Array[UnmarshalledServiceId] = null,
     Users: js.Array[UnmarshalledTraceUser] = null
   ): UnmarshalledTraceSummary = {
     val __obj = js.Dynamic.literal()
     if (Annotations != null) __obj.updateDynamic("Annotations")(Annotations.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasError)) __obj.updateDynamic("HasError")(HasError.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasFault)) __obj.updateDynamic("HasFault")(HasFault.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasThrottle)) __obj.updateDynamic("HasThrottle")(HasThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasError)) __obj.updateDynamic("HasError")(HasError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasFault)) __obj.updateDynamic("HasFault")(HasFault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasThrottle)) __obj.updateDynamic("HasThrottle")(HasThrottle.get.asInstanceOf[js.Any])
     if (Http != null) __obj.updateDynamic("Http")(Http.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsPartial)) __obj.updateDynamic("IsPartial")(IsPartial.asInstanceOf[js.Any])
-    if (ResponseTime != null) __obj.updateDynamic("ResponseTime")(ResponseTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsPartial)) __obj.updateDynamic("IsPartial")(IsPartial.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ResponseTime)) __obj.updateDynamic("ResponseTime")(ResponseTime.get.asInstanceOf[js.Any])
     if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds.asInstanceOf[js.Any])
     if (Users != null) __obj.updateDynamic("Users")(Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledTraceSummary]

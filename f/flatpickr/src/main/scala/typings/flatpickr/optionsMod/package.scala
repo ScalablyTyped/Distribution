@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object optionsMod {
-  type DateLimit[D] = D | typings.flatpickr.optionsMod.DateRangeLimit[D] | (js.Function1[/* date */ typings.flatpickr.globalsMod._Global_.Date, scala.Boolean])
-  type DateOption = typings.flatpickr.globalsMod._Global_.Date | java.lang.String | scala.Double
+  type DateLimit[D] = D | typings.flatpickr.optionsMod.DateRangeLimit[D] | (js.Function1[/* date */ typings.flatpickr.globalsMod.global.Date, scala.Boolean])
+  type DateOption = typings.flatpickr.globalsMod.global.Date | java.lang.String | scala.Double
   type Hook = js.Function4[
-    /* dates */ js.Array[typings.flatpickr.globalsMod._Global_.Date], 
+    /* dates */ js.Array[typings.flatpickr.globalsMod.global.Date], 
     /* currentDateString */ java.lang.String, 
     /* self */ typings.flatpickr.instanceMod.Instance, 
     /* data */ js.UndefOr[js.Any], 

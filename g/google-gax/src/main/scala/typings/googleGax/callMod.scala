@@ -1,9 +1,13 @@
 package typings.googleGax
 
 import typings.googleGax.apitypesMod.APICallback
+import typings.googleGax.apitypesMod.NextPageRequestType
+import typings.googleGax.apitypesMod.RawResponseType
 import typings.googleGax.apitypesMod.RequestType
+import typings.googleGax.apitypesMod.ResponseType
 import typings.googleGax.apitypesMod.ResultTuple
 import typings.googleGax.apitypesMod.SimpleCallbackFunction
+import typings.googleGax.googleErrorMod.GoogleError
 import typings.std.Promise
 import typings.std.PromiseConstructor
 import scala.scalajs.js
@@ -19,20 +23,21 @@ object callMod extends js.Object {
   }
   
   @js.native
-  /**
-    * OngoingCall manages callback, API calls, and cancellation
-    * of the API calls.
-    * @param {APICallback=} callback
-    *   The callback to be called asynchronously when the API call
-    *   finishes.
-    * @constructor
-    * @property {APICallback} callback
-    *   The callback function to be called.
-    * @private
-    */
-  class OngoingCall () extends js.Object {
+  class OngoingCall protected () extends js.Object {
+    /**
+      * OngoingCall manages callback, API calls, and cancellation
+      * of the API calls.
+      * @param {APICallback=} callback
+      *   The callback to be called asynchronously when the API call
+      *   finishes.
+      * @constructor
+      * @property {APICallback} callback
+      *   The callback function to be called.
+      * @private
+      */
     def this(callback: APICallback) = this()
-    var callback: js.UndefOr[APICallback] = js.native
+    @JSName("callback")
+    var callback_Original: APICallback = js.native
     var cancelFunc: js.UndefOr[js.Function0[Unit]] = js.native
     var completed: Boolean = js.native
     /**
@@ -45,6 +50,14 @@ object callMod extends js.Object {
       *   A request object.
       */
     def call(func: SimpleCallbackFunction, argument: RequestType): Unit = js.native
+    def callback(): Unit = js.native
+    def callback(err: Null, response: ResponseType): Unit = js.native
+    def callback(err: Null, response: ResponseType, next: NextPageRequestType): Unit = js.native
+    def callback(err: Null, response: ResponseType, next: NextPageRequestType, rawResponse: RawResponseType): Unit = js.native
+    def callback(err: GoogleError): Unit = js.native
+    def callback(err: GoogleError, response: ResponseType): Unit = js.native
+    def callback(err: GoogleError, response: ResponseType, next: NextPageRequestType): Unit = js.native
+    def callback(err: GoogleError, response: ResponseType, next: NextPageRequestType, rawResponse: RawResponseType): Unit = js.native
     /**
       * Cancels the ongoing promise.
       */

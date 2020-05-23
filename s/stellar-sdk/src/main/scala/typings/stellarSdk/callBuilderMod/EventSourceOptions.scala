@@ -16,12 +16,12 @@ object EventSourceOptions {
   def apply[T](
     onerror: /* event */ MessageEvent => Unit = null,
     onmessage: /* value */ T => Unit = null,
-    reconnectTimeout: Int | Double = null
+    reconnectTimeout: js.UndefOr[Double] = js.undefined
   ): EventSourceOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
     if (onmessage != null) __obj.updateDynamic("onmessage")(js.Any.fromFunction1(onmessage))
-    if (reconnectTimeout != null) __obj.updateDynamic("reconnectTimeout")(reconnectTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectTimeout)) __obj.updateDynamic("reconnectTimeout")(reconnectTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSourceOptions[T]]
   }
 }

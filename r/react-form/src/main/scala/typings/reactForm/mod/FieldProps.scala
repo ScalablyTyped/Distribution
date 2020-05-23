@@ -21,10 +21,10 @@ object FieldProps {
     showErrors: js.UndefOr[Boolean] = js.undefined
   ): FieldProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(errorBefore)) __obj.updateDynamic("errorBefore")(errorBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorBefore)) __obj.updateDynamic("errorBefore")(errorBefore.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(isForm)) __obj.updateDynamic("isForm")(isForm.asInstanceOf[js.Any])
-    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(isForm)) __obj.updateDynamic("isForm")(isForm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldProps]
   }
 }

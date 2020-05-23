@@ -44,13 +44,3 @@ trait Media
   def stopRecord(): Unit = js.native
 }
 
-@JSGlobal("Media")
-@js.native
-object Media
-  extends Instantiable3[
-      /* src */ String, 
-      /* onSuccess */ js.Function1[/* arg */ js.Any, js.Any], 
-      /* onError */ js.Function1[/* error */ js.Any, js.Any], 
-      Media
-    ]
-

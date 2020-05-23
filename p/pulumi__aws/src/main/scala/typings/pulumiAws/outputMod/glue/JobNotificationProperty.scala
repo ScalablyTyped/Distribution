@@ -14,9 +14,9 @@ trait JobNotificationProperty extends js.Object {
 
 object JobNotificationProperty {
   @scala.inline
-  def apply(notifyDelayAfter: Int | Double = null): JobNotificationProperty = {
+  def apply(notifyDelayAfter: js.UndefOr[Double] = js.undefined): JobNotificationProperty = {
     val __obj = js.Dynamic.literal()
-    if (notifyDelayAfter != null) __obj.updateDynamic("notifyDelayAfter")(notifyDelayAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(notifyDelayAfter)) __obj.updateDynamic("notifyDelayAfter")(notifyDelayAfter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobNotificationProperty]
   }
 }

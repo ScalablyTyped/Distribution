@@ -9,40 +9,40 @@ import scala.scalajs.js.annotation._
 
 trait IRouter extends IBase {
   /** [Method] Connects a url based route to a controller action pair plus additional params
-  		* @param url String The url to recognize.
-  		* @param params Object Additional parameters.
-  		*/
+    * @param url String The url to recognize.
+    * @param params Object Additional parameters.
+    */
   var connect: js.UndefOr[
     js.Function2[/* url */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Config Option] (Object) */
   var defaults: js.UndefOr[js.Any] = js.undefined
   /** [Method] Convenience method which just calls the supplied function with the Router instance
-  		* @param fn Function The fn to call
-  		*/
+    * @param fn Function The fn to call
+    */
   var draw: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Returns the value of defaults
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getDefaults: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of routes
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getRoutes: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Recognizes a url string connected to the Router return the controller action pair plus any additional config associa
-  		* @param url String The url to recognize.
-  		* @returns Object/undefined If the url was recognized, the controller and action to call, else undefined.
-  		*/
+    * @param url String The url to recognize.
+    * @returns Object/undefined If the url was recognized, the controller and action to call, else undefined.
+    */
   var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], _]] = js.undefined
   /** [Config Option] (Array) */
   var routes: js.UndefOr[Array] = js.undefined
   /** [Method] Sets the value of defaults
-  		* @param defaults Object The new value.
-  		*/
+    * @param defaults Object The new value.
+    */
   var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of routes
-  		* @param routes Array The new value.
-  		*/
+    * @param routes Array The new value.
+    */
   var setRoutes: js.UndefOr[js.Function1[/* routes */ js.UndefOr[Array], Unit]] = js.undefined
 }
 
@@ -100,7 +100,7 @@ object IRouter {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setDefaults != null) __obj.updateDynamic("setDefaults")(js.Any.fromFunction1(setDefaults))
     if (setRoutes != null) __obj.updateDynamic("setRoutes")(js.Any.fromFunction1(setRoutes))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRouter]

@@ -12,9 +12,9 @@ trait ExecutionResult[TData] extends js.Object {
 
 object ExecutionResult {
   @scala.inline
-  def apply[TData](data: TData = null, errors: js.Array[GraphQLError] = null): ExecutionResult[TData] = {
+  def apply[TData](data: js.UndefOr[Null | TData] = js.undefined, errors: js.Array[GraphQLError] = null): ExecutionResult[TData] = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionResult[TData]]
   }

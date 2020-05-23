@@ -1,6 +1,8 @@
 package typings.reactAxe
 
 import typings.axeCore.mod.Spec
+import typings.reactAxe.anon.TypeofReact
+import typings.reactAxe.anon.TypeofReactDOM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

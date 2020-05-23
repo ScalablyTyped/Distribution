@@ -34,14 +34,14 @@ import scala.scalajs.js.annotation._
 trait Icon extends js.Object {
   /**
     *
-    * Represents the index of the icon in the given set.
+    * Specifies the index of the icon in the given set.
     *
     * [Api set: ExcelApi 1.2]
     */
   var index: Double
   /**
     *
-    * Represents the set that the icon is part of.
+    * Specifies the set that the icon is part of.
     *
     * [Api set: ExcelApi 1.2]
     */

@@ -45,40 +45,40 @@ trait IQueryResult extends js.Object {
 object IQueryResult {
   @scala.inline
   def apply(
-    action: String = null,
-    allRequiredParamsPresent: js.UndefOr[Boolean] = js.undefined,
-    diagnosticInfo: IStruct = null,
-    fulfillmentMessages: js.Array[IMessage] = null,
-    fulfillmentText: String = null,
-    intent: IIntent = null,
-    intentDetectionConfidence: Int | Double = null,
-    knowledgeAnswers: IKnowledgeAnswers = null,
-    languageCode: String = null,
-    outputContexts: js.Array[IContext] = null,
-    parameters: IStruct = null,
-    queryText: String = null,
-    sentimentAnalysisResult: ISentimentAnalysisResult = null,
-    speechRecognitionConfidence: Int | Double = null,
-    webhookPayload: IStruct = null,
-    webhookSource: String = null
+    action: js.UndefOr[Null | String] = js.undefined,
+    allRequiredParamsPresent: js.UndefOr[Null | Boolean] = js.undefined,
+    diagnosticInfo: js.UndefOr[Null | IStruct] = js.undefined,
+    fulfillmentMessages: js.UndefOr[Null | js.Array[IMessage]] = js.undefined,
+    fulfillmentText: js.UndefOr[Null | String] = js.undefined,
+    intent: js.UndefOr[Null | IIntent] = js.undefined,
+    intentDetectionConfidence: js.UndefOr[Null | Double] = js.undefined,
+    knowledgeAnswers: js.UndefOr[Null | IKnowledgeAnswers] = js.undefined,
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    outputContexts: js.UndefOr[Null | js.Array[IContext]] = js.undefined,
+    parameters: js.UndefOr[Null | IStruct] = js.undefined,
+    queryText: js.UndefOr[Null | String] = js.undefined,
+    sentimentAnalysisResult: js.UndefOr[Null | ISentimentAnalysisResult] = js.undefined,
+    speechRecognitionConfidence: js.UndefOr[Null | Double] = js.undefined,
+    webhookPayload: js.UndefOr[Null | IStruct] = js.undefined,
+    webhookSource: js.UndefOr[Null | String] = js.undefined
   ): IQueryResult = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(action)) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (!js.isUndefined(allRequiredParamsPresent)) __obj.updateDynamic("allRequiredParamsPresent")(allRequiredParamsPresent.asInstanceOf[js.Any])
-    if (diagnosticInfo != null) __obj.updateDynamic("diagnosticInfo")(diagnosticInfo.asInstanceOf[js.Any])
-    if (fulfillmentMessages != null) __obj.updateDynamic("fulfillmentMessages")(fulfillmentMessages.asInstanceOf[js.Any])
-    if (fulfillmentText != null) __obj.updateDynamic("fulfillmentText")(fulfillmentText.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (intentDetectionConfidence != null) __obj.updateDynamic("intentDetectionConfidence")(intentDetectionConfidence.asInstanceOf[js.Any])
-    if (knowledgeAnswers != null) __obj.updateDynamic("knowledgeAnswers")(knowledgeAnswers.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (outputContexts != null) __obj.updateDynamic("outputContexts")(outputContexts.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (queryText != null) __obj.updateDynamic("queryText")(queryText.asInstanceOf[js.Any])
-    if (sentimentAnalysisResult != null) __obj.updateDynamic("sentimentAnalysisResult")(sentimentAnalysisResult.asInstanceOf[js.Any])
-    if (speechRecognitionConfidence != null) __obj.updateDynamic("speechRecognitionConfidence")(speechRecognitionConfidence.asInstanceOf[js.Any])
-    if (webhookPayload != null) __obj.updateDynamic("webhookPayload")(webhookPayload.asInstanceOf[js.Any])
-    if (webhookSource != null) __obj.updateDynamic("webhookSource")(webhookSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(diagnosticInfo)) __obj.updateDynamic("diagnosticInfo")(diagnosticInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(fulfillmentMessages)) __obj.updateDynamic("fulfillmentMessages")(fulfillmentMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(fulfillmentText)) __obj.updateDynamic("fulfillmentText")(fulfillmentText.asInstanceOf[js.Any])
+    if (!js.isUndefined(intent)) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (!js.isUndefined(intentDetectionConfidence)) __obj.updateDynamic("intentDetectionConfidence")(intentDetectionConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(knowledgeAnswers)) __obj.updateDynamic("knowledgeAnswers")(knowledgeAnswers.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputContexts)) __obj.updateDynamic("outputContexts")(outputContexts.asInstanceOf[js.Any])
+    if (!js.isUndefined(parameters)) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryText)) __obj.updateDynamic("queryText")(queryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentimentAnalysisResult)) __obj.updateDynamic("sentimentAnalysisResult")(sentimentAnalysisResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(speechRecognitionConfidence)) __obj.updateDynamic("speechRecognitionConfidence")(speechRecognitionConfidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(webhookPayload)) __obj.updateDynamic("webhookPayload")(webhookPayload.asInstanceOf[js.Any])
+    if (!js.isUndefined(webhookSource)) __obj.updateDynamic("webhookSource")(webhookSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryResult]
   }
 }

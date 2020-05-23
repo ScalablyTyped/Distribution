@@ -17,13 +17,13 @@ object IRequestOptions {
     cert: ICertConfiguration = null,
     ignoreSslError: js.UndefOr[Boolean] = js.undefined,
     proxy: IProxyConfiguration = null,
-    socketTimeout: Int | Double = null
+    socketTimeout: js.UndefOr[Double] = js.undefined
   ): IRequestOptions = {
     val __obj = js.Dynamic.literal()
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSslError)) __obj.updateDynamic("ignoreSslError")(ignoreSslError.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSslError)) __obj.updateDynamic("ignoreSslError")(ignoreSslError.get.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestOptions]
   }
 }

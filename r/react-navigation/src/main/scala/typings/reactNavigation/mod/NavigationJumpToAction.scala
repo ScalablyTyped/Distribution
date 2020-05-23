@@ -22,7 +22,7 @@ object NavigationJumpToAction {
   ): NavigationJumpToAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveFocus)) __obj.updateDynamic("preserveFocus")(preserveFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveFocus)) __obj.updateDynamic("preserveFocus")(preserveFocus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationJumpToAction]
   }
 }

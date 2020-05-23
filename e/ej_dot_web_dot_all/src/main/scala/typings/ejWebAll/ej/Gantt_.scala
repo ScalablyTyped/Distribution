@@ -1,19 +1,12 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Gantt.EjPredicate
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Gantt")
 @js.native
-class Gantt_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Gantt.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Gantt.Model) = this()
+trait Gantt_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.Gantt.Model = js.native
   @JSName("model")
   var model_Gantt_ : typings.ejWebAll.ej.Gantt.Model = js.native

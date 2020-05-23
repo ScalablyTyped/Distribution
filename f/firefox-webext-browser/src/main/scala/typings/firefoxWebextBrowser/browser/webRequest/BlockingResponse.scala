@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
-import typings.firefoxWebextBrowser.AnonPassword
+import typings.firefoxWebextBrowser.anon.Password
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait BlockingResponse extends js.Object {
     * Only used as a response to the onAuthRequired event. If set, the request is made using the supplied
     * credentials.
     */
-  var authCredentials: js.UndefOr[AnonPassword] = js.undefined
+  var authCredentials: js.UndefOr[Password] = js.undefined
   /**
     * If true, the request is cancelled. Used in onBeforeRequest, this prevents the request from being sent.
     */
@@ -49,7 +49,7 @@ trait BlockingResponse extends js.Object {
 object BlockingResponse {
   @scala.inline
   def apply(
-    authCredentials: AnonPassword = null,
+    authCredentials: Password = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
     redirectUrl: String = null,
     requestHeaders: HttpHeaders = null,
@@ -58,11 +58,11 @@ object BlockingResponse {
   ): BlockingResponse = {
     val __obj = js.Dynamic.literal()
     if (authCredentials != null) __obj.updateDynamic("authCredentials")(authCredentials.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(upgradeToSecure)) __obj.updateDynamic("upgradeToSecure")(upgradeToSecure.asInstanceOf[js.Any])
+    if (!js.isUndefined(upgradeToSecure)) __obj.updateDynamic("upgradeToSecure")(upgradeToSecure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockingResponse]
   }
 }

@@ -1,7 +1,7 @@
 package typings.instagramPrivateApi.requestMod
 
-import typings.instagramPrivateApi.AnonAcceptEncoding
-import typings.instagramPrivateApi.PartialAttemptOptionsany
+import typings.instagramPrivateApi.anon.AcceptEncoding
+import typings.instagramPrivateApi.anon.PartialAttemptOptionsany
 import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.commonTypesMod.IgResponse
 import typings.instagramPrivateApi.errorsMod.IgClientError
@@ -26,7 +26,7 @@ class Request protected () extends js.Object {
   var handleResponseError: js.Any = js.native
   var updateState: js.Any = js.native
   /* protected */ def faultTolerantRequest(options: Options): js.Promise[_] = js.native
-  def getDefaultHeaders(): AnonAcceptEncoding = js.native
+  def getDefaultHeaders(): AcceptEncoding = js.native
   def send[T](userOptions: Options): js.Promise[IgResponse[T]] = js.native
   def send[T](userOptions: Options, onlyCheckHttpStatus: Boolean): js.Promise[IgResponse[T]] = js.native
   def sign(payload: Payload): SignedPost = js.native

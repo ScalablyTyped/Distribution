@@ -1,6 +1,6 @@
 package typings.materialMenu
 
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ object utilMod extends js.Object {
   def clamp(value: Double): Double = js.native
   def clamp(value: Double, min: Double): Double = js.native
   def clamp(value: Double, min: Double, max: Double): Double = js.native
-  def getTransformPropertyName(globalObj: Window_): js.UndefOr[String] = js.native
-  def getTransformPropertyName(globalObj: Window_, forceRefresh: Boolean): js.UndefOr[String] = js.native
+  def getTransformPropertyName(globalObj: Window): js.UndefOr[String] = js.native
+  def getTransformPropertyName(globalObj: Window, forceRefresh: Boolean): js.UndefOr[String] = js.native
 }
 

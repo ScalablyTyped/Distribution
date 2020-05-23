@@ -3,18 +3,19 @@ package typings.backboneMarionette.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.backbone.mod.Model
-import typings.backboneMarionette.AnonDictindex
+import typings.backbone.mod.ModelSetOptions
+import typings.backboneMarionette.anon.Dictindex
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.backboneMarionette.mod.ViewMixin because var conflicts: delegateEvents. Inlined supportsRenderLifecycle, supportsDestroyLifecycle, isDestroyed, isRendered, isAttached, getTriggers, delegateEntityEvents, undelegateEntityEvents, destroy, bindUIElements, unbindUIElements, childViewEventPrefix, triggerMethod */ @JSImport("backbone.marionette", "View")
 @js.native
-class View[TModel /* <: Model */] ()
+class View[TModel /* <: Model[_, ModelSetOptions] */] ()
   extends typings.backbone.mod.View[TModel]
      with RegionsMixin
      with DomMixin
@@ -31,7 +32,7 @@ class View[TModel /* <: Model */] ()
   /**
     * Behavior objects to assign to this View.
     */
-  var behaviors: (js.Array[AnonDictindex | Behavior]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
+  var behaviors: (js.Array[Behavior | Dictindex]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
   /* CompleteClass */
   override var bindEvents: js.Any = js.native
   /**
@@ -142,7 +143,7 @@ class View[TModel /* <: Model */] ()
   /**
     * Get handle on UI element defined in ui hash
     */
-  def getUI(ui: String): JQuery_[HTMLElement] = js.native
+  def getUI(ui: String): JQuery[HTMLElement] = js.native
   /**
     * Check if this View is attached to the DOM.
     */

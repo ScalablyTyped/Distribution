@@ -1,6 +1,6 @@
 package typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
 
-import typings.jupyterlabSettingregistry.AnonUser
+import typings.jupyterlabSettingregistry.anon.User
 import typings.jupyterlabSettingregistry.settingregistryMod.ISchemaValidator.IError
 import typings.luminoCoreutils.jsonMod.PartialJSONValue
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
@@ -62,7 +62,7 @@ trait ISettings extends IDisposable {
     *
     * @returns The setting value.
     */
-  def get(key: String): AnonUser
+  def get(key: String): User
   /**
     * Remove a single setting.
     *
@@ -109,7 +109,7 @@ object ISettings {
     composite: ReadonlyPartialJSONObject,
     default: String => js.UndefOr[PartialJSONValue],
     dispose: () => Unit,
-    get: String => AnonUser,
+    get: String => User,
     id: String,
     isDisposed: Boolean,
     plugin: IPlugin,

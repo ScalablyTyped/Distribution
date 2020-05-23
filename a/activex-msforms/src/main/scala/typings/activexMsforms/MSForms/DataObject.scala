@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.DataObject")
 @js.native
-class DataObject protected () extends js.Object {
+trait DataObject extends js.Object {
   @JSName("MSForms.DataObject_typekey")
   var MSFormsDotDataObject_typekey: DataObject = js.native
   def Clear(): Unit = js.native

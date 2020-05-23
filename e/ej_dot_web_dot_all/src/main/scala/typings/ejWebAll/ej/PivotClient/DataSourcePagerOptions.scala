@@ -26,16 +26,16 @@ trait DataSourcePagerOptions extends js.Object {
 object DataSourcePagerOptions {
   @scala.inline
   def apply(
-    categoricalCurrentPage: Int | Double = null,
-    categoricalPageSize: Int | Double = null,
-    seriesCurrentPage: Int | Double = null,
-    seriesPageSize: Int | Double = null
+    categoricalCurrentPage: js.UndefOr[Double] = js.undefined,
+    categoricalPageSize: js.UndefOr[Double] = js.undefined,
+    seriesCurrentPage: js.UndefOr[Double] = js.undefined,
+    seriesPageSize: js.UndefOr[Double] = js.undefined
   ): DataSourcePagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (categoricalCurrentPage != null) __obj.updateDynamic("categoricalCurrentPage")(categoricalCurrentPage.asInstanceOf[js.Any])
-    if (categoricalPageSize != null) __obj.updateDynamic("categoricalPageSize")(categoricalPageSize.asInstanceOf[js.Any])
-    if (seriesCurrentPage != null) __obj.updateDynamic("seriesCurrentPage")(seriesCurrentPage.asInstanceOf[js.Any])
-    if (seriesPageSize != null) __obj.updateDynamic("seriesPageSize")(seriesPageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(categoricalCurrentPage)) __obj.updateDynamic("categoricalCurrentPage")(categoricalCurrentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(categoricalPageSize)) __obj.updateDynamic("categoricalPageSize")(categoricalPageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesCurrentPage)) __obj.updateDynamic("seriesCurrentPage")(seriesCurrentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesPageSize)) __obj.updateDynamic("seriesPageSize")(seriesPageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourcePagerOptions]
   }
 }

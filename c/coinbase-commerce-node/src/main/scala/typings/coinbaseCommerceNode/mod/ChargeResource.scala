@@ -1,9 +1,9 @@
 package typings.coinbaseCommerceNode.mod
 
-import typings.coinbaseCommerceNode.AnonBlock
-import typings.coinbaseCommerceNode.AnonContext
-import typings.coinbaseCommerceNode.AnonId
-import typings.coinbaseCommerceNode.PartialRecordCryptoNamest
+import typings.coinbaseCommerceNode.anon.Block
+import typings.coinbaseCommerceNode.anon.Context
+import typings.coinbaseCommerceNode.anon.Id
+import typings.coinbaseCommerceNode.anon.PartialRecordCryptoNamest
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.charge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait ChargeResource extends BaseCharge {
   /**
     * Associated checkout resource.
     */
-  var checkout: js.UndefOr[AnonId] = js.undefined
+  var checkout: js.UndefOr[Id] = js.undefined
   /**
     * User fiendly primary key.
     */
@@ -59,7 +59,7 @@ trait ChargeResource extends BaseCharge {
   /**
     * Array of charge payment objects.
     */
-  var payments: js.Array[AnonBlock]
+  var payments: js.Array[Block]
   /**
     * Charge price information object.
     */
@@ -71,7 +71,7 @@ trait ChargeResource extends BaseCharge {
   /**
     * Array of status update objects.
     */
-  var timeline: js.Array[AnonContext]
+  var timeline: js.Array[Context]
 }
 
 object ChargeResource {
@@ -86,13 +86,13 @@ object ChargeResource {
     id: String,
     metadata: KeyVal,
     name: String,
-    payments: js.Array[AnonBlock],
+    payments: js.Array[Block],
     pricing: Pricing,
     pricing_type: PricingType,
     resource: charge,
-    timeline: js.Array[AnonContext],
+    timeline: js.Array[Context],
     cancel_url: String = null,
-    checkout: AnonId = null,
+    checkout: Id = null,
     confirmed_at: Timestamp = null,
     logo_url: String = null,
     redirect_url: String = null

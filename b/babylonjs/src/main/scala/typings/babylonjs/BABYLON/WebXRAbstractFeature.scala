@@ -5,14 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRAbstractFeature")
 @js.native
-abstract class WebXRAbstractFeature protected () extends IWebXRFeature {
-  /**
-    * Construct a new (abstract) WebXR feature
-    * @param _xrSessionManager the xr session manager for this feature
-    */
-  def this(_xrSessionManager: WebXRSessionManager) = this()
+trait WebXRAbstractFeature extends IWebXRFeature {
   var _attached: js.Any = js.native
   var _removeOnDetach: js.Any = js.native
   var _xrSessionManager: WebXRSessionManager = js.native
@@ -36,10 +30,5 @@ abstract class WebXRAbstractFeature protected () extends IWebXRFeature {
     */
   @JSName("attached")
   def attached_MWebXRAbstractFeature: Boolean = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
 

@@ -1,5 +1,9 @@
 package typings.wordpressCompose
 
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.ComponentType
+import typings.wordpressCompose.anon.kinkeyofWindowEventMapstr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object withGlobalEventsMod extends js.Object {
   // prettier-ignore
-  def default(eventMapper: kinkeyofWindowEventMapstr): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentClass<any> */ /* component */ js.Any, 
-    _
-  ] = js.native
+  def default(eventMapper: kinkeyofWindowEventMapstr): js.Function1[/* component */ ComponentClass[_, ComponentState], ComponentType[_]] = js.native
 }
 

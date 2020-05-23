@@ -24,7 +24,7 @@ object IconOptions {
   @scala.inline
   def apply(
     anchor: Anchor = null,
-    angel: Int | Double = null,
+    angel: js.UndefOr[Double] = js.undefined,
     clipOrigin: js.Array[Double] | Pixel = null,
     clipSize: js.Tuple2[Double, Double] = null,
     image: String = null,
@@ -35,11 +35,11 @@ object IconOptions {
   ): IconOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (angel != null) __obj.updateDynamic("angel")(angel.asInstanceOf[js.Any])
+    if (!js.isUndefined(angel)) __obj.updateDynamic("angel")(angel.get.asInstanceOf[js.Any])
     if (clipOrigin != null) __obj.updateDynamic("clipOrigin")(clipOrigin.asInstanceOf[js.Any])
     if (clipSize != null) __obj.updateDynamic("clipSize")(clipSize.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(retina)) __obj.updateDynamic("retina")(retina.asInstanceOf[js.Any])
+    if (!js.isUndefined(retina)) __obj.updateDynamic("retina")(retina.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])

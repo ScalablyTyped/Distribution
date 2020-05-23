@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client BootstrapCardView.
   */
-@JSGlobal("BootstrapClientCardView")
 @js.native
-class BootstrapClientCardView () extends ASPxClientCardView
+trait BootstrapClientCardView extends ASPxClientCardView
 

@@ -51,8 +51,8 @@ object Instance {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtimePlay)) __obj.updateDynamic("realtimePlay")(realtimePlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(turnBasedPlay)) __obj.updateDynamic("turnBasedPlay")(turnBasedPlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtimePlay)) __obj.updateDynamic("realtimePlay")(realtimePlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(turnBasedPlay)) __obj.updateDynamic("turnBasedPlay")(turnBasedPlay.get.asInstanceOf[js.Any])
     if (webInstance != null) __obj.updateDynamic("webInstance")(webInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }

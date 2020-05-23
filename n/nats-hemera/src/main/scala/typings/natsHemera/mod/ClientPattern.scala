@@ -22,18 +22,18 @@ object ClientPattern {
   @scala.inline
   def apply(
     topic: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    expectedMessages$: Int | Double = null,
-    maxMessages$: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    expectedMessages$: js.UndefOr[Double] = js.undefined,
+    maxMessages$: js.UndefOr[Double] = js.undefined,
     pubsub$: js.UndefOr[Boolean] = js.undefined,
-    timeout$: Int | Double = null
+    timeout$: js.UndefOr[Double] = js.undefined
   ): ClientPattern = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (expectedMessages$ != null) __obj.updateDynamic("expectedMessages$")(expectedMessages$.asInstanceOf[js.Any])
-    if (maxMessages$ != null) __obj.updateDynamic("maxMessages$")(maxMessages$.asInstanceOf[js.Any])
-    if (!js.isUndefined(pubsub$)) __obj.updateDynamic("pubsub$")(pubsub$.asInstanceOf[js.Any])
-    if (timeout$ != null) __obj.updateDynamic("timeout$")(timeout$.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectedMessages$)) __obj.updateDynamic("expectedMessages$")(expectedMessages$.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessages$)) __obj.updateDynamic("maxMessages$")(maxMessages$.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pubsub$)) __obj.updateDynamic("pubsub$")(pubsub$.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout$)) __obj.updateDynamic("timeout$")(timeout$.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientPattern]
   }
 }

@@ -1,6 +1,8 @@
 package typings.antDesignReactNative
 
-import typings.react.mod._Global_.JSX.Element
+import typings.antDesignReactNative.anon.ActionTextUnderlayColor
+import typings.antDesignReactNative.anon.DefaultProps
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +17,7 @@ object popupMixinMod extends js.Object {
       /* hasGetContentHideOnDismissOnOk */ js.Any, 
       Element
     ],
-    platformProps: AnonActionTextUnderlayColor
-  ): AnonDefaultProps = js.native
+    platformProps: ActionTextUnderlayColor
+  ): DefaultProps = js.native
 }
 

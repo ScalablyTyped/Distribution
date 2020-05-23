@@ -49,11 +49,11 @@ object PNotifyconfirm {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
-    if (!js.isUndefined(prompt)) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prompt)) __obj.updateDynamic("prompt")(prompt.get.asInstanceOf[js.Any])
     if (prompt_class != null) __obj.updateDynamic("prompt_class")(prompt_class.asInstanceOf[js.Any])
     if (prompt_default != null) __obj.updateDynamic("prompt_default")(prompt_default.asInstanceOf[js.Any])
-    if (!js.isUndefined(prompt_multi_line)) __obj.updateDynamic("prompt_multi_line")(prompt_multi_line.asInstanceOf[js.Any])
+    if (!js.isUndefined(prompt_multi_line)) __obj.updateDynamic("prompt_multi_line")(prompt_multi_line.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNotifyconfirm]
   }
 }

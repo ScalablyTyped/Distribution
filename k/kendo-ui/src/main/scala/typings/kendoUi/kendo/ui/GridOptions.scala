@@ -88,7 +88,7 @@ object GridOptions {
     columnMenuOpen: /* e */ GridColumnMenuOpenEvent => Unit = null,
     columnReorder: /* e */ GridColumnReorderEvent => Unit = null,
     columnResize: /* e */ GridColumnResizeEvent => Unit = null,
-    columnResizeHandleWidth: Int | Double = null,
+    columnResizeHandleWidth: js.UndefOr[Double] = js.undefined,
     columnShow: /* e */ GridColumnShowEvent => Unit = null,
     columnUnlock: /* e */ GridColumnUnlockEvent => Unit = null,
     columns: js.Array[GridColumn] = null,
@@ -138,7 +138,7 @@ object GridOptions {
     val __obj = js.Dynamic.literal()
     if (allowCopy != null) __obj.updateDynamic("allowCopy")(allowCopy.asInstanceOf[js.Any])
     if (altRowTemplate != null) __obj.updateDynamic("altRowTemplate")(altRowTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
     if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(js.Any.fromFunction1(beforeEdit))
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
     if (cellClose != null) __obj.updateDynamic("cellClose")(js.Any.fromFunction1(cellClose))
@@ -150,7 +150,7 @@ object GridOptions {
     if (columnMenuOpen != null) __obj.updateDynamic("columnMenuOpen")(js.Any.fromFunction1(columnMenuOpen))
     if (columnReorder != null) __obj.updateDynamic("columnReorder")(js.Any.fromFunction1(columnReorder))
     if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1(columnResize))
-    if (columnResizeHandleWidth != null) __obj.updateDynamic("columnResizeHandleWidth")(columnResizeHandleWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnResizeHandleWidth)) __obj.updateDynamic("columnResizeHandleWidth")(columnResizeHandleWidth.get.asInstanceOf[js.Any])
     if (columnShow != null) __obj.updateDynamic("columnShow")(js.Any.fromFunction1(columnShow))
     if (columnUnlock != null) __obj.updateDynamic("columnUnlock")(js.Any.fromFunction1(columnUnlock))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
@@ -177,17 +177,17 @@ object GridOptions {
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.get.asInstanceOf[js.Any])
     if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
     if (noRecords != null) __obj.updateDynamic("noRecords")(noRecords.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(js.Any.fromFunction1(page))
     if (pageable != null) __obj.updateDynamic("pageable")(pageable.asInstanceOf[js.Any])
     if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
     if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
-    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection.get.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
-    if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
     if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate.asInstanceOf[js.Any])
     if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
     if (saveChanges != null) __obj.updateDynamic("saveChanges")(js.Any.fromFunction1(saveChanges))

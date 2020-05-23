@@ -32,10 +32,8 @@ object OnSelectProps {
     name: String = null,
     value: js.Object | String | Double | Boolean = null
   ): OnSelectProps = {
-    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSelectProps]
   }
 }

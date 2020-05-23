@@ -51,25 +51,25 @@ object PersistConfig {
     migrate: (/* state */ PersistedState, /* currentVersion */ Double) => js.Promise[PersistedState] = null,
     serialize: js.UndefOr[Boolean] = js.undefined,
     stateReconciler: `false` | StateReconciler[S] = null,
-    throttle: Int | Double = null,
-    timeout: Int | Double = null,
+    throttle: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
     transforms: js.Array[Transform[HSS, ESS, S, RS]] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     whitelist: js.Array[String] = null,
     writeFailHandler: /* err */ Error => Unit = null
   ): PersistConfig[S, RS, HSS, ESS] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (getStoredState != null) __obj.updateDynamic("getStoredState")(js.Any.fromFunction1(getStoredState))
     if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix.asInstanceOf[js.Any])
     if (migrate != null) __obj.updateDynamic("migrate")(js.Any.fromFunction2(migrate))
-    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
+    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize.get.asInstanceOf[js.Any])
     if (stateReconciler != null) __obj.updateDynamic("stateReconciler")(stateReconciler.asInstanceOf[js.Any])
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttle)) __obj.updateDynamic("throttle")(throttle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     if (writeFailHandler != null) __obj.updateDynamic("writeFailHandler")(js.Any.fromFunction1(writeFailHandler))
     __obj.asInstanceOf[PersistConfig[S, RS, HSS, ESS]]

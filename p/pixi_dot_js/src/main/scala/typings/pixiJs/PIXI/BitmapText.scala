@@ -1,8 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.pixiJs.AnonFont
-import typings.std.XMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,10 +30,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.Container
   * @memberof PIXI
   */
-@JSGlobal("PIXI.BitmapText")
 @js.native
-class BitmapText protected () extends Container {
-  def this(text: String, style: AnonFont) = this()
+trait BitmapText extends Container {
   /**
     * The alignment of the BitmapText object.
     *
@@ -128,23 +123,5 @@ class BitmapText protected () extends Container {
     * @member {number}
     */
   var tint: Double = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.BitmapText")
-@js.native
-object BitmapText extends js.Object {
-  def registerFont(xml: XMLDocument, textures: js.Array[Texture]): js.Any = js.native
-  /**
-    * Register a bitmap font with data and a texture.
-    *
-    * @static
-    * @param {XMLDocument} xml - The XML document data.
-    * @param {Object.<string, PIXI.Texture>|PIXI.Texture|PIXI.Texture[]} textures - List of textures for each page.
-    *  If providing an object, the key is the `<page>` element's `file` attribute in the FNT file.
-    * @return {Object} Result font object with font, size, lineHeight and char fields.
-    */
-  def registerFont(xml: XMLDocument, textures: StringDictionary[Texture]): js.Any = js.native
-  def registerFont(xml: XMLDocument, textures: Texture): js.Any = js.native
 }
 

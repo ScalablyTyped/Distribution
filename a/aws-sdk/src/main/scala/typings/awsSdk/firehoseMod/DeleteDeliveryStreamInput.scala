@@ -18,9 +18,9 @@ trait DeleteDeliveryStreamInput extends js.Object {
 
 object DeleteDeliveryStreamInput {
   @scala.inline
-  def apply(DeliveryStreamName: DeliveryStreamName, AllowForceDelete: js.UndefOr[Boolean] = js.undefined): DeleteDeliveryStreamInput = {
+  def apply(DeliveryStreamName: DeliveryStreamName, AllowForceDelete: js.UndefOr[BooleanObject] = js.undefined): DeleteDeliveryStreamInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowForceDelete)) __obj.updateDynamic("AllowForceDelete")(AllowForceDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowForceDelete)) __obj.updateDynamic("AllowForceDelete")(AllowForceDelete.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDeliveryStreamInput]
   }
 }

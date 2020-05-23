@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait HidingEventUIParam extends js.Object {
   /**
-  	 * Gets the current content displayed in the popover as a string.
-  	 */
+    * Gets the current content displayed in the popover as a string.
+    */
   var content: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the element the popover will hide for.
-  	 */
+    * Gets the element the popover will hide for.
+    */
   var element: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets reference to the %%WidgetName%% widget.
-  	 */
+    * Gets reference to the %%WidgetName%% widget.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets the popover element hiding.
-  	 */
+    * Gets the popover element hiding.
+    */
   var popover: js.UndefOr[String] = js.undefined
 }
 

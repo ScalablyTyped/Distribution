@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
 trait TextFrameData extends js.Object {
   /**
     *
-    * Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+    * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -58,7 +58,7 @@ trait TextFrameData extends js.Object {
   var bottomMargin: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Specifies whether the text frame contains text.
+    * Specifies if the text frame contains text.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -136,29 +136,29 @@ object TextFrameData {
   @scala.inline
   def apply(
     autoSizeSetting: ShapeAutoSize | AutoSizeNone | AutoSizeTextToFitShape | AutoSizeShapeToFitText | AutoSizeMixed = null,
-    bottomMargin: Int | Double = null,
+    bottomMargin: js.UndefOr[Double] = js.undefined,
     hasText: js.UndefOr[Boolean] = js.undefined,
     horizontalAlignment: ShapeTextHorizontalAlignment | Left | Center | Right | Justify | JustifyLow | Distributed | ThaiDistributed = null,
     horizontalOverflow: ShapeTextHorizontalOverflow | Overflow | Clip = null,
-    leftMargin: Int | Double = null,
+    leftMargin: js.UndefOr[Double] = js.undefined,
     orientation: ShapeTextOrientation | Horizontal | Vertical | Vertical270 | WordArtVertical | EastAsianVertical | MongolianVertical | WordArtVerticalRTL = null,
     readingOrder: ShapeTextReadingOrder | LeftToRight | RightToLeft = null,
-    rightMargin: Int | Double = null,
-    topMargin: Int | Double = null,
+    rightMargin: js.UndefOr[Double] = js.undefined,
+    topMargin: js.UndefOr[Double] = js.undefined,
     verticalAlignment: ShapeTextVerticalAlignment | Top | Middle | Bottom | Justified | Distributed = null,
     verticalOverflow: ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip = null
   ): TextFrameData = {
     val __obj = js.Dynamic.literal()
     if (autoSizeSetting != null) __obj.updateDynamic("autoSizeSetting")(autoSizeSetting.asInstanceOf[js.Any])
-    if (bottomMargin != null) __obj.updateDynamic("bottomMargin")(bottomMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasText)) __obj.updateDynamic("hasText")(hasText.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomMargin)) __obj.updateDynamic("bottomMargin")(bottomMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasText)) __obj.updateDynamic("hasText")(hasText.get.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (horizontalOverflow != null) __obj.updateDynamic("horizontalOverflow")(horizontalOverflow.asInstanceOf[js.Any])
-    if (leftMargin != null) __obj.updateDynamic("leftMargin")(leftMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftMargin)) __obj.updateDynamic("leftMargin")(leftMargin.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (readingOrder != null) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
-    if (rightMargin != null) __obj.updateDynamic("rightMargin")(rightMargin.asInstanceOf[js.Any])
-    if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightMargin)) __obj.updateDynamic("rightMargin")(rightMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topMargin)) __obj.updateDynamic("topMargin")(topMargin.get.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     if (verticalOverflow != null) __obj.updateDynamic("verticalOverflow")(verticalOverflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFrameData]

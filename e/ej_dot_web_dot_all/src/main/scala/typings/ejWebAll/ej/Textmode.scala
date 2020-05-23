@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object Textmode extends js.Object {
   //When TextMode property is set to none, only selected/checked node's text is presented.
   @js.native
   sealed trait None extends Textmode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Textmode with Double] = js.native
-  /* 1 */ @js.native
-  object FullPath extends TopLevel[FullPath with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
   
 }
 

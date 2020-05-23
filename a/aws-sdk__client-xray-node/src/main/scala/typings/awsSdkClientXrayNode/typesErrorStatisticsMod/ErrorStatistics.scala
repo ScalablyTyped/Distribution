@@ -22,14 +22,14 @@ trait ErrorStatistics extends js.Object {
 object ErrorStatistics {
   @scala.inline
   def apply(
-    OtherCount: Int | Double = null,
-    ThrottleCount: Int | Double = null,
-    TotalCount: Int | Double = null
+    OtherCount: js.UndefOr[Double] = js.undefined,
+    ThrottleCount: js.UndefOr[Double] = js.undefined,
+    TotalCount: js.UndefOr[Double] = js.undefined
   ): ErrorStatistics = {
     val __obj = js.Dynamic.literal()
-    if (OtherCount != null) __obj.updateDynamic("OtherCount")(OtherCount.asInstanceOf[js.Any])
-    if (ThrottleCount != null) __obj.updateDynamic("ThrottleCount")(ThrottleCount.asInstanceOf[js.Any])
-    if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(OtherCount)) __obj.updateDynamic("OtherCount")(OtherCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ThrottleCount)) __obj.updateDynamic("ThrottleCount")(ThrottleCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorStatistics]
   }
 }

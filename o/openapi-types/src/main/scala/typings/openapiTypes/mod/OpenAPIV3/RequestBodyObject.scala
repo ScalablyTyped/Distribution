@@ -20,7 +20,7 @@ object RequestBodyObject {
   ): RequestBodyObject = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyObject]
   }
 }

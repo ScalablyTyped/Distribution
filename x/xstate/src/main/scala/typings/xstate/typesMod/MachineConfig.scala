@@ -21,7 +21,7 @@ trait MachineConfig[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <:
 
 object MachineConfig {
   @scala.inline
-  def apply[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
+  def apply[TContext, TStateSchema, TEvent](
     activities: SingleOrArray[Activity[TContext, TEvent]] = null,
     after: DelayedTransitions[TContext, TEvent] = null,
     context: TContext | js.Function0[TContext] = null,
@@ -39,7 +39,7 @@ object MachineConfig {
     onDone: String | (SingleOrArray[TransitionConfig[TContext, DoneEventObject]]) = null,
     onEntry: Actions[TContext, TEvent] = null,
     onExit: Actions[TContext, TEvent] = null,
-    order: Int | Double = null,
+    order: js.UndefOr[Double] = js.undefined,
     parallel: js.UndefOr[Boolean] = js.undefined,
     parent: StateNode[TContext, _, TEvent, _] = null,
     states: StatesConfig[TContext, TStateSchema, TEvent] = null,
@@ -65,11 +65,11 @@ object MachineConfig {
     if (onDone != null) __obj.updateDynamic("onDone")(onDone.asInstanceOf[js.Any])
     if (onEntry != null) __obj.updateDynamic("onEntry")(onEntry.asInstanceOf[js.Any])
     if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.get.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[MachineConfig[TContext, TStateSchema, TEvent]]

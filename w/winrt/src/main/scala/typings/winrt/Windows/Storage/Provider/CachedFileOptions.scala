@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object CachedFileOptions extends js.Object {
   
   @js.native
   sealed trait useCachedFileWhenOffline extends CachedFileOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CachedFileOptions with Double] = js.native
-  /* 3 */ @js.native
-  object denyAccessWhenOffline extends TopLevel[denyAccessWhenOffline with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object requireUpdateOnAccess extends TopLevel[requireUpdateOnAccess with Double]
-  
-  /* 2 */ @js.native
-  object useCachedFileWhenOffline extends TopLevel[useCachedFileWhenOffline with Double]
   
 }
 

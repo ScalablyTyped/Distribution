@@ -4,19 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.DropCap")
-@js.native
-class DropCap protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  var DistanceFromText: Double = js.native
-  var FontName: String = js.native
-  var LinesToDrop: Double = js.native
-  val Parent: js.Any = js.native
-  var Position: WdDropPosition = js.native
+trait DropCap extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  val Creator: Double
+  var DistanceFromText: Double
+  var FontName: String
+  var LinesToDrop: Double
+  val Parent: js.Any
+  var Position: WdDropPosition
   @JSName("Word.DropCap_typekey")
-  var WordDotDropCap_typekey: DropCap = js.native
-  def Clear(): Unit = js.native
-  def Enable(): Unit = js.native
+  var WordDotDropCap_typekey: DropCap
+  def Clear(): Unit
+  def Enable(): Unit
+}
+
+object DropCap {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Clear: () => Unit,
+    Creator: Double,
+    DistanceFromText: Double,
+    Enable: () => Unit,
+    FontName: String,
+    LinesToDrop: Double,
+    Parent: js.Any,
+    Position: WdDropPosition,
+    WordDotDropCap_typekey: DropCap
+  ): DropCap = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Clear = js.Any.fromFunction0(Clear), Creator = Creator.asInstanceOf[js.Any], DistanceFromText = DistanceFromText.asInstanceOf[js.Any], Enable = js.Any.fromFunction0(Enable), FontName = FontName.asInstanceOf[js.Any], LinesToDrop = LinesToDrop.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.DropCap_typekey")(WordDotDropCap_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DropCap]
+  }
 }
 

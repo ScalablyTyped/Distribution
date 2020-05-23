@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object utilsMod {
   type A11yTitleType = java.lang.String
   type AnimateType = scala.Boolean
-  type BackgroundType = java.lang.String | typings.grommet.AnonImage
+  type BackgroundType = java.lang.String | typings.grommet.anon.Image
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.xxsmall
     - typings.grommet.grommetStrings.xsmall
@@ -30,10 +30,10 @@ package object utilsMod {
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
     - typings.grommet.utilsMod.BoxSideType
-    - typings.grommet.AnonStyle
-    - js.Array[typings.grommet.AnonSizeStyle]
+    - typings.grommet.anon.Style
+    - js.Array[typings.grommet.anon.SizeStyle]
   */
-  type BorderType = typings.grommet.utilsMod._BorderType | js.Array[typings.grommet.AnonSizeStyle] | scala.Boolean
+  type BorderType = typings.grommet.utilsMod._BorderType | js.Array[typings.grommet.anon.SizeStyle] | scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.xsmall
     - typings.grommet.grommetStrings.small
@@ -43,7 +43,7 @@ package object utilsMod {
     - java.lang.String
   */
   type BoxSizeType = typings.grommet.utilsMod._BoxSizeType | java.lang.String
-  type ColorType = js.UndefOr[java.lang.String | typings.grommet.AnonLight]
+  type ColorType = js.UndefOr[java.lang.String | typings.grommet.anon.Light]
   type DeepFreeze_ = js.Function1[/* obj */ js.Object, typings.grommet.utilsMod.DeepReadonly[js.Object]]
   type DeepReadonly[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias grommet.grommet/utils.DeepReadonly<T[K]> * / object : T[K]}
@@ -51,7 +51,7 @@ package object utilsMod {
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.none
     - typings.grommet.utilsMod.EdgeSizeType
-    - typings.grommet.AnonStart
+    - typings.grommet.anon.Start
     - java.lang.String
   */
   type EdgeType = typings.grommet.utilsMod._EdgeType | java.lang.String
@@ -77,7 +77,7 @@ package object utilsMod {
     - java.lang.String
   */
   type GapType = typings.grommet.utilsMod._GapType | java.lang.String
-  type GraphColorsType = js.Array[java.lang.String] | typings.grommet.AnonDarkArray
+  type GraphColorsType = js.Array[java.lang.String] | typings.grommet.anon.DarkArray
   type GridAreaType = java.lang.String
   type KeyboardType = js.Function1[/* event */ typings.react.mod.KeyboardEvent[typings.std.HTMLElement], scala.Unit]
   type MarginType = typings.grommet.utilsMod.EdgeType
@@ -97,7 +97,7 @@ package object utilsMod {
   */
   type OpacityType = typings.grommet.utilsMod._OpacityType | java.lang.String | scala.Double
   type PadType = typings.grommet.utilsMod.EdgeType
-  type PlaceHolderType = java.lang.String | typings.react.mod._Global_.JSX.Element | typings.react.mod.ReactNode
+  type PlaceHolderType = java.lang.String | typings.react.mod.global.JSX.Element | typings.react.mod.ReactNode
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.a
     - typings.grommet.grommetStrings.abbr
@@ -286,7 +286,7 @@ package object utilsMod {
     - typings.grommet.grommetStrings.xlarge
     - typings.grommet.grommetStrings.full
     - java.lang.String
-    - typings.grommet.AnonCorner
+    - typings.grommet.anon.Corner
   */
   type RoundType = typings.grommet.utilsMod._RoundType | scala.Boolean | java.lang.String
 }

@@ -1,7 +1,7 @@
 package typings.protractor.pluginsMod
 
-import typings.protractor.AnonSpecName
-import typings.protractor.AnonSpecNameString
+import typings.protractor.anon.SpecName
+import typings.protractor.anon.SpecNameString
 import typings.protractor.browserMod.ProtractorBrowser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ trait ProtractorPlugin extends js.Object {
     * @throws {Error} Throws an error if called after results have been reported
     */
   var addFailure: js.UndefOr[
-    js.Function2[/* message */ js.UndefOr[String], /* info */ js.UndefOr[AnonSpecName], Unit]
+    js.Function2[/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecName], Unit]
   ] = js.undefined
   /**
     * Adds a passed assertion to the test's results.
@@ -40,7 +40,7 @@ trait ProtractorPlugin extends js.Object {
     *
     * @throws {Error} Throws an error if called after results have been reported
     */
-  var addSuccess: js.UndefOr[js.Function1[/* info */ js.UndefOr[AnonSpecNameString], Unit]] = js.undefined
+  var addSuccess: js.UndefOr[js.Function1[/* info */ js.UndefOr[SpecNameString], Unit]] = js.undefined
   /**
     * Warns the user that something is problematic.
     *
@@ -54,7 +54,7 @@ trait ProtractorPlugin extends js.Object {
     *     Defaults to `{}`.
     */
   var addWarning: js.UndefOr[
-    js.Function2[/* message */ js.UndefOr[String], /* info */ js.UndefOr[AnonSpecNameString], Unit]
+    js.Function2[/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecNameString], Unit]
   ] = js.undefined
   /**
     * The plugin's configuration object.
@@ -252,9 +252,9 @@ trait ProtractorPlugin extends js.Object {
 object ProtractorPlugin {
   @scala.inline
   def apply(
-    addFailure: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[AnonSpecName]) => Unit = null,
-    addSuccess: /* info */ js.UndefOr[AnonSpecNameString] => Unit = null,
-    addWarning: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[AnonSpecNameString]) => Unit = null,
+    addFailure: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecName]) => Unit = null,
+    addSuccess: /* info */ js.UndefOr[SpecNameString] => Unit = null,
+    addWarning: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecNameString]) => Unit = null,
     config: PluginConfig = null,
     name: String = null,
     onPageLoad: /* browser */ ProtractorBrowser => Unit | js.Promise[Unit] = null,
@@ -280,7 +280,7 @@ object ProtractorPlugin {
     if (postResults != null) __obj.updateDynamic("postResults")(js.Any.fromFunction0(postResults))
     if (postTest != null) __obj.updateDynamic("postTest")(js.Any.fromFunction2(postTest))
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction0(setup))
-    if (!js.isUndefined(skipAngularStability)) __obj.updateDynamic("skipAngularStability")(skipAngularStability.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipAngularStability)) __obj.updateDynamic("skipAngularStability")(skipAngularStability.get.asInstanceOf[js.Any])
     if (teardown != null) __obj.updateDynamic("teardown")(js.Any.fromFunction0(teardown))
     if (waitForCondition != null) __obj.updateDynamic("waitForCondition")(js.Any.fromFunction1(waitForCondition))
     if (waitForPromise != null) __obj.updateDynamic("waitForPromise")(js.Any.fromFunction1(waitForPromise))

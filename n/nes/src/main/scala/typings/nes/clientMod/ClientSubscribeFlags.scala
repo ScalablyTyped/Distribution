@@ -12,7 +12,7 @@ object ClientSubscribeFlags {
   @scala.inline
   def apply(revoked: js.UndefOr[Boolean] = js.undefined): ClientSubscribeFlags = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(revoked)) __obj.updateDynamic("revoked")(revoked.asInstanceOf[js.Any])
+    if (!js.isUndefined(revoked)) __obj.updateDynamic("revoked")(revoked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientSubscribeFlags]
   }
 }

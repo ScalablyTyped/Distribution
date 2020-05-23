@@ -21,20 +21,20 @@ object Options {
   def apply(
     dithering: Double | Boolean = null,
     input: Buffer | Stream = null,
-    posterize: Int | Double = null,
+    posterize: js.UndefOr[Double] = js.undefined,
     quality: js.Tuple2[Double, Double] = null,
-    speed: Int | Double = null,
+    speed: js.UndefOr[Double] = js.undefined,
     strip: js.UndefOr[Boolean] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (dithering != null) __obj.updateDynamic("dithering")(dithering.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (posterize != null) __obj.updateDynamic("posterize")(posterize.asInstanceOf[js.Any])
+    if (!js.isUndefined(posterize)) __obj.updateDynamic("posterize")(posterize.get.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

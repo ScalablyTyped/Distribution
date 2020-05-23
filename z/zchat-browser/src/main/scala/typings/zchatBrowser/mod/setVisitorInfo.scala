@@ -1,7 +1,7 @@
 package typings.zchatBrowser.mod
 
 import typings.std.Error
-import typings.zchatBrowser.PartialVisitorInfo
+import typings.zchatBrowser.anon.PartialVisitorInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

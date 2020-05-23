@@ -7,17 +7,14 @@ import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationRouteConfigMap
 import typings.reactNavigation.mod.SupportedThemes
+import typings.reactNavigationDrawer.anon.ActiveBackgroundColor
+import typings.reactNavigationDrawer.anon.GetActionCreators
+import typings.reactNavigationDrawer.anon.InitialRouteName
+import typings.reactNavigationDrawer.anon.Lazy
+import typings.reactNavigationDrawer.anon.Loaded
 import typings.reactNavigationDrawer.drawerNavigatorItemsMod.default
 import typings.reactNavigationDrawer.drawerViewMod.Props
 import typings.reactNavigationDrawer.drawerViewMod.State
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashCLOSE_DRAWER
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashDRAWER_CLOSED
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashDRAWER_OPENED
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashMARK_DRAWER_ACTIVE
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashMARK_DRAWER_IDLE
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashMARK_DRAWER_SETTLING
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashOPEN_DRAWER
-import typings.reactNavigationDrawer.reactNavigationDrawerStrings.NavigationSlashTOGGLE_DRAWER
 import typings.reactNavigationDrawer.typesMod.NavigationDrawerConfig
 import typings.reactNavigationDrawer.typesMod.NavigationDrawerOptions
 import typings.reactNavigationDrawer.typesMod.NavigationDrawerProp
@@ -50,8 +47,8 @@ object mod extends js.Object {
   val DrawerProgressContext: Context[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any) | Null
   ] = js.native
-  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _]): AnonGetActionCreators = js.native
-  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _], config: AnonInitialRouteName): AnonGetActionCreators = js.native
+  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _]): GetActionCreators = js.native
+  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _], config: InitialRouteName): GetActionCreators = js.native
   def createDrawerNavigator(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
@@ -74,14 +71,14 @@ object mod extends js.Object {
   ): js.Any = js.native
   @js.native
   object DrawerActions extends js.Object {
-    val CLOSE_DRAWER: NavigationSlashCLOSE_DRAWER = js.native
-    val DRAWER_CLOSED: NavigationSlashDRAWER_CLOSED = js.native
-    val DRAWER_OPENED: NavigationSlashDRAWER_OPENED = js.native
-    val MARK_DRAWER_ACTIVE: NavigationSlashMARK_DRAWER_ACTIVE = js.native
-    val MARK_DRAWER_IDLE: NavigationSlashMARK_DRAWER_IDLE = js.native
-    val MARK_DRAWER_SETTLING: NavigationSlashMARK_DRAWER_SETTLING = js.native
-    val OPEN_DRAWER: NavigationSlashOPEN_DRAWER = js.native
-    val TOGGLE_DRAWER: NavigationSlashTOGGLE_DRAWER = js.native
+    val CLOSE_DRAWER: /* "Navigation/CLOSE_DRAWER" */ String = js.native
+    val DRAWER_CLOSED: /* "Navigation/DRAWER_CLOSED" */ String = js.native
+    val DRAWER_OPENED: /* "Navigation/DRAWER_OPENED" */ String = js.native
+    val MARK_DRAWER_ACTIVE: /* "Navigation/MARK_DRAWER_ACTIVE" */ String = js.native
+    val MARK_DRAWER_IDLE: /* "Navigation/MARK_DRAWER_IDLE" */ String = js.native
+    val MARK_DRAWER_SETTLING: /* "Navigation/MARK_DRAWER_SETTLING" */ String = js.native
+    val OPEN_DRAWER: /* "Navigation/OPEN_DRAWER" */ String = js.native
+    val TOGGLE_DRAWER: /* "Navigation/TOGGLE_DRAWER" */ String = js.native
     def closeDrawer(): js.Any = js.native
     def closeDrawer(payload: js.Any): js.Any = js.native
     def openDrawer(): js.Any = js.native
@@ -94,22 +91,22 @@ object mod extends js.Object {
   @js.native
   object DrawerItems extends js.Object {
     var contextType: Context[SupportedThemes] = js.native
-    var defaultProps: AnonActiveBackgroundColor = js.native
+    var defaultProps: ActiveBackgroundColor = js.native
   }
   
   /* static members */
   @js.native
   object DrawerNavigatorItems extends js.Object {
     var contextType: Context[SupportedThemes] = js.native
-    var defaultProps: AnonActiveBackgroundColor = js.native
+    var defaultProps: ActiveBackgroundColor = js.native
   }
   
   /* static members */
   @js.native
   object DrawerView extends js.Object {
     var contextType: Context[SupportedThemes] = js.native
-    var defaultProps: AnonLazy = js.native
-    def getDerivedStateFromProps(nextProps: Props, prevState: State): AnonLoaded = js.native
+    var defaultProps: Lazy = js.native
+    def getDerivedStateFromProps(nextProps: Props, prevState: State): Loaded = js.native
   }
   
 }

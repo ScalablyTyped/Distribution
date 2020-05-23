@@ -67,7 +67,7 @@ object PractitionerRoleAvailableTime {
     if (_daysOfWeek != null) __obj.updateDynamic("_daysOfWeek")(_daysOfWeek.asInstanceOf[js.Any])
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay.get.asInstanceOf[js.Any])
     if (availableEndTime != null) __obj.updateDynamic("availableEndTime")(availableEndTime.asInstanceOf[js.Any])
     if (availableStartTime != null) __obj.updateDynamic("availableStartTime")(availableStartTime.asInstanceOf[js.Any])
     if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek.asInstanceOf[js.Any])

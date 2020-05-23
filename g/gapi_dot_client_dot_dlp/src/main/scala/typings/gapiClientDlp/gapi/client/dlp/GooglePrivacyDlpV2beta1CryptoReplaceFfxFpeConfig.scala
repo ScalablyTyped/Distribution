@@ -58,14 +58,14 @@ object GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig {
     context: GooglePrivacyDlpV2beta1FieldId = null,
     cryptoKey: GooglePrivacyDlpV2beta1CryptoKey = null,
     customAlphabet: String = null,
-    radix: Int | Double = null
+    radix: js.UndefOr[Double] = js.undefined
   ): GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig = {
     val __obj = js.Dynamic.literal()
     if (commonAlphabet != null) __obj.updateDynamic("commonAlphabet")(commonAlphabet.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (cryptoKey != null) __obj.updateDynamic("cryptoKey")(cryptoKey.asInstanceOf[js.Any])
     if (customAlphabet != null) __obj.updateDynamic("customAlphabet")(customAlphabet.asInstanceOf[js.Any])
-    if (radix != null) __obj.updateDynamic("radix")(radix.asInstanceOf[js.Any])
+    if (!js.isUndefined(radix)) __obj.updateDynamic("radix")(radix.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig]
   }
 }

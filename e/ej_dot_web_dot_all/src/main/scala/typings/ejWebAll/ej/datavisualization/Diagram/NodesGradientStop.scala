@@ -20,11 +20,15 @@ trait NodesGradientStop extends js.Object {
 
 object NodesGradientStop {
   @scala.inline
-  def apply(color: String = null, offset: Int | Double = null, opacity: Int | Double = null): NodesGradientStop = {
+  def apply(
+    color: String = null,
+    offset: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined
+  ): NodesGradientStop = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesGradientStop]
   }
 }

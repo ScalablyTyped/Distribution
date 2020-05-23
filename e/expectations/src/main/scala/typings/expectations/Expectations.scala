@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object Expectations extends js.Object {
   @js.native
-  class Expect protected () extends js.Object {
-    def this(value: js.Any) = this()
-    def this(value: js.Any, assertions: IAssertions) = this()
-    def this(value: js.Any, assertions: IAssertions, expr: js.Any) = this()
-    def this(value: js.Any, assertions: IAssertions, expr: js.Any, parent: Expect) = this()
+  trait Expect extends js.Object {
     var assertions: IAssertions = js.native
     var expr: js.Any = js.native
     var not: Expect = js.native

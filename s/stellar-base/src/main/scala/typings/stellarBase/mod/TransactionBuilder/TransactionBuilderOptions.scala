@@ -1,6 +1,6 @@
 package typings.stellarBase.mod.TransactionBuilder
 
-import typings.stellarBase.AnonMinTime
+import typings.stellarBase.anon.MinTime
 import typings.stellarBase.mod.Memo
 import typings.stellarBase.mod.MemoType
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait TransactionBuilderOptions extends js.Object {
   var fee: Double
   var memo: js.UndefOr[Memo[MemoType]] = js.undefined
   var networkPassphrase: js.UndefOr[String] = js.undefined
-  var timebounds: js.UndefOr[AnonMinTime] = js.undefined
+  var timebounds: js.UndefOr[MinTime] = js.undefined
 }
 
 object TransactionBuilderOptions {
@@ -20,7 +20,7 @@ object TransactionBuilderOptions {
     fee: Double,
     memo: Memo[MemoType] = null,
     networkPassphrase: String = null,
-    timebounds: AnonMinTime = null
+    timebounds: MinTime = null
   ): TransactionBuilderOptions = {
     val __obj = js.Dynamic.literal(fee = fee.asInstanceOf[js.Any])
     if (memo != null) __obj.updateDynamic("memo")(memo.asInstanceOf[js.Any])

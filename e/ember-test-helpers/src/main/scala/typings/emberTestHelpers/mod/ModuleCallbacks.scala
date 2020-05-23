@@ -19,7 +19,7 @@ trait ModuleCallbacks
 object ModuleCallbacks {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     afterTeardown: /* assert */ js.UndefOr[js.Any] => Unit = null,
     beforeSetup: /* assert */ js.UndefOr[js.Any] => Unit = null,
     integration: js.UndefOr[Boolean] = js.undefined,
@@ -32,11 +32,11 @@ object ModuleCallbacks {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (afterTeardown != null) __obj.updateDynamic("afterTeardown")(js.Any.fromFunction1(afterTeardown))
     if (beforeSetup != null) __obj.updateDynamic("beforeSetup")(js.Any.fromFunction1(beforeSetup))
-    if (!js.isUndefined(integration)) __obj.updateDynamic("integration")(integration.asInstanceOf[js.Any])
+    if (!js.isUndefined(integration)) __obj.updateDynamic("integration")(integration.get.asInstanceOf[js.Any])
     if (needs != null) __obj.updateDynamic("needs")(needs.asInstanceOf[js.Any])
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
     if (teardown != null) __obj.updateDynamic("teardown")(js.Any.fromFunction1(teardown))
-    if (!js.isUndefined(unit)) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (!js.isUndefined(unit)) __obj.updateDynamic("unit")(unit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleCallbacks]
   }
 }

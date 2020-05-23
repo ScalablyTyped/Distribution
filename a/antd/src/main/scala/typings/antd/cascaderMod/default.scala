@@ -1,7 +1,7 @@
 package typings.antd.cascaderMod
 
-import typings.antd.AnonAllowClear
-import typings.antd.PartialCascaderState
+import typings.antd.anon.AllowClear
+import typings.antd.anon.PartialCascaderState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class default protected () extends Cascader {
 @JSImport("antd/lib/cascader", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAllowClear = js.native
+  var defaultProps: AllowClear = js.native
   def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = js.native
 }
 

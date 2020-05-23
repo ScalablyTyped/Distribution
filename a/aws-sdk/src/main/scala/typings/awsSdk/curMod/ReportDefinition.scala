@@ -43,12 +43,12 @@ object ReportDefinition {
     S3Region: AWSRegion,
     TimeUnit: TimeUnit,
     AdditionalArtifacts: AdditionalArtifactList = null,
-    RefreshClosedReports: js.UndefOr[Boolean] = js.undefined,
+    RefreshClosedReports: js.UndefOr[RefreshClosedReports] = js.undefined,
     ReportVersioning: ReportVersioning = null
   ): ReportDefinition = {
     val __obj = js.Dynamic.literal(AdditionalSchemaElements = AdditionalSchemaElements.asInstanceOf[js.Any], Compression = Compression.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], ReportName = ReportName.asInstanceOf[js.Any], S3Bucket = S3Bucket.asInstanceOf[js.Any], S3Prefix = S3Prefix.asInstanceOf[js.Any], S3Region = S3Region.asInstanceOf[js.Any], TimeUnit = TimeUnit.asInstanceOf[js.Any])
     if (AdditionalArtifacts != null) __obj.updateDynamic("AdditionalArtifacts")(AdditionalArtifacts.asInstanceOf[js.Any])
-    if (!js.isUndefined(RefreshClosedReports)) __obj.updateDynamic("RefreshClosedReports")(RefreshClosedReports.asInstanceOf[js.Any])
+    if (!js.isUndefined(RefreshClosedReports)) __obj.updateDynamic("RefreshClosedReports")(RefreshClosedReports.get.asInstanceOf[js.Any])
     if (ReportVersioning != null) __obj.updateDynamic("ReportVersioning")(ReportVersioning.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportDefinition]
   }

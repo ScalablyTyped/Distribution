@@ -1,11 +1,11 @@
 package typings.jsforce.salesforceObjectMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jsforce.AnonCallCallback
-import typings.jsforce.AnonCallCallbackClear
-import typings.jsforce.AnonCallClear
-import typings.jsforce.AnonCallLayoutNameCallback
-import typings.jsforce.AnonExtIdField
+import typings.jsforce.anon.CallCallback
+import typings.jsforce.anon.CallCallbackClear
+import typings.jsforce.anon.CallClear
+import typings.jsforce.anon.CallLayoutNameCallback
+import typings.jsforce.anon.ExtIdField
 import typings.jsforce.batchMod.Batch
 import typings.jsforce.batchMod.BatchResultInfo
 import typings.jsforce.connectionMod.Callback
@@ -28,14 +28,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class SObject[T] () extends js.Object {
   @JSName("approvalLayouts$")
-  var approvalLayouts$_Original: AnonCallClear = js.native
+  var approvalLayouts$_Original: CallClear = js.native
   @JSName("compactLayouts$")
-  var compactLayouts$_Original: AnonCallCallback = js.native
+  var compactLayouts$_Original: CallCallback = js.native
   @JSName("describe$")
-  var describe$_Original: AnonCallCallbackClear = js.native
+  var describe$_Original: CallCallbackClear = js.native
   /** Returns a value from the cache if it exists, otherwise calls SObject.layouts */
   @JSName("layouts$")
-  var layouts$_Original: AnonCallLayoutNameCallback = js.native
+  var layouts$_Original: CallLayoutNameCallback = js.native
   def approvalLayouts(): js.Promise[ApprovalLayoutInfo] = js.native
   def approvalLayouts(callback: Callback[ApprovalLayoutInfo]): js.Promise[ApprovalLayoutInfo] = js.native
   /** Returns a value from the cache if it exists, otherwise calls SObject.approvalLayouts */
@@ -44,28 +44,18 @@ class SObject[T] () extends js.Object {
   @JSName("approvalLayouts$")
   def approvalLayouts$(callback: Callback[ApprovalLayoutInfo]): ApprovalLayoutInfo = js.native
   def bulkload(operation: String): Batch = js.native
-  def bulkload(operation: String, options: AnonExtIdField): Batch = js.native
-  def bulkload(operation: String, options: AnonExtIdField, input: String): Batch = js.native
+  def bulkload(operation: String, options: ExtIdField): Batch = js.native
+  def bulkload(operation: String, options: ExtIdField, input: String): Batch = js.native
+  def bulkload(operation: String, options: ExtIdField, input: String, callback: Callback[js.Array[RecordResult]]): Batch = js.native
+  def bulkload(operation: String, options: ExtIdField, input: js.Array[Record[T]]): Batch = js.native
   def bulkload(
     operation: String,
-    options: AnonExtIdField,
-    input: String,
-    callback: Callback[js.Array[RecordResult]]
-  ): Batch = js.native
-  def bulkload(operation: String, options: AnonExtIdField, input: js.Array[Record[T]]): Batch = js.native
-  def bulkload(
-    operation: String,
-    options: AnonExtIdField,
+    options: ExtIdField,
     input: js.Array[Record[T]],
     callback: Callback[js.Array[RecordResult]]
   ): Batch = js.native
-  def bulkload(operation: String, options: AnonExtIdField, input: Stream): Batch = js.native
-  def bulkload(
-    operation: String,
-    options: AnonExtIdField,
-    input: Stream,
-    callback: Callback[js.Array[RecordResult]]
-  ): Batch = js.native
+  def bulkload(operation: String, options: ExtIdField, input: Stream): Batch = js.native
+  def bulkload(operation: String, options: ExtIdField, input: Stream, callback: Callback[js.Array[RecordResult]]): Batch = js.native
   def compactLayouts(): js.Promise[CompactLayoutInfo] = js.native
   def compactLayouts(callback: Callback[CompactLayoutInfo]): js.Promise[CompactLayoutInfo] = js.native
   /** Returns a value from the cache if it exists, otherwise calls SObject.compactLayouts */

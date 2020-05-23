@@ -134,7 +134,7 @@ object InjectManifestConfig {
     globStrict: js.UndefOr[Boolean] = js.undefined,
     injectionPoint: String = null,
     manifestTransforms: js.Array[ManifestTransform] = null,
-    maximumFileSizeToCacheInBytes: Int | Double = null,
+    maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.undefined,
     mode: String = null,
     modifyURLPrefix: StringDictionary[String] = null,
     templatedURLs: js.Object = null
@@ -142,13 +142,13 @@ object InjectManifestConfig {
     val __obj = js.Dynamic.literal(globDirectory = globDirectory.asInstanceOf[js.Any], swDest = swDest.asInstanceOf[js.Any], swSrc = swSrc.asInstanceOf[js.Any])
     if (additionalManifestEntries != null) __obj.updateDynamic("additionalManifestEntries")(additionalManifestEntries.asInstanceOf[js.Any])
     if (dontCacheBustURLsMatching != null) __obj.updateDynamic("dontCacheBustURLsMatching")(dontCacheBustURLsMatching.asInstanceOf[js.Any])
-    if (!js.isUndefined(globFollow)) __obj.updateDynamic("globFollow")(globFollow.asInstanceOf[js.Any])
+    if (!js.isUndefined(globFollow)) __obj.updateDynamic("globFollow")(globFollow.get.asInstanceOf[js.Any])
     if (globIgnores != null) __obj.updateDynamic("globIgnores")(globIgnores.asInstanceOf[js.Any])
     if (globPatterns != null) __obj.updateDynamic("globPatterns")(globPatterns.asInstanceOf[js.Any])
-    if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict.asInstanceOf[js.Any])
+    if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict.get.asInstanceOf[js.Any])
     if (injectionPoint != null) __obj.updateDynamic("injectionPoint")(injectionPoint.asInstanceOf[js.Any])
     if (manifestTransforms != null) __obj.updateDynamic("manifestTransforms")(manifestTransforms.asInstanceOf[js.Any])
-    if (maximumFileSizeToCacheInBytes != null) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumFileSizeToCacheInBytes)) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (modifyURLPrefix != null) __obj.updateDynamic("modifyURLPrefix")(modifyURLPrefix.asInstanceOf[js.Any])
     if (templatedURLs != null) __obj.updateDynamic("templatedURLs")(templatedURLs.asInstanceOf[js.Any])

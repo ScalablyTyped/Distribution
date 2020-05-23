@@ -1,5 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import typings.forkTsCheckerWebpackPlugin.anon.Typeofts
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ModuleResolutionHost
 import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
@@ -11,13 +12,9 @@ import scala.scalajs.js.annotation._
 @JSImport("fork-ts-checker-webpack-plugin/lib/resolution", JSImport.Namespace)
 @js.native
 object resolutionMod extends js.Object {
-  def makeResolutionFunctions(): AnonResolveModuleName = js.native
-  def makeResolutionFunctions(
-    resolveModuleName: js.UndefOr[scala.Nothing],
-    resolveTypeReferenceDirective: ResolveTypeReferenceDirective
-  ): AnonResolveModuleName = js.native
-  def makeResolutionFunctions(resolveModuleName: ResolveModuleName): AnonResolveModuleName = js.native
-  def makeResolutionFunctions(resolveModuleName: ResolveModuleName, resolveTypeReferenceDirective: ResolveTypeReferenceDirective): AnonResolveModuleName = js.native
+  def makeResolutionFunctions(): typings.forkTsCheckerWebpackPlugin.anon.ResolveModuleName = js.native
+  def makeResolutionFunctions(resolveModuleName: ResolveModuleName): typings.forkTsCheckerWebpackPlugin.anon.ResolveModuleName = js.native
+  def makeResolutionFunctions(resolveModuleName: ResolveModuleName, resolveTypeReferenceDirective: ResolveTypeReferenceDirective): typings.forkTsCheckerWebpackPlugin.anon.ResolveModuleName = js.native
   type ResolveModuleName = js.Function5[
     /* typescript */ Typeofts, 
     /* moduleName */ String, 

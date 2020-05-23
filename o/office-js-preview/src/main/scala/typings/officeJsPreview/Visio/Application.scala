@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Visio
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.Visio.Interfaces.ApplicationData
 import typings.officeJsPreview.Visio.Interfaces.ApplicationLoadOptions
 import typings.officeJsPreview.Visio.Interfaces.ApplicationUpdateData
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.CommandBar
 import typings.officeJsPreview.officeJsPreviewStrings.PageNavigationBar
 import typings.officeJsPreview.officeJsPreviewStrings.StatusBar
@@ -19,9 +19,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.Application")
 @js.native
-class Application () extends ClientObject {
+trait Application extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Application: RequestContext = js.native
@@ -57,8 +56,8 @@ class Application () extends ClientObject {
   def load(): Application = js.native
   def load(option: String): Application = js.native
   def load(option: js.Array[String]): Application = js.native
-  def load(option: AnonExpand): Application = js.native
   def load(option: ApplicationLoadOptions): Application = js.native
+  def load(option: Expand): Application = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Application): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

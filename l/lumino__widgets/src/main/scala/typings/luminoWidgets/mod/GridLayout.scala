@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.PartialICellConfig
+import typings.luminoWidgets.anon.PartialICellConfig
 import typings.luminoWidgets.gridlayoutMod.GridLayout.ICellConfig
 import typings.luminoWidgets.gridlayoutMod.GridLayout.IOptions
 import scala.scalajs.js

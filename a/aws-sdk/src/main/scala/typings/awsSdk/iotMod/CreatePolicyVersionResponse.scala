@@ -27,13 +27,13 @@ trait CreatePolicyVersionResponse extends js.Object {
 object CreatePolicyVersionResponse {
   @scala.inline
   def apply(
-    isDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
     policyArn: PolicyArn = null,
     policyDocument: PolicyDocument = null,
     policyVersionId: PolicyVersionId = null
   ): CreatePolicyVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDefaultVersion)) __obj.updateDynamic("isDefaultVersion")(isDefaultVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefaultVersion)) __obj.updateDynamic("isDefaultVersion")(isDefaultVersion.get.asInstanceOf[js.Any])
     if (policyArn != null) __obj.updateDynamic("policyArn")(policyArn.asInstanceOf[js.Any])
     if (policyDocument != null) __obj.updateDynamic("policyDocument")(policyDocument.asInstanceOf[js.Any])
     if (policyVersionId != null) __obj.updateDynamic("policyVersionId")(policyVersionId.asInstanceOf[js.Any])

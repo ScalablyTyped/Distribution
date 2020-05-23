@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,17 +36,6 @@ object MIPMAP_MODES extends js.Object {
   
   @js.native
   sealed trait POW2 extends MIPMAP_MODES
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MIPMAP_MODES with Double] = js.native
-  /* 0 */ @js.native
-  object OFF extends TopLevel[OFF with Double]
-  
-  /* 2 */ @js.native
-  object ON extends TopLevel[ON with Double]
-  
-  /* 1 */ @js.native
-  object POW2 extends TopLevel[POW2 with Double]
   
 }
 

@@ -23,7 +23,7 @@ object ComboboxPopoverProps {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(portal)) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
+    if (!js.isUndefined(portal)) __obj.updateDynamic("portal")(portal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboboxPopoverProps]
   }
 }

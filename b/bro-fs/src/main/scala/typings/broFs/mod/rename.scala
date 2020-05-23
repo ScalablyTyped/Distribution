@@ -1,6 +1,6 @@
 package typings.broFs.mod
 
-import typings.broFs.AnonCreate
+import typings.broFs.anon.Create
 import typings.filesystem.FileEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object rename extends js.Object {
   def apply(oldPath: String, newPath: String): js.Promise[FileEntry] = js.native
-  def apply(oldPath: String, newPath: String, options: AnonCreate): js.Promise[FileEntry] = js.native
+  def apply(oldPath: String, newPath: String, options: Create): js.Promise[FileEntry] = js.native
   def apply(oldPath: FileEntry, newPath: String): js.Promise[FileEntry] = js.native
-  def apply(oldPath: FileEntry, newPath: String, options: AnonCreate): js.Promise[FileEntry] = js.native
+  def apply(oldPath: FileEntry, newPath: String, options: Create): js.Promise[FileEntry] = js.native
 }
 

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxClientDocumentPreviewTab")
 @js.native
-class ASPxClientDocumentPreviewTab () extends js.Object {
+trait ASPxClientDocumentPreviewTab extends js.Object {
   @JSName("active")
   var active_Original: KnockoutObservable[Boolean] = js.native
   var model: js.Any = js.native

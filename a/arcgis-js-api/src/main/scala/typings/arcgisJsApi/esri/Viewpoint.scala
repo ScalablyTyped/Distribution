@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,8 +39,4 @@ trait Viewpoint
     */
   var targetGeometry: Geometry_ = js.native
 }
-
-@JSGlobal("__esri.Viewpoint")
-@js.native
-object Viewpoint extends TopLevel[ViewpointConstructor]
 

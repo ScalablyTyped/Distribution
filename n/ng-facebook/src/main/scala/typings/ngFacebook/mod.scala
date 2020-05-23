@@ -15,6 +15,7 @@ import typings.facebookJsSdk.facebook.PaymentsLiteDialogParams
 import typings.facebookJsSdk.facebook.SendDialogParams
 import typings.facebookJsSdk.facebook.ShareDialogParams
 import typings.facebookJsSdk.facebook.ShareOpenGraphDialogParams
+import typings.ngFacebook.anon.PartialInitParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -48,12 +48,7 @@ trait VizCreateOptions
 object VizCreateOptions {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Apply a filter that you specify to the view when it is first rendered.
-    * For example, if you have an Academic Year filter and only want to display data for 2017,
-    * you might enter "Academic Year": "2016". For more information, see Filtering.
-    */
-  /* filter */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     device: String = null,
     height: String = null,
     hideTabs: js.UndefOr[Boolean] = js.undefined,
@@ -67,8 +62,8 @@ object VizCreateOptions {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTabs)) __obj.updateDynamic("hideTabs")(hideTabs.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideToolbar)) __obj.updateDynamic("hideToolbar")(hideToolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTabs)) __obj.updateDynamic("hideTabs")(hideTabs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideToolbar)) __obj.updateDynamic("hideToolbar")(hideToolbar.get.asInstanceOf[js.Any])
     if (instanceIdToClone != null) __obj.updateDynamic("instanceIdToClone")(instanceIdToClone.asInstanceOf[js.Any])
     if (onFirstInteractive != null) __obj.updateDynamic("onFirstInteractive")(js.Any.fromFunction1(onFirstInteractive))
     if (onFirstVizSizeKnown != null) __obj.updateDynamic("onFirstVizSizeKnown")(js.Any.fromFunction1(onFirstVizSizeKnown))

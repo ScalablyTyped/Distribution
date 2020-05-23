@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Ribbon.HelpCommandNames")
-@js.native
-class HelpCommandNames () extends js.Object
+trait HelpCommandNames extends js.Object
 

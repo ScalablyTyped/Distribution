@@ -3,7 +3,7 @@ package typings.reactNativeTabView.sceneViewMod
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeTabView.AnonLoading
+import typings.reactNativeTabView.anon.Loading
 import typings.reactNativeTabView.reactNativeTabViewStrings.enter
 import typings.reactNativeTabView.typesMod.Layout
 import typings.reactNativeTabView.typesMod.Listener
@@ -24,7 +24,7 @@ trait Props[T /* <: Route */] extends js.Object {
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   @JSName("addListener")
   def addListener_enter(`type`: enter, listener: Listener): Unit
-  def children(props: AnonLoading): ReactNode
+  def children(props: Loading): ReactNode
   def jumpTo(key: String): Unit
   @JSName("removeListener")
   def removeListener_enter(`type`: enter, listener: Listener): Unit
@@ -32,9 +32,9 @@ trait Props[T /* <: Route */] extends js.Object {
 
 object Props {
   @scala.inline
-  def apply[T /* <: Route */](
+  def apply[T](
     addListener: (enter, Listener) => Unit,
-    children: AnonLoading => ReactNode,
+    children: Loading => ReactNode,
     index: Double,
     jumpTo: String => Unit,
     layout: Layout,
@@ -43,11 +43,11 @@ object Props {
     navigationState: NavigationState[T],
     position: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any,
     removeListener: (enter, Listener) => Unit,
-    style: StyleProp[ViewStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): Props[T] = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), children = js.Any.fromFunction1(children), index = index.asInstanceOf[js.Any], jumpTo = js.Any.fromFunction1(jumpTo), layout = layout.asInstanceOf[js.Any], lazyPreloadDistance = lazyPreloadDistance.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], removeListener = js.Any.fromFunction2(removeListener))
     __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[T]]
   }
 }

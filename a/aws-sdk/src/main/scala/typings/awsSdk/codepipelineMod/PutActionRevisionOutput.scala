@@ -18,12 +18,9 @@ trait PutActionRevisionOutput extends js.Object {
 
 object PutActionRevisionOutput {
   @scala.inline
-  def apply(
-    newRevision: js.UndefOr[scala.Boolean] = js.undefined,
-    pipelineExecutionId: PipelineExecutionId = null
-  ): PutActionRevisionOutput = {
+  def apply(newRevision: js.UndefOr[Boolean] = js.undefined, pipelineExecutionId: PipelineExecutionId = null): PutActionRevisionOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(newRevision)) __obj.updateDynamic("newRevision")(newRevision.asInstanceOf[js.Any])
+    if (!js.isUndefined(newRevision)) __obj.updateDynamic("newRevision")(newRevision.get.asInstanceOf[js.Any])
     if (pipelineExecutionId != null) __obj.updateDynamic("pipelineExecutionId")(pipelineExecutionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutActionRevisionOutput]
   }

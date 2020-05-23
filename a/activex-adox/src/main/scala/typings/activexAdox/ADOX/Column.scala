@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADOX.Column")
 @js.native
-class Column protected () extends js.Object {
+trait Column extends js.Object {
   @JSName("ADOX.Column_typekey")
   var ADOXDotColumn_typekey: Column = js.native
   var Attributes: ColumnAttributesEnum = js.native

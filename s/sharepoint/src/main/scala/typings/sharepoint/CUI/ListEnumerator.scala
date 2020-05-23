@@ -4,13 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CUI.ListEnumerator")
-@js.native
-class ListEnumerator[T] protected () extends js.Object {
-  def this(index: js.Any) = this()
-  def get_current(): T = js.native
-  def moveNext(): Boolean = js.native
-  def movePrevious(): Boolean = js.native
-  def reset(): scala.Unit = js.native
+trait ListEnumerator[T] extends js.Object {
+  def get_current(): T
+  def moveNext(): Boolean
+  def movePrevious(): Boolean
+  def reset(): scala.Unit
+}
+
+object ListEnumerator {
+  @scala.inline
+  def apply[T](
+    get_current: () => T,
+    moveNext: () => Boolean,
+    movePrevious: () => Boolean,
+    reset: () => scala.Unit
+  ): ListEnumerator[T] = {
+    val __obj = js.Dynamic.literal(get_current = js.Any.fromFunction0(get_current), moveNext = js.Any.fromFunction0(moveNext), movePrevious = js.Any.fromFunction0(movePrevious), reset = js.Any.fromFunction0(reset))
+    __obj.asInstanceOf[ListEnumerator[T]]
+  }
 }
 

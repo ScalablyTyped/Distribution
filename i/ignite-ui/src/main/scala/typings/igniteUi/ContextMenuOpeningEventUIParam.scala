@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait ContextMenuOpeningEventUIParam extends js.Object {
   /**
-  	 * Get the [area](ig.spreadsheet.SpreadsheetContextMenuArea) for which the menu is being displayed.
-  	 */
+    * Get the [area](ig.spreadsheet.SpreadsheetContextMenuArea) for which the menu is being displayed.
+    */
   var menuArea: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to the spreadsheet widget.
-  	 */
+    * Gets a reference to the spreadsheet widget.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

@@ -25,7 +25,7 @@ object MUIDataTableBodyRow {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableBodyRow]
   }
 }

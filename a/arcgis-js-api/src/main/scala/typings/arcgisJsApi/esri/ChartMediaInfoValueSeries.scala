@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,8 +25,4 @@ trait ChartMediaInfoValueSeries extends Accessor {
     */
   var y: Double = js.native
 }
-
-@JSGlobal("__esri.ChartMediaInfoValueSeries")
-@js.native
-object ChartMediaInfoValueSeries extends TopLevel[ChartMediaInfoValueSeriesConstructor]
 

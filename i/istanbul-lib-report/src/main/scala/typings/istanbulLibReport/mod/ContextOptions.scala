@@ -1,7 +1,7 @@
 package typings.istanbulLibReport.mod
 
 import typings.istanbulLibCoverage.mod.CoverageMap
-import typings.istanbulLibReport.PartialWatermarks
+import typings.istanbulLibReport.anon.PartialWatermarks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

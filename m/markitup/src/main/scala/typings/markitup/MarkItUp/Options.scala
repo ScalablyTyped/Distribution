@@ -111,14 +111,14 @@ object Options {
     if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
     if (onShiftEnter != null) __obj.updateDynamic("onShiftEnter")(onShiftEnter.asInstanceOf[js.Any])
     if (onTab != null) __obj.updateDynamic("onTab")(onTab.asInstanceOf[js.Any])
-    if (!js.isUndefined(previewAutoRefresh)) __obj.updateDynamic("previewAutoRefresh")(previewAutoRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(previewAutoRefresh)) __obj.updateDynamic("previewAutoRefresh")(previewAutoRefresh.get.asInstanceOf[js.Any])
     if (previewInWindow != null) __obj.updateDynamic("previewInWindow")(previewInWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(previewParser)) __obj.updateDynamic("previewParser")(previewParser.asInstanceOf[js.Any])
+    if (!js.isUndefined(previewParser)) __obj.updateDynamic("previewParser")(previewParser.get.asInstanceOf[js.Any])
     if (previewParserPath != null) __obj.updateDynamic("previewParserPath")(previewParserPath.asInstanceOf[js.Any])
     if (previewParserVar != null) __obj.updateDynamic("previewParserVar")(previewParserVar.asInstanceOf[js.Any])
     if (previewPosition != null) __obj.updateDynamic("previewPosition")(previewPosition.asInstanceOf[js.Any])
     if (previewTemplatePath != null) __obj.updateDynamic("previewTemplatePath")(previewTemplatePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeHandle)) __obj.updateDynamic("resizeHandle")(resizeHandle.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeHandle)) __obj.updateDynamic("resizeHandle")(resizeHandle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

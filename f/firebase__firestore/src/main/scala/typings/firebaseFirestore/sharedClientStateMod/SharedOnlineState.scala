@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/shared_client_state", "SharedOnlineState")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/shared_client_state", "SharedOnlineState")
 @js.native
 class SharedOnlineState protected () extends js.Object {
   def this(clientId: String, onlineState: OnlineState) = this()
@@ -14,7 +14,7 @@ class SharedOnlineState protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/shared_client_state", "SharedOnlineState")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/shared_client_state", "SharedOnlineState")
 @js.native
 object SharedOnlineState extends js.Object {
   /**

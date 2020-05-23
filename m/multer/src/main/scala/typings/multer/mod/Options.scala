@@ -3,8 +3,8 @@ package typings.multer.mod
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
-import typings.multer.AnonFieldNameSize
-import typings.multer.mod._Global_.Express.Multer.File
+import typings.multer.anon.FieldNameSize
+import typings.multer.mod.global.Express.Multer.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ trait Options extends js.Object {
     * passed to Busboy directly, and the details of properties can be found
     * at https://github.com/mscdex/busboy#busboy-methods.
     */
-  var limits: js.UndefOr[AnonFieldNameSize] = js.undefined
+  var limits: js.UndefOr[FieldNameSize] = js.undefined
   /** Preserve the full path of the original filename rather than the basename. (Default: false) */
   var preservePath: js.UndefOr[Boolean] = js.undefined
   /**
@@ -55,7 +55,7 @@ object Options {
   def apply(
     dest: String = null,
     fileFilter: (/* req */ Request_[ParamsDictionary, _, _, Query], /* file */ File, /* callback */ FileFilterCallback) => Unit = null,
-    limits: AnonFieldNameSize = null,
+    limits: FieldNameSize = null,
     preservePath: js.UndefOr[Boolean] = js.undefined,
     storage: StorageEngine = null
   ): Options = {
@@ -63,7 +63,7 @@ object Options {
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (fileFilter != null) __obj.updateDynamic("fileFilter")(js.Any.fromFunction3(fileFilter))
     if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
-    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.get.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

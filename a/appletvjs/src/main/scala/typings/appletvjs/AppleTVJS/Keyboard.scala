@@ -8,9 +8,9 @@ trait Keyboard extends js.Object {
   /** The text inside of a searchField or textField element. */
   var text: String
   /**
-  		 * A callback function that is called when the text inside
-  		 * of searchField or textField element changes.
-  		 * */
+    * A callback function that is called when the text inside
+    * of searchField or textField element changes.
+    * */
   def onTextChange(): Unit
 }
 

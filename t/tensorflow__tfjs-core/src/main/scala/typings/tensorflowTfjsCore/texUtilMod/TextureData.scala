@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsCore.texUtilMod
 
 import typings.std.WebGLTexture
-import typings.tensorflowTfjsCore.AnonFlatOffset
-import typings.tensorflowTfjsCore.AnonImagReal
+import typings.tensorflowTfjsCore.anon.FlatOffset
+import typings.tensorflowTfjsCore.anon.ImagReal
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import scala.scalajs.js
@@ -10,11 +10,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextureData extends js.Object {
-  var complexTensors: js.UndefOr[AnonImagReal] = js.undefined
+  var complexTensors: js.UndefOr[ImagReal] = js.undefined
   var dtype: DataType
   var isPacked: js.UndefOr[Boolean] = js.undefined
   var shape: js.Array[Double]
-  var slice: js.UndefOr[AnonFlatOffset] = js.undefined
+  var slice: js.UndefOr[FlatOffset] = js.undefined
   /** [rows, columns] shape of the texture. */
   var texShape: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   var texture: js.UndefOr[WebGLTexture] = js.undefined
@@ -27,9 +27,9 @@ object TextureData {
   def apply(
     dtype: DataType,
     shape: js.Array[Double],
-    complexTensors: AnonImagReal = null,
+    complexTensors: ImagReal = null,
     isPacked: js.UndefOr[Boolean] = js.undefined,
-    slice: AnonFlatOffset = null,
+    slice: FlatOffset = null,
     texShape: js.Tuple2[Double, Double] = null,
     texture: WebGLTexture = null,
     usage: TextureUsage = null,
@@ -37,7 +37,7 @@ object TextureData {
   ): TextureData = {
     val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
     if (complexTensors != null) __obj.updateDynamic("complexTensors")(complexTensors.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPacked)) __obj.updateDynamic("isPacked")(isPacked.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPacked)) __obj.updateDynamic("isPacked")(isPacked.get.asInstanceOf[js.Any])
     if (slice != null) __obj.updateDynamic("slice")(slice.asInstanceOf[js.Any])
     if (texShape != null) __obj.updateDynamic("texShape")(texShape.asInstanceOf[js.Any])
     if (texture != null) __obj.updateDynamic("texture")(texture.asInstanceOf[js.Any])

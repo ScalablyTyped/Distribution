@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonLength
+import typings.sequelize.anon.Length
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ trait DataTypeMediumInt extends DataTypeAbstractNumber[DataTypeMediumInt] {
     */
   def apply(): DataTypeMediumInt = js.native
   def apply(length: Double): DataTypeMediumInt = js.native
-  def apply(options: AnonLength): DataTypeMediumInt = js.native
+  def apply(options: Length): DataTypeMediumInt = js.native
 }
 

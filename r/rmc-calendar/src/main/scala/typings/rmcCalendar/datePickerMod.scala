@@ -1,6 +1,7 @@
 package typings.rmcCalendar
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
+import typings.rmcCalendar.anon.OnFinish
 import typings.rmcCalendar.dataTypesMod.Models.MonthData
 import typings.std.CSSStyleDeclaration
 import typings.std.HTMLDivElement
@@ -15,7 +16,7 @@ object datePickerMod extends js.Object {
   trait DatePicker
     extends typings.rmcCalendar.datePickerBaseMod.default {
     var panel: HTMLDivElement = js.native
-    var touchHandler: AnonOnFinish = js.native
+    var touchHandler: OnFinish = js.native
     var transform: String = js.native
     def computeHeight(data: MonthData): Unit = js.native
     def computeHeight(data: MonthData, singleMonth: typings.rmcCalendar.singleMonthMod.default): Unit = js.native

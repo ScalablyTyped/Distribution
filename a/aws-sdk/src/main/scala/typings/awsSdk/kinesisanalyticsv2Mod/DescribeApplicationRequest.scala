@@ -18,9 +18,12 @@ trait DescribeApplicationRequest extends js.Object {
 
 object DescribeApplicationRequest {
   @scala.inline
-  def apply(ApplicationName: ApplicationName, IncludeAdditionalDetails: js.UndefOr[Boolean] = js.undefined): DescribeApplicationRequest = {
+  def apply(
+    ApplicationName: ApplicationName,
+    IncludeAdditionalDetails: js.UndefOr[BooleanObject] = js.undefined
+  ): DescribeApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeAdditionalDetails)) __obj.updateDynamic("IncludeAdditionalDetails")(IncludeAdditionalDetails.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeAdditionalDetails)) __obj.updateDynamic("IncludeAdditionalDetails")(IncludeAdditionalDetails.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeApplicationRequest]
   }
 }

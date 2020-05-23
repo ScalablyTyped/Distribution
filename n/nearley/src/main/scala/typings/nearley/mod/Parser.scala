@@ -1,6 +1,6 @@
 package typings.nearley.mod
 
-import typings.nearley.AnonDictkey
+import typings.nearley.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ class Parser protected () extends js.Object {
     */
   def feed(chunk: String): this.type = js.native
   def finish(): js.Array[_] = js.native
-  def restore(column: AnonDictkey): Unit = js.native
-  def save(): AnonDictkey = js.native
+  def restore(column: Dictkey): Unit = js.native
+  def save(): Dictkey = js.native
 }
 

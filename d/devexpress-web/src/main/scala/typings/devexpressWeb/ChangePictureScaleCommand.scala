@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to scale pictures in a selected range.
   */
-@JSGlobal("ChangePictureScaleCommand")
 @js.native
-class ChangePictureScaleCommand () extends CommandBase {
+trait ChangePictureScaleCommand extends CommandBase {
   /**
     * Executes the ChangePictureScaleCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param scale The picture scale.

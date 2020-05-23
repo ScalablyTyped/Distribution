@@ -17,7 +17,7 @@ object DisplayInfoFlags {
   @scala.inline
   def apply(singleUnified: js.UndefOr[Boolean] = js.undefined): DisplayInfoFlags = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(singleUnified)) __obj.updateDynamic("singleUnified")(singleUnified.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleUnified)) __obj.updateDynamic("singleUnified")(singleUnified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayInfoFlags]
   }
 }

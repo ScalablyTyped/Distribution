@@ -1,6 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
-import typings.microsoftLiveConnect.AnonCode
+import typings.microsoftLiveConnect.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +13,12 @@ trait IError extends js.Object {
   /**
     * Info about the error.
     */
-  var error: AnonCode
+  var error: Code
 }
 
 object IError {
   @scala.inline
-  def apply(error: AnonCode): IError = {
+  def apply(error: Code): IError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[IError]
   }

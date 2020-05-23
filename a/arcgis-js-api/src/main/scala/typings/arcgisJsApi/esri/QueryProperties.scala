@@ -307,18 +307,18 @@ object QueryProperties {
   @scala.inline
   def apply(
     cacheHint: js.UndefOr[Boolean] = js.undefined,
-    datumTransformation: Int | Double = null,
-    distance: Int | Double = null,
+    datumTransformation: js.UndefOr[Double] = js.undefined,
+    distance: js.UndefOr[Double] = js.undefined,
     gdbVersion: String = null,
     geometry: GeometryProperties = null,
-    geometryPrecision: Int | Double = null,
+    geometryPrecision: js.UndefOr[Double] = js.undefined,
     groupByFieldsForStatistics: js.Array[String] = null,
     having: String = null,
     historicMoment: DateProperties = null,
-    maxAllowableOffset: Int | Double = null,
-    maxRecordCountFactor: Int | Double = null,
+    maxAllowableOffset: js.UndefOr[Double] = js.undefined,
+    maxRecordCountFactor: js.UndefOr[Double] = js.undefined,
     multipatchOption: String = null,
-    num: Int | Double = null,
+    num: js.UndefOr[Double] = js.undefined,
     objectIds: js.Array[Double] = null,
     orderByFields: js.Array[String] = null,
     outFields: js.Array[String] = null,
@@ -338,26 +338,26 @@ object QueryProperties {
     returnZ: js.UndefOr[Boolean] = js.undefined,
     spatialRelationship: intersects | contains | crosses | disjoint | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation = null,
     sqlFormat: none | standard | native = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     text: String = null,
     timeExtent: TimeExtentProperties = null,
     units: feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_ = null,
     where: String = null
   ): QueryProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheHint)) __obj.updateDynamic("cacheHint")(cacheHint.asInstanceOf[js.Any])
-    if (datumTransformation != null) __obj.updateDynamic("datumTransformation")(datumTransformation.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheHint)) __obj.updateDynamic("cacheHint")(cacheHint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(datumTransformation)) __obj.updateDynamic("datumTransformation")(datumTransformation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion.asInstanceOf[js.Any])
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(geometryPrecision)) __obj.updateDynamic("geometryPrecision")(geometryPrecision.get.asInstanceOf[js.Any])
     if (groupByFieldsForStatistics != null) __obj.updateDynamic("groupByFieldsForStatistics")(groupByFieldsForStatistics.asInstanceOf[js.Any])
     if (having != null) __obj.updateDynamic("having")(having.asInstanceOf[js.Any])
     if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
-    if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
-    if (maxRecordCountFactor != null) __obj.updateDynamic("maxRecordCountFactor")(maxRecordCountFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAllowableOffset)) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRecordCountFactor)) __obj.updateDynamic("maxRecordCountFactor")(maxRecordCountFactor.get.asInstanceOf[js.Any])
     if (multipatchOption != null) __obj.updateDynamic("multipatchOption")(multipatchOption.asInstanceOf[js.Any])
-    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
+    if (!js.isUndefined(num)) __obj.updateDynamic("num")(num.get.asInstanceOf[js.Any])
     if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
     if (orderByFields != null) __obj.updateDynamic("orderByFields")(orderByFields.asInstanceOf[js.Any])
     if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
@@ -368,16 +368,16 @@ object QueryProperties {
     if (quantizationParameters != null) __obj.updateDynamic("quantizationParameters")(quantizationParameters.asInstanceOf[js.Any])
     if (rangeValues != null) __obj.updateDynamic("rangeValues")(rangeValues.asInstanceOf[js.Any])
     if (relationParameter != null) __obj.updateDynamic("relationParameter")(relationParameter.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnCentroid)) __obj.updateDynamic("returnCentroid")(returnCentroid.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnDistinctValues)) __obj.updateDynamic("returnDistinctValues")(returnDistinctValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnExceededLimitFeatures)) __obj.updateDynamic("returnExceededLimitFeatures")(returnExceededLimitFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnQueryGeometry)) __obj.updateDynamic("returnQueryGeometry")(returnQueryGeometry.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnCentroid)) __obj.updateDynamic("returnCentroid")(returnCentroid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnDistinctValues)) __obj.updateDynamic("returnDistinctValues")(returnDistinctValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnExceededLimitFeatures)) __obj.updateDynamic("returnExceededLimitFeatures")(returnExceededLimitFeatures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnQueryGeometry)) __obj.updateDynamic("returnQueryGeometry")(returnQueryGeometry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ.get.asInstanceOf[js.Any])
     if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship.asInstanceOf[js.Any])
     if (sqlFormat != null) __obj.updateDynamic("sqlFormat")(sqlFormat.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])

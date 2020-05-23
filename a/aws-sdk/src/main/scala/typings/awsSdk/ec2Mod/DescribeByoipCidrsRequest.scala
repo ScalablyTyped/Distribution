@@ -24,11 +24,11 @@ object DescribeByoipCidrsRequest {
   @scala.inline
   def apply(
     MaxResults: DescribeByoipCidrsMaxResults,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     NextToken: NextToken = null
   ): DescribeByoipCidrsRequest = {
     val __obj = js.Dynamic.literal(MaxResults = MaxResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeByoipCidrsRequest]
   }

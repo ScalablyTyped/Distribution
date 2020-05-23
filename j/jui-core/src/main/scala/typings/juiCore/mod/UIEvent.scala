@@ -1,6 +1,6 @@
 package typings.juiCore.mod
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait UIEvent extends UICore {
   /**
     * Get the child element of the root element
     */
-  def find(selector: js.Any): JQuery_[HTMLElement]
+  def find(selector: js.Any): JQuery[HTMLElement]
 }
 
 object UIEvent {
@@ -22,7 +22,7 @@ object UIEvent {
     callDelay: (String, js.Function0[Unit]) => Unit,
     destroy: () => Unit,
     emit: (String, js.Function0[Unit]) => js.Any,
-    find: js.Any => JQuery_[HTMLElement],
+    find: js.Any => JQuery[HTMLElement],
     off: String => Unit,
     on: (String, js.Function0[Unit]) => Unit,
     setOption: (String, js.Any) => Unit,

@@ -11,10 +11,10 @@ trait QueryResult extends js.Object {
 
 object QueryResult {
   @scala.inline
-  def apply(data: js.Array[_] = null, total: Int | Double = null): QueryResult = {
+  def apply(data: js.Array[_] = null, total: js.UndefOr[Double] = js.undefined): QueryResult = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult]
   }
 }

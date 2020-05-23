@@ -32,14 +32,14 @@ trait CommentReplyCollectionLoadOptions extends js.Object {
   var authorName: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
+    * For EACH ITEM in the collection: The comment reply's content. The string is plain text.
     *
     * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the content type of the comment.
+    * For EACH ITEM in the collection: The content type of the reply.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -54,31 +54,30 @@ trait CommentReplyCollectionLoadOptions extends js.Object {
   var creationDate: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the comment reply identifier. Read-only.
+    * For EACH ITEM in the collection: Specifies the comment reply identifier.
     *
     * [Api set: ExcelApi 1.10]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the entities (e.g. people) that are mentioned in comments.
+    * For EACH ITEM in the collection: The entities (e.g., people) that are mentioned in comments.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     */
   var mentions: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+    * For EACH ITEM in the collection: The comment reply status. A value of "true" means the reply is in the resolved state.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var resolved: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    * For EACH ITEM in the collection: The rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     */
   var richContent: js.UndefOr[Boolean] = js.undefined
 }
@@ -98,16 +97,16 @@ object CommentReplyCollectionLoadOptions {
     richContent: js.UndefOr[Boolean] = js.undefined
   ): CommentReplyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(authorEmail)) __obj.updateDynamic("authorEmail")(authorEmail.asInstanceOf[js.Any])
-    if (!js.isUndefined(authorName)) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
-    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentType)) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(mentions)) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
-    if (!js.isUndefined(richContent)) __obj.updateDynamic("richContent")(richContent.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorEmail)) __obj.updateDynamic("authorEmail")(authorEmail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorName)) __obj.updateDynamic("authorName")(authorName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentType)) __obj.updateDynamic("contentType")(contentType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mentions)) __obj.updateDynamic("mentions")(mentions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(richContent)) __obj.updateDynamic("richContent")(richContent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentReplyCollectionLoadOptions]
   }
 }

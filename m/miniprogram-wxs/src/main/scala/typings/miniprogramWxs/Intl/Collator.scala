@@ -1,9 +1,5 @@
 package typings.miniprogramWxs.Intl
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.miniprogramWxs.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,24 +9,11 @@ trait Collator extends js.Object {
   def resolvedOptions(): ResolvedCollatorOptions
 }
 
-@JSGlobal("Intl.Collator")
-@js.native
-object Collator
-  extends Instantiable0[Collator]
-     with Instantiable1[(/* locales */ Array[String]) | (/* locales */ String), Collator]
-     with Instantiable2[
-      (/* locales */ Array[String]) | (/* locales */ String), 
-      /* options */ CollatorOptions, 
-      Collator
-    ] {
-  def apply(): Collator = js.native
-  def apply(locales: String): Collator = js.native
-  def apply(locales: String, options: CollatorOptions): Collator = js.native
-  def apply(locales: Array[String]): Collator = js.native
-  def apply(locales: Array[String], options: CollatorOptions): Collator = js.native
-  def supportedLocalesOf(locales: String): Array[String] = js.native
-  def supportedLocalesOf(locales: String, options: CollatorOptions): Array[String] = js.native
-  def supportedLocalesOf(locales: Array[String]): Array[String] = js.native
-  def supportedLocalesOf(locales: Array[String], options: CollatorOptions): Array[String] = js.native
+object Collator {
+  @scala.inline
+  def apply(compare: (String, String) => Double, resolvedOptions: () => ResolvedCollatorOptions): Collator = {
+    val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
+    __obj.asInstanceOf[Collator]
+  }
 }
 

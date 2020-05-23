@@ -40,17 +40,6 @@ object WebXRFeaturesManager extends js.Object {
     version: Double,
     stable: Boolean
   ): Unit = js.native
-  def ConstructFeature(
-    featureName: String,
-    version: js.UndefOr[scala.Nothing],
-    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
-  ): js.Function0[IWebXRFeature] = js.native
-  def ConstructFeature(
-    featureName: String,
-    version: js.UndefOr[scala.Nothing],
-    xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
-    options: js.Any
-  ): js.Function0[IWebXRFeature] = js.native
   /**
     * Returns a constructor of a specific feature.
     *
@@ -62,12 +51,12 @@ object WebXRFeaturesManager extends js.Object {
     */
   def ConstructFeature(
     featureName: String,
-    version: Double,
+    version: js.UndefOr[Double],
     xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
   ): js.Function0[IWebXRFeature] = js.native
   def ConstructFeature(
     featureName: String,
-    version: Double,
+    version: js.UndefOr[Double],
     xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
     options: js.Any
   ): js.Function0[IWebXRFeature] = js.native

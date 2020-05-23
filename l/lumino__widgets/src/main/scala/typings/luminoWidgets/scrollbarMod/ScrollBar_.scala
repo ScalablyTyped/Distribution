@@ -6,7 +6,7 @@ import typings.luminoWidgets.luminoWidgetsStrings.increment
 import typings.luminoWidgets.scrollbarMod.ScrollBar.IOptions
 import typings.luminoWidgets.scrollbarMod.ScrollBar.Orientation
 import typings.luminoWidgets.widgetMod.Widget
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -160,6 +160,6 @@ class ScrollBar_ () extends Widget {
     *
     * This should not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
 }
 

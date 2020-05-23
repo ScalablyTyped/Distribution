@@ -49,7 +49,7 @@ object UnhandledOptions {
     val __obj = js.Dynamic.literal()
     if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
     if (reportButton != null) __obj.updateDynamic("reportButton")(js.Any.fromFunction1(reportButton))
-    if (!js.isUndefined(showDialog)) __obj.updateDynamic("showDialog")(showDialog.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDialog)) __obj.updateDynamic("showDialog")(showDialog.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnhandledOptions]
   }
 }

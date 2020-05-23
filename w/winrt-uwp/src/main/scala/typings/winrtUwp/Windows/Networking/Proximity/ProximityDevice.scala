@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Enables you to publish messages to proximate devices or subscribe to messages from proximate devices. */
-@JSGlobal("Windows.Networking.Proximity.ProximityDevice")
 @js.native
-abstract class ProximityDevice () extends js.Object {
+trait ProximityDevice extends js.Object {
   /** Gets the transfer rate of a proximity device. */
   var bitsPerSecond: Double = js.native
   /** Gets the DeviceInformation Id for a proximity device. */
@@ -100,27 +99,5 @@ abstract class ProximityDevice () extends js.Object {
     * @return A unique ID for the subscription.
     */
   def subscribeForMessage(messageType: String, messageReceivedHandler: MessageReceivedHandler): Double = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Networking.Proximity.ProximityDevice")
-@js.native
-object ProximityDevice extends js.Object {
-  /**
-    * Creates an instance of a ProximityDevice class and activates the specified proximity device interface.
-    * @param deviceId The DeviceInformation Id of a proximity device.
-    * @return A new ProximityDevice that uses the specified proximity device interface. Throws a System.IO.FileNotFoundException exception if the specified proximity device interface isunavailable.
-    */
-  def fromId(deviceId: String): ProximityDevice = js.native
-  /**
-    * Creates an instance of a ProximityDevice class and activates the default proximity provider.
-    * @return A new proximity device that uses the default proximity provider. Returns NULL if no proximity devices are installed.
-    */
-  def getDefault(): ProximityDevice = js.native
-  /**
-    * Returns the class selection string that you can use to enumerate proximity devices.
-    * @return The class selection string for proximity devices.
-    */
-  def getDeviceSelector(): String = js.native
 }
 

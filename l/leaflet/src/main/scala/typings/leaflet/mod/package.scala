@@ -18,7 +18,7 @@ package object mod {
   type DragEndEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.DragEndEvent, scala.Unit]
   type ErrorEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.ErrorEvent, scala.Unit]
   type Icon_[T /* <: typings.leaflet.mod.BaseIconOptions */] = typings.leaflet.mod.Icon__[T]
-  type InternalTiles = org.scalablytyped.runtime.StringDictionary[typings.leaflet.AnonActive]
+  type InternalTiles = org.scalablytyped.runtime.StringDictionary[typings.leaflet.anon.Active]
   type LatLngBoundsExpression = typings.leaflet.mod.LatLngBounds_ | typings.leaflet.mod.LatLngBoundsLiteral
   type LatLngBoundsLiteral = js.Array[typings.leaflet.mod.LatLngTuple]
   /* Rewritten from type alias, can be one of: 

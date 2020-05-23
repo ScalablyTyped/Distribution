@@ -17,14 +17,14 @@ object GraphOptions {
   def apply(
     joinOperation: String,
     aliases: js.Array[String] = null,
-    maxBatchSize: Int | Double = null,
+    maxBatchSize: js.UndefOr[Double] = js.undefined,
     minimize: js.UndefOr[Boolean] = js.undefined,
     separator: String = null
   ): GraphOptions = {
     val __obj = js.Dynamic.literal(joinOperation = joinOperation.asInstanceOf[js.Any])
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (maxBatchSize != null) __obj.updateDynamic("maxBatchSize")(maxBatchSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBatchSize)) __obj.updateDynamic("maxBatchSize")(maxBatchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphOptions]
   }

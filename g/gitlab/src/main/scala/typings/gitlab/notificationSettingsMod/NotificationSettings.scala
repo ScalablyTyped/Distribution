@@ -1,8 +1,8 @@
 package typings.gitlab.notificationSettingsMod
 
-import typings.gitlab.Anon0
-import typings.gitlab.Anon1
-import typings.gitlab.AnonLevel
+import typings.gitlab.anon.Level
+import typings.gitlab.anon.`0`
+import typings.gitlab.anon.`1`
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist/types/core/services/NotificationSettings", "NotificationSettings")
 @js.native
 class NotificationSettings () extends BaseService {
-  def all(hasProjectIdGroupIdOptions: (Anon0 | Anon1) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
-  def edit(hasProjectIdGroupIdOptions: AnonLevel with (Anon0 | Anon1) with BaseRequestOptions): js.Promise[js.Object] = js.native
+  def all(hasProjectIdGroupIdOptions: (`0` | `1`) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+  def edit(hasProjectIdGroupIdOptions: Level with (`0` | `1`) with BaseRequestOptions): js.Promise[js.Object] = js.native
 }
 

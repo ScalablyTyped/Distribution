@@ -26,18 +26,18 @@ object PrecompileOptions {
     strict: js.UndefOr[Boolean] = js.undefined
   ): PrecompileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assumeObjects)) __obj.updateDynamic("assumeObjects")(assumeObjects.asInstanceOf[js.Any])
-    if (!js.isUndefined(compat)) __obj.updateDynamic("compat")(compat.asInstanceOf[js.Any])
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeObjects)) __obj.updateDynamic("assumeObjects")(assumeObjects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compat)) __obj.updateDynamic("compat")(compat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.get.asInstanceOf[js.Any])
     if (destName != null) __obj.updateDynamic("destName")(destName.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitPartialContext)) __obj.updateDynamic("explicitPartialContext")(explicitPartialContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreStandalone)) __obj.updateDynamic("ignoreStandalone")(ignoreStandalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(explicitPartialContext)) __obj.updateDynamic("explicitPartialContext")(explicitPartialContext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreStandalone)) __obj.updateDynamic("ignoreStandalone")(ignoreStandalone.get.asInstanceOf[js.Any])
     if (knownHelpers != null) __obj.updateDynamic("knownHelpers")(knownHelpers.asInstanceOf[js.Any])
-    if (!js.isUndefined(knownHelpersOnly)) __obj.updateDynamic("knownHelpersOnly")(knownHelpersOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(noEscape)) __obj.updateDynamic("noEscape")(noEscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventIndent)) __obj.updateDynamic("preventIndent")(preventIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(knownHelpersOnly)) __obj.updateDynamic("knownHelpersOnly")(knownHelpersOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEscape)) __obj.updateDynamic("noEscape")(noEscape.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventIndent)) __obj.updateDynamic("preventIndent")(preventIndent.get.asInstanceOf[js.Any])
     if (srcName != null) __obj.updateDynamic("srcName")(srcName.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrecompileOptions]
   }
 }

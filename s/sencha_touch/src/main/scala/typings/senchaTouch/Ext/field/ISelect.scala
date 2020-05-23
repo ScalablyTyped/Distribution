@@ -15,93 +15,93 @@ trait ISelect extends IText {
   /** [Config Option] (String/Number) */
   var displayField: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of autoSelect
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoSelect: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of defaultPhonePickerConfig
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getDefaultPhonePickerConfig: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of defaultTabletPickerConfig
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getDefaultTabletPickerConfig: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of displayField
-  		* @returns String/Number
-  		*/
+    * @returns String/Number
+    */
   var getDisplayField: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of hiddenName
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getHiddenName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of options
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getOptions: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of store
-  		* @returns Ext.data.Store/Object/String
-  		*/
+    * @returns Ext.data.Store/Object/String
+    */
   var getStore: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of usePicker
-  		* @returns String/Boolean
-  		*/
+    * @returns String/Boolean
+    */
   var getUsePicker: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of valueField
-  		* @returns String/Number
-  		*/
+    * @returns String/Number
+    */
   var getValueField: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
   var hiddenName: js.UndefOr[String] = js.undefined
   /** [Method] Called when the internal store s data has changed
-  		* @param store Object
-  		*/
+    * @param store Object
+    */
   var onStoreDataChanged: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Array) */
   var options: js.UndefOr[Array] = js.undefined
   /** [Method] Sets the value of autoSelect
-  		* @param autoSelect Boolean The new value.
-  		*/
+    * @param autoSelect Boolean The new value.
+    */
   var setAutoSelect: js.UndefOr[js.Function1[/* autoSelect */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of defaultPhonePickerConfig
-  		* @param defaultPhonePickerConfig Object The new value.
-  		*/
+    * @param defaultPhonePickerConfig Object The new value.
+    */
   var setDefaultPhonePickerConfig: js.UndefOr[js.Function1[/* defaultPhonePickerConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of defaultTabletPickerConfig
-  		* @param defaultTabletPickerConfig Object The new value.
-  		*/
+    * @param defaultTabletPickerConfig Object The new value.
+    */
   var setDefaultTabletPickerConfig: js.UndefOr[js.Function1[/* defaultTabletPickerConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of displayField
-  		* @param displayField String/Number The new value.
-  		*/
+    * @param displayField String/Number The new value.
+    */
   var setDisplayField: js.UndefOr[js.Function1[/* displayField */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of hiddenName
-  		* @param hiddenName String The new value.
-  		*/
+    * @param hiddenName String The new value.
+    */
   var setHiddenName: js.UndefOr[js.Function1[/* hiddenName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of options
-  		* @param options Array The new value.
-  		*/
+    * @param options Array The new value.
+    */
   var setOptions: js.UndefOr[js.Function1[/* options */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of store
-  		* @param store Ext.data.Store/Object/String The new value.
-  		*/
+    * @param store Ext.data.Store/Object/String The new value.
+    */
   var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of usePicker
-  		* @param usePicker String/Boolean The new value.
-  		*/
+    * @param usePicker String/Boolean The new value.
+    */
   var setUsePicker: js.UndefOr[js.Function1[/* usePicker */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of valueField
-  		* @param valueField String/Number The new value.
-  		*/
+    * @param valueField String/Number The new value.
+    */
   var setValueField: js.UndefOr[js.Function1[/* valueField */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Shows the picker for the select field whether that is a Ext picker Picker or a simple list  */
   var showPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Ext.data.Store/Object/String) */
   var store: js.UndefOr[js.Any] = js.undefined
   /** [Method] Updates the underlying lt options gt list with new values
-  		* @param newOptions Array An array of options configurations to insert or append. selectBox.setOptions([  {text: 'First Option', value: 'first'},  {text: 'Second Option', value: 'second'},  {text: 'Third Option', value: 'third'} ]).setValue('third');  Note: option object member names should correspond with defined valueField and displayField values.
-  		* @returns Ext.field.Select this
-  		*/
+    * @param newOptions Array An array of options configurations to insert or append. selectBox.setOptions([  {text: 'First Option', value: 'first'},  {text: 'Second Option', value: 'second'},  {text: 'Third Option', value: 'third'} ]).setValue('third');  Note: option object member names should correspond with defined valueField and displayField values.
+    * @returns Ext.field.Select this
+    */
   var updateOptions: js.UndefOr[js.Function1[/* newOptions */ js.UndefOr[Array], this.type]] = js.undefined
   /** [Config Option] (String/Boolean) */
   var usePicker: js.UndefOr[js.Any] = js.undefined
@@ -146,7 +146,7 @@ object ISelect {
   ): ISelect = {
     val __obj = js.Dynamic.literal()
     if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)
-    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.get.asInstanceOf[js.Any])
     if (defaultPhonePickerConfig != null) __obj.updateDynamic("defaultPhonePickerConfig")(defaultPhonePickerConfig.asInstanceOf[js.Any])
     if (defaultTabletPickerConfig != null) __obj.updateDynamic("defaultTabletPickerConfig")(defaultTabletPickerConfig.asInstanceOf[js.Any])
     if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])

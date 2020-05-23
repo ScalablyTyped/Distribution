@@ -1,6 +1,5 @@
 package typings.googlemaps.google.maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,17 +27,6 @@ object StrokePosition extends js.Object {
   /** The stroke lies outside the polygon. */
   @js.native
   sealed trait OUTSIDE extends StrokePosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StrokePosition with Double] = js.native
-  /* 0 */ @js.native
-  object CENTER extends TopLevel[CENTER with Double]
-  
-  /* 1 */ @js.native
-  object INSIDE extends TopLevel[INSIDE with Double]
-  
-  /* 2 */ @js.native
-  object OUTSIDE extends TopLevel[OUTSIDE with Double]
   
 }
 

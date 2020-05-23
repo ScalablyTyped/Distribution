@@ -5,14 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains information about a successful or unsuccessful completion of an authentication operation. */
-@JSGlobal("Windows.Devices.AllJoyn.AllJoynAuthenticationCompleteEventArgs")
-@js.native
-abstract class AllJoynAuthenticationCompleteEventArgs () extends js.Object {
+trait AllJoynAuthenticationCompleteEventArgs extends js.Object {
   /** The mechanism used during authentication. */
-  var authenticationMechanism: AllJoynAuthenticationMechanism = js.native
+  var authenticationMechanism: AllJoynAuthenticationMechanism
   /** The unique bus name of the Consumer being authenticated. On the initiating side this will be the unique bus name of the remote app being authenticated. On the accepting side this will be the unique bus name for the remote app. */
-  var peerUniqueName: String = js.native
+  var peerUniqueName: String
   /** Indicates if the remote app was authenticated. */
-  var succeeded: Boolean = js.native
+  var succeeded: Boolean
+}
+
+object AllJoynAuthenticationCompleteEventArgs {
+  @scala.inline
+  def apply(
+    authenticationMechanism: AllJoynAuthenticationMechanism,
+    peerUniqueName: String,
+    succeeded: Boolean
+  ): AllJoynAuthenticationCompleteEventArgs = {
+    val __obj = js.Dynamic.literal(authenticationMechanism = authenticationMechanism.asInstanceOf[js.Any], peerUniqueName = peerUniqueName.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AllJoynAuthenticationCompleteEventArgs]
+  }
 }
 

@@ -15,12 +15,12 @@ import scala.scalajs.js.annotation._
 trait OptionsPersistentConfiguration extends js.Object {
   /**By setting the persistence property to true the table will persist the sort, filter, group (groupBy, groupStartOpen, groupHeader), pagination (paginationSize), and column (title, width, visibility, order) configuration of the table */
   var persistence: js.UndefOr[`true` | PersistenceOptions] = js.undefined
-  /** ID tag used to identify persistent storage information	 */
+  /** ID tag used to identify persistent storage information     */
   var persistenceID: js.UndefOr[String] = js.undefined
   /**  Persistence information can either be stored in a cookie or in the localSotrage object, you can use the persistenceMode to choose which. It can take three possible values:
     local - (string) Store the persistence information in the localStorage object
     cookie - (string) Store the persistence information in a cookie
-    true - (boolean) check if localStorage is available and store persistence information, otherwise store in cookie (Default option)	*/
+    true - (boolean) check if localStorage is available and store persistence information, otherwise store in cookie (Default option)    */
   var persistenceMode: js.UndefOr[local | cookie | `true`] = js.undefined
   /**The persistenceReaderFunc function will receive two arguments, the persistance id of the table, and the type of data to be written. This function must synchronously return the data in the format in which it was passed to the persistenceWriterFunc function. It should return a value of false if no data was present */
   var persistenceReaderFunc: js.UndefOr[
@@ -37,7 +37,7 @@ trait OptionsPersistentConfiguration extends js.Object {
   ] = js.undefined
   /**  You can ensure the data filtering is stored for the next page load by setting the persistentFilter option to true*/
   var persistentFilter: js.UndefOr[Boolean] = js.undefined
-  /** Enable persistsnt storage of column layout information	 */
+  /** Enable persistsnt storage of column layout information     */
   var persistentLayout: js.UndefOr[Boolean] = js.undefined
   /** You can ensure the data sorting is stored for the next page load by setting the persistentSort option to true */
   var persistentSort: js.UndefOr[Boolean] = js.undefined
@@ -61,9 +61,9 @@ object OptionsPersistentConfiguration {
     if (persistenceMode != null) __obj.updateDynamic("persistenceMode")(persistenceMode.asInstanceOf[js.Any])
     if (persistenceReaderFunc != null) __obj.updateDynamic("persistenceReaderFunc")(js.Any.fromFunction2(persistenceReaderFunc))
     if (persistenceWriterFunc != null) __obj.updateDynamic("persistenceWriterFunc")(js.Any.fromFunction3(persistenceWriterFunc))
-    if (!js.isUndefined(persistentFilter)) __obj.updateDynamic("persistentFilter")(persistentFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistentLayout)) __obj.updateDynamic("persistentLayout")(persistentLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistentSort)) __obj.updateDynamic("persistentSort")(persistentSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentFilter)) __obj.updateDynamic("persistentFilter")(persistentFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentLayout)) __obj.updateDynamic("persistentLayout")(persistentLayout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentSort)) __obj.updateDynamic("persistentSort")(persistentSort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsPersistentConfiguration]
   }
 }

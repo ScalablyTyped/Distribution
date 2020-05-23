@@ -27,7 +27,7 @@ object UserIm {
     if (customProtocol != null) __obj.updateDynamic("customProtocol")(customProtocol.asInstanceOf[js.Any])
     if (customType != null) __obj.updateDynamic("customType")(customType.asInstanceOf[js.Any])
     if (im != null) __obj.updateDynamic("im")(im.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserIm]

@@ -18,9 +18,9 @@ trait GetVpcLinksRequest extends js.Object {
 
 object GetVpcLinksRequest {
   @scala.inline
-  def apply(limit: Int | scala.Double = null, position: String = null): GetVpcLinksRequest = {
+  def apply(limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetVpcLinksRequest = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVpcLinksRequest]
   }

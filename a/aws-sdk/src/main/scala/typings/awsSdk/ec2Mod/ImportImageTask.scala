@@ -73,7 +73,7 @@ object ImportImageTask {
   def apply(
     Architecture: String = null,
     Description: String = null,
-    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
     Hypervisor: String = null,
     ImageId: String = null,
     ImportTaskId: String = null,
@@ -90,7 +90,7 @@ object ImportImageTask {
     val __obj = js.Dynamic.literal()
     if (Architecture != null) __obj.updateDynamic("Architecture")(Architecture.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
     if (Hypervisor != null) __obj.updateDynamic("Hypervisor")(Hypervisor.asInstanceOf[js.Any])
     if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId.asInstanceOf[js.Any])
     if (ImportTaskId != null) __obj.updateDynamic("ImportTaskId")(ImportTaskId.asInstanceOf[js.Any])

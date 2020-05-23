@@ -35,7 +35,7 @@ trait IOptions[T /* <: MimeDocument */] extends IWidgetFactoryOptions[T] {
 
 object IOptions {
   @scala.inline
-  def apply[T /* <: MimeDocument */](
+  def apply[T](
     fileTypes: js.Array[String],
     name: String,
     rendermime: IRenderMimeRegistry,
@@ -47,21 +47,21 @@ object IOptions {
     preferKernel: js.UndefOr[Boolean] = js.undefined,
     primaryFileType: IFileType = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
-    renderTimeout: Int | Double = null,
+    renderTimeout: js.UndefOr[Double] = js.undefined,
     shutdownOnClose: js.UndefOr[Boolean] = js.undefined,
     toolbarFactory: T => js.Array[IToolbarItem] = null
   ): IOptions[T] = {
     val __obj = js.Dynamic.literal(fileTypes = fileTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
-    if (!js.isUndefined(canStartKernel)) __obj.updateDynamic("canStartKernel")(canStartKernel.asInstanceOf[js.Any])
+    if (!js.isUndefined(canStartKernel)) __obj.updateDynamic("canStartKernel")(canStartKernel.get.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (defaultFor != null) __obj.updateDynamic("defaultFor")(defaultFor.asInstanceOf[js.Any])
     if (defaultRendered != null) __obj.updateDynamic("defaultRendered")(defaultRendered.asInstanceOf[js.Any])
     if (modelName != null) __obj.updateDynamic("modelName")(modelName.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferKernel)) __obj.updateDynamic("preferKernel")(preferKernel.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferKernel)) __obj.updateDynamic("preferKernel")(preferKernel.get.asInstanceOf[js.Any])
     if (primaryFileType != null) __obj.updateDynamic("primaryFileType")(primaryFileType.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (renderTimeout != null) __obj.updateDynamic("renderTimeout")(renderTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(shutdownOnClose)) __obj.updateDynamic("shutdownOnClose")(shutdownOnClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderTimeout)) __obj.updateDynamic("renderTimeout")(renderTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shutdownOnClose)) __obj.updateDynamic("shutdownOnClose")(shutdownOnClose.get.asInstanceOf[js.Any])
     if (toolbarFactory != null) __obj.updateDynamic("toolbarFactory")(js.Any.fromFunction1(toolbarFactory))
     __obj.asInstanceOf[IOptions[T]]
   }

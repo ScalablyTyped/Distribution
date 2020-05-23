@@ -1,6 +1,6 @@
 package typings.figlet.mod
 
-import typings.figlet.PartialDefaults
+import typings.figlet.anon.PartialDefaults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

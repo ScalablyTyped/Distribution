@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.inherited
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,8 +15,4 @@ trait InheritedDomain extends Domain {
   @JSName("type")
   val type_InheritedDomain: inherited = js.native
 }
-
-@JSGlobal("__esri.InheritedDomain")
-@js.native
-object InheritedDomain extends TopLevel[InheritedDomainConstructor]
 

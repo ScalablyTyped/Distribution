@@ -88,7 +88,7 @@ object CoordinateConversionProperties {
     mode: String = null,
     multipleConversions: js.UndefOr[Boolean] = js.undefined,
     orientation: String = null,
-    requestDelay: Int | Double = null,
+    requestDelay: js.UndefOr[Double] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: CoordinateConversionViewModelProperties = null
   ): CoordinateConversionProperties = {
@@ -96,15 +96,15 @@ object CoordinateConversionProperties {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (conversions != null) __obj.updateDynamic("conversions")(conversions.asInstanceOf[js.Any])
     if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleConversions)) __obj.updateDynamic("multipleConversions")(multipleConversions.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleConversions)) __obj.updateDynamic("multipleConversions")(multipleConversions.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (requestDelay != null) __obj.updateDynamic("requestDelay")(requestDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestDelay)) __obj.updateDynamic("requestDelay")(requestDelay.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoordinateConversionProperties]

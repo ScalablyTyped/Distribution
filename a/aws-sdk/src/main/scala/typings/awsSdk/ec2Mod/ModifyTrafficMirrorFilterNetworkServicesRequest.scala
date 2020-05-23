@@ -29,12 +29,12 @@ object ModifyTrafficMirrorFilterNetworkServicesRequest {
   def apply(
     TrafficMirrorFilterId: TrafficMirrorFilterId,
     AddNetworkServices: TrafficMirrorNetworkServiceList = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     RemoveNetworkServices: TrafficMirrorNetworkServiceList = null
   ): ModifyTrafficMirrorFilterNetworkServicesRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorFilterId = TrafficMirrorFilterId.asInstanceOf[js.Any])
     if (AddNetworkServices != null) __obj.updateDynamic("AddNetworkServices")(AddNetworkServices.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (RemoveNetworkServices != null) __obj.updateDynamic("RemoveNetworkServices")(RemoveNetworkServices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTrafficMirrorFilterNetworkServicesRequest]
   }

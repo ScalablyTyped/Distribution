@@ -21,9 +21,9 @@ object ScreenshotOptions {
     startRender: js.UndefOr[Boolean] = js.undefined
   ): ScreenshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(documentComplete)) __obj.updateDynamic("documentComplete")(documentComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullResolution)) __obj.updateDynamic("fullResolution")(fullResolution.asInstanceOf[js.Any])
-    if (!js.isUndefined(startRender)) __obj.updateDynamic("startRender")(startRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentComplete)) __obj.updateDynamic("documentComplete")(documentComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullResolution)) __obj.updateDynamic("fullResolution")(fullResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRender)) __obj.updateDynamic("startRender")(startRender.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenshotOptions]
   }
 }

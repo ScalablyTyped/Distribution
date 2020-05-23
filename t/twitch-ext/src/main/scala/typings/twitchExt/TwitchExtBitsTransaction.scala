@@ -8,26 +8,26 @@ import scala.scalajs.js.annotation._
 
 trait TwitchExtBitsTransaction extends js.Object {
   /**
-  	 * Display name of the user who executed the Bits in Extensions transaction.
-  	 */
+    * Display name of the user who executed the Bits in Extensions transaction.
+    */
   var displayName: String
   var initiator: CURRENT_USER | OTHER
   /**
-  	 * Full product object from getProducts call
-  	 */
+    * Full product object from getProducts call
+    */
   var product: TwitchExtBitsProduct
   /**
-  	 * ID of the transaction.
-  	 */
+    * ID of the transaction.
+    */
   var transactionID: String
   /**
-  	 * JWT containing the following transaction information in the payload.
-  	 * The JWT is a large, base64-encoded string. It can be verified using your developer secret.
-  	 */
+    * JWT containing the following transaction information in the payload.
+    * The JWT is a large, base64-encoded string. It can be verified using your developer secret.
+    */
   var transactionReceipt: String
   /**
-  	 * Twitch ID of the user who executed the transaction.
-  	 */
+    * Twitch ID of the user who executed the transaction.
+    */
   var userId: String
 }
 

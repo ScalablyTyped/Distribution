@@ -17,14 +17,14 @@ trait IPathErrorStats extends js.Object {
 object IPathErrorStats {
   @scala.inline
   def apply(
-    children: StringDictionary[IPathErrorStats] = null,
-    errorsCount: Int | Double = null,
-    requestsWithErrorsCount: Int | Double = null
+    children: js.UndefOr[Null | StringDictionary[IPathErrorStats]] = js.undefined,
+    errorsCount: js.UndefOr[Null | Double] = js.undefined,
+    requestsWithErrorsCount: js.UndefOr[Null | Double] = js.undefined
   ): IPathErrorStats = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (errorsCount != null) __obj.updateDynamic("errorsCount")(errorsCount.asInstanceOf[js.Any])
-    if (requestsWithErrorsCount != null) __obj.updateDynamic("requestsWithErrorsCount")(requestsWithErrorsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorsCount)) __obj.updateDynamic("errorsCount")(errorsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestsWithErrorsCount)) __obj.updateDynamic("requestsWithErrorsCount")(requestsWithErrorsCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathErrorStats]
   }
 }

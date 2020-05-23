@@ -11,7 +11,7 @@ import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.react.mod.Requireable
 import typings.react.mod.Validator
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.PropertyKey
 import typings.std.Record
 import scala.scalajs.js

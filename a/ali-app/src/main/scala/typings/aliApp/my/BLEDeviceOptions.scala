@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 trait BLEDeviceOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
-  		 * 蓝牙设备id
-  		 */
+    * 蓝牙设备id
+    */
   var deviceId: String
 }
 

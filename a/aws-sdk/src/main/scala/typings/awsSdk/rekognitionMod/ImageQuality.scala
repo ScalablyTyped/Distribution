@@ -18,10 +18,10 @@ trait ImageQuality extends js.Object {
 
 object ImageQuality {
   @scala.inline
-  def apply(Brightness: Int | Double = null, Sharpness: Int | Double = null): ImageQuality = {
+  def apply(Brightness: js.UndefOr[Float] = js.undefined, Sharpness: js.UndefOr[Float] = js.undefined): ImageQuality = {
     val __obj = js.Dynamic.literal()
-    if (Brightness != null) __obj.updateDynamic("Brightness")(Brightness.asInstanceOf[js.Any])
-    if (Sharpness != null) __obj.updateDynamic("Sharpness")(Sharpness.asInstanceOf[js.Any])
+    if (!js.isUndefined(Brightness)) __obj.updateDynamic("Brightness")(Brightness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Sharpness)) __obj.updateDynamic("Sharpness")(Sharpness.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageQuality]
   }
 }

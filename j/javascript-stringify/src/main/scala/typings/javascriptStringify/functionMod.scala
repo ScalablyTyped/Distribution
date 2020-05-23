@@ -24,7 +24,7 @@ object functionMod extends js.Object {
     def this(fn: js.Function, indent: String, next: Next, key: String) = this()
     var fn: js.Function = js.native
     var fnString: String = js.native
-    var fnType: Function | GeneratorFunction | AsyncFunction | AsyncGeneratorFunction = js.native
+    var fnType: /* keyof javascript-stringify.anon.AsyncFunction */ Function | GeneratorFunction | AsyncFunction | AsyncGeneratorFunction = js.native
     var hadKeyword: Boolean = js.native
     var indent: String = js.native
     var isMethodCandidate: Boolean = js.native

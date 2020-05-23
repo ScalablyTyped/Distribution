@@ -22,11 +22,11 @@ object BootstrapNode {
     ip: String,
     location: String,
     port: Double | String,
-    chainId: Int | Double = null,
+    chainId: js.UndefOr[Double] = js.undefined,
     network: String = null
   ): BootstrapNode = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-    if (chainId != null) __obj.updateDynamic("chainId")(chainId.asInstanceOf[js.Any])
+    if (!js.isUndefined(chainId)) __obj.updateDynamic("chainId")(chainId.get.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapNode]
   }

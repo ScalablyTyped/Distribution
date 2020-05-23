@@ -37,7 +37,7 @@ object IonRouter {
     if (onIonRouteDidChange != null) __obj.updateDynamic("onIonRouteDidChange")(js.Any.fromFunction1(onIonRouteDidChange))
     if (onIonRouteWillChange != null) __obj.updateDynamic("onIonRouteWillChange")(js.Any.fromFunction1(onIonRouteWillChange))
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouter]
   }
 }

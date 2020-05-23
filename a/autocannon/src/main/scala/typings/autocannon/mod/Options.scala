@@ -181,51 +181,51 @@ object Options {
   @scala.inline
   def apply(
     url: String,
-    amount: Int | Double = null,
-    bailout: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
+    bailout: js.UndefOr[Double] = js.undefined,
     body: String | Buffer = null,
-    connectionRate: Int | Double = null,
-    connections: Int | Double = null,
+    connectionRate: js.UndefOr[Double] = js.undefined,
+    connections: js.UndefOr[Double] = js.undefined,
     duration: Double | String = null,
     excludeErrorStats: js.UndefOr[Boolean] = js.undefined,
     forever: js.UndefOr[Boolean] = js.undefined,
     headers: IncomingHttpHeaders = null,
     idReplacement: js.UndefOr[Boolean] = js.undefined,
-    maxConnectionRequests: Int | Double = null,
-    maxOverallRequests: Int | Double = null,
+    maxConnectionRequests: js.UndefOr[Double] = js.undefined,
+    maxOverallRequests: js.UndefOr[Double] = js.undefined,
     method: ACL | BIND | CHECKOUT | CONNECT | COPY | DELETE | GET | HEAD | LINK | LOCK | `M-SEARCH` | MERGE | MKACTIVITY | MKCALENDAR | MKCOL | MOVE | NOTIFY | OPTIONS | PATCH | POST | PROPFIND | PROPPATCH | PURGE | PUT | REBIND | REPORT | SEARCH | SOURCE | SUBSCRIBE | TRACE | UNBIND | UNLINK | UNLOCK | UNSUBSCRIBE = null,
-    overallRate: Int | Double = null,
-    pipelining: Int | Double = null,
-    reconnectRate: Int | Double = null,
+    overallRate: js.UndefOr[Double] = js.undefined,
+    pipelining: js.UndefOr[Double] = js.undefined,
+    reconnectRate: js.UndefOr[Double] = js.undefined,
     requests: js.Array[Request] = null,
     servername: String = null,
     setupClient: /* client */ Client => Unit = null,
     socketPath: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     title: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (bailout != null) __obj.updateDynamic("bailout")(bailout.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bailout)) __obj.updateDynamic("bailout")(bailout.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (connectionRate != null) __obj.updateDynamic("connectionRate")(connectionRate.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionRate)) __obj.updateDynamic("connectionRate")(connectionRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connections)) __obj.updateDynamic("connections")(connections.get.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeErrorStats)) __obj.updateDynamic("excludeErrorStats")(excludeErrorStats.asInstanceOf[js.Any])
-    if (!js.isUndefined(forever)) __obj.updateDynamic("forever")(forever.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeErrorStats)) __obj.updateDynamic("excludeErrorStats")(excludeErrorStats.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forever)) __obj.updateDynamic("forever")(forever.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(idReplacement)) __obj.updateDynamic("idReplacement")(idReplacement.asInstanceOf[js.Any])
-    if (maxConnectionRequests != null) __obj.updateDynamic("maxConnectionRequests")(maxConnectionRequests.asInstanceOf[js.Any])
-    if (maxOverallRequests != null) __obj.updateDynamic("maxOverallRequests")(maxOverallRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(idReplacement)) __obj.updateDynamic("idReplacement")(idReplacement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConnectionRequests)) __obj.updateDynamic("maxConnectionRequests")(maxConnectionRequests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxOverallRequests)) __obj.updateDynamic("maxOverallRequests")(maxOverallRequests.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (overallRate != null) __obj.updateDynamic("overallRate")(overallRate.asInstanceOf[js.Any])
-    if (pipelining != null) __obj.updateDynamic("pipelining")(pipelining.asInstanceOf[js.Any])
-    if (reconnectRate != null) __obj.updateDynamic("reconnectRate")(reconnectRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(overallRate)) __obj.updateDynamic("overallRate")(overallRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pipelining)) __obj.updateDynamic("pipelining")(pipelining.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectRate)) __obj.updateDynamic("reconnectRate")(reconnectRate.get.asInstanceOf[js.Any])
     if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (setupClient != null) __obj.updateDynamic("setupClient")(js.Any.fromFunction1(setupClient))
     if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

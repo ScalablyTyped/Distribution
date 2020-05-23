@@ -3,13 +3,14 @@ package typings.backboneMarionette.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.backbone.mod.Collection
 import typings.backbone.mod.Model
-import typings.backboneMarionette.TypeofView
+import typings.backbone.mod.ModelSetOptions
+import typings.backboneMarionette.anon.TypeofView
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CollectionViewOptions[TModel /* <: Model */, TCollection /* <: Collection[TModel] */]
+trait CollectionViewOptions[TModel /* <: Model[_, ModelSetOptions] */, TCollection /* <: Collection[TModel] */]
   extends typings.backbone.mod.ViewOptions[TModel]
      with ViewMixinOptions {
   /**
@@ -67,7 +68,7 @@ trait CollectionViewOptions[TModel /* <: Model */, TCollection /* <: Collection[
 
 object CollectionViewOptions {
   @scala.inline
-  def apply[TModel /* <: Model */, TCollection /* <: Collection[TModel] */](
+  def apply[TModel, TCollection](
     attributes: StringDictionary[js.Any] = null,
     behaviors: js.Array[Behavior] = null,
     childView: (js.Function1[/* model */ TModel, TypeofView]) | TypeofView = null,
@@ -112,8 +113,8 @@ object CollectionViewOptions {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (modelEvents != null) __obj.updateDynamic("modelEvents")(modelEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(reorderOnSort)) __obj.updateDynamic("reorderOnSort")(reorderOnSort.asInstanceOf[js.Any])
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(reorderOnSort)) __obj.updateDynamic("reorderOnSort")(reorderOnSort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
     if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
     if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])

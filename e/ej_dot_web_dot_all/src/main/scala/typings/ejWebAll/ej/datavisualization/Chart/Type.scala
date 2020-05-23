@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Chart
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -126,95 +125,6 @@ object Type extends js.Object {
   //string
   @js.native
   sealed trait StepLine extends Type
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Type with Double] = js.native
-  /* 0 */ @js.native
-  object Area extends TopLevel[Area with Double]
-  
-  /* 13 */ @js.native
-  object Bar extends TopLevel[Bar with Double]
-  
-  /* 5 */ @js.native
-  object Bubble extends TopLevel[Bubble with Double]
-  
-  /* 12 */ @js.native
-  object Candle extends TopLevel[Candle with Double]
-  
-  /* 3 */ @js.native
-  object Column extends TopLevel[Column with Double]
-  
-  /* 25 */ @js.native
-  object Doughnut extends TopLevel[Doughnut with Double]
-  
-  /* 24 */ @js.native
-  object Funnel extends TopLevel[Funnel with Double]
-  
-  /* 10 */ @js.native
-  object HiLo extends TopLevel[HiLo with Double]
-  
-  /* 11 */ @js.native
-  object HiLoOpenClose extends TopLevel[HiLoOpenClose with Double]
-  
-  /* 1 */ @js.native
-  object Line extends TopLevel[Line with Double]
-  
-  /* 9 */ @js.native
-  object Pie extends TopLevel[Pie with Double]
-  
-  /* 26 */ @js.native
-  object Polar extends TopLevel[Polar with Double]
-  
-  /* 23 */ @js.native
-  object Pyramid extends TopLevel[Pyramid with Double]
-  
-  /* 27 */ @js.native
-  object Radar extends TopLevel[Radar with Double]
-  
-  /* 28 */ @js.native
-  object RangeArea extends TopLevel[RangeArea with Double]
-  
-  /* 16 */ @js.native
-  object RangeColumn extends TopLevel[RangeColumn with Double]
-  
-  /* 4 */ @js.native
-  object Scatter extends TopLevel[Scatter with Double]
-  
-  /* 2 */ @js.native
-  object Spline extends TopLevel[Spline with Double]
-  
-  /* 6 */ @js.native
-  object SplineArea extends TopLevel[SplineArea with Double]
-  
-  /* 14 */ @js.native
-  object StackingArea extends TopLevel[StackingArea with Double]
-  
-  /* 15 */ @js.native
-  object StackingArea100 extends TopLevel[StackingArea100 with Double]
-  
-  /* 19 */ @js.native
-  object StackingBar extends TopLevel[StackingBar with Double]
-  
-  /* 20 */ @js.native
-  object StackingBar100 extends TopLevel[StackingBar100 with Double]
-  
-  /* 17 */ @js.native
-  object StackingColumn extends TopLevel[StackingColumn with Double]
-  
-  /* 18 */ @js.native
-  object StackingColumn100 extends TopLevel[StackingColumn100 with Double]
-  
-  /* 21 */ @js.native
-  object StackingSplineArea extends TopLevel[StackingSplineArea with Double]
-  
-  /* 22 */ @js.native
-  object StackingSplineArea100 extends TopLevel[StackingSplineArea100 with Double]
-  
-  /* 7 */ @js.native
-  object StepArea extends TopLevel[StepArea with Double]
-  
-  /* 8 */ @js.native
-  object StepLine extends TopLevel[StepLine with Double]
   
 }
 

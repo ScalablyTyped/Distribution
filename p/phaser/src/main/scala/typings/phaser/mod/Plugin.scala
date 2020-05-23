@@ -1,11 +1,11 @@
 package typings.phaser.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.phaser.AnonDict
-import typings.phaser.AnonIsRange
-import typings.phaser.AnonName
-import typings.phaser.AnonUses
 import typings.phaser.MatterJS.Dependency
+import typings.phaser.anon.Dict
+import typings.phaser.anon.IsRange
+import typings.phaser.anon.Name
+import typings.phaser.anon.Uses
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,14 @@ import scala.scalajs.js.annotation._
 @JSImport("matter", "Plugin")
 @js.native
 class Plugin ()
-  extends typings.phaser.MatterJS.Plugin
+  extends typings.phaser.MatterJS.Plugin {
+  /* CompleteClass */
+  override var name: String = js.native
+  /* CompleteClass */
+  override var version: String = js.native
+  /* CompleteClass */
+  override def install(): Unit = js.native
+}
 
 /* static members */
 @JSImport("matter", "Plugin")
@@ -36,7 +43,7 @@ object Plugin extends js.Object {
     * @param dependency {string} The dependency of the format `'module-name'` or `'module-name@version'`.
     * @return {object} The dependency parsed into its components.
     */
-  def dependencyParse(dependency: Dependency): AnonName = js.native
+  def dependencyParse(dependency: Dependency): Name = js.native
   /**
     * Returns `true` if `plugin.for` is applicable to `module` by comparing against `module.name` and `module.version`.
     * If `plugin.for` is not specified then it is assumed to be applicable.
@@ -46,7 +53,7 @@ object Plugin extends js.Object {
     * @param module {} The module.
     * @return {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
     */
-  def isFor(plugin: typings.phaser.MatterJS.Plugin, module: AnonDict): Boolean = js.native
+  def isFor(plugin: typings.phaser.MatterJS.Plugin, module: Dict): Boolean = js.native
   /**
     * Returns `true` if the object meets the minimum standard to be considered a plugin.
     * This means it must define the following properties:
@@ -97,7 +104,7 @@ object Plugin extends js.Object {
     * @param module {} The module install plugins on.
     * @param [plugins=module.uses] {} The plugins to install on module (optional, defaults to `module.uses`).
     */
-  def use(module: AnonUses, plugins: js.Array[typings.phaser.MatterJS.Plugin | String]): Unit = js.native
+  def use(module: Uses, plugins: js.Array[typings.phaser.MatterJS.Plugin | String]): Unit = js.native
   /**
     * Parses a version string into its components.
     * Versions are strictly of the format `x.y.z` (as in [semver](http://semver.org/)).
@@ -112,7 +119,7 @@ object Plugin extends js.Object {
     * @param range {string} The version string.
     * @return {object} The version range parsed into its components.
     */
-  def versionParse(range: String): AnonIsRange = js.native
+  def versionParse(range: String): IsRange = js.native
   /**
     * Returns `true` if `version` satisfies the given `range`.
     * See documentation for `Plugin.versionParse` for a description of the format.

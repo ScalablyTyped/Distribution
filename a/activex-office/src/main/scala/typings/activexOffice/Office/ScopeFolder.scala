@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.ScopeFolder")
 @js.native
-class ScopeFolder protected () extends js.Object {
+trait ScopeFolder extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   val Name: String = js.native

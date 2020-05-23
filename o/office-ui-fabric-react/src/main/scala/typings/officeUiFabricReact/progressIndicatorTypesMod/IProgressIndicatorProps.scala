@@ -5,7 +5,7 @@ import typings.react.mod.ClassAttributes
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
@@ -68,30 +68,30 @@ object IProgressIndicatorProps {
   @scala.inline
   def apply(
     ariaValueText: String = null,
-    barHeight: Int | Double = null,
+    barHeight: js.UndefOr[Double] = js.undefined,
     className: String = null,
     description: ReactNode = null,
     key: Key = null,
     label: ReactNode = null,
     onRenderProgress: (/* props */ js.UndefOr[IProgressIndicatorProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IProgressIndicatorProps], Element | Null]]) => Element | Null = null,
-    percentComplete: Int | Double = null,
+    percentComplete: js.UndefOr[Double] = js.undefined,
     progressHidden: js.UndefOr[Boolean] = js.undefined,
-    ref: LegacyRef[ProgressIndicatorBase] = null,
+    ref: js.UndefOr[Null | LegacyRef[ProgressIndicatorBase]] = js.undefined,
     styles: IStyleFunctionOrObject[IProgressIndicatorStyleProps, IProgressIndicatorStyles] = null,
     theme: ITheme = null,
     title: String = null
   ): IProgressIndicatorProps = {
     val __obj = js.Dynamic.literal()
     if (ariaValueText != null) __obj.updateDynamic("ariaValueText")(ariaValueText.asInstanceOf[js.Any])
-    if (barHeight != null) __obj.updateDynamic("barHeight")(barHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(barHeight)) __obj.updateDynamic("barHeight")(barHeight.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onRenderProgress != null) __obj.updateDynamic("onRenderProgress")(js.Any.fromFunction2(onRenderProgress))
-    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressHidden)) __obj.updateDynamic("progressHidden")(progressHidden.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentComplete)) __obj.updateDynamic("percentComplete")(percentComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressHidden)) __obj.updateDynamic("progressHidden")(progressHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

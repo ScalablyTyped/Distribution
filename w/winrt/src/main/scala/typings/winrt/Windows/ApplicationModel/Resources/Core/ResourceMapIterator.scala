@@ -1,22 +1,24 @@
 package typings.winrt.Windows.ApplicationModel.Resources.Core
 
-import typings.winrt.AnonItems
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
+import typings.winrt.anon.Items
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapIterator")
-@js.native
-class ResourceMapIterator () extends IIterator[IKeyValuePair[String, NamedResource]] {
-  /* CompleteClass */
-  override var current: IKeyValuePair[String, NamedResource] = js.native
-  /* CompleteClass */
-  override var hasCurrent: Boolean = js.native
-  /* CompleteClass */
-  override def getMany(): AnonItems[IKeyValuePair[String, NamedResource]] = js.native
-  /* CompleteClass */
-  override def moveNext(): Boolean = js.native
+trait ResourceMapIterator extends IIterator[IKeyValuePair[String, NamedResource]]
+
+object ResourceMapIterator {
+  @scala.inline
+  def apply(
+    current: IKeyValuePair[String, NamedResource],
+    getMany: () => Items[IKeyValuePair[String, NamedResource]],
+    hasCurrent: Boolean,
+    moveNext: () => Boolean
+  ): ResourceMapIterator = {
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], getMany = js.Any.fromFunction0(getMany), hasCurrent = hasCurrent.asInstanceOf[js.Any], moveNext = js.Any.fromFunction0(moveNext))
+    __obj.asInstanceOf[ResourceMapIterator]
+  }
 }
 

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 trait ISQLResultSetRowList extends IBase {
   /** [Method] Returns the number of rows returned by the SQL statement
-  		* @returns Number The number of rows.
-  		*/
+    * @returns Number The number of rows.
+    */
   var getLength: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns a row at specified index returned by the SQL statement
-  		* @param index Number This is required. The index of a row.
-  		* @returns Object The row.
-  		*/
+    * @param index Number This is required. The index of a row.
+    * @returns Object The row.
+    */
   var item: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], _]] = js.undefined
 }
 
@@ -59,7 +59,7 @@ object ISQLResultSetRowList {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISQLResultSetRowList]

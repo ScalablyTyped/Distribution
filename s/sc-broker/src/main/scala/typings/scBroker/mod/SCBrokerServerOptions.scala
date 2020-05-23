@@ -28,28 +28,28 @@ object SCBrokerServerOptions {
     brokerOptions: SCBrokerOptions = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     downgradeToUser: Double | String = null,
-    expiryAccuracy: Int | Double = null,
+    expiryAccuracy: js.UndefOr[Double] = js.undefined,
     id: String = null,
     inspect: js.UndefOr[Boolean] = js.undefined,
     instanceId: String = null,
-    ipcAckTimeout: Int | Double = null,
-    port: Int | Double = null,
-    processTermTimeout: Int | Double = null,
+    ipcAckTimeout: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined,
+    processTermTimeout: js.UndefOr[Double] = js.undefined,
     secretKey: String = null,
     socketPath: String = null
   ): SCBrokerServerOptions = {
     val __obj = js.Dynamic.literal()
     if (brokerControllerPath != null) __obj.updateDynamic("brokerControllerPath")(brokerControllerPath.asInstanceOf[js.Any])
     if (brokerOptions != null) __obj.updateDynamic("brokerOptions")(brokerOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (downgradeToUser != null) __obj.updateDynamic("downgradeToUser")(downgradeToUser.asInstanceOf[js.Any])
-    if (expiryAccuracy != null) __obj.updateDynamic("expiryAccuracy")(expiryAccuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiryAccuracy)) __obj.updateDynamic("expiryAccuracy")(expiryAccuracy.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect.asInstanceOf[js.Any])
+    if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect.get.asInstanceOf[js.Any])
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (ipcAckTimeout != null) __obj.updateDynamic("ipcAckTimeout")(ipcAckTimeout.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (processTermTimeout != null) __obj.updateDynamic("processTermTimeout")(processTermTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipcAckTimeout)) __obj.updateDynamic("ipcAckTimeout")(ipcAckTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(processTermTimeout)) __obj.updateDynamic("processTermTimeout")(processTermTimeout.get.asInstanceOf[js.Any])
     if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey.asInstanceOf[js.Any])
     if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SCBrokerServerOptions]

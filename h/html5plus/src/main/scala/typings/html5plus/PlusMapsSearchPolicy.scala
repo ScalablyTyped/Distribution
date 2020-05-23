@@ -65,22 +65,22 @@ trait PlusMapsSearchPolicy extends js.Object {
 object PlusMapsSearchPolicy {
   @scala.inline
   def apply(
-    DRIVING_DIS_FIRST: Int | Double = null,
-    DRIVING_FEE_FIRST: Int | Double = null,
-    DRIVING_NO_EXPRESSWAY: Int | Double = null,
-    TRANSIT_FEE_FIRST: Int | Double = null,
-    TRANSIT_TIME_FIRST: Int | Double = null,
-    TRANSIT_TRANSFER_FIRST: Int | Double = null,
-    TRANSIT_WALK_FIRST: Int | Double = null
+    DRIVING_DIS_FIRST: js.UndefOr[Double] = js.undefined,
+    DRIVING_FEE_FIRST: js.UndefOr[Double] = js.undefined,
+    DRIVING_NO_EXPRESSWAY: js.UndefOr[Double] = js.undefined,
+    TRANSIT_FEE_FIRST: js.UndefOr[Double] = js.undefined,
+    TRANSIT_TIME_FIRST: js.UndefOr[Double] = js.undefined,
+    TRANSIT_TRANSFER_FIRST: js.UndefOr[Double] = js.undefined,
+    TRANSIT_WALK_FIRST: js.UndefOr[Double] = js.undefined
   ): PlusMapsSearchPolicy = {
     val __obj = js.Dynamic.literal()
-    if (DRIVING_DIS_FIRST != null) __obj.updateDynamic("DRIVING_DIS_FIRST")(DRIVING_DIS_FIRST.asInstanceOf[js.Any])
-    if (DRIVING_FEE_FIRST != null) __obj.updateDynamic("DRIVING_FEE_FIRST")(DRIVING_FEE_FIRST.asInstanceOf[js.Any])
-    if (DRIVING_NO_EXPRESSWAY != null) __obj.updateDynamic("DRIVING_NO_EXPRESSWAY")(DRIVING_NO_EXPRESSWAY.asInstanceOf[js.Any])
-    if (TRANSIT_FEE_FIRST != null) __obj.updateDynamic("TRANSIT_FEE_FIRST")(TRANSIT_FEE_FIRST.asInstanceOf[js.Any])
-    if (TRANSIT_TIME_FIRST != null) __obj.updateDynamic("TRANSIT_TIME_FIRST")(TRANSIT_TIME_FIRST.asInstanceOf[js.Any])
-    if (TRANSIT_TRANSFER_FIRST != null) __obj.updateDynamic("TRANSIT_TRANSFER_FIRST")(TRANSIT_TRANSFER_FIRST.asInstanceOf[js.Any])
-    if (TRANSIT_WALK_FIRST != null) __obj.updateDynamic("TRANSIT_WALK_FIRST")(TRANSIT_WALK_FIRST.asInstanceOf[js.Any])
+    if (!js.isUndefined(DRIVING_DIS_FIRST)) __obj.updateDynamic("DRIVING_DIS_FIRST")(DRIVING_DIS_FIRST.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DRIVING_FEE_FIRST)) __obj.updateDynamic("DRIVING_FEE_FIRST")(DRIVING_FEE_FIRST.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DRIVING_NO_EXPRESSWAY)) __obj.updateDynamic("DRIVING_NO_EXPRESSWAY")(DRIVING_NO_EXPRESSWAY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TRANSIT_FEE_FIRST)) __obj.updateDynamic("TRANSIT_FEE_FIRST")(TRANSIT_FEE_FIRST.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TRANSIT_TIME_FIRST)) __obj.updateDynamic("TRANSIT_TIME_FIRST")(TRANSIT_TIME_FIRST.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TRANSIT_TRANSFER_FIRST)) __obj.updateDynamic("TRANSIT_TRANSFER_FIRST")(TRANSIT_TRANSFER_FIRST.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TRANSIT_WALK_FIRST)) __obj.updateDynamic("TRANSIT_WALK_FIRST")(TRANSIT_WALK_FIRST.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsSearchPolicy]
   }
 }

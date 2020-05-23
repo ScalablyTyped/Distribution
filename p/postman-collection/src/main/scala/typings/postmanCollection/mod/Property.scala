@@ -1,28 +1,28 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonDisabled
-import typings.postmanCollection.AnonIgnoreOwnVariables
-import typings.postmanCollection.AnonVariables
+import typings.postmanCollection.anon.Disabled
+import typings.postmanCollection.anon.IgnoreOwnVariables
+import typings.postmanCollection.anon.Variables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.PropertyDefinition because var conflicts: description. Inlined id, name, disabled */ @JSImport("postman-collection", "Property")
 @js.native
 class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefinition] {
   def this(definition: TDefinition) = this()
-  def this(definition: AnonDisabled[TDefinition]) = this()
+  def this(definition: Disabled[TDefinition]) = this()
   var disabled: js.UndefOr[Boolean] = js.native
   var id: js.UndefOr[String] = js.native
   var name: js.UndefOr[String] = js.native
   def describe(content: String): Unit = js.native
   def describe(content: String, `type`: String): Unit = js.native
   def toObjectResolved(scope: Null, overrides: js.Array[_]): TDefinition = js.native
-  def toObjectResolved(scope: Null, overrides: js.Array[_], options: AnonIgnoreOwnVariables): TDefinition = js.native
-  def toObjectResolved(scope: AnonVariables, overrides: js.Array[_]): TDefinition = js.native
-  def toObjectResolved(scope: AnonVariables, overrides: js.Array[_], options: AnonIgnoreOwnVariables): TDefinition = js.native
+  def toObjectResolved(scope: Null, overrides: js.Array[_], options: IgnoreOwnVariables): TDefinition = js.native
+  def toObjectResolved(scope: Variables, overrides: js.Array[_]): TDefinition = js.native
+  def toObjectResolved(scope: Variables, overrides: js.Array[_], options: IgnoreOwnVariables): TDefinition = js.native
 }
 
 /* static members */

@@ -1,9 +1,9 @@
 package typings.childProcessPromise.mod
 
-import typings.childProcessPromise.ReadonlyOptionsExecOption
-import typings.childProcessPromise.ReadonlyOptionsencodingBu_
-import typings.childProcessPromise.ReadonlyOptionsencodingbu
-import typings.childProcessPromise.ReadonlyOptionsencodingst
+import typings.childProcessPromise.anon.ReadonlyOptionsExecOption
+import typings.childProcessPromise.anon.ReadonlyOptionsencodingBu_
+import typings.childProcessPromise.anon.ReadonlyOptionsencodingbu
+import typings.childProcessPromise.anon.ReadonlyOptionsencodingst
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

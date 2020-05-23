@@ -34,7 +34,7 @@ object PrintProgressChangedEventArgs {
     val __obj = js.Dynamic.literal()
     if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
     if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(handled)) __obj.updateDynamic("handled")(handled.asInstanceOf[js.Any])
+    if (!js.isUndefined(handled)) __obj.updateDynamic("handled")(handled.get.asInstanceOf[js.Any])
     if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
     if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintProgressChangedEventArgs]

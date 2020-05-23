@@ -2,7 +2,7 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.reactNative.AnonScreen
+import typings.reactNative.anon.Screen
 import typings.reactNative.reactNativeStrings.change
 import typings.reactNative.reactNativeStrings.screen
 import typings.reactNative.reactNativeStrings.window
@@ -19,7 +19,7 @@ trait Dimensions extends js.Object {
     * @param handler the event handler
     */
   @JSName("addEventListener")
-  def addEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ AnonScreen, Unit]): Unit = js.native
+  def addEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ Screen, Unit]): Unit = js.native
   @JSName("get")
   def get_screen(dim: screen): ScaledSize = js.native
   /**
@@ -45,7 +45,7 @@ trait Dimensions extends js.Object {
     * @param handler the event handler
     */
   @JSName("removeEventListener")
-  def removeEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ AnonScreen, Unit]): Unit = js.native
+  def removeEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ Screen, Unit]): Unit = js.native
   /**
     * This should only be called from native code by sending the didUpdateDimensions event.
     * @param dims Simple string-keyed object of dimensions to set

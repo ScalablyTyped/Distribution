@@ -21,7 +21,7 @@ object ValidateOptions {
   def apply(allowed: ValidationMethod = null, strict: js.UndefOr[Boolean] = js.undefined): ValidateOptions = {
     val __obj = js.Dynamic.literal()
     if (allowed != null) __obj.updateDynamic("allowed")(allowed.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateOptions]
   }
 }

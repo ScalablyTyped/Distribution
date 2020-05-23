@@ -1,9 +1,9 @@
 package typings.grommet.boxMod
 
-import typings.grommet.AnonDelay
-import typings.grommet.AnonGrow
-import typings.grommet.AnonHorizontal
-import typings.grommet.AnonMax
+import typings.grommet.anon.Delay
+import typings.grommet.anon.Grow
+import typings.grommet.anon.Horizontal
+import typings.grommet.anon.Max
 import typings.grommet.grommetStrings.`column-reverse`
 import typings.grommet.grommetStrings.`row-responsive`
 import typings.grommet.grommetStrings.`row-reverse`
@@ -65,8 +65,8 @@ trait BoxProps extends js.Object {
   var alignContent: js.UndefOr[AlignContentType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var animation: js.UndefOr[
-    fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | AnonDelay | (js.Array[
-      fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | AnonDelay
+    fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
+      fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay
     ])
   ] = js.undefined
   var as: js.UndefOr[PolymorphicType] = js.undefined
@@ -76,21 +76,21 @@ trait BoxProps extends js.Object {
   var direction: js.UndefOr[row | column | `row-responsive` | `row-reverse` | `column-reverse`] = js.undefined
   var elevation: js.UndefOr[ElevationType] = js.undefined
   var fill: js.UndefOr[FillType] = js.undefined
-  var flex: js.UndefOr[grow | shrink | Boolean | AnonGrow] = js.undefined
+  var flex: js.UndefOr[grow | shrink | Boolean | Grow] = js.undefined
   var focusIndicator: js.UndefOr[Boolean] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax] = js.undefined
+  var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max] = js.undefined
   var hoverIndicator: js.UndefOr[BackgroundType | Boolean] = js.undefined
   var justify: js.UndefOr[around | between | center | end | evenly | start | stretch] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var overflow: js.UndefOr[auto | hidden | scroll | visible | AnonHorizontal | String] = js.undefined
+  var overflow: js.UndefOr[auto | hidden | scroll | visible | Horizontal | String] = js.undefined
   var pad: js.UndefOr[PadType] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
   var round: js.UndefOr[RoundType] = js.undefined
   var tag: js.UndefOr[PolymorphicType] = js.undefined
-  var width: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax] = js.undefined
+  var width: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max] = js.undefined
   var wrap: js.UndefOr[Boolean | reverse] = js.undefined
 }
 
@@ -101,8 +101,8 @@ object BoxProps {
     align: start | center | end | baseline | stretch = null,
     alignContent: AlignContentType = null,
     alignSelf: AlignSelfType = null,
-    animation: fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | AnonDelay | (js.Array[
-      fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | AnonDelay
+    animation: fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
+      fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay
     ]) = null,
     as: PolymorphicType = null,
     background: BackgroundType = null,
@@ -111,21 +111,21 @@ object BoxProps {
     direction: row | column | `row-responsive` | `row-reverse` | `column-reverse` = null,
     elevation: ElevationType = null,
     fill: FillType = null,
-    flex: grow | shrink | Boolean | AnonGrow = null,
+    flex: grow | shrink | Boolean | Grow = null,
     focusIndicator: js.UndefOr[Boolean] = js.undefined,
     gap: GapType = null,
     gridArea: GridAreaType = null,
-    height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax = null,
+    height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max = null,
     hoverIndicator: BackgroundType | Boolean = null,
     justify: around | between | center | end | evenly | start | stretch = null,
     margin: MarginType = null,
     onClick: /* repeated */ js.Any => _ = null,
-    overflow: auto | hidden | scroll | visible | AnonHorizontal | String = null,
+    overflow: auto | hidden | scroll | visible | Horizontal | String = null,
     pad: PadType = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
     round: RoundType = null,
     tag: PolymorphicType = null,
-    width: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax = null,
+    width: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max = null,
     wrap: Boolean | reverse = null
   ): BoxProps = {
     val __obj = js.Dynamic.literal()
@@ -142,7 +142,7 @@ object BoxProps {
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator.get.asInstanceOf[js.Any])
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -152,7 +152,7 @@ object BoxProps {
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

@@ -17,7 +17,7 @@ object LineOutputProps {
   @scala.inline
   def apply(
     className: String,
-    StringDictionary: /* otherProps */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     key: Key = null,
     style: StyleObj = null
   ): LineOutputProps = {

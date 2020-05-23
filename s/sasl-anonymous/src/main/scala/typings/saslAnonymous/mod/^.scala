@@ -1,7 +1,7 @@
 package typings.saslAnonymous.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saslAnonymous.TypeofAnonymousMechanism
+import typings.saslAnonymous.anon.TypeofAnonymousMechanism
 import typings.saslAnonymous.saslAnonymousBooleans.`true`
 import typings.saslAnonymous.saslAnonymousStrings.ANONYMOUS
 import scala.scalajs.js

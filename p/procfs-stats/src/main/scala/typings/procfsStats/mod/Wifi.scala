@@ -1,23 +1,23 @@
 package typings.procfsStats.mod
 
-import typings.procfsStats.AnonDiscardedpackets
-import typings.procfsStats.AnonMissed
-import typings.procfsStats.AnonQuality
+import typings.procfsStats.anon.Discardedpackets
+import typings.procfsStats.anon.Missed
+import typings.procfsStats.anon.Quality
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Wifi extends js.Object {
   var Interface: String
-  var beacon: AnonMissed
-  var crypt: AnonDiscardedpackets
-  var frag: AnonDiscardedpackets
-  var level: AnonQuality
-  var link: AnonQuality
-  var misc: AnonDiscardedpackets
-  var noise: AnonQuality
-  var nwid: AnonDiscardedpackets
-  var retry: AnonDiscardedpackets
+  var beacon: Missed
+  var crypt: Discardedpackets
+  var frag: Discardedpackets
+  var level: Quality
+  var link: Quality
+  var misc: Discardedpackets
+  var noise: Quality
+  var nwid: Discardedpackets
+  var retry: Discardedpackets
   var status: String
 }
 
@@ -25,15 +25,15 @@ object Wifi {
   @scala.inline
   def apply(
     Interface: String,
-    beacon: AnonMissed,
-    crypt: AnonDiscardedpackets,
-    frag: AnonDiscardedpackets,
-    level: AnonQuality,
-    link: AnonQuality,
-    misc: AnonDiscardedpackets,
-    noise: AnonQuality,
-    nwid: AnonDiscardedpackets,
-    retry: AnonDiscardedpackets,
+    beacon: Missed,
+    crypt: Discardedpackets,
+    frag: Discardedpackets,
+    level: Quality,
+    link: Quality,
+    misc: Discardedpackets,
+    noise: Quality,
+    nwid: Discardedpackets,
+    retry: Discardedpackets,
     status: String
   ): Wifi = {
     val __obj = js.Dynamic.literal(Interface = Interface.asInstanceOf[js.Any], beacon = beacon.asInstanceOf[js.Any], crypt = crypt.asInstanceOf[js.Any], frag = frag.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], misc = misc.asInstanceOf[js.Any], noise = noise.asInstanceOf[js.Any], nwid = nwid.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])

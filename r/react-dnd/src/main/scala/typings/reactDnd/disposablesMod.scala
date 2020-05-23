@@ -1,5 +1,6 @@
 package typings.reactDnd
 
+import typings.reactDnd.anon.Dispose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,7 +64,7 @@ object disposablesMod extends js.Object {
     /**
       * Gets the disposable that does nothing when disposed.
       */
-    var empty: AnonDispose = js.native
+    var empty: Dispose = js.native
     def _fixup(result: js.Any): js.Any = js.native
     /**
       * Creates a disposable object that invokes the specified action when disposed.

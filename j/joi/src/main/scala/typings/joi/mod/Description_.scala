@@ -24,7 +24,7 @@ trait Description_
 object Description_ {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     description: String = null,
     example: js.Array[_] = null,
     flags: js.Object = null,

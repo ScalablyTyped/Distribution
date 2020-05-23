@@ -34,8 +34,7 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    StringDictionary: // ...args support
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     bail: js.UndefOr[Boolean] = js.undefined,
     branch: String = null,
     check: js.UndefOr[Boolean] = js.undefined,
@@ -54,9 +53,9 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
+    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.get.asInstanceOf[js.Any])
     if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (onCheckFile != null) __obj.updateDynamic("onCheckFile")(js.Any.fromFunction2(onCheckFile))
     if (onExamineFile != null) __obj.updateDynamic("onExamineFile")(js.Any.fromFunction1(onExamineFile))
@@ -65,10 +64,10 @@ object Options {
     if (onPartiallyStagedFile != null) __obj.updateDynamic("onPartiallyStagedFile")(js.Any.fromFunction1(onPartiallyStagedFile))
     if (onWriteFile != null) __obj.updateDynamic("onWriteFile")(js.Any.fromFunction1(onWriteFile))
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(restage)) __obj.updateDynamic("restage")(restage.asInstanceOf[js.Any])
+    if (!js.isUndefined(restage)) __obj.updateDynamic("restage")(restage.get.asInstanceOf[js.Any])
     if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
-    if (!js.isUndefined(staged)) __obj.updateDynamic("staged")(staged.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(staged)) __obj.updateDynamic("staged")(staged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

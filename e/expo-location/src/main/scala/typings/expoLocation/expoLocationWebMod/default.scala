@@ -1,6 +1,6 @@
 package typings.expoLocation.expoLocationWebMod
 
-import typings.expoLocation.AnonLocationServicesEnabled
+import typings.expoLocation.anon.LocationServicesEnabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ object default extends js.Object {
   val name: String = js.native
   def geocodeAsync(): js.Promise[js.Array[_]] = js.native
   def getCurrentPositionAsync(options: js.Object): js.Promise[Position | Null] = js.native
-  def getProviderStatusAsync(): js.Promise[AnonLocationServicesEnabled] = js.native
+  def getProviderStatusAsync(): js.Promise[LocationServicesEnabled] = js.native
   def hasServicesEnabledAsync(): js.Promise[Boolean] = js.native
   def removeWatchAsync(watchId: js.Any): js.Promise[Unit] = js.native
   def requestPermissionsAsync(): js.Promise[PermissionResult] = js.native

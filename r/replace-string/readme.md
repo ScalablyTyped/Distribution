@@ -1,7 +1,7 @@
 
 # Scala.js typings for replace-string
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Replace all substring matches in a string

@@ -1,7 +1,7 @@
 package typings.gulpUglify.composerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.gulpUglify.FnCall
+import typings.gulpUglify.anon.FnCall
 import typings.uglifyJs.mod.MinifyOptions
 import typings.uglifyJs.mod.MinifyOutput
 import scala.scalajs.js

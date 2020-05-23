@@ -11,15 +11,21 @@ import scala.scalajs.js.annotation._
   * @property type {string} - Name of the dispatched event
   * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
   */
-@JSGlobal("H.util.ChangeEvent")
-@js.native
-class ChangeEvent protected () extends Event {
-  /**
-    * Constructor
-    * @param type {string} - The type of the event
-    * @param newValue {*} - The new value of the property
-    * @param oldValue {*} - The previous value of the property
-    */
-  def this(`type`: String, newValue: js.Any, oldValue: js.Any) = this()
+trait ChangeEvent extends Event
+
+object ChangeEvent {
+  @scala.inline
+  def apply(
+    currentTarget: js.Any,
+    defaultPrevented: Boolean,
+    preventDefault: () => Unit,
+    stopPropagation: () => Unit,
+    target: js.Any,
+    `type`: String
+  ): ChangeEvent = {
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChangeEvent]
+  }
 }
 

@@ -1,6 +1,6 @@
 package typings.storybookAddonKnobs.checkboxesMod
 
-import typings.storybookAddonKnobs.AnonIsInline
+import typings.storybookAddonKnobs.anon.IsInline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class default protected () extends CheckboxesType {
 @js.native
 object default extends js.Object {
   var defaultProps: CheckboxesTypeProps = js.native
-  var propTypes: AnonIsInline = js.native
+  var propTypes: IsInline = js.native
   def deserialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = js.native
   def serialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = js.native
 }

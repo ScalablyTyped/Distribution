@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonExecutioncount
+import typings.jupyterlabServices.anon.Executioncount
 import typings.jupyterlabServices.jupyterlabServicesStrings.execute_input
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IExecuteInputMsg
   extends IIOPubMessage[execute_input]
      with _Message {
   @JSName("content")
-  var content_IExecuteInputMsg: AnonExecutioncount
+  var content_IExecuteInputMsg: Executioncount
 }
 
 object IExecuteInputMsg {
   @scala.inline
   def apply(
     channel: iopub,
-    content: AnonExecutioncount,
+    content: Executioncount,
     header: IHeader[execute_input],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

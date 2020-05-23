@@ -16,17 +16,17 @@ object RealtimeHistoryParams {
   @scala.inline
   def apply(
     direction: String = null,
-    end: Int | Double = null,
-    limit: Int | Double = null,
-    start: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined,
     untilAttach: js.UndefOr[Boolean] = js.undefined
   ): RealtimeHistoryParams = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(untilAttach)) __obj.updateDynamic("untilAttach")(untilAttach.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(untilAttach)) __obj.updateDynamic("untilAttach")(untilAttach.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealtimeHistoryParams]
   }
 }

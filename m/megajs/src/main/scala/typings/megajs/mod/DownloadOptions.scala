@@ -17,21 +17,21 @@ trait DownloadOptions extends js.Object {
 object DownloadOptions {
   @scala.inline
   def apply(
-    chunkSizeIncrement: Int | Double = null,
+    chunkSizeIncrement: js.UndefOr[Double] = js.undefined,
     end: js.Any = null,
-    initialChunkSize: Int | Double = null,
-    maxChunkSize: Int | Double = null,
-    maxConnections: Int | Double = null,
+    initialChunkSize: js.UndefOr[Double] = js.undefined,
+    maxChunkSize: js.UndefOr[Double] = js.undefined,
+    maxConnections: js.UndefOr[Double] = js.undefined,
     returnCiphertext: js.UndefOr[Boolean] = js.undefined,
     start: js.Any = null
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal()
-    if (chunkSizeIncrement != null) __obj.updateDynamic("chunkSizeIncrement")(chunkSizeIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSizeIncrement)) __obj.updateDynamic("chunkSizeIncrement")(chunkSizeIncrement.get.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (initialChunkSize != null) __obj.updateDynamic("initialChunkSize")(initialChunkSize.asInstanceOf[js.Any])
-    if (maxChunkSize != null) __obj.updateDynamic("maxChunkSize")(maxChunkSize.asInstanceOf[js.Any])
-    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnCiphertext)) __obj.updateDynamic("returnCiphertext")(returnCiphertext.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialChunkSize)) __obj.updateDynamic("initialChunkSize")(initialChunkSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxChunkSize)) __obj.updateDynamic("maxChunkSize")(maxChunkSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnCiphertext)) __obj.updateDynamic("returnCiphertext")(returnCiphertext.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadOptions]
   }

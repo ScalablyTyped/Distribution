@@ -18,10 +18,10 @@ trait SearchStatus extends js.Object {
 
 object SearchStatus {
   @scala.inline
-  def apply(rid: String = null, timems: Int | scala.Double = null): SearchStatus = {
+  def apply(rid: String = null, timems: js.UndefOr[Long] = js.undefined): SearchStatus = {
     val __obj = js.Dynamic.literal()
     if (rid != null) __obj.updateDynamic("rid")(rid.asInstanceOf[js.Any])
-    if (timems != null) __obj.updateDynamic("timems")(timems.asInstanceOf[js.Any])
+    if (!js.isUndefined(timems)) __obj.updateDynamic("timems")(timems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchStatus]
   }
 }

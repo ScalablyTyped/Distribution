@@ -1,6 +1,6 @@
 package typings.spex.mod
 
-import typings.spex.Typeoferrors
+import typings.spex.anon.Typeoferrors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

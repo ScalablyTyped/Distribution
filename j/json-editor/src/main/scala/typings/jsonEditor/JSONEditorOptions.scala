@@ -1,5 +1,6 @@
 package typings.jsonEditor
 
+import typings.jsonEditor.anon.Compile
 import typings.jsonEditor.jsonEditorStrings.always
 import typings.jsonEditor.jsonEditorStrings.barebones
 import typings.jsonEditor.jsonEditorStrings.bootstrap2
@@ -95,7 +96,7 @@ trait JSONEditorOptions[TValue] extends js.Object {
   /**
     * The JS template engine to use.
     */
-  var template: js.UndefOr[String | AnonCompile] = js.undefined
+  var template: js.UndefOr[String | Compile] = js.undefined
   /**
     * The CSS theme to use.
     */
@@ -124,24 +125,24 @@ object JSONEditorOptions {
     schema: js.Any = null,
     show_errors: interaction | change | always | never = null,
     startval: TValue = null,
-    template: String | AnonCompile = null,
+    template: String | Compile = null,
     theme: barebones | html | bootstrap2 | bootstrap3 | bootstrap4 | foundation3 | foundation4 | foundation5 | foundation6 | jqueryui = null
   ): JSONEditorOptions[TValue] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ajax)) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_add)) __obj.updateDynamic("disable_array_add")(disable_array_add.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_delete)) __obj.updateDynamic("disable_array_delete")(disable_array_delete.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_reorder)) __obj.updateDynamic("disable_array_reorder")(disable_array_reorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_collapse)) __obj.updateDynamic("disable_collapse")(disable_collapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_edit_json)) __obj.updateDynamic("disable_edit_json")(disable_edit_json.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_properties)) __obj.updateDynamic("disable_properties")(disable_properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(display_required_only)) __obj.updateDynamic("display_required_only")(display_required_only.asInstanceOf[js.Any])
+    if (!js.isUndefined(ajax)) __obj.updateDynamic("ajax")(ajax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_array_add)) __obj.updateDynamic("disable_array_add")(disable_array_add.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_array_delete)) __obj.updateDynamic("disable_array_delete")(disable_array_delete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_array_reorder)) __obj.updateDynamic("disable_array_reorder")(disable_array_reorder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_collapse)) __obj.updateDynamic("disable_collapse")(disable_collapse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_edit_json)) __obj.updateDynamic("disable_edit_json")(disable_edit_json.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_properties)) __obj.updateDynamic("disable_properties")(disable_properties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(display_required_only)) __obj.updateDynamic("display_required_only")(display_required_only.get.asInstanceOf[js.Any])
     if (form_name_root != null) __obj.updateDynamic("form_name_root")(form_name_root.asInstanceOf[js.Any])
     if (iconlib != null) __obj.updateDynamic("iconlib")(iconlib.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_oneof_values)) __obj.updateDynamic("keep_oneof_values")(keep_oneof_values.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_additional_properties)) __obj.updateDynamic("no_additional_properties")(no_additional_properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_oneof_values)) __obj.updateDynamic("keep_oneof_values")(keep_oneof_values.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_additional_properties)) __obj.updateDynamic("no_additional_properties")(no_additional_properties.get.asInstanceOf[js.Any])
     if (refs != null) __obj.updateDynamic("refs")(refs.asInstanceOf[js.Any])
-    if (!js.isUndefined(required_by_default)) __obj.updateDynamic("required_by_default")(required_by_default.asInstanceOf[js.Any])
+    if (!js.isUndefined(required_by_default)) __obj.updateDynamic("required_by_default")(required_by_default.get.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (show_errors != null) __obj.updateDynamic("show_errors")(show_errors.asInstanceOf[js.Any])
     if (startval != null) __obj.updateDynamic("startval")(startval.asInstanceOf[js.Any])

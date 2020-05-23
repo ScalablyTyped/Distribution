@@ -110,10 +110,10 @@ object PopupTemplateProperties {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (expressionInfos != null) __obj.updateDynamic("expressionInfos")(expressionInfos.asInstanceOf[js.Any])
     if (fieldInfos != null) __obj.updateDynamic("fieldInfos")(fieldInfos.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastEditInfoEnabled)) __obj.updateDynamic("lastEditInfoEnabled")(lastEditInfoEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastEditInfoEnabled)) __obj.updateDynamic("lastEditInfoEnabled")(lastEditInfoEnabled.get.asInstanceOf[js.Any])
     if (layerOptions != null) __obj.updateDynamic("layerOptions")(layerOptions.asInstanceOf[js.Any])
     if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteActions)) __obj.updateDynamic("overwriteActions")(overwriteActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwriteActions)) __obj.updateDynamic("overwriteActions")(overwriteActions.get.asInstanceOf[js.Any])
     if (relatedRecordsInfo != null) __obj.updateDynamic("relatedRecordsInfo")(relatedRecordsInfo.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupTemplateProperties]

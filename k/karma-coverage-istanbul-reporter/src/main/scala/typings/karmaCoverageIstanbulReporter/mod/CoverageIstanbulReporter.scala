@@ -47,15 +47,15 @@ object CoverageIstanbulReporter {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): CoverageIstanbulReporter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(combineBrowserReports)) __obj.updateDynamic("combineBrowserReports")(combineBrowserReports.asInstanceOf[js.Any])
+    if (!js.isUndefined(combineBrowserReports)) __obj.updateDynamic("combineBrowserReports")(combineBrowserReports.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixWebpackSourcePaths)) __obj.updateDynamic("fixWebpackSourcePaths")(fixWebpackSourcePaths.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixWebpackSourcePaths)) __obj.updateDynamic("fixWebpackSourcePaths")(fixWebpackSourcePaths.get.asInstanceOf[js.Any])
     if (instrumentation != null) __obj.updateDynamic("instrumentation")(instrumentation.asInstanceOf[js.Any])
     if (`report-config` != null) __obj.updateDynamic("report-config")(`report-config`.asInstanceOf[js.Any])
     if (reports != null) __obj.updateDynamic("reports")(reports.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipFilesWithNoCoverage)) __obj.updateDynamic("skipFilesWithNoCoverage")(skipFilesWithNoCoverage.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipFilesWithNoCoverage)) __obj.updateDynamic("skipFilesWithNoCoverage")(skipFilesWithNoCoverage.get.asInstanceOf[js.Any])
     if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverageIstanbulReporter]
   }
 }

@@ -16,8 +16,7 @@ trait CompletePickResult extends PickResult {
 object CompletePickResult {
   @scala.inline
   def apply(pickResultType: COMPLETE, status: Null, subchannel: Subchannel = null): CompletePickResult = {
-    val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (subchannel != null) __obj.updateDynamic("subchannel")(subchannel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subchannel = subchannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletePickResult]
   }
 }

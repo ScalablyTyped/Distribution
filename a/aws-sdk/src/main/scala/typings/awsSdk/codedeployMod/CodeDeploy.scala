@@ -1,6 +1,6 @@
 package typings.awsSdk.codedeployMod
 
-import typings.awsSdk.GetDeploymentInputwaiterW
+import typings.awsSdk.anon.GetDeploymentInputwaiterW
 import typings.awsSdk.awsSdkStrings.deploymentSuccessful
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -41,12 +41,12 @@ trait CodeDeploy extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetApplicationRevisionsOutput, Unit]
   ): Request[BatchGetApplicationRevisionsOutput, AWSError] = js.native
   /**
-    * Gets information about one or more applications. The maximum number of applications that can be returned is 25.
+    * Gets information about one or more applications. The maximum number of applications that can be returned is 100.
     */
   def batchGetApplications(): Request[BatchGetApplicationsOutput, AWSError] = js.native
   def batchGetApplications(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetApplicationsOutput, Unit]): Request[BatchGetApplicationsOutput, AWSError] = js.native
   /**
-    * Gets information about one or more applications. The maximum number of applications that can be returned is 25.
+    * Gets information about one or more applications. The maximum number of applications that can be returned is 100.
     */
   def batchGetApplications(params: BatchGetApplicationsInput): Request[BatchGetApplicationsOutput, AWSError] = js.native
   def batchGetApplications(
@@ -80,12 +80,12 @@ trait CodeDeploy extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetDeploymentInstancesOutput, Unit]
   ): Request[BatchGetDeploymentInstancesOutput, AWSError] = js.native
   /**
-    *  Returns an array of one or more targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances. The maximum number of targets that can be returned is 25.  The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
+    *  Returns an array of one or more targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances. The maximum number of targets that can be returned is 25.  The type of targets returned depends on the deployment's compute platform or deployment method:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.     CloudFormation: Information about targets of blue/green deployments initiated by a CloudFormation stack update.  
     */
   def batchGetDeploymentTargets(): Request[BatchGetDeploymentTargetsOutput, AWSError] = js.native
   def batchGetDeploymentTargets(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetDeploymentTargetsOutput, Unit]): Request[BatchGetDeploymentTargetsOutput, AWSError] = js.native
   /**
-    *  Returns an array of one or more targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances. The maximum number of targets that can be returned is 25.  The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
+    *  Returns an array of one or more targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances. The maximum number of targets that can be returned is 25.  The type of targets returned depends on the deployment's compute platform or deployment method:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.     CloudFormation: Information about targets of blue/green deployments initiated by a CloudFormation stack update.  
     */
   def batchGetDeploymentTargets(params: BatchGetDeploymentTargetsInput): Request[BatchGetDeploymentTargetsOutput, AWSError] = js.native
   def batchGetDeploymentTargets(
@@ -235,6 +235,19 @@ trait CodeDeploy extends Service {
     params: DeleteGitHubAccountTokenInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGitHubAccountTokenOutput, Unit]
   ): Request[DeleteGitHubAccountTokenOutput, AWSError] = js.native
+  /**
+    * Deletes resources linked to an external ID.
+    */
+  def deleteResourcesByExternalId(): Request[DeleteResourcesByExternalIdOutput, AWSError] = js.native
+  def deleteResourcesByExternalId(callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcesByExternalIdOutput, Unit]): Request[DeleteResourcesByExternalIdOutput, AWSError] = js.native
+  /**
+    * Deletes resources linked to an external ID.
+    */
+  def deleteResourcesByExternalId(params: DeleteResourcesByExternalIdInput): Request[DeleteResourcesByExternalIdOutput, AWSError] = js.native
+  def deleteResourcesByExternalId(
+    params: DeleteResourcesByExternalIdInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcesByExternalIdOutput, Unit]
+  ): Request[DeleteResourcesByExternalIdOutput, AWSError] = js.native
   /**
     * Deregisters an on-premises instance.
     */
@@ -470,12 +483,12 @@ trait CodeDeploy extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListOnPremisesInstancesOutput, Unit]
   ): Request[ListOnPremisesInstancesOutput, AWSError] = js.native
   /**
-    *  Returns a list of tags for the resource identified by a specified ARN. Tags are used to organize and categorize your CodeDeploy resources. 
+    *  Returns a list of tags for the resource identified by a specified Amazon Resource Name (ARN). Tags are used to organize and categorize your CodeDeploy resources. 
     */
   def listTagsForResource(): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]): Request[ListTagsForResourceOutput, AWSError] = js.native
   /**
-    *  Returns a list of tags for the resource identified by a specified ARN. Tags are used to organize and categorize your CodeDeploy resources. 
+    *  Returns a list of tags for the resource identified by a specified Amazon Resource Name (ARN). Tags are used to organize and categorize your CodeDeploy resources. 
     */
   def listTagsForResource(params: ListTagsForResourceInput): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(
@@ -483,14 +496,14 @@ trait CodeDeploy extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]
   ): Request[ListTagsForResourceOutput, AWSError] = js.native
   /**
-    *  Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed. 
+    *  Sets the result of a Lambda validation function. The function validates lifecycle hooks during a deployment that uses the AWS Lambda or Amazon ECS compute platform. For AWS Lambda deployments, the available lifecycle hooks are BeforeAllowTraffic and AfterAllowTraffic. For Amazon ECS deployments, the available lifecycle hooks are BeforeInstall, AfterInstall, AfterAllowTestTraffic, BeforeAllowTraffic, and AfterAllowTraffic. Lambda validation functions return Succeeded or Failed. For more information, see AppSpec 'hooks' Section for an AWS Lambda Deployment  and AppSpec 'hooks' Section for an Amazon ECS Deployment.
     */
   def putLifecycleEventHookExecutionStatus(): Request[PutLifecycleEventHookExecutionStatusOutput, AWSError] = js.native
   def putLifecycleEventHookExecutionStatus(
     callback: js.Function2[/* err */ AWSError, /* data */ PutLifecycleEventHookExecutionStatusOutput, Unit]
   ): Request[PutLifecycleEventHookExecutionStatusOutput, AWSError] = js.native
   /**
-    *  Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed. 
+    *  Sets the result of a Lambda validation function. The function validates lifecycle hooks during a deployment that uses the AWS Lambda or Amazon ECS compute platform. For AWS Lambda deployments, the available lifecycle hooks are BeforeAllowTraffic and AfterAllowTraffic. For Amazon ECS deployments, the available lifecycle hooks are BeforeInstall, AfterInstall, AfterAllowTestTraffic, BeforeAllowTraffic, and AfterAllowTraffic. Lambda validation functions return Succeeded or Failed. For more information, see AppSpec 'hooks' Section for an AWS Lambda Deployment  and AppSpec 'hooks' Section for an Amazon ECS Deployment.
     */
   def putLifecycleEventHookExecutionStatus(params: PutLifecycleEventHookExecutionStatusInput): Request[PutLifecycleEventHookExecutionStatusOutput, AWSError] = js.native
   def putLifecycleEventHookExecutionStatus(
@@ -576,12 +589,12 @@ trait CodeDeploy extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]
   ): Request[TagResourceOutput, AWSError] = js.native
   /**
-    *  Disassociates a resource from a list of tags. The resource is identified by the ResourceArn input parameter. The tags are identfied by the list of keys in the TagKeys input parameter. 
+    *  Disassociates a resource from a list of tags. The resource is identified by the ResourceArn input parameter. The tags are identified by the list of keys in the TagKeys input parameter. 
     */
   def untagResource(): Request[UntagResourceOutput, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]): Request[UntagResourceOutput, AWSError] = js.native
   /**
-    *  Disassociates a resource from a list of tags. The resource is identified by the ResourceArn input parameter. The tags are identfied by the list of keys in the TagKeys input parameter. 
+    *  Disassociates a resource from a list of tags. The resource is identified by the ResourceArn input parameter. The tags are identified by the list of keys in the TagKeys input parameter. 
     */
   def untagResource(params: UntagResourceInput): Request[UntagResourceOutput, AWSError] = js.native
   def untagResource(

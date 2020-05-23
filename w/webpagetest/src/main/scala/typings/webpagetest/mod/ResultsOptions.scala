@@ -33,12 +33,12 @@ object ResultsOptions {
     specs: String = null
   ): ResultsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breakDown)) __obj.updateDynamic("breakDown")(breakDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(domains)) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakDown)) __obj.updateDynamic("breakDown")(breakDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(domains)) __obj.updateDynamic("domains")(domains.get.asInstanceOf[js.Any])
     if (medianMetric != null) __obj.updateDynamic("medianMetric")(medianMetric.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSpeed)) __obj.updateDynamic("pageSpeed")(pageSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSpeed)) __obj.updateDynamic("pageSpeed")(pageSpeed.get.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
-    if (!js.isUndefined(requests)) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
+    if (!js.isUndefined(requests)) __obj.updateDynamic("requests")(requests.get.asInstanceOf[js.Any])
     if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultsOptions]
   }

@@ -14,9 +14,9 @@ trait GetFunctionConcurrencyResponse extends js.Object {
 
 object GetFunctionConcurrencyResponse {
   @scala.inline
-  def apply(ReservedConcurrentExecutions: Int | Double = null): GetFunctionConcurrencyResponse = {
+  def apply(ReservedConcurrentExecutions: js.UndefOr[ReservedConcurrentExecutions] = js.undefined): GetFunctionConcurrencyResponse = {
     val __obj = js.Dynamic.literal()
-    if (ReservedConcurrentExecutions != null) __obj.updateDynamic("ReservedConcurrentExecutions")(ReservedConcurrentExecutions.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReservedConcurrentExecutions)) __obj.updateDynamic("ReservedConcurrentExecutions")(ReservedConcurrentExecutions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionConcurrencyResponse]
   }
 }

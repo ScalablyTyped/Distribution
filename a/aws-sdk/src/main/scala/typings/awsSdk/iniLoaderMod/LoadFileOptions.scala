@@ -15,7 +15,7 @@ object LoadFileOptions {
   def apply(filename: String = null, isConfig: js.UndefOr[Boolean] = js.undefined): LoadFileOptions = {
     val __obj = js.Dynamic.literal()
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(isConfig)) __obj.updateDynamic("isConfig")(isConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConfig)) __obj.updateDynamic("isConfig")(isConfig.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadFileOptions]
   }
 }

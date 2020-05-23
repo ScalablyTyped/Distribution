@@ -12,10 +12,10 @@ trait PersistedQueryOptions extends js.Object {
 
 object PersistedQueryOptions {
   @scala.inline
-  def apply(cache: KeyValueCache[String] = null, ttl: Int | Double = null): PersistedQueryOptions = {
+  def apply(cache: KeyValueCache[String] = null, ttl: js.UndefOr[Null | Double] = js.undefined): PersistedQueryOptions = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistedQueryOptions]
   }
 }

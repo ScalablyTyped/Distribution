@@ -26,8 +26,8 @@ object IResourceOptions {
     stripTrailingSlashes: js.UndefOr[Boolean] = js.undefined
   ): IResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripTrailingSlashes)) __obj.updateDynamic("stripTrailingSlashes")(stripTrailingSlashes.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripTrailingSlashes)) __obj.updateDynamic("stripTrailingSlashes")(stripTrailingSlashes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceOptions]
   }
 }

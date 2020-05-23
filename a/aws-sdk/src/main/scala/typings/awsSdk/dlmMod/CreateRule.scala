@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateRule extends js.Object {
   /**
-    * The interval between snapshots. The supported values are 2, 3, 4, 6, 8, 12, and 24.
+    * The interval between snapshots. The supported values are 1, 2, 3, 4, 6, 8, 12, and 24.
     */
   var Interval: typings.awsSdk.dlmMod.Interval = js.native
   /**

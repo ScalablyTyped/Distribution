@@ -13,10 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Supports network communication that allows reading and writing whole messages using a WebSocket. */
-@JSGlobal("Windows.Networking.Sockets.MessageWebSocket")
 @js.native
-/** Creates a new MessageWebSocket object. */
-class MessageWebSocket () extends js.Object {
+trait MessageWebSocket extends js.Object {
   /** Gets socket control data on a MessageWebSocket object. */
   var control: MessageWebSocketControl = js.native
   /** Gets socket information on a MessageWebSocket object. */

@@ -77,8 +77,8 @@ object PawsGetSpectrumBatchResponse {
     deviceDesc: DeviceDescriptor = null,
     geoSpectrumSchedules: js.Array[GeoSpectrumSchedule] = null,
     kind: String = null,
-    maxContiguousBwHz: Int | Double = null,
-    maxTotalBwHz: Int | Double = null,
+    maxContiguousBwHz: js.UndefOr[Double] = js.undefined,
+    maxTotalBwHz: js.UndefOr[Double] = js.undefined,
     needsSpectrumReport: js.UndefOr[Boolean] = js.undefined,
     rulesetInfo: RulesetInfo = null,
     timestamp: String = null,
@@ -90,9 +90,9 @@ object PawsGetSpectrumBatchResponse {
     if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc.asInstanceOf[js.Any])
     if (geoSpectrumSchedules != null) __obj.updateDynamic("geoSpectrumSchedules")(geoSpectrumSchedules.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maxContiguousBwHz != null) __obj.updateDynamic("maxContiguousBwHz")(maxContiguousBwHz.asInstanceOf[js.Any])
-    if (maxTotalBwHz != null) __obj.updateDynamic("maxTotalBwHz")(maxTotalBwHz.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsSpectrumReport)) __obj.updateDynamic("needsSpectrumReport")(needsSpectrumReport.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxContiguousBwHz)) __obj.updateDynamic("maxContiguousBwHz")(maxContiguousBwHz.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTotalBwHz)) __obj.updateDynamic("maxTotalBwHz")(maxTotalBwHz.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(needsSpectrumReport)) __obj.updateDynamic("needsSpectrumReport")(needsSpectrumReport.get.asInstanceOf[js.Any])
     if (rulesetInfo != null) __obj.updateDynamic("rulesetInfo")(rulesetInfo.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

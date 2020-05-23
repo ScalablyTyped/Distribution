@@ -9,44 +9,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.util.IAnimate because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined animate, getActiveAnimation, hasActiveFx, sequenceFx, stopAnimation, stopFx, syncFx */ trait ICompositeSprite extends IMixedCollection {
   /** [Method] Adds class to all sprites
-  		* @param cls String CSS class name
-  		*/
+    * @param cls String CSS class name
+    */
   var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Performs custom animation on this object
-  		* @param config Object Configuration for Ext.fx.Anim. Note that the to config is required.
-  		* @returns Object this
-  		*/
+    * @param config Object Configuration for Ext.fx.Anim. Note that the to config is required.
+    * @returns Object this
+    */
   var animate: js.UndefOr[js.Any | (js.Function1[/* config */ js.UndefOr[js.Any], _])] = js.undefined
   /** [Method] Destroys this CompositeSprite  */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
-  		* @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
-  		*/
+    * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
+    */
   var getActiveAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the group bounding box
-  		* @returns Object an object with x, y, width, and height properties.
-  		*/
+    * @returns Object an object with x, y, width, and height properties.
+    */
   var getBBox: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
-  		* @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
-  		*/
+    * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
+    */
   var hasActiveFx: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Hides all sprites
-  		* @param redraw Boolean Flag to immediately draw the change.
-  		* @returns Ext.draw.CompositeSprite this
-  		*/
+    * @param redraw Boolean Flag to immediately draw the change.
+    * @returns Ext.draw.CompositeSprite this
+    */
   var hide: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.undefined
   /** [Method] Inserts an item at the specified index in the collection
-  		* @param index Object
-  		* @param key Object
-  		* @param o Object
-  		* @returns Object The item inserted or an array of items inserted.
-  		*/
+    * @param index Object
+    * @param key Object
+    * @param o Object
+    * @returns Object The item inserted or an array of items inserted.
+    */
   @JSName("insert")
   var insert_ICompositeSprite: js.UndefOr[
     js.Function3[
@@ -59,41 +59,41 @@ import scala.scalajs.js.annotation._
   /** [Method] Force redraw of all sprites  */
   var redraw: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Removes class from all sprites
-  		* @param cls String CSS class name
-  		*/
+    * @param cls String CSS class name
+    */
   var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Ensures that all effects queued after sequenceFx is called on this object are run in sequence
-  		* @returns Object this
-  		*/
+    * @returns Object this
+    */
   var sequenceFx: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Iterates through all sprites calling setAttributes on each one
-  		* @param attrs Object Attributes to be changed on the sprite.
-  		* @param redraw Boolean Flag to immediately draw the change.
-  		* @returns Ext.draw.CompositeSprite this
-  		*/
+    * @param attrs Object Attributes to be changed on the sprite.
+    * @param redraw Boolean Flag to immediately draw the change.
+    * @returns Ext.draw.CompositeSprite this
+    */
   var setAttributes: js.UndefOr[
     js.Function2[/* attrs */ js.UndefOr[js.Any], /* redraw */ js.UndefOr[Boolean], this.type]
   ] = js.undefined
   /** [Method] Sets style for all sprites
-  		* @param style String CSS Style definition.
-  		*/
+    * @param style String CSS Style definition.
+    */
   var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Shows all sprites
-  		* @param redraw Boolean Flag to immediately draw the change.
-  		* @returns Ext.draw.CompositeSprite this
-  		*/
+    * @param redraw Boolean Flag to immediately draw the change.
+    * @returns Ext.draw.CompositeSprite this
+    */
   var show: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.undefined
   /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
-  		* @returns Ext.Element The Element
-  		*/
+    * @returns Ext.Element The Element
+    */
   var stopAnimation: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
-  		* @returns Ext.Element The Element
-  		*/
+    * @returns Ext.Element The Element
+    */
   var stopFx: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Ensures that all effects queued after syncFx is called on this object are run concurrently
-  		* @returns Object this
-  		*/
+    * @returns Object this
+    */
   var syncFx: js.UndefOr[js.Function0[_]] = js.undefined
 }
 
@@ -212,7 +212,7 @@ object ICompositeSprite {
     if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFunctions)) __obj.updateDynamic("allowFunctions")(allowFunctions.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFunctions)) __obj.updateDynamic("allowFunctions")(allowFunctions.get.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
@@ -263,9 +263,9 @@ object ICompositeSprite {
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initSortable != null) __obj.updateDynamic("initSortable")(js.Any.fromFunction0(initSortable))
     if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction3(insert))
-    if (!js.isUndefined(isMixedCollection)) __obj.updateDynamic("isMixedCollection")(isMixedCollection.asInstanceOf[js.Any])
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMixedCollection)) __obj.updateDynamic("isMixedCollection")(isMixedCollection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.get.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction0(last))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -292,7 +292,7 @@ object ICompositeSprite {
     if (setAttributes != null) __obj.updateDynamic("setAttributes")(js.Any.fromFunction2(setAttributes))
     if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction1(setStyle))
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (sortBy != null) __obj.updateDynamic("sortBy")(js.Any.fromFunction1(sortBy))
     if (sortByKey != null) __obj.updateDynamic("sortByKey")(js.Any.fromFunction2(sortByKey))

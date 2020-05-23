@@ -31,14 +31,14 @@ trait GetServiceSettingsResponse extends js.Object {
 object GetServiceSettingsResponse {
   @scala.inline
   def apply(
-    EnableCrossAccountsDiscovery: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.undefined,
     LicenseManagerResourceShareArn: String = null,
     OrganizationConfiguration: OrganizationConfiguration = null,
     S3BucketArn: String = null,
     SnsTopicArn: String = null
   ): GetServiceSettingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnableCrossAccountsDiscovery)) __obj.updateDynamic("EnableCrossAccountsDiscovery")(EnableCrossAccountsDiscovery.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableCrossAccountsDiscovery)) __obj.updateDynamic("EnableCrossAccountsDiscovery")(EnableCrossAccountsDiscovery.get.asInstanceOf[js.Any])
     if (LicenseManagerResourceShareArn != null) __obj.updateDynamic("LicenseManagerResourceShareArn")(LicenseManagerResourceShareArn.asInstanceOf[js.Any])
     if (OrganizationConfiguration != null) __obj.updateDynamic("OrganizationConfiguration")(OrganizationConfiguration.asInstanceOf[js.Any])
     if (S3BucketArn != null) __obj.updateDynamic("S3BucketArn")(S3BucketArn.asInstanceOf[js.Any])

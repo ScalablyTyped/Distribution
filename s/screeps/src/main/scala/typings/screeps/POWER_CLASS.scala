@@ -9,9 +9,11 @@ trait POWER_CLASS extends js.Object {
   var OPERATOR: operator
 }
 
-@JSGlobal("POWER_CLASS")
-@js.native
-object POWER_CLASS extends js.Object {
-  var OPERATOR: operator = js.native
+object POWER_CLASS {
+  @scala.inline
+  def apply(OPERATOR: operator): POWER_CLASS = {
+    val __obj = js.Dynamic.literal(OPERATOR = OPERATOR.asInstanceOf[js.Any])
+    __obj.asInstanceOf[POWER_CLASS]
+  }
 }
 

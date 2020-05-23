@@ -22,7 +22,7 @@ trait MailSearchFolder extends MailFolder {
 object MailSearchFolder {
   @scala.inline
   def apply(
-    childFolderCount: Int | Double = null,
+    childFolderCount: js.UndefOr[Double] = js.undefined,
     childFolders: js.Array[MailFolder] = null,
     displayName: String = null,
     filterQuery: String = null,
@@ -35,25 +35,25 @@ object MailSearchFolder {
     parentFolderId: String = null,
     singleValueExtendedProperties: js.Array[SingleValueLegacyExtendedProperty] = null,
     sourceFolderIds: js.Array[String] = null,
-    totalItemCount: Int | Double = null,
-    unreadItemCount: Int | Double = null
+    totalItemCount: js.UndefOr[Double] = js.undefined,
+    unreadItemCount: js.UndefOr[Double] = js.undefined
   ): MailSearchFolder = {
     val __obj = js.Dynamic.literal()
-    if (childFolderCount != null) __obj.updateDynamic("childFolderCount")(childFolderCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(childFolderCount)) __obj.updateDynamic("childFolderCount")(childFolderCount.get.asInstanceOf[js.Any])
     if (childFolders != null) __obj.updateDynamic("childFolders")(childFolders.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (filterQuery != null) __obj.updateDynamic("filterQuery")(filterQuery.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeNestedFolders)) __obj.updateDynamic("includeNestedFolders")(includeNestedFolders.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSupported)) __obj.updateDynamic("isSupported")(isSupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNestedFolders)) __obj.updateDynamic("includeNestedFolders")(includeNestedFolders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSupported)) __obj.updateDynamic("isSupported")(isSupported.get.asInstanceOf[js.Any])
     if (messageRules != null) __obj.updateDynamic("messageRules")(messageRules.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (multiValueExtendedProperties != null) __obj.updateDynamic("multiValueExtendedProperties")(multiValueExtendedProperties.asInstanceOf[js.Any])
     if (parentFolderId != null) __obj.updateDynamic("parentFolderId")(parentFolderId.asInstanceOf[js.Any])
     if (singleValueExtendedProperties != null) __obj.updateDynamic("singleValueExtendedProperties")(singleValueExtendedProperties.asInstanceOf[js.Any])
     if (sourceFolderIds != null) __obj.updateDynamic("sourceFolderIds")(sourceFolderIds.asInstanceOf[js.Any])
-    if (totalItemCount != null) __obj.updateDynamic("totalItemCount")(totalItemCount.asInstanceOf[js.Any])
-    if (unreadItemCount != null) __obj.updateDynamic("unreadItemCount")(unreadItemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItemCount)) __obj.updateDynamic("totalItemCount")(totalItemCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unreadItemCount)) __obj.updateDynamic("unreadItemCount")(unreadItemCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailSearchFolder]
   }
 }

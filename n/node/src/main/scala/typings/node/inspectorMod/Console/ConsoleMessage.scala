@@ -40,13 +40,13 @@ object ConsoleMessage {
     level: String,
     source: String,
     text: String,
-    column: Int | Double = null,
-    line: Int | Double = null,
+    column: js.UndefOr[Double] = js.undefined,
+    line: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): ConsoleMessage = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleMessage]
   }

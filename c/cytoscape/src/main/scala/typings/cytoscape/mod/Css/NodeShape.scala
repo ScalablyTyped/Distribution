@@ -22,10 +22,12 @@ import scala.scalajs.js.annotation._
   - typings.cytoscape.cytoscapeStrings.heptagon
   - typings.cytoscape.cytoscapeStrings.octagon
   - typings.cytoscape.cytoscapeStrings.star
+  - typings.cytoscape.cytoscapeStrings.barrel
   - typings.cytoscape.cytoscapeStrings.diamond
   - typings.cytoscape.cytoscapeStrings.vee
   - typings.cytoscape.cytoscapeStrings.rhomboid
   - typings.cytoscape.cytoscapeStrings.polygon
+  - typings.cytoscape.cytoscapeStrings.tag
   - typings.cytoscape.cytoscapeStrings.`round-rectangle`
   - typings.cytoscape.cytoscapeStrings.`round-triangle`
   - typings.cytoscape.cytoscapeStrings.`round-diamond`
@@ -34,10 +36,21 @@ import scala.scalajs.js.annotation._
   - typings.cytoscape.cytoscapeStrings.`round-heptagon`
   - typings.cytoscape.cytoscapeStrings.`round-octagon`
   - typings.cytoscape.cytoscapeStrings.`round-tag`
+  - typings.cytoscape.cytoscapeStrings.`cut-rectangle`
+  - typings.cytoscape.cytoscapeStrings.`bottom-round-rectangle`
+  - typings.cytoscape.cytoscapeStrings.`concave-hexagon`
 */
 trait NodeShape extends js.Object
 
 object NodeShape {
+  @scala.inline
+  def barrel: typings.cytoscape.cytoscapeStrings.barrel = "barrel".asInstanceOf[typings.cytoscape.cytoscapeStrings.barrel]
+  @scala.inline
+  def `bottom-round-rectangle`: typings.cytoscape.cytoscapeStrings.`bottom-round-rectangle` = "bottom-round-rectangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.`bottom-round-rectangle`]
+  @scala.inline
+  def `concave-hexagon`: typings.cytoscape.cytoscapeStrings.`concave-hexagon` = "concave-hexagon".asInstanceOf[typings.cytoscape.cytoscapeStrings.`concave-hexagon`]
+  @scala.inline
+  def `cut-rectangle`: typings.cytoscape.cytoscapeStrings.`cut-rectangle` = "cut-rectangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.`cut-rectangle`]
   @scala.inline
   def diamond: typings.cytoscape.cytoscapeStrings.diamond = "diamond".asInstanceOf[typings.cytoscape.cytoscapeStrings.diamond]
   @scala.inline
@@ -76,6 +89,8 @@ object NodeShape {
   def roundrectangle: typings.cytoscape.cytoscapeStrings.roundrectangle = "roundrectangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.roundrectangle]
   @scala.inline
   def star: typings.cytoscape.cytoscapeStrings.star = "star".asInstanceOf[typings.cytoscape.cytoscapeStrings.star]
+  @scala.inline
+  def tag: typings.cytoscape.cytoscapeStrings.tag = "tag".asInstanceOf[typings.cytoscape.cytoscapeStrings.tag]
   @scala.inline
   def triangle: typings.cytoscape.cytoscapeStrings.triangle = "triangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.triangle]
   @scala.inline

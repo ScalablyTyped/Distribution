@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 文件路径处理模块
-	* @detail 引用方法：,```JavaScript,var path = require('path');,```
-	*/
+  * @brief 文件路径处理模块
+  * @detail 引用方法：,```JavaScript,var path = require('path');,```
+  */
 @JSImport("path", JSImport.Namespace)
 @js.native
 object pathMod extends js.Object {

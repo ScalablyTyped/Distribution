@@ -35,13 +35,13 @@ object Policy {
     auditConfigs: js.Array[AuditConfig] = null,
     bindings: js.Array[Binding] = null,
     etag: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): Policy = {
     val __obj = js.Dynamic.literal()
     if (auditConfigs != null) __obj.updateDynamic("auditConfigs")(auditConfigs.asInstanceOf[js.Any])
     if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policy]
   }
 }

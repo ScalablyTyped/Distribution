@@ -1,13 +1,13 @@
 package typings.amapJsApiHeatmap.AMap.Heatmap
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.amapJsApiHeatmap.AnonDrawGridLine
+import typings.amapJsApiHeatmap.anon.DrawGridLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var `3d`: js.UndefOr[AnonDrawGridLine] = js.undefined
+  var `3d`: js.UndefOr[DrawGridLine] = js.undefined
   var blur: js.UndefOr[Double] = js.undefined
   /**
     * 热力图的渐变区间
@@ -37,29 +37,29 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    `3d`: AnonDrawGridLine = null,
-    blur: Int | Double = null,
+    `3d`: DrawGridLine = null,
+    blur: js.UndefOr[Double] = js.undefined,
     gradient: StringDictionary[String] = null,
     opacity: js.Tuple2[Double, Double] = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     radiusUnit: String = null,
     rejectMapMask: js.UndefOr[Boolean] = js.undefined,
     renderOnZooming: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null,
+    zIndex: js.UndefOr[Double] = js.undefined,
     zooms: js.Tuple2[Double, Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (`3d` != null) __obj.updateDynamic("3d")(`3d`.asInstanceOf[js.Any])
-    if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
+    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur.get.asInstanceOf[js.Any])
     if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectMapMask)) __obj.updateDynamic("rejectMapMask")(rejectMapMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderOnZooming)) __obj.updateDynamic("renderOnZooming")(renderOnZooming.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectMapMask)) __obj.updateDynamic("rejectMapMask")(rejectMapMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderOnZooming)) __obj.updateDynamic("renderOnZooming")(renderOnZooming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

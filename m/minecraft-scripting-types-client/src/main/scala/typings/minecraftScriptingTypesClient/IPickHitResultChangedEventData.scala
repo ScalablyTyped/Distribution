@@ -23,8 +23,7 @@ trait IPickHitResultChangedEventData extends js.Object {
 object IPickHitResultChangedEventData {
   @scala.inline
   def apply(entity: IEntity, position: VectorXYZ = null): IPickHitResultChangedEventData = {
-    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPickHitResultChangedEventData]
   }
 }

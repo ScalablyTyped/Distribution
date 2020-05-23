@@ -14,9 +14,9 @@ trait GpuDeviceMemoryInfo extends js.Object {
 
 object GpuDeviceMemoryInfo {
   @scala.inline
-  def apply(SizeInMiB: Int | scala.Double = null): GpuDeviceMemoryInfo = {
+  def apply(SizeInMiB: js.UndefOr[GpuDeviceMemorySize] = js.undefined): GpuDeviceMemoryInfo = {
     val __obj = js.Dynamic.literal()
-    if (SizeInMiB != null) __obj.updateDynamic("SizeInMiB")(SizeInMiB.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeInMiB)) __obj.updateDynamic("SizeInMiB")(SizeInMiB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GpuDeviceMemoryInfo]
   }
 }

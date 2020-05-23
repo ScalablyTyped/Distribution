@@ -2,7 +2,7 @@ package typings.plottable
 
 import typings.plottable.componentMod.Component
 import typings.plottable.interfacesMod.Point
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ object transformAwareTranslatorMod extends js.Object {
     /**
       * Is the event's target part of the given component's DOM tree?
       */
-    def isEventInside(component: Component, e: Event_): Boolean = js.native
+    def isEventInside(component: Component, e: Event): Boolean = js.native
   }
   
 }

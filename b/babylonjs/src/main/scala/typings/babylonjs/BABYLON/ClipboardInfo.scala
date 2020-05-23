@@ -5,43 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ClipboardInfo")
-@js.native
-class ClipboardInfo protected () extends js.Object {
-  /**
-    *Creates an instance of ClipboardInfo.
-    * @param type Defines the type of event (BABYLON.ClipboardEventTypes)
-    * @param event Defines the related dom event
-    */
-  def this(
-    /**
-    * Defines the type of event (BABYLON.ClipboardEventTypes)
-    */
-  `type`: Double,
-    /**
-    * Defines the related dom event
-    */
-  event: ClipboardEvent
-  ) = this()
+trait ClipboardInfo extends js.Object {
   /**
     * Defines the related dom event
     */
-  var event: ClipboardEvent = js.native
+  var event: ClipboardEvent
   /**
     * Defines the type of event (BABYLON.ClipboardEventTypes)
     */
-  var `type`: Double = js.native
+  var `type`: Double
 }
 
-/* static members */
-@JSGlobal("BABYLON.ClipboardInfo")
-@js.native
-object ClipboardInfo extends js.Object {
-  /**
-    *  Get the clipboard event's type from the keycode.
-    * @param keyCode Defines the keyCode for the current keyboard event.
-    * @return {number}
-    */
-  def GetTypeFromCharacter(keyCode: Double): Double = js.native
+object ClipboardInfo {
+  @scala.inline
+  def apply(event: ClipboardEvent, `type`: Double): ClipboardInfo = {
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClipboardInfo]
+  }
 }
 

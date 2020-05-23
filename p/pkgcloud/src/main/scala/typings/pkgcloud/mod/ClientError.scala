@@ -28,7 +28,7 @@ object ClientError {
     provider: Providers = null,
     result: js.Any = null,
     stack: String = null,
-    statusCode: Int | Double = null
+    statusCode: js.UndefOr[Double] = js.undefined
   ): ClientError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (failCode != null) __obj.updateDynamic("failCode")(failCode.asInstanceOf[js.Any])
@@ -38,7 +38,7 @@ object ClientError {
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientError]
   }
 }

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.TabStrip")
 @js.native
-class TabStrip protected () extends js.Object {
+trait TabStrip extends js.Object {
   var BackColor: Double = js.native
   val ClientHeight: Double = js.native
   val ClientLeft: Double = js.native

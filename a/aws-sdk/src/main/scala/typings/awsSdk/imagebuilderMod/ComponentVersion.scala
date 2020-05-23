@@ -31,6 +31,10 @@ trait ComponentVersion extends js.Object {
     */
   var platform: js.UndefOr[Platform] = js.native
   /**
+    *  The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the parent image OS version during image recipe creation. 
+    */
+  var supportedOsVersions: js.UndefOr[OsVersionList] = js.native
+  /**
     * The type of the component denotes whether the component is used to build the image or only to test it.
     */
   var `type`: js.UndefOr[ComponentType] = js.native
@@ -49,6 +53,7 @@ object ComponentVersion {
     name: ResourceName = null,
     owner: NonEmptyString = null,
     platform: Platform = null,
+    supportedOsVersions: OsVersionList = null,
     `type`: ComponentType = null,
     version: VersionNumber = null
   ): ComponentVersion = {
@@ -59,6 +64,7 @@ object ComponentVersion {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (supportedOsVersions != null) __obj.updateDynamic("supportedOsVersions")(supportedOsVersions.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentVersion]

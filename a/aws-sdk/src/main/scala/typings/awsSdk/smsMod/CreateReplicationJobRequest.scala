@@ -54,23 +54,23 @@ object CreateReplicationJobRequest {
     seedReplicationTime: Timestamp,
     serverId: ServerId,
     description: Description = null,
-    encrypted: js.UndefOr[Boolean] = js.undefined,
-    frequency: Int | Double = null,
+    encrypted: js.UndefOr[Encrypted] = js.undefined,
+    frequency: js.UndefOr[Frequency] = js.undefined,
     kmsKeyId: KmsKeyId = null,
     licenseType: LicenseType = null,
-    numberOfRecentAmisToKeep: Int | Double = null,
+    numberOfRecentAmisToKeep: js.UndefOr[NumberOfRecentAmisToKeep] = js.undefined,
     roleName: RoleName = null,
-    runOnce: js.UndefOr[Boolean] = js.undefined
+    runOnce: js.UndefOr[RunOnce] = js.undefined
   ): CreateReplicationJobRequest = {
     val __obj = js.Dynamic.literal(seedReplicationTime = seedReplicationTime.asInstanceOf[js.Any], serverId = serverId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     if (licenseType != null) __obj.updateDynamic("licenseType")(licenseType.asInstanceOf[js.Any])
-    if (numberOfRecentAmisToKeep != null) __obj.updateDynamic("numberOfRecentAmisToKeep")(numberOfRecentAmisToKeep.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfRecentAmisToKeep)) __obj.updateDynamic("numberOfRecentAmisToKeep")(numberOfRecentAmisToKeep.get.asInstanceOf[js.Any])
     if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])
-    if (!js.isUndefined(runOnce)) __obj.updateDynamic("runOnce")(runOnce.asInstanceOf[js.Any])
+    if (!js.isUndefined(runOnce)) __obj.updateDynamic("runOnce")(runOnce.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReplicationJobRequest]
   }
 }

@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.PROJECTION_PERSPECTIVE
-  * @type {number}
-  * @description A perspective camera projection where the frustum shape is essentially pyramidal.
+  * A perspective camera projection where the frustum shape is essentially pyramidal.
   */
 @JSImport("playcanvas", "PROJECTION_PERSPECTIVE")
 @js.native

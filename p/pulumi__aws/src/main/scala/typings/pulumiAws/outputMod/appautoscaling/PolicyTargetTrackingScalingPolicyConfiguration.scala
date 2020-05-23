@@ -21,15 +21,15 @@ object PolicyTargetTrackingScalingPolicyConfiguration {
     customizedMetricSpecification: PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification = null,
     disableScaleIn: js.UndefOr[Boolean] = js.undefined,
     predefinedMetricSpecification: PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification = null,
-    scaleInCooldown: Int | Double = null,
-    scaleOutCooldown: Int | Double = null
+    scaleInCooldown: js.UndefOr[Double] = js.undefined,
+    scaleOutCooldown: js.UndefOr[Double] = js.undefined
   ): PolicyTargetTrackingScalingPolicyConfiguration = {
     val __obj = js.Dynamic.literal(targetValue = targetValue.asInstanceOf[js.Any])
     if (customizedMetricSpecification != null) __obj.updateDynamic("customizedMetricSpecification")(customizedMetricSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScaleIn)) __obj.updateDynamic("disableScaleIn")(disableScaleIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScaleIn)) __obj.updateDynamic("disableScaleIn")(disableScaleIn.get.asInstanceOf[js.Any])
     if (predefinedMetricSpecification != null) __obj.updateDynamic("predefinedMetricSpecification")(predefinedMetricSpecification.asInstanceOf[js.Any])
-    if (scaleInCooldown != null) __obj.updateDynamic("scaleInCooldown")(scaleInCooldown.asInstanceOf[js.Any])
-    if (scaleOutCooldown != null) __obj.updateDynamic("scaleOutCooldown")(scaleOutCooldown.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleInCooldown)) __obj.updateDynamic("scaleInCooldown")(scaleInCooldown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleOutCooldown)) __obj.updateDynamic("scaleOutCooldown")(scaleOutCooldown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyTargetTrackingScalingPolicyConfiguration]
   }
 }

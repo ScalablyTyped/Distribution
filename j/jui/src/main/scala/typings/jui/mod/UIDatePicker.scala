@@ -1,7 +1,6 @@
 package typings.jui.mod
 
-import typings.jui.AnonDate
-import typings.std.Date
+import typings.jui.anon.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,20 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIDatePicker extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: AnonDate): this.type = js.native
+  def apply(selector: js.Any, options: Date): this.type = js.native
   /**
     * Selects a date corresponding to the time added to the currently selected date
     *
     * @param time Timestamp or Date
     */
   def addTime(time: Double): Unit = js.native
-  def addTime(time: Date): Unit = js.native
+  def addTime(time: typings.std.Date): Unit = js.native
   /**
     * Gets the value of the date currently selected
     *
     * @return Date object
     */
-  def getDate(): Date = js.native
+  def getDate(): typings.std.Date = js.native
   /**
     * Gets a date string that fits the format entered
     *

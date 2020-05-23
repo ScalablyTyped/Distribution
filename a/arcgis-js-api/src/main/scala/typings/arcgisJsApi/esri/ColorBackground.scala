@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,11 @@ trait ColorBackground extends JSONSupport {
   var color: Color_
 }
 
-@JSGlobal("__esri.ColorBackground")
-@js.native
-object ColorBackground extends TopLevel[ColorBackgroundConstructor]
+object ColorBackground {
+  @scala.inline
+  def apply(color: Color_, toJSON: () => js.Any): ColorBackground = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.asInstanceOf[ColorBackground]
+  }
+}
 

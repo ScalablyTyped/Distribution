@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,14 +28,6 @@ object SCALE_MODES extends js.Object {
   
   @js.native
   sealed trait NEAREST extends SCALE_MODES
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SCALE_MODES with Double] = js.native
-  /* 0 */ @js.native
-  object LINEAR extends TopLevel[LINEAR with Double]
-  
-  /* 1 */ @js.native
-  object NEAREST extends TopLevel[NEAREST with Double]
   
 }
 

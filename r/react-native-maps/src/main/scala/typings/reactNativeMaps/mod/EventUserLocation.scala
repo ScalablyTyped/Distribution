@@ -2,7 +2,7 @@ package typings.reactNativeMaps.mod
 
 import typings.react.mod.BaseSyntheticEvent
 import typings.reactNative.mod.NodeHandle
-import typings.reactNativeMaps.AnonCoordinateAnonAccuracy
+import typings.reactNativeMaps.anon.CoordinateAccuracy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait EventUserLocation
   extends BaseSyntheticEvent[js.Object, NodeHandle, NodeHandle] {
   @JSName("nativeEvent")
-  var nativeEvent_EventUserLocation: AnonCoordinateAnonAccuracy
+  var nativeEvent_EventUserLocation: CoordinateAccuracy
 }
 
 object EventUserLocation {
@@ -24,7 +24,7 @@ object EventUserLocation {
     isDefaultPrevented: () => Boolean,
     isPropagationStopped: () => Boolean,
     isTrusted: Boolean,
-    nativeEvent: AnonCoordinateAnonAccuracy,
+    nativeEvent: CoordinateAccuracy,
     persist: () => Unit,
     preventDefault: () => Unit,
     stopPropagation: () => Unit,

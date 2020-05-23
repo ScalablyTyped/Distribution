@@ -27,7 +27,7 @@ trait ClassNamesOptions extends /* className */ StringDictionary[String] {
 object ClassNamesOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* className */ StringDictionary[String] = null,
+    StringDictionary: /* name */ StringDictionary[String] = null,
     contentEl: String = null,
     contentWrapper: String = null,
     dragging: String = null,

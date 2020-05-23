@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__platform-browser-dynamic
 
-Typings are for version 9.1.2
+Typings are for version 9.1.9
 
 ## Library description:
 Angular - library for using Angular in a web browser with JIT compilation

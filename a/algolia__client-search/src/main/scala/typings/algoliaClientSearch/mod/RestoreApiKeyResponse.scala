@@ -8,7 +8,7 @@ trait RestoreApiKeyResponse extends js.Object {
   /**
     * Restoration date of the API key.
     */
-  val createdAt: String
+  var createdAt: String
 }
 
 object RestoreApiKeyResponse {

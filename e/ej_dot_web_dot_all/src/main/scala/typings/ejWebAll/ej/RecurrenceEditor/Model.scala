@@ -68,21 +68,21 @@ object Model {
     locale: String = null,
     maxDate: js.Any = null,
     minDate: js.Any = null,
-    selectedRecurrenceType: Int | Double = null,
+    selectedRecurrenceType: js.UndefOr[Double] = js.undefined,
     startDate: js.Any = null
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSpinners)) __obj.updateDynamic("enableSpinners")(enableSpinners.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSpinners)) __obj.updateDynamic("enableSpinners")(enableSpinners.get.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     if (frequencies != null) __obj.updateDynamic("frequencies")(frequencies.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (selectedRecurrenceType != null) __obj.updateDynamic("selectedRecurrenceType")(selectedRecurrenceType.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedRecurrenceType)) __obj.updateDynamic("selectedRecurrenceType")(selectedRecurrenceType.get.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

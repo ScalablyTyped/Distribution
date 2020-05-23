@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Rectangle")
 @js.native
-class Rectangle protected () extends js.Object {
+trait Rectangle extends js.Object {
   @JSName("Access.Rectangle_typekey")
   var AccessDotRectangle_typekey: Rectangle = js.native
   val Application: typings.activexAccess.Access.Application = js.native

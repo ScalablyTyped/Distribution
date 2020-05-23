@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** QueryNoticesResult. */
 trait QueryNoticesResult
-  extends /** QueryNoticesResult accepts additional properties. */
+  extends /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   /** The internal status code returned by the ingestion subsystem indicating the overall result of ingesting the source document. */
   var code: js.UndefOr[Double] = js.undefined
@@ -34,9 +34,8 @@ trait QueryNoticesResult
 object QueryNoticesResult {
   @scala.inline
   def apply(
-    StringDictionary: /** QueryNoticesResult accepts additional properties. */
-  /* propName */ StringDictionary[js.Any] = null,
-    code: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    code: js.UndefOr[Double] = js.undefined,
     collection_id: String = null,
     file_type: String = null,
     filename: String = null,
@@ -49,7 +48,7 @@ object QueryNoticesResult {
   ): QueryNoticesResult = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
     if (file_type != null) __obj.updateDynamic("file_type")(file_type.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])

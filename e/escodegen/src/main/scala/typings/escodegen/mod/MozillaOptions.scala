@@ -27,9 +27,9 @@ object MozillaOptions {
     starlessGenerator: js.UndefOr[Boolean] = js.undefined
   ): MozillaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comprehensionExpressionStartsWithAssignment)) __obj.updateDynamic("comprehensionExpressionStartsWithAssignment")(comprehensionExpressionStartsWithAssignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(parenthesizedComprehensionBlock)) __obj.updateDynamic("parenthesizedComprehensionBlock")(parenthesizedComprehensionBlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(starlessGenerator)) __obj.updateDynamic("starlessGenerator")(starlessGenerator.asInstanceOf[js.Any])
+    if (!js.isUndefined(comprehensionExpressionStartsWithAssignment)) __obj.updateDynamic("comprehensionExpressionStartsWithAssignment")(comprehensionExpressionStartsWithAssignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parenthesizedComprehensionBlock)) __obj.updateDynamic("parenthesizedComprehensionBlock")(parenthesizedComprehensionBlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(starlessGenerator)) __obj.updateDynamic("starlessGenerator")(starlessGenerator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MozillaOptions]
   }
 }

@@ -14,9 +14,9 @@ trait AddCommunicationToCaseResponse extends js.Object {
 
 object AddCommunicationToCaseResponse {
   @scala.inline
-  def apply(result: js.UndefOr[scala.Boolean] = js.undefined): AddCommunicationToCaseResponse = {
+  def apply(result: js.UndefOr[Result] = js.undefined): AddCommunicationToCaseResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(result)) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (!js.isUndefined(result)) __obj.updateDynamic("result")(result.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCommunicationToCaseResponse]
   }
 }

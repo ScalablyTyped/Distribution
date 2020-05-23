@@ -33,8 +33,8 @@ object ZoomViewModelProperties {
     view: MapViewProperties | SceneViewProperties = null
   ): ZoomViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canZoomIn)) __obj.updateDynamic("canZoomIn")(canZoomIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(canZoomOut)) __obj.updateDynamic("canZoomOut")(canZoomOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(canZoomIn)) __obj.updateDynamic("canZoomIn")(canZoomIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canZoomOut)) __obj.updateDynamic("canZoomOut")(canZoomOut.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomViewModelProperties]
   }

@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonErrMsg
+import typings.weixinApp.anon.ErrMsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait NavigateToMiniProgramOptions
   var path: js.UndefOr[String] = js.undefined
    // 要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版） ，仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是体验版或正式版，则打开的小程序必定是正式版。默认值 release
   @JSName("success")
-  var success_NavigateToMiniProgramOptions: js.UndefOr[js.Function1[/* res */ AnonErrMsg, Unit]] = js.undefined
+  var success_NavigateToMiniProgramOptions: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
 }
 
 object NavigateToMiniProgramOptions {
@@ -28,7 +28,7 @@ object NavigateToMiniProgramOptions {
     extraData: js.Any = null,
     fail: js.Any => Unit = null,
     path: String = null,
-    success: /* res */ AnonErrMsg => Unit = null
+    success: /* res */ ErrMsg => Unit = null
   ): NavigateToMiniProgramOptions = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

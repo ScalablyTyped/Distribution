@@ -4,11 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.drawing.Group")
 @js.native
-class Group ()
+trait Group
   extends typings.kendoUi.kendo.drawing.Element {
-  def this(options: GroupOptions) = this()
   var children: js.Any = js.native
   @JSName("options")
   var options_Group: GroupOptions = js.native

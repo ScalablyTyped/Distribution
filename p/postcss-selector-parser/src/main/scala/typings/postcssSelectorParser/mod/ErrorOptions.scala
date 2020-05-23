@@ -13,9 +13,9 @@ trait ErrorOptions extends js.Object {
 
 object ErrorOptions {
   @scala.inline
-  def apply(index: Int | Double = null, plugin: String = null, word: String = null): ErrorOptions = {
+  def apply(index: js.UndefOr[Double] = js.undefined, plugin: String = null, word: String = null): ErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
     if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorOptions]

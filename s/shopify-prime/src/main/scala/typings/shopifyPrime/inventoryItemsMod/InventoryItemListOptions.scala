@@ -14,10 +14,10 @@ trait InventoryItemListOptions extends BasicListOptions {
 
 object InventoryItemListOptions {
   @scala.inline
-  def apply(ids: String, limit: Int | Double = null, page: Int | Double = null): InventoryItemListOptions = {
+  def apply(ids: String, limit: js.UndefOr[Double] = js.undefined, page: js.UndefOr[Double] = js.undefined): InventoryItemListOptions = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryItemListOptions]
   }
 }

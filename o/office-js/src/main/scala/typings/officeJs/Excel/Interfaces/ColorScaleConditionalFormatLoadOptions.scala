@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents an IconSet criteria for conditional formatting.
+  * Represents ColorScale criteria for conditional formatting.
   *
   * [Api set: ExcelApi 1.6]
   */
@@ -40,9 +40,9 @@ object ColorScaleConditionalFormatLoadOptions {
     threeColorScale: js.UndefOr[Boolean] = js.undefined
   ): ColorScaleConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (!js.isUndefined(threeColorScale)) __obj.updateDynamic("threeColorScale")(threeColorScale.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threeColorScale)) __obj.updateDynamic("threeColorScale")(threeColorScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorScaleConditionalFormatLoadOptions]
   }
 }

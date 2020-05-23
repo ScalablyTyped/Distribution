@@ -22,15 +22,8 @@ import scala.scalajs.js.annotation._
   * @property DEFAULT_STYLE {H.map.SpatialStyle} - This static member defines the default style for spatial objects on the map. It's value is
   * { strokeColor: '#05A', fillColor: 'rgba(0, 85, 170, 0.4)', lineWidth: 1, lineCap: 'round', lineJoin: 'miter', miterLimit: 10, lineDash: [], lineDashOffset: 0 }
   */
-@JSGlobal("H.map.SpatialStyle")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {(H.map.SpatialStyle | H.map.SpatialStyle.Options)=} - The optional style attributes
-  */
-class SpatialStyle_ () extends js.Object {
-  def this(opt_options: SpatialStyle) = this()
-  def this(opt_options: Options) = this()
+trait SpatialStyle_ extends js.Object {
   var fillColor: String = js.native
   var lineCap: LineCap = js.native
   var lineDash: js.Array[Double] = js.native

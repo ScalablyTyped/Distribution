@@ -6,39 +6,39 @@ import scala.scalajs.js.annotation._
 
 trait PopupService extends js.Object {
   /**
-  			 * Close an existing popup in the service with the given name. Does nothing if popup does not exist yet.
-  			 * @param name the name of the popup you're trying to close
-  			 */
+    * Close an existing popup in the service with the given name. Does nothing if popup does not exist yet.
+    * @param name the name of the popup you're trying to close
+    */
   def closePopup(name: String): Unit
   /**
-  			 * Create a new popup element
-  			 * @param props The popup properties object, see Popup interface for more
-  			 */
+    * Create a new popup element
+    * @param props The popup properties object, see Popup interface for more
+    */
   def createPopup(props: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup): Unit
   /**
-  			 * Remove the referenced popup from the popupService, unregister the service
-  			 * @param name The name of the popup to remove
-  			 */
+    * Remove the referenced popup from the popupService, unregister the service
+    * @param name The name of the popup to remove
+    */
   def deletePopup(name: String): Unit
   /**
-  			 * Gets the currently set popup Id
-  			 */
+    * Gets the currently set popup Id
+    */
   def getPopupsId(): String
   /**
-  			 * Open an existing popup in the service with the given name. Does nothing if popup does not exist yet.
-  			 * @param name the name of the popup you're trying to open
-  			 */
+    * Open an existing popup in the service with the given name. Does nothing if popup does not exist yet.
+    * @param name the name of the popup you're trying to open
+    */
   def openPopup(name: String): Unit
   /**
-  			 * Sets the ID (on the DOM and in the system) for the root popup element.
-  			 * @param id The string to set as the id
-  			 */
+    * Sets the ID (on the DOM and in the system) for the root popup element.
+    * @param id The string to set as the id
+    */
   def setPopupsId(id: String): Unit
   /**
-  			 * Update an existing popup in the service with the given name, patching new content to the same popup element. Does nothing if popup does not exist yet.
-  			 * @param name the name of the popup you're trying to update
-  			 * @param newProps the updated properties to give to the popup.
-  			 */
+    * Update an existing popup in the service with the given name, patching new content to the same popup element. Does nothing if popup does not exist yet.
+    * @param name the name of the popup you're trying to update
+    * @param newProps the updated properties to give to the popup.
+    */
   def updatePopup(
     name: String,
     newProps: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup

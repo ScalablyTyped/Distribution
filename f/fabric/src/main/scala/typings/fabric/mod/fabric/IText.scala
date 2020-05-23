@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class IText protected ()
   extends typings.fabric.fabricImplMod.IText {
   /**
-  	 * Constructor
-  	 * @param text Text string
-  	 * @param [options] Options object
-  	 */
+    * Constructor
+    * @param text Text string
+    * @param [options] Options object
+    */
   def this(text: String) = this()
   def this(text: String, options: ITextOptions) = this()
 }
@@ -23,12 +23,12 @@ class IText protected ()
 @js.native
 object IText extends js.Object {
   /**
-  	 * Returns fabric.IText instance from an object representation
-  	 * @static
-  	 * @memberOf fabric.IText
-  	 * @param {Object} object Object to create an instance from
-  	 * @param {function} [callback] invoked with new instance as argument
-  	 */
+    * Returns fabric.IText instance from an object representation
+    * @static
+    * @memberOf fabric.IText
+    * @param {Object} object Object to create an instance from
+    * @param {function} [callback] invoked with new instance as argument
+    */
   def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.IText = js.native
   def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.IText = js.native
 }

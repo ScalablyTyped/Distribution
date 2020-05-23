@@ -1,13 +1,13 @@
 package typings.tinySliderReact.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TinySliderProps extends js.Object {
   var onClick: js.UndefOr[
-    js.Function3[/* slideClicked */ Double, /* info */ String, /* event */ Event_, Unit]
+    js.Function3[/* slideClicked */ Double, /* info */ String, /* event */ Event, Unit]
   ] = js.undefined
   var onIndexChanged: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
   var onTouchEnd: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
@@ -22,7 +22,7 @@ trait TinySliderProps extends js.Object {
 object TinySliderProps {
   @scala.inline
   def apply(
-    onClick: (/* slideClicked */ Double, /* info */ String, /* event */ Event_) => Unit = null,
+    onClick: (/* slideClicked */ Double, /* info */ String, /* event */ Event) => Unit = null,
     onIndexChanged: /* info */ TinySliderInfo => Unit = null,
     onTouchEnd: /* info */ TinySliderInfo => Unit = null,
     onTouchMove: /* info */ TinySliderInfo => Unit = null,
@@ -30,7 +30,7 @@ object TinySliderProps {
     onTransitionEnd: /* info */ TinySliderInfo => Unit = null,
     onTransitionStart: /* info */ TinySliderInfo => Unit = null,
     settings: TinySliderSettings = null,
-    startIndex: Int | Double = null
+    startIndex: js.UndefOr[Double] = js.undefined
   ): TinySliderProps = {
     val __obj = js.Dynamic.literal()
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction3(onClick))
@@ -41,7 +41,7 @@ object TinySliderProps {
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
     if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction1(onTransitionStart))
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TinySliderProps]
   }
 }

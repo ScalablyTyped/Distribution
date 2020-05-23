@@ -16,13 +16,13 @@ object UnitDefinition {
   def apply(
     aliases: js.Array[String] = null,
     definition: String | Unit = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     prefixes: String = null
   ): UnitDefinition = {
     val __obj = js.Dynamic.literal()
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitDefinition]
   }

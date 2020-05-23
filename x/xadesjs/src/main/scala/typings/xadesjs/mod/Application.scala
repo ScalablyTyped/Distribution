@@ -1,6 +1,6 @@
 package typings.xadesjs.mod
 
-import typings.std.Crypto_
+import typings.std.Crypto
 import typings.xmldsigjs.applicationMod.CryptoEx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,6 +26,6 @@ object Application extends js.Object {
     * @param  {Crypto} crypto
     * @returns void
     */
-  def setEngine(name: String, crypto: Crypto_): Unit = js.native
+  def setEngine(name: String, crypto: Crypto): Unit = js.native
 }
 

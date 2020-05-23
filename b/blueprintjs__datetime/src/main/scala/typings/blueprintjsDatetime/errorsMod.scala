@@ -1,6 +1,5 @@
 package typings.blueprintjsDatetime
 
-import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.`LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ object errorsMod extends js.Object {
   val DATERANGEPICKER_DEFAULT_VALUE_INVALID: String = js.native
   val DATERANGEPICKER_INITIAL_MONTH_INVALID: String = js.native
   val DATERANGEPICKER_MAX_DATE_INVALID: String = js.native
-  val DATERANGEPICKER_PREFERRED_BOUNDARY_TO_MODIFY_INVALID: `LessthansignDateRangePickerGreaterthansign preferredBoundaryToModify must be a valid Boundary if definedDot` = js.native
+  val DATERANGEPICKER_PREFERRED_BOUNDARY_TO_MODIFY_INVALID: /* "<DateRangePicker> preferredBoundaryToModify must be a valid Boundary if defined." */ String = js.native
   val DATERANGEPICKER_VALUE_INVALID: String = js.native
 }
 

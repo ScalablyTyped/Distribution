@@ -23,14 +23,14 @@ object AutosizeInputProps {
   def apply(
     $size: mini | default_ | compact | large_ = null,
     defaultValue: String = null,
-    inputRef: Ref[_] = null,
+    inputRef: js.UndefOr[Null | Ref[_]] = js.undefined,
     overrides: AutosizeInputOverrides = null,
     value: String = null
   ): AutosizeInputProps = {
     val __obj = js.Dynamic.literal()
     if ($size != null) __obj.updateDynamic("$size")($size.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputRef)) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutosizeInputProps]

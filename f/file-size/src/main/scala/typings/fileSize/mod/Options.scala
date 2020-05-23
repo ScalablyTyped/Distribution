@@ -11,9 +11,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(fixed: Int | Double = null, spacer: String = null): Options = {
+  def apply(fixed: js.UndefOr[Double] = js.undefined, spacer: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
     if (spacer != null) __obj.updateDynamic("spacer")(spacer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -57,9 +57,9 @@ object AudioSelector {
     DefaultSelection: AudioDefaultSelection = null,
     ExternalAudioFileInput: stringPatternS3MM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEEHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3U = null,
     LanguageCode: LanguageCode = null,
-    Offset: Int | Double = null,
+    Offset: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined,
     Pids: listOfIntegerMin1Max2147483647 = null,
-    ProgramSelection: Int | Double = null,
+    ProgramSelection: js.UndefOr[integerMin0Max8] = js.undefined,
     RemixSettings: RemixSettings = null,
     SelectorType: AudioSelectorType = null,
     Tracks: listOfIntegerMin1Max2147483647 = null
@@ -69,9 +69,9 @@ object AudioSelector {
     if (DefaultSelection != null) __obj.updateDynamic("DefaultSelection")(DefaultSelection.asInstanceOf[js.Any])
     if (ExternalAudioFileInput != null) __obj.updateDynamic("ExternalAudioFileInput")(ExternalAudioFileInput.asInstanceOf[js.Any])
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (Offset != null) __obj.updateDynamic("Offset")(Offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(Offset)) __obj.updateDynamic("Offset")(Offset.get.asInstanceOf[js.Any])
     if (Pids != null) __obj.updateDynamic("Pids")(Pids.asInstanceOf[js.Any])
-    if (ProgramSelection != null) __obj.updateDynamic("ProgramSelection")(ProgramSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgramSelection)) __obj.updateDynamic("ProgramSelection")(ProgramSelection.get.asInstanceOf[js.Any])
     if (RemixSettings != null) __obj.updateDynamic("RemixSettings")(RemixSettings.asInstanceOf[js.Any])
     if (SelectorType != null) __obj.updateDynamic("SelectorType")(SelectorType.asInstanceOf[js.Any])
     if (Tracks != null) __obj.updateDynamic("Tracks")(Tracks.asInstanceOf[js.Any])

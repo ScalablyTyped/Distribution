@@ -1,7 +1,7 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonAddress
-import typings.aliApp.AnonNumber
+import typings.aliApp.anon.Address
+import typings.aliApp.anon.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,49 +11,49 @@ trait LocationData extends js.Object {
   /** 精确度，单位m */
   var accuracy: String
   /**
-  		 * 城市(type>0生效)
-  		 */
+    * 城市(type>0生效)
+    */
   var city: js.UndefOr[String] = js.undefined
   /**
-  		 * 城市级别的地区代码(type>0生效)
-  		 */
+    * 城市级别的地区代码(type>0生效)
+    */
   var cityAdcode: js.UndefOr[String] = js.undefined
   /**
-  		 * 国家(type>0生效)
-  		 */
+    * 国家(type>0生效)
+    */
   var country: js.UndefOr[String] = js.undefined
   /**
-  		 * 国家编号 (type>0生效)
-  		 */
+    * 国家编号 (type>0生效)
+    */
   var countryCode: js.UndefOr[String] = js.undefined
   /**
-  		 * 区县(type>0生效)
-  		 */
+    * 区县(type>0生效)
+    */
   var district: js.UndefOr[String] = js.undefined
   /**
-  		 * 区县级别的地区代码(type>0生效)
-  		 */
+    * 区县级别的地区代码(type>0生效)
+    */
   var districtAdcode: js.UndefOr[String] = js.undefined
   /**
-  		 * 水平精确度，单位m
-  		 */
+    * 水平精确度，单位m
+    */
   var horizontalAccuracy: String
   /** 纬度 */
   var latitude: String
   /** 经度 */
   var longitude: String
   /**
-  		 * 需要POI级别逆地理的才会有的字段, 定位点附近的 POI 信息，结构是：{ name, address } （type > 2生效）
-  		 */
-  var pois: js.UndefOr[js.Array[AnonAddress]] = js.undefined
+    * 需要POI级别逆地理的才会有的字段, 定位点附近的 POI 信息，结构是：{ name, address } （type > 2生效）
+    */
+  var pois: js.UndefOr[js.Array[Address]] = js.undefined
   /**
-  		 * 省份(type>0生效)
-  		 */
+    * 省份(type>0生效)
+    */
   var province: js.UndefOr[String] = js.undefined
   /**
-  		 * 需要街道级别逆地理的才会有的字段,街道门牌信息，结构是：{ street, number } (type > 1生效)
-  		 */
-  var streetNumber: js.UndefOr[AnonNumber] = js.undefined
+    * 需要街道级别逆地理的才会有的字段,街道门牌信息，结构是：{ street, number } (type > 1生效)
+    */
+  var streetNumber: js.UndefOr[Number] = js.undefined
 }
 
 object LocationData {
@@ -69,9 +69,9 @@ object LocationData {
     countryCode: String = null,
     district: String = null,
     districtAdcode: String = null,
-    pois: js.Array[AnonAddress] = null,
+    pois: js.Array[Address] = null,
     province: String = null,
-    streetNumber: AnonNumber = null
+    streetNumber: Number = null
   ): LocationData = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], horizontalAccuracy = horizontalAccuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])

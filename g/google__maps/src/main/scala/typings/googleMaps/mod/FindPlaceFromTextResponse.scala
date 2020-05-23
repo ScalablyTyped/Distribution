@@ -1,6 +1,6 @@
 package typings.googleMaps.mod
 
-import typings.googleMaps.PartialPlaceSearchResult
+import typings.googleMaps.anon.PartialPlaceSearchResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

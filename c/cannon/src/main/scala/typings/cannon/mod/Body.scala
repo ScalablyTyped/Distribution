@@ -11,6 +11,14 @@ import scala.scalajs.js.annotation._
 class Body ()
   extends typings.cannon.CANNON.Body {
   def this(options: IBodyOptions) = this()
+  /* CompleteClass */
+  override def addEventListener(`type`: String, listener: js.Function): typings.cannon.CANNON.EventTarget = js.native
+  /* CompleteClass */
+  override def dispatchEvent(event: IEvent): IEvent = js.native
+  /* CompleteClass */
+  override def hasEventListener(`type`: String, listener: js.Function): Boolean = js.native
+  /* CompleteClass */
+  override def removeEventListener(`type`: String, listener: js.Function): typings.cannon.CANNON.EventTarget = js.native
 }
 
 /* static members */

@@ -21,10 +21,10 @@ object Options {
     includeBasePath: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(directories)) __obj.updateDynamic("directories")(directories.asInstanceOf[js.Any])
+    if (!js.isUndefined(directories)) __obj.updateDynamic("directories")(directories.get.asInstanceOf[js.Any])
     if (globs != null) __obj.updateDynamic("globs")(globs.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeBasePath)) __obj.updateDynamic("includeBasePath")(includeBasePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBasePath)) __obj.updateDynamic("includeBasePath")(includeBasePath.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

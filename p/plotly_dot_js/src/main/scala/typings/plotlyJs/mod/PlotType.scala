@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   - typings.plotlyJs.plotlyJsStrings.waterfall
   - typings.plotlyJs.plotlyJsStrings.funnel
   - typings.plotlyJs.plotlyJsStrings.funnelarea
+  - typings.plotlyJs.plotlyJsStrings.scattermapbox
 */
 trait PlotType extends js.Object
 
@@ -72,6 +73,8 @@ object PlotType {
   def scattergeo: typings.plotlyJs.plotlyJsStrings.scattergeo = "scattergeo".asInstanceOf[typings.plotlyJs.plotlyJsStrings.scattergeo]
   @scala.inline
   def scattergl: typings.plotlyJs.plotlyJsStrings.scattergl = "scattergl".asInstanceOf[typings.plotlyJs.plotlyJsStrings.scattergl]
+  @scala.inline
+  def scattermapbox: typings.plotlyJs.plotlyJsStrings.scattermapbox = "scattermapbox".asInstanceOf[typings.plotlyJs.plotlyJsStrings.scattermapbox]
   @scala.inline
   def scatterpolar: typings.plotlyJs.plotlyJsStrings.scatterpolar = "scatterpolar".asInstanceOf[typings.plotlyJs.plotlyJsStrings.scatterpolar]
   @scala.inline

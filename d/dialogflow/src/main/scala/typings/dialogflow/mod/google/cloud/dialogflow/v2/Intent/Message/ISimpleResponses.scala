@@ -12,9 +12,9 @@ trait ISimpleResponses extends js.Object {
 
 object ISimpleResponses {
   @scala.inline
-  def apply(simpleResponses: js.Array[ISimpleResponse] = null): ISimpleResponses = {
+  def apply(simpleResponses: js.UndefOr[Null | js.Array[ISimpleResponse]] = js.undefined): ISimpleResponses = {
     val __obj = js.Dynamic.literal()
-    if (simpleResponses != null) __obj.updateDynamic("simpleResponses")(simpleResponses.asInstanceOf[js.Any])
+    if (!js.isUndefined(simpleResponses)) __obj.updateDynamic("simpleResponses")(simpleResponses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISimpleResponses]
   }
 }

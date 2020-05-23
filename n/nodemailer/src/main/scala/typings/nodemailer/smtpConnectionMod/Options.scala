@@ -55,21 +55,21 @@ object Options {
     auth: AuthenticationType = null,
     authMethod: String = null,
     connection: Socket = null,
-    connectionTimeout: Int | Double = null,
+    connectionTimeout: js.UndefOr[ms] = js.undefined,
     customAuth: CustomAuthenticationHandlers = null,
     debug: js.UndefOr[Boolean] = js.undefined,
-    greetingTimeout: Int | Double = null,
+    greetingTimeout: js.UndefOr[ms] = js.undefined,
     host: String = null,
     ignoreTLS: js.UndefOr[Boolean] = js.undefined,
     localAddress: String = null,
     logger: Logger | Boolean = null,
     name: String = null,
     opportunisticTLS: js.UndefOr[Boolean] = js.undefined,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     requireTLS: js.UndefOr[Boolean] = js.undefined,
     secure: js.UndefOr[Boolean] = js.undefined,
     socket: Socket = null,
-    socketTimeout: Int | Double = null,
+    socketTimeout: js.UndefOr[ms] = js.undefined,
     tls: ConnectionOptions = null,
     transactionLog: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -77,23 +77,23 @@ object Options {
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod.asInstanceOf[js.Any])
     if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
     if (customAuth != null) __obj.updateDynamic("customAuth")(customAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (greetingTimeout != null) __obj.updateDynamic("greetingTimeout")(greetingTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(greetingTimeout)) __obj.updateDynamic("greetingTimeout")(greetingTimeout.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS.get.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(opportunisticTLS)) __obj.updateDynamic("opportunisticTLS")(opportunisticTLS.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireTLS)) __obj.updateDynamic("requireTLS")(requireTLS.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(opportunisticTLS)) __obj.updateDynamic("opportunisticTLS")(opportunisticTLS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireTLS)) __obj.updateDynamic("requireTLS")(requireTLS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
-    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout.get.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
-    if (!js.isUndefined(transactionLog)) __obj.updateDynamic("transactionLog")(transactionLog.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionLog)) __obj.updateDynamic("transactionLog")(transactionLog.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

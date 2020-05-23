@@ -1,18 +1,11 @@
 package typings.amapJsApi.AMap
 
-import typings.amapJsApi.AMap.TileLayer.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.TileLayer")
 @js.native
-/**
-  * 切片图层
-  * @param options 图层选项
-  */
-class TileLayer_ () extends Layer {
-  def this(options: Options) = this()
+trait TileLayer_ extends Layer {
   /**
     * 获取当前图层所有切片号
     */

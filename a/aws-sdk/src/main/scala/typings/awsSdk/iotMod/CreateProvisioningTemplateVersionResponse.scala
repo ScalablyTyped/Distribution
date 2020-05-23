@@ -27,16 +27,16 @@ trait CreateProvisioningTemplateVersionResponse extends js.Object {
 object CreateProvisioningTemplateVersionResponse {
   @scala.inline
   def apply(
-    isDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
     templateArn: TemplateArn = null,
     templateName: TemplateName = null,
-    versionId: Int | Double = null
+    versionId: js.UndefOr[TemplateVersionId] = js.undefined
   ): CreateProvisioningTemplateVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDefaultVersion)) __obj.updateDynamic("isDefaultVersion")(isDefaultVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefaultVersion)) __obj.updateDynamic("isDefaultVersion")(isDefaultVersion.get.asInstanceOf[js.Any])
     if (templateArn != null) __obj.updateDynamic("templateArn")(templateArn.asInstanceOf[js.Any])
     if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionId)) __obj.updateDynamic("versionId")(versionId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisioningTemplateVersionResponse]
   }
 }

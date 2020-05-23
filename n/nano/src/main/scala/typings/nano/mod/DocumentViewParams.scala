@@ -81,14 +81,14 @@ object DocumentViewParams {
     endkey: js.Any = null,
     endkey_docid: String = null,
     group: js.UndefOr[Boolean] = js.undefined,
-    group_level: Int | Double = null,
+    group_level: js.UndefOr[Double] = js.undefined,
     include_docs: js.UndefOr[Boolean] = js.undefined,
     inclusive_end: js.UndefOr[Boolean] = js.undefined,
     key: js.Any = null,
     keys: js.Array[_] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     reduce: js.UndefOr[Boolean] = js.undefined,
-    skip: Int | Double = null,
+    skip: js.UndefOr[Double] = js.undefined,
     sorted: js.UndefOr[Boolean] = js.undefined,
     stable: js.UndefOr[Boolean] = js.undefined,
     stale: String = null,
@@ -100,32 +100,32 @@ object DocumentViewParams {
     update_seq: js.UndefOr[Boolean] = js.undefined
   ): DocumentViewParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(att_encoding_info)) __obj.updateDynamic("att_encoding_info")(att_encoding_info.asInstanceOf[js.Any])
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
+    if (!js.isUndefined(att_encoding_info)) __obj.updateDynamic("att_encoding_info")(att_encoding_info.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.get.asInstanceOf[js.Any])
     if (end_key != null) __obj.updateDynamic("end_key")(end_key.asInstanceOf[js.Any])
     if (end_key_doc_id != null) __obj.updateDynamic("end_key_doc_id")(end_key_doc_id.asInstanceOf[js.Any])
     if (endkey != null) __obj.updateDynamic("endkey")(endkey.asInstanceOf[js.Any])
     if (endkey_docid != null) __obj.updateDynamic("endkey_docid")(endkey_docid.asInstanceOf[js.Any])
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (group_level != null) __obj.updateDynamic("group_level")(group_level.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.asInstanceOf[js.Any])
-    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(group_level)) __obj.updateDynamic("group_level")(group_level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(reduce)) __obj.updateDynamic("reduce")(reduce.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
-    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reduce)) __obj.updateDynamic("reduce")(reduce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable.get.asInstanceOf[js.Any])
     if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
     if (start_key != null) __obj.updateDynamic("start_key")(start_key.asInstanceOf[js.Any])
     if (start_key_doc_id != null) __obj.updateDynamic("start_key_doc_id")(start_key_doc_id.asInstanceOf[js.Any])
     if (startkey != null) __obj.updateDynamic("startkey")(startkey.asInstanceOf[js.Any])
     if (startkey_docid != null) __obj.updateDynamic("startkey_docid")(startkey_docid.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
-    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentViewParams]
   }
 }

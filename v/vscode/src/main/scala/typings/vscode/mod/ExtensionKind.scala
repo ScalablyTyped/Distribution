@@ -12,14 +12,14 @@ sealed trait ExtensionKind extends js.Object
 @js.native
 object ExtensionKind extends js.Object {
   /**
-  		 * Extension runs where the UI runs.
-  		 */
+    * Extension runs where the UI runs.
+    */
   @js.native
   sealed trait UI extends ExtensionKind
   
   /**
-  		 * Extension runs where the remote extension host runs.
-  		 */
+    * Extension runs where the remote extension host runs.
+    */
   @js.native
   sealed trait Workspace extends ExtensionKind
   

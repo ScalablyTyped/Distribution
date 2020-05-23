@@ -6,18 +6,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget.QuickLink")
-@js.native
-class QuickLink () extends IQuickLink {
-  /* CompleteClass */
-  override var id: String = js.native
-  /* CompleteClass */
-  override var supportedDataFormats: IVector[String] = js.native
-  /* CompleteClass */
-  override var supportedFileTypes: IVector[String] = js.native
-  /* CompleteClass */
-  override var thumbnail: RandomAccessStreamReference = js.native
-  /* CompleteClass */
-  override var title: String = js.native
+trait QuickLink extends IQuickLink
+
+object QuickLink {
+  @scala.inline
+  def apply(
+    id: String,
+    supportedDataFormats: IVector[String],
+    supportedFileTypes: IVector[String],
+    thumbnail: RandomAccessStreamReference,
+    title: String
+  ): QuickLink = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], supportedDataFormats = supportedDataFormats.asInstanceOf[js.Any], supportedFileTypes = supportedFileTypes.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QuickLink]
+  }
 }
 

@@ -8,11 +8,11 @@ trait ChunkedBatchResponse extends js.Object {
   /**
     * The object ids created/updated/deleted by the multiple requests.
     */
-  val objectIDs: js.Array[String]
+  var objectIDs: js.Array[String]
   /**
     * The operations task ids. May be used to perform a wait task.
     */
-  val taskIDs: js.Array[Double]
+  var taskIDs: js.Array[Double]
 }
 
 object ChunkedBatchResponse {

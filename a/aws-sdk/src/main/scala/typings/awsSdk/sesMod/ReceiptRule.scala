@@ -37,16 +37,16 @@ object ReceiptRule {
   def apply(
     Name: ReceiptRuleName,
     Actions: ReceiptActionsList = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[Enabled] = js.undefined,
     Recipients: RecipientsList = null,
-    ScanEnabled: js.UndefOr[Boolean] = js.undefined,
+    ScanEnabled: js.UndefOr[Enabled] = js.undefined,
     TlsPolicy: TlsPolicy = null
   ): ReceiptRule = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     if (Actions != null) __obj.updateDynamic("Actions")(Actions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (Recipients != null) __obj.updateDynamic("Recipients")(Recipients.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScanEnabled)) __obj.updateDynamic("ScanEnabled")(ScanEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScanEnabled)) __obj.updateDynamic("ScanEnabled")(ScanEnabled.get.asInstanceOf[js.Any])
     if (TlsPolicy != null) __obj.updateDynamic("TlsPolicy")(TlsPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiptRule]
   }

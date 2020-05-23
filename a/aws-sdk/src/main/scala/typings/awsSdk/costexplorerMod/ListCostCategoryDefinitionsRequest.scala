@@ -11,16 +11,25 @@ trait ListCostCategoryDefinitionsRequest extends js.Object {
     */
   var EffectiveOn: js.UndefOr[ZonedDateTime] = js.native
   /**
-    *  The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.  You can use this information to retrieve the full Cost Category information using DescribeCostCategory.
+    *  The number of entries a paginated response contains. 
+    */
+  var MaxResults: js.UndefOr[CostCategoryMaxResults] = js.native
+  /**
+    *  The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size. 
     */
   var NextToken: js.UndefOr[NextPageToken] = js.native
 }
 
 object ListCostCategoryDefinitionsRequest {
   @scala.inline
-  def apply(EffectiveOn: ZonedDateTime = null, NextToken: NextPageToken = null): ListCostCategoryDefinitionsRequest = {
+  def apply(
+    EffectiveOn: ZonedDateTime = null,
+    MaxResults: js.UndefOr[CostCategoryMaxResults] = js.undefined,
+    NextToken: NextPageToken = null
+  ): ListCostCategoryDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
     if (EffectiveOn != null) __obj.updateDynamic("EffectiveOn")(EffectiveOn.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCostCategoryDefinitionsRequest]
   }

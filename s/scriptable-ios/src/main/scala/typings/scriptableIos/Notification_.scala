@@ -20,13 +20,8 @@ import scala.scalajs.js.annotation._
   * _Schedules and manages notifications._
   * @see https://docs.scriptable.app/notification/#-new-notification
   */
-@JSGlobal("Notification")
 @js.native
-/**
-  * _Schedules and manages notifications._
-  * @see https://docs.scriptable.app/notification/#-new-notification
-  */
-class Notification_ () extends js.Object {
+trait Notification_ extends js.Object {
   /**
     * _Actions added to the notification._
     *

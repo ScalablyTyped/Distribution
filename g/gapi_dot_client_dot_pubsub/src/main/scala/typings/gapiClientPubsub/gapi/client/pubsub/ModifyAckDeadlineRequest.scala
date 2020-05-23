@@ -21,9 +21,9 @@ trait ModifyAckDeadlineRequest extends js.Object {
 
 object ModifyAckDeadlineRequest {
   @scala.inline
-  def apply(ackDeadlineSeconds: Int | Double = null, ackIds: js.Array[String] = null): ModifyAckDeadlineRequest = {
+  def apply(ackDeadlineSeconds: js.UndefOr[Double] = js.undefined, ackIds: js.Array[String] = null): ModifyAckDeadlineRequest = {
     val __obj = js.Dynamic.literal()
-    if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.get.asInstanceOf[js.Any])
     if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyAckDeadlineRequest]
   }

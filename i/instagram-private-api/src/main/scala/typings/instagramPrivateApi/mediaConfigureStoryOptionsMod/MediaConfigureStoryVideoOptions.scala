@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 
-import typings.instagramPrivateApi.AnonLength
+import typings.instagramPrivateApi.anon.Length
 import typings.instagramPrivateApi.instagramPrivateApiStrings.NOT_PROMPTED
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`0`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
@@ -18,7 +18,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.instagramPrivateApi.mediaConfigureStoryOptionsMod.MediaConfigureStoryBaseOptions because var conflicts: geotag_enabled, media_latitude, media_longitude, posting_latitude, posting_longitude. Inlined story_media_creation_date, client_shared_at, audience, configure_mode, camera_position, allow_multi_configures, thread_ids, recipient_users, client_context, view_mode, reply_type, caption, mas_opt_in, story_sticker_ids, story_hashtags, story_locations, reel_mentions, story_polls, internal_features, story_sliders, story_questions, story_countdowns, attached_media, story_chats, story_quizs, story_cta */ trait MediaConfigureStoryVideoOptions extends MediaConfigureVideoOptions {
   var allow_multi_configures: js.UndefOr[`0` | `1`] = js.undefined
   var attached_media: js.UndefOr[js.Array[StoryAttachedMedia] | String] = js.undefined
@@ -64,13 +64,13 @@ object MediaConfigureStoryVideoOptions {
     caption: String = null,
     client_context: String = null,
     client_shared_at: String = null,
-    clips: js.Array[AnonLength] = null,
+    clips: js.Array[Length] = null,
     geotag_enabled: `1` | `0` = null,
     internal_features: polling_sticker = null,
     mas_opt_in: NOT_PROMPTED = null,
     media_latitude: String = null,
     media_longitude: String = null,
-    poster_frame_index: Int | Double = null,
+    poster_frame_index: js.UndefOr[Double] = js.undefined,
     posting_latitude: String = null,
     posting_longitude: String = null,
     recipient_users: js.Array[String] | String = null,
@@ -94,7 +94,7 @@ object MediaConfigureStoryVideoOptions {
     if (allow_multi_configures != null) __obj.updateDynamic("allow_multi_configures")(allow_multi_configures.asInstanceOf[js.Any])
     if (attached_media != null) __obj.updateDynamic("attached_media")(attached_media.asInstanceOf[js.Any])
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (!js.isUndefined(audio_muted)) __obj.updateDynamic("audio_muted")(audio_muted.asInstanceOf[js.Any])
+    if (!js.isUndefined(audio_muted)) __obj.updateDynamic("audio_muted")(audio_muted.get.asInstanceOf[js.Any])
     if (camera_position != null) __obj.updateDynamic("camera_position")(camera_position.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (client_context != null) __obj.updateDynamic("client_context")(client_context.asInstanceOf[js.Any])
@@ -105,7 +105,7 @@ object MediaConfigureStoryVideoOptions {
     if (mas_opt_in != null) __obj.updateDynamic("mas_opt_in")(mas_opt_in.asInstanceOf[js.Any])
     if (media_latitude != null) __obj.updateDynamic("media_latitude")(media_latitude.asInstanceOf[js.Any])
     if (media_longitude != null) __obj.updateDynamic("media_longitude")(media_longitude.asInstanceOf[js.Any])
-    if (poster_frame_index != null) __obj.updateDynamic("poster_frame_index")(poster_frame_index.asInstanceOf[js.Any])
+    if (!js.isUndefined(poster_frame_index)) __obj.updateDynamic("poster_frame_index")(poster_frame_index.get.asInstanceOf[js.Any])
     if (posting_latitude != null) __obj.updateDynamic("posting_latitude")(posting_latitude.asInstanceOf[js.Any])
     if (posting_longitude != null) __obj.updateDynamic("posting_longitude")(posting_longitude.asInstanceOf[js.Any])
     if (recipient_users != null) __obj.updateDynamic("recipient_users")(recipient_users.asInstanceOf[js.Any])

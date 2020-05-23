@@ -23,9 +23,9 @@ object Options {
     reqheaders: Record[String, RequestHeaderMatcher] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnmocked)) __obj.updateDynamic("allowUnmocked")(allowUnmocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnmocked)) __obj.updateDynamic("allowUnmocked")(allowUnmocked.get.asInstanceOf[js.Any])
     if (badheaders != null) __obj.updateDynamic("badheaders")(badheaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(encodedQueryParams)) __obj.updateDynamic("encodedQueryParams")(encodedQueryParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodedQueryParams)) __obj.updateDynamic("encodedQueryParams")(encodedQueryParams.get.asInstanceOf[js.Any])
     if (filteringScope != null) __obj.updateDynamic("filteringScope")(js.Any.fromFunction1(filteringScope))
     if (reqheaders != null) __obj.updateDynamic("reqheaders")(reqheaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

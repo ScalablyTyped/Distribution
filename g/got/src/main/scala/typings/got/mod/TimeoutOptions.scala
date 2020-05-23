@@ -48,22 +48,22 @@ trait TimeoutOptions extends js.Object {
 object TimeoutOptions {
   @scala.inline
   def apply(
-    connect: Int | Double = null,
-    lookup: Int | Double = null,
-    request: Int | Double = null,
-    response: Int | Double = null,
-    secureConnect: Int | Double = null,
-    send: Int | Double = null,
-    socket: Int | Double = null
+    connect: js.UndefOr[Double] = js.undefined,
+    lookup: js.UndefOr[Double] = js.undefined,
+    request: js.UndefOr[Double] = js.undefined,
+    response: js.UndefOr[Double] = js.undefined,
+    secureConnect: js.UndefOr[Double] = js.undefined,
+    send: js.UndefOr[Double] = js.undefined,
+    socket: js.UndefOr[Double] = js.undefined
   ): TimeoutOptions = {
     val __obj = js.Dynamic.literal()
-    if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
-    if (lookup != null) __obj.updateDynamic("lookup")(lookup.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (secureConnect != null) __obj.updateDynamic("secureConnect")(secureConnect.asInstanceOf[js.Any])
-    if (send != null) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])
-    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
+    if (!js.isUndefined(connect)) __obj.updateDynamic("connect")(connect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookup)) __obj.updateDynamic("lookup")(lookup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(request)) __obj.updateDynamic("request")(request.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(response)) __obj.updateDynamic("response")(response.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secureConnect)) __obj.updateDynamic("secureConnect")(secureConnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(send)) __obj.updateDynamic("send")(send.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(socket)) __obj.updateDynamic("socket")(socket.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeoutOptions]
   }
 }

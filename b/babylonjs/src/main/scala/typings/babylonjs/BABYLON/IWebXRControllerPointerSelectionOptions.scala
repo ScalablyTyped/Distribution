@@ -57,19 +57,19 @@ object IWebXRControllerPointerSelectionOptions {
     forceGazeMode: Boolean,
     xrInput: WebXRInput,
     customUtilityLayerScene: Scene = null,
-    gazeModePointerMovedFactor: Int | Double = null,
+    gazeModePointerMovedFactor: js.UndefOr[Double] = js.undefined,
     overrideButtonId: String = null,
-    renderingGroupId: Int | Double = null,
-    timeToSelect: Int | Double = null,
+    renderingGroupId: js.UndefOr[Double] = js.undefined,
+    timeToSelect: js.UndefOr[Double] = js.undefined,
     useUtilityLayer: js.UndefOr[Boolean] = js.undefined
   ): IWebXRControllerPointerSelectionOptions = {
     val __obj = js.Dynamic.literal(disablePointerUpOnTouchOut = disablePointerUpOnTouchOut.asInstanceOf[js.Any], forceGazeMode = forceGazeMode.asInstanceOf[js.Any], xrInput = xrInput.asInstanceOf[js.Any])
     if (customUtilityLayerScene != null) __obj.updateDynamic("customUtilityLayerScene")(customUtilityLayerScene.asInstanceOf[js.Any])
-    if (gazeModePointerMovedFactor != null) __obj.updateDynamic("gazeModePointerMovedFactor")(gazeModePointerMovedFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(gazeModePointerMovedFactor)) __obj.updateDynamic("gazeModePointerMovedFactor")(gazeModePointerMovedFactor.get.asInstanceOf[js.Any])
     if (overrideButtonId != null) __obj.updateDynamic("overrideButtonId")(overrideButtonId.asInstanceOf[js.Any])
-    if (renderingGroupId != null) __obj.updateDynamic("renderingGroupId")(renderingGroupId.asInstanceOf[js.Any])
-    if (timeToSelect != null) __obj.updateDynamic("timeToSelect")(timeToSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(useUtilityLayer)) __obj.updateDynamic("useUtilityLayer")(useUtilityLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderingGroupId)) __obj.updateDynamic("renderingGroupId")(renderingGroupId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToSelect)) __obj.updateDynamic("timeToSelect")(timeToSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUtilityLayer)) __obj.updateDynamic("useUtilityLayer")(useUtilityLayer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebXRControllerPointerSelectionOptions]
   }
 }

@@ -62,21 +62,21 @@ object WorkspaceOpenOptions {
   def apply(
     activateItem: js.UndefOr[Boolean] = js.undefined,
     activatePane: js.UndefOr[Boolean] = js.undefined,
-    initialColumn: Int | Double = null,
-    initialLine: Int | Double = null,
+    initialColumn: js.UndefOr[Double] = js.undefined,
+    initialLine: js.UndefOr[Double] = js.undefined,
     location: left_ | right_ | bottom_ | center = null,
     pending: js.UndefOr[Boolean] = js.undefined,
     searchAllPanes: js.UndefOr[Boolean] = js.undefined,
     split: left_ | right_ | up | down = null
   ): WorkspaceOpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activateItem)) __obj.updateDynamic("activateItem")(activateItem.asInstanceOf[js.Any])
-    if (!js.isUndefined(activatePane)) __obj.updateDynamic("activatePane")(activatePane.asInstanceOf[js.Any])
-    if (initialColumn != null) __obj.updateDynamic("initialColumn")(initialColumn.asInstanceOf[js.Any])
-    if (initialLine != null) __obj.updateDynamic("initialLine")(initialLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(activateItem)) __obj.updateDynamic("activateItem")(activateItem.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(activatePane)) __obj.updateDynamic("activatePane")(activatePane.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialColumn)) __obj.updateDynamic("initialColumn")(initialColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialLine)) __obj.updateDynamic("initialLine")(initialLine.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchAllPanes)) __obj.updateDynamic("searchAllPanes")(searchAllPanes.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchAllPanes)) __obj.updateDynamic("searchAllPanes")(searchAllPanes.get.asInstanceOf[js.Any])
     if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceOpenOptions]
   }

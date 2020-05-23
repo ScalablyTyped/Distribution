@@ -10,9 +10,9 @@ trait RTCRtpRtxParameters extends js.Object {
 
 object RTCRtpRtxParameters {
   @scala.inline
-  def apply(ssrc: Int | Double = null): RTCRtpRtxParameters = {
+  def apply(ssrc: js.UndefOr[Double] = js.undefined): RTCRtpRtxParameters = {
     val __obj = js.Dynamic.literal()
-    if (ssrc != null) __obj.updateDynamic("ssrc")(ssrc.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssrc)) __obj.updateDynamic("ssrc")(ssrc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpRtxParameters]
   }
 }

@@ -20,14 +20,16 @@ trait IValidationError extends js.Object {
 object IValidationError {
   @scala.inline
   def apply(
-    entries: js.Array[String] = null,
-    errorMessage: String = null,
-    severity: Severity | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.ValidationError.Severity * / any */ String) = null
+    entries: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    errorMessage: js.UndefOr[Null | String] = js.undefined,
+    severity: js.UndefOr[
+      Null | Severity | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.ValidationError.Severity * / any */ String)
+    ] = js.undefined
   ): IValidationError = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (!js.isUndefined(entries)) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorMessage)) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(severity)) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidationError]
   }
 }

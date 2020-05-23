@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * A client point object.
   */
-@JSGlobal("ASPxClientPoint")
-@js.native
-class ASPxClientPoint protected () extends js.Object {
-  /**
-    * Initializes a new instance of the ASPxClientPoint object. For internal use only.
-    * @param x An integer value specifying the x-coordinate of the point.
-    * @param y An integer value specifying the y-coordinate of the point.
-    */
-  def this(x: Double, y: Double) = this()
+trait ASPxClientPoint extends js.Object {
   /**
     * Gets the point's X-coordinate.
     */
-  def GetX(): Double = js.native
+  def GetX(): Double
   /**
     * Gets the point's Y-coordinate.
     */
-  def GetY(): Double = js.native
+  def GetY(): Double
+}
+
+object ASPxClientPoint {
+  @scala.inline
+  def apply(GetX: () => Double, GetY: () => Double): ASPxClientPoint = {
+    val __obj = js.Dynamic.literal(GetX = js.Any.fromFunction0(GetX), GetY = js.Any.fromFunction0(GetY))
+    __obj.asInstanceOf[ASPxClientPoint]
+  }
 }
 

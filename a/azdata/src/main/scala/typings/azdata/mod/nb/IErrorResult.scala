@@ -9,21 +9,21 @@ trait IErrorResult
   extends ICellOutput
      with Output {
   /**
-  			 * Exception name
-  			 */
+    * Exception name
+    */
   var ename: String
   /**
-  			 * Exception value
-  			 */
+    * Exception value
+    */
   var evalue: String
   /**
-  			 * Type of cell output.
-  			 */
+    * Type of cell output.
+    */
   @JSName("output_type")
   var output_type_IErrorResult: error
   /**
-  			 * Stacktrace equivalent
-  			 */
+    * Stacktrace equivalent
+    */
   var traceback: js.UndefOr[js.Array[String]] = js.undefined
 }
 

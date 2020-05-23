@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object decodeAllSync
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Decoder.decodeAllSync */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Encoder.encodeOne */ js.Any
     ]
 

@@ -18,10 +18,10 @@ trait GpuInfo extends js.Object {
 
 object GpuInfo {
   @scala.inline
-  def apply(Gpus: GpuDeviceInfoList = null, TotalGpuMemoryInMiB: Int | scala.Double = null): GpuInfo = {
+  def apply(Gpus: GpuDeviceInfoList = null, TotalGpuMemoryInMiB: js.UndefOr[totalGpuMemory] = js.undefined): GpuInfo = {
     val __obj = js.Dynamic.literal()
     if (Gpus != null) __obj.updateDynamic("Gpus")(Gpus.asInstanceOf[js.Any])
-    if (TotalGpuMemoryInMiB != null) __obj.updateDynamic("TotalGpuMemoryInMiB")(TotalGpuMemoryInMiB.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalGpuMemoryInMiB)) __obj.updateDynamic("TotalGpuMemoryInMiB")(TotalGpuMemoryInMiB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GpuInfo]
   }
 }

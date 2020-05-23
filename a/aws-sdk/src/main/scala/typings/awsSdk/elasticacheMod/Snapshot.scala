@@ -111,7 +111,7 @@ trait Snapshot extends js.Object {
 object Snapshot {
   @scala.inline
   def apply(
-    AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
     AutomaticFailover: AutomaticFailoverStatus = null,
     CacheClusterCreateTime: TStamp = null,
     CacheClusterId: String = null,
@@ -122,15 +122,15 @@ object Snapshot {
     EngineVersion: String = null,
     KmsKeyId: String = null,
     NodeSnapshots: NodeSnapshotList = null,
-    NumCacheNodes: Int | scala.Double = null,
-    NumNodeGroups: Int | scala.Double = null,
-    Port: Int | scala.Double = null,
+    NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined,
+    NumNodeGroups: js.UndefOr[IntegerOptional] = js.undefined,
+    Port: js.UndefOr[IntegerOptional] = js.undefined,
     PreferredAvailabilityZone: String = null,
     PreferredMaintenanceWindow: String = null,
     ReplicationGroupDescription: String = null,
     ReplicationGroupId: String = null,
     SnapshotName: String = null,
-    SnapshotRetentionLimit: Int | scala.Double = null,
+    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
     SnapshotSource: String = null,
     SnapshotStatus: String = null,
     SnapshotWindow: String = null,
@@ -138,7 +138,7 @@ object Snapshot {
     VpcId: String = null
   ): Snapshot = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
     if (AutomaticFailover != null) __obj.updateDynamic("AutomaticFailover")(AutomaticFailover.asInstanceOf[js.Any])
     if (CacheClusterCreateTime != null) __obj.updateDynamic("CacheClusterCreateTime")(CacheClusterCreateTime.asInstanceOf[js.Any])
     if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
@@ -149,15 +149,15 @@ object Snapshot {
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (NodeSnapshots != null) __obj.updateDynamic("NodeSnapshots")(NodeSnapshots.asInstanceOf[js.Any])
-    if (NumCacheNodes != null) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.asInstanceOf[js.Any])
-    if (NumNodeGroups != null) __obj.updateDynamic("NumNodeGroups")(NumNodeGroups.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumCacheNodes)) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumNodeGroups)) __obj.updateDynamic("NumNodeGroups")(NumNodeGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (PreferredAvailabilityZone != null) __obj.updateDynamic("PreferredAvailabilityZone")(PreferredAvailabilityZone.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
     if (ReplicationGroupDescription != null) __obj.updateDynamic("ReplicationGroupDescription")(ReplicationGroupDescription.asInstanceOf[js.Any])
     if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])
     if (SnapshotName != null) __obj.updateDynamic("SnapshotName")(SnapshotName.asInstanceOf[js.Any])
-    if (SnapshotRetentionLimit != null) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.get.asInstanceOf[js.Any])
     if (SnapshotSource != null) __obj.updateDynamic("SnapshotSource")(SnapshotSource.asInstanceOf[js.Any])
     if (SnapshotStatus != null) __obj.updateDynamic("SnapshotStatus")(SnapshotStatus.asInstanceOf[js.Any])
     if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow.asInstanceOf[js.Any])

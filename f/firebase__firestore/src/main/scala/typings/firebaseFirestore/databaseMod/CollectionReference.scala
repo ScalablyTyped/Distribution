@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.firebaseFirestoreTypes.mod.Query because Already inherited
-- typings.firebaseFirestoreTypes.mod.CollectionReference because Inheritance from two classes. Inlined id, parent, path, add, doc, doc, isEqual */ @JSImport("@firebase/firestore/dist/lib/src/api/database", "CollectionReference")
+- typings.firebaseFirestoreTypes.mod.CollectionReference because Inheritance from two classes. Inlined id, parent, path, add, doc, doc, isEqual */ @JSImport("@firebase/firestore/dist/packages/firestore/src/api/database", "CollectionReference")
 @js.native
 class CollectionReference[T] protected () extends Query[T] {
   def this(_path: ResourcePath, firestore: Firestore) = this()
@@ -24,9 +24,9 @@ class CollectionReference[T] protected () extends Query[T] {
   def add(value: T): js.Promise[typings.firebaseFirestoreTypes.mod.DocumentReference[T]] = js.native
   def doc(): typings.firebaseFirestoreTypes.mod.DocumentReference[T] = js.native
   def doc(pathString: String): typings.firebaseFirestoreTypes.mod.DocumentReference[T] = js.native
-  def id(): String = js.native
+  def id: String = js.native
   def isEqual(other: typings.firebaseFirestoreTypes.mod.CollectionReference[T]): Boolean = js.native
-  def parent(): typings.firebaseFirestoreTypes.mod.DocumentReference[DocumentData] | Null = js.native
-  def path(): String = js.native
+  def parent: typings.firebaseFirestoreTypes.mod.DocumentReference[DocumentData] | Null = js.native
+  def path: String = js.native
 }
 

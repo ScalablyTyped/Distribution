@@ -2,7 +2,7 @@ package typings.reactForm.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ trait FormApi extends js.Object {
   def setValue(fieldName: String, value: js.Any): Unit
   def setWarning(field: String, warning: String): Unit
   // Methods
-  def submitForm(event: SyntheticEvent[_, Event_]): Unit
+  def submitForm(event: SyntheticEvent[_, Event]): Unit
   def swapValues(name: String, index1: Double, index2: Double): Unit
 }
 
@@ -54,7 +54,7 @@ object FormApi {
     setTouched: (String, Boolean) => Unit,
     setValue: (String, js.Any) => Unit,
     setWarning: (String, String) => Unit,
-    submitForm: SyntheticEvent[_, Event_] => Unit,
+    submitForm: SyntheticEvent[_, Event] => Unit,
     submits: Double,
     submitted: Boolean,
     successes: FormErrors,

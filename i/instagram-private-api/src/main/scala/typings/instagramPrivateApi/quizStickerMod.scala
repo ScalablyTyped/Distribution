@@ -1,5 +1,6 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.anon.Count
 import typings.instagramPrivateApi.instaStickerMod.InstaSticker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,6 +23,6 @@ object quizStickerMod extends js.Object {
     def options(value: js.Array[String] | Options): js.Any = js.native
   }
   
-  type Options = js.Array[AnonCount]
+  type Options = js.Array[Count]
 }
 

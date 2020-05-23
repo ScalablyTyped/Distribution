@@ -1,7 +1,7 @@
 package typings.reactNativeTabView.scrollPagerMod
 
 import typings.react.mod.Component
-import typings.reactNativeTabView.AnonOverscroll
+import typings.reactNativeTabView.anon.Overscroll
 import typings.reactNativeTabView.pagerMod.Props
 import typings.reactNativeTabView.typesMod.Route
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ScrollPager[T /* <: Route */]
-  extends Component[Props[T] with AnonOverscroll, State, js.Any] {
+  extends Component[Props[T] with Overscroll, State, js.Any] {
   var addListener: js.Any = js.native
   var enterListeners: js.Any = js.native
   var initialOffset: js.Any = js.native
@@ -23,6 +23,7 @@ trait ScrollPager[T /* <: Route */]
   var removeListener: js.Any = js.native
   var scrollTo: js.Any = js.native
   var scrollViewRef: js.Any = js.native
+  var wasTouched: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MScrollPager(): Unit = js.native
   @JSName("componentDidUpdate")

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Database")
 @js.native
-class Database protected () extends js.Object {
+trait Database extends js.Object {
   val CollatingOrder: Double = js.native
   var Connect: String = js.native
   val Connection: typings.activexDao.DAO.Connection = js.native

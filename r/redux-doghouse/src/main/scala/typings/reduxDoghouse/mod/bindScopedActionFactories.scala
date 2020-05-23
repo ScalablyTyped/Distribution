@@ -2,7 +2,7 @@ package typings.reduxDoghouse.mod
 
 import typings.redux.mod.ActionCreator
 import typings.redux.mod.Dispatch
-import typings.reduxDoghouse.FnCall
+import typings.reduxDoghouse.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

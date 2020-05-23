@@ -6,7 +6,6 @@ import typings.ionic.definitionsMod.IntegrationName
 import typings.ionic.definitionsMod.IonicContext
 import typings.ionic.definitionsMod.ProjectType
 import typings.ionic.executorMod.Executor
-import typings.ionic.ionicStrings.ionicDotconfigDotjson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   val ASSETS_DIRECTORY: String = js.native
   val INTEGRATION_NAMES: js.Array[IntegrationName] = js.native
-  val PROJECT_FILE: ionicDotconfigDotjson = js.native
+  val PROJECT_FILE: /* "ionic.config.json" */ String = js.native
   val PROJECT_TYPES: js.Array[ProjectType] = js.native
   def generateContext(): js.Promise[IonicContext] = js.native
   def isAPIResponseError(res: js.Any): /* is ionic.ionic/definitions.APIResponseError */ Boolean = js.native
@@ -45,7 +44,7 @@ object mod extends js.Object {
   def isMultiProjectConfig(configFile: js.Any): /* is ionic.ionic/definitions.IMultiProjectConfig */ Boolean = js.native
   def isOAuthLogin(login: js.Any): /* is ionic.ionic/guards.OAuthLogin */ Boolean = js.native
   def isOAuthLoginResponse(res: js.Any): /* is ionic.ionic/definitions.Response<ionic.ionic/guards.OAuthLogin> */ Boolean = js.native
-  def isOrg(org: js.Any): /* is ionic.ionic/definitions.Org */ Boolean = js.native
+  def isOrg(org_ : js.Any): /* is ionic.ionic/definitions.Org */ Boolean = js.native
   def isProjectConfig(configFile: js.Any): /* is ionic.ionic/definitions.IProjectConfig */ Boolean = js.native
   def isSSHKey(key: js.Any): /* is ionic.ionic/definitions.SSHKey */ Boolean = js.native
   def isSSHKeyListResponse(res: APIResponse): /* is ionic.ionic/definitions.Response<std.Array<ionic.ionic/definitions.SSHKey>> */ Boolean = js.native

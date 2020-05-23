@@ -18,7 +18,7 @@ trait ojLabelValueSettablePropertiesLenient
 object ojLabelValueSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     labelEdge: start | top | inherit = null,
     labelWidth: String = null
   ): ojLabelValueSettablePropertiesLenient = {

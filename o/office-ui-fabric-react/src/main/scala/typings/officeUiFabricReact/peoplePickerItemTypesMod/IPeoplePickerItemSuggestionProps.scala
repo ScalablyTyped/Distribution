@@ -37,7 +37,7 @@ object IPeoplePickerItemSuggestionProps {
   ): IPeoplePickerItemSuggestionProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
     if (personaProps != null) __obj.updateDynamic("personaProps")(personaProps.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (suggestionsProps != null) __obj.updateDynamic("suggestionsProps")(suggestionsProps.asInstanceOf[js.Any])

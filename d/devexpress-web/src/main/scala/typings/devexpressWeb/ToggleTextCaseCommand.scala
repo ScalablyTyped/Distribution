@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to toggle the case for each character - upper case becomes lower, lower case becomes upper.
   */
-@JSGlobal("ToggleTextCaseCommand")
-@js.native
-class ToggleTextCaseCommand () extends CommandWithSimpleStateBase {
+trait ToggleTextCaseCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the ToggleTextCaseCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object ToggleTextCaseCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): ToggleTextCaseCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[ToggleTextCaseCommand]
+  }
 }
 

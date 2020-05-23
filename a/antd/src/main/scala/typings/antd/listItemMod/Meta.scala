@@ -1,13 +1,12 @@
 package typings.antd.listItemMod
 
-import typings.react.mod._Global_.JSX.Element
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("antd/lib/list/Item", "Meta")
 @js.native
-object Meta extends js.Object {
-  def apply(props: ListItemMetaProps): Element = js.native
-}
+object Meta extends TopLevel[FC[ListItemMetaProps]]
 

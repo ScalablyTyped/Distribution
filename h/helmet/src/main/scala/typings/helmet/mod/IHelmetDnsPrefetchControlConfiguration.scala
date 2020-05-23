@@ -12,7 +12,7 @@ object IHelmetDnsPrefetchControlConfiguration {
   @scala.inline
   def apply(allow: js.UndefOr[Boolean] = js.undefined): IHelmetDnsPrefetchControlConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow)) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow)) __obj.updateDynamic("allow")(allow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHelmetDnsPrefetchControlConfiguration]
   }
 }

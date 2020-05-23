@@ -1,8 +1,6 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.beakTypesMod.IBeakProps
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`10`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`18`
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +15,7 @@ object beakMod extends js.Object {
     def this(props: IBeakProps) = this()
   }
   
-  val BEAK_HEIGHT: `10` = js.native
-  val BEAK_WIDTH: `18` = js.native
+  val BEAK_HEIGHT: /* 10 */ Double = js.native
+  val BEAK_WIDTH: /* 18 */ Double = js.native
 }
 

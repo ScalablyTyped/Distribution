@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Selection")
 @js.native
-class Selection protected () extends js.Object {
+trait Selection extends js.Object {
   val Active: Boolean = js.native
   val Application: typings.activexWord.Word.Application = js.native
   val BookmarkID: Double = js.native

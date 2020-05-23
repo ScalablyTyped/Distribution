@@ -76,28 +76,28 @@ object ProtocolResponse {
   def apply(
     charset: String = null,
     data: Buffer | String | ReadableStream = null,
-    error: Int | Double = null,
+    error: js.UndefOr[Double] = js.undefined,
     headers: Record[String, String | js.Array[String]] = null,
     method: String = null,
     mimeType: String = null,
     path: String = null,
     referrer: String = null,
     session: Session_ = null,
-    statusCode: Int | Double = null,
+    statusCode: js.UndefOr[Double] = js.undefined,
     uploadData: ProtocolResponseUploadData = null,
     url: String = null
   ): ProtocolResponse = {
     val __obj = js.Dynamic.literal()
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     if (uploadData != null) __obj.updateDynamic("uploadData")(uploadData.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolResponse]

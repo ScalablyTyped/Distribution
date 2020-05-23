@@ -19,18 +19,18 @@ object CardHeaderProps {
   @scala.inline
   def apply(
     extra: ReactNode = null,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     styles: js.Any = null,
     thumb: ReactNode = null,
-    thumbStyle: StyleProp[ImageStyle] = null,
+    thumbStyle: js.UndefOr[Null | StyleProp[ImageStyle]] = js.undefined,
     title: ReactNode = null
   ): CardHeaderProps = {
     val __obj = js.Dynamic.literal()
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
-    if (thumbStyle != null) __obj.updateDynamic("thumbStyle")(thumbStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbStyle)) __obj.updateDynamic("thumbStyle")(thumbStyle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardHeaderProps]
   }

@@ -12,38 +12,38 @@ sealed trait ChatStateType extends js.Object
 @js.native
 object ChatStateType extends js.Object {
   /**
-  		*	User is actively participating in the chat session
-  		*/
+    *    User is actively participating in the chat session
+    */
   @js.native
   sealed trait Active extends ChatStateType
   
   /**
-  		*	User is composing a message
-  		*/
+    *    User is composing a message
+    */
   @js.native
   sealed trait Composing extends ChatStateType
   
   /**
-  		*	User has effectively ended their participation in the chat session
-  		*/
+    *    User has effectively ended their participation in the chat session
+    */
   @js.native
   sealed trait Gone extends ChatStateType
   
   /**
-  		*	User has not been actively participating in the chat session
-  		*/
+    *    User has not been actively participating in the chat session
+    */
   @js.native
   sealed trait Inactive extends ChatStateType
   
   /**
-  		*	Invalid type
-  		*/
+    *    Invalid type
+    */
   @js.native
   sealed trait Invalid extends ChatStateType
   
   /**
-  		*	User had been composing but now has stopped
-  		*/
+    *    User had been composing but now has stopped
+    */
   @js.native
   sealed trait Paused extends ChatStateType
   

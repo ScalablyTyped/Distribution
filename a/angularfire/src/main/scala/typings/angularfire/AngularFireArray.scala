@@ -19,71 +19,71 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AngularFireArray extends Array[AngularFireSimpleObject] {
   /**
-  	 * Create a new record with a unique ID and add it to the end of the array.
-  	 * This should be used instead of Array.prototype.push, since those changes will not be
-  	 * synchronized with the server.
-  	 *
-  	 * Any value, including a primitive, can be added in this way. Note that when the record
-  	 * is created, the primitive value would be stored in $value (records are always objects
-  	 * by default).
-  	 *
-  	 * Returns a future which is resolved when the data has successfully saved to the server.
-  	 * The resolve callback will be passed a Firebase ref representing the new data element.
-  	 *
-  	 * @param data
-  	 * @returns a promise resolved after data is added
-  	 */
+    * Create a new record with a unique ID and add it to the end of the array.
+    * This should be used instead of Array.prototype.push, since those changes will not be
+    * synchronized with the server.
+    *
+    * Any value, including a primitive, can be added in this way. Note that when the record
+    * is created, the primitive value would be stored in $value (records are always objects
+    * by default).
+    *
+    * Returns a future which is resolved when the data has successfully saved to the server.
+    * The resolve callback will be passed a Firebase ref representing the new data element.
+    *
+    * @param data
+    * @returns a promise resolved after data is added
+    */
   @JSName("$add")
   def $add(newData: js.Any): IPromise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
-  	 * Informs $firebase to stop sending events and clears memory being used
-  	 * by this array (delete's its local content).
-  	 */
+    * Informs $firebase to stop sending events and clears memory being used
+    * by this array (delete's its local content).
+    */
   @JSName("$destroy")
   def $destroy(): Unit = js.native
   /**
-  	 * Returns the record for a given Firebase key (record.$id). If the record is not found
-  	 * then returns null.
-  	 *
-  	 * @param {string} key
-  	 * @returns {Object|null} a record in this array
-  	 */
+    * Returns the record for a given Firebase key (record.$id). If the record is not found
+    * then returns null.
+    *
+    * @param {string} key
+    * @returns {Object|null} a record in this array
+    */
   @JSName("$getRecord")
   def $getRecord(key: String): AngularFireSimpleObject = js.native
   /**
-  	 * The inverse of $keyAt, this method takes a Firebase key (record.$id) and returns the
-  	 * index in the array where that record is stored. If the record is not in the array,
-  	 * this method returns -1.
-  	 *
-  	 * @param {String} key
-  	 * @returns {int} -1 if not found
-  	 */
+    * The inverse of $keyAt, this method takes a Firebase key (record.$id) and returns the
+    * index in the array where that record is stored. If the record is not in the array,
+    * this method returns -1.
+    *
+    * @param {String} key
+    * @returns {int} -1 if not found
+    */
   @JSName("$indexFor")
   def $indexFor(key: String): Double = js.native
   /**
-  	 * Given an item in this array or the index of an item in the array, this returns the
-  	 * Firebase key (record.$id) for that record. If passed an invalid key or an item which
-  	 * does not exist in this array, it will return null.
-  	 *
-  	 * @param {int|object} indexOrItem
-  	 * @returns {null|string}
-  	 */
+    * Given an item in this array or the index of an item in the array, this returns the
+    * Firebase key (record.$id) for that record. If passed an invalid key or an item which
+    * does not exist in this array, it will return null.
+    *
+    * @param {int|object} indexOrItem
+    * @returns {null|string}
+    */
   @JSName("$keyAt")
   def $keyAt(recordOrIndex: js.Any): String = js.native
   /**
-  	 * The loaded method is invoked after the initial batch of data arrives from the server.
-  	 * When this resolves, all data which existed prior to calling $asArray() is now cached
-  	 * locally in the array.
-  	 *
-  	 * As a shortcut is also possible to pass resolve/reject methods directly into this
-  	 * method just as they would be passed to .then()
-  	 *
-  	 * @param {Function} [resolve]
-  	 * @param {Function} [reject]
-  	 * @returns a promise
-  	 */
+    * The loaded method is invoked after the initial batch of data arrives from the server.
+    * When this resolves, all data which existed prior to calling $asArray() is now cached
+    * locally in the array.
+    *
+    * As a shortcut is also possible to pass resolve/reject methods directly into this
+    * method just as they would be passed to .then()
+    *
+    * @param {Function} [resolve]
+    * @param {Function} [reject]
+    * @returns a promise
+    */
   @JSName("$loaded")
   def $loaded(): IPromise[AngularFireArray] = js.native
   @JSName("$loaded")
@@ -94,61 +94,61 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
     reject: js.Function1[/* err */ js.Any, _]
   ): IPromise[AngularFireArray] = js.native
   /**
-  	 * @returns {Firebase} the original Firebase ref used to create this object.
-  	 */
+    * @returns {Firebase} the original Firebase ref used to create this object.
+    */
   @JSName("$ref")
   def $ref(): js.Any = js.native
   /**
-  	 * Pass either an existing item in this array or the index of that item and it will
-  	 * be removed both locally and in Firebase. This should be used in place of
-  	 * Array.prototype.splice for removing items out of the array, as calling splice
-  	 * will not update the value on the server.
-  	 *
-  	 * Returns a future which is resolved when the data has successfully removed from the
-  	 * server. The resolve callback will be passed a Firebase ref representing the deleted
-  	 * element. If passed an invalid index or an object which is not a record in this array,
-  	 * the promise will be rejected.
-  	 *
-  	 * @param {int|object} indexOrItem
-  	 * @returns a promise which resolves after data is removed
-  	 */
+    * Pass either an existing item in this array or the index of that item and it will
+    * be removed both locally and in Firebase. This should be used in place of
+    * Array.prototype.splice for removing items out of the array, as calling splice
+    * will not update the value on the server.
+    *
+    * Returns a future which is resolved when the data has successfully removed from the
+    * server. The resolve callback will be passed a Firebase ref representing the deleted
+    * element. If passed an invalid index or an object which is not a record in this array,
+    * the promise will be rejected.
+    *
+    * @param {int|object} indexOrItem
+    * @returns a promise which resolves after data is removed
+    */
   @JSName("$remove")
   def $remove(recordOrIndex: js.Any): IPromise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
-  	 * Pass either an item in the array or the index of an item and it will be saved back
-  	 * to Firebase. While the array is read-only and its structure should not be changed,
-  	 * it is okay to modify properties on the objects it contains and then save those back
-  	 * individually.
-  	 *
-  	 * Returns a future which is resolved when the data has successfully saved to the server.
-  	 * The resolve callback will be passed a Firebase ref representing the saved element.
-  	 * If passed an invalid index or an object which is not a record in this array,
-  	 * the promise will be rejected.
-  	 *
-  	 * @param {int|object} indexOrItem
-  	 * @returns a promise resolved after data is saved
-  	 */
+    * Pass either an item in the array or the index of an item and it will be saved back
+    * to Firebase. While the array is read-only and its structure should not be changed,
+    * it is okay to modify properties on the objects it contains and then save those back
+    * individually.
+    *
+    * Returns a future which is resolved when the data has successfully saved to the server.
+    * The resolve callback will be passed a Firebase ref representing the saved element.
+    * If passed an invalid index or an object which is not a record in this array,
+    * the promise will be rejected.
+    *
+    * @param {int|object} indexOrItem
+    * @returns a promise resolved after data is saved
+    */
   @JSName("$save")
   def $save(recordOrIndex: js.Any): IPromise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
-  	 * Listeners passed into this method are notified whenever a new change (add, updated,
-  	 * move, remove) is received from the server. Each invocation is sent an object
-  	 * containing <code>{ type: 'child_added|child_updated|child_moved|child_removed',
-  	 * key: 'key_of_item_affected'}</code>
-  	 *
-  	 * Additionally, added and moved events receive a prevChild parameter, containing the
-  	 * key of the item before this one in the array.
-  	 *
-  	 * This method returns a function which can be invoked to stop observing events.
-  	 *
-  	 * @param {Function} cb
-  	 * @param {Object} [context]
-  	 * @returns {Function} used to stop observing
-  	 */
+    * Listeners passed into this method are notified whenever a new change (add, updated,
+    * move, remove) is received from the server. Each invocation is sent an object
+    * containing <code>{ type: 'child_added|child_updated|child_moved|child_removed',
+    * key: 'key_of_item_affected'}</code>
+    *
+    * Additionally, added and moved events receive a prevChild parameter, containing the
+    * key of the item before this one in the array.
+    *
+    * This method returns a function which can be invoked to stop observing events.
+    *
+    * @param {Function} cb
+    * @param {Object} [context]
+    * @returns {Function} used to stop observing
+    */
   @JSName("$watch")
   def $watch(cb: js.Function3[/* event */ String, /* key */ String, /* prevChild */ String, Unit]): js.Function = js.native
   @JSName("$watch")

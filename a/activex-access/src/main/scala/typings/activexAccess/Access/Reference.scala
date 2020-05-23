@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Reference")
 @js.native
-class Reference protected () extends js.Object {
+trait Reference extends js.Object {
   @JSName("Access.Reference_typekey")
   var AccessDotReference_typekey: Reference = js.native
   val BuiltIn: Boolean = js.native

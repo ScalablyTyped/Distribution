@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a KiiUser builder
   */
-@JSGlobal("KiiCloud.KiiUserBuilder")
-@js.native
-class KiiUserBuilder () extends js.Object {
+trait KiiUserBuilder extends js.Object {
   /**
     * Build KiiUser object.
     *
@@ -17,7 +15,7 @@ class KiiUserBuilder () extends js.Object {
     *
     * @return a working KiiUser object.
     */
-  def build(): KiiUser = js.native
+  def build(): KiiUser
   /**
     * Set email address.
     *
@@ -31,7 +29,7 @@ class KiiUserBuilder () extends js.Object {
     * @throws If the email address is not in the
     *     proper format
     */
-  def setEmailAddress(emailAddress: String): KiiUserBuilder = js.native
+  def setEmailAddress(emailAddress: String): KiiUserBuilder
   /**
     * Set global phone number.
     *
@@ -45,7 +43,7 @@ class KiiUserBuilder () extends js.Object {
     * @throws If the phone number is not
     *     in the proper format
     */
-  def setGlobalPhoneNumber(phoneNumber: String): KiiUserBuilder = js.native
+  def setGlobalPhoneNumber(phoneNumber: String): KiiUserBuilder
   /**
     * Set local phone number.
     *
@@ -61,7 +59,7 @@ class KiiUserBuilder () extends js.Object {
     *     in the proper format
     * @throws If the country code is not a valid format
     */
-  def setLocalPhoneNumber(phoneNumber: String, country: String): KiiUserBuilder = js.native
+  def setLocalPhoneNumber(phoneNumber: String, country: String): KiiUserBuilder
   /**
     * Set user name.
     *
@@ -75,101 +73,20 @@ class KiiUserBuilder () extends js.Object {
     * @throws If the username is not in the
     *     proper format
     */
-  def setUsername(username: String): KiiUserBuilder = js.native
+  def setUsername(username: String): KiiUserBuilder
 }
 
-/* static members */
-@JSGlobal("KiiCloud.KiiUserBuilder")
-@js.native
-object KiiUserBuilder extends js.Object {
-  /**
-    * Create KiiUser builder with email address
-    *
-    * <br><br>Create a KiiUser builder with email address.
-    *
-    * @param emailAddress email address.
-    * @param password for the user. Must be string. Must not be null or
-    *   undefined.
-    *
-    * @return KiiUser object builder.
-    *
-    * @throws If the email address is not in the proper format
-    * @throws If the password is not in the
-    *     proper format
-    */
-  def builderWithEmailAddress(emailAddress: String, password: String): KiiUserBuilder = js.native
-  /**
-    * Create KiiUser builder with global phone number
-    *
-    * <br><br>Create a KiiUser builder with global phone number.
-    *
-    * @param phoneNumber global phone number.
-    *
-    * @return KiiUser object builder.
-    *
-    * @throws If the phone number is not in the proper format
-    */
-  def builderWithGlobalPhoneNumber(phoneNumber: String, password: String): KiiUserBuilder = js.native
-  /**
-    * Create a KiiUser builder with identifier.
-    *
-    * <br><br>Create a KiiUser builder. This constructor is received
-    * identifier. The identifier is one of user name, email address or
-    * phone number. This constructor automatically identity What is
-    * identifier and build proper KiiUser object on build method.
-    *
-    * <br><br> Some strings can be accepted as both user name and phone
-    * number. If such string is passed to this constructor as
-    * identifier, then phone number is prior to user name. String of
-    * email address is in different class against user name and phone
-    * number. So Email address is always identified correctly.
-    *
-    * @param identifier The user's user name, email address or phone
-    *   number. Must be string. Must not be null or undefined.
-    * @param password for the user. Must be string. Must not be null or
-    *   undefined.
-    *
-    * @return KiiUser object builder.
-    *
-    * @throws If Identifier is not user name,
-    *     email address or phone number.
-    * @throws If the password is not in the
-    *     proper format
-    */
-  def builderWithIdentifier(identifier: String, password: String): KiiUserBuilder = js.native
-  /**
-    * Create KiiUser builder with local phone number
-    *
-    * <br><br>Create a KiiUser builder with local phone number.
-    *
-    * @param phoneNumber local phone number.
-    * @param country country code
-    * @param password for the user. Must be string. Must not be null or
-    *   undefined.
-    *
-    * @return KiiUser object builder.
-    *
-    * @throws If the phone number is not in the proper format
-    * @throws If the country code is not a valid format
-    * @throws If the password is not in the
-    *     proper format
-    */
-  def builderWithLocalPhoneNumber(phoneNumber: String, country: String, password: String): KiiUserBuilder = js.native
-  /**
-    * Create KiiUser builder with user name
-    *
-    * <br><br>Create a KiiUser builder with user name.
-    *
-    * @param username user name.
-    * @param password for the user. Must be string. Must not be null or
-    *   undefined.
-    *
-    * @return KiiUser object builder.
-    *
-    * @throws If the username is not in the proper format
-    * @throws If the password is not in the
-    *     proper format
-    */
-  def builderWithUsername(username: String, password: String): KiiUserBuilder = js.native
+object KiiUserBuilder {
+  @scala.inline
+  def apply(
+    build: () => KiiUser,
+    setEmailAddress: String => KiiUserBuilder,
+    setGlobalPhoneNumber: String => KiiUserBuilder,
+    setLocalPhoneNumber: (String, String) => KiiUserBuilder,
+    setUsername: String => KiiUserBuilder
+  ): KiiUserBuilder = {
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setEmailAddress = js.Any.fromFunction1(setEmailAddress), setGlobalPhoneNumber = js.Any.fromFunction1(setGlobalPhoneNumber), setLocalPhoneNumber = js.Any.fromFunction2(setLocalPhoneNumber), setUsername = js.Any.fromFunction1(setUsername))
+    __obj.asInstanceOf[KiiUserBuilder]
+  }
 }
 

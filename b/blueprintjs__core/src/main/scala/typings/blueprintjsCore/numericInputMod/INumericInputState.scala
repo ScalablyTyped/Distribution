@@ -19,13 +19,13 @@ object INumericInputState {
     shouldSelectAfterUpdate: Boolean,
     stepMaxPrecision: Double,
     value: String,
-    prevMaxProp: Int | Double = null,
-    prevMinProp: Int | Double = null,
+    prevMaxProp: js.UndefOr[Double] = js.undefined,
+    prevMinProp: js.UndefOr[Double] = js.undefined,
     prevValueProp: Double | String = null
   ): INumericInputState = {
     val __obj = js.Dynamic.literal(shouldSelectAfterUpdate = shouldSelectAfterUpdate.asInstanceOf[js.Any], stepMaxPrecision = stepMaxPrecision.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (prevMaxProp != null) __obj.updateDynamic("prevMaxProp")(prevMaxProp.asInstanceOf[js.Any])
-    if (prevMinProp != null) __obj.updateDynamic("prevMinProp")(prevMinProp.asInstanceOf[js.Any])
+    if (!js.isUndefined(prevMaxProp)) __obj.updateDynamic("prevMaxProp")(prevMaxProp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prevMinProp)) __obj.updateDynamic("prevMinProp")(prevMinProp.get.asInstanceOf[js.Any])
     if (prevValueProp != null) __obj.updateDynamic("prevValueProp")(prevValueProp.asInstanceOf[js.Any])
     __obj.asInstanceOf[INumericInputState]
   }

@@ -30,14 +30,14 @@ object DashManifest {
   def apply(
     ManifestLayout: ManifestLayout = null,
     ManifestName: string = null,
-    MinBufferTimeSeconds: Int | Double = null,
+    MinBufferTimeSeconds: js.UndefOr[integer] = js.undefined,
     Profile: Profile = null,
     StreamSelection: StreamSelection = null
   ): DashManifest = {
     val __obj = js.Dynamic.literal()
     if (ManifestLayout != null) __obj.updateDynamic("ManifestLayout")(ManifestLayout.asInstanceOf[js.Any])
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
-    if (MinBufferTimeSeconds != null) __obj.updateDynamic("MinBufferTimeSeconds")(MinBufferTimeSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinBufferTimeSeconds)) __obj.updateDynamic("MinBufferTimeSeconds")(MinBufferTimeSeconds.get.asInstanceOf[js.Any])
     if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])
     if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashManifest]

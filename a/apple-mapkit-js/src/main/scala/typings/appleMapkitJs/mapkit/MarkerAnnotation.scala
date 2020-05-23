@@ -7,17 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Creates a marker annotation at the coordinate location with provided options.
   */
-@JSGlobal("mapkit.MarkerAnnotation")
 @js.native
-class MarkerAnnotation protected () extends Annotation {
-  /**
-    * Creates a marker annotation at the coordinate location with provided options.
-    *
-    * @param coordinate The coordinate at which this annotation should appear.
-    * @param options A hash of properties with which to initialize the annotation.
-    */
-  def this(coordinate: Coordinate) = this()
-  def this(coordinate: Coordinate, options: MarkerAnnotationConstructorOptions) = this()
+trait MarkerAnnotation extends Annotation {
   /**
     * The background color of the balloon.
     */

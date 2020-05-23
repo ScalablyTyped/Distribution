@@ -13,12 +13,12 @@ trait FormGroupProps
 object FormGroupProps {
   @scala.inline
   def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     disableStyles: js.UndefOr[Boolean] = js.undefined
   ): FormGroupProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormGroupProps]
   }
 }

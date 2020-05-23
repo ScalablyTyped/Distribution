@@ -19,13 +19,13 @@ object FocusOptions {
     animation: AnimationOptions | Boolean = null,
     locked: js.UndefOr[Boolean] = js.undefined,
     offset: Position = null,
-    scale: Int | Double = null
+    scale: js.UndefOr[Double] = js.undefined
   ): FocusOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusOptions]
   }
 }

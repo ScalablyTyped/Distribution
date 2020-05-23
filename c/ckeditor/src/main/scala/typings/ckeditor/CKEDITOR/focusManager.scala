@@ -6,10 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.focusManager")
 @js.native
-class focusManager protected () extends js.Object {
-  def this(editor: editor) = this()
+trait focusManager extends js.Object {
   var currentActive: domObject = js.native
   var hasFocus: Boolean = js.native
   def add(element: element, isCapture: Boolean): Unit = js.native

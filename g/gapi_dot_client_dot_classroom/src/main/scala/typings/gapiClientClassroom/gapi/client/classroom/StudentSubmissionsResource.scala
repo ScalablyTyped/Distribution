@@ -1,14 +1,14 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonCourseWorkId
-import typings.gapiClientClassroom.AnonLate
-import typings.gapiClientClassroom.AnonPrettyPrint
-import typings.gapiClientClassroom.AnonQuotaUser
-import typings.gapiClientClassroom.AnonResource
-import typings.gapiClientClassroom.AnonUpdateMask
-import typings.gapiClientClassroom.AnonUploadType
-import typings.gapiClientClassroom.AnonUploadprotocol
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientClassroom.anon.CourseWorkId
+import typings.gapiClientClassroom.anon.Late
+import typings.gapiClientClassroom.anon.PrettyPrint
+import typings.gapiClientClassroom.anon.QuotaUser
+import typings.gapiClientClassroom.anon.Resource
+import typings.gapiClientClassroom.anon.UpdateMask
+import typings.gapiClientClassroom.anon.UploadType
+import typings.gapiClientClassroom.anon.Uploadprotocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,8 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def get(request: AnonCourseWorkId): Request_[StudentSubmission] = js.native
+  def get(): Request[StudentSubmission] = js.native
+  def get(request: CourseWorkId): Request[StudentSubmission] = js.native
   /**
     * Returns a list of student submissions that the requester is permitted to
     * view, factoring in the OAuth scopes of the request.
@@ -42,8 +43,9 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course does not exist.
     */
-  def list(request: AnonLate): Request_[ListStudentSubmissionsResponse] = js.native
-  def modifyAttachments(request: AnonCourseWorkId, body: ModifyAttachmentsRequest): Request_[StudentSubmission] = js.native
+  def list(): Request[ListStudentSubmissionsResponse] = js.native
+  def list(request: Late): Request[ListStudentSubmissionsResponse] = js.native
+  def modifyAttachments(request: CourseWorkId, body: ModifyAttachmentsRequest): Request[StudentSubmission] = js.native
   /**
     * Modifies attachments of student submission.
     *
@@ -64,7 +66,7 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def modifyAttachments(request: AnonPrettyPrint): Request_[StudentSubmission] = js.native
+  def modifyAttachments(request: PrettyPrint): Request[StudentSubmission] = js.native
   /**
     * Updates one or more fields of a student submission.
     *
@@ -85,9 +87,9 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def patch(request: AnonQuotaUser): Request_[StudentSubmission] = js.native
-  def patch(request: AnonUpdateMask, body: StudentSubmission): Request_[StudentSubmission] = js.native
-  def reclaim(request: AnonCourseWorkId, body: ReclaimStudentSubmissionRequest): Request_[js.Object] = js.native
+  def patch(request: QuotaUser): Request[StudentSubmission] = js.native
+  def patch(request: UpdateMask, body: StudentSubmission): Request[StudentSubmission] = js.native
+  def reclaim(request: CourseWorkId, body: ReclaimStudentSubmissionRequest): Request[js.Object] = js.native
   /**
     * Reclaims a student submission on behalf of the student that owns it.
     *
@@ -111,8 +113,8 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def reclaim(request: AnonResource): Request_[js.Object] = js.native
-  def `return`(request: AnonCourseWorkId, body: ReturnStudentSubmissionRequest): Request_[js.Object] = js.native
+  def reclaim(request: Resource): Request[js.Object] = js.native
+  def `return`(request: CourseWorkId, body: ReturnStudentSubmissionRequest): Request[js.Object] = js.native
   /**
     * Returns a student submission.
     *
@@ -137,8 +139,8 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def `return`(request: AnonUploadType): Request_[js.Object] = js.native
-  def turnIn(request: AnonCourseWorkId, body: TurnInStudentSubmissionRequest): Request_[js.Object] = js.native
+  def `return`(request: UploadType): Request[js.Object] = js.native
+  def turnIn(request: CourseWorkId, body: TurnInStudentSubmissionRequest): Request[js.Object] = js.native
   /**
     * Turns in a student submission.
     *
@@ -161,6 +163,6 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def turnIn(request: AnonUploadprotocol): Request_[js.Object] = js.native
+  def turnIn(request: Uploadprotocol): Request[js.Object] = js.native
 }
 

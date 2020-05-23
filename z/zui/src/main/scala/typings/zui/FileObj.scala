@@ -32,26 +32,26 @@ object FileObj {
     id: String = null,
     isImage: js.UndefOr[Boolean] = js.undefined,
     lastModifiedDate: Date = null,
-    loaded: Int | Double = null,
+    loaded: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    origSize: Int | Double = null,
-    percent: Int | Double = null,
+    origSize: js.UndefOr[Double] = js.undefined,
+    percent: js.UndefOr[Double] = js.undefined,
     previewImage: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     status: STATUS = null,
     `type`: String = null
   ): FileObj = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getNative = js.Any.fromFunction0(getNative))
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isImage)) __obj.updateDynamic("isImage")(isImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(isImage)) __obj.updateDynamic("isImage")(isImage.get.asInstanceOf[js.Any])
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
+    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (origSize != null) __obj.updateDynamic("origSize")(origSize.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(origSize)) __obj.updateDynamic("origSize")(origSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     if (previewImage != null) __obj.updateDynamic("previewImage")(previewImage.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileObj]

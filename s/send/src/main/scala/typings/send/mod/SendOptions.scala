@@ -76,27 +76,27 @@ object SendOptions {
     acceptRanges: js.UndefOr[Boolean] = js.undefined,
     cacheControl: js.UndefOr[Boolean] = js.undefined,
     dotfiles: allow | deny | ignore = null,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     etag: js.UndefOr[Boolean] = js.undefined,
     extensions: js.Array[String] | String | Boolean = null,
     index: js.Array[String] | String | Boolean = null,
     lastModified: js.UndefOr[Boolean] = js.undefined,
     maxAge: String | Double = null,
     root: String = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): SendOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptRanges)) __obj.updateDynamic("acceptRanges")(acceptRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptRanges)) __obj.updateDynamic("acceptRanges")(acceptRanges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl.get.asInstanceOf[js.Any])
     if (dotfiles != null) __obj.updateDynamic("dotfiles")(dotfiles.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag.get.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified.get.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendOptions]
   }
 }

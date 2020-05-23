@@ -1,7 +1,7 @@
 package typings.simplePeer.mod
 
 import typings.node.streamMod.Duplex
-import typings.simplePeer.AnonAddress
+import typings.simplePeer.anon.Address
 import typings.std.MediaStream
 import typings.std.MediaStreamTrack
 import scala.scalajs.js
@@ -19,7 +19,7 @@ trait Instance extends Duplex {
   def addStream(stream: MediaStream): Unit = js.native
   // https://github.com/feross/simple-peer/tree/v9.6.1#peeraddtracktrack-stream
   def addTrack(track: MediaStreamTrack, stream: MediaStream): Unit = js.native
-  def address(): AnonAddress = js.native
+  def address(): Address = js.native
   // https://github.com/feross/simple-peer/tree/v9.6.1#peerremovestreamstream
   def removeStream(stream: MediaStream): Unit = js.native
   // https://github.com/feross/simple-peer/tree/v9.6.1#peerremovetracktrack-stream

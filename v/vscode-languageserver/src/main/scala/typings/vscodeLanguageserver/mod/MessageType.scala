@@ -1,9 +1,5 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`1`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`2`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`3`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,18 +10,18 @@ object MessageType extends js.Object {
   /**
     * An error message.
     */
-  val Error: `1` = js.native
+  val Error: /* 1 */ Double = js.native
   /**
     * An information message.
     */
-  val Info: `3` = js.native
+  val Info: /* 3 */ Double = js.native
   /**
     * A log message.
     */
-  val Log: `4` = js.native
+  val Log: /* 4 */ Double = js.native
   /**
     * A warning message.
     */
-  val Warning: `2` = js.native
+  val Warning: /* 2 */ Double = js.native
 }
 

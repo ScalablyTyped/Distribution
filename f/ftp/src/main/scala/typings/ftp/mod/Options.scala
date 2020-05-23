@@ -52,25 +52,25 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    connTimeout: Int | Double = null,
+    connTimeout: js.UndefOr[Double] = js.undefined,
     debug: /* message */ String => Unit = null,
     host: String = null,
-    keepalive: Int | Double = null,
+    keepalive: js.UndefOr[Double] = js.undefined,
     password: String = null,
-    pasvTimeout: Int | Double = null,
-    port: Int | Double = null,
+    pasvTimeout: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined,
     secure: String | Boolean = null,
     secureOptions: ConnectionOptions = null,
     user: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connTimeout)) __obj.updateDynamic("connTimeout")(connTimeout.get.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (pasvTimeout != null) __obj.updateDynamic("pasvTimeout")(pasvTimeout.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(pasvTimeout)) __obj.updateDynamic("pasvTimeout")(pasvTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

@@ -10,9 +10,9 @@ trait DrawOptions extends js.Object {
 
 object DrawOptions {
   @scala.inline
-  def apply(kerningBias: Int | Double = null): DrawOptions = {
+  def apply(kerningBias: js.UndefOr[Double] = js.undefined): DrawOptions = {
     val __obj = js.Dynamic.literal()
-    if (kerningBias != null) __obj.updateDynamic("kerningBias")(kerningBias.asInstanceOf[js.Any])
+    if (!js.isUndefined(kerningBias)) __obj.updateDynamic("kerningBias")(kerningBias.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawOptions]
   }
 }

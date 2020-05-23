@@ -1,6 +1,5 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.AnonChart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +63,7 @@ trait ChartLegendOptions extends js.Object {
   /**
     * A custom formatter function that returns text to be displayed inside individual legend items.
     */
-  var itemTextFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[AnonChart], String]] = js.undefined
+  var itemTextFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[typings.canvasjs.anon.Chart], String]] = js.undefined
   /**
     * Sets the width of individual legend items after which the it gets wrapped or clipped depending on whether itemWrap is set to true (default) or false.
     * itemWidth can’t be greater than itemMaxWidth and maxWidth of legend.
@@ -146,45 +145,45 @@ object ChartLegendOptions {
     dockInsidePlotArea: js.UndefOr[Boolean] = js.undefined,
     fontColor: String = null,
     fontFamily: String = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     fontStyle: String = null,
     fontWeight: String = null,
     horizontalAlign: String = null,
-    itemMaxWidth: Int | Double = null,
-    itemTextFormatter: /* e */ js.UndefOr[AnonChart] => String = null,
-    itemWidth: Int | Double = null,
+    itemMaxWidth: js.UndefOr[Double] = js.undefined,
+    itemTextFormatter: /* e */ js.UndefOr[typings.canvasjs.anon.Chart] => String = null,
+    itemWidth: js.UndefOr[Double] = js.undefined,
     itemWrap: js.UndefOr[Boolean] = js.undefined,
     itemclick: /* event */ ChartEvent => Unit = null,
     itemmousemove: /* event */ ChartEvent => Unit = null,
     itemmouseout: /* event */ ChartEvent => Unit = null,
     itemmouseover: /* event */ ChartEvent => Unit = null,
-    markerMargin: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
+    markerMargin: js.UndefOr[Double] = js.undefined,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     reversed: js.UndefOr[Boolean] = js.undefined,
     verticalAlign: String = null
   ): ChartLegendOptions = {
     val __obj = js.Dynamic.literal()
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(dockInsidePlotArea)) __obj.updateDynamic("dockInsidePlotArea")(dockInsidePlotArea.asInstanceOf[js.Any])
+    if (!js.isUndefined(dockInsidePlotArea)) __obj.updateDynamic("dockInsidePlotArea")(dockInsidePlotArea.get.asInstanceOf[js.Any])
     if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (horizontalAlign != null) __obj.updateDynamic("horizontalAlign")(horizontalAlign.asInstanceOf[js.Any])
-    if (itemMaxWidth != null) __obj.updateDynamic("itemMaxWidth")(itemMaxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemMaxWidth)) __obj.updateDynamic("itemMaxWidth")(itemMaxWidth.get.asInstanceOf[js.Any])
     if (itemTextFormatter != null) __obj.updateDynamic("itemTextFormatter")(js.Any.fromFunction1(itemTextFormatter))
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemWrap)) __obj.updateDynamic("itemWrap")(itemWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemWidth)) __obj.updateDynamic("itemWidth")(itemWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemWrap)) __obj.updateDynamic("itemWrap")(itemWrap.get.asInstanceOf[js.Any])
     if (itemclick != null) __obj.updateDynamic("itemclick")(js.Any.fromFunction1(itemclick))
     if (itemmousemove != null) __obj.updateDynamic("itemmousemove")(js.Any.fromFunction1(itemmousemove))
     if (itemmouseout != null) __obj.updateDynamic("itemmouseout")(js.Any.fromFunction1(itemmouseout))
     if (itemmouseover != null) __obj.updateDynamic("itemmouseover")(js.Any.fromFunction1(itemmouseover))
-    if (markerMargin != null) __obj.updateDynamic("markerMargin")(markerMargin.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerMargin)) __obj.updateDynamic("markerMargin")(markerMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendOptions]
   }

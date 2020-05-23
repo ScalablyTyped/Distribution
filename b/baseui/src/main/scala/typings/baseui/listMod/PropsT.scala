@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PropsT extends js.Object {
   var artwork: js.UndefOr[ReactNode] = js.undefined
-  var artworkSize: js.UndefOr[ArtworkSizesT] = js.undefined
+  var artworkSize: js.UndefOr[ArtworkSizesT | Double] = js.undefined
   var children: ReactNode
   var endEnhancer: js.UndefOr[ReactNode] = js.undefined
   var overrides: js.UndefOr[OverridesT] = js.undefined
@@ -18,7 +18,7 @@ object PropsT {
   @scala.inline
   def apply(
     artwork: ReactNode = null,
-    artworkSize: ArtworkSizesT = null,
+    artworkSize: ArtworkSizesT | Double = null,
     children: ReactNode = null,
     endEnhancer: ReactNode = null,
     overrides: OverridesT = null,
@@ -30,7 +30,7 @@ object PropsT {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(sublist)) __obj.updateDynamic("sublist")(sublist.asInstanceOf[js.Any])
+    if (!js.isUndefined(sublist)) __obj.updateDynamic("sublist")(sublist.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropsT]
   }
 }

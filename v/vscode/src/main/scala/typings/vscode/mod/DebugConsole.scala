@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait DebugConsole extends js.Object {
   /**
-  		 * Append the given value to the debug console.
-  		 *
-  		 * @param value A string, falsy values will not be printed.
-  		 */
+    * Append the given value to the debug console.
+    *
+    * @param value A string, falsy values will not be printed.
+    */
   def append(value: String): Unit
   /**
-  		 * Append the given value and a line feed character
-  		 * to the debug console.
-  		 *
-  		 * @param value A string, falsy values will be printed.
-  		 */
+    * Append the given value and a line feed character
+    * to the debug console.
+    *
+    * @param value A string, falsy values will be printed.
+    */
   def appendLine(value: String): Unit
 }
 

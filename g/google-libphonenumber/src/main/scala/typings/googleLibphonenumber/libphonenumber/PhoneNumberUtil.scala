@@ -1,15 +1,13 @@
 package typings.googleLibphonenumber.libphonenumber
 
-import org.scalablytyped.runtime.TopLevel
 import typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.MatchType
 import typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("libphonenumber.PhoneNumberUtil")
 @js.native
-class PhoneNumberUtil () extends js.Object {
+trait PhoneNumberUtil extends js.Object {
   def extractCountryCode(fullNumber: StringBuffer, nationalNumber: StringBuffer): Double = js.native
   def format(phoneNumber: PhoneNumber, format: PhoneNumberFormat): String = js.native
   def formatOutOfCountryCallingNumber(phoneNumber: PhoneNumber): String = js.native
@@ -48,7 +46,6 @@ class PhoneNumberUtil () extends js.Object {
   def truncateTooLongNumber(number: PhoneNumber): Boolean = js.native
 }
 
-/* static members */
 @JSGlobal("libphonenumber.PhoneNumberUtil")
 @js.native
 object PhoneNumberUtil extends js.Object {
@@ -58,7 +55,6 @@ object PhoneNumberUtil extends js.Object {
   @js.native
   sealed trait ValidationResult extends js.Object
   
-  def getInstance(): PhoneNumberUtil = js.native
   @js.native
   object MatchType extends js.Object {
     @js.native
@@ -76,23 +72,6 @@ object PhoneNumberUtil extends js.Object {
     @js.native
     sealed trait SHORT_NSN_MATCH extends MatchType
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[MatchType with Double] = js.native
-    /* 0 */ @js.native
-    object EXACT_MATCH extends TopLevel[EXACT_MATCH with Double]
-    
-    /* 2 */ @js.native
-    object NOT_A_NUMBER extends TopLevel[NOT_A_NUMBER with Double]
-    
-    /* 1 */ @js.native
-    object NO_MATCH extends TopLevel[NO_MATCH with Double]
-    
-    /* 3 */ @js.native
-    object NSN_MATCH extends TopLevel[NSN_MATCH with Double]
-    
-    /* 4 */ @js.native
-    object SHORT_NSN_MATCH extends TopLevel[SHORT_NSN_MATCH with Double]
-    
   }
   
   @js.native
@@ -108,20 +87,6 @@ object PhoneNumberUtil extends js.Object {
     
     @js.native
     sealed trait TOO_SHORT extends ValidationResult
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ValidationResult with Double] = js.native
-    /* 1 */ @js.native
-    object INVALID_COUNTRY_CODE extends TopLevel[INVALID_COUNTRY_CODE with Double]
-    
-    /* 0 */ @js.native
-    object IS_POSSIBLE extends TopLevel[IS_POSSIBLE with Double]
-    
-    /* 3 */ @js.native
-    object TOO_LONG extends TopLevel[TOO_LONG with Double]
-    
-    /* 2 */ @js.native
-    object TOO_SHORT extends TopLevel[TOO_SHORT with Double]
     
   }
   

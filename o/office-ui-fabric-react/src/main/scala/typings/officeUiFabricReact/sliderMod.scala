@@ -1,6 +1,5 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1000`
 import typings.officeUiFabricReact.sliderTypesMod.ISliderProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
@@ -16,7 +15,7 @@ object sliderMod extends js.Object {
     def this(props: ISliderProps) = this()
   }
   
-  val ONKEYDOWN_TIMEOUT_DURATION: `1000` = js.native
+  val ONKEYDOWN_TIMEOUT_DURATION: /* 1000 */ Double = js.native
   val Slider: FunctionComponent[ISliderProps] = js.native
   /* static members */
   @js.native

@@ -13,7 +13,7 @@ import typings.apolloReactComponents.typesMod.SubscriptionComponentOptions
 import typings.apolloReactHoc.typesMod.ChildProps
 import typings.apolloReactHoc.typesMod.OperationOption
 import typings.apolloReactHoc.typesMod.WithApolloClient
-import typings.apolloReactHooks.AnonError
+import typings.apolloReactHooks.anon.Error
 import typings.apolloReactHooks.typesMod.LazyQueryHookOptions
 import typings.apolloReactHooks.typesMod.MutationHookOptions
 import typings.apolloReactHooks.typesMod.MutationTuple
@@ -31,7 +31,7 @@ import typings.react.mod.Context
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactApollo.reactApolloStrings.client
 import typings.std.Omit
 import scala.scalajs.js
@@ -67,8 +67,8 @@ object mod extends js.Object {
   def useMutation[TData, TVariables](mutation: DocumentNode, options: MutationHookOptions[TData, TVariables]): MutationTuple[TData, TVariables] = js.native
   def useQuery[TData, TVariables](query: DocumentNode): QueryResult[TData, TVariables] = js.native
   def useQuery[TData, TVariables](query: DocumentNode, options: QueryHookOptions[TData, TVariables]): QueryResult[TData, TVariables] = js.native
-  def useSubscription[TData, TVariables](subscription: DocumentNode): AnonError[TVariables, TData] = js.native
-  def useSubscription[TData, TVariables](subscription: DocumentNode, options: SubscriptionHookOptions[TData, TVariables]): AnonError[TVariables, TData] = js.native
+  def useSubscription[TData, TVariables](subscription: DocumentNode): Error[TVariables, TData] = js.native
+  def useSubscription[TData, TVariables](subscription: DocumentNode, options: SubscriptionHookOptions[TData, TVariables]): Error[TVariables, TData] = js.native
   @JSName("withApollo")
   def withApollo_client[TProps, TResult](WrappedComponent: ComponentType[WithApolloClient[Omit[TProps, client]]]): ComponentClass[Omit[TProps, client], ComponentState] = js.native
   @JSName("withApollo")

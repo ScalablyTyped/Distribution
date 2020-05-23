@@ -87,7 +87,13 @@ object reactPlotlyJsStrings {
   sealed trait x extends js.Object
   
   @js.native
+  sealed trait `x unified` extends js.Object
+  
+  @js.native
   sealed trait y extends js.Object
+  
+  @js.native
+  sealed trait `y unified` extends js.Object
   
   @js.native
   sealed trait zoom extends js.Object
@@ -147,7 +153,11 @@ object reactPlotlyJsStrings {
   @scala.inline
   def x: x = "x".asInstanceOf[x]
   @scala.inline
+  def `x unified`: `x unified` = ("x unified").asInstanceOf[`x unified`]
+  @scala.inline
   def y: y = "y".asInstanceOf[y]
+  @scala.inline
+  def `y unified`: `y unified` = ("y unified").asInstanceOf[`y unified`]
   @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
 }

@@ -1,9 +1,9 @@
 package typings.gapiClientGenomics.gapi.client.genomics
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGenomics.AnonAccesstoken
-import typings.gapiClientGenomics.AnonAnnotationSetId
-import typings.gapiClientGenomics.AnonBearertoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientGenomics.anon.Accesstoken
+import typings.gapiClientGenomics.anon.AnnotationSetId
+import typings.gapiClientGenomics.anon.Bearertoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,17 +21,17 @@ trait AnnotationsetsResource extends js.Object {
     * All other fields may be optionally specified, unless documented as being
     * server-generated (for example, the `id` field).
     */
-  def create(request: AnonAccesstoken): Request_[AnnotationSet]
+  def create(request: Accesstoken): Request[AnnotationSet]
   /**
     * Deletes an annotation set. Caller must have WRITE permission
     * for the associated annotation set.
     */
-  def delete(request: AnonAnnotationSetId): Request_[js.Object]
+  def delete(request: AnnotationSetId): Request[js.Object]
   /**
     * Gets an annotation set. Caller must have READ permission for
     * the associated dataset.
     */
-  def get(request: AnonAnnotationSetId): Request_[AnnotationSet]
+  def get(request: AnnotationSetId): Request[AnnotationSet]
   /**
     * Searches for annotation sets that match the given criteria. Annotation sets
     * are returned in an unspecified order. This order is consistent, such that
@@ -39,23 +39,23 @@ trait AnnotationsetsResource extends js.Object {
     * sets in the same order across their respective streams of paginated
     * responses. Caller must have READ permission for the queried datasets.
     */
-  def search(request: AnonAccesstoken): Request_[SearchAnnotationSetsResponse]
+  def search(request: Accesstoken): Request[SearchAnnotationSetsResponse]
   /**
     * Updates an annotation set. The update must respect all mutability
     * restrictions and other invariants described on the annotation set resource.
     * Caller must have WRITE permission for the associated dataset.
     */
-  def update(request: AnonBearertoken): Request_[AnnotationSet]
+  def update(request: Bearertoken): Request[AnnotationSet]
 }
 
 object AnnotationsetsResource {
   @scala.inline
   def apply(
-    create: AnonAccesstoken => Request_[AnnotationSet],
-    delete: AnonAnnotationSetId => Request_[js.Object],
-    get: AnonAnnotationSetId => Request_[AnnotationSet],
-    search: AnonAccesstoken => Request_[SearchAnnotationSetsResponse],
-    update: AnonBearertoken => Request_[AnnotationSet]
+    create: Accesstoken => Request[AnnotationSet],
+    delete: AnnotationSetId => Request[js.Object],
+    get: AnnotationSetId => Request[AnnotationSet],
+    search: Accesstoken => Request[SearchAnnotationSetsResponse],
+    update: Bearertoken => Request[AnnotationSet]
   ): AnnotationsetsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[AnnotationsetsResource]

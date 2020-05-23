@@ -1,6 +1,6 @@
 package typings.libphonenumberJs.mod
 
-import typings.libphonenumberJs.AnonDefaultCallingCode
+import typings.libphonenumberJs.anon.DefaultCallingCode
 import typings.libphonenumberJs.typesMod.CountryCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("libphonenumber-js", "AsYouType")
 @js.native
 class AsYouType () extends js.Object {
-  def this(defaultCountryCode: AnonDefaultCallingCode) = this()
+  def this(defaultCountryCode: DefaultCallingCode) = this()
   def this(defaultCountryCode: CountryCode) = this()
   var country: js.UndefOr[CountryCode] = js.native
   def getNationalNumber(): String = js.native

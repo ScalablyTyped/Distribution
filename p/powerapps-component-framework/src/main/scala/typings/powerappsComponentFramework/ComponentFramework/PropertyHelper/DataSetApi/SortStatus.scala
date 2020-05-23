@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Current sort status of a dataset column
-			 */
+  * Current sort status of a dataset column
+  */
 trait SortStatus extends js.Object {
   /**
-  				 * The name of the column
-  				 */
+    * The name of the column
+    */
   var name: String
   /**
-  				 * The current sort direction for the column.
-  				 */
+    * The current sort direction for the column.
+    */
   var sortDirection: SortDirection
 }
 

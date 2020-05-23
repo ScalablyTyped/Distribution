@@ -18,7 +18,7 @@ object SuperError {
     causedBy: Error => SuperError,
     message: String,
     name: String,
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
+    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     stack: String = null
   ): SuperError = {
     val __obj = js.Dynamic.literal(causedBy = js.Any.fromFunction1(causedBy), message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])

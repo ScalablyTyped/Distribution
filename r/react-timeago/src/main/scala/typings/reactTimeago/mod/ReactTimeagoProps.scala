@@ -20,24 +20,24 @@ trait ReactTimeagoProps[T /* <: ComponentType[js.Object] */] extends js.Object {
 
 object ReactTimeagoProps {
   @scala.inline
-  def apply[T /* <: ComponentType[js.Object] */](
+  def apply[T](
     date: String | Double | Date,
     component: String | T = null,
     formatter: (/* value */ Double, /* unit */ Unit, /* suffix */ Suffix, /* epochMiliseconds */ Double, /* nextFormatter */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-timeago.react-timeago.Formatter */ js.Object
     ]) => ReactNode = null,
     live: js.UndefOr[Boolean] = js.undefined,
-    maxPeriod: Int | Double = null,
-    minPeriod: Int | Double = null,
+    maxPeriod: js.UndefOr[Double] = js.undefined,
+    minPeriod: js.UndefOr[Double] = js.undefined,
     now: () => Double = null,
     title: String = null
   ): ReactTimeagoProps[T] = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction5(formatter))
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
-    if (maxPeriod != null) __obj.updateDynamic("maxPeriod")(maxPeriod.asInstanceOf[js.Any])
-    if (minPeriod != null) __obj.updateDynamic("minPeriod")(minPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPeriod)) __obj.updateDynamic("maxPeriod")(maxPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPeriod)) __obj.updateDynamic("minPeriod")(minPeriod.get.asInstanceOf[js.Any])
     if (now != null) __obj.updateDynamic("now")(js.Any.fromFunction0(now))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactTimeagoProps[T]]

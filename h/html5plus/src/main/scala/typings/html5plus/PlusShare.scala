@@ -62,7 +62,7 @@ trait PlusShare extends js.Object {
   /**
     * JSON对象，微信小程序信息
     * 用于配置分享小程序的参数，如小程序标识、页面路径等。
-    * 	注意：分享的小程序需要在微信开放平台关联的开发者账号下，否则会分享失败。
+    *     注意：分享的小程序需要在微信开放平台关联的开发者账号下，否则会分享失败。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
@@ -82,7 +82,7 @@ trait PlusShare extends js.Object {
   /**
     * 使用系统组件发送分享
     * 调用系统分享组件分享消息，通过msg参数设置分享内容。
-    * 	发送成功后通过successCB回调函数通知操作完成，发送失败则通过errorCB回调返回。
+    *     发送成功后通过successCB回调函数通知操作完成，发送失败则通过errorCB回调返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */

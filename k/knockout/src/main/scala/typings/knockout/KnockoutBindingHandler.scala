@@ -1,6 +1,7 @@
 package typings.knockout
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.knockout.anon.ControlsDescendantBindings
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,7 @@ trait KnockoutBindingHandler[E /* <: Node */, V, VM]
       /* allBindingsAccessor */ KnockoutAllBindingsAccessor, 
       /* viewModel */ VM, 
       /* bindingContext */ KnockoutBindingContext, 
-      Unit | AnonControlsDescendantBindings
+      Unit | ControlsDescendantBindings
     ]
   ] = js.undefined
   var options: js.UndefOr[js.Any] = js.undefined
@@ -42,10 +43,10 @@ trait KnockoutBindingHandler[E /* <: Node */, V, VM]
 
 object KnockoutBindingHandler {
   @scala.inline
-  def apply[E /* <: Node */, V, VM](
-    StringDictionary: /* s */ StringDictionary[js.Any] = null,
+  def apply[E, V, VM](
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     after: js.Array[String] = null,
-    init: (/* element */ E, /* valueAccessor */ js.Function0[V], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, /* viewModel */ VM, /* bindingContext */ KnockoutBindingContext) => Unit | AnonControlsDescendantBindings = null,
+    init: (/* element */ E, /* valueAccessor */ js.Function0[V], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, /* viewModel */ VM, /* bindingContext */ KnockoutBindingContext) => Unit | ControlsDescendantBindings = null,
     options: js.Any = null,
     preprocess: (/* value */ String, /* name */ String, /* addBindingCallback */ js.UndefOr[js.Function2[/* name */ String, /* value */ String, Unit]]) => String = null,
     update: (/* element */ E, /* valueAccessor */ js.Function0[V], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, /* viewModel */ VM, /* bindingContext */ KnockoutBindingContext) => Unit = null

@@ -33,7 +33,7 @@ object AccountCoverage {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
-    priority: Int | Double = null
+    priority: js.UndefOr[positiveInt] = js.undefined
   ): AccountCoverage = {
     val __obj = js.Dynamic.literal(coverage = coverage.asInstanceOf[js.Any])
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
@@ -43,7 +43,7 @@ object AccountCoverage {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountCoverage]
   }
 }

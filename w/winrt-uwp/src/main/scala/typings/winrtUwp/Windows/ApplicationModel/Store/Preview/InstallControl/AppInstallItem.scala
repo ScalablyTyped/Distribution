@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an app that is in the installation queue. */
-@JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem")
 @js.native
-abstract class AppInstallItem () extends js.Object {
+trait AppInstallItem extends js.Object {
   /** Gets the type of the current app install. */
   var installType: AppInstallType = js.native
   /** Indicates whether the current app install was initiated by the user. */

@@ -113,41 +113,41 @@ object ChartSeriesItem {
     extremes: ChartSeriesItemExtremes = null,
     field: String = null,
     fromField: String = null,
-    gap: Int | Double = null,
+    gap: js.UndefOr[Double] = js.undefined,
     highField: String = null,
     highlight: ChartSeriesItemHighlight = null,
-    holeSize: Int | Double = null,
+    holeSize: js.UndefOr[Double] = js.undefined,
     labels: ChartSeriesItemLabels = null,
     line: String | ChartSeriesItemLine = null,
     lowField: String = null,
     lowerField: String = null,
     margin: Double | ChartSeriesItemMargin = null,
     markers: ChartSeriesItemMarkers = null,
-    maxSize: Int | Double = null,
+    maxSize: js.UndefOr[Double] = js.undefined,
     meanField: String = null,
     medianField: String = null,
-    minSize: Int | Double = null,
+    minSize: js.UndefOr[Double] = js.undefined,
     missingValues: String = null,
     name: String = null,
-    neckRatio: Int | Double = null,
+    neckRatio: js.UndefOr[Double] = js.undefined,
     negativeColor: String = null,
     negativeValues: ChartSeriesItemNegativeValues = null,
     noteTextField: String = null,
     notes: ChartSeriesItemNotes = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     openField: String = null,
     outliers: ChartSeriesItemOutliers = null,
     outliersField: String = null,
     overlay: ChartSeriesItemOverlay = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     q1Field: String = null,
     q3Field: String = null,
-    segmentSpacing: Int | Double = null,
-    size: Int | Double = null,
+    segmentSpacing: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
     sizeField: String = null,
-    spacing: Int | Double = null,
+    spacing: js.UndefOr[Double] = js.undefined,
     stack: Boolean | String | ChartSeriesItemStack = null,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     style: String = null,
     summaryField: String = null,
     target: ChartSeriesItemTarget = null,
@@ -160,7 +160,7 @@ object ChartSeriesItem {
     visibleInLegend: js.UndefOr[Boolean] = js.undefined,
     visibleInLegendField: String = null,
     visual: js.Function = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     xAxis: String = null,
     xErrorHighField: String = null,
     xErrorLowField: String = null,
@@ -169,7 +169,7 @@ object ChartSeriesItem {
     yErrorHighField: String = null,
     yErrorLowField: String = null,
     yField: String = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): ChartSeriesItem = {
     val __obj = js.Dynamic.literal()
     if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
@@ -186,8 +186,8 @@ object ChartSeriesItem {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (downColor != null) __obj.updateDynamic("downColor")(downColor.asInstanceOf[js.Any])
     if (downColorField != null) __obj.updateDynamic("downColorField")(downColorField.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicHeight)) __obj.updateDynamic("dynamicHeight")(dynamicHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicSlope)) __obj.updateDynamic("dynamicSlope")(dynamicSlope.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicHeight)) __obj.updateDynamic("dynamicHeight")(dynamicHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicSlope)) __obj.updateDynamic("dynamicSlope")(dynamicSlope.get.asInstanceOf[js.Any])
     if (errorBars != null) __obj.updateDynamic("errorBars")(errorBars.asInstanceOf[js.Any])
     if (errorHighField != null) __obj.updateDynamic("errorHighField")(errorHighField.asInstanceOf[js.Any])
     if (errorLowField != null) __obj.updateDynamic("errorLowField")(errorLowField.asInstanceOf[js.Any])
@@ -195,41 +195,41 @@ object ChartSeriesItem {
     if (extremes != null) __obj.updateDynamic("extremes")(extremes.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (fromField != null) __obj.updateDynamic("fromField")(fromField.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (highField != null) __obj.updateDynamic("highField")(highField.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (holeSize != null) __obj.updateDynamic("holeSize")(holeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(holeSize)) __obj.updateDynamic("holeSize")(holeSize.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (lowField != null) __obj.updateDynamic("lowField")(lowField.asInstanceOf[js.Any])
     if (lowerField != null) __obj.updateDynamic("lowerField")(lowerField.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
     if (meanField != null) __obj.updateDynamic("meanField")(meanField.asInstanceOf[js.Any])
     if (medianField != null) __obj.updateDynamic("medianField")(medianField.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     if (missingValues != null) __obj.updateDynamic("missingValues")(missingValues.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (neckRatio != null) __obj.updateDynamic("neckRatio")(neckRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(neckRatio)) __obj.updateDynamic("neckRatio")(neckRatio.get.asInstanceOf[js.Any])
     if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
     if (negativeValues != null) __obj.updateDynamic("negativeValues")(negativeValues.asInstanceOf[js.Any])
     if (noteTextField != null) __obj.updateDynamic("noteTextField")(noteTextField.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (openField != null) __obj.updateDynamic("openField")(openField.asInstanceOf[js.Any])
     if (outliers != null) __obj.updateDynamic("outliers")(outliers.asInstanceOf[js.Any])
     if (outliersField != null) __obj.updateDynamic("outliersField")(outliersField.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (q1Field != null) __obj.updateDynamic("q1Field")(q1Field.asInstanceOf[js.Any])
     if (q3Field != null) __obj.updateDynamic("q3Field")(q3Field.asInstanceOf[js.Any])
-    if (segmentSpacing != null) __obj.updateDynamic("segmentSpacing")(segmentSpacing.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(segmentSpacing)) __obj.updateDynamic("segmentSpacing")(segmentSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (sizeField != null) __obj.updateDynamic("sizeField")(sizeField.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (summaryField != null) __obj.updateDynamic("summaryField")(summaryField.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
@@ -238,11 +238,11 @@ object ChartSeriesItem {
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (upperField != null) __obj.updateDynamic("upperField")(upperField.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend.get.asInstanceOf[js.Any])
     if (visibleInLegendField != null) __obj.updateDynamic("visibleInLegendField")(visibleInLegendField.asInstanceOf[js.Any])
     if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (xErrorHighField != null) __obj.updateDynamic("xErrorHighField")(xErrorHighField.asInstanceOf[js.Any])
     if (xErrorLowField != null) __obj.updateDynamic("xErrorLowField")(xErrorLowField.asInstanceOf[js.Any])
@@ -251,7 +251,7 @@ object ChartSeriesItem {
     if (yErrorHighField != null) __obj.updateDynamic("yErrorHighField")(yErrorHighField.asInstanceOf[js.Any])
     if (yErrorLowField != null) __obj.updateDynamic("yErrorLowField")(yErrorLowField.asInstanceOf[js.Any])
     if (yField != null) __obj.updateDynamic("yField")(yField.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesItem]
   }
 }

@@ -85,7 +85,7 @@ trait IWidgetTracker[T /* <: Widget */] extends IDisposable {
 
 object IWidgetTracker {
   @scala.inline
-  def apply[T /* <: Widget */](
+  def apply[T](
     currentChanged: ISignal[IWidgetTracker[T], T | Null],
     dispose: () => Unit,
     filter: js.Function1[/* obj */ T, Boolean] => js.Array[T],
@@ -100,8 +100,7 @@ object IWidgetTracker {
     widgetUpdated: ISignal[IWidgetTracker[T], T],
     currentWidget: T = null
   ): IWidgetTracker[T] = {
-    val __obj = js.Dynamic.literal(currentChanged = currentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), inject = js.Any.fromFunction1(inject), isDisposed = isDisposed.asInstanceOf[js.Any], restored = restored.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], widgetAdded = widgetAdded.asInstanceOf[js.Any], widgetUpdated = widgetUpdated.asInstanceOf[js.Any])
-    if (currentWidget != null) __obj.updateDynamic("currentWidget")(currentWidget.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currentChanged = currentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), inject = js.Any.fromFunction1(inject), isDisposed = isDisposed.asInstanceOf[js.Any], restored = restored.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], widgetAdded = widgetAdded.asInstanceOf[js.Any], widgetUpdated = widgetUpdated.asInstanceOf[js.Any], currentWidget = currentWidget.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWidgetTracker[T]]
   }
 }

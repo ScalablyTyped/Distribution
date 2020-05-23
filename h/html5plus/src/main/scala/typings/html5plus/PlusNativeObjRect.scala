@@ -14,9 +14,9 @@ trait PlusNativeObjRect extends js.Object {
   /**
     * 区域的高度
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于作用对象的高度。
-    * 		内容自适应，如"wrap_content"，根据内容计算高度（如调用drawText绘制文本时支持）。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于作用对象的高度。
+    *         内容自适应，如"wrap_content"，根据内容计算高度（如调用drawText绘制文本时支持）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -24,9 +24,9 @@ trait PlusNativeObjRect extends js.Object {
   /**
     * 区域左上角的水平偏移量
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于作用对象的宽度；
-    * 		自动计算，如"auto",根据width值自动计算，相对于作用对象水平居中。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于作用对象的宽度；
+    *         自动计算，如"auto",根据width值自动计算，相对于作用对象水平居中。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -34,9 +34,9 @@ trait PlusNativeObjRect extends js.Object {
   /**
     * 区域左上角的垂直偏移量
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于作用对象的高度；
-    * 		自动计算，如"auto",根据height值自动计算，相对于作用对象垂直居中。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于作用对象的高度；
+    *         自动计算，如"auto",根据height值自动计算，相对于作用对象垂直居中。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -44,8 +44,8 @@ trait PlusNativeObjRect extends js.Object {
   /**
     * 区域的宽度
     * 可取值：
-    * 		像素值，如"100px"；
-    * 		百分比，如"10%"，相对于作用对象的宽度。
+    *         像素值，如"100px"；
+    *         百分比，如"10%"，相对于作用对象的宽度。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */

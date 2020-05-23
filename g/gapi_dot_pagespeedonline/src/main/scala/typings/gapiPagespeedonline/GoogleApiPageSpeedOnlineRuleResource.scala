@@ -1,5 +1,6 @@
 package typings.gapiPagespeedonline
 
+import typings.gapiPagespeedonline.anon.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,12 +21,12 @@ trait GoogleApiPageSpeedOnlineRuleResource extends js.Object {
   /**
     * List of blocks of URLs. Each block may contain a heading and a list of URLs. Each URL may optionally include additional details.
     */
-  var urlBlocks: js.Array[AnonHeader]
+  var urlBlocks: js.Array[Header]
 }
 
 object GoogleApiPageSpeedOnlineRuleResource {
   @scala.inline
-  def apply(localizedRuleName: String, ruleImpact: Double, ruleScore: Double, urlBlocks: js.Array[AnonHeader]): GoogleApiPageSpeedOnlineRuleResource = {
+  def apply(localizedRuleName: String, ruleImpact: Double, ruleScore: Double, urlBlocks: js.Array[Header]): GoogleApiPageSpeedOnlineRuleResource = {
     val __obj = js.Dynamic.literal(localizedRuleName = localizedRuleName.asInstanceOf[js.Any], ruleImpact = ruleImpact.asInstanceOf[js.Any], ruleScore = ruleScore.asInstanceOf[js.Any], urlBlocks = urlBlocks.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiPageSpeedOnlineRuleResource]
   }

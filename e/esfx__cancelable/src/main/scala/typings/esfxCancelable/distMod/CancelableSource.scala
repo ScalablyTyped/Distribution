@@ -15,7 +15,7 @@ object CancelableSource extends js.Object {
     * A well-known symbol used to define a method to retrieve the `CancelSignal` for an object.
     */
   val cancelSignal: js.Symbol = js.native
-  val name: typings.esfxCancelable.esfxCancelableStrings.CancelableSource = js.native
+  val name: /* "CancelableSource" */ String = js.native
   /**
     * Determines whether a value is a `CancelableSource` object.
     */

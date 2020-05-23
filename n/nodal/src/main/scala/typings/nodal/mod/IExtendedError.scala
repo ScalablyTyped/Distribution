@@ -21,7 +21,7 @@ object IExtendedError {
   ): IExtendedError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (!js.isUndefined(notFound)) __obj.updateDynamic("notFound")(notFound.asInstanceOf[js.Any])
+    if (!js.isUndefined(notFound)) __obj.updateDynamic("notFound")(notFound.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExtendedError]
   }

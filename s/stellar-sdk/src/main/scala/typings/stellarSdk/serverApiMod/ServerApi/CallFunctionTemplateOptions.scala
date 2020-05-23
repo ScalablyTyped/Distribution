@@ -14,10 +14,10 @@ trait CallFunctionTemplateOptions extends js.Object {
 
 object CallFunctionTemplateOptions {
   @scala.inline
-  def apply(cursor: String | Double = null, limit: Int | Double = null, order: asc | desc = null): CallFunctionTemplateOptions = {
+  def apply(cursor: String | Double = null, limit: js.UndefOr[Double] = js.undefined, order: asc | desc = null): CallFunctionTemplateOptions = {
     val __obj = js.Dynamic.literal()
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallFunctionTemplateOptions]
   }

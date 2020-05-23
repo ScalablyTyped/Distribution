@@ -6,6 +6,8 @@ import typings.qunit.QUnit.LogDetails
 import typings.qunit.QUnit.ModuleDoneDetails
 import typings.qunit.QUnit.ModuleStartDetails
 import typings.qunit.QUnit.TestStartDetails
+import typings.qunit.anon.Failed
+import typings.qunit.anon.MaxDepth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +46,7 @@ trait QUnit_ extends js.Object {
     * Note: This method used to be in QUnit.jsDump, which was changed to
     * QUnit.dump. The old property will be removed in QUnit 3.0.
     */
-  var dump: AnonMaxDepth = js.native
+  var dump: MaxDepth = js.native
   /**
     * Are the test running from the server or not.
     */
@@ -286,7 +288,7 @@ trait QUnit_ extends js.Object {
     *
     * @param callback Callback to execute
     */
-  def testDone(callback: js.Function1[/* details */ AnonFailed, Unit]): Unit = js.native
+  def testDone(callback: js.Function1[/* details */ Failed, Unit]): Unit = js.native
   /**
     * Register a callback to fire whenever a test begins.
     *

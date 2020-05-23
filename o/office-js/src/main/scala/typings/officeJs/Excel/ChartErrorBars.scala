@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartErrorBarsData
 import typings.officeJs.Excel.Interfaces.ChartErrorBarsLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartErrorBarsUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Both
 import typings.officeJs.officeJsStrings.Custom
 import typings.officeJs.officeJsStrings.FixedValue
@@ -24,15 +24,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ChartErrorBars")
 @js.native
-class ChartErrorBars () extends ClientObject {
+trait ChartErrorBars extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartErrorBars: RequestContext = js.native
   /**
     *
-    * Specifies whether or not the error bars have an end style cap.
+    * Specifies if error bars have an end style cap.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -60,7 +59,7 @@ class ChartErrorBars () extends ClientObject {
   var `type`: ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom = js.native
   /**
     *
-    * Specifies whether or not the error bars are displayed.
+    * Specifies whether the error bars are displayed.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -72,7 +71,7 @@ class ChartErrorBars () extends ClientObject {
     */
   def load(): ChartErrorBars = js.native
   def load(options: ChartErrorBarsLoadOptions): ChartErrorBars = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartErrorBars = js.native
+  def load(propertyNamesAndPaths: Expand): ChartErrorBars = js.native
   def load(propertyNames: String): ChartErrorBars = js.native
   def load(propertyNames: js.Array[String]): ChartErrorBars = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

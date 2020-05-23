@@ -28,13 +28,13 @@ object StockChartSeriesDefaults {
     border: StockChartSeriesDefaultsBorder = null,
     candlestick: js.Any = null,
     column: js.Any = null,
-    gap: Int | Double = null,
+    gap: js.UndefOr[Double] = js.undefined,
     labels: StockChartSeriesDefaultsLabels = null,
     line: js.Any = null,
     ohlc: js.Any = null,
     overlay: js.Any = null,
     pie: js.Any = null,
-    spacing: Int | Double = null,
+    spacing: js.UndefOr[Double] = js.undefined,
     stack: Boolean | StockChartSeriesDefaultsStack = null,
     tooltip: StockChartSeriesDefaultsTooltip = null,
     `type`: String = null
@@ -44,13 +44,13 @@ object StockChartSeriesDefaults {
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (candlestick != null) __obj.updateDynamic("candlestick")(candlestick.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (ohlc != null) __obj.updateDynamic("ohlc")(ohlc.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (pie != null) __obj.updateDynamic("pie")(pie.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

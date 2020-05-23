@@ -198,7 +198,7 @@ object Options {
     isHotspot: js.UndefOr[Boolean] = js.undefined,
     jogEnable: js.UndefOr[Boolean] = js.undefined,
     keyboardEnable: js.UndefOr[Boolean] = js.undefined,
-    labelzIndex: Int | Double = null,
+    labelzIndex: js.UndefOr[Double] = js.undefined,
     lang: Lang = null,
     layers: js.Array[Layer] = null,
     logoUrl: String = null,
@@ -207,75 +207,75 @@ object Options {
     mask: js.Array[
       (js.Array[(js.Array[js.Tuple2[Double, Double]]) | (js.Tuple2[Double, Double])]) | (js.Tuple2[Double, Double])
     ] = null,
-    maxPitch: Int | Double = null,
+    maxPitch: js.UndefOr[Double] = js.undefined,
     overlayRender: c | d = null,
-    pitch: Int | Double = null,
+    pitch: js.UndefOr[Double] = js.undefined,
     pitchEnable: js.UndefOr[Boolean] = js.undefined,
     preloadMode: js.UndefOr[Boolean] = js.undefined,
     resizeEnable: js.UndefOr[Boolean] = js.undefined,
     rotateEnable: js.UndefOr[Boolean] = js.undefined,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     scrollWheel: js.UndefOr[Boolean] = js.undefined,
     showBuildingBlock: js.UndefOr[Boolean] = js.undefined,
     showIndoorMap: js.UndefOr[Boolean] = js.undefined,
     showLabel: js.UndefOr[Boolean] = js.undefined,
     skyColor: String = null,
     touchZoom: js.UndefOr[Boolean] = js.undefined,
-    touchZoomCenter: Int | Double = null,
+    touchZoomCenter: js.UndefOr[Double] = js.undefined,
     turboMode: js.UndefOr[Boolean] = js.undefined,
     view: View2D = null,
     viewMode: ViewMode = null,
     workerMode: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null,
+    zoom: js.UndefOr[Double] = js.undefined,
     zoomEnable: js.UndefOr[Boolean] = js.undefined,
     zooms: js.Tuple2[Double, Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animateEnable)) __obj.updateDynamic("animateEnable")(animateEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateEnable)) __obj.updateDynamic("animateEnable")(animateEnable.get.asInstanceOf[js.Any])
     if (baseRender != null) __obj.updateDynamic("baseRender")(baseRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(buildingAnimation)) __obj.updateDynamic("buildingAnimation")(buildingAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(buildingAnimation)) __obj.updateDynamic("buildingAnimation")(buildingAnimation.get.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     if (crs != null) __obj.updateDynamic("crs")(crs.asInstanceOf[js.Any])
     if (defaultCursor != null) __obj.updateDynamic("defaultCursor")(defaultCursor.asInstanceOf[js.Any])
     if (defaultLayer != null) __obj.updateDynamic("defaultLayer")(defaultLayer.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragEnable)) __obj.updateDynamic("dragEnable")(dragEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandZoomRange)) __obj.updateDynamic("expandZoomRange")(expandZoomRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragEnable)) __obj.updateDynamic("dragEnable")(dragEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandZoomRange)) __obj.updateDynamic("expandZoomRange")(expandZoomRange.get.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceVector)) __obj.updateDynamic("forceVector")(forceVector.asInstanceOf[js.Any])
-    if (!js.isUndefined(gridMapForeign)) __obj.updateDynamic("gridMapForeign")(gridMapForeign.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHotspot)) __obj.updateDynamic("isHotspot")(isHotspot.asInstanceOf[js.Any])
-    if (!js.isUndefined(jogEnable)) __obj.updateDynamic("jogEnable")(jogEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardEnable)) __obj.updateDynamic("keyboardEnable")(keyboardEnable.asInstanceOf[js.Any])
-    if (labelzIndex != null) __obj.updateDynamic("labelzIndex")(labelzIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceVector)) __obj.updateDynamic("forceVector")(forceVector.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridMapForeign)) __obj.updateDynamic("gridMapForeign")(gridMapForeign.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHotspot)) __obj.updateDynamic("isHotspot")(isHotspot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jogEnable)) __obj.updateDynamic("jogEnable")(jogEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardEnable)) __obj.updateDynamic("keyboardEnable")(keyboardEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelzIndex)) __obj.updateDynamic("labelzIndex")(labelzIndex.get.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (logoUrl != null) __obj.updateDynamic("logoUrl")(logoUrl.asInstanceOf[js.Any])
     if (logoUrlRetina != null) __obj.updateDynamic("logoUrlRetina")(logoUrlRetina.asInstanceOf[js.Any])
     if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (maxPitch != null) __obj.updateDynamic("maxPitch")(maxPitch.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPitch)) __obj.updateDynamic("maxPitch")(maxPitch.get.asInstanceOf[js.Any])
     if (overlayRender != null) __obj.updateDynamic("overlayRender")(overlayRender.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitchEnable)) __obj.updateDynamic("pitchEnable")(pitchEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(preloadMode)) __obj.updateDynamic("preloadMode")(preloadMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeEnable)) __obj.updateDynamic("resizeEnable")(resizeEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateEnable)) __obj.updateDynamic("rotateEnable")(rotateEnable.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollWheel)) __obj.updateDynamic("scrollWheel")(scrollWheel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBuildingBlock)) __obj.updateDynamic("showBuildingBlock")(showBuildingBlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIndoorMap)) __obj.updateDynamic("showIndoorMap")(showIndoorMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitchEnable)) __obj.updateDynamic("pitchEnable")(pitchEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preloadMode)) __obj.updateDynamic("preloadMode")(preloadMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeEnable)) __obj.updateDynamic("resizeEnable")(resizeEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateEnable)) __obj.updateDynamic("rotateEnable")(rotateEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollWheel)) __obj.updateDynamic("scrollWheel")(scrollWheel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBuildingBlock)) __obj.updateDynamic("showBuildingBlock")(showBuildingBlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIndoorMap)) __obj.updateDynamic("showIndoorMap")(showIndoorMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel.get.asInstanceOf[js.Any])
     if (skyColor != null) __obj.updateDynamic("skyColor")(skyColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.asInstanceOf[js.Any])
-    if (touchZoomCenter != null) __obj.updateDynamic("touchZoomCenter")(touchZoomCenter.asInstanceOf[js.Any])
-    if (!js.isUndefined(turboMode)) __obj.updateDynamic("turboMode")(turboMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchZoomCenter)) __obj.updateDynamic("touchZoomCenter")(touchZoomCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(turboMode)) __obj.updateDynamic("turboMode")(turboMode.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(workerMode)) __obj.updateDynamic("workerMode")(workerMode.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomEnable)) __obj.updateDynamic("zoomEnable")(zoomEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(workerMode)) __obj.updateDynamic("workerMode")(workerMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEnable)) __obj.updateDynamic("zoomEnable")(zoomEnable.get.asInstanceOf[js.Any])
     if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

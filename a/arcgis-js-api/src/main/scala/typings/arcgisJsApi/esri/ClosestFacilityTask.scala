@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +18,4 @@ trait ClosestFacilityTask extends Task {
   def solve(params: ClosestFacilityParameters): js.Promise[ClosestFacilitySolveResult] = js.native
   def solve(params: ClosestFacilityParameters, requestOptions: js.Any): js.Promise[ClosestFacilitySolveResult] = js.native
 }
-
-@JSGlobal("__esri.ClosestFacilityTask")
-@js.native
-object ClosestFacilityTask extends TopLevel[ClosestFacilityTaskConstructor]
 

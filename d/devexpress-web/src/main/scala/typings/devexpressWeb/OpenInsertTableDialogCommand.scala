@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to invoke the Insert Table dialog.
   */
-@JSGlobal("OpenInsertTableDialogCommand")
-@js.native
-class OpenInsertTableDialogCommand () extends CommandWithSimpleStateBase {
+trait OpenInsertTableDialogCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the OpenInsertTableDialogCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object OpenInsertTableDialogCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): OpenInsertTableDialogCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[OpenInsertTableDialogCommand]
+  }
 }
 

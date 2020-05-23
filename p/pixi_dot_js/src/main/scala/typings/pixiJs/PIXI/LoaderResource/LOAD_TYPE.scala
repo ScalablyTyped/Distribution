@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI.LoaderResource
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object LOAD_TYPE extends js.Object {
   /** Uses XMLHttpRequest to load the resource. */
   @js.native
   sealed trait XHR extends LOAD_TYPE
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LOAD_TYPE with Double] = js.native
-  /* 3 */ @js.native
-  object AUDIO extends TopLevel[AUDIO with Double]
-  
-  /* 2 */ @js.native
-  object IMAGE extends TopLevel[IMAGE with Double]
-  
-  /* 4 */ @js.native
-  object VIDEO extends TopLevel[VIDEO with Double]
-  
-  /* 1 */ @js.native
-  object XHR extends TopLevel[XHR with Double]
   
 }
 

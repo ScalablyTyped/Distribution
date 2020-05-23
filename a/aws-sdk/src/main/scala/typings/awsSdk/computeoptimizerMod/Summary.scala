@@ -18,10 +18,10 @@ trait Summary extends js.Object {
 
 object Summary {
   @scala.inline
-  def apply(name: Finding = null, value: Int | Double = null): Summary = {
+  def apply(name: Finding = null, value: js.UndefOr[SummaryValue] = js.undefined): Summary = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Summary]
   }
 }

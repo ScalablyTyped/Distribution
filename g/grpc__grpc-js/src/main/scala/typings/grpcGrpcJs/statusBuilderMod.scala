@@ -1,9 +1,8 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.callStreamMod.StatusObject
+import typings.grpcGrpcJs.anon.PartialStatusObject
 import typings.grpcGrpcJs.constantsMod.Status
 import typings.grpcGrpcJs.metadataMod.Metadata
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,7 @@ object statusBuilderMod extends js.Object {
     /**
       * Builds the status object.
       */
-    def build(): Partial[StatusObject] = js.native
+    def build(): PartialStatusObject = js.native
     /**
       * Adds a status code to the builder.
       */

@@ -124,8 +124,8 @@ object ReactTagsProps {
     handleInputChange: /* input */ String => Unit = null,
     handleValidate: /* tag */ Tag => Boolean = null,
     inputAttributes: StringDictionary[js.Any] = null,
-    maxSuggestionsLength: Int | Double = null,
-    minQueryLength: Int | Double = null,
+    maxSuggestionsLength: js.UndefOr[Double] = js.undefined,
+    minQueryLength: js.UndefOr[Double] = js.undefined,
     noSuggestionsText: String = null,
     placeholder: String = null,
     suggestions: js.Array[Tag] = null,
@@ -134,13 +134,13 @@ object ReactTagsProps {
     tags: js.Array[Tag] = null
   ): ReactTagsProps = {
     val __obj = js.Dynamic.literal(handleAddition = js.Any.fromFunction1(handleAddition), handleDelete = js.Any.fromFunction1(handleDelete))
-    if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowBackspace)) __obj.updateDynamic("allowBackspace")(allowBackspace.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNew)) __obj.updateDynamic("allowNew")(allowNew.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoresize)) __obj.updateDynamic("autoresize")(autoresize.asInstanceOf[js.Any])
+    if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowBackspace)) __obj.updateDynamic("allowBackspace")(allowBackspace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNew)) __obj.updateDynamic("allowNew")(allowNew.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoresize)) __obj.updateDynamic("autoresize")(autoresize.get.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearInputOnDelete)) __obj.updateDynamic("clearInputOnDelete")(clearInputOnDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearInputOnDelete)) __obj.updateDynamic("clearInputOnDelete")(clearInputOnDelete.get.asInstanceOf[js.Any])
     if (delimiterChars != null) __obj.updateDynamic("delimiterChars")(delimiterChars.asInstanceOf[js.Any])
     if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters.asInstanceOf[js.Any])
     if (handleBlur != null) __obj.updateDynamic("handleBlur")(js.Any.fromFunction0(handleBlur))
@@ -148,8 +148,8 @@ object ReactTagsProps {
     if (handleInputChange != null) __obj.updateDynamic("handleInputChange")(js.Any.fromFunction1(handleInputChange))
     if (handleValidate != null) __obj.updateDynamic("handleValidate")(js.Any.fromFunction1(handleValidate))
     if (inputAttributes != null) __obj.updateDynamic("inputAttributes")(inputAttributes.asInstanceOf[js.Any])
-    if (maxSuggestionsLength != null) __obj.updateDynamic("maxSuggestionsLength")(maxSuggestionsLength.asInstanceOf[js.Any])
-    if (minQueryLength != null) __obj.updateDynamic("minQueryLength")(minQueryLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSuggestionsLength)) __obj.updateDynamic("maxSuggestionsLength")(maxSuggestionsLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minQueryLength)) __obj.updateDynamic("minQueryLength")(minQueryLength.get.asInstanceOf[js.Any])
     if (noSuggestionsText != null) __obj.updateDynamic("noSuggestionsText")(noSuggestionsText.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])

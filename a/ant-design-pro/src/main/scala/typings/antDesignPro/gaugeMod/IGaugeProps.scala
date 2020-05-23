@@ -20,13 +20,13 @@ object IGaugeProps {
   def apply(
     height: Double,
     percent: Double,
-    bgColor: Int | Double = null,
+    bgColor: js.UndefOr[Double] = js.undefined,
     color: String = null,
     style: CSSProperties = null,
     title: ReactNode = null
   ): IGaugeProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(bgColor)) __obj.updateDynamic("bgColor")(bgColor.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

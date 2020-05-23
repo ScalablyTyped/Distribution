@@ -1,7 +1,7 @@
 package typings.reactVirtualized.mod
 
-import typings.reactVirtualized.AnonClassNameBottomLeftGrid
-import typings.reactVirtualized.AnonClassNameBottomRightGrid
+import typings.reactVirtualized.anon.ClassNameBottomLeftGrid
+import typings.reactVirtualized.anon.ClassNameBottomRightGrid
 import typings.reactVirtualized.esMultiGridMod.MultiGridProps
 import typings.reactVirtualized.esMultiGridMod.MultiGridState
 import scala.scalajs.js
@@ -17,8 +17,8 @@ class MultiGrid ()
 @JSImport("react-virtualized", "MultiGrid")
 @js.native
 object MultiGrid extends js.Object {
-  var defaultProps: AnonClassNameBottomRightGrid = js.native
-  var propTypes: AnonClassNameBottomLeftGrid = js.native
+  var defaultProps: ClassNameBottomRightGrid = js.native
+  var propTypes: ClassNameBottomLeftGrid = js.native
   def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = js.native
 }
 

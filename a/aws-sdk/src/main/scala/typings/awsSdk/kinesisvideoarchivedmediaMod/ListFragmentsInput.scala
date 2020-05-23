@@ -17,7 +17,7 @@ trait ListFragmentsInput extends js.Object {
   /**
     * A token to specify where to start paginating. This is the ListFragmentsOutput$NextToken from a previously truncated response.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.NextToken] = js.native
   /**
     * The name of the stream from which to retrieve a fragment list.
     */
@@ -29,12 +29,12 @@ object ListFragmentsInput {
   def apply(
     StreamName: StreamName,
     FragmentSelector: FragmentSelector = null,
-    MaxResults: Int | Double = null,
-    NextToken: String = null
+    MaxResults: js.UndefOr[PageLimit] = js.undefined,
+    NextToken: NextToken = null
   ): ListFragmentsInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
     if (FragmentSelector != null) __obj.updateDynamic("FragmentSelector")(FragmentSelector.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFragmentsInput]
   }

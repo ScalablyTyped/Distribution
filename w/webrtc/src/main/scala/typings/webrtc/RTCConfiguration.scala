@@ -27,7 +27,7 @@ object RTCConfiguration {
   def apply(
     bundlePolicy: RTCBundlePolicy = null,
     certificates: js.Array[RTCCertificate] = null,
-    iceCandidatePoolSize: Int | Double = null,
+    iceCandidatePoolSize: js.UndefOr[Double] = js.undefined,
     iceServers: js.Array[RTCIceServer] = null,
     iceTransportPolicy: RTCIceTransportPolicy = null,
     peerIdentity: String = null,
@@ -36,7 +36,7 @@ object RTCConfiguration {
     val __obj = js.Dynamic.literal()
     if (bundlePolicy != null) __obj.updateDynamic("bundlePolicy")(bundlePolicy.asInstanceOf[js.Any])
     if (certificates != null) __obj.updateDynamic("certificates")(certificates.asInstanceOf[js.Any])
-    if (iceCandidatePoolSize != null) __obj.updateDynamic("iceCandidatePoolSize")(iceCandidatePoolSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(iceCandidatePoolSize)) __obj.updateDynamic("iceCandidatePoolSize")(iceCandidatePoolSize.get.asInstanceOf[js.Any])
     if (iceServers != null) __obj.updateDynamic("iceServers")(iceServers.asInstanceOf[js.Any])
     if (iceTransportPolicy != null) __obj.updateDynamic("iceTransportPolicy")(iceTransportPolicy.asInstanceOf[js.Any])
     if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity.asInstanceOf[js.Any])

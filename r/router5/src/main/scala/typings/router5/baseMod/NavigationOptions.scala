@@ -16,7 +16,7 @@ trait NavigationOptions
 object NavigationOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     force: js.UndefOr[Boolean] = js.undefined,
     reload: js.UndefOr[Boolean] = js.undefined,
     replace: js.UndefOr[Boolean] = js.undefined,
@@ -24,10 +24,10 @@ object NavigationOptions {
   ): NavigationOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipTransition)) __obj.updateDynamic("skipTransition")(skipTransition.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipTransition)) __obj.updateDynamic("skipTransition")(skipTransition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationOptions]
   }
 }

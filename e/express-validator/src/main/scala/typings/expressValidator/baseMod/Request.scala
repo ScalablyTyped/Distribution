@@ -18,7 +18,7 @@ trait Request
 object Request {
   @scala.inline
   def apply(
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     body: js.Any = null,
     cookies: Record[String, _] = null,
     headers: Record[String, _] = null,

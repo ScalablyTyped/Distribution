@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 
 trait FileOptions extends BaseOptions {
   /**
-  		 * contentType affects the value read from document.contentType, and how the document is parsed: as HTML or as XML.
-  		 * Values that are not "text/html" or an XML mime type will throw. It will default to "application/xhtml+xml" if
-  		 * the given filename ends in .xhtml or .xml; otherwise it will continue to default to "text/html".
-  		 */
+    * contentType affects the value read from document.contentType, and how the document is parsed: as HTML or as XML.
+    * Values that are not "text/html" or an XML mime type will throw. It will default to "application/xhtml+xml" if
+    * the given filename ends in .xhtml or .xml; otherwise it will continue to default to "text/html".
+    */
   var contentType: js.UndefOr[String] = js.undefined
   /**
-  		 * url sets the value returned by window.location, document.URL, and document.documentURI,
-  		 * and affects things like resolution of relative URLs within the document
-  		 * and the same-origin restrictions and referrer used while fetching subresources.
-  		 * It will default to a file URL corresponding to the given filename, instead of to "about:blank".
-  		 */
+    * url sets the value returned by window.location, document.URL, and document.documentURI,
+    * and affects things like resolution of relative URLs within the document
+    * and the same-origin restrictions and referrer used while fetching subresources.
+    * It will default to a file URL corresponding to the given filename, instead of to "about:blank".
+    */
   var url: js.UndefOr[String] = js.undefined
 }
 
@@ -42,8 +42,8 @@ object FileOptions {
     if (beforeParse != null) __obj.updateDynamic("beforeParse")(js.Any.fromFunction1(beforeParse))
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeNodeLocations)) __obj.updateDynamic("includeNodeLocations")(includeNodeLocations.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretendToBeVisual)) __obj.updateDynamic("pretendToBeVisual")(pretendToBeVisual.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNodeLocations)) __obj.updateDynamic("includeNodeLocations")(includeNodeLocations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretendToBeVisual)) __obj.updateDynamic("pretendToBeVisual")(pretendToBeVisual.get.asInstanceOf[js.Any])
     if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     if (runScripts != null) __obj.updateDynamic("runScripts")(runScripts.asInstanceOf[js.Any])

@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientDashboard.DashboardInitialized event.
   */
-@JSGlobal("ASPxClientDashboardInitializedEventArgs")
-@js.native
-class ASPxClientDashboardInitializedEventArgs () extends ASPxClientEventArgs {
+trait ASPxClientDashboardInitializedEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the dashboard's unique name.
     */
-  var DashboardId: String = js.native
+  var DashboardId: String
+}
+
+object ASPxClientDashboardInitializedEventArgs {
+  @scala.inline
+  def apply(DashboardId: String): ASPxClientDashboardInitializedEventArgs = {
+    val __obj = js.Dynamic.literal(DashboardId = DashboardId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientDashboardInitializedEventArgs]
+  }
 }
 

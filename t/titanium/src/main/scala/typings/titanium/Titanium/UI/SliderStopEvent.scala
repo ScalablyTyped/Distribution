@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the user stops tracking the slider.
-		 */
+  * Fired when the user stops tracking the slider.
+  */
 trait SliderStopEvent extends SliderBaseEvent {
   /**
-  			 * False. This event does not bubble.
-  			 */
+    * False. This event does not bubble.
+    */
   var bubbles: Boolean
   /**
-  			 * Current value of the slider.
-  			 */
+    * Current value of the slider.
+    */
   var value: Double
 }
 

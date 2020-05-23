@@ -66,7 +66,7 @@ object TableInput {
     Owner: NameString = null,
     Parameters: ParametersMap = null,
     PartitionKeys: ColumnList = null,
-    Retention: Int | Double = null,
+    Retention: js.UndefOr[NonNegativeInteger] = js.undefined,
     StorageDescriptor: StorageDescriptor = null,
     TableType: TableTypeString = null,
     ViewExpandedText: ViewTextString = null,
@@ -79,7 +79,7 @@ object TableInput {
     if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (PartitionKeys != null) __obj.updateDynamic("PartitionKeys")(PartitionKeys.asInstanceOf[js.Any])
-    if (Retention != null) __obj.updateDynamic("Retention")(Retention.asInstanceOf[js.Any])
+    if (!js.isUndefined(Retention)) __obj.updateDynamic("Retention")(Retention.get.asInstanceOf[js.Any])
     if (StorageDescriptor != null) __obj.updateDynamic("StorageDescriptor")(StorageDescriptor.asInstanceOf[js.Any])
     if (TableType != null) __obj.updateDynamic("TableType")(TableType.asInstanceOf[js.Any])
     if (ViewExpandedText != null) __obj.updateDynamic("ViewExpandedText")(ViewExpandedText.asInstanceOf[js.Any])

@@ -20,20 +20,20 @@ object PMDMessage {
   def apply(
     messageType: String,
     instrument: String = null,
-    orderNumber: Int | Double = null,
-    price: Int | Double = null,
-    quantity: Int | Double = null,
+    orderNumber: js.UndefOr[Double] = js.undefined,
+    price: js.UndefOr[Double] = js.undefined,
+    quantity: js.UndefOr[Double] = js.undefined,
     side: String = null,
-    timestamp: Int | Double = null,
+    timestamp: js.UndefOr[Double] = js.undefined,
     version: String = null
   ): PMDMessage = {
     val __obj = js.Dynamic.literal(messageType = messageType.asInstanceOf[js.Any])
     if (instrument != null) __obj.updateDynamic("instrument")(instrument.asInstanceOf[js.Any])
-    if (orderNumber != null) __obj.updateDynamic("orderNumber")(orderNumber.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderNumber)) __obj.updateDynamic("orderNumber")(orderNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(price)) __obj.updateDynamic("price")(price.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PMDMessage]
   }

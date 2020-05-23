@@ -11,10 +11,10 @@ trait IWallabyEnvironmentViewportSize extends js.Object {
 
 object IWallabyEnvironmentViewportSize {
   @scala.inline
-  def apply(height: Int | Double = null, width: Int | Double = null): IWallabyEnvironmentViewportSize = {
+  def apply(height: js.UndefOr[Double] = js.undefined, width: js.UndefOr[Double] = js.undefined): IWallabyEnvironmentViewportSize = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallabyEnvironmentViewportSize]
   }
 }

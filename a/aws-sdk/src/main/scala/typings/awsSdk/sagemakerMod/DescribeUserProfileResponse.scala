@@ -19,7 +19,7 @@ trait DescribeUserProfileResponse extends js.Object {
     */
   var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
   /**
-    * The homa Amazon Elastic File System (EFS) Uid.
+    * The home Amazon Elastic File System (EFS) Uid.
     */
   var HomeEfsFileSystemUid: js.UndefOr[EfsUid] = js.native
   /**

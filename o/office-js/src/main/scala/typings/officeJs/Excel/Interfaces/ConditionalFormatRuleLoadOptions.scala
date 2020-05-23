@@ -48,10 +48,10 @@ object ConditionalFormatRuleLoadOptions {
     formulaR1C1: js.UndefOr[Boolean] = js.undefined
   ): ConditionalFormatRuleLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(formula)) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (!js.isUndefined(formulaLocal)) __obj.updateDynamic("formulaLocal")(formulaLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(formulaR1C1)) __obj.updateDynamic("formulaR1C1")(formulaR1C1.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formula)) __obj.updateDynamic("formula")(formula.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulaLocal)) __obj.updateDynamic("formulaLocal")(formulaLocal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulaR1C1)) __obj.updateDynamic("formulaR1C1")(formulaR1C1.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalFormatRuleLoadOptions]
   }
 }

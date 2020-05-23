@@ -13,5 +13,5 @@ package object mod {
   type DefaultStateExtends = js.Any
   type Middleware[StateT, CustomT] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> */ js.Any
   type Next = js.Function0[js.Promise[js.Any]]
-  type ParameterizedContext[StateT, CustomT] = typings.koa.mod.ExtendableContext with typings.koa.AnonState[StateT] with CustomT
+  type ParameterizedContext[StateT, CustomT] = typings.koa.mod.ExtendableContext with typings.koa.anon.State[StateT] with CustomT
 }

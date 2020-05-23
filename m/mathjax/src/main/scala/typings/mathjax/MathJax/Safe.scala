@@ -47,16 +47,16 @@ object Safe {
     safeProtocols: SafeProtocols = null,
     safeRequire: SafeRequire = null,
     safeStyles: SafeStyles = null,
-    sizeMax: Int | Double = null,
-    sizeMin: Int | Double = null
+    sizeMax: js.UndefOr[Double] = js.undefined,
+    sizeMin: js.UndefOr[Double] = js.undefined
   ): Safe = {
     val __obj = js.Dynamic.literal()
     if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
     if (safeProtocols != null) __obj.updateDynamic("safeProtocols")(safeProtocols.asInstanceOf[js.Any])
     if (safeRequire != null) __obj.updateDynamic("safeRequire")(safeRequire.asInstanceOf[js.Any])
     if (safeStyles != null) __obj.updateDynamic("safeStyles")(safeStyles.asInstanceOf[js.Any])
-    if (sizeMax != null) __obj.updateDynamic("sizeMax")(sizeMax.asInstanceOf[js.Any])
-    if (sizeMin != null) __obj.updateDynamic("sizeMin")(sizeMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeMax)) __obj.updateDynamic("sizeMax")(sizeMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeMin)) __obj.updateDynamic("sizeMin")(sizeMin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Safe]
   }
 }

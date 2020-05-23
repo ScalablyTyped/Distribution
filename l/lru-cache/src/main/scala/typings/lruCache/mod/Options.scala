@@ -65,8 +65,8 @@ object Options {
   def apply[K, V](
     dispose: (/* key */ K, /* value */ V) => Unit = null,
     length: (/* value */ V, /* key */ js.UndefOr[K]) => Double = null,
-    max: Int | Double = null,
-    maxAge: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    maxAge: js.UndefOr[Double] = js.undefined,
     noDisposeOnSet: js.UndefOr[Boolean] = js.undefined,
     stale: js.UndefOr[Boolean] = js.undefined,
     updateAgeOnGet: js.UndefOr[Boolean] = js.undefined
@@ -74,11 +74,11 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction2(dispose))
     if (length != null) __obj.updateDynamic("length")(js.Any.fromFunction2(length))
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDisposeOnSet)) __obj.updateDynamic("noDisposeOnSet")(noDisposeOnSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateAgeOnGet)) __obj.updateDynamic("updateAgeOnGet")(updateAgeOnGet.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDisposeOnSet)) __obj.updateDynamic("noDisposeOnSet")(noDisposeOnSet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateAgeOnGet)) __obj.updateDynamic("updateAgeOnGet")(updateAgeOnGet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[K, V]]
   }
 }

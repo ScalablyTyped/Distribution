@@ -1,5 +1,6 @@
 package typings.antdMobileRn
 
+import typings.antdMobileRn.anon.Value
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ object datePickerViewDemoBasicNativeMod extends js.Object {
   trait DatePickerViewExample
     extends Component[js.Object, js.Object, js.Any] {
     @JSName("state")
-    var state_DatePickerViewExample: AnonValue = js.native
+    var state_DatePickerViewExample: Value = js.native
     def onChange(value: js.Any): Unit = js.native
     def onValueChange(args: js.Any*): Unit = js.native
   }

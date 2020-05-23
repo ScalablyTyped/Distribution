@@ -1,6 +1,9 @@
 package typings.formik
 
 import org.scalablytyped.runtime.TopLevel
+import typings.formik.anon.Dirty
+import typings.formik.anon.Formik
+import typings.formik.anon.PickDetailedHTMLPropsForm
 import typings.formik.errorMessageMod.ErrorMessageProps
 import typings.formik.fieldArrayMod.FieldArrayConfig
 import typings.formik.fieldMod.FieldAttributes
@@ -22,9 +25,9 @@ import typings.react.mod.Consumer
 import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.Provider
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.ArrayLike
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,9 +63,9 @@ object mod extends js.Object {
   val FormikProvider: Provider[FormikContextType[js.Any]] = js.native
   def Field(hasValidateNameRenderChildrenAsComponentProps: FieldAttributes[_]): js.Any = js.native
   def Formik[Values /* <: FormikValues */, ExtraProps](props: FormikConfig[Values] with ExtraProps): Element = js.native
-  def connect[OuterProps, Values](Comp: ComponentType[OuterProps with AnonFormik[Values]]): ComponentType[OuterProps] = js.native
+  def connect[OuterProps, Values](Comp: ComponentType[OuterProps with Formik[Values]]): ComponentType[OuterProps] = js.native
   def getActiveElement(): typings.std.Element | Null = js.native
-  def getActiveElement(doc: Document_): typings.std.Element | Null = js.native
+  def getActiveElement(doc: Document): typings.std.Element | Null = js.native
   def getIn(obj: js.Any, key: String): js.Any = js.native
   def getIn(obj: js.Any, key: String, `def`: js.Any): js.Any = js.native
   def getIn(obj: js.Any, key: String, `def`: js.Any, p: Double): js.Any = js.native
@@ -92,7 +95,7 @@ object mod extends js.Object {
   def useField[Val](propsOrFieldName: FieldHookConfig[Val]): js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]] = js.native
   def useFormik[Values /* <: FormikValues */](
     hasValidateOnChangeValidateOnBlurValidateOnMountIsInitialValidEnableReinitializeOnSubmitRest: FormikConfig[Values]
-  ): AnonDirty[Values] = js.native
+  ): Dirty[Values] = js.native
   def useFormikContext[Values](): FormikContextType[Values] = js.native
   def validateYupSchema[T /* <: FormikValues */](values: T, schema: js.Any): js.Promise[Partial[T]] = js.native
   def validateYupSchema[T /* <: FormikValues */](values: T, schema: js.Any, sync: Boolean): js.Promise[Partial[T]] = js.native

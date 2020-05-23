@@ -21,7 +21,7 @@ object LinuxParameters {
     val __obj = js.Dynamic.literal()
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
     if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
-    if (!js.isUndefined(initProcessEnabled)) __obj.updateDynamic("initProcessEnabled")(initProcessEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(initProcessEnabled)) __obj.updateDynamic("initProcessEnabled")(initProcessEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinuxParameters]
   }
 }

@@ -16,11 +16,6 @@ class ArgumentList protected ()
   def this(openParenToken: Token[OpenParenToken | OpenBracketToken], elements: js.Array[Argument]) = this()
   def this(
     openParenToken: Token[OpenParenToken | OpenBracketToken],
-    elements: js.UndefOr[scala.Nothing],
-    closeParenToken: Token[CloseParenToken | CloseBracketToken]
-  ) = this()
-  def this(
-    openParenToken: Token[OpenParenToken | OpenBracketToken],
     elements: js.Array[Argument],
     closeParenToken: Token[CloseParenToken | CloseBracketToken]
   ) = this()

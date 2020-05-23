@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait FooterData extends js.Object {
   /**
-  	 * Text alignment for the data in this footer.
-  	 */
+    * Text alignment for the data in this footer.
+    */
   var align: js.UndefOr[DataAlignType] = js.undefined
   /**
-  	 * Index for the column that this footer belongs to
-  	 */
+    * Index for the column that this footer belongs to
+    */
   var columnIndex: Double
   /**
-  	 * Formatting function for the data in this footer. Used to be able to do things like sum the contents of this
-  	 * column in the table so that the footer can be used for totals, etc.
-  	 *
-  	 * The output value from the formatter function will be used instead of the label if the formatter function is
-  	 * defined.
-  	 */
+    * Formatting function for the data in this footer. Used to be able to do things like sum the contents of this
+    * column in the table so that the footer can be used for totals, etc.
+    *
+    * The output value from the formatter function will be used instead of the label if the formatter function is
+    * defined.
+    */
   var formatter: js.UndefOr[js.Function1[/* tableData */ js.Array[_], String | Double | ReactElement]] = js.undefined
   /**
-  	 * Title to display for the column footer
-  	 */
+    * Title to display for the column footer
+    */
   var label: String
 }
 

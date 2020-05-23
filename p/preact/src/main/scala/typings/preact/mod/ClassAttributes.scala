@@ -12,7 +12,7 @@ object ClassAttributes {
   @scala.inline
   def apply[T](jsx: js.UndefOr[Boolean] = js.undefined, key: Key = null, ref: Ref[T] = null): ClassAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassAttributes[T]]

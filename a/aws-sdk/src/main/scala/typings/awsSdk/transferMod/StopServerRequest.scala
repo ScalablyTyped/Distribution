@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StopServerRequest extends js.Object {
   /**
-    * A system-assigned unique identifier for an SFTP server that you stopped.
+    * A system-assigned unique identifier for a file transfer protocol-enabled server that you stopped.
     */
   var ServerId: typings.awsSdk.transferMod.ServerId = js.native
 }

@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 
 trait IColumn extends IContainer {
   /** [Method] private Inform the header container about the resize
-  		* @param width Object
-  		* @param height Object
-  		* @param oldWidth Object
-  		* @param oldHeight Object
-  		*/
+    * @param width Object
+    * @param height Object
+    * @param oldWidth Object
+    * @param oldHeight Object
+    */
   @JSName("afterComponentLayout")
   var afterComponentLayout_IColumn: js.UndefOr[
     js.Function4[
@@ -28,8 +28,8 @@ trait IColumn extends IContainer {
   /** [Config Option] (String) */
   var align: js.UndefOr[String] = js.undefined
   /** [Method] Sizes this Column to fit the max content width
-  		* @param The Ext.grid.column.Column/Number header (or index of header) to auto size.
-  		*/
+    * @param The Ext.grid.column.Column/Number header (or index of header) to auto size.
+    */
   var autoSize: js.UndefOr[js.Function1[/* The */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object[]) */
   var columns: js.UndefOr[Array] = js.undefined
@@ -46,42 +46,37 @@ trait IColumn extends IContainer {
   /** [Config Option] (Object/String) */
   var field: js.UndefOr[js.Any] = js.undefined
   /** [Method] Retrieves the editing field for editing associated with this header
-  		* @param record Object The Model instance being edited.
-  		* @param defaultField Object An object representing a default field to be created
-  		* @returns any field
-  		*/
+    * @param record Object The Model instance being edited.
+    * @param defaultField Object An object representing a default field to be created
+    * @returns any field
+    */
   var getEditor: js.UndefOr[
     js.Function2[/* record */ js.UndefOr[js.Any], /* defaultField */ js.UndefOr[js.Any], _]
   ] = js.undefined
   /** [Method] Returns the index of this column only if this column is a base level Column
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getIndex: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the parameter to sort upon when sorting this header
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getSortParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the index of this column in the list of visible columns only if this column is a base level Column
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getVisibleIndex: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (Boolean) */
   var groupable: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
   var header: js.UndefOr[String] = js.undefined
   /** [Method] Hides this Component setting it to invisible using the configured hideMode
-  		* @param fromOwner Object
-  		* @returns Ext.Component this
-  		*/
+    * @param fromOwner Object
+    * @returns Ext.Component this
+    */
   @JSName("hide")
   var hide_IColumn: js.UndefOr[js.Function1[/* fromOwner */ js.UndefOr[js.Any], IComponent]] = js.undefined
   /** [Config Option] (Boolean) */
   var hideable: js.UndefOr[Boolean] = js.undefined
-  /** [Method] Initialized the renderData to be used when rendering the renderTpl
-  		* @returns Object Object with keys and values that are going to be applied to the renderTpl
-  		*/
-  @JSName("initRenderData")
-  var initRenderData_IColumn: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Property] (Boolean) */
   var isColumn: js.UndefOr[Boolean] = js.undefined
   /** [Property] (Boolean) */
@@ -106,18 +101,18 @@ trait IColumn extends IContainer {
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the form field to be used for editing
-  		* @param field Object An object representing a field to be created. If no xtype is specified a 'textfield' is assumed.
-  		*/
+    * @param field Object An object representing a field to be created. If no xtype is specified a 'textfield' is assumed.
+    */
   var setEditor: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the header text for this Column
-  		* @param text String The header to display on this Column.
-  		*/
+    * @param text String The header to display on this Column.
+    */
   var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Shows this Component rendering it first if autoRender or floating are true
-  		* @param fromOwner Object
-  		* @param fromChild Object
-  		* @returns Ext.Component this
-  		*/
+    * @param fromOwner Object
+    * @param fromChild Object
+    * @returns Ext.Component this
+    */
   @JSName("show")
   var show_IColumn: js.UndefOr[
     js.Function2[/* fromOwner */ js.UndefOr[js.Any], /* fromChild */ js.UndefOr[js.Any], IComponent]
@@ -158,7 +153,6 @@ object IColumn {
     header: String = null,
     hide: /* fromOwner */ js.UndefOr[js.Any] => IComponent = null,
     hideable: js.UndefOr[Boolean] = js.undefined,
-    initRenderData: () => _ = null,
     isColumn: js.UndefOr[Boolean] = js.undefined,
     isHeader: js.UndefOr[Boolean] = js.undefined,
     isHideable: () => Unit = null,
@@ -196,21 +190,20 @@ object IColumn {
     if (getIndex != null) __obj.updateDynamic("getIndex")(js.Any.fromFunction0(getIndex))
     if (getSortParam != null) __obj.updateDynamic("getSortParam")(js.Any.fromFunction0(getSortParam))
     if (getVisibleIndex != null) __obj.updateDynamic("getVisibleIndex")(js.Any.fromFunction0(getVisibleIndex))
-    if (!js.isUndefined(groupable)) __obj.updateDynamic("groupable")(groupable.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupable)) __obj.updateDynamic("groupable")(groupable.get.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
-    if (!js.isUndefined(hideable)) __obj.updateDynamic("hideable")(hideable.asInstanceOf[js.Any])
-    if (initRenderData != null) __obj.updateDynamic("initRenderData")(js.Any.fromFunction0(initRenderData))
-    if (!js.isUndefined(isColumn)) __obj.updateDynamic("isColumn")(isColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideable)) __obj.updateDynamic("hideable")(hideable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isColumn)) __obj.updateDynamic("isColumn")(isColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader.get.asInstanceOf[js.Any])
     if (isHideable != null) __obj.updateDynamic("isHideable")(js.Any.fromFunction0(isHideable))
     if (isLockable != null) __obj.updateDynamic("isLockable")(js.Any.fromFunction0(isLockable))
-    if (!js.isUndefined(lockable)) __obj.updateDynamic("lockable")(lockable.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuDisabled)) __obj.updateDynamic("menuDisabled")(menuDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockable)) __obj.updateDynamic("lockable")(lockable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuDisabled)) __obj.updateDynamic("menuDisabled")(menuDisabled.get.asInstanceOf[js.Any])
     if (menuText != null) __obj.updateDynamic("menuText")(menuText.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (setEditor != null) __obj.updateDynamic("setEditor")(js.Any.fromFunction1(setEditor))
     if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction1(setText))

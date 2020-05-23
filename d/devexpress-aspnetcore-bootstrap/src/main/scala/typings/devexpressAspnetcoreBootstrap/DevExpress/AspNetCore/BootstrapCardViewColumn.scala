@@ -4,10 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapCardViewColumn")
-@js.native
-class BootstrapCardViewColumn protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
-  val instance: js.Any = js.native
+trait BootstrapCardViewColumn extends js.Object {
+  val instance: js.Any
+}
+
+object BootstrapCardViewColumn {
+  @scala.inline
+  def apply(instance: js.Any): BootstrapCardViewColumn = {
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapCardViewColumn]
+  }
 }
 

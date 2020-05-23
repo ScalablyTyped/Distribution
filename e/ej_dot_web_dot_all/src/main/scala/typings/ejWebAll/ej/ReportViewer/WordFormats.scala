@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.ReportViewer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,71 +93,6 @@ object WordFormats extends js.Object {
   ///Specifies the XML property in WordFormats to get specified version of exported format.
   @js.native
   sealed trait XML extends WordFormats
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WordFormats with Double] = js.native
-  /* 20 */ @js.native
-  object Automatic extends TopLevel[Automatic with Double]
-  
-  /* 2 */ @js.native
-  object DOCX extends TopLevel[DOCX with Double]
-  
-  /* 0 */ @js.native
-  object Doc extends TopLevel[Doc with Double]
-  
-  /* 1 */ @js.native
-  object Dot extends TopLevel[Dot with Double]
-  
-  /* 17 */ @js.native
-  object EPUB extends TopLevel[EPUB with Double]
-  
-  /* 18 */ @js.native
-  object HTML extends TopLevel[HTML with Double]
-  
-  /* 15 */ @js.native
-  object RTF extends TopLevel[RTF with Double]
-  
-  /* 16 */ @js.native
-  object Txt extends TopLevel[Txt with Double]
-  
-  /* 3 */ @js.native
-  object Word2007 extends TopLevel[Word2007 with Double]
-  
-  /* 9 */ @js.native
-  object Word2007Docm extends TopLevel[Word2007Docm with Double]
-  
-  /* 12 */ @js.native
-  object Word2007Dotm extends TopLevel[Word2007Dotm with Double]
-  
-  /* 6 */ @js.native
-  object Word2007Dotx extends TopLevel[Word2007Dotx with Double]
-  
-  /* 4 */ @js.native
-  object Word2010 extends TopLevel[Word2010 with Double]
-  
-  /* 10 */ @js.native
-  object Word2010Docm extends TopLevel[Word2010Docm with Double]
-  
-  /* 13 */ @js.native
-  object Word2010Dotm extends TopLevel[Word2010Dotm with Double]
-  
-  /* 7 */ @js.native
-  object Word2010Dotx extends TopLevel[Word2010Dotx with Double]
-  
-  /* 5 */ @js.native
-  object Word2013 extends TopLevel[Word2013 with Double]
-  
-  /* 11 */ @js.native
-  object Word2013Docm extends TopLevel[Word2013Docm with Double]
-  
-  /* 14 */ @js.native
-  object Word2013Dotm extends TopLevel[Word2013Dotm with Double]
-  
-  /* 8 */ @js.native
-  object Word2013Dotx extends TopLevel[Word2013Dotx with Double]
-  
-  /* 19 */ @js.native
-  object XML extends TopLevel[XML with Double]
   
 }
 

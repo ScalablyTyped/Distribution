@@ -4,19 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.GrowingList")
 @js.native
-class GrowingList protected () extends List {
-  /**
-    * Constructor for a new GrowingList.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait GrowingList extends List {
   /**
     * Gets current value of property <code>scrollToLoad</code>.If you set this property to true then user
     * needs to scroll end to trigger loading a new page. Default value is false which means user needs to

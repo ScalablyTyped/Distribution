@@ -26,36 +26,36 @@ object EChartsConvertFinder {
   @scala.inline
   def apply(
     geoId: String = null,
-    geoIndex: Int | Double = null,
+    geoIndex: js.UndefOr[Double] = js.undefined,
     geoName: String = null,
     gridId: String = null,
-    gridIndex: Int | Double = null,
+    gridIndex: js.UndefOr[Double] = js.undefined,
     gridName: String = null,
     seriesId: String = null,
-    seriesIndex: Int | Double = null,
+    seriesIndex: js.UndefOr[Double] = js.undefined,
     seriesName: String = null,
     xAxisId: String = null,
-    xAxisIndex: Int | Double = null,
+    xAxisIndex: js.UndefOr[Double] = js.undefined,
     xAxisName: String = null,
     yAxisId: String = null,
-    yAxisIndex: Int | Double = null,
+    yAxisIndex: js.UndefOr[Double] = js.undefined,
     yAxisName: String = null
   ): EChartsConvertFinder = {
     val __obj = js.Dynamic.literal()
     if (geoId != null) __obj.updateDynamic("geoId")(geoId.asInstanceOf[js.Any])
-    if (geoIndex != null) __obj.updateDynamic("geoIndex")(geoIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(geoIndex)) __obj.updateDynamic("geoIndex")(geoIndex.get.asInstanceOf[js.Any])
     if (geoName != null) __obj.updateDynamic("geoName")(geoName.asInstanceOf[js.Any])
     if (gridId != null) __obj.updateDynamic("gridId")(gridId.asInstanceOf[js.Any])
-    if (gridIndex != null) __obj.updateDynamic("gridIndex")(gridIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridIndex)) __obj.updateDynamic("gridIndex")(gridIndex.get.asInstanceOf[js.Any])
     if (gridName != null) __obj.updateDynamic("gridName")(gridName.asInstanceOf[js.Any])
     if (seriesId != null) __obj.updateDynamic("seriesId")(seriesId.asInstanceOf[js.Any])
-    if (seriesIndex != null) __obj.updateDynamic("seriesIndex")(seriesIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesIndex)) __obj.updateDynamic("seriesIndex")(seriesIndex.get.asInstanceOf[js.Any])
     if (seriesName != null) __obj.updateDynamic("seriesName")(seriesName.asInstanceOf[js.Any])
     if (xAxisId != null) __obj.updateDynamic("xAxisId")(xAxisId.asInstanceOf[js.Any])
-    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxisIndex)) __obj.updateDynamic("xAxisIndex")(xAxisIndex.get.asInstanceOf[js.Any])
     if (xAxisName != null) __obj.updateDynamic("xAxisName")(xAxisName.asInstanceOf[js.Any])
     if (yAxisId != null) __obj.updateDynamic("yAxisId")(yAxisId.asInstanceOf[js.Any])
-    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxisIndex)) __obj.updateDynamic("yAxisIndex")(yAxisIndex.get.asInstanceOf[js.Any])
     if (yAxisName != null) __obj.updateDynamic("yAxisName")(yAxisName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EChartsConvertFinder]
   }

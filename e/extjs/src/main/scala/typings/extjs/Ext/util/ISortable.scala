@@ -13,18 +13,18 @@ trait ISortable extends IBase {
   /** [Method] Returns a comparator function which compares two items and returns 1 0 or 1 depending on the currently defined set  */
   var generateComparator: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Gets the first sorter from the sorters collection excluding any groupers that may be in place
-  		* @returns Ext.util.Sorter The sorter, null if none exist
-  		*/
+    * @returns Ext.util.Sorter The sorter, null if none exist
+    */
   var getFirstSorter: js.UndefOr[js.Function0[ISorter]] = js.undefined
   /** [Method] Performs initialization of this mixin  */
   var initSortable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Property] (Boolean) */
   var isSortable: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sorts the data in the Store by one or more of its properties
-  		* @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
-  		* @param direction String The overall direction to sort the data by.
-  		* @returns Ext.util.Sorter[]
-  		*/
+    * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
+    * @param direction String The overall direction to sort the data by.
+    * @returns Ext.util.Sorter[]
+    */
   var sort: js.UndefOr[
     js.Function2[/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], Array]
   ] = js.undefined
@@ -77,11 +77,11 @@ object ISortable {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initSortable != null) __obj.updateDynamic("initSortable")(js.Any.fromFunction0(initSortable))
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot.asInstanceOf[js.Any])
     if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])

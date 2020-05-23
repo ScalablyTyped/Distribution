@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 // Change such references to: product['name']
 @js.native
 trait Entity
-  extends /* fieldname */ StringDictionary[js.Any] {
+  extends /* plugin_name */ StringDictionary[js.Any] {
   def apply(canon: js.Any, seneca: js.Any): Unit = js.native
   @JSName("list$")
   def list$(query: EntityDataWithQuery, callback: EntityListCallback): Unit = js.native

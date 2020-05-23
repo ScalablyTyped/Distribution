@@ -55,24 +55,24 @@ trait NumberConstructor
     * number. Only finite values of the type number, result in true.
     * @param number A numeric value.
     */
-  def isFinite(number: Double): scala.Boolean = js.native
+  def isFinite(number: js.Any): scala.Boolean = js.native
   /**
     * Returns true if the value passed is an integer, false otherwise.
     * @param number A numeric value.
     */
-  def isInteger(number: Double): scala.Boolean = js.native
+  def isInteger(number: js.Any): scala.Boolean = js.native
   /**
     * Returns a Boolean value that indicates whether a value is the reserved value NaN (not a
     * number). Unlike the global isNaN(), Number.isNaN() doesn't forcefully convert the parameter
     * to a number. Only values of the type number, that are also NaN, result in true.
     * @param number A numeric value.
     */
-  def isNaN(number: Double): scala.Boolean = js.native
+  def isNaN(number: js.Any): scala.Boolean = js.native
   /**
     * Returns true if the value passed is a safe integer.
     * @param number A numeric value.
     */
-  def isSafeInteger(number: Double): scala.Boolean = js.native
+  def isSafeInteger(number: js.Any): scala.Boolean = js.native
   /**
     * Converts a string to a floating-point number.
     * @param string A string that contains a floating-point number.

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.std.stdStrings.tonechange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,8 +51,4 @@ trait RTCDtmfSender extends EventTarget {
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("RTCDtmfSender")
-@js.native
-object RTCDtmfSender extends Instantiable1[/* sender */ RTCRtpSender, RTCDtmfSender]
 

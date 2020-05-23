@@ -72,15 +72,15 @@ object ConnectConfig {
     host: String = null,
     hostHash: md5 | sha1 = null,
     hostVerifier: /* keyHash */ String => Boolean = null,
-    keepaliveCountMax: Int | Double = null,
-    keepaliveInterval: Int | Double = null,
+    keepaliveCountMax: js.UndefOr[Double] = js.undefined,
+    keepaliveInterval: js.UndefOr[Double] = js.undefined,
     localHostname: String = null,
     localUsername: String = null,
     passphrase: String = null,
     password: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     privateKey: Buffer | String = null,
-    readyTimeout: Int | Double = null,
+    readyTimeout: js.UndefOr[Double] = js.undefined,
     sock: ReadableStream = null,
     strictVendor: js.UndefOr[Boolean] = js.undefined,
     tryKeyboard: js.UndefOr[Boolean] = js.undefined,
@@ -88,27 +88,27 @@ object ConnectConfig {
   ): ConnectConfig = {
     val __obj = js.Dynamic.literal()
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (!js.isUndefined(agentForward)) __obj.updateDynamic("agentForward")(agentForward.asInstanceOf[js.Any])
+    if (!js.isUndefined(agentForward)) __obj.updateDynamic("agentForward")(agentForward.get.asInstanceOf[js.Any])
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
-    if (!js.isUndefined(forceIPv4)) __obj.updateDynamic("forceIPv4")(forceIPv4.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIPv6)) __obj.updateDynamic("forceIPv6")(forceIPv6.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceIPv4)) __obj.updateDynamic("forceIPv4")(forceIPv4.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceIPv6)) __obj.updateDynamic("forceIPv6")(forceIPv6.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (hostHash != null) __obj.updateDynamic("hostHash")(hostHash.asInstanceOf[js.Any])
     if (hostVerifier != null) __obj.updateDynamic("hostVerifier")(js.Any.fromFunction1(hostVerifier))
-    if (keepaliveCountMax != null) __obj.updateDynamic("keepaliveCountMax")(keepaliveCountMax.asInstanceOf[js.Any])
-    if (keepaliveInterval != null) __obj.updateDynamic("keepaliveInterval")(keepaliveInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepaliveCountMax)) __obj.updateDynamic("keepaliveCountMax")(keepaliveCountMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepaliveInterval)) __obj.updateDynamic("keepaliveInterval")(keepaliveInterval.get.asInstanceOf[js.Any])
     if (localHostname != null) __obj.updateDynamic("localHostname")(localHostname.asInstanceOf[js.Any])
     if (localUsername != null) __obj.updateDynamic("localUsername")(localUsername.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
-    if (readyTimeout != null) __obj.updateDynamic("readyTimeout")(readyTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(readyTimeout)) __obj.updateDynamic("readyTimeout")(readyTimeout.get.asInstanceOf[js.Any])
     if (sock != null) __obj.updateDynamic("sock")(sock.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictVendor)) __obj.updateDynamic("strictVendor")(strictVendor.asInstanceOf[js.Any])
-    if (!js.isUndefined(tryKeyboard)) __obj.updateDynamic("tryKeyboard")(tryKeyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictVendor)) __obj.updateDynamic("strictVendor")(strictVendor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tryKeyboard)) __obj.updateDynamic("tryKeyboard")(tryKeyboard.get.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectConfig]
   }

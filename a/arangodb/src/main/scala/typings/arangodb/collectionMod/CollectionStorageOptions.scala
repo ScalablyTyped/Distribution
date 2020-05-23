@@ -18,12 +18,12 @@ object CollectionStorageOptions {
     collection: String | Collection[_],
     autoUpdate: js.UndefOr[Boolean] = js.undefined,
     pruneExpired: js.UndefOr[Boolean] = js.undefined,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): CollectionStorageOptions = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(pruneExpired)) __obj.updateDynamic("pruneExpired")(pruneExpired.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pruneExpired)) __obj.updateDynamic("pruneExpired")(pruneExpired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionStorageOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.hexoFs.mod
 
-import typings.hexoFs.DirectoryOptionsexcludeAr
+import typings.hexoFs.anon.DirectoryOptionsexcludeAr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

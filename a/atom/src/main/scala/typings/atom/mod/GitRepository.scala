@@ -1,11 +1,10 @@
 package typings.atom.mod
 
-import typings.atom.AnonAdded
-import typings.atom.AnonAhead
-import typings.atom.AnonConfig
-import typings.atom.AnonHeads
-import typings.atom.AnonNewLines
-import typings.atom.AnonRefreshOnWindowFocus
+import typings.atom.anon.Added
+import typings.atom.anon.Ahead
+import typings.atom.anon.Heads
+import typings.atom.anon.NewLines
+import typings.atom.anon.RefreshOnWindowFocus
 import typings.atom.atomStrings.git
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GitRepository protected () extends js.Object {
   def this(path: String) = this()
-  def this(path: String, options: AnonConfig) = this()
+  def this(path: String, options: typings.atom.anon.Config) = this()
   // Checking Out
   /**
     *  Restore the contents of a path in the working directory and index to the
@@ -36,16 +35,16 @@ class GitRepository protected () extends js.Object {
     *  @return Returns the number of commits behind the current branch is from its
     *  upstream remote branch.
     */
-  def getAheadBehindCount(reference: String): AnonAhead = js.native
-  def getAheadBehindCount(reference: String, path: String): AnonAhead = js.native
+  def getAheadBehindCount(reference: String): Ahead = js.native
+  def getAheadBehindCount(reference: String, path: String): Ahead = js.native
   /** Get the cached status for the given path. */
   def getCachedPathStatus(path: String): Double | Null = js.native
   /**
     *  Get the cached ahead/behind commit counts for the current branch's
     *  upstream branch.
     */
-  def getCachedUpstreamAheadBehindCount(): AnonAhead = js.native
-  def getCachedUpstreamAheadBehindCount(path: String): AnonAhead = js.native
+  def getCachedUpstreamAheadBehindCount(): Ahead = js.native
+  def getCachedUpstreamAheadBehindCount(path: String): Ahead = js.native
   /** Returns the git configuration value specified by the key. */
   def getConfigValue(key: String): String = js.native
   def getConfigValue(key: String, path: String): String = js.native
@@ -54,14 +53,14 @@ class GitRepository protected () extends js.Object {
     *  Retrieves the number of lines added and removed to a path.
     *  This compares the working directory contents of the path to the HEAD version.
     */
-  def getDiffStats(path: String): AnonAdded = js.native
+  def getDiffStats(path: String): Added = js.native
   /** Get the status of a directory in the repository's working directory. */
   def getDirectoryStatus(path: String): Double = js.native
   /**
     *  Retrieves the line diffs comparing the HEAD version of the given path
     *  and the given text.
     */
-  def getLineDiffs(path: String, text: String): js.Array[AnonNewLines] = js.native
+  def getLineDiffs(path: String, text: String): js.Array[NewLines] = js.native
   /** Returns the origin url of the repository. */
   def getOriginURL(): String = js.native
   def getOriginURL(path: String): String = js.native
@@ -73,8 +72,8 @@ class GitRepository protected () extends js.Object {
   def getReferenceTarget(reference: String): String = js.native
   def getReferenceTarget(reference: String, path: String): String = js.native
   /** Gets all the local and remote references. */
-  def getReferences(): AnonHeads = js.native
-  def getReferences(path: String): AnonHeads = js.native
+  def getReferences(): Heads = js.native
+  def getReferences(path: String): Heads = js.native
   /** Retrieves a shortened version of the HEAD reference value. */
   def getShortHead(): String = js.native
   def getShortHead(path: String): String = js.native
@@ -132,6 +131,6 @@ object GitRepository extends js.Object {
   // Construction
   /** Creates a new GitRepository instance. */
   def open(path: String): GitRepository = js.native
-  def open(path: String, options: AnonRefreshOnWindowFocus): GitRepository = js.native
+  def open(path: String, options: RefreshOnWindowFocus): GitRepository = js.native
 }
 

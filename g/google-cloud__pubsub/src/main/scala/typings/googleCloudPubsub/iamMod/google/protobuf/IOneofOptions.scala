@@ -12,9 +12,9 @@ trait IOneofOptions extends js.Object {
 
 object IOneofOptions {
   @scala.inline
-  def apply(uninterpretedOption: js.Array[IUninterpretedOption] = null): IOneofOptions = {
+  def apply(uninterpretedOption: js.UndefOr[Null | js.Array[IUninterpretedOption]] = js.undefined): IOneofOptions = {
     val __obj = js.Dynamic.literal()
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(uninterpretedOption)) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOneofOptions]
   }
 }

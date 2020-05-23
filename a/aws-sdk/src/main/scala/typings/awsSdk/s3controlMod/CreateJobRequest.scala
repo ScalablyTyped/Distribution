@@ -39,11 +39,11 @@ trait CreateJobRequest extends js.Object {
     */
   var Report: JobReport = js.native
   /**
-    * The Amazon Resource Name (ARN) for the Identity and Access Management (IAM) Role that batch operations will use to execute this job's operation on each object in the manifest.
+    * The Amazon Resource Name (ARN) for the AWS Identity and Access Management (IAM) role that Batch Operations will use to execute this job's operation on each object in the manifest.
     */
   var RoleArn: IAMRoleArn = js.native
   /**
-    * An optional set of tags to associate with the job when it is created.
+    * A set of tags to associate with the Amazon S3 Batch Operations job. This is an optional parameter. 
     */
   var Tags: js.UndefOr[S3TagSet] = js.native
 }
@@ -58,12 +58,12 @@ object CreateJobRequest {
     Priority: JobPriority,
     Report: JobReport,
     RoleArn: IAMRoleArn,
-    ConfirmationRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    ConfirmationRequired: js.UndefOr[ConfirmationRequired] = js.undefined,
     Description: NonEmptyMaxLength256String = null,
     Tags: S3TagSet = null
   ): CreateJobRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any], Manifest = Manifest.asInstanceOf[js.Any], Operation = Operation.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], Report = Report.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConfirmationRequired)) __obj.updateDynamic("ConfirmationRequired")(ConfirmationRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConfirmationRequired)) __obj.updateDynamic("ConfirmationRequired")(ConfirmationRequired.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]

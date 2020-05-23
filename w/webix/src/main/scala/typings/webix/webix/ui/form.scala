@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.form")
 @js.native
-class form () extends baseview {
+trait form extends baseview {
   @JSName("config")
   var config_form: formConfig = js.native
   var elements: js.Any = js.native

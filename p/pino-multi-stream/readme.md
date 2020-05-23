@@ -1,7 +1,7 @@
 
 # Scala.js typings for pino-multi-stream
 
-Typings are for version 3.1
+Typings are for version 5.0
 
 ## Library description:
 A wrapper for the Pino logger that provides Bunyan's multipe destination stream API

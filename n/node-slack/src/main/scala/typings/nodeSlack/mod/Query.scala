@@ -22,7 +22,7 @@ object Query {
     channel_id: String = null,
     channel_name: String = null,
     team_id: String = null,
-    timestamp: Int | Double = null,
+    timestamp: js.UndefOr[Double] = js.undefined,
     token: String = null,
     user_id: String = null,
     user_name: String = null
@@ -31,7 +31,7 @@ object Query {
     if (channel_id != null) __obj.updateDynamic("channel_id")(channel_id.asInstanceOf[js.Any])
     if (channel_name != null) __obj.updateDynamic("channel_name")(channel_name.asInstanceOf[js.Any])
     if (team_id != null) __obj.updateDynamic("team_id")(team_id.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     if (user_name != null) __obj.updateDynamic("user_name")(user_name.asInstanceOf[js.Any])

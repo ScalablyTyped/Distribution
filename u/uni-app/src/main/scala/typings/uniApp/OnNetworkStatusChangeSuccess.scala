@@ -17,9 +17,9 @@ trait OnNetworkStatusChangeSuccess extends js.Object {
 
 object OnNetworkStatusChangeSuccess {
   @scala.inline
-  def apply(isConnected: Int | Double = null, networkType: String = null): OnNetworkStatusChangeSuccess = {
+  def apply(isConnected: js.UndefOr[Double] = js.undefined, networkType: String = null): OnNetworkStatusChangeSuccess = {
     val __obj = js.Dynamic.literal()
-    if (isConnected != null) __obj.updateDynamic("isConnected")(isConnected.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConnected)) __obj.updateDynamic("isConnected")(isConnected.get.asInstanceOf[js.Any])
     if (networkType != null) __obj.updateDynamic("networkType")(networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnNetworkStatusChangeSuccess]
   }

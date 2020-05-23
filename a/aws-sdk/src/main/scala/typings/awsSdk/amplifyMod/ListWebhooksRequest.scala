@@ -22,9 +22,9 @@ trait ListWebhooksRequest extends js.Object {
 
 object ListWebhooksRequest {
   @scala.inline
-  def apply(appId: AppId, maxResults: Int | Double = null, nextToken: NextToken = null): ListWebhooksRequest = {
+  def apply(appId: AppId, maxResults: js.UndefOr[MaxResults] = js.undefined, nextToken: NextToken = null): ListWebhooksRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWebhooksRequest]
   }

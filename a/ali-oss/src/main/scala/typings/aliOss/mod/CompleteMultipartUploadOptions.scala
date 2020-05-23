@@ -12,11 +12,15 @@ trait CompleteMultipartUploadOptions extends js.Object {
 
 object CompleteMultipartUploadOptions {
   @scala.inline
-  def apply(callback: ObjectCallback = null, headers: js.Object = null, timeout: Int | Double = null): CompleteMultipartUploadOptions = {
+  def apply(
+    callback: ObjectCallback = null,
+    headers: js.Object = null,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): CompleteMultipartUploadOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteMultipartUploadOptions]
   }
 }

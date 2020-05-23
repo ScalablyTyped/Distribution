@@ -71,14 +71,14 @@ object ImmunizationVaccinationProtocol {
     _seriesDoses: Element = null,
     authority: Reference = null,
     description: String = null,
-    doseSequence: Int | Double = null,
+    doseSequence: js.UndefOr[positiveInt] = js.undefined,
     doseStatusReason: CodeableConcept = null,
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
     series: String = null,
-    seriesDoses: Int | Double = null
+    seriesDoses: js.UndefOr[positiveInt] = js.undefined
   ): ImmunizationVaccinationProtocol = {
     val __obj = js.Dynamic.literal(doseStatus = doseStatus.asInstanceOf[js.Any], targetDisease = targetDisease.asInstanceOf[js.Any])
     if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
@@ -89,14 +89,14 @@ object ImmunizationVaccinationProtocol {
     if (_seriesDoses != null) __obj.updateDynamic("_seriesDoses")(_seriesDoses.asInstanceOf[js.Any])
     if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (doseSequence != null) __obj.updateDynamic("doseSequence")(doseSequence.asInstanceOf[js.Any])
+    if (!js.isUndefined(doseSequence)) __obj.updateDynamic("doseSequence")(doseSequence.get.asInstanceOf[js.Any])
     if (doseStatusReason != null) __obj.updateDynamic("doseStatusReason")(doseStatusReason.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (seriesDoses != null) __obj.updateDynamic("seriesDoses")(seriesDoses.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesDoses)) __obj.updateDynamic("seriesDoses")(seriesDoses.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmunizationVaccinationProtocol]
   }
 }

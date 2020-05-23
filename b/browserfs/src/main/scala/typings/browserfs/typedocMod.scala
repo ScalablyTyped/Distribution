@@ -1,5 +1,7 @@
 package typings.browserfs
 
+import typings.browserfs.anon.AsyncMirror
+import typings.browserfs.anon.FnCall
 import typings.browserfs.browserfsStrings.bfs_utils
 import typings.browserfs.browserfsStrings.buffer
 import typings.browserfs.browserfsStrings.fs
@@ -23,7 +25,7 @@ object typedocMod extends js.Object {
     /**
       * Exposes all of the file system backends available in BrowserFS.
       */
-    var FileSystem: AnonAsyncMirror = js.native
+    var FileSystem: AsyncMirror = js.native
     /**
       * Emulates Node's `require()` function for filesystem-related modules (`'fs'`, `'path'`, `'buffer'`, etc).
       */

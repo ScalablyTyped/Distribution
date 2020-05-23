@@ -176,9 +176,9 @@ object Version {
     if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
     if (runtimeApiVersion != null) __obj.updateDynamic("runtimeApiVersion")(runtimeApiVersion.asInstanceOf[js.Any])
     if (servingStatus != null) __obj.updateDynamic("servingStatus")(servingStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(threadsafe)) __obj.updateDynamic("threadsafe")(threadsafe.asInstanceOf[js.Any])
+    if (!js.isUndefined(threadsafe)) __obj.updateDynamic("threadsafe")(threadsafe.get.asInstanceOf[js.Any])
     if (versionUrl != null) __obj.updateDynamic("versionUrl")(versionUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(vm)) __obj.updateDynamic("vm")(vm.asInstanceOf[js.Any])
+    if (!js.isUndefined(vm)) __obj.updateDynamic("vm")(vm.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Version]
   }
 }

@@ -1,6 +1,6 @@
 package typings.mobx.mod
 
-import typings.mobx.Promisevoidcancelvoid
+import typings.mobx.anon.Promisevoidcancelvoid
 import typings.mobx.reactionMod.IReactionDisposer
 import typings.mobx.utilsMod.Lambda
 import typings.mobx.whenMod.IWhenOptions

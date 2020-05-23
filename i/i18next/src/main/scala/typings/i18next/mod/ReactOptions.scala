@@ -86,9 +86,9 @@ object ReactOptions {
     if (nsMode != null) __obj.updateDynamic("nsMode")(nsMode.asInstanceOf[js.Any])
     if (transEmptyNodeValue != null) __obj.updateDynamic("transEmptyNodeValue")(transEmptyNodeValue.asInstanceOf[js.Any])
     if (transKeepBasicHtmlNodesFor != null) __obj.updateDynamic("transKeepBasicHtmlNodesFor")(transKeepBasicHtmlNodesFor.asInstanceOf[js.Any])
-    if (!js.isUndefined(transSupportBasicHtmlNodes)) __obj.updateDynamic("transSupportBasicHtmlNodes")(transSupportBasicHtmlNodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSuspense)) __obj.updateDynamic("useSuspense")(useSuspense.asInstanceOf[js.Any])
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(transSupportBasicHtmlNodes)) __obj.updateDynamic("transSupportBasicHtmlNodes")(transSupportBasicHtmlNodes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSuspense)) __obj.updateDynamic("useSuspense")(useSuspense.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactOptions]
   }
 }

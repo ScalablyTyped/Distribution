@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.LIGHTFALLOFF_LINEAR
-  * @type {number}
-  * @description Linear distance falloff model for light attenuation.
+  * Linear distance falloff model for light attenuation.
   */
 @JSImport("playcanvas", "LIGHTFALLOFF_LINEAR")
 @js.native

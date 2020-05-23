@@ -12,7 +12,7 @@ object CommandOptions {
   @scala.inline
   def apply(default: js.UndefOr[Boolean] = js.undefined): CommandOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandOptions]
   }
 }

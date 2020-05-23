@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Drive
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,26 +37,6 @@ object Permission extends js.Object {
   
   @js.native
   sealed trait VIEW extends Permission
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Permission with Double] = js.native
-  /* 2 */ @js.native
-  object COMMENT extends TopLevel[COMMENT with Double]
-  
-  /* 1 */ @js.native
-  object EDIT extends TopLevel[EDIT with Double]
-  
-  /* 5 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 4 */ @js.native
-  object ORGANIZER extends TopLevel[ORGANIZER with Double]
-  
-  /* 3 */ @js.native
-  object OWNER extends TopLevel[OWNER with Double]
-  
-  /* 0 */ @js.native
-  object VIEW extends TopLevel[VIEW with Double]
   
 }
 

@@ -1,15 +1,12 @@
 package typings.typescriptServices.TypeScript.Services
 
 import typings.typescriptServices.TypeScript.PositionTrackingWalker
-import typings.typescriptServices.TypeScript.SourceUnitSyntax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.GetScriptLexicalStructureWalker")
 @js.native
-class GetScriptLexicalStructureWalker protected () extends PositionTrackingWalker {
-  def this(fileName: String) = this()
+trait GetScriptLexicalStructureWalker extends PositionTrackingWalker {
   var currentInterfaceDeclaration: js.Any = js.native
   var currentMemberVariableDeclaration: js.Any = js.native
   var currentScope: js.Any = js.native
@@ -29,12 +26,5 @@ class GetScriptLexicalStructureWalker protected () extends PositionTrackingWalke
   /* private */ def popScope(): js.Any = js.native
   /* private */ def pushNewContainerScope(containerName: js.Any, kind: js.Any): js.Any = js.native
   /* private */ def visitModuleDeclarationWorker(node: js.Any, names: js.Any, nameIndex: js.Any): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.Services.GetScriptLexicalStructureWalker")
-@js.native
-object GetScriptLexicalStructureWalker extends js.Object {
-  def getListsOfAllScriptLexicalStructure(items: js.Array[NavigateToItem], fileName: String, unit: SourceUnitSyntax): Unit = js.native
 }
 

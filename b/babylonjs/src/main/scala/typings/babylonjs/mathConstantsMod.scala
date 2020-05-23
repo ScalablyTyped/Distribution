@@ -1,6 +1,5 @@
 package typings.babylonjs
 
-import typings.babylonjs.babylonjsNumbers.`2.2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ object mathConstantsMod extends js.Object {
     */
   var Epsilon: Double = js.native
   val ToGammaSpace: Double = js.native
-  val ToLinearSpace: `2.2` = js.native
+  val ToLinearSpace: /* 2.2 */ Double = js.native
 }
 

@@ -31,22 +31,26 @@ trait IUninterpretedOption extends js.Object {
 object IUninterpretedOption {
   @scala.inline
   def apply(
-    aggregateValue: String = null,
-    doubleValue: Int | Double = null,
-    identifierValue: String = null,
-    name: js.Array[INamePart] = null,
-    negativeIntValue: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = null,
-    positiveIntValue: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = null,
-    stringValue: Uint8Array = null
+    aggregateValue: js.UndefOr[Null | String] = js.undefined,
+    doubleValue: js.UndefOr[Null | Double] = js.undefined,
+    identifierValue: js.UndefOr[Null | String] = js.undefined,
+    name: js.UndefOr[Null | js.Array[INamePart]] = js.undefined,
+    negativeIntValue: js.UndefOr[
+      Null | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+    ] = js.undefined,
+    positiveIntValue: js.UndefOr[
+      Null | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+    ] = js.undefined,
+    stringValue: js.UndefOr[Null | Uint8Array] = js.undefined
   ): IUninterpretedOption = {
     val __obj = js.Dynamic.literal()
-    if (aggregateValue != null) __obj.updateDynamic("aggregateValue")(aggregateValue.asInstanceOf[js.Any])
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (identifierValue != null) __obj.updateDynamic("identifierValue")(identifierValue.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (negativeIntValue != null) __obj.updateDynamic("negativeIntValue")(negativeIntValue.asInstanceOf[js.Any])
-    if (positiveIntValue != null) __obj.updateDynamic("positiveIntValue")(positiveIntValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregateValue)) __obj.updateDynamic("aggregateValue")(aggregateValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(identifierValue)) __obj.updateDynamic("identifierValue")(identifierValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(negativeIntValue)) __obj.updateDynamic("negativeIntValue")(negativeIntValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(positiveIntValue)) __obj.updateDynamic("positiveIntValue")(positiveIntValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(stringValue)) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUninterpretedOption]
   }
 }

@@ -1,6 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
-import typings.fhirJsClient.AnonAny
+import typings.fhirJsClient.anon.Any
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait Client extends js.Object {
   /**
     * Helper method to convert units
     */
-  var units: AnonAny = js.native
+  var units: Any = js.native
   /**
     * User in context and exposes a method 'read' to get information.
     */

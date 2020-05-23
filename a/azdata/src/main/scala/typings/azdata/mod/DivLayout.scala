@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait DivLayout extends js.Object {
   /**
-  		 * Container Height
-  		 */
+    * Container Height
+    */
   var height: js.UndefOr[Double | String] = js.undefined
   /**
-  		 * Container Width
-  		 */
+    * Container Width
+    */
   var width: js.UndefOr[Double | String] = js.undefined
 }
 

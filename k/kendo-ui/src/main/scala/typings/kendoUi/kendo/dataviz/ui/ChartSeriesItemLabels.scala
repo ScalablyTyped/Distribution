@@ -30,7 +30,7 @@ object ChartSeriesItemLabels {
     background: String | js.Function = null,
     border: ChartSeriesItemLabelsBorder = null,
     color: String | js.Function = null,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     font: String | js.Function = null,
     format: String | js.Function = null,
     from: ChartSeriesItemLabelsFrom = null,
@@ -48,7 +48,7 @@ object ChartSeriesItemLabels {
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Console_
+import typings.std.Console
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ abstract class ɵangularPackagesCoreCoreW () extends js.Object {
   def componentRenderElement: js.Any = js.native
   def context: js.Any = js.native
   def injector: Injector = js.native
-  def logError(console: Console_, values: js.Any*): Unit = js.native
+  def logError(console: Console, values: js.Any*): Unit = js.native
   def nodeIndex: Double | Null = js.native
   def providerTokens: js.Array[_] = js.native
   def references: StringDictionary[js.Any] = js.native

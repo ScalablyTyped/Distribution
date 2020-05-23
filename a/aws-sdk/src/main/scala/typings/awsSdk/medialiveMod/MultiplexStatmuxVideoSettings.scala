@@ -18,10 +18,13 @@ trait MultiplexStatmuxVideoSettings extends js.Object {
 
 object MultiplexStatmuxVideoSettings {
   @scala.inline
-  def apply(MaximumBitrate: Int | Double = null, MinimumBitrate: Int | Double = null): MultiplexStatmuxVideoSettings = {
+  def apply(
+    MaximumBitrate: js.UndefOr[integerMin100000Max100000000] = js.undefined,
+    MinimumBitrate: js.UndefOr[integerMin100000Max100000000] = js.undefined
+  ): MultiplexStatmuxVideoSettings = {
     val __obj = js.Dynamic.literal()
-    if (MaximumBitrate != null) __obj.updateDynamic("MaximumBitrate")(MaximumBitrate.asInstanceOf[js.Any])
-    if (MinimumBitrate != null) __obj.updateDynamic("MinimumBitrate")(MinimumBitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaximumBitrate)) __obj.updateDynamic("MaximumBitrate")(MaximumBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinimumBitrate)) __obj.updateDynamic("MinimumBitrate")(MinimumBitrate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiplexStatmuxVideoSettings]
   }
 }

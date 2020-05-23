@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Reads depth frames from a depth frame source. */
-@JSGlobal("Windows.Devices.Perception.PerceptionDepthFrameReader")
 @js.native
-abstract class PerceptionDepthFrameReader () extends js.Object {
+trait PerceptionDepthFrameReader extends js.Object {
   /** Gets a boolean value indicating whether or not this reader is paused. */
   var isPaused: Boolean = js.native
   /** Subscribes to the FrameArrived event. This event is fired whenever a new frame arrives from the depth frame source. */

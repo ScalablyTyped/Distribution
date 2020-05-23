@@ -1,6 +1,6 @@
 package typings.qlik.mod
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ExtensionContext extends js.Object {
   @JSName("$element")
-  var $element: JQuery_[HTMLElement] = js.native
+  var $element: JQuery[HTMLElement] = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
   var _inAnalysisState: Boolean = js.native
@@ -23,7 +23,7 @@ trait ExtensionContext extends js.Object {
   var selectionsEnabled: Boolean = js.native
   // TODO: options: ExtensionOptions;
   def paint(
-    $element: js.UndefOr[JQuery_[HTMLElement]],
+    $element: js.UndefOr[JQuery[HTMLElement]],
     layout: js.UndefOr[Layout],
     qDimensionInfo: js.UndefOr[NxDimensionInfo],
     qMeasureInfo: js.UndefOr[NxDimensionInfo],

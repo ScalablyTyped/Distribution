@@ -18,10 +18,10 @@ trait WaiterConfiguration extends js.Object {
 
 object WaiterConfiguration {
   @scala.inline
-  def apply(delay: Int | Double = null, maxAttempts: Int | Double = null): WaiterConfiguration = {
+  def apply(delay: js.UndefOr[Double] = js.undefined, maxAttempts: js.UndefOr[Double] = js.undefined): WaiterConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAttempts)) __obj.updateDynamic("maxAttempts")(maxAttempts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaiterConfiguration]
   }
 }

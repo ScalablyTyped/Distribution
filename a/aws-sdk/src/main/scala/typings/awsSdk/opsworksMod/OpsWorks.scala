@@ -1,8 +1,8 @@
 package typings.awsSdk.opsworksMod
 
-import typings.awsSdk.DescribeAppsRequestwaiter
-import typings.awsSdk.DescribeDeploymentsReques
-import typings.awsSdk.DescribeInstancesRequestwInstanceIds
+import typings.awsSdk.anon.DescribeAppsRequestwaiter
+import typings.awsSdk.anon.DescribeDeploymentsReques
+import typings.awsSdk.anon.DescribeInstancesRequestwInstanceIds
 import typings.awsSdk.awsSdkStrings.appExists
 import typings.awsSdk.awsSdkStrings.deploymentSuccessful
 import typings.awsSdk.awsSdkStrings.instanceOnline

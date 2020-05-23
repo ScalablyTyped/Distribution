@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Versions")
 @js.native
-class Versions protected () extends js.Object {
+trait Versions extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   var AutoVersion: WdAutoVersions = js.native
   val Count: Double = js.native

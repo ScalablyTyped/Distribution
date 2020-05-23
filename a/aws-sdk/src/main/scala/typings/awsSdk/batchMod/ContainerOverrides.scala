@@ -38,17 +38,17 @@ object ContainerOverrides {
     command: StringList = null,
     environment: EnvironmentVariables = null,
     instanceType: String = null,
-    memory: Int | Double = null,
+    memory: js.UndefOr[Integer] = js.undefined,
     resourceRequirements: ResourceRequirements = null,
-    vcpus: Int | Double = null
+    vcpus: js.UndefOr[Integer] = js.undefined
   ): ContainerOverrides = {
     val __obj = js.Dynamic.literal()
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
     if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements.asInstanceOf[js.Any])
-    if (vcpus != null) __obj.updateDynamic("vcpus")(vcpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(vcpus)) __obj.updateDynamic("vcpus")(vcpus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerOverrides]
   }
 }

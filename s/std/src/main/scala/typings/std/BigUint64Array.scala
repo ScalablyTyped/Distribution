@@ -1,7 +1,6 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -294,8 +293,4 @@ trait BigUint64Array extends /* index */ NumberDictionary[BigInt] {
   /** Yields each value in the array. */
   def values(): IterableIterator[BigInt] = js.native
 }
-
-@JSGlobal("BigUint64Array")
-@js.native
-object BigUint64Array extends TopLevel[BigUint64ArrayConstructor]
 

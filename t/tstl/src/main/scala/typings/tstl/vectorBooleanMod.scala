@@ -1,6 +1,7 @@
 package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.anon.ReadonlyIForwardIteratorb
 import typings.tstl.arrayContainerMod.ArrayContainer
 import typings.tstl.arrayIteratorMod.ArrayIterator
 import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/container/VectorBoolean", JSImport.Namespace)
 @js.native
 object vectorBooleanMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
   - typings.tstl.ipushMod.IPush because Already inherited

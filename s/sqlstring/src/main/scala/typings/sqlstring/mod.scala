@@ -1,5 +1,6 @@
 package typings.sqlstring
 
+import typings.sqlstring.anon.ToSqlString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,6 @@ object mod extends js.Object {
   def escapeId(value: js.Any, dotQualifier: Boolean): String = js.native
   def format(sql: String, args: js.Array[_]): String = js.native
   def format(sql: String, args: js.Object): String = js.native
-  def raw(sql: String): AnonToSqlString = js.native
+  def raw(sql: String): ToSqlString = js.native
 }
 

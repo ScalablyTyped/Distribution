@@ -5,7 +5,6 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.DERIA5String
 import typings.jsrsasign.jsrsasign.KJUR.asn1.DERPrintableString
 import typings.jsrsasign.jsrsasign.KJUR.asn1.DERTeletexString
 import typings.jsrsasign.jsrsasign.KJUR.asn1.DERUTF8String
-import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import typings.jsrsasign.jsrsasignStrings.ia5
 import typings.jsrsasign.jsrsasignStrings.prn
 import typings.jsrsasign.jsrsasignStrings.tel
@@ -21,10 +20,8 @@ import scala.scalajs.js.annotation._
   * @see KJUR.asn1.x509.RDN
   * @see KJUR.asn1.x509.AttributeTypeAndValue
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.AttributeTypeAndValue")
 @js.native
-class AttributeTypeAndValue protected () extends ASN1Object {
-  def this(params: StringParam) = this()
+trait AttributeTypeAndValue extends ASN1Object {
   @JSName("getValueObj")
   def getValueObj_ia5(dsType: ia5, valueStr: String): DERIA5String = js.native
   @JSName("getValueObj")

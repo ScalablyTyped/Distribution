@@ -24,13 +24,13 @@ object ProvisioningTemplateVersionSummary {
   @scala.inline
   def apply(
     creationDate: DateType = null,
-    isDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined,
-    versionId: Int | Double = null
+    isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
+    versionId: js.UndefOr[TemplateVersionId] = js.undefined
   ): ProvisioningTemplateVersionSummary = {
     val __obj = js.Dynamic.literal()
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefaultVersion)) __obj.updateDynamic("isDefaultVersion")(isDefaultVersion.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefaultVersion)) __obj.updateDynamic("isDefaultVersion")(isDefaultVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionId)) __obj.updateDynamic("versionId")(versionId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningTemplateVersionSummary]
   }
 }

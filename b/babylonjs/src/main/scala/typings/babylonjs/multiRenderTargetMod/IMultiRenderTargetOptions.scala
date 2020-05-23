@@ -46,25 +46,25 @@ trait IMultiRenderTargetOptions extends js.Object {
 object IMultiRenderTargetOptions {
   @scala.inline
   def apply(
-    defaultType: Int | Double = null,
+    defaultType: js.UndefOr[Double] = js.undefined,
     doNotChangeAspectRatio: js.UndefOr[Boolean] = js.undefined,
     generateDepthBuffer: js.UndefOr[Boolean] = js.undefined,
     generateDepthTexture: js.UndefOr[Boolean] = js.undefined,
     generateMipMaps: js.UndefOr[Boolean] = js.undefined,
     generateStencilBuffer: js.UndefOr[Boolean] = js.undefined,
     samplingModes: js.Array[Double] = null,
-    textureCount: Int | Double = null,
+    textureCount: js.UndefOr[Double] = js.undefined,
     types: js.Array[Double] = null
   ): IMultiRenderTargetOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotChangeAspectRatio)) __obj.updateDynamic("doNotChangeAspectRatio")(doNotChangeAspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateDepthBuffer)) __obj.updateDynamic("generateDepthBuffer")(generateDepthBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateDepthTexture)) __obj.updateDynamic("generateDepthTexture")(generateDepthTexture.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateMipMaps)) __obj.updateDynamic("generateMipMaps")(generateMipMaps.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateStencilBuffer)) __obj.updateDynamic("generateStencilBuffer")(generateStencilBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultType)) __obj.updateDynamic("defaultType")(defaultType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotChangeAspectRatio)) __obj.updateDynamic("doNotChangeAspectRatio")(doNotChangeAspectRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateDepthBuffer)) __obj.updateDynamic("generateDepthBuffer")(generateDepthBuffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateDepthTexture)) __obj.updateDynamic("generateDepthTexture")(generateDepthTexture.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateMipMaps)) __obj.updateDynamic("generateMipMaps")(generateMipMaps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateStencilBuffer)) __obj.updateDynamic("generateStencilBuffer")(generateStencilBuffer.get.asInstanceOf[js.Any])
     if (samplingModes != null) __obj.updateDynamic("samplingModes")(samplingModes.asInstanceOf[js.Any])
-    if (textureCount != null) __obj.updateDynamic("textureCount")(textureCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(textureCount)) __obj.updateDynamic("textureCount")(textureCount.get.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMultiRenderTargetOptions]
   }

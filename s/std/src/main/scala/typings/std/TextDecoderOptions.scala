@@ -16,8 +16,8 @@ object TextDecoderOptions {
     ignoreBOM: js.UndefOr[scala.Boolean] = js.undefined
   ): TextDecoderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBOM)) __obj.updateDynamic("ignoreBOM")(ignoreBOM.asInstanceOf[js.Any])
+    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBOM)) __obj.updateDynamic("ignoreBOM")(ignoreBOM.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDecoderOptions]
   }
 }

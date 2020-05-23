@@ -1,6 +1,6 @@
 package typings.ionic.definitionsMod
 
-import typings.ionic.AnonReq
+import typings.ionic.anon.Req
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IClient extends js.Object {
   var config: IConfig
   def `do`(req: SuperAgentRequest): js.Promise[APIResponseSuccess]
-  def make(method: HttpMethod, path: String): js.Promise[AnonReq]
+  def make(method: HttpMethod, path: String): js.Promise[Req]
   def paginate[T /* <: Response[js.Array[js.Object]] */](args: PaginateArgs[T]): IPaginator[T, PaginatorState]
 }
 
@@ -17,7 +17,7 @@ object IClient {
   def apply(
     config: IConfig,
     `do`: SuperAgentRequest => js.Promise[APIResponseSuccess],
-    make: (HttpMethod, String) => js.Promise[AnonReq],
+    make: (HttpMethod, String) => js.Promise[Req],
     paginate: PaginateArgs[js.Any] => IPaginator[js.Any, PaginatorState]
   ): IClient = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], make = js.Any.fromFunction2(make), paginate = js.Any.fromFunction1(paginate))

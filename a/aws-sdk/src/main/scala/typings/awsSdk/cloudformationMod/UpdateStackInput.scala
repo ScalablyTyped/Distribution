@@ -90,7 +90,7 @@ object UpdateStackInput {
     Tags: Tags = null,
     TemplateBody: TemplateBody = null,
     TemplateURL: TemplateURL = null,
-    UsePreviousTemplate: js.UndefOr[Boolean] = js.undefined
+    UsePreviousTemplate: js.UndefOr[UsePreviousTemplate] = js.undefined
   ): UpdateStackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
@@ -107,7 +107,7 @@ object UpdateStackInput {
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
     if (TemplateURL != null) __obj.updateDynamic("TemplateURL")(TemplateURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsePreviousTemplate)) __obj.updateDynamic("UsePreviousTemplate")(UsePreviousTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(UsePreviousTemplate)) __obj.updateDynamic("UsePreviousTemplate")(UsePreviousTemplate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStackInput]
   }
 }

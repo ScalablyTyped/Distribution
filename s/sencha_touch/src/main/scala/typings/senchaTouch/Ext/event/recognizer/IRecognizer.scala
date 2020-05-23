@@ -9,33 +9,33 @@ import scala.scalajs.js.annotation._
 
 trait IRecognizer extends IIdentifiable {
   /** [Method] Returns the value of callbackScope
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getCallbackScope: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Retrieves the id of this component
-  		* @returns String id
-  		*/
+    * @returns String id
+    */
   @JSName("getId")
   var getId_IRecognizer: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of onFailed
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getOnFailed: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of onRecognized
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getOnRecognized: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of callbackScope
-  		* @param callbackScope Object The new value.
-  		*/
+    * @param callbackScope Object The new value.
+    */
   var setCallbackScope: js.UndefOr[js.Function1[/* callbackScope */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of onFailed
-  		* @param onFailed Object The new value.
-  		*/
+    * @param onFailed Object The new value.
+    */
   var setOnFailed: js.UndefOr[js.Function1[/* onFailed */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of onRecognized
-  		* @param onRecognized Object The new value.
-  		*/
+    * @param onRecognized Object The new value.
+    */
   var setOnRecognized: js.UndefOr[js.Function1[/* onRecognized */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -89,7 +89,7 @@ object IRecognizer {
     if (setCallbackScope != null) __obj.updateDynamic("setCallbackScope")(js.Any.fromFunction1(setCallbackScope))
     if (setOnFailed != null) __obj.updateDynamic("setOnFailed")(js.Any.fromFunction1(setOnFailed))
     if (setOnRecognized != null) __obj.updateDynamic("setOnRecognized")(js.Any.fromFunction1(setOnRecognized))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRecognizer]

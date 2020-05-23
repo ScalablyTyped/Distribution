@@ -12,5 +12,6 @@ package object mod {
     js.Any
   ]
   type TimelineGroup[CustomGroupFields] = typings.reactCalendarTimeline.mod.TimelineGroupBase with CustomGroupFields
+  type TimelineHeaderProps = typings.reactCalendarTimeline.mod.TimelineHeadersProps
   type TimelineItem[CustomItemFields, DateType] = typings.reactCalendarTimeline.mod.TimelineItemBase[DateType] with CustomItemFields
 }

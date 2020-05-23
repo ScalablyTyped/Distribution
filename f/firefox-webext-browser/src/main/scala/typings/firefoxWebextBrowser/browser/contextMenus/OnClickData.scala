@@ -60,9 +60,9 @@ object OnClickData {
     editable: Boolean,
     menuItemId: Double | String,
     modifiers: js.Array[OnClickDataModifiers],
-    button: Int | Double = null,
+    button: js.UndefOr[Double] = js.undefined,
     checked: js.UndefOr[Boolean] = js.undefined,
-    frameId: Int | Double = null,
+    frameId: js.UndefOr[Double] = js.undefined,
     frameUrl: String = null,
     linkText: String = null,
     linkUrl: String = null,
@@ -71,14 +71,14 @@ object OnClickData {
     parentMenuItemId: Double | String = null,
     selectionText: String = null,
     srcUrl: String = null,
-    targetElementId: Int | Double = null,
+    targetElementId: js.UndefOr[Double] = js.undefined,
     viewType: ViewType = null,
     wasChecked: js.UndefOr[Boolean] = js.undefined
   ): OnClickData = {
     val __obj = js.Dynamic.literal(bookmarkId = bookmarkId.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], menuItemId = menuItemId.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
+    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId.get.asInstanceOf[js.Any])
     if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl.asInstanceOf[js.Any])
     if (linkText != null) __obj.updateDynamic("linkText")(linkText.asInstanceOf[js.Any])
     if (linkUrl != null) __obj.updateDynamic("linkUrl")(linkUrl.asInstanceOf[js.Any])
@@ -87,9 +87,9 @@ object OnClickData {
     if (parentMenuItemId != null) __obj.updateDynamic("parentMenuItemId")(parentMenuItemId.asInstanceOf[js.Any])
     if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText.asInstanceOf[js.Any])
     if (srcUrl != null) __obj.updateDynamic("srcUrl")(srcUrl.asInstanceOf[js.Any])
-    if (targetElementId != null) __obj.updateDynamic("targetElementId")(targetElementId.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetElementId)) __obj.updateDynamic("targetElementId")(targetElementId.get.asInstanceOf[js.Any])
     if (viewType != null) __obj.updateDynamic("viewType")(viewType.asInstanceOf[js.Any])
-    if (!js.isUndefined(wasChecked)) __obj.updateDynamic("wasChecked")(wasChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(wasChecked)) __obj.updateDynamic("wasChecked")(wasChecked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnClickData]
   }
 }

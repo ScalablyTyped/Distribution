@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Rows")
 @js.native
-class Rows protected () extends js.Object {
+trait Rows extends js.Object {
   var Alignment: WdRowAlignment = js.native
   var AllowBreakAcrossPages: Double = js.native
   var AllowOverlap: Double = js.native

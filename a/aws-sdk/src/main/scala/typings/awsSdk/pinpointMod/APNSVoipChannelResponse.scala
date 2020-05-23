@@ -63,27 +63,27 @@ object APNSVoipChannelResponse {
     ApplicationId: string = null,
     CreationDate: string = null,
     DefaultAuthenticationMethod: string = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
-    HasCredential: js.UndefOr[Boolean] = js.undefined,
-    HasTokenKey: js.UndefOr[Boolean] = js.undefined,
+    Enabled: js.UndefOr[boolean] = js.undefined,
+    HasCredential: js.UndefOr[boolean] = js.undefined,
+    HasTokenKey: js.UndefOr[boolean] = js.undefined,
     Id: string = null,
-    IsArchived: js.UndefOr[Boolean] = js.undefined,
+    IsArchived: js.UndefOr[boolean] = js.undefined,
     LastModifiedBy: string = null,
     LastModifiedDate: string = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[integer] = js.undefined
   ): APNSVoipChannelResponse = {
     val __obj = js.Dynamic.literal(Platform = Platform.asInstanceOf[js.Any])
     if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (DefaultAuthenticationMethod != null) __obj.updateDynamic("DefaultAuthenticationMethod")(DefaultAuthenticationMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasCredential)) __obj.updateDynamic("HasCredential")(HasCredential.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasTokenKey)) __obj.updateDynamic("HasTokenKey")(HasTokenKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasCredential)) __obj.updateDynamic("HasCredential")(HasCredential.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasTokenKey)) __obj.updateDynamic("HasTokenKey")(HasTokenKey.get.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived.get.asInstanceOf[js.Any])
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy.asInstanceOf[js.Any])
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[APNSVoipChannelResponse]
   }
 }

@@ -31,18 +31,18 @@ trait ExecutionConfiguration extends js.Object {
 object ExecutionConfiguration {
   @scala.inline
   def apply(
-    accountsCleanup: js.UndefOr[scala.Boolean] = js.undefined,
-    appPackagesCleanup: js.UndefOr[scala.Boolean] = js.undefined,
-    jobTimeoutMinutes: Int | scala.Double = null,
-    skipAppResign: js.UndefOr[scala.Boolean] = js.undefined,
-    videoCapture: js.UndefOr[scala.Boolean] = js.undefined
+    accountsCleanup: js.UndefOr[AccountsCleanup] = js.undefined,
+    appPackagesCleanup: js.UndefOr[AppPackagesCleanup] = js.undefined,
+    jobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
+    skipAppResign: js.UndefOr[SkipAppResign] = js.undefined,
+    videoCapture: js.UndefOr[VideoCapture] = js.undefined
   ): ExecutionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accountsCleanup)) __obj.updateDynamic("accountsCleanup")(accountsCleanup.asInstanceOf[js.Any])
-    if (!js.isUndefined(appPackagesCleanup)) __obj.updateDynamic("appPackagesCleanup")(appPackagesCleanup.asInstanceOf[js.Any])
-    if (jobTimeoutMinutes != null) __obj.updateDynamic("jobTimeoutMinutes")(jobTimeoutMinutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoCapture)) __obj.updateDynamic("videoCapture")(videoCapture.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountsCleanup)) __obj.updateDynamic("accountsCleanup")(accountsCleanup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appPackagesCleanup)) __obj.updateDynamic("appPackagesCleanup")(appPackagesCleanup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jobTimeoutMinutes)) __obj.updateDynamic("jobTimeoutMinutes")(jobTimeoutMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoCapture)) __obj.updateDynamic("videoCapture")(videoCapture.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionConfiguration]
   }
 }

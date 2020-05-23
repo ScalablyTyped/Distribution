@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.MediaProperties.MediaRatio")
-@js.native
-class MediaRatio () extends IMediaRatio {
-  /* CompleteClass */
-  override var denominator: Double = js.native
-  /* CompleteClass */
-  override var numerator: Double = js.native
+trait MediaRatio extends IMediaRatio
+
+object MediaRatio {
+  @scala.inline
+  def apply(denominator: Double, numerator: Double): MediaRatio = {
+    val __obj = js.Dynamic.literal(denominator = denominator.asInstanceOf[js.Any], numerator = numerator.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaRatio]
+  }
 }
 

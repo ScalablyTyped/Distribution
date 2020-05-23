@@ -13,10 +13,13 @@ trait IRole extends js.Object {
 
 object IRole {
   @scala.inline
-  def apply(name: String = null, policyName: String = null): IRole = {
+  def apply(
+    name: js.UndefOr[Null | String] = js.undefined,
+    policyName: js.UndefOr[Null | String] = js.undefined
+  ): IRole = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (policyName != null) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(policyName)) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRole]
   }
 }

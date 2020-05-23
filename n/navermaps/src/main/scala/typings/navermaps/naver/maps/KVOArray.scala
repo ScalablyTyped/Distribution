@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.KVOArray")
 @js.native
-class KVOArray protected () extends KVO {
-  def this(array: js.Array[_]) = this()
+trait KVOArray extends KVO {
   def clear(): Unit = js.native
   def forEach(callback: js.Function2[/* element */ js.Any, /* index */ Double, Unit]): Unit = js.native
   def getArray(): js.Array[_] = js.native

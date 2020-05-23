@@ -10,9 +10,9 @@ package object mod {
     typings.react.mod.NamedExoticComponent[TOwnProps]
   ]
   type AnyIfEmpty[T /* <: js.Object */] = T
-  type ConnectedComponent[C /* <: typings.react.mod.ComponentType[_] */, P] = (typings.react.mod.NamedExoticComponent[typings.react.mod._Global_.JSX.LibraryManagedAttributes[C, P]]) with (typings.hoistNonReactStatics.mod.NonReactStatics[C, js.Object]) with typings.reactRedux.AnonWrappedComponent[C]
+  type ConnectedComponent[C /* <: typings.react.mod.ComponentType[_] */, P] = (typings.react.mod.NamedExoticComponent[typings.react.mod.global.JSX.LibraryManagedAttributes[C, P]]) with (typings.hoistNonReactStatics.mod.NonReactStatics[C, js.Object]) with typings.reactRedux.anon.WrappedComponent[C]
   type ConnectedProps[TConnector] = js.Any
-  type GetProps[C] = js.Any
+  type GetProps[C] = typings.react.mod.ClassAttributes[typings.std.InstanceType[C]] with js.Any
   type HandleThunkActionCreator[TActionCreator] = TActionCreator | typings.reactRedux.mod.InferThunkActionCreatorType[TActionCreator]
   type InferThunkActionCreatorType[TActionCreator /* <: js.Function1[/* repeated */ js.Any, _] */] = TActionCreator | (js.Function1[/* args */ js.Any, js.Any])
   type InferableComponentEnhancer[TInjectedProps] = typings.reactRedux.mod.InferableComponentEnhancerWithProps[TInjectedProps, js.Object]

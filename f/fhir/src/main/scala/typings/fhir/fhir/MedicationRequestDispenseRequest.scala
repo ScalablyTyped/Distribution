@@ -45,7 +45,7 @@ object MedicationRequestDispenseRequest {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
-    numberOfRepeatsAllowed: Int | Double = null,
+    numberOfRepeatsAllowed: js.UndefOr[positiveInt] = js.undefined,
     performer: Reference = null,
     quantity: Quantity = null,
     validityPeriod: Period = null
@@ -59,7 +59,7 @@ object MedicationRequestDispenseRequest {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (numberOfRepeatsAllowed != null) __obj.updateDynamic("numberOfRepeatsAllowed")(numberOfRepeatsAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfRepeatsAllowed)) __obj.updateDynamic("numberOfRepeatsAllowed")(numberOfRepeatsAllowed.get.asInstanceOf[js.Any])
     if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (validityPeriod != null) __obj.updateDynamic("validityPeriod")(validityPeriod.asInstanceOf[js.Any])

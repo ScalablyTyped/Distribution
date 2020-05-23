@@ -9,20 +9,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.WebUI.WebUIShareTargetActivatedEventArgs")
-@js.native
-class WebUIShareTargetActivatedEventArgs ()
+trait WebUIShareTargetActivatedEventArgs
   extends IShareTargetActivatedEventArgs
-     with IActivatedEventArgsDeferral {
-  /* CompleteClass */
-  override var activatedOperation: ActivatedOperation = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var shareOperation: ShareOperation = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
+     with IActivatedEventArgsDeferral
+
+object WebUIShareTargetActivatedEventArgs {
+  @scala.inline
+  def apply(
+    activatedOperation: ActivatedOperation,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    shareOperation: ShareOperation,
+    splashScreen: SplashScreen
+  ): WebUIShareTargetActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], shareOperation = shareOperation.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUIShareTargetActivatedEventArgs]
+  }
 }
 

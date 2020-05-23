@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.event")
 @js.native
-class event () extends js.Object {
+trait event extends js.Object {
   def capture(): Unit = js.native
   def define(name: String, meta: StringDictionary[js.Any]): Unit = js.native
   def fire(eventName: String): js.Any = js.native
@@ -83,13 +82,5 @@ class event () extends js.Object {
   ): listenerRegistration = js.native
   def removeAllListeners(): Unit = js.native
   def removeListener(eventName: String, listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("CKEDITOR.event")
-@js.native
-object event extends js.Object {
-  var useCapture: Boolean = js.native
-  def implementOn(targetObject: StringDictionary[js.Any]): Unit = js.native
 }
 

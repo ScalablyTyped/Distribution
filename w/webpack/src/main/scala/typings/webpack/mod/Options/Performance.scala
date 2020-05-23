@@ -33,14 +33,14 @@ object Performance {
   def apply(
     assetFilter: /* assetFilename */ String => Boolean = null,
     hints: warning | error | `false` = null,
-    maxAssetSize: Int | Double = null,
-    maxEntrypointSize: Int | Double = null
+    maxAssetSize: js.UndefOr[Double] = js.undefined,
+    maxEntrypointSize: js.UndefOr[Double] = js.undefined
   ): Performance = {
     val __obj = js.Dynamic.literal()
     if (assetFilter != null) __obj.updateDynamic("assetFilter")(js.Any.fromFunction1(assetFilter))
     if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (maxAssetSize != null) __obj.updateDynamic("maxAssetSize")(maxAssetSize.asInstanceOf[js.Any])
-    if (maxEntrypointSize != null) __obj.updateDynamic("maxEntrypointSize")(maxEntrypointSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAssetSize)) __obj.updateDynamic("maxAssetSize")(maxAssetSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEntrypointSize)) __obj.updateDynamic("maxEntrypointSize")(maxEntrypointSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Performance]
   }
 }

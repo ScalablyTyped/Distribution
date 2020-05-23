@@ -25,9 +25,9 @@ object ASTText {
   ): ASTText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(isComment)) __obj.updateDynamic("isComment")(isComment.asInstanceOf[js.Any])
+    if (!js.isUndefined(isComment)) __obj.updateDynamic("isComment")(isComment.get.asInstanceOf[js.Any])
     if (ssrOptimizability != null) __obj.updateDynamic("ssrOptimizability")(ssrOptimizability.asInstanceOf[js.Any])
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTText]
   }
 }

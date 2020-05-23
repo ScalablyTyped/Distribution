@@ -97,22 +97,22 @@ object S3Settings {
   def apply(
     BucketFolder: String = null,
     BucketName: String = null,
-    CdcInsertsAndUpdates: js.UndefOr[scala.Boolean] = js.undefined,
-    CdcInsertsOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    CdcInsertsAndUpdates: js.UndefOr[BooleanOptional] = js.undefined,
+    CdcInsertsOnly: js.UndefOr[BooleanOptional] = js.undefined,
     CompressionType: CompressionTypeValue = null,
     CsvDelimiter: String = null,
     CsvRowDelimiter: String = null,
     DataFormat: DataFormatValue = null,
-    DataPageSize: Int | Double = null,
-    DictPageSizeLimit: Int | Double = null,
-    EnableStatistics: js.UndefOr[scala.Boolean] = js.undefined,
+    DataPageSize: js.UndefOr[IntegerOptional] = js.undefined,
+    DictPageSizeLimit: js.UndefOr[IntegerOptional] = js.undefined,
+    EnableStatistics: js.UndefOr[BooleanOptional] = js.undefined,
     EncodingType: EncodingTypeValue = null,
     EncryptionMode: EncryptionModeValue = null,
     ExternalTableDefinition: String = null,
-    IncludeOpForFullLoad: js.UndefOr[scala.Boolean] = js.undefined,
-    ParquetTimestampInMillisecond: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludeOpForFullLoad: js.UndefOr[BooleanOptional] = js.undefined,
+    ParquetTimestampInMillisecond: js.UndefOr[BooleanOptional] = js.undefined,
     ParquetVersion: ParquetVersionValue = null,
-    RowGroupLength: Int | Double = null,
+    RowGroupLength: js.UndefOr[IntegerOptional] = js.undefined,
     ServerSideEncryptionKmsKeyId: String = null,
     ServiceAccessRoleArn: String = null,
     TimestampColumnName: String = null
@@ -120,22 +120,22 @@ object S3Settings {
     val __obj = js.Dynamic.literal()
     if (BucketFolder != null) __obj.updateDynamic("BucketFolder")(BucketFolder.asInstanceOf[js.Any])
     if (BucketName != null) __obj.updateDynamic("BucketName")(BucketName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CdcInsertsAndUpdates)) __obj.updateDynamic("CdcInsertsAndUpdates")(CdcInsertsAndUpdates.asInstanceOf[js.Any])
-    if (!js.isUndefined(CdcInsertsOnly)) __obj.updateDynamic("CdcInsertsOnly")(CdcInsertsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(CdcInsertsAndUpdates)) __obj.updateDynamic("CdcInsertsAndUpdates")(CdcInsertsAndUpdates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CdcInsertsOnly)) __obj.updateDynamic("CdcInsertsOnly")(CdcInsertsOnly.get.asInstanceOf[js.Any])
     if (CompressionType != null) __obj.updateDynamic("CompressionType")(CompressionType.asInstanceOf[js.Any])
     if (CsvDelimiter != null) __obj.updateDynamic("CsvDelimiter")(CsvDelimiter.asInstanceOf[js.Any])
     if (CsvRowDelimiter != null) __obj.updateDynamic("CsvRowDelimiter")(CsvRowDelimiter.asInstanceOf[js.Any])
     if (DataFormat != null) __obj.updateDynamic("DataFormat")(DataFormat.asInstanceOf[js.Any])
-    if (DataPageSize != null) __obj.updateDynamic("DataPageSize")(DataPageSize.asInstanceOf[js.Any])
-    if (DictPageSizeLimit != null) __obj.updateDynamic("DictPageSizeLimit")(DictPageSizeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableStatistics)) __obj.updateDynamic("EnableStatistics")(EnableStatistics.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataPageSize)) __obj.updateDynamic("DataPageSize")(DataPageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DictPageSizeLimit)) __obj.updateDynamic("DictPageSizeLimit")(DictPageSizeLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableStatistics)) __obj.updateDynamic("EnableStatistics")(EnableStatistics.get.asInstanceOf[js.Any])
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
     if (EncryptionMode != null) __obj.updateDynamic("EncryptionMode")(EncryptionMode.asInstanceOf[js.Any])
     if (ExternalTableDefinition != null) __obj.updateDynamic("ExternalTableDefinition")(ExternalTableDefinition.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeOpForFullLoad)) __obj.updateDynamic("IncludeOpForFullLoad")(IncludeOpForFullLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParquetTimestampInMillisecond)) __obj.updateDynamic("ParquetTimestampInMillisecond")(ParquetTimestampInMillisecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeOpForFullLoad)) __obj.updateDynamic("IncludeOpForFullLoad")(IncludeOpForFullLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ParquetTimestampInMillisecond)) __obj.updateDynamic("ParquetTimestampInMillisecond")(ParquetTimestampInMillisecond.get.asInstanceOf[js.Any])
     if (ParquetVersion != null) __obj.updateDynamic("ParquetVersion")(ParquetVersion.asInstanceOf[js.Any])
-    if (RowGroupLength != null) __obj.updateDynamic("RowGroupLength")(RowGroupLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(RowGroupLength)) __obj.updateDynamic("RowGroupLength")(RowGroupLength.get.asInstanceOf[js.Any])
     if (ServerSideEncryptionKmsKeyId != null) __obj.updateDynamic("ServerSideEncryptionKmsKeyId")(ServerSideEncryptionKmsKeyId.asInstanceOf[js.Any])
     if (ServiceAccessRoleArn != null) __obj.updateDynamic("ServiceAccessRoleArn")(ServiceAccessRoleArn.asInstanceOf[js.Any])
     if (TimestampColumnName != null) __obj.updateDynamic("TimestampColumnName")(TimestampColumnName.asInstanceOf[js.Any])

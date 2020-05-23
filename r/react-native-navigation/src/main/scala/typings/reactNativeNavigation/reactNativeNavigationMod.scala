@@ -29,7 +29,7 @@ object reactNativeNavigationMod extends js.Object {
     /* "overCurrentContext" */ val overCurrentContext: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.overCurrentContext with String = js.native
     /* "overFullScreen" */ val overFullScreen: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.overFullScreen with String = js.native
     /* "pageSheet" */ val pageSheet: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.pageSheet with String = js.native
-    /* "popOver" */ val popOver: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.popOver with String = js.native
+    /* "popover" */ val popover: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.popover with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[
         typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle with String

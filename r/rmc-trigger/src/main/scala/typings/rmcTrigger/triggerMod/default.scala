@@ -1,6 +1,6 @@
 package typings.rmcTrigger.triggerMod
 
-import typings.rmcTrigger.AnonAfterPopupVisibleChange
+import typings.rmcTrigger.anon.AfterPopupVisibleChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Trigger
 @JSImport("rmc-trigger/lib/Trigger", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAfterPopupVisibleChange = js.native
+  var defaultProps: AfterPopupVisibleChange = js.native
 }
 

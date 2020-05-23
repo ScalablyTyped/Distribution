@@ -28,13 +28,13 @@ object InstancePrivateIpAddress {
   @scala.inline
   def apply(
     Association: InstanceNetworkInterfaceAssociation = null,
-    Primary: js.UndefOr[scala.Boolean] = js.undefined,
+    Primary: js.UndefOr[Boolean] = js.undefined,
     PrivateDnsName: String = null,
     PrivateIpAddress: String = null
   ): InstancePrivateIpAddress = {
     val __obj = js.Dynamic.literal()
     if (Association != null) __obj.updateDynamic("Association")(Association.asInstanceOf[js.Any])
-    if (!js.isUndefined(Primary)) __obj.updateDynamic("Primary")(Primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(Primary)) __obj.updateDynamic("Primary")(Primary.get.asInstanceOf[js.Any])
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancePrivateIpAddress]

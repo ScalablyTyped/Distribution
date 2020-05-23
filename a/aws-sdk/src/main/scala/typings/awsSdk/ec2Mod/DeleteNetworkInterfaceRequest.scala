@@ -18,9 +18,9 @@ trait DeleteNetworkInterfaceRequest extends js.Object {
 
 object DeleteNetworkInterfaceRequest {
   @scala.inline
-  def apply(NetworkInterfaceId: NetworkInterfaceId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteNetworkInterfaceRequest = {
+  def apply(NetworkInterfaceId: NetworkInterfaceId, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteNetworkInterfaceRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNetworkInterfaceRequest]
   }
 }

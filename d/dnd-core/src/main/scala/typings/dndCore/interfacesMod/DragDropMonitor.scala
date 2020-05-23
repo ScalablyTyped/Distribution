@@ -1,7 +1,7 @@
 package typings.dndCore.interfacesMod
 
-import typings.dndCore.Anon0
-import typings.dndCore.AnonShallowBoolean
+import typings.dndCore.anon.ShallowBoolean
+import typings.dndCore.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,11 +69,11 @@ trait DragDropMonitor extends js.Object {
   def isDraggingSource(): Boolean = js.native
   def isDraggingSource(sourceId: Identifier): Boolean = js.native
   def isOverTarget(): Boolean = js.native
-  def isOverTarget(targetId: js.UndefOr[Identifier], options: AnonShallowBoolean): Boolean = js.native
   def isOverTarget(targetId: Identifier): Boolean = js.native
+  def isOverTarget(targetId: Identifier, options: ShallowBoolean): Boolean = js.native
   def isSourcePublic(): Boolean | Null = js.native
   def subscribeToOffsetChange(listener: Listener): Unsubscribe = js.native
   def subscribeToStateChange(listener: Listener): Unsubscribe = js.native
-  def subscribeToStateChange(listener: Listener, options: Anon0): Unsubscribe = js.native
+  def subscribeToStateChange(listener: Listener, options: `0`): Unsubscribe = js.native
 }
 

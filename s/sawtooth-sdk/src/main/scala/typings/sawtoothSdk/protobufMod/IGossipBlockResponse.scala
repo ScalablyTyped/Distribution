@@ -12,9 +12,9 @@ trait IGossipBlockResponse extends js.Object {
 
 object IGossipBlockResponse {
   @scala.inline
-  def apply(content: Uint8Array = null): IGossipBlockResponse = {
+  def apply(content: js.UndefOr[Null | Uint8Array] = js.undefined): IGossipBlockResponse = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGossipBlockResponse]
   }
 }

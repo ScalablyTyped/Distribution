@@ -3,10 +3,10 @@ package typings.rotJs.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.TopLevel
-import typings.rotJs.PartialOptionsBorn
-import typings.rotJs.PartialOptionsCellHeight
-import typings.rotJs.PartialOptionsCorridorLength
-import typings.rotJs.PartialOptionsRoomDugPercentage
+import typings.rotJs.anon.PartialOptionsBorn
+import typings.rotJs.anon.PartialOptionsCellHeight
+import typings.rotJs.anon.PartialOptionsCorridorLength
+import typings.rotJs.anon.PartialOptionsRoomDugPercentage
 import typings.rotJs.arenaMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

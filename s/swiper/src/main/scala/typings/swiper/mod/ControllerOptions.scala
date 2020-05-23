@@ -34,7 +34,7 @@ object ControllerOptions {
     val __obj = js.Dynamic.literal()
     if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControllerOptions]
   }
 }

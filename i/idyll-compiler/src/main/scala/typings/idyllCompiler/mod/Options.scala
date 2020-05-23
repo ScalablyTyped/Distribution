@@ -29,10 +29,10 @@ object Options {
     spellcheck: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (postProcessors != null) __obj.updateDynamic("postProcessors")(postProcessors.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartquotes)) __obj.updateDynamic("smartquotes")(smartquotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartquotes)) __obj.updateDynamic("smartquotes")(smartquotes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

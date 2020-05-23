@@ -6,7 +6,6 @@ import typings.firebaseFirestore.collectionsMod.DocumentVersionMap_
 import typings.firebaseFirestore.collectionsMod.MaybeDocumentMap_
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.MaybeDocument
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`-1`
 import typings.firebaseFirestore.mutationMod.Mutation
 import typings.firebaseFirestore.mutationMod.MutationResult
 import typings.firebaseFirestore.snapshotVersionMod.SnapshotVersion
@@ -16,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/mutation_batch", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/mutation_batch", JSImport.Namespace)
 @js.native
 object mutationBatchMod extends js.Object {
   @js.native
@@ -84,7 +83,7 @@ object mutationBatchMod extends js.Object {
     val streamToken: ByteString = js.native
   }
   
-  val BATCHID_UNKNOWN: `-1` = js.native
+  val BATCHID_UNKNOWN: /* -1 */ Double = js.native
   /* static members */
   @js.native
   object MutationBatchResult extends js.Object {

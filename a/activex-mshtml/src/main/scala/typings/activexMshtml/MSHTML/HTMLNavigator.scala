@@ -4,32 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLNavigator")
-@js.native
-class HTMLNavigator protected () extends js.Object {
+trait HTMLNavigator extends js.Object {
   @JSName("MSHTML.HTMLNavigator_typekey")
-  var MSHTMLDotHTMLNavigator_typekey: HTMLNavigator = js.native
-  val appCodeName: String = js.native
-  val appMinorVersion: String = js.native
-  val appName: String = js.native
-  val appVersion: String = js.native
-  val browserLanguage: String = js.native
-  val connectionSpeed: Double = js.native
-  val constructor: js.Any = js.native
-  val cookieEnabled: Boolean = js.native
-  val cpuClass: String = js.native
-  val geolocation: IWebGeolocation = js.native
-  val mimeTypes: CMimeTypes = js.native
-  val msDoNotTrack: String = js.native
-  val onLine: Boolean = js.native
-  val opsProfile: COpsProfile = js.native
-  val platform: String = js.native
-  val plugins: IHTMLPluginsCollection = js.native
-  val systemLanguage: String = js.native
-  val userAgent: String = js.native
-  val userLanguage: String = js.native
-  val userProfile: COpsProfile = js.native
-  def javaEnabled(): Boolean = js.native
-  def taintEnabled(): Boolean = js.native
+  var MSHTMLDotHTMLNavigator_typekey: HTMLNavigator
+  val appCodeName: String
+  val appMinorVersion: String
+  val appName: String
+  val appVersion: String
+  val browserLanguage: String
+  val connectionSpeed: Double
+  val constructor: js.Any
+  val cookieEnabled: Boolean
+  val cpuClass: String
+  val geolocation: IWebGeolocation
+  val mimeTypes: CMimeTypes
+  val msDoNotTrack: String
+  val onLine: Boolean
+  val opsProfile: COpsProfile
+  val platform: String
+  val plugins: IHTMLPluginsCollection
+  val systemLanguage: String
+  val userAgent: String
+  val userLanguage: String
+  val userProfile: COpsProfile
+  def javaEnabled(): Boolean
+  def taintEnabled(): Boolean
+}
+
+object HTMLNavigator {
+  @scala.inline
+  def apply(
+    MSHTMLDotHTMLNavigator_typekey: HTMLNavigator,
+    appCodeName: String,
+    appMinorVersion: String,
+    appName: String,
+    appVersion: String,
+    browserLanguage: String,
+    connectionSpeed: Double,
+    constructor: js.Any,
+    cookieEnabled: Boolean,
+    cpuClass: String,
+    geolocation: IWebGeolocation,
+    javaEnabled: () => Boolean,
+    mimeTypes: CMimeTypes,
+    msDoNotTrack: String,
+    onLine: Boolean,
+    opsProfile: COpsProfile,
+    platform: String,
+    plugins: IHTMLPluginsCollection,
+    systemLanguage: String,
+    taintEnabled: () => Boolean,
+    userAgent: String,
+    userLanguage: String,
+    userProfile: COpsProfile
+  ): HTMLNavigator = {
+    val __obj = js.Dynamic.literal(appCodeName = appCodeName.asInstanceOf[js.Any], appMinorVersion = appMinorVersion.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any], appVersion = appVersion.asInstanceOf[js.Any], browserLanguage = browserLanguage.asInstanceOf[js.Any], connectionSpeed = connectionSpeed.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], cookieEnabled = cookieEnabled.asInstanceOf[js.Any], cpuClass = cpuClass.asInstanceOf[js.Any], geolocation = geolocation.asInstanceOf[js.Any], javaEnabled = js.Any.fromFunction0(javaEnabled), mimeTypes = mimeTypes.asInstanceOf[js.Any], msDoNotTrack = msDoNotTrack.asInstanceOf[js.Any], onLine = onLine.asInstanceOf[js.Any], opsProfile = opsProfile.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], systemLanguage = systemLanguage.asInstanceOf[js.Any], taintEnabled = js.Any.fromFunction0(taintEnabled), userAgent = userAgent.asInstanceOf[js.Any], userLanguage = userLanguage.asInstanceOf[js.Any], userProfile = userProfile.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.HTMLNavigator_typekey")(MSHTMLDotHTMLNavigator_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HTMLNavigator]
+  }
 }
 

@@ -22,12 +22,5 @@ class ɵRender3ComponentFactory[T] protected () extends ComponentFactory[T] {
   var ngModule: js.UndefOr[js.Any] = js.native
   @JSName("selector")
   var selector_FɵRender3ComponentFactory: String = js.native
-  def create(injector: Injector, projectableNodes: js.UndefOr[scala.Nothing], rootSelectorOrNode: js.Any): ComponentRef[T] = js.native
-  def create(
-    injector: Injector,
-    projectableNodes: js.UndefOr[scala.Nothing],
-    rootSelectorOrNode: js.Any,
-    ngModule: NgModuleRef[_]
-  ): ComponentRef[T] = js.native
 }
 

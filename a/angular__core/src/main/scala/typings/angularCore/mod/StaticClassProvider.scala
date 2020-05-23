@@ -22,7 +22,7 @@ object StaticClassProvider {
   @scala.inline
   def apply(deps: js.Array[_], provide: js.Any, useClass: Type[_], multi: js.UndefOr[Boolean] = js.undefined): StaticClassProvider = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], provide = provide.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticClassProvider]
   }
 }

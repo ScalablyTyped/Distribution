@@ -1,7 +1,7 @@
 package typings.typedoc.mod
 
-import typings.typedoc.AnonArea
-import typings.typedoc.AnonCode
+import typings.typedoc.anon.Area
+import typings.typedoc.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class PrettyPrintPlugin ()
 @JSImport("typedoc", "PrettyPrintPlugin")
 @js.native
 object PrettyPrintPlugin extends js.Object {
-  var IGNORED_TAGS: AnonArea = js.native
-  var PRE_TAGS: AnonCode = js.native
+  var IGNORED_TAGS: Area = js.native
+  var PRE_TAGS: Code = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.codemirror.mod
 
-import typings.codemirror.AnonMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object innerMode extends js.Object {
   /** Given a state object, returns a {state, mode} object with the inner mode and its state for the current position. */
-  def apply(mode: Mode[_], state: js.Any): AnonMode = js.native
+  def apply(mode: Mode[_], state: js.Any): typings.codemirror.anon.Mode = js.native
 }
 

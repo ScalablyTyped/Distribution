@@ -1,7 +1,7 @@
 package typings.reactVirtualized.esAutoSizerMod
 
 import typings.react.mod.Component
-import typings.reactVirtualized.AnonDisableHeight
+import typings.reactVirtualized.anon.DisableHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +21,6 @@ class AutoSizer protected ()
 @JSImport("react-virtualized/dist/es/AutoSizer", "AutoSizer")
 @js.native
 object AutoSizer extends js.Object {
-  var defaultProps: AnonDisableHeight = js.native
+  var defaultProps: DisableHeight = js.native
 }
 

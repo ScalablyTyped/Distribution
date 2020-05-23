@@ -4,13 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("JsGraphs.LazyPrimMST")
-@js.native
-class LazyPrimMST protected () extends js.Object {
-  def this(G: WeightedGraph) = this()
-  var marked: js.Any = js.native
-  var mst: js.Array[Edge] = js.native
-  var pq: js.Any = js.native
-  def visit(G: WeightedGraph, v: Double): Unit = js.native
+trait LazyPrimMST extends js.Object {
+  var marked: js.Any
+  var mst: js.Array[Edge]
+  var pq: js.Any
+  def visit(G: WeightedGraph, v: Double): Unit
+}
+
+object LazyPrimMST {
+  @scala.inline
+  def apply(marked: js.Any, mst: js.Array[Edge], pq: js.Any, visit: (WeightedGraph, Double) => Unit): LazyPrimMST = {
+    val __obj = js.Dynamic.literal(marked = marked.asInstanceOf[js.Any], mst = mst.asInstanceOf[js.Any], pq = pq.asInstanceOf[js.Any], visit = js.Any.fromFunction2(visit))
+    __obj.asInstanceOf[LazyPrimMST]
+  }
 }
 

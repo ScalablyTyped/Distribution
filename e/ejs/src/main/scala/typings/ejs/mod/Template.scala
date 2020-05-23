@@ -11,17 +11,17 @@ class Template protected () extends js.Object {
   def this(text: String) = this()
   def this(text: String, opts: Options) = this()
   /**
-  	 * The compiled JavaScript function source, or the empty string
-  	 * if the template hasn't been compiled yet.
-  	 */
+    * The compiled JavaScript function source, or the empty string
+    * if the template hasn't been compiled yet.
+    */
   val source: String = js.native
   /**
-  	 * The EJS template source text.
-  	 */
+    * The EJS template source text.
+    */
   val templateText: String = js.native
   /**
-  	 * Compiles the EJS template.
-  	 */
+    * Compiles the EJS template.
+    */
   def compile(): TemplateFunction | AsyncTemplateFunction | ClientFunction | AsyncClientFunction = js.native
 }
 

@@ -17,7 +17,7 @@ trait WebpushConfig extends js.Object {
   /**
     * Options for features provided by the FCM SDK for Web.
     */
-  var fcmOptions: js.UndefOr[WebpushFcmOptions] = js.undefined
+  var fcmOptions: js.UndefOr[typings.firebaseAdmin.messagingMod.admin.messaging.WebpushFcmOptions] = js.undefined
   /**
     * A collection of WebPush headers. Header values must be strings.
     *
@@ -28,16 +28,16 @@ trait WebpushConfig extends js.Object {
   /**
     * A WebPush notification payload to be included in the message.
     */
-  var notification: js.UndefOr[WebpushNotification] = js.undefined
+  var notification: js.UndefOr[typings.firebaseAdmin.messagingMod.admin.messaging.WebpushNotification] = js.undefined
 }
 
 object WebpushConfig {
   @scala.inline
   def apply(
     data: StringDictionary[String] = null,
-    fcmOptions: WebpushFcmOptions = null,
+    fcmOptions: typings.firebaseAdmin.messagingMod.admin.messaging.WebpushFcmOptions = null,
     headers: StringDictionary[String] = null,
-    notification: WebpushNotification = null
+    notification: typings.firebaseAdmin.messagingMod.admin.messaging.WebpushNotification = null
   ): WebpushConfig = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

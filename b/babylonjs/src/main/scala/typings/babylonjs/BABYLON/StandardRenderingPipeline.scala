@@ -4,30 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.StandardRenderingPipeline")
 @js.native
-class StandardRenderingPipeline protected ()
+trait StandardRenderingPipeline
   extends PostProcessRenderPipeline
      with IDisposable
      with IAnimatable {
-  /**
-    * Default pipeline should be used going forward but the standard pipeline will be kept for backwards compatibility.
-    * @constructor
-    * @param name The rendering pipeline name
-    * @param scene The scene linked to this pipeline
-    * @param ratio The size of the postprocesses (0.5 means that your postprocess will have a width = canvas.width 0.5 and a height = canvas.height 0.5)
-    * @param originalPostProcess the custom original color post-process. Must be "reusable". Can be null.
-    * @param cameras The array of cameras that the rendering pipeline will be attached to
-    */
-  def this(name: String, scene: Scene, ratio: Double) = this()
-  def this(name: String, scene: Scene, ratio: Double, originalPostProcess: Nullable[PostProcess]) = this()
-  def this(
-    name: String,
-    scene: Scene,
-    ratio: Double,
-    originalPostProcess: Nullable[PostProcess],
-    cameras: js.Array[Camera]
-  ) = this()
   var _basePostProcess: js.Any = js.native
   var _bloomEnabled: js.Any = js.native
   var _buildPipeline: js.Any = js.native
@@ -67,11 +48,6 @@ class StandardRenderingPipeline protected ()
   var _screenSpaceReflectionsEnabled: js.Any = js.native
   var _vlsEnabled: js.Any = js.native
   var _volumetricLightStepsCount: js.Any = js.native
-  /**
-    * Array of animations
-    */
-  /* CompleteClass */
-  override var animations: Nullable[js.Array[Animation]] = js.native
   /**
     * List of animations for the pipeline (IAnimatable implementation)
     */
@@ -368,23 +344,5 @@ class StandardRenderingPipeline protected ()
     */
   def volumetricLightStepsCount: Double = js.native
   def volumetricLightStepsCount(count: Double): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.StandardRenderingPipeline")
-@js.native
-object StandardRenderingPipeline extends js.Object {
-  /**
-    * Luminance steps
-    */
-  var LuminanceSteps: Double = js.native
-  /**
-    * Parse the serialized pipeline
-    * @param source Source pipeline.
-    * @param scene The scene to load the pipeline to.
-    * @param rootUrl The URL of the serialized pipeline.
-    * @returns An instantiated pipeline from the serialized object.
-    */
-  def Parse(source: js.Any, scene: Scene, rootUrl: String): StandardRenderingPipeline = js.native
 }
 

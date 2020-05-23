@@ -15,18 +15,18 @@ object RuleTesterTestRejected {
   @scala.inline
   def apply(
     code: String,
-    column: Int | Double = null,
+    column: js.UndefOr[Double] = js.undefined,
     description: String = null,
-    line: Int | Double = null,
+    line: js.UndefOr[Double] = js.undefined,
     message: String = null,
     only: js.UndefOr[Boolean] = js.undefined
   ): RuleTesterTestRejected = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleTesterTestRejected]
   }
 }

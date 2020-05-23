@@ -67,12 +67,12 @@ trait GetMaintenanceWindowResult extends js.Object {
 object GetMaintenanceWindowResult {
   @scala.inline
   def apply(
-    AllowUnassociatedTargets: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowUnassociatedTargets: js.UndefOr[MaintenanceWindowAllowUnassociatedTargets] = js.undefined,
     CreatedDate: DateTime = null,
-    Cutoff: Int | Double = null,
+    Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.undefined,
     Description: MaintenanceWindowDescription = null,
-    Duration: Int | Double = null,
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Duration: js.UndefOr[MaintenanceWindowDurationHours] = js.undefined,
+    Enabled: js.UndefOr[MaintenanceWindowEnabled] = js.undefined,
     EndDate: MaintenanceWindowStringDateTime = null,
     ModifiedDate: DateTime = null,
     Name: MaintenanceWindowName = null,
@@ -83,12 +83,12 @@ object GetMaintenanceWindowResult {
     WindowId: MaintenanceWindowId = null
   ): GetMaintenanceWindowResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowUnassociatedTargets)) __obj.updateDynamic("AllowUnassociatedTargets")(AllowUnassociatedTargets.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowUnassociatedTargets)) __obj.updateDynamic("AllowUnassociatedTargets")(AllowUnassociatedTargets.get.asInstanceOf[js.Any])
     if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (Cutoff != null) __obj.updateDynamic("Cutoff")(Cutoff.asInstanceOf[js.Any])
+    if (!js.isUndefined(Cutoff)) __obj.updateDynamic("Cutoff")(Cutoff.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
     if (ModifiedDate != null) __obj.updateDynamic("ModifiedDate")(ModifiedDate.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

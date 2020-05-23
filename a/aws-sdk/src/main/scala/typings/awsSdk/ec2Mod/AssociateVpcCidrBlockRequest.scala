@@ -36,14 +36,14 @@ object AssociateVpcCidrBlockRequest {
   @scala.inline
   def apply(
     VpcId: VpcId,
-    AmazonProvidedIpv6CidrBlock: js.UndefOr[scala.Boolean] = js.undefined,
+    AmazonProvidedIpv6CidrBlock: js.UndefOr[Boolean] = js.undefined,
     CidrBlock: String = null,
     Ipv6CidrBlock: String = null,
     Ipv6CidrBlockNetworkBorderGroup: String = null,
     Ipv6Pool: Ipv6PoolEc2Id = null
   ): AssociateVpcCidrBlockRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AmazonProvidedIpv6CidrBlock)) __obj.updateDynamic("AmazonProvidedIpv6CidrBlock")(AmazonProvidedIpv6CidrBlock.asInstanceOf[js.Any])
+    if (!js.isUndefined(AmazonProvidedIpv6CidrBlock)) __obj.updateDynamic("AmazonProvidedIpv6CidrBlock")(AmazonProvidedIpv6CidrBlock.get.asInstanceOf[js.Any])
     if (CidrBlock != null) __obj.updateDynamic("CidrBlock")(CidrBlock.asInstanceOf[js.Any])
     if (Ipv6CidrBlock != null) __obj.updateDynamic("Ipv6CidrBlock")(Ipv6CidrBlock.asInstanceOf[js.Any])
     if (Ipv6CidrBlockNetworkBorderGroup != null) __obj.updateDynamic("Ipv6CidrBlockNetworkBorderGroup")(Ipv6CidrBlockNetworkBorderGroup.asInstanceOf[js.Any])

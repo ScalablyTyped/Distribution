@@ -51,17 +51,21 @@ trait ModifyEndpointMessage extends js.Object {
     */
   var ExtraConnectionAttributes: js.UndefOr[String] = js.native
   /**
-    * Settings in JSON format for the target Apache Kafka endpoint. For information about other available settings, see Using Object Mapping to Migrate Data to Apache Kafka in the AWS Database Migration User Guide. 
+    * Settings in JSON format for the target Apache Kafka endpoint. For more information about the available settings, see Using Apache Kafka as a Target for AWS Database Migration Service in the AWS Database Migration User Guide. 
     */
   var KafkaSettings: js.UndefOr[typings.awsSdk.dmsMod.KafkaSettings] = js.native
   /**
-    * Settings in JSON format for the target endpoint for Amazon Kinesis Data Streams. For information about other available settings, see Using Object Mapping to Migrate Data to a Kinesis Data Stream in the AWS Database Migration User Guide. 
+    * Settings in JSON format for the target endpoint for Amazon Kinesis Data Streams. For more information about the available settings, see Using Amazon Kinesis Data Streams as a Target for AWS Database Migration Service in the AWS Database Migration User Guide. 
     */
   var KinesisSettings: js.UndefOr[typings.awsSdk.dmsMod.KinesisSettings] = js.native
   /**
     * Settings in JSON format for the source MongoDB endpoint. For more information about the available settings, see the configuration properties section in  Using MongoDB as a Target for AWS Database Migration Service in the AWS Database Migration Service User Guide. 
     */
   var MongoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.MongoDbSettings] = js.native
+  /**
+    * Settings in JSON format for the target Amazon Neptune endpoint. For more information about the available settings, see https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Neptune.html#CHAP_Target.Neptune.EndpointSettings in the AWS Database Migration Service User Guide. 
+    */
+  var NeptuneSettings: js.UndefOr[typings.awsSdk.dmsMod.NeptuneSettings] = js.native
   /**
     * The password to be used to login to the endpoint database.
     */
@@ -110,8 +114,9 @@ object ModifyEndpointMessage {
     KafkaSettings: KafkaSettings = null,
     KinesisSettings: KinesisSettings = null,
     MongoDbSettings: MongoDbSettings = null,
+    NeptuneSettings: NeptuneSettings = null,
     Password: SecretString = null,
-    Port: Int | Double = null,
+    Port: js.UndefOr[IntegerOptional] = js.undefined,
     RedshiftSettings: RedshiftSettings = null,
     S3Settings: S3Settings = null,
     ServerName: String = null,
@@ -133,8 +138,9 @@ object ModifyEndpointMessage {
     if (KafkaSettings != null) __obj.updateDynamic("KafkaSettings")(KafkaSettings.asInstanceOf[js.Any])
     if (KinesisSettings != null) __obj.updateDynamic("KinesisSettings")(KinesisSettings.asInstanceOf[js.Any])
     if (MongoDbSettings != null) __obj.updateDynamic("MongoDbSettings")(MongoDbSettings.asInstanceOf[js.Any])
+    if (NeptuneSettings != null) __obj.updateDynamic("NeptuneSettings")(NeptuneSettings.asInstanceOf[js.Any])
     if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (RedshiftSettings != null) __obj.updateDynamic("RedshiftSettings")(RedshiftSettings.asInstanceOf[js.Any])
     if (S3Settings != null) __obj.updateDynamic("S3Settings")(S3Settings.asInstanceOf[js.Any])
     if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])

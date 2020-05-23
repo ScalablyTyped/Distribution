@@ -15,9 +15,6 @@ object petitDomStrings {
   sealed trait DOMElementProps extends js.Object
   
   @js.native
-  sealed trait MSVideoFormatChanged extends js.Object
-  
-  @js.native
   sealed trait SVGUnload extends js.Object
   
   @js.native
@@ -575,8 +572,6 @@ object petitDomStrings {
   def AnimationEvent: AnimationEvent = "AnimationEvent".asInstanceOf[AnimationEvent]
   @scala.inline
   def DOMElementProps: DOMElementProps = "DOMElementProps".asInstanceOf[DOMElementProps]
-  @scala.inline
-  def MSVideoFormatChanged: MSVideoFormatChanged = "MSVideoFormatChanged".asInstanceOf[MSVideoFormatChanged]
   @scala.inline
   def SVGUnload: SVGUnload = "SVGUnload".asInstanceOf[SVGUnload]
   @scala.inline

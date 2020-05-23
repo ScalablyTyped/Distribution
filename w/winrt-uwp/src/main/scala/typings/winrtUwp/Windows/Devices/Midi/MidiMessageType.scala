@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Midi
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,65 +86,6 @@ object MidiMessageType extends js.Object {
   /** A MidiTuneRequestMessage . */
   @js.native
   sealed trait tuneRequest extends MidiMessageType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MidiMessageType with Double] = js.native
-  /* 17 */ @js.native
-  object activeSensing extends TopLevel[activeSensing with Double]
-  
-  /* 6 */ @js.native
-  object channelPressure extends TopLevel[channelPressure with Double]
-  
-  /* 15 */ @js.native
-  object continue extends TopLevel[continue with Double]
-  
-  /* 4 */ @js.native
-  object controlChange extends TopLevel[controlChange with Double]
-  
-  /* 9 */ @js.native
-  object midiTimeCode extends TopLevel[midiTimeCode with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object noteOff extends TopLevel[noteOff with Double]
-  
-  /* 2 */ @js.native
-  object noteOn extends TopLevel[noteOn with Double]
-  
-  /* 7 */ @js.native
-  object pitchBendChange extends TopLevel[pitchBendChange with Double]
-  
-  /* 3 */ @js.native
-  object polyphonicKeyPressure extends TopLevel[polyphonicKeyPressure with Double]
-  
-  /* 5 */ @js.native
-  object programChange extends TopLevel[programChange with Double]
-  
-  /* 10 */ @js.native
-  object songPositionPointer extends TopLevel[songPositionPointer with Double]
-  
-  /* 11 */ @js.native
-  object songSelect extends TopLevel[songSelect with Double]
-  
-  /* 14 */ @js.native
-  object start extends TopLevel[start with Double]
-  
-  /* 16 */ @js.native
-  object stop extends TopLevel[stop with Double]
-  
-  /* 8 */ @js.native
-  object systemExclusive extends TopLevel[systemExclusive with Double]
-  
-  /* 18 */ @js.native
-  object systemReset extends TopLevel[systemReset with Double]
-  
-  /* 13 */ @js.native
-  object timingClock extends TopLevel[timingClock with Double]
-  
-  /* 12 */ @js.native
-  object tuneRequest extends TopLevel[tuneRequest with Double]
   
 }
 

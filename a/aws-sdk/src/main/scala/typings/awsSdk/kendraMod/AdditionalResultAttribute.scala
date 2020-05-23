@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AdditionalResultAttribute extends js.Object {
   /**
-    * 
+    * The key that identifies the attribute.
     */
   var Key: String = js.native
   /**
-    * 
+    * An object that contains the attribute value.
     */
   var Value: AdditionalResultAttributeValue = js.native
   /**
-    * 
+    * The data type of the Value property.
     */
   var ValueType: AdditionalResultAttributeValueType = js.native
 }

@@ -35,10 +35,10 @@ object Logger {
     Id: string,
     Level: LoggerLevel,
     Type: LoggerType,
-    Space: Int | Double = null
+    Space: js.UndefOr[integer] = js.undefined
   ): Logger = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Level = Level.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (Space != null) __obj.updateDynamic("Space")(Space.asInstanceOf[js.Any])
+    if (!js.isUndefined(Space)) __obj.updateDynamic("Space")(Space.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Logger]
   }
 }

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +15,19 @@ trait IntersectionObserverEntry extends js.Object {
   val time: Double
 }
 
-@JSGlobal("IntersectionObserverEntry")
-@js.native
-object IntersectionObserverEntry extends Instantiable1[
-      /* intersectionObserverEntryInit */ IntersectionObserverEntryInit, 
-      IntersectionObserverEntry
-    ]
+object IntersectionObserverEntry {
+  @scala.inline
+  def apply(
+    boundingClientRect: DOMRectReadOnly,
+    intersectionRatio: Double,
+    intersectionRect: DOMRectReadOnly,
+    isIntersecting: scala.Boolean,
+    target: Element,
+    time: Double,
+    rootBounds: DOMRectReadOnly = null
+  ): IntersectionObserverEntry = {
+    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], rootBounds = rootBounds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntersectionObserverEntry]
+  }
+}
 

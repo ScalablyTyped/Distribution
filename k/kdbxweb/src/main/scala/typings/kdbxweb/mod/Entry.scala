@@ -1,7 +1,7 @@
 package typings.kdbxweb.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.kdbxweb.AnonDefaultSequence
+import typings.kdbxweb.anon.DefaultSequence
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("kdbxweb", "Entry")
 @js.native
 class Entry () extends KdbxObject {
-  var autoType: AnonDefaultSequence = js.native
+  var autoType: DefaultSequence = js.native
   var bgColor: StringProtected = js.native
   var customIcon: KdbxUuid = js.native
   var fgColor: StringProtected = js.native

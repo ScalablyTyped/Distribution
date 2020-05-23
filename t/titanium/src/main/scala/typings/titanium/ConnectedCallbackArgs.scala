@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   */
 trait ConnectedCallbackArgs extends js.Object {
   /**
-  	 * Socket instance that has been connected.
-  	 */
+    * Socket instance that has been connected.
+    */
   var socket: js.UndefOr[TCP] = js.undefined
 }
 

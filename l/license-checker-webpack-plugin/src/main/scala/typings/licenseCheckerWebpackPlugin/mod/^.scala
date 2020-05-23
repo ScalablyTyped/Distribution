@@ -1,6 +1,6 @@
 package typings.licenseCheckerWebpackPlugin.mod
 
-import typings.licenseCheckerWebpackPlugin.PartialOptions
+import typings.licenseCheckerWebpackPlugin.anon.PartialOptions
 import typings.webpack.mod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`

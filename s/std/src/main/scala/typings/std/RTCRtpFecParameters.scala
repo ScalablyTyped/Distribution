@@ -11,10 +11,10 @@ trait RTCRtpFecParameters extends js.Object {
 
 object RTCRtpFecParameters {
   @scala.inline
-  def apply(mechanism: java.lang.String = null, ssrc: Int | Double = null): RTCRtpFecParameters = {
+  def apply(mechanism: java.lang.String = null, ssrc: js.UndefOr[Double] = js.undefined): RTCRtpFecParameters = {
     val __obj = js.Dynamic.literal()
     if (mechanism != null) __obj.updateDynamic("mechanism")(mechanism.asInstanceOf[js.Any])
-    if (ssrc != null) __obj.updateDynamic("ssrc")(ssrc.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssrc)) __obj.updateDynamic("ssrc")(ssrc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpFecParameters]
   }
 }

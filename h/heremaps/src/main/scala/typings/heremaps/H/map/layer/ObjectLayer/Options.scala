@@ -21,16 +21,16 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    dataCacheSize: Int | Double = null,
-    pixelRatio: Int | Double = null,
-    tileCacheSize: Int | Double = null,
-    tileSize: Int | Double = null
+    dataCacheSize: js.UndefOr[Double] = js.undefined,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
+    tileCacheSize: js.UndefOr[Double] = js.undefined,
+    tileSize: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (dataCacheSize != null) __obj.updateDynamic("dataCacheSize")(dataCacheSize.asInstanceOf[js.Any])
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (tileCacheSize != null) __obj.updateDynamic("tileCacheSize")(tileCacheSize.asInstanceOf[js.Any])
-    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataCacheSize)) __obj.updateDynamic("dataCacheSize")(dataCacheSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileCacheSize)) __obj.updateDynamic("tileCacheSize")(tileCacheSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

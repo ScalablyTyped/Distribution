@@ -577,8 +577,9 @@ object Utils extends js.Object {
     def Clone(obj: js.Object): js.Object = js.native
     /**
       * This is a slightly modified version of http://api.jquery.com/jQuery.extend/
+      * @param args The objects that will be mixed.
       */
-    def Extend(): js.Object = js.native
+    def Extend(args: js.Any*): js.Object = js.native
     /**
       * Retrieves a value from an object. Allows for more advanced selection options, including:
       * 
@@ -751,6 +752,14 @@ object Utils extends js.Object {
     def Pad(str: java.lang.String, len: integer): java.lang.String = js.native
     def Pad(str: java.lang.String, len: integer, pad: java.lang.String): java.lang.String = js.native
     def Pad(str: java.lang.String, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
+    def Pad(str: js.Object): java.lang.String = js.native
+    def Pad(str: js.Object, len: integer): java.lang.String = js.native
+    def Pad(str: js.Object, len: integer, pad: java.lang.String): java.lang.String = js.native
+    def Pad(str: js.Object, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
+    def Pad(str: Double): java.lang.String = js.native
+    def Pad(str: Double, len: integer): java.lang.String = js.native
+    def Pad(str: Double, len: integer, pad: java.lang.String): java.lang.String = js.native
+    def Pad(str: Double, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
     /**
       * Takes the given string and reverses it, returning the reversed string.
       * For example if given the string `Atari 520ST` it would return `TS025 iratA`.

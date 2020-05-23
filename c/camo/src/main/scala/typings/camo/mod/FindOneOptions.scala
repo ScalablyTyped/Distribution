@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait FindOneOptions extends js.Object {
   /**
-  		 * Find all or no references.
-  		 * Pass an array of field names to only populate the specified references.
-  		 *
-  		 * @type {(boolean | string[])}
-  		 */
+    * Find all or no references.
+    * Pass an array of field names to only populate the specified references.
+    *
+    * @type {(boolean | string[])}
+    */
   var populate: js.UndefOr[Boolean | js.Array[String]] = js.undefined
 }
 

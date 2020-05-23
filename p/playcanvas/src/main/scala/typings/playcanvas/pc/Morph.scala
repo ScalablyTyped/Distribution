@@ -5,36 +5,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.Morph
-  * @classdesc Contains a list of pc.MorphTarget, a combined AABB and some associated data.
-  * @param {pc.MorphTarget[]} targets - A list of morph targets.
+  * Contains a list of pc.MorphTarget, a combined AABB and some associated data.
+  * @param targets - A list of morph targets.
   */
-@JSGlobal("pc.Morph")
-@js.native
-class Morph protected () extends js.Object {
-  def this(targets: js.Array[MorphTarget]) = this()
+trait Morph extends js.Object {
   /**
-    * @function
-    * @name pc.Morph#addTarget
-    * @description Adds a new morph target to the list.
-    * @param {pc.MorphTarget} target - A new morph target.
+    * Adds a new morph target to the list.
+    * @param target - A new morph target.
     */
-  def addTarget(target: MorphTarget): Unit = js.native
+  def addTarget(target: MorphTarget): Unit
   /**
-    * @function
-    * @name pc.Morph#getTarget
-    * @description Gets the morph target by index.
-    * @param {number} index - An index of morph target.
-    * @returns {pc.MorphTarget} A morph target object.
+    * Gets the morph target by index.
+    * @param index - An index of morph target.
+    * @returns A morph target object.
     */
-  def getTarget(index: Double): MorphTarget = js.native
+  def getTarget(index: Double): MorphTarget
   /**
-    * @function
-    * @name pc.Morph#removeTarget
-    * @description Remove the specified morph target from the list.
-    * @param {pc.MorphTarget} target - A morph target to delete.
+    * Remove the specified morph target from the list.
+    * @param target - A morph target to delete.
     */
-  def removeTarget(target: MorphTarget): Unit = js.native
+  def removeTarget(target: MorphTarget): Unit
+}
+
+object Morph {
+  @scala.inline
+  def apply(
+    addTarget: MorphTarget => Unit,
+    getTarget: Double => MorphTarget,
+    removeTarget: MorphTarget => Unit
+  ): Morph = {
+    val __obj = js.Dynamic.literal(addTarget = js.Any.fromFunction1(addTarget), getTarget = js.Any.fromFunction1(getTarget), removeTarget = js.Any.fromFunction1(removeTarget))
+    __obj.asInstanceOf[Morph]
+  }
 }
 

@@ -16,15 +16,8 @@ import scala.scalajs.js.annotation._
   * If you create your own instance of this class you should provide a seed for it.
   * If no seed is given it will use a 'random' one based on Date.now.
   */
-@JSGlobal("Phaser.Math.RandomDataGenerator")
 @js.native
-/**
-  * 
-  * @param seeds The seeds to use for the random number generator.
-  */
-class RandomDataGenerator () extends js.Object {
-  def this(seeds: String) = this()
-  def this(seeds: js.Array[String]) = this()
+trait RandomDataGenerator extends js.Object {
   /**
     * Signs to choose from.
     */

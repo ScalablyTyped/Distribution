@@ -8,6 +8,7 @@ import typings.expressServeStaticCore.expressServeStaticCoreStrings.options
 import typings.expressServeStaticCore.expressServeStaticCoreStrings.patch
 import typings.expressServeStaticCore.expressServeStaticCoreStrings.post
 import typings.expressServeStaticCore.expressServeStaticCoreStrings.put
+import typings.qs.mod.ParsedQs
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IRouter
-  extends RequestHandler[ParamsDictionary, js.Any, js.Any, Query] {
+  extends RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] {
   /**
     * Special-cased "all" method, applying the given route `path`,
     * middleware, and callback to _every_ HTTP method.
@@ -285,7 +286,7 @@ trait IRouter
     handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def use(
-    handlers: ((RequestHandler[ParamsDictionary, _, _, Query]) | (RequestHandlerParams[ParamsDictionary, _, _, Query]))*
+    handlers: ((RequestHandler[ParamsDictionary, _, _, ParsedQs]) | (RequestHandlerParams[ParamsDictionary, _, _, ParsedQs]))*
   ): this.type = js.native
   def use(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)

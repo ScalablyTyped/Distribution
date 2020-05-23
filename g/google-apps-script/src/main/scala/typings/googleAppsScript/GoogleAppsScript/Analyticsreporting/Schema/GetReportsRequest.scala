@@ -17,7 +17,7 @@ object GetReportsRequest {
   ): GetReportsRequest = {
     val __obj = js.Dynamic.literal()
     if (reportRequests != null) __obj.updateDynamic("reportRequests")(reportRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(useResourceQuotas)) __obj.updateDynamic("useResourceQuotas")(useResourceQuotas.asInstanceOf[js.Any])
+    if (!js.isUndefined(useResourceQuotas)) __obj.updateDynamic("useResourceQuotas")(useResourceQuotas.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReportsRequest]
   }
 }

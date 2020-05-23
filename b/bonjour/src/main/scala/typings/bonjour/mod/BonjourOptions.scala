@@ -24,19 +24,19 @@ object BonjourOptions {
     ip: String = null,
     loopback: js.UndefOr[Boolean] = js.undefined,
     multicast: js.UndefOr[Boolean] = js.undefined,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     reuseAddr: js.UndefOr[Boolean] = js.undefined,
-    ttl: Int | Double = null,
+    ttl: js.UndefOr[Double] = js.undefined,
     `type`: udp4 | udp6 = null
   ): BonjourOptions = {
     val __obj = js.Dynamic.literal()
     if (interface != null) __obj.updateDynamic("interface")(interface.asInstanceOf[js.Any])
     if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
-    if (!js.isUndefined(loopback)) __obj.updateDynamic("loopback")(loopback.asInstanceOf[js.Any])
-    if (!js.isUndefined(multicast)) __obj.updateDynamic("multicast")(multicast.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopback)) __obj.updateDynamic("loopback")(loopback.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multicast)) __obj.updateDynamic("multicast")(multicast.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BonjourOptions]
   }

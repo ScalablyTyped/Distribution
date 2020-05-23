@@ -18,9 +18,9 @@ trait DeleteCertificateRequest extends js.Object {
 
 object DeleteCertificateRequest {
   @scala.inline
-  def apply(certificateId: CertificateId, forceDelete: js.UndefOr[scala.Boolean] = js.undefined): DeleteCertificateRequest = {
+  def apply(certificateId: CertificateId, forceDelete: js.UndefOr[ForceDelete] = js.undefined): DeleteCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceDelete)) __obj.updateDynamic("forceDelete")(forceDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceDelete)) __obj.updateDynamic("forceDelete")(forceDelete.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCertificateRequest]
   }
 }

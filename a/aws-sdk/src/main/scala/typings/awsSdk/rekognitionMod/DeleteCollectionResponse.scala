@@ -14,9 +14,9 @@ trait DeleteCollectionResponse extends js.Object {
 
 object DeleteCollectionResponse {
   @scala.inline
-  def apply(StatusCode: Int | Double = null): DeleteCollectionResponse = {
+  def apply(StatusCode: js.UndefOr[UInteger] = js.undefined): DeleteCollectionResponse = {
     val __obj = js.Dynamic.literal()
-    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCollectionResponse]
   }
 }

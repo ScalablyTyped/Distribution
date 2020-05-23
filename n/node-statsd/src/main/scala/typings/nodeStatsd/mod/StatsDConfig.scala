@@ -23,17 +23,17 @@ object StatsDConfig {
     globalize: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
     mock: js.UndefOr[Boolean] = js.undefined,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
     suffix: String = null
   ): StatsDConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheDns)) __obj.updateDynamic("cacheDns")(cacheDns.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheDns)) __obj.updateDynamic("cacheDns")(cacheDns.get.asInstanceOf[js.Any])
     if (global_tags != null) __obj.updateDynamic("global_tags")(global_tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalize)) __obj.updateDynamic("globalize")(globalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalize)) __obj.updateDynamic("globalize")(globalize.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(mock)) __obj.updateDynamic("mock")(mock.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(mock)) __obj.updateDynamic("mock")(mock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatsDConfig]

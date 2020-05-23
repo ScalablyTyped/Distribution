@@ -2,14 +2,14 @@ package typings.tern.inferMod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.tern.AnonInstantiable
+import typings.tern.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("tern/lib/infer", "constraint")
 @js.native
-class constraint protected () extends AnonInstantiable {
+class constraint protected () extends Instantiable {
   def this(methods: StringDictionary[js.Any]) = this()
 }
 

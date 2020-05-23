@@ -1,6 +1,6 @@
 package typings.leafletGeosearch.mod
 
-import typings.leafletGeosearch.AnonLocation
+import typings.leafletGeosearch.anon.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait GoogleProviderResultRaw extends js.Object {
   var address_components: js.Array[GoogleProviderResultAddressComponent]
   var formatted_address: String
-  var geometry: AnonLocation
+  var geometry: Location
   var place_id: String
   var types: js.Array[String]
 }
@@ -18,7 +18,7 @@ object GoogleProviderResultRaw {
   def apply(
     address_components: js.Array[GoogleProviderResultAddressComponent],
     formatted_address: String,
-    geometry: AnonLocation,
+    geometry: Location,
     place_id: String,
     types: js.Array[String]
   ): GoogleProviderResultRaw = {

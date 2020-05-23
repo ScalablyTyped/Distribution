@@ -42,19 +42,19 @@ object IGeoXmlReadOptions {
     defaultStyles: IStylesOptions = null,
     error: /* msg */ String => Unit = null,
     ignoreVisibility: js.UndefOr[Boolean] = js.undefined,
-    maxNetworkLinkDepth: Int | Double = null,
-    maxNetworkLinks: Int | Double = null,
+    maxNetworkLinkDepth: js.UndefOr[Double] = js.undefined,
+    maxNetworkLinks: js.UndefOr[Double] = js.undefined,
     setPushpinTitles: js.UndefOr[Boolean] = js.undefined
   ): IGeoXmlReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowKmlScreenOverlays)) __obj.updateDynamic("allowKmlScreenOverlays")(allowKmlScreenOverlays.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureGpxPathWaypoints)) __obj.updateDynamic("captureGpxPathWaypoints")(captureGpxPathWaypoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKmlScreenOverlays)) __obj.updateDynamic("allowKmlScreenOverlays")(allowKmlScreenOverlays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureGpxPathWaypoints)) __obj.updateDynamic("captureGpxPathWaypoints")(captureGpxPathWaypoints.get.asInstanceOf[js.Any])
     if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (!js.isUndefined(ignoreVisibility)) __obj.updateDynamic("ignoreVisibility")(ignoreVisibility.asInstanceOf[js.Any])
-    if (maxNetworkLinkDepth != null) __obj.updateDynamic("maxNetworkLinkDepth")(maxNetworkLinkDepth.asInstanceOf[js.Any])
-    if (maxNetworkLinks != null) __obj.updateDynamic("maxNetworkLinks")(maxNetworkLinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(setPushpinTitles)) __obj.updateDynamic("setPushpinTitles")(setPushpinTitles.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreVisibility)) __obj.updateDynamic("ignoreVisibility")(ignoreVisibility.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNetworkLinkDepth)) __obj.updateDynamic("maxNetworkLinkDepth")(maxNetworkLinkDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNetworkLinks)) __obj.updateDynamic("maxNetworkLinks")(maxNetworkLinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setPushpinTitles)) __obj.updateDynamic("setPushpinTitles")(setPushpinTitles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoXmlReadOptions]
   }
 }

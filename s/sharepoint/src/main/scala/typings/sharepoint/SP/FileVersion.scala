@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.FileVersion")
 @js.native
-class FileVersion () extends ClientObject {
+trait FileVersion extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_checkInComment(): String = js.native
   def get_created(): Date = js.native

@@ -1,6 +1,6 @@
 package typings.angularCommon.testingTestingMod
 
-import typings.angularCommon.AnonIgnoreCancelled
+import typings.angularCommon.anon.IgnoreCancelled
 import typings.angularCommon.httpHttpMod.HttpBackend
 import typings.angularCommon.httpHttpMod.HttpEvent
 import typings.angularCommon.httpMod.HttpRequest
@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.angularCommon.testingTestingMod.HttpTestingController because Inheritance from two classes. Inlined `match`, `match`, `match`, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, verify, verify */ @JSImport("@angular/common/http/testing/testing", "\u0275angular_packages_common_http_testing_testing_a")
 @js.native
 class ɵangularPackagesCommonHttpTestingTestingA () extends HttpBackend {
@@ -124,6 +124,6 @@ class ɵangularPackagesCommonHttpTestingTestingA () extends HttpBackend {
     * were not explicitly matched.
     */
   def verify(): Unit = js.native
-  def verify(opts: AnonIgnoreCancelled): Unit = js.native
+  def verify(opts: IgnoreCancelled): Unit = js.native
 }
 

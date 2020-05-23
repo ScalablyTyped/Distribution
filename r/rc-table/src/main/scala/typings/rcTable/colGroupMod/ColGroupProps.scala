@@ -15,11 +15,11 @@ object ColGroupProps {
   @scala.inline
   def apply[RecordType](
     colWidths: js.Array[Double | String],
-    columCount: Int | Double = null,
+    columCount: js.UndefOr[Double] = js.undefined,
     columns: js.Array[ColumnType[RecordType]] = null
   ): ColGroupProps[RecordType] = {
     val __obj = js.Dynamic.literal(colWidths = colWidths.asInstanceOf[js.Any])
-    if (columCount != null) __obj.updateDynamic("columCount")(columCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(columCount)) __obj.updateDynamic("columCount")(columCount.get.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColGroupProps[RecordType]]
   }

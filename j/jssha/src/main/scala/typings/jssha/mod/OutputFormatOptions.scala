@@ -15,12 +15,12 @@ object OutputFormatOptions {
   def apply(
     b64Pad: String = null,
     outputUpper: js.UndefOr[Boolean] = js.undefined,
-    shakeLen: Int | Double = null
+    shakeLen: js.UndefOr[Double] = js.undefined
   ): OutputFormatOptions = {
     val __obj = js.Dynamic.literal()
     if (b64Pad != null) __obj.updateDynamic("b64Pad")(b64Pad.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputUpper)) __obj.updateDynamic("outputUpper")(outputUpper.asInstanceOf[js.Any])
-    if (shakeLen != null) __obj.updateDynamic("shakeLen")(shakeLen.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputUpper)) __obj.updateDynamic("outputUpper")(outputUpper.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shakeLen)) __obj.updateDynamic("shakeLen")(shakeLen.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputFormatOptions]
   }
 }

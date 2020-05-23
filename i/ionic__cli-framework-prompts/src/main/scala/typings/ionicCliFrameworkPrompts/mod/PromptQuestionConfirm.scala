@@ -23,8 +23,8 @@ object PromptQuestionConfirm {
   def apply(
     message: String,
     `type`: PromptTypeConfirm,
-    default: js.UndefOr[Boolean] = js.undefined,
-    fallback: js.UndefOr[Boolean] = js.undefined,
+    default: js.UndefOr[PromptValueConfirm] = js.undefined,
+    fallback: js.UndefOr[PromptValueConfirm] = js.undefined,
     filter: /* input */ js.Any => _ = null,
     name: KeyUnion[Answers] = null,
     prefix: String = null,
@@ -34,8 +34,8 @@ object PromptQuestionConfirm {
   ): PromptQuestionConfirm = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])

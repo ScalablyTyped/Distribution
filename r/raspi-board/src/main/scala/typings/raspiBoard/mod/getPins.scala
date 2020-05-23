@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("raspi-board", "getPins")
 @js.native
 object getPins extends js.Object {
-  def apply(): NumberDictionary[PinInfo] = js.native
+  def apply(): NumberDictionary[IRaspiPinInfo] = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,4 @@ trait PrintParameters extends Accessor {
     */
   var view: MapView = js.native
 }
-
-@JSGlobal("__esri.PrintParameters")
-@js.native
-object PrintParameters extends TopLevel[PrintParametersConstructor]
 

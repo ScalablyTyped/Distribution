@@ -21,18 +21,18 @@ trait ISynthesizeSpeechConfig extends js.Object {
 object ISynthesizeSpeechConfig {
   @scala.inline
   def apply(
-    effectsProfileId: js.Array[String] = null,
-    pitch: Int | Double = null,
-    speakingRate: Int | Double = null,
-    voice: IVoiceSelectionParams = null,
-    volumeGainDb: Int | Double = null
+    effectsProfileId: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    pitch: js.UndefOr[Null | Double] = js.undefined,
+    speakingRate: js.UndefOr[Null | Double] = js.undefined,
+    voice: js.UndefOr[Null | IVoiceSelectionParams] = js.undefined,
+    volumeGainDb: js.UndefOr[Null | Double] = js.undefined
   ): ISynthesizeSpeechConfig = {
     val __obj = js.Dynamic.literal()
-    if (effectsProfileId != null) __obj.updateDynamic("effectsProfileId")(effectsProfileId.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (speakingRate != null) __obj.updateDynamic("speakingRate")(speakingRate.asInstanceOf[js.Any])
-    if (voice != null) __obj.updateDynamic("voice")(voice.asInstanceOf[js.Any])
-    if (volumeGainDb != null) __obj.updateDynamic("volumeGainDb")(volumeGainDb.asInstanceOf[js.Any])
+    if (!js.isUndefined(effectsProfileId)) __obj.updateDynamic("effectsProfileId")(effectsProfileId.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (!js.isUndefined(speakingRate)) __obj.updateDynamic("speakingRate")(speakingRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(voice)) __obj.updateDynamic("voice")(voice.asInstanceOf[js.Any])
+    if (!js.isUndefined(volumeGainDb)) __obj.updateDynamic("volumeGainDb")(volumeGainDb.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISynthesizeSpeechConfig]
   }
 }

@@ -5,9 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object transportMod {
-  type ApiResponse[T, C] = typings.elasticElasticsearch.transportMod.RequestEvent[T, C]
-  type anyObject = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type emitFn = js.Function2[/* event */ java.lang.String | js.Symbol, /* repeated */ js.Any, scala.Boolean]
+  /* Rewritten from type alias, can be one of: 
+    - typings.elasticElasticsearch.errorsMod.ConfigurationError
+    - typings.elasticElasticsearch.errorsMod.ConnectionError[typings.std.Record[java.lang.String, js.Any], js.Any]
+    - typings.elasticElasticsearch.errorsMod.DeserializationError
+    - typings.elasticElasticsearch.errorsMod.SerializationError
+    - typings.elasticElasticsearch.errorsMod.NoLivingConnectionsError[typings.std.Record[java.lang.String, js.Any], js.Any]
+    - typings.elasticElasticsearch.errorsMod.ResponseError[typings.std.Record[java.lang.String, js.Any], js.Any]
+    - typings.elasticElasticsearch.errorsMod.TimeoutError[typings.std.Record[java.lang.String, js.Any], js.Any]
+    - typings.elasticElasticsearch.errorsMod.RequestAbortedError[typings.std.Record[java.lang.String, js.Any], js.Any]
+  */
+  type ApiError = typings.elasticElasticsearch.transportMod._ApiError | (typings.elasticElasticsearch.errorsMod.ConnectionError[typings.std.Record[java.lang.String, js.Any], js.Any]) | (typings.elasticElasticsearch.errorsMod.NoLivingConnectionsError[typings.std.Record[java.lang.String, js.Any], js.Any]) | (typings.elasticElasticsearch.errorsMod.ResponseError[typings.std.Record[java.lang.String, js.Any], js.Any]) | (typings.elasticElasticsearch.errorsMod.TimeoutError[typings.std.Record[java.lang.String, js.Any], js.Any]) | (typings.elasticElasticsearch.errorsMod.RequestAbortedError[typings.std.Record[java.lang.String, js.Any], js.Any])
+  type ApiResponse[TResponse, TContext] = typings.elasticElasticsearch.transportMod.RequestEvent[TResponse, TContext]
+  type RequestBody[T] = T | java.lang.String | typings.node.Buffer | typings.node.streamMod.Readable
+  type RequestNDBody[T] = T | java.lang.String | js.Array[java.lang.String] | typings.node.Buffer | typings.node.streamMod.Readable
   type generateRequestIdFn = js.Function2[
     /* params */ typings.elasticElasticsearch.transportMod.TransportRequestParams, 
     /* options */ typings.elasticElasticsearch.transportMod.TransportRequestOptions, 
@@ -18,5 +29,4 @@ package object transportMod {
     /* connections */ js.Array[typings.elasticElasticsearch.connectionMod.default], 
     typings.elasticElasticsearch.connectionMod.default
   ]
-  type noopFn = js.Function1[/* repeated */ js.Any, scala.Unit]
 }

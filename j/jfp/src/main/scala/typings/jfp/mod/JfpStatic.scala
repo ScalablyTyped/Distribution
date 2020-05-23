@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JfpStatic extends js.Object {
   /**
-  		 * jfp supports string function aliasing -- alias is a jfp function name and seeking behavior
-  		 * will happen against the jfp object only.
-  		 */
+    * jfp supports string function aliasing -- alias is a jfp function name and seeking behavior
+    * will happen against the jfp object only.
+    */
   def apply(alias: String, args: js.Any*): JfpCurriedOutput[_] = js.native
   def apply(externalFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): JfpCurriedOutput[_] = js.native
   /**
@@ -47,36 +47,36 @@ trait JfpStatic extends js.Object {
   def clone(value: js.Any): js.Any = js.native
   def clone(value: js.Any, depth: Double): js.Any = js.native
   /**
-  		 * Removes falsey values from an array
-  		 * @param values The array to compact
-  		 */
+    * Removes falsey values from an array
+    * @param values The array to compact
+    */
   def compact(values: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Composes a set of functions into a new single function
-  		 * @param ...args Arguments for compose
-  		 */
+    * Composes a set of functions into a new single function
+    * @param ...args Arguments for compose
+    */
   def compose(args: (js.Function1[/* repeated */ js.Any, _])*): js.Function1[/* repeated */ js.Any, _] = js.native
   /**
     * Creates composite predicate which performs each check on a value and then conjoins the result
     */
   def composePredicate(args: (js.Function1[/* repeated */ js.Any, Boolean])*): js.Function1[/* repeated */ js.Any, Boolean] = js.native
   /**
-  		 * Clones and concatenates two arrays
-  		 * @param values1 The array to concatenate to
-  		 * @param values2 The array to concatenate with
-  		 */
+    * Clones and concatenates two arrays
+    * @param values1 The array to concatenate to
+    * @param values2 The array to concatenate with
+    */
   def concat(values1: js.Array[_], values2: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Appends value to clone of destination array
-  		 * @param value The value to add to the end of an array
-  		 * @param destination The array to be cloned and appended to
-  		 */
+    * Appends value to clone of destination array
+    * @param value The value to add to the end of an array
+    * @param destination The array to be cloned and appended to
+    */
   def conj(value: js.Any, destination: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Prepends value to clone of destination array
-  		 * @param value The value to add to the beginning of an array
-  		 * @param destination The array to be cloned and prepended to
-  		 */
+    * Prepends value to clone of destination array
+    * @param value The value to add to the beginning of an array
+    * @param destination The array to be cloned and prepended to
+    */
   def cons(value: js.Any, destination: js.Array[_]): js.Array[_] = js.native
   /**
     * Returns true if array contains provided value, else false
@@ -87,17 +87,17 @@ trait JfpStatic extends js.Object {
     */
   def copyArray(list: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Counts the number of arguments in a function declaration
-  		 * @param userFn Function to count arguments of
-  		 */
+    * Counts the number of arguments in a function declaration
+    * @param userFn Function to count arguments of
+    */
   def countArguments(userFn: js.Function1[/* repeated */ js.Any, _]): Double = js.native
   def curry(userFn: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   def curry(userFn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
   /**
-  		 * Curries function until all arguments are satisfied
-  		 * @param userFn Function to curry
-  		 * @param ...argments Initial arguments for currying application
-  		 */
+    * Curries function until all arguments are satisfied
+    * @param userFn Function to curry
+    * @param ...argments Initial arguments for currying application
+    */
   @JSName("curry")
   def curry_Function1(userFn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("curry")
@@ -115,61 +115,61 @@ trait JfpStatic extends js.Object {
     */
   def divide(numerator: Double, denominator: Double): Double = js.native
   /**
-  		 * Drops value at specified index from clone of array
-  		 * @param index Index to perform drop at
-  		 * @param values Array to remove value from
-  		 */
+    * Drops value at specified index from clone of array
+    * @param index Index to perform drop at
+    * @param values Array to remove value from
+    */
   def drop(index: Double, values: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Drops first element from clone of values array
-  		 * @param values Array to drop first value of
-  		 */
+    * Drops first element from clone of values array
+    * @param values Array to drop first value of
+    */
   def dropFirst(values: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Drops last element from clone of values array
-  		 * @param values Array to drop last value from
-  		 */
+    * Drops last element from clone of values array
+    * @param values Array to drop last value from
+    */
   def dropLast(values: js.Array[_]): js.Array[_] = js.native
   /**
     * Drops values from array until predicate is satisfied
     */
   def dropUntil(predicate: js.Function1[/* repeated */ js.Any, Boolean], list: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Performs iterable function on each value of provided array
-  		 * @param iterable Function to perform on each value of array
-  		 * @param values Array to operate on
-  		 */
+    * Performs iterable function on each value of provided array
+    * @param iterable Function to perform on each value of array
+    * @param values Array to operate on
+    */
   def each(iteratable: js.Function1[/* value */ js.Any, Unit], values: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Returns preferred value if truthy, otherwise returns default value
-  		 * @param defaultValue Default value
-  		 * @param preferredValue Preferred value
-  		 */
+    * Returns preferred value if truthy, otherwise returns default value
+    * @param defaultValue Default value
+    * @param preferredValue Preferred value
+    */
   def either(defaultValue: js.Any, preferredValue: js.Any): js.Any = js.native
   /**
-  		 * Returns provided value if truthy or matches datatype, otherwise returns default value
-  		 * @param defaultValue Default value
-  		 * @param preferredValue Preferred value
-  		 * @param datatype Type preferred value should be
-  		 */
+    * Returns provided value if truthy or matches datatype, otherwise returns default value
+    * @param defaultValue Default value
+    * @param preferredValue Preferred value
+    * @param datatype Type preferred value should be
+    */
   def either(defaultValue: js.Any, preferredValue: js.Any, datatype: String): js.Any = js.native
   /**
-  		 * Returns preferred value if truthy, otherwise returns default value
-  		 * @param defaultValue Default value
-  		 * @param preferredValue Preferred value
-  		 * @param predicateValue Boolean switch to return default or preferred value
-  		 */
+    * Returns preferred value if truthy, otherwise returns default value
+    * @param defaultValue Default value
+    * @param preferredValue Preferred value
+    * @param predicateValue Boolean switch to return default or preferred value
+    */
   def eitherIf(defaultValue: js.Any, preferredValue: js.Any, predicateValue: Boolean): js.Any = js.native
   /**
     * Returns either typed value based on type parameter
     */
   def eitherType(`type`: String, defaultValue: js.Any, value: js.Any): js.Any = js.native
   /**
-  		 * Returns provided value if truthy, otherwise returns default value
-  		 * @param defaultValue Default value
-  		 * @param preferredValue Preferred value
-  		 * @param predicate Predicate function preferred value is tested against
-  		 */
+    * Returns provided value if truthy, otherwise returns default value
+    * @param defaultValue Default value
+    * @param preferredValue Preferred value
+    * @param predicate Predicate function preferred value is tested against
+    */
   def eitherWhen(defaultValue: js.Any, preferredValue: js.Any, predicate: js.Function1[/* value */ js.Any, Boolean]): js.Any = js.native
   /**
     * Checks value equality of two arguments
@@ -191,21 +191,21 @@ trait JfpStatic extends js.Object {
     */
   def fac(n: Double): Double = js.native
   /**
-  		 * Filters all values not passing provided predicate
-  		 * @param predicate Function which performs a boolean resultant operation on a value of the array
-  		 * @param values Array to filter
-  		 */
+    * Filters all values not passing provided predicate
+    * @param predicate Function which performs a boolean resultant operation on a value of the array
+    * @param values Array to filter
+    */
   def filter(predicate: js.Function1[/* value */ js.Any, Boolean], values: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Finds the first value in an array that satisfies provided predicate
-  		 * @param predicate Function which performs a boolean resultant operation on a value of the array
-  		 * @param values Array to run predicate against
-  		 */
+    * Finds the first value in an array that satisfies provided predicate
+    * @param predicate Function which performs a boolean resultant operation on a value of the array
+    * @param values Array to run predicate against
+    */
   def find(predicate: js.Function1[/* value */ js.Any, Boolean], values: js.Array[_]): js.Any = js.native
   /**
-  		 * Returns the first value in an array
-  		 * @param values Array of values
-  		 */
+    * Returns the first value in an array
+    * @param values Array of values
+    */
   def first(values: js.Array[_]): js.Any = js.native
   /**
     * Checks if a is greater or equal to b
@@ -229,9 +229,9 @@ trait JfpStatic extends js.Object {
     */
   def hasFirst(value: js.Any): Boolean = js.native
   /**
-  		 * Returns value passed to the function
-  		 * @param value Value to return
-  		 */
+    * Returns value passed to the function
+    * @param value Value to return
+    */
   def identity(value: js.Any): js.Any = js.native
   /**
     * Increments a number
@@ -358,14 +358,14 @@ trait JfpStatic extends js.Object {
     */
   def isZero(value: Double): Boolean = js.native
   /**
-  		 * Returns last value in an array
-  		 * @param values Array of values
-  		 */
+    * Returns last value in an array
+    * @param values Array of values
+    */
   def last(values: js.Array[_]): js.Any = js.native
   /**
-  		 * Returns last index of an array
-  		 * @param values Array
-  		 */
+    * Returns last index of an array
+    * @param values Array
+    */
   def lastIndex(values: js.Array[_]): Double = js.native
   /**
     * Checks if a is less than or equal to b
@@ -376,25 +376,25 @@ trait JfpStatic extends js.Object {
     */
   def less(a: Double, b: Double): Boolean = js.native
   /**
-  		 * Maps functions into new array using mapper function
-  		 * @param mapper Mapping function
-  		 * @param values Array to map
-  		 */
+    * Maps functions into new array using mapper function
+    * @param mapper Mapping function
+    * @param values Array to map
+    */
   def map(mapper: js.Function1[/* value */ js.Any, _], values: js.Array[_]): js.Array[_] = js.native
   /**
     * Takes the maximum of two numbers
     */
   def max(a: Double, b: Double): Double = js.native
   /**
-  		 * Returns preferred value if truthy, otherwise null
-  		 * @param preferredValue Preferred value to check
-  		 */
+    * Returns preferred value if truthy, otherwise null
+    * @param preferredValue Preferred value to check
+    */
   def maybe(preferredValue: js.Any): js.Any = js.native
   /**
-  		 * Returns preferred value if truthy or matches datatype, otherwise null
-  		 * @param preferredValue Preferred value to check
-  		 * @param datatype Datatype to match
-  		 */
+    * Returns preferred value if truthy or matches datatype, otherwise null
+    * @param preferredValue Preferred value to check
+    * @param datatype Datatype to match
+    */
   def maybe(preferredValue: js.Any, datatype: String): js.Any = js.native
   /**
     * Returns maybe typed value based on type parameter
@@ -433,10 +433,10 @@ trait JfpStatic extends js.Object {
     */
   def not(value: Boolean): Boolean = js.native
   /**
-  		 * Returns nth value of passed array
-  		 * @param index Array index
-  		 * @param values Array of values
-  		 */
+    * Returns nth value of passed array
+    * @param index Array index
+    * @param values Array of values
+    */
   def nth(index: Double, values: js.Array[_]): js.Any = js.native
   /**
     * Counts number of list values which satisfy predicate
@@ -447,10 +447,10 @@ trait JfpStatic extends js.Object {
     */
   def or(a: Boolean, b: Boolean, args: Boolean*): Boolean = js.native
   /**
-  		 * Applies values to a function and returns partially applied function
-  		 * @param userFn Function to apply values to
-  		 * @param ...args Values to apply
-  		 */
+    * Applies values to a function and returns partially applied function
+    * @param userFn Function to apply values to
+    * @param ...args Values to apply
+    */
   def partial(userFn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def partial(userFn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
   /**
@@ -466,10 +466,10 @@ trait JfpStatic extends js.Object {
     */
   def pick(key: String, dataset: js.Object): js.Any = js.native
   /**
-  		 * Pipelines or chains functions producing a single final output
-  		 * @param value Initial condition for function pipelining
-  		 * @param ...args Functions to chain/pipeline
-  		 */
+    * Pipelines or chains functions producing a single final output
+    * @param value Initial condition for function pipelining
+    * @param ...args Functions to chain/pipeline
+    */
   def pipeline(value: js.Any, args: (js.Function1[/* repeated */ js.Any, _])*): js.Any = js.native
   /**
     * Picks value from object by key and returns a new object containing key value pair
@@ -489,24 +489,24 @@ trait JfpStatic extends js.Object {
     */
   def rcompose(args: (js.Function1[/* repeated */ js.Any, _])*): js.Function1[/* repeated */ js.Any, _] = js.native
   /**
-  		 * Recursion function to allow for tail-optimized recursion
-  		 * @param userFn Function to recur on
-  		 * @param ...args Initial condition arguments
-  		 */
+    * Recursion function to allow for tail-optimized recursion
+    * @param userFn Function to recur on
+    * @param ...args Initial condition arguments
+    */
   def recur(userFn: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   def recur(userFn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
   /**
-  		 * Reduces array using reducer function
-  		 * @param reducer Function to reduce values with
-  		 * @param values Array to reduce
-  		 */
+    * Reduces array using reducer function
+    * @param reducer Function to reduce values with
+    * @param values Array to reduce
+    */
   def reduce(reducer: js.Function2[/* condition1 */ js.Any, /* condition2 */ js.Any, _], values: js.Array[_]): js.Any = js.native
   /**
-  		 * Reduces array using reducer function
-  		 * @param reducer Function to reduce values with
-  		 * @param values Array to reduce
-  		 * @param initialCondition Initial value to use in first reduction application
-  		 */
+    * Reduces array using reducer function
+    * @param reducer Function to reduce values with
+    * @param values Array to reduce
+    * @param initialCondition Initial value to use in first reduction application
+    */
   def reduce(
     reducer: js.Function2[/* condition1 */ js.Any, /* condition2 */ js.Any, _],
     values: js.Array[_],
@@ -517,9 +517,9 @@ trait JfpStatic extends js.Object {
     */
   def repeat(count: Double, action: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   /**
-  		 * Returns all but the first element of array
-  		 * @param values Array to return the rest of
-  		 */
+    * Returns all but the first element of array
+    * @param values Array to return the rest of
+    */
   def rest(values: js.Array[_]): js.Array[_] = js.native
   /**
     * Reverses arguments of provided function
@@ -527,10 +527,10 @@ trait JfpStatic extends js.Object {
     */
   def reverseArgs(userFn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   /**
-  		 * Performs a right partial application on a function
-  		 * @param userFn Function to apply arguments
-  		 * @param ...args Inital arguments
-  		 */
+    * Performs a right partial application on a function
+    * @param userFn Function to apply arguments
+    * @param ...args Inital arguments
+    */
   def rpartial(userFn: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   def rpartial(userFn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
   /**
@@ -541,17 +541,17 @@ trait JfpStatic extends js.Object {
     */
   def shortCircuit(defaultValue: js.Any, userFn: js.Function1[/* repeated */ js.Any, _], value: js.Any): js.Any = js.native
   /**
-  		 * Returns a slice of an array
-  		 * @param initialIndex index to start slicing at
-  		 * @param values Array to slice
-  		 */
+    * Returns a slice of an array
+    * @param initialIndex index to start slicing at
+    * @param values Array to slice
+    */
   def slice(initialIndex: Double, values: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Returns a slice of an array
-  		 * @param initialIndex index to start slicing at
-  		 * @param values Array to slice
-  		 * @param lastIndex Index to end slice with
-  		 */
+    * Returns a slice of an array
+    * @param initialIndex index to start slicing at
+    * @param values Array to slice
+    * @param lastIndex Index to end slice with
+    */
   def slice(initialIndex: Double, values: js.Array[_], lastIndex: Double): js.Array[_] = js.native
   /**
     * Returns true if at least one array element satisfies predicate, else false
@@ -578,10 +578,10 @@ trait JfpStatic extends js.Object {
     */
   def symmetricDifference(lista: js.Array[_], listb: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Returns first n values of an array
-  		 * @param quantity Number of values to return
-  		 * @param values Array of values to take from
-  		 */
+    * Returns first n values of an array
+    * @param quantity Number of values to return
+    * @param values Array of values to take from
+    */
   def take(quantity: Double, values: js.Array[_]): js.Array[_] = js.native
   /**
     * Takes values from array until predicate is satisfied
@@ -592,9 +592,9 @@ trait JfpStatic extends js.Object {
     */
   def times(count: Double, value: String): String = js.native
   /**
-  		 * Converts value to decimal equivalent returns null if non-convertable
-  		 * @param value String or number value to convert
-  		 */
+    * Converts value to decimal equivalent returns null if non-convertable
+    * @param value String or number value to convert
+    */
   def toDec(value: String): Double = js.native
   /**
     * Converts string to decimal safely
@@ -602,9 +602,9 @@ trait JfpStatic extends js.Object {
   def toDec(value: js.Any): Double = js.native
   def toDec(value: Double): Double = js.native
   /**
-  		 * Converts an object literal into an array of values
-  		 * @param value Object literal
-  		 */
+    * Converts an object literal into an array of values
+    * @param value Object literal
+    */
   /**
     * Converts object to an array of values
     */
@@ -622,22 +622,22 @@ trait JfpStatic extends js.Object {
     */
   def union(lista: js.Array[_], listb: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Returns array of values with duplicates removed
-  		 * @param values Array of values to filter by uniqueness
-  		 */
+    * Returns array of values with duplicates removed
+    * @param values Array of values to filter by uniqueness
+    */
   def unique(values: js.Array[_]): js.Array[_] = js.native
   /**
-  		 * Executes function when condition is true
-  		 * @param predicateValue Value to set behavior execution
-  		 * @param userFunction Behavior to execute
-  		 */
+    * Executes function when condition is true
+    * @param predicateValue Value to set behavior execution
+    * @param userFunction Behavior to execute
+    */
   def when(predicateValue: Boolean, userFunction: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   /**
-  		 * Executes function when condition is true
-  		 * @param predicateValue Value to set behavior execution
-  		 * @param userFunction Behavior to execute
-  		 * @param ...args arguments for userFunction
-  		 */
+    * Executes function when condition is true
+    * @param predicateValue Value to set behavior execution
+    * @param userFunction Behavior to execute
+    * @param ...args arguments for userFunction
+    */
   def when(predicateValue: Boolean, userFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
   /**
     * Performs an exclusive or operation on two booleans

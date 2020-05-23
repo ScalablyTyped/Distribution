@@ -1,5 +1,6 @@
 package typings.auth0Lock
 
+import typings.auth0Lock.anon.Email
 import typings.auth0Lock.auth0LockStrings.big
 import typings.auth0Lock.auth0LockStrings.forgotPassword
 import typings.auth0Lock.auth0LockStrings.login
@@ -44,7 +45,7 @@ trait Auth0LockConstructorOptions extends js.Object {
   var mustAcceptTerms: js.UndefOr[Boolean] = js.undefined
   var oidcConformant: js.UndefOr[Boolean] = js.undefined
   var popupOptions: js.UndefOr[Auth0LockPopupOptions] = js.undefined
-  var prefill: js.UndefOr[AnonEmail] = js.undefined
+  var prefill: js.UndefOr[Email] = js.undefined
   var rememberLastLogin: js.UndefOr[Boolean] = js.undefined
   var scrollGlobalMessagesIntoView: js.UndefOr[Boolean] = js.undefined
   var signupLink: js.UndefOr[String] = js.undefined
@@ -70,7 +71,7 @@ object Auth0LockConstructorOptions {
     auth: Auth0LockAuthOptions = null,
     autoclose: js.UndefOr[Boolean] = js.undefined,
     autofocus: js.UndefOr[Boolean] = js.undefined,
-    avatar: Auth0LockAvatarOptions = null,
+    avatar: js.UndefOr[Null | Auth0LockAvatarOptions] = js.undefined,
     clientBaseUrl: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
     configurationBaseUrl: String = null,
@@ -85,12 +86,12 @@ object Auth0LockConstructorOptions {
     language: String = null,
     languageBaseUrl: String = null,
     languageDictionary: js.Any = null,
-    leeway: Int | Double = null,
+    leeway: js.UndefOr[Double] = js.undefined,
     loginAfterSignUp: js.UndefOr[Boolean] = js.undefined,
     mustAcceptTerms: js.UndefOr[Boolean] = js.undefined,
     oidcConformant: js.UndefOr[Boolean] = js.undefined,
     popupOptions: Auth0LockPopupOptions = null,
-    prefill: AnonEmail = null,
+    prefill: Email = null,
     rememberLastLogin: js.UndefOr[Boolean] = js.undefined,
     scrollGlobalMessagesIntoView: js.UndefOr[Boolean] = js.undefined,
     signupLink: String = null,
@@ -99,43 +100,43 @@ object Auth0LockConstructorOptions {
     usernameStyle: String = null
   ): Auth0LockConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_enableIdPInitiatedLogin)) __obj.updateDynamic("_enableIdPInitiatedLogin")(_enableIdPInitiatedLogin.asInstanceOf[js.Any])
-    if (!js.isUndefined(_enableImpersonation)) __obj.updateDynamic("_enableImpersonation")(_enableImpersonation.asInstanceOf[js.Any])
+    if (!js.isUndefined(_enableIdPInitiatedLogin)) __obj.updateDynamic("_enableIdPInitiatedLogin")(_enableIdPInitiatedLogin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(_enableImpersonation)) __obj.updateDynamic("_enableImpersonation")(_enableImpersonation.get.asInstanceOf[js.Any])
     if (additionalSignUpFields != null) __obj.updateDynamic("additionalSignUpFields")(additionalSignUpFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAutocomplete)) __obj.updateDynamic("allowAutocomplete")(allowAutocomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowForgotPassword)) __obj.updateDynamic("allowForgotPassword")(allowForgotPassword.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowLogin)) __obj.updateDynamic("allowLogin")(allowLogin.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPasswordAutocomplete)) __obj.updateDynamic("allowPasswordAutocomplete")(allowPasswordAutocomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowShowPassword)) __obj.updateDynamic("allowShowPassword")(allowShowPassword.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSignUp)) __obj.updateDynamic("allowSignUp")(allowSignUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAutocomplete)) __obj.updateDynamic("allowAutocomplete")(allowAutocomplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowForgotPassword)) __obj.updateDynamic("allowForgotPassword")(allowForgotPassword.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLogin)) __obj.updateDynamic("allowLogin")(allowLogin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPasswordAutocomplete)) __obj.updateDynamic("allowPasswordAutocomplete")(allowPasswordAutocomplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowShowPassword)) __obj.updateDynamic("allowShowPassword")(allowShowPassword.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSignUp)) __obj.updateDynamic("allowSignUp")(allowSignUp.get.asInstanceOf[js.Any])
     if (allowedConnections != null) __obj.updateDynamic("allowedConnections")(allowedConnections.asInstanceOf[js.Any])
     if (assetsUrl != null) __obj.updateDynamic("assetsUrl")(assetsUrl.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(avatar)) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
     if (clientBaseUrl != null) __obj.updateDynamic("clientBaseUrl")(clientBaseUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
     if (configurationBaseUrl != null) __obj.updateDynamic("configurationBaseUrl")(configurationBaseUrl.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultADUsernameFromEmailPrefix)) __obj.updateDynamic("defaultADUsernameFromEmailPrefix")(defaultADUsernameFromEmailPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultADUsernameFromEmailPrefix)) __obj.updateDynamic("defaultADUsernameFromEmailPrefix")(defaultADUsernameFromEmailPrefix.get.asInstanceOf[js.Any])
     if (defaultDatabaseConnection != null) __obj.updateDynamic("defaultDatabaseConnection")(defaultDatabaseConnection.asInstanceOf[js.Any])
     if (defaultEnterpriseConnection != null) __obj.updateDynamic("defaultEnterpriseConnection")(defaultEnterpriseConnection.asInstanceOf[js.Any])
     if (flashMessage != null) __obj.updateDynamic("flashMessage")(flashMessage.asInstanceOf[js.Any])
     if (forgotPasswordLink != null) __obj.updateDynamic("forgotPasswordLink")(forgotPasswordLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(hashCleanup)) __obj.updateDynamic("hashCleanup")(hashCleanup.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashCleanup)) __obj.updateDynamic("hashCleanup")(hashCleanup.get.asInstanceOf[js.Any])
     if (initialScreen != null) __obj.updateDynamic("initialScreen")(initialScreen.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (languageBaseUrl != null) __obj.updateDynamic("languageBaseUrl")(languageBaseUrl.asInstanceOf[js.Any])
     if (languageDictionary != null) __obj.updateDynamic("languageDictionary")(languageDictionary.asInstanceOf[js.Any])
-    if (leeway != null) __obj.updateDynamic("leeway")(leeway.asInstanceOf[js.Any])
-    if (!js.isUndefined(loginAfterSignUp)) __obj.updateDynamic("loginAfterSignUp")(loginAfterSignUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(mustAcceptTerms)) __obj.updateDynamic("mustAcceptTerms")(mustAcceptTerms.asInstanceOf[js.Any])
-    if (!js.isUndefined(oidcConformant)) __obj.updateDynamic("oidcConformant")(oidcConformant.asInstanceOf[js.Any])
+    if (!js.isUndefined(leeway)) __obj.updateDynamic("leeway")(leeway.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loginAfterSignUp)) __obj.updateDynamic("loginAfterSignUp")(loginAfterSignUp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mustAcceptTerms)) __obj.updateDynamic("mustAcceptTerms")(mustAcceptTerms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oidcConformant)) __obj.updateDynamic("oidcConformant")(oidcConformant.get.asInstanceOf[js.Any])
     if (popupOptions != null) __obj.updateDynamic("popupOptions")(popupOptions.asInstanceOf[js.Any])
     if (prefill != null) __obj.updateDynamic("prefill")(prefill.asInstanceOf[js.Any])
-    if (!js.isUndefined(rememberLastLogin)) __obj.updateDynamic("rememberLastLogin")(rememberLastLogin.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollGlobalMessagesIntoView)) __obj.updateDynamic("scrollGlobalMessagesIntoView")(scrollGlobalMessagesIntoView.asInstanceOf[js.Any])
+    if (!js.isUndefined(rememberLastLogin)) __obj.updateDynamic("rememberLastLogin")(rememberLastLogin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollGlobalMessagesIntoView)) __obj.updateDynamic("scrollGlobalMessagesIntoView")(scrollGlobalMessagesIntoView.get.asInstanceOf[js.Any])
     if (signupLink != null) __obj.updateDynamic("signupLink")(signupLink.asInstanceOf[js.Any])
     if (socialButtonStyle != null) __obj.updateDynamic("socialButtonStyle")(socialButtonStyle.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

@@ -17,14 +17,14 @@ import scala.scalajs.js.annotation._
 trait ChartTrendlineLabelData extends js.Object {
   /**
     *
-    * Boolean value representing if trendline label automatically generates appropriate text based on context.
+    * Specifies if trendline label automatically generate appropriate text based on context.
     *
     * [Api set: ExcelApi 1.8]
     */
   var autoText: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the format of chart trendline label.
+    * The format of chart trendline label.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -38,7 +38,7 @@ trait ChartTrendlineLabelData extends js.Object {
   var formula: js.UndefOr[String] = js.undefined
   /**
     *
-    * Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+    * Returns the height, in points, of the chart trendline label. Null if chart trendline label is not visible.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -60,7 +60,7 @@ trait ChartTrendlineLabelData extends js.Object {
   var left: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -103,7 +103,7 @@ trait ChartTrendlineLabelData extends js.Object {
   var verticalAlignment: js.UndefOr[ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed] = js.undefined
   /**
     *
-    * Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+    * Returns the width, in points, of the chart trendline label. Null if chart trendline label is not visible.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -116,31 +116,31 @@ object ChartTrendlineLabelData {
     autoText: js.UndefOr[Boolean] = js.undefined,
     format: ChartTrendlineLabelFormatData = null,
     formula: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizontalAlignment: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed = null,
-    left: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
     linkNumberFormat: js.UndefOr[Boolean] = js.undefined,
     numberFormat: String = null,
     text: String = null,
-    textOrientation: Int | Double = null,
-    top: Int | Double = null,
+    textOrientation: js.UndefOr[Double] = js.undefined,
+    top: js.UndefOr[Double] = js.undefined,
     verticalAlignment: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ChartTrendlineLabelData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat.get.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTrendlineLabelData]
   }
 }

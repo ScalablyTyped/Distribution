@@ -21,9 +21,9 @@ trait InitializationOptions extends js.Object {
 
 object InitializationOptions {
   @scala.inline
-  def apply(flags: Int | Double = null, libraryParameters: String = null): InitializationOptions = {
+  def apply(flags: js.UndefOr[Double] = js.undefined, libraryParameters: String = null): InitializationOptions = {
     val __obj = js.Dynamic.literal()
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.get.asInstanceOf[js.Any])
     if (libraryParameters != null) __obj.updateDynamic("libraryParameters")(libraryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializationOptions]
   }

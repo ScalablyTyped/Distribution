@@ -11,10 +11,10 @@ trait CursorParams extends js.Object {
 
 object CursorParams {
   @scala.inline
-  def apply(page: Int | Double = null, per_page: Int | Double = null): CursorParams = {
+  def apply(page: js.UndefOr[Double] = js.undefined, per_page: js.UndefOr[Double] = js.undefined): CursorParams = {
     val __obj = js.Dynamic.literal()
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(per_page)) __obj.updateDynamic("per_page")(per_page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorParams]
   }
 }

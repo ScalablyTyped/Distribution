@@ -18,9 +18,9 @@ trait DeletePolicyRequest extends js.Object {
 
 object DeletePolicyRequest {
   @scala.inline
-  def apply(PolicyId: PolicyId, DeleteAllPolicyResources: js.UndefOr[scala.Boolean] = js.undefined): DeletePolicyRequest = {
+  def apply(PolicyId: PolicyId, DeleteAllPolicyResources: js.UndefOr[Boolean] = js.undefined): DeletePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyId = PolicyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteAllPolicyResources)) __obj.updateDynamic("DeleteAllPolicyResources")(DeleteAllPolicyResources.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteAllPolicyResources)) __obj.updateDynamic("DeleteAllPolicyResources")(DeleteAllPolicyResources.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePolicyRequest]
   }
 }

@@ -7,14 +7,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains event data for the Dragging event. */
-@JSGlobal("Windows.UI.Input.DraggingEventArgs")
-@js.native
-abstract class DraggingEventArgs () extends js.Object {
+trait DraggingEventArgs extends js.Object {
   /** Gets the state of the Dragging event. */
-  var draggingState: DraggingState = js.native
+  var draggingState: DraggingState
   /** Gets the device type of the input source. */
-  var pointerDeviceType: PointerDeviceType = js.native
+  var pointerDeviceType: PointerDeviceType
   /** Gets the location of the mouse or pen/stylus contact. */
-  var position: Point = js.native
+  var position: Point
+}
+
+object DraggingEventArgs {
+  @scala.inline
+  def apply(draggingState: DraggingState, pointerDeviceType: PointerDeviceType, position: Point): DraggingEventArgs = {
+    val __obj = js.Dynamic.literal(draggingState = draggingState.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DraggingEventArgs]
+  }
 }
 

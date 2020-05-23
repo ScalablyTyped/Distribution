@@ -19,11 +19,11 @@ object RuleResult {
     name: String,
     result: js.Any,
     event: Event = null,
-    priority: Int | Double = null
+    priority: js.UndefOr[Double] = js.undefined
   ): RuleResult = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleResult]
   }
 }

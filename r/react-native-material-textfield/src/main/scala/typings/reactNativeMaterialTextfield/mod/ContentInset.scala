@@ -12,11 +12,15 @@ trait ContentInset extends js.Object {
 
 object ContentInset {
   @scala.inline
-  def apply(input: Int | Double = null, label: Int | Double = null, top: Int | Double = null): ContentInset = {
+  def apply(
+    input: js.UndefOr[Double] = js.undefined,
+    label: js.UndefOr[Double] = js.undefined,
+    top: js.UndefOr[Double] = js.undefined
+  ): ContentInset = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentInset]
   }
 }

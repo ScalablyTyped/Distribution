@@ -23,15 +23,15 @@ object SizeMeOptions {
     monitorWidth: js.UndefOr[Boolean] = js.undefined,
     noPlaceholder: js.UndefOr[Boolean] = js.undefined,
     refreshMode: throttle | debounce = null,
-    refreshRate: Int | Double = null
+    refreshRate: js.UndefOr[Double] = js.undefined
   ): SizeMeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(monitorHeight)) __obj.updateDynamic("monitorHeight")(monitorHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitorPosition)) __obj.updateDynamic("monitorPosition")(monitorPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitorWidth)) __obj.updateDynamic("monitorWidth")(monitorWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(noPlaceholder)) __obj.updateDynamic("noPlaceholder")(noPlaceholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorHeight)) __obj.updateDynamic("monitorHeight")(monitorHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorPosition)) __obj.updateDynamic("monitorPosition")(monitorPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorWidth)) __obj.updateDynamic("monitorWidth")(monitorWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noPlaceholder)) __obj.updateDynamic("noPlaceholder")(noPlaceholder.get.asInstanceOf[js.Any])
     if (refreshMode != null) __obj.updateDynamic("refreshMode")(refreshMode.asInstanceOf[js.Any])
-    if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshRate)) __obj.updateDynamic("refreshRate")(refreshRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeMeOptions]
   }
 }

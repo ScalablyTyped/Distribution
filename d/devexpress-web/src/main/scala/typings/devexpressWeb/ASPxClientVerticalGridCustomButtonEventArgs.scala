@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientVerticalGrid.CustomButtonClick event.
   */
-@JSGlobal("ASPxClientVerticalGridCustomButtonEventArgs")
-@js.native
-class ASPxClientVerticalGridCustomButtonEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientVerticalGridCustomButtonEventArgs class.
-    * @param visibleIndex An integer value that identifies the record whose custom button has been clicked. This value is assigned to the ASPxClientVerticalGridCustomButtonEventArgs.visibleIndex property.
-    * @param buttonID An integer value that identifies the clicked custom button. This value is assigned to the ASPxClientVerticalGridCustomButtonEventArgs.buttonID property.
-    */
-  def this(visibleIndex: Double, buttonID: String) = this()
+trait ASPxClientVerticalGridCustomButtonEventArgs extends ASPxClientProcessingModeEventArgs {
   /**
     * Gets the value which identifies the custom button.
     */
-  var buttonID: String = js.native
+  var buttonID: String
   /**
     * Gets the value which identifies the record whose custom button has been clicked.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
+}
+
+object ASPxClientVerticalGridCustomButtonEventArgs {
+  @scala.inline
+  def apply(buttonID: String, processOnServer: Boolean, visibleIndex: Double): ASPxClientVerticalGridCustomButtonEventArgs = {
+    val __obj = js.Dynamic.literal(buttonID = buttonID.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientVerticalGridCustomButtonEventArgs]
+  }
 }
 

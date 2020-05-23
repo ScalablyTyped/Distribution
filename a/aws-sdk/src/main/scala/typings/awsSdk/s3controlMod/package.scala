@@ -13,6 +13,7 @@ package object s3controlMod {
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.configUseDualstackMod.UseDualstackConfigOptions with typings.awsSdk.s3controlMod.ClientApiVersions
   type ConfirmationRequired = scala.Boolean
   type CreationDate = typings.std.Date
+  type FunctionArnString = java.lang.String
   type IAMRoleArn = java.lang.String
   type IsPublic = scala.Boolean
   type JobArn = java.lang.String
@@ -87,6 +88,8 @@ package object s3controlMod {
     - typings.awsSdk.awsSdkStrings.S3PutObjectAcl
     - typings.awsSdk.awsSdkStrings.S3PutObjectTagging
     - typings.awsSdk.awsSdkStrings.S3InitiateRestoreObject
+    - typings.awsSdk.awsSdkStrings.S3PutObjectLegalHold
+    - typings.awsSdk.awsSdkStrings.S3PutObjectRetention
     - java.lang.String
   */
   type OperationName = typings.awsSdk.s3controlMod._OperationName | java.lang.String
@@ -145,6 +148,12 @@ package object s3controlMod {
     - java.lang.String
   */
   type S3ObjectLockMode = typings.awsSdk.s3controlMod._S3ObjectLockMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.COMPLIANCE
+    - typings.awsSdk.awsSdkStrings.GOVERNANCE
+    - java.lang.String
+  */
+  type S3ObjectLockRetentionMode = typings.awsSdk.s3controlMod._S3ObjectLockRetentionMode | java.lang.String
   type S3ObjectVersionId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.FULL_CONTROL
@@ -174,8 +183,11 @@ package object s3controlMod {
   type S3TagSet = js.Array[typings.awsSdk.s3controlMod.S3Tag]
   type S3UserMetadata = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.s3controlMod.MaxLength1024String]
   type Setting = scala.Boolean
+  type StringForNextToken = java.lang.String
   type SuspendedCause = java.lang.String
   type SuspendedDate = typings.std.Date
+  type TagKeyString = java.lang.String
+  type TagValueString = java.lang.String
   type TimeStamp = typings.std.Date
   type VpcId = java.lang.String
   /* Rewritten from type alias, can be one of: 

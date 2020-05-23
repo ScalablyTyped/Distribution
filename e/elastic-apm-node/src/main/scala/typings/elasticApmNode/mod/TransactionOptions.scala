@@ -11,10 +11,10 @@ trait TransactionOptions extends js.Object {
 
 object TransactionOptions {
   @scala.inline
-  def apply(childOf: Transaction | Span | String = null, startTime: Int | Double = null): TransactionOptions = {
+  def apply(childOf: Transaction | Span | String = null, startTime: js.UndefOr[Double] = js.undefined): TransactionOptions = {
     val __obj = js.Dynamic.literal()
     if (childOf != null) __obj.updateDynamic("childOf")(childOf.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionOptions]
   }
 }

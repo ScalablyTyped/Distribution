@@ -45,7 +45,7 @@ trait Announcement extends js.Object {
     * Identifiers of students with access to the announcement.
     * This field is set only if `assigneeMode` is `INDIVIDUAL_STUDENTS`.
     * If the `assigneeMode` is `INDIVIDUAL_STUDENTS`, then only students
-    * specified in this field will be able to see the announcement.
+    * specified in this field can see the announcement.
     */
   var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.undefined
   /**

@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about the device that caused this trigger to fire. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceConnectionChangeTriggerDetails")
-@js.native
-abstract class DeviceConnectionChangeTriggerDetails () extends js.Object {
+trait DeviceConnectionChangeTriggerDetails extends js.Object {
   /** Gets the device Id of the device that caused this trigger to fire. */
-  var deviceId: String = js.native
+  var deviceId: String
+}
+
+object DeviceConnectionChangeTriggerDetails {
+  @scala.inline
+  def apply(deviceId: String): DeviceConnectionChangeTriggerDetails = {
+    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeviceConnectionChangeTriggerDetails]
+  }
 }
 

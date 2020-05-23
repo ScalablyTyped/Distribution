@@ -22,20 +22,20 @@ trait Thumbnail extends js.Object {
 object Thumbnail {
   @scala.inline
   def apply(
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     path: String = null,
     pipe: Writable = null,
     smartCropping: js.UndefOr[Boolean] = js.undefined,
     url: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Thumbnail = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pipe != null) __obj.updateDynamic("pipe")(pipe.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartCropping)) __obj.updateDynamic("smartCropping")(smartCropping.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartCropping)) __obj.updateDynamic("smartCropping")(smartCropping.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Thumbnail]
   }
 }

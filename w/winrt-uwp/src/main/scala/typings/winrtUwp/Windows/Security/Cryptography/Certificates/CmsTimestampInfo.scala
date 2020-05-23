@@ -7,14 +7,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an RFC3161 unauthenticated timestamp attribute in a signed CMS message. */
-@JSGlobal("Windows.Security.Cryptography.Certificates.CmsTimestampInfo")
-@js.native
-abstract class CmsTimestampInfo () extends js.Object {
+trait CmsTimestampInfo extends js.Object {
   /** Gets the list of certificates that is used for chain building for the signing certificate. */
-  var certificates: IVectorView[Certificate] = js.native
+  var certificates: IVectorView[Certificate]
   /** Gets the certificate that is used to sign the timestamp. */
-  var signingCertificate: Certificate = js.native
+  var signingCertificate: Certificate
   /** Gets the date and time of the timestamp. */
-  var timestamp: Date = js.native
+  var timestamp: Date
+}
+
+object CmsTimestampInfo {
+  @scala.inline
+  def apply(certificates: IVectorView[Certificate], signingCertificate: Certificate, timestamp: Date): CmsTimestampInfo = {
+    val __obj = js.Dynamic.literal(certificates = certificates.asInstanceOf[js.Any], signingCertificate = signingCertificate.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CmsTimestampInfo]
+  }
 }
 

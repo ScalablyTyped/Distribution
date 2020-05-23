@@ -24,7 +24,7 @@ object GetInstanceEphemeralBlockDevice {
   @scala.inline
   def apply(deviceName: String, noDevice: js.UndefOr[Boolean] = js.undefined, virtualName: String = null): GetInstanceEphemeralBlockDevice = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDevice)) __obj.updateDynamic("noDevice")(noDevice.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDevice)) __obj.updateDynamic("noDevice")(noDevice.get.asInstanceOf[js.Any])
     if (virtualName != null) __obj.updateDynamic("virtualName")(virtualName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceEphemeralBlockDevice]
   }

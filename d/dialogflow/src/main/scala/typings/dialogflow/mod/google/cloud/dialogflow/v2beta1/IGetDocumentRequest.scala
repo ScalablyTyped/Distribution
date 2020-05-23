@@ -12,9 +12,9 @@ trait IGetDocumentRequest extends js.Object {
 
 object IGetDocumentRequest {
   @scala.inline
-  def apply(name: String = null): IGetDocumentRequest = {
+  def apply(name: js.UndefOr[Null | String] = js.undefined): IGetDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetDocumentRequest]
   }
 }

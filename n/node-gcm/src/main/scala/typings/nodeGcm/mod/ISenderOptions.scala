@@ -12,11 +12,15 @@ trait ISenderOptions extends js.Object {
 
 object ISenderOptions {
   @scala.inline
-  def apply(maxSockets: Int | Double = null, proxy: js.Any = null, timeout: Int | Double = null): ISenderOptions = {
+  def apply(
+    maxSockets: js.UndefOr[Double] = js.undefined,
+    proxy: js.Any = null,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): ISenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSockets)) __obj.updateDynamic("maxSockets")(maxSockets.get.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISenderOptions]
   }
 }

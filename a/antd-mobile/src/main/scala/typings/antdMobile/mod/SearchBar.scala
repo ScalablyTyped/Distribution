@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonAntLocale
-import typings.antdMobile.AnonOnBlur
+import typings.antdMobile.anon.AntLocale
+import typings.antdMobile.anon.OnBlur
 import typings.antdMobile.searchBarMod.SearchBarProps
 import typings.antdMobile.searchBarMod.default
 import scala.scalajs.js
@@ -18,7 +18,7 @@ class SearchBar protected () extends default {
 @JSImport("antd-mobile", "SearchBar")
 @js.native
 object SearchBar extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonOnBlur = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: OnBlur = js.native
 }
 

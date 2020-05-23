@@ -5,8 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Stats extends js.Object {
-   // total size that needs to be downloaded in bytes
+   // name of file
   var downloaded: Double
+   // total size that needs to be downloaded in bytes
+  var name: String
    // downloaded size in bytes
   var progress: Double
    // progress porcentage 0-100%
@@ -16,8 +18,8 @@ trait Stats extends js.Object {
 
 object Stats {
   @scala.inline
-  def apply(downloaded: Double, progress: Double, speed: Double, total: Double): Stats = {
-    val __obj = js.Dynamic.literal(downloaded = downloaded.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+  def apply(downloaded: Double, name: String, progress: Double, speed: Double, total: Double): Stats = {
+    val __obj = js.Dynamic.literal(downloaded = downloaded.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]
   }
 }

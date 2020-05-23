@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a blacklisted URL is stopped.
-		 */
+  * Fired when a blacklisted URL is stopped.
+  */
 trait WebViewBlacklisturlEvent extends WebViewBaseEvent {
   /**
-  			 * The URL of the web document that is stopped.
-  			 */
+    * The URL of the web document that is stopped.
+    */
   var url: String
 }
 

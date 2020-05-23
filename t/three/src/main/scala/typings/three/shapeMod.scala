@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Holes
 import typings.three.extrudeGeometryMod.ExtrudeGeometry
 import typings.three.pathMod.Path
 import typings.three.shapeGeometryMod.ShapeGeometry
@@ -18,8 +19,8 @@ object shapeMod extends js.Object {
     /**
     	 * @deprecated Use {@link Shape#extractPoints .extractPoints()} instead.
     	 */
-    def extractAllPoints(divisions: Double): AnonHoles = js.native
-    def extractPoints(divisions: Double): AnonHoles = js.native
+    def extractAllPoints(divisions: Double): Holes = js.native
+    def extractPoints(divisions: Double): Holes = js.native
     /**
     	 * @deprecated Use {@link ExtrudeGeometry ExtrudeGeometry()} instead.
     	 */

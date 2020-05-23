@@ -21,7 +21,7 @@ object KnexAdaptorOptions {
     schemaName: String = null
   ): KnexAdaptorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dropDatabase)) __obj.updateDynamic("dropDatabase")(dropDatabase.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropDatabase)) __obj.updateDynamic("dropDatabase")(dropDatabase.get.asInstanceOf[js.Any])
     if (knexOptions != null) __obj.updateDynamic("knexOptions")(knexOptions.asInstanceOf[js.Any])
     if (listAdapterClass != null) __obj.updateDynamic("listAdapterClass")(listAdapterClass.asInstanceOf[js.Any])
     if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/symbol/to-string-tag", JSImport.Namespace)
 @js.native
 object symbolToStringTagMod
-  extends TopLevel[js.Symbol]
+  extends TopLevel[js.Any]
 

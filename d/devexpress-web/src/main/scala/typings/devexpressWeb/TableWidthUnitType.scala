@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,20 +36,6 @@ object TableWidthUnitType extends js.Object {
     */
   @js.native
   sealed trait Nil extends TableWidthUnitType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TableWidthUnitType with Double] = js.native
-  /* 1 */ @js.native
-  object Auto extends TopLevel[Auto with Double]
-  
-  /* 2 */ @js.native
-  object FiftiethsOfPercent extends TopLevel[FiftiethsOfPercent with Double]
-  
-  /* 3 */ @js.native
-  object ModelUnits extends TopLevel[ModelUnits with Double]
-  
-  /* 0 */ @js.native
-  object Nil extends TopLevel[Nil with Double]
   
 }
 

@@ -14,11 +14,15 @@ trait BackgroundPropType extends js.Object
 
 object BackgroundPropType {
   @scala.inline
-  def RippleBackgroundPropType(`type`: RippleAndroid, borderless: js.UndefOr[Boolean] = js.undefined, color: Int | Double = null): BackgroundPropType = {
+  def RippleBackgroundPropType(
+    `type`: RippleAndroid,
+    borderless: js.UndefOr[Boolean] = js.undefined,
+    color: js.UndefOr[Double] = js.undefined
+  ): BackgroundPropType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundPropType]
   }
   @scala.inline

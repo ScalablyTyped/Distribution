@@ -20,8 +20,8 @@ trait RequestOptions
   /** 默认GET，目前支持GET，POST */
   var method: js.UndefOr[GET | POST] = js.undefined
   /**
-  		 * 超时时间，单位ms，默认30000
-  		 */
+    * 超时时间，单位ms，默认30000
+    */
   var timeout: js.UndefOr[Double] = js.undefined
   /** 目标服务器url */
   var url: String
@@ -38,7 +38,7 @@ object RequestOptions {
     header: RequestHeader = null,
     method: GET | POST = null,
     success: DataResponse => Unit = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): RequestOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
@@ -48,7 +48,7 @@ object RequestOptions {
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

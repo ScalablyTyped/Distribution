@@ -4,14 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Perception.Spatial.SpatialLocation")
-@js.native
-abstract class SpatialLocation () extends js.Object {
-  var absoluteAngularAcceleration: js.Any = js.native
-   /* unmapped type */ var absoluteAngularVelocity: js.Any = js.native
-   /* unmapped type */ var absoluteLinearAcceleration: js.Any = js.native
-   /* unmapped type */ var absoluteLinearVelocity: js.Any = js.native
-   /* unmapped type */ var orientation: js.Any = js.native
-   /* unmapped type */ var position: js.Any = js.native
+trait SpatialLocation extends js.Object {
+  var absoluteAngularAcceleration: js.Any
+   /* unmapped type */ var absoluteAngularVelocity: js.Any
+   /* unmapped type */ var absoluteLinearAcceleration: js.Any
+   /* unmapped type */ var absoluteLinearVelocity: js.Any
+   /* unmapped type */ var orientation: js.Any
+   /* unmapped type */ var position: js.Any
+}
+
+object SpatialLocation {
+  @scala.inline
+  def apply(
+    absoluteAngularAcceleration: js.Any,
+    absoluteAngularVelocity: js.Any,
+    absoluteLinearAcceleration: js.Any,
+    absoluteLinearVelocity: js.Any,
+    orientation: js.Any,
+    position: js.Any
+  ): SpatialLocation = {
+    val __obj = js.Dynamic.literal(absoluteAngularAcceleration = absoluteAngularAcceleration.asInstanceOf[js.Any], absoluteAngularVelocity = absoluteAngularVelocity.asInstanceOf[js.Any], absoluteLinearAcceleration = absoluteLinearAcceleration.asInstanceOf[js.Any], absoluteLinearVelocity = absoluteLinearVelocity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialLocation]
+  }
 }
 

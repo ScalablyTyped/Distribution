@@ -22,7 +22,7 @@ object Verification {
     choices: Choices = null
   ): Verification = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], proof_request = proof_request.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_proof_request_override)) __obj.updateDynamic("allow_proof_request_override")(allow_proof_request_override.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_proof_request_override)) __obj.updateDynamic("allow_proof_request_override")(allow_proof_request_override.get.asInstanceOf[js.Any])
     if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Verification]
   }

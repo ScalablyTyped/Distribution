@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/simple_db", "SimpleDbTransaction")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/simple_db", "SimpleDbTransaction")
 @js.native
 class SimpleDbTransaction protected () extends js.Object {
   def this(transaction: IDBTransaction) = this()
@@ -21,7 +21,7 @@ class SimpleDbTransaction protected () extends js.Object {
   val transaction: js.Any = js.native
   def abort(): Unit = js.native
   def abort(error: Error): Unit = js.native
-  def completionPromise(): js.Promise[Unit] = js.native
+  def completionPromise: js.Promise[Unit] = js.native
   /**
     * Returns a SimpleDbStore<KeyType, ValueType> for the specified store. All
     * operations performed on the SimpleDbStore happen within the context of this
@@ -35,7 +35,7 @@ class SimpleDbTransaction protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/simple_db", "SimpleDbTransaction")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/simple_db", "SimpleDbTransaction")
 @js.native
 object SimpleDbTransaction extends js.Object {
   def open(db: IDBDatabase, mode: IDBTransactionMode, objectStoreNames: js.Array[String]): SimpleDbTransaction = js.native

@@ -15,9 +15,9 @@ trait NavigatorYAxisLabelsLevelsOptions extends js.Object {
 
 object NavigatorYAxisLabelsLevelsOptions {
   @scala.inline
-  def apply(level: Int | Double = null, style: CSSObject = null): NavigatorYAxisLabelsLevelsOptions = {
+  def apply(level: js.UndefOr[Double] = js.undefined, style: CSSObject = null): NavigatorYAxisLabelsLevelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorYAxisLabelsLevelsOptions]
   }

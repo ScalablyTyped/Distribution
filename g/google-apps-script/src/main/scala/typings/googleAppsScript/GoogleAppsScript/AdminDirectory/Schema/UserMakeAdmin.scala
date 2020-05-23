@@ -12,7 +12,7 @@ object UserMakeAdmin {
   @scala.inline
   def apply(status: js.UndefOr[Boolean] = js.undefined): UserMakeAdmin = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserMakeAdmin]
   }
 }

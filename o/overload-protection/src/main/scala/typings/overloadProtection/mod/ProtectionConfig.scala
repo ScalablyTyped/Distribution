@@ -20,26 +20,26 @@ trait ProtectionConfig extends js.Object {
 object ProtectionConfig {
   @scala.inline
   def apply(
-    clientRetrySecs: Int | Double = null,
+    clientRetrySecs: js.UndefOr[Double] = js.undefined,
     errorPropagationMode: js.UndefOr[Boolean] = js.undefined,
     logStatsOnReq: `false` = null,
     logging: Boolean | String | (js.Function1[/* msg */ String, Unit]) = null,
-    maxEventLoopDelay: Int | Double = null,
-    maxHeapUsedBytes: Int | Double = null,
-    maxRssBytes: Int | Double = null,
+    maxEventLoopDelay: js.UndefOr[Double] = js.undefined,
+    maxHeapUsedBytes: js.UndefOr[Double] = js.undefined,
+    maxRssBytes: js.UndefOr[Double] = js.undefined,
     production: js.UndefOr[Boolean] = js.undefined,
-    sampleInterval: Int | Double = null
+    sampleInterval: js.UndefOr[Double] = js.undefined
   ): ProtectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (clientRetrySecs != null) __obj.updateDynamic("clientRetrySecs")(clientRetrySecs.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorPropagationMode)) __obj.updateDynamic("errorPropagationMode")(errorPropagationMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientRetrySecs)) __obj.updateDynamic("clientRetrySecs")(clientRetrySecs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorPropagationMode)) __obj.updateDynamic("errorPropagationMode")(errorPropagationMode.get.asInstanceOf[js.Any])
     if (logStatsOnReq != null) __obj.updateDynamic("logStatsOnReq")(logStatsOnReq.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (maxEventLoopDelay != null) __obj.updateDynamic("maxEventLoopDelay")(maxEventLoopDelay.asInstanceOf[js.Any])
-    if (maxHeapUsedBytes != null) __obj.updateDynamic("maxHeapUsedBytes")(maxHeapUsedBytes.asInstanceOf[js.Any])
-    if (maxRssBytes != null) __obj.updateDynamic("maxRssBytes")(maxRssBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.asInstanceOf[js.Any])
-    if (sampleInterval != null) __obj.updateDynamic("sampleInterval")(sampleInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEventLoopDelay)) __obj.updateDynamic("maxEventLoopDelay")(maxEventLoopDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeapUsedBytes)) __obj.updateDynamic("maxHeapUsedBytes")(maxHeapUsedBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRssBytes)) __obj.updateDynamic("maxRssBytes")(maxRssBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleInterval)) __obj.updateDynamic("sampleInterval")(sampleInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectionConfig]
   }
 }

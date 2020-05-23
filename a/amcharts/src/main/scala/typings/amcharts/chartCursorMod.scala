@@ -1,5 +1,6 @@
 package typings.amcharts
 
+import typings.amcharts.anon.Delta2X
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -107,7 +108,7 @@ object chartCursorMod extends js.Object {
       * "selected", "zoomed", "zoomStarted".
       * @param handler The event handler.
       */
-    def addListener(`type`: String, handler: js.Function1[/* e */ AnonDelta2X, Unit]): Unit = js.native
+    def addListener(`type`: String, handler: js.Function1[/* e */ Delta2X, Unit]): Unit = js.native
     /**
       * Hides cursor.
       */

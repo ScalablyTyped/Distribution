@@ -18,9 +18,9 @@ trait ResourceCount extends js.Object {
 
 object ResourceCount {
   @scala.inline
-  def apply(count: Int | Double = null, resourceType: ResourceType = null): ResourceCount = {
+  def apply(count: js.UndefOr[Long] = js.undefined, resourceType: ResourceType = null): ResourceCount = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceCount]
   }

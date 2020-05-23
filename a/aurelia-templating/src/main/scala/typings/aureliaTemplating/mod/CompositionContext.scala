@@ -85,7 +85,7 @@ object CompositionContext {
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (overrideContext != null) __obj.updateDynamic("overrideContext")(overrideContext.asInstanceOf[js.Any])
     if (owningView != null) __obj.updateDynamic("owningView")(owningView.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipActivation)) __obj.updateDynamic("skipActivation")(skipActivation.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipActivation)) __obj.updateDynamic("skipActivation")(skipActivation.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     if (viewModelResource != null) __obj.updateDynamic("viewModelResource")(viewModelResource.asInstanceOf[js.Any])

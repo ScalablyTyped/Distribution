@@ -58,7 +58,7 @@ object ListBoxOptions {
   ): ListBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (connectWith != null) __obj.updateDynamic("connectWith")(connectWith.asInstanceOf[js.Any])
     if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
@@ -73,7 +73,7 @@ object ListBoxOptions {
     if (dropSources != null) __obj.updateDynamic("dropSources")(dropSources.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.get.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (reorder != null) __obj.updateDynamic("reorder")(js.Any.fromFunction1(reorder))
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])

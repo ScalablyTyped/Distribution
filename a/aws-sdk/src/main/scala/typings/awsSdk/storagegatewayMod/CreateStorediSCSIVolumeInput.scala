@@ -12,11 +12,11 @@ trait CreateStorediSCSIVolumeInput extends js.Object {
   var DiskId: typings.awsSdk.storagegatewayMod.DiskId = js.native
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
   /**
-    * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
+    * True to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
     */
   var KMSEncrypted: js.UndefOr[Boolean] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
+    * The Amazon Resource Name (ARN) of the KMS key used for Amazon S3 server-side encryption. This value can only be set when KMSEncrypted is true. Optional.
     */
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
   /**
@@ -49,13 +49,13 @@ object CreateStorediSCSIVolumeInput {
     NetworkInterfaceId: NetworkInterfaceId,
     PreserveExistingData: scala.Boolean,
     TargetName: TargetName,
-    KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
     KMSKey: KMSKey = null,
     SnapshotId: SnapshotId = null,
     Tags: Tags = null
   ): CreateStorediSCSIVolumeInput = {
     val __obj = js.Dynamic.literal(DiskId = DiskId.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any], NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any], PreserveExistingData = PreserveExistingData.asInstanceOf[js.Any], TargetName = TargetName.asInstanceOf[js.Any])
-    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.get.asInstanceOf[js.Any])
     if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

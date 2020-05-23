@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * TextEncoder instance.
   */
-@JSGlobal("fastTextEncoding.TextEncoderClass")
 @js.native
-class TextEncoderClass () extends js.Object {
-  def this(label: String) = this()
+trait TextEncoderClass extends js.Object {
   var encoding: String = js.native
   def encode(string: String): Uint8Array = js.native
   def encode(string: String, options: TextEncodingOptions): Uint8Array = js.native

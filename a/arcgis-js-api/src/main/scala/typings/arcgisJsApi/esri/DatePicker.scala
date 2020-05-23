@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,4 @@ trait DatePicker extends Widget_ {
     */
   var viewModel: DatePickerViewModel = js.native
 }
-
-@JSGlobal("__esri.DatePicker")
-@js.native
-object DatePicker extends TopLevel[DatePickerConstructor]
 

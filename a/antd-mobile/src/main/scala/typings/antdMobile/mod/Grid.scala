@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonCarouselMaxRow
+import typings.antdMobile.anon.CarouselMaxRow
 import typings.antdMobile.gridMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Grid () extends default
 @JSImport("antd-mobile", "Grid")
 @js.native
 object Grid extends js.Object {
-  var defaultProps: AnonCarouselMaxRow = js.native
+  var defaultProps: CarouselMaxRow = js.native
 }
 

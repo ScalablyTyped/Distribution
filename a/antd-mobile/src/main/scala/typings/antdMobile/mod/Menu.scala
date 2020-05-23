@@ -1,7 +1,7 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonAntLocale
-import typings.antdMobile.AnonData
+import typings.antdMobile.anon.AntLocale
+import typings.antdMobile.anon.Data
 import typings.antdMobile.menuMod.default
 import typings.antdMobile.menuPropsTypeMod.MenuProps
 import scala.scalajs.js
@@ -18,7 +18,7 @@ class Menu protected () extends default {
 @JSImport("antd-mobile", "Menu")
 @js.native
 object Menu extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonData = js.native
+  var contextTypes: AntLocale = js.native
+  var defaultProps: Data = js.native
 }
 

@@ -30,11 +30,11 @@ object GetAttributesRequest {
     DomainName: String,
     ItemName: String,
     AttributeNames: AttributeNameList = null,
-    ConsistentRead: js.UndefOr[scala.Boolean] = js.undefined
+    ConsistentRead: js.UndefOr[Boolean] = js.undefined
   ): GetAttributesRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], ItemName = ItemName.asInstanceOf[js.Any])
     if (AttributeNames != null) __obj.updateDynamic("AttributeNames")(AttributeNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAttributesRequest]
   }
 }

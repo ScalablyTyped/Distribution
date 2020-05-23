@@ -15,7 +15,7 @@ object Options {
   def apply(plugins: js.Array[Plugin], destination: String = null, glob: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (!js.isUndefined(glob)) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
+    if (!js.isUndefined(glob)) __obj.updateDynamic("glob")(glob.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

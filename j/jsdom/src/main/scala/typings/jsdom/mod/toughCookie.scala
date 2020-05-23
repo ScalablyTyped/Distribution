@@ -2,9 +2,9 @@ package typings.jsdom.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
-import typings.jsdom.ReadonlyDISABLEDstringSIL
-import typings.jsdom.TypeofCookie
-import typings.jsdom.TypeofCookieJar
+import typings.jsdom.anon.ReadonlyDISABLEDstringSIL
+import typings.jsdom.anon.TypeofCookie
+import typings.jsdom.anon.TypeofCookieJar
 import typings.std.Date
 import typings.toughCookie.mod.Cookie
 import typings.toughCookie.mod.Cookie.ParseOptions

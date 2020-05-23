@@ -7,12 +7,12 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.reactDraggable.mod.DraggableEvent
 import typings.reactDraggable.reactDraggableBooleans.`false`
-import typings.reactRnd.AnonX
+import typings.reactRnd.anon.X
+import typings.reactRnd.anon.xnumberynumberSize
 import typings.reactRnd.reactRndStrings.both
 import typings.reactRnd.reactRndStrings.none
 import typings.reactRnd.reactRndStrings.x
 import typings.reactRnd.reactRndStrings.y
-import typings.reactRnd.xnumberynumberSize
 import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import typings.std.TouchEvent
@@ -48,7 +48,7 @@ trait Props
   var onResize: js.UndefOr[RndResizeCallback] = js.undefined
   var onResizeStart: js.UndefOr[RndResizeStartCallback] = js.undefined
   var onResizeStop: js.UndefOr[RndResizeCallback] = js.undefined
-  var position: js.UndefOr[AnonX] = js.undefined
+  var position: js.UndefOr[X] = js.undefined
   var resizeGrid: js.UndefOr[Grid] = js.undefined
   var resizeHandleClasses: js.UndefOr[HandleClasses] = js.undefined
   var resizeHandleComponent: js.UndefOr[HandleComponent] = js.undefined
@@ -63,7 +63,7 @@ trait Props
 object Props {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     bounds: String = null,
     cancel: String = null,
     children: ReactNode = null,
@@ -76,8 +76,8 @@ object Props {
     enableResizing: ResizeEnable = null,
     enableUserSelectHack: js.UndefOr[Boolean] = js.undefined,
     lockAspectRatio: Boolean | Double = null,
-    lockAspectRatioExtraHeight: Int | Double = null,
-    lockAspectRatioExtraWidth: Int | Double = null,
+    lockAspectRatioExtraHeight: js.UndefOr[Double] = js.undefined,
+    lockAspectRatioExtraWidth: js.UndefOr[Double] = js.undefined,
     maxHeight: Double | String = null,
     maxWidth: Double | String = null,
     minHeight: Double | String = null,
@@ -90,14 +90,14 @@ object Props {
     onResize: (/* e */ MouseEvent | TouchEvent, /* dir */ ResizeDirection, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
     onResizeStart: (/* e */ (typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent]) | typings.react.mod.TouchEvent[HTMLDivElement], /* dir */ ResizeDirection, /* elementRef */ HTMLDivElement) => Unit = null,
     onResizeStop: (/* e */ MouseEvent | TouchEvent, /* dir */ ResizeDirection, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
-    position: AnonX = null,
+    position: X = null,
     resizeGrid: Grid = null,
     resizeHandleClasses: HandleClasses = null,
     resizeHandleComponent: HandleComponent = null,
     resizeHandleStyles: HandleStyles = null,
     resizeHandleWrapperClass: String = null,
     resizeHandleWrapperStyle: CSSProperties = null,
-    scale: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
     size: Size = null,
     style: CSSProperties = null
   ): Props = {
@@ -108,15 +108,15 @@ object Props {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDragging)) __obj.updateDynamic("disableDragging")(disableDragging.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDragging)) __obj.updateDynamic("disableDragging")(disableDragging.get.asInstanceOf[js.Any])
     if (dragAxis != null) __obj.updateDynamic("dragAxis")(dragAxis.asInstanceOf[js.Any])
     if (dragGrid != null) __obj.updateDynamic("dragGrid")(dragGrid.asInstanceOf[js.Any])
     if (dragHandleClassName != null) __obj.updateDynamic("dragHandleClassName")(dragHandleClassName.asInstanceOf[js.Any])
     if (enableResizing != null) __obj.updateDynamic("enableResizing")(enableResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableUserSelectHack)) __obj.updateDynamic("enableUserSelectHack")(enableUserSelectHack.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableUserSelectHack)) __obj.updateDynamic("enableUserSelectHack")(enableUserSelectHack.get.asInstanceOf[js.Any])
     if (lockAspectRatio != null) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.asInstanceOf[js.Any])
-    if (lockAspectRatioExtraHeight != null) __obj.updateDynamic("lockAspectRatioExtraHeight")(lockAspectRatioExtraHeight.asInstanceOf[js.Any])
-    if (lockAspectRatioExtraWidth != null) __obj.updateDynamic("lockAspectRatioExtraWidth")(lockAspectRatioExtraWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockAspectRatioExtraHeight)) __obj.updateDynamic("lockAspectRatioExtraHeight")(lockAspectRatioExtraHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockAspectRatioExtraWidth)) __obj.updateDynamic("lockAspectRatioExtraWidth")(lockAspectRatioExtraWidth.get.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
@@ -136,7 +136,7 @@ object Props {
     if (resizeHandleStyles != null) __obj.updateDynamic("resizeHandleStyles")(resizeHandleStyles.asInstanceOf[js.Any])
     if (resizeHandleWrapperClass != null) __obj.updateDynamic("resizeHandleWrapperClass")(resizeHandleWrapperClass.asInstanceOf[js.Any])
     if (resizeHandleWrapperStyle != null) __obj.updateDynamic("resizeHandleWrapperStyle")(resizeHandleWrapperStyle.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

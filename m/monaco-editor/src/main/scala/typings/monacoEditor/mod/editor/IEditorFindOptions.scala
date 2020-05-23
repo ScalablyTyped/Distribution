@@ -27,9 +27,9 @@ object IEditorFindOptions {
     seedSearchStringFromSelection: js.UndefOr[Boolean] = js.undefined
   ): IEditorFindOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addExtraSpaceOnTop)) __obj.updateDynamic("addExtraSpaceOnTop")(addExtraSpaceOnTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(addExtraSpaceOnTop)) __obj.updateDynamic("addExtraSpaceOnTop")(addExtraSpaceOnTop.get.asInstanceOf[js.Any])
     if (autoFindInSelection != null) __obj.updateDynamic("autoFindInSelection")(autoFindInSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(seedSearchStringFromSelection)) __obj.updateDynamic("seedSearchStringFromSelection")(seedSearchStringFromSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(seedSearchStringFromSelection)) __obj.updateDynamic("seedSearchStringFromSelection")(seedSearchStringFromSelection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorFindOptions]
   }
 }

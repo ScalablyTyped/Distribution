@@ -12,9 +12,9 @@ trait PBKDF2Params extends js.Object {
 
 object PBKDF2Params {
   @scala.inline
-  def apply(iter: Int | Double = null, salt: BitArray_ = null): PBKDF2Params = {
+  def apply(iter: js.UndefOr[Double] = js.undefined, salt: BitArray_ = null): PBKDF2Params = {
     val __obj = js.Dynamic.literal()
-    if (iter != null) __obj.updateDynamic("iter")(iter.asInstanceOf[js.Any])
+    if (!js.isUndefined(iter)) __obj.updateDynamic("iter")(iter.get.asInstanceOf[js.Any])
     if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PBKDF2Params]
   }

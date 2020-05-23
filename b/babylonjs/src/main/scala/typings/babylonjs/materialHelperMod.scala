@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.LightmapMode
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.effectFallbacksMod.EffectFallbacks
 import typings.babylonjs.effectMod.Effect
@@ -230,7 +231,7 @@ object materialHelperMod extends js.Object {
       lightIndex: Double,
       defines: js.Any,
       specularSupported: Boolean,
-      state: AnonLightmapMode
+      state: LightmapMode
     ): Unit = js.native
     /**
       * Prepares the defines related to the light information passed in parameter

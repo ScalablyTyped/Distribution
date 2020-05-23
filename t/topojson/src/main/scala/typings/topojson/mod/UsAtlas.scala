@@ -1,6 +1,6 @@
 package typings.topojson.mod
 
-import typings.topojson.AnonCounties
+import typings.topojson.anon.Counties
 import typings.topojsonSpecification.mod.Arc
 import typings.topojsonSpecification.mod.Objects
 import typings.topojsonSpecification.mod.Properties
@@ -14,7 +14,7 @@ trait UsAtlas extends Topology[Objects[Properties]] {
   @JSName("bbox")
   var bbox_UsAtlas: js.Tuple4[Double, Double, Double, Double]
   @JSName("objects")
-  var objects_UsAtlas: AnonCounties
+  var objects_UsAtlas: Counties
   @JSName("transform")
   var transform_UsAtlas: Transform
 }
@@ -24,7 +24,7 @@ object UsAtlas {
   def apply(
     arcs: js.Array[Arc],
     bbox: js.Tuple4[Double, Double, Double, Double],
-    objects: AnonCounties,
+    objects: Counties,
     transform: Transform,
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.Topology
   ): UsAtlas = {

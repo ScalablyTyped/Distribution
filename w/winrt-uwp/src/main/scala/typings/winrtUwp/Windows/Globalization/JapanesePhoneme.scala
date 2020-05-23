@@ -5,14 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a single Japanese word (a "reading") that has been extracted from a Japanese string by JapanesePhoneticAnalyzer . */
-@JSGlobal("Windows.Globalization.JapanesePhoneme")
-@js.native
-abstract class JapanesePhoneme () extends js.Object {
+trait JapanesePhoneme extends js.Object {
   /** Gets the text to display for this Japanese word. */
-  var displayText: String = js.native
+  var displayText: String
   /** Gets a Boolean that indicates if this Japanese word is the start of a phrase. */
-  var isPhraseStart: Boolean = js.native
+  var isPhraseStart: Boolean
   /** Gets the "reading" (the pronunciation of DisplayText ) for this Japanese word. */
-  var yomiText: String = js.native
+  var yomiText: String
+}
+
+object JapanesePhoneme {
+  @scala.inline
+  def apply(displayText: String, isPhraseStart: Boolean, yomiText: String): JapanesePhoneme = {
+    val __obj = js.Dynamic.literal(displayText = displayText.asInstanceOf[js.Any], isPhraseStart = isPhraseStart.asInstanceOf[js.Any], yomiText = yomiText.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JapanesePhoneme]
+  }
 }
 

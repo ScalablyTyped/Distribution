@@ -3,8 +3,8 @@ package typings.storybookAddonKnobs.booleanMod
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
-import typings.storybookAddonKnobs.PartialBooleanTypeProps
-import typings.storybookAddonKnobs.WeakValidationMapBooleanT
+import typings.storybookAddonKnobs.anon.PartialBooleanTypeProps
+import typings.storybookAddonKnobs.anon.WeakValidationMapBooleanT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

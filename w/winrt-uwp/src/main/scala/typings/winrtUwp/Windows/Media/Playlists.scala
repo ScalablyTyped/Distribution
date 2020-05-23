@@ -1,10 +1,8 @@
 package typings.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.IStorageFolder
 import typings.winrtUwp.Windows.Storage.NameCollisionOption
 import typings.winrtUwp.Windows.Storage.StorageFile
@@ -18,8 +16,7 @@ import scala.scalajs.js.annotation._
 object Playlists extends js.Object {
   /** Provides access to a media playlist. */
   @js.native
-  /** Creates a new instance of a Playlist object. */
-  class Playlist () extends js.Object {
+  trait Playlist extends js.Object {
     /** The set of media files that make up the playlist. */
     var files: IVector[StorageFile] = js.native
     /**
@@ -54,17 +51,6 @@ object Playlists extends js.Object {
   @js.native
   sealed trait PlaylistFormat extends js.Object
   
-  /* static members */
-  @js.native
-  object Playlist extends js.Object {
-    /**
-      * Asynchronously loads files into a playlist.
-      * @param file Represents the files to load.
-      * @return Represents the asynchronous operation for loading the playlist. The GetResults method of this IAsyncOperation object returns the playlist.
-      */
-    def loadAsync(file: IStorageFile): IPromiseWithIAsyncOperation[Playlist] = js.native
-  }
-  
   /** Indicates the format of a playlist file. */
   @js.native
   object PlaylistFormat extends js.Object {
@@ -79,17 +65,6 @@ object Playlists extends js.Object {
     /** Zune playlist. */
     @js.native
     sealed trait zune extends PlaylistFormat
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PlaylistFormat with Double] = js.native
-    /* 2 */ @js.native
-    object m3u extends TopLevel[m3u with Double]
-    
-    /* 0 */ @js.native
-    object windowsMedia extends TopLevel[windowsMedia with Double]
-    
-    /* 1 */ @js.native
-    object zune extends TopLevel[zune with Double]
     
   }
   

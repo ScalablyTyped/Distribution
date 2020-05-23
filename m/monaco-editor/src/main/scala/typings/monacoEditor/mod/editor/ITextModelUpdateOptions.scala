@@ -14,16 +14,16 @@ trait ITextModelUpdateOptions extends js.Object {
 object ITextModelUpdateOptions {
   @scala.inline
   def apply(
-    indentSize: Int | Double = null,
+    indentSize: js.UndefOr[Double] = js.undefined,
     insertSpaces: js.UndefOr[Boolean] = js.undefined,
-    tabSize: Int | Double = null,
+    tabSize: js.UndefOr[Double] = js.undefined,
     trimAutoWhitespace: js.UndefOr[Boolean] = js.undefined
   ): ITextModelUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaces)) __obj.updateDynamic("insertSpaces")(insertSpaces.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimAutoWhitespace)) __obj.updateDynamic("trimAutoWhitespace")(trimAutoWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentSize)) __obj.updateDynamic("indentSize")(indentSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertSpaces)) __obj.updateDynamic("insertSpaces")(insertSpaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimAutoWhitespace)) __obj.updateDynamic("trimAutoWhitespace")(trimAutoWhitespace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextModelUpdateOptions]
   }
 }

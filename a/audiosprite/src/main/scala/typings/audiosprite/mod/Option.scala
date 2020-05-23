@@ -28,40 +28,40 @@ trait Option extends js.Object {
 object Option {
   @scala.inline
   def apply(
-    autoplay: String = null,
-    bitrate: Int | Double = null,
+    autoplay: js.UndefOr[Null | String] = js.undefined,
+    bitrate: js.UndefOr[Double] = js.undefined,
     channels: Channels = null,
     export: String = null,
-    format: ExportType = null,
-    gap: Int | Double = null,
+    format: js.UndefOr[Null | ExportType] = js.undefined,
+    gap: js.UndefOr[Double] = js.undefined,
     log: LogLevel = null,
     logger: Logger = null,
     loop: js.Array[String] = null,
-    minlength: Int | Double = null,
+    minlength: js.UndefOr[Double] = js.undefined,
     output: String = null,
     path: String = null,
     rawparts: String = null,
-    samplerate: Int | Double = null,
-    silence: Int | Double = null,
+    samplerate: js.UndefOr[Double] = js.undefined,
+    silence: js.UndefOr[Double] = js.undefined,
     vbr: VBR = null,
     vbrColonvorbis: VBRVorbis = null
   ): Option = {
     val __obj = js.Dynamic.literal()
-    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (bitrate != null) __obj.updateDynamic("bitrate")(bitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitrate)) __obj.updateDynamic("bitrate")(bitrate.get.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minlength)) __obj.updateDynamic("minlength")(minlength.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (rawparts != null) __obj.updateDynamic("rawparts")(rawparts.asInstanceOf[js.Any])
-    if (samplerate != null) __obj.updateDynamic("samplerate")(samplerate.asInstanceOf[js.Any])
-    if (silence != null) __obj.updateDynamic("silence")(silence.asInstanceOf[js.Any])
+    if (!js.isUndefined(samplerate)) __obj.updateDynamic("samplerate")(samplerate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silence)) __obj.updateDynamic("silence")(silence.get.asInstanceOf[js.Any])
     if (vbr != null) __obj.updateDynamic("vbr")(vbr.asInstanceOf[js.Any])
     if (vbrColonvorbis != null) __obj.updateDynamic("vbr:vorbis")(vbrColonvorbis.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]

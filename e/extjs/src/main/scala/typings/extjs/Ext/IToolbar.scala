@@ -31,10 +31,10 @@ object IToolbar {
     val __obj = js.Dynamic.literal()
     if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     if (defaultButtonUI != null) __obj.updateDynamic("defaultButtonUI")(defaultButtonUI.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableOverflow)) __obj.updateDynamic("enableOverflow")(enableOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(isToolbar)) __obj.updateDynamic("isToolbar")(isToolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableOverflow)) __obj.updateDynamic("enableOverflow")(enableOverflow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isToolbar)) __obj.updateDynamic("isToolbar")(isToolbar.get.asInstanceOf[js.Any])
     if (menuTriggerCls != null) __obj.updateDynamic("menuTriggerCls")(menuTriggerCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToolbar]
   }
 }

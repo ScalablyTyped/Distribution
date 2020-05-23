@@ -187,13 +187,13 @@ object PrettyPhotoSettings {
     counter_separator_label: String = null,
     custom_markup: String = null,
     deeplinking: js.UndefOr[Boolean] = js.undefined,
-    default_height: Int | Double = null,
-    default_width: Int | Double = null,
+    default_height: js.UndefOr[Double] = js.undefined,
+    default_width: js.UndefOr[Double] = js.undefined,
     flash_markup: String = null,
     gallery_markup: String = null,
     hideflash: js.UndefOr[Boolean] = js.undefined,
     hook: String = null,
-    horizontal_padding: Int | Double = null,
+    horizontal_padding: js.UndefOr[Double] = js.undefined,
     ie6_fallback: js.UndefOr[Boolean] = js.undefined,
     iframe_markup: String = null,
     image_markup: String = null,
@@ -201,9 +201,9 @@ object PrettyPhotoSettings {
     keyboard_shortcuts: js.UndefOr[Boolean] = js.undefined,
     markup: String = null,
     modal: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     overlay_gallery: js.UndefOr[Boolean] = js.undefined,
-    overlay_gallery_max: Int | Double = null,
+    overlay_gallery_max: js.UndefOr[Double] = js.undefined,
     quicktime_markup: String = null,
     show_title: js.UndefOr[Boolean] = js.undefined,
     slideshow: js.Any = null,
@@ -213,35 +213,35 @@ object PrettyPhotoSettings {
   ): PrettyPhotoSettings = {
     val __obj = js.Dynamic.literal()
     if (ajaxcallback != null) __obj.updateDynamic("ajaxcallback")(js.Any.fromFunction0(ajaxcallback))
-    if (!js.isUndefined(allow_expand)) __obj.updateDynamic("allow_expand")(allow_expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_resize)) __obj.updateDynamic("allow_resize")(allow_resize.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_expand)) __obj.updateDynamic("allow_expand")(allow_expand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_resize)) __obj.updateDynamic("allow_resize")(allow_resize.get.asInstanceOf[js.Any])
     if (animation_speed != null) __obj.updateDynamic("animation_speed")(animation_speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay_slideshow)) __obj.updateDynamic("autoplay_slideshow")(autoplay_slideshow.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay_slideshow)) __obj.updateDynamic("autoplay_slideshow")(autoplay_slideshow.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (changepicturecallback != null) __obj.updateDynamic("changepicturecallback")(js.Any.fromFunction0(changepicturecallback))
     if (counter_separator_label != null) __obj.updateDynamic("counter_separator_label")(counter_separator_label.asInstanceOf[js.Any])
     if (custom_markup != null) __obj.updateDynamic("custom_markup")(custom_markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(deeplinking)) __obj.updateDynamic("deeplinking")(deeplinking.asInstanceOf[js.Any])
-    if (default_height != null) __obj.updateDynamic("default_height")(default_height.asInstanceOf[js.Any])
-    if (default_width != null) __obj.updateDynamic("default_width")(default_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(deeplinking)) __obj.updateDynamic("deeplinking")(deeplinking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_height)) __obj.updateDynamic("default_height")(default_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_width)) __obj.updateDynamic("default_width")(default_width.get.asInstanceOf[js.Any])
     if (flash_markup != null) __obj.updateDynamic("flash_markup")(flash_markup.asInstanceOf[js.Any])
     if (gallery_markup != null) __obj.updateDynamic("gallery_markup")(gallery_markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideflash)) __obj.updateDynamic("hideflash")(hideflash.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideflash)) __obj.updateDynamic("hideflash")(hideflash.get.asInstanceOf[js.Any])
     if (hook != null) __obj.updateDynamic("hook")(hook.asInstanceOf[js.Any])
-    if (horizontal_padding != null) __obj.updateDynamic("horizontal_padding")(horizontal_padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(ie6_fallback)) __obj.updateDynamic("ie6_fallback")(ie6_fallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal_padding)) __obj.updateDynamic("horizontal_padding")(horizontal_padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ie6_fallback)) __obj.updateDynamic("ie6_fallback")(ie6_fallback.get.asInstanceOf[js.Any])
     if (iframe_markup != null) __obj.updateDynamic("iframe_markup")(iframe_markup.asInstanceOf[js.Any])
     if (image_markup != null) __obj.updateDynamic("image_markup")(image_markup.asInstanceOf[js.Any])
     if (inline_markup != null) __obj.updateDynamic("inline_markup")(inline_markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard_shortcuts)) __obj.updateDynamic("keyboard_shortcuts")(keyboard_shortcuts.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard_shortcuts)) __obj.updateDynamic("keyboard_shortcuts")(keyboard_shortcuts.get.asInstanceOf[js.Any])
     if (markup != null) __obj.updateDynamic("markup")(markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay_gallery)) __obj.updateDynamic("overlay_gallery")(overlay_gallery.asInstanceOf[js.Any])
-    if (overlay_gallery_max != null) __obj.updateDynamic("overlay_gallery_max")(overlay_gallery_max.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay_gallery)) __obj.updateDynamic("overlay_gallery")(overlay_gallery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay_gallery_max)) __obj.updateDynamic("overlay_gallery_max")(overlay_gallery_max.get.asInstanceOf[js.Any])
     if (quicktime_markup != null) __obj.updateDynamic("quicktime_markup")(quicktime_markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_title)) __obj.updateDynamic("show_title")(show_title.asInstanceOf[js.Any])
+    if (!js.isUndefined(show_title)) __obj.updateDynamic("show_title")(show_title.get.asInstanceOf[js.Any])
     if (slideshow != null) __obj.updateDynamic("slideshow")(slideshow.asInstanceOf[js.Any])
     if (social_tools != null) __obj.updateDynamic("social_tools")(social_tools.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

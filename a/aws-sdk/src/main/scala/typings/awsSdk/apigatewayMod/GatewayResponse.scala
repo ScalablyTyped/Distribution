@@ -31,14 +31,14 @@ trait GatewayResponse extends js.Object {
 object GatewayResponse {
   @scala.inline
   def apply(
-    defaultResponse: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultResponse: js.UndefOr[Boolean] = js.undefined,
     responseParameters: MapOfStringToString = null,
     responseTemplates: MapOfStringToString = null,
     responseType: GatewayResponseType = null,
     statusCode: StatusCode = null
   ): GatewayResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultResponse)) __obj.updateDynamic("defaultResponse")(defaultResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultResponse)) __obj.updateDynamic("defaultResponse")(defaultResponse.get.asInstanceOf[js.Any])
     if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
     if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])

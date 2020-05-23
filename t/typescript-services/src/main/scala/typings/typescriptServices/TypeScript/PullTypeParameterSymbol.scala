@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullTypeParameterSymbol")
 @js.native
-class PullTypeParameterSymbol protected () extends PullTypeSymbol {
-  def this(name: String) = this()
+trait PullTypeParameterSymbol extends PullTypeSymbol {
   var _constraint: js.Any = js.native
   def getBaseConstraint(semanticInfoChain: SemanticInfoChain): PullTypeSymbol = js.native
   def getConstraint(): PullTypeSymbol = js.native

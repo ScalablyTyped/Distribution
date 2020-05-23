@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * 根据IP返回对应城市信息
   */
-@JSGlobal("AMap.CitySearch")
 @js.native
-class CitySearch_ () extends EventEmitter {
+trait CitySearch_ extends EventEmitter {
   /**
     * 根据输入IP地址返回对应城市信息
     * @param ip IP

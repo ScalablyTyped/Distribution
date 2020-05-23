@@ -16,9 +16,9 @@ trait Links extends js.Object {
 
 object Links {
   @scala.inline
-  def apply(droppedLinksCount: Int | Double = null, link: js.Array[Link] = null): Links = {
+  def apply(droppedLinksCount: js.UndefOr[Double] = js.undefined, link: js.Array[Link] = null): Links = {
     val __obj = js.Dynamic.literal()
-    if (droppedLinksCount != null) __obj.updateDynamic("droppedLinksCount")(droppedLinksCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(droppedLinksCount)) __obj.updateDynamic("droppedLinksCount")(droppedLinksCount.get.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     __obj.asInstanceOf[Links]
   }

@@ -24,11 +24,11 @@ object S3LogsConfig {
   @scala.inline
   def apply(
     status: LogsConfigStatusType,
-    encryptionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined,
     location: String = null
   ): S3LogsConfig = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3LogsConfig]
   }

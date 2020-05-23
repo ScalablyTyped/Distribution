@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.TableStyleData
 import typings.officeJsPreview.Excel.Interfaces.TableStyleLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.TableStyleUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.10]
   */
-@JSGlobal("Excel.TableStyle")
 @js.native
-class TableStyle () extends ClientObject {
+trait TableStyle extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableStyle: RequestContext = js.native
@@ -31,7 +30,7 @@ class TableStyle () extends ClientObject {
   var name: String = js.native
   /**
     *
-    * Specifies whether this TableStyle object is read-only. Read-only.
+    * Specifies if this TableStyle object is read-only.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -56,7 +55,7 @@ class TableStyle () extends ClientObject {
     */
   def load(): TableStyle = js.native
   def load(options: TableStyleLoadOptions): TableStyle = js.native
-  def load(propertyNamesAndPaths: AnonExpand): TableStyle = js.native
+  def load(propertyNamesAndPaths: Expand): TableStyle = js.native
   def load(propertyNames: String): TableStyle = js.native
   def load(propertyNames: js.Array[String]): TableStyle = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

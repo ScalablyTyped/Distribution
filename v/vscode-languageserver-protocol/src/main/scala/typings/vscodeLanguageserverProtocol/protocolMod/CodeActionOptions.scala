@@ -23,7 +23,7 @@ object CodeActionOptions {
   ): CodeActionOptions = {
     val __obj = js.Dynamic.literal()
     if (codeActionKinds != null) __obj.updateDynamic("codeActionKinds")(codeActionKinds.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionOptions]
   }
 }

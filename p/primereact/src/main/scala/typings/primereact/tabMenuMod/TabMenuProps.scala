@@ -1,6 +1,6 @@
 package typings.primereact.tabMenuMod
 
-import typings.primereact.AnonValue
+import typings.primereact.anon.Value
 import typings.primereact.menuItemMod.MenuItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait TabMenuProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var model: js.UndefOr[js.Array[MenuItem]] = js.undefined
-  var onTabChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onTabChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -22,7 +22,7 @@ object TabMenuProps {
     className: String = null,
     id: String = null,
     model: js.Array[MenuItem] = null,
-    onTabChange: /* e */ AnonValue => Unit = null,
+    onTabChange: /* e */ Value => Unit = null,
     style: js.Any = null
   ): TabMenuProps = {
     val __obj = js.Dynamic.literal()

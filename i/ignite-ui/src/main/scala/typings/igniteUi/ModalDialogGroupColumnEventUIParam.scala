@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait ModalDialogGroupColumnEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the current groupedColumns.
-  	 */
+    * Gets a reference to the current groupedColumns.
+    */
   var groupedColumns: js.UndefOr[js.Array[_]] = js.undefined
   /**
-  	 * The key of the column to be grouped.
-  	 */
+    * The key of the column to be grouped.
+    */
   var key: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to the current layout object, if any.
-  	 */
+    * Gets a reference to the current layout object, if any.
+    */
   var layout: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets access the GroupBy widget object.
-  	 */
+    * Gets access the GroupBy widget object.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

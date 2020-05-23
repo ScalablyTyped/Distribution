@@ -19,9 +19,7 @@ trait RouteConfigComponentProps[Params /* <: /* import warning: importer.ImportT
 
 object RouteConfigComponentProps {
   @scala.inline
-  def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with TopLevel[js.Any] */](
+  def apply[Params](
     history: History[LocationState],
     location: Location[LocationState],
     `match`: `match`[Params],

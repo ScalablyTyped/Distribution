@@ -20,28 +20,28 @@ trait RangeLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4"). Read-only.
+    * Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
     *
     * [Api set: ExcelApi 1.1]
     */
   var address: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents range reference for the specified range in the language of the user. Read-only.
+    * Specifies the range reference for the specified range in the language of the user.
     *
     * [Api set: ExcelApi 1.1]
     */
   var addressLocal: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+    * Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647).
     *
     * [Api set: ExcelApi 1.1]
     */
   var cellCount: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the total number of columns in the range. Read-only.
+    * Specifies the total number of columns in the range.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -55,7 +55,7 @@ trait RangeLoadOptions extends js.Object {
   var columnHidden: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+    * Specifies the column number of the first cell in the range. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -107,14 +107,14 @@ trait RangeLoadOptions extends js.Object {
   var hasSpill: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+    * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
     *
     * [Api set: ExcelApi 1.10]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents if all cells of the current range are hidden. Read-only.
+    * Represents if all cells of the current range are hidden.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -128,28 +128,28 @@ trait RangeLoadOptions extends js.Object {
   var hyperlink: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents if the current range is an entire column. Read-only.
+    * Represents if the current range is an entire column.
     *
     * [Api set: ExcelApi 1.7]
     */
   var isEntireColumn: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents if the current range is an entire row. Read-only.
+    * Represents if the current range is an entire row.
     *
     * [Api set: ExcelApi 1.7]
     */
   var isEntireRow: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+    * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
     *
     * [Api set: ExcelApi 1.10]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the data type state of each cell. Read-only.
+    * Represents the data type state of each cell.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -163,7 +163,7 @@ trait RangeLoadOptions extends js.Object {
   var numberFormat: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the category of number format of each cell. Read-only.
+    * Represents the category of number format of each cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -180,7 +180,7 @@ trait RangeLoadOptions extends js.Object {
   var numberFormatLocal: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the total number of rows in the range. Read-only.
+    * Returns the total number of rows in the range.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -194,7 +194,7 @@ trait RangeLoadOptions extends js.Object {
   var rowHidden: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+    * Returns the row number of the first cell in the range. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -220,21 +220,21 @@ trait RangeLoadOptions extends js.Object {
   var style: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
     *
     * [Api set: ExcelApi 1.1]
     */
   var text: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+    * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range.
     *
     * [Api set: ExcelApi 1.10]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the type of data of each cell. Read-only.
+    * Specifies the type of data in each cell.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -248,7 +248,7 @@ trait RangeLoadOptions extends js.Object {
   var values: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+    * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -301,39 +301,39 @@ object RangeLoadOptions {
     worksheet: WorksheetLoadOptions = null
   ): RangeLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
     if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(formulas)) __obj.updateDynamic("formulas")(formulas.asInstanceOf[js.Any])
-    if (!js.isUndefined(formulasLocal)) __obj.updateDynamic("formulasLocal")(formulasLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(formulasR1C1)) __obj.updateDynamic("formulasR1C1")(formulasR1C1.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasSpill)) __obj.updateDynamic("hasSpill")(hasSpill.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkedDataTypeState)) __obj.updateDynamic("linkedDataTypeState")(linkedDataTypeState.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberFormatCategories)) __obj.updateDynamic("numberFormatCategories")(numberFormatCategories.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberFormatLocal)) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(savedAsArray)) __obj.updateDynamic("savedAsArray")(savedAsArray.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueTypes)) __obj.updateDynamic("valueTypes")(valueTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulas)) __obj.updateDynamic("formulas")(formulas.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulasLocal)) __obj.updateDynamic("formulasLocal")(formulasLocal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulasR1C1)) __obj.updateDynamic("formulasR1C1")(formulasR1C1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasSpill)) __obj.updateDynamic("hasSpill")(hasSpill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkedDataTypeState)) __obj.updateDynamic("linkedDataTypeState")(linkedDataTypeState.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberFormatCategories)) __obj.updateDynamic("numberFormatCategories")(numberFormatCategories.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberFormatLocal)) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(savedAsArray)) __obj.updateDynamic("savedAsArray")(savedAsArray.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueTypes)) __obj.updateDynamic("valueTypes")(valueTypes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeLoadOptions]
   }

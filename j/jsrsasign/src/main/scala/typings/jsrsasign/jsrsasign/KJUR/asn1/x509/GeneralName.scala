@@ -45,11 +45,16 @@ import scala.scalajs.js.annotation._
   * gn = new KJUR.asn1.x509.GeneralName({certissuer: certPEM});
   * gn = new KJUR.asn1.x509.GeneralName({certsubj:   certPEM});
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.GeneralName")
-@js.native
-class GeneralName () extends js.Object {
-  def this(params: GeneralNameParam) = this()
-  def getEncodedHex(): String = js.native
-  def setByParam(params: js.Array[String]): Unit = js.native
+trait GeneralName extends js.Object {
+  def getEncodedHex(): String
+  def setByParam(params: js.Array[String]): Unit
+}
+
+object GeneralName {
+  @scala.inline
+  def apply(getEncodedHex: () => String, setByParam: js.Array[String] => Unit): GeneralName = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), setByParam = js.Any.fromFunction1(setByParam))
+    __obj.asInstanceOf[GeneralName]
+  }
 }
 

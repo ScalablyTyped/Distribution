@@ -30,7 +30,7 @@ object MacroOpts {
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (cssData != null) __obj.updateDynamic("cssData")(cssData.asInstanceOf[js.Any])
     if (cssId != null) __obj.updateDynamic("cssId")(cssId.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCssTransform)) __obj.updateDynamic("noCssTransform")(noCssTransform.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCssTransform)) __obj.updateDynamic("noCssTransform")(noCssTransform.get.asInstanceOf[js.Any])
     if (partials != null) __obj.updateDynamic("partials")(partials.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[MacroOpts]

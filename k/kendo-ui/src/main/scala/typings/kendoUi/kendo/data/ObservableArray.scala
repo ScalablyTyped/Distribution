@@ -1,17 +1,15 @@
 package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.data.ObservableArray")
 @js.native
-class ObservableArray protected ()
-  extends Observable_
+trait ObservableArray
+  extends Observable
      with /* index */ NumberDictionary[js.Any] {
-  def this(array: js.Array[_]) = this()
   var length: Double = js.native
   def empty(): Unit = js.native
   def every(callback: js.Function3[/* item */ js.Object, /* index */ Double, /* source */ this.type, Boolean]): Boolean = js.native

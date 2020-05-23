@@ -24,12 +24,12 @@ object AuthorizeOptions {
   def apply(
     allowEmptyState: js.UndefOr[Boolean] = js.undefined,
     authenticateHandler: js.Object = null,
-    authorizationCodeLifetime: Int | Double = null
+    authorizationCodeLifetime: js.UndefOr[Double] = js.undefined
   ): AuthorizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmptyState)) __obj.updateDynamic("allowEmptyState")(allowEmptyState.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmptyState)) __obj.updateDynamic("allowEmptyState")(allowEmptyState.get.asInstanceOf[js.Any])
     if (authenticateHandler != null) __obj.updateDynamic("authenticateHandler")(authenticateHandler.asInstanceOf[js.Any])
-    if (authorizationCodeLifetime != null) __obj.updateDynamic("authorizationCodeLifetime")(authorizationCodeLifetime.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorizationCodeLifetime)) __obj.updateDynamic("authorizationCodeLifetime")(authorizationCodeLifetime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeOptions]
   }
 }

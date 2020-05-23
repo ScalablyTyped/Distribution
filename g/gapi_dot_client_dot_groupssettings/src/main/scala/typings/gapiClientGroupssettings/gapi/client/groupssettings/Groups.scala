@@ -94,7 +94,7 @@ object Groups {
     includeInGlobalAddressList: String = null,
     isArchived: String = null,
     kind: String = null,
-    maxMessageBytes: Int | Double = null,
+    maxMessageBytes: js.UndefOr[Double] = js.undefined,
     membersCanPostAsTheGroup: String = null,
     messageDisplayFont: String = null,
     messageModerationLevel: String = null,
@@ -127,7 +127,7 @@ object Groups {
     if (includeInGlobalAddressList != null) __obj.updateDynamic("includeInGlobalAddressList")(includeInGlobalAddressList.asInstanceOf[js.Any])
     if (isArchived != null) __obj.updateDynamic("isArchived")(isArchived.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maxMessageBytes != null) __obj.updateDynamic("maxMessageBytes")(maxMessageBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessageBytes)) __obj.updateDynamic("maxMessageBytes")(maxMessageBytes.get.asInstanceOf[js.Any])
     if (membersCanPostAsTheGroup != null) __obj.updateDynamic("membersCanPostAsTheGroup")(membersCanPostAsTheGroup.asInstanceOf[js.Any])
     if (messageDisplayFont != null) __obj.updateDynamic("messageDisplayFont")(messageDisplayFont.asInstanceOf[js.Any])
     if (messageModerationLevel != null) __obj.updateDynamic("messageModerationLevel")(messageModerationLevel.asInstanceOf[js.Any])

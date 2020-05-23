@@ -8,8 +8,8 @@ package object rangeInterfaceMod {
   /* Rewritten from type alias, can be one of: 
     - typings.ionicCore.ionicCoreStrings.A
     - typings.ionicCore.ionicCoreStrings.B
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type KnobName = js.UndefOr[typings.ionicCore.rangeInterfaceMod._KnobName]
-  type RangeValue = scala.Double | typings.ionicCore.AnonLower
+  type RangeValue = scala.Double | typings.ionicCore.anon.Lower
 }

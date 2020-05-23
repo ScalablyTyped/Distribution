@@ -1,6 +1,14 @@
 package typings.vexdb
 
 import typings.node.eventsMod.EventEmitter
+import typings.vexdb.anon.LiveRequestObjectAwardsRe
+import typings.vexdb.anon.LiveRequestObjectEventsRe
+import typings.vexdb.anon.LiveRequestObjectMatchesR
+import typings.vexdb.anon.LiveRequestObjectRankings
+import typings.vexdb.anon.LiveRequestObjectSeasonRa
+import typings.vexdb.anon.LiveRequestObjectSkillsRe
+import typings.vexdb.anon.LiveRequestObjectTeamsReq
+import typings.vexdb.anon.Prefetch
 import typings.vexdb.requestObjectsMod.AwardsRequestObject
 import typings.vexdb.requestObjectsMod.EventsRequestObject
 import typings.vexdb.requestObjectsMod.MatchesRequestObject
@@ -63,6 +71,6 @@ object liveMod extends js.Object {
   def live_skills(endpoint: skills, params: LiveRequestObjectSkillsRe): LiveEventEmitter[SkillsRequestObject, SkillsResponseObject] = js.native
   @JSName("live")
   def live_teams(endpoint: teams, params: LiveRequestObjectTeamsReq): LiveEventEmitter[TeamsRequestObject, TeamsResponseObject] = js.native
-  type LiveRequestObject[T] = T with AnonPrefetch
+  type LiveRequestObject[T] = T with Prefetch
 }
 

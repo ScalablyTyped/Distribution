@@ -9,23 +9,12 @@ import scala.scalajs.js.annotation._
 object updateConstructSignature extends js.Object {
   def apply(
     node: ConstructSignatureDeclaration,
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
     parameters: NodeArray[ParameterDeclaration]
   ): ConstructSignatureDeclaration = js.native
   def apply(
     node: ConstructSignatureDeclaration,
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: NodeArray[ParameterDeclaration],
-    `type`: TypeNode
-  ): ConstructSignatureDeclaration = js.native
-  def apply(
-    node: ConstructSignatureDeclaration,
-    typeParameters: NodeArray[TypeParameterDeclaration],
-    parameters: NodeArray[ParameterDeclaration]
-  ): ConstructSignatureDeclaration = js.native
-  def apply(
-    node: ConstructSignatureDeclaration,
-    typeParameters: NodeArray[TypeParameterDeclaration],
+    typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
     parameters: NodeArray[ParameterDeclaration],
     `type`: TypeNode
   ): ConstructSignatureDeclaration = js.native

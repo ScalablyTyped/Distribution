@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.DialProtocol
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object DialAppState extends js.Object {
   /** The state cannot be determined. */
   @js.native
   sealed trait unknown extends DialAppState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DialAppState with Double] = js.native
-  /* 3 */ @js.native
-  object networkFailure extends TopLevel[networkFailure with Double]
-  
-  /* 2 */ @js.native
-  object running extends TopLevel[running with Double]
-  
-  /* 1 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

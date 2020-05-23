@@ -16,9 +16,9 @@ trait RightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js
 
 object RightProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](right: ResponsiveValue[TVal, ThemeType] = null): RightProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](right: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): RightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightProps[ThemeType, TVal]]
   }
 }

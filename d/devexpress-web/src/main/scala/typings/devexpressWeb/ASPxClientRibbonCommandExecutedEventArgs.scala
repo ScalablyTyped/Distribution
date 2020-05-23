@@ -7,23 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientRibbon.CommandExecuted event.
   */
-@JSGlobal("ASPxClientRibbonCommandExecutedEventArgs")
-@js.native
-class ASPxClientRibbonCommandExecutedEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientRibbonCommandExecutedEventArgs type with the specified settings.
-    * @param item An ASPxClientRibbonItem object, manipulations on which forced the event to be raised.
-    * @param parameter A string value containing additional information about the processed command.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    */
-  def this(item: ASPxClientRibbonItem, parameter: String, processOnServer: Boolean) = this()
+trait ASPxClientRibbonCommandExecutedEventArgs extends ASPxClientProcessingModeEventArgs {
   /**
     * Gets an item object related to the event.
     */
-  var item: ASPxClientRibbonItem = js.native
+  var item: ASPxClientRibbonItem
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: String = js.native
+  var parameter: String
+}
+
+object ASPxClientRibbonCommandExecutedEventArgs {
+  @scala.inline
+  def apply(item: ASPxClientRibbonItem, parameter: String, processOnServer: Boolean): ASPxClientRibbonCommandExecutedEventArgs = {
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientRibbonCommandExecutedEventArgs]
+  }
 }
 

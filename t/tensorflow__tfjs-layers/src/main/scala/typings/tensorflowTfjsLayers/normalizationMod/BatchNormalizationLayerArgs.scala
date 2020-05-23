@@ -88,21 +88,21 @@ trait BatchNormalizationLayerArgs extends LayerArgs {
 object BatchNormalizationLayerArgs {
   @scala.inline
   def apply(
-    axis: Int | Double = null,
+    axis: js.UndefOr[Double] = js.undefined,
     batchInputShape: Shape = null,
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     betaConstraint: ConstraintIdentifier | Constraint = null,
     betaInitializer: InitializerIdentifier | Initializer = null,
     betaRegularizer: RegularizerIdentifier | Regularizer = null,
     center: js.UndefOr[Boolean] = js.undefined,
     dtype: DataType = null,
-    epsilon: Int | Double = null,
+    epsilon: js.UndefOr[Double] = js.undefined,
     gammaConstraint: ConstraintIdentifier | Constraint = null,
     gammaInitializer: InitializerIdentifier | Initializer = null,
     gammaRegularizer: RegularizerIdentifier | Regularizer = null,
     inputDType: DataType = null,
     inputShape: Shape = null,
-    momentum: Int | Double = null,
+    momentum: js.UndefOr[Double] = js.undefined,
     movingMeanInitializer: InitializerIdentifier | Initializer = null,
     movingVarianceInitializer: InitializerIdentifier | Initializer = null,
     name: String = null,
@@ -111,26 +111,26 @@ object BatchNormalizationLayerArgs {
     weights: js.Array[Tensor[Rank]] = null
   ): BatchNormalizationLayerArgs = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
     if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (betaConstraint != null) __obj.updateDynamic("betaConstraint")(betaConstraint.asInstanceOf[js.Any])
     if (betaInitializer != null) __obj.updateDynamic("betaInitializer")(betaInitializer.asInstanceOf[js.Any])
     if (betaRegularizer != null) __obj.updateDynamic("betaRegularizer")(betaRegularizer.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
     if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (epsilon != null) __obj.updateDynamic("epsilon")(epsilon.asInstanceOf[js.Any])
+    if (!js.isUndefined(epsilon)) __obj.updateDynamic("epsilon")(epsilon.get.asInstanceOf[js.Any])
     if (gammaConstraint != null) __obj.updateDynamic("gammaConstraint")(gammaConstraint.asInstanceOf[js.Any])
     if (gammaInitializer != null) __obj.updateDynamic("gammaInitializer")(gammaInitializer.asInstanceOf[js.Any])
     if (gammaRegularizer != null) __obj.updateDynamic("gammaRegularizer")(gammaRegularizer.asInstanceOf[js.Any])
     if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
     if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
-    if (momentum != null) __obj.updateDynamic("momentum")(momentum.asInstanceOf[js.Any])
+    if (!js.isUndefined(momentum)) __obj.updateDynamic("momentum")(momentum.get.asInstanceOf[js.Any])
     if (movingMeanInitializer != null) __obj.updateDynamic("movingMeanInitializer")(movingMeanInitializer.asInstanceOf[js.Any])
     if (movingVarianceInitializer != null) __obj.updateDynamic("movingVarianceInitializer")(movingVarianceInitializer.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
     if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchNormalizationLayerArgs]
   }

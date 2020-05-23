@@ -18,10 +18,10 @@ trait DnsServersOptionsModifyStructure extends js.Object {
 
 object DnsServersOptionsModifyStructure {
   @scala.inline
-  def apply(CustomDnsServers: ValueStringList = null, Enabled: js.UndefOr[scala.Boolean] = js.undefined): DnsServersOptionsModifyStructure = {
+  def apply(CustomDnsServers: ValueStringList = null, Enabled: js.UndefOr[Boolean] = js.undefined): DnsServersOptionsModifyStructure = {
     val __obj = js.Dynamic.literal()
     if (CustomDnsServers != null) __obj.updateDynamic("CustomDnsServers")(CustomDnsServers.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DnsServersOptionsModifyStructure]
   }
 }

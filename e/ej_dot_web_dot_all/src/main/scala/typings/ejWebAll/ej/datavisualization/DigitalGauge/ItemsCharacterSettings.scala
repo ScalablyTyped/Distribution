@@ -26,15 +26,15 @@ trait ItemsCharacterSettings extends js.Object {
 object ItemsCharacterSettings {
   @scala.inline
   def apply(
-    count: Int | Double = null,
-    opacity: Int | Double = null,
-    spacing: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
+    spacing: js.UndefOr[Double] = js.undefined,
     `type`: CharacterType | String = null
   ): ItemsCharacterSettings = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsCharacterSettings]
   }

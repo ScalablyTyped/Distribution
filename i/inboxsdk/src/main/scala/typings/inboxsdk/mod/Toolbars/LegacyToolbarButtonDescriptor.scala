@@ -30,7 +30,7 @@ object LegacyToolbarButtonDescriptor {
     keyboardShortcutHandle: KeyboardShortcutHandle = null
   ): LegacyToolbarButtonDescriptor = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), section = section.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.get.asInstanceOf[js.Any])
     if (hideFor != null) __obj.updateDynamic("hideFor")(js.Any.fromFunction1(hideFor))
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])

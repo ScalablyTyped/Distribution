@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.RoleDefinition")
 @js.native
-class RoleDefinition () extends ClientObject {
+trait RoleDefinition extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_basePermissions(): BasePermissions = js.native
   def get_description(): String = js.native

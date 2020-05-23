@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.PlayTo.PlayToSourceRequest")
-@js.native
-class PlayToSourceRequest () extends IPlayToSourceRequest {
-  /* CompleteClass */
-  override var deadline: Date = js.native
-  /* CompleteClass */
-  override def displayErrorString(errorString: String): Unit = js.native
-  /* CompleteClass */
-  override def getDeferral(): PlayToSourceDeferral = js.native
-  /* CompleteClass */
-  override def setSource(value: PlayToSource): Unit = js.native
+trait PlayToSourceRequest extends IPlayToSourceRequest
+
+object PlayToSourceRequest {
+  @scala.inline
+  def apply(
+    deadline: Date,
+    displayErrorString: String => Unit,
+    getDeferral: () => PlayToSourceDeferral,
+    setSource: PlayToSource => Unit
+  ): PlayToSourceRequest = {
+    val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], displayErrorString = js.Any.fromFunction1(displayErrorString), getDeferral = js.Any.fromFunction0(getDeferral), setSource = js.Any.fromFunction1(setSource))
+    __obj.asInstanceOf[PlayToSourceRequest]
+  }
 }
 

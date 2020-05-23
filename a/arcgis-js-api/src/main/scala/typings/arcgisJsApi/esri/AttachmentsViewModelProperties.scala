@@ -48,7 +48,7 @@ object AttachmentsViewModelProperties {
     if (activeAttachmentInfo != null) __obj.updateDynamic("activeAttachmentInfo")(activeAttachmentInfo.asInstanceOf[js.Any])
     if (graphic != null) __obj.updateDynamic("graphic")(graphic.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsResizeAttachments)) __obj.updateDynamic("supportsResizeAttachments")(supportsResizeAttachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsResizeAttachments)) __obj.updateDynamic("supportsResizeAttachments")(supportsResizeAttachments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentsViewModelProperties]
   }
 }

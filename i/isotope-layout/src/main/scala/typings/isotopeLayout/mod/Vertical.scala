@@ -10,9 +10,9 @@ trait Vertical extends js.Object {
 
 object Vertical {
   @scala.inline
-  def apply(horizontalAlignment: Int | Double = null): Vertical = {
+  def apply(horizontalAlignment: js.UndefOr[Double] = js.undefined): Vertical = {
     val __obj = js.Dynamic.literal()
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vertical]
   }
 }

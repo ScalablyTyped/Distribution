@@ -12,7 +12,7 @@ object Get {
   @scala.inline
   def apply(noAck: js.UndefOr[Boolean] = js.undefined): Get = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Get]
   }
 }

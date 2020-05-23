@@ -13,9 +13,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapDropDownEdit")
 @js.native
-class BootstrapDropDownEdit () extends BootstrapClientEdit {
+trait BootstrapDropDownEdit extends BootstrapClientEdit {
   def adjustDropDownWindow(): Unit = js.native
   def getButtonVisible(number: Double): Boolean = js.native
   def getCaretPosition(): Double = js.native

@@ -1,7 +1,7 @@
 package typings.tslint.configurationMod
 
 import typings.std.Map
-import typings.tslint.PartialIOptions
+import typings.tslint.anon.PartialIOptions
 import typings.tslint.ruleMod.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

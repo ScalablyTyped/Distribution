@@ -1,6 +1,6 @@
 package typings.angularCommon.testingTestingMod
 
-import typings.angularCommon.AnonIgnoreCancelled
+import typings.angularCommon.anon.IgnoreCancelled
 import typings.angularCommon.httpMod.HttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -89,6 +89,6 @@ abstract class HttpTestingController () extends js.Object {
     * were not explicitly matched.
     */
   def verify(): Unit = js.native
-  def verify(opts: AnonIgnoreCancelled): Unit = js.native
+  def verify(opts: IgnoreCancelled): Unit = js.native
 }
 

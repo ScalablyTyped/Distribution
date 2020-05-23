@@ -1,6 +1,9 @@
 package typings.materialTabIndicator
 
 import typings.materialTabIndicator.adapterMod.MDCTabIndicatorAdapter
+import typings.materialTabIndicator.anon.ACTIVE
+import typings.materialTabIndicator.anon.CONTENTSELECTOR
+import typings.materialTabIndicator.anon.PartialMDCTabIndicatorAda
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,9 +39,9 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object MDCTabIndicatorFoundation extends js.Object {
-    val cssClasses: AnonACTIVE = js.native
+    val cssClasses: ACTIVE = js.native
     val defaultAdapter: MDCTabIndicatorAdapter = js.native
-    val strings: AnonCONTENTSELECTOR = js.native
+    val strings: CONTENTSELECTOR = js.native
   }
   
   /**

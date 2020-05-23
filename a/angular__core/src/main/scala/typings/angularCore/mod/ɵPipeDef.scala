@@ -37,10 +37,8 @@ object ɵPipeDef {
     factory: FactoryFn[T] = null,
     onDestroy: () => Unit = null
   ): ɵPipeDef[T] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any], factory = factory.asInstanceOf[js.Any], onDestroy = js.Any.fromFunction0(onDestroy))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
     __obj.asInstanceOf[ɵPipeDef[T]]
   }
 }

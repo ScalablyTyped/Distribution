@@ -21,23 +21,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * A button bar that maintains a selected state.
-			 * @deprecated Use [Titanium.UI.TabbedBar](Titanium.UI.TabbedBar) instead.
-			 */
-@JSGlobal("Titanium.UI.iOS.TabbedBar")
+  * A button bar that maintains a selected state.
+  * @deprecated Use [Titanium.UI.TabbedBar](Titanium.UI.TabbedBar) instead.
+  */
 @js.native
-class TabbedBar () extends View {
+trait TabbedBar extends View {
   /**
-  				 * Index of the currently selected button.
-  				 */
+    * Index of the currently selected button.
+    */
   var index: Double = js.native
   /**
-  				 * Array of labels for the tabbed bar.
-  				 */
+    * Array of labels for the tabbed bar.
+    */
   var labels: js.Array[BarItemType | String] = js.native
   /**
-  				 * Style of the tabbed bar.
-  				 */
+    * Style of the tabbed bar.
+    */
   var style: Double = js.native
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: TabbedBarClickEvent): Unit = js.native
@@ -68,34 +67,34 @@ class TabbedBar () extends View {
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: TabbedBarTwofingertapEvent): Unit = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.TabbedBar.index> property.
-  				 * @deprecated Access <Titanium.UI.iOS.TabbedBar.index> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.TabbedBar.index> property.
+    * @deprecated Access <Titanium.UI.iOS.TabbedBar.index> instead.
+    */
   def getIndex(): Double = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.TabbedBar.labels> property.
-  				 * @deprecated Access <Titanium.UI.iOS.TabbedBar.labels> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.TabbedBar.labels> property.
+    * @deprecated Access <Titanium.UI.iOS.TabbedBar.labels> instead.
+    */
   def getLabels(): js.Array[BarItemType | String] = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.TabbedBar.style> property.
-  				 * @deprecated Access <Titanium.UI.iOS.TabbedBar.style> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.TabbedBar.style> property.
+    * @deprecated Access <Titanium.UI.iOS.TabbedBar.style> instead.
+    */
   def getStyle(): Double = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.TabbedBar.index> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.TabbedBar.index> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.TabbedBar.index> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.TabbedBar.index> instead.
+    */
   def setIndex(index: Double): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.TabbedBar.labels> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.TabbedBar.labels> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.TabbedBar.labels> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.TabbedBar.labels> instead.
+    */
   def setLabels(labels: js.Array[BarItemType | String]): Unit = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.TabbedBar.style> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.TabbedBar.style> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.TabbedBar.style> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.TabbedBar.style> instead.
+    */
   def setStyle(style: Double): Unit = js.native
 }
 

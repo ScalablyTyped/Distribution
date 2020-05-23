@@ -1,11 +1,11 @@
 package typings.htmlPdf.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.htmlPdf.AnonBottom
-import typings.htmlPdf.AnonContents
-import typings.htmlPdf.AnonDetached
-import typings.htmlPdf.AnonDomain
-import typings.htmlPdf.AnonHeight
+import typings.htmlPdf.anon.Bottom
+import typings.htmlPdf.anon.Contents
+import typings.htmlPdf.anon.Detached
+import typings.htmlPdf.anon.Domain
+import typings.htmlPdf.anon.Height
 import typings.htmlPdf.htmlPdfStrings.A3
 import typings.htmlPdf.htmlPdfStrings.A4
 import typings.htmlPdf.htmlPdfStrings.A5
@@ -26,18 +26,18 @@ trait CreateOptions extends js.Object {
   // Rendering options
   var base: js.UndefOr[String] = js.undefined
   // Page options
-  var border: js.UndefOr[String | AnonBottom] = js.undefined
+  var border: js.UndefOr[String | Bottom] = js.undefined
   // To run Node application as Windows service
-  var childProcessOptions: js.UndefOr[AnonDetached] = js.undefined
+  var childProcessOptions: js.UndefOr[Detached] = js.undefined
   // Export options
   var directory: js.UndefOr[String] = js.undefined
-  var footer: js.UndefOr[AnonHeight] = js.undefined
+  var footer: js.UndefOr[Height] = js.undefined
   var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.undefined
-  var header: js.UndefOr[AnonContents] = js.undefined
+  var header: js.UndefOr[Contents] = js.undefined
   // Papersize Options: http://phantomjs.org/api/webpage/property/paper-size.html
   var height: js.UndefOr[String] = js.undefined
   // HTTP Cookies that are used for requests
-  var httpCookies: js.UndefOr[js.Array[AnonDomain]] = js.undefined
+  var httpCookies: js.UndefOr[js.Array[Domain]] = js.undefined
   // HTTP Headers that are used for requests
   var httpHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
   var orientation: js.UndefOr[portrait | landscape] = js.undefined
@@ -61,23 +61,23 @@ object CreateOptions {
   @scala.inline
   def apply(
     base: String = null,
-    border: String | AnonBottom = null,
-    childProcessOptions: AnonDetached = null,
+    border: String | Bottom = null,
+    childProcessOptions: Detached = null,
     directory: String = null,
-    footer: AnonHeight = null,
+    footer: Height = null,
     format: A3 | A4 | A5 | Legal | Letter | Tabloid = null,
-    header: AnonContents = null,
+    header: Contents = null,
     height: String = null,
-    httpCookies: js.Array[AnonDomain] = null,
+    httpCookies: js.Array[Domain] = null,
     httpHeaders: StringDictionary[String] = null,
     orientation: portrait | landscape = null,
-    paginationOffset: Int | Double = null,
+    paginationOffset: js.UndefOr[Double] = js.undefined,
     phantomArgs: js.Array[String] = null,
     phantomPath: String = null,
     quality: String = null,
     renderDelay: manual | Double = null,
     script: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     `type`: png | jpeg | pdf = null,
     width: String = null,
     zoomFactor: String = null
@@ -94,13 +94,13 @@ object CreateOptions {
     if (httpCookies != null) __obj.updateDynamic("httpCookies")(httpCookies.asInstanceOf[js.Any])
     if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (paginationOffset != null) __obj.updateDynamic("paginationOffset")(paginationOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginationOffset)) __obj.updateDynamic("paginationOffset")(paginationOffset.get.asInstanceOf[js.Any])
     if (phantomArgs != null) __obj.updateDynamic("phantomArgs")(phantomArgs.asInstanceOf[js.Any])
     if (phantomPath != null) __obj.updateDynamic("phantomPath")(phantomPath.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (renderDelay != null) __obj.updateDynamic("renderDelay")(renderDelay.asInstanceOf[js.Any])
     if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])

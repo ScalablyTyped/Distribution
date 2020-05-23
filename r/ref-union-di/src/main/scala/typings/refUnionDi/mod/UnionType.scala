@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.refNapi.mod.Type
-import typings.refUnionDi.AnonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +27,7 @@ trait UnionType
 Instantiable1[(/* arg */ Buffer) | (/* data */ js.Object), js.Any]
      with Instantiable0[js.Any]
      with Instantiable2[/* arg */ Buffer, /* data */ js.Object, js.Any] {
-  var fields: StringDictionary[AnonType] = js.native
+  var fields: StringDictionary[typings.refUnionDi.anon.Type] = js.native
   def apply(): js.Any = js.native
   /** Pass it an existing Buffer instance to use that as the backing buffer. */
   def apply(arg: Buffer): js.Any = js.native

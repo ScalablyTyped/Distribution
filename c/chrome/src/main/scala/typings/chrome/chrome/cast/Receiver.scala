@@ -4,25 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.Receiver")
-@js.native
-class Receiver protected () extends js.Object {
-  /**
-    * @param {string} label
-    * @param {string} friendlyName
-    * @param {Array<chrome.cast.Capability>=} opt_capabilities
-    * @param {chrome.cast.Volume=} opt_volume
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Receiver
-    */
-  def this(label: String, friendlyName: String) = this()
-  def this(label: String, friendlyName: String, capabilities: js.Array[Capability]) = this()
-  def this(label: String, friendlyName: String, capabilities: js.Array[Capability], volume: Volume) = this()
-  var capabilities: js.Array[Capability] = js.native
-  var displayStatus: ReceiverDisplayStatus = js.native
-  var friendlyName: String = js.native
-  var label: String = js.native
-  var receiverType: ReceiverType = js.native
-  var volume: Volume = js.native
+trait Receiver extends js.Object {
+  var capabilities: js.Array[Capability]
+  var displayStatus: ReceiverDisplayStatus
+  var friendlyName: String
+  var label: String
+  var receiverType: ReceiverType
+  var volume: Volume
+}
+
+object Receiver {
+  @scala.inline
+  def apply(
+    capabilities: js.Array[Capability],
+    displayStatus: ReceiverDisplayStatus,
+    friendlyName: String,
+    label: String,
+    receiverType: ReceiverType,
+    volume: Volume
+  ): Receiver = {
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], displayStatus = displayStatus.asInstanceOf[js.Any], friendlyName = friendlyName.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], receiverType = receiverType.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Receiver]
+  }
 }
 

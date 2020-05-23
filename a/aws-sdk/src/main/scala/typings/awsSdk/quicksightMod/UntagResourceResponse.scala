@@ -18,10 +18,10 @@ trait UntagResourceResponse extends js.Object {
 
 object UntagResourceResponse {
   @scala.inline
-  def apply(RequestId: String = null, Status: Int | scala.Double = null): UntagResourceResponse = {
+  def apply(RequestId: String = null, Status: js.UndefOr[StatusCode] = js.undefined): UntagResourceResponse = {
     val __obj = js.Dynamic.literal()
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagResourceResponse]
   }
 }

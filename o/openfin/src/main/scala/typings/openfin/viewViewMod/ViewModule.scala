@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ViewModule extends Base {
+  var onmessage: js.Any = js.native
   /**
     * Creates a new View.
     * @param { View~options } options - View creation options

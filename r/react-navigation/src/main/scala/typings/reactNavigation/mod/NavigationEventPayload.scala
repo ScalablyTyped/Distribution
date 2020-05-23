@@ -17,11 +17,11 @@ object NavigationEventPayload {
     action: NavigationAction,
     state: NavigationState,
     `type`: EventType,
-    lastState: NavigationState = null
+    lastState: js.UndefOr[Null | NavigationState] = js.undefined
   ): NavigationEventPayload = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lastState != null) __obj.updateDynamic("lastState")(lastState.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastState)) __obj.updateDynamic("lastState")(lastState.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationEventPayload]
   }
 }

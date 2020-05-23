@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectUpdate")
-@js.native
-class PnpObjectUpdate () extends IPnpObjectUpdate {
-  /* CompleteClass */
-  override var id: String = js.native
-  /* CompleteClass */
-  override var properties: IMapView[String, _] = js.native
-  /* CompleteClass */
-  override var `type`: PnpObjectType = js.native
+trait PnpObjectUpdate extends IPnpObjectUpdate
+
+object PnpObjectUpdate {
+  @scala.inline
+  def apply(id: String, properties: IMapView[String, _], `type`: PnpObjectType): PnpObjectUpdate = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PnpObjectUpdate]
+  }
 }
 

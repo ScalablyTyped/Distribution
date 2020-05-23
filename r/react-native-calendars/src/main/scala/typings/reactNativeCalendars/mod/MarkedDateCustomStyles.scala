@@ -14,10 +14,13 @@ trait MarkedDateCustomStyles extends js.Object {
 
 object MarkedDateCustomStyles {
   @scala.inline
-  def apply(container: StyleProp[ViewStyle] = null, text: StyleProp[TextStyle] = null): MarkedDateCustomStyles = {
+  def apply(
+    container: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    text: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined
+  ): MarkedDateCustomStyles = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkedDateCustomStyles]
   }
 }

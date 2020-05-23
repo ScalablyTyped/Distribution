@@ -1,6 +1,6 @@
 package typings.popmotion.multiMod
 
-import typings.popmotion.typesMod.ColdSubscription
+import typings.popmotion.actionTypesMod.ColdSubscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

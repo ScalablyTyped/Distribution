@@ -60,7 +60,7 @@ trait ModelArtifacts extends js.Object {
 object ModelArtifacts {
   @scala.inline
   def apply(
-    convertedBy: String = null,
+    convertedBy: js.UndefOr[Null | String] = js.undefined,
     format: String = null,
     generatedBy: String = null,
     modelTopology: js.Object | ArrayBuffer = null,
@@ -70,7 +70,7 @@ object ModelArtifacts {
     weightSpecs: js.Array[WeightsManifestEntry] = null
   ): ModelArtifacts = {
     val __obj = js.Dynamic.literal()
-    if (convertedBy != null) __obj.updateDynamic("convertedBy")(convertedBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(convertedBy)) __obj.updateDynamic("convertedBy")(convertedBy.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (generatedBy != null) __obj.updateDynamic("generatedBy")(generatedBy.asInstanceOf[js.Any])
     if (modelTopology != null) __obj.updateDynamic("modelTopology")(modelTopology.asInstanceOf[js.Any])

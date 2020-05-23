@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.SmartDocument")
 @js.native
-class SmartDocument protected () extends js.Object {
+trait SmartDocument extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   @JSName("Office.SmartDocument_typekey")

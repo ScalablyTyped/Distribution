@@ -15,15 +15,15 @@ trait IComparison
 object IComparison {
   @scala.inline
   def apply(
-    StringDictionary: /* item */ StringDictionary[js.Any] = null,
-    __count: Int | Double = null,
-    __offset: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    __count: js.UndefOr[Double] = js.undefined,
+    __offset: js.UndefOr[Double] = js.undefined,
     __order: String = null
   ): IComparison = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (__count != null) __obj.updateDynamic("__count")(__count.asInstanceOf[js.Any])
-    if (__offset != null) __obj.updateDynamic("__offset")(__offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(__count)) __obj.updateDynamic("__count")(__count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(__offset)) __obj.updateDynamic("__offset")(__offset.get.asInstanceOf[js.Any])
     if (__order != null) __obj.updateDynamic("__order")(__order.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComparison]
   }

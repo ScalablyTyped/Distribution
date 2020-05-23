@@ -1,6 +1,6 @@
 package typings.angularStrap.mgcrea.ngStrap.timepicker
 
-import typings.angularStrap.AnonHide
+import typings.angularStrap.anon.Hide
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait ITimepickerOptions extends js.Object {
   var arrowBehaviour: js.UndefOr[String] = js.undefined
   var autoclose: js.UndefOr[Boolean] = js.undefined
   var container: js.UndefOr[String | Boolean] = js.undefined
-  var delay: js.UndefOr[Double | AnonHide] = js.undefined
+  var delay: js.UndefOr[Double | Hide] = js.undefined
   var hourStep: js.UndefOr[Double] = js.undefined
   var html: js.UndefOr[Boolean] = js.undefined
   var iconDown: js.UndefOr[String] = js.undefined
@@ -44,15 +44,15 @@ object ITimepickerOptions {
     arrowBehaviour: String = null,
     autoclose: js.UndefOr[Boolean] = js.undefined,
     container: String | Boolean = null,
-    delay: Double | AnonHide = null,
-    hourStep: Int | Double = null,
+    delay: Double | Hide = null,
+    hourStep: js.UndefOr[Double] = js.undefined,
     html: js.UndefOr[Boolean] = js.undefined,
     iconDown: String = null,
     iconUp: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     maxTime: Date = null,
     minTime: Date = null,
-    minuteStep: Int | Double = null,
+    minuteStep: js.UndefOr[Double] = js.undefined,
     modelTimeFormat: String = null,
     onBeforeHide: /* timepicker */ ITimepicker => Unit = null,
     onBeforeShow: /* timepicker */ ITimepicker => Unit = null,
@@ -60,7 +60,7 @@ object ITimepickerOptions {
     onShow: /* timepicker */ ITimepicker => Unit = null,
     placement: String = null,
     roundDisplay: js.UndefOr[Boolean] = js.undefined,
-    secondStep: Int | Double = null,
+    secondStep: js.UndefOr[Double] = js.undefined,
     template: String = null,
     timeFormat: String = null,
     timeType: String = null,
@@ -70,30 +70,30 @@ object ITimepickerOptions {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (arrowBehaviour != null) __obj.updateDynamic("arrowBehaviour")(arrowBehaviour.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(hourStep)) __obj.updateDynamic("hourStep")(hourStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
     if (iconDown != null) __obj.updateDynamic("iconDown")(iconDown.asInstanceOf[js.Any])
     if (iconUp != null) __obj.updateDynamic("iconUp")(iconUp.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
     if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteStep)) __obj.updateDynamic("minuteStep")(minuteStep.get.asInstanceOf[js.Any])
     if (modelTimeFormat != null) __obj.updateDynamic("modelTimeFormat")(modelTimeFormat.asInstanceOf[js.Any])
     if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
     if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundDisplay)) __obj.updateDynamic("roundDisplay")(roundDisplay.asInstanceOf[js.Any])
-    if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundDisplay)) __obj.updateDynamic("roundDisplay")(roundDisplay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondStep)) __obj.updateDynamic("secondStep")(secondStep.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat.asInstanceOf[js.Any])
     if (timeType != null) __obj.updateDynamic("timeType")(timeType.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimepickerOptions]
   }
 }

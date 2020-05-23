@@ -41,7 +41,7 @@ object DetectFacesParams {
     if (images_file != null) __obj.updateDynamic("images_file")(images_file.asInstanceOf[js.Any])
     if (images_file_content_type != null) __obj.updateDynamic("images_file_content_type")(images_file_content_type.asInstanceOf[js.Any])
     if (images_filename != null) __obj.updateDynamic("images_filename")(images_filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectFacesParams]
   }

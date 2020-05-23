@@ -27,11 +27,11 @@ object TreeViewProps {
   ): TreeViewProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction1(getId))
-    if (!js.isUndefined(indentGuides)) __obj.updateDynamic("indentGuides")(indentGuides.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentGuides)) __obj.updateDynamic("indentGuides")(indentGuides.get.asInstanceOf[js.Any])
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleExpanded)) __obj.updateDynamic("singleExpanded")(singleExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleExpanded)) __obj.updateDynamic("singleExpanded")(singleExpanded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewProps]
   }
 }

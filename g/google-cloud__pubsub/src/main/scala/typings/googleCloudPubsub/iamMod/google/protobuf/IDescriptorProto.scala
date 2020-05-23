@@ -33,28 +33,28 @@ trait IDescriptorProto extends js.Object {
 object IDescriptorProto {
   @scala.inline
   def apply(
-    enumType: js.Array[IEnumDescriptorProto] = null,
-    extension: js.Array[IFieldDescriptorProto] = null,
-    extensionRange: js.Array[IExtensionRange] = null,
-    field: js.Array[IFieldDescriptorProto] = null,
-    name: String = null,
-    nestedType: js.Array[IDescriptorProto] = null,
-    oneofDecl: js.Array[IOneofDescriptorProto] = null,
-    options: IMessageOptions = null,
-    reservedName: js.Array[String] = null,
-    reservedRange: js.Array[IReservedRange] = null
+    enumType: js.UndefOr[Null | js.Array[IEnumDescriptorProto]] = js.undefined,
+    extension: js.UndefOr[Null | js.Array[IFieldDescriptorProto]] = js.undefined,
+    extensionRange: js.UndefOr[Null | js.Array[IExtensionRange]] = js.undefined,
+    field: js.UndefOr[Null | js.Array[IFieldDescriptorProto]] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    nestedType: js.UndefOr[Null | js.Array[IDescriptorProto]] = js.undefined,
+    oneofDecl: js.UndefOr[Null | js.Array[IOneofDescriptorProto]] = js.undefined,
+    options: js.UndefOr[Null | IMessageOptions] = js.undefined,
+    reservedName: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    reservedRange: js.UndefOr[Null | js.Array[IReservedRange]] = js.undefined
   ): IDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (enumType != null) __obj.updateDynamic("enumType")(enumType.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (extensionRange != null) __obj.updateDynamic("extensionRange")(extensionRange.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nestedType != null) __obj.updateDynamic("nestedType")(nestedType.asInstanceOf[js.Any])
-    if (oneofDecl != null) __obj.updateDynamic("oneofDecl")(oneofDecl.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (reservedName != null) __obj.updateDynamic("reservedName")(reservedName.asInstanceOf[js.Any])
-    if (reservedRange != null) __obj.updateDynamic("reservedRange")(reservedRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(enumType)) __obj.updateDynamic("enumType")(enumType.asInstanceOf[js.Any])
+    if (!js.isUndefined(extension)) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensionRange)) __obj.updateDynamic("extensionRange")(extensionRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(field)) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(nestedType)) __obj.updateDynamic("nestedType")(nestedType.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneofDecl)) __obj.updateDynamic("oneofDecl")(oneofDecl.asInstanceOf[js.Any])
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(reservedName)) __obj.updateDynamic("reservedName")(reservedName.asInstanceOf[js.Any])
+    if (!js.isUndefined(reservedRange)) __obj.updateDynamic("reservedRange")(reservedRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDescriptorProto]
   }
 }

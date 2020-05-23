@@ -22,13 +22,13 @@ object ImapSimpleOptions {
   @scala.inline
   def apply(
     imap: Config,
-    connectTimeout: Int | Double = null,
+    connectTimeout: js.UndefOr[Double] = js.undefined,
     onexpunge: /* seqno */ Double => Unit = null,
     onmail: /* numNewMail */ Double => Unit = null,
     onupdate: (/* seqno */ Double, /* info */ js.Any) => Unit = null
   ): ImapSimpleOptions = {
     val __obj = js.Dynamic.literal(imap = imap.asInstanceOf[js.Any])
-    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectTimeout)) __obj.updateDynamic("connectTimeout")(connectTimeout.get.asInstanceOf[js.Any])
     if (onexpunge != null) __obj.updateDynamic("onexpunge")(js.Any.fromFunction1(onexpunge))
     if (onmail != null) __obj.updateDynamic("onmail")(js.Any.fromFunction1(onmail))
     if (onupdate != null) __obj.updateDynamic("onupdate")(js.Any.fromFunction2(onupdate))

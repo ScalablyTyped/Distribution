@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeServerResponse extends js.Object {
   /**
-    * An array containing the properties of the server with the ServerID you specified.
+    * An array containing the properties of a file transfer protocol-enabled server with the ServerID you specified.
     */
   var Server: DescribedServer = js.native
 }

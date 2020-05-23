@@ -3,6 +3,8 @@ package typings.graphqlBinding
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphql.mod.GraphQLSchema
+import typings.graphqlBinding.anon.InputSchemaPath
+import typings.graphqlBinding.anon.Schema
 import typings.graphqlBinding.distTypesMod.BindingOptions
 import typings.graphqlBinding.distTypesMod.FragmentReplacement
 import typings.graphqlBinding.distTypesMod.Operation
@@ -29,19 +31,19 @@ object mod extends js.Object {
   @js.native
   class FlowGenerator protected ()
     extends typings.graphqlBinding.flowGeneratorMod.FlowGenerator {
-    def this(hasSchemaInputSchemaPathOutputBindingPathIsDefaultExport: AnonInputSchemaPath) = this()
+    def this(hasSchemaInputSchemaPathOutputBindingPathIsDefaultExport: InputSchemaPath) = this()
   }
   
   @js.native
   class Generator protected ()
     extends typings.graphqlBinding.generatorMod.Generator {
-    def this(hasSchemaInputSchemaPathOutputBindingPathIsDefaultExport: AnonInputSchemaPath) = this()
+    def this(hasSchemaInputSchemaPathOutputBindingPathIsDefaultExport: InputSchemaPath) = this()
   }
   
   @js.native
   class TypescriptGenerator protected ()
     extends typings.graphqlBinding.typescriptGeneratorMod.TypescriptGenerator {
-    def this(hasSchemaInputSchemaPathOutputBindingPathIsDefaultExport: AnonInputSchemaPath) = this()
+    def this(hasSchemaInputSchemaPathOutputBindingPathIsDefaultExport: InputSchemaPath) = this()
   }
   
   def addFragmentToInfo(info: GraphQLResolveInfo, fragment: String): GraphQLResolveInfo = js.native
@@ -57,6 +59,6 @@ object mod extends js.Object {
     /* info */ GraphQLResolveInfo, 
     _
   ] = js.native
-  def makeBindingClass[T](hasSchema: AnonSchema): T = js.native
+  def makeBindingClass[T](hasSchema: Schema): T = js.native
 }
 

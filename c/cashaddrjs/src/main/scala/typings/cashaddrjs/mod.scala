@@ -1,5 +1,6 @@
 package typings.cashaddrjs
 
+import typings.cashaddrjs.anon.Hash
 import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -18,7 +19,7 @@ object mod extends js.Object {
     override var name: String = js.native
   }
   
-  def decode(address: String): AnonHash = js.native
+  def decode(address: String): Hash = js.native
   def encode(prefix: String, `type`: String, hash: Uint8Array): String = js.native
 }
 

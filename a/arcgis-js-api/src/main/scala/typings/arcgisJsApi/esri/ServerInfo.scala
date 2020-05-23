@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,8 +51,4 @@ trait ServerInfo
     */
   var tokenServiceUrl: String = js.native
 }
-
-@JSGlobal("__esri.ServerInfo")
-@js.native
-object ServerInfo extends TopLevel[ServerInfoConstructor]
 

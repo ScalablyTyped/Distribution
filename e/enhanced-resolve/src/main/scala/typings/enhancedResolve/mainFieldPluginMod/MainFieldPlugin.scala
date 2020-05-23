@@ -1,12 +1,12 @@
 package typings.enhancedResolve.mainFieldPluginMod
 
-import typings.enhancedResolve.AnonForceRelative
+import typings.enhancedResolve.anon.ForceRelative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MainFieldPlugin extends js.Object {
-  var options: AnonForceRelative
+  var options: ForceRelative
   var source: String
   var target: String
   @JSName("apply")
@@ -17,7 +17,7 @@ object MainFieldPlugin {
   @scala.inline
   def apply(
     apply: typings.enhancedResolve.resolverMod.^ => Unit,
-    options: AnonForceRelative,
+    options: ForceRelative,
     source: String,
     target: String
   ): MainFieldPlugin = {

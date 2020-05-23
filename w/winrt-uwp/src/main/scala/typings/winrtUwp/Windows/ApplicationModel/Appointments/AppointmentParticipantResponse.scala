@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object AppointmentParticipantResponse extends js.Object {
   /** The response is unknown. */
   @js.native
   sealed trait unknown extends AppointmentParticipantResponse
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppointmentParticipantResponse with Double] = js.native
-  /* 2 */ @js.native
-  object accepted extends TopLevel[accepted with Double]
-  
-  /* 3 */ @js.native
-  object declined extends TopLevel[declined with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object tentative extends TopLevel[tentative with Double]
-  
-  /* 4 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

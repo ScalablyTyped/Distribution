@@ -65,7 +65,7 @@ object ExplanationOfBenefitCareTeam {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (qualification != null) __obj.updateDynamic("qualification")(qualification.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsible)) __obj.updateDynamic("responsible")(responsible.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsible)) __obj.updateDynamic("responsible")(responsible.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplanationOfBenefitCareTeam]
   }

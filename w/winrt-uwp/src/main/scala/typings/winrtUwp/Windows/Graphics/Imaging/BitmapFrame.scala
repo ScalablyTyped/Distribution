@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides read access to data within a single frame. */
-@JSGlobal("Windows.Graphics.Imaging.BitmapFrame")
 @js.native
-abstract class BitmapFrame () extends js.Object {
+trait BitmapFrame extends js.Object {
   /** The default alpha mode of the frame. */
   var bitmapAlphaMode: BitmapAlphaMode = js.native
   /** The pixel format that best fits the frame. */

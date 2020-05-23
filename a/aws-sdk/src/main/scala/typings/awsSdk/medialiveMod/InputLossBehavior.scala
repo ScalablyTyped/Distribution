@@ -31,18 +31,18 @@ trait InputLossBehavior extends js.Object {
 object InputLossBehavior {
   @scala.inline
   def apply(
-    BlackFrameMsec: Int | Double = null,
+    BlackFrameMsec: js.UndefOr[integerMin0Max1000000] = js.undefined,
     InputLossImageColor: stringMin6Max6 = null,
     InputLossImageSlate: InputLocation = null,
     InputLossImageType: InputLossImageType = null,
-    RepeatFrameMsec: Int | Double = null
+    RepeatFrameMsec: js.UndefOr[integerMin0Max1000000] = js.undefined
   ): InputLossBehavior = {
     val __obj = js.Dynamic.literal()
-    if (BlackFrameMsec != null) __obj.updateDynamic("BlackFrameMsec")(BlackFrameMsec.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlackFrameMsec)) __obj.updateDynamic("BlackFrameMsec")(BlackFrameMsec.get.asInstanceOf[js.Any])
     if (InputLossImageColor != null) __obj.updateDynamic("InputLossImageColor")(InputLossImageColor.asInstanceOf[js.Any])
     if (InputLossImageSlate != null) __obj.updateDynamic("InputLossImageSlate")(InputLossImageSlate.asInstanceOf[js.Any])
     if (InputLossImageType != null) __obj.updateDynamic("InputLossImageType")(InputLossImageType.asInstanceOf[js.Any])
-    if (RepeatFrameMsec != null) __obj.updateDynamic("RepeatFrameMsec")(RepeatFrameMsec.asInstanceOf[js.Any])
+    if (!js.isUndefined(RepeatFrameMsec)) __obj.updateDynamic("RepeatFrameMsec")(RepeatFrameMsec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputLossBehavior]
   }
 }

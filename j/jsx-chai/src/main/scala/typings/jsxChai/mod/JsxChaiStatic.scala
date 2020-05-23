@@ -1,7 +1,7 @@
 package typings.jsxChai.mod
 
-import typings.chai.Chai_.ChaiStatic
-import typings.chai.Chai_.ChaiUtils
+import typings.chai.Chai.ChaiStatic
+import typings.chai.Chai.ChaiUtils
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

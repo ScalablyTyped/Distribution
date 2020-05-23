@@ -4,12 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("GlideDate")
-@js.native
-/**
-  * Creates a GlideDate object with the current date time.
-  */
-class GlideDate () extends js.Object {
+trait GlideDate extends js.Object {
   /**
     * Gets the date in the specified date format.
     *
@@ -22,7 +17,7 @@ class GlideDate () extends js.Object {
     * gs.info(gd.getByFormat('dd-MM-yyyy'));
     * // 01-01-2015
     */
-  def getByFormat(format: String): String = js.native
+  def getByFormat(format: String): String
   /**
     * Gets the day of the month stored by the GlideDate object, expressed in the UTC time
     * zone.
@@ -35,7 +30,7 @@ class GlideDate () extends js.Object {
     * gs.info(gd.getDayOfMonthNoTZ());
     * // 13
     */
-  def getDayOfMonthNoTZ(): Double = js.native
+  def getDayOfMonthNoTZ(): Double
   /**
     * Gets the date in the current user's display format and time zone.
     *
@@ -49,7 +44,7 @@ class GlideDate () extends js.Object {
     * gs.info(gd.getDisplayValue());
     * // 2015-01-01
     */
-  def getDisplayValue(): String = js.native
+  def getDisplayValue(): String
   /**
     * Gets the display value in the internal format (yyyy-MM-dd).
     *
@@ -61,7 +56,7 @@ class GlideDate () extends js.Object {
     * gs.info(gd.getDisplayValueInternal());
     * // 2014-10-22
     */
-  def getDisplayValueInternal(): String = js.native
+  def getDisplayValueInternal(): String
   /**
     * Gets the month stored by the GlideDate object, expressed in the UTC time zone.
     * @returns The numerical value of the month from 1 to 12.
@@ -73,7 +68,7 @@ class GlideDate () extends js.Object {
     * gs.info(gd.getMonthNoTZ());
     * // 5
     */
-  def getMonthNoTZ(): Double = js.native
+  def getMonthNoTZ(): Double
   /**
     * Gets the date value stored in the database by the GlideDate object in the internal
     * format, yyyy-MM-dd, and the system time zone, UTC by default.
@@ -86,7 +81,7 @@ class GlideDate () extends js.Object {
     * gs.info(gd.getValue());
     * // 2015-01-01
     */
-  def getValue(): String = js.native
+  def getValue(): String
   /**
     * Gets the year stored by the GlideDate object, expressed in the UTC time zone.
     *
@@ -98,7 +93,7 @@ class GlideDate () extends js.Object {
     * gs.info(gd.getYearNoTZ());
     * // 5
     */
-  def getYearNoTZ(): Double = js.native
+  def getYearNoTZ(): Double
   /**
     * Sets a date value using the current user's display format and time zone.
     *
@@ -112,7 +107,7 @@ class GlideDate () extends js.Object {
     * gs.info(gd.getValue());
     * // 2011-01-01
     */
-  def setDisplayValue(asDisplayed: String): Unit = js.native
+  def setDisplayValue(asDisplayed: String): Unit
   /**
     * Sets the date of the GlideDate object.
     *
@@ -125,32 +120,24 @@ class GlideDate () extends js.Object {
     * gs.info(gd.getValue());
     * // 2015-01-01
     */
-  def setValue(o: String): Unit = js.native
+  def setValue(o: String): Unit
 }
 
-/* static members */
-@JSGlobal("GlideDate")
-@js.native
-object GlideDate extends js.Object {
-  /**
-    * Gets the duration difference between two GlideDate values.
-    *
-    * @param start The start value.
-    * @param end The end value.
-    * @returns The duration between the two values.
-    * @example
-    *
-    * var sgd1 = new GlideDate();
-    * sgd1.setDisplayValue('2014-07-18');
-    * var sgd2 = new GlideDate();
-    * sgd2.setDisplayValue('2014-07-19');
-    * var duration = GlideDate.subtract(sgd1, sgd2);
-    * gs.info(duration.getDisplayValue());
-    * // 1 Day
-    */
-  def subtract(start: GlideDate, end: GlideDate): GlideDuration = js.native
-  def subtract(start: GlideDate, end: GlideTime): GlideDuration = js.native
-  def subtract(start: GlideTime, end: GlideDate): GlideDuration = js.native
-  def subtract(start: GlideTime, end: GlideTime): GlideDuration = js.native
+object GlideDate {
+  @scala.inline
+  def apply(
+    getByFormat: String => String,
+    getDayOfMonthNoTZ: () => Double,
+    getDisplayValue: () => String,
+    getDisplayValueInternal: () => String,
+    getMonthNoTZ: () => Double,
+    getValue: () => String,
+    getYearNoTZ: () => Double,
+    setDisplayValue: String => Unit,
+    setValue: String => Unit
+  ): GlideDate = {
+    val __obj = js.Dynamic.literal(getByFormat = js.Any.fromFunction1(getByFormat), getDayOfMonthNoTZ = js.Any.fromFunction0(getDayOfMonthNoTZ), getDisplayValue = js.Any.fromFunction0(getDisplayValue), getDisplayValueInternal = js.Any.fromFunction0(getDisplayValueInternal), getMonthNoTZ = js.Any.fromFunction0(getMonthNoTZ), getValue = js.Any.fromFunction0(getValue), getYearNoTZ = js.Any.fromFunction0(getYearNoTZ), setDisplayValue = js.Any.fromFunction1(setDisplayValue), setValue = js.Any.fromFunction1(setValue))
+    __obj.asInstanceOf[GlideDate]
+  }
 }
 

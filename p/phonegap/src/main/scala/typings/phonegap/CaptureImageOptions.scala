@@ -11,10 +11,10 @@ trait CaptureImageOptions extends js.Object {
 
 object CaptureImageOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, mode: Int | Double = null): CaptureImageOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, mode: js.UndefOr[Double] = js.undefined): CaptureImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureImageOptions]
   }
 }

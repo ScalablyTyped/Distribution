@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MockAjax")
 @js.native
-class MockAjax protected () extends js.Object {
-  def this(globals: js.Any) = this()
+trait MockAjax extends js.Object {
   var requests: JasmineAjaxRequestTracker = js.native
   var stubs: JasmineAjaxStubTracker = js.native
   def addCustomParamParser(parser: JasmineAjaxParamParser): Unit = js.native

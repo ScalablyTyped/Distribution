@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonData
+import typings.jupyterlabServices.anon.Data
 import typings.jupyterlabServices.jupyterlabServicesStrings.comm_open
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
@@ -15,14 +15,14 @@ trait ICommOpenMsg[T /* <: shell | iopub */] extends IMessage[comm_open] {
   @JSName("channel")
   var channel_ICommOpenMsg: T
   @JSName("content")
-  var content_ICommOpenMsg: AnonData
+  var content_ICommOpenMsg: Data
 }
 
 object ICommOpenMsg {
   @scala.inline
-  def apply[T /* <: shell | iopub */](
+  def apply[T](
     channel: T,
-    content: AnonData,
+    content: Data,
     header: IHeader[comm_open],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

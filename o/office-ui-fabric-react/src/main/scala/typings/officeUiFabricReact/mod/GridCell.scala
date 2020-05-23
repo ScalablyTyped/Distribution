@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.AnonDisabled
+import typings.officeUiFabricReact.anon.Disabled
 import typings.officeUiFabricReact.gridCellTypesMod.IGridCellProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class GridCell[T, P /* <: IGridCellProps[T] */] ()
 @JSImport("office-ui-fabric-react", "GridCell")
 @js.native
 object GridCell extends js.Object {
-  var defaultProps: AnonDisabled = js.native
+  var defaultProps: Disabled = js.native
 }
 

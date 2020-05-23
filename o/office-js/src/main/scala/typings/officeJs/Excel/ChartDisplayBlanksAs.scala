@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object ChartDisplayBlanksAs extends js.Object {
   
   @js.native
   sealed trait zero extends ChartDisplayBlanksAs
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartDisplayBlanksAs with String] = js.native
-  /* "Interplotted" */ @js.native
-  object interplotted extends TopLevel[interplotted with String]
-  
-  /* "NotPlotted" */ @js.native
-  object notPlotted extends TopLevel[notPlotted with String]
-  
-  /* "Zero" */ @js.native
-  object zero extends TopLevel[zero with String]
   
 }
 

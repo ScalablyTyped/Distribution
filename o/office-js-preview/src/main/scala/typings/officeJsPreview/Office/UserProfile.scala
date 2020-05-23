@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
   * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait UserProfile extends js.Object {
   /**
-    * Gets the account type of the user associated with the mailbox. 
+    * Gets the account type of the user associated with the mailbox.
     *
     * **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.
     *
@@ -24,11 +24,11 @@ trait UserProfile extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * The possible account types are listed in the following table.
-    * 
+    *
     * <table>
     *   <tr>
     *     <th>Value</th>
@@ -57,9 +57,9 @@ trait UserProfile extends js.Object {
     * Gets the user's display name.
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var displayName: String
@@ -67,9 +67,9 @@ trait UserProfile extends js.Object {
     * Gets the user's SMTP email address.
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var emailAddress: String
@@ -77,9 +77,9 @@ trait UserProfile extends js.Object {
     * Gets the user's time zone in Windows format.
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var timeZone: String

@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.AnonDpobj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,10 +29,15 @@ import scala.scalajs.js.annotation._
   *      aACompromise            (8) }
   * ```
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.DistributionPoint")
-@js.native
-class DistributionPoint () extends js.Object {
-  def this(params: AnonDpobj) = this()
-  def getEncodedHex(): String = js.native
+trait DistributionPoint extends js.Object {
+  def getEncodedHex(): String
+}
+
+object DistributionPoint {
+  @scala.inline
+  def apply(getEncodedHex: () => String): DistributionPoint = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex))
+    __obj.asInstanceOf[DistributionPoint]
+  }
 }
 

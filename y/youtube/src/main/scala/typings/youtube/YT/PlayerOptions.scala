@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation._
 
 trait PlayerOptions extends js.Object {
   /**
-  		 * Handlers for events fired by the player.
-  		 */
+    * Handlers for events fired by the player.
+    */
   var events: js.UndefOr[Events] = js.undefined
   /**
-  		 * Player height
-  		 */
+    * Player height
+    */
   var height: js.UndefOr[String | Double] = js.undefined
   /**
-  		 * Points host to correct origin for CORS
-  		 */
+    * Points host to correct origin for CORS
+    */
   var host: js.UndefOr[String] = js.undefined
   /**
-  		 * Player parameters.
-  		 */
+    * Player parameters.
+    */
   var playerVars: js.UndefOr[PlayerVars] = js.undefined
   /**
-  		 * ID of the video to load.
-  		 */
+    * ID of the video to load.
+    */
   var videoId: js.UndefOr[String] = js.undefined
   /**
-  		 * Player width.
-  		 */
+    * Player width.
+    */
   var width: js.UndefOr[String | Double] = js.undefined
 }
 

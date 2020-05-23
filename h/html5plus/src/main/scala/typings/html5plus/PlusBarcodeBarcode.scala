@@ -31,7 +31,7 @@ trait PlusBarcodeBarcode extends js.Object {
   /**
     * 结束条码识别
     * 结束对摄像头获取图片数据进行条码识别操作，同时关闭摄像头的视频捕获。
-    * 	结束后可调用start方法重新开始识别。
+    *     结束后可调用start方法重新开始识别。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */

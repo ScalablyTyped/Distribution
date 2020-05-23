@@ -20,7 +20,7 @@ object Event {
     pid: Double,
     tid: Double,
     ts: Double,
-    StringDictionary: /* otherData */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     ph: String = null
   ): Event = {
     val __obj = js.Dynamic.literal(pid = pid.asInstanceOf[js.Any], tid = tid.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.winrt.Windows.Foundation.Collections
 
-import typings.winrt.AnonFirst
+import typings.winrt.anon.First
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait IMapView[K, V] extends IIterable[IKeyValuePair[K, V]] {
   var size: Double
   def hasKey(key: K): Boolean
   def lookup(key: K): V
-  def split(): AnonFirst[K, V]
+  def split(): First[K, V]
 }
 
 object IMapView {
@@ -19,7 +19,7 @@ object IMapView {
     hasKey: K => Boolean,
     lookup: K => V,
     size: Double,
-    split: () => AnonFirst[K, V]
+    split: () => First[K, V]
   ): IMapView[K, V] = {
     val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first), hasKey = js.Any.fromFunction1(hasKey), lookup = js.Any.fromFunction1(lookup), size = size.asInstanceOf[js.Any], split = js.Any.fromFunction0(split))
     __obj.asInstanceOf[IMapView[K, V]]

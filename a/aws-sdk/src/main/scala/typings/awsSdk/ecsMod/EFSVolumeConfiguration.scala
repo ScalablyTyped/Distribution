@@ -35,13 +35,13 @@ object EFSVolumeConfiguration {
     authorizationConfig: EFSAuthorizationConfig = null,
     rootDirectory: String = null,
     transitEncryption: EFSTransitEncryption = null,
-    transitEncryptionPort: Int | scala.Double = null
+    transitEncryptionPort: js.UndefOr[BoxedInteger] = js.undefined
   ): EFSVolumeConfiguration = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any])
     if (authorizationConfig != null) __obj.updateDynamic("authorizationConfig")(authorizationConfig.asInstanceOf[js.Any])
     if (rootDirectory != null) __obj.updateDynamic("rootDirectory")(rootDirectory.asInstanceOf[js.Any])
     if (transitEncryption != null) __obj.updateDynamic("transitEncryption")(transitEncryption.asInstanceOf[js.Any])
-    if (transitEncryptionPort != null) __obj.updateDynamic("transitEncryptionPort")(transitEncryptionPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitEncryptionPort)) __obj.updateDynamic("transitEncryptionPort")(transitEncryptionPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EFSVolumeConfiguration]
   }
 }

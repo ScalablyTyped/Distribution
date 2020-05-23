@@ -1,6 +1,6 @@
 package typings.reactElemental.mod
 
-import typings.reactElemental.AnonValue
+import typings.reactElemental.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait SelectListState extends js.Object {
   val isExpanded: Boolean
   val isFocused: Boolean
   val isHovered: Boolean
-  val selectedOption: AnonValue
+  val selectedOption: Value
 }
 
 object SelectListState {
@@ -19,11 +19,10 @@ object SelectListState {
     isExpanded: Boolean,
     isFocused: Boolean,
     isHovered: Boolean,
-    selectedOption: AnonValue,
-    highlightedIdx: Int | Double = null
+    selectedOption: Value,
+    highlightedIdx: Double = null.asInstanceOf[Double]
   ): SelectListState = {
-    val __obj = js.Dynamic.literal(isExpanded = isExpanded.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], selectedOption = selectedOption.asInstanceOf[js.Any])
-    if (highlightedIdx != null) __obj.updateDynamic("highlightedIdx")(highlightedIdx.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isExpanded = isExpanded.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], selectedOption = selectedOption.asInstanceOf[js.Any], highlightedIdx = highlightedIdx.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectListState]
   }
 }

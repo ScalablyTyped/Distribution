@@ -31,17 +31,17 @@ trait GetInventorySchemaRequest extends js.Object {
 object GetInventorySchemaRequest {
   @scala.inline
   def apply(
-    Aggregator: js.UndefOr[scala.Boolean] = js.undefined,
-    MaxResults: Int | Double = null,
+    Aggregator: js.UndefOr[AggregatorSchemaOnly] = js.undefined,
+    MaxResults: js.UndefOr[GetInventorySchemaMaxResults] = js.undefined,
     NextToken: NextToken = null,
-    SubType: js.UndefOr[scala.Boolean] = js.undefined,
+    SubType: js.UndefOr[IsSubTypeSchema] = js.undefined,
     TypeName: InventoryItemTypeNameFilter = null
   ): GetInventorySchemaRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Aggregator)) __obj.updateDynamic("Aggregator")(Aggregator.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(Aggregator)) __obj.updateDynamic("Aggregator")(Aggregator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(SubType)) __obj.updateDynamic("SubType")(SubType.asInstanceOf[js.Any])
+    if (!js.isUndefined(SubType)) __obj.updateDynamic("SubType")(SubType.get.asInstanceOf[js.Any])
     if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInventorySchemaRequest]
   }

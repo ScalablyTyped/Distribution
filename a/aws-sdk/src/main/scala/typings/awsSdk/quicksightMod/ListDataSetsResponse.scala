@@ -30,13 +30,13 @@ object ListDataSetsResponse {
     DataSetSummaries: DataSetSummaryList = null,
     NextToken: String = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null
+    Status: js.UndefOr[StatusCode] = js.undefined
   ): ListDataSetsResponse = {
     val __obj = js.Dynamic.literal()
     if (DataSetSummaries != null) __obj.updateDynamic("DataSetSummaries")(DataSetSummaries.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataSetsResponse]
   }
 }

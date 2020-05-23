@@ -12,10 +12,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(spaces: RegExp = null, speed: Int | Double = null): Options = {
+  def apply(spaces: RegExp = null, speed: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,6 +1,6 @@
 package typings.hashring.mod
 
-import typings.hashring.PartialHashRingOptions
+import typings.hashring.anon.PartialHashRingOptions
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

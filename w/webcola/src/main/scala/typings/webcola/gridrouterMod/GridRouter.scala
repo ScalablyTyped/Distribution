@@ -1,6 +1,6 @@
 package typings.webcola.gridrouterMod
 
-import typings.webcola.AnonArrowpath
+import typings.webcola.anon.Arrowpath
 import typings.webcola.geomMod.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,7 +47,7 @@ object GridRouter extends js.Object {
   var getOrder: js.Any = js.native
   var isLeft: js.Any = js.native
   def angleBetween2Lines(line1: js.Array[Point], line2: js.Array[Point]): Double = js.native
-  def getRoutePath(route: js.Array[js.Array[Point]], cornerradius: Double, arrowwidth: Double, arrowheight: Double): AnonArrowpath = js.native
+  def getRoutePath(route: js.Array[js.Array[Point]], cornerradius: Double, arrowwidth: Double, arrowheight: Double): Arrowpath = js.native
   def getSegmentSets(routes: js.Any, x: js.Any, y: js.Any): js.Array[_] = js.native
   def makeSegments(path: js.Array[Point]): js.Array[js.Array[Point]] = js.native
   def nudgeSegments(

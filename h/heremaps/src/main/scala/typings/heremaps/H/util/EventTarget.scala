@@ -8,12 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * EventTarget enabled listening and dispatching events on all instances and derived classes.
   */
-@JSGlobal("H.util.EventTarget")
 @js.native
-/**
-  * Constructor
-  */
-class EventTarget () extends js.Object {
+trait EventTarget extends js.Object {
   /**
     * This method allows to listen for specific event triggered by the object. Keep in mind, that you must removeEventListener manually or dispose an object when you no longer need it.
     * Otherwise memory leak is possible.

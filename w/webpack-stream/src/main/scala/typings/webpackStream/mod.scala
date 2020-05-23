@@ -3,6 +3,7 @@ package typings.webpackStream
 import typings.node.NodeJS.ReadWriteStream
 import typings.webpack.mod.Compiler_.Handler
 import typings.webpack.mod.Configuration
+import typings.webpackStream.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ object mod extends js.Object {
     */
   def apply(): ReadWriteStream = js.native
   def apply(config: Configuration): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: AnonCall): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: AnonCall, callback: Handler): ReadWriteStream = js.native
+  def apply(config: Configuration, wp: Call): ReadWriteStream = js.native
+  def apply(config: Configuration, wp: Call, callback: Handler): ReadWriteStream = js.native
 }
 

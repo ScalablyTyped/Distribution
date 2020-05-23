@@ -19,7 +19,7 @@ trait ResourceDetails extends js.Object {
     */
   var AwsEc2Instance: js.UndefOr[AwsEc2InstanceDetails] = js.native
   /**
-    * Details for an AWS EC2 network interface.
+    * Details for an Amazon EC2 network interface.
     */
   var AwsEc2NetworkInterface: js.UndefOr[AwsEc2NetworkInterfaceDetails] = js.native
   /**
@@ -55,11 +55,11 @@ trait ResourceDetails extends js.Object {
     */
   var AwsLambdaLayerVersion: js.UndefOr[AwsLambdaLayerVersionDetails] = js.native
   /**
-    * Details for an RDS database instance.
+    * Details for an Amazon RDS database instance.
     */
   var AwsRdsDbInstance: js.UndefOr[AwsRdsDbInstanceDetails] = js.native
   /**
-    * Details about an Amazon S3 Bucket related to a finding.
+    * Details about an Amazon S3 bucket related to a finding.
     */
   var AwsS3Bucket: js.UndefOr[AwsS3BucketDetails] = js.native
   /**

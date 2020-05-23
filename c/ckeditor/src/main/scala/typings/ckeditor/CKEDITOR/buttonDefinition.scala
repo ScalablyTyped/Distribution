@@ -19,11 +19,11 @@ object buttonDefinition {
     label: String,
     toolbar: String,
     icon: String = null,
-    iconOffset: Int | Double = null
+    iconOffset: js.UndefOr[Double] = js.undefined
   ): buttonDefinition = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], toolbar = toolbar.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconOffset != null) __obj.updateDynamic("iconOffset")(iconOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconOffset)) __obj.updateDynamic("iconOffset")(iconOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[buttonDefinition]
   }
 }

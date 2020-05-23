@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +19,4 @@ trait LineOfSight extends Widget_ {
     */
   var viewModel: LineOfSightViewModel = js.native
 }
-
-@JSGlobal("__esri.LineOfSight")
-@js.native
-object LineOfSight extends TopLevel[LineOfSightConstructor]
 

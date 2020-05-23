@@ -15,10 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides properties and methods to manage the input, manipulation, and processing (including handwriting recognition) of one or more InkStroke objects. */
-@JSGlobal("Windows.UI.Input.Inking.InkManager")
 @js.native
-/** Creates a new InkManager object that is used to manage InkStroke objects. */
-class InkManager () extends js.Object {
+trait InkManager extends js.Object {
   /** Gets the bounding rectangle of the InkStroke collection that is managed by the InkManager . */
   var boundingRect: Rect = js.native
   /** Gets or sets the ink input mode. */

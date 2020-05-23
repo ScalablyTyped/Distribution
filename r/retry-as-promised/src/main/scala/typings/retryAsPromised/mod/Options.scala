@@ -21,24 +21,24 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    $current: Int | Double = null,
-    backoffBase: Int | Double = null,
-    backoffExponent: Int | Double = null,
+    $current: js.UndefOr[Double] = js.undefined,
+    backoffBase: js.UndefOr[Double] = js.undefined,
+    backoffExponent: js.UndefOr[Double] = js.undefined,
     `match`: js.Array[MatchOption] | MatchOption = null,
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     name: String = null,
     report: (/* message */ String, /* obj */ Options, /* err */ js.UndefOr[js.Any]) => Unit = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if ($current != null) __obj.updateDynamic("$current")($current.asInstanceOf[js.Any])
-    if (backoffBase != null) __obj.updateDynamic("backoffBase")(backoffBase.asInstanceOf[js.Any])
-    if (backoffExponent != null) __obj.updateDynamic("backoffExponent")(backoffExponent.asInstanceOf[js.Any])
+    if (!js.isUndefined($current)) __obj.updateDynamic("$current")($current.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backoffBase)) __obj.updateDynamic("backoffBase")(backoffBase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backoffExponent)) __obj.updateDynamic("backoffExponent")(backoffExponent.get.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (report != null) __obj.updateDynamic("report")(js.Any.fromFunction3(report))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

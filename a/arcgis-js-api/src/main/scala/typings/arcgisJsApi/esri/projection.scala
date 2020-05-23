@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -138,8 +137,4 @@ trait projection extends js.Object {
     geographicTransformation: GeographicTransformation
   ): Geometry_ | js.Array[Geometry_] = js.native
 }
-
-@JSGlobal("__esri.projection")
-@js.native
-object projection extends TopLevel[projection]
 

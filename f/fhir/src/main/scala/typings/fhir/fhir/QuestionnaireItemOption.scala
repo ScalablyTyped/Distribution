@@ -61,7 +61,7 @@ object QuestionnaireItemOption {
     modifierExtension: js.Array[Extension] = null,
     valueCoding: Coding = null,
     valueDate: date = null,
-    valueInteger: Int | Double = null,
+    valueInteger: js.UndefOr[integer] = js.undefined,
     valueString: String = null,
     valueTime: time = null
   ): QuestionnaireItemOption = {
@@ -78,7 +78,7 @@ object QuestionnaireItemOption {
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (valueCoding != null) __obj.updateDynamic("valueCoding")(valueCoding.asInstanceOf[js.Any])
     if (valueDate != null) __obj.updateDynamic("valueDate")(valueDate.asInstanceOf[js.Any])
-    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
     if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
     if (valueTime != null) __obj.updateDynamic("valueTime")(valueTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestionnaireItemOption]

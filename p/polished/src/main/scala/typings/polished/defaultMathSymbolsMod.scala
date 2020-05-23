@@ -1,5 +1,6 @@
 package typings.polished
 
+import typings.polished.anon._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 object defaultMathSymbolsMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var symbols: Anon = js.native
+    var symbols: _empty = js.native
   }
   
 }

@@ -7,51 +7,52 @@ import scala.scalajs.js.annotation._
 /**
   * Serves as the base type for all the objects included in the client-side object model.
   */
-@JSGlobal("ASPxClientControl")
-@js.native
-class ASPxClientControl () extends ASPxClientControlBase {
+trait ASPxClientControl extends ASPxClientControlBase {
   /**
     * Modifies the control's size against the control's container.
     */
-  def AdjustControl(): Unit = js.native
+  def AdjustControl(): Unit
   /**
     * Returns the control's height.
     */
-  def GetHeight(): Double = js.native
+  def GetHeight(): Double
   /**
     * Returns the control's width.
     */
-  def GetWidth(): Double = js.native
+  def GetWidth(): Double
   /**
     * Specifies the control's height.  Note that this method is not in effect for some controls.
     * @param height An integer value that specifies the control's height.
     */
-  def SetHeight(height: Double): Unit = js.native
+  def SetHeight(height: Double): Unit
   /**
     * Specifies the control's width in pixels.
     * @param width An integer value that specifies the control's width, in pixels.
     */
-  def SetWidth(width: Double): Unit = js.native
+  def SetWidth(width: Double): Unit
 }
 
-/* static members */
-@JSGlobal("ASPxClientControl")
-@js.native
-object ASPxClientControl extends js.Object {
-  /**
-    * Modifies the controls size within the specified container.
-    * @param container An HTML element that is the container of the controls.
-    */
-  def AdjustControls(): Unit = js.native
-  def AdjustControls(container: js.Any): Unit = js.native
-  /**
-    * Converts the specified object to the current object's type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientControl = js.native
-  /**
-    * Returns a collection of client web control objects.
-    */
-  def GetControlCollection(): ASPxClientControlCollection = js.native
+object ASPxClientControl {
+  @scala.inline
+  def apply(
+    AdjustControl: () => Unit,
+    GetClientVisible: () => Boolean,
+    GetHeight: () => Double,
+    GetMainElement: () => js.Any,
+    GetParentControl: () => js.Any,
+    GetVisible: () => Boolean,
+    GetWidth: () => Double,
+    InCallback: () => Boolean,
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: String => Unit,
+    SetClientVisible: Boolean => Unit,
+    SetHeight: Double => Unit,
+    SetVisible: Boolean => Unit,
+    SetWidth: Double => Unit,
+    name: String
+  ): ASPxClientControl = {
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init.asInstanceOf[js.Any], SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientControl]
+  }
 }
 

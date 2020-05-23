@@ -29,12 +29,12 @@ object ListImagePipelineImagesRequest {
   def apply(
     imagePipelineArn: ImagePipelineArn,
     filters: FilterList = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[RestrictedInteger] = js.undefined,
     nextToken: NonEmptyString = null
   ): ListImagePipelineImagesRequest = {
     val __obj = js.Dynamic.literal(imagePipelineArn = imagePipelineArn.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListImagePipelineImagesRequest]
   }

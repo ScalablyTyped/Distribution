@@ -26,29 +26,29 @@ object Options {
   @scala.inline
   def apply(
     associatedData: Buffer = null,
-    hashLength: Int | Double = null,
-    memoryCost: Int | Double = null,
-    parallelism: Int | Double = null,
+    hashLength: js.UndefOr[Double] = js.undefined,
+    memoryCost: js.UndefOr[Double] = js.undefined,
+    parallelism: js.UndefOr[Double] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
     salt: Buffer = null,
-    saltLength: Int | Double = null,
+    saltLength: js.UndefOr[Double] = js.undefined,
     secret: Buffer = null,
-    timeCost: Int | Double = null,
+    timeCost: js.UndefOr[Double] = js.undefined,
     `type`: `0` | `1` | `2` = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (associatedData != null) __obj.updateDynamic("associatedData")(associatedData.asInstanceOf[js.Any])
-    if (hashLength != null) __obj.updateDynamic("hashLength")(hashLength.asInstanceOf[js.Any])
-    if (memoryCost != null) __obj.updateDynamic("memoryCost")(memoryCost.asInstanceOf[js.Any])
-    if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashLength)) __obj.updateDynamic("hashLength")(hashLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryCost)) __obj.updateDynamic("memoryCost")(memoryCost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallelism)) __obj.updateDynamic("parallelism")(parallelism.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
-    if (saltLength != null) __obj.updateDynamic("saltLength")(saltLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(saltLength)) __obj.updateDynamic("saltLength")(saltLength.get.asInstanceOf[js.Any])
     if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (timeCost != null) __obj.updateDynamic("timeCost")(timeCost.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeCost)) __obj.updateDynamic("timeCost")(timeCost.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

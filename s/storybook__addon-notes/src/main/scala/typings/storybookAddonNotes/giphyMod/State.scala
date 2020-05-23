@@ -11,8 +11,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(src: String = null): State = {
-    val __obj = js.Dynamic.literal()
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

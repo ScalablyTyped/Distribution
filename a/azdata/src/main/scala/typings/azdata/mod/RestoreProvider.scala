@@ -20,10 +20,10 @@ object RestoreProvider {
     getRestorePlan: (String, RestoreInfo) => Thenable[RestorePlanResponse],
     providerId: String,
     restore: (String, RestoreInfo) => Thenable[RestoreResponse],
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): RestoreProvider = {
     val __obj = js.Dynamic.literal(cancelRestorePlan = js.Any.fromFunction2(cancelRestorePlan), getRestoreConfigInfo = js.Any.fromFunction1(getRestoreConfigInfo), getRestorePlan = js.Any.fromFunction2(getRestorePlan), providerId = providerId.asInstanceOf[js.Any], restore = js.Any.fromFunction2(restore))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreProvider]
   }
 }

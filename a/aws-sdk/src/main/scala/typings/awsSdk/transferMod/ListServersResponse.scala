@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListServersResponse extends js.Object {
   /**
-    * When you can get additional results from the ListServers operation, a NextToken parameter is returned in the output. In a following command, you can pass in the NextToken parameter to continue listing additional servers.
+    * When you can get additional results from the ListServers operation, a NextToken parameter is returned in the output. In a following command, you can pass in the NextToken parameter to continue listing additional file transfer protocol-enabled servers.
     */
   var NextToken: js.UndefOr[typings.awsSdk.transferMod.NextToken] = js.native
   /**
-    * An array of servers that were listed.
+    * An array of file transfer protocol-enabled servers that were listed.
     */
   var Servers: ListedServers = js.native
 }

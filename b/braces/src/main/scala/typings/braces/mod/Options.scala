@@ -92,21 +92,21 @@ object Options {
   @scala.inline
   def apply(
     expand: js.UndefOr[Boolean] = js.undefined,
-    maxLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
     nodupes: js.UndefOr[Boolean] = js.undefined,
     quantifiers: js.UndefOr[Boolean] = js.undefined,
-    rangeLimit: Int | Double = null,
+    rangeLimit: js.UndefOr[Double] = js.undefined,
     transform: /* str */ String => String = null,
     unescape: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodupes)) __obj.updateDynamic("nodupes")(nodupes.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantifiers)) __obj.updateDynamic("quantifiers")(quantifiers.asInstanceOf[js.Any])
-    if (rangeLimit != null) __obj.updateDynamic("rangeLimit")(rangeLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodupes)) __obj.updateDynamic("nodupes")(nodupes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantifiers)) __obj.updateDynamic("quantifiers")(quantifiers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeLimit)) __obj.updateDynamic("rangeLimit")(rangeLimit.get.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
-    if (!js.isUndefined(unescape)) __obj.updateDynamic("unescape")(unescape.asInstanceOf[js.Any])
+    if (!js.isUndefined(unescape)) __obj.updateDynamic("unescape")(unescape.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

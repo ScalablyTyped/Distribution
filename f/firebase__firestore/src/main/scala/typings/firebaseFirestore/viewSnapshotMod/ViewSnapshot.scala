@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/view_snapshot", "ViewSnapshot")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/view_snapshot", "ViewSnapshot")
 @js.native
 class ViewSnapshot protected () extends js.Object {
   def this(
@@ -28,12 +28,12 @@ class ViewSnapshot protected () extends js.Object {
   val oldDocs: DocumentSet = js.native
   val query: Query = js.native
   val syncStateChanged: Boolean = js.native
-  def hasPendingWrites(): Boolean = js.native
+  def hasPendingWrites: Boolean = js.native
   def isEqual(other: ViewSnapshot): Boolean = js.native
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/core/view_snapshot", "ViewSnapshot")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/view_snapshot", "ViewSnapshot")
 @js.native
 object ViewSnapshot extends js.Object {
   /** Returns a view snapshot as if all documents in the snapshot were added. */

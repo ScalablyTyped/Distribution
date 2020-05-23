@@ -35,13 +35,13 @@ object DashPackage {
     DashManifests: listOfDashManifest,
     Encryption: DashEncryption = null,
     PeriodTriggers: listOfPeriodTriggersElement = null,
-    SegmentDurationSeconds: Int | Double = null,
+    SegmentDurationSeconds: js.UndefOr[integer] = js.undefined,
     SegmentTemplateFormat: SegmentTemplateFormat = null
   ): DashPackage = {
     val __obj = js.Dynamic.literal(DashManifests = DashManifests.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
     if (PeriodTriggers != null) __obj.updateDynamic("PeriodTriggers")(PeriodTriggers.asInstanceOf[js.Any])
-    if (SegmentDurationSeconds != null) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.get.asInstanceOf[js.Any])
     if (SegmentTemplateFormat != null) __obj.updateDynamic("SegmentTemplateFormat")(SegmentTemplateFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashPackage]
   }

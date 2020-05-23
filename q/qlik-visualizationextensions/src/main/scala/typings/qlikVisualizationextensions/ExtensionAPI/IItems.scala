@@ -18,7 +18,7 @@ object IItems {
   @scala.inline
   def apply(
     AddOns: IAddOns = null,
-    StringDictionary: /* other */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     appearance: IAppearance = null,
     dimentions: IDimensions = null,
     measures: IMeasures = null,

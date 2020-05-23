@@ -1,10 +1,10 @@
 package typings.nodeHueApi.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nodeHueApi.AnonCheckforupdate
-import typings.nodeHueApi.AnonCommunication
-import typings.nodeHueApi.AnonCreatedate
-import typings.nodeHueApi.AnonErrorcode
+import typings.nodeHueApi.anon.Checkforupdate
+import typings.nodeHueApi.anon.Communication
+import typings.nodeHueApi.anon.Createdate
+import typings.nodeHueApi.anon.Errorcode
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait IBridgeConfig extends js.Object {
   var UTC: Date
   var apiversion: String
-  var backup: AnonErrorcode
+  var backup: Errorcode
   var bridgeid: String
   var dhcp: Boolean
   var factorynew: Boolean
@@ -27,14 +27,14 @@ trait IBridgeConfig extends js.Object {
   var netmask: String
   var portalconnection: String
   var portalservices: Boolean
-  var portalstate: AnonCommunication
+  var portalstate: Communication
   var proxyaddress: String
   var proxyport: Double
   var replacesbridgeid: js.UndefOr[String] = js.undefined
-  var swupdate: AnonCheckforupdate
+  var swupdate: Checkforupdate
   var swversion: String
   var timezone: String
-  var whitelist: StringDictionary[AnonCreatedate]
+  var whitelist: StringDictionary[Createdate]
   var zigbeechannel: Double
 }
 
@@ -43,7 +43,7 @@ object IBridgeConfig {
   def apply(
     UTC: Date,
     apiversion: String,
-    backup: AnonErrorcode,
+    backup: Errorcode,
     bridgeid: String,
     dhcp: Boolean,
     factorynew: Boolean,
@@ -57,13 +57,13 @@ object IBridgeConfig {
     netmask: String,
     portalconnection: String,
     portalservices: Boolean,
-    portalstate: AnonCommunication,
+    portalstate: Communication,
     proxyaddress: String,
     proxyport: Double,
-    swupdate: AnonCheckforupdate,
+    swupdate: Checkforupdate,
     swversion: String,
     timezone: String,
-    whitelist: StringDictionary[AnonCreatedate],
+    whitelist: StringDictionary[Createdate],
     zigbeechannel: Double,
     replacesbridgeid: String = null
   ): IBridgeConfig = {

@@ -1,9 +1,9 @@
 package typings.antDesignReactNative.pickerMod
 
-import typings.antDesignReactNative.AnonCascader
+import typings.antDesignReactNative.anon.Cascader
 import typings.antDesignReactNative.pickerPropsTypeMod.PickerData
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,33 +14,12 @@ trait Picker
   var scrollValue: js.Any = js.native
   def fixOnOk(cascader: js.Any): Unit = js.native
   def getCascade(
-    cascade: js.UndefOr[scala.Nothing],
+    cascade: js.UndefOr[Boolean],
     data: js.Array[js.Array[PickerData] | PickerData],
-    cols: js.UndefOr[scala.Nothing],
+    cols: js.UndefOr[Double],
     itemStyle: js.Any,
     indicatorStyle: js.Any
-  ): AnonCascader = js.native
-  def getCascade(
-    cascade: js.UndefOr[scala.Nothing],
-    data: js.Array[js.Array[PickerData] | PickerData],
-    cols: Double,
-    itemStyle: js.Any,
-    indicatorStyle: js.Any
-  ): AnonCascader = js.native
-  def getCascade(
-    cascade: Boolean,
-    data: js.Array[js.Array[PickerData] | PickerData],
-    cols: js.UndefOr[scala.Nothing],
-    itemStyle: js.Any,
-    indicatorStyle: js.Any
-  ): AnonCascader = js.native
-  def getCascade(
-    cascade: Boolean,
-    data: js.Array[js.Array[PickerData] | PickerData],
-    cols: Double,
-    itemStyle: js.Any,
-    indicatorStyle: js.Any
-  ): AnonCascader = js.native
+  ): Cascader = js.native
   def getPickerCol(): js.Array[Element] = js.native
   def getSel(): js.UndefOr[String] = js.native
   def onOk(v: js.Any): Unit = js.native

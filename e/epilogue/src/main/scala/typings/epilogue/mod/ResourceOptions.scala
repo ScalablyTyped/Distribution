@@ -1,6 +1,6 @@
 package typings.epilogue.mod
 
-import typings.epilogue.AnonModel
+import typings.epilogue.anon.Model
 import typings.sequelize.mod.AssociationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait ResourceOptions extends js.Object {
   var associations: js.UndefOr[AssociationOptions] = js.undefined
   var endpoints: js.Array[String]
   var excludeAttributes: js.UndefOr[js.Array[String]] = js.undefined
-  var include: js.UndefOr[js.Array[AnonModel | String]] = js.undefined
+  var include: js.UndefOr[js.Array[Model | String]] = js.undefined
   var model: js.Any
   var pagination: js.UndefOr[Boolean] = js.undefined
   var readOnlyAttributes: js.UndefOr[js.Array[String]] = js.undefined
@@ -29,7 +29,7 @@ object ResourceOptions {
     actions: js.Array[String] = null,
     associations: AssociationOptions = null,
     excludeAttributes: js.Array[String] = null,
-    include: js.Array[AnonModel | String] = null,
+    include: js.Array[Model | String] = null,
     pagination: js.UndefOr[Boolean] = js.undefined,
     readOnlyAttributes: js.Array[String] = null,
     reloadInstances: js.UndefOr[Boolean] = js.undefined,
@@ -42,9 +42,9 @@ object ResourceOptions {
     if (associations != null) __obj.updateDynamic("associations")(associations.asInstanceOf[js.Any])
     if (excludeAttributes != null) __obj.updateDynamic("excludeAttributes")(excludeAttributes.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
     if (readOnlyAttributes != null) __obj.updateDynamic("readOnlyAttributes")(readOnlyAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadInstances)) __obj.updateDynamic("reloadInstances")(reloadInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadInstances)) __obj.updateDynamic("reloadInstances")(reloadInstances.get.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (updateMethod != null) __obj.updateDynamic("updateMethod")(updateMethod.asInstanceOf[js.Any])

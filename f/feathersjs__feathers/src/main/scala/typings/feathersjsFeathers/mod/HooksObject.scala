@@ -1,6 +1,6 @@
 package typings.feathersjsFeathers.mod
 
-import typings.feathersjsFeathers.PartialHookMap
+import typings.feathersjsFeathers.anon.PartialHookMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

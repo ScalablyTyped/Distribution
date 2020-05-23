@@ -5,9 +5,9 @@ import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
+import typings.std.Event
 import typings.std.EventListener
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -31,44 +31,44 @@ trait On extends /* event */ StringDictionary[EventListener] {
   var animationstart: js.UndefOr[js.Function1[/* ev */ AnimationEvent, Unit]] = js.undefined
   var auxclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   var blur: js.UndefOr[js.Function1[/* ev */ FocusEvent, Unit]] = js.undefined
-  var cancel: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var canplay: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var canplaythrough: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var change: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var cancel: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var canplay: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var canplaythrough: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var change: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var click: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
-  var close: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var close: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var contextmenu: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   var copy: js.UndefOr[js.Function1[/* ev */ ClipboardEvent, Unit]] = js.undefined
-  var cuechange: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var cuechange: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var cut: js.UndefOr[js.Function1[/* ev */ ClipboardEvent, Unit]] = js.undefined
   var dblclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   var drag: js.UndefOr[js.Function1[/* ev */ DragEvent, Unit]] = js.undefined
   var dragend: js.UndefOr[js.Function1[/* ev */ DragEvent, Unit]] = js.undefined
   var dragenter: js.UndefOr[js.Function1[/* ev */ DragEvent, Unit]] = js.undefined
-  var dragexit: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var dragexit: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var dragleave: js.UndefOr[js.Function1[/* ev */ DragEvent, Unit]] = js.undefined
   var dragover: js.UndefOr[js.Function1[/* ev */ DragEvent, Unit]] = js.undefined
   var dragstart: js.UndefOr[js.Function1[/* ev */ DragEvent, Unit]] = js.undefined
   var drop: js.UndefOr[js.Function1[/* ev */ DragEvent, Unit]] = js.undefined
-  var durationchange: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var emptied: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var ended: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var durationchange: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var emptied: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var ended: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var error: js.UndefOr[js.Function1[/* ev */ ErrorEvent, Unit]] = js.undefined
   var focus: js.UndefOr[js.Function1[/* ev */ FocusEvent, Unit]] = js.undefined
   var focusin: js.UndefOr[js.Function1[/* ev */ FocusEvent, Unit]] = js.undefined
   var focusout: js.UndefOr[js.Function1[/* ev */ FocusEvent, Unit]] = js.undefined
-  var fullscreenchange: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var fullscreenerror: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var fullscreenchange: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var fullscreenerror: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var gotpointercapture: js.UndefOr[js.Function1[/* ev */ PointerEvent, Unit]] = js.undefined
-  var input: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var invalid: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var input: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var invalid: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var keydown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Unit]] = js.undefined
   var keypress: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Unit]] = js.undefined
   var keyup: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Unit]] = js.undefined
-  var load: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var loadeddata: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var loadedmetadata: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var loadstart: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var loadeddata: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var loadedmetadata: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var loadstart: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var lostpointercapture: js.UndefOr[js.Function1[/* ev */ PointerEvent, Unit]] = js.undefined
   var mousedown: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   var mouseenter: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
@@ -78,9 +78,9 @@ trait On extends /* event */ StringDictionary[EventListener] {
   var mouseover: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   var mouseup: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   var paste: js.UndefOr[js.Function1[/* ev */ ClipboardEvent, Unit]] = js.undefined
-  var pause: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var play: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var playing: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var pause: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var play: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var playing: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var pointercancel: js.UndefOr[js.Function1[/* ev */ PointerEvent, Unit]] = js.undefined
   var pointerdown: js.UndefOr[js.Function1[/* ev */ PointerEvent, Unit]] = js.undefined
   var pointerenter: js.UndefOr[js.Function1[/* ev */ PointerEvent, Unit]] = js.undefined
@@ -90,21 +90,21 @@ trait On extends /* event */ StringDictionary[EventListener] {
   var pointerover: js.UndefOr[js.Function1[/* ev */ PointerEvent, Unit]] = js.undefined
   var pointerup: js.UndefOr[js.Function1[/* ev */ PointerEvent, Unit]] = js.undefined
   var progress: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]] = js.undefined
-  var ratechange: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var reset: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var ratechange: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var reset: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var resize: js.UndefOr[js.Function1[/* ev */ UIEvent, Unit]] = js.undefined
-  var scroll: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var scroll: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var securitypolicyviolation: js.UndefOr[js.Function1[/* ev */ SecurityPolicyViolationEvent, Unit]] = js.undefined
-  var seeked: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var seeking: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var select: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var selectionchange: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var selectstart: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var stalled: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var submit: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var suspend: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var timeupdate: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var toggle: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var seeked: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var seeking: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var select: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var selectionchange: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var selectstart: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var stalled: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var submit: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var suspend: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var timeupdate: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var toggle: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var touchcancel: js.UndefOr[js.Function1[/* ev */ TouchEvent, Unit]] = js.undefined
   var touchend: js.UndefOr[js.Function1[/* ev */ TouchEvent, Unit]] = js.undefined
   var touchmove: js.UndefOr[js.Function1[/* ev */ TouchEvent, Unit]] = js.undefined
@@ -113,8 +113,8 @@ trait On extends /* event */ StringDictionary[EventListener] {
   var transitionend: js.UndefOr[js.Function1[/* ev */ TransitionEvent, Unit]] = js.undefined
   var transitionrun: js.UndefOr[js.Function1[/* ev */ TransitionEvent, Unit]] = js.undefined
   var transitionstart: js.UndefOr[js.Function1[/* ev */ TransitionEvent, Unit]] = js.undefined
-  var volumechange: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
-  var waiting: js.UndefOr[js.Function1[/* ev */ Event_, Unit]] = js.undefined
+  var volumechange: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
+  var waiting: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   var wheel: js.UndefOr[js.Function1[/* ev */ WheelEvent, Unit]] = js.undefined
 }
 
@@ -129,44 +129,44 @@ object On {
     animationstart: /* ev */ AnimationEvent => Unit = null,
     auxclick: /* ev */ MouseEvent => Unit = null,
     blur: /* ev */ FocusEvent => Unit = null,
-    cancel: /* ev */ Event_ => Unit = null,
-    canplay: /* ev */ Event_ => Unit = null,
-    canplaythrough: /* ev */ Event_ => Unit = null,
-    change: /* ev */ Event_ => Unit = null,
+    cancel: /* ev */ Event => Unit = null,
+    canplay: /* ev */ Event => Unit = null,
+    canplaythrough: /* ev */ Event => Unit = null,
+    change: /* ev */ Event => Unit = null,
     click: /* ev */ MouseEvent => Unit = null,
-    close: /* ev */ Event_ => Unit = null,
+    close: /* ev */ Event => Unit = null,
     contextmenu: /* ev */ MouseEvent => Unit = null,
     copy: /* ev */ ClipboardEvent => Unit = null,
-    cuechange: /* ev */ Event_ => Unit = null,
+    cuechange: /* ev */ Event => Unit = null,
     cut: /* ev */ ClipboardEvent => Unit = null,
     dblclick: /* ev */ MouseEvent => Unit = null,
     drag: /* ev */ DragEvent => Unit = null,
     dragend: /* ev */ DragEvent => Unit = null,
     dragenter: /* ev */ DragEvent => Unit = null,
-    dragexit: /* ev */ Event_ => Unit = null,
+    dragexit: /* ev */ Event => Unit = null,
     dragleave: /* ev */ DragEvent => Unit = null,
     dragover: /* ev */ DragEvent => Unit = null,
     dragstart: /* ev */ DragEvent => Unit = null,
     drop: /* ev */ DragEvent => Unit = null,
-    durationchange: /* ev */ Event_ => Unit = null,
-    emptied: /* ev */ Event_ => Unit = null,
-    ended: /* ev */ Event_ => Unit = null,
+    durationchange: /* ev */ Event => Unit = null,
+    emptied: /* ev */ Event => Unit = null,
+    ended: /* ev */ Event => Unit = null,
     error: /* ev */ ErrorEvent => Unit = null,
     focus: /* ev */ FocusEvent => Unit = null,
     focusin: /* ev */ FocusEvent => Unit = null,
     focusout: /* ev */ FocusEvent => Unit = null,
-    fullscreenchange: /* ev */ Event_ => Unit = null,
-    fullscreenerror: /* ev */ Event_ => Unit = null,
+    fullscreenchange: /* ev */ Event => Unit = null,
+    fullscreenerror: /* ev */ Event => Unit = null,
     gotpointercapture: /* ev */ PointerEvent => Unit = null,
-    input: /* ev */ Event_ => Unit = null,
-    invalid: /* ev */ Event_ => Unit = null,
+    input: /* ev */ Event => Unit = null,
+    invalid: /* ev */ Event => Unit = null,
     keydown: /* ev */ KeyboardEvent => Unit = null,
     keypress: /* ev */ KeyboardEvent => Unit = null,
     keyup: /* ev */ KeyboardEvent => Unit = null,
-    load: /* ev */ Event_ => Unit = null,
-    loadeddata: /* ev */ Event_ => Unit = null,
-    loadedmetadata: /* ev */ Event_ => Unit = null,
-    loadstart: /* ev */ Event_ => Unit = null,
+    load: /* ev */ Event => Unit = null,
+    loadeddata: /* ev */ Event => Unit = null,
+    loadedmetadata: /* ev */ Event => Unit = null,
+    loadstart: /* ev */ Event => Unit = null,
     lostpointercapture: /* ev */ PointerEvent => Unit = null,
     mousedown: /* ev */ MouseEvent => Unit = null,
     mouseenter: /* ev */ MouseEvent => Unit = null,
@@ -176,9 +176,9 @@ object On {
     mouseover: /* ev */ MouseEvent => Unit = null,
     mouseup: /* ev */ MouseEvent => Unit = null,
     paste: /* ev */ ClipboardEvent => Unit = null,
-    pause: /* ev */ Event_ => Unit = null,
-    play: /* ev */ Event_ => Unit = null,
-    playing: /* ev */ Event_ => Unit = null,
+    pause: /* ev */ Event => Unit = null,
+    play: /* ev */ Event => Unit = null,
+    playing: /* ev */ Event => Unit = null,
     pointercancel: /* ev */ PointerEvent => Unit = null,
     pointerdown: /* ev */ PointerEvent => Unit = null,
     pointerenter: /* ev */ PointerEvent => Unit = null,
@@ -188,21 +188,21 @@ object On {
     pointerover: /* ev */ PointerEvent => Unit = null,
     pointerup: /* ev */ PointerEvent => Unit = null,
     progress: /* ev */ ProgressEvent[EventTarget] => Unit = null,
-    ratechange: /* ev */ Event_ => Unit = null,
-    reset: /* ev */ Event_ => Unit = null,
+    ratechange: /* ev */ Event => Unit = null,
+    reset: /* ev */ Event => Unit = null,
     resize: /* ev */ UIEvent => Unit = null,
-    scroll: /* ev */ Event_ => Unit = null,
+    scroll: /* ev */ Event => Unit = null,
     securitypolicyviolation: /* ev */ SecurityPolicyViolationEvent => Unit = null,
-    seeked: /* ev */ Event_ => Unit = null,
-    seeking: /* ev */ Event_ => Unit = null,
-    select: /* ev */ Event_ => Unit = null,
-    selectionchange: /* ev */ Event_ => Unit = null,
-    selectstart: /* ev */ Event_ => Unit = null,
-    stalled: /* ev */ Event_ => Unit = null,
-    submit: /* ev */ Event_ => Unit = null,
-    suspend: /* ev */ Event_ => Unit = null,
-    timeupdate: /* ev */ Event_ => Unit = null,
-    toggle: /* ev */ Event_ => Unit = null,
+    seeked: /* ev */ Event => Unit = null,
+    seeking: /* ev */ Event => Unit = null,
+    select: /* ev */ Event => Unit = null,
+    selectionchange: /* ev */ Event => Unit = null,
+    selectstart: /* ev */ Event => Unit = null,
+    stalled: /* ev */ Event => Unit = null,
+    submit: /* ev */ Event => Unit = null,
+    suspend: /* ev */ Event => Unit = null,
+    timeupdate: /* ev */ Event => Unit = null,
+    toggle: /* ev */ Event => Unit = null,
     touchcancel: /* ev */ TouchEvent => Unit = null,
     touchend: /* ev */ TouchEvent => Unit = null,
     touchmove: /* ev */ TouchEvent => Unit = null,
@@ -211,8 +211,8 @@ object On {
     transitionend: /* ev */ TransitionEvent => Unit = null,
     transitionrun: /* ev */ TransitionEvent => Unit = null,
     transitionstart: /* ev */ TransitionEvent => Unit = null,
-    volumechange: /* ev */ Event_ => Unit = null,
-    waiting: /* ev */ Event_ => Unit = null,
+    volumechange: /* ev */ Event => Unit = null,
+    waiting: /* ev */ Event => Unit = null,
     wheel: /* ev */ WheelEvent => Unit = null
   ): On = {
     val __obj = js.Dynamic.literal()

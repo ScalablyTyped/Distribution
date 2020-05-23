@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object TrackingStateReasons
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TrackingStateReason */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlaneDetection */ js.Any
     ]
 

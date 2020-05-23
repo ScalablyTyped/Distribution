@@ -72,7 +72,7 @@ trait Data extends js.Object {
   /**
     * Parse a HTML table
     */
-  def parseTable(): js.UndefOr[js.Array[js.Array[DataValueType]]] = js.native
+  def parseTable(): js.Array[js.Array[DataValueType]] = js.native
   /**
     * Parse numeric cells in to number types and date types in to true
     * dates.
@@ -85,7 +85,7 @@ trait Data extends js.Object {
   /**
     * Reorganize rows into columns.
     */
-  def rowsToColumns(rows: js.Array[js.Array[Double | String]]): js.Array[js.Array[Double | String]] = js.native
+  def rowsToColumns(rows: js.Array[js.Array[DataValueType]]): js.UndefOr[js.Array[js.Array[DataValueType]]] = js.native
   /**
     * Trim a string from whitespaces.
     *

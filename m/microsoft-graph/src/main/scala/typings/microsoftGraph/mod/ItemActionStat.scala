@@ -13,10 +13,10 @@ trait ItemActionStat extends js.Object {
 
 object ItemActionStat {
   @scala.inline
-  def apply(actionCount: Int | Double = null, actorCount: Int | Double = null): ItemActionStat = {
+  def apply(actionCount: js.UndefOr[Double] = js.undefined, actorCount: js.UndefOr[Double] = js.undefined): ItemActionStat = {
     val __obj = js.Dynamic.literal()
-    if (actionCount != null) __obj.updateDynamic("actionCount")(actionCount.asInstanceOf[js.Any])
-    if (actorCount != null) __obj.updateDynamic("actorCount")(actorCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionCount)) __obj.updateDynamic("actionCount")(actionCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(actorCount)) __obj.updateDynamic("actorCount")(actorCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemActionStat]
   }
 }

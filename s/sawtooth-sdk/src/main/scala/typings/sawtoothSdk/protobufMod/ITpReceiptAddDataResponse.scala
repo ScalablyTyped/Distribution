@@ -12,9 +12,9 @@ trait ITpReceiptAddDataResponse extends js.Object {
 
 object ITpReceiptAddDataResponse {
   @scala.inline
-  def apply(status: Status = null): ITpReceiptAddDataResponse = {
+  def apply(status: js.UndefOr[Null | Status] = js.undefined): ITpReceiptAddDataResponse = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpReceiptAddDataResponse]
   }
 }

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait Presentation extends Accessor {
     */
   var slides: Collection[Slide] = js.native
 }
-
-@JSGlobal("__esri.Presentation")
-@js.native
-object Presentation extends TopLevel[PresentationConstructor]
 

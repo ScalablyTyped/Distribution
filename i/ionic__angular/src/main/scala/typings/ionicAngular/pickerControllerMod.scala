@@ -1,7 +1,7 @@
 package typings.ionicAngular
 
 import typings.ionicAngular.overlayMod.OverlayBaseController
-import typings.ionicCore.componentsMod._Global_.HTMLIonPickerElement
+import typings.ionicCore.componentsMod.global.HTMLIonPickerElement
 import typings.ionicCore.pickerInterfaceMod.PickerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

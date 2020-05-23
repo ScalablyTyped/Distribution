@@ -1,8 +1,8 @@
 package typings.firmata.mod
 
-import typings.firmata.AnonAddress
-import typings.firmata.AnonBaud
-import typings.firmata.AnonDelay
+import typings.firmata.anon.Address
+import typings.firmata.anon.Baud
+import typings.firmata.anon.Delay
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
@@ -53,7 +53,7 @@ trait Board extends EventEmitter {
   def getSamplingInterval(): Double = js.native
   // TODO untested --- TWW
   def i2cConfig(options: Double): Unit = js.native
-  def i2cConfig(options: AnonDelay): Unit = js.native
+  def i2cConfig(options: Delay): Unit = js.native
   def i2cRead(address: Double, bytesToRead: Double, callback: js.Function1[/* data */ js.Array[Double], Unit]): Unit = js.native
   // TODO untested --- TWW
   def i2cRead(
@@ -72,7 +72,7 @@ trait Board extends EventEmitter {
   ): Unit = js.native
   // TODO untested --- TWW
   def i2cStop(options: Double): Unit = js.native
-  def i2cStop(options: AnonAddress): Unit = js.native
+  def i2cStop(options: Address): Unit = js.native
   def i2cWrite(address: Double, data: js.Array[Double]): Unit = js.native
   // TODO untested --- TWW
   def i2cWrite(address: Double, register: Double, inBytes: js.Array[Double]): Unit = js.native
@@ -131,7 +131,7 @@ trait Board extends EventEmitter {
   // TODO untested --- TWW
   def serialClose(portId: SERIAL_PORT_ID): Unit = js.native
   // TODO untested --- TWW
-  def serialConfig(options: AnonBaud): Unit = js.native
+  def serialConfig(options: Baud): Unit = js.native
   // TODO untested --- TWW
   def serialFlush(portId: SERIAL_PORT_ID): Unit = js.native
   // TODO untested --- TWW

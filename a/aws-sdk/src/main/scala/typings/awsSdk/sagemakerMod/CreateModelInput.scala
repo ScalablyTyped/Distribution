@@ -42,14 +42,14 @@ object CreateModelInput {
     ExecutionRoleArn: RoleArn,
     ModelName: ModelName,
     Containers: ContainerDefinitionList = null,
-    EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
     PrimaryContainer: ContainerDefinition = null,
     Tags: TagList = null,
     VpcConfig: VpcConfig = null
   ): CreateModelInput = {
     val __obj = js.Dynamic.literal(ExecutionRoleArn = ExecutionRoleArn.asInstanceOf[js.Any], ModelName = ModelName.asInstanceOf[js.Any])
     if (Containers != null) __obj.updateDynamic("Containers")(Containers.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.get.asInstanceOf[js.Any])
     if (PrimaryContainer != null) __obj.updateDynamic("PrimaryContainer")(PrimaryContainer.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])

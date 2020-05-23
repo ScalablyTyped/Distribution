@@ -120,10 +120,10 @@ object AuthoringInfoProperties {
     fields: js.Array[String] = null,
     focus: String = null,
     lengthUnit: inches | feet_ | yards | miles_ | `nautical-miles` | millimeters | centimeters | decimeters | meters_ | kilometers_ | `decimal-degrees` = null,
-    maxSliderValue: Int | Double = null,
-    minSliderValue: Int | Double = null,
-    numClasses: Int | Double = null,
-    standardDeviationInterval: Int | Double = null,
+    maxSliderValue: js.UndefOr[Double] = js.undefined,
+    minSliderValue: js.UndefOr[Double] = js.undefined,
+    numClasses: js.UndefOr[Double] = js.undefined,
+    standardDeviationInterval: js.UndefOr[Double] = js.undefined,
     `type`: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size` = null,
     visualVariables: js.Array[AuthoringInfoVisualVariableProperties] = null
   ): AuthoringInfoProperties = {
@@ -135,10 +135,10 @@ object AuthoringInfoProperties {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
     if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
-    if (maxSliderValue != null) __obj.updateDynamic("maxSliderValue")(maxSliderValue.asInstanceOf[js.Any])
-    if (minSliderValue != null) __obj.updateDynamic("minSliderValue")(minSliderValue.asInstanceOf[js.Any])
-    if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
-    if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSliderValue)) __obj.updateDynamic("maxSliderValue")(maxSliderValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSliderValue)) __obj.updateDynamic("minSliderValue")(minSliderValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numClasses)) __obj.updateDynamic("numClasses")(numClasses.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardDeviationInterval)) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthoringInfoProperties]

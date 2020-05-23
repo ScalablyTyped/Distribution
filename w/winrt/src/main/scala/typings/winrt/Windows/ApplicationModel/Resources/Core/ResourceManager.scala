@@ -7,26 +7,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceManager")
-@js.native
-class ResourceManager () extends IResourceManager {
-  /* CompleteClass */
-  override var allResourceMaps: IMapView[String, ResourceMap] = js.native
-  /* CompleteClass */
-  override var defaultContext: ResourceContext = js.native
-  /* CompleteClass */
-  override var mainResourceMap: ResourceMap = js.native
-  /* CompleteClass */
-  override def loadPriFiles(files: IIterable[IStorageFile]): Unit = js.native
-  /* CompleteClass */
-  override def unloadPriFiles(files: IIterable[IStorageFile]): Unit = js.native
-}
+trait ResourceManager extends IResourceManager
 
-/* static members */
-@JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceManager")
-@js.native
-object ResourceManager extends js.Object {
-  var current: ResourceManager = js.native
-  def isResourceReference(resourceReference: String): Boolean = js.native
+object ResourceManager {
+  @scala.inline
+  def apply(
+    allResourceMaps: IMapView[String, ResourceMap],
+    defaultContext: ResourceContext,
+    loadPriFiles: IIterable[IStorageFile] => Unit,
+    mainResourceMap: ResourceMap,
+    unloadPriFiles: IIterable[IStorageFile] => Unit
+  ): ResourceManager = {
+    val __obj = js.Dynamic.literal(allResourceMaps = allResourceMaps.asInstanceOf[js.Any], defaultContext = defaultContext.asInstanceOf[js.Any], loadPriFiles = js.Any.fromFunction1(loadPriFiles), mainResourceMap = mainResourceMap.asInstanceOf[js.Any], unloadPriFiles = js.Any.fromFunction1(unloadPriFiles))
+    __obj.asInstanceOf[ResourceManager]
+  }
 }
 

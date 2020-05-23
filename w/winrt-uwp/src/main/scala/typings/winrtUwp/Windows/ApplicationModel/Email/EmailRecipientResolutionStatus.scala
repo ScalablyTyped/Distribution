@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object EmailRecipientResolutionStatus extends js.Object {
   /** Resolution failed for unknown reason. */
   @js.native
   sealed trait unknownFailure extends EmailRecipientResolutionStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailRecipientResolutionStatus with Double] = js.native
-  /* 2 */ @js.native
-  object ambiguousRecipient extends TopLevel[ambiguousRecipient with Double]
-  
-  /* 5 */ @js.native
-  object cannotResolveDistributionList extends TopLevel[cannotResolveDistributionList with Double]
-  
-  /* 4 */ @js.native
-  object certificateRequestLimitReached extends TopLevel[certificateRequestLimitReached with Double]
-  
-  /* 3 */ @js.native
-  object noCertificate extends TopLevel[noCertificate with Double]
-  
-  /* 1 */ @js.native
-  object recipientNotFound extends TopLevel[recipientNotFound with Double]
-  
-  /* 6 */ @js.native
-  object serverError extends TopLevel[serverError with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 7 */ @js.native
-  object unknownFailure extends TopLevel[unknownFailure with Double]
   
 }
 

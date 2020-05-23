@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Consola protected () extends js.Object {
   def this(options: ConsolaOptions) = this()
-  var level: Double = js.native
+  var level: LogLevel = js.native
   val stderr: js.Any = js.native
   val stdout: js.Any = js.native
   // Reporter

@@ -66,11 +66,11 @@ object GoogleActionsV2AppResponse {
     val __obj = js.Dynamic.literal()
     if (conversationToken != null) __obj.updateDynamic("conversationToken")(conversationToken.asInstanceOf[js.Any])
     if (customPushMessage != null) __obj.updateDynamic("customPushMessage")(customPushMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(expectUserResponse)) __obj.updateDynamic("expectUserResponse")(expectUserResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectUserResponse)) __obj.updateDynamic("expectUserResponse")(expectUserResponse.get.asInstanceOf[js.Any])
     if (expectedInputs != null) __obj.updateDynamic("expectedInputs")(expectedInputs.asInstanceOf[js.Any])
     if (finalResponse != null) __obj.updateDynamic("finalResponse")(finalResponse.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInSandbox)) __obj.updateDynamic("isInSandbox")(isInSandbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetUserStorage)) __obj.updateDynamic("resetUserStorage")(resetUserStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInSandbox)) __obj.updateDynamic("isInSandbox")(isInSandbox.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetUserStorage)) __obj.updateDynamic("resetUserStorage")(resetUserStorage.get.asInstanceOf[js.Any])
     if (userStorage != null) __obj.updateDynamic("userStorage")(userStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2AppResponse]
   }

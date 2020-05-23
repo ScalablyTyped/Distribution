@@ -22,7 +22,7 @@ object BindingOptions {
   ): BindingOptions = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction0(before))
-    if (!js.isUndefined(disableCache)) __obj.updateDynamic("disableCache")(disableCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCache)) __obj.updateDynamic("disableCache")(disableCache.get.asInstanceOf[js.Any])
     if (fragmentReplacements != null) __obj.updateDynamic("fragmentReplacements")(fragmentReplacements.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingOptions]
   }

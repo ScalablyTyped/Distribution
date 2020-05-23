@@ -18,18 +18,18 @@ object RetrievalOptions {
   def apply(
     exprs: AnyObject[String] = null,
     fields: js.Array[String] = null,
-    limit: Int | Double = null,
-    offset: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
     order: js.Array[OrderingOptions] = null,
-    pageLength: Int | Double = null
+    pageLength: js.UndefOr[Double] = js.undefined
   ): RetrievalOptions = {
     val __obj = js.Dynamic.literal()
     if (exprs != null) __obj.updateDynamic("exprs")(exprs.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (pageLength != null) __obj.updateDynamic("pageLength")(pageLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageLength)) __obj.updateDynamic("pageLength")(pageLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrievalOptions]
   }
 }

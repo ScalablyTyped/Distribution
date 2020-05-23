@@ -4,17 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.AutoCaption")
-@js.native
-class AutoCaption protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  var AutoInsert: Boolean = js.native
-  var CaptionLabel: js.Any = js.native
-  val Creator: Double = js.native
-  val Index: Double = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
+trait AutoCaption extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  var AutoInsert: Boolean
+  var CaptionLabel: js.Any
+  val Creator: Double
+  val Index: Double
+  val Name: String
+  val Parent: js.Any
   @JSName("Word.AutoCaption_typekey")
-  var WordDotAutoCaption_typekey: AutoCaption = js.native
+  var WordDotAutoCaption_typekey: AutoCaption
+}
+
+object AutoCaption {
+  @scala.inline
+  def apply(
+    Application: Application,
+    AutoInsert: Boolean,
+    CaptionLabel: js.Any,
+    Creator: Double,
+    Index: Double,
+    Name: String,
+    Parent: js.Any,
+    WordDotAutoCaption_typekey: AutoCaption
+  ): AutoCaption = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoInsert = AutoInsert.asInstanceOf[js.Any], CaptionLabel = CaptionLabel.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.AutoCaption_typekey")(WordDotAutoCaption_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AutoCaption]
+  }
 }
 

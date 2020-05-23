@@ -41,19 +41,19 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (attrKey != null) __obj.updateDynamic("attrKey")(attrKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(attrsAsObject)) __obj.updateDynamic("attrsAsObject")(attrsAsObject.asInstanceOf[js.Any])
+    if (!js.isUndefined(attrsAsObject)) __obj.updateDynamic("attrsAsObject")(attrsAsObject.get.asInstanceOf[js.Any])
     if (cdataKey != null) __obj.updateDynamic("cdataKey")(cdataKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(childrenAsArray)) __obj.updateDynamic("childrenAsArray")(childrenAsArray.asInstanceOf[js.Any])
-    if (!js.isUndefined(grokAttr)) __obj.updateDynamic("grokAttr")(grokAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(grokText)) __obj.updateDynamic("grokText")(grokText.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeCDATA)) __obj.updateDynamic("mergeCDATA")(mergeCDATA.asInstanceOf[js.Any])
+    if (!js.isUndefined(childrenAsArray)) __obj.updateDynamic("childrenAsArray")(childrenAsArray.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(grokAttr)) __obj.updateDynamic("grokAttr")(grokAttr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(grokText)) __obj.updateDynamic("grokText")(grokText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeCDATA)) __obj.updateDynamic("mergeCDATA")(mergeCDATA.get.asInstanceOf[js.Any])
     if (namespaceKey != null) __obj.updateDynamic("namespaceKey")(namespaceKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripAttrPrefix)) __obj.updateDynamic("stripAttrPrefix")(stripAttrPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripElemPrefix)) __obj.updateDynamic("stripElemPrefix")(stripElemPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripAttrPrefix)) __obj.updateDynamic("stripAttrPrefix")(stripAttrPrefix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripElemPrefix)) __obj.updateDynamic("stripElemPrefix")(stripElemPrefix.get.asInstanceOf[js.Any])
     if (textKey != null) __obj.updateDynamic("textKey")(textKey.asInstanceOf[js.Any])
     if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(xmlns)) __obj.updateDynamic("xmlns")(xmlns.asInstanceOf[js.Any])
+    if (!js.isUndefined(xmlns)) __obj.updateDynamic("xmlns")(xmlns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

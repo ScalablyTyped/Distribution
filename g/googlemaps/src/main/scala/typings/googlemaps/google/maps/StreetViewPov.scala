@@ -11,10 +11,10 @@ trait StreetViewPov extends js.Object {
 
 object StreetViewPov {
   @scala.inline
-  def apply(heading: Int | Double = null, pitch: Int | Double = null): StreetViewPov = {
+  def apply(heading: js.UndefOr[Double] = js.undefined, pitch: js.UndefOr[Double] = js.undefined): StreetViewPov = {
     val __obj = js.Dynamic.literal()
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreetViewPov]
   }
 }

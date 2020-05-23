@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.FITTING_BOTH
-  * @description Apply both STRETCH and SHRINK fitting logic where applicable.
+  * Apply both STRETCH and SHRINK fitting logic where applicable.
   */
 @JSImport("playcanvas", "FITTING_BOTH")
 @js.native

@@ -23,7 +23,7 @@ object NavigationNavigatorProps {
     theme: SupportedThemes | `no-preference` = null
   ): NavigationNavigatorProps[Options, State, ScreenProps] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.get.asInstanceOf[js.Any])
     if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
     if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
     if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps.asInstanceOf[js.Any])

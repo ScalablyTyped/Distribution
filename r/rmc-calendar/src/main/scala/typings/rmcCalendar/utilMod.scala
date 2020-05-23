@@ -12,7 +12,6 @@ object utilMod extends js.Object {
   def formatDate(date: Date, format: String): String = js.native
   def formatDate(date: Date, format: String, locale: Locale): String = js.native
   def mergeDateTime(): Date = js.native
-  def mergeDateTime(date: js.UndefOr[scala.Nothing], time: Date): Date = js.native
   def mergeDateTime(date: Date): Date = js.native
   def mergeDateTime(date: Date, time: Date): Date = js.native
   def shallowEqual(objA: js.Any, objB: js.Any): Boolean = js.native

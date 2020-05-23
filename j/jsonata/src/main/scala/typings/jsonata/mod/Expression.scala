@@ -12,15 +12,10 @@ trait Expression extends js.Object {
   def evaluate(input: js.Any): js.Any = js.native
   def evaluate(
     input: js.Any,
-    bindings: js.UndefOr[scala.Nothing],
+    bindings: js.UndefOr[Record[String, _]],
     callback: js.Function2[/* err */ JsonataError, /* resp */ js.Any, Unit]
   ): Unit = js.native
   def evaluate(input: js.Any, bindings: Record[String, _]): js.Any = js.native
-  def evaluate(
-    input: js.Any,
-    bindings: Record[String, _],
-    callback: js.Function2[/* err */ JsonataError, /* resp */ js.Any, Unit]
-  ): Unit = js.native
   def registerFunction(name: String, implementation: js.ThisFunction1[/* this */ Focus, /* repeated */ js.Any, _]): Unit = js.native
   def registerFunction(
     name: String,

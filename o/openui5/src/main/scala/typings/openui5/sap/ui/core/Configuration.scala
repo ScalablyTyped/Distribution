@@ -6,12 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.Configuration")
 @js.native
-/**
-  * Creates a new Configuration object.
-  */
-class Configuration () extends Object {
+trait Configuration extends Object {
   /**
     * Applies multiple changes to the configuration at once.If the changed settings contain localization
     * related settings like <code>language</code>or <ode>calendarType</code>, then only a single
@@ -126,7 +122,7 @@ class Configuration () extends Object {
     * valid ISO639 two-letter languagesand as such are valid BCP47 language tags. For better BCP47
     * compliance, the frameworkmaps the following non-BCP47 SAP logon codes to a BCP47 substitute:<pre>  
     * "ZH"  -->  "zh-Hans"         // script 'Hans' added to distinguish it from zh-Hant   "ZF"  --> 
-    * "zh-Hant"         // ZF ist not a valid ISO639 code, use the compliant language + script 'Hant'		 " 
+    * "zh-Hant"         // ZF ist not a valid ISO639 code, use the compliant language + script 'Hant'         " 
     *   "1Q"  -->  "en-US-x-saptrc"  // special language code for supportability (tracing),               
     *                    represented as en-US with a priate extension   "2Q"  -->  "en-US-x-sappsd"  //
     * special language code for supportability (pseudo translation),                                  
@@ -274,7 +270,7 @@ class Configuration () extends Object {
 @js.native
 object Configuration extends js.Object {
   @js.native
-  class FormatSettings () extends Object {
+  trait FormatSettings extends Object {
     /**
       * Returns the currently set date pattern or undefined if no pattern has been defined.
       */

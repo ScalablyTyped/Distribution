@@ -24,24 +24,24 @@ trait DeviceConfigurationUserOverview extends Entity {
 object DeviceConfigurationUserOverview {
   @scala.inline
   def apply(
-    configurationVersion: Int | Double = null,
-    errorCount: Int | Double = null,
-    failedCount: Int | Double = null,
+    configurationVersion: js.UndefOr[Double] = js.undefined,
+    errorCount: js.UndefOr[Double] = js.undefined,
+    failedCount: js.UndefOr[Double] = js.undefined,
     id: String = null,
     lastUpdateDateTime: String = null,
-    notApplicableCount: Int | Double = null,
-    pendingCount: Int | Double = null,
-    successCount: Int | Double = null
+    notApplicableCount: js.UndefOr[Double] = js.undefined,
+    pendingCount: js.UndefOr[Double] = js.undefined,
+    successCount: js.UndefOr[Double] = js.undefined
   ): DeviceConfigurationUserOverview = {
     val __obj = js.Dynamic.literal()
-    if (configurationVersion != null) __obj.updateDynamic("configurationVersion")(configurationVersion.asInstanceOf[js.Any])
-    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount.asInstanceOf[js.Any])
-    if (failedCount != null) __obj.updateDynamic("failedCount")(failedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(configurationVersion)) __obj.updateDynamic("configurationVersion")(configurationVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorCount)) __obj.updateDynamic("errorCount")(errorCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failedCount)) __obj.updateDynamic("failedCount")(failedCount.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastUpdateDateTime != null) __obj.updateDynamic("lastUpdateDateTime")(lastUpdateDateTime.asInstanceOf[js.Any])
-    if (notApplicableCount != null) __obj.updateDynamic("notApplicableCount")(notApplicableCount.asInstanceOf[js.Any])
-    if (pendingCount != null) __obj.updateDynamic("pendingCount")(pendingCount.asInstanceOf[js.Any])
-    if (successCount != null) __obj.updateDynamic("successCount")(successCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(notApplicableCount)) __obj.updateDynamic("notApplicableCount")(notApplicableCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(successCount)) __obj.updateDynamic("successCount")(successCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceConfigurationUserOverview]
   }
 }

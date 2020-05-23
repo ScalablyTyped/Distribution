@@ -15,7 +15,7 @@ trait MultiPolygon[P /* <: Properties */]
 
 object MultiPolygon {
   @scala.inline
-  def apply[P /* <: Properties */](
+  def apply[P](
     arcs: js.Array[js.Array[ArcIndexes]],
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPolygon,
     bbox: BBox = null,

@@ -1,7 +1,7 @@
 package typings.hapi.mod
 
-import typings.hapi.AnonEtag
-import typings.hapi.ReadonlyRequest
+import typings.hapi.anon.Etag
+import typings.hapi.anon.ReadonlyRequest
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -64,7 +64,7 @@ trait ResponseToolkit extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-hentityoptions)
     */
   def entity(): js.UndefOr[ResponseObject] = js.native
-  def entity(options: AnonEtag): js.UndefOr[ResponseObject] = js.native
+  def entity(options: Etag): js.UndefOr[ResponseObject] = js.native
   /**
     * Redirects the client to the specified uri. Same as calling h.response().redirect(uri).
     * @param url

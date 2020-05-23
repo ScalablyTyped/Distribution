@@ -30,13 +30,13 @@ object AwsEc2NetworkInterfaceDetails {
     Attachment: AwsEc2NetworkInterfaceAttachment = null,
     NetworkInterfaceId: NonEmptyString = null,
     SecurityGroups: AwsEc2NetworkInterfaceSecurityGroupList = null,
-    SourceDestCheck: js.UndefOr[scala.Boolean] = js.undefined
+    SourceDestCheck: js.UndefOr[Boolean] = js.undefined
   ): AwsEc2NetworkInterfaceDetails = {
     val __obj = js.Dynamic.literal()
     if (Attachment != null) __obj.updateDynamic("Attachment")(Attachment.asInstanceOf[js.Any])
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsEc2NetworkInterfaceDetails]
   }
 }

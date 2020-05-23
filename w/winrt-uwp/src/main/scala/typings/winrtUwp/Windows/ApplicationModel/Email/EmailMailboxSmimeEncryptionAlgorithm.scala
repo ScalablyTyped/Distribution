@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object EmailMailboxSmimeEncryptionAlgorithm extends js.Object {
   /** Use the Triple Data Encryption Algorithm symmetric-key block cipher algorithm. */
   @js.native
   sealed trait tripleDes extends EmailMailboxSmimeEncryptionAlgorithm
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMailboxSmimeEncryptionAlgorithm with Double] = js.native
-  /* 0 */ @js.native
-  object any extends TopLevel[any with Double]
-  
-  /* 2 */ @js.native
-  object des extends TopLevel[des with Double]
-  
-  /* 3 */ @js.native
-  object rc2128Bit extends TopLevel[rc2128Bit with Double]
-  
-  /* 5 */ @js.native
-  object rc240Bit extends TopLevel[rc240Bit with Double]
-  
-  /* 4 */ @js.native
-  object rc264Bit extends TopLevel[rc264Bit with Double]
-  
-  /* 1 */ @js.native
-  object tripleDes extends TopLevel[tripleDes with Double]
   
 }
 

@@ -21,11 +21,11 @@ object ConfigAttributes {
   @scala.inline
   def apply(
     log_level: LOG_LEVEL_VERBOSE | LOG_LEVEL_DEBUG | LOG_LEVEL_INFO | LOG_LEVEL_WARN | LOG_LEVEL_ERROR | LOG_LEVEL_NONE = null,
-    result_post_delay_ms: Int | Double = null
+    result_post_delay_ms: js.UndefOr[Double] = js.undefined
   ): ConfigAttributes = {
     val __obj = js.Dynamic.literal()
     if (log_level != null) __obj.updateDynamic("log_level")(log_level.asInstanceOf[js.Any])
-    if (result_post_delay_ms != null) __obj.updateDynamic("result_post_delay_ms")(result_post_delay_ms.asInstanceOf[js.Any])
+    if (!js.isUndefined(result_post_delay_ms)) __obj.updateDynamic("result_post_delay_ms")(result_post_delay_ms.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigAttributes]
   }
 }

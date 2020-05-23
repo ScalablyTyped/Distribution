@@ -23,7 +23,7 @@ object PropsType {
   @scala.inline
   def apply(
     locale: Locale,
-    clientHeight: Int | Double = null,
+    clientHeight: js.UndefOr[Double] = js.undefined,
     defaultValue: Date = null,
     maxDate: Date = null,
     minDate: Date = null,
@@ -34,7 +34,7 @@ object PropsType {
     value: Date = null
   ): PropsType = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
-    if (clientHeight != null) __obj.updateDynamic("clientHeight")(clientHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientHeight)) __obj.updateDynamic("clientHeight")(clientHeight.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])

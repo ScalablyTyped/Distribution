@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Audio
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object AudioDeviceNodeCreationStatus extends js.Object {
   /** An unknown failure occurred in creation of the audio device node. */
   @js.native
   sealed trait unknownFailure extends AudioDeviceNodeCreationStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AudioDeviceNodeCreationStatus with Double] = js.native
-  /* 4 */ @js.native
-  object accessDenied extends TopLevel[accessDenied with Double]
-  
-  /* 1 */ @js.native
-  object deviceNotAvailable extends TopLevel[deviceNotAvailable with Double]
-  
-  /* 2 */ @js.native
-  object formatNotSupported extends TopLevel[formatNotSupported with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 3 */ @js.native
-  object unknownFailure extends TopLevel[unknownFailure with Double]
   
 }
 

@@ -1,6 +1,6 @@
 package typings.cliSpinner.mod
 
-import typings.cliSpinner.TypeofSpinner
+import typings.cliSpinner.anon.TypeofSpinner
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

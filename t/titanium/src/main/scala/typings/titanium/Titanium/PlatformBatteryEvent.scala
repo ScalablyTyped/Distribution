@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when the battery state changes. This is measured in 5% increments on iPhone/iPad.
-	 */
+  * Fired when the battery state changes. This is measured in 5% increments on iPhone/iPad.
+  */
 trait PlatformBatteryEvent extends PlatformBaseEvent {
   /**
-  		 * Percentage battery power level.
-  		 */
+    * Percentage battery power level.
+    */
   var level: Double
   /**
-  		 * The battery state.
-  		 */
+    * The battery state.
+    */
   var state: Double
 }
 

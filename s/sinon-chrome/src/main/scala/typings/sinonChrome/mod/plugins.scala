@@ -2,7 +2,7 @@ package typings.sinonChrome.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.chrome.chrome.cookies.Cookie
-import typings.sinonChrome.AnonDescription
+import typings.sinonChrome.anon.Description
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +20,6 @@ object plugins extends js.Object {
     def this(translations: Translations) = this()
   }
   
-  type Translations = StringDictionary[AnonDescription]
+  type Translations = StringDictionary[Description]
 }
 

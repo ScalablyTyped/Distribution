@@ -14,7 +14,7 @@ object TabProps {
   @scala.inline
   def apply(plain: js.UndefOr[Boolean] = js.undefined, title: ReactNode = null): TabProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]
   }

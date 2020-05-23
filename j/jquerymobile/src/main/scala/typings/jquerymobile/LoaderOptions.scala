@@ -24,8 +24,8 @@ object LoaderOptions {
     val __obj = js.Dynamic.literal()
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(textVisible)) __obj.updateDynamic("textVisible")(textVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(textonly)) __obj.updateDynamic("textonly")(textonly.asInstanceOf[js.Any])
+    if (!js.isUndefined(textVisible)) __obj.updateDynamic("textVisible")(textVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textonly)) __obj.updateDynamic("textonly")(textonly.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderOptions]
   }

@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an instance of a workflow association that performs on a list item the process that is defined in a workflow template */
-@JSGlobal("SP.WorkflowServices.WorkflowInstance")
 @js.native
-class WorkflowInstance () extends ClientObject {
+trait WorkflowInstance extends ClientObject {
   /** Contains the error string or exception information if the workflow faults. */
   def get_faultInfo(): String = js.native
   /** Unique identifier (GUID) for the workflow instance */

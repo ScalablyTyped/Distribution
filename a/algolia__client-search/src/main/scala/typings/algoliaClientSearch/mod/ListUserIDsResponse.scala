@@ -8,7 +8,7 @@ trait ListUserIDsResponse extends js.Object {
   /**
     * List of users id.
     */
-  val userIDs: js.Array[UserIDResponse]
+  var userIDs: js.Array[UserIDResponse]
 }
 
 object ListUserIDsResponse {

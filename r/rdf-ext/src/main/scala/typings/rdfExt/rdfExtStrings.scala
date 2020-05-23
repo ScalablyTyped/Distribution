@@ -9,9 +9,6 @@ object rdfExtStrings {
   sealed trait graph extends js.Object
   
   @js.native
-  sealed trait has extends js.Object
-  
-  @js.native
   sealed trait language extends js.Object
   
   @js.native
@@ -34,8 +31,6 @@ object rdfExtStrings {
   
   @scala.inline
   def graph: graph = "graph".asInstanceOf[graph]
-  @scala.inline
-  def has: has = "has".asInstanceOf[has]
   @scala.inline
   def language: language = "language".asInstanceOf[language]
   @scala.inline

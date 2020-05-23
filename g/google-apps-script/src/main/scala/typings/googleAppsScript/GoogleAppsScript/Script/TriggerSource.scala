@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Script
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,23 +27,6 @@ object TriggerSource extends js.Object {
   
   @js.native
   sealed trait SPREADSHEETS extends TriggerSource
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TriggerSource with Double] = js.native
-  /* 4 */ @js.native
-  object CALENDAR extends TopLevel[CALENDAR with Double]
-  
-  /* 1 */ @js.native
-  object CLOCK extends TopLevel[CLOCK with Double]
-  
-  /* 3 */ @js.native
-  object DOCUMENTS extends TopLevel[DOCUMENTS with Double]
-  
-  /* 2 */ @js.native
-  object FORMS extends TopLevel[FORMS with Double]
-  
-  /* 0 */ @js.native
-  object SPREADSHEETS extends TopLevel[SPREADSHEETS with Double]
   
 }
 

@@ -1,6 +1,6 @@
 package typings.stremioAddonSdk.mod
 
-import typings.stremioAddonSdk.AnonAdult
+import typings.stremioAddonSdk.anon.Adult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Manifest extends js.Object {
     * URL to png/jpg, at least 1024x786 resolution.
     */
   var background: js.UndefOr[String] = js.undefined
-  var behaviorHints: js.UndefOr[AnonAdult] = js.undefined
+  var behaviorHints: js.UndefOr[Adult] = js.undefined
   /**
     * A list of the content catalogs your addon provides.
     *
@@ -83,7 +83,7 @@ object Manifest {
     version: String,
     addonCatalogs: js.Array[ManifestCatalog] = null,
     background: String = null,
-    behaviorHints: AnonAdult = null,
+    behaviorHints: Adult = null,
     contactEmail: String = null,
     idPrefixes: js.Array[String] = null,
     logo: String = null

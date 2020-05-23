@@ -76,50 +76,52 @@ trait IMessage extends js.Object {
 object IMessage {
   @scala.inline
   def apply(
-    basicCard: IBasicCard = null,
-    browseCarouselCard: IBrowseCarouselCard = null,
-    card: ICard = null,
-    carouselSelect: ICarouselSelect = null,
-    image: IImage = null,
-    linkOutSuggestion: ILinkOutSuggestion = null,
-    listSelect: IListSelect = null,
-    mediaContent: IMediaContent = null,
-    payload: IStruct = null,
-    platform: Platform | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.Platform * / any */ String) = null,
-    quickReplies: IQuickReplies = null,
-    rbmCarouselRichCard: IRbmCarouselCard = null,
-    rbmStandaloneRichCard: IRbmStandaloneCard = null,
-    rbmText: IRbmText = null,
-    simpleResponses: ISimpleResponses = null,
-    suggestions: ISuggestions = null,
-    tableCard: ITableCard = null,
-    telephonyPlayAudio: ITelephonyPlayAudio = null,
-    telephonySynthesizeSpeech: ITelephonySynthesizeSpeech = null,
-    telephonyTransferCall: ITelephonyTransferCall = null,
-    text: IText = null
+    basicCard: js.UndefOr[Null | IBasicCard] = js.undefined,
+    browseCarouselCard: js.UndefOr[Null | IBrowseCarouselCard] = js.undefined,
+    card: js.UndefOr[Null | ICard] = js.undefined,
+    carouselSelect: js.UndefOr[Null | ICarouselSelect] = js.undefined,
+    image: js.UndefOr[Null | IImage] = js.undefined,
+    linkOutSuggestion: js.UndefOr[Null | ILinkOutSuggestion] = js.undefined,
+    listSelect: js.UndefOr[Null | IListSelect] = js.undefined,
+    mediaContent: js.UndefOr[Null | IMediaContent] = js.undefined,
+    payload: js.UndefOr[Null | IStruct] = js.undefined,
+    platform: js.UndefOr[
+      Null | Platform | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.Platform * / any */ String)
+    ] = js.undefined,
+    quickReplies: js.UndefOr[Null | IQuickReplies] = js.undefined,
+    rbmCarouselRichCard: js.UndefOr[Null | IRbmCarouselCard] = js.undefined,
+    rbmStandaloneRichCard: js.UndefOr[Null | IRbmStandaloneCard] = js.undefined,
+    rbmText: js.UndefOr[Null | IRbmText] = js.undefined,
+    simpleResponses: js.UndefOr[Null | ISimpleResponses] = js.undefined,
+    suggestions: js.UndefOr[Null | ISuggestions] = js.undefined,
+    tableCard: js.UndefOr[Null | ITableCard] = js.undefined,
+    telephonyPlayAudio: js.UndefOr[Null | ITelephonyPlayAudio] = js.undefined,
+    telephonySynthesizeSpeech: js.UndefOr[Null | ITelephonySynthesizeSpeech] = js.undefined,
+    telephonyTransferCall: js.UndefOr[Null | ITelephonyTransferCall] = js.undefined,
+    text: js.UndefOr[Null | IText] = js.undefined
   ): IMessage = {
     val __obj = js.Dynamic.literal()
-    if (basicCard != null) __obj.updateDynamic("basicCard")(basicCard.asInstanceOf[js.Any])
-    if (browseCarouselCard != null) __obj.updateDynamic("browseCarouselCard")(browseCarouselCard.asInstanceOf[js.Any])
-    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (carouselSelect != null) __obj.updateDynamic("carouselSelect")(carouselSelect.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (linkOutSuggestion != null) __obj.updateDynamic("linkOutSuggestion")(linkOutSuggestion.asInstanceOf[js.Any])
-    if (listSelect != null) __obj.updateDynamic("listSelect")(listSelect.asInstanceOf[js.Any])
-    if (mediaContent != null) __obj.updateDynamic("mediaContent")(mediaContent.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (quickReplies != null) __obj.updateDynamic("quickReplies")(quickReplies.asInstanceOf[js.Any])
-    if (rbmCarouselRichCard != null) __obj.updateDynamic("rbmCarouselRichCard")(rbmCarouselRichCard.asInstanceOf[js.Any])
-    if (rbmStandaloneRichCard != null) __obj.updateDynamic("rbmStandaloneRichCard")(rbmStandaloneRichCard.asInstanceOf[js.Any])
-    if (rbmText != null) __obj.updateDynamic("rbmText")(rbmText.asInstanceOf[js.Any])
-    if (simpleResponses != null) __obj.updateDynamic("simpleResponses")(simpleResponses.asInstanceOf[js.Any])
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
-    if (tableCard != null) __obj.updateDynamic("tableCard")(tableCard.asInstanceOf[js.Any])
-    if (telephonyPlayAudio != null) __obj.updateDynamic("telephonyPlayAudio")(telephonyPlayAudio.asInstanceOf[js.Any])
-    if (telephonySynthesizeSpeech != null) __obj.updateDynamic("telephonySynthesizeSpeech")(telephonySynthesizeSpeech.asInstanceOf[js.Any])
-    if (telephonyTransferCall != null) __obj.updateDynamic("telephonyTransferCall")(telephonyTransferCall.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(basicCard)) __obj.updateDynamic("basicCard")(basicCard.asInstanceOf[js.Any])
+    if (!js.isUndefined(browseCarouselCard)) __obj.updateDynamic("browseCarouselCard")(browseCarouselCard.asInstanceOf[js.Any])
+    if (!js.isUndefined(card)) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (!js.isUndefined(carouselSelect)) __obj.updateDynamic("carouselSelect")(carouselSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(image)) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkOutSuggestion)) __obj.updateDynamic("linkOutSuggestion")(linkOutSuggestion.asInstanceOf[js.Any])
+    if (!js.isUndefined(listSelect)) __obj.updateDynamic("listSelect")(listSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(mediaContent)) __obj.updateDynamic("mediaContent")(mediaContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(platform)) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (!js.isUndefined(quickReplies)) __obj.updateDynamic("quickReplies")(quickReplies.asInstanceOf[js.Any])
+    if (!js.isUndefined(rbmCarouselRichCard)) __obj.updateDynamic("rbmCarouselRichCard")(rbmCarouselRichCard.asInstanceOf[js.Any])
+    if (!js.isUndefined(rbmStandaloneRichCard)) __obj.updateDynamic("rbmStandaloneRichCard")(rbmStandaloneRichCard.asInstanceOf[js.Any])
+    if (!js.isUndefined(rbmText)) __obj.updateDynamic("rbmText")(rbmText.asInstanceOf[js.Any])
+    if (!js.isUndefined(simpleResponses)) __obj.updateDynamic("simpleResponses")(simpleResponses.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestions)) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableCard)) __obj.updateDynamic("tableCard")(tableCard.asInstanceOf[js.Any])
+    if (!js.isUndefined(telephonyPlayAudio)) __obj.updateDynamic("telephonyPlayAudio")(telephonyPlayAudio.asInstanceOf[js.Any])
+    if (!js.isUndefined(telephonySynthesizeSpeech)) __obj.updateDynamic("telephonySynthesizeSpeech")(telephonySynthesizeSpeech.asInstanceOf[js.Any])
+    if (!js.isUndefined(telephonyTransferCall)) __obj.updateDynamic("telephonyTransferCall")(telephonyTransferCall.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessage]
   }
 }

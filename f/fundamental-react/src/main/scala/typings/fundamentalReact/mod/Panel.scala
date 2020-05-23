@@ -1,13 +1,13 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.FunctionComponentPanelAct
-import typings.fundamentalReact.FunctionComponentPanelBod
-import typings.fundamentalReact.FunctionComponentPanelFil
-import typings.fundamentalReact.FunctionComponentPanelFoo
-import typings.fundamentalReact.FunctionComponentPanelHea
-import typings.fundamentalReact.FunctionComponentPanelHeaCall
-import typings.fundamentalReact.PartialPanelProps
-import typings.fundamentalReact.WeakValidationMapPanelPro
+import typings.fundamentalReact.anon.FunctionComponentPanelAct
+import typings.fundamentalReact.anon.FunctionComponentPanelBod
+import typings.fundamentalReact.anon.FunctionComponentPanelFil
+import typings.fundamentalReact.anon.FunctionComponentPanelFoo
+import typings.fundamentalReact.anon.FunctionComponentPanelHea
+import typings.fundamentalReact.anon.FunctionComponentPanelHeaCall
+import typings.fundamentalReact.anon.PartialPanelProps
+import typings.fundamentalReact.anon.WeakValidationMapPanelPro
 import typings.fundamentalReact.panelMod.PanelProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

@@ -1,6 +1,6 @@
 package typings.ionic.definitionsMod
 
-import typings.ionicCliFramework.AnonValue
+import typings.ionicCliFramework.anon.Value
 import typings.ionicCliFramework.definitionsMod.CommandOptionType
 import typings.ionicCliFramework.definitionsMod.Footnote
 import scala.scalajs.js
@@ -25,7 +25,7 @@ object CommandMetadataOption {
     groups: js.Array[String] = null,
     hint: String = null,
     `private`: js.UndefOr[Boolean] = js.undefined,
-    spec: AnonValue = null,
+    spec: Value = null,
     `type`: CommandOptionType = null
   ): CommandMetadataOption = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
@@ -35,7 +35,7 @@ object CommandMetadataOption {
     if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.get.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandMetadataOption]

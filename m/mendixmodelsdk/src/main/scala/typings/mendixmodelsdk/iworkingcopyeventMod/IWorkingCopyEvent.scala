@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.iworkingcopyeventMod
 
-import typings.mendixmodelsdk.AnonEventId
+import typings.mendixmodelsdk.anon.EventId
 import typings.mendixmodelsdk.mendixmodelsdkStrings.buildResult
 import typings.mendixmodelsdk.mendixmodelsdkStrings.workingCopyData
 import typings.mendixmodelsdk.transportInterfacesMod.IWorkingCopy
@@ -22,7 +22,7 @@ object IWorkingCopyEvent {
     __obj.asInstanceOf[IWorkingCopyEvent]
   }
   @scala.inline
-  def IBuildResultEvent(data: AnonEventId, `type`: buildResult): IWorkingCopyEvent = {
+  def IBuildResultEvent(data: EventId, `type`: buildResult): IWorkingCopyEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWorkingCopyEvent]

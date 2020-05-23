@@ -1,6 +1,6 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.AnonPreserveComments
+import typings.babelTypes.anon.PreserveComments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object removeProperties extends js.Object {
   def apply(n: Node): Unit = js.native
-  def apply(n: Node, opts: AnonPreserveComments): Unit = js.native
+  def apply(n: Node, opts: PreserveComments): Unit = js.native
 }
 

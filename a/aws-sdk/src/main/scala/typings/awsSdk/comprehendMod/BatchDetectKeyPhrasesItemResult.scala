@@ -18,9 +18,9 @@ trait BatchDetectKeyPhrasesItemResult extends js.Object {
 
 object BatchDetectKeyPhrasesItemResult {
   @scala.inline
-  def apply(Index: Int | scala.Double = null, KeyPhrases: ListOfKeyPhrases = null): BatchDetectKeyPhrasesItemResult = {
+  def apply(Index: js.UndefOr[Integer] = js.undefined, KeyPhrases: ListOfKeyPhrases = null): BatchDetectKeyPhrasesItemResult = {
     val __obj = js.Dynamic.literal()
-    if (Index != null) __obj.updateDynamic("Index")(Index.asInstanceOf[js.Any])
+    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index.get.asInstanceOf[js.Any])
     if (KeyPhrases != null) __obj.updateDynamic("KeyPhrases")(KeyPhrases.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectKeyPhrasesItemResult]
   }

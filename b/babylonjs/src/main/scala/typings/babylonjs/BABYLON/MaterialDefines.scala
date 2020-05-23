@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.MaterialDefines")
 @js.native
-class MaterialDefines ()
+trait MaterialDefines
   extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** @hidden */
   var _areAttributesDirty: Boolean = js.native

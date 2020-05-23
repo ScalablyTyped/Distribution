@@ -94,13 +94,13 @@ object DescribePredictorResponse {
     EncryptionConfig: EncryptionConfig = null,
     EvaluationParameters: EvaluationParameters = null,
     FeaturizationConfig: FeaturizationConfig = null,
-    ForecastHorizon: Int | scala.Double = null,
+    ForecastHorizon: js.UndefOr[Integer] = js.undefined,
     HPOConfig: HyperParameterTuningJobConfig = null,
     InputDataConfig: InputDataConfig = null,
     LastModificationTime: Timestamp = null,
     Message: Message = null,
-    PerformAutoML: js.UndefOr[scala.Boolean] = js.undefined,
-    PerformHPO: js.UndefOr[scala.Boolean] = js.undefined,
+    PerformAutoML: js.UndefOr[Boolean] = js.undefined,
+    PerformHPO: js.UndefOr[Boolean] = js.undefined,
     PredictorArn: Name = null,
     PredictorExecutionDetails: PredictorExecutionDetails = null,
     PredictorName: Name = null,
@@ -115,13 +115,13 @@ object DescribePredictorResponse {
     if (EncryptionConfig != null) __obj.updateDynamic("EncryptionConfig")(EncryptionConfig.asInstanceOf[js.Any])
     if (EvaluationParameters != null) __obj.updateDynamic("EvaluationParameters")(EvaluationParameters.asInstanceOf[js.Any])
     if (FeaturizationConfig != null) __obj.updateDynamic("FeaturizationConfig")(FeaturizationConfig.asInstanceOf[js.Any])
-    if (ForecastHorizon != null) __obj.updateDynamic("ForecastHorizon")(ForecastHorizon.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForecastHorizon)) __obj.updateDynamic("ForecastHorizon")(ForecastHorizon.get.asInstanceOf[js.Any])
     if (HPOConfig != null) __obj.updateDynamic("HPOConfig")(HPOConfig.asInstanceOf[js.Any])
     if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])
     if (LastModificationTime != null) __obj.updateDynamic("LastModificationTime")(LastModificationTime.asInstanceOf[js.Any])
     if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformAutoML)) __obj.updateDynamic("PerformAutoML")(PerformAutoML.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformHPO)) __obj.updateDynamic("PerformHPO")(PerformHPO.asInstanceOf[js.Any])
+    if (!js.isUndefined(PerformAutoML)) __obj.updateDynamic("PerformAutoML")(PerformAutoML.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PerformHPO)) __obj.updateDynamic("PerformHPO")(PerformHPO.get.asInstanceOf[js.Any])
     if (PredictorArn != null) __obj.updateDynamic("PredictorArn")(PredictorArn.asInstanceOf[js.Any])
     if (PredictorExecutionDetails != null) __obj.updateDynamic("PredictorExecutionDetails")(PredictorExecutionDetails.asInstanceOf[js.Any])
     if (PredictorName != null) __obj.updateDynamic("PredictorName")(PredictorName.asInstanceOf[js.Any])

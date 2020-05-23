@@ -14,7 +14,6 @@ import typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.CalendarListEnt
 import typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.CalendarListEntryNotificationSettings
 import typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.CalendarNotification
 import typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Channel
-import typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData
 import typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceParameters
 import typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceParametersAddOnParameters
 import typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceProperties
@@ -64,7 +63,7 @@ trait Calendar_ extends js.Object {
   // Create a new instance of Channel
   def newChannel(): Channel
   // Create a new instance of ConferenceData
-  def newConferenceData(): ConferenceData
+  def newConferenceData(): typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData
   // Create a new instance of ConferenceParameters
   def newConferenceParameters(): ConferenceParameters
   // Create a new instance of ConferenceParametersAddOnParameters
@@ -119,7 +118,7 @@ object Calendar_ {
     newCalendarListEntryNotificationSettings: () => CalendarListEntryNotificationSettings,
     newCalendarNotification: () => CalendarNotification,
     newChannel: () => Channel,
-    newConferenceData: () => ConferenceData,
+    newConferenceData: () => typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData,
     newConferenceParameters: () => ConferenceParameters,
     newConferenceParametersAddOnParameters: () => ConferenceParametersAddOnParameters,
     newConferenceProperties: () => ConferenceProperties,

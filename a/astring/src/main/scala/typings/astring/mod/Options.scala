@@ -27,15 +27,15 @@ object Options {
     indent: String = null,
     lineEnd: String = null,
     sourceMap: js.Any = null,
-    startingIndentLevel: Int | Double = null
+    startingIndentLevel: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.get.asInstanceOf[js.Any])
     if (generator != null) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (lineEnd != null) __obj.updateDynamic("lineEnd")(lineEnd.asInstanceOf[js.Any])
     if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
-    if (startingIndentLevel != null) __obj.updateDynamic("startingIndentLevel")(startingIndentLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(startingIndentLevel)) __obj.updateDynamic("startingIndentLevel")(startingIndentLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

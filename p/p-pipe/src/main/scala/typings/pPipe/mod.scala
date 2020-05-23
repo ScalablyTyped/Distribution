@@ -83,7 +83,7 @@ object mod extends js.Object {
     f8: UnaryFunction[ResultValue7, ResultValue8],
     f9: UnaryFunction[ResultValue8, ReturnType]
   ): Pipeline[ValueType, ReturnType] = js.native
-  type Pipeline[ValueType, ReturnType] = js.Function1[/* value */ ValueType, js.Promise[ReturnType]]
+  type Pipeline[ValueType, ReturnType] = js.Function1[/* value */ js.UndefOr[ValueType], js.Promise[ReturnType]]
   type UnaryFunction[ValueType, ReturnType] = js.Function1[/* value */ ValueType, ReturnType | js.Thenable[ReturnType]]
 }
 

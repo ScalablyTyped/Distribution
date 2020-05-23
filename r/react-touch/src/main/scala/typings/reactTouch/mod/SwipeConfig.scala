@@ -11,9 +11,9 @@ trait SwipeConfig extends js.Object {
 
 object SwipeConfig {
   @scala.inline
-  def apply(swipeDistance: Int | Double = null): SwipeConfig = {
+  def apply(swipeDistance: js.UndefOr[Double] = js.undefined): SwipeConfig = {
     val __obj = js.Dynamic.literal()
-    if (swipeDistance != null) __obj.updateDynamic("swipeDistance")(swipeDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeDistance)) __obj.updateDynamic("swipeDistance")(swipeDistance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeConfig]
   }
 }

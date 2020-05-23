@@ -1,6 +1,6 @@
 package typings.monacoEditor.mod.editor
 
-import typings.monacoEditor.AnonLink
+import typings.monacoEditor.anon.Link
 import typings.monacoEditor.mod.MarkerSeverity
 import typings.monacoEditor.mod.MarkerTag
 import scala.scalajs.js
@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IMarkerData extends js.Object {
-  var code: js.UndefOr[String | AnonLink] = js.undefined
+  var code: js.UndefOr[String | Link] = js.undefined
   var endColumn: Double
   var endLineNumber: Double
   var message: String
@@ -29,7 +29,7 @@ object IMarkerData {
     severity: MarkerSeverity,
     startColumn: Double,
     startLineNumber: Double,
-    code: String | AnonLink = null,
+    code: String | Link = null,
     relatedInformation: js.Array[IRelatedInformation] = null,
     source: String = null,
     tags: js.Array[MarkerTag] = null

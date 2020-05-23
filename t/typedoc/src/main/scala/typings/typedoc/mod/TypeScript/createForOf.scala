@@ -13,13 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createForOf extends js.Object {
   def apply(
-    awaitModifier: js.UndefOr[scala.Nothing],
-    initializer: ForInitializer,
-    expression: Expression,
-    statement: Statement
-  ): ForOfStatement = js.native
-  def apply(
-    awaitModifier: AwaitKeywordToken,
+    awaitModifier: js.UndefOr[AwaitKeywordToken],
     initializer: ForInitializer,
     expression: Expression,
     statement: Statement

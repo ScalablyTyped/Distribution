@@ -6,7 +6,7 @@ import typings.openlayers.mod.olx.format.PolylineOptions
 import typings.openlayers.mod.olx.format.ReadOptions
 import typings.openlayers.mod.olx.format.WriteOptions
 import typings.openlayers.mod.proj.Projection
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,8 +47,8 @@ class Polyline () extends TextFeature {
     * @return Feature.
     * @api stable
     */
-  def readFeature(source: Document_): typings.openlayers.mod.Feature = js.native
-  def readFeature(source: Document_, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
+  def readFeature(source: Document): typings.openlayers.mod.Feature = js.native
+  def readFeature(source: Document, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
   def readFeature(source: Node): typings.openlayers.mod.Feature = js.native
   def readFeature(source: Node, opt_options: ReadOptions): typings.openlayers.mod.Feature = js.native
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native
@@ -64,8 +64,8 @@ class Polyline () extends TextFeature {
     * @return Features.
     * @api stable
     */
-  def readFeatures(source: Document_): js.Array[typings.openlayers.mod.Feature] = js.native
-  def readFeatures(source: Document_, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readGeometry(source: String): Geometry = js.native
@@ -80,8 +80,8 @@ class Polyline () extends TextFeature {
     * @return Geometry.
     * @api stable
     */
-  def readGeometry(source: Document_): Geometry = js.native
-  def readGeometry(source: Document_, opt_options: ReadOptions): Geometry = js.native
+  def readGeometry(source: Document): Geometry = js.native
+  def readGeometry(source: Document, opt_options: ReadOptions): Geometry = js.native
   def readGeometry(source: Node): Geometry = js.native
   def readGeometry(source: Node, opt_options: ReadOptions): Geometry = js.native
   def readProjection(source: String): Projection = js.native
@@ -93,7 +93,7 @@ class Polyline () extends TextFeature {
     * @return Projection.
     * @api stable
     */
-  def readProjection(source: Document_): Projection = js.native
+  def readProjection(source: Document): Projection = js.native
   def readProjection(source: Node): Projection = js.native
   /**
     * Write a single geometry in Polyline format.

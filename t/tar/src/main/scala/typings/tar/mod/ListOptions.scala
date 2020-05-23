@@ -48,7 +48,7 @@ object ListOptions {
     C: String = null,
     cwd: String = null,
     filter: (/* path */ String, /* entry */ FileStat) => Boolean = null,
-    maxReadSize: Int | Double = null,
+    maxReadSize: js.UndefOr[Double] = js.undefined,
     noResume: js.UndefOr[Boolean] = js.undefined,
     onentry: /* entry */ FileStat => Unit = null,
     strict: js.UndefOr[Boolean] = js.undefined
@@ -57,10 +57,10 @@ object ListOptions {
     if (C != null) __obj.updateDynamic("C")(C.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (maxReadSize != null) __obj.updateDynamic("maxReadSize")(maxReadSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(noResume)) __obj.updateDynamic("noResume")(noResume.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReadSize)) __obj.updateDynamic("maxReadSize")(maxReadSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noResume)) __obj.updateDynamic("noResume")(noResume.get.asInstanceOf[js.Any])
     if (onentry != null) __obj.updateDynamic("onentry")(js.Any.fromFunction1(onentry))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.antdMobile
 
+import typings.antdMobile.anon.Mode
 import typings.antdMobile.navBarPropsTypeMod.NavBarProps
 import typings.react.mod.Component
 import scala.scalajs.js
@@ -19,7 +20,7 @@ object navBarMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonMode = js.native
+    var defaultProps: Mode = js.native
   }
   
 }

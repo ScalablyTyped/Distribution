@@ -22,16 +22,16 @@ object Client {
   def apply(
     grants: String | js.Array[String],
     id: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    accessTokenLifetime: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    accessTokenLifetime: js.UndefOr[Double] = js.undefined,
     redirectUris: String | js.Array[String] = null,
-    refreshTokenLifetime: Int | Double = null
+    refreshTokenLifetime: js.UndefOr[Double] = js.undefined
   ): Client = {
     val __obj = js.Dynamic.literal(grants = grants.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (accessTokenLifetime != null) __obj.updateDynamic("accessTokenLifetime")(accessTokenLifetime.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessTokenLifetime)) __obj.updateDynamic("accessTokenLifetime")(accessTokenLifetime.get.asInstanceOf[js.Any])
     if (redirectUris != null) __obj.updateDynamic("redirectUris")(redirectUris.asInstanceOf[js.Any])
-    if (refreshTokenLifetime != null) __obj.updateDynamic("refreshTokenLifetime")(refreshTokenLifetime.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshTokenLifetime)) __obj.updateDynamic("refreshTokenLifetime")(refreshTokenLifetime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Client]
   }
 }

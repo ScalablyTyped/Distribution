@@ -1,7 +1,7 @@
 package typings.nodeHueApi.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nodeHueApi.AnonDictkey
+import typings.nodeHueApi.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait ISensor extends js.Object {
   var manufacturername: String
   var modelid: String
   var name: String
-  var state: AnonDictkey
+  var state: Dictkey
   var swversion: String
   var `type`: String
   var uniqueid: js.UndefOr[String] = js.undefined
@@ -25,7 +25,7 @@ object ISensor {
     manufacturername: String,
     modelid: String,
     name: String,
-    state: AnonDictkey,
+    state: Dictkey,
     swversion: String,
     `type`: String,
     id: String = null,

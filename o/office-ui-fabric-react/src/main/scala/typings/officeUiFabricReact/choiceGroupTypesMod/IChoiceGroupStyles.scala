@@ -23,16 +23,16 @@ trait IChoiceGroupStyles extends js.Object {
 object IChoiceGroupStyles {
   @scala.inline
   def apply(
-    applicationRole: IStyle = null,
-    flexContainer: IStyle = null,
-    label: IStyle = null,
-    root: IStyle = null
+    applicationRole: js.UndefOr[Null | IStyle] = js.undefined,
+    flexContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    label: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
   ): IChoiceGroupStyles = {
     val __obj = js.Dynamic.literal()
-    if (applicationRole != null) __obj.updateDynamic("applicationRole")(applicationRole.asInstanceOf[js.Any])
-    if (flexContainer != null) __obj.updateDynamic("flexContainer")(flexContainer.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationRole)) __obj.updateDynamic("applicationRole")(applicationRole.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexContainer)) __obj.updateDynamic("flexContainer")(flexContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChoiceGroupStyles]
   }
 }

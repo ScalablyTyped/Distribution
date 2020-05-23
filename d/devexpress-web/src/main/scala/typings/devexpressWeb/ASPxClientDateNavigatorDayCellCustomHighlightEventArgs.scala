@@ -8,27 +8,26 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientDateNavigator.DayCellCustomHighlight event.
   */
-@JSGlobal("ASPxClientDateNavigatorDayCellCustomHighlightEventArgs")
-@js.native
-class ASPxClientDateNavigatorDayCellCustomHighlightEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientDateNavigatorDayCellCustomHighlightEventArgs class.
-    * @param htmlElement An object representing the HTML element.
-    * @param date A DateTime object that represents the highlighted date.
-    * @param appointments An array of ASPxClientAppointment objects that the highlighted day cell contains.
-    */
-  def this(htmlElement: js.Any, date: Date, appointments: js.Array[ASPxClientAppointment]) = this()
+trait ASPxClientDateNavigatorDayCellCustomHighlightEventArgs extends ASPxClientEventArgs {
   /**
     * Provides access to the processed appointments.
     */
-  var appointments: js.Array[ASPxClientAppointment] = js.native
+  var appointments: js.Array[ASPxClientAppointment]
   /**
     * Provides access to the date object of the processed cell.
     */
-  var date: Date = js.native
+  var date: Date
   /**
     * Gets the HTML element that the event was triggered on.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
+}
+
+object ASPxClientDateNavigatorDayCellCustomHighlightEventArgs {
+  @scala.inline
+  def apply(appointments: js.Array[ASPxClientAppointment], date: Date, htmlElement: js.Any): ASPxClientDateNavigatorDayCellCustomHighlightEventArgs = {
+    val __obj = js.Dynamic.literal(appointments = appointments.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientDateNavigatorDayCellCustomHighlightEventArgs]
+  }
 }
 

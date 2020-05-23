@@ -32,14 +32,14 @@ object SceneViewConstraintsTilt {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     get: /* propertyName */ String => _ = null,
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     mode: auto | manual = null,
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewConstraintsTilt]) with (js.Function1[/* props */ HashMap[_], SceneViewConstraintsTilt]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): SceneViewConstraintsTilt = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))

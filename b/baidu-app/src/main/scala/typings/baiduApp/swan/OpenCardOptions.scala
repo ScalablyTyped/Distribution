@@ -1,19 +1,19 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonCardId
+import typings.baiduApp.anon.CardId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OpenCardOptions
   extends BaseOptions[js.Any, js.Any] {
-  var cardList: js.Array[AnonCardId]
+  var cardList: js.Array[CardId]
 }
 
 object OpenCardOptions {
   @scala.inline
   def apply(
-    cardList: js.Array[AnonCardId],
+    cardList: js.Array[CardId],
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null

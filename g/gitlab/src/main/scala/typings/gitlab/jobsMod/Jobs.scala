@@ -1,11 +1,11 @@
 package typings.gitlab.jobsMod
 
+import typings.gitlab.anon.scopeJobScopeSudo
+import typings.gitlab.anon.streambooleanBaseRequestO
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
-import typings.gitlab.scopeJobScopeSudo
-import typings.gitlab.streambooleanBaseRequestO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

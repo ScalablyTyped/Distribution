@@ -14,10 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a list of MediaPlaybackItem objects that can be played back. Provides methods for switching the currently playing item and enabling looping and shuffling. */
-@JSGlobal("Windows.Media.Playback.MediaPlaybackList")
 @js.native
-/** Initializes a new instance of the MediaPlaybackList class. */
-class MediaPlaybackList () extends js.Object {
+trait MediaPlaybackList extends js.Object {
   /** Gets or sets a value indicating whether the playback list will loop when the end of the list is reached. */
   var autoRepeatEnabled: Boolean = js.native
   /** Gets the currently playing MediaPlaybackItem . */

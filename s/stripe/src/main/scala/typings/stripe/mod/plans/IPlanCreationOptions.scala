@@ -100,37 +100,37 @@ object IPlanCreationOptions {
     product: String | IPlanCreationOptionsProductHash,
     active: js.UndefOr[Boolean] = js.undefined,
     aggregate_usage: sum | last_during_period | last_ever | max = null,
-    amount: Int | Double = null,
-    amount_decimal: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
+    amount_decimal: js.UndefOr[Double] = js.undefined,
     billing_scheme: per_unit | tiered = null,
     expand: js.Array[String] = null,
     id: String = null,
     include: js.Array[String] = null,
-    interval_count: Int | Double = null,
+    interval_count: js.UndefOr[Double] = js.undefined,
     metadata: IMetadata = null,
     nickname: String = null,
     tiers: js.Array[ITier] = null,
     tiers_mode: graduated | volume = null,
     transform_usage: ITransformUsage = null,
-    trial_period_days: Int | Double = null,
+    trial_period_days: js.UndefOr[Double] = js.undefined,
     usage_type: metered | licensed = null
   ): IPlanCreationOptions = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (amount_decimal != null) __obj.updateDynamic("amount_decimal")(amount_decimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount_decimal)) __obj.updateDynamic("amount_decimal")(amount_decimal.get.asInstanceOf[js.Any])
     if (billing_scheme != null) __obj.updateDynamic("billing_scheme")(billing_scheme.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (interval_count != null) __obj.updateDynamic("interval_count")(interval_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval_count)) __obj.updateDynamic("interval_count")(interval_count.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
     if (tiers != null) __obj.updateDynamic("tiers")(tiers.asInstanceOf[js.Any])
     if (tiers_mode != null) __obj.updateDynamic("tiers_mode")(tiers_mode.asInstanceOf[js.Any])
     if (transform_usage != null) __obj.updateDynamic("transform_usage")(transform_usage.asInstanceOf[js.Any])
-    if (trial_period_days != null) __obj.updateDynamic("trial_period_days")(trial_period_days.asInstanceOf[js.Any])
+    if (!js.isUndefined(trial_period_days)) __obj.updateDynamic("trial_period_days")(trial_period_days.get.asInstanceOf[js.Any])
     if (usage_type != null) __obj.updateDynamic("usage_type")(usage_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlanCreationOptions]
   }

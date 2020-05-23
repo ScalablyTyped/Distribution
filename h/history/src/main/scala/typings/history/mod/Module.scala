@@ -1,11 +1,11 @@
 package typings.history.mod
 
-import typings.history.Fn0
-import typings.history.FnCall
-import typings.history.FnCallLocation
-import typings.history.FnCallLvRv
-import typings.history.FnCallOptions
-import typings.history.FnCallPathStateKeyCurrentLocation
+import typings.history.anon.Fn0
+import typings.history.anon.FnCall
+import typings.history.anon.FnCallLocation
+import typings.history.anon.FnCallLvRv
+import typings.history.anon.FnCallOptions
+import typings.history.anon.FnCallPathStateKeyCurrentLocation
 import typings.history.createBrowserHistoryMod.BrowserHistoryBuildOptions
 import typings.history.createHashHistoryMod.HashHistoryBuildOptions
 import typings.history.createMemoryHistoryMod.MemoryHistory

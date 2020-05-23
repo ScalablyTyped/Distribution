@@ -23,7 +23,7 @@ object FoldingRules {
   def apply(markers: FoldingMarkers = null, offSide: js.UndefOr[Boolean] = js.undefined): FoldingRules = {
     val __obj = js.Dynamic.literal()
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (!js.isUndefined(offSide)) __obj.updateDynamic("offSide")(offSide.asInstanceOf[js.Any])
+    if (!js.isUndefined(offSide)) __obj.updateDynamic("offSide")(offSide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoldingRules]
   }
 }

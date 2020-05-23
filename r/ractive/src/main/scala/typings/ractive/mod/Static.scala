@@ -2,7 +2,7 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.ractive.AnonInstantiable
+import typings.ractive.anon.Instantiable
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait Static[T /* <: Ractive[T] */]
   /** The parent constructor used to create this constructor. */
   var Parent: Static[Ractive[Ractive[_]]] = js.native
   /** The Ractive constructor used to create this constructor. */
-  var Ractive: AnonInstantiable = js.native
+  var Ractive: Instantiable = js.native
   var adaptors: Registry[Adaptor] = js.native
   var components: Registry[Component] = js.native
   var css: String | CssFn = js.native

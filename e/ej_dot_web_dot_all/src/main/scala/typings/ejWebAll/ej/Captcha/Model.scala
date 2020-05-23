@@ -81,10 +81,10 @@ object Model {
     enablePattern: js.UndefOr[Boolean] = js.undefined,
     enableRTL: js.UndefOr[Boolean] = js.undefined,
     hatchStyle: HatchStyle | String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     mapper: String = null,
-    maximumLength: Int | Double = null,
-    minimumLength: Int | Double = null,
+    maximumLength: js.UndefOr[Double] = js.undefined,
+    minimumLength: js.UndefOr[Double] = js.undefined,
     refreshBegin: /* e */ RefreshBeginEventArgs => Unit = null,
     refreshComplete: /* e */ RefreshCompleteEventArgs => Unit = null,
     refreshFailure: /* e */ RefreshFailureEventArgs => Unit = null,
@@ -94,30 +94,30 @@ object Model {
     showRefreshButton: js.UndefOr[Boolean] = js.undefined,
     targetButton: String = null,
     targetInput: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (characterSet != null) __obj.updateDynamic("characterSet")(characterSet.asInstanceOf[js.Any])
     if (customErrorMessage != null) __obj.updateDynamic("customErrorMessage")(customErrorMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoValidation)) __obj.updateDynamic("enableAutoValidation")(enableAutoValidation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCaseSensitivity)) __obj.updateDynamic("enableCaseSensitivity")(enableCaseSensitivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePattern)) __obj.updateDynamic("enablePattern")(enablePattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoValidation)) __obj.updateDynamic("enableAutoValidation")(enableAutoValidation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCaseSensitivity)) __obj.updateDynamic("enableCaseSensitivity")(enableCaseSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePattern)) __obj.updateDynamic("enablePattern")(enablePattern.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
     if (hatchStyle != null) __obj.updateDynamic("hatchStyle")(hatchStyle.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (mapper != null) __obj.updateDynamic("mapper")(mapper.asInstanceOf[js.Any])
-    if (maximumLength != null) __obj.updateDynamic("maximumLength")(maximumLength.asInstanceOf[js.Any])
-    if (minimumLength != null) __obj.updateDynamic("minimumLength")(minimumLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumLength)) __obj.updateDynamic("maximumLength")(maximumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumLength)) __obj.updateDynamic("minimumLength")(minimumLength.get.asInstanceOf[js.Any])
     if (refreshBegin != null) __obj.updateDynamic("refreshBegin")(js.Any.fromFunction1(refreshBegin))
     if (refreshComplete != null) __obj.updateDynamic("refreshComplete")(js.Any.fromFunction1(refreshComplete))
     if (refreshFailure != null) __obj.updateDynamic("refreshFailure")(js.Any.fromFunction1(refreshFailure))
     if (refreshSuccess != null) __obj.updateDynamic("refreshSuccess")(js.Any.fromFunction1(refreshSuccess))
     if (requestMapper != null) __obj.updateDynamic("requestMapper")(requestMapper.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAudioButton)) __obj.updateDynamic("showAudioButton")(showAudioButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRefreshButton)) __obj.updateDynamic("showRefreshButton")(showRefreshButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAudioButton)) __obj.updateDynamic("showAudioButton")(showAudioButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRefreshButton)) __obj.updateDynamic("showRefreshButton")(showRefreshButton.get.asInstanceOf[js.Any])
     if (targetButton != null) __obj.updateDynamic("targetButton")(targetButton.asInstanceOf[js.Any])
     if (targetInput != null) __obj.updateDynamic("targetInput")(targetInput.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

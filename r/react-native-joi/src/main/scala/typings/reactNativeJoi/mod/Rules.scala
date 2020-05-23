@@ -28,7 +28,7 @@ trait Rules[P /* <: js.Object */] extends js.Object {
 
 object Rules {
   @scala.inline
-  def apply[P /* <: js.Object */](
+  def apply[P](
     name: String,
     description: String | (js.Function1[/* params */ P, String]) = null,
     params: ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 

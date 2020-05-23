@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxPageControl object.
   */
-@JSGlobal("ASPxClientPageControl")
 @js.native
-class ASPxClientPageControl () extends ASPxClientTabControlBase {
+trait ASPxClientPageControl extends ASPxClientTabControlBase {
   /**
     * Returns the HTML code that represents the contents of the specified page within the page control. A string that represents the specified page's HTML content.
     * @param tab An ASPxClientTab object that specifies the required page.
@@ -28,16 +27,5 @@ class ASPxClientPageControl () extends ASPxClientTabControlBase {
     * @param html A string value that represents the HTML code defining the content of the specified page.
     */
   def SetTabContentHTML(tab: ASPxClientTab, html: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientPageControl")
-@js.native
-object ASPxClientPageControl extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientPageControl type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientPageControl = js.native
 }
 

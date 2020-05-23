@@ -73,34 +73,34 @@ object Options {
   @scala.inline
   def apply(
     arrowShow: js.UndefOr[Boolean] = js.undefined,
-    arrowSize: Int | Double = null,
+    arrowSize: js.UndefOr[Double] = js.undefined,
     autoHide: js.UndefOr[Boolean] = js.undefined,
-    autoHideDelay: Int | Double = null,
+    autoHideDelay: js.UndefOr[Double] = js.undefined,
     className: String = null,
     clickToHide: js.UndefOr[Boolean] = js.undefined,
     elementPosition: String = null,
-    gap: Int | Double = null,
+    gap: js.UndefOr[Double] = js.undefined,
     globalPosition: String = null,
     hideAnimation: String = null,
-    hideDuration: Int | Double = null,
+    hideDuration: js.UndefOr[Double] = js.undefined,
     showAnimation: String = null,
-    showDuration: Int | Double = null,
+    showDuration: js.UndefOr[Double] = js.undefined,
     style: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowShow)) __obj.updateDynamic("arrowShow")(arrowShow.asInstanceOf[js.Any])
-    if (arrowSize != null) __obj.updateDynamic("arrowSize")(arrowSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
-    if (autoHideDelay != null) __obj.updateDynamic("autoHideDelay")(autoHideDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowShow)) __obj.updateDynamic("arrowShow")(arrowShow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowSize)) __obj.updateDynamic("arrowSize")(arrowSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideDelay)) __obj.updateDynamic("autoHideDelay")(autoHideDelay.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToHide)) __obj.updateDynamic("clickToHide")(clickToHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToHide)) __obj.updateDynamic("clickToHide")(clickToHide.get.asInstanceOf[js.Any])
     if (elementPosition != null) __obj.updateDynamic("elementPosition")(elementPosition.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (globalPosition != null) __obj.updateDynamic("globalPosition")(globalPosition.asInstanceOf[js.Any])
     if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation.asInstanceOf[js.Any])
-    if (hideDuration != null) __obj.updateDynamic("hideDuration")(hideDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDuration)) __obj.updateDynamic("hideDuration")(hideDuration.get.asInstanceOf[js.Any])
     if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation.asInstanceOf[js.Any])
-    if (showDuration != null) __obj.updateDynamic("showDuration")(showDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDuration)) __obj.updateDynamic("showDuration")(showDuration.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

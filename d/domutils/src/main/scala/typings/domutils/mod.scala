@@ -1,6 +1,7 @@
 package typings.domutils
 
 import typings.domhandler.mod.DomElement
+import typings.domutils.anon.DecodeEntities
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +34,7 @@ object mod extends js.Object {
   def getInnerHTML(elem: DomElement, opts: js.Any): String = js.native
   def getName(elem: DomElement): String = js.native
   def getOuterHTML(dom: js.Array[DomElement]): String = js.native
-  def getOuterHTML(dom: js.Array[DomElement], opts: AnonDecodeEntities): String = js.native
+  def getOuterHTML(dom: js.Array[DomElement], opts: DecodeEntities): String = js.native
   def getParent(elem: DomElement): DomElement = js.native
   def getSiblings(elem: DomElement): js.Array[DomElement] = js.native
   def getText(elem: DomElement): String = js.native

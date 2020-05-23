@@ -1,13 +1,12 @@
 package typings.mongoose.mod
 
-import typings.mongoose.Typeofmongoose
 import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.mongoose.mod.ModelProperties because var conflicts: schema. Inlined base, baseModelName, collection, db, discriminators, modelName */ @js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.mongoose.mod.ModelProperties because var conflicts: schema. Inlined collection, db */ @js.native
 trait Document
   extends MongooseDocument
      with EventEmitter {
@@ -16,21 +15,10 @@ trait Document
     * If you're using another key, you will have to access it using []: doc[_myVersionKey]
     */
   var __v: js.UndefOr[Double] = js.native
-  /** Base Mongoose instance the model uses. */
-  var base: Typeofmongoose = js.native
-  /**
-    * If this is a discriminator model, baseModelName is the
-    * name of the base model.
-    */
-  var baseModelName: js.UndefOr[String] = js.native
   /** Collection the model uses. */
   var collection: Collection = js.native
   /** Connection the model uses. */
   var db: Connection_ = js.native
-  /** Registered discriminators for this model. */
-  var discriminators: js.Any = js.native
-  /** The name of the model */
-  var modelName: String = js.native
   /** whether mongoose thinks this doc is deleted. */
   @JSName("$isDeleted")
   def $isDeleted(): Boolean = js.native

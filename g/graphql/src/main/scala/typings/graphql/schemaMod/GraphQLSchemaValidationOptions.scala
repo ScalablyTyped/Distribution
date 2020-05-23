@@ -27,12 +27,12 @@ trait GraphQLSchemaValidationOptions extends js.Object {
 object GraphQLSchemaValidationOptions {
   @scala.inline
   def apply(
-    allowedLegacyNames: Maybe[js.Array[String]] = null,
+    allowedLegacyNames: js.UndefOr[Null | Maybe[js.Array[String]]] = js.undefined,
     assumeValid: js.UndefOr[Boolean] = js.undefined
   ): GraphQLSchemaValidationOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowedLegacyNames != null) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowedLegacyNames)) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLSchemaValidationOptions]
   }
 }

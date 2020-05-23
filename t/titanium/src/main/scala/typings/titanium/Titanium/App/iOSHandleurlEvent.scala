@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a new URL is handled by the application.
-		 */
+  * Fired when a new URL is handled by the application.
+  */
 trait iOSHandleurlEvent extends iOSBaseEvent {
   /**
-  			 * The launch options that are related to opening the URL.
-  			 */
+    * The launch options that are related to opening the URL.
+    */
   var launchOptions: LaunchOptionsType
 }
 

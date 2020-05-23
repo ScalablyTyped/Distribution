@@ -99,7 +99,7 @@ object SavingsPlan {
     start: String = null,
     state: SavingsPlanState = null,
     tags: TagMap = null,
-    termDurationInSeconds: Int | Double = null,
+    termDurationInSeconds: js.UndefOr[TermDurationInSeconds] = js.undefined,
     upfrontPaymentAmount: Amount = null
   ): SavingsPlan = {
     val __obj = js.Dynamic.literal()
@@ -119,7 +119,7 @@ object SavingsPlan {
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (termDurationInSeconds != null) __obj.updateDynamic("termDurationInSeconds")(termDurationInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(termDurationInSeconds)) __obj.updateDynamic("termDurationInSeconds")(termDurationInSeconds.get.asInstanceOf[js.Any])
     if (upfrontPaymentAmount != null) __obj.updateDynamic("upfrontPaymentAmount")(upfrontPaymentAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlan]
   }

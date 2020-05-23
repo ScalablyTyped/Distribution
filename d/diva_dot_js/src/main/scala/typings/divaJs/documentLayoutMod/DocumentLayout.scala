@@ -1,6 +1,6 @@
 package typings.divaJs.documentLayoutMod
 
-import typings.divaJs.AnonX
+import typings.divaJs.anon.X
 import typings.divaJs.interfacesMod.Dimensions
 import typings.divaJs.interfacesMod.Offset
 import typings.divaJs.interfacesMod.PageGroup
@@ -17,7 +17,7 @@ trait DocumentLayout extends js.Object {
   def getPageInfo(pageIndex: Double): PageInfo | Null
   def getPageOffset(pageIndex: Double, options: js.Object): Offset
   def getPageRegion(pageIndex: Double, options: js.Object): Offset
-  def getPageToViewportCenterOffset(pageIndex: Double, viewport: Region): AnonX
+  def getPageToViewportCenterOffset(pageIndex: Double, viewport: Region): X
 }
 
 object DocumentLayout {
@@ -28,7 +28,7 @@ object DocumentLayout {
     getPageInfo: Double => PageInfo | Null,
     getPageOffset: (Double, js.Object) => Offset,
     getPageRegion: (Double, js.Object) => Offset,
-    getPageToViewportCenterOffset: (Double, Region) => AnonX,
+    getPageToViewportCenterOffset: (Double, Region) => X,
     pageGroups: js.Array[PageGroup]
   ): DocumentLayout = {
     val __obj = js.Dynamic.literal(dimensions = dimensions.asInstanceOf[js.Any], getPageDimensions = js.Any.fromFunction1(getPageDimensions), getPageInfo = js.Any.fromFunction1(getPageInfo), getPageOffset = js.Any.fromFunction2(getPageOffset), getPageRegion = js.Any.fromFunction2(getPageRegion), getPageToViewportCenterOffset = js.Any.fromFunction2(getPageToViewportCenterOffset), pageGroups = pageGroups.asInstanceOf[js.Any])

@@ -1,6 +1,8 @@
 package typings.stellarSdk
 
 import typings.std.Error
+import typings.stellarSdk.anon.Data
+import typings.stellarSdk.anon.Status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,8 +50,8 @@ object errorsMod extends js.Object {
     override var message: String = js.native
     /* CompleteClass */
     override var name: String = js.native
-    var response: AnonData = js.native
-    def getResponse(): AnonStatus = js.native
+    var response: Data = js.native
+    def getResponse(): Status = js.native
   }
   
   @js.native

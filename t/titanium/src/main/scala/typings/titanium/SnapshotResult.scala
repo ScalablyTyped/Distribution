@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
   */
 trait SnapshotResult extends js.Object {
   /**
-  	 * Error message, if any returned.
-  	 */
+    * Error message, if any returned.
+    */
   var error: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * The snapshot image.
-  	 */
+    * The snapshot image.
+    */
   var snapshot: js.UndefOr[Blob] = js.undefined
   /**
-  	 * Indicates if the snapshot taken.
-  	 */
+    * Indicates if the snapshot taken.
+    */
   var success: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -29,7 +29,7 @@ object SnapshotResult {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotResult]
   }
 }

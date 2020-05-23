@@ -4,27 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FactorGradient")
-@js.native
-class FactorGradient () extends IValueGradient {
+trait FactorGradient extends IValueGradient {
   /**
     * Gets or sets first associated factor
     */
-  var factor1: Double = js.native
+  var factor1: Double
   /**
     * Gets or sets second associated factor
     */
-  var factor2: js.UndefOr[Double] = js.native
-  /**
-    * Gets or sets the gradient value (between 0 and 1)
-    */
-  /* CompleteClass */
-  override var gradient: Double = js.native
+  var factor2: js.UndefOr[Double] = js.undefined
   /**
     * Will get a number picked randomly between factor1 and factor2.
     * If factor2 is undefined then factor1 will be used
     * @returns the picked number
     */
-  def getFactor(): Double = js.native
+  def getFactor(): Double
+}
+
+object FactorGradient {
+  @scala.inline
+  def apply(
+    factor1: Double,
+    getFactor: () => Double,
+    gradient: Double,
+    factor2: js.UndefOr[Double] = js.undefined
+  ): FactorGradient = {
+    val __obj = js.Dynamic.literal(factor1 = factor1.asInstanceOf[js.Any], getFactor = js.Any.fromFunction0(getFactor), gradient = gradient.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor2)) __obj.updateDynamic("factor2")(factor2.get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FactorGradient]
+  }
 }
 

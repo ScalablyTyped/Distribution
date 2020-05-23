@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.detailsListTypesMod
 
-import typings.officeUiFabricReact.AnonCallback
+import typings.officeUiFabricReact.anon.Callback
 import typings.officeUiFabricReact.detailsFooterTypesMod.IDetailsFooterProps
 import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderProps
 import typings.officeUiFabricReact.detailsListBaseMod.DetailsListBase
@@ -16,8 +16,8 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
-import typings.std.Event_
+import typings.react.mod.global.JSX.Element
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
@@ -34,62 +34,54 @@ import scala.scalajs.js.annotation._
 trait IDetailsListProps
   extends IBaseProps[IDetailsList]
      with IWithViewportProps {
-  /** A text summary of the table set via aria-label. */
+  /** Accessible label describing or summarizing the list. */
   var ariaLabel: js.UndefOr[String] = js.undefined
-  /** Aria label for grid in details list. */
+  /** Accessible label for the grid within the list. */
   var ariaLabelForGrid: js.UndefOr[String] = js.undefined
-  /** The aria-label attribute to stamp out on the list header */
+  /** Accessible label for the list header. */
   var ariaLabelForListHeader: js.UndefOr[String] = js.undefined
-  /** The aria-label attribute to stamp out on select all checkbox for the list */
+  /** Accessible label for the select all checkbox. */
   var ariaLabelForSelectAllCheckbox: js.UndefOr[String] = js.undefined
-  /**
-    * An ARIA label for the name of the selection column, for localization.
-    */
+  /** Accessible label for the name of the selection column. */
   var ariaLabelForSelectionColumn: js.UndefOr[String] = js.undefined
   /**
     * Props impacting the render style of cells. Since these have an impact on calculated column widths, they are
     * handled separately from normal theme styling, but they are passed to the styling system.
     */
   var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
-  /** Check button aria label for details list. */
+  /** Accessible label for the check button. */
   var checkButtonAriaLabel: js.UndefOr[String] = js.undefined
-  /**
-    * Optional class name to add to the cell of a checkbox
-    */
+  /** Class name to add to the cell of a checkbox. */
   var checkboxCellClassName: js.UndefOr[String] = js.undefined
   /**
     * Controls the visibility of selection check box.
     * @defaultvalue CheckboxVisibility.onHover
     */
   var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.undefined
-  /** Optional class name to add to the root element. */
+  /** Class name to add to the root element. */
   var className: js.UndefOr[String] = js.undefined
-  /**
-    * Options for column re-order using drag and drop
-    */
+  /** Options for column reordering using drag and drop. */
   var columnReorderOptions: js.UndefOr[IColumnReorderOptions] = js.undefined
-  /** Given column defitions. If none are provided, default columns will be created based on the item's properties. */
+  /** column defitions. If none are provided, default columns will be created based on the items' properties. */
   var columns: js.UndefOr[js.Array[IColumn]] = js.undefined
-  /** Whether the component should render in compact mode. Set to false by default */
+  /**
+    * Whether to render in compact mode.
+    * @defaultvalue false
+    */
   var compact: js.UndefOr[Boolean] = js.undefined
   /** Controls how the list contrains overflow. */
   var constrainMode: js.UndefOr[ConstrainMode] = js.undefined
-  /**
-    * Whether or not to disable the built-in SelectionZone, so the host component can provide its own.
-    */
+  /** Whether to disable the built-in SelectionZone, so the host component can provide its own. */
   var disableSelectionZone: js.UndefOr[Boolean] = js.undefined
   /** Map of callback functions related to row drag and drop functionality. */
   var dragDropEvents: js.UndefOr[IDragDropEvents] = js.undefined
-  /**
-    * Whether to animate updates
-    */
+  /** Whether to animate updates */
   var enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Whether or not the selection zone should enter modal state on touch.
-    */
+  /** Whether the selection zone should enter modal state on touch. */
   var enterModalSelectionOnTouch: js.UndefOr[Boolean] = js.undefined
   /**
-    * If provided, will be the "default" item column cell value return. column getValueKey can override getCellValue.
+    * If provided, will be the "default" item column cell value return.
+    * A column's `getValueKey` can override `getCellValueKey`.
     */
   var getCellValueKey: js.UndefOr[
     js.Function3[
@@ -99,41 +91,37 @@ trait IDetailsListProps
       String
     ]
   ] = js.undefined
-  /**
-    * Optional function to override default group height calculation used by list virtualization.
-    */
+  /** Callback to override default group height calculation used by list virtualization. */
   var getGroupHeight: js.UndefOr[js.Function2[/* group */ IGroup, /* groupIndex */ Double, Double]] = js.undefined
   /**
     * Callback to get the item key, to be used in the selection and on render.
     * Must be provided if sorting or filtering is enabled.
     */
   var getKey: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]] = js.undefined
-  /** Callback to get the aria-describedby IDs (space separated strings) of the elements that describe the item. */
+  /** Callback to get the aria-describedby IDs (space-separated strings) of elements that describe the item. */
   var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
   /** Callback to get the aria-label string for a given item. */
   var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
-  /** Optional override properties to render groups. */
+  /** Override properties to render groups. */
   var groupProps: js.UndefOr[IDetailsGroupRenderProps] = js.undefined
-  /** Optional grouping instructions. The definition for IGroup can be found under the GroupedList component. */
+  /** Grouping instructions. */
   var groups: js.UndefOr[js.Array[IGroup]] = js.undefined
-  /** Optional override for the indent width used for group nesting. */
+  /** Override for the indent width used for group nesting. */
   var indentWidth: js.UndefOr[Double] = js.undefined
-  /**
-    * Optional default focused index to set focus to once the items have rendered and the index exists.
-    */
+  /** Default index to set focus to once the items have rendered and the index exists. */
   var initialFocusedIndex: js.UndefOr[Double] = js.undefined
   /**
-    * Controls the visibility of the details header.
+    * Controls the visibility of the header.
     * @defaultvalue true
     */
   var isHeaderVisible: js.UndefOr[Boolean] = js.undefined
-  /** Set this to true to indicate that the items being displayed is placeholder data. */
+  /** Set this to true to indicate that the items being displayed are placeholder data. */
   var isPlaceholderData: js.UndefOr[Boolean] = js.undefined
   /** The items to render. */
   var items: js.Array[_]
   /** Controls how the columns are adjusted. */
   var layoutMode: js.UndefOr[DetailsListLayoutMode] = js.undefined
-  /** Optional properties to pass through to the list components being rendered. */
+  /** Properties to pass through to the List components being rendered. */
   var listProps: js.UndefOr[IListProps[_]] = js.undefined
   /**
     * The minimum mouse move distance to interpret the action as drag event.
@@ -177,17 +165,17 @@ trait IDetailsListProps
       Unit
     ]
   ] = js.undefined
-  /** Callback for when the details list has been updated. Useful for telemetry tracking externally. */
+  /** Callback for when the list has been updated. Useful for telemetry tracking externally. */
   var onDidUpdate: js.UndefOr[js.Function1[/* detailsList */ js.UndefOr[DetailsListBase], Unit]] = js.undefined
   /**
     * Callback for when the context menu of an item has been accessed.
-    * If undefined or false are returned, ev.preventDefault() will be called.
+    * If undefined or false is returned, `ev.preventDefault()` will be called.
     */
   var onItemContextMenu: js.UndefOr[
     js.Function3[
       /* item */ js.UndefOr[js.Any], 
       /* index */ js.UndefOr[Double], 
-      /* ev */ js.UndefOr[Event_], 
+      /* ev */ js.UndefOr[Event], 
       Unit | Boolean
     ]
   ] = js.undefined
@@ -196,26 +184,20 @@ trait IDetailsListProps
     js.Function3[
       /* item */ js.UndefOr[js.Any], 
       /* index */ js.UndefOr[Double], 
-      /* ev */ js.UndefOr[Event_], 
+      /* ev */ js.UndefOr[Event], 
       Unit
     ]
   ] = js.undefined
-  /**
-    * If provided, can be used to render a custom checkbox
-    */
+  /**  If provided, can be used to render a custom checkbox. */
   var onRenderCheckbox: js.UndefOr[IRenderFunction[IDetailsListCheckboxProps]] = js.undefined
-  /**
-    * An override to render the details footer.
-    */
+  /** An override to render the details footer. */
   var onRenderDetailsFooter: js.UndefOr[IRenderFunction[IDetailsFooterProps]] = js.undefined
-  /**
-    * An override to render the details header.
-    */
+  /** An override to render the details header. */
   var onRenderDetailsHeader: js.UndefOr[IRenderFunction[IDetailsHeaderProps]] = js.undefined
   /**
     * If provided, will be the "default" item column renderer method.
     * This affects cells within the rows, not the rows themselves.
-    * If a column definition provides its own onRender method, that will be used instead of this.
+    * If a column definition provides its own `onRender` method, that will be used instead of this.
     */
   var onRenderItemColumn: js.UndefOr[
     js.Function3[
@@ -234,7 +216,7 @@ trait IDetailsListProps
     ]
   ] = js.undefined
   /**
-    *  If provided, will allow the caller to override the default row rendering.
+    * Callback to override the default row rendering.
     */
   var onRenderRow: js.UndefOr[IRenderFunction[IDetailsRowProps]] = js.undefined
   /**
@@ -251,16 +233,18 @@ trait IDetailsListProps
     js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], Unit]
   ] = js.undefined
   /**
-    * Optional callback to determine whether the list should be rendered in full, or virtualized.
+    * Callback to determine whether the list should be rendered in full, or virtualized.
+    *
     * Virtualization will add and remove pages of items as the user scrolls them into the visible range.
     * This benefits larger list scenarios by reducing the DOM on the screen, but can negatively affect performance
     * for smaller lists.
+    *
     * The default implementation will virtualize when this callback is not provided.
     */
   var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[_], Boolean]] = js.undefined
   /** Event names and corresponding callbacks that will be registered to rendered row elements. */
-  var rowElementEventMap: js.UndefOr[js.Array[AnonCallback]] = js.undefined
-  /** Optional selection model to track selection state.  */
+  var rowElementEventMap: js.UndefOr[js.Array[Callback]] = js.undefined
+  /** Selection model to track selection state.  */
   var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.undefined
   /** Controls how/if the details list manages selection. Options include none, single, multiple */
   var selectionMode: js.UndefOr[SelectionMode] = js.undefined
@@ -271,20 +255,19 @@ trait IDetailsListProps
     **/
   var selectionPreservedOnEmptyClick: js.UndefOr[Boolean] = js.undefined
   /**
-    * Addition props to pass through to the selection zone created by default.
+    * Additional props to pass through to the SelectionZone created by default.
     */
   var selectionZoneProps: js.UndefOr[ISelectionZoneProps] = js.undefined
   /** A key that uniquely identifies the given items. If provided, the selection will be reset when the key changes. */
   var setKey: js.UndefOr[String] = js.undefined
-  /** Boolean value to indicate if the role application should be applied on details list. Set to false by default */
+  /**
+    * Whether the role `application` should be applied to the list.
+    * @defaultvalue false
+    */
   var shouldApplyApplicationRole: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Style function to be passed in to override the themed or default styles
-    */
+  /** Custom overrides to the themed or default styles. */
   var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsListStyleProps, IDetailsListStyles]] = js.undefined
-  /**
-    * Theme provided by the Higher Order Component
-    */
+  /** Theme provided by a higher-order component. */
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
     * Whether to use fast icon and check components. The icons can't be targeted by customization
@@ -298,11 +281,11 @@ trait IDetailsListProps
     */
   var usePageCache: js.UndefOr[Boolean] = js.undefined
   /**
-    * Rerender DetailsRow only when props changed. Might cause regression when depending on external updates.
+    * Whether to re-render a row only when props changed. Might cause regression when depending on external updates.
     * @defaultvalue false
     */
   var useReducedRowRenderer: js.UndefOr[Boolean] = js.undefined
-  /** Viewport, provided by the withViewport decorator. */
+  /** Viewport info, provided by the `withViewport` decorator. */
   var viewport: js.UndefOr[IViewport] = js.undefined
 }
 
@@ -336,20 +319,20 @@ object IDetailsListProps {
     getRowAriaLabel: /* item */ js.Any => String = null,
     groupProps: IDetailsGroupRenderProps = null,
     groups: js.Array[IGroup] = null,
-    indentWidth: Int | Double = null,
-    initialFocusedIndex: Int | Double = null,
+    indentWidth: js.UndefOr[Double] = js.undefined,
+    initialFocusedIndex: js.UndefOr[Double] = js.undefined,
     isHeaderVisible: js.UndefOr[Boolean] = js.undefined,
     isPlaceholderData: js.UndefOr[Boolean] = js.undefined,
     layoutMode: DetailsListLayoutMode = null,
     listProps: IListProps[_] = null,
-    minimumPixelsForDrag: Int | Double = null,
+    minimumPixelsForDrag: js.UndefOr[Double] = js.undefined,
     onActiveItemChanged: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[FocusEvent[HTMLElement]]) => Unit = null,
     onColumnHeaderClick: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* column */ js.UndefOr[IColumn]) => Unit = null,
     onColumnHeaderContextMenu: (/* column */ js.UndefOr[IColumn], /* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]]) => Unit = null,
     onColumnResize: (/* column */ js.UndefOr[IColumn], /* newWidth */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Unit = null,
     onDidUpdate: /* detailsList */ js.UndefOr[DetailsListBase] => Unit = null,
-    onItemContextMenu: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event_]) => Unit | Boolean = null,
-    onItemInvoked: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event_]) => Unit = null,
+    onItemContextMenu: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit | Boolean = null,
+    onItemInvoked: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit = null,
     onRenderCheckbox: (/* props */ js.UndefOr[IDetailsListCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsListCheckboxProps], Element | Null]]) => Element | Null = null,
     onRenderDetailsFooter: (/* props */ js.UndefOr[IDetailsFooterProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsFooterProps], Element | Null]]) => Element | Null = null,
     onRenderDetailsHeader: (/* props */ js.UndefOr[IDetailsHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsHeaderProps], Element | Null]]) => Element | Null = null,
@@ -359,7 +342,7 @@ object IDetailsListProps {
     onRowDidMount: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit = null,
     onRowWillUnmount: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit = null,
     onShouldVirtualize: /* props */ IListProps[_] => Boolean = null,
-    rowElementEventMap: js.Array[AnonCallback] = null,
+    rowElementEventMap: js.Array[Callback] = null,
     selection: ISelection[IObjectWithKey] = null,
     selectionMode: SelectionMode = null,
     selectionPreservedOnEmptyClick: js.UndefOr[Boolean] = js.undefined,
@@ -387,13 +370,13 @@ object IDetailsListProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (columnReorderOptions != null) __obj.updateDynamic("columnReorderOptions")(columnReorderOptions.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (constrainMode != null) __obj.updateDynamic("constrainMode")(constrainMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSelectionZone)) __obj.updateDynamic("disableSelectionZone")(disableSelectionZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSelectionZone)) __obj.updateDynamic("disableSelectionZone")(disableSelectionZone.get.asInstanceOf[js.Any])
     if (dragDropEvents != null) __obj.updateDynamic("dragDropEvents")(dragDropEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterModalSelectionOnTouch)) __obj.updateDynamic("enterModalSelectionOnTouch")(enterModalSelectionOnTouch.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterModalSelectionOnTouch)) __obj.updateDynamic("enterModalSelectionOnTouch")(enterModalSelectionOnTouch.get.asInstanceOf[js.Any])
     if (getCellValueKey != null) __obj.updateDynamic("getCellValueKey")(js.Any.fromFunction3(getCellValueKey))
     if (getGroupHeight != null) __obj.updateDynamic("getGroupHeight")(js.Any.fromFunction2(getGroupHeight))
     if (getKey != null) __obj.updateDynamic("getKey")(js.Any.fromFunction2(getKey))
@@ -401,13 +384,13 @@ object IDetailsListProps {
     if (getRowAriaLabel != null) __obj.updateDynamic("getRowAriaLabel")(js.Any.fromFunction1(getRowAriaLabel))
     if (groupProps != null) __obj.updateDynamic("groupProps")(groupProps.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
-    if (initialFocusedIndex != null) __obj.updateDynamic("initialFocusedIndex")(initialFocusedIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHeaderVisible)) __obj.updateDynamic("isHeaderVisible")(isHeaderVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPlaceholderData)) __obj.updateDynamic("isPlaceholderData")(isPlaceholderData.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentWidth)) __obj.updateDynamic("indentWidth")(indentWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialFocusedIndex)) __obj.updateDynamic("initialFocusedIndex")(initialFocusedIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHeaderVisible)) __obj.updateDynamic("isHeaderVisible")(isHeaderVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlaceholderData)) __obj.updateDynamic("isPlaceholderData")(isPlaceholderData.get.asInstanceOf[js.Any])
     if (layoutMode != null) __obj.updateDynamic("layoutMode")(layoutMode.asInstanceOf[js.Any])
     if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
-    if (minimumPixelsForDrag != null) __obj.updateDynamic("minimumPixelsForDrag")(minimumPixelsForDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumPixelsForDrag)) __obj.updateDynamic("minimumPixelsForDrag")(minimumPixelsForDrag.get.asInstanceOf[js.Any])
     if (onActiveItemChanged != null) __obj.updateDynamic("onActiveItemChanged")(js.Any.fromFunction3(onActiveItemChanged))
     if (onColumnHeaderClick != null) __obj.updateDynamic("onColumnHeaderClick")(js.Any.fromFunction2(onColumnHeaderClick))
     if (onColumnHeaderContextMenu != null) __obj.updateDynamic("onColumnHeaderContextMenu")(js.Any.fromFunction2(onColumnHeaderContextMenu))
@@ -427,16 +410,16 @@ object IDetailsListProps {
     if (rowElementEventMap != null) __obj.updateDynamic("rowElementEventMap")(rowElementEventMap.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectionPreservedOnEmptyClick)) __obj.updateDynamic("selectionPreservedOnEmptyClick")(selectionPreservedOnEmptyClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionPreservedOnEmptyClick)) __obj.updateDynamic("selectionPreservedOnEmptyClick")(selectionPreservedOnEmptyClick.get.asInstanceOf[js.Any])
     if (selectionZoneProps != null) __obj.updateDynamic("selectionZoneProps")(selectionZoneProps.asInstanceOf[js.Any])
     if (setKey != null) __obj.updateDynamic("setKey")(setKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldApplyApplicationRole)) __obj.updateDynamic("shouldApplyApplicationRole")(shouldApplyApplicationRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipViewportMeasures)) __obj.updateDynamic("skipViewportMeasures")(skipViewportMeasures.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldApplyApplicationRole)) __obj.updateDynamic("shouldApplyApplicationRole")(shouldApplyApplicationRole.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipViewportMeasures)) __obj.updateDynamic("skipViewportMeasures")(skipViewportMeasures.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFastIcons)) __obj.updateDynamic("useFastIcons")(useFastIcons.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePageCache)) __obj.updateDynamic("usePageCache")(usePageCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(useReducedRowRenderer)) __obj.updateDynamic("useReducedRowRenderer")(useReducedRowRenderer.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFastIcons)) __obj.updateDynamic("useFastIcons")(useFastIcons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePageCache)) __obj.updateDynamic("usePageCache")(usePageCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useReducedRowRenderer)) __obj.updateDynamic("useReducedRowRenderer")(useReducedRowRenderer.get.asInstanceOf[js.Any])
     if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsListProps]
   }

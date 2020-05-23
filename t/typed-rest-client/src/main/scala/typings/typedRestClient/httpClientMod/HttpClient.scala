@@ -13,14 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpClient () extends IHttpClient {
   def this(userAgent: String) = this()
-  def this(userAgent: js.UndefOr[scala.Nothing], handlers: js.Array[IRequestHandler]) = this()
   def this(userAgent: String, handlers: js.Array[IRequestHandler]) = this()
   def this(userAgent: Null, handlers: js.Array[IRequestHandler]) = this()
-  def this(
-    userAgent: js.UndefOr[scala.Nothing],
-    handlers: js.Array[IRequestHandler],
-    requestOptions: IRequestOptions
-  ) = this()
   def this(userAgent: String, handlers: js.Array[IRequestHandler], requestOptions: IRequestOptions) = this()
   def this(userAgent: Null, handlers: js.Array[IRequestHandler], requestOptions: IRequestOptions) = this()
   var _agent: js.Any = js.native

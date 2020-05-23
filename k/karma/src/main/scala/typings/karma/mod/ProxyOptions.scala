@@ -18,7 +18,7 @@ object ProxyOptions {
   @scala.inline
   def apply(target: String, changeOrigin: js.UndefOr[Boolean] = js.undefined): ProxyOptions = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-    if (!js.isUndefined(changeOrigin)) __obj.updateDynamic("changeOrigin")(changeOrigin.asInstanceOf[js.Any])
+    if (!js.isUndefined(changeOrigin)) __obj.updateDynamic("changeOrigin")(changeOrigin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyOptions]
   }
 }

@@ -24,10 +24,10 @@ object Response {
     headers: IncomingHttpHeaders,
     json: () => js.Promise[_],
     text: () => js.Promise[String],
-    statusCode: Int | Double = null
+    statusCode: js.UndefOr[Double] = js.undefined
   ): Response = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], coreRes = coreRes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

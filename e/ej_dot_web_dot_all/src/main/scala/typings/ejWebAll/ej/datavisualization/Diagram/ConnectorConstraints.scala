@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,71 +93,6 @@ object ConnectorConstraints extends js.Object {
   //Enables connector to be selected
   @js.native
   sealed trait Select extends ConnectorConstraints
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ConnectorConstraints with Double] = js.native
-  /* 10 */ @js.native
-  object AllowDrop extends TopLevel[AllowDrop with Double]
-  
-  /* 16 */ @js.native
-  object BridgeObstacle extends TopLevel[BridgeObstacle with Double]
-  
-  /* 7 */ @js.native
-  object Bridging extends TopLevel[Bridging with Double]
-  
-  /* 13 */ @js.native
-  object CrispEdges extends TopLevel[CrispEdges with Double]
-  
-  /* 20 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 2 */ @js.native
-  object Delete extends TopLevel[Delete with Double]
-  
-  /* 3 */ @js.native
-  object Drag extends TopLevel[Drag with Double]
-  
-  /* 8 */ @js.native
-  object DragLabel extends TopLevel[DragLabel with Double]
-  
-  /* 15 */ @js.native
-  object DragLimit extends TopLevel[DragLimit with Double]
-  
-  /* 6 */ @js.native
-  object DragSegmentThumb extends TopLevel[DragSegmentThumb with Double]
-  
-  /* 4 */ @js.native
-  object DragSourceEnd extends TopLevel[DragSourceEnd with Double]
-  
-  /* 5 */ @js.native
-  object DragTargetEnd extends TopLevel[DragTargetEnd with Double]
-  
-  /* 9 */ @js.native
-  object InheritBridging extends TopLevel[InheritBridging with Double]
-  
-  /* 14 */ @js.native
-  object InheritCrispEdges extends TopLevel[InheritCrispEdges with Double]
-  
-  /* 19 */ @js.native
-  object InheritRouting extends TopLevel[InheritRouting with Double]
-  
-  /* 11 */ @js.native
-  object InheritTooltip extends TopLevel[InheritTooltip with Double]
-  
-  /* 17 */ @js.native
-  object Interaction extends TopLevel[Interaction with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 12 */ @js.native
-  object PointerEvents extends TopLevel[PointerEvents with Double]
-  
-  /* 18 */ @js.native
-  object Routing extends TopLevel[Routing with Double]
-  
-  /* 1 */ @js.native
-  object Select extends TopLevel[Select with Double]
   
 }
 

@@ -28,8 +28,8 @@ trait PlusMapsMarker extends js.Object {
   /**
     * 覆盖物显示到最上层
     * 常用于覆盖物相互覆盖时调整覆盖物的显示顺序。
-    * 	只有添加到地图上的覆盖物才能看到效果；
-    * 	如果覆盖物对象已经在地图上隐藏再调用此方法将无效果。
+    *     只有添加到地图上的覆盖物才能看到效果；
+    *     如果覆盖物对象已经在地图上隐藏再调用此方法将无效果。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -69,7 +69,7 @@ trait PlusMapsMarker extends js.Object {
   /**
     * 设置标点的气泡内容
     * 设置气泡内容后，用户点击标点时弹出则弹出气泡。
-    * 	注意：用户点击标点时先弹出标点关联的气泡，再响应标点的onclick事件。
+    *     注意：用户点击标点时先弹出标点关联的气泡，再响应标点的onclick事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -79,8 +79,8 @@ trait PlusMapsMarker extends js.Object {
   /**
     * 设置标点的是否允许拖拽
     * 设置标点可拖拽后，用户按住标点后拖动，标点会跟随手的拖拽而移动。
-    * 	拖拽后会更新标点的坐标信息。
-    * 	注：拖动前需要先在标点上长按。
+    *     拖拽后会更新标点的坐标信息。
+    *     注：拖动前需要先在标点上长按。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
@@ -97,7 +97,7 @@ trait PlusMapsMarker extends js.Object {
   /**
     * 设置标点上显示的图标数组
     * 设置图标数组后则按照指定的间隔时间轮播数组中图标。
-    * 	设置图标数组后将忽略setIcon方法设置的图标，未设置则显示setIcon设置的图标。
+    *     设置图标数组后将忽略setIcon方法设置的图标，未设置则显示setIcon设置的图标。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */

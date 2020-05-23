@@ -22,17 +22,13 @@ object ValidationError {
     column: Double,
     message: String,
     name: String,
-    code: Int | Double = null,
-    domain: Int | Double = null,
-    level: Int | Double = null,
-    line: Int | Double = null,
+    code: Double = null.asInstanceOf[Double],
+    domain: Double = null.asInstanceOf[Double],
+    level: Double = null.asInstanceOf[Double],
+    line: Double = null.asInstanceOf[Double],
     stack: String = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationError]
   }

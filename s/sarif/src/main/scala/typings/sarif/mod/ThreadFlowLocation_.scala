@@ -74,14 +74,14 @@ trait ThreadFlowLocation_ extends js.Object {
 object ThreadFlowLocation_ {
   @scala.inline
   def apply(
-    executionOrder: Int | Double = null,
+    executionOrder: js.UndefOr[Double] = js.undefined,
     executionTimeUtc: String = null,
     importance: importance = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     kinds: js.Array[String] = null,
     location: Location = null,
     module: String = null,
-    nestingLevel: Int | Double = null,
+    nestingLevel: js.UndefOr[Double] = js.undefined,
     properties: PropertyBag = null,
     stack: Stack = null,
     state: StringDictionary[MultiformatMessageString] = null,
@@ -90,14 +90,14 @@ object ThreadFlowLocation_ {
     webResponse: WebResponse = null
   ): ThreadFlowLocation_ = {
     val __obj = js.Dynamic.literal()
-    if (executionOrder != null) __obj.updateDynamic("executionOrder")(executionOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(executionOrder)) __obj.updateDynamic("executionOrder")(executionOrder.get.asInstanceOf[js.Any])
     if (executionTimeUtc != null) __obj.updateDynamic("executionTimeUtc")(executionTimeUtc.asInstanceOf[js.Any])
     if (importance != null) __obj.updateDynamic("importance")(importance.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (kinds != null) __obj.updateDynamic("kinds")(kinds.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
-    if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(nestingLevel)) __obj.updateDynamic("nestingLevel")(nestingLevel.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

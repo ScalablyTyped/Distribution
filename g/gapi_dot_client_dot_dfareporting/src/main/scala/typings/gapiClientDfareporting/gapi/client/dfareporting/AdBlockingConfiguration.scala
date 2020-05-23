@@ -35,8 +35,8 @@ object AdBlockingConfiguration {
     val __obj = js.Dynamic.literal()
     if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl.asInstanceOf[js.Any])
     if (creativeBundleId != null) __obj.updateDynamic("creativeBundleId")(creativeBundleId.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideClickThroughUrl)) __obj.updateDynamic("overrideClickThroughUrl")(overrideClickThroughUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideClickThroughUrl)) __obj.updateDynamic("overrideClickThroughUrl")(overrideClickThroughUrl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdBlockingConfiguration]
   }
 }

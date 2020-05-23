@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief url 处理模块
-	* @detail 
-	*/
+  * @brief url 处理模块
+  * @detail 
+  */
 @JSImport("url", JSImport.Namespace)
 @js.native
 object urlMod extends js.Object {

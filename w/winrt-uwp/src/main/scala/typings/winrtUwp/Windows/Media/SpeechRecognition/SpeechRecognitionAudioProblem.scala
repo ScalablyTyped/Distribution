@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object SpeechRecognitionAudioProblem extends js.Object {
   /** User spoke too slowly. */
   @js.native
   sealed trait tooSlow extends SpeechRecognitionAudioProblem
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SpeechRecognitionAudioProblem with Double] = js.native
-  /* 2 */ @js.native
-  object noSignal extends TopLevel[noSignal with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 5 */ @js.native
-  object tooFast extends TopLevel[tooFast with Double]
-  
-  /* 3 */ @js.native
-  object tooLoud extends TopLevel[tooLoud with Double]
-  
-  /* 1 */ @js.native
-  object tooNoisy extends TopLevel[tooNoisy with Double]
-  
-  /* 4 */ @js.native
-  object tooQuiet extends TopLevel[tooQuiet with Double]
-  
-  /* 6 */ @js.native
-  object tooSlow extends TopLevel[tooSlow with Double]
   
 }
 

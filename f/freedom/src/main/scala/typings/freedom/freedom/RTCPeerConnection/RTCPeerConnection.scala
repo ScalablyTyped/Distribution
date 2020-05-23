@@ -1,7 +1,7 @@
 package typings.freedom.freedom.RTCPeerConnection
 
-import typings.freedom.AnonChannel
-import typings.freedom.AnonStream
+import typings.freedom.anon.Channel
+import typings.freedom.anon.Stream
 import typings.freedom.freedomStrings.onaddstream
 import typings.freedom.freedomStrings.ondatachannel
 import typings.freedom.freedomStrings.onicecandidate
@@ -38,9 +38,9 @@ trait RTCPeerConnection extends js.Object {
   def getStreamById(id: String): js.Promise[String] = js.native
   def on(t: String, f: js.Function): Unit = js.native
   @JSName("on")
-  def on_onaddstream(t: onaddstream, f: js.Function1[/* d */ AnonStream, Unit]): Unit = js.native
+  def on_onaddstream(t: onaddstream, f: js.Function1[/* d */ Stream, Unit]): Unit = js.native
   @JSName("on")
-  def on_ondatachannel(t: ondatachannel, f: js.Function1[/* d */ AnonChannel, Unit]): Unit = js.native
+  def on_ondatachannel(t: ondatachannel, f: js.Function1[/* d */ Channel, Unit]): Unit = js.native
   @JSName("on")
   def on_onicecandidate(t: onicecandidate, f: js.Function1[/* d */ OnIceCandidateEvent, Unit]): Unit = js.native
   @JSName("on")
@@ -48,7 +48,7 @@ trait RTCPeerConnection extends js.Object {
   @JSName("on")
   def on_onnegotiationneeded(t: onnegotiationneeded, f: js.Function0[Unit]): Unit = js.native
   @JSName("on")
-  def on_onremovestream(t: onremovestream, f: js.Function1[/* d */ AnonStream, Unit]): Unit = js.native
+  def on_onremovestream(t: onremovestream, f: js.Function1[/* d */ Stream, Unit]): Unit = js.native
   @JSName("on")
   def on_onsignalingstatechange(t: onsignalingstatechange, f: js.Function0[Unit]): Unit = js.native
   def removeStream(ref: String): js.Promise[Unit] = js.native

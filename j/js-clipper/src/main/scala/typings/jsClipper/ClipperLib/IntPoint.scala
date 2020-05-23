@@ -4,12 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ClipperLib.IntPoint")
-@js.native
-class IntPoint () extends js.Object {
-  def this(PointXY: IntPoint) = this()
-  def this(x: Double, y: Double) = this()
-  var X: Double = js.native
-  var Y: Double = js.native
+trait IntPoint extends js.Object {
+  var X: Double
+  var Y: Double
+}
+
+object IntPoint {
+  @scala.inline
+  def apply(X: Double, Y: Double): IntPoint = {
+    val __obj = js.Dynamic.literal(X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntPoint]
+  }
 }
 

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object formattingMod {
   type RevFormatFn = js.Function3[
-    /* date */ typings.flatpickr.globalsMod._Global_.Date, 
+    /* date */ typings.flatpickr.globalsMod.global.Date, 
     /* data */ java.lang.String, 
     /* locale */ typings.flatpickr.localeMod.Locale, 
-    js.UndefOr[typings.flatpickr.globalsMod._Global_.Date | scala.Unit]
+    js.UndefOr[typings.flatpickr.globalsMod.global.Date | scala.Unit]
   ]
   type RevFormat_ = typings.std.Record[java.lang.String, typings.flatpickr.formattingMod.RevFormatFn]
 }

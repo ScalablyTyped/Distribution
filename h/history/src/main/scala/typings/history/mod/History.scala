@@ -19,10 +19,10 @@ trait History[HistoryLocationState] extends js.Object {
   def goBack(): Unit = js.native
   def goForward(): Unit = js.native
   def listen(listener: LocationListener[HistoryLocationState]): UnregisterCallback = js.native
-  def push(location: LocationDescriptorObject[HistoryLocationState]): Unit = js.native
+  def push(location: LocationDescriptor[HistoryLocationState]): Unit = js.native
   def push(path: Path): Unit = js.native
   def push(path: Path, state: HistoryLocationState): Unit = js.native
-  def replace(location: LocationDescriptorObject[HistoryLocationState]): Unit = js.native
+  def replace(location: LocationDescriptor[HistoryLocationState]): Unit = js.native
   def replace(path: Path): Unit = js.native
   def replace(path: Path, state: HistoryLocationState): Unit = js.native
 }

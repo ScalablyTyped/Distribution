@@ -2,7 +2,7 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.ractive.AnonInstantiable
+import typings.ractive.anon.Instantiable
 import typings.std.DocumentFragment
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -355,12 +355,12 @@ class Ractive[T /* <: Ractive[T] */] () extends js.Object {
   	 * @param opts
   	 */
   def transition(transition: String, node: HTMLElement): js.Promise[Unit] = js.native
-  def transition(transition: String, node: HTMLElement, opts: typings.ractive.TransitionOpts): js.Promise[Unit] = js.native
-  def transition(transition: String, opts: typings.ractive.TransitionOpts): js.Promise[Unit] = js.native
+  def transition(transition: String, node: HTMLElement, opts: typings.ractive.anon.TransitionOpts): js.Promise[Unit] = js.native
+  def transition(transition: String, opts: typings.ractive.anon.TransitionOpts): js.Promise[Unit] = js.native
   def transition(transition: Transition): js.Promise[Unit] = js.native
   def transition(transition: Transition, node: HTMLElement): js.Promise[Unit] = js.native
-  def transition(transition: Transition, node: HTMLElement, opts: typings.ractive.TransitionOpts): js.Promise[Unit] = js.native
-  def transition(transition: Transition, opts: typings.ractive.TransitionOpts): js.Promise[Unit] = js.native
+  def transition(transition: Transition, node: HTMLElement, opts: typings.ractive.anon.TransitionOpts): js.Promise[Unit] = js.native
+  def transition(transition: Transition, opts: typings.ractive.anon.TransitionOpts): js.Promise[Unit] = js.native
   /**
   	 * Remove the link at the given keypath.
   	 * @param keypath
@@ -418,7 +418,7 @@ object Ractive extends js.Object {
   /** The parent constructor used to create this constructor. */
   var Parent: Static[Ractive[Ractive[_]]] = js.native
   /** The Ractive constructor used to create this constructor. */
-  var Ractive: AnonInstantiable = js.native
+  var Ractive: Instantiable = js.native
   val VERSION: String = js.native
   var adaptors: Registry[Adaptor] = js.native
   var components: Registry[Component] = js.native

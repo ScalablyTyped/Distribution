@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.SemanticInfoChain")
 @js.native
-class SemanticInfoChain protected () extends js.Object {
-  def this(compiler: TypeScriptCompiler, logger: ILogger) = this()
+trait SemanticInfoChain extends js.Object {
   var _binder: js.Any = js.native
   var _fileNames: js.Any = js.native
   var _resolver: js.Any = js.native

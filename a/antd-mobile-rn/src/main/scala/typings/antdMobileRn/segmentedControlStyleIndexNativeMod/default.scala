@@ -1,10 +1,10 @@
 package typings.antdMobileRn.segmentedControlStyleIndexNativeMod
 
-import typings.antdMobileRn.AnonAlignItemsBorderLeftWidth
-import typings.antdMobileRn.AnonBorderBottomLeftRadiusBorderTopLeftRadius
-import typings.antdMobileRn.AnonBorderColorBorderRadius
-import typings.antdMobileRn.AnonBorderTopRightRadius
-import typings.antdMobileRn.AnonTextAlignString
+import typings.antdMobileRn.anon.AlignItemsBorderLeftWidth
+import typings.antdMobileRn.anon.BorderBottomLeftRadiusBorderTopLeftRadius
+import typings.antdMobileRn.anon.BorderColorBorderRadius
+import typings.antdMobileRn.anon.BorderTopRightRadius
+import typings.antdMobileRn.anon.TextAlignString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 @JSImport("antd-mobile-rn/lib/segmented-control/style/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var item: AnonAlignItemsBorderLeftWidth = js.native
-  var itemLeftRadius: AnonBorderBottomLeftRadiusBorderTopLeftRadius = js.native
-  var itemRightRadius: AnonBorderTopRightRadius = js.native
-  var itemText: AnonTextAlignString = js.native
-  var segment: AnonBorderColorBorderRadius = js.native
+  var item: AlignItemsBorderLeftWidth = js.native
+  var itemLeftRadius: BorderBottomLeftRadiusBorderTopLeftRadius = js.native
+  var itemRightRadius: BorderTopRightRadius = js.native
+  var itemText: TextAlignString = js.native
+  var segment: BorderColorBorderRadius = js.native
 }
 

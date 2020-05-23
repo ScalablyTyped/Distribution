@@ -1,6 +1,7 @@
 package typings.emojiJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.emojiJs.anon.Mask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ object mod extends js.Object {
     var avoid_ms_emoji: Boolean = js.native
     var colons_mode: Boolean = js.native
     var img_set: String = js.native
-    var img_sets: StringDictionary[AnonMask] = js.native
+    var img_sets: StringDictionary[Mask] = js.native
     var img_suffix: String = js.native
     var include_text: Boolean = js.native
     var include_title: Boolean = js.native

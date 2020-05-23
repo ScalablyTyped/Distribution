@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojmessagesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonAriaLiveRegion
+import typings.oracleOraclejet.anon.AriaLiveRegion
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojmessageMod.ojMessage.DisplayOptions
 import typings.oracleOraclejet.ojmessageMod.ojMessage.Message
@@ -19,18 +19,18 @@ trait ojMessagesSettablePropertiesLenient
   var displayOptions: js.UndefOr[DisplayOptions] = js.undefined
   var messages: js.UndefOr[js.Array[Message] | (DataProvider[_, Message])] = js.undefined
   var position: js.UndefOr[Position] = js.undefined
-  var translations: js.UndefOr[AnonAriaLiveRegion] = js.undefined
+  var translations: js.UndefOr[AriaLiveRegion] = js.undefined
 }
 
 object ojMessagesSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     display: general | notification = null,
     displayOptions: DisplayOptions = null,
     messages: js.Array[Message] | (DataProvider[_, Message]) = null,
     position: Position = null,
-    translations: AnonAriaLiveRegion = null
+    translations: AriaLiveRegion = null
   ): ojMessagesSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

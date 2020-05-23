@@ -11,10 +11,10 @@ trait FilterUppercaseDetails extends js.Object {
 
 object FilterUppercaseDetails {
   @scala.inline
-  def apply(field: String = null, fieldIndex: Int | Double = null): FilterUppercaseDetails = {
+  def apply(field: String = null, fieldIndex: js.UndefOr[Double] = js.undefined): FilterUppercaseDetails = {
     val __obj = js.Dynamic.literal()
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (fieldIndex != null) __obj.updateDynamic("fieldIndex")(fieldIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldIndex)) __obj.updateDynamic("fieldIndex")(fieldIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterUppercaseDetails]
   }
 }

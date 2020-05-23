@@ -34,11 +34,11 @@ object TrustedAdvisorResourceDetail {
     metadata: StringList,
     resourceId: String,
     status: String,
-    isSuppressed: js.UndefOr[scala.Boolean] = js.undefined,
+    isSuppressed: js.UndefOr[Boolean] = js.undefined,
     region: String = null
   ): TrustedAdvisorResourceDetail = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSuppressed)) __obj.updateDynamic("isSuppressed")(isSuppressed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSuppressed)) __obj.updateDynamic("isSuppressed")(isSuppressed.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustedAdvisorResourceDetail]
   }

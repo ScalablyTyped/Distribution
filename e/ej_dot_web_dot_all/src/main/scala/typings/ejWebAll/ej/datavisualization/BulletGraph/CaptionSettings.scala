@@ -54,25 +54,25 @@ object CaptionSettings {
     font: CaptionSettingsFont = null,
     indicator: CaptionSettingsIndicator = null,
     location: CaptionSettingsLocation = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     subTitle: CaptionSettingsSubTitle = null,
     text: String = null,
     textAlignment: TextAlignment | String = null,
     textAnchor: TextAnchor | String = null,
-    textAngle: Int | Double = null,
+    textAngle: js.UndefOr[Double] = js.undefined,
     textPosition: TextPosition | String = null
   ): CaptionSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
     if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
-    if (textAngle != null) __obj.updateDynamic("textAngle")(textAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(textAngle)) __obj.updateDynamic("textAngle")(textAngle.get.asInstanceOf[js.Any])
     if (textPosition != null) __obj.updateDynamic("textPosition")(textPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSettings]
   }

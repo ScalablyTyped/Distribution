@@ -1,6 +1,6 @@
 package typings.muiDatatables.mod
 
-import typings.muiDatatables.AnonRowIndex
+import typings.muiDatatables.anon.RowIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait MUIDataTableBody extends js.Object {
   var count: Double
   var data: js.Array[js.Object | (js.Array[Double | String])]
   var filterList: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
-  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex, Unit]] = js.undefined
+  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, Unit]] = js.undefined
   var options: js.Object
   var searchText: js.UndefOr[String] = js.undefined
   var selectRowUpdate: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
@@ -28,7 +28,7 @@ object MUIDataTableBody {
     data: js.Array[js.Object | (js.Array[Double | String])],
     options: js.Object,
     filterList: js.Array[js.Array[String]] = null,
-    onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex) => Unit = null,
+    onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit = null,
     searchText: String = null,
     selectRowUpdate: /* args */ js.Any => _ = null,
     selectedRows: js.Object = null,

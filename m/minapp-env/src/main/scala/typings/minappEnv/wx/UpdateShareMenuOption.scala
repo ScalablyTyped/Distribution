@@ -42,10 +42,10 @@ object UpdateShareMenuOption {
     if (activityId != null) __obj.updateDynamic("activityId")(activityId.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(isUpdatableMessage)) __obj.updateDynamic("isUpdatableMessage")(isUpdatableMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUpdatableMessage)) __obj.updateDynamic("isUpdatableMessage")(isUpdatableMessage.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (templateInfo != null) __obj.updateDynamic("templateInfo")(templateInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(withShareTicket)) __obj.updateDynamic("withShareTicket")(withShareTicket.asInstanceOf[js.Any])
+    if (!js.isUndefined(withShareTicket)) __obj.updateDynamic("withShareTicket")(withShareTicket.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateShareMenuOption]
   }
 }

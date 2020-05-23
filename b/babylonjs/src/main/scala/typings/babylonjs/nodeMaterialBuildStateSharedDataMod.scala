@@ -1,6 +1,8 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babylonjs.anon.EmitFragment
+import typings.babylonjs.anon.NeedAlphaBlending
 import typings.babylonjs.inputBlockMod.InputBlock
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.reflectionTextureBlockMod.ReflectionTextureBlock
@@ -43,7 +45,7 @@ object nodeMaterialBuildStateSharedDataMod extends js.Object {
     /**
       * List of compilation checks
       */
-    var checks: AnonEmitFragment = js.native
+    var checks: EmitFragment = js.native
     /** List of emitted defines */
     var defineNames: StringDictionary[Double] = js.native
     /**
@@ -55,7 +57,7 @@ object nodeMaterialBuildStateSharedDataMod extends js.Object {
     /**
       * Gets the compilation hints emitted at compilation time
       */
-    var hints: AnonNeedAlphaBlending = js.native
+    var hints: NeedAlphaBlending = js.native
     /**
       * Input blocks
       */

@@ -45,7 +45,7 @@ trait RestoreRequest extends js.Object {
 object RestoreRequest {
   @scala.inline
   def apply(
-    Days: Int | Double = null,
+    Days: js.UndefOr[Double] = js.undefined,
     Description: String = null,
     GlacierJobParameters: GlacierJobParameters = null,
     OutputLocation: OutputLocation = null,
@@ -54,7 +54,7 @@ object RestoreRequest {
     Type: SELECT | String = null
   ): RestoreRequest = {
     val __obj = js.Dynamic.literal()
-    if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
+    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (GlacierJobParameters != null) __obj.updateDynamic("GlacierJobParameters")(GlacierJobParameters.asInstanceOf[js.Any])
     if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])

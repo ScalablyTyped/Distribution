@@ -12,10 +12,8 @@ trait FieldTransformSetToServerValue extends js.Object
 
 object FieldTransformSetToServerValue {
   @scala.inline
-  def REQUEST_TIME: typings.firebaseFirestore.firebaseFirestoreStrings.REQUEST_TIME = this.cast("REQUEST_TIME")
+  def REQUEST_TIME: typings.firebaseFirestore.firebaseFirestoreStrings.REQUEST_TIME = "REQUEST_TIME".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.REQUEST_TIME]
   @scala.inline
-  def SERVER_VALUE_UNSPECIFIED: typings.firebaseFirestore.firebaseFirestoreStrings.SERVER_VALUE_UNSPECIFIED = this.cast("SERVER_VALUE_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SERVER_VALUE_UNSPECIFIED: typings.firebaseFirestore.firebaseFirestoreStrings.SERVER_VALUE_UNSPECIFIED = "SERVER_VALUE_UNSPECIFIED".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.SERVER_VALUE_UNSPECIFIED]
 }
 

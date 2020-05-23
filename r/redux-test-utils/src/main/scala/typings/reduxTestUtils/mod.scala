@@ -21,7 +21,7 @@ object mod extends js.Object {
     def isActionTypeDispatched(`type`: js.Any): Boolean = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.reduxTestUtils.mod.mockDispatch because var conflicts: dispatch_Original. Inlined getActions, getAction, isActionTypeDispatched, isActionDispatched */ @js.native
   trait mockStore[S] extends Store[S, AnyAction] {
     def getAction(`type`: js.Any): js.UndefOr[AnyAction] = js.native

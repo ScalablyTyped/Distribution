@@ -1,6 +1,6 @@
 package typings.tokenizr.mod
 
-import typings.tokenizr.AnonColumn
+import typings.tokenizr.anon.Column
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait ActionContext extends js.Object {
   /**
     * Retrieve information of current matching
     */
-  def info(): AnonColumn = js.native
+  def info(): Column = js.native
   /**
     * Pop state
     */

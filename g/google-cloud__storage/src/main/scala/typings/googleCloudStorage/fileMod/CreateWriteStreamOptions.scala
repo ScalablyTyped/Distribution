@@ -19,7 +19,7 @@ object CreateWriteStreamOptions {
     contentType: String = null,
     gzip: String | Boolean = null,
     metadata: Metadata = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     origin: String = null,
     predefinedAcl: PredefinedAcl = null,
     `private`: js.UndefOr[Boolean] = js.undefined,
@@ -34,12 +34,12 @@ object CreateWriteStreamOptions {
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (gzip != null) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
-    if (!js.isUndefined(resumable)) __obj.updateDynamic("resumable")(resumable.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resumable)) __obj.updateDynamic("resumable")(resumable.get.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])

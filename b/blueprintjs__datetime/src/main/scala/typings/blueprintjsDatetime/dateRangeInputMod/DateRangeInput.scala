@@ -1,7 +1,7 @@
 package typings.blueprintjsDatetime.dateRangeInputMod
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsDatetime.PartialIDateRangeInputPro
+import typings.blueprintjsDatetime.anon.PartialIDateRangeInputPro
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

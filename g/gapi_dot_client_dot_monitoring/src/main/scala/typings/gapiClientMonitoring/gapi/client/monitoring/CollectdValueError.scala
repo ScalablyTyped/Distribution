@@ -13,10 +13,10 @@ trait CollectdValueError extends js.Object {
 
 object CollectdValueError {
   @scala.inline
-  def apply(error: Status = null, index: Int | Double = null): CollectdValueError = {
+  def apply(error: Status = null, index: js.UndefOr[Double] = js.undefined): CollectdValueError = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectdValueError]
   }
 }

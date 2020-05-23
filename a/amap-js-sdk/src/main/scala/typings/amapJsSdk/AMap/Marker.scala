@@ -1,7 +1,7 @@
 package typings.amapJsSdk.AMap
 
-import typings.amapJsSdk.AnonName
-import typings.amapJsSdk.AnonOffset
+import typings.amapJsSdk.anon.Name
+import typings.amapJsSdk.anon.Offset
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * 点标记。
   */
-@JSGlobal("AMap.Marker")
 @js.native
-class Marker () extends EventBindable {
-  def this(options: MarkerOptions) = this()
+trait Marker extends EventBindable {
   def getAngle(): Double = js.native
   def getAnimation(): String = js.native
   def getClickable(): Boolean = js.native
@@ -21,7 +19,7 @@ class Marker () extends EventBindable {
   def getDraggable(): Boolean = js.native
   def getExtData(): js.Any = js.native
   def getIcon(): String | Icon = js.native
-  def getLabel(): AnonOffset = js.native
+  def getLabel(): Offset = js.native
   def getMap(): Map = js.native
   def getOffset(): Pixel = js.native
   def getPosition(): LngLat = js.native
@@ -30,7 +28,7 @@ class Marker () extends EventBindable {
   def getTitle(): String = js.native
   def getTop(): Boolean = js.native
   def hide(): Unit = js.native
-  def markOnAMAP(obj: AnonName): Unit = js.native
+  def markOnAMAP(obj: Name): Unit = js.native
   def moveAlong(lnglatlist: js.Array[LngLat]): Unit = js.native
   def moveAlong(lnglatlist: js.Array[LngLat], speed: Double): Unit = js.native
   def moveAlong(lnglatlist: js.Array[LngLat], speed: Double, f: js.Function1[/* k */ Double, Double]): Unit = js.native
@@ -53,7 +51,7 @@ class Marker () extends EventBindable {
   def setExtData(ext: js.Any): Unit = js.native
   def setIcon(content: String): Unit = js.native
   def setIcon(content: Icon): Unit = js.native
-  def setLabel(label: AnonOffset): Unit = js.native
+  def setLabel(label: Offset): Unit = js.native
   def setMap(map: Map): Unit = js.native
   def setOffset(offset: Pixel): Unit = js.native
   def setPosition(lnglat: LngLat): Unit = js.native

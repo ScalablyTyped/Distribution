@@ -4,8 +4,8 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.react.mod.StatelessComponent
-import typings.reactSvgPanZoom.AnonBackground
-import typings.reactSvgPanZoom.AnonPosition
+import typings.reactSvgPanZoom.anon.Background
+import typings.reactSvgPanZoom.anon.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait OptionalProps extends js.Object {
   var detectWheel: Boolean
   // Turn off zoom on double click
   var disableDoubleClickZoomWithToolAuto: Boolean
-  var miniatureProps: AnonBackground
+  var miniatureProps: Background
   // modifier keys //https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState
   var modifierKeys: js.Array[String]
   // if disabled the user can move the image outside the viewer
@@ -43,7 +43,7 @@ trait OptionalProps extends js.Object {
   var scaleFactorOnWheel: Double
   // CSS style of the Viewer
   var style: js.Object
-  var toolbarProps: AnonPosition
+  var toolbarProps: Position
   // Note: The `T` type parameter is the type of the `target` of the event:
   // handler click
   def onClick[T](event: ViewerMouseEvent[T]): Unit
@@ -73,7 +73,7 @@ object OptionalProps {
     detectPinchGesture: Boolean,
     detectWheel: Boolean,
     disableDoubleClickZoomWithToolAuto: Boolean,
-    miniatureProps: AnonBackground,
+    miniatureProps: Background,
     modifierKeys: js.Array[String],
     onClick: ViewerMouseEvent[js.Any] => Unit,
     onDoubleClick: ViewerMouseEvent[js.Any] => Unit,
@@ -88,7 +88,7 @@ object OptionalProps {
     scaleFactorMin: Double,
     scaleFactorOnWheel: Double,
     style: js.Object,
-    toolbarProps: AnonPosition
+    toolbarProps: Position
   ): OptionalProps = {
     val __obj = js.Dynamic.literal(SVGBackground = SVGBackground.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], customMiniature = customMiniature.asInstanceOf[js.Any], customToolbar = customToolbar.asInstanceOf[js.Any], detectAutoPan = detectAutoPan.asInstanceOf[js.Any], detectPinchGesture = detectPinchGesture.asInstanceOf[js.Any], detectWheel = detectWheel.asInstanceOf[js.Any], disableDoubleClickZoomWithToolAuto = disableDoubleClickZoomWithToolAuto.asInstanceOf[js.Any], miniatureProps = miniatureProps.asInstanceOf[js.Any], modifierKeys = modifierKeys.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), onDoubleClick = js.Any.fromFunction1(onDoubleClick), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseMove = js.Any.fromFunction1(onMouseMove), onMouseUp = js.Any.fromFunction1(onMouseUp), onPan = js.Any.fromFunction1(onPan), onZoom = js.Any.fromFunction1(onZoom), preventPanOutside = preventPanOutside.asInstanceOf[js.Any], scaleFactor = scaleFactor.asInstanceOf[js.Any], scaleFactorMax = scaleFactorMax.asInstanceOf[js.Any], scaleFactorMin = scaleFactorMin.asInstanceOf[js.Any], scaleFactorOnWheel = scaleFactorOnWheel.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], toolbarProps = toolbarProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionalProps]

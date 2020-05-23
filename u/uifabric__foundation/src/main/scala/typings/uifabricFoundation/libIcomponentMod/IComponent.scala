@@ -25,7 +25,7 @@ trait IComponent[TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] 
 
 object IComponent {
   @scala.inline
-  def apply[TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics](
+  def apply[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics](
     displayName: String,
     factoryOptions: IFactoryOptions[TComponentProps],
     fields: js.Array[String],

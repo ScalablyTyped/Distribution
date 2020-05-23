@@ -12,7 +12,7 @@ trait RawLocale
 
 object RawLocale {
   @scala.inline
-  def apply(code: String, StringDictionary: /* otherProp */ StringDictionary[js.Any] = null): RawLocale = {
+  def apply(code: String, StringDictionary: /* name */ StringDictionary[js.Any] = null): RawLocale = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[RawLocale]

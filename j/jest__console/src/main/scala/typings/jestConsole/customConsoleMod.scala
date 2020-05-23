@@ -3,7 +3,7 @@ package typings.jestConsole
 import typings.jestConsole.typesMod.LogMessage
 import typings.jestConsole.typesMod.LogType
 import typings.node.NodeJS.WritableStream
-import typings.std.Console_
+import typings.std.Console
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object customConsoleMod extends js.Object {
   @js.native
-  trait CustomConsole extends Console_ {
+  trait CustomConsole extends Console {
     var _counters: js.Any = js.native
     var _formatBuffer: js.Any = js.native
     var _groupDepth: js.Any = js.native
@@ -25,10 +25,18 @@ object customConsoleMod extends js.Object {
     def assert(value: js.Any): Unit = js.native
     def assert(value: js.Any, message: String): Unit = js.native
     def assert(value: js.Any, message: Error): Unit = js.native
-    def countReset(): Unit = js.native
-    def countReset(label: String): Unit = js.native
+    def debug(firstArg: js.Any, args: js.Any*): Unit = js.native
+    def dir(firstArg: js.Any, args: js.Any*): Unit = js.native
     def dirxml(firstArg: js.Any, args: js.Any*): Unit = js.native
+    def error(firstArg: js.Any, args: js.Any*): Unit = js.native
     def getBuffer(): js.UndefOr[scala.Nothing] = js.native
+    def group(): Unit = js.native
+    def group(title: String, args: js.Any*): Unit = js.native
+    def groupCollapsed(): Unit = js.native
+    def groupCollapsed(title: String, args: js.Any*): Unit = js.native
+    def info(firstArg: js.Any, args: js.Any*): Unit = js.native
+    def log(firstArg: js.Any, args: js.Any*): Unit = js.native
+    def warn(firstArg: js.Any, args: js.Any*): Unit = js.native
   }
   
   @js.native

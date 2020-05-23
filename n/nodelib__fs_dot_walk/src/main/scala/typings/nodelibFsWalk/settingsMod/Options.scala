@@ -1,6 +1,6 @@
 package typings.nodelibFsWalk.settingsMod
 
-import typings.nodelibFsWalk.PartialFileSystemAdapter
+import typings.nodelibFsWalk.anon.PartialFileSystemAdapter
 import typings.nodelibFsWalk.typesMod.Entry
 import typings.nodelibFsWalk.typesMod.Errno
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object Options {
   @scala.inline
   def apply(
     basePath: String = null,
-    concurrency: Int | Double = null,
+    concurrency: js.UndefOr[Double] = js.undefined,
     deepFilter: Entry => Boolean = null,
     entryFilter: Entry => Boolean = null,
     errorFilter: Errno => Boolean = null,
@@ -36,15 +36,15 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     if (deepFilter != null) __obj.updateDynamic("deepFilter")(js.Any.fromFunction1(deepFilter))
     if (entryFilter != null) __obj.updateDynamic("entryFilter")(js.Any.fromFunction1(entryFilter))
     if (errorFilter != null) __obj.updateDynamic("errorFilter")(js.Any.fromFunction1(errorFilter))
-    if (!js.isUndefined(followSymbolicLinks)) __obj.updateDynamic("followSymbolicLinks")(followSymbolicLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(followSymbolicLinks)) __obj.updateDynamic("followSymbolicLinks")(followSymbolicLinks.get.asInstanceOf[js.Any])
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (pathSegmentSeparator != null) __obj.updateDynamic("pathSegmentSeparator")(pathSegmentSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(stats)) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwErrorOnBrokenSymbolicLink)) __obj.updateDynamic("throwErrorOnBrokenSymbolicLink")(throwErrorOnBrokenSymbolicLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(stats)) __obj.updateDynamic("stats")(stats.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwErrorOnBrokenSymbolicLink)) __obj.updateDynamic("throwErrorOnBrokenSymbolicLink")(throwErrorOnBrokenSymbolicLink.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

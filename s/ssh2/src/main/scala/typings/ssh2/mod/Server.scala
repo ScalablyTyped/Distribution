@@ -3,8 +3,8 @@ package typings.ssh2.mod
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.ListenOptions
 import typings.node.netMod.Socket
-import typings.ssh2.AnonAddress
-import typings.ssh2.AnonFd
+import typings.ssh2.anon.Address
+import typings.ssh2.anon.Fd
 import typings.ssh2.ssh2Strings.close
 import typings.ssh2.ssh2Strings.connection
 import typings.ssh2.ssh2Strings.error
@@ -33,7 +33,7 @@ class Server protected () extends EventEmitter {
     * Returns the bound address, the address family name, and port of the server as reported
     * by the operating system.
     */
-  def address(): AnonAddress = js.native
+  def address(): Address = js.native
   /**
     * Stops the server from accepting new connections and keeps existing connections. This
     * function is asynchronous, the server is finally closed when all connections are ended
@@ -77,10 +77,10 @@ class Server protected () extends EventEmitter {
   def listen(handle: Socket, backlog: Double): this.type = js.native
   def listen(handle: Socket, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Socket, callback: js.Function0[Unit]): this.type = js.native
-  def listen(handle: AnonFd): this.type = js.native
-  def listen(handle: AnonFd, backlog: Double): this.type = js.native
-  def listen(handle: AnonFd, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
-  def listen(handle: AnonFd, callback: js.Function0[Unit]): this.type = js.native
+  def listen(handle: Fd): this.type = js.native
+  def listen(handle: Fd, backlog: Double): this.type = js.native
+  def listen(handle: Fd, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
+  def listen(handle: Fd, callback: js.Function0[Unit]): this.type = js.native
   /**
     * This will cause the server to accept connections using the specified options.
     *

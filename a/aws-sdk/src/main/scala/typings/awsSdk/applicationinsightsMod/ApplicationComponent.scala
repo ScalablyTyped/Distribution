@@ -28,13 +28,13 @@ object ApplicationComponent {
   @scala.inline
   def apply(
     ComponentName: ComponentName = null,
-    Monitor: js.UndefOr[Boolean] = js.undefined,
+    Monitor: js.UndefOr[Monitor] = js.undefined,
     ResourceType: ResourceType = null,
     Tier: Tier = null
   ): ApplicationComponent = {
     val __obj = js.Dynamic.literal()
     if (ComponentName != null) __obj.updateDynamic("ComponentName")(ComponentName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Monitor)) __obj.updateDynamic("Monitor")(Monitor.asInstanceOf[js.Any])
+    if (!js.isUndefined(Monitor)) __obj.updateDynamic("Monitor")(Monitor.get.asInstanceOf[js.Any])
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationComponent]

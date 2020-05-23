@@ -14,13 +14,13 @@ object CacheOptions {
   @scala.inline
   def apply(
     doesNotRenewTimeout: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     timeoutDisabled: js.UndefOr[Boolean] = js.undefined
   ): CacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(doesNotRenewTimeout)) __obj.updateDynamic("doesNotRenewTimeout")(doesNotRenewTimeout.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutDisabled)) __obj.updateDynamic("timeoutDisabled")(timeoutDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(doesNotRenewTimeout)) __obj.updateDynamic("doesNotRenewTimeout")(doesNotRenewTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutDisabled)) __obj.updateDynamic("timeoutDisabled")(timeoutDisabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOptions]
   }
 }

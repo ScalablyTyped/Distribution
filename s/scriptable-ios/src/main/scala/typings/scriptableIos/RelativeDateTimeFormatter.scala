@@ -11,22 +11,14 @@ import scala.scalajs.js.annotation._
   * The formatter creates a textual representation of the time between two points in time.
   * @see https://docs.scriptable.app/relativedatetimeformatter/#-new-relativedatetimeformatter
   */
-@JSGlobal("RelativeDateTimeFormatter")
-@js.native
-/**
-  * _Creates a textual representation of the amount of time between two dates._
-  *
-  * The formatter creates a textual representation of the time between two points in time.
-  * @see https://docs.scriptable.app/relativedatetimeformatter/#-new-relativedatetimeformatter
-  */
-class RelativeDateTimeFormatter () extends js.Object {
+trait RelativeDateTimeFormatter extends js.Object {
   /**
     * _Locale to use when formatting._
     *
     * The locale should be specified using a string identifier, e.g. "en", "it" or "da". When no locale is set, the formatter will use the current locale of the device.
     * @see https://docs.scriptable.app/relativedatetimeformatter/#locale
     */
-  var locale: String = js.native
+  var locale: String
   /**
     * _Creates a localized string communicating the amount of time between two dates._
     *
@@ -36,7 +28,7 @@ class RelativeDateTimeFormatter () extends js.Object {
     * @param referenceDate - The reference date that `date` is relative to.
     * @see https://docs.scriptable.app/relativedatetimeformatter/#-string
     */
-  def string(date: Date, referenceDate: Date): String = js.native
+  def string(date: Date, referenceDate: Date): String
   /**
     * _Prefers named dates and times._
     *
@@ -46,7 +38,7 @@ class RelativeDateTimeFormatter () extends js.Object {
     * When no named representation is found the formatter will fallback to using the numeric style.
     * @see https://docs.scriptable.app/relativedatetimeformatter/#-usenameddatetimestyle
     */
-  def useNamedDateTimeStyle(): Unit = js.native
+  def useNamedDateTimeStyle(): Unit
   /**
     * _Prefers numeric dates and times._
     *
@@ -54,6 +46,19 @@ class RelativeDateTimeFormatter () extends js.Object {
     * ago" instead of "yesteday".
     * @see https://docs.scriptable.app/relativedatetimeformatter/#-usenumericdatetimestyle
     */
-  def useNumericDateTimeStyle(): Unit = js.native
+  def useNumericDateTimeStyle(): Unit
+}
+
+object RelativeDateTimeFormatter {
+  @scala.inline
+  def apply(
+    locale: String,
+    string: (Date, Date) => String,
+    useNamedDateTimeStyle: () => Unit,
+    useNumericDateTimeStyle: () => Unit
+  ): RelativeDateTimeFormatter = {
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], string = js.Any.fromFunction2(string), useNamedDateTimeStyle = js.Any.fromFunction0(useNamedDateTimeStyle), useNumericDateTimeStyle = js.Any.fromFunction0(useNumericDateTimeStyle))
+    __obj.asInstanceOf[RelativeDateTimeFormatter]
+  }
 }
 

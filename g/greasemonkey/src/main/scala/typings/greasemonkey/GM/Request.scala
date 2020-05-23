@@ -1,7 +1,7 @@
 package typings.greasemonkey.GM
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.greasemonkey.AnonOnabort
+import typings.greasemonkey.anon.Onabort
 import typings.greasemonkey.greasemonkeyStrings.CONNECT
 import typings.greasemonkey.greasemonkeyStrings.DELETE
 import typings.greasemonkey.greasemonkeyStrings.GET
@@ -73,7 +73,7 @@ trait Request[TContext] extends js.Object {
     * Object containing optional function callbacks to monitor the upload
     * of data.
     */
-  var upload: js.UndefOr[AnonOnabort[TContext]] = js.undefined
+  var upload: js.UndefOr[Onabort[TContext]] = js.undefined
   // Fields
   /**
     * The URL to make the request to. Must be an absolute URL, beginning
@@ -102,12 +102,12 @@ object Request {
     overrideMimeType: String = null,
     password: String = null,
     synchronous: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    upload: AnonOnabort[TContext] = null,
+    timeout: js.UndefOr[Double] = js.undefined,
+    upload: Onabort[TContext] = null,
     user: String = null
   ): Request[TContext] = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
@@ -119,8 +119,8 @@ object Request {
     if (ontimeout != null) __obj.updateDynamic("ontimeout")(js.Any.fromFunction1(ontimeout))
     if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request[TContext]]

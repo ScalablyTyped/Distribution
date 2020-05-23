@@ -28,13 +28,13 @@ object DocumentAttributeValue {
   @scala.inline
   def apply(
     DateValue: Timestamp = null,
-    LongValue: Int | Double = null,
+    LongValue: js.UndefOr[Long] = js.undefined,
     StringListValue: DocumentAttributeStringListValue = null,
     StringValue: DocumentAttributeStringValue = null
   ): DocumentAttributeValue = {
     val __obj = js.Dynamic.literal()
     if (DateValue != null) __obj.updateDynamic("DateValue")(DateValue.asInstanceOf[js.Any])
-    if (LongValue != null) __obj.updateDynamic("LongValue")(LongValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(LongValue)) __obj.updateDynamic("LongValue")(LongValue.get.asInstanceOf[js.Any])
     if (StringListValue != null) __obj.updateDynamic("StringListValue")(StringListValue.asInstanceOf[js.Any])
     if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentAttributeValue]

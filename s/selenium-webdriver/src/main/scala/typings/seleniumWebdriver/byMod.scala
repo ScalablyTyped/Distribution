@@ -22,15 +22,15 @@ object byMod extends js.Object {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.seleniumWebdriver.AnonClassName
-    - typings.seleniumWebdriver.AnonCss
-    - typings.seleniumWebdriver.AnonId
-    - typings.seleniumWebdriver.AnonJs
-    - typings.seleniumWebdriver.AnonLinkText
-    - typings.seleniumWebdriver.AnonName
-    - typings.seleniumWebdriver.AnonPartialLinkText
-    - typings.seleniumWebdriver.AnonTagName
-    - typings.seleniumWebdriver.AnonXpath
+    - typings.seleniumWebdriver.anon.ClassName
+    - typings.seleniumWebdriver.anon.Css
+    - typings.seleniumWebdriver.anon.Id
+    - typings.seleniumWebdriver.anon.Js
+    - typings.seleniumWebdriver.anon.LinkText
+    - typings.seleniumWebdriver.anon.Name
+    - typings.seleniumWebdriver.anon.PartialLinkText
+    - typings.seleniumWebdriver.anon.TagName
+    - typings.seleniumWebdriver.anon.Xpath
   */
   trait ByHash extends _Locator
   

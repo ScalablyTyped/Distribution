@@ -18,9 +18,9 @@ trait CloudWatchLogsConfiguration extends js.Object {
 
 object CloudWatchLogsConfiguration {
   @scala.inline
-  def apply(Enabled: js.UndefOr[scala.Boolean] = js.undefined, LogStreams: CloudWatchLogsLogStreams = null): CloudWatchLogsConfiguration = {
+  def apply(Enabled: js.UndefOr[Boolean] = js.undefined, LogStreams: CloudWatchLogsLogStreams = null): CloudWatchLogsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (LogStreams != null) __obj.updateDynamic("LogStreams")(LogStreams.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchLogsConfiguration]
   }

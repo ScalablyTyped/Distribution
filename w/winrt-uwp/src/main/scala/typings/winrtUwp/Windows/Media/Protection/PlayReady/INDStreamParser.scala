@@ -1,7 +1,7 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
-import typings.winrtUwp.AnonStreamType
 import typings.winrtUwp.Windows.Media.Core.IMediaStreamDescriptor
+import typings.winrtUwp.anon.StreamType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait INDStreamParser extends js.Object {
     * Retrieves the stream type (audio or video) and stream identifier of the media stream descriptor.
     * @param descriptor The media stream from which this method gets information.
     */
-  def getStreamInformation(descriptor: IMediaStreamDescriptor): AnonStreamType
+  def getStreamInformation(descriptor: IMediaStreamDescriptor): StreamType
   /**
     * Parses samples from a PlayReady-ND media stream.
     * @param dataBytes The data to be parsed.
@@ -31,7 +31,7 @@ object INDStreamParser {
   def apply(
     beginOfStream: () => Unit,
     endOfStream: () => Unit,
-    getStreamInformation: IMediaStreamDescriptor => AnonStreamType,
+    getStreamInformation: IMediaStreamDescriptor => StreamType,
     notifier: NDStreamParserNotifier,
     parseData: js.Array[Double] => Unit
   ): INDStreamParser = {

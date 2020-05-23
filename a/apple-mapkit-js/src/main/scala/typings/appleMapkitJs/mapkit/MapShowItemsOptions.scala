@@ -31,7 +31,7 @@ object MapShowItemsOptions {
     padding: Padding = null
   ): MapShowItemsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (minimumSpan != null) __obj.updateDynamic("minimumSpan")(minimumSpan.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapShowItemsOptions]

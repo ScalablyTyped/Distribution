@@ -45,8 +45,8 @@ object ResolverRequest {
     if (descriptionFileData != null) __obj.updateDynamic("descriptionFileData")(descriptionFileData.asInstanceOf[js.Any])
     if (descriptionFilePath != null) __obj.updateDynamic("descriptionFilePath")(descriptionFilePath.asInstanceOf[js.Any])
     if (descriptionFileRoot != null) __obj.updateDynamic("descriptionFileRoot")(descriptionFileRoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
-    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverRequest]

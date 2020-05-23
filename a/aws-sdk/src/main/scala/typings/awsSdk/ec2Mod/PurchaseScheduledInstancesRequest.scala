@@ -25,11 +25,11 @@ object PurchaseScheduledInstancesRequest {
   def apply(
     PurchaseRequests: PurchaseRequestSet,
     ClientToken: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): PurchaseScheduledInstancesRequest = {
     val __obj = js.Dynamic.literal(PurchaseRequests = PurchaseRequests.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseScheduledInstancesRequest]
   }
 }

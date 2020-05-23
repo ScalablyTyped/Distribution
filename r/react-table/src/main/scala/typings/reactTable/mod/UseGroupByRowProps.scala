@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UseGroupByRowProps[D /* <: js.Object */] extends js.Object {
   var depth: Double
-  var groupById: IdType[D]
+  var groupByID: IdType[D]
   var groupByVal: String
   var id: String
   var index: Double
@@ -18,9 +18,9 @@ trait UseGroupByRowProps[D /* <: js.Object */] extends js.Object {
 
 object UseGroupByRowProps {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     depth: Double,
-    groupById: IdType[D],
+    groupByID: IdType[D],
     groupByVal: String,
     id: String,
     index: Double,
@@ -28,7 +28,7 @@ object UseGroupByRowProps {
     subRows: js.Array[Row[D]],
     values: Record[IdType[D], AggregatedValue]
   ): UseGroupByRowProps[D] = {
-    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], groupById = groupById.asInstanceOf[js.Any], groupByVal = groupByVal.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isGrouped = isGrouped.asInstanceOf[js.Any], subRows = subRows.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], groupByID = groupByID.asInstanceOf[js.Any], groupByVal = groupByVal.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isGrouped = isGrouped.asInstanceOf[js.Any], subRows = subRows.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGroupByRowProps[D]]
   }
 }

@@ -27,7 +27,7 @@ object LineByLineReaderOptions {
   ): LineByLineReaderOptions = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipEmptyLines)) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipEmptyLines)) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineByLineReaderOptions]
   }
 }

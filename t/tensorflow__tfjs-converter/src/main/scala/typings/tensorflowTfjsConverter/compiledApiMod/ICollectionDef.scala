@@ -25,18 +25,18 @@ trait ICollectionDef extends js.Object {
 object ICollectionDef {
   @scala.inline
   def apply(
-    anyList: IAnyList = null,
-    bytesList: IBytesList = null,
-    floatList: IFloatList = null,
-    int64List: IInt64List = null,
-    nodeList: INodeList = null
+    anyList: js.UndefOr[Null | IAnyList] = js.undefined,
+    bytesList: js.UndefOr[Null | IBytesList] = js.undefined,
+    floatList: js.UndefOr[Null | IFloatList] = js.undefined,
+    int64List: js.UndefOr[Null | IInt64List] = js.undefined,
+    nodeList: js.UndefOr[Null | INodeList] = js.undefined
   ): ICollectionDef = {
     val __obj = js.Dynamic.literal()
-    if (anyList != null) __obj.updateDynamic("anyList")(anyList.asInstanceOf[js.Any])
-    if (bytesList != null) __obj.updateDynamic("bytesList")(bytesList.asInstanceOf[js.Any])
-    if (floatList != null) __obj.updateDynamic("floatList")(floatList.asInstanceOf[js.Any])
-    if (int64List != null) __obj.updateDynamic("int64List")(int64List.asInstanceOf[js.Any])
-    if (nodeList != null) __obj.updateDynamic("nodeList")(nodeList.asInstanceOf[js.Any])
+    if (!js.isUndefined(anyList)) __obj.updateDynamic("anyList")(anyList.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytesList)) __obj.updateDynamic("bytesList")(bytesList.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatList)) __obj.updateDynamic("floatList")(floatList.asInstanceOf[js.Any])
+    if (!js.isUndefined(int64List)) __obj.updateDynamic("int64List")(int64List.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeList)) __obj.updateDynamic("nodeList")(nodeList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollectionDef]
   }
 }

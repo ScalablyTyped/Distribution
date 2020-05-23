@@ -71,11 +71,11 @@ object Artifact_ {
     encoding: String = null,
     hashes: StringDictionary[String] = null,
     lastModifiedTimeUtc: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     location: ArtifactLocation = null,
     mimeType: String = null,
-    offset: Int | Double = null,
-    parentIndex: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
+    parentIndex: js.UndefOr[Double] = js.undefined,
     properties: PropertyBag = null,
     roles: js.Array[roles] = null,
     sourceLanguage: String = null
@@ -86,11 +86,11 @@ object Artifact_ {
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (hashes != null) __obj.updateDynamic("hashes")(hashes.asInstanceOf[js.Any])
     if (lastModifiedTimeUtc != null) __obj.updateDynamic("lastModifiedTimeUtc")(lastModifiedTimeUtc.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (parentIndex != null) __obj.updateDynamic("parentIndex")(parentIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentIndex)) __obj.updateDynamic("parentIndex")(parentIndex.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
     if (sourceLanguage != null) __obj.updateDynamic("sourceLanguage")(sourceLanguage.asInstanceOf[js.Any])

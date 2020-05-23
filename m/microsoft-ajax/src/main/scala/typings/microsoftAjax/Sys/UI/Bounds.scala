@@ -8,34 +8,36 @@ import scala.scalajs.js.annotation._
   * Creates an object that contains a set of integer coordinates representing position, width, and height.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb397698(v=vs.100).aspx}
   */
-@JSGlobal("Sys.UI.Bounds")
-@js.native
-//#region Constructors
-/**
-  * Initializes a new instance of the Sys.UI.Bounds class.
-  */
-class Bounds () extends js.Object {
+trait Bounds extends js.Object {
   //#endregion
   //#region Fields
   /**
     * Gets the height of an object in pixels. This property is read-only.
     * @return A number that represents the height of an object in pixels.
     */
-  var height: Double = js.native
+  var height: Double
   /**
     * Gets the width of an object in pixels. This property is read-only.
     * @return A number that represents the width of an object in pixels.
     */
-  var width: Double = js.native
+  var width: Double
   /**
     * Gets the x-coordinate of an object in pixels.
     * @return A number that represents the x-coordinate of an object in pixels.
     */
-  var x: Double = js.native
+  var x: Double
   /**
     * Gets the y-coordinate of anobject in pixels.
     * @return A number that represents the y-coordinate of an object in pixels.
     */
-  var y: Double = js.native
+  var y: Double
+}
+
+object Bounds {
+  @scala.inline
+  def apply(height: Double, width: Double, x: Double, y: Double): Bounds = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Bounds]
+  }
 }
 

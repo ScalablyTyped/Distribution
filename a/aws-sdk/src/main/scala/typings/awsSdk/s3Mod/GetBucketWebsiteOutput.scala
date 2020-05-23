@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetBucketWebsiteOutput extends js.Object {
   /**
-    * The name of the error document for the website.
+    * The object key name of the website error document to use for 4XX class errors.
     */
   var ErrorDocument: js.UndefOr[typings.awsSdk.s3Mod.ErrorDocument] = js.native
   /**
-    * The name of the index document for the website.
+    * The name of the index document for the website (for example index.html).
     */
   var IndexDocument: js.UndefOr[typings.awsSdk.s3Mod.IndexDocument] = js.native
   /**

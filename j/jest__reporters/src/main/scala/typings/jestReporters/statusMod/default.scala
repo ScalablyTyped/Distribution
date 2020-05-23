@@ -1,5 +1,6 @@
 package typings.jestReporters.statusMod
 
+import typings.jestReporters.anon.Clear
 import typings.jestReporters.typesMod.ReporterOnStartOptions
 import typings.jestTestResult.typesMod.AggregatedResult
 import typings.jestTestResult.typesMod.TestResult
@@ -31,7 +32,7 @@ class default () extends Status {
   /* CompleteClass */
   override var _tick: js.Any = js.native
   /* CompleteClass */
-  override def get(): Cache = js.native
+  override def get(): Clear = js.native
   /* CompleteClass */
   override def onChange(callback: js.Function0[Unit]): Unit = js.native
   /* CompleteClass */

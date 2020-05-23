@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.PartialICoachmarkProps
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
-import typings.officeUiFabricReact.officeUiFabricReactStrings.`data-coachmarkid`
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ object libCoachmarkMod extends js.Object {
     def this(props: ICoachmarkProps) = this()
   }
   
-  val COACHMARK_ATTRIBUTE_NAME: `data-coachmarkid` = js.native
+  val COACHMARK_ATTRIBUTE_NAME: /* "data-coachmarkid" */ String = js.native
   val Coachmark: FunctionComponent[ICoachmarkProps] = js.native
   /* static members */
   @js.native

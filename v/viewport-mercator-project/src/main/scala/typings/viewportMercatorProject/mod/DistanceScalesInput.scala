@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.viewportMercatorProject.BaseDistanceScalesInputzo
-  - typings.viewportMercatorProject.BaseDistanceScalesInputsc
+  - typings.viewportMercatorProject.anon.BaseDistanceScalesInputzo
+  - typings.viewportMercatorProject.anon.BaseDistanceScalesInputsc
 */
 trait DistanceScalesInput extends js.Object
 

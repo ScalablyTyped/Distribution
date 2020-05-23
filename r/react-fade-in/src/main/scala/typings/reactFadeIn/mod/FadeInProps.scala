@@ -23,14 +23,14 @@ object FadeInProps {
   def apply(
     children: ReactNode = null,
     className: String = null,
-    delay: Int | Double = null,
-    transitionDuration: Int | Double = null
+    delay: js.UndefOr[Double] = js.undefined,
+    transitionDuration: js.UndefOr[Double] = js.undefined
   ): FadeInProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FadeInProps]
   }
 }

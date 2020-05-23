@@ -40,18 +40,18 @@ object UpdateCsvClassifierRequest {
   @scala.inline
   def apply(
     Name: NameString,
-    AllowSingleColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined,
     ContainsHeader: CsvHeaderOption = null,
     Delimiter: CsvColumnDelimiter = null,
-    DisableValueTrimming: js.UndefOr[scala.Boolean] = js.undefined,
+    DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined,
     Header: CsvHeader = null,
     QuoteSymbol: CsvQuoteSymbol = null
   ): UpdateCsvClassifierRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowSingleColumn)) __obj.updateDynamic("AllowSingleColumn")(AllowSingleColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowSingleColumn)) __obj.updateDynamic("AllowSingleColumn")(AllowSingleColumn.get.asInstanceOf[js.Any])
     if (ContainsHeader != null) __obj.updateDynamic("ContainsHeader")(ContainsHeader.asInstanceOf[js.Any])
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableValueTrimming)) __obj.updateDynamic("DisableValueTrimming")(DisableValueTrimming.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableValueTrimming)) __obj.updateDynamic("DisableValueTrimming")(DisableValueTrimming.get.asInstanceOf[js.Any])
     if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
     if (QuoteSymbol != null) __obj.updateDynamic("QuoteSymbol")(QuoteSymbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCsvClassifierRequest]

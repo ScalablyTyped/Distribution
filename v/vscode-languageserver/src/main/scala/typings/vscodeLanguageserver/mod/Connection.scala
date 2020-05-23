@@ -8,14 +8,16 @@ import typings.vscodeJsonrpc.mod.RequestHandler
 import typings.vscodeJsonrpc.mod.RequestHandler0
 import typings.vscodeJsonrpc.mod.StarNotificationHandler
 import typings.vscodeJsonrpc.mod.StarRequestHandler
-import typings.vscodeLanguageserver.AnonPlaceholder
-import typings.vscodeLanguageserver.Thenable
+import typings.vscodeLanguageserver.anon.Placeholder
 import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.ColorPresentationParams
 import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentColorParams
+import typings.vscodeLanguageserverProtocol.protocolDeclarationMod.DeclarationParams
 import typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeParams
+import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationParams
 import typings.vscodeLanguageserverProtocol.protocolMod.CodeActionParams
 import typings.vscodeLanguageserverProtocol.protocolMod.CodeLensParams
 import typings.vscodeLanguageserverProtocol.protocolMod.CompletionParams
+import typings.vscodeLanguageserverProtocol.protocolMod.DefinitionParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DidChangeConfigurationParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DidChangeTextDocumentParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DidChangeWatchedFilesParams
@@ -23,18 +25,25 @@ import typings.vscodeLanguageserverProtocol.protocolMod.DidCloseTextDocumentPara
 import typings.vscodeLanguageserverProtocol.protocolMod.DidOpenTextDocumentParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DidSaveTextDocumentParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentFormattingParams
+import typings.vscodeLanguageserverProtocol.protocolMod.DocumentHighlightParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentLinkParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentOnTypeFormattingParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentRangeFormattingParams
+import typings.vscodeLanguageserverProtocol.protocolMod.DocumentSymbolParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ExecuteCommandParams
+import typings.vscodeLanguageserverProtocol.protocolMod.HoverParams
 import typings.vscodeLanguageserverProtocol.protocolMod.InitializeParams
 import typings.vscodeLanguageserverProtocol.protocolMod.InitializeResult
 import typings.vscodeLanguageserverProtocol.protocolMod.InitializedParams
+import typings.vscodeLanguageserverProtocol.protocolMod.PrepareRenameParams
 import typings.vscodeLanguageserverProtocol.protocolMod.PublishDiagnosticsParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ReferenceParams
 import typings.vscodeLanguageserverProtocol.protocolMod.RenameParams
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentPositionParams
+import typings.vscodeLanguageserverProtocol.protocolMod.SignatureHelpParams
 import typings.vscodeLanguageserverProtocol.protocolMod.WillSaveTextDocumentParams
+import typings.vscodeLanguageserverProtocol.protocolMod.WorkspaceSymbolParams
+import typings.vscodeLanguageserverProtocol.protocolSelectionRangeMod.SelectionRangeParams
+import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionParams
 import typings.vscodeLanguageserverTypes.mod.Declaration
 import typings.vscodeLanguageserverTypes.mod.DeclarationLink
 import typings.vscodeLanguageserverTypes.mod.Definition
@@ -45,30 +54,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] extends js.Object {
+trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] extends js.Object {
   /**
-    * A proxy interface for the language client interface to register for requests or
-    * notifications.
+    * A property to provide access to client specific features like registering
+    * for requests or notifications.
     */
   var client: RemoteClient with PClient = js.native
   /**
-    * A proxy for VSCode's development console. See [RemoteConsole](#RemoteConsole)
+    * A property to provide access to console specific features.
     */
   var console: RemoteConsole with PConsole = js.native
   /**
-    * A proxy to send telemetry events to the client.
+    * A property to provide access to language specific features.
+    */
+  var languages: Languages with PLanguages = js.native
+  /**
+    * A property to provide access to telemetry specific features.
     */
   var telemetry: Telemetry with PTelemetry = js.native
   /**
-    * A proxy to send trace events to the client.
+    * A property to provide access to tracer specific features.
     */
-  var tracer: typings.vscodeJsonrpc.mod.Tracer with PTracer = js.native
+  var tracer: Tracer with PTracer = js.native
   /**
-    * A proxy for VSCode's window. See [RemoteWindow](#RemoteWindow)
+    * A property to provide access to windows specific features.
     */
   var window: RemoteWindow with PWindow = js.native
   /**
-    * A proxy to talk to the client's workspace.
+    * A property to provide access to workspace specific features.
     */
   var workspace: RemoteWorkspace with PWorkspace = js.native
   /**
@@ -85,12 +98,15 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onCodeAction(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       CodeActionParams, 
       js.UndefOr[
         (js.Array[
           typings.vscodeLanguageserverTypes.mod.Command | typings.vscodeLanguageserverTypes.mod.CodeAction
         ]) | Null
+      ], 
+      js.Array[
+        typings.vscodeLanguageserverTypes.mod.Command | typings.vscodeLanguageserverTypes.mod.CodeAction
       ], 
       Unit
     ]
@@ -103,9 +119,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onCodeLens(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       CodeLensParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.CodeLens] | Null], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.CodeLens], 
       Unit
     ]
   ): Unit = js.native
@@ -128,9 +145,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onColorPresentation(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       ColorPresentationParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.ColorPresentation] | Null], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.ColorPresentation], 
       Unit
     ]
   ): Unit = js.native
@@ -140,11 +158,12 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onCompletion(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       CompletionParams, 
       js.UndefOr[
         js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem] | typings.vscodeLanguageserverTypes.mod.CompletionList | Null
       ], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem], 
       Unit
     ]
   ): Unit = js.native
@@ -166,9 +185,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDeclaration(
-    handler: RequestHandler[
-      TextDocumentPositionParams, 
+    handler: ServerRequestHandler[
+      DeclarationParams, 
       js.UndefOr[Declaration | js.Array[DeclarationLink] | Null], 
+      js.Array[DeclarationLink | typings.vscodeLanguageserverTypes.mod.Location], 
       Unit
     ]
   ): Unit = js.native
@@ -178,9 +198,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDefinition(
-    handler: RequestHandler[
-      TextDocumentPositionParams, 
+    handler: ServerRequestHandler[
+      DefinitionParams, 
       js.UndefOr[Definition | js.Array[DefinitionLink] | Null], 
+      js.Array[DefinitionLink | typings.vscodeLanguageserverTypes.mod.Location], 
       Unit
     ]
   ): Unit = js.native
@@ -226,9 +247,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDocumentColor(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       DocumentColorParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.ColorInformation] | Null], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.ColorInformation], 
       Unit
     ]
   ): Unit = js.native
@@ -238,9 +260,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDocumentFormatting(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       DocumentFormattingParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.TextEdit] | Null], 
+      scala.Nothing, 
       Unit
     ]
   ): Unit = js.native
@@ -250,9 +273,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDocumentHighlight(
-    handler: RequestHandler[
-      TextDocumentPositionParams, 
+    handler: ServerRequestHandler[
+      DocumentHighlightParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.DocumentHighlight] | Null], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.DocumentHighlight], 
       Unit
     ]
   ): Unit = js.native
@@ -274,9 +298,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDocumentLinks(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       DocumentLinkParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.DocumentLink] | Null], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.DocumentLink], 
       Unit
     ]
   ): Unit = js.native
@@ -298,9 +323,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDocumentRangeFormatting(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       DocumentRangeFormattingParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.TextEdit] | Null], 
+      scala.Nothing, 
       Unit
     ]
   ): Unit = js.native
@@ -310,12 +336,15 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDocumentSymbol(
-    handler: RequestHandler[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DocumentSymbolParams */ _, 
+    handler: ServerRequestHandler[
+      DocumentSymbolParams, 
       js.UndefOr[
         (js.Array[
           typings.vscodeLanguageserverTypes.mod.DocumentSymbol | typings.vscodeLanguageserverTypes.mod.SymbolInformation
         ]) | Null
+      ], 
+      js.Array[
+        typings.vscodeLanguageserverTypes.mod.DocumentSymbol | typings.vscodeLanguageserverTypes.mod.SymbolInformation
       ], 
       Unit
     ]
@@ -325,7 +354,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     *
     * @param handler The corresponding handler.
     */
-  def onExecuteCommand(handler: RequestHandler[ExecuteCommandParams, js.UndefOr[_ | Null], Unit]): Unit = js.native
+  def onExecuteCommand(handler: ServerRequestHandler[ExecuteCommandParams, js.UndefOr[_ | Null], scala.Nothing, Unit]): Unit = js.native
   /**
     * Installs a handler for the exit notification.
     *
@@ -338,9 +367,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onFoldingRanges(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       FoldingRangeParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.FoldingRange] | Null], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.FoldingRange], 
       Unit
     ]
   ): Unit = js.native
@@ -350,9 +380,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onHover(
-    handler: RequestHandler[
-      TextDocumentPositionParams, 
+    handler: ServerRequestHandler[
+      HoverParams, 
       js.UndefOr[typings.vscodeLanguageserverTypes.mod.Hover | Null], 
+      scala.Nothing, 
       Unit
     ]
   ): Unit = js.native
@@ -361,16 +392,24 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     *
     * @param handler The corresponding handler.
     */
-  def onImplementation(handler: RequestHandler[TextDocumentPositionParams, js.UndefOr[Definition | Null], Unit]): Unit = js.native
+  def onImplementation(
+    handler: ServerRequestHandler[
+      ImplementationParams, 
+      js.UndefOr[Definition | js.Array[DefinitionLink] | Null], 
+      js.Array[DefinitionLink | typings.vscodeLanguageserverTypes.mod.Location], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the initialize request.
     *
     * @param handler The initialize handler.
     */
   def onInitialize(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       InitializeParams, 
-      InitializeResult, 
+      InitializeResult[_], 
+      scala.Nothing, 
       typings.vscodeLanguageserverProtocol.protocolMod.InitializeError
     ]
   ): Unit = js.native
@@ -414,20 +453,37 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     */
   def onPrepareRename(
     handler: RequestHandler[
-      TextDocumentPositionParams, 
-      js.UndefOr[typings.vscodeLanguageserverTypes.mod.Range | AnonPlaceholder | Null], 
+      PrepareRenameParams, 
+      js.UndefOr[typings.vscodeLanguageserverTypes.mod.Range | Placeholder | Null], 
       Unit
     ]
   ): Unit = js.native
+  /**
+    * Installs a progress handler for a given token.
+    * @param type the progress type
+    * @param token the token
+    * @param handler the handler
+    */
+  def onProgress[P](
+    `type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[P],
+    token: String,
+    handler: NotificationHandler[P]
+  ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
+  def onProgress[P](
+    `type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[P],
+    token: Double,
+    handler: NotificationHandler[P]
+  ): typings.vscodeJsonrpc.eventsMod.Disposable = js.native
   /**
     * Installs a handler for the `References` request.
     *
     * @param handler The corresponding handler.
     */
   def onReferences(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       ReferenceParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.Location] | Null], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.Location], 
       Unit
     ]
   ): Unit = js.native
@@ -437,9 +493,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onRenameRequest(
-    handler: RequestHandler[
+    handler: ServerRequestHandler[
       RenameParams, 
       js.UndefOr[typings.vscodeLanguageserverTypes.mod.WorkspaceEdit | Null], 
+      scala.Nothing, 
       Unit
     ]
   ): Unit = js.native
@@ -471,6 +528,19 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     handler: RequestHandler[P, R, E]
   ): Unit = js.native
   /**
+    * Installs a handler for the selection ranges request.
+    *
+    * @param handler The corresponding handler.
+    */
+  def onSelectionRanges(
+    handler: ServerRequestHandler[
+      SelectionRangeParams, 
+      js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.SelectionRange] | Null], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.SelectionRange], 
+      Unit
+    ]
+  ): Unit = js.native
+  /**
     * Installs a handler for the shutdown request.
     *
     * @param handler The initialize handler.
@@ -481,13 +551,22 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     *
     * @param handler The corresponding handler.
     */
-  def onSignatureHelp(handler: RequestHandler[TextDocumentPositionParams, js.UndefOr[SignatureHelp | Null], Unit]): Unit = js.native
+  def onSignatureHelp(
+    handler: ServerRequestHandler[SignatureHelpParams, js.UndefOr[SignatureHelp | Null], scala.Nothing, Unit]
+  ): Unit = js.native
   /**
     * Installs a handler for the `Type Definition` request.
     *
     * @param handler The corresponding handler.
     */
-  def onTypeDefinition(handler: RequestHandler[TextDocumentPositionParams, js.UndefOr[Definition | Null], Unit]): Unit = js.native
+  def onTypeDefinition(
+    handler: ServerRequestHandler[
+      TypeDefinitionParams, 
+      js.UndefOr[Definition | js.Array[DefinitionLink] | Null], 
+      js.Array[DefinitionLink | typings.vscodeLanguageserverTypes.mod.Location], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the `WillSaveTextDocument` notification.
     *
@@ -521,9 +600,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onWorkspaceSymbol(
-    handler: RequestHandler[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WorkspaceSymbolParams */ _, 
+    handler: ServerRequestHandler[
+      WorkspaceSymbolParams, 
       js.UndefOr[js.Array[typings.vscodeLanguageserverTypes.mod.SymbolInformation] | Null], 
+      js.Array[typings.vscodeLanguageserverTypes.mod.SymbolInformation], 
       Unit
     ]
   ): Unit = js.native
@@ -551,31 +631,39 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
   def sendNotification[RO](`type`: typings.vscodeLanguageserverProtocol.mod.NotificationType0[RO]): Unit = js.native
   def sendNotification[P, RO](`type`: typings.vscodeLanguageserverProtocol.mod.NotificationType[P, RO], params: P): Unit = js.native
   /**
+    * Sends progress.
+    * @param type the progress type
+    * @param token the token to use
+    * @param value the progress value
+    */
+  def sendProgress[P](`type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[P], token: String, value: P): Unit = js.native
+  def sendProgress[P](`type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[P], token: Double, value: P): Unit = js.native
+  /**
     * Send a request to the client.
     *
     * @param method The method to invoke on the client.
     * @param params The request's parameters.
     */
-  def sendRequest[R](method: String): Thenable[R] = js.native
-  def sendRequest[R](method: String, params: js.Any): Thenable[R] = js.native
-  def sendRequest[R](method: String, params: js.Any, token: typings.vscodeJsonrpc.cancellationMod.CancellationToken): Thenable[R] = js.native
-  def sendRequest[R](method: String, token: typings.vscodeJsonrpc.cancellationMod.CancellationToken): Thenable[R] = js.native
+  def sendRequest[R](method: String): js.Promise[R] = js.native
+  def sendRequest[R](method: String, params: js.Any): js.Promise[R] = js.native
+  def sendRequest[R](method: String, params: js.Any, token: typings.vscodeJsonrpc.cancellationMod.CancellationToken): js.Promise[R] = js.native
+  def sendRequest[R](method: String, token: typings.vscodeJsonrpc.cancellationMod.CancellationToken): js.Promise[R] = js.native
   /**
     * Send a request to the client.
     *
     * @param type The [RequestType](#RequestType) describing the request.
     * @param params The request's parameters.
     */
-  def sendRequest[R, E, RO](`type`: typings.vscodeLanguageserverProtocol.mod.RequestType0[R, E, RO]): Thenable[R] = js.native
+  def sendRequest[R, E, RO](`type`: typings.vscodeLanguageserverProtocol.mod.RequestType0[R, E, RO]): js.Promise[R] = js.native
   def sendRequest[R, E, RO](
     `type`: typings.vscodeLanguageserverProtocol.mod.RequestType0[R, E, RO],
     token: typings.vscodeJsonrpc.cancellationMod.CancellationToken
-  ): Thenable[R] = js.native
-  def sendRequest[P, R, E, RO](`type`: typings.vscodeLanguageserverProtocol.mod.RequestType[P, R, E, RO], params: P): Thenable[R] = js.native
+  ): js.Promise[R] = js.native
+  def sendRequest[P, R, E, RO](`type`: typings.vscodeLanguageserverProtocol.mod.RequestType[P, R, E, RO], params: P): js.Promise[R] = js.native
   def sendRequest[P, R, E, RO](
     `type`: typings.vscodeLanguageserverProtocol.mod.RequestType[P, R, E, RO],
     params: P,
     token: typings.vscodeJsonrpc.cancellationMod.CancellationToken
-  ): Thenable[R] = js.native
+  ): js.Promise[R] = js.native
 }
 

@@ -18,9 +18,9 @@ trait MonitorInstancesRequest extends js.Object {
 
 object MonitorInstancesRequest {
   @scala.inline
-  def apply(InstanceIds: InstanceIdStringList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): MonitorInstancesRequest = {
+  def apply(InstanceIds: InstanceIdStringList, DryRun: js.UndefOr[Boolean] = js.undefined): MonitorInstancesRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitorInstancesRequest]
   }
 }

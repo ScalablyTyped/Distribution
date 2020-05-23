@@ -1,6 +1,6 @@
 package typings.angularBootstrapCalendar.mod.bootstrap.calendar
 
-import typings.moment.mod.Moment
+import typings.moment.momentMod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

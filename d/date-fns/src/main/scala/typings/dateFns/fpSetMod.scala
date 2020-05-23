@@ -1,7 +1,7 @@
 package typings.dateFns
 
 import org.scalablytyped.runtime.TopLevel
-import typings.std.Date
+import typings.dateFns.anon.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object fpSetMod extends js.Object {
   @js.native
-  object default extends TopLevel[CurriedFn2[AnonDate, Date | Double, Date]]
+  object default
+    extends TopLevel[CurriedFn2[Date, typings.std.Date | Double, typings.std.Date]]
   
 }
 

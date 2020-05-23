@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object descending extends js.Object {
   def apply(): Double = js.native
-  def apply(a: js.UndefOr[Primitive], b: Primitive): Double = js.native
   def apply(a: Primitive): Double = js.native
+  def apply(a: Primitive, b: Primitive): Double = js.native
 }
 

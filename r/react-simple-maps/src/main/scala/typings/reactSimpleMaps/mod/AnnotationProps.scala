@@ -26,13 +26,13 @@ object AnnotationProps {
     connectorProps: SVGProps[SVGPathElement],
     ClassAttributes: ClassAttributes[SVGGElement] = null,
     SVGAttributes: SVGAttributes[SVGGElement] = null,
-    curve: Int | Double = null,
+    curve: js.UndefOr[Double] = js.undefined,
     subject: Point = null
   ): AnnotationProps = {
     val __obj = js.Dynamic.literal(connectorProps = connectorProps.asInstanceOf[js.Any])
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (SVGAttributes != null) js.Dynamic.global.Object.assign(__obj, SVGAttributes)
-    if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
+    if (!js.isUndefined(curve)) __obj.updateDynamic("curve")(curve.get.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationProps]
   }

@@ -13,8 +13,8 @@ object DecodeOptions {
   @scala.inline
   def apply(complete: js.UndefOr[Boolean] = js.undefined, json: js.UndefOr[Boolean] = js.undefined): DecodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecodeOptions]
   }
 }

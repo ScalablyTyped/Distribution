@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,14 +21,6 @@ object ShapeScaleType extends js.Object {
   
   @js.native
   sealed trait originalSize extends ShapeScaleType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeScaleType with String] = js.native
-  /* "CurrentSize" */ @js.native
-  object currentSize extends TopLevel[currentSize with String]
-  
-  /* "OriginalSize" */ @js.native
-  object originalSize extends TopLevel[originalSize with String]
   
 }
 

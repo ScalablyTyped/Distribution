@@ -118,30 +118,30 @@ object RasterStretchRendererProperties {
     computeGamma: js.UndefOr[Boolean] = js.undefined,
     dynamicRangeAdjustment: js.UndefOr[Boolean] = js.undefined,
     gamma: js.Array[Double] = null,
-    maxPercent: Int | Double = null,
-    minPercent: Int | Double = null,
-    numberOfStandardDeviations: Int | Double = null,
-    outputMax: Int | Double = null,
-    outputMin: Int | Double = null,
-    sigmoidStrengthLevel: Int | Double = null,
+    maxPercent: js.UndefOr[Double] = js.undefined,
+    minPercent: js.UndefOr[Double] = js.undefined,
+    numberOfStandardDeviations: js.UndefOr[Double] = js.undefined,
+    outputMax: js.UndefOr[Double] = js.undefined,
+    outputMin: js.UndefOr[Double] = js.undefined,
+    sigmoidStrengthLevel: js.UndefOr[Double] = js.undefined,
     statistics: js.Array[js.Array[Double]] | RasterStretchRendererStatistics = null,
     stretchType: none | `standard-deviation` | `histogram-equalization` | `min-max` | `percent-clip` | sigmoid = null,
     useGamma: js.UndefOr[Boolean] = js.undefined
   ): RasterStretchRendererProperties = {
     val __obj = js.Dynamic.literal()
     if (colorRamp != null) __obj.updateDynamic("colorRamp")(colorRamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(computeGamma)) __obj.updateDynamic("computeGamma")(computeGamma.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicRangeAdjustment)) __obj.updateDynamic("dynamicRangeAdjustment")(dynamicRangeAdjustment.asInstanceOf[js.Any])
+    if (!js.isUndefined(computeGamma)) __obj.updateDynamic("computeGamma")(computeGamma.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRangeAdjustment)) __obj.updateDynamic("dynamicRangeAdjustment")(dynamicRangeAdjustment.get.asInstanceOf[js.Any])
     if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
-    if (maxPercent != null) __obj.updateDynamic("maxPercent")(maxPercent.asInstanceOf[js.Any])
-    if (minPercent != null) __obj.updateDynamic("minPercent")(minPercent.asInstanceOf[js.Any])
-    if (numberOfStandardDeviations != null) __obj.updateDynamic("numberOfStandardDeviations")(numberOfStandardDeviations.asInstanceOf[js.Any])
-    if (outputMax != null) __obj.updateDynamic("outputMax")(outputMax.asInstanceOf[js.Any])
-    if (outputMin != null) __obj.updateDynamic("outputMin")(outputMin.asInstanceOf[js.Any])
-    if (sigmoidStrengthLevel != null) __obj.updateDynamic("sigmoidStrengthLevel")(sigmoidStrengthLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPercent)) __obj.updateDynamic("maxPercent")(maxPercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPercent)) __obj.updateDynamic("minPercent")(minPercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfStandardDeviations)) __obj.updateDynamic("numberOfStandardDeviations")(numberOfStandardDeviations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputMax)) __obj.updateDynamic("outputMax")(outputMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputMin)) __obj.updateDynamic("outputMin")(outputMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sigmoidStrengthLevel)) __obj.updateDynamic("sigmoidStrengthLevel")(sigmoidStrengthLevel.get.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     if (stretchType != null) __obj.updateDynamic("stretchType")(stretchType.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGamma)) __obj.updateDynamic("useGamma")(useGamma.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGamma)) __obj.updateDynamic("useGamma")(useGamma.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterStretchRendererProperties]
   }
 }

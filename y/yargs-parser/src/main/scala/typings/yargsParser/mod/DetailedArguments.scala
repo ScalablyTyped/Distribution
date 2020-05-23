@@ -28,8 +28,7 @@ object DetailedArguments {
     newAliases: StringDictionary[Boolean],
     error: Error = null
   ): DetailedArguments = {
-    val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], argv = argv.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], newAliases = newAliases.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], argv = argv.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], newAliases = newAliases.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedArguments]
   }
 }

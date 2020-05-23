@@ -3,7 +3,7 @@ package typings.materialList
 import typings.materialBase.foundationMod.default
 import typings.materialList.adapterMod.MDCListAdapter
 import typings.materialList.constantsMod.Index
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,15 +32,15 @@ object foundationMod extends js.Object {
     /**
       * Focus in handler for the list items.
       */
-    def handleFocusIn(evt: Event_, listItemIndex: Double): Unit = js.native
+    def handleFocusIn(evt: Event, listItemIndex: Double): Unit = js.native
     /**
       * Focus out handler for the list items.
       */
-    def handleFocusOut(evt: Event_, listItemIndex: Double): Unit = js.native
+    def handleFocusOut(evt: Event, listItemIndex: Double): Unit = js.native
     /**
       * Key handler for the list.
       */
-    def handleKeydown(evt: Event_, isRootListItem: Boolean, listItemIndex: Double): Unit = js.native
+    def handleKeydown(evt: Event, isRootListItem: Boolean, listItemIndex: Double): Unit = js.native
     def layout(): Unit = js.native
     def setSelectedIndex(index: Index): Unit = js.native
     /**

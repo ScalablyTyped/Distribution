@@ -1,7 +1,7 @@
 package typings.stormReactDiagrams.baseModelMod
 
-import typings.stormReactDiagrams.AnonLocked
-import typings.stormReactDiagrams.BaseEventBaseModelBaseEnt
+import typings.stormReactDiagrams.anon.BaseEventBaseModelBaseEnt
+import typings.stormReactDiagrams.anon.Locked
 import typings.stormReactDiagrams.baseEntityMod.BaseEntity
 import typings.stormReactDiagrams.baseEntityMod.BaseEvent
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
@@ -21,7 +21,7 @@ object BaseModelListener {
   @scala.inline
   def apply(
     entityRemoved: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]] => Unit = null,
-    lockChanged: /* event */ BaseEvent[js.Any] with AnonLocked => Unit = null,
+    lockChanged: /* event */ BaseEvent[js.Any] with Locked => Unit = null,
     selectionChanged: /* event */ BaseEventBaseModelBaseEnt => Unit = null
   ): BaseModelListener = {
     val __obj = js.Dynamic.literal()

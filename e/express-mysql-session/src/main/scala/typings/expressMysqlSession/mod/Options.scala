@@ -1,6 +1,6 @@
 package typings.expressMysqlSession.mod
 
-import typings.expressMysqlSession.PartialSchema
+import typings.expressMysqlSession.anon.PartialSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,26 +21,26 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    checkExpirationInterval: Int | Double = null,
-    connectionLimit: Int | Double = null,
+    checkExpirationInterval: js.UndefOr[Double] = js.undefined,
+    connectionLimit: js.UndefOr[Double] = js.undefined,
     createDatabaseTable: js.UndefOr[Boolean] = js.undefined,
     database: String = null,
-    expiration: Int | Double = null,
+    expiration: js.UndefOr[Double] = js.undefined,
     host: String = null,
     password: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     schema: PartialSchema = null,
     user: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (checkExpirationInterval != null) __obj.updateDynamic("checkExpirationInterval")(checkExpirationInterval.asInstanceOf[js.Any])
-    if (connectionLimit != null) __obj.updateDynamic("connectionLimit")(connectionLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(createDatabaseTable)) __obj.updateDynamic("createDatabaseTable")(createDatabaseTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkExpirationInterval)) __obj.updateDynamic("checkExpirationInterval")(checkExpirationInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionLimit)) __obj.updateDynamic("connectionLimit")(connectionLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(createDatabaseTable)) __obj.updateDynamic("createDatabaseTable")(createDatabaseTable.get.asInstanceOf[js.Any])
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiration)) __obj.updateDynamic("expiration")(expiration.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

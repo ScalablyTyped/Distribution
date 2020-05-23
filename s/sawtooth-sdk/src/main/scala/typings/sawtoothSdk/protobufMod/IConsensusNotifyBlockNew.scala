@@ -11,9 +11,9 @@ trait IConsensusNotifyBlockNew extends js.Object {
 
 object IConsensusNotifyBlockNew {
   @scala.inline
-  def apply(block: IConsensusBlock = null): IConsensusNotifyBlockNew = {
+  def apply(block: js.UndefOr[Null | IConsensusBlock] = js.undefined): IConsensusNotifyBlockNew = {
     val __obj = js.Dynamic.literal()
-    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusNotifyBlockNew]
   }
 }

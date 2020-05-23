@@ -30,12 +30,12 @@ trait ArgsProps extends js.Object {
 object ArgsProps {
   @scala.inline
   def apply(
-    bottom: Int | Double = null,
+    bottom: js.UndefOr[Double] = js.undefined,
     btn: ReactNode = null,
     className: String = null,
     closeIcon: ReactNode = null,
     description: ReactNode = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Null | Double] = js.undefined,
     getContainer: () => HTMLElement = null,
     icon: ReactNode = null,
     key: String = null,
@@ -45,16 +45,16 @@ object ArgsProps {
     placement: NotificationPlacement = null,
     prefixCls: String = null,
     style: CSSProperties = null,
-    top: Int | Double = null,
+    top: js.UndefOr[Double] = js.undefined,
     `type`: IconType = null
   ): ArgsProps = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.get.asInstanceOf[js.Any])
     if (btn != null) __obj.updateDynamic("btn")(btn.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
@@ -64,7 +64,7 @@ object ArgsProps {
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgsProps]
   }

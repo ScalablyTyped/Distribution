@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Data.Text
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -131,98 +130,6 @@ object UnicodeGeneralCategory extends js.Object {
   /** Uppercase letter. Signified by the Unicode designation "Lu" (letter, uppercase). */
   @js.native
   sealed trait uppercaseLetter extends UnicodeGeneralCategory
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UnicodeGeneralCategory with Double] = js.native
-  /* 21 */ @js.native
-  object closePunctuation extends TopLevel[closePunctuation with Double]
-  
-  /* 18 */ @js.native
-  object connectorPunctuation extends TopLevel[connectorPunctuation with Double]
-  
-  /* 14 */ @js.native
-  object control extends TopLevel[control with Double]
-  
-  /* 26 */ @js.native
-  object currencySymbol extends TopLevel[currencySymbol with Double]
-  
-  /* 19 */ @js.native
-  object dashPunctuation extends TopLevel[dashPunctuation with Double]
-  
-  /* 8 */ @js.native
-  object decimalDigitNumber extends TopLevel[decimalDigitNumber with Double]
-  
-  /* 7 */ @js.native
-  object enclosingMark extends TopLevel[enclosingMark with Double]
-  
-  /* 23 */ @js.native
-  object finalQuotePunctuation extends TopLevel[finalQuotePunctuation with Double]
-  
-  /* 15 */ @js.native
-  object format extends TopLevel[format with Double]
-  
-  /* 22 */ @js.native
-  object initialQuotePunctuation extends TopLevel[initialQuotePunctuation with Double]
-  
-  /* 9 */ @js.native
-  object letterNumber extends TopLevel[letterNumber with Double]
-  
-  /* 12 */ @js.native
-  object lineSeparator extends TopLevel[lineSeparator with Double]
-  
-  /* 1 */ @js.native
-  object lowercaseLetter extends TopLevel[lowercaseLetter with Double]
-  
-  /* 25 */ @js.native
-  object mathSymbol extends TopLevel[mathSymbol with Double]
-  
-  /* 3 */ @js.native
-  object modifierLetter extends TopLevel[modifierLetter with Double]
-  
-  /* 27 */ @js.native
-  object modifierSymbol extends TopLevel[modifierSymbol with Double]
-  
-  /* 5 */ @js.native
-  object nonspacingMark extends TopLevel[nonspacingMark with Double]
-  
-  /* 29 */ @js.native
-  object notAssigned extends TopLevel[notAssigned with Double]
-  
-  /* 20 */ @js.native
-  object openPunctuation extends TopLevel[openPunctuation with Double]
-  
-  /* 4 */ @js.native
-  object otherLetter extends TopLevel[otherLetter with Double]
-  
-  /* 10 */ @js.native
-  object otherNumber extends TopLevel[otherNumber with Double]
-  
-  /* 24 */ @js.native
-  object otherPunctuation extends TopLevel[otherPunctuation with Double]
-  
-  /* 28 */ @js.native
-  object otherSymbol extends TopLevel[otherSymbol with Double]
-  
-  /* 13 */ @js.native
-  object paragraphSeparator extends TopLevel[paragraphSeparator with Double]
-  
-  /* 17 */ @js.native
-  object privateUse extends TopLevel[privateUse with Double]
-  
-  /* 11 */ @js.native
-  object spaceSeparator extends TopLevel[spaceSeparator with Double]
-  
-  /* 6 */ @js.native
-  object spacingCombiningMark extends TopLevel[spacingCombiningMark with Double]
-  
-  /* 16 */ @js.native
-  object surrogate extends TopLevel[surrogate with Double]
-  
-  /* 2 */ @js.native
-  object titlecaseLetter extends TopLevel[titlecaseLetter with Double]
-  
-  /* 0 */ @js.native
-  object uppercaseLetter extends TopLevel[uppercaseLetter with Double]
   
 }
 

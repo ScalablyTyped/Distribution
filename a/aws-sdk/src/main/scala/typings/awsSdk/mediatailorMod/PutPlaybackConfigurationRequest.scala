@@ -61,7 +61,7 @@ object PutPlaybackConfigurationRequest {
     DashConfiguration: DashConfigurationForPut = null,
     LivePreRollConfiguration: LivePreRollConfiguration = null,
     Name: string = null,
-    PersonalizationThresholdSeconds: Int | Double = null,
+    PersonalizationThresholdSeconds: js.UndefOr[integerMin1] = js.undefined,
     SlateAdUrl: string = null,
     Tags: mapOfString = null,
     TranscodeProfileName: string = null,
@@ -74,7 +74,7 @@ object PutPlaybackConfigurationRequest {
     if (DashConfiguration != null) __obj.updateDynamic("DashConfiguration")(DashConfiguration.asInstanceOf[js.Any])
     if (LivePreRollConfiguration != null) __obj.updateDynamic("LivePreRollConfiguration")(LivePreRollConfiguration.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PersonalizationThresholdSeconds != null) __obj.updateDynamic("PersonalizationThresholdSeconds")(PersonalizationThresholdSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(PersonalizationThresholdSeconds)) __obj.updateDynamic("PersonalizationThresholdSeconds")(PersonalizationThresholdSeconds.get.asInstanceOf[js.Any])
     if (SlateAdUrl != null) __obj.updateDynamic("SlateAdUrl")(SlateAdUrl.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TranscodeProfileName != null) __obj.updateDynamic("TranscodeProfileName")(TranscodeProfileName.asInstanceOf[js.Any])

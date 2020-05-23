@@ -17,7 +17,7 @@ trait AutoSizerProps
   */
 /* key */ StringDictionary[js.Any] {
   /**
-    * 	Optional custom CSS class name to attach to root AutoSizer element.
+    *     Optional custom CSS class name to attach to root AutoSizer element.
     * This is an advanced property and is not typically necessary.
     */
   var className: js.UndefOr[String] = js.undefined
@@ -56,17 +56,10 @@ object AutoSizerProps {
   @scala.inline
   def apply(
     children: Size => ReactNode,
-    StringDictionary: /**
-    * PLEASE NOTE
-    * The [key: string]: any; line is here on purpose
-    * This is due to the need of force re-render of PureComponent
-    * Check the following link if you want to know more
-    * https://github.com/bvaughn/react-virtualized#pass-thru-props
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
-    defaultHeight: Int | Double = null,
-    defaultWidth: Int | Double = null,
+    defaultHeight: js.UndefOr[Double] = js.undefined,
+    defaultWidth: js.UndefOr[Double] = js.undefined,
     disableHeight: js.UndefOr[Boolean] = js.undefined,
     disableWidth: js.UndefOr[Boolean] = js.undefined,
     nonce: String = null,
@@ -76,10 +69,10 @@ object AutoSizerProps {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultHeight != null) __obj.updateDynamic("defaultHeight")(defaultHeight.asInstanceOf[js.Any])
-    if (defaultWidth != null) __obj.updateDynamic("defaultWidth")(defaultWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHeight)) __obj.updateDynamic("disableHeight")(disableHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableWidth)) __obj.updateDynamic("disableWidth")(disableWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultHeight)) __obj.updateDynamic("defaultHeight")(defaultHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultWidth)) __obj.updateDynamic("defaultWidth")(defaultWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHeight)) __obj.updateDynamic("disableHeight")(disableHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableWidth)) __obj.updateDynamic("disableWidth")(disableWidth.get.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

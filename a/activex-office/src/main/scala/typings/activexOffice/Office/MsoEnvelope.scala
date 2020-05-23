@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.MsoEnvelope")
 @js.native
-class MsoEnvelope protected () extends js.Object {
+trait MsoEnvelope extends js.Object {
   @JSName("CommandBars")
   val CommandBars_Original: CommandBars = js.native
   var Introduction: String = js.native

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`max-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.`min-change`
@@ -15,9 +14,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.Evented because Inheritance from two classes. Inlined emit, emit, hasEventListener, on, on */ @js.native
-trait SliderViewModel extends Accessor {
+@js.native
+trait SliderViewModel
+  extends Accessor
+     with Evented {
   /**
     * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
     *
@@ -138,17 +138,6 @@ trait SliderViewModel extends Accessor {
     */
   def defaultLabelFormatFunction(value: Double): String = js.native
   /**
-    * Emits an event on the instance. This method should only be used when creating subclasses of this class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
-    *
-    * @param type The name of the event.
-    * @param event The event payload.
-    *
-    */
-  def emit(`type`: String): Boolean = js.native
-  def emit(`type`: String, event: js.Any): Boolean = js.native
-  /**
     * Returns the min and max bounds for a 'value' at the provided index. Also used internally to provide accessibility information via HTMLElement properties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#getBoundsForValueAtIndex)
@@ -170,15 +159,6 @@ trait SliderViewModel extends Accessor {
   def getLabelForValue(value: Double): String = js.native
   def getLabelForValue(value: Double, `type`: String): String = js.native
   def getLabelForValue(value: Double, `type`: String, index: Double): String = js.native
-  /**
-    * Indicates whether there is an event listener on the instance that matches the provided event name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#hasEventListener)
-    *
-    * @param type The name of the event.
-    *
-    */
-  def hasEventListener(`type`: String): Boolean = js.native
   /**
     * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
     *
@@ -262,17 +242,6 @@ trait SliderViewModel extends Accessor {
   def labelFormatFunction_value(value: Double, `type`: value): String = js.native
   @JSName("labelFormatFunction")
   def labelFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
-  /**
-    * Registers an event handler on the instance. Call this method to hook an event with a listener.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#on)
-    *
-    * @param type A event type, or an array of event types, to listen for.
-    * @param listener The function to call when the event is fired.
-    *
-    */
-  def on(`type`: String, listener: EventHandler): IHandle = js.native
-  def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
   @JSName("on")
   def on_maxchange(name: `max-change`, eventHandler: SliderViewModelMaxChangeEventHandler): IHandle = js.native
   @JSName("on")
@@ -297,8 +266,4 @@ trait SliderViewModel extends Accessor {
     */
   def toPrecision(value: Double): String = js.native
 }
-
-@JSGlobal("__esri.SliderViewModel")
-@js.native
-object SliderViewModel extends TopLevel[SliderViewModelConstructor]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RegisterThingRequest extends js.Object {
   /**
-    * The parameters for provisioning a thing. See Programmatic Provisioning for more information.
+    * The parameters for provisioning a thing. See Provisioning Templates for more information.
     */
   var parameters: js.UndefOr[Parameters] = js.native
   /**

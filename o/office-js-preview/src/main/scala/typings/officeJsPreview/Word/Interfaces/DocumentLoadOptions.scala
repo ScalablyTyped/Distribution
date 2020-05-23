@@ -53,11 +53,11 @@ object DocumentLoadOptions {
     saved: js.UndefOr[Boolean] = js.undefined
   ): DocumentLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCloseOnUntitled)) __obj.updateDynamic("allowCloseOnUntitled")(allowCloseOnUntitled.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCloseOnUntitled)) __obj.updateDynamic("allowCloseOnUntitled")(allowCloseOnUntitled.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved.asInstanceOf[js.Any])
+    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentLoadOptions]
   }
 }

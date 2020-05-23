@@ -1,10 +1,10 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.FunctionComponentTileActi
-import typings.fundamentalReact.FunctionComponentTileCont
-import typings.fundamentalReact.FunctionComponentTileMedi
-import typings.fundamentalReact.PartialTileProps
-import typings.fundamentalReact.WeakValidationMapTileProp
+import typings.fundamentalReact.anon.FunctionComponentTileActi
+import typings.fundamentalReact.anon.FunctionComponentTileCont
+import typings.fundamentalReact.anon.FunctionComponentTileMedi
+import typings.fundamentalReact.anon.PartialTileProps
+import typings.fundamentalReact.anon.WeakValidationMapTileProp
 import typings.fundamentalReact.tileMod.TileProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

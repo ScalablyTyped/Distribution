@@ -5,7 +5,6 @@ import typings.applepayjs.ApplePayJS.ApplePayPaymentAuthorizationResult
 import typings.applepayjs.ApplePayJS.ApplePayPaymentAuthorizedEvent
 import typings.applepayjs.ApplePayJS.ApplePayPaymentMethodSelectedEvent
 import typings.applepayjs.ApplePayJS.ApplePayPaymentMethodUpdate
-import typings.applepayjs.ApplePayJS.ApplePayPaymentRequest
 import typings.applepayjs.ApplePayJS.ApplePayShippingContactSelectedEvent
 import typings.applepayjs.ApplePayJS.ApplePayShippingContactUpdate
 import typings.applepayjs.ApplePayJS.ApplePayShippingMethod
@@ -18,15 +17,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ApplePaySession")
 @js.native
-class ApplePaySession protected () extends EventTarget {
-  /**
-    * The entry point for Apple Pay on the web.
-    * @param version - The version number of the ApplePay JS API you are using. The current API version number is 3.
-    * @param paymentRequest - An ApplePayPaymentRequest object that contains the information to be displayed on the Apple Pay payment sheet.
-    */
-  def this(version: Double, paymentRequest: ApplePayPaymentRequest) = this()
+trait ApplePaySession extends EventTarget {
   /**
     * Aborts the current Apple Pay session.
     */
@@ -112,66 +104,5 @@ class ApplePaySession protected () extends EventTarget {
     * A callback function that is automatically called when the payment sheet is displayed.
     */
   def onvalidatemerchant(event: ApplePayValidateMerchantEvent): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ApplePaySession")
-@js.native
-object ApplePaySession extends js.Object {
-  /**
-    * The requested action failed.
-    */
-  val STATUS_FAILURE: Double = js.native
-  /**
-    * The billing address is not valid.
-    */
-  val STATUS_INVALID_BILLING_POSTAL_ADDRESS: Double = js.native
-  /**
-    * The shipping contact information is not valid.
-    */
-  val STATUS_INVALID_SHIPPING_CONTACT: Double = js.native
-  /**
-    * The shipping address is not valid.
-    */
-  val STATUS_INVALID_SHIPPING_POSTAL_ADDRESS: Double = js.native
-  /**
-    * The PIN information is not valid. Cards on the China Union Pay network may require a PIN.
-    */
-  val STATUS_PIN_INCORRECT: Double = js.native
-  /**
-    * The maximum number of tries for a PIN has been reached and the user has been locked out. Cards on the China Union Pay network may require a PIN.
-    */
-  val STATUS_PIN_LOCKOUT: Double = js.native
-  /**
-    * The required PIN information was not provided. Cards on the China Union Pay payment network may require a PIN to authenticate the transaction.
-    */
-  val STATUS_PIN_REQUIRED: Double = js.native
-  /**
-    * The requested action succeeded.
-    */
-  val STATUS_SUCCESS: Double = js.native
-  /**
-    * Indicates whether the device supports Apple Pay.
-    * @returns true if the device supports making payments with Apple Pay; otherwise, false.
-    */
-  def canMakePayments(): Boolean = js.native
-  /**
-    * Indicates whether the device supports Apple Pay and whether the user has an active card in Wallet.
-    * @param merchantIdentifier - The merchant ID created when the merchant enrolled in Apple Pay.
-    * @returns true if the device supports Apple Pay and there is at least one active card in Wallet that is qualified for payments on the web; otherwise, false.
-    */
-  def canMakePaymentsWithActiveCard(merchantIdentifier: String): js.Promise[Boolean] = js.native
-  /**
-    * Displays the Set up Apple Pay button.
-    * @param merchantIdentifier - The merchant ID created when the merchant enrolled in Apple Pay.
-    * @returns A boolean value indicating whether setup was successful.
-    */
-  def openPaymentSetup(merchantIdentifier: String): js.Promise[Boolean] = js.native
-  /**
-    * Verifies whether a web browser supports a given Apple Pay JS API version.
-    * @param version - A number representing the Apple Pay JS API version being checked. The initial version is 1. The latest version is 3.
-    * @returns A boolean value indicating whether the web browser supports the given API version. Returns false if the web browser does not support the specified version.
-    */
-  def supportsVersion(version: Double): Boolean = js.native
 }
 

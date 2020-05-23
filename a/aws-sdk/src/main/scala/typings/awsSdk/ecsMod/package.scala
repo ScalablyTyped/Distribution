@@ -124,6 +124,8 @@ package object ecsMod {
     - java.lang.String
   */
   type EFSTransitEncryption = typings.awsSdk.ecsMod._EFSTransitEncryption | java.lang.String
+  type EnvironmentFileType = typings.awsSdk.awsSdkStrings.s3_ | java.lang.String
+  type EnvironmentFiles = js.Array[typings.awsSdk.ecsMod.EnvironmentFile]
   type EnvironmentVariables = js.Array[typings.awsSdk.ecsMod.KeyValuePair]
   type Failures = js.Array[typings.awsSdk.ecsMod.Failure]
   type FirelensConfigurationOptionsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.ecsMod.String]

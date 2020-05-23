@@ -28,8 +28,8 @@ object ListPopulationTerm {
     variableName: String = null
   ): ListPopulationTerm = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contains)) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
-    if (!js.isUndefined(negation)) __obj.updateDynamic("negation")(negation.asInstanceOf[js.Any])
+    if (!js.isUndefined(contains)) __obj.updateDynamic("contains")(contains.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(negation)) __obj.updateDynamic("negation")(negation.get.asInstanceOf[js.Any])
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     if (remarketingListId != null) __obj.updateDynamic("remarketingListId")(remarketingListId.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -25,14 +25,14 @@ object SentenceAnalysis {
   def apply(
     sentence_id: Double,
     text: String,
-    input_from: Int | Double = null,
-    input_to: Int | Double = null,
+    input_from: js.UndefOr[Double] = js.undefined,
+    input_to: js.UndefOr[Double] = js.undefined,
     tone_categories: js.Array[ToneCategory] = null,
     tones: js.Array[ToneScore] = null
   ): SentenceAnalysis = {
     val __obj = js.Dynamic.literal(sentence_id = sentence_id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (input_from != null) __obj.updateDynamic("input_from")(input_from.asInstanceOf[js.Any])
-    if (input_to != null) __obj.updateDynamic("input_to")(input_to.asInstanceOf[js.Any])
+    if (!js.isUndefined(input_from)) __obj.updateDynamic("input_from")(input_from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(input_to)) __obj.updateDynamic("input_to")(input_to.get.asInstanceOf[js.Any])
     if (tone_categories != null) __obj.updateDynamic("tone_categories")(tone_categories.asInstanceOf[js.Any])
     if (tones != null) __obj.updateDynamic("tones")(tones.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentenceAnalysis]

@@ -26,8 +26,8 @@ object PageViewLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, zoom: js.UndefOr[Boolean] = js.undefined): PageViewLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageViewLoadOptions]
   }
 }

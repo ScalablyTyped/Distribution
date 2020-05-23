@@ -17,7 +17,7 @@ object ShadowRootOptions {
   @scala.inline
   def apply(delegatesFocus: js.UndefOr[Boolean] = js.undefined): ShadowRootOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delegatesFocus)) __obj.updateDynamic("delegatesFocus")(delegatesFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(delegatesFocus)) __obj.updateDynamic("delegatesFocus")(delegatesFocus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowRootOptions]
   }
 }

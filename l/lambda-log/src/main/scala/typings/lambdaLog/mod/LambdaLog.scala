@@ -2,7 +2,7 @@ package typings.lambdaLog.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.std.Console_
+import typings.std.Console
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ class LambdaLog ()
   var LambdaLog: typings.lambdaLog.mod.LambdaLog = js.native
   var _levels: js.Any = js.native
   var _logLevels: js.Any = js.native
-  var console: Console_ = js.native
+  var console: Console = js.native
   var options: LambdaLogOptions = js.native
   def assert(test: js.Any, msg: String): Boolean | LogMessage = js.native
   def assert(test: js.Any, msg: String, meta: js.Object): Boolean | LogMessage = js.native

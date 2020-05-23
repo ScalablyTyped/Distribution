@@ -27,7 +27,7 @@ object RendererOptions {
   @scala.inline
   def apply(
     dashColor: String = null,
-    defaultIndentation: Int | Double = null,
+    defaultIndentation: js.UndefOr[Double] = js.undefined,
     emptyArrayMsg: String = null,
     inlineArrays: js.UndefOr[Boolean] = js.undefined,
     keysColor: String = null,
@@ -38,12 +38,12 @@ object RendererOptions {
   ): RendererOptions = {
     val __obj = js.Dynamic.literal()
     if (dashColor != null) __obj.updateDynamic("dashColor")(dashColor.asInstanceOf[js.Any])
-    if (defaultIndentation != null) __obj.updateDynamic("defaultIndentation")(defaultIndentation.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultIndentation)) __obj.updateDynamic("defaultIndentation")(defaultIndentation.get.asInstanceOf[js.Any])
     if (emptyArrayMsg != null) __obj.updateDynamic("emptyArrayMsg")(emptyArrayMsg.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineArrays)) __obj.updateDynamic("inlineArrays")(inlineArrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineArrays)) __obj.updateDynamic("inlineArrays")(inlineArrays.get.asInstanceOf[js.Any])
     if (keysColor != null) __obj.updateDynamic("keysColor")(keysColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAlign)) __obj.updateDynamic("noAlign")(noAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(noColor)) __obj.updateDynamic("noColor")(noColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAlign)) __obj.updateDynamic("noAlign")(noAlign.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noColor)) __obj.updateDynamic("noColor")(noColor.get.asInstanceOf[js.Any])
     if (numberColor != null) __obj.updateDynamic("numberColor")(numberColor.asInstanceOf[js.Any])
     if (stringColor != null) __obj.updateDynamic("stringColor")(stringColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererOptions]

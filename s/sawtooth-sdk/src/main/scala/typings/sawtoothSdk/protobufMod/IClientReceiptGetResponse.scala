@@ -14,10 +14,13 @@ trait IClientReceiptGetResponse extends js.Object {
 
 object IClientReceiptGetResponse {
   @scala.inline
-  def apply(receipts: js.Array[ITransactionReceipt] = null, status: Status = null): IClientReceiptGetResponse = {
+  def apply(
+    receipts: js.UndefOr[Null | js.Array[ITransactionReceipt]] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
+  ): IClientReceiptGetResponse = {
     val __obj = js.Dynamic.literal()
-    if (receipts != null) __obj.updateDynamic("receipts")(receipts.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(receipts)) __obj.updateDynamic("receipts")(receipts.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientReceiptGetResponse]
   }
 }

@@ -49,7 +49,7 @@ object FindResultProperties {
     displayFieldName: String = null,
     feature: GraphicProperties = null,
     foundFieldName: String = null,
-    layerId: Int | Double = null,
+    layerId: js.UndefOr[Double] = js.undefined,
     layerName: String = null,
     value: String = null
   ): FindResultProperties = {
@@ -57,7 +57,7 @@ object FindResultProperties {
     if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName.asInstanceOf[js.Any])
     if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
     if (foundFieldName != null) __obj.updateDynamic("foundFieldName")(foundFieldName.asInstanceOf[js.Any])
-    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(layerId)) __obj.updateDynamic("layerId")(layerId.get.asInstanceOf[js.Any])
     if (layerName != null) __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindResultProperties]

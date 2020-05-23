@@ -1,11 +1,5 @@
 package typings.agoraRtcSdk.mod
 
-import typings.agoraRtcSdk.AnonCacheResource
-import typings.agoraRtcSdk.AnonCycle
-import typings.agoraRtcSdk.AnonFit
-import typings.agoraRtcSdk.AnonInfo
-import typings.agoraRtcSdk.AnonLighteningContrastLevel
-import typings.agoraRtcSdk.AnonSoundId
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`player-status-change`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.accessAllowed
 import typings.agoraRtcSdk.agoraRtcSdkStrings.accessDenied
@@ -22,14 +16,20 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.standard_stereo
 import typings.agoraRtcSdk.agoraRtcSdkStrings.stopScreenSharing
 import typings.agoraRtcSdk.agoraRtcSdkStrings.video
 import typings.agoraRtcSdk.agoraRtcSdkStrings.videoTrackEnded
+import typings.agoraRtcSdk.anon.CacheResource
+import typings.agoraRtcSdk.anon.Cycle
+import typings.agoraRtcSdk.anon.Fit
+import typings.agoraRtcSdk.anon.Info
+import typings.agoraRtcSdk.anon.LighteningContrastLevel
+import typings.agoraRtcSdk.anon.SoundId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * The Stream object created by the {@link createStream} method.
+  * The Stream interface provides methods that define the behaviors of a Stream object, such as the playback control and video encoder configurations.
   *
-  * A stream represents a published local or remote media stream object in a call session.
+  * The Stream object is created by the {@link createStream} method. A stream represents a published local or subscribed remote media stream object in a call session.
   *
   * All Stream methods can be called for both local and remote streams if not specified.
   */
@@ -51,7 +51,7 @@ trait Stream extends js.Object {
     * localStream.addTrack(anotherStream.getVideoTrack());
     * ```
     *
-    * **Note:**
+    * **Note**
     *
     * - This method does not support Firefox and Safari.
     * - A Stream object can have only one audio track and one video track at most.
@@ -132,14 +132,14 @@ trait Stream extends js.Object {
     *
     * This method does not apply to streams that contain no audio data and may result in warnings.
     *
-    * **Note:**
+    * **Note**
     *
     * Due to browser policy changes, this method must be triggered by the user's gesture on the Chrome 70+ and Safari browser.
     * See [Autoplay Policy Changes](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes) for details.
     *
     * @returns The audio level. The value range is [0,1].
     */
-  def getAudioLevel(): Double | Unit = js.native
+  def getAudioLevel(): js.UndefOr[Double] = js.native
   /**
     * Retrieves the Current Position of the Audio Mixing
     *
@@ -160,7 +160,7 @@ trait Stream extends js.Object {
     * This method retrieves the audio track in the stream and can be used together with [[replaceTrack]].
     * @returns If the stream contains an audio track, it will be returned in a `MediaStreamTrack` object.
     */
-  def getAudioTrack(): MediaStreamTrack | Unit = js.native
+  def getAudioTrack(): js.UndefOr[MediaStreamTrack] = js.native
   /**
     * Gets the volume of the audio effects.
     *
@@ -177,20 +177,20 @@ trait Stream extends js.Object {
     * });
     * ```
     */
-  def getEffectsVolume(): js.Array[AnonSoundId] = js.native
+  def getEffectsVolume(): js.Array[SoundId] = js.native
   /**
     * Retrieves the Stream ID
     *
     * This method retrieves the stream ID.
     * @example `stream.getId()`
     */
-  def getId(): Double = js.native
+  def getId(): Double | String = js.native
   /**
     * Gets Connection Statistics
     *
     * This method gets the connection statistics of the stream.
     *
-    * **Note:**
+    * **Note**
     *
     * It may take some time to get some of the statistics.
     *
@@ -243,7 +243,7 @@ trait Stream extends js.Object {
     * This method retrieves the video track in the stream and can be used together with [[replaceTrack]].
     * @returns If the stream contains a video track, it will be returned in a `MediaStreamTrack` object.
     */
-  def getVideoTrack(): MediaStreamTrack | Unit = js.native
+  def getVideoTrack(): js.UndefOr[MediaStreamTrack] = js.native
   /**
     * Retrieves the Audio Flag
     *
@@ -302,7 +302,7 @@ trait Stream extends js.Object {
     */
   def init(): Unit = js.native
   def init(onSuccess: js.Function0[Unit]): Unit = js.native
-  def init(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ AnonInfo, Unit]): Unit = js.native
+  def init(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ Info, Unit]): Unit = js.native
   /**
     * Returns Whether the Stream is Playing
     *
@@ -319,7 +319,7 @@ trait Stream extends js.Object {
     * - For local streams, this method call stops sending audio and triggers the `Client.on("mute-audio")` callback on the remote client.
     * - For remote streams, the SDK still receives audio but stops playing it after you call this method.
     *
-    * **Note:** For local streams, it works only when the audio flag is `true` in the stream.
+    * **Note** For local streams, it works only when the audio flag is `true` in the stream.
     * @returns
     * - `true`: Success.
     * - `false`: Failure. Possible reasons include no audio, stream not initialized, and audio track already disabled.
@@ -333,7 +333,7 @@ trait Stream extends js.Object {
     * - For local streams, this method call stops sending video and triggers the `Client.on("mute-video")` callback on the remote client.
     * - For remote streams, the SDK still receives video but stops playing it after you call this method.
     *
-    * **Note:** For local streams, it works only when the video flag is `true` in the stream.
+    * **Note** For local streams, it works only when the video flag is `true` in the stream.
     * @returns
     * - `true`: Success.
     * - `false`: Failure. Possible reasons include no video, stream not initialized, and video track already disabled.
@@ -351,7 +351,7 @@ trait Stream extends js.Object {
   /**
     * Occurs when the audio mixing stream playback starts/resumes.
     *
-    * **Note:**
+    * **Note**
     * This callback is triggered when the audio mixing stream is loaded and starts playing, or when the paused audio mixing stream resumes playing.
     */
   @JSName("on")
@@ -359,7 +359,7 @@ trait Stream extends js.Object {
   /**
     * Occurs when the audio track no longer provides data to the stream.
     *
-    * Possible reasons include device removal and deauthorization. See [MediaStreamTrack.onended](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/onended).
+    * Possible reasons include device removal and deauthorization. See [Media​Stream​Track​.onended](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/onended).
     */
   @JSName("on")
   def on_audioTrackEnded(event: audioTrackEnded, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
@@ -380,7 +380,7 @@ trait Stream extends js.Object {
     *     - "aborted": The player is removed before the stream is played successfully.
     *     - "paused": The player is stopped.
     * - reason: The reason why the playback status changes. Usually, this value is the event that triggers the status change. Possible values include the following:
-    *     - "playing": The playback starts. See [HTMLMediaElement: playing event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/playing_event).
+    *     - "playing": The playback starts. See [HTMLMedia​Element: playing event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/playing_event).
     *     - "stalled": The failure might be caused by the browser policy. See [stalled event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/stalled_event).
     *     - "pause": The stream playback might be paused by the user. See [pause event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/pause_event).
     *     - "suspend": The failure might be caused by the browser policy. See [suspend event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/suspend_event).
@@ -412,7 +412,7 @@ trait Stream extends js.Object {
   /**
     * Occurs when the video track no longer provides data to the stream.
     *
-    * Possible reasons include device removal and deauthorization. See [MediaStreamTrack.onended](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/onended).
+    * Possible reasons include device removal and deauthorization. See [Media​Stream​Track​.onended](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/onended).
     */
   @JSName("on")
   def on_videoTrackEnded(event: videoTrackEnded, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
@@ -461,7 +461,7 @@ trait Stream extends js.Object {
     *
     * This method plays the video or audio stream.
     *
-    * **Note:**
+    * **Note**
     *
     * Due to browser policy changes, this method must be triggered by the user's gesture on the Chrome 70+ and Safari browsers.
     * See [Autoplay Policy Changes](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes) for details.
@@ -482,12 +482,8 @@ trait Stream extends js.Object {
     *  - [[StreamPlayError]] if the playback fails.
     */
   def play(HTMLElementID: String): Unit = js.native
-  def play(HTMLElementID: String, option: AnonFit): Unit = js.native
-  def play(
-    HTMLElementID: String,
-    option: AnonFit,
-    callback: js.Function1[/* err */ Null | StreamPlayError, Unit]
-  ): Unit = js.native
+  def play(HTMLElementID: String, option: Fit): Unit = js.native
+  def play(HTMLElementID: String, option: Fit, callback: js.Function1[/* err */ Null | StreamPlayError, Unit]): Unit = js.native
   /**
     * Plays a specified audio effect.
     *
@@ -495,7 +491,7 @@ trait Stream extends js.Object {
     *
     * You can use this method to add specific audio effects for specific scenarios. For example, gaming.
     *
-    * **Note:**
+    * **Note**
     *
     * - Due to web browser autoplay policy changes, this method must be triggered by a user gesture on Chrome 70+ and Safari web browsers.
     * See [Autoplay Policy Changes](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes) for details.
@@ -512,7 +508,7 @@ trait Stream extends js.Object {
     * - null: the method call succeeds.
     * - err: the method call fails.
     *
-    * **Note:**
+    * **Note**
     *
     * The callbacks of the audio effect methods all use the Node.js callback pattern.
     *
@@ -532,8 +528,8 @@ trait Stream extends js.Object {
     *
     * ```
     */
-  def playEffect(options: AnonCycle): Unit = js.native
-  def playEffect(options: AnonCycle, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  def playEffect(options: Cycle): Unit = js.native
+  def playEffect(options: Cycle, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
   /**
     * Preloads a specified audio effect file into the memory.
     *
@@ -562,7 +558,7 @@ trait Stream extends js.Object {
     *
     * When the track is removed, the `Client.on("stream-updated")` callback is triggered on the remote client.
     *
-    * **Note:**
+    * **Note**
     *
     * - If you need to change both the audio and video tracks, we recommend using the [[replaceTrack]] method instead.
     * - This method does not support Firefox and Safari.
@@ -588,7 +584,7 @@ trait Stream extends js.Object {
     *
     * The replaced track will be stopped.
     *
-    * **Note:**
+    * **Note**
     *
     * - Supports Chrome 65+, Safari, and latest Firefox.
     * - This method might not take effect on some mobile devices.
@@ -686,7 +682,7 @@ trait Stream extends js.Object {
     *
     * This method sets the audio output device for the remote stream. You can use it to switch between the speakerphones. It can be called either before or after the remote stream is played.
     *
-    * **Note:**
+    * **Note**
     *
     * Only Chrome 49 or later supports this function.
     * @param deviceId The device ID can be retrieved from {@link getDevices}, whose [[kind]] should be "audiooutput". The retrieved ID is ASCII characters, and the string length is greater than 0 and less than 256 bytes.
@@ -709,7 +705,7 @@ trait Stream extends js.Object {
     *
     * It is optional and works only when called before {@link Stream.init}. The default value is `"music_standard"`.
     *
-    * **Note:**
+    * **Note**
     *
     * Due to the limitations of browsers, some browsers may not be fully compatible with the audio profile you set.
     *
@@ -752,11 +748,17 @@ trait Stream extends js.Object {
     *   * Chrome 65 or later
     *   * Firefox 70.0.1 or later
     *
-    * **Note:**
+    * **Note**
     *
     * - This function does not support mobile devices.
-    * - If the dual-stream mode is enabled ({@link enableDualStream}), the image enhancement options apply only to the high-video stream.
-    * - To remove a video track ({@link removeTrack}) after enabling image enhancement, call this method to disable image enhancement first.
+    * - If the dual-stream mode is enabled ({@link enableDualStream}), the image enhancement options apply only to the high-quality video stream.
+    * - If image enhancement is enabled, you must call this method to disable it before calling the following methods:
+    *   - {@link leave}
+    *   - {@link stop}
+    *   - {@link removeTrack}
+    *   - {@link unpublish}
+    * - The image enhancement function involves real-time compute-intensive processing. Though it is based on hardware acceleration, the processing has high GPU and CPU overheads.
+    * For low-end devices, enabling image enhancement affects the system performance. When the video resolution is set as 360p, 720p or higher, and the frame rate is set as 30 fps or 15 fps, do not enable image enhancement.
     *
     * @param enabled Sets whether to enable image enhancement:
     *
@@ -776,7 +778,7 @@ trait Stream extends js.Object {
     *
     * ```
     */
-  def setBeautyEffectOptions(enabled: Boolean, options: AnonLighteningContrastLevel): Unit = js.native
+  def setBeautyEffectOptions(enabled: Boolean, options: LighteningContrastLevel): Unit = js.native
   /**
     * Sets the volume of the audio effects.
     *
@@ -797,7 +799,11 @@ trait Stream extends js.Object {
   /**
     * Sets the Screen Profile
     *
-    * This method sets the profile of the screen in screen-sharing.
+    * This method sets the profile of the screen in screen-sharing. Ensure that you call this method before {@link Stream.init}.
+    *
+    * **Note**
+    *
+    * This method works for local streams only.
     * @param profile The screen profile. See the following table for details.
     *
     * [[include:ScreenProfileDefinition.md]]
@@ -808,11 +814,13 @@ trait Stream extends js.Object {
     *
     * You can use this method to customize the video resolution, frame rate, and bitrate of the local stream. This method can be called before or after {@link Stream.init}.
     *
-    * **Note:**
+    * **Note**
     *
+    * - This method works for local streams only.
     * - Do not call this method when publishing streams.
+    * - If you enable dual streams ({@link enableDualStream}), we do not support increasing the video resolution in this method. This is a [known issue](https://bugs.chromium.org/p/chromium/issues/detail?id=768205) of Chromium.
     * - On some iOS devices, when you update the video encoder configuration after {@link Stream.init}, black bars might appear around your video.
-    * - The actual resolution, frame rate, and bitrate depend on the device, see [MediaStreamTrack.applyConstraints()](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/applyConstraints) for more information.
+    * - The actual resolution, frame rate, and bitrate depend on the device, see [Media​Stream​Track​.apply​Constraints()](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/applyConstraints) for more information.
     * - This method works on Chrome 63 or later and is not fully functional on other browsers with the following issues:
     *   - The frame rate setting does not take effect on Safari 12 or earlier.
     *   - Safari 11 or earlier only supports specific resolutions.
@@ -848,9 +856,11 @@ trait Stream extends js.Object {
     *
     * This method is optional and is usually called before {@link Stream.init}. From v2.7, you can also call this method after {@link Stream.init} to change the video encoding profile.
     *
-    * **Note:**
+    * **Note**
     *
+    * - This method works for local streams only.
     * - Do not call this method when publishing streams.
+    * - If you enable dual streams ({@link enableDualStream}), we do not support increasing the video resolution in this method. This is a [known issue](https://bugs.chromium.org/p/chromium/issues/detail?id=768205) of Chromium.
     * - On some iOS devices, when you update the video profile after {@link Stream.init}, black bars might appear around your video.
     * - Changing the video profile after {@link Stream.init} works only on Chrome 63 or later and Safari 11 or later.
     * @example `setVideoProfile("480p");`
@@ -889,7 +899,7 @@ trait Stream extends js.Object {
     *
     * When the audio mixing file playback finishes, the SDK triggers the `Stream.on("audioMixingFinished")` callback on the local client.
     *
-    * **Note:**
+    * **Note**
     *
     * - This method supports the following browsers:
     *   * Safari 12 and later
@@ -910,7 +920,7 @@ trait Stream extends js.Object {
     *   - "LOAD_AUDIO_FAILED": Fails to load the online audio file.
     *   - "CREATE_BUFFERSOURCE_FAILED": Fails to create buffer for audio mixing.
     *
-    * **Note:**
+    * **Note**
     * The callbacks of the other audio mixing methods are the same as this one, using the Node.js callback pattern.
     *
     * @example **Sample code**
@@ -928,8 +938,8 @@ trait Stream extends js.Object {
     *
     * ```
     */
-  def startAudioMixing(options: AnonCacheResource): Unit = js.native
-  def startAudioMixing(options: AnonCacheResource, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
+  def startAudioMixing(options: CacheResource): Unit = js.native
+  def startAudioMixing(options: CacheResource, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
   /**
     * Stops the Audio/Video Stream Playback
     *
@@ -995,7 +1005,7 @@ trait Stream extends js.Object {
     * - The stream is created by defining the [[audioSource]] and [[videoSource]] properties.
     * - The Firefox browser.
     *
-    * **Note:**
+    * **Note**
     *
     * This method might not take effect on some mobile devices.
     * @param type Type of the device: "audio" or "video".
@@ -1051,7 +1061,7 @@ trait Stream extends js.Object {
     *
     * If you call this method to enable the audio track for local streams, the `Client.on("unmute-audio")` callback is triggered on the remote client.
     *
-    * **Note:** For local streams, it works only when the audio flag is `true` in the stream.
+    * **Note** For local streams, it works only when the audio flag is `true` in the stream.
     *
     * By default the audio track is enabled. If you call {@link muteAudio}, call this method to enable audio.
     * @returns
@@ -1066,7 +1076,7 @@ trait Stream extends js.Object {
     *
     * If you call this method to enable the audio track for local streams, the `Client.on("unmute-video")` callback is triggered on the remote client.
     *
-    * **Note:** For local streams, it works only when the video flag is `true` in the stream.
+    * **Note** For local streams, it works only when the video flag is `true` in the stream.
     *
     * By default the video track is enabled. If you call {@link muteVideo}, call this method to enable video.
     * @returns

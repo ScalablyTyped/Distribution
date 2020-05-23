@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Autocomplete
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object SortOrder extends js.Object {
   ///Items to be displayed in the suggestion list in descending order.
   @js.native
   sealed trait Descending extends SortOrder
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SortOrder with Double] = js.native
-  /* 0 */ @js.native
-  object Ascending extends TopLevel[Ascending with Double]
-  
-  /* 1 */ @js.native
-  object Descending extends TopLevel[Descending with Double]
   
 }
 

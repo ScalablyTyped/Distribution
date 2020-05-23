@@ -84,29 +84,29 @@ trait PlotPackedbubbleLayoutAlgorithmParentNodeOptions extends js.Object {
 object PlotPackedbubbleLayoutAlgorithmParentNodeOptions {
   @scala.inline
   def apply(
-    friction: Int | Double = null,
-    gravitationalConstant: Int | Double = null,
-    initialPositionRadius: Int | Double = null,
+    friction: js.UndefOr[Double] = js.undefined,
+    gravitationalConstant: js.UndefOr[Double] = js.undefined,
+    initialPositionRadius: js.UndefOr[Double] = js.undefined,
     initialPositions: circle | random | js.Function = null,
     integration: OptionsIntegrationValue = null,
-    linkLength: Int | Double = null,
+    linkLength: js.UndefOr[Double] = js.undefined,
     marker: PointMarkerOptionsObject = null,
-    maxIterations: Int | Double = null,
-    maxSpeed: Int | Double = null,
+    maxIterations: js.UndefOr[Double] = js.undefined,
+    maxSpeed: js.UndefOr[Double] = js.undefined,
     seriesInteraction: js.UndefOr[Boolean] = js.undefined,
     `type`: `reingold-fruchterman` = null
   ): PlotPackedbubbleLayoutAlgorithmParentNodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (gravitationalConstant != null) __obj.updateDynamic("gravitationalConstant")(gravitationalConstant.asInstanceOf[js.Any])
-    if (initialPositionRadius != null) __obj.updateDynamic("initialPositionRadius")(initialPositionRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravitationalConstant)) __obj.updateDynamic("gravitationalConstant")(gravitationalConstant.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialPositionRadius)) __obj.updateDynamic("initialPositionRadius")(initialPositionRadius.get.asInstanceOf[js.Any])
     if (initialPositions != null) __obj.updateDynamic("initialPositions")(initialPositions.asInstanceOf[js.Any])
     if (integration != null) __obj.updateDynamic("integration")(integration.asInstanceOf[js.Any])
-    if (linkLength != null) __obj.updateDynamic("linkLength")(linkLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkLength)) __obj.updateDynamic("linkLength")(linkLength.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (maxIterations != null) __obj.updateDynamic("maxIterations")(maxIterations.asInstanceOf[js.Any])
-    if (maxSpeed != null) __obj.updateDynamic("maxSpeed")(maxSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(seriesInteraction)) __obj.updateDynamic("seriesInteraction")(seriesInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIterations)) __obj.updateDynamic("maxIterations")(maxIterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSpeed)) __obj.updateDynamic("maxSpeed")(maxSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesInteraction)) __obj.updateDynamic("seriesInteraction")(seriesInteraction.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPackedbubbleLayoutAlgorithmParentNodeOptions]
   }

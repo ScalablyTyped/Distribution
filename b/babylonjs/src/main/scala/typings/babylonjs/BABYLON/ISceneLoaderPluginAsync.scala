@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonMeshes
+import typings.babylonjs.anon.Meshes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,14 +17,14 @@ trait ISceneLoaderPluginAsync extends ISceneLoaderPluginBase {
     * @param fileName Defines the name of the file to load
     * @returns The loaded meshes, particle systems, skeletons, and animation groups
     */
-  def importMeshAsync(meshesNames: js.Any, scene: Scene, data: js.Any, rootUrl: String): js.Promise[AnonMeshes] = js.native
+  def importMeshAsync(meshesNames: js.Any, scene: Scene, data: js.Any, rootUrl: String): js.Promise[Meshes] = js.native
   def importMeshAsync(
     meshesNames: js.Any,
     scene: Scene,
     data: js.Any,
     rootUrl: String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, Unit]
-  ): js.Promise[AnonMeshes] = js.native
+  ): js.Promise[Meshes] = js.native
   def importMeshAsync(
     meshesNames: js.Any,
     scene: Scene,
@@ -32,7 +32,7 @@ trait ISceneLoaderPluginAsync extends ISceneLoaderPluginBase {
     rootUrl: String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, Unit],
     fileName: String
-  ): js.Promise[AnonMeshes] = js.native
+  ): js.Promise[Meshes] = js.native
   /**
     * Load into an asset container.
     * @param scene The scene to load into

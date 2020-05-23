@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.AnonCalloutProps
+import typings.officeUiFabricReact.anon.CalloutProps
 import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +17,6 @@ class TeachingBubbleBase protected ()
 @JSImport("office-ui-fabric-react/lib/index.bundle", "TeachingBubbleBase")
 @js.native
 object TeachingBubbleBase extends js.Object {
-  var defaultProps: AnonCalloutProps = js.native
+  var defaultProps: CalloutProps = js.native
 }
 

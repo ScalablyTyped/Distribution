@@ -18,7 +18,7 @@ object UnserializeOptions {
   def apply(encoding: utf8 | binary = null, strict: js.UndefOr[Boolean] = js.undefined): UnserializeOptions = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnserializeOptions]
   }
 }

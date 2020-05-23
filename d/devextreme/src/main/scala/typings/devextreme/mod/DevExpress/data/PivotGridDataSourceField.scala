@@ -1,9 +1,9 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.AnonAllowSearch
-import typings.devextreme.AnonChildren
-import typings.devextreme.AnonSummaryProcess
-import typings.devextreme.AnonValue
+import typings.devextreme.anon.AllowSearch
+import typings.devextreme.anon.Children
+import typings.devextreme.anon.SummaryProcess
+import typings.devextreme.anon.Value
 import typings.devextreme.devextremeStrings.absoluteVariation
 import typings.devextreme.devextremeStrings.asc
 import typings.devextreme.devextremeStrings.avg
@@ -57,13 +57,13 @@ trait PivotGridDataSourceField extends js.Object {
   /** @name PivotGridDataSource.Options.fields.areaIndex */
   var areaIndex: js.UndefOr[Double] = js.undefined
   /** @name PivotGridDataSource.Options.fields.calculateCustomSummary */
-  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ AnonSummaryProcess, _]] = js.undefined
+  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ SummaryProcess, _]] = js.undefined
   /** @name PivotGridDataSource.Options.fields.calculateSummaryValue */
   var calculateSummaryValue: js.UndefOr[js.Function1[/* e */ dxPivotGridSummaryCell, Double]] = js.undefined
   /** @name PivotGridDataSource.Options.fields.caption */
   var caption: js.UndefOr[String] = js.undefined
   /** @name PivotGridDataSource.Options.fields.customizeText */
-  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ AnonValue, String]] = js.undefined
+  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ Value, String]] = js.undefined
   /** @name PivotGridDataSource.Options.fields.dataField */
   var dataField: js.UndefOr[String] = js.undefined
   /** @name PivotGridDataSource.Options.fields.dataType */
@@ -85,7 +85,7 @@ trait PivotGridDataSourceField extends js.Object {
   /** @name PivotGridDataSource.Options.fields.groupName */
   var groupName: js.UndefOr[String] = js.undefined
   /** @name PivotGridDataSource.Options.fields.headerFilter */
-  var headerFilter: js.UndefOr[AnonAllowSearch] = js.undefined
+  var headerFilter: js.UndefOr[AllowSearch] = js.undefined
   /** @name PivotGridDataSource.Options.fields.isMeasure */
   var isMeasure: js.UndefOr[Boolean] = js.undefined
   /** @name PivotGridDataSource.Options.fields.name */
@@ -109,7 +109,7 @@ trait PivotGridDataSourceField extends js.Object {
   /** @name PivotGridDataSource.Options.fields.sortOrder */
   var sortOrder: js.UndefOr[asc | desc] = js.undefined
   /** @name PivotGridDataSource.Options.fields.sortingMethod */
-  var sortingMethod: js.UndefOr[js.Function2[/* a */ AnonChildren, /* b */ AnonChildren, Double]] = js.undefined
+  var sortingMethod: js.UndefOr[js.Function2[/* a */ Children, /* b */ Children, Double]] = js.undefined
   /** @name PivotGridDataSource.Options.fields.summaryDisplayMode */
   var summaryDisplayMode: js.UndefOr[
     absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation
@@ -133,11 +133,11 @@ object PivotGridDataSourceField {
     allowSorting: js.UndefOr[Boolean] = js.undefined,
     allowSortingBySummary: js.UndefOr[Boolean] = js.undefined,
     area: column | typings.devextreme.devextremeStrings.data | filter | row = null,
-    areaIndex: Int | Double = null,
-    calculateCustomSummary: /* options */ AnonSummaryProcess => _ = null,
+    areaIndex: js.UndefOr[Double] = js.undefined,
+    calculateCustomSummary: /* options */ SummaryProcess => _ = null,
     calculateSummaryValue: /* e */ dxPivotGridSummaryCell => Double = null,
     caption: String = null,
-    customizeText: /* cellInfo */ AnonValue => String = null,
+    customizeText: /* cellInfo */ Value => String = null,
     dataField: String = null,
     dataType: date | number | string_ = null,
     displayFolder: String = null,
@@ -145,10 +145,10 @@ object PivotGridDataSourceField {
     filterType: exclude | include = null,
     filterValues: js.Array[_] = null,
     format: format = null,
-    groupIndex: Int | Double = null,
+    groupIndex: js.UndefOr[Double] = js.undefined,
     groupInterval: day | dayOfWeek | month | quarter | year | Double = null,
     groupName: String = null,
-    headerFilter: AnonAllowSearch = null,
+    headerFilter: AllowSearch = null,
     isMeasure: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     runningTotal: column | row = null,
@@ -160,21 +160,21 @@ object PivotGridDataSourceField {
     sortBySummaryField: String = null,
     sortBySummaryPath: js.Array[Double | String] = null,
     sortOrder: asc | desc = null,
-    sortingMethod: (/* a */ AnonChildren, /* b */ AnonChildren) => Double = null,
+    sortingMethod: (/* a */ Children, /* b */ Children) => Double = null,
     summaryDisplayMode: absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation = null,
     summaryType: avg | count | custom | max | min | sum | String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
   ): PivotGridDataSourceField = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCrossGroupCalculation)) __obj.updateDynamic("allowCrossGroupCalculation")(allowCrossGroupCalculation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExpandAll)) __obj.updateDynamic("allowExpandAll")(allowExpandAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSortingBySummary)) __obj.updateDynamic("allowSortingBySummary")(allowSortingBySummary.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCrossGroupCalculation)) __obj.updateDynamic("allowCrossGroupCalculation")(allowCrossGroupCalculation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExpandAll)) __obj.updateDynamic("allowExpandAll")(allowExpandAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSortingBySummary)) __obj.updateDynamic("allowSortingBySummary")(allowSortingBySummary.get.asInstanceOf[js.Any])
     if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (areaIndex != null) __obj.updateDynamic("areaIndex")(areaIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(areaIndex)) __obj.updateDynamic("areaIndex")(areaIndex.get.asInstanceOf[js.Any])
     if (calculateCustomSummary != null) __obj.updateDynamic("calculateCustomSummary")(js.Any.fromFunction1(calculateCustomSummary))
     if (calculateSummaryValue != null) __obj.updateDynamic("calculateSummaryValue")(js.Any.fromFunction1(calculateSummaryValue))
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
@@ -182,21 +182,21 @@ object PivotGridDataSourceField {
     if (dataField != null) __obj.updateDynamic("dataField")(dataField.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (displayFolder != null) __obj.updateDynamic("displayFolder")(displayFolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (filterValues != null) __obj.updateDynamic("filterValues")(filterValues.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (groupIndex != null) __obj.updateDynamic("groupIndex")(groupIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupIndex)) __obj.updateDynamic("groupIndex")(groupIndex.get.asInstanceOf[js.Any])
     if (groupInterval != null) __obj.updateDynamic("groupInterval")(groupInterval.asInstanceOf[js.Any])
     if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
     if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMeasure)) __obj.updateDynamic("isMeasure")(isMeasure.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMeasure)) __obj.updateDynamic("isMeasure")(isMeasure.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (runningTotal != null) __obj.updateDynamic("runningTotal")(runningTotal.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGrandTotals)) __obj.updateDynamic("showGrandTotals")(showGrandTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValues)) __obj.updateDynamic("showValues")(showValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGrandTotals)) __obj.updateDynamic("showGrandTotals")(showGrandTotals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showValues)) __obj.updateDynamic("showValues")(showValues.get.asInstanceOf[js.Any])
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     if (sortBySummaryField != null) __obj.updateDynamic("sortBySummaryField")(sortBySummaryField.asInstanceOf[js.Any])
     if (sortBySummaryPath != null) __obj.updateDynamic("sortBySummaryPath")(sortBySummaryPath.asInstanceOf[js.Any])
@@ -204,9 +204,9 @@ object PivotGridDataSourceField {
     if (sortingMethod != null) __obj.updateDynamic("sortingMethod")(js.Any.fromFunction2(sortingMethod))
     if (summaryDisplayMode != null) __obj.updateDynamic("summaryDisplayMode")(summaryDisplayMode.asInstanceOf[js.Any])
     if (summaryType != null) __obj.updateDynamic("summaryType")(summaryType.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordWrapEnabled)) __obj.updateDynamic("wordWrapEnabled")(wordWrapEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordWrapEnabled)) __obj.updateDynamic("wordWrapEnabled")(wordWrapEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridDataSourceField]
   }
 }

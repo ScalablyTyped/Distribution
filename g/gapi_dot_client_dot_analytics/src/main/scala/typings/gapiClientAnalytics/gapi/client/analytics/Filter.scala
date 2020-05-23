@@ -1,9 +1,9 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonCaseSensitive
-import typings.gapiClientAnalytics.AnonField
-import typings.gapiClientAnalytics.AnonFieldIndex
-import typings.gapiClientAnalytics.AnonHref
+import typings.gapiClientAnalytics.anon.CaseSensitive
+import typings.gapiClientAnalytics.anon.Field
+import typings.gapiClientAnalytics.anon.FieldIndex
+import typings.gapiClientAnalytics.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Filter extends js.Object {
   /** Account ID to which this filter belongs. */
   var accountId: js.UndefOr[String] = js.undefined
   /** Details for the filter of the type ADVANCED. */
-  var advancedDetails: js.UndefOr[AnonCaseSensitive] = js.undefined
+  var advancedDetails: js.UndefOr[CaseSensitive] = js.undefined
   /** Time this filter was created. */
   var created: js.UndefOr[String] = js.undefined
   /** Details for the filter of the type EXCLUDE. */
@@ -24,13 +24,13 @@ trait Filter extends js.Object {
   /** Resource type for Analytics filter. */
   var kind: js.UndefOr[String] = js.undefined
   /** Details for the filter of the type LOWER. */
-  var lowercaseDetails: js.UndefOr[AnonField] = js.undefined
+  var lowercaseDetails: js.UndefOr[Field] = js.undefined
   /** Name of this filter. */
   var name: js.UndefOr[String] = js.undefined
   /** Parent link for this filter. Points to the account to which this filter belongs. */
-  var parentLink: js.UndefOr[AnonHref] = js.undefined
+  var parentLink: js.UndefOr[Href] = js.undefined
   /** Details for the filter of the type SEARCH_AND_REPLACE. */
-  var searchAndReplaceDetails: js.UndefOr[AnonFieldIndex] = js.undefined
+  var searchAndReplaceDetails: js.UndefOr[FieldIndex] = js.undefined
   /** Link for this filter. */
   var selfLink: js.UndefOr[String] = js.undefined
   /** Type of this filter. Possible values are INCLUDE, EXCLUDE, LOWERCASE, UPPERCASE, SEARCH_AND_REPLACE and ADVANCED. */
@@ -38,27 +38,27 @@ trait Filter extends js.Object {
   /** Time this filter was last modified. */
   var updated: js.UndefOr[String] = js.undefined
   /** Details for the filter of the type UPPER. */
-  var uppercaseDetails: js.UndefOr[AnonField] = js.undefined
+  var uppercaseDetails: js.UndefOr[Field] = js.undefined
 }
 
 object Filter {
   @scala.inline
   def apply(
     accountId: String = null,
-    advancedDetails: AnonCaseSensitive = null,
+    advancedDetails: CaseSensitive = null,
     created: String = null,
     excludeDetails: FilterExpression = null,
     id: String = null,
     includeDetails: FilterExpression = null,
     kind: String = null,
-    lowercaseDetails: AnonField = null,
+    lowercaseDetails: Field = null,
     name: String = null,
-    parentLink: AnonHref = null,
-    searchAndReplaceDetails: AnonFieldIndex = null,
+    parentLink: Href = null,
+    searchAndReplaceDetails: FieldIndex = null,
     selfLink: String = null,
     `type`: String = null,
     updated: String = null,
-    uppercaseDetails: AnonField = null
+    uppercaseDetails: Field = null
   ): Filter = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])

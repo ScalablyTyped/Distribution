@@ -8,22 +8,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs")
-@js.native
-class WebUICameraSettingsActivatedEventArgs ()
+trait WebUICameraSettingsActivatedEventArgs
   extends ICameraSettingsActivatedEventArgs
-     with IActivatedEventArgsDeferral {
-  /* CompleteClass */
-  override var activatedOperation: ActivatedOperation = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
-  /* CompleteClass */
-  override var videoDeviceController: js.Any = js.native
-  /* CompleteClass */
-  override var videoDeviceExtension: js.Any = js.native
+     with IActivatedEventArgsDeferral
+
+object WebUICameraSettingsActivatedEventArgs {
+  @scala.inline
+  def apply(
+    activatedOperation: ActivatedOperation,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen,
+    videoDeviceController: js.Any,
+    videoDeviceExtension: js.Any
+  ): WebUICameraSettingsActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], videoDeviceController = videoDeviceController.asInstanceOf[js.Any], videoDeviceExtension = videoDeviceExtension.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUICameraSettingsActivatedEventArgs]
+  }
 }
 

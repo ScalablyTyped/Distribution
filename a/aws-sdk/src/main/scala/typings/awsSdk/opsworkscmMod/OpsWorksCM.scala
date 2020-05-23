@@ -1,6 +1,6 @@
 package typings.awsSdk.opsworkscmMod
 
-import typings.awsSdk.DescribeNodeAssociationSt
+import typings.awsSdk.anon.DescribeNodeAssociationSt
 import typings.awsSdk.awsSdkStrings.nodeAssociated
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError

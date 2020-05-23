@@ -13,11 +13,15 @@ trait IThemePageStyles extends js.Object {
 
 object IThemePageStyles {
   @scala.inline
-  def apply(colorSwatch: IStyle = null, colorValue: IStyle = null, swatch: IStyle = null): IThemePageStyles = {
+  def apply(
+    colorSwatch: js.UndefOr[Null | IStyle] = js.undefined,
+    colorValue: js.UndefOr[Null | IStyle] = js.undefined,
+    swatch: js.UndefOr[Null | IStyle] = js.undefined
+  ): IThemePageStyles = {
     val __obj = js.Dynamic.literal()
-    if (colorSwatch != null) __obj.updateDynamic("colorSwatch")(colorSwatch.asInstanceOf[js.Any])
-    if (colorValue != null) __obj.updateDynamic("colorValue")(colorValue.asInstanceOf[js.Any])
-    if (swatch != null) __obj.updateDynamic("swatch")(swatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorSwatch)) __obj.updateDynamic("colorSwatch")(colorSwatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorValue)) __obj.updateDynamic("colorValue")(colorValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(swatch)) __obj.updateDynamic("swatch")(swatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemePageStyles]
   }
 }

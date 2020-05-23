@@ -147,6 +147,20 @@ class Filter ()
   def this(vertexSrc: String) = this()
   def this(vertexSrc: String, fragmentSrc: String) = this()
   def this(vertexSrc: String, fragmentSrc: String, uniforms: js.Any) = this()
+  /**
+    * Program that the shader uses
+    *
+    * @member {PIXI.Program} PIXI.Shader#program
+    */
+  /* CompleteClass */
+  override var program: typings.pixiJs.PIXI.Program = js.native
+  /**
+    * Shader uniform values, shortcut for `uniformGroup.uniforms`
+    * @readonly
+    * @member {object}
+    */
+  /* CompleteClass */
+  override val uniforms: js.Any = js.native
 }
 
 /* static members */

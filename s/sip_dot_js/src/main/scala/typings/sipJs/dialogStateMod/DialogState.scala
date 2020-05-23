@@ -33,12 +33,12 @@ object DialogState {
     remoteURI: URI,
     routeSet: js.Array[String],
     secure: Boolean,
-    localSequenceNumber: Int | Double = null,
-    remoteSequenceNumber: Int | Double = null
+    localSequenceNumber: js.UndefOr[Double] = js.undefined,
+    remoteSequenceNumber: js.UndefOr[Double] = js.undefined
   ): DialogState = {
     val __obj = js.Dynamic.literal(callId = callId.asInstanceOf[js.Any], early = early.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], localTag = localTag.asInstanceOf[js.Any], localURI = localURI.asInstanceOf[js.Any], remoteTag = remoteTag.asInstanceOf[js.Any], remoteTarget = remoteTarget.asInstanceOf[js.Any], remoteURI = remoteURI.asInstanceOf[js.Any], routeSet = routeSet.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
-    if (localSequenceNumber != null) __obj.updateDynamic("localSequenceNumber")(localSequenceNumber.asInstanceOf[js.Any])
-    if (remoteSequenceNumber != null) __obj.updateDynamic("remoteSequenceNumber")(remoteSequenceNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(localSequenceNumber)) __obj.updateDynamic("localSequenceNumber")(localSequenceNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteSequenceNumber)) __obj.updateDynamic("remoteSequenceNumber")(remoteSequenceNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogState]
   }
 }

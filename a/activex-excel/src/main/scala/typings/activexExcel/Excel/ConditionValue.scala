@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.ConditionValue")
 @js.native
-class ConditionValue protected () extends js.Object {
+trait ConditionValue extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   @JSName("Excel.ConditionValue_typekey")

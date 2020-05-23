@@ -27,16 +27,16 @@ trait VolumeStatistics extends js.Object {
 object VolumeStatistics {
   @scala.inline
   def apply(
-    InboxRawCount: Int | Double = null,
-    ProjectedInbox: Int | Double = null,
-    ProjectedSpam: Int | Double = null,
-    SpamRawCount: Int | Double = null
+    InboxRawCount: js.UndefOr[Volume] = js.undefined,
+    ProjectedInbox: js.UndefOr[Volume] = js.undefined,
+    ProjectedSpam: js.UndefOr[Volume] = js.undefined,
+    SpamRawCount: js.UndefOr[Volume] = js.undefined
   ): VolumeStatistics = {
     val __obj = js.Dynamic.literal()
-    if (InboxRawCount != null) __obj.updateDynamic("InboxRawCount")(InboxRawCount.asInstanceOf[js.Any])
-    if (ProjectedInbox != null) __obj.updateDynamic("ProjectedInbox")(ProjectedInbox.asInstanceOf[js.Any])
-    if (ProjectedSpam != null) __obj.updateDynamic("ProjectedSpam")(ProjectedSpam.asInstanceOf[js.Any])
-    if (SpamRawCount != null) __obj.updateDynamic("SpamRawCount")(SpamRawCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InboxRawCount)) __obj.updateDynamic("InboxRawCount")(InboxRawCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProjectedInbox)) __obj.updateDynamic("ProjectedInbox")(ProjectedInbox.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProjectedSpam)) __obj.updateDynamic("ProjectedSpam")(ProjectedSpam.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SpamRawCount)) __obj.updateDynamic("SpamRawCount")(SpamRawCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeStatistics]
   }
 }

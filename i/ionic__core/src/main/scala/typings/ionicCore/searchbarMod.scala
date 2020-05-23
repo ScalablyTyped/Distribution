@@ -1,18 +1,24 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonSearchbarElement
+import typings.ionicCore.componentsMod.global.HTMLIonSearchbarElement
 import typings.ionicCore.ionicCoreStrings.always
 import typings.ionicCore.ionicCoreStrings.decimal
+import typings.ionicCore.ionicCoreStrings.done
 import typings.ionicCore.ionicCoreStrings.email
+import typings.ionicCore.ionicCoreStrings.enter
 import typings.ionicCore.ionicCoreStrings.focus
+import typings.ionicCore.ionicCoreStrings.go
 import typings.ionicCore.ionicCoreStrings.never
+import typings.ionicCore.ionicCoreStrings.next
 import typings.ionicCore.ionicCoreStrings.none
 import typings.ionicCore.ionicCoreStrings.number
 import typings.ionicCore.ionicCoreStrings.numeric
 import typings.ionicCore.ionicCoreStrings.off
 import typings.ionicCore.ionicCoreStrings.on
 import typings.ionicCore.ionicCoreStrings.password
+import typings.ionicCore.ionicCoreStrings.previous
 import typings.ionicCore.ionicCoreStrings.search
+import typings.ionicCore.ionicCoreStrings.send
 import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
@@ -73,6 +79,12 @@ object searchbarMod extends js.Object {
     var disabled: Boolean = js.native
     var el: HTMLIonSearchbarElement = js.native
     var emitStyle: js.Any = js.native
+    /**
+      * A hint to the browser for which enter key to display.
+      * Possible values: `"enter"`, `"done"`, `"go"`, `"next"`,
+      * `"previous"`, `"search"`, and `"send"`.
+      */
+    var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
     var focused: Boolean = js.native
     var getValue: js.Any = js.native
     var hasValue: js.Any = js.native

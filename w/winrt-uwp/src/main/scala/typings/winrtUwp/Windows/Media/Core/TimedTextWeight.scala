@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object TimedTextWeight extends js.Object {
   /** The text is normal weight. */
   @js.native
   sealed trait normal extends TimedTextWeight
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimedTextWeight with Double] = js.native
-  /* 1 */ @js.native
-  object bold extends TopLevel[bold with Double]
-  
-  /* 0 */ @js.native
-  object normal extends TopLevel[normal with Double]
   
 }
 

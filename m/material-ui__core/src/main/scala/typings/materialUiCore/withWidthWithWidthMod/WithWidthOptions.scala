@@ -18,14 +18,14 @@ object WithWidthOptions {
   def apply(
     initialWidth: Breakpoint = null,
     noSSR: js.UndefOr[Boolean] = js.undefined,
-    resizeInterval: Int | Double = null,
+    resizeInterval: js.UndefOr[Double] = js.undefined,
     withTheme: js.UndefOr[Boolean] = js.undefined
   ): WithWidthOptions = {
     val __obj = js.Dynamic.literal()
     if (initialWidth != null) __obj.updateDynamic("initialWidth")(initialWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSSR)) __obj.updateDynamic("noSSR")(noSSR.asInstanceOf[js.Any])
-    if (resizeInterval != null) __obj.updateDynamic("resizeInterval")(resizeInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(withTheme)) __obj.updateDynamic("withTheme")(withTheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSSR)) __obj.updateDynamic("noSSR")(noSSR.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeInterval)) __obj.updateDynamic("resizeInterval")(resizeInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withTheme)) __obj.updateDynamic("withTheme")(withTheme.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithWidthOptions]
   }
 }

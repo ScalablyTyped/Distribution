@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("dom-helpers/cjs/types", JSImport.Namespace)
 @js.native
 object typesMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof csstype.csstype.Properties<string | 0> */ /* Rewritten from type alias, can be one of: 
     - typings.domHelpers.domHelpersStrings.alignContent
     - typings.domHelpers.domHelpersStrings.alignItems
     - typings.domHelpers.domHelpersStrings.alignSelf
@@ -770,7 +770,7 @@ object typesMod extends js.Object {
   */
   trait CamelProperty extends Property
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof csstype.csstype.PropertiesHyphen<string | 0> */ /* Rewritten from type alias, can be one of: 
     - typings.domHelpers.domHelpersStrings.`align-content`
     - typings.domHelpers.domHelpersStrings.`align-items`
     - typings.domHelpers.domHelpersStrings.`align-self`
@@ -1544,6 +1544,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.alignItems
     - typings.domHelpers.domHelpersStrings.alignSelf
     - typings.domHelpers.domHelpersStrings.alignmentBaseline
+    - typings.domHelpers.domHelpersStrings.all
     - typings.domHelpers.domHelpersStrings.animation
     - typings.domHelpers.domHelpersStrings.animationDelay
     - typings.domHelpers.domHelpersStrings.animationDirection
@@ -1651,7 +1652,6 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.display
     - typings.domHelpers.domHelpersStrings.dominantBaseline
     - typings.domHelpers.domHelpersStrings.emptyCells
-    - typings.domHelpers.domHelpersStrings.enableBackground
     - typings.domHelpers.domHelpersStrings.fill
     - typings.domHelpers.domHelpersStrings.fillOpacity
     - typings.domHelpers.domHelpersStrings.fillRule
@@ -1683,7 +1683,6 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.fontVariantPosition
     - typings.domHelpers.domHelpersStrings.fontWeight
     - typings.domHelpers.domHelpersStrings.gap
-    - typings.domHelpers.domHelpersStrings.glyphOrientationHorizontal
     - typings.domHelpers.domHelpersStrings.glyphOrientationVertical
     - typings.domHelpers.domHelpersStrings.grid
     - typings.domHelpers.domHelpersStrings.gridArea
@@ -1707,17 +1706,10 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.hyphens
     - typings.domHelpers.domHelpersStrings.imageOrientation
     - typings.domHelpers.domHelpersStrings.imageRendering
-    - typings.domHelpers.domHelpersStrings.imeMode
     - typings.domHelpers.domHelpersStrings.inlineSize
     - typings.domHelpers.domHelpersStrings.justifyContent
     - typings.domHelpers.domHelpersStrings.justifyItems
     - typings.domHelpers.domHelpersStrings.justifySelf
-    - typings.domHelpers.domHelpersStrings.kerning
-    - typings.domHelpers.domHelpersStrings.layoutGrid
-    - typings.domHelpers.domHelpersStrings.layoutGridChar
-    - typings.domHelpers.domHelpersStrings.layoutGridLine
-    - typings.domHelpers.domHelpersStrings.layoutGridMode
-    - typings.domHelpers.domHelpersStrings.layoutGridType
     - typings.domHelpers.domHelpersStrings.left
     - typings.domHelpers.domHelpersStrings.length
     - typings.domHelpers.domHelpersStrings.letterSpacing
@@ -1756,53 +1748,6 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.minHeight
     - typings.domHelpers.domHelpersStrings.minInlineSize
     - typings.domHelpers.domHelpersStrings.minWidth
-    - typings.domHelpers.domHelpersStrings.msContentZoomChaining
-    - typings.domHelpers.domHelpersStrings.msContentZoomLimit
-    - typings.domHelpers.domHelpersStrings.msContentZoomLimitMax
-    - typings.domHelpers.domHelpersStrings.msContentZoomLimitMin
-    - typings.domHelpers.domHelpersStrings.msContentZoomSnap
-    - typings.domHelpers.domHelpersStrings.msContentZoomSnapPoints
-    - typings.domHelpers.domHelpersStrings.msContentZoomSnapType
-    - typings.domHelpers.domHelpersStrings.msContentZooming
-    - typings.domHelpers.domHelpersStrings.msFlowFrom
-    - typings.domHelpers.domHelpersStrings.msFlowInto
-    - typings.domHelpers.domHelpersStrings.msFontFeatureSettings
-    - typings.domHelpers.domHelpersStrings.msGridColumn
-    - typings.domHelpers.domHelpersStrings.msGridColumnAlign
-    - typings.domHelpers.domHelpersStrings.msGridColumnSpan
-    - typings.domHelpers.domHelpersStrings.msGridColumns
-    - typings.domHelpers.domHelpersStrings.msGridRow
-    - typings.domHelpers.domHelpersStrings.msGridRowAlign
-    - typings.domHelpers.domHelpersStrings.msGridRowSpan
-    - typings.domHelpers.domHelpersStrings.msGridRows
-    - typings.domHelpers.domHelpersStrings.msHighContrastAdjust
-    - typings.domHelpers.domHelpersStrings.msHyphenateLimitChars
-    - typings.domHelpers.domHelpersStrings.msHyphenateLimitLines
-    - typings.domHelpers.domHelpersStrings.msHyphenateLimitZone
-    - typings.domHelpers.domHelpersStrings.msHyphens
-    - typings.domHelpers.domHelpersStrings.msImeAlign
-    - typings.domHelpers.domHelpersStrings.msOverflowStyle
-    - typings.domHelpers.domHelpersStrings.msScrollChaining
-    - typings.domHelpers.domHelpersStrings.msScrollLimit
-    - typings.domHelpers.domHelpersStrings.msScrollLimitXMax
-    - typings.domHelpers.domHelpersStrings.msScrollLimitXMin
-    - typings.domHelpers.domHelpersStrings.msScrollLimitYMax
-    - typings.domHelpers.domHelpersStrings.msScrollLimitYMin
-    - typings.domHelpers.domHelpersStrings.msScrollRails
-    - typings.domHelpers.domHelpersStrings.msScrollSnapPointsX
-    - typings.domHelpers.domHelpersStrings.msScrollSnapPointsY
-    - typings.domHelpers.domHelpersStrings.msScrollSnapType
-    - typings.domHelpers.domHelpersStrings.msScrollSnapX
-    - typings.domHelpers.domHelpersStrings.msScrollSnapY
-    - typings.domHelpers.domHelpersStrings.msScrollTranslation
-    - typings.domHelpers.domHelpersStrings.msTextCombineHorizontal
-    - typings.domHelpers.domHelpersStrings.msTextSizeAdjust
-    - typings.domHelpers.domHelpersStrings.msTouchAction
-    - typings.domHelpers.domHelpersStrings.msTouchSelect
-    - typings.domHelpers.domHelpersStrings.msUserSelect
-    - typings.domHelpers.domHelpersStrings.msWrapFlow
-    - typings.domHelpers.domHelpersStrings.msWrapMargin
-    - typings.domHelpers.domHelpersStrings.msWrapThrough
     - typings.domHelpers.domHelpersStrings.objectFit
     - typings.domHelpers.domHelpersStrings.objectPosition
     - typings.domHelpers.domHelpersStrings.opacity
@@ -1832,7 +1777,6 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.pageBreakInside
     - typings.domHelpers.domHelpersStrings.paintOrder
     - typings.domHelpers.domHelpersStrings.parentRule
-    - typings.domHelpers.domHelpersStrings.penAction
     - typings.domHelpers.domHelpersStrings.perspective
     - typings.domHelpers.domHelpersStrings.perspectiveOrigin
     - typings.domHelpers.domHelpersStrings.placeContent
@@ -1846,7 +1790,6 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.rotate
     - typings.domHelpers.domHelpersStrings.rowGap
     - typings.domHelpers.domHelpersStrings.rubyAlign
-    - typings.domHelpers.domHelpersStrings.rubyOverhang
     - typings.domHelpers.domHelpersStrings.rubyPosition
     - typings.domHelpers.domHelpersStrings.scale
     - typings.domHelpers.domHelpersStrings.scrollBehavior
@@ -1877,8 +1820,6 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.textEmphasisStyle
     - typings.domHelpers.domHelpersStrings.textIndent
     - typings.domHelpers.domHelpersStrings.textJustify
-    - typings.domHelpers.domHelpersStrings.textKashida
-    - typings.domHelpers.domHelpersStrings.textKashidaSpace
     - typings.domHelpers.domHelpersStrings.textOrientation
     - typings.domHelpers.domHelpersStrings.textOverflow
     - typings.domHelpers.domHelpersStrings.textRendering
@@ -1920,30 +1861,16 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.webkitBackgroundSize_
     - typings.domHelpers.domHelpersStrings.webkitBorderBottomLeftRadius_
     - typings.domHelpers.domHelpersStrings.webkitBorderBottomRightRadius_
-    - typings.domHelpers.domHelpersStrings.webkitBorderImage_
     - typings.domHelpers.domHelpersStrings.webkitBorderRadius_
     - typings.domHelpers.domHelpersStrings.webkitBorderTopLeftRadius_
     - typings.domHelpers.domHelpersStrings.webkitBorderTopRightRadius_
     - typings.domHelpers.domHelpersStrings.webkitBoxAlign_
-    - typings.domHelpers.domHelpersStrings.webkitBoxDirection_
     - typings.domHelpers.domHelpersStrings.webkitBoxFlex_
     - typings.domHelpers.domHelpersStrings.webkitBoxOrdinalGroup_
     - typings.domHelpers.domHelpersStrings.webkitBoxOrient_
     - typings.domHelpers.domHelpersStrings.webkitBoxPack_
     - typings.domHelpers.domHelpersStrings.webkitBoxShadow_
     - typings.domHelpers.domHelpersStrings.webkitBoxSizing_
-    - typings.domHelpers.domHelpersStrings.webkitColumnBreakAfter
-    - typings.domHelpers.domHelpersStrings.webkitColumnBreakBefore
-    - typings.domHelpers.domHelpersStrings.webkitColumnBreakInside
-    - typings.domHelpers.domHelpersStrings.webkitColumnCount_
-    - typings.domHelpers.domHelpersStrings.webkitColumnGap_
-    - typings.domHelpers.domHelpersStrings.webkitColumnRule_
-    - typings.domHelpers.domHelpersStrings.webkitColumnRuleColor_
-    - typings.domHelpers.domHelpersStrings.webkitColumnRuleStyle_
-    - typings.domHelpers.domHelpersStrings.webkitColumnRuleWidth_
-    - typings.domHelpers.domHelpersStrings.webkitColumnSpan_
-    - typings.domHelpers.domHelpersStrings.webkitColumnWidth_
-    - typings.domHelpers.domHelpersStrings.webkitColumns_
     - typings.domHelpers.domHelpersStrings.webkitFilter_
     - typings.domHelpers.domHelpersStrings.webkitFlex_
     - typings.domHelpers.domHelpersStrings.webkitFlexBasis_
@@ -1985,9 +1912,7 @@ object typesMod extends js.Object {
     - typings.domHelpers.domHelpersStrings.webkitTransitionDuration_
     - typings.domHelpers.domHelpersStrings.webkitTransitionProperty_
     - typings.domHelpers.domHelpersStrings.webkitTransitionTimingFunction_
-    - typings.domHelpers.domHelpersStrings.webkitUserModify_
     - typings.domHelpers.domHelpersStrings.webkitUserSelect_
-    - typings.domHelpers.domHelpersStrings.webkitWritingMode_
     - typings.domHelpers.domHelpersStrings.whiteSpace
     - typings.domHelpers.domHelpersStrings.widows
     - typings.domHelpers.domHelpersStrings.width

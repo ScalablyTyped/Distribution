@@ -51,7 +51,7 @@ object Environment {
     if (environment_id != null) __obj.updateDynamic("environment_id")(environment_id.asInstanceOf[js.Any])
     if (index_capacity != null) __obj.updateDynamic("index_capacity")(index_capacity.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(read_only)) __obj.updateDynamic("read_only")(read_only.asInstanceOf[js.Any])
+    if (!js.isUndefined(read_only)) __obj.updateDynamic("read_only")(read_only.get.asInstanceOf[js.Any])
     if (requested_size != null) __obj.updateDynamic("requested_size")(requested_size.asInstanceOf[js.Any])
     if (search_status != null) __obj.updateDynamic("search_status")(search_status.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

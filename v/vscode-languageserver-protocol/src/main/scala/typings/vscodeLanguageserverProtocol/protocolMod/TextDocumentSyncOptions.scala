@@ -43,10 +43,10 @@ object TextDocumentSyncOptions {
   ): TextDocumentSyncOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(change.asInstanceOf[js.Any])
-    if (!js.isUndefined(openClose)) __obj.updateDynamic("openClose")(openClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(openClose)) __obj.updateDynamic("openClose")(openClose.get.asInstanceOf[js.Any])
     if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (!js.isUndefined(willSave)) __obj.updateDynamic("willSave")(willSave.asInstanceOf[js.Any])
-    if (!js.isUndefined(willSaveWaitUntil)) __obj.updateDynamic("willSaveWaitUntil")(willSaveWaitUntil.asInstanceOf[js.Any])
+    if (!js.isUndefined(willSave)) __obj.updateDynamic("willSave")(willSave.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(willSaveWaitUntil)) __obj.updateDynamic("willSaveWaitUntil")(willSaveWaitUntil.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDocumentSyncOptions]
   }
 }

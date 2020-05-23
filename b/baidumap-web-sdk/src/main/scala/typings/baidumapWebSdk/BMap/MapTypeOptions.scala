@@ -16,16 +16,16 @@ object MapTypeOptions {
   @scala.inline
   def apply(
     errorImageUrl: String = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
-    textColor: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
+    textColor: js.UndefOr[Double] = js.undefined,
     tips: String = null
   ): MapTypeOptions = {
     val __obj = js.Dynamic.literal()
     if (errorImageUrl != null) __obj.updateDynamic("errorImageUrl")(errorImageUrl.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textColor)) __obj.updateDynamic("textColor")(textColor.get.asInstanceOf[js.Any])
     if (tips != null) __obj.updateDynamic("tips")(tips.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTypeOptions]
   }

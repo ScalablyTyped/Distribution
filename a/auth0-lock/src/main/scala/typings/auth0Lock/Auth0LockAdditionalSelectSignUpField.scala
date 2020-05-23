@@ -1,5 +1,6 @@
 package typings.auth0Lock
 
+import typings.auth0Lock.anon.Hint
 import typings.auth0Lock.auth0LockStrings.select
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ trait Auth0LockAdditionalSelectSignUpField extends Auth0LockAdditionalSignUpFiel
   var placeholder: String
   var prefill: js.UndefOr[String | Auth0LockAdditionalSignUpFieldPrefillFunction] = js.undefined
   var `type`: js.UndefOr[select] = js.undefined
-  var validator: js.UndefOr[js.Function1[/* input */ String, AnonHint]] = js.undefined
+  var validator: js.UndefOr[js.Function1[/* input */ String, Hint]] = js.undefined
 }
 
 object Auth0LockAdditionalSelectSignUpField {
@@ -26,7 +27,7 @@ object Auth0LockAdditionalSelectSignUpField {
     options: js.Array[Auth0LockAdditionalSignUpFieldOption] | Auth0LockAdditionalSignUpFieldOptionsFunction = null,
     prefill: String | Auth0LockAdditionalSignUpFieldPrefillFunction = null,
     `type`: select = null,
-    validator: /* input */ String => AnonHint = null
+    validator: /* input */ String => Hint = null
   ): Auth0LockAdditionalSelectSignUpField = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

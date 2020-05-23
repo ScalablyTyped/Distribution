@@ -15,9 +15,9 @@ trait PickOption extends js.Object {
 
 object PickOption {
   @scala.inline
-  def apply(picks: Int | Double = null, rng: () => Double = null): PickOption = {
+  def apply(picks: js.UndefOr[Double] = js.undefined, rng: () => Double = null): PickOption = {
     val __obj = js.Dynamic.literal()
-    if (picks != null) __obj.updateDynamic("picks")(picks.asInstanceOf[js.Any])
+    if (!js.isUndefined(picks)) __obj.updateDynamic("picks")(picks.get.asInstanceOf[js.Any])
     if (rng != null) __obj.updateDynamic("rng")(js.Any.fromFunction0(rng))
     __obj.asInstanceOf[PickOption]
   }

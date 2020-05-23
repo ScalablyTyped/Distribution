@@ -20,7 +20,7 @@ object BeforePrintEventArgs {
   @scala.inline
   def apply(cancel: js.UndefOr[Boolean] = js.undefined, element: js.Any = null, requestType: String = null): BeforePrintEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforePrintEventArgs]

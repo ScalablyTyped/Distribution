@@ -17,13 +17,13 @@ object GridColumnReorderEvent {
     preventDefault: js.Function,
     sender: Grid,
     column: js.Any = null,
-    newIndex: Int | Double = null,
-    oldIndex: Int | Double = null
+    newIndex: js.UndefOr[Double] = js.undefined,
+    oldIndex: js.UndefOr[Double] = js.undefined
   ): GridColumnReorderEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
-    if (oldIndex != null) __obj.updateDynamic("oldIndex")(oldIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(newIndex)) __obj.updateDynamic("newIndex")(newIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldIndex)) __obj.updateDynamic("oldIndex")(oldIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnReorderEvent]
   }
 }

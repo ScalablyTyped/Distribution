@@ -1,7 +1,7 @@
 package typings.sortablejs.mod
 
-import typings.sortablejs.AnonGet
-import typings.sortablejs.AnonX
+import typings.sortablejs.anon.Get
+import typings.sortablejs.anon.X
 import typings.sortablejs.sortablejsStrings.animation
 import typings.sortablejs.sortablejsStrings.bubbleScroll
 import typings.sortablejs.sortablejsStrings.chosenClass
@@ -44,7 +44,7 @@ import typings.sortablejs.sortablejsStrings.swap
 import typings.sortablejs.sortablejsStrings.swapClass
 import typings.sortablejs.sortablejsStrings.swapThreshold
 import typings.sortablejs.sortablejsStrings.touchStartThreshold
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.TouchEvent
 import scala.scalajs.js
@@ -137,9 +137,9 @@ trait Sortable extends js.Object {
   @JSName("option")
   def option_fallbackClass(name: fallbackClass, value: String): Unit = js.native
   @JSName("option")
-  def option_fallbackOffset(name: fallbackOffset): AnonX = js.native
+  def option_fallbackOffset(name: fallbackOffset): X = js.native
   @JSName("option")
-  def option_fallbackOffset(name: fallbackOffset, value: AnonX): Unit = js.native
+  def option_fallbackOffset(name: fallbackOffset, value: X): Unit = js.native
   @JSName("option")
   def option_fallbackOnBody(name: fallbackOnBody): Boolean = js.native
   @JSName("option")
@@ -151,7 +151,7 @@ trait Sortable extends js.Object {
   @JSName("option")
   def option_filter(name: filter): String | (js.ThisFunction3[
     /* this */ this.type, 
-    /* event */ Event_ | TouchEvent, 
+    /* event */ Event | TouchEvent, 
     /* target */ HTMLElement, 
     /* sortable */ this.type, 
     Boolean
@@ -163,7 +163,7 @@ trait Sortable extends js.Object {
     name: filter,
     value: js.ThisFunction3[
       /* this */ this.type, 
-      /* event */ Event_ | TouchEvent, 
+      /* event */ Event | TouchEvent, 
       /* target */ HTMLElement, 
       /* sortable */ this.type, 
       Boolean
@@ -246,9 +246,9 @@ trait Sortable extends js.Object {
   @JSName("option")
   def option_sort(name: sort, value: Boolean): Unit = js.native
   @JSName("option")
-  def option_store(name: store): AnonGet = js.native
+  def option_store(name: store): Get = js.native
   @JSName("option")
-  def option_store(name: store, value: AnonGet): Unit = js.native
+  def option_store(name: store, value: Get): Unit = js.native
   @JSName("option")
   def option_swap(name: swap): Boolean = js.native
   @JSName("option")

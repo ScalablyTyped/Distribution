@@ -39,7 +39,7 @@ object LoggingStatus {
     LastFailureMessage: String = null,
     LastFailureTime: TStamp = null,
     LastSuccessfulDeliveryTime: TStamp = null,
-    LoggingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    LoggingEnabled: js.UndefOr[Boolean] = js.undefined,
     S3KeyPrefix: String = null
   ): LoggingStatus = {
     val __obj = js.Dynamic.literal()
@@ -47,7 +47,7 @@ object LoggingStatus {
     if (LastFailureMessage != null) __obj.updateDynamic("LastFailureMessage")(LastFailureMessage.asInstanceOf[js.Any])
     if (LastFailureTime != null) __obj.updateDynamic("LastFailureTime")(LastFailureTime.asInstanceOf[js.Any])
     if (LastSuccessfulDeliveryTime != null) __obj.updateDynamic("LastSuccessfulDeliveryTime")(LastSuccessfulDeliveryTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(LoggingEnabled)) __obj.updateDynamic("LoggingEnabled")(LoggingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(LoggingEnabled)) __obj.updateDynamic("LoggingEnabled")(LoggingEnabled.get.asInstanceOf[js.Any])
     if (S3KeyPrefix != null) __obj.updateDynamic("S3KeyPrefix")(S3KeyPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingStatus]
   }

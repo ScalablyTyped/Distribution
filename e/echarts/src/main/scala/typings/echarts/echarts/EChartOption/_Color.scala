@@ -1,6 +1,6 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonOffset
+import typings.echarts.anon.Offset
 import typings.echarts.echartsStrings.`no-repeat`
 import typings.echarts.echartsStrings.`repeat-x`
 import typings.echarts.echartsStrings.`repeat-y`
@@ -17,8 +17,8 @@ trait _Color extends js.Object
 
 object _Color {
   @scala.inline
-  def AnonType(
-    colorStops: js.Array[AnonOffset],
+  def Type(
+    colorStops: js.Array[Offset],
     `type`: linear,
     x: Double,
     x2: Double,
@@ -28,12 +28,12 @@ object _Color {
   ): _Color = {
     val __obj = js.Dynamic.literal(colorStops = colorStops.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Color]
   }
   @scala.inline
-  def AnonX(
-    colorStops: js.Array[AnonOffset],
+  def X(
+    colorStops: js.Array[Offset],
     r: Double,
     `type`: radial,
     x: Double,
@@ -42,11 +42,11 @@ object _Color {
   ): _Color = {
     val __obj = js.Dynamic.literal(colorStops = colorStops.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Color]
   }
   @scala.inline
-  def AnonImage(
+  def Image(
     image: HTMLImageElement | HTMLCanvasElement,
     repeat: repeat | `repeat-x` | `repeat-y` | `no-repeat` = null
   ): _Color = {

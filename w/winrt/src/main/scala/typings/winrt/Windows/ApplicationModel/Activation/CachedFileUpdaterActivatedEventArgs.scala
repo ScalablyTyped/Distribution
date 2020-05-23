@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs")
-@js.native
-class CachedFileUpdaterActivatedEventArgs () extends ICachedFileUpdaterActivatedEventArgs {
-  /* CompleteClass */
-  override var cachedFileUpdaterUI: CachedFileUpdaterUI = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
+trait CachedFileUpdaterActivatedEventArgs extends ICachedFileUpdaterActivatedEventArgs
+
+object CachedFileUpdaterActivatedEventArgs {
+  @scala.inline
+  def apply(
+    cachedFileUpdaterUI: CachedFileUpdaterUI,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen
+  ): CachedFileUpdaterActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(cachedFileUpdaterUI = cachedFileUpdaterUI.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CachedFileUpdaterActivatedEventArgs]
+  }
 }
 

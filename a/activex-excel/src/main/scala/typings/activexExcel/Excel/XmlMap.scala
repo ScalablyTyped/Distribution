@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.XmlMap")
 @js.native
-class XmlMap protected () extends js.Object {
+trait XmlMap extends js.Object {
   var AdjustColumnWidth: Boolean = js.native
   var AppendOnImport: Boolean = js.native
   val Application: typings.activexExcel.Excel.Application = js.native

@@ -27,16 +27,16 @@ object Station {
     name: String,
     `type`: stations,
     url: String,
-    durationInMillis: Int | Double = null,
+    durationInMillis: js.UndefOr[Double] = js.undefined,
     editorialNotes: EditorialNotes = null,
-    episodeNumber: Int | Double = null,
+    episodeNumber: js.UndefOr[Double] = js.undefined,
     href: String = null
   ): Station = {
     val __obj = js.Dynamic.literal(artwork = artwork.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLive = isLive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (durationInMillis != null) __obj.updateDynamic("durationInMillis")(durationInMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationInMillis)) __obj.updateDynamic("durationInMillis")(durationInMillis.get.asInstanceOf[js.Any])
     if (editorialNotes != null) __obj.updateDynamic("editorialNotes")(editorialNotes.asInstanceOf[js.Any])
-    if (episodeNumber != null) __obj.updateDynamic("episodeNumber")(episodeNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(episodeNumber)) __obj.updateDynamic("episodeNumber")(episodeNumber.get.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     __obj.asInstanceOf[Station]
   }

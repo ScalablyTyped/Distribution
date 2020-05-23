@@ -39,16 +39,15 @@ object ReactourState {
     top: Double,
     w: Double,
     width: Double,
-    helperHeight: Int | Double = null,
+    helperHeight: js.UndefOr[Double] = js.undefined,
     helperPosition: ReactourStepPosition = null,
-    helperWidth: Int | Double = null,
+    helperWidth: js.UndefOr[Double] = js.undefined,
     observer: MutationObserver = null
   ): ReactourState = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], focusUnlocked = focusUnlocked.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], inDOM = inDOM.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (helperHeight != null) __obj.updateDynamic("helperHeight")(helperHeight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], focusUnlocked = focusUnlocked.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], inDOM = inDOM.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], observer = observer.asInstanceOf[js.Any])
+    if (!js.isUndefined(helperHeight)) __obj.updateDynamic("helperHeight")(helperHeight.get.asInstanceOf[js.Any])
     if (helperPosition != null) __obj.updateDynamic("helperPosition")(helperPosition.asInstanceOf[js.Any])
-    if (helperWidth != null) __obj.updateDynamic("helperWidth")(helperWidth.asInstanceOf[js.Any])
-    if (observer != null) __obj.updateDynamic("observer")(observer.asInstanceOf[js.Any])
+    if (!js.isUndefined(helperWidth)) __obj.updateDynamic("helperWidth")(helperWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactourState]
   }
 }

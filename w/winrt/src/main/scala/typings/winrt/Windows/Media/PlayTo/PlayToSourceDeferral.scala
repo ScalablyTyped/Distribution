@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.PlayTo.PlayToSourceDeferral")
-@js.native
-class PlayToSourceDeferral () extends IPlayToSourceDeferral {
-  /* CompleteClass */
-  override def complete(): Unit = js.native
+trait PlayToSourceDeferral extends IPlayToSourceDeferral
+
+object PlayToSourceDeferral {
+  @scala.inline
+  def apply(complete: () => Unit): PlayToSourceDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
+    __obj.asInstanceOf[PlayToSourceDeferral]
+  }
 }
 

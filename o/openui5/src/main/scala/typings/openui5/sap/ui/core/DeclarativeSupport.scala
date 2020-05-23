@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.DeclarativeSupport")
 @js.native
-class DeclarativeSupport () extends js.Object {
+trait DeclarativeSupport extends js.Object {
   /**
     * Enhances the given DOM element by parsing the Control and Elements info and creatingthe SAPUI5
     * controls for them.

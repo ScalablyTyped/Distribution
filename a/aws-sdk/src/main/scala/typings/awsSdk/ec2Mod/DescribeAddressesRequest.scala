@@ -28,13 +28,13 @@ object DescribeAddressesRequest {
   @scala.inline
   def apply(
     AllocationIds: AllocationIdList = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
     PublicIps: PublicIpStringList = null
   ): DescribeAddressesRequest = {
     val __obj = js.Dynamic.literal()
     if (AllocationIds != null) __obj.updateDynamic("AllocationIds")(AllocationIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (PublicIps != null) __obj.updateDynamic("PublicIps")(PublicIps.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAddressesRequest]

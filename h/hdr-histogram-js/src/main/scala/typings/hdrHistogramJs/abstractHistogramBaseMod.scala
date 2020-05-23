@@ -1,7 +1,6 @@
 package typings.hdrHistogramJs
 
 import typings.hdrHistogramJs.encodableHistogramMod.EncodableHistogram
-import typings.hdrHistogramJs.hdrHistogramJsStrings.`NO TAG`
 import typings.hdrHistogramJs.percentileIteratorMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +32,7 @@ object abstractHistogramBaseMod extends js.Object {
     var wordSizeInBytes: Double = js.native
   }
   
-  val NO_TAG: `NO TAG` = js.native
+  val NO_TAG: /* "NO TAG" */ String = js.native
   /* static members */
   @js.native
   object AbstractHistogramBase extends js.Object {

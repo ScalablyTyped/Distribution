@@ -25,19 +25,19 @@ trait IFetchNode extends js.Object {
 object IFetchNode {
   @scala.inline
   def apply(
-    receivedTime: ITimestamp = null,
-    sentTime: ITimestamp = null,
-    sentTimeOffset: Int | Double = null,
-    serviceName: String = null,
-    trace: ITrace = null,
-    traceParsingFailed: js.UndefOr[Boolean] = js.undefined
+    receivedTime: js.UndefOr[Null | ITimestamp] = js.undefined,
+    sentTime: js.UndefOr[Null | ITimestamp] = js.undefined,
+    sentTimeOffset: js.UndefOr[Null | Double] = js.undefined,
+    serviceName: js.UndefOr[Null | String] = js.undefined,
+    trace: js.UndefOr[Null | ITrace] = js.undefined,
+    traceParsingFailed: js.UndefOr[Null | Boolean] = js.undefined
   ): IFetchNode = {
     val __obj = js.Dynamic.literal()
-    if (receivedTime != null) __obj.updateDynamic("receivedTime")(receivedTime.asInstanceOf[js.Any])
-    if (sentTime != null) __obj.updateDynamic("sentTime")(sentTime.asInstanceOf[js.Any])
-    if (sentTimeOffset != null) __obj.updateDynamic("sentTimeOffset")(sentTimeOffset.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
+    if (!js.isUndefined(receivedTime)) __obj.updateDynamic("receivedTime")(receivedTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentTime)) __obj.updateDynamic("sentTime")(sentTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentTimeOffset)) __obj.updateDynamic("sentTimeOffset")(sentTimeOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(serviceName)) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
+    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     if (!js.isUndefined(traceParsingFailed)) __obj.updateDynamic("traceParsingFailed")(traceParsingFailed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFetchNode]
   }

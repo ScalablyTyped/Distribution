@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ trait MSGraphicsTrust extends js.Object {
   val status: java.lang.String
 }
 
-@JSGlobal("MSGraphicsTrust")
-@js.native
-object MSGraphicsTrust extends Instantiable0[MSGraphicsTrust]
+object MSGraphicsTrust {
+  @scala.inline
+  def apply(constrictionActive: scala.Boolean, status: java.lang.String): MSGraphicsTrust = {
+    val __obj = js.Dynamic.literal(constrictionActive = constrictionActive.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MSGraphicsTrust]
+  }
+}
 

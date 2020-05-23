@@ -1,5 +1,6 @@
 package typings.string
 
+import typings.string.anon.Delimiter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +72,7 @@ object mod extends js.Object {
     def toCSV(): StringJS = js.native
     def toCSV(delimiter: String): StringJS = js.native
     def toCSV(delimiter: String, qualifier: String): StringJS = js.native
-    def toCSV(options: AnonDelimiter): StringJS = js.native
+    def toCSV(options: Delimiter): StringJS = js.native
     def toFloat(): Double = js.native
     def toFloat(precision: Double): Double = js.native
     def toInt(): Double = js.native

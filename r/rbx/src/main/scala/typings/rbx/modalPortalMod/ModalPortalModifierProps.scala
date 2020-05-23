@@ -3,7 +3,7 @@ package typings.rbx.modalPortalMod
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactType
 import typings.react.mod.Ref
-import typings.std.Document_
+import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.SVGElement
 import scala.scalajs.js
@@ -16,7 +16,7 @@ trait ModalPortalModifierProps extends js.Object {
   var clipped: js.UndefOr[Boolean] = js.undefined
   var closeOnBlur: js.UndefOr[Boolean] = js.undefined
   var closeOnEsc: js.UndefOr[Boolean] = js.undefined
-  var document: Document_
+  var document: Document
   var innerRef: js.UndefOr[Ref[HTMLElement | SVGElement | ComponentType[js.Object]]] = js.undefined
   var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -24,22 +24,22 @@ trait ModalPortalModifierProps extends js.Object {
 object ModalPortalModifierProps {
   @scala.inline
   def apply(
-    document: Document_,
+    document: Document,
     as: ReactType[_] = null,
     className: String = null,
     clipped: js.UndefOr[Boolean] = js.undefined,
     closeOnBlur: js.UndefOr[Boolean] = js.undefined,
     closeOnEsc: js.UndefOr[Boolean] = js.undefined,
-    innerRef: Ref[HTMLElement | SVGElement | ComponentType[js.Object]] = null,
+    innerRef: js.UndefOr[Null | (Ref[HTMLElement | SVGElement | ComponentType[js.Object]])] = js.undefined,
     onClose: () => Unit = null
   ): ModalPortalModifierProps = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipped)) __obj.updateDynamic("clipped")(clipped.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipped)) __obj.updateDynamic("clipped")(clipped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     __obj.asInstanceOf[ModalPortalModifierProps]
   }

@@ -132,7 +132,7 @@ object GridSettings {
     keepExpandedRows: js.UndefOr[Boolean] = js.undefined,
     locale: String = null,
     mapping: js.Any = null,
-    minWidth: Int | Double = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
     notFoundText: String = null,
     optimisticPersistence: GridOptimisticPersistence = null,
     orderNumberField: String = null,
@@ -144,7 +144,7 @@ object GridSettings {
     primaryKey: String = null,
     resizableColumns: js.UndefOr[Boolean] = js.undefined,
     resize: (/* e */ js.Any, /* newWidth */ Double, /* oldWidth */ Double) => _ = null,
-    resizeCheckInterval: Int | Double = null,
+    resizeCheckInterval: js.UndefOr[Double] = js.undefined,
     responsive: js.UndefOr[Boolean] = js.undefined,
     rowDataBound: (/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity) => _ = null,
     rowDataChanged: (/* e */ js.Any, /* id */ String, /* record */ Entity) => _ = null,
@@ -159,17 +159,17 @@ object GridSettings {
     title: String = null,
     toolbarTemplate: String = null,
     uiLibrary: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): GridSettings[Entity] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoGenerateColumns)) __obj.updateDynamic("autoGenerateColumns")(autoGenerateColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGenerateColumns)) __obj.updateDynamic("autoGenerateColumns")(autoGenerateColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.get.asInstanceOf[js.Any])
     if (beforeEmptyRowInsert != null) __obj.updateDynamic("beforeEmptyRowInsert")(js.Any.fromFunction2(beforeEmptyRowInsert))
     if (bodyRowHeight != null) __obj.updateDynamic("bodyRowHeight")(bodyRowHeight.asInstanceOf[js.Any])
     if (cellDataBound != null) __obj.updateDynamic("cellDataBound")(js.Any.fromFunction5(cellDataBound))
     if (cellDataChanged != null) __obj.updateDynamic("cellDataChanged")(js.Any.fromFunction6(cellDataChanged))
     if (columnHide != null) __obj.updateDynamic("columnHide")(js.Any.fromFunction2(columnHide))
-    if (!js.isUndefined(columnReorder)) __obj.updateDynamic("columnReorder")(columnReorder.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnReorder)) __obj.updateDynamic("columnReorder")(columnReorder.get.asInstanceOf[js.Any])
     if (columnShow != null) __obj.updateDynamic("columnShow")(js.Any.fromFunction2(columnShow))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
@@ -181,7 +181,7 @@ object GridSettings {
     if (detailCollapse != null) __obj.updateDynamic("detailCollapse")(js.Any.fromFunction3(detailCollapse))
     if (detailExpand != null) __obj.updateDynamic("detailExpand")(js.Any.fromFunction3(detailExpand))
     if (detailTemplate != null) __obj.updateDynamic("detailTemplate")(detailTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.get.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (grouping != null) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
     if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter.asInstanceOf[js.Any])
@@ -190,10 +190,10 @@ object GridSettings {
     if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary.asInstanceOf[js.Any])
     if (initialized != null) __obj.updateDynamic("initialized")(js.Any.fromFunction1(initialized))
     if (inlineEditing != null) __obj.updateDynamic("inlineEditing")(inlineEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepExpandedRows)) __obj.updateDynamic("keepExpandedRows")(keepExpandedRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepExpandedRows)) __obj.updateDynamic("keepExpandedRows")(keepExpandedRows.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (notFoundText != null) __obj.updateDynamic("notFoundText")(notFoundText.asInstanceOf[js.Any])
     if (optimisticPersistence != null) __obj.updateDynamic("optimisticPersistence")(optimisticPersistence.asInstanceOf[js.Any])
     if (orderNumberField != null) __obj.updateDynamic("orderNumberField")(orderNumberField.asInstanceOf[js.Any])
@@ -203,24 +203,24 @@ object GridSettings {
     if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.get.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction3(resize))
-    if (resizeCheckInterval != null) __obj.updateDynamic("resizeCheckInterval")(resizeCheckInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeCheckInterval)) __obj.updateDynamic("resizeCheckInterval")(resizeCheckInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
     if (rowDataBound != null) __obj.updateDynamic("rowDataBound")(js.Any.fromFunction4(rowDataBound))
     if (rowDataChanged != null) __obj.updateDynamic("rowDataChanged")(js.Any.fromFunction3(rowDataChanged))
     if (rowRemoving != null) __obj.updateDynamic("rowRemoving")(js.Any.fromFunction4(rowRemoving))
-    if (!js.isUndefined(rowReorder)) __obj.updateDynamic("rowReorder")(rowReorder.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowReorder)) __obj.updateDynamic("rowReorder")(rowReorder.get.asInstanceOf[js.Any])
     if (rowReorderColumn != null) __obj.updateDynamic("rowReorderColumn")(rowReorderColumn.asInstanceOf[js.Any])
     if (rowSelect != null) __obj.updateDynamic("rowSelect")(js.Any.fromFunction4(rowSelect))
     if (rowUnselect != null) __obj.updateDynamic("rowUnselect")(js.Any.fromFunction4(rowUnselect))
     if (selectionMethod != null) __obj.updateDynamic("selectionMethod")(selectionMethod.asInstanceOf[js.Any])
     if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHiddenColumnsAsDetails)) __obj.updateDynamic("showHiddenColumnsAsDetails")(showHiddenColumnsAsDetails.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHiddenColumnsAsDetails)) __obj.updateDynamic("showHiddenColumnsAsDetails")(showHiddenColumnsAsDetails.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (toolbarTemplate != null) __obj.updateDynamic("toolbarTemplate")(toolbarTemplate.asInstanceOf[js.Any])
     if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridSettings[Entity]]
   }
 }

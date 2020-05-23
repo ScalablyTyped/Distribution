@@ -19,14 +19,14 @@ object ReceivedAction {
     payload: Payload,
     `type`: String,
     meta: js.Object = null,
-    navKey: Nullable[String] = null,
+    navKey: js.UndefOr[Null | Nullable[String]] = js.undefined,
     query: Query = null,
     search: String = null
   ): ReceivedAction = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(navKey)) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceivedAction]

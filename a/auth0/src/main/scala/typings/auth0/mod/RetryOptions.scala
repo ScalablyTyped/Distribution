@@ -17,10 +17,10 @@ trait RetryOptions extends js.Object {
 
 object RetryOptions {
   @scala.inline
-  def apply(enabled: js.UndefOr[Boolean] = js.undefined, maxRetries: Int | Double = null): RetryOptions = {
+  def apply(enabled: js.UndefOr[Boolean] = js.undefined, maxRetries: js.UndefOr[Double] = js.undefined): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
 }

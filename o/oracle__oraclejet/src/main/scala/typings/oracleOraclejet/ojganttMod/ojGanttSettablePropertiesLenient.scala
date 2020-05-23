@@ -1,16 +1,16 @@
 package typings.oracleOraclejet.ojganttMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon7
-import typings.oracleOraclejet.AnonAccessibleDependencyInfo
-import typings.oracleOraclejet.AnonBaseline
-import typings.oracleOraclejet.AnonBaselineDate
-import typings.oracleOraclejet.AnonHeightNumber
-import typings.oracleOraclejet.AnonMaxWidth
-import typings.oracleOraclejet.AnonMove
-import typings.oracleOraclejet.AnonOffsetY
-import typings.oracleOraclejet.AnonScale
-import typings.oracleOraclejet.AnonVertical
+import typings.oracleOraclejet.anon.AccessibleDependencyInfo
+import typings.oracleOraclejet.anon.Baseline
+import typings.oracleOraclejet.anon.BaselineDate
+import typings.oracleOraclejet.anon.HeightNumber
+import typings.oracleOraclejet.anon.MaxWidth
+import typings.oracleOraclejet.anon.Move
+import typings.oracleOraclejet.anon.OffsetY
+import typings.oracleOraclejet.anon.Scale
+import typings.oracleOraclejet.anon.Vertical
+import typings.oracleOraclejet.anon.`7`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojganttMod.ojGantt.ReferenceObject
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
@@ -33,24 +33,24 @@ trait ojGanttSettablePropertiesLenient[K1, K2, D1, D2]
   var as: js.UndefOr[String] = js.undefined
   var axisPosition: js.UndefOr[bottom | top] = js.undefined
   var dependencyData: js.UndefOr[DataProvider[K1, D1]] = js.undefined
-  var dnd: js.UndefOr[AnonMove] = js.undefined
+  var dnd: js.UndefOr[Move] = js.undefined
   var end: js.UndefOr[String] = js.undefined
-  var gridlines: js.UndefOr[AnonVertical] = js.undefined
-  var majorAxis: js.UndefOr[AnonScale] = js.undefined
-  var minorAxis: js.UndefOr[AnonScale] = js.undefined
+  var gridlines: js.UndefOr[Vertical] = js.undefined
+  var majorAxis: js.UndefOr[Scale] = js.undefined
+  var minorAxis: js.UndefOr[Scale] = js.undefined
   var referenceObjects: js.UndefOr[js.Array[ReferenceObject]] = js.undefined
-  var rowAxis: js.UndefOr[AnonMaxWidth[K2, D2]] = js.undefined
-  var rowDefaults: js.UndefOr[AnonHeightNumber] = js.undefined
-  var scrollPosition: js.UndefOr[AnonOffsetY] = js.undefined
+  var rowAxis: js.UndefOr[MaxWidth[K2, D2]] = js.undefined
+  var rowDefaults: js.UndefOr[HeightNumber] = js.undefined
+  var scrollPosition: js.UndefOr[OffsetY] = js.undefined
   var selection: js.UndefOr[js.Array[K2]] = js.undefined
   var selectionMode: js.UndefOr[single | multiple | none] = js.undefined
   var start: js.UndefOr[String] = js.undefined
   var taskData: js.UndefOr[DataProvider[K2, D2]] = js.undefined
-  var taskDefaults: js.UndefOr[AnonBaseline] = js.undefined
-  var tooltip: js.UndefOr[Anon7[K2, D2]] = js.undefined
+  var taskDefaults: js.UndefOr[Baseline] = js.undefined
+  var tooltip: js.UndefOr[`7`[K2, D2]] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonAccessibleDependencyInfo] = js.undefined
-  var valueFormats: js.UndefOr[AnonBaselineDate] = js.undefined
+  var translations: js.UndefOr[AccessibleDependencyInfo] = js.undefined
+  var valueFormats: js.UndefOr[BaselineDate] = js.undefined
   var viewportEnd: js.UndefOr[String] = js.undefined
   var viewportStart: js.UndefOr[String] = js.undefined
 }
@@ -58,30 +58,30 @@ trait ojGanttSettablePropertiesLenient[K1, K2, D1, D2]
 object ojGanttSettablePropertiesLenient {
   @scala.inline
   def apply[K1, K2, D1, D2](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     animationOnDataChange: auto | none = null,
     animationOnDisplay: auto | none = null,
     as: String = null,
     axisPosition: bottom | top = null,
     dependencyData: DataProvider[K1, D1] = null,
-    dnd: AnonMove = null,
+    dnd: Move = null,
     end: String = null,
-    gridlines: AnonVertical = null,
-    majorAxis: AnonScale = null,
-    minorAxis: AnonScale = null,
+    gridlines: Vertical = null,
+    majorAxis: Scale = null,
+    minorAxis: Scale = null,
     referenceObjects: js.Array[ReferenceObject] = null,
-    rowAxis: AnonMaxWidth[K2, D2] = null,
-    rowDefaults: AnonHeightNumber = null,
-    scrollPosition: AnonOffsetY = null,
+    rowAxis: MaxWidth[K2, D2] = null,
+    rowDefaults: HeightNumber = null,
+    scrollPosition: OffsetY = null,
     selection: js.Array[K2] = null,
     selectionMode: single | multiple | none = null,
     start: String = null,
     taskData: DataProvider[K2, D2] = null,
-    taskDefaults: AnonBaseline = null,
-    tooltip: Anon7[K2, D2] = null,
+    taskDefaults: Baseline = null,
+    tooltip: `7`[K2, D2] = null,
     trackResize: on | off = null,
-    translations: AnonAccessibleDependencyInfo = null,
-    valueFormats: AnonBaselineDate = null,
+    translations: AccessibleDependencyInfo = null,
+    valueFormats: BaselineDate = null,
     viewportEnd: String = null,
     viewportStart: String = null
   ): ojGanttSettablePropertiesLenient[K1, K2, D1, D2] = {

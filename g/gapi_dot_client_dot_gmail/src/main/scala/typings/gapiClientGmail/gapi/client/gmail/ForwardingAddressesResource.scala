@@ -1,8 +1,8 @@
 package typings.gapiClientGmail.gapi.client.gmail
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientGmail.AnonAlt
-import typings.gapiClientGmail.AnonForwardingEmail
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientGmail.anon.Alt
+import typings.gapiClientGmail.anon.ForwardingEmail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,26 +14,26 @@ trait ForwardingAddressesResource extends js.Object {
     *
     * This method is only available to service account clients that have been delegated domain-wide authority.
     */
-  def create(request: AnonAlt): Request_[ForwardingAddress]
+  def create(request: Alt): Request[ForwardingAddress]
   /**
     * Deletes the specified forwarding address and revokes any verification that may have been required.
     *
     * This method is only available to service account clients that have been delegated domain-wide authority.
     */
-  def delete(request: AnonForwardingEmail): Request_[Unit]
+  def delete(request: ForwardingEmail): Request[Unit]
   /** Gets the specified forwarding address. */
-  def get(request: AnonForwardingEmail): Request_[ForwardingAddress]
+  def get(request: ForwardingEmail): Request[ForwardingAddress]
   /** Lists the forwarding addresses for the specified account. */
-  def list(request: AnonAlt): Request_[ListForwardingAddressesResponse]
+  def list(request: Alt): Request[ListForwardingAddressesResponse]
 }
 
 object ForwardingAddressesResource {
   @scala.inline
   def apply(
-    create: AnonAlt => Request_[ForwardingAddress],
-    delete: AnonForwardingEmail => Request_[Unit],
-    get: AnonForwardingEmail => Request_[ForwardingAddress],
-    list: AnonAlt => Request_[ListForwardingAddressesResponse]
+    create: Alt => Request[ForwardingAddress],
+    delete: ForwardingEmail => Request[Unit],
+    get: ForwardingEmail => Request[ForwardingAddress],
+    list: Alt => Request[ListForwardingAddressesResponse]
   ): ForwardingAddressesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[ForwardingAddressesResource]

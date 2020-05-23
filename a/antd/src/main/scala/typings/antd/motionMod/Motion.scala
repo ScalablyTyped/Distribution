@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait Motion extends js.Object {
   var leavedClassName: js.UndefOr[String] = js.undefined
   var motionAppear: js.UndefOr[Boolean] = js.undefined
+  var motionDeadline: js.UndefOr[Double] = js.undefined
   var motionEnter: js.UndefOr[Boolean] = js.undefined
   var motionLeave: js.UndefOr[Boolean] = js.undefined
   var motionLeaveImmediately: js.UndefOr[Boolean] = js.undefined
@@ -31,6 +32,7 @@ object Motion {
   def apply(
     leavedClassName: String = null,
     motionAppear: js.UndefOr[Boolean] = js.undefined,
+    motionDeadline: js.UndefOr[Double] = js.undefined,
     motionEnter: js.UndefOr[Boolean] = js.undefined,
     motionLeave: js.UndefOr[Boolean] = js.undefined,
     motionLeaveImmediately: js.UndefOr[Boolean] = js.undefined,
@@ -49,10 +51,11 @@ object Motion {
   ): Motion = {
     val __obj = js.Dynamic.literal()
     if (leavedClassName != null) __obj.updateDynamic("leavedClassName")(leavedClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(motionAppear)) __obj.updateDynamic("motionAppear")(motionAppear.asInstanceOf[js.Any])
-    if (!js.isUndefined(motionEnter)) __obj.updateDynamic("motionEnter")(motionEnter.asInstanceOf[js.Any])
-    if (!js.isUndefined(motionLeave)) __obj.updateDynamic("motionLeave")(motionLeave.asInstanceOf[js.Any])
-    if (!js.isUndefined(motionLeaveImmediately)) __obj.updateDynamic("motionLeaveImmediately")(motionLeaveImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionAppear)) __obj.updateDynamic("motionAppear")(motionAppear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionDeadline)) __obj.updateDynamic("motionDeadline")(motionDeadline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionEnter)) __obj.updateDynamic("motionEnter")(motionEnter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionLeave)) __obj.updateDynamic("motionLeave")(motionLeave.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionLeaveImmediately)) __obj.updateDynamic("motionLeaveImmediately")(motionLeaveImmediately.get.asInstanceOf[js.Any])
     if (motionName != null) __obj.updateDynamic("motionName")(motionName.asInstanceOf[js.Any])
     if (onAppearActive != null) __obj.updateDynamic("onAppearActive")(js.Any.fromFunction1(onAppearActive))
     if (onAppearEnd != null) __obj.updateDynamic("onAppearEnd")(js.Any.fromFunction1(onAppearEnd))
@@ -63,8 +66,8 @@ object Motion {
     if (onLeaveActive != null) __obj.updateDynamic("onLeaveActive")(js.Any.fromFunction1(onLeaveActive))
     if (onLeaveEnd != null) __obj.updateDynamic("onLeaveEnd")(js.Any.fromFunction1(onLeaveEnd))
     if (onLeaveStart != null) __obj.updateDynamic("onLeaveStart")(js.Any.fromFunction1(onLeaveStart))
-    if (!js.isUndefined(removeOnLeave)) __obj.updateDynamic("removeOnLeave")(removeOnLeave.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeOnLeave)) __obj.updateDynamic("removeOnLeave")(removeOnLeave.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Motion]
   }
 }

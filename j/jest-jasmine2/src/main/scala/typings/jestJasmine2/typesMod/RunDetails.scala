@@ -27,11 +27,11 @@ object RunDetails {
         js.Function2[/* options */ Options, /* initError */ js.UndefOr[Error], FailedAssertion]
       ]
     ] = null,
-    totalSpecsDefined: Int | Double = null
+    totalSpecsDefined: js.UndefOr[Double] = js.undefined
   ): RunDetails = {
     val __obj = js.Dynamic.literal()
     if (failedExpectations != null) __obj.updateDynamic("failedExpectations")(failedExpectations.asInstanceOf[js.Any])
-    if (totalSpecsDefined != null) __obj.updateDynamic("totalSpecsDefined")(totalSpecsDefined.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalSpecsDefined)) __obj.updateDynamic("totalSpecsDefined")(totalSpecsDefined.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunDetails]
   }
 }

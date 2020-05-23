@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientTreeList.BatchEditNodeDeleting event.
   */
-@JSGlobal("ASPxClientTreeListBatchEditNodeDeletingEventArgs")
-@js.native
-class ASPxClientTreeListBatchEditNodeDeletingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientTreeListBatchEditNodeDeletingEventArgs class.
-    * @param nodeKey A String value that identifies the processed node.
-    * @param nodeValues An object representing a data source field values.
-    */
-  def this(nodeKey: String, nodeValues: js.Any) = this()
+trait ASPxClientTreeListBatchEditNodeDeletingEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Gets the processed node's key value.
     */
-  var nodeKey: String = js.native
+  var nodeKey: String
   /**
     * Gets the value of the processed cell.
     */
-  var nodeValues: js.Any = js.native
+  var nodeValues: js.Any
+}
+
+object ASPxClientTreeListBatchEditNodeDeletingEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, nodeKey: String, nodeValues: js.Any): ASPxClientTreeListBatchEditNodeDeletingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], nodeValues = nodeValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeDeletingEventArgs]
+  }
 }
 

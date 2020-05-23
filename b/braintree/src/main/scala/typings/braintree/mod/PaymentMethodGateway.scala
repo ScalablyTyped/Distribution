@@ -1,6 +1,6 @@
 package typings.braintree.mod
 
-import typings.braintree.AnonAllowVaulting
+import typings.braintree.anon.AllowVaulting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait PaymentMethodGateway extends js.Object {
   def create(request: PaymentMethodCreateRequest): js.Promise[ValidatedResponse[PaymentMethod]]
   def delete(token: String): js.Promise[Unit]
   def find(token: String): js.Promise[PaymentMethod]
-  def grant(sharedPaymentMethodToken: String, options: AnonAllowVaulting): js.Promise[ValidatedResponse[PaymentMethodNonce]]
+  def grant(sharedPaymentMethodToken: String, options: AllowVaulting): js.Promise[ValidatedResponse[PaymentMethodNonce]]
   def revoke(sharedPaymentMethodToken: String): js.Promise[Unit]
   def update(token: String, updates: PaymentMethodUpdateRequest): js.Promise[ValidatedResponse[PaymentMethod]]
 }
@@ -20,7 +20,7 @@ object PaymentMethodGateway {
     create: PaymentMethodCreateRequest => js.Promise[ValidatedResponse[PaymentMethod]],
     delete: String => js.Promise[Unit],
     find: String => js.Promise[PaymentMethod],
-    grant: (String, AnonAllowVaulting) => js.Promise[ValidatedResponse[PaymentMethodNonce]],
+    grant: (String, AllowVaulting) => js.Promise[ValidatedResponse[PaymentMethodNonce]],
     revoke: String => js.Promise[Unit],
     update: (String, PaymentMethodUpdateRequest) => js.Promise[ValidatedResponse[PaymentMethod]]
   ): PaymentMethodGateway = {

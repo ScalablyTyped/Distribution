@@ -1,6 +1,7 @@
 package typings.popmotionPose
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.popmotion.actionTypesMod.ColdSubscription
 import typings.popmotion.mod.Action_
 import typings.popmotionEasing.mod.Easing
 import scala.scalajs.js
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 object lookupsMod extends js.Object {
   @js.native
   object animationLookup
-    extends /* key */ StringDictionary[js.Function1[/* props */ StringDictionary[js.Any], Action_]]
+    extends /* key */ StringDictionary[js.Function1[/* props */ StringDictionary[js.Any], Action_[ColdSubscription]]]
   
   @js.native
   object easingLookup extends js.Object {

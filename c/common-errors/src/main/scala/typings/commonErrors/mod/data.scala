@@ -12,8 +12,9 @@ object data extends js.Object {
     *
     * @example throw new errors.data.DataError('Too many rows returned from database', err)
     */
-  @js.native
-  class DataError protected () extends ErrorConstructor {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @js.native
+  class DataError protected () extends js.Object {
     /**
       * @param message     any message
       * @param inner_error the Error instance that caused the current

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.TableDef")
 @js.native
-class TableDef protected () extends js.Object {
+trait TableDef extends js.Object {
   var Attributes: TableDefAttributeEnum = js.native
   val ConflictTable: String = js.native
   var Connect: String = js.native

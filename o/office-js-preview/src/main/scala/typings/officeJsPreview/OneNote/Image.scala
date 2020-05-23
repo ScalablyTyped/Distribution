@@ -1,12 +1,12 @@
 package typings.officeJsPreview.OneNote
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.OneNote.Interfaces.ImageData
 import typings.officeJsPreview.OneNote.Interfaces.ImageLoadOptions
 import typings.officeJsPreview.OneNote.Interfaces.ImageUpdateData
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.Image")
 @js.native
-class Image () extends ClientObject {
+trait Image extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Image: RequestContext = js.native
@@ -105,8 +104,8 @@ class Image () extends ClientObject {
   def load(): Image = js.native
   def load(option: String): Image = js.native
   def load(option: js.Array[String]): Image = js.native
-  def load(option: AnonExpand): Image = js.native
   def load(option: ImageLoadOptions): Image = js.native
+  def load(option: Expand): Image = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Image): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

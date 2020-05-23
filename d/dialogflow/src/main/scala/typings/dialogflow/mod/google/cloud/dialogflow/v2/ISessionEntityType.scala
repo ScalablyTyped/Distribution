@@ -21,14 +21,16 @@ trait ISessionEntityType extends js.Object {
 object ISessionEntityType {
   @scala.inline
   def apply(
-    entities: js.Array[IEntity] = null,
-    entityOverrideMode: EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SessionEntityType.EntityOverrideMode * / any */ String) = null,
-    name: String = null
+    entities: js.UndefOr[Null | js.Array[IEntity]] = js.undefined,
+    entityOverrideMode: js.UndefOr[
+      Null | EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SessionEntityType.EntityOverrideMode * / any */ String)
+    ] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
   ): ISessionEntityType = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (entityOverrideMode != null) __obj.updateDynamic("entityOverrideMode")(entityOverrideMode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityOverrideMode)) __obj.updateDynamic("entityOverrideMode")(entityOverrideMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISessionEntityType]
   }
 }

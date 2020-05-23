@@ -14,9 +14,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(port: Int | Double = null): Options = {
+  def apply(port: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

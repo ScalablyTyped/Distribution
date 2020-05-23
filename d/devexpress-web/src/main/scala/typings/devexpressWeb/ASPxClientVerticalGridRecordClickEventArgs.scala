@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientVerticalGrid.RecordClick event.
   */
-@JSGlobal("ASPxClientVerticalGridRecordClickEventArgs")
-@js.native
-class ASPxClientVerticalGridRecordClickEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientVerticalGridRecordClickEventArgs class.
-    * @param visibleIndex A zero-based integer index that identifies the clicked record.
-    * @param htmlEvent An object that contains parameters associated with the event. This value is assigned to the ASPxClientVerticalGridRecordClickEventArgs.htmlEvent property.
-    */
-  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+trait ASPxClientVerticalGridRecordClickEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Provides access to the parameters associated with the ASPxClientVerticalGrid.RecordClick event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   /**
     * Gets the processed record's visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
+}
+
+object ASPxClientVerticalGridRecordClickEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, htmlEvent: js.Any, visibleIndex: Double): ASPxClientVerticalGridRecordClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientVerticalGridRecordClickEventArgs]
+  }
 }
 

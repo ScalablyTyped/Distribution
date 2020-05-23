@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object PhoneLineChangeKind extends js.Object {
   /** A phone line was removed. */
   @js.native
   sealed trait removed extends PhoneLineChangeKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneLineChangeKind with Double] = js.native
-  /* 0 */ @js.native
-  object added extends TopLevel[added with Double]
-  
-  /* 2 */ @js.native
-  object propertiesChanged extends TopLevel[propertiesChanged with Double]
-  
-  /* 1 */ @js.native
-  object removed extends TopLevel[removed with Double]
   
 }
 

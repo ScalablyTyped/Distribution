@@ -51,28 +51,28 @@ trait OrcSerDe extends js.Object {
 object OrcSerDe {
   @scala.inline
   def apply(
-    BlockSizeBytes: Int | Double = null,
+    BlockSizeBytes: js.UndefOr[BlockSizeBytes] = js.undefined,
     BloomFilterColumns: ListOfNonEmptyStringsWithoutWhitespace = null,
-    BloomFilterFalsePositiveProbability: Int | Double = null,
+    BloomFilterFalsePositiveProbability: js.UndefOr[Proportion] = js.undefined,
     Compression: OrcCompression = null,
-    DictionaryKeyThreshold: Int | Double = null,
-    EnablePadding: js.UndefOr[Boolean] = js.undefined,
+    DictionaryKeyThreshold: js.UndefOr[Proportion] = js.undefined,
+    EnablePadding: js.UndefOr[BooleanObject] = js.undefined,
     FormatVersion: OrcFormatVersion = null,
-    PaddingTolerance: Int | Double = null,
-    RowIndexStride: Int | Double = null,
-    StripeSizeBytes: Int | Double = null
+    PaddingTolerance: js.UndefOr[Proportion] = js.undefined,
+    RowIndexStride: js.UndefOr[OrcRowIndexStride] = js.undefined,
+    StripeSizeBytes: js.UndefOr[OrcStripeSizeBytes] = js.undefined
   ): OrcSerDe = {
     val __obj = js.Dynamic.literal()
-    if (BlockSizeBytes != null) __obj.updateDynamic("BlockSizeBytes")(BlockSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockSizeBytes)) __obj.updateDynamic("BlockSizeBytes")(BlockSizeBytes.get.asInstanceOf[js.Any])
     if (BloomFilterColumns != null) __obj.updateDynamic("BloomFilterColumns")(BloomFilterColumns.asInstanceOf[js.Any])
-    if (BloomFilterFalsePositiveProbability != null) __obj.updateDynamic("BloomFilterFalsePositiveProbability")(BloomFilterFalsePositiveProbability.asInstanceOf[js.Any])
+    if (!js.isUndefined(BloomFilterFalsePositiveProbability)) __obj.updateDynamic("BloomFilterFalsePositiveProbability")(BloomFilterFalsePositiveProbability.get.asInstanceOf[js.Any])
     if (Compression != null) __obj.updateDynamic("Compression")(Compression.asInstanceOf[js.Any])
-    if (DictionaryKeyThreshold != null) __obj.updateDynamic("DictionaryKeyThreshold")(DictionaryKeyThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnablePadding)) __obj.updateDynamic("EnablePadding")(EnablePadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(DictionaryKeyThreshold)) __obj.updateDynamic("DictionaryKeyThreshold")(DictionaryKeyThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnablePadding)) __obj.updateDynamic("EnablePadding")(EnablePadding.get.asInstanceOf[js.Any])
     if (FormatVersion != null) __obj.updateDynamic("FormatVersion")(FormatVersion.asInstanceOf[js.Any])
-    if (PaddingTolerance != null) __obj.updateDynamic("PaddingTolerance")(PaddingTolerance.asInstanceOf[js.Any])
-    if (RowIndexStride != null) __obj.updateDynamic("RowIndexStride")(RowIndexStride.asInstanceOf[js.Any])
-    if (StripeSizeBytes != null) __obj.updateDynamic("StripeSizeBytes")(StripeSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(PaddingTolerance)) __obj.updateDynamic("PaddingTolerance")(PaddingTolerance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RowIndexStride)) __obj.updateDynamic("RowIndexStride")(RowIndexStride.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(StripeSizeBytes)) __obj.updateDynamic("StripeSizeBytes")(StripeSizeBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrcSerDe]
   }
 }

@@ -33,13 +33,13 @@ trait ImagePropsIOS extends js.Object {
 object ImagePropsIOS {
   @scala.inline
   def apply(
-    blurRadius: Int | Double = null,
+    blurRadius: js.UndefOr[Double] = js.undefined,
     capInsets: Insets = null,
     onPartialLoad: () => Unit = null,
     onProgress: /* event */ NativeSyntheticEvent[ImageProgressEventDataIOS] => Unit = null
   ): ImagePropsIOS = {
     val __obj = js.Dynamic.literal()
-    if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurRadius)) __obj.updateDynamic("blurRadius")(blurRadius.get.asInstanceOf[js.Any])
     if (capInsets != null) __obj.updateDynamic("capInsets")(capInsets.asInstanceOf[js.Any])
     if (onPartialLoad != null) __obj.updateDynamic("onPartialLoad")(js.Any.fromFunction0(onPartialLoad))
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))

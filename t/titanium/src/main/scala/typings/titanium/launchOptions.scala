@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
   */
 trait launchOptions extends js.Object {
   /**
-  	 * If set to `true`, this key indicates that the application was launched in response to an
-  	 * incoming location event.
-  	 */
+    * If set to `true`, this key indicates that the application was launched in response to an
+    * incoming location event.
+    */
   var launchOptionsLocationKey: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * This key indicates that the application was launched by another
-  	 * application with the specified bundle ID.
-  	 */
+    * This key indicates that the application was launched by another
+    * application with the specified bundle ID.
+    */
   var source: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * This key indicates that the application was launched in order to open
-  	 * the specified URL.
-  	 */
+    * This key indicates that the application was launched in order to open
+    * the specified URL.
+    */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -34,7 +34,7 @@ object launchOptions {
     url: java.lang.String = null
   ): launchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(launchOptionsLocationKey)) __obj.updateDynamic("launchOptionsLocationKey")(launchOptionsLocationKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(launchOptionsLocationKey)) __obj.updateDynamic("launchOptionsLocationKey")(launchOptionsLocationKey.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[launchOptions]

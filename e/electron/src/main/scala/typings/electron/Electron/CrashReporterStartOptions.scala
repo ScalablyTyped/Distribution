@@ -50,9 +50,9 @@ object CrashReporterStartOptions {
     val __obj = js.Dynamic.literal(companyName = companyName.asInstanceOf[js.Any], submitURL = submitURL.asInstanceOf[js.Any])
     if (crashesDirectory != null) __obj.updateDynamic("crashesDirectory")(crashesDirectory.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSystemCrashHandler)) __obj.updateDynamic("ignoreSystemCrashHandler")(ignoreSystemCrashHandler.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSystemCrashHandler)) __obj.updateDynamic("ignoreSystemCrashHandler")(ignoreSystemCrashHandler.get.asInstanceOf[js.Any])
     if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
-    if (!js.isUndefined(uploadToServer)) __obj.updateDynamic("uploadToServer")(uploadToServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(uploadToServer)) __obj.updateDynamic("uploadToServer")(uploadToServer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrashReporterStartOptions]
   }
 }

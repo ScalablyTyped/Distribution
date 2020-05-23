@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.PageLayoutData
 import typings.officeJsPreview.Excel.Interfaces.PageLayoutLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.PageLayoutUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.A3
 import typings.officeJsPreview.officeJsPreviewStrings.A4
 import typings.officeJsPreview.officeJsPreviewStrings.A4Small
@@ -72,33 +72,32 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.PageLayout")
 @js.native
-class PageLayout () extends ClientObject {
+trait PageLayout extends ClientObject {
   /**
     *
-    * Gets or sets the worksheet's black and white print option.
+    * The worksheet's black and white print option.
     *
     * [Api set: ExcelApi 1.9]
     */
   var blackAndWhite: Boolean = js.native
   /**
     *
-    * Gets or sets the worksheet's bottom page margin to use for printing in points.
+    * The worksheet's bottom page margin to use for printing in points.
     *
     * [Api set: ExcelApi 1.9]
     */
   var bottomMargin: Double = js.native
   /**
     *
-    * Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
+    * The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
     *
     * [Api set: ExcelApi 1.9]
     */
   var centerHorizontally: Boolean = js.native
   /**
     *
-    * Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
+    * The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -108,28 +107,28 @@ class PageLayout () extends ClientObject {
   var context_PageLayout: RequestContext = js.native
   /**
     *
-    * Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
+    * The worksheet's draft mode option. If true the sheet will be printed without graphics.
     *
     * [Api set: ExcelApi 1.9]
     */
   var draftMode: Boolean = js.native
   /**
     *
-    * Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
+    * The worksheet's first page number to print. Null value represents "auto" page numbering.
     *
     * [Api set: ExcelApi 1.9]
     */
   var firstPageNumber: Double | _empty = js.native
   /**
     *
-    * Gets or sets the worksheet's footer margin, in points, for use when printing.
+    * The worksheet's footer margin, in points, for use when printing.
     *
     * [Api set: ExcelApi 1.9]
     */
   var footerMargin: Double = js.native
   /**
     *
-    * Gets or sets the worksheet's header margin, in points, for use when printing.
+    * The worksheet's header margin, in points, for use when printing.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -143,77 +142,77 @@ class PageLayout () extends ClientObject {
   val headersFooters: HeaderFooterGroup = js.native
   /**
     *
-    * Gets or sets the worksheet's left margin, in points, for use when printing.
+    * The worksheet's left margin, in points, for use when printing.
     *
     * [Api set: ExcelApi 1.9]
     */
   var leftMargin: Double = js.native
   /**
     *
-    * Gets or sets the worksheet's orientation of the page.
+    * The worksheet's orientation of the page.
     *
     * [Api set: ExcelApi 1.9]
     */
   var orientation: PageOrientation | Portrait | Landscape = js.native
   /**
     *
-    * Gets or sets the worksheet's paper size of the page.
+    * The worksheet's paper size of the page.
     *
     * [Api set: ExcelApi 1.9]
     */
   var paperSize: PaperType | Letter | LetterSmall | Tabloid | Ledger | Legal | Statement | Executive | A3 | A4 | A4Small | A5 | B4 | B5 | Folio | Quatro | Paper10x14 | Paper11x17 | Note | Envelope9 | Envelope10 | Envelope11 | Envelope12 | Envelope14 | Csheet | Dsheet | Esheet | EnvelopeDL | EnvelopeC5 | EnvelopeC3 | EnvelopeC4 | EnvelopeC6 | EnvelopeC65 | EnvelopeB4 | EnvelopeB5 | EnvelopeB6 | EnvelopeItaly | EnvelopeMonarch | EnvelopePersonal | FanfoldUS | FanfoldStdGerman | FanfoldLegalGerman = js.native
   /**
     *
-    * Gets or sets whether the worksheet's comments should be displayed when printing.
+    * Specifies if the worksheet's comments should be displayed when printing.
     *
     * [Api set: ExcelApi 1.9]
     */
   var printComments: PrintComments | NoComments | EndSheet | InPlace = js.native
   /**
     *
-    * Gets or sets the worksheet's print errors option.
+    * The worksheet's print errors option.
     *
     * [Api set: ExcelApi 1.9]
     */
   var printErrors: PrintErrorType | AsDisplayed | Blank | Dash | NotAvailable = js.native
   /**
     *
-    * Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
+    * Specifies if the worksheet's gridlines will be printed.
     *
     * [Api set: ExcelApi 1.9]
     */
   var printGridlines: Boolean = js.native
   /**
     *
-    * Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
+    * Specifies if the worksheet's headings will be printed.
     *
     * [Api set: ExcelApi 1.9]
     */
   var printHeadings: Boolean = js.native
   /**
     *
-    * Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page number printed.
+    * The worksheet's page print order option. This specifies the order to use for processing the page number printed.
     *
     * [Api set: ExcelApi 1.9]
     */
   var printOrder: PrintOrder | DownThenOver | OverThenDown = js.native
   /**
     *
-    * Gets or sets the worksheet's right margin, in points, for use when printing.
+    * The worksheet's right margin, in points, for use when printing.
     *
     * [Api set: ExcelApi 1.9]
     */
   var rightMargin: Double = js.native
   /**
     *
-    * Gets or sets the worksheet's top margin, in points, for use when printing.
+    * The worksheet's top margin, in points, for use when printing.
     *
     * [Api set: ExcelApi 1.9]
     */
   var topMargin: Double = js.native
   /**
     *
-    * Gets or sets the worksheet's print zoom options.
+    * The worksheet's print zoom options.
     The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
     *
     * [Api set: ExcelApi 1.9]
@@ -262,7 +261,7 @@ class PageLayout () extends ClientObject {
     */
   def load(): PageLayout = js.native
   def load(options: PageLayoutLoadOptions): PageLayout = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PageLayout = js.native
+  def load(propertyNamesAndPaths: Expand): PageLayout = js.native
   def load(propertyNames: String): PageLayout = js.native
   def load(propertyNames: js.Array[String]): PageLayout = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

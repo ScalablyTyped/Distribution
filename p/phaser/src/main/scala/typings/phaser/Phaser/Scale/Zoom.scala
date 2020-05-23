@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Scale
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,24 +37,6 @@ object Zoom extends js.Object {
     */
   @js.native
   sealed trait ZOOM_4X extends Zoom
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Zoom with Double] = js.native
-  /* 3 */ @js.native
-  object MAX_ZOOM
-    extends TopLevel[typings.phaser.Phaser.Scale.Zoom.MAX_ZOOM with Double]
-  
-  /* 0 */ @js.native
-  object NO_ZOOM
-    extends TopLevel[typings.phaser.Phaser.Scale.Zoom.NO_ZOOM with Double]
-  
-  /* 1 */ @js.native
-  object ZOOM_2X
-    extends TopLevel[typings.phaser.Phaser.Scale.Zoom.ZOOM_2X with Double]
-  
-  /* 2 */ @js.native
-  object ZOOM_4X
-    extends TopLevel[typings.phaser.Phaser.Scale.Zoom.ZOOM_4X with Double]
   
 }
 

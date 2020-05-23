@@ -1,8 +1,8 @@
 package typings.downscale.mod
 
-import typings.downscale.DownscaleOptionsreturnBlo
-import typings.downscale.DownscaleOptionsreturnBloImageType
-import typings.downscale.DownscaleOptionsreturnCan
+import typings.downscale.anon.DownscaleOptionsreturnBlo
+import typings.downscale.anon.DownscaleOptionsreturnBloImageType
+import typings.downscale.anon.DownscaleOptionsreturnCan
 import typings.std.Blob
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js

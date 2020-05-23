@@ -25,9 +25,9 @@ trait SendMessageOptions extends BaseOptions {
 
 object SendMessageOptions {
   @scala.inline
-  def apply(message: String, qname: String, delay: Int | Double = null): SendMessageOptions = {
+  def apply(message: String, qname: String, delay: js.UndefOr[Double] = js.undefined): SendMessageOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], qname = qname.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMessageOptions]
   }
 }

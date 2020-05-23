@@ -33,10 +33,13 @@ object abstractModelMod extends js.Object {
     @JSName("id")
     def id_MAbstractModel: String = js.native
     def loadUnitById[T /* <: IAbstractUnit */](id: String): js.Promise[T] = js.native
-    def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: js.UndefOr[scala.Nothing], callback: ICallback[T]): Unit = js.native
+    /**
+      * Fetches a complete unit. The result might be returned from the cache.
+      */
+    def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: js.UndefOr[Boolean], callback: ICallback[T]): Unit = js.native
     def loadUnitById[T /* <: IAbstractUnit */](
       id: String,
-      forceRefresh: js.UndefOr[scala.Nothing],
+      forceRefresh: js.UndefOr[Boolean],
       callback: ICallback[T],
       errorCallback: IErrorCallback
     ): Unit = js.native
@@ -215,8 +218,8 @@ object abstractModelMod extends js.Object {
     def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: Boolean, callback: ICallback[T], errorCallback: IErrorCallback): Unit = js.native
     def onBuildResultEventReceived(callback: js.Function1[/* buildResultEvent */ IBuildResultEvent, Unit]): Unit = js.native
     def onFileChangesReceived(callback: js.Function1[/* files */ js.Array[String], Unit]): Unit = js.native
+    def onModelChange(callback: IVoidCallback): Unit = js.native
     def onModelEventProcessed(callback: IVoidCallback): Unit = js.native
-    def onModelOrFilesChanging(callback: IVoidCallback): Unit = js.native
     def onWorkingCopyDataEventReceived(callback: js.Function1[/* workingCopyDataEvent */ IWorkingCopyDataEvent, Unit]): Unit = js.native
     def putFile(inFilePath: String, filePath: String): js.Promise[Unit] = js.native
     /**

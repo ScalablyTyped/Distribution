@@ -1,7 +1,7 @@
 package typings.gapiClientBlogger.gapi.client.blogger
 
-import typings.gapiClientBlogger.AnonCountry
-import typings.gapiClientBlogger.AnonSelfLinkString
+import typings.gapiClientBlogger.anon.Country
+import typings.gapiClientBlogger.anon.SelfLinkString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait User extends js.Object {
   /** Profile summary information. */
   var about: js.UndefOr[String] = js.undefined
   /** The container of blogs for this user. */
-  var blogs: js.UndefOr[AnonSelfLinkString] = js.undefined
+  var blogs: js.UndefOr[SelfLinkString] = js.undefined
   /** The timestamp of when this profile was created, in seconds since epoch. */
   var created: js.UndefOr[String] = js.undefined
   /** The display name. */
@@ -20,7 +20,7 @@ trait User extends js.Object {
   /** The kind of this entity. Always blogger#user */
   var kind: js.UndefOr[String] = js.undefined
   /** This user's locale */
-  var locale: js.UndefOr[AnonCountry] = js.undefined
+  var locale: js.UndefOr[Country] = js.undefined
   /** The API REST URL to fetch this resource from. */
   var selfLink: js.UndefOr[String] = js.undefined
   /** The user's profile page. */
@@ -31,12 +31,12 @@ object User {
   @scala.inline
   def apply(
     about: String = null,
-    blogs: AnonSelfLinkString = null,
+    blogs: SelfLinkString = null,
     created: String = null,
     displayName: String = null,
     id: String = null,
     kind: String = null,
-    locale: AnonCountry = null,
+    locale: Country = null,
     selfLink: String = null,
     url: String = null
   ): User = {

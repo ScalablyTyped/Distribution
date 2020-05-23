@@ -23,7 +23,7 @@ object trigger extends js.Object {
     * @param [hash]
     *        data hash to pass along with the event
     *
-    * @return	- Returns the opposite of `defaultPrevented` if default was prevented
+    * @return    - Returns the opposite of `defaultPrevented` if default was prevented
     *         - Otherwise returns undefined
     */
   def apply(elem: Element, event: Event): js.UndefOr[Boolean] = js.native

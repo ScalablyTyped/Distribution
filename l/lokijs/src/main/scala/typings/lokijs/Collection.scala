@@ -2,6 +2,18 @@ package typings.lokijs
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
+import typings.lokijs.anon.AdaptiveBinaryIndices
+import typings.lokijs.anon.Age
+import typings.lokijs.anon.AndArray
+import typings.lokijs.anon.Data
+import typings.lokijs.anon.Error
+import typings.lokijs.anon.Exact
+import typings.lokijs.anon.Index
+import typings.lokijs.anon.Object
+import typings.lokijs.anon.PartialCheckIndexOptions
+import typings.lokijs.anon.PartialDynamicViewOptions
+import typings.lokijs.anon.PartialGetDataOptions
+import typings.lokijs.anon.RemoveIndices
 import typings.lokijs.lokijsBooleans.`true`
 import typings.lokijs.lokijsStrings.$aeq
 import typings.lokijs.lokijsStrings.$between
@@ -17,7 +29,6 @@ import typings.lokijs.lokijsStrings.`parse-stringify`
 import typings.lokijs.lokijsStrings.`shallow-assign`
 import typings.lokijs.lokijsStrings.`shallow-recurse-objects`
 import typings.lokijs.lokijsStrings.shallow
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,28 +38,8 @@ import scala.scalajs.js.annotation._
   * @implements LokiEventEmitter
   * @see {@link Loki#addCollection} for normal creation of collections
   */
-@JSGlobal("Collection")
 @js.native
-class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
-  /**
-    * @param name - collection name
-    * @param [options] - (optional) configuration object
-    * @param [options.unique=[]] - array of property names to define unique constraints for
-    * @param [options.exact=[]] - array of property names to define exact constraints for
-    * @param [options.indices=[]] - array property names to define binary indexes for
-    * @param [options.adaptiveBinaryIndices=true] - collection indices will be actively rebuilt rather than lazily
-    * @param [options.asyncListeners=false] - whether listeners are invoked asynchronously
-    * @param [options.disableChangesApi=true] - set to false to enable Changes API
-    * @param [options.disableDeltaChangesApi=true] - set to false to enable Delta Changes API (requires Changes API, forces cloning)
-    * @param [options.autoupdate=false] - use Object.observe to update objects automatically
-    * @param [options.clone=false] - specify whether inserts and queries clone to/from user
-    * @param [options.serializableIndices=true[]] - converts date values on binary indexed properties to epoch time
-    * @param [options.cloneMethod='parse-stringify'] - 'parse-stringify', 'jquery-extend-deep', 'shallow', 'shallow-assign'
-    * @param options.ttlInterval - time interval for clearing out 'aged' documents; not set by default.
-    * @see {@link Loki#addCollection} for normal creation of collections
-    */
-  def this(name: String) = this()
-  def this(name: String, options: Partial[CollectionOptions[E]]) = this()
+trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
   var DynamicViews: js.Array[DynamicView[js.Object]] = js.native
   var adaptiveBinaryIndices: Boolean = js.native
   var autoupdate: Boolean = js.native
@@ -66,9 +57,9 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
   /**
     * a collection of objects recording the changes applied through a commmitStage
     */
-  var commitLog: js.Array[AnonData] = js.native
-  var console: AnonError = js.native
-  var constraints: AnonExact[E] = js.native
+  var commitLog: js.Array[Data] = js.native
+  var console: Error = js.native
+  var constraints: Exact[E] = js.native
   var data: js.Array[E] = js.native
   var dirty: Boolean = js.native
   var disableChangesApi: Boolean = js.native
@@ -86,7 +77,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
   var stages: StringDictionary[js.Any] = js.native
   var transactional: Boolean = js.native
   var transforms: StringDictionary[js.Array[Transform]] = js.native
-  var ttl: AnonAge = js.native
+  var ttl: Age = js.native
   var uniqueNames: js.Array[/* keyof E */ String] = js.native
   /**
     * Adaptively insert a selected item to the index.
@@ -163,7 +154,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     */
   def by(field: /* keyof E */ String): js.Function1[/* value */ js.Any, js.UndefOr[E]] = js.native
   def by(field: /* keyof E */ String, value: js.Any): js.UndefOr[E] = js.native
-  def byExample(template: js.Object): AnonAndArray = js.native
+  def byExample(template: js.Object): AndArray = js.native
   @JSName("by")
   def by_Union(field: /* keyof E */ String): js.UndefOr[E | (js.Function1[/* value */ js.Any, js.UndefOr[E]])] = js.native
   /**
@@ -253,7 +244,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [options.removeIndices] - (default: false)
     */
   def clear(): Unit = js.native
-  def clear(options: AnonRemoveIndices): Unit = js.native
+  def clear(options: RemoveIndices): Unit = js.native
   /** commit the transation */
   def commit(): Unit = js.native
   /**
@@ -268,7 +259,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [options.adaptiveBinaryIndices] - collection indices will be actively rebuilt rather than lazily
     */
   def configureOptions(): Unit = js.native
-  def configureOptions(options: AnonAdaptiveBinaryIndices): Unit = js.native
+  def configureOptions(options: AdaptiveBinaryIndices): Unit = js.native
   /**
     * Quickly determine number of documents in collection (or query)
     * @param [query] - (optional) query object to count results of
@@ -634,19 +625,19 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     reduceFunction: js.Function1[/* ary */ js.Array[U], R]
   ): R = js.native
   def max(field: String): Double = js.native
-  def maxRecord(field: String): AnonIndex = js.native
+  def maxRecord(field: String): Index = js.native
   /**
     * @param field - property name
     */
   def median(field: String): Double = js.native
   def min(field: String): Double = js.native
-  def minRecord(field: String): AnonIndex = js.native
+  def minRecord(field: String): Index = js.native
   /**
     * @param field
     */
   def mode(field: String): js.UndefOr[String] = js.native
   def no_op(): Unit = js.native
-  def observerCallback(changes: js.Array[AnonObject]): Unit = js.native
+  def observerCallback(changes: js.Array[Object]): Unit = js.native
   /*----------------------------+
     | INDEXING                    |
     +----------------------------*/

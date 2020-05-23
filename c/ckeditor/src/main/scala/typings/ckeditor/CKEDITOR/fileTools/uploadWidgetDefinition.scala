@@ -71,7 +71,7 @@ object uploadWidgetDefinition {
     template: String | template = null,
     toFeature: () => feature = null,
     upcast: String | (js.Function2[/* element */ element, /* data */ js.Any, Boolean]) = null,
-    upcastPriority: Int | Double = null,
+    upcastPriority: js.UndefOr[Double] = js.undefined,
     upcasts: StringDictionary[js.Any] = null
   ): uploadWidgetDefinition = {
     val __obj = js.Dynamic.literal(additionalRequestParameters = additionalRequestParameters.asInstanceOf[js.Any], fileToElement = js.Any.fromFunction1(fileToElement), loadMethod = loadMethod.asInstanceOf[js.Any], loaderType = loaderType.asInstanceOf[js.Any], onAbort = js.Any.fromFunction0(onAbort), onError = js.Any.fromFunction0(onError), onLoaded = js.Any.fromFunction0(onLoaded), onUploaded = js.Any.fromFunction0(onUploaded), onUploading = js.Any.fromFunction0(onUploading), replaceWith = js.Any.fromFunction0(replaceWith), skipNotifications = skipNotifications.asInstanceOf[js.Any], supportedTypes = supportedTypes.asInstanceOf[js.Any], uploadUrl = uploadUrl.asInstanceOf[js.Any])
@@ -84,14 +84,14 @@ object uploadWidgetDefinition {
     if (dialog != null) __obj.updateDynamic("dialog")(dialog.asInstanceOf[js.Any])
     if (downcast != null) __obj.updateDynamic("downcast")(downcast.asInstanceOf[js.Any])
     if (downcasts != null) __obj.updateDynamic("downcasts")(downcasts.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction0(edit))
     if (editables != null) __obj.updateDynamic("editables")(editables.asInstanceOf[js.Any])
     if (getLabel != null) __obj.updateDynamic("getLabel")(js.Any.fromFunction0(getLabel))
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction0(insert))
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parts != null) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
     if (pathName != null) __obj.updateDynamic("pathName")(pathName.asInstanceOf[js.Any])
@@ -101,7 +101,7 @@ object uploadWidgetDefinition {
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (toFeature != null) __obj.updateDynamic("toFeature")(js.Any.fromFunction0(toFeature))
     if (upcast != null) __obj.updateDynamic("upcast")(upcast.asInstanceOf[js.Any])
-    if (upcastPriority != null) __obj.updateDynamic("upcastPriority")(upcastPriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(upcastPriority)) __obj.updateDynamic("upcastPriority")(upcastPriority.get.asInstanceOf[js.Any])
     if (upcasts != null) __obj.updateDynamic("upcasts")(upcasts.asInstanceOf[js.Any])
     __obj.asInstanceOf[uploadWidgetDefinition]
   }

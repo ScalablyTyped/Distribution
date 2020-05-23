@@ -16,10 +16,9 @@ object AnimationTimeline {
   def apply(
     getAnimations: () => js.Array[Animation],
     play: KeyframeEffect => Animation,
-    currentTime: Int | Double = null
+    currentTime: Double = null.asInstanceOf[Double]
   ): AnimationTimeline = {
-    val __obj = js.Dynamic.literal(getAnimations = js.Any.fromFunction0(getAnimations), play = js.Any.fromFunction1(play))
-    if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getAnimations = js.Any.fromFunction0(getAnimations), play = js.Any.fromFunction1(play), currentTime = currentTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTimeline]
   }
 }

@@ -17,7 +17,7 @@ object GetBatchParams {
   def apply(batch_id: String, headers: js.Object = null, return_response: js.UndefOr[Boolean] = js.undefined): GetBatchParams = {
     val __obj = js.Dynamic.literal(batch_id = batch_id.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBatchParams]
   }
 }

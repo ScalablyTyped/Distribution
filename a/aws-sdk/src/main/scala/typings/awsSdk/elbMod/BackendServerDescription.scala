@@ -18,9 +18,9 @@ trait BackendServerDescription extends js.Object {
 
 object BackendServerDescription {
   @scala.inline
-  def apply(InstancePort: Int | Double = null, PolicyNames: PolicyNames = null): BackendServerDescription = {
+  def apply(InstancePort: js.UndefOr[InstancePort] = js.undefined, PolicyNames: PolicyNames = null): BackendServerDescription = {
     val __obj = js.Dynamic.literal()
-    if (InstancePort != null) __obj.updateDynamic("InstancePort")(InstancePort.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstancePort)) __obj.updateDynamic("InstancePort")(InstancePort.get.asInstanceOf[js.Any])
     if (PolicyNames != null) __obj.updateDynamic("PolicyNames")(PolicyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendServerDescription]
   }

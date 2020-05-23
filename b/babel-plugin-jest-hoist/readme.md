@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel-plugin-jest-hoist
 
-Typings are for version 25.2.6
+Typings are for version 24.9.0
 
 ## Library description:
 Babel plugin to hoist `jest.disableAutomock`, `jest.enableAutomock`, `jest.unmock`, `jest.mock`, calls above `import` statements. This plugin is automatically included when using [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jes

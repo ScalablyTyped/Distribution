@@ -1,6 +1,5 @@
 package typings.cordovaPluginDeviceOrientation
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,11 +14,11 @@ trait CompassError extends js.Object {
   var code: Double
 }
 
-@JSGlobal("CompassError")
-@js.native
-object CompassError extends /** Constructor for CompassError object */
-Instantiable1[/* code */ Double, CompassError] {
-  var COMPASS_INTERNAL_ERR: Double = js.native
-  var COMPASS_NOT_SUPPORTED: Double = js.native
+object CompassError {
+  @scala.inline
+  def apply(code: Double): CompassError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompassError]
+  }
 }
 

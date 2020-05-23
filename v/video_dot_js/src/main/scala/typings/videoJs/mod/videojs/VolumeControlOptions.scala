@@ -18,7 +18,7 @@ object VolumeControlOptions {
   ): VolumeControlOptions = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     if (volumeBar != null) __obj.updateDynamic("volumeBar")(volumeBar.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeControlOptions]
   }

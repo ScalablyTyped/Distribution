@@ -1,6 +1,6 @@
 package typings.appleMusicApi.AppleMusicApi
 
-import typings.appleMusicApi.AnonData
+import typings.appleMusicApi.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait SongRelationships extends js.Object {
   var albums: Relationship[Album]
   var artists: Relationship[Artist]
   var genres: js.UndefOr[Relationship[Genre]] = js.undefined
-  var station: js.UndefOr[AnonData] = js.undefined
+  var station: js.UndefOr[Data] = js.undefined
 }
 
 object SongRelationships {
@@ -19,7 +19,7 @@ object SongRelationships {
     albums: Relationship[Album],
     artists: Relationship[Artist],
     genres: Relationship[Genre] = null,
-    station: AnonData = null
+    station: Data = null
   ): SongRelationships = {
     val __obj = js.Dynamic.literal(albums = albums.asInstanceOf[js.Any], artists = artists.asInstanceOf[js.Any])
     if (genres != null) __obj.updateDynamic("genres")(genres.asInstanceOf[js.Any])

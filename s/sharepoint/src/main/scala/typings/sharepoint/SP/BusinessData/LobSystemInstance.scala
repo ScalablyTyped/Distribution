@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.BusinessData.LobSystemInstance")
 @js.native
-class LobSystemInstance () extends ClientObject {
+trait LobSystemInstance extends ClientObject {
   def get_name(): String = js.native
 }
 

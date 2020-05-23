@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the MVCxClientScheduler.ToolTipDisplaying event.
   */
-@JSGlobal("MVCxClientSchedulerToolTipDisplayingEventArgs")
-@js.native
-class MVCxClientSchedulerToolTipDisplayingEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes new instance of the MVCxClientSchedulerToolTipDisplayingEventArgs class with the specified settings.
-    * @param toolTip A MVCxClientSchedulerTemplateToolTip object that is a tooltip.
-    * @param data An ASPxClientSchedulerToolTipData object that is the tooltip data.
-    */
-  def this(toolTip: MVCxClientSchedulerTemplateToolTip, data: ASPxClientSchedulerToolTipData) = this()
+trait MVCxClientSchedulerToolTipDisplayingEventArgs extends ASPxClientEventArgs {
   /**
     * Gets information about the tooltip related to the event.
     */
-  var data: ASPxClientSchedulerToolTipData = js.native
+  var data: ASPxClientSchedulerToolTipData
   /**
     * Gets the tooltip related to the event.
     */
-  var toolTip: MVCxClientSchedulerTemplateToolTip = js.native
+  var toolTip: MVCxClientSchedulerTemplateToolTip
+}
+
+object MVCxClientSchedulerToolTipDisplayingEventArgs {
+  @scala.inline
+  def apply(data: ASPxClientSchedulerToolTipData, toolTip: MVCxClientSchedulerTemplateToolTip): MVCxClientSchedulerToolTipDisplayingEventArgs = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], toolTip = toolTip.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MVCxClientSchedulerToolTipDisplayingEventArgs]
+  }
 }
 

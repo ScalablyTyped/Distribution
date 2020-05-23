@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Rotator")
 @js.native
-class Rotator_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Rotator.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Rotator.Model) = this()
+trait Rotator_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.Rotator.Model = js.native
   @JSName("model")
   var model_Rotator_ : typings.ejWebAll.ej.Rotator.Model = js.native

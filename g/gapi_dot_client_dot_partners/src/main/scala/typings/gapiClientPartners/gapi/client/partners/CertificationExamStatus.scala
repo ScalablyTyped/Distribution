@@ -13,9 +13,9 @@ trait CertificationExamStatus extends js.Object {
 
 object CertificationExamStatus {
   @scala.inline
-  def apply(numberUsersPass: Int | Double = null, `type`: String = null): CertificationExamStatus = {
+  def apply(numberUsersPass: js.UndefOr[Double] = js.undefined, `type`: String = null): CertificationExamStatus = {
     val __obj = js.Dynamic.literal()
-    if (numberUsersPass != null) __obj.updateDynamic("numberUsersPass")(numberUsersPass.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberUsersPass)) __obj.updateDynamic("numberUsersPass")(numberUsersPass.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificationExamStatus]
   }

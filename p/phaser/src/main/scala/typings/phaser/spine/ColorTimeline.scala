@@ -4,28 +4,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.ColorTimeline")
-@js.native
-class ColorTimeline protected () extends CurveTimeline {
-  def this(frameCount: Double) = this()
-  var frames: ArrayLike[Double] = js.native
-  var slotIndex: Double = js.native
-  def setFrame(frameIndex: Double, time: Double, r: Double, g: Double, b: Double, a: Double): Unit = js.native
+trait ColorTimeline extends CurveTimeline {
+  var frames: ArrayLike[Double]
+  var slotIndex: Double
+  def setFrame(frameIndex: Double, time: Double, r: Double, g: Double, b: Double, a: Double): Unit
 }
 
-/* static members */
-@JSGlobal("spine.ColorTimeline")
-@js.native
-object ColorTimeline extends js.Object {
-  var A: Double = js.native
-  var B: Double = js.native
-  var ENTRIES: Double = js.native
-  var G: Double = js.native
-  var PREV_A: Double = js.native
-  var PREV_B: Double = js.native
-  var PREV_G: Double = js.native
-  var PREV_R: Double = js.native
-  var PREV_TIME: Double = js.native
-  var R: Double = js.native
+object ColorTimeline {
+  @scala.inline
+  def apply(
+    apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
+    curves: js.Any,
+    frames: ArrayLike[Double],
+    getCurvePercent: (Double, Double) => Double,
+    getCurveType: Double => Double,
+    getFrameCount: () => Double,
+    getPropertyId: () => Double,
+    setCurve: (Double, Double, Double, Double, Double) => Unit,
+    setFrame: (Double, Double, Double, Double, Double, Double) => Unit,
+    setLinear: Double => Unit,
+    setStepped: Double => Unit,
+    slotIndex: Double
+  ): ColorTimeline = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction7(apply), curves = curves.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], getCurvePercent = js.Any.fromFunction2(getCurvePercent), getCurveType = js.Any.fromFunction1(getCurveType), getFrameCount = js.Any.fromFunction0(getFrameCount), getPropertyId = js.Any.fromFunction0(getPropertyId), setCurve = js.Any.fromFunction5(setCurve), setFrame = js.Any.fromFunction6(setFrame), setLinear = js.Any.fromFunction1(setLinear), setStepped = js.Any.fromFunction1(setStepped), slotIndex = slotIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColorTimeline]
+  }
 }
 

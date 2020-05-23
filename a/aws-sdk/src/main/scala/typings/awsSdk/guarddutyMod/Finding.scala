@@ -11,7 +11,7 @@ trait Finding extends js.Object {
     */
   var AccountId: String = js.native
   /**
-    * The ARN for the finding.
+    * The ARN of the finding.
     */
   var Arn: String = js.native
   /**
@@ -19,7 +19,7 @@ trait Finding extends js.Object {
     */
   var Confidence: js.UndefOr[Double] = js.native
   /**
-    * The time and date at which the finding was created.
+    * The time and date when the finding was created.
     */
   var CreatedAt: String = js.native
   /**
@@ -35,7 +35,7 @@ trait Finding extends js.Object {
     */
   var Partition: js.UndefOr[String] = js.native
   /**
-    * The Region in which the finding was generated.
+    * The Region where the finding was generated.
     */
   var Region: String = js.native
   var Resource: typings.awsSdk.guarddutyMod.Resource = js.native
@@ -49,15 +49,15 @@ trait Finding extends js.Object {
     */
   var Severity: Double = js.native
   /**
-    * The title for the finding.
+    * The title of the finding.
     */
   var Title: js.UndefOr[String] = js.native
   /**
-    * The type of the finding.
+    * The type of finding.
     */
   var Type: FindingType = js.native
   /**
-    * The time and date at which the finding was laste updated.
+    * The time and date when the finding was last updated.
     */
   var UpdatedAt: String = js.native
 }
@@ -75,14 +75,14 @@ object Finding {
     Severity: Double,
     Type: FindingType,
     UpdatedAt: String,
-    Confidence: Int | scala.Double = null,
+    Confidence: js.UndefOr[Double] = js.undefined,
     Description: String = null,
     Partition: String = null,
     Service: Service = null,
     Title: String = null
   ): Finding = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Arn = Arn.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Region = Region.asInstanceOf[js.Any], Resource = Resource.asInstanceOf[js.Any], SchemaVersion = SchemaVersion.asInstanceOf[js.Any], Severity = Severity.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Partition != null) __obj.updateDynamic("Partition")(Partition.asInstanceOf[js.Any])
     if (Service != null) __obj.updateDynamic("Service")(Service.asInstanceOf[js.Any])

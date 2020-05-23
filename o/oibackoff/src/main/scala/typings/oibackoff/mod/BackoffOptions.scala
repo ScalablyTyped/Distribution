@@ -17,15 +17,15 @@ object BackoffOptions {
   @scala.inline
   def apply(
     algorithm: typings.oibackoff.oibackoffStrings.incremental | typings.oibackoff.oibackoffStrings.exponential | typings.oibackoff.oibackoffStrings.fibonacci = null,
-    delayRatio: Int | Double = null,
-    maxDelay: Int | Double = null,
-    maxTries: Int | Double = null
+    delayRatio: js.UndefOr[Double] = js.undefined,
+    maxDelay: js.UndefOr[Double] = js.undefined,
+    maxTries: js.UndefOr[Double] = js.undefined
   ): BackoffOptions = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (delayRatio != null) __obj.updateDynamic("delayRatio")(delayRatio.asInstanceOf[js.Any])
-    if (maxDelay != null) __obj.updateDynamic("maxDelay")(maxDelay.asInstanceOf[js.Any])
-    if (maxTries != null) __obj.updateDynamic("maxTries")(maxTries.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayRatio)) __obj.updateDynamic("delayRatio")(delayRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelay)) __obj.updateDynamic("maxDelay")(maxDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTries)) __obj.updateDynamic("maxTries")(maxTries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackoffOptions]
   }
 }

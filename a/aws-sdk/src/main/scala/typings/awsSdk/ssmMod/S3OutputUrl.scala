@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait S3OutputUrl extends js.Object {
   /**
-    * A URL for an Amazon S3 bucket where you want to store the results of this request.
+    * A URL for an S3 bucket where you want to store the results of this request.
     */
   var OutputUrl: js.UndefOr[Url] = js.native
 }

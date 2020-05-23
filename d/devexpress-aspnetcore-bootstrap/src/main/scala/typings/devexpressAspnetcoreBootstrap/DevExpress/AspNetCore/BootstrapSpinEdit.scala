@@ -11,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapSpinEdit")
 @js.native
-class BootstrapSpinEdit () extends BootstrapClientEdit {
+trait BootstrapSpinEdit extends BootstrapClientEdit {
   def getButtonVisible(number: Double): Boolean = js.native
   def getCaretPosition(): Double = js.native
   def getMaxValue(): Double = js.native

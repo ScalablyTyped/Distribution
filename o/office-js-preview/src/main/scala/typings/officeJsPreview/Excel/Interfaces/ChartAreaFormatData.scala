@@ -26,14 +26,14 @@ import scala.scalajs.js.annotation._
 trait ChartAreaFormatData extends js.Object {
   /**
     *
-    * Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
+    * Represents the border format of chart area, which includes color, linestyle, and weight.
     *
     * [Api set: ExcelApi 1.7]
     */
   var border: js.UndefOr[ChartBorderData] = js.undefined
   /**
     *
-    * Returns or sets color scheme of the chart. Read/Write.
+    * Specifies the color scheme of the chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -42,14 +42,14 @@ trait ChartAreaFormatData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
+    * Represents the font attributes (font name, font size, color, etc.) for the current object.
     *
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontData] = js.undefined
   /**
     *
-    * Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+    * Specifies if the chart area of the chart has rounded corners.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -68,7 +68,7 @@ object ChartAreaFormatData {
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundedCorners)) __obj.updateDynamic("roundedCorners")(roundedCorners.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundedCorners)) __obj.updateDynamic("roundedCorners")(roundedCorners.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAreaFormatData]
   }
 }

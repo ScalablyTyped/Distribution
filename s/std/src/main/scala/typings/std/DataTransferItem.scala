@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +26,4 @@ trait DataTransferItem extends js.Object {
   def getAsString(callback: FunctionStringCallback): Unit = js.native
   def webkitGetAsEntry(): js.Any = js.native
 }
-
-@JSGlobal("DataTransferItem")
-@js.native
-object DataTransferItem extends Instantiable0[DataTransferItem]
 

@@ -10,16 +10,16 @@ trait SafariBrowserTab extends SafariEventTarget {
   var page: SafariWebPageProxy = js.native
   var reader: SafariReader = js.native
   /**
-  		* The tab’s current title.
-  		* The tab’s title is the same as the title of the webpage in most cases. For example, the title of the webpage may be truncated for display, but the value of this property is not truncated.
-  		* Available in Safari 5.0 and later.
-  		*/
+    * The tab’s current title.
+    * The tab’s title is the same as the title of the webpage in most cases. For example, the title of the webpage may be truncated for display, but the value of this property is not truncated.
+    * Available in Safari 5.0 and later.
+    */
   var title: String = js.native
   /**
-  		* The URL loaded in this tab.
-  		* Setting this attribute to a new value loads the page at the new URL in the tab.
-  		* Available in Safari 5.0 and later.
-  		*/
+    * The URL loaded in this tab.
+    * Setting this attribute to a new value loads the page at the new URL in the tab.
+    * Available in Safari 5.0 and later.
+    */
   var url: String = js.native
   def activate(): Unit = js.native
   def close(): Unit = js.native

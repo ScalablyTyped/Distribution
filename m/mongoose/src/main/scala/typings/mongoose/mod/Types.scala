@@ -2,12 +2,9 @@ package typings.mongoose.mod
 
 import typings.mongodb.mod.Binary
 import typings.mongodb.mod.ObjectID_
-import typings.mongoose.AnonFlattenMaps
-import typings.mongoose.AnonNoop
-import typings.mongoose.TypeofObjectID_
-import typings.node.TypeofBuffer
-import typings.std.ArrayConstructor
-import typings.std.MapConstructor
+import typings.mongoose.anon.FlattenMaps
+import typings.mongoose.anon.Noop
+import typings.mongoose.anon.TypeofObjectID_
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,8 +17,9 @@ object Types extends js.Object {
     * section types/array.js
     * http://mongoosejs.com/docs/api.html#types-array-js
     */
-  @js.native
-  trait Array[T] extends ArrayConstructor {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Array<T> * / any */ @js.native
+  trait Array[T] extends js.Object {
     /**
       * Pops the array atomically at most one time per document save().
       * Calling this mulitple times on an array before saving sends the same command as
@@ -118,8 +116,9 @@ object Types extends js.Object {
     * section types/buffer.js
     * http://mongoosejs.com/docs/api.html#types-buffer-js
     */
-  @js.native
-  trait Buffer extends TypeofBuffer {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Buffer * / any */ @js.native
+  trait Buffer extends js.Object {
     /**
       * Copies the buffer.
       * Buffer#copy does not mark target as modified so you must copy
@@ -174,20 +173,21 @@ object Types extends js.Object {
     def parentArray(): DocumentArray[MongooseDocument] = js.native
     /** Removes the subdocument from its parent array. */
     def remove(): this.type = js.native
-    def remove(options: AnonNoop): this.type = js.native
-    def remove(options: AnonNoop, fn: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def remove(options: Noop): this.type = js.native
+    def remove(options: Noop, fn: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
   }
   
   /**
     * section types/map.js
     * https://mongoosejs.com/docs/schematypes.html#maps
     */
-  @js.native
-  trait Map[V] extends MapConstructor {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Map<string, V> * / any */ @js.native
+  trait Map[V] extends js.Object {
     /** Returns a native js Map. */
     def toObject(): GlobalMap[String, V] = js.native
     /** Returns this Map object as a POJO. */
-    def toObject(options: AnonFlattenMaps with js.Object): Record[String, V] = js.native
+    def toObject(options: FlattenMaps with js.Object): Record[String, V] = js.native
     def toObject(options: js.Any): GlobalMap[String, V] = js.native
   }
   

@@ -1,5 +1,6 @@
 package typings.naverWhale
 
+import typings.naverWhale.anon.Typeofwhale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

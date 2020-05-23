@@ -26,9 +26,14 @@ trait GetScriptDagNode extends js.Object {
 
 object GetScriptDagNode {
   @scala.inline
-  def apply(args: js.Array[GetScriptDagNodeArg], id: String, nodeType: String, lineNumber: Int | Double = null): GetScriptDagNode = {
+  def apply(
+    args: js.Array[GetScriptDagNodeArg],
+    id: String,
+    nodeType: String,
+    lineNumber: js.UndefOr[Double] = js.undefined
+  ): GetScriptDagNode = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptDagNode]
   }
 }

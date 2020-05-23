@@ -20,20 +20,20 @@ object HexbinLayerConfig {
   def apply(
     colorRange: js.Array[String] = null,
     colorScaleExtent: js.Tuple2[Double, Double] = null,
-    duration: Int | Double = null,
-    opacity: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
     pointerEvents: String = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     radiusRange: js.Tuple2[Double, Double] = null,
     radiusScaleExtent: js.Tuple2[Double, Double] = null
   ): HexbinLayerConfig = {
     val __obj = js.Dynamic.literal()
     if (colorRange != null) __obj.updateDynamic("colorRange")(colorRange.asInstanceOf[js.Any])
     if (colorScaleExtent != null) __obj.updateDynamic("colorScaleExtent")(colorScaleExtent.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (radiusRange != null) __obj.updateDynamic("radiusRange")(radiusRange.asInstanceOf[js.Any])
     if (radiusScaleExtent != null) __obj.updateDynamic("radiusScaleExtent")(radiusScaleExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[HexbinLayerConfig]

@@ -3,6 +3,7 @@ package typings.typesettable
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.typesettable.abstractMeasurerMod.IDimensions
+import typings.typesettable.anon.Write
 import typings.typesettable.contextsMod.IPenFactoryContext
 import typings.typesettable.contextsMod.IRulerFactoryContext
 import typings.typesettable.writerMod.ITransform
@@ -30,7 +31,7 @@ object htmlMod extends js.Object {
     var className: js.Any = js.native
     var element: js.Any = js.native
     /* private */ def createHtmlLinePen(textBlock: js.Any): js.Any = js.native
-    def createPen(text: String, transform: ITransform, element: Element): AnonWrite = js.native
+    def createPen(text: String, transform: ITransform, element: Element): Write = js.native
     def setAddTitle(addTitle: Boolean): Unit = js.native
   }
   

@@ -33,20 +33,20 @@ object Options {
     fillColor: String = null,
     lineCap: LineCap = null,
     lineDash: js.Array[Double] = null,
-    lineDashOffset: Int | Double = null,
+    lineDashOffset: js.UndefOr[Double] = js.undefined,
     lineJoin: LineJoin = null,
-    lineWidth: Int | Double = null,
-    miterLimit: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    miterLimit: js.UndefOr[Double] = js.undefined,
     strokeColor: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
     if (lineDash != null) __obj.updateDynamic("lineDash")(lineDash.asInstanceOf[js.Any])
-    if (lineDashOffset != null) __obj.updateDynamic("lineDashOffset")(lineDashOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineDashOffset)) __obj.updateDynamic("lineDashOffset")(lineDashOffset.get.asInstanceOf[js.Any])
     if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(miterLimit)) __obj.updateDynamic("miterLimit")(miterLimit.get.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

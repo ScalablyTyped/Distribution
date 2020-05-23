@@ -9,6 +9,14 @@ import typings.graphql.definitionMod.GraphQLNamedType
 import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphql.mod.GraphQLDirective
 import typings.graphql.mod.GraphQLSchema
+import typings.graphqlTools.anon.Args
+import typings.graphqlTools.anon.BuildSchemaOptions
+import typings.graphqlTools.anon.DocumentNodedefinitionsAr
+import typings.graphqlTools.anon.Field
+import typings.graphqlTools.anon.From
+import typings.graphqlTools.anon.GraphQLSchematransformsAr
+import typings.graphqlTools.anon.InheritResolversFromInterfaces
+import typings.graphqlTools.anon.TypeofSchemaDirectiveVisi
 import typings.graphqlTools.filterRootFieldsMod.RootFilter
 import typings.graphqlTools.graphqlToolsStrings.Mutation
 import typings.graphqlTools.graphqlToolsStrings.Query
@@ -67,7 +75,7 @@ object mod extends js.Object {
   @js.native
   class ExtractField protected ()
     extends typings.graphqlTools.transformsMod.ExtractField {
-    def this(hasFromTo: AnonFrom) = this()
+    def this(hasFromTo: From) = this()
   }
   
   @js.native
@@ -118,13 +126,13 @@ object mod extends js.Object {
   @js.native
   class ReplaceFieldWithFragment protected ()
     extends typings.graphqlTools.transformsMod.ReplaceFieldWithFragment {
-    def this(targetSchema: GraphQLSchema, fragments: js.Array[AnonField]) = this()
+    def this(targetSchema: GraphQLSchema, fragments: js.Array[Field]) = this()
   }
   
   @js.native
   class SchemaDirectiveVisitor protected ()
     extends typings.graphqlTools.schemaVisitorMod.SchemaDirectiveVisitor {
-    protected def this(config: AnonArgs) = this()
+    protected def this(config: Args) = this()
   }
   
   @js.native
@@ -181,8 +189,7 @@ object mod extends js.Object {
   def checkForResolveTypeResolver(schema: GraphQLSchema, requireResolversForResolveType: Boolean): Unit = js.native
   def concatenateTypeDefs(typeDefinitionsAry: js.Array[ITypedef]): String = js.native
   def concatenateTypeDefs(typeDefinitionsAry: js.Array[ITypedef], calledFunctionRefs: js.Any): String = js.native
-  def decorateWithLogger(fn: js.UndefOr[scala.Nothing], logger: ILogger, hint: String): GraphQLFieldResolver[_, _, StringDictionary[_]] = js.native
-  def decorateWithLogger(fn: GraphQLFieldResolver[_, _, StringDictionary[_]], logger: ILogger, hint: String): GraphQLFieldResolver[_, _, StringDictionary[_]] = js.native
+  def decorateWithLogger(fn: js.UndefOr[GraphQLFieldResolver[_, _, StringDictionary[_]]], logger: ILogger, hint: String): GraphQLFieldResolver[_, _, StringDictionary[_]] = js.native
   def defaultCreateRemoteResolver(fetcher: Fetcher): GraphQLFieldResolver[_, _, StringDictionary[_]] = js.native
   def delegateToSchema(options: GraphQLSchema, args: js.Any*): js.Promise[_] = js.native
   def delegateToSchema(options: IDelegateToSchemaOptions[StringDictionary[_]], args: js.Any*): js.Promise[_] = js.native
@@ -196,9 +203,9 @@ object mod extends js.Object {
   def makeExecutableSchema[TContext](
     hasTypeDefsResolversConnectorsLoggerAllowUndefinedInResolveResolverValidationOptionsDirectiveResolversSchemaDirectivesParseOptionsInheritResolversFromInterfaces: IExecutableSchemaDefinition[TContext]
   ): GraphQLSchema = js.native
-  def makeRemoteExecutableSchema(hasSchemaLinkFetcherCreateResolverBuildSchemaOptionsPrintSchemaOptions: AnonBuildSchemaOptions): GraphQLSchema = js.native
+  def makeRemoteExecutableSchema(hasSchemaLinkFetcherCreateResolverBuildSchemaOptionsPrintSchemaOptions: BuildSchemaOptions): GraphQLSchema = js.native
   def mergeSchemas(
-    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfacesMergeDirectives: AnonInheritResolversFromInterfaces
+    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfacesMergeDirectives: InheritResolversFromInterfaces
   ): GraphQLSchema = js.native
   def mockServer(schema: GraphQLSchema, mocks: IMocks): IMockServer = js.native
   def mockServer(schema: GraphQLSchema, mocks: IMocks, preserveResolvers: Boolean): IMockServer = js.native

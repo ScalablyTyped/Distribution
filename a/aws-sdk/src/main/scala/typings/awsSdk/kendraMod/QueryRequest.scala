@@ -23,7 +23,7 @@ trait QueryRequest extends js.Object {
     */
   var PageNumber: js.UndefOr[Integer] = js.native
   /**
-    * Sets the number of results that are returned in each page of results. The default page size is 100.
+    * Sets the number of results that are returned in each page of results. The default page size is 10. The maximum number of results returned is 100. If you ask for more than 100 results, only 100 are returned.
     */
   var PageSize: js.UndefOr[Integer] = js.native
   /**
@@ -47,16 +47,16 @@ object QueryRequest {
     QueryText: QueryText,
     AttributeFilter: AttributeFilter = null,
     Facets: FacetList = null,
-    PageNumber: Int | Double = null,
-    PageSize: Int | Double = null,
+    PageNumber: js.UndefOr[Integer] = js.undefined,
+    PageSize: js.UndefOr[Integer] = js.undefined,
     QueryResultTypeFilter: QueryResultType = null,
     RequestedDocumentAttributes: DocumentAttributeKeyList = null
   ): QueryRequest = {
     val __obj = js.Dynamic.literal(IndexId = IndexId.asInstanceOf[js.Any], QueryText = QueryText.asInstanceOf[js.Any])
     if (AttributeFilter != null) __obj.updateDynamic("AttributeFilter")(AttributeFilter.asInstanceOf[js.Any])
     if (Facets != null) __obj.updateDynamic("Facets")(Facets.asInstanceOf[js.Any])
-    if (PageNumber != null) __obj.updateDynamic("PageNumber")(PageNumber.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageNumber)) __obj.updateDynamic("PageNumber")(PageNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (QueryResultTypeFilter != null) __obj.updateDynamic("QueryResultTypeFilter")(QueryResultTypeFilter.asInstanceOf[js.Any])
     if (RequestedDocumentAttributes != null) __obj.updateDynamic("RequestedDocumentAttributes")(RequestedDocumentAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRequest]

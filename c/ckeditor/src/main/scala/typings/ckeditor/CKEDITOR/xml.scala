@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.xml")
 @js.native
-class xml protected () extends js.Object {
-  def this(xmlObjectOrData: js.Any) = this()
+trait xml extends js.Object {
   var baseXml: js.Any = js.native
   def getInnerXml(xpath: String): String = js.native
   def getInnerXml(xpath: String, contextNode: js.Any): String = js.native

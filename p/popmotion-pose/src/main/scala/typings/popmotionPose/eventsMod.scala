@@ -1,6 +1,6 @@
 package typings.popmotionPose
 
-import typings.popmotion.typesMod.ColdSubscription
+import typings.popmotion.actionTypesMod.ColdSubscription
 import typings.popmotionPose.typesMod.DomPopmotionConfig
 import typings.popmotionPose.typesMod.DomPopmotionPoser
 import typings.poseCore.typesMod.ActiveActions

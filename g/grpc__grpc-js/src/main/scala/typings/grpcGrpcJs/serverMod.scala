@@ -1,6 +1,7 @@
 package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.makeClientMod.Deserialize
 import typings.grpcGrpcJs.makeClientMod.Serialize
 import typings.grpcGrpcJs.makeClientMod.ServiceDefinition
@@ -16,10 +17,11 @@ import scala.scalajs.js.annotation._
 object serverMod extends js.Object {
   @js.native
   class Server () extends js.Object {
-    def this(options: js.Object) = this()
+    def this(options: ChannelOptions) = this()
     var _setupHandlers: js.Any = js.native
     var handlers: js.Any = js.native
     var http2Server: js.Any = js.native
+    var options: js.Any = js.native
     var sessions: js.Any = js.native
     var started: js.Any = js.native
     def addHttp2Port(): Unit = js.native

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 trait SetWifiListOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 提供预设的 Wi-Fi 信息列表 */
-  var wifiList: js.Array[SetWifiList_]
+  var wifiList: js.Array[SetWifiList]
 }
 
 object SetWifiListOptions {
   @scala.inline
   def apply(
-    wifiList: js.Array[SetWifiList_],
+    wifiList: js.Array[SetWifiList],
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null

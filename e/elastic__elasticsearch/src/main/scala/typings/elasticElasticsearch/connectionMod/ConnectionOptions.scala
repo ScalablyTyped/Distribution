@@ -3,6 +3,7 @@ package typings.elasticElasticsearch.connectionMod
 import typings.elasticElasticsearch.poolMod.ApiKeyAuth
 import typings.elasticElasticsearch.poolMod.BasicAuth
 import typings.node.urlMod.URL_
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +11,9 @@ import scala.scalajs.js.annotation._
 trait ConnectionOptions extends js.Object {
   var agent: js.UndefOr[AgentOptions | agentFn] = js.undefined
   var auth: js.UndefOr[BasicAuth | ApiKeyAuth] = js.undefined
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Record[String, _]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  var roles: js.UndefOr[js.Any] = js.undefined
+  var roles: js.UndefOr[ConnectionRoles] = js.undefined
   var ssl: js.UndefOr[typings.node.tlsMod.ConnectionOptions] = js.undefined
   var status: js.UndefOr[String] = js.undefined
   var url: URL_
@@ -24,9 +25,9 @@ object ConnectionOptions {
     url: URL_,
     agent: AgentOptions | agentFn = null,
     auth: BasicAuth | ApiKeyAuth = null,
-    headers: js.Any = null,
+    headers: Record[String, _] = null,
     id: String = null,
-    roles: js.Any = null,
+    roles: ConnectionRoles = null,
     ssl: typings.node.tlsMod.ConnectionOptions = null,
     status: String = null
   ): ConnectionOptions = {

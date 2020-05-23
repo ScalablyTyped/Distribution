@@ -26,19 +26,19 @@ object TemplateOverridesOptions {
   @scala.inline
   def apply(
     BaseViewID: Double | String = null,
-    ListTemplateType: Int | Double = null,
+    ListTemplateType: js.UndefOr[Double] = js.undefined,
     OnPostRender: RenderCallback | js.Array[RenderCallback] = null,
     OnPreRender: RenderCallback | js.Array[RenderCallback] = null,
     Templates: TemplateOverrides = null,
-    ViewStyle: Int | Double = null
+    ViewStyle: js.UndefOr[Double] = js.undefined
   ): TemplateOverridesOptions = {
     val __obj = js.Dynamic.literal()
     if (BaseViewID != null) __obj.updateDynamic("BaseViewID")(BaseViewID.asInstanceOf[js.Any])
-    if (ListTemplateType != null) __obj.updateDynamic("ListTemplateType")(ListTemplateType.asInstanceOf[js.Any])
+    if (!js.isUndefined(ListTemplateType)) __obj.updateDynamic("ListTemplateType")(ListTemplateType.get.asInstanceOf[js.Any])
     if (OnPostRender != null) __obj.updateDynamic("OnPostRender")(OnPostRender.asInstanceOf[js.Any])
     if (OnPreRender != null) __obj.updateDynamic("OnPreRender")(OnPreRender.asInstanceOf[js.Any])
     if (Templates != null) __obj.updateDynamic("Templates")(Templates.asInstanceOf[js.Any])
-    if (ViewStyle != null) __obj.updateDynamic("ViewStyle")(ViewStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(ViewStyle)) __obj.updateDynamic("ViewStyle")(ViewStyle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOverridesOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.awsLambda.cloudfrontRequestMod
 
-import typings.awsLambda.AnonAction
+import typings.awsLambda.anon.Action
 import typings.awsLambda.awsLambdaStrings.base64
 import typings.awsLambda.awsLambdaStrings.text_
 import typings.awsLambda.cloudfrontMod.CloudFrontHeaders
@@ -34,7 +34,7 @@ object _CloudFrontRequestResult {
     method: String,
     querystring: String,
     uri: String,
-    body: AnonAction = null,
+    body: Action = null,
     origin: CloudFrontOrigin = null
   ): _CloudFrontRequestResult = {
     val __obj = js.Dynamic.literal(clientIp = clientIp.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], querystring = querystring.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])

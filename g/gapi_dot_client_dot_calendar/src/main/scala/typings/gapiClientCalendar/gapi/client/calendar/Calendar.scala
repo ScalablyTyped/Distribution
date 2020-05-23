@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Calendar extends js.Object {
+  /** Conferencing properties for this calendar, for example what types of conferences are allowed. */
+  var conferenceProperties: js.UndefOr[ConferenceProperties] = js.undefined
   /** Description of the calendar. Optional. */
   var description: js.UndefOr[String] = js.undefined
   /** ETag of the resource. */
@@ -24,6 +26,7 @@ trait Calendar extends js.Object {
 object Calendar {
   @scala.inline
   def apply(
+    conferenceProperties: ConferenceProperties = null,
     description: String = null,
     etag: String = null,
     id: String = null,
@@ -33,6 +36,7 @@ object Calendar {
     timeZone: String = null
   ): Calendar = {
     val __obj = js.Dynamic.literal()
+    if (conferenceProperties != null) __obj.updateDynamic("conferenceProperties")(conferenceProperties.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

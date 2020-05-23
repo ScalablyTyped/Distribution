@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonCanAnimate
+import typings.cesium.anon.CanAnimate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "Clock")
 @js.native
 class Clock protected () extends js.Object {
-  def this(options: AnonCanAnimate) = this()
+  def this(options: CanAnimate) = this()
   var canAnimate: Boolean = js.native
   var clockRange: ClockRange = js.native
   var clockStep: ClockStep = js.native

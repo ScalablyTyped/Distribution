@@ -24,11 +24,11 @@ object Label {
     id: String = null,
     labelListVisibility: String = null,
     messageListVisibility: String = null,
-    messagesTotal: Int | Double = null,
-    messagesUnread: Int | Double = null,
+    messagesTotal: js.UndefOr[Double] = js.undefined,
+    messagesUnread: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    threadsTotal: Int | Double = null,
-    threadsUnread: Int | Double = null,
+    threadsTotal: js.UndefOr[Double] = js.undefined,
+    threadsUnread: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): Label = {
     val __obj = js.Dynamic.literal()
@@ -36,11 +36,11 @@ object Label {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labelListVisibility != null) __obj.updateDynamic("labelListVisibility")(labelListVisibility.asInstanceOf[js.Any])
     if (messageListVisibility != null) __obj.updateDynamic("messageListVisibility")(messageListVisibility.asInstanceOf[js.Any])
-    if (messagesTotal != null) __obj.updateDynamic("messagesTotal")(messagesTotal.asInstanceOf[js.Any])
-    if (messagesUnread != null) __obj.updateDynamic("messagesUnread")(messagesUnread.asInstanceOf[js.Any])
+    if (!js.isUndefined(messagesTotal)) __obj.updateDynamic("messagesTotal")(messagesTotal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messagesUnread)) __obj.updateDynamic("messagesUnread")(messagesUnread.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (threadsTotal != null) __obj.updateDynamic("threadsTotal")(threadsTotal.asInstanceOf[js.Any])
-    if (threadsUnread != null) __obj.updateDynamic("threadsUnread")(threadsUnread.asInstanceOf[js.Any])
+    if (!js.isUndefined(threadsTotal)) __obj.updateDynamic("threadsTotal")(threadsTotal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threadsUnread)) __obj.updateDynamic("threadsUnread")(threadsUnread.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Label]
   }

@@ -74,13 +74,13 @@ object Props {
     appElement: HTMLElement | js.Object = null,
     aria: Aria = null,
     ariaHideApp: js.UndefOr[Boolean] = js.undefined,
-    bodyOpenClassName: String = null,
+    bodyOpenClassName: js.UndefOr[Null | String] = js.undefined,
     className: String | Classes = null,
-    closeTimeoutMS: Int | Double = null,
+    closeTimeoutMS: js.UndefOr[Double] = js.undefined,
     contentLabel: String = null,
     contentRef: /* instance */ HTMLDivElement => Unit = null,
     data: js.Any = null,
-    htmlOpenClassName: String = null,
+    htmlOpenClassName: js.UndefOr[Null | String] = js.undefined,
     id: String = null,
     onAfterClose: () => Unit = null,
     onAfterOpen: /* obj */ js.UndefOr[OnAfterOpenCallbackOptions] => Unit = null,
@@ -89,7 +89,7 @@ object Props {
     overlayRef: /* instance */ HTMLDivElement => Unit = null,
     parentSelector: () => HTMLElement = null,
     portalClassName: String = null,
-    role: String = null,
+    role: js.UndefOr[Null | String] = js.undefined,
     shouldCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
     shouldCloseOnOverlayClick: js.UndefOr[Boolean] = js.undefined,
     shouldFocusAfterRender: js.UndefOr[Boolean] = js.undefined,
@@ -100,14 +100,14 @@ object Props {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     if (appElement != null) __obj.updateDynamic("appElement")(appElement.asInstanceOf[js.Any])
     if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaHideApp)) __obj.updateDynamic("ariaHideApp")(ariaHideApp.asInstanceOf[js.Any])
-    if (bodyOpenClassName != null) __obj.updateDynamic("bodyOpenClassName")(bodyOpenClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaHideApp)) __obj.updateDynamic("ariaHideApp")(ariaHideApp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bodyOpenClassName)) __obj.updateDynamic("bodyOpenClassName")(bodyOpenClassName.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (closeTimeoutMS != null) __obj.updateDynamic("closeTimeoutMS")(closeTimeoutMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeTimeoutMS)) __obj.updateDynamic("closeTimeoutMS")(closeTimeoutMS.get.asInstanceOf[js.Any])
     if (contentLabel != null) __obj.updateDynamic("contentLabel")(contentLabel.asInstanceOf[js.Any])
     if (contentRef != null) __obj.updateDynamic("contentRef")(js.Any.fromFunction1(contentRef))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (htmlOpenClassName != null) __obj.updateDynamic("htmlOpenClassName")(htmlOpenClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(htmlOpenClassName)) __obj.updateDynamic("htmlOpenClassName")(htmlOpenClassName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onAfterClose != null) __obj.updateDynamic("onAfterClose")(js.Any.fromFunction0(onAfterClose))
     if (onAfterOpen != null) __obj.updateDynamic("onAfterOpen")(js.Any.fromFunction1(onAfterOpen))
@@ -116,11 +116,11 @@ object Props {
     if (overlayRef != null) __obj.updateDynamic("overlayRef")(js.Any.fromFunction1(overlayRef))
     if (parentSelector != null) __obj.updateDynamic("parentSelector")(js.Any.fromFunction0(parentSelector))
     if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCloseOnEsc)) __obj.updateDynamic("shouldCloseOnEsc")(shouldCloseOnEsc.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCloseOnOverlayClick)) __obj.updateDynamic("shouldCloseOnOverlayClick")(shouldCloseOnOverlayClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldFocusAfterRender)) __obj.updateDynamic("shouldFocusAfterRender")(shouldFocusAfterRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldReturnFocusAfterClose)) __obj.updateDynamic("shouldReturnFocusAfterClose")(shouldReturnFocusAfterClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(role)) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCloseOnEsc)) __obj.updateDynamic("shouldCloseOnEsc")(shouldCloseOnEsc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCloseOnOverlayClick)) __obj.updateDynamic("shouldCloseOnOverlayClick")(shouldCloseOnOverlayClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldFocusAfterRender)) __obj.updateDynamic("shouldFocusAfterRender")(shouldFocusAfterRender.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldReturnFocusAfterClose)) __obj.updateDynamic("shouldReturnFocusAfterClose")(shouldReturnFocusAfterClose.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (testId != null) __obj.updateDynamic("testId")(testId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

@@ -1,6 +1,6 @@
 package typings.babylonjs.babylonjsIndexMod
 
-import typings.babylonjs.AnonRadiusX
+import typings.babylonjs.anon.RadiusX
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
@@ -31,7 +31,7 @@ object IcoSphereBuilder extends js.Object {
     * @returns the icosahedron mesh
     * @see https://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
-  def CreateIcoSphere(name: String, options: AnonRadiusX): typings.babylonjs.meshMod.Mesh = js.native
-  def CreateIcoSphere(name: String, options: AnonRadiusX, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateIcoSphere(name: String, options: RadiusX): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateIcoSphere(name: String, options: RadiusX, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }
 

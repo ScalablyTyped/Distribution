@@ -1,5 +1,6 @@
 package typings.storybookApi
 
+import typings.storybookApi.anon.ApiSubAPI
 import typings.storybookApi.mod.Module
 import typings.storybookChannels.mod.Channel
 import typings.storybookChannels.mod.Listener
@@ -23,6 +24,6 @@ object channelMod extends js.Object {
     def once(`type`: String, cb: Listener): Unit = js.native
   }
   
-  def default(hasProvider: Module): AnonApiSubAPI = js.native
+  def default(hasProvider: Module): ApiSubAPI = js.native
 }
 

@@ -37,7 +37,7 @@ object DescribeScheduledActionsType {
   def apply(
     AutoScalingGroupName: ResourceName = null,
     EndTime: TimestampType = null,
-    MaxRecords: Int | Double = null,
+    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
     NextToken: XmlString = null,
     ScheduledActionNames: ScheduledActionNames = null,
     StartTime: TimestampType = null
@@ -45,7 +45,7 @@ object DescribeScheduledActionsType {
     val __obj = js.Dynamic.literal()
     if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ScheduledActionNames != null) __obj.updateDynamic("ScheduledActionNames")(ScheduledActionNames.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])

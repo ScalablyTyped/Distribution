@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonApFilePaths
+import typings.aliApp.anon.ApFilePaths
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait ChooseImageOptions
   var sourceType: js.Array[ImageSourceType]
   /** 成功则返回图片的本地文件路径列表 tempFilePaths */
   @JSName("success")
-  def success_MChooseImageOptions(res: AnonApFilePaths): Unit
+  def success_MChooseImageOptions(res: ApFilePaths): Unit
 }
 
 object ChooseImageOptions {
@@ -21,7 +21,7 @@ object ChooseImageOptions {
   def apply(
     count: Double,
     sourceType: js.Array[ImageSourceType],
-    success: AnonApFilePaths => Unit,
+    success: ApFilePaths => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): ChooseImageOptions = {

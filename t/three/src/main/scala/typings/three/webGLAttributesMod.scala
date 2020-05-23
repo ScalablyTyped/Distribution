@@ -3,6 +3,7 @@ package typings.three
 import typings.std.GLenum
 import typings.std.WebGL2RenderingContext
 import typings.std.WebGLRenderingContext
+import typings.three.anon.Buffer
 import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.interleavedBufferAttributeMod.InterleavedBufferAttribute
 import typings.three.webGLCapabilitiesMod.WebGLCapabilities
@@ -17,8 +18,8 @@ object webGLAttributesMod extends js.Object {
   class WebGLAttributes protected () extends js.Object {
     def this(gl: WebGL2RenderingContext, capabilities: WebGLCapabilities) = this()
     def this(gl: WebGLRenderingContext, capabilities: WebGLCapabilities) = this()
-    def get(attribute: BufferAttribute): AnonBuffer = js.native
-    def get(attribute: InterleavedBufferAttribute): AnonBuffer = js.native
+    def get(attribute: BufferAttribute): Buffer = js.native
+    def get(attribute: InterleavedBufferAttribute): Buffer = js.native
     def remove(attribute: BufferAttribute): Unit = js.native
     def remove(attribute: InterleavedBufferAttribute): Unit = js.native
     def update(attribute: BufferAttribute, bufferType: GLenum): Unit = js.native

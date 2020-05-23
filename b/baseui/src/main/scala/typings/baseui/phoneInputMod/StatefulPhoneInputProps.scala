@@ -2,7 +2,7 @@ package typings.baseui.phoneInputMod
 
 import typings.baseui.selectMod.OnChangeParams
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait StatefulPhoneInputProps extends js.Object {
   var initialState: js.UndefOr[State] = js.undefined
   var mapIsoToLabel: js.UndefOr[js.Function1[/* iso */ String, String]] = js.undefined
   var onCountryChange: js.UndefOr[js.Function1[/* event */ OnChangeParams, _]] = js.undefined
-  var onTextChange: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLInputElement, Event_], _]] = js.undefined
+  var onTextChange: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLInputElement, Event], _]] = js.undefined
   var overrides: js.UndefOr[PhoneInputOverrides] = js.undefined
   var stateReducer: js.UndefOr[StateReducer] = js.undefined
 }
@@ -25,7 +25,7 @@ object StatefulPhoneInputProps {
     initialState: State = null,
     mapIsoToLabel: /* iso */ String => String = null,
     onCountryChange: /* event */ OnChangeParams => _ = null,
-    onTextChange: /* event */ SyntheticEvent[HTMLInputElement, Event_] => _ = null,
+    onTextChange: /* event */ SyntheticEvent[HTMLInputElement, Event] => _ = null,
     overrides: PhoneInputOverrides = null,
     stateReducer: (/* type */ StateChange, /* nextState */ State, /* currentState */ State) => State = null
   ): StatefulPhoneInputProps = {

@@ -28,13 +28,13 @@ object NavigationProps {
   def apply(
     backButtonTintColor: String = null,
     backButtonTitle: String = null,
-    cardStyle: StyleProp[ViewStyle] = null,
+    cardStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     configureTransition: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
     ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _ = null,
     hideBackButton: js.UndefOr[Boolean] = js.undefined,
     hideNavBar: js.UndefOr[Boolean] = js.undefined,
-    navBarStyle: StyleProp[ViewStyle] = null,
+    navBarStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     onTransitionEnd: /* repeated */ js.Any => Unit = null,
     onTransitionStart: /* repeated */ js.Any => Unit = null,
     renderLeftButton: /* props */ CardSubViewProps => ReactNode = null,
@@ -42,16 +42,16 @@ object NavigationProps {
     renderRightButton: /* props */ CardSubViewProps => ReactNode = null,
     renderTitle: /* props */ CardSubViewProps => ReactNode = null,
     title: String = null,
-    titleStyle: StyleProp[TextStyle] = null
+    titleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined
   ): NavigationProps = {
     val __obj = js.Dynamic.literal()
     if (backButtonTintColor != null) __obj.updateDynamic("backButtonTintColor")(backButtonTintColor.asInstanceOf[js.Any])
     if (backButtonTitle != null) __obj.updateDynamic("backButtonTitle")(backButtonTitle.asInstanceOf[js.Any])
-    if (cardStyle != null) __obj.updateDynamic("cardStyle")(cardStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(cardStyle)) __obj.updateDynamic("cardStyle")(cardStyle.asInstanceOf[js.Any])
     if (configureTransition != null) __obj.updateDynamic("configureTransition")(js.Any.fromFunction2(configureTransition))
-    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNavBar)) __obj.updateDynamic("hideNavBar")(hideNavBar.asInstanceOf[js.Any])
-    if (navBarStyle != null) __obj.updateDynamic("navBarStyle")(navBarStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideNavBar)) __obj.updateDynamic("hideNavBar")(hideNavBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navBarStyle)) __obj.updateDynamic("navBarStyle")(navBarStyle.asInstanceOf[js.Any])
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
     if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction1(onTransitionStart))
     if (renderLeftButton != null) __obj.updateDynamic("renderLeftButton")(js.Any.fromFunction1(renderLeftButton))
@@ -59,7 +59,7 @@ object NavigationProps {
     if (renderRightButton != null) __obj.updateDynamic("renderRightButton")(js.Any.fromFunction1(renderRightButton))
     if (renderTitle != null) __obj.updateDynamic("renderTitle")(js.Any.fromFunction1(renderTitle))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleStyle)) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationProps]
   }
 }

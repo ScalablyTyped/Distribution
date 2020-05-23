@@ -3,12 +3,11 @@ package typings.bizcharts.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.antvG2.mod.EventParams
 import typings.antvG2.mod.Styles.background
-import typings.bizcharts.AnonBottom
-import typings.bizcharts.AnonData
-import typings.bizcharts.AnonItems
-import typings.bizcharts.AnonTooltip
-import typings.bizcharts.AnonTooltipAny
-import typings.react.AnonHtml
+import typings.bizcharts.anon.Bottom
+import typings.bizcharts.anon.Data
+import typings.bizcharts.anon.Items
+import typings.bizcharts.anon.TooltipAny
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -31,12 +30,12 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.react.mod.Props because var conflicts: children. Inlined key, ref */ trait ChartProps
   extends DOMAttributes[js.Object]
      with /* event */ StringDictionary[js.Any] {
@@ -51,18 +50,18 @@ import scala.scalajs.js.annotation._
   // 事件属性
   var onGetG2Instance: js.UndefOr[js.Function1[/* chart */ typings.antvG2.mod.Chart, Unit]] = js.undefined
   var onItemSelected: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
-  var onItemSelectedChange: js.UndefOr[js.Function1[/* ev */ AnonData, Unit]] = js.undefined
+  var onItemSelectedChange: js.UndefOr[js.Function1[/* ev */ Data, Unit]] = js.undefined
   var onItemUnselected: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   var onPlotClick: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   var onPlotDblClick: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   var onPlotEnter: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   var onPlotLeave: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
   var onPlotMove: js.UndefOr[js.Function1[/* ev */ EventParams, Unit]] = js.undefined
-  var onTooltipChange: js.UndefOr[js.Function1[/* ev */ AnonItems, Unit]] = js.undefined
-  var onTooltipHide: js.UndefOr[js.Function1[/* ev */ AnonTooltipAny, Unit]] = js.undefined
-  var onTooltipShow: js.UndefOr[js.Function1[/* ev */ AnonTooltip, Unit]] = js.undefined
+  var onTooltipChange: js.UndefOr[js.Function1[/* ev */ Items, Unit]] = js.undefined
+  var onTooltipHide: js.UndefOr[js.Function1[/* ev */ TooltipAny, Unit]] = js.undefined
+  var onTooltipShow: js.UndefOr[js.Function1[/* ev */ typings.bizcharts.anon.Tooltip, Unit]] = js.undefined
   var padding: js.UndefOr[
-    String | AnonBottom | Double | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple2[String, String])
+    String | Bottom | Double | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple2[String, String])
   ] = js.undefined
   var pixelRatio: js.UndefOr[Double] = js.undefined
   var placeholder: js.UndefOr[ReactElement | String | Boolean] = js.undefined
@@ -82,20 +81,20 @@ object ChartProps {
     background: background = null,
     children: ReactNode = null,
     className: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     data: js.Any = null,
     filter: js.Array[_] = null,
     forceFit: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
-    onAbort: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onAbort: SyntheticEvent[js.Object, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[js.Object] => Unit = null,
     onAnimationIteration: AnimationEvent[js.Object] => Unit = null,
     onAnimationStart: AnimationEvent[js.Object] => Unit = null,
     onAuxClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[js.Object] => Unit = null,
     onBlur: FocusEvent[js.Object] => Unit = null,
-    onCanPlay: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[js.Object, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[js.Object, Event] => Unit = null,
     onChange: FormEvent[js.Object] => Unit = null,
     onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[js.Object] => Unit = null,
@@ -113,25 +112,25 @@ object ChartProps {
     onDragOver: DragEvent[js.Object] => Unit = null,
     onDragStart: DragEvent[js.Object] => Unit = null,
     onDrop: DragEvent[js.Object] => Unit = null,
-    onDurationChange: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onEnded: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onError: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[js.Object, Event] => Unit = null,
+    onEmptied: SyntheticEvent[js.Object, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[js.Object, Event] => Unit = null,
+    onEnded: SyntheticEvent[js.Object, Event] => Unit = null,
+    onError: SyntheticEvent[js.Object, Event] => Unit = null,
     onFocus: FocusEvent[js.Object] => Unit = null,
     onGetG2Instance: /* chart */ typings.antvG2.mod.Chart => Unit = null,
     onInput: FormEvent[js.Object] => Unit = null,
     onInvalid: FormEvent[js.Object] => Unit = null,
     onItemSelected: /* ev */ EventParams => Unit = null,
-    onItemSelectedChange: /* ev */ AnonData => Unit = null,
+    onItemSelectedChange: /* ev */ Data => Unit = null,
     onItemUnselected: /* ev */ EventParams => Unit = null,
     onKeyDown: KeyboardEvent[js.Object] => Unit = null,
     onKeyPress: KeyboardEvent[js.Object] => Unit = null,
     onKeyUp: KeyboardEvent[js.Object] => Unit = null,
-    onLoad: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onLoad: SyntheticEvent[js.Object, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[js.Object, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[js.Object, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[js.Object, Event] => Unit = null,
     onMouseDown: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
@@ -140,9 +139,9 @@ object ChartProps {
     onMouseOver: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[js.Object] => Unit = null,
-    onPause: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onPlay: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onPause: SyntheticEvent[js.Object, Event] => Unit = null,
+    onPlay: SyntheticEvent[js.Object, Event] => Unit = null,
+    onPlaying: SyntheticEvent[js.Object, Event] => Unit = null,
     onPlotClick: /* ev */ EventParams => Unit = null,
     onPlotDblClick: /* ev */ EventParams => Unit = null,
     onPlotEnter: /* ev */ EventParams => Unit = null,
@@ -156,47 +155,47 @@ object ChartProps {
     onPointerOut: PointerEvent[js.Object] => Unit = null,
     onPointerOver: PointerEvent[js.Object] => Unit = null,
     onPointerUp: PointerEvent[js.Object] => Unit = null,
-    onProgress: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onProgress: SyntheticEvent[js.Object, Event] => Unit = null,
+    onRateChange: SyntheticEvent[js.Object, Event] => Unit = null,
     onReset: FormEvent[js.Object] => Unit = null,
     onScroll: UIEvent[js.Object, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onSelect: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onStalled: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[js.Object, Event] => Unit = null,
+    onSeeking: SyntheticEvent[js.Object, Event] => Unit = null,
+    onSelect: SyntheticEvent[js.Object, Event] => Unit = null,
+    onStalled: SyntheticEvent[js.Object, Event] => Unit = null,
     onSubmit: FormEvent[js.Object] => Unit = null,
-    onSuspend: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onTooltipChange: /* ev */ AnonItems => Unit = null,
-    onTooltipHide: /* ev */ AnonTooltipAny => Unit = null,
-    onTooltipShow: /* ev */ AnonTooltip => Unit = null,
+    onSuspend: SyntheticEvent[js.Object, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[js.Object, Event] => Unit = null,
+    onTooltipChange: /* ev */ Items => Unit = null,
+    onTooltipHide: /* ev */ TooltipAny => Unit = null,
+    onTooltipShow: /* ev */ typings.bizcharts.anon.Tooltip => Unit = null,
     onTouchCancel: TouchEvent[js.Object] => Unit = null,
     onTouchEnd: TouchEvent[js.Object] => Unit = null,
     onTouchMove: TouchEvent[js.Object] => Unit = null,
     onTouchStart: TouchEvent[js.Object] => Unit = null,
     onTransitionEnd: TransitionEvent[js.Object] => Unit = null,
-    onVolumeChange: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[js.Object, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[js.Object, Event] => Unit = null,
+    onWaiting: SyntheticEvent[js.Object, Event] => Unit = null,
     onWheel: WheelEvent[js.Object] => Unit = null,
-    padding: String | AnonBottom | Double | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple2[String, String]) = null,
-    pixelRatio: Int | Double = null,
+    padding: String | Bottom | Double | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple2[String, String]) = null,
+    pixelRatio: js.UndefOr[Double] = js.undefined,
     placeholder: ReactElement | String | Boolean = null,
     plotBackground: background = null,
-    ref: LegacyRef[js.Any] = null,
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined,
     scale: js.Any = null,
     style: CSSProperties = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ChartProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
@@ -290,13 +289,13 @@ object ChartProps {
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (plotBackground != null) __obj.updateDynamic("plotBackground")(plotBackground.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartProps]
   }
 }

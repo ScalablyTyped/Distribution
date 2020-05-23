@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartBinOptionsData
 import typings.officeJs.Excel.Interfaces.ChartBinOptionsLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartBinOptionsUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Auto
 import typings.officeJs.officeJsStrings.BinCount
 import typings.officeJs.officeJsStrings.BinWidth
@@ -20,19 +20,18 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ChartBinOptions")
 @js.native
-class ChartBinOptions () extends ClientObject {
+trait ChartBinOptions extends ClientObject {
   /**
     *
-    * Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
+    * Specifies if bin overflow is enabled in a histogram chart or pareto chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var allowOverflow: Boolean = js.native
   /**
     *
-    * Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
+    * Specifies if bin underflow is enabled in a histogram chart or pareto chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -42,35 +41,35 @@ class ChartBinOptions () extends ClientObject {
   var context_ChartBinOptions: RequestContext = js.native
   /**
     *
-    * Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
+    * Specifies the bin count of a histogram chart or pareto chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var count: Double = js.native
   /**
     *
-    * Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
+    * Specifies the bin overflow value of a histogram chart or pareto chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var overflowValue: Double = js.native
   /**
     *
-    * Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
+    * Specifies the bin's type for a histogram chart or pareto chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var `type`: ChartBinType | Category | Auto | BinWidth | BinCount = js.native
   /**
     *
-    * Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
+    * Specifies the bin underflow value of a histogram chart or pareto chart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var underflowValue: Double = js.native
   /**
     *
-    * Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
+    * Specifies the bin width value of a histogram chart or pareto chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -82,7 +81,7 @@ class ChartBinOptions () extends ClientObject {
     */
   def load(): ChartBinOptions = js.native
   def load(options: ChartBinOptionsLoadOptions): ChartBinOptions = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartBinOptions = js.native
+  def load(propertyNamesAndPaths: Expand): ChartBinOptions = js.native
   def load(propertyNames: String): ChartBinOptions = js.native
   def load(propertyNames: js.Array[String]): ChartBinOptions = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

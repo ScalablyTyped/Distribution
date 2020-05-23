@@ -20,16 +20,16 @@ trait ToasterProps extends js.Object {
 object ToasterProps {
   @scala.inline
   def apply(
-    autoHideDuration: Int | Double = null,
+    autoHideDuration: js.UndefOr[Double] = js.undefined,
     overrides: ToasterOverrides = null,
     placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top = null,
     usePortal: js.UndefOr[Boolean] = js.undefined
   ): ToasterProps = {
     val __obj = js.Dynamic.literal()
-    if (autoHideDuration != null) __obj.updateDynamic("autoHideDuration")(autoHideDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideDuration)) __obj.updateDynamic("autoHideDuration")(autoHideDuration.get.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToasterProps]
   }
 }

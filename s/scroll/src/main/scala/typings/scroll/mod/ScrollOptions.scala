@@ -19,9 +19,9 @@ trait ScrollOptions extends js.Object {
 
 object ScrollOptions {
   @scala.inline
-  def apply(duration: Int | Double = null, ease: /* time */ Double => Double = null): ScrollOptions = {
+  def apply(duration: js.UndefOr[Double] = js.undefined, ease: /* time */ Double => Double = null): ScrollOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(js.Any.fromFunction1(ease))
     __obj.asInstanceOf[ScrollOptions]
   }

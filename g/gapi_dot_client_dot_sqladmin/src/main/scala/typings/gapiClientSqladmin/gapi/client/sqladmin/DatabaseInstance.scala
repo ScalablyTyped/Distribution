@@ -1,6 +1,6 @@
 package typings.gapiClientSqladmin.gapi.client.sqladmin
 
-import typings.gapiClientSqladmin.AnonAvailable
+import typings.gapiClientSqladmin.anon.Available
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait DatabaseInstance extends js.Object {
   /** HTTP 1.1 Entity tag for the resource. */
   var etag: js.UndefOr[String] = js.undefined
   /** The name and status of the failover replica. This property is applicable only to Second Generation instances. */
-  var failoverReplica: js.UndefOr[AnonAvailable] = js.undefined
+  var failoverReplica: js.UndefOr[Available] = js.undefined
   /**
     * The GCE zone that the instance is serving from. In case when the instance is failed over to standby zone, this value may be different with what user
     * specified in the settings.
@@ -97,7 +97,7 @@ object DatabaseInstance {
     currentDiskSize: String = null,
     databaseVersion: String = null,
     etag: String = null,
-    failoverReplica: AnonAvailable = null,
+    failoverReplica: Available = null,
     gceZone: String = null,
     instanceType: String = null,
     ipAddresses: js.Array[IpMapping] = null,

@@ -31,18 +31,18 @@ trait ESInstanceDetails extends js.Object {
 object ESInstanceDetails {
   @scala.inline
   def apply(
-    CurrentGeneration: js.UndefOr[Boolean] = js.undefined,
+    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
     InstanceClass: GenericString = null,
     InstanceSize: GenericString = null,
     Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[Boolean] = js.undefined
+    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
   ): ESInstanceDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.get.asInstanceOf[js.Any])
     if (InstanceClass != null) __obj.updateDynamic("InstanceClass")(InstanceClass.asInstanceOf[js.Any])
     if (InstanceSize != null) __obj.updateDynamic("InstanceSize")(InstanceSize.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ESInstanceDetails]
   }
 }

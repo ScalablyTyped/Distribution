@@ -18,9 +18,13 @@ trait SliceInfo extends js.Object {
 
 object SliceInfo {
   @scala.inline
-  def apply(duration: Int | Double = null, kind: String = null, segment: js.Array[SegmentInfo] = null): SliceInfo = {
+  def apply(
+    duration: js.UndefOr[Double] = js.undefined,
+    kind: String = null,
+    segment: js.Array[SegmentInfo] = null
+  ): SliceInfo = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliceInfo]

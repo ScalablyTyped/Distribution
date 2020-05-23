@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CoverageCost extends js.Object {
   /**
-    * How much an On-Demand instance cost.
+    * How much an On-Demand Instance costs.
     */
   var OnDemandCost: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandCost] = js.native
 }

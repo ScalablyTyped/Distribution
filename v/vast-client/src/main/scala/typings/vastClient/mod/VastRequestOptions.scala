@@ -31,17 +31,17 @@ object VastRequestOptions {
   @scala.inline
   def apply(
     resolveAll: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     urlHandler: VASTClientUrlHandler = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined,
-    wrapperLimit: Int | Double = null
+    wrapperLimit: js.UndefOr[Double] = js.undefined
   ): VastRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resolveAll)) __obj.updateDynamic("resolveAll")(resolveAll.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveAll)) __obj.updateDynamic("resolveAll")(resolveAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (urlHandler != null) __obj.updateDynamic("urlHandler")(urlHandler.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
-    if (wrapperLimit != null) __obj.updateDynamic("wrapperLimit")(wrapperLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapperLimit)) __obj.updateDynamic("wrapperLimit")(wrapperLimit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastRequestOptions]
   }
 }

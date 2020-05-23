@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SocialSharing")
 @js.native
-class SocialSharing () extends js.Object {
+trait SocialSharing extends js.Object {
   @JSName("shareW3C")
   var shareW3C_Original: SocialSharingW3C = js.native
   def available(callback: js.Function1[/* available */ Boolean, Unit]): Unit = js.native

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object Analytics extends js.Object {
   @js.native
-  class AnalyticsItemData () extends ClientObject {
+  trait AnalyticsItemData extends ClientObject {
     def getHitCountForDay(day: Date): Double = js.native
     def getHitCountForMonth(day: Date): Double = js.native
     def getUniqueUsersCountForDay(day: Date): Double = js.native
@@ -24,7 +24,7 @@ object Analytics extends js.Object {
   }
   
   @js.native
-  class UsageAnalytics () extends ClientObject {
+  trait UsageAnalytics extends ClientObject {
     def deleteCustomEventUsageData(appEventTypeId: Guid): Unit = js.native
     def deleteStandardEventUsageData(eventType: Double): Unit = js.native
     def getAnalyticsItemData[T](eventType: Double, listItem: ListItem[T]): AnalyticsItemData = js.native

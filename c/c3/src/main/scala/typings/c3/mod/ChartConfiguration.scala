@@ -1,19 +1,18 @@
 package typings.c3.mod
 
-import typings.c3.AnonArcs
-import typings.c3.AnonAuto
-import typings.c3.AnonBrighten
-import typings.c3.AnonClassname
-import typings.c3.AnonColors
-import typings.c3.AnonDuration
-import typings.c3.AnonExpand
-import typings.c3.AnonHeight
-import typings.c3.AnonInterpolation
-import typings.c3.AnonLabel
-import typings.c3.AnonPadding
-import typings.c3.AnonPattern
-import typings.c3.AnonSpace
-import typings.c3.AnonZerobased
+import typings.c3.anon.Arcs
+import typings.c3.anon.Auto
+import typings.c3.anon.Brighten
+import typings.c3.anon.Classname
+import typings.c3.anon.Colors
+import typings.c3.anon.Duration
+import typings.c3.anon.Expand
+import typings.c3.anon.Height
+import typings.c3.anon.Interpolation
+import typings.c3.anon.Label
+import typings.c3.anon.Pattern
+import typings.c3.anon.Space
+import typings.c3.anon.Zerobased
 import typings.d3Selection.mod.Selection_
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -21,9 +20,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChartConfiguration extends js.Object {
-  var area: js.UndefOr[AnonZerobased] = js.undefined
+  var area: js.UndefOr[Zerobased] = js.undefined
   var axis: js.UndefOr[AxesOptions] = js.undefined
-  var bar: js.UndefOr[AnonSpace] = js.undefined
+  var bar: js.UndefOr[Space] = js.undefined
   /**
     * The CSS selector or the element which the chart will be set to. D3 selection object can be specified. If other chart is set already, it will be replaced with the new one (only one chart
     * can be set in one element).
@@ -32,12 +31,12 @@ trait ChartConfiguration extends js.Object {
     * MutationObserver. On the other hand, if chart always will be binded, polyfill will not be required because MutationObserver will never be called.
     */
   var bindto: js.UndefOr[String | HTMLElement | (Selection_[_, _, _, _]) | Null] = js.undefined
-  var color: js.UndefOr[AnonPattern] = js.undefined
+  var color: js.UndefOr[Pattern] = js.undefined
   var data: Data
-  var donut: js.UndefOr[AnonLabel] = js.undefined
-  var gauge: js.UndefOr[AnonArcs] = js.undefined
+  var donut: js.UndefOr[Label] = js.undefined
+  var gauge: js.UndefOr[Arcs] = js.undefined
   var grid: js.UndefOr[GridOptions] = js.undefined
-  var interaction: js.UndefOr[AnonBrighten] = js.undefined
+  var interaction: js.UndefOr[Brighten] = js.undefined
   var legend: js.UndefOr[LegendOptions] = js.undefined
   var line: js.UndefOr[LineOptions] = js.undefined
   /**
@@ -65,7 +64,7 @@ trait ChartConfiguration extends js.Object {
     */
   var onresized: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
   var padding: js.UndefOr[Padding] = js.undefined
-  var pie: js.UndefOr[AnonExpand] = js.undefined
+  var pie: js.UndefOr[Expand] = js.undefined
   var point: js.UndefOr[PointOptions] = js.undefined
   /**
     * Show rectangles inside the chart.
@@ -74,15 +73,15 @@ trait ChartConfiguration extends js.Object {
     * unixtime integer can be used. If class is set, the region element will have it as class.
     */
   var regions: js.UndefOr[js.Array[RegionOptions]] = js.undefined
-  var resize: js.UndefOr[AnonAuto] = js.undefined
-  var size: js.UndefOr[AnonHeight] = js.undefined
-  var spline: js.UndefOr[AnonInterpolation] = js.undefined
-  var stanford: js.UndefOr[AnonColors] = js.undefined
+  var resize: js.UndefOr[Auto] = js.undefined
+  var size: js.UndefOr[Height] = js.undefined
+  var spline: js.UndefOr[Interpolation] = js.undefined
+  var stanford: js.UndefOr[Colors] = js.undefined
   var subchart: js.UndefOr[SubchartOptions] = js.undefined
-  var svg: js.UndefOr[AnonClassname] = js.undefined
-  var title: js.UndefOr[AnonPadding] = js.undefined
+  var svg: js.UndefOr[Classname] = js.undefined
+  var title: js.UndefOr[typings.c3.anon.Padding] = js.undefined
   var tooltip: js.UndefOr[TooltipOptions] = js.undefined
-  var transition: js.UndefOr[AnonDuration] = js.undefined
+  var transition: js.UndefOr[Duration] = js.undefined
   var zoom: js.UndefOr[ZoomOptions] = js.undefined
 }
 
@@ -90,15 +89,15 @@ object ChartConfiguration {
   @scala.inline
   def apply(
     data: Data,
-    area: AnonZerobased = null,
+    area: Zerobased = null,
     axis: AxesOptions = null,
-    bar: AnonSpace = null,
-    bindto: String | HTMLElement | (Selection_[_, _, _, _]) = null,
-    color: AnonPattern = null,
-    donut: AnonLabel = null,
-    gauge: AnonArcs = null,
+    bar: Space = null,
+    bindto: js.UndefOr[Null | String | HTMLElement | (Selection_[_, _, _, _])] = js.undefined,
+    color: Pattern = null,
+    donut: Label = null,
+    gauge: Arcs = null,
     grid: GridOptions = null,
-    interaction: AnonBrighten = null,
+    interaction: Brighten = null,
     legend: LegendOptions = null,
     line: LineOptions = null,
     oninit: js.ThisFunction0[/* this */ ChartInternal, Unit] = null,
@@ -108,25 +107,25 @@ object ChartConfiguration {
     onresize: js.ThisFunction0[/* this */ ChartInternal, Unit] = null,
     onresized: js.ThisFunction0[/* this */ ChartInternal, Unit] = null,
     padding: Padding = null,
-    pie: AnonExpand = null,
+    pie: Expand = null,
     point: PointOptions = null,
     regions: js.Array[RegionOptions] = null,
-    resize: AnonAuto = null,
-    size: AnonHeight = null,
-    spline: AnonInterpolation = null,
-    stanford: AnonColors = null,
+    resize: Auto = null,
+    size: Height = null,
+    spline: Interpolation = null,
+    stanford: Colors = null,
     subchart: SubchartOptions = null,
-    svg: AnonClassname = null,
-    title: AnonPadding = null,
+    svg: Classname = null,
+    title: typings.c3.anon.Padding = null,
     tooltip: TooltipOptions = null,
-    transition: AnonDuration = null,
+    transition: Duration = null,
     zoom: ZoomOptions = null
   ): ChartConfiguration = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
-    if (bindto != null) __obj.updateDynamic("bindto")(bindto.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindto)) __obj.updateDynamic("bindto")(bindto.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (donut != null) __obj.updateDynamic("donut")(donut.asInstanceOf[js.Any])
     if (gauge != null) __obj.updateDynamic("gauge")(gauge.asInstanceOf[js.Any])

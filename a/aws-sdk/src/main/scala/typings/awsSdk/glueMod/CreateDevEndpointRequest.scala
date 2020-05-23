@@ -77,8 +77,8 @@ object CreateDevEndpointRequest {
     ExtraJarsS3Path: GenericString = null,
     ExtraPythonLibsS3Path: GenericString = null,
     GlueVersion: GlueVersionString = null,
-    NumberOfNodes: Int | Double = null,
-    NumberOfWorkers: Int | Double = null,
+    NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined,
+    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
     PublicKey: GenericString = null,
     PublicKeys: PublicKeysList = null,
     SecurityConfiguration: NameString = null,
@@ -92,8 +92,8 @@ object CreateDevEndpointRequest {
     if (ExtraJarsS3Path != null) __obj.updateDynamic("ExtraJarsS3Path")(ExtraJarsS3Path.asInstanceOf[js.Any])
     if (ExtraPythonLibsS3Path != null) __obj.updateDynamic("ExtraPythonLibsS3Path")(ExtraPythonLibsS3Path.asInstanceOf[js.Any])
     if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
-    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
-    if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
     if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey.asInstanceOf[js.Any])
     if (PublicKeys != null) __obj.updateDynamic("PublicKeys")(PublicKeys.asInstanceOf[js.Any])
     if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.antdMobileRn.imagePickerIndexNativeMod
 
-import typings.antdMobileRn.AnonFiles
+import typings.antdMobileRn.anon.Files
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends ImagePicker {
 @JSImport("antd-mobile-rn/lib/image-picker/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonFiles = js.native
+  var defaultProps: Files = js.native
 }
 

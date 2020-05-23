@@ -14,12 +14,15 @@ trait ApnsPayload
   /**
     * The `aps` dictionary to be included in the message.
     */
-  var aps: Aps
+  var aps: typings.firebaseAdmin.messagingMod.admin.messaging.Aps
 }
 
 object ApnsPayload {
   @scala.inline
-  def apply(aps: Aps, StringDictionary: /* customData */ StringDictionary[js.Object] = null): ApnsPayload = {
+  def apply(
+    aps: typings.firebaseAdmin.messagingMod.admin.messaging.Aps,
+    StringDictionary: /* key */ StringDictionary[js.Object] = null
+  ): ApnsPayload = {
     val __obj = js.Dynamic.literal(aps = aps.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ApnsPayload]

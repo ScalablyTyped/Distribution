@@ -35,12 +35,12 @@ object MappedRequestOptions {
     queryParameters: Record[String, _],
     cacheable: js.UndefOr[Boolean] = js.undefined,
     data: Record[String, String] = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): MappedRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], queryParameters = queryParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheable)) __obj.updateDynamic("cacheable")(cacheable.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheable)) __obj.updateDynamic("cacheable")(cacheable.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappedRequestOptions]
   }
 }

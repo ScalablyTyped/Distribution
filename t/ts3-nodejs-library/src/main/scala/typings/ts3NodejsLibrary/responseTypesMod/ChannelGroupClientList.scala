@@ -12,11 +12,15 @@ trait ChannelGroupClientList extends js.Object {
 
 object ChannelGroupClientList {
   @scala.inline
-  def apply(cgid: Int | Double = null, cid: Int | Double = null, cldbid: Int | Double = null): ChannelGroupClientList = {
+  def apply(
+    cgid: js.UndefOr[Double] = js.undefined,
+    cid: js.UndefOr[Double] = js.undefined,
+    cldbid: js.UndefOr[Double] = js.undefined
+  ): ChannelGroupClientList = {
     val __obj = js.Dynamic.literal()
-    if (cgid != null) __obj.updateDynamic("cgid")(cgid.asInstanceOf[js.Any])
-    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
-    if (cldbid != null) __obj.updateDynamic("cldbid")(cldbid.asInstanceOf[js.Any])
+    if (!js.isUndefined(cgid)) __obj.updateDynamic("cgid")(cgid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cid)) __obj.updateDynamic("cid")(cid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cldbid)) __obj.updateDynamic("cldbid")(cldbid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelGroupClientList]
   }
 }

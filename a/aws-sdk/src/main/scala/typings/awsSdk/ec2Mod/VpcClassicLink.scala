@@ -22,13 +22,9 @@ trait VpcClassicLink extends js.Object {
 
 object VpcClassicLink {
   @scala.inline
-  def apply(
-    ClassicLinkEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    Tags: TagList = null,
-    VpcId: String = null
-  ): VpcClassicLink = {
+  def apply(ClassicLinkEnabled: js.UndefOr[Boolean] = js.undefined, Tags: TagList = null, VpcId: String = null): VpcClassicLink = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ClassicLinkEnabled)) __obj.updateDynamic("ClassicLinkEnabled")(ClassicLinkEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ClassicLinkEnabled)) __obj.updateDynamic("ClassicLinkEnabled")(ClassicLinkEnabled.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcClassicLink]

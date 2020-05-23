@@ -27,10 +27,10 @@ object ExchangeOptions {
     val __obj = js.Dynamic.literal()
     if (alternateExchange != null) __obj.updateDynamic("alternateExchange")(alternateExchange.asInstanceOf[js.Any])
     if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
-    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable.asInstanceOf[js.Any])
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
-    if (!js.isUndefined(noReply)) __obj.updateDynamic("noReply")(noReply.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noReply)) __obj.updateDynamic("noReply")(noReply.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeOptions]
   }
 }

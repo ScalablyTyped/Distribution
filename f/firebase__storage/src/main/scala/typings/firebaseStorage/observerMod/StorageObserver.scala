@@ -15,14 +15,14 @@ trait StorageObserver[T] extends js.Object {
 object StorageObserver {
   @scala.inline
   def apply[T](
-    complete: () => Unit = null,
-    error: /* error */ Error | FirebaseStorageError => Unit = null,
-    next: T => Unit = null
+    complete: js.UndefOr[Null | (() => Unit)] = js.undefined,
+    error: js.UndefOr[Null | (/* error */ Error | FirebaseStorageError => Unit)] = js.undefined,
+    next: js.UndefOr[Null | (T => Unit)] = js.undefined
   ): StorageObserver[T] = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction1(next))
+    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(if (complete != null) js.Any.fromFunction0(complete.asInstanceOf[() => Unit]) else null)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(if (error != null) js.Any.fromFunction1(error.asInstanceOf[/* error */ Error | FirebaseStorageError => Unit]) else null)
+    if (!js.isUndefined(next)) __obj.updateDynamic("next")(if (next != null) js.Any.fromFunction1(next.asInstanceOf[T => Unit]) else null)
     __obj.asInstanceOf[StorageObserver[T]]
   }
 }

@@ -25,8 +25,8 @@ object PropsType {
   ): PropsType = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixX)) __obj.updateDynamic("fixX")(fixX.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixY)) __obj.updateDynamic("fixY")(fixY.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixX)) __obj.updateDynamic("fixX")(fixX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixY)) __obj.updateDynamic("fixY")(fixY.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropsType]

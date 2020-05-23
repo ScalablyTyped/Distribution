@@ -2,13 +2,14 @@ package typings.blueprintjsDatetime.dateRangePickerMod
 
 import typings.blueprintjsCore.boundaryMod.Boundary
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsDatetime.AnonFormatDate
+import typings.blueprintjsDatetime.anon.FormatDate
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerModifiers
-import typings.blueprintjsDatetime.dateUtilsMod.DateRange
+import typings.blueprintjsDatetime.dateRangeMod.DateRange
 import typings.blueprintjsDatetime.shortcutsMod.IDateRangeShortcut
 import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
+import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,9 +46,7 @@ trait IDateRangePickerProps
     * `canChangeMonth`, `captionElement`, `numberOfMonths`, `fromMonth` (use
     * `minDate`), `month` (use `initialMonth`), `toMonth` (use `maxDate`).
     */
-  var dayPickerProps: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any
-  ] = js.undefined
+  var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
   /**
     * Initial `DateRange` the calendar will display as selected.
     * This should not be set if `value` is set.
@@ -109,11 +108,11 @@ object IDateRangePickerProps {
     boundaryToModify: Boundary = null,
     className: String = null,
     contiguousCalendarMonths: js.UndefOr[Boolean] = js.undefined,
-    dayPickerProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any = null,
+    dayPickerProps: DayPickerProps = null,
     defaultValue: DateRange = null,
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: AnonFormatDate = null,
+    localeUtils: FormatDate = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,
@@ -121,7 +120,7 @@ object IDateRangePickerProps {
     onHoverChange: (/* hoveredDates */ DateRange, /* hoveredDay */ Date, /* hoveredBoundary */ Boundary) => Unit = null,
     onShortcutChange: (/* shortcut */ IDateRangeShortcut, /* index */ Double) => Unit = null,
     reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined,
-    selectedShortcutIndex: Int | Double = null,
+    selectedShortcutIndex: js.UndefOr[Double] = js.undefined,
     shortcuts: Boolean | js.Array[IDateRangeShortcut] = null,
     singleMonthOnly: js.UndefOr[Boolean] = js.undefined,
     timePickerProps: ITimePickerProps = null,
@@ -129,10 +128,10 @@ object IDateRangePickerProps {
     value: DateRange = null
   ): IDateRangePickerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSingleDayRange)) __obj.updateDynamic("allowSingleDayRange")(allowSingleDayRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSingleDayRange)) __obj.updateDynamic("allowSingleDayRange")(allowSingleDayRange.get.asInstanceOf[js.Any])
     if (boundaryToModify != null) __obj.updateDynamic("boundaryToModify")(boundaryToModify.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(contiguousCalendarMonths)) __obj.updateDynamic("contiguousCalendarMonths")(contiguousCalendarMonths.asInstanceOf[js.Any])
+    if (!js.isUndefined(contiguousCalendarMonths)) __obj.updateDynamic("contiguousCalendarMonths")(contiguousCalendarMonths.get.asInstanceOf[js.Any])
     if (dayPickerProps != null) __obj.updateDynamic("dayPickerProps")(dayPickerProps.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (initialMonth != null) __obj.updateDynamic("initialMonth")(initialMonth.asInstanceOf[js.Any])
@@ -144,10 +143,10 @@ object IDateRangePickerProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onHoverChange != null) __obj.updateDynamic("onHoverChange")(js.Any.fromFunction3(onHoverChange))
     if (onShortcutChange != null) __obj.updateDynamic("onShortcutChange")(js.Any.fromFunction2(onShortcutChange))
-    if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus.asInstanceOf[js.Any])
-    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedShortcutIndex)) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.get.asInstanceOf[js.Any])
     if (shortcuts != null) __obj.updateDynamic("shortcuts")(shortcuts.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleMonthOnly)) __obj.updateDynamic("singleMonthOnly")(singleMonthOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleMonthOnly)) __obj.updateDynamic("singleMonthOnly")(singleMonthOnly.get.asInstanceOf[js.Any])
     if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps.asInstanceOf[js.Any])
     if (timePrecision != null) __obj.updateDynamic("timePrecision")(timePrecision.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

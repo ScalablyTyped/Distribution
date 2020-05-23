@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a service's publish or resolution was stopped via <Titanium.Network.BonjourService.stop>
-		 */
+  * Fired when a service's publish or resolution was stopped via <Titanium.Network.BonjourService.stop>
+  */
 trait BonjourServiceStopEvent extends BonjourServiceBaseEvent {
   /**
-  			 * Error code
-  			 */
+    * Error code
+    */
   var code: Double
   /**
-  			 * Error message
-  			 */
+    * Error message
+    */
   var error: String
   /**
-  			 * Reports if the stop operation was successful
-  			 */
+    * Reports if the stop operation was successful
+    */
   var success: Boolean
 }
 

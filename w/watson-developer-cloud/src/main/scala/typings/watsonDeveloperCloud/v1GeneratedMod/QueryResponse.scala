@@ -26,8 +26,8 @@ object QueryResponse {
   @scala.inline
   def apply(
     aggregations: js.Array[QueryAggregation] = null,
-    duplicates_removed: Int | Double = null,
-    matching_results: Int | Double = null,
+    duplicates_removed: js.UndefOr[Double] = js.undefined,
+    matching_results: js.UndefOr[Double] = js.undefined,
     passages: js.Array[QueryPassages] = null,
     results: js.Array[QueryResult] = null,
     retrieval_details: RetrievalDetails = null,
@@ -35,8 +35,8 @@ object QueryResponse {
   ): QueryResponse = {
     val __obj = js.Dynamic.literal()
     if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations.asInstanceOf[js.Any])
-    if (duplicates_removed != null) __obj.updateDynamic("duplicates_removed")(duplicates_removed.asInstanceOf[js.Any])
-    if (matching_results != null) __obj.updateDynamic("matching_results")(matching_results.asInstanceOf[js.Any])
+    if (!js.isUndefined(duplicates_removed)) __obj.updateDynamic("duplicates_removed")(duplicates_removed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matching_results)) __obj.updateDynamic("matching_results")(matching_results.get.asInstanceOf[js.Any])
     if (passages != null) __obj.updateDynamic("passages")(passages.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (retrieval_details != null) __obj.updateDynamic("retrieval_details")(retrieval_details.asInstanceOf[js.Any])

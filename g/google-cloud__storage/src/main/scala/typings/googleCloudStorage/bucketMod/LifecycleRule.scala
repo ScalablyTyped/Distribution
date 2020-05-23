@@ -1,14 +1,14 @@
 package typings.googleCloudStorage.bucketMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleCloudStorage.AnonStorageClass
+import typings.googleCloudStorage.anon.StorageClass
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LifecycleRule extends js.Object {
-  var action: AnonStorageClass | String
+  var action: StorageClass | String
   var condition: StringDictionary[Boolean | Date | Double | String]
   var storageClass: js.UndefOr[String] = js.undefined
 }
@@ -16,7 +16,7 @@ trait LifecycleRule extends js.Object {
 object LifecycleRule {
   @scala.inline
   def apply(
-    action: AnonStorageClass | String,
+    action: StorageClass | String,
     condition: StringDictionary[Boolean | Date | Double | String],
     storageClass: String = null
   ): LifecycleRule = {

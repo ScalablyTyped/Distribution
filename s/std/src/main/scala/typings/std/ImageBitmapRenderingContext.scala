@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +18,4 @@ trait ImageBitmapRenderingContext
     */
   def transferFromImageBitmap(bitmap: ImageBitmap): Unit = js.native
 }
-
-@JSGlobal("ImageBitmapRenderingContext")
-@js.native
-object ImageBitmapRenderingContext extends Instantiable0[ImageBitmapRenderingContext]
 

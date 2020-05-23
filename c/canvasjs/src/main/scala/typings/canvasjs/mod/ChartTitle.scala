@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.AnonX1
+import typings.canvasjs.anon.X1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait ChartTitle extends ChartTitleOptions {
   /**
     * Can be accessed via get method or dot notation.
     */
-  val bounds: AnonX1 = js.native
+  val bounds: X1 = js.native
   /**
     * Returns the specified property of title.
     * @param propertyName Name of the property.

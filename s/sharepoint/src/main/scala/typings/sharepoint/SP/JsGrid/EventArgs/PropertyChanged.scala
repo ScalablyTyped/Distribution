@@ -9,24 +9,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.PropertyChanged")
-@js.native
-class PropertyChanged protected () extends IEventArgs {
-  def this(
-    recordKey: Double,
-    fieldKey: String,
-    oldProp: PropertyUpdate,
-    newProp: PropertyUpdate,
-    propType: IPropertyType,
+trait PropertyChanged extends IEventArgs {
+  var changeKey: IChangeKey
+  var fieldKey: String
+  var newProp: PropertyUpdate
+  var oldProp: PropertyUpdate
+  var propType: IPropertyType
+  var recordKey: Double
+  var validationState: ValidationState
+}
+
+object PropertyChanged {
+  @scala.inline
+  def apply(
     changeKey: IChangeKey,
+    fieldKey: String,
+    newProp: PropertyUpdate,
+    oldProp: PropertyUpdate,
+    propType: IPropertyType,
+    recordKey: Double,
     validationState: ValidationState
-  ) = this()
-  var changeKey: IChangeKey = js.native
-  var fieldKey: String = js.native
-  var newProp: PropertyUpdate = js.native
-  var oldProp: PropertyUpdate = js.native
-  var propType: IPropertyType = js.native
-  var recordKey: Double = js.native
-  var validationState: ValidationState = js.native
+  ): PropertyChanged = {
+    val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], newProp = newProp.asInstanceOf[js.Any], oldProp = oldProp.asInstanceOf[js.Any], propType = propType.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any], validationState = validationState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PropertyChanged]
+  }
 }
 

@@ -79,12 +79,12 @@ trait MDCTextFieldAdapter extends js.Object {
     * Returns true if the direction of the root element is set to RTL.
     */
   def isRtl(): Boolean = js.native
-  def notchOutline(labelWidth: Double): Unit = js.native
   /**
     * Only implement if outline element exists.
     * Updates SVG Path and outline element based on the
     * label element width and RTL context.
     */
+  def notchOutline(labelWidth: Double): Unit = js.native
   def notchOutline(labelWidth: Double, isRtl: Boolean): Unit = js.native
   /**
     * Registers an event listener on the native input element for a given event.

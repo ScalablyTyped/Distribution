@@ -4,27 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Octree")
 @js.native
-class Octree[T] protected () extends js.Object {
-  /**
-    * Creates a octree
-    * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
-    * @param creationFunc function to be used to instatiate the octree
-    * @param maxBlockCapacity defines the maximum number of meshes you want on your octree's leaves (default: 64)
-    * @param maxDepth defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.)
-    */
-  def this(creationFunc: js.Function2[/* entry */ T, /* block */ OctreeBlock[T], Unit]) = this()
-  def this(
-    creationFunc: js.Function2[/* entry */ T, /* block */ OctreeBlock[T], Unit],
-    maxBlockCapacity: Double
-  ) = this()
-  def this(
-    creationFunc: js.Function2[/* entry */ T, /* block */ OctreeBlock[T], Unit],
-    maxBlockCapacity: Double,
-    /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
-  maxDepth: Double
-  ) = this()
+trait Octree[T] extends js.Object {
   var _creationFunc: js.Any = js.native
   var _maxBlockCapacity: js.Any = js.native
   var _selectionContent: js.Any = js.native
@@ -78,19 +59,5 @@ class Octree[T] protected () extends js.Object {
     * @param entries meshes to be added to the octree blocks
     */
   def update(worldMin: Vector3, worldMax: Vector3, entries: js.Array[T]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.Octree")
-@js.native
-object Octree extends js.Object {
-  /**
-    * Adds a mesh into the octree block if it intersects the block
-    */
-  def CreationFuncForMeshes(entry: AbstractMesh, block: OctreeBlock[AbstractMesh]): Unit = js.native
-  /**
-    * Adds a submesh into the octree block if it intersects the block
-    */
-  def CreationFuncForSubMeshes(entry: SubMesh, block: OctreeBlock[SubMesh]): Unit = js.native
 }
 

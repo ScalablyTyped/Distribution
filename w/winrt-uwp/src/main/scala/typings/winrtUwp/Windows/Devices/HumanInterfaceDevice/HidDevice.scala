@@ -4,7 +4,6 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
-import typings.winrtUwp.Windows.Storage.FileAccessMode
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.inputreportreceived
 import scala.scalajs.js
@@ -12,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a top-level collection and the corresponding device. */
-@JSGlobal("Windows.Devices.HumanInterfaceDevice.HidDevice")
 @js.native
-abstract class HidDevice () extends js.Object {
+trait HidDevice extends js.Object {
   /** Establishes an event listener which handles input reports issued by the device. */
   @JSName("oninputreportreceived")
   var oninputreportreceived_Original: TypedEventHandler[HidDevice, HidInputReportReceivedEventArgs] = js.native
@@ -116,34 +114,5 @@ abstract class HidDevice () extends js.Object {
     * @return Specifies the count of bytes written to the device.
     */
   def sendOutputReportAsync(outputReport: HidOutputReport): IPromiseWithIAsyncOperation[Double] = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.HumanInterfaceDevice.HidDevice")
-@js.native
-object HidDevice extends js.Object {
-  /**
-    * Opens a handle to the device identified by the deviceId parameter. The acess type is specified by the accessMode parameter.
-    * @param deviceId The DeviceInformation ID that identifies the HID device.
-    * @param accessMode Specifies the access mode. The supported access modes are Read and ReadWrite.
-    * @return A HidDevice object.
-    */
-  def fromIdAsync(deviceId: String, accessMode: FileAccessMode): IPromiseWithIAsyncOperation[HidDevice] = js.native
-  /**
-    * Retrieves an Advanced Query Syntax (AQS) string based on the given usagePage and usageId.
-    * @param usagePage Specifies the usage page of the top-level collection for the given HID device.
-    * @param usageId Specifies the usage identifier of the top-level collection for the given HID device.
-    * @return An Advanced Query Syntax (AQS) string that represents a device selector.
-    */
-  def getDeviceSelector(usagePage: Double, usageId: Double): String = js.native
-  /**
-    * Retrieves an Advanced Query Syntax (AQS) string based on the given usagePage, usageId, vendorId, and productId.
-    * @param usagePage Specifies the usage page of the top-level collection for the given HID device.
-    * @param usageId Specifies the usage identifier of the top-level collection for the given HID device.
-    * @param vendorId Identifies the device vendor.
-    * @param productId Identifies the product.
-    * @return An Advanced Query Syntax (AQS) string that represents a device selector.
-    */
-  def getDeviceSelector(usagePage: Double, usageId: Double, vendorId: Double, productId: Double): String = js.native
 }
 

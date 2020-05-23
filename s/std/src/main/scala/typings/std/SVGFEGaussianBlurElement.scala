@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,8 +50,4 @@ trait SVGFEGaussianBlurElement
   ): Unit = js.native
   def setStdDeviation(stdDeviationX: Double, stdDeviationY: Double): Unit = js.native
 }
-
-@JSGlobal("SVGFEGaussianBlurElement")
-@js.native
-object SVGFEGaussianBlurElement extends Instantiable0[SVGFEGaussianBlurElement]
 

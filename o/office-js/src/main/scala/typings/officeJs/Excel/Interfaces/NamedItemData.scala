@@ -18,42 +18,42 @@ import scala.scalajs.js.annotation._
 trait NamedItemData extends js.Object {
   /**
     *
-    * Returns an object containing values and types of the named item. Read-only.
+    * Returns an object containing values and types of the named item.
     *
     * [Api set: ExcelApi 1.7]
     */
   var arrayValues: js.UndefOr[NamedItemArrayValuesData] = js.undefined
   /**
     *
-    * Represents the comment associated with this name.
+    * Specifies the comment associated with this name.
     *
     * [Api set: ExcelApi 1.4]
     */
   var comment: js.UndefOr[String] = js.undefined
   /**
     *
-    * Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+    * The formula of the named item. Formula always starts with a '=' sign.
     *
     * [Api set: ExcelApi 1.7]
     */
   var formula: js.UndefOr[js.Any] = js.undefined
   /**
     *
-    * The name of the object. Read-only.
+    * The name of the object.
     *
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only.
+    * Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook.
     *
     * [Api set: ExcelApi 1.4]
     */
   var scope: js.UndefOr[NamedItemScope | Worksheet | Workbook] = js.undefined
   /**
     *
-    * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+    * Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
     *
     * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
     */
@@ -62,14 +62,14 @@ trait NamedItemData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+    * Represents the value computed by the name's formula. For a named range, will return the range address.
     *
     * [Api set: ExcelApi 1.1]
     */
   var value: js.UndefOr[js.Any] = js.undefined
   /**
     *
-    * Specifies whether the object is visible or not.
+    * Specifies if the object is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -96,7 +96,7 @@ object NamedItemData {
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemData]
   }
 }

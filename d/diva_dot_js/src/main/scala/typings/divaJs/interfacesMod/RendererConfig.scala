@@ -17,10 +17,9 @@ object RendererConfig {
     padding: Offset,
     pageLayouts: js.Object,
     verticallyOriented: Boolean,
-    maxZoomLevel: Int | Double = null
+    maxZoomLevel: Double = null.asInstanceOf[Double]
   ): RendererConfig = {
-    val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], pageLayouts = pageLayouts.asInstanceOf[js.Any], verticallyOriented = verticallyOriented.asInstanceOf[js.Any])
-    if (maxZoomLevel != null) __obj.updateDynamic("maxZoomLevel")(maxZoomLevel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], pageLayouts = pageLayouts.asInstanceOf[js.Any], verticallyOriented = verticallyOriented.asInstanceOf[js.Any], maxZoomLevel = maxZoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererConfig]
   }
 }

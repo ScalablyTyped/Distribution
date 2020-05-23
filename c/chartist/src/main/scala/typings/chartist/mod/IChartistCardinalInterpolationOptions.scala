@@ -10,10 +10,10 @@ trait IChartistCardinalInterpolationOptions extends IChartistInterpolationOption
 
 object IChartistCardinalInterpolationOptions {
   @scala.inline
-  def apply(fillHoles: js.UndefOr[Boolean] = js.undefined, tension: Int | Double = null): IChartistCardinalInterpolationOptions = {
+  def apply(fillHoles: js.UndefOr[Boolean] = js.undefined, tension: js.UndefOr[Double] = js.undefined): IChartistCardinalInterpolationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fillHoles)) __obj.updateDynamic("fillHoles")(fillHoles.asInstanceOf[js.Any])
-    if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillHoles)) __obj.updateDynamic("fillHoles")(fillHoles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tension)) __obj.updateDynamic("tension")(tension.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChartistCardinalInterpolationOptions]
   }
 }

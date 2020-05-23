@@ -1,6 +1,6 @@
 package typings.cspHtmlWebpackPlugin.mod.htmlWebpackPluginAugmentingMod
 
-import typings.cspHtmlWebpackPlugin.AdditionalOptionspolicyPo
+import typings.cspHtmlWebpackPlugin.anon.AdditionalOptionspolicyPo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

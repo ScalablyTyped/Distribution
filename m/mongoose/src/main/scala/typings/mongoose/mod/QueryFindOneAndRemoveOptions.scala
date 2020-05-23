@@ -27,7 +27,7 @@ trait QueryFindOneAndRemoveOptions extends js.Object {
 object QueryFindOneAndRemoveOptions {
   @scala.inline
   def apply(
-    maxTimeMS: Int | Double = null,
+    maxTimeMS: js.UndefOr[Double] = js.undefined,
     projection: js.Any = null,
     rawResult: js.UndefOr[Boolean] = js.undefined,
     select: js.Any = null,
@@ -36,9 +36,9 @@ object QueryFindOneAndRemoveOptions {
     strict: Boolean | String = null
   ): QueryFindOneAndRemoveOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult.get.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

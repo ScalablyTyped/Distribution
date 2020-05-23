@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-hot-loader
 
-Typings are for version 4.12.20
+Typings are for version 4.12.21
 
 ## Library description:
 Tweak React components in real time.

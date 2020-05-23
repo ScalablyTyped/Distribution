@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the ImageGallery extension.
   */
-@JSGlobal("MVCxClientImageGallery")
 @js.native
-class MVCxClientImageGallery () extends ASPxClientImageGallery {
+trait MVCxClientImageGallery extends ASPxClientImageGallery {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -22,16 +21,5 @@ class MVCxClientImageGallery () extends ASPxClientImageGallery {
     */
   def PerformCallback(data: js.Any): Unit = js.native
   def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientImageGallery")
-@js.native
-object MVCxClientImageGallery extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientImageGallery type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientImageGallery = js.native
 }
 

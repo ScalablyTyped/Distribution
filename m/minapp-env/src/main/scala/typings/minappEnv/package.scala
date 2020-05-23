@@ -22,7 +22,7 @@ package object minappEnv {
     /* descriptor */ typings.minappEnv.TypedPropertyDescriptor[js.Any], 
     typings.minappEnv.TypedPropertyDescriptor[js.Any] | scala.Unit
   ]
-  type OQ[T /* <: typings.minappEnv.OptionalRecordcompletesuc */] = (typings.minappEnv.RQ[T] with (typings.minappEnv.Required[typings.minappEnv.Pick[T, typings.minappEnv.minappEnvStrings.success]])) | (typings.minappEnv.RQ[T] with (typings.minappEnv.Required[typings.minappEnv.Pick[T, typings.minappEnv.minappEnvStrings.fail]])) | (typings.minappEnv.RQ[T] with (typings.minappEnv.Required[typings.minappEnv.Pick[T, typings.minappEnv.minappEnvStrings.complete]])) | (typings.minappEnv.RQ[T] with (typings.minappEnv.Required[
+  type OQ[T /* <: typings.minappEnv.anon.OptionalRecordcompletesuc */] = (typings.minappEnv.RQ[T] with (typings.minappEnv.Required[typings.minappEnv.Pick[T, typings.minappEnv.minappEnvStrings.success]])) | (typings.minappEnv.RQ[T] with (typings.minappEnv.Required[typings.minappEnv.Pick[T, typings.minappEnv.minappEnvStrings.fail]])) | (typings.minappEnv.RQ[T] with (typings.minappEnv.Required[typings.minappEnv.Pick[T, typings.minappEnv.minappEnvStrings.complete]])) | (typings.minappEnv.RQ[T] with (typings.minappEnv.Required[
     typings.minappEnv.Pick[
       T, 
       typings.minappEnv.minappEnvStrings.success | typings.minappEnv.minappEnvStrings.fail
@@ -83,7 +83,7 @@ package object minappEnv {
   ]
   type PropertyDescriptorMap = org.scalablytyped.runtime.StringDictionary[typings.minappEnv.PropertyDescriptor]
   type PropertyKey = java.lang.String | scala.Double | js.Symbol
-  type RQ[T /* <: typings.minappEnv.OptionalRecordcompletesuc */] = typings.minappEnv.Pick[
+  type RQ[T /* <: typings.minappEnv.anon.OptionalRecordcompletesuc */] = typings.minappEnv.Pick[
     T, 
     typings.minappEnv.Exclude[
       /* keyof T */ java.lang.String, 

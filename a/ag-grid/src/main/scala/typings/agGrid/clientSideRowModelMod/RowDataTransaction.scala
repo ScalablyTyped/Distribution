@@ -15,13 +15,13 @@ object RowDataTransaction {
   @scala.inline
   def apply(
     add: js.Array[_] = null,
-    addIndex: Int | Double = null,
+    addIndex: js.UndefOr[Double] = js.undefined,
     remove: js.Array[_] = null,
     update: js.Array[_] = null
   ): RowDataTransaction = {
     val __obj = js.Dynamic.literal()
     if (add != null) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
-    if (addIndex != null) __obj.updateDynamic("addIndex")(addIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(addIndex)) __obj.updateDynamic("addIndex")(addIndex.get.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDataTransaction]

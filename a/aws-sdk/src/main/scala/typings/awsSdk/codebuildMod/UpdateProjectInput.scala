@@ -71,7 +71,7 @@ trait UpdateProjectInput extends js.Object {
     */
   var sourceVersion: js.UndefOr[String] = js.native
   /**
-    * The replacement set of tags for this build project. These tags are available for use by AWS services that support AWS CodeBuild build project tags.
+    * An updated list of tag key and value pairs associated with this build project. These tags are available for use by AWS services that support AWS CodeBuild build project tags.
     */
   var tags: js.UndefOr[TagList] = js.native
   /**
@@ -89,14 +89,14 @@ object UpdateProjectInput {
   def apply(
     name: NonEmptyString,
     artifacts: ProjectArtifacts = null,
-    badgeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    badgeEnabled: js.UndefOr[WrapperBoolean] = js.undefined,
     cache: ProjectCache = null,
     description: ProjectDescription = null,
     encryptionKey: NonEmptyString = null,
     environment: ProjectEnvironment = null,
     fileSystemLocations: ProjectFileSystemLocations = null,
     logsConfig: LogsConfig = null,
-    queuedTimeoutInMinutes: Int | Double = null,
+    queuedTimeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
     secondaryArtifacts: ProjectArtifactsList = null,
     secondarySourceVersions: ProjectSecondarySourceVersions = null,
     secondarySources: ProjectSources = null,
@@ -104,19 +104,19 @@ object UpdateProjectInput {
     source: ProjectSource = null,
     sourceVersion: String = null,
     tags: TagList = null,
-    timeoutInMinutes: Int | Double = null,
+    timeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
     vpcConfig: VpcConfig = null
   ): UpdateProjectInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts.asInstanceOf[js.Any])
-    if (!js.isUndefined(badgeEnabled)) __obj.updateDynamic("badgeEnabled")(badgeEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(badgeEnabled)) __obj.updateDynamic("badgeEnabled")(badgeEnabled.get.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (fileSystemLocations != null) __obj.updateDynamic("fileSystemLocations")(fileSystemLocations.asInstanceOf[js.Any])
     if (logsConfig != null) __obj.updateDynamic("logsConfig")(logsConfig.asInstanceOf[js.Any])
-    if (queuedTimeoutInMinutes != null) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(queuedTimeoutInMinutes)) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.get.asInstanceOf[js.Any])
     if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts.asInstanceOf[js.Any])
     if (secondarySourceVersions != null) __obj.updateDynamic("secondarySourceVersions")(secondarySourceVersions.asInstanceOf[js.Any])
     if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources.asInstanceOf[js.Any])
@@ -124,7 +124,7 @@ object UpdateProjectInput {
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timeoutInMinutes != null) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInMinutes)) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.get.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProjectInput]
   }

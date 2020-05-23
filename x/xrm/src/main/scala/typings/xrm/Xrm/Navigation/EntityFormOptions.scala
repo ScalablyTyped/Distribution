@@ -94,7 +94,7 @@ object EntityFormOptions {
     entityId: String = null,
     entityName: String = null,
     formId: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     isCrossEntityNavigate: js.UndefOr[Boolean] = js.undefined,
     isOfflineSyncError: js.UndefOr[Boolean] = js.undefined,
     navBar: NavBarDisplay = null,
@@ -104,26 +104,26 @@ object EntityFormOptions {
     relationship: Relationship = null,
     selectedStageId: String = null,
     useQuickCreateForm: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     windowPosition: WindowPositions = null
   ): EntityFormOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cmdbar)) __obj.updateDynamic("cmdbar")(cmdbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(cmdbar)) __obj.updateDynamic("cmdbar")(cmdbar.get.asInstanceOf[js.Any])
     if (createFromEntity != null) __obj.updateDynamic("createFromEntity")(createFromEntity.asInstanceOf[js.Any])
     if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
     if (entityName != null) __obj.updateDynamic("entityName")(entityName.asInstanceOf[js.Any])
     if (formId != null) __obj.updateDynamic("formId")(formId.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCrossEntityNavigate)) __obj.updateDynamic("isCrossEntityNavigate")(isCrossEntityNavigate.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOfflineSyncError)) __obj.updateDynamic("isOfflineSyncError")(isOfflineSyncError.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCrossEntityNavigate)) __obj.updateDynamic("isCrossEntityNavigate")(isCrossEntityNavigate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOfflineSyncError)) __obj.updateDynamic("isOfflineSyncError")(isOfflineSyncError.get.asInstanceOf[js.Any])
     if (navBar != null) __obj.updateDynamic("navBar")(navBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(openInNewWindow)) __obj.updateDynamic("openInNewWindow")(openInNewWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(openInNewWindow)) __obj.updateDynamic("openInNewWindow")(openInNewWindow.get.asInstanceOf[js.Any])
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
     if (processInstanceId != null) __obj.updateDynamic("processInstanceId")(processInstanceId.asInstanceOf[js.Any])
     if (relationship != null) __obj.updateDynamic("relationship")(relationship.asInstanceOf[js.Any])
     if (selectedStageId != null) __obj.updateDynamic("selectedStageId")(selectedStageId.asInstanceOf[js.Any])
-    if (!js.isUndefined(useQuickCreateForm)) __obj.updateDynamic("useQuickCreateForm")(useQuickCreateForm.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(useQuickCreateForm)) __obj.updateDynamic("useQuickCreateForm")(useQuickCreateForm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (windowPosition != null) __obj.updateDynamic("windowPosition")(windowPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityFormOptions]
   }

@@ -1,5 +1,9 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.BSphereRadiusFactor
+import typings.babylonjs.anon.Delta
+import typings.babylonjs.anon.FaceId
+import typings.babylonjs.anon.PositionFunction
 import typings.babylonjs.materialMod.Material
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.meshMod.Mesh
@@ -35,7 +39,7 @@ object solidParticleSystemMod extends js.Object {
       * @example bSphereRadiusFactor = 1.0 / Math.sqrt(3.0) => the bounding sphere exactly matches a spherical mesh.
       */
     def this(name: String, scene: Scene) = this()
-    def this(name: String, scene: Scene, options: AnonBSphereRadiusFactor) = this()
+    def this(name: String, scene: Scene, options: BSphereRadiusFactor) = this()
     /**
       * Adds a new particle object in the particles array
       * @param idx particle index in particles array
@@ -238,7 +242,7 @@ object solidParticleSystemMod extends js.Object {
       * `faceId` is the picked face index counted within this particle.
       * Please read : http://doc.babylonjs.com/how_to/Solid_Particle_System#pickable-particles
       */
-    var pickedParticles: js.Array[AnonFaceId] = js.native
+    var pickedParticles: js.Array[FaceId] = js.native
     /**
       * Recompute normals when adding a shape
       */
@@ -259,7 +263,7 @@ object solidParticleSystemMod extends js.Object {
       * @returns the number of shapes in the system
       */
     def addShape(mesh: Mesh, nb: Double): Double = js.native
-    def addShape(mesh: Mesh, nb: Double, options: AnonPositionFunction): Double = js.native
+    def addShape(mesh: Mesh, nb: Double, options: PositionFunction): Double = js.native
     /**
       * This will be called  by `setParticles()` after all the other treatments and just before the actual mesh update.
       * This will be passed three parameters.
@@ -375,7 +379,7 @@ object solidParticleSystemMod extends js.Object {
       * @returns the current SPS
       */
     def digest(mesh: Mesh): SolidParticleSystem = js.native
-    def digest(mesh: Mesh, options: AnonDelta): SolidParticleSystem = js.native
+    def digest(mesh: Mesh, options: Delta): SolidParticleSystem = js.native
     /**
       * Releases all held resources
       */

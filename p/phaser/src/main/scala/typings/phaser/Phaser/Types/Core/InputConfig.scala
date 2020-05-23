@@ -39,22 +39,22 @@ trait InputConfig extends js.Object {
 object InputConfig {
   @scala.inline
   def apply(
-    activePointers: Int | Double = null,
+    activePointers: js.UndefOr[integer] = js.undefined,
     gamepad: Boolean | GamepadInputConfig = null,
     keyboard: Boolean | KeyboardInputConfig = null,
     mouse: Boolean | MouseInputConfig = null,
-    smoothFactor: Int | Double = null,
+    smoothFactor: js.UndefOr[Double] = js.undefined,
     touch: Boolean | TouchInputConfig = null,
     windowEvents: js.UndefOr[Boolean] = js.undefined
   ): InputConfig = {
     val __obj = js.Dynamic.literal()
-    if (activePointers != null) __obj.updateDynamic("activePointers")(activePointers.asInstanceOf[js.Any])
+    if (!js.isUndefined(activePointers)) __obj.updateDynamic("activePointers")(activePointers.get.asInstanceOf[js.Any])
     if (gamepad != null) __obj.updateDynamic("gamepad")(gamepad.asInstanceOf[js.Any])
     if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     if (mouse != null) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
-    if (smoothFactor != null) __obj.updateDynamic("smoothFactor")(smoothFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothFactor)) __obj.updateDynamic("smoothFactor")(smoothFactor.get.asInstanceOf[js.Any])
     if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowEvents)) __obj.updateDynamic("windowEvents")(windowEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowEvents)) __obj.updateDynamic("windowEvents")(windowEvents.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputConfig]
   }
 }

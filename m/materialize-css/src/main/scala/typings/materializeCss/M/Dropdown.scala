@@ -1,66 +1,62 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.MElements
-import typings.materializeCss.PartialDropdownOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("M.Dropdown")
-@js.native
-class Dropdown () extends Component[DropdownOptions] {
+trait Dropdown extends Component[DropdownOptions] {
   /**
     * The DOM element of the dropdown
     */
-  var dropdownEl: Element = js.native
+  var dropdownEl: Element
   /**
     * The index of the item focused
     */
-  var focusedIndex: Double = js.native
+  var focusedIndex: Double
   /**
     * ID of the dropdown element
     */
-  var id: String = js.native
+  var id: String
   /**
     * If the dropdown is open
     */
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   /**
     * If the dropdown content is scrollable
     */
-  var isScrollable: Boolean = js.native
+  var isScrollable: Boolean
   /**
     * Close dropdown
     */
-  def close(): Unit = js.native
+  def close(): Unit
   /**
     * Open dropdown
     */
-  def open(): Unit = js.native
+  def open(): Unit
   /**
     * While dropdown is open, you can recalculate its dimensions if its contents have changed
     */
-  def recalculateDimensions(): Unit = js.native
+  def recalculateDimensions(): Unit
 }
 
-/* static members */
-@JSGlobal("M.Dropdown")
-@js.native
-object Dropdown extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Dropdown = js.native
-  /**
-    * Init Dropdowns
-    */
-  def init(els: MElements): js.Array[Dropdown] = js.native
-  def init(els: MElements, options: PartialDropdownOptions): js.Array[Dropdown] = js.native
-  /**
-    * Init Dropdown
-    */
-  def init(els: Element): Dropdown = js.native
-  def init(els: Element, options: PartialDropdownOptions): Dropdown = js.native
+object Dropdown {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    destroy: () => Unit,
+    dropdownEl: Element,
+    el: Element,
+    focusedIndex: Double,
+    id: String,
+    isOpen: Boolean,
+    isScrollable: Boolean,
+    open: () => Unit,
+    options: DropdownOptions,
+    recalculateDimensions: () => Unit
+  ): Dropdown = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), dropdownEl = dropdownEl.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], focusedIndex = focusedIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], isScrollable = isScrollable.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any], recalculateDimensions = js.Any.fromFunction0(recalculateDimensions))
+    __obj.asInstanceOf[Dropdown]
+  }
 }
 

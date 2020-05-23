@@ -135,10 +135,10 @@ trait SeriesTooltipOptionsObject extends js.Object {
 object SeriesTooltipOptionsObject {
   @scala.inline
   def apply(
-    changeDecimals: Int | Double = null,
+    changeDecimals: js.UndefOr[Double] = js.undefined,
     clusterFormat: js.Object = null,
     dateTimeLabelFormats: Dictionary[String] = null,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     followPointer: js.UndefOr[Boolean] = js.undefined,
     followTouchMove: js.UndefOr[Boolean] = js.undefined,
     footerFormat: String = null,
@@ -150,18 +150,18 @@ object SeriesTooltipOptionsObject {
     pointFormat: String = null,
     pointFormatter: FormatterCallbackFunction[Point] = null,
     stickOnContact: js.UndefOr[Boolean] = js.undefined,
-    valueDecimals: Int | Double = null,
+    valueDecimals: js.UndefOr[Double] = js.undefined,
     valuePrefix: String = null,
     valueSuffix: String = null,
     xDateFormat: String = null
   ): SeriesTooltipOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (changeDecimals != null) __obj.updateDynamic("changeDecimals")(changeDecimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(changeDecimals)) __obj.updateDynamic("changeDecimals")(changeDecimals.get.asInstanceOf[js.Any])
     if (clusterFormat != null) __obj.updateDynamic("clusterFormat")(clusterFormat.asInstanceOf[js.Any])
     if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer.asInstanceOf[js.Any])
-    if (!js.isUndefined(followTouchMove)) __obj.updateDynamic("followTouchMove")(followTouchMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(followTouchMove)) __obj.updateDynamic("followTouchMove")(followTouchMove.get.asInstanceOf[js.Any])
     if (footerFormat != null) __obj.updateDynamic("footerFormat")(footerFormat.asInstanceOf[js.Any])
     if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat.asInstanceOf[js.Any])
     if (nodeFormat != null) __obj.updateDynamic("nodeFormat")(nodeFormat.asInstanceOf[js.Any])
@@ -170,8 +170,8 @@ object SeriesTooltipOptionsObject {
     if (nullFormatter != null) __obj.updateDynamic("nullFormatter")(nullFormatter.asInstanceOf[js.Any])
     if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat.asInstanceOf[js.Any])
     if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickOnContact)) __obj.updateDynamic("stickOnContact")(stickOnContact.asInstanceOf[js.Any])
-    if (valueDecimals != null) __obj.updateDynamic("valueDecimals")(valueDecimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickOnContact)) __obj.updateDynamic("stickOnContact")(stickOnContact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueDecimals)) __obj.updateDynamic("valueDecimals")(valueDecimals.get.asInstanceOf[js.Any])
     if (valuePrefix != null) __obj.updateDynamic("valuePrefix")(valuePrefix.asInstanceOf[js.Any])
     if (valueSuffix != null) __obj.updateDynamic("valueSuffix")(valueSuffix.asInstanceOf[js.Any])
     if (xDateFormat != null) __obj.updateDynamic("xDateFormat")(xDateFormat.asInstanceOf[js.Any])

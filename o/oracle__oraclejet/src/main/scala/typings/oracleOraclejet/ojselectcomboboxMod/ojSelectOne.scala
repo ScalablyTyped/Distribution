@@ -1,11 +1,10 @@
 package typings.oracleOraclejet.ojselectcomboboxMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonChildrenLabel
-import typings.oracleOraclejet.AnonClass
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonLabelValue
-import typings.oracleOraclejet.AnonMoreMatchesFound
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.ChildrenLabel
+import typings.oracleOraclejet.anon.Class
+import typings.oracleOraclejet.anon.LabelValue
+import typings.oracleOraclejet.anon.MoreMatchesFound
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.OptionContext
@@ -63,26 +62,26 @@ trait ojSelectOne[K, D]
     ], 
     _
   ]) | Null = js.native
-  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonChildrenLabel], _]) | Null = js.native
-  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonClass], _]) | Null = js.native
+  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[ChildrenLabel], _]) | Null = js.native
+  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[Class], _]) | Null = js.native
   var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
   var onReadOnlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
   var onRenderModeChanged: (js.Function1[/* event */ JetElementCustomEvent[jet | native], _]) | Null = js.native
   var onRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
-  var onValueOptionChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonLabelValue], _]) | Null = js.native
+  var onValueOptionChanged: (js.Function1[/* event */ JetElementCustomEvent[LabelValue], _]) | Null = js.native
   var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null] = js.native
   var options: (js.Array[
     typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
-  var optionsKeys: AnonChildrenLabel = js.native
-  var pickerAttributes: AnonClass = js.native
+  var optionsKeys: ChildrenLabel = js.native
+  var pickerAttributes: Class = js.native
   var placeholder: String | Null = js.native
   var readOnly: Boolean = js.native
   var renderMode: jet | native = js.native
   var required: Boolean = js.native
   @JSName("translations")
-  var translations_ojSelectOne: AnonMoreMatchesFound = js.native
-  var valueOption: AnonLabelValue = js.native
+  var translations_ojSelectOne: MoreMatchesFound = js.native
+  var valueOption: LabelValue = js.native
   def addEventListener(
     `type`: renderModeChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[jet | native], _]
@@ -173,23 +172,23 @@ trait ojSelectOne[K, D]
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildrenLabel], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChildrenLabel], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildrenLabel], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ChildrenLabel], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonClass], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonClass], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -228,12 +227,12 @@ trait ojSelectOne[K, D]
   @JSName("addEventListener")
   def addEventListener_valueOptionChanged(
     `type`: valueOptionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonLabelValue], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[LabelValue], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_valueOptionChanged(
     `type`: valueOptionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonLabelValue], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[LabelValue], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("getProperty")
@@ -245,9 +244,9 @@ trait ojSelectOne[K, D]
     typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
   @JSName("getProperty")
-  def getProperty_optionsKeys(property: optionsKeys): AnonChildrenLabel = js.native
+  def getProperty_optionsKeys(property: optionsKeys): ChildrenLabel = js.native
   @JSName("getProperty")
-  def getProperty_pickerAttributes(property: pickerAttributes): AnonClass = js.native
+  def getProperty_pickerAttributes(property: pickerAttributes): Class = js.native
   @JSName("getProperty")
   def getProperty_placeholder(property: placeholder): String | Null = js.native
   @JSName("getProperty")
@@ -257,7 +256,7 @@ trait ojSelectOne[K, D]
   @JSName("getProperty")
   def getProperty_required(property: required): Boolean = js.native
   @JSName("getProperty")
-  def getProperty_valueOption(property: valueOption): AnonLabelValue = js.native
+  def getProperty_valueOption(property: valueOption): LabelValue = js.native
   def setProperties(properties: ojSelectOneSettablePropertiesLenient[K, D]): Unit = js.native
   def setProperty(property: renderMode, value: jet): Unit = js.native
   def setProperty(property: renderMode, value: native): Unit = js.native
@@ -279,9 +278,9 @@ trait ojSelectOne[K, D]
   @JSName("setProperty")
   def setProperty_options(property: options, value: DataProvider[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_optionsKeys(property: optionsKeys, value: AnonChildrenLabel): Unit = js.native
+  def setProperty_optionsKeys(property: optionsKeys, value: ChildrenLabel): Unit = js.native
   @JSName("setProperty")
-  def setProperty_pickerAttributes(property: pickerAttributes, value: AnonClass): Unit = js.native
+  def setProperty_pickerAttributes(property: pickerAttributes, value: Class): Unit = js.native
   @JSName("setProperty")
   def setProperty_placeholder(property: placeholder): Unit = js.native
   @JSName("setProperty")
@@ -291,15 +290,15 @@ trait ojSelectOne[K, D]
   @JSName("setProperty")
   def setProperty_required(property: required, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonMoreMatchesFound): Unit = js.native
+  def setProperty_translations(property: translations, value: MoreMatchesFound): Unit = js.native
   @JSName("setProperty")
-  def setProperty_valueOption(property: valueOption, value: AnonLabelValue): Unit = js.native
+  def setProperty_valueOption(property: valueOption, value: LabelValue): Unit = js.native
 }
 
 @JSImport("@oracle/oraclejet/ojselectcombobox", "ojSelectOne")
 @js.native
 object ojSelectOne extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[typings.oracleOraclejet.anon.Element]
 }
 

@@ -32,7 +32,7 @@ object ReportCrossDimensionReachCriteria {
     if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters.asInstanceOf[js.Any])
     if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames.asInstanceOf[js.Any])
     if (overlapMetricNames != null) __obj.updateDynamic("overlapMetricNames")(overlapMetricNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(pivoted)) __obj.updateDynamic("pivoted")(pivoted.asInstanceOf[js.Any])
+    if (!js.isUndefined(pivoted)) __obj.updateDynamic("pivoted")(pivoted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportCrossDimensionReachCriteria]
   }
 }

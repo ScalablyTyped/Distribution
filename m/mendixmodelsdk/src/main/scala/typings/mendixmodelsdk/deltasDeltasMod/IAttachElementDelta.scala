@@ -32,10 +32,10 @@ object IAttachElementDelta {
     newParentId: String,
     newParentPropertyName: String,
     unitId: String,
-    newIndex: Int | Double = null
+    newIndex: js.UndefOr[Double] = js.undefined
   ): IAttachElementDelta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], newParentId = newParentId.asInstanceOf[js.Any], newParentPropertyName = newParentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(newIndex)) __obj.updateDynamic("newIndex")(newIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttachElementDelta]
   }
 }

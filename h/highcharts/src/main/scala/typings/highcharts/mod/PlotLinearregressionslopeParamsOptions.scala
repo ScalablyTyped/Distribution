@@ -40,11 +40,15 @@ trait PlotLinearregressionslopeParamsOptions extends js.Object {
 
 object PlotLinearregressionslopeParamsOptions {
   @scala.inline
-  def apply(index: Int | Double = null, period: Int | Double = null, xAxisUnit: Int | Double = null): PlotLinearregressionslopeParamsOptions = {
+  def apply(
+    index: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    xAxisUnit: js.UndefOr[Double] = js.undefined
+  ): PlotLinearregressionslopeParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (xAxisUnit != null) __obj.updateDynamic("xAxisUnit")(xAxisUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxisUnit)) __obj.updateDynamic("xAxisUnit")(xAxisUnit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotLinearregressionslopeParamsOptions]
   }
 }

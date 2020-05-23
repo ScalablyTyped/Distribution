@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,8 +29,4 @@ trait InitialViewProperties
     */
   var viewpoint: Viewpoint = js.native
 }
-
-@JSGlobal("__esri.InitialViewProperties")
-@js.native
-object InitialViewProperties extends TopLevel[InitialViewPropertiesConstructor]
 

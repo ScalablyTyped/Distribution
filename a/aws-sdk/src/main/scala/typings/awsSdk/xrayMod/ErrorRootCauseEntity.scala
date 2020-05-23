@@ -25,12 +25,12 @@ object ErrorRootCauseEntity {
   def apply(
     Exceptions: RootCauseExceptions = null,
     Name: String = null,
-    Remote: js.UndefOr[scala.Boolean] = js.undefined
+    Remote: js.UndefOr[NullableBoolean] = js.undefined
   ): ErrorRootCauseEntity = {
     val __obj = js.Dynamic.literal()
     if (Exceptions != null) __obj.updateDynamic("Exceptions")(Exceptions.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(Remote)) __obj.updateDynamic("Remote")(Remote.asInstanceOf[js.Any])
+    if (!js.isUndefined(Remote)) __obj.updateDynamic("Remote")(Remote.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorRootCauseEntity]
   }
 }

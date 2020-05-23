@@ -13,9 +13,9 @@ trait IAnyList extends js.Object {
 
 object IAnyList {
   @scala.inline
-  def apply(value: js.Array[IAny] = null): IAnyList = {
+  def apply(value: js.UndefOr[Null | js.Array[IAny]] = js.undefined): IAnyList = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnyList]
   }
 }

@@ -1,6 +1,6 @@
 package typings.antdMobileRn.drawerIndexNativeMod
 
-import typings.antdMobileRn.AnonDrawerWidth
+import typings.antdMobileRn.anon.DrawerWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Drawer
 @JSImport("antd-mobile-rn/lib/drawer/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonDrawerWidth = js.native
+  var defaultProps: DrawerWidth = js.native
 }
 

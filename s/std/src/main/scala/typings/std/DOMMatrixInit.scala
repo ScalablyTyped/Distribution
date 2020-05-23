@@ -21,54 +21,54 @@ trait DOMMatrixInit extends DOMMatrix2DInit {
 object DOMMatrixInit {
   @scala.inline
   def apply(
-    a: Int | Double = null,
-    b: Int | Double = null,
-    c: Int | Double = null,
-    d: Int | Double = null,
-    e: Int | Double = null,
-    f: Int | Double = null,
+    a: js.UndefOr[Double] = js.undefined,
+    b: js.UndefOr[Double] = js.undefined,
+    c: js.UndefOr[Double] = js.undefined,
+    d: js.UndefOr[Double] = js.undefined,
+    e: js.UndefOr[Double] = js.undefined,
+    f: js.UndefOr[Double] = js.undefined,
     is2D: js.UndefOr[scala.Boolean] = js.undefined,
-    m11: Int | Double = null,
-    m12: Int | Double = null,
-    m13: Int | Double = null,
-    m14: Int | Double = null,
-    m21: Int | Double = null,
-    m22: Int | Double = null,
-    m23: Int | Double = null,
-    m24: Int | Double = null,
-    m31: Int | Double = null,
-    m32: Int | Double = null,
-    m33: Int | Double = null,
-    m34: Int | Double = null,
-    m41: Int | Double = null,
-    m42: Int | Double = null,
-    m43: Int | Double = null,
-    m44: Int | Double = null
+    m11: js.UndefOr[Double] = js.undefined,
+    m12: js.UndefOr[Double] = js.undefined,
+    m13: js.UndefOr[Double] = js.undefined,
+    m14: js.UndefOr[Double] = js.undefined,
+    m21: js.UndefOr[Double] = js.undefined,
+    m22: js.UndefOr[Double] = js.undefined,
+    m23: js.UndefOr[Double] = js.undefined,
+    m24: js.UndefOr[Double] = js.undefined,
+    m31: js.UndefOr[Double] = js.undefined,
+    m32: js.UndefOr[Double] = js.undefined,
+    m33: js.UndefOr[Double] = js.undefined,
+    m34: js.UndefOr[Double] = js.undefined,
+    m41: js.UndefOr[Double] = js.undefined,
+    m42: js.UndefOr[Double] = js.undefined,
+    m43: js.UndefOr[Double] = js.undefined,
+    m44: js.UndefOr[Double] = js.undefined
   ): DOMMatrixInit = {
     val __obj = js.Dynamic.literal()
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
-    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
-    if (!js.isUndefined(is2D)) __obj.updateDynamic("is2D")(is2D.asInstanceOf[js.Any])
-    if (m11 != null) __obj.updateDynamic("m11")(m11.asInstanceOf[js.Any])
-    if (m12 != null) __obj.updateDynamic("m12")(m12.asInstanceOf[js.Any])
-    if (m13 != null) __obj.updateDynamic("m13")(m13.asInstanceOf[js.Any])
-    if (m14 != null) __obj.updateDynamic("m14")(m14.asInstanceOf[js.Any])
-    if (m21 != null) __obj.updateDynamic("m21")(m21.asInstanceOf[js.Any])
-    if (m22 != null) __obj.updateDynamic("m22")(m22.asInstanceOf[js.Any])
-    if (m23 != null) __obj.updateDynamic("m23")(m23.asInstanceOf[js.Any])
-    if (m24 != null) __obj.updateDynamic("m24")(m24.asInstanceOf[js.Any])
-    if (m31 != null) __obj.updateDynamic("m31")(m31.asInstanceOf[js.Any])
-    if (m32 != null) __obj.updateDynamic("m32")(m32.asInstanceOf[js.Any])
-    if (m33 != null) __obj.updateDynamic("m33")(m33.asInstanceOf[js.Any])
-    if (m34 != null) __obj.updateDynamic("m34")(m34.asInstanceOf[js.Any])
-    if (m41 != null) __obj.updateDynamic("m41")(m41.asInstanceOf[js.Any])
-    if (m42 != null) __obj.updateDynamic("m42")(m42.asInstanceOf[js.Any])
-    if (m43 != null) __obj.updateDynamic("m43")(m43.asInstanceOf[js.Any])
-    if (m44 != null) __obj.updateDynamic("m44")(m44.asInstanceOf[js.Any])
+    if (!js.isUndefined(a)) __obj.updateDynamic("a")(a.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(b)) __obj.updateDynamic("b")(b.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(c)) __obj.updateDynamic("c")(c.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(d)) __obj.updateDynamic("d")(d.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(e)) __obj.updateDynamic("e")(e.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(f)) __obj.updateDynamic("f")(f.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is2D)) __obj.updateDynamic("is2D")(is2D.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m11)) __obj.updateDynamic("m11")(m11.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m12)) __obj.updateDynamic("m12")(m12.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m13)) __obj.updateDynamic("m13")(m13.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m14)) __obj.updateDynamic("m14")(m14.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m21)) __obj.updateDynamic("m21")(m21.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m22)) __obj.updateDynamic("m22")(m22.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m23)) __obj.updateDynamic("m23")(m23.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m24)) __obj.updateDynamic("m24")(m24.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m31)) __obj.updateDynamic("m31")(m31.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m32)) __obj.updateDynamic("m32")(m32.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m33)) __obj.updateDynamic("m33")(m33.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m34)) __obj.updateDynamic("m34")(m34.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m41)) __obj.updateDynamic("m41")(m41.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m42)) __obj.updateDynamic("m42")(m42.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m43)) __obj.updateDynamic("m43")(m43.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(m44)) __obj.updateDynamic("m44")(m44.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMMatrixInit]
   }
 }

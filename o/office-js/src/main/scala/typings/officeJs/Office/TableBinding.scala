@@ -1,6 +1,6 @@
 package typings.officeJs.Office
 
-import typings.officeJs.AnonCells
+import typings.officeJs.anon.Cells
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -212,14 +212,14 @@ trait TableBinding extends Binding {
   def getFormatsAsync(
     cellReference: js.Any,
     formats: js.Array[_],
-    callback: js.Function1[/* result */ AsyncResult[js.Array[AnonCells]], Unit]
+    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
   def getFormatsAsync(cellReference: js.Any, formats: js.Array[_], options: AsyncContextOptions): Unit = js.native
   def getFormatsAsync(
     cellReference: js.Any,
     formats: js.Array[_],
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[js.Array[AnonCells]], Unit]
+    callback: js.Function1[/* result */ AsyncResult[js.Array[Cells]], Unit]
   ): Unit = js.native
   /**
     * Sets formatting on specified items and data in the table.

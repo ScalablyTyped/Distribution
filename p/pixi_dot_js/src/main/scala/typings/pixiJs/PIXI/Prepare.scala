@@ -35,9 +35,6 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.BasePrepare
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Prepare")
 @js.native
-class Prepare protected () extends BasePrepare {
-  def this(renderer: Renderer) = this()
-}
+trait Prepare extends BasePrepare
 

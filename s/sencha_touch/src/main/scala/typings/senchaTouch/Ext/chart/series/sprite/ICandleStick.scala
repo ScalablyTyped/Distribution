@@ -20,7 +20,7 @@ trait ICandleStick extends IAggregative {
 object ICandleStick {
   @scala.inline
   def apply(
-    A: Int | Double = null,
+    A: js.UndefOr[Double] = js.undefined,
     An: Array = null,
     Data: Array = null,
     If: js.UndefOr[Boolean] = js.undefined,
@@ -32,7 +32,7 @@ object ICandleStick {
     alias: Array = null,
     alternateClassName: js.Any = null,
     attr: js.Any = null,
-    barWidth: Int | Double = null,
+    barWidth: js.UndefOr[Double] = js.undefined,
     binarySearch: /* key */ js.UndefOr[String] => _ = null,
     bindMarker: (js.UndefOr[String], js.UndefOr[IMarkers]) => Unit = null,
     bubbleEvents: js.Any = null,
@@ -44,10 +44,10 @@ object ICandleStick {
     dataClose: js.Any = null,
     dataHigh: js.Any = null,
     dataLow: js.Any = null,
-    dataMaxX: Int | Double = null,
-    dataMaxY: Int | Double = null,
-    dataMinX: Int | Double = null,
-    dataMinY: Int | Double = null,
+    dataMaxX: js.UndefOr[Double] = js.undefined,
+    dataMaxY: js.UndefOr[Double] = js.undefined,
+    dataMinX: js.UndefOr[Double] = js.undefined,
+    dataMinY: js.UndefOr[Double] = js.undefined,
     dataOpen: js.Any = null,
     dataX: js.Any = null,
     dataY: js.Any = null,
@@ -55,7 +55,7 @@ object ICandleStick {
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     extend: String = null,
     field: String = null,
-    fillOpacity: Int | Double = null,
+    fillOpacity: js.UndefOr[Double] = js.undefined,
     fillStyle: String = null,
     fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
     fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
@@ -69,19 +69,19 @@ object ICandleStick {
     getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     getListeners: () => _ = null,
     getParent: () => _ = null,
-    globalAlpha: Int | Double = null,
+    globalAlpha: js.UndefOr[Double] = js.undefined,
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hide: () => ICandleStick = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    labelOverflowPadding: Int | Double = null,
+    labelOverflowPadding: js.UndefOr[Double] = js.undefined,
     labels: js.Any = null,
     lineCap: String = null,
     lineJoin: String = null,
-    lineWidth: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
     listeners: js.Any = null,
-    miterLimit: Int | Double = null,
+    miterLimit: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
@@ -89,7 +89,7 @@ object ICandleStick {
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     platformConfig: js.Any = null,
     preRender: () => Unit = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
@@ -100,14 +100,14 @@ object ICandleStick {
     render: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => _ = null,
     renderClipped: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clip */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => Unit = null,
     resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    rotationCenterX: Int | Double = null,
-    rotationCenterY: Int | Double = null,
-    rotationRads: Int | Double = null,
-    scalingCenterX: Int | Double = null,
-    scalingCenterY: Int | Double = null,
-    scalingX: Int | Double = null,
-    scalingY: Int | Double = null,
-    selectionTolerance: Int | Double = null,
+    rotationCenterX: js.UndefOr[Double] = js.undefined,
+    rotationCenterY: js.UndefOr[Double] = js.undefined,
+    rotationRads: js.UndefOr[Double] = js.undefined,
+    scalingCenterX: js.UndefOr[Double] = js.undefined,
+    scalingCenterY: js.UndefOr[Double] = js.undefined,
+    scalingX: js.UndefOr[Double] = js.undefined,
+    scalingY: js.UndefOr[Double] = js.undefined,
+    selectionTolerance: js.UndefOr[Double] = js.undefined,
     self: IClass = null,
     setAggregator: /* aggregator */ js.UndefOr[js.Any] => Unit = null,
     setAttributes: (/* changes */ js.UndefOr[js.Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => Unit = null,
@@ -116,19 +116,19 @@ object ICandleStick {
     setField: /* field */ js.UndefOr[String] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setParent: /* parent */ js.UndefOr[js.Any] => Unit = null,
-    shadowBlur: Int | Double = null,
+    shadowBlur: js.UndefOr[Double] = js.undefined,
     shadowColor: String = null,
-    shadowOffsetX: Int | Double = null,
-    shadowOffsetY: Int | Double = null,
+    shadowOffsetX: js.UndefOr[Double] = js.undefined,
+    shadowOffsetY: js.UndefOr[Double] = js.undefined,
     show: () => ICandleStick = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    strokeOpacity: Int | Double = null,
+    strokeOpacity: js.UndefOr[Double] = js.undefined,
     strokeStyle: String = null,
     suspendEvents: () => Unit = null,
     transformFillStroke: js.UndefOr[Boolean] = js.undefined,
-    translationX: Int | Double = null,
-    translationY: Int | Double = null,
+    translationX: js.UndefOr[Double] = js.undefined,
+    translationY: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -136,13 +136,13 @@ object ICandleStick {
     updateTransformedBBox: (/* transform */ js.UndefOr[js.Any], /* plain */ js.UndefOr[js.Any]) => Unit = null,
     useAttributes: (/* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array]) => Unit = null,
     uses: Array = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): ICandleStick = {
     val __obj = js.Dynamic.literal()
-    if (A != null) __obj.updateDynamic("A")(A.asInstanceOf[js.Any])
+    if (!js.isUndefined(A)) __obj.updateDynamic("A")(A.get.asInstanceOf[js.Any])
     if (An != null) __obj.updateDynamic("An")(An.asInstanceOf[js.Any])
     if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
-    if (!js.isUndefined(If)) __obj.updateDynamic("If")(If.asInstanceOf[js.Any])
+    if (!js.isUndefined(If)) __obj.updateDynamic("If")(If.get.asInstanceOf[js.Any])
     if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
     if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
     if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
@@ -151,7 +151,7 @@ object ICandleStick {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(barWidth)) __obj.updateDynamic("barWidth")(barWidth.get.asInstanceOf[js.Any])
     if (binarySearch != null) __obj.updateDynamic("binarySearch")(js.Any.fromFunction1(binarySearch))
     if (bindMarker != null) __obj.updateDynamic("bindMarker")(js.Any.fromFunction2(bindMarker))
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
@@ -163,10 +163,10 @@ object ICandleStick {
     if (dataClose != null) __obj.updateDynamic("dataClose")(dataClose.asInstanceOf[js.Any])
     if (dataHigh != null) __obj.updateDynamic("dataHigh")(dataHigh.asInstanceOf[js.Any])
     if (dataLow != null) __obj.updateDynamic("dataLow")(dataLow.asInstanceOf[js.Any])
-    if (dataMaxX != null) __obj.updateDynamic("dataMaxX")(dataMaxX.asInstanceOf[js.Any])
-    if (dataMaxY != null) __obj.updateDynamic("dataMaxY")(dataMaxY.asInstanceOf[js.Any])
-    if (dataMinX != null) __obj.updateDynamic("dataMinX")(dataMinX.asInstanceOf[js.Any])
-    if (dataMinY != null) __obj.updateDynamic("dataMinY")(dataMinY.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataMaxX)) __obj.updateDynamic("dataMaxX")(dataMaxX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataMaxY)) __obj.updateDynamic("dataMaxY")(dataMaxY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataMinX)) __obj.updateDynamic("dataMinX")(dataMinX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataMinY)) __obj.updateDynamic("dataMinY")(dataMinY.get.asInstanceOf[js.Any])
     if (dataOpen != null) __obj.updateDynamic("dataOpen")(dataOpen.asInstanceOf[js.Any])
     if (dataX != null) __obj.updateDynamic("dataX")(dataX.asInstanceOf[js.Any])
     if (dataY != null) __obj.updateDynamic("dataY")(dataY.asInstanceOf[js.Any])
@@ -174,7 +174,7 @@ object ICandleStick {
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
     if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
@@ -188,19 +188,19 @@ object ICandleStick {
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
     if (getParent != null) __obj.updateDynamic("getParent")(js.Any.fromFunction0(getParent))
-    if (globalAlpha != null) __obj.updateDynamic("globalAlpha")(globalAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalAlpha)) __obj.updateDynamic("globalAlpha")(globalAlpha.get.asInstanceOf[js.Any])
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (labelOverflowPadding != null) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelOverflowPadding)) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
     if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(miterLimit)) __obj.updateDynamic("miterLimit")(miterLimit.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
@@ -208,7 +208,7 @@ object ICandleStick {
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (preRender != null) __obj.updateDynamic("preRender")(js.Any.fromFunction0(preRender))
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
@@ -219,14 +219,14 @@ object ICandleStick {
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
     if (renderClipped != null) __obj.updateDynamic("renderClipped")(js.Any.fromFunction4(renderClipped))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (rotationCenterX != null) __obj.updateDynamic("rotationCenterX")(rotationCenterX.asInstanceOf[js.Any])
-    if (rotationCenterY != null) __obj.updateDynamic("rotationCenterY")(rotationCenterY.asInstanceOf[js.Any])
-    if (rotationRads != null) __obj.updateDynamic("rotationRads")(rotationRads.asInstanceOf[js.Any])
-    if (scalingCenterX != null) __obj.updateDynamic("scalingCenterX")(scalingCenterX.asInstanceOf[js.Any])
-    if (scalingCenterY != null) __obj.updateDynamic("scalingCenterY")(scalingCenterY.asInstanceOf[js.Any])
-    if (scalingX != null) __obj.updateDynamic("scalingX")(scalingX.asInstanceOf[js.Any])
-    if (scalingY != null) __obj.updateDynamic("scalingY")(scalingY.asInstanceOf[js.Any])
-    if (selectionTolerance != null) __obj.updateDynamic("selectionTolerance")(selectionTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationCenterX)) __obj.updateDynamic("rotationCenterX")(rotationCenterX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationCenterY)) __obj.updateDynamic("rotationCenterY")(rotationCenterY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationRads)) __obj.updateDynamic("rotationRads")(rotationRads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scalingCenterX)) __obj.updateDynamic("scalingCenterX")(scalingCenterX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scalingCenterY)) __obj.updateDynamic("scalingCenterY")(scalingCenterY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scalingX)) __obj.updateDynamic("scalingX")(scalingX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scalingY)) __obj.updateDynamic("scalingY")(scalingY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionTolerance)) __obj.updateDynamic("selectionTolerance")(selectionTolerance.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAggregator != null) __obj.updateDynamic("setAggregator")(js.Any.fromFunction1(setAggregator))
     if (setAttributes != null) __obj.updateDynamic("setAttributes")(js.Any.fromFunction3(setAttributes))
@@ -235,19 +235,19 @@ object ICandleStick {
     if (setField != null) __obj.updateDynamic("setField")(js.Any.fromFunction1(setField))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setParent != null) __obj.updateDynamic("setParent")(js.Any.fromFunction1(setParent))
-    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowBlur)) __obj.updateDynamic("shadowBlur")(shadowBlur.get.asInstanceOf[js.Any])
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
-    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowOffsetX)) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowOffsetY)) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.get.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeOpacity)) __obj.updateDynamic("strokeOpacity")(strokeOpacity.get.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (!js.isUndefined(transformFillStroke)) __obj.updateDynamic("transformFillStroke")(transformFillStroke.asInstanceOf[js.Any])
-    if (translationX != null) __obj.updateDynamic("translationX")(translationX.asInstanceOf[js.Any])
-    if (translationY != null) __obj.updateDynamic("translationY")(translationY.asInstanceOf[js.Any])
+    if (!js.isUndefined(transformFillStroke)) __obj.updateDynamic("transformFillStroke")(transformFillStroke.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(translationX)) __obj.updateDynamic("translationX")(translationX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(translationY)) __obj.updateDynamic("translationY")(translationY.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
@@ -255,7 +255,7 @@ object ICandleStick {
     if (updateTransformedBBox != null) __obj.updateDynamic("updateTransformedBBox")(js.Any.fromFunction2(updateTransformedBBox))
     if (useAttributes != null) __obj.updateDynamic("useAttributes")(js.Any.fromFunction2(useAttributes))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICandleStick]
   }
 }

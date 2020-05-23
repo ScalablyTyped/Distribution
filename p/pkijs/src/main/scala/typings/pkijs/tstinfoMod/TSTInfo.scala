@@ -45,7 +45,7 @@ object TSTInfo {
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordering)) __obj.updateDynamic("ordering")(ordering.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordering)) __obj.updateDynamic("ordering")(ordering.get.asInstanceOf[js.Any])
     if (tsa != null) __obj.updateDynamic("tsa")(tsa.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSTInfo]
   }

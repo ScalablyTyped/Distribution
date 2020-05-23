@@ -18,10 +18,13 @@ trait RateIncreaseCriteria extends js.Object {
 
 object RateIncreaseCriteria {
   @scala.inline
-  def apply(numberOfNotifiedThings: Int | Double = null, numberOfSucceededThings: Int | Double = null): RateIncreaseCriteria = {
+  def apply(
+    numberOfNotifiedThings: js.UndefOr[NumberOfThings] = js.undefined,
+    numberOfSucceededThings: js.UndefOr[NumberOfThings] = js.undefined
+  ): RateIncreaseCriteria = {
     val __obj = js.Dynamic.literal()
-    if (numberOfNotifiedThings != null) __obj.updateDynamic("numberOfNotifiedThings")(numberOfNotifiedThings.asInstanceOf[js.Any])
-    if (numberOfSucceededThings != null) __obj.updateDynamic("numberOfSucceededThings")(numberOfSucceededThings.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfNotifiedThings)) __obj.updateDynamic("numberOfNotifiedThings")(numberOfNotifiedThings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfSucceededThings)) __obj.updateDynamic("numberOfSucceededThings")(numberOfSucceededThings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateIncreaseCriteria]
   }
 }

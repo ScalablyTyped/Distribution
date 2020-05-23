@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Enabled
 import typings.three.cameraMod.Camera
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
@@ -43,7 +44,7 @@ object perspectiveCameraMod extends js.Object {
     var near: Double = js.native
     @JSName("type")
     var type_PerspectiveCamera: typings.three.threeStrings.PerspectiveCamera = js.native
-    var view: Null | AnonEnabled = js.native
+    var view: Null | Enabled = js.native
     var zoom: Double = js.native
     def clearViewOffset(): Unit = js.native
     def getEffectiveFOV(): Double = js.native

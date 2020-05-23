@@ -18,11 +18,15 @@ trait DataOptions extends js.Object {
 
 object DataOptions {
   @scala.inline
-  def apply(`type`: String = null, value: Int | Double = null, value2: Int | Double = null): DataOptions = {
+  def apply(
+    `type`: String = null,
+    value: js.UndefOr[Double] = js.undefined,
+    value2: js.UndefOr[Double] = js.undefined
+  ): DataOptions = {
     val __obj = js.Dynamic.literal()
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (value2 != null) __obj.updateDynamic("value2")(value2.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value2)) __obj.updateDynamic("value2")(value2.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataOptions]
   }
 }

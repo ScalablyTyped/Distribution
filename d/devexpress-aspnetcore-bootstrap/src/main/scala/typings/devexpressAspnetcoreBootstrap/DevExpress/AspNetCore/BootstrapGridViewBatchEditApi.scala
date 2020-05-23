@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapGridViewBatchEditApi")
 @js.native
-class BootstrapGridViewBatchEditApi protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
+trait BootstrapGridViewBatchEditApi extends js.Object {
   val instance: js.Any = js.native
   def addNewRow(): Unit = js.native
   def deleteRow(visibleIndex: Double): Unit = js.native

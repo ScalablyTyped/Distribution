@@ -11,8 +11,7 @@ trait RefObject[T] extends js.Object {
 object RefObject {
   @scala.inline
   def apply[T](current: T = null): RefObject[T] = {
-    val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefObject[T]]
   }
 }

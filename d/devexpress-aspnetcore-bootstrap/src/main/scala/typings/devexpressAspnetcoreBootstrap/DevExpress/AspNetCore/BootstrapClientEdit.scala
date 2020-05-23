@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapClientEdit")
 @js.native
-class BootstrapClientEdit () extends Control {
+trait BootstrapClientEdit extends Control {
   def focus(): Unit = js.native
   def getCaption(): String = js.native
   def getEnabled(): Boolean = js.native

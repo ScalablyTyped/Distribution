@@ -1,6 +1,6 @@
 package typings.oracledb.mod
 
-import typings.oracledb.AnonOperation
+import typings.oracledb.anon.Operation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,12 +20,12 @@ trait SubscriptionTables extends js.Object {
     * quality of service used when creating the subscription indicated the desire for ROWIDs and no
     * summary grouping took place.
     */
-  var rows: js.UndefOr[js.Array[AnonOperation]] = js.undefined
+  var rows: js.UndefOr[js.Array[Operation]] = js.undefined
 }
 
 object SubscriptionTables {
   @scala.inline
-  def apply(name: String, operation: Double, rows: js.Array[AnonOperation] = null): SubscriptionTables = {
+  def apply(name: String, operation: Double, rows: js.Array[Operation] = null): SubscriptionTables = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionTables]

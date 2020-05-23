@@ -54,7 +54,7 @@ object NewPrivateVirtualInterfaceAllocation {
     amazonAddress: AmazonAddress = null,
     authKey: BGPAuthKey = null,
     customerAddress: CustomerAddress = null,
-    mtu: Int | Double = null,
+    mtu: js.UndefOr[MTU] = js.undefined,
     tags: TagList = null
   ): NewPrivateVirtualInterfaceAllocation = {
     val __obj = js.Dynamic.literal(asn = asn.asInstanceOf[js.Any], virtualInterfaceName = virtualInterfaceName.asInstanceOf[js.Any], vlan = vlan.asInstanceOf[js.Any])
@@ -62,7 +62,7 @@ object NewPrivateVirtualInterfaceAllocation {
     if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
     if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
-    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewPrivateVirtualInterfaceAllocation]
   }

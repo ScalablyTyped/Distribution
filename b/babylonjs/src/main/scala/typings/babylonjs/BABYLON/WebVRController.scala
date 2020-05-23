@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebVRController")
 @js.native
-abstract class WebVRController protected () extends PoseEnabledController {
-  /**
-    * Creates a new WebVRController from a gamepad
-    * @param vrGamepad the gamepad that the WebVRController should be created from
-    */
-  def this(vrGamepad: js.Any) = this()
+trait WebVRController extends PoseEnabledController {
   /**
     * Array of button availible on the controller
     */

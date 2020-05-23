@@ -1,8 +1,7 @@
 package typings.reactWindow.mod
 
 import typings.react.mod.Component
-import typings.reactWindow.AnonAlign
-import typings.reactWindow.AnonScrollLeft
+import typings.reactWindow.anon.ScrollLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ class FixedSizeGrid ()
   /**
     * Scroll to the specified offsets.
     */
-  def scrollTo(params: AnonScrollLeft): Unit = js.native
+  def scrollTo(params: ScrollLeft): Unit = js.native
   /**
     * Scroll to the specified item.
     *
@@ -32,6 +31,6 @@ class FixedSizeGrid ()
     *
     * If either `columnIndex` or `rowIndex` are omitted, `scrollLeft` or `scrollTop` will be unchanged (respectively).
     */
-  def scrollToItem(params: AnonAlign): Unit = js.native
+  def scrollToItem(params: typings.reactWindow.anon.Align): Unit = js.native
 }
 

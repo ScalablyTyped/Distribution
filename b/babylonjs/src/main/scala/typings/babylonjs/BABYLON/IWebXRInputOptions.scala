@@ -42,9 +42,9 @@ object IWebXRInputOptions {
   ): IWebXRInputOptions = {
     val __obj = js.Dynamic.literal()
     if (customControllersRepositoryURL != null) __obj.updateDynamic("customControllersRepositoryURL")(customControllersRepositoryURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableControllerAnimation)) __obj.updateDynamic("disableControllerAnimation")(disableControllerAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOnlineControllerRepository)) __obj.updateDynamic("disableOnlineControllerRepository")(disableOnlineControllerRepository.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotLoadControllerMeshes)) __obj.updateDynamic("doNotLoadControllerMeshes")(doNotLoadControllerMeshes.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableControllerAnimation)) __obj.updateDynamic("disableControllerAnimation")(disableControllerAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableOnlineControllerRepository)) __obj.updateDynamic("disableOnlineControllerRepository")(disableOnlineControllerRepository.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotLoadControllerMeshes)) __obj.updateDynamic("doNotLoadControllerMeshes")(doNotLoadControllerMeshes.get.asInstanceOf[js.Any])
     if (forceInputProfile != null) __obj.updateDynamic("forceInputProfile")(forceInputProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebXRInputOptions]
   }

@@ -25,15 +25,15 @@ trait StartEventArgs extends js.Object {
 object StartEventArgs {
   @scala.inline
   def apply(
-    activeItemIndex: Int | Double = null,
+    activeItemIndex: js.UndefOr[Double] = js.undefined,
     cancel: js.UndefOr[Boolean] = js.undefined,
     itemId: String = null,
     model: Model = null,
     `type`: String = null
   ): StartEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (activeItemIndex != null) __obj.updateDynamic("activeItemIndex")(activeItemIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeItemIndex)) __obj.updateDynamic("activeItemIndex")(activeItemIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

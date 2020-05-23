@@ -19,7 +19,7 @@ trait JSONAnimation extends js.Object {
     */
   var frameRate: integer
   /**
-    * [description]
+    * An array of the AnimationFrame objects inside this Animation.
     */
   var frames: js.Array[JSONAnimationFrame]
   /**

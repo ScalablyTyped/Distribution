@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-server-env" : "2.4.3"
+      "apollo-server-env" : "2.4.4-alpha.0"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-server-env" : "2.4.3"
+      "apollo-server-env" : "2.4.4-alpha.0"
     }
   ],
   "compile-devDependencies" : [

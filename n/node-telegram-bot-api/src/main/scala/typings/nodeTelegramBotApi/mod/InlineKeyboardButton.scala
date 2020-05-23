@@ -31,7 +31,7 @@ object InlineKeyboardButton {
     if (callback_data != null) __obj.updateDynamic("callback_data")(callback_data.asInstanceOf[js.Any])
     if (callback_game != null) __obj.updateDynamic("callback_game")(callback_game.asInstanceOf[js.Any])
     if (login_url != null) __obj.updateDynamic("login_url")(login_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(pay)) __obj.updateDynamic("pay")(pay.asInstanceOf[js.Any])
+    if (!js.isUndefined(pay)) __obj.updateDynamic("pay")(pay.get.asInstanceOf[js.Any])
     if (switch_inline_query != null) __obj.updateDynamic("switch_inline_query")(switch_inline_query.asInstanceOf[js.Any])
     if (switch_inline_query_current_chat != null) __obj.updateDynamic("switch_inline_query_current_chat")(switch_inline_query_current_chat.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

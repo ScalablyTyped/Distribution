@@ -17,6 +17,7 @@ trait EngineReportingOptions[TContext] extends js.Object {
   var debugPrintReports: js.UndefOr[Boolean] = js.undefined
   var endpointUrl: js.UndefOr[String] = js.undefined
   var generateClientInfo: js.UndefOr[GenerateClientInfo[TContext]] = js.undefined
+  var graphVariant: js.UndefOr[String] = js.undefined
   var handleSignals: js.UndefOr[Boolean] = js.undefined
   var logger: js.UndefOr[Logger] = js.undefined
   var maskErrorDetails: js.UndefOr[Boolean] = js.undefined
@@ -43,16 +44,17 @@ object EngineReportingOptions {
     debugPrintReports: js.UndefOr[Boolean] = js.undefined,
     endpointUrl: String = null,
     generateClientInfo: /* requestContext */ GraphQLRequestContext[TContext] => ClientInfo = null,
+    graphVariant: String = null,
     handleSignals: js.UndefOr[Boolean] = js.undefined,
     logger: Logger = null,
     maskErrorDetails: js.UndefOr[Boolean] = js.undefined,
-    maxAttempts: Int | Double = null,
-    maxUncompressedReportSize: Int | Double = null,
-    minimumRetryDelayMs: Int | Double = null,
+    maxAttempts: js.UndefOr[Double] = js.undefined,
+    maxUncompressedReportSize: js.UndefOr[Double] = js.undefined,
+    minimumRetryDelayMs: js.UndefOr[Double] = js.undefined,
     privateHeaders: js.Array[String] | Boolean = null,
     privateVariables: js.Array[String] | Boolean = null,
     reportErrorFunction: /* err */ Error => Unit = null,
-    reportIntervalMs: Int | Double = null,
+    reportIntervalMs: js.UndefOr[Double] = js.undefined,
     requestAgent: RequestAgent | `false` = null,
     rewriteError: /* err */ GraphQLError => GraphQLError | Null = null,
     schemaTag: String = null,
@@ -63,24 +65,25 @@ object EngineReportingOptions {
     val __obj = js.Dynamic.literal()
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
     if (calculateSignature != null) __obj.updateDynamic("calculateSignature")(js.Any.fromFunction2(calculateSignature))
-    if (!js.isUndefined(debugPrintReports)) __obj.updateDynamic("debugPrintReports")(debugPrintReports.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugPrintReports)) __obj.updateDynamic("debugPrintReports")(debugPrintReports.get.asInstanceOf[js.Any])
     if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
     if (generateClientInfo != null) __obj.updateDynamic("generateClientInfo")(js.Any.fromFunction1(generateClientInfo))
-    if (!js.isUndefined(handleSignals)) __obj.updateDynamic("handleSignals")(handleSignals.asInstanceOf[js.Any])
+    if (graphVariant != null) __obj.updateDynamic("graphVariant")(graphVariant.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleSignals)) __obj.updateDynamic("handleSignals")(handleSignals.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskErrorDetails)) __obj.updateDynamic("maskErrorDetails")(maskErrorDetails.asInstanceOf[js.Any])
-    if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
-    if (maxUncompressedReportSize != null) __obj.updateDynamic("maxUncompressedReportSize")(maxUncompressedReportSize.asInstanceOf[js.Any])
-    if (minimumRetryDelayMs != null) __obj.updateDynamic("minimumRetryDelayMs")(minimumRetryDelayMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskErrorDetails)) __obj.updateDynamic("maskErrorDetails")(maskErrorDetails.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAttempts)) __obj.updateDynamic("maxAttempts")(maxAttempts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxUncompressedReportSize)) __obj.updateDynamic("maxUncompressedReportSize")(maxUncompressedReportSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumRetryDelayMs)) __obj.updateDynamic("minimumRetryDelayMs")(minimumRetryDelayMs.get.asInstanceOf[js.Any])
     if (privateHeaders != null) __obj.updateDynamic("privateHeaders")(privateHeaders.asInstanceOf[js.Any])
     if (privateVariables != null) __obj.updateDynamic("privateVariables")(privateVariables.asInstanceOf[js.Any])
     if (reportErrorFunction != null) __obj.updateDynamic("reportErrorFunction")(js.Any.fromFunction1(reportErrorFunction))
-    if (reportIntervalMs != null) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportIntervalMs)) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.get.asInstanceOf[js.Any])
     if (requestAgent != null) __obj.updateDynamic("requestAgent")(requestAgent.asInstanceOf[js.Any])
     if (rewriteError != null) __obj.updateDynamic("rewriteError")(js.Any.fromFunction1(rewriteError))
     if (schemaTag != null) __obj.updateDynamic("schemaTag")(schemaTag.asInstanceOf[js.Any])
     if (sendHeaders != null) __obj.updateDynamic("sendHeaders")(sendHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendReportsImmediately)) __obj.updateDynamic("sendReportsImmediately")(sendReportsImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendReportsImmediately)) __obj.updateDynamic("sendReportsImmediately")(sendReportsImmediately.get.asInstanceOf[js.Any])
     if (sendVariableValues != null) __obj.updateDynamic("sendVariableValues")(sendVariableValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EngineReportingOptions[TContext]]
   }

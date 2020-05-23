@@ -19,21 +19,21 @@ object PeerJSOption {
   @scala.inline
   def apply(
     config: RTCConfiguration = null,
-    debug: Int | Double = null,
+    debug: js.UndefOr[Double] = js.undefined,
     host: String = null,
     key: String = null,
     path: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     secure: js.UndefOr[Boolean] = js.undefined
   ): PeerJSOption = {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerJSOption]
   }
 }

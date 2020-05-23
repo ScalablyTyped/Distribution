@@ -1,7 +1,7 @@
 package typings.materialUiCore.createMountMod
 
-import typings.materialUiCore.NonePSnodeReactElementopt
-import typings.materialUiCore.PartialMountOptions
+import typings.materialUiCore.anon.NonePSnodeReactElementopt
+import typings.materialUiCore.anon.PartialMountOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

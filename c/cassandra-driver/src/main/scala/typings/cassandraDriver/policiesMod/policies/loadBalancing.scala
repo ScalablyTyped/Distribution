@@ -1,6 +1,6 @@
 package typings.cassandraDriver.policiesMod.policies
 
-import typings.cassandraDriver.AnonFilter
+import typings.cassandraDriver.anon.Filter
 import typings.cassandraDriver.mod.Client
 import typings.cassandraDriver.mod.EmptyCallback
 import typings.cassandraDriver.mod.ExecutionOptions
@@ -24,7 +24,7 @@ object loadBalancing extends js.Object {
   
   @js.native
   class DefaultLoadBalancingPolicy () extends LoadBalancingPolicy {
-    def this(options: AnonFilter) = this()
+    def this(options: Filter) = this()
   }
   
   @js.native

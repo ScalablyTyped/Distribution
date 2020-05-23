@@ -39,22 +39,22 @@ object ColumnSelectedEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     column: js.Any = null,
-    columnIndex: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
     headerCell: js.Any = null,
     model: js.Any = null,
     prevColumnHeaderCell: js.Any = null,
-    previousColumnIndex: Int | Double = null,
+    previousColumnIndex: js.UndefOr[Double] = js.undefined,
     selectedColumnsIndex: js.Array[_] = null,
     `type`: String = null
   ): ColumnSelectedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
     if (headerCell != null) __obj.updateDynamic("headerCell")(headerCell.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (prevColumnHeaderCell != null) __obj.updateDynamic("prevColumnHeaderCell")(prevColumnHeaderCell.asInstanceOf[js.Any])
-    if (previousColumnIndex != null) __obj.updateDynamic("previousColumnIndex")(previousColumnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(previousColumnIndex)) __obj.updateDynamic("previousColumnIndex")(previousColumnIndex.get.asInstanceOf[js.Any])
     if (selectedColumnsIndex != null) __obj.updateDynamic("selectedColumnsIndex")(selectedColumnsIndex.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSelectedEventArgs]

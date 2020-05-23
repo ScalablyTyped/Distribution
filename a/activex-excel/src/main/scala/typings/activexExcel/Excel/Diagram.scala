@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Diagram")
 @js.native
-class Diagram protected () extends js.Object {
+trait Diagram extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var AutoFormat: MsoTriState = js.native
   var AutoLayout: MsoTriState = js.native

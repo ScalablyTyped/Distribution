@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,17 +36,6 @@ object HeaderFooterType extends js.Object {
     */
   @js.native
   sealed trait primary extends HeaderFooterType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[HeaderFooterType with String] = js.native
-  /* "EvenPages" */ @js.native
-  object evenPages extends TopLevel[evenPages with String]
-  
-  /* "FirstPage" */ @js.native
-  object firstPage extends TopLevel[firstPage with String]
-  
-  /* "Primary" */ @js.native
-  object primary extends TopLevel[primary with String]
   
 }
 

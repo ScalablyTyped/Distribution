@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,11 @@ trait ClientRect extends js.Object {
   val width: Double
 }
 
-@JSGlobal("ClientRect")
-@js.native
-object ClientRect extends Instantiable0[ClientRect]
+object ClientRect {
+  @scala.inline
+  def apply(bottom: Double, height: Double, left: Double, right: Double, top: Double, width: Double): ClientRect = {
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientRect]
+  }
+}
 

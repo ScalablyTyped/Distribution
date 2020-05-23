@@ -1,7 +1,6 @@
 package typings.ntlmClient.mod
 
 import typings.node.Buffer
-import typings.ntlmClient.AnonBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ trait NtlmType2 extends js.Object {
   var challenge: Buffer
   var encoding: String
   var flags: Double
-  var targetInfo: AnonBuffer
+  var targetInfo: typings.ntlmClient.anon.Buffer
   var targetName: String
   var version: Double
 }
@@ -21,7 +20,7 @@ object NtlmType2 {
     challenge: Buffer,
     encoding: String,
     flags: Double,
-    targetInfo: AnonBuffer,
+    targetInfo: typings.ntlmClient.anon.Buffer,
     targetName: String,
     version: Double
   ): NtlmType2 = {

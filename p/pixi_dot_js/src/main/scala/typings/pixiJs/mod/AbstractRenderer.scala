@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonAutoDensity
+import typings.pixiJs.anon.AutoDensity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +19,6 @@ import scala.scalajs.js.annotation._
 class AbstractRenderer protected ()
   extends typings.pixiJs.PIXI.AbstractRenderer {
   def this(system: String) = this()
-  def this(system: String, options: AnonAutoDensity) = this()
+  def this(system: String, options: AutoDensity) = this()
 }
 

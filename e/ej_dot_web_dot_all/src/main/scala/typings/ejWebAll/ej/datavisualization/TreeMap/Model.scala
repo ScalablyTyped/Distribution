@@ -207,7 +207,7 @@ object Model {
   def apply(
     Click: /* e */ ClickEventArgs => Unit = null,
     borderBrush: String = null,
-    borderThickness: Int | Double = null,
+    borderThickness: js.UndefOr[Double] = js.undefined,
     colorPath: String = null,
     colorValuePath: String = null,
     dataSource: js.Any = null,
@@ -218,7 +218,7 @@ object Model {
     draggingOnSelection: js.UndefOr[Boolean] = js.undefined,
     drillDownHeaderColor: String = null,
     drillDownItemSelected: /* e */ DrillDownItemSelectedEventArgs => Unit = null,
-    drillDownLevel: Int | Double = null,
+    drillDownLevel: js.UndefOr[Double] = js.undefined,
     drillDownSelectionColor: String = null,
     drillDownValue: String = null,
     drillStarted: /* e */ DrillStartedEventArgs => Unit = null,
@@ -231,9 +231,9 @@ object Model {
     header: String = null,
     headerTemplateRendering: /* e */ HeaderTemplateRenderingEventArgs => Unit = null,
     highlightBorderBrush: String = null,
-    highlightBorderThickness: Int | Double = null,
+    highlightBorderThickness: js.UndefOr[Double] = js.undefined,
     highlightGroupBorderBrush: String = null,
-    highlightGroupBorderThickness: Int | Double = null,
+    highlightGroupBorderThickness: js.UndefOr[Double] = js.undefined,
     highlightGroupOnSelection: js.UndefOr[Boolean] = js.undefined,
     highlightOnSelection: js.UndefOr[Boolean] = js.undefined,
     isHierarchicalDatasource: js.UndefOr[Boolean] = js.undefined,
@@ -262,37 +262,37 @@ object Model {
     val __obj = js.Dynamic.literal()
     if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
     if (borderBrush != null) __obj.updateDynamic("borderBrush")(borderBrush.asInstanceOf[js.Any])
-    if (borderThickness != null) __obj.updateDynamic("borderThickness")(borderThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderThickness)) __obj.updateDynamic("borderThickness")(borderThickness.get.asInstanceOf[js.Any])
     if (colorPath != null) __obj.updateDynamic("colorPath")(colorPath.asInstanceOf[js.Any])
     if (colorValuePath != null) __obj.updateDynamic("colorValuePath")(colorValuePath.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (desaturationColorMapping != null) __obj.updateDynamic("desaturationColorMapping")(desaturationColorMapping.asInstanceOf[js.Any])
     if (dockPosition != null) __obj.updateDynamic("dockPosition")(dockPosition.asInstanceOf[js.Any])
     if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
-    if (!js.isUndefined(draggingGroupOnSelection)) __obj.updateDynamic("draggingGroupOnSelection")(draggingGroupOnSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggingOnSelection)) __obj.updateDynamic("draggingOnSelection")(draggingOnSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggingGroupOnSelection)) __obj.updateDynamic("draggingGroupOnSelection")(draggingGroupOnSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggingOnSelection)) __obj.updateDynamic("draggingOnSelection")(draggingOnSelection.get.asInstanceOf[js.Any])
     if (drillDownHeaderColor != null) __obj.updateDynamic("drillDownHeaderColor")(drillDownHeaderColor.asInstanceOf[js.Any])
     if (drillDownItemSelected != null) __obj.updateDynamic("drillDownItemSelected")(js.Any.fromFunction1(drillDownItemSelected))
-    if (drillDownLevel != null) __obj.updateDynamic("drillDownLevel")(drillDownLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(drillDownLevel)) __obj.updateDynamic("drillDownLevel")(drillDownLevel.get.asInstanceOf[js.Any])
     if (drillDownSelectionColor != null) __obj.updateDynamic("drillDownSelectionColor")(drillDownSelectionColor.asInstanceOf[js.Any])
     if (drillDownValue != null) __obj.updateDynamic("drillDownValue")(drillDownValue.asInstanceOf[js.Any])
     if (drillStarted != null) __obj.updateDynamic("drillStarted")(js.Any.fromFunction1(drillStarted))
-    if (!js.isUndefined(enableDrillDown)) __obj.updateDynamic("enableDrillDown")(enableDrillDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGradient)) __obj.updateDynamic("enableGradient")(enableGradient.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDrillDown)) __obj.updateDynamic("enableDrillDown")(enableDrillDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGradient)) __obj.updateDynamic("enableGradient")(enableGradient.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.get.asInstanceOf[js.Any])
     if (groupColorMapping != null) __obj.updateDynamic("groupColorMapping")(groupColorMapping.asInstanceOf[js.Any])
     if (groupSelectionMode != null) __obj.updateDynamic("groupSelectionMode")(groupSelectionMode.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (headerTemplateRendering != null) __obj.updateDynamic("headerTemplateRendering")(js.Any.fromFunction1(headerTemplateRendering))
     if (highlightBorderBrush != null) __obj.updateDynamic("highlightBorderBrush")(highlightBorderBrush.asInstanceOf[js.Any])
-    if (highlightBorderThickness != null) __obj.updateDynamic("highlightBorderThickness")(highlightBorderThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightBorderThickness)) __obj.updateDynamic("highlightBorderThickness")(highlightBorderThickness.get.asInstanceOf[js.Any])
     if (highlightGroupBorderBrush != null) __obj.updateDynamic("highlightGroupBorderBrush")(highlightGroupBorderBrush.asInstanceOf[js.Any])
-    if (highlightGroupBorderThickness != null) __obj.updateDynamic("highlightGroupBorderThickness")(highlightGroupBorderThickness.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightGroupOnSelection)) __obj.updateDynamic("highlightGroupOnSelection")(highlightGroupOnSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightOnSelection)) __obj.updateDynamic("highlightOnSelection")(highlightOnSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHierarchicalDatasource)) __obj.updateDynamic("isHierarchicalDatasource")(isHierarchicalDatasource.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightGroupBorderThickness)) __obj.updateDynamic("highlightGroupBorderThickness")(highlightGroupBorderThickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightGroupOnSelection)) __obj.updateDynamic("highlightGroupOnSelection")(highlightGroupOnSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightOnSelection)) __obj.updateDynamic("highlightOnSelection")(highlightOnSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHierarchicalDatasource)) __obj.updateDynamic("isHierarchicalDatasource")(isHierarchicalDatasource.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (itemRendering != null) __obj.updateDynamic("itemRendering")(js.Any.fromFunction1(itemRendering))
     if (itemsLayoutMode != null) __obj.updateDynamic("itemsLayoutMode")(itemsLayoutMode.asInstanceOf[js.Any])
     if (leafItemSettings != null) __obj.updateDynamic("leafItemSettings")(leafItemSettings.asInstanceOf[js.Any])
@@ -305,8 +305,8 @@ object Model {
     if (refreshed != null) __obj.updateDynamic("refreshed")(js.Any.fromFunction1(refreshed))
     if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLegend)) __obj.updateDynamic("showLegend")(showLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLegend)) __obj.updateDynamic("showLegend")(showLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.get.asInstanceOf[js.Any])
     if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate.asInstanceOf[js.Any])
     if (treeMapGroupSelected != null) __obj.updateDynamic("treeMapGroupSelected")(js.Any.fromFunction1(treeMapGroupSelected))
     if (treeMapItemSelected != null) __obj.updateDynamic("treeMapItemSelected")(js.Any.fromFunction1(treeMapItemSelected))

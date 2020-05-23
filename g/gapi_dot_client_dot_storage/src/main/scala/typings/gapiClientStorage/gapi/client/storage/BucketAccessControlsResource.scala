@@ -1,36 +1,35 @@
 package typings.gapiClientStorage.gapi.client.storage
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientStorage.AnonAlt
-import typings.gapiClientStorage.AnonBucket
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientStorage.anon.Alt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BucketAccessControlsResource extends js.Object {
   /** Permanently deletes the ACL entry for the specified entity on the specified bucket. */
-  def delete(request: AnonAlt): Request_[Unit]
+  def delete(request: Alt): Request[Unit]
   /** Returns the ACL entry for the specified entity on the specified bucket. */
-  def get(request: AnonAlt): Request_[BucketAccessControl]
+  def get(request: Alt): Request[BucketAccessControl]
   /** Creates a new ACL entry on the specified bucket. */
-  def insert(request: AnonBucket): Request_[BucketAccessControl]
+  def insert(request: typings.gapiClientStorage.anon.Bucket): Request[BucketAccessControl]
   /** Retrieves ACL entries on the specified bucket. */
-  def list(request: AnonBucket): Request_[BucketAccessControls]
+  def list(request: typings.gapiClientStorage.anon.Bucket): Request[BucketAccessControls]
   /** Updates an ACL entry on the specified bucket. This method supports patch semantics. */
-  def patch(request: AnonAlt): Request_[BucketAccessControl]
+  def patch(request: Alt): Request[BucketAccessControl]
   /** Updates an ACL entry on the specified bucket. */
-  def update(request: AnonAlt): Request_[BucketAccessControl]
+  def update(request: Alt): Request[BucketAccessControl]
 }
 
 object BucketAccessControlsResource {
   @scala.inline
   def apply(
-    delete: AnonAlt => Request_[Unit],
-    get: AnonAlt => Request_[BucketAccessControl],
-    insert: AnonBucket => Request_[BucketAccessControl],
-    list: AnonBucket => Request_[BucketAccessControls],
-    patch: AnonAlt => Request_[BucketAccessControl],
-    update: AnonAlt => Request_[BucketAccessControl]
+    delete: Alt => Request[Unit],
+    get: Alt => Request[BucketAccessControl],
+    insert: typings.gapiClientStorage.anon.Bucket => Request[BucketAccessControl],
+    list: typings.gapiClientStorage.anon.Bucket => Request[BucketAccessControls],
+    patch: Alt => Request[BucketAccessControl],
+    update: Alt => Request[BucketAccessControl]
   ): BucketAccessControlsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[BucketAccessControlsResource]

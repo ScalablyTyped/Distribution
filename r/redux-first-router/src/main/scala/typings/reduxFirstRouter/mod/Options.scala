@@ -131,7 +131,7 @@ object Options {
     if (createHistory != null) __obj.updateDynamic("createHistory")(js.Any.fromFunction0(createHistory))
     if (displayConfirmLeave != null) __obj.updateDynamic("displayConfirmLeave")(js.Any.fromFunction2(displayConfirmLeave))
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialDispatch)) __obj.updateDynamic("initialDispatch")(initialDispatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDispatch)) __obj.updateDynamic("initialDispatch")(initialDispatch.get.asInstanceOf[js.Any])
     if (initialEntries != null) __obj.updateDynamic("initialEntries")(initialEntries.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (navigators != null) __obj.updateDynamic("navigators")(navigators.asInstanceOf[js.Any])
@@ -141,8 +141,8 @@ object Options {
     if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(js.Any.fromFunction3(onBeforeChange))
     if (querySerializer != null) __obj.updateDynamic("querySerializer")(querySerializer.asInstanceOf[js.Any])
     if (restoreScroll != null) __obj.updateDynamic("restoreScroll")(js.Any.fromFunction1(restoreScroll))
-    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[TKeys, TState]]
   }

@@ -30,11 +30,11 @@ object CompareFacesRequest {
     SourceImage: Image,
     TargetImage: Image,
     QualityFilter: QualityFilter = null,
-    SimilarityThreshold: Int | Double = null
+    SimilarityThreshold: js.UndefOr[Percent] = js.undefined
   ): CompareFacesRequest = {
     val __obj = js.Dynamic.literal(SourceImage = SourceImage.asInstanceOf[js.Any], TargetImage = TargetImage.asInstanceOf[js.Any])
     if (QualityFilter != null) __obj.updateDynamic("QualityFilter")(QualityFilter.asInstanceOf[js.Any])
-    if (SimilarityThreshold != null) __obj.updateDynamic("SimilarityThreshold")(SimilarityThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(SimilarityThreshold)) __obj.updateDynamic("SimilarityThreshold")(SimilarityThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompareFacesRequest]
   }
 }

@@ -76,12 +76,12 @@ object _Token {
     level: Double,
     `type`: footnote_anchor,
     lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
+    subId: js.UndefOr[Double] = js.undefined
   ): _Token = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
+    if (!js.isUndefined(subId)) __obj.updateDynamic("subId")(subId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }
   @scala.inline
@@ -90,12 +90,12 @@ object _Token {
     level: Double,
     `type`: String,
     lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
+    subId: js.UndefOr[Double] = js.undefined
   ): _Token = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
+    if (!js.isUndefined(subId)) __obj.updateDynamic("subId")(subId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }
   @scala.inline
@@ -111,12 +111,12 @@ object _Token {
     level: Double,
     `type`: footnote_reference_close,
     lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
+    subId: js.UndefOr[Double] = js.undefined
   ): _Token = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
+    if (!js.isUndefined(subId)) __obj.updateDynamic("subId")(subId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }
   @scala.inline
@@ -265,7 +265,7 @@ object _Token {
   ): _Token = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.get.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }
@@ -340,12 +340,12 @@ object _Token {
     level: Double,
     `type`: footnote_reference_open,
     lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
+    subId: js.UndefOr[Double] = js.undefined
   ): _Token = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
+    if (!js.isUndefined(subId)) __obj.updateDynamic("subId")(subId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }
   @scala.inline
@@ -375,12 +375,12 @@ object _Token {
     level: Double,
     `type`: footnote_open,
     lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
+    subId: js.UndefOr[Double] = js.undefined
   ): _Token = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
+    if (!js.isUndefined(subId)) __obj.updateDynamic("subId")(subId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }
   @scala.inline
@@ -407,7 +407,7 @@ object _Token {
   ): _Token = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
@@ -432,12 +432,12 @@ object _Token {
     level: Double,
     `type`: footnote_ref,
     lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
+    subId: js.UndefOr[Double] = js.undefined
   ): _Token = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
+    if (!js.isUndefined(subId)) __obj.updateDynamic("subId")(subId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }
   @scala.inline
@@ -584,12 +584,12 @@ object _Token {
     level: Double,
     `type`: footnote_close,
     lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
+    subId: js.UndefOr[Double] = js.undefined
   ): _Token = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
+    if (!js.isUndefined(subId)) __obj.updateDynamic("subId")(subId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }
   @scala.inline
@@ -623,7 +623,7 @@ object _Token {
   ): _Token = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.get.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }
@@ -640,7 +640,7 @@ object _Token {
   ): _Token = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
@@ -662,7 +662,7 @@ object _Token {
   ): _Token = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.get.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Token]
   }

@@ -35,18 +35,18 @@ object BookmarkTreeNode {
     id: String,
     title: String,
     children: js.Array[BookmarkTreeNode] = null,
-    dateAdded: Int | Double = null,
-    dateGroupModified: Int | Double = null,
-    index: Int | Double = null,
+    dateAdded: js.UndefOr[Double] = js.undefined,
+    dateGroupModified: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
     parentId: String = null,
     unmodifiable: js.Any = null,
     url: String = null
   ): BookmarkTreeNode = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (dateAdded != null) __obj.updateDynamic("dateAdded")(dateAdded.asInstanceOf[js.Any])
-    if (dateGroupModified != null) __obj.updateDynamic("dateGroupModified")(dateGroupModified.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(dateAdded)) __obj.updateDynamic("dateAdded")(dateAdded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dateGroupModified)) __obj.updateDynamic("dateGroupModified")(dateGroupModified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     if (unmodifiable != null) __obj.updateDynamic("unmodifiable")(unmodifiable.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

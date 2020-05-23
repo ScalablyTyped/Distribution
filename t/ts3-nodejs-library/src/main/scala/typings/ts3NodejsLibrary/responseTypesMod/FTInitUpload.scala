@@ -30,22 +30,22 @@ object FTInitUpload {
     clientftfid: Double,
     ftkey: String = null,
     msg: String = null,
-    port: Int | Double = null,
-    proto: Int | Double = null,
-    seekpos: Int | Double = null,
-    serverftfid: Int | Double = null,
-    size: Int | Double = null,
-    status: Int | Double = null
+    port: js.UndefOr[Double] = js.undefined,
+    proto: js.UndefOr[Double] = js.undefined,
+    seekpos: js.UndefOr[Double] = js.undefined,
+    serverftfid: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
+    status: js.UndefOr[Double] = js.undefined
   ): FTInitUpload = {
     val __obj = js.Dynamic.literal(clientftfid = clientftfid.asInstanceOf[js.Any])
     if (ftkey != null) __obj.updateDynamic("ftkey")(ftkey.asInstanceOf[js.Any])
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (proto != null) __obj.updateDynamic("proto")(proto.asInstanceOf[js.Any])
-    if (seekpos != null) __obj.updateDynamic("seekpos")(seekpos.asInstanceOf[js.Any])
-    if (serverftfid != null) __obj.updateDynamic("serverftfid")(serverftfid.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(proto)) __obj.updateDynamic("proto")(proto.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seekpos)) __obj.updateDynamic("seekpos")(seekpos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverftfid)) __obj.updateDynamic("serverftfid")(serverftfid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FTInitUpload]
   }
 }

@@ -11,7 +11,15 @@ trait ModifySubnetAttributeRequest extends js.Object {
     */
   var AssignIpv6AddressOnCreation: js.UndefOr[AttributeBooleanValue] = js.native
   /**
-    * Specify true to indicate that ENIs attached to instances created in the specified subnet should be assigned a public IPv4 address.
+    * The customer-owned IPv4 address pool associated with the subnet. You must set this value when you specify true for MapCustomerOwnedIpOnLaunch.
+    */
+  var CustomerOwnedIpv4Pool: js.UndefOr[CoipPoolId] = js.native
+  /**
+    * Specify true to indicate that network interfaces attached to instances created in the specified subnet should be assigned a customer-owned IPv4 address. When this value is true, you must specify the customer-owned IP pool using CustomerOwnedIpv4Pool.
+    */
+  var MapCustomerOwnedIpOnLaunch: js.UndefOr[AttributeBooleanValue] = js.native
+  /**
+    * Specify true to indicate that network interfaces attached to instances created in the specified subnet should be assigned a public IPv4 address.
     */
   var MapPublicIpOnLaunch: js.UndefOr[AttributeBooleanValue] = js.native
   /**
@@ -25,10 +33,14 @@ object ModifySubnetAttributeRequest {
   def apply(
     SubnetId: SubnetId,
     AssignIpv6AddressOnCreation: AttributeBooleanValue = null,
+    CustomerOwnedIpv4Pool: CoipPoolId = null,
+    MapCustomerOwnedIpOnLaunch: AttributeBooleanValue = null,
     MapPublicIpOnLaunch: AttributeBooleanValue = null
   ): ModifySubnetAttributeRequest = {
     val __obj = js.Dynamic.literal(SubnetId = SubnetId.asInstanceOf[js.Any])
     if (AssignIpv6AddressOnCreation != null) __obj.updateDynamic("AssignIpv6AddressOnCreation")(AssignIpv6AddressOnCreation.asInstanceOf[js.Any])
+    if (CustomerOwnedIpv4Pool != null) __obj.updateDynamic("CustomerOwnedIpv4Pool")(CustomerOwnedIpv4Pool.asInstanceOf[js.Any])
+    if (MapCustomerOwnedIpOnLaunch != null) __obj.updateDynamic("MapCustomerOwnedIpOnLaunch")(MapCustomerOwnedIpOnLaunch.asInstanceOf[js.Any])
     if (MapPublicIpOnLaunch != null) __obj.updateDynamic("MapPublicIpOnLaunch")(MapPublicIpOnLaunch.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifySubnetAttributeRequest]
   }

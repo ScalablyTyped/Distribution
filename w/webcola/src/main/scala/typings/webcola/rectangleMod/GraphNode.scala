@@ -28,10 +28,10 @@ object GraphNode {
     width: Double,
     x: Double,
     y: Double,
-    fixedWeight: Int | Double = null
+    fixedWeight: js.UndefOr[Double] = js.undefined
   ): GraphNode = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], fixed = fixed.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], px = px.asInstanceOf[js.Any], py = py.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (fixedWeight != null) __obj.updateDynamic("fixedWeight")(fixedWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedWeight)) __obj.updateDynamic("fixedWeight")(fixedWeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphNode]
   }
 }

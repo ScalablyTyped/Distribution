@@ -65,7 +65,7 @@ object ResolverEndpoint {
     Direction: ResolverEndpointDirection = null,
     HostVPCId: ResourceId = null,
     Id: ResourceId = null,
-    IpAddressCount: Int | Double = null,
+    IpAddressCount: js.UndefOr[IpAddressCount] = js.undefined,
     ModificationTime: Rfc3339TimeString = null,
     Name: Name = null,
     SecurityGroupIds: SecurityGroupIds = null,
@@ -79,7 +79,7 @@ object ResolverEndpoint {
     if (Direction != null) __obj.updateDynamic("Direction")(Direction.asInstanceOf[js.Any])
     if (HostVPCId != null) __obj.updateDynamic("HostVPCId")(HostVPCId.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (IpAddressCount != null) __obj.updateDynamic("IpAddressCount")(IpAddressCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(IpAddressCount)) __obj.updateDynamic("IpAddressCount")(IpAddressCount.get.asInstanceOf[js.Any])
     if (ModificationTime != null) __obj.updateDynamic("ModificationTime")(ModificationTime.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])

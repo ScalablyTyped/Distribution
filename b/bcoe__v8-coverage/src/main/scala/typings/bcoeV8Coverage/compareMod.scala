@@ -1,5 +1,8 @@
 package typings.bcoeV8Coverage
 
+import typings.bcoeV8Coverage.anon.ReadonlyFunctionCov
+import typings.bcoeV8Coverage.anon.ReadonlyRangeCov
+import typings.bcoeV8Coverage.anon.ReadonlyScriptCov
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAllowPicking
-import typings.cesium.AnonAsynchronous
+import typings.cesium.anon.AllowPicking
+import typings.cesium.anon.Asynchronous
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "Model")
 @js.native
 class Model () extends js.Object {
-  def this(options: AnonAllowPicking) = this()
+  def this(options: AllowPicking) = this()
   var activeAnimations: ModelAnimationCollection = js.native
   val allowPicking: Boolean = js.native
   val asynchronous: Boolean = js.native
@@ -58,7 +58,7 @@ class Model () extends js.Object {
 @JSImport("cesium", "Model")
 @js.native
 object Model extends js.Object {
-  def fromGltf(options: AnonAsynchronous): Model = js.native
+  def fromGltf(options: Asynchronous): Model = js.native
   def siluhouetteSupported(scene: Scene): Boolean = js.native
 }
 

@@ -1,12 +1,12 @@
 package typings.oracleOraclejet.ojdiagramMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon5
-import typings.oracleOraclejet.AnonAnimationDuration
-import typings.oracleOraclejet.AnonDrop
-import typings.oracleOraclejet.AnonHalign
-import typings.oracleOraclejet.AnonInsertSVGElement
-import typings.oracleOraclejet.AnonLabelClearSelection
+import typings.oracleOraclejet.anon.AnimationDuration
+import typings.oracleOraclejet.anon.Drop
+import typings.oracleOraclejet.anon.Halign
+import typings.oracleOraclejet.anon.InsertSVGElement
+import typings.oracleOraclejet.anon.LabelClearSelection
+import typings.oracleOraclejet.anon.`5`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdiagramMod.ojDiagram.RendererContext
 import typings.oracleOraclejet.ojkeysetMod.KeySet
@@ -40,14 +40,14 @@ trait ojDiagramSettablePropertiesLenient[K1, K2, D1, D2]
   var animationOnDataChange: js.UndefOr[auto | none] = js.undefined
   var animationOnDisplay: js.UndefOr[auto | none] = js.undefined
   var as: js.UndefOr[String] = js.undefined
-  var dnd: js.UndefOr[AnonDrop] = js.undefined
+  var dnd: js.UndefOr[Drop] = js.undefined
   var expanded: js.UndefOr[KeySet[K1]] = js.undefined
-  var focusRenderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]] = js.undefined
+  var focusRenderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]] = js.undefined
   var hiddenCategories: js.UndefOr[js.Array[String]] = js.undefined
   var highlightMatch: js.UndefOr[any | all] = js.undefined
   var highlightedCategories: js.UndefOr[js.Array[String]] = js.undefined
   var hoverBehavior: js.UndefOr[dim | none] = js.undefined
-  var hoverRenderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]] = js.undefined
+  var hoverRenderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]] = js.undefined
   var layout: js.UndefOr[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]] = js.undefined
   var linkData: js.UndefOr[DataProvider[K2, D2]] = js.undefined
   var linkHighlightMode: js.UndefOr[linkAndNodes | link] = js.undefined
@@ -55,59 +55,59 @@ trait ojDiagramSettablePropertiesLenient[K1, K2, D1, D2]
   var minZoom: js.UndefOr[Double] = js.undefined
   var nodeData: js.UndefOr[DataProvider[K1, D1]] = js.undefined
   var nodeHighlightMode: js.UndefOr[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node] = js.undefined
-  var overview: js.UndefOr[AnonHalign] = js.undefined
+  var overview: js.UndefOr[Halign] = js.undefined
   var panDirection: js.UndefOr[x | y | auto] = js.undefined
   var panning: js.UndefOr[auto | none] = js.undefined
   var promotedLinkBehavior: js.UndefOr[none | full | `lazy`] = js.undefined
-  var renderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement]] = js.undefined
+  var renderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]] = js.undefined
   var selection: js.UndefOr[js.Array[K1 | K2]] = js.undefined
   var selectionMode: js.UndefOr[single | multiple | none] = js.undefined
-  var selectionRenderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]] = js.undefined
-  var styleDefaults: js.UndefOr[AnonAnimationDuration] = js.undefined
-  var tooltip: js.UndefOr[Anon5[K1, K2, D1, D2]] = js.undefined
+  var selectionRenderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]] = js.undefined
+  var styleDefaults: js.UndefOr[AnimationDuration] = js.undefined
+  var tooltip: js.UndefOr[`5`[K1, K2, D1, D2]] = js.undefined
   var touchResponse: js.UndefOr[touchStart | auto] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonLabelClearSelection] = js.undefined
-  var zoomRenderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]] = js.undefined
+  var translations: js.UndefOr[LabelClearSelection] = js.undefined
+  var zoomRenderer: js.UndefOr[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]] = js.undefined
   var zooming: js.UndefOr[auto | none] = js.undefined
 }
 
 object ojDiagramSettablePropertiesLenient {
   @scala.inline
   def apply[K1, K2, D1, D2](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     animationOnDataChange: auto | none = null,
     animationOnDisplay: auto | none = null,
     as: String = null,
-    dnd: AnonDrop = null,
+    dnd: Drop = null,
     expanded: KeySet[K1] = null,
-    focusRenderer: /* context */ RendererContext[K1, D1] => AnonInsertSVGElement | Unit = null,
+    focusRenderer: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit = null,
     hiddenCategories: js.Array[String] = null,
     highlightMatch: any | all = null,
     highlightedCategories: js.Array[String] = null,
     hoverBehavior: dim | none = null,
-    hoverRenderer: /* context */ RendererContext[K1, D1] => AnonInsertSVGElement | Unit = null,
+    hoverRenderer: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit = null,
     layout: /* param0 */ DvtDiagramLayoutContext => Unit = null,
     linkData: DataProvider[K2, D2] = null,
     linkHighlightMode: linkAndNodes | link = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     nodeData: DataProvider[K1, D1] = null,
     nodeHighlightMode: nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node = null,
-    overview: AnonHalign = null,
+    overview: Halign = null,
     panDirection: x | y | auto = null,
     panning: auto | none = null,
     promotedLinkBehavior: none | full | `lazy` = null,
-    renderer: /* context */ RendererContext[K1, D1] => AnonInsertSVGElement = null,
+    renderer: /* context */ RendererContext[K1, D1] => InsertSVGElement = null,
     selection: js.Array[K1 | K2] = null,
     selectionMode: single | multiple | none = null,
-    selectionRenderer: /* context */ RendererContext[K1, D1] => AnonInsertSVGElement | Unit = null,
-    styleDefaults: AnonAnimationDuration = null,
-    tooltip: Anon5[K1, K2, D1, D2] = null,
+    selectionRenderer: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit = null,
+    styleDefaults: AnimationDuration = null,
+    tooltip: `5`[K1, K2, D1, D2] = null,
     touchResponse: touchStart | auto = null,
     trackResize: on | off = null,
-    translations: AnonLabelClearSelection = null,
-    zoomRenderer: /* context */ RendererContext[K1, D1] => AnonInsertSVGElement | Unit = null,
+    translations: LabelClearSelection = null,
+    zoomRenderer: /* context */ RendererContext[K1, D1] => InsertSVGElement | Unit = null,
     zooming: auto | none = null
   ): ojDiagramSettablePropertiesLenient[K1, K2, D1, D2] = {
     val __obj = js.Dynamic.literal()
@@ -126,8 +126,8 @@ object ojDiagramSettablePropertiesLenient {
     if (layout != null) __obj.updateDynamic("layout")(js.Any.fromFunction1(layout))
     if (linkData != null) __obj.updateDynamic("linkData")(linkData.asInstanceOf[js.Any])
     if (linkHighlightMode != null) __obj.updateDynamic("linkHighlightMode")(linkHighlightMode.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     if (nodeData != null) __obj.updateDynamic("nodeData")(nodeData.asInstanceOf[js.Any])
     if (nodeHighlightMode != null) __obj.updateDynamic("nodeHighlightMode")(nodeHighlightMode.asInstanceOf[js.Any])
     if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])

@@ -17,9 +17,6 @@ object blockingProxyStrings {
   sealed trait POST extends HttpMethod
   
   @js.native
-  sealed trait bpproxy extends js.Object
-  
-  @js.native
   sealed trait elementId extends paramKey
   
   @js.native
@@ -37,8 +34,6 @@ object blockingProxyStrings {
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def bpproxy: bpproxy = "bpproxy".asInstanceOf[bpproxy]
   @scala.inline
   def elementId: elementId = "elementId".asInstanceOf[elementId]
   @scala.inline

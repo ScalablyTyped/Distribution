@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait DebugSessionCustomEvent extends js.Object {
   /**
-  		 * Event specific information.
-  		 */
+    * Event specific information.
+    */
   val body: js.UndefOr[js.Any] = js.undefined
   /**
-  		 * Type of event.
-  		 */
+    * Type of event.
+    */
   val event: String
   /**
-  		 * The [debug session](#DebugSession) for which the custom event was received.
-  		 */
+    * The [debug session](#DebugSession) for which the custom event was received.
+    */
   val session: DebugSession
 }
 

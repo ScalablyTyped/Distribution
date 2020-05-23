@@ -12,10 +12,14 @@ trait Bullet extends js.Object {
 
 object Bullet {
   @scala.inline
-  def apply(listId: String = null, nestingLevel: Int | Double = null, textStyle: TextStyle = null): Bullet = {
+  def apply(
+    listId: String = null,
+    nestingLevel: js.UndefOr[Double] = js.undefined,
+    textStyle: TextStyle = null
+  ): Bullet = {
     val __obj = js.Dynamic.literal()
     if (listId != null) __obj.updateDynamic("listId")(listId.asInstanceOf[js.Any])
-    if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(nestingLevel)) __obj.updateDynamic("nestingLevel")(nestingLevel.get.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bullet]
   }

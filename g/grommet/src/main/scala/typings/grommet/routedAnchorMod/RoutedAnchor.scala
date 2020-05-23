@@ -1,7 +1,7 @@
 package typings.grommet.routedAnchorMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grommet.RoutedAnchorPropsOmitAnch
+import typings.grommet.anon.RoutedAnchorPropsOmitAnch
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState

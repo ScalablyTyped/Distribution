@@ -59,7 +59,7 @@ object ContactPoint {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     period: Period = null,
-    rank: Int | Double = null,
+    rank: js.UndefOr[positiveInt] = js.undefined,
     system: code = null,
     use: code = null,
     value: String = null
@@ -75,7 +75,7 @@ object ContactPoint {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

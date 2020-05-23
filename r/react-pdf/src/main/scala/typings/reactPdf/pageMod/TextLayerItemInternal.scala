@@ -29,11 +29,11 @@ object TextLayerItemInternal {
     transform: js.Array[Double],
     width: Double,
     rotate: `0` | `90` | `180` | `270` = null,
-    scale: Int | Double = null
+    scale: js.UndefOr[Double] = js.undefined
   ): TextLayerItemInternal = {
     val __obj = js.Dynamic.literal(fontName = fontName.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextLayerItemInternal]
   }
 }

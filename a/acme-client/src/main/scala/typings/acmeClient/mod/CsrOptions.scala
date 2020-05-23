@@ -23,7 +23,7 @@ object CsrOptions {
     commonName: String = null,
     country: String = null,
     emailAddress: String = null,
-    keySize: Int | Double = null,
+    keySize: js.UndefOr[Double] = js.undefined,
     locality: String = null,
     organization: String = null,
     organizationUnit: String = null,
@@ -34,7 +34,7 @@ object CsrOptions {
     if (commonName != null) __obj.updateDynamic("commonName")(commonName.asInstanceOf[js.Any])
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (keySize != null) __obj.updateDynamic("keySize")(keySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(keySize)) __obj.updateDynamic("keySize")(keySize.get.asInstanceOf[js.Any])
     if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
     if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
     if (organizationUnit != null) __obj.updateDynamic("organizationUnit")(organizationUnit.asInstanceOf[js.Any])

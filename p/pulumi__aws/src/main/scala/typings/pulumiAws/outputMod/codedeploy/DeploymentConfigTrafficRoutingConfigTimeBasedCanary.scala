@@ -18,10 +18,10 @@ trait DeploymentConfigTrafficRoutingConfigTimeBasedCanary extends js.Object {
 
 object DeploymentConfigTrafficRoutingConfigTimeBasedCanary {
   @scala.inline
-  def apply(interval: Int | Double = null, percentage: Int | Double = null): DeploymentConfigTrafficRoutingConfigTimeBasedCanary = {
+  def apply(interval: js.UndefOr[Double] = js.undefined, percentage: js.UndefOr[Double] = js.undefined): DeploymentConfigTrafficRoutingConfigTimeBasedCanary = {
     val __obj = js.Dynamic.literal()
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentConfigTrafficRoutingConfigTimeBasedCanary]
   }
 }

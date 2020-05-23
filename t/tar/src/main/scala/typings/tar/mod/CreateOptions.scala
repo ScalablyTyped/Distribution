@@ -96,7 +96,7 @@ object CreateOptions {
     follow: js.UndefOr[Boolean] = js.undefined,
     gzip: Boolean | ZlibOptions = null,
     h: js.UndefOr[Boolean] = js.undefined,
-    mode: Int | Double = null,
+    mode: js.UndefOr[Double] = js.undefined,
     noDirRecurse: js.UndefOr[Boolean] = js.undefined,
     noPax: js.UndefOr[Boolean] = js.undefined,
     onwarn: (/* message */ String, /* data */ Buffer) => Unit = null,
@@ -108,21 +108,21 @@ object CreateOptions {
   ): CreateOptions = {
     val __obj = js.Dynamic.literal()
     if (C != null) __obj.updateDynamic("C")(C.asInstanceOf[js.Any])
-    if (!js.isUndefined(L)) __obj.updateDynamic("L")(L.asInstanceOf[js.Any])
-    if (!js.isUndefined(P)) __obj.updateDynamic("P")(P.asInstanceOf[js.Any])
+    if (!js.isUndefined(L)) __obj.updateDynamic("L")(L.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(P)) __obj.updateDynamic("P")(P.get.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
     if (gzip != null) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
-    if (!js.isUndefined(h)) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDirRecurse)) __obj.updateDynamic("noDirRecurse")(noDirRecurse.asInstanceOf[js.Any])
-    if (!js.isUndefined(noPax)) __obj.updateDynamic("noPax")(noPax.asInstanceOf[js.Any])
+    if (!js.isUndefined(h)) __obj.updateDynamic("h")(h.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDirRecurse)) __obj.updateDynamic("noDirRecurse")(noDirRecurse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noPax)) __obj.updateDynamic("noPax")(noPax.get.asInstanceOf[js.Any])
     if (onwarn != null) __obj.updateDynamic("onwarn")(js.Any.fromFunction2(onwarn))
-    if (!js.isUndefined(portable)) __obj.updateDynamic("portable")(portable.asInstanceOf[js.Any])
+    if (!js.isUndefined(portable)) __obj.updateDynamic("portable")(portable.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(preservePaths)) __obj.updateDynamic("preservePaths")(preservePaths.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(preservePaths)) __obj.updateDynamic("preservePaths")(preservePaths.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOptions]
   }

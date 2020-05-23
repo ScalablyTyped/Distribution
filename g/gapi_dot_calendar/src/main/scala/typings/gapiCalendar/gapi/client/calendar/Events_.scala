@@ -1,6 +1,6 @@
 package typings.gapiCalendar.gapi.client.calendar
 
-import typings.gapiCalendar.AnonMethod
+import typings.gapiCalendar.anon.Method
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersignevents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Events_ extends js.Object {
   // The user's access role for this calendar. Read-only. Possible values are:
   var accessRole: AccessRole
-  var defaultReminders: js.Array[AnonMethod]
+  var defaultReminders: js.Array[Method]
   var description: String
   var etag: typings.gapiCalendar.gapi.client.calendar.etag
   var items: js.Array[Event]
@@ -25,7 +25,7 @@ object Events_ {
   @scala.inline
   def apply(
     accessRole: AccessRole,
-    defaultReminders: js.Array[AnonMethod],
+    defaultReminders: js.Array[Method],
     description: String,
     etag: etag,
     items: js.Array[Event],

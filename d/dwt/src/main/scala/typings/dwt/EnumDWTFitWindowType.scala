@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object EnumDWTFitWindowType extends js.Object {
   /** Fit the image to the width of the window */
   @js.native
   sealed trait enumFitWindowWidth extends EnumDWTFitWindowType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTFitWindowType with Double] = js.native
-  /* 0 */ @js.native
-  object enumFitWindow extends TopLevel[enumFitWindow with Double]
-  
-  /* 1 */ @js.native
-  object enumFitWindowHeight extends TopLevel[enumFitWindowHeight with Double]
-  
-  /* 2 */ @js.native
-  object enumFitWindowWidth extends TopLevel[enumFitWindowWidth with Double]
   
 }
 

@@ -21,11 +21,15 @@ trait PrimaryXAxisMinorGridLines extends js.Object {
 
 object PrimaryXAxisMinorGridLines {
   @scala.inline
-  def apply(dashArray: String = null, visible: js.UndefOr[Boolean] = js.undefined, width: Int | Double = null): PrimaryXAxisMinorGridLines = {
+  def apply(
+    dashArray: String = null,
+    visible: js.UndefOr[Boolean] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): PrimaryXAxisMinorGridLines = {
     val __obj = js.Dynamic.literal()
     if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryXAxisMinorGridLines]
   }
 }

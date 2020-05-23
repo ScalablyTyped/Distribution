@@ -14,10 +14,10 @@ package object mod {
     /* state */ typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]], 
     typings.react.mod.ReactNode
   ]) | typings.react.mod.ReactNode
-  type AsyncFulfilled[T, S] = S with typings.reactAsync.AnonData[T]
-  type AsyncInitial[T, S] = S with typings.reactAsync.AnonError
-  type AsyncPending[T, S] = S with typings.reactAsync.AnonFinishedAt[T]
-  type AsyncRejected[T, S] = S with typings.reactAsync.AnonIsFulfilled[T]
+  type AsyncFulfilled[T, S] = S with typings.reactAsync.anon.Data[T]
+  type AsyncInitial[T, S] = S with typings.reactAsync.anon.Error
+  type AsyncPending[T, S] = S with typings.reactAsync.anon.FinishedAt[T]
+  type AsyncRejected[T, S] = S with typings.reactAsync.anon.IsFulfilled[T]
   type AsyncState[T, S /* <: typings.reactAsync.mod.AbstractState[T] */] = typings.reactAsync.mod.BaseAsyncState[T, S]
   type BaseAsyncState[T, S] = (typings.reactAsync.mod.AsyncInitial[T, S]) | (typings.reactAsync.mod.AsyncPending[T, S]) | (typings.reactAsync.mod.AsyncFulfilled[T, S]) | (typings.reactAsync.mod.AsyncRejected[T, S])
   type DeferFn[T] = js.Function3[
@@ -31,7 +31,7 @@ package object mod {
     /* state */ typings.reactAsync.mod.AsyncFulfilled[T, typings.reactAsync.mod.AbstractState[T]], 
     typings.react.mod.ReactNode
   ]) | typings.react.mod.ReactNode
-  type GenericAsync = org.scalablytyped.runtime.Instantiable0[typings.reactAsync.mod.Async[js.Object]] with typings.reactAsync.AnonFulfilled
+  type GenericAsync = org.scalablytyped.runtime.Instantiable0[typings.reactAsync.mod.Async[js.Object]] with typings.reactAsync.anon.Fulfilled
   type InitialChildren[T] = (js.Function1[
     /* state */ typings.reactAsync.mod.AsyncInitial[T, typings.reactAsync.mod.AbstractState[T]], 
     typings.react.mod.ReactNode

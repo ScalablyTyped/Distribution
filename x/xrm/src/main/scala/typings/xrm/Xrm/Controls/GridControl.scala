@@ -46,6 +46,11 @@ trait GridControl extends Control {
     */
   def refresh(): Unit
   /**
+    * Refreshes the sub grid ribbon.
+    * @see {@link https://docs.microsoft.com/it-it/powerapps/developer/model-driven-apps/clientapi/reference/grids/gridcontrol/refreshribbon External Link: refreshRibbon (Client API reference)}
+    */
+  def refreshRibbon(): Unit
+  /**
     * Use this method to remove event handlers from the GridControl's OnLoad event.
     * @param handler The handler.
     */
@@ -66,10 +71,11 @@ object GridControl {
     getViewSelector: () => ViewSelector,
     getVisible: () => Boolean,
     refresh: () => Unit,
+    refreshRibbon: () => Unit,
     removeOnLoad: js.Function0[Unit] => Unit,
     setLabel: String => Unit
   ): GridControl = {
-    val __obj = js.Dynamic.literal(addOnLoad = js.Any.fromFunction1(addOnLoad), getContextType = js.Any.fromFunction0(getContextType), getControlType = js.Any.fromFunction0(getControlType), getEntityName = js.Any.fromFunction0(getEntityName), getGrid = js.Any.fromFunction0(getGrid), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getViewSelector = js.Any.fromFunction0(getViewSelector), getVisible = js.Any.fromFunction0(getVisible), refresh = js.Any.fromFunction0(refresh), removeOnLoad = js.Any.fromFunction1(removeOnLoad), setLabel = js.Any.fromFunction1(setLabel))
+    val __obj = js.Dynamic.literal(addOnLoad = js.Any.fromFunction1(addOnLoad), getContextType = js.Any.fromFunction0(getContextType), getControlType = js.Any.fromFunction0(getControlType), getEntityName = js.Any.fromFunction0(getEntityName), getGrid = js.Any.fromFunction0(getGrid), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getViewSelector = js.Any.fromFunction0(getViewSelector), getVisible = js.Any.fromFunction0(getVisible), refresh = js.Any.fromFunction0(refresh), refreshRibbon = js.Any.fromFunction0(refreshRibbon), removeOnLoad = js.Any.fromFunction1(removeOnLoad), setLabel = js.Any.fromFunction1(setLabel))
     __obj.asInstanceOf[GridControl]
   }
 }

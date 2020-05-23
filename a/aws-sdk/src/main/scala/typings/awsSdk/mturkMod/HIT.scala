@@ -92,8 +92,8 @@ trait HIT extends js.Object {
 object HIT {
   @scala.inline
   def apply(
-    AssignmentDurationInSeconds: Int | Double = null,
-    AutoApprovalDelayInSeconds: Int | Double = null,
+    AssignmentDurationInSeconds: js.UndefOr[Long] = js.undefined,
+    AutoApprovalDelayInSeconds: js.UndefOr[Long] = js.undefined,
     CreationTime: Timestamp = null,
     Description: String = null,
     Expiration: Timestamp = null,
@@ -104,10 +104,10 @@ object HIT {
     HITStatus: HITStatus = null,
     HITTypeId: EntityId = null,
     Keywords: String = null,
-    MaxAssignments: Int | Double = null,
-    NumberOfAssignmentsAvailable: Int | Double = null,
-    NumberOfAssignmentsCompleted: Int | Double = null,
-    NumberOfAssignmentsPending: Int | Double = null,
+    MaxAssignments: js.UndefOr[Integer] = js.undefined,
+    NumberOfAssignmentsAvailable: js.UndefOr[Integer] = js.undefined,
+    NumberOfAssignmentsCompleted: js.UndefOr[Integer] = js.undefined,
+    NumberOfAssignmentsPending: js.UndefOr[Integer] = js.undefined,
     QualificationRequirements: QualificationRequirementList = null,
     Question: String = null,
     RequesterAnnotation: String = null,
@@ -115,8 +115,8 @@ object HIT {
     Title: String = null
   ): HIT = {
     val __obj = js.Dynamic.literal()
-    if (AssignmentDurationInSeconds != null) __obj.updateDynamic("AssignmentDurationInSeconds")(AssignmentDurationInSeconds.asInstanceOf[js.Any])
-    if (AutoApprovalDelayInSeconds != null) __obj.updateDynamic("AutoApprovalDelayInSeconds")(AutoApprovalDelayInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(AssignmentDurationInSeconds)) __obj.updateDynamic("AssignmentDurationInSeconds")(AssignmentDurationInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoApprovalDelayInSeconds)) __obj.updateDynamic("AutoApprovalDelayInSeconds")(AutoApprovalDelayInSeconds.get.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
@@ -127,10 +127,10 @@ object HIT {
     if (HITStatus != null) __obj.updateDynamic("HITStatus")(HITStatus.asInstanceOf[js.Any])
     if (HITTypeId != null) __obj.updateDynamic("HITTypeId")(HITTypeId.asInstanceOf[js.Any])
     if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords.asInstanceOf[js.Any])
-    if (MaxAssignments != null) __obj.updateDynamic("MaxAssignments")(MaxAssignments.asInstanceOf[js.Any])
-    if (NumberOfAssignmentsAvailable != null) __obj.updateDynamic("NumberOfAssignmentsAvailable")(NumberOfAssignmentsAvailable.asInstanceOf[js.Any])
-    if (NumberOfAssignmentsCompleted != null) __obj.updateDynamic("NumberOfAssignmentsCompleted")(NumberOfAssignmentsCompleted.asInstanceOf[js.Any])
-    if (NumberOfAssignmentsPending != null) __obj.updateDynamic("NumberOfAssignmentsPending")(NumberOfAssignmentsPending.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAssignments)) __obj.updateDynamic("MaxAssignments")(MaxAssignments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfAssignmentsAvailable)) __obj.updateDynamic("NumberOfAssignmentsAvailable")(NumberOfAssignmentsAvailable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfAssignmentsCompleted)) __obj.updateDynamic("NumberOfAssignmentsCompleted")(NumberOfAssignmentsCompleted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfAssignmentsPending)) __obj.updateDynamic("NumberOfAssignmentsPending")(NumberOfAssignmentsPending.get.asInstanceOf[js.Any])
     if (QualificationRequirements != null) __obj.updateDynamic("QualificationRequirements")(QualificationRequirements.asInstanceOf[js.Any])
     if (Question != null) __obj.updateDynamic("Question")(Question.asInstanceOf[js.Any])
     if (RequesterAnnotation != null) __obj.updateDynamic("RequesterAnnotation")(RequesterAnnotation.asInstanceOf[js.Any])

@@ -14,9 +14,9 @@ trait ConfirmDeviceResponse extends js.Object {
 
 object ConfirmDeviceResponse {
   @scala.inline
-  def apply(UserConfirmationNecessary: js.UndefOr[Boolean] = js.undefined): ConfirmDeviceResponse = {
+  def apply(UserConfirmationNecessary: js.UndefOr[BooleanType] = js.undefined): ConfirmDeviceResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(UserConfirmationNecessary)) __obj.updateDynamic("UserConfirmationNecessary")(UserConfirmationNecessary.asInstanceOf[js.Any])
+    if (!js.isUndefined(UserConfirmationNecessary)) __obj.updateDynamic("UserConfirmationNecessary")(UserConfirmationNecessary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmDeviceResponse]
   }
 }

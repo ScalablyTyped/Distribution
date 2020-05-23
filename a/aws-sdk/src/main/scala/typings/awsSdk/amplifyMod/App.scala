@@ -112,7 +112,7 @@ object App {
     basicAuthCredentials: BasicAuthCredentials = null,
     buildSpec: BuildSpec = null,
     customRules: CustomRules = null,
-    enableAutoBranchCreation: js.UndefOr[Boolean] = js.undefined,
+    enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.undefined,
     iamServiceRoleArn: ServiceRoleArn = null,
     productionBranch: ProductionBranch = null,
     tags: TagMap = null
@@ -123,7 +123,7 @@ object App {
     if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials.asInstanceOf[js.Any])
     if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec.asInstanceOf[js.Any])
     if (customRules != null) __obj.updateDynamic("customRules")(customRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoBranchCreation)) __obj.updateDynamic("enableAutoBranchCreation")(enableAutoBranchCreation.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoBranchCreation)) __obj.updateDynamic("enableAutoBranchCreation")(enableAutoBranchCreation.get.asInstanceOf[js.Any])
     if (iamServiceRoleArn != null) __obj.updateDynamic("iamServiceRoleArn")(iamServiceRoleArn.asInstanceOf[js.Any])
     if (productionBranch != null) __obj.updateDynamic("productionBranch")(productionBranch.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

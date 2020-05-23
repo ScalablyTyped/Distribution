@@ -1,6 +1,6 @@
 package typings.atom.mod
 
-import typings.atom.ReadonlyRange
+import typings.atom.anon.ReadonlyRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

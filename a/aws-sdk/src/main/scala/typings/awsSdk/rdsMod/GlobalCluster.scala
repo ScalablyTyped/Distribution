@@ -52,7 +52,7 @@ object GlobalCluster {
   @scala.inline
   def apply(
     DatabaseName: String = null,
-    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     GlobalClusterArn: String = null,
@@ -60,11 +60,11 @@ object GlobalCluster {
     GlobalClusterMembers: GlobalClusterMemberList = null,
     GlobalClusterResourceId: String = null,
     Status: String = null,
-    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
   ): GlobalCluster = {
     val __obj = js.Dynamic.literal()
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (GlobalClusterArn != null) __obj.updateDynamic("GlobalClusterArn")(GlobalClusterArn.asInstanceOf[js.Any])
@@ -72,7 +72,7 @@ object GlobalCluster {
     if (GlobalClusterMembers != null) __obj.updateDynamic("GlobalClusterMembers")(GlobalClusterMembers.asInstanceOf[js.Any])
     if (GlobalClusterResourceId != null) __obj.updateDynamic("GlobalClusterResourceId")(GlobalClusterResourceId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalCluster]
   }
 }

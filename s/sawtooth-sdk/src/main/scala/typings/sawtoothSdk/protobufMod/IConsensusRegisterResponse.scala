@@ -17,14 +17,14 @@ trait IConsensusRegisterResponse extends js.Object {
 object IConsensusRegisterResponse {
   @scala.inline
   def apply(
-    chainHead: IConsensusBlock = null,
-    peers: js.Array[IConsensusPeerInfo] = null,
-    status: Status = null
+    chainHead: js.UndefOr[Null | IConsensusBlock] = js.undefined,
+    peers: js.UndefOr[Null | js.Array[IConsensusPeerInfo]] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
   ): IConsensusRegisterResponse = {
     val __obj = js.Dynamic.literal()
-    if (chainHead != null) __obj.updateDynamic("chainHead")(chainHead.asInstanceOf[js.Any])
-    if (peers != null) __obj.updateDynamic("peers")(peers.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(chainHead)) __obj.updateDynamic("chainHead")(chainHead.asInstanceOf[js.Any])
+    if (!js.isUndefined(peers)) __obj.updateDynamic("peers")(peers.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusRegisterResponse]
   }
 }

@@ -25,7 +25,7 @@ object OutgoingRequestMessageOptions {
   def apply(
     callId: String = null,
     callIdPrefix: String = null,
-    cseq: Int | Double = null,
+    cseq: js.UndefOr[Double] = js.undefined,
     forceRport: js.UndefOr[Boolean] = js.undefined,
     fromDisplayName: String = null,
     fromTag: String = null,
@@ -40,11 +40,11 @@ object OutgoingRequestMessageOptions {
     val __obj = js.Dynamic.literal()
     if (callId != null) __obj.updateDynamic("callId")(callId.asInstanceOf[js.Any])
     if (callIdPrefix != null) __obj.updateDynamic("callIdPrefix")(callIdPrefix.asInstanceOf[js.Any])
-    if (cseq != null) __obj.updateDynamic("cseq")(cseq.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRport)) __obj.updateDynamic("forceRport")(forceRport.asInstanceOf[js.Any])
+    if (!js.isUndefined(cseq)) __obj.updateDynamic("cseq")(cseq.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRport)) __obj.updateDynamic("forceRport")(forceRport.get.asInstanceOf[js.Any])
     if (fromDisplayName != null) __obj.updateDynamic("fromDisplayName")(fromDisplayName.asInstanceOf[js.Any])
     if (fromTag != null) __obj.updateDynamic("fromTag")(fromTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(hackViaTcp)) __obj.updateDynamic("hackViaTcp")(hackViaTcp.asInstanceOf[js.Any])
+    if (!js.isUndefined(hackViaTcp)) __obj.updateDynamic("hackViaTcp")(hackViaTcp.get.asInstanceOf[js.Any])
     if (optionTags != null) __obj.updateDynamic("optionTags")(optionTags.asInstanceOf[js.Any])
     if (routeSet != null) __obj.updateDynamic("routeSet")(routeSet.asInstanceOf[js.Any])
     if (toDisplayName != null) __obj.updateDynamic("toDisplayName")(toDisplayName.asInstanceOf[js.Any])

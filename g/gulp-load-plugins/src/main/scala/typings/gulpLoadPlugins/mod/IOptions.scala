@@ -34,9 +34,9 @@ object IOptions {
     scope: js.Array[String] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(camelize)) __obj.updateDynamic("camelize")(camelize.asInstanceOf[js.Any])
+    if (!js.isUndefined(camelize)) __obj.updateDynamic("camelize")(camelize.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (rename != null) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
     if (replaceString != null) __obj.updateDynamic("replaceString")(replaceString.asInstanceOf[js.Any])

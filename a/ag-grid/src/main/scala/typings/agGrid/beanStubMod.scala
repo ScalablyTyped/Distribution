@@ -4,7 +4,7 @@ import typings.agGrid.eventsMod.AgEvent
 import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
 import typings.agGrid.iEventEmitterMod.IEventEmitter
 import typings.std.HTMLElement
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ object beanStubMod extends js.Object {
       listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]
     ): Unit = js.native
     def addDestroyableEventListener(eElement: HTMLElement, event: String, listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]): Unit = js.native
-    def addDestroyableEventListener(eElement: Window_, event: String, listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def addDestroyableEventListener(eElement: Window, event: String, listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]): Unit = js.native
     def destroy(): Unit = js.native
     def dispatchEvent[T /* <: AgEvent */](event: T): Unit = js.native
     def dispatchEventAsync(event: AgEvent): Unit = js.native

@@ -6,17 +6,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Slick.Editors.Editor")
-@js.native
-class Editor[T /* <: SlickData */] protected () extends js.Object {
-  def this(args: EditorOptions[T]) = this()
-  def applyValue(item: T, state: String): Unit = js.native
-  def destroy(): Unit = js.native
-  def focus(): Unit = js.native
-  def init(): Unit = js.native
-  def isValueChanged(): Boolean = js.native
-  def loadValue(item: T): Unit = js.native
-  def serializeValue(): js.Any = js.native
-  def validate(): ValidateResults = js.native
+trait Editor[T /* <: SlickData */] extends js.Object {
+  def applyValue(item: T, state: String): Unit
+  def destroy(): Unit
+  def focus(): Unit
+  def init(): Unit
+  def isValueChanged(): Boolean
+  def loadValue(item: T): Unit
+  def serializeValue(): js.Any
+  def validate(): ValidateResults
+}
+
+object Editor {
+  @scala.inline
+  def apply[T](
+    applyValue: (T, String) => Unit,
+    destroy: () => Unit,
+    focus: () => Unit,
+    init: () => Unit,
+    isValueChanged: () => Boolean,
+    loadValue: T => Unit,
+    serializeValue: () => js.Any,
+    validate: () => ValidateResults
+  ): Editor[T] = {
+    val __obj = js.Dynamic.literal(applyValue = js.Any.fromFunction2(applyValue), destroy = js.Any.fromFunction0(destroy), focus = js.Any.fromFunction0(focus), init = js.Any.fromFunction0(init), isValueChanged = js.Any.fromFunction0(isValueChanged), loadValue = js.Any.fromFunction1(loadValue), serializeValue = js.Any.fromFunction0(serializeValue), validate = js.Any.fromFunction0(validate))
+    __obj.asInstanceOf[Editor[T]]
+  }
 }
 

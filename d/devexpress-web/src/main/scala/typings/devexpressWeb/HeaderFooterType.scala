@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,20 +36,6 @@ object HeaderFooterType extends js.Object {
     */
   @js.native
   sealed trait Primary extends HeaderFooterType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HeaderFooterType with Double] = js.native
-  /* 2 */ @js.native
-  object Even extends TopLevel[Even with Double]
-  
-  /* 0 */ @js.native
-  object First extends TopLevel[First with Double]
-  
-  /* 1 */ @js.native
-  object Odd extends TopLevel[Odd with Double]
-  
-  /* 1 */ @js.native
-  object Primary extends TopLevel[Primary with Double]
   
 }
 

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox 1.1]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
   */
 @js.native
@@ -26,9 +26,9 @@ trait Location extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
@@ -44,9 +44,9 @@ trait Location extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param options - An object literal that contains one or more of the following properties.
@@ -58,25 +58,25 @@ trait Location extends js.Object {
   /**
     * Sets the location of an appointment.
     *
-    * The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment. 
+    * The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment.
     * Setting the location of an appointment overwrites the current location.
     *
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
     *
     * @param location - The location of the appointment. The string is limited to 255 characters.
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
-    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If setting the location fails, the `asyncResult.error` property will contain an error code.
     */
   def setAsync(location: String): Unit = js.native

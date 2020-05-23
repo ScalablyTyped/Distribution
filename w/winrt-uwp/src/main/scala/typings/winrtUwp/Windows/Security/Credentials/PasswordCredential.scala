@@ -6,26 +6,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the password credential store. */
-@JSGlobal("Windows.Security.Credentials.PasswordCredential")
-@js.native
-/** Creates and initializes a new, empty instance of the PasswordCredential object. */
-class PasswordCredential () extends js.Object {
-  /**
-    * Creates and initializes a new instance of the PasswordCredential object that contains the provided credential data.
-    * @param resource The resource for which the credentials are used.
-    * @param userName The user name that must be present in the credentials.
-    * @param password The password for the created credentials.
-    */
-  def this(resource: String, userName: String, password: String) = this()
+trait PasswordCredential extends js.Object {
   /** Gets or sets the password string of the credential. */
-  var password: String = js.native
+  var password: String
   /** This API is intended for internal use only should not be used in your code. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   /** Gets or sets the resource of the credential. */
-  var resource: String = js.native
+  var resource: String
   /** Gets or sets the user name of the credential. */
-  var userName: String = js.native
+  var userName: String
   /** Populates the password for the credential. After the operation returns successfully, you can get the password from the Password property. */
-  def retrievePassword(): Unit = js.native
+  def retrievePassword(): Unit
+}
+
+object PasswordCredential {
+  @scala.inline
+  def apply(
+    password: String,
+    properties: IPropertySet,
+    resource: String,
+    retrievePassword: () => Unit,
+    userName: String
+  ): PasswordCredential = {
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], retrievePassword = js.Any.fromFunction0(retrievePassword), userName = userName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PasswordCredential]
+  }
 }
 

@@ -19,7 +19,7 @@ object BelongsToManyAddAssociationMixinOptions {
   @scala.inline
   def apply(validate: js.UndefOr[Boolean] = js.undefined): BelongsToManyAddAssociationMixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BelongsToManyAddAssociationMixinOptions]
   }
 }

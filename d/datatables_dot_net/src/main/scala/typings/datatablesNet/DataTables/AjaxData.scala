@@ -16,16 +16,16 @@ object AjaxData {
   @scala.inline
   def apply(
     data: js.Any,
-    draw: Int | Double = null,
+    draw: js.UndefOr[Double] = js.undefined,
     error: String = null,
-    recordsFiltered: Int | Double = null,
-    recordsTotal: Int | Double = null
+    recordsFiltered: js.UndefOr[Double] = js.undefined,
+    recordsTotal: js.UndefOr[Double] = js.undefined
   ): AjaxData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (draw != null) __obj.updateDynamic("draw")(draw.asInstanceOf[js.Any])
+    if (!js.isUndefined(draw)) __obj.updateDynamic("draw")(draw.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (recordsFiltered != null) __obj.updateDynamic("recordsFiltered")(recordsFiltered.asInstanceOf[js.Any])
-    if (recordsTotal != null) __obj.updateDynamic("recordsTotal")(recordsTotal.asInstanceOf[js.Any])
+    if (!js.isUndefined(recordsFiltered)) __obj.updateDynamic("recordsFiltered")(recordsFiltered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recordsTotal)) __obj.updateDynamic("recordsTotal")(recordsTotal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxData]
   }
 }

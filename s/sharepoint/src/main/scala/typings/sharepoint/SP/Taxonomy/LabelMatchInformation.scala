@@ -1,15 +1,12 @@
 package typings.sharepoint.SP.Taxonomy
 
-import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.ClientObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.LabelMatchInformation")
 @js.native
-class LabelMatchInformation protected () extends ClientObject {
-  def this(context: ClientContext) = this()
+trait LabelMatchInformation extends ClientObject {
   def get_defaultLabelOnly(): Boolean = js.native
   def get_excludeKeyword(): Boolean = js.native
   def get_lcid(): Double = js.native

@@ -60,7 +60,7 @@ object ConfigRuleEvaluationStatus {
     ConfigRuleId: String = null,
     ConfigRuleName: ConfigRuleName = null,
     FirstActivatedTime: Date = null,
-    FirstEvaluationStarted: js.UndefOr[scala.Boolean] = js.undefined,
+    FirstEvaluationStarted: js.UndefOr[Boolean] = js.undefined,
     LastDeactivatedTime: Date = null,
     LastErrorCode: String = null,
     LastErrorMessage: String = null,
@@ -74,7 +74,7 @@ object ConfigRuleEvaluationStatus {
     if (ConfigRuleId != null) __obj.updateDynamic("ConfigRuleId")(ConfigRuleId.asInstanceOf[js.Any])
     if (ConfigRuleName != null) __obj.updateDynamic("ConfigRuleName")(ConfigRuleName.asInstanceOf[js.Any])
     if (FirstActivatedTime != null) __obj.updateDynamic("FirstActivatedTime")(FirstActivatedTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(FirstEvaluationStarted)) __obj.updateDynamic("FirstEvaluationStarted")(FirstEvaluationStarted.asInstanceOf[js.Any])
+    if (!js.isUndefined(FirstEvaluationStarted)) __obj.updateDynamic("FirstEvaluationStarted")(FirstEvaluationStarted.get.asInstanceOf[js.Any])
     if (LastDeactivatedTime != null) __obj.updateDynamic("LastDeactivatedTime")(LastDeactivatedTime.asInstanceOf[js.Any])
     if (LastErrorCode != null) __obj.updateDynamic("LastErrorCode")(LastErrorCode.asInstanceOf[js.Any])
     if (LastErrorMessage != null) __obj.updateDynamic("LastErrorMessage")(LastErrorMessage.asInstanceOf[js.Any])

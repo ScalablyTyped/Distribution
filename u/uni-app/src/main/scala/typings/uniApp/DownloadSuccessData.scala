@@ -17,9 +17,9 @@ trait DownloadSuccessData extends js.Object {
 
 object DownloadSuccessData {
   @scala.inline
-  def apply(statusCode: Int | Double = null, tempFilePath: String = null): DownloadSuccessData = {
+  def apply(statusCode: js.UndefOr[Double] = js.undefined, tempFilePath: String = null): DownloadSuccessData = {
     val __obj = js.Dynamic.literal()
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadSuccessData]
   }

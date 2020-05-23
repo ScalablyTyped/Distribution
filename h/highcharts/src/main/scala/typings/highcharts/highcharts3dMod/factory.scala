@@ -1,6 +1,6 @@
 package typings.highcharts.highcharts3dMod
 
-import typings.highcharts.TypeofHighcharts
+import typings.highcharts.anon.TypeofHighcharts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

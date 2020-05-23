@@ -33,7 +33,7 @@ object IResizeSensorProps {
   @scala.inline
   def apply(onResize: js.Array[IResizeEntry] => Unit, observeParents: js.UndefOr[Boolean] = js.undefined): IResizeSensorProps = {
     val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
-    if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents.asInstanceOf[js.Any])
+    if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResizeSensorProps]
   }
 }

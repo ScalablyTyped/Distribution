@@ -11,9 +11,13 @@ trait RepositoryAssociation extends js.Object {
     */
   var AssociationArn: js.UndefOr[Arn] = js.native
   /**
-    * The id of the repository association.
+    * The ID of the repository association.
     */
   var AssociationId: js.UndefOr[typings.awsSdk.codegurureviewerMod.AssociationId] = js.native
+  /**
+    *  The Amazon Resource Name (ARN) identifying the repository connection. 
+    */
+  var ConnectionArn: js.UndefOr[typings.awsSdk.codegurureviewerMod.ConnectionArn] = js.native
   /**
     * The time, in milliseconds since the epoch, when the repository association was created.
     */
@@ -49,6 +53,7 @@ object RepositoryAssociation {
   def apply(
     AssociationArn: Arn = null,
     AssociationId: AssociationId = null,
+    ConnectionArn: ConnectionArn = null,
     CreatedTimeStamp: TimeStamp = null,
     LastUpdatedTimeStamp: TimeStamp = null,
     Name: Name = null,
@@ -60,6 +65,7 @@ object RepositoryAssociation {
     val __obj = js.Dynamic.literal()
     if (AssociationArn != null) __obj.updateDynamic("AssociationArn")(AssociationArn.asInstanceOf[js.Any])
     if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
+    if (ConnectionArn != null) __obj.updateDynamic("ConnectionArn")(ConnectionArn.asInstanceOf[js.Any])
     if (CreatedTimeStamp != null) __obj.updateDynamic("CreatedTimeStamp")(CreatedTimeStamp.asInstanceOf[js.Any])
     if (LastUpdatedTimeStamp != null) __obj.updateDynamic("LastUpdatedTimeStamp")(LastUpdatedTimeStamp.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

@@ -18,21 +18,21 @@ object AnnotOptions {
   @scala.inline
   def apply(
     flag: AnnotOptionsFlag = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     icon: AnnotOptionsIcon = null,
     open: js.UndefOr[Boolean] = js.undefined,
     richText: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): AnnotOptions = {
     val __obj = js.Dynamic.literal()
     if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (!js.isUndefined(richText)) __obj.updateDynamic("richText")(richText.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(richText)) __obj.updateDynamic("richText")(richText.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotOptions]
   }
 }

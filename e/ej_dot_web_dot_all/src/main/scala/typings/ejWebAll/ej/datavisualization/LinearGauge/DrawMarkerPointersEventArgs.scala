@@ -53,28 +53,28 @@ object DrawMarkerPointersEventArgs {
     cancel: js.UndefOr[Boolean] = js.undefined,
     context: js.Any = null,
     markerElement: js.Any = null,
-    markerPointerIndex: Int | Double = null,
+    markerPointerIndex: js.UndefOr[Double] = js.undefined,
     `object`: js.Any = null,
-    pointerAngle: Int | Double = null,
-    pointerValue: Int | Double = null,
+    pointerAngle: js.UndefOr[Double] = js.undefined,
+    pointerValue: js.UndefOr[Double] = js.undefined,
     position: js.Any = null,
     scaleElement: js.Any = null,
-    scaleIndex: Int | Double = null,
+    scaleIndex: js.UndefOr[Double] = js.undefined,
     style: String = null,
     `type`: js.Any = null
   ): DrawMarkerPointersEventArgs = {
     val __obj = js.Dynamic.literal()
     if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (markerElement != null) __obj.updateDynamic("markerElement")(markerElement.asInstanceOf[js.Any])
-    if (markerPointerIndex != null) __obj.updateDynamic("markerPointerIndex")(markerPointerIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerPointerIndex)) __obj.updateDynamic("markerPointerIndex")(markerPointerIndex.get.asInstanceOf[js.Any])
     if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (pointerAngle != null) __obj.updateDynamic("pointerAngle")(pointerAngle.asInstanceOf[js.Any])
-    if (pointerValue != null) __obj.updateDynamic("pointerValue")(pointerValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointerAngle)) __obj.updateDynamic("pointerAngle")(pointerAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointerValue)) __obj.updateDynamic("pointerValue")(pointerValue.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
-    if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleIndex)) __obj.updateDynamic("scaleIndex")(scaleIndex.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawMarkerPointersEventArgs]

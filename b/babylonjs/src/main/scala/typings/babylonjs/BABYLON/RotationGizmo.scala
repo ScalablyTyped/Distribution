@@ -4,18 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.RotationGizmo")
 @js.native
-/**
-  * Creates a RotationGizmo
-  * @param gizmoLayer The utility layer the gizmo will be added to
-  * @param tessellation Amount of tessellation to be used when creating rotation circles
-  * @param useEulerRotation Use and update Euler angle instead of quaternion
-  */
-class RotationGizmo () extends Gizmo {
-  def this(gizmoLayer: UtilityLayerRenderer) = this()
-  def this(gizmoLayer: UtilityLayerRenderer, tessellation: Double) = this()
-  def this(gizmoLayer: UtilityLayerRenderer, tessellation: Double, useEulerRotation: Boolean) = this()
+trait RotationGizmo extends Gizmo {
   var _meshAttached: js.Any = js.native
   /** Fires an event when any of it's sub gizmos are released from dragging */
   var onDragEndObservable: Observable[_] = js.native

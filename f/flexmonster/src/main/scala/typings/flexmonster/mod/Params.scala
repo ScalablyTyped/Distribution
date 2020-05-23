@@ -163,7 +163,7 @@ object Params {
     if (reportfileerror != null) __obj.updateDynamic("reportfileerror")(js.Any.fromFunction0(reportfileerror))
     if (reportfileloaded != null) __obj.updateDynamic("reportfileloaded")(js.Any.fromFunction0(reportfileloaded))
     if (runningquery != null) __obj.updateDynamic("runningquery")(js.Any.fromFunction0(runningquery))
-    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar.get.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction0(update))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]

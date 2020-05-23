@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonEncryptedData
+import typings.weixinApp.anon.EncryptedData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +10,14 @@ trait GetShareInfoOptions
   /** shareTicket */
   var shareTicket: String
   @JSName("success")
-  def success_MGetShareInfoOptions(res: AnonEncryptedData): Unit
+  def success_MGetShareInfoOptions(res: EncryptedData): Unit
 }
 
 object GetShareInfoOptions {
   @scala.inline
   def apply(
     shareTicket: String,
-    success: AnonEncryptedData => Unit,
+    success: EncryptedData => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetShareInfoOptions = {

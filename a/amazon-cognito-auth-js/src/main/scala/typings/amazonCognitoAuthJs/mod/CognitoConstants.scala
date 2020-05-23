@@ -1,6 +1,6 @@
 package typings.amazonCognitoAuthJs.mod
 
-import typings.amazonCognitoAuthJs.AnonContentType
+import typings.amazonCognitoAuthJs.anon.ContentType
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ trait CognitoConstants extends js.Object {
   var EQUALSIGN: String
   var ERROR: String
   var ERROR_DESCRIPTION: String
-  var HEADER: AnonContentType
+  var HEADER: ContentType
   var HOSTNAMEREGEX: RegExp
   var IDTOKEN: String
   var PARAMETERERROR: String
@@ -74,7 +74,7 @@ object CognitoConstants {
     EQUALSIGN: String,
     ERROR: String,
     ERROR_DESCRIPTION: String,
-    HEADER: AnonContentType,
+    HEADER: ContentType,
     HOSTNAMEREGEX: RegExp,
     IDTOKEN: String,
     PARAMETERERROR: String,

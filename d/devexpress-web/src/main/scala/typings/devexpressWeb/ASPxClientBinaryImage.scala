@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ASPxBinaryImage control.
   */
-@JSGlobal("ASPxClientBinaryImage")
 @js.native
-class ASPxClientBinaryImage () extends ASPxClientEdit {
+trait ASPxClientBinaryImage extends ASPxClientEdit {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -47,16 +46,5 @@ class ASPxClientBinaryImage () extends ASPxClientEdit {
     * @param height An integer value that specifies the control's height.
     */
   def SetSize(width: Double, height: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientBinaryImage")
-@js.native
-object ASPxClientBinaryImage extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientBinaryImage type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientBinaryImage = js.native
 }
 

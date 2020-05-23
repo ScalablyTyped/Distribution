@@ -28,6 +28,7 @@ trait Moment
     */
   def add(unit: DurationConstructor, amount: Double): Moment = js.native
   def calendar(): String = js.native
+  def calendar(formats: CalendarSpec): String = js.native
   def calendar(time: MomentInput): String = js.native
   def calendar(time: MomentInput, formats: CalendarSpec): String = js.native
   def creationData(): MomentCreationData = js.native
@@ -113,6 +114,7 @@ trait Moment
   def isoWeekday(d: Double): Moment = js.native
   def isoWeeks(): Double = js.native
   def isoWeeks(d: Double): Moment = js.native
+  def isoWeeksInISOWeekYear(): Double = js.native
   def isoWeeksInYear(): Double = js.native
   /**
     * @deprecated as of 2.8.0, use locale
@@ -216,6 +218,7 @@ trait Moment
   def weekday(d: Double): Moment = js.native
   def weeks(): Double = js.native
   def weeks(d: Double): Moment = js.native
+  def weeksInWeekYear(): Double = js.native
   def weeksInYear(): Double = js.native
   def year(): Double = js.native
   def year(y: Double): Moment = js.native

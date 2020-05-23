@@ -13,10 +13,10 @@ trait SizeRange extends js.Object {
 
 object SizeRange {
   @scala.inline
-  def apply(maximumSize: Int | Double = null, minimumSize: Int | Double = null): SizeRange = {
+  def apply(maximumSize: js.UndefOr[Double] = js.undefined, minimumSize: js.UndefOr[Double] = js.undefined): SizeRange = {
     val __obj = js.Dynamic.literal()
-    if (maximumSize != null) __obj.updateDynamic("maximumSize")(maximumSize.asInstanceOf[js.Any])
-    if (minimumSize != null) __obj.updateDynamic("minimumSize")(minimumSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumSize)) __obj.updateDynamic("maximumSize")(maximumSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumSize)) __obj.updateDynamic("minimumSize")(minimumSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeRange]
   }
 }

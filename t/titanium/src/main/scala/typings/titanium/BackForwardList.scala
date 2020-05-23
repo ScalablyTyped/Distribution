@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation._
   */
 trait BackForwardList extends js.Object {
   /**
-  	 * The item immediately preceding the current item.
-  	 */
+    * The item immediately preceding the current item.
+    */
   var backItem: js.UndefOr[BackForwardListItem] = js.undefined
   /**
-  	 * The portion of the list preceding the current item.
-  	 */
+    * The portion of the list preceding the current item.
+    */
   var backList: js.UndefOr[js.Array[BackForwardListItem]] = js.undefined
   /**
-  	 * The current item.
-  	 */
+    * The current item.
+    */
   var currentItem: js.UndefOr[BackForwardListItem] = js.undefined
   /**
-  	 * The item immediately following the current item.
-  	 */
+    * The item immediately following the current item.
+    */
   var forwardItem: js.UndefOr[BackForwardListItem] = js.undefined
   /**
-  	 * The portion of the list following the current item.
-  	 */
+    * The portion of the list following the current item.
+    */
   var forwardList: js.UndefOr[js.Array[BackForwardListItem]] = js.undefined
 }
 

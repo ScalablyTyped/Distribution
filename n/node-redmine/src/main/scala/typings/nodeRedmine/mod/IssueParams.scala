@@ -21,29 +21,29 @@ trait IssueParams extends js.Object {
 object IssueParams {
   @scala.inline
   def apply(
-    assigned_to_id: Int | Double = null,
-    category_id: Int | Double = null,
+    assigned_to_id: js.UndefOr[Double] = js.undefined,
+    category_id: js.UndefOr[Double] = js.undefined,
     description: String = null,
     notes: String = null,
-    parent_issue_id: Int | Double = null,
-    priority_id: Int | Double = null,
-    project_id: Int | Double = null,
-    status_id: Int | Double = null,
+    parent_issue_id: js.UndefOr[Double] = js.undefined,
+    priority_id: js.UndefOr[Double] = js.undefined,
+    project_id: js.UndefOr[Double] = js.undefined,
+    status_id: js.UndefOr[Double] = js.undefined,
     subject: String = null,
-    tracker_id: Int | Double = null,
+    tracker_id: js.UndefOr[Double] = js.undefined,
     uploads: js.Array[UploadRecord] = null
   ): IssueParams = {
     val __obj = js.Dynamic.literal()
-    if (assigned_to_id != null) __obj.updateDynamic("assigned_to_id")(assigned_to_id.asInstanceOf[js.Any])
-    if (category_id != null) __obj.updateDynamic("category_id")(category_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(assigned_to_id)) __obj.updateDynamic("assigned_to_id")(assigned_to_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(category_id)) __obj.updateDynamic("category_id")(category_id.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (parent_issue_id != null) __obj.updateDynamic("parent_issue_id")(parent_issue_id.asInstanceOf[js.Any])
-    if (priority_id != null) __obj.updateDynamic("priority_id")(priority_id.asInstanceOf[js.Any])
-    if (project_id != null) __obj.updateDynamic("project_id")(project_id.asInstanceOf[js.Any])
-    if (status_id != null) __obj.updateDynamic("status_id")(status_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent_issue_id)) __obj.updateDynamic("parent_issue_id")(parent_issue_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority_id)) __obj.updateDynamic("priority_id")(priority_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(project_id)) __obj.updateDynamic("project_id")(project_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(status_id)) __obj.updateDynamic("status_id")(status_id.get.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (tracker_id != null) __obj.updateDynamic("tracker_id")(tracker_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracker_id)) __obj.updateDynamic("tracker_id")(tracker_id.get.asInstanceOf[js.Any])
     if (uploads != null) __obj.updateDynamic("uploads")(uploads.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssueParams]
   }

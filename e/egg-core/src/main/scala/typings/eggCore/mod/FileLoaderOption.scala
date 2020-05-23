@@ -1,6 +1,6 @@
 package typings.eggCore.mod
 
-import typings.eggCore.AnonPath
+import typings.eggCore.anon.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait FileLoaderOption extends js.Object {
   /** ignore the files when load, support glob */
   var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
   /** custom file exports, receive two parameters, first is the inject object(if not js file, will be content buffer), second is an `options` object that contain `path` */
-  var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ AnonPath, _]] = js.undefined
+  var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, _]] = js.undefined
   /** an object that be the argument when invoke the function */
   var inject: js.UndefOr[js.Object] = js.undefined
   /** match the files when load, support glob, default to all js files */
@@ -37,20 +37,20 @@ object FileLoaderOption {
     caseStyle: String | (js.Function1[/* str */ String, js.Array[String]]) = null,
     filter: /* obj */ js.Object => Boolean = null,
     ignore: String | js.Array[String] = null,
-    initializer: (/* obj */ js.Object, /* options */ AnonPath) => _ = null,
+    initializer: (/* obj */ js.Object, /* options */ Path) => _ = null,
     inject: js.Object = null,
     `match`: String | js.Array[String] = null,
     `override`: js.UndefOr[Boolean] = js.undefined
   ): FileLoaderOption = {
     val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (!js.isUndefined(call)) __obj.updateDynamic("call")(call.asInstanceOf[js.Any])
+    if (!js.isUndefined(call)) __obj.updateDynamic("call")(call.get.asInstanceOf[js.Any])
     if (caseStyle != null) __obj.updateDynamic("caseStyle")(caseStyle.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (initializer != null) __obj.updateDynamic("initializer")(js.Any.fromFunction2(initializer))
     if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileLoaderOption]
   }
 }

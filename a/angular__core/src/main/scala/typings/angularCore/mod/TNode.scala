@@ -53,13 +53,27 @@ trait TNode extends js.Object {
     */
   var classBindings: TStylingRange
   /**
-    * A collection of all class static values for an element.
+    * A collection of all class static values for an element (including from host).
     *
     * This field will be populated if and when:
     *
     * - There are one or more initial classes on an element (e.g. `<div class="one two three">`)
+    * - There are one or more initial classes on an directive/component host
+    *   (e.g. `@Directive({host: {class: "SOME_CLASS" } }`)
     */
   var classes: String | Null
+  /**
+    * A collection of all class static values for an element excluding host sources.
+    *
+    * Populated when there are one or more initial classes on an element
+    * (e.g. `<div class="SOME_CLASS">`)
+    * Must be stored separately from `tNode.classes` to facilitate setting directive
+    * inputs that shadow the `class` property. If we used `tNode.classes` as is for shadowed inputs,
+    * we would feed host classes back into directives as "inputs". If we used `tNode.attrs`, we would
+    * have to concatenate the attributes on every template pass. Instead, we process once on first
+    * create pass and store here.
+    */
+  var classesWithoutHost: String | Null
   /**
     * Stores final exclusive index of the directives.
     */
@@ -286,13 +300,27 @@ trait TNode extends js.Object {
     */
   var styleBindings: TStylingRange
   /**
-    * A collection of all style static values for an element.
+    * A collection of all `style` static values for an element (including from host).
     *
     * This field will be populated if and when:
     *
-    * - There are one or more initial styles on an element (e.g. `<div style="width:200px">`)
+    * - There are one or more initial `style`s on an element (e.g. `<div style="width:200px;">`)
+    * - There are one or more initial `style`s on a directive/component host
+    *   (e.g. `@Directive({host: {style: "width:200px;" } }`)
     */
   var styles: String | Null
+  /**
+    * A collection of all `style` static values for an element excluding host sources.
+    *
+    * Populated when there are one or more initial `style`s on an element
+    * (e.g. `<div style="width:200px;">`)
+    * Must be stored separately from `tNode.styles` to facilitate setting directive
+    * inputs that shadow the `style` property. If we used `tNode.styles` as is for shadowed inputs,
+    * we would feed host styles back into directives as "inputs". If we used `tNode.attrs`, we would
+    * have to concatenate the attributes on every template pass. Instead, we process once on first
+    * create pass and store here.
+    */
+  var stylesWithoutHost: String | Null
   /**
     * The TView or TViews attached to this node.
     *
@@ -336,7 +364,8 @@ object TNode {
     attrs: TAttributes = null,
     child: TNode = null,
     classes: String = null,
-    initialInputs: InitialInputData = null,
+    classesWithoutHost: String = null,
+    initialInputs: js.UndefOr[Null | InitialInputData] = js.undefined,
     inputs: PropertyAliases = null,
     localNames: js.Array[String | Double] = null,
     mergedAttrs: TAttributes = null,
@@ -346,32 +375,18 @@ object TNode {
     projection: (js.Array[TNode | js.Array[RNode]]) | Double = null,
     projectionNext: TNode = null,
     propertyBindings: js.Array[Double] = null,
-    residualClasses: KeyValueArray[_] = null,
-    residualStyles: KeyValueArray[_] = null,
+    residualClasses: js.UndefOr[Null | KeyValueArray[_]] = js.undefined,
+    residualStyles: js.UndefOr[Null | KeyValueArray[_]] = js.undefined,
     styles: String = null,
+    stylesWithoutHost: String = null,
     tViews: TView | js.Array[TView] = null,
     tagName: String = null
   ): TNode = {
-    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], attrs = attrs.asInstanceOf[js.Any], child = child.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], classesWithoutHost = classesWithoutHost.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], localNames = localNames.asInstanceOf[js.Any], mergedAttrs = mergedAttrs.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], projectionNext = projectionNext.asInstanceOf[js.Any], propertyBindings = propertyBindings.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], stylesWithoutHost = stylesWithoutHost.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (localNames != null) __obj.updateDynamic("localNames")(localNames.asInstanceOf[js.Any])
-    if (mergedAttrs != null) __obj.updateDynamic("mergedAttrs")(mergedAttrs.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (projectionNext != null) __obj.updateDynamic("projectionNext")(projectionNext.asInstanceOf[js.Any])
-    if (propertyBindings != null) __obj.updateDynamic("propertyBindings")(propertyBindings.asInstanceOf[js.Any])
-    if (residualClasses != null) __obj.updateDynamic("residualClasses")(residualClasses.asInstanceOf[js.Any])
-    if (residualStyles != null) __obj.updateDynamic("residualStyles")(residualStyles.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tViews != null) __obj.updateDynamic("tViews")(tViews.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialInputs)) __obj.updateDynamic("initialInputs")(initialInputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(residualClasses)) __obj.updateDynamic("residualClasses")(residualClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(residualStyles)) __obj.updateDynamic("residualStyles")(residualStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[TNode]
   }
 }

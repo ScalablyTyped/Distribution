@@ -1,13 +1,13 @@
 package typings.oracleOraclejet.ojmasonrylayoutMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonDictpropNameTile
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonFromIndex
-import typings.oracleOraclejet.AnonLabelCut
-import typings.oracleOraclejet.AnonPreviousSizeStyleClass
-import typings.oracleOraclejet.AnonTile
-import typings.oracleOraclejet.AnonToIndex
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.DictpropNameTile
+import typings.oracleOraclejet.anon.Element
+import typings.oracleOraclejet.anon.FromIndex
+import typings.oracleOraclejet.anon.LabelCut
+import typings.oracleOraclejet.anon.PreviousSizeStyleClass
+import typings.oracleOraclejet.anon.Tile
+import typings.oracleOraclejet.anon.ToIndex
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd
@@ -44,7 +44,7 @@ trait ojMasonryLayout extends baseComponent[ojMasonryLayoutSettableProperties] {
   var onReorderHandleChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
   var reorderHandle: String | Null = js.native
   @JSName("translations")
-  var translations_ojMasonryLayout: AnonLabelCut = js.native
+  var translations_ojMasonryLayout: LabelCut = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
     `type`: typings.oracleOraclejet.oracleOraclejetStrings.ojAnimateEnd,
@@ -177,21 +177,21 @@ trait ojMasonryLayout extends baseComponent[ojMasonryLayoutSettableProperties] {
   @JSName("setProperty")
   def setProperty_reorderHandle(property: reorderHandle, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonLabelCut): Unit = js.native
+  def setProperty_translations(property: translations, value: LabelCut): Unit = js.native
 }
 
 @JSImport("@oracle/oraclejet/ojmasonrylayout", "ojMasonryLayout")
 @js.native
 object ojMasonryLayout extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
-  type ojBeforeInsert = CustomEvent[AnonTile]
-  type ojBeforeRemove = CustomEvent[AnonDictpropNameTile]
-  type ojBeforeReorder = CustomEvent[AnonFromIndex]
-  type ojBeforeResize = CustomEvent[AnonPreviousSizeStyleClass]
-  type ojInsert = CustomEvent[AnonTile]
-  type ojRemove = CustomEvent[AnonDictpropNameTile]
-  type ojReorder = CustomEvent[AnonToIndex]
-  type ojResize = CustomEvent[AnonPreviousSizeStyleClass]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[Element]
+  type ojBeforeInsert = CustomEvent[Tile]
+  type ojBeforeRemove = CustomEvent[DictpropNameTile]
+  type ojBeforeReorder = CustomEvent[FromIndex]
+  type ojBeforeResize = CustomEvent[PreviousSizeStyleClass]
+  type ojInsert = CustomEvent[Tile]
+  type ojRemove = CustomEvent[DictpropNameTile]
+  type ojReorder = CustomEvent[ToIndex]
+  type ojResize = CustomEvent[PreviousSizeStyleClass]
 }
 

@@ -4,22 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties")
-@js.native
-class AudioEncodingProperties () extends IAudioEncodingProperties {
-  /* CompleteClass */
-  override var bitrate: Double = js.native
-  /* CompleteClass */
-  override var bitsPerSample: Double = js.native
-  /* CompleteClass */
-  override var channelCount: Double = js.native
-  /* CompleteClass */
-  override var properties: MediaPropertySet = js.native
-  /* CompleteClass */
-  override var sampleRate: Double = js.native
-  /* CompleteClass */
-  override var subtype: String = js.native
-  /* CompleteClass */
-  override var `type`: String = js.native
+trait AudioEncodingProperties extends IAudioEncodingProperties
+
+object AudioEncodingProperties {
+  @scala.inline
+  def apply(
+    bitrate: Double,
+    bitsPerSample: Double,
+    channelCount: Double,
+    properties: MediaPropertySet,
+    sampleRate: Double,
+    subtype: String,
+    `type`: String
+  ): AudioEncodingProperties = {
+    val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], bitsPerSample = bitsPerSample.asInstanceOf[js.Any], channelCount = channelCount.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AudioEncodingProperties]
+  }
 }
 

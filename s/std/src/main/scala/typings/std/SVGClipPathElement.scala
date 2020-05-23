@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +10,4 @@ trait SVGClipPathElement extends SVGElement {
   val clipPathUnits: SVGAnimatedEnumeration = js.native
   val transform: SVGAnimatedTransformList = js.native
 }
-
-@JSGlobal("SVGClipPathElement")
-@js.native
-object SVGClipPathElement extends Instantiable0[SVGClipPathElement]
 

@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type UserInfo[CustomClaims] = typings.reactNativeAuth0.AnonEmail with CustomClaims
+  type UserInfo[CustomClaims] = typings.reactNativeAuth0.anon.Email with CustomClaims
 }

@@ -11,9 +11,9 @@ trait AsyncOptions extends js.Object {
 
 object AsyncOptions {
   @scala.inline
-  def apply(timeout: Int | Double = null): AsyncOptions = {
+  def apply(timeout: js.UndefOr[Double] = js.undefined): AsyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncOptions]
   }
 }

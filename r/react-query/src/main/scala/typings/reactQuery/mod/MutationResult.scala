@@ -18,15 +18,9 @@ trait MutationResult[TResult] extends js.Object
 
 object MutationResult {
   @scala.inline
-  def IdleMutationResult[TResult](
-    error: Null,
-    promise: js.Promise[TResult],
-    reset: () => Unit,
-    status: idle,
-    data: js.UndefOr[scala.Nothing] = js.undefined
-  ): MutationResult[TResult] = {
+  def IdleMutationResult[TResult](error: Null, promise: js.Promise[TResult], reset: () => Unit, status: idle, data: TResult = null): MutationResult[TResult] = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult[TResult]]
   }
   @scala.inline
@@ -34,12 +28,11 @@ object MutationResult {
     promise: js.Promise[TResult],
     reset: () => Unit,
     status: loading,
-    data: js.UndefOr[scala.Nothing] = js.undefined,
-    error: js.UndefOr[scala.Nothing] = js.undefined
+    data: TResult = null,
+    error: js.Any = null
   ): MutationResult[TResult] = {
-    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult[TResult]]
   }
   @scala.inline
@@ -47,12 +40,11 @@ object MutationResult {
     promise: js.Promise[TResult],
     reset: () => Unit,
     status: error,
-    data: js.UndefOr[scala.Nothing] = js.undefined,
+    data: TResult = null,
     error: js.Any = null
   ): MutationResult[TResult] = {
-    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult[TResult]]
   }
   @scala.inline
@@ -61,10 +53,9 @@ object MutationResult {
     promise: js.Promise[TResult],
     reset: () => Unit,
     status: success,
-    error: js.UndefOr[scala.Nothing] = js.undefined
+    error: js.Any = null
   ): MutationResult[TResult] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult[TResult]]
   }
 }

@@ -3,9 +3,9 @@ package typings.tensorflowTfjsCore.tensorMod
 import typings.std.Float32Array
 import typings.std.Int32Array
 import typings.std.Uint8Array
-import typings.tensorflowTfjsCore.AnonFft
-import typings.tensorflowTfjsCore.AnonIndices
-import typings.tensorflowTfjsCore.AnonResizeBilinear
+import typings.tensorflowTfjsCore.anon.Fft
+import typings.tensorflowTfjsCore.anon.Indices
+import typings.tensorflowTfjsCore.anon.ResizeBilinear
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R2
@@ -39,8 +39,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait OpHandler extends js.Object {
-  var image: AnonResizeBilinear = js.native
-  var spectral: AnonFft = js.native
+  var image: ResizeBilinear = js.native
+  var spectral: Fft = js.native
   def abs[T /* <: Tensor[Rank] */](x: T): T = js.native
   def acos[T /* <: Tensor[Rank] */](x: T): T = js.native
   def acosh[T /* <: Tensor[Rank] */](x: T): T = js.native
@@ -403,7 +403,7 @@ trait OpHandler extends js.Object {
   def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
   def tan[T /* <: Tensor[Rank] */](x: T): T = js.native
   def tanh[T /* <: Tensor[Rank] */](x: T): T = js.native
-  def topk[T /* <: Tensor[Rank] */](x: T, k: Double, sorted: Boolean): AnonIndices[T] = js.native
+  def topk[T /* <: Tensor[Rank] */](x: T, k: Double, sorted: Boolean): Indices[T] = js.native
   def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T, segmentIds: TensorLike1D, numSegments: Double): T = js.native
   def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T, segmentIds: Tensor1D, numSegments: Double): T = js.native
   def unstack[T /* <: Tensor[Rank] */](value: T, axis: Double): js.Array[Tensor[Rank]] = js.native

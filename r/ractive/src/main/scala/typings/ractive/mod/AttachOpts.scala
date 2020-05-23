@@ -19,14 +19,14 @@ object AttachOpts {
   @scala.inline
   def apply(
     append: js.UndefOr[Boolean] = js.undefined,
-    insertAt: Int | Double = null,
+    insertAt: js.UndefOr[Double] = js.undefined,
     prepend: js.UndefOr[Boolean] = js.undefined,
     target: String = null
   ): AttachOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
-    if (insertAt != null) __obj.updateDynamic("insertAt")(insertAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend.asInstanceOf[js.Any])
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertAt)) __obj.updateDynamic("insertAt")(insertAt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachOpts]
   }

@@ -19,8 +19,8 @@ object UseContainerOptions {
   @scala.inline
   def apply(fallback: js.UndefOr[Boolean] = js.undefined, fallbackOnErrors: js.UndefOr[Boolean] = js.undefined): UseContainerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallbackOnErrors)) __obj.updateDynamic("fallbackOnErrors")(fallbackOnErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallbackOnErrors)) __obj.updateDynamic("fallbackOnErrors")(fallbackOnErrors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseContainerOptions]
   }
 }

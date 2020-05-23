@@ -59,23 +59,23 @@ trait AirbnbRatingProps extends js.Object {
 object AirbnbRatingProps {
   @scala.inline
   def apply(
-    count: Int | Double = null,
-    defaultRating: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
+    defaultRating: js.UndefOr[Double] = js.undefined,
     isDisabled: js.UndefOr[Boolean] = js.undefined,
     onFinishRating: /* value */ Double => Unit = null,
     reviews: js.Array[String] = null,
     showRating: js.UndefOr[Boolean] = js.undefined,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     starStyle: ImageStyle = null
   ): AirbnbRatingProps = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (defaultRating != null) __obj.updateDynamic("defaultRating")(defaultRating.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultRating)) __obj.updateDynamic("defaultRating")(defaultRating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.get.asInstanceOf[js.Any])
     if (onFinishRating != null) __obj.updateDynamic("onFinishRating")(js.Any.fromFunction1(onFinishRating))
     if (reviews != null) __obj.updateDynamic("reviews")(reviews.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRating)) __obj.updateDynamic("showRating")(showRating.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRating)) __obj.updateDynamic("showRating")(showRating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (starStyle != null) __obj.updateDynamic("starStyle")(starStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[AirbnbRatingProps]
   }

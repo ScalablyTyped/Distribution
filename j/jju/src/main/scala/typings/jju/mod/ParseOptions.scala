@@ -47,7 +47,7 @@ object ParseOptions {
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(null_prototype)) __obj.updateDynamic("null_prototype")(null_prototype.asInstanceOf[js.Any])
+    if (!js.isUndefined(null_prototype)) __obj.updateDynamic("null_prototype")(null_prototype.get.asInstanceOf[js.Any])
     if (reserved_keys != null) __obj.updateDynamic("reserved_keys")(reserved_keys.asInstanceOf[js.Any])
     if (reviver != null) __obj.updateDynamic("reviver")(js.Any.fromFunction2(reviver))
     __obj.asInstanceOf[ParseOptions]

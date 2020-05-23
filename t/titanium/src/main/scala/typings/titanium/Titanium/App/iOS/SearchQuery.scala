@@ -8,23 +8,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * A search query object manages the criteria to apply when searching app content that you have previously
-			 * indexed by using the Core Spotlight APIs.
-			 */
-@JSGlobal("Titanium.App.iOS.SearchQuery")
+  * A search query object manages the criteria to apply when searching app content that you have previously
+  * indexed by using the Core Spotlight APIs.
+  */
 @js.native
-class SearchQuery () extends Proxy {
+trait SearchQuery extends Proxy {
   /**
-  				 * An array of strings that represent the attributes of indexed items.
-  				 */
+    * An array of strings that represent the attributes of indexed items.
+    */
   var attributes: js.Array[String] = js.native
   /**
-  				 * A formatted string that defines the matching criteria to apply to indexed items.
-  				 */
+    * A formatted string that defines the matching criteria to apply to indexed items.
+    */
   var queryString: String = js.native
   /**
-  				 * Adds the specified callback as an event listener for the named event.
-  				 */
+    * Adds the specified callback as an event listener for the named event.
+    */
   @JSName("addEventListener")
   def addEventListener_completed(
     name: completed,
@@ -36,12 +35,12 @@ class SearchQuery () extends Proxy {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ SearchQueryFounditemsEvent, Unit]
   ): Unit = js.native
   /**
-  				 * Cancels a query operation.
-  				 */
+    * Cancels a query operation.
+    */
   def cancel(): Unit = js.native
   /**
-  				 * Fires a synthesized event to any registered listeners.
-  				 */
+    * Fires a synthesized event to any registered listeners.
+    */
   @JSName("fireEvent")
   def fireEvent_completed(name: completed): Unit = js.native
   @JSName("fireEvent")
@@ -51,12 +50,12 @@ class SearchQuery () extends Proxy {
   @JSName("fireEvent")
   def fireEvent_founditems(name: founditems, event: SearchQueryFounditemsEvent): Unit = js.native
   /**
-  				 * A Boolean value that indicates if the query has been cancelled (`true`) or not (`false`).
-  				 */
+    * A Boolean value that indicates if the query has been cancelled (`true`) or not (`false`).
+    */
   def isCancelled(): Boolean = js.native
   /**
-  				 * Removes the specified callback as an event listener for the named event.
-  				 */
+    * Removes the specified callback as an event listener for the named event.
+    */
   @JSName("removeEventListener")
   def removeEventListener_completed(
     name: completed,
@@ -68,8 +67,8 @@ class SearchQuery () extends Proxy {
     callback: js.ThisFunction1[/* this */ this.type, /* event */ SearchQueryFounditemsEvent, Unit]
   ): Unit = js.native
   /**
-  				 * Asynchronously queries the index for items that match the query object's specifications.
-  				 */
+    * Asynchronously queries the index for items that match the query object's specifications.
+    */
   def start(): Unit = js.native
 }
 

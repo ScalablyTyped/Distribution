@@ -1,9 +1,9 @@
 package typings.activeWin.mod
 
-import typings.activeWin.AnonHeight
 import typings.activeWin.activeWinStrings.linux
 import typings.activeWin.activeWinStrings.macos
 import typings.activeWin.activeWinStrings.windows
+import typings.activeWin.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Result extends js.Object
 object Result {
   @scala.inline
   def MacOSResult(
-    bounds: AnonHeight,
+    bounds: Height,
     id: Double,
     memoryUsage: Double,
     owner: MacOSOwner,
@@ -31,20 +31,13 @@ object Result {
     __obj.asInstanceOf[Result]
   }
   @scala.inline
-  def LinuxResult(
-    bounds: AnonHeight,
-    id: Double,
-    memoryUsage: Double,
-    owner: BaseOwner,
-    platform: linux,
-    title: String
-  ): Result = {
+  def LinuxResult(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, platform: linux, title: String): Result = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
   @scala.inline
   def WindowsResult(
-    bounds: AnonHeight,
+    bounds: Height,
     id: Double,
     memoryUsage: Double,
     owner: BaseOwner,

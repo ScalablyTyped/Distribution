@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation._
 
 trait Padding extends js.Object {
   /**
-  	 * The amount of padding (in px) along the bottom of the component.
-  	 */
+    * The amount of padding (in px) along the bottom of the component.
+    */
   var b: Double
   var editType: arraydraw
   /**
-  	 * The amount of padding (in px) on the left side of the component.
-  	 */
+    * The amount of padding (in px) on the left side of the component.
+    */
   var l: Double
   /**
-  	 * The amount of padding (in px) on the right side of the component.
-  	 */
+    * The amount of padding (in px) on the right side of the component.
+    */
   var r: Double
   /**
-  	 * The amount of padding (in px) along the top of the component.
-  	 */
+    * The amount of padding (in px) along the top of the component.
+    */
   var t: Double
 }
 

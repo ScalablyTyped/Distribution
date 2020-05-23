@@ -16,17 +16,17 @@ object Options {
   @scala.inline
   def apply(
     char: String = null,
-    compactTo: Int | Double = null,
-    keepLeft: Int | Double = null,
-    keepRight: Int | Double = null,
+    compactTo: js.UndefOr[Double] = js.undefined,
+    keepLeft: js.UndefOr[Double] = js.undefined,
+    keepRight: js.UndefOr[Double] = js.undefined,
     keepSymbols: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (char != null) __obj.updateDynamic("char")(char.asInstanceOf[js.Any])
-    if (compactTo != null) __obj.updateDynamic("compactTo")(compactTo.asInstanceOf[js.Any])
-    if (keepLeft != null) __obj.updateDynamic("keepLeft")(keepLeft.asInstanceOf[js.Any])
-    if (keepRight != null) __obj.updateDynamic("keepRight")(keepRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepSymbols)) __obj.updateDynamic("keepSymbols")(keepSymbols.asInstanceOf[js.Any])
+    if (!js.isUndefined(compactTo)) __obj.updateDynamic("compactTo")(compactTo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepLeft)) __obj.updateDynamic("keepLeft")(keepLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepRight)) __obj.updateDynamic("keepRight")(keepRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepSymbols)) __obj.updateDynamic("keepSymbols")(keepSymbols.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

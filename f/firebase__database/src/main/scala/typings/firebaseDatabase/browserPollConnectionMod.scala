@@ -1,22 +1,10 @@
 package typings.firebaseDatabase
 
-import typings.firebaseDatabase.firebaseDatabaseStrings.cb
-import typings.firebaseDatabase.firebaseDatabaseStrings.close
-import typings.firebaseDatabase.firebaseDatabaseStrings.d
-import typings.firebaseDatabase.firebaseDatabaseStrings.dframe
-import typings.firebaseDatabase.firebaseDatabaseStrings.disconn
-import typings.firebaseDatabase.firebaseDatabaseStrings.id
-import typings.firebaseDatabase.firebaseDatabaseStrings.pLPCommand
-import typings.firebaseDatabase.firebaseDatabaseStrings.pRTLPCB
-import typings.firebaseDatabase.firebaseDatabaseStrings.pw
-import typings.firebaseDatabase.firebaseDatabaseStrings.seg
-import typings.firebaseDatabase.firebaseDatabaseStrings.ser
-import typings.firebaseDatabase.firebaseDatabaseStrings.start
-import typings.firebaseDatabase.firebaseDatabaseStrings.ts
+import typings.firebaseDatabase.anon.D
 import typings.firebaseDatabase.packetReceiverMod.PacketReceiver
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.transportMod.Transport
-import typings.std.Document_
+import typings.std.Document
 import typings.std.HTMLIFrameElement
 import typings.std.Set
 import scala.scalajs.js
@@ -116,7 +104,7 @@ object browserPollConnectionMod extends js.Object {
       */
     var newRequest_ : js.Any = js.native
     var outstandingRequests: Set[Double] = js.native
-    var pendingSegs: js.Array[AnonD] = js.native
+    var pendingSegs: js.Array[D] = js.native
     var sendNewPolls: Boolean = js.native
     var uniqueCallbackIdentifier: Double = js.native
     /**
@@ -150,22 +138,22 @@ object browserPollConnectionMod extends js.Object {
   
   @js.native
   trait IFrameElement extends HTMLIFrameElement {
-    var doc: Document_ = js.native
+    var doc: Document = js.native
   }
   
-  val FIREBASE_LONGPOLL_CALLBACK_ID_PARAM: cb = js.native
-  val FIREBASE_LONGPOLL_CLOSE_COMMAND: close = js.native
-  val FIREBASE_LONGPOLL_COMMAND_CB_NAME: pLPCommand = js.native
-  val FIREBASE_LONGPOLL_DATA_CB_NAME: pRTLPCB = js.native
-  val FIREBASE_LONGPOLL_DATA_PARAM: d = js.native
-  val FIREBASE_LONGPOLL_DISCONN_FRAME_PARAM: disconn = js.native
-  val FIREBASE_LONGPOLL_DISCONN_FRAME_REQUEST_PARAM: dframe = js.native
-  val FIREBASE_LONGPOLL_ID_PARAM: id = js.native
-  val FIREBASE_LONGPOLL_PW_PARAM: pw = js.native
-  val FIREBASE_LONGPOLL_SEGMENTS_IN_PACKET: ts = js.native
-  val FIREBASE_LONGPOLL_SEGMENT_NUM_PARAM: seg = js.native
-  val FIREBASE_LONGPOLL_SERIAL_PARAM: ser = js.native
-  val FIREBASE_LONGPOLL_START_PARAM: start = js.native
+  val FIREBASE_LONGPOLL_CALLBACK_ID_PARAM: /* "cb" */ String = js.native
+  val FIREBASE_LONGPOLL_CLOSE_COMMAND: /* "close" */ String = js.native
+  val FIREBASE_LONGPOLL_COMMAND_CB_NAME: /* "pLPCommand" */ String = js.native
+  val FIREBASE_LONGPOLL_DATA_CB_NAME: /* "pRTLPCB" */ String = js.native
+  val FIREBASE_LONGPOLL_DATA_PARAM: /* "d" */ String = js.native
+  val FIREBASE_LONGPOLL_DISCONN_FRAME_PARAM: /* "disconn" */ String = js.native
+  val FIREBASE_LONGPOLL_DISCONN_FRAME_REQUEST_PARAM: /* "dframe" */ String = js.native
+  val FIREBASE_LONGPOLL_ID_PARAM: /* "id" */ String = js.native
+  val FIREBASE_LONGPOLL_PW_PARAM: /* "pw" */ String = js.native
+  val FIREBASE_LONGPOLL_SEGMENTS_IN_PACKET: /* "ts" */ String = js.native
+  val FIREBASE_LONGPOLL_SEGMENT_NUM_PARAM: /* "seg" */ String = js.native
+  val FIREBASE_LONGPOLL_SERIAL_PARAM: /* "ser" */ String = js.native
+  val FIREBASE_LONGPOLL_START_PARAM: /* "start" */ String = js.native
   /* static members */
   @js.native
   object BrowserPollConnection extends js.Object {

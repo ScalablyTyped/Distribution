@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Ribbon.FetchListViewWebPartPageComponentWorker")
-@js.native
-class FetchListViewWebPartPageComponentWorker () extends js.Object
+trait FetchListViewWebPartPageComponentWorker extends js.Object
 

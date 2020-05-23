@@ -22,11 +22,15 @@ trait ListResourceTagsResponse extends js.Object {
 
 object ListResourceTagsResponse {
   @scala.inline
-  def apply(NextMarker: MarkerType = null, Tags: TagList = null, Truncated: js.UndefOr[Boolean] = js.undefined): ListResourceTagsResponse = {
+  def apply(
+    NextMarker: MarkerType = null,
+    Tags: TagList = null,
+    Truncated: js.UndefOr[BooleanType] = js.undefined
+  ): ListResourceTagsResponse = {
     val __obj = js.Dynamic.literal()
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceTagsResponse]
   }
 }

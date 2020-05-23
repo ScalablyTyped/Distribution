@@ -1,6 +1,7 @@
 package typings.murmurhashJs
 
 import org.scalablytyped.runtime.TopLevel
+import typings.murmurhashJs.anon.Murmur2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod
   extends TopLevel[
-      (js.Function2[/* str */ String, /* seed */ js.UndefOr[Double], Double]) with AnonMurmur2
+      (js.Function2[/* str */ String, /* seed */ js.UndefOr[Double], Double]) with Murmur2
     ]
 

@@ -30,13 +30,13 @@ object Parameter {
     ParameterKey: ParameterKey = null,
     ParameterValue: ParameterValue = null,
     ResolvedValue: ParameterValue = null,
-    UsePreviousValue: js.UndefOr[Boolean] = js.undefined
+    UsePreviousValue: js.UndefOr[UsePreviousValue] = js.undefined
   ): Parameter = {
     val __obj = js.Dynamic.literal()
     if (ParameterKey != null) __obj.updateDynamic("ParameterKey")(ParameterKey.asInstanceOf[js.Any])
     if (ParameterValue != null) __obj.updateDynamic("ParameterValue")(ParameterValue.asInstanceOf[js.Any])
     if (ResolvedValue != null) __obj.updateDynamic("ResolvedValue")(ResolvedValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsePreviousValue)) __obj.updateDynamic("UsePreviousValue")(UsePreviousValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(UsePreviousValue)) __obj.updateDynamic("UsePreviousValue")(UsePreviousValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameter]
   }
 }

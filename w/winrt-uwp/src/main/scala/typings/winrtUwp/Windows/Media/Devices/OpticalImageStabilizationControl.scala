@@ -6,14 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** When supported, allows an app to enable optical image stabilization on the capture device. */
-@JSGlobal("Windows.Media.Devices.OpticalImageStabilizationControl")
-@js.native
-abstract class OpticalImageStabilizationControl () extends js.Object {
+trait OpticalImageStabilizationControl extends js.Object {
   /** Gets or sets a value indicating the current optical image stabilization mode of the capture device. */
-  var mode: OpticalImageStabilizationMode = js.native
+  var mode: OpticalImageStabilizationMode
   /** Gets a value that indicates if the capture device supports the OpticalImageStabilizationControl . */
-  var supported: Boolean = js.native
+  var supported: Boolean
   /** Gets the list of OpticalImageStabilizationMode values indicating the modes supported by the capture device. */
-  var supportedModes: IVectorView[OpticalImageStabilizationMode] = js.native
+  var supportedModes: IVectorView[OpticalImageStabilizationMode]
+}
+
+object OpticalImageStabilizationControl {
+  @scala.inline
+  def apply(
+    mode: OpticalImageStabilizationMode,
+    supported: Boolean,
+    supportedModes: IVectorView[OpticalImageStabilizationMode]
+  ): OpticalImageStabilizationControl = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any], supportedModes = supportedModes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OpticalImageStabilizationControl]
+  }
 }
 

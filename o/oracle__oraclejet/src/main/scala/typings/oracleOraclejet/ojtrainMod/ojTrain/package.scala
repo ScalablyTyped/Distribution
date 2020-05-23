@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ojTrain {
-  type ojBeforeDeselect = typings.std.CustomEvent[typings.oracleOraclejet.AnonFromStep]
-  type ojBeforeSelect = typings.std.CustomEvent[typings.oracleOraclejet.AnonFromStep]
-  type ojDeselect = typings.std.CustomEvent[typings.oracleOraclejet.AnonFromStep]
-  type ojSelect = typings.std.CustomEvent[typings.oracleOraclejet.AnonFromStep]
+  type ojBeforeDeselect = typings.std.CustomEvent[typings.oracleOraclejet.anon.FromStep]
+  type ojBeforeSelect = typings.std.CustomEvent[typings.oracleOraclejet.anon.FromStep]
+  type ojDeselect = typings.std.CustomEvent[typings.oracleOraclejet.anon.FromStep]
+  type ojSelect = typings.std.CustomEvent[typings.oracleOraclejet.anon.FromStep]
 }

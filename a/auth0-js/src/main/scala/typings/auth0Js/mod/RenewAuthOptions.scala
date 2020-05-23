@@ -87,7 +87,7 @@ object RenewAuthOptions {
     responseType: String = null,
     scope: String = null,
     state: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     usePostMessage: js.UndefOr[Boolean] = js.undefined
   ): RenewAuthOptions = {
     val __obj = js.Dynamic.literal()
@@ -102,8 +102,8 @@ object RenewAuthOptions {
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePostMessage)) __obj.updateDynamic("usePostMessage")(usePostMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePostMessage)) __obj.updateDynamic("usePostMessage")(usePostMessage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewAuthOptions]
   }
 }

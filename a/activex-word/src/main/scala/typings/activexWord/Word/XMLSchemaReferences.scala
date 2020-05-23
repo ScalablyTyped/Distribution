@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.XMLSchemaReferences")
 @js.native
-class XMLSchemaReferences protected () extends js.Object {
+trait XMLSchemaReferences extends js.Object {
   var AllowSaveAsXMLWithoutValidation: Boolean = js.native
   val Application: typings.activexWord.Word.Application = js.native
   var AutomaticValidation: Boolean = js.native

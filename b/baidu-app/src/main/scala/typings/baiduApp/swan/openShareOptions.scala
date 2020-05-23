@@ -1,6 +1,5 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonAuthSetting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ trait openShareOptions
   var path: js.UndefOr[String] = js.undefined
    // 页面 path,必须是以 / 开头的完整路径。
   @JSName("success")
-  var success_openShareOptions: js.UndefOr[js.Function1[/* res */ AnonAuthSetting, Unit]] = js.undefined
+  var success_openShareOptions: js.UndefOr[js.Function1[/* res */ typings.baiduApp.anon.AuthSetting, Unit]] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
 
@@ -27,7 +26,7 @@ object openShareOptions {
     fail: js.Any => Unit = null,
     imageUrl: String = null,
     path: String = null,
-    success: /* res */ AnonAuthSetting => Unit = null,
+    success: /* res */ typings.baiduApp.anon.AuthSetting => Unit = null,
     title: String = null
   ): openShareOptions = {
     val __obj = js.Dynamic.literal()

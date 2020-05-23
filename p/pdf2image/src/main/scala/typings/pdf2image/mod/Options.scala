@@ -13,12 +13,12 @@ trait Options extends js.Object {
   var backgroundColor: String
   var density: Double
   var height: Double
-  	// #ffffff
+      // #ffffff
   var outputFormat: OutputFormat
   var outputType: jpg | png | Dotjpg | Dotpng
   var pages: Asterisk | String
   var quality: Double
-  	// * | even | odd | '/1,/3,5-6,-8, 9-'
+      // * | even | odd | '/1,/3,5-6,-8, 9-'
   var singleProcess: Boolean
   var width: Double
 }

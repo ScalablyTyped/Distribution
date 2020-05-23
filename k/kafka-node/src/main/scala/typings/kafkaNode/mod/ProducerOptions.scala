@@ -13,14 +13,14 @@ trait ProducerOptions extends js.Object {
 object ProducerOptions {
   @scala.inline
   def apply(
-    ackTimeoutMs: Int | Double = null,
-    partitionerType: Int | Double = null,
-    requireAcks: Int | Double = null
+    ackTimeoutMs: js.UndefOr[Double] = js.undefined,
+    partitionerType: js.UndefOr[Double] = js.undefined,
+    requireAcks: js.UndefOr[Double] = js.undefined
   ): ProducerOptions = {
     val __obj = js.Dynamic.literal()
-    if (ackTimeoutMs != null) __obj.updateDynamic("ackTimeoutMs")(ackTimeoutMs.asInstanceOf[js.Any])
-    if (partitionerType != null) __obj.updateDynamic("partitionerType")(partitionerType.asInstanceOf[js.Any])
-    if (requireAcks != null) __obj.updateDynamic("requireAcks")(requireAcks.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackTimeoutMs)) __obj.updateDynamic("ackTimeoutMs")(ackTimeoutMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partitionerType)) __obj.updateDynamic("partitionerType")(partitionerType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireAcks)) __obj.updateDynamic("requireAcks")(requireAcks.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerOptions]
   }
 }

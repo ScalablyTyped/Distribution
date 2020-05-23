@@ -1,6 +1,10 @@
 package typings.wordpressCompose
 
 import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentType
+import typings.std.Omit
+import typings.wordpressCompose.wordpressComposeStrings.setState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +18,8 @@ object withStateMod extends js.Object {
   {[ k in keyof SP ]: SP[k]}
     */ typings.wordpressCompose.wordpressComposeStrings.default with TopLevel[SP]
   ): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-    _
+    /* component */ ComponentType[_], 
+    ComponentClass[Omit[_, (/* keyof SP */ String) | setState], SP]
   ] = js.native
 }
 

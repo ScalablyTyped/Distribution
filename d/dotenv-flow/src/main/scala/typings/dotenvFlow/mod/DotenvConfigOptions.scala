@@ -46,7 +46,7 @@ object DotenvConfigOptions {
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (node_env != null) __obj.updateDynamic("node_env")(node_env.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(purge_dotenv)) __obj.updateDynamic("purge_dotenv")(purge_dotenv.asInstanceOf[js.Any])
+    if (!js.isUndefined(purge_dotenv)) __obj.updateDynamic("purge_dotenv")(purge_dotenv.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotenvConfigOptions]
   }
 }

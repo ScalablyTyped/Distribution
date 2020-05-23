@@ -22,14 +22,14 @@ trait OnProgressDownloadResult extends js.Object {
 object OnProgressDownloadResult {
   @scala.inline
   def apply(
-    progress: Int | Double = null,
-    totalBytesExpectedToWrite: Int | Double = null,
-    totalBytesWritten: Int | Double = null
+    progress: js.UndefOr[Double] = js.undefined,
+    totalBytesExpectedToWrite: js.UndefOr[Double] = js.undefined,
+    totalBytesWritten: js.UndefOr[Double] = js.undefined
   ): OnProgressDownloadResult = {
     val __obj = js.Dynamic.literal()
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (totalBytesExpectedToWrite != null) __obj.updateDynamic("totalBytesExpectedToWrite")(totalBytesExpectedToWrite.asInstanceOf[js.Any])
-    if (totalBytesWritten != null) __obj.updateDynamic("totalBytesWritten")(totalBytesWritten.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalBytesExpectedToWrite)) __obj.updateDynamic("totalBytesExpectedToWrite")(totalBytesExpectedToWrite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalBytesWritten)) __obj.updateDynamic("totalBytesWritten")(totalBytesWritten.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnProgressDownloadResult]
   }
 }

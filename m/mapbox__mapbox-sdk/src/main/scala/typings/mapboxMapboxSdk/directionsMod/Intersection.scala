@@ -51,13 +51,13 @@ object Intersection {
     lanes: js.Array[Lane],
     location: js.Array[Double],
     classes: js.Array[DirectionsClass] = null,
-    in: Int | Double = null,
-    out: Int | Double = null
+    in: js.UndefOr[Double] = js.undefined,
+    out: js.UndefOr[Double] = js.undefined
   ): Intersection = {
     val __obj = js.Dynamic.literal(bearings = bearings.asInstanceOf[js.Any], entry = entry.asInstanceOf[js.Any], lanes = lanes.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
+    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Intersection]
   }
 }

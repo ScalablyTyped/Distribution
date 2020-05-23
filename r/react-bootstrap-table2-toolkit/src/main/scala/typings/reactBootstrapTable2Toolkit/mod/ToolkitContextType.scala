@@ -1,25 +1,25 @@
 package typings.reactBootstrapTable2Toolkit.mod
 
-import typings.reactBootstrapTable2Toolkit.AnonBootstrap4
-import typings.reactBootstrapTable2Toolkit.AnonColumns
-import typings.reactBootstrapTable2Toolkit.AnonOnExport
+import typings.reactBootstrapTable2Toolkit.anon.Bootstrap4
+import typings.reactBootstrapTable2Toolkit.anon.Columns
+import typings.reactBootstrapTable2Toolkit.anon.OnExport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ToolkitContextType extends js.Object {
-  var baseProps: AnonBootstrap4
-  var columnToggleProps: AnonColumns
-  var csvProps: AnonOnExport
+  var baseProps: Bootstrap4
+  var columnToggleProps: Columns
+  var csvProps: OnExport
   var searchProps: InjectedSearchProps
 }
 
 object ToolkitContextType {
   @scala.inline
   def apply(
-    baseProps: AnonBootstrap4,
-    columnToggleProps: AnonColumns,
-    csvProps: AnonOnExport,
+    baseProps: Bootstrap4,
+    columnToggleProps: Columns,
+    csvProps: OnExport,
     searchProps: InjectedSearchProps
   ): ToolkitContextType = {
     val __obj = js.Dynamic.literal(baseProps = baseProps.asInstanceOf[js.Any], columnToggleProps = columnToggleProps.asInstanceOf[js.Any], csvProps = csvProps.asInstanceOf[js.Any], searchProps = searchProps.asInstanceOf[js.Any])

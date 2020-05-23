@@ -8,38 +8,43 @@ import scala.scalajs.js.annotation._
   * A location on a map when the Earth's surface is projected onto a
   * two-dimensional surface.
   */
-@JSGlobal("mapkit.MapPoint")
-@js.native
-class MapPoint protected () extends js.Object {
-  /**
-    * Initializes a MapPoint object.
-    *
-    * @param x The point along the east-west axis of the map projection.
-    * @param  The point along the north-south axis of the map projection.
-    */
-  def this(x: Double, y: Double) = this()
+trait MapPoint extends js.Object {
   /**
     * The location of the point along the x-axis of the map.
     */
-  var x: Double = js.native
+  var x: Double
   /**
     * The location of the point along the y-axis of the map.
     */
-  var y: Double = js.native
+  var y: Double
   /**
     * Returns a copy of a map point.
     */
-  def copy(): MapPoint = js.native
+  def copy(): MapPoint
   /**
     * Indicates whether two map points are equal.
     *
     * @param anotherPoint A map point to use for comparison.
     */
-  def equals(anotherPoint: MapPoint): Boolean = js.native
+  def equals(anotherPoint: MapPoint): Boolean
   /**
     * Returns a coordinate containing the latitude and longitude corresponding
     * to a map point.
     */
-  def toCoordinate(): Coordinate = js.native
+  def toCoordinate(): Coordinate
+}
+
+object MapPoint {
+  @scala.inline
+  def apply(
+    copy: () => MapPoint,
+    equals: MapPoint => Boolean,
+    toCoordinate: () => Coordinate,
+    x: Double,
+    y: Double
+  ): MapPoint = {
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), equals = js.Any.fromFunction1(equals), toCoordinate = js.Any.fromFunction0(toCoordinate), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapPoint]
+  }
 }
 

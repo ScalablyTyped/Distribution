@@ -72,7 +72,7 @@ object DefineIndexOptions {
     where: AnyWhereOptions = null
   ): DefineIndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(concurrently)) __obj.updateDynamic("concurrently")(concurrently.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrently)) __obj.updateDynamic("concurrently")(concurrently.get.asInstanceOf[js.Any])
     if (indexName != null) __obj.updateDynamic("indexName")(indexName.asInstanceOf[js.Any])
     if (indexType != null) __obj.updateDynamic("indexType")(indexType.asInstanceOf[js.Any])
     if (indicesType != null) __obj.updateDynamic("indicesType")(indicesType.asInstanceOf[js.Any])
@@ -81,7 +81,7 @@ object DefineIndexOptions {
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
     if (using != null) __obj.updateDynamic("using")(using.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineIndexOptions]

@@ -46,15 +46,15 @@ object IGetBoundaryRequestOptions {
     entityType: String = null,
     getAllPolygons: js.UndefOr[Boolean] = js.undefined,
     getEntityMetadata: js.UndefOr[Boolean] = js.undefined,
-    lod: Int | Double = null,
+    lod: js.UndefOr[Double] = js.undefined,
     userRegion: String = null
   ): IGetBoundaryRequestOptions = {
     val __obj = js.Dynamic.literal()
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(getAllPolygons)) __obj.updateDynamic("getAllPolygons")(getAllPolygons.asInstanceOf[js.Any])
-    if (!js.isUndefined(getEntityMetadata)) __obj.updateDynamic("getEntityMetadata")(getEntityMetadata.asInstanceOf[js.Any])
-    if (lod != null) __obj.updateDynamic("lod")(lod.asInstanceOf[js.Any])
+    if (!js.isUndefined(getAllPolygons)) __obj.updateDynamic("getAllPolygons")(getAllPolygons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(getEntityMetadata)) __obj.updateDynamic("getEntityMetadata")(getEntityMetadata.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lod)) __obj.updateDynamic("lod")(lod.get.asInstanceOf[js.Any])
     if (userRegion != null) __obj.updateDynamic("userRegion")(userRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetBoundaryRequestOptions]
   }

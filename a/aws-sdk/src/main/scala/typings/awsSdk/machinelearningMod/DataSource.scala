@@ -65,19 +65,19 @@ trait DataSource extends js.Object {
 object DataSource {
   @scala.inline
   def apply(
-    ComputeStatistics: js.UndefOr[Boolean] = js.undefined,
-    ComputeTime: Int | Double = null,
+    ComputeStatistics: js.UndefOr[ComputeStatistics] = js.undefined,
+    ComputeTime: js.UndefOr[LongType] = js.undefined,
     CreatedAt: EpochTime = null,
     CreatedByIamUser: AwsUserArn = null,
     DataLocationS3: S3Url = null,
     DataRearrangement: DataRearrangement = null,
-    DataSizeInBytes: Int | Double = null,
+    DataSizeInBytes: js.UndefOr[LongType] = js.undefined,
     DataSourceId: EntityId = null,
     FinishedAt: EpochTime = null,
     LastUpdatedAt: EpochTime = null,
     Message: Message = null,
     Name: EntityName = null,
-    NumberOfFiles: Int | Double = null,
+    NumberOfFiles: js.UndefOr[LongType] = js.undefined,
     RDSMetadata: RDSMetadata = null,
     RedshiftMetadata: RedshiftMetadata = null,
     RoleARN: RoleARN = null,
@@ -85,19 +85,19 @@ object DataSource {
     Status: EntityStatus = null
   ): DataSource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ComputeStatistics)) __obj.updateDynamic("ComputeStatistics")(ComputeStatistics.asInstanceOf[js.Any])
-    if (ComputeTime != null) __obj.updateDynamic("ComputeTime")(ComputeTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(ComputeStatistics)) __obj.updateDynamic("ComputeStatistics")(ComputeStatistics.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ComputeTime)) __obj.updateDynamic("ComputeTime")(ComputeTime.get.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
     if (CreatedByIamUser != null) __obj.updateDynamic("CreatedByIamUser")(CreatedByIamUser.asInstanceOf[js.Any])
     if (DataLocationS3 != null) __obj.updateDynamic("DataLocationS3")(DataLocationS3.asInstanceOf[js.Any])
     if (DataRearrangement != null) __obj.updateDynamic("DataRearrangement")(DataRearrangement.asInstanceOf[js.Any])
-    if (DataSizeInBytes != null) __obj.updateDynamic("DataSizeInBytes")(DataSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataSizeInBytes)) __obj.updateDynamic("DataSizeInBytes")(DataSizeInBytes.get.asInstanceOf[js.Any])
     if (DataSourceId != null) __obj.updateDynamic("DataSourceId")(DataSourceId.asInstanceOf[js.Any])
     if (FinishedAt != null) __obj.updateDynamic("FinishedAt")(FinishedAt.asInstanceOf[js.Any])
     if (LastUpdatedAt != null) __obj.updateDynamic("LastUpdatedAt")(LastUpdatedAt.asInstanceOf[js.Any])
     if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NumberOfFiles != null) __obj.updateDynamic("NumberOfFiles")(NumberOfFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfFiles)) __obj.updateDynamic("NumberOfFiles")(NumberOfFiles.get.asInstanceOf[js.Any])
     if (RDSMetadata != null) __obj.updateDynamic("RDSMetadata")(RDSMetadata.asInstanceOf[js.Any])
     if (RedshiftMetadata != null) __obj.updateDynamic("RedshiftMetadata")(RedshiftMetadata.asInstanceOf[js.Any])
     if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])

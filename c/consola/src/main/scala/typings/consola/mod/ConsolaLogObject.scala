@@ -1,5 +1,6 @@
 package typings.consola.mod
 
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait ConsolaLogObject extends js.Object {
   var additional: js.UndefOr[String | js.Array[String]] = js.undefined
   var args: js.UndefOr[js.Array[_]] = js.undefined
-  var level: js.UndefOr[Double] = js.undefined
+  var date: js.UndefOr[Date] = js.undefined
+  var level: js.UndefOr[LogLevel] = js.undefined
   var message: js.UndefOr[String] = js.undefined
   var tag: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
@@ -18,7 +20,8 @@ object ConsolaLogObject {
   def apply(
     additional: String | js.Array[String] = null,
     args: js.Array[_] = null,
-    level: Int | Double = null,
+    date: Date = null,
+    level: LogLevel = null,
     message: String = null,
     tag: String = null,
     `type`: String = null
@@ -26,6 +29,7 @@ object ConsolaLogObject {
     val __obj = js.Dynamic.literal()
     if (additional != null) __obj.updateDynamic("additional")(additional.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])

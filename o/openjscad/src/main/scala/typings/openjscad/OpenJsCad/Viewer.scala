@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("OpenJsCad.Viewer")
 @js.native
-class Viewer protected () extends js.Object {
-  def this(containerElm: js.Any, size: js.Any, options: IViewerOptions) = this()
+trait Viewer extends js.Object {
   var bgColor_ : js.Any = js.native
   var camera_ : js.Any = js.native
   var canvas: js.Any = js.native

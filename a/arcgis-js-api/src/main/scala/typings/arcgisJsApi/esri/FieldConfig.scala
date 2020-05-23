@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -89,8 +88,4 @@ trait FieldConfig extends Accessor {
     */
   var visibilityExpression: String = js.native
 }
-
-@JSGlobal("__esri.FieldConfig")
-@js.native
-object FieldConfig extends TopLevel[FieldConfigConstructor]
 

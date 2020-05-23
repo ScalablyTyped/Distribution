@@ -33,7 +33,7 @@ object AutolinkerConfig {
     mention: MentionConfig = null,
     newWindow: js.UndefOr[Boolean] = js.undefined,
     phone: js.UndefOr[Boolean] = js.undefined,
-    replaceFn: /* match */ Match => ReplaceFnReturn = null,
+    replaceFn: js.UndefOr[Null | (/* match */ Match => ReplaceFnReturn)] = js.undefined,
     sanitizeHtml: js.UndefOr[Boolean] = js.undefined,
     stripPrefix: StripPrefixConfig = null,
     stripTrailingSlash: js.UndefOr[Boolean] = js.undefined,
@@ -43,16 +43,16 @@ object AutolinkerConfig {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(decodePercentEncoding)) __obj.updateDynamic("decodePercentEncoding")(decodePercentEncoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(email)) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(decodePercentEncoding)) __obj.updateDynamic("decodePercentEncoding")(decodePercentEncoding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(email)) __obj.updateDynamic("email")(email.get.asInstanceOf[js.Any])
     if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
     if (mention != null) __obj.updateDynamic("mention")(mention.asInstanceOf[js.Any])
-    if (!js.isUndefined(newWindow)) __obj.updateDynamic("newWindow")(newWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(phone)) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (replaceFn != null) __obj.updateDynamic("replaceFn")(js.Any.fromFunction1(replaceFn))
-    if (!js.isUndefined(sanitizeHtml)) __obj.updateDynamic("sanitizeHtml")(sanitizeHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(newWindow)) __obj.updateDynamic("newWindow")(newWindow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(phone)) __obj.updateDynamic("phone")(phone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceFn)) __obj.updateDynamic("replaceFn")(if (replaceFn != null) js.Any.fromFunction1(replaceFn.asInstanceOf[/* match */ Match => ReplaceFnReturn]) else null)
+    if (!js.isUndefined(sanitizeHtml)) __obj.updateDynamic("sanitizeHtml")(sanitizeHtml.get.asInstanceOf[js.Any])
     if (stripPrefix != null) __obj.updateDynamic("stripPrefix")(stripPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripTrailingSlash)) __obj.updateDynamic("stripTrailingSlash")(stripTrailingSlash.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripTrailingSlash)) __obj.updateDynamic("stripTrailingSlash")(stripTrailingSlash.get.asInstanceOf[js.Any])
     if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutolinkerConfig]

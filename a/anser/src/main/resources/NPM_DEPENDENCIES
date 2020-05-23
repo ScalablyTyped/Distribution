@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "anser" : "1.4.9"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "anser" : "1.4.9"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(entropy: js.UndefOr[Boolean] = js.undefined, global: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(entropy)) __obj.updateDynamic("entropy")(entropy.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(entropy)) __obj.updateDynamic("entropy")(entropy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

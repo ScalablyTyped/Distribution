@@ -1,7 +1,7 @@
 package typings.vuex.mod
 
 import typings.vue.optionsMod.WatchOptions
-import typings.vuex.AnonActions
+import typings.vuex.anon.Actions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,14 +28,16 @@ class Store[S] protected () extends js.Object {
   def dispatch[P /* <: Payload */](payloadWithType: P, options: DispatchOptions): js.Promise[_] = js.native
   def hasModule(path: String): Boolean = js.native
   def hasModule(path: js.Array[String]): Boolean = js.native
-  def hotUpdate(options: AnonActions[S]): Unit = js.native
+  def hotUpdate(options: Actions[S]): Unit = js.native
   def registerModule[T](path: String, module: Module[T, S]): Unit = js.native
   def registerModule[T](path: String, module: Module[T, S], options: ModuleOptions): Unit = js.native
   def registerModule[T](path: js.Array[String], module: Module[T, S]): Unit = js.native
   def registerModule[T](path: js.Array[String], module: Module[T, S], options: ModuleOptions): Unit = js.native
   def replaceState(state: S): Unit = js.native
   def subscribe[P /* <: MutationPayload */](fn: js.Function2[/* mutation */ P, /* state */ S, _]): js.Function0[Unit] = js.native
+  def subscribe[P /* <: MutationPayload */](fn: js.Function2[/* mutation */ P, /* state */ S, _], options: SubscribeOptions): js.Function0[Unit] = js.native
   def subscribeAction[P /* <: ActionPayload */](fn: SubscribeActionOptions[P, S]): js.Function0[Unit] = js.native
+  def subscribeAction[P /* <: ActionPayload */](fn: SubscribeActionOptions[P, S], options: SubscribeOptions): js.Function0[Unit] = js.native
   def unregisterModule(path: String): Unit = js.native
   def unregisterModule(path: js.Array[String]): Unit = js.native
   def watch[T](

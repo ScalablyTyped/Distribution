@@ -44,16 +44,16 @@ object JQueryMobileOptions {
     autoInitializePage: js.UndefOr[Boolean] = js.undefined,
     defaultDialogTransition: String = null,
     defaultPageTransition: String = null,
-    getMaxScrollForTransition: Int | Double = null,
+    getMaxScrollForTransition: js.UndefOr[Double] = js.undefined,
     gradeA: js.Function = null,
     hashListeningEnabled: js.UndefOr[Boolean] = js.undefined,
     ignoreContentEnabled: js.UndefOr[Boolean] = js.undefined,
     linkBindingEnabled: js.UndefOr[Boolean] = js.undefined,
     loadingMessageTextVisible: js.UndefOr[Boolean] = js.undefined,
     loadingMessageTheme: String = null,
-    maxTransitionWidth: Int | Double = null,
-    minScrollBack: Int | Double = null,
-    ns: Int | Double = null,
+    maxTransitionWidth: js.UndefOr[Double] = js.undefined,
+    minScrollBack: js.UndefOr[Double] = js.undefined,
+    ns: js.UndefOr[Double] = js.undefined,
     pageLoadErrorMessage: String = null,
     pageLoadErrorMessageTheme: String = null,
     phonegapNavigationEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -64,27 +64,27 @@ object JQueryMobileOptions {
     val __obj = js.Dynamic.literal(buttonMarkup = buttonMarkup.asInstanceOf[js.Any], transitionFallbacks = transitionFallbacks.asInstanceOf[js.Any])
     if (activeBtnClass != null) __obj.updateDynamic("activeBtnClass")(activeBtnClass.asInstanceOf[js.Any])
     if (activePageClass != null) __obj.updateDynamic("activePageClass")(activePageClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(ajaxEnabled)) __obj.updateDynamic("ajaxEnabled")(ajaxEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCrossDomainPages)) __obj.updateDynamic("allowCrossDomainPages")(allowCrossDomainPages.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoInitializePage)) __obj.updateDynamic("autoInitializePage")(autoInitializePage.asInstanceOf[js.Any])
+    if (!js.isUndefined(ajaxEnabled)) __obj.updateDynamic("ajaxEnabled")(ajaxEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCrossDomainPages)) __obj.updateDynamic("allowCrossDomainPages")(allowCrossDomainPages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoInitializePage)) __obj.updateDynamic("autoInitializePage")(autoInitializePage.get.asInstanceOf[js.Any])
     if (defaultDialogTransition != null) __obj.updateDynamic("defaultDialogTransition")(defaultDialogTransition.asInstanceOf[js.Any])
     if (defaultPageTransition != null) __obj.updateDynamic("defaultPageTransition")(defaultPageTransition.asInstanceOf[js.Any])
-    if (getMaxScrollForTransition != null) __obj.updateDynamic("getMaxScrollForTransition")(getMaxScrollForTransition.asInstanceOf[js.Any])
+    if (!js.isUndefined(getMaxScrollForTransition)) __obj.updateDynamic("getMaxScrollForTransition")(getMaxScrollForTransition.get.asInstanceOf[js.Any])
     if (gradeA != null) __obj.updateDynamic("gradeA")(gradeA.asInstanceOf[js.Any])
-    if (!js.isUndefined(hashListeningEnabled)) __obj.updateDynamic("hashListeningEnabled")(hashListeningEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreContentEnabled)) __obj.updateDynamic("ignoreContentEnabled")(ignoreContentEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkBindingEnabled)) __obj.updateDynamic("linkBindingEnabled")(linkBindingEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadingMessageTextVisible)) __obj.updateDynamic("loadingMessageTextVisible")(loadingMessageTextVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashListeningEnabled)) __obj.updateDynamic("hashListeningEnabled")(hashListeningEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreContentEnabled)) __obj.updateDynamic("ignoreContentEnabled")(ignoreContentEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkBindingEnabled)) __obj.updateDynamic("linkBindingEnabled")(linkBindingEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadingMessageTextVisible)) __obj.updateDynamic("loadingMessageTextVisible")(loadingMessageTextVisible.get.asInstanceOf[js.Any])
     if (loadingMessageTheme != null) __obj.updateDynamic("loadingMessageTheme")(loadingMessageTheme.asInstanceOf[js.Any])
-    if (maxTransitionWidth != null) __obj.updateDynamic("maxTransitionWidth")(maxTransitionWidth.asInstanceOf[js.Any])
-    if (minScrollBack != null) __obj.updateDynamic("minScrollBack")(minScrollBack.asInstanceOf[js.Any])
-    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTransitionWidth)) __obj.updateDynamic("maxTransitionWidth")(maxTransitionWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScrollBack)) __obj.updateDynamic("minScrollBack")(minScrollBack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ns)) __obj.updateDynamic("ns")(ns.get.asInstanceOf[js.Any])
     if (pageLoadErrorMessage != null) __obj.updateDynamic("pageLoadErrorMessage")(pageLoadErrorMessage.asInstanceOf[js.Any])
     if (pageLoadErrorMessageTheme != null) __obj.updateDynamic("pageLoadErrorMessageTheme")(pageLoadErrorMessageTheme.asInstanceOf[js.Any])
-    if (!js.isUndefined(phonegapNavigationEnabled)) __obj.updateDynamic("phonegapNavigationEnabled")(phonegapNavigationEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushStateEnabled)) __obj.updateDynamic("pushStateEnabled")(pushStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(phonegapNavigationEnabled)) __obj.updateDynamic("phonegapNavigationEnabled")(phonegapNavigationEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pushStateEnabled)) __obj.updateDynamic("pushStateEnabled")(pushStateEnabled.get.asInstanceOf[js.Any])
     if (subPageUrlKey != null) __obj.updateDynamic("subPageUrlKey")(subPageUrlKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchOverflowEnabled)) __obj.updateDynamic("touchOverflowEnabled")(touchOverflowEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchOverflowEnabled)) __obj.updateDynamic("touchOverflowEnabled")(touchOverflowEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryMobileOptions]
   }
 }

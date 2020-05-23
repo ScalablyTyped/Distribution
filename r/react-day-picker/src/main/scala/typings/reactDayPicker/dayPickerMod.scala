@@ -1,6 +1,7 @@
 package typings.reactDayPicker
 
 import typings.react.mod.Component
+import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -12,11 +13,7 @@ import scala.scalajs.js.annotation._
 object dayPickerMod extends js.Object {
   @js.native
   trait DayPicker
-    extends Component[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any, 
-          js.Any, 
-          js.Any
-        ] {
+    extends Component[DayPickerProps, js.Any, js.Any] {
     var dayPicker: HTMLDivElement = js.native
     def focus(): Unit = js.native
     def showMonth(month: Date): Unit = js.native

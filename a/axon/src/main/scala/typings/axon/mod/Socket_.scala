@@ -1,6 +1,6 @@
 package typings.axon.mod
 
-import typings.axon.AnonAddress
+import typings.axon.anon.Address
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Socket_ () extends EventEmitter {
   def addSocket(sock: Socket_): Unit = js.native
-  def address(): js.UndefOr[AnonAddress] = js.native
+  def address(): js.UndefOr[Address] = js.native
   def bind(port: ConnectionPort): Socket_ = js.native
   def bind(port: ConnectionPort, host: String): Socket_ = js.native
   def bind(port: ConnectionPort, host: String, fn: js.Function0[Unit]): Socket_ = js.native

@@ -7,512 +7,512 @@ import scala.scalajs.js.annotation._
 
 trait GanttConfigOptions extends js.Object {
   /**
-  	 * enables auto scheduling
-  	*/
+    * enables auto scheduling
+    */
   var auto_scheduling: Boolean
   /**
-  	 * allows or forbids creating links from parent tasks (projects) to their children
-  	*/
+    * allows or forbids creating links from parent tasks (projects) to their children
+    */
   var auto_scheduling_descendant_links: Boolean
   /**
-  	 * defines whether gantt will do autoscheduling on data loading
-  	*/
+    * defines whether gantt will do autoscheduling on data loading
+    */
   var auto_scheduling_initial: Boolean
   /**
-  	 * defines whether the whole project will be moved (see the details below)
-  	*/
+    * defines whether the whole project will be moved (see the details below)
+    */
   var auto_scheduling_move_projects: Boolean
   /**
-  	 * enables the auto scheduling mode, in which tasks will always be rescheduled to the earliest possible date
-  	*/
+    * enables the auto scheduling mode, in which tasks will always be rescheduled to the earliest possible date
+    */
   var auto_scheduling_strict: Boolean
   /**
-  	 * automatically converts tasks with subtasks to projects and projects without subtasks back to tasks
-  	*/
+    * automatically converts tasks with subtasks to projects and projects without subtasks back to tasks
+    */
   var auto_types: Boolean
   /**
-  	 * enables automatic adjusting of the grid's columns to the grid's width
-  	*/
+    * enables automatic adjusting of the grid's columns to the grid's width
+    */
   var autofit: Boolean
   /**
-  	 * enables autoscrolling while dragging a task or link out of the current browser screen
-  	*/
+    * enables autoscrolling while dragging a task or link out of the current browser screen
+    */
   var autoscroll: Boolean
   /**
-  	 * defines the speed of autoscrolling (in ms) while dragging a task or link out of the current browser screen
-  	*/
+    * defines the speed of autoscrolling (in ms) while dragging a task or link out of the current browser screen
+    */
   var autoscroll_speed: Double
   /**
-  	 * forces the Gantt chart to automatically change its size to show all tasks without scrolling
-  	*/
+    * forces the Gantt chart to automatically change its size to show all tasks without scrolling
+    */
   var autosize: Boolean | String
   /**
-  	 * sets the minimum width (in pixels) that the Gantt chart can take in the horizontal 'autosize' mode
-  	*/
+    * sets the minimum width (in pixels) that the Gantt chart can take in the horizontal 'autosize' mode
+    */
   var autosize_min_width: Double
   /**
-  	 * enables dynamic loading in the Gantt chart
-  	*/
+    * enables dynamic loading in the Gantt chart
+    */
   var branch_loading: Boolean
   /**
-  	 * specifies that the task has children that are not yet loaded from the backend
-  	*/
+    * specifies that the task has children that are not yet loaded from the backend
+    */
   var branch_loading_property: String
   /**
-  	 * stores a collection of buttons resided in the left bottom corner of the lightbox
-  	*/
+    * stores a collection of buttons resided in the left bottom corner of the lightbox
+    */
   var buttons_left: js.Array[_]
   /**
-  	 * stores a collection of buttons resided in the right bottom corner of the lightbox
-  	*/
+    * stores a collection of buttons resided in the right bottom corner of the lightbox
+    */
   var buttons_right: js.Array[_]
   /**
-  	 * changes the name of the property that affects binding of a calendar to a task/group of tasks
-  	*/
+    * changes the name of the property that affects binding of a calendar to a task/group of tasks
+    */
   var calendar_property: String
   /**
-  	 * enables cascade deleting of nested tasks and links
-  	*/
+    * enables cascade deleting of nested tasks and links
+    */
   var cascade_delete: Boolean
   /**
-  	 * configures the columns of the table
-  	*/
+    * configures the columns of the table
+    */
   var columns: js.Array[_]
   /**
-  	 * enables adjusting the task's start and end dates to the work time (while dragging)
-  	*/
+    * enables adjusting the task's start and end dates to the work time (while dragging)
+    */
   var correct_work_time: Boolean
   /**
-  	 * sets the format of dates in the "Start time" column of the table
-  	*/
+    * sets the format of dates in the "Start time" column of the table
+    */
   var date_grid: String
   /**
-  	 * sets the format of the time scale (X-Axis)
-  	*/
+    * sets the format of the time scale (X-Axis)
+    */
   var date_scale: String
   /**
-  	 * 'says' to open the lightbox while creating new events by clicking on the '+' button
-  	*/
+    * 'says' to open the lightbox while creating new events by clicking on the '+' button
+    */
   var details_on_create: Boolean
   /**
-  	 * 'says' to open the lightbox after double clicking on a task
-  	*/
+    * 'says' to open the lightbox after double clicking on a task
+    */
   var details_on_dblclick: Boolean
   /**
-  	 * enables the possibility to drag the lightbox by the header
-  	*/
+    * enables the possibility to drag the lightbox by the header
+    */
   var drag_lightbox: Boolean
   /**
-  	 * enables creating dependency links by drag-and-drop
-  	*/
+    * enables creating dependency links by drag-and-drop
+    */
   var drag_links: Boolean
   /**
-  	 * stores the types of available drag-and-drop modes
-  	*/
+    * stores the types of available drag-and-drop modes
+    */
   var drag_mode: js.Any
   /**
-  	 * enables the possibility to move tasks by drag-and-drop
-  	*/
+    * enables the possibility to move tasks by drag-and-drop
+    */
   var drag_move: Boolean
   /**
-  	 * enables the possibility to change the task progress by dragging the progress knob
-  	*/
+    * enables the possibility to change the task progress by dragging the progress knob
+    */
   var drag_progress: Boolean
   /**
-  	 * enables drag and drop of items of the project type
-  	*/
+    * enables drag and drop of items of the project type
+    */
   var drag_project: Boolean
   /**
-  	 * enables the possibility to resize tasks by drag-and-drop
-  	*/
+    * enables the possibility to resize tasks by drag-and-drop
+    */
   var drag_resize: Boolean
   /**
-  	 * sets the number of 'gantt.config.duration_unit' units that will correspond to one  unit of the 'duration' data property.
-  	*/
+    * sets the number of 'gantt.config.duration_unit' units that will correspond to one  unit of the 'duration' data property.
+    */
   var duration_step: Double
   /**
-  	 * sets the duration unit
-  	*/
+    * sets the duration unit
+    */
   var duration_unit: String
   /**
-  	 * changes the name of a property that affects the editing ability  of tasks/links in the read-only Gantt chart
-  	*/
+    * changes the name of a property that affects the editing ability  of tasks/links in the read-only Gantt chart
+    */
   var editable_property: String
   /**
-  	 * an object that contains definitions of inline editors
-  	*/
+    * an object that contains definitions of inline editors
+    */
   var editor_types: js.Any
   /**
-  	 * sets the  end value of the time scale
-  	*/
+    * sets the  end value of the time scale
+    */
   var end_date: Date
   /**
-  	 * 'says' the Gantt chart to re-render the scale each time a task doesn't fit into the existing scale interval
-  	*/
+    * 'says' the Gantt chart to re-render the scale each time a task doesn't fit into the existing scale interval
+    */
   var fit_tasks: Boolean
   /**
-  	 * makes the grid resizable by dragging the right grid's border
-  	*/
+    * makes the grid resizable by dragging the right grid's border
+    */
   var grid_resize: Boolean
   /**
-  	 * sets the name of the attribute  of the grid resizer's  DOM element
-  	*/
+    * sets the name of the attribute  of the grid resizer's  DOM element
+    */
   var grid_resizer_attribute: String
   /**
-  	 * sets the name of the attribute  of the column resizer's  DOM element. The attribute presents the column's index
-  	*/
+    * sets the name of the attribute  of the column resizer's  DOM element. The attribute presents the column's index
+    */
   var grid_resizer_column_attribute: String
   /**
-  	 * sets the width of the grid
-  	*/
+    * sets the width of the grid
+    */
   var grid_width: Double
   /**
-  	 * shows the critical path in the chart
-  	*/
+    * shows the critical path in the chart
+    */
   var highlight_critical_path: Boolean
   /**
-  	 * specifies whether sub-scales shall use the scale_cell_class template by default
-  	*/
+    * specifies whether sub-scales shall use the scale_cell_class template by default
+    */
   var inherit_scale_class: Boolean
   /**
-  	 * sets whether the timeline area will be initially scrolled to display the earliest task
-  	*/
+    * sets whether the timeline area will be initially scrolled to display the earliest task
+    */
   var initial_scroll: Boolean
   /**
-  	 * 'says' to preserve the initial grid's width while resizing columns within
-  	*/
+    * 'says' to preserve the initial grid's width while resizing columns within
+    */
   var keep_grid_width: Boolean
   /**
-  	 * enables keyboard navigation in gantt
-  	*/
+    * enables keyboard navigation in gantt
+    */
   var keyboard_navigation: Boolean
   /**
-  	 * enables keyboard navigation by cells
-  	*/
+    * enables keyboard navigation by cells
+    */
   var keyboard_navigation_cells: Boolean
   /**
-  	 * sets the name of the attribute of the task layer's DOM element
-  	*/
+    * sets the name of the attribute of the task layer's DOM element
+    */
   var layer_attribute: String
   /**
-  	 * specifies the layout object
-  	*/
+    * specifies the layout object
+    */
   var layout: js.Any
   /**
-  	 * specifies the lightbox object
-  	*/
+    * specifies the lightbox object
+    */
   var lightbox: js.Any
   /**
-  	 * increases the height of the lightbox
-  	*/
+    * increases the height of the lightbox
+    */
   var lightbox_additional_height: Double
   /**
-  	 * sets the size of the link arrow
-  	*/
+    * sets the size of the link arrow
+    */
   var link_arrow_size: Double
   /**
-  	 * sets the name of the attribute that will specify the id of the link's HTML element
-  	*/
+    * sets the name of the attribute that will specify the id of the link's HTML element
+    */
   var link_attribute: String
   /**
-  	 * sets the width of dependency links in the timeline area
-  	*/
+    * sets the width of dependency links in the timeline area
+    */
   var link_line_width: Double
   /**
-  	 * sets the width of the area (over the link) sensitive to clicks
-  	*/
+    * sets the width of the area (over the link) sensitive to clicks
+    */
   var link_wrapper_width: Double
   /**
-  	 * stores the types of links dependencies
-  	*/
+    * stores the types of links dependencies
+    */
   var links: js.Any
   /**
-  	 * sets the minimum width for a column in the timeline area
-  	*/
+    * sets the minimum width for a column in the timeline area
+    */
   var min_column_width: Double
   /**
-  	 * Sets the minimum duration (in milliseconds) that can be set for a task during resizing.
-  	*/
+    * Sets the minimum duration (in milliseconds) that can be set for a task during resizing.
+    */
   var min_duration: Double
   /**
-  	 * sets the minumum width for the grid (in pixels) while being resized
-  	*/
+    * sets the minumum width for the grid (in pixels) while being resized
+    */
   var min_grid_column_width: Double
   /**
-  	 * enables/disables multi-task selection in the Gantt chart
-  	*/
+    * enables/disables multi-task selection in the Gantt chart
+    */
   var multiselect: Boolean
   /**
-  	 * specifies whether multi-task selection will be available within one or any level
-  	*/
+    * specifies whether multi-task selection will be available within one or any level
+    */
   var multiselect_one_level: Boolean
   /**
-  	 * openes all branches initially
-  	*/
+    * openes all branches initially
+    */
   var open_tree_initially: Boolean
   /**
-  	 * activates the 'branch' mode that allows reordering tasks within the same nesting level
-  	*/
+    * activates the 'branch' mode that allows reordering tasks within the same nesting level
+    */
   var order_branch: String | Boolean
   /**
-  	 * activates the 'branch' mode that allows reordering tasks within the whole gantt
-  	*/
+    * activates the 'branch' mode that allows reordering tasks within the whole gantt
+    */
   var order_branch_free: Boolean
   /**
-  	 * adds an empty row into the end of the list of tasks to simplify tasks editing via keyboard
-  	*/
+    * adds an empty row into the end of the list of tasks to simplify tasks editing via keyboard
+    */
   var placeholder_task: Boolean
   /**
-  	 * preserves the current position of the vertical and horizontal scrolls while re-drawing the gantt chart
-  	*/
+    * preserves the current position of the vertical and horizontal scrolls while re-drawing the gantt chart
+    */
   var preserve_scroll: Boolean
   /**
-  	 * specifies whether the gantt container should block the mousewheel event, or should it be propagated up to the window element
-  	*/
+    * specifies whether the gantt container should block the mousewheel event, or should it be propagated up to the window element
+    */
   var prevent_default_scroll: Boolean
   /**
-  	 * defines whether the task form will appear from the left/right side of the screen or near the selected task
-  	*/
+    * defines whether the task form will appear from the left/right side of the screen or near the selected task
+    */
   var quick_info_detached: Boolean
   /**
-  	 * stores a collection of buttons resided in the pop-up task's details form
-  	*/
+    * stores a collection of buttons resided in the pop-up task's details form
+    */
   var quickinfo_buttons: js.Array[_]
   /**
-  	 * activates the read-only mode for the Gantt chart
-  	*/
+    * activates the read-only mode for the Gantt chart
+    */
   var readonly: Boolean
   /**
-  	 * changes the name of a property that affects the read-only behaviour of tasks/links
-  	*/
+    * changes the name of a property that affects the read-only behaviour of tasks/links
+    */
   var readonly_property: String
   /**
-  	 * enables the Redo functionality for the gantt
-  	*/
+    * enables the Redo functionality for the gantt
+    */
   var redo: Boolean
   /**
-  	 * defines a set of working calendars that can be assigned to a specific resource, e.g. a user
-  	*/
+    * defines a set of working calendars that can be assigned to a specific resource, e.g. a user
+    */
   var resource_calendars: js.Any
   /**
-  	 * defines the property of a task object that stores a resource id associated with resourceGrid/Timeline/Histogram
-  	*/
+    * defines the property of a task object that stores a resource id associated with resourceGrid/Timeline/Histogram
+    */
   var resource_property: String
   /**
-  	 * tells the resource timeline to render elements and call templates for non-allocated cells
-  	*/
+    * tells the resource timeline to render elements and call templates for non-allocated cells
+    */
   var resource_render_empty_cells: Boolean
   /**
-  	 * specifies the name of the dataStore connected to the resourceGrid/resourceTimeline/resourceHistogram views
-  	*/
+    * specifies the name of the dataStore connected to the resourceGrid/resourceTimeline/resourceHistogram views
+    */
   var resource_store: String
   /**
-  	 * sets the id of the virtual root element
-  	*/
+    * sets the id of the virtual root element
+    */
   var root_id: String | Double
   /**
-  	 * enables rounding the task's start and end dates to the nearest scale marks
-  	*/
+    * enables rounding the task's start and end dates to the nearest scale marks
+    */
   var round_dnd_dates: Boolean
   /**
-  	 * sets the default height for rows of the table
-  	*/
+    * sets the default height for rows of the table
+    */
   var row_height: Double
   /**
-  	 * switches gantt to the right-to-left mode
-  	*/
+    * switches gantt to the right-to-left mode
+    */
   var rtl: Boolean
   /**
-  	 * sets the height of the time scale and the header of the grid
-  	*/
+    * sets the height of the time scale and the header of the grid
+    */
   var scale_height: Double
   /**
-  	 * sets the minimal scale unit (in case multiple scales are used) as the interval of leading/closing empty space
-  	*/
+    * sets the minimal scale unit (in case multiple scales are used) as the interval of leading/closing empty space
+    */
   var scale_offset_minimal: Boolean
   /**
-  	 * sets the unit of the time scale (X-Axis)
-  	*/
+    * sets the unit of the time scale (X-Axis)
+    */
   var scale_unit: String
   /**
-  	 * specifies whether the timeline area shall be scrolled while selecting to display the selected task
-  	*/
+    * specifies whether the timeline area shall be scrolled while selecting to display the selected task
+    */
   var scroll_on_click: Boolean
   /**
-  	 * set the sizes of the vertical (width) and horizontal (height) scrolls
-  	*/
+    * set the sizes of the vertical (width) and horizontal (height) scrolls
+    */
   var scroll_size: Double
   /**
-  	 * enables selection of tasks in the Gantt chart
-  	*/
+    * enables selection of tasks in the Gantt chart
+    */
   var select_task: Boolean
   /**
-  	 * enables converting server-side dates from UTC to a local time zone (and backward) while sending data to the server
-  	*/
+    * enables converting server-side dates from UTC to a local time zone (and backward) while sending data to the server
+    */
   var server_utc: Boolean
   /**
-  	 * shows the chart (timeline) area of the Gantt chart
-  	*/
+    * shows the chart (timeline) area of the Gantt chart
+    */
   var show_chart: Boolean
   /**
-  	 * enables showing error alerts in case of unexpected behavior
-  	*/
+    * enables showing error alerts in case of unexpected behavior
+    */
   var show_errors: Boolean
   /**
-  	 * shows the grid area of the Gantt chart
-  	*/
+    * shows the grid area of the Gantt chart
+    */
   var show_grid: Boolean
   /**
-  	 * enables/disables displaying links in the Gantt chart
-  	*/
+    * enables/disables displaying links in the Gantt chart
+    */
   var show_links: Boolean
   /**
-  	 * shows/hides markers on the page
-  	*/
+    * shows/hides markers on the page
+    */
   var show_markers: Boolean
   /**
-  	 * enables displaying of the progress inside the task bars
-  	*/
+    * enables displaying of the progress inside the task bars
+    */
   var show_progress: Boolean
   /**
-  	 * activates/disables the 'quick_info' extension (pop-up task's details form)
-  	*/
+    * activates/disables the 'quick_info' extension (pop-up task's details form)
+    */
   var show_quick_info: Boolean
   /**
-  	 * enables/disables displaying column borders in the chart area
-  	*/
+    * enables/disables displaying column borders in the chart area
+    */
   var show_task_cells: Boolean
   /**
-  	 * enables showing unscheduled tasks
-  	*/
+    * enables showing unscheduled tasks
+    */
   var show_unscheduled: Boolean
   /**
-  	 * hides non-working time from the time scale
-  	*/
+    * hides non-working time from the time scale
+    */
   var skip_off_time: Boolean
   /**
-  	 * enables the smart rendering mode for gantt's tasks and links rendering
-  	*/
+    * enables the smart rendering mode for gantt's tasks and links rendering
+    */
   var smart_rendering: Boolean
   /**
-  	 * specifies that only visible part of the time scale is rendered on the screen
-  	*/
+    * specifies that only visible part of the time scale is rendered on the screen
+    */
   var smart_scales: Boolean
   /**
-  	 * enables sorting in the table
-  	*/
+    * enables sorting in the table
+    */
   var sort: Boolean
   /**
-  	 * sets the start value of the time scale
-  	*/
+    * sets the start value of the time scale
+    */
   var start_date: Date
   /**
-  	 * sets the starting day of the week
-  	*/
+    * sets the starting day of the week
+    */
   var start_on_monday: Boolean
   /**
-  	 * generates a background image for the timeline area instead of rendering actual columns' and rows' lines
-  	*/
+    * generates a background image for the timeline area instead of rendering actual columns' and rows' lines
+    */
   var static_background: Boolean
   /**
-  	 * sets the step of the time scale (X-Axis)
-  	*/
+    * sets the step of the time scale (X-Axis)
+    */
   var step: Double
   /**
-  	 * specifies the second time scale(s)
-  	*/
+    * specifies the second time scale(s)
+    */
   var subscales: js.Array[_]
   /**
-  	 * sets the name of the attribute that will specify the id of the task's HTML element
-  	*/
+    * sets the name of the attribute that will specify the id of the task's HTML element
+    */
   var task_attribute: String
   /**
-  	 * sets the format of the date label in the 'Time period' section of the lightbox
-  	*/
+    * sets the format of the date label in the 'Time period' section of the lightbox
+    */
   var task_date: String
   /**
-  	 * sets the height of task bars in the timeline area
-  	*/
+    * sets the height of task bars in the timeline area
+    */
   var task_height: Double
   /**
-  	 * sets the offset (in pixels) of the nearest task from the left border in the timeline
-  	*/
+    * sets the offset (in pixels) of the nearest task from the left border in the timeline
+    */
   var task_scroll_offset: Double
   /**
-  	 * sets the format of the time drop-down selector in the lightbox
-  	*/
+    * sets the format of the time drop-down selector in the lightbox
+    */
   var time_picker: String
   /**
-  	 * sets the minimum step (in minutes) for the task's time values
-  	*/
+    * sets the minimum step (in minutes) for the task's time values
+    */
   var time_step: Double
   /**
-  	 * sets the length of time, in milliseconds, before the tooltip hides
-  	*/
+    * sets the length of time, in milliseconds, before the tooltip hides
+    */
   var tooltip_hide_timeout: Double
   /**
-  	 * sets the right (if positive) offset of the tooltip's position
-  	*/
+    * sets the right (if positive) offset of the tooltip's position
+    */
   var tooltip_offset_x: Double
   /**
-  	 * sets the top (if positive) offset of the tooltip's position
-  	*/
+    * sets the top (if positive) offset of the tooltip's position
+    */
   var tooltip_offset_y: Double
   /**
-  	 * sets the timeout in milliseconds before the tooltip is displayed for a task
-  	*/
+    * sets the timeout in milliseconds before the tooltip is displayed for a task
+    */
   var tooltip_timeout: Double
   /**
-  	 * enables/disables the touch support for the Gantt chart
-  	*/
+    * enables/disables the touch support for the Gantt chart
+    */
   var touch: Boolean | String
   /**
-  	 * defines the time period in milliseconds that is used to differ the long touch gesture from the scroll gesture
-  	*/
+    * defines the time period in milliseconds that is used to differ the long touch gesture from the scroll gesture
+    */
   var touch_drag: Double | Boolean
   /**
-  	 * returns vibration feedback before/after drag and drop on touch devices
-  	*/
+    * returns vibration feedback before/after drag and drop on touch devices
+    */
   var touch_feedback: Boolean
   /**
-  	 * defines the duration of vibration feedback before/after drag and drop on touch devices (in milliseconds)
-  	*/
+    * defines the duration of vibration feedback before/after drag and drop on touch devices (in milliseconds)
+    */
   var touch_feedback_duration: Double
   /**
-  	 * redefines functions responsible for displaying different types of tasks
-  	*/
+    * redefines functions responsible for displaying different types of tasks
+    */
   var type_renderers: js.Any
   /**
-  	 * stores the names of lightbox's structures (used for different types of tasks)
-  	*/
+    * stores the names of lightbox's structures (used for different types of tasks)
+    */
   var types: js.Any
   /**
-  	 * enables the Undo functionality for the gantt
-  	*/
+    * enables the Undo functionality for the gantt
+    */
   var undo: Boolean
   /**
-  	 * sets the actions that the Undo operation will revert
-  	*/
+    * sets the actions that the Undo operation will revert
+    */
   var undo_actions: js.Any
   /**
-  	 * sets the number of steps that should be reverted by the undo method
-  	*/
+    * sets the number of steps that should be reverted by the undo method
+    */
   var undo_steps: Double
   /**
-  	 * sets the types of entities for which the Undo operation will be applied
-  	*/
+    * sets the types of entities for which the Undo operation will be applied
+    */
   var undo_types: js.Any
   /**
-  	 * enables WAI-ARIA support to make the component recognizable for screen readers
-  	*/
+    * enables WAI-ARIA support to make the component recognizable for screen readers
+    */
   var wai_aria_attributes: Boolean
   /**
-  	 * enables calculating the duration of tasks in working time instead of calendar time
-  	*/
+    * enables calculating the duration of tasks in working time instead of calendar time
+    */
   var work_time: Boolean
   /**
-  	 * defines date formats that are used to parse data from a data set and to send data to a server
-  	*/
+    * defines date formats that are used to parse data from a data set and to send data to a server
+    */
   var xml_date: String
 }
 

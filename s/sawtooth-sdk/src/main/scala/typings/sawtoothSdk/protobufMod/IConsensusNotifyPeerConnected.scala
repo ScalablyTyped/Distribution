@@ -11,9 +11,9 @@ trait IConsensusNotifyPeerConnected extends js.Object {
 
 object IConsensusNotifyPeerConnected {
   @scala.inline
-  def apply(peerInfo: IConsensusPeerInfo = null): IConsensusNotifyPeerConnected = {
+  def apply(peerInfo: js.UndefOr[Null | IConsensusPeerInfo] = js.undefined): IConsensusNotifyPeerConnected = {
     val __obj = js.Dynamic.literal()
-    if (peerInfo != null) __obj.updateDynamic("peerInfo")(peerInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerInfo)) __obj.updateDynamic("peerInfo")(peerInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusNotifyPeerConnected]
   }
 }

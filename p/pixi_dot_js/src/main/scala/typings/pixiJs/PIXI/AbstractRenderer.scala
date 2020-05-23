@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.AnonAutoDensity
 import typings.pixiJs.PIXI.utils.EventEmitter
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
@@ -16,11 +15,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.utils.EventEmitter
   * @memberof PIXI
   */
-@JSGlobal("PIXI.AbstractRenderer")
 @js.native
-class AbstractRenderer protected () extends EventEmitter {
-  def this(system: String) = this()
-  def this(system: String, options: AnonAutoDensity) = this()
+trait AbstractRenderer extends EventEmitter {
   /**
     * The background color as a number.
     *
@@ -162,14 +158,14 @@ class AbstractRenderer protected () extends EventEmitter {
     * This can be quite useful if your displayObject is complicated and needs to be reused multiple times.
     *
     * @param {PIXI.DisplayObject} displayObject - The displayObject the object will be generated from.
-    * @param {number} scaleMode - Should be one of the scaleMode consts.
+    * @param {PIXI.SCALE_MODES} scaleMode - The scale mode of the texture.
     * @param {number} resolution - The resolution / device pixel ratio of the texture being generated.
     * @param {PIXI.Rectangle} [region] - The region of the displayObject, that shall be rendered,
     *        if no region is specified, defaults to the local bounds of the displayObject.
     * @return {PIXI.RenderTexture} A texture of the graphics object.
     */
-  def generateTexture(displayObject: DisplayObject, scaleMode: Double, resolution: Double): RenderTexture = js.native
-  def generateTexture(displayObject: DisplayObject, scaleMode: Double, resolution: Double, region: Rectangle): RenderTexture = js.native
+  def generateTexture(displayObject: DisplayObject, scaleMode: SCALE_MODES, resolution: Double): RenderTexture = js.native
+  def generateTexture(displayObject: DisplayObject, scaleMode: SCALE_MODES, resolution: Double, region: Rectangle): RenderTexture = js.native
   /**
     * Initialize the plugins.
     *

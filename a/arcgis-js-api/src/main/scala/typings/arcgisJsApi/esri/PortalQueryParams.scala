@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`avg-rating`
 import typings.arcgisJsApi.arcgisJsApiStrings.`num-comments`
 import typings.arcgisJsApi.arcgisJsApiStrings.`num-ratings`
@@ -95,8 +94,4 @@ trait PortalQueryParams extends Accessor {
     */
   var start: Double = js.native
 }
-
-@JSGlobal("__esri.PortalQueryParams")
-@js.native
-object PortalQueryParams extends TopLevel[PortalQueryParamsConstructor]
 

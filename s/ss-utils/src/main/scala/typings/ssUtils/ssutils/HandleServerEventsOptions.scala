@@ -27,7 +27,7 @@ object HandleServerEventsOptions {
   @scala.inline
   def apply(
     handlers: StringDictionary[js.Function] = null,
-    heartbeatIntervalMs: Int | Double = null,
+    heartbeatIntervalMs: js.UndefOr[Double] = js.undefined,
     heartbeatUrl: String = null,
     receivers: StringDictionary[js.Any] = null,
     success: (/* selector */ String, /* msg */ String, /* e */ js.Any) => Unit = null,
@@ -36,7 +36,7 @@ object HandleServerEventsOptions {
   ): HandleServerEventsOptions = {
     val __obj = js.Dynamic.literal()
     if (handlers != null) __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
-    if (heartbeatIntervalMs != null) __obj.updateDynamic("heartbeatIntervalMs")(heartbeatIntervalMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeatIntervalMs)) __obj.updateDynamic("heartbeatIntervalMs")(heartbeatIntervalMs.get.asInstanceOf[js.Any])
     if (heartbeatUrl != null) __obj.updateDynamic("heartbeatUrl")(heartbeatUrl.asInstanceOf[js.Any])
     if (receivers != null) __obj.updateDynamic("receivers")(receivers.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))

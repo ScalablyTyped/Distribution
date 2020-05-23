@@ -103,22 +103,22 @@ trait DBInstanceAutomatedBackup extends js.Object {
 object DBInstanceAutomatedBackup {
   @scala.inline
   def apply(
-    AllocatedStorage: Int | scala.Double = null,
+    AllocatedStorage: js.UndefOr[Integer] = js.undefined,
     AvailabilityZone: String = null,
     DBInstanceArn: String = null,
     DBInstanceIdentifier: String = null,
     DbiResourceId: String = null,
-    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined,
     InstanceCreateTime: TStamp = null,
-    Iops: Int | scala.Double = null,
+    Iops: js.UndefOr[IntegerOptional] = js.undefined,
     KmsKeyId: String = null,
     LicenseModel: String = null,
     MasterUsername: String = null,
     OptionGroupName: String = null,
-    Port: Int | scala.Double = null,
+    Port: js.UndefOr[Integer] = js.undefined,
     Region: String = null,
     RestoreWindow: RestoreWindow = null,
     Status: String = null,
@@ -128,22 +128,22 @@ object DBInstanceAutomatedBackup {
     VpcId: String = null
   ): DBInstanceAutomatedBackup = {
     val __obj = js.Dynamic.literal()
-    if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.get.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (DBInstanceArn != null) __obj.updateDynamic("DBInstanceArn")(DBInstanceArn.asInstanceOf[js.Any])
     if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier.asInstanceOf[js.Any])
     if (DbiResourceId != null) __obj.updateDynamic("DbiResourceId")(DbiResourceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled.get.asInstanceOf[js.Any])
     if (InstanceCreateTime != null) __obj.updateDynamic("InstanceCreateTime")(InstanceCreateTime.asInstanceOf[js.Any])
-    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
+    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel.asInstanceOf[js.Any])
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername.asInstanceOf[js.Any])
     if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     if (RestoreWindow != null) __obj.updateDynamic("RestoreWindow")(RestoreWindow.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

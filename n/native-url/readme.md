@@ -1,7 +1,7 @@
 
 # Scala.js typings for native-url
 
-Typings are for version 0.3.1
+Typings are for version 0.2.6
 
 ## Library description:
 Brings the node url api layer to whatwg-url class

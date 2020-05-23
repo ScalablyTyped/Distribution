@@ -17,9 +17,9 @@ trait SpectrumMessage extends js.Object {
 
 object SpectrumMessage {
   @scala.inline
-  def apply(bandwidth: Int | Double = null, frequencyRanges: js.Array[FrequencyRange] = null): SpectrumMessage = {
+  def apply(bandwidth: js.UndefOr[Double] = js.undefined, frequencyRanges: js.Array[FrequencyRange] = null): SpectrumMessage = {
     val __obj = js.Dynamic.literal()
-    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(bandwidth)) __obj.updateDynamic("bandwidth")(bandwidth.get.asInstanceOf[js.Any])
     if (frequencyRanges != null) __obj.updateDynamic("frequencyRanges")(frequencyRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpectrumMessage]
   }

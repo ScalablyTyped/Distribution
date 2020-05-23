@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 trait ISencha extends IAbstract {
   /** [Method] Opens a specified URL
-  		* @param url Object
-  		*/
+    * @param url Object
+    */
   @JSName("openURL")
   var openURL_ISencha: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
@@ -120,7 +120,7 @@ object ISencha {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

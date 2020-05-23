@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,4 @@ trait SVGRectElement extends SVGGeometryElement {
   val x: SVGAnimatedLength = js.native
   val y: SVGAnimatedLength = js.native
 }
-
-@JSGlobal("SVGRectElement")
-@js.native
-object SVGRectElement extends Instantiable0[SVGRectElement]
 

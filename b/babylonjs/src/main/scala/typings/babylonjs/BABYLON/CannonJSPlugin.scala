@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.CannonJSPlugin")
 @js.native
-class CannonJSPlugin () extends IPhysicsEnginePlugin {
-  def this(_useDeltaForWorldStep: Boolean) = this()
-  def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
-  def this(_useDeltaForWorldStep: Boolean, iterations: Double, cannonInjection: js.Any) = this()
+trait CannonJSPlugin extends IPhysicsEnginePlugin {
   var BJSCANNON: js.Any = js.native
   var _addMaterial: js.Any = js.native
   var _cannonRaycastResult: js.Any = js.native

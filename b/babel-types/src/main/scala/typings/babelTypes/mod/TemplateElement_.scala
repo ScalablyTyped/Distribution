@@ -1,6 +1,6 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.AnonCooked
+import typings.babelTypes.anon.Cooked
 import typings.babelTypes.babelTypesStrings.TemplateElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait TemplateElement_ extends Node {
   var tail: Boolean
   @JSName("type")
   var type_TemplateElement_ : TemplateElement
-  var value: AnonCooked
+  var value: Cooked
 }
 
 object TemplateElement_ {
@@ -21,7 +21,7 @@ object TemplateElement_ {
     start: Double,
     tail: Boolean,
     `type`: TemplateElement,
-    value: AnonCooked,
+    value: Cooked,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null

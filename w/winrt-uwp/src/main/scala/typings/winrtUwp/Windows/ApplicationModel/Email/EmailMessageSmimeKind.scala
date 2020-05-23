@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object EmailMessageSmimeKind extends js.Object {
   /** Opaque signed MIME (a single MIME entity). */
   @js.native
   sealed trait opaqueSigned extends EmailMessageSmimeKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMessageSmimeKind with Double] = js.native
-  /* 1 */ @js.native
-  object clearSigned extends TopLevel[clearSigned with Double]
-  
-  /* 3 */ @js.native
-  object encrypted extends TopLevel[encrypted with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object opaqueSigned extends TopLevel[opaqueSigned with Double]
   
 }
 

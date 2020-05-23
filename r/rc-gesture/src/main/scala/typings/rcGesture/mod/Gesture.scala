@@ -1,6 +1,6 @@
 package typings.rcGesture.mod
 
-import typings.rcGesture.AnonAvailablePan
+import typings.rcGesture.anon.AvailablePan
 import typings.rcGesture.rcGestureStrings.`pan-x pan-y`
 import typings.rcGesture.rcGestureStrings.`pan-x`
 import typings.rcGesture.rcGestureStrings.`pan-y`
@@ -31,7 +31,7 @@ trait Gesture
   @JSName("componentWillUnmount")
   def componentWillUnmount_MGesture(): Unit = js.native
   def doSingleTouchEnd(status: js.Any): Unit = js.native
-  def getGestureState(): AnonAvailablePan = js.native
+  def getGestureState(): AvailablePan = js.native
   def getTouchAction(): auto | (`pan-x pan-y`) | `pan-x` | `pan-y` = js.native
   def getTouches(e: js.Any): js.Any = js.native
   def initGestureStatus(e: js.Any): Unit = js.native

@@ -20,22 +20,22 @@ trait FindOneOptions extends js.Object {
 object FindOneOptions {
   @scala.inline
   def apply(
-    children: Int | Double = null,
+    children: js.UndefOr[Double] = js.undefined,
     defaults: js.UndefOr[Boolean] = js.undefined,
     disableEvents: js.UndefOr[Boolean] = js.undefined,
     fields: FieldSpecifier = null,
     reactive: js.UndefOr[Boolean] = js.undefined,
-    skip: Int | Double = null,
+    skip: js.UndefOr[Double] = js.undefined,
     sort: SortSpecifier = null,
     transform: /* repeated */ js.Any => _ = null
   ): FindOneOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableEvents)) __obj.updateDynamic("disableEvents")(disableEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableEvents)) __obj.updateDynamic("disableEvents")(disableEvents.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(reactive)) __obj.updateDynamic("reactive")(reactive.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(reactive)) __obj.updateDynamic("reactive")(reactive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[FindOneOptions]

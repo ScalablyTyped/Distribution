@@ -33,8 +33,8 @@ object ToggleProps {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (addElement != null) __obj.updateDynamic("addElement")(js.Any.fromFunction1(addElement))
     if (highlightedElementsMap != null) __obj.updateDynamic("highlightedElementsMap")(highlightedElementsMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
-    if (!js.isUndefined(isToggledOn)) __obj.updateDynamic("isToggledOn")(isToggledOn.asInstanceOf[js.Any])
+    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isToggledOn)) __obj.updateDynamic("isToggledOn")(isToggledOn.get.asInstanceOf[js.Any])
     if (toggleId != null) __obj.updateDynamic("toggleId")(toggleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToggleProps]
   }

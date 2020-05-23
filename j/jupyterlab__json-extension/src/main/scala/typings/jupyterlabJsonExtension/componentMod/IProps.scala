@@ -15,8 +15,7 @@ trait IProps extends js.Object {
 object IProps {
   @scala.inline
   def apply(data: NonNullable[JSONValue] = null, metadata: JSONObject = null): IProps = {
-    val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProps]
   }

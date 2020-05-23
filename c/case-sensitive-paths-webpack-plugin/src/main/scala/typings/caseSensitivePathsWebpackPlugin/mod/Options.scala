@@ -19,8 +19,8 @@ object Options {
   @scala.inline
   def apply(debug: js.UndefOr[Boolean] = js.undefined, useBeforeEmitHook: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBeforeEmitHook)) __obj.updateDynamic("useBeforeEmitHook")(useBeforeEmitHook.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBeforeEmitHook)) __obj.updateDynamic("useBeforeEmitHook")(useBeforeEmitHook.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

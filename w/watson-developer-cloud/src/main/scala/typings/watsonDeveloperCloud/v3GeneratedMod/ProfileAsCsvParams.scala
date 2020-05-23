@@ -42,13 +42,13 @@ object ProfileAsCsvParams {
   ): ProfileAsCsvParams = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (accept_language != null) __obj.updateDynamic("accept_language")(accept_language.asInstanceOf[js.Any])
-    if (!js.isUndefined(consumption_preferences)) __obj.updateDynamic("consumption_preferences")(consumption_preferences.asInstanceOf[js.Any])
+    if (!js.isUndefined(consumption_preferences)) __obj.updateDynamic("consumption_preferences")(consumption_preferences.get.asInstanceOf[js.Any])
     if (content_language != null) __obj.updateDynamic("content_language")(content_language.asInstanceOf[js.Any])
     if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(csv_headers)) __obj.updateDynamic("csv_headers")(csv_headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(csv_headers)) __obj.updateDynamic("csv_headers")(csv_headers.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw_scores)) __obj.updateDynamic("raw_scores")(raw_scores.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw_scores)) __obj.updateDynamic("raw_scores")(raw_scores.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileAsCsvParams]
   }
 }

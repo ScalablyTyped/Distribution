@@ -21,13 +21,13 @@ object RequestResponseFrame {
     streamId: Double,
     `type`: `0x04`,
     data: Encodable = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     metadata: Encodable = null
   ): RequestResponseFrame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestResponseFrame]
   }

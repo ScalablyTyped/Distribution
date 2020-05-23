@@ -1,16 +1,12 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.MediaPlayer")
 @js.native
-class MediaPlayer protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: MediaPlayerOptions) = this()
+trait MediaPlayer extends Widget {
   @JSName("options")
   var options_MediaPlayer: MediaPlayerOptions = js.native
   var wrapper: JQuery = js.native
@@ -30,13 +26,5 @@ class MediaPlayer protected () extends Widget {
   def toolbar(): ToolBar = js.native
   def volume(): Double = js.native
   def volume(value: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.MediaPlayer")
-@js.native
-object MediaPlayer extends js.Object {
-  var fn: MediaPlayer = js.native
-  def extend(proto: js.Object): MediaPlayer = js.native
 }
 

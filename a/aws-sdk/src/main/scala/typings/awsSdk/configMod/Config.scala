@@ -1,6 +1,6 @@
 package typings.awsSdk.configMod
 
-import typings.awsSdk.ConfigurationOptionsConfi
+import typings.awsSdk.anon.ConfigurationOptionsConfi
 import typings.awsSdk.awsSdkBooleans.`true`
 import typings.awsSdk.configServicePlaceholdersMod.ConfigurationServicePlaceholders
 import scala.scalajs.js

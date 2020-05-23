@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,8 +39,4 @@ trait Attribution extends Widget_ {
     */
   var viewModel: AttributionViewModel = js.native
 }
-
-@JSGlobal("__esri.Attribution")
-@js.native
-object Attribution extends TopLevel[AttributionConstructor]
 

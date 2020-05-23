@@ -1,8 +1,8 @@
 package typings.jsoneditor.mod
 
-import typings.jsoneditor.AnonEnd
-import typings.jsoneditor.AnonPathJSONPath
-import typings.jsoneditor.AnonStart
+import typings.jsoneditor.anon.End
+import typings.jsoneditor.anon.PathJSONPath
+import typings.jsoneditor.anon.Start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,11 +43,11 @@ trait JSONEditor extends js.Object {
     * @param start Path for the first node in range
     * @param end Path for the last node in range
     */
-  def getNodesByRange(start: AnonPathJSONPath, end: AnonPathJSONPath): js.Array[SerializableNode] = js.native
+  def getNodesByRange(start: PathJSONPath, end: PathJSONPath): js.Array[SerializableNode] = js.native
   /**
     * Get the current selected nodes. Only applicable for mode 'tree'.
     */
-  def getSelection(): AnonEnd = js.native
+  def getSelection(): End = js.native
   /**
     * Get JSON data as string. Returns the contents of the editor as string. When the editor is in mode 'text', 'code' or 'preview', the returned text is returned as-is.
     * For the other modes, the returned text is a compacted string. In order to get the JSON formatted with a certain number of spaces, use `JSON.stringify(JSONEditor.get(), null, 2)`.
@@ -56,7 +56,7 @@ trait JSONEditor extends js.Object {
   /**
     * Get the current selected text with the selection range. Only applicable for mode 'text' and 'code'.
     */
-  def getTextSelection(): AnonStart = js.native
+  def getTextSelection(): Start = js.native
   /**
     * Force the editor to refresh the user interface and update all rendered HTML. This can be useful for example when using `onClassName` and the returned class name depends on external factors.
     */
@@ -87,7 +87,7 @@ trait JSONEditor extends js.Object {
     * For single node selection send only the start parameter.
     * If the nodes are not from the same level the first common parent will be selected.
     */
-  def setSelection(start: AnonPathJSONPath, end: AnonPathJSONPath): Unit = js.native
+  def setSelection(start: PathJSONPath, end: PathJSONPath): Unit = js.native
   /**
     * Set text data in the editor. This method throws an exception when the provided jsonString does not contain valid JSON and the editor is in mode 'tree', 'view', or 'form'.
     */

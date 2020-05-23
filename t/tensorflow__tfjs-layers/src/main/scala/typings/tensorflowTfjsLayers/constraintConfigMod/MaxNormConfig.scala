@@ -11,10 +11,10 @@ trait MaxNormConfig extends js.Object {
 
 object MaxNormConfig {
   @scala.inline
-  def apply(axis: Int | Double = null, max_value: Int | Double = null): MaxNormConfig = {
+  def apply(axis: js.UndefOr[Double] = js.undefined, max_value: js.UndefOr[Double] = js.undefined): MaxNormConfig = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (max_value != null) __obj.updateDynamic("max_value")(max_value.asInstanceOf[js.Any])
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_value)) __obj.updateDynamic("max_value")(max_value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxNormConfig]
   }
 }

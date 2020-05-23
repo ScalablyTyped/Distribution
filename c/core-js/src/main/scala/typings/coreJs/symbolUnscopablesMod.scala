@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/symbol/unscopables", JSImport.Namespace)
 @js.native
 object symbolUnscopablesMod
-  extends TopLevel[js.Symbol]
+  extends TopLevel[js.Any]
 

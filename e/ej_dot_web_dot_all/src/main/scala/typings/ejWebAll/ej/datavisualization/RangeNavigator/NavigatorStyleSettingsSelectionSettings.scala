@@ -28,13 +28,13 @@ object NavigatorStyleSettingsSelectionSettings {
     border: NavigatorStyleSettingsSelectionSettingsBorder = null,
     color: String = null,
     enable: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null
+    opacity: js.UndefOr[Double] = js.undefined
   ): NavigatorStyleSettingsSelectionSettings = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorStyleSettingsSelectionSettings]
   }
 }

@@ -28,13 +28,13 @@ object GetAssociatedIpv6PoolCidrsRequest {
   @scala.inline
   def apply(
     PoolId: Ipv6PoolEc2Id,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    MaxResults: Int | scala.Double = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    MaxResults: js.UndefOr[Ipv6PoolMaxResults] = js.undefined,
     NextToken: NextToken = null
   ): GetAssociatedIpv6PoolCidrsRequest = {
     val __obj = js.Dynamic.literal(PoolId = PoolId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssociatedIpv6PoolCidrsRequest]
   }

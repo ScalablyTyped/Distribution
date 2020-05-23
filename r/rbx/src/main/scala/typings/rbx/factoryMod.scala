@@ -1,6 +1,9 @@
 package typings.rbx
 
 import typings.propTypes.mod.ValidationMap
+import typings.rbx.anon.ClassName
+import typings.rbx.anon.PartialVariablesDefinitio
+import typings.rbx.anon.`2`
 import typings.rbx.rbxStrings.className
 import typings.rbx.typesMod.UnionToIntersection
 import typings.rbx.variablesMod.VariablesDefinitions
@@ -22,7 +25,7 @@ object factoryMod extends js.Object {
   ): js.Function1[
     /* variables */ PartialVariablesDefinitio, 
     js.Function3[
-      /* props */ AnonClassName with (UnionToIntersection[
+      /* props */ ClassName with (UnionToIntersection[
         ExtractTTransformProps[
           /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
         ]
@@ -30,7 +33,7 @@ object factoryMod extends js.Object {
       /* componentName */ String, 
       /* location */ js.UndefOr[String], 
       (Pick[
-        AnonClassName with (UnionToIntersection[
+        ClassName with (UnionToIntersection[
           ExtractTTransformProps[
             /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
           ]
@@ -39,7 +42,7 @@ object factoryMod extends js.Object {
           className, 
           /* keyof rbx.rbx/types.UnionToIntersection<rbx.rbx/base/helpers/factory.ExtractTTransformProps<T[number]>> */ String
         ]
-      ]) with Anon2 with (UnionToIntersection[
+      ]) with `2` with (UnionToIntersection[
         ExtractTNewProps[
           /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
         ]
@@ -60,21 +63,21 @@ object factoryMod extends js.Object {
   type MakeValidatingTransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function1[
     /* variables */ js.UndefOr[VariablesDefinitions], 
     js.Function3[
-      /* props */ AnonClassName with Partial[TTransformProps], 
+      /* props */ ClassName with Partial[TTransformProps], 
       /* componentName */ String, 
       /* location */ js.UndefOr[String], 
       ReturnType[TransformFunction[TTransformProps, TNewProps]]
     ]
   ]
   type TransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function1[
-    /* props */ AnonClassName with Partial[TTransformProps], 
+    /* props */ ClassName with Partial[TTransformProps], 
     (Omit[
-      AnonClassName with Partial[TTransformProps], 
+      ClassName with Partial[TTransformProps], 
       (/* keyof TTransformProps */ String) | className
-    ]) with Anon2 with TNewProps
+    ]) with `2` with TNewProps
   ]
   type ValidatingTransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function3[
-    /* props */ AnonClassName with Partial[TTransformProps], 
+    /* props */ ClassName with Partial[TTransformProps], 
     /* componentName */ String, 
     /* location */ js.UndefOr[String], 
     ReturnType[TransformFunction[TTransformProps, TNewProps]]

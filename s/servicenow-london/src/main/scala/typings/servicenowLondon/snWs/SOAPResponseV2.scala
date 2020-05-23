@@ -1,15 +1,15 @@
 package typings.servicenowLondon.snWs
 
-import typings.servicenowLondon.AnonGet
-import typings.servicenowLondon.AnonName
+import typings.servicenowLondon.anon.Get
+import typings.servicenowLondon.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SOAPResponseV2 extends js.Object {
-  def getAllHeaders(): js.Array[AnonName]
+  def getAllHeaders(): js.Array[Name]
   def getBody(): String
-  def getCookies(): AnonGet
+  def getCookies(): Get
   def getErrorCode(): Double
   def getErrorMessage(): String
   def getHeader(name: String): String
@@ -22,9 +22,9 @@ trait SOAPResponseV2 extends js.Object {
 object SOAPResponseV2 {
   @scala.inline
   def apply(
-    getAllHeaders: () => js.Array[AnonName],
+    getAllHeaders: () => js.Array[Name],
     getBody: () => String,
-    getCookies: () => AnonGet,
+    getCookies: () => Get,
     getErrorCode: () => Double,
     getErrorMessage: () => String,
     getHeader: String => String,

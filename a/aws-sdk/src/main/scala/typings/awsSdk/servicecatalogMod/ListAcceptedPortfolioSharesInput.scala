@@ -28,13 +28,13 @@ object ListAcceptedPortfolioSharesInput {
   @scala.inline
   def apply(
     AcceptLanguage: AcceptLanguage = null,
-    PageSize: Int | Double = null,
+    PageSize: js.UndefOr[PageSize] = js.undefined,
     PageToken: PageToken = null,
     PortfolioShareType: PortfolioShareType = null
   ): ListAcceptedPortfolioSharesInput = {
     val __obj = js.Dynamic.literal()
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
     if (PortfolioShareType != null) __obj.updateDynamic("PortfolioShareType")(PortfolioShareType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAcceptedPortfolioSharesInput]

@@ -12,7 +12,7 @@ trait WebExtEvent[TCallback /* <: js.Function1[/* repeated */ js.Any, _] */] ext
 
 object WebExtEvent {
   @scala.inline
-  def apply[TCallback /* <: js.Function1[/* repeated */ js.Any, _] */](
+  def apply[TCallback](
     addListener: TCallback => Unit,
     hasListener: TCallback => Boolean,
     removeListener: TCallback => Unit

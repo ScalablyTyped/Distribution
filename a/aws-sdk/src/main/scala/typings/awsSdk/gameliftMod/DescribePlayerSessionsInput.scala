@@ -36,7 +36,7 @@ object DescribePlayerSessionsInput {
   @scala.inline
   def apply(
     GameSessionId: ArnStringModel = null,
-    Limit: Int | scala.Double = null,
+    Limit: js.UndefOr[PositiveInteger] = js.undefined,
     NextToken: NonZeroAndMaxString = null,
     PlayerId: NonZeroAndMaxString = null,
     PlayerSessionId: PlayerSessionId = null,
@@ -44,7 +44,7 @@ object DescribePlayerSessionsInput {
   ): DescribePlayerSessionsInput = {
     val __obj = js.Dynamic.literal()
     if (GameSessionId != null) __obj.updateDynamic("GameSessionId")(GameSessionId.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (PlayerId != null) __obj.updateDynamic("PlayerId")(PlayerId.asInstanceOf[js.Any])
     if (PlayerSessionId != null) __obj.updateDynamic("PlayerSessionId")(PlayerSessionId.asInstanceOf[js.Any])

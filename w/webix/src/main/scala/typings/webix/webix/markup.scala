@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import typings.webix.webix.ui.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +13,17 @@ trait markup extends js.Object {
   def parse(data: js.Any, datatype: String): Unit
 }
 
-@JSGlobal("webix.markup")
-@js.native
-object markup extends TopLevel[markup]
+object markup {
+  @scala.inline
+  def apply(
+    attribute: js.Any,
+    dataTag: js.Any,
+    init: (String, String) => baseview,
+    namespace: js.Any,
+    parse: (js.Any, String) => Unit
+  ): markup = {
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], dataTag = dataTag.asInstanceOf[js.Any], init = js.Any.fromFunction2(init), namespace = namespace.asInstanceOf[js.Any], parse = js.Any.fromFunction2(parse))
+    __obj.asInstanceOf[markup]
+  }
+}
 

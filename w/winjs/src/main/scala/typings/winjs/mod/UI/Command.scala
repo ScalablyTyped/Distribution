@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("winjs", "UI.Command")
 @js.native
 class Command ()
-  extends typings.winjs.WinJS.UI.Command
+  extends typings.winjs.WinJS.UI.AppBarCommand
 
 /* static members */
 @JSImport("winjs", "UI.Command")

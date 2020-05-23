@@ -50,7 +50,7 @@ object IOptions {
   ): IOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleComms)) __obj.updateDynamic("handleComms")(handleComms.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleComms)) __obj.updateDynamic("handleComms")(handleComms.get.asInstanceOf[js.Any])
     if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]

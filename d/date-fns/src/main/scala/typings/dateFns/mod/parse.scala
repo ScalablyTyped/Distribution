@@ -1,6 +1,6 @@
 package typings.dateFns.mod
 
-import typings.dateFns.AnonUseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
+import typings.dateFns.anon.UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,14 +14,14 @@ object parse extends js.Object {
     dateString: String,
     formatString: String,
     referenceDate: Double,
-    options: AnonUseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
+    options: UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
   ): Date = js.native
   def apply(dateString: String, formatString: String, referenceDate: Date): Date = js.native
   def apply(
     dateString: String,
     formatString: String,
     referenceDate: Date,
-    options: AnonUseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
+    options: UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
   ): Date = js.native
 }
 

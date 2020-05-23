@@ -13,7 +13,7 @@ object MergeWithListContextProps {
   @scala.inline
   def apply(dense: js.UndefOr[Boolean] = js.undefined): MergeWithListContextProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dense)) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
+    if (!js.isUndefined(dense)) __obj.updateDynamic("dense")(dense.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeWithListContextProps]
   }
 }

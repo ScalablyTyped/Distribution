@@ -12,11 +12,15 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(ignore: js.UndefOr[Boolean] = js.undefined, omission: String = null, size: Int | Double = null): Options = {
+  def apply(
+    ignore: js.UndefOr[Boolean] = js.undefined,
+    omission: String = null,
+    size: js.UndefOr[Double] = js.undefined
+  ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.get.asInstanceOf[js.Any])
     if (omission != null) __obj.updateDynamic("omission")(omission.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

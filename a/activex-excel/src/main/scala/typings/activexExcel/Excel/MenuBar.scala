@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.MenuBar")
 @js.native
-class MenuBar protected () extends js.Object {
+trait MenuBar extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val BuiltIn: Boolean = js.native
   var Caption: String = js.native

@@ -2,9 +2,9 @@ package typings.wordpressApiFetch.mod.Schema
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
-import typings.wordpressApiFetch.AnonBlockversion
-import typings.wordpressApiFetch.AnonDictk
-import typings.wordpressApiFetch.AnonProtected
+import typings.wordpressApiFetch.anon.Blockversion
+import typings.wordpressApiFetch.anon.Dictk
+import typings.wordpressApiFetch.anon.Protected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +15,10 @@ trait BasePost[T /* <: Context */]
   var author: Double
   var categories: js.Array[Double]
   var comment_status: OpenOrClosed
-  var content: Contextual[T, AnonProtected, AnonBlockversion]
+  var content: Contextual[T, Protected, Blockversion]
   var date: String
   var date_gmt: String
-  var excerpt: Contextual[T, AnonProtected, js.Object]
+  var excerpt: Contextual[T, Protected, js.Object]
   var featured_media: Double
   var format: PostFormat
   var generated_slug: String
@@ -42,15 +42,15 @@ trait BasePost[T /* <: Context */]
 
 object BasePost {
   @scala.inline
-  def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def apply[T](
+    _links: Record[String, js.Array[Dictk]],
     author: Double,
     categories: js.Array[Double],
     comment_status: OpenOrClosed,
-    content: Contextual[T, AnonProtected, AnonBlockversion],
+    content: Contextual[T, Protected, Blockversion],
     date: String,
     date_gmt: String,
-    excerpt: Contextual[T, AnonProtected, js.Object],
+    excerpt: Contextual[T, Protected, js.Object],
     featured_media: Double,
     format: PostFormat,
     generated_slug: String,

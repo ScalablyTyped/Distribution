@@ -18,9 +18,12 @@ trait StorageRuleType extends js.Object {
 
 object StorageRuleType {
   @scala.inline
-  def apply(StorageAllocatedInBytes: Int | Double = null, StorageType: StorageType = null): StorageRuleType = {
+  def apply(
+    StorageAllocatedInBytes: js.UndefOr[PositiveSizeType] = js.undefined,
+    StorageType: StorageType = null
+  ): StorageRuleType = {
     val __obj = js.Dynamic.literal()
-    if (StorageAllocatedInBytes != null) __obj.updateDynamic("StorageAllocatedInBytes")(StorageAllocatedInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(StorageAllocatedInBytes)) __obj.updateDynamic("StorageAllocatedInBytes")(StorageAllocatedInBytes.get.asInstanceOf[js.Any])
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageRuleType]
   }

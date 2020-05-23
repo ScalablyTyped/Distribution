@@ -17,11 +17,15 @@ trait IBinding extends js.Object {
 
 object IBinding {
   @scala.inline
-  def apply(condition: IExpr = null, members: js.Array[String] = null, role: String = null): IBinding = {
+  def apply(
+    condition: js.UndefOr[Null | IExpr] = js.undefined,
+    members: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    role: js.UndefOr[Null | String] = js.undefined
+  ): IBinding = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(condition)) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (!js.isUndefined(members)) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
+    if (!js.isUndefined(role)) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBinding]
   }
 }

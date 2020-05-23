@@ -32,15 +32,15 @@ object ResizeEventArgs {
     model: Model = null,
     nextPane: js.Any = null,
     prevPane: js.Any = null,
-    splitbarIndex: Int | Double = null,
+    splitbarIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): ResizeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (nextPane != null) __obj.updateDynamic("nextPane")(nextPane.asInstanceOf[js.Any])
     if (prevPane != null) __obj.updateDynamic("prevPane")(prevPane.asInstanceOf[js.Any])
-    if (splitbarIndex != null) __obj.updateDynamic("splitbarIndex")(splitbarIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitbarIndex)) __obj.updateDynamic("splitbarIndex")(splitbarIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeEventArgs]
   }

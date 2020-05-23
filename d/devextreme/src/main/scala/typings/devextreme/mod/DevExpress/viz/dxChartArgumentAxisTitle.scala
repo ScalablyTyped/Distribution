@@ -22,7 +22,7 @@ object dxChartArgumentAxisTitle {
   def apply(
     alignment: center | left | right = null,
     font: Font = null,
-    margin: Int | Double = null,
+    margin: js.UndefOr[Double] = js.undefined,
     text: String = null,
     textOverflow: ellipsis | hide | none = null,
     wordWrap: normal | breakWord | none = null
@@ -30,7 +30,7 @@ object dxChartArgumentAxisTitle {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
     if (wordWrap != null) __obj.updateDynamic("wordWrap")(wordWrap.asInstanceOf[js.Any])

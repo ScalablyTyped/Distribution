@@ -7,24 +7,30 @@ import scala.scalajs.js.annotation._
 /**
   * A client grid row.
   */
-@JSGlobal("ASPxClientVerticalGridRow")
-@js.native
-class ASPxClientVerticalGridRow () extends ASPxClientGridColumnBase {
+trait ASPxClientVerticalGridRow extends ASPxClientGridColumnBase {
   /**
     * Gets the name of the database field assigned to the current row.
     */
-  var fieldName: String = js.native
+  var fieldName: String
   /**
     * Gets the row's position within the collection.
     */
-  var index: Double = js.native
+  var index: Double
   /**
     * Gets the name that uniquely identifies the row.
     */
-  var name: String = js.native
+  var name: String
   /**
     * Gets whether the row is visible.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
+}
+
+object ASPxClientVerticalGridRow {
+  @scala.inline
+  def apply(fieldName: String, index: Double, name: String, visible: Boolean): ASPxClientVerticalGridRow = {
+    val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientVerticalGridRow]
+  }
 }
 

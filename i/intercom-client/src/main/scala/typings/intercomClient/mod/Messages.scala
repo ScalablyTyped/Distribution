@@ -1,6 +1,6 @@
 package typings.intercomClient.mod
 
-import typings.intercomClient.PartialCreateMessage
+import typings.intercomClient.anon.PartialCreateMessage
 import typings.intercomClient.messageMod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`

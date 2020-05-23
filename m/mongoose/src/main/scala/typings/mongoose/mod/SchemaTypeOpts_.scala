@@ -129,7 +129,7 @@ trait SchemaTypeOpts_[T]
 object SchemaTypeOpts_ {
   @scala.inline
   def apply[T](
-    StringDictionary: /* other */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     alias: String = null,
     auto: Boolean | js.Any = null,
     default: DefaultFn[T] | T = null,

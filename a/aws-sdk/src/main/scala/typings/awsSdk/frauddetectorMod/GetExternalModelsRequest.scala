@@ -22,9 +22,13 @@ trait GetExternalModelsRequest extends js.Object {
 
 object GetExternalModelsRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, modelEndpoint: String = null, nextToken: String = null): GetExternalModelsRequest = {
+  def apply(
+    maxResults: js.UndefOr[ExternalModelsMaxResults] = js.undefined,
+    modelEndpoint: String = null,
+    nextToken: String = null
+  ): GetExternalModelsRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (modelEndpoint != null) __obj.updateDynamic("modelEndpoint")(modelEndpoint.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExternalModelsRequest]

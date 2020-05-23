@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object global extends js.Object {
   @js.native
-  class Workflow () extends js.Object {
+  trait Workflow extends js.Object {
     def broadcastEvent(contextId: String, eventName: String): Unit = js.native
     def cancel(record: ScopedGlideRecord): Unit = js.native
     def cancelContext(context: ScopedGlideRecord): Unit = js.native

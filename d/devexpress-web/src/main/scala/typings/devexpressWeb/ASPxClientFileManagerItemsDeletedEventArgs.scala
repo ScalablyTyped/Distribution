@@ -7,17 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientFileManager.ItemsDeleted event.
   */
-@JSGlobal("ASPxClientFileManagerItemsDeletedEventArgs")
-@js.native
-class ASPxClientFileManagerItemsDeletedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFileManagerItemsDeletedEventArgs object.
-    * @param items An array of ASPxClientFileManagerItem objects that are items currently being processed.
-    */
-  def this(items: js.Array[ASPxClientFileManagerItem]) = this()
+trait ASPxClientFileManagerItemsDeletedEventArgs extends ASPxClientEventArgs {
   /**
     * Gets an array of the currently processed items.
     */
-  var items: js.Array[ASPxClientFileManagerItem] = js.native
+  var items: js.Array[ASPxClientFileManagerItem]
+}
+
+object ASPxClientFileManagerItemsDeletedEventArgs {
+  @scala.inline
+  def apply(items: js.Array[ASPxClientFileManagerItem]): ASPxClientFileManagerItemsDeletedEventArgs = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFileManagerItemsDeletedEventArgs]
+  }
 }
 

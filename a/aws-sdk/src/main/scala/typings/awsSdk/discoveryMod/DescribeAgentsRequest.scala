@@ -29,13 +29,13 @@ object DescribeAgentsRequest {
   def apply(
     agentIds: AgentIds = null,
     filters: Filters = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Integer] = js.undefined,
     nextToken: NextToken = null
   ): DescribeAgentsRequest = {
     val __obj = js.Dynamic.literal()
     if (agentIds != null) __obj.updateDynamic("agentIds")(agentIds.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAgentsRequest]
   }

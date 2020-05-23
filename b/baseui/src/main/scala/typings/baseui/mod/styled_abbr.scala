@@ -1,7 +1,7 @@
 package typings.baseui.mod
 
-import typings.baseui.AnonClassName
-import typings.baseui.AnonTheme
+import typings.baseui.anon.ClassName
+import typings.baseui.anon.Theme
 import typings.baseui.baseuiStrings.abbr
 import typings.react.mod.ComponentProps
 import typings.std.Exclude
@@ -15,16 +15,16 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_abbr extends js.Object {
-  def apply[P /* <: js.Object */, T](component: abbr, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+  def apply[P /* <: js.Object */, T](component: abbr, styledFn: js.Function1[/* props */ Theme[T] with P, StyleObject]): StyletronComponent[
     (Pick[
       ComponentProps[abbr], 
-      Exclude[/* keyof react.react.ComponentProps<'abbr'> */ String, AnonClassName]
+      Exclude[/* keyof react.react.ComponentProps<'abbr'> */ String, ClassName]
     ]) with P
   ] = js.native
   def apply[P /* <: js.Object */, T](component: abbr, styledFn: StyleObject): StyletronComponent[
     (Pick[
       ComponentProps[abbr], 
-      Exclude[/* keyof react.react.ComponentProps<'abbr'> */ String, AnonClassName]
+      Exclude[/* keyof react.react.ComponentProps<'abbr'> */ String, ClassName]
     ]) with P
   ] = js.native
 }

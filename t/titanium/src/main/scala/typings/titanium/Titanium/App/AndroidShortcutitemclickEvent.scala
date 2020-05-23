@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a <Titanium.UI.ShortcutItem> is clicked.
-		 */
+  * Fired when a <Titanium.UI.ShortcutItem> is clicked.
+  */
 trait AndroidShortcutitemclickEvent extends AndroidBaseEvent {
   /**
-  			 * Identifier of the clicked shortcut item.
-  			 */
+    * Identifier of the clicked shortcut item.
+    */
   var id: String
 }
 

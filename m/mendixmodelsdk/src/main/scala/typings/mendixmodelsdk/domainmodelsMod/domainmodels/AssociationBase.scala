@@ -14,11 +14,12 @@ import scala.scalajs.js.annotation._
 /**
   * See: {@link https://docs.mendix.com/refguide7/associations relevant section in reference guide}
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, `type`, owner, parent, remoteSourceDocument, remoteSourceDocumentQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, `type`, owner, parent, remoteSourceDocument, remoteSourceDocumentQualifiedName, source */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase")
 @js.native
 abstract class AssociationBase protected ()
   extends Element
@@ -57,10 +58,16 @@ abstract class AssociationBase protected ()
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.10.0: deleted
     * In version 8.3.0: introduced
     */
   @JSName("remoteSourceDocument")
   val remoteSourceDocument_FAssociationBase: IRemoteEntitySourceDocument | Null = js.native
+  /**
+    * In version 8.10.0: introduced
+    */
+  @JSName("source")
+  val source_FAssociationBase: IAssociationSource | Null = js.native
   @JSName("type")
   val type_FAssociationBase: AssociationType = js.native
   def containerAsDomainModel: DomainModel = js.native
@@ -84,10 +91,18 @@ abstract class AssociationBase protected ()
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.10.0: deleted
     * In version 8.3.0: introduced
     */
   @JSName("remoteSourceDocument")
   def remoteSourceDocument_Union: IRemoteEntitySourceDocument | Null = js.native
+  def source(): js.Any = js.native
+  def source(newValue: AssociationSource): js.Any = js.native
+  /**
+    * In version 8.10.0: introduced
+    */
+  @JSName("source")
+  def source_Union: AssociationSource | Null = js.native
   def `type`: AssociationType = js.native
   def `type`(newValue: AssociationType): js.Any = js.native
 }

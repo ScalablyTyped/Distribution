@@ -13,8 +13,8 @@ object LocationOptions {
   @scala.inline
   def apply(persistQuery: js.UndefOr[Boolean] = js.undefined, updateRoutes: js.UndefOr[Boolean] = js.undefined): LocationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(persistQuery)) __obj.updateDynamic("persistQuery")(persistQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateRoutes)) __obj.updateDynamic("updateRoutes")(updateRoutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistQuery)) __obj.updateDynamic("persistQuery")(persistQuery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateRoutes)) __obj.updateDynamic("updateRoutes")(updateRoutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationOptions]
   }
 }

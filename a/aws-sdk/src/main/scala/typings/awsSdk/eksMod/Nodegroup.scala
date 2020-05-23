@@ -90,7 +90,7 @@ object Nodegroup {
     amiType: AMITypes = null,
     clusterName: String = null,
     createdAt: Timestamp = null,
-    diskSize: Int | Double = null,
+    diskSize: js.UndefOr[BoxedInteger] = js.undefined,
     health: NodegroupHealth = null,
     instanceTypes: StringList = null,
     labels: labelsMap = null,
@@ -111,7 +111,7 @@ object Nodegroup {
     if (amiType != null) __obj.updateDynamic("amiType")(amiType.asInstanceOf[js.Any])
     if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (diskSize != null) __obj.updateDynamic("diskSize")(diskSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(diskSize)) __obj.updateDynamic("diskSize")(diskSize.get.asInstanceOf[js.Any])
     if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
     if (instanceTypes != null) __obj.updateDynamic("instanceTypes")(instanceTypes.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])

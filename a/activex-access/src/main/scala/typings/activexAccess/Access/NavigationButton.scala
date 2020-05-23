@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.NavigationButton")
 @js.native
-class NavigationButton protected () extends js.Object {
+trait NavigationButton extends js.Object {
   @JSName("Access.NavigationButton_typekey")
   var AccessDotNavigationButton_typekey: NavigationButton = js.native
   var AddColon: Boolean = js.native

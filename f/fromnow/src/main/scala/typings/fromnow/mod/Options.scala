@@ -15,15 +15,15 @@ object Options {
   @scala.inline
   def apply(
     and: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     suffix: js.UndefOr[Boolean] = js.undefined,
     zero: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(and)) __obj.updateDynamic("and")(and.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(zero)) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
+    if (!js.isUndefined(and)) __obj.updateDynamic("and")(and.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zero)) __obj.updateDynamic("zero")(zero.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

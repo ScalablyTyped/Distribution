@@ -46,7 +46,7 @@ object DeviceCompliancePolicy {
     scheduledActionsForRule: js.Array[DeviceComplianceScheduledActionForRule] = null,
     userStatusOverview: DeviceComplianceUserOverview = null,
     userStatuses: js.Array[DeviceComplianceUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): DeviceCompliancePolicy = {
     val __obj = js.Dynamic.literal()
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
@@ -61,7 +61,7 @@ object DeviceCompliancePolicy {
     if (scheduledActionsForRule != null) __obj.updateDynamic("scheduledActionsForRule")(scheduledActionsForRule.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceCompliancePolicy]
   }
 }

@@ -12,7 +12,7 @@ object IntegrationOptions {
   @scala.inline
   def apply(quiet: js.UndefOr[Boolean] = js.undefined): IntegrationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationOptions]
   }
 }

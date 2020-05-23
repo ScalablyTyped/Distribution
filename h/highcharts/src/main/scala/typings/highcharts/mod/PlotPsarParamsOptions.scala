@@ -36,18 +36,18 @@ trait PlotPsarParamsOptions extends js.Object {
 object PlotPsarParamsOptions {
   @scala.inline
   def apply(
-    decimals: Int | Double = null,
-    increment: Int | Double = null,
-    index: Int | Double = null,
-    initialAccelerationFactor: Int | Double = null,
-    maxAccelerationFactor: Int | Double = null
+    decimals: js.UndefOr[Double] = js.undefined,
+    increment: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
+    initialAccelerationFactor: js.UndefOr[Double] = js.undefined,
+    maxAccelerationFactor: js.UndefOr[Double] = js.undefined
   ): PlotPsarParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
-    if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (initialAccelerationFactor != null) __obj.updateDynamic("initialAccelerationFactor")(initialAccelerationFactor.asInstanceOf[js.Any])
-    if (maxAccelerationFactor != null) __obj.updateDynamic("maxAccelerationFactor")(maxAccelerationFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(increment)) __obj.updateDynamic("increment")(increment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialAccelerationFactor)) __obj.updateDynamic("initialAccelerationFactor")(initialAccelerationFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAccelerationFactor)) __obj.updateDynamic("maxAccelerationFactor")(maxAccelerationFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPsarParamsOptions]
   }
 }

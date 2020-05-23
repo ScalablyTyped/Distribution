@@ -27,7 +27,7 @@ object StockChartValueAxisItemTitle {
     margin: Double | js.Any = null,
     padding: Double | js.Any = null,
     position: String = null,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     text: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): StockChartValueAxisItemTitle = {
@@ -39,9 +39,9 @@ object StockChartValueAxisItemTitle {
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartValueAxisItemTitle]
   }
 }

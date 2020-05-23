@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object SwipeDirection extends js.Object {
   
   @js.native
   sealed trait RightToLeft extends SwipeDirection
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SwipeDirection with Double] = js.native
-  /* 0 */ @js.native
-  object Both extends TopLevel[Both with Double]
-  
-  /* 1 */ @js.native
-  object LeftToRight extends TopLevel[LeftToRight with Double]
-  
-  /* 2 */ @js.native
-  object RightToLeft extends TopLevel[RightToLeft with Double]
   
 }
 

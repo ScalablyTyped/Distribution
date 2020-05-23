@@ -21,7 +21,7 @@ object LocalSearchOptions {
     onMarkersSet: /* pois */ js.Array[LocalResultPoi] => Unit = null,
     onResultsHtmlSet: /* container */ HTMLElement => Unit = null,
     onSearchComplete: /* results */ js.Array[LocalResult] => Unit = null,
-    pageCapacity: Int | Double = null,
+    pageCapacity: js.UndefOr[Double] = js.undefined,
     renderOptions: RenderOptions = null
   ): LocalSearchOptions = {
     val __obj = js.Dynamic.literal()
@@ -29,7 +29,7 @@ object LocalSearchOptions {
     if (onMarkersSet != null) __obj.updateDynamic("onMarkersSet")(js.Any.fromFunction1(onMarkersSet))
     if (onResultsHtmlSet != null) __obj.updateDynamic("onResultsHtmlSet")(js.Any.fromFunction1(onResultsHtmlSet))
     if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(js.Any.fromFunction1(onSearchComplete))
-    if (pageCapacity != null) __obj.updateDynamic("pageCapacity")(pageCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageCapacity)) __obj.updateDynamic("pageCapacity")(pageCapacity.get.asInstanceOf[js.Any])
     if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalSearchOptions]
   }

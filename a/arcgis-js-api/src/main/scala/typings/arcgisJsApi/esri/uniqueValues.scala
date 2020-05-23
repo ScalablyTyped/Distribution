@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +30,11 @@ trait uniqueValues extends js.Object {
   def uniqueValues(params: uniqueValuesUniqueValuesParams): js.Promise[UniqueValuesResult]
 }
 
-@JSGlobal("__esri.uniqueValues")
-@js.native
-object uniqueValues
-  extends TopLevel[
-      js.Function1[/* params */ uniqueValuesUniqueValuesParams, js.Promise[UniqueValuesResult]]
-    ]
+object uniqueValues {
+  @scala.inline
+  def apply(uniqueValues: uniqueValuesUniqueValuesParams => js.Promise[UniqueValuesResult]): uniqueValues = {
+    val __obj = js.Dynamic.literal(uniqueValues = js.Any.fromFunction1(uniqueValues))
+    __obj.asInstanceOf[uniqueValues]
+  }
+}
 

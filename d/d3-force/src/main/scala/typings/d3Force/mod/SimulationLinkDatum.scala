@@ -29,13 +29,13 @@ trait SimulationLinkDatum[NodeDatum /* <: SimulationNodeDatum */] extends js.Obj
 
 object SimulationLinkDatum {
   @scala.inline
-  def apply[NodeDatum /* <: SimulationNodeDatum */](
+  def apply[NodeDatum](
     source: NodeDatum | String | Double,
     target: NodeDatum | String | Double,
-    index: Int | Double = null
+    index: js.UndefOr[Double] = js.undefined
   ): SimulationLinkDatum[NodeDatum] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimulationLinkDatum[NodeDatum]]
   }
 }

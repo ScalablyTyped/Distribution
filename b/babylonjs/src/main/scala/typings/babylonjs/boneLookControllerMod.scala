@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.AdjustPitch
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.mathAxisMod.Space
 import typings.babylonjs.mathVectorMod.Vector3
@@ -33,7 +34,7 @@ object boneLookControllerMod extends js.Object {
       * * adjustRoll: used to make an adjustment to the roll of the bone
       **/
     def this(mesh: AbstractMesh, bone: Bone, target: Vector3) = this()
-    def this(mesh: AbstractMesh, bone: Bone, target: Vector3, options: AnonAdjustPitch) = this()
+    def this(mesh: AbstractMesh, bone: Bone, target: Vector3, options: AdjustPitch) = this()
     var _boneQuat: js.Any = js.native
     var _firstFrameSkipped: js.Any = js.native
     var _fowardAxis: js.Any = js.native

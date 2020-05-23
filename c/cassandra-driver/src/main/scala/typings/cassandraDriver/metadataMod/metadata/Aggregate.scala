@@ -1,12 +1,12 @@
 package typings.cassandraDriver.metadataMod.metadata
 
-import typings.cassandraDriver.AnonCode
+import typings.cassandraDriver.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Aggregate extends js.Object {
-  var argumentTypes: js.Array[AnonCode]
+  var argumentTypes: js.Array[Code]
   var finalFunction: String
   var initCondition: String
   var keyspaceName: String
@@ -19,7 +19,7 @@ trait Aggregate extends js.Object {
 object Aggregate {
   @scala.inline
   def apply(
-    argumentTypes: js.Array[AnonCode],
+    argumentTypes: js.Array[Code],
     finalFunction: String,
     initCondition: String,
     keyspaceName: String,

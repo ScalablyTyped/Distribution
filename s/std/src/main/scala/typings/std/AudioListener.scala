@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,23 @@ trait AudioListener extends js.Object {
   def setPosition(x: Double, y: Double, z: Double): Unit
 }
 
-@JSGlobal("AudioListener")
-@js.native
-object AudioListener extends Instantiable0[AudioListener]
+object AudioListener {
+  @scala.inline
+  def apply(
+    forwardX: AudioParam,
+    forwardY: AudioParam,
+    forwardZ: AudioParam,
+    positionX: AudioParam,
+    positionY: AudioParam,
+    positionZ: AudioParam,
+    setOrientation: (Double, Double, Double, Double, Double, Double) => Unit,
+    setPosition: (Double, Double, Double) => Unit,
+    upX: AudioParam,
+    upY: AudioParam,
+    upZ: AudioParam
+  ): AudioListener = {
+    val __obj = js.Dynamic.literal(forwardX = forwardX.asInstanceOf[js.Any], forwardY = forwardY.asInstanceOf[js.Any], forwardZ = forwardZ.asInstanceOf[js.Any], positionX = positionX.asInstanceOf[js.Any], positionY = positionY.asInstanceOf[js.Any], positionZ = positionZ.asInstanceOf[js.Any], setOrientation = js.Any.fromFunction6(setOrientation), setPosition = js.Any.fromFunction3(setPosition), upX = upX.asInstanceOf[js.Any], upY = upY.asInstanceOf[js.Any], upZ = upZ.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AudioListener]
+  }
+}
 

@@ -25,7 +25,7 @@ object srcAsyncCreatableMod extends js.Object {
     def focus(): Unit = js.native
     def handleInputChange(newValue: String, actionMeta: InputActionMeta): String = js.native
     def loadOptions(inputValue: String, callback: js.Function1[/* options */ OptionsType[OptionType], Unit]): Unit = js.native
-    def onChange(newValue: ValueType[OptionType], actionMeta: ActionMeta): Unit = js.native
+    def onChange(newValue: ValueType[OptionType], actionMeta: ActionMeta[OptionType]): Unit = js.native
   }
   
   @js.native

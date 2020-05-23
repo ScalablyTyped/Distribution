@@ -1,7 +1,7 @@
 package typings.xmlbuilder.mod
 
-import typings.xmlbuilder.AnonNData
-import typings.xmlbuilder.AnonPubID
+import typings.xmlbuilder.anon.NData
+import typings.xmlbuilder.anon.PubID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,7 +82,8 @@ class XMLDocumentCB () extends js.Object {
     * @returns the document builder object
     */
   def cdata(value: String): XMLDocumentCB = js.native
-  def com(value: String): XMLDocumentCB = js.native
+  @JSName("com")
+  def com_(value: String): XMLDocumentCB = js.native
   /**
     * Creates a new comment node and appends it to the list of child nodes.
     * 
@@ -173,7 +174,7 @@ class XMLDocumentCB () extends js.Object {
     */
   def end(): Unit = js.native
   def ent(name: String, value: String): XMLDocumentCB = js.native
-  def ent(name: String, value: AnonNData): XMLDocumentCB = js.native
+  def ent(name: String, value: NData): XMLDocumentCB = js.native
   /**
     * Creates a general entity declaration.
     * 
@@ -185,7 +186,7 @@ class XMLDocumentCB () extends js.Object {
     * @returns the document builder object
     */
   def entity(name: String, value: String): XMLDocumentCB = js.native
-  def entity(name: String, value: AnonNData): XMLDocumentCB = js.native
+  def entity(name: String, value: NData): XMLDocumentCB = js.native
   def i(array: js.Array[_]): XMLDocumentCB = js.native
   def i(obj: js.Object): XMLDocumentCB = js.native
   def i(target: String, value: js.Any): XMLDocumentCB = js.native
@@ -226,7 +227,7 @@ class XMLDocumentCB () extends js.Object {
   def node(name: String): XMLDocumentCB = js.native
   def node(name: String, attributes: js.Object): XMLDocumentCB = js.native
   def node(name: String, attributes: js.Object, text: js.Any): XMLDocumentCB = js.native
-  def not(name: String, value: AnonPubID): XMLDocumentCB = js.native
+  def not(name: String, value: PubID): XMLDocumentCB = js.native
   /**
     * Creates a notation declaration.
     * 
@@ -237,7 +238,7 @@ class XMLDocumentCB () extends js.Object {
     * 
     * @returns the document builder object
     */
-  def notation(name: String, value: AnonPubID): XMLDocumentCB = js.native
+  def notation(name: String, value: PubID): XMLDocumentCB = js.native
   /**
     * Creates a parameter entity declaration.
     * 
@@ -249,9 +250,9 @@ class XMLDocumentCB () extends js.Object {
     * @returns the document builder object
     */
   def pEntity(name: String, value: String): XMLDocumentCB = js.native
-  def pEntity(name: String, value: AnonPubID): XMLDocumentCB = js.native
+  def pEntity(name: String, value: PubID): XMLDocumentCB = js.native
   def pent(name: String, value: String): XMLDocumentCB = js.native
-  def pent(name: String, value: AnonPubID): XMLDocumentCB = js.native
+  def pent(name: String, value: PubID): XMLDocumentCB = js.native
   def r(value: String): XMLDocumentCB = js.native
   /**
     * Creates a new raw text node and appends it to the list of child 

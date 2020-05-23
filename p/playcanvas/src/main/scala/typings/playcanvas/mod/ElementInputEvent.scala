@@ -5,17 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.ElementInputEvent
-  * @classdesc Represents an input event fired on a {@link pc.ElementComponent}. When an event is raised
-  * on an ElementComponent it bubbles up to its parent ElementComponents unless we call stopPropagation().
-  * @description Create an instance of a pc.ElementInputEvent.
-  * @param {MouseEvent|TouchEvent} event - The MouseEvent or TouchEvent that was originally raised.
-  * @param {pc.ElementComponent} element - The ElementComponent that this event was originally raised on.
-  * @param {pc.CameraComponent} camera - The CameraComponent that this event was originally raised via.
-  * @property {MouseEvent|TouchEvent} event The MouseEvent or TouchEvent that was originally raised.
-  * @property {pc.ElementComponent} element The ElementComponent that this event was originally raised on.
-  * @property {pc.CameraComponent} camera The CameraComponent that this event was originally raised via.
+  * Create an instance of a pc.ElementInputEvent.
+  * @property event - The MouseEvent or TouchEvent that was originally raised.
+  * @property element - The ElementComponent that this event was originally raised on.
+  * @property camera - The CameraComponent that this event was originally raised via.
+  * @param event - The MouseEvent or TouchEvent that was originally raised.
+  * @param element - The ElementComponent that this event was originally raised on.
+  * @param camera - The CameraComponent that this event was originally raised via.
   */
 @JSImport("playcanvas", "ElementInputEvent")
 @js.native
@@ -31,5 +27,25 @@ class ElementInputEvent protected ()
     element: typings.playcanvas.pc.ElementComponent,
     camera: typings.playcanvas.pc.CameraComponent
   ) = this()
+  /**
+    * The CameraComponent that this event was originally raised via.
+    */
+  /* CompleteClass */
+  override var camera: typings.playcanvas.pc.CameraComponent = js.native
+  /**
+    * The ElementComponent that this event was originally raised on.
+    */
+  /* CompleteClass */
+  override var element: typings.playcanvas.pc.ElementComponent = js.native
+  /**
+    * The MouseEvent or TouchEvent that was originally raised.
+    */
+  /* CompleteClass */
+  override var event: typings.playcanvas.pc.MouseEvent | typings.playcanvas.pc.TouchEvent = js.native
+  /**
+    * Stop propagation of the event to parent {@link pc.ElementComponent}s. This also stops propagation of the event to other event listeners of the original DOM Event.
+    */
+  /* CompleteClass */
+  override def stopPropagation(): Unit = js.native
 }
 

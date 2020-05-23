@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxOutgoingArchive Class */
-@JSGlobal("FAXCOMEXLib.FaxOutgoingArchive")
 @js.native
-class FaxOutgoingArchive protected () extends js.Object {
+trait FaxOutgoingArchive extends js.Object {
   /** Indicates how long the fax message is kept on the server */
   var AgeLimit: Double = js.native
   /** Location of the outgoing archive on the server */

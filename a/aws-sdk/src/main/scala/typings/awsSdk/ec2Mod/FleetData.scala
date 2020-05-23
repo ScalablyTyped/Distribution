@@ -98,16 +98,16 @@ object FleetData {
     ExcessCapacityTerminationPolicy: FleetExcessCapacityTerminationPolicy = null,
     FleetId: FleetId = null,
     FleetState: FleetStateCode = null,
-    FulfilledCapacity: Int | scala.Double = null,
-    FulfilledOnDemandCapacity: Int | scala.Double = null,
+    FulfilledCapacity: js.UndefOr[Double] = js.undefined,
+    FulfilledOnDemandCapacity: js.UndefOr[Double] = js.undefined,
     Instances: DescribeFleetsInstancesSet = null,
     LaunchTemplateConfigs: FleetLaunchTemplateConfigList = null,
     OnDemandOptions: OnDemandOptions = null,
-    ReplaceUnhealthyInstances: js.UndefOr[scala.Boolean] = js.undefined,
+    ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined,
     SpotOptions: SpotOptions = null,
     Tags: TagList = null,
     TargetCapacitySpecification: TargetCapacitySpecification = null,
-    TerminateInstancesWithExpiration: js.UndefOr[scala.Boolean] = js.undefined,
+    TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined,
     Type: FleetType = null,
     ValidFrom: DateTime = null,
     ValidUntil: DateTime = null
@@ -120,16 +120,16 @@ object FleetData {
     if (ExcessCapacityTerminationPolicy != null) __obj.updateDynamic("ExcessCapacityTerminationPolicy")(ExcessCapacityTerminationPolicy.asInstanceOf[js.Any])
     if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
     if (FleetState != null) __obj.updateDynamic("FleetState")(FleetState.asInstanceOf[js.Any])
-    if (FulfilledCapacity != null) __obj.updateDynamic("FulfilledCapacity")(FulfilledCapacity.asInstanceOf[js.Any])
-    if (FulfilledOnDemandCapacity != null) __obj.updateDynamic("FulfilledOnDemandCapacity")(FulfilledOnDemandCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(FulfilledCapacity)) __obj.updateDynamic("FulfilledCapacity")(FulfilledCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FulfilledOnDemandCapacity)) __obj.updateDynamic("FulfilledOnDemandCapacity")(FulfilledOnDemandCapacity.get.asInstanceOf[js.Any])
     if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
     if (LaunchTemplateConfigs != null) __obj.updateDynamic("LaunchTemplateConfigs")(LaunchTemplateConfigs.asInstanceOf[js.Any])
     if (OnDemandOptions != null) __obj.updateDynamic("OnDemandOptions")(OnDemandOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReplaceUnhealthyInstances)) __obj.updateDynamic("ReplaceUnhealthyInstances")(ReplaceUnhealthyInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReplaceUnhealthyInstances)) __obj.updateDynamic("ReplaceUnhealthyInstances")(ReplaceUnhealthyInstances.get.asInstanceOf[js.Any])
     if (SpotOptions != null) __obj.updateDynamic("SpotOptions")(SpotOptions.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TargetCapacitySpecification != null) __obj.updateDynamic("TargetCapacitySpecification")(TargetCapacitySpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminateInstancesWithExpiration)) __obj.updateDynamic("TerminateInstancesWithExpiration")(TerminateInstancesWithExpiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(TerminateInstancesWithExpiration)) __obj.updateDynamic("TerminateInstancesWithExpiration")(TerminateInstancesWithExpiration.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (ValidFrom != null) __obj.updateDynamic("ValidFrom")(ValidFrom.asInstanceOf[js.Any])
     if (ValidUntil != null) __obj.updateDynamic("ValidUntil")(ValidUntil.asInstanceOf[js.Any])

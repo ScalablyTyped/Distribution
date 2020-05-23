@@ -13,7 +13,7 @@ object WithScrollOptions {
   @scala.inline
   def apply(alignToTop: js.UndefOr[Boolean] = js.undefined, propId: () => String = null): WithScrollOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignToTop)) __obj.updateDynamic("alignToTop")(alignToTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignToTop)) __obj.updateDynamic("alignToTop")(alignToTop.get.asInstanceOf[js.Any])
     if (propId != null) __obj.updateDynamic("propId")(js.Any.fromFunction0(propId))
     __obj.asInstanceOf[WithScrollOptions]
   }

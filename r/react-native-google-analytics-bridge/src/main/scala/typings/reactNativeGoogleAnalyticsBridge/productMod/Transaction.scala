@@ -19,16 +19,16 @@ object Transaction {
     id: String,
     affiliation: String = null,
     couponCode: String = null,
-    revenue: Int | Double = null,
-    shipping: Int | Double = null,
-    tax: Int | Double = null
+    revenue: js.UndefOr[Double] = js.undefined,
+    shipping: js.UndefOr[Double] = js.undefined,
+    tax: js.UndefOr[Double] = js.undefined
   ): Transaction = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation.asInstanceOf[js.Any])
     if (couponCode != null) __obj.updateDynamic("couponCode")(couponCode.asInstanceOf[js.Any])
-    if (revenue != null) __obj.updateDynamic("revenue")(revenue.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
-    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
+    if (!js.isUndefined(revenue)) __obj.updateDynamic("revenue")(revenue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shipping)) __obj.updateDynamic("shipping")(shipping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax)) __obj.updateDynamic("tax")(tax.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }
 }

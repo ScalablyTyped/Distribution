@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Scanners
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object ImageScannerFormat extends js.Object {
   /** Microsoft XML Paper Specification (XPS) document file format */
   @js.native
   sealed trait xps extends ImageScannerFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImageScannerFormat with Double] = js.native
-  /* 2 */ @js.native
-  object deviceIndependentBitmap extends TopLevel[deviceIndependentBitmap with Double]
-  
-  /* 0 */ @js.native
-  object jpeg extends TopLevel[jpeg with Double]
-  
-  /* 5 */ @js.native
-  object openXps extends TopLevel[openXps with Double]
-  
-  /* 6 */ @js.native
-  object pdf extends TopLevel[pdf with Double]
-  
-  /* 1 */ @js.native
-  object png extends TopLevel[png with Double]
-  
-  /* 3 */ @js.native
-  object tiff extends TopLevel[tiff with Double]
-  
-  /* 4 */ @js.native
-  object xps extends TopLevel[xps with Double]
   
 }
 

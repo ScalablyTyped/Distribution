@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("survey-knockout", "JsonObjectProperty")
 @js.native
 class JsonObjectProperty protected () extends IObject {
@@ -22,6 +22,7 @@ class JsonObjectProperty protected () extends IObject {
   var classNamePart: String = js.native
   var defaultValue: js.Any = js.native
   var defaultValueValue: js.Any = js.native
+  var displayName: String = js.native
   val hasChoices: Boolean = js.native
   val hasToUseGetValue: String | (js.Function1[/* obj */ js.Any, _]) = js.native
   val hasToUseSetValue: String | (js.Function3[/* obj */ js.Any, /* value */ js.Any, /* jsonConv */ JsonObject, _]) = js.native

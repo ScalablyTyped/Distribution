@@ -22,11 +22,11 @@ object WithBindKeyboardProps {
     index: Double,
     onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit,
     axis: x | `x-reverse` | y | `y-reverse` = null,
-    slidecount: Int | Double = null
+    slidecount: js.UndefOr[Double] = js.undefined
   ): WithBindKeyboardProps = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex))
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (slidecount != null) __obj.updateDynamic("slidecount")(slidecount.asInstanceOf[js.Any])
+    if (!js.isUndefined(slidecount)) __obj.updateDynamic("slidecount")(slidecount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithBindKeyboardProps]
   }
 }

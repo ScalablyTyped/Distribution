@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a database that contains contacts. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactStore")
 @js.native
-abstract class ContactStore () extends js.Object {
+trait ContactStore extends js.Object {
   /** Gets a contact manager that provides functionality for linking individual (raw) contacts across services together into a single aggregate contact. */
   var aggregateContactManager: AggregateContactManager = js.native
   /** Gets the ContactChangeTracker which provides functionality for monitoring changes to Contact objects in the ContactStore . */

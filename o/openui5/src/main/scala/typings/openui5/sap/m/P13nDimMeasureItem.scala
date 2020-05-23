@@ -5,19 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.P13nDimMeasureItem")
 @js.native
-class P13nDimMeasureItem protected () extends Item {
-  /**
-    * Constructor for a new P13nDimMeasureItem.Accepts an object literal <code>mSettings</code> that
-    * defines initialproperty values, aggregated and associated objects as well as event handlers.See
-    * {@link sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the
-    * settings object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait P13nDimMeasureItem extends Item {
   /**
     * Gets current value of property <code>columnKey</code>.Specifies the unique chart column key. In this
     * context a column refers to dimensions or measures of a chart.

@@ -20,12 +20,12 @@ object RequestParameters {
     metadata: StringDictionary[js.Any],
     name: String,
     operationKind: String,
-    id: String = null,
-    text: String = null
+    id: js.UndefOr[Null | String] = js.undefined,
+    text: js.UndefOr[Null | String] = js.undefined
   ): RequestParameters = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operationKind = operationKind.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestParameters]
   }
 }

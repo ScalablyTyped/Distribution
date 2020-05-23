@@ -1,9 +1,9 @@
 package typings.enzyme.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.enzyme.AnonDictkey
-import typings.enzyme.AnonHasShouldComponentUpdateBug
-import typings.enzyme.AnonOnSetState
+import typings.enzyme.anon.Dictkey
+import typings.enzyme.anon.HasShouldComponentUpdateBug
+import typings.enzyme.anon.OnSetState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,20 +11,19 @@ import scala.scalajs.js.annotation._
 trait Lifecycles
   extends // TODO Maybe some life cycle are missing
 /* lifecycleName */ StringDictionary[js.Any] {
-  var componentDidUpdate: js.UndefOr[AnonOnSetState] = js.undefined
-  var getChildContext: js.UndefOr[AnonDictkey] = js.undefined
-  var getDerivedStateFromProps: js.UndefOr[AnonHasShouldComponentUpdateBug | Boolean] = js.undefined
+  var componentDidUpdate: js.UndefOr[OnSetState] = js.undefined
+  var getChildContext: js.UndefOr[Dictkey] = js.undefined
+  var getDerivedStateFromProps: js.UndefOr[HasShouldComponentUpdateBug | Boolean] = js.undefined
   var setState: js.UndefOr[js.Any] = js.undefined
 }
 
 object Lifecycles {
   @scala.inline
   def apply(
-    StringDictionary: // TODO Maybe some life cycle are missing
-  /* lifecycleName */ StringDictionary[js.Any] = null,
-    componentDidUpdate: AnonOnSetState = null,
-    getChildContext: AnonDictkey = null,
-    getDerivedStateFromProps: AnonHasShouldComponentUpdateBug | Boolean = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    componentDidUpdate: OnSetState = null,
+    getChildContext: Dictkey = null,
+    getDerivedStateFromProps: HasShouldComponentUpdateBug | Boolean = null,
     setState: js.Any = null
   ): Lifecycles = {
     val __obj = js.Dynamic.literal()

@@ -2,10 +2,8 @@ package typings.heremaps.H.map.layer
 
 import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.ICopyright
-import typings.heremaps.H.map.layer.ITileLayer.Options
 import typings.heremaps.H.map.layer.ITileLayer.Response
 import typings.heremaps.H.map.provider.Tile
-import typings.heremaps.H.map.provider.TileProvider
 import typings.heremaps.H.math.Point
 import typings.heremaps.H.util.Event
 import scala.scalajs.js
@@ -16,18 +14,10 @@ import scala.scalajs.js.annotation._
   * Tile Layer, represents data shown on map on a tile basis. Can be used to show map tile images or other type of data which is partitioned into tiles.
   * @event update {H.util.Event}
   */
-@JSGlobal("H.map.layer.TileLayer")
 @js.native
-class TileLayer protected ()
+trait TileLayer
   extends BaseTileLayer
      with ITileLayer {
-  /**
-    * Constructor
-    * @param provider {H.map.provider.TileProvider} - data source for the TileLayer
-    * @param opt_options {H.map.layer.ITileLayer.Options=} - additional options
-    */
-  def this(provider: TileProvider) = this()
-  def this(provider: TileProvider, opt_options: Options) = this()
   var update: Event = js.native
   /* InferMemberOverrides */
   override def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native

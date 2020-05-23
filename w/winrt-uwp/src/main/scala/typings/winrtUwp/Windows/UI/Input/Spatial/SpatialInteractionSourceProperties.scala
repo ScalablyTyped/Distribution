@@ -4,11 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceProperties")
-@js.native
-abstract class SpatialInteractionSourceProperties () extends js.Object {
-  var sourceLossRisk: js.Any = js.native
-   /* unmapped type */ var tryGetLocation: js.Any = js.native
-   /* unmapped type */ var tryGetSourceLossMitigationDirection: js.Any = js.native
+trait SpatialInteractionSourceProperties extends js.Object {
+  var sourceLossRisk: js.Any
+   /* unmapped type */ var tryGetLocation: js.Any
+   /* unmapped type */ var tryGetSourceLossMitigationDirection: js.Any
+}
+
+object SpatialInteractionSourceProperties {
+  @scala.inline
+  def apply(sourceLossRisk: js.Any, tryGetLocation: js.Any, tryGetSourceLossMitigationDirection: js.Any): SpatialInteractionSourceProperties = {
+    val __obj = js.Dynamic.literal(sourceLossRisk = sourceLossRisk.asInstanceOf[js.Any], tryGetLocation = tryGetLocation.asInstanceOf[js.Any], tryGetSourceLossMitigationDirection = tryGetSourceLossMitigationDirection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialInteractionSourceProperties]
+  }
 }
 

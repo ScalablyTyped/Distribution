@@ -29,32 +29,32 @@ object PrintOptions {
   def apply(
     collate: js.UndefOr[Boolean] = js.undefined,
     color: js.UndefOr[Boolean] = js.undefined,
-    copies: Int | Double = null,
+    copies: js.UndefOr[Double] = js.undefined,
     deviceName: String = null,
     dpi: Dpi = null,
     duplexMode: simplex | shortEdge | longEdge = null,
     landscape: js.UndefOr[Boolean] = js.undefined,
     margins: Margins = null,
     pageRanges: Record[String, Double] = null,
-    pagesPerSheet: Int | Double = null,
+    pagesPerSheet: js.UndefOr[Double] = js.undefined,
     printBackground: js.UndefOr[Boolean] = js.undefined,
-    scaleFactor: Int | Double = null,
+    scaleFactor: js.UndefOr[Double] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined
   ): PrintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collate)) __obj.updateDynamic("collate")(collate.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (copies != null) __obj.updateDynamic("copies")(copies.asInstanceOf[js.Any])
+    if (!js.isUndefined(collate)) __obj.updateDynamic("collate")(collate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(copies)) __obj.updateDynamic("copies")(copies.get.asInstanceOf[js.Any])
     if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
     if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
     if (duplexMode != null) __obj.updateDynamic("duplexMode")(duplexMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.get.asInstanceOf[js.Any])
     if (margins != null) __obj.updateDynamic("margins")(margins.asInstanceOf[js.Any])
     if (pageRanges != null) __obj.updateDynamic("pageRanges")(pageRanges.asInstanceOf[js.Any])
-    if (pagesPerSheet != null) __obj.updateDynamic("pagesPerSheet")(pagesPerSheet.asInstanceOf[js.Any])
-    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground.asInstanceOf[js.Any])
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagesPerSheet)) __obj.updateDynamic("pagesPerSheet")(pagesPerSheet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactor)) __obj.updateDynamic("scaleFactor")(scaleFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintOptions]
   }
 }

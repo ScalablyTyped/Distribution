@@ -26,8 +26,8 @@ object AccordionOptions {
     if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (content_class != null) __obj.updateDynamic("content_class")(content_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi_expand)) __obj.updateDynamic("multi_expand")(multi_expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi_expand)) __obj.updateDynamic("multi_expand")(multi_expand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionOptions]
   }
 }

@@ -17,11 +17,11 @@ object NavigationResetAction {
     actions: js.Array[NavigationNavigateAction],
     index: Double,
     `type`: NavigationSlashRESET,
-    key: String = null
+    key: js.UndefOr[Null | String] = js.undefined
   ): NavigationResetAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationResetAction]
   }
 }

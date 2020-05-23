@@ -25,10 +25,10 @@ object DeleteApplicationVersionMessage {
   def apply(
     ApplicationName: ApplicationName,
     VersionLabel: VersionLabel,
-    DeleteSourceBundle: js.UndefOr[Boolean] = js.undefined
+    DeleteSourceBundle: js.UndefOr[DeleteSourceBundle] = js.undefined
   ): DeleteApplicationVersionMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], VersionLabel = VersionLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteSourceBundle)) __obj.updateDynamic("DeleteSourceBundle")(DeleteSourceBundle.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteSourceBundle)) __obj.updateDynamic("DeleteSourceBundle")(DeleteSourceBundle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationVersionMessage]
   }
 }

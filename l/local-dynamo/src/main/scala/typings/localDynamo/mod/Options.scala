@@ -27,10 +27,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
     if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (heap != null) __obj.updateDynamic("heap")(heap.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharedDb)) __obj.updateDynamic("sharedDb")(sharedDb.asInstanceOf[js.Any])
+    if (!js.isUndefined(sharedDb)) __obj.updateDynamic("sharedDb")(sharedDb.get.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

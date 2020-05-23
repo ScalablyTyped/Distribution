@@ -3,25 +3,18 @@ package typings.amapJsApiDriving.AMap
 import typings.amapJsApi.AMap.EventEmitter
 import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApi.AMap.LocationValue
-import typings.amapJsApiDriving.AMap.Driving.Options
 import typings.amapJsApiDriving.AMap.Driving.SearchOptions
 import typings.amapJsApiDriving.AMap.Driving.SearchPoint
 import typings.amapJsApiDriving.AMap.Driving.SearchResultBase
 import typings.amapJsApiDriving.AMap.Driving.SearchResultExt
 import typings.amapJsApiDriving.AMap.Driving.SearchStatus
-import typings.amapJsApiDriving.AnonDestination
+import typings.amapJsApiDriving.anon.Destination
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Driving")
 @js.native
-/**
-  * 驾车路线规划服务
-  * @param options 自定义选项
-  */
-class Driving_ () extends EventEmitter {
-  def this(options: Options) = this()
+trait Driving_ extends EventEmitter {
   /**
     * 清除搜索结果
     */
@@ -78,7 +71,7 @@ class Driving_ () extends EventEmitter {
     * 唤起高德地图客户端驾车路径规划
     * @param obj 唤起参数
     */
-  def searchOnAMAP(obj: AnonDestination): Unit = js.native
+  def searchOnAMAP(obj: Destination): Unit = js.native
   /**
     * 设置避让区域，最大支持三个避让区域，避让道路和避让区域不能同时使用
     * @param path 避让区域

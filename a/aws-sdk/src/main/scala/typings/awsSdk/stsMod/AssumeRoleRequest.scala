@@ -54,7 +54,7 @@ object AssumeRoleRequest {
   def apply(
     RoleArn: arnType,
     RoleSessionName: roleSessionNameType,
-    DurationSeconds: Int | Double = null,
+    DurationSeconds: js.UndefOr[roleDurationSecondsType] = js.undefined,
     ExternalId: externalIdType = null,
     Policy: sessionPolicyDocumentType = null,
     PolicyArns: policyDescriptorListType = null,
@@ -64,7 +64,7 @@ object AssumeRoleRequest {
     TransitiveTagKeys: tagKeyListType = null
   ): AssumeRoleRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], RoleSessionName = RoleSessionName.asInstanceOf[js.Any])
-    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
     if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
     if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
     if (PolicyArns != null) __obj.updateDynamic("PolicyArns")(PolicyArns.asInstanceOf[js.Any])

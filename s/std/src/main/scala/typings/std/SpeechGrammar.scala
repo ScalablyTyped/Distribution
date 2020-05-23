@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,11 @@ trait SpeechGrammar extends js.Object {
   var weight: Double
 }
 
-@JSGlobal("SpeechGrammar")
-@js.native
-object SpeechGrammar extends Instantiable0[SpeechGrammar]
+object SpeechGrammar {
+  @scala.inline
+  def apply(src: java.lang.String, weight: Double): SpeechGrammar = {
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpeechGrammar]
+  }
+}
 

@@ -1,5 +1,6 @@
 package typings.safariExtension
 
+import typings.safariExtension.anon.Typeofsafari
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

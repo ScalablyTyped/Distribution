@@ -1,8 +1,8 @@
 package typings.mongoose.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mongoose.AnonIncludeArrayIndex
-import typings.mongoose.FnCallOnfulfilledOnrejected
+import typings.mongoose.anon.FnCallOnfulfilledOnrejected
+import typings.mongoose.anon.IncludeArrayIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,6 +72,12 @@ trait Aggregate[T] extends js.Object {
     * @param arg $group operator contents
     */
   def group(arg: js.Any): this.type = js.native
+  def hint(value: String): this.type = js.native
+  /**
+    * Sets the hint option for the aggregation query (ignored for < 3.6.0)
+    * @param value a hint object or the index name
+    */
+  def hint(value: js.Object): this.type = js.native
   /**
     * Appends a new $limit operator to this aggregate pipeline.
     * @param num maximum number of records to pass to the next stage
@@ -149,11 +155,6 @@ trait Aggregate[T] extends js.Object {
   /** Provides promise for aggregate. */
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
   /** Provides promise for aggregate. */
-  def `then`[TResult1, TResult2](
-    onfulfilled: js.UndefOr[scala.Nothing],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-  ): js.Promise[TResult1 | TResult2] = js.native
-  /** Provides promise for aggregate. */
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
   /** Provides promise for aggregate. */
   def `then`[TResult1, TResult2](
@@ -172,6 +173,6 @@ trait Aggregate[T] extends js.Object {
     * Appends new custom $unwind operator(s) to this aggregate pipeline
     * new in mongodb 3.2
     */
-  def unwind(fields: (AnonIncludeArrayIndex | String)*): this.type = js.native
+  def unwind(fields: (IncludeArrayIndex | String)*): this.type = js.native
 }
 

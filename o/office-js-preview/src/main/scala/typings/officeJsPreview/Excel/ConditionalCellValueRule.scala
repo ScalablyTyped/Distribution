@@ -36,7 +36,7 @@ trait ConditionalCellValueRule extends js.Object {
   var formula2: js.UndefOr[String] = js.undefined
   /**
     *
-    * The operator of the text conditional format.
+    * The operator of the cell value conditional format.
     *
     * [Api set: ExcelApi 1.6]
     */

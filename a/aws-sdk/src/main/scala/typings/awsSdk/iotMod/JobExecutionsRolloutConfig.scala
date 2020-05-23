@@ -18,10 +18,13 @@ trait JobExecutionsRolloutConfig extends js.Object {
 
 object JobExecutionsRolloutConfig {
   @scala.inline
-  def apply(exponentialRate: ExponentialRolloutRate = null, maximumPerMinute: Int | Double = null): JobExecutionsRolloutConfig = {
+  def apply(
+    exponentialRate: ExponentialRolloutRate = null,
+    maximumPerMinute: js.UndefOr[MaxJobExecutionsPerMin] = js.undefined
+  ): JobExecutionsRolloutConfig = {
     val __obj = js.Dynamic.literal()
     if (exponentialRate != null) __obj.updateDynamic("exponentialRate")(exponentialRate.asInstanceOf[js.Any])
-    if (maximumPerMinute != null) __obj.updateDynamic("maximumPerMinute")(maximumPerMinute.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumPerMinute)) __obj.updateDynamic("maximumPerMinute")(maximumPerMinute.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionsRolloutConfig]
   }
 }

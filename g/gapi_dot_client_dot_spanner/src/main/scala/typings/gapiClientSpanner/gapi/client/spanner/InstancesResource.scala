@@ -1,10 +1,10 @@
 package typings.gapiClientSpanner.gapi.client.spanner
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientSpanner.AnonAccesstoken
-import typings.gapiClientSpanner.AnonFilter
-import typings.gapiClientSpanner.AnonKey
-import typings.gapiClientSpanner.AnonOauthtoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientSpanner.anon.Accesstoken
+import typings.gapiClientSpanner.anon.Filter
+import typings.gapiClientSpanner.anon.Key
+import typings.gapiClientSpanner.anon.Oauthtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +48,7 @@ trait InstancesResource extends js.Object {
     * The response field type is
     * Instance, if successful.
     */
-  def create(request: AnonKey): Request_[Operation]
+  def create(request: Key): Request[Operation]
   /**
     * Deletes an instance.
     *
@@ -62,9 +62,9 @@ trait InstancesResource extends js.Object {
     * irrevocably disappear from the API. All data in the databases
     * is permanently deleted.
     */
-  def delete(request: AnonAccesstoken): Request_[js.Object]
+  def delete(request: Accesstoken): Request[js.Object]
   /** Gets information about a particular instance. */
-  def get(request: AnonAccesstoken): Request_[Instance]
+  def get(request: Accesstoken): Request[Instance]
   /**
     * Gets the access control policy for an instance resource. Returns an empty
     * policy if an instance exists but does not have a policy set.
@@ -72,9 +72,9 @@ trait InstancesResource extends js.Object {
     * Authorization requires `spanner.instances.getIamPolicy` on
     * resource.
     */
-  def getIamPolicy(request: AnonOauthtoken): Request_[Policy]
+  def getIamPolicy(request: Oauthtoken): Request[Policy]
   /** Lists all instances in the given project. */
-  def list(request: AnonFilter): Request_[ListInstancesResponse]
+  def list(request: Filter): Request[ListInstancesResponse]
   /**
     * Updates an instance, and begins allocating or releasing resources
     * as requested. The returned long-running
@@ -117,7 +117,7 @@ trait InstancesResource extends js.Object {
     * Authorization requires `spanner.instances.update` permission on
     * resource name.
     */
-  def patch(request: AnonAccesstoken): Request_[Operation]
+  def patch(request: Accesstoken): Request[Operation]
   /**
     * Sets the access control policy on an instance resource. Replaces any
     * existing policy.
@@ -125,7 +125,7 @@ trait InstancesResource extends js.Object {
     * Authorization requires `spanner.instances.setIamPolicy` on
     * resource.
     */
-  def setIamPolicy(request: AnonOauthtoken): Request_[Policy]
+  def setIamPolicy(request: Oauthtoken): Request[Policy]
   /**
     * Returns permissions that the caller has on the specified instance resource.
     *
@@ -134,22 +134,22 @@ trait InstancesResource extends js.Object {
     * permission on the containing Google Cloud Project. Otherwise returns an
     * empty set of permissions.
     */
-  def testIamPermissions(request: AnonOauthtoken): Request_[TestIamPermissionsResponse]
+  def testIamPermissions(request: Oauthtoken): Request[TestIamPermissionsResponse]
 }
 
 object InstancesResource {
   @scala.inline
   def apply(
-    create: AnonKey => Request_[Operation],
+    create: Key => Request[Operation],
     databases: DatabasesResource,
-    delete: AnonAccesstoken => Request_[js.Object],
-    get: AnonAccesstoken => Request_[Instance],
-    getIamPolicy: AnonOauthtoken => Request_[Policy],
-    list: AnonFilter => Request_[ListInstancesResponse],
+    delete: Accesstoken => Request[js.Object],
+    get: Accesstoken => Request[Instance],
+    getIamPolicy: Oauthtoken => Request[Policy],
+    list: Filter => Request[ListInstancesResponse],
     operations: OperationsResource,
-    patch: AnonAccesstoken => Request_[Operation],
-    setIamPolicy: AnonOauthtoken => Request_[Policy],
-    testIamPermissions: AnonOauthtoken => Request_[TestIamPermissionsResponse]
+    patch: Accesstoken => Request[Operation],
+    setIamPolicy: Oauthtoken => Request[Policy],
+    testIamPermissions: Oauthtoken => Request[TestIamPermissionsResponse]
   ): InstancesResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), databases = databases.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getIamPolicy = js.Any.fromFunction1(getIamPolicy), list = js.Any.fromFunction1(list), operations = operations.asInstanceOf[js.Any], patch = js.Any.fromFunction1(patch), setIamPolicy = js.Any.fromFunction1(setIamPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions))
     __obj.asInstanceOf[InstancesResource]

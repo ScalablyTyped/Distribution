@@ -1,6 +1,6 @@
 package typings.stripeV3.stripe.elements
 
-import typings.stripeV3.AnonPostalCode
+import typings.stripeV3.anon.PostalCode
 import typings.stripeV3.stripe.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait ElementChangeResponse extends js.Object {
   var elementType: String
   var empty: Boolean
   var error: js.UndefOr[Error] = js.undefined
-  var value: js.UndefOr[AnonPostalCode | String] = js.undefined
+  var value: js.UndefOr[PostalCode | String] = js.undefined
 }
 
 object ElementChangeResponse {
@@ -27,7 +27,7 @@ object ElementChangeResponse {
     bankName: String = null,
     country: String = null,
     error: Error = null,
-    value: AnonPostalCode | String = null
+    value: PostalCode | String = null
   ): ElementChangeResponse = {
     val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], elementType = elementType.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any])
     if (bankName != null) __obj.updateDynamic("bankName")(bankName.asInstanceOf[js.Any])

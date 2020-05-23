@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains information about a default audio render device change event. */
-@JSGlobal("Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs")
-@js.native
-abstract class DefaultAudioRenderDeviceChangedEventArgs () extends js.Object {
+trait DefaultAudioRenderDeviceChangedEventArgs extends js.Object {
   /** Gets the ID of the newly selected default audio render device that caused the change event. */
-  var id: String = js.native
+  var id: String
   /** Gets the role of the newly selected default audio render device that caused the change event. */
-  var role: AudioDeviceRole = js.native
+  var role: AudioDeviceRole
+}
+
+object DefaultAudioRenderDeviceChangedEventArgs {
+  @scala.inline
+  def apply(id: String, role: AudioDeviceRole): DefaultAudioRenderDeviceChangedEventArgs = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultAudioRenderDeviceChangedEventArgs]
+  }
 }
 

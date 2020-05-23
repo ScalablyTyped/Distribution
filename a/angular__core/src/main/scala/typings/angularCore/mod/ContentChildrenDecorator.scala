@@ -2,7 +2,7 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.angularCore.AnonDescendants
+import typings.angularCore.anon.Descendants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,13 +15,13 @@ trait ContentChildrenDecorator
     ]
      with Instantiable2[
       (/* selector */ js.Function) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
-      /* opts */ AnonDescendants, 
+      /* opts */ Descendants, 
       Query
     ] {
   def apply(selector: String): js.Any = js.native
-  def apply(selector: String, opts: AnonDescendants): js.Any = js.native
+  def apply(selector: String, opts: Descendants): js.Any = js.native
   def apply(selector: js.Function): js.Any = js.native
-  def apply(selector: js.Function, opts: AnonDescendants): js.Any = js.native
+  def apply(selector: js.Function, opts: Descendants): js.Any = js.native
   /**
     * Parameter decorator that configures a content query.
     *
@@ -56,6 +56,6 @@ trait ContentChildrenDecorator
     * @Annotation
     */
   def apply(selector: Type[_]): js.Any = js.native
-  def apply(selector: Type[_], opts: AnonDescendants): js.Any = js.native
+  def apply(selector: Type[_], opts: Descendants): js.Any = js.native
 }
 

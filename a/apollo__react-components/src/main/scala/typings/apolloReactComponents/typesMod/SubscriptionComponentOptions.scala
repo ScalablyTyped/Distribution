@@ -6,7 +6,7 @@ import typings.apolloReactCommon.typesMod.BaseSubscriptionOptions
 import typings.apolloReactCommon.typesMod.OnSubscriptionDataOptions
 import typings.apolloReactCommon.typesMod.SubscriptionResult
 import typings.graphql.astMod.DocumentNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ object SubscriptionComponentOptions {
   @scala.inline
   def apply[TData, TVariables](
     subscription: DocumentNode,
-    children: /* result */ SubscriptionResult[TData] => Element | Null = null,
+    children: js.UndefOr[Null | (/* result */ SubscriptionResult[TData] => Element | Null)] = js.undefined,
     client: default[js.Object] = null,
     fetchPolicy: FetchPolicy = null,
     onSubscriptionComplete: () => Unit = null,
@@ -30,13 +30,13 @@ object SubscriptionComponentOptions {
     variables: TVariables = null
   ): SubscriptionComponentOptions[TData, TVariables] = {
     val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(if (children != null) js.Any.fromFunction1(children.asInstanceOf[/* result */ SubscriptionResult[TData] => Element | Null]) else null)
     if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
     if (onSubscriptionComplete != null) __obj.updateDynamic("onSubscriptionComplete")(js.Any.fromFunction0(onSubscriptionComplete))
     if (onSubscriptionData != null) __obj.updateDynamic("onSubscriptionData")(js.Any.fromFunction1(onSubscriptionData))
     if (shouldResubscribe != null) __obj.updateDynamic("shouldResubscribe")(shouldResubscribe.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionComponentOptions[TData, TVariables]]
   }

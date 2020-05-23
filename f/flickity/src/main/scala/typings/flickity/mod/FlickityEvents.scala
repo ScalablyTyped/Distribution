@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   - typings.flickity.flickityStrings.lazyLoad
   - typings.flickity.flickityStrings.bgLazyLoad
   - typings.flickity.flickityStrings.fullscreenChange
+  - typings.flickity.flickityStrings.change
 */
 trait FlickityEvents extends js.Object
 
@@ -27,6 +28,8 @@ object FlickityEvents {
   def bgLazyLoad: typings.flickity.flickityStrings.bgLazyLoad = "bgLazyLoad".asInstanceOf[typings.flickity.flickityStrings.bgLazyLoad]
   @scala.inline
   def cellSelect: typings.flickity.flickityStrings.cellSelect = "cellSelect".asInstanceOf[typings.flickity.flickityStrings.cellSelect]
+  @scala.inline
+  def change: typings.flickity.flickityStrings.change = "change".asInstanceOf[typings.flickity.flickityStrings.change]
   @scala.inline
   def dragEnd: typings.flickity.flickityStrings.dragEnd = "dragEnd".asInstanceOf[typings.flickity.flickityStrings.dragEnd]
   @scala.inline

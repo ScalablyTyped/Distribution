@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,17 +20,6 @@ object SortMode extends js.Object {
   
   @js.native
   sealed trait None extends SortMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SortMode with Double] = js.native
-  /* 0 */ @js.native
-  object Ascending extends TopLevel[Ascending with Double]
-  
-  /* 1 */ @js.native
-  object Descending extends TopLevel[Descending with Double]
-  
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
   
 }
 

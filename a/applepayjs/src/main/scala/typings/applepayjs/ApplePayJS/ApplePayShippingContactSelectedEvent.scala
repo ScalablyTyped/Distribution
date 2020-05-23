@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Encapsulates the attributes contained by the onshippingcontactselected callback function.
   */
-@JSGlobal("ApplePayJS.ApplePayShippingContactSelectedEvent")
 @js.native
-abstract class ApplePayShippingContactSelectedEvent () extends Event {
+trait ApplePayShippingContactSelectedEvent extends Event {
   /**
     * The shipping address selected by the user.
     */

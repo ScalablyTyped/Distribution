@@ -13,14 +13,14 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    largeWidth: Int | Double = null,
-    mediumWidth: Int | Double = null,
-    resizeInterval: Int | Double = null
+    largeWidth: js.UndefOr[Double] = js.undefined,
+    mediumWidth: js.UndefOr[Double] = js.undefined,
+    resizeInterval: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (largeWidth != null) __obj.updateDynamic("largeWidth")(largeWidth.asInstanceOf[js.Any])
-    if (mediumWidth != null) __obj.updateDynamic("mediumWidth")(mediumWidth.asInstanceOf[js.Any])
-    if (resizeInterval != null) __obj.updateDynamic("resizeInterval")(resizeInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(largeWidth)) __obj.updateDynamic("largeWidth")(largeWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mediumWidth)) __obj.updateDynamic("mediumWidth")(mediumWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeInterval)) __obj.updateDynamic("resizeInterval")(resizeInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

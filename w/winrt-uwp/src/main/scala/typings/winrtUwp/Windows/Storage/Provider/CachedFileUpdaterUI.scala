@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Used to interact with the file picker if your app provides file updates through the Cached File Updater contract. */
-@JSGlobal("Windows.Storage.Provider.CachedFileUpdaterUI")
 @js.native
-abstract class CachedFileUpdaterUI () extends js.Object {
+trait CachedFileUpdaterUI extends js.Object {
   /** Fires when the Windows requests a file update. This event fires once for each requested update. */
   @JSName("onfileupdaterequested")
   var onfileupdaterequested_Original: TypedEventHandler[CachedFileUpdaterUI, FileUpdateRequestedEventArgs] = js.native

@@ -12,9 +12,9 @@ trait IDeleteAllContextsRequest extends js.Object {
 
 object IDeleteAllContextsRequest {
   @scala.inline
-  def apply(parent: String = null): IDeleteAllContextsRequest = {
+  def apply(parent: js.UndefOr[Null | String] = js.undefined): IDeleteAllContextsRequest = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteAllContextsRequest]
   }
 }

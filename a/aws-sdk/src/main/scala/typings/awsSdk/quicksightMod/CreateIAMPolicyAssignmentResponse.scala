@@ -45,7 +45,7 @@ object CreateIAMPolicyAssignmentResponse {
     Identities: IdentityMap = null,
     PolicyArn: Arn = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null
+    Status: js.UndefOr[StatusCode] = js.undefined
   ): CreateIAMPolicyAssignmentResponse = {
     val __obj = js.Dynamic.literal()
     if (AssignmentId != null) __obj.updateDynamic("AssignmentId")(AssignmentId.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object CreateIAMPolicyAssignmentResponse {
     if (Identities != null) __obj.updateDynamic("Identities")(Identities.asInstanceOf[js.Any])
     if (PolicyArn != null) __obj.updateDynamic("PolicyArn")(PolicyArn.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIAMPolicyAssignmentResponse]
   }
 }

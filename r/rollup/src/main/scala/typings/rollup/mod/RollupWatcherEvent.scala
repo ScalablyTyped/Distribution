@@ -10,27 +10,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.rollup.Anon0
-  - typings.rollup.AnonInput
-  - typings.rollup.AnonDuration
-  - typings.rollup.Anon1
-  - typings.rollup.AnonError
+  - typings.rollup.anon.`0`
+  - typings.rollup.anon.Input
+  - typings.rollup.anon.Duration
+  - typings.rollup.anon.`1`
+  - typings.rollup.anon.Error
 */
 trait RollupWatcherEvent extends js.Object
 
 object RollupWatcherEvent {
   @scala.inline
-  def Anon0(code: START): RollupWatcherEvent = {
+  def `0`(code: START): RollupWatcherEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupWatcherEvent]
   }
   @scala.inline
-  def AnonInput(code: BUNDLE_START, input: InputOption, output: js.Array[String]): RollupWatcherEvent = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RollupWatcherEvent]
-  }
-  @scala.inline
-  def AnonDuration(
+  def Duration(
     code: BUNDLE_END,
     duration: Double,
     input: InputOption,
@@ -41,13 +36,18 @@ object RollupWatcherEvent {
     __obj.asInstanceOf[RollupWatcherEvent]
   }
   @scala.inline
-  def Anon1(code: END): RollupWatcherEvent = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+  def Input(code: BUNDLE_START, input: InputOption, output: js.Array[String]): RollupWatcherEvent = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupWatcherEvent]
   }
   @scala.inline
-  def AnonError(code: ERROR, error: RollupError): RollupWatcherEvent = {
+  def Error(code: ERROR, error: RollupError): RollupWatcherEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RollupWatcherEvent]
+  }
+  @scala.inline
+  def `1`(code: END): RollupWatcherEvent = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupWatcherEvent]
   }
 }

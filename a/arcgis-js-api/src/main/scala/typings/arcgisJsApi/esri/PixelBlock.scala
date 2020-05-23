@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.f32
 import typings.arcgisJsApi.arcgisJsApiStrings.f64
 import typings.arcgisJsApi.arcgisJsApiStrings.s16
@@ -109,8 +108,4 @@ trait PixelBlock extends Accessor {
     */
   def getPlaneCount(): Double = js.native
 }
-
-@JSGlobal("__esri.PixelBlock")
-@js.native
-object PixelBlock extends TopLevel[PixelBlockConstructor]
 

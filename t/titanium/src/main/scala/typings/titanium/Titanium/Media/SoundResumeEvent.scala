@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when audio playback is resumed after an interruption.
-		 */
+  * Fired when audio playback is resumed after an interruption.
+  */
 trait SoundResumeEvent extends SoundBaseEvent {
   /**
-  			 * Indicates if the resume was from an interruption.
-  			 */
+    * Indicates if the resume was from an interruption.
+    */
   var interruption: Boolean
 }
 

@@ -1,6 +1,6 @@
 package typings.antdMobile.marqueeMod
 
-import typings.antdMobile.AnonFps
+import typings.antdMobile.anon.Fps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Marquee
 @JSImport("antd-mobile/lib/notice-bar/Marquee", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonFps = js.native
+  var defaultProps: Fps = js.native
 }
 

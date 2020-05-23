@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.SerialCommunication
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object SerialStopBitCount extends js.Object {
   /** Two stop bits are used. */
   @js.native
   sealed trait two extends SerialStopBitCount
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SerialStopBitCount with Double] = js.native
-  /* 0 */ @js.native
-  object one extends TopLevel[one with Double]
-  
-  /* 1 */ @js.native
-  object onePointFive extends TopLevel[onePointFive with Double]
-  
-  /* 2 */ @js.native
-  object two extends TopLevel[two with Double]
   
 }
 

@@ -11,8 +11,7 @@ trait ReactRefLike[T] extends js.Object {
 object ReactRefLike {
   @scala.inline
   def apply[T](current: T = null): ReactRefLike[T] = {
-    val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactRefLike[T]]
   }
 }

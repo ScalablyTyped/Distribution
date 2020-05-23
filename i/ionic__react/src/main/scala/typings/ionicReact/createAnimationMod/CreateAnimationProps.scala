@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ionicCore.animationInterfaceMod.AnimationDirection
 import typings.ionicCore.animationInterfaceMod.AnimationFill
 import typings.ionicCore.animationInterfaceMod.AnimationKeyFrames
-import typings.ionicReact.AnonCallback
-import typings.ionicReact.AnonDur
-import typings.ionicReact.AnonForceLinearEasing
-import typings.ionicReact.AnonStep
+import typings.ionicReact.anon.Callback
+import typings.ionicReact.anon.Dur
+import typings.ionicReact.anon.ForceLinearEasing
+import typings.ionicReact.anon.Step
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,12 +36,12 @@ trait CreateAnimationProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var iterations: js.UndefOr[Double] = js.undefined
   var keyframes: js.UndefOr[AnimationKeyFrames] = js.undefined
-  var onFinish: js.UndefOr[AnonCallback] = js.undefined
+  var onFinish: js.UndefOr[Callback] = js.undefined
   var pause: js.UndefOr[Boolean] = js.undefined
   var play: js.UndefOr[Boolean] = js.undefined
-  var progressEnd: js.UndefOr[AnonDur] = js.undefined
-  var progressStart: js.UndefOr[AnonForceLinearEasing] = js.undefined
-  var progressStep: js.UndefOr[AnonStep] = js.undefined
+  var progressEnd: js.UndefOr[Dur] = js.undefined
+  var progressStart: js.UndefOr[ForceLinearEasing] = js.undefined
+  var progressStep: js.UndefOr[Step] = js.undefined
   var stop: js.UndefOr[Boolean] = js.undefined
   var to: js.UndefOr[js.Array[PartialPropertyValue] | PartialPropertyValue] = js.undefined
 }
@@ -61,23 +61,23 @@ object CreateAnimationProps {
     beforeClearStyles: js.Array[String] = null,
     beforeRemoveClass: String | js.Array[String] = null,
     beforeStyles: StringDictionary[js.Any] = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     destroy: js.UndefOr[Boolean] = js.undefined,
     direction: AnimationDirection = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: String = null,
     fill: AnimationFill = null,
     from: js.Array[PartialPropertyValue] | PartialPropertyValue = null,
     fromTo: js.Array[PropertyValue] | PropertyValue = null,
     id: String = null,
-    iterations: Int | Double = null,
+    iterations: js.UndefOr[Double] = js.undefined,
     keyframes: AnimationKeyFrames = null,
-    onFinish: AnonCallback = null,
+    onFinish: Callback = null,
     pause: js.UndefOr[Boolean] = js.undefined,
     play: js.UndefOr[Boolean] = js.undefined,
-    progressEnd: AnonDur = null,
-    progressStart: AnonForceLinearEasing = null,
-    progressStep: AnonStep = null,
+    progressEnd: Dur = null,
+    progressStart: ForceLinearEasing = null,
+    progressStep: Step = null,
     stop: js.UndefOr[Boolean] = js.undefined,
     to: js.Array[PartialPropertyValue] | PartialPropertyValue = null
   ): CreateAnimationProps = {
@@ -94,24 +94,24 @@ object CreateAnimationProps {
     if (beforeClearStyles != null) __obj.updateDynamic("beforeClearStyles")(beforeClearStyles.asInstanceOf[js.Any])
     if (beforeRemoveClass != null) __obj.updateDynamic("beforeRemoveClass")(beforeRemoveClass.asInstanceOf[js.Any])
     if (beforeStyles != null) __obj.updateDynamic("beforeStyles")(beforeStyles.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (fromTo != null) __obj.updateDynamic("fromTo")(fromTo.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
     if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
     if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish.asInstanceOf[js.Any])
-    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
-    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
+    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.get.asInstanceOf[js.Any])
     if (progressEnd != null) __obj.updateDynamic("progressEnd")(progressEnd.asInstanceOf[js.Any])
     if (progressStart != null) __obj.updateDynamic("progressStart")(progressStart.asInstanceOf[js.Any])
     if (progressStep != null) __obj.updateDynamic("progressStep")(progressStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(stop)) __obj.updateDynamic("stop")(stop.asInstanceOf[js.Any])
+    if (!js.isUndefined(stop)) __obj.updateDynamic("stop")(stop.get.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAnimationProps]
   }

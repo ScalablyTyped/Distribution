@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLUnknownElement")
 @js.native
-class HTMLUnknownElement protected () extends js.Object {
+trait HTMLUnknownElement extends js.Object {
   @JSName("MSHTML.HTMLUnknownElement_typekey")
   var MSHTMLDotHTMLUnknownElement_typekey: HTMLUnknownElement = js.native
   var accessKey: String = js.native

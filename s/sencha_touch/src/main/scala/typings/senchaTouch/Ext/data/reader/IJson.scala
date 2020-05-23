@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation._
 
 trait IJson extends IReader {
   /** [Method] Returns the value of record
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getRecord: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of useSimpleAccessors
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getUseSimpleAccessors: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (String) */
   var record: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of record
-  		* @param record String The new value.
-  		*/
+    * @param record String The new value.
+    */
   var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of useSimpleAccessors
-  		* @param useSimpleAccessors Boolean The new value.
-  		*/
+    * @param useSimpleAccessors Boolean The new value.
+    */
   var setUseSimpleAccessors: js.UndefOr[js.Function1[/* useSimpleAccessors */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var useSimpleAccessors: js.UndefOr[Boolean] = js.undefined
@@ -156,7 +156,7 @@ object IJson {
     if (getUseSimpleAccessors != null) __obj.updateDynamic("getUseSimpleAccessors")(js.Any.fromFunction0(getUseSimpleAccessors))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (idProperty != null) __obj.updateDynamic("idProperty")(idProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.asInstanceOf[js.Any])
+    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -194,7 +194,7 @@ object IJson {
     if (setSuccessProperty != null) __obj.updateDynamic("setSuccessProperty")(js.Any.fromFunction1(setSuccessProperty))
     if (setTotalProperty != null) __obj.updateDynamic("setTotalProperty")(js.Any.fromFunction1(setTotalProperty))
     if (setUseSimpleAccessors != null) __obj.updateDynamic("setUseSimpleAccessors")(js.Any.fromFunction1(setUseSimpleAccessors))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (successProperty != null) __obj.updateDynamic("successProperty")(successProperty.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
@@ -202,7 +202,7 @@ object IJson {
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (!js.isUndefined(useSimpleAccessors)) __obj.updateDynamic("useSimpleAccessors")(useSimpleAccessors.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSimpleAccessors)) __obj.updateDynamic("useSimpleAccessors")(useSimpleAccessors.get.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IJson]
   }

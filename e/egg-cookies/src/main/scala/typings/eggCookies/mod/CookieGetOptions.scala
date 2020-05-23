@@ -19,8 +19,8 @@ object CookieGetOptions {
   @scala.inline
   def apply(encrypt: js.UndefOr[Boolean] = js.undefined, signed: js.UndefOr[Boolean] = js.undefined): CookieGetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encrypt)) __obj.updateDynamic("encrypt")(encrypt.asInstanceOf[js.Any])
-    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypt)) __obj.updateDynamic("encrypt")(encrypt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieGetOptions]
   }
 }

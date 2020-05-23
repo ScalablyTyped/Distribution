@@ -1,6 +1,6 @@
 package typings.stormReactDiagrams
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.stormReactDiagrams.abstractLinkFactoryMod.AbstractLinkFactory
 import typings.stormReactDiagrams.defaultLinkModelMod.DefaultLinkModel
 import typings.stormReactDiagrams.defaultLinkWidgetMod.DefaultLinkWidget

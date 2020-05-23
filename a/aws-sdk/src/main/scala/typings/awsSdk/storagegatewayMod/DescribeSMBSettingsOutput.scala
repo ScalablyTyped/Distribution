@@ -31,14 +31,14 @@ object DescribeSMBSettingsOutput {
     ActiveDirectoryStatus: ActiveDirectoryStatus = null,
     DomainName: DomainName = null,
     GatewayARN: GatewayARN = null,
-    SMBGuestPasswordSet: js.UndefOr[scala.Boolean] = js.undefined,
+    SMBGuestPasswordSet: js.UndefOr[Boolean] = js.undefined,
     SMBSecurityStrategy: SMBSecurityStrategy = null
   ): DescribeSMBSettingsOutput = {
     val __obj = js.Dynamic.literal()
     if (ActiveDirectoryStatus != null) __obj.updateDynamic("ActiveDirectoryStatus")(ActiveDirectoryStatus.asInstanceOf[js.Any])
     if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(SMBGuestPasswordSet)) __obj.updateDynamic("SMBGuestPasswordSet")(SMBGuestPasswordSet.asInstanceOf[js.Any])
+    if (!js.isUndefined(SMBGuestPasswordSet)) __obj.updateDynamic("SMBGuestPasswordSet")(SMBGuestPasswordSet.get.asInstanceOf[js.Any])
     if (SMBSecurityStrategy != null) __obj.updateDynamic("SMBSecurityStrategy")(SMBSecurityStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSMBSettingsOutput]
   }

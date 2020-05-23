@@ -19,14 +19,14 @@ object Options {
   def apply(
     queueUrl: String,
     accessKeyId: String = null,
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     region: String = null,
     secretAccessKey: String = null,
     sqs: SQS = null
   ): Options = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any])
     if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey.asInstanceOf[js.Any])
     if (sqs != null) __obj.updateDynamic("sqs")(sqs.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object jasmine {
   type AsyncCustomMatcherFactories = org.scalablytyped.runtime.StringDictionary[typings.jasminewd2.jasmine.AsyncCustomMatcherFactory]
   type AsyncCustomMatcherFactory = js.Function2[
-    /* util */ typings.jasmine.jasmine.MatchersUtil_, 
+    /* util */ typings.jasmine.jasmine.MatchersUtil, 
     /* customEqualityTesters */ js.Array[typings.jasmine.jasmine.CustomEqualityTester], 
     typings.jasminewd2.jasmine.AsyncCustomMatcher
   ]

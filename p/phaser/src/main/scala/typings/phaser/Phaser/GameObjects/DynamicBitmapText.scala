@@ -1,9 +1,7 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.DisplayCallback
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.DisplayCallbackConfig
-import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,34 +33,8 @@ import scala.scalajs.js.annotation._
   * For most use cases it is recommended to use XML. If you wish to use JSON, the formatting should be equal to the result of
   * converting a valid XML file through the popular X2JS library. An online tool for conversion can be found here: http://codebeautify.org/xmltojson
   */
-@JSGlobal("Phaser.GameObjects.DynamicBitmapText")
 @js.native
-class DynamicBitmapText protected () extends BitmapText {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. It can only belong to one Scene at any given time.
-    * @param x The x coordinate of this Game Object in world space.
-    * @param y The y coordinate of this Game Object in world space.
-    * @param font The key of the font to use from the Bitmap Font cache.
-    * @param text The string, or array of strings, to be set as the content of this Bitmap Text.
-    * @param size The font size of this Bitmap Text.
-    * @param align The alignment of the text in a multi-line BitmapText object. Default 0.
-    */
-  def this(scene: Scene, x: Double, y: Double, font: String) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String]) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String], size: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double, align: integer) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.Array[String],
-    size: Double,
-    align: integer
-  ) = this()
+trait DynamicBitmapText extends BitmapText {
   /**
     * The data object that is populated during rendering, then passed to the displayCallback.
     * You should modify this object then return it back from the callback. It's updated values
@@ -107,22 +79,22 @@ class DynamicBitmapText protected () extends BitmapText {
     * usual values when rendering.
     * @param callback The display callback to set.
     */
-  def setDisplayCallback(callback: DisplayCallback): DynamicBitmapText = js.native
+  def setDisplayCallback(callback: DisplayCallback): this.type = js.native
   /**
     * Set the horizontal scroll position of this Bitmap Text.
     * @param value The horizontal scroll position to set.
     */
-  def setScrollX(value: Double): DynamicBitmapText = js.native
+  def setScrollX(value: Double): this.type = js.native
   /**
     * Set the vertical scroll position of this Bitmap Text.
     * @param value The vertical scroll position to set.
     */
-  def setScrollY(value: Double): DynamicBitmapText = js.native
+  def setScrollY(value: Double): this.type = js.native
   /**
     * Set the crop size of this Bitmap Text.
     * @param width The width of the crop.
     * @param height The height of the crop.
     */
-  def setSize(width: Double, height: Double): DynamicBitmapText = js.native
+  def setSize(width: Double, height: Double): this.type = js.native
 }
 

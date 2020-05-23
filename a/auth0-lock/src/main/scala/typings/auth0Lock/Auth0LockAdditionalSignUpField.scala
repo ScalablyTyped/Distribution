@@ -1,5 +1,6 @@
 package typings.auth0Lock
 
+import typings.auth0Lock.anon.Hint
 import typings.auth0Lock.auth0LockStrings.`false`
 import typings.auth0Lock.auth0LockStrings.`true`
 import typings.auth0Lock.auth0LockStrings.checkbox
@@ -25,7 +26,7 @@ object Auth0LockAdditionalSignUpField {
     options: js.Array[Auth0LockAdditionalSignUpFieldOption] | Auth0LockAdditionalSignUpFieldOptionsFunction = null,
     prefill: String | Auth0LockAdditionalSignUpFieldPrefillFunction = null,
     `type`: select = null,
-    validator: /* input */ String => AnonHint = null
+    validator: /* input */ String => Hint = null
   ): Auth0LockAdditionalSignUpField = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
@@ -43,7 +44,7 @@ object Auth0LockAdditionalSignUpField {
     options: js.Array[Auth0LockAdditionalSignUpFieldOption] | Auth0LockAdditionalSignUpFieldOptionsFunction = null,
     prefill: String | Auth0LockAdditionalSignUpFieldPrefillFunction = null,
     `type`: text = null,
-    validator: /* input */ String => AnonHint = null
+    validator: /* input */ String => Hint = null
   ): Auth0LockAdditionalSignUpField = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
@@ -60,7 +61,7 @@ object Auth0LockAdditionalSignUpField {
     prefill: `true` | `false`,
     icon: String = null,
     `type`: checkbox = null,
-    validator: /* input */ String => AnonHint = null
+    validator: /* input */ String => Hint = null
   ): Auth0LockAdditionalSignUpField = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], prefill = prefill.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

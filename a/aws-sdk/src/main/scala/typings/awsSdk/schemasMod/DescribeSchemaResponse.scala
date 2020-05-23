@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DescribeSchemaResponse extends js.Object {
+  /**
+    * The source of the schema definition.
+    */
   var Content: js.UndefOr[string] = js.native
   /**
     * The description of the schema.

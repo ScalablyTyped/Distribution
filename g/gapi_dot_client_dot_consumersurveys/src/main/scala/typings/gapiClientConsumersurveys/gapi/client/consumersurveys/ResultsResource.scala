@@ -1,7 +1,7 @@
 package typings.gapiClientConsumersurveys.gapi.client.consumersurveys
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientConsumersurveys.AnonKey
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientConsumersurveys.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +11,12 @@ trait ResultsResource extends js.Object {
     * Retrieves any survey results that have been produced so far. Results are formatted as an Excel file. You must add "?alt=media" to the URL as an
     * argument to get results.
     */
-  def get(request: AnonKey): Request_[SurveyResults]
+  def get(request: Key): Request[SurveyResults]
 }
 
 object ResultsResource {
   @scala.inline
-  def apply(get: AnonKey => Request_[SurveyResults]): ResultsResource = {
+  def apply(get: Key => Request[SurveyResults]): ResultsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[ResultsResource]
   }

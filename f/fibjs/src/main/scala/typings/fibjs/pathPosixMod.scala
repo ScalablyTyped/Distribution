@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 文件路径处理模块
-	* @detail 引用方法：,```JavaScript,var path = require('path').posix;,```
-	*/
+  * @brief 文件路径处理模块
+  * @detail 引用方法：,```JavaScript,var path = require('path').posix;,```
+  */
 @JSImport("path_posix", JSImport.Namespace)
 @js.native
 object pathPosixMod extends js.Object {

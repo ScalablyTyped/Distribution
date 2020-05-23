@@ -1,11 +1,11 @@
 package typings.expo.aRMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.expo.AnonLength
-import typings.expo.AnonName
 import typings.expo.aRMod.AnchorType.Face
 import typings.expo.aRMod.AnchorType.Image
 import typings.expo.aRMod.AnchorType.Plane
+import typings.expo.anon.Length
+import typings.expo.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,13 +26,13 @@ object Anchor {
     __obj.asInstanceOf[Anchor]
   }
   @scala.inline
-  def PlaneAnchor(center: Vector3, extent: AnonLength, id: String, transform: Matrix, `type`: AnchorType with Plane): Anchor = {
+  def PlaneAnchor(center: Vector3, extent: Length, id: String, transform: Matrix, `type`: AnchorType with Plane): Anchor = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anchor]
   }
   @scala.inline
-  def ImageAnchor(id: String, transform: Matrix, `type`: AnchorType with Image, image: AnonName = null): Anchor = {
+  def ImageAnchor(id: String, transform: Matrix, `type`: AnchorType with Image, image: Name = null): Anchor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])

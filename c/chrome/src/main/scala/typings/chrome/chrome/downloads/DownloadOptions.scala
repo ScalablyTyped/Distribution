@@ -38,7 +38,7 @@ object DownloadOptions {
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadOptions]
   }
 }

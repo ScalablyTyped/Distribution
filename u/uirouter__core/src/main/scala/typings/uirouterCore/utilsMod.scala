@@ -1,5 +1,9 @@
 package typings.uirouterCore
 
+import typings.uirouterCore.anon.Configuration
+import typings.uirouterCore.anon.Hash
+import typings.uirouterCore.anon.Instantiable
+import typings.uirouterCore.anon.InstantiableLocationConfig
 import typings.uirouterCore.coreservicesMod.LocationServices
 import typings.uirouterCore.routerMod.UIRouter
 import scala.scalajs.js
@@ -15,9 +19,9 @@ object utilsMod extends js.Object {
   def locationPluginFactory(
     name: String,
     isHtml5: Boolean,
-    serviceClass: AnonInstantiable,
-    configurationClass: AnonInstantiableLocationConfig
-  ): js.Function1[/* uiRouter */ UIRouter, AnonConfiguration] = js.native
-  def parseUrl(url: String): AnonHash = js.native
+    serviceClass: Instantiable,
+    configurationClass: InstantiableLocationConfig
+  ): js.Function1[/* uiRouter */ UIRouter, Configuration] = js.native
+  def parseUrl(url: String): Hash = js.native
 }
 

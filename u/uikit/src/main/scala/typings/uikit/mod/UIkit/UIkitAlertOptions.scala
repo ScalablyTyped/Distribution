@@ -12,10 +12,14 @@ trait UIkitAlertOptions extends js.Object {
 
 object UIkitAlertOptions {
   @scala.inline
-  def apply(animation: Boolean | String = null, duration: Int | Double = null, `sel-close`: String = null): UIkitAlertOptions = {
+  def apply(
+    animation: Boolean | String = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    `sel-close`: String = null
+  ): UIkitAlertOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (`sel-close` != null) __obj.updateDynamic("sel-close")(`sel-close`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitAlertOptions]
   }

@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation._
 
 trait ButtonProps extends js.Object {
   /**
-  	 * Bootstrap css style class for the button, e.g. 'btn-warning'
-  	 */
+    * Bootstrap css style class for the button, e.g. 'btn-warning'
+    */
   var btnContextual: js.UndefOr[String] = js.undefined
   /**
-  	 * Glyphicon glyph string for the button, e.g. 'glyphicon-edit'
-  	 */
+    * Glyphicon glyph string for the button, e.g. 'glyphicon-edit'
+    */
   var btnGlyphicon: js.UndefOr[String] = js.undefined
   /**
-  	 * Label for the button
-  	 */
+    * Label for the button
+    */
   var btnText: js.UndefOr[String] = js.undefined
   /**
-  	 * Custom class for the button
-  	 */
+    * Custom class for the button
+    */
   var className: js.UndefOr[String] = js.undefined
   /**
-  	 * Function to be called to activate the normal onClick functionality for this button.
-  	 */
+    * Function to be called to activate the normal onClick functionality for this button.
+    */
   var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit]] = js.undefined
 }
 

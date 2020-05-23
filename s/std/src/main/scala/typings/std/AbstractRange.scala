@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +27,17 @@ trait AbstractRange extends js.Object {
   val startOffset: Double
 }
 
-@JSGlobal("AbstractRange")
-@js.native
-object AbstractRange extends Instantiable0[AbstractRange]
+object AbstractRange {
+  @scala.inline
+  def apply(
+    collapsed: scala.Boolean,
+    endContainer: Node,
+    endOffset: Double,
+    startContainer: Node,
+    startOffset: Double
+  ): AbstractRange = {
+    val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], endContainer = endContainer.asInstanceOf[js.Any], endOffset = endOffset.asInstanceOf[js.Any], startContainer = startContainer.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AbstractRange]
+  }
+}
 

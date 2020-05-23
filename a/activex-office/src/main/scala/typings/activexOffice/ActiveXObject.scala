@@ -62,6 +62,10 @@ import typings.activexOffice.activexOfficeStrings.ppvObj
 import typings.activexOffice.activexOfficeStrings.rgdispid
 import typings.activexOffice.activexOfficeStrings.rgszNames
 import typings.activexOffice.activexOfficeStrings.riid
+import typings.activexOffice.anon.CNames
+import typings.activexOffice.anon.Itinfo
+import typings.activexOffice.anon.Pctinfo
+import typings.activexOffice.anon.PpvObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,205 +76,221 @@ trait ActiveXObject extends js.Object {
     obj: CommandBarButton,
     event: Click,
     argNames: js.Tuple2[Ctrl, CancelDefault],
-    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ AnonCancelDefault, Unit]
+    handler: js.ThisFunction1[
+      /* this */ CommandBarButton, 
+      /* parameter */ typings.activexOffice.anon.CancelDefault, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: CommandBarButton,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBarButton,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBarButton,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBarButton,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBarComboBox,
     event: Change,
     argNames: js.Array[Ctrl],
-    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ AnonCtrl, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ typings.activexOffice.anon.Ctrl, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBarComboBox,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBarComboBox,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBarComboBox,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBarComboBox,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBars,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBars,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBars,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CommandBars,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: CustomTaskPane,
     event: DockPositionStateChange,
     argNames: js.Array[CustomTaskPaneInst],
-    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ AnonCustomTaskPaneInst, Unit]
+    handler: js.ThisFunction1[
+      /* this */ CustomTaskPane, 
+      /* parameter */ typings.activexOffice.anon.CustomTaskPaneInst, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: CustomTaskPane,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: CustomTaskPane,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CustomTaskPane,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CustomTaskPane,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: CustomTaskPane,
     event: VisibleStateChange,
     argNames: js.Array[CustomTaskPaneInst],
-    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ AnonCustomTaskPaneInst, Unit]
+    handler: js.ThisFunction1[
+      /* this */ CustomTaskPane, 
+      /* parameter */ typings.activexOffice.anon.CustomTaskPaneInst, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,
     event: NodeAfterDelete,
     argNames: js.Tuple4[OldNode, OldParentNode, OldNextSibling, InUndoRedo],
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonInUndoRedo, Unit]
+    handler: js.ThisFunction1[
+      /* this */ CustomXMLPart, 
+      /* parameter */ typings.activexOffice.anon.InUndoRedo, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,
     event: NodeAfterInsert,
     argNames: js.Tuple2[NewNode, InUndoRedo],
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonNewNode, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ typings.activexOffice.anon.NewNode, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,
     event: NodeAfterReplace,
     argNames: js.Tuple3[OldNode, NewNode, InUndoRedo],
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonOldNode, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ typings.activexOffice.anon.OldNode, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLParts,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
-    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ AnonCNames, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ CNames, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLParts,
     event: GetTypeInfoCount,
     argNames: js.Array[pctinfo],
-    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ AnonPctinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ Pctinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLParts,
     event: GetTypeInfo,
     argNames: js.Tuple3[itinfo, lcid, pptinfo],
-    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ AnonItinfo, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ Itinfo, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLParts,
     event: PartAfterAdd,
     argNames: js.Array[NewPart],
-    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ AnonNewPart, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ typings.activexOffice.anon.NewPart, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLParts,
     event: PartAfterLoad,
     argNames: js.Array[Part],
-    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ AnonPart, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ typings.activexOffice.anon.Part, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLParts,
     event: PartBeforeDelete,
     argNames: js.Array[OldPart],
-    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ AnonOldPart, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ typings.activexOffice.anon.OldPart, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLParts,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
-    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ AnonPpvObj, Unit]
+    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_AddRef(

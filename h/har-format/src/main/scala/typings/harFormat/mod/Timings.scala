@@ -60,20 +60,20 @@ object Timings {
   def apply(
     receive: Double,
     wait: Double,
-    blocked: Int | Double = null,
+    blocked: js.UndefOr[Double] = js.undefined,
     comment: String = null,
-    connect: Int | Double = null,
-    dns: Int | Double = null,
-    send: Int | Double = null,
-    ssl: Int | Double = null
+    connect: js.UndefOr[Double] = js.undefined,
+    dns: js.UndefOr[Double] = js.undefined,
+    send: js.UndefOr[Double] = js.undefined,
+    ssl: js.UndefOr[Double] = js.undefined
   ): Timings = {
     val __obj = js.Dynamic.literal(receive = receive.asInstanceOf[js.Any], wait = wait.asInstanceOf[js.Any])
-    if (blocked != null) __obj.updateDynamic("blocked")(blocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(blocked)) __obj.updateDynamic("blocked")(blocked.get.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
-    if (dns != null) __obj.updateDynamic("dns")(dns.asInstanceOf[js.Any])
-    if (send != null) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])
-    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (!js.isUndefined(connect)) __obj.updateDynamic("connect")(connect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dns)) __obj.updateDynamic("dns")(dns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(send)) __obj.updateDynamic("send")(send.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timings]
   }
 }

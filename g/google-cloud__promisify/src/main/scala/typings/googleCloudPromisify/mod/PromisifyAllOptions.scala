@@ -16,7 +16,7 @@ object PromisifyAllOptions {
   def apply(exclude: js.Array[String] = null, singular: js.UndefOr[Boolean] = js.undefined): PromisifyAllOptions = {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(singular)) __obj.updateDynamic("singular")(singular.asInstanceOf[js.Any])
+    if (!js.isUndefined(singular)) __obj.updateDynamic("singular")(singular.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromisifyAllOptions]
   }
 }

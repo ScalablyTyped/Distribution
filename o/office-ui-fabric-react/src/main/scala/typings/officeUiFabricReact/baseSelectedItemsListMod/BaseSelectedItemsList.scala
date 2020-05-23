@@ -5,7 +5,7 @@ import typings.officeUiFabricReact.baseSelectedItemsListTypesMod.IBaseSelectedIt
 import typings.officeUiFabricReact.libSelectionMod.Selection
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import scala.scalajs.js

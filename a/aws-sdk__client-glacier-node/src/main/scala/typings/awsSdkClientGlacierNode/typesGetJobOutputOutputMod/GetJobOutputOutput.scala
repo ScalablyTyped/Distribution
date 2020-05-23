@@ -51,7 +51,7 @@ object GetJobOutputOutput {
     checksum: String = null,
     contentRange: String = null,
     contentType: String = null,
-    status: Int | Double = null
+    status: js.UndefOr[Double] = js.undefined
   ): GetJobOutputOutput[StreamType] = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (acceptRanges != null) __obj.updateDynamic("acceptRanges")(acceptRanges.asInstanceOf[js.Any])
@@ -60,7 +60,7 @@ object GetJobOutputOutput {
     if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     if (contentRange != null) __obj.updateDynamic("contentRange")(contentRange.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobOutputOutput[StreamType]]
   }
 }

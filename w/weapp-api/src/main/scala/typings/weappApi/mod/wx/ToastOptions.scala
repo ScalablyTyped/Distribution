@@ -23,7 +23,7 @@ object ToastOptions {
     mask: Boolean,
     title: String,
     complete: /* res */ js.Any => Unit = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     fail: /* res */ js.Any => Unit = null,
     icon: icon = null,
     imgage: String = null,
@@ -31,7 +31,7 @@ object ToastOptions {
   ): ToastOptions = {
     val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (imgage != null) __obj.updateDynamic("imgage")(imgage.asInstanceOf[js.Any])

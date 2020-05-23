@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation._
 
 trait SelectFilter extends _Filter {
   /**
-  	 * Condition. Can be 'eq' (exactly equal) or 'like' (contains the given string). Defaults to 'like'.
-  	 */
+    * Condition. Can be 'eq' (exactly equal) or 'like' (contains the given string). Defaults to 'like'.
+    */
   var condition: js.UndefOr[FilterCondition] = js.undefined
   /**
-  	 * Default value for the select filter.
-  	 */
+    * Default value for the select filter.
+    */
   var defaultValue: js.UndefOr[String | Double | Boolean] = js.undefined
   /**
-  	 * Options for the filter select.
-  	 */
+    * Options for the filter select.
+    */
   var options: SelectFilterOptionsType
   /**
-  	 * Placeholder text to show in the filter.
-  	 */
+    * Placeholder text to show in the filter.
+    */
   var selectText: js.UndefOr[String] = js.undefined
   /**
-  	 * CSS Style to use for the select filter.
-  	 */
+    * CSS Style to use for the select filter.
+    */
   var style: js.UndefOr[CSSProperties] = js.undefined
   /**
-  	 * Filter type must be 'SelectFilter'
-  	 */
+    * Filter type must be 'SelectFilter'
+    */
   var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter
   /**
-  	 * Disable the empty option in the dropdown filter.
-  	 */
+    * Disable the empty option in the dropdown filter.
+    */
   var withoutEmptyOption: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -53,7 +53,7 @@ object SelectFilter {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (selectText != null) __obj.updateDynamic("selectText")(selectText.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEmptyOption)) __obj.updateDynamic("withoutEmptyOption")(withoutEmptyOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutEmptyOption)) __obj.updateDynamic("withoutEmptyOption")(withoutEmptyOption.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectFilter]
   }
 }

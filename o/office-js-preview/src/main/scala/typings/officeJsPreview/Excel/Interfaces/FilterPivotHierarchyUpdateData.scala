@@ -34,12 +34,12 @@ object FilterPivotHierarchyUpdateData {
   def apply(
     enableMultipleFilterItems: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    position: Int | Double = null
+    position: js.UndefOr[Double] = js.undefined
   ): FilterPivotHierarchyUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableMultipleFilterItems)) __obj.updateDynamic("enableMultipleFilterItems")(enableMultipleFilterItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMultipleFilterItems)) __obj.updateDynamic("enableMultipleFilterItems")(enableMultipleFilterItems.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterPivotHierarchyUpdateData]
   }
 }

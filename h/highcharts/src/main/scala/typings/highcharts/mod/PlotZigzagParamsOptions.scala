@@ -32,11 +32,15 @@ trait PlotZigzagParamsOptions extends js.Object {
 
 object PlotZigzagParamsOptions {
   @scala.inline
-  def apply(deviation: Int | Double = null, highIndex: Int | Double = null, lowIndex: Int | Double = null): PlotZigzagParamsOptions = {
+  def apply(
+    deviation: js.UndefOr[Double] = js.undefined,
+    highIndex: js.UndefOr[Double] = js.undefined,
+    lowIndex: js.UndefOr[Double] = js.undefined
+  ): PlotZigzagParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (deviation != null) __obj.updateDynamic("deviation")(deviation.asInstanceOf[js.Any])
-    if (highIndex != null) __obj.updateDynamic("highIndex")(highIndex.asInstanceOf[js.Any])
-    if (lowIndex != null) __obj.updateDynamic("lowIndex")(lowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviation)) __obj.updateDynamic("deviation")(deviation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highIndex)) __obj.updateDynamic("highIndex")(highIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowIndex)) __obj.updateDynamic("lowIndex")(lowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotZigzagParamsOptions]
   }
 }

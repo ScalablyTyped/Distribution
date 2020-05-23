@@ -4,18 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.OutlookBarPane")
-@js.native
-class OutlookBarPane protected () extends js.Object {
-  val Application: typings.activexOutlook.Outlook.Application = js.native
-  val Class: OlObjectClass = js.native
-  val Contents: OutlookBarStorage = js.native
-  var CurrentGroup: OutlookBarGroup = js.native
-  val Name: String = js.native
+trait OutlookBarPane extends js.Object {
+  val Application: typings.activexOutlook.Outlook.Application
+  val Class: OlObjectClass
+  val Contents: OutlookBarStorage
+  var CurrentGroup: OutlookBarGroup
+  val Name: String
   @JSName("Outlook.OutlookBarPane_typekey")
-  var OutlookDotOutlookBarPane_typekey: OutlookBarPane = js.native
-  val Parent: js.Any = js.native
-  val Session: NameSpace = js.native
-  var Visible: Boolean = js.native
+  var OutlookDotOutlookBarPane_typekey: OutlookBarPane
+  val Parent: js.Any
+  val Session: NameSpace
+  var Visible: Boolean
+}
+
+object OutlookBarPane {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Class: OlObjectClass,
+    Contents: OutlookBarStorage,
+    CurrentGroup: OutlookBarGroup,
+    Name: String,
+    OutlookDotOutlookBarPane_typekey: OutlookBarPane,
+    Parent: js.Any,
+    Session: NameSpace,
+    Visible: Boolean
+  ): OutlookBarPane = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Contents = Contents.asInstanceOf[js.Any], CurrentGroup = CurrentGroup.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OutlookBarPane_typekey")(OutlookDotOutlookBarPane_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OutlookBarPane]
+  }
 }
 

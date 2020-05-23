@@ -1,5 +1,6 @@
 package typings.gapiUrlshortener
 
+import typings.gapiUrlshortener.anon.AllTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ trait GoogleApiUrlShortenerUrlResource extends js.Object {
   /**
     * A summary of the click analytics for the short and long URL. Might not be present if not requested or currently unavailable.
     */
-  var analytics: AnonAllTime
+  var analytics: AllTime
   /**
     * Time the short URL was created; ISO 8601 representation using the yyyy-MM-dd'T'HH:mm:ss.SSSZZ format.
     */
@@ -33,7 +34,7 @@ trait GoogleApiUrlShortenerUrlResource extends js.Object {
 
 object GoogleApiUrlShortenerUrlResource {
   @scala.inline
-  def apply(analytics: AnonAllTime, created: String, id: String, kind: String, longUrl: String, status: String): GoogleApiUrlShortenerUrlResource = {
+  def apply(analytics: AllTime, created: String, id: String, kind: String, longUrl: String, status: String): GoogleApiUrlShortenerUrlResource = {
     val __obj = js.Dynamic.literal(analytics = analytics.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], longUrl = longUrl.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiUrlShortenerUrlResource]
   }

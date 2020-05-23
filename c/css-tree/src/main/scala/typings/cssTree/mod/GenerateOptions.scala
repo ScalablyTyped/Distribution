@@ -17,7 +17,7 @@ object GenerateOptions {
   ): GenerateOptions = {
     val __obj = js.Dynamic.literal()
     if (decorator != null) __obj.updateDynamic("decorator")(js.Any.fromFunction1(decorator))
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOptions]
   }
 }

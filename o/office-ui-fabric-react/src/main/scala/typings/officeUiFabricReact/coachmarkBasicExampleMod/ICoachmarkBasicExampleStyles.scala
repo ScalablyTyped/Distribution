@@ -22,11 +22,15 @@ trait ICoachmarkBasicExampleStyles extends js.Object {
 
 object ICoachmarkBasicExampleStyles {
   @scala.inline
-  def apply(buttonContainer: IStyle = null, dropdownContainer: IStyle = null, root: IStyle = null): ICoachmarkBasicExampleStyles = {
+  def apply(
+    buttonContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    dropdownContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
+  ): ICoachmarkBasicExampleStyles = {
     val __obj = js.Dynamic.literal()
-    if (buttonContainer != null) __obj.updateDynamic("buttonContainer")(buttonContainer.asInstanceOf[js.Any])
-    if (dropdownContainer != null) __obj.updateDynamic("dropdownContainer")(dropdownContainer.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonContainer)) __obj.updateDynamic("buttonContainer")(buttonContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropdownContainer)) __obj.updateDynamic("dropdownContainer")(dropdownContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoachmarkBasicExampleStyles]
   }
 }

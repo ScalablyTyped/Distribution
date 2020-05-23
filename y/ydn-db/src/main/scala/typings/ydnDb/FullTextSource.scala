@@ -12,9 +12,9 @@ trait FullTextSource extends js.Object {
 
 object FullTextSource {
   @scala.inline
-  def apply(keyPath: String, storeName: String, weight: Int | Double = null): FullTextSource = {
+  def apply(keyPath: String, storeName: String, weight: js.UndefOr[Double] = js.undefined): FullTextSource = {
     val __obj = js.Dynamic.literal(keyPath = keyPath.asInstanceOf[js.Any], storeName = storeName.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullTextSource]
   }
 }

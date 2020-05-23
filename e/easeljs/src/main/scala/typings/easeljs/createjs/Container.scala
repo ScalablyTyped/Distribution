@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.Container")
 @js.native
-class Container () extends DisplayObject {
+trait Container extends DisplayObject {
   // properties
   var children: js.Array[DisplayObject] = js.native
   var mouseChildren: Boolean = js.native

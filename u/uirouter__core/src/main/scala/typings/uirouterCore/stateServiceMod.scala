@@ -1,5 +1,6 @@
 package typings.uirouterCore
 
+import typings.uirouterCore.anon.Relative
 import typings.uirouterCore.interfaceMod.UIInjector
 import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.routerMod.UIRouter
@@ -246,7 +247,7 @@ object stateServiceMod extends js.Object {
       */
     def is(stateOrName: StateOrName): Boolean = js.native
     def is(stateOrName: StateOrName, params: RawParams): Boolean = js.native
-    def is(stateOrName: StateOrName, params: RawParams, options: AnonRelative): Boolean = js.native
+    def is(stateOrName: StateOrName, params: RawParams, options: Relative): Boolean = js.native
     /**
       * Lazy loads a state
       *

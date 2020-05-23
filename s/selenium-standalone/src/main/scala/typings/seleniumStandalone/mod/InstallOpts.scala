@@ -3,7 +3,7 @@ package typings.seleniumStandalone.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.URL_
-import typings.seleniumStandalone.AnonArch
+import typings.seleniumStandalone.anon.Arch
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait InstallOpts extends js.Object {
   var basePath: js.UndefOr[String] = js.undefined
   var baseURL: js.UndefOr[String] = js.undefined
   var cb: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
-  var drivers: js.UndefOr[StringDictionary[AnonArch]] = js.undefined
+  var drivers: js.UndefOr[StringDictionary[Arch]] = js.undefined
   var logger: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
   var progressCb: js.UndefOr[
     js.Function3[/* totalLength */ Double, /* progressLength */ Double, /* chunkLength */ Double, Unit]
@@ -28,7 +28,7 @@ object InstallOpts {
     basePath: String = null,
     baseURL: String = null,
     cb: /* error */ Error => Unit = null,
-    drivers: StringDictionary[AnonArch] = null,
+    drivers: StringDictionary[Arch] = null,
     logger: /* message */ String => Unit = null,
     progressCb: (/* totalLength */ Double, /* progressLength */ Double, /* chunkLength */ Double) => Unit = null,
     requestOpts: RequestOptions | String | URL_ = null,

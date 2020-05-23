@@ -1,6 +1,5 @@
 package typings.meteor
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,16 @@ trait MailComposer extends js.Object {
   def streamMessage(): Unit
 }
 
-@JSGlobal("MailComposer")
-@js.native
-object MailComposer extends TopLevel[MailComposerStatic]
+object MailComposer {
+  @scala.inline
+  def apply(
+    addHeader: (String, String) => Unit,
+    pipe: js.Any => Unit,
+    setMessageOption: (String, String, String, String) => Unit,
+    streamMessage: () => Unit
+  ): MailComposer = {
+    val __obj = js.Dynamic.literal(addHeader = js.Any.fromFunction2(addHeader), pipe = js.Any.fromFunction1(pipe), setMessageOption = js.Any.fromFunction4(setMessageOption), streamMessage = js.Any.fromFunction0(streamMessage))
+    __obj.asInstanceOf[MailComposer]
+  }
+}
 

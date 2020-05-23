@@ -10,9 +10,8 @@ import scala.scalajs.js.annotation._
   Note: The client-side UserProfile object provides methods you can use to create a personal site for the current user.
   However, it does not contain the user properties that the server-side UserProfile object contains.
   To access user properties from client-side code, use PeopleManager */
-@JSGlobal("SP.UserProfiles.UserProfile")
 @js.native
-class UserProfile () extends ClientObject {
+trait UserProfile extends ClientObject {
   /** This member is reserved for internal use and is not intended to be used directly from your code.
     Use the createPersonalSiteEnque method to create a personal site. */
   def createPersonalSite(lcid: Double): Unit = js.native

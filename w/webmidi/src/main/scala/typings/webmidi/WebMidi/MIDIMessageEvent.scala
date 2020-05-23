@@ -1,13 +1,13 @@
 package typings.webmidi.WebMidi
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait MIDIMessageEvent extends Event_ {
+trait MIDIMessageEvent extends Event {
   /**
     * A Uint8Array containing the MIDI data bytes of a single MIDI message.
     */

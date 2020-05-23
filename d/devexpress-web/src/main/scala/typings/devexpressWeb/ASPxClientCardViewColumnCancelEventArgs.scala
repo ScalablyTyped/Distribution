@@ -7,17 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the cancelable events of a client ASPxCardView column.
   */
-@JSGlobal("ASPxClientCardViewColumnCancelEventArgs")
-@js.native
-class ASPxClientCardViewColumnCancelEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new isntance of the ASPxClientCardViewColumnCancelEventArgs class.
-    * @param column An ASPxClientCardViewColumn object that represents the processed column.
-    */
-  def this(column: ASPxClientCardViewColumn) = this()
+trait ASPxClientCardViewColumnCancelEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Gets the processed client column.
     */
-  var column: ASPxClientCardViewColumn = js.native
+  var column: ASPxClientCardViewColumn
+}
+
+object ASPxClientCardViewColumnCancelEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, column: ASPxClientCardViewColumn): ASPxClientCardViewColumnCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCardViewColumnCancelEventArgs]
+  }
 }
 

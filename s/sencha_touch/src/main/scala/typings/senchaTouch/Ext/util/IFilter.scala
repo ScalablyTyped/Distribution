@@ -17,40 +17,40 @@ trait IFilter extends IBase {
   /** [Config Option] (Function) */
   var filterFn: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of anyMatch
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAnyMatch: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of caseSensitive
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getCaseSensitive: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of exactMatch
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getExactMatch: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of filterFn
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getFilterFn: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of id
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of property
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of root
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getRoot: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of scope
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getScope: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of value
-  		* @returns RegExp/Mixed
-  		*/
+    * @returns RegExp/Mixed
+    */
   var getValue: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
   var id: js.UndefOr[String] = js.undefined
@@ -61,40 +61,40 @@ trait IFilter extends IBase {
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of anyMatch
-  		* @param anyMatch Boolean The new value.
-  		*/
+    * @param anyMatch Boolean The new value.
+    */
   var setAnyMatch: js.UndefOr[js.Function1[/* anyMatch */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of caseSensitive
-  		* @param caseSensitive Boolean The new value.
-  		*/
+    * @param caseSensitive Boolean The new value.
+    */
   var setCaseSensitive: js.UndefOr[js.Function1[/* caseSensitive */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of exactMatch
-  		* @param exactMatch Boolean The new value.
-  		*/
+    * @param exactMatch Boolean The new value.
+    */
   var setExactMatch: js.UndefOr[js.Function1[/* exactMatch */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of filterFn
-  		* @param filterFn Function The new value.
-  		*/
+    * @param filterFn Function The new value.
+    */
   var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of id
-  		* @param id String The new value.
-  		*/
+    * @param id String The new value.
+    */
   var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of property
-  		* @param property String The new value.
-  		*/
+    * @param property String The new value.
+    */
   var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of root
-  		* @param root String The new value.
-  		*/
+    * @param root String The new value.
+    */
   var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of scope
-  		* @param scope Object The new value.
-  		*/
+    * @param scope Object The new value.
+    */
   var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of value
-  		* @param value RegExp/Mixed The new value.
-  		*/
+    * @param value RegExp/Mixed The new value.
+    */
   var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (RegExp/Mixed) */
   var value: js.UndefOr[js.Any] = js.undefined
@@ -151,14 +151,14 @@ object IFilter {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(anyMatch)) __obj.updateDynamic("anyMatch")(anyMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(anyMatch)) __obj.updateDynamic("anyMatch")(anyMatch.get.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (filterFn != null) __obj.updateDynamic("filterFn")(filterFn.asInstanceOf[js.Any])
     if (getAnyMatch != null) __obj.updateDynamic("getAnyMatch")(js.Any.fromFunction0(getAnyMatch))
@@ -189,7 +189,7 @@ object IFilter {
     if (setRoot != null) __obj.updateDynamic("setRoot")(js.Any.fromFunction1(setRoot))
     if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

@@ -14,11 +14,11 @@ trait ConnectionOptions extends js.Object
 
 object ConnectionOptions {
   @scala.inline
-  def PortHostConnectionOptions(host: String, db: String = null, password: String = null, port: Int | Double = null): ConnectionOptions = {
+  def PortHostConnectionOptions(host: String, db: String = null, password: String = null, port: js.UndefOr[Double] = js.undefined): ConnectionOptions = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
     if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
   @scala.inline

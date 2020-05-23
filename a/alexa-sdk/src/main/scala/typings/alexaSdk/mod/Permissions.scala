@@ -14,7 +14,7 @@ trait Permissions extends /* key */ StringDictionary[String] {
 
 object Permissions {
   @scala.inline
-  def apply(consentToken: String, StringDictionary: /* key */ StringDictionary[String] = null): Permissions = {
+  def apply(consentToken: String, StringDictionary: /* name */ StringDictionary[String] = null): Permissions = {
     val __obj = js.Dynamic.literal(consentToken = consentToken.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Permissions]

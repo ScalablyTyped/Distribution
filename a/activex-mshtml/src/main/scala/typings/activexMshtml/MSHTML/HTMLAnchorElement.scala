@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLAnchorElement")
 @js.native
-class HTMLAnchorElement protected () extends js.Object {
+trait HTMLAnchorElement extends js.Object {
   @JSName("MSHTML.HTMLAnchorElement_typekey")
   var MSHTMLDotHTMLAnchorElement_typekey: HTMLAnchorElement = js.native
   var Methods: String = js.native

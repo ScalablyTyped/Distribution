@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.Graphics.Printing.PrintPageDescription
-import typings.winrtUwp.Windows.Graphics.Printing.PrintTaskOptions
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.beginvalidation
 import typings.winrtUwp.winrtUwpStrings.optionchanged
@@ -14,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A collection of events, methods and properties for advanced print tasks. */
-@JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails")
 @js.native
-abstract class PrintTaskOptionDetails () extends js.Object {
+trait PrintTaskOptionDetails extends js.Object {
   /** Gets the list of print task options that are currently displayed. */
   var displayedOptions: IVector[String] = js.native
   /** Raised when the print system begins a validation pass on the current state of the print ticket. */
@@ -67,17 +65,5 @@ abstract class PrintTaskOptionDetails () extends js.Object {
     `type`: optionchanged,
     listener: TypedEventHandler[PrintTaskOptionDetails, PrintTaskOptionChangedEventArgs]
   ): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails")
-@js.native
-object PrintTaskOptionDetails extends js.Object {
-  /**
-    * Used to retrieve the available options for a print task.
-    * @param printTaskOptions Pointer to a PrintTaskOptions object.
-    * @return Pointer to a PrintTaskOptionDetails object.
-    */
-  def getFromPrintTaskOptions(printTaskOptions: PrintTaskOptions): PrintTaskOptionDetails = js.native
 }
 

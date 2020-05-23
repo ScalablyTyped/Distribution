@@ -31,8 +31,14 @@ package object mod {
   type RecursivePartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-native-elements.react-native-elements.RecursivePartial<T[P]> * / object}
     */ typings.reactNativeElements.reactNativeElementsStrings.RecursivePartial with org.scalablytyped.runtime.TopLevel[js.Any]
-  type ReplaceTheme = js.Function1[/* updates */ typings.reactNativeElements.RecursivePartialFullTheme, scala.Unit]
+  type ReplaceTheme = js.Function1[
+    /* updates */ typings.reactNativeElements.anon.RecursivePartialFullTheme, 
+    scala.Unit
+  ]
   type SearchBarProps = typings.reactNativeElements.mod.SearchBarWrapper with typings.reactNativeElements.mod.SearchBarBase with typings.reactNativeElements.mod.SearchBarPlatform with typings.reactNativeElements.mod.SearchBarDefault with typings.reactNativeElements.mod.SearchBarIOS with typings.reactNativeElements.mod.SearchBarAndroid
-  type Theme[T] = typings.reactNativeElements.PartialFullTheme with T
-  type UpdateTheme = js.Function1[/* updates */ typings.reactNativeElements.RecursivePartialFullTheme, scala.Unit]
+  type Theme[T] = typings.reactNativeElements.anon.PartialFullTheme with T
+  type UpdateTheme = js.Function1[
+    /* updates */ typings.reactNativeElements.anon.RecursivePartialFullTheme, 
+    scala.Unit
+  ]
 }

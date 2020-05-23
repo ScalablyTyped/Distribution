@@ -24,13 +24,13 @@ object DeleteAppRequest {
   @scala.inline
   def apply(
     appId: AppId = null,
-    forceStopAppReplication: js.UndefOr[Boolean] = js.undefined,
-    forceTerminateApp: js.UndefOr[Boolean] = js.undefined
+    forceStopAppReplication: js.UndefOr[ForceStopAppReplication] = js.undefined,
+    forceTerminateApp: js.UndefOr[ForceTerminateApp] = js.undefined
   ): DeleteAppRequest = {
     val __obj = js.Dynamic.literal()
     if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceStopAppReplication)) __obj.updateDynamic("forceStopAppReplication")(forceStopAppReplication.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceTerminateApp)) __obj.updateDynamic("forceTerminateApp")(forceTerminateApp.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceStopAppReplication)) __obj.updateDynamic("forceStopAppReplication")(forceStopAppReplication.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceTerminateApp)) __obj.updateDynamic("forceTerminateApp")(forceTerminateApp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAppRequest]
   }
 }

@@ -12,9 +12,9 @@ trait optionsType extends js.Object {
 
 object optionsType {
   @scala.inline
-  def apply(authToken: String, vehicleID: String, carIndex: Int | Double = null): optionsType = {
+  def apply(authToken: String, vehicleID: String, carIndex: js.UndefOr[Double] = js.undefined): optionsType = {
     val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], vehicleID = vehicleID.asInstanceOf[js.Any])
-    if (carIndex != null) __obj.updateDynamic("carIndex")(carIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(carIndex)) __obj.updateDynamic("carIndex")(carIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[optionsType]
   }
 }

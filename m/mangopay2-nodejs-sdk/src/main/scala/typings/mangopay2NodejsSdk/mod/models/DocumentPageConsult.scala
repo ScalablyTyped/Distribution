@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.PartialDocumentPageConsul
+import typings.mangopay2NodejsSdk.anon.PartialDocumentPageConsul
 import typings.mangopay2NodejsSdk.mod.Timestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

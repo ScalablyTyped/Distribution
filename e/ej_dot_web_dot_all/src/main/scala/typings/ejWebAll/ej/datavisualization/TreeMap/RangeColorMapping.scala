@@ -31,17 +31,17 @@ object RangeColorMapping {
   @scala.inline
   def apply(
     color: String = null,
-    from: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
     gradientColors: js.Array[_] = null,
     legendLabel: String = null,
-    to: Int | Double = null
+    to: js.UndefOr[Double] = js.undefined
   ): RangeColorMapping = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors.asInstanceOf[js.Any])
     if (legendLabel != null) __obj.updateDynamic("legendLabel")(legendLabel.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeColorMapping]
   }
 }

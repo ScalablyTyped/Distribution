@@ -44,11 +44,11 @@ trait PlusIoDirectoryEntry extends js.Object {
   /**
     * 拷贝目录
     * 以下情况拷贝目录将会导致失败：
-    * 	将父目录拷贝到子目录中；
-    * 	要拷贝到的目标目录无效；
-    * 	要拷贝到的目标路径被文件占用；
-    * 	要拷贝到的目标目录已经存在并且不为空。
-    * 	拷贝目录成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     将父目录拷贝到子目录中；
+    *     要拷贝到的目标目录无效；
+    *     要拷贝到的目标路径被文件占用；
+    *     要拷贝到的目标目录已经存在并且不为空。
+    *     拷贝目录成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -76,7 +76,7 @@ trait PlusIoDirectoryEntry extends js.Object {
   /**
     * 创建或打开子目录
     * 创建或打开当前目录指定的目录。
-    * 	创建或打开目录操作成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     创建或打开目录操作成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -93,7 +93,7 @@ trait PlusIoDirectoryEntry extends js.Object {
   /**
     * 创建或打开文件
     * 创建或打开当前目录下指定的文件。
-    * 	创建或打开文件操作对象成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     创建或打开文件操作对象成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -110,7 +110,7 @@ trait PlusIoDirectoryEntry extends js.Object {
   /**
     * 获取目录的属性
     * 用于获取文件或目录的属性信息。
-    * 	获取属性信息成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     获取属性信息成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -140,11 +140,11 @@ trait PlusIoDirectoryEntry extends js.Object {
   /**
     * 移动目录
     * 以下情况移动目录将会导致失败：
-    * 	将父目录移动到子目录中；
-    * 	要移动到的目标目录无效；
-    * 	要移动到的目标路径被文件占用；
-    * 	要移动到的目标目录已经存在并且不为空。
-    * 	移动目录成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     将父目录移动到子目录中；
+    *     要移动到的目标目录无效；
+    *     要移动到的目标路径被文件占用；
+    *     要移动到的目标目录已经存在并且不为空。
+    *     移动目录成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -165,9 +165,9 @@ trait PlusIoDirectoryEntry extends js.Object {
   /**
     * 删除目录
     * 以下情况删除目录将会导致失败：
-    * 	目录中存在文件；
-    * 	删除根目录；
-    * 	删除目录成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     目录中存在文件；
+    *     删除根目录；
+    *     删除目录成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -180,8 +180,8 @@ trait PlusIoDirectoryEntry extends js.Object {
   /**
     * 递归删除目录
     * 删除目录将会删除其下的所有文件及子目录
-    * 	不能删除根目录，如果操作删除根目录将会删除目录下的文件及子目录，不会删除根目录自身。
-    * 	删除目录成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     不能删除根目录，如果操作删除根目录将会删除目录下的文件及子目录，不会删除根目录自身。
+    *     删除目录成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */

@@ -1,6 +1,5 @@
 package typings.sharepoint.SPClientTemplates
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +15,6 @@ object ChoiceFormatType extends js.Object {
   
   @js.native
   sealed trait Radio extends ChoiceFormatType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChoiceFormatType with Double] = js.native
-  /* 0 */ @js.native
-  object Dropdown extends TopLevel[Dropdown with Double]
-  
-  /* 1 */ @js.native
-  object Radio extends TopLevel[Radio with Double]
   
 }
 

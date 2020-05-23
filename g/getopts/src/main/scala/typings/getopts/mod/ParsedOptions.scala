@@ -13,7 +13,7 @@ trait ParsedOptions
 
 object ParsedOptions {
   @scala.inline
-  def apply(_underscore: js.Array[String], StringDictionary: /* key */ StringDictionary[js.Any] = null): ParsedOptions = {
+  def apply(_underscore: js.Array[String], StringDictionary: /* name */ StringDictionary[js.Any] = null): ParsedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait ProfilerEvent extends js.Object {
   /**
-  		 * Event class name
-  		 */
+    * Event class name
+    */
   var name: String
   /**
-  		 * Event timestamp
-  		 */
+    * Event timestamp
+    */
   var timestamp: String
 }
 

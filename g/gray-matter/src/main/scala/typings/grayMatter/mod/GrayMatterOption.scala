@@ -20,7 +20,7 @@ object GrayMatterOption {
     parser: js.Function = null
   ): GrayMatterOption = {
     val __obj = js.Dynamic.literal(delims = delims.asInstanceOf[js.Any])
-    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval.asInstanceOf[js.Any])
+    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval.get.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrayMatterOption]

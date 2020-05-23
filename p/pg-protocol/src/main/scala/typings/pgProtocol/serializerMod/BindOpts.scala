@@ -20,7 +20,7 @@ object BindOpts {
     values: js.Array[_] = null
   ): BindOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
     if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
     if (statement != null) __obj.updateDynamic("statement")(statement.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])

@@ -11,10 +11,10 @@ trait EventMetadata extends js.Object {
 
 object EventMetadata {
   @scala.inline
-  def apply(label: String = null, value: Int | Double = null): EventMetadata = {
+  def apply(label: String = null, value: js.UndefOr[Double] = js.undefined): EventMetadata = {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventMetadata]
   }
 }

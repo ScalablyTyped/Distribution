@@ -59,7 +59,7 @@ object GetZoneResult {
     privateZone: js.UndefOr[Boolean] = js.undefined
   ): GetZoneResult = {
     val __obj = js.Dynamic.literal(callerReference = callerReference.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], linkedServiceDescription = linkedServiceDescription.asInstanceOf[js.Any], linkedServicePrincipal = linkedServicePrincipal.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameServers = nameServers.asInstanceOf[js.Any], resourceRecordSetCount = resourceRecordSetCount.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
-    if (!js.isUndefined(privateZone)) __obj.updateDynamic("privateZone")(privateZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(privateZone)) __obj.updateDynamic("privateZone")(privateZone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetZoneResult]
   }
 }

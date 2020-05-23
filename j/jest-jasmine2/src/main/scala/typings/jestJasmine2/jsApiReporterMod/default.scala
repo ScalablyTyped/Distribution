@@ -1,6 +1,6 @@
 package typings.jestJasmine2.jsApiReporterMod
 
-import typings.jestJasmine2.AnonTimer
+import typings.jestJasmine2.anon.Timer
 import typings.jestJasmine2.specMod.SpecResult
 import typings.jestJasmine2.suiteMod.SuiteResult
 import typings.jestJasmine2.typesMod.RunDetails
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-jasmine2/build/jasmine/JsApiReporter", JSImport.Default)
 @js.native
 class default protected () extends JsApiReporter {
-  def this(options: AnonTimer) = this()
+  def this(options: Timer) = this()
   /* CompleteClass */
   override var finished: Boolean = js.native
   /* CompleteClass */

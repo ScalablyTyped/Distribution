@@ -3,7 +3,7 @@ package typings.reactCropper.mod
 import typings.cropperjs.Cropper.Data
 import typings.cropperjs.Cropper.DragMode
 import typings.cropperjs.Cropper.ViewMode
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
@@ -86,7 +86,7 @@ import typings.reactCropper.reactCropperStrings.vertical
 import typings.reactCropper.reactCropperStrings.yes
 import typings.std.CustomEvent
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLImageElement
 import typings.std.NodeList
 import scala.scalajs.js
@@ -192,7 +192,7 @@ trait ReactCropperProps extends js.Object {
   var cropmove: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
   var cropstart: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
   var crossOrigin: js.UndefOr[String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   var data: js.UndefOr[Data] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var dateTime: js.UndefOr[String] = js.undefined
@@ -432,9 +432,9 @@ object ReactCropperProps {
     `aria-autocomplete`: none | `inline` | list | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
+    `aria-colcount`: js.UndefOr[Double] = js.undefined,
+    `aria-colindex`: js.UndefOr[Double] = js.undefined,
+    `aria-colspan`: js.UndefOr[Double] = js.undefined,
     `aria-controls`: String = null,
     `aria-current`: Boolean | page | step | location | date | time = null,
     `aria-describedby`: String = null,
@@ -451,7 +451,7 @@ object ReactCropperProps {
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
+    `aria-level`: js.UndefOr[Double] = js.undefined,
     `aria-live`: off | assertive | polite = null,
     `aria-modal`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
@@ -459,30 +459,30 @@ object ReactCropperProps {
     `aria-orientation`: horizontal | vertical = null,
     `aria-owns`: String = null,
     `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
+    `aria-posinset`: js.UndefOr[Double] = js.undefined,
     `aria-pressed`: Boolean | mixed = null,
     `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
     `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
     `aria-required`: js.UndefOr[Boolean] = js.undefined,
     `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
+    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
+    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
+    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
     `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
+    `aria-setsize`: js.UndefOr[Double] = js.undefined,
     `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
+    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
+    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
+    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
     `aria-valuetext`: String = null,
     as: String = null,
-    aspectRatio: Int | Double = null,
+    aspectRatio: js.UndefOr[Double] = js.undefined,
     async: js.UndefOr[Boolean] = js.undefined,
     autoCapitalize: String = null,
     autoComplete: String = null,
     autoCorrect: String = null,
     autoCrop: js.UndefOr[Boolean] = js.undefined,
-    autoCropArea: Int | Double = null,
+    autoCropArea: js.UndefOr[Double] = js.undefined,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     autoPlay: js.UndefOr[Boolean] = js.undefined,
     autoSave: String = null,
@@ -500,9 +500,9 @@ object ReactCropperProps {
     cite: String = null,
     classID: String = null,
     className: String = null,
-    colSpan: Int | Double = null,
+    colSpan: js.UndefOr[Double] = js.undefined,
     color: String = null,
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     content: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
@@ -515,7 +515,7 @@ object ReactCropperProps {
     cropmove: /* event */ CustomEvent[_] => Unit = null,
     cropstart: /* event */ CustomEvent[_] => Unit = null,
     crossOrigin: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     data: Data = null,
     datatype: String = null,
     dateTime: String = null,
@@ -527,7 +527,7 @@ object ReactCropperProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     download: js.Any = null,
     dragMode: DragMode = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
+    draggable: js.UndefOr[Booleanish] = js.undefined,
     encType: String = null,
     form: String = null,
     formAction: String = null,
@@ -540,14 +540,14 @@ object ReactCropperProps {
     headers: String = null,
     height: Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    high: Int | Double = null,
+    high: js.UndefOr[Double] = js.undefined,
     highlight: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
     hrefLang: String = null,
     htmlFor: String = null,
     httpEquiv: String = null,
     id: String = null,
-    initialAspectRatio: Int | Double = null,
+    initialAspectRatio: js.UndefOr[Double] = js.undefined,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     integrity: String = null,
@@ -565,23 +565,23 @@ object ReactCropperProps {
     lang: String = null,
     list: String = null,
     loop: js.UndefOr[Boolean] = js.undefined,
-    low: Int | Double = null,
+    low: js.UndefOr[Double] = js.undefined,
     manifest: String = null,
-    marginHeight: Int | Double = null,
-    marginWidth: Int | Double = null,
+    marginHeight: js.UndefOr[Double] = js.undefined,
+    marginWidth: js.UndefOr[Double] = js.undefined,
     max: Double | String = null,
-    maxLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
     media: String = null,
     mediaGroup: String = null,
     method: String = null,
     min: Double | String = null,
-    minCanvasHeight: Int | Double = null,
-    minCanvasWidth: Int | Double = null,
-    minContainerHeight: Int | Double = null,
-    minContainerWidth: Int | Double = null,
-    minCropBoxHeight: Int | Double = null,
-    minCropBoxWidth: Int | Double = null,
-    minLength: Int | Double = null,
+    minCanvasHeight: js.UndefOr[Double] = js.undefined,
+    minCanvasWidth: js.UndefOr[Double] = js.undefined,
+    minContainerHeight: js.UndefOr[Double] = js.undefined,
+    minContainerWidth: js.UndefOr[Double] = js.undefined,
+    minCropBoxHeight: js.UndefOr[Double] = js.undefined,
+    minCropBoxWidth: js.UndefOr[Double] = js.undefined,
+    minLength: js.UndefOr[Double] = js.undefined,
     modal: js.UndefOr[Boolean] = js.undefined,
     movable: js.UndefOr[Boolean] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
@@ -589,15 +589,15 @@ object ReactCropperProps {
     name: String = null,
     noValidate: js.UndefOr[Boolean] = js.undefined,
     nonce: String = null,
-    onAbort: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
+    onAbort: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLImageElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLImageElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLImageElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLImageElement] => Unit = null,
     onBlur: FocusEvent[HTMLImageElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onChange: FormEvent[HTMLImageElement] => Unit = null,
     onClick: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLImageElement] => Unit = null,
@@ -615,21 +615,21 @@ object ReactCropperProps {
     onDragOver: DragEvent[HTMLImageElement] => Unit = null,
     onDragStart: DragEvent[HTMLImageElement] => Unit = null,
     onDrop: DragEvent[HTMLImageElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onEnded: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onError: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onEnded: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onError: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onFocus: FocusEvent[HTMLImageElement] => Unit = null,
     onInput: FormEvent[HTMLImageElement] => Unit = null,
     onInvalid: FormEvent[HTMLImageElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLImageElement] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLImageElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLImageElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
+    onLoad: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onMouseDown: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
@@ -638,9 +638,9 @@ object ReactCropperProps {
     onMouseOver: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLImageElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onPlay: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
+    onPause: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onPlay: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onPointerCancel: PointerEvent[HTMLImageElement] => Unit = null,
     onPointerDown: PointerEvent[HTMLImageElement] => Unit = null,
     onPointerEnter: PointerEvent[HTMLImageElement] => Unit = null,
@@ -649,27 +649,27 @@ object ReactCropperProps {
     onPointerOut: PointerEvent[HTMLImageElement] => Unit = null,
     onPointerOver: PointerEvent[HTMLImageElement] => Unit = null,
     onPointerUp: PointerEvent[HTMLImageElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
+    onProgress: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onReset: FormEvent[HTMLImageElement] => Unit = null,
     onScroll: UIEvent[HTMLImageElement, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onSelect: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onStalled: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onSelect: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onStalled: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onSubmit: FormEvent[HTMLImageElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onTouchCancel: TouchEvent[HTMLImageElement] => Unit = null,
     onTouchEnd: TouchEvent[HTMLImageElement] => Unit = null,
     onTouchMove: TouchEvent[HTMLImageElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLImageElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLImageElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onWheel: WheelEvent[HTMLImageElement] => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
-    optimum: Int | Double = null,
+    optimum: js.UndefOr[Double] = js.undefined,
     pattern: String = null,
     placeholder: String = null,
     playsInline: js.UndefOr[Boolean] = js.undefined
@@ -680,93 +680,93 @@ object ReactCropperProps {
     if (acceptCharset != null) __obj.updateDynamic("acceptCharset")(acceptCharset.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.get.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
     if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCrop)) __obj.updateDynamic("autoCrop")(autoCrop.asInstanceOf[js.Any])
-    if (autoCropArea != null) __obj.updateDynamic("autoCropArea")(autoCropArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCrop)) __obj.updateDynamic("autoCrop")(autoCrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCropArea)) __obj.updateDynamic("autoCropArea")(autoCropArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.get.asInstanceOf[js.Any])
     if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
     if (cellPadding != null) __obj.updateDynamic("cellPadding")(cellPadding.asInstanceOf[js.Any])
     if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
     if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
     if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkCrossOrigin)) __obj.updateDynamic("checkCrossOrigin")(checkCrossOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkOrientation)) __obj.updateDynamic("checkOrientation")(checkOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkCrossOrigin)) __obj.updateDynamic("checkCrossOrigin")(checkCrossOrigin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkOrientation)) __obj.updateDynamic("checkOrientation")(checkOrientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (cite != null) __obj.updateDynamic("cite")(cite.asInstanceOf[js.Any])
     if (classID != null) __obj.updateDynamic("classID")(classID.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
     if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
     if (crop != null) __obj.updateDynamic("crop")(js.Any.fromFunction1(crop))
-    if (!js.isUndefined(cropBoxMovable)) __obj.updateDynamic("cropBoxMovable")(cropBoxMovable.asInstanceOf[js.Any])
-    if (!js.isUndefined(cropBoxResizable)) __obj.updateDynamic("cropBoxResizable")(cropBoxResizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(cropBoxMovable)) __obj.updateDynamic("cropBoxMovable")(cropBoxMovable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cropBoxResizable)) __obj.updateDynamic("cropBoxResizable")(cropBoxResizable.get.asInstanceOf[js.Any])
     if (cropend != null) __obj.updateDynamic("cropend")(js.Any.fromFunction1(cropend))
     if (cropmove != null) __obj.updateDynamic("cropmove")(js.Any.fromFunction1(cropmove))
     if (cropstart != null) __obj.updateDynamic("cropstart")(js.Any.fromFunction1(cropstart))
@@ -775,35 +775,35 @@ object ReactCropperProps {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (dragMode != null) __obj.updateDynamic("dragMode")(dragMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (encType != null) __obj.updateDynamic("encType")(encType.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (formAction != null) __obj.updateDynamic("formAction")(formAction.asInstanceOf[js.Any])
     if (formEncType != null) __obj.updateDynamic("formEncType")(formEncType.asInstanceOf[js.Any])
     if (formMethod != null) __obj.updateDynamic("formMethod")(formMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.get.asInstanceOf[js.Any])
     if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget.asInstanceOf[js.Any])
     if (frameBorder != null) __obj.updateDynamic("frameBorder")(frameBorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(guides)) __obj.updateDynamic("guides")(guides.asInstanceOf[js.Any])
+    if (!js.isUndefined(guides)) __obj.updateDynamic("guides")(guides.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang.asInstanceOf[js.Any])
     if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
     if (httpEquiv != null) __obj.updateDynamic("httpEquiv")(httpEquiv.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initialAspectRatio != null) __obj.updateDynamic("initialAspectRatio")(initialAspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialAspectRatio)) __obj.updateDynamic("initialAspectRatio")(initialAspectRatio.get.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
@@ -811,7 +811,7 @@ object ReactCropperProps {
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
@@ -820,30 +820,30 @@ object ReactCropperProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
     if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (marginHeight != null) __obj.updateDynamic("marginHeight")(marginHeight.asInstanceOf[js.Any])
-    if (marginWidth != null) __obj.updateDynamic("marginWidth")(marginWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginHeight)) __obj.updateDynamic("marginHeight")(marginHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginWidth)) __obj.updateDynamic("marginWidth")(marginWidth.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     if (mediaGroup != null) __obj.updateDynamic("mediaGroup")(mediaGroup.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minCanvasHeight != null) __obj.updateDynamic("minCanvasHeight")(minCanvasHeight.asInstanceOf[js.Any])
-    if (minCanvasWidth != null) __obj.updateDynamic("minCanvasWidth")(minCanvasWidth.asInstanceOf[js.Any])
-    if (minContainerHeight != null) __obj.updateDynamic("minContainerHeight")(minContainerHeight.asInstanceOf[js.Any])
-    if (minContainerWidth != null) __obj.updateDynamic("minContainerWidth")(minContainerWidth.asInstanceOf[js.Any])
-    if (minCropBoxHeight != null) __obj.updateDynamic("minCropBoxHeight")(minCropBoxHeight.asInstanceOf[js.Any])
-    if (minCropBoxWidth != null) __obj.updateDynamic("minCropBoxWidth")(minCropBoxWidth.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCanvasHeight)) __obj.updateDynamic("minCanvasHeight")(minCanvasHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCanvasWidth)) __obj.updateDynamic("minCanvasWidth")(minCanvasWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minContainerHeight)) __obj.updateDynamic("minContainerHeight")(minContainerHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minContainerWidth)) __obj.updateDynamic("minContainerWidth")(minContainerWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCropBoxHeight)) __obj.updateDynamic("minCropBoxHeight")(minCropBoxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCropBoxWidth)) __obj.updateDynamic("minCropBoxWidth")(minCropBoxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.get.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
@@ -924,11 +924,11 @@ object ReactCropperProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (optimum != null) __obj.updateDynamic("optimum")(optimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimum)) __obj.updateDynamic("optimum")(optimum.get.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.asInstanceOf[js.Any])
+    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactCropperProps]
   }
 }

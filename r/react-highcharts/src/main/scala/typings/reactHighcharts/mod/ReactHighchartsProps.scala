@@ -38,7 +38,7 @@ object ReactHighchartsProps {
   ): ReactHighchartsProps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (!js.isUndefined(isPureConfig)) __obj.updateDynamic("isPureConfig")(isPureConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPureConfig)) __obj.updateDynamic("isPureConfig")(isPureConfig.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactHighchartsProps]
   }
 }

@@ -71,7 +71,7 @@ object ProcessMetric {
     val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], creationTime = creationTime.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (integrityLevel != null) __obj.updateDynamic("integrityLevel")(integrityLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(sandboxed)) __obj.updateDynamic("sandboxed")(sandboxed.asInstanceOf[js.Any])
+    if (!js.isUndefined(sandboxed)) __obj.updateDynamic("sandboxed")(sandboxed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessMetric]
   }
 }

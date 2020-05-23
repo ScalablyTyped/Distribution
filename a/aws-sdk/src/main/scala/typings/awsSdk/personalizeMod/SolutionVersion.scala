@@ -76,14 +76,14 @@ object SolutionVersion {
     eventType: EventType = null,
     failureReason: FailureReason = null,
     lastUpdatedDateTime: Date = null,
-    performAutoML: js.UndefOr[scala.Boolean] = js.undefined,
-    performHPO: js.UndefOr[scala.Boolean] = js.undefined,
+    performAutoML: js.UndefOr[PerformAutoML] = js.undefined,
+    performHPO: js.UndefOr[PerformHPO] = js.undefined,
     recipeArn: Arn = null,
     solutionArn: Arn = null,
     solutionConfig: SolutionConfig = null,
     solutionVersionArn: Arn = null,
     status: Status = null,
-    trainingHours: Int | Double = null,
+    trainingHours: js.UndefOr[TrainingHours] = js.undefined,
     trainingMode: TrainingMode = null,
     tunedHPOParams: TunedHPOParams = null
   ): SolutionVersion = {
@@ -93,14 +93,14 @@ object SolutionVersion {
     if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
     if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(performAutoML)) __obj.updateDynamic("performAutoML")(performAutoML.asInstanceOf[js.Any])
-    if (!js.isUndefined(performHPO)) __obj.updateDynamic("performHPO")(performHPO.asInstanceOf[js.Any])
+    if (!js.isUndefined(performAutoML)) __obj.updateDynamic("performAutoML")(performAutoML.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(performHPO)) __obj.updateDynamic("performHPO")(performHPO.get.asInstanceOf[js.Any])
     if (recipeArn != null) __obj.updateDynamic("recipeArn")(recipeArn.asInstanceOf[js.Any])
     if (solutionArn != null) __obj.updateDynamic("solutionArn")(solutionArn.asInstanceOf[js.Any])
     if (solutionConfig != null) __obj.updateDynamic("solutionConfig")(solutionConfig.asInstanceOf[js.Any])
     if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (trainingHours != null) __obj.updateDynamic("trainingHours")(trainingHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainingHours)) __obj.updateDynamic("trainingHours")(trainingHours.get.asInstanceOf[js.Any])
     if (trainingMode != null) __obj.updateDynamic("trainingMode")(trainingMode.asInstanceOf[js.Any])
     if (tunedHPOParams != null) __obj.updateDynamic("tunedHPOParams")(tunedHPOParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[SolutionVersion]

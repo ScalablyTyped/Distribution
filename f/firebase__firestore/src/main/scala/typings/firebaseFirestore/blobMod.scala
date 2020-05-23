@@ -1,13 +1,12 @@
 package typings.firebaseFirestore
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/blob", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/blob", JSImport.Namespace)
 @js.native
 object blobMod extends js.Object {
   @js.native
@@ -19,20 +18,9 @@ object blobMod extends js.Object {
     def toUint8Array(): Uint8Array = js.native
   }
   
-  @js.native
-  class PublicBlob protected () extends Blob {
-    def this(byteString: ByteString) = this()
-  }
-  
   /* static members */
   @js.native
   object Blob extends js.Object {
-    def fromBase64String(base64: String): Blob = js.native
-    def fromUint8Array(array: Uint8Array): Blob = js.native
-  }
-  
-  @js.native
-  object PublicBlob extends Instantiable1[/* byteString */ ByteString, Blob] {
     def fromBase64String(base64: String): Blob = js.native
     def fromUint8Array(array: Uint8Array): Blob = js.native
   }

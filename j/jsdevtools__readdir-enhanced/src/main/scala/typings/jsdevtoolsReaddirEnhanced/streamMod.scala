@@ -1,5 +1,7 @@
 package typings.jsdevtoolsReaddirEnhanced
 
+import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatsfalse
+import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatstrue
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -13,9 +13,9 @@ trait SelectionResult extends js.Object {
 
 object SelectionResult {
   @scala.inline
-  def apply(success: Boolean, entry: js.Object = null): SelectionResult = {
+  def apply(success: Boolean, entry: js.UndefOr[Null | js.Object] = js.undefined): SelectionResult = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
-    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionResult]
   }
 }

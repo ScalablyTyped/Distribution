@@ -1,6 +1,6 @@
 package typings.expressJwt.mod
 
-import typings.expressJwt.AnonMessage
+import typings.expressJwt.anon.Message
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @JSImport("express-jwt", "UnauthorizedError")
 @js.native
 class UnauthorizedError protected () extends Error {
-  def this(code: ErrorCode, error: AnonMessage) = this()
+  def this(code: ErrorCode, error: Message) = this()
   var code: ErrorCode = js.native
-  var inner: AnonMessage = js.native
+  var inner: Message = js.native
   /* CompleteClass */
   override var message: String = js.native
   /* CompleteClass */

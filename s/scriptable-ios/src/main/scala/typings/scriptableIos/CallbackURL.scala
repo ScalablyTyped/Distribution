@@ -10,17 +10,7 @@ import scala.scalajs.js.annotation._
   * Constructs an object that opens x-callback-url requests and waits for a response from the target app.
   * @see https://docs.scriptable.app/callbackurl/#-new-callbackurl
   */
-@JSGlobal("CallbackURL")
-@js.native
-class CallbackURL protected () extends js.Object {
-  /**
-    * _Open x-callback-url requests._
-    *
-    * Constructs an object that opens x-callback-url requests and waits for a response from the target app.
-    * @param baseURL - Base URL of the request. This is usally something like my-app://x-callback-url/action
-    * @see https://docs.scriptable.app/callbackurl/#-new-callbackurl
-    */
-  def this(baseURL: String) = this()
+trait CallbackURL extends js.Object {
   /**
     * _Construct CallbackURL._
     *
@@ -30,14 +20,14 @@ class CallbackURL protected () extends js.Object {
     * @param value - Value of the query parameter to add.
     * @see https://docs.scriptable.app/callbackurl/#-addparameter
     */
-  def addParameter(name: String, value: String): Unit = js.native
+  def addParameter(name: String, value: String): Unit
   /**
     * _Creates the callback URL._
     *
     * Creates a callback URL with the specified base URL and query parameters.
     * @see https://docs.scriptable.app/callbackurl/#-geturl
     */
-  def getURL(): String = js.native
+  def getURL(): String
   /**
     * _Opens the callback URL._
     *
@@ -46,6 +36,14 @@ class CallbackURL protected () extends js.Object {
     * not invoke the callback.
     * @see https://docs.scriptable.app/callbackurl/#-open
     */
-  def open(): js.Promise[_] = js.native
+  def open(): js.Promise[_]
+}
+
+object CallbackURL {
+  @scala.inline
+  def apply(addParameter: (String, String) => Unit, getURL: () => String, open: () => js.Promise[_]): CallbackURL = {
+    val __obj = js.Dynamic.literal(addParameter = js.Any.fromFunction2(addParameter), getURL = js.Any.fromFunction0(getURL), open = js.Any.fromFunction0(open))
+    __obj.asInstanceOf[CallbackURL]
+  }
 }
 

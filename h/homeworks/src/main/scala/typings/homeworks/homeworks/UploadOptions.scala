@@ -55,7 +55,7 @@ object UploadOptions {
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBtn)) __obj.updateDynamic("isBtn")(isBtn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBtn)) __obj.updateDynamic("isBtn")(isBtn.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadOptions]

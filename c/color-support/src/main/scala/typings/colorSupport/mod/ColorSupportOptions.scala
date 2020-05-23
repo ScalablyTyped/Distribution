@@ -1,7 +1,7 @@
 package typings.colorSupport.mod
 
 import typings.node.NodeJS.ProcessEnv
-import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.node.processMod.global.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,11 +30,11 @@ object ColorSupportOptions {
     term: String = null
   ): ColorSupportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysReturn)) __obj.updateDynamic("alwaysReturn")(alwaysReturn.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysReturn)) __obj.updateDynamic("alwaysReturn")(alwaysReturn.get.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCI)) __obj.updateDynamic("ignoreCI")(ignoreCI.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDumb)) __obj.updateDynamic("ignoreDumb")(ignoreDumb.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreTTY)) __obj.updateDynamic("ignoreTTY")(ignoreTTY.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCI)) __obj.updateDynamic("ignoreCI")(ignoreCI.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDumb)) __obj.updateDynamic("ignoreDumb")(ignoreDumb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreTTY)) __obj.updateDynamic("ignoreTTY")(ignoreTTY.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])

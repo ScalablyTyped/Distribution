@@ -12,10 +12,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 *
-	 *
-	 * see http://docs.angular-formly.com/docs/custom-templates#section-formlyconfig-settype-options
-	 */
+  *
+  *
+  * see http://docs.angular-formly.com/docs/custom-templates#section-formlyconfig-settype-options
+  */
 trait ITypeOptions extends js.Object {
   var apiCheck: js.UndefOr[StringDictionary[js.Function]] = js.undefined
   var apiCheckFunction: js.UndefOr[String] = js.undefined
@@ -64,7 +64,7 @@ object ITypeOptions {
     if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(js.Any.fromFunction5(link))
-    if (!js.isUndefined(overwriteOk)) __obj.updateDynamic("overwriteOk")(overwriteOk.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwriteOk)) __obj.updateDynamic("overwriteOk")(overwriteOk.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])

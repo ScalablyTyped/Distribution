@@ -36,18 +36,18 @@ object ListReviewPolicyResultsForHITRequest {
   @scala.inline
   def apply(
     HITId: EntityId,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[ResultSize] = js.undefined,
     NextToken: PaginationToken = null,
     PolicyLevels: ReviewPolicyLevelList = null,
-    RetrieveActions: js.UndefOr[scala.Boolean] = js.undefined,
-    RetrieveResults: js.UndefOr[scala.Boolean] = js.undefined
+    RetrieveActions: js.UndefOr[Boolean] = js.undefined,
+    RetrieveResults: js.UndefOr[Boolean] = js.undefined
   ): ListReviewPolicyResultsForHITRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (PolicyLevels != null) __obj.updateDynamic("PolicyLevels")(PolicyLevels.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetrieveActions)) __obj.updateDynamic("RetrieveActions")(RetrieveActions.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetrieveResults)) __obj.updateDynamic("RetrieveResults")(RetrieveResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetrieveActions)) __obj.updateDynamic("RetrieveActions")(RetrieveActions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetrieveResults)) __obj.updateDynamic("RetrieveResults")(RetrieveResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReviewPolicyResultsForHITRequest]
   }
 }

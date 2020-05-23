@@ -1,6 +1,6 @@
 package typings.antDesignPro.authorizedMod
 
-import typings.antDesignPro.TypeofAuthorized
+import typings.antDesignPro.anon.TypeofAuthorized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

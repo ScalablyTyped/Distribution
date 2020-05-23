@@ -4,21 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.OutputFile")
-@js.native
-class OutputFile protected () extends js.Object {
-  def this(name: String, writeByteOrderMark: Boolean, text: String, fileType: OutputFileType) = this()
-  def this(
-    name: String,
-    writeByteOrderMark: Boolean,
-    text: String,
+trait OutputFile extends js.Object {
+  var fileType: OutputFileType
+  var name: String
+  var sourceMapEntries: js.Array[SourceMapEntry]
+  var text: String
+  var writeByteOrderMark: Boolean
+}
+
+object OutputFile {
+  @scala.inline
+  def apply(
     fileType: OutputFileType,
-    sourceMapEntries: js.Array[SourceMapEntry]
-  ) = this()
-  var fileType: OutputFileType = js.native
-  var name: String = js.native
-  var sourceMapEntries: js.Array[SourceMapEntry] = js.native
-  var text: String = js.native
-  var writeByteOrderMark: Boolean = js.native
+    name: String,
+    sourceMapEntries: js.Array[SourceMapEntry],
+    text: String,
+    writeByteOrderMark: Boolean
+  ): OutputFile = {
+    val __obj = js.Dynamic.literal(fileType = fileType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sourceMapEntries = sourceMapEntries.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], writeByteOrderMark = writeByteOrderMark.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OutputFile]
+  }
 }
 

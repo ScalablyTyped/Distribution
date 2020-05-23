@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/database", "Transaction")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/database", "Transaction")
 @js.native
 class Transaction protected ()
   extends typings.firebaseFirestoreTypes.mod.Transaction {

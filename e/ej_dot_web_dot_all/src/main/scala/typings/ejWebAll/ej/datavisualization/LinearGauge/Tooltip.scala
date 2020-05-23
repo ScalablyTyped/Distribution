@@ -27,8 +27,8 @@ object Tooltip {
     templateID: String = null
   ): Tooltip = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showCustomLabelTooltip)) __obj.updateDynamic("showCustomLabelTooltip")(showCustomLabelTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabelTooltip)) __obj.updateDynamic("showLabelTooltip")(showLabelTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCustomLabelTooltip)) __obj.updateDynamic("showCustomLabelTooltip")(showCustomLabelTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabelTooltip)) __obj.updateDynamic("showLabelTooltip")(showLabelTooltip.get.asInstanceOf[js.Any])
     if (templateID != null) __obj.updateDynamic("templateID")(templateID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tooltip]
   }

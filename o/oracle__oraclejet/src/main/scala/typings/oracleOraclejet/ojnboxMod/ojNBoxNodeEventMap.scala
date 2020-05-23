@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojnboxMod
 
-import typings.oracleOraclejet.AnonBorderRadiusBorderWidth
-import typings.oracleOraclejet.AnonBorderWidthColor
+import typings.oracleOraclejet.anon.BorderRadiusBorderWidth
+import typings.oracleOraclejet.anon.BorderWidthColor
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
@@ -9,8 +9,8 @@ import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
 import typings.std.ElementEventMap
 import typings.std.ErrorEvent
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.GlobalEventHandlersEventMap
 import typings.std.KeyboardEvent
@@ -36,9 +36,9 @@ trait ojNBoxNodeEventMap
   var colorChanged: JetElementCustomEvent[js.UndefOr[String]]
   var columnChanged: JetElementCustomEvent[String]
   var groupCategoryChanged: JetElementCustomEvent[js.UndefOr[String]]
-  var iconChanged: JetElementCustomEvent[js.UndefOr[AnonBorderRadiusBorderWidth]]
+  var iconChanged: JetElementCustomEvent[js.UndefOr[BorderRadiusBorderWidth]]
   var indicatorColorChanged: JetElementCustomEvent[js.UndefOr[String]]
-  var indicatorIconChanged: JetElementCustomEvent[js.UndefOr[AnonBorderWidthColor]]
+  var indicatorIconChanged: JetElementCustomEvent[js.UndefOr[BorderWidthColor]]
   var labelChanged: JetElementCustomEvent[String]
   var rowChanged: JetElementCustomEvent[String]
   var secondaryLabelChanged: JetElementCustomEvent[String]
@@ -61,52 +61,52 @@ object ojNBoxNodeEventMap {
     blur: FocusEvent,
     borderColorChanged: JetElementCustomEvent[String],
     borderWidthChanged: JetElementCustomEvent[Double],
-    cancel: Event_,
-    canplay: Event_,
-    canplaythrough: Event_,
+    cancel: Event,
+    canplay: Event,
+    canplaythrough: Event,
     categoriesChanged: JetElementCustomEvent[js.Array[String]],
-    change: Event_,
+    change: Event,
     click: MouseEvent,
-    close: Event_,
+    close: Event,
     colorChanged: JetElementCustomEvent[js.UndefOr[String]],
     columnChanged: JetElementCustomEvent[String],
     contextmenu: MouseEvent,
     copy: ClipboardEvent,
-    cuechange: Event_,
+    cuechange: Event,
     cut: ClipboardEvent,
     dblclick: MouseEvent,
     drag: DragEvent,
     dragend: DragEvent,
     dragenter: DragEvent,
-    dragexit: Event_,
+    dragexit: Event,
     dragleave: DragEvent,
     dragover: DragEvent,
     dragstart: DragEvent,
     drop: DragEvent,
-    durationchange: Event_,
-    emptied: Event_,
-    ended: Event_,
+    durationchange: Event,
+    emptied: Event,
+    ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
     focusin: FocusEvent,
     focusout: FocusEvent,
-    fullscreenchange: Event_,
-    fullscreenerror: Event_,
+    fullscreenchange: Event,
+    fullscreenerror: Event,
     gotpointercapture: PointerEvent,
     groupCategoryChanged: JetElementCustomEvent[js.UndefOr[String]],
-    iconChanged: JetElementCustomEvent[js.UndefOr[AnonBorderRadiusBorderWidth]],
+    iconChanged: JetElementCustomEvent[js.UndefOr[BorderRadiusBorderWidth]],
     indicatorColorChanged: JetElementCustomEvent[js.UndefOr[String]],
-    indicatorIconChanged: JetElementCustomEvent[js.UndefOr[AnonBorderWidthColor]],
-    input: Event_,
-    invalid: Event_,
+    indicatorIconChanged: JetElementCustomEvent[js.UndefOr[BorderWidthColor]],
+    input: Event,
+    invalid: Event,
     keydown: KeyboardEvent,
     keypress: KeyboardEvent,
     keyup: KeyboardEvent,
     labelChanged: JetElementCustomEvent[String],
-    load: Event_,
-    loadeddata: Event_,
-    loadedmetadata: Event_,
-    loadstart: Event_,
+    load: Event,
+    loadeddata: Event,
+    loadedmetadata: Event,
+    loadstart: Event,
     lostpointercapture: PointerEvent,
     mousedown: MouseEvent,
     mouseenter: MouseEvent,
@@ -116,9 +116,9 @@ object ojNBoxNodeEventMap {
     mouseover: MouseEvent,
     mouseup: MouseEvent,
     paste: ClipboardEvent,
-    pause: Event_,
-    play: Event_,
-    playing: Event_,
+    pause: Event,
+    play: Event,
+    playing: Event,
     pointercancel: PointerEvent,
     pointerdown: PointerEvent,
     pointerenter: PointerEvent,
@@ -128,26 +128,26 @@ object ojNBoxNodeEventMap {
     pointerover: PointerEvent,
     pointerup: PointerEvent,
     progress: ProgressEvent[EventTarget],
-    ratechange: Event_,
-    reset: Event_,
+    ratechange: Event,
+    reset: Event,
     resize: UIEvent,
     rowChanged: JetElementCustomEvent[String],
-    scroll: Event_,
+    scroll: Event,
     secondaryLabelChanged: JetElementCustomEvent[String],
     securitypolicyviolation: SecurityPolicyViolationEvent,
-    seeked: Event_,
-    seeking: Event_,
-    select: Event_,
-    selectionchange: Event_,
-    selectstart: Event_,
+    seeked: Event,
+    seeking: Event,
+    select: Event,
+    selectionchange: Event,
+    selectstart: Event,
     shortDescChanged: JetElementCustomEvent[String],
-    stalled: Event_,
-    submit: Event_,
-    suspend: Event_,
+    stalled: Event,
+    submit: Event,
+    suspend: Event,
     svgClassNameChanged: JetElementCustomEvent[String],
     svgStyleChanged: JetElementCustomEvent[js.Object | Null],
-    timeupdate: Event_,
-    toggle: Event_,
+    timeupdate: Event,
+    toggle: Event,
     touchcancel: TouchEvent,
     touchend: TouchEvent,
     touchmove: TouchEvent,
@@ -156,8 +156,8 @@ object ojNBoxNodeEventMap {
     transitionend: TransitionEvent,
     transitionrun: TransitionEvent,
     transitionstart: TransitionEvent,
-    volumechange: Event_,
-    waiting: Event_,
+    volumechange: Event,
+    waiting: Event,
     wheel: WheelEvent,
     xPercentageChanged: JetElementCustomEvent[js.UndefOr[Double | Null]],
     yPercentageChanged: JetElementCustomEvent[js.UndefOr[Double | Null]]

@@ -87,15 +87,15 @@ object JobFlowInstancesConfig {
     EmrManagedMasterSecurityGroup: XmlStringMaxLen256 = null,
     EmrManagedSlaveSecurityGroup: XmlStringMaxLen256 = null,
     HadoopVersion: XmlStringMaxLen256 = null,
-    InstanceCount: Int | Double = null,
+    InstanceCount: js.UndefOr[Integer] = js.undefined,
     InstanceFleets: InstanceFleetConfigList = null,
     InstanceGroups: InstanceGroupConfigList = null,
-    KeepJobFlowAliveWhenNoSteps: js.UndefOr[scala.Boolean] = js.undefined,
+    KeepJobFlowAliveWhenNoSteps: js.UndefOr[Boolean] = js.undefined,
     MasterInstanceType: InstanceType = null,
     Placement: PlacementType = null,
     ServiceAccessSecurityGroup: XmlStringMaxLen256 = null,
     SlaveInstanceType: InstanceType = null,
-    TerminationProtected: js.UndefOr[scala.Boolean] = js.undefined
+    TerminationProtected: js.UndefOr[Boolean] = js.undefined
   ): JobFlowInstancesConfig = {
     val __obj = js.Dynamic.literal()
     if (AdditionalMasterSecurityGroups != null) __obj.updateDynamic("AdditionalMasterSecurityGroups")(AdditionalMasterSecurityGroups.asInstanceOf[js.Any])
@@ -106,15 +106,15 @@ object JobFlowInstancesConfig {
     if (EmrManagedMasterSecurityGroup != null) __obj.updateDynamic("EmrManagedMasterSecurityGroup")(EmrManagedMasterSecurityGroup.asInstanceOf[js.Any])
     if (EmrManagedSlaveSecurityGroup != null) __obj.updateDynamic("EmrManagedSlaveSecurityGroup")(EmrManagedSlaveSecurityGroup.asInstanceOf[js.Any])
     if (HadoopVersion != null) __obj.updateDynamic("HadoopVersion")(HadoopVersion.asInstanceOf[js.Any])
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     if (InstanceFleets != null) __obj.updateDynamic("InstanceFleets")(InstanceFleets.asInstanceOf[js.Any])
     if (InstanceGroups != null) __obj.updateDynamic("InstanceGroups")(InstanceGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(KeepJobFlowAliveWhenNoSteps)) __obj.updateDynamic("KeepJobFlowAliveWhenNoSteps")(KeepJobFlowAliveWhenNoSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(KeepJobFlowAliveWhenNoSteps)) __obj.updateDynamic("KeepJobFlowAliveWhenNoSteps")(KeepJobFlowAliveWhenNoSteps.get.asInstanceOf[js.Any])
     if (MasterInstanceType != null) __obj.updateDynamic("MasterInstanceType")(MasterInstanceType.asInstanceOf[js.Any])
     if (Placement != null) __obj.updateDynamic("Placement")(Placement.asInstanceOf[js.Any])
     if (ServiceAccessSecurityGroup != null) __obj.updateDynamic("ServiceAccessSecurityGroup")(ServiceAccessSecurityGroup.asInstanceOf[js.Any])
     if (SlaveInstanceType != null) __obj.updateDynamic("SlaveInstanceType")(SlaveInstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminationProtected)) __obj.updateDynamic("TerminationProtected")(TerminationProtected.asInstanceOf[js.Any])
+    if (!js.isUndefined(TerminationProtected)) __obj.updateDynamic("TerminationProtected")(TerminationProtected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobFlowInstancesConfig]
   }
 }

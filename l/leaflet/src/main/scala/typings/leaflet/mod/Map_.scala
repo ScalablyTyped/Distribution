@@ -1,8 +1,8 @@
 package typings.leaflet.mod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.leaflet.anon.namestringHTMLElementDefa
 import typings.leaflet.mod.Control_.Attribution
-import typings.leaflet.namestringHTMLElementDefa
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.markdownIt
 
-import typings.markdownIt.stateCoreMod.^
+import typings.markdownIt.stateInlineMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

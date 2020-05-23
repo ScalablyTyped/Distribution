@@ -36,10 +36,10 @@ object TaskbarEditingEventArgs {
     `type`: String = null
   ): TaskbarEditingEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (editingFields != null) __obj.updateDynamic("editingFields")(editingFields.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundOffDuration)) __obj.updateDynamic("roundOffDuration")(roundOffDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundOffDuration)) __obj.updateDynamic("roundOffDuration")(roundOffDuration.get.asInstanceOf[js.Any])
     if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskbarEditingEventArgs]

@@ -22,7 +22,7 @@ object Options {
   def apply(error: js.Any = null, keepBcc: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepBcc)) __obj.updateDynamic("keepBcc")(keepBcc.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepBcc)) __obj.updateDynamic("keepBcc")(keepBcc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

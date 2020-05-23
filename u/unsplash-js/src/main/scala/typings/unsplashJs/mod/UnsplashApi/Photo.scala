@@ -1,18 +1,17 @@
 package typings.unsplashJs.mod.UnsplashApi
 
 import typings.std.Response
-import typings.unsplashJs.AnonCollections
-import typings.unsplashJs.AnonLinks
+import typings.unsplashJs.anon.Links
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Photo extends js.Object {
-  def downloadPhoto(photo: AnonLinks): js.Promise[Response] = js.native
+  def downloadPhoto(photo: Links): js.Promise[Response] = js.native
   def getPhoto(id: String): js.Promise[Response] = js.native
   def getPhotoStats(id: String): js.Promise[Response] = js.native
-  def getRandomPhoto(options: AnonCollections): js.Promise[Response] = js.native
+  def getRandomPhoto(options: typings.unsplashJs.anon.Collections): js.Promise[Response] = js.native
   def likePhoto(id: String): js.Promise[Response] = js.native
   def listPhotos(): js.Promise[Response] = js.native
   def listPhotos(page: Double): js.Promise[Response] = js.native

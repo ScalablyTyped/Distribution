@@ -1,6 +1,6 @@
 package typings.imap.mod
 
-import typings.imap.AnonNew
+import typings.imap.anon.New
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait Box extends js.Object {
   /** array - A list of system-defined flags applicable for this mailbox. Flags in this list but not in permFlags may be stored for the current session only. Additional server implementation-specific flags may also be available. */
   var flags: js.Array[String]
   /** Contains various message counts for this mailbox: */
-  var messages: AnonNew
+  var messages: New
   /** The name of this mailbox. */
   var name: String
   /** True if new keywords can be added to messages in this mailbox. */
@@ -30,7 +30,7 @@ object Box {
   @scala.inline
   def apply(
     flags: js.Array[String],
-    messages: AnonNew,
+    messages: New,
     name: String,
     newKeywords: Boolean,
     permFlags: js.Array[String],
@@ -40,7 +40,7 @@ object Box {
     readOnly: js.UndefOr[Boolean] = js.undefined
   ): Box = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], newKeywords = newKeywords.asInstanceOf[js.Any], permFlags = permFlags.asInstanceOf[js.Any], persistentUIDs = persistentUIDs.asInstanceOf[js.Any], uidnext = uidnext.asInstanceOf[js.Any], uidvalidity = uidvalidity.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Box]
   }
 }

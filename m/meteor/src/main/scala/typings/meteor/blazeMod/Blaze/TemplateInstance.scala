@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.TopLevel
 import typings.meteor.Meteor.SubscriptionHandle
 import typings.meteor.Tracker.Computation
 import typings.std.HTMLElement
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TemplateInstance extends js.Object {
-  var data: js.Object
+  var data: Record[String, _]
   var firstNode: js.Object
   var lastNode: js.Object
   var view: js.Object

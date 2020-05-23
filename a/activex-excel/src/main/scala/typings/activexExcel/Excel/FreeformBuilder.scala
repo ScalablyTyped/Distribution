@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.FreeformBuilder")
 @js.native
-class FreeformBuilder protected () extends js.Object {
+trait FreeformBuilder extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Creator: XlCreator = js.native
   @JSName("Excel.FreeformBuilder_typekey")

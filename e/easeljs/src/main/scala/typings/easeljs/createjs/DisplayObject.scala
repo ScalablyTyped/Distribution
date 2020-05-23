@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.DisplayObject")
 @js.native
-class DisplayObject () extends EventDispatcher {
+trait DisplayObject extends EventDispatcher {
   // properties
   var alpha: Double = js.native
   var bitmapCache: BitmapCache = js.native
@@ -85,12 +84,5 @@ class DisplayObject () extends EventDispatcher {
   def updateCache(): Unit = js.native
   def updateCache(compositeOperation: String): Unit = js.native
   def updateContext(ctx: CanvasRenderingContext2D): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("createjs.DisplayObject")
-@js.native
-object DisplayObject extends js.Object {
-  var suppressCrossDomainErrors: Boolean = js.native
 }
 

@@ -66,7 +66,7 @@ trait LoryOptions extends js.Object {
     */
   var infinite: js.UndefOr[Boolean | Double] = js.undefined
   /**
-    * the slide index to show when the slider is initialized (	default: 0 )
+    * the slide index to show when the slider is initialized (    default: 0 )
     */
   var initialIndex: js.UndefOr[Double] = js.undefined
   /**
@@ -110,12 +110,12 @@ object LoryOptions {
     ease: String = null,
     enableMouseEvents: js.UndefOr[Boolean] = js.undefined,
     infinite: Boolean | Double = null,
-    initialIndex: Int | Double = null,
+    initialIndex: js.UndefOr[Double] = js.undefined,
     rewind: js.UndefOr[Boolean] = js.undefined,
-    rewindSpeed: Int | Double = null,
-    slideSpeed: Int | Double = null,
-    slidesToScroll: Int | Double = null,
-    snapBackSpeed: Int | Double = null
+    rewindSpeed: js.UndefOr[Double] = js.undefined,
+    slideSpeed: js.UndefOr[Double] = js.undefined,
+    slidesToScroll: js.UndefOr[Double] = js.undefined,
+    snapBackSpeed: js.UndefOr[Double] = js.undefined
   ): LoryOptions = {
     val __obj = js.Dynamic.literal()
     if (afterInit != null) __obj.updateDynamic("afterInit")(js.Any.fromFunction0(afterInit))
@@ -129,14 +129,14 @@ object LoryOptions {
     if (classNamePrevCtrl != null) __obj.updateDynamic("classNamePrevCtrl")(classNamePrevCtrl.asInstanceOf[js.Any])
     if (classNameSlideContainer != null) __obj.updateDynamic("classNameSlideContainer")(classNameSlideContainer.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents.get.asInstanceOf[js.Any])
     if (infinite != null) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
-    if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind.asInstanceOf[js.Any])
-    if (rewindSpeed != null) __obj.updateDynamic("rewindSpeed")(rewindSpeed.asInstanceOf[js.Any])
-    if (slideSpeed != null) __obj.updateDynamic("slideSpeed")(slideSpeed.asInstanceOf[js.Any])
-    if (slidesToScroll != null) __obj.updateDynamic("slidesToScroll")(slidesToScroll.asInstanceOf[js.Any])
-    if (snapBackSpeed != null) __obj.updateDynamic("snapBackSpeed")(snapBackSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialIndex)) __obj.updateDynamic("initialIndex")(initialIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewindSpeed)) __obj.updateDynamic("rewindSpeed")(rewindSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideSpeed)) __obj.updateDynamic("slideSpeed")(slideSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slidesToScroll)) __obj.updateDynamic("slidesToScroll")(slidesToScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapBackSpeed)) __obj.updateDynamic("snapBackSpeed")(snapBackSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoryOptions]
   }
 }

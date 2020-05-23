@@ -8,30 +8,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.BackgroundTransfer.UploadOperation")
-@js.native
-class UploadOperation () extends IUploadOperation {
-  /* CompleteClass */
-  override var costPolicy: BackgroundTransferCostPolicy = js.native
-  /* CompleteClass */
-  override var group: String = js.native
-  /* CompleteClass */
-  override var guid: String = js.native
-  /* CompleteClass */
-  override var method: String = js.native
-  /* CompleteClass */
-  override var progress: BackgroundUploadProgress = js.native
-  /* CompleteClass */
-  override var requestedUri: Uri = js.native
-  /* CompleteClass */
-  override var sourceFile: IStorageFile = js.native
-  /* CompleteClass */
-  override def attachAsync(): IAsyncOperationWithProgress[UploadOperation, UploadOperation] = js.native
-  /* CompleteClass */
-  override def getResponseInformation(): ResponseInformation = js.native
-  /* CompleteClass */
-  override def getResultStreamAt(position: Double): IInputStream = js.native
-  /* CompleteClass */
-  override def startAsync(): IAsyncOperationWithProgress[UploadOperation, UploadOperation] = js.native
+trait UploadOperation extends IUploadOperation
+
+object UploadOperation {
+  @scala.inline
+  def apply(
+    attachAsync: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation],
+    costPolicy: BackgroundTransferCostPolicy,
+    getResponseInformation: () => ResponseInformation,
+    getResultStreamAt: Double => IInputStream,
+    group: String,
+    guid: String,
+    method: String,
+    progress: BackgroundUploadProgress,
+    requestedUri: Uri,
+    sourceFile: IStorageFile,
+    startAsync: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]
+  ): UploadOperation = {
+    val __obj = js.Dynamic.literal(attachAsync = js.Any.fromFunction0(attachAsync), costPolicy = costPolicy.asInstanceOf[js.Any], getResponseInformation = js.Any.fromFunction0(getResponseInformation), getResultStreamAt = js.Any.fromFunction1(getResultStreamAt), group = group.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], requestedUri = requestedUri.asInstanceOf[js.Any], sourceFile = sourceFile.asInstanceOf[js.Any], startAsync = js.Any.fromFunction0(startAsync))
+    __obj.asInstanceOf[UploadOperation]
+  }
 }
 

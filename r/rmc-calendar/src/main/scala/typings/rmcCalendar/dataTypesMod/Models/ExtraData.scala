@@ -27,7 +27,7 @@ object ExtraData {
     val __obj = js.Dynamic.literal()
     if (cellCls != null) __obj.updateDynamic("cellCls")(cellCls.asInstanceOf[js.Any])
     if (cellRender != null) __obj.updateDynamic("cellRender")(js.Any.fromFunction1(cellRender))
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.get.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraData]
   }

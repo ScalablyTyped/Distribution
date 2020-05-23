@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.CUBEFACE_NEGY
-  * @type {number}
-  * @description The negative Y face of a cubemap.
+  * The negative Y face of a cubemap.
   */
 @JSImport("playcanvas", "CUBEFACE_NEGY")
 @js.native

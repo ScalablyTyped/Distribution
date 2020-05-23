@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.WorksheetData
 import typings.officeJsPreview.Excel.Interfaces.WorksheetLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.WorksheetUpdateData
@@ -8,6 +7,7 @@ import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.After
 import typings.officeJsPreview.officeJsPreviewStrings.Before
 import typings.officeJsPreview.officeJsPreviewStrings.Beginning
@@ -27,26 +27,25 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.Worksheet")
 @js.native
-class Worksheet () extends ClientObject {
+trait Worksheet extends ClientObject {
   /**
     *
-    * Represents the AutoFilter object of the worksheet. Read-Only.
+    * Represents the AutoFilter object of the worksheet.
     *
     * [Api set: ExcelApi 1.9]
     */
   val autoFilter: AutoFilter = js.native
   /**
     *
-    * Returns a collection of charts that are part of the worksheet. Read-only.
+    * Returns a collection of charts that are part of the worksheet.
     *
     * [Api set: ExcelApi 1.1]
     */
   val charts: ChartCollection = js.native
   /**
     *
-    * Returns a collection of all the Comments objects on the worksheet. Read-only.
+    * Returns a collection of all the Comments objects on the worksheet.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -56,7 +55,7 @@ class Worksheet () extends ClientObject {
   var context_Worksheet: RequestContext = js.native
   /**
     *
-    * Returns a collection of worksheet-level custom properties.
+    * Gets a collection of worksheet-level custom properties.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -64,7 +63,7 @@ class Worksheet () extends ClientObject {
   val customProperties: WorksheetCustomPropertyCollection = js.native
   /**
     *
-    * Gets or sets the enableCalculation property of the worksheet.
+    * Determines if Excel should recalculate the worksheet when necessary.
     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *
     * [Api set: ExcelApi 1.9]
@@ -72,7 +71,7 @@ class Worksheet () extends ClientObject {
   var enableCalculation: Boolean = js.native
   /**
     *
-    * Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
+    * Gets an object that can be used to manipulate frozen panes on the worksheet.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -86,7 +85,7 @@ class Worksheet () extends ClientObject {
   val horizontalPageBreaks: PageBreakCollection = js.native
   /**
     *
-    * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+    * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -100,7 +99,7 @@ class Worksheet () extends ClientObject {
   var name: String = js.native
   /**
     *
-    * Collection of names scoped to the current worksheet. Read-only.
+    * Collection of names scoped to the current worksheet.
     *
     * [Api set: ExcelApi 1.4]
     */
@@ -173,10 +172,9 @@ class Worksheet () extends ClientObject {
     *
     * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.11]
     *
     * @eventproperty
-    * @beta
     */
   val onRowHiddenChanged: EventHandlers[WorksheetRowHiddenChangedEventArgs] = js.native
   /**
@@ -217,7 +215,7 @@ class Worksheet () extends ClientObject {
   val pageLayout: PageLayout = js.native
   /**
     *
-    * Collection of PivotTables that are part of the worksheet. Read-only.
+    * Collection of PivotTables that are part of the worksheet.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -231,51 +229,49 @@ class Worksheet () extends ClientObject {
   var position: Double = js.native
   /**
     *
-    * Returns sheet protection object for a worksheet. Read-only.
+    * Returns sheet protection object for a worksheet.
     *
     * [Api set: ExcelApi 1.2]
     */
   val protection: WorksheetProtection = js.native
   /**
     *
-    * Returns the collection of all the Shape objects on the worksheet. Read-only.
+    * Returns the collection of all the Shape objects on the worksheet.
     *
     * [Api set: ExcelApi 1.9]
     */
   val shapes: ShapeCollection = js.native
   /**
     *
-    * Gets or sets the worksheet's gridlines flag.
-    This flag determines whether gridlines are visible to the user.
+    * Specifies if gridlines are visible to the user.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showGridlines: Boolean = js.native
   /**
     *
-    * Gets or sets the worksheet's headings flag.
-    This flag determines whether headings are visible to the user.
+    * Specifies if headings are visible to the user.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showHeadings: Boolean = js.native
   /**
     *
-    * Returns a collection of slicers that are part of the worksheet. Read-only.
+    * Returns a collection of slicers that are part of the worksheet.
     *
     * [Api set: ExcelApi 1.10]
     */
   val slicers: SlicerCollection = js.native
   /**
     *
-    * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+    * Returns the standard (default) height of all the rows in the worksheet, in points.
     *
     * [Api set: ExcelApi 1.7]
     */
   val standardHeight: Double = js.native
   /**
     *
-    * Returns or sets the standard (default) width of all the columns in the worksheet.
+    * Specifies the standard (default) width of all the columns in the worksheet.
     One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
     *
     * [Api set: ExcelApi 1.7]
@@ -283,7 +279,7 @@ class Worksheet () extends ClientObject {
   var standardWidth: Double = js.native
   /**
     *
-    * Gets or sets the worksheet tab color.
+    * The tab color of the worksheet.
     When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
     When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
     *
@@ -292,7 +288,7 @@ class Worksheet () extends ClientObject {
   var tabColor: String = js.native
   /**
     *
-    * Collection of tables that are part of the worksheet. Read-only.
+    * Collection of tables that are part of the worksheet.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -482,7 +478,7 @@ class Worksheet () extends ClientObject {
     */
   def load(): Worksheet = js.native
   def load(options: WorksheetLoadOptions): Worksheet = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Worksheet = js.native
+  def load(propertyNamesAndPaths: Expand): Worksheet = js.native
   def load(propertyNames: String): Worksheet = js.native
   def load(propertyNames: js.Array[String]): Worksheet = js.native
   /**

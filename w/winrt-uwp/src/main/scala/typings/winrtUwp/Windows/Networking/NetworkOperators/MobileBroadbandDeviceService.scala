@@ -6,22 +6,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a mobile broadband device service. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandDeviceService")
-@js.native
-abstract class MobileBroadbandDeviceService () extends js.Object {
+trait MobileBroadbandDeviceService extends js.Object {
   /** Gets the unique device service identity for the mobile broadband device service. */
-  var deviceServiceId: String = js.native
+  var deviceServiceId: String
   /** Gets a list of supported device service commands for the mobile broadband device service. */
-  var supportedCommands: IVectorView[Double] = js.native
+  var supportedCommands: IVectorView[Double]
   /**
     * Opens a new MobileBroadbandDeviceServiceCommandSession for the mobile broadband device service.
     * @return A new command session for the mobile broadband device service.
     */
-  def openCommandSession(): MobileBroadbandDeviceServiceCommandSession = js.native
+  def openCommandSession(): MobileBroadbandDeviceServiceCommandSession
   /**
     * Opens a new MobileBroadbandDeviceServiceDataSession for the mobile broadband device service.
     * @return A new data session for the Mobile Broadband device service.
     */
-  def openDataSession(): MobileBroadbandDeviceServiceDataSession = js.native
+  def openDataSession(): MobileBroadbandDeviceServiceDataSession
+}
+
+object MobileBroadbandDeviceService {
+  @scala.inline
+  def apply(
+    deviceServiceId: String,
+    openCommandSession: () => MobileBroadbandDeviceServiceCommandSession,
+    openDataSession: () => MobileBroadbandDeviceServiceDataSession,
+    supportedCommands: IVectorView[Double]
+  ): MobileBroadbandDeviceService = {
+    val __obj = js.Dynamic.literal(deviceServiceId = deviceServiceId.asInstanceOf[js.Any], openCommandSession = js.Any.fromFunction0(openCommandSession), openDataSession = js.Any.fromFunction0(openDataSession), supportedCommands = supportedCommands.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MobileBroadbandDeviceService]
+  }
 }
 

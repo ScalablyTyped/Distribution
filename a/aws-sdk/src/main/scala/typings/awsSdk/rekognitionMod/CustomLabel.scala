@@ -22,9 +22,9 @@ trait CustomLabel extends js.Object {
 
 object CustomLabel {
   @scala.inline
-  def apply(Confidence: Int | Double = null, Geometry: Geometry = null, Name: String = null): CustomLabel = {
+  def apply(Confidence: js.UndefOr[Percent] = js.undefined, Geometry: Geometry = null, Name: String = null): CustomLabel = {
     val __obj = js.Dynamic.literal()
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
     if (Geometry != null) __obj.updateDynamic("Geometry")(Geometry.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLabel]

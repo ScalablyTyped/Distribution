@@ -1,6 +1,6 @@
 package typings.monacoEditor.mod.languages
 
-import typings.monacoEditor.AnonDocComment
+import typings.monacoEditor.anon.DocComment
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait LanguageConfiguration extends js.Object {
     *
     * @deprecated Will be replaced by a better API soon.
     */
-  var __electricCharacterSupport: js.UndefOr[AnonDocComment] = js.undefined
+  var __electricCharacterSupport: js.UndefOr[DocComment] = js.undefined
   /**
     * Defines what characters must be after the cursor for bracket or quote autoclosing to occur when using the \'languageDefined\' autoclosing setting.
     *
@@ -64,7 +64,7 @@ trait LanguageConfiguration extends js.Object {
 object LanguageConfiguration {
   @scala.inline
   def apply(
-    __electricCharacterSupport: AnonDocComment = null,
+    __electricCharacterSupport: DocComment = null,
     autoCloseBefore: String = null,
     autoClosingPairs: js.Array[IAutoClosingPairConditional] = null,
     brackets: js.Array[CharacterPair] = null,

@@ -11,22 +11,22 @@ trait IError extends IBase {
   /** [Config Option] (String) */
   var field: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of field
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of message
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getMessage: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var message: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of field
-  		* @param field String The new value.
-  		*/
+    * @param field String The new value.
+    */
   var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of message
-  		* @param message String The new value.
-  		*/
+    * @param message String The new value.
+    */
   var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -78,7 +78,7 @@ object IError {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setField != null) __obj.updateDynamic("setField")(js.Any.fromFunction1(setField))
     if (setMessage != null) __obj.updateDynamic("setMessage")(js.Any.fromFunction1(setMessage))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IError]

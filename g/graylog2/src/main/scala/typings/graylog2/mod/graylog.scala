@@ -1,7 +1,7 @@
 package typings.graylog2.mod
 
-import typings.graylog2.FnCall
-import typings.graylog2.ReadonlyGraylogConfig
+import typings.graylog2.anon.FnCall
+import typings.graylog2.anon.ReadonlyGraylogConfig
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import typings.std.Record
@@ -32,12 +32,6 @@ class graylog protected () extends EventEmitter {
   @JSName("warning")
   var warning_Original: FnCall = js.native
   def alert(message: String): Unit = js.native
-  def alert(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def alert(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def alert(
     message: String,
@@ -56,12 +50,6 @@ class graylog protected () extends EventEmitter {
   def alert(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def alert(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def alert(message: Error): Unit = js.native
-  def alert(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def alert(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def alert(
     message: Error,
@@ -80,12 +68,6 @@ class graylog protected () extends EventEmitter {
   def alert(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
-  def alert(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _]
   ): Unit = js.native
   def alert(
@@ -97,12 +79,6 @@ class graylog protected () extends EventEmitter {
   def close(): Unit = js.native
   def close(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   def critical(message: String): Unit = js.native
-  def critical(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def critical(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def critical(
     message: String,
@@ -121,12 +97,6 @@ class graylog protected () extends EventEmitter {
   def critical(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def critical(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def critical(message: Error): Unit = js.native
-  def critical(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def critical(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def critical(
     message: Error,
@@ -145,12 +115,6 @@ class graylog protected () extends EventEmitter {
   def critical(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
-  def critical(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _]
   ): Unit = js.native
   def critical(
@@ -160,12 +124,6 @@ class graylog protected () extends EventEmitter {
     timestamp: Double
   ): Unit = js.native
   def debug(message: String): Unit = js.native
-  def debug(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def debug(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def debug(
     message: String,
@@ -184,12 +142,6 @@ class graylog protected () extends EventEmitter {
   def debug(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def debug(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def debug(message: Error): Unit = js.native
-  def debug(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def debug(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def debug(
     message: Error,
@@ -208,12 +160,6 @@ class graylog protected () extends EventEmitter {
   def debug(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
-  def debug(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _]
   ): Unit = js.native
   def debug(
@@ -223,12 +169,6 @@ class graylog protected () extends EventEmitter {
     timestamp: Double
   ): Unit = js.native
   def emergency(message: String): Unit = js.native
-  def emergency(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def emergency(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def emergency(
     message: String,
@@ -247,12 +187,6 @@ class graylog protected () extends EventEmitter {
   def emergency(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def emergency(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def emergency(message: Error): Unit = js.native
-  def emergency(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def emergency(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def emergency(
     message: Error,
@@ -271,12 +205,6 @@ class graylog protected () extends EventEmitter {
   def emergency(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
-  def emergency(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _]
   ): Unit = js.native
   def emergency(
@@ -286,12 +214,6 @@ class graylog protected () extends EventEmitter {
     timestamp: Double
   ): Unit = js.native
   def error(message: String): Unit = js.native
-  def error(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def error(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def error(
     message: String,
@@ -310,12 +232,6 @@ class graylog protected () extends EventEmitter {
   def error(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def error(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def error(message: Error): Unit = js.native
-  def error(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def error(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def error(
     message: Error,
@@ -334,12 +250,6 @@ class graylog protected () extends EventEmitter {
   def error(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
-  def error(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _]
   ): Unit = js.native
   def error(
@@ -349,12 +259,6 @@ class graylog protected () extends EventEmitter {
     timestamp: Double
   ): Unit = js.native
   def info(message: String): Unit = js.native
-  def info(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def info(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def info(
     message: String,
@@ -373,12 +277,6 @@ class graylog protected () extends EventEmitter {
   def info(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def info(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def info(message: Error): Unit = js.native
-  def info(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def info(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def info(
     message: Error,
@@ -397,12 +295,6 @@ class graylog protected () extends EventEmitter {
   def info(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
-  def info(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _]
   ): Unit = js.native
   def info(
@@ -412,12 +304,6 @@ class graylog protected () extends EventEmitter {
     timestamp: Double
   ): Unit = js.native
   def log(message: String): Unit = js.native
-  def log(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def log(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def log(
     message: String,
@@ -436,12 +322,6 @@ class graylog protected () extends EventEmitter {
   def log(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def log(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def log(message: Error): Unit = js.native
-  def log(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def log(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def log(
     message: Error,
@@ -460,12 +340,6 @@ class graylog protected () extends EventEmitter {
   def log(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
-  def log(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _]
   ): Unit = js.native
   def log(
@@ -475,12 +349,6 @@ class graylog protected () extends EventEmitter {
     timestamp: Double
   ): Unit = js.native
   def notice(message: String): Unit = js.native
-  def notice(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def notice(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def notice(
     message: String,
@@ -499,12 +367,6 @@ class graylog protected () extends EventEmitter {
   def notice(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def notice(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def notice(message: Error): Unit = js.native
-  def notice(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def notice(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def notice(
     message: Error,
@@ -523,12 +385,6 @@ class graylog protected () extends EventEmitter {
   def notice(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
-  def notice(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _]
   ): Unit = js.native
   def notice(
@@ -538,12 +394,6 @@ class graylog protected () extends EventEmitter {
     timestamp: Double
   ): Unit = js.native
   def warn(message: String): Unit = js.native
-  def warn(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def warn(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def warn(
     message: String,
@@ -562,12 +412,6 @@ class graylog protected () extends EventEmitter {
   def warn(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def warn(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def warn(message: Error): Unit = js.native
-  def warn(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def warn(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def warn(
     message: Error,
@@ -586,12 +430,6 @@ class graylog protected () extends EventEmitter {
   def warn(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
-  def warn(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
     additionalFields: Record[String, _]
   ): Unit = js.native
   def warn(
@@ -601,12 +439,6 @@ class graylog protected () extends EventEmitter {
     timestamp: Double
   ): Unit = js.native
   def warning(message: String): Unit = js.native
-  def warning(
-    message: String,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def warning(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def warning(
     message: String,
@@ -625,12 +457,6 @@ class graylog protected () extends EventEmitter {
   def warning(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def warning(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def warning(message: Error): Unit = js.native
-  def warning(
-    message: Error,
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def warning(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
   def warning(
     message: Error,
@@ -646,12 +472,6 @@ class graylog protected () extends EventEmitter {
     timestamp: Double
   ): Unit = js.native
   def warning(message: Record[String, _]): Unit = js.native
-  def warning(
-    message: Record[String, _],
-    _underscore: js.UndefOr[scala.Nothing],
-    additionalFields: js.UndefOr[scala.Nothing],
-    timestamp: Double
-  ): Unit = js.native
   def warning(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],

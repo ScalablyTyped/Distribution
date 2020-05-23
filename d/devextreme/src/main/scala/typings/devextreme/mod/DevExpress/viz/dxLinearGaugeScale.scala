@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonColorLength
+import typings.devextreme.anon.ColorLength
 import typings.devextreme.devextremeStrings.bottom
 import typings.devextreme.devextremeStrings.center
 import typings.devextreme.devextremeStrings.left
@@ -26,30 +26,30 @@ object dxLinearGaugeScale {
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     customMinorTicks: js.Array[Double] = null,
     customTicks: js.Array[Double] = null,
-    endValue: Int | Double = null,
+    endValue: js.UndefOr[Double] = js.undefined,
     horizontalOrientation: center | left | right = null,
     label: dxLinearGaugeScaleLabel = null,
-    minorTick: AnonColorLength = null,
-    minorTickInterval: Int | Double = null,
-    scaleDivisionFactor: Int | Double = null,
-    startValue: Int | Double = null,
-    tick: AnonColorLength = null,
-    tickInterval: Int | Double = null,
+    minorTick: ColorLength = null,
+    minorTickInterval: js.UndefOr[Double] = js.undefined,
+    scaleDivisionFactor: js.UndefOr[Double] = js.undefined,
+    startValue: js.UndefOr[Double] = js.undefined,
+    tick: ColorLength = null,
+    tickInterval: js.UndefOr[Double] = js.undefined,
     verticalOrientation: bottom | center | top = null
   ): dxLinearGaugeScale = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.get.asInstanceOf[js.Any])
     if (customMinorTicks != null) __obj.updateDynamic("customMinorTicks")(customMinorTicks.asInstanceOf[js.Any])
     if (customTicks != null) __obj.updateDynamic("customTicks")(customTicks.asInstanceOf[js.Any])
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(endValue)) __obj.updateDynamic("endValue")(endValue.get.asInstanceOf[js.Any])
     if (horizontalOrientation != null) __obj.updateDynamic("horizontalOrientation")(horizontalOrientation.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
-    if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
-    if (scaleDivisionFactor != null) __obj.updateDynamic("scaleDivisionFactor")(scaleDivisionFactor.asInstanceOf[js.Any])
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTickInterval)) __obj.updateDynamic("minorTickInterval")(minorTickInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleDivisionFactor)) __obj.updateDynamic("scaleDivisionFactor")(scaleDivisionFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startValue)) __obj.updateDynamic("startValue")(startValue.get.asInstanceOf[js.Any])
     if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickInterval)) __obj.updateDynamic("tickInterval")(tickInterval.get.asInstanceOf[js.Any])
     if (verticalOrientation != null) __obj.updateDynamic("verticalOrientation")(verticalOrientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxLinearGaugeScale]
   }

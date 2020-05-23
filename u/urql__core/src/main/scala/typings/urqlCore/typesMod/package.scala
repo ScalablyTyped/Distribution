@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
+  type DebugEvent[T /* <: typings.urqlCore.urqlCoreStrings.cacheHit | typings.urqlCore.urqlCoreStrings.cacheInvalidation | typings.urqlCore.urqlCoreStrings.fetchRequest | typings.urqlCore.urqlCoreStrings.fetchSuccess | typings.urqlCore.urqlCoreStrings.fetchError | typings.urqlCore.urqlCoreStrings.retryRetrying | java.lang.String */] = typings.urqlCore.typesMod.DebugEventArg[T] with typings.urqlCore.anon.Source
+  type DebugEventArg[T /* <: typings.urqlCore.urqlCoreStrings.cacheHit | typings.urqlCore.urqlCoreStrings.cacheInvalidation | typings.urqlCore.urqlCoreStrings.fetchRequest | typings.urqlCore.urqlCoreStrings.fetchSuccess | typings.urqlCore.urqlCoreStrings.fetchError | typings.urqlCore.urqlCoreStrings.retryRetrying | java.lang.String */] = typings.urqlCore.anon.Message[T] with (typings.urqlCore.anon.DataAny | typings.urqlCore.anon.Data[T])
   type Exchange = js.Function1[
     /* input */ typings.urqlCore.typesMod.ExchangeInput, 
     typings.urqlCore.typesMod.ExchangeIO
@@ -13,6 +15,5 @@ package object typesMod {
     /* ops$ */ typings.wonka.wonkaTypesGenMod.sourceT[typings.urqlCore.typesMod.Operation], 
     typings.wonka.wonkaTypesGenMod.sourceT[typings.urqlCore.typesMod.OperationResult[js.Any]]
   ]
-  type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
-  type PromisifiedSource[T] = typings.wonka.wonkaTypesGenMod.sourceT[T] with typings.urqlCore.AnonToPromise[T]
+  type PromisifiedSource[T] = typings.wonka.wonkaTypesGenMod.sourceT[T] with typings.urqlCore.anon.ToPromise[T]
 }

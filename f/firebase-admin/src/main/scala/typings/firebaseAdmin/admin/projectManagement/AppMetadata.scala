@@ -34,7 +34,7 @@ trait AppMetadata extends js.Object {
     * var platform = AppPlatform.ANDROID;
     * ```
     */
-  var platform: AppPlatform
+  var platform: typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AppPlatform
   /**
     * The globally unique, user-assigned ID of the parent project for the app.
     *
@@ -61,7 +61,7 @@ object AppMetadata {
   @scala.inline
   def apply(
     appId: String,
-    platform: AppPlatform,
+    platform: typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AppPlatform,
     projectId: String,
     resourceName: String,
     displayName: String = null

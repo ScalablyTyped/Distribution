@@ -39,14 +39,14 @@ trait Stack[T] extends Indexed[T] {
     * not filtering out any values.
     */
   @JSName("filter")
-  def filter_F_T_Set_[F /* <: T */](
+  def filter_F_T_Set[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean]
-  ): Set_[F] = js.native
+  ): Set[F] = js.native
   @JSName("filter")
-  def filter_F_T_Set_[F /* <: T */](
+  def filter_F_T_Set[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
-  ): Set_[F] = js.native
+  ): Set[F] = js.native
   // Reading values
   /**
     * Alias for `Stack.first()`.
@@ -103,20 +103,5 @@ trait Stack[T] extends Indexed[T] {
     * @see `Map#withMutations`
     */
   def withMutations(mutator: js.Function1[/* mutable */ this.type, _]): this.type = js.native
-}
-
-@JSGlobal("Immutable.Stack")
-@js.native
-object Stack extends js.Object {
-  def apply(): Stack[_] = js.native
-  def apply[T](collection: Iterable[T]): Stack[T] = js.native
-  /**
-    * True if the provided value is a Stack
-    */
-  def isStack(maybeStack: js.Any): /* is immutable.Immutable.Stack<any> */ Boolean = js.native
-  /**
-    * Creates a new Stack containing `values`.
-    */
-  def of[T](values: T*): Stack[T] = js.native
 }
 

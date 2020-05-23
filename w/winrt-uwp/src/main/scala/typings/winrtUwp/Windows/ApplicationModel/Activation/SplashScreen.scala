@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides a dismissal event and image location information for the app's splash screen. */
-@JSGlobal("Windows.ApplicationModel.Activation.SplashScreen")
 @js.native
-abstract class SplashScreen () extends js.Object {
+trait SplashScreen extends js.Object {
   /** The coordinates of the app's splash screen image relative to the window. */
   var imageLocation: Rect = js.native
   /** Fires when the app's splash screen is dismissed. */

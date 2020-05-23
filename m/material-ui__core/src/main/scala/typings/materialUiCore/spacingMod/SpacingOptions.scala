@@ -12,9 +12,9 @@ trait SpacingOptions extends js.Object {
 
 object SpacingOptions {
   @scala.inline
-  def apply(unit: Int | Double = null): SpacingOptions = {
+  def apply(unit: js.UndefOr[Double] = js.undefined): SpacingOptions = {
     val __obj = js.Dynamic.literal()
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (!js.isUndefined(unit)) __obj.updateDynamic("unit")(unit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpacingOptions]
   }
 }

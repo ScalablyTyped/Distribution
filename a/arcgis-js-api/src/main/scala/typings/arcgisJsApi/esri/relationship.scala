@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -100,7 +99,14 @@ trait relationship extends js.Object {
   def updateRenderer(params: relationshipUpdateRendererParams): js.Promise[UniqueValueRenderer]
 }
 
-@JSGlobal("__esri.relationship")
-@js.native
-object relationship extends TopLevel[relationship]
+object relationship {
+  @scala.inline
+  def apply(
+    createRenderer: relationshipCreateRendererParams => js.Promise[relationshipRendererResult],
+    updateRenderer: relationshipUpdateRendererParams => js.Promise[UniqueValueRenderer]
+  ): relationship = {
+    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer), updateRenderer = js.Any.fromFunction1(updateRenderer))
+    __obj.asInstanceOf[relationship]
+  }
+}
 

@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonFiles
+import typings.antDesignReactNative.anon.Files
 import typings.antDesignReactNative.imagePickerMod.ImagePickerProps
 import typings.antDesignReactNative.imagePickerMod.default
 import scala.scalajs.js
@@ -17,6 +17,6 @@ class ImagePicker protected () extends default {
 @JSImport("@ant-design/react-native", "ImagePicker")
 @js.native
 object ImagePicker extends js.Object {
-  var defaultProps: AnonFiles = js.native
+  var defaultProps: Files = js.native
 }
 

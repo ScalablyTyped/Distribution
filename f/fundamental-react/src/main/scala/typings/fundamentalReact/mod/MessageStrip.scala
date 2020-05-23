@@ -1,7 +1,7 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.PartialMessageStripProps
-import typings.fundamentalReact.WeakValidationMapMessageS
+import typings.fundamentalReact.anon.PartialMessageStripProps
+import typings.fundamentalReact.anon.WeakValidationMapMessageS
 import typings.fundamentalReact.messageStripMod.MessageStripProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

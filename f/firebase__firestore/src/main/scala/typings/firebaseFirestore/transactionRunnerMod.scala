@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/transaction_runner", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/transaction_runner", JSImport.Namespace)
 @js.native
 object transactionRunnerMod extends js.Object {
   @js.native

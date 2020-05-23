@@ -32,7 +32,7 @@ object ServiceOptions {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(probe)) __obj.updateDynamic("probe")(probe.asInstanceOf[js.Any])
+    if (!js.isUndefined(probe)) __obj.updateDynamic("probe")(probe.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (subtypes != null) __obj.updateDynamic("subtypes")(subtypes.asInstanceOf[js.Any])
     if (txt != null) __obj.updateDynamic("txt")(txt.asInstanceOf[js.Any])

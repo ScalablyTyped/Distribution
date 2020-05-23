@@ -32,19 +32,19 @@ object PointRegionMouseMoveEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    locationX: Int | Double = null,
-    locationY: Int | Double = null,
+    locationX: js.UndefOr[Double] = js.undefined,
+    locationY: js.UndefOr[Double] = js.undefined,
     model: js.Any = null,
-    pointIndex: Int | Double = null,
+    pointIndex: js.UndefOr[Double] = js.undefined,
     seriesType: String = null,
     `type`: String = null
   ): PointRegionMouseMoveEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (locationX != null) __obj.updateDynamic("locationX")(locationX.asInstanceOf[js.Any])
-    if (locationY != null) __obj.updateDynamic("locationY")(locationY.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationX)) __obj.updateDynamic("locationX")(locationX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationY)) __obj.updateDynamic("locationY")(locationY.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (pointIndex != null) __obj.updateDynamic("pointIndex")(pointIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointIndex)) __obj.updateDynamic("pointIndex")(pointIndex.get.asInstanceOf[js.Any])
     if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointRegionMouseMoveEventArgs]

@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.imageRollMod
 
-import typings.antDesignReactNative.AnonCameraPickerProps
+import typings.antDesignReactNative.anon.CameraPickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends ImageRoll
 @JSImport("@ant-design/react-native/lib/image-picker/ImageRoll", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonCameraPickerProps = js.native
+  var defaultProps: CameraPickerProps = js.native
 }
 

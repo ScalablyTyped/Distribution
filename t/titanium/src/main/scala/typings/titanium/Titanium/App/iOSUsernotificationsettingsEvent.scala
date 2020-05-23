@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the user notification settings are registered.
-		 */
+  * Fired when the user notification settings are registered.
+  */
 trait iOSUsernotificationsettingsEvent extends iOSBaseEvent {
   /**
-  			 * Set of categories of user notification actions the application is registered to use.
-  			 */
+    * Set of categories of user notification actions the application is registered to use.
+    */
   var categories: js.Array[UserNotificationCategory]
   /**
-  			 * Notification types the application is registered to use.
-  			 */
+    * Notification types the application is registered to use.
+    */
   var types: js.Array[Double]
 }
 

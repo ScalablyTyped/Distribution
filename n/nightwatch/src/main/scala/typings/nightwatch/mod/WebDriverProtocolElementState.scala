@@ -1,6 +1,6 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.AnonHeight
+import typings.nightwatch.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +65,7 @@ trait WebDriverProtocolElementState extends js.Object {
   def elementIdSize(id: String): this.type = js.native
   def elementIdSize(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonHeight], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Height], Unit]
   ): this.type = js.native
   /**
     * Returns the visible text for the element.

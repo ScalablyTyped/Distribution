@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to add an RTF formatted content in the selected position.
   */
-@JSGlobal("InsertRtfCommand")
 @js.native
-class InsertRtfCommand () extends CommandWithSimpleStateBase {
+trait InsertRtfCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the InsertRtfCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param rtfText A string representing the RTF formatted content to insert.

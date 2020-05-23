@@ -72,36 +72,36 @@ object AppXOptions {
   def apply(
     addAutoLaunchExtension: js.UndefOr[Boolean] = js.undefined,
     applicationId: String = null,
-    artifactName: String = null,
-    backgroundColor: String = null,
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    backgroundColor: js.UndefOr[Null | String] = js.undefined,
     customExtensionsPath: String = null,
-    displayName: String = null,
+    displayName: js.UndefOr[Null | String] = js.undefined,
     electronUpdaterAware: js.UndefOr[Boolean] = js.undefined,
-    identityName: String = null,
-    languages: js.Array[String] | String = null,
-    makeappxArgs: js.Array[String] = null,
-    publish: Publish = null,
-    publisher: String = null,
-    publisherDisplayName: String = null,
+    identityName: js.UndefOr[Null | String] = js.undefined,
+    languages: js.UndefOr[Null | js.Array[String] | String] = js.undefined,
+    makeappxArgs: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
+    publisher: js.UndefOr[Null | String] = js.undefined,
+    publisherDisplayName: js.UndefOr[Null | String] = js.undefined,
     setBuildNumber: js.UndefOr[Boolean] = js.undefined,
     showNameOnTiles: js.UndefOr[Boolean] = js.undefined
   ): AppXOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addAutoLaunchExtension)) __obj.updateDynamic("addAutoLaunchExtension")(addAutoLaunchExtension.asInstanceOf[js.Any])
+    if (!js.isUndefined(addAutoLaunchExtension)) __obj.updateDynamic("addAutoLaunchExtension")(addAutoLaunchExtension.get.asInstanceOf[js.Any])
     if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (customExtensionsPath != null) __obj.updateDynamic("customExtensionsPath")(customExtensionsPath.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(electronUpdaterAware)) __obj.updateDynamic("electronUpdaterAware")(electronUpdaterAware.asInstanceOf[js.Any])
-    if (identityName != null) __obj.updateDynamic("identityName")(identityName.asInstanceOf[js.Any])
-    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (makeappxArgs != null) __obj.updateDynamic("makeappxArgs")(makeappxArgs.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (publisherDisplayName != null) __obj.updateDynamic("publisherDisplayName")(publisherDisplayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(setBuildNumber)) __obj.updateDynamic("setBuildNumber")(setBuildNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNameOnTiles)) __obj.updateDynamic("showNameOnTiles")(showNameOnTiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayName)) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(electronUpdaterAware)) __obj.updateDynamic("electronUpdaterAware")(electronUpdaterAware.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(identityName)) __obj.updateDynamic("identityName")(identityName.asInstanceOf[js.Any])
+    if (!js.isUndefined(languages)) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
+    if (!js.isUndefined(makeappxArgs)) __obj.updateDynamic("makeappxArgs")(makeappxArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisher)) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherDisplayName)) __obj.updateDynamic("publisherDisplayName")(publisherDisplayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBuildNumber)) __obj.updateDynamic("setBuildNumber")(setBuildNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNameOnTiles)) __obj.updateDynamic("showNameOnTiles")(showNameOnTiles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppXOptions]
   }
 }

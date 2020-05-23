@@ -53,19 +53,19 @@ object ScaleRangeSliderViewModelProperties {
   @scala.inline
   def apply(
     layer: LayerProperties = null,
-    maxScale: Int | Double = null,
-    maxScaleLimit: Int | Double = null,
-    minScale: Int | Double = null,
-    minScaleLimit: Int | Double = null,
+    maxScale: js.UndefOr[Double] = js.undefined,
+    maxScaleLimit: js.UndefOr[Double] = js.undefined,
+    minScale: js.UndefOr[Double] = js.undefined,
+    minScaleLimit: js.UndefOr[Double] = js.undefined,
     sliderViewModel: SliderViewModelProperties = null,
     view: MapViewProperties | SceneViewProperties = null
   ): ScaleRangeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (maxScaleLimit != null) __obj.updateDynamic("maxScaleLimit")(maxScaleLimit.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (minScaleLimit != null) __obj.updateDynamic("minScaleLimit")(minScaleLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScale)) __obj.updateDynamic("maxScale")(maxScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScaleLimit)) __obj.updateDynamic("maxScaleLimit")(maxScaleLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScale)) __obj.updateDynamic("minScale")(minScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScaleLimit)) __obj.updateDynamic("minScaleLimit")(minScaleLimit.get.asInstanceOf[js.Any])
     if (sliderViewModel != null) __obj.updateDynamic("sliderViewModel")(sliderViewModel.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleRangeSliderViewModelProperties]

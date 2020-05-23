@@ -28,13 +28,13 @@ object DescribeSpotFleetInstancesRequest {
   @scala.inline
   def apply(
     SpotFleetRequestId: SpotFleetRequestId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    MaxResults: Int | scala.Double = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    MaxResults: js.UndefOr[DescribeSpotFleetInstancesMaxResults] = js.undefined,
     NextToken: String = null
   ): DescribeSpotFleetInstancesRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestId = SpotFleetRequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSpotFleetInstancesRequest]
   }

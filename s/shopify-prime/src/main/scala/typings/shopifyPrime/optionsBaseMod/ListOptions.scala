@@ -13,11 +13,15 @@ trait ListOptions extends BasicListOptions {
 
 object ListOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, page: Int | Double = null, since_id: Int | Double = null): ListOptions = {
+  def apply(
+    limit: js.UndefOr[Double] = js.undefined,
+    page: js.UndefOr[Double] = js.undefined,
+    since_id: js.UndefOr[Double] = js.undefined
+  ): ListOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (since_id != null) __obj.updateDynamic("since_id")(since_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(since_id)) __obj.updateDynamic("since_id")(since_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOptions]
   }
 }

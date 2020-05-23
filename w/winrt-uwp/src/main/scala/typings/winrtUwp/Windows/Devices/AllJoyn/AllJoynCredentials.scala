@@ -7,16 +7,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Defines properties used when passing credentials during authentication. */
-@JSGlobal("Windows.Devices.AllJoyn.AllJoynCredentials")
-@js.native
-abstract class AllJoynCredentials () extends js.Object {
+trait AllJoynCredentials extends js.Object {
   /** The mechanism used for credential authentication. */
-  var authenticationMechanism: AllJoynAuthenticationMechanism = js.native
+  var authenticationMechanism: AllJoynAuthenticationMechanism
   /** The cryptography certificate used for the Rsa and EcdheEcdsa authentication mechanisms. */
-  var certificate: Certificate = js.native
+  var certificate: Certificate
   /** The user name, if any, and password used for authentication. */
-  var passwordCredential: PasswordCredential = js.native
+  var passwordCredential: PasswordCredential
   /** The period of time before provided credentials expire. */
-  var timeout: Double = js.native
+  var timeout: Double
+}
+
+object AllJoynCredentials {
+  @scala.inline
+  def apply(
+    authenticationMechanism: AllJoynAuthenticationMechanism,
+    certificate: Certificate,
+    passwordCredential: PasswordCredential,
+    timeout: Double
+  ): AllJoynCredentials = {
+    val __obj = js.Dynamic.literal(authenticationMechanism = authenticationMechanism.asInstanceOf[js.Any], certificate = certificate.asInstanceOf[js.Any], passwordCredential = passwordCredential.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AllJoynCredentials]
+  }
 }
 

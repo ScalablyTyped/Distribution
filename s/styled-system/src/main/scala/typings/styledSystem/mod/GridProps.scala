@@ -32,33 +32,39 @@ trait GridProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object GridProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    gridArea: ResponsiveValue[GridAreaProperty, ThemeType] = null,
-    gridAutoColumns: ResponsiveValue[GridAutoColumnsProperty[TLengthStyledSystem], ThemeType] = null,
-    gridAutoFlow: ResponsiveValue[GridAutoFlowProperty, ThemeType] = null,
-    gridAutoRows: ResponsiveValue[GridAutoRowsProperty[TLengthStyledSystem], ThemeType] = null,
-    gridColumn: ResponsiveValue[GridColumnProperty, ThemeType] = null,
-    gridColumnGap: ResponsiveValue[GridColumnGapProperty[TLengthStyledSystem], ThemeType] = null,
-    gridGap: ResponsiveValue[GridGapProperty[TLengthStyledSystem], ThemeType] = null,
-    gridRow: ResponsiveValue[GridRowProperty, ThemeType] = null,
-    gridRowGap: ResponsiveValue[GridRowGapProperty[TLengthStyledSystem], ThemeType] = null,
-    gridTemplateAreas: ResponsiveValue[GridTemplateAreasProperty, ThemeType] = null,
-    gridTemplateColumns: ResponsiveValue[GridTemplateColumnsProperty[TLengthStyledSystem], ThemeType] = null,
-    gridTemplateRows: ResponsiveValue[GridTemplateRowsProperty[TLengthStyledSystem], ThemeType] = null
+  def apply[ThemeType](
+    gridArea: js.UndefOr[Null | (ResponsiveValue[GridAreaProperty, ThemeType])] = js.undefined,
+    gridAutoColumns: js.UndefOr[
+      Null | (ResponsiveValue[GridAutoColumnsProperty[TLengthStyledSystem], ThemeType])
+    ] = js.undefined,
+    gridAutoFlow: js.UndefOr[Null | (ResponsiveValue[GridAutoFlowProperty, ThemeType])] = js.undefined,
+    gridAutoRows: js.UndefOr[Null | (ResponsiveValue[GridAutoRowsProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    gridColumn: js.UndefOr[Null | (ResponsiveValue[GridColumnProperty, ThemeType])] = js.undefined,
+    gridColumnGap: js.UndefOr[Null | (ResponsiveValue[GridColumnGapProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    gridGap: js.UndefOr[Null | (ResponsiveValue[GridGapProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    gridRow: js.UndefOr[Null | (ResponsiveValue[GridRowProperty, ThemeType])] = js.undefined,
+    gridRowGap: js.UndefOr[Null | (ResponsiveValue[GridRowGapProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    gridTemplateAreas: js.UndefOr[Null | (ResponsiveValue[GridTemplateAreasProperty, ThemeType])] = js.undefined,
+    gridTemplateColumns: js.UndefOr[
+      Null | (ResponsiveValue[GridTemplateColumnsProperty[TLengthStyledSystem], ThemeType])
+    ] = js.undefined,
+    gridTemplateRows: js.UndefOr[
+      Null | (ResponsiveValue[GridTemplateRowsProperty[TLengthStyledSystem], ThemeType])
+    ] = js.undefined
   ): GridProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (gridAutoColumns != null) __obj.updateDynamic("gridAutoColumns")(gridAutoColumns.asInstanceOf[js.Any])
-    if (gridAutoFlow != null) __obj.updateDynamic("gridAutoFlow")(gridAutoFlow.asInstanceOf[js.Any])
-    if (gridAutoRows != null) __obj.updateDynamic("gridAutoRows")(gridAutoRows.asInstanceOf[js.Any])
-    if (gridColumn != null) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
-    if (gridColumnGap != null) __obj.updateDynamic("gridColumnGap")(gridColumnGap.asInstanceOf[js.Any])
-    if (gridGap != null) __obj.updateDynamic("gridGap")(gridGap.asInstanceOf[js.Any])
-    if (gridRow != null) __obj.updateDynamic("gridRow")(gridRow.asInstanceOf[js.Any])
-    if (gridRowGap != null) __obj.updateDynamic("gridRowGap")(gridRowGap.asInstanceOf[js.Any])
-    if (gridTemplateAreas != null) __obj.updateDynamic("gridTemplateAreas")(gridTemplateAreas.asInstanceOf[js.Any])
-    if (gridTemplateColumns != null) __obj.updateDynamic("gridTemplateColumns")(gridTemplateColumns.asInstanceOf[js.Any])
-    if (gridTemplateRows != null) __obj.updateDynamic("gridTemplateRows")(gridTemplateRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridArea)) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridAutoColumns)) __obj.updateDynamic("gridAutoColumns")(gridAutoColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridAutoFlow)) __obj.updateDynamic("gridAutoFlow")(gridAutoFlow.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridAutoRows)) __obj.updateDynamic("gridAutoRows")(gridAutoRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridColumn)) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridColumnGap)) __obj.updateDynamic("gridColumnGap")(gridColumnGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridGap)) __obj.updateDynamic("gridGap")(gridGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridRow)) __obj.updateDynamic("gridRow")(gridRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridRowGap)) __obj.updateDynamic("gridRowGap")(gridRowGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridTemplateAreas)) __obj.updateDynamic("gridTemplateAreas")(gridTemplateAreas.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridTemplateColumns)) __obj.updateDynamic("gridTemplateColumns")(gridTemplateColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridTemplateRows)) __obj.updateDynamic("gridTemplateRows")(gridTemplateRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps[ThemeType]]
   }
 }

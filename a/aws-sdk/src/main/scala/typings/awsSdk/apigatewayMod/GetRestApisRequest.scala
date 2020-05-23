@@ -18,9 +18,9 @@ trait GetRestApisRequest extends js.Object {
 
 object GetRestApisRequest {
   @scala.inline
-  def apply(limit: Int | scala.Double = null, position: String = null): GetRestApisRequest = {
+  def apply(limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetRestApisRequest = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRestApisRequest]
   }

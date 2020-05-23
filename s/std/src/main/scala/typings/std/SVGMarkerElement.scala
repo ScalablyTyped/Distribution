@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,16 +59,5 @@ trait SVGMarkerElement
   ): Unit = js.native
   def setOrientToAngle(angle: SVGAngle): Unit = js.native
   def setOrientToAuto(): Unit = js.native
-}
-
-@JSGlobal("SVGMarkerElement")
-@js.native
-object SVGMarkerElement extends Instantiable0[SVGMarkerElement] {
-  val SVG_MARKERUNITS_STROKEWIDTH: Double = js.native
-  val SVG_MARKERUNITS_UNKNOWN: Double = js.native
-  val SVG_MARKERUNITS_USERSPACEONUSE: Double = js.native
-  val SVG_MARKER_ORIENT_ANGLE: Double = js.native
-  val SVG_MARKER_ORIENT_AUTO: Double = js.native
-  val SVG_MARKER_ORIENT_UNKNOWN: Double = js.native
 }
 

@@ -83,7 +83,7 @@ trait KPainter extends js.Object {
   var rightDoubleClickZoomRate: Double = js.native
   // # Basic Editor
   /**
-  	* The can - not - store step(freeTransform, brush) will generate a step image.If the step images' count over `stepImgsGCThreshold`, oldest not protected one would be GC.
+    * The can - not - store step(freeTransform, brush) will generate a step image.If the step images' count over `stepImgsGCThreshold`, oldest not protected one would be GC.
     
     * Syntax:* `.stepImgsGCThreshold = 10;`
     */
@@ -918,12 +918,5 @@ trait KPainter extends js.Object {
   def updateUIOnResize(): Unit = js.native
   def updateUIOnResize(isLazy: Boolean): Unit = js.native
   def updateUIOnResize(isLazy: Boolean, callback: js.Function0[Unit]): Unit = js.native
-}
-
-@JSGlobal("KPainter")
-@js.native
-object KPainter extends js.Object {
-  def apply(): Unit = js.native
-  def apply(mbcKey: String): Unit = js.native
 }
 

@@ -12,15 +12,15 @@ object PaginationLocaleOptions {
   @scala.inline
   def apply(
     country: String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     locale: String = null,
-    offset: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined
   ): PaginationLocaleOptions = {
     val __obj = js.Dynamic.literal()
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationLocaleOptions]
   }
 }

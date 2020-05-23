@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ArcRotateCameraGamepadInput")
 @js.native
-class ArcRotateCameraGamepadInput () extends ICameraInput[ArcRotateCamera] {
+trait ArcRotateCameraGamepadInput extends ICameraInput[ArcRotateCamera] {
   var _onGamepadConnectedObserver: js.Any = js.native
   var _onGamepadDisconnectedObserver: js.Any = js.native
   var _yAxisScale: js.Any = js.native

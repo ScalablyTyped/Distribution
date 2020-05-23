@@ -1,6 +1,6 @@
 package typings.angularCommon.testingTestingMod
 
-import typings.angularCommon.AnonStatusText
+import typings.angularCommon.anon.StatusText
 import typings.angularCommon.httpHttpMod.HttpEvent
 import typings.angularCommon.httpMod.HttpRequest
 import typings.rxjs.typesMod.Observer
@@ -25,7 +25,7 @@ class TestRequest protected () extends js.Object {
     * Resolve the request by returning an `ErrorEvent` (e.g. simulating a network failure).
     */
   def error(error: ErrorEvent): Unit = js.native
-  def error(error: ErrorEvent, opts: AnonStatusText): Unit = js.native
+  def error(error: ErrorEvent, opts: StatusText): Unit = js.native
   /**
     * Deliver an arbitrary `HttpEvent` (such as a progress event) on the response stream for this
     * request.
@@ -33,14 +33,14 @@ class TestRequest protected () extends js.Object {
   def event(event: HttpEvent[_]): Unit = js.native
   def flush(): Unit = js.native
   def flush(body: String): Unit = js.native
-  def flush(body: String, opts: AnonStatusText): Unit = js.native
+  def flush(body: String, opts: StatusText): Unit = js.native
   def flush(body: js.Array[String | Double | js.Object | Null]): Unit = js.native
-  def flush(body: js.Array[String | Double | js.Object | Null], opts: AnonStatusText): Unit = js.native
+  def flush(body: js.Array[String | Double | js.Object | Null], opts: StatusText): Unit = js.native
   def flush(body: js.Object): Unit = js.native
-  def flush(body: js.Object, opts: AnonStatusText): Unit = js.native
+  def flush(body: js.Object, opts: StatusText): Unit = js.native
   def flush(body: Double): Unit = js.native
-  def flush(body: Double, opts: AnonStatusText): Unit = js.native
-  def flush(body: Null, opts: AnonStatusText): Unit = js.native
+  def flush(body: Double, opts: StatusText): Unit = js.native
+  def flush(body: Null, opts: StatusText): Unit = js.native
   /**
     * Resolve the request by returning a body plus additional HTTP information (such as response
     * headers) if provided.
@@ -50,8 +50,8 @@ class TestRequest protected () extends js.Object {
     * Both successful and unsuccessful responses can be delivered via `flush()`.
     */
   def flush(body: ArrayBuffer): Unit = js.native
-  def flush(body: ArrayBuffer, opts: AnonStatusText): Unit = js.native
+  def flush(body: ArrayBuffer, opts: StatusText): Unit = js.native
   def flush(body: Blob): Unit = js.native
-  def flush(body: Blob, opts: AnonStatusText): Unit = js.native
+  def flush(body: Blob, opts: StatusText): Unit = js.native
 }
 

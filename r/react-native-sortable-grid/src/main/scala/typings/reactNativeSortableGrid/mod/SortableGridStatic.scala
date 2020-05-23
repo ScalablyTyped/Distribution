@@ -1,7 +1,7 @@
 package typings.reactNativeSortableGrid.mod
 
 import typings.react.mod.ClassicComponentClass
-import typings.reactNativeSortableGrid.AnonDeleteModeOn
+import typings.reactNativeSortableGrid.anon.DeleteModeOn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ trait SortableGridStatic extends ClassicComponentClass[SortableGridProps] {
   /**
     * Calling this will toggle item deletion mode on/off.
     */
-  def toggleDeleteMode(): AnonDeleteModeOn = js.native
+  def toggleDeleteMode(): DeleteModeOn = js.native
 }
 

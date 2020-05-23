@@ -27,17 +27,17 @@ object OverlayPosition {
   @scala.inline
   def apply(
     anchorCell: GridCoordinate = null,
-    heightPixels: Int | Double = null,
-    offsetXPixels: Int | Double = null,
-    offsetYPixels: Int | Double = null,
-    widthPixels: Int | Double = null
+    heightPixels: js.UndefOr[Double] = js.undefined,
+    offsetXPixels: js.UndefOr[Double] = js.undefined,
+    offsetYPixels: js.UndefOr[Double] = js.undefined,
+    widthPixels: js.UndefOr[Double] = js.undefined
   ): OverlayPosition = {
     val __obj = js.Dynamic.literal()
     if (anchorCell != null) __obj.updateDynamic("anchorCell")(anchorCell.asInstanceOf[js.Any])
-    if (heightPixels != null) __obj.updateDynamic("heightPixels")(heightPixels.asInstanceOf[js.Any])
-    if (offsetXPixels != null) __obj.updateDynamic("offsetXPixels")(offsetXPixels.asInstanceOf[js.Any])
-    if (offsetYPixels != null) __obj.updateDynamic("offsetYPixels")(offsetYPixels.asInstanceOf[js.Any])
-    if (widthPixels != null) __obj.updateDynamic("widthPixels")(widthPixels.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightPixels)) __obj.updateDynamic("heightPixels")(heightPixels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetXPixels)) __obj.updateDynamic("offsetXPixels")(offsetXPixels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetYPixels)) __obj.updateDynamic("offsetYPixels")(offsetYPixels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthPixels)) __obj.updateDynamic("widthPixels")(widthPixels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayPosition]
   }
 }

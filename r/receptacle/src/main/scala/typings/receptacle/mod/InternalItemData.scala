@@ -12,11 +12,15 @@ trait InternalItemData[X] extends js.Object {
 
 object InternalItemData {
   @scala.inline
-  def apply[X](expires: Int | Double = null, meta: X = null, refresh: Int | Double = null): InternalItemData[X] = {
+  def apply[X](
+    expires: js.UndefOr[Double] = js.undefined,
+    meta: X = null,
+    refresh: js.UndefOr[Double] = js.undefined
+  ): InternalItemData[X] = {
     val __obj = js.Dynamic.literal()
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (refresh != null) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalItemData[X]]
   }
 }

@@ -102,36 +102,36 @@ object Options {
   def apply(
     allowWarmUp: js.UndefOr[Boolean] = js.undefined,
     cache: js.UndefOr[Boolean] = js.undefined,
-    capacity: Int | Double = null,
+    capacity: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     errorFilter: () => Boolean = null,
-    errorThresholdPercentage: Int | Double = null,
+    errorThresholdPercentage: js.UndefOr[Double] = js.undefined,
     group: String = null,
-    maxFailures: Int | Double = null,
+    maxFailures: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    resetTimeout: Int | Double = null,
-    rollingCountBuckets: Int | Double = null,
-    rollingCountTimeout: Int | Double = null,
+    resetTimeout: js.UndefOr[Double] = js.undefined,
+    rollingCountBuckets: js.UndefOr[Double] = js.undefined,
+    rollingCountTimeout: js.UndefOr[Double] = js.undefined,
     rollingPercentilesEnabled: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    volumeThreshold: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined,
+    volumeThreshold: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowWarmUp)) __obj.updateDynamic("allowWarmUp")(allowWarmUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowWarmUp)) __obj.updateDynamic("allowWarmUp")(allowWarmUp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(capacity)) __obj.updateDynamic("capacity")(capacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (errorFilter != null) __obj.updateDynamic("errorFilter")(js.Any.fromFunction0(errorFilter))
-    if (errorThresholdPercentage != null) __obj.updateDynamic("errorThresholdPercentage")(errorThresholdPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorThresholdPercentage)) __obj.updateDynamic("errorThresholdPercentage")(errorThresholdPercentage.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (maxFailures != null) __obj.updateDynamic("maxFailures")(maxFailures.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFailures)) __obj.updateDynamic("maxFailures")(maxFailures.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resetTimeout != null) __obj.updateDynamic("resetTimeout")(resetTimeout.asInstanceOf[js.Any])
-    if (rollingCountBuckets != null) __obj.updateDynamic("rollingCountBuckets")(rollingCountBuckets.asInstanceOf[js.Any])
-    if (rollingCountTimeout != null) __obj.updateDynamic("rollingCountTimeout")(rollingCountTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(rollingPercentilesEnabled)) __obj.updateDynamic("rollingPercentilesEnabled")(rollingPercentilesEnabled.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (volumeThreshold != null) __obj.updateDynamic("volumeThreshold")(volumeThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetTimeout)) __obj.updateDynamic("resetTimeout")(resetTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollingCountBuckets)) __obj.updateDynamic("rollingCountBuckets")(rollingCountBuckets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollingCountTimeout)) __obj.updateDynamic("rollingCountTimeout")(rollingCountTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollingPercentilesEnabled)) __obj.updateDynamic("rollingPercentilesEnabled")(rollingPercentilesEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(volumeThreshold)) __obj.updateDynamic("volumeThreshold")(volumeThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

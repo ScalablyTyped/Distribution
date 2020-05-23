@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
-@JSGlobal("OfficeExtension.TrackedObjects")
 @js.native
-class TrackedObjects () extends js.Object {
+trait TrackedObjects extends js.Object {
   /**
     * Track a set of objects  for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
     * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 

@@ -18,10 +18,10 @@ trait InstanceUsage extends js.Object {
 
 object InstanceUsage {
   @scala.inline
-  def apply(AccountId: String = null, UsedInstanceCount: Int | scala.Double = null): InstanceUsage = {
+  def apply(AccountId: String = null, UsedInstanceCount: js.UndefOr[Integer] = js.undefined): InstanceUsage = {
     val __obj = js.Dynamic.literal()
     if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (UsedInstanceCount != null) __obj.updateDynamic("UsedInstanceCount")(UsedInstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(UsedInstanceCount)) __obj.updateDynamic("UsedInstanceCount")(UsedInstanceCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceUsage]
   }
 }

@@ -22,24 +22,24 @@ object KeyframesProps {
   @scala.inline
   def apply(
     values: Values,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     ease: Easing | js.Array[Easing] | StringDictionary[Easing] = null,
     easings: js.Array[Easing] = null,
-    elapsed: Int | Double = null,
-    flip: Int | Double = null,
-    loop: Int | Double = null,
+    elapsed: js.UndefOr[Double] = js.undefined,
+    flip: js.UndefOr[Double] = js.undefined,
+    loop: js.UndefOr[Double] = js.undefined,
     times: js.Array[Double] = null,
-    yoyo: Int | Double = null
+    yoyo: js.UndefOr[Double] = js.undefined
   ): KeyframesProps = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     if (easings != null) __obj.updateDynamic("easings")(easings.asInstanceOf[js.Any])
-    if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed.asInstanceOf[js.Any])
-    if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(elapsed)) __obj.updateDynamic("elapsed")(elapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
-    if (yoyo != null) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyframesProps]
   }
 }

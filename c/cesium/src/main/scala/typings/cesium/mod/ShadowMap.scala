@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonCascadesEnabled
+import typings.cesium.anon.CascadesEnabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "ShadowMap")
 @js.native
 class ShadowMap protected () extends js.Object {
-  def this(obtions: AnonCascadesEnabled) = this()
+  def this(obtions: CascadesEnabled) = this()
   var darkness: Double = js.native
   var enabled: Boolean = js.native
   var maximumDistance: Double = js.native

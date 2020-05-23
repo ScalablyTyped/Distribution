@@ -1,6 +1,6 @@
 package typings.loopback.mod
 
-import typings.loopback.AnonAccessTokenIdLength
+import typings.loopback.anon.AccessTokenIdLength
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
@@ -30,7 +30,7 @@ class AccessToken () extends PersistedModel {
   var id: String = js.native
   /** Extends the `Model.settings` object. */
   @JSName("settings")
-  var settings_AccessToken: AnonAccessTokenIdLength = js.native
+  var settings_AccessToken: AccessTokenIdLength = js.native
   /** Time to live in seconds, 2 weeks by default. */
   var ttl: Double = js.native
   /**

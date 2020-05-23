@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "BindingPipe")
 @js.native
-class BindingPipe protected () extends AST {
+class BindingPipe protected () extends ASTWithName {
   def this(
     span: ParseSpan,
     sourceSpan: AbsoluteSourceSpan,
@@ -18,6 +18,5 @@ class BindingPipe protected () extends AST {
   var args: js.Array[_] = js.native
   var exp: AST = js.native
   var name: String = js.native
-  var nameSpan: AbsoluteSourceSpan = js.native
 }
 

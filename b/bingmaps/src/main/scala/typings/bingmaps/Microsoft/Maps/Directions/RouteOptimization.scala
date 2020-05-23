@@ -1,6 +1,5 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,29 +37,6 @@ object RouteOptimization extends js.Object {
   /** The route is calculated to minimize the time and uses current traffic information. */
   @js.native
   sealed trait timeWithTraffic extends RouteOptimization
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RouteOptimization with Double] = js.native
-  /* 4 */ @js.native
-  object minimizeMoney extends TopLevel[minimizeMoney with Double]
-  
-  /* 5 */ @js.native
-  object minimizeTransfers extends TopLevel[minimizeTransfers with Double]
-  
-  /* 6 */ @js.native
-  object minimizeWalking extends TopLevel[minimizeWalking with Double]
-  
-  /* 1 */ @js.native
-  object shortestDistance extends TopLevel[shortestDistance with Double]
-  
-  /* 0 */ @js.native
-  object shortestTime extends TopLevel[shortestTime with Double]
-  
-  /* 3 */ @js.native
-  object timeAvoidClosure extends TopLevel[timeAvoidClosure with Double]
-  
-  /* 2 */ @js.native
-  object timeWithTraffic extends TopLevel[timeWithTraffic with Double]
   
 }
 

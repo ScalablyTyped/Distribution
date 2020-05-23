@@ -40,7 +40,7 @@ object GanttView {
     if (monthHeaderTemplate != null) __obj.updateDynamic("monthHeaderTemplate")(monthHeaderTemplate.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (resizeTooltipFormat != null) __obj.updateDynamic("resizeTooltipFormat")(resizeTooltipFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     if (slotSize != null) __obj.updateDynamic("slotSize")(slotSize.asInstanceOf[js.Any])
     if (timeHeaderTemplate != null) __obj.updateDynamic("timeHeaderTemplate")(timeHeaderTemplate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

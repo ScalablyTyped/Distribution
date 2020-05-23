@@ -1,7 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.std.Float32Array
-import typings.std.Uint16Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,16 +21,6 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   * @extends PIXI.Geometry
   */
-@JSGlobal("PIXI.MeshGeometry")
 @js.native
-class MeshGeometry protected () extends Geometry {
-  def this(vertices: js.Array[Double], uvs: js.Array[Double], index: js.Array[Double]) = this()
-  def this(vertices: js.Array[Double], uvs: js.Array[Double], index: Uint16Array) = this()
-  def this(vertices: js.Array[Double], uvs: Float32Array, index: js.Array[Double]) = this()
-  def this(vertices: js.Array[Double], uvs: Float32Array, index: Uint16Array) = this()
-  def this(vertices: Float32Array, uvs: js.Array[Double], index: js.Array[Double]) = this()
-  def this(vertices: Float32Array, uvs: js.Array[Double], index: Uint16Array) = this()
-  def this(vertices: Float32Array, uvs: Float32Array, index: js.Array[Double]) = this()
-  def this(vertices: Float32Array, uvs: Float32Array, index: Uint16Array) = this()
-}
+trait MeshGeometry extends Geometry
 

@@ -29,10 +29,10 @@ object OnfleetWebhook {
   def apply(
     trigger: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14`,
     url: String,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): OnfleetWebhook = {
     val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnfleetWebhook]
   }
 }

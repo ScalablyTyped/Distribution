@@ -29,7 +29,7 @@ object ActivityOptional {
     IsPublic: js.UndefOr[Boolean] = js.undefined,
     Parameters: js.Object = null,
     RequiredEngineVersion: String = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[Double] = js.undefined
   ): ActivityOptional = {
     val __obj = js.Dynamic.literal()
     if (AllowedChildProcesses != null) __obj.updateDynamic("AllowedChildProcesses")(AllowedChildProcesses.asInstanceOf[js.Any])
@@ -38,10 +38,10 @@ object ActivityOptional {
     if (HostApplication != null) __obj.updateDynamic("HostApplication")(HostApplication.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Instruction != null) __obj.updateDynamic("Instruction")(Instruction.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsPublic)) __obj.updateDynamic("IsPublic")(IsPublic.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsPublic)) __obj.updateDynamic("IsPublic")(IsPublic.get.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (RequiredEngineVersion != null) __obj.updateDynamic("RequiredEngineVersion")(RequiredEngineVersion.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityOptional]
   }
 }

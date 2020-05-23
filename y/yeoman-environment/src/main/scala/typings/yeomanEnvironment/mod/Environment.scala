@@ -6,7 +6,7 @@ import typings.memFs.mod.Store
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import typings.std.RegExp
-import typings.yeomanEnvironment.TypeofGenerator
+import typings.yeomanEnvironment.anon.TypeofGenerator
 import typings.yeomanGenerator.mod.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`

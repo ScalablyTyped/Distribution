@@ -13,6 +13,12 @@ object PullInstantiationHelpers extends js.Object {
   class MutableTypeArgumentMap protected ()
     extends typings.typescriptServices.TypeScript.PullInstantiationHelpers.MutableTypeArgumentMap {
     def this(typeParameterArgumentMap: TypeArgumentMap) = this()
+    /* CompleteClass */
+    override var createdDuplicateTypeArgumentMap: Boolean = js.native
+    /* CompleteClass */
+    override var typeParameterArgumentMap: TypeArgumentMap = js.native
+    /* CompleteClass */
+    override def ensureTypeArgumentCopy(): Unit = js.native
   }
   
   def cleanUpTypeArgumentMap(

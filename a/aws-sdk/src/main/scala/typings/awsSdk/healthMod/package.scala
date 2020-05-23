@@ -55,6 +55,13 @@ package object healthMod {
   type eventDescription = java.lang.String
   type eventMetadata = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.healthMod.metadataValue]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.PUBLIC
+    - typings.awsSdk.awsSdkStrings.ACCOUNT_SPECIFIC
+    - typings.awsSdk.awsSdkStrings.NONE
+    - java.lang.String
+  */
+  type eventScopeCode = typings.awsSdk.healthMod._eventScopeCode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.open__
     - typings.awsSdk.awsSdkStrings.closed__
     - typings.awsSdk.awsSdkStrings.upcoming

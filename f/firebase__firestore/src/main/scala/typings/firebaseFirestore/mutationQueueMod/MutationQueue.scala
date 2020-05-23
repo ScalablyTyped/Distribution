@@ -1,7 +1,6 @@
 package typings.firebaseFirestore.mutationQueueMod
 
 import typings.firebaseFirestore.byteStringMod.ByteString
-import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.mutationBatchMod.MutationBatch
 import typings.firebaseFirestore.mutationMod.Mutation
@@ -106,26 +105,10 @@ trait MutationQueue extends js.Object {
     */
   def lookupMutationBatch(transaction: PersistenceTransaction, batchId: BatchId): PersistencePromise[MutationBatch | Null]
   /**
-    * Returns the document keys for the mutation batch with the given batchId.
-    * For primary clients, this method returns `null` after
-    * `removeMutationBatches()` has been called. Secondary clients return a
-    * cached result until `removeCachedMutationKeys()` is invoked.
-    */
-  def lookupMutationKeys(transaction: PersistenceTransaction, batchId: BatchId): PersistencePromise[DocumentKeySet_ | Null]
-  /**
     * Performs a consistency check, examining the mutation queue for any
     * leaks, if possible.
     */
   def performConsistencyCheck(transaction: PersistenceTransaction): PersistencePromise[Unit]
-  /**
-    * Clears the cached keys for a mutation batch. This method should be
-    * called by secondary clients after they process mutation updates.
-    *
-    * Note that this method does not have to be called from primary clients as
-    * the corresponding cache entries are cleared when an acknowledged or
-    * rejected batch is removed from the mutation queue.
-    */
-  def removeCachedMutationKeys(batchId: BatchId): Unit
   /**
     * Removes the given mutation batch from the queue. This is useful in two
     * circumstances:
@@ -154,14 +137,11 @@ object MutationQueue {
     getLastStreamToken: PersistenceTransaction => PersistencePromise[ByteString],
     getNextMutationBatchAfterBatchId: (PersistenceTransaction, BatchId) => PersistencePromise[MutationBatch | Null],
     lookupMutationBatch: (PersistenceTransaction, BatchId) => PersistencePromise[MutationBatch | Null],
-    lookupMutationKeys: (PersistenceTransaction, BatchId) => PersistencePromise[DocumentKeySet_ | Null],
     performConsistencyCheck: PersistenceTransaction => PersistencePromise[Unit],
-    removeCachedMutationKeys: BatchId => Unit,
     removeMutationBatch: (PersistenceTransaction, MutationBatch) => PersistencePromise[Unit],
     setLastStreamToken: (PersistenceTransaction, ByteString) => PersistencePromise[Unit]
   ): MutationQueue = {
-    val __obj = js.Dynamic.literal(acknowledgeBatch = js.Any.fromFunction3(acknowledgeBatch), addMutationBatch = js.Any.fromFunction4(addMutationBatch), checkEmpty = js.Any.fromFunction1(checkEmpty), getAllMutationBatches = js.Any.fromFunction1(getAllMutationBatches), getAllMutationBatchesAffectingDocumentKey = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKey), getAllMutationBatchesAffectingDocumentKeys = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKeys), getAllMutationBatchesAffectingQuery = js.Any.fromFunction2(getAllMutationBatchesAffectingQuery), getHighestUnacknowledgedBatchId = js.Any.fromFunction1(getHighestUnacknowledgedBatchId), getLastStreamToken = js.Any.fromFunction1(getLastStreamToken), getNextMutationBatchAfterBatchId = js.Any.fromFunction2(getNextMutationBatchAfterBatchId), lookupMutationBatch = js.Any.fromFunction2(lookupMutationBatch), lookupMutationKeys = js.Any.fromFunction2(lookupMutationKeys), performConsistencyCheck = js.Any.fromFunction1(performConsistencyCheck), removeCachedMutationKeys = js.Any.fromFunction1(removeCachedMutationKeys), removeMutationBatch = js.Any.fromFunction2(removeMutationBatch), setLastStreamToken = js.Any.fromFunction2(setLastStreamToken))
-  
+    val __obj = js.Dynamic.literal(acknowledgeBatch = js.Any.fromFunction3(acknowledgeBatch), addMutationBatch = js.Any.fromFunction4(addMutationBatch), checkEmpty = js.Any.fromFunction1(checkEmpty), getAllMutationBatches = js.Any.fromFunction1(getAllMutationBatches), getAllMutationBatchesAffectingDocumentKey = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKey), getAllMutationBatchesAffectingDocumentKeys = js.Any.fromFunction2(getAllMutationBatchesAffectingDocumentKeys), getAllMutationBatchesAffectingQuery = js.Any.fromFunction2(getAllMutationBatchesAffectingQuery), getHighestUnacknowledgedBatchId = js.Any.fromFunction1(getHighestUnacknowledgedBatchId), getLastStreamToken = js.Any.fromFunction1(getLastStreamToken), getNextMutationBatchAfterBatchId = js.Any.fromFunction2(getNextMutationBatchAfterBatchId), lookupMutationBatch = js.Any.fromFunction2(lookupMutationBatch), performConsistencyCheck = js.Any.fromFunction1(performConsistencyCheck), removeMutationBatch = js.Any.fromFunction2(removeMutationBatch), setLastStreamToken = js.Any.fromFunction2(setLastStreamToken))
     __obj.asInstanceOf[MutationQueue]
   }
 }

@@ -15,7 +15,7 @@ trait Resource extends js.Object {
     */
   var InstanceDetails: js.UndefOr[typings.awsSdk.guarddutyMod.InstanceDetails] = js.native
   /**
-    * The type of the AWS resource.
+    * The type of AWS resource.
     */
   var ResourceType: js.UndefOr[String] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.readableStream.mod
 
+import typings.node.BufferEncoding
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ trait WritableState extends js.Object {
   var corked: Double = js.native
   var corkedRequestsFree: CorkedRequest = js.native
   var decodeStrings: Boolean = js.native
-  var defaultEncoding: String = js.native
+  var defaultEncoding: BufferEncoding = js.native
   var destroyed: Boolean = js.native
   var ended: Boolean = js.native
   var ending: Boolean = js.native

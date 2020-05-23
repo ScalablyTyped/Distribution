@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Word
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.Word.Interfaces.SettingData
 import typings.officeJsPreview.Word.Interfaces.SettingLoadOptions
 import typings.officeJsPreview.Word.Interfaces.SettingUpdateData
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@JSGlobal("Word.Setting")
 @js.native
-class Setting () extends ClientObject {
+trait Setting extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Setting: RequestContext = js.native
@@ -65,8 +64,8 @@ class Setting () extends ClientObject {
   def load(): Setting = js.native
   def load(option: String): Setting = js.native
   def load(option: js.Array[String]): Setting = js.native
-  def load(option: AnonExpand): Setting = js.native
   def load(option: SettingLoadOptions): Setting = js.native
+  def load(option: Expand): Setting = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks
@@ -95,15 +94,5 @@ class Setting () extends ClientObject {
     * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
     */
   def untrack(): Setting = js.native
-}
-
-/* static members */
-@JSGlobal("Word.Setting")
-@js.native
-object Setting extends js.Object {
-  var DateJSONPrefix: js.Any = js.native
-  var DateJSONSuffix: js.Any = js.native
-  def _replaceDateWithStringDate(value: js.Any): js.Any = js.native
-  /* private */ def replaceStringDateWithDate(value: js.Any): js.Any = js.native
 }
 

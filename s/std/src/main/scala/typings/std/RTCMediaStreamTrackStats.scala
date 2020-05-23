@@ -27,35 +27,35 @@ object RTCMediaStreamTrackStats {
     id: java.lang.String,
     timestamp: Double,
     `type`: RTCStatsType,
-    audioLevel: Int | Double = null,
-    echoReturnLoss: Int | Double = null,
-    echoReturnLossEnhancement: Int | Double = null,
-    frameHeight: Int | Double = null,
-    frameWidth: Int | Double = null,
-    framesCorrupted: Int | Double = null,
-    framesDecoded: Int | Double = null,
-    framesDropped: Int | Double = null,
-    framesPerSecond: Int | Double = null,
-    framesReceived: Int | Double = null,
-    framesSent: Int | Double = null,
+    audioLevel: js.UndefOr[Double] = js.undefined,
+    echoReturnLoss: js.UndefOr[Double] = js.undefined,
+    echoReturnLossEnhancement: js.UndefOr[Double] = js.undefined,
+    frameHeight: js.UndefOr[Double] = js.undefined,
+    frameWidth: js.UndefOr[Double] = js.undefined,
+    framesCorrupted: js.UndefOr[Double] = js.undefined,
+    framesDecoded: js.UndefOr[Double] = js.undefined,
+    framesDropped: js.UndefOr[Double] = js.undefined,
+    framesPerSecond: js.UndefOr[Double] = js.undefined,
+    framesReceived: js.UndefOr[Double] = js.undefined,
+    framesSent: js.UndefOr[Double] = js.undefined,
     remoteSource: js.UndefOr[scala.Boolean] = js.undefined,
     ssrcIds: js.Array[java.lang.String] = null,
     trackIdentifier: java.lang.String = null
   ): RTCMediaStreamTrackStats = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (audioLevel != null) __obj.updateDynamic("audioLevel")(audioLevel.asInstanceOf[js.Any])
-    if (echoReturnLoss != null) __obj.updateDynamic("echoReturnLoss")(echoReturnLoss.asInstanceOf[js.Any])
-    if (echoReturnLossEnhancement != null) __obj.updateDynamic("echoReturnLossEnhancement")(echoReturnLossEnhancement.asInstanceOf[js.Any])
-    if (frameHeight != null) __obj.updateDynamic("frameHeight")(frameHeight.asInstanceOf[js.Any])
-    if (frameWidth != null) __obj.updateDynamic("frameWidth")(frameWidth.asInstanceOf[js.Any])
-    if (framesCorrupted != null) __obj.updateDynamic("framesCorrupted")(framesCorrupted.asInstanceOf[js.Any])
-    if (framesDecoded != null) __obj.updateDynamic("framesDecoded")(framesDecoded.asInstanceOf[js.Any])
-    if (framesDropped != null) __obj.updateDynamic("framesDropped")(framesDropped.asInstanceOf[js.Any])
-    if (framesPerSecond != null) __obj.updateDynamic("framesPerSecond")(framesPerSecond.asInstanceOf[js.Any])
-    if (framesReceived != null) __obj.updateDynamic("framesReceived")(framesReceived.asInstanceOf[js.Any])
-    if (framesSent != null) __obj.updateDynamic("framesSent")(framesSent.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteSource)) __obj.updateDynamic("remoteSource")(remoteSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioLevel)) __obj.updateDynamic("audioLevel")(audioLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(echoReturnLoss)) __obj.updateDynamic("echoReturnLoss")(echoReturnLoss.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(echoReturnLossEnhancement)) __obj.updateDynamic("echoReturnLossEnhancement")(echoReturnLossEnhancement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameHeight)) __obj.updateDynamic("frameHeight")(frameHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameWidth)) __obj.updateDynamic("frameWidth")(frameWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(framesCorrupted)) __obj.updateDynamic("framesCorrupted")(framesCorrupted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(framesDecoded)) __obj.updateDynamic("framesDecoded")(framesDecoded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(framesDropped)) __obj.updateDynamic("framesDropped")(framesDropped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(framesPerSecond)) __obj.updateDynamic("framesPerSecond")(framesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(framesReceived)) __obj.updateDynamic("framesReceived")(framesReceived.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(framesSent)) __obj.updateDynamic("framesSent")(framesSent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteSource)) __obj.updateDynamic("remoteSource")(remoteSource.get.asInstanceOf[js.Any])
     if (ssrcIds != null) __obj.updateDynamic("ssrcIds")(ssrcIds.asInstanceOf[js.Any])
     if (trackIdentifier != null) __obj.updateDynamic("trackIdentifier")(trackIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCMediaStreamTrackStats]

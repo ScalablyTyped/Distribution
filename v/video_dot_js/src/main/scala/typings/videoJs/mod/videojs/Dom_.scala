@@ -2,7 +2,7 @@ package typings.videoJs.mod.videojs
 
 import typings.std.ClientRect
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLFormElement
 import typings.std.HTMLImageElement
@@ -14,7 +14,6 @@ import typings.std.NodeList
 import typings.std.Position
 import typings.videoJs.mod.videojs.Dom.Coordinates
 import typings.videoJs.mod.videojs.Dom.Predicate
-import typings.videoJs.mod.videojs.EventTarget.Event
 import typings.videoJs.videoJsStrings.canvas
 import typings.videoJs.videoJsStrings.form
 import typings.videoJs.videoJsStrings.img
@@ -258,7 +257,7 @@ trait Dom_ extends js.Object {
     * @return A Coordinates object corresponding to the mouse position.
     *
     */
-  def getPointerPosition(el: Element, event: Event_): Coordinates = js.native
+  def getPointerPosition(el: Element, event: Event): Coordinates = js.native
   /**
     * Check if an element has a CSS class
     *
@@ -322,7 +321,7 @@ trait Dom_ extends js.Object {
     * @return - True if a left click
     *         - False if not a left click
     */
-  def isSingleLeftClick(event: Event): Boolean = js.native
+  def isSingleLeftClick(event: typings.videoJs.mod.videojs.EventTarget.Event): Boolean = js.native
   /**
     * Determines, via duck typing, whether or not a value is a text node.
     *

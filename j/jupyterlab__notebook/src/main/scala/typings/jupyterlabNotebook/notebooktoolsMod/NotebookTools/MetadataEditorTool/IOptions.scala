@@ -32,7 +32,7 @@ object IOptions {
     label: String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(editorFactory = js.Any.fromFunction1(editorFactory))
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

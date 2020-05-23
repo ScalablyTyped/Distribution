@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -96,53 +95,6 @@ object ListPreset extends js.Object {
   
   @js.native
   sealed trait ZERODIGIT_ALPHA_ROMAN extends ListPreset
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ListPreset with Double] = js.native
-  /* 5 */ @js.native
-  object ARROW3D_CIRCLE_SQUARE extends TopLevel[ARROW3D_CIRCLE_SQUARE with Double]
-  
-  /* 3 */ @js.native
-  object ARROW_DIAMOND_DISC extends TopLevel[ARROW_DIAMOND_DISC with Double]
-  
-  /* 2 */ @js.native
-  object CHECKBOX extends TopLevel[CHECKBOX with Double]
-  
-  /* 1 */ @js.native
-  object DIAMONDX_ARROW3D_SQUARE extends TopLevel[DIAMONDX_ARROW3D_SQUARE with Double]
-  
-  /* 7 */ @js.native
-  object DIAMONDX_HOLLOWDIAMOND_SQUARE extends TopLevel[DIAMONDX_HOLLOWDIAMOND_SQUARE with Double]
-  
-  /* 8 */ @js.native
-  object DIAMOND_CIRCLE_SQUARE extends TopLevel[DIAMOND_CIRCLE_SQUARE with Double]
-  
-  /* 9 */ @js.native
-  object DIGIT_ALPHA_ROMAN extends TopLevel[DIGIT_ALPHA_ROMAN with Double]
-  
-  /* 10 */ @js.native
-  object DIGIT_ALPHA_ROMAN_PARENS extends TopLevel[DIGIT_ALPHA_ROMAN_PARENS with Double]
-  
-  /* 11 */ @js.native
-  object DIGIT_NESTED extends TopLevel[DIGIT_NESTED with Double]
-  
-  /* 0 */ @js.native
-  object DISC_CIRCLE_SQUARE extends TopLevel[DISC_CIRCLE_SQUARE with Double]
-  
-  /* 6 */ @js.native
-  object LEFTTRIANGLE_DIAMOND_DISC extends TopLevel[LEFTTRIANGLE_DIAMOND_DISC with Double]
-  
-  /* 4 */ @js.native
-  object STAR_CIRCLE_SQUARE extends TopLevel[STAR_CIRCLE_SQUARE with Double]
-  
-  /* 12 */ @js.native
-  object UPPERALPHA_ALPHA_ROMAN extends TopLevel[UPPERALPHA_ALPHA_ROMAN with Double]
-  
-  /* 13 */ @js.native
-  object UPPERROMAN_UPPERALPHA_DIGIT extends TopLevel[UPPERROMAN_UPPERALPHA_DIGIT with Double]
-  
-  /* 14 */ @js.native
-  object ZERODIGIT_ALPHA_ROMAN extends TopLevel[ZERODIGIT_ALPHA_ROMAN with Double]
   
 }
 

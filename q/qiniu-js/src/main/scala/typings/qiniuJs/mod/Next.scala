@@ -1,17 +1,17 @@
 package typings.qiniuJs.mod
 
-import typings.qiniuJs.AnonLoaded
+import typings.qiniuJs.anon.Loaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Next extends js.Object {
-  var total: AnonLoaded
+  var total: Loaded
 }
 
 object Next {
   @scala.inline
-  def apply(total: AnonLoaded): Next = {
+  def apply(total: Loaded): Next = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Next]
   }

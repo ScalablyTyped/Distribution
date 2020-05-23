@@ -63,7 +63,7 @@ trait CompositeAlarm extends js.Object {
 object CompositeAlarm {
   @scala.inline
   def apply(
-    ActionsEnabled: js.UndefOr[Boolean] = js.undefined,
+    ActionsEnabled: js.UndefOr[ActionsEnabled] = js.undefined,
     AlarmActions: ResourceList = null,
     AlarmArn: AlarmArn = null,
     AlarmConfigurationUpdatedTimestamp: Timestamp = null,
@@ -78,7 +78,7 @@ object CompositeAlarm {
     StateValue: StateValue = null
   ): CompositeAlarm = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled.get.asInstanceOf[js.Any])
     if (AlarmActions != null) __obj.updateDynamic("AlarmActions")(AlarmActions.asInstanceOf[js.Any])
     if (AlarmArn != null) __obj.updateDynamic("AlarmArn")(AlarmArn.asInstanceOf[js.Any])
     if (AlarmConfigurationUpdatedTimestamp != null) __obj.updateDynamic("AlarmConfigurationUpdatedTimestamp")(AlarmConfigurationUpdatedTimestamp.asInstanceOf[js.Any])

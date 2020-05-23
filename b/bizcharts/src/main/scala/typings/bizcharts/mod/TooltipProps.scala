@@ -1,6 +1,6 @@
 package typings.bizcharts.mod
 
-import typings.bizcharts.AnonStyle
+import typings.bizcharts.anon.Style
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait TooltipProps
   extends Props[js.Any] {
   var containerTpl: js.UndefOr[String] = js.undefined
-  var crosshairs: js.UndefOr[AnonStyle | Boolean] = js.undefined
+  var crosshairs: js.UndefOr[Style | Boolean] = js.undefined
   var enterable: js.UndefOr[Boolean] = js.undefined
   var follow: js.UndefOr[Boolean] = js.undefined
   var `g2-tooltip`: js.UndefOr[CSSProperties] = js.undefined
@@ -41,7 +41,7 @@ object TooltipProps {
   def apply(
     children: ReactNode = null,
     containerTpl: String = null,
-    crosshairs: AnonStyle | Boolean = null,
+    crosshairs: Style | Boolean = null,
     enterable: js.UndefOr[Boolean] = js.undefined,
     follow: js.UndefOr[Boolean] = js.undefined,
     `g2-tooltip`: CSSProperties = null,
@@ -53,9 +53,9 @@ object TooltipProps {
     inPlot: js.UndefOr[Boolean] = js.undefined,
     itemTpl: String = null,
     key: Key = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     position: PositionType = null,
-    ref: LegacyRef[js.Any] = null,
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined,
     shared: js.UndefOr[Boolean] = js.undefined,
     showTitle: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
@@ -67,26 +67,26 @@ object TooltipProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (containerTpl != null) __obj.updateDynamic("containerTpl")(containerTpl.asInstanceOf[js.Any])
     if (crosshairs != null) __obj.updateDynamic("crosshairs")(crosshairs.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterable)) __obj.updateDynamic("enterable")(enterable.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterable)) __obj.updateDynamic("enterable")(enterable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
     if (`g2-tooltip` != null) __obj.updateDynamic("g2-tooltip")(`g2-tooltip`.asInstanceOf[js.Any])
     if (`g2-tooltip-list` != null) __obj.updateDynamic("g2-tooltip-list")(`g2-tooltip-list`.asInstanceOf[js.Any])
     if (`g2-tooltip-list-item` != null) __obj.updateDynamic("g2-tooltip-list-item")(`g2-tooltip-list-item`.asInstanceOf[js.Any])
     if (`g2-tooltip-marker` != null) __obj.updateDynamic("g2-tooltip-marker")(`g2-tooltip-marker`.asInstanceOf[js.Any])
     if (`g2-tooltip-title` != null) __obj.updateDynamic("g2-tooltip-title")(`g2-tooltip-title`.asInstanceOf[js.Any])
     if (htmlContent != null) __obj.updateDynamic("htmlContent")(js.Any.fromFunction2(htmlContent))
-    if (!js.isUndefined(inPlot)) __obj.updateDynamic("inPlot")(inPlot.asInstanceOf[js.Any])
+    if (!js.isUndefined(inPlot)) __obj.updateDynamic("inPlot")(inPlot.get.asInstanceOf[js.Any])
     if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (triggerOn != null) __obj.updateDynamic("triggerOn")(triggerOn.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHtml)) __obj.updateDynamic("useHtml")(useHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHtml)) __obj.updateDynamic("useHtml")(useHtml.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }
 }

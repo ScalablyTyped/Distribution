@@ -11,10 +11,10 @@ trait EditorConfig extends js.Object {
 
 object EditorConfig {
   @scala.inline
-  def apply(maxRows: Int | Double = null, minRows: Int | Double = null): EditorConfig = {
+  def apply(maxRows: js.UndefOr[Double] = js.undefined, minRows: js.UndefOr[Double] = js.undefined): EditorConfig = {
     val __obj = js.Dynamic.literal()
-    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRows)) __obj.updateDynamic("maxRows")(maxRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRows)) __obj.updateDynamic("minRows")(minRows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorConfig]
   }
 }

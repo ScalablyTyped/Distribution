@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object TetheringOperationStatus extends js.Object {
   /** The operation could not begin because the Wifi device is turned off. */
   @js.native
   sealed trait wiFiDeviceOff extends TetheringOperationStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TetheringOperationStatus with Double] = js.native
-  /* 5 */ @js.native
-  object entitlementCheckFailure extends TopLevel[entitlementCheckFailure with Double]
-  
-  /* 4 */ @js.native
-  object entitlementCheckTimeout extends TopLevel[entitlementCheckTimeout with Double]
-  
-  /* 2 */ @js.native
-  object mobileBroadbandDeviceOff extends TopLevel[mobileBroadbandDeviceOff with Double]
-  
-  /* 6 */ @js.native
-  object operationInProgress extends TopLevel[operationInProgress with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 1 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 3 */ @js.native
-  object wiFiDeviceOff extends TopLevel[wiFiDeviceOff with Double]
   
 }
 

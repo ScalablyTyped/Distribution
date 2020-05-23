@@ -22,9 +22,9 @@ trait PlusNativeObjView extends js.Object {
   /**
     * 添加事件监听器
     * 向View控件添加事件监听器，当指定的事件发生时，将触发listener函数的执行。
-    * 		可多次调用此方法向Webview添加多个监听器，当监听的事件发生时，将按照添加的先后顺序执行。
-    * 		可通过setTouchEventRect方法指定监听触屏操作的区域。
-    * 		注意：默认View控件拦截处理触屏事件，可调用view.interceptTouchEvent(false)改变为不拦截处理触屏事件（透传）。
+    *         可多次调用此方法向Webview添加多个监听器，当监听的事件发生时，将按照添加的先后顺序执行。
+    *         可通过setTouchEventRect方法指定监听触屏操作的区域。
+    *         注意：默认View控件拦截处理触屏事件，可调用view.interceptTouchEvent(false)改变为不拦截处理触屏事件（透传）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -56,7 +56,7 @@ trait PlusNativeObjView extends js.Object {
   /**
     * 清空矩形区域
     * 清除指定矩形区域内容，透明显示其后面的内容。
-    * 	可多次调用设置多个区域透明。
+    *     可多次调用设置多个区域透明。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -73,8 +73,8 @@ trait PlusNativeObjView extends js.Object {
   /**
     * 绘制内容
     * 在当前View控件之上绘制指定的内容，可一次指定绘制多个元素，绘制元素可以是图片/矩形区域/文本，
-    * 	即将多次调用drawBitmap/drawRect/drawText方法合并调用一次draw方法来实现，
-    * 	推荐使用draw方法来替换多次调用drawBitmap/drawRect/drawText。
+    *     即将多次调用drawBitmap/drawRect/drawText方法合并调用一次draw方法来实现，
+    *     推荐使用draw方法来替换多次调用drawBitmap/drawRect/drawText。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -136,7 +136,7 @@ trait PlusNativeObjView extends js.Object {
   /**
     * 获取编辑框的焦点状态
     * 通过id查找到指定的编辑框，获取其焦点状态。
-    * 	如果指定的id无效则返回null。
+    *     如果指定的id无效则返回null。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -145,7 +145,7 @@ trait PlusNativeObjView extends js.Object {
   /**
     * 获取编辑框的内容
     * 通过id查找到指定的编辑框，获取其输入的字符串。
-    * 	如果指定的id无效则返回null。
+    *     如果指定的id无效则返回null。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -154,7 +154,7 @@ trait PlusNativeObjView extends js.Object {
   /**
     * 静态方法，获取指定标识的View控件对象
     * 如果存在多个指定id标识的View对象，则返回第一个创建的View控件对象。
-    * 	如果不存在指定id标识的View对象，则返回null。
+    *     如果不存在指定id标识的View对象，则返回null。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -170,7 +170,7 @@ trait PlusNativeObjView extends js.Object {
   /**
     * 是否拦截View控件的触屏事件
     * 设置为拦截后View控件上的触屏事件不再传递（即不透传），否则触屏事件将继续传递给View控件下的其它窗口处理（即透传）。
-    * 	注意：View控件默认拦截触屏事件（不透传）。
+    *     注意：View控件默认拦截触屏事件（不透传）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -199,7 +199,7 @@ trait PlusNativeObjView extends js.Object {
   /**
     * 设置编辑框的焦点状态
     * 通过id查找到指定的编辑框，并设置编辑框的焦点状态。
-    * 	如果指定的id无效则操作无效。
+    *     如果指定的id无效则操作无效。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -217,8 +217,8 @@ trait PlusNativeObjView extends js.Object {
   /**
     * 指定监听触屏事件区域
     * 当调用addEventListener监听View控件事件时，可调用此方法限定监听事件的区域，仅当用户触屏操作在指定区域时才触发监听事件。
-    * 	非限定监听事件的区域则不拦截，透传给其它窗口处理。
-    * 	注意：此操作覆盖之前设置的区域。
+    *     非限定监听事件的区域则不拦截，透传给其它窗口处理。
+    *     注意：此操作覆盖之前设置的区域。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */

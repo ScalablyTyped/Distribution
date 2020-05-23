@@ -29,7 +29,7 @@ trait IInitOptions[Ext, C /* <: IClient */] extends js.Object {
 
 object IInitOptions {
   @scala.inline
-  def apply[Ext, C /* <: IClient */](
+  def apply[Ext, C](
     capSQL: js.UndefOr[Boolean] = js.undefined,
     connect: (/* client */ C, /* dc */ js.Any, /* useCount */ Double) => Unit = null,
     disconnect: (/* client */ C, /* dc */ js.Any) => Unit = null,
@@ -42,24 +42,24 @@ object IInitOptions {
     promiseLib: js.Any = null,
     query: /* e */ IEventContext[C] => Unit = null,
     receive: (/* data */ js.Array[_], /* result */ IResultExt, /* e */ IEventContext[C]) => Unit = null,
-    schema: ValidSchema | (js.Function1[/* dc */ js.Any, ValidSchema]) = null,
+    schema: js.UndefOr[Null | ValidSchema | (js.Function1[/* dc */ js.Any, ValidSchema])] = js.undefined,
     task: /* e */ IEventContext[C] => Unit = null,
     transact: /* e */ IEventContext[C] => Unit = null
   ): IInitOptions[Ext, C] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(capSQL)) __obj.updateDynamic("capSQL")(capSQL.asInstanceOf[js.Any])
+    if (!js.isUndefined(capSQL)) __obj.updateDynamic("capSQL")(capSQL.get.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(js.Any.fromFunction3(connect))
     if (disconnect != null) __obj.updateDynamic("disconnect")(js.Any.fromFunction2(disconnect))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
     if (extend != null) __obj.updateDynamic("extend")(js.Any.fromFunction2(extend))
-    if (!js.isUndefined(noLocking)) __obj.updateDynamic("noLocking")(noLocking.asInstanceOf[js.Any])
-    if (!js.isUndefined(noWarnings)) __obj.updateDynamic("noWarnings")(noWarnings.asInstanceOf[js.Any])
-    if (!js.isUndefined(pgFormatting)) __obj.updateDynamic("pgFormatting")(pgFormatting.asInstanceOf[js.Any])
-    if (!js.isUndefined(pgNative)) __obj.updateDynamic("pgNative")(pgNative.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLocking)) __obj.updateDynamic("noLocking")(noLocking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noWarnings)) __obj.updateDynamic("noWarnings")(noWarnings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pgFormatting)) __obj.updateDynamic("pgFormatting")(pgFormatting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pgNative)) __obj.updateDynamic("pgNative")(pgNative.get.asInstanceOf[js.Any])
     if (promiseLib != null) __obj.updateDynamic("promiseLib")(promiseLib.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
     if (receive != null) __obj.updateDynamic("receive")(js.Any.fromFunction3(receive))
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (!js.isUndefined(schema)) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (task != null) __obj.updateDynamic("task")(js.Any.fromFunction1(task))
     if (transact != null) __obj.updateDynamic("transact")(js.Any.fromFunction1(transact))
     __obj.asInstanceOf[IInitOptions[Ext, C]]

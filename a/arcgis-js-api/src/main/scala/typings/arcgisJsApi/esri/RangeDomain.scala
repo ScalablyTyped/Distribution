@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,8 +27,4 @@ trait RangeDomain extends Domain {
   @JSName("type")
   val type_RangeDomain: range = js.native
 }
-
-@JSGlobal("__esri.RangeDomain")
-@js.native
-object RangeDomain extends TopLevel[RangeDomainConstructor]
 

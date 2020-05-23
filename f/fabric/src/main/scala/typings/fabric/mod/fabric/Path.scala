@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @JSImport("fabric", "fabric.Path")
 @js.native
 /**
-	 * Constructor
-	 * @param path Path data (sequence of coordinates and corresponding "command" tokens)
-	 * @param [options] Options object
-	 */
+  * Constructor
+  * @param path Path data (sequence of coordinates and corresponding "command" tokens)
+  * @param [options] Options object
+  */
 class Path ()
   extends typings.fabric.fabricImplMod.Path {
   def this(path: String) = this()
@@ -26,21 +26,21 @@ class Path ()
 @js.native
 object Path extends js.Object {
   /**
-  	 * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
-  	 */
+    * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
+    */
   var ATTRIBUTE_NAMES: js.Array[String] = js.native
   /**
-  	 * Creates an instance of fabric.Path from an SVG <path> element
-  	 * @param element to parse
-  	 * @param callback Callback to invoke when an fabric.Path instance is created
-  	 * @param [options] Options object
-  	 */
+    * Creates an instance of fabric.Path from an SVG <path> element
+    * @param element to parse
+    * @param callback Callback to invoke when an fabric.Path instance is created
+    * @param [options] Options object
+    */
   def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Path = js.native
   def fromElement(element: SVGElement, callback: js.Function, options: IPathOptions): typings.fabric.fabricImplMod.Path = js.native
   /**
-  	 * Creates an instance of fabric.Path from an object
-  	 * @param callback Callback to invoke when an fabric.Path instance is created
-  	 */
+    * Creates an instance of fabric.Path from an object
+    * @param callback Callback to invoke when an fabric.Path instance is created
+    */
   def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Path = js.native
 }
 

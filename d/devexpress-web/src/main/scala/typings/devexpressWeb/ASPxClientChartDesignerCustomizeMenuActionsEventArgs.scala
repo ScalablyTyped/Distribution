@@ -4,10 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxClientChartDesignerCustomizeMenuActionsEventArgs")
-@js.native
-class ASPxClientChartDesignerCustomizeMenuActionsEventArgs protected () extends ASPxClientEventArgs {
-  def this(actions: js.Array[ASPxClientChartDesignerMenuAction]) = this()
-  var actions: js.Array[ASPxClientChartDesignerMenuAction] = js.native
+trait ASPxClientChartDesignerCustomizeMenuActionsEventArgs extends ASPxClientEventArgs {
+  var actions: js.Array[ASPxClientChartDesignerMenuAction]
+}
+
+object ASPxClientChartDesignerCustomizeMenuActionsEventArgs {
+  @scala.inline
+  def apply(actions: js.Array[ASPxClientChartDesignerMenuAction]): ASPxClientChartDesignerCustomizeMenuActionsEventArgs = {
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientChartDesignerCustomizeMenuActionsEventArgs]
+  }
 }
 

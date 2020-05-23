@@ -5,22 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.TypeInfo")
-@js.native
-class TypeInfo protected () extends js.Object {
-  def this(
-    memberName: MemberName,
+trait TypeInfo extends js.Object {
+  var docComment: String
+  var fullSymbolName: String
+  var kind: String
+  var limChar: Double
+  var memberName: MemberName
+  var minChar: Double
+}
+
+object TypeInfo {
+  @scala.inline
+  def apply(
     docComment: String,
     fullSymbolName: String,
     kind: String,
-    minChar: Double,
-    limChar: Double
-  ) = this()
-  var docComment: String = js.native
-  var fullSymbolName: String = js.native
-  var kind: String = js.native
-  var limChar: Double = js.native
-  var memberName: MemberName = js.native
-  var minChar: Double = js.native
+    limChar: Double,
+    memberName: MemberName,
+    minChar: Double
+  ): TypeInfo = {
+    val __obj = js.Dynamic.literal(docComment = docComment.asInstanceOf[js.Any], fullSymbolName = fullSymbolName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], limChar = limChar.asInstanceOf[js.Any], memberName = memberName.asInstanceOf[js.Any], minChar = minChar.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeInfo]
+  }
 }
 

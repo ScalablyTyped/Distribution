@@ -1,6 +1,6 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonHref
+import typings.gapiClientAnalytics.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait CustomMetric extends js.Object {
   /** Name of the custom metric. */
   var name: js.UndefOr[String] = js.undefined
   /** Parent link for the custom metric. Points to the property to which the custom metric belongs. */
-  var parentLink: js.UndefOr[AnonHref] = js.undefined
+  var parentLink: js.UndefOr[Href] = js.undefined
   /** Scope of the custom metric: HIT or PRODUCT. */
   var scope: js.UndefOr[String] = js.undefined
   /** Link for the custom metric */
@@ -45,12 +45,12 @@ object CustomMetric {
     active: js.UndefOr[Boolean] = js.undefined,
     created: String = null,
     id: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     max_value: String = null,
     min_value: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
+    parentLink: Href = null,
     scope: String = null,
     selfLink: String = null,
     `type`: String = null,
@@ -59,10 +59,10 @@ object CustomMetric {
   ): CustomMetric = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (max_value != null) __obj.updateDynamic("max_value")(max_value.asInstanceOf[js.Any])
     if (min_value != null) __obj.updateDynamic("min_value")(min_value.asInstanceOf[js.Any])

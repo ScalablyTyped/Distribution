@@ -16,12 +16,12 @@ object ConnectOptions {
   def apply(
     onUpgrade: /* rawDb */ BackStore => js.Promise[Unit] = null,
     storeType: DataStoreType = null,
-    webSqlDbSize: Int | Double = null
+    webSqlDbSize: js.UndefOr[Double] = js.undefined
   ): ConnectOptions = {
     val __obj = js.Dynamic.literal()
     if (onUpgrade != null) __obj.updateDynamic("onUpgrade")(js.Any.fromFunction1(onUpgrade))
     if (storeType != null) __obj.updateDynamic("storeType")(storeType.asInstanceOf[js.Any])
-    if (webSqlDbSize != null) __obj.updateDynamic("webSqlDbSize")(webSqlDbSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(webSqlDbSize)) __obj.updateDynamic("webSqlDbSize")(webSqlDbSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }
 }

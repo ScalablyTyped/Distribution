@@ -35,19 +35,19 @@ trait IntOptions extends js.Object {
 object IntOptions {
   @scala.inline
   def apply(
-    DefaultValue: Int | scala.Double = null,
-    FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    SortEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    DefaultValue: js.UndefOr[Long] = js.undefined,
+    FacetEnabled: js.UndefOr[Boolean] = js.undefined,
+    ReturnEnabled: js.UndefOr[Boolean] = js.undefined,
+    SearchEnabled: js.UndefOr[Boolean] = js.undefined,
+    SortEnabled: js.UndefOr[Boolean] = js.undefined,
     SourceField: FieldName = null
   ): IntOptions = {
     val __obj = js.Dynamic.literal()
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(FacetEnabled)) __obj.updateDynamic("FacetEnabled")(FacetEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(SearchEnabled)) __obj.updateDynamic("SearchEnabled")(SearchEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(SortEnabled)) __obj.updateDynamic("SortEnabled")(SortEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultValue)) __obj.updateDynamic("DefaultValue")(DefaultValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FacetEnabled)) __obj.updateDynamic("FacetEnabled")(FacetEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SearchEnabled)) __obj.updateDynamic("SearchEnabled")(SearchEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SortEnabled)) __obj.updateDynamic("SortEnabled")(SortEnabled.get.asInstanceOf[js.Any])
     if (SourceField != null) __obj.updateDynamic("SourceField")(SourceField.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntOptions]
   }

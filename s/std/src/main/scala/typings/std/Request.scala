@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,9 +68,34 @@ trait Request extends Body {
   val url: java.lang.String
 }
 
-@JSGlobal("Request")
-@js.native
-object Request
-  extends Instantiable1[/* input */ RequestInfo, Request]
-     with Instantiable2[/* input */ RequestInfo, /* init */ RequestInit, Request]
+object Request {
+  @scala.inline
+  def apply(
+    arrayBuffer: () => js.Promise[ArrayBuffer],
+    blob: () => js.Promise[Blob],
+    bodyUsed: scala.Boolean,
+    cache: RequestCache,
+    credentials: RequestCredentials,
+    destination: RequestDestination,
+    formData: () => js.Promise[FormData],
+    headers: Headers,
+    integrity: java.lang.String,
+    isHistoryNavigation: scala.Boolean,
+    isReloadNavigation: scala.Boolean,
+    json: () => js.Promise[_],
+    keepalive: scala.Boolean,
+    method: java.lang.String,
+    mode: RequestMode,
+    redirect: RequestRedirect,
+    referrer: java.lang.String,
+    referrerPolicy: ReferrerPolicy,
+    signal: AbortSignal,
+    text: () => js.Promise[java.lang.String],
+    url: java.lang.String,
+    body: ReadableStream[Uint8Array] = null
+  ): Request = {
+    val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], credentials = credentials.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], integrity = integrity.asInstanceOf[js.Any], isHistoryNavigation = isHistoryNavigation.asInstanceOf[js.Any], isReloadNavigation = isReloadNavigation.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), keepalive = keepalive.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], redirect = redirect.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], referrerPolicy = referrerPolicy.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Request]
+  }
+}
 

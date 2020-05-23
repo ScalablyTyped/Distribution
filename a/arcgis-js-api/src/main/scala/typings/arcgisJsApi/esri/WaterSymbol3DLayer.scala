@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.calm
 import typings.arcgisJsApi.arcgisJsApiStrings.large
 import typings.arcgisJsApi.arcgisJsApiStrings.medium
@@ -58,8 +57,4 @@ trait WaterSymbol3DLayer
     */
   var waveStrength: calm | rippled | slight | moderate = js.native
 }
-
-@JSGlobal("__esri.WaterSymbol3DLayer")
-@js.native
-object WaterSymbol3DLayer extends TopLevel[WaterSymbol3DLayerConstructor]
 

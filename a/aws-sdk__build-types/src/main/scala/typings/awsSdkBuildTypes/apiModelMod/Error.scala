@@ -14,13 +14,13 @@ object Error {
   @scala.inline
   def apply(
     code: java.lang.String = null,
-    httpStatusCode: Int | scala.Double = null,
+    httpStatusCode: js.UndefOr[scala.Double] = js.undefined,
     senderFault: js.UndefOr[scala.Boolean] = js.undefined
   ): Error = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (httpStatusCode != null) __obj.updateDynamic("httpStatusCode")(httpStatusCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(senderFault)) __obj.updateDynamic("senderFault")(senderFault.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpStatusCode)) __obj.updateDynamic("httpStatusCode")(httpStatusCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(senderFault)) __obj.updateDynamic("senderFault")(senderFault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
 }

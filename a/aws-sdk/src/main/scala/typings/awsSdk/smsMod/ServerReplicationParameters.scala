@@ -39,21 +39,21 @@ trait ServerReplicationParameters extends js.Object {
 object ServerReplicationParameters {
   @scala.inline
   def apply(
-    encrypted: js.UndefOr[Boolean] = js.undefined,
-    frequency: Int | Double = null,
+    encrypted: js.UndefOr[Encrypted] = js.undefined,
+    frequency: js.UndefOr[Frequency] = js.undefined,
     kmsKeyId: KmsKeyId = null,
     licenseType: LicenseType = null,
-    numberOfRecentAmisToKeep: Int | Double = null,
-    runOnce: js.UndefOr[Boolean] = js.undefined,
+    numberOfRecentAmisToKeep: js.UndefOr[NumberOfRecentAmisToKeep] = js.undefined,
+    runOnce: js.UndefOr[RunOnce] = js.undefined,
     seedTime: Timestamp = null
   ): ServerReplicationParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     if (licenseType != null) __obj.updateDynamic("licenseType")(licenseType.asInstanceOf[js.Any])
-    if (numberOfRecentAmisToKeep != null) __obj.updateDynamic("numberOfRecentAmisToKeep")(numberOfRecentAmisToKeep.asInstanceOf[js.Any])
-    if (!js.isUndefined(runOnce)) __obj.updateDynamic("runOnce")(runOnce.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfRecentAmisToKeep)) __obj.updateDynamic("numberOfRecentAmisToKeep")(numberOfRecentAmisToKeep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(runOnce)) __obj.updateDynamic("runOnce")(runOnce.get.asInstanceOf[js.Any])
     if (seedTime != null) __obj.updateDynamic("seedTime")(seedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerReplicationParameters]
   }

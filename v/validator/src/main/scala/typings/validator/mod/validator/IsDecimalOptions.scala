@@ -33,7 +33,7 @@ object IsDecimalOptions {
   ): IsDecimalOptions = {
     val __obj = js.Dynamic.literal()
     if (decimal_digits != null) __obj.updateDynamic("decimal_digits")(decimal_digits.asInstanceOf[js.Any])
-    if (!js.isUndefined(force_decimal)) __obj.updateDynamic("force_decimal")(force_decimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_decimal)) __obj.updateDynamic("force_decimal")(force_decimal.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsDecimalOptions]
   }

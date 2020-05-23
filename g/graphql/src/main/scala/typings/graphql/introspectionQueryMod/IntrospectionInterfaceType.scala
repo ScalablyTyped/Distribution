@@ -23,10 +23,10 @@ object IntrospectionInterfaceType {
     kind: INTERFACE,
     name: String,
     possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]],
-    description: Maybe[String] = null
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined
   ): IntrospectionInterfaceType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionInterfaceType]
   }
 }

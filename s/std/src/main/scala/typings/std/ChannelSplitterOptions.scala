@@ -11,16 +11,16 @@ trait ChannelSplitterOptions extends AudioNodeOptions {
 object ChannelSplitterOptions {
   @scala.inline
   def apply(
-    channelCount: Int | Double = null,
+    channelCount: js.UndefOr[Double] = js.undefined,
     channelCountMode: ChannelCountMode = null,
     channelInterpretation: ChannelInterpretation = null,
-    numberOfOutputs: Int | Double = null
+    numberOfOutputs: js.UndefOr[Double] = js.undefined
   ): ChannelSplitterOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
     if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
     if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (numberOfOutputs != null) __obj.updateDynamic("numberOfOutputs")(numberOfOutputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfOutputs)) __obj.updateDynamic("numberOfOutputs")(numberOfOutputs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSplitterOptions]
   }
 }

@@ -27,7 +27,7 @@ trait LambdaTarget extends js.Object {
     */
   var status: js.UndefOr[TargetStatus] = js.native
   /**
-    *  The ARN of the target. 
+    *  The Amazon Resource Name (ARN) of the target. 
     */
   var targetArn: js.UndefOr[TargetArn] = js.native
   /**

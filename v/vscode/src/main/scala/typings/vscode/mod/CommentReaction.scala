@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait CommentReaction extends js.Object {
   /**
-  		 * Whether the [author](CommentAuthorInformation) of the comment has reacted to this reaction
-  		 */
+    * Whether the [author](CommentAuthorInformation) of the comment has reacted to this reaction
+    */
   val authorHasReacted: Boolean
   /**
-  		 * The number of users who have reacted to this reaction
-  		 */
+    * The number of users who have reacted to this reaction
+    */
   val count: Double
   /**
-  		 * Icon for the reaction shown in UI.
-  		 */
+    * Icon for the reaction shown in UI.
+    */
   val iconPath: String | Uri
   /**
-  		 * The human-readable label for the reaction
-  		 */
+    * The human-readable label for the reaction
+    */
   val label: String
 }
 

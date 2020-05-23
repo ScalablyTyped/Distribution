@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -83,8 +82,4 @@ trait promiseUtils extends js.Object {
   def resolve[T](): js.Promise[T] = js.native
   def resolve[T](value: T): js.Promise[T] = js.native
 }
-
-@JSGlobal("__esri.promiseUtils")
-@js.native
-object promiseUtils extends TopLevel[promiseUtils]
 

@@ -14,7 +14,7 @@ object JNotifyInitOptions {
   def apply(appendType: String = null, oneAtTime: js.UndefOr[Boolean] = js.undefined): JNotifyInitOptions = {
     val __obj = js.Dynamic.literal()
     if (appendType != null) __obj.updateDynamic("appendType")(appendType.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneAtTime)) __obj.updateDynamic("oneAtTime")(oneAtTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneAtTime)) __obj.updateDynamic("oneAtTime")(oneAtTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JNotifyInitOptions]
   }
 }

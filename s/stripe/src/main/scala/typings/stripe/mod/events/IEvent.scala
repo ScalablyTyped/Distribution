@@ -1,7 +1,7 @@
 package typings.stripe.mod.events
 
-import typings.stripe.AnonId
-import typings.stripe.AnonPreviousattributes
+import typings.stripe.anon.Id
+import typings.stripe.anon.Previousattributes
 import typings.stripe.mod.IResourceObject
 import typings.stripe.stripeStrings.event
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait IEvent extends IResourceObject {
   /**
     * Hash containing data associated with the event.
     */
-  var data: AnonPreviousattributes
+  var data: Previousattributes
   var livemode: Boolean
   /**
     * Value is "event"
@@ -39,7 +39,7 @@ trait IEvent extends IResourceObject {
   /**
     * Information on the API request that instigated the event.
     */
-  var request: AnonId
+  var request: Id
   /**
     * Description of the event: e.g. invoice.created, charge.refunded, etc.
     */
@@ -51,12 +51,12 @@ object IEvent {
   def apply(
     api_version: String,
     created: Double,
-    data: AnonPreviousattributes,
+    data: Previousattributes,
     id: String,
     livemode: Boolean,
     `object`: event,
     pending_webhooks: Double,
-    request: AnonId,
+    request: Id,
     `type`: String,
     account: String = null
   ): IEvent = {

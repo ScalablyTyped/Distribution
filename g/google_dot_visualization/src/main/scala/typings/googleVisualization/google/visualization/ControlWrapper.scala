@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.visualization.ControlWrapper")
 @js.native
-class ControlWrapper () extends js.Object {
-  def this(opt_spec: ControlWrapperOptions) = this()
+trait ControlWrapper extends js.Object {
   def draw(): Unit = js.native
   def getContainerId(): String = js.native
   def getControl(): ControlWrapper = js.native

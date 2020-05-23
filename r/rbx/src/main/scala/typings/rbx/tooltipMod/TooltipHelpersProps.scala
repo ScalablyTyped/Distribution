@@ -1,6 +1,6 @@
 package typings.rbx.tooltipMod
 
-import typings.rbx.KinVariablesbreakpointsco
+import typings.rbx.anon.KinVariablesbreakpointsco
 import typings.rbx.rbxStrings.black
 import typings.rbx.rbxStrings.bottom
 import typings.rbx.rbxStrings.danger
@@ -42,9 +42,9 @@ object TooltipHelpersProps {
   ): TooltipHelpersProps = {
     val __obj = js.Dynamic.literal()
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipActive)) __obj.updateDynamic("tooltipActive")(tooltipActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipActive)) __obj.updateDynamic("tooltipActive")(tooltipActive.get.asInstanceOf[js.Any])
     if (tooltipColor != null) __obj.updateDynamic("tooltipColor")(tooltipColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipMultiline)) __obj.updateDynamic("tooltipMultiline")(tooltipMultiline.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipMultiline)) __obj.updateDynamic("tooltipMultiline")(tooltipMultiline.get.asInstanceOf[js.Any])
     if (tooltipPosition != null) __obj.updateDynamic("tooltipPosition")(tooltipPosition.asInstanceOf[js.Any])
     if (tooltipResponsive != null) __obj.updateDynamic("tooltipResponsive")(tooltipResponsive.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipHelpersProps]

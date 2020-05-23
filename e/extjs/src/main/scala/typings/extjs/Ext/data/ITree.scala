@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation._
 
 trait ITree extends IObservable {
   /** [Method] Gets a node in this tree by its id
-  		* @param id String
-  		* @returns Ext.data.NodeInterface The match node.
-  		*/
+    * @param id String
+    * @returns Ext.data.NodeInterface The match node.
+    */
   var getNodeById: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], INodeInterface]] = js.undefined
   /** [Method] Returns the root node for this tree
-  		* @returns Ext.data.NodeInterface
-  		*/
+    * @returns Ext.data.NodeInterface
+    */
   var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.undefined
   /** [Method] Removes the root node from this tree
-  		* @returns Ext.data.NodeInterface The root node
-  		*/
+    * @returns Ext.data.NodeInterface The root node
+    */
   var removeRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.undefined
   /** [Property] (Ext.data.NodeInterface) */
   var root: js.UndefOr[INodeInterface] = js.undefined
   /** [Method] Sets the root node for this tree
-  		* @param node Ext.data.NodeInterface
-  		* @returns Ext.data.NodeInterface The root node
-  		*/
+    * @param node Ext.data.NodeInterface
+    * @returns Ext.data.NodeInterface The root node
+    */
   var setRootNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[INodeInterface], INodeInterface]] = js.undefined
 }
 
@@ -101,7 +101,7 @@ object ITree {
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -117,7 +117,7 @@ object ITree {
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setRootNode != null) __obj.updateDynamic("setRootNode")(js.Any.fromFunction1(setRootNode))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

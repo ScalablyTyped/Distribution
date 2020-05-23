@@ -1,6 +1,6 @@
 package typings.gapiClientBigquery.gapi.client.bigquery
 
-import typings.gapiClientBigquery.AnonConfiguration
+import typings.gapiClientBigquery.anon.Configuration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait JobList extends js.Object {
   /** A hash of this page of results. */
   var etag: js.UndefOr[String] = js.undefined
   /** List of jobs that were requested. */
-  var jobs: js.UndefOr[js.Array[AnonConfiguration]] = js.undefined
+  var jobs: js.UndefOr[js.Array[Configuration]] = js.undefined
   /** The resource type of the response. */
   var kind: js.UndefOr[String] = js.undefined
   /** A token to request the next page of results. */
@@ -20,7 +20,7 @@ object JobList {
   @scala.inline
   def apply(
     etag: String = null,
-    jobs: js.Array[AnonConfiguration] = null,
+    jobs: js.Array[Configuration] = null,
     kind: String = null,
     nextPageToken: String = null
   ): JobList = {

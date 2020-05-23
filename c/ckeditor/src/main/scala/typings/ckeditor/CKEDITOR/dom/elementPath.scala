@@ -7,11 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.dom.elementPath")
 @js.native
-class elementPath protected () extends js.Object {
-  def this(startNode: element) = this()
-  def this(startNode: element, root: element) = this()
+trait elementPath extends js.Object {
   val block: element = js.native
   val blockLimit: element = js.native
   val elements: js.Array[element] = js.native

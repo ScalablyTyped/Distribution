@@ -1,6 +1,6 @@
 package typings.reactCoinhive.mod
 
-import typings.reactCoinhive.AnonAuthedmine
+import typings.reactCoinhive.anon.Authedmine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ class default () extends CoinHive
 @JSImport("react-coinhive", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var src: AnonAuthedmine = js.native
+  var src: Authedmine = js.native
   def getMinerData(miner: js.Any): js.Any = js.native
 }
 

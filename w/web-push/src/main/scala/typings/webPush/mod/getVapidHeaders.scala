@@ -1,6 +1,6 @@
 package typings.webPush.mod
 
-import typings.webPush.AnonAuthorizationCryptoKey
+import typings.webPush.anon.AuthorizationCryptoKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ object getVapidHeaders extends js.Object {
     publicKey: String,
     privateKey: String,
     contentEncoding: ContentEncoding
-  ): AnonAuthorizationCryptoKey = js.native
+  ): AuthorizationCryptoKey = js.native
   def apply(
     audience: String,
     subject: String,
@@ -22,6 +22,6 @@ object getVapidHeaders extends js.Object {
     privateKey: String,
     contentEncoding: ContentEncoding,
     expiration: Double
-  ): AnonAuthorizationCryptoKey = js.native
+  ): AuthorizationCryptoKey = js.native
 }
 

@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class InputGroup ()
   extends AbstractPureComponent2[IInputGroupProps with HTMLInputProps, IInputGroupState, js.Object] {
+  var leftElement: js.Any = js.native
+  var maybeRenderLeftElement: js.Any = js.native
   var maybeRenderRightElement: js.Any = js.native
   var refHandlers: js.Any = js.native
   var rightElement: js.Any = js.native

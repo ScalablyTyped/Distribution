@@ -1,10 +1,10 @@
 package typings.gapiClientCloudkms.gapi.client.cloudkms
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCloudkms.AnonAccesstoken
-import typings.gapiClientCloudkms.AnonAlt
-import typings.gapiClientCloudkms.AnonBearertoken
-import typings.gapiClientCloudkms.AnonCallback
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCloudkms.anon.Accesstoken
+import typings.gapiClientCloudkms.anon.Alt
+import typings.gapiClientCloudkms.anon.Bearertoken
+import typings.gapiClientCloudkms.anon.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait CryptoKeyVersionsResource extends js.Object {
     * state will be set to
     * ENABLED.
     */
-  def create(request: AnonAccesstoken): Request_[CryptoKeyVersion]
+  def create(request: Accesstoken): Request[CryptoKeyVersion]
   /**
     * Schedule a CryptoKeyVersion for destruction.
     *
@@ -32,11 +32,11 @@ trait CryptoKeyVersionsResource extends js.Object {
     * Before the destroy_time is reached,
     * RestoreCryptoKeyVersion may be called to reverse the process.
     */
-  def destroy(request: AnonAlt): Request_[CryptoKeyVersion]
+  def destroy(request: Alt): Request[CryptoKeyVersion]
   /** Returns metadata for a given CryptoKeyVersion. */
-  def get(request: AnonAlt): Request_[CryptoKeyVersion]
+  def get(request: Alt): Request[CryptoKeyVersion]
   /** Lists CryptoKeyVersions. */
-  def list(request: AnonBearertoken): Request_[ListCryptoKeyVersionsResponse]
+  def list(request: Bearertoken): Request[ListCryptoKeyVersionsResponse]
   /**
     * Update a CryptoKeyVersion's metadata.
     *
@@ -46,7 +46,7 @@ trait CryptoKeyVersionsResource extends js.Object {
     * method. See DestroyCryptoKeyVersion and RestoreCryptoKeyVersion to
     * move between other states.
     */
-  def patch(request: AnonCallback): Request_[CryptoKeyVersion]
+  def patch(request: Callback): Request[CryptoKeyVersion]
   /**
     * Restore a CryptoKeyVersion in the
     * DESTROY_SCHEDULED,
@@ -56,18 +56,18 @@ trait CryptoKeyVersionsResource extends js.Object {
     * will be set to DISABLED,
     * and destroy_time will be cleared.
     */
-  def restore(request: AnonAlt): Request_[CryptoKeyVersion]
+  def restore(request: Alt): Request[CryptoKeyVersion]
 }
 
 object CryptoKeyVersionsResource {
   @scala.inline
   def apply(
-    create: AnonAccesstoken => Request_[CryptoKeyVersion],
-    destroy: AnonAlt => Request_[CryptoKeyVersion],
-    get: AnonAlt => Request_[CryptoKeyVersion],
-    list: AnonBearertoken => Request_[ListCryptoKeyVersionsResponse],
-    patch: AnonCallback => Request_[CryptoKeyVersion],
-    restore: AnonAlt => Request_[CryptoKeyVersion]
+    create: Accesstoken => Request[CryptoKeyVersion],
+    destroy: Alt => Request[CryptoKeyVersion],
+    get: Alt => Request[CryptoKeyVersion],
+    list: Bearertoken => Request[ListCryptoKeyVersionsResponse],
+    patch: Callback => Request[CryptoKeyVersion],
+    restore: Alt => Request[CryptoKeyVersion]
   ): CryptoKeyVersionsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), destroy = js.Any.fromFunction1(destroy), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), restore = js.Any.fromFunction1(restore))
     __obj.asInstanceOf[CryptoKeyVersionsResource]

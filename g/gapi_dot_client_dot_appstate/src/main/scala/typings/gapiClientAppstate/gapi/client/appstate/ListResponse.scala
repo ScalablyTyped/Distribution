@@ -15,11 +15,15 @@ trait ListResponse extends js.Object {
 
 object ListResponse {
   @scala.inline
-  def apply(items: js.Array[GetResponse] = null, kind: String = null, maximumKeyCount: Int | Double = null): ListResponse = {
+  def apply(
+    items: js.Array[GetResponse] = null,
+    kind: String = null,
+    maximumKeyCount: js.UndefOr[Double] = js.undefined
+  ): ListResponse = {
     val __obj = js.Dynamic.literal()
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maximumKeyCount != null) __obj.updateDynamic("maximumKeyCount")(maximumKeyCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumKeyCount)) __obj.updateDynamic("maximumKeyCount")(maximumKeyCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResponse]
   }
 }

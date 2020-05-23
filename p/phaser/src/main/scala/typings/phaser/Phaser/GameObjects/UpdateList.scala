@@ -14,14 +14,8 @@ import scala.scalajs.js.annotation._
   * 
   * Some or all of these Game Objects may also be part of the Scene's [Display List]{@link Phaser.GameObjects.DisplayList}, for Rendering.
   */
-@JSGlobal("Phaser.GameObjects.UpdateList")
 @js.native
-class UpdateList protected () extends ProcessQueue[GameObject] {
-  /**
-    * 
-    * @param scene The Scene that the Update List belongs to.
-    */
-  def this(scene: Scene) = this()
+trait UpdateList extends ProcessQueue[GameObject] {
   /**
     * The Scene that the Update List belongs to.
     */

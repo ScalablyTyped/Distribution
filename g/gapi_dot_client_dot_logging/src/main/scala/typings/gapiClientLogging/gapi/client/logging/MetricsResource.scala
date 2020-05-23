@@ -1,34 +1,34 @@
 package typings.gapiClientLogging.gapi.client.logging
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientLogging.AnonAccesstoken
-import typings.gapiClientLogging.AnonBearertoken
-import typings.gapiClientLogging.AnonMetricName
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientLogging.anon.Accesstoken
+import typings.gapiClientLogging.anon.Bearertoken
+import typings.gapiClientLogging.anon.MetricName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MetricsResource extends js.Object {
   /** Creates a logs-based metric. */
-  def create(request: AnonAccesstoken): Request_[LogMetric]
+  def create(request: Accesstoken): Request[LogMetric]
   /** Deletes a logs-based metric. */
-  def delete(request: AnonMetricName): Request_[js.Object]
+  def delete(request: MetricName): Request[js.Object]
   /** Gets a logs-based metric. */
-  def get(request: AnonMetricName): Request_[LogMetric]
+  def get(request: MetricName): Request[LogMetric]
   /** Lists logs-based metrics. */
-  def list(request: AnonBearertoken): Request_[ListLogMetricsResponse]
+  def list(request: Bearertoken): Request[ListLogMetricsResponse]
   /** Creates or updates a logs-based metric. */
-  def update(request: AnonMetricName): Request_[LogMetric]
+  def update(request: MetricName): Request[LogMetric]
 }
 
 object MetricsResource {
   @scala.inline
   def apply(
-    create: AnonAccesstoken => Request_[LogMetric],
-    delete: AnonMetricName => Request_[js.Object],
-    get: AnonMetricName => Request_[LogMetric],
-    list: AnonBearertoken => Request_[ListLogMetricsResponse],
-    update: AnonMetricName => Request_[LogMetric]
+    create: Accesstoken => Request[LogMetric],
+    delete: MetricName => Request[js.Object],
+    get: MetricName => Request[LogMetric],
+    list: Bearertoken => Request[ListLogMetricsResponse],
+    update: MetricName => Request[LogMetric]
   ): MetricsResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[MetricsResource]

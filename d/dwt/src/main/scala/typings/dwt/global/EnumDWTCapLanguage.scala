@@ -1,0 +1,143 @@
+package typings.dwt.global
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** CAP_LANGUAGE values. */
+@JSGlobal("EnumDWT_CapLanguage")
+@js.native
+object EnumDWTCapLanguage extends js.Object {
+  /* 14 */ val TWLG_AFRIKAANS: typings.dwt.EnumDWTCapLanguage.TWLG_AFRIKAANS with Double = js.native
+  /* 15 */ val TWLG_ALBANIA: typings.dwt.EnumDWTCapLanguage.TWLG_ALBANIA with Double = js.native
+  /* 16 */ val TWLG_ARABIC: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC with Double = js.native
+  /* 17 */ val TWLG_ARABIC_ALGERIA: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_ALGERIA with Double = js.native
+  /* 18 */ val TWLG_ARABIC_BAHRAIN: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_BAHRAIN with Double = js.native
+  /* 19 */ val TWLG_ARABIC_EGYPT: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_EGYPT with Double = js.native
+  /* 20 */ val TWLG_ARABIC_IRAQ: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_IRAQ with Double = js.native
+  /* 21 */ val TWLG_ARABIC_JORDAN: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_JORDAN with Double = js.native
+  /* 22 */ val TWLG_ARABIC_KUWAIT: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_KUWAIT with Double = js.native
+  /* 23 */ val TWLG_ARABIC_LEBANON: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_LEBANON with Double = js.native
+  /* 24 */ val TWLG_ARABIC_LIBYA: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_LIBYA with Double = js.native
+  /* 25 */ val TWLG_ARABIC_MOROCCO: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_MOROCCO with Double = js.native
+  /* 26 */ val TWLG_ARABIC_OMAN: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_OMAN with Double = js.native
+  /* 27 */ val TWLG_ARABIC_QATAR: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_QATAR with Double = js.native
+  /* 28 */ val TWLG_ARABIC_SAUDIARABIA: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_SAUDIARABIA with Double = js.native
+  /* 29 */ val TWLG_ARABIC_SYRIA: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_SYRIA with Double = js.native
+  /* 30 */ val TWLG_ARABIC_TUNISIA: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_TUNISIA with Double = js.native
+  /* 31 */ val TWLG_ARABIC_UAE: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_UAE with Double = js.native
+  /* 32 */ val TWLG_ARABIC_YEMEN: typings.dwt.EnumDWTCapLanguage.TWLG_ARABIC_YEMEN with Double = js.native
+  /* 87 */ val TWLG_ASSAMESE: typings.dwt.EnumDWTCapLanguage.TWLG_ASSAMESE with Double = js.native
+  /* 33 */ val TWLG_BASQUE: typings.dwt.EnumDWTCapLanguage.TWLG_BASQUE with Double = js.native
+  /* 88 */ val TWLG_BENGALI: typings.dwt.EnumDWTCapLanguage.TWLG_BENGALI with Double = js.native
+  /* 89 */ val TWLG_BIHARI: typings.dwt.EnumDWTCapLanguage.TWLG_BIHARI with Double = js.native
+  /* 90 */ val TWLG_BODO: typings.dwt.EnumDWTCapLanguage.TWLG_BODO with Double = js.native
+  /* 35 */ val TWLG_BULGARIAN: typings.dwt.EnumDWTCapLanguage.TWLG_BULGARIAN with Double = js.native
+  /* 34 */ val TWLG_BYELORUSSIAN: typings.dwt.EnumDWTCapLanguage.TWLG_BYELORUSSIAN with Double = js.native
+  /* 36 */ val TWLG_CATALAN: typings.dwt.EnumDWTCapLanguage.TWLG_CATALAN with Double = js.native
+  /* 37 */ val TWLG_CHINESE: typings.dwt.EnumDWTCapLanguage.TWLG_CHINESE with Double = js.native
+  /* 38 */ val TWLG_CHINESE_HONGKONG: typings.dwt.EnumDWTCapLanguage.TWLG_CHINESE_HONGKONG with Double = js.native
+  /* 39 */ val TWLG_CHINESE_PRC: typings.dwt.EnumDWTCapLanguage.TWLG_CHINESE_PRC with Double = js.native
+  /* 41 */ val TWLG_CHINESE_SIMPLIFIED: typings.dwt.EnumDWTCapLanguage.TWLG_CHINESE_SIMPLIFIED with Double = js.native
+  /* 40 */ val TWLG_CHINESE_SINGAPORE: typings.dwt.EnumDWTCapLanguage.TWLG_CHINESE_SINGAPORE with Double = js.native
+  /* 42 */ val TWLG_CHINESE_TAIWAN: typings.dwt.EnumDWTCapLanguage.TWLG_CHINESE_TAIWAN with Double = js.native
+  /* 43 */ val TWLG_CHINESE_TRADITIONAL: typings.dwt.EnumDWTCapLanguage.TWLG_CHINESE_TRADITIONAL with Double = js.native
+  /* 44 */ val TWLG_CROATIA: typings.dwt.EnumDWTCapLanguage.TWLG_CROATIA with Double = js.native
+  /* 45 */ val TWLG_CZECH: typings.dwt.EnumDWTCapLanguage.TWLG_CZECH with Double = js.native
+  /* 0 */ val TWLG_DAN: typings.dwt.EnumDWTCapLanguage.TWLG_DAN with Double = js.native
+  /* 0 */ val TWLG_DANISH: typings.dwt.EnumDWTCapLanguage.TWLG_DANISH with Double = js.native
+  /* 91 */ val TWLG_DOGRI: typings.dwt.EnumDWTCapLanguage.TWLG_DOGRI with Double = js.native
+  /* 1 */ val TWLG_DUT: typings.dwt.EnumDWTCapLanguage.TWLG_DUT with Double = js.native
+  /* 1 */ val TWLG_DUTCH: typings.dwt.EnumDWTCapLanguage.TWLG_DUTCH with Double = js.native
+  /* 46 */ val TWLG_DUTCH_BELGIAN: typings.dwt.EnumDWTCapLanguage.TWLG_DUTCH_BELGIAN with Double = js.native
+  /* 2 */ val TWLG_ENG: typings.dwt.EnumDWTCapLanguage.TWLG_ENG with Double = js.native
+  /* 2 */ val TWLG_ENGLISH: typings.dwt.EnumDWTCapLanguage.TWLG_ENGLISH with Double = js.native
+  /* 47 */ val TWLG_ENGLISH_AUSTRALIAN: typings.dwt.EnumDWTCapLanguage.TWLG_ENGLISH_AUSTRALIAN with Double = js.native
+  /* 48 */ val TWLG_ENGLISH_CANADIAN: typings.dwt.EnumDWTCapLanguage.TWLG_ENGLISH_CANADIAN with Double = js.native
+  /* 49 */ val TWLG_ENGLISH_IRELAND: typings.dwt.EnumDWTCapLanguage.TWLG_ENGLISH_IRELAND with Double = js.native
+  /* 50 */ val TWLG_ENGLISH_NEWZEALAND: typings.dwt.EnumDWTCapLanguage.TWLG_ENGLISH_NEWZEALAND with Double = js.native
+  /* 51 */ val TWLG_ENGLISH_SOUTHAFRICA: typings.dwt.EnumDWTCapLanguage.TWLG_ENGLISH_SOUTHAFRICA with Double = js.native
+  /* 52 */ val TWLG_ENGLISH_UK: typings.dwt.EnumDWTCapLanguage.TWLG_ENGLISH_UK with Double = js.native
+  /* 13 */ val TWLG_ENGLISH_USA: typings.dwt.EnumDWTCapLanguage.TWLG_ENGLISH_USA with Double = js.native
+  /* 53 */ val TWLG_ESTONIAN: typings.dwt.EnumDWTCapLanguage.TWLG_ESTONIAN with Double = js.native
+  /* 54 */ val TWLG_FAEROESE: typings.dwt.EnumDWTCapLanguage.TWLG_FAEROESE with Double = js.native
+  /* 55 */ val TWLG_FARSI: typings.dwt.EnumDWTCapLanguage.TWLG_FARSI with Double = js.native
+  /* 3 */ val TWLG_FCF: typings.dwt.EnumDWTCapLanguage.TWLG_FCF with Double = js.native
+  /* 4 */ val TWLG_FIN: typings.dwt.EnumDWTCapLanguage.TWLG_FIN with Double = js.native
+  /* 4 */ val TWLG_FINNISH: typings.dwt.EnumDWTCapLanguage.TWLG_FINNISH with Double = js.native
+  /* 5 */ val TWLG_FRENCH: typings.dwt.EnumDWTCapLanguage.TWLG_FRENCH with Double = js.native
+  /* 56 */ val TWLG_FRENCH_BELGIAN: typings.dwt.EnumDWTCapLanguage.TWLG_FRENCH_BELGIAN with Double = js.native
+  /* 3 */ val TWLG_FRENCH_CANADIAN: typings.dwt.EnumDWTCapLanguage.TWLG_FRENCH_CANADIAN with Double = js.native
+  /* 57 */ val TWLG_FRENCH_LUXEMBOURG: typings.dwt.EnumDWTCapLanguage.TWLG_FRENCH_LUXEMBOURG with Double = js.native
+  /* 58 */ val TWLG_FRENCH_SWISS: typings.dwt.EnumDWTCapLanguage.TWLG_FRENCH_SWISS with Double = js.native
+  /* 5 */ val TWLG_FRN: typings.dwt.EnumDWTCapLanguage.TWLG_FRN with Double = js.native
+  /* 6 */ val TWLG_GER: typings.dwt.EnumDWTCapLanguage.TWLG_GER with Double = js.native
+  /* 6 */ val TWLG_GERMAN: typings.dwt.EnumDWTCapLanguage.TWLG_GERMAN with Double = js.native
+  /* 59 */ val TWLG_GERMAN_AUSTRIAN: typings.dwt.EnumDWTCapLanguage.TWLG_GERMAN_AUSTRIAN with Double = js.native
+  /* 61 */ val TWLG_GERMAN_LIECHTENSTEIN: typings.dwt.EnumDWTCapLanguage.TWLG_GERMAN_LIECHTENSTEIN with Double = js.native
+  /* 60 */ val TWLG_GERMAN_LUXEMBOURG: typings.dwt.EnumDWTCapLanguage.TWLG_GERMAN_LUXEMBOURG with Double = js.native
+  /* 62 */ val TWLG_GERMAN_SWISS: typings.dwt.EnumDWTCapLanguage.TWLG_GERMAN_SWISS with Double = js.native
+  /* 63 */ val TWLG_GREEK: typings.dwt.EnumDWTCapLanguage.TWLG_GREEK with Double = js.native
+  /* 92 */ val TWLG_GUJARATI: typings.dwt.EnumDWTCapLanguage.TWLG_GUJARATI with Double = js.native
+  /* 93 */ val TWLG_HARYANVI: typings.dwt.EnumDWTCapLanguage.TWLG_HARYANVI with Double = js.native
+  /* 64 */ val TWLG_HEBREW: typings.dwt.EnumDWTCapLanguage.TWLG_HEBREW with Double = js.native
+  /* 94 */ val TWLG_HINDI: typings.dwt.EnumDWTCapLanguage.TWLG_HINDI with Double = js.native
+  /* 65 */ val TWLG_HUNGARIAN: typings.dwt.EnumDWTCapLanguage.TWLG_HUNGARIAN with Double = js.native
+  /* 7 */ val TWLG_ICE: typings.dwt.EnumDWTCapLanguage.TWLG_ICE with Double = js.native
+  /* 7 */ val TWLG_ICELANDIC: typings.dwt.EnumDWTCapLanguage.TWLG_ICELANDIC with Double = js.native
+  /* 66 */ val TWLG_INDONESIAN: typings.dwt.EnumDWTCapLanguage.TWLG_INDONESIAN with Double = js.native
+  /* 8 */ val TWLG_ITALIAN: typings.dwt.EnumDWTCapLanguage.TWLG_ITALIAN with Double = js.native
+  /* 67 */ val TWLG_ITALIAN_SWISS: typings.dwt.EnumDWTCapLanguage.TWLG_ITALIAN_SWISS with Double = js.native
+  /* 8 */ val TWLG_ITN: typings.dwt.EnumDWTCapLanguage.TWLG_ITN with Double = js.native
+  /* 68 */ val TWLG_JAPANESE: typings.dwt.EnumDWTCapLanguage.TWLG_JAPANESE with Double = js.native
+  /* 95 */ val TWLG_KANNADA: typings.dwt.EnumDWTCapLanguage.TWLG_KANNADA with Double = js.native
+  /* 96 */ val TWLG_KASHMIRI: typings.dwt.EnumDWTCapLanguage.TWLG_KASHMIRI with Double = js.native
+  /* 69 */ val TWLG_KOREAN: typings.dwt.EnumDWTCapLanguage.TWLG_KOREAN with Double = js.native
+  /* 70 */ val TWLG_KOREAN_JOHAB: typings.dwt.EnumDWTCapLanguage.TWLG_KOREAN_JOHAB with Double = js.native
+  /* 71 */ val TWLG_LATVIAN: typings.dwt.EnumDWTCapLanguage.TWLG_LATVIAN with Double = js.native
+  /* 72 */ val TWLG_LITHUANIAN: typings.dwt.EnumDWTCapLanguage.TWLG_LITHUANIAN with Double = js.native
+  /* 97 */ val TWLG_MALAYALAM: typings.dwt.EnumDWTCapLanguage.TWLG_MALAYALAM with Double = js.native
+  /* 98 */ val TWLG_MARATHI: typings.dwt.EnumDWTCapLanguage.TWLG_MARATHI with Double = js.native
+  /* 99 */ val TWLG_MARWARI: typings.dwt.EnumDWTCapLanguage.TWLG_MARWARI with Double = js.native
+  /* 100 */ val TWLG_MEGHALAYAN: typings.dwt.EnumDWTCapLanguage.TWLG_MEGHALAYAN with Double = js.native
+  /* 101 */ val TWLG_MIZO: typings.dwt.EnumDWTCapLanguage.TWLG_MIZO with Double = js.native
+  /* 102 */ val TWLG_NAGA: typings.dwt.EnumDWTCapLanguage.TWLG_NAGA with Double = js.native
+  /* 9 */ val TWLG_NOR: typings.dwt.EnumDWTCapLanguage.TWLG_NOR with Double = js.native
+  /* 9 */ val TWLG_NORWEGIAN: typings.dwt.EnumDWTCapLanguage.TWLG_NORWEGIAN with Double = js.native
+  /* 73 */ val TWLG_NORWEGIAN_BOKMAL: typings.dwt.EnumDWTCapLanguage.TWLG_NORWEGIAN_BOKMAL with Double = js.native
+  /* 74 */ val TWLG_NORWEGIAN_NYNORSK: typings.dwt.EnumDWTCapLanguage.TWLG_NORWEGIAN_NYNORSK with Double = js.native
+  /* 103 */ val TWLG_ORISSI: typings.dwt.EnumDWTCapLanguage.TWLG_ORISSI with Double = js.native
+  /* 75 */ val TWLG_POLISH: typings.dwt.EnumDWTCapLanguage.TWLG_POLISH with Double = js.native
+  /* 10 */ val TWLG_POR: typings.dwt.EnumDWTCapLanguage.TWLG_POR with Double = js.native
+  /* 10 */ val TWLG_PORTUGUESE: typings.dwt.EnumDWTCapLanguage.TWLG_PORTUGUESE with Double = js.native
+  /* 76 */ val TWLG_PORTUGUESE_BRAZIL: typings.dwt.EnumDWTCapLanguage.TWLG_PORTUGUESE_BRAZIL with Double = js.native
+  /* 104 */ val TWLG_PUNJABI: typings.dwt.EnumDWTCapLanguage.TWLG_PUNJABI with Double = js.native
+  /* 105 */ val TWLG_PUSHTU: typings.dwt.EnumDWTCapLanguage.TWLG_PUSHTU with Double = js.native
+  /* 77 */ val TWLG_ROMANIAN: typings.dwt.EnumDWTCapLanguage.TWLG_ROMANIAN with Double = js.native
+  /* 78 */ val TWLG_RUSSIAN: typings.dwt.EnumDWTCapLanguage.TWLG_RUSSIAN with Double = js.native
+  /* 106 */ val TWLG_SERBIAN_CYRILLIC: typings.dwt.EnumDWTCapLanguage.TWLG_SERBIAN_CYRILLIC with Double = js.native
+  /* 79 */ val TWLG_SERBIAN_LATIN: typings.dwt.EnumDWTCapLanguage.TWLG_SERBIAN_LATIN with Double = js.native
+  /* 107 */ val TWLG_SIKKIMI: typings.dwt.EnumDWTCapLanguage.TWLG_SIKKIMI with Double = js.native
+  /* 80 */ val TWLG_SLOVAK: typings.dwt.EnumDWTCapLanguage.TWLG_SLOVAK with Double = js.native
+  /* 81 */ val TWLG_SLOVENIAN: typings.dwt.EnumDWTCapLanguage.TWLG_SLOVENIAN with Double = js.native
+  /* 11 */ val TWLG_SPA: typings.dwt.EnumDWTCapLanguage.TWLG_SPA with Double = js.native
+  /* 11 */ val TWLG_SPANISH: typings.dwt.EnumDWTCapLanguage.TWLG_SPANISH with Double = js.native
+  /* 82 */ val TWLG_SPANISH_MEXICAN: typings.dwt.EnumDWTCapLanguage.TWLG_SPANISH_MEXICAN with Double = js.native
+  /* 83 */ val TWLG_SPANISH_MODERN: typings.dwt.EnumDWTCapLanguage.TWLG_SPANISH_MODERN with Double = js.native
+  /* 12 */ val TWLG_SWE: typings.dwt.EnumDWTCapLanguage.TWLG_SWE with Double = js.native
+  /* 12 */ val TWLG_SWEDISH: typings.dwt.EnumDWTCapLanguage.TWLG_SWEDISH with Double = js.native
+  /* 108 */ val TWLG_SWEDISH_FINLAND: typings.dwt.EnumDWTCapLanguage.TWLG_SWEDISH_FINLAND with Double = js.native
+  /* 109 */ val TWLG_TAMIL: typings.dwt.EnumDWTCapLanguage.TWLG_TAMIL with Double = js.native
+  /* 110 */ val TWLG_TELUGU: typings.dwt.EnumDWTCapLanguage.TWLG_TELUGU with Double = js.native
+  /* 84 */ val TWLG_THAI: typings.dwt.EnumDWTCapLanguage.TWLG_THAI with Double = js.native
+  /* 111 */ val TWLG_TRIPURI: typings.dwt.EnumDWTCapLanguage.TWLG_TRIPURI with Double = js.native
+  /* 85 */ val TWLG_TURKISH: typings.dwt.EnumDWTCapLanguage.TWLG_TURKISH with Double = js.native
+  /* 86 */ val TWLG_UKRANIAN: typings.dwt.EnumDWTCapLanguage.TWLG_UKRANIAN with Double = js.native
+  /* 112 */ val TWLG_URDU: typings.dwt.EnumDWTCapLanguage.TWLG_URDU with Double = js.native
+  /* 13 */ val TWLG_USA: typings.dwt.EnumDWTCapLanguage.TWLG_USA with Double = js.native
+  /* -1 */ val TWLG_USERLOCALE: typings.dwt.EnumDWTCapLanguage.TWLG_USERLOCALE with Double = js.native
+  /* 113 */ val TWLG_VIETNAMESE: typings.dwt.EnumDWTCapLanguage.TWLG_VIETNAMESE with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[typings.dwt.EnumDWTCapLanguage with Double] = js.native
+}
+

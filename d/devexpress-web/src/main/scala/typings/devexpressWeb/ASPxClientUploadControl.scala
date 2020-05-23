@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxUploadControl control.
   */
-@JSGlobal("ASPxClientUploadControl")
 @js.native
-class ASPxClientUploadControl () extends ASPxClientControl {
+trait ASPxClientUploadControl extends ASPxClientControl {
   /**
     * Fires when the mouse enters a <strong>drop zone</strong> or an external drop zone element while dragging a file.
     */
@@ -142,16 +141,5 @@ class ASPxClientUploadControl () extends ASPxClientControl {
     * Initiates uploading of the specified file to the web server's memory.
     */
   def UploadFile(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientUploadControl")
-@js.native
-object ASPxClientUploadControl extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientUploadControl type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientUploadControl = js.native
 }
 

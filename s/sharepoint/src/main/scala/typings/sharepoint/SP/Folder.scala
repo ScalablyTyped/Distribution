@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Folder")
 @js.native
-class Folder () extends ClientObject {
+trait Folder extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_contentTypeOrder(): js.Array[ContentTypeId] = js.native
   def get_files(): FileCollection = js.native

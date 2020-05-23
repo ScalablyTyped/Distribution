@@ -81,13 +81,13 @@ object ITokenPayload {
     aud: String = null,
     azp: String = null,
     azpacr: `0` | `1` | `2` = null,
-    exp: Int | Double = null,
+    exp: js.UndefOr[Double] = js.undefined,
     groups: String | js.Array[String] = null,
     hasgroups: `true` = null,
-    iat: Int | Double = null,
+    iat: js.UndefOr[Double] = js.undefined,
     iss: String = null,
     name: String = null,
-    nbf: Int | Double = null,
+    nbf: js.UndefOr[Double] = js.undefined,
     oid: String = null,
     preferred_name: String = null,
     rh: String = null,
@@ -109,13 +109,13 @@ object ITokenPayload {
     if (aud != null) __obj.updateDynamic("aud")(aud.asInstanceOf[js.Any])
     if (azp != null) __obj.updateDynamic("azp")(azp.asInstanceOf[js.Any])
     if (azpacr != null) __obj.updateDynamic("azpacr")(azpacr.asInstanceOf[js.Any])
-    if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp)) __obj.updateDynamic("exp")(exp.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (hasgroups != null) __obj.updateDynamic("hasgroups")(hasgroups.asInstanceOf[js.Any])
-    if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
+    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.get.asInstanceOf[js.Any])
     if (iss != null) __obj.updateDynamic("iss")(iss.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nbf != null) __obj.updateDynamic("nbf")(nbf.asInstanceOf[js.Any])
+    if (!js.isUndefined(nbf)) __obj.updateDynamic("nbf")(nbf.get.asInstanceOf[js.Any])
     if (oid != null) __obj.updateDynamic("oid")(oid.asInstanceOf[js.Any])
     if (preferred_name != null) __obj.updateDynamic("preferred_name")(preferred_name.asInstanceOf[js.Any])
     if (rh != null) __obj.updateDynamic("rh")(rh.asInstanceOf[js.Any])

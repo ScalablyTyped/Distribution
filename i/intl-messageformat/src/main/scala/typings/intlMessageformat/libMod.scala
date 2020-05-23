@@ -1,5 +1,8 @@
 package typings.intlMessageformat
 
+import typings.intlMessageformat.anon.Date
+import typings.intlMessageformat.anon.FnCall
+import typings.intlMessageformat.anon.PartialFormats
 import typings.intlMessageformat.coreMod.Options
 import typings.intlMessageformat.formattersMod.FormatXMLElementFn
 import typings.intlMessageformat.formattersMod.Formats
@@ -218,7 +221,7 @@ object libMod extends js.Object {
   object IntlMessageFormat extends js.Object {
     var __parse: js.UndefOr[FnCall] = js.native
     var defaultLocale: String = js.native
-    var formats: AnonDate = js.native
+    var formats: Date = js.native
   }
   
   /* static members */
@@ -226,7 +229,7 @@ object libMod extends js.Object {
   object default extends js.Object {
     var __parse: js.UndefOr[FnCall] = js.native
     var defaultLocale: String = js.native
-    var formats: AnonDate = js.native
+    var formats: Date = js.native
   }
   
 }

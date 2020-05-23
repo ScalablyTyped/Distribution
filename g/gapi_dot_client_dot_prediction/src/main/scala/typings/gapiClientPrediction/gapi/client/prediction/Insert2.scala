@@ -1,6 +1,6 @@
 package typings.gapiClientPrediction.gapi.client.prediction
 
-import typings.gapiClientPrediction.AnonClassWeightedAccuracy
+import typings.gapiClientPrediction.anon.ClassWeightedAccuracy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Insert2 extends js.Object {
   /** What kind of resource this is. */
   var kind: js.UndefOr[String] = js.undefined
   /** Model metadata. */
-  var modelInfo: js.UndefOr[AnonClassWeightedAccuracy] = js.undefined
+  var modelInfo: js.UndefOr[ClassWeightedAccuracy] = js.undefined
   /** Type of predictive model (CLASSIFICATION or REGRESSION). */
   var modelType: js.UndefOr[String] = js.undefined
   /** A URL to re-request this resource. */
@@ -36,7 +36,7 @@ object Insert2 {
     created: String = null,
     id: String = null,
     kind: String = null,
-    modelInfo: AnonClassWeightedAccuracy = null,
+    modelInfo: ClassWeightedAccuracy = null,
     modelType: String = null,
     selfLink: String = null,
     storageDataLocation: String = null,

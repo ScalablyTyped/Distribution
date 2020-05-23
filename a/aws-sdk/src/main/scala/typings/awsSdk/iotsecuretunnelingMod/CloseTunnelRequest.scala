@@ -18,9 +18,9 @@ trait CloseTunnelRequest extends js.Object {
 
 object CloseTunnelRequest {
   @scala.inline
-  def apply(tunnelId: TunnelId, delete: js.UndefOr[Boolean] = js.undefined): CloseTunnelRequest = {
+  def apply(tunnelId: TunnelId, delete: js.UndefOr[DeleteFlag] = js.undefined): CloseTunnelRequest = {
     val __obj = js.Dynamic.literal(tunnelId = tunnelId.asInstanceOf[js.Any])
-    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseTunnelRequest]
   }
 }

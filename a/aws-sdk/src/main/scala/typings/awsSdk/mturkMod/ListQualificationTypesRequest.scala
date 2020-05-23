@@ -29,14 +29,14 @@ object ListQualificationTypesRequest {
   @scala.inline
   def apply(
     MustBeRequestable: Boolean,
-    MaxResults: Int | Double = null,
-    MustBeOwnedByCaller: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxResults: js.UndefOr[ResultSize] = js.undefined,
+    MustBeOwnedByCaller: js.UndefOr[Boolean] = js.undefined,
     NextToken: PaginationToken = null,
     Query: String = null
   ): ListQualificationTypesRequest = {
     val __obj = js.Dynamic.literal(MustBeRequestable = MustBeRequestable.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(MustBeOwnedByCaller)) __obj.updateDynamic("MustBeOwnedByCaller")(MustBeOwnedByCaller.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MustBeOwnedByCaller)) __obj.updateDynamic("MustBeOwnedByCaller")(MustBeOwnedByCaller.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Query != null) __obj.updateDynamic("Query")(Query.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQualificationTypesRequest]

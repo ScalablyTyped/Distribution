@@ -23,7 +23,7 @@ object CssStylerOptions {
     hasCSSVariable: js.UndefOr[Boolean] = js.undefined
   ): CssStylerOptions = {
     val __obj = js.Dynamic.literal(buildStyles = js.Any.fromFunction1(buildStyles), element = element.asInstanceOf[js.Any], preparseOutput = preparseOutput.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCSSVariable)) __obj.updateDynamic("hasCSSVariable")(hasCSSVariable.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCSSVariable)) __obj.updateDynamic("hasCSSVariable")(hasCSSVariable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssStylerOptions]
   }
 }

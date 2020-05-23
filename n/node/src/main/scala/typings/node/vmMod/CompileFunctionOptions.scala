@@ -29,21 +29,21 @@ object CompileFunctionOptions {
   @scala.inline
   def apply(
     cachedData: Buffer = null,
-    columnOffset: Int | Double = null,
+    columnOffset: js.UndefOr[Double] = js.undefined,
     contextExtensions: js.Array[js.Object] = null,
     filename: String = null,
-    lineOffset: Int | Double = null,
+    lineOffset: js.UndefOr[Double] = js.undefined,
     parsingContext: Context = null,
     produceCachedData: js.UndefOr[Boolean] = js.undefined
   ): CompileFunctionOptions = {
     val __obj = js.Dynamic.literal()
     if (cachedData != null) __obj.updateDynamic("cachedData")(cachedData.asInstanceOf[js.Any])
-    if (columnOffset != null) __obj.updateDynamic("columnOffset")(columnOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnOffset)) __obj.updateDynamic("columnOffset")(columnOffset.get.asInstanceOf[js.Any])
     if (contextExtensions != null) __obj.updateDynamic("contextExtensions")(contextExtensions.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (lineOffset != null) __obj.updateDynamic("lineOffset")(lineOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineOffset)) __obj.updateDynamic("lineOffset")(lineOffset.get.asInstanceOf[js.Any])
     if (parsingContext != null) __obj.updateDynamic("parsingContext")(parsingContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(produceCachedData)) __obj.updateDynamic("produceCachedData")(produceCachedData.asInstanceOf[js.Any])
+    if (!js.isUndefined(produceCachedData)) __obj.updateDynamic("produceCachedData")(produceCachedData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileFunctionOptions]
   }
 }

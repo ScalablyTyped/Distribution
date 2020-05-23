@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "expo-random" : "8.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "expo-random" : "8.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

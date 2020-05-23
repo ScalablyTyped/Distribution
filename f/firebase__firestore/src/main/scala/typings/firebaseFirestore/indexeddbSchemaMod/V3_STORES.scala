@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "V3_STORES")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "V3_STORES")
 @js.native
 object V3_STORES
   extends TopLevel[js.Array[String]]

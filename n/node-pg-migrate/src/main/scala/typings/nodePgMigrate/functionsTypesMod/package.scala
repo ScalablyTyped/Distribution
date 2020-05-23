@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object functionsTypesMod {
-  type CreateFunction = typings.nodePgMigrate.functionsTypesMod.CreateFunctionFn with typings.nodePgMigrate.AnonReverseCreateFunctionFn
+  type CreateFunction = typings.nodePgMigrate.functionsTypesMod.CreateFunctionFn with typings.nodePgMigrate.anon.ReverseCreateFunctionFn
   type CreateFunctionFn = js.Function4[
     /* functionName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* functionParams */ js.Array[typings.nodePgMigrate.functionsTypesMod.FunctionParam], 
@@ -20,7 +20,7 @@ package object functionsTypesMod {
     java.lang.String | js.Array[java.lang.String]
   ]
   type FunctionParam = java.lang.String | typings.nodePgMigrate.functionsTypesMod.FunctionParamType
-  type RenameFunction = typings.nodePgMigrate.functionsTypesMod.RenameFunctionFn with typings.nodePgMigrate.AnonReverseRenameFunctionFn
+  type RenameFunction = typings.nodePgMigrate.functionsTypesMod.RenameFunctionFn with typings.nodePgMigrate.anon.ReverseRenameFunctionFn
   type RenameFunctionFn = js.Function3[
     /* oldFunctionName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* functionParams */ js.Array[typings.nodePgMigrate.functionsTypesMod.FunctionParam], 

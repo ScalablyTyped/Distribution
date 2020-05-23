@@ -33,28 +33,28 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    cell_size: Int | Double = null,
-    color_function: (/* x */ Double, /* y */ Double) => String = null,
+    cell_size: js.UndefOr[Double] = js.undefined,
+    color_function: js.UndefOr[Null | ((/* x */ Double, /* y */ Double) => String)] = js.undefined,
     color_space: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     points: js.Array[Double] = null,
-    seed: Double | String = null,
-    stroke_width: Int | Double = null,
-    variance: Int | Double = null,
-    width: Int | Double = null,
+    seed: js.UndefOr[Null | Double | String] = js.undefined,
+    stroke_width: js.UndefOr[Double] = js.undefined,
+    variance: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
     x_colors: `false` | String | js.Array[String] = null,
     y_colors: `false` | String | js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cell_size != null) __obj.updateDynamic("cell_size")(cell_size.asInstanceOf[js.Any])
-    if (color_function != null) __obj.updateDynamic("color_function")(js.Any.fromFunction2(color_function))
+    if (!js.isUndefined(cell_size)) __obj.updateDynamic("cell_size")(cell_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color_function)) __obj.updateDynamic("color_function")(if (color_function != null) js.Any.fromFunction2(color_function.asInstanceOf[(/* x */ Double, /* y */ Double) => String]) else null)
     if (color_space != null) __obj.updateDynamic("color_space")(color_space.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (stroke_width != null) __obj.updateDynamic("stroke_width")(stroke_width.asInstanceOf[js.Any])
-    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (!js.isUndefined(stroke_width)) __obj.updateDynamic("stroke_width")(stroke_width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(variance)) __obj.updateDynamic("variance")(variance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (x_colors != null) __obj.updateDynamic("x_colors")(x_colors.asInstanceOf[js.Any])
     if (y_colors != null) __obj.updateDynamic("y_colors")(y_colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

@@ -57,7 +57,7 @@ object Options {
     val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
     if (ast != null) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(noTypeDefinitions)) __obj.updateDynamic("noTypeDefinitions")(noTypeDefinitions.asInstanceOf[js.Any])
+    if (!js.isUndefined(noTypeDefinitions)) __obj.updateDynamic("noTypeDefinitions")(noTypeDefinitions.get.asInstanceOf[js.Any])
     if (nodeModulesConfig != null) __obj.updateDynamic("nodeModulesConfig")(nodeModulesConfig.asInstanceOf[js.Any])
     if (tsConfig != null) __obj.updateDynamic("tsConfig")(tsConfig.asInstanceOf[js.Any])
     if (webpackConfig != null) __obj.updateDynamic("webpackConfig")(webpackConfig.asInstanceOf[js.Any])

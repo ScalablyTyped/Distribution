@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.FlashAudioLoader")
 @js.native
-class FlashAudioLoader () extends AbstractLoader {
+trait FlashAudioLoader extends AbstractLoader {
   // properties
   var flashId: String = js.native
   // methods

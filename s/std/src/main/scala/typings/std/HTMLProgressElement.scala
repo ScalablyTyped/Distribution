@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait HTMLProgressElement extends HTMLElement {
     */
   var value: Double = js.native
 }
-
-@JSGlobal("HTMLProgressElement")
-@js.native
-object HTMLProgressElement extends Instantiable0[HTMLProgressElement]
 

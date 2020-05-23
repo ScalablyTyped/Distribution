@@ -7,14 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.System.LauncherUIOptions")
-@js.native
-class LauncherUIOptions () extends ILauncherUIOptions {
-  /* CompleteClass */
-  override var invocationPoint: Point = js.native
-  /* CompleteClass */
-  override var preferredPlacement: Placement = js.native
-  /* CompleteClass */
-  override var selectionRect: Rect = js.native
+trait LauncherUIOptions extends ILauncherUIOptions
+
+object LauncherUIOptions {
+  @scala.inline
+  def apply(invocationPoint: Point, preferredPlacement: Placement, selectionRect: Rect): LauncherUIOptions = {
+    val __obj = js.Dynamic.literal(invocationPoint = invocationPoint.asInstanceOf[js.Any], preferredPlacement = preferredPlacement.asInstanceOf[js.Any], selectionRect = selectionRect.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LauncherUIOptions]
+  }
 }
 

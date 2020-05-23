@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object FileContentFormat extends js.Object {
   
   @js.native
   sealed trait ooxml extends FileContentFormat
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[FileContentFormat with String] = js.native
-  /* "Base64" */ @js.native
-  object base64 extends TopLevel[base64 with String]
-  
-  /* "Html" */ @js.native
-  object html extends TopLevel[html with String]
-  
-  /* "Ooxml" */ @js.native
-  object ooxml extends TopLevel[ooxml with String]
   
 }
 

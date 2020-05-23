@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +32,11 @@ trait heatmap extends js.Object {
   def createRenderer(params: heatmapCreateRendererParams): js.Promise[HeatmapRendererResult]
 }
 
-@JSGlobal("__esri.heatmap")
-@js.native
-object heatmap extends TopLevel[heatmap]
+object heatmap {
+  @scala.inline
+  def apply(createRenderer: heatmapCreateRendererParams => js.Promise[HeatmapRendererResult]): heatmap = {
+    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
+    __obj.asInstanceOf[heatmap]
+  }
+}
 

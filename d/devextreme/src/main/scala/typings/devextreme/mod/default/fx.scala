@@ -1,8 +1,8 @@
 package typings.devextreme.mod.default
 
 import typings.devextreme.mod.DevExpress.animationConfig
-import typings.devextreme.mod._Global_.JQueryPromise
-import typings.devextreme.mod._Global_.Promise
+import typings.devextreme.mod.global.JQueryPromise
+import typings.devextreme.mod.global.Promise
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

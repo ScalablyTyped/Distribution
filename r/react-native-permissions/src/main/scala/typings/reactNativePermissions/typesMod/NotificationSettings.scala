@@ -26,13 +26,13 @@ object NotificationSettings {
     sound: js.UndefOr[Boolean] = js.undefined
   ): NotificationSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
-    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (!js.isUndefined(carPlay)) __obj.updateDynamic("carPlay")(carPlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(criticalAlert)) __obj.updateDynamic("criticalAlert")(criticalAlert.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockScreen)) __obj.updateDynamic("lockScreen")(lockScreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(notificationCenter)) __obj.updateDynamic("notificationCenter")(notificationCenter.asInstanceOf[js.Any])
-    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(carPlay)) __obj.updateDynamic("carPlay")(carPlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(criticalAlert)) __obj.updateDynamic("criticalAlert")(criticalAlert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockScreen)) __obj.updateDynamic("lockScreen")(lockScreen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notificationCenter)) __obj.updateDynamic("notificationCenter")(notificationCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationSettings]
   }
 }

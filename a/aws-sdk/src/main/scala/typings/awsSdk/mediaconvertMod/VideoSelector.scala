@@ -43,8 +43,8 @@ object VideoSelector {
     ColorSpace: ColorSpace = null,
     ColorSpaceUsage: ColorSpaceUsage = null,
     Hdr10Metadata: Hdr10Metadata = null,
-    Pid: Int | Double = null,
-    ProgramNumber: Int | Double = null,
+    Pid: js.UndefOr[integerMin1Max2147483647] = js.undefined,
+    ProgramNumber: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined,
     Rotate: InputRotate = null
   ): VideoSelector = {
     val __obj = js.Dynamic.literal()
@@ -52,8 +52,8 @@ object VideoSelector {
     if (ColorSpace != null) __obj.updateDynamic("ColorSpace")(ColorSpace.asInstanceOf[js.Any])
     if (ColorSpaceUsage != null) __obj.updateDynamic("ColorSpaceUsage")(ColorSpaceUsage.asInstanceOf[js.Any])
     if (Hdr10Metadata != null) __obj.updateDynamic("Hdr10Metadata")(Hdr10Metadata.asInstanceOf[js.Any])
-    if (Pid != null) __obj.updateDynamic("Pid")(Pid.asInstanceOf[js.Any])
-    if (ProgramNumber != null) __obj.updateDynamic("ProgramNumber")(ProgramNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(Pid)) __obj.updateDynamic("Pid")(Pid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgramNumber)) __obj.updateDynamic("ProgramNumber")(ProgramNumber.get.asInstanceOf[js.Any])
     if (Rotate != null) __obj.updateDynamic("Rotate")(Rotate.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSelector]
   }

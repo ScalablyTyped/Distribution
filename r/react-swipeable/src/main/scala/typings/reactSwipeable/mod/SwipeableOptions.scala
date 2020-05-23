@@ -23,7 +23,7 @@ trait SwipeableOptions extends js.Object {
 object SwipeableOptions {
   @scala.inline
   def apply(
-    delta: Int | Double = null,
+    delta: js.UndefOr[Double] = js.undefined,
     onSwiped: /* eventData */ EventData => Unit = null,
     onSwipedDown: /* eventData */ EventData => Unit = null,
     onSwipedLeft: /* eventData */ EventData => Unit = null,
@@ -31,22 +31,22 @@ object SwipeableOptions {
     onSwipedUp: /* eventData */ EventData => Unit = null,
     onSwiping: /* eventData */ EventData => Unit = null,
     preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined,
-    rotationAngle: Int | Double = null,
+    rotationAngle: js.UndefOr[Double] = js.undefined,
     trackMouse: js.UndefOr[Boolean] = js.undefined,
     trackTouch: js.UndefOr[Boolean] = js.undefined
   ): SwipeableOptions = {
     val __obj = js.Dynamic.literal()
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
     if (onSwiped != null) __obj.updateDynamic("onSwiped")(js.Any.fromFunction1(onSwiped))
     if (onSwipedDown != null) __obj.updateDynamic("onSwipedDown")(js.Any.fromFunction1(onSwipedDown))
     if (onSwipedLeft != null) __obj.updateDynamic("onSwipedLeft")(js.Any.fromFunction1(onSwipedLeft))
     if (onSwipedRight != null) __obj.updateDynamic("onSwipedRight")(js.Any.fromFunction1(onSwipedRight))
     if (onSwipedUp != null) __obj.updateDynamic("onSwipedUp")(js.Any.fromFunction1(onSwipedUp))
     if (onSwiping != null) __obj.updateDynamic("onSwiping")(js.Any.fromFunction1(onSwiping))
-    if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent.asInstanceOf[js.Any])
-    if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackMouse)) __obj.updateDynamic("trackMouse")(trackMouse.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackTouch)) __obj.updateDynamic("trackTouch")(trackTouch.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationAngle)) __obj.updateDynamic("rotationAngle")(rotationAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackMouse)) __obj.updateDynamic("trackMouse")(trackMouse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackTouch)) __obj.updateDynamic("trackTouch")(trackTouch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeableOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.expressBusboy.mod
 
-import typings.busboy.AnonFieldNameSize
+import typings.busboy.anon.FieldNameSize
 import typings.connectBusboy.mod.ConnectBusboyOptions
 import typings.std.RegExp
 import scala.scalajs.js
@@ -20,11 +20,11 @@ object ExpressBusboyOptions {
   def apply(
     allowedPath: String | RegExp | (js.Function1[/* url */ String, Boolean]) = null,
     defCharset: String = null,
-    fileHwm: Int | Double = null,
+    fileHwm: js.UndefOr[Double] = js.undefined,
     headers: js.Any = null,
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     immediate: js.UndefOr[Boolean] = js.undefined,
-    limits: AnonFieldNameSize = null,
+    limits: FieldNameSize = null,
     mimeTypeLimit: String | js.Array[String] = null,
     path: String = null,
     preservePath: js.UndefOr[Boolean] = js.undefined,
@@ -34,16 +34,16 @@ object ExpressBusboyOptions {
     val __obj = js.Dynamic.literal()
     if (allowedPath != null) __obj.updateDynamic("allowedPath")(allowedPath.asInstanceOf[js.Any])
     if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset.asInstanceOf[js.Any])
-    if (fileHwm != null) __obj.updateDynamic("fileHwm")(fileHwm.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileHwm)) __obj.updateDynamic("fileHwm")(fileHwm.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
     if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
     if (mimeTypeLimit != null) __obj.updateDynamic("mimeTypeLimit")(mimeTypeLimit.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictMultiple)) __obj.updateDynamic("restrictMultiple")(restrictMultiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(upload)) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
+    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictMultiple)) __obj.updateDynamic("restrictMultiple")(restrictMultiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upload)) __obj.updateDynamic("upload")(upload.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressBusboyOptions]
   }
 }

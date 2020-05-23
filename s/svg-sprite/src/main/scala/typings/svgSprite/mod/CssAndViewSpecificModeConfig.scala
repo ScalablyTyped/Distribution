@@ -42,7 +42,7 @@ object CssAndViewSpecificModeConfig {
     sprite: String = null
   ): CssAndViewSpecificModeConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bust)) __obj.updateDynamic("bust")(bust.asInstanceOf[js.Any])
+    if (!js.isUndefined(bust)) __obj.updateDynamic("bust")(bust.get.asInstanceOf[js.Any])
     if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])

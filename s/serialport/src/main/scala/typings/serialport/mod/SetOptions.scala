@@ -22,11 +22,11 @@ object SetOptions {
     rts: js.UndefOr[Boolean] = js.undefined
   ): SetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(brk)) __obj.updateDynamic("brk")(brk.asInstanceOf[js.Any])
-    if (!js.isUndefined(cts)) __obj.updateDynamic("cts")(cts.asInstanceOf[js.Any])
-    if (!js.isUndefined(dsr)) __obj.updateDynamic("dsr")(dsr.asInstanceOf[js.Any])
-    if (!js.isUndefined(dtr)) __obj.updateDynamic("dtr")(dtr.asInstanceOf[js.Any])
-    if (!js.isUndefined(rts)) __obj.updateDynamic("rts")(rts.asInstanceOf[js.Any])
+    if (!js.isUndefined(brk)) __obj.updateDynamic("brk")(brk.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cts)) __obj.updateDynamic("cts")(cts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dsr)) __obj.updateDynamic("dsr")(dsr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dtr)) __obj.updateDynamic("dtr")(dtr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rts)) __obj.updateDynamic("rts")(rts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
 }

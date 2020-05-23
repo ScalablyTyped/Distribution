@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PositionGizmo")
 @js.native
-/**
-  * Creates a PositionGizmo
-  * @param gizmoLayer The utility layer the gizmo will be added to
-  */
-class PositionGizmo () extends Gizmo {
-  def this(gizmoLayer: UtilityLayerRenderer) = this()
+trait PositionGizmo extends Gizmo {
   /**
     * private variables
     */

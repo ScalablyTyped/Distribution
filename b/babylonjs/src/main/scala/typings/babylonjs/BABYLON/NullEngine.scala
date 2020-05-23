@@ -10,10 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.NullEngine")
 @js.native
-class NullEngine () extends Engine {
-  def this(options: NullEngineOptions) = this()
+trait NullEngine extends Engine {
   var _options: js.Any = js.native
   /** @hidden */
   def _bindTexture(channel: Double, texture: InternalTexture): Unit = js.native

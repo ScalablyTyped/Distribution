@@ -13,14 +13,14 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    initialDelay: Int | Double = null,
-    maxDelay: Int | Double = null,
-    randomisationFactor: Int | Double = null
+    initialDelay: js.UndefOr[Double] = js.undefined,
+    maxDelay: js.UndefOr[Double] = js.undefined,
+    randomisationFactor: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay.asInstanceOf[js.Any])
-    if (maxDelay != null) __obj.updateDynamic("maxDelay")(maxDelay.asInstanceOf[js.Any])
-    if (randomisationFactor != null) __obj.updateDynamic("randomisationFactor")(randomisationFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDelay)) __obj.updateDynamic("initialDelay")(initialDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelay)) __obj.updateDynamic("maxDelay")(maxDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomisationFactor)) __obj.updateDynamic("randomisationFactor")(randomisationFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

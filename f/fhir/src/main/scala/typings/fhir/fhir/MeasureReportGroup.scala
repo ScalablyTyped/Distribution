@@ -40,7 +40,7 @@ object MeasureReportGroup {
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
     id: String = null,
-    measureScore: Int | Double = null,
+    measureScore: js.UndefOr[decimal] = js.undefined,
     modifierExtension: js.Array[Extension] = null,
     population: js.Array[MeasureReportGroupPopulation] = null,
     stratifier: js.Array[MeasureReportGroupStratifier] = null
@@ -52,7 +52,7 @@ object MeasureReportGroup {
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (measureScore != null) __obj.updateDynamic("measureScore")(measureScore.asInstanceOf[js.Any])
+    if (!js.isUndefined(measureScore)) __obj.updateDynamic("measureScore")(measureScore.get.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (population != null) __obj.updateDynamic("population")(population.asInstanceOf[js.Any])
     if (stratifier != null) __obj.updateDynamic("stratifier")(stratifier.asInstanceOf[js.Any])

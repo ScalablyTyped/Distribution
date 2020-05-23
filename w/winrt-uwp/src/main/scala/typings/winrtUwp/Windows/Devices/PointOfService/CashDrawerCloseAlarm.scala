@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The cash drawer close alarm. Parameter defaults are provided, however the user can update them as appropriate. */
-@JSGlobal("Windows.Devices.PointOfService.CashDrawerCloseAlarm")
 @js.native
-abstract class CashDrawerCloseAlarm () extends js.Object {
+trait CashDrawerCloseAlarm extends js.Object {
   /** Gets or sets the alarm timeout for the cash drawer close alarm. */
   var alarmTimeout: Double = js.native
   /** Delay between cash drawer closed alarm beeps. */

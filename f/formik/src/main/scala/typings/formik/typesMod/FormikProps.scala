@@ -1,11 +1,11 @@
 package typings.formik.typesMod
 
-import typings.formik.AnonValidate
+import typings.formik.anon.Validate
 import typings.react.mod.ChangeEvent
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLFormElement
 import typings.std.Partial
 import scala.scalajs.js
@@ -64,11 +64,11 @@ trait FormikProps[Values] extends js.Object {
   def handleChange[T](field: T): (js.Function1[/* e */ String | ChangeEvent[_], Unit]) | Unit = js.native
   /** Reset form event handler  */
   def handleReset(): Unit = js.native
-  def handleReset(e: SyntheticEvent[_, Event_]): Unit = js.native
+  def handleReset(e: SyntheticEvent[_, Event]): Unit = js.native
   /** Form submit handler */
   def handleSubmit(): Unit = js.native
   def handleSubmit(e: FormEvent[HTMLFormElement]): Unit = js.native
-  def registerField(name: String, fns: AnonValidate): Unit = js.native
+  def registerField(name: String, fns: Validate): Unit = js.native
   /** Reset form */
   def resetForm(): Unit = js.native
   def resetForm(nextState: Partial[FormikState[Values]]): Unit = js.native

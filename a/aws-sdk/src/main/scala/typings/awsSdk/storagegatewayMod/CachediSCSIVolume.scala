@@ -67,11 +67,11 @@ object CachediSCSIVolume {
     VolumeARN: VolumeARN = null,
     VolumeAttachmentStatus: VolumeAttachmentStatus = null,
     VolumeId: VolumeId = null,
-    VolumeProgress: Int | Double = null,
-    VolumeSizeInBytes: Int | Double = null,
+    VolumeProgress: js.UndefOr[DoubleObject] = js.undefined,
+    VolumeSizeInBytes: js.UndefOr[long] = js.undefined,
     VolumeStatus: VolumeStatus = null,
     VolumeType: VolumeType = null,
-    VolumeUsedInBytes: Int | Double = null,
+    VolumeUsedInBytes: js.UndefOr[VolumeUsedInBytes] = js.undefined,
     VolumeiSCSIAttributes: VolumeiSCSIAttributes = null
   ): CachediSCSIVolume = {
     val __obj = js.Dynamic.literal()
@@ -82,11 +82,11 @@ object CachediSCSIVolume {
     if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN.asInstanceOf[js.Any])
     if (VolumeAttachmentStatus != null) __obj.updateDynamic("VolumeAttachmentStatus")(VolumeAttachmentStatus.asInstanceOf[js.Any])
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
-    if (VolumeProgress != null) __obj.updateDynamic("VolumeProgress")(VolumeProgress.asInstanceOf[js.Any])
-    if (VolumeSizeInBytes != null) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeProgress)) __obj.updateDynamic("VolumeProgress")(VolumeProgress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSizeInBytes)) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.get.asInstanceOf[js.Any])
     if (VolumeStatus != null) __obj.updateDynamic("VolumeStatus")(VolumeStatus.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
-    if (VolumeUsedInBytes != null) __obj.updateDynamic("VolumeUsedInBytes")(VolumeUsedInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeUsedInBytes)) __obj.updateDynamic("VolumeUsedInBytes")(VolumeUsedInBytes.get.asInstanceOf[js.Any])
     if (VolumeiSCSIAttributes != null) __obj.updateDynamic("VolumeiSCSIAttributes")(VolumeiSCSIAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachediSCSIVolume]
   }

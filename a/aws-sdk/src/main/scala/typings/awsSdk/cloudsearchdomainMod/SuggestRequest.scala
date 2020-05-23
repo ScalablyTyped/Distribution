@@ -22,9 +22,9 @@ trait SuggestRequest extends js.Object {
 
 object SuggestRequest {
   @scala.inline
-  def apply(query: Query, suggester: Suggester, size: Int | scala.Double = null): SuggestRequest = {
+  def apply(query: Query, suggester: Suggester, size: js.UndefOr[SuggestionsSize] = js.undefined): SuggestRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], suggester = suggester.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestRequest]
   }
 }

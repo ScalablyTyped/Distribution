@@ -14,84 +14,84 @@ import scala.scalajs.js.annotation._
   */
 trait ParsedMail extends js.Object {
   /**
-  	 * An array of attachments.
-  	 */
+    * An array of attachments.
+    */
   var attachments: js.Array[Attachment]
   /**
-  	 * An address object for the `Bcc:` header (usually not present).
-  	 */
+    * An address object for the `Bcc:` header (usually not present).
+    */
   var bcc: js.UndefOr[AddressObject] = js.undefined
   /**
-  	 * An address object for the `Cc:` header.
-  	 */
+    * An address object for the `Cc:` header.
+    */
   var cc: js.UndefOr[AddressObject] = js.undefined
   /**
-  	 * A Date object for the `Date:` header.
-  	 */
+    * A Date object for the `Date:` header.
+    */
   var date: js.UndefOr[Date] = js.undefined
   /**
-  	 * An address object for the `From:` header.
-  	 */
+    * An address object for the `From:` header.
+    */
   var from: js.UndefOr[AddressObject] = js.undefined
   /**
-  	 * An array of raw header lines
-  	 */
+    * An array of raw header lines
+    */
   var headerLines: HeaderLines
   /**
-  	 * A Map object with lowercase header keys.
-  	 *
-  	 * - All address headers are converted into address objects.
-  	 * - `references` is a string if only a single reference-id exists or an
-  	 *    array if multiple ids exist.
-  	 * - `date` value is a Date object.
-  	 */
+    * A Map object with lowercase header keys.
+    *
+    * - All address headers are converted into address objects.
+    * - `references` is a string if only a single reference-id exists or an
+    *    array if multiple ids exist.
+    * - `date` value is a Date object.
+    */
   var headers: Headers
   /**
-  	 * The HTML body of the message.
-  	 *
-  	 * Sets to `false` when there is no HTML body.
-  	 *
-  	 * If the message included embedded images as cid: urls then these are all
-  	 * replaced with base64 formatted data: URIs.
-  	 */
+    * The HTML body of the message.
+    *
+    * Sets to `false` when there is no HTML body.
+    *
+    * If the message included embedded images as cid: urls then these are all
+    * replaced with base64 formatted data: URIs.
+    */
   var html: String | `false`
   /**
-  	 * The In-Reply-To value string.
-  	 */
+    * The In-Reply-To value string.
+    */
   var inReplyTo: js.UndefOr[String] = js.undefined
   /**
-  	 * The Message-ID value string.
-  	 */
+    * The Message-ID value string.
+    */
   var messageId: js.UndefOr[String] = js.undefined
   /**
-  	 * Priority of the e-mail.
-  	 */
+    * Priority of the e-mail.
+    */
   var priority: js.UndefOr[normal | low | high] = js.undefined
   /**
-  	 * An array of referenced Message-ID values.
-  	 *
-  	 * Not set if no reference values present.
-  	 */
+    * An array of referenced Message-ID values.
+    *
+    * Not set if no reference values present.
+    */
   var references: js.UndefOr[js.Array[String]] = js.undefined
   /**
-  	 * An address object for the `Reply-To:` header.
-  	 */
+    * An address object for the `Reply-To:` header.
+    */
   var replyTo: js.UndefOr[AddressObject] = js.undefined
   /**
-  	 * The subject line.
-  	 */
+    * The subject line.
+    */
   var subject: js.UndefOr[String] = js.undefined
   /**
-  	 * The plaintext body of the message.
-  	 */
+    * The plaintext body of the message.
+    */
   var text: js.UndefOr[String] = js.undefined
   /**
-  	 * The plaintext body of the message formatted as HTML.
-  	 */
+    * The plaintext body of the message formatted as HTML.
+    */
   var textAsHtml: js.UndefOr[String] = js.undefined
   /**
-  	 * An address object for the `To:` header.
-  	 */
+    * An address object for the `To:` header.
+    */
   var to: js.UndefOr[AddressObject] = js.undefined
 }
 

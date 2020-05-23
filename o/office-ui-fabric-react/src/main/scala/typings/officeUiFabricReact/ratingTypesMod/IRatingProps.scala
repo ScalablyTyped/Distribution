@@ -94,11 +94,11 @@ object IRatingProps {
     componentRef: IRefObject[IRating] = null,
     getAriaLabel: (/* rating */ Double, /* max */ Double) => String = null,
     icon: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     onChange: (/* event */ FocusEvent[HTMLElement], /* rating */ js.UndefOr[Double]) => Unit = null,
     onChanged: /* rating */ Double => Unit = null,
-    rating: Int | Double = null,
+    rating: js.UndefOr[Double] = js.undefined,
     size: RatingSize = null,
     styles: IStyleFunctionOrObject[IRatingStyleProps, IRatingStyles] = null,
     theme: ITheme = null,
@@ -106,17 +106,17 @@ object IRatingProps {
   ): IRatingProps = {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (!js.isUndefined(allowZeroStars)) __obj.updateDynamic("allowZeroStars")(allowZeroStars.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowZeroStars)) __obj.updateDynamic("allowZeroStars")(allowZeroStars.get.asInstanceOf[js.Any])
     if (ariaLabelFormat != null) __obj.updateDynamic("ariaLabelFormat")(ariaLabelFormat.asInstanceOf[js.Any])
     if (ariaLabelId != null) __obj.updateDynamic("ariaLabelId")(ariaLabelId.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (getAriaLabel != null) __obj.updateDynamic("getAriaLabel")(js.Any.fromFunction2(getAriaLabel))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onChanged != null) __obj.updateDynamic("onChanged")(js.Any.fromFunction1(onChanged))
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
+    if (!js.isUndefined(rating)) __obj.updateDynamic("rating")(rating.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

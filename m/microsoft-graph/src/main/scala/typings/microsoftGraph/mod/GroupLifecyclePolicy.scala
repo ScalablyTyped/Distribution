@@ -23,13 +23,13 @@ object GroupLifecyclePolicy {
   @scala.inline
   def apply(
     alternateNotificationEmails: String = null,
-    groupLifetimeInDays: Int | Double = null,
+    groupLifetimeInDays: js.UndefOr[Double] = js.undefined,
     id: String = null,
     managedGroupTypes: String = null
   ): GroupLifecyclePolicy = {
     val __obj = js.Dynamic.literal()
     if (alternateNotificationEmails != null) __obj.updateDynamic("alternateNotificationEmails")(alternateNotificationEmails.asInstanceOf[js.Any])
-    if (groupLifetimeInDays != null) __obj.updateDynamic("groupLifetimeInDays")(groupLifetimeInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupLifetimeInDays)) __obj.updateDynamic("groupLifetimeInDays")(groupLifetimeInDays.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (managedGroupTypes != null) __obj.updateDynamic("managedGroupTypes")(managedGroupTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupLifecyclePolicy]

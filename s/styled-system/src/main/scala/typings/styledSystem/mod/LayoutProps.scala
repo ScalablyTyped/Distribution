@@ -29,33 +29,33 @@ trait LayoutProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object LayoutProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    display: ResponsiveValue[DisplayProperty, ThemeType] = null,
-    height: ResponsiveValue[HeightProperty[TLengthStyledSystem], ThemeType] = null,
-    maxHeight: ResponsiveValue[MaxHeightProperty[TLengthStyledSystem], ThemeType] = null,
-    maxWidth: ResponsiveValue[MaxWidthProperty[TLengthStyledSystem], ThemeType] = null,
-    minHeight: ResponsiveValue[MinHeightProperty[TLengthStyledSystem], ThemeType] = null,
-    minWidth: ResponsiveValue[MinWidthProperty[TLengthStyledSystem], ThemeType] = null,
-    overflow: ResponsiveValue[OverflowProperty, ThemeType] = null,
-    overflowX: ResponsiveValue[OverflowXProperty, ThemeType] = null,
-    overflowY: ResponsiveValue[OverflowYProperty, ThemeType] = null,
-    size: ResponsiveValue[HeightProperty[TLengthStyledSystem], ThemeType] = null,
-    verticalAlign: ResponsiveValue[VerticalAlignProperty[TLengthStyledSystem], ThemeType] = null,
-    width: ResponsiveValue[WidthProperty[TLengthStyledSystem], ThemeType] = null
+  def apply[ThemeType](
+    display: js.UndefOr[Null | (ResponsiveValue[DisplayProperty, ThemeType])] = js.undefined,
+    height: js.UndefOr[Null | (ResponsiveValue[HeightProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    maxHeight: js.UndefOr[Null | (ResponsiveValue[MaxHeightProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    maxWidth: js.UndefOr[Null | (ResponsiveValue[MaxWidthProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    minHeight: js.UndefOr[Null | (ResponsiveValue[MinHeightProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    minWidth: js.UndefOr[Null | (ResponsiveValue[MinWidthProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    overflow: js.UndefOr[Null | (ResponsiveValue[OverflowProperty, ThemeType])] = js.undefined,
+    overflowX: js.UndefOr[Null | (ResponsiveValue[OverflowXProperty, ThemeType])] = js.undefined,
+    overflowY: js.UndefOr[Null | (ResponsiveValue[OverflowYProperty, ThemeType])] = js.undefined,
+    size: js.UndefOr[Null | (ResponsiveValue[HeightProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    verticalAlign: js.UndefOr[Null | (ResponsiveValue[VerticalAlignProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    width: js.UndefOr[Null | (ResponsiveValue[WidthProperty[TLengthStyledSystem], ThemeType])] = js.undefined
   ): LayoutProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
-    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflowX)) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflowY)) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalAlign)) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutProps[ThemeType]]
   }
 }

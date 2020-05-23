@@ -1,6 +1,6 @@
 package typings.gracefulFs.mod
 
-import typings.gracefulFs.Typeoflutimes
+import typings.gracefulFs.anon.Typeoflutimes
 import typings.node.fsMod.PathLike
 import typings.std.Date
 import scala.scalajs.js

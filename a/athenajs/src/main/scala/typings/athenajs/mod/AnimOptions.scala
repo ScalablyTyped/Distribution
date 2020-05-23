@@ -21,14 +21,14 @@ object AnimOptions {
     frameHeight: Double,
     frameWidth: Double,
     numFrames: Double,
-    frameSpacing: Int | Double = null,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null
+    frameSpacing: js.UndefOr[Double] = js.undefined,
+    offsetX: js.UndefOr[Double] = js.undefined,
+    offsetY: js.UndefOr[Double] = js.undefined
   ): AnimOptions = {
     val __obj = js.Dynamic.literal(frameDuration = frameDuration.asInstanceOf[js.Any], frameHeight = frameHeight.asInstanceOf[js.Any], frameWidth = frameWidth.asInstanceOf[js.Any], numFrames = numFrames.asInstanceOf[js.Any])
-    if (frameSpacing != null) __obj.updateDynamic("frameSpacing")(frameSpacing.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameSpacing)) __obj.updateDynamic("frameSpacing")(frameSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimOptions]
   }
 }

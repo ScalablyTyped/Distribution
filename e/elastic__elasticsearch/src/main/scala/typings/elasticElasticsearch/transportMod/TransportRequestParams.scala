@@ -1,15 +1,16 @@
 package typings.elasticElasticsearch.transportMod
 
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TransportRequestParams extends js.Object {
-  var body: js.UndefOr[anyObject] = js.undefined
-  var bulkBody: js.UndefOr[anyObject] = js.undefined
+  var body: js.UndefOr[RequestBody[Record[String, _]]] = js.undefined
+  var bulkBody: js.UndefOr[RequestNDBody[js.Array[Record[String, _]]]] = js.undefined
   var method: String
   var path: String
-  var querystring: js.UndefOr[anyObject] = js.undefined
+  var querystring: js.UndefOr[Record[String, _]] = js.undefined
 }
 
 object TransportRequestParams {
@@ -17,9 +18,9 @@ object TransportRequestParams {
   def apply(
     method: String,
     path: String,
-    body: anyObject = null,
-    bulkBody: anyObject = null,
-    querystring: anyObject = null
+    body: RequestBody[Record[String, _]] = null,
+    bulkBody: RequestNDBody[js.Array[Record[String, _]]] = null,
+    querystring: Record[String, _] = null
   ): TransportRequestParams = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])

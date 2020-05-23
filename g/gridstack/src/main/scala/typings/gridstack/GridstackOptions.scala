@@ -129,9 +129,10 @@ trait GridstackOptions extends js.Object {
     */
   var rtl: js.UndefOr[Boolean | auto] = js.undefined
   /**
-    * makes grid static (default?: false). If `true` widgets are not movable/resizable.
-    * You don't even need draggable/resizable. A CSS class
-    * 'grid-stack-static' is also added to the element.
+    * removes drag&drop&resize (default `false`).
+    * If `true` widgets are not movable/resizable by the user, but code can still move and oneColumnMode will still work.
+    * You don't even need jQueryUI draggable/resizable.
+    * A CSS class `grid-stack-static` is also added to the container.
     */
   var staticGrid: js.UndefOr[Boolean] = js.undefined
   /**
@@ -155,8 +156,8 @@ object GridstackOptions {
     auto: js.UndefOr[Boolean] = js.undefined,
     cellHeight: Double | String = null,
     cellHeightUnit: String = null,
-    column: Int | Double = null,
-    ddPlugin: Boolean | js.Any = null,
+    column: js.UndefOr[Double] = js.undefined,
+    ddPlugin: js.UndefOr[Null | Boolean | js.Any] = js.undefined,
     disableDrag: js.UndefOr[Boolean] = js.undefined,
     disableOneColumnMode: js.UndefOr[Boolean] = js.undefined,
     disableResize: js.UndefOr[Boolean] = js.undefined,
@@ -166,16 +167,16 @@ object GridstackOptions {
     handle: String = null,
     handleClass: String = null,
     itemClass: String = null,
-    maxRow: Int | Double = null,
-    minRow: Int | Double = null,
-    minWidth: Int | Double = null,
+    maxRow: js.UndefOr[Double] = js.undefined,
+    minRow: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     oneColumnModeDomSort: js.UndefOr[Boolean] = js.undefined,
     placeholderClass: String = null,
     placeholderText: String = null,
     removable: Boolean | String = null,
-    removeTimeout: Int | Double = null,
+    removeTimeout: js.UndefOr[Double] = js.undefined,
     resizable: js.Object = null,
-    row: Int | Double = null,
+    row: js.UndefOr[Double] = js.undefined,
     rtl: Boolean | auto = null,
     staticGrid: js.UndefOr[Boolean] = js.undefined,
     verticalMargin: Double | String = null,
@@ -183,34 +184,34 @@ object GridstackOptions {
   ): GridstackOptions = {
     val __obj = js.Dynamic.literal()
     if (acceptWidgets != null) __obj.updateDynamic("acceptWidgets")(acceptWidgets.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysShowResizeHandle)) __obj.updateDynamic("alwaysShowResizeHandle")(alwaysShowResizeHandle.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysShowResizeHandle)) __obj.updateDynamic("alwaysShowResizeHandle")(alwaysShowResizeHandle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.get.asInstanceOf[js.Any])
     if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])
     if (cellHeightUnit != null) __obj.updateDynamic("cellHeightUnit")(cellHeightUnit.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (ddPlugin != null) __obj.updateDynamic("ddPlugin")(ddPlugin.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDrag)) __obj.updateDynamic("disableDrag")(disableDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOneColumnMode)) __obj.updateDynamic("disableOneColumnMode")(disableOneColumnMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableResize)) __obj.updateDynamic("disableResize")(disableResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragOut)) __obj.updateDynamic("dragOut")(dragOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ddPlugin)) __obj.updateDynamic("ddPlugin")(ddPlugin.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDrag)) __obj.updateDynamic("disableDrag")(disableDrag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableOneColumnMode)) __obj.updateDynamic("disableOneColumnMode")(disableOneColumnMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableResize)) __obj.updateDynamic("disableResize")(disableResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragOut)) __obj.updateDynamic("dragOut")(dragOut.get.asInstanceOf[js.Any])
     if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
+    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float.get.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (handleClass != null) __obj.updateDynamic("handleClass")(handleClass.asInstanceOf[js.Any])
     if (itemClass != null) __obj.updateDynamic("itemClass")(itemClass.asInstanceOf[js.Any])
-    if (maxRow != null) __obj.updateDynamic("maxRow")(maxRow.asInstanceOf[js.Any])
-    if (minRow != null) __obj.updateDynamic("minRow")(minRow.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneColumnModeDomSort)) __obj.updateDynamic("oneColumnModeDomSort")(oneColumnModeDomSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRow)) __obj.updateDynamic("maxRow")(maxRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRow)) __obj.updateDynamic("minRow")(minRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneColumnModeDomSort)) __obj.updateDynamic("oneColumnModeDomSort")(oneColumnModeDomSort.get.asInstanceOf[js.Any])
     if (placeholderClass != null) __obj.updateDynamic("placeholderClass")(placeholderClass.asInstanceOf[js.Any])
     if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText.asInstanceOf[js.Any])
     if (removable != null) __obj.updateDynamic("removable")(removable.asInstanceOf[js.Any])
-    if (removeTimeout != null) __obj.updateDynamic("removeTimeout")(removeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeTimeout)) __obj.updateDynamic("removeTimeout")(removeTimeout.get.asInstanceOf[js.Any])
     if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
     if (rtl != null) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(staticGrid)) __obj.updateDynamic("staticGrid")(staticGrid.asInstanceOf[js.Any])
+    if (!js.isUndefined(staticGrid)) __obj.updateDynamic("staticGrid")(staticGrid.get.asInstanceOf[js.Any])
     if (verticalMargin != null) __obj.updateDynamic("verticalMargin")(verticalMargin.asInstanceOf[js.Any])
     if (verticalMarginUnit != null) __obj.updateDynamic("verticalMarginUnit")(verticalMarginUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridstackOptions]

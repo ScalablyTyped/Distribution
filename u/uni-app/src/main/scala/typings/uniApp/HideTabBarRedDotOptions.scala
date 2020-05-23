@@ -28,13 +28,13 @@ object HideTabBarRedDotOptions {
   def apply(
     complete: () => Unit = null,
     fail: () => Unit = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     success: () => Unit = null
   ): HideTabBarRedDotOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[HideTabBarRedDotOptions]
   }

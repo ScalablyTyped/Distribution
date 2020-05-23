@@ -22,25 +22,25 @@ object ParagraphElement {
   def apply(
     autoText: AutoText = null,
     columnBreak: ColumnBreak = null,
-    endIndex: Int | Double = null,
+    endIndex: js.UndefOr[Double] = js.undefined,
     equation: Equation = null,
     footnoteReference: FootnoteReference = null,
     horizontalRule: HorizontalRule = null,
     inlineObjectElement: InlineObjectElement = null,
     pageBreak: PageBreak = null,
-    startIndex: Int | Double = null,
+    startIndex: js.UndefOr[Double] = js.undefined,
     textRun: TextRun = null
   ): ParagraphElement = {
     val __obj = js.Dynamic.literal()
     if (autoText != null) __obj.updateDynamic("autoText")(autoText.asInstanceOf[js.Any])
     if (columnBreak != null) __obj.updateDynamic("columnBreak")(columnBreak.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
     if (equation != null) __obj.updateDynamic("equation")(equation.asInstanceOf[js.Any])
     if (footnoteReference != null) __obj.updateDynamic("footnoteReference")(footnoteReference.asInstanceOf[js.Any])
     if (horizontalRule != null) __obj.updateDynamic("horizontalRule")(horizontalRule.asInstanceOf[js.Any])
     if (inlineObjectElement != null) __obj.updateDynamic("inlineObjectElement")(inlineObjectElement.asInstanceOf[js.Any])
     if (pageBreak != null) __obj.updateDynamic("pageBreak")(pageBreak.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (textRun != null) __obj.updateDynamic("textRun")(textRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphElement]
   }

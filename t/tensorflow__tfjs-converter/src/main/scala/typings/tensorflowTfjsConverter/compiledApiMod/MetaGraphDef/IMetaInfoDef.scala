@@ -25,20 +25,20 @@ trait IMetaInfoDef extends js.Object {
 object IMetaInfoDef {
   @scala.inline
   def apply(
-    anyInfo: IAny = null,
-    metaGraphVersion: String = null,
-    strippedOpList: IOpList = null,
-    tags: js.Array[String] = null,
-    tensorflowGitVersion: String = null,
-    tensorflowVersion: String = null
+    anyInfo: js.UndefOr[Null | IAny] = js.undefined,
+    metaGraphVersion: js.UndefOr[Null | String] = js.undefined,
+    strippedOpList: js.UndefOr[Null | IOpList] = js.undefined,
+    tags: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    tensorflowGitVersion: js.UndefOr[Null | String] = js.undefined,
+    tensorflowVersion: js.UndefOr[Null | String] = js.undefined
   ): IMetaInfoDef = {
     val __obj = js.Dynamic.literal()
-    if (anyInfo != null) __obj.updateDynamic("anyInfo")(anyInfo.asInstanceOf[js.Any])
-    if (metaGraphVersion != null) __obj.updateDynamic("metaGraphVersion")(metaGraphVersion.asInstanceOf[js.Any])
-    if (strippedOpList != null) __obj.updateDynamic("strippedOpList")(strippedOpList.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (tensorflowGitVersion != null) __obj.updateDynamic("tensorflowGitVersion")(tensorflowGitVersion.asInstanceOf[js.Any])
-    if (tensorflowVersion != null) __obj.updateDynamic("tensorflowVersion")(tensorflowVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(anyInfo)) __obj.updateDynamic("anyInfo")(anyInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(metaGraphVersion)) __obj.updateDynamic("metaGraphVersion")(metaGraphVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(strippedOpList)) __obj.updateDynamic("strippedOpList")(strippedOpList.asInstanceOf[js.Any])
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(tensorflowGitVersion)) __obj.updateDynamic("tensorflowGitVersion")(tensorflowGitVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(tensorflowVersion)) __obj.updateDynamic("tensorflowVersion")(tensorflowVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetaInfoDef]
   }
 }

@@ -73,7 +73,7 @@ object ClientOptions {
     clientId: String = null,
     closeOnUnload: js.UndefOr[Boolean] = js.undefined,
     defaultTokenParams: TokenParams = null,
-    disconnectedRetryTimeout: Int | Double = null,
+    disconnectedRetryTimeout: js.UndefOr[Double] = js.undefined,
     echoMessages: js.UndefOr[Boolean] = js.undefined,
     environment: String = null,
     fallbackHosts: js.Array[String] = null,
@@ -81,15 +81,15 @@ object ClientOptions {
     idempotentRestPublishing: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
     log: LogInfo = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     queryTime: js.UndefOr[Boolean] = js.undefined,
     queueMessages: js.UndefOr[Boolean] = js.undefined,
     realtimeHost: String = null,
     recover: standardCallback | String = null,
     restHost: String = null,
-    suspendedRetryTimeout: Int | Double = null,
+    suspendedRetryTimeout: js.UndefOr[Double] = js.undefined,
     tls: js.UndefOr[Boolean] = js.undefined,
-    tlsPort: Int | Double = null,
+    tlsPort: js.UndefOr[Double] = js.undefined,
     token: TokenDetails | String = null,
     tokenDetails: TokenDetails = null,
     transportParams: StringDictionary[String] = null,
@@ -103,33 +103,33 @@ object ClientOptions {
     if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod.asInstanceOf[js.Any])
     if (authParams != null) __obj.updateDynamic("authParams")(authParams.asInstanceOf[js.Any])
     if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.get.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnUnload)) __obj.updateDynamic("closeOnUnload")(closeOnUnload.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnUnload)) __obj.updateDynamic("closeOnUnload")(closeOnUnload.get.asInstanceOf[js.Any])
     if (defaultTokenParams != null) __obj.updateDynamic("defaultTokenParams")(defaultTokenParams.asInstanceOf[js.Any])
-    if (disconnectedRetryTimeout != null) __obj.updateDynamic("disconnectedRetryTimeout")(disconnectedRetryTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(echoMessages)) __obj.updateDynamic("echoMessages")(echoMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(disconnectedRetryTimeout)) __obj.updateDynamic("disconnectedRetryTimeout")(disconnectedRetryTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(echoMessages)) __obj.updateDynamic("echoMessages")(echoMessages.get.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (fallbackHosts != null) __obj.updateDynamic("fallbackHosts")(fallbackHosts.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallbackHostsUseDefault)) __obj.updateDynamic("fallbackHostsUseDefault")(fallbackHostsUseDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(idempotentRestPublishing)) __obj.updateDynamic("idempotentRestPublishing")(idempotentRestPublishing.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallbackHostsUseDefault)) __obj.updateDynamic("fallbackHostsUseDefault")(fallbackHostsUseDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(idempotentRestPublishing)) __obj.updateDynamic("idempotentRestPublishing")(idempotentRestPublishing.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryTime)) __obj.updateDynamic("queryTime")(queryTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(queueMessages)) __obj.updateDynamic("queueMessages")(queueMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryTime)) __obj.updateDynamic("queryTime")(queryTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queueMessages)) __obj.updateDynamic("queueMessages")(queueMessages.get.asInstanceOf[js.Any])
     if (realtimeHost != null) __obj.updateDynamic("realtimeHost")(realtimeHost.asInstanceOf[js.Any])
     if (recover != null) __obj.updateDynamic("recover")(recover.asInstanceOf[js.Any])
     if (restHost != null) __obj.updateDynamic("restHost")(restHost.asInstanceOf[js.Any])
-    if (suspendedRetryTimeout != null) __obj.updateDynamic("suspendedRetryTimeout")(suspendedRetryTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
-    if (tlsPort != null) __obj.updateDynamic("tlsPort")(tlsPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(suspendedRetryTimeout)) __obj.updateDynamic("suspendedRetryTimeout")(suspendedRetryTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsPort)) __obj.updateDynamic("tlsPort")(tlsPort.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (tokenDetails != null) __obj.updateDynamic("tokenDetails")(tokenDetails.asInstanceOf[js.Any])
     if (transportParams != null) __obj.updateDynamic("transportParams")(transportParams.asInstanceOf[js.Any])
     if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBinaryProtocol)) __obj.updateDynamic("useBinaryProtocol")(useBinaryProtocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTokenAuth)) __obj.updateDynamic("useTokenAuth")(useTokenAuth.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBinaryProtocol)) __obj.updateDynamic("useBinaryProtocol")(useBinaryProtocol.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTokenAuth)) __obj.updateDynamic("useTokenAuth")(useTokenAuth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

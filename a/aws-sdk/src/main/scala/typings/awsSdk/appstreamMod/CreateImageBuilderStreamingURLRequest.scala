@@ -18,9 +18,9 @@ trait CreateImageBuilderStreamingURLRequest extends js.Object {
 
 object CreateImageBuilderStreamingURLRequest {
   @scala.inline
-  def apply(Name: String, Validity: Int | Double = null): CreateImageBuilderStreamingURLRequest = {
+  def apply(Name: String, Validity: js.UndefOr[Long] = js.undefined): CreateImageBuilderStreamingURLRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (Validity != null) __obj.updateDynamic("Validity")(Validity.asInstanceOf[js.Any])
+    if (!js.isUndefined(Validity)) __obj.updateDynamic("Validity")(Validity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateImageBuilderStreamingURLRequest]
   }
 }

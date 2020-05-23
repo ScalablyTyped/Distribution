@@ -17,9 +17,14 @@ trait OutgoingMessage extends js.Object {
 
 object OutgoingMessage {
   @scala.inline
-  def apply(data: js.Object, destinationId: String, messageId: String, timeToLive: Int | Double = null): OutgoingMessage = {
+  def apply(
+    data: js.Object,
+    destinationId: String,
+    messageId: String,
+    timeToLive: js.UndefOr[Double] = js.undefined
+  ): OutgoingMessage = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], destinationId = destinationId.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any])
-    if (timeToLive != null) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToLive)) __obj.updateDynamic("timeToLive")(timeToLive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutgoingMessage]
   }
 }

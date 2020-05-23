@@ -22,9 +22,13 @@ trait ListHITsForQualificationTypeRequest extends js.Object {
 
 object ListHITsForQualificationTypeRequest {
   @scala.inline
-  def apply(QualificationTypeId: EntityId, MaxResults: Int | Double = null, NextToken: PaginationToken = null): ListHITsForQualificationTypeRequest = {
+  def apply(
+    QualificationTypeId: EntityId,
+    MaxResults: js.UndefOr[ResultSize] = js.undefined,
+    NextToken: PaginationToken = null
+  ): ListHITsForQualificationTypeRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHITsForQualificationTypeRequest]
   }

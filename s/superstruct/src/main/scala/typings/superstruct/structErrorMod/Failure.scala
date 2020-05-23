@@ -35,10 +35,7 @@ object Failure {
     branch: Branch,
     path: Path,
     value: js.Any,
-    StringDictionary: /**
-    * Failures can also be augmented with any of your on custom properties.
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     `type`: String = null
   ): Failure = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])

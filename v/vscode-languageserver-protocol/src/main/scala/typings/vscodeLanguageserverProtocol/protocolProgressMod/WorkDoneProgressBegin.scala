@@ -46,12 +46,12 @@ object WorkDoneProgressBegin {
     title: String,
     cancellable: js.UndefOr[Boolean] = js.undefined,
     message: String = null,
-    percentage: Int | Double = null
+    percentage: js.UndefOr[Double] = js.undefined
   ): WorkDoneProgressBegin = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkDoneProgressBegin]
   }
 }

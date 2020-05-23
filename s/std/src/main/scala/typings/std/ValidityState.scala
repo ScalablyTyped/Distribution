@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +19,23 @@ trait ValidityState extends js.Object {
   val valueMissing: scala.Boolean
 }
 
-@JSGlobal("ValidityState")
-@js.native
-object ValidityState extends Instantiable0[ValidityState]
+object ValidityState {
+  @scala.inline
+  def apply(
+    badInput: scala.Boolean,
+    customError: scala.Boolean,
+    patternMismatch: scala.Boolean,
+    rangeOverflow: scala.Boolean,
+    rangeUnderflow: scala.Boolean,
+    stepMismatch: scala.Boolean,
+    tooLong: scala.Boolean,
+    tooShort: scala.Boolean,
+    typeMismatch: scala.Boolean,
+    valid: scala.Boolean,
+    valueMissing: scala.Boolean
+  ): ValidityState = {
+    val __obj = js.Dynamic.literal(badInput = badInput.asInstanceOf[js.Any], customError = customError.asInstanceOf[js.Any], patternMismatch = patternMismatch.asInstanceOf[js.Any], rangeOverflow = rangeOverflow.asInstanceOf[js.Any], rangeUnderflow = rangeUnderflow.asInstanceOf[js.Any], stepMismatch = stepMismatch.asInstanceOf[js.Any], tooLong = tooLong.asInstanceOf[js.Any], tooShort = tooShort.asInstanceOf[js.Any], typeMismatch = typeMismatch.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], valueMissing = valueMissing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValidityState]
+  }
+}
 

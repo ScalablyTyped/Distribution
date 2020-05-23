@@ -21,8 +21,17 @@ trait OAuth2Service extends js.Object {
     * The first step in getting an OAuth2 token is to have the user visit this URL
     * and approve the authorization request. The user will then be redirected back to your
     * application using callback function name specified, so that the flow may continue.
+    * Accepts an object of additional parameters that should be
+    * stored in the state token and made available in the callback function.
     */
   def getAuthorizationUrl(): String = js.native
+  def getAuthorizationUrl(optAdditionalParameters: js.Object): String = js.native
+  /**
+    * Gets an id token for this service if present. This token can be used in HTTP
+    * requests to the service's endpoint. This method will throw an error if the
+    * user's access was not granted or has expired.
+    */
+  def getIdToken(): js.UndefOr[String] = js.native
   /**
     * Gets the last error that occurred this execution when trying to
     * automatically refresh or generate an access token.
@@ -34,9 +43,17 @@ trait OAuth2Service extends js.Object {
     */
   def getRedirectUri(): String = js.native
   /**
+    * Gets the storage layer for this service, used to persist tokens.
+    * Custom values associated with the service can be stored here as well.
+    * The key <code>null</code> is used to to store the token and should not be used.
+    */
+  def getStorage(): Storage = js.native
+  /**
     * Gets the token from the service's property store or cache.
+    * If optSkipMemoryCheck, bypass the local memory cache when fetching the token.
     */
   def getToken(): js.Object | Null = js.native
+  def getToken(optSkipMemoryCheck: Boolean): js.Object | Null = js.native
   /**
     * Completes the OAuth2 flow using the request data passed in to the callback function.
     */
@@ -53,9 +70,14 @@ trait OAuth2Service extends js.Object {
     */
   def refresh(): Unit = js.native
   /**
-    * Resets the service, removing access and requiring the service to be re-authorized.
+    * Resets the service; removing access and requiring the service to be re-authorized.
+    * Deletes any additional data related to the service that was stored in cache/properties.
     */
   def reset(): Unit = js.native
+  /**
+    * Sets additional JWT claims to use for Service Account authorization.
+    */
+  def setAdditionalClaims(additionalClaims: StringDictionary[String]): OAuth2Service = js.native
   /**
     * Sets the service's authorization base URL (required).
     * For Google services this URL should be `https://accounts.google.com/o/oauth2/auth`.
@@ -95,6 +117,14 @@ trait OAuth2Service extends js.Object {
     */
   def setExpirationMinutes(expirationMinutes: String): OAuth2Service = js.native
   /**
+    * Sets the OAuth2 grant_type to use when obtaining an access token. This does
+    * not need to be set when using either the authorization code flow (AKA
+    * 3-legged OAuth) or the service account flow. The most common usage is to set
+    * it to "client_credentials" and then also set the token headers to include
+    * the Authorization header required by the OAuth2 provider.
+    */
+  def setGrantType(grantType: String): OAuth2Service = js.native
+  /**
     * Sets the issuer (iss) value to use for Service Account authorization.
     * If not set the client ID will be used instead.
     */
@@ -121,6 +151,17 @@ trait OAuth2Service extends js.Object {
     * if you want to share access across users.
     */
   def setPropertyStore(propertyStore: Properties): OAuth2Service = js.native
+  /**
+    * Sets the URI to redirect to when the OAuth flow has completed. By default the
+    * library will provide this value automatically, but in some rare cases you may
+    * need to override it.
+    */
+  def setRedirectUri(redirectUri: String): OAuth2Service = js.native
+  /**
+    * Sets the service's refresh URL. Some OAuth providers require a different URL
+    * to be used when generating access tokens from a refresh token.
+    */
+  def setRefreshUrl(refreshUrl: String): OAuth2Service = js.native
   /**
     * Sets the scope or scopes to request during the authorization flow (optional).
     * If the scope value is an array it will be joined using the separator before being sent to the server,

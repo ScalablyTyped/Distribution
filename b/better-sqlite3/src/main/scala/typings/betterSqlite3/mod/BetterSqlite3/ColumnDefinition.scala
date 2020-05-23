@@ -21,11 +21,8 @@ object ColumnDefinition {
     table: String = null,
     `type`: String = null
   ): ColumnDefinition = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], database = database.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefinition]
   }
 }

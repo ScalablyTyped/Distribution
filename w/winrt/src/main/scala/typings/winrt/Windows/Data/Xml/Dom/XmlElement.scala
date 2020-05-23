@@ -4,88 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Data.Xml.Dom.XmlElement")
-@js.native
-class XmlElement () extends IXmlElement {
-  /* CompleteClass */
-  override var attributes: XmlNamedNodeMap = js.native
-  /* CompleteClass */
-  override var childNodes: XmlNodeList = js.native
-  /* CompleteClass */
-  override var firstChild: IXmlNode = js.native
-  /* CompleteClass */
-  override var innerText: String = js.native
-  /* CompleteClass */
-  override var lastChild: IXmlNode = js.native
-  /* CompleteClass */
-  override var localName: js.Any = js.native
-  /* CompleteClass */
-  override var namespaceUri: js.Any = js.native
-  /* CompleteClass */
-  override var nextSibling: IXmlNode = js.native
-  /* CompleteClass */
-  override var nodeName: String = js.native
-  /* CompleteClass */
-  override var nodeType: NodeType = js.native
-  /* CompleteClass */
-  override var nodeValue: js.Any = js.native
-  /* CompleteClass */
-  override var ownerDocument: XmlDocument = js.native
-  /* CompleteClass */
-  override var parentNode: IXmlNode = js.native
-  /* CompleteClass */
-  override var prefix: js.Any = js.native
-  /* CompleteClass */
-  override var previousSibling: IXmlNode = js.native
-  /* CompleteClass */
-  override var tagName: String = js.native
-  /* CompleteClass */
-  override def appendChild(newChild: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def cloneNode(deep: Boolean): IXmlNode = js.native
-  /* CompleteClass */
-  override def getAttribute(attributeName: String): String = js.native
-  /* CompleteClass */
-  override def getAttributeNS(namespaceUri: js.Any, localName: String): String = js.native
-  /* CompleteClass */
-  override def getAttributeNode(attributeName: String): XmlAttribute = js.native
-  /* CompleteClass */
-  override def getAttributeNodeNS(namespaceUri: js.Any, localName: String): XmlAttribute = js.native
-  /* CompleteClass */
-  override def getElementsByTagName(tagName: String): XmlNodeList = js.native
-  /* CompleteClass */
-  override def getXml(): String = js.native
-  /* CompleteClass */
-  override def hasChildNodes(): Boolean = js.native
-  /* CompleteClass */
-  override def insertBefore(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def normalize(): Unit = js.native
-  /* CompleteClass */
-  override def removeAttribute(attributeName: String): Unit = js.native
-  /* CompleteClass */
-  override def removeAttributeNS(namespaceUri: js.Any, localName: String): Unit = js.native
-  /* CompleteClass */
-  override def removeAttributeNode(attributeNode: XmlAttribute): XmlAttribute = js.native
-  /* CompleteClass */
-  override def removeChild(childNode: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def replaceChild(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def selectNodes(xpath: String): XmlNodeList = js.native
-  /* CompleteClass */
-  override def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList = js.native
-  /* CompleteClass */
-  override def selectSingleNode(xpath: String): IXmlNode = js.native
-  /* CompleteClass */
-  override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
-  /* CompleteClass */
-  override def setAttribute(attributeName: String, attributeValue: String): Unit = js.native
-  /* CompleteClass */
-  override def setAttributeNS(namespaceUri: js.Any, qualifiedName: String, value: String): Unit = js.native
-  /* CompleteClass */
-  override def setAttributeNode(newAttribute: XmlAttribute): XmlAttribute = js.native
-  /* CompleteClass */
-  override def setAttributeNodeNS(newAttribute: XmlAttribute): XmlAttribute = js.native
+trait XmlElement extends IXmlElement
+
+object XmlElement {
+  @scala.inline
+  def apply(
+    appendChild: IXmlNode => IXmlNode,
+    attributes: XmlNamedNodeMap,
+    childNodes: XmlNodeList,
+    cloneNode: Boolean => IXmlNode,
+    firstChild: IXmlNode,
+    getAttribute: String => String,
+    getAttributeNS: (js.Any, String) => String,
+    getAttributeNode: String => XmlAttribute,
+    getAttributeNodeNS: (js.Any, String) => XmlAttribute,
+    getElementsByTagName: String => XmlNodeList,
+    getXml: () => String,
+    hasChildNodes: () => Boolean,
+    innerText: String,
+    insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
+    lastChild: IXmlNode,
+    localName: js.Any,
+    namespaceUri: js.Any,
+    nextSibling: IXmlNode,
+    nodeName: String,
+    nodeType: NodeType,
+    nodeValue: js.Any,
+    normalize: () => Unit,
+    ownerDocument: XmlDocument,
+    parentNode: IXmlNode,
+    prefix: js.Any,
+    previousSibling: IXmlNode,
+    removeAttribute: String => Unit,
+    removeAttributeNS: (js.Any, String) => Unit,
+    removeAttributeNode: XmlAttribute => XmlAttribute,
+    removeChild: IXmlNode => IXmlNode,
+    replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
+    selectNodes: String => XmlNodeList,
+    selectNodesNS: (String, js.Any) => XmlNodeList,
+    selectSingleNode: String => IXmlNode,
+    selectSingleNodeNS: (String, js.Any) => IXmlNode,
+    setAttribute: (String, String) => Unit,
+    setAttributeNS: (js.Any, String, String) => Unit,
+    setAttributeNode: XmlAttribute => XmlAttribute,
+    setAttributeNodeNS: XmlAttribute => XmlAttribute,
+    tagName: String
+  ): XmlElement = {
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction1(cloneNode), firstChild = firstChild.asInstanceOf[js.Any], getAttribute = js.Any.fromFunction1(getAttribute), getAttributeNS = js.Any.fromFunction2(getAttributeNS), getAttributeNode = js.Any.fromFunction1(getAttributeNode), getAttributeNodeNS = js.Any.fromFunction2(getAttributeNodeNS), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName), getXml = js.Any.fromFunction0(getXml), hasChildNodes = js.Any.fromFunction0(hasChildNodes), innerText = innerText.asInstanceOf[js.Any], insertBefore = js.Any.fromFunction2(insertBefore), lastChild = lastChild.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], normalize = js.Any.fromFunction0(normalize), ownerDocument = ownerDocument.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any], removeAttribute = js.Any.fromFunction1(removeAttribute), removeAttributeNS = js.Any.fromFunction2(removeAttributeNS), removeAttributeNode = js.Any.fromFunction1(removeAttributeNode), removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS), setAttribute = js.Any.fromFunction2(setAttribute), setAttributeNS = js.Any.fromFunction3(setAttributeNS), setAttributeNode = js.Any.fromFunction1(setAttributeNode), setAttributeNodeNS = js.Any.fromFunction1(setAttributeNodeNS), tagName = tagName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[XmlElement]
+  }
 }
 

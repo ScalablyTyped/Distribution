@@ -25,22 +25,22 @@ trait ISaverDef extends js.Object {
 object ISaverDef {
   @scala.inline
   def apply(
-    filenameTensorName: String = null,
-    keepCheckpointEveryNHours: Int | Double = null,
-    maxToKeep: Int | Double = null,
-    restoreOpName: String = null,
-    saveTensorName: String = null,
-    sharded: js.UndefOr[Boolean] = js.undefined,
-    version: CheckpointFormatVersion = null
+    filenameTensorName: js.UndefOr[Null | String] = js.undefined,
+    keepCheckpointEveryNHours: js.UndefOr[Null | Double] = js.undefined,
+    maxToKeep: js.UndefOr[Null | Double] = js.undefined,
+    restoreOpName: js.UndefOr[Null | String] = js.undefined,
+    saveTensorName: js.UndefOr[Null | String] = js.undefined,
+    sharded: js.UndefOr[Null | Boolean] = js.undefined,
+    version: js.UndefOr[Null | CheckpointFormatVersion] = js.undefined
   ): ISaverDef = {
     val __obj = js.Dynamic.literal()
-    if (filenameTensorName != null) __obj.updateDynamic("filenameTensorName")(filenameTensorName.asInstanceOf[js.Any])
-    if (keepCheckpointEveryNHours != null) __obj.updateDynamic("keepCheckpointEveryNHours")(keepCheckpointEveryNHours.asInstanceOf[js.Any])
-    if (maxToKeep != null) __obj.updateDynamic("maxToKeep")(maxToKeep.asInstanceOf[js.Any])
-    if (restoreOpName != null) __obj.updateDynamic("restoreOpName")(restoreOpName.asInstanceOf[js.Any])
-    if (saveTensorName != null) __obj.updateDynamic("saveTensorName")(saveTensorName.asInstanceOf[js.Any])
+    if (!js.isUndefined(filenameTensorName)) __obj.updateDynamic("filenameTensorName")(filenameTensorName.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepCheckpointEveryNHours)) __obj.updateDynamic("keepCheckpointEveryNHours")(keepCheckpointEveryNHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxToKeep)) __obj.updateDynamic("maxToKeep")(maxToKeep.asInstanceOf[js.Any])
+    if (!js.isUndefined(restoreOpName)) __obj.updateDynamic("restoreOpName")(restoreOpName.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveTensorName)) __obj.updateDynamic("saveTensorName")(saveTensorName.asInstanceOf[js.Any])
     if (!js.isUndefined(sharded)) __obj.updateDynamic("sharded")(sharded.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISaverDef]
   }
 }

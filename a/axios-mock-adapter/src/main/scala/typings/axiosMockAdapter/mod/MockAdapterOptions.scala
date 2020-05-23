@@ -12,9 +12,9 @@ trait MockAdapterOptions extends js.Object {
 
 object MockAdapterOptions {
   @scala.inline
-  def apply(delayResponse: Int | Double = null, onNoMatch: passthrough = null): MockAdapterOptions = {
+  def apply(delayResponse: js.UndefOr[Double] = js.undefined, onNoMatch: passthrough = null): MockAdapterOptions = {
     val __obj = js.Dynamic.literal()
-    if (delayResponse != null) __obj.updateDynamic("delayResponse")(delayResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayResponse)) __obj.updateDynamic("delayResponse")(delayResponse.get.asInstanceOf[js.Any])
     if (onNoMatch != null) __obj.updateDynamic("onNoMatch")(onNoMatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockAdapterOptions]
   }

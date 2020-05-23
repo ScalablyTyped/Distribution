@@ -32,29 +32,29 @@ object RoleOptions {
     encrypted: js.UndefOr[Boolean] = js.undefined,
     inRole: String | js.Array[String] = null,
     inherit: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     login: js.UndefOr[Boolean] = js.undefined,
-    password: Value = null,
+    password: js.UndefOr[Null | Value] = js.undefined,
     replication: js.UndefOr[Boolean] = js.undefined,
     role: String | js.Array[String] = null,
     superuser: js.UndefOr[Boolean] = js.undefined,
-    valid: Value = null
+    valid: js.UndefOr[Null | Value] = js.undefined
   ): RoleOptions = {
     val __obj = js.Dynamic.literal()
     if (admin != null) __obj.updateDynamic("admin")(admin.asInstanceOf[js.Any])
-    if (!js.isUndefined(bypassrls)) __obj.updateDynamic("bypassrls")(bypassrls.asInstanceOf[js.Any])
-    if (!js.isUndefined(createdb)) __obj.updateDynamic("createdb")(createdb.asInstanceOf[js.Any])
-    if (!js.isUndefined(createrole)) __obj.updateDynamic("createrole")(createrole.asInstanceOf[js.Any])
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassrls)) __obj.updateDynamic("bypassrls")(bypassrls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(createdb)) __obj.updateDynamic("createdb")(createdb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(createrole)) __obj.updateDynamic("createrole")(createrole.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.get.asInstanceOf[js.Any])
     if (inRole != null) __obj.updateDynamic("inRole")(inRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(login)) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(replication)) __obj.updateDynamic("replication")(replication.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(login)) __obj.updateDynamic("login")(login.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(password)) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (!js.isUndefined(replication)) __obj.updateDynamic("replication")(replication.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(superuser)) __obj.updateDynamic("superuser")(superuser.asInstanceOf[js.Any])
-    if (valid != null) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (!js.isUndefined(superuser)) __obj.updateDynamic("superuser")(superuser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleOptions]
   }
 }

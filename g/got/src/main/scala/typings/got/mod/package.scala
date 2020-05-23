@@ -40,7 +40,7 @@ package object mod {
   type GotInstance[T] = T with (typings.std.Record[
     typings.got.gotStrings.get_ | typings.got.gotStrings.post_ | typings.got.gotStrings.put_ | typings.got.gotStrings.patch | typings.got.gotStrings.head_ | typings.got.gotStrings.delete_, 
     T
-  ]) with typings.got.AnonCancelError
+  ]) with typings.got.anon.CancelError
   type GotStreamFn = js.Function2[
     /* url */ typings.got.mod.GotUrl, 
     /* options */ js.UndefOr[typings.got.mod.GotOptions[java.lang.String | scala.Null]], 

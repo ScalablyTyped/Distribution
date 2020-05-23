@@ -54,10 +54,10 @@ object ModalDialogOptions {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillAlways)) __obj.updateDynamic("fillAlways")(fillAlways.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillAlways)) __obj.updateDynamic("fillAlways")(fillAlways.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.asInstanceOf[js.Any])
-    if (!js.isUndefined(uncloseable)) __obj.updateDynamic("uncloseable")(uncloseable.asInstanceOf[js.Any])
+    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uncloseable)) __obj.updateDynamic("uncloseable")(uncloseable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogOptions]
   }
 }

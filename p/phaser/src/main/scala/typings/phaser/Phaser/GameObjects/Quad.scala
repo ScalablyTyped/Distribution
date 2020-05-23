@@ -1,7 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,20 +13,8 @@ import scala.scalajs.js.annotation._
   * You can manipulate the corner points of the quad via the getters and setters such as `topLeftX`, and also
   * change their alpha and color values. The quad itself can be moved by adjusting the `x` and `y` properties.
   */
-@JSGlobal("Phaser.GameObjects.Quad")
 @js.native
-class Quad protected () extends Mesh {
-  /**
-    * 
-    * @param scene The Scene to which this Quad belongs.
-    * @param x The horizontal position of this Game Object in the world.
-    * @param y The vertical position of this Game Object in the world.
-    * @param texture The key of the Texture this Game Object will use to render with, as stored in the Texture Manager.
-    * @param frame An optional frame from the Texture this Game Object is rendering with.
-    */
-  def this(scene: Scene, x: Double, y: Double, texture: String) = this()
-  def this(scene: Scene, x: Double, y: Double, texture: String, frame: String) = this()
-  def this(scene: Scene, x: Double, y: Double, texture: String, frame: integer) = this()
+trait Quad extends Mesh {
   /**
     * The bottom-left alpha value of this Quad.
     */
@@ -96,42 +82,42 @@ class Quad protected () extends Mesh {
   /**
     * Resets the position, alpha and color values used by this Quad.
     */
-  def reset(): Quad = js.native
+  def reset(): this.type = js.native
   /**
     * Resets the alpha values used by this Quad back to 1.
     */
-  def resetAlpha(): Quad = js.native
+  def resetAlpha(): this.type = js.native
   /**
     * Resets the color values used by this Quad back to 0xffffff.
     */
-  def resetColors(): Quad = js.native
+  def resetColors(): this.type = js.native
   /**
     * Resets the positions of the four corner vertices of this Quad.
     */
-  def resetPosition(): Quad = js.native
+  def resetPosition(): this.type = js.native
   /**
     * Sets the bottom-left vertex position of this Quad.
     * @param x The horizontal coordinate of the vertex.
     * @param y The vertical coordinate of the vertex.
     */
-  def setBottomLeft(x: Double, y: Double): Quad = js.native
+  def setBottomLeft(x: Double, y: Double): this.type = js.native
   /**
     * Sets the bottom-right vertex position of this Quad.
     * @param x The horizontal coordinate of the vertex.
     * @param y The vertical coordinate of the vertex.
     */
-  def setBottomRight(x: Double, y: Double): Quad = js.native
+  def setBottomRight(x: Double, y: Double): this.type = js.native
   /**
     * Sets the top-left vertex position of this Quad.
     * @param x The horizontal coordinate of the vertex.
     * @param y The vertical coordinate of the vertex.
     */
-  def setTopLeft(x: Double, y: Double): Quad = js.native
+  def setTopLeft(x: Double, y: Double): this.type = js.native
   /**
     * Sets the top-right vertex position of this Quad.
     * @param x The horizontal coordinate of the vertex.
     * @param y The vertical coordinate of the vertex.
     */
-  def setTopRight(x: Double, y: Double): Quad = js.native
+  def setTopRight(x: Double, y: Double): this.type = js.native
 }
 

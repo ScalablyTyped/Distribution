@@ -10,7 +10,7 @@ package object transformRootFieldsMod {
     /* fieldName */ java.lang.String, 
     /* field */ typings.graphql.definitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]], 
     js.UndefOr[
-      (typings.graphql.definitionMod.GraphQLFieldConfig[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | typings.graphqlTools.AnonFieldName | scala.Null
+      (typings.graphql.definitionMod.GraphQLFieldConfig[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | typings.graphqlTools.anon.FieldName | scala.Null
     ]
   ]
 }

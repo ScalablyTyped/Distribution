@@ -1,8 +1,8 @@
 package typings.reactAutocomplete.mod
 
 import typings.react.mod.Component
-import typings.reactAutocomplete.FnCall
-import typings.reactAutocomplete.FnCallStartEndDirection
+import typings.reactAutocomplete.anon.FnCall
+import typings.reactAutocomplete.anon.FnCallStartEndDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

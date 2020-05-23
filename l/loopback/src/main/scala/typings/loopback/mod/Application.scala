@@ -1,6 +1,6 @@
 package typings.loopback.mod
 
-import typings.loopback.AnonApns
+import typings.loopback.anon.Apns
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
@@ -91,7 +91,7 @@ class Application () extends PersistedModel {
     *  pushSettings.apns.feedbackOptions.interval (APNS).
     *  pushSettings.gcm.serverApiKey: Google Cloud Messaging API key.
     */
-  var pushSetings: AnonApns = js.native
+  var pushSetings: Apns = js.native
   /** Status of the application; Either `production`, `sandbox` (default), or `disabled`. */
   var status: String = js.native
   /** OAuth 2.0  application URL. */

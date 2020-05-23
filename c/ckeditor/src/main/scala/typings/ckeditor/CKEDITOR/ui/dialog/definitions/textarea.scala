@@ -14,15 +14,15 @@ trait textarea extends js.Object {
 object textarea {
   @scala.inline
   def apply(
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     default: String = null,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     validate: () => Boolean = null
   ): textarea = {
     val __obj = js.Dynamic.literal()
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[textarea]
   }

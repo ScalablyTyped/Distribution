@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonBorderRadius
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonCurvenessOpacity
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonItemStyleLabelLineStyle
-import typings.echarts.AnonSource
+import typings.echarts.anon.BorderRadius
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.CurvenessOpacity
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.ItemStyleLabelLineStyle
+import typings.echarts.anon.Source
 import typings.echarts.echarts.EChartOption.SeriesSankey.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -214,7 +214,7 @@ trait SeriesSankey_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleLabelLineStyle] = js.undefined
+  var emphasis: js.UndefOr[ItemStyleLabelLineStyle] = js.undefined
   /**
     * Support when mouse hovering over a node or an edge, the adjacent
     * nodes and edges are also highlighted.
@@ -261,14 +261,14 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * `label` describes the text label style in each rectangular node.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.label
     */
-  var label: js.UndefOr[AnonBorderRadius] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.undefined
   /**
     * The iterations of layout, which is used to continuously optimize
     * the positions of nodes in graph, decreasing the overlapping between
@@ -311,7 +311,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonCurvenessOpacity] = js.undefined
+  var lineStyle: js.UndefOr[CurvenessOpacity] = js.undefined
   /**
     * The links between nodes.
     * **Notes: The Sankey diagram theoretically only supports Directed
@@ -323,7 +323,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.links
     */
-  var links: js.UndefOr[AnonSource] = js.undefined
+  var links: js.UndefOr[Source] = js.undefined
   /**
     * The gap between any two rectangles in each column from the graph.
     *
@@ -389,7 +389,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * Distance between sankey component and the top side of the container.
     *
@@ -464,46 +464,46 @@ object SeriesSankey_ {
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: Int | Double = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
     bottom: Double | String = null,
     data: js.Array[(js.Array[Double | DataObject]) | DataObject | Double] = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     edges: js.Array[_] = null,
-    emphasis: AnonItemStyleLabelLineStyle = null,
+    emphasis: ItemStyleLabelLineStyle = null,
     focusNodeAdjacency: Boolean | String = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonBorderRadius = null,
-    layoutIterations: Int | Double = null,
+    itemStyle: BorderType = null,
+    label: BorderRadius = null,
+    layoutIterations: js.UndefOr[Double] = js.undefined,
     left: Double | String = null,
-    lineStyle: AnonCurvenessOpacity = null,
-    links: AnonSource = null,
-    nodeGap: Int | Double = null,
-    nodeWidth: Int | Double = null,
+    lineStyle: CurvenessOpacity = null,
+    links: Source = null,
+    nodeGap: js.UndefOr[Double] = js.undefined,
+    nodeWidth: js.UndefOr[Double] = js.undefined,
     nodes: js.Array[_] = null,
     orient: String = null,
     right: Double | String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): SeriesSankey_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
     if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (focusNodeAdjacency != null) __obj.updateDynamic("focusNodeAdjacency")(focusNodeAdjacency.asInstanceOf[js.Any])
@@ -511,22 +511,22 @@ object SeriesSankey_ {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (layoutIterations != null) __obj.updateDynamic("layoutIterations")(layoutIterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(layoutIterations)) __obj.updateDynamic("layoutIterations")(layoutIterations.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (nodeGap != null) __obj.updateDynamic("nodeGap")(nodeGap.asInstanceOf[js.Any])
-    if (nodeWidth != null) __obj.updateDynamic("nodeWidth")(nodeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeGap)) __obj.updateDynamic("nodeGap")(nodeGap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeWidth)) __obj.updateDynamic("nodeWidth")(nodeWidth.get.asInstanceOf[js.Any])
     if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSankey_]
   }
 }

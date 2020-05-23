@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("VBIDE.Reference")
 @js.native
-class Reference protected () extends js.Object {
+trait Reference extends js.Object {
   val BuiltIn: Boolean = js.native
   @JSName("Collection")
   val Collection_Original: References = js.native

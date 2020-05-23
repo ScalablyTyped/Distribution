@@ -20,7 +20,7 @@ trait ButtonTextCompoundInput
 object ButtonTextCompoundInput {
   @scala.inline
   def apply(
-    StringDictionary: /* viewId */ StringDictionary[js.UndefOr[String]] = null,
+    StringDictionary: /* header */ StringDictionary[js.UndefOr[String]] = null,
     day: String = null,
     month: String = null,
     next: String = null,

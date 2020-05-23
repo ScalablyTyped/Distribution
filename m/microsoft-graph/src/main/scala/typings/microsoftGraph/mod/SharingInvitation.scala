@@ -29,7 +29,7 @@ object SharingInvitation {
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (invitedBy != null) __obj.updateDynamic("invitedBy")(invitedBy.asInstanceOf[js.Any])
     if (redeemedBy != null) __obj.updateDynamic("redeemedBy")(redeemedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(signInRequired)) __obj.updateDynamic("signInRequired")(signInRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(signInRequired)) __obj.updateDynamic("signInRequired")(signInRequired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharingInvitation]
   }
 }

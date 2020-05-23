@@ -1,23 +1,32 @@
 package typings.amapJsSdk.AMap
 
-import typings.amapJsSdk.AnonIsOpen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.OverView")
-@js.native
-class OverView ()
+trait OverView
   extends EventBindable
      with MapControl {
-  def this(options: AnonIsOpen) = this()
-  def close(): Unit = js.native
-  def getTileLayer(): TileLayer = js.native
-  /* CompleteClass */
-  override def hide(): Unit = js.native
-  def open(): Unit = js.native
-  def setTileLayer(layer: TileLayer): Unit = js.native
-  /* CompleteClass */
-  override def show(): Unit = js.native
+  def close(): Unit
+  def getTileLayer(): TileLayer
+  def open(): Unit
+  def setTileLayer(layer: TileLayer): Unit
+}
+
+object OverView {
+  @scala.inline
+  def apply(
+    close: () => Unit,
+    getTileLayer: () => TileLayer,
+    hide: () => Unit,
+    off: (String, EventCallback) => Unit,
+    on: (String, EventCallback) => Unit,
+    open: () => Unit,
+    setTileLayer: TileLayer => Unit,
+    show: () => Unit
+  ): OverView = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getTileLayer = js.Any.fromFunction0(getTileLayer), hide = js.Any.fromFunction0(hide), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), open = js.Any.fromFunction0(open), setTileLayer = js.Any.fromFunction1(setTileLayer), show = js.Any.fromFunction0(show))
+    __obj.asInstanceOf[OverView]
+  }
 }
 

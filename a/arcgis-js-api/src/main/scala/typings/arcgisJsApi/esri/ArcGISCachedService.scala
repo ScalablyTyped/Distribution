@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,11 @@ trait ArcGISCachedService extends js.Object {
   var tileInfo: TileInfo
 }
 
-@JSGlobal("__esri.ArcGISCachedService")
-@js.native
-object ArcGISCachedService extends TopLevel[ArcGISCachedServiceConstructor]
+object ArcGISCachedService {
+  @scala.inline
+  def apply(copyright: String, spatialReference: SpatialReference, tileInfo: TileInfo): ArcGISCachedService = {
+    val __obj = js.Dynamic.literal(copyright = copyright.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], tileInfo = tileInfo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ArcGISCachedService]
+  }
+}
 

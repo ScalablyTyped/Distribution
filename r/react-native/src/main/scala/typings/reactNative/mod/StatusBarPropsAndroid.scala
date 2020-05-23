@@ -24,7 +24,7 @@ object StatusBarPropsAndroid {
   def apply(backgroundColor: String = null, translucent: js.UndefOr[Boolean] = js.undefined): StatusBarPropsAndroid = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusBarPropsAndroid]
   }
 }

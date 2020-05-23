@@ -40,7 +40,7 @@ object CreateDataSetResponse {
     IngestionArn: Arn = null,
     IngestionId: ResourceId = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null
+    Status: js.UndefOr[StatusCode] = js.undefined
   ): CreateDataSetResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
@@ -48,7 +48,7 @@ object CreateDataSetResponse {
     if (IngestionArn != null) __obj.updateDynamic("IngestionArn")(IngestionArn.asInstanceOf[js.Any])
     if (IngestionId != null) __obj.updateDynamic("IngestionId")(IngestionId.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSetResponse]
   }
 }

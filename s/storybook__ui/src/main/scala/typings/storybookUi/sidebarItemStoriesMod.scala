@@ -1,6 +1,7 @@
 package typings.storybookUi
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
+import typings.storybookUi.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +25,7 @@ object sidebarItemStoriesMod extends js.Object {
   
   @js.native
   object longName extends js.Object {
-    var story: AnonName = js.native
+    var story: Name = js.native
     def apply(): Element = js.native
   }
   

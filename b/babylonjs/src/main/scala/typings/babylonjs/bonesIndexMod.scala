@@ -1,6 +1,8 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.AdjustPitch
+import typings.babylonjs.anon.BendAxis
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
@@ -91,7 +93,7 @@ object bonesIndexMod extends js.Object {
       * @param options defines options to set up the controller
       */
     def this(mesh: AbstractMesh, bone: typings.babylonjs.boneMod.Bone) = this()
-    def this(mesh: AbstractMesh, bone: typings.babylonjs.boneMod.Bone, options: AnonBendAxis) = this()
+    def this(mesh: AbstractMesh, bone: typings.babylonjs.boneMod.Bone, options: BendAxis) = this()
   }
   
   @js.native
@@ -117,12 +119,7 @@ object bonesIndexMod extends js.Object {
       * * adjustRoll: used to make an adjustment to the roll of the bone
       **/
     def this(mesh: AbstractMesh, bone: typings.babylonjs.boneMod.Bone, target: Vector3) = this()
-    def this(
-      mesh: AbstractMesh,
-      bone: typings.babylonjs.boneMod.Bone,
-      target: Vector3,
-      options: AnonAdjustPitch
-    ) = this()
+    def this(mesh: AbstractMesh, bone: typings.babylonjs.boneMod.Bone, target: Vector3, options: AdjustPitch) = this()
   }
   
   @js.native

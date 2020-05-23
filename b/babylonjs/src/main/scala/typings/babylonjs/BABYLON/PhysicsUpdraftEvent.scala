@@ -7,16 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a physics updraft event
   */
-@JSGlobal("BABYLON.PhysicsUpdraftEvent")
 @js.native
-class PhysicsUpdraftEvent protected () extends js.Object {
-  /**
-    * Initializes the physics updraft event
-    * @param _scene BabylonJS scene
-    * @param _origin The origin position of the updraft
-    * @param _options The options for the updraft event
-    */
-  def this(_scene: Scene, _origin: Vector3, _options: PhysicsUpdraftEventOptions) = this()
+trait PhysicsUpdraftEvent extends js.Object {
   var _cylinder: js.Any = js.native
   var _cylinderPosition: js.Any = js.native
   var _dataFetched: js.Any = js.native

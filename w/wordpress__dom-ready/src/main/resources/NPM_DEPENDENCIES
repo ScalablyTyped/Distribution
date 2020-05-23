@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/dom-ready" : "2.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/dom-ready" : "2.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

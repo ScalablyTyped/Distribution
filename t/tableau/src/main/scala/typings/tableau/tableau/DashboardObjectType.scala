@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,41 +42,6 @@ object DashboardObjectType extends js.Object {
   
   @js.native
   sealed trait WORKSHEET extends DashboardObjectType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DashboardObjectType with String] = js.native
-  /* "addIn" */ @js.native
-  object ADDIN extends TopLevel[ADDIN with String]
-  
-  /* "blank" */ @js.native
-  object BLANK extends TopLevel[BLANK with String]
-  
-  /* "image" */ @js.native
-  object IMAGE extends TopLevel[IMAGE with String]
-  
-  /* "legend" */ @js.native
-  object LEGEND extends TopLevel[LEGEND with String]
-  
-  /* "pageFilter" */ @js.native
-  object PAGE_FILTER extends TopLevel[PAGE_FILTER with String]
-  
-  /* "parameterControl" */ @js.native
-  object PARAMETER_CONTROL extends TopLevel[PARAMETER_CONTROL with String]
-  
-  /* "quickFilter" */ @js.native
-  object QUICK_FILTER extends TopLevel[QUICK_FILTER with String]
-  
-  /* "text" */ @js.native
-  object TEXT extends TopLevel[TEXT with String]
-  
-  /* "title" */ @js.native
-  object TITLE extends TopLevel[TITLE with String]
-  
-  /* "webPage" */ @js.native
-  object WEB_PAGE extends TopLevel[WEB_PAGE with String]
-  
-  /* "worksheet" */ @js.native
-  object WORKSHEET extends TopLevel[WORKSHEET with String]
   
 }
 

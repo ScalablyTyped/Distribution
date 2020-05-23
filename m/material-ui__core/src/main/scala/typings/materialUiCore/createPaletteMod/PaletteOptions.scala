@@ -1,9 +1,9 @@
 package typings.materialUiCore.createPaletteMod
 
-import typings.materialUiCore.PartialCommonColors
-import typings.materialUiCore.PartialTypeAction
-import typings.materialUiCore.PartialTypeBackground
-import typings.materialUiCore.PartialTypeText
+import typings.materialUiCore.anon.PartialCommonColors
+import typings.materialUiCore.anon.PartialTypeAction
+import typings.materialUiCore.anon.PartialTypeBackground
+import typings.materialUiCore.anon.PartialTypeText
 import typings.materialUiCore.mod.PaletteType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ object PaletteOptions {
     action: PartialTypeAction = null,
     background: PartialTypeBackground = null,
     common: PartialCommonColors = null,
-    contrastThreshold: Int | Double = null,
+    contrastThreshold: js.UndefOr[Double] = js.undefined,
     divider: String = null,
     error: PaletteColorOptions = null,
     getContrastText: /* background */ String => String = null,
@@ -40,14 +40,14 @@ object PaletteOptions {
     primary: PaletteColorOptions = null,
     secondary: PaletteColorOptions = null,
     text: PartialTypeText = null,
-    tonalOffset: Int | Double = null,
+    tonalOffset: js.UndefOr[Double] = js.undefined,
     `type`: PaletteType = null
   ): PaletteOptions = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
-    if (contrastThreshold != null) __obj.updateDynamic("contrastThreshold")(contrastThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(contrastThreshold)) __obj.updateDynamic("contrastThreshold")(contrastThreshold.get.asInstanceOf[js.Any])
     if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (getContrastText != null) __obj.updateDynamic("getContrastText")(js.Any.fromFunction1(getContrastText))
@@ -55,7 +55,7 @@ object PaletteOptions {
     if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (tonalOffset != null) __obj.updateDynamic("tonalOffset")(tonalOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(tonalOffset)) __obj.updateDynamic("tonalOffset")(tonalOffset.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaletteOptions]
   }

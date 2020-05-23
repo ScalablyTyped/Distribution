@@ -3,10 +3,10 @@ package typings.esprimaWalk
 import typings.estree.mod.Program
 import typings.std.AddEventListenerOptions
 import typings.std.ChildNode
-import typings.std.Document_
+import typings.std.Document
+import typings.std.Event
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
-import typings.std.Event_
 import typings.std.GetRootNodeOptions
 import typings.std.HTMLElement
 import typings.std.Node
@@ -117,7 +117,7 @@ object mod extends js.Object {
     /**
       * Returns the node document. Returns null for documents.
       */
-    val ownerDocument: Document_ | Null = js.native
+    val ownerDocument: Document | Null = js.native
     var parent: js.UndefOr[Node] = js.native
     /**
       * Returns the parent element.
@@ -169,7 +169,7 @@ object mod extends js.Object {
     /**
       * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
       */
-    def dispatchEvent(event: Event_): Boolean = js.native
+    def dispatchEvent(event: Event): Boolean = js.native
     /**
       * Returns node's root.
       */

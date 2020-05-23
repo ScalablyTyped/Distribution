@@ -1,6 +1,6 @@
 package typings.angular.angular
 
-import typings.angular.mod._Global_.Function
+import typings.angular.mod.global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +50,7 @@ object RouteDefinition {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAsDefault)) __obj.updateDynamic("useAsDefault")(useAsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAsDefault)) __obj.updateDynamic("useAsDefault")(useAsDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteDefinition]
   }
 }

@@ -1,5 +1,9 @@
 package typings.expoLinearGradient
 
+import typings.expoLinearGradient.anon.AccessibilityActions
+import typings.expoLinearGradient.anon.Colors
+import typings.expoLinearGradient.anon.TypeofView
+import typings.expoLinearGradient.anon.X
 import typings.react.mod.Component
 import typings.react.mod.ComponentProps
 import scala.scalajs.js
@@ -19,10 +23,10 @@ object linearGradientMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var propTypes: AnonAccessibilityActions = js.native
+    var propTypes: AccessibilityActions = js.native
   }
   
-  type LinearGradienPoint = AnonX | (js.Tuple2[Double, Double])
-  type LinearGradientProps = AnonColors with ComponentProps[TypeofView]
+  type LinearGradienPoint = X | (js.Tuple2[Double, Double])
+  type LinearGradientProps = Colors with ComponentProps[TypeofView]
 }
 

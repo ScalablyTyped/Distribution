@@ -1,7 +1,7 @@
 package typings.gapiClientYoutube.gapi.client.youtube
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientYoutube.AnonOnBehalfOfContentOwner
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientYoutube.anon.OnBehalfOfContentOwner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,12 @@ trait ChannelBannersResource extends js.Object {
     * - Call the channels.update method to update the channel's branding settings. Set the brandingSettings.image.bannerExternalUrl property's value to the
     * URL obtained in step 2.
     */
-  def insert(request: AnonOnBehalfOfContentOwner): Request_[ChannelBannerResource]
+  def insert(request: OnBehalfOfContentOwner): Request[ChannelBannerResource]
 }
 
 object ChannelBannersResource {
   @scala.inline
-  def apply(insert: AnonOnBehalfOfContentOwner => Request_[ChannelBannerResource]): ChannelBannersResource = {
+  def apply(insert: OnBehalfOfContentOwner => Request[ChannelBannerResource]): ChannelBannersResource = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
     __obj.asInstanceOf[ChannelBannersResource]
   }

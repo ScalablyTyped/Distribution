@@ -1,7 +1,7 @@
 package typings.xstate.patternsMod
 
 import typings.std.Partial
-import typings.xstate.AnonInitial
+import typings.xstate.anon.Initial
 import typings.xstate.typesMod.EventObject
 import typings.xstate.typesMod.StateSchema
 import scala.scalajs.js
@@ -15,12 +15,12 @@ object sequence_states extends js.Object {
     items: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
     ]
-  ): AnonInitial[TStateSchema, TEvent] = js.native
+  ): Initial[TStateSchema, TEvent] = js.native
   def apply[TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
     items: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
     ],
     options: Partial[SequencePatternOptions[TEvent]]
-  ): AnonInitial[TStateSchema, TEvent] = js.native
+  ): Initial[TStateSchema, TEvent] = js.native
 }
 

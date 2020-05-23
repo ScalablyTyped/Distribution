@@ -16,20 +16,20 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    channels: Int | Double = null,
+    channels: js.UndefOr[Double] = js.undefined,
     contextAttributes: js.Object = null,
     latencyHint: String | Double = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     offline: js.UndefOr[Boolean] = js.undefined,
-    sampleRate: Int | Double = null
+    sampleRate: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (!js.isUndefined(channels)) __obj.updateDynamic("channels")(channels.get.asInstanceOf[js.Any])
     if (contextAttributes != null) __obj.updateDynamic("contextAttributes")(contextAttributes.asInstanceOf[js.Any])
     if (latencyHint != null) __obj.updateDynamic("latencyHint")(latencyHint.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

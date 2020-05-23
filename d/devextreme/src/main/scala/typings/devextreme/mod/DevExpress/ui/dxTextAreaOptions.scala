@@ -1,11 +1,11 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementEventJQueryEvent
-import typings.devextreme.AnonJQueryEvent
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.ElementEventJQueryEvent
+import typings.devextreme.anon.JQueryEvent
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
 import typings.devextreme.devextremeStrings.always
 import typings.devextreme.devextremeStrings.auto
 import typings.devextreme.devextremeStrings.clear
@@ -60,22 +60,22 @@ object dxTextAreaOptions {
     minHeight: Double | String = null,
     mode: email | password | search | tel | text | url = null,
     name: String = null,
-    onChange: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onContentReady: /* e */ AnonComponentElement[dxTextArea] => _ = null,
-    onCopy: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onCut: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onDisposing: /* e */ AnonModel[dxTextArea] => _ = null,
-    onEnterKey: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onFocusIn: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onFocusOut: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onInitialized: /* e */ AnonElement[dxTextArea] => _ = null,
-    onInput: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onKeyDown: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onKeyPress: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onKeyUp: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxTextArea] => _ = null,
-    onPaste: /* e */ AnonElementEventJQueryEvent[dxTextArea] => _ = null,
-    onValueChanged: /* e */ AnonJQueryEvent[dxTextArea] => _ = null,
+    onChange: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onContentReady: /* e */ ComponentElement[dxTextArea] => _ = null,
+    onCopy: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onCut: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onDisposing: /* e */ Model[dxTextArea] => _ = null,
+    onEnterKey: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onFocusIn: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onFocusOut: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onInitialized: /* e */ Element[dxTextArea] => _ = null,
+    onInput: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onKeyDown: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onKeyPress: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onKeyUp: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onOptionChanged: /* e */ Name[dxTextArea] => _ = null,
+    onPaste: /* e */ ElementEventJQueryEvent[dxTextArea] => _ = null,
+    onValueChanged: /* e */ JQueryEvent[dxTextArea] => _ = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -83,7 +83,7 @@ object dxTextAreaOptions {
     showMaskMode: always | onFocus = null,
     spellcheck: js.UndefOr[Boolean] = js.undefined,
     stylingMode: outlined | underlined | filled = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     text: String = null,
     useMaskedValue: js.UndefOr[Boolean] = js.undefined,
     validationError: js.Any = null,
@@ -97,18 +97,18 @@ object dxTextAreaOptions {
   ): dxTextAreaOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoResizeEnabled)) __obj.updateDynamic("autoResizeEnabled")(autoResizeEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResizeEnabled)) __obj.updateDynamic("autoResizeEnabled")(autoResizeEnabled.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
     if (inputAttr != null) __obj.updateDynamic("inputAttr")(inputAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
+    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.get.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (maskChar != null) __obj.updateDynamic("maskChar")(maskChar.asInstanceOf[js.Any])
     if (maskInvalidMessage != null) __obj.updateDynamic("maskInvalidMessage")(maskInvalidMessage.asInstanceOf[js.Any])
@@ -135,22 +135,22 @@ object dxTextAreaOptions {
     if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
     if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1(onValueChanged))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.get.asInstanceOf[js.Any])
     if (showMaskMode != null) __obj.updateDynamic("showMaskMode")(showMaskMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
     if (stylingMode != null) __obj.updateDynamic("stylingMode")(stylingMode.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaskedValue)) __obj.updateDynamic("useMaskedValue")(useMaskedValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMaskedValue)) __obj.updateDynamic("useMaskedValue")(useMaskedValue.get.asInstanceOf[js.Any])
     if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
     if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
     if (validationMessageMode != null) __obj.updateDynamic("validationMessageMode")(validationMessageMode.asInstanceOf[js.Any])
     if (validationStatus != null) __obj.updateDynamic("validationStatus")(validationStatus.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueChangeEvent != null) __obj.updateDynamic("valueChangeEvent")(valueChangeEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxTextAreaOptions]
   }

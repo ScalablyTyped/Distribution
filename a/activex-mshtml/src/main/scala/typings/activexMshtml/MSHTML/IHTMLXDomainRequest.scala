@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.IHTMLXDomainRequest")
 @js.native
-class IHTMLXDomainRequest protected () extends js.Object {
+trait IHTMLXDomainRequest extends js.Object {
   @JSName("MSHTML.IHTMLXDomainRequest_typekey")
   var MSHTMLDotIHTMLXDomainRequest_typekey: IHTMLXDomainRequest = js.native
   val contentType: String = js.native

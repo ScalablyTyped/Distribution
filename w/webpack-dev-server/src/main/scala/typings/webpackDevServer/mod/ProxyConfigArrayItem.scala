@@ -132,13 +132,13 @@ object ProxyConfigArrayItem {
     protocolRewrite: String = null,
     proxyHost: js.Any = null,
     proxyTable: js.Any = null,
-    proxyTimeout: Int | Double = null,
+    proxyTimeout: js.UndefOr[Double] = js.undefined,
     router: StringDictionary[String] | (js.Function1[/* req */ IncomingMessage, String]) = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     selfHandleResponse: js.UndefOr[Boolean] = js.undefined,
     ssl: TlsOptions = null,
     target: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     toProxy: js.UndefOr[Boolean] = js.undefined,
     ws: js.UndefOr[Boolean] = js.undefined,
     xfwd: js.UndefOr[Boolean] = js.undefined
@@ -146,17 +146,17 @@ object ProxyConfigArrayItem {
     val __obj = js.Dynamic.literal()
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRewrite)) __obj.updateDynamic("autoRewrite")(autoRewrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRewrite)) __obj.updateDynamic("autoRewrite")(autoRewrite.get.asInstanceOf[js.Any])
     if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(changeOrigin)) __obj.updateDynamic("changeOrigin")(changeOrigin.asInstanceOf[js.Any])
+    if (!js.isUndefined(changeOrigin)) __obj.updateDynamic("changeOrigin")(changeOrigin.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (cookieDomainRewrite != null) __obj.updateDynamic("cookieDomainRewrite")(cookieDomainRewrite.asInstanceOf[js.Any])
     if (cookiePathRewrite != null) __obj.updateDynamic("cookiePathRewrite")(cookiePathRewrite.asInstanceOf[js.Any])
-    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects.get.asInstanceOf[js.Any])
     if (forward != null) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (hostRewrite != null) __obj.updateDynamic("hostRewrite")(hostRewrite.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePath)) __obj.updateDynamic("ignorePath")(ignorePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePath)) __obj.updateDynamic("ignorePath")(ignorePath.get.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (logProvider != null) __obj.updateDynamic("logProvider")(js.Any.fromFunction1(logProvider))
@@ -168,21 +168,21 @@ object ProxyConfigArrayItem {
     if (onProxyRes != null) __obj.updateDynamic("onProxyRes")(js.Any.fromFunction3(onProxyRes))
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pathRewrite != null) __obj.updateDynamic("pathRewrite")(pathRewrite.asInstanceOf[js.Any])
-    if (!js.isUndefined(prependPath)) __obj.updateDynamic("prependPath")(prependPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveHeaderKeyCase)) __obj.updateDynamic("preserveHeaderKeyCase")(preserveHeaderKeyCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(prependPath)) __obj.updateDynamic("prependPath")(prependPath.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveHeaderKeyCase)) __obj.updateDynamic("preserveHeaderKeyCase")(preserveHeaderKeyCase.get.asInstanceOf[js.Any])
     if (protocolRewrite != null) __obj.updateDynamic("protocolRewrite")(protocolRewrite.asInstanceOf[js.Any])
     if (proxyHost != null) __obj.updateDynamic("proxyHost")(proxyHost.asInstanceOf[js.Any])
     if (proxyTable != null) __obj.updateDynamic("proxyTable")(proxyTable.asInstanceOf[js.Any])
-    if (proxyTimeout != null) __obj.updateDynamic("proxyTimeout")(proxyTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(proxyTimeout)) __obj.updateDynamic("proxyTimeout")(proxyTimeout.get.asInstanceOf[js.Any])
     if (router != null) __obj.updateDynamic("router")(router.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfHandleResponse)) __obj.updateDynamic("selfHandleResponse")(selfHandleResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfHandleResponse)) __obj.updateDynamic("selfHandleResponse")(selfHandleResponse.get.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(toProxy)) __obj.updateDynamic("toProxy")(toProxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(ws)) __obj.updateDynamic("ws")(ws.asInstanceOf[js.Any])
-    if (!js.isUndefined(xfwd)) __obj.updateDynamic("xfwd")(xfwd.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toProxy)) __obj.updateDynamic("toProxy")(toProxy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ws)) __obj.updateDynamic("ws")(ws.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xfwd)) __obj.updateDynamic("xfwd")(xfwd.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfigArrayItem]
   }
 }

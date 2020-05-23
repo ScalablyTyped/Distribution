@@ -61,23 +61,23 @@ object IllustrationOptions {
     scale: VectorOptions | Double = null,
     startElement: String | Element = null,
     translate: VectorOptions = null,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): IllustrationOptions = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     if (addTo != null) __obj.updateDynamic("addTo")(addTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
     if (dragRotate != null) __obj.updateDynamic("dragRotate")(dragRotate.asInstanceOf[js.Any])
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
     if (onDragMove != null) __obj.updateDynamic("onDragMove")(onDragMove.asInstanceOf[js.Any])
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
     if (onPrerender != null) __obj.updateDynamic("onPrerender")(onPrerender.asInstanceOf[js.Any])
     if (onResize != null) __obj.updateDynamic("onResize")(onResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (startElement != null) __obj.updateDynamic("startElement")(startElement.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IllustrationOptions]
   }
 }

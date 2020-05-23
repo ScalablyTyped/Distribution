@@ -36,10 +36,10 @@ object IStringOptions {
     pretty: js.UndefOr[Boolean] = js.undefined
   ): IStringOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(doubleQuotes)) __obj.updateDynamic("doubleQuotes")(doubleQuotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleQuotes)) __obj.updateDynamic("doubleQuotes")(doubleQuotes.get.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (newline != null) __obj.updateDynamic("newline")(newline.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStringOptions]
   }
 }

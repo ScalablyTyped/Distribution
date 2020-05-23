@@ -57,7 +57,7 @@ object CreateHITWithHITTypeRequest {
     HITLayoutId: EntityId = null,
     HITLayoutParameters: HITLayoutParameterList = null,
     HITReviewPolicy: ReviewPolicy = null,
-    MaxAssignments: Int | Double = null,
+    MaxAssignments: js.UndefOr[Integer] = js.undefined,
     Question: String = null,
     RequesterAnnotation: String = null,
     UniqueRequestToken: IdempotencyToken = null
@@ -67,7 +67,7 @@ object CreateHITWithHITTypeRequest {
     if (HITLayoutId != null) __obj.updateDynamic("HITLayoutId")(HITLayoutId.asInstanceOf[js.Any])
     if (HITLayoutParameters != null) __obj.updateDynamic("HITLayoutParameters")(HITLayoutParameters.asInstanceOf[js.Any])
     if (HITReviewPolicy != null) __obj.updateDynamic("HITReviewPolicy")(HITReviewPolicy.asInstanceOf[js.Any])
-    if (MaxAssignments != null) __obj.updateDynamic("MaxAssignments")(MaxAssignments.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAssignments)) __obj.updateDynamic("MaxAssignments")(MaxAssignments.get.asInstanceOf[js.Any])
     if (Question != null) __obj.updateDynamic("Question")(Question.asInstanceOf[js.Any])
     if (RequesterAnnotation != null) __obj.updateDynamic("RequesterAnnotation")(RequesterAnnotation.asInstanceOf[js.Any])
     if (UniqueRequestToken != null) __obj.updateDynamic("UniqueRequestToken")(UniqueRequestToken.asInstanceOf[js.Any])

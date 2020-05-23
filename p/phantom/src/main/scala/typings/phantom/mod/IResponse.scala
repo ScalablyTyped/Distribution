@@ -1,6 +1,6 @@
 package typings.phantom.mod
 
-import typings.phantom.AnonName
+import typings.phantom.anon.Name
 import typings.phantom.phantomStrings.end
 import typings.phantom.phantomStrings.start
 import typings.std.Date
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait IResponse extends js.Object {
   var bodySize: Double
   var contentType: String
-  var headers: js.Array[AnonName]
+  var headers: js.Array[Name]
   var id: String
   var redirectURL: String
   var stage: start | end
@@ -26,7 +26,7 @@ object IResponse {
   def apply(
     bodySize: Double,
     contentType: String,
-    headers: js.Array[AnonName],
+    headers: js.Array[Name],
     id: String,
     redirectURL: String,
     stage: start | end,

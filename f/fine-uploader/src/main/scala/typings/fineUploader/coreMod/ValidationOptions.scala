@@ -57,19 +57,19 @@ object ValidationOptions {
     acceptFiles: js.Any = null,
     allowedExtensions: js.Array[String] = null,
     image: ImageOptions = null,
-    itemLimit: Int | Double = null,
-    minSizeLimit: Int | Double = null,
-    sizeLimit: Int | Double = null,
+    itemLimit: js.UndefOr[Double] = js.undefined,
+    minSizeLimit: js.UndefOr[Double] = js.undefined,
+    sizeLimit: js.UndefOr[Double] = js.undefined,
     stopOnFirstInvalidFile: js.UndefOr[Boolean] = js.undefined
   ): ValidationOptions = {
     val __obj = js.Dynamic.literal()
     if (acceptFiles != null) __obj.updateDynamic("acceptFiles")(acceptFiles.asInstanceOf[js.Any])
     if (allowedExtensions != null) __obj.updateDynamic("allowedExtensions")(allowedExtensions.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (itemLimit != null) __obj.updateDynamic("itemLimit")(itemLimit.asInstanceOf[js.Any])
-    if (minSizeLimit != null) __obj.updateDynamic("minSizeLimit")(minSizeLimit.asInstanceOf[js.Any])
-    if (sizeLimit != null) __obj.updateDynamic("sizeLimit")(sizeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopOnFirstInvalidFile)) __obj.updateDynamic("stopOnFirstInvalidFile")(stopOnFirstInvalidFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemLimit)) __obj.updateDynamic("itemLimit")(itemLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSizeLimit)) __obj.updateDynamic("minSizeLimit")(minSizeLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeLimit)) __obj.updateDynamic("sizeLimit")(sizeLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnFirstInvalidFile)) __obj.updateDynamic("stopOnFirstInvalidFile")(stopOnFirstInvalidFile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptions]
   }
 }

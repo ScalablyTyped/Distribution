@@ -17,13 +17,13 @@ object OverlayOptions {
     fitHeight: js.UndefOr[Boolean] = js.undefined,
     fitWidth: js.UndefOr[Boolean] = js.undefined,
     keepAspectRatio: js.UndefOr[Boolean] = js.undefined,
-    scale: Int | Double = null
+    scale: js.UndefOr[Double] = js.undefined
   ): OverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fitHeight)) __obj.updateDynamic("fitHeight")(fitHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitWidth)) __obj.updateDynamic("fitWidth")(fitWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAspectRatio)) __obj.updateDynamic("keepAspectRatio")(keepAspectRatio.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitHeight)) __obj.updateDynamic("fitHeight")(fitHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitWidth)) __obj.updateDynamic("fitWidth")(fitWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAspectRatio)) __obj.updateDynamic("keepAspectRatio")(keepAspectRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayOptions]
   }
 }

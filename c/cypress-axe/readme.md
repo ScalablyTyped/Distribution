@@ -1,7 +1,7 @@
 
 # Scala.js typings for cypress-axe
 
-Typings are for version 0.4
+Typings are for version 0.8
 
 ## Library description:
 Custom cypress commands to inject axe-core and test for a11y

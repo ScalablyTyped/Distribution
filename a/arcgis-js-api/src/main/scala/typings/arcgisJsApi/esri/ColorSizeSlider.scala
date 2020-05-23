@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,8 +39,4 @@ trait ColorSizeSlider extends SmartMappingSliderBase {
     */
   def updateVisualVariables(variables: js.Array[ColorVariable | SizeVariable]): js.Array[ColorVariable | SizeVariable] = js.native
 }
-
-@JSGlobal("__esri.ColorSizeSlider")
-@js.native
-object ColorSizeSlider extends TopLevel[ColorSizeSliderConstructor]
 

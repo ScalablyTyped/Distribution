@@ -1,7 +1,7 @@
 package typings.packageJson.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.packageJson.AnonIntegrity
+import typings.packageJson.anon.Integrity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait AbbreviatedVersion
   val deprecated: js.UndefOr[String] = js.undefined
   val devDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
   val directories: js.UndefOr[js.Array[String]] = js.undefined
-  val dist: AnonIntegrity
+  val dist: Integrity
   val engines: js.UndefOr[StringDictionary[String]] = js.undefined
   val name: String
   val optionalDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -26,10 +26,10 @@ trait AbbreviatedVersion
 object AbbreviatedVersion {
   @scala.inline
   def apply(
-    dist: AnonIntegrity,
+    dist: Integrity,
     name: String,
     version: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     _hasShrinkwrap: js.UndefOr[Boolean] = js.undefined,
     bin: StringDictionary[String] = null,
     bundleDependencies: StringDictionary[String] = null,
@@ -43,7 +43,7 @@ object AbbreviatedVersion {
   ): AbbreviatedVersion = {
     val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(_hasShrinkwrap)) __obj.updateDynamic("_hasShrinkwrap")(_hasShrinkwrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(_hasShrinkwrap)) __obj.updateDynamic("_hasShrinkwrap")(_hasShrinkwrap.get.asInstanceOf[js.Any])
     if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
     if (bundleDependencies != null) __obj.updateDynamic("bundleDependencies")(bundleDependencies.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])

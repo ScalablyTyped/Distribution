@@ -1,6 +1,6 @@
 package typings.gapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
-import typings.gapiClientIdentitytoolkit.AnonDisplayName
+import typings.gapiClientIdentitytoolkit.anon.DisplayName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait SetAccountInfoResponse extends js.Object {
   /** The photo url of the user. */
   var photoUrl: js.UndefOr[String] = js.undefined
   /** The user's profiles at the associated IdPs. */
-  var providerUserInfo: js.UndefOr[js.Array[AnonDisplayName]] = js.undefined
+  var providerUserInfo: js.UndefOr[js.Array[DisplayName]] = js.undefined
   /** If idToken is STS id token, then this field will be refresh token. */
   var refreshToken: js.UndefOr[String] = js.undefined
 }
@@ -45,13 +45,13 @@ object SetAccountInfoResponse {
     newEmail: String = null,
     passwordHash: String = null,
     photoUrl: String = null,
-    providerUserInfo: js.Array[AnonDisplayName] = null,
+    providerUserInfo: js.Array[DisplayName] = null,
     refreshToken: String = null
   ): SetAccountInfoResponse = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
     if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
     if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

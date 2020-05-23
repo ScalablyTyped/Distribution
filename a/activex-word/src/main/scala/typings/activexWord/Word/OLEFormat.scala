@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.OLEFormat")
 @js.native
-class OLEFormat protected () extends js.Object {
+trait OLEFormat extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   var ClassType: String = js.native
   val Creator: Double = js.native

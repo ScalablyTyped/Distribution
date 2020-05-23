@@ -64,9 +64,9 @@ object SandboxOptions {
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
     if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleOnly)) __obj.updateDynamic("singleOnly")(singleOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleOnly)) __obj.updateDynamic("singleOnly")(singleOnly.get.asInstanceOf[js.Any])
     if (sourceTransformers != null) __obj.updateDynamic("sourceTransformers")(sourceTransformers.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceTransformersSingleOnly)) __obj.updateDynamic("sourceTransformersSingleOnly")(sourceTransformersSingleOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceTransformersSingleOnly)) __obj.updateDynamic("sourceTransformersSingleOnly")(sourceTransformersSingleOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SandboxOptions]
   }
 }

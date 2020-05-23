@@ -1,9 +1,9 @@
 package typings.textract.mod
 
 import typings.node.childProcessMod.ExecException
-import typings.textract.AnonCmd
-import typings.textract.AnonCrop
-import typings.textract.AnonLang
+import typings.textract.anon.Cmd
+import typings.textract.anon.Crop
+import typings.textract.anon.Lang
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ trait Config extends js.Object {
     * It is not suggested you modify this without understanding what trouble that might get you in.
     * See [this GH issue](https://github.com/dbashford/textract/issues/75) for why textract overrides that library's default.
     */
-  var pdftotextOptions: js.UndefOr[AnonCrop] = js.undefined
+  var pdftotextOptions: js.UndefOr[Crop] = js.undefined
   /**
     * Pass this in as true and textract will not strip any line breaks.
     * @default false
@@ -61,7 +61,7 @@ trait Config extends js.Object {
     * See `unrtf` manual for available options
     */
   var rtf: js.UndefOr[extractorExecOpts] = js.undefined
-  var tesseract: js.UndefOr[AnonLang | AnonCmd] = js.undefined
+  var tesseract: js.UndefOr[Lang | Cmd] = js.undefined
 }
 
 object Config {
@@ -72,21 +72,21 @@ object Config {
     exec: ExecException = null,
     images: extractorExecOpts = null,
     includeAltText: js.UndefOr[Boolean] = js.undefined,
-    pdftotextOptions: AnonCrop = null,
+    pdftotextOptions: Crop = null,
     preserveLineBreaks: js.UndefOr[Boolean] = js.undefined,
     preserveOnlyMultipleLineBreaks: js.UndefOr[Boolean] = js.undefined,
     rtf: extractorExecOpts = null,
-    tesseract: AnonLang | AnonCmd = null
+    tesseract: Lang | Cmd = null
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
     if (dxf != null) __obj.updateDynamic("dxf")(dxf.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAltText)) __obj.updateDynamic("includeAltText")(includeAltText.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAltText)) __obj.updateDynamic("includeAltText")(includeAltText.get.asInstanceOf[js.Any])
     if (pdftotextOptions != null) __obj.updateDynamic("pdftotextOptions")(pdftotextOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveLineBreaks)) __obj.updateDynamic("preserveLineBreaks")(preserveLineBreaks.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveOnlyMultipleLineBreaks)) __obj.updateDynamic("preserveOnlyMultipleLineBreaks")(preserveOnlyMultipleLineBreaks.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveLineBreaks)) __obj.updateDynamic("preserveLineBreaks")(preserveLineBreaks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveOnlyMultipleLineBreaks)) __obj.updateDynamic("preserveOnlyMultipleLineBreaks")(preserveOnlyMultipleLineBreaks.get.asInstanceOf[js.Any])
     if (rtf != null) __obj.updateDynamic("rtf")(rtf.asInstanceOf[js.Any])
     if (tesseract != null) __obj.updateDynamic("tesseract")(tesseract.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]

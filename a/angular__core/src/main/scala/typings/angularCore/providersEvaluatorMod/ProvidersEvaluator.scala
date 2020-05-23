@@ -1,6 +1,6 @@
 package typings.angularCore.providersEvaluatorMod
 
-import typings.angularCore.AnonLiterals
+import typings.angularCore.anon.Literals
 import typings.typescript.mod.Expression
 import typings.typescript.mod.ObjectLiteralExpression
 import scala.scalajs.js
@@ -16,7 +16,7 @@ class ProvidersEvaluator () extends js.Object {
     * Evaluates the given expression and returns its statically resolved value
     * and a list of object literals which define Angular providers.
     */
-  def evaluate(expr: Expression): AnonLiterals = js.native
+  def evaluate(expr: Expression): Literals = js.native
   def visitObjectLiteralExpression(node: ObjectLiteralExpression, context: js.Any): js.Any = js.native
 }
 

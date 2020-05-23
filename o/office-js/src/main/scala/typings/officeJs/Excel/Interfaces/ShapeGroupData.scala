@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait ShapeGroupData extends js.Object {
   /**
     *
-    * Represents the shape identifier. Read-only.
+    * Specifies the shape identifier.
     *
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     *
-    * Returns the collection of Shape objects. Read-only.
+    * Returns the collection of Shape objects.
     *
     * [Api set: ExcelApi 1.9]
     */

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 package object mod {
   type BasicEventCallback = js.ThisFunction0[/* this */ typings.overlayscrollbars.mod.OverlayScrollbars, scala.Unit]
   /* Rewritten from type alias, can be one of: 
-    - typings.overlayscrollbars.AnonX
-    - typings.overlayscrollbars.AnonL
-    - typings.overlayscrollbars.AnonLeft
+    - typings.overlayscrollbars.anon.X
+    - typings.overlayscrollbars.anon.L
+    - typings.overlayscrollbars.anon.Left
     - js.Tuple2[typings.overlayscrollbars.mod.Position, typings.overlayscrollbars.mod.Position]
     - typings.overlayscrollbars.mod.Position
     - typings.std.HTMLElement
     - typings.overlayscrollbars.mod.JQuery
-    - typings.overlayscrollbars.AnonBlock
+    - typings.overlayscrollbars.anon.Block
   */
   type Coordinates = typings.overlayscrollbars.mod._Coordinates | (js.Tuple2[typings.overlayscrollbars.mod.Position, typings.overlayscrollbars.mod.Position]) | typings.overlayscrollbars.mod.Position | typings.std.HTMLElement
   type DirectionChangedCallback = js.ThisFunction1[

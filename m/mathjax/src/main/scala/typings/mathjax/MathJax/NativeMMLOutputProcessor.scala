@@ -30,14 +30,14 @@ object NativeMMLOutputProcessor {
   @scala.inline
   def apply(
     matchFontHeight: js.UndefOr[Boolean] = js.undefined,
-    minScaleAdjust: Int | Double = null,
-    scale: Int | Double = null,
+    minScaleAdjust: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined,
     styles: js.Any = null
   ): NativeMMLOutputProcessor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(matchFontHeight)) __obj.updateDynamic("matchFontHeight")(matchFontHeight.asInstanceOf[js.Any])
-    if (minScaleAdjust != null) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchFontHeight)) __obj.updateDynamic("matchFontHeight")(matchFontHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScaleAdjust)) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeMMLOutputProcessor]
   }

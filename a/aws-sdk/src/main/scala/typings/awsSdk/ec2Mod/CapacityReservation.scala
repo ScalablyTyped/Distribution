@@ -85,14 +85,14 @@ object CapacityReservation {
   def apply(
     AvailabilityZone: String = null,
     AvailabilityZoneId: String = null,
-    AvailableInstanceCount: Int | scala.Double = null,
+    AvailableInstanceCount: js.UndefOr[Integer] = js.undefined,
     CapacityReservationArn: String = null,
     CapacityReservationId: String = null,
     CreateDate: DateTime = null,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
     EndDate: DateTime = null,
     EndDateType: EndDateType = null,
-    EphemeralStorage: js.UndefOr[scala.Boolean] = js.undefined,
+    EphemeralStorage: js.UndefOr[Boolean] = js.undefined,
     InstanceMatchCriteria: InstanceMatchCriteria = null,
     InstancePlatform: CapacityReservationInstancePlatform = null,
     InstanceType: String = null,
@@ -100,19 +100,19 @@ object CapacityReservation {
     State: CapacityReservationState = null,
     Tags: TagList = null,
     Tenancy: CapacityReservationTenancy = null,
-    TotalInstanceCount: Int | scala.Double = null
+    TotalInstanceCount: js.UndefOr[Integer] = js.undefined
   ): CapacityReservation = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (AvailabilityZoneId != null) __obj.updateDynamic("AvailabilityZoneId")(AvailabilityZoneId.asInstanceOf[js.Any])
-    if (AvailableInstanceCount != null) __obj.updateDynamic("AvailableInstanceCount")(AvailableInstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AvailableInstanceCount)) __obj.updateDynamic("AvailableInstanceCount")(AvailableInstanceCount.get.asInstanceOf[js.Any])
     if (CapacityReservationArn != null) __obj.updateDynamic("CapacityReservationArn")(CapacityReservationArn.asInstanceOf[js.Any])
     if (CapacityReservationId != null) __obj.updateDynamic("CapacityReservationId")(CapacityReservationId.asInstanceOf[js.Any])
     if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
     if (EndDateType != null) __obj.updateDynamic("EndDateType")(EndDateType.asInstanceOf[js.Any])
-    if (!js.isUndefined(EphemeralStorage)) __obj.updateDynamic("EphemeralStorage")(EphemeralStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(EphemeralStorage)) __obj.updateDynamic("EphemeralStorage")(EphemeralStorage.get.asInstanceOf[js.Any])
     if (InstanceMatchCriteria != null) __obj.updateDynamic("InstanceMatchCriteria")(InstanceMatchCriteria.asInstanceOf[js.Any])
     if (InstancePlatform != null) __obj.updateDynamic("InstancePlatform")(InstancePlatform.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
@@ -120,7 +120,7 @@ object CapacityReservation {
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
-    if (TotalInstanceCount != null) __obj.updateDynamic("TotalInstanceCount")(TotalInstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalInstanceCount)) __obj.updateDynamic("TotalInstanceCount")(TotalInstanceCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityReservation]
   }
 }

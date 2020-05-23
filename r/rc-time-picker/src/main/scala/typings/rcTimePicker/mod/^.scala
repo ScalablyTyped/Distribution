@@ -1,6 +1,6 @@
 package typings.rcTimePicker.mod
 
-import typings.rcTimePicker.ReadonlyPartialTimePicker
+import typings.rcTimePicker.anon.ReadonlyPartialTimePicker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

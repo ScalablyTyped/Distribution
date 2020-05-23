@@ -12,11 +12,15 @@ trait SparklineSeriesItemHighlightBorder extends js.Object {
 
 object SparklineSeriesItemHighlightBorder {
   @scala.inline
-  def apply(color: String = null, opacity: Int | Double = null, width: Int | Double = null): SparklineSeriesItemHighlightBorder = {
+  def apply(
+    color: String = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): SparklineSeriesItemHighlightBorder = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineSeriesItemHighlightBorder]
   }
 }

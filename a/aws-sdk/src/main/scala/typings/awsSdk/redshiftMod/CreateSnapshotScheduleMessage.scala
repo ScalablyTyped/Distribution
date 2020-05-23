@@ -35,16 +35,16 @@ trait CreateSnapshotScheduleMessage extends js.Object {
 object CreateSnapshotScheduleMessage {
   @scala.inline
   def apply(
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    NextInvocations: Int | scala.Double = null,
+    DryRun: js.UndefOr[BooleanOptional] = js.undefined,
+    NextInvocations: js.UndefOr[IntegerOptional] = js.undefined,
     ScheduleDefinitions: ScheduleDefinitionList = null,
     ScheduleDescription: String = null,
     ScheduleIdentifier: String = null,
     Tags: TagList = null
   ): CreateSnapshotScheduleMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (NextInvocations != null) __obj.updateDynamic("NextInvocations")(NextInvocations.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NextInvocations)) __obj.updateDynamic("NextInvocations")(NextInvocations.get.asInstanceOf[js.Any])
     if (ScheduleDefinitions != null) __obj.updateDynamic("ScheduleDefinitions")(ScheduleDefinitions.asInstanceOf[js.Any])
     if (ScheduleDescription != null) __obj.updateDynamic("ScheduleDescription")(ScheduleDescription.asInstanceOf[js.Any])
     if (ScheduleIdentifier != null) __obj.updateDynamic("ScheduleIdentifier")(ScheduleIdentifier.asInstanceOf[js.Any])

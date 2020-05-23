@@ -1,6 +1,6 @@
 package typings.sjcl.mod
 
-import typings.sjcl.AnonKey
+import typings.sjcl.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SjclMisc extends js.Object {
   var hmac: SjclHMACStatic = js.native
-  def cachedPbkdf2(password: String): AnonKey = js.native
-  def cachedPbkdf2(password: String, obj: PBKDF2Params): AnonKey = js.native
+  def cachedPbkdf2(password: String): Key = js.native
+  def cachedPbkdf2(password: String, obj: PBKDF2Params): Key = js.native
   def hkdf(ikm: BitArray_, keyBitLength: Double, salt: String, info: String): BitArray_ = js.native
   def hkdf(ikm: BitArray_, keyBitLength: Double, salt: String, info: String, Hash: SjclHashStatic): BitArray_ = js.native
   def hkdf(ikm: BitArray_, keyBitLength: Double, salt: String, info: BitArray_): BitArray_ = js.native

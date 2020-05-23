@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait NumberParserOptions extends js.Object {
   /**
-  		 * decimal (default), or percent.
-  		 */
+    * decimal (default), or percent.
+    */
   var style: js.UndefOr[decimal | percent] = js.undefined
 }
 

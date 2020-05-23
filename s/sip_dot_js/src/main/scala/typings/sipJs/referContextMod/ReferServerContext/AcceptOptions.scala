@@ -16,7 +16,7 @@ object AcceptOptions {
   @scala.inline
   def apply(followRefer: js.UndefOr[Boolean] = js.undefined, inviteOptions: Options = null): AcceptOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(followRefer)) __obj.updateDynamic("followRefer")(followRefer.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRefer)) __obj.updateDynamic("followRefer")(followRefer.get.asInstanceOf[js.Any])
     if (inviteOptions != null) __obj.updateDynamic("inviteOptions")(inviteOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptOptions]
   }

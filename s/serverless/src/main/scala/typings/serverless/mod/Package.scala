@@ -21,7 +21,7 @@ object Package {
   ): Package = {
     val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any])
     if (artifact != null) __obj.updateDynamic("artifact")(artifact.asInstanceOf[js.Any])
-    if (!js.isUndefined(individually)) __obj.updateDynamic("individually")(individually.asInstanceOf[js.Any])
+    if (!js.isUndefined(individually)) __obj.updateDynamic("individually")(individually.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Package]
   }
 }

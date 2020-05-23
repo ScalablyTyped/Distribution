@@ -17,10 +17,13 @@ trait CommentRule extends js.Object {
 
 object CommentRule {
   @scala.inline
-  def apply(blockComment: CharacterPair = null, lineComment: String = null): CommentRule = {
+  def apply(
+    blockComment: js.UndefOr[Null | CharacterPair] = js.undefined,
+    lineComment: js.UndefOr[Null | String] = js.undefined
+  ): CommentRule = {
     val __obj = js.Dynamic.literal()
-    if (blockComment != null) __obj.updateDynamic("blockComment")(blockComment.asInstanceOf[js.Any])
-    if (lineComment != null) __obj.updateDynamic("lineComment")(lineComment.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockComment)) __obj.updateDynamic("blockComment")(blockComment.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineComment)) __obj.updateDynamic("lineComment")(lineComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentRule]
   }
 }

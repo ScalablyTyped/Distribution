@@ -22,7 +22,7 @@ object manualreseteventMod extends js.Object {
     /**
       * Gets a value indicating whether the event is signaled.
       */
-    val isSet: Boolean = js.native
+    def isSet: Boolean = js.native
     /**
       * Sets the state of the event to nonsignaled, causing asynchronous operations to pause.
       */

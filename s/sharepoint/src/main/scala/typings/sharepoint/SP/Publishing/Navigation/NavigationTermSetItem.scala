@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Publishing.Navigation.NavigationTermSetItem")
 @js.native
-class NavigationTermSetItem () extends ClientObject {
+trait NavigationTermSetItem extends ClientObject {
   def createTerm(termName: String, linkType: NavigationLinkType, termId: Guid): Term = js.native
   def getResolvedDisplayUrl(browserQueryString: String): StringResult = js.native
   def getTaxonomyTermStore(): TermStore = js.native

@@ -12,7 +12,7 @@ trait BaseSerialization[N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ 
 
 object BaseSerialization {
   @scala.inline
-  def apply[N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */](class_name: N, config: T): BaseSerialization[N, T] = {
+  def apply[N, T](class_name: N, config: T): BaseSerialization[N, T] = {
     val __obj = js.Dynamic.literal(class_name = class_name.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseSerialization[N, T]]
   }

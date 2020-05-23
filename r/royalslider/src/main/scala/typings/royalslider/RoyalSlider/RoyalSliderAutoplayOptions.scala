@@ -26,16 +26,16 @@ trait RoyalSliderAutoplayOptions extends js.Object {
 object RoyalSliderAutoplayOptions {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     pauseOnHover: js.UndefOr[Boolean] = js.undefined,
     stopAtAction: js.UndefOr[Boolean] = js.undefined
   ): RoyalSliderAutoplayOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopAtAction)) __obj.updateDynamic("stopAtAction")(stopAtAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopAtAction)) __obj.updateDynamic("stopAtAction")(stopAtAction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderAutoplayOptions]
   }
 }

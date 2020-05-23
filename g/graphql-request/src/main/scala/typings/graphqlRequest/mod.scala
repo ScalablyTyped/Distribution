@@ -1,5 +1,6 @@
 package typings.graphqlRequest
 
+import typings.graphqlRequest.anon.Data
 import typings.graphqlRequest.typesMod.GraphQLRequestContext
 import typings.graphqlRequest.typesMod.GraphQLResponse
 import typings.graphqlRequest.typesMod.Headers
@@ -24,8 +25,8 @@ object mod extends js.Object {
     def this(url: String, options: Options) = this()
     var options: js.Any = js.native
     var url: js.Any = js.native
-    def rawRequest[T /* <: js.Any */](query: String): js.Promise[AnonData[T]] = js.native
-    def rawRequest[T /* <: js.Any */](query: String, variables: Variables): js.Promise[AnonData[T]] = js.native
+    def rawRequest[T /* <: js.Any */](query: String): js.Promise[Data[T]] = js.native
+    def rawRequest[T /* <: js.Any */](query: String, variables: Variables): js.Promise[Data[T]] = js.native
     def request[T /* <: js.Any */](query: String): js.Promise[T] = js.native
     def request[T /* <: js.Any */](query: String, variables: Variables): js.Promise[T] = js.native
     def setHeader(key: String, value: String): GraphQLClient = js.native
@@ -34,8 +35,8 @@ object mod extends js.Object {
   
   def default[T /* <: js.Any */](url: String, query: String): js.Promise[T] = js.native
   def default[T /* <: js.Any */](url: String, query: String, variables: Variables): js.Promise[T] = js.native
-  def rawRequest[T /* <: js.Any */](url: String, query: String): js.Promise[AnonData[T]] = js.native
-  def rawRequest[T /* <: js.Any */](url: String, query: String, variables: Variables): js.Promise[AnonData[T]] = js.native
+  def rawRequest[T /* <: js.Any */](url: String, query: String): js.Promise[Data[T]] = js.native
+  def rawRequest[T /* <: js.Any */](url: String, query: String, variables: Variables): js.Promise[Data[T]] = js.native
   def request[T /* <: js.Any */](url: String, query: String): js.Promise[T] = js.native
   def request[T /* <: js.Any */](url: String, query: String, variables: Variables): js.Promise[T] = js.native
   /* static members */

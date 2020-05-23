@@ -21,10 +21,14 @@ trait AutomaticFacetFilter extends js.Object {
 
 object AutomaticFacetFilter {
   @scala.inline
-  def apply(facet: String, disjunctive: js.UndefOr[Boolean] = js.undefined, score: Int | Double = null): AutomaticFacetFilter = {
+  def apply(
+    facet: String,
+    disjunctive: js.UndefOr[Boolean] = js.undefined,
+    score: js.UndefOr[Double] = js.undefined
+  ): AutomaticFacetFilter = {
     val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any])
-    if (!js.isUndefined(disjunctive)) __obj.updateDynamic("disjunctive")(disjunctive.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(disjunctive)) __obj.updateDynamic("disjunctive")(disjunctive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomaticFacetFilter]
   }
 }

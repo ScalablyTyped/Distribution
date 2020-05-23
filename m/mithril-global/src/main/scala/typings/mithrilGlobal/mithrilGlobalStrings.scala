@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object mithrilGlobalStrings {
   @js.native
-  sealed trait AnonCall extends js.Object
+  sealed trait Call extends js.Object
   
   @scala.inline
-  def AnonCall: AnonCall = "AnonCall".asInstanceOf[AnonCall]
+  def Call: Call = "Call".asInstanceOf[Call]
 }
 

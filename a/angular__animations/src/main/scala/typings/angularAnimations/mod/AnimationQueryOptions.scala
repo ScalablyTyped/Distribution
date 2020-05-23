@@ -25,14 +25,14 @@ object AnimationQueryOptions {
   @scala.inline
   def apply(
     delay: Double | String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     optional: js.UndefOr[Boolean] = js.undefined,
     params: StringDictionary[js.Any] = null
   ): AnimationQueryOptions = {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationQueryOptions]
   }

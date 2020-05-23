@@ -9,7 +9,7 @@ package object webRequest {
     * An array of HTTP headers. Each header is represented as a dictionary containing the keys `name` and either
     * `value` or `binaryValue`.
     */
-  type HttpHeaders = js.Array[typings.firefoxWebextBrowser.AnonBinaryValue]
+  type HttpHeaders = js.Array[typings.firefoxWebextBrowser.anon.BinaryValue]
   type OnBeforeRedirectOptions = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders
   type OnCompletedOptions = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders
   type OnResponseStartedOptions = typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders

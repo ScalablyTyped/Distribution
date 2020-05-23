@@ -1,6 +1,6 @@
 package typings.gapiClientStorage.gapi.client.storage
 
-import typings.gapiClientStorage.AnonProjectNumber
+import typings.gapiClientStorage.anon.ProjectNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +40,7 @@ trait ObjectAccessControl extends js.Object {
   /** The name of the object, if applied to an object. */
   var `object`: js.UndefOr[String] = js.undefined
   /** The project team associated with the entity, if any. */
-  var projectTeam: js.UndefOr[AnonProjectNumber] = js.undefined
+  var projectTeam: js.UndefOr[ProjectNumber] = js.undefined
   /** The access permission for the entity. */
   var role: js.UndefOr[String] = js.undefined
   /** The link to this access-control entry. */
@@ -60,7 +60,7 @@ object ObjectAccessControl {
     id: String = null,
     kind: String = null,
     `object`: String = null,
-    projectTeam: AnonProjectNumber = null,
+    projectTeam: ProjectNumber = null,
     role: String = null,
     selfLink: String = null
   ): ObjectAccessControl = {

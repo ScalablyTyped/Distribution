@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KernelGatewayAppSettings extends js.Object {
   /**
-    * The instance type and quantity.
+    * The default instance type and the Amazon Resource Name (ARN) of the SageMaker image created on the instance.
     */
   var DefaultResourceSpec: js.UndefOr[ResourceSpec] = js.native
 }

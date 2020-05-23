@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Http
 
-import typings.winrtUwp.AnonLength
 import typings.winrtUwp.Windows.Foundation.IClosable
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import typings.winrtUwp.Windows.Foundation.IStringable
@@ -8,6 +7,7 @@ import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpContentHeaderCollection
+import typings.winrtUwp.anon.Length
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait IHttpContent
   /**
     * Determines whether the HTTP content has a valid length in bytes.
     */
-  def tryComputeLength(): AnonLength
+  def tryComputeLength(): Length
   /**
     * Write the HTTP content to an output stream as an asynchronous operation.
     * @param outputStream The output stream to write to.
@@ -59,7 +59,7 @@ object IHttpContent {
     readAsBufferAsync: () => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double],
     readAsInputStreamAsync: () => IPromiseWithIAsyncOperationWithProgress[IInputStream, Double],
     readAsStringAsync: () => IPromiseWithIAsyncOperationWithProgress[String, Double],
-    tryComputeLength: () => AnonLength,
+    tryComputeLength: () => Length,
     writeToStreamAsync: IOutputStream => IPromiseWithIAsyncOperationWithProgress[Double, Double]
   ): IHttpContent = {
     val __obj = js.Dynamic.literal(bufferAllAsync = js.Any.fromFunction0(bufferAllAsync), close = js.Any.fromFunction0(close), headers = headers.asInstanceOf[js.Any], readAsBufferAsync = js.Any.fromFunction0(readAsBufferAsync), readAsInputStreamAsync = js.Any.fromFunction0(readAsInputStreamAsync), readAsStringAsync = js.Any.fromFunction0(readAsStringAsync), tryComputeLength = js.Any.fromFunction0(tryComputeLength), writeToStreamAsync = js.Any.fromFunction1(writeToStreamAsync))

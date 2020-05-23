@@ -1,6 +1,5 @@
 package typings.officeJs.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,14 +28,6 @@ object ItemType extends js.Object {
     */
   @js.native
   sealed trait Message extends ItemType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ItemType with String] = js.native
-  /* "appointment" */ @js.native
-  object Appointment extends TopLevel[Appointment with String]
-  
-  /* "message" */ @js.native
-  object Message extends TopLevel[Message with String]
   
 }
 

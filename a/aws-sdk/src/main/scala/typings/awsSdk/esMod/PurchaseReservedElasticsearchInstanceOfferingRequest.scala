@@ -25,10 +25,10 @@ object PurchaseReservedElasticsearchInstanceOfferingRequest {
   def apply(
     ReservationName: ReservationToken,
     ReservedElasticsearchInstanceOfferingId: GUID,
-    InstanceCount: Int | scala.Double = null
+    InstanceCount: js.UndefOr[InstanceCount] = js.undefined
   ): PurchaseReservedElasticsearchInstanceOfferingRequest = {
     val __obj = js.Dynamic.literal(ReservationName = ReservationName.asInstanceOf[js.Any], ReservedElasticsearchInstanceOfferingId = ReservedElasticsearchInstanceOfferingId.asInstanceOf[js.Any])
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedElasticsearchInstanceOfferingRequest]
   }
 }

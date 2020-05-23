@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represent a point-of-service printer that has been claimed for use. */
-@JSGlobal("Windows.Devices.PointOfService.ClaimedPosPrinter")
 @js.native
-abstract class ClaimedPosPrinter () extends js.Object {
+trait ClaimedPosPrinter extends js.Object {
   /** Gets or sets a numeric value that indicates the character set that the application wants to use for printing characters. */
   var characterSet: Double = js.native
   /** Gets the identifier string of the claimed point-of-service printer. */

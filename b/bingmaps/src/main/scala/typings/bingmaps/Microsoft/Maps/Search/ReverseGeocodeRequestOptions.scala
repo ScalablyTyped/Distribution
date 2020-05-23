@@ -57,15 +57,15 @@ object ReverseGeocodeRequestOptions {
     includeCountryIso2: js.UndefOr[Boolean] = js.undefined,
     includeEntityTypes: js.Array[String] = null,
     includeNeighborhood: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     userData: js.Any = null
   ): ReverseGeocodeRequestOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), location = location.asInstanceOf[js.Any])
     if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction1(errorCallback))
-    if (!js.isUndefined(includeCountryIso2)) __obj.updateDynamic("includeCountryIso2")(includeCountryIso2.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeCountryIso2)) __obj.updateDynamic("includeCountryIso2")(includeCountryIso2.get.asInstanceOf[js.Any])
     if (includeEntityTypes != null) __obj.updateDynamic("includeEntityTypes")(includeEntityTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeNeighborhood)) __obj.updateDynamic("includeNeighborhood")(includeNeighborhood.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNeighborhood)) __obj.updateDynamic("includeNeighborhood")(includeNeighborhood.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReverseGeocodeRequestOptions]
   }

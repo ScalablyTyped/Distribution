@@ -22,10 +22,14 @@ trait ListInstanceProfilesForRoleRequest extends js.Object {
 
 object ListInstanceProfilesForRoleRequest {
   @scala.inline
-  def apply(RoleName: roleNameType, Marker: markerType = null, MaxItems: Int | Double = null): ListInstanceProfilesForRoleRequest = {
+  def apply(
+    RoleName: roleNameType,
+    Marker: markerType = null,
+    MaxItems: js.UndefOr[maxItemsType] = js.undefined
+  ): ListInstanceProfilesForRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInstanceProfilesForRoleRequest]
   }
 }

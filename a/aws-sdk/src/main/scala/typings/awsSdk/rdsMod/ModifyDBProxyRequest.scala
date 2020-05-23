@@ -45,19 +45,19 @@ object ModifyDBProxyRequest {
   def apply(
     DBProxyName: String,
     Auth: UserAuthConfigList = null,
-    DebugLogging: js.UndefOr[scala.Boolean] = js.undefined,
-    IdleClientTimeout: Int | scala.Double = null,
+    DebugLogging: js.UndefOr[BooleanOptional] = js.undefined,
+    IdleClientTimeout: js.UndefOr[IntegerOptional] = js.undefined,
     NewDBProxyName: String = null,
-    RequireTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    RequireTLS: js.UndefOr[BooleanOptional] = js.undefined,
     RoleArn: String = null,
     SecurityGroups: StringList = null
   ): ModifyDBProxyRequest = {
     val __obj = js.Dynamic.literal(DBProxyName = DBProxyName.asInstanceOf[js.Any])
     if (Auth != null) __obj.updateDynamic("Auth")(Auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(DebugLogging)) __obj.updateDynamic("DebugLogging")(DebugLogging.asInstanceOf[js.Any])
-    if (IdleClientTimeout != null) __obj.updateDynamic("IdleClientTimeout")(IdleClientTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(DebugLogging)) __obj.updateDynamic("DebugLogging")(DebugLogging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IdleClientTimeout)) __obj.updateDynamic("IdleClientTimeout")(IdleClientTimeout.get.asInstanceOf[js.Any])
     if (NewDBProxyName != null) __obj.updateDynamic("NewDBProxyName")(NewDBProxyName.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireTLS)) __obj.updateDynamic("RequireTLS")(RequireTLS.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequireTLS)) __obj.updateDynamic("RequireTLS")(RequireTLS.get.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBProxyRequest]

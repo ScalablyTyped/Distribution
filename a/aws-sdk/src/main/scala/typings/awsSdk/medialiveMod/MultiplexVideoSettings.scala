@@ -20,9 +20,12 @@ trait MultiplexVideoSettings extends js.Object {
 
 object MultiplexVideoSettings {
   @scala.inline
-  def apply(ConstantBitrate: Int | Double = null, StatmuxSettings: MultiplexStatmuxVideoSettings = null): MultiplexVideoSettings = {
+  def apply(
+    ConstantBitrate: js.UndefOr[integerMin100000Max100000000] = js.undefined,
+    StatmuxSettings: MultiplexStatmuxVideoSettings = null
+  ): MultiplexVideoSettings = {
     val __obj = js.Dynamic.literal()
-    if (ConstantBitrate != null) __obj.updateDynamic("ConstantBitrate")(ConstantBitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConstantBitrate)) __obj.updateDynamic("ConstantBitrate")(ConstantBitrate.get.asInstanceOf[js.Any])
     if (StatmuxSettings != null) __obj.updateDynamic("StatmuxSettings")(StatmuxSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiplexVideoSettings]
   }

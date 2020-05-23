@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Pickers.Provider.FileRemovedEventArgs")
-@js.native
-class FileRemovedEventArgs () extends IFileRemovedEventArgs {
-  /* CompleteClass */
-  override var id: String = js.native
+trait FileRemovedEventArgs extends IFileRemovedEventArgs
+
+object FileRemovedEventArgs {
+  @scala.inline
+  def apply(id: String): FileRemovedEventArgs = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileRemovedEventArgs]
+  }
 }
 

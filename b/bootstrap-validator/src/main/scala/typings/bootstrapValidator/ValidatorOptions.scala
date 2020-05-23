@@ -17,7 +17,7 @@ object ValidatorOptions {
   @scala.inline
   def apply(
     custom: js.Any = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     disable: js.UndefOr[Boolean] = js.undefined,
     feedback: js.Any = null,
     focus: js.UndefOr[Boolean] = js.undefined,
@@ -25,11 +25,11 @@ object ValidatorOptions {
   ): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.get.asInstanceOf[js.Any])
     if (feedback != null) __obj.updateDynamic("feedback")(feedback.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
 }

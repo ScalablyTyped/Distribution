@@ -1,5 +1,6 @@
 package typings.rcMenu
 
+import typings.rcMenu.anon.Find
 import typings.react.mod.Key
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -17,16 +18,16 @@ object utilMod extends js.Object {
   def getWidth(elem: HTMLElement): Double = js.native
   def isMobileDevice(): Boolean = js.native
   def loopMenuItem(children: ReactNode, cb: js.Function2[/* node */ ReactElement, /* index */ Double, Unit]): Unit = js.native
-  def loopMenuItemRecursively(children: ReactNode, keys: js.Array[String], ret: AnonFind): Unit = js.native
+  def loopMenuItemRecursively(children: ReactNode, keys: js.Array[String], ret: Find): Unit = js.native
   def noop(): Unit = js.native
   def setStyle(
     elem: HTMLElement,
-    styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any,
+    styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 765 */ js.Any,
     value: String
   ): Unit = js.native
   def setStyle(
     elem: HTMLElement,
-    styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any,
+    styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 765 */ js.Any,
     value: Double
   ): Unit = js.native
 }

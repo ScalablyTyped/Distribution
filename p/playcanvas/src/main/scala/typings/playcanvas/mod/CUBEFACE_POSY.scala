@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.CUBEFACE_POSY
-  * @type {number}
-  * @description The positive Y face of a cubemap.
+  * The positive Y face of a cubemap.
   */
 @JSImport("playcanvas", "CUBEFACE_POSY")
 @js.native

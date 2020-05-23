@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Specific and identified anatomical location
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait BodySite extends DomainResource {
   /**
     * Contains extended information for property 'active'.
@@ -80,7 +80,7 @@ object BodySite {
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
     if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
     if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

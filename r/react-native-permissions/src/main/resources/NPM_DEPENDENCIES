@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-permissions" : "2.1.2"
+      "react-native-permissions" : "2.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-permissions" : "2.1.2"
+      "react-native-permissions" : "2.1.5"
     }
   ],
   "compile-devDependencies" : [

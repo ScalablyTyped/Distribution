@@ -14,7 +14,7 @@ trait HintedInputContext[T /* <: TypeaheadModel */] extends js.Object {
 
 object HintedInputContext {
   @scala.inline
-  def apply[T /* <: TypeaheadModel */](
+  def apply[T](
     hintText: String = null,
     initialItem: T = null,
     onAdd: /* option */ T => Unit = null,
@@ -24,7 +24,7 @@ object HintedInputContext {
     if (hintText != null) __obj.updateDynamic("hintText")(hintText.asInstanceOf[js.Any])
     if (initialItem != null) __obj.updateDynamic("initialItem")(initialItem.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
-    if (!js.isUndefined(selectHintOnEnter)) __obj.updateDynamic("selectHintOnEnter")(selectHintOnEnter.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectHintOnEnter)) __obj.updateDynamic("selectHintOnEnter")(selectHintOnEnter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HintedInputContext[T]]
   }
 }

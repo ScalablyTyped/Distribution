@@ -29,13 +29,13 @@ object ApplicationAppversionLifecycle {
   def apply(
     serviceRole: String,
     deleteSourceFromS3: js.UndefOr[Boolean] = js.undefined,
-    maxAgeInDays: Int | Double = null,
-    maxCount: Int | Double = null
+    maxAgeInDays: js.UndefOr[Double] = js.undefined,
+    maxCount: js.UndefOr[Double] = js.undefined
   ): ApplicationAppversionLifecycle = {
     val __obj = js.Dynamic.literal(serviceRole = serviceRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteSourceFromS3)) __obj.updateDynamic("deleteSourceFromS3")(deleteSourceFromS3.asInstanceOf[js.Any])
-    if (maxAgeInDays != null) __obj.updateDynamic("maxAgeInDays")(maxAgeInDays.asInstanceOf[js.Any])
-    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteSourceFromS3)) __obj.updateDynamic("deleteSourceFromS3")(deleteSourceFromS3.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAgeInDays)) __obj.updateDynamic("maxAgeInDays")(maxAgeInDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCount)) __obj.updateDynamic("maxCount")(maxCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationAppversionLifecycle]
   }
 }

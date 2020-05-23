@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Protection")
 @js.native
-class Protection protected () extends js.Object {
+trait Protection extends js.Object {
   val AllowDeletingColumns: Boolean = js.native
   val AllowDeletingRows: Boolean = js.native
   @JSName("AllowEditRanges")

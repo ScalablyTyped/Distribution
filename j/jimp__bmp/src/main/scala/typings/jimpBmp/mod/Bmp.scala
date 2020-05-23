@@ -1,28 +1,23 @@
 package typings.jimpBmp.mod
 
-import typings.jimpBmp.AnonImagebmp
-import typings.jimpBmp.AnonImagebmpImagexmsbmp
-import typings.jimpBmp.AnonImagexmsbmp
-import typings.jimpBmp.AnonMIMEBMP
+import typings.jimpBmp.anon.Imagebmp
+import typings.jimpBmp.anon.ImagebmpImagexmsbmp
+import typings.jimpBmp.anon.Imagexmsbmp
+import typings.jimpBmp.anon.MIMEBMP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Bmp extends js.Object {
-  var constants: AnonMIMEBMP
-  var decoders: AnonImagexmsbmp
-  var encoders: AnonImagebmpImagexmsbmp
-  var mime: AnonImagebmp
+  var constants: MIMEBMP
+  var decoders: Imagexmsbmp
+  var encoders: ImagebmpImagexmsbmp
+  var mime: Imagebmp
 }
 
 object Bmp {
   @scala.inline
-  def apply(
-    constants: AnonMIMEBMP,
-    decoders: AnonImagexmsbmp,
-    encoders: AnonImagebmpImagexmsbmp,
-    mime: AnonImagebmp
-  ): Bmp = {
+  def apply(constants: MIMEBMP, decoders: Imagexmsbmp, encoders: ImagebmpImagexmsbmp, mime: Imagebmp): Bmp = {
     val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], decoders = decoders.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bmp]
   }

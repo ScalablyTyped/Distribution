@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/online_state_tracker", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/online_state_tracker", JSImport.Namespace)
 @js.native
 object onlineStateTrackerMod extends js.Object {
   @js.native

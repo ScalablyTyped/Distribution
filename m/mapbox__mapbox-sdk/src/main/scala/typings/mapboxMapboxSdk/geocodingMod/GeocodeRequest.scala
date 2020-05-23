@@ -55,16 +55,16 @@ object GeocodeRequest {
     bbox: BoundingBox = null,
     countries: js.Array[String] = null,
     language: js.Array[String] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     proximity: js.Array[Double] = null,
     types: js.Array[GeocodeQueryType] = null
   ): GeocodeRequest = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete.get.asInstanceOf[js.Any])
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (proximity != null) __obj.updateDynamic("proximity")(proximity.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodeRequest]

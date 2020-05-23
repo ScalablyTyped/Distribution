@@ -1,6 +1,6 @@
 package typings.babylonjs.buildersIndexMod
 
-import typings.babylonjs.AnonPattern
+import typings.babylonjs.anon.Pattern
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -29,7 +29,7 @@ object TiledBoxBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns the box mesh
     */
-  def CreateTiledBox(name: String, options: AnonPattern): Mesh = js.native
-  def CreateTiledBox(name: String, options: AnonPattern, scene: Nullable[Scene]): Mesh = js.native
+  def CreateTiledBox(name: String, options: Pattern): Mesh = js.native
+  def CreateTiledBox(name: String, options: Pattern, scene: Nullable[Scene]): Mesh = js.native
 }
 

@@ -19,15 +19,15 @@ object IAlignProps {
     target: () => Unit,
     childrenProps: js.Object = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    monitorBufferTime: Int | Double = null,
+    monitorBufferTime: js.UndefOr[Double] = js.undefined,
     monitorWindowResize: js.UndefOr[Boolean] = js.undefined,
     onAlign: (/* source */ js.Any, /* align */ js.Any) => Unit = null
   ): IAlignProps = {
     val __obj = js.Dynamic.literal(target = js.Any.fromFunction0(target))
     if (childrenProps != null) __obj.updateDynamic("childrenProps")(childrenProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (monitorBufferTime != null) __obj.updateDynamic("monitorBufferTime")(monitorBufferTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitorWindowResize)) __obj.updateDynamic("monitorWindowResize")(monitorWindowResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorBufferTime)) __obj.updateDynamic("monitorBufferTime")(monitorBufferTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorWindowResize)) __obj.updateDynamic("monitorWindowResize")(monitorWindowResize.get.asInstanceOf[js.Any])
     if (onAlign != null) __obj.updateDynamic("onAlign")(js.Any.fromFunction2(onAlign))
     __obj.asInstanceOf[IAlignProps]
   }

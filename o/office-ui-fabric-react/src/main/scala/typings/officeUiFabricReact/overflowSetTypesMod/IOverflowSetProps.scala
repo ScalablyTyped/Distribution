@@ -7,7 +7,7 @@ import typings.officeUiFabricReact.overflowSetBaseMod.OverflowSetBase
 import typings.react.mod.ClassAttributes
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
@@ -104,7 +104,7 @@ object IOverflowSetProps {
     keytipSequences: js.Array[String] = null,
     overflowItems: js.Array[IOverflowSetItemProps] = null,
     overflowSide: start | end = null,
-    ref: LegacyRef[OverflowSetBase] = null,
+    ref: js.UndefOr[Null | LegacyRef[OverflowSetBase]] = js.undefined,
     role: String = null,
     styles: IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles] = null,
     vertical: js.UndefOr[Boolean] = js.undefined
@@ -112,7 +112,7 @@ object IOverflowSetProps {
     val __obj = js.Dynamic.literal(onRenderItem = js.Any.fromFunction1(onRenderItem), onRenderOverflowButton = js.Any.fromFunction2(onRenderOverflowButton))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotContainWithinFocusZone)) __obj.updateDynamic("doNotContainWithinFocusZone")(doNotContainWithinFocusZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotContainWithinFocusZone)) __obj.updateDynamic("doNotContainWithinFocusZone")(doNotContainWithinFocusZone.get.asInstanceOf[js.Any])
     if (focusZoneProps != null) __obj.updateDynamic("focusZoneProps")(focusZoneProps.asInstanceOf[js.Any])
     if (itemSubMenuProvider != null) __obj.updateDynamic("itemSubMenuProvider")(js.Any.fromFunction1(itemSubMenuProvider))
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
@@ -120,10 +120,10 @@ object IOverflowSetProps {
     if (keytipSequences != null) __obj.updateDynamic("keytipSequences")(keytipSequences.asInstanceOf[js.Any])
     if (overflowItems != null) __obj.updateDynamic("overflowItems")(overflowItems.asInstanceOf[js.Any])
     if (overflowSide != null) __obj.updateDynamic("overflowSide")(overflowSide.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOverflowSetProps]
   }
 }

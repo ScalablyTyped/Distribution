@@ -1,6 +1,6 @@
 package typings.baseui.datepickerMod
 
-import typings.baseui.AnonDate
+import typings.baseui.anon.Date
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.mouseLeave
 import typings.baseui.baseuiStrings.mouseOver
@@ -26,7 +26,7 @@ object StatefulContainerProps {
   def apply[T](
     children: /* args */ T => ReactNode = null,
     initialState: ContainerState = null,
-    onChange: /* args */ AnonDate => js.Any = null,
+    onChange: /* args */ Date => js.Any = null,
     range: js.UndefOr[Boolean] = js.undefined,
     stateReducer: (/* stateType */ mouseLeave | moveRight | moveDown | moveUp | mouseOver | change_ | moveLeft, /* nextState */ ContainerState, /* currentState */ ContainerState) => ContainerState = null
   ): StatefulContainerProps[T] = {
@@ -34,7 +34,7 @@ object StatefulContainerProps {
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
     if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3(stateReducer))
     __obj.asInstanceOf[StatefulContainerProps[T]]
   }

@@ -17,7 +17,7 @@ trait UpdateWorkerProps extends js.Object {
 object UpdateWorkerProps {
   @scala.inline
   def apply(
-    capacity: Int | Double = null,
+    capacity: js.UndefOr[Double] = js.undefined,
     displayName: String = null,
     metadata: OnfleetMetadata = null,
     name: String = null,
@@ -25,7 +25,7 @@ object UpdateWorkerProps {
     vehicle: Vehicle = null
   ): UpdateWorkerProps = {
     val __obj = js.Dynamic.literal()
-    if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(capacity)) __obj.updateDynamic("capacity")(capacity.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

@@ -4,16 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.HeadingStyles")
-@js.native
-class HeadingStyles protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
+trait HeadingStyles extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  val Count: Double
+  val Creator: Double
+  val Parent: js.Any
   @JSName("Word.HeadingStyles_typekey")
-  var WordDotHeadingStyles_typekey: HeadingStyles = js.native
-  def Add(Style: js.Any, Level: Double): HeadingStyle = js.native
-  def Item(Index: Double): HeadingStyle = js.native
+  var WordDotHeadingStyles_typekey: HeadingStyles
+  def Add(Style: js.Any, Level: Double): HeadingStyle
+  def Item(Index: Double): HeadingStyle
+}
+
+object HeadingStyles {
+  @scala.inline
+  def apply(
+    Add: (js.Any, Double) => HeadingStyle,
+    Application: Application,
+    Count: Double,
+    Creator: Double,
+    Item: Double => HeadingStyle,
+    Parent: js.Any,
+    WordDotHeadingStyles_typekey: HeadingStyles
+  ): HeadingStyles = {
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.HeadingStyles_typekey")(WordDotHeadingStyles_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeadingStyles]
+  }
 }
 

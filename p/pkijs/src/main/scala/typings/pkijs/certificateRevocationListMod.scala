@@ -2,6 +2,7 @@ package typings.pkijs
 
 import typings.asn1js.mod.BitString
 import typings.asn1js.mod.Sequence
+import typings.pkijs.anon.IssuerCertificate
 import typings.std.AlgorithmIdentifier
 import typings.std.ArrayBuffer
 import typings.std.CryptoKey
@@ -48,7 +49,7 @@ object certificateRevocationListMod extends js.Object {
       * @param {{[issuerCertificate]: Certificate, [publicKeyInfo]: PublicKeyInfo}} parameters
       * @returns {*}
       */
-    def verify(parameters: AnonIssuerCertificate): js.Thenable[Boolean] = js.native
+    def verify(parameters: IssuerCertificate): js.Thenable[Boolean] = js.native
   }
   
   @js.native

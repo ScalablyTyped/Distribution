@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojpopupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonAriaCloseSkipLink
+import typings.oracleOraclejet.anon.AriaCloseSkipLink
 import typings.oracleOraclejet.ojpopupMod.ojPopup.Position
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.default
@@ -25,20 +25,20 @@ trait ojPopupSettablePropertiesLenient
   var modality: js.UndefOr[modeless | modal] = js.undefined
   var position: js.UndefOr[Position] = js.undefined
   var tail: js.UndefOr[none | simple] = js.undefined
-  var translations: js.UndefOr[AnonAriaCloseSkipLink] = js.undefined
+  var translations: js.UndefOr[AriaCloseSkipLink] = js.undefined
 }
 
 object ojPopupSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     autoDismiss: none | focusLoss = null,
     chrome: default | none = null,
     initialFocus: auto | none | firstFocusable | popup = null,
     modality: modeless | modal = null,
     position: Position = null,
     tail: none | simple = null,
-    translations: AnonAriaCloseSkipLink = null
+    translations: AriaCloseSkipLink = null
   ): ojPopupSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

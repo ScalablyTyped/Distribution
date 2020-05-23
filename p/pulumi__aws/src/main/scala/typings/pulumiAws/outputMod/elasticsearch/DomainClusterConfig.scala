@@ -39,22 +39,22 @@ trait DomainClusterConfig extends js.Object {
 object DomainClusterConfig {
   @scala.inline
   def apply(
-    dedicatedMasterCount: Int | Double = null,
+    dedicatedMasterCount: js.UndefOr[Double] = js.undefined,
     dedicatedMasterEnabled: js.UndefOr[Boolean] = js.undefined,
     dedicatedMasterType: String = null,
-    instanceCount: Int | Double = null,
+    instanceCount: js.UndefOr[Double] = js.undefined,
     instanceType: String = null,
     zoneAwarenessConfig: DomainClusterConfigZoneAwarenessConfig = null,
     zoneAwarenessEnabled: js.UndefOr[Boolean] = js.undefined
   ): DomainClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (dedicatedMasterCount != null) __obj.updateDynamic("dedicatedMasterCount")(dedicatedMasterCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(dedicatedMasterEnabled)) __obj.updateDynamic("dedicatedMasterEnabled")(dedicatedMasterEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(dedicatedMasterCount)) __obj.updateDynamic("dedicatedMasterCount")(dedicatedMasterCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dedicatedMasterEnabled)) __obj.updateDynamic("dedicatedMasterEnabled")(dedicatedMasterEnabled.get.asInstanceOf[js.Any])
     if (dedicatedMasterType != null) __obj.updateDynamic("dedicatedMasterType")(dedicatedMasterType.asInstanceOf[js.Any])
-    if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(instanceCount)) __obj.updateDynamic("instanceCount")(instanceCount.get.asInstanceOf[js.Any])
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
     if (zoneAwarenessConfig != null) __obj.updateDynamic("zoneAwarenessConfig")(zoneAwarenessConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoneAwarenessEnabled)) __obj.updateDynamic("zoneAwarenessEnabled")(zoneAwarenessEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoneAwarenessEnabled)) __obj.updateDynamic("zoneAwarenessEnabled")(zoneAwarenessEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainClusterConfig]
   }
 }

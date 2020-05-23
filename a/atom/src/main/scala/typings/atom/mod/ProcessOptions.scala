@@ -25,7 +25,7 @@ object ProcessOptions {
   ): ProcessOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
     if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction1(exit))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (stderr != null) __obj.updateDynamic("stderr")(js.Any.fromFunction1(stderr))

@@ -16,20 +16,20 @@ trait LeaseInfo extends js.Object {
 object LeaseInfo {
   @scala.inline
   def apply(
-    durationInSecs: Int | Double = null,
-    evictionTimestamp: Int | Double = null,
-    lastRenewalTimestamp: Int | Double = null,
-    registrationTimestamp: Int | Double = null,
-    renewalIntervalInSecs: Int | Double = null,
-    serviceUpTimestamp: Int | Double = null
+    durationInSecs: js.UndefOr[Double] = js.undefined,
+    evictionTimestamp: js.UndefOr[Double] = js.undefined,
+    lastRenewalTimestamp: js.UndefOr[Double] = js.undefined,
+    registrationTimestamp: js.UndefOr[Double] = js.undefined,
+    renewalIntervalInSecs: js.UndefOr[Double] = js.undefined,
+    serviceUpTimestamp: js.UndefOr[Double] = js.undefined
   ): LeaseInfo = {
     val __obj = js.Dynamic.literal()
-    if (durationInSecs != null) __obj.updateDynamic("durationInSecs")(durationInSecs.asInstanceOf[js.Any])
-    if (evictionTimestamp != null) __obj.updateDynamic("evictionTimestamp")(evictionTimestamp.asInstanceOf[js.Any])
-    if (lastRenewalTimestamp != null) __obj.updateDynamic("lastRenewalTimestamp")(lastRenewalTimestamp.asInstanceOf[js.Any])
-    if (registrationTimestamp != null) __obj.updateDynamic("registrationTimestamp")(registrationTimestamp.asInstanceOf[js.Any])
-    if (renewalIntervalInSecs != null) __obj.updateDynamic("renewalIntervalInSecs")(renewalIntervalInSecs.asInstanceOf[js.Any])
-    if (serviceUpTimestamp != null) __obj.updateDynamic("serviceUpTimestamp")(serviceUpTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationInSecs)) __obj.updateDynamic("durationInSecs")(durationInSecs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(evictionTimestamp)) __obj.updateDynamic("evictionTimestamp")(evictionTimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastRenewalTimestamp)) __obj.updateDynamic("lastRenewalTimestamp")(lastRenewalTimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(registrationTimestamp)) __obj.updateDynamic("registrationTimestamp")(registrationTimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renewalIntervalInSecs)) __obj.updateDynamic("renewalIntervalInSecs")(renewalIntervalInSecs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serviceUpTimestamp)) __obj.updateDynamic("serviceUpTimestamp")(serviceUpTimestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaseInfo]
   }
 }

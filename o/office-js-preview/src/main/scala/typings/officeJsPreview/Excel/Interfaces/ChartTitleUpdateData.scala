@@ -26,21 +26,21 @@ trait ChartTitleUpdateData extends js.Object {
   var format: js.UndefOr[ChartTitleFormatUpdateData] = js.undefined
   /**
     *
-    * Represents the horizontal alignment for chart title.
+    * Specifies the horizontal alignment for chart title.
     *
     * [Api set: ExcelApi 1.7]
     */
   var horizontalAlignment: js.UndefOr[ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed] = js.undefined
   /**
     *
-    * Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
+    * Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var left: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Boolean value representing if the chart title will overlay the chart or not.
+    * Specifies if the chart title will overlay the chart.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -61,35 +61,35 @@ trait ChartTitleUpdateData extends js.Object {
   var showShadow: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the title text of a chart.
+    * Specifies the chart's title text.
     *
     * [Api set: ExcelApi 1.1]
     */
   var text: js.UndefOr[String] = js.undefined
   /**
     *
-    * Represents the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+    * Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
     * [Api set: ExcelApi 1.7]
     */
   var textOrientation: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
+    * Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var top: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+    * Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
     *
     * [Api set: ExcelApi 1.7]
     */
   var verticalAlignment: js.UndefOr[ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed] = js.undefined
   /**
     *
-    * A boolean value the represents the visibility of a chart title object.
+    * Specifies if the chart title is visibile.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -101,28 +101,28 @@ object ChartTitleUpdateData {
   def apply(
     format: ChartTitleFormatUpdateData = null,
     horizontalAlignment: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed = null,
-    left: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
     overlay: js.UndefOr[Boolean] = js.undefined,
     position: ChartTitlePosition | Automatic | Top | Bottom | Left | Right = null,
     showShadow: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
-    textOrientation: Int | Double = null,
-    top: Int | Double = null,
+    textOrientation: js.UndefOr[Double] = js.undefined,
+    top: js.UndefOr[Double] = js.undefined,
     verticalAlignment: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): ChartTitleUpdateData = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTitleUpdateData]
   }
 }

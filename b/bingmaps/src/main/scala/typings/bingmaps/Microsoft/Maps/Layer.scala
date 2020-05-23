@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.Layer")
 @js.native
-/**
-  * @constructor
-  * @param id Unique string identifier for the layer.
-  */
-class Layer () extends IDataLayer {
-  def this(id: String) = this()
+trait Layer extends IDataLayer {
   /** Optional property to store any additional metadata for this layer. */
   var metadata: js.Any = js.native
   def add(primitive: js.Array[IPrimitive]): Unit = js.native
@@ -23,9 +17,6 @@ class Layer () extends IDataLayer {
     */
   def add(primitive: IPrimitive): Unit = js.native
   def add(primitive: IPrimitive, index: Double): Unit = js.native
-  /** Clears all data in the layer. */
-  /* CompleteClass */
-  override def clear(): Unit = js.native
   /**
     * Cleans up any resources this object is consuming
     */

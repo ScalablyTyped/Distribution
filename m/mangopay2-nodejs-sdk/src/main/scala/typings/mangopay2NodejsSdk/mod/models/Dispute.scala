@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.PartialDisputeData
+import typings.mangopay2NodejsSdk.anon.PartialDisputeData
 import typings.mangopay2NodejsSdk.mod.MoneyData
 import typings.mangopay2NodejsSdk.mod.Timestamp
 import typings.mangopay2NodejsSdk.mod.dispute.DisputeData

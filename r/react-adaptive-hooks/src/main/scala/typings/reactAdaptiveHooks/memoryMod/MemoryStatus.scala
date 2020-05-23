@@ -15,14 +15,11 @@ object MemoryStatus {
   @scala.inline
   def apply(
     deviceMemory: Double,
-    jsHeapSizeLimit: Int | Double = null,
-    totalJSHeapSize: Int | Double = null,
-    usedJSHeapSize: Int | Double = null
+    jsHeapSizeLimit: Double = null.asInstanceOf[Double],
+    totalJSHeapSize: Double = null.asInstanceOf[Double],
+    usedJSHeapSize: Double = null.asInstanceOf[Double]
   ): MemoryStatus = {
-    val __obj = js.Dynamic.literal(deviceMemory = deviceMemory.asInstanceOf[js.Any])
-    if (jsHeapSizeLimit != null) __obj.updateDynamic("jsHeapSizeLimit")(jsHeapSizeLimit.asInstanceOf[js.Any])
-    if (totalJSHeapSize != null) __obj.updateDynamic("totalJSHeapSize")(totalJSHeapSize.asInstanceOf[js.Any])
-    if (usedJSHeapSize != null) __obj.updateDynamic("usedJSHeapSize")(usedJSHeapSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deviceMemory = deviceMemory.asInstanceOf[js.Any], jsHeapSizeLimit = jsHeapSizeLimit.asInstanceOf[js.Any], totalJSHeapSize = totalJSHeapSize.asInstanceOf[js.Any], usedJSHeapSize = usedJSHeapSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryStatus]
   }
 }

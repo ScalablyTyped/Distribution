@@ -1,6 +1,6 @@
 package typings.jqueryNicescroll.JQueryNiceScroll
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +12,12 @@ trait NiceScroll extends js.Object {
   def doScrollTop(x: Double, duration: Double): Unit = js.native
   def hide(): NiceScroll = js.native
   def onResize(): NiceScroll = js.native
-  def onResize(e: Event_): NiceScroll = js.native
-  def onResize(e: Event_, page: NiceScrollPage): NiceScroll = js.native
+  def onResize(e: Event): NiceScroll = js.native
+  def onResize(e: Event, page: NiceScrollPage): NiceScroll = js.native
   def remove(): Unit = js.native
   def resize(): NiceScroll = js.native
-  def resize(e: Event_): NiceScroll = js.native
-  def resize(e: Event_, page: NiceScrollPage): NiceScroll = js.native
+  def resize(e: Event): NiceScroll = js.native
+  def resize(e: Event, page: NiceScrollPage): NiceScroll = js.native
   def show(): NiceScroll = js.native
   def stop(): NiceScroll = js.native
   def toggle(): NiceScroll = js.native

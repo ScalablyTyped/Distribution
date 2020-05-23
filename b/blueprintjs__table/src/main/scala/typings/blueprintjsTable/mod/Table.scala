@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.mod
 
-import typings.blueprintjsTable.AnonChildrenArray
-import typings.blueprintjsTable.ValidationMapIColumnInter
+import typings.blueprintjsTable.anon.ChildrenArray
+import typings.blueprintjsTable.anon.ValidationMapIColumnInter
 import typings.blueprintjsTable.tableMod.ITableProps
 import typings.blueprintjsTable.tableMod.ITableState
 import scala.scalajs.js
@@ -28,6 +28,6 @@ object Table extends js.Object {
   var displayName: String = js.native
   var isSelectionModeEnabled: js.Any = js.native
   var resizeRowsByApproximateHeightDefaults: js.Any = js.native
-  def getDerivedStateFromProps(props: ITableProps, state: ITableState): AnonChildrenArray = js.native
+  def getDerivedStateFromProps(props: ITableProps, state: ITableState): ChildrenArray = js.native
 }
 

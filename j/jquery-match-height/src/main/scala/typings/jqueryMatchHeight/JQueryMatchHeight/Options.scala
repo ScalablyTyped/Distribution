@@ -20,9 +20,9 @@ object Options {
     target: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(byRow)) __obj.updateDynamic("byRow")(byRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(byRow)) __obj.updateDynamic("byRow")(byRow.get.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

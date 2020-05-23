@@ -18,12 +18,9 @@ trait DomainEndpointOptions extends js.Object {
 
 object DomainEndpointOptions {
   @scala.inline
-  def apply(
-    EnforceHTTPS: js.UndefOr[scala.Boolean] = js.undefined,
-    TLSSecurityPolicy: TLSSecurityPolicy = null
-  ): DomainEndpointOptions = {
+  def apply(EnforceHTTPS: js.UndefOr[Boolean] = js.undefined, TLSSecurityPolicy: TLSSecurityPolicy = null): DomainEndpointOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnforceHTTPS)) __obj.updateDynamic("EnforceHTTPS")(EnforceHTTPS.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnforceHTTPS)) __obj.updateDynamic("EnforceHTTPS")(EnforceHTTPS.get.asInstanceOf[js.Any])
     if (TLSSecurityPolicy != null) __obj.updateDynamic("TLSSecurityPolicy")(TLSSecurityPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainEndpointOptions]
   }

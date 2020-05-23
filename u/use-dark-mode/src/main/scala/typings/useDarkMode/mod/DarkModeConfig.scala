@@ -1,8 +1,8 @@
 package typings.useDarkMode.mod
 
 import typings.std.HTMLElement
+import typings.std.Window
 import typings.std.WindowLocalStorage
-import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait DarkModeConfig extends js.Object {
    // A className to set "light mode". Default = "light-mode".
   var element: js.UndefOr[HTMLElement] = js.undefined
    // A storage provider. Default = `localStorage`.
-  var global: js.UndefOr[Window_] = js.undefined
+  var global: js.UndefOr[Window] = js.undefined
    // The element to apply the className. Default = `document.body`
   var onChange: js.UndefOr[js.Function1[/* val */ js.UndefOr[Boolean], Unit]] = js.undefined
    // Overide the default className handler with a custom callback.
@@ -29,7 +29,7 @@ object DarkModeConfig {
     classNameDark: String = null,
     classNameLight: String = null,
     element: HTMLElement = null,
-    global: Window_ = null,
+    global: Window = null,
     onChange: /* val */ js.UndefOr[Boolean] => Unit = null,
     storageKey: String = null,
     storageProvider: WindowLocalStorage = null

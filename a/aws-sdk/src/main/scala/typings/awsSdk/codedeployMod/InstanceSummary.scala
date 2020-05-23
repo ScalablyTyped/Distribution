@@ -19,7 +19,7 @@ trait InstanceSummary extends js.Object {
     */
   var instanceType: js.UndefOr[InstanceType] = js.native
   /**
-    * A timestamp that indicaties when the instance information was last updated.
+    * A timestamp that indicates when the instance information was last updated.
     */
   var lastUpdatedAt: js.UndefOr[Timestamp] = js.native
   /**
@@ -27,7 +27,7 @@ trait InstanceSummary extends js.Object {
     */
   var lifecycleEvents: js.UndefOr[LifecycleEventList] = js.native
   /**
-    * The deployment status for this instance:   Pending: The deployment is pending for this instance.   In Progress: The deployment is in progress for this instance.   Succeeded: The deployment has succeeded for this instance.   Failed: The deployment has failed for this instance.   Skipped: The deployment has been skipped for this instance.   Unknown: The deployment status is unknown for this instance.  
+    * The deployment status for this instance:    Pending: The deployment is pending for this instance.    In Progress: The deployment is in progress for this instance.    Succeeded: The deployment has succeeded for this instance.    Failed: The deployment has failed for this instance.    Skipped: The deployment has been skipped for this instance.    Unknown: The deployment status is unknown for this instance.  
     */
   var status: js.UndefOr[InstanceStatus] = js.native
 }

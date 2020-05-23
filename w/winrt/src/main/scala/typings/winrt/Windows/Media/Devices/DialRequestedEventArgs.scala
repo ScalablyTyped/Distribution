@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Devices.DialRequestedEventArgs")
-@js.native
-class DialRequestedEventArgs () extends IDialRequestedEventArgs {
-  /* CompleteClass */
-  override var contact: js.Any = js.native
-  /* CompleteClass */
-  override def handled(): Unit = js.native
+trait DialRequestedEventArgs extends IDialRequestedEventArgs
+
+object DialRequestedEventArgs {
+  @scala.inline
+  def apply(contact: js.Any, handled: () => Unit): DialRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(contact = contact.asInstanceOf[js.Any], handled = js.Any.fromFunction0(handled))
+    __obj.asInstanceOf[DialRequestedEventArgs]
+  }
 }
 

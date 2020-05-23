@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,17 +29,6 @@ object RENDERER_TYPE extends js.Object {
   
   @js.native
   sealed trait WEBGL extends RENDERER_TYPE
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RENDERER_TYPE with Double] = js.native
-  /* 2 */ @js.native
-  object CANVAS extends TopLevel[CANVAS with Double]
-  
-  /* 0 */ @js.native
-  object UNKNOWN extends TopLevel[UNKNOWN with Double]
-  
-  /* 1 */ @js.native
-  object WEBGL extends TopLevel[WEBGL with Double]
   
 }
 

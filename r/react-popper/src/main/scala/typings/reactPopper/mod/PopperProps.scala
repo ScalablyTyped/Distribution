@@ -24,18 +24,18 @@ object PopperProps {
   def apply(
     children: PopperChildrenProps => ReactNode,
     eventsEnabled: js.UndefOr[Boolean] = js.undefined,
-    innerRef: Ref[_] = null,
+    innerRef: js.UndefOr[Null | Ref[_]] = js.undefined,
     modifiers: Modifiers = null,
     placement: Placement = null,
     positionFixed: js.UndefOr[Boolean] = js.undefined,
     referenceElement: ReferenceObject = null
   ): PopperProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed.get.asInstanceOf[js.Any])
     if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopperProps]
   }

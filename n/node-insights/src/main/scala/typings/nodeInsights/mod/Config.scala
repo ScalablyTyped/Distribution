@@ -24,15 +24,15 @@ object Config {
     defaultEventType: String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     gzip: js.UndefOr[Boolean] = js.undefined,
-    maxPending: Int | Double = null,
-    timerInterval: Int | Double = null
+    maxPending: js.UndefOr[Double] = js.undefined,
+    timerInterval: js.UndefOr[Double] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], insertKey = insertKey.asInstanceOf[js.Any], queryKey = queryKey.asInstanceOf[js.Any])
     if (defaultEventType != null) __obj.updateDynamic("defaultEventType")(defaultEventType.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
-    if (maxPending != null) __obj.updateDynamic("maxPending")(maxPending.asInstanceOf[js.Any])
-    if (timerInterval != null) __obj.updateDynamic("timerInterval")(timerInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPending)) __obj.updateDynamic("maxPending")(maxPending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timerInterval)) __obj.updateDynamic("timerInterval")(timerInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

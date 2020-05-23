@@ -26,10 +26,15 @@ trait IceServer extends js.Object {
 
 object IceServer {
   @scala.inline
-  def apply(Password: Password = null, Ttl: Int | Double = null, Uris: Uris = null, Username: Username = null): IceServer = {
+  def apply(
+    Password: Password = null,
+    Ttl: js.UndefOr[Ttl] = js.undefined,
+    Uris: Uris = null,
+    Username: Username = null
+  ): IceServer = {
     val __obj = js.Dynamic.literal()
     if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (Ttl != null) __obj.updateDynamic("Ttl")(Ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(Ttl)) __obj.updateDynamic("Ttl")(Ttl.get.asInstanceOf[js.Any])
     if (Uris != null) __obj.updateDynamic("Uris")(Uris.asInstanceOf[js.Any])
     if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[IceServer]

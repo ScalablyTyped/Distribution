@@ -20,13 +20,13 @@ object ConfigGiven {
     username: String,
     onKeyboardInteractive: () => Unit | Boolean = null,
     password: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     privateKey: String = null
   ): ConfigGiven = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (onKeyboardInteractive != null) __obj.updateDynamic("onKeyboardInteractive")(js.Any.fromFunction0(onKeyboardInteractive))
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigGiven]
   }

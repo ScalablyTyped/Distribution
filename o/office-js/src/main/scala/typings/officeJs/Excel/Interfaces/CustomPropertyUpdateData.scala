@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CustomPropertyUpdateData extends js.Object {
   /**
     *
-    * Gets or sets the value of the custom property.
+    * The value of the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */

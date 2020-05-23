@@ -20,10 +20,10 @@ object MetadataOptions {
     waitForReady: js.UndefOr[Boolean] = js.undefined
   ): MetadataOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheableRequest)) __obj.updateDynamic("cacheableRequest")(cacheableRequest.asInstanceOf[js.Any])
-    if (!js.isUndefined(corked)) __obj.updateDynamic("corked")(corked.asInstanceOf[js.Any])
-    if (!js.isUndefined(idempotentRequest)) __obj.updateDynamic("idempotentRequest")(idempotentRequest.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForReady)) __obj.updateDynamic("waitForReady")(waitForReady.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheableRequest)) __obj.updateDynamic("cacheableRequest")(cacheableRequest.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(corked)) __obj.updateDynamic("corked")(corked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(idempotentRequest)) __obj.updateDynamic("idempotentRequest")(idempotentRequest.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForReady)) __obj.updateDynamic("waitForReady")(waitForReady.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataOptions]
   }
 }

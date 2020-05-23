@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,26 +53,6 @@ object PictureFormat extends js.Object {
   
   @js.native
   sealed trait unknown extends PictureFormat
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PictureFormat with String] = js.native
-  /* "BMP" */ @js.native
-  object bmp extends TopLevel[bmp with String]
-  
-  /* "GIF" */ @js.native
-  object gif extends TopLevel[gif with String]
-  
-  /* "JPEG" */ @js.native
-  object jpeg extends TopLevel[jpeg with String]
-  
-  /* "PNG" */ @js.native
-  object png extends TopLevel[png with String]
-  
-  /* "SVG" */ @js.native
-  object svg extends TopLevel[svg with String]
-  
-  /* "UNKNOWN" */ @js.native
-  object unknown extends TopLevel[unknown with String]
   
 }
 

@@ -14,15 +14,15 @@ object LeaseAccessConditionsOptions {
     accessConditions: StorageAccessCondition = null,
     leaseId: String = null,
     locationMode: String = null,
-    maximumExecutionTimeInMs: Int | Double = null,
-    timeoutIntervalInMs: Int | Double = null
+    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
+    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
   ): LeaseAccessConditionsOptions = {
     val __obj = js.Dynamic.literal()
     if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions.asInstanceOf[js.Any])
     if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
     if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
-    if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaseAccessConditionsOptions]
   }
 }

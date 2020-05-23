@@ -18,8 +18,8 @@ object TagSettings {
     imageTagEnabled: js.UndefOr[Boolean] = js.undefined
   ): TagSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicTagEnabled)) __obj.updateDynamic("dynamicTagEnabled")(dynamicTagEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageTagEnabled)) __obj.updateDynamic("imageTagEnabled")(imageTagEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicTagEnabled)) __obj.updateDynamic("dynamicTagEnabled")(dynamicTagEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageTagEnabled)) __obj.updateDynamic("imageTagEnabled")(imageTagEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagSettings]
   }
 }

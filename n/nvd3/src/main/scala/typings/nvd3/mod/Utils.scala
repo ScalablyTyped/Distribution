@@ -1,6 +1,6 @@
 package typings.nvd3.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Utils extends js.Object {
   def getColor(arg: js.Any): js.Array[String]
   def state(): State
   /* Binds callback function to run when window is resized */
-  def windowResize(listener: js.Function1[/* ev */ Event_, _]): Unit
+  def windowResize(listener: js.Function1[/* ev */ Event, _]): Unit
   /* Gets the browser window size */
   def windowSize(): Size
 }
@@ -24,7 +24,7 @@ object Utils {
     getColor: js.Any => js.Array[String],
     state: () => State,
     symbolMap: SymbolMap,
-    windowResize: js.Function1[/* ev */ Event_, _] => Unit,
+    windowResize: js.Function1[/* ev */ Event, _] => Unit,
     windowSize: () => Size
   ): Utils = {
     val __obj = js.Dynamic.literal(defaultColor = js.Any.fromFunction0(defaultColor), getColor = js.Any.fromFunction1(getColor), state = js.Any.fromFunction0(state), symbolMap = symbolMap.asInstanceOf[js.Any], windowResize = js.Any.fromFunction1(windowResize), windowSize = js.Any.fromFunction0(windowSize))

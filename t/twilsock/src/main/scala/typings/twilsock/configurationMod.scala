@@ -24,13 +24,13 @@ object configurationMod extends js.Object {
     var _token: js.Any = js.native
     val activeGrant: String = js.native
     val clientMetadata: js.Any = js.native
-    val continuationToken: String = js.native
     val initRegistrations: js.Array[InitRegistration] = js.native
     val logLevel: LogLevelDesc = js.native
     val retryPolicy: js.Any = js.native
-    val token: String = js.native
     val tweaks: js.Any = js.native
     val url: String = js.native
+    def continuationToken: String = js.native
+    def token: String = js.native
     def updateContinuationToken(continuationToken: String): Unit = js.native
     def updateToken(token: String): Unit = js.native
   }

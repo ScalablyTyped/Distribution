@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/axes/timeAxis", JSImport.Namespace)
 @js.native
 object timeAxisMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Between */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.center
     - typings.plottable.plottableStrings.between
   */
@@ -113,7 +113,7 @@ object timeAxisMod extends js.Object {
     def tierLabelPositions(newPositions: js.Array[TierLabelPosition]): this.type = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Top */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.top
     - typings.plottable.plottableStrings.bottom
   */
@@ -142,7 +142,7 @@ object timeAxisMod extends js.Object {
     def formatter(value: js.Any): String = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Day */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.second
     - typings.plottable.plottableStrings.minute
     - typings.plottable.plottableStrings.hour

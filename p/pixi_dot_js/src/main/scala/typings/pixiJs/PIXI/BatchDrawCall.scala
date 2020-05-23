@@ -11,13 +11,19 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.BatchDrawCall")
-@js.native
-class BatchDrawCall () extends js.Object {
+trait BatchDrawCall extends js.Object {
   /**
     * data for uniforms or custom webgl state
     * @member {object} PIXI.BatchDrawCall#data
     */
-  var data: js.Any = js.native
+  var data: js.Any
+}
+
+object BatchDrawCall {
+  @scala.inline
+  def apply(data: js.Any): BatchDrawCall = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BatchDrawCall]
+  }
 }
 

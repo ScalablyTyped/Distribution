@@ -23,9 +23,7 @@ object PhoneAuthSnapshot {
     code: String = null,
     error: NativeError = null
   ): PhoneAuthSnapshot = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], verificationId = verificationId.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], verificationId = verificationId.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneAuthSnapshot]
   }
 }

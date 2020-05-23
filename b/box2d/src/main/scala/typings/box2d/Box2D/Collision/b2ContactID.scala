@@ -4,29 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Box2D.Collision.b2ContactID")
-@js.native
-/**
-		* Creates a new Contact ID.
-		**/
-class b2ContactID () extends js.Object {
+trait b2ContactID extends js.Object {
   /**
-  		* ID Key
-  		**/
-  var Key: Double = js.native
+    * ID Key
+    **/
+  var Key: Double
   /**
-  		* Features
-  		**/
-  var features: Features = js.native
+    * Features
+    **/
+  var features: Features
   /**
-  		* Copies the Contact ID.
-  		* @return Copied Contact ID.
-  		**/
-  def Copy(): b2ContactID = js.native
+    * Copies the Contact ID.
+    * @return Copied Contact ID.
+    **/
+  def Copy(): b2ContactID
   /**
-  		* Sets the Contact ID from a Contact ID.
-  		* @param id The Contact ID to copy values from.
-  		**/
-  def Set(id: b2ContactID): Unit = js.native
+    * Sets the Contact ID from a Contact ID.
+    * @param id The Contact ID to copy values from.
+    **/
+  def Set(id: b2ContactID): Unit
+}
+
+object b2ContactID {
+  @scala.inline
+  def apply(Copy: () => b2ContactID, Key: Double, Set: b2ContactID => Unit, features: Features): b2ContactID = {
+    val __obj = js.Dynamic.literal(Copy = js.Any.fromFunction0(Copy), Key = Key.asInstanceOf[js.Any], Set = js.Any.fromFunction1(Set), features = features.asInstanceOf[js.Any])
+    __obj.asInstanceOf[b2ContactID]
+  }
 }
 

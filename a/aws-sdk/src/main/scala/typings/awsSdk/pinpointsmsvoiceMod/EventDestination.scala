@@ -24,7 +24,7 @@ object EventDestination {
   @scala.inline
   def apply(
     CloudWatchLogsDestination: CloudWatchLogsDestination = null,
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
     KinesisFirehoseDestination: KinesisFirehoseDestination = null,
     MatchingEventTypes: EventTypes = null,
     Name: String = null,
@@ -32,7 +32,7 @@ object EventDestination {
   ): EventDestination = {
     val __obj = js.Dynamic.literal()
     if (CloudWatchLogsDestination != null) __obj.updateDynamic("CloudWatchLogsDestination")(CloudWatchLogsDestination.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (KinesisFirehoseDestination != null) __obj.updateDynamic("KinesisFirehoseDestination")(KinesisFirehoseDestination.asInstanceOf[js.Any])
     if (MatchingEventTypes != null) __obj.updateDynamic("MatchingEventTypes")(MatchingEventTypes.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

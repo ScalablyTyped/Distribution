@@ -1,46 +1,21 @@
 package typings.polymerTs.polymer
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.polymerTs.AnonAddedCount
-import typings.std.CSSStyleDeclaration
+import typings.polymerTs.anon.AddedCount
 import typings.std.HTMLElement
-import typings.std.HTMLSlotElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("polymer.PolymerBase")
 @js.native
-class PolymerBase () extends HTMLElement {
+trait PolymerBase extends HTMLElement {
   @JSName("$")
   var $: js.Any = js.native
   @JSName("$$")
   var DollarDollar: js.Any = js.native
-  /* CompleteClass */
-  override val assignedSlot: HTMLSlotElement | Null = js.native
-  /* CompleteClass */
-  override var contentEditable: String = js.native
   var customStyle: StringDictionary[String] = js.native
-  /* CompleteClass */
-  override var innerHTML: String = js.native
-  /* CompleteClass */
-  override var inputMode: String = js.native
-  /* CompleteClass */
-  override val isContentEditable: Boolean = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: typings.std.Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: typings.std.Element | Null = js.native
   var root: HTMLElement = js.native
   var shadyRoot: HTMLElement = js.native
-  /* CompleteClass */
-  override val style: CSSStyleDeclaration = js.native
   def arrayDelete(path: String, item: String): js.Any = js.native
   def arrayDelete(path: String, item: js.Any): js.Any = js.native
   def async(callback: js.Function): js.Any = js.native
@@ -79,7 +54,7 @@ class PolymerBase () extends HTMLElement {
   def mixin(target: js.Object, source: js.Object): Unit = js.native
   def notifyPath(path: String, value: js.Any): Unit = js.native
   def notifyPath(path: String, value: js.Any, fromAbove: js.Any): Unit = js.native
-  def notifySplices(path: String, splices: AnonAddedCount): Unit = js.native
+  def notifySplices(path: String, splices: AddedCount): Unit = js.native
   def pop(path: String): js.Any = js.native
   def push(path: String, value: js.Any): js.Any = js.native
   def reflectPropertyToAttribute(name: String): Unit = js.native

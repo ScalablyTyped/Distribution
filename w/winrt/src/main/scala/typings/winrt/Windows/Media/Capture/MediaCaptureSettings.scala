@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Capture.MediaCaptureSettings")
-@js.native
-class MediaCaptureSettings () extends IMediaCaptureSettings {
-  /* CompleteClass */
-  override var audioDeviceId: String = js.native
-  /* CompleteClass */
-  override var photoCaptureSource: PhotoCaptureSource = js.native
-  /* CompleteClass */
-  override var streamingCaptureMode: StreamingCaptureMode = js.native
-  /* CompleteClass */
-  override var videoDeviceCharacteristic: VideoDeviceCharacteristic = js.native
-  /* CompleteClass */
-  override var videoDeviceId: String = js.native
+trait MediaCaptureSettings extends IMediaCaptureSettings
+
+object MediaCaptureSettings {
+  @scala.inline
+  def apply(
+    audioDeviceId: String,
+    photoCaptureSource: PhotoCaptureSource,
+    streamingCaptureMode: StreamingCaptureMode,
+    videoDeviceCharacteristic: VideoDeviceCharacteristic,
+    videoDeviceId: String
+  ): MediaCaptureSettings = {
+    val __obj = js.Dynamic.literal(audioDeviceId = audioDeviceId.asInstanceOf[js.Any], photoCaptureSource = photoCaptureSource.asInstanceOf[js.Any], streamingCaptureMode = streamingCaptureMode.asInstanceOf[js.Any], videoDeviceCharacteristic = videoDeviceCharacteristic.asInstanceOf[js.Any], videoDeviceId = videoDeviceId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaCaptureSettings]
+  }
 }
 

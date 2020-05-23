@@ -18,7 +18,7 @@ object graphicsUtils extends js.Object {
     * @memberof PIXI.graphicsUtils
     */
   @js.native
-  class BatchPart () extends js.Object {
+  trait BatchPart extends js.Object {
     /**
       * Begin batch part
       *
@@ -37,26 +37,5 @@ object graphicsUtils extends js.Object {
     def end(endIndex: Double, endAttrib: Double): Unit = js.native
   }
   
-  /**
-    * Batch pool, stores unused batches for preventing allocations.
-    *
-    * @memberof PIXI.graphicsUtils
-    * @type {Array<PIXI.graphicsUtils.BatchPart>}
-    */
-  var BATCH_POOL: js.Array[BatchPart] = js.native
-  /**
-    * Draw call pool, stores unused draw calls for preventing allocations.
-    *
-    * @memberof PIXI.graphicsUtils
-    * @type {Array<PIXI.BatchDrawCall>}
-    */
-  var DRAW_CALL_POOL: js.Array[BatchDrawCall] = js.native
-  /**
-    * Map of fill commands for each shape type.
-    *
-    * @memberof PIXI.graphicsUtils
-    * @member {Object}
-    */
-  var FILL_COMMANDS: js.Any = js.native
 }
 

@@ -6,10 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.PendingChangeKeyInitiallyComplete")
-@js.native
-class PendingChangeKeyInitiallyComplete protected () extends IEventArgs {
-  def this(changeKey: IChangeKey) = this()
-  var changeKey: IChangeKey = js.native
+trait PendingChangeKeyInitiallyComplete extends IEventArgs {
+  var changeKey: IChangeKey
+}
+
+object PendingChangeKeyInitiallyComplete {
+  @scala.inline
+  def apply(changeKey: IChangeKey): PendingChangeKeyInitiallyComplete = {
+    val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PendingChangeKeyInitiallyComplete]
+  }
 }
 

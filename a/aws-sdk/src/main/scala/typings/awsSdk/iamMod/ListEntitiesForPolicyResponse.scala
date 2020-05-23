@@ -31,14 +31,14 @@ trait ListEntitiesForPolicyResponse extends js.Object {
 object ListEntitiesForPolicyResponse {
   @scala.inline
   def apply(
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    IsTruncated: js.UndefOr[booleanType] = js.undefined,
     Marker: responseMarkerType = null,
     PolicyGroups: PolicyGroupListType = null,
     PolicyRoles: PolicyRoleListType = null,
     PolicyUsers: PolicyUserListType = null
   ): ListEntitiesForPolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (PolicyGroups != null) __obj.updateDynamic("PolicyGroups")(PolicyGroups.asInstanceOf[js.Any])
     if (PolicyRoles != null) __obj.updateDynamic("PolicyRoles")(PolicyRoles.asInstanceOf[js.Any])

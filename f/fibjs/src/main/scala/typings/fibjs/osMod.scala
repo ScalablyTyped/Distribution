@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 操作系统与文件系统处理模块
-	* @detail 使用方法：,```JavaScript,var os = require('os');,```
-	*/
+  * @brief 操作系统与文件系统处理模块
+  * @detail 使用方法：,```JavaScript,var os = require('os');,```
+  */
 @JSImport("os", JSImport.Namespace)
 @js.native
 object osMod extends js.Object {

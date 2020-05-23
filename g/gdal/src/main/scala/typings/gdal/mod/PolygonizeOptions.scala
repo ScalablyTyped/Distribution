@@ -19,14 +19,14 @@ object PolygonizeOptions {
     dst: Layer,
     pixValField: Double,
     src: RasterBand,
-    connectedness: Int | Double = null,
+    connectedness: js.UndefOr[Double] = js.undefined,
     mask: RasterBand = null,
     useFloats: js.UndefOr[Boolean] = js.undefined
   ): PolygonizeOptions = {
     val __obj = js.Dynamic.literal(dst = dst.asInstanceOf[js.Any], pixValField = pixValField.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-    if (connectedness != null) __obj.updateDynamic("connectedness")(connectedness.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectedness)) __obj.updateDynamic("connectedness")(connectedness.get.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFloats)) __obj.updateDynamic("useFloats")(useFloats.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFloats)) __obj.updateDynamic("useFloats")(useFloats.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolygonizeOptions]
   }
 }

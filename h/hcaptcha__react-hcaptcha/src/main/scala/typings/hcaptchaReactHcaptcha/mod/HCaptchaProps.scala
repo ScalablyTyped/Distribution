@@ -29,7 +29,7 @@ object HCaptchaProps {
     onExpire: () => _ = null,
     onVerify: /* token */ String => _ = null,
     size: normal | compact | invisible = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     theme: light | dark = null
   ): HCaptchaProps = {
     val __obj = js.Dynamic.literal(sitekey = sitekey.asInstanceOf[js.Any])
@@ -38,7 +38,7 @@ object HCaptchaProps {
     if (onExpire != null) __obj.updateDynamic("onExpire")(js.Any.fromFunction0(onExpire))
     if (onVerify != null) __obj.updateDynamic("onVerify")(js.Any.fromFunction1(onVerify))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[HCaptchaProps]
   }

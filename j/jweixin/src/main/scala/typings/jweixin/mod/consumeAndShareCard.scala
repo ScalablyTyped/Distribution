@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object consumeAndShareCard extends js.Object {
   /**
-  	 * 核销后再次赠送卡券接口
-  	 */
+    * 核销后再次赠送卡券接口
+    */
   def apply(params: IconsumeAndShareCard): Unit = js.native
 }
 

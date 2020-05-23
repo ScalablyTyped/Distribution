@@ -23,13 +23,13 @@ object RenderingContextConfig {
   @scala.inline
   def apply(
     antialias: js.UndefOr[Boolean] = js.undefined,
-    antialiasSamples: Int | Double = null,
+    antialiasSamples: js.UndefOr[Double] = js.undefined,
     preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
   ): RenderingContextConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
-    if (antialiasSamples != null) __obj.updateDynamic("antialiasSamples")(antialiasSamples.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(antialiasSamples)) __obj.updateDynamic("antialiasSamples")(antialiasSamples.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderingContextConfig]
   }
 }

@@ -25,14 +25,12 @@ object DiagnosticRelatedInformation {
     category: `0` | `1` | `2` | `3`,
     code: Double,
     messageText: String | DiagnosticMessageChain,
-    file: js.UndefOr[scala.Nothing] = js.undefined,
-    length: Int | Double = null,
-    start: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined
   ): DiagnosticRelatedInformation = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
-    if (!js.isUndefined(file)) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticRelatedInformation]
   }
 }

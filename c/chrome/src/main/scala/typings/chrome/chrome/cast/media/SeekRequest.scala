@@ -4,15 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.media.SeekRequest")
-@js.native
-/**
-  * @constructor
-  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.SeekRequest
-  */
-class SeekRequest () extends js.Object {
-  var currentTime: Double = js.native
-  var customData: js.Object = js.native
-  var resumeState: ResumeState = js.native
+trait SeekRequest extends js.Object {
+  var currentTime: Double
+  var customData: js.Object
+  var resumeState: ResumeState
+}
+
+object SeekRequest {
+  @scala.inline
+  def apply(currentTime: Double, customData: js.Object, resumeState: ResumeState): SeekRequest = {
+    val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any], resumeState = resumeState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeekRequest]
+  }
 }
 

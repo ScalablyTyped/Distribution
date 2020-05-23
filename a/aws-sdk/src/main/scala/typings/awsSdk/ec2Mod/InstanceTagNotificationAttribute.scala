@@ -19,11 +19,11 @@ trait InstanceTagNotificationAttribute extends js.Object {
 object InstanceTagNotificationAttribute {
   @scala.inline
   def apply(
-    IncludeAllTagsOfInstance: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludeAllTagsOfInstance: js.UndefOr[Boolean] = js.undefined,
     InstanceTagKeys: InstanceTagKeySet = null
   ): InstanceTagNotificationAttribute = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IncludeAllTagsOfInstance)) __obj.updateDynamic("IncludeAllTagsOfInstance")(IncludeAllTagsOfInstance.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeAllTagsOfInstance)) __obj.updateDynamic("IncludeAllTagsOfInstance")(IncludeAllTagsOfInstance.get.asInstanceOf[js.Any])
     if (InstanceTagKeys != null) __obj.updateDynamic("InstanceTagKeys")(InstanceTagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceTagNotificationAttribute]
   }

@@ -45,10 +45,10 @@ object options {
     safeFields: js.Array[String] = null
   ): options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (!js.isUndefined(negotiateContentType)) __obj.updateDynamic("negotiateContentType")(negotiateContentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(negotiateContentType)) __obj.updateDynamic("negotiateContentType")(negotiateContentType.get.asInstanceOf[js.Any])
     if (safeFields != null) __obj.updateDynamic("safeFields")(safeFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[options]
   }

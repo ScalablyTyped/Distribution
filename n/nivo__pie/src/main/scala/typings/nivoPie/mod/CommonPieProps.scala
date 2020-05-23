@@ -58,71 +58,71 @@ object CommonPieProps {
   def apply(
     animate: js.UndefOr[Boolean] = js.undefined,
     borderColor: InheritedColorProp[PieDatum] = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     colors: OrdinalColorsInstruction[PieDatum] = null,
-    cornerRadius: Int | Double = null,
+    cornerRadius: js.UndefOr[Double] = js.undefined,
     enableRadialLabels: js.UndefOr[Boolean] = js.undefined,
     enableSlicesLabels: js.UndefOr[Boolean] = js.undefined,
-    endAngle: Int | Double = null,
+    endAngle: js.UndefOr[Double] = js.undefined,
     fit: js.UndefOr[Boolean] = js.undefined,
-    innerRadius: Int | Double = null,
+    innerRadius: js.UndefOr[Double] = js.undefined,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     legends: js.Array[LegendProps] = null,
     margin: Box = null,
-    motionDamping: Int | Double = null,
-    motionStiffness: Int | Double = null,
+    motionDamping: js.UndefOr[Double] = js.undefined,
+    motionStiffness: js.UndefOr[Double] = js.undefined,
     onClick: (/* datum */ PieDatum, /* event */ MouseEvent[SVGPathElement, NativeMouseEvent]) => Unit = null,
-    padAngle: Int | Double = null,
+    padAngle: js.UndefOr[Double] = js.undefined,
     radialLabel: String | AccessorFunc = null,
     radialLabelsLinkColor: InheritedColorProp[PieDatumWithColor] = null,
-    radialLabelsLinkDiagonalLength: Int | Double = null,
-    radialLabelsLinkHorizontalLength: Int | Double = null,
-    radialLabelsLinkOffset: Int | Double = null,
-    radialLabelsLinkStrokeWidth: Int | Double = null,
-    radialLabelsSkipAngle: Int | Double = null,
+    radialLabelsLinkDiagonalLength: js.UndefOr[Double] = js.undefined,
+    radialLabelsLinkHorizontalLength: js.UndefOr[Double] = js.undefined,
+    radialLabelsLinkOffset: js.UndefOr[Double] = js.undefined,
+    radialLabelsLinkStrokeWidth: js.UndefOr[Double] = js.undefined,
+    radialLabelsSkipAngle: js.UndefOr[Double] = js.undefined,
     radialLabelsTextColor: InheritedColorProp[PieDatumWithColor] = null,
-    radialLabelsTextXOffset: Int | Double = null,
+    radialLabelsTextXOffset: js.UndefOr[Double] = js.undefined,
     sliceLabel: String | AccessorFunc = null,
-    slicesLabelsSkipAngle: Int | Double = null,
+    slicesLabelsSkipAngle: js.UndefOr[Double] = js.undefined,
     slicesLabelsTextColor: InheritedColorProp[PieDatumWithColor] = null,
     sortByValue: js.UndefOr[Boolean] = js.undefined,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     theme: Theme = null,
     tooltip: StatelessComponent[PieDatumWithColor] = null,
     tooltipFormat: String | ValueFormatter = null
   ): CommonPieProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRadialLabels)) __obj.updateDynamic("enableRadialLabels")(enableRadialLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSlicesLabels)) __obj.updateDynamic("enableSlicesLabels")(enableSlicesLabels.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
+    if (!js.isUndefined(cornerRadius)) __obj.updateDynamic("cornerRadius")(cornerRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRadialLabels)) __obj.updateDynamic("enableRadialLabels")(enableRadialLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSlicesLabels)) __obj.updateDynamic("enableSlicesLabels")(enableSlicesLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRadius)) __obj.updateDynamic("innerRadius")(innerRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.get.asInstanceOf[js.Any])
     if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
-    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionDamping)) __obj.updateDynamic("motionDamping")(motionDamping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionStiffness)) __obj.updateDynamic("motionStiffness")(motionStiffness.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (padAngle != null) __obj.updateDynamic("padAngle")(padAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(padAngle)) __obj.updateDynamic("padAngle")(padAngle.get.asInstanceOf[js.Any])
     if (radialLabel != null) __obj.updateDynamic("radialLabel")(radialLabel.asInstanceOf[js.Any])
     if (radialLabelsLinkColor != null) __obj.updateDynamic("radialLabelsLinkColor")(radialLabelsLinkColor.asInstanceOf[js.Any])
-    if (radialLabelsLinkDiagonalLength != null) __obj.updateDynamic("radialLabelsLinkDiagonalLength")(radialLabelsLinkDiagonalLength.asInstanceOf[js.Any])
-    if (radialLabelsLinkHorizontalLength != null) __obj.updateDynamic("radialLabelsLinkHorizontalLength")(radialLabelsLinkHorizontalLength.asInstanceOf[js.Any])
-    if (radialLabelsLinkOffset != null) __obj.updateDynamic("radialLabelsLinkOffset")(radialLabelsLinkOffset.asInstanceOf[js.Any])
-    if (radialLabelsLinkStrokeWidth != null) __obj.updateDynamic("radialLabelsLinkStrokeWidth")(radialLabelsLinkStrokeWidth.asInstanceOf[js.Any])
-    if (radialLabelsSkipAngle != null) __obj.updateDynamic("radialLabelsSkipAngle")(radialLabelsSkipAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(radialLabelsLinkDiagonalLength)) __obj.updateDynamic("radialLabelsLinkDiagonalLength")(radialLabelsLinkDiagonalLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radialLabelsLinkHorizontalLength)) __obj.updateDynamic("radialLabelsLinkHorizontalLength")(radialLabelsLinkHorizontalLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radialLabelsLinkOffset)) __obj.updateDynamic("radialLabelsLinkOffset")(radialLabelsLinkOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radialLabelsLinkStrokeWidth)) __obj.updateDynamic("radialLabelsLinkStrokeWidth")(radialLabelsLinkStrokeWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radialLabelsSkipAngle)) __obj.updateDynamic("radialLabelsSkipAngle")(radialLabelsSkipAngle.get.asInstanceOf[js.Any])
     if (radialLabelsTextColor != null) __obj.updateDynamic("radialLabelsTextColor")(radialLabelsTextColor.asInstanceOf[js.Any])
-    if (radialLabelsTextXOffset != null) __obj.updateDynamic("radialLabelsTextXOffset")(radialLabelsTextXOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(radialLabelsTextXOffset)) __obj.updateDynamic("radialLabelsTextXOffset")(radialLabelsTextXOffset.get.asInstanceOf[js.Any])
     if (sliceLabel != null) __obj.updateDynamic("sliceLabel")(sliceLabel.asInstanceOf[js.Any])
-    if (slicesLabelsSkipAngle != null) __obj.updateDynamic("slicesLabelsSkipAngle")(slicesLabelsSkipAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(slicesLabelsSkipAngle)) __obj.updateDynamic("slicesLabelsSkipAngle")(slicesLabelsSkipAngle.get.asInstanceOf[js.Any])
     if (slicesLabelsTextColor != null) __obj.updateDynamic("slicesLabelsTextColor")(slicesLabelsTextColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortByValue)) __obj.updateDynamic("sortByValue")(sortByValue.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortByValue)) __obj.updateDynamic("sortByValue")(sortByValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])

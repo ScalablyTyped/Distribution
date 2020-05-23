@@ -23,13 +23,13 @@ trait FleetRuntimeConfiguration extends js.Object {
 object FleetRuntimeConfiguration {
   @scala.inline
   def apply(
-    gameSessionActivationTimeoutSeconds: Int | Double = null,
-    maxConcurrentGameSessionActivations: Int | Double = null,
+    gameSessionActivationTimeoutSeconds: js.UndefOr[Double] = js.undefined,
+    maxConcurrentGameSessionActivations: js.UndefOr[Double] = js.undefined,
     serverProcesses: js.Array[FleetRuntimeConfigurationServerProcess] = null
   ): FleetRuntimeConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (gameSessionActivationTimeoutSeconds != null) __obj.updateDynamic("gameSessionActivationTimeoutSeconds")(gameSessionActivationTimeoutSeconds.asInstanceOf[js.Any])
-    if (maxConcurrentGameSessionActivations != null) __obj.updateDynamic("maxConcurrentGameSessionActivations")(maxConcurrentGameSessionActivations.asInstanceOf[js.Any])
+    if (!js.isUndefined(gameSessionActivationTimeoutSeconds)) __obj.updateDynamic("gameSessionActivationTimeoutSeconds")(gameSessionActivationTimeoutSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentGameSessionActivations)) __obj.updateDynamic("maxConcurrentGameSessionActivations")(maxConcurrentGameSessionActivations.get.asInstanceOf[js.Any])
     if (serverProcesses != null) __obj.updateDynamic("serverProcesses")(serverProcesses.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetRuntimeConfiguration]
   }

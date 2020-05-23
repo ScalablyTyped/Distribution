@@ -1,6 +1,6 @@
 package typings.poly2tri.mod
 
-import typings.poly2tri.AnonMax
+import typings.poly2tri.anon.Max
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -105,7 +105,7 @@ class SweepContext protected () extends js.Object {
     *
     * @returns object with 'min' and 'max' Point
     */
-  def getBoundingBox(): AnonMax = js.native
+  def getBoundingBox(): Max = js.native
   /**
     * Get result of triangulation.
     * The output triangles have vertices which are references

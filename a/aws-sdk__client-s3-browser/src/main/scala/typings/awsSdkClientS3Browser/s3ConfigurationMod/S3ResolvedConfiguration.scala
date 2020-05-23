@@ -1,6 +1,6 @@
 package typings.awsSdkClientS3Browser.s3ConfigurationMod
 
-import typings.awsSdkClientS3Browser.AnonInstantiable
+import typings.awsSdkClientS3Browser.anon.Instantiable
 import typings.awsSdkTypes.credentialsMod.Credentials
 import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.cryptoMod.StreamHasher
@@ -51,7 +51,7 @@ trait S3ResolvedConfiguration extends S3Configuration {
   @JSName("maxRetries")
   var maxRetries_S3ResolvedConfiguration: Double = js.native
   @JSName("md5")
-  var md5_S3ResolvedConfiguration: AnonInstantiable = js.native
+  var md5_S3ResolvedConfiguration: Instantiable = js.native
   var parser: ResponseParser[Blob] = js.native
   @JSName("region")
   var region_Original: Provider[String] = js.native
@@ -96,7 +96,7 @@ trait S3ResolvedConfiguration extends S3Configuration {
   @JSName("streamCollector")
   def streamCollector_MS3ResolvedConfiguration(stream: Blob): js.Promise[Uint8Array] = js.native
   @JSName("streamHasher")
-  def streamHasher_MS3ResolvedConfiguration(hashCtor: typings.awsSdkTypes.AnonInstantiable, stream: Blob): js.Promise[Uint8Array] = js.native
+  def streamHasher_MS3ResolvedConfiguration(hashCtor: typings.awsSdkTypes.anon.Instantiable, stream: Blob): js.Promise[Uint8Array] = js.native
   @JSName("urlParser")
   def urlParser_MS3ResolvedConfiguration(url: String): HttpEndpoint = js.native
   @JSName("utf8Decoder")

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ trait CryptoKeyPair extends js.Object {
   var publicKey: CryptoKey
 }
 
-@JSGlobal("CryptoKeyPair")
-@js.native
-object CryptoKeyPair extends Instantiable0[CryptoKeyPair]
+object CryptoKeyPair {
+  @scala.inline
+  def apply(privateKey: CryptoKey, publicKey: CryptoKey): CryptoKeyPair = {
+    val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CryptoKeyPair]
+  }
+}
 

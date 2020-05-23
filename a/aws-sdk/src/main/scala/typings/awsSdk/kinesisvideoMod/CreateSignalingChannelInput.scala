@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateSignalingChannelInput extends js.Object {
   /**
-    * A name for the signaling channel that you are creating. It must be unique for each account and region.
+    * A name for the signaling channel that you are creating. It must be unique for each AWS account and AWS Region.
     */
   var ChannelName: typings.awsSdk.kinesisvideoMod.ChannelName = js.native
   /**
@@ -19,7 +19,7 @@ trait CreateSignalingChannelInput extends js.Object {
     */
   var SingleMasterConfiguration: js.UndefOr[typings.awsSdk.kinesisvideoMod.SingleMasterConfiguration] = js.native
   /**
-    * A set of tags (key/value pairs) that you want to associate with this channel.
+    * A set of tags (key-value pairs) that you want to associate with this channel.
     */
   var Tags: js.UndefOr[TagOnCreateList] = js.native
 }

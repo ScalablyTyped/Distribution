@@ -21,10 +21,10 @@ trait RangeCoordinates extends js.Object {
 
 object RangeCoordinates {
   @scala.inline
-  def apply(column: Int | Double = null, row: Int | Double = null): RangeCoordinates = {
+  def apply(column: js.UndefOr[Double] = js.undefined, row: js.UndefOr[Double] = js.undefined): RangeCoordinates = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeCoordinates]
   }
 }

@@ -17,13 +17,13 @@ object ScopedCredentialOptions {
     excludeList: js.Array[ScopedCredentialDescriptor] = null,
     extensions: WebAuthnExtensions = null,
     rpId: java.lang.String = null,
-    timeoutSeconds: Int | Double = null
+    timeoutSeconds: js.UndefOr[Double] = js.undefined
   ): ScopedCredentialOptions = {
     val __obj = js.Dynamic.literal()
     if (excludeList != null) __obj.updateDynamic("excludeList")(excludeList.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (rpId != null) __obj.updateDynamic("rpId")(rpId.asInstanceOf[js.Any])
-    if (timeoutSeconds != null) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutSeconds)) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredentialOptions]
   }
 }

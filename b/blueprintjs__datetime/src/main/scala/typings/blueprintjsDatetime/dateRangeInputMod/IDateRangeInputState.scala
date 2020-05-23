@@ -38,7 +38,7 @@ object IDateRangeInputState {
     isStartInputFocused: js.UndefOr[Boolean] = js.undefined,
     lastFocusedField: Boundary = null,
     selectedEnd: Date = null,
-    selectedShortcutIndex: Int | Double = null,
+    selectedShortcutIndex: js.UndefOr[Double] = js.undefined,
     selectedStart: Date = null,
     shouldSelectAfterUpdate: js.UndefOr[Boolean] = js.undefined,
     startHoverString: String = null,
@@ -51,17 +51,17 @@ object IDateRangeInputState {
     if (endInputString != null) __obj.updateDynamic("endInputString")(endInputString.asInstanceOf[js.Any])
     if (formattedMaxDateString != null) __obj.updateDynamic("formattedMaxDateString")(formattedMaxDateString.asInstanceOf[js.Any])
     if (formattedMinDateString != null) __obj.updateDynamic("formattedMinDateString")(formattedMinDateString.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEndInputFocused)) __obj.updateDynamic("isEndInputFocused")(isEndInputFocused.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStartInputFocused)) __obj.updateDynamic("isStartInputFocused")(isStartInputFocused.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEndInputFocused)) __obj.updateDynamic("isEndInputFocused")(isEndInputFocused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStartInputFocused)) __obj.updateDynamic("isStartInputFocused")(isStartInputFocused.get.asInstanceOf[js.Any])
     if (lastFocusedField != null) __obj.updateDynamic("lastFocusedField")(lastFocusedField.asInstanceOf[js.Any])
     if (selectedEnd != null) __obj.updateDynamic("selectedEnd")(selectedEnd.asInstanceOf[js.Any])
-    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedShortcutIndex)) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.get.asInstanceOf[js.Any])
     if (selectedStart != null) __obj.updateDynamic("selectedStart")(selectedStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldSelectAfterUpdate)) __obj.updateDynamic("shouldSelectAfterUpdate")(shouldSelectAfterUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldSelectAfterUpdate)) __obj.updateDynamic("shouldSelectAfterUpdate")(shouldSelectAfterUpdate.get.asInstanceOf[js.Any])
     if (startHoverString != null) __obj.updateDynamic("startHoverString")(startHoverString.asInstanceOf[js.Any])
     if (startInputString != null) __obj.updateDynamic("startInputString")(startInputString.asInstanceOf[js.Any])
-    if (!js.isUndefined(wasLastFocusChangeDueToHover)) __obj.updateDynamic("wasLastFocusChangeDueToHover")(wasLastFocusChangeDueToHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(wasLastFocusChangeDueToHover)) __obj.updateDynamic("wasLastFocusChangeDueToHover")(wasLastFocusChangeDueToHover.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDateRangeInputState]
   }
 }

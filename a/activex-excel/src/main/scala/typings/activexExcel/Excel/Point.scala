@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Point")
 @js.native
-class Point protected () extends js.Object {
+trait Point extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   var ApplyPictToEnd: Boolean = js.native
   var ApplyPictToFront: Boolean = js.native

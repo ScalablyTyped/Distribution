@@ -1,15 +1,12 @@
 package typings.vexflow.Vex.Flow
 
-import typings.std.CanvasRenderingContext2D
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.CanvasContext")
 @js.native
-class CanvasContext protected () extends IRenderContext {
-  def this(context: CanvasRenderingContext2D) = this()
+trait CanvasContext extends IRenderContext {
    //inconsistent name: x -> x2, y -> y2
   @JSName("arc")
   def arc_Unit(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, antiClockwise: Boolean): Unit = js.native
@@ -46,13 +43,5 @@ class CanvasContext protected () extends IRenderContext {
   def setLineDash_Unit(dash: String): Unit = js.native
   @JSName("stroke")
   def stroke_Unit(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Vex.Flow.CanvasContext")
-@js.native
-object CanvasContext extends js.Object {
-  var HEIGHT: Double = js.native
-  var WIDTH: Double = js.native
 }
 

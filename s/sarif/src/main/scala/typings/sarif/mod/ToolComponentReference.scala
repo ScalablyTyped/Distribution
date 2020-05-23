@@ -27,13 +27,13 @@ object ToolComponentReference {
   @scala.inline
   def apply(
     guid: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     name: String = null,
     properties: PropertyBag = null
   ): ToolComponentReference = {
     val __obj = js.Dynamic.literal()
     if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolComponentReference]

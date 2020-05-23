@@ -1,6 +1,6 @@
 package typings.reactInlinesvg.mod
 
-import typings.reactInlinesvg.AnonCacheRequests
+import typings.reactInlinesvg.anon.CacheRequests
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends InlineSVG {
 @JSImport("react-inlinesvg", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonCacheRequests = js.native
+  var defaultProps: CacheRequests = js.native
 }
 

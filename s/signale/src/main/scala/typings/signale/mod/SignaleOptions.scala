@@ -1,6 +1,6 @@
 package typings.signale.mod
 
-import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.node.processMod.global.NodeJS.WriteStream
 import typings.std.Date
 import typings.std.Map
 import typings.std.Partial
@@ -34,7 +34,7 @@ trait SignaleOptions[TTypes /* <: String */] extends js.Object {
 
 object SignaleOptions {
   @scala.inline
-  def apply[TTypes /* <: String */](
+  def apply[TTypes](
     config: SignaleConfig = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     interactive: js.UndefOr[Boolean] = js.undefined,
@@ -47,8 +47,8 @@ object SignaleOptions {
   ): SignaleOptions[TTypes] = {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (secrets != null) __obj.updateDynamic("secrets")(secrets.asInstanceOf[js.Any])

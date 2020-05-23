@@ -13,9 +13,9 @@ trait Sizeable extends js.Object {
 
 object Sizeable {
   @scala.inline
-  def apply(iconSize: Int | Double = null): Sizeable = {
+  def apply(iconSize: js.UndefOr[Double] = js.undefined): Sizeable = {
     val __obj = js.Dynamic.literal()
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sizeable]
   }
 }

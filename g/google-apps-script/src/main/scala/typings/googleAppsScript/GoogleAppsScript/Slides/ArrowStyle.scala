@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,41 +49,6 @@ object ArrowStyle extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends ArrowStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ArrowStyle with Double] = js.native
-  /* 3 */ @js.native
-  object FILL_ARROW extends TopLevel[FILL_ARROW with Double]
-  
-  /* 4 */ @js.native
-  object FILL_CIRCLE extends TopLevel[FILL_CIRCLE with Double]
-  
-  /* 6 */ @js.native
-  object FILL_DIAMOND extends TopLevel[FILL_DIAMOND with Double]
-  
-  /* 5 */ @js.native
-  object FILL_SQUARE extends TopLevel[FILL_SQUARE with Double]
-  
-  /* 1 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 7 */ @js.native
-  object OPEN_ARROW extends TopLevel[OPEN_ARROW with Double]
-  
-  /* 8 */ @js.native
-  object OPEN_CIRCLE extends TopLevel[OPEN_CIRCLE with Double]
-  
-  /* 10 */ @js.native
-  object OPEN_DIAMOND extends TopLevel[OPEN_DIAMOND with Double]
-  
-  /* 9 */ @js.native
-  object OPEN_SQUARE extends TopLevel[OPEN_SQUARE with Double]
-  
-  /* 2 */ @js.native
-  object STEALTH_ARROW extends TopLevel[STEALTH_ARROW with Double]
-  
-  /* 0 */ @js.native
-  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
   
 }
 

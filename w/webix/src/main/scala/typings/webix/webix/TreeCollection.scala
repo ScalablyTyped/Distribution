@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import typings.webix.webix.ui.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -124,8 +123,4 @@ trait TreeCollection extends js.Object {
   def validate(id: String): Boolean = js.native
   def waitSave(handler: WebixCallback): js.Promise[_] = js.native
 }
-
-@JSGlobal("webix.TreeCollection")
-@js.native
-object TreeCollection extends TopLevel[TreeCollectionFactory]
 

@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.ClefNote")
 @js.native
-class ClefNote protected () extends Note {
-  def this(clef: String) = this()
-  def this(clef: String, size: String) = this()
-  def this(clef: String, size: String, annotation: String) = this()
+trait ClefNote extends Note {
   def addToModifierContext(): ClefNote = js.native
   def draw(): Unit = js.native
   def getClef(): String = js.native

@@ -22,7 +22,7 @@ object SignatureUrlOptions {
   def apply(
     `Content-Type`: String = null,
     callback: ObjectCallback = null,
-    expires: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
     method: HTTPMethods = null,
     process: String = null,
     response: ResponseHeaderType = null
@@ -30,7 +30,7 @@ object SignatureUrlOptions {
     val __obj = js.Dynamic.literal()
     if (`Content-Type` != null) __obj.updateDynamic("Content-Type")(`Content-Type`.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])

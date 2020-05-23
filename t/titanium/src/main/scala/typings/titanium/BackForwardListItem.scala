@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   */
 trait BackForwardListItem extends js.Object {
   /**
-  	 * The URL of the initial request that created this item.
-  	 */
+    * The URL of the initial request that created this item.
+    */
   var initialUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * The title of the webpage represented by this item.
-  	 */
+    * The title of the webpage represented by this item.
+    */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * The URL of the webpage represented by this item.
-  	 */
+    * The URL of the webpage represented by this item.
+    */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 

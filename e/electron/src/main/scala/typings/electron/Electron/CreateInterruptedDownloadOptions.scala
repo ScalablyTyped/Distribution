@@ -46,13 +46,13 @@ object CreateInterruptedDownloadOptions {
     eTag: String = null,
     lastModified: String = null,
     mimeType: String = null,
-    startTime: Int | Double = null
+    startTime: js.UndefOr[Double] = js.undefined
   ): CreateInterruptedDownloadOptions = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], urlChain = urlChain.asInstanceOf[js.Any])
     if (eTag != null) __obj.updateDynamic("eTag")(eTag.asInstanceOf[js.Any])
     if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInterruptedDownloadOptions]
   }
 }

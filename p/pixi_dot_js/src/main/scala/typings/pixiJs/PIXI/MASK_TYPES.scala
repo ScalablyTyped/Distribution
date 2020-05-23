@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,20 +34,6 @@ object MASK_TYPES extends js.Object {
   
   @js.native
   sealed trait STENCIL extends MASK_TYPES
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MASK_TYPES with Double] = js.native
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 1 */ @js.native
-  object SCISSOR extends TopLevel[SCISSOR with Double]
-  
-  /* 3 */ @js.native
-  object SPRITE extends TopLevel[SPRITE with Double]
-  
-  /* 2 */ @js.native
-  object STENCIL extends TopLevel[STENCIL with Double]
   
 }
 

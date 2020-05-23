@@ -7,34 +7,31 @@ import scala.scalajs.js.annotation._
 
 trait IgNotifierHeaderTemplate
   extends /**
-	 * Option for IgNotifierHeaderTemplate
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Controls whether the popover renders a functional close button
-  	 *
-  	 */
+    * Controls whether the popover renders a functional close button
+    *
+    */
   var closeButton: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * Sets the content for the popover header.
-  	 *
-  	 */
+    * Sets the content for the popover header.
+    *
+    */
   var title: js.UndefOr[String] = js.undefined
 }
 
 object IgNotifierHeaderTemplate {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgNotifierHeaderTemplate
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     closeButton: js.UndefOr[Boolean] = js.undefined,
     title: String = null
   ): IgNotifierHeaderTemplate = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgNotifierHeaderTemplate]
   }

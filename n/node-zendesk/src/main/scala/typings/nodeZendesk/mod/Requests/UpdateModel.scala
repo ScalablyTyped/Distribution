@@ -24,7 +24,7 @@ object UpdateModel {
     val __obj = js.Dynamic.literal()
     if (additional_collaborators != null) __obj.updateDynamic("additional_collaborators")(additional_collaborators.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(solved)) __obj.updateDynamic("solved")(solved.asInstanceOf[js.Any])
+    if (!js.isUndefined(solved)) __obj.updateDynamic("solved")(solved.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateModel]
   }
 }

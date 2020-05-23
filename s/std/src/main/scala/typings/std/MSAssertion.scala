@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,12 @@ trait MSAssertion extends js.Object {
   val `type`: MSCredentialType
 }
 
-@JSGlobal("MSAssertion")
-@js.native
-object MSAssertion extends Instantiable0[MSAssertion]
+object MSAssertion {
+  @scala.inline
+  def apply(id: java.lang.String, `type`: MSCredentialType): MSAssertion = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MSAssertion]
+  }
+}
 

@@ -1,6 +1,6 @@
 package typings.simplecrawler.queueMod
 
-import typings.simplecrawler.AnonActualDataSize
+import typings.simplecrawler.anon.ActualDataSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait QueueItem extends js.Object {
   var port: Double
   var protocol: String
   var referrer: String
-  var stateData: AnonActualDataSize
+  var stateData: ActualDataSize
   var status: QueueItemStatus
   var uriPath: String
   var url: String
@@ -31,7 +31,7 @@ object QueueItem {
     port: Double,
     protocol: String,
     referrer: String,
-    stateData: AnonActualDataSize,
+    stateData: ActualDataSize,
     status: QueueItemStatus,
     uriPath: String,
     url: String

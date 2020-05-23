@@ -118,8 +118,8 @@ object Stack {
     Region: String = null,
     ServiceRoleArn: String = null,
     StackId: String = null,
-    UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined,
-    UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined,
+    UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined,
+    UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined,
     VpcId: String = null
   ): Stack = {
     val __obj = js.Dynamic.literal()
@@ -142,8 +142,8 @@ object Stack {
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn.asInstanceOf[js.Any])
     if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseCustomCookbooks)) __obj.updateDynamic("UseCustomCookbooks")(UseCustomCookbooks.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseOpsworksSecurityGroups)) __obj.updateDynamic("UseOpsworksSecurityGroups")(UseOpsworksSecurityGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseCustomCookbooks)) __obj.updateDynamic("UseCustomCookbooks")(UseCustomCookbooks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseOpsworksSecurityGroups)) __obj.updateDynamic("UseOpsworksSecurityGroups")(UseOpsworksSecurityGroups.get.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stack]
   }

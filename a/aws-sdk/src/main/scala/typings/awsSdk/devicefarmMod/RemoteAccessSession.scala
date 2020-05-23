@@ -108,11 +108,11 @@ object RemoteAccessSession {
     interactionMode: InteractionMode = null,
     message: Message = null,
     name: Name = null,
-    remoteDebugEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined,
     remoteRecordAppArn: AmazonResourceName = null,
-    remoteRecordEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteRecordEnabled: js.UndefOr[Boolean] = js.undefined,
     result: ExecutionResult = null,
-    skipAppResign: js.UndefOr[scala.Boolean] = js.undefined,
+    skipAppResign: js.UndefOr[SkipAppResign] = js.undefined,
     started: DateTime = null,
     status: ExecutionStatus = null,
     stopped: DateTime = null
@@ -131,11 +131,11 @@ object RemoteAccessSession {
     if (interactionMode != null) __obj.updateDynamic("interactionMode")(interactionMode.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.get.asInstanceOf[js.Any])
     if (remoteRecordAppArn != null) __obj.updateDynamic("remoteRecordAppArn")(remoteRecordAppArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteRecordEnabled)) __obj.updateDynamic("remoteRecordEnabled")(remoteRecordEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteRecordEnabled)) __obj.updateDynamic("remoteRecordEnabled")(remoteRecordEnabled.get.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.get.asInstanceOf[js.Any])
     if (started != null) __obj.updateDynamic("started")(started.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (stopped != null) __obj.updateDynamic("stopped")(stopped.asInstanceOf[js.Any])

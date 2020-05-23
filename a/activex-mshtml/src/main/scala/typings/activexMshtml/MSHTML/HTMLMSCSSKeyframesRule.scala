@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLMSCSSKeyframesRule")
 @js.native
-class HTMLMSCSSKeyframesRule protected () extends js.Object {
+trait HTMLMSCSSKeyframesRule extends js.Object {
   @JSName("MSHTML.HTMLMSCSSKeyframesRule_typekey")
   var MSHTMLDotHTMLMSCSSKeyframesRule_typekey: HTMLMSCSSKeyframesRule = js.native
   @JSName("cssRules")

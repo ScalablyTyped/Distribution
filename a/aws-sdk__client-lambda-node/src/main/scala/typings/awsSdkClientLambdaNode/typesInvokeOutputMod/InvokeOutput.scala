@@ -43,14 +43,14 @@ object InvokeOutput {
     FunctionError: String = null,
     LogResult: String = null,
     Payload: Uint8Array = null,
-    StatusCode: Int | Double = null
+    StatusCode: js.UndefOr[Double] = js.undefined
   ): InvokeOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (ExecutedVersion != null) __obj.updateDynamic("ExecutedVersion")(ExecutedVersion.asInstanceOf[js.Any])
     if (FunctionError != null) __obj.updateDynamic("FunctionError")(FunctionError.asInstanceOf[js.Any])
     if (LogResult != null) __obj.updateDynamic("LogResult")(LogResult.asInstanceOf[js.Any])
     if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
-    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeOutput]
   }
 }

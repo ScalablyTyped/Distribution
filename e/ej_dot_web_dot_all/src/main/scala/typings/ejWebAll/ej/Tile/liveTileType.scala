@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Tile
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object liveTileType extends js.Object {
   ///To set slide type of liveTile for tile control
   @js.native
   sealed trait Slide extends liveTileType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[liveTileType with Double] = js.native
-  /* 2 */ @js.native
-  object Carousel extends TopLevel[Carousel with Double]
-  
-  /* 0 */ @js.native
-  object Flip extends TopLevel[Flip with Double]
-  
-  /* 1 */ @js.native
-  object Slide extends TopLevel[Slide with Double]
   
 }
 

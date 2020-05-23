@@ -73,28 +73,28 @@ object SubscribeOptions {
     sql: String,
     binds: BindParameters = null,
     clientInitiated: js.UndefOr[Boolean] = js.undefined,
-    groupingClass: Int | Double = null,
-    groupingType: Int | Double = null,
-    groupingValue: Int | Double = null,
+    groupingClass: js.UndefOr[Double] = js.undefined,
+    groupingType: js.UndefOr[Double] = js.undefined,
+    groupingValue: js.UndefOr[Double] = js.undefined,
     ipAddress: String = null,
-    namespace: Int | Double = null,
-    operations: Int | Double = null,
-    port: Int | Double = null,
-    qos: Int | Double = null,
-    timeout: Int | Double = null
+    namespace: js.UndefOr[Double] = js.undefined,
+    operations: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined,
+    qos: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): SubscribeOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), sql = sql.asInstanceOf[js.Any])
     if (binds != null) __obj.updateDynamic("binds")(binds.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientInitiated)) __obj.updateDynamic("clientInitiated")(clientInitiated.asInstanceOf[js.Any])
-    if (groupingClass != null) __obj.updateDynamic("groupingClass")(groupingClass.asInstanceOf[js.Any])
-    if (groupingType != null) __obj.updateDynamic("groupingType")(groupingType.asInstanceOf[js.Any])
-    if (groupingValue != null) __obj.updateDynamic("groupingValue")(groupingValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientInitiated)) __obj.updateDynamic("clientInitiated")(clientInitiated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingClass)) __obj.updateDynamic("groupingClass")(groupingClass.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingType)) __obj.updateDynamic("groupingType")(groupingType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingValue)) __obj.updateDynamic("groupingValue")(groupingValue.get.asInstanceOf[js.Any])
     if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespace)) __obj.updateDynamic("namespace")(namespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(operations)) __obj.updateDynamic("operations")(operations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qos)) __obj.updateDynamic("qos")(qos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOptions]
   }
 }

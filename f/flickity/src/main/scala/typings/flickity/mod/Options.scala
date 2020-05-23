@@ -1,6 +1,6 @@
 package typings.flickity.mod
 
-import typings.flickity.AnonX0
+import typings.flickity.anon.X0
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait Options extends js.Object {
     * Draws the shape of the arrows in the previous & next buttons.
     * javascript dictionary of points or path to SVG file
     */
-  var arrowShape: js.UndefOr[String | AnonX0] = js.undefined
+  var arrowShape: js.UndefOr[String | X0] = js.undefined
   /**
     * Use one Flickity gallery as navigation for another.
     *
@@ -190,22 +190,22 @@ object Options {
   def apply(
     accessibility: js.UndefOr[Boolean] = js.undefined,
     adaptiveHeight: js.UndefOr[Boolean] = js.undefined,
-    arrowShape: String | AnonX0 = null,
+    arrowShape: String | X0 = null,
     asNavFor: String | HTMLElement = null,
     autoPlay: Boolean | Double = null,
     bgLazyLoad: Boolean | Double = null,
     cellAlign: String = null,
     cellSelector: String = null,
     contain: js.UndefOr[Boolean] = js.undefined,
-    dragThreshold: Int | Double = null,
+    dragThreshold: js.UndefOr[Double] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     freeScroll: js.UndefOr[Boolean] = js.undefined,
-    freeScrollFriction: Int | Double = null,
-    friction: Int | Double = null,
+    freeScrollFriction: js.UndefOr[Double] = js.undefined,
+    friction: js.UndefOr[Double] = js.undefined,
     groupCells: Boolean | Double | String = null,
     hash: js.UndefOr[Boolean] = js.undefined,
     imagesLoaded: js.UndefOr[Boolean] = js.undefined,
-    initialIndex: Int | Double = null,
+    initialIndex: js.UndefOr[Double] = js.undefined,
     lazyLoad: Boolean | Double = null,
     on: EventBindings = null,
     pageDots: js.UndefOr[Boolean] = js.undefined,
@@ -213,41 +213,41 @@ object Options {
     prevNextButtons: js.UndefOr[Boolean] = js.undefined,
     resize: js.UndefOr[Boolean] = js.undefined,
     rightToLeft: js.UndefOr[Boolean] = js.undefined,
-    selectedAttraction: Int | Double = null,
+    selectedAttraction: js.UndefOr[Double] = js.undefined,
     setGallerySize: js.UndefOr[Boolean] = js.undefined,
     watchCSS: Boolean | String = null,
     wrapAround: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accessibility)) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(adaptiveHeight)) __obj.updateDynamic("adaptiveHeight")(adaptiveHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibility)) __obj.updateDynamic("accessibility")(accessibility.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(adaptiveHeight)) __obj.updateDynamic("adaptiveHeight")(adaptiveHeight.get.asInstanceOf[js.Any])
     if (arrowShape != null) __obj.updateDynamic("arrowShape")(arrowShape.asInstanceOf[js.Any])
     if (asNavFor != null) __obj.updateDynamic("asNavFor")(asNavFor.asInstanceOf[js.Any])
     if (autoPlay != null) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
     if (bgLazyLoad != null) __obj.updateDynamic("bgLazyLoad")(bgLazyLoad.asInstanceOf[js.Any])
     if (cellAlign != null) __obj.updateDynamic("cellAlign")(cellAlign.asInstanceOf[js.Any])
     if (cellSelector != null) __obj.updateDynamic("cellSelector")(cellSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(contain)) __obj.updateDynamic("contain")(contain.asInstanceOf[js.Any])
-    if (dragThreshold != null) __obj.updateDynamic("dragThreshold")(dragThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(freeScroll)) __obj.updateDynamic("freeScroll")(freeScroll.asInstanceOf[js.Any])
-    if (freeScrollFriction != null) __obj.updateDynamic("freeScrollFriction")(freeScrollFriction.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
+    if (!js.isUndefined(contain)) __obj.updateDynamic("contain")(contain.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragThreshold)) __obj.updateDynamic("dragThreshold")(dragThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeScroll)) __obj.updateDynamic("freeScroll")(freeScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeScrollFriction)) __obj.updateDynamic("freeScrollFriction")(freeScrollFriction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
     if (groupCells != null) __obj.updateDynamic("groupCells")(groupCells.asInstanceOf[js.Any])
-    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (!js.isUndefined(imagesLoaded)) __obj.updateDynamic("imagesLoaded")(imagesLoaded.asInstanceOf[js.Any])
-    if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imagesLoaded)) __obj.updateDynamic("imagesLoaded")(imagesLoaded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialIndex)) __obj.updateDynamic("initialIndex")(initialIndex.get.asInstanceOf[js.Any])
     if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageDots)) __obj.updateDynamic("pageDots")(pageDots.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(prevNextButtons)) __obj.updateDynamic("prevNextButtons")(prevNextButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft.asInstanceOf[js.Any])
-    if (selectedAttraction != null) __obj.updateDynamic("selectedAttraction")(selectedAttraction.asInstanceOf[js.Any])
-    if (!js.isUndefined(setGallerySize)) __obj.updateDynamic("setGallerySize")(setGallerySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageDots)) __obj.updateDynamic("pageDots")(pageDots.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prevNextButtons)) __obj.updateDynamic("prevNextButtons")(prevNextButtons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedAttraction)) __obj.updateDynamic("selectedAttraction")(selectedAttraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setGallerySize)) __obj.updateDynamic("setGallerySize")(setGallerySize.get.asInstanceOf[js.Any])
     if (watchCSS != null) __obj.updateDynamic("watchCSS")(watchCSS.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

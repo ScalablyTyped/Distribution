@@ -1,7 +1,7 @@
 package typings.algoliaClientRecommendation.mod
 
-import typings.algoliaClientRecommendation.AnonEventName
-import typings.algoliaClientRecommendation.AnonFacetName
+import typings.algoliaClientRecommendation.anon.EventType
+import typings.algoliaClientRecommendation.anon.Score
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +10,11 @@ trait PersonalizationStrategy extends js.Object {
   /**
     * Events scoring
     */
-  val eventsScoring: js.Array[AnonEventName]
+  val eventsScoring: js.Array[EventType]
   /**
     * Facets scoring
     */
-  val facetsScoring: js.Array[AnonFacetName]
+  val facetsScoring: js.Array[Score]
   /**
     * Personalization impact
     */
@@ -23,11 +23,7 @@ trait PersonalizationStrategy extends js.Object {
 
 object PersonalizationStrategy {
   @scala.inline
-  def apply(
-    eventsScoring: js.Array[AnonEventName],
-    facetsScoring: js.Array[AnonFacetName],
-    personalizationImpact: Double
-  ): PersonalizationStrategy = {
+  def apply(eventsScoring: js.Array[EventType], facetsScoring: js.Array[Score], personalizationImpact: Double): PersonalizationStrategy = {
     val __obj = js.Dynamic.literal(eventsScoring = eventsScoring.asInstanceOf[js.Any], facetsScoring = facetsScoring.asInstanceOf[js.Any], personalizationImpact = personalizationImpact.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonalizationStrategy]
   }

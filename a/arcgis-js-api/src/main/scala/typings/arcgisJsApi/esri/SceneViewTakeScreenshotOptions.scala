@@ -57,18 +57,18 @@ object SceneViewTakeScreenshotOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     area: SceneViewTakeScreenshotOptionsArea = null,
     format: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     ignorePadding: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null,
-    width: Int | Double = null
+    quality: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): SceneViewTakeScreenshotOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePadding)) __obj.updateDynamic("ignorePadding")(ignorePadding.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePadding)) __obj.updateDynamic("ignorePadding")(ignorePadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewTakeScreenshotOptions]
   }
 }

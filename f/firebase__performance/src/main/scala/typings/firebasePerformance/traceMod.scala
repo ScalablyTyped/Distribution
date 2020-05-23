@@ -1,6 +1,7 @@
 package typings.firebasePerformance
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firebasePerformance.anon.Attributes
 import typings.firebasePerformanceTypes.mod.PerformanceTrace
 import typings.std.PerformanceEntry
 import typings.std.PerformanceNavigationTiming
@@ -42,7 +43,7 @@ object traceMod extends js.Object {
     var traceMeasure: js.Any = js.native
     var traceStartMark: js.Any = js.native
     var traceStopMark: js.Any = js.native
-    def record(startTime: Double, duration: Double, options: AnonAttributes): Unit = js.native
+    def record(startTime: Double, duration: Double, options: Attributes): Unit = js.native
   }
   
   /* static members */

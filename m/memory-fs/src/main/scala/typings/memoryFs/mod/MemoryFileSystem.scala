@@ -1,7 +1,7 @@
 package typings.memoryFs.mod
 
-import typings.memoryFs.AnonEnd
-import typings.memoryFs.AnonIsBlockDevice
+import typings.memoryFs.anon.End
+import typings.memoryFs.anon.IsBlockDevice
 import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait MemoryFileSystem extends js.Object {
   var data: js.Any = js.native
   def _remove(_path: String, name: String, testFn: js.Function1[/* part */ String, Boolean]): Unit = js.native
   def createReadStream(path: String): js.Any = js.native
-  def createReadStream(path: String, options: AnonEnd): js.Any = js.native
+  def createReadStream(path: String, options: End): js.Any = js.native
   def createWriteStream(path: String): js.Any = js.native
   def createWriteStream(path: String, options: js.Any): js.Any = js.native
   def exists(path: String, callback: js.Function1[/* isExist */ Boolean, Unit]): Unit = js.native
@@ -64,7 +64,7 @@ trait MemoryFileSystem extends js.Object {
     path: String,
     callback: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], Unit]
   ): Unit = js.native
-  def statSync(_path: String): AnonIsBlockDevice = js.native
+  def statSync(_path: String): IsBlockDevice = js.native
   def unlink(
     path: String,
     callback: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], Unit]

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait MovingDialogMoveDownButtonPressedEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the ColumnMoving widget.
-  	 */
+    * Gets a reference to the ColumnMoving widget.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

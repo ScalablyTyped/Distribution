@@ -52,9 +52,9 @@ object Account {
     val __obj = js.Dynamic.literal()
     if (accountPermissionIds != null) __obj.updateDynamic("accountPermissionIds")(accountPermissionIds.asInstanceOf[js.Any])
     if (accountProfile != null) __obj.updateDynamic("accountProfile")(accountProfile.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (activeAdsLimitTier != null) __obj.updateDynamic("activeAdsLimitTier")(activeAdsLimitTier.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeViewOptOut)) __obj.updateDynamic("activeViewOptOut")(activeViewOptOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeViewOptOut)) __obj.updateDynamic("activeViewOptOut")(activeViewOptOut.get.asInstanceOf[js.Any])
     if (availablePermissionIds != null) __obj.updateDynamic("availablePermissionIds")(availablePermissionIds.asInstanceOf[js.Any])
     if (countryId != null) __obj.updateDynamic("countryId")(countryId.asInstanceOf[js.Any])
     if (currencyId != null) __obj.updateDynamic("currencyId")(currencyId.asInstanceOf[js.Any])
@@ -65,9 +65,9 @@ object Account {
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maximumImageSize != null) __obj.updateDynamic("maximumImageSize")(maximumImageSize.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(nielsenOcrEnabled)) __obj.updateDynamic("nielsenOcrEnabled")(nielsenOcrEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(nielsenOcrEnabled)) __obj.updateDynamic("nielsenOcrEnabled")(nielsenOcrEnabled.get.asInstanceOf[js.Any])
     if (reportsConfiguration != null) __obj.updateDynamic("reportsConfiguration")(reportsConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(shareReportsWithTwitter)) __obj.updateDynamic("shareReportsWithTwitter")(shareReportsWithTwitter.asInstanceOf[js.Any])
+    if (!js.isUndefined(shareReportsWithTwitter)) __obj.updateDynamic("shareReportsWithTwitter")(shareReportsWithTwitter.get.asInstanceOf[js.Any])
     if (teaserSizeLimit != null) __obj.updateDynamic("teaserSizeLimit")(teaserSizeLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }

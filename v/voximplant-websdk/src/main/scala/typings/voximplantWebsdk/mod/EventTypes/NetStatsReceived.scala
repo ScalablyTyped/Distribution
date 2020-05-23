@@ -7,12 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when packet loss data received from VoxImplant servers
-		*/
+  *    Event dispatched when packet loss data received from VoxImplant servers
+  */
 trait NetStatsReceived extends VoxImplantEvent {
   /**
-  			*	Network info object
-  			*/
+    *    Network info object
+    */
   var stats: NetworkInfo
 }
 

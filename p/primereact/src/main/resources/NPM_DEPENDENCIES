@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "primereact" : "4.2.0"
+      "primereact" : "4.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "primereact" : "4.2.0"
+      "primereact" : "4.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.AnonX
+import typings.nightwatch.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait WebDriverProtocolElementLocation extends js.Object {
   def elementIdLocation(id: String): this.type = js.native
   def elementIdLocation(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonX], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[X], Unit]
   ): this.type = js.native
   /**
     * Determine an element's location on the screen once it has been scrolled into view.
@@ -23,7 +23,7 @@ trait WebDriverProtocolElementLocation extends js.Object {
   def elementIdLocationInView(id: String): this.type = js.native
   def elementIdLocationInView(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonX], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[X], Unit]
   ): this.type = js.native
 }
 

@@ -33,7 +33,7 @@ object MapRestriction {
   @scala.inline
   def apply(latLngBounds: LatLngBounds | LatLngBoundsLiteral, strictBounds: js.UndefOr[Boolean] = js.undefined): MapRestriction = {
     val __obj = js.Dynamic.literal(latLngBounds = latLngBounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictBounds)) __obj.updateDynamic("strictBounds")(strictBounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictBounds)) __obj.updateDynamic("strictBounds")(strictBounds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapRestriction]
   }
 }

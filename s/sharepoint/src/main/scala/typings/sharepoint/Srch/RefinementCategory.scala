@@ -30,8 +30,7 @@ object RefinementCategory {
     t: js.Array[String],
     m: StringDictionary[String] = null
   ): RefinementCategory = {
-    val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefinementCategory]
   }
 }

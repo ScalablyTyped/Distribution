@@ -32,7 +32,7 @@ object HereOptions {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (politicalView != null) __obj.updateDynamic("politicalView")(politicalView.asInstanceOf[js.Any])
-    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.asInstanceOf[js.Any])
+    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[HereOptions]
   }

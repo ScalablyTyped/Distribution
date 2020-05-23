@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
-import typings.videoJs.TypeofTech
+import typings.videoJs.anon.TypeofTech
 import typings.videoJs.mod.videojs.Component.ReadyCallback
 import typings.videoJs.videoJsStrings._empty
 import typings.videoJs.videoJsStrings.maybe

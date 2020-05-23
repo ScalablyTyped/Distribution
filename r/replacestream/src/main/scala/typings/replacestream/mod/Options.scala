@@ -47,15 +47,15 @@ object Options {
   def apply(
     encoding: String = null,
     ignoreCase: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
-    maxMatchLen: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    maxMatchLen: js.UndefOr[Double] = js.undefined,
     regExpOptions: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (maxMatchLen != null) __obj.updateDynamic("maxMatchLen")(maxMatchLen.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMatchLen)) __obj.updateDynamic("maxMatchLen")(maxMatchLen.get.asInstanceOf[js.Any])
     if (regExpOptions != null) __obj.updateDynamic("regExpOptions")(regExpOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

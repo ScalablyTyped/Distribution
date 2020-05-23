@@ -23,13 +23,13 @@ object ImageMediaInfoProperties {
   @scala.inline
   def apply(
     caption: String = null,
-    refreshInterval: Int | Double = null,
+    refreshInterval: js.UndefOr[Double] = js.undefined,
     title: String = null,
     value: ImageMediaInfoValueProperties = null
   ): ImageMediaInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshInterval)) __obj.updateDynamic("refreshInterval")(refreshInterval.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageMediaInfoProperties]

@@ -1,6 +1,6 @@
 package typings.hapi.mod
 
-import typings.hapi.AnonIntegrity
+import typings.hapi.anon.Integrity
 import typings.hapi.hapiBooleans.`false`
 import typings.hapi.hapiStrings.Lax
 import typings.hapi.hapiStrings.Strict
@@ -61,7 +61,7 @@ trait ServerStateCookieOptions extends js.Object {
     *  * integrity - algorithm options. Defaults to require('iron').defaults.integrity.
     *  * password - password used for HMAC key generation (must be at least 32 characters long).
     */
-  var sign: js.UndefOr[AnonIntegrity] = js.undefined
+  var sign: js.UndefOr[Integrity] = js.undefined
   /** if false, allows any cookie value including values in violation of RFC 6265. Defaults to true. */
   var strictHeader: js.UndefOr[Boolean] = js.undefined
   /** time-to-live in milliseconds. Defaults to null (session time-life - cookies are deleted when the browser is closed). */
@@ -73,7 +73,7 @@ object ServerStateCookieOptions {
   def apply(
     autoValue: /* request */ Request => Unit = null,
     clearInvalid: js.UndefOr[Boolean] = js.undefined,
-    domain: String = null,
+    domain: js.UndefOr[Null | String] = js.undefined,
     encoding: none | base64 | base64json | form | iron = null,
     ignoreErrors: js.UndefOr[Boolean] = js.undefined,
     iron: SealOptions = null,
@@ -82,27 +82,27 @@ object ServerStateCookieOptions {
     isSecure: js.UndefOr[Boolean] = js.undefined,
     passThrough: js.Any = null,
     password: String = null,
-    path: String = null,
-    sign: AnonIntegrity = null,
+    path: js.UndefOr[Null | String] = js.undefined,
+    sign: Integrity = null,
     strictHeader: js.UndefOr[Boolean] = js.undefined,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Null | Double] = js.undefined
   ): ServerStateCookieOptions = {
     val __obj = js.Dynamic.literal()
     if (autoValue != null) __obj.updateDynamic("autoValue")(js.Any.fromFunction1(autoValue))
-    if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(domain)) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.get.asInstanceOf[js.Any])
     if (iron != null) __obj.updateDynamic("iron")(iron.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHttpOnly)) __obj.updateDynamic("isHttpOnly")(isHttpOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHttpOnly)) __obj.updateDynamic("isHttpOnly")(isHttpOnly.get.asInstanceOf[js.Any])
     if (isSameSite != null) __obj.updateDynamic("isSameSite")(isSameSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSecure)) __obj.updateDynamic("isSecure")(isSecure.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSecure)) __obj.updateDynamic("isSecure")(isSecure.get.asInstanceOf[js.Any])
     if (passThrough != null) __obj.updateDynamic("passThrough")(passThrough.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (sign != null) __obj.updateDynamic("sign")(sign.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictHeader)) __obj.updateDynamic("strictHeader")(strictHeader.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictHeader)) __obj.updateDynamic("strictHeader")(strictHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerStateCookieOptions]
   }
 }

@@ -31,10 +31,10 @@ object Config {
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (canonical != null) __obj.updateDynamic("canonical")(canonical.asInstanceOf[js.Any])
-    if (!js.isUndefined(dangerouslySetAllPagesToNoIndex)) __obj.updateDynamic("dangerouslySetAllPagesToNoIndex")(dangerouslySetAllPagesToNoIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(dangerouslySetAllPagesToNoIndex)) __obj.updateDynamic("dangerouslySetAllPagesToNoIndex")(dangerouslySetAllPagesToNoIndex.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (facebook != null) __obj.updateDynamic("facebook")(facebook.asInstanceOf[js.Any])
-    if (!js.isUndefined(noindex)) __obj.updateDynamic("noindex")(noindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(noindex)) __obj.updateDynamic("noindex")(noindex.get.asInstanceOf[js.Any])
     if (openGraph != null) __obj.updateDynamic("openGraph")(openGraph.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titleTemplate != null) __obj.updateDynamic("titleTemplate")(titleTemplate.asInstanceOf[js.Any])

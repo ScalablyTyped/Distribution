@@ -63,7 +63,9 @@ class MatrixDropdownColumn protected ()
   def setIndex(`val`: Double): Unit = js.native
   def setIsVisible(newVal: Boolean): Unit = js.native
   /* protected */ def setQuestionProperties(question: Question): Unit = js.native
+  /* protected */ def setQuestionProperties(question: Question, onUpdateJson: js.Function1[/* json */ js.Any, _]): Unit = js.native
   def updateCellQuestion(cellQuestion: Question, data: js.Any): Unit = js.native
+  def updateCellQuestion(cellQuestion: Question, data: js.Any, onUpdateJson: js.Function1[/* json */ js.Any, _]): Unit = js.native
   /* protected */ def updateTemplateQuestion(): Unit = js.native
 }
 

@@ -19,9 +19,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapComboBox")
 @js.native
-class BootstrapComboBox () extends BootstrapClientEdit {
+trait BootstrapComboBox extends BootstrapClientEdit {
   def addItem(text: String): Double = js.native
    // tslint:disable-line:unified-signatures
   def addItem(text: String, value: js.Any): Double = js.native

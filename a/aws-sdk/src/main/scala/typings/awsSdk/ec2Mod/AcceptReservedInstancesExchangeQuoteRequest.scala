@@ -24,11 +24,11 @@ object AcceptReservedInstancesExchangeQuoteRequest {
   @scala.inline
   def apply(
     ReservedInstanceIds: ReservedInstanceIdSet,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     TargetConfigurations: TargetConfigurationRequestSet = null
   ): AcceptReservedInstancesExchangeQuoteRequest = {
     val __obj = js.Dynamic.literal(ReservedInstanceIds = ReservedInstanceIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (TargetConfigurations != null) __obj.updateDynamic("TargetConfigurations")(TargetConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptReservedInstancesExchangeQuoteRequest]
   }

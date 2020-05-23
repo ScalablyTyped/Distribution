@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.RequestExecutor")
 @js.native
-class RequestExecutor protected () extends js.Object {
-  def this(url: String) = this()
-  def this(url: String, options: js.Any) = this()
+trait RequestExecutor extends js.Object {
   def attemptLogin(returnUrl: String, success: js.Function1[/* response */ ResponseInfo, Unit]): Unit = js.native
   def attemptLogin(
     returnUrl: String,

@@ -3,9 +3,12 @@ package typings.reactNavigationStack
 import typings.react.mod.Context
 import typings.react.mod.NamedExoticComponent
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNativeGestureHandler.mod.PanGestureHandler
+import typings.reactNavigationStack.anon.ClosingRouteKeys
+import typings.reactNavigationStack.anon.Descriptors
+import typings.reactNavigationStack.anon.ReadonlyProps
+import typings.reactNavigationStack.anon.ReadonlyState
 import typings.reactNavigationStack.headerBackButtonMod.Props
 import typings.reactNavigationStack.stackViewMod.default
 import typings.reactNavigationStack.vendorTypesMod.StackCardInterpolatedStyle
@@ -27,11 +30,7 @@ object vendorMod extends js.Object {
   
   val Assets: js.Array[js.Any] = js.native
   val CardAnimationContext: Context[js.UndefOr[StackCardInterpolationProps]] = js.native
-  val GestureHandlerRefContext: Context[
-    js.UndefOr[
-      (js.Function1[/* instance */ PanGestureHandler | Null, Unit]) | RefObject[PanGestureHandler] | Null
-    ]
-  ] = js.native
+  val GestureHandlerRefContext: Context[Ref[PanGestureHandler]] = js.native
   val Header: NamedExoticComponent[StackHeaderProps] = js.native
   val HeaderHeightContext: Context[js.UndefOr[Double]] = js.native
   def HeaderBackButton(
@@ -66,7 +65,7 @@ object vendorMod extends js.Object {
   /* static members */
   @js.native
   object StackView extends js.Object {
-    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): AnonClosingRouteKeys | AnonDescriptors = js.native
+    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | Descriptors = js.native
   }
   
   @js.native

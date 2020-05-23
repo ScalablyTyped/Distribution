@@ -10,6 +10,9 @@ trait UpdateDiscovererRequest extends js.Object {
     * The description of the discoverer to update.
     */
   var Description: js.UndefOr[stringMin0Max256] = js.native
+  /**
+    * The ID of the discoverer.
+    */
   var DiscovererId: string = js.native
 }
 

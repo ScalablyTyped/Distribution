@@ -11,6 +11,10 @@ trait PublicIpv4Pool extends js.Object {
     */
   var Description: js.UndefOr[String] = js.native
   /**
+    * The name of the location from which the address pool is advertised. A network border group is a unique set of Availability Zones or Local Zones from where AWS advertises public IP addresses.
+    */
+  var NetworkBorderGroup: js.UndefOr[String] = js.native
+  /**
     * The address ranges.
     */
   var PoolAddressRanges: js.UndefOr[PublicIpv4PoolRangeSet] = js.native
@@ -36,19 +40,21 @@ object PublicIpv4Pool {
   @scala.inline
   def apply(
     Description: String = null,
+    NetworkBorderGroup: String = null,
     PoolAddressRanges: PublicIpv4PoolRangeSet = null,
     PoolId: String = null,
     Tags: TagList = null,
-    TotalAddressCount: Int | scala.Double = null,
-    TotalAvailableAddressCount: Int | scala.Double = null
+    TotalAddressCount: js.UndefOr[Integer] = js.undefined,
+    TotalAvailableAddressCount: js.UndefOr[Integer] = js.undefined
   ): PublicIpv4Pool = {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (NetworkBorderGroup != null) __obj.updateDynamic("NetworkBorderGroup")(NetworkBorderGroup.asInstanceOf[js.Any])
     if (PoolAddressRanges != null) __obj.updateDynamic("PoolAddressRanges")(PoolAddressRanges.asInstanceOf[js.Any])
     if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TotalAddressCount != null) __obj.updateDynamic("TotalAddressCount")(TotalAddressCount.asInstanceOf[js.Any])
-    if (TotalAvailableAddressCount != null) __obj.updateDynamic("TotalAvailableAddressCount")(TotalAvailableAddressCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalAddressCount)) __obj.updateDynamic("TotalAddressCount")(TotalAddressCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalAvailableAddressCount)) __obj.updateDynamic("TotalAvailableAddressCount")(TotalAvailableAddressCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicIpv4Pool]
   }
 }

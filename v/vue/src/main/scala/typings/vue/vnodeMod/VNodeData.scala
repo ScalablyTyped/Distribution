@@ -1,7 +1,7 @@
 package typings.vue.vnodeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vue.AnonRender
+import typings.vue.anon.Render
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait VNodeData extends js.Object {
   var directives: js.UndefOr[js.Array[VNodeDirective]] = js.undefined
   var domProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var hook: js.UndefOr[StringDictionary[js.Function]] = js.undefined
-  var inlineTemplate: js.UndefOr[AnonRender] = js.undefined
+  var inlineTemplate: js.UndefOr[Render] = js.undefined
   var keepAlive: js.UndefOr[Boolean] = js.undefined
   var key: js.UndefOr[String | Double] = js.undefined
   var nativeOn: js.UndefOr[StringDictionary[js.Function | js.Array[js.Function]]] = js.undefined
@@ -38,7 +38,7 @@ object VNodeData {
     directives: js.Array[VNodeDirective] = null,
     domProps: StringDictionary[js.Any] = null,
     hook: StringDictionary[js.Function] = null,
-    inlineTemplate: AnonRender = null,
+    inlineTemplate: Render = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     key: String | Double = null,
     nativeOn: StringDictionary[js.Function | js.Array[js.Function]] = null,
@@ -62,15 +62,15 @@ object VNodeData {
     if (domProps != null) __obj.updateDynamic("domProps")(domProps.asInstanceOf[js.Any])
     if (hook != null) __obj.updateDynamic("hook")(hook.asInstanceOf[js.Any])
     if (inlineTemplate != null) __obj.updateDynamic("inlineTemplate")(inlineTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (nativeOn != null) __obj.updateDynamic("nativeOn")(nativeOn.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(refInFor)) __obj.updateDynamic("refInFor")(refInFor.asInstanceOf[js.Any])
+    if (!js.isUndefined(refInFor)) __obj.updateDynamic("refInFor")(refInFor.get.asInstanceOf[js.Any])
     if (scopedSlots != null) __obj.updateDynamic("scopedSlots")(scopedSlots.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (staticClass != null) __obj.updateDynamic("staticClass")(staticClass.asInstanceOf[js.Any])
     if (staticStyle != null) __obj.updateDynamic("staticStyle")(staticStyle.asInstanceOf[js.Any])

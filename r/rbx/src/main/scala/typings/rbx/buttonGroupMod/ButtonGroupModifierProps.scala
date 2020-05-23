@@ -24,7 +24,7 @@ object ButtonGroupModifierProps {
   ): ButtonGroupModifierProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasAddons)) __obj.updateDynamic("hasAddons")(hasAddons.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAddons)) __obj.updateDynamic("hasAddons")(hasAddons.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonGroupModifierProps]
   }

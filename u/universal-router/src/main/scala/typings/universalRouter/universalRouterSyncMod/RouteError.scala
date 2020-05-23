@@ -14,10 +14,10 @@ trait RouteError extends js.Object {
 
 object RouteError {
   @scala.inline
-  def apply(message: String, name: String, stack: String = null, status: Int | Double = null): RouteError = {
+  def apply(message: String, name: String, stack: String = null, status: js.UndefOr[Double] = js.undefined): RouteError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteError]
   }
 }

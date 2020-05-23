@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,4 @@ trait LocalBasemapsSource extends Accessor {
     */
   def refresh(): Unit = js.native
 }
-
-@JSGlobal("__esri.LocalBasemapsSource")
-@js.native
-object LocalBasemapsSource extends TopLevel[LocalBasemapsSourceConstructor]
 

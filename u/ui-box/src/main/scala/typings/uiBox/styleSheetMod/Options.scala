@@ -11,10 +11,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(maxLength: Int | Double = null, speedy: js.UndefOr[Boolean] = js.undefined): Options = {
+  def apply(maxLength: js.UndefOr[Double] = js.undefined, speedy: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

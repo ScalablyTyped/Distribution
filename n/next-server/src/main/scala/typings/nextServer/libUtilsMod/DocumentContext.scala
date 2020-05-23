@@ -1,6 +1,6 @@
 package typings.nextServer.libUtilsMod
 
-import typings.nextServer.ErrorstatusCodenumber
+import typings.nextServer.anon.ErrorstatusCodenumber
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.querystringMod.ParsedUrlQuery
@@ -49,13 +49,13 @@ object DocumentContext {
     query: ParsedUrlQuery,
     renderPage: /* options */ js.UndefOr[ComponentsEnhancer] => RenderPageResult | js.Promise[RenderPageResult],
     asPath: String = null,
-    err: ErrorstatusCodenumber = null,
+    err: js.UndefOr[Null | ErrorstatusCodenumber] = js.undefined,
     req: IncomingMessage = null,
     res: ServerResponse = null
   ): DocumentContext = {
     val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], renderPage = js.Any.fromFunction1(renderPage))
     if (asPath != null) __obj.updateDynamic("asPath")(asPath.asInstanceOf[js.Any])
-    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    if (!js.isUndefined(err)) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
     if (req != null) __obj.updateDynamic("req")(req.asInstanceOf[js.Any])
     if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentContext]

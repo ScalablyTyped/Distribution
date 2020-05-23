@@ -98,13 +98,13 @@ object PeerOpts {
     if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(initiator)) __obj.updateDynamic("initiator")(initiator.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(initiator)) __obj.updateDynamic("initiator")(initiator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
     if (offerConstraints != null) __obj.updateDynamic("offerConstraints")(offerConstraints.asInstanceOf[js.Any])
     if (sdpTransfrom != null) __obj.updateDynamic("sdpTransfrom")(js.Any.fromFunction1(sdpTransfrom))
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.get.asInstanceOf[js.Any])
     if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
-    if (!js.isUndefined(trickle)) __obj.updateDynamic("trickle")(trickle.asInstanceOf[js.Any])
+    if (!js.isUndefined(trickle)) __obj.updateDynamic("trickle")(trickle.get.asInstanceOf[js.Any])
     if (wrtc != null) __obj.updateDynamic("wrtc")(wrtc.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerOpts]
   }

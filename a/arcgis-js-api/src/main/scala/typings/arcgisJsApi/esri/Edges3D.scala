@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,4 @@ trait Edges3D
     */
   var size: Double = js.native
 }
-
-@JSGlobal("__esri.Edges3D")
-@js.native
-object Edges3D extends TopLevel[Edges3DConstructor]
 

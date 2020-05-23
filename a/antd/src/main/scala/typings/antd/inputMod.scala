@@ -1,5 +1,10 @@
 package typings.antd
 
+import typings.antd.anon.PartialInputState
+import typings.antd.anon.Type
+import typings.antd.anon.TypeofPassword
+import typings.antd.anon.TypeofSearch
+import typings.antd.anon.TypeofTextArea
 import typings.antd.inputGroupMod.GroupProps
 import typings.antd.inputInputMod.InputProps
 import typings.antd.inputInputMod.InputState
@@ -24,7 +29,7 @@ object inputMod extends js.Object {
     var Password: TypeofPassword = js.native
     var Search: TypeofSearch = js.native
     var TextArea: TypeofTextArea = js.native
-    var defaultProps: AnonType = js.native
+    var defaultProps: Type = js.native
     def getDerivedStateFromProps(nextProps: InputProps, hasPrevValue: InputState): PartialInputState = js.native
   }
   

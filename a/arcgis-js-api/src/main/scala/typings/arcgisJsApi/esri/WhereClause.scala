@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +37,16 @@ trait WhereClause extends js.Object {
   def testFeature(feature: js.Any): Boolean
 }
 
-@JSGlobal("__esri.WhereClause")
-@js.native
-object WhereClause extends TopLevel[WhereClause]
+object WhereClause {
+  @scala.inline
+  def apply(
+    calculateValue: js.Any => js.Any,
+    fieldNames: js.Array[String],
+    isStandardized: Boolean,
+    testFeature: js.Any => Boolean
+  ): WhereClause = {
+    val __obj = js.Dynamic.literal(calculateValue = js.Any.fromFunction1(calculateValue), fieldNames = fieldNames.asInstanceOf[js.Any], isStandardized = isStandardized.asInstanceOf[js.Any], testFeature = js.Any.fromFunction1(testFeature))
+    __obj.asInstanceOf[WhereClause]
+  }
+}
 

@@ -1,14 +1,14 @@
 package typings.ionicReact.ionLifeCycleContextMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.ionicReact.AnonComponentCanBeDestroyed
+import typings.ionicReact.anon.ComponentCanBeDestroyed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@ionic/react/dist/types/contexts/IonLifeCycleContext", "DefaultIonLifeCycleContext")
 @js.native
-class DefaultIonLifeCycleContext () extends AnonComponentCanBeDestroyed {
+class DefaultIonLifeCycleContext () extends ComponentCanBeDestroyed {
   /* CompleteClass */
   override var ionViewDidEnterCallbacks: js.Array[LifeCycleCallback] = js.native
   /* CompleteClass */
@@ -41,5 +41,5 @@ class DefaultIonLifeCycleContext () extends AnonComponentCanBeDestroyed {
 
 @JSImport("@ionic/react/dist/types/contexts/IonLifeCycleContext", "DefaultIonLifeCycleContext")
 @js.native
-object DefaultIonLifeCycleContext extends Instantiable0[AnonComponentCanBeDestroyed]
+object DefaultIonLifeCycleContext extends Instantiable0[ComponentCanBeDestroyed]
 

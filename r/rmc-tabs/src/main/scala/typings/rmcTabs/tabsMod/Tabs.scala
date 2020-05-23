@@ -3,10 +3,10 @@ package typings.rmcTabs.tabsMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.rcGesture.mod.IGestureStatus
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
-import typings.rmcTabs.AnonOnPanMove
-import typings.rmcTabs.ReadonlychildrenReactNode
-import typings.rmcTabs.TypeofDefaultTabBar
+import typings.react.mod.global.JSX.Element
+import typings.rmcTabs.anon.OnPanMove
+import typings.rmcTabs.anon.ReadonlychildrenReactNode
+import typings.rmcTabs.anon.TypeofDefaultTabBar
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,15 +18,9 @@ class Tabs protected ()
   extends typings.rmcTabs.tabsBaseMod.Tabs[PropsType, StateType] {
   def this(props: PropsType) = this()
   var layout: HTMLDivElement = js.native
-  var onPan: AnonOnPanMove = js.native
+  var onPan: OnPanMove = js.native
   def getContentPosByIndex(index: Double, isVertical: Boolean): String = js.native
   def getContentPosByIndex(index: Double, isVertical: Boolean, useLeft: Boolean): String = js.native
-  def goToTab(
-    index: Double,
-    force: Boolean,
-    usePaged: js.UndefOr[scala.Nothing],
-    props: ReadonlychildrenReactNode
-  ): Boolean = js.native
   def goToTab(index: Double, force: Boolean, usePaged: Boolean): Boolean = js.native
   def goToTab(index: Double, force: Boolean, usePaged: Boolean, props: ReadonlychildrenReactNode): Boolean = js.native
   def onSwipe(status: IGestureStatus): Unit = js.native

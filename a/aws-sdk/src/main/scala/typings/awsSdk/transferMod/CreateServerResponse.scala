@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateServerResponse extends js.Object {
   /**
-    * The service-assigned ID of the SFTP server that is created.
+    * The service-assigned ID of the file transfer protocol-enabled server that is created.
     */
   var ServerId: typings.awsSdk.transferMod.ServerId = js.native
 }

@@ -39,8 +39,8 @@ package object definitionsMod {
     /* res */ typings.ionic.definitionsMod.APIResponseSuccess, 
     /* is T */ scala.Boolean
   ]
-  type PaginatorRequestGenerator = js.Function0[js.Promise[typings.ionic.AnonReq]]
+  type PaginatorRequestGenerator = js.Function0[js.Promise[typings.ionic.anon.Req]]
   type ResourcesConfig = org.scalablytyped.runtime.StringDictionary[typings.ionic.definitionsMod.ResourcesPlatform]
-  type ResourcesPlatform = org.scalablytyped.runtime.StringDictionary[typings.ionic.AnonImages]
+  type ResourcesPlatform = org.scalablytyped.runtime.StringDictionary[typings.ionic.anon.Images]
   type SuperAgentRequest = typings.superagent.mod.SuperAgentRequest
 }

@@ -1,7 +1,7 @@
 package typings.blueprintjsDatetime.dateRangeSelectionStrategyMod
 
 import typings.blueprintjsCore.boundaryMod.Boundary
-import typings.blueprintjsDatetime.dateUtilsMod.DateRange
+import typings.blueprintjsDatetime.dateRangeMod.DateRange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

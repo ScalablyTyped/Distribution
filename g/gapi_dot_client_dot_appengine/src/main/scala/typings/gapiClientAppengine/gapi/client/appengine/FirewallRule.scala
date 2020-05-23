@@ -29,13 +29,13 @@ object FirewallRule {
   def apply(
     action: String = null,
     description: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     sourceRange: String = null
   ): FirewallRule = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (sourceRange != null) __obj.updateDynamic("sourceRange")(sourceRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallRule]
   }

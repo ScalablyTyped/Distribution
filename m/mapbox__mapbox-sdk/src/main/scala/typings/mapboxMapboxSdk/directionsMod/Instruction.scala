@@ -40,12 +40,12 @@ object Instruction {
     components: js.Array[Component],
     driving_side: DirectionsSide,
     text: String,
-    degrees: Int | Double = null,
+    degrees: js.UndefOr[Double] = js.undefined,
     modifier: ManeuverModifier = null,
     `type`: String = null
   ): Instruction = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], driving_side = driving_side.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (degrees != null) __obj.updateDynamic("degrees")(degrees.asInstanceOf[js.Any])
+    if (!js.isUndefined(degrees)) __obj.updateDynamic("degrees")(degrees.get.asInstanceOf[js.Any])
     if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instruction]

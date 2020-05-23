@@ -142,23 +142,23 @@ object ModelFitDatasetArgs {
   @scala.inline
   def apply[T](
     epochs: Double,
-    batchesPerEpoch: Int | Double = null,
+    batchesPerEpoch: js.UndefOr[Double] = js.undefined,
     callbacks: (js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs = null,
     classWeight: ClassWeight | js.Array[ClassWeight] | ClassWeightMap = null,
-    initialEpoch: Int | Double = null,
-    validationBatchSize: Int | Double = null,
-    validationBatches: Int | Double = null,
+    initialEpoch: js.UndefOr[Double] = js.undefined,
+    validationBatchSize: js.UndefOr[Double] = js.undefined,
+    validationBatches: js.UndefOr[Double] = js.undefined,
     validationData: (js.Tuple2[TensorOrArrayOrMap, TensorOrArrayOrMap]) | (js.Tuple3[TensorOrArrayOrMap, TensorOrArrayOrMap, TensorOrArrayOrMap]) | Dataset[T] = null,
     verbose: ModelLoggingVerbosity = null,
     yieldEvery: YieldEveryOptions = null
   ): ModelFitDatasetArgs[T] = {
     val __obj = js.Dynamic.literal(epochs = epochs.asInstanceOf[js.Any])
-    if (batchesPerEpoch != null) __obj.updateDynamic("batchesPerEpoch")(batchesPerEpoch.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchesPerEpoch)) __obj.updateDynamic("batchesPerEpoch")(batchesPerEpoch.get.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (classWeight != null) __obj.updateDynamic("classWeight")(classWeight.asInstanceOf[js.Any])
-    if (initialEpoch != null) __obj.updateDynamic("initialEpoch")(initialEpoch.asInstanceOf[js.Any])
-    if (validationBatchSize != null) __obj.updateDynamic("validationBatchSize")(validationBatchSize.asInstanceOf[js.Any])
-    if (validationBatches != null) __obj.updateDynamic("validationBatches")(validationBatches.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialEpoch)) __obj.updateDynamic("initialEpoch")(initialEpoch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validationBatchSize)) __obj.updateDynamic("validationBatchSize")(validationBatchSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validationBatches)) __obj.updateDynamic("validationBatches")(validationBatches.get.asInstanceOf[js.Any])
     if (validationData != null) __obj.updateDynamic("validationData")(validationData.asInstanceOf[js.Any])
     if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     if (yieldEvery != null) __obj.updateDynamic("yieldEvery")(yieldEvery.asInstanceOf[js.Any])

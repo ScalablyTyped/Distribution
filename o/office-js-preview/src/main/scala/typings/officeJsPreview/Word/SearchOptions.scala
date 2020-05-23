@@ -1,12 +1,11 @@
 package typings.officeJsPreview.Word
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
-import typings.officeJsPreview.OfficeExtension.ClientRequestContext
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.Word.Interfaces.SearchOptionsData
 import typings.officeJsPreview.Word.Interfaces.SearchOptionsLoadOptions
 import typings.officeJsPreview.Word.Interfaces.SearchOptionsUpdateData
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Specifies the options to be included in a search operation.
-  * 
+  *
   * To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
   *
   * [Api set: WordApi 1.1]
   */
-@JSGlobal("Word.SearchOptions")
 @js.native
-class SearchOptions () extends ClientObject {
+trait SearchOptions extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_SearchOptions: RequestContext = js.native
@@ -93,8 +91,8 @@ class SearchOptions () extends ClientObject {
   def load(): SearchOptions = js.native
   def load(option: String): SearchOptions = js.native
   def load(option: js.Array[String]): SearchOptions = js.native
-  def load(option: AnonExpand): SearchOptions = js.native
   def load(option: SearchOptionsLoadOptions): SearchOptions = js.native
+  def load(option: Expand): SearchOptions = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks
@@ -115,15 +113,5 @@ class SearchOptions () extends ClientObject {
     * Whereas the original Word.SearchOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): SearchOptionsData = js.native
-}
-
-/* static members */
-@JSGlobal("Word.SearchOptions")
-@js.native
-object SearchOptions extends js.Object {
-  /**
-    * Create a new instance of Word.SearchOptions object
-    */
-  def newObject(context: ClientRequestContext): SearchOptions = js.native
 }
 

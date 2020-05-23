@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLLinkElement")
 @js.native
-class HTMLLinkElement protected () extends js.Object {
+trait HTMLLinkElement extends js.Object {
   @JSName("MSHTML.HTMLLinkElement_typekey")
   var MSHTMLDotHTMLLinkElement_typekey: HTMLLinkElement = js.native
   var accessKey: String = js.native

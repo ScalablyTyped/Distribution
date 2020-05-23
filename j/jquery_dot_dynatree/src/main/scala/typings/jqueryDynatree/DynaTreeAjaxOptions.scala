@@ -14,11 +14,15 @@ trait DynaTreeAjaxOptions extends js.Object {
 
 object DynaTreeAjaxOptions {
   @scala.inline
-  def apply(cache: js.UndefOr[Boolean] = js.undefined, dataType: String = null, timeout: Int | Double = null): DynaTreeAjaxOptions = {
+  def apply(
+    cache: js.UndefOr[Boolean] = js.undefined,
+    dataType: String = null,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): DynaTreeAjaxOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeAjaxOptions]
   }
 }

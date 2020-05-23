@@ -21,7 +21,7 @@ object ValidateStatusResponse {
   ): ValidateStatusResponse = {
     val __obj = js.Dynamic.literal()
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMetadataOnly)) __obj.updateDynamic("isMetadataOnly")(isMetadataOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMetadataOnly)) __obj.updateDynamic("isMetadataOnly")(isMetadataOnly.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateStatusResponse]

@@ -42,7 +42,7 @@ object Options {
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (jvmArgs != null) __obj.updateDynamic("jvmArgs")(jvmArgs.asInstanceOf[js.Any])
-    if (!js.isUndefined(loopback)) __obj.updateDynamic("loopback")(loopback.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopback)) __obj.updateDynamic("loopback")(loopback.get.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

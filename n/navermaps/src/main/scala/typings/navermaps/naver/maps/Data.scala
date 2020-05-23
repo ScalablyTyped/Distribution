@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Data Layer
-@JSGlobal("naver.maps.Data")
 @js.native
-class Data () extends KVO {
+trait Data extends KVO {
   def addFeature(feature: Feature, autoStyle: Boolean): Unit = js.native
   def addGeoJson(geojson: GeoJSON, autoStyle: Boolean): Unit = js.native
   def addGpx(xmlDoc: GPX, autoStyle: Boolean): Unit = js.native

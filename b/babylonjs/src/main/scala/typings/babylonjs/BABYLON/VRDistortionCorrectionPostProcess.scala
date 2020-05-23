@@ -4,17 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.VRDistortionCorrectionPostProcess")
 @js.native
-class VRDistortionCorrectionPostProcess protected () extends PostProcess {
-  /**
-    * Initializes the VRDistortionCorrectionPostProcess
-    * @param name The name of the effect.
-    * @param camera The camera to apply the render pass to.
-    * @param isRightEye If this is for the right eye distortion
-    * @param vrMetrics All the required metrics for the VR camera
-    */
-  def this(name: String, camera: Camera, isRightEye: Boolean, vrMetrics: VRCameraMetrics) = this()
+trait VRDistortionCorrectionPostProcess extends PostProcess {
   var _distortionFactors: js.Any = js.native
   var _isRightEye: js.Any = js.native
   var _lensCenter: js.Any = js.native

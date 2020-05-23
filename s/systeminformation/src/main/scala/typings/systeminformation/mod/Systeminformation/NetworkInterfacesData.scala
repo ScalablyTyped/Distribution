@@ -16,7 +16,9 @@ trait NetworkInterfacesData extends js.Object {
   var ifaceName: String
   var internal: Boolean
   var ip4: String
+  var ip4subnet: String
   var ip6: String
+  var ip6subnet: String
   var mac: String
   var mtu: Double
   var operstate: String
@@ -38,7 +40,9 @@ object NetworkInterfacesData {
     ifaceName: String,
     internal: Boolean,
     ip4: String,
+    ip4subnet: String,
     ip6: String,
+    ip6subnet: String,
     mac: String,
     mtu: Double,
     operstate: String,
@@ -46,7 +50,7 @@ object NetworkInterfacesData {
     `type`: String,
     virtual: Boolean
   ): NetworkInterfacesData = {
-    val __obj = js.Dynamic.literal(carrier_changes = carrier_changes.asInstanceOf[js.Any], dhcp = dhcp.asInstanceOf[js.Any], dnsSuffix = dnsSuffix.asInstanceOf[js.Any], duplex = duplex.asInstanceOf[js.Any], ieee8021xAuth = ieee8021xAuth.asInstanceOf[js.Any], ieee8021xState = ieee8021xState.asInstanceOf[js.Any], iface = iface.asInstanceOf[js.Any], ifaceName = ifaceName.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], ip4 = ip4.asInstanceOf[js.Any], ip6 = ip6.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], mtu = mtu.asInstanceOf[js.Any], operstate = operstate.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], virtual = virtual.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(carrier_changes = carrier_changes.asInstanceOf[js.Any], dhcp = dhcp.asInstanceOf[js.Any], dnsSuffix = dnsSuffix.asInstanceOf[js.Any], duplex = duplex.asInstanceOf[js.Any], ieee8021xAuth = ieee8021xAuth.asInstanceOf[js.Any], ieee8021xState = ieee8021xState.asInstanceOf[js.Any], iface = iface.asInstanceOf[js.Any], ifaceName = ifaceName.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], ip4 = ip4.asInstanceOf[js.Any], ip4subnet = ip4subnet.asInstanceOf[js.Any], ip6 = ip6.asInstanceOf[js.Any], ip6subnet = ip6subnet.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], mtu = mtu.asInstanceOf[js.Any], operstate = operstate.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], virtual = virtual.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfacesData]
   }

@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("XSockets.WebSocket")
 @js.native
-class WebSocket protected () extends js.Object {
-  def this(url: String) = this()
-  def this(url: String, subprotocol: String) = this()
-  def this(url: String, subprotocol: String, settings: js.Any) = this()
+trait WebSocket extends js.Object {
   var id: String = js.native
   def many(event: String, times: Double, handler: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
   def many(

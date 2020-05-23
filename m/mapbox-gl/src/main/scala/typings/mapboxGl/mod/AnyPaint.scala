@@ -267,12 +267,12 @@ object AnyPaint {
     if (`fill-extrusion-translate` != null) __obj.updateDynamic("fill-extrusion-translate")(`fill-extrusion-translate`.asInstanceOf[js.Any])
     if (`fill-extrusion-translate-anchor` != null) __obj.updateDynamic("fill-extrusion-translate-anchor")(`fill-extrusion-translate-anchor`.asInstanceOf[js.Any])
     if (`fill-extrusion-translate-transition` != null) __obj.updateDynamic("fill-extrusion-translate-transition")(`fill-extrusion-translate-transition`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`fill-extrusion-vertical-gradient`)) __obj.updateDynamic("fill-extrusion-vertical-gradient")(`fill-extrusion-vertical-gradient`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fill-extrusion-vertical-gradient`)) __obj.updateDynamic("fill-extrusion-vertical-gradient")(`fill-extrusion-vertical-gradient`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyPaint]
   }
   @scala.inline
   def RasterPaint(
-    `circle-sort-key`: Int | Double = null,
+    `circle-sort-key`: js.UndefOr[Double] = js.undefined,
     `raster-brightness-max`: Double | Expression = null,
     `raster-brightness-max-transition`: Transition = null,
     `raster-brightness-min`: Double | Expression = null,
@@ -289,7 +289,7 @@ object AnyPaint {
     `raster-saturation-transition`: Transition = null
   ): AnyPaint = {
     val __obj = js.Dynamic.literal()
-    if (`circle-sort-key` != null) __obj.updateDynamic("circle-sort-key")(`circle-sort-key`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`circle-sort-key`)) __obj.updateDynamic("circle-sort-key")(`circle-sort-key`.get.asInstanceOf[js.Any])
     if (`raster-brightness-max` != null) __obj.updateDynamic("raster-brightness-max")(`raster-brightness-max`.asInstanceOf[js.Any])
     if (`raster-brightness-max-transition` != null) __obj.updateDynamic("raster-brightness-max-transition")(`raster-brightness-max-transition`.asInstanceOf[js.Any])
     if (`raster-brightness-min` != null) __obj.updateDynamic("raster-brightness-min")(`raster-brightness-min`.asInstanceOf[js.Any])

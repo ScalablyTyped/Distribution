@@ -1,6 +1,6 @@
 package typings.emailAddresses.emailAddresses
 
-import typings.emailAddresses.AnonAddress
+import typings.emailAddresses.anon.Address
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait ParsedMailbox extends js.Object {
   var local: String
   var name: String
   var node: js.UndefOr[ASTNode] = js.undefined
-  var parts: AnonAddress
+  var parts: Address
   var `type`: String
 }
 
@@ -22,7 +22,7 @@ object ParsedMailbox {
     domain: String,
     local: String,
     name: String,
-    parts: AnonAddress,
+    parts: Address,
     `type`: String,
     node: ASTNode = null
   ): ParsedMailbox = {

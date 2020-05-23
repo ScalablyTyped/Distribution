@@ -1,5 +1,6 @@
 package typings.original
 
+import typings.original.anon.Host
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def apply(url: String): String = js.native
   def apply(url: js.Object): String = js.native
-  def apply(url: AnonHost): String = js.native
+  def apply(url: Host): String = js.native
   /**
     * Check if the origins are the same.
     *

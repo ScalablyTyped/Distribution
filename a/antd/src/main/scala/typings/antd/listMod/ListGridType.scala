@@ -18,24 +18,24 @@ trait ListGridType extends js.Object {
 object ListGridType {
   @scala.inline
   def apply(
-    column: ColumnCount = null,
-    gutter: Int | Double = null,
-    lg: ColumnCount = null,
-    md: ColumnCount = null,
-    sm: ColumnCount = null,
-    xl: ColumnCount = null,
-    xs: ColumnCount = null,
-    xxl: ColumnCount = null
+    column: js.UndefOr[ColumnCount] = js.undefined,
+    gutter: js.UndefOr[Double] = js.undefined,
+    lg: js.UndefOr[ColumnCount] = js.undefined,
+    md: js.UndefOr[ColumnCount] = js.undefined,
+    sm: js.UndefOr[ColumnCount] = js.undefined,
+    xl: js.UndefOr[ColumnCount] = js.undefined,
+    xs: js.UndefOr[ColumnCount] = js.undefined,
+    xxl: js.UndefOr[ColumnCount] = js.undefined
   ): ListGridType = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
-    if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
-    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
-    if (sm != null) __obj.updateDynamic("sm")(sm.asInstanceOf[js.Any])
-    if (xl != null) __obj.updateDynamic("xl")(xl.asInstanceOf[js.Any])
-    if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
-    if (xxl != null) __obj.updateDynamic("xxl")(xxl.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gutter)) __obj.updateDynamic("gutter")(gutter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lg)) __obj.updateDynamic("lg")(lg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(md)) __obj.updateDynamic("md")(md.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sm)) __obj.updateDynamic("sm")(sm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xl)) __obj.updateDynamic("xl")(xl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xs)) __obj.updateDynamic("xs")(xs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xxl)) __obj.updateDynamic("xxl")(xxl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGridType]
   }
 }

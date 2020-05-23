@@ -16,14 +16,14 @@ object GenerateOptions {
   def apply(
     capitalization: String = null,
     charset: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     readable: js.UndefOr[Boolean] = js.undefined
   ): GenerateOptions = {
     val __obj = js.Dynamic.literal()
     if (capitalization != null) __obj.updateDynamic("capitalization")(capitalization.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOptions]
   }
 }

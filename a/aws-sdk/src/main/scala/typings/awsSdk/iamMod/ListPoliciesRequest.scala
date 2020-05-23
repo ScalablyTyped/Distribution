@@ -36,16 +36,16 @@ object ListPoliciesRequest {
   @scala.inline
   def apply(
     Marker: markerType = null,
-    MaxItems: Int | Double = null,
-    OnlyAttached: js.UndefOr[Boolean] = js.undefined,
+    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
+    OnlyAttached: js.UndefOr[booleanType] = js.undefined,
     PathPrefix: policyPathType = null,
     PolicyUsageFilter: PolicyUsageType = null,
     Scope: policyScopeType = null
   ): ListPoliciesRequest = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(OnlyAttached)) __obj.updateDynamic("OnlyAttached")(OnlyAttached.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OnlyAttached)) __obj.updateDynamic("OnlyAttached")(OnlyAttached.get.asInstanceOf[js.Any])
     if (PathPrefix != null) __obj.updateDynamic("PathPrefix")(PathPrefix.asInstanceOf[js.Any])
     if (PolicyUsageFilter != null) __obj.updateDynamic("PolicyUsageFilter")(PolicyUsageFilter.asInstanceOf[js.Any])
     if (Scope != null) __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])

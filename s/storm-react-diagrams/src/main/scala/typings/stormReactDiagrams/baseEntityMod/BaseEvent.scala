@@ -13,7 +13,7 @@ trait BaseEvent[T /* <: BaseEntity[BaseListener[_]] */] extends js.Object {
 
 object BaseEvent {
   @scala.inline
-  def apply[T /* <: BaseEntity[BaseListener[_]] */](entity: BaseEntity[BaseListener[_]], firing: Boolean, id: String, stopPropagation: () => js.Any): BaseEvent[T] = {
+  def apply[T](entity: BaseEntity[BaseListener[_]], firing: Boolean, id: String, stopPropagation: () => js.Any): BaseEvent[T] = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], firing = firing.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation))
     __obj.asInstanceOf[BaseEvent[T]]
   }

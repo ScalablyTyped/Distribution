@@ -13,10 +13,10 @@ trait BeanstalkdHandleBackoff extends js.Object {
 
 object BeanstalkdHandleBackoff {
   @scala.inline
-  def apply(exponential: Int | Double = null, initial: Int | Double = null): BeanstalkdHandleBackoff = {
+  def apply(exponential: js.UndefOr[Double] = js.undefined, initial: js.UndefOr[Double] = js.undefined): BeanstalkdHandleBackoff = {
     val __obj = js.Dynamic.literal()
-    if (exponential != null) __obj.updateDynamic("exponential")(exponential.asInstanceOf[js.Any])
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
+    if (!js.isUndefined(exponential)) __obj.updateDynamic("exponential")(exponential.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeanstalkdHandleBackoff]
   }
 }

@@ -1,7 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.ace.aceStrings.change
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -580,15 +578,4 @@ trait Editor extends OptionProvider {
     **/
   def unsetStyle(): Unit = js.native
 }
-
-@JSGlobal("AceAjax.Editor")
-@js.native
-object Editor
-  extends /**
-  * Creates a new `Editor` object.
-  * @param renderer Associated `VirtualRenderer` that draws everything
-  * @param session The `EditSession` to refer to
-  **/
-Instantiable1[/* renderer */ VirtualRenderer, Editor]
-     with Instantiable2[/* renderer */ VirtualRenderer, /* session */ IEditSession, Editor]
 

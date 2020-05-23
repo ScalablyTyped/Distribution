@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.TextInput")
 @js.native
-class TextInput protected () extends js.Object {
+trait TextInput extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Creator: Double = js.native
   var Default: String = js.native

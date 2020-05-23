@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@elastic/elasticsearch" : "7.6.1"
+      "@elastic/elasticsearch" : "7.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@elastic/elasticsearch" : "7.6.1"
+      "@elastic/elasticsearch" : "7.7.1"
     }
   ],
   "compile-devDependencies" : [

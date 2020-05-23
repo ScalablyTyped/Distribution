@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object WiFiDirectServiceConfigurationMethod extends js.Object {
   /** Request PIN entry at configuration. */
   @js.native
   sealed trait pinEntry extends WiFiDirectServiceConfigurationMethod
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectServiceConfigurationMethod with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object pinDisplay extends TopLevel[pinDisplay with Double]
-  
-  /* 2 */ @js.native
-  object pinEntry extends TopLevel[pinEntry with Double]
   
 }
 

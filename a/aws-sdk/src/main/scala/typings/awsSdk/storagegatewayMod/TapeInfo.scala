@@ -11,7 +11,7 @@ trait TapeInfo extends js.Object {
     */
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
   /**
-    * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (Glacier or Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+    * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
     */
   var PoolId: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolId] = js.native
   /**
@@ -39,7 +39,7 @@ object TapeInfo {
     PoolId: PoolId = null,
     TapeARN: TapeARN = null,
     TapeBarcode: TapeBarcode = null,
-    TapeSizeInBytes: Int | Double = null,
+    TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined,
     TapeStatus: TapeStatus = null
   ): TapeInfo = {
     val __obj = js.Dynamic.literal()
@@ -47,7 +47,7 @@ object TapeInfo {
     if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId.asInstanceOf[js.Any])
     if (TapeARN != null) __obj.updateDynamic("TapeARN")(TapeARN.asInstanceOf[js.Any])
     if (TapeBarcode != null) __obj.updateDynamic("TapeBarcode")(TapeBarcode.asInstanceOf[js.Any])
-    if (TapeSizeInBytes != null) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TapeSizeInBytes)) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.get.asInstanceOf[js.Any])
     if (TapeStatus != null) __obj.updateDynamic("TapeStatus")(TapeStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TapeInfo]
   }

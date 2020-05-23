@@ -31,7 +31,7 @@ trait ListPrincipalsRequest extends js.Object {
     */
   var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.native
   /**
-    * The resource type. Valid values: ec2:CapacityReservation | ec2:Subnet | ec2:TrafficMirrorTarget | ec2:TransitGateway | license-manager:LicenseConfiguration | rds:Cluster | route53resolver:ResolverRule I resource-groups:Group 
+    * The resource type. Valid values: codebuild:Project | codebuild:ReportGroup | ec2:CapacityReservation | ec2:DedicatedHost | ec2:Subnet | ec2:TrafficMirrorTarget | ec2:TransitGateway | imagebuilder:Component | imagebuilder:Image | imagebuilder:ImageRecipe | license-manager:LicenseConfiguration I resource-groups:Group | rds:Cluster | route53resolver:ResolverRule 
     */
   var resourceType: js.UndefOr[String] = js.native
 }
@@ -40,7 +40,7 @@ object ListPrincipalsRequest {
   @scala.inline
   def apply(
     resourceOwner: ResourceOwner,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: String = null,
     principals: PrincipalArnOrIdList = null,
     resourceArn: String = null,
@@ -48,7 +48,7 @@ object ListPrincipalsRequest {
     resourceType: String = null
   ): ListPrincipalsRequest = {
     val __obj = js.Dynamic.literal(resourceOwner = resourceOwner.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (principals != null) __obj.updateDynamic("principals")(principals.asInstanceOf[js.Any])
     if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])

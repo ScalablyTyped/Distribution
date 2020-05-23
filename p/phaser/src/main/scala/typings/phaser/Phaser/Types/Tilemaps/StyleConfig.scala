@@ -23,14 +23,14 @@ trait StyleConfig extends js.Object {
 object StyleConfig {
   @scala.inline
   def apply(
-    collidingTileColor: Color | Double = null,
-    faceColor: Color | Double = null,
-    tileColor: Color | Double = null
+    collidingTileColor: js.UndefOr[Null | Color | Double] = js.undefined,
+    faceColor: js.UndefOr[Null | Color | Double] = js.undefined,
+    tileColor: js.UndefOr[Null | Color | Double] = js.undefined
   ): StyleConfig = {
     val __obj = js.Dynamic.literal()
-    if (collidingTileColor != null) __obj.updateDynamic("collidingTileColor")(collidingTileColor.asInstanceOf[js.Any])
-    if (faceColor != null) __obj.updateDynamic("faceColor")(faceColor.asInstanceOf[js.Any])
-    if (tileColor != null) __obj.updateDynamic("tileColor")(tileColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(collidingTileColor)) __obj.updateDynamic("collidingTileColor")(collidingTileColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(faceColor)) __obj.updateDynamic("faceColor")(faceColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileColor)) __obj.updateDynamic("tileColor")(tileColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleConfig]
   }
 }

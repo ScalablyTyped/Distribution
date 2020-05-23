@@ -6,10 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.Data.Feature")
 @js.native
-class Feature () extends js.Object {
-  def this(options: FeatureOptions) = this()
+trait Feature extends js.Object {
   def forEachProperty(callback: js.Function2[/* value */ js.Any, /* name */ String, Unit]): Unit = js.native
   def getGeometry(): Geometry = js.native
   def getId(): Double | String = js.native

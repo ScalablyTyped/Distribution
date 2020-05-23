@@ -16,8 +16,8 @@ object SudoOptions {
     user: String = null
   ): SudoOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(failsafe)) __obj.updateDynamic("failsafe")(failsafe.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(failsafe)) __obj.updateDynamic("failsafe")(failsafe.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SudoOptions]
   }

@@ -1,6 +1,6 @@
 package typings.got.mod
 
-import typings.got.PartialGotJSONOptions
+import typings.got.anon.PartialGotJSONOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

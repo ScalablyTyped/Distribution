@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait SavedFileInfoData extends js.Object {
   /**
-  		 * 创建时间
-  		 */
+    * 创建时间
+    */
   var createTime: Double
   /**
-  		 * 文件大小，单位B
-  		 */
+    * 文件大小，单位B
+    */
   var size: Double
 }
 

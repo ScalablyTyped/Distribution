@@ -1,7 +1,7 @@
 package typings.qwest
 
 import org.scalablytyped.runtime.TopLevel
-import typings.qwest.Qwest_.Static
+import typings.qwest.Qwest.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

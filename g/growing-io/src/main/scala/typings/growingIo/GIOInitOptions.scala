@@ -13,7 +13,7 @@ object GIOInitOptions {
   @scala.inline
   def apply(imp: js.UndefOr[Boolean] = js.undefined): GIOInitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(imp)) __obj.updateDynamic("imp")(imp.asInstanceOf[js.Any])
+    if (!js.isUndefined(imp)) __obj.updateDynamic("imp")(imp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GIOInitOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.resultMod
 
-import typings.antDesignReactNative.AnonButtonType
+import typings.antDesignReactNative.anon.ButtonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Result
 @JSImport("@ant-design/react-native/lib/result", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonButtonType = js.native
+  var defaultProps: ButtonType = js.native
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.PivotTable")
 @js.native
-class PivotTable protected () extends js.Object {
+trait PivotTable extends js.Object {
   @JSName("ActiveFilters")
   val ActiveFilters_Original: PivotFilters = js.native
   var Allocation: XlAllocation = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateSignalingChannelOutput extends js.Object {
   /**
-    * The ARN of the created channel.
+    * The Amazon Resource Name (ARN) of the created channel.
     */
   var ChannelARN: js.UndefOr[ResourceARN] = js.native
 }

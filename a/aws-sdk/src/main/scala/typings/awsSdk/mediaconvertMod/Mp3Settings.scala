@@ -31,18 +31,18 @@ trait Mp3Settings extends js.Object {
 object Mp3Settings {
   @scala.inline
   def apply(
-    Bitrate: Int | Double = null,
-    Channels: Int | Double = null,
+    Bitrate: js.UndefOr[integerMin16000Max320000] = js.undefined,
+    Channels: js.UndefOr[integerMin1Max2] = js.undefined,
     RateControlMode: Mp3RateControlMode = null,
-    SampleRate: Int | Double = null,
-    VbrQuality: Int | Double = null
+    SampleRate: js.UndefOr[integerMin22050Max48000] = js.undefined,
+    VbrQuality: js.UndefOr[integerMin0Max9] = js.undefined
   ): Mp3Settings = {
     val __obj = js.Dynamic.literal()
-    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
-    if (Channels != null) __obj.updateDynamic("Channels")(Channels.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Channels)) __obj.updateDynamic("Channels")(Channels.get.asInstanceOf[js.Any])
     if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
-    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
-    if (VbrQuality != null) __obj.updateDynamic("VbrQuality")(VbrQuality.asInstanceOf[js.Any])
+    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VbrQuality)) __obj.updateDynamic("VbrQuality")(VbrQuality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mp3Settings]
   }
 }

@@ -19,9 +19,9 @@ trait MediaTrackSettings extends js.Object {
 
 object MediaTrackSettings {
   @scala.inline
-  def apply(latency: Int | Double = null): MediaTrackSettings = {
+  def apply(latency: js.UndefOr[Double] = js.undefined): MediaTrackSettings = {
     val __obj = js.Dynamic.literal()
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
+    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackSettings]
   }
 }

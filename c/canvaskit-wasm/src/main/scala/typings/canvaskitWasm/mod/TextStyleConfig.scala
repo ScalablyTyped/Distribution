@@ -19,22 +19,22 @@ object TextStyleConfig {
   @scala.inline
   def apply(
     fontFamilies: js.Array[String],
-    backgroundColor: Int | Double = null,
-    color: Int | Double = null,
-    decoration: Int | Double = null,
-    decorationThickness: Int | Double = null,
-    fontSize: Int | Double = null,
+    backgroundColor: js.UndefOr[SkColor] = js.undefined,
+    color: js.UndefOr[SkColor] = js.undefined,
+    decoration: js.UndefOr[SkDecoration] = js.undefined,
+    decorationThickness: js.UndefOr[Double] = js.undefined,
+    fontSize: js.UndefOr[Double] = js.undefined,
     fontStyle: FontStyleConfig = null,
-    foregroundColor: Int | Double = null
+    foregroundColor: js.UndefOr[SkColor] = js.undefined
   ): TextStyleConfig = {
     val __obj = js.Dynamic.literal(fontFamilies = fontFamilies.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (decoration != null) __obj.updateDynamic("decoration")(decoration.asInstanceOf[js.Any])
-    if (decorationThickness != null) __obj.updateDynamic("decorationThickness")(decorationThickness.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decoration)) __obj.updateDynamic("decoration")(decoration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decorationThickness)) __obj.updateDynamic("decorationThickness")(decorationThickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(foregroundColor)) __obj.updateDynamic("foregroundColor")(foregroundColor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextStyleConfig]
   }
 }

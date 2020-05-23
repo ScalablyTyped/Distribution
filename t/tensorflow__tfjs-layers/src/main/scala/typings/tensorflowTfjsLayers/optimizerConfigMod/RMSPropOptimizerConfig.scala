@@ -17,15 +17,15 @@ object RMSPropOptimizerConfig {
   def apply(
     learning_rate: Double,
     centered: js.UndefOr[Boolean] = js.undefined,
-    decay: Int | Double = null,
-    epsilon: Int | Double = null,
-    momentum: Int | Double = null
+    decay: js.UndefOr[Double] = js.undefined,
+    epsilon: js.UndefOr[Double] = js.undefined,
+    momentum: js.UndefOr[Double] = js.undefined
   ): RMSPropOptimizerConfig = {
     val __obj = js.Dynamic.literal(learning_rate = learning_rate.asInstanceOf[js.Any])
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
-    if (decay != null) __obj.updateDynamic("decay")(decay.asInstanceOf[js.Any])
-    if (epsilon != null) __obj.updateDynamic("epsilon")(epsilon.asInstanceOf[js.Any])
-    if (momentum != null) __obj.updateDynamic("momentum")(momentum.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(decay)) __obj.updateDynamic("decay")(decay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(epsilon)) __obj.updateDynamic("epsilon")(epsilon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(momentum)) __obj.updateDynamic("momentum")(momentum.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RMSPropOptimizerConfig]
   }
 }

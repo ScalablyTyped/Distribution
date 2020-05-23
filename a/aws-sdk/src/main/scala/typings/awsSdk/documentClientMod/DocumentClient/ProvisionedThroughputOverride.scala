@@ -14,9 +14,9 @@ trait ProvisionedThroughputOverride extends js.Object {
 
 object ProvisionedThroughputOverride {
   @scala.inline
-  def apply(ReadCapacityUnits: Int | scala.Double = null): ProvisionedThroughputOverride = {
+  def apply(ReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined): ProvisionedThroughputOverride = {
     val __obj = js.Dynamic.literal()
-    if (ReadCapacityUnits != null) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReadCapacityUnits)) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedThroughputOverride]
   }
 }

@@ -145,14 +145,14 @@ object DescribeTrainingJobResponse {
     TrainingJobName: TrainingJobName,
     TrainingJobStatus: TrainingJobStatus,
     AutoMLJobArn: AutoMLJobArn = null,
-    BillableTimeInSeconds: Int | Double = null,
+    BillableTimeInSeconds: js.UndefOr[BillableTimeInSeconds] = js.undefined,
     CheckpointConfig: CheckpointConfig = null,
     DebugHookConfig: DebugHookConfig = null,
     DebugRuleConfigurations: DebugRuleConfigurations = null,
     DebugRuleEvaluationStatuses: DebugRuleEvaluationStatuses = null,
-    EnableInterContainerTrafficEncryption: js.UndefOr[scala.Boolean] = js.undefined,
-    EnableManagedSpotTraining: js.UndefOr[scala.Boolean] = js.undefined,
-    EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
+    EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined,
+    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
     ExperimentConfig: ExperimentConfig = null,
     FailureReason: FailureReason = null,
     FinalMetricDataList: FinalMetricDataList = null,
@@ -166,20 +166,20 @@ object DescribeTrainingJobResponse {
     TensorBoardOutputConfig: TensorBoardOutputConfig = null,
     TrainingEndTime: Timestamp = null,
     TrainingStartTime: Timestamp = null,
-    TrainingTimeInSeconds: Int | Double = null,
+    TrainingTimeInSeconds: js.UndefOr[TrainingTimeInSeconds] = js.undefined,
     TuningJobArn: HyperParameterTuningJobArn = null,
     VpcConfig: VpcConfig = null
   ): DescribeTrainingJobResponse = {
     val __obj = js.Dynamic.literal(AlgorithmSpecification = AlgorithmSpecification.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], ModelArtifacts = ModelArtifacts.asInstanceOf[js.Any], ResourceConfig = ResourceConfig.asInstanceOf[js.Any], SecondaryStatus = SecondaryStatus.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any], TrainingJobArn = TrainingJobArn.asInstanceOf[js.Any], TrainingJobName = TrainingJobName.asInstanceOf[js.Any], TrainingJobStatus = TrainingJobStatus.asInstanceOf[js.Any])
     if (AutoMLJobArn != null) __obj.updateDynamic("AutoMLJobArn")(AutoMLJobArn.asInstanceOf[js.Any])
-    if (BillableTimeInSeconds != null) __obj.updateDynamic("BillableTimeInSeconds")(BillableTimeInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(BillableTimeInSeconds)) __obj.updateDynamic("BillableTimeInSeconds")(BillableTimeInSeconds.get.asInstanceOf[js.Any])
     if (CheckpointConfig != null) __obj.updateDynamic("CheckpointConfig")(CheckpointConfig.asInstanceOf[js.Any])
     if (DebugHookConfig != null) __obj.updateDynamic("DebugHookConfig")(DebugHookConfig.asInstanceOf[js.Any])
     if (DebugRuleConfigurations != null) __obj.updateDynamic("DebugRuleConfigurations")(DebugRuleConfigurations.asInstanceOf[js.Any])
     if (DebugRuleEvaluationStatuses != null) __obj.updateDynamic("DebugRuleEvaluationStatuses")(DebugRuleEvaluationStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.get.asInstanceOf[js.Any])
     if (ExperimentConfig != null) __obj.updateDynamic("ExperimentConfig")(ExperimentConfig.asInstanceOf[js.Any])
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
     if (FinalMetricDataList != null) __obj.updateDynamic("FinalMetricDataList")(FinalMetricDataList.asInstanceOf[js.Any])
@@ -193,7 +193,7 @@ object DescribeTrainingJobResponse {
     if (TensorBoardOutputConfig != null) __obj.updateDynamic("TensorBoardOutputConfig")(TensorBoardOutputConfig.asInstanceOf[js.Any])
     if (TrainingEndTime != null) __obj.updateDynamic("TrainingEndTime")(TrainingEndTime.asInstanceOf[js.Any])
     if (TrainingStartTime != null) __obj.updateDynamic("TrainingStartTime")(TrainingStartTime.asInstanceOf[js.Any])
-    if (TrainingTimeInSeconds != null) __obj.updateDynamic("TrainingTimeInSeconds")(TrainingTimeInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(TrainingTimeInSeconds)) __obj.updateDynamic("TrainingTimeInSeconds")(TrainingTimeInSeconds.get.asInstanceOf[js.Any])
     if (TuningJobArn != null) __obj.updateDynamic("TuningJobArn")(TuningJobArn.asInstanceOf[js.Any])
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTrainingJobResponse]

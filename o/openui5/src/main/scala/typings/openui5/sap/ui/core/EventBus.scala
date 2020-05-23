@@ -5,12 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.EventBus")
 @js.native
-/**
-  * Creates an instance of EventBus.
-  */
-class EventBus () extends Object {
+trait EventBus extends Object {
   /**
     * Fires an event using the specified settings and notifies all attached event handlers.
     * @param sChannelId The channel of the event to fire. If not given, the default channel is used. The

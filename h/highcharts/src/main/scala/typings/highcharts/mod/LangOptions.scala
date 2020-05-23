@@ -68,6 +68,10 @@ trait LangOptions extends js.Object {
     */
   var exitFullscreen: js.UndefOr[String] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The text for exported table.
+    */
+  var exportData: js.UndefOr[LangExportDataOptions] = js.undefined
+  /**
     * (Highcharts, Highstock) What to show in a date field for invalid dates.
     * Defaults to an empty string.
     */
@@ -201,12 +205,13 @@ object LangOptions {
     downloadXLS: String = null,
     drillUpText: String = null,
     exitFullscreen: String = null,
+    exportData: LangExportDataOptions = null,
     invalidDate: String = null,
     loading: String = null,
     months: js.Array[String] = null,
     navigation: LangNavigationOptions = null,
     noData: String = null,
-    numericSymbolMagnitude: Int | Double = null,
+    numericSymbolMagnitude: js.UndefOr[Double] = js.undefined,
     numericSymbols: js.Array[String] = null,
     printChart: String = null,
     rangeSelectorFrom: String = null,
@@ -236,12 +241,13 @@ object LangOptions {
     if (downloadXLS != null) __obj.updateDynamic("downloadXLS")(downloadXLS.asInstanceOf[js.Any])
     if (drillUpText != null) __obj.updateDynamic("drillUpText")(drillUpText.asInstanceOf[js.Any])
     if (exitFullscreen != null) __obj.updateDynamic("exitFullscreen")(exitFullscreen.asInstanceOf[js.Any])
+    if (exportData != null) __obj.updateDynamic("exportData")(exportData.asInstanceOf[js.Any])
     if (invalidDate != null) __obj.updateDynamic("invalidDate")(invalidDate.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
     if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
     if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
-    if (numericSymbolMagnitude != null) __obj.updateDynamic("numericSymbolMagnitude")(numericSymbolMagnitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(numericSymbolMagnitude)) __obj.updateDynamic("numericSymbolMagnitude")(numericSymbolMagnitude.get.asInstanceOf[js.Any])
     if (numericSymbols != null) __obj.updateDynamic("numericSymbols")(numericSymbols.asInstanceOf[js.Any])
     if (printChart != null) __obj.updateDynamic("printChart")(printChart.asInstanceOf[js.Any])
     if (rangeSelectorFrom != null) __obj.updateDynamic("rangeSelectorFrom")(rangeSelectorFrom.asInstanceOf[js.Any])

@@ -13,14 +13,14 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    colors: Int | Double = null,
+    colors: js.UndefOr[Double] = js.undefined,
     interlaced: js.UndefOr[Boolean] = js.undefined,
-    optimizationLevel: Int | Double = null
+    optimizationLevel: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(interlaced)) __obj.updateDynamic("interlaced")(interlaced.asInstanceOf[js.Any])
-    if (optimizationLevel != null) __obj.updateDynamic("optimizationLevel")(optimizationLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interlaced)) __obj.updateDynamic("interlaced")(interlaced.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizationLevel)) __obj.updateDynamic("optimizationLevel")(optimizationLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

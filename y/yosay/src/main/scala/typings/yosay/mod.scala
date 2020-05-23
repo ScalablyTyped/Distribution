@@ -1,5 +1,6 @@
 package typings.yosay
 
+import typings.yosay.anon.MaxLength
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,6 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def apply(): String = js.native
   def apply(message: String): String = js.native
-  def apply(message: String, options: AnonMaxLength): String = js.native
+  def apply(message: String, options: MaxLength): String = js.native
 }
 

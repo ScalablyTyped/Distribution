@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADOX.Key")
 @js.native
-class Key protected () extends js.Object {
+trait Key extends js.Object {
   @JSName("ADOX.Key_typekey")
   var ADOXDotKey_typekey: Key = js.native
   @JSName("Columns")

@@ -17,15 +17,15 @@ object Options {
   @scala.inline
   def apply(
     method: js.Function,
-    backoffFactor: Int | Double = null,
-    backoffMax: Int | Double = null,
-    maxAttempts: Int | Double = null,
+    backoffFactor: js.UndefOr[Double] = js.undefined,
+    backoffMax: js.UndefOr[Double] = js.undefined,
+    maxAttempts: js.UndefOr[Double] = js.undefined,
     options: CommonOptions with WatchOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
-    if (backoffFactor != null) __obj.updateDynamic("backoffFactor")(backoffFactor.asInstanceOf[js.Any])
-    if (backoffMax != null) __obj.updateDynamic("backoffMax")(backoffMax.asInstanceOf[js.Any])
-    if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(backoffFactor)) __obj.updateDynamic("backoffFactor")(backoffFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backoffMax)) __obj.updateDynamic("backoffMax")(backoffMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAttempts)) __obj.updateDynamic("maxAttempts")(maxAttempts.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

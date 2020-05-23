@@ -19,16 +19,16 @@ trait IClientBatchListResponse extends js.Object {
 object IClientBatchListResponse {
   @scala.inline
   def apply(
-    batches: js.Array[IBatch] = null,
-    headId: String = null,
-    paging: IClientPagingResponse = null,
-    status: Status = null
+    batches: js.UndefOr[Null | js.Array[IBatch]] = js.undefined,
+    headId: js.UndefOr[Null | String] = js.undefined,
+    paging: js.UndefOr[Null | IClientPagingResponse] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
   ): IClientBatchListResponse = {
     val __obj = js.Dynamic.literal()
-    if (batches != null) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
-    if (headId != null) __obj.updateDynamic("headId")(headId.asInstanceOf[js.Any])
-    if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(batches)) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
+    if (!js.isUndefined(headId)) __obj.updateDynamic("headId")(headId.asInstanceOf[js.Any])
+    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBatchListResponse]
   }
 }

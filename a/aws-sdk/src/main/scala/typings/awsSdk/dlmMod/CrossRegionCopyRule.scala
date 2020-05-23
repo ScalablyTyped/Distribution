@@ -34,12 +34,12 @@ object CrossRegionCopyRule {
     Encrypted: Encrypted,
     TargetRegion: TargetRegion,
     CmkArn: CmkArn = null,
-    CopyTags: js.UndefOr[Boolean] = js.undefined,
+    CopyTags: js.UndefOr[CopyTagsNullable] = js.undefined,
     RetainRule: CrossRegionCopyRetainRule = null
   ): CrossRegionCopyRule = {
     val __obj = js.Dynamic.literal(Encrypted = Encrypted.asInstanceOf[js.Any], TargetRegion = TargetRegion.asInstanceOf[js.Any])
     if (CmkArn != null) __obj.updateDynamic("CmkArn")(CmkArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.get.asInstanceOf[js.Any])
     if (RetainRule != null) __obj.updateDynamic("RetainRule")(RetainRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossRegionCopyRule]
   }

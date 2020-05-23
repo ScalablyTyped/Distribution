@@ -29,14 +29,14 @@ object VolumeRecoveryPointInfo {
   def apply(
     VolumeARN: VolumeARN = null,
     VolumeRecoveryPointTime: String = null,
-    VolumeSizeInBytes: Int | Double = null,
-    VolumeUsageInBytes: Int | Double = null
+    VolumeSizeInBytes: js.UndefOr[long] = js.undefined,
+    VolumeUsageInBytes: js.UndefOr[long] = js.undefined
   ): VolumeRecoveryPointInfo = {
     val __obj = js.Dynamic.literal()
     if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN.asInstanceOf[js.Any])
     if (VolumeRecoveryPointTime != null) __obj.updateDynamic("VolumeRecoveryPointTime")(VolumeRecoveryPointTime.asInstanceOf[js.Any])
-    if (VolumeSizeInBytes != null) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.asInstanceOf[js.Any])
-    if (VolumeUsageInBytes != null) __obj.updateDynamic("VolumeUsageInBytes")(VolumeUsageInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSizeInBytes)) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeUsageInBytes)) __obj.updateDynamic("VolumeUsageInBytes")(VolumeUsageInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeRecoveryPointInfo]
   }
 }

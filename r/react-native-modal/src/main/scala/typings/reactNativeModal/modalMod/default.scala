@@ -1,8 +1,8 @@
 package typings.reactNativeModal.modalMod
 
-import typings.reactNativeModal.AnonAnimationIn
-import typings.reactNativeModal.AnonAnimationInTiming
-import typings.reactNativeModal.AnonIsVisible
+import typings.reactNativeModal.anon.AnimationIn
+import typings.reactNativeModal.anon.AnimationInTiming
+import typings.reactNativeModal.anon.IsVisible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +17,8 @@ class default protected () extends ReactNativeModal {
 @JSImport("react-native-modal/dist/modal", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAnimationInTiming = js.native
-  var propTypes: AnonAnimationIn = js.native
-  def getDerivedStateFromProps(nextProps: ModalProps, state: State): AnonIsVisible | Null = js.native
+  var defaultProps: AnimationInTiming = js.native
+  var propTypes: AnimationIn = js.native
+  def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = js.native
 }
 

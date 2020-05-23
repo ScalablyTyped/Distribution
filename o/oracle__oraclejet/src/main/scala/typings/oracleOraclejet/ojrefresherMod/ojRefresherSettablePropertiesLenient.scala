@@ -19,11 +19,11 @@ trait ojRefresherSettablePropertiesLenient
 object ojRefresherSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     refreshContent: () => js.Promise[_] = null,
     target: Element = null,
     text: String = null,
-    threshold: Int | Double = null,
+    threshold: js.UndefOr[Double] = js.undefined,
     translations: js.Object = null
   ): ojRefresherSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
@@ -31,7 +31,7 @@ object ojRefresherSettablePropertiesLenient {
     if (refreshContent != null) __obj.updateDynamic("refreshContent")(js.Any.fromFunction0(refreshContent))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojRefresherSettablePropertiesLenient]
   }

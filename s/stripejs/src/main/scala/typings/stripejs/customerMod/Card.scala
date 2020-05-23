@@ -180,7 +180,7 @@ object Card {
     if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency.get.asInstanceOf[js.Any])
     if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
     __obj.asInstanceOf[Card]
   }

@@ -27,9 +27,9 @@ object FilteringOptions {
     isNotEmpty: js.UndefOr[Boolean] = js.undefined
   ): FilteringOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasInterestingFace)) __obj.updateDynamic("hasInterestingFace")(hasInterestingFace.asInstanceOf[js.Any])
-    if (!js.isUndefined(isColliding)) __obj.updateDynamic("isColliding")(isColliding.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNotEmpty)) __obj.updateDynamic("isNotEmpty")(isNotEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasInterestingFace)) __obj.updateDynamic("hasInterestingFace")(hasInterestingFace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isColliding)) __obj.updateDynamic("isColliding")(isColliding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNotEmpty)) __obj.updateDynamic("isNotEmpty")(isNotEmpty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilteringOptions]
   }
 }

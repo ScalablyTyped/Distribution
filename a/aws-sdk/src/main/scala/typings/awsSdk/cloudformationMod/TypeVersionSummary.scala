@@ -15,6 +15,10 @@ trait TypeVersionSummary extends js.Object {
     */
   var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
   /**
+    * Whether the specified type version is set as the default version.
+    */
+  var IsDefaultVersion: js.UndefOr[typings.awsSdk.cloudformationMod.IsDefaultVersion] = js.native
+  /**
     * When the version was registered.
     */
   var TimeCreated: js.UndefOr[Timestamp] = js.native
@@ -37,6 +41,7 @@ object TypeVersionSummary {
   def apply(
     Arn: TypeArn = null,
     Description: Description = null,
+    IsDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
     TimeCreated: Timestamp = null,
     Type: RegistryType = null,
     TypeName: TypeName = null,
@@ -45,6 +50,7 @@ object TypeVersionSummary {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefaultVersion)) __obj.updateDynamic("IsDefaultVersion")(IsDefaultVersion.get.asInstanceOf[js.Any])
     if (TimeCreated != null) __obj.updateDynamic("TimeCreated")(TimeCreated.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])

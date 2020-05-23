@@ -21,9 +21,9 @@ object ExecutableOptions {
   ): ExecutableOptions = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.get.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(shell)) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
+    if (!js.isUndefined(shell)) __obj.updateDynamic("shell")(shell.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutableOptions]
   }
 }

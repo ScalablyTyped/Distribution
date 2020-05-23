@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Activation
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object ApplicationExecutionState extends js.Object {
   /** The app was terminated after being suspended. */
   @js.native
   sealed trait terminated extends ApplicationExecutionState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ApplicationExecutionState with Double] = js.native
-  /* 4 */ @js.native
-  object closedByUser extends TopLevel[closedByUser with Double]
-  
-  /* 0 */ @js.native
-  object notRunning extends TopLevel[notRunning with Double]
-  
-  /* 1 */ @js.native
-  object running extends TopLevel[running with Double]
-  
-  /* 2 */ @js.native
-  object suspended extends TopLevel[suspended with Double]
-  
-  /* 3 */ @js.native
-  object terminated extends TopLevel[terminated with Double]
   
 }
 

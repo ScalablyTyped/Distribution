@@ -1,7 +1,7 @@
 package typings.formik.formMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.formik.PickDetailedHTMLPropsForm
+import typings.formik.anon.PickDetailedHTMLPropsForm
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

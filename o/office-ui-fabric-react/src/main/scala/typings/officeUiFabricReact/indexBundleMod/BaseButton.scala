@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.PartialIBaseButtonProps
+import typings.officeUiFabricReact.anon.PartialIBaseButtonProps
 import typings.officeUiFabricReact.baseButtonMod.IBaseButtonProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

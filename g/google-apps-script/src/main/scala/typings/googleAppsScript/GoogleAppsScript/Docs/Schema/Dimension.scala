@@ -11,9 +11,9 @@ trait Dimension extends js.Object {
 
 object Dimension {
   @scala.inline
-  def apply(magnitude: Int | Double = null, unit: String = null): Dimension = {
+  def apply(magnitude: js.UndefOr[Double] = js.undefined, unit: String = null): Dimension = {
     val __obj = js.Dynamic.literal()
-    if (magnitude != null) __obj.updateDynamic("magnitude")(magnitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(magnitude)) __obj.updateDynamic("magnitude")(magnitude.get.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimension]
   }

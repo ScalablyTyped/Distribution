@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(ignorecase: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignorecase)) __obj.updateDynamic("ignorecase")(ignorecase.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorecase)) __obj.updateDynamic("ignorecase")(ignorecase.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

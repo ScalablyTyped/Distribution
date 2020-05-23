@@ -41,10 +41,10 @@ object MouseDownEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    checkedItems: Int | Double = null,
+    checkedItems: js.UndefOr[Double] = js.undefined,
     checkedItemsText: String = null,
     hasChild: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     isChecked: js.UndefOr[Boolean] = js.undefined,
     item: String = null,
     model: Model = null,
@@ -52,12 +52,12 @@ object MouseDownEventArgs {
     `type`: String = null
   ): MouseDownEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (checkedItems != null) __obj.updateDynamic("checkedItems")(checkedItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkedItems)) __obj.updateDynamic("checkedItems")(checkedItems.get.asInstanceOf[js.Any])
     if (checkedItemsText != null) __obj.updateDynamic("checkedItemsText")(checkedItemsText.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasChild)) __obj.updateDynamic("hasChild")(hasChild.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasChild)) __obj.updateDynamic("hasChild")(hasChild.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.get.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

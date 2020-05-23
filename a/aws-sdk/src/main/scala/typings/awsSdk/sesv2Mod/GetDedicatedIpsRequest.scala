@@ -22,10 +22,14 @@ trait GetDedicatedIpsRequest extends js.Object {
 
 object GetDedicatedIpsRequest {
   @scala.inline
-  def apply(NextToken: NextToken = null, PageSize: Int | Double = null, PoolName: PoolName = null): GetDedicatedIpsRequest = {
+  def apply(
+    NextToken: NextToken = null,
+    PageSize: js.UndefOr[MaxItems] = js.undefined,
+    PoolName: PoolName = null
+  ): GetDedicatedIpsRequest = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     if (PoolName != null) __obj.updateDynamic("PoolName")(PoolName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDedicatedIpsRequest]
   }

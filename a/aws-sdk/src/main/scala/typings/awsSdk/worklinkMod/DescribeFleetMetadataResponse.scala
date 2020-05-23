@@ -45,7 +45,7 @@ object DescribeFleetMetadataResponse {
     FleetName: FleetName = null,
     FleetStatus: FleetStatus = null,
     LastUpdatedTime: DateTime = null,
-    OptimizeForEndUserLocation: js.UndefOr[scala.Boolean] = js.undefined
+    OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined
   ): DescribeFleetMetadataResponse = {
     val __obj = js.Dynamic.literal()
     if (CompanyCode != null) __obj.updateDynamic("CompanyCode")(CompanyCode.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object DescribeFleetMetadataResponse {
     if (FleetName != null) __obj.updateDynamic("FleetName")(FleetName.asInstanceOf[js.Any])
     if (FleetStatus != null) __obj.updateDynamic("FleetStatus")(FleetStatus.asInstanceOf[js.Any])
     if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(OptimizeForEndUserLocation)) __obj.updateDynamic("OptimizeForEndUserLocation")(OptimizeForEndUserLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(OptimizeForEndUserLocation)) __obj.updateDynamic("OptimizeForEndUserLocation")(OptimizeForEndUserLocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFleetMetadataResponse]
   }
 }

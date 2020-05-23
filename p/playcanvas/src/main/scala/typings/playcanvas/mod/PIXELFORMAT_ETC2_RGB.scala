@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.PIXELFORMAT_ETC2_RGB
-  * @type {number}
-  * @description ETC2 (RGB) compressed format.
+  * ETC2 (RGB) compressed format.
   */
 @JSImport("playcanvas", "PIXELFORMAT_ETC2_RGB")
 @js.native

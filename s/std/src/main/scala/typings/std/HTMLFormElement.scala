@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
@@ -109,8 +108,4 @@ trait HTMLFormElement
     */
   def submit(): Unit = js.native
 }
-
-@JSGlobal("HTMLFormElement")
-@js.native
-object HTMLFormElement extends Instantiable0[HTMLFormElement]
 

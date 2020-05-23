@@ -13,10 +13,10 @@ trait FileChunkIteratorOptions extends js.Object {
 
 object FileChunkIteratorOptions {
   @scala.inline
-  def apply(chunkSize: Int | Double = null, offset: Int | Double = null): FileChunkIteratorOptions = {
+  def apply(chunkSize: js.UndefOr[Double] = js.undefined, offset: js.UndefOr[Double] = js.undefined): FileChunkIteratorOptions = {
     val __obj = js.Dynamic.literal()
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileChunkIteratorOptions]
   }
 }

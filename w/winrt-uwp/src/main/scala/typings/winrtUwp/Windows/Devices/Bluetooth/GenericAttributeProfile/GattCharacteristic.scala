@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a Characteristic of a GATT service. */
-@JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic")
 @js.native
-abstract class GattCharacteristic () extends js.Object {
+trait GattCharacteristic extends js.Object {
   /** Gets the handle used to uniquely identify GATT-based characteristic attributes as declared on the Bluetooth LE device. */
   var attributeHandle: Double = js.native
   /** Gets the GATT characteristic properties, as defined by the GATT profile. */
@@ -89,17 +88,5 @@ abstract class GattCharacteristic () extends js.Object {
     * @return The object that manages the asynchronous operation, which, upon completion, returns the status with which the operation completed.
     */
   def writeValueAsync(value: IBuffer, writeOption: GattWriteOption): IPromiseWithIAsyncOperation[GattCommunicationStatus] = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic")
-@js.native
-object GattCharacteristic extends js.Object {
-  /**
-    * Converts a Bluetooth SIG defined short Id to a full GATT UUID.
-    * @param shortId A 16-bit Bluetooth GATT Service UUID.
-    * @return The corresponding 128-bit GATT Characteristic UUID, that uniquely identifies this characteristic.
-    */
-  def convertShortIdToUuid(shortId: Double): String = js.native
 }
 

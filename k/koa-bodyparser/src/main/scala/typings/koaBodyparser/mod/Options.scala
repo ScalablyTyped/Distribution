@@ -1,7 +1,7 @@
 package typings.koaBodyparser.mod
 
 import typings.koa.mod.Context
-import typings.koaBodyparser.AnonForm
+import typings.koaBodyparser.anon.Form
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait Options extends js.Object {
   /**
     * support extend types
     */
-  var extendTypes: js.UndefOr[AnonForm] = js.undefined
+  var extendTypes: js.UndefOr[Form] = js.undefined
   /**
     * limit of the urlencoded body. If the body ends up being larger than this limit
     * a 413 error code is returned. Default is 56kb
@@ -53,7 +53,7 @@ object Options {
     detectJSON: /* ctx */ Context => Boolean = null,
     enableTypes: js.Array[String] = null,
     encode: String = null,
-    extendTypes: AnonForm = null,
+    extendTypes: Form = null,
     formLimit: String = null,
     jsonLimit: String = null,
     onerror: (/* err */ Error, /* ctx */ Context) => Unit = null,
@@ -68,7 +68,7 @@ object Options {
     if (formLimit != null) __obj.updateDynamic("formLimit")(formLimit.asInstanceOf[js.Any])
     if (jsonLimit != null) __obj.updateDynamic("jsonLimit")(jsonLimit.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction2(onerror))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     if (textLimit != null) __obj.updateDynamic("textLimit")(textLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

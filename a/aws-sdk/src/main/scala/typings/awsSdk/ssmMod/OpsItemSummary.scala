@@ -66,7 +66,7 @@ object OpsItemSummary {
     LastModifiedTime: DateTime = null,
     OperationalData: OpsItemOperationalData = null,
     OpsItemId: OpsItemId = null,
-    Priority: Int | Double = null,
+    Priority: js.UndefOr[OpsItemPriority] = js.undefined,
     Severity: OpsItemSeverity = null,
     Source: OpsItemSource = null,
     Status: OpsItemStatus = null,
@@ -80,7 +80,7 @@ object OpsItemSummary {
     if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
     if (OperationalData != null) __obj.updateDynamic("OperationalData")(OperationalData.asInstanceOf[js.Any])
     if (OpsItemId != null) __obj.updateDynamic("OpsItemId")(OpsItemId.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (Severity != null) __obj.updateDynamic("Severity")(Severity.asInstanceOf[js.Any])
     if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

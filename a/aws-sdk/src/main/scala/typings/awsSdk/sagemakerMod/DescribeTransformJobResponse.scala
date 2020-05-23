@@ -95,8 +95,8 @@ object DescribeTransformJobResponse {
     ExperimentConfig: ExperimentConfig = null,
     FailureReason: FailureReason = null,
     LabelingJobArn: LabelingJobArn = null,
-    MaxConcurrentTransforms: Int | Double = null,
-    MaxPayloadInMB: Int | Double = null,
+    MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined,
+    MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined,
     TransformEndTime: Timestamp = null,
     TransformOutput: TransformOutput = null,
     TransformStartTime: Timestamp = null
@@ -109,8 +109,8 @@ object DescribeTransformJobResponse {
     if (ExperimentConfig != null) __obj.updateDynamic("ExperimentConfig")(ExperimentConfig.asInstanceOf[js.Any])
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
     if (LabelingJobArn != null) __obj.updateDynamic("LabelingJobArn")(LabelingJobArn.asInstanceOf[js.Any])
-    if (MaxConcurrentTransforms != null) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms.asInstanceOf[js.Any])
-    if (MaxPayloadInMB != null) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxConcurrentTransforms)) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxPayloadInMB)) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB.get.asInstanceOf[js.Any])
     if (TransformEndTime != null) __obj.updateDynamic("TransformEndTime")(TransformEndTime.asInstanceOf[js.Any])
     if (TransformOutput != null) __obj.updateDynamic("TransformOutput")(TransformOutput.asInstanceOf[js.Any])
     if (TransformStartTime != null) __obj.updateDynamic("TransformStartTime")(TransformStartTime.asInstanceOf[js.Any])

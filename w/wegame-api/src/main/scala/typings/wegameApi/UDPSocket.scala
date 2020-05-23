@@ -1,5 +1,6 @@
 package typings.wegameApi
 
+import typings.wegameApi.anon.ErrMsg
 import typings.wegameApi.wx.types.UDPMessage
 import typings.wegameApi.wx.types.UDPSendParams
 import scala.scalajs.js
@@ -15,9 +16,8 @@ import scala.scalajs.js.annotation._
   *     1  发送失败，参数错误，address不合法
   *     2  发送失败，参数错误，port不合法
   */
-@JSGlobal("UDPSocket")
 @js.native
-class UDPSocket () extends js.Object {
+trait UDPSocket extends js.Object {
   /**
     * 绑定一个系统随机分配的可用端口，或绑定一个指定的端口号
     * @param port 需要绑定的端口号，不指定时使用随机端口
@@ -40,7 +40,7 @@ class UDPSocket () extends js.Object {
     * 取消监听错误事件
     * @param callback 之前设置的错误回调函数
     */
-  def offError(callback: js.Function1[/* res */ AnonErrMsg, Unit]): Unit = js.native
+  def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
   /**
     * 取消监听开始监听数据包消息的事件
     * @param callback 之前设置的回调函数
@@ -60,7 +60,7 @@ class UDPSocket () extends js.Object {
     * 监听错误事件
     * @param callback 错误回调函数
     */
-  def onError(callback: js.Function1[/* res */ AnonErrMsg, Unit]): Unit = js.native
+  def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
   /**
     * 监听开始监听数据包消息的事件
     * @param callback 回调函数

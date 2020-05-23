@@ -24,11 +24,11 @@ object GrpcRouteMetadata {
   @scala.inline
   def apply(
     name: HeaderName,
-    invert: js.UndefOr[scala.Boolean] = js.undefined,
+    invert: js.UndefOr[Boolean] = js.undefined,
     `match`: GrpcRouteMetadataMatchMethod = null
   ): GrpcRouteMetadata = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.get.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrpcRouteMetadata]
   }

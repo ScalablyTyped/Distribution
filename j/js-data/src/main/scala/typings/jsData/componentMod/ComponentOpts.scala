@@ -12,7 +12,7 @@ object ComponentOpts {
   @scala.inline
   def apply(debug: js.UndefOr[Boolean] = js.undefined): ComponentOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOpts]
   }
 }

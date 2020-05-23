@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.CurrentProject")
 @js.native
-class CurrentProject protected () extends js.Object {
+trait CurrentProject extends js.Object {
   val AccessConnection: typings.activexAdodb.ADODB.Connection = js.native
   @JSName("Access.CurrentProject_typekey")
   var AccessDotCurrentProject_typekey: CurrentProject = js.native

@@ -53,8 +53,7 @@ object filters extends js.Object {
     * @memberof PIXI.filters
     */
   @js.native
-  class AlphaFilter () extends Filter {
-    def this(alpha: Double) = this()
+  trait AlphaFilter extends Filter {
     /**
       * Coefficient for alpha multiplication
       *
@@ -74,11 +73,7 @@ object filters extends js.Object {
     * @memberof PIXI.filters
     */
   @js.native
-  class BlurFilter () extends Filter {
-    def this(strength: Double) = this()
-    def this(strength: Double, quality: Double) = this()
-    def this(strength: Double, quality: Double, resolution: Double) = this()
-    def this(strength: Double, quality: Double, resolution: Double, kernelSize: Double) = this()
+  trait BlurFilter extends Filter {
     /**
       * Sets the strength of both the blurX and blurY properties simultaneously
       *
@@ -133,9 +128,7 @@ object filters extends js.Object {
     * @memberof PIXI.filters
     */
   @js.native
-  class BlurFilterPass protected () extends Filter {
-    def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double) = this()
-    def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double, kernelSize: Double) = this()
+  trait BlurFilterPass extends Filter {
     /**
       * Sets the strength of both the blur.
       *
@@ -169,7 +162,7 @@ object filters extends js.Object {
     * @memberof PIXI.filters
     */
   @js.native
-  class ColorMatrixFilter () extends Filter {
+  trait ColorMatrixFilter extends Filter {
     /**
       * The opacity value to use when mixing the original and resultant colors.
       *
@@ -373,9 +366,7 @@ object filters extends js.Object {
     * @memberof PIXI.filters
     */
   @js.native
-  class DisplacementFilter protected () extends Filter {
-    def this(sprite: Sprite) = this()
-    def this(sprite: Sprite, scale: Double) = this()
+  trait DisplacementFilter extends Filter {
     /**
       * The texture used for the displacement map. Must be power of 2 sized texture.
       *
@@ -401,7 +392,7 @@ object filters extends js.Object {
     *
     */
   @js.native
-  class FXAAFilter () extends Filter
+  trait FXAAFilter extends Filter
   
   /**
     * A Noise effect filter.
@@ -411,9 +402,7 @@ object filters extends js.Object {
     * @memberof PIXI.filters
     */
   @js.native
-  class NoiseFilter () extends Filter {
-    def this(noise: Double) = this()
-    def this(noise: Double, seed: Double) = this()
+  trait NoiseFilter extends Filter {
     /**
       * The amount of noise to apply, this value should be in the range (0, 1].
       *

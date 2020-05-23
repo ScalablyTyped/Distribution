@@ -282,7 +282,7 @@ trait SVGAttributes[Target /* <: EventTarget */] extends HTMLAttributes[Target] 
 
 object SVGAttributes {
   @scala.inline
-  def apply[Target /* <: EventTarget */](
+  def apply[Target](
     HTMLAttributes: HTMLAttributes[Target] = null,
     accentHeight: Double | String = null,
     accumulate: none | sum = null,

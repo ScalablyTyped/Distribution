@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait CardMediaProps
   extends Props
      with /**
-  * Additional properties passed to component root.
+  * Additional properties passed to inner input element.
   */
 /* key */ StringDictionary[js.Any] {
   /**
@@ -47,7 +47,7 @@ object CardMediaProps {
   @scala.inline
   def apply(
     StringDictionary: /**
-    * Additional properties passed to component root.
+    * Additional properties passed to inner input element.
     */
   /* key */ StringDictionary[js.Any] = null,
     aspectRatio: wide | square = null,
@@ -88,7 +88,7 @@ object CardMediaProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentOverlay)) __obj.updateDynamic("contentOverlay")(contentOverlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentOverlay)) __obj.updateDynamic("contentOverlay")(contentOverlay.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])

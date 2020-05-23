@@ -15,7 +15,7 @@ object IsEmptyOptions {
   @scala.inline
   def apply(ignore_whitespace: js.UndefOr[Boolean] = js.undefined): IsEmptyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignore_whitespace)) __obj.updateDynamic("ignore_whitespace")(ignore_whitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore_whitespace)) __obj.updateDynamic("ignore_whitespace")(ignore_whitespace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsEmptyOptions]
   }
 }

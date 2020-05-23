@@ -22,7 +22,7 @@ object Tag {
     following: js.UndefOr[Boolean] = js.undefined
   ): Tag = {
     val __obj = js.Dynamic.literal(followers = followers.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], total_items = total_items.asInstanceOf[js.Any])
-    if (!js.isUndefined(following)) __obj.updateDynamic("following")(following.asInstanceOf[js.Any])
+    if (!js.isUndefined(following)) __obj.updateDynamic("following")(following.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
 }

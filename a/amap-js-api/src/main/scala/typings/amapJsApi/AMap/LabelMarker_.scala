@@ -1,14 +1,11 @@
 package typings.amapJsApi.AMap
 
-import typings.amapJsApi.AMap.LabelMarker.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.LabelMarker")
 @js.native
-class LabelMarker_[ExtraData] () extends Overlay[ExtraData] {
-  def this(options: Options[_]) = this()
+trait LabelMarker_[ExtraData] extends Overlay[ExtraData] {
    // should be void
   // internal
   def getBounds(): Bounds = js.native

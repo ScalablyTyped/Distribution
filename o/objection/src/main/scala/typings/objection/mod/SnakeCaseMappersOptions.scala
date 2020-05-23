@@ -18,9 +18,9 @@ object SnakeCaseMappersOptions {
     upperCase: js.UndefOr[Boolean] = js.undefined
   ): SnakeCaseMappersOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(underscoreBeforeDigits)) __obj.updateDynamic("underscoreBeforeDigits")(underscoreBeforeDigits.asInstanceOf[js.Any])
-    if (!js.isUndefined(underscoreBetweenUppercaseLetters)) __obj.updateDynamic("underscoreBetweenUppercaseLetters")(underscoreBetweenUppercaseLetters.asInstanceOf[js.Any])
-    if (!js.isUndefined(upperCase)) __obj.updateDynamic("upperCase")(upperCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(underscoreBeforeDigits)) __obj.updateDynamic("underscoreBeforeDigits")(underscoreBeforeDigits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(underscoreBetweenUppercaseLetters)) __obj.updateDynamic("underscoreBetweenUppercaseLetters")(underscoreBetweenUppercaseLetters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperCase)) __obj.updateDynamic("upperCase")(upperCase.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnakeCaseMappersOptions]
   }
 }

@@ -1,11 +1,11 @@
 package typings.fundamentalReact.treeViewMod
 
-import typings.fundamentalReact.ComponentClassComponentSt
-import typings.fundamentalReact.ComponentClassComponentStInstantiable
-import typings.fundamentalReact.ComponentClassTreeColProp
-import typings.fundamentalReact.ComponentClassTreeHeadPro
-import typings.fundamentalReact.ComponentClassTreeItemPro
-import typings.fundamentalReact.ComponentClassTreeRowProp
+import typings.fundamentalReact.anon.ComponentClassComponentSt
+import typings.fundamentalReact.anon.ComponentClassComponentStInstantiable
+import typings.fundamentalReact.anon.ComponentClassTreeColProp
+import typings.fundamentalReact.anon.ComponentClassTreeHeadPro
+import typings.fundamentalReact.anon.ComponentClassTreeItemPro
+import typings.fundamentalReact.anon.ComponentClassTreeRowProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

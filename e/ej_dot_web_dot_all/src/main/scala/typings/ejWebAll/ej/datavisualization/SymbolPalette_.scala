@@ -1,20 +1,13 @@
 package typings.ejWebAll.ej.datavisualization
 
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Widget_
 import typings.ejWebAll.ej.datavisualization.SymbolPalette.Model
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.datavisualization.SymbolPalette")
 @js.native
-class SymbolPalette_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: Model) = this()
-  def this(element: Element, options: Model) = this()
+trait SymbolPalette_ extends Widget_ {
   var defaults: Model = js.native
   @JSName("model")
   var model_SymbolPalette_ : Model = js.native

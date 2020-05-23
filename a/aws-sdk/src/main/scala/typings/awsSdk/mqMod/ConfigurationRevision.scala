@@ -22,11 +22,15 @@ trait ConfigurationRevision extends js.Object {
 
 object ConfigurationRevision {
   @scala.inline
-  def apply(Created: timestampIso8601 = null, Description: string = null, Revision: Int | Double = null): ConfigurationRevision = {
+  def apply(
+    Created: timestampIso8601 = null,
+    Description: string = null,
+    Revision: js.UndefOr[integer] = js.undefined
+  ): ConfigurationRevision = {
     val __obj = js.Dynamic.literal()
     if (Created != null) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Revision != null) __obj.updateDynamic("Revision")(Revision.asInstanceOf[js.Any])
+    if (!js.isUndefined(Revision)) __obj.updateDynamic("Revision")(Revision.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationRevision]
   }
 }

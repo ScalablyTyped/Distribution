@@ -84,7 +84,7 @@ object Job {
     completedAt: DateType = null,
     createdAt: DateType = null,
     description: JobDescription = null,
-    forceCanceled: js.UndefOr[scala.Boolean] = js.undefined,
+    forceCanceled: js.UndefOr[Forced] = js.undefined,
     jobArn: JobArn = null,
     jobExecutionsRolloutConfig: JobExecutionsRolloutConfig = null,
     jobId: JobId = null,
@@ -103,7 +103,7 @@ object Job {
     if (completedAt != null) __obj.updateDynamic("completedAt")(completedAt.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceCanceled)) __obj.updateDynamic("forceCanceled")(forceCanceled.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceCanceled)) __obj.updateDynamic("forceCanceled")(forceCanceled.get.asInstanceOf[js.Any])
     if (jobArn != null) __obj.updateDynamic("jobArn")(jobArn.asInstanceOf[js.Any])
     if (jobExecutionsRolloutConfig != null) __obj.updateDynamic("jobExecutionsRolloutConfig")(jobExecutionsRolloutConfig.asInstanceOf[js.Any])
     if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])

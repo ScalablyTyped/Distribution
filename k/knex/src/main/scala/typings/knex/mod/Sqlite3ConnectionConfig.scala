@@ -19,7 +19,7 @@ object Sqlite3ConnectionConfig {
     expirationChecker: () => Boolean = null
   ): Sqlite3ConnectionConfig = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (expirationChecker != null) __obj.updateDynamic("expirationChecker")(js.Any.fromFunction0(expirationChecker))
     __obj.asInstanceOf[Sqlite3ConnectionConfig]
   }

@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-field-form/lib", JSImport.Namespace)
+@JSImport("rc-field-form", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   @js.native

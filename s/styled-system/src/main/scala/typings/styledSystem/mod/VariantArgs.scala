@@ -21,7 +21,7 @@ trait VariantArgs[TStyle, K /* <: String */, TPropName] extends js.Object {
 
 object VariantArgs {
   @scala.inline
-  def apply[TStyle, K /* <: String */, TPropName](
+  def apply[TStyle, K, TPropName](
     key: String = null,
     prop: TPropName = null,
     scale: String = null,

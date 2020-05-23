@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
-	 * Any Javascript object that has a view method can be used as a Mithril component.
-	 * Components can be consumed via the m() utility.
-	 */
+  * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.
+  * Any Javascript object that has a view method can be used as a Mithril component.
+  * Components can be consumed via the m() utility.
+  */
 trait Component[Attrs, State /* <: Lifecycle[Attrs, State] */]
   extends Lifecycle[Attrs, State]
      with _ComponentTypes[Attrs, State] {
@@ -18,7 +18,7 @@ trait Component[Attrs, State /* <: Lifecycle[Attrs, State] */]
 
 object Component {
   @scala.inline
-  def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](
+  def apply[Attrs, State](
     view: Vnode[Attrs, State] => Children | Null | Unit,
     onbeforeremove: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | Unit] = null,
     onbeforeupdate: js.ThisFunction2[

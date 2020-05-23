@@ -20,7 +20,7 @@ object Config {
     viewModel: T = null
   ): Config[T] = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.get.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config[T]]
   }

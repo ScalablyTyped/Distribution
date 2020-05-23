@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLPhraseElement")
 @js.native
-class HTMLPhraseElement protected () extends js.Object {
+trait HTMLPhraseElement extends js.Object {
   @JSName("MSHTML.HTMLPhraseElement_typekey")
   var MSHTMLDotHTMLPhraseElement_typekey: HTMLPhraseElement = js.native
   var accessKey: String = js.native

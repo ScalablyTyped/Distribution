@@ -15,7 +15,7 @@ trait ModelTableOpts[MClass /* <: Instantiable0[AnyModel] */] extends js.Object 
 
 object ModelTableOpts {
   @scala.inline
-  def apply[MClass /* <: Instantiable0[AnyModel] */](
+  def apply[MClass](
     arrName: ArrName[MClass],
     fields: /* import warning: importer.ImportType#apply Failed type conversion: MClass['fields'] */ js.Any,
     idAttribute: IdAttribute[MClass],

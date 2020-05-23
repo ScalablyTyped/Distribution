@@ -1,6 +1,6 @@
 package typings.postcssSelectorParser.mod
 
-import typings.postcssSelectorParser.PartialOptions
+import typings.postcssSelectorParser.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

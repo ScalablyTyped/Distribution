@@ -39,12 +39,12 @@ trait Layersummary extends js.Object {
 object Layersummary {
   @scala.inline
   def apply(
-    annotationCount: Int | Double = null,
+    annotationCount: js.UndefOr[Double] = js.undefined,
     annotationTypes: js.Array[String] = null,
     annotationsDataLink: String = null,
     annotationsLink: String = null,
     contentVersion: String = null,
-    dataCount: Int | Double = null,
+    dataCount: js.UndefOr[Double] = js.undefined,
     id: String = null,
     kind: String = null,
     layerId: String = null,
@@ -54,12 +54,12 @@ object Layersummary {
     volumeId: String = null
   ): Layersummary = {
     val __obj = js.Dynamic.literal()
-    if (annotationCount != null) __obj.updateDynamic("annotationCount")(annotationCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotationCount)) __obj.updateDynamic("annotationCount")(annotationCount.get.asInstanceOf[js.Any])
     if (annotationTypes != null) __obj.updateDynamic("annotationTypes")(annotationTypes.asInstanceOf[js.Any])
     if (annotationsDataLink != null) __obj.updateDynamic("annotationsDataLink")(annotationsDataLink.asInstanceOf[js.Any])
     if (annotationsLink != null) __obj.updateDynamic("annotationsLink")(annotationsLink.asInstanceOf[js.Any])
     if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion.asInstanceOf[js.Any])
-    if (dataCount != null) __obj.updateDynamic("dataCount")(dataCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataCount)) __obj.updateDynamic("dataCount")(dataCount.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])

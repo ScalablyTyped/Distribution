@@ -1,15 +1,15 @@
 package typings.fsMock.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fsMock.AnonBufferSize
-import typings.fsMock.AnonEncoding
-import typings.fsMock.AnonEncodingFlag
-import typings.fsMock.AnonFd
-import typings.fsMock.AnonFlag
-import typings.fsMock.AnonFlags
-import typings.fsMock.AnonInterval
-import typings.fsMock.AnonMode
-import typings.fsMock.AnonPersistent
+import typings.fsMock.anon.BufferSize
+import typings.fsMock.anon.Encoding
+import typings.fsMock.anon.EncodingFlag
+import typings.fsMock.anon.Fd
+import typings.fsMock.anon.Flag
+import typings.fsMock.anon.Flags
+import typings.fsMock.anon.Interval
+import typings.fsMock.anon.Mode
+import typings.fsMock.anon.Persistent
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.FSWatcher
@@ -25,23 +25,23 @@ import scala.scalajs.js.annotation._
 trait FS extends js.Object {
   def appendFile(filename: String, data: js.Any): Unit = js.native
   def appendFile(filename: String, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  def appendFile(filename: String, data: js.Any, options: AnonEncodingFlag): Unit = js.native
+  def appendFile(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
   def appendFile(
     filename: String,
     data: js.Any,
-    options: AnonEncodingFlag,
+    options: EncodingFlag,
     callback: js.Function1[/* err */ ErrnoException, Unit]
   ): Unit = js.native
-  def appendFile(filename: String, data: js.Any, options: AnonMode): Unit = js.native
+  def appendFile(filename: String, data: js.Any, options: Mode): Unit = js.native
   def appendFile(
     filename: String,
     data: js.Any,
-    options: AnonMode,
+    options: Mode,
     callback: js.Function1[/* err */ ErrnoException, Unit]
   ): Unit = js.native
   def appendFileSync(filename: String, data: js.Any): Unit = js.native
-  def appendFileSync(filename: String, data: js.Any, options: AnonEncodingFlag): Unit = js.native
-  def appendFileSync(filename: String, data: js.Any, options: AnonMode): Unit = js.native
+  def appendFileSync(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
+  def appendFileSync(filename: String, data: js.Any, options: Mode): Unit = js.native
   def chmod(path: String, mode: String): Unit = js.native
   def chmod(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def chmod(path: String, mode: Double): Unit = js.native
@@ -60,10 +60,10 @@ trait FS extends js.Object {
   def close(fd: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def closeSync(fd: Double): Unit = js.native
   def createReadStream(path: String): ReadStream = js.native
-  def createReadStream(path: String, options: AnonBufferSize): ReadStream = js.native
-  def createReadStream(path: String, options: AnonFd): ReadStream = js.native
+  def createReadStream(path: String, options: BufferSize): ReadStream = js.native
+  def createReadStream(path: String, options: Fd): ReadStream = js.native
   def createWriteStream(path: String): WriteStream = js.native
-  def createWriteStream(path: String, options: AnonFlags): WriteStream = js.native
+  def createWriteStream(path: String, options: Flags): WriteStream = js.native
   def exists(path: String): Unit = js.native
   def exists(path: String, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
   def existsSync(path: String): Boolean = js.native
@@ -178,18 +178,18 @@ trait FS extends js.Object {
   ): Unit = js.native
   def readFile(
     filename: String,
-    options: AnonEncoding,
+    options: Encoding,
     callback: js.Function2[/* err */ ErrnoException, /* data */ String, Unit]
   ): Unit = js.native
   def readFile(
     filename: String,
-    options: AnonFlag,
+    options: Flag,
     callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]
   ): Unit = js.native
   def readFileSync(filename: String): Buffer = js.native
   def readFileSync(filename: String, encoding: String): String = js.native
-  def readFileSync(filename: String, options: AnonEncoding): String = js.native
-  def readFileSync(filename: String, options: AnonFlag): Buffer = js.native
+  def readFileSync(filename: String, options: Encoding): String = js.native
+  def readFileSync(filename: String, options: Flag): Buffer = js.native
   def readSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
   def readdir(path: String): Unit = js.native
   def readdir(path: String, callback: js.Function2[/* err */ ErrnoException, /* files */ js.Array[String], Unit]): Unit = js.native
@@ -258,16 +258,16 @@ trait FS extends js.Object {
   def utimesSync(path: String, atime: Date, mtime: Date): Unit = js.native
   def watch(filename: String): FSWatcher = js.native
   def watch(filename: String, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
-  def watch(filename: String, options: AnonPersistent): FSWatcher = js.native
+  def watch(filename: String, options: Persistent): FSWatcher = js.native
   def watch(
     filename: String,
-    options: AnonPersistent,
+    options: Persistent,
     listener: js.Function2[/* event */ String, /* filename */ String, _]
   ): FSWatcher = js.native
   def watchFile(filename: String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
   def watchFile(
     filename: String,
-    options: AnonInterval,
+    options: Interval,
     listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
   ): Unit = js.native
   def write(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Unit = js.native
@@ -281,23 +281,23 @@ trait FS extends js.Object {
   ): Unit = js.native
   def writeFile(filename: String, data: js.Any): Unit = js.native
   def writeFile(filename: String, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
-  def writeFile(filename: String, data: js.Any, options: AnonEncodingFlag): Unit = js.native
+  def writeFile(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
   def writeFile(
     filename: String,
     data: js.Any,
-    options: AnonEncodingFlag,
+    options: EncodingFlag,
     callback: js.Function1[/* err */ ErrnoException, Unit]
   ): Unit = js.native
-  def writeFile(filename: String, data: js.Any, options: AnonMode): Unit = js.native
+  def writeFile(filename: String, data: js.Any, options: Mode): Unit = js.native
   def writeFile(
     filename: String,
     data: js.Any,
-    options: AnonMode,
+    options: Mode,
     callback: js.Function1[/* err */ ErrnoException, Unit]
   ): Unit = js.native
   def writeFileSync(filename: String, data: js.Any): Unit = js.native
-  def writeFileSync(filename: String, data: js.Any, options: AnonEncodingFlag): Unit = js.native
-  def writeFileSync(filename: String, data: js.Any, options: AnonMode): Unit = js.native
+  def writeFileSync(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
+  def writeFileSync(filename: String, data: js.Any, options: Mode): Unit = js.native
   def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
 }
 

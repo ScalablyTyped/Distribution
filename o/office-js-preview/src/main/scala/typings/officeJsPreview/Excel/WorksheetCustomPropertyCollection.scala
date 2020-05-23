@@ -17,14 +17,23 @@ import scala.scalajs.js.annotation._
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@JSGlobal("Excel.WorksheetCustomPropertyCollection")
 @js.native
-class WorksheetCustomPropertyCollection () extends ClientObject {
+trait WorksheetCustomPropertyCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_WorksheetCustomPropertyCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[WorksheetCustomProperty] = js.native
+  /**
+    * Adds a new custom property that maps to the provided key. This overwrites existing custom properties with that key.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param key The key that identifies the custom property object. It is case-insensitive.
+    * @param value The value of this custom property.
+    */
+  def add(key: String, value: String): WorksheetCustomProperty = js.native
   /**
     * Gets the number of custom properties on this worksheet.
     *
@@ -38,7 +47,7 @@ class WorksheetCustomPropertyCollection () extends ClientObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param key The key that identifies the custom property object.
+    * @param key The key that identifies the custom property object. It is case-insensitive.
     */
   def getItem(key: String): WorksheetCustomProperty = js.native
   /**
@@ -47,7 +56,7 @@ class WorksheetCustomPropertyCollection () extends ClientObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param key The key that identifies the custom property object.
+    * @param key The key that identifies the custom property object. It is case-insensitive.
     */
   def getItemOrNullObject(key: String): WorksheetCustomProperty = js.native
   /**

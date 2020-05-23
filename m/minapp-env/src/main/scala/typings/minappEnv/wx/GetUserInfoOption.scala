@@ -39,7 +39,7 @@ object GetUserInfoOption {
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserInfoOption]
   }
 }

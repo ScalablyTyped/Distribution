@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-merger
 
-Typings are for version 3.0.2
+Typings are for version 3.1.0
 
 ## Library description:
 Reads files from a real location

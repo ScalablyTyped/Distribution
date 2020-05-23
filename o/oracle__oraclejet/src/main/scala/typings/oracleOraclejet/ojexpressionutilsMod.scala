@@ -1,5 +1,6 @@
 package typings.oracleOraclejet
 
+import typings.oracleOraclejet.anon.DownstreamOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ojexpressionutilsMod extends js.Object {
   def createGenericExpressionEvaluator(expressionText: String): js.Function1[/* context */ js.Any, _] = js.native
-  def getExpressionInfo(expression: String): AnonDownstreamOnly = js.native
+  def getExpressionInfo(expression: String): DownstreamOnly = js.native
 }
 

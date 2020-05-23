@@ -55,24 +55,24 @@ object MouseInputEvent {
     x: Double,
     y: Double,
     button: left | middle | right = null,
-    clickCount: Int | Double = null,
-    globalX: Int | Double = null,
-    globalY: Int | Double = null,
+    clickCount: js.UndefOr[Double] = js.undefined,
+    globalX: js.UndefOr[Double] = js.undefined,
+    globalY: js.UndefOr[Double] = js.undefined,
     modifiers: js.Array[
       shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
     ] = null,
-    movementX: Int | Double = null,
-    movementY: Int | Double = null
+    movementX: js.UndefOr[Double] = js.undefined,
+    movementY: js.UndefOr[Double] = js.undefined
   ): MouseInputEvent = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (clickCount != null) __obj.updateDynamic("clickCount")(clickCount.asInstanceOf[js.Any])
-    if (globalX != null) __obj.updateDynamic("globalX")(globalX.asInstanceOf[js.Any])
-    if (globalY != null) __obj.updateDynamic("globalY")(globalY.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickCount)) __obj.updateDynamic("clickCount")(clickCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalX)) __obj.updateDynamic("globalX")(globalX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalY)) __obj.updateDynamic("globalY")(globalY.get.asInstanceOf[js.Any])
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
-    if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])
+    if (!js.isUndefined(movementX)) __obj.updateDynamic("movementX")(movementX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(movementY)) __obj.updateDynamic("movementY")(movementY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseInputEvent]
   }
 }

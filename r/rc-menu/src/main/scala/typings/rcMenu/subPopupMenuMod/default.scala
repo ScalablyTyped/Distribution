@@ -2,8 +2,8 @@ package typings.rcMenu.subPopupMenuMod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.rcMenu.PartialSubPopupMenuProps
-import typings.rcMenu.WeakValidationMapSubPopup
+import typings.rcMenu.anon.PartialSubPopupMenuProps
+import typings.rcMenu.anon.WeakValidationMapSubPopup
 import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.react.mod.GetDerivedStateFromError

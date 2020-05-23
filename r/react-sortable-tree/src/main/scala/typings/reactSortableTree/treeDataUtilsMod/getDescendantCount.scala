@@ -1,6 +1,6 @@
 package typings.reactSortableTree.treeDataUtilsMod
 
-import typings.reactSortableTree.TreeNodeignoreCollapsedbo
+import typings.reactSortableTree.anon.TreeNodeignoreCollapsedbo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

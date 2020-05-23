@@ -1,6 +1,9 @@
 package typings.uirouterCore
 
 import typings.std.RegExp
+import typings.uirouterCore.anon.Absolute
+import typings.uirouterCore.anon.Priority
+import typings.uirouterCore.anon.Replace
 import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.routerMod.UIRouter
 import typings.uirouterCore.stateInterfaceMod.TargetStateDef
@@ -52,7 +55,7 @@ object urlRouterMod extends js.Object {
       */
     def href(urlMatcher: UrlMatcher): String = js.native
     def href(urlMatcher: UrlMatcher, params: js.Any): String = js.native
-    def href(urlMatcher: UrlMatcher, params: js.Any, options: AnonAbsolute): String = js.native
+    def href(urlMatcher: UrlMatcher, params: js.Any, options: Absolute): String = js.native
     /** @deprecated use [[UrlRules.initial]]*/
     def initial(handler: String): Unit = js.native
     def initial(handler: TargetStateDef): Unit = js.native
@@ -80,7 +83,7 @@ object urlRouterMod extends js.Object {
       */
     def push(urlMatcher: UrlMatcher): Unit = js.native
     def push(urlMatcher: UrlMatcher, params: RawParams): Unit = js.native
-    def push(urlMatcher: UrlMatcher, params: RawParams, options: AnonReplace): Unit = js.native
+    def push(urlMatcher: UrlMatcher, params: RawParams, options: Replace): Unit = js.native
     /** @deprecated use [[UrlRules.removeRule]]*/
     def removeRule(rule: UrlRule): Unit = js.native
     /** @deprecated use [[UrlRules.rule]]*/
@@ -101,17 +104,17 @@ object urlRouterMod extends js.Object {
     def update(read: Boolean): Unit = js.native
     /** @deprecated use [[UrlRules.when]]*/
     def when(matcher: String, handler: String): UrlRule = js.native
-    def when(matcher: String, handler: String, options: AnonPriority): UrlRule = js.native
+    def when(matcher: String, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: String, handler: UrlRuleHandlerFn): UrlRule = js.native
-    def when(matcher: String, handler: UrlRuleHandlerFn, options: AnonPriority): UrlRule = js.native
+    def when(matcher: String, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
     def when(matcher: RegExp, handler: String): UrlRule = js.native
-    def when(matcher: RegExp, handler: String, options: AnonPriority): UrlRule = js.native
+    def when(matcher: RegExp, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: RegExp, handler: UrlRuleHandlerFn): UrlRule = js.native
-    def when(matcher: RegExp, handler: UrlRuleHandlerFn, options: AnonPriority): UrlRule = js.native
+    def when(matcher: RegExp, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: String): UrlRule = js.native
-    def when(matcher: UrlMatcher, handler: String, options: AnonPriority): UrlRule = js.native
+    def when(matcher: UrlMatcher, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn): UrlRule = js.native
-    def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn, options: AnonPriority): UrlRule = js.native
+    def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
   }
   
 }

@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojradiosetMod
 
-import typings.oracleOraclejet.AnonRequired
+import typings.oracleOraclejet.anon.Required
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojeditablevalueMod.editableValue
@@ -47,7 +47,7 @@ trait ojRadioset_[K, D]
   var optionsKeys: js.UndefOr[OptionsKeys] = js.native
   var required: Boolean = js.native
   @JSName("translations")
-  var translations_ojRadioset_ : AnonRequired = js.native
+  var translations_ojRadioset_ : Required = js.native
   def addEventListener(
     `type`: valueChanged,
     listener: js.ThisFunction1[
@@ -168,7 +168,7 @@ trait ojRadioset_[K, D]
   @JSName("setProperty")
   def setProperty_required(property: required, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonRequired): Unit = js.native
+  def setProperty_translations(property: translations, value: Required): Unit = js.native
   def validate(): js.Promise[String] = js.native
 }
 

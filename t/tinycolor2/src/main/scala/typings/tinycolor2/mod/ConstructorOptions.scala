@@ -14,7 +14,7 @@ object ConstructorOptions {
   def apply(format: String = null, gradientType: js.UndefOr[Boolean] = js.undefined): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(gradientType)) __obj.updateDynamic("gradientType")(gradientType.asInstanceOf[js.Any])
+    if (!js.isUndefined(gradientType)) __obj.updateDynamic("gradientType")(gradientType.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorOptions]
   }
 }

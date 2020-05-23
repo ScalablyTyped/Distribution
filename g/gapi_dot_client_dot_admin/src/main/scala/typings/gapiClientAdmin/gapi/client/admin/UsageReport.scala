@@ -1,7 +1,7 @@
 package typings.gapiClientAdmin.gapi.client.admin
 
-import typings.gapiClientAdmin.AnonCustomerId
-import typings.gapiClientAdmin.AnonDatetimeValue
+import typings.gapiClientAdmin.anon.CustomerId
+import typings.gapiClientAdmin.anon.DatetimeValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,23 +10,23 @@ trait UsageReport extends js.Object {
   /** The date to which the record belongs. */
   var date: js.UndefOr[String] = js.undefined
   /** Information about the type of the item. */
-  var entity: js.UndefOr[AnonCustomerId] = js.undefined
+  var entity: js.UndefOr[CustomerId] = js.undefined
   /** ETag of the resource. */
   var etag: js.UndefOr[String] = js.undefined
   /** The kind of object. */
   var kind: js.UndefOr[String] = js.undefined
   /** Parameter value pairs for various applications. */
-  var parameters: js.UndefOr[js.Array[AnonDatetimeValue]] = js.undefined
+  var parameters: js.UndefOr[js.Array[DatetimeValue]] = js.undefined
 }
 
 object UsageReport {
   @scala.inline
   def apply(
     date: String = null,
-    entity: AnonCustomerId = null,
+    entity: CustomerId = null,
     etag: String = null,
     kind: String = null,
-    parameters: js.Array[AnonDatetimeValue] = null
+    parameters: js.Array[DatetimeValue] = null
   ): UsageReport = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])

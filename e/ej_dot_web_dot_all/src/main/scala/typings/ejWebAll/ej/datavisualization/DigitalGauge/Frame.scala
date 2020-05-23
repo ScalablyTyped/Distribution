@@ -23,13 +23,13 @@ object Frame {
   @scala.inline
   def apply(
     backgroundImageUrl: String = null,
-    innerWidth: Int | Double = null,
-    outerWidth: Int | Double = null
+    innerWidth: js.UndefOr[Double] = js.undefined,
+    outerWidth: js.UndefOr[Double] = js.undefined
   ): Frame = {
     val __obj = js.Dynamic.literal()
     if (backgroundImageUrl != null) __obj.updateDynamic("backgroundImageUrl")(backgroundImageUrl.asInstanceOf[js.Any])
-    if (innerWidth != null) __obj.updateDynamic("innerWidth")(innerWidth.asInstanceOf[js.Any])
-    if (outerWidth != null) __obj.updateDynamic("outerWidth")(outerWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerWidth)) __obj.updateDynamic("innerWidth")(innerWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outerWidth)) __obj.updateDynamic("outerWidth")(outerWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
 }

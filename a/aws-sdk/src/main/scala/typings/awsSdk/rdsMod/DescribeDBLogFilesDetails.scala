@@ -23,14 +23,14 @@ trait DescribeDBLogFilesDetails extends js.Object {
 object DescribeDBLogFilesDetails {
   @scala.inline
   def apply(
-    LastWritten: Int | scala.Double = null,
+    LastWritten: js.UndefOr[Long] = js.undefined,
     LogFileName: String = null,
-    Size: Int | scala.Double = null
+    Size: js.UndefOr[Long] = js.undefined
   ): DescribeDBLogFilesDetails = {
     val __obj = js.Dynamic.literal()
-    if (LastWritten != null) __obj.updateDynamic("LastWritten")(LastWritten.asInstanceOf[js.Any])
+    if (!js.isUndefined(LastWritten)) __obj.updateDynamic("LastWritten")(LastWritten.get.asInstanceOf[js.Any])
     if (LogFileName != null) __obj.updateDynamic("LogFileName")(LogFileName.asInstanceOf[js.Any])
-    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
+    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBLogFilesDetails]
   }
 }

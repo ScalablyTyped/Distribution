@@ -16,7 +16,7 @@ trait MessagePropertyHeaders
 object MessagePropertyHeaders {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     `x-death`: js.Array[XDeath] = null,
     `x-first-death-exchange`: String = null,
     `x-first-death-queue`: String = null,

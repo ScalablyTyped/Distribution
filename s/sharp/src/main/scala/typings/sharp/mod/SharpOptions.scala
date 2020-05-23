@@ -36,23 +36,23 @@ object SharpOptions {
   @scala.inline
   def apply(
     create: Create = null,
-    density: Int | Double = null,
+    density: js.UndefOr[Double] = js.undefined,
     failOnError: js.UndefOr[Boolean] = js.undefined,
     limitInputPixels: Double | Boolean = null,
-    page: Int | Double = null,
-    pages: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
+    pages: js.UndefOr[Double] = js.undefined,
     raw: Raw = null,
     sequentialRead: js.UndefOr[Boolean] = js.undefined
   ): SharpOptions = {
     val __obj = js.Dynamic.literal()
     if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
-    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(density)) __obj.updateDynamic("density")(density.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError.get.asInstanceOf[js.Any])
     if (limitInputPixels != null) __obj.updateDynamic("limitInputPixels")(limitInputPixels.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pages)) __obj.updateDynamic("pages")(pages.get.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (!js.isUndefined(sequentialRead)) __obj.updateDynamic("sequentialRead")(sequentialRead.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequentialRead)) __obj.updateDynamic("sequentialRead")(sequentialRead.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharpOptions]
   }
 }

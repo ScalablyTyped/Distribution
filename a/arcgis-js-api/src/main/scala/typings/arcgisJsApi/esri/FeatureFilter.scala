@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.`us-nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.feet_
@@ -80,8 +79,4 @@ trait FeatureFilter
     */
   def createQuery(): Query = js.native
 }
-
-@JSGlobal("__esri.FeatureFilter")
-@js.native
-object FeatureFilter extends TopLevel[FeatureFilterConstructor]
 

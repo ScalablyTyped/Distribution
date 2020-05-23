@@ -1,6 +1,6 @@
 package typings.fullcalendar.timeGridMod
 
-import typings.fullcalendar.AnonBottomTop
+import typings.fullcalendar.anon.BottomTop
 import typings.moment.mod.Duration_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -57,7 +57,7 @@ class Default_ protected ()
   def computeSegVerticals(segs: js.Any): Unit = js.native
   def computeSnapTime(snapIndex: js.Any): Duration_ = js.native
   def computeTimeTop(time: js.Any): js.Any = js.native
-  def generateSegVerticalCss(seg: js.Any): AnonBottomTop = js.native
+  def generateSegVerticalCss(seg: js.Any): BottomTop = js.native
   def getCellDate(row: js.Any, col: js.Any): js.Any = js.native
   def getTotalSlatHeight(): js.Any = js.native
   def groupSegsByCol(segs: js.Any): js.Array[_] = js.native

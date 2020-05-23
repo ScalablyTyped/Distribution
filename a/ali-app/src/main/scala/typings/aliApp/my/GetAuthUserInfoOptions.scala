@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonNickName
+import typings.aliApp.anon.NickName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait GetAuthUserInfoOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_GetAuthUserInfoOptions: js.UndefOr[js.Function1[/* res */ AnonNickName, Unit]] = js.undefined
+  var success_GetAuthUserInfoOptions: js.UndefOr[js.Function1[/* res */ NickName, Unit]] = js.undefined
 }
 
 object GetAuthUserInfoOptions {
@@ -18,7 +18,7 @@ object GetAuthUserInfoOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonNickName => Unit = null
+    success: /* res */ NickName => Unit = null
   ): GetAuthUserInfoOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

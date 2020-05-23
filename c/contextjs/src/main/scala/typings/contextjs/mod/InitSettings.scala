@@ -18,16 +18,16 @@ object InitSettings {
   def apply(
     above: String | Boolean = null,
     compress: js.UndefOr[Boolean] = js.undefined,
-    fadeSpeed: Int | Double = null,
+    fadeSpeed: js.UndefOr[Double] = js.undefined,
     filter: /* e */ Element => Unit = null,
     preventDoubleContext: js.UndefOr[Boolean] = js.undefined
   ): InitSettings = {
     val __obj = js.Dynamic.literal()
     if (above != null) __obj.updateDynamic("above")(above.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (fadeSpeed != null) __obj.updateDynamic("fadeSpeed")(fadeSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeSpeed)) __obj.updateDynamic("fadeSpeed")(fadeSpeed.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(preventDoubleContext)) __obj.updateDynamic("preventDoubleContext")(preventDoubleContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDoubleContext)) __obj.updateDynamic("preventDoubleContext")(preventDoubleContext.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitSettings]
   }
 }

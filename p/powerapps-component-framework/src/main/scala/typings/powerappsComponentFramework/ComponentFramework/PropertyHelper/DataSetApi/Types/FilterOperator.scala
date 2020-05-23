@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-				 * Supported Filter Operator for filtering expression linkage
-				 * 0 - And,
-				 * 1 - Or
-				 */
+  * Supported Filter Operator for filtering expression linkage
+  * 0 - And,
+  * 1 - Or
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`

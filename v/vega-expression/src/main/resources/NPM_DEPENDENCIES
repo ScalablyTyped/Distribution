@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-expression" : "2.6.3"
+      "vega-expression" : "2.6.5"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-expression" : "2.6.3"
+      "vega-expression" : "2.6.5"
     }
   ],
   "compile-devDependencies" : [

@@ -15,16 +15,16 @@ object TransformSourceDescription {
     code: String,
     ast: Program = null,
     dependencies: js.Array[String] = null,
-    map: SourceMapInput = null,
-    moduleSideEffects: js.UndefOr[Boolean] = js.undefined,
+    map: js.UndefOr[Null | SourceMapInput] = js.undefined,
+    moduleSideEffects: js.UndefOr[Null | Boolean] = js.undefined,
     syntheticNamedExports: js.UndefOr[Boolean] = js.undefined
   ): TransformSourceDescription = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     if (ast != null) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects.asInstanceOf[js.Any])
-    if (!js.isUndefined(syntheticNamedExports)) __obj.updateDynamic("syntheticNamedExports")(syntheticNamedExports.asInstanceOf[js.Any])
+    if (!js.isUndefined(syntheticNamedExports)) __obj.updateDynamic("syntheticNamedExports")(syntheticNamedExports.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformSourceDescription]
   }
 }

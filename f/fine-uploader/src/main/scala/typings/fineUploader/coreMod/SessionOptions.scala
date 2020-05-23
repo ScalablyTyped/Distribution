@@ -43,7 +43,7 @@ object SessionOptions {
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshOnReset)) __obj.updateDynamic("refreshOnReset")(refreshOnReset.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshOnReset)) __obj.updateDynamic("refreshOnReset")(refreshOnReset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
 }

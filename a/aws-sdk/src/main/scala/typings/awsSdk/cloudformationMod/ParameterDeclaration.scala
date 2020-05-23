@@ -37,7 +37,7 @@ object ParameterDeclaration {
   def apply(
     DefaultValue: ParameterValue = null,
     Description: Description = null,
-    NoEcho: js.UndefOr[Boolean] = js.undefined,
+    NoEcho: js.UndefOr[NoEcho] = js.undefined,
     ParameterConstraints: ParameterConstraints = null,
     ParameterKey: ParameterKey = null,
     ParameterType: ParameterType = null
@@ -45,7 +45,7 @@ object ParameterDeclaration {
     val __obj = js.Dynamic.literal()
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho.asInstanceOf[js.Any])
+    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho.get.asInstanceOf[js.Any])
     if (ParameterConstraints != null) __obj.updateDynamic("ParameterConstraints")(ParameterConstraints.asInstanceOf[js.Any])
     if (ParameterKey != null) __obj.updateDynamic("ParameterKey")(ParameterKey.asInstanceOf[js.Any])
     if (ParameterType != null) __obj.updateDynamic("ParameterType")(ParameterType.asInstanceOf[js.Any])

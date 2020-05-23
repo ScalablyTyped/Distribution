@@ -1,11 +1,10 @@
 package typings.jsrsasign.mod.KJUR
 
-import typings.jsrsasign.Anon0
-import typings.jsrsasign.AnonAud
-import typings.jsrsasign.AnonB64
-import typings.jsrsasign.AnonHeaderObj
-import typings.jsrsasign.AnonHex
-import typings.jsrsasign.AnonUtf8
+import typings.jsrsasign.anon.Aud
+import typings.jsrsasign.anon.B64
+import typings.jsrsasign.anon.Hex
+import typings.jsrsasign.anon.Utf8
+import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JWSResult
 import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typings.jsrsasign.jsrsasignNumbers.`0`
 import typings.jsrsasign.jsrsasignNumbers.`1`
@@ -188,13 +187,11 @@ object jws extends js.Object {
       * @param o JWK object to be calculated thumbprint
       * @return Base64 URL encoded JWK thumbprint value
       * @description
-      * This method calculates JWK thmubprint for specified JWK object
-      * as described in
-      * [RFC 7638](https://tools.ietf.org/html/rfc7638).
+      * This method calculates JWK thumbprint for specified JWK object
+      * as described in [RFC 7638](https://tools.ietf.org/html/rfc7638).
       * It supports all type of "kty". (i.e. "RSA", "EC" and "oct"
       * (for symmetric key))
-      * Working sample is
-      * [here](https://kjur.github.io/jsrsasign/sample/tool_jwktp.html).
+      * Working sample is [here](https://kjur.github.io/jsrsasign/sample/tool_jwktp.html).
       * @example
       * jwk = {"kty":"RSA", "n":"0vx...", "e":"AQAB", ...};
       * thumbprint = KJUR.jws.JWS.getJWKthumbprint(jwk);
@@ -234,6 +231,7 @@ object jws extends js.Object {
       * @return 1 or 0
       */
     def isSafeJSONString(s: String): `0` | `1` = js.native
+    def isSafeJSONString(s: String, h: js.Object): `0` | `1` = js.native
     def isSafeJSONString(s: String, h: js.Object, p: String): `0` | `1` = js.native
     /**
       * parse header and payload of JWS signature
@@ -268,7 +266,7 @@ object jws extends js.Object {
       *   sigHex: "91f3cd..."
       * }
       */
-    def parse(sJWS: String): AnonHeaderObj = js.native
+    def parse(sJWS: String): JWSResult = js.native
     /**
       * parse JWS string and set public property 'parsedJWS' dictionary.
       * @param sJWS JWS signature string to be parsed.
@@ -346,14 +344,14 @@ object jws extends js.Object {
       * // header and payload can be passed by both string and object
       * sJWS = KJUR.jws.JWS.sign(null, '{alg:"HS256",cty:"JWT"}', '{age:21}', "aaa");
       */
-    def sign(alg: String, spHead: Anon0, spPayload: String): String = js.native
-    def sign(alg: String, spHead: Anon0, spPayload: String, pass: String): String = js.native
-    def sign(alg: String, spHead: Anon0, spPayload: js.Object): String = js.native
-    def sign(alg: String, spHead: Anon0, spPayload: js.Object, pass: String): String = js.native
-    def sign(alg: Null, spHead: Anon0, spPayload: String): String = js.native
-    def sign(alg: Null, spHead: Anon0, spPayload: String, pass: String): String = js.native
-    def sign(alg: Null, spHead: Anon0, spPayload: js.Object): String = js.native
-    def sign(alg: Null, spHead: Anon0, spPayload: js.Object, pass: String): String = js.native
+    def sign(alg: String, spHead: typings.jsrsasign.anon.`0`, spPayload: String): String = js.native
+    def sign(alg: String, spHead: typings.jsrsasign.anon.`0`, spPayload: String, pass: String): String = js.native
+    def sign(alg: String, spHead: typings.jsrsasign.anon.`0`, spPayload: js.Object): String = js.native
+    def sign(alg: String, spHead: typings.jsrsasign.anon.`0`, spPayload: js.Object, pass: String): String = js.native
+    def sign(alg: Null, spHead: typings.jsrsasign.anon.`0`, spPayload: String): String = js.native
+    def sign(alg: Null, spHead: typings.jsrsasign.anon.`0`, spPayload: String, pass: String): String = js.native
+    def sign(alg: Null, spHead: typings.jsrsasign.anon.`0`, spPayload: js.Object): String = js.native
+    def sign(alg: Null, spHead: typings.jsrsasign.anon.`0`, spPayload: js.Object, pass: String): String = js.native
     /**
       * verify JWS signature by specified key or certificate
       * @param sJWS string of JWS signature to verify
@@ -416,9 +414,9 @@ object jws extends js.Object {
       */
     def verify(sJWS: String, key: String): Boolean = js.native
     def verify(sJWS: String, key: String, acceptAlgs: js.Array[String]): Boolean = js.native
-    def verify(sJWS: String, key: String, acceptAlgs: AnonB64): Boolean = js.native
-    def verify(sJWS: String, key: String, acceptAlgs: AnonHex): Boolean = js.native
-    def verify(sJWS: String, key: String, acceptAlgs: AnonUtf8): Boolean = js.native
+    def verify(sJWS: String, key: String, acceptAlgs: B64): Boolean = js.native
+    def verify(sJWS: String, key: String, acceptAlgs: Hex): Boolean = js.native
+    def verify(sJWS: String, key: String, acceptAlgs: Utf8): Boolean = js.native
     /**
       * @param sJWT string of JSON Web Token(JWT) to verify
       * @param key string of public key, certificate or key object to verify
@@ -500,7 +498,7 @@ object jws extends js.Object {
       * });
       */
     def verifyJWT(sJWT: String, key: String): Boolean = js.native
-    def verifyJWT(sJWT: String, key: String, acceptField: AnonAud): Boolean = js.native
+    def verifyJWT(sJWT: String, key: String, acceptField: Aud): Boolean = js.native
     /** static associative array of general signature algorithm name from JWS algorithm name */
     @js.native
     object jwsalg2sigalg extends js.Object {

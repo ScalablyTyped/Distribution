@@ -44,12 +44,12 @@ object DescribeStackDriftDetectionStatusOutput {
     StackId: StackId,
     Timestamp: Timestamp,
     DetectionStatusReason: StackDriftDetectionStatusReason = null,
-    DriftedStackResourceCount: Int | Double = null,
+    DriftedStackResourceCount: js.UndefOr[BoxedInteger] = js.undefined,
     StackDriftStatus: StackDriftStatus = null
   ): DescribeStackDriftDetectionStatusOutput = {
     val __obj = js.Dynamic.literal(DetectionStatus = DetectionStatus.asInstanceOf[js.Any], StackDriftDetectionId = StackDriftDetectionId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
     if (DetectionStatusReason != null) __obj.updateDynamic("DetectionStatusReason")(DetectionStatusReason.asInstanceOf[js.Any])
-    if (DriftedStackResourceCount != null) __obj.updateDynamic("DriftedStackResourceCount")(DriftedStackResourceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(DriftedStackResourceCount)) __obj.updateDynamic("DriftedStackResourceCount")(DriftedStackResourceCount.get.asInstanceOf[js.Any])
     if (StackDriftStatus != null) __obj.updateDynamic("StackDriftStatus")(StackDriftStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStackDriftDetectionStatusOutput]
   }

@@ -1,7 +1,7 @@
 package typings.gapiClientFirebasedynamiclinks.gapi.client.firebasedynamiclinks
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientFirebasedynamiclinks.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientFirebasedynamiclinks.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +18,12 @@ trait ShortLinksResource extends js.Object {
     * The Dynamic Link domain in the request must be owned by requester's
     * Firebase project.
     */
-  def create(request: AnonAccesstoken): Request_[CreateShortDynamicLinkResponse]
+  def create(request: Accesstoken): Request[CreateShortDynamicLinkResponse]
 }
 
 object ShortLinksResource {
   @scala.inline
-  def apply(create: AnonAccesstoken => Request_[CreateShortDynamicLinkResponse]): ShortLinksResource = {
+  def apply(create: Accesstoken => Request[CreateShortDynamicLinkResponse]): ShortLinksResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[ShortLinksResource]
   }

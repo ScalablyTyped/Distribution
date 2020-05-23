@@ -1,6 +1,6 @@
 package typings.storybookClientApi
 
-import typings.storybookAddons.AnonCurrent
+import typings.storybookAddons.anon.Current
 import typings.storybookAddons.hooksMod.Decorator
 import typings.storybookAddons.hooksMod.EventMap
 import typings.storybookAddons.typesMod.DecoratorFunction
@@ -8,6 +8,8 @@ import typings.storybookAddons.typesMod.Parameters
 import typings.storybookAddons.typesMod.StoryContext
 import typings.storybookAddons.typesMod.StoryFn
 import typings.storybookAddons.typesMod.StoryGetter
+import typings.storybookClientApi.anon.Channel
+import typings.storybookClientApi.anon.ChannelChannel
 import typings.storybookClientApi.clientApiMod.default
 import typings.storybookClientApi.typesMod.ClientApiParams
 import scala.scalajs.js
@@ -25,7 +27,7 @@ object mod extends js.Object {
   @js.native
   class ConfigApi protected ()
     extends typings.storybookClientApi.configApiMod.default {
-    def this(hasChannelStoryStoreClientApiClearDecorators: AnonChannel) = this()
+    def this(hasChannelStoryStoreClientApiClearDecorators: Channel) = this()
   }
   
   @js.native
@@ -35,7 +37,7 @@ object mod extends js.Object {
   @js.native
   class StoryStore protected ()
     extends typings.storybookClientApi.storyStoreMod.default {
-    def this(params: AnonChannelChannel) = this()
+    def this(params: ChannelChannel) = this()
   }
   
   def addDecorator(decoratorFn: DecoratorFunction[_]): Unit = js.native
@@ -67,7 +69,7 @@ object mod extends js.Object {
     initialArg: I,
     init: js.Function1[/* initialArg */ I, S]
   ): js.Tuple2[S, js.Function1[/* action */ A, Unit]] = js.native
-  def useRef[T](initialValue: T): AnonCurrent[T] = js.native
+  def useRef[T](initialValue: T): Current[T] = js.native
   def useState[S](initialState: S): js.Tuple2[S, js.Function1[/* update */ (js.Function1[/* prevState */ S, S]) | S, Unit]] = js.native
   def useState[S](initialState: js.Function0[S]): js.Tuple2[S, js.Function1[/* update */ (js.Function1[/* prevState */ S, S]) | S, Unit]] = js.native
   def useStoryContext(): StoryContext = js.native

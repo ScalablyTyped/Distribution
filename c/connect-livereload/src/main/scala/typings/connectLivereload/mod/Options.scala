@@ -25,18 +25,18 @@ object Options {
     html: /* val */ String => Boolean = null,
     ignore: js.Array[FileMatcher] = null,
     include: js.Array[FileMatcher] = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     rules: js.Array[Rule] = null,
     src: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableCompression)) __obj.updateDynamic("disableCompression")(disableCompression.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCompression)) __obj.updateDynamic("disableCompression")(disableCompression.get.asInstanceOf[js.Any])
     if (excludeList != null) __obj.updateDynamic("excludeList")(excludeList.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(js.Any.fromFunction1(html))
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

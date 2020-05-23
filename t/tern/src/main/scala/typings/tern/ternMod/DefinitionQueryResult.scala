@@ -27,7 +27,7 @@ object DefinitionQueryResult {
   @scala.inline
   def apply(
     context: String = null,
-    contextOffset: Int | Double = null,
+    contextOffset: js.UndefOr[Double] = js.undefined,
     doc: String = null,
     end: Double | Position = null,
     file: String = null,
@@ -37,7 +37,7 @@ object DefinitionQueryResult {
   ): DefinitionQueryResult = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (contextOffset != null) __obj.updateDynamic("contextOffset")(contextOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextOffset)) __obj.updateDynamic("contextOffset")(contextOffset.get.asInstanceOf[js.Any])
     if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])

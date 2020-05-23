@@ -93,46 +93,46 @@ trait IComboBoxStyles extends js.Object {
 object IComboBoxStyles {
   @scala.inline
   def apply(
-    callout: IStyle = null,
-    container: IStyle = null,
-    divider: IStyle = null,
-    errorMessage: IStyle = null,
-    header: IStyle = null,
-    input: IStyle = null,
-    inputDisabled: IStyle = null,
-    label: IStyle = null,
-    labelDisabled: IStyle = null,
-    optionsContainer: IStyle = null,
-    optionsContainerWrapper: IStyle = null,
-    root: IStyle = null,
-    rootDisabled: IStyle = null,
-    rootDisallowFreeForm: IStyle = null,
-    rootError: IStyle = null,
-    rootFocused: IStyle = null,
-    rootHovered: IStyle = null,
-    rootPressed: IStyle = null,
-    screenReaderText: IStyle = null
+    callout: js.UndefOr[Null | IStyle] = js.undefined,
+    container: js.UndefOr[Null | IStyle] = js.undefined,
+    divider: js.UndefOr[Null | IStyle] = js.undefined,
+    errorMessage: js.UndefOr[Null | IStyle] = js.undefined,
+    header: js.UndefOr[Null | IStyle] = js.undefined,
+    input: js.UndefOr[Null | IStyle] = js.undefined,
+    inputDisabled: js.UndefOr[Null | IStyle] = js.undefined,
+    label: js.UndefOr[Null | IStyle] = js.undefined,
+    labelDisabled: js.UndefOr[Null | IStyle] = js.undefined,
+    optionsContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    optionsContainerWrapper: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    rootDisabled: js.UndefOr[Null | IStyle] = js.undefined,
+    rootDisallowFreeForm: js.UndefOr[Null | IStyle] = js.undefined,
+    rootError: js.UndefOr[Null | IStyle] = js.undefined,
+    rootFocused: js.UndefOr[Null | IStyle] = js.undefined,
+    rootHovered: js.UndefOr[Null | IStyle] = js.undefined,
+    rootPressed: js.UndefOr[Null | IStyle] = js.undefined,
+    screenReaderText: js.UndefOr[Null | IStyle] = js.undefined
   ): IComboBoxStyles = {
     val __obj = js.Dynamic.literal()
-    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (inputDisabled != null) __obj.updateDynamic("inputDisabled")(inputDisabled.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelDisabled != null) __obj.updateDynamic("labelDisabled")(labelDisabled.asInstanceOf[js.Any])
-    if (optionsContainer != null) __obj.updateDynamic("optionsContainer")(optionsContainer.asInstanceOf[js.Any])
-    if (optionsContainerWrapper != null) __obj.updateDynamic("optionsContainerWrapper")(optionsContainerWrapper.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (rootDisabled != null) __obj.updateDynamic("rootDisabled")(rootDisabled.asInstanceOf[js.Any])
-    if (rootDisallowFreeForm != null) __obj.updateDynamic("rootDisallowFreeForm")(rootDisallowFreeForm.asInstanceOf[js.Any])
-    if (rootError != null) __obj.updateDynamic("rootError")(rootError.asInstanceOf[js.Any])
-    if (rootFocused != null) __obj.updateDynamic("rootFocused")(rootFocused.asInstanceOf[js.Any])
-    if (rootHovered != null) __obj.updateDynamic("rootHovered")(rootHovered.asInstanceOf[js.Any])
-    if (rootPressed != null) __obj.updateDynamic("rootPressed")(rootPressed.asInstanceOf[js.Any])
-    if (screenReaderText != null) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
+    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorMessage)) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputDisabled)) __obj.updateDynamic("inputDisabled")(inputDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelDisabled)) __obj.updateDynamic("labelDisabled")(labelDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionsContainer)) __obj.updateDynamic("optionsContainer")(optionsContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionsContainerWrapper)) __obj.updateDynamic("optionsContainerWrapper")(optionsContainerWrapper.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootDisabled)) __obj.updateDynamic("rootDisabled")(rootDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootDisallowFreeForm)) __obj.updateDynamic("rootDisallowFreeForm")(rootDisallowFreeForm.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootError)) __obj.updateDynamic("rootError")(rootError.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootFocused)) __obj.updateDynamic("rootFocused")(rootFocused.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootHovered)) __obj.updateDynamic("rootHovered")(rootHovered.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootPressed)) __obj.updateDynamic("rootPressed")(rootPressed.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenReaderText)) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComboBoxStyles]
   }
 }

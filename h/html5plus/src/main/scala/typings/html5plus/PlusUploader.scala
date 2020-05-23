@@ -75,7 +75,7 @@ trait PlusUploader extends js.Object {
   /**
     * 开始所有上传任务
     * 开始所有处于未开始调度或暂停状态的上传任务。
-    * 	若上传任务数超过可并发处理的总数，超出的任务处于调度状态（等待上传），当有任务完成时根据调度状态任务的优先级选择任务开始上传。
+    *     若上传任务数超过可并发处理的总数，超出的任务处于调度状态（等待上传），当有任务完成时根据调度状态任务的优先级选择任务开始上传。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */

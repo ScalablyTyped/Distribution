@@ -11,10 +11,10 @@ trait IRadiusOptions extends js.Object {
 
 object IRadiusOptions {
   @scala.inline
-  def apply(radius: Int | Double = null, resolution: Int | Double = null): IRadiusOptions = {
+  def apply(radius: js.UndefOr[Double] = js.undefined, resolution: js.UndefOr[Double] = js.undefined): IRadiusOptions = {
     val __obj = js.Dynamic.literal()
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRadiusOptions]
   }
 }

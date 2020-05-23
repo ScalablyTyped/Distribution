@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Text.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object CoreTextInputPaneDisplayPolicy extends js.Object {
   /** Your app is responsible for showing and hiding the input pane. */
   @js.native
   sealed trait manual extends CoreTextInputPaneDisplayPolicy
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CoreTextInputPaneDisplayPolicy with Double] = js.native
-  /* 0 */ @js.native
-  object automatic extends TopLevel[automatic with Double]
-  
-  /* 1 */ @js.native
-  object manual extends TopLevel[manual with Double]
   
 }
 

@@ -1,13 +1,13 @@
 package typings.amplifier.mod
 
-import typings.jquery.JQuery_.Ajax.CompleteCallback
-import typings.jquery.JQuery_.Ajax.ErrorCallback
-import typings.jquery.JQuery_.Ajax.StatusCodeCallbacks
-import typings.jquery.JQuery_.Ajax.SuccessCallback
-import typings.jquery.JQuery_.Ajax.XHRFields
-import typings.jquery.JQuery_.PlainObject
-import typings.jquery.JQuery_.TypeOrArray
-import typings.jquery.JQuery_.jqXHR
+import typings.jquery.JQuery.Ajax.CompleteCallback
+import typings.jquery.JQuery.Ajax.ErrorCallback
+import typings.jquery.JQuery.Ajax.StatusCodeCallbacks
+import typings.jquery.JQuery.Ajax.SuccessCallback
+import typings.jquery.JQuery.Ajax.XHRFields
+import typings.jquery.JQuery.PlainObject
+import typings.jquery.JQuery.TypeOrArray
+import typings.jquery.JQuery.jqXHR
 import typings.jquery.jqueryBooleans.`false`
 import typings.jquery.jqueryBooleans.`true`
 import typings.jquery.jqueryStrings.`applicationSlashx-www-form-urlencoded`
@@ -26,7 +26,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AjaxSettings
-  extends typings.jquery.JQuery_.AjaxSettings[js.Any] {
+  extends typings.jquery.JQuery.AjaxSettings[js.Any] {
   var dataMap: js.UndefOr[js.Object | (js.Function1[/* data */ js.Any, js.Object])] = js.undefined
   var decoder: js.UndefOr[js.Any] = js.undefined
 }
@@ -64,7 +64,7 @@ object AjaxSettings {
     scriptCharset: String = null,
     statusCode: StatusCodeCallbacks[js.Any] = null,
     success: TypeOrArray[SuccessCallback[js.Any]] = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     traditional: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null,
     url: String = null,
@@ -74,15 +74,15 @@ object AjaxSettings {
   ): AjaxSettings = {
     val __obj = js.Dynamic.literal()
     if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (converters != null) __obj.updateDynamic("converters")(converters.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataFilter != null) __obj.updateDynamic("dataFilter")(js.Any.fromFunction2(dataFilter))
     if (dataMap != null) __obj.updateDynamic("dataMap")(dataMap.asInstanceOf[js.Any])
@@ -90,21 +90,21 @@ object AjaxSettings {
     if (decoder != null) __obj.updateDynamic("decoder")(decoder.asInstanceOf[js.Any])
     if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifModified)) __obj.updateDynamic("ifModified")(ifModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLocal)) __obj.updateDynamic("isLocal")(isLocal.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifModified)) __obj.updateDynamic("ifModified")(ifModified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLocal)) __obj.updateDynamic("isLocal")(isLocal.get.asInstanceOf[js.Any])
     if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
     if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData.asInstanceOf[js.Any])
+    if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData.get.asInstanceOf[js.Any])
     if (scriptCharset != null) __obj.updateDynamic("scriptCharset")(scriptCharset.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])

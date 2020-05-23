@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object uifabricFoundationStrings {
   @js.native
-  sealed trait AnonSlots extends js.Object
-  
-  @js.native
   sealed trait IComponentStyles extends js.Object
   
   @js.native
@@ -16,6 +13,9 @@ object uifabricFoundationStrings {
   
   @js.native
   sealed trait ISlots extends js.Object
+  
+  @js.native
+  sealed trait Slots extends js.Object
   
   @js.native
   sealed trait a extends js.Object
@@ -546,13 +546,13 @@ object uifabricFoundationStrings {
   sealed trait webview extends js.Object
   
   @scala.inline
-  def AnonSlots: AnonSlots = "AnonSlots".asInstanceOf[AnonSlots]
-  @scala.inline
   def IComponentStyles: IComponentStyles = "IComponentStyles".asInstanceOf[IComponentStyles]
   @scala.inline
   def ISlotDefinition: ISlotDefinition = "ISlotDefinition".asInstanceOf[ISlotDefinition]
   @scala.inline
   def ISlots: ISlots = "ISlots".asInstanceOf[ISlots]
+  @scala.inline
+  def Slots: Slots = "Slots".asInstanceOf[Slots]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

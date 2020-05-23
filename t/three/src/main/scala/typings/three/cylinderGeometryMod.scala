@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.HeightSegments
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import scala.scalajs.js
@@ -21,7 +22,7 @@ object cylinderGeometryMod extends js.Object {
       thetaStart: js.UndefOr[Double],
       thetaLength: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonHeightSegments = js.native
+    var parameters: HeightSegments = js.native
   }
   
   @js.native
@@ -44,7 +45,7 @@ object cylinderGeometryMod extends js.Object {
       thetaStart: js.UndefOr[Double],
       thetaLength: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonHeightSegments = js.native
+    var parameters: HeightSegments = js.native
   }
   
 }

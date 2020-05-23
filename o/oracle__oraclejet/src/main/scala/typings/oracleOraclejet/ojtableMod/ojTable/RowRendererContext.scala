@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojtableMod.ojTable
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonDatasource
+import typings.oracleOraclejet.anon.Datasource
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait RowRendererContext[K, D] extends js.Object {
   var componentElement: Element
   var data: StringDictionary[js.Any]
   var parentElement: Element
-  var rowContext: AnonDatasource[K, D]
+  var rowContext: Datasource[K, D]
 }
 
 object RowRendererContext {
@@ -21,7 +21,7 @@ object RowRendererContext {
     componentElement: Element,
     data: StringDictionary[js.Any],
     parentElement: Element,
-    rowContext: AnonDatasource[K, D]
+    rowContext: Datasource[K, D]
   ): RowRendererContext[K, D] = {
     val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], rowContext = rowContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowRendererContext[K, D]]

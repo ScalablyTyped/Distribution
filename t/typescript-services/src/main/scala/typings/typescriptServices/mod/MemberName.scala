@@ -7,7 +7,18 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "MemberName")
 @js.native
 class MemberName ()
-  extends typings.typescriptServices.TypeScript.MemberName
+  extends typings.typescriptServices.TypeScript.MemberName {
+  /* CompleteClass */
+  override var prefix: String = js.native
+  /* CompleteClass */
+  override var suffix: String = js.native
+  /* CompleteClass */
+  override def isArray(): Boolean = js.native
+  /* CompleteClass */
+  override def isMarker(): Boolean = js.native
+  /* CompleteClass */
+  override def isString(): Boolean = js.native
+}
 
 /* static members */
 @JSImport("typescript-services", "MemberName")

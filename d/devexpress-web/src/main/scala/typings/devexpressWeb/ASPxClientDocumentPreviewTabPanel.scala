@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxClientDocumentPreviewTabPanel")
 @js.native
-class ASPxClientDocumentPreviewTabPanel () extends js.Object {
+trait ASPxClientDocumentPreviewTabPanel extends js.Object {
   @JSName("collapsed")
   var collapsed_Original: KnockoutObservable[Boolean] = js.native
   var tabs: js.Array[ASPxClientDocumentPreviewTab] = js.native

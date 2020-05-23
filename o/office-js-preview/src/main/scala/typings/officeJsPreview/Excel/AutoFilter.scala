@@ -1,9 +1,9 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.AutoFilterData
 import typings.officeJsPreview.Excel.Interfaces.AutoFilterLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,29 +15,28 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.AutoFilter")
 @js.native
-class AutoFilter () extends ClientObject {
+trait AutoFilter extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_AutoFilter: RequestContext = js.native
   /**
     *
-    * An array that holds all the filter criteria in the autofiltered range. Read-Only.
+    * An array that holds all the filter criteria in the autofiltered range.
     *
     * [Api set: ExcelApi 1.9]
     */
   val criteria: js.Array[FilterCriteria] = js.native
   /**
     *
-    * Indicates if the AutoFilter is enabled or not. Read-Only.
+    * Specifies if the AutoFilter is enabled.
     *
     * [Api set: ExcelApi 1.9]
     */
   val enabled: Boolean = js.native
   /**
     *
-    * Indicates if the AutoFilter has filter criteria. Read-Only.
+    * Specifies if the AutoFilter has filter criteria.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -89,7 +88,7 @@ class AutoFilter () extends ClientObject {
     */
   def load(): AutoFilter = js.native
   def load(options: AutoFilterLoadOptions): AutoFilter = js.native
-  def load(propertyNamesAndPaths: AnonExpand): AutoFilter = js.native
+  def load(propertyNamesAndPaths: Expand): AutoFilter = js.native
   def load(propertyNames: String): AutoFilter = js.native
   def load(propertyNames: js.Array[String]): AutoFilter = js.native
   /**

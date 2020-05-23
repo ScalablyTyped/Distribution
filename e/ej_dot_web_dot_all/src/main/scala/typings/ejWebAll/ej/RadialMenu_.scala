@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.RadialMenu")
 @js.native
-class RadialMenu_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.RadialMenu.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.RadialMenu.Model) = this()
+trait RadialMenu_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.RadialMenu.Model = js.native
   @JSName("model")
   var model_RadialMenu_ : typings.ejWebAll.ej.RadialMenu.Model = js.native

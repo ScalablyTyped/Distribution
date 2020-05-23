@@ -31,14 +31,14 @@ trait SpotMarketOptions extends js.Object {
 object SpotMarketOptions {
   @scala.inline
   def apply(
-    BlockDurationMinutes: Int | scala.Double = null,
+    BlockDurationMinutes: js.UndefOr[Integer] = js.undefined,
     InstanceInterruptionBehavior: InstanceInterruptionBehavior = null,
     MaxPrice: String = null,
     SpotInstanceType: SpotInstanceType = null,
     ValidUntil: DateTime = null
   ): SpotMarketOptions = {
     val __obj = js.Dynamic.literal()
-    if (BlockDurationMinutes != null) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockDurationMinutes)) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.get.asInstanceOf[js.Any])
     if (InstanceInterruptionBehavior != null) __obj.updateDynamic("InstanceInterruptionBehavior")(InstanceInterruptionBehavior.asInstanceOf[js.Any])
     if (MaxPrice != null) __obj.updateDynamic("MaxPrice")(MaxPrice.asInstanceOf[js.Any])
     if (SpotInstanceType != null) __obj.updateDynamic("SpotInstanceType")(SpotInstanceType.asInstanceOf[js.Any])

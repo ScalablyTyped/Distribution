@@ -15,7 +15,7 @@ trait IEntity[C /* <: Component */] extends js.Object {
 
 object IEntity {
   @scala.inline
-  def apply[C /* <: Component */](bounds: IEntityBounds, component: C, datum: js.Any, position: Point, selection: SimpleSelection[_]): IEntity[C] = {
+  def apply[C](bounds: IEntityBounds, component: C, datum: js.Any, position: Point, selection: SimpleSelection[_]): IEntity[C] = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntity[C]]
   }

@@ -27,19 +27,19 @@ object Options {
     clickOnTrack: js.UndefOr[Boolean] = js.undefined,
     direction: rtl | ltr = null,
     forceVisible: Boolean | x | y = null,
-    scrollbarMaxSize: Int | Double = null,
-    scrollbarMinSize: Int | Double = null,
-    timeout: Int | Double = null
+    scrollbarMaxSize: js.UndefOr[Double] = js.undefined,
+    scrollbarMinSize: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickOnTrack)) __obj.updateDynamic("clickOnTrack")(clickOnTrack.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickOnTrack)) __obj.updateDynamic("clickOnTrack")(clickOnTrack.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (forceVisible != null) __obj.updateDynamic("forceVisible")(forceVisible.asInstanceOf[js.Any])
-    if (scrollbarMaxSize != null) __obj.updateDynamic("scrollbarMaxSize")(scrollbarMaxSize.asInstanceOf[js.Any])
-    if (scrollbarMinSize != null) __obj.updateDynamic("scrollbarMinSize")(scrollbarMinSize.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollbarMaxSize)) __obj.updateDynamic("scrollbarMaxSize")(scrollbarMaxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollbarMinSize)) __obj.updateDynamic("scrollbarMinSize")(scrollbarMinSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

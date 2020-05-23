@@ -18,9 +18,9 @@ trait GridGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends 
 
 object GridGapProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](gridGap: ResponsiveValue[TVal, ThemeType] = null): GridGapProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](gridGap: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): GridGapProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (gridGap != null) __obj.updateDynamic("gridGap")(gridGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridGap)) __obj.updateDynamic("gridGap")(gridGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridGapProps[ThemeType, TVal]]
   }
 }

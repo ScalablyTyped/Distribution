@@ -30,13 +30,13 @@ object QueryResult {
     FacetResults: FacetResultList = null,
     QueryId: QueryId = null,
     ResultItems: QueryResultItemList = null,
-    TotalNumberOfResults: Int | Double = null
+    TotalNumberOfResults: js.UndefOr[Integer] = js.undefined
   ): QueryResult = {
     val __obj = js.Dynamic.literal()
     if (FacetResults != null) __obj.updateDynamic("FacetResults")(FacetResults.asInstanceOf[js.Any])
     if (QueryId != null) __obj.updateDynamic("QueryId")(QueryId.asInstanceOf[js.Any])
     if (ResultItems != null) __obj.updateDynamic("ResultItems")(ResultItems.asInstanceOf[js.Any])
-    if (TotalNumberOfResults != null) __obj.updateDynamic("TotalNumberOfResults")(TotalNumberOfResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalNumberOfResults)) __obj.updateDynamic("TotalNumberOfResults")(TotalNumberOfResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult]
   }
 }

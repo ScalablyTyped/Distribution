@@ -29,12 +29,12 @@ object ListAttachedGroupPoliciesRequest {
   def apply(
     GroupName: groupNameType,
     Marker: markerType = null,
-    MaxItems: Int | Double = null,
+    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
     PathPrefix: policyPathType = null
   ): ListAttachedGroupPoliciesRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     if (PathPrefix != null) __obj.updateDynamic("PathPrefix")(PathPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAttachedGroupPoliciesRequest]
   }

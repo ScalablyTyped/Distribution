@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -88,8 +87,4 @@ trait OAuthInfo
     */
   var preserveUrlHash: Boolean = js.native
 }
-
-@JSGlobal("__esri.OAuthInfo")
-@js.native
-object OAuthInfo extends TopLevel[OAuthInfoConstructor]
 

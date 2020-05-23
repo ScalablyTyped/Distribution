@@ -18,10 +18,10 @@ trait TestingData extends js.Object {
 
 object TestingData {
   @scala.inline
-  def apply(Assets: Assets = null, AutoCreate: js.UndefOr[scala.Boolean] = js.undefined): TestingData = {
+  def apply(Assets: Assets = null, AutoCreate: js.UndefOr[Boolean] = js.undefined): TestingData = {
     val __obj = js.Dynamic.literal()
     if (Assets != null) __obj.updateDynamic("Assets")(Assets.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoCreate)) __obj.updateDynamic("AutoCreate")(AutoCreate.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoCreate)) __obj.updateDynamic("AutoCreate")(AutoCreate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestingData]
   }
 }

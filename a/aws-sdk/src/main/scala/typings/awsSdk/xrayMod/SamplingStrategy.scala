@@ -18,10 +18,10 @@ trait SamplingStrategy extends js.Object {
 
 object SamplingStrategy {
   @scala.inline
-  def apply(Name: SamplingStrategyName = null, Value: Int | scala.Double = null): SamplingStrategy = {
+  def apply(Name: SamplingStrategyName = null, Value: js.UndefOr[NullableDouble] = js.undefined): SamplingStrategy = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingStrategy]
   }
 }

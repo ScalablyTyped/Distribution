@@ -11,10 +11,13 @@ trait ITableSnapshot extends js.Object {
 
 object ITableSnapshot {
   @scala.inline
-  def apply(nextScrollLeft: Int | Double = null, nextScrollTop: Int | Double = null): ITableSnapshot = {
+  def apply(
+    nextScrollLeft: js.UndefOr[Double] = js.undefined,
+    nextScrollTop: js.UndefOr[Double] = js.undefined
+  ): ITableSnapshot = {
     val __obj = js.Dynamic.literal()
-    if (nextScrollLeft != null) __obj.updateDynamic("nextScrollLeft")(nextScrollLeft.asInstanceOf[js.Any])
-    if (nextScrollTop != null) __obj.updateDynamic("nextScrollTop")(nextScrollTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextScrollLeft)) __obj.updateDynamic("nextScrollLeft")(nextScrollLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextScrollTop)) __obj.updateDynamic("nextScrollTop")(nextScrollTop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableSnapshot]
   }
 }

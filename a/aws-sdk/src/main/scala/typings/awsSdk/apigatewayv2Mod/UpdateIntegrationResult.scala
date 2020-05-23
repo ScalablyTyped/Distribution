@@ -88,7 +88,7 @@ trait UpdateIntegrationResult extends js.Object {
 object UpdateIntegrationResult {
   @scala.inline
   def apply(
-    ApiGatewayManaged: js.UndefOr[Boolean] = js.undefined,
+    ApiGatewayManaged: js.UndefOr[boolean] = js.undefined,
     ConnectionId: StringWithLengthBetween1And1024 = null,
     ConnectionType: ConnectionType = null,
     ContentHandlingStrategy: ContentHandlingStrategy = null,
@@ -104,11 +104,11 @@ object UpdateIntegrationResult {
     RequestParameters: IntegrationParameters = null,
     RequestTemplates: TemplateMap = null,
     TemplateSelectionExpression: SelectionExpression = null,
-    TimeoutInMillis: Int | Double = null,
+    TimeoutInMillis: js.UndefOr[IntegerWithLengthBetween50And30000] = js.undefined,
     TlsConfig: TlsConfig = null
   ): UpdateIntegrationResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ApiGatewayManaged)) __obj.updateDynamic("ApiGatewayManaged")(ApiGatewayManaged.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApiGatewayManaged)) __obj.updateDynamic("ApiGatewayManaged")(ApiGatewayManaged.get.asInstanceOf[js.Any])
     if (ConnectionId != null) __obj.updateDynamic("ConnectionId")(ConnectionId.asInstanceOf[js.Any])
     if (ConnectionType != null) __obj.updateDynamic("ConnectionType")(ConnectionType.asInstanceOf[js.Any])
     if (ContentHandlingStrategy != null) __obj.updateDynamic("ContentHandlingStrategy")(ContentHandlingStrategy.asInstanceOf[js.Any])
@@ -124,7 +124,7 @@ object UpdateIntegrationResult {
     if (RequestParameters != null) __obj.updateDynamic("RequestParameters")(RequestParameters.asInstanceOf[js.Any])
     if (RequestTemplates != null) __obj.updateDynamic("RequestTemplates")(RequestTemplates.asInstanceOf[js.Any])
     if (TemplateSelectionExpression != null) __obj.updateDynamic("TemplateSelectionExpression")(TemplateSelectionExpression.asInstanceOf[js.Any])
-    if (TimeoutInMillis != null) __obj.updateDynamic("TimeoutInMillis")(TimeoutInMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeoutInMillis)) __obj.updateDynamic("TimeoutInMillis")(TimeoutInMillis.get.asInstanceOf[js.Any])
     if (TlsConfig != null) __obj.updateDynamic("TlsConfig")(TlsConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateIntegrationResult]
   }

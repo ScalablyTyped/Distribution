@@ -1,8 +1,26 @@
 
 # Scala.js typings for fluentui__react-icons
 
-Typings are for version 0.1.4
+Typings are for version 0.1.19
 
+## Library description:
+React components for building web experiences.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @fluentui/react-icons |
+| Keywords           | - |
+| # releases         | 16 |
+| # dependents       | 2 |
+| # downloads        | 63492 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/microsoft/fluentui#readme)
+- [Bugs](https://github.com/microsoft/fluentui/issues)
+- [Repository](https://github.com/microsoft/fluentui)
+- [Npm](https://www.npmjs.com/package/%40fluentui%2Freact-icons)
+    
 
 
 ## Note

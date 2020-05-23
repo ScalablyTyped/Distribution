@@ -8,7 +8,7 @@ package object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.restifyPlugins.restifyPluginsStrings.close
     - typings.restifyPlugins.restifyPluginsStrings.aborted
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type TMetricsCallback = js.UndefOr[typings.restifyPlugins.mod._TMetricsCallback]
 }

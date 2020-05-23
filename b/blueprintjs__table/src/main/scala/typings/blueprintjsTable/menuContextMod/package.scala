@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 package object menuContextMod {
   type IContextMenuRenderer = js.Function1[
     /* context */ typings.blueprintjsTable.menuContextMod.IMenuContext, 
-    typings.react.mod._Global_.JSX.Element
+    typings.react.mod.global.JSX.Element
   ]
 }

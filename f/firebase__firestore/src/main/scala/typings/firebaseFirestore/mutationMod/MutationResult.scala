@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/mutation", "MutationResult")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/mutation", "MutationResult")
 @js.native
 class MutationResult protected () extends js.Object {
   def this(/**

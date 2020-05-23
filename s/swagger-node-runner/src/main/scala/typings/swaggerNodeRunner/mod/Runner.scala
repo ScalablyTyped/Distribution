@@ -2,8 +2,8 @@ package typings.swaggerNodeRunner.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.swaggerNodeRunner.AnonSwagger
-import typings.swaggerNodeRunner.AnonSwaggerMetadata
+import typings.swaggerNodeRunner.anon.Swagger
+import typings.swaggerNodeRunner.anon.SwaggerMetadata
 import typings.swaggerSchemaOfficial.mod.Spec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,14 +27,14 @@ trait Runner extends EventEmitter {
     * References to Swagger Tools Midleware (from _swagger-tools_ module)     *
     * @see {@link https://github.com/apigee-127/swagger-tools|Github Source}
     */
-  var swaggerTools: AnonSwaggerMetadata = js.native
+  var swaggerTools: SwaggerMetadata = js.native
   /** Create new Connect middleware */
   def connectMiddleware(): ConnectMiddleware = js.native
   def defaultErrorHandler(): js.Any = js.native
   /** Create new Express middleware */
   def expressMiddleware(): ExpressMiddleware = js.native
   /** Fetch a _bagpipe_ pipe */
-  def getPipe(req: AnonSwagger): js.Any = js.native
+  def getPipe(req: Swagger): js.Any = js.native
   /** Create new Hapi middleware */
   def hapiMiddleware(): HapiMiddleware = js.native
   /** Resolves path (relative to `config.appRoot`) */

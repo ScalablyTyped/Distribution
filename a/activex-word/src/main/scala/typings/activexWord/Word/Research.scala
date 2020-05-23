@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Research")
 @js.native
-class Research protected () extends js.Object {
+trait Research extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Creator: Double = js.native
   var FavoriteService: String = js.native

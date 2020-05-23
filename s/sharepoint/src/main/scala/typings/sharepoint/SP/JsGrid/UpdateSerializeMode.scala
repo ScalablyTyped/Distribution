@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,23 +28,6 @@ object UpdateSerializeMode extends js.Object {
    // 3,
   @js.native
   sealed trait PropLocalizedOnly extends UpdateSerializeMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UpdateSerializeMode with Double] = js.native
-  /* 0 */ @js.native
-  object Cancel extends TopLevel[Cancel with Double]
-  
-  /* 1 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 4 */ @js.native
-  object PropBoth extends TopLevel[PropBoth with Double]
-  
-  /* 2 */ @js.native
-  object PropDataOnly extends TopLevel[PropDataOnly with Double]
-  
-  /* 3 */ @js.native
-  object PropLocalizedOnly extends TopLevel[PropLocalizedOnly with Double]
   
 }
 

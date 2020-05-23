@@ -44,12 +44,12 @@ object GetAggregateComplianceDetailsByConfigRuleRequest {
     ConfigRuleName: ConfigRuleName,
     ConfigurationAggregatorName: ConfigurationAggregatorName,
     ComplianceType: ComplianceType = null,
-    Limit: Int | Double = null,
+    Limit: js.UndefOr[Limit] = js.undefined,
     NextToken: NextToken = null
   ): GetAggregateComplianceDetailsByConfigRuleRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], AwsRegion = AwsRegion.asInstanceOf[js.Any], ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any], ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any])
     if (ComplianceType != null) __obj.updateDynamic("ComplianceType")(ComplianceType.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAggregateComplianceDetailsByConfigRuleRequest]
   }

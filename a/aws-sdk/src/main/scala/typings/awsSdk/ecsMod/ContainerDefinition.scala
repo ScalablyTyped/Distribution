@@ -47,6 +47,10 @@ trait ContainerDefinition extends js.Object {
     */
   var environment: js.UndefOr[EnvironmentVariables] = js.native
   /**
+    * A list of files containing the environment variables to pass to a container. This parameter maps to the --env-file option to docker run. You can specify up to ten environment files. The file must have a .env file extension. Each line in an environment file should contain an environment variable in VARIABLE=VALUE format. Lines beginning with # are treated as comments and are ignored. For more information on the environment variable file syntax, see Declare default environment variables in file. If there are environment variables specified using the environment parameter in a container definition, they take precedence over the variables contained within an environment file. If multiple environment files are specified that contain the same variable, they are processed from the top down. It is recommended to use unique variable names. For more information, see Specifying Environment Variables in the Amazon Elastic Container Service Developer Guide. This field is not valid for containers in tasks using the Fargate launch type.
+    */
+  var environmentFiles: js.UndefOr[EnvironmentFiles] = js.native
+  /**
     * If the essential parameter of a container is marked as true, and that container fails or stops for any reason, all other containers that are part of the task are stopped. If the essential parameter of a container is marked as false, then its failure does not affect the rest of the containers in a task. If this parameter is omitted, a container is assumed to be essential. All tasks must have at least one essential container. If you have an application that is composed of multiple containers, you should group containers that are used for a common purpose into components, and separate the different components into multiple task definitions. For more information, see Application Architecture in the Amazon Elastic Container Service Developer Guide.
     */
   var essential: js.UndefOr[BoxedBoolean] = js.native
@@ -164,38 +168,39 @@ object ContainerDefinition {
   @scala.inline
   def apply(
     command: StringList = null,
-    cpu: Int | scala.Double = null,
+    cpu: js.UndefOr[Integer] = js.undefined,
     dependsOn: ContainerDependencies = null,
-    disableNetworking: js.UndefOr[scala.Boolean] = js.undefined,
+    disableNetworking: js.UndefOr[BoxedBoolean] = js.undefined,
     dnsSearchDomains: StringList = null,
     dnsServers: StringList = null,
     dockerLabels: DockerLabelsMap = null,
     dockerSecurityOptions: StringList = null,
     entryPoint: StringList = null,
     environment: EnvironmentVariables = null,
-    essential: js.UndefOr[scala.Boolean] = js.undefined,
+    environmentFiles: EnvironmentFiles = null,
+    essential: js.UndefOr[BoxedBoolean] = js.undefined,
     extraHosts: HostEntryList = null,
     firelensConfiguration: FirelensConfiguration = null,
     healthCheck: HealthCheck = null,
     hostname: String = null,
     image: String = null,
-    interactive: js.UndefOr[scala.Boolean] = js.undefined,
+    interactive: js.UndefOr[BoxedBoolean] = js.undefined,
     links: StringList = null,
     linuxParameters: LinuxParameters = null,
     logConfiguration: LogConfiguration = null,
-    memory: Int | scala.Double = null,
-    memoryReservation: Int | scala.Double = null,
+    memory: js.UndefOr[BoxedInteger] = js.undefined,
+    memoryReservation: js.UndefOr[BoxedInteger] = js.undefined,
     mountPoints: MountPointList = null,
     name: String = null,
     portMappings: PortMappingList = null,
-    privileged: js.UndefOr[scala.Boolean] = js.undefined,
-    pseudoTerminal: js.UndefOr[scala.Boolean] = js.undefined,
-    readonlyRootFilesystem: js.UndefOr[scala.Boolean] = js.undefined,
+    privileged: js.UndefOr[BoxedBoolean] = js.undefined,
+    pseudoTerminal: js.UndefOr[BoxedBoolean] = js.undefined,
+    readonlyRootFilesystem: js.UndefOr[BoxedBoolean] = js.undefined,
     repositoryCredentials: RepositoryCredentials = null,
     resourceRequirements: ResourceRequirements = null,
     secrets: SecretList = null,
-    startTimeout: Int | scala.Double = null,
-    stopTimeout: Int | scala.Double = null,
+    startTimeout: js.UndefOr[BoxedInteger] = js.undefined,
+    stopTimeout: js.UndefOr[BoxedInteger] = js.undefined,
     systemControls: SystemControls = null,
     ulimits: UlimitList = null,
     user: String = null,
@@ -204,38 +209,39 @@ object ContainerDefinition {
   ): ContainerDefinition = {
     val __obj = js.Dynamic.literal()
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.get.asInstanceOf[js.Any])
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNetworking)) __obj.updateDynamic("disableNetworking")(disableNetworking.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNetworking)) __obj.updateDynamic("disableNetworking")(disableNetworking.get.asInstanceOf[js.Any])
     if (dnsSearchDomains != null) __obj.updateDynamic("dnsSearchDomains")(dnsSearchDomains.asInstanceOf[js.Any])
     if (dnsServers != null) __obj.updateDynamic("dnsServers")(dnsServers.asInstanceOf[js.Any])
     if (dockerLabels != null) __obj.updateDynamic("dockerLabels")(dockerLabels.asInstanceOf[js.Any])
     if (dockerSecurityOptions != null) __obj.updateDynamic("dockerSecurityOptions")(dockerSecurityOptions.asInstanceOf[js.Any])
     if (entryPoint != null) __obj.updateDynamic("entryPoint")(entryPoint.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential.asInstanceOf[js.Any])
+    if (environmentFiles != null) __obj.updateDynamic("environmentFiles")(environmentFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential.get.asInstanceOf[js.Any])
     if (extraHosts != null) __obj.updateDynamic("extraHosts")(extraHosts.asInstanceOf[js.Any])
     if (firelensConfiguration != null) __obj.updateDynamic("firelensConfiguration")(firelensConfiguration.asInstanceOf[js.Any])
     if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (linuxParameters != null) __obj.updateDynamic("linuxParameters")(linuxParameters.asInstanceOf[js.Any])
     if (logConfiguration != null) __obj.updateDynamic("logConfiguration")(logConfiguration.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
-    if (memoryReservation != null) __obj.updateDynamic("memoryReservation")(memoryReservation.asInstanceOf[js.Any])
+    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoryReservation)) __obj.updateDynamic("memoryReservation")(memoryReservation.get.asInstanceOf[js.Any])
     if (mountPoints != null) __obj.updateDynamic("mountPoints")(mountPoints.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (portMappings != null) __obj.updateDynamic("portMappings")(portMappings.asInstanceOf[js.Any])
-    if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged.asInstanceOf[js.Any])
-    if (!js.isUndefined(pseudoTerminal)) __obj.updateDynamic("pseudoTerminal")(pseudoTerminal.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonlyRootFilesystem)) __obj.updateDynamic("readonlyRootFilesystem")(readonlyRootFilesystem.asInstanceOf[js.Any])
+    if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pseudoTerminal)) __obj.updateDynamic("pseudoTerminal")(pseudoTerminal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonlyRootFilesystem)) __obj.updateDynamic("readonlyRootFilesystem")(readonlyRootFilesystem.get.asInstanceOf[js.Any])
     if (repositoryCredentials != null) __obj.updateDynamic("repositoryCredentials")(repositoryCredentials.asInstanceOf[js.Any])
     if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements.asInstanceOf[js.Any])
     if (secrets != null) __obj.updateDynamic("secrets")(secrets.asInstanceOf[js.Any])
-    if (startTimeout != null) __obj.updateDynamic("startTimeout")(startTimeout.asInstanceOf[js.Any])
-    if (stopTimeout != null) __obj.updateDynamic("stopTimeout")(stopTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTimeout)) __obj.updateDynamic("startTimeout")(startTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopTimeout)) __obj.updateDynamic("stopTimeout")(stopTimeout.get.asInstanceOf[js.Any])
     if (systemControls != null) __obj.updateDynamic("systemControls")(systemControls.asInstanceOf[js.Any])
     if (ulimits != null) __obj.updateDynamic("ulimits")(ulimits.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

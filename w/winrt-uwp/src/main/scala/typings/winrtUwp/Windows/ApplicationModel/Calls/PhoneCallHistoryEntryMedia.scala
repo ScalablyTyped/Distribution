@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object PhoneCallHistoryEntryMedia extends js.Object {
   /** The call contains video media. */
   @js.native
   sealed trait video extends PhoneCallHistoryEntryMedia
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneCallHistoryEntryMedia with Double] = js.native
-  /* 0 */ @js.native
-  object audio extends TopLevel[audio with Double]
-  
-  /* 1 */ @js.native
-  object video extends TopLevel[video with Double]
   
 }
 

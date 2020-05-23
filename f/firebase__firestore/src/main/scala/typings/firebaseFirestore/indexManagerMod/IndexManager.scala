@@ -33,7 +33,6 @@ object IndexManager {
     getCollectionParents: (PersistenceTransaction, String) => PersistencePromise[js.Array[ResourcePath]]
   ): IndexManager = {
     val __obj = js.Dynamic.literal(addToCollectionParentIndex = js.Any.fromFunction2(addToCollectionParentIndex), getCollectionParents = js.Any.fromFunction2(getCollectionParents))
-  
     __obj.asInstanceOf[IndexManager]
   }
 }

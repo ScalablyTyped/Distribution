@@ -3,6 +3,8 @@ package typings.stardustUiReactComponentRef
 import typings.propTypes.mod.Requireable
 import typings.react.mod.FunctionComponent
 import typings.react.mod.RefObject
+import typings.stardustUiReactComponentRef.anon.Children
+import typings.stardustUiReactComponentRef.anon.InnerRef
 import typings.stardustUiReactComponentRef.refFindNodeMod.default
 import typings.stardustUiReactComponentRef.typesMod.RefProps
 import typings.std.Node
@@ -37,14 +39,14 @@ object mod extends js.Object {
   @js.native
   object RefFindNode extends js.Object {
     var displayName: String = js.native
-    var propTypes: AnonChildren | AnonInnerRef = js.native
+    var propTypes: Children | InnerRef = js.native
   }
   
   /* static members */
   @js.native
   object RefForward extends js.Object {
     var displayName: String = js.native
-    var propTypes: AnonChildren | AnonInnerRef = js.native
+    var propTypes: Children | InnerRef = js.native
   }
   
 }

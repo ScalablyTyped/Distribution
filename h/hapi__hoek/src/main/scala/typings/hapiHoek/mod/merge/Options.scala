@@ -33,9 +33,9 @@ object Options {
     symbols: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mergeArrays)) __obj.updateDynamic("mergeArrays")(mergeArrays.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullOverride)) __obj.updateDynamic("nullOverride")(nullOverride.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeArrays)) __obj.updateDynamic("mergeArrays")(mergeArrays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullOverride)) __obj.updateDynamic("nullOverride")(nullOverride.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

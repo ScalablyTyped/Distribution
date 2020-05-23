@@ -1,10 +1,10 @@
 package typings.forgeApis.mod
 
-import typings.forgeApis.AnonAcceptEncoding
-import typings.forgeApis.AnonAcceptEncodingString
-import typings.forgeApis.AnonHeight
-import typings.forgeApis.AnonRange
-import typings.forgeApis.AnonXAdsForce
+import typings.forgeApis.anon.AcceptEncoding
+import typings.forgeApis.anon.AcceptEncodingString
+import typings.forgeApis.anon.Height
+import typings.forgeApis.anon.Range
+import typings.forgeApis.anon.XAdsForce
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,19 +22,13 @@ class DerivativesApi () extends js.Object {
     * calling most of the Model Derivative endpoints. A derivative URN is generated for each translated output file format, and is used for downloading the output
     * design files. You can set the range of bytes that are returned when downloading the derivative, using the range header.
     */
-  def getDerivativeManifest(
-    urn: String,
-    derivativeUrn: String,
-    opts: AnonRange,
-    oauth2Client: AuthClient,
-    credentials: AuthToken
-  ): js.Promise[ApiResponse] = js.native
+  def getDerivativeManifest(urn: String, derivativeUrn: String, opts: Range, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns an up-to-date list of Forge-supported translations, that you can use to identify which types of derivatives are supported for each source file type.
     * You can set this endpoint to only return the list of supported translations if they have been updated since a specified date. See the Supported Translation
     * Formats table for more details about supported translations. Note that we are constantly adding new file formats to the list of Forge translations.
     */
-  def getFormats(opts: AnonAcceptEncoding, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getFormats(opts: AcceptEncoding, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns information about derivatives that correspond to a specific source file, including derviative URNs and statuses.
     * The URNs of the derivatives are used to download the generated derivatives when calling the GET {urn}/manifest/{derivativeurn}
@@ -43,7 +37,7 @@ class DerivativesApi () extends js.Object {
     * When translating a source file a second time, the previously created manifest is not deleted; it appends the information
     * (only new translations) to the manifest.
     */
-  def getManifest(urn: String, opts: AnonAcceptEncodingString, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getManifest(urn: String, opts: AcceptEncodingString, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns a list of model view (metadata) IDs for a design model. The metadata ID enables end users to select an object tree
     * and properties for a specific model view. Although most design apps (e.g., Fusion and Inventor) only allow a single model
@@ -51,7 +45,7 @@ class DerivativesApi () extends js.Object {
     * (e.g., HVAC, architecture, perspective). Note that you can only retrieve metadata from an input file that has been
     * translated into an SVF file.
     */
-  def getMetadata(urn: String, opts: AnonAcceptEncodingString, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getMetadata(urn: String, opts: AcceptEncodingString, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns an object tree, i.e., a hierarchical list of objects for a model view. To call this endpoint you first need to
     * call the GET {urn}/metadata endpoint, to determine which model view (object tree and set of properties) to use. Although
@@ -62,7 +56,7 @@ class DerivativesApi () extends js.Object {
   def getModelviewMetadata(
     urn: String,
     guid: String,
-    opts: AnonAcceptEncodingString,
+    opts: AcceptEncodingString,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
@@ -76,19 +70,19 @@ class DerivativesApi () extends js.Object {
   def getModelviewProperties(
     urn: String,
     guid: String,
-    opts: AnonAcceptEncodingString,
+    opts: AcceptEncodingString,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
   /**
     * Returns the thumbnail for the source file.
     */
-  def getThumbnail(urn: String, opts: AnonHeight, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getThumbnail(urn: String, opts: Height, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Translate a source file from one format to another. Derivatives are stored in a manifest that is updated each time this endpoint
     * is used on a source file. Note that this endpoint is asynchronous and initiates a process that runs in the background, rather
     * than keeping an open HTTP connection until completion. Use the GET {urn}/manifest endpoint to poll for the job’s completion.
     */
-  def translate(job: JobPayload, opts: AnonXAdsForce, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def translate(job: JobPayload, opts: XAdsForce, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
 }
 

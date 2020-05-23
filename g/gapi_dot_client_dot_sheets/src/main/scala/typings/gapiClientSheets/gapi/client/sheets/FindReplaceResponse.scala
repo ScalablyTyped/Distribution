@@ -24,18 +24,18 @@ trait FindReplaceResponse extends js.Object {
 object FindReplaceResponse {
   @scala.inline
   def apply(
-    formulasChanged: Int | Double = null,
-    occurrencesChanged: Int | Double = null,
-    rowsChanged: Int | Double = null,
-    sheetsChanged: Int | Double = null,
-    valuesChanged: Int | Double = null
+    formulasChanged: js.UndefOr[Double] = js.undefined,
+    occurrencesChanged: js.UndefOr[Double] = js.undefined,
+    rowsChanged: js.UndefOr[Double] = js.undefined,
+    sheetsChanged: js.UndefOr[Double] = js.undefined,
+    valuesChanged: js.UndefOr[Double] = js.undefined
   ): FindReplaceResponse = {
     val __obj = js.Dynamic.literal()
-    if (formulasChanged != null) __obj.updateDynamic("formulasChanged")(formulasChanged.asInstanceOf[js.Any])
-    if (occurrencesChanged != null) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.asInstanceOf[js.Any])
-    if (rowsChanged != null) __obj.updateDynamic("rowsChanged")(rowsChanged.asInstanceOf[js.Any])
-    if (sheetsChanged != null) __obj.updateDynamic("sheetsChanged")(sheetsChanged.asInstanceOf[js.Any])
-    if (valuesChanged != null) __obj.updateDynamic("valuesChanged")(valuesChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulasChanged)) __obj.updateDynamic("formulasChanged")(formulasChanged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(occurrencesChanged)) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowsChanged)) __obj.updateDynamic("rowsChanged")(rowsChanged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetsChanged)) __obj.updateDynamic("sheetsChanged")(sheetsChanged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valuesChanged)) __obj.updateDynamic("valuesChanged")(valuesChanged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindReplaceResponse]
   }
 }

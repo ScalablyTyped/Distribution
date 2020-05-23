@@ -28,8 +28,8 @@ object IWebXRAnchorSystemOptions {
     worldParentNode: TransformNode = null
   ): IWebXRAnchorSystemOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addAnchorOnSelect)) __obj.updateDynamic("addAnchorOnSelect")(addAnchorOnSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePlaneDetection)) __obj.updateDynamic("usePlaneDetection")(usePlaneDetection.asInstanceOf[js.Any])
+    if (!js.isUndefined(addAnchorOnSelect)) __obj.updateDynamic("addAnchorOnSelect")(addAnchorOnSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePlaneDetection)) __obj.updateDynamic("usePlaneDetection")(usePlaneDetection.get.asInstanceOf[js.Any])
     if (worldParentNode != null) __obj.updateDynamic("worldParentNode")(worldParentNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebXRAnchorSystemOptions]
   }

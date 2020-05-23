@@ -1,8 +1,8 @@
 package typings.reactSlider.mod
 
-import typings.react.mod._Global_.JSX.Element
-import typings.reactSlider.AnonIndex
-import typings.reactSlider.AnonValue
+import typings.react.mod.global.JSX.Element
+import typings.reactSlider.anon.Index
+import typings.reactSlider.anon.Value
 import typings.reactSlider.reactSliderStrings.horizontal
 import typings.reactSlider.reactSliderStrings.vertical
 import scala.scalajs.js
@@ -20,7 +20,7 @@ trait ReactSliderProps extends js.Object {
     * aria-valuetext for screen-readers.
     * Can be a static string, or a function that returns a string.
     */
-  var ariaValuetext: js.UndefOr[String | (js.Function1[/* value */ AnonIndex, String])] = js.undefined
+  var ariaValuetext: js.UndefOr[String | (js.Function1[/* value */ Index, String])] = js.undefined
   /**
     * The css class set on the slider node.
     */
@@ -94,13 +94,13 @@ trait ReactSliderProps extends js.Object {
     * The render function will be passed two arguments.The first is
     * an object that should be added to your thumb node,
     */
-  var renderThumb: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ AnonIndex, Element]] = js.undefined
+  var renderThumb: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ Index, Element]] = js.undefined
   /**
     * Provide a custom render function for the track node.
     * The render function will be passed two arguments. The first is
     * an object that should be added to your handle node.
     */
-  var renderTrack: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ AnonValue, Element]] = js.undefined
+  var renderTrack: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ Value, Element]] = js.undefined
   /**
     * Disables thumb move when clicking the slider track
     */
@@ -143,14 +143,14 @@ object ReactSliderProps {
   @scala.inline
   def apply(
     ariaLabel: String | js.Array[String] = null,
-    ariaValuetext: String | (js.Function1[/* value */ AnonIndex, String]) = null,
+    ariaValuetext: String | (js.Function1[/* value */ Index, String]) = null,
     className: String = null,
     defaultValue: Double | js.Array[Double] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     invert: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    minDistance: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    minDistance: js.UndefOr[Double] = js.undefined,
     onAfterChange: /* value */ js.UndefOr[Double | js.Array[Double] | Null] => Unit = null,
     onBeforeChange: /* value */ js.UndefOr[Double | js.Array[Double] | Null] => Unit = null,
     onChange: /* value */ js.UndefOr[Double | js.Array[Double] | Null] => Unit = null,
@@ -158,10 +158,10 @@ object ReactSliderProps {
     orientation: horizontal | vertical = null,
     pageFn: /* step */ Double => Double = null,
     pearling: js.UndefOr[Boolean] = js.undefined,
-    renderThumb: (/* props */ js.Object, /* state */ AnonIndex) => Element = null,
-    renderTrack: (/* props */ js.Object, /* state */ AnonValue) => Element = null,
+    renderThumb: (/* props */ js.Object, /* state */ Index) => Element = null,
+    renderTrack: (/* props */ js.Object, /* state */ Value) => Element = null,
     snapDragDisabled: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     thumbActiveClassName: String = null,
     thumbClassName: String = null,
     trackClassName: String = null,
@@ -173,27 +173,27 @@ object ReactSliderProps {
     if (ariaValuetext != null) __obj.updateDynamic("ariaValuetext")(ariaValuetext.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minDistance != null) __obj.updateDynamic("minDistance")(minDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDistance)) __obj.updateDynamic("minDistance")(minDistance.get.asInstanceOf[js.Any])
     if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1(onAfterChange))
     if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(js.Any.fromFunction1(onBeforeChange))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onSliderClick != null) __obj.updateDynamic("onSliderClick")(js.Any.fromFunction1(onSliderClick))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (pageFn != null) __obj.updateDynamic("pageFn")(js.Any.fromFunction1(pageFn))
-    if (!js.isUndefined(pearling)) __obj.updateDynamic("pearling")(pearling.asInstanceOf[js.Any])
+    if (!js.isUndefined(pearling)) __obj.updateDynamic("pearling")(pearling.get.asInstanceOf[js.Any])
     if (renderThumb != null) __obj.updateDynamic("renderThumb")(js.Any.fromFunction2(renderThumb))
     if (renderTrack != null) __obj.updateDynamic("renderTrack")(js.Any.fromFunction2(renderTrack))
-    if (!js.isUndefined(snapDragDisabled)) __obj.updateDynamic("snapDragDisabled")(snapDragDisabled.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapDragDisabled)) __obj.updateDynamic("snapDragDisabled")(snapDragDisabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (thumbActiveClassName != null) __obj.updateDynamic("thumbActiveClassName")(thumbActiveClassName.asInstanceOf[js.Any])
     if (thumbClassName != null) __obj.updateDynamic("thumbClassName")(thumbClassName.asInstanceOf[js.Any])
     if (trackClassName != null) __obj.updateDynamic("trackClassName")(trackClassName.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(withTracks)) __obj.updateDynamic("withTracks")(withTracks.asInstanceOf[js.Any])
+    if (!js.isUndefined(withTracks)) __obj.updateDynamic("withTracks")(withTracks.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactSliderProps]
   }
 }

@@ -40,19 +40,19 @@ trait BorderRadiusProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ext
 
 object BorderRadiusProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](
-    borderBottomLeftRadius: ResponsiveValue[TVal, ThemeType] = null,
-    borderBottomRightRadius: ResponsiveValue[TVal, ThemeType] = null,
-    borderRadius: ResponsiveValue[TVal, ThemeType] = null,
-    borderTopLeftRadius: ResponsiveValue[TVal, ThemeType] = null,
-    borderTopRightRadius: ResponsiveValue[TVal, ThemeType] = null
+  def apply[ThemeType, TVal](
+    borderBottomLeftRadius: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderBottomRightRadius: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderRadius: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderTopLeftRadius: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    borderTopRightRadius: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined
   ): BorderRadiusProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (borderBottomLeftRadius != null) __obj.updateDynamic("borderBottomLeftRadius")(borderBottomLeftRadius.asInstanceOf[js.Any])
-    if (borderBottomRightRadius != null) __obj.updateDynamic("borderBottomRightRadius")(borderBottomRightRadius.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderTopLeftRadius != null) __obj.updateDynamic("borderTopLeftRadius")(borderTopLeftRadius.asInstanceOf[js.Any])
-    if (borderTopRightRadius != null) __obj.updateDynamic("borderTopRightRadius")(borderTopRightRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderBottomLeftRadius)) __obj.updateDynamic("borderBottomLeftRadius")(borderBottomLeftRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderBottomRightRadius)) __obj.updateDynamic("borderBottomRightRadius")(borderBottomRightRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderTopLeftRadius)) __obj.updateDynamic("borderTopLeftRadius")(borderTopLeftRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderTopRightRadius)) __obj.updateDynamic("borderTopRightRadius")(borderTopRightRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderRadiusProps[ThemeType, TVal]]
   }
 }

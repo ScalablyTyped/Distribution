@@ -24,8 +24,7 @@ object ojFilePickerSettableProperties {
     selectionMode: multiple | single,
     accept: js.Array[String] = null
   ): ojFilePickerSettableProperties = {
-    val __obj = js.Dynamic.literal(selectOn = selectOn.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any])
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(selectOn = selectOn.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], accept = accept.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojFilePickerSettableProperties]
   }
 }

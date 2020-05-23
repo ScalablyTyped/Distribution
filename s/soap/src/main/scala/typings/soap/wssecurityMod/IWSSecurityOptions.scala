@@ -25,9 +25,9 @@ object IWSSecurityOptions {
   ): IWSSecurityOptions = {
     val __obj = js.Dynamic.literal()
     if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasNonce)) __obj.updateDynamic("hasNonce")(hasNonce.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTimeStamp)) __obj.updateDynamic("hasTimeStamp")(hasTimeStamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTokenCreated)) __obj.updateDynamic("hasTokenCreated")(hasTokenCreated.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasNonce)) __obj.updateDynamic("hasNonce")(hasNonce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTimeStamp)) __obj.updateDynamic("hasTimeStamp")(hasTimeStamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTokenCreated)) __obj.updateDynamic("hasTokenCreated")(hasTokenCreated.get.asInstanceOf[js.Any])
     if (mustUnderstand != null) __obj.updateDynamic("mustUnderstand")(mustUnderstand.asInstanceOf[js.Any])
     if (passwordType != null) __obj.updateDynamic("passwordType")(passwordType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWSSecurityOptions]

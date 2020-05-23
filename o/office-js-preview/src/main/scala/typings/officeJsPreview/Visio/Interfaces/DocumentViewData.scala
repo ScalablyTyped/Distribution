@@ -53,11 +53,11 @@ object DocumentViewData {
     hideDiagramBoundary: js.UndefOr[Boolean] = js.undefined
   ): DocumentViewData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableHyperlinks)) __obj.updateDynamic("disableHyperlinks")(disableHyperlinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePan)) __obj.updateDynamic("disablePan")(disablePan.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePanZoomWindow)) __obj.updateDynamic("disablePanZoomWindow")(disablePanZoomWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableZoom)) __obj.updateDynamic("disableZoom")(disableZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDiagramBoundary)) __obj.updateDynamic("hideDiagramBoundary")(hideDiagramBoundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHyperlinks)) __obj.updateDynamic("disableHyperlinks")(disableHyperlinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePan)) __obj.updateDynamic("disablePan")(disablePan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePanZoomWindow)) __obj.updateDynamic("disablePanZoomWindow")(disablePanZoomWindow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableZoom)) __obj.updateDynamic("disableZoom")(disableZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDiagramBoundary)) __obj.updateDynamic("hideDiagramBoundary")(hideDiagramBoundary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentViewData]
   }
 }

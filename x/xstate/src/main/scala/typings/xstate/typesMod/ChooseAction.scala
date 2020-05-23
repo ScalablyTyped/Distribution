@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.xstate.typesMod._Action because Already inherited */ trait ChooseAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
   var conds: js.Array[ChooseConditon[TContext, TEvent]]
   @JSName("type")
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 object ChooseAction {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  def apply[TContext, TEvent](
     conds: js.Array[ChooseConditon[TContext, TEvent]],
     `type`: Choose,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null

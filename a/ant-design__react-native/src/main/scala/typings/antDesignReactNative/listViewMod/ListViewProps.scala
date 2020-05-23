@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.listViewMod
 
-import typings.antDesignReactNative.AnonHighlight
+import typings.antDesignReactNative.anon.Highlight
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -13,14 +13,14 @@ trait ListViewProps[T] extends UltimateListViewProps {
   @JSName("numColumns")
   var numColumns_ListViewProps: js.UndefOr[Double] = js.undefined
   def onFetch(currentPage: Double, startFetch: js.Function0[_], abortFetch: js.Function0[Unit]): Unit
-  def renderItem(item: T, index: Double, separators: AnonHighlight): ReactElement | Null
+  def renderItem(item: T, index: Double, separators: Highlight): ReactElement | Null
 }
 
 object ListViewProps {
   @scala.inline
   def apply[T](
     onFetch: (Double, js.Function0[_], js.Function0[Unit]) => Unit,
-    renderItem: (T, Double, AnonHighlight) => ReactElement | Null,
+    renderItem: (T, Double, Highlight) => ReactElement | Null,
     allLoadedText: js.Any = null,
     arrowImageSource: js.Any = null,
     arrowImageStyle: js.Any = null,
@@ -40,7 +40,7 @@ object ListViewProps {
     horizontal: js.Any = null,
     initialNumToRender: js.Any = null,
     keyExtractor: (/* item */ T, /* index */ Double) => String = null,
-    numColumns: Int | Double = null,
+    numColumns: js.UndefOr[Double] = js.undefined,
     pagination: js.Any = null,
     paginationAllLoadedView: js.Any = null,
     paginationBtnText: js.Any = null,
@@ -84,7 +84,7 @@ object ListViewProps {
     if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
     if (initialNumToRender != null) __obj.updateDynamic("initialNumToRender")(initialNumToRender.asInstanceOf[js.Any])
     if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2(keyExtractor))
-    if (numColumns != null) __obj.updateDynamic("numColumns")(numColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(numColumns)) __obj.updateDynamic("numColumns")(numColumns.get.asInstanceOf[js.Any])
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     if (paginationAllLoadedView != null) __obj.updateDynamic("paginationAllLoadedView")(paginationAllLoadedView.asInstanceOf[js.Any])
     if (paginationBtnText != null) __obj.updateDynamic("paginationBtnText")(paginationBtnText.asInstanceOf[js.Any])

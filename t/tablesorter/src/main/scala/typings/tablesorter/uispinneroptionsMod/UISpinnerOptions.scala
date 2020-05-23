@@ -82,37 +82,37 @@ object UISpinnerOptions {
     exactMatch: js.UndefOr[Boolean] = js.undefined,
     icons: js.Any = null,
     incremental: js.Any = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     numberFormat: String = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     spin: (/* event */ JQueryEventObject, SpinnerUIParam) => Unit = null,
     start: (/* event */ JQueryEventObject, js.Object) => Unit = null,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     stop: (/* event */ JQueryEventObject, js.Object) => Unit = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): UISpinnerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addToggle)) __obj.updateDynamic("addToggle")(addToggle.asInstanceOf[js.Any])
+    if (!js.isUndefined(addToggle)) __obj.updateDynamic("addToggle")(addToggle.get.asInstanceOf[js.Any])
     if (cellText != null) __obj.updateDynamic("cellText")(cellText.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayed)) __obj.updateDynamic("delayed")(delayed.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayed)) __obj.updateDynamic("delayed")(delayed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.get.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (incremental != null) __obj.updateDynamic("incremental")(incremental.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (spin != null) __obj.updateDynamic("spin")(js.Any.fromFunction2(spin))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UISpinnerOptions]
   }
 }

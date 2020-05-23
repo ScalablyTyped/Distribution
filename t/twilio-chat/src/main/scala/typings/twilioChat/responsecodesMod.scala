@@ -1,10 +1,5 @@
 package typings.twilioChat
 
-import typings.twilioChat.twilioChatNumbers.`200`
-import typings.twilioChat.twilioChatNumbers.`400`
-import typings.twilioChat.twilioChatNumbers.`404`
-import typings.twilioChat.twilioChatNumbers.`54007`
-import typings.twilioChat.twilioChatNumbers.`54150`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,11 +13,11 @@ object responsecodesMod extends js.Object {
   /* static members */
   @js.native
   object ResponseCodes extends js.Object {
-    val ACCESS_FORBIDDEN_FOR_IDENTITY: `54007` = js.native
-    val HTTP_200_OK: `200` = js.native
-    val HTTP_400_BAD_REQUEST: `400` = js.native
-    val HTTP_404_NOT_FOUND: `404` = js.native
-    val LIST_NOT_FOUND: `54150` = js.native
+    val ACCESS_FORBIDDEN_FOR_IDENTITY: /* 54007 */ Double = js.native
+    val HTTP_200_OK: /* 200 */ Double = js.native
+    val HTTP_400_BAD_REQUEST: /* 400 */ Double = js.native
+    val HTTP_404_NOT_FOUND: /* 404 */ Double = js.native
+    val LIST_NOT_FOUND: /* 54150 */ Double = js.native
   }
   
 }

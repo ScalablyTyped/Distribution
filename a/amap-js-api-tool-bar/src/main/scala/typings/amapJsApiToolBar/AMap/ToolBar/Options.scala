@@ -67,21 +67,21 @@ object Options {
     offset: Pixel = null,
     position: Position = null,
     ruler: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     useNative: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPosition)) __obj.updateDynamic("autoPosition")(autoPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(liteStyle)) __obj.updateDynamic("liteStyle")(liteStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(locate)) __obj.updateDynamic("locate")(locate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPosition)) __obj.updateDynamic("autoPosition")(autoPosition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(liteStyle)) __obj.updateDynamic("liteStyle")(liteStyle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locate)) __obj.updateDynamic("locate")(locate.get.asInstanceOf[js.Any])
     if (locationMarker != null) __obj.updateDynamic("locationMarker")(locationMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(noIpLocate)) __obj.updateDynamic("noIpLocate")(noIpLocate.asInstanceOf[js.Any])
+    if (!js.isUndefined(noIpLocate)) __obj.updateDynamic("noIpLocate")(noIpLocate.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(ruler)) __obj.updateDynamic("ruler")(ruler.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruler)) __obj.updateDynamic("ruler")(ruler.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

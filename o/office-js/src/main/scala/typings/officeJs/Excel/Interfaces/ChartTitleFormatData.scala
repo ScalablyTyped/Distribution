@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait ChartTitleFormatData extends js.Object {
   /**
     *
-    * Represents the border format of chart title, which includes color, linestyle, and weight. Read-only.
+    * Represents the border format of chart title, which includes color, linestyle, and weight.
     *
     * [Api set: ExcelApi 1.7]
     */
   var border: js.UndefOr[ChartBorderData] = js.undefined
   /**
     *
-    * Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
+    * Represents the font attributes (font name, font size, color, etc.) for an object.
     *
     * [Api set: ExcelApi 1.1]
     */

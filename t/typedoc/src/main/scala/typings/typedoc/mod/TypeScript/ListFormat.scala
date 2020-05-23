@@ -23,7 +23,7 @@ object ListFormat extends js.Object {
   /* 129 */ val ClassMembers: typings.typescript.mod.ListFormat.ClassMembers with Double = js.native
   /* 16 */ val CommaDelimited: typings.typescript.mod.ListFormat.CommaDelimited with Double = js.native
   /* 528 */ val CommaListElements: typings.typescript.mod.ListFormat.CommaListElements with Double = js.native
-  /* 49153 */ val Decorators: typings.typescript.mod.ListFormat.Decorators with Double = js.native
+  /* 2146305 */ val Decorators: typings.typescript.mod.ListFormat.Decorators with Double = js.native
   /* 60 */ val DelimitersMask: typings.typescript.mod.ListFormat.DelimitersMask with Double = js.native
   /* 145 */ val EnumMembers: typings.typescript.mod.ListFormat.EnumMembers with Double = js.native
   /* 528 */ val HeritageClauseTypes: typings.typescript.mod.ListFormat.HeritageClauseTypes with Double = js.native
@@ -63,6 +63,7 @@ object ListFormat extends js.Object {
   /* 768 */ val SingleLineFunctionBodyStatements: typings.typescript.mod.ListFormat.SingleLineFunctionBodyStatements with Double = js.native
   /* 768 */ val SingleLineTypeLiteralMembers: typings.typescript.mod.ListFormat.SingleLineTypeLiteralMembers with Double = js.native
   /* 131073 */ val SourceFileStatements: typings.typescript.mod.ListFormat.SourceFileStatements with Double = js.native
+  /* 2097152 */ val SpaceAfterList: typings.typescript.mod.ListFormat.SpaceAfterList with Double = js.native
   /* 256 */ val SpaceBetweenBraces: typings.typescript.mod.ListFormat.SpaceBetweenBraces with Double = js.native
   /* 512 */ val SpaceBetweenSiblings: typings.typescript.mod.ListFormat.SpaceBetweenSiblings with Double = js.native
   /* 8192 */ val SquareBrackets: typings.typescript.mod.ListFormat.SquareBrackets with Double = js.native

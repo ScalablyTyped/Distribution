@@ -16,15 +16,15 @@ object LedOption {
   @scala.inline
   def apply(
     pin: Double,
-    address: Int | Double = null,
+    address: js.UndefOr[Double] = js.undefined,
     controller: String = null,
     isAnode: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): LedOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.get.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAnode)) __obj.updateDynamic("isAnode")(isAnode.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAnode)) __obj.updateDynamic("isAnode")(isAnode.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LedOption]
   }

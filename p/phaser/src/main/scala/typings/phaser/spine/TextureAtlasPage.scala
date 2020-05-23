@@ -4,16 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.TextureAtlasPage")
-@js.native
-class TextureAtlasPage () extends js.Object {
-  var height: Double = js.native
-  var magFilter: TextureFilter = js.native
-  var minFilter: TextureFilter = js.native
-  var name: String = js.native
-  var texture: Texture = js.native
-  var uWrap: TextureWrap = js.native
-  var vWrap: TextureWrap = js.native
-  var width: Double = js.native
+trait TextureAtlasPage extends js.Object {
+  var height: Double
+  var magFilter: TextureFilter
+  var minFilter: TextureFilter
+  var name: String
+  var texture: Texture
+  var uWrap: TextureWrap
+  var vWrap: TextureWrap
+  var width: Double
+}
+
+object TextureAtlasPage {
+  @scala.inline
+  def apply(
+    height: Double,
+    magFilter: TextureFilter,
+    minFilter: TextureFilter,
+    name: String,
+    texture: Texture,
+    uWrap: TextureWrap,
+    vWrap: TextureWrap,
+    width: Double
+  ): TextureAtlasPage = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], magFilter = magFilter.asInstanceOf[js.Any], minFilter = minFilter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], texture = texture.asInstanceOf[js.Any], uWrap = uWrap.asInstanceOf[js.Any], vWrap = vWrap.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextureAtlasPage]
+  }
 }
 

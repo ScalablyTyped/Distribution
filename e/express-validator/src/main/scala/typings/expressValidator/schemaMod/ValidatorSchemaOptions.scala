@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.expressValidator.expressValidatorBooleans.`true`
-  - typings.expressValidator.AnonErrorMessage[K]
+  - typings.expressValidator.anon.ErrorMessage[K]
 */
-trait ValidatorSchemaOptions[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 70 */ js.Any */] extends js.Object
+trait ValidatorSchemaOptions[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 79 */ js.Any */] extends js.Object
 

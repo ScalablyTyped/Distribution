@@ -22,18 +22,18 @@ trait ColInfo extends js.Object {
 object ColInfo {
   @scala.inline
   def apply(
-    MDW: Int | Double = null,
+    MDW: js.UndefOr[Double] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    wch: Int | Double = null,
-    width: Int | Double = null,
-    wpx: Int | Double = null
+    wch: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
+    wpx: js.UndefOr[Double] = js.undefined
   ): ColInfo = {
     val __obj = js.Dynamic.literal()
-    if (MDW != null) __obj.updateDynamic("MDW")(MDW.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (wch != null) __obj.updateDynamic("wch")(wch.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wpx != null) __obj.updateDynamic("wpx")(wpx.asInstanceOf[js.Any])
+    if (!js.isUndefined(MDW)) __obj.updateDynamic("MDW")(MDW.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wch)) __obj.updateDynamic("wch")(wch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wpx)) __obj.updateDynamic("wpx")(wpx.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColInfo]
   }
 }

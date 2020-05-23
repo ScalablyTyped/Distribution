@@ -1,9 +1,9 @@
 package typings.phaser.Phaser.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.File
 import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Loader.MultiFile
-import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasXMLFileConfig
-import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
+import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,91 +15,36 @@ import scala.scalajs.js.annotation._
   * 
   * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#atlasXML.
   */
-@JSGlobal("Phaser.Loader.FileTypes.AtlasXMLFile")
-@js.native
-class AtlasXMLFile protected () extends MultiFile {
-  /**
-    * 
-    * @param loader A reference to the Loader that is responsible for this file.
-    * @param key The key to use for this file, or a file configuration object.
-    * @param textureURL The absolute or relative URL to load the texture image file from. If undefined or `null` it will be set to `<key>.png`, i.e. if `key` was "alien" then the URL will be "alien.png".
-    * @param atlasURL The absolute or relative URL to load the texture atlas xml data file from. If undefined or `null` it will be set to `<key>.xml`, i.e. if `key` was "alien" then the URL will be "alien.xml".
-    * @param textureXhrSettings An XHR Settings configuration object for the atlas image file. Used in replacement of the Loaders default XHR Settings.
-    * @param atlasXhrSettings An XHR Settings configuration object for the atlas xml file. Used in replacement of the Loaders default XHR Settings.
-    */
-  def this(loader: LoaderPlugin, key: String) = this()
-  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig) = this()
-  def this(loader: LoaderPlugin, key: String, textureURL: String) = this()
-  def this(loader: LoaderPlugin, key: String, textureURL: js.Array[String]) = this()
-  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig, textureURL: String) = this()
-  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig, textureURL: js.Array[String]) = this()
-  def this(loader: LoaderPlugin, key: String, textureURL: String, atlasURL: String) = this()
-  def this(loader: LoaderPlugin, key: String, textureURL: js.Array[String], atlasURL: String) = this()
-  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig, textureURL: String, atlasURL: String) = this()
-  def this(loader: LoaderPlugin, key: AtlasXMLFileConfig, textureURL: js.Array[String], atlasURL: String) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: AtlasXMLFileConfig,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: AtlasXMLFileConfig,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: AtlasXMLFileConfig,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: AtlasXMLFileConfig,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ) = this()
+trait AtlasXMLFile extends MultiFile {
   /**
     * Adds this file to its target cache upon successful loading and processing.
     */
-  def addToCache(): Unit = js.native
+  def addToCache(): Unit
+}
+
+object AtlasXMLFile {
+  @scala.inline
+  def apply(
+    addToCache: () => Unit,
+    addToMultiFile: File => MultiFile,
+    baseURL: String,
+    complete: Boolean,
+    config: js.Any,
+    failed: integer,
+    files: js.Array[File],
+    isReadyToProcess: () => Boolean,
+    key: String,
+    loader: LoaderPlugin,
+    onFileComplete: File => Unit,
+    onFileFailed: File => Unit,
+    path: String,
+    pending: integer,
+    prefix: String,
+    `type`: String
+  ): AtlasXMLFile = {
+    val __obj = js.Dynamic.literal(addToCache = js.Any.fromFunction0(addToCache), addToMultiFile = js.Any.fromFunction1(addToMultiFile), baseURL = baseURL.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], isReadyToProcess = js.Any.fromFunction0(isReadyToProcess), key = key.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], onFileComplete = js.Any.fromFunction1(onFileComplete), onFileFailed = js.Any.fromFunction1(onFileFailed), path = path.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AtlasXMLFile]
+  }
 }
 

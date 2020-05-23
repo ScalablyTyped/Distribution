@@ -18,9 +18,9 @@ trait RestoreAddressToClassicRequest extends js.Object {
 
 object RestoreAddressToClassicRequest {
   @scala.inline
-  def apply(PublicIp: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): RestoreAddressToClassicRequest = {
+  def apply(PublicIp: String, DryRun: js.UndefOr[Boolean] = js.undefined): RestoreAddressToClassicRequest = {
     val __obj = js.Dynamic.literal(PublicIp = PublicIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreAddressToClassicRequest]
   }
 }

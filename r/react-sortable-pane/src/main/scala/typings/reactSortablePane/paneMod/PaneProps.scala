@@ -3,7 +3,7 @@ package typings.reactSortablePane.paneMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
-import typings.reactSortablePane.AnonHeight
+import typings.reactSortablePane.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait PaneProps
   extends /* otherProps */ StringDictionary[js.Any] {
   var children: js.UndefOr[String | ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  var defaultSize: js.UndefOr[AnonHeight] = js.undefined
+  var defaultSize: js.UndefOr[Height] = js.undefined
   var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   var maxHeight: js.UndefOr[PaneSize] = js.undefined
   var maxWidth: js.UndefOr[PaneSize] = js.undefined
@@ -20,17 +20,17 @@ trait PaneProps
   var minWidth: js.UndefOr[PaneSize] = js.undefined
   var onSizeChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   var resizable: js.UndefOr[IsPaneResizable] = js.undefined
-  var size: js.UndefOr[AnonHeight] = js.undefined
+  var size: js.UndefOr[Height] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
 
 object PaneProps {
   @scala.inline
   def apply(
-    StringDictionary: /* otherProps */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     children: String | ReactNode = null,
     className: String = null,
-    defaultSize: AnonHeight = null,
+    defaultSize: Height = null,
     grid: js.Tuple2[Double, Double] = null,
     maxHeight: PaneSize = null,
     maxWidth: PaneSize = null,
@@ -38,7 +38,7 @@ object PaneProps {
     minWidth: PaneSize = null,
     onSizeChange: () => Unit = null,
     resizable: IsPaneResizable = null,
-    size: AnonHeight = null,
+    size: Height = null,
     style: CSSProperties = null
   ): PaneProps = {
     val __obj = js.Dynamic.literal()

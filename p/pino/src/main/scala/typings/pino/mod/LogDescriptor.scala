@@ -24,7 +24,7 @@ object LogDescriptor {
     pid: Double,
     time: String,
     v: Double,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): LogDescriptor = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

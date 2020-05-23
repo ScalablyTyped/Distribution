@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`150-kilometers`
 import typings.arcgisJsApi.arcgisJsApiStrings.`50-kilometers`
 import typings.arcgisJsApi.arcgisJsApiStrings.`benoit-1895-b-chains`
@@ -56,8 +55,4 @@ trait HeightModelInfo
     */
   val vertCRS: String = js.native
 }
-
-@JSGlobal("__esri.HeightModelInfo")
-@js.native
-object HeightModelInfo extends TopLevel[HeightModelInfoConstructor]
 

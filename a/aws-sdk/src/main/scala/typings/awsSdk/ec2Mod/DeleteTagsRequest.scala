@@ -22,9 +22,9 @@ trait DeleteTagsRequest extends js.Object {
 
 object DeleteTagsRequest {
   @scala.inline
-  def apply(Resources: ResourceIdList, DryRun: js.UndefOr[scala.Boolean] = js.undefined, Tags: TagList = null): DeleteTagsRequest = {
+  def apply(Resources: ResourceIdList, DryRun: js.UndefOr[Boolean] = js.undefined, Tags: TagList = null): DeleteTagsRequest = {
     val __obj = js.Dynamic.literal(Resources = Resources.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTagsRequest]
   }

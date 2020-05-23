@@ -7,11 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.AutoComplete")
 @js.native
-class AutoComplete protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: AutoCompleteOptions) = this()
+trait AutoComplete extends Widget {
   var dataSource: DataSource = js.native
   var list: JQuery = js.native
   @JSName("options")
@@ -36,13 +33,5 @@ class AutoComplete protected () extends Widget {
   def suggest(value: String): Unit = js.native
   def value(): String = js.native
   def value(value: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.AutoComplete")
-@js.native
-object AutoComplete extends js.Object {
-  var fn: AutoComplete = js.native
-  def extend(proto: js.Object): AutoComplete = js.native
 }
 

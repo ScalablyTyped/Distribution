@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Map
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object LegendType extends js.Object {
   //specifies the layers type
   @js.native
   sealed trait Layers extends LegendType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LegendType with Double] = js.native
-  /* 1 */ @js.native
-  object Bubbles extends TopLevel[Bubbles with Double]
-  
-  /* 0 */ @js.native
-  object Layers extends TopLevel[Layers with Double]
   
 }
 

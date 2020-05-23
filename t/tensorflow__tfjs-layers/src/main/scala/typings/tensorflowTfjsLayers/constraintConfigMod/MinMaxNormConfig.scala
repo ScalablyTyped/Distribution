@@ -14,16 +14,16 @@ trait MinMaxNormConfig extends js.Object {
 object MinMaxNormConfig {
   @scala.inline
   def apply(
-    axis: Int | Double = null,
-    max_value: Int | Double = null,
-    min_value: Int | Double = null,
-    rate: Int | Double = null
+    axis: js.UndefOr[Double] = js.undefined,
+    max_value: js.UndefOr[Double] = js.undefined,
+    min_value: js.UndefOr[Double] = js.undefined,
+    rate: js.UndefOr[Double] = js.undefined
   ): MinMaxNormConfig = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (max_value != null) __obj.updateDynamic("max_value")(max_value.asInstanceOf[js.Any])
-    if (min_value != null) __obj.updateDynamic("min_value")(min_value.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_value)) __obj.updateDynamic("max_value")(max_value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min_value)) __obj.updateDynamic("min_value")(min_value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinMaxNormConfig]
   }
 }

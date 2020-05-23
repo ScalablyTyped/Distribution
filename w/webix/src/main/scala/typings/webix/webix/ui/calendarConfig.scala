@@ -79,25 +79,25 @@ object calendarConfig {
     dayTemplate: /* repeated */ js.Any => js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     events: /* repeated */ js.Any => js.Any = null,
-    gravity: Int | Double = null,
-    headerHeight: Int | Double = null,
-    height: Int | Double = null,
+    gravity: js.UndefOr[Double] = js.undefined,
+    headerHeight: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     icons: js.Any = null,
     id: String | Double = null,
-    keyPressTimeout: Int | Double = null,
+    keyPressTimeout: js.UndefOr[Double] = js.undefined,
     maxDate: Date | String = null,
-    maxHeight: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
     maxTime: String = null,
-    maxWidth: Int | Double = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     minDate: Date | String = null,
-    minHeight: Int | Double = null,
+    minHeight: js.UndefOr[Double] = js.undefined,
     minTime: String = null,
-    minWidth: Int | Double = null,
-    minuteStep: Int | Double = null,
+    minWidth: js.UndefOr[Double] = js.undefined,
+    minuteStep: js.UndefOr[Double] = js.undefined,
     monthHeader: js.UndefOr[Boolean] = js.undefined,
     monthSelect: js.UndefOr[Boolean] = js.undefined,
-    mouseEventDelay: Int | Double = null,
+    mouseEventDelay: js.UndefOr[Double] = js.undefined,
     multiselect: Boolean | String = null,
     navigation: js.UndefOr[Boolean] = js.undefined,
     on: EventHash = null,
@@ -109,18 +109,18 @@ object calendarConfig {
     skipEmptyWeeks: js.UndefOr[Boolean] = js.undefined,
     timeIcon: String = null,
     timepicker: js.UndefOr[Boolean] = js.undefined,
-    timepickerHeight: Int | Double = null,
+    timepickerHeight: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     view: String = null,
     weekHeader: js.UndefOr[Boolean] = js.undefined,
     weekNumber: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): calendarConfig = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (blockDates != null) __obj.updateDynamic("blockDates")(js.Any.fromFunction1(blockDates))
     if (blockTime != null) __obj.updateDynamic("blockTime")(js.Any.fromFunction1(blockTime))
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
     if (calendarHeader != null) __obj.updateDynamic("calendarHeader")(calendarHeader.asInstanceOf[js.Any])
     if (calendarTime != null) __obj.updateDynamic("calendarTime")(calendarTime.asInstanceOf[js.Any])
     if (calendarWeekHeader != null) __obj.updateDynamic("calendarWeekHeader")(calendarWeekHeader.asInstanceOf[js.Any])
@@ -129,44 +129,44 @@ object calendarConfig {
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (dayTemplate != null) __obj.updateDynamic("dayTemplate")(js.Any.fromFunction1(dayTemplate))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(js.Any.fromFunction1(events))
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (headerHeight != null) __obj.updateDynamic("headerHeight")(headerHeight.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravity)) __obj.updateDynamic("gravity")(gravity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerHeight)) __obj.updateDynamic("headerHeight")(headerHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (keyPressTimeout != null) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyPressTimeout)) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.get.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
     if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(monthHeader)) __obj.updateDynamic("monthHeader")(monthHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(monthSelect)) __obj.updateDynamic("monthSelect")(monthSelect.asInstanceOf[js.Any])
-    if (mouseEventDelay != null) __obj.updateDynamic("mouseEventDelay")(mouseEventDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteStep)) __obj.updateDynamic("minuteStep")(minuteStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monthHeader)) __obj.updateDynamic("monthHeader")(monthHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(monthSelect)) __obj.updateDynamic("monthSelect")(monthSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseEventDelay)) __obj.updateDynamic("mouseEventDelay")(mouseEventDelay.get.asInstanceOf[js.Any])
     if (multiselect != null) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     if (onContext != null) __obj.updateDynamic("onContext")(onContext.asInstanceOf[js.Any])
     if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction1(onDblClick))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipEmptyWeeks)) __obj.updateDynamic("skipEmptyWeeks")(skipEmptyWeeks.asInstanceOf[js.Any])
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipEmptyWeeks)) __obj.updateDynamic("skipEmptyWeeks")(skipEmptyWeeks.get.asInstanceOf[js.Any])
     if (timeIcon != null) __obj.updateDynamic("timeIcon")(timeIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(timepicker)) __obj.updateDynamic("timepicker")(timepicker.asInstanceOf[js.Any])
-    if (timepickerHeight != null) __obj.updateDynamic("timepickerHeight")(timepickerHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(timepicker)) __obj.updateDynamic("timepicker")(timepicker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timepickerHeight)) __obj.updateDynamic("timepickerHeight")(timepickerHeight.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekHeader)) __obj.updateDynamic("weekHeader")(weekHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekHeader)) __obj.updateDynamic("weekHeader")(weekHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[calendarConfig]
   }
 }

@@ -1,8 +1,8 @@
 package typings.wordpressRichText.mod
 
-import typings.wordpressRichText.AnonElement
-import typings.wordpressRichText.AnonHtml
-import typings.wordpressRichText.AnonText
+import typings.wordpressRichText.anon.Element
+import typings.wordpressRichText.anon.Html
+import typings.wordpressRichText.anon.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object create extends js.Object {
   def apply(): Value = js.native
-  def apply(args: AnonElement): Value = js.native
-  def apply(args: AnonHtml): Value = js.native
-  def apply(args: AnonText): Value = js.native
+  def apply(args: Element): Value = js.native
+  def apply(args: Html): Value = js.native
+  def apply(args: Text): Value = js.native
 }
 

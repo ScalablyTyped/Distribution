@@ -23,7 +23,7 @@ object CreateTopicOptions {
     DuplicateDetectionHistoryTimeWindow: String = null,
     EnableBatchedOperations: js.UndefOr[Boolean] = js.undefined,
     EnablePartitioning: js.UndefOr[Boolean] = js.undefined,
-    MaxSizeInMegabytes: Int | Double = null,
+    MaxSizeInMegabytes: js.UndefOr[Double] = js.undefined,
     RequiresDuplicateDetection: js.UndefOr[Boolean] = js.undefined,
     SizeInBytes: js.UndefOr[Boolean] = js.undefined,
     SupportOrdering: js.UndefOr[Boolean] = js.undefined
@@ -31,12 +31,12 @@ object CreateTopicOptions {
     val __obj = js.Dynamic.literal()
     if (DefaultMessageTimeToLive != null) __obj.updateDynamic("DefaultMessageTimeToLive")(DefaultMessageTimeToLive.asInstanceOf[js.Any])
     if (DuplicateDetectionHistoryTimeWindow != null) __obj.updateDynamic("DuplicateDetectionHistoryTimeWindow")(DuplicateDetectionHistoryTimeWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableBatchedOperations)) __obj.updateDynamic("EnableBatchedOperations")(EnableBatchedOperations.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnablePartitioning)) __obj.updateDynamic("EnablePartitioning")(EnablePartitioning.asInstanceOf[js.Any])
-    if (MaxSizeInMegabytes != null) __obj.updateDynamic("MaxSizeInMegabytes")(MaxSizeInMegabytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequiresDuplicateDetection)) __obj.updateDynamic("RequiresDuplicateDetection")(RequiresDuplicateDetection.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeInBytes)) __obj.updateDynamic("SizeInBytes")(SizeInBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportOrdering)) __obj.updateDynamic("SupportOrdering")(SupportOrdering.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableBatchedOperations)) __obj.updateDynamic("EnableBatchedOperations")(EnableBatchedOperations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnablePartitioning)) __obj.updateDynamic("EnablePartitioning")(EnablePartitioning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxSizeInMegabytes)) __obj.updateDynamic("MaxSizeInMegabytes")(MaxSizeInMegabytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequiresDuplicateDetection)) __obj.updateDynamic("RequiresDuplicateDetection")(RequiresDuplicateDetection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeInBytes)) __obj.updateDynamic("SizeInBytes")(SizeInBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportOrdering)) __obj.updateDynamic("SupportOrdering")(SupportOrdering.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTopicOptions]
   }
 }

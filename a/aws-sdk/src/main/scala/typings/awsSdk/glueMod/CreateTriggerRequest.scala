@@ -53,7 +53,7 @@ object CreateTriggerRequest {
     Description: DescriptionString = null,
     Predicate: Predicate = null,
     Schedule: GenericString = null,
-    StartOnCreation: js.UndefOr[scala.Boolean] = js.undefined,
+    StartOnCreation: js.UndefOr[BooleanValue] = js.undefined,
     Tags: TagsMap = null,
     WorkflowName: NameString = null
   ): CreateTriggerRequest = {
@@ -61,7 +61,7 @@ object CreateTriggerRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Predicate != null) __obj.updateDynamic("Predicate")(Predicate.asInstanceOf[js.Any])
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (!js.isUndefined(StartOnCreation)) __obj.updateDynamic("StartOnCreation")(StartOnCreation.asInstanceOf[js.Any])
+    if (!js.isUndefined(StartOnCreation)) __obj.updateDynamic("StartOnCreation")(StartOnCreation.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (WorkflowName != null) __obj.updateDynamic("WorkflowName")(WorkflowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTriggerRequest]

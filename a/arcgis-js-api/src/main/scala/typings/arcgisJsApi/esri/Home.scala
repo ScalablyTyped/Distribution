@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.go
 import scala.scalajs.js
@@ -57,8 +56,4 @@ trait Home
   @JSName("on")
   def on_go(name: go, eventHandler: HomeGoEventHandler): IHandle = js.native
 }
-
-@JSGlobal("__esri.Home")
-@js.native
-object Home extends TopLevel[HomeConstructor]
 

@@ -33,28 +33,28 @@ trait ISubscription extends js.Object {
 object ISubscription {
   @scala.inline
   def apply(
-    ackDeadlineSeconds: Int | Double = null,
-    deadLetterPolicy: IDeadLetterPolicy = null,
-    enableMessageOrdering: js.UndefOr[Boolean] = js.undefined,
-    expirationPolicy: IExpirationPolicy = null,
-    labels: StringDictionary[String] = null,
-    messageRetentionDuration: IDuration = null,
-    name: String = null,
-    pushConfig: IPushConfig = null,
-    retainAckedMessages: js.UndefOr[Boolean] = js.undefined,
-    topic: String = null
+    ackDeadlineSeconds: js.UndefOr[Null | Double] = js.undefined,
+    deadLetterPolicy: js.UndefOr[Null | IDeadLetterPolicy] = js.undefined,
+    enableMessageOrdering: js.UndefOr[Null | Boolean] = js.undefined,
+    expirationPolicy: js.UndefOr[Null | IExpirationPolicy] = js.undefined,
+    labels: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    messageRetentionDuration: js.UndefOr[Null | IDuration] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    pushConfig: js.UndefOr[Null | IPushConfig] = js.undefined,
+    retainAckedMessages: js.UndefOr[Null | Boolean] = js.undefined,
+    topic: js.UndefOr[Null | String] = js.undefined
   ): ISubscription = {
     val __obj = js.Dynamic.literal()
-    if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
-    if (deadLetterPolicy != null) __obj.updateDynamic("deadLetterPolicy")(deadLetterPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(deadLetterPolicy)) __obj.updateDynamic("deadLetterPolicy")(deadLetterPolicy.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMessageOrdering)) __obj.updateDynamic("enableMessageOrdering")(enableMessageOrdering.asInstanceOf[js.Any])
-    if (expirationPolicy != null) __obj.updateDynamic("expirationPolicy")(expirationPolicy.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (messageRetentionDuration != null) __obj.updateDynamic("messageRetentionDuration")(messageRetentionDuration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pushConfig != null) __obj.updateDynamic("pushConfig")(pushConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(expirationPolicy)) __obj.updateDynamic("expirationPolicy")(expirationPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageRetentionDuration)) __obj.updateDynamic("messageRetentionDuration")(messageRetentionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(pushConfig)) __obj.updateDynamic("pushConfig")(pushConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(retainAckedMessages)) __obj.updateDynamic("retainAckedMessages")(retainAckedMessages.asInstanceOf[js.Any])
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    if (!js.isUndefined(topic)) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscription]
   }
 }

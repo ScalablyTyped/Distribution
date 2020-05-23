@@ -16,7 +16,7 @@ object AuthenticateOptions {
   def apply(payload: String = null, required: js.UndefOr[Boolean] = js.undefined): AuthenticateOptions = {
     val __obj = js.Dynamic.literal()
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateOptions]
   }
 }

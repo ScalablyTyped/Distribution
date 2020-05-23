@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.Cookies")
 @js.native
-class Cookies () extends EventEmitter {
+trait Cookies extends EventEmitter {
   @JSName("addListener")
   def addListener_changed(event: changed, listener: js.Function): this.type = js.native
   /**

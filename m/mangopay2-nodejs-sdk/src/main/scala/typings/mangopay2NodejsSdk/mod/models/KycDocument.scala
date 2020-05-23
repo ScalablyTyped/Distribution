@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.PartialKycDocumentData
+import typings.mangopay2NodejsSdk.anon.PartialKycDocumentData
 import typings.mangopay2NodejsSdk.mod.Timestamp
 import typings.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
 import typings.mangopay2NodejsSdk.mod.kycDocument.KYCDocumentRefusedReasonType

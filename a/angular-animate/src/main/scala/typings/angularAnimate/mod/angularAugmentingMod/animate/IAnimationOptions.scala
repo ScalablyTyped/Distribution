@@ -86,32 +86,32 @@ object IAnimationOptions {
   def apply(
     addClass: String = null,
     cleanupStyles: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: String = null,
     event: String = null,
     from: js.Object = null,
     keyframeStyle: String = null,
     removeClass: String = null,
-    stagger: Int | Double = null,
-    staggerIndex: Int | Double = null,
+    stagger: js.UndefOr[Double] = js.undefined,
+    staggerIndex: js.UndefOr[Double] = js.undefined,
     structural: js.UndefOr[Boolean] = js.undefined,
     to: js.Object = null,
     transitionStyle: String = null
   ): IAnimationOptions = {
     val __obj = js.Dynamic.literal()
     if (addClass != null) __obj.updateDynamic("addClass")(addClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanupStyles)) __obj.updateDynamic("cleanupStyles")(cleanupStyles.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanupStyles)) __obj.updateDynamic("cleanupStyles")(cleanupStyles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (keyframeStyle != null) __obj.updateDynamic("keyframeStyle")(keyframeStyle.asInstanceOf[js.Any])
     if (removeClass != null) __obj.updateDynamic("removeClass")(removeClass.asInstanceOf[js.Any])
-    if (stagger != null) __obj.updateDynamic("stagger")(stagger.asInstanceOf[js.Any])
-    if (staggerIndex != null) __obj.updateDynamic("staggerIndex")(staggerIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(structural)) __obj.updateDynamic("structural")(structural.asInstanceOf[js.Any])
+    if (!js.isUndefined(stagger)) __obj.updateDynamic("stagger")(stagger.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(staggerIndex)) __obj.updateDynamic("staggerIndex")(staggerIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(structural)) __obj.updateDynamic("structural")(structural.get.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (transitionStyle != null) __obj.updateDynamic("transitionStyle")(transitionStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimationOptions]

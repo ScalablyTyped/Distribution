@@ -281,7 +281,7 @@ object Model {
     tool: Tool | String = null,
     tooltip: Tooltip = null,
     width: String = null,
-    zoomFactor: Int | Double = null
+    zoomFactor: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (autoScrollChange != null) __obj.updateDynamic("autoScrollChange")(js.Any.fromFunction1(autoScrollChange))
@@ -311,8 +311,8 @@ object Model {
     if (drawType != null) __obj.updateDynamic("drawType")(drawType.asInstanceOf[js.Any])
     if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
     if (editorFocusChange != null) __obj.updateDynamic("editorFocusChange")(js.Any.fromFunction1(editorFocusChange))
-    if (!js.isUndefined(enableAutoScroll)) __obj.updateDynamic("enableAutoScroll")(enableAutoScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoScroll)) __obj.updateDynamic("enableAutoScroll")(enableAutoScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.get.asInstanceOf[js.Any])
     if (groupChange != null) __obj.updateDynamic("groupChange")(js.Any.fromFunction1(groupChange))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (historyChange != null) __obj.updateDynamic("historyChange")(js.Any.fromFunction1(historyChange))
@@ -339,14 +339,14 @@ object Model {
     if (selectionChange != null) __obj.updateDynamic("selectionChange")(js.Any.fromFunction1(selectionChange))
     if (serializationSettings != null) __obj.updateDynamic("serializationSettings")(serializationSettings.asInstanceOf[js.Any])
     if (setTool != null) __obj.updateDynamic("setTool")(js.Any.fromFunction1(setTool))
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.get.asInstanceOf[js.Any])
     if (sizeChange != null) __obj.updateDynamic("sizeChange")(js.Any.fromFunction1(sizeChange))
     if (snapSettings != null) __obj.updateDynamic("snapSettings")(snapSettings.asInstanceOf[js.Any])
     if (textChange != null) __obj.updateDynamic("textChange")(js.Any.fromFunction1(textChange))
     if (tool != null) __obj.updateDynamic("tool")(tool.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomFactor)) __obj.updateDynamic("zoomFactor")(zoomFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

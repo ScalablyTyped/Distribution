@@ -1,6 +1,5 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.officeUiFabricReactStrings.change
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/utilities/selection/interfaces", JSImport.Namespace)
 @js.native
 object selectionInterfacesMod extends js.Object {
-  val SELECTION_CHANGE: change = js.native
+  val SELECTION_CHANGE: /* "change" */ String = js.native
   @js.native
   object SelectionDirection extends js.Object {
     /* 0 */ val horizontal: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.horizontal with Double = js.native

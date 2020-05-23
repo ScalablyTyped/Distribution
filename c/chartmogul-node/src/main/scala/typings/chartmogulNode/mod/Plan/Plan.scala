@@ -18,7 +18,7 @@ object Plan {
   def apply(
     data_source_uuid: String = null,
     external_id: String = null,
-    interval_count: Int | Double = null,
+    interval_count: js.UndefOr[Double] = js.undefined,
     interval_unit: String = null,
     name: String = null,
     uuid: String = null
@@ -26,7 +26,7 @@ object Plan {
     val __obj = js.Dynamic.literal()
     if (data_source_uuid != null) __obj.updateDynamic("data_source_uuid")(data_source_uuid.asInstanceOf[js.Any])
     if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
-    if (interval_count != null) __obj.updateDynamic("interval_count")(interval_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval_count)) __obj.updateDynamic("interval_count")(interval_count.get.asInstanceOf[js.Any])
     if (interval_unit != null) __obj.updateDynamic("interval_unit")(interval_unit.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])

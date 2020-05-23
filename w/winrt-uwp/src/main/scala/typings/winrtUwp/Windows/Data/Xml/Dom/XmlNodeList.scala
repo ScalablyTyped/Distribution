@@ -1,17 +1,16 @@
 package typings.winrtUwp.Windows.Data.Xml.Dom
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsIXmlNode
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsIXmlNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes a collection of nodes. */
-@JSGlobal("Windows.Data.Xml.Dom.XmlNodeList")
 @js.native
-abstract class XmlNodeList () extends Array[IXmlNode] {
+trait XmlNodeList extends Array[IXmlNode] {
   /** Gets the number of elements in the vector view. */
   var size: Double = js.native
   /**
@@ -29,8 +28,8 @@ abstract class XmlNodeList () extends Array[IXmlNode] {
     * Returns the items that start at the specified index of the vector view.
     * @param startIndex The zero-based index of the start of the items in the vector to return.
     */
-  def getMany(startIndex: Double): AnonItemsIXmlNode = js.native
-  def indexOf(value: IXmlNode, extra: js.Any*): AnonIndex = js.native
+  def getMany(startIndex: Double): ItemsIXmlNode = js.native
+  def indexOf(value: IXmlNode, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: IXmlNode): Double = js.native

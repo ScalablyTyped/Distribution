@@ -19,10 +19,13 @@ trait AuthorizationRequestMetadata extends js.Object {
 
 object AuthorizationRequestMetadata {
   @scala.inline
-  def apply(responseIncludeResourceName: js.Any = null, response_permissions_limit: Int | Double = null): AuthorizationRequestMetadata = {
+  def apply(
+    responseIncludeResourceName: js.Any = null,
+    response_permissions_limit: js.UndefOr[Double] = js.undefined
+  ): AuthorizationRequestMetadata = {
     val __obj = js.Dynamic.literal()
     if (responseIncludeResourceName != null) __obj.updateDynamic("responseIncludeResourceName")(responseIncludeResourceName.asInstanceOf[js.Any])
-    if (response_permissions_limit != null) __obj.updateDynamic("response_permissions_limit")(response_permissions_limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(response_permissions_limit)) __obj.updateDynamic("response_permissions_limit")(response_permissions_limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationRequestMetadata]
   }
 }

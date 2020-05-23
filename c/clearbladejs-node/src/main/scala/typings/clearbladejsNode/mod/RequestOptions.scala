@@ -38,7 +38,7 @@ object RequestOptions {
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (qs != null) __obj.updateDynamic("qs")(qs.asInstanceOf[js.Any])
-    if (!js.isUndefined(useUser)) __obj.updateDynamic("useUser")(useUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUser)) __obj.updateDynamic("useUser")(useUser.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }

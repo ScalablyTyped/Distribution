@@ -18,9 +18,9 @@ trait DeleteVpnGatewayRequest extends js.Object {
 
 object DeleteVpnGatewayRequest {
   @scala.inline
-  def apply(VpnGatewayId: VpnGatewayId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteVpnGatewayRequest = {
+  def apply(VpnGatewayId: VpnGatewayId, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteVpnGatewayRequest = {
     val __obj = js.Dynamic.literal(VpnGatewayId = VpnGatewayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpnGatewayRequest]
   }
 }

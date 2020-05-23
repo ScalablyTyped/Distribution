@@ -16,7 +16,7 @@ trait OperationOptions
 object OperationOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     operationName: String = null,
     query: String | DocumentNode = null,
     variables: js.Object = null

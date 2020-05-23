@@ -23,7 +23,7 @@ object UseMultipleSelectionSelectGetDropdownProps {
     if (GetPropsWithRefKey != null) js.Dynamic.global.Object.assign(__obj, GetPropsWithRefKey)
     if (GetToggleButtonPropsOptions != null) js.Dynamic.global.Object.assign(__obj, GetToggleButtonPropsOptions)
     if (UseMultipleSelectionGetDropdownProps != null) js.Dynamic.global.Object.assign(__obj, UseMultipleSelectionGetDropdownProps)
-    if (!js.isUndefined(preventKeyAction)) __obj.updateDynamic("preventKeyAction")(preventKeyAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventKeyAction)) __obj.updateDynamic("preventKeyAction")(preventKeyAction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseMultipleSelectionSelectGetDropdownProps]
   }
 }

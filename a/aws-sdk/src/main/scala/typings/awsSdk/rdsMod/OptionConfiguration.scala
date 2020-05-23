@@ -39,14 +39,14 @@ object OptionConfiguration {
     DBSecurityGroupMemberships: DBSecurityGroupNameList = null,
     OptionSettings: OptionSettingsList = null,
     OptionVersion: String = null,
-    Port: Int | scala.Double = null,
+    Port: js.UndefOr[IntegerOptional] = js.undefined,
     VpcSecurityGroupMemberships: VpcSecurityGroupIdList = null
   ): OptionConfiguration = {
     val __obj = js.Dynamic.literal(OptionName = OptionName.asInstanceOf[js.Any])
     if (DBSecurityGroupMemberships != null) __obj.updateDynamic("DBSecurityGroupMemberships")(DBSecurityGroupMemberships.asInstanceOf[js.Any])
     if (OptionSettings != null) __obj.updateDynamic("OptionSettings")(OptionSettings.asInstanceOf[js.Any])
     if (OptionVersion != null) __obj.updateDynamic("OptionVersion")(OptionVersion.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (VpcSecurityGroupMemberships != null) __obj.updateDynamic("VpcSecurityGroupMemberships")(VpcSecurityGroupMemberships.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionConfiguration]
   }

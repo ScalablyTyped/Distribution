@@ -25,7 +25,7 @@ trait TransportOptions extends js.Object {
     */
   var server: String
   /**
-    * If true, messsages sent and received by the transport are logged.
+    * If true, messages sent and received by the transport are logged.
     * @defaultValue `true`
     */
   var traceSip: js.UndefOr[Boolean] = js.undefined
@@ -35,16 +35,16 @@ object TransportOptions {
   @scala.inline
   def apply(
     server: String,
-    connectionTimeout: Int | Double = null,
-    keepAliveDebounce: Int | Double = null,
-    keepAliveInterval: Int | Double = null,
+    connectionTimeout: js.UndefOr[Double] = js.undefined,
+    keepAliveDebounce: js.UndefOr[Double] = js.undefined,
+    keepAliveInterval: js.UndefOr[Double] = js.undefined,
     traceSip: js.UndefOr[Boolean] = js.undefined
   ): TransportOptions = {
     val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
-    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
-    if (keepAliveDebounce != null) __obj.updateDynamic("keepAliveDebounce")(keepAliveDebounce.asInstanceOf[js.Any])
-    if (keepAliveInterval != null) __obj.updateDynamic("keepAliveInterval")(keepAliveInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceSip)) __obj.updateDynamic("traceSip")(traceSip.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAliveDebounce)) __obj.updateDynamic("keepAliveDebounce")(keepAliveDebounce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAliveInterval)) __obj.updateDynamic("keepAliveInterval")(keepAliveInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceSip)) __obj.updateDynamic("traceSip")(traceSip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportOptions]
   }
 }

@@ -12,7 +12,6 @@ object GrpcLbConfig {
   @scala.inline
   def apply(childPolicy: js.Array[LoadBalancingConfig]): GrpcLbConfig = {
     val __obj = js.Dynamic.literal(childPolicy = childPolicy.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GrpcLbConfig]
   }
 }

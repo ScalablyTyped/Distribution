@@ -71,34 +71,34 @@ object ISoundOptions {
   def apply(
     autoplay: js.UndefOr[Boolean] = js.undefined,
     distanceModel: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
-    maxDistance: Int | Double = null,
-    offset: Int | Double = null,
-    playbackRate: Int | Double = null,
-    refDistance: Int | Double = null,
-    rolloffFactor: Int | Double = null,
+    maxDistance: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
+    playbackRate: js.UndefOr[Double] = js.undefined,
+    refDistance: js.UndefOr[Double] = js.undefined,
+    rolloffFactor: js.UndefOr[Double] = js.undefined,
     skipCodecCheck: js.UndefOr[Boolean] = js.undefined,
     spatialSound: js.UndefOr[Boolean] = js.undefined,
     streaming: js.UndefOr[Boolean] = js.undefined,
     useCustomAttenuation: js.UndefOr[Boolean] = js.undefined,
-    volume: Int | Double = null
+    volume: js.UndefOr[Double] = js.undefined
   ): ISoundOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
     if (distanceModel != null) __obj.updateDynamic("distanceModel")(distanceModel.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (maxDistance != null) __obj.updateDynamic("maxDistance")(maxDistance.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
-    if (refDistance != null) __obj.updateDynamic("refDistance")(refDistance.asInstanceOf[js.Any])
-    if (rolloffFactor != null) __obj.updateDynamic("rolloffFactor")(rolloffFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipCodecCheck)) __obj.updateDynamic("skipCodecCheck")(skipCodecCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(spatialSound)) __obj.updateDynamic("spatialSound")(spatialSound.asInstanceOf[js.Any])
-    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomAttenuation)) __obj.updateDynamic("useCustomAttenuation")(useCustomAttenuation.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDistance)) __obj.updateDynamic("maxDistance")(maxDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playbackRate)) __obj.updateDynamic("playbackRate")(playbackRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refDistance)) __obj.updateDynamic("refDistance")(refDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rolloffFactor)) __obj.updateDynamic("rolloffFactor")(rolloffFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipCodecCheck)) __obj.updateDynamic("skipCodecCheck")(skipCodecCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spatialSound)) __obj.updateDynamic("spatialSound")(spatialSound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomAttenuation)) __obj.updateDynamic("useCustomAttenuation")(useCustomAttenuation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISoundOptions]
   }
 }

@@ -65,7 +65,7 @@ object RestApi {
     description: String = null,
     endpointConfiguration: EndpointConfiguration = null,
     id: String = null,
-    minimumCompressionSize: Int | scala.Double = null,
+    minimumCompressionSize: js.UndefOr[NullableInteger] = js.undefined,
     name: String = null,
     policy: String = null,
     tags: MapOfStringToString = null,
@@ -79,7 +79,7 @@ object RestApi {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (minimumCompressionSize != null) __obj.updateDynamic("minimumCompressionSize")(minimumCompressionSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumCompressionSize)) __obj.updateDynamic("minimumCompressionSize")(minimumCompressionSize.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

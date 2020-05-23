@@ -155,7 +155,7 @@ object ManagedDevice {
     exchangeAccessState: DeviceManagementExchangeAccessState = null,
     exchangeAccessStateReason: DeviceManagementExchangeAccessStateReason = null,
     exchangeLastSuccessfulSyncDateTime: String = null,
-    freeStorageSpaceInBytes: Int | Double = null,
+    freeStorageSpaceInBytes: js.UndefOr[Double] = js.undefined,
     id: String = null,
     imei: String = null,
     isEncrypted: js.UndefOr[Boolean] = js.undefined,
@@ -176,7 +176,7 @@ object ManagedDevice {
     remoteAssistanceSessionUrl: String = null,
     serialNumber: String = null,
     subscriberCarrier: String = null,
-    totalStorageSpaceInBytes: Int | Double = null,
+    totalStorageSpaceInBytes: js.UndefOr[Double] = js.undefined,
     userDisplayName: String = null,
     userId: String = null,
     userPrincipalName: String = null,
@@ -186,7 +186,7 @@ object ManagedDevice {
     if (activationLockBypassCode != null) __obj.updateDynamic("activationLockBypassCode")(activationLockBypassCode.asInstanceOf[js.Any])
     if (androidSecurityPatchLevel != null) __obj.updateDynamic("androidSecurityPatchLevel")(androidSecurityPatchLevel.asInstanceOf[js.Any])
     if (azureADDeviceId != null) __obj.updateDynamic("azureADDeviceId")(azureADDeviceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(azureADRegistered)) __obj.updateDynamic("azureADRegistered")(azureADRegistered.asInstanceOf[js.Any])
+    if (!js.isUndefined(azureADRegistered)) __obj.updateDynamic("azureADRegistered")(azureADRegistered.get.asInstanceOf[js.Any])
     if (complianceGracePeriodExpirationDateTime != null) __obj.updateDynamic("complianceGracePeriodExpirationDateTime")(complianceGracePeriodExpirationDateTime.asInstanceOf[js.Any])
     if (complianceState != null) __obj.updateDynamic("complianceState")(complianceState.asInstanceOf[js.Any])
     if (configurationManagerClientEnabledFeatures != null) __obj.updateDynamic("configurationManagerClientEnabledFeatures")(configurationManagerClientEnabledFeatures.asInstanceOf[js.Any])
@@ -199,7 +199,7 @@ object ManagedDevice {
     if (deviceHealthAttestationState != null) __obj.updateDynamic("deviceHealthAttestationState")(deviceHealthAttestationState.asInstanceOf[js.Any])
     if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
     if (deviceRegistrationState != null) __obj.updateDynamic("deviceRegistrationState")(deviceRegistrationState.asInstanceOf[js.Any])
-    if (!js.isUndefined(easActivated)) __obj.updateDynamic("easActivated")(easActivated.asInstanceOf[js.Any])
+    if (!js.isUndefined(easActivated)) __obj.updateDynamic("easActivated")(easActivated.get.asInstanceOf[js.Any])
     if (easActivationDateTime != null) __obj.updateDynamic("easActivationDateTime")(easActivationDateTime.asInstanceOf[js.Any])
     if (easDeviceId != null) __obj.updateDynamic("easDeviceId")(easDeviceId.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
@@ -207,11 +207,11 @@ object ManagedDevice {
     if (exchangeAccessState != null) __obj.updateDynamic("exchangeAccessState")(exchangeAccessState.asInstanceOf[js.Any])
     if (exchangeAccessStateReason != null) __obj.updateDynamic("exchangeAccessStateReason")(exchangeAccessStateReason.asInstanceOf[js.Any])
     if (exchangeLastSuccessfulSyncDateTime != null) __obj.updateDynamic("exchangeLastSuccessfulSyncDateTime")(exchangeLastSuccessfulSyncDateTime.asInstanceOf[js.Any])
-    if (freeStorageSpaceInBytes != null) __obj.updateDynamic("freeStorageSpaceInBytes")(freeStorageSpaceInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeStorageSpaceInBytes)) __obj.updateDynamic("freeStorageSpaceInBytes")(freeStorageSpaceInBytes.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (imei != null) __obj.updateDynamic("imei")(imei.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSupervised)) __obj.updateDynamic("isSupervised")(isSupervised.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSupervised)) __obj.updateDynamic("isSupervised")(isSupervised.get.asInstanceOf[js.Any])
     if (jailBroken != null) __obj.updateDynamic("jailBroken")(jailBroken.asInstanceOf[js.Any])
     if (lastSyncDateTime != null) __obj.updateDynamic("lastSyncDateTime")(lastSyncDateTime.asInstanceOf[js.Any])
     if (managedDeviceName != null) __obj.updateDynamic("managedDeviceName")(managedDeviceName.asInstanceOf[js.Any])
@@ -228,7 +228,7 @@ object ManagedDevice {
     if (remoteAssistanceSessionUrl != null) __obj.updateDynamic("remoteAssistanceSessionUrl")(remoteAssistanceSessionUrl.asInstanceOf[js.Any])
     if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
     if (subscriberCarrier != null) __obj.updateDynamic("subscriberCarrier")(subscriberCarrier.asInstanceOf[js.Any])
-    if (totalStorageSpaceInBytes != null) __obj.updateDynamic("totalStorageSpaceInBytes")(totalStorageSpaceInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalStorageSpaceInBytes)) __obj.updateDynamic("totalStorageSpaceInBytes")(totalStorageSpaceInBytes.get.asInstanceOf[js.Any])
     if (userDisplayName != null) __obj.updateDynamic("userDisplayName")(userDisplayName.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])

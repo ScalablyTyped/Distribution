@@ -33,16 +33,16 @@ object IAriaProviderOptions {
     tabindex: js.UndefOr[Boolean] = js.undefined
   ): IAriaProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ariaChecked)) __obj.updateDynamic("ariaChecked")(ariaChecked.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaDisabled)) __obj.updateDynamic("ariaDisabled")(ariaDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaHidden)) __obj.updateDynamic("ariaHidden")(ariaHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaInvalid)) __obj.updateDynamic("ariaInvalid")(ariaInvalid.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaReadonly)) __obj.updateDynamic("ariaReadonly")(ariaReadonly.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaRequired)) __obj.updateDynamic("ariaRequired")(ariaRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaValue)) __obj.updateDynamic("ariaValue")(ariaValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindKeydown)) __obj.updateDynamic("bindKeydown")(bindKeydown.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindRoleForClick)) __obj.updateDynamic("bindRoleForClick")(bindRoleForClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabindex)) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaChecked)) __obj.updateDynamic("ariaChecked")(ariaChecked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaDisabled)) __obj.updateDynamic("ariaDisabled")(ariaDisabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaHidden)) __obj.updateDynamic("ariaHidden")(ariaHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaInvalid)) __obj.updateDynamic("ariaInvalid")(ariaInvalid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaReadonly)) __obj.updateDynamic("ariaReadonly")(ariaReadonly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaRequired)) __obj.updateDynamic("ariaRequired")(ariaRequired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaValue)) __obj.updateDynamic("ariaValue")(ariaValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindKeydown)) __obj.updateDynamic("bindKeydown")(bindKeydown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindRoleForClick)) __obj.updateDynamic("bindRoleForClick")(bindRoleForClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabindex)) __obj.updateDynamic("tabindex")(tabindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAriaProviderOptions]
   }
 }

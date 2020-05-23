@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojdatetimepickerMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonCancel
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonFooterLayout
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.Cancel
+import typings.oracleOraclejet.anon.Element
+import typings.oracleOraclejet.anon.FooterLayout
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdatetimepickerMod.ojInputDateTime.ojAnimateEnd
 import typings.oracleOraclejet.ojdatetimepickerMod.ojInputDateTime.ojAnimateStart
@@ -22,36 +22,36 @@ trait ojInputDateTime[SP /* <: ojInputDateTimeSettableProperties */] extends ojI
   var onOjAnimateEnd_ojInputDateTime: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
   @JSName("onOjAnimateStart")
   var onOjAnimateStart_ojInputDateTime: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onTimePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonFooterLayout], _]) | Null = js.native
-  var timePicker: AnonFooterLayout = js.native
+  var onTimePickerChanged: (js.Function1[/* event */ JetElementCustomEvent[FooterLayout], _]) | Null = js.native
+  var timePicker: FooterLayout = js.native
   @JSName("translations")
-  var translations_ojInputDateTime: AnonCancel = js.native
+  var translations_ojInputDateTime: Cancel = js.native
   @JSName("addEventListener")
   def addEventListener_timePickerChanged(
     `type`: timePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFooterLayout], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_timePickerChanged(
     `type`: timePickerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonFooterLayout], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[FooterLayout], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("getProperty")
-  def getProperty_timePicker(property: timePicker): AnonFooterLayout = js.native
+  def getProperty_timePicker(property: timePicker): FooterLayout = js.native
   def hideTimePicker(): Unit = js.native
   def setProperties(properties: ojInputDateTimeSettablePropertiesLenient): Unit = js.native
   @JSName("setProperty")
-  def setProperty_timePicker(property: timePicker, value: AnonFooterLayout): Unit = js.native
+  def setProperty_timePicker(property: timePicker, value: FooterLayout): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonCancel): Unit = js.native
+  def setProperty_translations(property: translations, value: Cancel): Unit = js.native
   def showTimePicker(): Unit = js.native
 }
 
 @JSImport("@oracle/oraclejet/ojdatetimepicker", "ojInputDateTime")
 @js.native
 object ojInputDateTime extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[Element]
 }
 

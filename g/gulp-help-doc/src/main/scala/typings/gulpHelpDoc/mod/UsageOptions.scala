@@ -1,6 +1,6 @@
 package typings.gulpHelpDoc.mod
 
-import typings.gulpHelpDoc.AnonLog
+import typings.gulpHelpDoc.anon.Log
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait UsageOptions extends js.Object {
     * Printing engine (by default is console). Accepted any device
     * which has log() function defined to do output.
     */
-  var logger: js.UndefOr[AnonLog] = js.undefined
+  var logger: js.UndefOr[Log] = js.undefined
   /**
     * Defines number of empty characters for left-padding of the output
     */
@@ -37,17 +37,17 @@ object UsageOptions {
   @scala.inline
   def apply(
     gulpfile: String = null,
-    keysColumnWidth: Int | Double = null,
-    lineWidth: Int | Double = null,
-    logger: AnonLog = null,
-    padding: Int | Double = null
+    keysColumnWidth: js.UndefOr[Double] = js.undefined,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    logger: Log = null,
+    padding: js.UndefOr[Double] = js.undefined
   ): UsageOptions = {
     val __obj = js.Dynamic.literal()
     if (gulpfile != null) __obj.updateDynamic("gulpfile")(gulpfile.asInstanceOf[js.Any])
-    if (keysColumnWidth != null) __obj.updateDynamic("keysColumnWidth")(keysColumnWidth.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(keysColumnWidth)) __obj.updateDynamic("keysColumnWidth")(keysColumnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageOptions]
   }
 }

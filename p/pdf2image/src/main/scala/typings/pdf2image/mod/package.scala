@@ -12,7 +12,7 @@ package object mod {
     /* totalPDFPages */ scala.Double, 
     /* name */ java.lang.String, 
     /* path */ java.lang.String, 
-    /* vm */ typings.pdf2image.TypeofimportedVm, 
+    /* vm */ typings.pdf2image.anon.TypeofimportedVm, 
     java.lang.String
   ]) | java.lang.String
 }

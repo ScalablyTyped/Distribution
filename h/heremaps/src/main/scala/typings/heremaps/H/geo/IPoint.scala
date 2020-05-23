@@ -20,9 +20,14 @@ trait IPoint extends js.Object {
 
 object IPoint {
   @scala.inline
-  def apply(lat: Latitude, lng: Longitude, alt: Int | Double = null, ctx: AltitudeContext = null): IPoint = {
+  def apply(
+    lat: Latitude,
+    lng: Longitude,
+    alt: js.UndefOr[Altitude] = js.undefined,
+    ctx: AltitudeContext = null
+  ): IPoint = {
     val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(alt)) __obj.updateDynamic("alt")(alt.get.asInstanceOf[js.Any])
     if (ctx != null) __obj.updateDynamic("ctx")(ctx.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPoint]
   }

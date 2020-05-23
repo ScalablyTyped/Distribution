@@ -10,14 +10,8 @@ import scala.scalajs.js.annotation._
   * 
   * Defaults to the identity matrix when instantiated.
   */
-@JSGlobal("Phaser.Math.Matrix3")
 @js.native
-/**
-  * 
-  * @param m Optional Matrix3 to copy values from.
-  */
-class Matrix3 () extends js.Object {
-  def this(m: Matrix3) = this()
+trait Matrix3 extends js.Object {
   /**
     * The matrix values.
     */
@@ -64,8 +58,8 @@ class Matrix3 () extends js.Object {
     */
   def multiply(src: Matrix3): Matrix3 = js.native
   /**
-    * [description]
-    * @param m [description]
+    * Set the values of this Matrix3 to be normalized from the given Matrix4.
+    * @param m The Matrix4 to normalize the values from.
     */
   def normalFromMat4(m: Matrix4): Matrix3 = js.native
   /**

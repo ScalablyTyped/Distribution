@@ -23,8 +23,8 @@ trait line extends common {
 object line {
   @scala.inline
   def apply(
-    arrowAngle: Int | Double = null,
-    arrowRadius: Int | Double = null,
+    arrowAngle: js.UndefOr[Double] = js.undefined,
+    arrowRadius: js.UndefOr[Double] = js.undefined,
     endArrow: js.UndefOr[Boolean] = js.undefined,
     fill: String = null,
     globalCompositeOperation: String = null,
@@ -43,9 +43,9 @@ object line {
     strokeOpacity: String | Double = null
   ): line = {
     val __obj = js.Dynamic.literal()
-    if (arrowAngle != null) __obj.updateDynamic("arrowAngle")(arrowAngle.asInstanceOf[js.Any])
-    if (arrowRadius != null) __obj.updateDynamic("arrowRadius")(arrowRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(endArrow)) __obj.updateDynamic("endArrow")(endArrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowAngle)) __obj.updateDynamic("arrowAngle")(arrowAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowRadius)) __obj.updateDynamic("arrowRadius")(arrowRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endArrow)) __obj.updateDynamic("endArrow")(endArrow.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (globalCompositeOperation != null) __obj.updateDynamic("globalCompositeOperation")(globalCompositeOperation.asInstanceOf[js.Any])
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
@@ -58,7 +58,7 @@ object line {
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
     if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
     if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
-    if (!js.isUndefined(startArrow)) __obj.updateDynamic("startArrow")(startArrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(startArrow)) __obj.updateDynamic("startArrow")(startArrow.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[line]

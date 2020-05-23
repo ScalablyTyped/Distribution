@@ -5,8 +5,8 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.react.mod.StatelessComponent
-import typings.reactDataGrid.AnonEnableShiftSelect
-import typings.reactDataGrid.AnonIdx
+import typings.reactDataGrid.anon.EnableShiftSelect
+import typings.reactDataGrid.anon.Idx
 import typings.reactDataGrid.reactDataGridStrings.ASC
 import typings.reactDataGrid.reactDataGridStrings.DESC
 import typings.reactDataGrid.reactDataGridStrings.NONE
@@ -109,7 +109,7 @@ trait GridProps[T] extends js.Object {
     * Called when a cell is deselected.
     * @param coordinates The row and column indices of the deselected cell.
     */
-  var onCellDeSelected: js.UndefOr[js.Function1[/* coordinates */ AnonIdx, Unit]] = js.undefined
+  var onCellDeSelected: js.UndefOr[js.Function1[/* coordinates */ Idx, Unit]] = js.undefined
   /**
     * Invoked when the user clicks on one cell to expand it.
     * @param e Information about the event
@@ -119,7 +119,7 @@ trait GridProps[T] extends js.Object {
     * Called when a cell is selected.
     * @param coordinates The row and column indices of the selected cell.
     */
-  var onCellSelected: js.UndefOr[js.Function1[/* coordinates */ AnonIdx, Unit]] = js.undefined
+  var onCellSelected: js.UndefOr[js.Function1[/* coordinates */ Idx, Unit]] = js.undefined
   /**
     * Invoked when the user pulls down the drag handle of an editable cell.
     * Should update the values of the selected cells.
@@ -222,7 +222,7 @@ trait GridProps[T] extends js.Object {
   /**
     * Options object for selecting rows
     */
-  var rowSelection: js.UndefOr[AnonEnableShiftSelect[T]] = js.undefined
+  var rowSelection: js.UndefOr[EnableShiftSelect[T]] = js.undefined
   /**
     * The total number of rows to render. Required.
     */
@@ -262,16 +262,16 @@ object GridProps {
     getCellActions: (/* column */ Column[T], /* row */ T) => js.Array[ActionButton | ActionMenu] = null,
     getSubRowDetails: /* row */ T => SubRowDetails[_] = null,
     getValidFilterValues: /* columnKey */ String => js.Array[_] = null,
-    headerFiltersHeight: Int | Double = null,
-    headerRowHeight: Int | Double = null,
-    minColumnWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
+    headerFiltersHeight: js.UndefOr[Double] = js.undefined,
+    headerRowHeight: js.UndefOr[Double] = js.undefined,
+    minColumnWidth: js.UndefOr[Double] = js.undefined,
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     onAddFilter: /* filter */ Filter => Unit = null,
     onCellCopyPaste: /* e */ CellCopyPasteEvent => Unit = null,
-    onCellDeSelected: /* coordinates */ AnonIdx => Unit = null,
+    onCellDeSelected: /* coordinates */ Idx => Unit = null,
     onCellExpand: /* e */ CellExpandEvent[T] => Unit = null,
-    onCellSelected: /* coordinates */ AnonIdx => Unit = null,
+    onCellSelected: /* coordinates */ Idx => Unit = null,
     onCellsDragged: /* e */ CellDragEvent => Unit = null,
     onClearFilters: () => Unit = null,
     onColumnResize: (/* index */ Double, /* width */ Double) => Unit = null,
@@ -285,11 +285,11 @@ object GridProps {
     onScroll: /* scrollState */ ScrollState => Unit = null,
     rowActionsCell: (ComponentClass[_, ComponentState]) | StatelessComponent[_] = null,
     rowGroupRenderer: ComponentType[js.Object] = null,
-    rowHeight: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     rowKey: String = null,
     rowRenderer: ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_] = null,
-    rowScrollTimeout: Int | Double = null,
-    rowSelection: AnonEnableShiftSelect[T] = null,
+    rowScrollTimeout: js.UndefOr[Double] = js.undefined,
+    rowSelection: EnableShiftSelect[T] = null,
     selectAllRenderer: (ComponentClass[_, ComponentState]) | StatelessComponent[_] = null,
     sortColumn: String = null,
     sortDirection: ASC | DESC | NONE = null,
@@ -300,17 +300,17 @@ object GridProps {
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (emptyRowsView != null) __obj.updateDynamic("emptyRowsView")(emptyRowsView.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellSelect)) __obj.updateDynamic("enableCellSelect")(enableCellSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDragAndDrop)) __obj.updateDynamic("enableDragAndDrop")(enableDragAndDrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellSelect)) __obj.updateDynamic("enableCellSelect")(enableCellSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDragAndDrop)) __obj.updateDynamic("enableDragAndDrop")(enableDragAndDrop.get.asInstanceOf[js.Any])
     if (enableRowSelect != null) __obj.updateDynamic("enableRowSelect")(enableRowSelect.asInstanceOf[js.Any])
     if (getCellActions != null) __obj.updateDynamic("getCellActions")(js.Any.fromFunction2(getCellActions))
     if (getSubRowDetails != null) __obj.updateDynamic("getSubRowDetails")(js.Any.fromFunction1(getSubRowDetails))
     if (getValidFilterValues != null) __obj.updateDynamic("getValidFilterValues")(js.Any.fromFunction1(getValidFilterValues))
-    if (headerFiltersHeight != null) __obj.updateDynamic("headerFiltersHeight")(headerFiltersHeight.asInstanceOf[js.Any])
-    if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
-    if (minColumnWidth != null) __obj.updateDynamic("minColumnWidth")(minColumnWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerFiltersHeight)) __obj.updateDynamic("headerFiltersHeight")(headerFiltersHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerRowHeight)) __obj.updateDynamic("headerRowHeight")(headerRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minColumnWidth)) __obj.updateDynamic("minColumnWidth")(minColumnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (onAddFilter != null) __obj.updateDynamic("onAddFilter")(js.Any.fromFunction1(onAddFilter))
     if (onCellCopyPaste != null) __obj.updateDynamic("onCellCopyPaste")(js.Any.fromFunction1(onCellCopyPaste))
     if (onCellDeSelected != null) __obj.updateDynamic("onCellDeSelected")(js.Any.fromFunction1(onCellDeSelected))
@@ -329,10 +329,10 @@ object GridProps {
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (rowActionsCell != null) __obj.updateDynamic("rowActionsCell")(rowActionsCell.asInstanceOf[js.Any])
     if (rowGroupRenderer != null) __obj.updateDynamic("rowGroupRenderer")(rowGroupRenderer.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(rowRenderer.asInstanceOf[js.Any])
-    if (rowScrollTimeout != null) __obj.updateDynamic("rowScrollTimeout")(rowScrollTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowScrollTimeout)) __obj.updateDynamic("rowScrollTimeout")(rowScrollTimeout.get.asInstanceOf[js.Any])
     if (rowSelection != null) __obj.updateDynamic("rowSelection")(rowSelection.asInstanceOf[js.Any])
     if (selectAllRenderer != null) __obj.updateDynamic("selectAllRenderer")(selectAllRenderer.asInstanceOf[js.Any])
     if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn.asInstanceOf[js.Any])

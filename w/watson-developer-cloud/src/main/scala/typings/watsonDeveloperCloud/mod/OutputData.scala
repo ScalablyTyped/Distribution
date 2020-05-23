@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** An output object that includes the response to the user, the dialog nodes that were triggered, and messages from the log. */
 trait OutputData
-  extends /** OutputData accepts additional properties. */
+  extends /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   /** Output intended for any channel. It is the responsibility of the client application to implement the supported response types. */
   var generic: js.UndefOr[js.Array[DialogRuntimeResponseGeneric]] = js.undefined
@@ -26,8 +26,7 @@ object OutputData {
   def apply(
     log_messages: js.Array[LogMessage],
     text: js.Array[String],
-    StringDictionary: /** OutputData accepts additional properties. */
-  /* propName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     generic: js.Array[DialogRuntimeResponseGeneric] = null,
     nodes_visited: js.Array[String] = null,
     nodes_visited_details: js.Array[DialogNodeVisitedDetails] = null

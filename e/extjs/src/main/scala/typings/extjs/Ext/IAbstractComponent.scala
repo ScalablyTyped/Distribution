@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.util.IRenderable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined afterRender, doAutoRender, ensureAttachedToBody, getInsertPosition, initRenderData, onRender, render
@@ -21,28 +21,28 @@ import scala.scalajs.js.annotation._
   /** [Method] Adds each argument passed to this method to the childEls array  */
   var addChildEls: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Adds a CSS class to the top level element representing this component
-  		* @param cls String/String[] The CSS class name to add.
-  		* @returns Ext.Component Returns the Component to allow method chaining.
-  		*/
+    * @param cls String/String[] The CSS class name to add.
+    * @returns Ext.Component Returns the Component to allow method chaining.
+    */
   var addClass: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], IComponent]] = js.undefined
   /** [Method] Adds a CSS class to the top level element representing this component
-  		* @param cls String/String[] The CSS class name to add.
-  		* @returns Ext.Component Returns the Component to allow method chaining.
-  		*/
+    * @param cls String/String[] The CSS class name to add.
+    * @returns Ext.Component Returns the Component to allow method chaining.
+    */
   var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], IComponent]] = js.undefined
   /** [Method] Adds a cls to the uiCls array which will also call addUIClsToElement and adds to all elements of this component
-  		* @param classes String/String[] A string or an array of strings to add to the uiCls.
-  		* @param skip Object (Boolean) skip true to skip adding it to the class and do it later (via the return).
-  		*/
+    * @param classes String/String[] A string or an array of strings to add to the uiCls.
+    * @param skip Object (Boolean) skip true to skip adding it to the class and do it later (via the return).
+    */
   var addClsWithUI: js.UndefOr[
     js.Function2[/* classes */ js.UndefOr[js.Any], /* skip */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Save a property to the given state object if it is not its default or configured value
-  		* @param state Object The state object.
-  		* @param propName String The name of the property on this object to save.
-  		* @param value String The value of the state property (defaults to this[propName]).
-  		* @returns Boolean The state object or a new object if state was null and the property was saved.
-  		*/
+    * @param state Object The state object.
+    * @param propName String The name of the property on this object to save.
+    * @param value String The value of the state property (defaults to this[propName]).
+    * @returns Boolean The state object or a new object if state was null and the property was saved.
+    */
   var addPropertyToState: js.UndefOr[
     js.Function3[
       /* state */ js.UndefOr[js.Any], 
@@ -52,15 +52,15 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   /** [Method] Method which adds a specified UI  uiCls to the components element
-  		* @param ui String The UI to remove from the element.
-  		*/
+    * @param ui String The UI to remove from the element.
+    */
   var addUIClsToElement: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Called by the layout system after the Component has been laid out
-  		* @param width Number The width that was set
-  		* @param height Number The height that was set
-  		* @param oldWidth Number/undefined The old width, or undefined if this was the initial layout.
-  		* @param oldHeight Number/undefined The old height, or undefined if this was the initial layout.
-  		*/
+    * @param width Number The width that was set
+    * @param height Number The height that was set
+    * @param oldWidth Number/undefined The old width, or undefined if this was the initial layout.
+    * @param oldHeight Number/undefined The old height, or undefined if this was the initial layout.
+    */
   var afterComponentLayout: js.UndefOr[
     js.Function4[
       /* width */ js.UndefOr[Double], 
@@ -73,17 +73,17 @@ import scala.scalajs.js.annotation._
   /** [Method] Allows addition of behavior after rendering is complete  */
   var afterRender: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Template method called after a Component has been positioned
-  		* @param x Number
-  		* @param y Number
-  		*/
+    * @param x Number
+    * @param y Number
+    */
   var afterSetPosition: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Aligns the element with another element relative to the specified anchor points
-  		* @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
-  		* @param position String The position to align to
-  		* @param offsets Number[] Offset the positioning by [x, y]
-  		* @param animate Boolean/Object true for the default animation or a standard Element animation config object
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
+    * @param position String The position to align to
+    * @param offsets Number[] Offset the positioning by [x, y]
+    * @param animate Boolean/Object true for the default animation or a standard Element animation config object
+    * @returns Ext.util.Positionable this
+    */
   var alignTo: js.UndefOr[
     js.Function4[
       js.UndefOr[js.Any], 
@@ -94,14 +94,14 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   /** [Method] Anchors an element to another element and realigns it when the window is resized
-  		* @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
-  		* @param position String The position to align to
-  		* @param offsets Number[] Offset the positioning by [x, y]
-  		* @param animate Boolean/Object true for the default animation or a standard Element animation config object
-  		* @param monitorScroll Boolean/Number True to monitor body scroll and reposition. If this parameter is a number, it is used as the buffer delay in milliseconds.
-  		* @param callback Function The function to call after the animation finishes
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
+    * @param position String The position to align to
+    * @param offsets Number[] Offset the positioning by [x, y]
+    * @param animate Boolean/Object true for the default animation or a standard Element animation config object
+    * @param monitorScroll Boolean/Number True to monitor body scroll and reposition. If this parameter is a number, it is used as the buffer delay in milliseconds.
+    * @param callback Function The function to call after the animation finishes
+    * @returns Ext.util.Positionable this
+    */
   var anchorTo: js.UndefOr[
     js.Function6[
       js.UndefOr[js.Any], 
@@ -126,33 +126,33 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (String) */
   var baseCls: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Template method to do any pre blur processing
-  		* @param e Ext.EventObject The event object
-  		*/
+    * @param e Ext.EventObject The event object
+    */
   var beforeBlur: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   /** [Method] Occurs before componentLayout is run
-  		* @param adjWidth Number The box-adjusted width that was set.
-  		* @param adjHeight Number The box-adjusted height that was set.
-  		*/
+    * @param adjWidth Number The box-adjusted width that was set.
+    * @param adjHeight Number The box-adjusted height that was set.
+    */
   var beforeComponentLayout: js.UndefOr[
     js.Function2[/* adjWidth */ js.UndefOr[Double], /* adjHeight */ js.UndefOr[Double], Unit]
   ] = js.undefined
   /** [Method] Invoked before the Component is destroyed  */
   var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Template method to do any pre focus processing
-  		* @param e Ext.EventObject The event object
-  		*/
+    * @param e Ext.EventObject The event object
+    */
   var beforeFocus: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   /** [Method] Occurs before componentLayout is run  */
   var beforeLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Number/String/Boolean) */
   var border: js.UndefOr[js.Any] = js.undefined
   /** [Method] Calculates the new x y position to move this Positionable into a constrain region
-  		* @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this Positionable was rendered, or this Component's {@link Ext.Component.constrainTo.
-  		* @param proposedPosition Number[] A proposed [X, Y] position to test for validity and to coerce into constraints instead of using this Positionable's current position.
-  		* @param local Boolean The proposedPosition is local (relative to floatParent if a floating Component)
-  		* @param proposedSize Number[] A proposed [width, height] size to use when calculating constraints instead of using this Positionable's current size.
-  		* @returns Number[] If the element needs to be translated, the new [X, Y] position within constraints if possible, giving priority to keeping the top and left edge in the constrain region. Otherwise, false.
-  		*/
+    * @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this Positionable was rendered, or this Component's {@link Ext.Component.constrainTo.
+    * @param proposedPosition Number[] A proposed [X, Y] position to test for validity and to coerce into constraints instead of using this Positionable's current position.
+    * @param local Boolean The proposedPosition is local (relative to floatParent if a floating Component)
+    * @param proposedSize Number[] A proposed [width, height] size to use when calculating constraints instead of using this Positionable's current size.
+    * @returns Number[] If the element needs to be translated, the new [X, Y] position within constraints if possible, giving priority to keeping the top and left edge in the constrain region. Otherwise, false.
+    */
   var calculateConstrainedPosition: js.UndefOr[
     js.Function4[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[Boolean], js.UndefOr[Array], Array]
   ] = js.undefined
@@ -171,8 +171,8 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Object) */
   var data: js.UndefOr[js.Any] = js.undefined
   /** [Method] Disable the component
-  		* @param silent Boolean Passing true will suppress the disable event from being fired.
-  		*/
+    * @param silent Boolean Passing true will suppress the disable event from being fired.
+    */
   var disable: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -181,23 +181,23 @@ import scala.scalajs.js.annotation._
   /** [Method] Handles autoRender  */
   var doAutoRender: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] This method needs to be called whenever you change something on this component that requires the Component s layout t
-  		* @returns Ext.container.Container this
-  		*/
+    * @returns Ext.container.Container this
+    */
   var doComponentLayout: js.UndefOr[js.Function0[typings.extjs.Ext.container.IContainer]] = js.undefined
   /** [Config Option] (Boolean) */
   var draggable: js.UndefOr[Boolean] = js.undefined
   /** [Method] Enable the component
-  		* @param silent Boolean Passing true will suppress the enable event from being fired.
-  		*/
+    * @param silent Boolean Passing true will suppress the enable event from being fired.
+    */
   var enable: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Ensures that this component is attached to document body
-  		* @param runLayout Boolean True to run the component's layout.
-  		*/
+    * @param runLayout Boolean True to run the component's layout.
+    */
   var ensureAttachedToBody: js.UndefOr[js.Function1[js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Retrieves plugin from this component s collection by its ptype
-  		* @param ptype String The Plugin's ptype as specified by the class's alias configuration.
-  		* @returns Ext.AbstractPlugin plugin instance.
-  		*/
+    * @param ptype String The Plugin's ptype as specified by the class's alias configuration.
+    * @returns Ext.AbstractPlugin plugin instance.
+    */
   var findPlugin: js.UndefOr[js.Function1[/* ptype */ js.UndefOr[java.lang.String], IAbstractPlugin]] = js.undefined
   /** [Config Option] (Boolean) */
   var floating: js.UndefOr[Boolean] = js.undefined
@@ -208,140 +208,140 @@ import scala.scalajs.js.annotation._
   /** [Property] (Object) */
   var frameSize: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
-  		* @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
-  		*/
+    * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
+    */
   var getActiveAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Gets the x y coordinates to align this element with another element
-  		* @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
-  		* @param position String The position to align to
-  		* @param offsets Number[] Offset the positioning by [x, y]
-  		* @returns Number[] [x, y]
-  		*/
+    * @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
+    * @param position String The position to align to
+    * @param offsets Number[] Offset the positioning by [x, y]
+    * @returns Number[] [x, y]
+    */
   var getAlignToXY: js.UndefOr[
     js.Function3[js.UndefOr[js.Any], js.UndefOr[java.lang.String], js.UndefOr[Array], Array]
   ] = js.undefined
   /** [Method] Gets the x y coordinates specified by the anchor position on the element
-  		* @param anchor String The specified anchor position. See alignTo for details on supported anchor positions.
-  		* @param local Boolean True to get the local (element top/left-relative) anchor position instead of page coordinates
-  		* @param size Object An object containing the size to use for calculating anchor position {width: (target width), height: (target height)} (defaults to the element's current size)
-  		* @returns Number[] [x, y] An array containing the element's x and y coordinates
-  		*/
+    * @param anchor String The specified anchor position. See alignTo for details on supported anchor positions.
+    * @param local Boolean True to get the local (element top/left-relative) anchor position instead of page coordinates
+    * @param size Object An object containing the size to use for calculating anchor position {width: (target width), height: (target height)} (defaults to the element's current size)
+    * @returns Number[] [x, y] An array containing the element's x and y coordinates
+    */
   var getAnchorXY: js.UndefOr[
     js.Function3[js.UndefOr[java.lang.String], js.UndefOr[Boolean], js.UndefOr[js.Any], Array]
   ] = js.undefined
   /** [Method] Return an object defining the area of this Element which can be passed to setBox to set another Element s size locati
-  		* @param contentBox Boolean If true a box for the content of the element is returned.
-  		* @param local Boolean If true the element's left and top relative to its offsetParent are returned instead of page x/y.
-  		* @returns Object box An object in the format: {  x: &lt;Element's X position&gt;,  y: &lt;Element's Y position&gt;,  left: &lt;Element's X position (an alias for x)&gt;,  top: &lt;Element's Y position (an alias for y)&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. The result may also be used for setXY
-  		*/
+    * @param contentBox Boolean If true a box for the content of the element is returned.
+    * @param local Boolean If true the element's left and top relative to its offsetParent are returned instead of page x/y.
+    * @returns Object box An object in the format: {  x: &lt;Element's X position&gt;,  y: &lt;Element's Y position&gt;,  left: &lt;Element's X position (an alias for x)&gt;,  top: &lt;Element's Y position (an alias for y)&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. The result may also be used for setXY
+    */
   var getBox: js.UndefOr[js.Function2[js.UndefOr[Boolean], js.UndefOr[Boolean], _]] = js.undefined
   /** [Method] Provides the link for Observable s fireEvent method to bubble up the ownership hierarchy
-  		* @returns Ext.container.Container the Container which owns this Component.
-  		*/
+    * @returns Ext.container.Container the Container which owns this Component.
+    */
   var getBubbleTarget: js.UndefOr[js.Function0[typings.extjs.Ext.container.IContainer]] = js.undefined
   /** [Method] Returns the X Y vector by which this Positionable s element must be translated to make a best attempt to constrain
-  		* @param constrainTo Ext.util.Positionable/HTMLElement/String/Ext.util.Region The Positionable, HTMLElement, element id, or Region into which the element is to be constrained.
-  		* @param proposedPosition Number[] A proposed [X, Y] position to test for validity and to produce a vector for instead of using the element's current position
-  		* @param proposedSize Number[] A proposed [width, height] size to constrain instead of using the element's current size
-  		* @returns Number[]/Boolean If the element needs to be translated, an [X, Y] vector by which this element must be translated. Otherwise, false.
-  		*/
+    * @param constrainTo Ext.util.Positionable/HTMLElement/String/Ext.util.Region The Positionable, HTMLElement, element id, or Region into which the element is to be constrained.
+    * @param proposedPosition Number[] A proposed [X, Y] position to test for validity and to produce a vector for instead of using the element's current position
+    * @param proposedSize Number[] A proposed [width, height] size to constrain instead of using the element's current size
+    * @returns Number[]/Boolean If the element needs to be translated, an [X, Y] vector by which this element must be translated. Otherwise, false.
+    */
   var getConstrainVector: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[Array], _]] = js.undefined
   /** [Method] Retrieves the top level element representing this component
-  		* @returns Ext.dom.Element
-  		*/
+    * @returns Ext.dom.Element
+    */
   var getEl: js.UndefOr[js.Function0[typings.extjs.Ext.dom.IElement]] = js.undefined
   /** [Method] Gets the current height of the component s underlying element
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getHeight: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Retrieves the id of this component
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] This function takes the position argument passed to onRender and returns a DOM element that you can use in the insert
-  		* @param position String/Number/Ext.dom.Element/HTMLElement Index, element id or element you want to put this component before.
-  		* @returns HTMLElement DOM element that you can use in the insertBefore
-  		*/
+    * @param position String/Number/Ext.dom.Element/HTMLElement Index, element id or element you want to put this component before.
+    * @returns HTMLElement DOM element that you can use in the insertBefore
+    */
   var getInsertPosition: js.UndefOr[js.Function1[js.UndefOr[js.Any], HTMLElement]] = js.undefined
   /** [Method] Returns the value of itemId assigned to this component or when that is not set returns the value of id
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getItemId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Gets the Ext ComponentLoader for this Component
-  		* @returns Ext.ComponentLoader The loader instance, null if it doesn't exist.
-  		*/
+    * @returns Ext.ComponentLoader The loader instance, null if it doesn't exist.
+    */
   var getLoader: js.UndefOr[js.Function0[IComponentLoader]] = js.undefined
   /** [Method] Overridden in Ext rtl AbstractComponent
-  		* @returns Number The local x coordinate
-  		*/
+    * @returns Number The local x coordinate
+    */
   var getLocalX: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Overridden in Ext rtl AbstractComponent
-  		* @returns Number[] The local XY position of the element
-  		*/
+    * @returns Number[] The local XY position of the element
+    */
   var getLocalXY: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the y coordinate of this element reletive to its offsetParent
-  		* @returns Number The local y coordinate
-  		*/
+    * @returns Number The local y coordinate
+    */
   var getLocalY: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the offsets of this element from the passed element
-  		* @param offsetsTo Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or element id to get get the offsets from.
-  		* @returns Number[] The XY page offsets (e.g. [100, -200])
-  		*/
+    * @param offsetsTo Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or element id to get get the offsets from.
+    * @returns Number[] The XY page offsets (e.g. [100, -200])
+    */
   var getOffsetsTo: js.UndefOr[js.Function1[js.UndefOr[js.Any], Array]] = js.undefined
   /** [Method] Retrieves a plugin from this component s collection by its pluginId
-  		* @param pluginId String
-  		* @returns Ext.AbstractPlugin plugin instance.
-  		*/
+    * @param pluginId String
+    * @returns Ext.AbstractPlugin plugin instance.
+    */
   var getPlugin: js.UndefOr[js.Function1[/* pluginId */ js.UndefOr[java.lang.String], IAbstractPlugin]] = js.undefined
   /** [Method] Returns a region object that defines the area of this element
-  		* @returns Ext.util.Region A Region containing "top, left, bottom, right" properties.
-  		*/
+    * @returns Ext.util.Region A Region containing "top, left, bottom, right" properties.
+    */
   var getRegion: js.UndefOr[js.Function0[IRegion]] = js.undefined
   /** [Method] Gets the current size of the component s underlying element
-  		* @returns Object An object containing the element's size {width: (element width), height: (element height)}
-  		*/
+    * @returns Object An object containing the element's size {width: (element width), height: (element height)}
+    */
   var getSize: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns an object that describes how this component s width and height are managed
-  		* @param ownerCtSizeModel Object
-  		* @returns Object The size model for this component.
-  		*/
+    * @param ownerCtSizeModel Object
+    * @returns Object The size model for this component.
+    */
   var getSizeModel: js.UndefOr[js.Function1[/* ownerCtSizeModel */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the content region of this element
-  		* @returns Ext.util.Region A Region containing "top, left, bottom, right" member data.
-  		*/
+    * @returns Ext.util.Region A Region containing "top, left, bottom, right" member data.
+    */
   var getViewRegion: js.UndefOr[js.Function0[IRegion]] = js.undefined
   /** [Method] Gets the current width of the component s underlying element
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getWidth: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Gets the current X position of the DOM element based on page coordinates
-  		* @returns Number The X position of the element
-  		*/
+    * @returns Number The X position of the element
+    */
   var getX: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns this Component s xtype hierarchy as a slash delimited string
-  		* @returns String The xtype hierarchy string
-  		*/
+    * @returns String The xtype hierarchy string
+    */
   var getXTypes: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Method] Gets the current position of the DOM element based on page coordinates
-  		* @returns Number[] The XY position of the element
-  		*/
+    * @returns Number[] The XY position of the element
+    */
   var getXY: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Gets the current Y position of the DOM element based on page coordinates
-  		* @returns Number The Y position of the element
-  		*/
+    * @returns Number The Y position of the element
+    */
   var getY: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
-  		* @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
-  		*/
+    * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
+    */
   var hasActiveFx: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Checks if the specified CSS class exists on this element s DOM node
-  		* @param className String The CSS class to check for.
-  		* @returns Boolean true if the class exists, else false.
-  		*/
+    * @param className String The CSS class to check for.
+    * @returns Boolean true if the class exists, else false.
+    */
   var hasCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
   /** [Method] Checks if there is currently a specified uiCls
-  		* @param cls String The cls to check.
-  		*/
+    * @param cls String The cls to check.
+    */
   var hasUICls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var height: js.UndefOr[Double] = js.undefined
@@ -356,57 +356,57 @@ import scala.scalajs.js.annotation._
   /** [Method] Initialize any events on this component */
   var initEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Initialized the renderData to be used when rendering the renderTpl
-  		* @returns Object Object with keys and values that are going to be applied to the renderTpl
-  		*/
+    * @returns Object Object with keys and values that are going to be applied to the renderTpl
+    */
   var initRenderData: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Tests whether this Component matches the selector string
-  		* @param selector String The selector string to test against.
-  		* @returns Boolean true if this Component matches the selector.
-  		*/
+    * @param selector String The selector string to test against.
+    * @returns Boolean true if this Component matches the selector.
+    */
   var is: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
   /** [Property] (Boolean) */
   var isComponent: js.UndefOr[Boolean] = js.undefined
   /** [Method] Determines whether this component is the descendant of a particular container
-  		* @param container Ext.Container
-  		* @returns Boolean true if the component is the descendant of a particular container, otherwise false.
-  		*/
+    * @param container Ext.Container
+    * @returns Boolean true if the component is the descendant of a particular container, otherwise false.
+    */
   var isDescendantOf: js.UndefOr[js.Function1[/* container */ js.UndefOr[IContainer], Boolean]] = js.undefined
   /** [Method] Method to determine whether this Component is currently disabled
-  		* @returns Boolean the disabled state of this Component.
-  		*/
+    * @returns Boolean the disabled state of this Component.
+    */
   var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Method to determine whether this Component is draggable
-  		* @returns Boolean the draggable state of this component.
-  		*/
+    * @returns Boolean the draggable state of this component.
+    */
   var isDraggable: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Method to determine whether this Component is droppable
-  		* @returns Boolean the droppable state of this component.
-  		*/
+    * @returns Boolean the droppable state of this component.
+    */
   var isDroppable: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Method to determine whether this Component is floating
-  		* @returns Boolean the floating state of this component.
-  		*/
+    * @returns Boolean the floating state of this component.
+    */
   var isFloating: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Method to determine whether this Component is currently set to hidden
-  		* @returns Boolean the hidden state of this Component.
-  		*/
+    * @returns Boolean the hidden state of this Component.
+    */
   var isHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Determines whether this Component is the root of a layout  */
   var isLayoutRoot: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns true if layout is suspended for this component
-  		* @returns Boolean true layout of this component is suspended.
-  		*/
+    * @returns Boolean true layout of this component is suspended.
+    */
   var isLayoutSuspended: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true if this component is visible
-  		* @param deep Boolean Pass true to interrogate the visibility status of all parent Containers to determine whether this Component is truly visible to the user. Generally, to determine whether a Component is hidden, the no argument form is needed. For example when creating dynamically laid out UIs in a hidden Container before showing them.
-  		* @returns Boolean true if this component is visible, false otherwise.
-  		*/
+    * @param deep Boolean Pass true to interrogate the visibility status of all parent Containers to determine whether this Component is truly visible to the user. Generally, to determine whether a Component is hidden, the no argument form is needed. For example when creating dynamically laid out UIs in a hidden Container before showing them.
+    * @returns Boolean true if this component is visible, false otherwise.
+    */
   var isVisible: js.UndefOr[js.Function1[/* deep */ js.UndefOr[Boolean], Boolean]] = js.undefined
   /** [Method] Tests whether or not this Component is of a specific xtype
-  		* @param xtype String The xtype to check for this Component
-  		* @param shallow Boolean true to check whether this Component is directly of the specified xtype, false to check whether this Component is descended from the xtype.
-  		* @returns Boolean true if this component descends from the specified xtype, false otherwise.
-  		*/
+    * @param xtype String The xtype to check for this Component
+    * @param shallow Boolean true to check whether this Component is directly of the specified xtype, false to check whether this Component is descended from the xtype.
+    * @returns Boolean true if this component descends from the specified xtype, false otherwise.
+    */
   var isXType: js.UndefOr[
     js.Function2[/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean], Boolean]
   ] = js.undefined
@@ -427,27 +427,27 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Number) */
   var minWidth: js.UndefOr[Double] = js.undefined
   /** [Method] Move the element relative to its current position
-  		* @param direction String Possible values are:  "l" (or "left") "r" (or "right") "t" (or "top", or "up") "b" (or "bottom", or "down")
-  		* @param distance Number How far to move the element in pixels
-  		* @param animate Boolean/Object true for the default animation or a standard Element animation config object
-  		*/
+    * @param direction String Possible values are:  "l" (or "left") "r" (or "right") "t" (or "top", or "up") "b" (or "bottom", or "down")
+    * @param distance Number How far to move the element in pixels
+    * @param animate Boolean/Object true for the default animation or a standard Element animation config object
+    */
   var move: js.UndefOr[
     js.Function3[js.UndefOr[java.lang.String], js.UndefOr[Double], js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Returns the next node in the Component tree in tree traversal order
-  		* @param selector String A ComponentQuery selector to filter the following nodes.
-  		* @returns Ext.Component The next node (or the next node which matches the selector). Returns null if there is no matching node.
-  		*/
+    * @param selector String A ComponentQuery selector to filter the following nodes.
+    * @returns Ext.Component The next node (or the next node which matches the selector). Returns null if there is no matching node.
+    */
   var nextNode: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.undefined
   /** [Method] Returns the next sibling of this Component
-  		* @param selector String A ComponentQuery selector to filter the following items.
-  		* @returns Ext.Component The next sibling (or the next sibling which matches the selector). Returns null if there is no matching sibling.
-  		*/
+    * @param selector String A ComponentQuery selector to filter the following items.
+    * @returns Ext.Component The next sibling (or the next sibling which matches the selector). Returns null if there is no matching sibling.
+    */
   var nextSibling: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.undefined
   /** [Method] Method to manage awareness of when components are added to their respective Container firing an added event
-  		* @param container Ext.container.Container Container which holds the component.
-  		* @param pos Number Position at which the component was added.
-  		*/
+    * @param container Ext.container.Container Container which holds the component.
+    * @param pos Number Position at which the component was added.
+    */
   var onAdded: js.UndefOr[
     js.Function2[
       /* container */ js.UndefOr[typings.extjs.Ext.container.IContainer], 
@@ -460,27 +460,27 @@ import scala.scalajs.js.annotation._
   /** [Method] Allows addition of behavior to the enable operation  */
   var onEnable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Called after the component is moved this method is empty by default but can be implemented by any subclass that need
-  		* @param x Number The new x position.
-  		* @param y Number The new y position.
-  		*/
+    * @param x Number The new x position.
+    * @param y Number The new y position.
+    */
   var onPosition: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Method to manage awareness of when components are removed from their respective Container firing a removed event
-  		* @param destroying Boolean Will be passed as true if the Container performing the remove operation will delete this Component upon remove.
-  		*/
+    * @param destroying Boolean Will be passed as true if the Container performing the remove operation will delete this Component upon remove.
+    */
   var onRemoved: js.UndefOr[js.Function1[/* destroying */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Template method called when this Component s DOM structure is created
-  		* @param parentNode Ext.core.Element The parent Element in which this Component's encapsulating element is contained.
-  		* @param containerIdx Number The index within the parent Container's child collection of this Component.
-  		*/
+    * @param parentNode Ext.core.Element The parent Element in which this Component's encapsulating element is contained.
+    * @param containerIdx Number The index within the parent Container's child collection of this Component.
+    */
   var onRender: js.UndefOr[
     js.Function2[js.UndefOr[typings.extjs.Ext.core.IElement], js.UndefOr[Double], Unit]
   ] = js.undefined
   /** [Method] Allows addition of behavior to the resize operation
-  		* @param width Object
-  		* @param height Object
-  		* @param oldWidth Object
-  		* @param oldHeight Object
-  		*/
+    * @param width Object
+    * @param height Object
+    * @param oldWidth Object
+    * @param oldHeight Object
+    */
   var onResize: js.UndefOr[
     js.Function4[
       /* width */ js.UndefOr[js.Any], 
@@ -499,48 +499,48 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Ext.AbstractPlugin[]/Ext.AbstractPlugin/Object[]/Object/Ext.enums.Plugin[]/Ext.enums.Plugin) */
   var plugins: js.UndefOr[js.Any] = js.undefined
   /** [Method] Template method to do any post blur processing
-  		* @param e Ext.EventObject The event object
-  		*/
+    * @param e Ext.EventObject The event object
+    */
   var postBlur: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   /** [Method] Returns the previous node in the Component tree in tree traversal order
-  		* @param selector String A ComponentQuery selector to filter the preceding nodes.
-  		* @returns Ext.Component The previous node (or the previous node which matches the selector). Returns null if there is no matching node.
-  		*/
+    * @param selector String A ComponentQuery selector to filter the preceding nodes.
+    * @returns Ext.Component The previous node (or the previous node which matches the selector). Returns null if there is no matching node.
+    */
   var previousNode: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.undefined
   /** [Method] Returns the previous sibling of this Component
-  		* @param selector String A ComponentQuery selector to filter the preceding items.
-  		* @returns Ext.Component The previous sibling (or the previous sibling which matches the selector). Returns null if there is no matching sibling.
-  		*/
+    * @param selector String A ComponentQuery selector to filter the preceding items.
+    * @returns Ext.Component The previous sibling (or the previous sibling which matches the selector). Returns null if there is no matching sibling.
+    */
   var previousSibling: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.undefined
   /** [Method] Called by Component doAutoRender Register a Container configured floating true with this Component s ZIndexManager
-  		* @param cmp Object
-  		*/
+    * @param cmp Object
+    */
   var registerFloatingItem: js.UndefOr[js.Function1[/* cmp */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Remove any anchor to this element
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @returns Ext.util.Positionable this
+    */
   var removeAnchor: js.UndefOr[js.Function0[this.type | IPositionable]] = js.undefined
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
-  		* @param testFn Function The test function.
-  		*/
+    * @param testFn Function The test function.
+    */
   var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Removes a CSS class from the top level element representing this component
-  		* @param cls String/String[] The CSS class name to remove.
-  		* @returns Ext.Component Returns the Component to allow method chaining.
-  		*/
+    * @param cls String/String[] The CSS class name to remove.
+    * @returns Ext.Component Returns the Component to allow method chaining.
+    */
   var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], IComponent]] = js.undefined
   /** [Method] Removes a cls to the uiCls array which will also call removeUIClsFromElement and removes it from all elements of thi
-  		* @param cls String/String[] A string or an array of strings to remove to the uiCls.
-  		*/
+    * @param cls String/String[] A string or an array of strings to remove to the uiCls.
+    */
   var removeClsWithUI: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Method which removes a specified UI  uiCls from the components element
-  		* @param ui String The UI to add to the element.
-  		*/
+    * @param ui String The UI to add to the element.
+    */
   var removeUIClsFromElement: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Renders the Component into the passed HTML element
-  		* @param container Ext.Element/HTMLElement/String The element this Component should be rendered into. If it is being created from existing markup, this should be omitted.
-  		* @param position String/Number The element ID or DOM node index within the container before which this component will be inserted (defaults to appending to the end of the container)
-  		*/
+    * @param container Ext.Element/HTMLElement/String The element this Component should be rendered into. If it is being created from existing markup, this should be omitted.
+    * @param position String/Number The element ID or DOM node index within the container before which this component will be inserted (defaults to appending to the end of the container)
+    */
   var render: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var renderData: js.UndefOr[js.Any] = js.undefined
@@ -555,143 +555,143 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var rtl: js.UndefOr[Boolean] = js.undefined
   /** [Method] Ensures that all effects queued after sequenceFx is called on this object are run in sequence
-  		* @returns Object this
-  		*/
+    * @returns Object this
+    */
   var sequenceFx: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method]
-  		* @param border String/Number The border, see border. If a falsey value is passed the border will be removed.
-  		*/
+    * @param border String/Number The border, see border. If a falsey value is passed the border will be removed.
+    */
   var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the element s box
-  		* @param box Object The box to fill {x, y, width, height}
-  		* @param animate Boolean/Object true for the default animation or a standard Element animation config object
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param box Object The box to fill {x, y, width, height}
+    * @param animate Boolean/Object true for the default animation or a standard Element animation config object
+    * @returns Ext.util.Positionable this
+    */
   var setBox: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], this.type | IPositionable]] = js.undefined
   /** [Method] Enable or disable the component
-  		* @param disabled Boolean true to disable.
-  		*/
+    * @param disabled Boolean true to disable.
+    */
   var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the dock position of this component in its parent panel
-  		* @param dock Object The dock position.
-  		* @param layoutParent Boolean true to re-layout parent.
-  		* @returns Ext.Component this
-  		*/
+    * @param dock Object The dock position.
+    * @param layoutParent Boolean true to re-layout parent.
+    * @returns Ext.Component this
+    */
   var setDocked: js.UndefOr[
     js.Function2[/* dock */ js.UndefOr[js.Any], /* layoutParent */ js.UndefOr[Boolean], IComponent]
   ] = js.undefined
   /** [Method] Sets the height of the component
-  		* @param height Number The new height to set. This may be one of:  A Number specifying the new height in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS height style. undefined to leave the height unchanged.
-  		* @returns Ext.Component this
-  		*/
+    * @param height Number The new height to set. This may be one of:  A Number specifying the new height in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS height style. undefined to leave the height unchanged.
+    * @returns Ext.Component this
+    */
   var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[Double], IComponent]] = js.undefined
   /** [Method] Overridden in Ext rtl AbstractComponent
-  		* @param x Object
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param x Object
+    * @returns Ext.util.Positionable this
+    */
   var setLocalX: js.UndefOr[js.Function1[js.UndefOr[js.Any | Double], this.type | IPositionable]] = js.undefined
   /** [Method] Overridden in Ext rtl AbstractComponent
-  		* @param x Object
-  		* @param y Object
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param x Object
+    * @param y Object
+    * @returns Ext.util.Positionable this
+    */
   var setLocalXY: js.UndefOr[
     js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any | Double], this.type | IPositionable]
   ] = js.undefined
   /** [Method] Sets the local y coordinate of this element using CSS style
-  		* @param y Object
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param y Object
+    * @returns Ext.util.Positionable this
+    */
   var setLocalY: js.UndefOr[js.Function1[js.UndefOr[js.Any | Double], this.type | IPositionable]] = js.undefined
   /** [Method] Sets the margin on the target element
-  		* @param margin Number/String The margin to set. See the margin config.
-  		*/
+    * @param margin Number/String The margin to set. See the margin config.
+    */
   var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the element s position and size to the specified region
-  		* @param region Ext.util.Region The region to fill
-  		* @param animate Boolean/Object true for the default animation or a standard Element animation config object
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param region Ext.util.Region The region to fill
+    * @param animate Boolean/Object true for the default animation or a standard Element animation config object
+    * @returns Ext.util.Positionable this
+    */
   var setRegion: js.UndefOr[js.Function2[js.UndefOr[IRegion], js.UndefOr[js.Any], this.type | IPositionable]] = js.undefined
   /** [Method] Sets the width and height of this Component
-  		* @param width Number/String/Object The new width to set. This may be one of:  A Number specifying the new width in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS width style. A size object in the format {width: widthValue, height: heightValue}. undefined to leave the width unchanged.
-  		* @param height Number/String The new height to set (not required if a size object is passed as the first arg). This may be one of:  A Number specifying the new height in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS height style. Animation may not be used. undefined to leave the height unchanged.
-  		* @returns Ext.Component this
-  		*/
+    * @param width Number/String/Object The new width to set. This may be one of:  A Number specifying the new width in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS width style. A size object in the format {width: widthValue, height: heightValue}. undefined to leave the width unchanged.
+    * @param height Number/String The new height to set (not required if a size object is passed as the first arg). This may be one of:  A Number specifying the new height in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS height style. Animation may not be used. undefined to leave the height unchanged.
+    * @returns Ext.Component this
+    */
   var setSize: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], IComponent]
   ] = js.undefined
   /** [Method] Sets the UI for the component
-  		* @param ui String The new UI for the component.
-  		*/
+    * @param ui String The new UI for the component.
+    */
   var setUI: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Convenience function to hide or show this component by Boolean
-  		* @param visible Boolean true to show, false to hide.
-  		* @returns Ext.Component this
-  		*/
+    * @param visible Boolean true to show, false to hide.
+    * @returns Ext.Component this
+    */
   var setVisible: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], IComponent]] = js.undefined
   /** [Method] Sets the width of the component
-  		* @param width Number The new width to setThis may be one of:  A Number specifying the new width in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS width style.
-  		* @returns Ext.Component this
-  		*/
+    * @param width Number The new width to setThis may be one of:  A Number specifying the new width in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS width style.
+    * @returns Ext.Component this
+    */
   var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[Double], IComponent]] = js.undefined
   /** [Method] Sets the X position of the DOM element based on page coordinates
-  		* @param x Object
-  		* @param animate Object
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param x Object
+    * @param animate Object
+    * @returns Ext.util.Positionable this
+    */
   var setX: js.UndefOr[
     js.Function2[js.UndefOr[js.Any | Double], js.UndefOr[js.Any], this.type | IPositionable]
   ] = js.undefined
   /** [Method] Sets the position of the DOM element in page coordinates
-  		* @param xy Object
-  		* @param animate Object
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param xy Object
+    * @param animate Object
+    * @returns Ext.util.Positionable this
+    */
   var setXY: js.UndefOr[
     js.Function2[js.UndefOr[js.Any | Array], js.UndefOr[js.Any], this.type | IPositionable]
   ] = js.undefined
   /** [Method] Sets the Y position of the DOM element based on page coordinates
-  		* @param y Object
-  		* @param animate Object
-  		* @returns Ext.util.Positionable this
-  		*/
+    * @param y Object
+    * @param animate Object
+    * @returns Ext.util.Positionable this
+    */
   var setY: js.UndefOr[
     js.Function2[js.UndefOr[js.Any | Double], js.UndefOr[js.Any], this.type | IPositionable]
   ] = js.undefined
   /** [Config Option] (Boolean/Number) */
   var shrinkWrap: js.UndefOr[js.Any] = js.undefined
   /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
-  		* @returns Ext.Element The Element
-  		*/
+    * @returns Ext.Element The Element
+    */
   var stopAnimation: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
-  		* @returns Ext.Element The Element
-  		*/
+    * @returns Ext.Element The Element
+    */
   var stopFx: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Config Option] (String/Object) */
   var style: js.UndefOr[js.Any] = js.undefined
   /** [Method] Ensures that all effects queued after syncFx is called on this object are run concurrently
-  		* @returns Object this
-  		*/
+    * @returns Object this
+    */
   var syncFx: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Ext.XTemplate/Ext.Template/String/String[]) */
   var tpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
   var tplWriteMode: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Translates the passed page coordinates into left top css values for the element
-  		* @param x Number/Array The page x or an array containing [x, y]
-  		* @param y Number The page y, required if x is not an array
-  		* @returns Object An object with left and top properties. e.g. {left: (value), top: (value)}
-  		*/
+    * @param x Number/Array The page x or an array containing [x, y]
+    * @param y Number The page y, required if x is not an array
+    * @returns Object An object with left and top properties. e.g. {left: (value), top: (value)}
+    */
   var translatePoints: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[Double], _]] = js.undefined
   /** [Config Option] (String) */
   var ui: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Navigates up the ownership hierarchy searching for an ancestor Container which matches any passed simple selector or
-  		* @param selector String/Ext.Component The simple selector component or actual component to test. If not passed the immediate owner/activater is returned.
-  		* @param limit String/Number/Ext.Component This may be a selector upon which to stop the upward scan, or a limit of teh number of steps, or Component reference to stop on.
-  		* @returns Ext.container.Container The matching ancestor Container (or undefined if no match was found).
-  		*/
+    * @param selector String/Ext.Component The simple selector component or actual component to test. If not passed the immediate owner/activater is returned.
+    * @param limit String/Number/Ext.Component This may be a selector upon which to stop the upward scan, or a limit of teh number of steps, or Component reference to stop on.
+    * @returns Ext.container.Container The matching ancestor Container (or undefined if no match was found).
+    */
   var up: js.UndefOr[
     js.Function2[
       /* selector */ js.UndefOr[js.Any], 
@@ -700,10 +700,10 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   /** [Method] Update the content area of a component
-  		* @param htmlOrData String/Object If this component has been configured with a template via the tpl config then it will use this argument as data to populate the template. If this component was not configured with a template, the components content area will be updated via Ext.Element update.
-  		* @param loadScripts Boolean Only legitimate when using the html configuration.
-  		* @param callback Function Only legitimate when using the html configuration. Callback to execute when scripts have finished loading.
-  		*/
+    * @param htmlOrData String/Object If this component has been configured with a template via the tpl config then it will use this argument as data to populate the template. If this component was not configured with a template, the components content area will be updated via Ext.Element update.
+    * @param loadScripts Boolean Only legitimate when using the html configuration.
+    * @param callback Function Only legitimate when using the html configuration. Callback to execute when scripts have finished loading.
+    */
   var update: js.UndefOr[
     js.Function3[
       /* htmlOrData */ js.UndefOr[js.Any], 
@@ -713,8 +713,8 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   /** [Method] Updates this component s layout
-  		* @param options Object An object with layout options.
-  		*/
+    * @param options Object An object with layout options.
+    */
   var updateLayout: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Number) */
   var width: js.UndefOr[Double] = js.undefined
@@ -821,7 +821,7 @@ object IAbstractComponent {
     hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
     hasListeners: js.Any = null,
     hasUICls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hideMode: java.lang.String = null,
     html: js.Any = null,
@@ -848,10 +848,10 @@ object IAbstractComponent {
     loader: js.Any = null,
     margin: js.Any = null,
     maskOnDisable: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     move: (js.UndefOr[java.lang.String], js.UndefOr[Double], js.UndefOr[js.Any]) => Unit = null,
@@ -892,7 +892,7 @@ object IAbstractComponent {
     resumeEvent: /* repeated */ js.Any => Unit = null,
     resumeEvents: () => Unit = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
-    saveDelay: Int | Double = null,
+    saveDelay: js.UndefOr[Double] = js.undefined,
     savePropToState: (/* propName */ js.UndefOr[java.lang.String], /* state */ js.UndefOr[js.Any], /* stateName */ js.UndefOr[java.lang.String]) => Boolean = null,
     savePropsToState: (/* propNames */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any]) => _ = null,
     saveState: () => Unit = null,
@@ -936,11 +936,11 @@ object IAbstractComponent {
     update: (/* htmlOrData */ js.UndefOr[js.Any], /* loadScripts */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any]) => Unit = null,
     updateLayout: /* options */ js.UndefOr[js.Any] => Unit = null,
     uses: Array = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     xtype: IWidget = null
   ): IAbstractComponent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_isLayoutRoot)) __obj.updateDynamic("_isLayoutRoot")(_isLayoutRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(_isLayoutRoot)) __obj.updateDynamic("_isLayoutRoot")(_isLayoutRoot.get.asInstanceOf[js.Any])
     if (addChildEls != null) __obj.updateDynamic("addChildEls")(js.Any.fromFunction0(addChildEls))
     if (addClass != null) __obj.updateDynamic("addClass")(js.Any.fromFunction1(addClass))
     if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction1(addCls))
@@ -963,7 +963,7 @@ object IAbstractComponent {
     if (autoEl != null) __obj.updateDynamic("autoEl")(autoEl.asInstanceOf[js.Any])
     if (autoLoad != null) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
     if (autoRender != null) __obj.updateDynamic("autoRender")(autoRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoShow)) __obj.updateDynamic("autoShow")(autoShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoShow)) __obj.updateDynamic("autoShow")(autoShow.get.asInstanceOf[js.Any])
     if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls.asInstanceOf[js.Any])
     if (beforeBlur != null) __obj.updateDynamic("beforeBlur")(js.Any.fromFunction1(beforeBlur))
     if (beforeComponentLayout != null) __obj.updateDynamic("beforeComponentLayout")(js.Any.fromFunction2(beforeComponentLayout))
@@ -987,11 +987,11 @@ object IAbstractComponent {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction1(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls.asInstanceOf[js.Any])
     if (doAutoRender != null) __obj.updateDynamic("doAutoRender")(js.Any.fromFunction0(doAutoRender))
     if (doComponentLayout != null) __obj.updateDynamic("doComponentLayout")(js.Any.fromFunction0(doComponentLayout))
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction1(enable))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (ensureAttachedToBody != null) __obj.updateDynamic("ensureAttachedToBody")(js.Any.fromFunction1(ensureAttachedToBody))
@@ -999,9 +999,9 @@ object IAbstractComponent {
     if (findPlugin != null) __obj.updateDynamic("findPlugin")(js.Any.fromFunction1(findPlugin))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(js.Any.fromFunction2(fireEventArgs))
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
     if (forceComponentLayout != null) __obj.updateDynamic("forceComponentLayout")(js.Any.fromFunction0(forceComponentLayout))
-    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
+    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.get.asInstanceOf[js.Any])
     if (frameSize != null) __obj.updateDynamic("frameSize")(frameSize.asInstanceOf[js.Any])
     if (getActiveAnimation != null) __obj.updateDynamic("getActiveAnimation")(js.Any.fromFunction0(getActiveAnimation))
     if (getAlignToXY != null) __obj.updateDynamic("getAlignToXY")(js.Any.fromFunction3(getAlignToXY))
@@ -1036,8 +1036,8 @@ object IAbstractComponent {
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (hasUICls != null) __obj.updateDynamic("hasUICls")(js.Any.fromFunction1(hasUICls))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (hideMode != null) __obj.updateDynamic("hideMode")(hideMode.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -1046,7 +1046,7 @@ object IAbstractComponent {
     if (initEvents != null) __obj.updateDynamic("initEvents")(js.Any.fromFunction0(initEvents))
     if (initRenderData != null) __obj.updateDynamic("initRenderData")(js.Any.fromFunction0(initRenderData))
     if (is != null) __obj.updateDynamic("is")(js.Any.fromFunction1(is))
-    if (!js.isUndefined(isComponent)) __obj.updateDynamic("isComponent")(isComponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(isComponent)) __obj.updateDynamic("isComponent")(isComponent.get.asInstanceOf[js.Any])
     if (isDescendantOf != null) __obj.updateDynamic("isDescendantOf")(js.Any.fromFunction1(isDescendantOf))
     if (isDisabled != null) __obj.updateDynamic("isDisabled")(js.Any.fromFunction0(isDisabled))
     if (isDraggable != null) __obj.updateDynamic("isDraggable")(js.Any.fromFunction0(isDraggable))
@@ -1055,18 +1055,18 @@ object IAbstractComponent {
     if (isHidden != null) __obj.updateDynamic("isHidden")(js.Any.fromFunction0(isHidden))
     if (isLayoutRoot != null) __obj.updateDynamic("isLayoutRoot")(js.Any.fromFunction0(isLayoutRoot))
     if (isLayoutSuspended != null) __obj.updateDynamic("isLayoutSuspended")(js.Any.fromFunction0(isLayoutSuspended))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (isVisible != null) __obj.updateDynamic("isVisible")(js.Any.fromFunction1(isVisible))
     if (isXType != null) __obj.updateDynamic("isXType")(js.Any.fromFunction2(isXType))
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction3(move))
@@ -1102,12 +1102,12 @@ object IAbstractComponent {
     if (renderSelectors != null) __obj.updateDynamic("renderSelectors")(renderSelectors.asInstanceOf[js.Any])
     if (renderTo != null) __obj.updateDynamic("renderTo")(renderTo.asInstanceOf[js.Any])
     if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl.asInstanceOf[js.Any])
-    if (!js.isUndefined(rendered)) __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    if (!js.isUndefined(rendered)) __obj.updateDynamic("rendered")(rendered.get.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (saveDelay != null) __obj.updateDynamic("saveDelay")(saveDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveDelay)) __obj.updateDynamic("saveDelay")(saveDelay.get.asInstanceOf[js.Any])
     if (savePropToState != null) __obj.updateDynamic("savePropToState")(js.Any.fromFunction3(savePropToState))
     if (savePropsToState != null) __obj.updateDynamic("savePropsToState")(js.Any.fromFunction2(savePropsToState))
     if (saveState != null) __obj.updateDynamic("saveState")(js.Any.fromFunction0(saveState))
@@ -1131,10 +1131,10 @@ object IAbstractComponent {
     if (setXY != null) __obj.updateDynamic("setXY")(js.Any.fromFunction2(setXY))
     if (setY != null) __obj.updateDynamic("setY")(js.Any.fromFunction2(setY))
     if (shrinkWrap != null) __obj.updateDynamic("shrinkWrap")(shrinkWrap.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (stateEvents != null) __obj.updateDynamic("stateEvents")(stateEvents.asInstanceOf[js.Any])
     if (stateId != null) __obj.updateDynamic("stateId")(stateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stopAnimation != null) __obj.updateDynamic("stopAnimation")(js.Any.fromFunction0(stopAnimation))
     if (stopFx != null) __obj.updateDynamic("stopFx")(js.Any.fromFunction0(stopFx))
@@ -1151,7 +1151,7 @@ object IAbstractComponent {
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction3(update))
     if (updateLayout != null) __obj.updateDynamic("updateLayout")(js.Any.fromFunction1(updateLayout))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (xtype != null) __obj.updateDynamic("xtype")(xtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstractComponent]
   }

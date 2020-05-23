@@ -27,13 +27,13 @@ object TestSelectionConfig {
     watch: js.UndefOr[Boolean] = js.undefined
   ): TestSelectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(findRelatedTests)) __obj.updateDynamic("findRelatedTests")(findRelatedTests.asInstanceOf[js.Any])
+    if (!js.isUndefined(findRelatedTests)) __obj.updateDynamic("findRelatedTests")(findRelatedTests.get.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyChanged)) __obj.updateDynamic("onlyChanged")(onlyChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyChanged)) __obj.updateDynamic("onlyChanged")(onlyChanged.get.asInstanceOf[js.Any])
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldTreatInputAsPattern)) __obj.updateDynamic("shouldTreatInputAsPattern")(shouldTreatInputAsPattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldTreatInputAsPattern)) __obj.updateDynamic("shouldTreatInputAsPattern")(shouldTreatInputAsPattern.get.asInstanceOf[js.Any])
     if (testPathPattern != null) __obj.updateDynamic("testPathPattern")(testPathPattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSelectionConfig]
   }
 }

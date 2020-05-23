@@ -19,9 +19,7 @@ object PersistData {
     active: String = null,
     focus: String = null
   ): PersistData = {
-    val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], active = active.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistData]
   }
 }

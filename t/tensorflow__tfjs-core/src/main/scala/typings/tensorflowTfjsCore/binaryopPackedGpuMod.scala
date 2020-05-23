@@ -1,18 +1,6 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.gpgpuMathMod.GPGPUProgram
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  SlashSlash vec4 one Equalssign vec4LeftparenthesisequalLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed  SlashSlash return one Plussign Leftparenthesisvec4Leftparenthesis1Dot0Rightparenthesis - oneRightparenthesis Asterisk a Slash bSemicolonLinefeed  vec4 result Equalssign a Slash bSemicolonLinefeed  ifLeftparenthesisaDotx EqualssignEqualssign bDotxRightparenthesis LeftcurlybracketLinefeed    resultDotx Equalssign 1DotSemicolonLinefeed  RightcurlybracketLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  ivec4 ia Equalssign roundLeftparenthesisaRightparenthesisSemicolonLinefeed  ivec4 ib Equalssign roundLeftparenthesisbRightparenthesisSemicolonLinefeed  bvec4 cond Equalssign notEqualLeftparenthesisibComma ivec4Leftparenthesis0RightparenthesisRightparenthesisSemicolonLinefeed  ivec4 result Equalssign ivec4Leftparenthesis0RightparenthesisSemicolonLinefeed  vec4 s Equalssign signLeftparenthesisaRightparenthesis Asterisk signLeftparenthesisbRightparenthesisSemicolonLinefeedLinefeed  SlashS`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  return minLeftparenthesisLinefeed    vec4LeftparenthesisgreaterThanEqualLeftparenthesisaComma vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesis PlussignLinefeed    vec4LeftparenthesisgreaterThanEqualLeftparenthesisbComma vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesisCommaLinefeed    vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisSemicolonLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  return vec4LeftparenthesisLinefeed    vec4LeftparenthesisgreaterThanEqualLeftparenthesisaComma vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesis AsteriskLinefeed    vec4LeftparenthesisgreaterThanEqualLeftparenthesisbComma vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesisRightparenthesisSemicolonLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  return vec4LeftparenthesisequalLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  return vec4LeftparenthesisgreaterThanEqualLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  return vec4LeftparenthesisgreaterThanLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  return vec4LeftparenthesislessThanEqualLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  return vec4LeftparenthesislessThanLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  return vec4LeftparenthesisnotEqualLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  vec4 aLessThanZero Equalssign vec4LeftparenthesislessThanLeftparenthesisaComma vec4Leftparenthesis0DotRightparenthesisRightparenthesisRightparenthesisSemicolonLinefeed  return LeftparenthesisaLessThanZero Asterisk Leftparenthesisb Asterisk aRightparenthesisRightparenthesis Plussign LeftparenthesisLeftparenthesisvec4Leftparenthesis1Dot0Rightparenthesis - aLessThanZeroRightparenthesis Asterisk aRightparenthesisSemicolonLinefeed`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.`Linefeed  vec4 bGTEZero Equalssign vec4LeftparenthesisgreaterThanEqualLeftparenthesisbComma vec4Leftparenthesis0DotRightparenthesisRightparenthesisRightparenthesisSemicolonLinefeed  return LeftparenthesisbGTEZero Asterisk aRightparenthesis Plussign LeftparenthesisLeftparenthesisvec4Leftparenthesis1Dot0Rightparenthesis - bGTEZeroRightparenthesis Asterisk Leftparenthesisa Asterisk Leftparenthesisb Plussign vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesisRightparenthesisSemi`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,21 +26,21 @@ object binaryopPackedGpuMod extends js.Object {
   }
   
   val ATAN2: String = js.native
-  val DIV: `Linefeed  SlashSlash vec4 one Equalssign vec4LeftparenthesisequalLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed  SlashSlash return one Plussign Leftparenthesisvec4Leftparenthesis1Dot0Rightparenthesis - oneRightparenthesis Asterisk a Slash bSemicolonLinefeed  vec4 result Equalssign a Slash bSemicolonLinefeed  ifLeftparenthesisaDotx EqualssignEqualssign bDotxRightparenthesis LeftcurlybracketLinefeed    resultDotx Equalssign 1DotSemicolonLinefeed  RightcurlybracketLinefeed` = js.native
-  val ELU_DER: `Linefeed  vec4 bGTEZero Equalssign vec4LeftparenthesisgreaterThanEqualLeftparenthesisbComma vec4Leftparenthesis0DotRightparenthesisRightparenthesisRightparenthesisSemicolonLinefeed  return LeftparenthesisbGTEZero Asterisk aRightparenthesis Plussign LeftparenthesisLeftparenthesisvec4Leftparenthesis1Dot0Rightparenthesis - bGTEZeroRightparenthesis Asterisk Leftparenthesisa Asterisk Leftparenthesisb Plussign vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesisRightparenthesisSemi` = js.native
-  val EQUAL: `Linefeed  return vec4LeftparenthesisequalLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed` = js.native
-  val GREATER: `Linefeed  return vec4LeftparenthesisgreaterThanLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed` = js.native
-  val GREATER_EQUAL: `Linefeed  return vec4LeftparenthesisgreaterThanEqualLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed` = js.native
-  val INT_DIV: `Linefeed  ivec4 ia Equalssign roundLeftparenthesisaRightparenthesisSemicolonLinefeed  ivec4 ib Equalssign roundLeftparenthesisbRightparenthesisSemicolonLinefeed  bvec4 cond Equalssign notEqualLeftparenthesisibComma ivec4Leftparenthesis0RightparenthesisRightparenthesisSemicolonLinefeed  ivec4 result Equalssign ivec4Leftparenthesis0RightparenthesisSemicolonLinefeed  vec4 s Equalssign signLeftparenthesisaRightparenthesis Asterisk signLeftparenthesisbRightparenthesisSemicolonLinefeedLinefeed  SlashS` = js.native
-  val LESS: `Linefeed  return vec4LeftparenthesislessThanLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed` = js.native
-  val LESS_EQUAL: `Linefeed  return vec4LeftparenthesislessThanEqualLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed` = js.native
-  val LOGICAL_AND: `Linefeed  return vec4LeftparenthesisLinefeed    vec4LeftparenthesisgreaterThanEqualLeftparenthesisaComma vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesis AsteriskLinefeed    vec4LeftparenthesisgreaterThanEqualLeftparenthesisbComma vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesisRightparenthesisSemicolonLinefeed` = js.native
-  val LOGICAL_OR: `Linefeed  return minLeftparenthesisLinefeed    vec4LeftparenthesisgreaterThanEqualLeftparenthesisaComma vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesis PlussignLinefeed    vec4LeftparenthesisgreaterThanEqualLeftparenthesisbComma vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisRightparenthesisCommaLinefeed    vec4Leftparenthesis1Dot0RightparenthesisRightparenthesisSemicolonLinefeed` = js.native
+  val DIV: /* "\n  // vec4 one = vec4(equal(a, b));\n  // return one + (vec4(1.0) - one) * a / b;\n  vec4 result = a / b;\n  if(a.x == b.x) {\n    result.x = 1.;\n  }\n  if(a.y == b.y) {\n    result.y = 1.;\n  }\n  if(a.z == b.z) {\n    result.z = 1.;\n  }\n  if(a.w == b.w) {\n    result.w = 1.;\n  }\n\n  return result;\n" */ String = js.native
+  val ELU_DER: /* "\n  vec4 bGTEZero = vec4(greaterThanEqual(b, vec4(0.)));\n  return (bGTEZero * a) + ((vec4(1.0) - bGTEZero) * (a * (b + vec4(1.0))));\n" */ String = js.native
+  val EQUAL: /* "\n  return vec4(equal(a, b));\n" */ String = js.native
+  val GREATER: /* "\n  return vec4(greaterThan(a, b));\n" */ String = js.native
+  val GREATER_EQUAL: /* "\n  return vec4(greaterThanEqual(a, b));\n" */ String = js.native
+  val INT_DIV: /* "\n  ivec4 ia = round(a);\n  ivec4 ib = round(b);\n  bvec4 cond = notEqual(ib, ivec4(0));\n  ivec4 result = ivec4(0);\n  vec4 s = sign(a) * sign(b);\n\n  // Windows (D3D) wants guaranteed non-zero int division at compile-time.\n  if (cond[0]) {\n    result[0] = idiv(ia[0], ib[0], s[0]);\n  }\n  if (cond[1]) {\n    result[1] = idiv(ia[1], ib[1], s[1]);\n  }\n  if (cond[2]) {\n    result[2] = idiv(ia[2], ib[2], s[2]);\n  }\n  if (cond[3]) {\n    result[3] = idiv(ia[3], ib[3], s[3]);\n  }\n  return vec4(result);\n" */ String = js.native
+  val LESS: /* "\n  return vec4(lessThan(a, b));\n" */ String = js.native
+  val LESS_EQUAL: /* "\n  return vec4(lessThanEqual(a, b));\n" */ String = js.native
+  val LOGICAL_AND: /* "\n  return vec4(\n    vec4(greaterThanEqual(a, vec4(1.0))) *\n    vec4(greaterThanEqual(b, vec4(1.0))));\n" */ String = js.native
+  val LOGICAL_OR: /* "\n  return min(\n    vec4(greaterThanEqual(a, vec4(1.0))) +\n    vec4(greaterThanEqual(b, vec4(1.0))),\n    vec4(1.0));\n" */ String = js.native
   val MAX: String = js.native
   val MIN: String = js.native
   val MOD: String = js.native
-  val NOT_EQUAL: `Linefeed  return vec4LeftparenthesisnotEqualLeftparenthesisaComma bRightparenthesisRightparenthesisSemicolonLinefeed` = js.native
+  val NOT_EQUAL: /* "\n  return vec4(notEqual(a, b));\n" */ String = js.native
   val POW: String = js.native
-  val PRELU: `Linefeed  vec4 aLessThanZero Equalssign vec4LeftparenthesislessThanLeftparenthesisaComma vec4Leftparenthesis0DotRightparenthesisRightparenthesisRightparenthesisSemicolonLinefeed  return LeftparenthesisaLessThanZero Asterisk Leftparenthesisb Asterisk aRightparenthesisRightparenthesis Plussign LeftparenthesisLeftparenthesisvec4Leftparenthesis1Dot0Rightparenthesis - aLessThanZeroRightparenthesis Asterisk aRightparenthesisSemicolonLinefeed` = js.native
+  val PRELU: /* "\n  vec4 aLessThanZero = vec4(lessThan(a, vec4(0.)));\n  return (aLessThanZero * (b * a)) + ((vec4(1.0) - aLessThanZero) * a);\n" */ String = js.native
 }
 

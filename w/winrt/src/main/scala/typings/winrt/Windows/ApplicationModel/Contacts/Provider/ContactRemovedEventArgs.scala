@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs")
-@js.native
-class ContactRemovedEventArgs () extends IContactRemovedEventArgs {
-  /* CompleteClass */
-  override var id: String = js.native
+trait ContactRemovedEventArgs extends IContactRemovedEventArgs
+
+object ContactRemovedEventArgs {
+  @scala.inline
+  def apply(id: String): ContactRemovedEventArgs = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactRemovedEventArgs]
+  }
 }
 

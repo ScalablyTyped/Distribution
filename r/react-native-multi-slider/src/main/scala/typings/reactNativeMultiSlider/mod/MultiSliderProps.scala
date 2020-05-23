@@ -2,7 +2,7 @@ package typings.reactNativeMultiSlider.mod
 
 import typings.react.mod.ComponentType
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeMultiSlider.AnonBorderRadius
+import typings.reactNativeMultiSlider.anon.BorderRadius
 import typings.reactNativeMultiSlider.reactNativeMultiSliderStrings.horizontal
 import typings.reactNativeMultiSlider.reactNativeMultiSliderStrings.vertical
 import scala.scalajs.js
@@ -93,7 +93,7 @@ trait MultiSliderProps extends js.Object {
     * Slip displacement If finger leaves the marker measures distance before responder cuts out and changes are no
     * longer registered, if not given marker will be active until pressed released.
     */
-  var touchDimensions: js.UndefOr[AnonBorderRadius] = js.undefined
+  var touchDimensions: js.UndefOr[BorderRadius] = js.undefined
   /**
     * Customise the track
     *
@@ -121,18 +121,18 @@ object MultiSliderProps {
     containerStyle: ViewStyle = null,
     customMarker: ComponentType[MarkerProps] = null,
     markerStyle: ViewStyle = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     onValuesChange: /* change */ js.Array[Double] => Unit = null,
     onValuesChangeFinish: /* change */ js.Array[Double] => Unit = null,
     onValuesChangeStart: () => Unit = null,
     optionsArray: js.Array[Double] = null,
     pressedMarkerStyle: ViewStyle = null,
     selectedStyle: ViewStyle = null,
-    sliderLength: Int | Double = null,
+    sliderLength: js.UndefOr[Double] = js.undefined,
     sliderOrientation: horizontal | vertical = null,
-    step: Int | Double = null,
-    touchDimensions: AnonBorderRadius = null,
+    step: js.UndefOr[Double] = js.undefined,
+    touchDimensions: BorderRadius = null,
     trackStyle: ViewStyle = null,
     unselectedStyle: ViewStyle = null,
     values: js.Array[Double] = null
@@ -141,17 +141,17 @@ object MultiSliderProps {
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (customMarker != null) __obj.updateDynamic("customMarker")(customMarker.asInstanceOf[js.Any])
     if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(js.Any.fromFunction1(onValuesChange))
     if (onValuesChangeFinish != null) __obj.updateDynamic("onValuesChangeFinish")(js.Any.fromFunction1(onValuesChangeFinish))
     if (onValuesChangeStart != null) __obj.updateDynamic("onValuesChangeStart")(js.Any.fromFunction0(onValuesChangeStart))
     if (optionsArray != null) __obj.updateDynamic("optionsArray")(optionsArray.asInstanceOf[js.Any])
     if (pressedMarkerStyle != null) __obj.updateDynamic("pressedMarkerStyle")(pressedMarkerStyle.asInstanceOf[js.Any])
     if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle.asInstanceOf[js.Any])
-    if (sliderLength != null) __obj.updateDynamic("sliderLength")(sliderLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderLength)) __obj.updateDynamic("sliderLength")(sliderLength.get.asInstanceOf[js.Any])
     if (sliderOrientation != null) __obj.updateDynamic("sliderOrientation")(sliderOrientation.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (touchDimensions != null) __obj.updateDynamic("touchDimensions")(touchDimensions.asInstanceOf[js.Any])
     if (trackStyle != null) __obj.updateDynamic("trackStyle")(trackStyle.asInstanceOf[js.Any])
     if (unselectedStyle != null) __obj.updateDynamic("unselectedStyle")(unselectedStyle.asInstanceOf[js.Any])

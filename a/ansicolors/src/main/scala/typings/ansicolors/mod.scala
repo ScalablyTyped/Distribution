@@ -1,6 +1,6 @@
 package typings.ansicolors
 
-import typings.std.String
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  trait Colors extends String {
+  trait Colors extends /* key */ StringDictionary[Colors] {
     var bgBlack: this.type = js.native
     var bgBlue: this.type = js.native
     var bgBrightBlack: this.type = js.native
@@ -45,7 +45,7 @@ object mod extends js.Object {
     var red: this.type = js.native
     var white: this.type = js.native
     var yellow: this.type = js.native
-    def apply(value: java.lang.String): java.lang.String = js.native
+    def apply(value: String): String = js.native
   }
   
   val default: Colors = js.native

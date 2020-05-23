@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Sockets.MessageWebSocketInformation")
-@js.native
-class MessageWebSocketInformation () extends IWebSocketInformation {
-  /* CompleteClass */
-  override var bandwidthStatistics: BandwidthStatistics = js.native
-  /* CompleteClass */
-  override var localAddress: HostName = js.native
-  /* CompleteClass */
-  override var protocol: String = js.native
+trait MessageWebSocketInformation extends IWebSocketInformation
+
+object MessageWebSocketInformation {
+  @scala.inline
+  def apply(bandwidthStatistics: BandwidthStatistics, localAddress: HostName, protocol: String): MessageWebSocketInformation = {
+    val __obj = js.Dynamic.literal(bandwidthStatistics = bandwidthStatistics.asInstanceOf[js.Any], localAddress = localAddress.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MessageWebSocketInformation]
+  }
 }
 

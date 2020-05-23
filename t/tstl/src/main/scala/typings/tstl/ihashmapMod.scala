@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/base/container/IHashMap", JSImport.Namespace)
 @js.native
 object ihashmapMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
   - typings.tstl.ipushMod.IPush because Already inherited

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TreatmentResource extends js.Object {
   /**
+    * The delivery configuration settings for sending the treatment through a custom channel. This object is required if the MessageConfiguration object for the treatment specifies a CustomMessage object.
+    */
+  var CustomDeliveryConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.CustomDeliveryConfiguration] = js.native
+  /**
     * The unique identifier for the treatment.
     */
   var Id: string = js.native
@@ -35,7 +39,7 @@ trait TreatmentResource extends js.Object {
     */
   var TreatmentDescription: js.UndefOr[string] = js.native
   /**
-    * The custom name of the treatment. A treatment is a variation of a campaign that's used for A/B testing of a campaign.
+    * The custom name of the treatment.
     */
   var TreatmentName: js.UndefOr[string] = js.native
 }
@@ -45,6 +49,7 @@ object TreatmentResource {
   def apply(
     Id: string,
     SizePercent: integer,
+    CustomDeliveryConfiguration: CustomDeliveryConfiguration = null,
     MessageConfiguration: MessageConfiguration = null,
     Schedule: Schedule = null,
     State: CampaignState = null,
@@ -53,6 +58,7 @@ object TreatmentResource {
     TreatmentName: string = null
   ): TreatmentResource = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], SizePercent = SizePercent.asInstanceOf[js.Any])
+    if (CustomDeliveryConfiguration != null) __obj.updateDynamic("CustomDeliveryConfiguration")(CustomDeliveryConfiguration.asInstanceOf[js.Any])
     if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

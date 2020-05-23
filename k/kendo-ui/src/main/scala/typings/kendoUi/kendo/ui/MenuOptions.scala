@@ -43,7 +43,7 @@ object MenuOptions {
     dataUrlField: String = null,
     deactivate: /* e */ MenuDeactivateEvent => Unit = null,
     direction: String = null,
-    hoverDelay: Int | Double = null,
+    hoverDelay: js.UndefOr[Double] = js.undefined,
     name: String = null,
     open: /* e */ MenuOpenEvent => Unit = null,
     openOnClick: Boolean | MenuOpenOnClick = null,
@@ -56,7 +56,7 @@ object MenuOptions {
     if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction1(activate))
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.get.asInstanceOf[js.Any])
     if (dataContentField != null) __obj.updateDynamic("dataContentField")(dataContentField.asInstanceOf[js.Any])
     if (dataImageUrlField != null) __obj.updateDynamic("dataImageUrlField")(dataImageUrlField.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
@@ -65,7 +65,7 @@ object MenuOptions {
     if (dataUrlField != null) __obj.updateDynamic("dataUrlField")(dataUrlField.asInstanceOf[js.Any])
     if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction1(deactivate))
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (hoverDelay != null) __obj.updateDynamic("hoverDelay")(hoverDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverDelay)) __obj.updateDynamic("hoverDelay")(hoverDelay.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (openOnClick != null) __obj.updateDynamic("openOnClick")(openOnClick.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.openfin.mod.fin
 
 import org.scalablytyped.runtime.TopLevel
-import typings.openfin.platformMod.default
+import typings.openfin.platformPlatformMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

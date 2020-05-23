@@ -1,7 +1,7 @@
 package typings.rbx.otherMod
 
 import typings.propTypes.mod.ValidationMap
-import typings.rbx.PartialVariablesDefinitio
+import typings.rbx.anon.PartialVariablesDefinitio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -23,13 +23,13 @@ object PostingVideoOptions {
     video: Buffer,
     caption: String = null,
     location: PostingLocation = null,
-    transcodeDelay: Int | Double = null,
+    transcodeDelay: js.UndefOr[Double] = js.undefined,
     usertags: PostingUsertags = null
   ): PostingVideoOptions = {
     val __obj = js.Dynamic.literal(coverImage = coverImage.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (transcodeDelay != null) __obj.updateDynamic("transcodeDelay")(transcodeDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(transcodeDelay)) __obj.updateDynamic("transcodeDelay")(transcodeDelay.get.asInstanceOf[js.Any])
     if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostingVideoOptions]
   }

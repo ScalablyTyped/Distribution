@@ -18,7 +18,6 @@ object Resolver {
   @scala.inline
   def apply(updateResolution: () => Unit): Resolver = {
     val __obj = js.Dynamic.literal(updateResolution = js.Any.fromFunction0(updateResolution))
-  
     __obj.asInstanceOf[Resolver]
   }
 }

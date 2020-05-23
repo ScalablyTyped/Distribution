@@ -1,12 +1,12 @@
 package typings.koaDocs.mod.koaDocs
 
-import typings.koaDocs.AnonDescription
+import typings.koaDocs.anon.Description
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var groups: js.Array[AnonDescription]
+  var groups: js.Array[Description]
   var routeHandlers: js.UndefOr[String] = js.undefined
   var theme: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -16,7 +16,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    groups: js.Array[AnonDescription],
+    groups: js.Array[Description],
     version: String,
     routeHandlers: String = null,
     theme: String = null,

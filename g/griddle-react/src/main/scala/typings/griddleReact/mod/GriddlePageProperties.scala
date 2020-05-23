@@ -12,11 +12,15 @@ trait GriddlePageProperties extends js.Object {
 
 object GriddlePageProperties {
   @scala.inline
-  def apply(currentPage: Int | Double = null, pageSize: Int | Double = null, recordCount: Int | Double = null): GriddlePageProperties = {
+  def apply(
+    currentPage: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
+    recordCount: js.UndefOr[Double] = js.undefined
+  ): GriddlePageProperties = {
     val __obj = js.Dynamic.literal()
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (recordCount != null) __obj.updateDynamic("recordCount")(recordCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recordCount)) __obj.updateDynamic("recordCount")(recordCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddlePageProperties]
   }
 }

@@ -20,7 +20,7 @@ trait NFSFileShareInfo extends js.Object {
     */
   var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. 
+    * True to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. 
     */
   var KMSEncrypted: js.UndefOr[scala.Boolean] = js.native
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
@@ -53,15 +53,15 @@ object NFSFileShareInfo {
     FileShareId: FileShareId = null,
     FileShareStatus: FileShareStatus = null,
     GatewayARN: GatewayARN = null,
-    GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined,
     KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
     KMSKey: KMSKey = null,
     LocationARN: LocationARN = null,
     NFSFileShareDefaults: NFSFileShareDefaults = null,
     ObjectACL: ObjectACL = null,
     Path: Path = null,
-    ReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    RequesterPays: js.UndefOr[scala.Boolean] = js.undefined,
+    ReadOnly: js.UndefOr[Boolean] = js.undefined,
+    RequesterPays: js.UndefOr[Boolean] = js.undefined,
     Role: Role = null,
     Squash: Squash = null,
     Tags: Tags = null
@@ -73,15 +73,15 @@ object NFSFileShareInfo {
     if (FileShareId != null) __obj.updateDynamic("FileShareId")(FileShareId.asInstanceOf[js.Any])
     if (FileShareStatus != null) __obj.updateDynamic("FileShareStatus")(FileShareStatus.asInstanceOf[js.Any])
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(GuessMIMETypeEnabled)) __obj.updateDynamic("GuessMIMETypeEnabled")(GuessMIMETypeEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(GuessMIMETypeEnabled)) __obj.updateDynamic("GuessMIMETypeEnabled")(GuessMIMETypeEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.get.asInstanceOf[js.Any])
     if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
     if (LocationARN != null) __obj.updateDynamic("LocationARN")(LocationARN.asInstanceOf[js.Any])
     if (NFSFileShareDefaults != null) __obj.updateDynamic("NFSFileShareDefaults")(NFSFileShareDefaults.asInstanceOf[js.Any])
     if (ObjectACL != null) __obj.updateDynamic("ObjectACL")(ObjectACL.asInstanceOf[js.Any])
     if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays.get.asInstanceOf[js.Any])
     if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
     if (Squash != null) __obj.updateDynamic("Squash")(Squash.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

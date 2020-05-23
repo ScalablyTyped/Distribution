@@ -13,12 +13,17 @@ trait RGBA extends js.Object {
 
 object RGBA {
   @scala.inline
-  def apply(alpha: Int | Double = null, b: Int | Double = null, g: Int | Double = null, r: Int | Double = null): RGBA = {
+  def apply(
+    alpha: js.UndefOr[Double] = js.undefined,
+    b: js.UndefOr[Double] = js.undefined,
+    g: js.UndefOr[Double] = js.undefined,
+    r: js.UndefOr[Double] = js.undefined
+  ): RGBA = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (g != null) __obj.updateDynamic("g")(g.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(b)) __obj.updateDynamic("b")(b.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(g)) __obj.updateDynamic("g")(g.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RGBA]
   }
 }

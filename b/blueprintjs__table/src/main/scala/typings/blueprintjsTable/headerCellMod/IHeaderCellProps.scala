@@ -3,7 +3,7 @@ package typings.blueprintjsTable.headerCellMod
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsTable.resizeHandleMod.ResizeHandle
 import typings.react.mod.CSSProperties
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ object IHeaderCellProps {
   @scala.inline
   def apply(
     className: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     isActive: js.UndefOr[Boolean] = js.undefined,
     loading: js.UndefOr[Boolean] = js.undefined,
     menuRenderer: /* index */ js.UndefOr[Double] => Element = null,
@@ -65,9 +65,9 @@ object IHeaderCellProps {
   ): IHeaderCellProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (menuRenderer != null) __obj.updateDynamic("menuRenderer")(js.Any.fromFunction1(menuRenderer))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (reorderHandle != null) __obj.updateDynamic("reorderHandle")(reorderHandle.asInstanceOf[js.Any])

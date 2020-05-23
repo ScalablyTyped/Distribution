@@ -40,11 +40,11 @@ object ProductionVariant {
     ModelName: ModelName,
     VariantName: VariantName,
     AcceleratorType: ProductionVariantAcceleratorType = null,
-    InitialVariantWeight: Int | Double = null
+    InitialVariantWeight: js.UndefOr[VariantWeight] = js.undefined
   ): ProductionVariant = {
     val __obj = js.Dynamic.literal(InitialInstanceCount = InitialInstanceCount.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any], ModelName = ModelName.asInstanceOf[js.Any], VariantName = VariantName.asInstanceOf[js.Any])
     if (AcceleratorType != null) __obj.updateDynamic("AcceleratorType")(AcceleratorType.asInstanceOf[js.Any])
-    if (InitialVariantWeight != null) __obj.updateDynamic("InitialVariantWeight")(InitialVariantWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(InitialVariantWeight)) __obj.updateDynamic("InitialVariantWeight")(InitialVariantWeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductionVariant]
   }
 }

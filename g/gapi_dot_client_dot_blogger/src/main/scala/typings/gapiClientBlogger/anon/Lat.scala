@@ -1,0 +1,34 @@
+package typings.gapiClientBlogger.anon
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Lat extends js.Object {
+  /** Location's latitude. */
+  var lat: js.UndefOr[Double] = js.undefined
+  /** Location's longitude. */
+  var lng: js.UndefOr[Double] = js.undefined
+  /** Location name. */
+  var name: js.UndefOr[String] = js.undefined
+  /** Location's viewport span. Can be used when rendering a map preview. */
+  var span: js.UndefOr[String] = js.undefined
+}
+
+object Lat {
+  @scala.inline
+  def apply(
+    lat: js.UndefOr[Double] = js.undefined,
+    lng: js.UndefOr[Double] = js.undefined,
+    name: String = null,
+    span: String = null
+  ): Lat = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(lat)) __obj.updateDynamic("lat")(lat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lng)) __obj.updateDynamic("lng")(lng.get.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Lat]
+  }
+}
+

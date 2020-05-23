@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Graphics.Printing
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object PrintTaskCompletion extends js.Object {
   
   @js.native
   sealed trait submitted extends PrintTaskCompletion
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintTaskCompletion with Double] = js.native
-  /* 0 */ @js.native
-  object abandoned extends TopLevel[abandoned with Double]
-  
-  /* 1 */ @js.native
-  object canceled extends TopLevel[canceled with Double]
-  
-  /* 2 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 3 */ @js.native
-  object submitted extends TopLevel[submitted with Double]
   
 }
 

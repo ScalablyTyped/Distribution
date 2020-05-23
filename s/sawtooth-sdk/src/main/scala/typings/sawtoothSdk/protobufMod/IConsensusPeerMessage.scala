@@ -19,16 +19,16 @@ trait IConsensusPeerMessage extends js.Object {
 object IConsensusPeerMessage {
   @scala.inline
   def apply(
-    content: Uint8Array = null,
-    messageType: String = null,
-    name: String = null,
-    version: String = null
+    content: js.UndefOr[Null | Uint8Array] = js.undefined,
+    messageType: js.UndefOr[Null | String] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    version: js.UndefOr[Null | String] = js.undefined
   ): IConsensusPeerMessage = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageType)) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusPeerMessage]
   }
 }

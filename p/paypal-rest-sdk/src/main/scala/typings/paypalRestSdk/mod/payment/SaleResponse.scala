@@ -25,7 +25,7 @@ object SaleResponse {
     id: String,
     billing_agreement_id: String = null,
     clearing_time: String = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     create_time: String = null,
     exchange_rate: String = null,
     fmf_details: FraudManagementFiltersDetails = null,
@@ -41,14 +41,14 @@ object SaleResponse {
     reason_code: String = null,
     receipt_id: String = null,
     state: String = null,
-    total_count: Int | Double = null,
+    total_count: js.UndefOr[Double] = js.undefined,
     transaction_fee: Currency = null,
     update_time: String = null
   ): SaleResponse = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], httpStatusCode = httpStatusCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     if (billing_agreement_id != null) __obj.updateDynamic("billing_agreement_id")(billing_agreement_id.asInstanceOf[js.Any])
     if (clearing_time != null) __obj.updateDynamic("clearing_time")(clearing_time.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
     if (exchange_rate != null) __obj.updateDynamic("exchange_rate")(exchange_rate.asInstanceOf[js.Any])
     if (fmf_details != null) __obj.updateDynamic("fmf_details")(fmf_details.asInstanceOf[js.Any])
@@ -64,7 +64,7 @@ object SaleResponse {
     if (reason_code != null) __obj.updateDynamic("reason_code")(reason_code.asInstanceOf[js.Any])
     if (receipt_id != null) __obj.updateDynamic("receipt_id")(receipt_id.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_count)) __obj.updateDynamic("total_count")(total_count.get.asInstanceOf[js.Any])
     if (transaction_fee != null) __obj.updateDynamic("transaction_fee")(transaction_fee.asInstanceOf[js.Any])
     if (update_time != null) __obj.updateDynamic("update_time")(update_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaleResponse]

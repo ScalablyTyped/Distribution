@@ -29,15 +29,15 @@ object SearchBoxMixinOptions {
     searchEnabled: js.UndefOr[Boolean] = js.undefined,
     searchExpr: String | js.Function | (js.Array[String | js.Function]) = null,
     searchMode: contains | startswith | equals = null,
-    searchTimeout: Int | Double = null,
+    searchTimeout: js.UndefOr[Double] = js.undefined,
     searchValue: String = null
   ): SearchBoxMixinOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (searchEditorOptions != null) __obj.updateDynamic("searchEditorOptions")(searchEditorOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchEnabled)) __obj.updateDynamic("searchEnabled")(searchEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchEnabled)) __obj.updateDynamic("searchEnabled")(searchEnabled.get.asInstanceOf[js.Any])
     if (searchExpr != null) __obj.updateDynamic("searchExpr")(searchExpr.asInstanceOf[js.Any])
     if (searchMode != null) __obj.updateDynamic("searchMode")(searchMode.asInstanceOf[js.Any])
-    if (searchTimeout != null) __obj.updateDynamic("searchTimeout")(searchTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchTimeout)) __obj.updateDynamic("searchTimeout")(searchTimeout.get.asInstanceOf[js.Any])
     if (searchValue != null) __obj.updateDynamic("searchValue")(searchValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBoxMixinOptions[T]]
   }

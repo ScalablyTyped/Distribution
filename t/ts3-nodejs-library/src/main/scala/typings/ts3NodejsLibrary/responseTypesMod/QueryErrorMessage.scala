@@ -13,10 +13,15 @@ trait QueryErrorMessage extends js.Object {
 
 object QueryErrorMessage {
   @scala.inline
-  def apply(id: Double, msg: String, extra_msg: String = null, failed_permid: Int | Double = null): QueryErrorMessage = {
+  def apply(
+    id: Double,
+    msg: String,
+    extra_msg: String = null,
+    failed_permid: js.UndefOr[Double] = js.undefined
+  ): QueryErrorMessage = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
     if (extra_msg != null) __obj.updateDynamic("extra_msg")(extra_msg.asInstanceOf[js.Any])
-    if (failed_permid != null) __obj.updateDynamic("failed_permid")(failed_permid.asInstanceOf[js.Any])
+    if (!js.isUndefined(failed_permid)) __obj.updateDynamic("failed_permid")(failed_permid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryErrorMessage]
   }
 }

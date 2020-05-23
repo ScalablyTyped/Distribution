@@ -14,18 +14,18 @@ trait UseTableColumnOptions[D /* <: js.Object */] extends js.Object {
 
 object UseTableColumnOptions {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     Header: Renderer[HeaderProps[D]] = null,
     id: IdType[D] = null,
-    maxWidth: Int | Double = null,
-    minWidth: Int | Double = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     width: Double | String = null
   ): UseTableColumnOptions[D] = {
     val __obj = js.Dynamic.literal()
     if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseTableColumnOptions[D]]
   }

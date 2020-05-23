@@ -73,7 +73,7 @@ object ReimportApiResponse {
     CorsConfiguration: Cors = null,
     CreatedDate: timestampIso8601 = null,
     Description: StringWithLengthBetween0And1024 = null,
-    DisableSchemaValidation: js.UndefOr[Boolean] = js.undefined,
+    DisableSchemaValidation: js.UndefOr[boolean] = js.undefined,
     ImportInfo: listOfString = null,
     Name: StringWithLengthBetween1And128 = null,
     ProtocolType: ProtocolType = null,
@@ -89,7 +89,7 @@ object ReimportApiResponse {
     if (CorsConfiguration != null) __obj.updateDynamic("CorsConfiguration")(CorsConfiguration.asInstanceOf[js.Any])
     if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableSchemaValidation)) __obj.updateDynamic("DisableSchemaValidation")(DisableSchemaValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableSchemaValidation)) __obj.updateDynamic("DisableSchemaValidation")(DisableSchemaValidation.get.asInstanceOf[js.Any])
     if (ImportInfo != null) __obj.updateDynamic("ImportInfo")(ImportInfo.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (ProtocolType != null) __obj.updateDynamic("ProtocolType")(ProtocolType.asInstanceOf[js.Any])

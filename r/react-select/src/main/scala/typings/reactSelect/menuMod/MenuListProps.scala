@@ -16,9 +16,8 @@ trait MenuListProps extends js.Object {
 object MenuListProps {
   @scala.inline
   def apply(children: ReactNode = null, innerRef: InnerRef = null): MenuListProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(innerRef = innerRef.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuListProps]
   }
 }

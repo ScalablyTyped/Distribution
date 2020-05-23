@@ -26,16 +26,16 @@ trait ICreated extends js.Object {
 object ICreated {
   @scala.inline
   def apply(
-    gt: Int | Double = null,
-    gte: Int | Double = null,
-    lt: Int | Double = null,
-    lte: Int | Double = null
+    gt: js.UndefOr[Double] = js.undefined,
+    gte: js.UndefOr[Double] = js.undefined,
+    lt: js.UndefOr[Double] = js.undefined,
+    lte: js.UndefOr[Double] = js.undefined
   ): ICreated = {
     val __obj = js.Dynamic.literal()
-    if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
-    if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
-    if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
-    if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
+    if (!js.isUndefined(gt)) __obj.updateDynamic("gt")(gt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gte)) __obj.updateDynamic("gte")(gte.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lt)) __obj.updateDynamic("lt")(lt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lte)) __obj.updateDynamic("lte")(lte.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreated]
   }
 }

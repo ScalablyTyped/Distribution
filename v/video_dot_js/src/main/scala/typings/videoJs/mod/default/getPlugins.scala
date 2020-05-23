@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
   *         If provided, should be an array of plugin names. Defaults to _all_
   *         plugin names.
   *
-  * @return	An object containing plugin(s) associated with their name(s) or
+  * @return    An object containing plugin(s) associated with their name(s) or
   *         `undefined` if no matching plugins exist).
   */
 @JSImport("video.js", "getPlugins")
 @js.native
 object getPlugins
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugins */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ js.Any
     ]
 

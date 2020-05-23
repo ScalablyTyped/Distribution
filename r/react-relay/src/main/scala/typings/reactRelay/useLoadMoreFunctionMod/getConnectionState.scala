@@ -1,6 +1,6 @@
 package typings.reactRelay.useLoadMoreFunctionMod
 
-import typings.reactRelay.AnonCursor
+import typings.reactRelay.anon.Cursor
 import typings.relayRuntime.readerNodeMod.ReaderFragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ object getConnectionState extends js.Object {
     fragmentNode: ReaderFragment,
     fragmentData: js.Any,
     connectionPathInFragmentData: js.Array[String | Double]
-  ): AnonCursor = js.native
+  ): Cursor = js.native
 }
 

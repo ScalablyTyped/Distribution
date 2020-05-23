@@ -1,5 +1,6 @@
 package typings.awsSdk
 
+import typings.awsSdk.anon.TypeofManagedUpload
 import typings.awsSdk.managedUploadMod.ManagedUpload
 import typings.awsSdk.managedUploadMod.ManagedUpload.ManagedUploadOptions
 import typings.awsSdk.managedUploadMod.ManagedUpload.SendData

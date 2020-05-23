@@ -1,12 +1,12 @@
 package typings.reactBootstrapTableNext.mod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod._Global_.JSX.Element
-import typings.reactBootstrapTableNext.AnonDataSize
-import typings.reactBootstrapTableNext.AnonOptionsPaginationOptions
-import typings.reactBootstrapTableNext.AnonOrder
-import typings.reactBootstrapTableNext.AnonSortCaret
-import typings.reactBootstrapTableNext.Partialpaginationbooleanf
+import typings.react.mod.global.JSX.Element
+import typings.reactBootstrapTableNext.anon.DataSize
+import typings.reactBootstrapTableNext.anon.OptionsPaginationOptions
+import typings.reactBootstrapTableNext.anon.Order
+import typings.reactBootstrapTableNext.anon.Partialpaginationbooleanf
+import typings.reactBootstrapTableNext.anon.SortCaret
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait BootstrapTableProps[T /* <: js.Object */] extends js.Object {
     */
   var data: js.Array[_]
   var defaultSortDirection: js.UndefOr[SortOrder] = js.undefined
-  var defaultSorted: js.UndefOr[js.Array[AnonOrder]] = js.undefined
+  var defaultSorted: js.UndefOr[js.Array[Order]] = js.undefined
   var expandRow: js.UndefOr[ExpandRowProps[T]] = js.undefined
   var filter: js.UndefOr[js.Any] = js.undefined
   var filterPosition: js.UndefOr[FilterPosition] = js.undefined
@@ -46,13 +46,13 @@ trait BootstrapTableProps[T /* <: js.Object */] extends js.Object {
   /**
     * This callback function will be called only when data size change by search/filter etc.
     */
-  var onDataSizeChange: js.UndefOr[js.Function1[/* props */ AnonDataSize, Unit]] = js.undefined
+  var onDataSizeChange: js.UndefOr[js.Function1[/* props */ DataSize, Unit]] = js.undefined
   var onExternalFilter: js.UndefOr[js.Any] = js.undefined
   var onFilter: js.UndefOr[js.Any] = js.undefined
   var onSort: js.UndefOr[js.Any] = js.undefined
   var onTableChange: js.UndefOr[TableChangeHandler[T]] = js.undefined
   var overlay: js.UndefOr[js.Any] = js.undefined
-  var pagination: js.UndefOr[AnonOptionsPaginationOptions] = js.undefined
+  var pagination: js.UndefOr[OptionsPaginationOptions] = js.undefined
   var parentClassName: js.UndefOr[
     String | (js.Function3[/* isExpand */ Boolean, /* row */ T, /* rowIndex */ Double, String])
   ] = js.undefined
@@ -64,7 +64,7 @@ trait BootstrapTableProps[T /* <: js.Object */] extends js.Object {
   ] = js.undefined
   var search: js.UndefOr[SearchProps[T] | Boolean] = js.undefined
   var selectRow: js.UndefOr[SelectRowProps[T]] = js.undefined
-  var sort: js.UndefOr[AnonSortCaret] = js.undefined
+  var sort: js.UndefOr[SortCaret] = js.undefined
   var striped: js.UndefOr[Boolean] = js.undefined
   var tabIndexCell: js.UndefOr[Boolean] = js.undefined
   var wrapperClasses: js.UndefOr[String] = js.undefined
@@ -72,7 +72,7 @@ trait BootstrapTableProps[T /* <: js.Object */] extends js.Object {
 
 object BootstrapTableProps {
   @scala.inline
-  def apply[T /* <: js.Object */](
+  def apply[T](
     columns: js.Array[ColumnDescription[_, _]],
     data: js.Array[_],
     keyField: String,
@@ -84,7 +84,7 @@ object BootstrapTableProps {
     classes: String = null,
     condensed: js.UndefOr[Boolean] = js.undefined,
     defaultSortDirection: SortOrder = null,
-    defaultSorted: js.Array[AnonOrder] = null,
+    defaultSorted: js.Array[Order] = null,
     expandRow: ExpandRowProps[T] = null,
     filter: js.Any = null,
     filterPosition: FilterPosition = null,
@@ -95,13 +95,13 @@ object BootstrapTableProps {
     hover: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     noDataIndication: () => Element | String = null,
-    onDataSizeChange: /* props */ AnonDataSize => Unit = null,
+    onDataSizeChange: /* props */ DataSize => Unit = null,
     onExternalFilter: js.Any = null,
     onFilter: js.Any = null,
     onSort: js.Any = null,
     onTableChange: (/* type */ TableChangeType, /* newState */ TableChangeState[T]) => Unit = null,
     overlay: js.Any = null,
-    pagination: AnonOptionsPaginationOptions = null,
+    pagination: OptionsPaginationOptions = null,
     parentClassName: String | (js.Function3[/* isExpand */ Boolean, /* row */ T, /* rowIndex */ Double, String]) = null,
     remote: Boolean | Partialpaginationbooleanf = null,
     rowClasses: (js.Function2[/* row */ T, /* rowIndex */ Double, String]) | String = null,
@@ -109,19 +109,19 @@ object BootstrapTableProps {
     rowStyle: (js.Function2[/* row */ T, /* rowIndex */ Double, CSSProperties]) | CSSProperties = null,
     search: SearchProps[T] | Boolean = null,
     selectRow: SelectRowProps[T] = null,
-    sort: AnonSortCaret = null,
+    sort: SortCaret = null,
     striped: js.UndefOr[Boolean] = js.undefined,
     tabIndexCell: js.UndefOr[Boolean] = js.undefined,
     wrapperClasses: String = null
   ): BootstrapTableProps[T] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keyField = keyField.asInstanceOf[js.Any])
     if (bodyClasses != null) __obj.updateDynamic("bodyClasses")(bodyClasses.asInstanceOf[js.Any])
-    if (!js.isUndefined(bootstrap4)) __obj.updateDynamic("bootstrap4")(bootstrap4.asInstanceOf[js.Any])
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
+    if (!js.isUndefined(bootstrap4)) __obj.updateDynamic("bootstrap4")(bootstrap4.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (cellEdit != null) __obj.updateDynamic("cellEdit")(cellEdit.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(condensed)) __obj.updateDynamic("condensed")(condensed.asInstanceOf[js.Any])
+    if (!js.isUndefined(condensed)) __obj.updateDynamic("condensed")(condensed.get.asInstanceOf[js.Any])
     if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection.asInstanceOf[js.Any])
     if (defaultSorted != null) __obj.updateDynamic("defaultSorted")(defaultSorted.asInstanceOf[js.Any])
     if (expandRow != null) __obj.updateDynamic("expandRow")(expandRow.asInstanceOf[js.Any])
@@ -131,7 +131,7 @@ object BootstrapTableProps {
     if (footerClasses != null) __obj.updateDynamic("footerClasses")(footerClasses.asInstanceOf[js.Any])
     if (headerClasses != null) __obj.updateDynamic("headerClasses")(headerClasses.asInstanceOf[js.Any])
     if (headerWrapperClasses != null) __obj.updateDynamic("headerWrapperClasses")(headerWrapperClasses.asInstanceOf[js.Any])
-    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (noDataIndication != null) __obj.updateDynamic("noDataIndication")(js.Any.fromFunction0(noDataIndication))
     if (onDataSizeChange != null) __obj.updateDynamic("onDataSizeChange")(js.Any.fromFunction1(onDataSizeChange))
@@ -149,8 +149,8 @@ object BootstrapTableProps {
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (selectRow != null) __obj.updateDynamic("selectRow")(selectRow.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndexCell)) __obj.updateDynamic("tabIndexCell")(tabIndexCell.asInstanceOf[js.Any])
+    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndexCell)) __obj.updateDynamic("tabIndexCell")(tabIndexCell.get.asInstanceOf[js.Any])
     if (wrapperClasses != null) __obj.updateDynamic("wrapperClasses")(wrapperClasses.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapTableProps[T]]
   }

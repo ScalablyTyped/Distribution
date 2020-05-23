@@ -43,7 +43,7 @@ object LogConfig {
     use_sub_dir: `0` | `1` = null
   ): LogConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IS_ODP)) __obj.updateDynamic("IS_ODP")(IS_ODP.asInstanceOf[js.Any])
+    if (!js.isUndefined(IS_ODP)) __obj.updateDynamic("IS_ODP")(IS_ODP.get.asInstanceOf[js.Any])
     if (IS_OMP != null) __obj.updateDynamic("IS_OMP")(IS_OMP.asInstanceOf[js.Any])
     if (LogIdName != null) __obj.updateDynamic("LogIdName")(LogIdName.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])

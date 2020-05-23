@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonSubtype
+import typings.sequelize.anon.Subtype
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait DataTypeRange extends DataTypeAbstract {
     * Accepts subtype any of the ranges
     */
   def apply(): DataTypeRange = js.native
-  def apply(options: AnonSubtype): DataTypeRange = js.native
+  def apply(options: Subtype): DataTypeRange = js.native
   def apply(subtype: DataTypeAbstract): DataTypeRange = js.native
 }
 

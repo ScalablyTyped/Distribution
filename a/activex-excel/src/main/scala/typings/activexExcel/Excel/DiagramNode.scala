@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.DiagramNode")
 @js.native
-class DiagramNode protected () extends js.Object {
+trait DiagramNode extends js.Object {
   val Application: js.Any = js.native
   @JSName("Children")
   val Children_Original: DiagramNodeChildren = js.native

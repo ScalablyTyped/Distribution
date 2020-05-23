@@ -10,11 +10,15 @@ trait ComponentElement[P, T /* <: Component[P, ComponentState, _] */] extends Ra
 
 object ComponentElement {
   @scala.inline
-  def apply[P, T /* <: Component[P, ComponentState, _] */](props: P, `type`: ComponentClass[P, ComponentState], key: Key = null, ref: LegacyRef[T] = null): ComponentElement[P, T] = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+  def apply[P, T](
+    props: P,
+    `type`: ComponentClass[P, ComponentState],
+    key: Key = null,
+    ref: js.UndefOr[Null | LegacyRef[T]] = js.undefined
+  ): ComponentElement[P, T] = {
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentElement[P, T]]
   }
 }

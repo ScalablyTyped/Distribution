@@ -63,7 +63,7 @@ object BasicChartSpec {
     chartType: String = null,
     compareMode: String = null,
     domains: js.Array[BasicChartDomain] = null,
-    headerCount: Int | Double = null,
+    headerCount: js.UndefOr[Double] = js.undefined,
     interpolateNulls: js.UndefOr[Boolean] = js.undefined,
     legendPosition: String = null,
     lineSmoothing: js.UndefOr[Boolean] = js.undefined,
@@ -76,13 +76,13 @@ object BasicChartSpec {
     if (chartType != null) __obj.updateDynamic("chartType")(chartType.asInstanceOf[js.Any])
     if (compareMode != null) __obj.updateDynamic("compareMode")(compareMode.asInstanceOf[js.Any])
     if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
-    if (headerCount != null) __obj.updateDynamic("headerCount")(headerCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerCount)) __obj.updateDynamic("headerCount")(headerCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls.get.asInstanceOf[js.Any])
     if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineSmoothing)) __obj.updateDynamic("lineSmoothing")(lineSmoothing.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineSmoothing)) __obj.updateDynamic("lineSmoothing")(lineSmoothing.get.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (stackedType != null) __obj.updateDynamic("stackedType")(stackedType.asInstanceOf[js.Any])
-    if (!js.isUndefined(threeDimensional)) __obj.updateDynamic("threeDimensional")(threeDimensional.asInstanceOf[js.Any])
+    if (!js.isUndefined(threeDimensional)) __obj.updateDynamic("threeDimensional")(threeDimensional.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicChartSpec]
   }
 }

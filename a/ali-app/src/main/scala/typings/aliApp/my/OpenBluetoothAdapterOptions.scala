@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonIsSupportBLE
+import typings.aliApp.anon.IsSupportBLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +13,14 @@ trait OpenBluetoothAdapterOptions
   /** 不传的话默认是true，表示是否在离开当前页面时自动断开蓝牙(仅对android有效) */
   var autoClose: Boolean
   @JSName("success")
-  def success_MOpenBluetoothAdapterOptions(res: AnonIsSupportBLE): Unit
+  def success_MOpenBluetoothAdapterOptions(res: IsSupportBLE): Unit
 }
 
 object OpenBluetoothAdapterOptions {
   @scala.inline
   def apply(
     autoClose: Boolean,
-    success: AnonIsSupportBLE => Unit,
+    success: IsSupportBLE => Unit,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): OpenBluetoothAdapterOptions = {

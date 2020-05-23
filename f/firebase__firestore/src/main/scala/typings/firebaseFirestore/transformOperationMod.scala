@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/transform_operation", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/transform_operation", JSImport.Namespace)
 @js.native
 object transformOperationMod extends js.Object {
   @js.native

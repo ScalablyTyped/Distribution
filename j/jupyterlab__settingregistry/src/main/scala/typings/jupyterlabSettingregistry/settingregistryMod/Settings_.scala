@@ -1,6 +1,6 @@
 package typings.jupyterlabSettingregistry.settingregistryMod
 
-import typings.jupyterlabSettingregistry.AnonUser
+import typings.jupyterlabSettingregistry.anon.User
 import typings.jupyterlabSettingregistry.settingregistryMod.ISchemaValidator.IError
 import typings.jupyterlabSettingregistry.settingregistryMod.Settings.IOptions
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
@@ -121,7 +121,7 @@ class Settings_ protected () extends ISettings {
     * @returns The setting value.
     */
   /* CompleteClass */
-  override def get(key: String): AnonUser = js.native
+  override def get(key: String): User = js.native
   /**
     * Test whether the plugin settings manager disposed.
     */

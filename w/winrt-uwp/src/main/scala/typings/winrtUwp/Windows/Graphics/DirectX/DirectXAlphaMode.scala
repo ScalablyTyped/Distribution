@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.DirectX
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object DirectXAlphaMode extends js.Object {
   /** Indicates that the transparency behavior is not specified. */
   @js.native
   sealed trait unspecified extends DirectXAlphaMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DirectXAlphaMode with Double] = js.native
-  /* 3 */ @js.native
-  object ignore extends TopLevel[ignore with Double]
-  
-  /* 1 */ @js.native
-  object premultiplied extends TopLevel[premultiplied with Double]
-  
-  /* 2 */ @js.native
-  object straight extends TopLevel[straight with Double]
-  
-  /* 0 */ @js.native
-  object unspecified extends TopLevel[unspecified with Double]
   
 }
 

@@ -1,7 +1,6 @@
 package typings.rcMenu.menuItemMod
 
-import typings.rcMenu.AnonHover
-import typings.rcMenu.AnonKey
+import typings.rcMenu.anon.Hover
 import typings.rcMenu.interfaceMod.DestroyEventHandler
 import typings.rcMenu.interfaceMod.HoverEventHandler
 import typings.rcMenu.interfaceMod.LegacyFunctionRef
@@ -64,19 +63,19 @@ object MenuItemProps {
     direction: ltr | rtl = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     eventKey: Key = null,
-    inlineIndent: Int | Double = null,
+    inlineIndent: js.UndefOr[Double] = js.undefined,
     isSelected: js.UndefOr[Boolean] = js.undefined,
     itemIcon: RenderIconType = null,
-    level: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
     manualRef: /* node */ ReactInstance => Unit = null,
     mode: MenuMode = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     onClick: /* info */ MenuInfo => Unit = null,
     onDeselect: /* info */ SelectInfo => Unit = null,
     onDestroy: /* key */ Key => Unit = null,
-    onItemHover: /* info */ AnonHover => Unit = null,
-    onMouseEnter: /* info */ AnonKey => Unit = null,
-    onMouseLeave: /* info */ AnonKey => Unit = null,
+    onItemHover: /* info */ Hover => Unit = null,
+    onMouseEnter: /* info */ typings.rcMenu.anon.Key => Unit = null,
+    onMouseLeave: /* info */ typings.rcMenu.anon.Key => Unit = null,
     onSelect: /* info */ SelectInfo => Unit = null,
     parentMenu: ReactInstance = null,
     role: String = null,
@@ -86,20 +85,20 @@ object MenuItemProps {
     title: String = null
   ): MenuItemProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
-    if (inlineIndent != null) __obj.updateDynamic("inlineIndent")(inlineIndent.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineIndent)) __obj.updateDynamic("inlineIndent")(inlineIndent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
     if (itemIcon != null) __obj.updateDynamic("itemIcon")(itemIcon.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (manualRef != null) __obj.updateDynamic("manualRef")(js.Any.fromFunction1(manualRef))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1(onDeselect))
     if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction1(onDestroy))

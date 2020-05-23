@@ -14,16 +14,16 @@ trait MediaRecorderOptions extends js.Object {
 object MediaRecorderOptions {
   @scala.inline
   def apply(
-    audioBitsPerSecond: Int | Double = null,
-    bitsPerSecond: Int | Double = null,
+    audioBitsPerSecond: js.UndefOr[Double] = js.undefined,
+    bitsPerSecond: js.UndefOr[Double] = js.undefined,
     mimeType: String = null,
-    videoBitsPerSecond: Int | Double = null
+    videoBitsPerSecond: js.UndefOr[Double] = js.undefined
   ): MediaRecorderOptions = {
     val __obj = js.Dynamic.literal()
-    if (audioBitsPerSecond != null) __obj.updateDynamic("audioBitsPerSecond")(audioBitsPerSecond.asInstanceOf[js.Any])
-    if (bitsPerSecond != null) __obj.updateDynamic("bitsPerSecond")(bitsPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioBitsPerSecond)) __obj.updateDynamic("audioBitsPerSecond")(audioBitsPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitsPerSecond)) __obj.updateDynamic("bitsPerSecond")(bitsPerSecond.get.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (videoBitsPerSecond != null) __obj.updateDynamic("videoBitsPerSecond")(videoBitsPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoBitsPerSecond)) __obj.updateDynamic("videoBitsPerSecond")(videoBitsPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRecorderOptions]
   }
 }

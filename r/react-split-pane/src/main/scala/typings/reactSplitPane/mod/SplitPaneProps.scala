@@ -54,11 +54,11 @@ object SplitPaneProps {
     resizerStyle: CSSProperties = null,
     size: Size = null,
     split: vertical | horizontal = null,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null
   ): SplitPaneProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowResize)) __obj.updateDynamic("allowResize")(allowResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowResize)) __obj.updateDynamic("allowResize")(allowResize.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
@@ -76,7 +76,7 @@ object SplitPaneProps {
     if (resizerStyle != null) __obj.updateDynamic("resizerStyle")(resizerStyle.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitPaneProps]
   }

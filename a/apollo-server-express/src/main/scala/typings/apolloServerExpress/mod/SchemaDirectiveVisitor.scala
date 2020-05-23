@@ -3,8 +3,8 @@ package typings.apolloServerExpress.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.mod.GraphQLDirective
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.AnonArgs
-import typings.graphqlTools.TypeofSchemaDirectiveVisi
+import typings.graphqlTools.anon.Args
+import typings.graphqlTools.anon.TypeofSchemaDirectiveVisi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SchemaDirectiveVisitor protected ()
   extends typings.graphqlTools.mod.SchemaDirectiveVisitor {
-  protected def this(config: AnonArgs) = this()
+  protected def this(config: Args) = this()
 }
 
 /* static members */

@@ -33,9 +33,9 @@ object AddGrammarParams {
     return_response: js.UndefOr[Boolean] = js.undefined
   ): AddGrammarParams = {
     val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], customization_id = customization_id.asInstanceOf[js.Any], grammar_file = grammar_file.asInstanceOf[js.Any], grammar_name = grammar_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_overwrite)) __obj.updateDynamic("allow_overwrite")(allow_overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_overwrite)) __obj.updateDynamic("allow_overwrite")(allow_overwrite.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddGrammarParams]
   }
 }

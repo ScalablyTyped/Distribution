@@ -29,13 +29,13 @@ object DeleteClusterMessage {
   def apply(
     ClusterIdentifier: String,
     FinalClusterSnapshotIdentifier: String = null,
-    FinalClusterSnapshotRetentionPeriod: Int | scala.Double = null,
-    SkipFinalClusterSnapshot: js.UndefOr[scala.Boolean] = js.undefined
+    FinalClusterSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
+    SkipFinalClusterSnapshot: js.UndefOr[Boolean] = js.undefined
   ): DeleteClusterMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     if (FinalClusterSnapshotIdentifier != null) __obj.updateDynamic("FinalClusterSnapshotIdentifier")(FinalClusterSnapshotIdentifier.asInstanceOf[js.Any])
-    if (FinalClusterSnapshotRetentionPeriod != null) __obj.updateDynamic("FinalClusterSnapshotRetentionPeriod")(FinalClusterSnapshotRetentionPeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(SkipFinalClusterSnapshot)) __obj.updateDynamic("SkipFinalClusterSnapshot")(SkipFinalClusterSnapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(FinalClusterSnapshotRetentionPeriod)) __obj.updateDynamic("FinalClusterSnapshotRetentionPeriod")(FinalClusterSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SkipFinalClusterSnapshot)) __obj.updateDynamic("SkipFinalClusterSnapshot")(SkipFinalClusterSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClusterMessage]
   }
 }

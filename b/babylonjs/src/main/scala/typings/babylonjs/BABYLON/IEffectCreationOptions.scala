@@ -61,18 +61,15 @@ object IEffectCreationOptions {
     uniformsNames: js.Array[String],
     fallbacks: Nullable[IEffectFallbacks] = null,
     indexParameters: js.Any = null,
-    maxSimultaneousLights: Int | Double = null,
+    maxSimultaneousLights: js.UndefOr[Double] = js.undefined,
     onCompiled: /* effect */ Effect => Unit = null,
     onError: (/* effect */ Effect, /* errors */ String) => Unit = null,
-    transformFeedbackVaryings: Nullable[js.Array[String]] = null
+    transformFeedbackVaryings: js.UndefOr[Null | Nullable[js.Array[String]]] = js.undefined
   ): IEffectCreationOptions = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], defines = defines.asInstanceOf[js.Any], samplers = samplers.asInstanceOf[js.Any], uniformBuffersNames = uniformBuffersNames.asInstanceOf[js.Any], uniformsNames = uniformsNames.asInstanceOf[js.Any])
-    if (fallbacks != null) __obj.updateDynamic("fallbacks")(fallbacks.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], defines = defines.asInstanceOf[js.Any], samplers = samplers.asInstanceOf[js.Any], uniformBuffersNames = uniformBuffersNames.asInstanceOf[js.Any], uniformsNames = uniformsNames.asInstanceOf[js.Any], fallbacks = fallbacks.asInstanceOf[js.Any], onCompiled = js.Any.fromFunction1(onCompiled), onError = js.Any.fromFunction2(onError))
     if (indexParameters != null) __obj.updateDynamic("indexParameters")(indexParameters.asInstanceOf[js.Any])
-    if (maxSimultaneousLights != null) __obj.updateDynamic("maxSimultaneousLights")(maxSimultaneousLights.asInstanceOf[js.Any])
-    if (onCompiled != null) __obj.updateDynamic("onCompiled")(js.Any.fromFunction1(onCompiled))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction2(onError))
-    if (transformFeedbackVaryings != null) __obj.updateDynamic("transformFeedbackVaryings")(transformFeedbackVaryings.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSimultaneousLights)) __obj.updateDynamic("maxSimultaneousLights")(maxSimultaneousLights.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transformFeedbackVaryings)) __obj.updateDynamic("transformFeedbackVaryings")(transformFeedbackVaryings.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEffectCreationOptions]
   }
 }

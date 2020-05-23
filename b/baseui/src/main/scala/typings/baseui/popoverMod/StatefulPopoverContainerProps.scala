@@ -1,7 +1,7 @@
 package typings.baseui.popoverMod
 
-import typings.baseui.AnonClose
-import typings.baseui.PopoverPropschildrennever
+import typings.baseui.anon.Close
+import typings.baseui.anon.PopoverPropschildrennever
 import typings.baseui.baseuiStrings.auto
 import typings.baseui.baseuiStrings.bottom
 import typings.baseui.baseuiStrings.bottomLeft
@@ -33,7 +33,7 @@ trait StatefulPopoverContainerProps extends js.Object {
   var animateOutTime: js.UndefOr[Double] = js.native
   var autoFocus: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
-  var content: js.UndefOr[ReactNode | (js.Function1[/* args */ AnonClose, ReactNode])] = js.native
+  var content: js.UndefOr[ReactNode | (js.Function1[/* args */ Close, ReactNode])] = js.native
   var `data-baseweb`: js.UndefOr[String] = js.native
   var dismissOnClickOutside: js.UndefOr[Boolean] = js.native
   var dismissOnEsc: js.UndefOr[Boolean] = js.native

@@ -12,9 +12,9 @@ trait Progress extends js.Object {
 
 object Progress {
   @scala.inline
-  def apply(progress: Double, status: String, loaded: Int | Double = null): Progress = {
+  def apply(progress: Double, status: String, loaded: js.UndefOr[Double] = js.undefined): Progress = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
+    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
 }

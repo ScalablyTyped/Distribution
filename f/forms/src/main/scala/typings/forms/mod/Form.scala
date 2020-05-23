@@ -1,7 +1,7 @@
 package typings.forms.mod
 
-import typings.forms.AnonBody
-import typings.forms.AnonEmpty
+import typings.forms.anon.Body
+import typings.forms.anon.Empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Form extends js.Object {
   /** Binds data to correct fields, returning a new bound form object. */
   def bind(data: js.Any): FormBound = js.native
   /** Inspects a request or object literal and binds any data to the correct fields. */
-  def handle(req: AnonBody, callbacks: AnonEmpty): Unit = js.native
+  def handle(req: Body, callbacks: Empty): Unit = js.native
   /**
     * Runs toHTML on each field returning the result.
     * If an iterator is specified, it is called for each field with the field name and object as it's arguments,

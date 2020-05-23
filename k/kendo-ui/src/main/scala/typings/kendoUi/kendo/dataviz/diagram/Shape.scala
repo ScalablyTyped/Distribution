@@ -1,14 +1,12 @@
 package typings.kendoUi.kendo.dataviz.diagram
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.diagram.Shape")
 @js.native
-class Shape () extends Observable_ {
-  def this(options: ShapeOptions) = this()
+trait Shape extends Observable {
   var connectors: js.Any = js.native
   var dataItem: js.Any = js.native
   var options: ShapeOptions = js.native

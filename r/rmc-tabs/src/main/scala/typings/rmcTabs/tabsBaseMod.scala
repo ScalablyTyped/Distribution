@@ -6,6 +6,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
+import typings.rmcTabs.anon.ActiveTab
 import typings.rmcTabs.modelsMod.Models.TabData
 import typings.rmcTabs.propsTypeMod.PropsType
 import typings.rmcTabs.rmcTabsStrings.horizontal
@@ -67,7 +68,7 @@ object tabsBaseMod extends js.Object {
         /* allPrefix */ js.UndefOr[String], 
         StringDictionary[ReactNode]
       ] = js.native
-    def getTabBarBaseProps(): AnonActiveTab[S, P] = js.native
+    def getTabBarBaseProps(): ActiveTab[S, P] = js.native
     def getTabIndex(props: P): Double = js.native
     def goToTab(index: Double): Boolean = js.native
     def goToTab(index: Double, force: Boolean): Boolean = js.native

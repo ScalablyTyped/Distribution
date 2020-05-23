@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.XHRRequest")
 @js.native
-class XHRRequest protected () extends AbstractLoader {
-  def this(item: js.Object) = this()
+trait XHRRequest extends AbstractLoader {
   // methods
   def getAllResponseHeaders(): String = js.native
   def getResponseHeader(header: String): String = js.native

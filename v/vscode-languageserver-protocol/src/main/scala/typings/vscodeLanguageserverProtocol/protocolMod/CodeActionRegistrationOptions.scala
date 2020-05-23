@@ -16,10 +16,9 @@ object CodeActionRegistrationOptions {
     documentSelector: DocumentSelector = null,
     workDoneProgress: js.UndefOr[Boolean] = js.undefined
   ): CodeActionRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(documentSelector = documentSelector.asInstanceOf[js.Any])
     if (codeActionKinds != null) __obj.updateDynamic("codeActionKinds")(codeActionKinds.asInstanceOf[js.Any])
-    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionRegistrationOptions]
   }
 }

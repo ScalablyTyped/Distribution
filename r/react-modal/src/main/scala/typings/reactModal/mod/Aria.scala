@@ -19,7 +19,7 @@ object Aria {
     val __obj = js.Dynamic.literal()
     if (describedby != null) __obj.updateDynamic("describedby")(describedby.asInstanceOf[js.Any])
     if (labelledby != null) __obj.updateDynamic("labelledby")(labelledby.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aria]
   }
 }

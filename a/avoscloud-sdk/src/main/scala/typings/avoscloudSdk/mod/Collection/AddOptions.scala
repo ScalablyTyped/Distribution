@@ -14,10 +14,10 @@ trait AddOptions extends SilentOption {
 
 object AddOptions {
   @scala.inline
-  def apply(at: Int | Double = null, silent: js.UndefOr[Boolean] = js.undefined): AddOptions = {
+  def apply(at: js.UndefOr[Double] = js.undefined, silent: js.UndefOr[Boolean] = js.undefined): AddOptions = {
     val __obj = js.Dynamic.literal()
-    if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(at)) __obj.updateDynamic("at")(at.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOptions]
   }
 }

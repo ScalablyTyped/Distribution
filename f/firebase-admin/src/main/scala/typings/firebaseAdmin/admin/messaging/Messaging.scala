@@ -1,6 +1,5 @@
 package typings.firebaseAdmin.admin.messaging
 
-import typings.firebaseAdmin.admin.app.App
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +28,7 @@ trait Messaging extends js.Object {
     * var app = messaging.app;
     * ```
     */
-  var app: App = js.native
+  var app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.app.App */ js.Any = js.native
   /**
     * Sends the given message via FCM.
     *
@@ -40,8 +39,8 @@ trait Messaging extends js.Object {
     *   string after the message has been successfully handed off to the FCM
     *   service for delivery.
     */
-  def send(message: Message): js.Promise[String] = js.native
-  def send(message: Message, dryRun: Boolean): js.Promise[String] = js.native
+  def send(message: typings.firebaseAdmin.messagingMod.admin.messaging.Message): js.Promise[String] = js.native
+  def send(message: typings.firebaseAdmin.messagingMod.admin.messaging.Message, dryRun: Boolean): js.Promise[String] = js.native
   /**
     * Sends all the messages in the given array via Firebase Cloud Messaging.
     * Employs batching to send the entire list as a single RPC call. Compared
@@ -61,8 +60,8 @@ trait Messaging extends js.Object {
     * @return A Promise fulfilled with an object representing the result of the
     *   send operation.
     */
-  def sendAll(messages: js.Array[Message]): js.Promise[BatchResponse] = js.native
-  def sendAll(messages: js.Array[Message], dryRun: Boolean): js.Promise[BatchResponse] = js.native
+  def sendAll(messages: js.Array[typings.firebaseAdmin.messagingMod.admin.messaging.Message]): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.BatchResponse] = js.native
+  def sendAll(messages: js.Array[typings.firebaseAdmin.messagingMod.admin.messaging.Message], dryRun: Boolean): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.BatchResponse] = js.native
   /**
     * Sends the given multicast message to all the FCM registration tokens
     * specified in it.
@@ -81,8 +80,8 @@ trait Messaging extends js.Object {
     * @return A Promise fulfilled with an object representing the result of the
     *   send operation.
     */
-  def sendMulticast(message: MulticastMessage): js.Promise[BatchResponse] = js.native
-  def sendMulticast(message: MulticastMessage, dryRun: Boolean): js.Promise[BatchResponse] = js.native
+  def sendMulticast(message: typings.firebaseAdmin.messagingMod.admin.messaging.MulticastMessage): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.BatchResponse] = js.native
+  def sendMulticast(message: typings.firebaseAdmin.messagingMod.admin.messaging.MulticastMessage, dryRun: Boolean): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.BatchResponse] = js.native
   /**
     * Sends an FCM message to a condition.
     *
@@ -99,8 +98,12 @@ trait Messaging extends js.Object {
     * @return A promise fulfilled with the server's response after the message
     *   has been sent.
     */
-  def sendToCondition(condition: String, payload: MessagingPayload): js.Promise[MessagingConditionResponse] = js.native
-  def sendToCondition(condition: String, payload: MessagingPayload, options: MessagingOptions): js.Promise[MessagingConditionResponse] = js.native
+  def sendToCondition(condition: String, payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingConditionResponse] = js.native
+  def sendToCondition(
+    condition: String,
+    payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload,
+    options: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingOptions
+  ): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingConditionResponse] = js.native
   /**
     * Sends an FCM message to a single device corresponding to the provided
     * registration token.
@@ -121,10 +124,24 @@ trait Messaging extends js.Object {
     * @return A promise fulfilled with the server's response after the message
     *   has been sent.
     */
-  def sendToDevice(registrationToken: String, payload: MessagingPayload): js.Promise[MessagingDevicesResponse] = js.native
-  def sendToDevice(registrationToken: String, payload: MessagingPayload, options: MessagingOptions): js.Promise[MessagingDevicesResponse] = js.native
-  def sendToDevice(registrationToken: js.Array[String], payload: MessagingPayload): js.Promise[MessagingDevicesResponse] = js.native
-  def sendToDevice(registrationToken: js.Array[String], payload: MessagingPayload, options: MessagingOptions): js.Promise[MessagingDevicesResponse] = js.native
+  def sendToDevice(
+    registrationToken: String,
+    payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload
+  ): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingDevicesResponse] = js.native
+  def sendToDevice(
+    registrationToken: String,
+    payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload,
+    options: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingOptions
+  ): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingDevicesResponse] = js.native
+  def sendToDevice(
+    registrationToken: js.Array[String],
+    payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload
+  ): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingDevicesResponse] = js.native
+  def sendToDevice(
+    registrationToken: js.Array[String],
+    payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload,
+    options: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingOptions
+  ): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingDevicesResponse] = js.native
   /**
     * Sends an FCM message to a device group corresponding to the provided
     * notification key.
@@ -142,8 +159,15 @@ trait Messaging extends js.Object {
     * @return A promise fulfilled with the server's response after the message
     *   has been sent.
     */
-  def sendToDeviceGroup(notificationKey: String, payload: MessagingPayload): js.Promise[MessagingDeviceGroupResponse] = js.native
-  def sendToDeviceGroup(notificationKey: String, payload: MessagingPayload, options: MessagingOptions): js.Promise[MessagingDeviceGroupResponse] = js.native
+  def sendToDeviceGroup(
+    notificationKey: String,
+    payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload
+  ): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingDeviceGroupResponse] = js.native
+  def sendToDeviceGroup(
+    notificationKey: String,
+    payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload,
+    options: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingOptions
+  ): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingDeviceGroupResponse] = js.native
   /**
     * Sends an FCM message to a topic.
     *
@@ -159,8 +183,12 @@ trait Messaging extends js.Object {
     * @return A promise fulfilled with the server's response after the message
     *   has been sent.
     */
-  def sendToTopic(topic: String, payload: MessagingPayload): js.Promise[MessagingTopicResponse] = js.native
-  def sendToTopic(topic: String, payload: MessagingPayload, options: MessagingOptions): js.Promise[MessagingTopicResponse] = js.native
+  def sendToTopic(topic: String, payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingTopicResponse] = js.native
+  def sendToTopic(
+    topic: String,
+    payload: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingPayload,
+    options: typings.firebaseAdmin.messagingMod.admin.messaging.MessagingOptions
+  ): js.Promise[typings.firebaseAdmin.messagingMod.admin.messaging.MessagingTopicResponse] = js.native
   /**
     * Subscribes a device to an FCM topic.
     *
@@ -176,8 +204,12 @@ trait Messaging extends js.Object {
     * @return A promise fulfilled with the server's response after the device has been
     *   subscribed to the topic.
     */
-  def subscribeToTopic(registrationTokens: String, topic: String): js.Promise[MessagingTopicManagementResponse] = js.native
-  def subscribeToTopic(registrationTokens: js.Array[String], topic: String): js.Promise[MessagingTopicManagementResponse] = js.native
+  def subscribeToTopic(registrationTokens: String, topic: String): js.Promise[
+    typings.firebaseAdmin.messagingMod.admin.messaging.MessagingTopicManagementResponse
+  ] = js.native
+  def subscribeToTopic(registrationTokens: js.Array[String], topic: String): js.Promise[
+    typings.firebaseAdmin.messagingMod.admin.messaging.MessagingTopicManagementResponse
+  ] = js.native
   /**
     * Unsubscribes a device from an FCM topic.
     *
@@ -193,7 +225,11 @@ trait Messaging extends js.Object {
     * @return A promise fulfilled with the server's response after the device has been
     *   unsubscribed from the topic.
     */
-  def unsubscribeFromTopic(registrationTokens: String, topic: String): js.Promise[MessagingTopicManagementResponse] = js.native
-  def unsubscribeFromTopic(registrationTokens: js.Array[String], topic: String): js.Promise[MessagingTopicManagementResponse] = js.native
+  def unsubscribeFromTopic(registrationTokens: String, topic: String): js.Promise[
+    typings.firebaseAdmin.messagingMod.admin.messaging.MessagingTopicManagementResponse
+  ] = js.native
+  def unsubscribeFromTopic(registrationTokens: js.Array[String], topic: String): js.Promise[
+    typings.firebaseAdmin.messagingMod.admin.messaging.MessagingTopicManagementResponse
+  ] = js.native
 }
 

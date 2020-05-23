@@ -14,9 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an audio file input node. */
-@JSGlobal("Windows.Media.Audio.AudioFileInputNode")
 @js.native
-abstract class AudioFileInputNode () extends js.Object {
+trait AudioFileInputNode extends js.Object {
   /** Gets or sets a value indicating if the audio file input node consumes input. */
   var consumeInput: Boolean = js.native
   /** Gets the duration for the audio input file. */

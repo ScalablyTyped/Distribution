@@ -6,13 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object serverCallMod {
   type HandleCall[RequestType, ResponseType] = (typings.grpcGrpcJs.serverCallMod.handleUnaryCall[RequestType, ResponseType]) | (typings.grpcGrpcJs.serverCallMod.handleClientStreamingCall[RequestType, ResponseType]) | (typings.grpcGrpcJs.serverCallMod.handleServerStreamingCall[RequestType, ResponseType]) | (typings.grpcGrpcJs.serverCallMod.handleBidiStreamingCall[RequestType, ResponseType])
-  type ServerDuplexStream[RequestType, ResponseType] = typings.grpcGrpcJs.serverCallMod.ServerSurfaceCall with typings.grpcGrpcJs.objectStreamMod.ObjectReadable[RequestType] with typings.grpcGrpcJs.objectStreamMod.ObjectWritable[ResponseType]
-  type ServerErrorResponse = typings.grpcGrpcJs.serverCallMod.ServerStatusResponse with typings.std.Error
-  type ServerReadableStream[RequestType, ResponseType] = typings.grpcGrpcJs.serverCallMod.ServerSurfaceCall with typings.grpcGrpcJs.objectStreamMod.ObjectReadable[RequestType]
-  type ServerStatusResponse = typings.std.Partial[typings.grpcGrpcJs.callStreamMod.StatusObject]
-  type ServerSurfaceCall = typings.grpcGrpcJs.AnonCancelled with typings.node.eventsMod.EventEmitter
-  type ServerUnaryCall[RequestType, ResponseType] = typings.grpcGrpcJs.serverCallMod.ServerSurfaceCall with typings.grpcGrpcJs.AnonRequest[RequestType]
-  type ServerWritableStream[RequestType, ResponseType] = typings.grpcGrpcJs.serverCallMod.ServerSurfaceCall with typings.grpcGrpcJs.objectStreamMod.ObjectWritable[ResponseType] with typings.grpcGrpcJs.AnonRequest[RequestType]
   type handleBidiStreamingCall[RequestType, ResponseType] = js.Function1[
     /* call */ typings.grpcGrpcJs.serverCallMod.ServerDuplexStream[RequestType, ResponseType], 
     scala.Unit

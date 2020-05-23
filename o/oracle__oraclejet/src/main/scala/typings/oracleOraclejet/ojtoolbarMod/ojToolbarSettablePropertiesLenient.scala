@@ -18,7 +18,7 @@ trait ojToolbarSettablePropertiesLenient
 object ojToolbarSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     chroming: full | half | outlined = null,
     translations: js.Object = null
   ): ojToolbarSettablePropertiesLenient = {

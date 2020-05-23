@@ -3,6 +3,7 @@ package typings.testingLibraryDom
 import typings.prettyFormat.mod.OptionsReceived
 import typings.std.Element
 import typings.std.HTMLDocument
+import typings.testingLibraryDom.anon.Debug
 import typings.testingLibraryDom.getQueriesForElementMod.BoundFunction
 import typings.testingLibraryDom.getQueriesForElementMod.BoundFunctions
 import typings.testingLibraryDom.getQueriesForElementMod.Queries
@@ -93,6 +94,6 @@ object screenMod extends js.Object {
     def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
   }
   
-  type Screen_[Q /* <: Queries */] = BoundFunctions[Q] with AnonDebug
+  type Screen_[Q /* <: Queries */] = BoundFunctions[Q] with Debug
 }
 

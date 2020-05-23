@@ -1,5 +1,7 @@
 package typings.firebaseComponent
 
+import typings.firebaseComponent.anon.Identifier
+import typings.firebaseComponent.anon.Optional
 import typings.firebaseComponent.componentContainerMod.ComponentContainer
 import typings.firebaseComponent.componentMod.Component
 import typings.firebaseComponent.typesMod.Name
@@ -43,8 +45,8 @@ object providerMod extends js.Object {
       * the service is not immediately available.
       * If optional is true, the method returns null if the service is not immediately available.
       */
-    def getImmediate(options: AnonIdentifier): (/* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any) | Null = js.native
-    def getImmediate(options: AnonOptional): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
+    def getImmediate(options: Identifier): (/* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any) | Null = js.native
+    def getImmediate(options: Optional): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
     def isComponentSet(): Boolean = js.native
     def setComponent(component: Component[T]): Unit = js.native
   }

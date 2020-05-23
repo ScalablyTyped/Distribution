@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Globalization.DateTimeFormatting
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object SecondFormat extends js.Object {
   /** Do not display the second. */
   @js.native
   sealed trait none extends SecondFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SecondFormat with Double] = js.native
-  /* 1 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

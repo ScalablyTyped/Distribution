@@ -1,6 +1,6 @@
 package typings.highcharts.offlineExportingMod
 
-import typings.highcharts.TypeofHighcharts
+import typings.highcharts.anon.TypeofHighchartsAddEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("highcharts/modules/offline-exporting", "factory")
 @js.native
 object factory extends js.Object {
-  def apply(highcharts: TypeofHighcharts): Unit = js.native
+  def apply(highcharts: TypeofHighchartsAddEvent): Unit = js.native
 }
 

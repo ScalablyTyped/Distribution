@@ -42,7 +42,7 @@ object ConnectorsSegment {
   @scala.inline
   def apply(
     direction: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     point: ConnectorsSourcePoint = null,
     point1: ConnectorsSourcePoint = null,
     point2: ConnectorsSourcePoint = null,
@@ -52,7 +52,7 @@ object ConnectorsSegment {
   ): ConnectorsSegment = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     if (point1 != null) __obj.updateDynamic("point1")(point1.asInstanceOf[js.Any])
     if (point2 != null) __obj.updateDynamic("point2")(point2.asInstanceOf[js.Any])

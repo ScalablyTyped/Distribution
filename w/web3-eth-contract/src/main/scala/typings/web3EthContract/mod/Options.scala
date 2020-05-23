@@ -17,13 +17,13 @@ object Options {
     jsonInterface: js.Array[AbiItem],
     data: String = null,
     from: String = null,
-    gas: Int | Double = null,
+    gas: js.UndefOr[Double] = js.undefined,
     gasPrice: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], jsonInterface = jsonInterface.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
+    if (!js.isUndefined(gas)) __obj.updateDynamic("gas")(gas.get.asInstanceOf[js.Any])
     if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

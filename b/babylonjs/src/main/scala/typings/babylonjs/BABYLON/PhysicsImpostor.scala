@@ -1,54 +1,13 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonBody
-import typings.babylonjs.AnonOtherImpostors
+import typings.babylonjs.anon.Body
+import typings.babylonjs.anon.OtherImpostors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PhysicsImpostor")
 @js.native
-class PhysicsImpostor protected () extends js.Object {
-  /**
-    * Initializes the physics imposter
-    * @param object The physics-enabled object used as the physics imposter
-    * @param type The type of the physics imposter
-    * @param _options The options for the physics imposter
-    * @param _scene The Babylon scene
-    */
-  def this(
-    /**
-    * The physics-enabled object used as the physics imposter
-    */
-  `object`: IPhysicsEnabledObject,
-    /**
-    * The type of the physics imposter
-    */
-  `type`: Double
-  ) = this()
-  def this(
-    /**
-    * The physics-enabled object used as the physics imposter
-    */
-  `object`: IPhysicsEnabledObject,
-    /**
-    * The type of the physics imposter
-    */
-  `type`: Double,
-    _options: PhysicsImpostorParameters
-  ) = this()
-  def this(
-    /**
-    * The physics-enabled object used as the physics imposter
-    */
-  `object`: IPhysicsEnabledObject,
-    /**
-    * The type of the physics imposter
-    */
-  `type`: Double,
-    _options: PhysicsImpostorParameters,
-    _scene: Scene
-  ) = this()
+trait PhysicsImpostor extends js.Object {
   var _bodyUpdateRequired: js.Any = js.native
   var _deltaPosition: js.Any = js.native
   var _deltaRotation: js.Any = js.native
@@ -61,7 +20,7 @@ class PhysicsImpostor protected () extends js.Object {
   var _onAfterPhysicsStepCallbacks: js.Any = js.native
   var _onBeforePhysicsStepCallbacks: js.Any = js.native
   /** @hidden */
-  var _onPhysicsCollideCallbacks: js.Array[AnonOtherImpostors] = js.native
+  var _onPhysicsCollideCallbacks: js.Array[OtherImpostors] = js.native
   var _options: js.Any = js.native
   var _parent: js.Any = js.native
   var _physicsBody: js.Any = js.native
@@ -259,7 +218,7 @@ class PhysicsImpostor protected () extends js.Object {
   /**
     * event and body object due to cannon's event-based architecture.
     */
-  def onCollide(e: AnonBody): Unit = js.native
+  def onCollide(e: Body): Unit = js.native
   /**
     * Get the parent of the physics imposter
     * @returns Physics imposter or null
@@ -464,77 +423,5 @@ class PhysicsImpostor protected () extends js.Object {
     * @returns The physics imposter
     */
   def wakeUp(): PhysicsImpostor = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.PhysicsImpostor")
-@js.native
-object PhysicsImpostor extends js.Object {
-  /**
-    * Box-Imposter type
-    */
-  var BoxImpostor: Double = js.native
-  /**
-    * Capsule-Impostor type (Ammo.js plugin only)
-    */
-  var CapsuleImpostor: Double = js.native
-  /**
-    * Cloth-Imposter type
-    */
-  var ClothImpostor: Double = js.native
-  /**
-    * ConvexHull-Impostor type (Ammo.js plugin only)
-    */
-  var ConvexHullImpostor: Double = js.native
-  /**
-    * Custom-Imposter type (Ammo.js plugin only)
-    */
-  var CustomImpostor: Double = js.native
-  /**
-    * Cylinder-Imposter type
-    */
-  var CylinderImpostor: Double = js.native
-  /**
-    * The default object size of the imposter
-    */
-  var DEFAULT_OBJECT_SIZE: Vector3 = js.native
-  /**
-    * Heightmap-Imposter type
-    */
-  var HeightmapImpostor: Double = js.native
-  /**
-    * The identity quaternion of the imposter
-    */
-  var IDENTITY_QUATERNION: Quaternion = js.native
-  /**
-    * Mesh-imposter type
-    */
-  var MeshImpostor: Double = js.native
-  /**
-    * No-Imposter type
-    */
-  var NoImpostor: Double = js.native
-  /**
-    * Particle-Imposter type
-    */
-  var ParticleImpostor: Double = js.native
-  /**
-    * Plane-Imposter type
-    */
-  var PlaneImpostor: Double = js.native
-  /**
-    * Rope-Imposter type
-    */
-  var RopeImpostor: Double = js.native
-  /**
-    * Softbody-Imposter type
-    */
-  var SoftbodyImpostor: Double = js.native
-  /**
-    * Sphere-Imposter type
-    */
-  var SphereImpostor: Double = js.native
-  var _tmpQuat: js.Any = js.native
-  var _tmpVecs: js.Any = js.native
 }
 

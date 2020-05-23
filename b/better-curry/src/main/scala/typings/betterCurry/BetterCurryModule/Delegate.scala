@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BetterCurryModule.Delegate")
 @js.native
-class Delegate[T] protected () extends js.Object {
-  def this(proto: T, target: String) = this()
+trait Delegate[T] extends js.Object {
   var getters: js.Array[_] = js.native
   var methods: js.Array[_] = js.native
   var proto: T = js.native

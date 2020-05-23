@@ -1,7 +1,6 @@
 package typings.sharepoint.SP.Social
 
 import typings.sharepoint.SP.ClientObject
-import typings.sharepoint.SP.ClientRuntimeContext
 import typings.sharepoint.SP.IntResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,10 +8,8 @@ import scala.scalajs.js.annotation._
 
 /** Provides access to social feeds.
   It provides methods to create posts, delete posts, read posts, and perform other operations on posts. */
-@JSGlobal("SP.Social.SocialFeedManager")
 @js.native
-class SocialFeedManager protected () extends ClientObject {
-  def this(context: ClientRuntimeContext) = this()
+trait SocialFeedManager extends ClientObject {
   /** Creates an image attachment for a future post. */
   def createImageAttachment(name: String, description: String, imageData: js.Any): SocialAttachment = js.native
   /** Creates a post in the current user's newsfeed, in the specified user's feed, or in the specified thread.

@@ -1,13 +1,13 @@
 package typings.hapiHapi.mod
 
-import typings.hapiHapi.AnonAccess
+import typings.hapiHapi.anon.Access
 import typings.hapiHapi.mod.Util.HTTP_METHODS_PARTIAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestRoute extends js.Object {
-  var auth: AnonAccess
+  var auth: Access
   /** the route internal normalized string representing the normalized path. */
   var fingerprint: String
   /** the route HTTP method. */
@@ -25,7 +25,7 @@ trait RequestRoute extends js.Object {
 object RequestRoute {
   @scala.inline
   def apply(
-    auth: AnonAccess,
+    auth: Access,
     fingerprint: String,
     method: HTTP_METHODS_PARTIAL,
     path: String,

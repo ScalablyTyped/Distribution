@@ -29,13 +29,13 @@ object TapeRecoveryPointInfo {
   def apply(
     TapeARN: TapeARN = null,
     TapeRecoveryPointTime: Time = null,
-    TapeSizeInBytes: Int | Double = null,
+    TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined,
     TapeStatus: TapeRecoveryPointStatus = null
   ): TapeRecoveryPointInfo = {
     val __obj = js.Dynamic.literal()
     if (TapeARN != null) __obj.updateDynamic("TapeARN")(TapeARN.asInstanceOf[js.Any])
     if (TapeRecoveryPointTime != null) __obj.updateDynamic("TapeRecoveryPointTime")(TapeRecoveryPointTime.asInstanceOf[js.Any])
-    if (TapeSizeInBytes != null) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TapeSizeInBytes)) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.get.asInstanceOf[js.Any])
     if (TapeStatus != null) __obj.updateDynamic("TapeStatus")(TapeStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TapeRecoveryPointInfo]
   }

@@ -1,6 +1,6 @@
 package typings.tstl.mod
 
-import typings.tstl.PickILockabletrylock
+import typings.tstl.anon.PickILockabletrylock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

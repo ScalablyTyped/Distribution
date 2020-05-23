@@ -11,10 +11,10 @@ trait PanIntoViewOptions extends js.Object {
 
 object PanIntoViewOptions {
   @scala.inline
-  def apply(animation: PanOptions = null, margin: Int | Double = null): PanIntoViewOptions = {
+  def apply(animation: PanOptions = null, margin: js.UndefOr[Double] = js.undefined): PanIntoViewOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanIntoViewOptions]
   }
 }

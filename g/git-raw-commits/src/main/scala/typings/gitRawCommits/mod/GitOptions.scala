@@ -56,7 +56,7 @@ trait GitOptions
 object GitOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* options */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     debug: /* message */ js.Any => Unit = null,
     format: String = null,
     from: String = null,

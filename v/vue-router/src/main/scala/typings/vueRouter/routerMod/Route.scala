@@ -26,12 +26,12 @@ object Route {
     path: String,
     query: Dictionary[String | (js.Array[String | Null])],
     meta: js.Any = null,
-    name: String = null,
+    name: js.UndefOr[Null | String] = js.undefined,
     redirectedFrom: String = null
   ): Route = {
     val __obj = js.Dynamic.literal(fullPath = fullPath.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], matched = matched.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (redirectedFrom != null) __obj.updateDynamic("redirectedFrom")(redirectedFrom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }

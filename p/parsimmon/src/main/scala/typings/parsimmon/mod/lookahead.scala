@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 object lookahead extends js.Object {
   def apply(arg: String): Parser[_empty] = js.native
   /**
-  	 * Parses using arg, but does not consume what it parses. Yields an empty string.
-  	 */
+    * Parses using arg, but does not consume what it parses. Yields an empty string.
+    */
   def apply(arg: Parser[_]): Parser[_empty] = js.native
   def apply(arg: RegExp): Parser[_empty] = js.native
 }

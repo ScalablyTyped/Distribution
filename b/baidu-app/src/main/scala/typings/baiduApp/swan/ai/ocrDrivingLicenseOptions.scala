@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 对机动车驾驶证所有关键字段进行识别。
-		 */
+  * 对机动车驾驶证所有关键字段进行识别。
+  */
 trait ocrDrivingLicenseOptions
   extends BaseOptions[js.Any, js.Any] {
    // 图片资源地址
@@ -32,10 +32,10 @@ object ocrDrivingLicenseOptions {
   ): ocrDrivingLicenseOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (!js.isUndefined(unified_valid_period)) __obj.updateDynamic("unified_valid_period")(unified_valid_period.asInstanceOf[js.Any])
+    if (!js.isUndefined(unified_valid_period)) __obj.updateDynamic("unified_valid_period")(unified_valid_period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ocrDrivingLicenseOptions]
   }
 }

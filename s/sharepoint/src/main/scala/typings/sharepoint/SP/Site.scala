@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Site")
 @js.native
-class Site () extends ClientObject {
+trait Site extends ClientObject {
   def createPreviewSPSite(upgrade: Boolean, sendemail: Boolean): Unit = js.native
   def extendUpgradeReminderDate(): Unit = js.native
   def getCatalog(typeCatalog: Double): List[_] = js.native

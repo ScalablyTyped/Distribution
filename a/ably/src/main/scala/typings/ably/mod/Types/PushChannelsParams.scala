@@ -10,9 +10,9 @@ trait PushChannelsParams extends js.Object {
 
 object PushChannelsParams {
   @scala.inline
-  def apply(limit: Int | Double = null): PushChannelsParams = {
+  def apply(limit: js.UndefOr[Double] = js.undefined): PushChannelsParams = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushChannelsParams]
   }
 }

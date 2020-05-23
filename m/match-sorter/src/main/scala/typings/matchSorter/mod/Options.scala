@@ -15,12 +15,12 @@ object Options {
   def apply[T](
     keepDiacritics: js.UndefOr[Boolean] = js.undefined,
     keys: js.Array[KeyOptions[T] | ExtendedKeyOptions[T]] = null,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepDiacritics)) __obj.updateDynamic("keepDiacritics")(keepDiacritics.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepDiacritics)) __obj.updateDynamic("keepDiacritics")(keepDiacritics.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[T]]
   }
 }

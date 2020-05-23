@@ -22,7 +22,7 @@ object ColumnSpec {
     label: String = null,
     properties: Properties = null,
     role: String = null,
-    sourceColumn: Int | Double = null,
+    sourceColumn: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): ColumnSpec = {
     val __obj = js.Dynamic.literal()
@@ -31,7 +31,7 @@ object ColumnSpec {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (sourceColumn != null) __obj.updateDynamic("sourceColumn")(sourceColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceColumn)) __obj.updateDynamic("sourceColumn")(sourceColumn.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSpec]
   }

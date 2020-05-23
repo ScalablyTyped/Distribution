@@ -13,17 +13,7 @@ import scala.scalajs.js.annotation._
   * The date picker can be configured towards picking a date with or without time, just a time or picking hours and minutes for a timer.
   * @see https://docs.scriptable.app/datepicker/#-new-datepicker
   */
-@JSGlobal("DatePicker")
-@js.native
-/**
-  * _Presents a date picker._
-  *
-  * Use the date picker to present a view for selecting a date.
-  *
-  * The date picker can be configured towards picking a date with or without time, just a time or picking hours and minutes for a timer.
-  * @see https://docs.scriptable.app/datepicker/#-new-datepicker
-  */
-class DatePicker () extends js.Object {
+trait DatePicker extends js.Object {
   /**
     * _Countdown duration displayed by the date picker._
     *
@@ -31,7 +21,7 @@ class DatePicker () extends js.Object {
     * value is 23:59 (86,399 seconds).
     * @see https://docs.scriptable.app/datepicker/#countdownduration
     */
-  var countdownDuration: Double = js.native
+  var countdownDuration: Double
   /**
     * _The initially selected date._
     *
@@ -42,7 +32,7 @@ class DatePicker () extends js.Object {
     * carries the selected date.
     * @see https://docs.scriptable.app/datepicker/#initialdate
     */
-  var initialDate: Date = js.native
+  var initialDate: Date
   /**
     * _Maximum date that is selected in the picker._
     *
@@ -50,7 +40,7 @@ class DatePicker () extends js.Object {
     * dates are also ignored in countdown-timer mode.
     * @see https://docs.scriptable.app/datepicker/#maximumdate
     */
-  var maximumDate: Date = js.native
+  var maximumDate: Date
   /**
     * _Minimum date that is selected in the picker._
     *
@@ -58,14 +48,14 @@ class DatePicker () extends js.Object {
     * dates are also ignored in countdown-timer mode.
     * @see https://docs.scriptable.app/datepicker/#minimumdate
     */
-  var minimumDate: Date = js.native
+  var minimumDate: Date
   /**
     * _Interval at which the date picker displays minutes._
     *
     * Use the property to set the interval of the minute wheel. The default and minimum value is 1 and the maximum value is 30.
     * @see https://docs.scriptable.app/datepicker/#minuteinterval
     */
-  var minuteInterval: Double = js.native
+  var minuteInterval: Double
   /**
     * _Presents the date picker for selecting the duration of a countdown._
     *
@@ -73,14 +63,14 @@ class DatePicker () extends js.Object {
     * duration.
     * @see https://docs.scriptable.app/datepicker/#-pickcountdownduration
     */
-  def pickCountdownDuration(): js.Promise[Double] = js.native
+  def pickCountdownDuration(): js.Promise[Double]
   /**
     * _Presents the date picker displaying day, month and year._
     *
     * Use the method to pick a date. The date picker will display the a day, month and year. Use the `initialDate` property to set the initially selected date.
     * @see https://docs.scriptable.app/datepicker/#-pickdate
     */
-  def pickDate(): js.Promise[Date] = js.native
+  def pickDate(): js.Promise[Date]
   /**
     * _Presents the date picker displaying date and time._
     *
@@ -88,7 +78,7 @@ class DatePicker () extends js.Object {
     * `initialDate` property to set the initially selected date.
     * @see https://docs.scriptable.app/datepicker/#-pickdateandtime
     */
-  def pickDateAndTime(): js.Promise[Date] = js.native
+  def pickDateAndTime(): js.Promise[Date]
   /**
     * _Presents the date picker displaying hours and minutes._
     *
@@ -97,6 +87,24 @@ class DatePicker () extends js.Object {
     * The returned date will be the current date with the hour and minute set to the selected values. Use the `initialDate` property to set the initially selected date.
     * @see https://docs.scriptable.app/datepicker/#-picktime
     */
-  def pickTime(): js.Promise[Date] = js.native
+  def pickTime(): js.Promise[Date]
+}
+
+object DatePicker {
+  @scala.inline
+  def apply(
+    countdownDuration: Double,
+    initialDate: Date,
+    maximumDate: Date,
+    minimumDate: Date,
+    minuteInterval: Double,
+    pickCountdownDuration: () => js.Promise[Double],
+    pickDate: () => js.Promise[Date],
+    pickDateAndTime: () => js.Promise[Date],
+    pickTime: () => js.Promise[Date]
+  ): DatePicker = {
+    val __obj = js.Dynamic.literal(countdownDuration = countdownDuration.asInstanceOf[js.Any], initialDate = initialDate.asInstanceOf[js.Any], maximumDate = maximumDate.asInstanceOf[js.Any], minimumDate = minimumDate.asInstanceOf[js.Any], minuteInterval = minuteInterval.asInstanceOf[js.Any], pickCountdownDuration = js.Any.fromFunction0(pickCountdownDuration), pickDate = js.Any.fromFunction0(pickDate), pickDateAndTime = js.Any.fromFunction0(pickDateAndTime), pickTime = js.Any.fromFunction0(pickTime))
+    __obj.asInstanceOf[DatePicker]
+  }
 }
 

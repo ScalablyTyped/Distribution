@@ -30,7 +30,7 @@ object HttpRequestContext {
     method: String = null,
     referrer: String = null,
     remoteIp: String = null,
-    responseStatusCode: Int | Double = null,
+    responseStatusCode: js.UndefOr[Double] = js.undefined,
     url: String = null,
     userAgent: String = null
   ): HttpRequestContext = {
@@ -38,7 +38,7 @@ object HttpRequestContext {
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
     if (remoteIp != null) __obj.updateDynamic("remoteIp")(remoteIp.asInstanceOf[js.Any])
-    if (responseStatusCode != null) __obj.updateDynamic("responseStatusCode")(responseStatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseStatusCode)) __obj.updateDynamic("responseStatusCode")(responseStatusCode.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpRequestContext]

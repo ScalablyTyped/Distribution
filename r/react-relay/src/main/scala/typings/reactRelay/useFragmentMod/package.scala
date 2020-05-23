@@ -9,7 +9,7 @@ package object useFragmentMod {
     /* arg */ T, 
     /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.NonNullable<T[0]>[' $data']>[0] */ js.Any
   ]
-  type ArrayKeyType = js.Array[typings.reactRelay.AnonDataReadonlyArray | scala.Null]
+  type ArrayKeyType = js.Array[typings.reactRelay.anon.Data | scala.Null]
   // NOTE: These declares ensure that the type of the returned data is:
   //   - non-nullable if the provided ref type is non-nullable
   //   - nullable if the provided ref type is nullable

@@ -21,7 +21,7 @@ trait SwaggerUIProps extends js.Object {
 object SwaggerUIProps {
   @scala.inline
   def apply(
-    defaultModelExpandDepth: Int | Double = null,
+    defaultModelExpandDepth: js.UndefOr[Double] = js.undefined,
     docExpansion: list | full | none = null,
     onComplete: /* system */ System => Unit = null,
     plugins: js.Array[Plugin] = null,
@@ -31,7 +31,7 @@ object SwaggerUIProps {
     url: String = null
   ): SwaggerUIProps = {
     val __obj = js.Dynamic.literal()
-    if (defaultModelExpandDepth != null) __obj.updateDynamic("defaultModelExpandDepth")(defaultModelExpandDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultModelExpandDepth)) __obj.updateDynamic("defaultModelExpandDepth")(defaultModelExpandDepth.get.asInstanceOf[js.Any])
     if (docExpansion != null) __obj.updateDynamic("docExpansion")(docExpansion.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])

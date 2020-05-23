@@ -25,12 +25,12 @@ object ResendContactReachabilityEmailResponse {
   def apply(
     domainName: DomainName = null,
     emailAddress: Email = null,
-    isAlreadyVerified: js.UndefOr[scala.Boolean] = js.undefined
+    isAlreadyVerified: js.UndefOr[Boolean] = js.undefined
   ): ResendContactReachabilityEmailResponse = {
     val __obj = js.Dynamic.literal()
     if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAlreadyVerified)) __obj.updateDynamic("isAlreadyVerified")(isAlreadyVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAlreadyVerified)) __obj.updateDynamic("isAlreadyVerified")(isAlreadyVerified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResendContactReachabilityEmailResponse]
   }
 }

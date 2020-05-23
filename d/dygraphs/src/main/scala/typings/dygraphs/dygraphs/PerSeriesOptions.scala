@@ -91,33 +91,33 @@ object PerSeriesOptions {
     axis: y1 | y2 = null,
     color: String = null,
     drawPoints: js.UndefOr[Boolean] = js.undefined,
-    fillAlpha: Int | Double = null,
+    fillAlpha: js.UndefOr[Double] = js.undefined,
     fillGraph: js.UndefOr[Boolean] = js.undefined,
-    highlightCircleSize: Int | Double = null,
+    highlightCircleSize: js.UndefOr[Double] = js.undefined,
     plotter: js.Any = null,
-    pointSize: Int | Double = null,
+    pointSize: js.UndefOr[Double] = js.undefined,
     showInRangeSelector: js.UndefOr[Boolean] = js.undefined,
     stepPlot: js.UndefOr[Boolean] = js.undefined,
     strokeBorderColor: String = null,
-    strokeBorderWidth: Int | Double = null,
+    strokeBorderWidth: js.UndefOr[Double] = js.undefined,
     strokePattern: js.Array[Double] = null,
-    strokeWidth: Int | Double = null
+    strokeWidth: js.UndefOr[Double] = js.undefined
   ): PerSeriesOptions = {
     val __obj = js.Dynamic.literal()
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawPoints)) __obj.updateDynamic("drawPoints")(drawPoints.asInstanceOf[js.Any])
-    if (fillAlpha != null) __obj.updateDynamic("fillAlpha")(fillAlpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillGraph)) __obj.updateDynamic("fillGraph")(fillGraph.asInstanceOf[js.Any])
-    if (highlightCircleSize != null) __obj.updateDynamic("highlightCircleSize")(highlightCircleSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawPoints)) __obj.updateDynamic("drawPoints")(drawPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillAlpha)) __obj.updateDynamic("fillAlpha")(fillAlpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillGraph)) __obj.updateDynamic("fillGraph")(fillGraph.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightCircleSize)) __obj.updateDynamic("highlightCircleSize")(highlightCircleSize.get.asInstanceOf[js.Any])
     if (plotter != null) __obj.updateDynamic("plotter")(plotter.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInRangeSelector)) __obj.updateDynamic("showInRangeSelector")(showInRangeSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepPlot)) __obj.updateDynamic("stepPlot")(stepPlot.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInRangeSelector)) __obj.updateDynamic("showInRangeSelector")(showInRangeSelector.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepPlot)) __obj.updateDynamic("stepPlot")(stepPlot.get.asInstanceOf[js.Any])
     if (strokeBorderColor != null) __obj.updateDynamic("strokeBorderColor")(strokeBorderColor.asInstanceOf[js.Any])
-    if (strokeBorderWidth != null) __obj.updateDynamic("strokeBorderWidth")(strokeBorderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeBorderWidth)) __obj.updateDynamic("strokeBorderWidth")(strokeBorderWidth.get.asInstanceOf[js.Any])
     if (strokePattern != null) __obj.updateDynamic("strokePattern")(strokePattern.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerSeriesOptions]
   }
 }

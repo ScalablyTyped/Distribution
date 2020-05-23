@@ -11,7 +11,7 @@ trait Target extends js.Object {
     */
   var Key: js.UndefOr[TargetKey] = js.native
   /**
-    * User-defined criteria that maps to Key. For example, if you specified tag:ServerRole, you could specify value:WebServer to run a command on instances that include Amazon EC2 tags of ServerRole,WebServer. 
+    * User-defined criteria that maps to Key. For example, if you specified tag:ServerRole, you could specify value:WebServer to run a command on instances that include EC2 tags of ServerRole,WebServer. 
     */
   var Values: js.UndefOr[TargetValues] = js.native
 }

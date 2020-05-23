@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object electronPublishStrings {
   @js.native
-  sealed trait GitHub extends js.Object
-  
-  @js.native
   sealed trait always extends PublishPolicy
   
   @js.native
@@ -21,8 +18,6 @@ object electronPublishStrings {
   @js.native
   sealed trait onTagOrDraft extends PublishPolicy
   
-  @scala.inline
-  def GitHub: GitHub = "GitHub".asInstanceOf[GitHub]
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   @scala.inline

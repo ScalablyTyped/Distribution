@@ -20,21 +20,21 @@ trait RangeFontData extends js.Object {
   var bold: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[String] = js.undefined
   /**
     *
-    * Represents the italic status of the font.
+    * Specifies the italic status of the font.
     *
     * [Api set: ExcelApi 1.1]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Font name (e.g. "Calibri")
+    * Font name (e.g., "Calibri")
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -48,14 +48,14 @@ trait RangeFontData extends js.Object {
   var size: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
+    * Specifies the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
     *
     * [Api set: ExcelApi 1.9]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the Subscript status of font.
+    * Specifies the Subscript status of font.
     Returns True if all the fonts of the range are Subscript.
     Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
     Returns Null otherwise.
@@ -65,7 +65,7 @@ trait RangeFontData extends js.Object {
   var subscript: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the Superscript status of font.
+    * Specifies the Superscript status of font.
     Returns True if all the fonts of the range are Superscript.
     Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
     Returns Null otherwise.
@@ -75,7 +75,7 @@ trait RangeFontData extends js.Object {
   var superscript: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    * Specifies a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
     A null value indicates that the entire range doesn't have uniform font tintAndShade setting.
     *
     * [Api set: ExcelApi 1.9]
@@ -99,23 +99,23 @@ object RangeFontData {
     color: String = null,
     italic: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     strikethrough: js.UndefOr[Boolean] = js.undefined,
     subscript: js.UndefOr[Boolean] = js.undefined,
     superscript: js.UndefOr[Boolean] = js.undefined,
-    tintAndShade: Int | Double = null,
+    tintAndShade: js.UndefOr[Double] = js.undefined,
     underline: RangeUnderlineStyle | None | Single | typings.officeJs.officeJsStrings.Double | SingleAccountant | DoubleAccountant = null
   ): RangeFontData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscript)) __obj.updateDynamic("subscript")(subscript.asInstanceOf[js.Any])
-    if (!js.isUndefined(superscript)) __obj.updateDynamic("superscript")(superscript.asInstanceOf[js.Any])
-    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscript)) __obj.updateDynamic("subscript")(subscript.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(superscript)) __obj.updateDynamic("superscript")(superscript.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.get.asInstanceOf[js.Any])
     if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeFontData]
   }

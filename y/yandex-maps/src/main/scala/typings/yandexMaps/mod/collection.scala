@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("yandex-maps", "collection")
 @js.native
 object collection extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.yandexMaps.mod.IEventEmitter because Already inherited
   - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @js.native
   class Item ()

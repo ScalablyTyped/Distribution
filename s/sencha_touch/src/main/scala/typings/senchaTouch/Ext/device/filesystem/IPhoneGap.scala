@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 
 trait IPhoneGap extends IHTML5 {
   /** [Method] Downloads a file from the server saving it into the Local File System
-  		* @param config Object
-  		* @returns FileTransfer
-  		*/
+    * @param config Object
+    * @returns FileTransfer
+    */
   var download: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method]
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var readMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Send a file to a server
-  		* @param config Object
-  		* @returns FileTransfer
-  		*/
+    * @param config Object
+    * @returns FileTransfer
+    */
   var upload: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method]
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var writeMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -87,7 +87,7 @@ object IPhoneGap {
     if (setFileSystemType != null) __obj.updateDynamic("setFileSystemType")(js.Any.fromFunction1(setFileSystemType))
     if (setReaderType != null) __obj.updateDynamic("setReaderType")(js.Any.fromFunction1(setReaderType))
     if (setStringEncoding != null) __obj.updateDynamic("setStringEncoding")(js.Any.fromFunction1(setStringEncoding))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (upload != null) __obj.updateDynamic("upload")(js.Any.fromFunction1(upload))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

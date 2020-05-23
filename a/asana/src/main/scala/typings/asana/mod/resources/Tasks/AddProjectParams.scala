@@ -15,14 +15,14 @@ object AddProjectParams {
   @scala.inline
   def apply(
     project: String | Double,
-    insertAfter: Int | Double = null,
-    insertBefore: Int | Double = null,
-    section: Int | Double = null
+    insertAfter: js.UndefOr[Double] = js.undefined,
+    insertBefore: js.UndefOr[Double] = js.undefined,
+    section: js.UndefOr[Double] = js.undefined
   ): AddProjectParams = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
-    if (insertAfter != null) __obj.updateDynamic("insertAfter")(insertAfter.asInstanceOf[js.Any])
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore.asInstanceOf[js.Any])
-    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertAfter)) __obj.updateDynamic("insertAfter")(insertAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertBefore)) __obj.updateDynamic("insertBefore")(insertBefore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(section)) __obj.updateDynamic("section")(section.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddProjectParams]
   }
 }

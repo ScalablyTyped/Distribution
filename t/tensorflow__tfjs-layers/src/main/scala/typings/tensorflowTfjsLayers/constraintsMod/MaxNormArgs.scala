@@ -28,10 +28,10 @@ trait MaxNormArgs extends js.Object {
 
 object MaxNormArgs {
   @scala.inline
-  def apply(axis: Int | Double = null, maxValue: Int | Double = null): MaxNormArgs = {
+  def apply(axis: js.UndefOr[Double] = js.undefined, maxValue: js.UndefOr[Double] = js.undefined): MaxNormArgs = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxNormArgs]
   }
 }

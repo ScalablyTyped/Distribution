@@ -1,8 +1,8 @@
 package typings.babylonjs.buildersIndexMod
 
-import typings.babylonjs.AnonDashSize
-import typings.babylonjs.AnonInstance
-import typings.babylonjs.AnonPoints
+import typings.babylonjs.anon.DashSize
+import typings.babylonjs.anon.Instance
+import typings.babylonjs.anon.Points
 import typings.babylonjs.linesMeshMod.LinesMesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -37,8 +37,8 @@ object LinesBuilder extends js.Object {
     * @returns the dashed line mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#dashed-lines
     */
-  def CreateDashedLines(name: String, options: AnonDashSize): LinesMesh = js.native
-  def CreateDashedLines(name: String, options: AnonDashSize, scene: Nullable[Scene]): LinesMesh = js.native
+  def CreateDashedLines(name: String, options: DashSize): LinesMesh = js.native
+  def CreateDashedLines(name: String, options: DashSize, scene: Nullable[Scene]): LinesMesh = js.native
   /**
     * Creates a line system mesh. A line system is a pool of many lines gathered in a single mesh
     * * A line system mesh is considered as a parametric shape since it has no predefined original shape. Its shape is determined by the passed array of lines as an input parameter
@@ -56,7 +56,7 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line system mesh
     */
-  def CreateLineSystem(name: String, options: AnonInstance, scene: Nullable[Scene]): LinesMesh = js.native
+  def CreateLineSystem(name: String, options: Instance, scene: Nullable[Scene]): LinesMesh = js.native
   /**
     * Creates a line mesh
     * A line mesh is considered as a parametric shape since it has no predefined original shape. Its shape is determined by the passed array of points as an input parameter
@@ -73,7 +73,7 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line mesh
     */
-  def CreateLines(name: String, options: AnonPoints): LinesMesh = js.native
-  def CreateLines(name: String, options: AnonPoints, scene: Nullable[Scene]): LinesMesh = js.native
+  def CreateLines(name: String, options: Points): LinesMesh = js.native
+  def CreateLines(name: String, options: Points, scene: Nullable[Scene]): LinesMesh = js.native
 }
 

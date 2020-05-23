@@ -26,7 +26,7 @@ object HeadersReceivedResponse {
     statusLine: String = null
   ): HeadersReceivedResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
     if (statusLine != null) __obj.updateDynamic("statusLine")(statusLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadersReceivedResponse]

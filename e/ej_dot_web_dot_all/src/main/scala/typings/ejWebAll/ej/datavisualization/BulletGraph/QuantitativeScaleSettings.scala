@@ -62,14 +62,14 @@ object QuantitativeScaleSettings {
     featureMeasures: js.Array[QuantitativeScaleSettingsFeatureMeasure] = null,
     featuredMeasureSettings: QuantitativeScaleSettingsFeaturedMeasureSettings = null,
     fields: QuantitativeScaleSettingsFields = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     labelSettings: QuantitativeScaleSettingsLabelSettings = null,
     location: QuantitativeScaleSettingsLocation = null,
     majorTickSettings: QuantitativeScaleSettingsMajorTickSettings = null,
-    maximum: Int | Double = null,
-    minimum: Int | Double = null,
+    maximum: js.UndefOr[Double] = js.undefined,
+    minimum: js.UndefOr[Double] = js.undefined,
     minorTickSettings: QuantitativeScaleSettingsMinorTickSettings = null,
-    minorTicksPerInterval: Int | Double = null,
+    minorTicksPerInterval: js.UndefOr[Double] = js.undefined,
     tickPlacement: TickPlacement | String = null,
     tickPosition: TickPosition | String = null
   ): QuantitativeScaleSettings = {
@@ -78,14 +78,14 @@ object QuantitativeScaleSettings {
     if (featureMeasures != null) __obj.updateDynamic("featureMeasures")(featureMeasures.asInstanceOf[js.Any])
     if (featuredMeasureSettings != null) __obj.updateDynamic("featuredMeasureSettings")(featuredMeasureSettings.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (labelSettings != null) __obj.updateDynamic("labelSettings")(labelSettings.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (majorTickSettings != null) __obj.updateDynamic("majorTickSettings")(majorTickSettings.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
     if (minorTickSettings != null) __obj.updateDynamic("minorTickSettings")(minorTickSettings.asInstanceOf[js.Any])
-    if (minorTicksPerInterval != null) __obj.updateDynamic("minorTicksPerInterval")(minorTicksPerInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTicksPerInterval)) __obj.updateDynamic("minorTicksPerInterval")(minorTicksPerInterval.get.asInstanceOf[js.Any])
     if (tickPlacement != null) __obj.updateDynamic("tickPlacement")(tickPlacement.asInstanceOf[js.Any])
     if (tickPosition != null) __obj.updateDynamic("tickPosition")(tickPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantitativeScaleSettings]

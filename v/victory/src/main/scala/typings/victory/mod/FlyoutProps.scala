@@ -1,9 +1,9 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.Anon1
-import typings.victory.AnonXBoolean
-import typings.victory.AnonY
+import typings.victory.anon.XBoolean
+import typings.victory.anon.Y
+import typings.victory.anon.`1`
 import typings.victory.victoryStrings.bottom
 import typings.victory.victoryStrings.left
 import typings.victory.victoryStrings.right
@@ -20,7 +20,7 @@ trait FlyoutProps extends VictoryCommonProps {
   /**
     * the center coordinates of the flyout
     */
-  var center: js.UndefOr[AnonY] = js.undefined
+  var center: js.UndefOr[Y] = js.undefined
   /**
     * the class name that will be applied to the rendered element
     */
@@ -110,59 +110,59 @@ object FlyoutProps {
   def apply(
     active: js.UndefOr[Boolean] = js.undefined,
     animate: Boolean | AnimatePropTypeInterface = null,
-    center: AnonY = null,
+    center: Y = null,
     className: String = null,
     containerComponent: ReactElement = null,
-    cornerRadius: Int | Double = null,
+    cornerRadius: js.UndefOr[Double] = js.undefined,
     data: js.Array[_] = null,
     datum: js.Object = null,
-    dx: Int | Double = null,
-    dy: Int | Double = null,
+    dx: js.UndefOr[Double] = js.undefined,
+    dy: js.UndefOr[Double] = js.undefined,
     events: js.Object = null,
     groupComponent: ReactElement = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizontal: js.UndefOr[Boolean] = js.undefined,
     id: String | Double = null,
-    index: Int | Double = null,
-    maxDomain: Double | AnonY = null,
-    minDomain: Double | AnonY = null,
+    index: js.UndefOr[Double] = js.undefined,
+    maxDomain: Double | Y = null,
+    minDomain: Double | Y = null,
     name: String = null,
     orientation: top | bottom | left | right = null,
     origin: js.Object = null,
     padding: PaddingProps = null,
     pathComponent: ReactElement = null,
-    pointerLength: Int | Double = null,
-    pointerWidth: Int | Double = null,
+    pointerLength: js.UndefOr[Double] = js.undefined,
+    pointerWidth: js.UndefOr[Double] = js.undefined,
     polar: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
-    scale: ScalePropType | D3Scale | Anon1 = null,
+    scale: ScalePropType | D3Scale | `1` = null,
     shapeRendering: String = null,
-    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
+    singleQuadrantDomainPadding: Boolean | XBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleObject = null,
     theme: VictoryThemeDefinition = null,
     transform: String = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): FlyoutProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(cornerRadius)) __obj.updateDynamic("cornerRadius")(cornerRadius.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (datum != null) __obj.updateDynamic("datum")(datum.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
+    if (!js.isUndefined(dx)) __obj.updateDynamic("dx")(dx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dy)) __obj.updateDynamic("dy")(dy.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
     if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
@@ -170,20 +170,20 @@ object FlyoutProps {
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (pathComponent != null) __obj.updateDynamic("pathComponent")(pathComponent.asInstanceOf[js.Any])
-    if (pointerLength != null) __obj.updateDynamic("pointerLength")(pointerLength.asInstanceOf[js.Any])
-    if (pointerWidth != null) __obj.updateDynamic("pointerWidth")(pointerWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointerLength)) __obj.updateDynamic("pointerLength")(pointerLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointerWidth)) __obj.updateDynamic("pointerWidth")(pointerWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
     if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlyoutProps]
   }
 }

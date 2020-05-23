@@ -54,7 +54,7 @@ object SkillsStoreSkill {
     if (SkillDetails != null) __obj.updateDynamic("SkillDetails")(SkillDetails.asInstanceOf[js.Any])
     if (SkillId != null) __obj.updateDynamic("SkillId")(SkillId.asInstanceOf[js.Any])
     if (SkillName != null) __obj.updateDynamic("SkillName")(SkillName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsLinking)) __obj.updateDynamic("SupportsLinking")(SupportsLinking.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsLinking)) __obj.updateDynamic("SupportsLinking")(SupportsLinking.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkillsStoreSkill]
   }
 }

@@ -1,6 +1,6 @@
 package typings.jsqubits.mod.jsqubits
 
-import typings.jsqubits.AnonDecimalPlaces
+import typings.jsqubits.anon.DecimalPlaces
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Complex extends js.Object {
   def eql(other: Double): Boolean = js.native
   def eql(other: Complex): Boolean = js.native
   def format(): String = js.native
-  def format(options: AnonDecimalPlaces): String = js.native
+  def format(options: DecimalPlaces): String = js.native
   def inspect(): String = js.native
   def magnitude(): Double = js.native
   def multiply(other: Double): Complex = js.native

@@ -1,6 +1,6 @@
 package typings.gapiClientPrediction.gapi.client.prediction
 
-import typings.gapiClientPrediction.AnonLabel
+import typings.gapiClientPrediction.anon.Label
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait Output extends js.Object {
   /** The most likely class label (Categorical models only). */
   var outputLabel: js.UndefOr[String] = js.undefined
   /** A list of class labels with their estimated probabilities (Categorical models only). */
-  var outputMulti: js.UndefOr[js.Array[AnonLabel]] = js.undefined
+  var outputMulti: js.UndefOr[js.Array[Label]] = js.undefined
   /** The estimated regression value (Regression models only). */
   var outputValue: js.UndefOr[String] = js.undefined
   /** A URL to re-request this resource. */
@@ -26,7 +26,7 @@ object Output {
     id: String = null,
     kind: String = null,
     outputLabel: String = null,
-    outputMulti: js.Array[AnonLabel] = null,
+    outputMulti: js.Array[Label] = null,
     outputValue: String = null,
     selfLink: String = null
   ): Output = {

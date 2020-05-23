@@ -1,8 +1,8 @@
 package typings.jsreportCore.mod
 
-import typings.jsreportCore.AnonAllowedModules
-import typings.jsreportCore.AnonSilent
-import typings.jsreportCore.PartialallowedModulesArra
+import typings.jsreportCore.anon.AllowedModules
+import typings.jsreportCore.anon.PartialallowedModulesArra
+import typings.jsreportCore.anon.Silent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +12,9 @@ trait Configuration extends js.Object {
   var dataDirectory: String
   var extensionsLocationCache: Boolean
   var loadConfig: Boolean
-  var logger: AnonSilent
+  var logger: Silent
   var rootDirectory: String
-  var scripts: AnonAllowedModules
+  var scripts: AllowedModules
   var tasks: PartialallowedModulesArra
   var tempDirectory: String
 }
@@ -26,9 +26,9 @@ object Configuration {
     dataDirectory: String,
     extensionsLocationCache: Boolean,
     loadConfig: Boolean,
-    logger: AnonSilent,
+    logger: Silent,
     rootDirectory: String,
-    scripts: AnonAllowedModules,
+    scripts: AllowedModules,
     tasks: PartialallowedModulesArra,
     tempDirectory: String
   ): Configuration = {

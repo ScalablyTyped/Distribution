@@ -33,7 +33,7 @@ object InviterInviteOptions {
     if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
     if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers.asInstanceOf[js.Any])
     if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutSdp)) __obj.updateDynamic("withoutSdp")(withoutSdp.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutSdp)) __obj.updateDynamic("withoutSdp")(withoutSdp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InviterInviteOptions]
   }
 }

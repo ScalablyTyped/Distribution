@@ -6,14 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.InputManager")
 @js.native
-class InputManager protected () extends js.Object {
-  /**
-    * Creates a new InputManager
-    * @param scene defines the hosting scene
-    */
-  def this(scene: Scene) = this()
+trait InputManager extends js.Object {
   var _checkPrePointerObservable: js.Any = js.native
   var _currentPickResult: js.Any = js.native
   var _delayedSimpleClick: js.Any = js.native
@@ -136,19 +130,5 @@ class InputManager protected () extends js.Object {
     * Gets the pointer coordinates in 2D without any translation (ie. straight out of the pointer event)
     */
   def unTranslatedPointer: Vector2 = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.InputManager")
-@js.native
-object InputManager extends js.Object {
-  /** Time in milliseconds with two consecutive clicks will be considered as a double click */
-  var DoubleClickDelay: Double = js.native
-  /** The distance in pixel that you have to move to prevent some events */
-  var DragMovementThreshold: Double = js.native
-  /** If you need to check double click without raising a single click at first click, enable this flag */
-  var ExclusiveDoubleClickMode: Boolean = js.native
-  /** Time in milliseconds to wait to raise long press events if button is still pressed */
-  var LongPressDelay: Double = js.native
 }
 

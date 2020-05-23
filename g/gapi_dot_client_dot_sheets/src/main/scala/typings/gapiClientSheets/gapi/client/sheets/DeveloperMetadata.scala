@@ -31,14 +31,14 @@ object DeveloperMetadata {
   @scala.inline
   def apply(
     location: DeveloperMetadataLocation = null,
-    metadataId: Int | Double = null,
+    metadataId: js.UndefOr[Double] = js.undefined,
     metadataKey: String = null,
     metadataValue: String = null,
     visibility: String = null
   ): DeveloperMetadata = {
     val __obj = js.Dynamic.literal()
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (metadataId != null) __obj.updateDynamic("metadataId")(metadataId.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadataId)) __obj.updateDynamic("metadataId")(metadataId.get.asInstanceOf[js.Any])
     if (metadataKey != null) __obj.updateDynamic("metadataKey")(metadataKey.asInstanceOf[js.Any])
     if (metadataValue != null) __obj.updateDynamic("metadataValue")(metadataValue.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])

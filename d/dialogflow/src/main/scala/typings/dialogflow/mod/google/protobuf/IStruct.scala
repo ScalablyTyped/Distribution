@@ -13,9 +13,9 @@ trait IStruct extends js.Object {
 
 object IStruct {
   @scala.inline
-  def apply(fields: StringDictionary[IValue] = null): IStruct = {
+  def apply(fields: js.UndefOr[Null | StringDictionary[IValue]] = js.undefined): IStruct = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStruct]
   }
 }

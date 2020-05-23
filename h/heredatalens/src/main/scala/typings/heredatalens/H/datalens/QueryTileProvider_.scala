@@ -1,6 +1,5 @@
 package typings.heredatalens.H.datalens
 
-import typings.heredatalens.H.datalens.QueryTileProvider.Options
 import typings.heredatalens.H.datalens.QueryTileProvider.TileParamNames
 import typings.heremaps.H.map.provider.RemoteTileProvider
 import scala.scalajs.js
@@ -13,15 +12,8 @@ import scala.scalajs.js.annotation._
   * This provider loads tiled query data with the Data Lens REST API. Tiled queries are used to load data only for the current viewport.
   * This optimizes memory and network usage and enables progressive rendering.
   */
-@JSGlobal("H.datalens.QueryTileProvider")
 @js.native
-class QueryTileProvider_ protected () extends RemoteTileProvider {
-  /**
-    * Constructor
-    * @param service - Data Lens REST API service
-    * @param options - Configures source query and data accessibility parameters
-    */
-  def this(service: Service, options: Options) = this()
+trait QueryTileProvider_ extends RemoteTileProvider {
   /**
     * Updates the query ID to be used in the next call of the Data Lens REST API.
     * Note that new data will be fetched only after the reload method is called.

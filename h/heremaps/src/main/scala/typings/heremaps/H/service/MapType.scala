@@ -39,18 +39,18 @@ object MapType {
     labels: TileLayer,
     map: TileLayer,
     xbase: TileLayer,
-    basenight: TileLayer = null,
-    mapnight: TileLayer = null,
-    trafficincidents: MarkerTileLayer = null,
+    basenight: js.UndefOr[Null | TileLayer] = js.undefined,
+    mapnight: js.UndefOr[Null | TileLayer] = js.undefined,
+    trafficincidents: js.UndefOr[Null | MarkerTileLayer] = js.undefined,
     transit: TileLayer = null,
-    xbasenight: TileLayer = null
+    xbasenight: js.UndefOr[Null | TileLayer] = js.undefined
   ): MapType = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], xbase = xbase.asInstanceOf[js.Any])
-    if (basenight != null) __obj.updateDynamic("basenight")(basenight.asInstanceOf[js.Any])
-    if (mapnight != null) __obj.updateDynamic("mapnight")(mapnight.asInstanceOf[js.Any])
-    if (trafficincidents != null) __obj.updateDynamic("trafficincidents")(trafficincidents.asInstanceOf[js.Any])
+    if (!js.isUndefined(basenight)) __obj.updateDynamic("basenight")(basenight.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapnight)) __obj.updateDynamic("mapnight")(mapnight.asInstanceOf[js.Any])
+    if (!js.isUndefined(trafficincidents)) __obj.updateDynamic("trafficincidents")(trafficincidents.asInstanceOf[js.Any])
     if (transit != null) __obj.updateDynamic("transit")(transit.asInstanceOf[js.Any])
-    if (xbasenight != null) __obj.updateDynamic("xbasenight")(xbasenight.asInstanceOf[js.Any])
+    if (!js.isUndefined(xbasenight)) __obj.updateDynamic("xbasenight")(xbasenight.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapType]
   }
 }

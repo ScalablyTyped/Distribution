@@ -96,21 +96,21 @@ object OrderableDBInstanceOption {
     Engine: String = null,
     EngineVersion: String = null,
     LicenseModel: String = null,
-    MaxIopsPerDbInstance: Int | scala.Double = null,
-    MaxIopsPerGib: Int | scala.Double = null,
-    MaxStorageSize: Int | scala.Double = null,
-    MinIopsPerDbInstance: Int | scala.Double = null,
-    MinIopsPerGib: Int | scala.Double = null,
-    MinStorageSize: Int | scala.Double = null,
-    MultiAZCapable: js.UndefOr[scala.Boolean] = js.undefined,
-    ReadReplicaCapable: js.UndefOr[scala.Boolean] = js.undefined,
+    MaxIopsPerDbInstance: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxIopsPerGib: js.UndefOr[DoubleOptional] = js.undefined,
+    MaxStorageSize: js.UndefOr[IntegerOptional] = js.undefined,
+    MinIopsPerDbInstance: js.UndefOr[IntegerOptional] = js.undefined,
+    MinIopsPerGib: js.UndefOr[DoubleOptional] = js.undefined,
+    MinStorageSize: js.UndefOr[IntegerOptional] = js.undefined,
+    MultiAZCapable: js.UndefOr[Boolean] = js.undefined,
+    ReadReplicaCapable: js.UndefOr[Boolean] = js.undefined,
     StorageType: String = null,
-    SupportsEnhancedMonitoring: js.UndefOr[scala.Boolean] = js.undefined,
-    SupportsIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined,
-    SupportsIops: js.UndefOr[scala.Boolean] = js.undefined,
-    SupportsPerformanceInsights: js.UndefOr[scala.Boolean] = js.undefined,
-    SupportsStorageEncryption: js.UndefOr[scala.Boolean] = js.undefined,
-    Vpc: js.UndefOr[scala.Boolean] = js.undefined
+    SupportsEnhancedMonitoring: js.UndefOr[Boolean] = js.undefined,
+    SupportsIAMDatabaseAuthentication: js.UndefOr[Boolean] = js.undefined,
+    SupportsIops: js.UndefOr[Boolean] = js.undefined,
+    SupportsPerformanceInsights: js.UndefOr[Boolean] = js.undefined,
+    SupportsStorageEncryption: js.UndefOr[Boolean] = js.undefined,
+    Vpc: js.UndefOr[Boolean] = js.undefined
   ): OrderableDBInstanceOption = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
@@ -118,21 +118,21 @@ object OrderableDBInstanceOption {
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel.asInstanceOf[js.Any])
-    if (MaxIopsPerDbInstance != null) __obj.updateDynamic("MaxIopsPerDbInstance")(MaxIopsPerDbInstance.asInstanceOf[js.Any])
-    if (MaxIopsPerGib != null) __obj.updateDynamic("MaxIopsPerGib")(MaxIopsPerGib.asInstanceOf[js.Any])
-    if (MaxStorageSize != null) __obj.updateDynamic("MaxStorageSize")(MaxStorageSize.asInstanceOf[js.Any])
-    if (MinIopsPerDbInstance != null) __obj.updateDynamic("MinIopsPerDbInstance")(MinIopsPerDbInstance.asInstanceOf[js.Any])
-    if (MinIopsPerGib != null) __obj.updateDynamic("MinIopsPerGib")(MinIopsPerGib.asInstanceOf[js.Any])
-    if (MinStorageSize != null) __obj.updateDynamic("MinStorageSize")(MinStorageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZCapable)) __obj.updateDynamic("MultiAZCapable")(MultiAZCapable.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReadReplicaCapable)) __obj.updateDynamic("ReadReplicaCapable")(ReadReplicaCapable.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxIopsPerDbInstance)) __obj.updateDynamic("MaxIopsPerDbInstance")(MaxIopsPerDbInstance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxIopsPerGib)) __obj.updateDynamic("MaxIopsPerGib")(MaxIopsPerGib.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxStorageSize)) __obj.updateDynamic("MaxStorageSize")(MaxStorageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinIopsPerDbInstance)) __obj.updateDynamic("MinIopsPerDbInstance")(MinIopsPerDbInstance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinIopsPerGib)) __obj.updateDynamic("MinIopsPerGib")(MinIopsPerGib.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinStorageSize)) __obj.updateDynamic("MinStorageSize")(MinStorageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiAZCapable)) __obj.updateDynamic("MultiAZCapable")(MultiAZCapable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReadReplicaCapable)) __obj.updateDynamic("ReadReplicaCapable")(ReadReplicaCapable.get.asInstanceOf[js.Any])
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsEnhancedMonitoring)) __obj.updateDynamic("SupportsEnhancedMonitoring")(SupportsEnhancedMonitoring.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsIAMDatabaseAuthentication)) __obj.updateDynamic("SupportsIAMDatabaseAuthentication")(SupportsIAMDatabaseAuthentication.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsIops)) __obj.updateDynamic("SupportsIops")(SupportsIops.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsPerformanceInsights)) __obj.updateDynamic("SupportsPerformanceInsights")(SupportsPerformanceInsights.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsStorageEncryption)) __obj.updateDynamic("SupportsStorageEncryption")(SupportsStorageEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(Vpc)) __obj.updateDynamic("Vpc")(Vpc.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsEnhancedMonitoring)) __obj.updateDynamic("SupportsEnhancedMonitoring")(SupportsEnhancedMonitoring.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsIAMDatabaseAuthentication)) __obj.updateDynamic("SupportsIAMDatabaseAuthentication")(SupportsIAMDatabaseAuthentication.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsIops)) __obj.updateDynamic("SupportsIops")(SupportsIops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsPerformanceInsights)) __obj.updateDynamic("SupportsPerformanceInsights")(SupportsPerformanceInsights.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsStorageEncryption)) __obj.updateDynamic("SupportsStorageEncryption")(SupportsStorageEncryption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Vpc)) __obj.updateDynamic("Vpc")(Vpc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderableDBInstanceOption]
   }
 }

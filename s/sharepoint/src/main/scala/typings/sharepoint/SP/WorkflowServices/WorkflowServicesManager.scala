@@ -1,17 +1,13 @@
 package typings.sharepoint.SP.WorkflowServices
 
 import typings.sharepoint.SP.ClientObject
-import typings.sharepoint.SP.ClientRuntimeContext
-import typings.sharepoint.SP.Web
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes the workflow host configuration states and provides service objects that interact with the workflow */
-@JSGlobal("SP.WorkflowServices.WorkflowServicesManager")
 @js.native
-class WorkflowServicesManager protected () extends ClientObject {
-  def this(context: ClientRuntimeContext, web: Web) = this()
+trait WorkflowServicesManager extends ClientObject {
   def getWorkflowDeploymentService(): WorkflowDeploymentService = js.native
   def getWorkflowInstanceService(): WorkflowInstanceService = js.native
   def getWorkflowInteropService(): InteropService = js.native
@@ -22,12 +18,5 @@ class WorkflowServicesManager protected () extends ClientObject {
   def get_isConnected(): Boolean = js.native
   /** Returns the path of the current scope in the workflow host. */
   def get_scopePath(): String = js.native
-}
-
-/* static members */
-@JSGlobal("SP.WorkflowServices.WorkflowServicesManager")
-@js.native
-object WorkflowServicesManager extends js.Object {
-  def newObject(context: ClientRuntimeContext, web: Web): WorkflowServicesManager = js.native
 }
 

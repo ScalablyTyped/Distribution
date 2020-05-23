@@ -77,28 +77,28 @@ object SliderProps {
     align: left | center | right = null,
     autoHeight: js.UndefOr[Boolean] = js.undefined,
     beforeSlide: (/* currentIndex */ Double, /* nextIndex */ Double) => Unit = null,
-    currentIndex: Int | Double = null,
+    currentIndex: js.UndefOr[Double] = js.undefined,
     currentKey: String | Double = null,
-    flickTimeout: Int | Double = null,
-    slidesToMove: Int | Double = null,
-    slidesToShow: Int | Double = null,
+    flickTimeout: js.UndefOr[Double] = js.undefined,
+    slidesToMove: js.UndefOr[Double] = js.undefined,
+    slidesToShow: js.UndefOr[Double] = js.undefined,
     springConfig: OpaqueConfig = null,
     swipe: Boolean | touch | mouse = null,
-    swipeThreshold: Int | Double = null
+    swipeThreshold: js.UndefOr[Double] = js.undefined
   ): SliderProps = {
     val __obj = js.Dynamic.literal()
     if (afterSlide != null) __obj.updateDynamic("afterSlide")(js.Any.fromFunction1(afterSlide))
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
     if (beforeSlide != null) __obj.updateDynamic("beforeSlide")(js.Any.fromFunction2(beforeSlide))
-    if (currentIndex != null) __obj.updateDynamic("currentIndex")(currentIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentIndex)) __obj.updateDynamic("currentIndex")(currentIndex.get.asInstanceOf[js.Any])
     if (currentKey != null) __obj.updateDynamic("currentKey")(currentKey.asInstanceOf[js.Any])
-    if (flickTimeout != null) __obj.updateDynamic("flickTimeout")(flickTimeout.asInstanceOf[js.Any])
-    if (slidesToMove != null) __obj.updateDynamic("slidesToMove")(slidesToMove.asInstanceOf[js.Any])
-    if (slidesToShow != null) __obj.updateDynamic("slidesToShow")(slidesToShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(flickTimeout)) __obj.updateDynamic("flickTimeout")(flickTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slidesToMove)) __obj.updateDynamic("slidesToMove")(slidesToMove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slidesToShow)) __obj.updateDynamic("slidesToShow")(slidesToShow.get.asInstanceOf[js.Any])
     if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig.asInstanceOf[js.Any])
     if (swipe != null) __obj.updateDynamic("swipe")(swipe.asInstanceOf[js.Any])
-    if (swipeThreshold != null) __obj.updateDynamic("swipeThreshold")(swipeThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeThreshold)) __obj.updateDynamic("swipeThreshold")(swipeThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderProps]
   }
 }

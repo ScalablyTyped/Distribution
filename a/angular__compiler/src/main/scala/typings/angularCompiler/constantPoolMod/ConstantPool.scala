@@ -1,6 +1,6 @@
 package typings.angularCompiler.constantPoolMod
 
-import typings.angularCompiler.AnonLiteralFactory
+import typings.angularCompiler.anon.LiteralFactory
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.LiteralArrayExpr
 import typings.angularCompiler.outputAstMod.LiteralMapExpr
@@ -29,8 +29,8 @@ class ConstantPool () extends js.Object {
   def getConstLiteral(literal: Expression, forceShared: Boolean): Expression = js.native
   def getDefinition(`type`: js.Any, kind: DefinitionKind, ctx: OutputContext): Expression = js.native
   def getDefinition(`type`: js.Any, kind: DefinitionKind, ctx: OutputContext, forceShared: Boolean): Expression = js.native
-  def getLiteralFactory(literal: LiteralArrayExpr): AnonLiteralFactory = js.native
-  def getLiteralFactory(literal: LiteralMapExpr): AnonLiteralFactory = js.native
+  def getLiteralFactory(literal: LiteralArrayExpr): LiteralFactory = js.native
+  def getLiteralFactory(literal: LiteralMapExpr): LiteralFactory = js.native
   def propertyNameOf(kind: DefinitionKind): String = js.native
   /**
     * Produce a unique name.

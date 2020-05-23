@@ -1,7 +1,7 @@
 
 # Scala.js typings for mongoose
 
-Typings are for version 5.7.12
+Typings are for version 5.7.13
 
 ## Library description:
 Mongoose MongoDB ODM

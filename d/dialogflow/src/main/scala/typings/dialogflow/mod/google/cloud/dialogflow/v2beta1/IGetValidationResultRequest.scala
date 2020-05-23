@@ -14,10 +14,13 @@ trait IGetValidationResultRequest extends js.Object {
 
 object IGetValidationResultRequest {
   @scala.inline
-  def apply(languageCode: String = null, parent: String = null): IGetValidationResultRequest = {
+  def apply(
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): IGetValidationResultRequest = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetValidationResultRequest]
   }
 }

@@ -40,7 +40,7 @@ trait IOrderPayOptions extends IDataOptionsWithMetadata {
 object IOrderPayOptions {
   @scala.inline
   def apply(
-    application_fee: Int | Double = null,
+    application_fee: js.UndefOr[Double] = js.undefined,
     customer: String = null,
     email: String = null,
     expand: js.Array[String] = null,
@@ -49,7 +49,7 @@ object IOrderPayOptions {
     source: String | ICardSourceCreationOptions = null
   ): IOrderPayOptions = {
     val __obj = js.Dynamic.literal()
-    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee)) __obj.updateDynamic("application_fee")(application_fee.get.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])

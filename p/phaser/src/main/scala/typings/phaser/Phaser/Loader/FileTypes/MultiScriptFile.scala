@@ -1,9 +1,9 @@
 package typings.phaser.Phaser.Loader.FileTypes
 
+import typings.phaser.Phaser.Loader.File
 import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Loader.MultiFile
-import typings.phaser.Phaser.Types.Loader.FileTypes.MultiScriptFileConfig
-import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
+import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,30 +15,36 @@ import scala.scalajs.js.annotation._
   * 
   * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#scripts.
   */
-@JSGlobal("Phaser.Loader.FileTypes.MultiScriptFile")
-@js.native
-class MultiScriptFile protected () extends MultiFile {
-  /**
-    * 
-    * @param loader A reference to the Loader that is responsible for this file.
-    * @param key The key to use for this file, or a file configuration object.
-    * @param url An array of absolute or relative URLs to load the script files from. They are processed in the order given in the array.
-    * @param xhrSettings An XHR Settings configuration object for the script files. Used in replacement of the Loaders default XHR Settings.
-    */
-  def this(loader: LoaderPlugin, key: String) = this()
-  def this(loader: LoaderPlugin, key: MultiScriptFileConfig) = this()
-  def this(loader: LoaderPlugin, key: String, url: js.Array[String]) = this()
-  def this(loader: LoaderPlugin, key: MultiScriptFileConfig, url: js.Array[String]) = this()
-  def this(loader: LoaderPlugin, key: String, url: js.Array[String], xhrSettings: XHRSettingsObject) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: MultiScriptFileConfig,
-    url: js.Array[String],
-    xhrSettings: XHRSettingsObject
-  ) = this()
+trait MultiScriptFile extends MultiFile {
   /**
     * Adds this file to its target cache upon successful loading and processing.
     */
-  def addToCache(): Unit = js.native
+  def addToCache(): Unit
+}
+
+object MultiScriptFile {
+  @scala.inline
+  def apply(
+    addToCache: () => Unit,
+    addToMultiFile: File => MultiFile,
+    baseURL: String,
+    complete: Boolean,
+    config: js.Any,
+    failed: integer,
+    files: js.Array[File],
+    isReadyToProcess: () => Boolean,
+    key: String,
+    loader: LoaderPlugin,
+    onFileComplete: File => Unit,
+    onFileFailed: File => Unit,
+    path: String,
+    pending: integer,
+    prefix: String,
+    `type`: String
+  ): MultiScriptFile = {
+    val __obj = js.Dynamic.literal(addToCache = js.Any.fromFunction0(addToCache), addToMultiFile = js.Any.fromFunction1(addToMultiFile), baseURL = baseURL.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], isReadyToProcess = js.Any.fromFunction0(isReadyToProcess), key = key.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], onFileComplete = js.Any.fromFunction1(onFileComplete), onFileFailed = js.Any.fromFunction1(onFileFailed), path = path.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MultiScriptFile]
+  }
 }
 

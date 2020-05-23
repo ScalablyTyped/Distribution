@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   */
 trait EmailAddress extends js.Object {
   /**
-  	 * The email address.
-  	 */
+    * The email address.
+    */
   var address: String
   /**
-  	 * An array of grouped addresses.
-  	 */
+    * An array of grouped addresses.
+    */
   var group: js.UndefOr[js.Array[EmailAddress]] = js.undefined
   /**
-  	 * The name part of the email/group.
-  	 */
+    * The name part of the email/group.
+    */
   var name: String
 }
 

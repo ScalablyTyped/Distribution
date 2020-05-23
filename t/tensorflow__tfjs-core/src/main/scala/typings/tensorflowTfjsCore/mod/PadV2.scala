@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-core", "PadV2")
 @js.native
-object PadV2
-  extends TopLevel[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.PadV2]
+object PadV2 extends TopLevel[/* "Identity" */ String]
 

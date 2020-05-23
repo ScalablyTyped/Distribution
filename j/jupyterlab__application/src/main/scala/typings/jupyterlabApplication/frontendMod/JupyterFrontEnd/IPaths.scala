@@ -1,8 +1,8 @@
 package typings.jupyterlabApplication.frontendMod.JupyterFrontEnd
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jupyterlabApplication.AnonApp
-import typings.jupyterlabApplication.AnonAppSettings
+import typings.jupyterlabApplication.anon.App
+import typings.jupyterlabApplication.anon.AppSettings
 import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,11 +28,11 @@ trait IPaths extends js.Object {
     * these paths in a request to the server (it would be better to write a
     * server extension to handle these cases).
     */
-  val directories: AnonAppSettings
+  val directories: AppSettings
   /**
     * The urls used by the application.
     */
-  val urls: AnonApp
+  val urls: App
 }
 
 /**

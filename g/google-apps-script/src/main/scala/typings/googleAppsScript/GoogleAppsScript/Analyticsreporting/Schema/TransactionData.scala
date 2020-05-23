@@ -15,15 +15,15 @@ object TransactionData {
   @scala.inline
   def apply(
     transactionId: String = null,
-    transactionRevenue: Int | Double = null,
-    transactionShipping: Int | Double = null,
-    transactionTax: Int | Double = null
+    transactionRevenue: js.UndefOr[Double] = js.undefined,
+    transactionShipping: js.UndefOr[Double] = js.undefined,
+    transactionTax: js.UndefOr[Double] = js.undefined
   ): TransactionData = {
     val __obj = js.Dynamic.literal()
     if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
-    if (transactionRevenue != null) __obj.updateDynamic("transactionRevenue")(transactionRevenue.asInstanceOf[js.Any])
-    if (transactionShipping != null) __obj.updateDynamic("transactionShipping")(transactionShipping.asInstanceOf[js.Any])
-    if (transactionTax != null) __obj.updateDynamic("transactionTax")(transactionTax.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionRevenue)) __obj.updateDynamic("transactionRevenue")(transactionRevenue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionShipping)) __obj.updateDynamic("transactionShipping")(transactionShipping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionTax)) __obj.updateDynamic("transactionTax")(transactionTax.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionData]
   }
 }

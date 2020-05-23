@@ -35,9 +35,7 @@ object ICurrentChangedArgs {
     currentTitle: Title[T] = null,
     previousTitle: Title[T] = null
   ): ICurrentChangedArgs[T] = {
-    val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], previousIndex = previousIndex.asInstanceOf[js.Any])
-    if (currentTitle != null) __obj.updateDynamic("currentTitle")(currentTitle.asInstanceOf[js.Any])
-    if (previousTitle != null) __obj.updateDynamic("previousTitle")(previousTitle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], previousIndex = previousIndex.asInstanceOf[js.Any], currentTitle = currentTitle.asInstanceOf[js.Any], previousTitle = previousTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICurrentChangedArgs[T]]
   }
 }

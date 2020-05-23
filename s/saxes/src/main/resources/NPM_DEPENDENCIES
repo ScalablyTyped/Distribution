@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "saxes" : "5.0.0"
+      "saxes" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "saxes" : "5.0.0"
+      "saxes" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

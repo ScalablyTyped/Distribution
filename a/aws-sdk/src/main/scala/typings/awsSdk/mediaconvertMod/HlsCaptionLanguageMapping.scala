@@ -27,13 +27,13 @@ trait HlsCaptionLanguageMapping extends js.Object {
 object HlsCaptionLanguageMapping {
   @scala.inline
   def apply(
-    CaptionChannel: Int | Double = null,
+    CaptionChannel: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined,
     CustomLanguageCode: stringMin3Max3PatternAZaZ3 = null,
     LanguageCode: LanguageCode = null,
     LanguageDescription: string = null
   ): HlsCaptionLanguageMapping = {
     val __obj = js.Dynamic.literal()
-    if (CaptionChannel != null) __obj.updateDynamic("CaptionChannel")(CaptionChannel.asInstanceOf[js.Any])
+    if (!js.isUndefined(CaptionChannel)) __obj.updateDynamic("CaptionChannel")(CaptionChannel.get.asInstanceOf[js.Any])
     if (CustomLanguageCode != null) __obj.updateDynamic("CustomLanguageCode")(CustomLanguageCode.asInstanceOf[js.Any])
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
     if (LanguageDescription != null) __obj.updateDynamic("LanguageDescription")(LanguageDescription.asInstanceOf[js.Any])

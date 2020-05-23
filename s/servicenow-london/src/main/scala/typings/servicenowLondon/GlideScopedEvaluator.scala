@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("GlideScopedEvaluator")
 @js.native
-/**
-  * Instantiates a GlideScopedEvaluator object.
-  */
-class GlideScopedEvaluator () extends js.Object {
+trait GlideScopedEvaluator extends js.Object {
   /**
     * Evaluates a script from a GlideRecord field.
     *

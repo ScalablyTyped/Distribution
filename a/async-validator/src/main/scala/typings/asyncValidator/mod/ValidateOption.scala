@@ -21,9 +21,9 @@ object ValidateOption {
     suppressWarning: js.UndefOr[Boolean] = js.undefined
   ): ValidateOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.get.asInstanceOf[js.Any])
     if (firstFields != null) __obj.updateDynamic("firstFields")(firstFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressWarning)) __obj.updateDynamic("suppressWarning")(suppressWarning.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressWarning)) __obj.updateDynamic("suppressWarning")(suppressWarning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateOption]
   }
 }

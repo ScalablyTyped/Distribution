@@ -1,7 +1,7 @@
 package typings.synaptic.mod
 
 import typings.std.Worker
-import typings.synaptic.AnonCode
+import typings.synaptic.anon.Code
 import typings.synaptic.mod.Layer.LayerConnection
 import typings.synaptic.mod.Layer.connectionType
 import typings.synaptic.mod.Layer.gateType
@@ -89,8 +89,8 @@ class Network_ () extends js.Object {
     * Export the topology into dot language which can be visualized as graphs using dot.
     * @param edgeConnection
     */
-  def toDot(): AnonCode = js.native
-  def toDot(edgeConnection: js.Any): AnonCode = js.native
+  def toDot(): Code = js.native
+  def toDot(edgeConnection: js.Any): Code = js.native
   /**
     * Networks can be stored as JSON's.
     */

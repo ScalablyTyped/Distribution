@@ -1,6 +1,6 @@
 package typings.sloc.mod
 
-import typings.sloc.RecordKeynumber
+import typings.sloc.anon.RecordKeynumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

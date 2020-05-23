@@ -19,15 +19,15 @@ object FilterExpression {
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     expressionValue: String = null,
     field: String = null,
-    fieldIndex: Int | Double = null,
+    fieldIndex: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     matchType: String = null
   ): FilterExpression = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
     if (expressionValue != null) __obj.updateDynamic("expressionValue")(expressionValue.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (fieldIndex != null) __obj.updateDynamic("fieldIndex")(fieldIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldIndex)) __obj.updateDynamic("fieldIndex")(fieldIndex.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (matchType != null) __obj.updateDynamic("matchType")(matchType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterExpression]

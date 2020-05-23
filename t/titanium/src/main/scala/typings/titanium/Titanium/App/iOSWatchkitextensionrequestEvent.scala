@@ -5,17 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when openParentApplication:reply is called from a WatchKit extension. Available only on iOS 8.2 and later.
-		 */
+  * Fired when openParentApplication:reply is called from a WatchKit extension. Available only on iOS 8.2 and later.
+  */
 trait iOSWatchkitextensionrequestEvent extends iOSBaseEvent {
   /**
-  			 * Unique string identifier for the `watchkitextensionrequest` event. This identifier should be passed an argument
-  			 * to the [sendWatchExtensionReply](Titanium.App.iOS.sendWatchExtensionReply) method.
-  			 */
+    * Unique string identifier for the `watchkitextensionrequest` event. This identifier should be passed an argument
+    * to the [sendWatchExtensionReply](Titanium.App.iOS.sendWatchExtensionReply) method.
+    */
   var handlerId: String
   /**
-  			 * The payload passed to the `openParentApplication:reply` method from the WatchKit extension.
-  			 */
+    * The payload passed to the `openParentApplication:reply` method from the WatchKit extension.
+    */
   var userInfo: js.Any
 }
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.`us-feet`
 import typings.arcgisJsApi.arcgisJsApiStrings.feet_
@@ -50,8 +49,4 @@ trait DistanceMeasurement2D extends Widget_ {
     */
   var viewModel: DistanceMeasurement2DViewModel = js.native
 }
-
-@JSGlobal("__esri.DistanceMeasurement2D")
-@js.native
-object DistanceMeasurement2D extends TopLevel[DistanceMeasurement2DConstructor]
 

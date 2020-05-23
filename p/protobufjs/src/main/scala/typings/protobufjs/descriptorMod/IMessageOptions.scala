@@ -12,7 +12,7 @@ object IMessageOptions {
   @scala.inline
   def apply(mapEntry: js.UndefOr[Boolean] = js.undefined): IMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mapEntry)) __obj.updateDynamic("mapEntry")(mapEntry.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapEntry)) __obj.updateDynamic("mapEntry")(mapEntry.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageOptions]
   }
 }

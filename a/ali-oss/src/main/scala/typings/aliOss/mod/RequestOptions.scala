@@ -11,9 +11,9 @@ trait RequestOptions extends js.Object {
 
 object RequestOptions {
   @scala.inline
-  def apply(timeout: Int | Double = null): RequestOptions = {
+  def apply(timeout: js.UndefOr[Double] = js.undefined): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

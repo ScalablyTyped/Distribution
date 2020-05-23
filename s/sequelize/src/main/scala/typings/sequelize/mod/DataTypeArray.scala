@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonType
+import typings.sequelize.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait DataTypeArray extends DataTypeAbstract {
     *
     * Accepts type any of the DataTypes
     */
-  def apply(options: AnonType): DataTypeArray = js.native
+  def apply(options: Type): DataTypeArray = js.native
   def apply(`type`: DataTypeAbstract): DataTypeArray = js.native
 }
 

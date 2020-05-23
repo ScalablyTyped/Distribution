@@ -1,7 +1,7 @@
 package typings.diffMatchPatch.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.diffMatchPatch.AnonChars1
+import typings.diffMatchPatch.anon.Chars1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ class diffMatchPatch () extends js.Object {
   def diff_fromDelta(text1: String, delta: String): js.Array[Diff] = js.native
   def diff_halfMatch_(text1: String, text2: String): js.Array[String] = js.native
   def diff_levenshtein(diffs: js.Array[Diff]): Double = js.native
-  def diff_linesToChars_(text1: String, text2: String): AnonChars1 = js.native
+  def diff_linesToChars_(text1: String, text2: String): Chars1 = js.native
   def diff_main(text1: String, text2: String): js.Array[Diff] = js.native
   def diff_main(text1: String, text2: String, opt_checklines: Boolean): js.Array[Diff] = js.native
   def diff_main(text1: String, text2: String, opt_checklines: Boolean, opt_deadline: Double): js.Array[Diff] = js.native

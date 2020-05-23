@@ -104,46 +104,46 @@ object Options {
     encoder: /* repeated */ js.Any => Unit = null,
     encoding: String = null,
     encryptEncoding: String = null,
-    factor: Int | Double = null,
+    factor: js.UndefOr[Double] = js.undefined,
     fallbackSessionFn: /* repeated */ js.Any => Unit = null,
     fileExtension: String = null,
     filePattern: RegExp = null,
     keyFunction: (/* secret */ String, /* sessionId */ String) => String = null,
     logFn: /* repeated */ js.Any => Unit = null,
-    maxTimeout: Int | Double = null,
-    minTimeout: Int | Double = null,
+    maxTimeout: js.UndefOr[Double] = js.undefined,
+    minTimeout: js.UndefOr[Double] = js.undefined,
     path: String = null,
     reapAsync: js.UndefOr[Boolean] = js.undefined,
-    reapInterval: Int | Double = null,
+    reapInterval: js.UndefOr[Double] = js.undefined,
     reapIntervalObject: js.Any = null,
-    reapMaxConcurrent: Int | Double = null,
+    reapMaxConcurrent: js.UndefOr[Double] = js.undefined,
     reapSyncFallback: js.UndefOr[Boolean] = js.undefined,
-    retries: Int | Double = null,
+    retries: js.UndefOr[Double] = js.undefined,
     secret: String = null,
-    ttl: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (decoder != null) __obj.updateDynamic("decoder")(js.Any.fromFunction1(decoder))
     if (encoder != null) __obj.updateDynamic("encoder")(js.Any.fromFunction1(encoder))
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (encryptEncoding != null) __obj.updateDynamic("encryptEncoding")(encryptEncoding.asInstanceOf[js.Any])
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
     if (fallbackSessionFn != null) __obj.updateDynamic("fallbackSessionFn")(js.Any.fromFunction1(fallbackSessionFn))
     if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension.asInstanceOf[js.Any])
     if (filePattern != null) __obj.updateDynamic("filePattern")(filePattern.asInstanceOf[js.Any])
     if (keyFunction != null) __obj.updateDynamic("keyFunction")(js.Any.fromFunction2(keyFunction))
     if (logFn != null) __obj.updateDynamic("logFn")(js.Any.fromFunction1(logFn))
-    if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
-    if (minTimeout != null) __obj.updateDynamic("minTimeout")(minTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTimeout)) __obj.updateDynamic("maxTimeout")(maxTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTimeout)) __obj.updateDynamic("minTimeout")(minTimeout.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(reapAsync)) __obj.updateDynamic("reapAsync")(reapAsync.asInstanceOf[js.Any])
-    if (reapInterval != null) __obj.updateDynamic("reapInterval")(reapInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(reapAsync)) __obj.updateDynamic("reapAsync")(reapAsync.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reapInterval)) __obj.updateDynamic("reapInterval")(reapInterval.get.asInstanceOf[js.Any])
     if (reapIntervalObject != null) __obj.updateDynamic("reapIntervalObject")(reapIntervalObject.asInstanceOf[js.Any])
-    if (reapMaxConcurrent != null) __obj.updateDynamic("reapMaxConcurrent")(reapMaxConcurrent.asInstanceOf[js.Any])
-    if (!js.isUndefined(reapSyncFallback)) __obj.updateDynamic("reapSyncFallback")(reapSyncFallback.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (!js.isUndefined(reapMaxConcurrent)) __obj.updateDynamic("reapMaxConcurrent")(reapMaxConcurrent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reapSyncFallback)) __obj.updateDynamic("reapSyncFallback")(reapSyncFallback.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
     if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

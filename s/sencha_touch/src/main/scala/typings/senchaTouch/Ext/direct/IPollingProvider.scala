@@ -11,30 +11,30 @@ trait IPollingProvider extends IJsonProvider {
   /** [Config Option] (Object) */
   var baseParams: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of baseParams
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getBaseParams: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of interval
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getInterval: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of url
-  		* @returns String/Function
-  		*/
+    * @returns String/Function
+    */
   var getUrl: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Number) */
   var interval: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of baseParams
-  		* @param baseParams Object The new value.
-  		*/
+    * @param baseParams Object The new value.
+    */
   var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of interval
-  		* @param interval Number The new value.
-  		*/
+    * @param interval Number The new value.
+    */
   var setInterval: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of url
-  		* @param url String/Function The new value.
-  		*/
+    * @param url String/Function The new value.
+    */
   var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String/Function) */
   var url: js.UndefOr[js.Any] = js.undefined
@@ -76,7 +76,7 @@ object IPollingProvider {
     id: String = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     isConnected: () => Boolean = null,
     isProvider: js.UndefOr[Boolean] = js.undefined,
     listeners: js.Any = null,
@@ -143,9 +143,9 @@ object IPollingProvider {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (isConnected != null) __obj.updateDynamic("isConnected")(js.Any.fromFunction0(isConnected))
-    if (!js.isUndefined(isProvider)) __obj.updateDynamic("isProvider")(isProvider.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProvider)) __obj.updateDynamic("isProvider")(isProvider.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -167,7 +167,7 @@ object IPollingProvider {
     if (setInterval != null) __obj.updateDynamic("setInterval")(js.Any.fromFunction1(setInterval))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

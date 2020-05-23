@@ -37,15 +37,15 @@ object GroupMixedInstancesPolicyInstancesDistribution {
   def apply(
     spotInstancePools: Double,
     onDemandAllocationStrategy: String = null,
-    onDemandBaseCapacity: Int | Double = null,
-    onDemandPercentageAboveBaseCapacity: Int | Double = null,
+    onDemandBaseCapacity: js.UndefOr[Double] = js.undefined,
+    onDemandPercentageAboveBaseCapacity: js.UndefOr[Double] = js.undefined,
     spotAllocationStrategy: String = null,
     spotMaxPrice: String = null
   ): GroupMixedInstancesPolicyInstancesDistribution = {
     val __obj = js.Dynamic.literal(spotInstancePools = spotInstancePools.asInstanceOf[js.Any])
     if (onDemandAllocationStrategy != null) __obj.updateDynamic("onDemandAllocationStrategy")(onDemandAllocationStrategy.asInstanceOf[js.Any])
-    if (onDemandBaseCapacity != null) __obj.updateDynamic("onDemandBaseCapacity")(onDemandBaseCapacity.asInstanceOf[js.Any])
-    if (onDemandPercentageAboveBaseCapacity != null) __obj.updateDynamic("onDemandPercentageAboveBaseCapacity")(onDemandPercentageAboveBaseCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(onDemandBaseCapacity)) __obj.updateDynamic("onDemandBaseCapacity")(onDemandBaseCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onDemandPercentageAboveBaseCapacity)) __obj.updateDynamic("onDemandPercentageAboveBaseCapacity")(onDemandPercentageAboveBaseCapacity.get.asInstanceOf[js.Any])
     if (spotAllocationStrategy != null) __obj.updateDynamic("spotAllocationStrategy")(spotAllocationStrategy.asInstanceOf[js.Any])
     if (spotMaxPrice != null) __obj.updateDynamic("spotMaxPrice")(spotMaxPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupMixedInstancesPolicyInstancesDistribution]

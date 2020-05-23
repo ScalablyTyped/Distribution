@@ -11,9 +11,9 @@ trait IClientBlockGetByBatchIdRequest extends js.Object {
 
 object IClientBlockGetByBatchIdRequest {
   @scala.inline
-  def apply(batchId: String = null): IClientBlockGetByBatchIdRequest = {
+  def apply(batchId: js.UndefOr[Null | String] = js.undefined): IClientBlockGetByBatchIdRequest = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBlockGetByBatchIdRequest]
   }
 }

@@ -4,22 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("breeze.ValidationOptions")
-@js.native
-class ValidationOptions () extends js.Object {
-  def this(config: ValidationOptionsConfiguration) = this()
-  var validateOnAttach: Boolean = js.native
-  var validateOnPropertyChange: Boolean = js.native
-  var validateOnQuery: Boolean = js.native
-  var validateOnSave: Boolean = js.native
-  def setAsDefault(): ValidationOptions = js.native
-  def using(config: ValidationOptionsConfiguration): ValidationOptions = js.native
+trait ValidationOptions extends js.Object {
+  var validateOnAttach: Boolean
+  var validateOnPropertyChange: Boolean
+  var validateOnQuery: Boolean
+  var validateOnSave: Boolean
+  def setAsDefault(): ValidationOptions
+  def using(config: ValidationOptionsConfiguration): ValidationOptions
 }
 
-/* static members */
-@JSGlobal("breeze.ValidationOptions")
-@js.native
-object ValidationOptions extends js.Object {
-  var defaultInstance: ValidationOptions = js.native
+object ValidationOptions {
+  @scala.inline
+  def apply(
+    setAsDefault: () => ValidationOptions,
+    using: ValidationOptionsConfiguration => ValidationOptions,
+    validateOnAttach: Boolean,
+    validateOnPropertyChange: Boolean,
+    validateOnQuery: Boolean,
+    validateOnSave: Boolean
+  ): ValidationOptions = {
+    val __obj = js.Dynamic.literal(setAsDefault = js.Any.fromFunction0(setAsDefault), using = js.Any.fromFunction1(using), validateOnAttach = validateOnAttach.asInstanceOf[js.Any], validateOnPropertyChange = validateOnPropertyChange.asInstanceOf[js.Any], validateOnQuery = validateOnQuery.asInstanceOf[js.Any], validateOnSave = validateOnSave.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValidationOptions]
+  }
 }
 

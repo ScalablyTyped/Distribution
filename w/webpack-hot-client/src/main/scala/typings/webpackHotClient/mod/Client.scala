@@ -1,6 +1,6 @@
 package typings.webpackHotClient.mod
 
-import typings.webpackHotClient.ReadonlyOptions
+import typings.webpackHotClient.anon.ReadonlyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -18,9 +18,12 @@ trait AddThingsToThingGroupParams extends js.Object {
 
 object AddThingsToThingGroupParams {
   @scala.inline
-  def apply(thingGroupNames: ThingGroupNames, overrideDynamicGroups: js.UndefOr[scala.Boolean] = js.undefined): AddThingsToThingGroupParams = {
+  def apply(
+    thingGroupNames: ThingGroupNames,
+    overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.undefined
+  ): AddThingsToThingGroupParams = {
     val __obj = js.Dynamic.literal(thingGroupNames = thingGroupNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideDynamicGroups)) __obj.updateDynamic("overrideDynamicGroups")(overrideDynamicGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideDynamicGroups)) __obj.updateDynamic("overrideDynamicGroups")(overrideDynamicGroups.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddThingsToThingGroupParams]
   }
 }

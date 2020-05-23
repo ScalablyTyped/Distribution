@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.EffectRenderer")
 @js.native
-class EffectRenderer protected () extends js.Object {
-  /**
-    * Creates an effect renderer
-    * @param engine the engine to use for rendering
-    * @param options defines the options of the effect renderer
-    */
-  def this(engine: ThinEngine) = this()
-  def this(engine: ThinEngine, options: IEffectRendererOptions) = this()
+trait EffectRenderer extends js.Object {
   var _fullscreenViewport: js.Any = js.native
   var _getNextFrameBuffer: js.Any = js.native
   var _indexBuffer: js.Any = js.native
@@ -56,12 +48,5 @@ class EffectRenderer protected () extends js.Object {
     */
   def setViewport(): Unit = js.native
   def setViewport(viewport: Viewport): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.EffectRenderer")
-@js.native
-object EffectRenderer extends js.Object {
-  var _DefaultOptions: js.Any = js.native
 }
 

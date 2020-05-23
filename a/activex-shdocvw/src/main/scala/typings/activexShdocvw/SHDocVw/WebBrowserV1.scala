@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** WebBrowser Control */
-@JSGlobal("SHDocVw.WebBrowser_V1")
 @js.native
-class WebBrowserV1 protected () extends js.Object {
+trait WebBrowserV1 extends js.Object {
   /** Returns the application automation object if accessible, this automation object otherwise.. */
   val Application: js.Any = js.native
   /** Query to see if something is still in progress. */

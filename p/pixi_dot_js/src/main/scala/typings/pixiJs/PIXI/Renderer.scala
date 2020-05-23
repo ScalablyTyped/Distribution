@@ -1,7 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.AnonAccessibility
-import typings.pixiJs.AnonBackgroundColor
 import typings.pixiJs.PIXI.systems.BatchSystem
 import typings.pixiJs.PIXI.systems.ContextSystem
 import typings.pixiJs.PIXI.systems.FilterSystem
@@ -16,6 +14,7 @@ import typings.pixiJs.PIXI.systems.StateSystem
 import typings.pixiJs.PIXI.systems.StencilSystem
 import typings.pixiJs.PIXI.systems.TextureGCSystem
 import typings.pixiJs.PIXI.systems.TextureSystem
+import typings.pixiJs.anon.Accessibility
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,10 +32,8 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   * @extends PIXI.AbstractRenderer
   */
-@JSGlobal("PIXI.Renderer")
 @js.native
-class Renderer () extends AbstractRenderer {
-  def this(options: AnonBackgroundColor) = this()
+trait Renderer extends AbstractRenderer {
   /**
     * Batch system instance
     * @member {PIXI.systems.BatchSystem} batch
@@ -112,7 +109,7 @@ class Renderer () extends AbstractRenderer {
     * @property {PIXI.Prepare} prepare Pre-render display objects.
     */
   @JSName("plugins")
-  val plugins_Renderer: AnonAccessibility = js.native
+  val plugins_Renderer: Accessibility = js.native
   /**
     * Projection system instance
     * @member {PIXI.systems.ProjectionSystem} projection
@@ -217,19 +214,5 @@ class Renderer () extends AbstractRenderer {
     * @return {PIXI.Renderer} Returns itself.
     */
   def reset(): Renderer = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.Renderer")
-@js.native
-object Renderer extends js.Object {
-  /**
-    * Adds a plugin to the renderer.
-    *
-    * @method
-    * @param {string} pluginName - The name of the plugin.
-    * @param {Function} ctor - The constructor function or class for the plugin.
-    */
-  def registerPlugin(pluginName: String, ctor: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
 }
 

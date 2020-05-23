@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,8 +51,4 @@ trait ImageServiceIdentifyResult
     */
   var value: String = js.native
 }
-
-@JSGlobal("__esri.ImageServiceIdentifyResult")
-@js.native
-object ImageServiceIdentifyResult extends TopLevel[ImageServiceIdentifyResultConstructor]
 

@@ -1,15 +1,15 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonColumnComponent
-import typings.devextreme.AnonColumnComponentRow
-import typings.devextreme.AnonRowType
+import typings.devextreme.anon.ColumnComponent
+import typings.devextreme.anon.ColumnComponentRow
+import typings.devextreme.anon.RowType
 import typings.devextreme.devextremeStrings.cancel
 import typings.devextreme.devextremeStrings.delete
 import typings.devextreme.devextremeStrings.edit
 import typings.devextreme.devextremeStrings.save
 import typings.devextreme.devextremeStrings.undelete
 import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,13 +19,13 @@ trait dxDataGridColumnButton extends GridBaseColumnButton {
   /** @name dxDataGridColumnButton.name */
   var name: js.UndefOr[cancel | delete | edit | save | undelete | String] = js.undefined
   /** @name dxDataGridColumnButton.onClick */
-  var onClick: js.UndefOr[(js.Function1[/* e */ AnonColumnComponent, _]) | String] = js.undefined
+  var onClick: js.UndefOr[(js.Function1[/* e */ ColumnComponent, _]) | String] = js.undefined
   /** @name dxDataGridColumnButton.template */
   var template: js.UndefOr[
-    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonRowType, String | Element | JQuery])
+    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ RowType, String | Element | JQuery])
   ] = js.undefined
   /** @name dxDataGridColumnButton.visible */
-  var visible: js.UndefOr[Boolean | (js.Function1[/* options */ AnonColumnComponentRow, Boolean])] = js.undefined
+  var visible: js.UndefOr[Boolean | (js.Function1[/* options */ ColumnComponentRow, Boolean])] = js.undefined
 }
 
 object dxDataGridColumnButton {
@@ -35,10 +35,10 @@ object dxDataGridColumnButton {
     hint: String = null,
     icon: String = null,
     name: cancel | delete | edit | save | undelete | String = null,
-    onClick: (js.Function1[/* e */ AnonColumnComponent, _]) | String = null,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonRowType, String | Element | JQuery]) = null,
+    onClick: (js.Function1[/* e */ ColumnComponent, _]) | String = null,
+    template: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ RowType, String | Element | JQuery]) = null,
     text: String = null,
-    visible: Boolean | (js.Function1[/* options */ AnonColumnComponentRow, Boolean]) = null
+    visible: Boolean | (js.Function1[/* options */ ColumnComponentRow, Boolean]) = null
   ): dxDataGridColumnButton = {
     val __obj = js.Dynamic.literal()
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])

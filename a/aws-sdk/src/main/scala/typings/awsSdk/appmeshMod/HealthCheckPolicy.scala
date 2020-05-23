@@ -16,8 +16,8 @@ trait HealthCheckPolicy extends js.Object {
     */
   var intervalMillis: HealthCheckIntervalMillis = js.native
   /**
-    * The destination path for the health check request. This value is only used if the specified 
-    protocol is HTTP or HTTP/2. For any other protocol, this value is ignored.
+    * The destination path for the health check request. This value is only used if the
+    specified protocol is HTTP or HTTP/2. For any other protocol, this value is ignored.
     */
   var path: js.UndefOr[String] = js.native
   /**
@@ -26,7 +26,9 @@ trait HealthCheckPolicy extends js.Object {
     */
   var port: js.UndefOr[PortNumber] = js.native
   /**
-    * The protocol for the health check request. If you specify grpc, then your service must conform to the GRPC Health Checking Protocol.
+    * The protocol for the health check request. If you specify grpc, then your
+    service must conform to the GRPC Health
+    Checking Protocol.
     */
   var protocol: PortProtocol = js.native
   /**
@@ -50,11 +52,11 @@ object HealthCheckPolicy {
     timeoutMillis: HealthCheckTimeoutMillis,
     unhealthyThreshold: HealthCheckThreshold,
     path: String = null,
-    port: Int | Double = null
+    port: js.UndefOr[PortNumber] = js.undefined
   ): HealthCheckPolicy = {
     val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold.asInstanceOf[js.Any], intervalMillis = intervalMillis.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], timeoutMillis = timeoutMillis.asInstanceOf[js.Any], unhealthyThreshold = unhealthyThreshold.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheckPolicy]
   }
 }

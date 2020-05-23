@@ -17,13 +17,13 @@ object WordWrapOptions {
     cut: js.UndefOr[Boolean] = js.undefined,
     indent: String = null,
     newLine: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): WordWrapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cut)) __obj.updateDynamic("cut")(cut.asInstanceOf[js.Any])
+    if (!js.isUndefined(cut)) __obj.updateDynamic("cut")(cut.get.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (newLine != null) __obj.updateDynamic("newLine")(newLine.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordWrapOptions]
   }
 }

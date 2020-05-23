@@ -45,7 +45,7 @@ object SetScriptSourceReturnType {
     if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId.asInstanceOf[js.Any])
     if (callFrames != null) __obj.updateDynamic("callFrames")(callFrames.asInstanceOf[js.Any])
     if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackChanged)) __obj.updateDynamic("stackChanged")(stackChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(stackChanged)) __obj.updateDynamic("stackChanged")(stackChanged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScriptSourceReturnType]
   }
 }

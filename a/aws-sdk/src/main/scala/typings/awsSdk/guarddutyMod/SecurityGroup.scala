@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SecurityGroup extends js.Object {
   /**
-    * EC2 instance's security group ID.
+    * The security group ID of the EC2 instance.
     */
   var GroupId: js.UndefOr[String] = js.native
   /**
-    * EC2 instance's security group name.
+    * The security group name of the EC2 instance.
     */
   var GroupName: js.UndefOr[String] = js.native
 }

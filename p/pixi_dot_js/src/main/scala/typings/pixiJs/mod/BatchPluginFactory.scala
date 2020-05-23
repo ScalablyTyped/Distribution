@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.AnonFragment
+import typings.pixiJs.anon.Fragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,6 +65,6 @@ object BatchPluginFactory extends js.Object {
     * @return {*} New batch renderer plugin
     */
   def create(): js.Any = js.native
-  def create(options: AnonFragment): js.Any = js.native
+  def create(options: Fragment): js.Any = js.native
 }
 

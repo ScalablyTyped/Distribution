@@ -16,14 +16,14 @@ object ActionOptions {
   def apply(
     allowFunction: js.UndefOr[Boolean] = js.undefined,
     clearOnStoryChange: js.UndefOr[Boolean] = js.undefined,
-    depth: Int | Double = null,
-    limit: Int | Double = null
+    depth: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined
   ): ActionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFunction)) __obj.updateDynamic("allowFunction")(allowFunction.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnStoryChange)) __obj.updateDynamic("clearOnStoryChange")(clearOnStoryChange.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFunction)) __obj.updateDynamic("allowFunction")(allowFunction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnStoryChange)) __obj.updateDynamic("clearOnStoryChange")(clearOnStoryChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionOptions]
   }
 }

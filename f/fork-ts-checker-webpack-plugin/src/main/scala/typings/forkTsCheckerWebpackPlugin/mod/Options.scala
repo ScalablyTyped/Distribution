@@ -1,6 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin.mod
 
-import typings.forkTsCheckerWebpackPlugin.PartialVueOptions
+import typings.forkTsCheckerWebpackPlugin.anon.PartialVueOptions
 import typings.forkTsCheckerWebpackPlugin.formatterFactoryMod.FormatterOptions
 import typings.forkTsCheckerWebpackPlugin.formatterFactoryMod.FormatterType
 import scala.scalajs.js

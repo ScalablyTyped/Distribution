@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.SVGZoomEvent")
 @js.native
-class SVGZoomEvent protected () extends js.Object {
+trait SVGZoomEvent extends js.Object {
   @JSName("MSHTML.SVGZoomEvent_typekey")
   var MSHTMLDotSVGZoomEvent_typekey: SVGZoomEvent = js.native
   val bubbles: Boolean = js.native

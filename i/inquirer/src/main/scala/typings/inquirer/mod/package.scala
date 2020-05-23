@@ -124,7 +124,7 @@ package object mod {
     js.Function3[
       /* input */ js.Any, 
       /* answers */ T, 
-      /* flags */ typings.inquirer.AnonIsFinal, 
+      /* flags */ typings.inquirer.anon.IsFinal, 
       java.lang.String | js.Promise[java.lang.String]
     ]
   ]

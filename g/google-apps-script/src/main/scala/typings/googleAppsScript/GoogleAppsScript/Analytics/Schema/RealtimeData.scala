@@ -26,7 +26,7 @@ object RealtimeData {
     query: RealtimeDataQuery = null,
     rows: js.Array[js.Array[String]] = null,
     selfLink: String = null,
-    totalResults: Int | Double = null,
+    totalResults: js.UndefOr[Double] = js.undefined,
     totalsForAllResults: js.Object = null
   ): RealtimeData = {
     val __obj = js.Dynamic.literal()
@@ -37,7 +37,7 @@ object RealtimeData {
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalResults)) __obj.updateDynamic("totalResults")(totalResults.get.asInstanceOf[js.Any])
     if (totalsForAllResults != null) __obj.updateDynamic("totalsForAllResults")(totalsForAllResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealtimeData]
   }

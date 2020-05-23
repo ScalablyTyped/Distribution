@@ -2,8 +2,6 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
-import typings.winjs.AnonBottom
-import typings.winjs.AnonCompact
 import typings.winjs.WinJS.Binding.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,18 +12,8 @@ import scala.scalajs.js.annotation._
 /**
   * Displays ICommands in overlayed application pane that opens and closes at the top or bottom of the main view.
   **/
-@JSGlobal("WinJS.UI.AppBar")
 @js.native
-//#region Constructors
-/**
-  * Creates a new AppBar object.
-  * @constructor
-  * @param element The DOM element that will host the control.
-  * @param options The set of properties and values to apply to the new AppBar.
-  **/
-class AppBar () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait AppBar extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
@@ -122,23 +110,5 @@ class AppBar () extends js.Object {
     * @param commands The commands to show. The array elements may be ICommand objects, or the string identifiers (IDs) of commands.
     **/
   def showOnlyCommands(commands: js.Array[String | ICommand]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.AppBar")
-@js.native
-object AppBar extends js.Object {
-  /**
-    * Display options for the AppBar when closed.
-    **/
-  var ClosedDisplayMode: AnonCompact = js.native
-  /**
-    * Display options for AppBar placement in relation to the main view.
-    */
-  var Placement: AnonBottom = js.native
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

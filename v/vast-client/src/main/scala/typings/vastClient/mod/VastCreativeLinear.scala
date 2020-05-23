@@ -30,18 +30,11 @@ object VastCreativeLinear {
     apiFramework: String = null,
     id: String = null,
     sequence: String | Double = null,
-    skipDelay: Int | Double = null,
+    skipDelay: Double = null.asInstanceOf[Double],
     videoClickThroughURLTemplate: String = null
   ): VastCreativeLinear = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], mediaFiles = mediaFiles.asInstanceOf[js.Any], trackingEvents = trackingEvents.asInstanceOf[js.Any], videoClickTrackingURLTemplates = videoClickTrackingURLTemplates.asInstanceOf[js.Any], videoCustomClickURLTemplates = videoCustomClickURLTemplates.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], mediaFiles = mediaFiles.asInstanceOf[js.Any], trackingEvents = trackingEvents.asInstanceOf[js.Any], videoClickTrackingURLTemplates = videoClickTrackingURLTemplates.asInstanceOf[js.Any], videoCustomClickURLTemplates = videoCustomClickURLTemplates.asInstanceOf[js.Any], adId = adId.asInstanceOf[js.Any], adParameters = adParameters.asInstanceOf[js.Any], apiFramework = apiFramework.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], skipDelay = skipDelay.asInstanceOf[js.Any], videoClickThroughURLTemplate = videoClickThroughURLTemplate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (adId != null) __obj.updateDynamic("adId")(adId.asInstanceOf[js.Any])
-    if (adParameters != null) __obj.updateDynamic("adParameters")(adParameters.asInstanceOf[js.Any])
-    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
-    if (skipDelay != null) __obj.updateDynamic("skipDelay")(skipDelay.asInstanceOf[js.Any])
-    if (videoClickThroughURLTemplate != null) __obj.updateDynamic("videoClickThroughURLTemplate")(videoClickThroughURLTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCreativeLinear]
   }
 }

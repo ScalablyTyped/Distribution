@@ -14,10 +14,10 @@ trait FeedbackDeleted extends js.Object {
 
 object FeedbackDeleted {
   @scala.inline
-  def apply(message: String = null, status: Int | Double = null): FeedbackDeleted = {
+  def apply(message: String = null, status: js.UndefOr[Double] = js.undefined): FeedbackDeleted = {
     val __obj = js.Dynamic.literal()
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedbackDeleted]
   }
 }

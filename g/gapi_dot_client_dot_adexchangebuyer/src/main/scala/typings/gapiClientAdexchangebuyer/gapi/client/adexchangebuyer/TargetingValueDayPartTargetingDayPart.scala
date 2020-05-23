@@ -16,17 +16,17 @@ object TargetingValueDayPartTargetingDayPart {
   @scala.inline
   def apply(
     dayOfWeek: String = null,
-    endHour: Int | Double = null,
-    endMinute: Int | Double = null,
-    startHour: Int | Double = null,
-    startMinute: Int | Double = null
+    endHour: js.UndefOr[Double] = js.undefined,
+    endMinute: js.UndefOr[Double] = js.undefined,
+    startHour: js.UndefOr[Double] = js.undefined,
+    startMinute: js.UndefOr[Double] = js.undefined
   ): TargetingValueDayPartTargetingDayPart = {
     val __obj = js.Dynamic.literal()
     if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
-    if (endHour != null) __obj.updateDynamic("endHour")(endHour.asInstanceOf[js.Any])
-    if (endMinute != null) __obj.updateDynamic("endMinute")(endMinute.asInstanceOf[js.Any])
-    if (startHour != null) __obj.updateDynamic("startHour")(startHour.asInstanceOf[js.Any])
-    if (startMinute != null) __obj.updateDynamic("startMinute")(startMinute.asInstanceOf[js.Any])
+    if (!js.isUndefined(endHour)) __obj.updateDynamic("endHour")(endHour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endMinute)) __obj.updateDynamic("endMinute")(endMinute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startHour)) __obj.updateDynamic("startHour")(startHour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMinute)) __obj.updateDynamic("startMinute")(startMinute.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetingValueDayPartTargetingDayPart]
   }
 }

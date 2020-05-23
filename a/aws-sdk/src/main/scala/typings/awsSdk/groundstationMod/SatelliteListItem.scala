@@ -28,13 +28,13 @@ object SatelliteListItem {
   @scala.inline
   def apply(
     groundStations: GroundStationIdList = null,
-    noradSatelliteID: Int | scala.Double = null,
+    noradSatelliteID: js.UndefOr[noradSatelliteID] = js.undefined,
     satelliteArn: satelliteArn = null,
     satelliteId: Uuid = null
   ): SatelliteListItem = {
     val __obj = js.Dynamic.literal()
     if (groundStations != null) __obj.updateDynamic("groundStations")(groundStations.asInstanceOf[js.Any])
-    if (noradSatelliteID != null) __obj.updateDynamic("noradSatelliteID")(noradSatelliteID.asInstanceOf[js.Any])
+    if (!js.isUndefined(noradSatelliteID)) __obj.updateDynamic("noradSatelliteID")(noradSatelliteID.get.asInstanceOf[js.Any])
     if (satelliteArn != null) __obj.updateDynamic("satelliteArn")(satelliteArn.asInstanceOf[js.Any])
     if (satelliteId != null) __obj.updateDynamic("satelliteId")(satelliteId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SatelliteListItem]

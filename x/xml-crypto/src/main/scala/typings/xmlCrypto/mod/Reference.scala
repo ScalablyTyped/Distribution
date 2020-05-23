@@ -29,7 +29,7 @@ object Reference {
     if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm.asInstanceOf[js.Any])
     if (digestValue != null) __obj.updateDynamic("digestValue")(digestValue.asInstanceOf[js.Any])
     if (inclusiveNamespacesPrefixList != null) __obj.updateDynamic("inclusiveNamespacesPrefixList")(inclusiveNamespacesPrefixList.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEmptyUri)) __obj.updateDynamic("isEmptyUri")(isEmptyUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEmptyUri)) __obj.updateDynamic("isEmptyUri")(isEmptyUri.get.asInstanceOf[js.Any])
     if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]

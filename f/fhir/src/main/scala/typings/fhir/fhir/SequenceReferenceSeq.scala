@@ -83,7 +83,7 @@ object SequenceReferenceSeq {
     referenceSeqId: CodeableConcept = null,
     referenceSeqPointer: Reference = null,
     referenceSeqString: String = null,
-    strand: Int | Double = null
+    strand: js.UndefOr[integer] = js.undefined
   ): SequenceReferenceSeq = {
     val __obj = js.Dynamic.literal(windowEnd = windowEnd.asInstanceOf[js.Any], windowStart = windowStart.asInstanceOf[js.Any])
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
@@ -102,7 +102,7 @@ object SequenceReferenceSeq {
     if (referenceSeqId != null) __obj.updateDynamic("referenceSeqId")(referenceSeqId.asInstanceOf[js.Any])
     if (referenceSeqPointer != null) __obj.updateDynamic("referenceSeqPointer")(referenceSeqPointer.asInstanceOf[js.Any])
     if (referenceSeqString != null) __obj.updateDynamic("referenceSeqString")(referenceSeqString.asInstanceOf[js.Any])
-    if (strand != null) __obj.updateDynamic("strand")(strand.asInstanceOf[js.Any])
+    if (!js.isUndefined(strand)) __obj.updateDynamic("strand")(strand.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceReferenceSeq]
   }
 }

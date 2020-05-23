@@ -74,6 +74,7 @@ import typings.mendixmodelsdk.webservicesMod.webservices.IPublishedAppService
 import typings.mendixmodelsdk.webservicesMod.webservices.IPublishedServiceBase
 import typings.mendixmodelsdk.webservicesMod.webservices.IPublishedWebService
 import typings.mendixmodelsdk.workflowsMod.workflows.IWorkflow
+import typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTaskOutcome
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IMxSchema
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IXmlSchema
 import scala.scalajs.js
@@ -83,9 +84,9 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/gen/base-model", JSImport.Namespace)
 @js.native
 object baseModelMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.abstractModelMod.IAbstractModel because Already inherited
-  - typings.mendixmodelsdk.baseModelMod.IBaseModel because var conflicts: id, metaModelVersion, mxVersionForModel, workingCopy. Inlined allBuildingBlocks, allCodeActions, allConstants, allConsumedAppServices, allConsumedODataServices, allDataSets, allDocuments, allDocumentTemplates, allDomainModels, allEnumerations, allExportMappings, allFolders, allFolderBases, allFormBases, allImageCollections, allImportMappings, allImportedWebServices, allJavaActions, allJavaScriptActions, allJsonStructures, allLayouts, allMappingDocuments, allMenuDocuments, allMessageDefinitionCollections, allMicroflows, allMicroflowBases, allModules, allModuleDocuments, allModuleSecurities, allMxSchemas, allNanoflows, allNativeLayouts, allNativePages, allNavigationDocuments, allPages, allPageTemplates, allProjects, allProjectConversions, allProjectDocuments, allProjectSecurities, allProjectSettings, allPublishedAppServices, allPublishedODataServices, allPublishedRestServices, allPublishedServiceBases, allPublishedWebServices, allRegularExpressions, allRemoteEntitySourceDocuments, allRules, allScheduledEvents, allServerSideMicroflows, allSnippets, allSystemTextCollections, allTemplateFormBases, allWorkflows, allXmlSchemas, findAppServiceActionByQualifiedName, findAppServiceActionParameterByQualifiedName, findConstantByQualifiedName, findDataSetByQualifiedName, findDataSetParameterByQualifiedName, findDocumentTemplateByQualifiedName, findAssociationBaseByQualifiedName, findAttributeByQualifiedName, findEntityByQualifiedName, findRemoteEntitySourceDocumentByQualifiedName, findEnumerationByQualifiedName, findEnumerationValueByQualifiedName, findExportMappingByQualifiedName, findImageByQualifiedName, findImportMappingByQualifiedName, findJavaActionByQualifiedName, findJavaActionParameterByQualifiedName, findJavaScriptActionByQualifiedName, findJavaScriptActionParameterByQualifiedName, findJsonStructureByQualifiedName, findMenuDocumentByQualifiedName, findMessageDefinitionByQualifiedName, findMicroflowByQualifiedName, findMicroflowParameterByQualifiedName, findNanoflowByQualifiedName, findNanoflowParameterByQualifiedName, findRuleByQualifiedName, findRuleParameterByQualifiedName, findNativeLayoutByQualifiedName, findNativePageByQualifiedName, findNavigationProfileByQualifiedName, findLayoutByQualifiedName, findLayoutParameterByQualifiedName, findPageByQualifiedName, findSnippetByQualifiedName, findRegularExpressionByQualifiedName, findModuleRoleByQualifiedName, findUserRoleByQualifiedName, findImportedWebServiceByQualifiedName, findXmlSchemaByQualifiedName */ @js.native
+  - typings.mendixmodelsdk.baseModelMod.IBaseModel because var conflicts: id, metaModelVersion, mxVersionForModel, workingCopy. Inlined allBuildingBlocks, allCodeActions, allConstants, allConsumedAppServices, allConsumedODataServices, allDataSets, allDocuments, allDocumentTemplates, allDomainModels, allEnumerations, allExportMappings, allFolders, allFolderBases, allFormBases, allImageCollections, allImportMappings, allImportedWebServices, allJavaActions, allJavaScriptActions, allJsonStructures, allLayouts, allMappingDocuments, allMenuDocuments, allMessageDefinitionCollections, allMicroflows, allMicroflowBases, allModules, allModuleDocuments, allModuleSecurities, allMxSchemas, allNanoflows, allNativeLayouts, allNativePages, allNavigationDocuments, allPages, allPageTemplates, allProjects, allProjectConversions, allProjectDocuments, allProjectSecurities, allProjectSettings, allPublishedAppServices, allPublishedODataServices, allPublishedRestServices, allPublishedServiceBases, allPublishedWebServices, allRegularExpressions, allRemoteEntitySourceDocuments, allRules, allScheduledEvents, allServerSideMicroflows, allSnippets, allSystemTextCollections, allTemplateFormBases, allWorkflows, allXmlSchemas, findAppServiceActionByQualifiedName, findAppServiceActionParameterByQualifiedName, findConstantByQualifiedName, findDataSetByQualifiedName, findDataSetParameterByQualifiedName, findDocumentTemplateByQualifiedName, findAssociationBaseByQualifiedName, findAttributeByQualifiedName, findEntityByQualifiedName, findRemoteEntitySourceDocumentByQualifiedName, findEnumerationByQualifiedName, findEnumerationValueByQualifiedName, findExportMappingByQualifiedName, findImageByQualifiedName, findImportMappingByQualifiedName, findJavaActionByQualifiedName, findJavaActionParameterByQualifiedName, findJavaScriptActionByQualifiedName, findJavaScriptActionParameterByQualifiedName, findJsonStructureByQualifiedName, findMenuDocumentByQualifiedName, findMessageDefinitionByQualifiedName, findMicroflowByQualifiedName, findMicroflowParameterByQualifiedName, findNanoflowByQualifiedName, findNanoflowParameterByQualifiedName, findRuleByQualifiedName, findRuleParameterByQualifiedName, findNativeLayoutByQualifiedName, findNativePageByQualifiedName, findNavigationProfileByQualifiedName, findLayoutByQualifiedName, findLayoutParameterByQualifiedName, findPageByQualifiedName, findSnippetByQualifiedName, findRegularExpressionByQualifiedName, findConsumedODataServiceByQualifiedName, findModuleRoleByQualifiedName, findUserRoleByQualifiedName, findImportedWebServiceByQualifiedName, findWorkflowByQualifiedName, findWorkflowTaskOutcomeByQualifiedName, findXmlSchemaByQualifiedName */ @js.native
   abstract class BaseModel () extends AbstractModel {
     def allBuildingBlocks(): js.Array[IBuildingBlock] = js.native
     def allCodeActions(): js.Array[ICodeAction] = js.native
@@ -148,6 +149,7 @@ object baseModelMod extends js.Object {
     def findAssociationBaseByQualifiedName(qname: String): IAssociationBase | Null = js.native
     def findAttributeByQualifiedName(qname: String): IAttribute | Null = js.native
     def findConstantByQualifiedName(qname: String): IConstant | Null = js.native
+    def findConsumedODataServiceByQualifiedName(qname: String): IConsumedODataService | Null = js.native
     def findDataSetByQualifiedName(qname: String): IDataSet | Null = js.native
     def findDataSetParameterByQualifiedName(qname: String): IDataSetParameter | Null = js.native
     def findDocumentTemplateByQualifiedName(qname: String): IDocumentTemplate | Null = js.native
@@ -182,6 +184,8 @@ object baseModelMod extends js.Object {
     def findRuleParameterByQualifiedName(qname: String): IRuleParameter | Null = js.native
     def findSnippetByQualifiedName(qname: String): ISnippet | Null = js.native
     def findUserRoleByQualifiedName(qname: String): IUserRole | Null = js.native
+    def findWorkflowByQualifiedName(qname: String): IWorkflow | Null = js.native
+    def findWorkflowTaskOutcomeByQualifiedName(qname: String): IWorkflowTaskOutcome | Null = js.native
     def findXmlSchemaByQualifiedName(qname: String): IXmlSchema | Null = js.native
   }
   
@@ -248,6 +252,7 @@ object baseModelMod extends js.Object {
     def findAssociationBaseByQualifiedName(qname: String): IAssociationBase | Null = js.native
     def findAttributeByQualifiedName(qname: String): IAttribute | Null = js.native
     def findConstantByQualifiedName(qname: String): IConstant | Null = js.native
+    def findConsumedODataServiceByQualifiedName(qname: String): IConsumedODataService | Null = js.native
     def findDataSetByQualifiedName(qname: String): IDataSet | Null = js.native
     def findDataSetParameterByQualifiedName(qname: String): IDataSetParameter | Null = js.native
     def findDocumentTemplateByQualifiedName(qname: String): IDocumentTemplate | Null = js.native
@@ -282,6 +287,8 @@ object baseModelMod extends js.Object {
     def findRuleParameterByQualifiedName(qname: String): IRuleParameter | Null = js.native
     def findSnippetByQualifiedName(qname: String): ISnippet | Null = js.native
     def findUserRoleByQualifiedName(qname: String): IUserRole | Null = js.native
+    def findWorkflowByQualifiedName(qname: String): IWorkflow | Null = js.native
+    def findWorkflowTaskOutcomeByQualifiedName(qname: String): IWorkflowTaskOutcome | Null = js.native
     def findXmlSchemaByQualifiedName(qname: String): IXmlSchema | Null = js.native
   }
   

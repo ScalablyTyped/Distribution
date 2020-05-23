@@ -2,7 +2,7 @@ package typings.ptyJs.mod
 
 import typings.node.NodeJS.WritableStream
 import typings.node.netMod.Socket
-import typings.ptyJs.AnonEnd
+import typings.ptyJs.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,7 +63,7 @@ class Terminal () extends js.Object {
   def pause(): Unit = js.native
   // NodeJS Stream interface
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   def redraw(): Unit = js.native
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native

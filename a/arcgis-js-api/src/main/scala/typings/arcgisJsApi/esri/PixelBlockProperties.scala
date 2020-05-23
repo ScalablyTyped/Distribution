@@ -78,24 +78,24 @@ trait PixelBlockProperties extends js.Object {
 object PixelBlockProperties {
   @scala.inline
   def apply(
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     mask: js.Array[Double] | Uint8Array = null,
     maskIsAlpha: js.UndefOr[Boolean] = js.undefined,
     pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = null,
     pixels: js.Array[Double] | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array = null,
     statistics: js.Array[PixelBlockStatistics] = null,
-    validPixelCount: Int | Double = null,
-    width: Int | Double = null
+    validPixelCount: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): PixelBlockProperties = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskIsAlpha)) __obj.updateDynamic("maskIsAlpha")(maskIsAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskIsAlpha)) __obj.updateDynamic("maskIsAlpha")(maskIsAlpha.get.asInstanceOf[js.Any])
     if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType.asInstanceOf[js.Any])
     if (pixels != null) __obj.updateDynamic("pixels")(pixels.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (validPixelCount != null) __obj.updateDynamic("validPixelCount")(validPixelCount.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(validPixelCount)) __obj.updateDynamic("validPixelCount")(validPixelCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PixelBlockProperties]
   }
 }

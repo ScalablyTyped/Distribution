@@ -33,18 +33,18 @@ object ServerConfig {
     banner: String = null,
     debug: /* information */ String => _ = null,
     greeting: String = null,
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     ident: String = null,
-    maxPacketSize: Int | Double = null
+    maxPacketSize: js.UndefOr[Double] = js.undefined
   ): ServerConfig = {
     val __obj = js.Dynamic.literal(hostKeys = hostKeys.asInstanceOf[js.Any])
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
     if (greeting != null) __obj.updateDynamic("greeting")(greeting.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
     if (ident != null) __obj.updateDynamic("ident")(ident.asInstanceOf[js.Any])
-    if (maxPacketSize != null) __obj.updateDynamic("maxPacketSize")(maxPacketSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPacketSize)) __obj.updateDynamic("maxPacketSize")(maxPacketSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerConfig]
   }
 }

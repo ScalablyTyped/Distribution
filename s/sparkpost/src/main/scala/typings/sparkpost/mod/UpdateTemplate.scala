@@ -1,13 +1,13 @@
 package typings.sparkpost.mod
 
-import typings.sparkpost.AnonEmailrfc822
+import typings.sparkpost.anon.Emailrfc822
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UpdateTemplate extends js.Object {
   /** Content that will be used to construct a message  yes  For a full description, see the Content Attributes. Maximum length - 20 MBs */
-  var content: js.UndefOr[CreateTemplateContent | AnonEmailrfc822] = js.undefined
+  var content: js.UndefOr[CreateTemplateContent | Emailrfc822] = js.undefined
   /** Detailed description of the template  no  Maximum length - 1024 bytes */
   var description: js.UndefOr[String] = js.undefined
   /** Editable display name  At a minimum, id or name is required upon creation.  The name does not have to be unique. Maximum length - 1024 bytes */
@@ -21,7 +21,7 @@ trait UpdateTemplate extends js.Object {
 object UpdateTemplate {
   @scala.inline
   def apply(
-    content: CreateTemplateContent | AnonEmailrfc822 = null,
+    content: CreateTemplateContent | Emailrfc822 = null,
     description: String = null,
     name: String = null,
     options: CreateTemplateOptions = null,
@@ -32,7 +32,7 @@ object UpdateTemplate {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTemplate]
   }
 }

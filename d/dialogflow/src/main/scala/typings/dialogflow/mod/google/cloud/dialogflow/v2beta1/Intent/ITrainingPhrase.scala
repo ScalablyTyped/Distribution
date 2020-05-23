@@ -23,16 +23,18 @@ trait ITrainingPhrase extends js.Object {
 object ITrainingPhrase {
   @scala.inline
   def apply(
-    name: String = null,
-    parts: js.Array[IPart] = null,
-    timesAddedCount: Int | Double = null,
-    `type`: Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type * / any */ String) = null
+    name: js.UndefOr[Null | String] = js.undefined,
+    parts: js.UndefOr[Null | js.Array[IPart]] = js.undefined,
+    timesAddedCount: js.UndefOr[Null | Double] = js.undefined,
+    `type`: js.UndefOr[
+      Null | Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.TrainingPhrase.Type * / any */ String)
+    ] = js.undefined
   ): ITrainingPhrase = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parts != null) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
-    if (timesAddedCount != null) __obj.updateDynamic("timesAddedCount")(timesAddedCount.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(parts)) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
+    if (!js.isUndefined(timesAddedCount)) __obj.updateDynamic("timesAddedCount")(timesAddedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITrainingPhrase]
   }
 }

@@ -27,10 +27,9 @@ object MapContextProps {
     onViewportChange: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit = null,
     viewport: typings.viewportMercatorProject.mod.default = null
   ): MapContextProps = {
-    val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any], mapContainer = mapContainer.asInstanceOf[js.Any])
     if (eventManager != null) __obj.updateDynamic("eventManager")(eventManager.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (mapContainer != null) __obj.updateDynamic("mapContainer")(mapContainer.asInstanceOf[js.Any])
     if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
     if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3(onViewportChange))
     if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])

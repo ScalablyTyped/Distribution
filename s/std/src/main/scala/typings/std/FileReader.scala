@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.abort
 import typings.std.stdStrings.load
 import typings.std.stdStrings.loadend
@@ -235,13 +234,5 @@ trait FileReader extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: EventListenerOptions
   ): Unit = js.native
-}
-
-@JSGlobal("FileReader")
-@js.native
-object FileReader extends Instantiable0[FileReader] {
-  val DONE: Double = js.native
-  val EMPTY: Double = js.native
-  val LOADING: Double = js.native
 }
 

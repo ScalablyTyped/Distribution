@@ -4,16 +4,9 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.emberArray.mutableMod.MutableArray
 import typings.emberObject.copyableMod.Copyable
 import typings.emberObject.observableMod.Observable
-import typings.std.AnonCopyWithin
+import typings.std.FlatArray
 import typings.std.IterableIterator
-import typings.std.stdNumbers.`0`
-import typings.std.stdNumbers.`1`
-import typings.std.stdNumbers.`2`
-import typings.std.stdNumbers.`3`
-import typings.std.stdNumbers.`4`
-import typings.std.stdNumbers.`5`
-import typings.std.stdNumbers.`6`
-import typings.std.stdNumbers.`7`
+import typings.std.anon.CopyWithin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +21,8 @@ object nativeArrayMod extends js.Object {
     * false, this will be applied automatically. Otherwise you can apply the mixin
     * at anytime by calling `Ember.NativeArray.apply(Array.prototype)`.
     */
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.std.Array because var conflicts: length. Inlined iterator, unscopables, concat, copyWithin, copyWithin, entries, fill, fill, fill, filter_S_T, filter_S_T, findIndex, findIndex, flat, flat, flatMap, flatMap, flat_0, flat_1, flat_2, flat_3, flat_4, flat_5, flat_6, flat_7, join, join, keys, pop, push, reduceRight, reduceRight, reduceRight_U_U, reduce_U_U, reverse, shift, some, some, sort, sort, splice, splice, splice, unshift, values */ @js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.std.Array because var conflicts: length. Inlined iterator, unscopables, concat, copyWithin, copyWithin, entries, fill, fill, fill, filter_S_T, filter_S_T, findIndex, findIndex, flat, flat, flatMap, flatMap, join, join, keys, pop, push, reduceRight, reduceRight, reduceRight_U_U, reduce_U_U, reverse, shift, some, some, sort, sort, splice, splice, splice, unshift, values */ @js.native
   trait NativeArray[T]
     extends MutableArray[T]
        with Observable
@@ -48,7 +41,7 @@ object nativeArrayMod extends js.Object {
       * when they will be absent when used in a 'with' statement.
       */
     @JSName(js.Symbol.unscopables)
-    var unscopables: js.Function0[AnonCopyWithin] = js.native
+    var unscopables: js.Function0[CopyWithin] = js.native
     /**
       * Combines two or more arrays.
       * @param items Additional items to add to the end of array1.
@@ -97,14 +90,8 @@ object nativeArrayMod extends js.Object {
       *
       * @param depth The maximum recursion depth
       */
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth. If no depth is provided, flat method defaults to the depth of 1.
-      *
-      * @param depth The maximum recursion depth
-      */
-    def flat[U](): js.Array[U] = js.native
-    def flat[U](depth: Double): js.Array[_] = js.native
+    def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
+    def flat[A, D /* <: Double */](depth: D): js.Array[FlatArray[A, D]] = js.native
     /**
       * Calls a defined callback function on each element of an array. Then, flattens the result into
       * a new array.
@@ -122,64 +109,6 @@ object nativeArrayMod extends js.Object {
       callback: js.ThisFunction3[/* this */ This, T, /* index */ Double, /* array */ js.Array[T], U | js.Array[U]],
       thisArg: This
     ): js.Array[U] = js.native
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth.
-      *
-      * @param depth The maximum recursion depth
-      */
-    @JSName("flat")
-    def flat_0[U](depth: `0`): js.Array[U] = js.native
-    @JSName("flat")
-    def flat_1[U](depth: `1`): js.Array[U] = js.native
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth.
-      *
-      * @param depth The maximum recursion depth
-      */
-    @JSName("flat")
-    def flat_2[U](depth: `2`): js.Array[U] = js.native
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth.
-      *
-      * @param depth The maximum recursion depth
-      */
-    @JSName("flat")
-    def flat_3[U](depth: `3`): js.Array[U] = js.native
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth.
-      *
-      * @param depth The maximum recursion depth
-      */
-    @JSName("flat")
-    def flat_4[U](depth: `4`): js.Array[U] = js.native
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth.
-      *
-      * @param depth The maximum recursion depth
-      */
-    @JSName("flat")
-    def flat_5[U](depth: `5`): js.Array[U] = js.native
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth.
-      *
-      * @param depth The maximum recursion depth
-      */
-    @JSName("flat")
-    def flat_6[U](depth: `6`): js.Array[U] = js.native
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth.
-      *
-      * @param depth The maximum recursion depth
-      */
-    @JSName("flat")
-    def flat_7[U](depth: `7`): js.Array[U] = js.native
     /**
       * Adds all the elements of an array separated by the specified separator string.
       * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.

@@ -10,9 +10,9 @@ trait CodeSigningInfo extends js.Object {
 
 object CodeSigningInfo {
   @scala.inline
-  def apply(keychainFile: String = null): CodeSigningInfo = {
+  def apply(keychainFile: js.UndefOr[Null | String] = js.undefined): CodeSigningInfo = {
     val __obj = js.Dynamic.literal()
-    if (keychainFile != null) __obj.updateDynamic("keychainFile")(keychainFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(keychainFile)) __obj.updateDynamic("keychainFile")(keychainFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSigningInfo]
   }
 }

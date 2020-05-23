@@ -24,7 +24,7 @@ object GetPossibleBreakpointsParameterType {
   def apply(start: Location, end: Location = null, restrictToFunction: js.UndefOr[Boolean] = js.undefined): GetPossibleBreakpointsParameterType = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictToFunction)) __obj.updateDynamic("restrictToFunction")(restrictToFunction.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictToFunction)) __obj.updateDynamic("restrictToFunction")(restrictToFunction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPossibleBreakpointsParameterType]
   }
 }

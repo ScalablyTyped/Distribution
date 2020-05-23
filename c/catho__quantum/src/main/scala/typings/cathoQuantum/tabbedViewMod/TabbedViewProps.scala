@@ -1,6 +1,6 @@
 package typings.cathoQuantum.tabbedViewMod
 
-import typings.cathoQuantum.AnonComponentsSpacing
+import typings.cathoQuantum.anon.ComponentsSpacing
 import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
 import typings.react.mod.ReactNode
@@ -13,7 +13,7 @@ trait TabbedViewProps extends js.Object {
   var children: js.Array[ReactNode] | ReactNode
   var fluid: js.UndefOr[Boolean] = js.undefined
   var skin: js.UndefOr[neutral | primary] = js.undefined
-  var theme: js.UndefOr[AnonComponentsSpacing] = js.undefined
+  var theme: js.UndefOr[ComponentsSpacing] = js.undefined
 }
 
 object TabbedViewProps {
@@ -23,12 +23,12 @@ object TabbedViewProps {
     children: js.Array[ReactNode] | ReactNode = null,
     fluid: js.UndefOr[Boolean] = js.undefined,
     skin: neutral | primary = null,
-    theme: AnonComponentsSpacing = null
+    theme: ComponentsSpacing = null
   ): TabbedViewProps = {
     val __obj = js.Dynamic.literal()
     if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.get.asInstanceOf[js.Any])
     if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabbedViewProps]

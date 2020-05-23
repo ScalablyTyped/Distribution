@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/target_data", "TargetData")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/target_data", "TargetData")
 @js.native
 class TargetData protected () extends js.Object {
   def this(
@@ -127,7 +127,6 @@ class TargetData protected () extends js.Object {
     * LocalStore for user listens and by the SyncEngine for limbo watches.
     */
   val targetId: TargetId = js.native
-  def isEqual(other: TargetData): Boolean = js.native
   /**
     * Creates a new target data instance with an updated last limbo free
     * snapshot version number.

@@ -95,48 +95,48 @@ trait SnapOptions
 object SnapOptions {
   @scala.inline
   def apply(
-    after: js.Array[String] = null,
-    artifactName: String = null,
-    assumes: js.Array[String] | String = null,
+    after: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    assumes: js.UndefOr[Null | js.Array[String] | String] = js.undefined,
     autoStart: js.UndefOr[Boolean] = js.undefined,
-    buildPackages: js.Array[String] = null,
-    category: String = null,
-    confinement: devmode | strict | classic = null,
-    description: String = null,
-    desktop: js.Any = null,
-    environment: StringDictionary[String] = null,
-    executableArgs: js.Array[String] = null,
-    grade: devel | stable = null,
-    hooks: String = null,
-    mimeTypes: js.Array[String] = null,
-    plugs: (js.Array[String | PlugDescriptor]) | PlugDescriptor = null,
-    publish: Publish = null,
-    stagePackages: js.Array[String] = null,
-    summary: String = null,
-    synopsis: String = null,
+    buildPackages: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    category: js.UndefOr[Null | String] = js.undefined,
+    confinement: js.UndefOr[Null | devmode | strict | classic] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
+    desktop: js.UndefOr[Null | js.Any] = js.undefined,
+    environment: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    executableArgs: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    grade: js.UndefOr[Null | devel | stable] = js.undefined,
+    hooks: js.UndefOr[Null | String] = js.undefined,
+    mimeTypes: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    plugs: js.UndefOr[Null | (js.Array[String | PlugDescriptor]) | PlugDescriptor] = js.undefined,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
+    stagePackages: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    summary: js.UndefOr[Null | String] = js.undefined,
+    synopsis: js.UndefOr[Null | String] = js.undefined,
     useTemplateApp: js.UndefOr[Boolean] = js.undefined
   ): SnapOptions = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (assumes != null) __obj.updateDynamic("assumes")(assumes.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
-    if (buildPackages != null) __obj.updateDynamic("buildPackages")(buildPackages.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (confinement != null) __obj.updateDynamic("confinement")(confinement.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (executableArgs != null) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
-    if (grade != null) __obj.updateDynamic("grade")(grade.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
-    if (plugs != null) __obj.updateDynamic("plugs")(plugs.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (stagePackages != null) __obj.updateDynamic("stagePackages")(stagePackages.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTemplateApp)) __obj.updateDynamic("useTemplateApp")(useTemplateApp.asInstanceOf[js.Any])
+    if (!js.isUndefined(after)) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumes)) __obj.updateDynamic("assumes")(assumes.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buildPackages)) __obj.updateDynamic("buildPackages")(buildPackages.asInstanceOf[js.Any])
+    if (!js.isUndefined(category)) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (!js.isUndefined(confinement)) __obj.updateDynamic("confinement")(confinement.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (!js.isUndefined(environment)) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (!js.isUndefined(executableArgs)) __obj.updateDynamic("executableArgs")(executableArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(grade)) __obj.updateDynamic("grade")(grade.asInstanceOf[js.Any])
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(mimeTypes)) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(plugs)) __obj.updateDynamic("plugs")(plugs.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(stagePackages)) __obj.updateDynamic("stagePackages")(stagePackages.asInstanceOf[js.Any])
+    if (!js.isUndefined(summary)) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (!js.isUndefined(synopsis)) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTemplateApp)) __obj.updateDynamic("useTemplateApp")(useTemplateApp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapOptions]
   }
 }

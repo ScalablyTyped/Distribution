@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Depth
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import scala.scalajs.js
@@ -19,7 +20,7 @@ object boxGeometryMod extends js.Object {
       heightSegments: js.UndefOr[Double],
       depthSegments: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonDepth = js.native
+    var parameters: Depth = js.native
   }
   
   @js.native
@@ -40,7 +41,7 @@ object boxGeometryMod extends js.Object {
       heightSegments: js.UndefOr[Double],
       depthSegments: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonDepth = js.native
+    var parameters: Depth = js.native
   }
   
 }

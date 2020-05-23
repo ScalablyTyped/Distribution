@@ -24,8 +24,8 @@ object LintResult {
     ignored: js.UndefOr[Boolean] = js.undefined
   ): LintResult = {
     val __obj = js.Dynamic.literal(deprecations = deprecations.asInstanceOf[js.Any], invalidOptionWarnings = invalidOptionWarnings.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
-    if (!js.isUndefined(errored)) __obj.updateDynamic("errored")(errored.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignored)) __obj.updateDynamic("ignored")(ignored.asInstanceOf[js.Any])
+    if (!js.isUndefined(errored)) __obj.updateDynamic("errored")(errored.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignored)) __obj.updateDynamic("ignored")(ignored.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LintResult]
   }
 }

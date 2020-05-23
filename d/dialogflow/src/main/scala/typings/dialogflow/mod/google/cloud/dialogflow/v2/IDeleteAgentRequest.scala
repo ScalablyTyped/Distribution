@@ -12,9 +12,9 @@ trait IDeleteAgentRequest extends js.Object {
 
 object IDeleteAgentRequest {
   @scala.inline
-  def apply(parent: String = null): IDeleteAgentRequest = {
+  def apply(parent: js.UndefOr[Null | String] = js.undefined): IDeleteAgentRequest = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteAgentRequest]
   }
 }

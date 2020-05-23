@@ -12,7 +12,7 @@ object CreateSequenceOptions {
   @scala.inline
   def apply(temp: js.UndefOr[Boolean] = js.undefined): CreateSequenceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(temp)) __obj.updateDynamic("temp")(temp.asInstanceOf[js.Any])
+    if (!js.isUndefined(temp)) __obj.updateDynamic("temp")(temp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSequenceOptions]
   }
 }

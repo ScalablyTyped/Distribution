@@ -8,11 +8,11 @@ trait SetSettingsResponse extends js.Object {
   /**
     * The operation task id. May be used to perform a wait task.
     */
-  val taskID: Double
+  var taskID: Double
   /**
     * When the settings got updated.
     */
-  val updatedAt: Double
+  var updatedAt: Double
 }
 
 object SetSettingsResponse {

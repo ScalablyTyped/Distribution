@@ -20,10 +20,10 @@ object ValidationOptionsConfiguration {
     validateOnSave: js.UndefOr[Boolean] = js.undefined
   ): ValidationOptionsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(validateOnAttach)) __obj.updateDynamic("validateOnAttach")(validateOnAttach.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnPropertyChange)) __obj.updateDynamic("validateOnPropertyChange")(validateOnPropertyChange.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnQuery)) __obj.updateDynamic("validateOnQuery")(validateOnQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnSave)) __obj.updateDynamic("validateOnSave")(validateOnSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnAttach)) __obj.updateDynamic("validateOnAttach")(validateOnAttach.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnPropertyChange)) __obj.updateDynamic("validateOnPropertyChange")(validateOnPropertyChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnQuery)) __obj.updateDynamic("validateOnQuery")(validateOnQuery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnSave)) __obj.updateDynamic("validateOnSave")(validateOnSave.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptionsConfiguration]
   }
 }

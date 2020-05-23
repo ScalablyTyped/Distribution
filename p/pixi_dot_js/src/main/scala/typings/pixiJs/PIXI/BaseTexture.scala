@@ -1,14 +1,7 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.AnonAlphaMode
 import typings.pixiJs.PIXI.resources.Resource
 import typings.pixiJs.PIXI.utils.EventEmitter
-import typings.std.Float32Array
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
-import typings.std.HTMLVideoElement
-import typings.std.SVGElement
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,19 +32,8 @@ import scala.scalajs.js.annotation._
   * @param {object} [options.resourceOptions] - Optional resource options,
   *        see {@link PIXI.resources.autoDetectResource autoDetectResource}
   */
-@JSGlobal("PIXI.BaseTexture")
 @js.native
-class BaseTexture () extends EventEmitter {
-  def this(resource: String) = this()
-  def this(resource: Resource) = this()
-  def this(resource: HTMLCanvasElement) = this()
-  def this(resource: HTMLImageElement) = this()
-  def this(resource: HTMLVideoElement) = this()
-  def this(resource: String, options: AnonAlphaMode) = this()
-  def this(resource: Resource, options: AnonAlphaMode) = this()
-  def this(resource: HTMLCanvasElement, options: AnonAlphaMode) = this()
-  def this(resource: HTMLImageElement, options: AnonAlphaMode) = this()
-  def this(resource: HTMLVideoElement, options: AnonAlphaMode) = this()
+trait BaseTexture extends EventEmitter {
   /**
     * Number of the texture batch, used by multi-texture renderers
     *
@@ -290,78 +272,5 @@ class BaseTexture () extends EventEmitter {
     * Invalidates the object. Texture becomes valid if width and height are greater than zero.
     */
   def update(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.BaseTexture")
-@js.native
-object BaseTexture extends js.Object {
-  /**
-    * Global number of the texture batch, used by multi-texture renderers
-    *
-    * @static
-    * @member {number}
-    */
-  var _globalBatch: Double = js.native
-  /**
-    * Adds a BaseTexture to the global BaseTextureCache. This cache is shared across the whole PIXI object.
-    *
-    * @static
-    * @param {PIXI.BaseTexture} baseTexture - The BaseTexture to add to the cache.
-    * @param {string} id - The id that the BaseTexture will be stored against.
-    */
-  def addToCache(baseTexture: BaseTexture, id: String): Unit = js.native
-  /**
-    * Helper function that creates a base texture based on the source you provide.
-    * The source can be - image url, image element, canvas element. If the
-    * source is an image url or an image element and not in the base texture
-    * cache, it will be created and loaded.
-    *
-    * @static
-    * @param {string|HTMLImageElement|HTMLCanvasElement|SVGElement|HTMLVideoElement} source - The
-    *        source to create base texture from.
-    * @param {object} [options] See {@link PIXI.BaseTexture}'s constructor for options.
-    * @param {boolean} [strict] Enforce strict-mode, see {@link PIXI.settings.STRICT_TEXTURE_CACHE}.
-    * @returns {PIXI.BaseTexture} The new base texture.
-    */
-  def from(source: String): BaseTexture = js.native
-  def from(source: String, options: js.Any): BaseTexture = js.native
-  def from(source: String, options: js.Any, strict: Boolean): BaseTexture = js.native
-  def from(source: HTMLCanvasElement): BaseTexture = js.native
-  def from(source: HTMLCanvasElement, options: js.Any): BaseTexture = js.native
-  def from(source: HTMLCanvasElement, options: js.Any, strict: Boolean): BaseTexture = js.native
-  def from(source: HTMLImageElement): BaseTexture = js.native
-  def from(source: HTMLImageElement, options: js.Any): BaseTexture = js.native
-  def from(source: HTMLImageElement, options: js.Any, strict: Boolean): BaseTexture = js.native
-  def from(source: HTMLVideoElement): BaseTexture = js.native
-  def from(source: HTMLVideoElement, options: js.Any): BaseTexture = js.native
-  def from(source: HTMLVideoElement, options: js.Any, strict: Boolean): BaseTexture = js.native
-  def from(source: SVGElement): BaseTexture = js.native
-  def from(source: SVGElement, options: js.Any): BaseTexture = js.native
-  def from(source: SVGElement, options: js.Any, strict: Boolean): BaseTexture = js.native
-  /**
-    * Create a new BaseTexture with a BufferResource from a Float32Array.
-    * RGBA values are floats from 0 to 1.
-    * @static
-    * @param {Float32Array|Uint8Array} buffer The optional array to use, if no data
-    *        is provided, a new Float32Array is created.
-    * @param {number} width - Width of the resource
-    * @param {number} height - Height of the resource
-    * @param {object} [options] See {@link PIXI.BaseTexture}'s constructor for options.
-    * @return {PIXI.BaseTexture} The resulting new BaseTexture
-    */
-  def fromBuffer(buffer: Float32Array, width: Double, height: Double): BaseTexture = js.native
-  def fromBuffer(buffer: Float32Array, width: Double, height: Double, options: js.Any): BaseTexture = js.native
-  def fromBuffer(buffer: Uint8Array, width: Double, height: Double): BaseTexture = js.native
-  def fromBuffer(buffer: Uint8Array, width: Double, height: Double, options: js.Any): BaseTexture = js.native
-  /**
-    * Remove a BaseTexture from the global BaseTextureCache.
-    *
-    * @static
-    * @param {string|PIXI.BaseTexture} baseTexture - id of a BaseTexture to be removed, or a BaseTexture instance itself.
-    * @return {PIXI.BaseTexture|null} The BaseTexture that was removed.
-    */
-  def removeFromCache(baseTexture: String): BaseTexture | Null = js.native
-  def removeFromCache(baseTexture: BaseTexture): BaseTexture | Null = js.native
 }
 

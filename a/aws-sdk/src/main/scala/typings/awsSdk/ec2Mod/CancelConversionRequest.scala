@@ -24,11 +24,11 @@ object CancelConversionRequest {
   @scala.inline
   def apply(
     ConversionTaskId: ConversionTaskId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     ReasonMessage: String = null
   ): CancelConversionRequest = {
     val __obj = js.Dynamic.literal(ConversionTaskId = ConversionTaskId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (ReasonMessage != null) __obj.updateDynamic("ReasonMessage")(ReasonMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelConversionRequest]
   }

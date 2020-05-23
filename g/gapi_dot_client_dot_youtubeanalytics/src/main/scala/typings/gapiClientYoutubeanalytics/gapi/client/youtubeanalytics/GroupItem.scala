@@ -1,6 +1,6 @@
 package typings.gapiClientYoutubeanalytics.gapi.client.youtubeanalytics
 
-import typings.gapiClientYoutubeanalytics.AnonId
+import typings.gapiClientYoutubeanalytics.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait GroupItem extends js.Object {
   var groupId: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var kind: js.UndefOr[String] = js.undefined
-  var resource: js.UndefOr[AnonId] = js.undefined
+  var resource: js.UndefOr[Id] = js.undefined
 }
 
 object GroupItem {
@@ -20,7 +20,7 @@ object GroupItem {
     groupId: String = null,
     id: String = null,
     kind: String = null,
-    resource: AnonId = null
+    resource: Id = null
   ): GroupItem = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])

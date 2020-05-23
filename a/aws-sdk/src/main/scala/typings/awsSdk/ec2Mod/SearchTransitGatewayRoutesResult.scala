@@ -19,11 +19,11 @@ trait SearchTransitGatewayRoutesResult extends js.Object {
 object SearchTransitGatewayRoutesResult {
   @scala.inline
   def apply(
-    AdditionalRoutesAvailable: js.UndefOr[scala.Boolean] = js.undefined,
+    AdditionalRoutesAvailable: js.UndefOr[Boolean] = js.undefined,
     Routes: TransitGatewayRouteList = null
   ): SearchTransitGatewayRoutesResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AdditionalRoutesAvailable)) __obj.updateDynamic("AdditionalRoutesAvailable")(AdditionalRoutesAvailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(AdditionalRoutesAvailable)) __obj.updateDynamic("AdditionalRoutesAvailable")(AdditionalRoutesAvailable.get.asInstanceOf[js.Any])
     if (Routes != null) __obj.updateDynamic("Routes")(Routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchTransitGatewayRoutesResult]
   }

@@ -23,7 +23,7 @@ object DrivingRouteOptions {
     onPolylinesSet: /* routes */ js.Array[Route] => Unit = null,
     onResultsHtmlSet: /* container */ HTMLElement => Unit = null,
     onSearchComplete: /* results */ DrivingRouteResult => Unit = null,
-    policy: Int | Double = null,
+    policy: js.UndefOr[DrivingPolicy] = js.undefined,
     renderOptions: RenderOptions = null
   ): DrivingRouteOptions = {
     val __obj = js.Dynamic.literal()
@@ -32,7 +32,7 @@ object DrivingRouteOptions {
     if (onPolylinesSet != null) __obj.updateDynamic("onPolylinesSet")(js.Any.fromFunction1(onPolylinesSet))
     if (onResultsHtmlSet != null) __obj.updateDynamic("onResultsHtmlSet")(js.Any.fromFunction1(onResultsHtmlSet))
     if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(js.Any.fromFunction1(onSearchComplete))
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (!js.isUndefined(policy)) __obj.updateDynamic("policy")(policy.get.asInstanceOf[js.Any])
     if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrivingRouteOptions]
   }

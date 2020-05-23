@@ -11,10 +11,13 @@ trait SendMediaGroupOptions extends js.Object {
 
 object SendMediaGroupOptions {
   @scala.inline
-  def apply(disable_notification: js.UndefOr[Boolean] = js.undefined, reply_to_message_id: Int | Double = null): SendMediaGroupOptions = {
+  def apply(
+    disable_notification: js.UndefOr[Boolean] = js.undefined,
+    reply_to_message_id: js.UndefOr[Double] = js.undefined
+  ): SendMediaGroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification.asInstanceOf[js.Any])
-    if (reply_to_message_id != null) __obj.updateDynamic("reply_to_message_id")(reply_to_message_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reply_to_message_id)) __obj.updateDynamic("reply_to_message_id")(reply_to_message_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMediaGroupOptions]
   }
 }

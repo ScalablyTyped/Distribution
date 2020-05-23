@@ -18,7 +18,7 @@ trait ApplicationLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+    * Returns the Excel calculation engine version used for the last full recalculation.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -32,11 +32,25 @@ trait ApplicationLoadOptions extends js.Object {
   var calculationMode: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+    * Returns the calculation state of the application. See Excel.CalculationState for details.
     *
     * [Api set: ExcelApi 1.9]
     */
   var calculationState: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
+    * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  var cultureInfo: js.UndefOr[CultureInfoLoadOptions] = js.undefined
+  /**
+    *
+    * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  var decimalSeparator: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Returns the Iterative Calculation settings.
@@ -46,6 +60,21 @@ trait ApplicationLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var iterativeCalculation: js.UndefOr[IterativeCalculationLoadOptions] = js.undefined
+  /**
+    *
+    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  var thousandsSeparator: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
+    * Specifies if the system separators of Excel are enabled.
+    System separators include the decimal separator and thousands separator.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  var useSystemSeparators: js.UndefOr[Boolean] = js.undefined
 }
 
 object ApplicationLoadOptions {
@@ -55,14 +84,22 @@ object ApplicationLoadOptions {
     calculationEngineVersion: js.UndefOr[Boolean] = js.undefined,
     calculationMode: js.UndefOr[Boolean] = js.undefined,
     calculationState: js.UndefOr[Boolean] = js.undefined,
-    iterativeCalculation: IterativeCalculationLoadOptions = null
+    cultureInfo: CultureInfoLoadOptions = null,
+    decimalSeparator: js.UndefOr[Boolean] = js.undefined,
+    iterativeCalculation: IterativeCalculationLoadOptions = null,
+    thousandsSeparator: js.UndefOr[Boolean] = js.undefined,
+    useSystemSeparators: js.UndefOr[Boolean] = js.undefined
   ): ApplicationLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculationMode)) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculationState)) __obj.updateDynamic("calculationState")(calculationState.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculationMode)) __obj.updateDynamic("calculationMode")(calculationMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculationState)) __obj.updateDynamic("calculationState")(calculationState.get.asInstanceOf[js.Any])
+    if (cultureInfo != null) __obj.updateDynamic("cultureInfo")(cultureInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimalSeparator)) __obj.updateDynamic("decimalSeparator")(decimalSeparator.get.asInstanceOf[js.Any])
     if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation.asInstanceOf[js.Any])
+    if (!js.isUndefined(thousandsSeparator)) __obj.updateDynamic("thousandsSeparator")(thousandsSeparator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSystemSeparators)) __obj.updateDynamic("useSystemSeparators")(useSystemSeparators.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationLoadOptions]
   }
 }

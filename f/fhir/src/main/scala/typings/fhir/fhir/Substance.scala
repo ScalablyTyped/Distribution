@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A homogeneous material with a definite composition
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Substance extends DomainResource {
   /**
     * Contains extended information for property 'description'.

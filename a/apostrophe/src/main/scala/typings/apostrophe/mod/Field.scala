@@ -36,7 +36,7 @@ object Field {
     if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (titleField != null) __obj.updateDynamic("titleField")(titleField.asInstanceOf[js.Any])
     if (widgetType != null) __obj.updateDynamic("widgetType")(widgetType.asInstanceOf[js.Any])

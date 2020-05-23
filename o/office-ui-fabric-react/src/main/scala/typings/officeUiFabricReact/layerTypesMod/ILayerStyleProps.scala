@@ -25,7 +25,7 @@ object ILayerStyleProps {
   def apply(theme: ITheme, className: String = null, isNotHost: js.UndefOr[Boolean] = js.undefined): ILayerStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNotHost)) __obj.updateDynamic("isNotHost")(isNotHost.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNotHost)) __obj.updateDynamic("isNotHost")(isNotHost.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayerStyleProps]
   }
 }

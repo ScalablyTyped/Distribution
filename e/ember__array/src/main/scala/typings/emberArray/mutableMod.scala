@@ -15,7 +15,7 @@ object mutableMod extends js.Object {
     * It builds upon the Array mixin and adds methods to modify the array.
     * One concrete implementations of this class include ArrayProxy.
     */
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.emberArray.enumerableMod.Enumerable because Already inherited
   - typings.emberArray.mutableEnumerableMod.MutableEnumerable because var conflicts: `[]`, every_Original, filter_Original, find_Original, firstObject, forEach_Original, lastObject, map_Original, reduce_Original. Inlined addObject, addObjects, removeObject, removeObjects */ @js.native
   trait MutableArray[T] extends Array[T] {

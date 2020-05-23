@@ -56,7 +56,7 @@ object BootstrapTreeViewOptions {
     expandIcon: String = null,
     highlightSearchResults: js.UndefOr[Boolean] = js.undefined,
     highlightSelected: js.UndefOr[Boolean] = js.undefined,
-    levels: Int | Double = null,
+    levels: js.UndefOr[Double] = js.undefined,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
     nodeIcon: String = null,
     onNodeChecked: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit = null,
@@ -89,12 +89,12 @@ object BootstrapTreeViewOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (emptyIcon != null) __obj.updateDynamic("emptyIcon")(emptyIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLinks)) __obj.updateDynamic("enableLinks")(enableLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLinks)) __obj.updateDynamic("enableLinks")(enableLinks.get.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightSearchResults)) __obj.updateDynamic("highlightSearchResults")(highlightSearchResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightSelected)) __obj.updateDynamic("highlightSelected")(highlightSelected.asInstanceOf[js.Any])
-    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightSearchResults)) __obj.updateDynamic("highlightSearchResults")(highlightSearchResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightSelected)) __obj.updateDynamic("highlightSelected")(highlightSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(levels)) __obj.updateDynamic("levels")(levels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.get.asInstanceOf[js.Any])
     if (nodeIcon != null) __obj.updateDynamic("nodeIcon")(nodeIcon.asInstanceOf[js.Any])
     if (onNodeChecked != null) __obj.updateDynamic("onNodeChecked")(js.Any.fromFunction2(onNodeChecked))
     if (onNodeCollapsed != null) __obj.updateDynamic("onNodeCollapsed")(js.Any.fromFunction2(onNodeCollapsed))
@@ -112,11 +112,11 @@ object BootstrapTreeViewOptions {
     if (selectedBackColor != null) __obj.updateDynamic("selectedBackColor")(selectedBackColor.asInstanceOf[js.Any])
     if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor.asInstanceOf[js.Any])
     if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBorder)) __obj.updateDynamic("showBorder")(showBorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTags)) __obj.updateDynamic("showTags")(showTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(uncheckedIcon)) __obj.updateDynamic("uncheckedIcon")(uncheckedIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBorder)) __obj.updateDynamic("showBorder")(showBorder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTags)) __obj.updateDynamic("showTags")(showTags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uncheckedIcon)) __obj.updateDynamic("uncheckedIcon")(uncheckedIcon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapTreeViewOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +70,11 @@ trait predominance extends js.Object {
   def createRenderer(params: predominanceCreateRendererParams): js.Promise[predominanceRendererResult]
 }
 
-@JSGlobal("__esri.predominance")
-@js.native
-object predominance extends TopLevel[predominance]
+object predominance {
+  @scala.inline
+  def apply(createRenderer: predominanceCreateRendererParams => js.Promise[predominanceRendererResult]): predominance = {
+    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
+    __obj.asInstanceOf[predominance]
+  }
+}
 

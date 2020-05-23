@@ -36,39 +36,39 @@ object ProgressBarOptions {
     eta: js.UndefOr[Boolean] = js.undefined,
     etaStyle: CTerminal = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
-    itemSize: Int | Double = null,
+    itemSize: js.UndefOr[Double] = js.undefined,
     itemStyle: CTerminal = null,
-    items: Int | Double = null,
-    maxRefreshTime: Int | Double = null,
-    minRefreshTime: Int | Double = null,
+    items: js.UndefOr[Double] = js.undefined,
+    maxRefreshTime: js.UndefOr[Double] = js.undefined,
+    minRefreshTime: js.UndefOr[Double] = js.undefined,
     percent: js.UndefOr[Boolean] = js.undefined,
     percentStyle: CTerminal = null,
     syncMode: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
-    titleSize: Int | Double = null,
+    titleSize: js.UndefOr[Double] = js.undefined,
     titleStyle: CTerminal = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ProgressBarOptions = {
     val __obj = js.Dynamic.literal()
     if (barBracketStyle != null) __obj.updateDynamic("barBracketStyle")(barBracketStyle.asInstanceOf[js.Any])
     if (barChar != null) __obj.updateDynamic("barChar")(barChar.asInstanceOf[js.Any])
     if (barHeadChar != null) __obj.updateDynamic("barHeadChar")(barHeadChar.asInstanceOf[js.Any])
     if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(eta)) __obj.updateDynamic("eta")(eta.asInstanceOf[js.Any])
+    if (!js.isUndefined(eta)) __obj.updateDynamic("eta")(eta.get.asInstanceOf[js.Any])
     if (etaStyle != null) __obj.updateDynamic("etaStyle")(etaStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (itemSize != null) __obj.updateDynamic("itemSize")(itemSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemSize)) __obj.updateDynamic("itemSize")(itemSize.get.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (maxRefreshTime != null) __obj.updateDynamic("maxRefreshTime")(maxRefreshTime.asInstanceOf[js.Any])
-    if (minRefreshTime != null) __obj.updateDynamic("minRefreshTime")(minRefreshTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRefreshTime)) __obj.updateDynamic("maxRefreshTime")(maxRefreshTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRefreshTime)) __obj.updateDynamic("minRefreshTime")(minRefreshTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     if (percentStyle != null) __obj.updateDynamic("percentStyle")(percentStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(syncMode)) __obj.updateDynamic("syncMode")(syncMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(syncMode)) __obj.updateDynamic("syncMode")(syncMode.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleSize != null) __obj.updateDynamic("titleSize")(titleSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleSize)) __obj.updateDynamic("titleSize")(titleSize.get.asInstanceOf[js.Any])
     if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarOptions]
   }
 }

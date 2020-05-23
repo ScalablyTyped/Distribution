@@ -16,16 +16,16 @@ object ARFrame {
   @scala.inline
   def apply(
     timestamp: Double,
-    anchors: js.Array[Anchor] = null,
-    capturedDepthData: CapturedDepthData = null,
-    lightEstimation: LightEstimation = null,
-    rawFeaturePoints: js.Array[RawFeaturePoint] = null
+    anchors: js.UndefOr[Null | js.Array[Anchor]] = js.undefined,
+    capturedDepthData: js.UndefOr[Null | CapturedDepthData] = js.undefined,
+    lightEstimation: js.UndefOr[Null | LightEstimation] = js.undefined,
+    rawFeaturePoints: js.UndefOr[Null | js.Array[RawFeaturePoint]] = js.undefined
   ): ARFrame = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
-    if (anchors != null) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
-    if (capturedDepthData != null) __obj.updateDynamic("capturedDepthData")(capturedDepthData.asInstanceOf[js.Any])
-    if (lightEstimation != null) __obj.updateDynamic("lightEstimation")(lightEstimation.asInstanceOf[js.Any])
-    if (rawFeaturePoints != null) __obj.updateDynamic("rawFeaturePoints")(rawFeaturePoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchors)) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
+    if (!js.isUndefined(capturedDepthData)) __obj.updateDynamic("capturedDepthData")(capturedDepthData.asInstanceOf[js.Any])
+    if (!js.isUndefined(lightEstimation)) __obj.updateDynamic("lightEstimation")(lightEstimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(rawFeaturePoints)) __obj.updateDynamic("rawFeaturePoints")(rawFeaturePoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARFrame]
   }
 }

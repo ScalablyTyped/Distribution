@@ -41,7 +41,7 @@ object BodySerializerBuildOptions {
     memberName: String = null
   ): BodySerializerBuildOptions = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasPayload)) __obj.updateDynamic("hasPayload")(hasPayload.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasPayload)) __obj.updateDynamic("hasPayload")(hasPayload.get.asInstanceOf[js.Any])
     if (member != null) __obj.updateDynamic("member")(member.asInstanceOf[js.Any])
     if (memberName != null) __obj.updateDynamic("memberName")(memberName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodySerializerBuildOptions]

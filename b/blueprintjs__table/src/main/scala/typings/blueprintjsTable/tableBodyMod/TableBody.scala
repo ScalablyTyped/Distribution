@@ -1,8 +1,8 @@
 package typings.blueprintjsTable.tableBodyMod
 
 import typings.blueprintjsCore.mod.AbstractComponent2
-import typings.blueprintjsTable.AnonLoading
-import typings.react.mod._Global_.JSX.Element
+import typings.blueprintjsTable.anon.Loading
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -26,7 +26,7 @@ class TableBody ()
 @JSImport("@blueprintjs/table/lib/esm/tableBody", "TableBody")
 @js.native
 object TableBody extends js.Object {
-  var defaultProps: AnonLoading = js.native
+  var defaultProps: Loading = js.native
   def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = js.native
 }
 

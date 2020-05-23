@@ -1,18 +1,18 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonCardId
+import typings.jweixin.anon.CardId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IopenCard extends BaseParams {
-  var cardList: js.Array[AnonCardId]
+  var cardList: js.Array[CardId]
 }
 
 object IopenCard {
   @scala.inline
   def apply(
-    cardList: js.Array[AnonCardId],
+    cardList: js.Array[CardId],
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null,
     success: /* repeated */ js.Any => Unit = null

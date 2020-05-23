@@ -28,7 +28,7 @@ trait PlusScreen extends js.Object {
   /**
     * 设备屏幕高度分辨率
     * 设备屏幕区域包括系统状态栏显示区域和应用显示区域，screen获取的是设备屏幕总区域的逻辑分辨率，单位为px。
-    * 	如果需要获取实际分辨率则需要乘以比例值scale。
+    *     如果需要获取实际分辨率则需要乘以比例值scale。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
@@ -36,7 +36,7 @@ trait PlusScreen extends js.Object {
   /**
     * 设备屏幕宽度分辨率
     * 设备屏幕区域包括系统状态栏显示区域和应用显示区域，screen获取的是设备屏幕总区域的分辨率，单位为px。
-    * 	如果需要获取实际分辨率则需要乘以比例值scale。
+    *     如果需要获取实际分辨率则需要乘以比例值scale。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
@@ -58,7 +58,7 @@ trait PlusScreen extends js.Object {
   /**
     * 锁定屏幕方向
     * 锁定屏幕方向后屏幕只能按锁定的屏幕方向显示，关闭当前页面后仍然有效。
-    * 	可再次调用此方法修改屏幕锁定方向或调用unlockOrientation()方法恢复到应用的默认值。
+    *     可再次调用此方法修改屏幕锁定方向或调用unlockOrientation()方法恢复到应用的默认值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */

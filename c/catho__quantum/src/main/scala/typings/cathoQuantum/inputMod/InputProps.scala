@@ -1,6 +1,6 @@
 package typings.cathoQuantum.inputMod
 
-import typings.cathoQuantum.AnonBaseFontSizeColors
+import typings.cathoQuantum.anon.BaseFontSizeColors
 import typings.cathoQuantum.cathoQuantumStrings.email
 import typings.cathoQuantum.cathoQuantumStrings.number
 import typings.cathoQuantum.cathoQuantumStrings.password
@@ -31,7 +31,7 @@ trait InputProps extends js.Object {
   var onClean: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
-  var theme: js.UndefOr[AnonBaseFontSizeColors] = js.undefined
+  var theme: js.UndefOr[BaseFontSizeColors] = js.undefined
   var `type`: js.UndefOr[email | text | tel | number | password | search] = js.undefined
   var validate: js.UndefOr[Validate | CustomValidate | (js.Array[Validate | CustomValidate])] = js.undefined
   var value: js.UndefOr[String] = js.undefined
@@ -53,7 +53,7 @@ object InputProps {
     onClean: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     placeholder: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    theme: AnonBaseFontSizeColors = null,
+    theme: BaseFontSizeColors = null,
     `type`: email | text | tel | number | password | search = null,
     validate: Validate | CustomValidate | (js.Array[Validate | CustomValidate]) = null,
     value: String = null
@@ -71,7 +71,7 @@ object InputProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClean != null) __obj.updateDynamic("onClean")(js.Any.fromFunction1(onClean))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])

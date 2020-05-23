@@ -1,7 +1,7 @@
 package typings.reactSelect.componentsMultiValueMod
 
 import typings.react.mod.ReactNode
-import typings.reactSelect.AnonOnClick
+import typings.reactSelect.anon.OnClick
 import typings.reactSelect.selectMod.Props
 import typings.reactSelect.typesMod.ActionTypes
 import typings.reactSelect.typesMod.ClassNamesState
@@ -26,15 +26,15 @@ trait MultiValueProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   var isFocused: Boolean = js.native
   var isMulti: Boolean = js.native
   var options: OptionsType[OptionType] = js.native
-  var removeProps: AnonOnClick = js.native
+  var removeProps: OnClick = js.native
   var selectProps: Props[OptionType] = js.native
   def clearValue(): Unit = js.native
   def cx(): String | Unit = js.native
   def cx(a: String): String | Unit = js.native
-  def cx(a: String, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
   def cx(a: String, b: ClassNamesState): String | Unit = js.native
-  def cx(a: Null, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
+  def cx(a: String, b: ClassNamesState, c: String): String | Unit = js.native
   def cx(a: Null, b: ClassNamesState): String | Unit = js.native
+  def cx(a: Null, b: ClassNamesState, c: String): String | Unit = js.native
   /*
     Get the styles of a particular part of the select. Pass in the name of the
     property as the first argument, and the current props as the second argument.

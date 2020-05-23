@@ -11,7 +11,7 @@ trait AcceptInvitationRequest extends js.Object {
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**
-    * This value is used to validate the master account to the member account.
+    * The value that is used to validate the master account to the member account.
     */
   var InvitationId: String = js.native
   /**

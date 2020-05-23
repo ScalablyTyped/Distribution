@@ -44,19 +44,19 @@ object ApiKeyOptions {
     description: String = null,
     indexes: js.Array[String] = null,
     maxHitsPerQuery: js.UndefOr[Boolean] = js.undefined,
-    maxQueriesPerIPPerHour: Int | Double = null,
+    maxQueriesPerIPPerHour: js.UndefOr[Double] = js.undefined,
     queryParameters: QueryParameters = null,
     referers: js.Array[String] = null,
-    validity: Int | Double = null
+    validity: js.UndefOr[Double] = js.undefined
   ): ApiKeyOptions = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHitsPerQuery)) __obj.updateDynamic("maxHitsPerQuery")(maxHitsPerQuery.asInstanceOf[js.Any])
-    if (maxQueriesPerIPPerHour != null) __obj.updateDynamic("maxQueriesPerIPPerHour")(maxQueriesPerIPPerHour.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHitsPerQuery)) __obj.updateDynamic("maxHitsPerQuery")(maxHitsPerQuery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxQueriesPerIPPerHour)) __obj.updateDynamic("maxQueriesPerIPPerHour")(maxQueriesPerIPPerHour.get.asInstanceOf[js.Any])
     if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters.asInstanceOf[js.Any])
     if (referers != null) __obj.updateDynamic("referers")(referers.asInstanceOf[js.Any])
-    if (validity != null) __obj.updateDynamic("validity")(validity.asInstanceOf[js.Any])
+    if (!js.isUndefined(validity)) __obj.updateDynamic("validity")(validity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKeyOptions]
   }
 }

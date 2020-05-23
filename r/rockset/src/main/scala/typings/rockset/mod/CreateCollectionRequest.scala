@@ -26,14 +26,14 @@ object CreateCollectionRequest {
     description: String = null,
     event_time_info: EventTimeInfo = null,
     field_mappings: js.Array[FieldMappingV2] = null,
-    retention_secs: Int | Double = null,
+    retention_secs: js.UndefOr[Double] = js.undefined,
     sources: js.Array[Source] = null
   ): CreateCollectionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (event_time_info != null) __obj.updateDynamic("event_time_info")(event_time_info.asInstanceOf[js.Any])
     if (field_mappings != null) __obj.updateDynamic("field_mappings")(field_mappings.asInstanceOf[js.Any])
-    if (retention_secs != null) __obj.updateDynamic("retention_secs")(retention_secs.asInstanceOf[js.Any])
+    if (!js.isUndefined(retention_secs)) __obj.updateDynamic("retention_secs")(retention_secs.get.asInstanceOf[js.Any])
     if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectionRequest]
   }

@@ -15,11 +15,15 @@ trait UploadTask extends js.Object {
 
 object UploadTask {
   @scala.inline
-  def apply(file: String, arch: Arch = null, fileContent: Buffer = null, safeArtifactName: String = null): UploadTask = {
-    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
-    if (fileContent != null) __obj.updateDynamic("fileContent")(fileContent.asInstanceOf[js.Any])
-    if (safeArtifactName != null) __obj.updateDynamic("safeArtifactName")(safeArtifactName.asInstanceOf[js.Any])
+  def apply(
+    file: String,
+    arch: Arch = null,
+    fileContent: js.UndefOr[Null | Buffer] = js.undefined,
+    safeArtifactName: js.UndefOr[Null | String] = js.undefined
+  ): UploadTask = {
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], arch = arch.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileContent)) __obj.updateDynamic("fileContent")(fileContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeArtifactName)) __obj.updateDynamic("safeArtifactName")(safeArtifactName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadTask]
   }
 }

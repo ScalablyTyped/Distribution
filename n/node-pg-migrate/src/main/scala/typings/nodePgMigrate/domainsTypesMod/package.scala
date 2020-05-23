@@ -10,7 +10,7 @@ package object domainsTypesMod {
     /* domainOptions */ typings.nodePgMigrate.domainsTypesMod.DomainOptionsAlter, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type CreateDomain = typings.nodePgMigrate.domainsTypesMod.CreateDomainFn with typings.nodePgMigrate.AnonReverse
+  type CreateDomain = typings.nodePgMigrate.domainsTypesMod.CreateDomainFn with typings.nodePgMigrate.anon.Reverse
   type CreateDomainFn = js.Function3[
     /* domainName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* type */ typings.nodePgMigrate.generalTypesMod.Type, 
@@ -24,7 +24,7 @@ package object domainsTypesMod {
     /* dropOptions */ js.UndefOr[typings.nodePgMigrate.generalTypesMod.DropOptions], 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RenameDomain = typings.nodePgMigrate.domainsTypesMod.RenameDomainFn with typings.nodePgMigrate.AnonReverseRenameDomainFn
+  type RenameDomain = typings.nodePgMigrate.domainsTypesMod.RenameDomainFn with typings.nodePgMigrate.anon.ReverseRenameDomainFn
   type RenameDomainFn = js.Function2[
     /* oldDomainName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* newDomainName */ typings.nodePgMigrate.generalTypesMod.Name, 

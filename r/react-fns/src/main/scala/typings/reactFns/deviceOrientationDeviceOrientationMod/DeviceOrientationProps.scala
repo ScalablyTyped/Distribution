@@ -15,14 +15,11 @@ object DeviceOrientationProps {
   @scala.inline
   def apply(
     absolute: Boolean,
-    alpha: Int | Double = null,
-    beta: Int | Double = null,
-    gamma: Int | Double = null
+    alpha: Double = null.asInstanceOf[Double],
+    beta: Double = null.asInstanceOf[Double],
+    gamma: Double = null.asInstanceOf[Double]
   ): DeviceOrientationProps = {
-    val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any])
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
-    if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], gamma = gamma.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceOrientationProps]
   }
 }

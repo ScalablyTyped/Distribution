@@ -21,7 +21,7 @@ trait ConfirmQuestion[T /* <: Answers */] extends Question[T] {
 
 object ConfirmQuestion {
   @scala.inline
-  def apply[T /* <: Answers */](
+  def apply[T](
     `type`: confirm,
     default: AsyncDynamicQuestionProperty[_, T] = null,
     filter: /* input */ js.Any => _ = null,

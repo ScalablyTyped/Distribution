@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object EnumDWTImageType extends js.Object {
   /** Tagged Image File Format. */
   @js.native
   sealed trait IT_TIF extends EnumDWTImageType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTImageType with Double] = js.native
-  /* 5 */ @js.native
-  object IT_ALL extends TopLevel[IT_ALL with Double]
-  
-  /* 0 */ @js.native
-  object IT_BMP extends TopLevel[IT_BMP with Double]
-  
-  /* 1 */ @js.native
-  object IT_JPG extends TopLevel[IT_JPG with Double]
-  
-  /* 4 */ @js.native
-  object IT_PDF extends TopLevel[IT_PDF with Double]
-  
-  /* 3 */ @js.native
-  object IT_PNG extends TopLevel[IT_PNG with Double]
-  
-  /* 2 */ @js.native
-  object IT_TIF extends TopLevel[IT_TIF with Double]
   
 }
 

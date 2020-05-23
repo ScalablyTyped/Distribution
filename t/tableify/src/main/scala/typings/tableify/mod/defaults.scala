@@ -1,6 +1,6 @@
 package typings.tableify.mod
 
-import typings.tableify.FnCall
+import typings.tableify.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

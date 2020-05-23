@@ -1,6 +1,6 @@
 package typings.css.mod
 
-import typings.css.AnonContent
+import typings.css.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object Host {
   @scala.inline
   def apply(
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     rules: js.Array[Rule | Comment | AtRule] = null,
     `type`: String = null
   ): Host = {

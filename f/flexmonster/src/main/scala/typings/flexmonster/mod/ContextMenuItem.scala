@@ -24,7 +24,7 @@ object ContextMenuItem {
     val __obj = js.Dynamic.literal()
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuItem]

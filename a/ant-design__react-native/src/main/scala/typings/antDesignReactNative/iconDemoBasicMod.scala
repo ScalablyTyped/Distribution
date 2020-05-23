@@ -1,7 +1,5 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.antDesignReactNativeStrings.Icon
-import typings.antDesignReactNative.antDesignReactNativeStrings.`Icon Example`
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +15,7 @@ object iconDemoBasicMod extends js.Object {
   @js.native
   class default () extends IConDemo
   
-  val description: `Icon Example` = js.native
-  val title: Icon = js.native
+  val description: /* "Icon Example" */ String = js.native
+  val title: /* "Icon" */ String = js.native
 }
 

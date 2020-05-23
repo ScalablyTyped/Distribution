@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.activationsMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.softsign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ class Softsign () extends Activation
 @js.native
 object Softsign extends js.Object {
   /** @nocollapse */
-  val className: softsign = js.native
+  val className: /* "softsign" */ String = js.native
 }
 

@@ -29,7 +29,7 @@ trait PlusShareShareService extends js.Object {
   /**
     * 分享服务描述
     * 用于描述分享服务的信息：
-    * 	如“新浪微博”、“腾讯微博”、“微信”、“QQ”。
+    *     如“新浪微博”、“腾讯微博”、“微信”、“QQ”。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
@@ -37,10 +37,10 @@ trait PlusShareShareService extends js.Object {
   /**
     * 分享服务标识
     * 用于表示分享服务标识：
-    * 	"sinaweibo" - 表示新浪微博；
-    * 	"tencentweibo" - 表示腾讯微博；
-    * 	"weixin" - 表示微信；
-    * 	"qq" - 表示腾讯QQ。
+    *     "sinaweibo" - 表示新浪微博；
+    *     "tencentweibo" - 表示腾讯微博；
+    *     "weixin" - 表示微信；
+    *     "qq" - 表示腾讯QQ。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
@@ -55,7 +55,7 @@ trait PlusShareShareService extends js.Object {
   /**
     * 授权认证操作
     * 对指定的分享服务进行授权认证操作，在授权前可通过ShareService.authenticated属性判断是否已经授权过，通常只需要对没有进行过授权认证的服务进行授权认证操作。
-    * 	授权认证操作成功后通过successCB回调函数通知操作完成，操作失败则通过errorCB回调返回。
+    *     授权认证操作成功后通过successCB回调函数通知操作完成，操作失败则通过errorCB回调返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
@@ -88,7 +88,7 @@ trait PlusShareShareService extends js.Object {
   /**
     * 发送分享
     * 发送分享消息，分享消息的内容通过msg设置。
-    * 	发送成功后通过successCB回调函数通知操作完成，发送失败则通过errorCB回调返回。若分享服务没有进行授权认证或授权认证失效则触发失败回调函数。
+    *     发送成功后通过successCB回调函数通知操作完成，发送失败则通过errorCB回调返回。若分享服务没有进行授权认证或授权认证失效则触发失败回调函数。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */

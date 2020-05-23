@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BatchGetApplicationsInput extends js.Object {
   /**
-    * A list of application names separated by spaces. The maximum number of application names you can specify is 25.
+    * A list of application names separated by spaces. The maximum number of application names you can specify is 100.
     */
   var applicationNames: ApplicationsList = js.native
 }

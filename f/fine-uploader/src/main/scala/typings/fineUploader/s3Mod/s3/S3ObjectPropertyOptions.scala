@@ -82,9 +82,9 @@ object S3ObjectPropertyOptions {
     if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(reducedRedundancy)) __obj.updateDynamic("reducedRedundancy")(reducedRedundancy.asInstanceOf[js.Any])
+    if (!js.isUndefined(reducedRedundancy)) __obj.updateDynamic("reducedRedundancy")(reducedRedundancy.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverSideEncryption)) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverSideEncryption)) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3ObjectPropertyOptions]
   }
 }

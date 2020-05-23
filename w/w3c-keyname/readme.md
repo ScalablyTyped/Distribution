@@ -1,7 +1,7 @@
 
 # Scala.js typings for w3c-keyname
 
-Typings are for version 2.2.2
+Typings are for version 2.2.4
 
 ## Library description:
 Get a KeyboardEvent.key-style string from an event

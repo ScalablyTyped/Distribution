@@ -29,25 +29,25 @@ object SharedImigixAndSourceProps {
     disableLibraryParam: js.UndefOr[Boolean] = js.undefined,
     disableQualityByDPR: js.UndefOr[Boolean] = js.undefined,
     disableSrcSet: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     htmlAttributes: ImgixHTMLAttributes = null,
     imgixParams: ImigixParams = null,
     onMounted: /* ref */ js.UndefOr[RefObject[HTMLPictureElement | HTMLImageElement | HTMLSourceElement]] => Unit = null,
     sizes: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): SharedImigixAndSourceProps = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (attributeConfig != null) __obj.updateDynamic("attributeConfig")(attributeConfig.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableLibraryParam)) __obj.updateDynamic("disableLibraryParam")(disableLibraryParam.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableQualityByDPR)) __obj.updateDynamic("disableQualityByDPR")(disableQualityByDPR.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSrcSet)) __obj.updateDynamic("disableSrcSet")(disableSrcSet.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableLibraryParam)) __obj.updateDynamic("disableLibraryParam")(disableLibraryParam.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableQualityByDPR)) __obj.updateDynamic("disableQualityByDPR")(disableQualityByDPR.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSrcSet)) __obj.updateDynamic("disableSrcSet")(disableSrcSet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
     if (imgixParams != null) __obj.updateDynamic("imgixParams")(imgixParams.asInstanceOf[js.Any])
     if (onMounted != null) __obj.updateDynamic("onMounted")(js.Any.fromFunction1(onMounted))
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedImigixAndSourceProps]
   }
 }

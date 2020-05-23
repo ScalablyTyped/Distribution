@@ -16,7 +16,7 @@ object IPrimitiveOptions {
   def apply(cursor: String = null, visible: js.UndefOr[Boolean] = js.undefined): IPrimitiveOptions = {
     val __obj = js.Dynamic.literal()
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrimitiveOptions]
   }
 }

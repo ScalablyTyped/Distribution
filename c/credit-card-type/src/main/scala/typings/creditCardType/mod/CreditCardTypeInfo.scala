@@ -1,13 +1,13 @@
 package typings.creditCardType.mod
 
-import typings.creditCardType.AnonName
+import typings.creditCardType.anon.Name
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreditCardTypeInfo extends js.Object {
-  var code: js.UndefOr[AnonName] = js.undefined
+  var code: js.UndefOr[Name] = js.undefined
   var exactPattern: js.UndefOr[RegExp] = js.undefined
   var gaps: js.UndefOr[js.Array[Double]] = js.undefined
   var lengths: js.UndefOr[js.Array[Double]] = js.undefined
@@ -19,7 +19,7 @@ trait CreditCardTypeInfo extends js.Object {
 object CreditCardTypeInfo {
   @scala.inline
   def apply(
-    code: AnonName = null,
+    code: Name = null,
     exactPattern: RegExp = null,
     gaps: js.Array[Double] = null,
     lengths: js.Array[Double] = null,

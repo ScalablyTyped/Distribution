@@ -1,7 +1,7 @@
 
 # Scala.js typings for copyfiles
 
-Typings are for version 2.1
+Typings are for version 2.2
 
 ## Library description:
 copy some files

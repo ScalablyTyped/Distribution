@@ -55,7 +55,7 @@ trait OverlayProps
     * A `react-transition-group@2.0.0` `<Transition/>` component
     * used to animate the overlay as it changes visibility.
     */
-  var transition: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
+  var transition: js.UndefOr[ComponentType[TransitionProps[js.UndefOr[scala.Nothing]]]] = js.undefined
   /**
     * A render prop that returns an element to overlay and position. See
     * the [react-popper documentation](https://github.com/FezVrasta/react-popper#children) for more info.
@@ -84,11 +84,11 @@ object OverlayProps {
     rootCloseEvent: click | mousedown = null,
     show: js.UndefOr[Boolean] = js.undefined,
     target: ReactInstance | js.Function0[ReactInstance] = null,
-    transition: ComponentType[TransitionProps] = null
+    transition: ComponentType[TransitionProps[js.UndefOr[scala.Nothing]]] = null
   ): OverlayProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.get.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
     if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1(onEntered))
     if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1(onEntering))
@@ -99,10 +99,10 @@ object OverlayProps {
     if (onRendered != null) __obj.updateDynamic("onRendered")(onRendered.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (popperConfig != null) __obj.updateDynamic("popperConfig")(popperConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootCloseDisabled)) __obj.updateDynamic("rootCloseDisabled")(rootCloseDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootCloseDisabled)) __obj.updateDynamic("rootCloseDisabled")(rootCloseDisabled.get.asInstanceOf[js.Any])
     if (rootCloseEvent != null) __obj.updateDynamic("rootCloseEvent")(rootCloseEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayProps]

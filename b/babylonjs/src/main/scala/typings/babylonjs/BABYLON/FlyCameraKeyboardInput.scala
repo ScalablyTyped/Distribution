@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FlyCameraKeyboardInput")
 @js.native
-class FlyCameraKeyboardInput () extends ICameraInput[FlyCamera] {
+trait FlyCameraKeyboardInput extends ICameraInput[FlyCamera] {
   var _engine: js.Any = js.native
   var _keys: js.Any = js.native
   var _onCanvasBlurObserver: js.Any = js.native

@@ -33,16 +33,16 @@ object DescribeCacheClustersMessage {
   def apply(
     CacheClusterId: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
-    ShowCacheClustersNotInReplicationGroups: js.UndefOr[scala.Boolean] = js.undefined,
-    ShowCacheNodeInfo: js.UndefOr[scala.Boolean] = js.undefined
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    ShowCacheClustersNotInReplicationGroups: js.UndefOr[BooleanOptional] = js.undefined,
+    ShowCacheNodeInfo: js.UndefOr[BooleanOptional] = js.undefined
   ): DescribeCacheClustersMessage = {
     val __obj = js.Dynamic.literal()
     if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowCacheClustersNotInReplicationGroups)) __obj.updateDynamic("ShowCacheClustersNotInReplicationGroups")(ShowCacheClustersNotInReplicationGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowCacheNodeInfo)) __obj.updateDynamic("ShowCacheNodeInfo")(ShowCacheNodeInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShowCacheClustersNotInReplicationGroups)) __obj.updateDynamic("ShowCacheClustersNotInReplicationGroups")(ShowCacheClustersNotInReplicationGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ShowCacheNodeInfo)) __obj.updateDynamic("ShowCacheNodeInfo")(ShowCacheNodeInfo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCacheClustersMessage]
   }
 }

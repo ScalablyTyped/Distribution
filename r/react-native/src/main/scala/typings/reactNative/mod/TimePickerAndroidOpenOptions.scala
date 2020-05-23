@@ -17,15 +17,15 @@ trait TimePickerAndroidOpenOptions extends js.Object {
 object TimePickerAndroidOpenOptions {
   @scala.inline
   def apply(
-    hour: Int | Double = null,
+    hour: js.UndefOr[Double] = js.undefined,
     is24Hour: js.UndefOr[Boolean] = js.undefined,
-    minute: Int | Double = null,
+    minute: js.UndefOr[Double] = js.undefined,
     mode: clock | spinner | default = null
   ): TimePickerAndroidOpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour)) __obj.updateDynamic("hour")(hour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minute)) __obj.updateDynamic("minute")(minute.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerAndroidOpenOptions]
   }

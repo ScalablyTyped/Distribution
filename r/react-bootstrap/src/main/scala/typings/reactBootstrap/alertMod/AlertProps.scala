@@ -28,7 +28,7 @@ object AlertProps {
     bsSize: Sizes = null,
     bsStyle: String = null,
     closeLabel: String = null,
-    dismissAfter: Int | Double = null,
+    dismissAfter: js.UndefOr[Double] = js.undefined,
     onDismiss: js.Function = null
   ): AlertProps = {
     val __obj = js.Dynamic.literal()
@@ -38,7 +38,7 @@ object AlertProps {
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
     if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
     if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel.asInstanceOf[js.Any])
-    if (dismissAfter != null) __obj.updateDynamic("dismissAfter")(dismissAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissAfter)) __obj.updateDynamic("dismissAfter")(dismissAfter.get.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertProps]
   }

@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.SPRITE_RENDERMODE_SIMPLE
-  * @description This mode renders a sprite as a simple quad.
+  * This mode renders a sprite as a simple quad.
   */
 @JSImport("playcanvas", "SPRITE_RENDERMODE_SIMPLE")
 @js.native

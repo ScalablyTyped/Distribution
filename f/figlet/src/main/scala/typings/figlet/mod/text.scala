@@ -14,11 +14,6 @@ object text extends js.Object {
     font: Fonts_,
     cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
   ): Unit = js.native
-  def apply(
-    txt: String,
-    options: js.UndefOr[scala.Nothing],
-    cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
-  ): Unit = js.native
   /**
     * @desc
     * This `unified-signatures` is disabled because `Fonts` type is too long
@@ -26,7 +21,7 @@ object text extends js.Object {
   // tslint:disable-next-line: unified-signatures
   def apply(
     txt: String,
-    options: Options,
+    options: js.UndefOr[Options],
     cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
   ): Unit = js.native
 }

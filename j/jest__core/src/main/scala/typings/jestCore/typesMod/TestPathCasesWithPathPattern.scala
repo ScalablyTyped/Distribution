@@ -1,28 +1,21 @@
 package typings.jestCore.typesMod
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.jestCore.AnonIsMatch
-import typings.jestCore.jestCoreNumbers.`0`
-import typings.jestCore.jestCoreNumbers.`1`
-import typings.jestCore.jestCoreNumbers.`2`
-import typings.jestCore.jestCoreNumbers.`3`
-import typings.jestCore.jestCoreNumbers.`4`
-import typings.jestCore.jestCoreNumbers.`5`
-import typings.jestCore.jestCoreNumbers.`6`
-import typings.jestCore.jestCoreNumbers.`7`
+import typings.jestCore.anon.IsMatch
 import typings.jestTypes.configMod.Path
-import typings.std.AnonCopyWithin
+import typings.std.FlatArray
 import typings.std.IterableIterator
+import typings.std.anon.CopyWithin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined @jest/core.@jest/core/build/types.TestPathCases & {testPathPattern (path : @jest/types.@jest/types.Config.Path): boolean} */
 @js.native
-trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch] {
+trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[IsMatch] {
   /** Iterator */
   @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[AnonIsMatch]] = js.native
+  var iterator: js.Function0[IterableIterator[IsMatch]] = js.native
   /**
     * Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.
     */
@@ -32,12 +25,12 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     * when they will be absent when used in a 'with' statement.
     */
   @JSName(js.Symbol.unscopables)
-  var unscopables: js.Function0[AnonCopyWithin] = js.native
+  var unscopables: js.Function0[CopyWithin] = js.native
   /**
     * Combines two or more arrays.
     * @param items Additional items to add to the end of array1.
     */
-  def concat(items: (AnonIsMatch | js.Array[AnonIsMatch])*): js.Array[AnonIsMatch] = js.native
+  def concat(items: (js.Array[IsMatch] | IsMatch)*): js.Array[IsMatch] = js.native
   /**
     * Returns the this object after copying a section of the array identified by start and end
     * to the same array starting at position target
@@ -52,7 +45,7 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
   /**
     * Returns an iterable of key, value pairs for every entry in the array
     */
-  def entries(): IterableIterator[js.Tuple2[Double, AnonIsMatch]] = js.native
+  def entries(): IterableIterator[js.Tuple2[Double, IsMatch]] = js.native
   /**
     * Determines whether all the members of an array satisfy the specified test.
     * @param callbackfn A function that accepts up to three arguments. The every method calls
@@ -62,10 +55,10 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     * If thisArg is omitted, undefined is used as the this value.
     */
   def every(
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], _]
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], _]
   ): Boolean = js.native
   def every(
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], _],
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], _],
     thisArg: js.Any
   ): Boolean = js.native
   /**
@@ -76,52 +69,50 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     * @param end index to stop filling the array at. If end is negative, it is treated as
     * length+end.
     */
-  def fill(value: AnonIsMatch): this.type = js.native
-  def fill(value: AnonIsMatch, start: Double): this.type = js.native
-  def fill(value: AnonIsMatch, start: Double, end: Double): this.type = js.native
+  def fill(value: IsMatch): this.type = js.native
+  def fill(value: IsMatch, start: Double): this.type = js.native
+  def fill(value: IsMatch, start: Double, end: Double): this.type = js.native
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
     * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   def filter(
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], _]
-  ): js.Array[AnonIsMatch] = js.native
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], _]
+  ): js.Array[IsMatch] = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], _],
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], _],
     thisArg: js.Any
-  ): js.Array[AnonIsMatch] = js.native
+  ): js.Array[IsMatch] = js.native
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
     * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("filter")
-  def filter_S_AnonIsMatch[S /* <: AnonIsMatch */](
+  def filter_S_IsMatch[S /* <: IsMatch */](
     callbackfn: js.Function3[
-      /* value */ AnonIsMatch, 
+      /* value */ IsMatch, 
       /* index */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
+      /* array */ js.Array[IsMatch], 
       /* is S */ Boolean
     ]
   ): js.Array[S] = js.native
   @JSName("filter")
-  def filter_S_AnonIsMatch[S /* <: AnonIsMatch */](
+  def filter_S_IsMatch[S /* <: IsMatch */](
     callbackfn: js.Function3[
-      /* value */ AnonIsMatch, 
+      /* value */ IsMatch, 
       /* index */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
+      /* array */ js.Array[IsMatch], 
       /* is S */ Boolean
     ],
     thisArg: js.Any
   ): js.Array[S] = js.native
+  def find(predicate: js.Function3[/* value */ IsMatch, /* index */ Double, /* obj */ js.Array[IsMatch], _]): js.UndefOr[IsMatch] = js.native
   def find(
-    predicate: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* obj */ js.Array[AnonIsMatch], _]
-  ): js.UndefOr[AnonIsMatch] = js.native
-  def find(
-    predicate: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* obj */ js.Array[AnonIsMatch], _],
+    predicate: js.Function3[/* value */ IsMatch, /* index */ Double, /* obj */ js.Array[IsMatch], _],
     thisArg: js.Any
-  ): js.UndefOr[AnonIsMatch] = js.native
+  ): js.UndefOr[IsMatch] = js.native
   /**
     * Returns the value of the first element in the array where predicate is true, and undefined
     * otherwise.
@@ -131,21 +122,21 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
-  def find[S /* <: AnonIsMatch */](
+  def find[S /* <: IsMatch */](
     predicate: js.ThisFunction3[
       /* this */ Unit, 
-      /* value */ AnonIsMatch, 
+      /* value */ IsMatch, 
       /* index */ Double, 
-      /* obj */ js.Array[AnonIsMatch], 
+      /* obj */ js.Array[IsMatch], 
       /* is S */ Boolean
     ]
   ): js.UndefOr[S] = js.native
-  def find[S /* <: AnonIsMatch */](
+  def find[S /* <: IsMatch */](
     predicate: js.ThisFunction3[
       /* this */ Unit, 
-      /* value */ AnonIsMatch, 
+      /* value */ IsMatch, 
       /* index */ Double, 
-      /* obj */ js.Array[AnonIsMatch], 
+      /* obj */ js.Array[IsMatch], 
       /* is S */ Boolean
     ],
     thisArg: js.Any
@@ -159,11 +150,9 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
+  def findIndex(predicate: js.Function3[/* value */ IsMatch, /* index */ Double, /* obj */ js.Array[IsMatch], _]): Double = js.native
   def findIndex(
-    predicate: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* obj */ js.Array[AnonIsMatch], _]
-  ): Double = js.native
-  def findIndex(
-    predicate: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* obj */ js.Array[AnonIsMatch], _],
+    predicate: js.Function3[/* value */ IsMatch, /* index */ Double, /* obj */ js.Array[IsMatch], _],
     thisArg: js.Any
   ): Double = js.native
   /**
@@ -172,14 +161,8 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     *
     * @param depth The maximum recursion depth
     */
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth. If no depth is provided, flat method defaults to the depth of 1.
-    *
-    * @param depth The maximum recursion depth
-    */
-  def flat[U](): js.Array[U] = js.native
-  def flat[U](depth: Double): js.Array[_] = js.native
+  def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
+  def flat[A, D /* <: Double */](depth: D): js.Array[FlatArray[A, D]] = js.native
   /**
     * Calls a defined callback function on each element of an array. Then, flattens the result into
     * a new array.
@@ -193,90 +176,32 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
   def flatMap[U, This](
     callback: js.ThisFunction3[
       /* this */ This, 
-      /* value */ AnonIsMatch, 
+      /* value */ IsMatch, 
       /* index */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
+      /* array */ js.Array[IsMatch], 
       U | js.Array[U]
     ]
   ): js.Array[U] = js.native
   def flatMap[U, This](
     callback: js.ThisFunction3[
       /* this */ This, 
-      /* value */ AnonIsMatch, 
+      /* value */ IsMatch, 
       /* index */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
+      /* array */ js.Array[IsMatch], 
       U | js.Array[U]
     ],
     thisArg: This
   ): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_0[U](depth: `0`): js.Array[U] = js.native
-  @JSName("flat")
-  def flat_1[U](depth: `1`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_2[U](depth: `2`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_3[U](depth: `3`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_4[U](depth: `4`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_5[U](depth: `5`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_6[U](depth: `6`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_7[U](depth: `7`): js.Array[U] = js.native
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
     * @param thisArg  An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   def forEach(
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], Unit]
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], Unit]
   ): Unit = js.native
   def forEach(
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], Unit],
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], Unit],
     thisArg: js.Any
   ): Unit = js.native
   /**
@@ -284,15 +209,15 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     * @param searchElement The element to search for.
     * @param fromIndex The position in this array at which to begin searching for searchElement.
     */
-  def includes(searchElement: AnonIsMatch): Boolean = js.native
-  def includes(searchElement: AnonIsMatch, fromIndex: Double): Boolean = js.native
+  def includes(searchElement: IsMatch): Boolean = js.native
+  def includes(searchElement: IsMatch, fromIndex: Double): Boolean = js.native
   /**
     * Returns the index of the first occurrence of a value in an array.
     * @param searchElement The value to locate in the array.
     * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
     */
-  def indexOf(searchElement: AnonIsMatch): Double = js.native
-  def indexOf(searchElement: AnonIsMatch, fromIndex: Double): Double = js.native
+  def indexOf(searchElement: IsMatch): Double = js.native
+  def indexOf(searchElement: IsMatch, fromIndex: Double): Double = js.native
   /**
     * Adds all the elements of an array separated by the specified separator string.
     * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.
@@ -308,29 +233,29 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     * @param searchElement The value to locate in the array.
     * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at the last index in the array.
     */
-  def lastIndexOf(searchElement: AnonIsMatch): Double = js.native
-  def lastIndexOf(searchElement: AnonIsMatch, fromIndex: Double): Double = js.native
+  def lastIndexOf(searchElement: IsMatch): Double = js.native
+  def lastIndexOf(searchElement: IsMatch, fromIndex: Double): Double = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
     * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   def map[U](
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], U]
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], U]
   ): js.Array[U] = js.native
   def map[U](
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], U],
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], U],
     thisArg: js.Any
   ): js.Array[U] = js.native
   /**
     * Removes the last element from an array and returns it.
     */
-  def pop(): js.UndefOr[AnonIsMatch] = js.native
+  def pop(): js.UndefOr[IsMatch] = js.native
   /**
     * Appends new elements to an array, and returns the new length of the array.
     * @param items New elements of the Array.
     */
-  def push(items: AnonIsMatch*): Double = js.native
+  def push(items: IsMatch*): Double = js.native
   /**
     * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
     * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
@@ -338,23 +263,23 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     */
   def reduce(
     callbackfn: js.Function4[
-      /* previousValue */ AnonIsMatch, 
-      /* currentValue */ AnonIsMatch, 
+      /* previousValue */ IsMatch, 
+      /* currentValue */ IsMatch, 
       /* currentIndex */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
-      AnonIsMatch
+      /* array */ js.Array[IsMatch], 
+      IsMatch
     ]
-  ): AnonIsMatch = js.native
+  ): IsMatch = js.native
   def reduce(
     callbackfn: js.Function4[
-      /* previousValue */ AnonIsMatch, 
-      /* currentValue */ AnonIsMatch, 
+      /* previousValue */ IsMatch, 
+      /* currentValue */ IsMatch, 
       /* currentIndex */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
-      AnonIsMatch
+      /* array */ js.Array[IsMatch], 
+      IsMatch
     ],
-    initialValue: AnonIsMatch
-  ): AnonIsMatch = js.native
+    initialValue: IsMatch
+  ): IsMatch = js.native
   /**
     * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
     * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
@@ -363,9 +288,9 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
   def reduce[U](
     callbackfn: js.Function4[
       /* previousValue */ U, 
-      /* currentValue */ AnonIsMatch, 
+      /* currentValue */ IsMatch, 
       /* currentIndex */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
+      /* array */ js.Array[IsMatch], 
       U
     ],
     initialValue: U
@@ -377,23 +302,23 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     */
   def reduceRight(
     callbackfn: js.Function4[
-      /* previousValue */ AnonIsMatch, 
-      /* currentValue */ AnonIsMatch, 
+      /* previousValue */ IsMatch, 
+      /* currentValue */ IsMatch, 
       /* currentIndex */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
-      AnonIsMatch
+      /* array */ js.Array[IsMatch], 
+      IsMatch
     ]
-  ): AnonIsMatch = js.native
+  ): IsMatch = js.native
   def reduceRight(
     callbackfn: js.Function4[
-      /* previousValue */ AnonIsMatch, 
-      /* currentValue */ AnonIsMatch, 
+      /* previousValue */ IsMatch, 
+      /* currentValue */ IsMatch, 
       /* currentIndex */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
-      AnonIsMatch
+      /* array */ js.Array[IsMatch], 
+      IsMatch
     ],
-    initialValue: AnonIsMatch
-  ): AnonIsMatch = js.native
+    initialValue: IsMatch
+  ): IsMatch = js.native
   /**
     * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
     * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
@@ -402,9 +327,9 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
   def reduceRight[U](
     callbackfn: js.Function4[
       /* previousValue */ U, 
-      /* currentValue */ AnonIsMatch, 
+      /* currentValue */ IsMatch, 
       /* currentIndex */ Double, 
-      /* array */ js.Array[AnonIsMatch], 
+      /* array */ js.Array[IsMatch], 
       U
     ],
     initialValue: U
@@ -412,19 +337,19 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
   /**
     * Reverses the elements in an Array.
     */
-  def reverse(): js.Array[AnonIsMatch] = js.native
+  def reverse(): js.Array[IsMatch] = js.native
   /**
     * Removes the first element from an array and returns it.
     */
-  def shift(): js.UndefOr[AnonIsMatch] = js.native
+  def shift(): js.UndefOr[IsMatch] = js.native
   /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
-  def slice(): js.Array[AnonIsMatch] = js.native
-  def slice(start: Double): js.Array[AnonIsMatch] = js.native
-  def slice(start: Double, end: Double): js.Array[AnonIsMatch] = js.native
+  def slice(): js.Array[IsMatch] = js.native
+  def slice(start: Double): js.Array[IsMatch] = js.native
+  def slice(start: Double, end: Double): js.Array[IsMatch] = js.native
   /**
     * Determines whether the specified callback function returns true for any element of an array.
     * @param callbackfn A function that accepts up to three arguments. The some method calls
@@ -434,10 +359,10 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     * If thisArg is omitted, undefined is used as the this value.
     */
   def some(
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], _]
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], _]
   ): Boolean = js.native
   def some(
-    callbackfn: js.Function3[/* value */ AnonIsMatch, /* index */ Double, /* array */ js.Array[AnonIsMatch], _],
+    callbackfn: js.Function3[/* value */ IsMatch, /* index */ Double, /* array */ js.Array[IsMatch], _],
     thisArg: js.Any
   ): Boolean = js.native
   /**
@@ -450,30 +375,30 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[AnonIsMatch]
     * ```
     */
   def sort(): this.type = js.native
-  def sort(compareFn: js.Function2[/* a */ AnonIsMatch, /* b */ AnonIsMatch, Double]): this.type = js.native
+  def sort(compareFn: js.Function2[/* a */ IsMatch, /* b */ IsMatch, Double]): this.type = js.native
   /**
     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
     * @param start The zero-based location in the array from which to start removing elements.
     * @param deleteCount The number of elements to remove.
     */
-  def splice(start: Double): js.Array[AnonIsMatch] = js.native
-  def splice(start: Double, deleteCount: Double): js.Array[AnonIsMatch] = js.native
+  def splice(start: Double): js.Array[IsMatch] = js.native
+  def splice(start: Double, deleteCount: Double): js.Array[IsMatch] = js.native
   /**
     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
     * @param start The zero-based location in the array from which to start removing elements.
     * @param deleteCount The number of elements to remove.
     * @param items Elements to insert into the array in place of the deleted elements.
     */
-  def splice(start: Double, deleteCount: Double, items: AnonIsMatch*): js.Array[AnonIsMatch] = js.native
+  def splice(start: Double, deleteCount: Double, items: IsMatch*): js.Array[IsMatch] = js.native
   def testPathPattern(path: Path): Boolean = js.native
   /**
     * Inserts new elements at the start of an array.
     * @param items  Elements to insert at the start of the Array.
     */
-  def unshift(items: AnonIsMatch*): Double = js.native
+  def unshift(items: IsMatch*): Double = js.native
   /**
     * Returns an iterable of values in the array
     */
-  def values(): IterableIterator[AnonIsMatch] = js.native
+  def values(): IterableIterator[IsMatch] = js.native
 }
 

@@ -1,12 +1,12 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.TableData
 import typings.officeJsPreview.Excel.Interfaces.TableLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.TableUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,19 +18,18 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.Table")
 @js.native
-class Table () extends ClientObject {
+trait Table extends ClientObject {
   /**
     *
-    * Represents the AutoFilter object of the table. Read-Only.
+    * Represents the AutoFilter object of the table.
     *
     * [Api set: ExcelApi 1.9]
     */
   val autoFilter: AutoFilter = js.native
   /**
     *
-    * Represents a collection of all the columns in the table. Read-only.
+    * Represents a collection of all the columns in the table.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -40,21 +39,21 @@ class Table () extends ClientObject {
   var context_Table: RequestContext = js.native
   /**
     *
-    * Indicates whether the first column contains special formatting.
+    * Specifies if the first column contains special formatting.
     *
     * [Api set: ExcelApi 1.3]
     */
   var highlightFirstColumn: Boolean = js.native
   /**
     *
-    * Indicates whether the last column contains special formatting.
+    * Specifies if the last column contains special formatting.
     *
     * [Api set: ExcelApi 1.3]
     */
   var highlightLastColumn: Boolean = js.native
   /**
     *
-    * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
+    * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -69,7 +68,6 @@ class Table () extends ClientObject {
   /**
     *
     * Name of the table.
-    
     The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
     *
     * [Api set: ExcelApi 1.1]
@@ -105,49 +103,49 @@ class Table () extends ClientObject {
   val onSelectionChanged: EventHandlers[TableSelectionChangedEventArgs] = js.native
   /**
     *
-    * Represents a collection of all the rows in the table. Read-only.
+    * Represents a collection of all the rows in the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   val rows: TableRowCollection = js.native
   /**
     *
-    * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+    * Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
     *
     * [Api set: ExcelApi 1.3]
     */
   var showBandedColumns: Boolean = js.native
   /**
     *
-    * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+    * Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
     *
     * [Api set: ExcelApi 1.3]
     */
   var showBandedRows: Boolean = js.native
   /**
     *
-    * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+    * Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
     *
     * [Api set: ExcelApi 1.3]
     */
   var showFilterButton: Boolean = js.native
   /**
     *
-    * Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+    * Specifies if the header row is visible. This value can be set to show or remove the header row.
     *
     * [Api set: ExcelApi 1.1]
     */
   var showHeaders: Boolean = js.native
   /**
     *
-    * Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+    * Specifies if the total row is visible. This value can be set to show or remove the total row.
     *
     * [Api set: ExcelApi 1.1]
     */
   var showTotals: Boolean = js.native
   /**
     *
-    * Represents the sorting for the table. Read-only.
+    * Represents the sorting for the table.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -169,7 +167,7 @@ class Table () extends ClientObject {
   val tableStyle: TableStyle = js.native
   /**
     *
-    * The worksheet containing the current table. Read-only.
+    * The worksheet containing the current table.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -230,7 +228,7 @@ class Table () extends ClientObject {
     */
   def load(): Table = js.native
   def load(options: TableLoadOptions): Table = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Table = js.native
+  def load(propertyNamesAndPaths: Expand): Table = js.native
   def load(propertyNames: String): Table = js.native
   def load(propertyNames: js.Array[String]): Table = js.native
   /**

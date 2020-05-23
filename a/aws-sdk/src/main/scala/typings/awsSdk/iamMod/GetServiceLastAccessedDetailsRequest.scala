@@ -22,10 +22,10 @@ trait GetServiceLastAccessedDetailsRequest extends js.Object {
 
 object GetServiceLastAccessedDetailsRequest {
   @scala.inline
-  def apply(JobId: jobIDType, Marker: markerType = null, MaxItems: Int | Double = null): GetServiceLastAccessedDetailsRequest = {
+  def apply(JobId: jobIDType, Marker: markerType = null, MaxItems: js.UndefOr[maxItemsType] = js.undefined): GetServiceLastAccessedDetailsRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceLastAccessedDetailsRequest]
   }
 }

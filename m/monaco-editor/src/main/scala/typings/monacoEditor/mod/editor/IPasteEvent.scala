@@ -13,8 +13,7 @@ trait IPasteEvent extends js.Object {
 object IPasteEvent {
   @scala.inline
   def apply(range: Range, mode: String = null): IPasteEvent = {
-    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPasteEvent]
   }
 }

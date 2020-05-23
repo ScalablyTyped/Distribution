@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sensors.CompassReading")
-@js.native
-class CompassReading () extends ICompassReading {
-  /* CompleteClass */
-  override var headingMagneticNorth: Double = js.native
-  /* CompleteClass */
-  override var headingTrueNorth: Double = js.native
-  /* CompleteClass */
-  override var timestamp: Date = js.native
+trait CompassReading extends ICompassReading
+
+object CompassReading {
+  @scala.inline
+  def apply(headingMagneticNorth: Double, headingTrueNorth: Double, timestamp: Date): CompassReading = {
+    val __obj = js.Dynamic.literal(headingMagneticNorth = headingMagneticNorth.asInstanceOf[js.Any], headingTrueNorth = headingTrueNorth.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompassReading]
+  }
 }
 

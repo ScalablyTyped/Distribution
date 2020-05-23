@@ -28,14 +28,14 @@ object GetExecutionHistoryInput {
   @scala.inline
   def apply(
     executionArn: Arn,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[PageSize] = js.undefined,
     nextToken: PageToken = null,
-    reverseOrder: js.UndefOr[Boolean] = js.undefined
+    reverseOrder: js.UndefOr[ReverseOrder] = js.undefined
   ): GetExecutionHistoryInput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExecutionHistoryInput]
   }
 }

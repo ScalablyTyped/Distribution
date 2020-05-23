@@ -32,7 +32,7 @@ object AlexOptions {
   ): AlexOptions = {
     val __obj = js.Dynamic.literal()
     if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
-    if (!js.isUndefined(noBinary)) __obj.updateDynamic("noBinary")(noBinary.asInstanceOf[js.Any])
+    if (!js.isUndefined(noBinary)) __obj.updateDynamic("noBinary")(noBinary.get.asInstanceOf[js.Any])
     if (profanitySureness != null) __obj.updateDynamic("profanitySureness")(profanitySureness.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlexOptions]
   }

@@ -1,6 +1,6 @@
 package typings.routeRecognizer.mod
 
-import typings.routeRecognizer.AnonAs
+import typings.routeRecognizer.anon.As
 import typings.routeRecognizer.dslMod.Delegate
 import typings.routeRecognizer.dslMod.MatchCallback
 import typings.routeRecognizer.dslMod.Route
@@ -15,7 +15,7 @@ trait RouteRecognizer extends js.Object {
   var rootState: js.Any = js.native
   var states: js.Any = js.native
   def add(routes: js.Array[Route]): Unit = js.native
-  def add(routes: js.Array[Route], options: AnonAs): Unit = js.native
+  def add(routes: js.Array[Route], options: As): Unit = js.native
   def generate(name: String): String = js.native
   def generate(name: String, params: Params): String = js.native
   def generateQueryString(params: QueryParams): String = js.native

@@ -87,33 +87,33 @@ object ProducerOpts {
   def apply(
     topic: String,
     batchingEnabled: js.UndefOr[Boolean] = js.undefined,
-    batchingMaxMessages: Int | Double = null,
-    batchingMaxPublishDelayMs: Int | Double = null,
+    batchingMaxMessages: js.UndefOr[Double] = js.undefined,
+    batchingMaxPublishDelayMs: js.UndefOr[Double] = js.undefined,
     blockIfQueueFull: js.UndefOr[Boolean] = js.undefined,
     compressionType: CompressionType = null,
     hashingScheme: HashingScheme = null,
-    initialSequenceId: Int | Double = null,
-    maxPendingMessages: Int | Double = null,
-    maxPendingMessagesAcrossPartitions: Int | Double = null,
+    initialSequenceId: js.UndefOr[Double] = js.undefined,
+    maxPendingMessages: js.UndefOr[Double] = js.undefined,
+    maxPendingMessagesAcrossPartitions: js.UndefOr[Double] = js.undefined,
     messageRoutingMode: MessageRoutingModes = null,
     producerName: String = null,
     properties: MessageProperties = null,
-    sendTimeoutMs: Int | Double = null
+    sendTimeoutMs: js.UndefOr[Double] = js.undefined
   ): ProducerOpts = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchingEnabled)) __obj.updateDynamic("batchingEnabled")(batchingEnabled.asInstanceOf[js.Any])
-    if (batchingMaxMessages != null) __obj.updateDynamic("batchingMaxMessages")(batchingMaxMessages.asInstanceOf[js.Any])
-    if (batchingMaxPublishDelayMs != null) __obj.updateDynamic("batchingMaxPublishDelayMs")(batchingMaxPublishDelayMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(blockIfQueueFull)) __obj.updateDynamic("blockIfQueueFull")(blockIfQueueFull.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchingEnabled)) __obj.updateDynamic("batchingEnabled")(batchingEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchingMaxMessages)) __obj.updateDynamic("batchingMaxMessages")(batchingMaxMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchingMaxPublishDelayMs)) __obj.updateDynamic("batchingMaxPublishDelayMs")(batchingMaxPublishDelayMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockIfQueueFull)) __obj.updateDynamic("blockIfQueueFull")(blockIfQueueFull.get.asInstanceOf[js.Any])
     if (compressionType != null) __obj.updateDynamic("compressionType")(compressionType.asInstanceOf[js.Any])
     if (hashingScheme != null) __obj.updateDynamic("hashingScheme")(hashingScheme.asInstanceOf[js.Any])
-    if (initialSequenceId != null) __obj.updateDynamic("initialSequenceId")(initialSequenceId.asInstanceOf[js.Any])
-    if (maxPendingMessages != null) __obj.updateDynamic("maxPendingMessages")(maxPendingMessages.asInstanceOf[js.Any])
-    if (maxPendingMessagesAcrossPartitions != null) __obj.updateDynamic("maxPendingMessagesAcrossPartitions")(maxPendingMessagesAcrossPartitions.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialSequenceId)) __obj.updateDynamic("initialSequenceId")(initialSequenceId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPendingMessages)) __obj.updateDynamic("maxPendingMessages")(maxPendingMessages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPendingMessagesAcrossPartitions)) __obj.updateDynamic("maxPendingMessagesAcrossPartitions")(maxPendingMessagesAcrossPartitions.get.asInstanceOf[js.Any])
     if (messageRoutingMode != null) __obj.updateDynamic("messageRoutingMode")(messageRoutingMode.asInstanceOf[js.Any])
     if (producerName != null) __obj.updateDynamic("producerName")(producerName.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (sendTimeoutMs != null) __obj.updateDynamic("sendTimeoutMs")(sendTimeoutMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendTimeoutMs)) __obj.updateDynamic("sendTimeoutMs")(sendTimeoutMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerOpts]
   }
 }

@@ -2,7 +2,7 @@ package typings.typesettable.svgMod
 
 import typings.std.Element
 import typings.std.SVGElement
-import typings.typesettable.AnonWrite
+import typings.typesettable.anon.Write
 import typings.typesettable.contextsMod.IPenFactoryContext
 import typings.typesettable.contextsMod.IRulerFactoryContext
 import typings.typesettable.writerMod.ITransform
@@ -21,7 +21,7 @@ class SvgContext protected ()
   var addTitleElement: js.Any = js.native
   var className: js.Any = js.native
   var element: js.Any = js.native
-  def createPen(text: String, transform: ITransform, element: Element): AnonWrite = js.native
+  def createPen(text: String, transform: ITransform, element: Element): Write = js.native
   /* private */ def createSvgLinePen(textBlockGroup: js.Any): js.Any = js.native
   /* private */ def getTextElements(element: js.Any): js.Any = js.native
   def setAddTitleElement(addTitleElement: Boolean): Unit = js.native

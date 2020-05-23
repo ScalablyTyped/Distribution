@@ -54,19 +54,19 @@ object HeatmapRendererProperties {
   @scala.inline
   def apply(
     authoringInfo: AuthoringInfoProperties = null,
-    blurRadius: Int | Double = null,
+    blurRadius: js.UndefOr[Double] = js.undefined,
     colorStops: js.Array[HeatmapColorStopProperties] = null,
     field: String = null,
-    maxPixelIntensity: Int | Double = null,
-    minPixelIntensity: Int | Double = null
+    maxPixelIntensity: js.UndefOr[Double] = js.undefined,
+    minPixelIntensity: js.UndefOr[Double] = js.undefined
   ): HeatmapRendererProperties = {
     val __obj = js.Dynamic.literal()
     if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
-    if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurRadius)) __obj.updateDynamic("blurRadius")(blurRadius.get.asInstanceOf[js.Any])
     if (colorStops != null) __obj.updateDynamic("colorStops")(colorStops.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (maxPixelIntensity != null) __obj.updateDynamic("maxPixelIntensity")(maxPixelIntensity.asInstanceOf[js.Any])
-    if (minPixelIntensity != null) __obj.updateDynamic("minPixelIntensity")(minPixelIntensity.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPixelIntensity)) __obj.updateDynamic("maxPixelIntensity")(maxPixelIntensity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPixelIntensity)) __obj.updateDynamic("minPixelIntensity")(minPixelIntensity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapRendererProperties]
   }
 }

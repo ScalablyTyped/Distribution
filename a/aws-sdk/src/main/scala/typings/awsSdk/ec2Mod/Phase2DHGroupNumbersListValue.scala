@@ -14,9 +14,9 @@ trait Phase2DHGroupNumbersListValue extends js.Object {
 
 object Phase2DHGroupNumbersListValue {
   @scala.inline
-  def apply(Value: Int | scala.Double = null): Phase2DHGroupNumbersListValue = {
+  def apply(Value: js.UndefOr[Integer] = js.undefined): Phase2DHGroupNumbersListValue = {
     val __obj = js.Dynamic.literal()
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Phase2DHGroupNumbersListValue]
   }
 }

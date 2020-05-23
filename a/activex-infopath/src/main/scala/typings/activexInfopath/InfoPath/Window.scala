@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.Window")
 @js.native
-class Window protected () extends js.Object {
+trait Window extends js.Object {
   val Active: Boolean = js.native
   val CommandBars: js.Any = js.native
   @JSName("InfoPath.Window_typekey")

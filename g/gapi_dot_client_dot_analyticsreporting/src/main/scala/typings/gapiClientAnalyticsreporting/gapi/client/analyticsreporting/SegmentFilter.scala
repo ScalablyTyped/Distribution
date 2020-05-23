@@ -48,7 +48,7 @@ object SegmentFilter {
     simpleSegment: SimpleSegment = null
   ): SegmentFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
+    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not.get.asInstanceOf[js.Any])
     if (sequenceSegment != null) __obj.updateDynamic("sequenceSegment")(sequenceSegment.asInstanceOf[js.Any])
     if (simpleSegment != null) __obj.updateDynamic("simpleSegment")(simpleSegment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentFilter]

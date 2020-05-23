@@ -1,6 +1,6 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonSegmentElement
+import typings.ionicCore.componentsMod.global.HTMLIonSegmentElement
 import typings.ionicCore.gestureMod.GestureDetail
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
@@ -86,7 +86,6 @@ object segmentMod extends js.Object {
     @JSName("render")
     def render_MSegment(): js.Any = js.native
     /* protected */ def valueChanged(): Unit = js.native
-    /* protected */ def valueChanged(value: js.UndefOr[scala.Nothing], oldValue: String): Unit = js.native
     /* protected */ def valueChanged(value: String): Unit = js.native
     /* protected */ def valueChanged(value: String, oldValue: String): Unit = js.native
   }

@@ -47,14 +47,14 @@ object CreateCommentRequest {
     Text: CommentTextType,
     VersionId: DocumentVersionIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    NotifyCollaborators: js.UndefOr[Boolean] = js.undefined,
+    NotifyCollaborators: js.UndefOr[BooleanType] = js.undefined,
     ParentId: CommentIdType = null,
     ThreadId: CommentIdType = null,
     Visibility: CommentVisibilityType = null
   ): CreateCommentRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(NotifyCollaborators)) __obj.updateDynamic("NotifyCollaborators")(NotifyCollaborators.asInstanceOf[js.Any])
+    if (!js.isUndefined(NotifyCollaborators)) __obj.updateDynamic("NotifyCollaborators")(NotifyCollaborators.get.asInstanceOf[js.Any])
     if (ParentId != null) __obj.updateDynamic("ParentId")(ParentId.asInstanceOf[js.Any])
     if (ThreadId != null) __obj.updateDynamic("ThreadId")(ThreadId.asInstanceOf[js.Any])
     if (Visibility != null) __obj.updateDynamic("Visibility")(Visibility.asInstanceOf[js.Any])

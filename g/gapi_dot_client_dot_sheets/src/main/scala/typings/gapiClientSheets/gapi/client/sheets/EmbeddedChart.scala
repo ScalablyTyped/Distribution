@@ -15,9 +15,13 @@ trait EmbeddedChart extends js.Object {
 
 object EmbeddedChart {
   @scala.inline
-  def apply(chartId: Int | Double = null, position: EmbeddedObjectPosition = null, spec: ChartSpec = null): EmbeddedChart = {
+  def apply(
+    chartId: js.UndefOr[Double] = js.undefined,
+    position: EmbeddedObjectPosition = null,
+    spec: ChartSpec = null
+  ): EmbeddedChart = {
     val __obj = js.Dynamic.literal()
-    if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartId)) __obj.updateDynamic("chartId")(chartId.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedChart]

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typed-github-api/dist/commit", JSImport.Namespace)
 @js.native
 object distCommitMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.interfacesCommitMod.CommitRef because Already inherited
   - typings.typedGithubApi.interfacesCommitMod.CommitSummary because Already inherited
   - typings.typedGithubApi.interfacesCommitMod.Commit because var conflicts: author, committer, gitCommit, htmlUri, parents. Inlined changes, files */ @js.native
@@ -49,7 +49,7 @@ object distCommitMod extends js.Object {
     override def loadGitAsync(): js.Promise[GitCommit | Null] = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.interfacesCommitMod.CommitRef because Already inherited
   - typings.typedGithubApi.interfacesCommitMod.GitCommitSummary because Already inherited
   - typings.typedGithubApi.interfacesCommitMod.GitCommit because var conflicts: author, committer, message. Inlined parents */ @js.native

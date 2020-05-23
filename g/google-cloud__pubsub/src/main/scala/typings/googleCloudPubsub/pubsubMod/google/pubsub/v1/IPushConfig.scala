@@ -19,14 +19,14 @@ trait IPushConfig extends js.Object {
 object IPushConfig {
   @scala.inline
   def apply(
-    attributes: StringDictionary[String] = null,
-    oidcToken: IOidcToken = null,
-    pushEndpoint: String = null
+    attributes: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    oidcToken: js.UndefOr[Null | IOidcToken] = js.undefined,
+    pushEndpoint: js.UndefOr[Null | String] = js.undefined
   ): IPushConfig = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (oidcToken != null) __obj.updateDynamic("oidcToken")(oidcToken.asInstanceOf[js.Any])
-    if (pushEndpoint != null) __obj.updateDynamic("pushEndpoint")(pushEndpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(oidcToken)) __obj.updateDynamic("oidcToken")(oidcToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(pushEndpoint)) __obj.updateDynamic("pushEndpoint")(pushEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPushConfig]
   }
 }

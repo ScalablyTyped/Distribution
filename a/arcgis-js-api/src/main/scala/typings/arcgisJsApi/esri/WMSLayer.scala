@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.wms
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -150,8 +149,4 @@ trait WMSLayer
     */
   def findSublayerById(id: Double): WMSSublayer = js.native
 }
-
-@JSGlobal("__esri.WMSLayer")
-@js.native
-object WMSLayer extends TopLevel[WMSLayerConstructor]
 

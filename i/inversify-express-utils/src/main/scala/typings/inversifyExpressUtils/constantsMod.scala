@@ -1,7 +1,6 @@
 package typings.inversifyExpressUtils
 
 import org.scalablytyped.runtime.TopLevel
-import typings.inversifyExpressUtils.inversifyExpressUtilsStrings.Slash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ object constantsMod extends js.Object {
   @js.native
   sealed trait PARAMETER_TYPE extends js.Object
   
-  val DEFAULT_ROUTING_ROOT_PATH: Slash = js.native
+  val DEFAULT_ROUTING_ROOT_PATH: /* "/" */ String = js.native
   val NO_CONTROLLERS_FOUND: String = js.native
   def DUPLICATED_CONTROLLER_NAME(name: String): String = js.native
   @js.native

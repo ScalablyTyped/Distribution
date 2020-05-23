@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Devices.Sms.SmsReceivedEventDetails")
-@js.native
-class SmsReceivedEventDetails () extends ISmsReceivedEventDetails {
-  /* CompleteClass */
-  override var deviceId: String = js.native
-  /* CompleteClass */
-  override var messageIndex: Double = js.native
+trait SmsReceivedEventDetails extends ISmsReceivedEventDetails
+
+object SmsReceivedEventDetails {
+  @scala.inline
+  def apply(deviceId: String, messageIndex: Double): SmsReceivedEventDetails = {
+    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], messageIndex = messageIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SmsReceivedEventDetails]
+  }
 }
 

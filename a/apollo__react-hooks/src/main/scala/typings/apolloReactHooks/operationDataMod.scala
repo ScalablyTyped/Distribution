@@ -3,6 +3,7 @@ package typings.apolloReactHooks
 import typings.apolloClient.mod.ApolloClient
 import typings.apolloReactCommon.apolloContextMod.ApolloContextValue
 import typings.apolloReactCommon.parserMod.DocumentType
+import typings.apolloReactHooks.anon.Client
 import typings.apolloReactHooks.typesMod.CommonOptions
 import typings.graphql.astMod.DocumentNode
 import scala.scalajs.js
@@ -29,7 +30,7 @@ object operationDataMod extends js.Object {
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
     ): js.Any = js.native
     def getOptions(): CommonOptions[TOptions] = js.native
-    /* protected */ def refreshClient(): AnonClient = js.native
+    /* protected */ def refreshClient(): Client = js.native
     def setOptions(newOptions: CommonOptions[TOptions]): Unit = js.native
     def setOptions(newOptions: CommonOptions[TOptions], storePrevious: Boolean): Unit = js.native
     /* protected */ def unmount(): Unit = js.native

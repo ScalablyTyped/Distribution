@@ -1,28 +1,28 @@
 package typings.gapiClientPlus.gapi.client.plus
 
-import typings.gapiClientPlus.AnonDisplayName
-import typings.gapiClientPlus.AnonId
-import typings.gapiClientPlus.AnonObjectType
-import typings.gapiClientPlus.AnonTotalItems
+import typings.gapiClientPlus.anon.DisplayName
+import typings.gapiClientPlus.anon.Id
+import typings.gapiClientPlus.anon.ObjectType
+import typings.gapiClientPlus.anon.TotalItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Comment extends js.Object {
   /** The person who posted this comment. */
-  var actor: js.UndefOr[AnonDisplayName] = js.undefined
+  var actor: js.UndefOr[DisplayName] = js.undefined
   /** ETag of this response for caching purposes. */
   var etag: js.UndefOr[String] = js.undefined
   /** The ID of this comment. */
   var id: js.UndefOr[String] = js.undefined
   /** The activity this comment replied to. */
-  var inReplyTo: js.UndefOr[js.Array[AnonId]] = js.undefined
+  var inReplyTo: js.UndefOr[js.Array[Id]] = js.undefined
   /** Identifies this resource as a comment. Value: "plus#comment". */
   var kind: js.UndefOr[String] = js.undefined
   /** The object of this comment. */
-  var `object`: js.UndefOr[AnonObjectType] = js.undefined
+  var `object`: js.UndefOr[ObjectType] = js.undefined
   /** People who +1'd this comment. */
-  var plusoners: js.UndefOr[AnonTotalItems] = js.undefined
+  var plusoners: js.UndefOr[TotalItems] = js.undefined
   /** The time at which this comment was initially published. Formatted as an RFC 3339 timestamp. */
   var published: js.UndefOr[String] = js.undefined
   /** Link to this comment resource. */
@@ -39,13 +39,13 @@ trait Comment extends js.Object {
 object Comment {
   @scala.inline
   def apply(
-    actor: AnonDisplayName = null,
+    actor: DisplayName = null,
     etag: String = null,
     id: String = null,
-    inReplyTo: js.Array[AnonId] = null,
+    inReplyTo: js.Array[Id] = null,
     kind: String = null,
-    `object`: AnonObjectType = null,
-    plusoners: AnonTotalItems = null,
+    `object`: ObjectType = null,
+    plusoners: TotalItems = null,
     published: String = null,
     selfLink: String = null,
     updated: String = null,

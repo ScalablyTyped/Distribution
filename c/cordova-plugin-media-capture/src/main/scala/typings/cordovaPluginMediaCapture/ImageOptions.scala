@@ -15,9 +15,9 @@ trait ImageOptions extends js.Object {
 
 object ImageOptions {
   @scala.inline
-  def apply(limit: Int | Double = null): ImageOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined): ImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOptions]
   }
 }

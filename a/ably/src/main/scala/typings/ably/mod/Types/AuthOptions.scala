@@ -68,10 +68,10 @@ object AuthOptions {
     if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryTime)) __obj.updateDynamic("queryTime")(queryTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryTime)) __obj.updateDynamic("queryTime")(queryTime.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (tokenDetails != null) __obj.updateDynamic("tokenDetails")(tokenDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTokenAuth)) __obj.updateDynamic("useTokenAuth")(useTokenAuth.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTokenAuth)) __obj.updateDynamic("useTokenAuth")(useTokenAuth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

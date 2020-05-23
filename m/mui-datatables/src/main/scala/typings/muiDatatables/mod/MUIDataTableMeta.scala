@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MUIDataTableMeta extends js.Object {
-  var columnData: js.Array[MUIDataTableColumnOptions]
+  var columnData: MUIDataTableColumnState
   var columnIndex: Double
   var rowData: js.Array[_]
   var rowIndex: Double
@@ -16,7 +16,7 @@ trait MUIDataTableMeta extends js.Object {
 object MUIDataTableMeta {
   @scala.inline
   def apply(
-    columnData: js.Array[MUIDataTableColumnOptions],
+    columnData: MUIDataTableColumnState,
     columnIndex: Double,
     rowData: js.Array[_],
     rowIndex: Double,

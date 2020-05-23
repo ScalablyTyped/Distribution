@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.AnonCreateGenericItem
+import typings.officeUiFabricReact.anon.CreateGenericItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class CompactPeoplePickerBase ()
 @js.native
 object CompactPeoplePickerBase extends js.Object {
   /** Default props for CompactPeoplePicker. */
-  var defaultProps: AnonCreateGenericItem = js.native
+  var defaultProps: CreateGenericItem = js.native
 }
 

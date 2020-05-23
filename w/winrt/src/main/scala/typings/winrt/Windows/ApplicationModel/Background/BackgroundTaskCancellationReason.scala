@@ -1,6 +1,5 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object BackgroundTaskCancellationReason extends js.Object {
   
   @js.native
   sealed trait terminating extends BackgroundTaskCancellationReason
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BackgroundTaskCancellationReason with Double] = js.native
-  /* 0 */ @js.native
-  object abort extends TopLevel[abort with Double]
-  
-  /* 2 */ @js.native
-  object loggingOff extends TopLevel[loggingOff with Double]
-  
-  /* 3 */ @js.native
-  object servicingUpdate extends TopLevel[servicingUpdate with Double]
-  
-  /* 1 */ @js.native
-  object terminating extends TopLevel[terminating with Double]
   
 }
 

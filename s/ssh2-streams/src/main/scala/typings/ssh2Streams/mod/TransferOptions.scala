@@ -28,14 +28,14 @@ trait TransferOptions extends js.Object {
 object TransferOptions {
   @scala.inline
   def apply(
-    chunkSize: Int | Double = null,
-    concurrency: Int | Double = null,
+    chunkSize: js.UndefOr[Double] = js.undefined,
+    concurrency: js.UndefOr[Double] = js.undefined,
     mode: Double | String = null,
     step: (/* total_transferred */ Double, /* chunk */ Double, /* total */ Double) => Unit = null
   ): TransferOptions = {
     val __obj = js.Dynamic.literal()
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction3(step))
     __obj.asInstanceOf[TransferOptions]

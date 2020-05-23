@@ -18,7 +18,6 @@ object ICompositeFilterOpEnum {
     values: () => js.Array[CompositeFilterOp]
   ): ICompositeFilterOpEnum = {
     val __obj = js.Dynamic.literal(AND = AND.asInstanceOf[js.Any], OPERATOR_UNSPECIFIED = OPERATOR_UNSPECIFIED.asInstanceOf[js.Any], values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[ICompositeFilterOpEnum]
   }
 }

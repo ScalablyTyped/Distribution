@@ -24,12 +24,12 @@ object LaunchConfigurationNamesType {
   @scala.inline
   def apply(
     LaunchConfigurationNames: LaunchConfigurationNames = null,
-    MaxRecords: Int | Double = null,
+    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
     NextToken: XmlString = null
   ): LaunchConfigurationNamesType = {
     val __obj = js.Dynamic.literal()
     if (LaunchConfigurationNames != null) __obj.updateDynamic("LaunchConfigurationNames")(LaunchConfigurationNames.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchConfigurationNamesType]
   }

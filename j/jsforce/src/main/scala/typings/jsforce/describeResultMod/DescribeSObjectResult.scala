@@ -75,21 +75,21 @@ object DescribeSObjectResult {
     undeletable: Boolean,
     updateable: Boolean,
     urls: Record[String, String],
-    actionOverrides: maybe[js.Array[ActionOverride]] = null,
-    keyPrefix: maybe[String] = null,
-    listviewable: js.UndefOr[Boolean] = js.undefined,
-    lookupLayoutable: js.UndefOr[Boolean] = js.undefined,
-    networkScopeFieldName: maybe[String] = null,
+    actionOverrides: js.UndefOr[Null | maybe[js.Array[ActionOverride]]] = js.undefined,
+    keyPrefix: js.UndefOr[Null | maybe[String]] = js.undefined,
+    listviewable: js.UndefOr[Null | maybe[Boolean]] = js.undefined,
+    lookupLayoutable: js.UndefOr[Null | maybe[Boolean]] = js.undefined,
+    networkScopeFieldName: js.UndefOr[Null | maybe[String]] = js.undefined,
     urlDetail: String = null,
     urlEdit: String = null,
     urlNew: String = null
   ): DescribeSObjectResult = {
     val __obj = js.Dynamic.literal(activateable = activateable.asInstanceOf[js.Any], childRelationships = childRelationships.asInstanceOf[js.Any], compactLayoutable = compactLayoutable.asInstanceOf[js.Any], createable = createable.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], customSetting = customSetting.asInstanceOf[js.Any], deletable = deletable.asInstanceOf[js.Any], deprecatedAndHidden = deprecatedAndHidden.asInstanceOf[js.Any], feedEnabled = feedEnabled.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelPlural = labelPlural.asInstanceOf[js.Any], layoutable = layoutable.asInstanceOf[js.Any], mergeable = mergeable.asInstanceOf[js.Any], mruEnabled = mruEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namedLayoutInfos = namedLayoutInfos.asInstanceOf[js.Any], queryable = queryable.asInstanceOf[js.Any], recordTypeInfos = recordTypeInfos.asInstanceOf[js.Any], replicateable = replicateable.asInstanceOf[js.Any], retrieveable = retrieveable.asInstanceOf[js.Any], searchLayoutable = searchLayoutable.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], supportedScopes = supportedScopes.asInstanceOf[js.Any], triggerable = triggerable.asInstanceOf[js.Any], undeletable = undeletable.asInstanceOf[js.Any], updateable = updateable.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
-    if (actionOverrides != null) __obj.updateDynamic("actionOverrides")(actionOverrides.asInstanceOf[js.Any])
-    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionOverrides)) __obj.updateDynamic("actionOverrides")(actionOverrides.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyPrefix)) __obj.updateDynamic("keyPrefix")(keyPrefix.asInstanceOf[js.Any])
     if (!js.isUndefined(listviewable)) __obj.updateDynamic("listviewable")(listviewable.asInstanceOf[js.Any])
     if (!js.isUndefined(lookupLayoutable)) __obj.updateDynamic("lookupLayoutable")(lookupLayoutable.asInstanceOf[js.Any])
-    if (networkScopeFieldName != null) __obj.updateDynamic("networkScopeFieldName")(networkScopeFieldName.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkScopeFieldName)) __obj.updateDynamic("networkScopeFieldName")(networkScopeFieldName.asInstanceOf[js.Any])
     if (urlDetail != null) __obj.updateDynamic("urlDetail")(urlDetail.asInstanceOf[js.Any])
     if (urlEdit != null) __obj.updateDynamic("urlEdit")(urlEdit.asInstanceOf[js.Any])
     if (urlNew != null) __obj.updateDynamic("urlNew")(urlNew.asInstanceOf[js.Any])

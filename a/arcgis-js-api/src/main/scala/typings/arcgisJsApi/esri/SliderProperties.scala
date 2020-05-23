@@ -210,9 +210,9 @@ object SliderProperties {
     labelInputsEnabled: js.UndefOr[Boolean] = js.undefined,
     labelsVisible: js.UndefOr[Boolean] = js.undefined,
     layout: horizontal | `horizontal-reversed` | vertical | `vertical-reversed` = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    precision: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    precision: js.UndefOr[Double] = js.undefined,
     rangeLabelInputsEnabled: js.UndefOr[Boolean] = js.undefined,
     rangeLabelsVisible: js.UndefOr[Boolean] = js.undefined,
     snapOnClickEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -227,26 +227,26 @@ object SliderProperties {
   ): SliderProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableSegmentsEnabled)) __obj.updateDynamic("draggableSegmentsEnabled")(draggableSegmentsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableSegmentsEnabled)) __obj.updateDynamic("draggableSegmentsEnabled")(draggableSegmentsEnabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputFormatFunction != null) __obj.updateDynamic("inputFormatFunction")(js.Any.fromFunction3(inputFormatFunction))
     if (inputParseFunction != null) __obj.updateDynamic("inputParseFunction")(js.Any.fromFunction3(inputParseFunction))
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
-    if (!js.isUndefined(labelInputsEnabled)) __obj.updateDynamic("labelInputsEnabled")(labelInputsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelInputsEnabled)) __obj.updateDynamic("labelInputsEnabled")(labelInputsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeLabelInputsEnabled)) __obj.updateDynamic("rangeLabelInputsEnabled")(rangeLabelInputsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeLabelsVisible)) __obj.updateDynamic("rangeLabelsVisible")(rangeLabelsVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapOnClickEnabled)) __obj.updateDynamic("snapOnClickEnabled")(snapOnClickEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeLabelInputsEnabled)) __obj.updateDynamic("rangeLabelInputsEnabled")(rangeLabelInputsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeLabelsVisible)) __obj.updateDynamic("rangeLabelsVisible")(rangeLabelsVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapOnClickEnabled)) __obj.updateDynamic("snapOnClickEnabled")(snapOnClickEnabled.get.asInstanceOf[js.Any])
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     if (thumbCreatedFunction != null) __obj.updateDynamic("thumbCreatedFunction")(js.Any.fromFunction4(thumbCreatedFunction))
-    if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained.get.asInstanceOf[js.Any])
     if (tickConfigs != null) __obj.updateDynamic("tickConfigs")(tickConfigs.asInstanceOf[js.Any])
     if (trackElement != null) __obj.updateDynamic("trackElement")(trackElement.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])

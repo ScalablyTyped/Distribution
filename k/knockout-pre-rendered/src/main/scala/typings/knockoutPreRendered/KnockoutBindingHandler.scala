@@ -1,5 +1,6 @@
 package typings.knockoutPreRendered
 
+import typings.knockoutPreRendered.anon.ControlsDescendantBindings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ trait KnockoutBindingHandler extends js.Object {
       /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], 
       /* viewModel */ js.UndefOr[js.Any], 
       /* bindingContext */ js.UndefOr[KnockoutBindingContext], 
-      Unit | AnonControlsDescendantBindings
+      Unit | ControlsDescendantBindings
     ]
   ] = js.undefined
   var options: js.UndefOr[js.Any] = js.undefined
@@ -39,7 +40,7 @@ trait KnockoutBindingHandler extends js.Object {
 object KnockoutBindingHandler {
   @scala.inline
   def apply(
-    init: (/* element */ js.Any, /* valueAccessor */ js.Function0[_], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[js.Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => Unit | AnonControlsDescendantBindings = null,
+    init: (/* element */ js.Any, /* valueAccessor */ js.Function0[_], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[js.Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => Unit | ControlsDescendantBindings = null,
     options: js.Any = null,
     preprocess: (/* value */ String, /* name */ String, /* addBindingCallback */ js.UndefOr[js.Function2[/* name */ String, /* value */ String, Unit]]) => String = null,
     update: (/* element */ js.Any, /* valueAccessor */ js.Function0[_], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[js.Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => Unit = null

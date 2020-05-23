@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.AnswerWizard")
 @js.native
-class AnswerWizard protected () extends js.Object {
+trait AnswerWizard extends js.Object {
   val Application: js.Any = js.native
   val Creator: Double = js.native
   @JSName("Files")

@@ -16,8 +16,8 @@ trait UtilMath extends js.Object {
   /**
     * a, b 의 중간값 계산을 위한 callback 함수 만들기
     *
-    * @param a	first value
-    * @param b 	second value
+    * @param a    first value
+    * @param b     second value
     */
   def interpolateNumber(a: Double, b: Double): js.Function0[Unit]
   // 중간값 round 해서 계산하기
@@ -43,7 +43,7 @@ trait UtilMath extends js.Object {
   /**
     * 2d rotate
     *
-    * @param radian	roate 할 radian
+    * @param radian    roate 할 radian
     * @return return.x  변환된 x
     * @return return.y  변환된 y
     *

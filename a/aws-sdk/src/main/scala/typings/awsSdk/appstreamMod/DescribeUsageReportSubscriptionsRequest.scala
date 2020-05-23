@@ -18,9 +18,9 @@ trait DescribeUsageReportSubscriptionsRequest extends js.Object {
 
 object DescribeUsageReportSubscriptionsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: String = null): DescribeUsageReportSubscriptionsRequest = {
+  def apply(MaxResults: js.UndefOr[Integer] = js.undefined, NextToken: String = null): DescribeUsageReportSubscriptionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUsageReportSubscriptionsRequest]
   }

@@ -64,14 +64,14 @@ object typeCreatePCClassRendererParams {
     hasOwnProperty: PropertyKey => Boolean,
     layer: PointCloudLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
-    density: Int | Double = null,
+    density: js.UndefOr[Double] = js.undefined,
     signal: AbortSignal = null,
     size: String = null,
     statistics: UniqueValuesResult = null,
     typeScheme: TypeSchemeForPoint = null
   ): typeCreatePCClassRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (!js.isUndefined(density)) __obj.updateDynamic("density")(density.get.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])

@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the Web Report Designer control.
   */
-@JSGlobal("ASPxClientReportDesigner")
 @js.native
-class ASPxClientReportDesigner () extends ASPxClientControl {
+trait ASPxClientReportDesigner extends ASPxClientControl {
   /**
     * Occurs before the Web Report Designer UI is initialized.
     */
@@ -298,16 +297,5 @@ class ASPxClientReportDesigner () extends ASPxClientControl {
     * @param localization A dictionary containing the property names, along with their localized equivalents.
     */
   def UpdateLocalization(localization: StringDictionary[String]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientReportDesigner")
-@js.native
-object ASPxClientReportDesigner extends js.Object {
-  /**
-    * Converts the specified object to the current object's type. This method is effective when you utilize the Client API IntelliSense feature provided by DevExpress. An ASPxClientReportDesigner object.
-    * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
-    */
-  def Cast(obj: js.Any): ASPxClientReportDesigner = js.native
 }
 

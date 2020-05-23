@@ -51,14 +51,14 @@ trait DataPivotHierarchyUpdateData extends js.Object {
   var position: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Determines whether the data should be shown as a specific summary calculation or not.
+    * Specifies if the data should be shown as a specific summary calculation.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showAs: js.UndefOr[ShowAsRule] = js.undefined
   /**
     *
-    * Determines whether to show all items of the DataPivotHierarchy.
+    * Specifies if all items of the DataPivotHierarchy are shown.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -73,7 +73,7 @@ object DataPivotHierarchyUpdateData {
     field: PivotFieldUpdateData = null,
     name: String = null,
     numberFormat: String = null,
-    position: Int | Double = null,
+    position: js.UndefOr[Double] = js.undefined,
     showAs: ShowAsRule = null,
     summarizeBy: AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP = null
   ): DataPivotHierarchyUpdateData = {
@@ -81,7 +81,7 @@ object DataPivotHierarchyUpdateData {
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     if (showAs != null) __obj.updateDynamic("showAs")(showAs.asInstanceOf[js.Any])
     if (summarizeBy != null) __obj.updateDynamic("summarizeBy")(summarizeBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPivotHierarchyUpdateData]

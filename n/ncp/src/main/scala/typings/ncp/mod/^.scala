@@ -1,8 +1,8 @@
 package typings.ncp.mod
 
-import typings.ncp.OptionserrsPathLike
-import typings.ncp.Optionserrsundefined
-import typings.ncp.OptionsstopOnErrtrue
+import typings.ncp.anon.OptionserrsPathLike
+import typings.ncp.anon.Optionserrsundefined
+import typings.ncp.anon.OptionsstopOnErrtrue
 import typings.node.fsMod.WriteStream
 import typings.std.Error
 import scala.scalajs.js
@@ -43,10 +43,10 @@ object ^ extends js.Object {
     callback: js.Function1[/* err */ Error | js.Array[Error] | WriteStream | Null, Unit]
   ): Unit = js.native
   /**
-  	 * **NOTE:** This function provides design-time support for util.promisify.
-  	 *
-  	 * It does not exist at runtime.
-  	 */
+    * **NOTE:** This function provides design-time support for util.promisify.
+    *
+    * It does not exist at runtime.
+    */
   def __promisify__(source: String, destination: String): js.Promise[Unit] = js.native
   def __promisify__(source: String, destination: String, options: Options): js.Promise[Unit] = js.native
 }

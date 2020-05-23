@@ -1,5 +1,6 @@
 package typings.ionic
 
+import typings.ionic.anon.Req
 import typings.ionic.definitionsMod.APIResponse
 import typings.ionic.definitionsMod.APIResponseSuccess
 import typings.ionic.definitionsMod.HttpMethod
@@ -17,9 +18,6 @@ import typings.ionic.definitionsMod.Response
 import typings.ionic.definitionsMod.SuperAgentError
 import typings.ionic.definitionsMod.TokenPaginatorState
 import typings.ionic.errorsMod.FatalException
-import typings.ionic.ionicStrings.UNKNOWN_CONTENT_TYPE
-import typings.ionic.ionicStrings.UNKNOWN_RESPONSE_FORMAT
-import typings.ionic.ionicStrings.applicationSlashjson
 import typings.std.IteratorResult
 import typings.superagent.mod.Request
 import scala.scalajs.js
@@ -37,7 +35,7 @@ object httpMod extends js.Object {
     /* CompleteClass */
     override def `do`(req: typings.ionic.definitionsMod.SuperAgentRequest): js.Promise[APIResponseSuccess] = js.native
     /* CompleteClass */
-    override def make(method: HttpMethod, path: String): js.Promise[AnonReq] = js.native
+    override def make(method: HttpMethod, path: String): js.Promise[Req] = js.native
     /* CompleteClass */
     override def paginate[T /* <: Response[js.Array[js.Object]] */](args: PaginateArgs[T]): IPaginator[T, PaginatorState] = js.native
   }
@@ -55,7 +53,7 @@ object httpMod extends js.Object {
     var reqgen_Original: PaginatorRequestGenerator = js.native
     /* protected */ def guard(res: APIResponseSuccess): /* is T */ Boolean = js.native
     def next(): IteratorResult[js.Promise[T], _] = js.native
-    /* protected */ def reqgen(): js.Promise[AnonReq] = js.native
+    /* protected */ def reqgen(): js.Promise[Req] = js.native
   }
   
   @js.native
@@ -79,12 +77,12 @@ object httpMod extends js.Object {
     /* protected */ def guard(res: APIResponseSuccess): /* is T */ Boolean = js.native
     def isPageTokenResponseMeta(meta: js.Any): /* is ionic.ionic/definitions.APIResponsePageTokenMeta */ Boolean = js.native
     def next(): IteratorResult[js.Promise[T], _] = js.native
-    /* protected */ def reqgen(): js.Promise[AnonReq] = js.native
+    /* protected */ def reqgen(): js.Promise[Req] = js.native
   }
   
-  val CONTENT_TYPE_JSON: applicationSlashjson = js.native
-  val ERROR_UNKNOWN_CONTENT_TYPE: UNKNOWN_CONTENT_TYPE = js.native
-  val ERROR_UNKNOWN_RESPONSE_FORMAT: UNKNOWN_RESPONSE_FORMAT = js.native
+  val CONTENT_TYPE_JSON: /* "application/json" */ String = js.native
+  val ERROR_UNKNOWN_CONTENT_TYPE: /* "UNKNOWN_CONTENT_TYPE" */ String = js.native
+  val ERROR_UNKNOWN_RESPONSE_FORMAT: /* "UNKNOWN_RESPONSE_FORMAT" */ String = js.native
   def createFatalAPIFormat(req: SuperAgentRequest, res: APIResponse): FatalException = js.native
   def formatResponseError(req: SuperAgentRequest): String = js.native
   def formatResponseError(req: SuperAgentRequest, status: Double): String = js.native

@@ -4,14 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.IHTMLSelectionObject")
-@js.native
-class IHTMLSelectionObject protected () extends js.Object {
+trait IHTMLSelectionObject extends js.Object {
   @JSName("MSHTML.IHTMLSelectionObject_typekey")
-  var MSHTMLDotIHTMLSelectionObject_typekey: IHTMLSelectionObject = js.native
-  val `type`: String = js.native
-  def clear(): Unit = js.native
-  def createRange(): js.Any = js.native
-  def empty(): Unit = js.native
+  var MSHTMLDotIHTMLSelectionObject_typekey: IHTMLSelectionObject
+  val `type`: String
+  def clear(): Unit
+  def createRange(): js.Any
+  def empty(): Unit
+}
+
+object IHTMLSelectionObject {
+  @scala.inline
+  def apply(
+    MSHTMLDotIHTMLSelectionObject_typekey: IHTMLSelectionObject,
+    clear: () => Unit,
+    createRange: () => js.Any,
+    empty: () => Unit,
+    `type`: String
+  ): IHTMLSelectionObject = {
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), createRange = js.Any.fromFunction0(createRange), empty = js.Any.fromFunction0(empty))
+    __obj.updateDynamic("MSHTML.IHTMLSelectionObject_typekey")(MSHTMLDotIHTMLSelectionObject_typekey.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IHTMLSelectionObject]
+  }
 }
 

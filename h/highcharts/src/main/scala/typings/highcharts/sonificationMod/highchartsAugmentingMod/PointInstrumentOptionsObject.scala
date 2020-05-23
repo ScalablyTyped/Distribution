@@ -58,24 +58,24 @@ trait PointInstrumentOptionsObject extends js.Object {
 object PointInstrumentOptionsObject {
   @scala.inline
   def apply(
-    maxDuration: Int | Double = null,
-    maxFrequency: Int | Double = null,
-    maxPan: Int | Double = null,
-    maxVolume: Int | Double = null,
-    minDuration: Int | Double = null,
-    minFrequency: Int | Double = null,
-    minPan: Int | Double = null,
-    minVolume: Int | Double = null
+    maxDuration: js.UndefOr[Double] = js.undefined,
+    maxFrequency: js.UndefOr[Double] = js.undefined,
+    maxPan: js.UndefOr[Double] = js.undefined,
+    maxVolume: js.UndefOr[Double] = js.undefined,
+    minDuration: js.UndefOr[Double] = js.undefined,
+    minFrequency: js.UndefOr[Double] = js.undefined,
+    minPan: js.UndefOr[Double] = js.undefined,
+    minVolume: js.UndefOr[Double] = js.undefined
   ): PointInstrumentOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
-    if (maxFrequency != null) __obj.updateDynamic("maxFrequency")(maxFrequency.asInstanceOf[js.Any])
-    if (maxPan != null) __obj.updateDynamic("maxPan")(maxPan.asInstanceOf[js.Any])
-    if (maxVolume != null) __obj.updateDynamic("maxVolume")(maxVolume.asInstanceOf[js.Any])
-    if (minDuration != null) __obj.updateDynamic("minDuration")(minDuration.asInstanceOf[js.Any])
-    if (minFrequency != null) __obj.updateDynamic("minFrequency")(minFrequency.asInstanceOf[js.Any])
-    if (minPan != null) __obj.updateDynamic("minPan")(minPan.asInstanceOf[js.Any])
-    if (minVolume != null) __obj.updateDynamic("minVolume")(minVolume.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDuration)) __obj.updateDynamic("maxDuration")(maxDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFrequency)) __obj.updateDynamic("maxFrequency")(maxFrequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPan)) __obj.updateDynamic("maxPan")(maxPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxVolume)) __obj.updateDynamic("maxVolume")(maxVolume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDuration)) __obj.updateDynamic("minDuration")(minDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFrequency)) __obj.updateDynamic("minFrequency")(minFrequency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPan)) __obj.updateDynamic("minPan")(minPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minVolume)) __obj.updateDynamic("minVolume")(minVolume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointInstrumentOptionsObject]
   }
 }

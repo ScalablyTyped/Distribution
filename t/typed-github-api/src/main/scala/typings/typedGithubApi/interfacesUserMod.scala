@@ -1,6 +1,7 @@
 package typings.typedGithubApi
 
 import typings.moment.mod.Moment
+import typings.typedGithubApi.anon.Name
 import typings.typedGithubApi.ownerRefMod.OwnerRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ object interfacesUserMod extends js.Object {
   trait MyUser extends User {
     var collaborators: Double = js.native
     var diskUsage: Double = js.native
-    var plan: AnonName = js.native
+    var plan: Name = js.native
     var privateGists: Double = js.native
     var privateReposOwned: Double = js.native
     var privateReposTotal: Double = js.native

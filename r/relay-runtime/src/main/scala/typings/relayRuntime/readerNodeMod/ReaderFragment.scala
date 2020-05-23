@@ -1,6 +1,6 @@
 package typings.relayRuntime.readerNodeMod
 
-import typings.relayRuntime.AnonConnection
+import typings.relayRuntime.anon.Connection
 import typings.relayRuntime.relayConcreteNodeMod.GeneratedNode
 import typings.relayRuntime.relayModernGraphQLTagMod._GraphQLTaggedNode
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait ReaderFragment
      with _GraphQLTaggedNode {
   val argumentDefinitions: js.Array[ReaderArgumentDefinition]
   val kind: String
-  val metadata: js.UndefOr[AnonConnection | Null] = js.undefined
+  val metadata: js.UndefOr[Connection | Null] = js.undefined
    // 'Fragment';
   val name: String
   val selections: js.Array[ReaderSelection]
@@ -28,11 +28,11 @@ object ReaderFragment {
     name: String,
     selections: js.Array[ReaderSelection],
     `type`: String,
-    metadata: AnonConnection = null
+    metadata: js.UndefOr[Null | Connection] = js.undefined
   ): ReaderFragment = {
     val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderFragment]
   }
 }

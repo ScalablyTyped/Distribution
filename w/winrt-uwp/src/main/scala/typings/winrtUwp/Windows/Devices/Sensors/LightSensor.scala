@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an ambient-light sensor. */
-@JSGlobal("Windows.Devices.Sensors.LightSensor")
 @js.native
-abstract class LightSensor () extends js.Object {
+trait LightSensor extends js.Object {
   /** Gets the device identifier. */
   var deviceId: String = js.native
   /** Gets the minimum report interval supported by the sensor. */
@@ -40,16 +39,5 @@ abstract class LightSensor () extends js.Object {
     `type`: readingchanged,
     listener: TypedEventHandler[LightSensor, LightSensorReadingChangedEventArgs]
   ): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.LightSensor")
-@js.native
-object LightSensor extends js.Object {
-  /**
-    * Returns the default ambient-light sensor.
-    * @return The default ambient-light sensor or null if no integrated light sensors are found.
-    */
-  def getDefault(): LightSensor = js.native
 }
 

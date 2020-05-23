@@ -48,11 +48,11 @@ object PrimaryYAxisMultiLevelLabel {
   @scala.inline
   def apply(
     border: PrimaryYAxisMultiLevelLabelsBorder = null,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     font: PrimaryYAxisMultiLevelLabelsFont = null,
-    level: Int | Double = null,
-    maximumTextWidth: Int | Double = null,
-    start: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
+    maximumTextWidth: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined,
     text: String = null,
     textAlignment: TextAlignment | String = null,
     textOverflow: TextOverflow | String = null,
@@ -60,15 +60,15 @@ object PrimaryYAxisMultiLevelLabel {
   ): PrimaryYAxisMultiLevelLabel = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (maximumTextWidth != null) __obj.updateDynamic("maximumTextWidth")(maximumTextWidth.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumTextWidth)) __obj.updateDynamic("maximumTextWidth")(maximumTextWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
     if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryYAxisMultiLevelLabel]
   }
 }

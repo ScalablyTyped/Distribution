@@ -13,10 +13,15 @@ trait Language extends js.Object {
 
 object Language {
   @scala.inline
-  def apply(code: String, quality: Double, region: String = null, script: String = null): Language = {
+  def apply(
+    code: String,
+    quality: Double,
+    region: String = null,
+    script: js.UndefOr[Null | String] = js.undefined
+  ): Language = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
+    if (!js.isUndefined(script)) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
     __obj.asInstanceOf[Language]
   }
 }

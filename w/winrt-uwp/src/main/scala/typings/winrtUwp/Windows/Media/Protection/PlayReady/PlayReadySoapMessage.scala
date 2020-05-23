@@ -7,17 +7,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains a SOAP message used in manual challenge requests. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadySoapMessage")
-@js.native
-abstract class PlayReadySoapMessage () extends js.Object {
+trait PlayReadySoapMessage extends js.Object {
   /** Gets a collection of the SOAP headers applied to the current SOAP request or SOAP response. */
-  var messageHeaders: IPropertySet = js.native
+  var messageHeaders: IPropertySet
   /** Gets the base URL of the XML Web service. */
-  var uri: Uri = js.native
+  var uri: Uri
   /**
     * Retrieves the contents of the SOAP message.
     * @return The contents of the SOAP message.
     */
-  def getMessageBody(): js.Array[Double] = js.native
+  def getMessageBody(): js.Array[Double]
+}
+
+object PlayReadySoapMessage {
+  @scala.inline
+  def apply(getMessageBody: () => js.Array[Double], messageHeaders: IPropertySet, uri: Uri): PlayReadySoapMessage = {
+    val __obj = js.Dynamic.literal(getMessageBody = js.Any.fromFunction0(getMessageBody), messageHeaders = messageHeaders.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayReadySoapMessage]
+  }
 }
 

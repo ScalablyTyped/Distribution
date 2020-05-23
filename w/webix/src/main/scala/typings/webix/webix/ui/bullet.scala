@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.bullet")
 @js.native
-class bullet () extends baseview {
+trait bullet extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

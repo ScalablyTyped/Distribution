@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.PdfViewer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object AnnotationType extends js.Object {
   ///Specifies the underline annotation.
   @js.native
   sealed trait Underline extends AnnotationType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AnnotationType with Double] = js.native
-  /* 2 */ @js.native
-  object Highlight extends TopLevel[Highlight with Double]
-  
-  /* 1 */ @js.native
-  object Strikethrough extends TopLevel[Strikethrough with Double]
-  
-  /* 0 */ @js.native
-  object Underline extends TopLevel[Underline with Double]
   
 }
 

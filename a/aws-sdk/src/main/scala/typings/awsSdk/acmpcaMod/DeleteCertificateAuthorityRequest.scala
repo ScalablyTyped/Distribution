@@ -18,9 +18,12 @@ trait DeleteCertificateAuthorityRequest extends js.Object {
 
 object DeleteCertificateAuthorityRequest {
   @scala.inline
-  def apply(CertificateAuthorityArn: Arn, PermanentDeletionTimeInDays: Int | Double = null): DeleteCertificateAuthorityRequest = {
+  def apply(
+    CertificateAuthorityArn: Arn,
+    PermanentDeletionTimeInDays: js.UndefOr[PermanentDeletionTimeInDays] = js.undefined
+  ): DeleteCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
-    if (PermanentDeletionTimeInDays != null) __obj.updateDynamic("PermanentDeletionTimeInDays")(PermanentDeletionTimeInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(PermanentDeletionTimeInDays)) __obj.updateDynamic("PermanentDeletionTimeInDays")(PermanentDeletionTimeInDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCertificateAuthorityRequest]
   }
 }

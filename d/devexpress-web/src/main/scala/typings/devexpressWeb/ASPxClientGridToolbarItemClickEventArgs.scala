@@ -7,30 +7,36 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientGridBase.ToolbarItemClick event.
   */
-@JSGlobal("ASPxClientGridToolbarItemClickEventArgs")
-@js.native
-class ASPxClientGridToolbarItemClickEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGridToolbarItemClickEventArgs class.
-    * @param item An ASPxClientMenu object that should be clicked to fire the event.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    */
-  def this(item: ASPxClientMenuItem, processOnServer: Boolean) = this()
+trait ASPxClientGridToolbarItemClickEventArgs extends ASPxClientProcessingModeEventArgs {
   /**
     * Gets the clicked menu item
     */
-  var item: ASPxClientMenuItem = js.native
+  var item: ASPxClientMenuItem
   /**
     * Gets the toolbar index.
     */
-  var toolbarIndex: Double = js.native
+  var toolbarIndex: Double
   /**
     * Gets the toolbar name.
     */
-  var toolbarName: String = js.native
+  var toolbarName: String
   /**
     * Specifies whether a postback or a callback is used to finally process the event on the server side.
     */
-  var usePostBack: Boolean = js.native
+  var usePostBack: Boolean
+}
+
+object ASPxClientGridToolbarItemClickEventArgs {
+  @scala.inline
+  def apply(
+    item: ASPxClientMenuItem,
+    processOnServer: Boolean,
+    toolbarIndex: Double,
+    toolbarName: String,
+    usePostBack: Boolean
+  ): ASPxClientGridToolbarItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], toolbarIndex = toolbarIndex.asInstanceOf[js.Any], toolbarName = toolbarName.asInstanceOf[js.Any], usePostBack = usePostBack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGridToolbarItemClickEventArgs]
+  }
 }
 

@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,11 @@ trait OverlayBox extends js.Object {
   def showOverlay(): Unit
 }
 
-@JSGlobal("webix.OverlayBox")
-@js.native
-object OverlayBox extends TopLevel[OverlayBox]
+object OverlayBox {
+  @scala.inline
+  def apply(hideOverlay: () => Unit, showOverlay: () => Unit): OverlayBox = {
+    val __obj = js.Dynamic.literal(hideOverlay = js.Any.fromFunction0(hideOverlay), showOverlay = js.Any.fromFunction0(showOverlay))
+    __obj.asInstanceOf[OverlayBox]
+  }
+}
 

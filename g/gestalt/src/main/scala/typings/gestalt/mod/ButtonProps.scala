@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonEvent
+import typings.gestalt.anon.Event
 import typings.gestalt.gestaltStrings.blue
 import typings.gestalt.gestaltStrings.button
 import typings.gestalt.gestaltStrings.darkGray
@@ -22,9 +22,10 @@ trait ButtonProps extends js.Object {
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[blue | gray | red | transparent | white] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
+  var iconEnd: js.UndefOr[Icons] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* args */ AnonEvent, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* args */ Event, Unit]] = js.undefined
   var size: js.UndefOr[sm | md | lg] = js.undefined
   var text: String
   var textColor: js.UndefOr[blue | red | darkGray | white] = js.undefined
@@ -40,20 +41,22 @@ object ButtonProps {
     accessibilityLabel: String = null,
     color: blue | gray | red | transparent | white = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    iconEnd: Icons = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onClick: /* args */ AnonEvent => Unit = null,
+    onClick: /* args */ Event => Unit = null,
     size: sm | md | lg = null,
     textColor: blue | red | darkGray | white = null,
     `type`: submit | button = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityExpanded)) __obj.updateDynamic("accessibilityExpanded")(accessibilityExpanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityHaspopup)) __obj.updateDynamic("accessibilityHaspopup")(accessibilityHaspopup.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityExpanded)) __obj.updateDynamic("accessibilityExpanded")(accessibilityExpanded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityHaspopup)) __obj.updateDynamic("accessibilityHaspopup")(accessibilityHaspopup.get.asInstanceOf[js.Any])
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (iconEnd != null) __obj.updateDynamic("iconEnd")(iconEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

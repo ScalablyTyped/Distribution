@@ -1,6 +1,6 @@
 package typings.polygon.mod
 
-import typings.polygon.AnonX
+import typings.polygon.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +26,6 @@ import scala.scalajs.js.annotation._
 @JSImport("polygon", JSImport.Namespace)
 @js.native
 class ^ protected () extends Polygon {
-  def this(points: js.Array[AnonX | js.Array[Double] | typings.vec2.mod.^ ]) = this()
+  def this(points: js.Array[js.Array[Double] | X | typings.vec2.mod.^ ]) = this()
 }
 

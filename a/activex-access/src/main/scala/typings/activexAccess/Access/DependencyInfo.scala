@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.DependencyInfo")
 @js.native
-class DependencyInfo protected () extends js.Object {
+trait DependencyInfo extends js.Object {
   @JSName("Access.DependencyInfo_typekey")
   var AccessDotDependencyInfo_typekey: DependencyInfo = js.native
   @JSName("Dependants")

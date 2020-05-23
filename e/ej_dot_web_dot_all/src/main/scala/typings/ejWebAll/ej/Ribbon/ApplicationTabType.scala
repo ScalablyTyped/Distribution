@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Ribbon
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object ApplicationTabType extends js.Object {
   ///applicationTab display as menu
   @js.native
   sealed trait Menu extends ApplicationTabType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ApplicationTabType with Double] = js.native
-  /* 1 */ @js.native
-  object Backstage extends TopLevel[Backstage with Double]
-  
-  /* 0 */ @js.native
-  object Menu extends TopLevel[Menu with Double]
   
 }
 

@@ -112,9 +112,7 @@ object mod extends js.Object {
     def useLocation[S](): Location[S] = js.native
     def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxRouter.reduxRouterStrings.useParams with TopLevel[js.Any] */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ p in keyof Params ]: keyof Params[p] extends undefined? string | undefined : string}
-      */ typings.reduxRouter.reduxRouterStrings.useParams with TopLevel[js.Any] = js.native
+      */ typings.reduxRouter.reduxRouterStrings.useParams with TopLevel[js.Any] */](): Params = js.native
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
       */ typings.reduxRouter.reduxRouterStrings.useRouteMatch with TopLevel[js.Any] */](): `match`[Params] = js.native
@@ -130,7 +128,7 @@ object mod extends js.Object {
     def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClass[
         (Omit[
           P, 
-          history | location | typings.reduxRouter.reduxRouterStrings.`match` | staticContext
+          /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | typings.reduxRouter.reduxRouterStrings.`match` | staticContext
         ]) with WithRouterProps[C], 
         ComponentState
       ]) with WithRouterStatics[C] = js.native

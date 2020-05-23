@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object angular {
   type JQLiteCssProperties = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | typings.angular.cssPropertySetter]
   type JQueryStatic = js.Function1[
-    /* element */ java.lang.String | typings.std.Element | typings.std.Document_ | typings.std.Window_ | typings.angular.JQuery | typings.std.ArrayLike[typings.std.Element] | js.Function0[scala.Unit], 
+    /* element */ java.lang.String | typings.std.Element | typings.std.Document | typings.std.Window | typings.angular.JQuery | typings.std.ArrayLike[typings.std.Element] | js.Function0[scala.Unit], 
     typings.angular.JQLite
   ]
   /**

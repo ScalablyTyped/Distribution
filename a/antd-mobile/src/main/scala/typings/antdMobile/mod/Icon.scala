@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonSize
+import typings.antdMobile.anon.Size
 import typings.antdMobile.iconMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Icon () extends default
 @JSImport("antd-mobile", "Icon")
 @js.native
 object Icon extends js.Object {
-  var defaultProps: AnonSize = js.native
+  var defaultProps: Size = js.native
 }
 

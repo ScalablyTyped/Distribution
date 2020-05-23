@@ -36,28 +36,28 @@ object IFormatNumberOptions {
     negativeRightOut: js.UndefOr[Boolean] = js.undefined,
     negativeRightSymbol: String = null,
     negativeType: right | left | brackets | none = null,
-    padLeft: Int | Double = null,
-    padRight: Int | Double = null,
+    padLeft: js.UndefOr[Double] = js.undefined,
+    padRight: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
-    round: Int | Double = null,
+    round: js.UndefOr[Double] = js.undefined,
     suffix: String = null,
-    truncate: Int | Double = null
+    truncate: js.UndefOr[Double] = js.undefined
   ): IFormatNumberOptions = {
     val __obj = js.Dynamic.literal()
     if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
     if (decimalsSeparator != null) __obj.updateDynamic("decimalsSeparator")(decimalsSeparator.asInstanceOf[js.Any])
     if (integerSeparator != null) __obj.updateDynamic("integerSeparator")(integerSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(negativeLeftOut)) __obj.updateDynamic("negativeLeftOut")(negativeLeftOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(negativeLeftOut)) __obj.updateDynamic("negativeLeftOut")(negativeLeftOut.get.asInstanceOf[js.Any])
     if (negativeLeftSymbol != null) __obj.updateDynamic("negativeLeftSymbol")(negativeLeftSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(negativeRightOut)) __obj.updateDynamic("negativeRightOut")(negativeRightOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(negativeRightOut)) __obj.updateDynamic("negativeRightOut")(negativeRightOut.get.asInstanceOf[js.Any])
     if (negativeRightSymbol != null) __obj.updateDynamic("negativeRightSymbol")(negativeRightSymbol.asInstanceOf[js.Any])
     if (negativeType != null) __obj.updateDynamic("negativeType")(negativeType.asInstanceOf[js.Any])
-    if (padLeft != null) __obj.updateDynamic("padLeft")(padLeft.asInstanceOf[js.Any])
-    if (padRight != null) __obj.updateDynamic("padRight")(padRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(padLeft)) __obj.updateDynamic("padLeft")(padLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padRight)) __obj.updateDynamic("padRight")(padRight.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFormatNumberOptions]
   }
 }

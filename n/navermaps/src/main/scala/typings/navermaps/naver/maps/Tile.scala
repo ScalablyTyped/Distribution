@@ -6,11 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Map.Tile
-@JSGlobal("naver.maps.Tile")
 @js.native
-class Tile protected () extends KVO {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, tileOptions: TileOptions) = this()
+trait Tile extends KVO {
   def appendTo(parentNode: HTMLElement): Unit = js.native
   def cancelFadeIn(): Unit = js.native
   def destroy(): Unit = js.native

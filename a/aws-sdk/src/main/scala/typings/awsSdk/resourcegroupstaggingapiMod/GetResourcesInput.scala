@@ -39,22 +39,22 @@ trait GetResourcesInput extends js.Object {
 object GetResourcesInput {
   @scala.inline
   def apply(
-    ExcludeCompliantResources: js.UndefOr[Boolean] = js.undefined,
-    IncludeComplianceDetails: js.UndefOr[Boolean] = js.undefined,
+    ExcludeCompliantResources: js.UndefOr[ExcludeCompliantResources] = js.undefined,
+    IncludeComplianceDetails: js.UndefOr[IncludeComplianceDetails] = js.undefined,
     PaginationToken: PaginationToken = null,
     ResourceTypeFilters: ResourceTypeFilterList = null,
-    ResourcesPerPage: Int | Double = null,
+    ResourcesPerPage: js.UndefOr[ResourcesPerPage] = js.undefined,
     TagFilters: TagFilterList = null,
-    TagsPerPage: Int | Double = null
+    TagsPerPage: js.UndefOr[TagsPerPage] = js.undefined
   ): GetResourcesInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ExcludeCompliantResources)) __obj.updateDynamic("ExcludeCompliantResources")(ExcludeCompliantResources.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeComplianceDetails)) __obj.updateDynamic("IncludeComplianceDetails")(IncludeComplianceDetails.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExcludeCompliantResources)) __obj.updateDynamic("ExcludeCompliantResources")(ExcludeCompliantResources.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeComplianceDetails)) __obj.updateDynamic("IncludeComplianceDetails")(IncludeComplianceDetails.get.asInstanceOf[js.Any])
     if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken.asInstanceOf[js.Any])
     if (ResourceTypeFilters != null) __obj.updateDynamic("ResourceTypeFilters")(ResourceTypeFilters.asInstanceOf[js.Any])
-    if (ResourcesPerPage != null) __obj.updateDynamic("ResourcesPerPage")(ResourcesPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(ResourcesPerPage)) __obj.updateDynamic("ResourcesPerPage")(ResourcesPerPage.get.asInstanceOf[js.Any])
     if (TagFilters != null) __obj.updateDynamic("TagFilters")(TagFilters.asInstanceOf[js.Any])
-    if (TagsPerPage != null) __obj.updateDynamic("TagsPerPage")(TagsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(TagsPerPage)) __obj.updateDynamic("TagsPerPage")(TagsPerPage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcesInput]
   }
 }

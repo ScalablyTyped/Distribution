@@ -1,6 +1,7 @@
 package typings.uirouterAngularjs
 
 import typings.angular.mod.IAugmentedJQuery
+import typings.uirouterAngularjs.anon.Component
 import typings.uirouterAngularjs.interfaceMod.Ng1ViewDeclaration
 import typings.uirouterAngularjs.interfaceMod.TemplateFactoryProvider
 import typings.uirouterCore.commonCommonMod.IInjectable
@@ -47,7 +48,7 @@ object templateFactoryMod extends js.Object {
       * @return {string|object}  The template html as a string, or a promise for
       * that string,or `null` if no template is configured.
       */
-    def fromConfig(config: Ng1ViewDeclaration, params: js.Any, context: ResolveContext): js.Promise[AnonComponent] = js.native
+    def fromConfig(config: Ng1ViewDeclaration, params: js.Any, context: ResolveContext): js.Promise[Component] = js.native
     /**
       * Creates a template by invoking an injectable provider function.
       *

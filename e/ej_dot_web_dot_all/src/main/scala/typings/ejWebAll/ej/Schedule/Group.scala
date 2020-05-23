@@ -18,7 +18,7 @@ object Group {
   @scala.inline
   def apply(allowGroupEditing: js.UndefOr[Boolean] = js.undefined, resources: js.Array[_] = null): Group = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowGroupEditing)) __obj.updateDynamic("allowGroupEditing")(allowGroupEditing.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowGroupEditing)) __obj.updateDynamic("allowGroupEditing")(allowGroupEditing.get.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }

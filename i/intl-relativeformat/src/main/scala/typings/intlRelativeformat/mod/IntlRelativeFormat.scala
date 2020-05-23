@@ -3,8 +3,8 @@ package typings.intlRelativeformat.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.intlRelativeformat.AnonLocale
-import typings.intlRelativeformat.AnonNow
+import typings.intlRelativeformat.anon.Locale
+import typings.intlRelativeformat.anon.Now
 import typings.intlRelativeformat.typesMod.LocaleData
 import typings.std.Record
 import scala.scalajs.js
@@ -31,13 +31,13 @@ trait IntlRelativeFormat
   def __addLocaleData(data: LocaleData*): Unit = js.native
   @JSName("format")
   def format_0(
-    date: /* import warning: importer.ImportType#apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any
+    date: /* import warning: importer.ImportType#apply Failed type conversion: std.ConstructorParameters<std.DateConstructor & new (value : number): std.<global>.Date>[0] */ js.Any
   ): String = js.native
   @JSName("format")
   def format_0(
-    date: /* import warning: importer.ImportType#apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any,
-    opts: AnonNow
+    date: /* import warning: importer.ImportType#apply Failed type conversion: std.ConstructorParameters<std.DateConstructor & new (value : number): std.<global>.Date>[0] */ js.Any,
+    opts: Now
   ): String = js.native
-  def resolvedOptions(): AnonLocale = js.native
+  def resolvedOptions(): Locale = js.native
 }
 

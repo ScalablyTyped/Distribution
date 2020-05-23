@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Measurement, calculation or setting capability of a medical device
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait DeviceMetric extends DomainResource {
   /**
     * Contains extended information for property 'category'.

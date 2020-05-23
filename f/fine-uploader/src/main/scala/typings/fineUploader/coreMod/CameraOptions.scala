@@ -30,7 +30,7 @@ object CameraOptions {
   def apply(button: HTMLElement = null, ios: js.UndefOr[Boolean] = js.undefined): CameraOptions = {
     val __obj = js.Dynamic.literal()
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (!js.isUndefined(ios)) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
+    if (!js.isUndefined(ios)) __obj.updateDynamic("ios")(ios.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraOptions]
   }
 }

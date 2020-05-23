@@ -18,23 +18,23 @@ trait MockFunctionMetadata[T, Y /* <: js.Array[_] */, Type] extends js.Object {
 
 object MockFunctionMetadata {
   @scala.inline
-  def apply[T, Y /* <: js.Array[_] */, Type](
-    length: Int | Double = null,
+  def apply[T, Y, Type](
+    length: js.UndefOr[Double] = js.undefined,
     members: Record[String, MockFunctionMetadata[T, Y, MockFunctionMetadataType]] = null,
     mockImpl: /* args */ Y => T = null,
     name: String = null,
-    ref: Int | Double = null,
-    refID: Int | Double = null,
+    ref: js.UndefOr[Double] = js.undefined,
+    refID: js.UndefOr[Double] = js.undefined,
     `type`: Type = null,
     value: T = null
   ): MockFunctionMetadata[T, Y, Type] = {
     val __obj = js.Dynamic.literal()
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
     if (mockImpl != null) __obj.updateDynamic("mockImpl")(js.Any.fromFunction1(mockImpl))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (refID != null) __obj.updateDynamic("refID")(refID.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refID)) __obj.updateDynamic("refID")(refID.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockFunctionMetadata[T, Y, Type]]

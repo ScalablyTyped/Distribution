@@ -1,6 +1,6 @@
 package typings.nano.mod
 
-import typings.nano.AnonIdRev
+import typings.nano.anon.IdRev
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait MangoResponse[D] extends js.Object {
   var bookmark: js.UndefOr[String] = js.undefined
   // Array of documents matching the search. In each matching document, the fields specified in
   // the fields part of the request body are listed, along with their values.
-  var docs: js.Array[D with AnonIdRev]
+  var docs: js.Array[D with IdRev]
   // Basic execution statistics for a specific request.
   var execution_stats: js.UndefOr[MangoExecutionStats] = js.undefined
   // Execution warnings
@@ -20,7 +20,7 @@ trait MangoResponse[D] extends js.Object {
 object MangoResponse {
   @scala.inline
   def apply[D](
-    docs: js.Array[D with AnonIdRev],
+    docs: js.Array[D with IdRev],
     bookmark: String = null,
     execution_stats: MangoExecutionStats = null,
     warning: String = null

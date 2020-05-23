@@ -18,6 +18,7 @@ import typings.node.cryptoMod.KeyType
 import typings.node.cryptoMod.Utf8AsciiBinaryEncoding
 import typings.node.cryptoMod.Utf8AsciiLatin1Encoding
 import typings.node.dgramMod.SocketType
+import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.symlink.Type
 import typings.node.perfHooksMod.EntryType
 import typings.node.tlsMod.SecureVersion
@@ -595,7 +596,7 @@ object nodeStrings {
   sealed trait boolean extends Style
   
   @js.native
-  sealed trait buffer_ extends js.Object
+  sealed trait buffer_ extends BufferEncodingOption
   
   @js.native
   sealed trait `chacha20-poly1305` extends CipherCCMTypes

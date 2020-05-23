@@ -1,6 +1,6 @@
 package typings.jpm.passwordsMod
 
-import typings.jpm.CredentialonCompleteanyon
+import typings.jpm.anon.CredentialonCompleteanyon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.viewportMercatorProject.BaseHighPrecisionDistance
-  - typings.viewportMercatorProject.BaseHighPrecisionDistanceHighPrecision
+  - typings.viewportMercatorProject.anon.BaseHighPrecisionDistance
+  - typings.viewportMercatorProject.anon.BaseHighPrecisionDistanceHighPrecision
 */
 trait HighPrecisionDistanceScalesInput extends js.Object
 

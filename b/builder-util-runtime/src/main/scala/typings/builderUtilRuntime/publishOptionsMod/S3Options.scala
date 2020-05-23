@@ -50,30 +50,30 @@ object S3Options {
   def apply(
     bucket: String,
     provider: s3,
-    acl: `private` | `public-read` = null,
-    channel: String = null,
-    encryption: AES256 | awsColonkms = null,
-    endpoint: String = null,
-    path: String = null,
+    acl: js.UndefOr[Null | `private` | `public-read`] = js.undefined,
+    channel: js.UndefOr[Null | String] = js.undefined,
+    encryption: js.UndefOr[Null | AES256 | awsColonkms] = js.undefined,
+    endpoint: js.UndefOr[Null | String] = js.undefined,
+    path: js.UndefOr[Null | String] = js.undefined,
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.Array[String] = null,
-    region: String = null,
+    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    region: js.UndefOr[Null | String] = js.undefined,
     requestHeaders: OutgoingHttpHeaders = null,
-    storageClass: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA = null,
-    updaterCacheDirName: String = null
+    storageClass: js.UndefOr[Null | STANDARD | REDUCED_REDUNDANCY | STANDARD_IA] = js.undefined,
+    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined
   ): S3Options = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (encryption != null) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (!js.isUndefined(acl)) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (!js.isUndefined(channel)) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (!js.isUndefined(encryption)) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])
+    if (!js.isUndefined(endpoint)) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (!js.isUndefined(region)) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageClass)) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Options]
   }
 }

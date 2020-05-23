@@ -15,10 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a picker flyout that contains a list of remote devices for the user to choose from. */
-@JSGlobal("Windows.Media.DialProtocol.DialDevicePicker")
 @js.native
-/** Creates a new DialDevicePicker object. */
-class DialDevicePicker () extends js.Object {
+trait DialDevicePicker extends js.Object {
   /** Used to change the colors of the picker. */
   var appearance: DevicePickerAppearance = js.native
   /** Gets the filter used to choose what devices to show in the picker. */

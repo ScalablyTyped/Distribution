@@ -76,7 +76,7 @@ object CreateApplicationVersionResponse {
     CreationTime: string = null,
     ParameterDefinitions: listOfParameterDefinition = null,
     RequiredCapabilities: listOfCapability = null,
-    ResourcesSupported: js.UndefOr[Boolean] = js.undefined,
+    ResourcesSupported: js.UndefOr[boolean] = js.undefined,
     SemanticVersion: string = null,
     SourceCodeArchiveUrl: string = null,
     SourceCodeUrl: string = null,
@@ -87,7 +87,7 @@ object CreateApplicationVersionResponse {
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (ParameterDefinitions != null) __obj.updateDynamic("ParameterDefinitions")(ParameterDefinitions.asInstanceOf[js.Any])
     if (RequiredCapabilities != null) __obj.updateDynamic("RequiredCapabilities")(RequiredCapabilities.asInstanceOf[js.Any])
-    if (!js.isUndefined(ResourcesSupported)) __obj.updateDynamic("ResourcesSupported")(ResourcesSupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(ResourcesSupported)) __obj.updateDynamic("ResourcesSupported")(ResourcesSupported.get.asInstanceOf[js.Any])
     if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion.asInstanceOf[js.Any])
     if (SourceCodeArchiveUrl != null) __obj.updateDynamic("SourceCodeArchiveUrl")(SourceCodeArchiveUrl.asInstanceOf[js.Any])
     if (SourceCodeUrl != null) __obj.updateDynamic("SourceCodeUrl")(SourceCodeUrl.asInstanceOf[js.Any])

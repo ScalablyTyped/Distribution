@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object AutoTextType extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends AutoTextType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AutoTextType with Double] = js.native
-  /* 1 */ @js.native
-  object SLIDE_NUMBER extends TopLevel[SLIDE_NUMBER with Double]
-  
-  /* 0 */ @js.native
-  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
   
 }
 

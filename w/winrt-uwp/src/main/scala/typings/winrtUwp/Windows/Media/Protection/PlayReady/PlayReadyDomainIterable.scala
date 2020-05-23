@@ -6,18 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Exposes the PlayReady PlayReadyDomain class iterator. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyDomainIterable")
-@js.native
-class PlayReadyDomainIterable protected () extends js.Object {
-  /**
-    * Initializes a new instance of the PlayReadyDomainIterable class using the domain account identifier.
-    * @param domainAccountId The domain account identifier.
-    */
-  def this(domainAccountId: String) = this()
+trait PlayReadyDomainIterable extends js.Object {
   /**
     * Returns an iterator that iterates over the items in the PlayReady domain collection.
     * @return The PlayReady domain iterator.
     */
-  def first(): IIterator[IPlayReadyDomain] = js.native
+  def first(): IIterator[IPlayReadyDomain]
+}
+
+object PlayReadyDomainIterable {
+  @scala.inline
+  def apply(first: () => IIterator[IPlayReadyDomain]): PlayReadyDomainIterable = {
+    val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first))
+    __obj.asInstanceOf[PlayReadyDomainIterable]
+  }
 }
 

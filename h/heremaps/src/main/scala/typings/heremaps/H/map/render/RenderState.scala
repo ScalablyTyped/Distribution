@@ -1,6 +1,5 @@
 package typings.heremaps.H.map.render
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,17 +27,6 @@ object RenderState extends js.Object {
     */
   @js.native
   sealed trait PENDING extends RenderState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RenderState with Double] = js.native
-  /* 1 */ @js.native
-  object ACTIVE extends TopLevel[ACTIVE with Double]
-  
-  /* 2 */ @js.native
-  object DONE extends TopLevel[DONE with Double]
-  
-  /* 0 */ @js.native
-  object PENDING extends TopLevel[PENDING with Double]
   
 }
 

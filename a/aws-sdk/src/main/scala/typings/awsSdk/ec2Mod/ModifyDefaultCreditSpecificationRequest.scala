@@ -25,10 +25,10 @@ object ModifyDefaultCreditSpecificationRequest {
   def apply(
     CpuCredits: String,
     InstanceFamily: UnlimitedSupportedInstanceFamily,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): ModifyDefaultCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(CpuCredits = CpuCredits.asInstanceOf[js.Any], InstanceFamily = InstanceFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDefaultCreditSpecificationRequest]
   }
 }

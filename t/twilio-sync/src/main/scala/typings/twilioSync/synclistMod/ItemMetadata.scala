@@ -10,9 +10,9 @@ trait ItemMetadata extends js.Object {
 
 object ItemMetadata {
   @scala.inline
-  def apply(ttl: Int | Double = null): ItemMetadata = {
+  def apply(ttl: js.UndefOr[Double] = js.undefined): ItemMetadata = {
     val __obj = js.Dynamic.literal()
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemMetadata]
   }
 }

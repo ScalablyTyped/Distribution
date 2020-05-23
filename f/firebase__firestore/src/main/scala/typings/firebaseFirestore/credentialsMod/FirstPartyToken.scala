@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/credentials", "FirstPartyToken")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/credentials", "FirstPartyToken")
 @js.native
 class FirstPartyToken protected () extends Token {
   def this(gapi: Gapi, sessionIndex: String) = this()
@@ -25,6 +25,6 @@ class FirstPartyToken protected () extends Token {
   /* CompleteClass */
   override var user: User = js.native
   @JSName("authHeaders")
-  def authHeaders_MFirstPartyToken(): StringDictionary[String] = js.native
+  def authHeaders_MFirstPartyToken: StringDictionary[String] = js.native
 }
 

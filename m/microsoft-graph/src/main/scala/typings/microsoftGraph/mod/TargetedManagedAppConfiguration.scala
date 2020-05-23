@@ -24,7 +24,7 @@ object TargetedManagedAppConfiguration {
     assignments: js.Array[TargetedManagedAppPolicyAssignment] = null,
     createdDateTime: String = null,
     customSettings: js.Array[KeyValuePair] = null,
-    deployedAppCount: Int | Double = null,
+    deployedAppCount: js.UndefOr[Double] = js.undefined,
     deploymentSummary: ManagedAppPolicyDeploymentSummary = null,
     description: String = null,
     displayName: String = null,
@@ -38,12 +38,12 @@ object TargetedManagedAppConfiguration {
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (customSettings != null) __obj.updateDynamic("customSettings")(customSettings.asInstanceOf[js.Any])
-    if (deployedAppCount != null) __obj.updateDynamic("deployedAppCount")(deployedAppCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(deployedAppCount)) __obj.updateDynamic("deployedAppCount")(deployedAppCount.get.asInstanceOf[js.Any])
     if (deploymentSummary != null) __obj.updateDynamic("deploymentSummary")(deploymentSummary.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAssigned)) __obj.updateDynamic("isAssigned")(isAssigned.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAssigned)) __obj.updateDynamic("isAssigned")(isAssigned.get.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetedManagedAppConfiguration]

@@ -20,10 +20,7 @@ import scala.scalajs.js.annotation._
 object ColumnSettings {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Column and cell meta data is extensible, developers can add any properties they want.
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     data: String | Double | ColumnDataGetterSetterFunction = null
   ): ColumnSettings = {
     val __obj = js.Dynamic.literal()

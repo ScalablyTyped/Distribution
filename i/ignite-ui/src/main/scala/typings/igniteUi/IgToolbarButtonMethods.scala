@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation._
 
 trait IgToolbarButtonMethods extends js.Object {
   /**
-  	 * Activate toolbar button
-  	 *
-  	 * @param event
-  	 */
+    * Activate toolbar button
+    *
+    * @param event
+    */
   def activate(event: js.Object): Unit
   /**
-  	 * Deactivate toolbar button
-  	 *
-  	 * @param event
-  	 */
+    * Deactivate toolbar button
+    *
+    * @param event
+    */
   def deactivate(event: js.Object): Unit
   /**
-  	 * Destroy the widget.
-  	 */
+    * Destroy the widget.
+    */
   def destroy(): Unit
   /**
-  	 * Toggle toolbar button
-  	 */
+    * Toggle toolbar button
+    */
   def toggle(): Unit
   /**
-  	 * Returns the element that represents this widget.
-  	 */
+    * Returns the element that represents this widget.
+    */
   def widget(): js.Object
 }
 

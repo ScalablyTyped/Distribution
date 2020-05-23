@@ -1,7 +1,7 @@
 package typings.sanitizeHtml.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.htmlparser2.mod.Options
+import typings.htmlparser2.mod.ParserOptions
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait IOptions extends js.Object {
   var disallowedTagsMode: js.UndefOr[DisallowedTagsModes] = js.undefined
   var exclusiveFilter: js.UndefOr[js.Function1[/* frame */ IFrame, Boolean]] = js.undefined
   var nonTextTags: js.UndefOr[js.Array[String]] = js.undefined
-  var parser: js.UndefOr[Options] = js.undefined
+  var parser: js.UndefOr[ParserOptions] = js.undefined
   var selfClosing: js.UndefOr[js.Array[String]] = js.undefined
   var textFilter: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
   var transformTags: js.UndefOr[StringDictionary[String | Transformer]] = js.undefined
@@ -43,14 +43,14 @@ object IOptions {
     disallowedTagsMode: DisallowedTagsModes = null,
     exclusiveFilter: /* frame */ IFrame => Boolean = null,
     nonTextTags: js.Array[String] = null,
-    parser: Options = null,
+    parser: ParserOptions = null,
     selfClosing: js.Array[String] = null,
     textFilter: /* text */ String => String = null,
     transformTags: StringDictionary[String | Transformer] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowIframeRelativeUrls)) __obj.updateDynamic("allowIframeRelativeUrls")(allowIframeRelativeUrls.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowProtocolRelative)) __obj.updateDynamic("allowProtocolRelative")(allowProtocolRelative.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowIframeRelativeUrls)) __obj.updateDynamic("allowIframeRelativeUrls")(allowIframeRelativeUrls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowProtocolRelative)) __obj.updateDynamic("allowProtocolRelative")(allowProtocolRelative.get.asInstanceOf[js.Any])
     if (allowedAttributes != null) __obj.updateDynamic("allowedAttributes")(allowedAttributes.asInstanceOf[js.Any])
     if (allowedClasses != null) __obj.updateDynamic("allowedClasses")(allowedClasses.asInstanceOf[js.Any])
     if (allowedIframeHostnames != null) __obj.updateDynamic("allowedIframeHostnames")(allowedIframeHostnames.asInstanceOf[js.Any])

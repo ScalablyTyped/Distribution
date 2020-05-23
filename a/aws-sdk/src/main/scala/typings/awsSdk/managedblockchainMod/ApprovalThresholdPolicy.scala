@@ -23,14 +23,14 @@ trait ApprovalThresholdPolicy extends js.Object {
 object ApprovalThresholdPolicy {
   @scala.inline
   def apply(
-    ProposalDurationInHours: Int | Double = null,
+    ProposalDurationInHours: js.UndefOr[ProposalDurationInt] = js.undefined,
     ThresholdComparator: ThresholdComparator = null,
-    ThresholdPercentage: Int | Double = null
+    ThresholdPercentage: js.UndefOr[ThresholdPercentageInt] = js.undefined
   ): ApprovalThresholdPolicy = {
     val __obj = js.Dynamic.literal()
-    if (ProposalDurationInHours != null) __obj.updateDynamic("ProposalDurationInHours")(ProposalDurationInHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProposalDurationInHours)) __obj.updateDynamic("ProposalDurationInHours")(ProposalDurationInHours.get.asInstanceOf[js.Any])
     if (ThresholdComparator != null) __obj.updateDynamic("ThresholdComparator")(ThresholdComparator.asInstanceOf[js.Any])
-    if (ThresholdPercentage != null) __obj.updateDynamic("ThresholdPercentage")(ThresholdPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(ThresholdPercentage)) __obj.updateDynamic("ThresholdPercentage")(ThresholdPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApprovalThresholdPolicy]
   }
 }

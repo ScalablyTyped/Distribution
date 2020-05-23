@@ -1,6 +1,5 @@
 package typings.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,26 +32,6 @@ object RowHeaderStatePriorities extends js.Object {
    // 30,
   @js.native
   sealed trait Transfer extends RowHeaderStatePriorities
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RowHeaderStatePriorities with Double] = js.native
-  /* 2 */ @js.native
-  object CellError extends TopLevel[CellError with Double]
-  
-  /* 3 */ @js.native
-  object Conflict extends TopLevel[Conflict with Double]
-  
-  /* 0 */ @js.native
-  object Dirty extends TopLevel[Dirty with Double]
-  
-  /* 5 */ @js.native
-  object NewRow extends TopLevel[NewRow with Double]
-  
-  /* 4 */ @js.native
-  object RowError extends TopLevel[RowError with Double]
-  
-  /* 1 */ @js.native
-  object Transfer extends TopLevel[Transfer with Double]
   
 }
 

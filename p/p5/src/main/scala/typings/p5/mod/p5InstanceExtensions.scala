@@ -1,6 +1,6 @@
 package typings.p5.mod
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -4011,7 +4011,7 @@ trait p5InstanceExtensions extends js.Object {
   def loadImage(
     path: String,
     successCallback: js.Function1[/* p1 */ Image, _],
-    failureCallback: js.Function1[/* p1 */ Event_, _]
+    failureCallback: js.Function1[/* p1 */ Event, _]
   ): Image = js.native
   /**
     *   Loads a JSON file from a file or a URL, and
@@ -4169,13 +4169,13 @@ trait p5InstanceExtensions extends js.Object {
     path: String,
     normalize: Boolean,
     successCallback: js.Function1[/* p1 */ Geometry, _],
-    failureCallback: js.Function1[/* p1 */ Event_, _]
+    failureCallback: js.Function1[/* p1 */ Event, _]
   ): Geometry = js.native
   def loadModel(path: String, successCallback: js.Function1[/* p1 */ Geometry, _]): Geometry = js.native
   def loadModel(
     path: String,
     successCallback: js.Function1[/* p1 */ Geometry, _],
-    failureCallback: js.Function1[/* p1 */ Event_, _]
+    failureCallback: js.Function1[/* p1 */ Event, _]
   ): Geometry = js.native
   /**
     *   Loads the pixel data for the display window into

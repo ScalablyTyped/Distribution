@@ -13,9 +13,8 @@ import scala.scalajs.js.annotation._
   * @class EventEmitter
   * @type {EventEmitter}
   */
-@JSGlobal("PIXI.utils.EventEmitter")
 @js.native
-class EventEmitter () extends js.Object {
+trait EventEmitter extends js.Object {
   /**
     * Alias method for `on`
     */

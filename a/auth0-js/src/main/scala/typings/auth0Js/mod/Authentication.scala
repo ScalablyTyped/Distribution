@@ -1,6 +1,6 @@
 package typings.auth0Js.mod
 
-import typings.auth0Js.AnonCountryCode
+import typings.auth0Js.anon.CountryCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +48,7 @@ class Authentication protected () extends js.Object {
     * Fetches the user country based on the ip.
     *
     */
-  def getUserCountry(callback: Auth0Callback[AnonCountryCode, Auth0Error]): Unit = js.native
+  def getUserCountry(callback: Auth0Callback[CountryCode, Auth0Error]): Unit = js.native
   /**
     * Makes a call to the `oauth/token` endpoint with `password-realm` grant type
     */

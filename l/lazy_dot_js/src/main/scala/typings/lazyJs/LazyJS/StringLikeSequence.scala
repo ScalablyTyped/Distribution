@@ -33,7 +33,5 @@ trait StringLikeSequence extends SequenceBaser[String] {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @JSGlobal("LazyJS.StringLikeSequence")
 @js.native
-object StringLikeSequence extends js.Object {
-  def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
-}
+object StringLikeSequence extends js.Object
 

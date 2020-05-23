@@ -36,9 +36,9 @@ object ValidationOptions {
     message: String | (js.Function1[/* validationArguments */ ValidationArguments, String]) = null
   ): ValidationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(always)) __obj.updateDynamic("always")(always.asInstanceOf[js.Any])
+    if (!js.isUndefined(always)) __obj.updateDynamic("always")(always.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(each)) __obj.updateDynamic("each")(each.asInstanceOf[js.Any])
+    if (!js.isUndefined(each)) __obj.updateDynamic("each")(each.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptions]

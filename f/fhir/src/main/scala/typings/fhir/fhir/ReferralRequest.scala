@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A request for referral or transfer of care
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ReferralRequest extends DomainResource {
   /**
     * Contains extended information for property 'authoredOn'.

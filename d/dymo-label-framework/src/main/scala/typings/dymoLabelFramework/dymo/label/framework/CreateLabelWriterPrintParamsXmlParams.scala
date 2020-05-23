@@ -20,14 +20,14 @@ trait CreateLabelWriterPrintParamsXmlParams extends js.Object {
 object CreateLabelWriterPrintParamsXmlParams {
   @scala.inline
   def apply(
-    copies: Int | Double = null,
+    copies: js.UndefOr[Double] = js.undefined,
     flowDirection: FlowDirection = null,
     jobTitle: String = null,
     printQuality: LabelWriterPrintQuality = null,
     twinTurboRoll: TwinTurboRoll = null
   ): CreateLabelWriterPrintParamsXmlParams = {
     val __obj = js.Dynamic.literal()
-    if (copies != null) __obj.updateDynamic("copies")(copies.asInstanceOf[js.Any])
+    if (!js.isUndefined(copies)) __obj.updateDynamic("copies")(copies.get.asInstanceOf[js.Any])
     if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection.asInstanceOf[js.Any])
     if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle.asInstanceOf[js.Any])
     if (printQuality != null) __obj.updateDynamic("printQuality")(printQuality.asInstanceOf[js.Any])

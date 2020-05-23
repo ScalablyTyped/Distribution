@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -93,8 +92,4 @@ trait HTMLAnchorElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("HTMLAnchorElement")
-@js.native
-object HTMLAnchorElement extends Instantiable0[HTMLAnchorElement]
 

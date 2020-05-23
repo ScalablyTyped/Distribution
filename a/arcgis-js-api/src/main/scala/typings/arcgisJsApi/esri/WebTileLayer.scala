@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`open-street-map`
 import typings.arcgisJsApi.arcgisJsApiStrings.`web-tile`
 import typings.std.HTMLImageElement
@@ -86,8 +85,4 @@ trait WebTileLayer
     */
   def getTileUrl(level: Double, row: Double, column: Double): String = js.native
 }
-
-@JSGlobal("__esri.WebTileLayer")
-@js.native
-object WebTileLayer extends TopLevel[WebTileLayerConstructor]
 

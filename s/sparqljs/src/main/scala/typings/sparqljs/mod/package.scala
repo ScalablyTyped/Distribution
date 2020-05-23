@@ -15,7 +15,7 @@ package object mod {
     - typings.sparqljs.mod.Term
   */
   type Expression = typings.sparqljs.mod._Expression | typings.sparqljs.mod.Term
-  type Term = java.lang.String with typings.sparqljs.AnonTermBrand
+  type Term = java.lang.String with typings.sparqljs.anon.TermBrand
   type ValuePatternRow = org.scalablytyped.runtime.StringDictionary[typings.sparqljs.mod.Term]
   type Variable = typings.sparqljs.mod.VariableExpression | typings.sparqljs.mod.Term
 }

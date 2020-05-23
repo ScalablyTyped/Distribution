@@ -28,7 +28,7 @@ object PendingModifiedRelationalDatabaseValues {
     masterUserPassword: String = null
   ): PendingModifiedRelationalDatabaseValues = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backupRetentionEnabled)) __obj.updateDynamic("backupRetentionEnabled")(backupRetentionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(backupRetentionEnabled)) __obj.updateDynamic("backupRetentionEnabled")(backupRetentionEnabled.get.asInstanceOf[js.Any])
     if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
     if (masterUserPassword != null) __obj.updateDynamic("masterUserPassword")(masterUserPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingModifiedRelationalDatabaseValues]

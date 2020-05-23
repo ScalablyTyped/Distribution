@@ -69,7 +69,7 @@ object Options {
     language: String = null,
     libraries: js.Array[String] = null,
     region: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     v: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -80,7 +80,7 @@ object Options {
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (libraries != null) __obj.updateDynamic("libraries")(libraries.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

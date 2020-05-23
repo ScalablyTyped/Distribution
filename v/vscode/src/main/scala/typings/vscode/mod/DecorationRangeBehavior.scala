@@ -12,26 +12,26 @@ sealed trait DecorationRangeBehavior extends js.Object
 @js.native
 object DecorationRangeBehavior extends js.Object {
   /**
-  		 * The decoration's range will not widen when edits occur at the start of end.
-  		 */
+    * The decoration's range will not widen when edits occur at the start of end.
+    */
   @js.native
   sealed trait ClosedClosed extends DecorationRangeBehavior
   
   /**
-  		 * The decoration's range will widen when edits occur at the end, but not at the start.
-  		 */
+    * The decoration's range will widen when edits occur at the end, but not at the start.
+    */
   @js.native
   sealed trait ClosedOpen extends DecorationRangeBehavior
   
   /**
-  		 * The decoration's range will widen when edits occur at the start, but not at the end.
-  		 */
+    * The decoration's range will widen when edits occur at the start, but not at the end.
+    */
   @js.native
   sealed trait OpenClosed extends DecorationRangeBehavior
   
   /**
-  		 * The decoration's range will widen when edits occur at the start or end.
-  		 */
+    * The decoration's range will widen when edits occur at the start or end.
+    */
   @js.native
   sealed trait OpenOpen extends DecorationRangeBehavior
   

@@ -20,10 +20,13 @@ trait IterativeCalculationSettings extends js.Object {
 
 object IterativeCalculationSettings {
   @scala.inline
-  def apply(convergenceThreshold: Int | Double = null, maxIterations: Int | Double = null): IterativeCalculationSettings = {
+  def apply(
+    convergenceThreshold: js.UndefOr[Double] = js.undefined,
+    maxIterations: js.UndefOr[Double] = js.undefined
+  ): IterativeCalculationSettings = {
     val __obj = js.Dynamic.literal()
-    if (convergenceThreshold != null) __obj.updateDynamic("convergenceThreshold")(convergenceThreshold.asInstanceOf[js.Any])
-    if (maxIterations != null) __obj.updateDynamic("maxIterations")(maxIterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(convergenceThreshold)) __obj.updateDynamic("convergenceThreshold")(convergenceThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIterations)) __obj.updateDynamic("maxIterations")(maxIterations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterativeCalculationSettings]
   }
 }

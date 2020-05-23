@@ -60,23 +60,23 @@ trait Options[P, C] extends js.Object {
 object Options {
   @scala.inline
   def apply[P, C](
-    extent: Int | Double = null,
+    extent: js.UndefOr[Double] = js.undefined,
     log: js.UndefOr[Boolean] = js.undefined,
     map: /* props */ P => C = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
-    nodeSize: Int | Double = null,
-    radius: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
+    nodeSize: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined,
     reduce: (/* accumulated */ C, /* props */ C) => Unit = null
   ): Options[P, C] = {
     val __obj = js.Dynamic.literal()
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (!js.isUndefined(extent)) __obj.updateDynamic("extent")(extent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (nodeSize != null) __obj.updateDynamic("nodeSize")(nodeSize.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeSize)) __obj.updateDynamic("nodeSize")(nodeSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (reduce != null) __obj.updateDynamic("reduce")(js.Any.fromFunction2(reduce))
     __obj.asInstanceOf[Options[P, C]]
   }

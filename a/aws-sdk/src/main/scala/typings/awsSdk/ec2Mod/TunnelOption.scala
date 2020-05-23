@@ -75,39 +75,39 @@ trait TunnelOption extends js.Object {
 object TunnelOption {
   @scala.inline
   def apply(
-    DpdTimeoutSeconds: Int | scala.Double = null,
+    DpdTimeoutSeconds: js.UndefOr[Integer] = js.undefined,
     IkeVersions: IKEVersionsList = null,
     OutsideIpAddress: String = null,
     Phase1DHGroupNumbers: Phase1DHGroupNumbersList = null,
     Phase1EncryptionAlgorithms: Phase1EncryptionAlgorithmsList = null,
     Phase1IntegrityAlgorithms: Phase1IntegrityAlgorithmsList = null,
-    Phase1LifetimeSeconds: Int | scala.Double = null,
+    Phase1LifetimeSeconds: js.UndefOr[Integer] = js.undefined,
     Phase2DHGroupNumbers: Phase2DHGroupNumbersList = null,
     Phase2EncryptionAlgorithms: Phase2EncryptionAlgorithmsList = null,
     Phase2IntegrityAlgorithms: Phase2IntegrityAlgorithmsList = null,
-    Phase2LifetimeSeconds: Int | scala.Double = null,
+    Phase2LifetimeSeconds: js.UndefOr[Integer] = js.undefined,
     PreSharedKey: String = null,
-    RekeyFuzzPercentage: Int | scala.Double = null,
-    RekeyMarginTimeSeconds: Int | scala.Double = null,
-    ReplayWindowSize: Int | scala.Double = null,
+    RekeyFuzzPercentage: js.UndefOr[Integer] = js.undefined,
+    RekeyMarginTimeSeconds: js.UndefOr[Integer] = js.undefined,
+    ReplayWindowSize: js.UndefOr[Integer] = js.undefined,
     TunnelInsideCidr: String = null
   ): TunnelOption = {
     val __obj = js.Dynamic.literal()
-    if (DpdTimeoutSeconds != null) __obj.updateDynamic("DpdTimeoutSeconds")(DpdTimeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DpdTimeoutSeconds)) __obj.updateDynamic("DpdTimeoutSeconds")(DpdTimeoutSeconds.get.asInstanceOf[js.Any])
     if (IkeVersions != null) __obj.updateDynamic("IkeVersions")(IkeVersions.asInstanceOf[js.Any])
     if (OutsideIpAddress != null) __obj.updateDynamic("OutsideIpAddress")(OutsideIpAddress.asInstanceOf[js.Any])
     if (Phase1DHGroupNumbers != null) __obj.updateDynamic("Phase1DHGroupNumbers")(Phase1DHGroupNumbers.asInstanceOf[js.Any])
     if (Phase1EncryptionAlgorithms != null) __obj.updateDynamic("Phase1EncryptionAlgorithms")(Phase1EncryptionAlgorithms.asInstanceOf[js.Any])
     if (Phase1IntegrityAlgorithms != null) __obj.updateDynamic("Phase1IntegrityAlgorithms")(Phase1IntegrityAlgorithms.asInstanceOf[js.Any])
-    if (Phase1LifetimeSeconds != null) __obj.updateDynamic("Phase1LifetimeSeconds")(Phase1LifetimeSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(Phase1LifetimeSeconds)) __obj.updateDynamic("Phase1LifetimeSeconds")(Phase1LifetimeSeconds.get.asInstanceOf[js.Any])
     if (Phase2DHGroupNumbers != null) __obj.updateDynamic("Phase2DHGroupNumbers")(Phase2DHGroupNumbers.asInstanceOf[js.Any])
     if (Phase2EncryptionAlgorithms != null) __obj.updateDynamic("Phase2EncryptionAlgorithms")(Phase2EncryptionAlgorithms.asInstanceOf[js.Any])
     if (Phase2IntegrityAlgorithms != null) __obj.updateDynamic("Phase2IntegrityAlgorithms")(Phase2IntegrityAlgorithms.asInstanceOf[js.Any])
-    if (Phase2LifetimeSeconds != null) __obj.updateDynamic("Phase2LifetimeSeconds")(Phase2LifetimeSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(Phase2LifetimeSeconds)) __obj.updateDynamic("Phase2LifetimeSeconds")(Phase2LifetimeSeconds.get.asInstanceOf[js.Any])
     if (PreSharedKey != null) __obj.updateDynamic("PreSharedKey")(PreSharedKey.asInstanceOf[js.Any])
-    if (RekeyFuzzPercentage != null) __obj.updateDynamic("RekeyFuzzPercentage")(RekeyFuzzPercentage.asInstanceOf[js.Any])
-    if (RekeyMarginTimeSeconds != null) __obj.updateDynamic("RekeyMarginTimeSeconds")(RekeyMarginTimeSeconds.asInstanceOf[js.Any])
-    if (ReplayWindowSize != null) __obj.updateDynamic("ReplayWindowSize")(ReplayWindowSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(RekeyFuzzPercentage)) __obj.updateDynamic("RekeyFuzzPercentage")(RekeyFuzzPercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RekeyMarginTimeSeconds)) __obj.updateDynamic("RekeyMarginTimeSeconds")(RekeyMarginTimeSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReplayWindowSize)) __obj.updateDynamic("ReplayWindowSize")(ReplayWindowSize.get.asInstanceOf[js.Any])
     if (TunnelInsideCidr != null) __obj.updateDynamic("TunnelInsideCidr")(TunnelInsideCidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[TunnelOption]
   }

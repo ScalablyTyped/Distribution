@@ -47,17 +47,17 @@ object IToasterProps {
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     canEscapeKeyClear: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
-    maxToasts: Int | Double = null,
+    maxToasts: js.UndefOr[Double] = js.undefined,
     position: ToasterPosition = null,
     usePortal: js.UndefOr[Boolean] = js.undefined
   ): IToasterProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(canEscapeKeyClear)) __obj.updateDynamic("canEscapeKeyClear")(canEscapeKeyClear.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canEscapeKeyClear)) __obj.updateDynamic("canEscapeKeyClear")(canEscapeKeyClear.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (maxToasts != null) __obj.updateDynamic("maxToasts")(maxToasts.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxToasts)) __obj.updateDynamic("maxToasts")(maxToasts.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToasterProps]
   }
 }

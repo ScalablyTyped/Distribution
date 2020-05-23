@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`global-id`
 import typings.arcgisJsApi.arcgisJsApiStrings.`small-integer`
 import typings.arcgisJsApi.arcgisJsApiStrings.blob
@@ -39,8 +38,4 @@ trait SearchLayerField extends Accessor {
     */
   var `type`: `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml = js.native
 }
-
-@JSGlobal("__esri.SearchLayerField")
-@js.native
-object SearchLayerField extends TopLevel[SearchLayerFieldConstructor]
 

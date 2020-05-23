@@ -25,16 +25,16 @@ class Find_ protected () extends Task_ {
     */
   def dynamicLayers(dynamicLayers: js.Any): this.type = js.native
   /**
-    * 	An array or comma-separated list of field names to search. If not specified, all fields are searched.
+    *     An array or comma-separated list of field names to search. If not specified, all fields are searched.
     */
   def fields(fields: String): this.type = js.native
   def fields(fields: js.Array[String]): this.type = js.native
   /**
-    * 	Add a layer definition to the find task.
+    *     Add a layer definition to the find task.
     */
   def layerDef(id: Double, where: String): this.type = js.native
   /**
-    * 	Layers to perform find task on. Accepts an array of layer IDs or comma-separated list.
+    *     Layers to perform find task on. Accepts an array of layer IDs or comma-separated list.
     */
   def layers(layers: String): this.type = js.native
   def layers(layers: js.Array[String]): this.type = js.native
@@ -73,7 +73,7 @@ class Find_ protected () extends Task_ {
     */
   def simplify(map: Map_, factor: Double): this.type = js.native
   /**
-    * 	The well known ID (ex. 4326) for the results.
+    *     The well known ID (ex. 4326) for the results.
     */
   def spatialReference(sr: Double): this.type = js.native
   /**

@@ -20,10 +20,10 @@ object ClearCacheOption {
     localStorage: js.UndefOr[Boolean] = js.undefined
   ): ClearCacheOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appcache)) __obj.updateDynamic("appcache")(appcache.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
-    if (!js.isUndefined(localStorage)) __obj.updateDynamic("localStorage")(localStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(appcache)) __obj.updateDynamic("appcache")(appcache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(localStorage)) __obj.updateDynamic("localStorage")(localStorage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearCacheOption]
   }
 }

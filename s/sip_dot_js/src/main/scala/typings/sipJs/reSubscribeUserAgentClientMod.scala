@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/core/user-agents/re-subscribe-user-agent-client", JSImport.Namespace)
 @js.native
 object reSubscribeUserAgentClientMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sipJs.outgoingRequestMod.OutgoingRequest because Already inherited
   - typings.sipJs.subscribeMod.OutgoingSubscribeRequest because var conflicts: delegate, message. Inlined waitNotifyStop */ @js.native
   class ReSubscribeUserAgentClient protected () extends UserAgentClient {

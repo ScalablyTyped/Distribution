@@ -10,9 +10,9 @@ trait ScrollConfig extends js.Object {
 
 object ScrollConfig {
   @scala.inline
-  def apply(throttle: Int | Double = null): ScrollConfig = {
+  def apply(throttle: js.UndefOr[Double] = js.undefined): ScrollConfig = {
     val __obj = js.Dynamic.literal()
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttle)) __obj.updateDynamic("throttle")(throttle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollConfig]
   }
 }

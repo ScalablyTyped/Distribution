@@ -14,10 +14,10 @@ object ButtonGroupSelectEvent {
     isDefaultPrevented: () => Boolean,
     preventDefault: js.Function,
     sender: ButtonGroup,
-    index: Int | Double = null
+    index: js.UndefOr[Double] = js.undefined
   ): ButtonGroupSelectEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonGroupSelectEvent]
   }
 }

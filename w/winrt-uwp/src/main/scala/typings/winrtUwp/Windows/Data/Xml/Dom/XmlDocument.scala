@@ -1,8 +1,6 @@
 package typings.winrtUwp.Windows.Data.Xml.Dom
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
@@ -10,10 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the top level of the XML source. This class includes members for retrieving and creating all other XML objects. */
-@JSGlobal("Windows.Data.Xml.Dom.XmlDocument")
 @js.native
-/** Creates a new instance of the XmlDocument class. */
-class XmlDocument () extends js.Object {
+trait XmlDocument extends js.Object {
   /** Gets the list of attributes of this node. */
   var attributes: XmlNamedNodeMap = js.native
   /** Gets a list of children in the current node. */
@@ -231,37 +227,5 @@ class XmlDocument () extends js.Object {
     * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
     */
   def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Data.Xml.Dom.XmlDocument")
-@js.native
-object XmlDocument extends js.Object {
-  /**
-    * Asynchronously loads an XML document from the specified file. The document is parsed using the default parser settings.
-    * @param file The file from which to load the document.
-    * @return The object that must be used to start the operation.
-    */
-  def loadFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[XmlDocument] = js.native
-  /**
-    * Asynchronously loads an XML document from the specified file. The document is parsed using the provided settings.
-    * @param file The file from which to load the document.
-    * @param loadSettings Settings for customizing parser behavior.
-    * @return The object that must be used to start the operation.
-    */
-  def loadFromFileAsync(file: IStorageFile, loadSettings: XmlLoadSettings): IPromiseWithIAsyncOperation[XmlDocument] = js.native
-  /**
-    * Asynchronously loads an XML document from the specified location. The document is parsed using the default parser settings.
-    * @param uri A URL that specifies the location of the XML file.
-    * @return The object that must be used to start the operation.
-    */
-  def loadFromUriAsync(uri: Uri): IPromiseWithIAsyncOperation[XmlDocument] = js.native
-  /**
-    * Asynchronously loads an XML document from the specified location. The document is parsed using the provided settings.
-    * @param uri A URL that specifies the location of the XML file.
-    * @param loadSettings Customizes parser behavior.
-    * @return An object that must be used to start the operation.
-    */
-  def loadFromUriAsync(uri: Uri, loadSettings: XmlLoadSettings): IPromiseWithIAsyncOperation[XmlDocument] = js.native
 }
 

@@ -12,9 +12,8 @@ trait CompilePipeSummary extends CompileTypeSummary {
 object CompilePipeSummary {
   @scala.inline
   def apply(name: String, pure: Boolean, `type`: CompileTypeMetadata, summaryKind: CompileSummaryKind = null): CompilePipeSummary = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any], summaryKind = summaryKind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (summaryKind != null) __obj.updateDynamic("summaryKind")(summaryKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilePipeSummary]
   }
 }

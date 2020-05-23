@@ -1,7 +1,6 @@
 package typings.typedoc
 
 import typings.typedoc.abstractMod.Reflection
-import typings.typedoc.typedocStrings.reference
 import typings.typedoc.typesAbstractMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,8 +17,6 @@ object modelsTypesReferenceMod extends js.Object {
     var reflection: js.UndefOr[Reflection] = js.native
     var symbolFullyQualifiedName: String = js.native
     var typeArguments: js.UndefOr[js.Array[Type]] = js.native
-    @JSName("type")
-    val type_ReferenceType: reference = js.native
     def equals(other: ReferenceType): Boolean = js.native
   }
   

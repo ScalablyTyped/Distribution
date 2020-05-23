@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesMap
 
-import typings.echarts.AnonAreaColorAnonBorderType
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonItemStyleAnonAreaColor
-import typings.echarts.AnonRotate
+import typings.echarts.anon.AreaColorBorderType
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.ItemStyleAreaColor
+import typings.echarts.anon.Rotate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,14 +12,14 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonAreaColor] = js.undefined
+  var emphasis: js.UndefOr[ItemStyleAreaColor] = js.undefined
   /**
     * Style of item polygon
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-map.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonAreaColorAnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AreaColorBorderType] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -31,7 +31,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.data.label
     */
-  var label: js.UndefOr[AnonRotate] = js.undefined
+  var label: js.UndefOr[Rotate] = js.undefined
   /**
     * The name of the map area where the data belongs to, such
     * as `'China'` or `'United Kingdom'` .
@@ -53,7 +53,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * The numerical value of this area.
     *
@@ -66,22 +66,22 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleAnonAreaColor = null,
-    itemStyle: AnonAreaColorAnonBorderType = null,
-    label: AnonRotate = null,
+    emphasis: ItemStyleAreaColor = null,
+    itemStyle: AreaColorBorderType = null,
+    label: Rotate = null,
     name: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonExtraCssText = null,
-    value: Int | Double = null
+    tooltip: ExtraCssText = null,
+    value: js.UndefOr[Double] = js.undefined
   ): DataObject = {
     val __obj = js.Dynamic.literal()
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

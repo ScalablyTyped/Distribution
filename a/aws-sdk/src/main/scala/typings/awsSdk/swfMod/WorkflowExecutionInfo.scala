@@ -51,14 +51,14 @@ object WorkflowExecutionInfo {
     executionStatus: ExecutionStatus,
     startTimestamp: Timestamp,
     workflowType: WorkflowType,
-    cancelRequested: js.UndefOr[Boolean] = js.undefined,
+    cancelRequested: js.UndefOr[Canceled] = js.undefined,
     closeStatus: CloseStatus = null,
     closeTimestamp: Timestamp = null,
     parent: WorkflowExecution = null,
     tagList: TagList = null
   ): WorkflowExecutionInfo = {
     val __obj = js.Dynamic.literal(execution = execution.asInstanceOf[js.Any], executionStatus = executionStatus.asInstanceOf[js.Any], startTimestamp = startTimestamp.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelRequested)) __obj.updateDynamic("cancelRequested")(cancelRequested.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelRequested)) __obj.updateDynamic("cancelRequested")(cancelRequested.get.asInstanceOf[js.Any])
     if (closeStatus != null) __obj.updateDynamic("closeStatus")(closeStatus.asInstanceOf[js.Any])
     if (closeTimestamp != null) __obj.updateDynamic("closeTimestamp")(closeTimestamp.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])

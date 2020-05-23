@@ -1,6 +1,5 @@
 package typings.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,14 +24,6 @@ object FilterType extends js.Object {
     */
   @js.native
   sealed trait OnlyVisible extends FilterType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FilterType with Double] = js.native
-  /* 0 */ @js.native
-  object All extends TopLevel[All with Double]
-  
-  /* 1 */ @js.native
-  object OnlyVisible extends TopLevel[OnlyVisible with Double]
   
 }
 

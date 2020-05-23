@@ -4,21 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.UtilityLayerRenderer")
 @js.native
-class UtilityLayerRenderer protected () extends IDisposable {
-  /**
-    * Instantiates a UtilityLayerRenderer
-    * @param originalScene the original scene that will be rendered on top of
-    * @param handleEvents boolean indicating if the utility layer should handle events
-    */
-  def this(/** the original scene that will be rendered on top of */
-  originalScene: Scene) = this()
-  def this(
-    /** the original scene that will be rendered on top of */
-  originalScene: Scene,
-    handleEvents: Boolean
-  ) = this()
+trait UtilityLayerRenderer extends IDisposable {
   var _afterRenderObserver: js.Any = js.native
   var _lastPointerEvents: js.Any = js.native
   var _notifyObservers: js.Any = js.native
@@ -60,11 +47,6 @@ class UtilityLayerRenderer protected () extends IDisposable {
     */
   def _getSharedGizmoLight(): HemisphericLight = js.native
   /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  /**
     * Gets the camera that is used to render the utility layer (when not set, this will be the last active camera)
     * @param getRigParentIfPossible if the current active camera is a rig camera, should its parent camera be returned
     * @returns the camera that is used when rendering the utility layer
@@ -82,21 +64,5 @@ class UtilityLayerRenderer protected () extends IDisposable {
     * @param cam the camera that should be used when rendering the utility layer
     */
   def setRenderCamera(cam: Nullable[Camera]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.UtilityLayerRenderer")
-@js.native
-object UtilityLayerRenderer extends js.Object {
-  var _DefaultKeepDepthUtilityLayer: js.Any = js.native
-  var _DefaultUtilityLayer: js.Any = js.native
-  /**
-    * A shared utility layer that can be used to embed objects into a scene (Depth map of the previous scene is not cleared before drawing on top of it)
-    */
-  def DefaultKeepDepthUtilityLayer: UtilityLayerRenderer = js.native
-  /**
-    * A shared utility layer that can be used to overlay objects into a scene (Depth map of the previous scene is cleared before drawing on top of it)
-    */
-  def DefaultUtilityLayer: UtilityLayerRenderer = js.native
 }
 

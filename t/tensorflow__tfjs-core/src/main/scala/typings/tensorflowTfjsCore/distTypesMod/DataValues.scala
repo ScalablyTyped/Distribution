@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flatMap
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.subarray
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.toString
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valueOf
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findIndex
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.indexOf
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.splice

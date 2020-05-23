@@ -20,7 +20,7 @@ object createFunctionDeclaration extends js.Object {
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
     asteriskToken: js.UndefOr[AsteriskToken],
-    name: js.UndefOr[String | Identifier],
+    name: js.UndefOr[Identifier | String],
     typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
     parameters: js.Array[ParameterDeclaration]
   ): FunctionDeclaration = js.native
@@ -28,7 +28,7 @@ object createFunctionDeclaration extends js.Object {
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
     asteriskToken: js.UndefOr[AsteriskToken],
-    name: js.UndefOr[String | Identifier],
+    name: js.UndefOr[Identifier | String],
     typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
@@ -37,7 +37,7 @@ object createFunctionDeclaration extends js.Object {
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
     asteriskToken: js.UndefOr[AsteriskToken],
-    name: js.UndefOr[String | Identifier],
+    name: js.UndefOr[Identifier | String],
     typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,

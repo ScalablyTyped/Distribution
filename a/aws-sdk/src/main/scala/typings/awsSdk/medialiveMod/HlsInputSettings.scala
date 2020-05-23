@@ -27,16 +27,16 @@ trait HlsInputSettings extends js.Object {
 object HlsInputSettings {
   @scala.inline
   def apply(
-    Bandwidth: Int | Double = null,
-    BufferSegments: Int | Double = null,
-    Retries: Int | Double = null,
-    RetryInterval: Int | Double = null
+    Bandwidth: js.UndefOr[integerMin0] = js.undefined,
+    BufferSegments: js.UndefOr[integerMin0] = js.undefined,
+    Retries: js.UndefOr[integerMin0] = js.undefined,
+    RetryInterval: js.UndefOr[integerMin0] = js.undefined
   ): HlsInputSettings = {
     val __obj = js.Dynamic.literal()
-    if (Bandwidth != null) __obj.updateDynamic("Bandwidth")(Bandwidth.asInstanceOf[js.Any])
-    if (BufferSegments != null) __obj.updateDynamic("BufferSegments")(BufferSegments.asInstanceOf[js.Any])
-    if (Retries != null) __obj.updateDynamic("Retries")(Retries.asInstanceOf[js.Any])
-    if (RetryInterval != null) __obj.updateDynamic("RetryInterval")(RetryInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bandwidth)) __obj.updateDynamic("Bandwidth")(Bandwidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BufferSegments)) __obj.updateDynamic("BufferSegments")(BufferSegments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Retries)) __obj.updateDynamic("Retries")(Retries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetryInterval)) __obj.updateDynamic("RetryInterval")(RetryInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsInputSettings]
   }
 }

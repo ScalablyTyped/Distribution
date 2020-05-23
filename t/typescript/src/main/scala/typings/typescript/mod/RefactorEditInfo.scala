@@ -21,12 +21,12 @@ object RefactorEditInfo {
     edits: js.Array[FileTextChanges],
     commands: js.Array[CodeActionCommand] = null,
     renameFilename: java.lang.String = null,
-    renameLocation: Int | Double = null
+    renameLocation: js.UndefOr[Double] = js.undefined
   ): RefactorEditInfo = {
     val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any])
     if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     if (renameFilename != null) __obj.updateDynamic("renameFilename")(renameFilename.asInstanceOf[js.Any])
-    if (renameLocation != null) __obj.updateDynamic("renameLocation")(renameLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(renameLocation)) __obj.updateDynamic("renameLocation")(renameLocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefactorEditInfo]
   }
 }

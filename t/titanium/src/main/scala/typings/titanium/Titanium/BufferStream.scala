@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Wrapper around <Titanium.Buffer> that implements the <Titanium.IOStream> interface.
-	 */
-@JSGlobal("Titanium.BufferStream")
+  * Wrapper around <Titanium.Buffer> that implements the <Titanium.IOStream> interface.
+  */
 @js.native
-class BufferStream () extends IOStream
+trait BufferStream extends IOStream
 

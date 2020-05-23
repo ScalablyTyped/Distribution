@@ -1,7 +1,9 @@
 package typings.storybookUi
 
 import typings.react.mod.ComponentProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
+import typings.storybookUi.anon.Focussed
+import typings.storybookUi.anon.OnChange
 import typings.storybookUi.storybookUiStrings.button
 import typings.storybookUi.storybookUiStrings.form
 import typings.storybookUi.storybookUiStrings.input
@@ -16,7 +18,7 @@ object sidebarSearchMod extends js.Object {
   def default(hasClassNameOnChangeProps: PureSidebarSearchProps): Element = js.native
   type CancelButtonProps = ComponentProps[button]
   type FilterFieldProps = ComponentProps[input]
-  type FilterFormProps = ComponentProps[form] with AnonFocussed
-  type PureSidebarSearchProps = FilterFieldProps with AnonOnChange
+  type FilterFormProps = ComponentProps[form] with Focussed
+  type PureSidebarSearchProps = FilterFieldProps with OnChange
 }
 

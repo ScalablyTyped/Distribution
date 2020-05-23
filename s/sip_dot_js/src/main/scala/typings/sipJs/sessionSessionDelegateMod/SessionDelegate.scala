@@ -1,9 +1,10 @@
 package typings.sipJs.sessionSessionDelegateMod
 
 import typings.sipJs.ackMod.IncomingAckRequest
-import typings.sipJs.byeMod.IncomingByeRequest
 import typings.sipJs.inviteMod.IncomingInviteRequest
+import typings.sipJs.methodsByeMod.IncomingByeRequest
 import typings.sipJs.methodsInfoMod.IncomingInfoRequest
+import typings.sipJs.methodsMessageMod.IncomingMessageRequest
 import typings.sipJs.notifyMod.IncomingNotifyRequest
 import typings.sipJs.prackMod.IncomingPrackRequest
 import typings.sipJs.referMod.IncomingReferRequest
@@ -41,6 +42,12 @@ trait SessionDelegate extends js.Object {
     */
   var onInvite: js.UndefOr[js.Function1[/* request */ IncomingInviteRequest, Unit]] = js.undefined
   /**
+    * Receive MESSAGE request.
+    * https://tools.ietf.org/html/rfc3428#section-7
+    * @param request - Incoming MESSAGE request.
+    */
+  var onMessage: js.UndefOr[js.Function1[/* request */ IncomingMessageRequest, Unit]] = js.undefined
+  /**
     * Receive NOTIFY request.
     * https://tools.ietf.org/html/rfc6665#section-4.1.3
     * @param request - Incoming NOTIFY request.
@@ -68,6 +75,7 @@ object SessionDelegate {
     onBye: /* request */ IncomingByeRequest => Unit = null,
     onInfo: /* request */ IncomingInfoRequest => Unit = null,
     onInvite: /* request */ IncomingInviteRequest => Unit = null,
+    onMessage: /* request */ IncomingMessageRequest => Unit = null,
     onNotify: /* request */ IncomingNotifyRequest => Unit = null,
     onPrack: /* request */ IncomingPrackRequest => Unit = null,
     onRefer: /* request */ IncomingReferRequest => Unit = null
@@ -78,6 +86,7 @@ object SessionDelegate {
     if (onBye != null) __obj.updateDynamic("onBye")(js.Any.fromFunction1(onBye))
     if (onInfo != null) __obj.updateDynamic("onInfo")(js.Any.fromFunction1(onInfo))
     if (onInvite != null) __obj.updateDynamic("onInvite")(js.Any.fromFunction1(onInvite))
+    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
     if (onNotify != null) __obj.updateDynamic("onNotify")(js.Any.fromFunction1(onNotify))
     if (onPrack != null) __obj.updateDynamic("onPrack")(js.Any.fromFunction1(onPrack))
     if (onRefer != null) __obj.updateDynamic("onRefer")(js.Any.fromFunction1(onRefer))

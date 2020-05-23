@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait dxSankeyNode extends js.Object {
   /** @name dxSankeyNode.label */
-  var label: String
+  var label: js.UndefOr[String] = js.undefined
   /** @name dxSankeyNode.linksIn */
-  var linksIn: js.Array[_]
+  var linksIn: js.UndefOr[js.Array[_]] = js.undefined
   /** @name dxSankeyNode.linksOut */
-  var linksOut: js.Array[_]
+  var linksOut: js.UndefOr[js.Array[_]] = js.undefined
   /** @deprecated */
   /** @name dxSankeyNode.title */
-  var title: String
+  var title: js.UndefOr[String] = js.undefined
   /** @name dxSankeyNode.hideTooltip() */
   def hideTooltip(): Unit
   /** @name dxSankeyNode.hover(state) */
@@ -30,13 +30,17 @@ object dxSankeyNode {
     hideTooltip: () => Unit,
     hover: Boolean => Unit,
     isHovered: () => Boolean,
-    label: String,
-    linksIn: js.Array[_],
-    linksOut: js.Array[_],
     showTooltip: () => Unit,
-    title: String
+    label: String = null,
+    linksIn: js.Array[_] = null,
+    linksOut: js.Array[_] = null,
+    title: String = null
   ): dxSankeyNode = {
-    val __obj = js.Dynamic.literal(hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction1(hover), isHovered = js.Any.fromFunction0(isHovered), label = label.asInstanceOf[js.Any], linksIn = linksIn.asInstanceOf[js.Any], linksOut = linksOut.asInstanceOf[js.Any], showTooltip = js.Any.fromFunction0(showTooltip), title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction1(hover), isHovered = js.Any.fromFunction0(isHovered), showTooltip = js.Any.fromFunction0(showTooltip))
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (linksIn != null) __obj.updateDynamic("linksIn")(linksIn.asInstanceOf[js.Any])
+    if (linksOut != null) __obj.updateDynamic("linksOut")(linksOut.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxSankeyNode]
   }
 }

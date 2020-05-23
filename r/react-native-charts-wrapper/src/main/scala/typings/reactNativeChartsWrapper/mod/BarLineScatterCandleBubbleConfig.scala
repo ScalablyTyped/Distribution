@@ -10,9 +10,9 @@ trait BarLineScatterCandleBubbleConfig extends js.Object {
 
 object BarLineScatterCandleBubbleConfig {
   @scala.inline
-  def apply(highlightColor: Int | Double = null): BarLineScatterCandleBubbleConfig = {
+  def apply(highlightColor: js.UndefOr[Color] = js.undefined): BarLineScatterCandleBubbleConfig = {
     val __obj = js.Dynamic.literal()
-    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightColor)) __obj.updateDynamic("highlightColor")(highlightColor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarLineScatterCandleBubbleConfig]
   }
 }

@@ -11,8 +11,8 @@ trait ButtonProps[T /* <: HTMLElement */]
   extends AllHTMLAttributes[T]
      with ClassAttributes[T] {
   /**
-  	 * The HTML tag for this element. Default: 'span'.
-  	 */
+    * The HTML tag for this element. Default: 'span'.
+    */
   var tag: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
   ] = js.undefined
@@ -20,7 +20,7 @@ trait ButtonProps[T /* <: HTMLElement */]
 
 object ButtonProps {
   @scala.inline
-  def apply[T /* <: HTMLElement */](
+  def apply[T](
     AllHTMLAttributes: AllHTMLAttributes[T] = null,
     ClassAttributes: ClassAttributes[T] = null,
     tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null

@@ -18,7 +18,7 @@ object GridColumnSortable {
     initialDirection: String = null
   ): GridColumnSortable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnsort)) __obj.updateDynamic("allowUnsort")(allowUnsort.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnsort)) __obj.updateDynamic("allowUnsort")(allowUnsort.get.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
     if (initialDirection != null) __obj.updateDynamic("initialDirection")(initialDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnSortable]

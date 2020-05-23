@@ -6,10 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait CalendarNotification extends js.Object {
   /**
-    * The method used to deliver the notification. Possible values are:
-    * - "email" - Reminders are sent via email.
-    * - "sms" - Reminders are sent via SMS. This value is read-only and is ignored on inserts and updates. SMS reminders are only available for G Suite
-    * customers.
+    * The method used to deliver the notification. The possible value is:
+    * - "email" - Notifications are sent via email.
+    * Required when adding a notification.
     */
   var method: js.UndefOr[String] = js.undefined
   /**
@@ -17,8 +16,9 @@ trait CalendarNotification extends js.Object {
     * - "eventCreation" - Notification sent when a new event is put on the calendar.
     * - "eventChange" - Notification sent when an event is changed.
     * - "eventCancellation" - Notification sent when an event is cancelled.
-    * - "eventResponse" - Notification sent when an event is changed.
+    * - "eventResponse" - Notification sent when an attendee responds to the event invitation.
     * - "agenda" - An agenda with the events of the day (sent out in the morning).
+    * Required when adding a notification.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }

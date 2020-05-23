@@ -1,6 +1,6 @@
 package typings.jpm.hotkeysMod
 
-import typings.jpm.AnonCombo
+import typings.jpm.anon.Combo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ trait Hotkey extends js.Object {
 @JSImport("sdk/hotkeys", "Hotkey")
 @js.native
 object Hotkey extends js.Object {
-  def apply(options: AnonCombo): Hotkey = js.native
+  def apply(options: Combo): Hotkey = js.native
 }
 

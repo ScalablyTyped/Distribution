@@ -67,12 +67,12 @@ object EffectRecord {
     bought_asset_code: String = null,
     bought_asset_issuer: String = null,
     bought_asset_type: String = null,
-    high_threshold: Int | Double = null,
+    high_threshold: js.UndefOr[Double] = js.undefined,
     home_domain: String = null,
     key: String = null,
     limit: String = null,
-    low_threshold: Int | Double = null,
-    med_threshold: Int | Double = null,
+    low_threshold: js.UndefOr[Double] = js.undefined,
+    med_threshold: js.UndefOr[Double] = js.undefined,
     new_seq: Double | String = null,
     offer_id: Double | String = null,
     operation: () => js.Promise[OperationRecord] = null,
@@ -85,7 +85,7 @@ object EffectRecord {
     starting_balance: String = null,
     succeeds: () => js.Promise[EffectRecord] = null,
     trustor: String = null,
-    weight: Int | Double = null
+    weight: js.UndefOr[Double] = js.undefined
   ): EffectRecord = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], account = account.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], type_i = type_i.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -93,18 +93,18 @@ object EffectRecord {
     if (asset_code != null) __obj.updateDynamic("asset_code")(asset_code.asInstanceOf[js.Any])
     if (asset_issuer != null) __obj.updateDynamic("asset_issuer")(asset_issuer.asInstanceOf[js.Any])
     if (asset_type != null) __obj.updateDynamic("asset_type")(asset_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(auth_required_flag)) __obj.updateDynamic("auth_required_flag")(auth_required_flag.asInstanceOf[js.Any])
-    if (!js.isUndefined(auth_revokable_flag)) __obj.updateDynamic("auth_revokable_flag")(auth_revokable_flag.asInstanceOf[js.Any])
+    if (!js.isUndefined(auth_required_flag)) __obj.updateDynamic("auth_required_flag")(auth_required_flag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(auth_revokable_flag)) __obj.updateDynamic("auth_revokable_flag")(auth_revokable_flag.get.asInstanceOf[js.Any])
     if (bought_amount != null) __obj.updateDynamic("bought_amount")(bought_amount.asInstanceOf[js.Any])
     if (bought_asset_code != null) __obj.updateDynamic("bought_asset_code")(bought_asset_code.asInstanceOf[js.Any])
     if (bought_asset_issuer != null) __obj.updateDynamic("bought_asset_issuer")(bought_asset_issuer.asInstanceOf[js.Any])
     if (bought_asset_type != null) __obj.updateDynamic("bought_asset_type")(bought_asset_type.asInstanceOf[js.Any])
-    if (high_threshold != null) __obj.updateDynamic("high_threshold")(high_threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(high_threshold)) __obj.updateDynamic("high_threshold")(high_threshold.get.asInstanceOf[js.Any])
     if (home_domain != null) __obj.updateDynamic("home_domain")(home_domain.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (low_threshold != null) __obj.updateDynamic("low_threshold")(low_threshold.asInstanceOf[js.Any])
-    if (med_threshold != null) __obj.updateDynamic("med_threshold")(med_threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(low_threshold)) __obj.updateDynamic("low_threshold")(low_threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(med_threshold)) __obj.updateDynamic("med_threshold")(med_threshold.get.asInstanceOf[js.Any])
     if (new_seq != null) __obj.updateDynamic("new_seq")(new_seq.asInstanceOf[js.Any])
     if (offer_id != null) __obj.updateDynamic("offer_id")(offer_id.asInstanceOf[js.Any])
     if (operation != null) __obj.updateDynamic("operation")(js.Any.fromFunction0(operation))
@@ -117,7 +117,7 @@ object EffectRecord {
     if (starting_balance != null) __obj.updateDynamic("starting_balance")(starting_balance.asInstanceOf[js.Any])
     if (succeeds != null) __obj.updateDynamic("succeeds")(js.Any.fromFunction0(succeeds))
     if (trustor != null) __obj.updateDynamic("trustor")(trustor.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectRecord]
   }
 }

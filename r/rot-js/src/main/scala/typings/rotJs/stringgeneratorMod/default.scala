@@ -1,7 +1,7 @@
 package typings.rotJs.stringgeneratorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rotJs.PartialOptionsOrder
+import typings.rotJs.anon.PartialOptionsOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -18,7 +18,7 @@ object ErrorOptions {
   @scala.inline
   def apply(self: js.UndefOr[Boolean] = js.undefined): ErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
+    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorOptions]
   }
 }

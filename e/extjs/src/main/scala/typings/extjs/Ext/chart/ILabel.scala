@@ -13,12 +13,12 @@ trait ILabel extends IBase {
   /** [Config Option] (Object) */
   var label: js.UndefOr[js.Any] = js.undefined
   /** [Method] Called each time a new label is created
-  		* @param storeItem Ext.data.Model The element of the store that is related to the sprite.
-  		* @param item Object The item related to the sprite. An item is an object containing the position of the shape used to describe the visualization and also pointing to the actual shape (circle, rectangle, path, etc).
-  		* @param i Number The index of the element created (i.e the first created label, second created label, etc).
-  		* @param display String The label.display type. May be false if the label is hidden
-  		* @returns Ext.draw.Sprite The created sprite that will draw the label.
-  		*/
+    * @param storeItem Ext.data.Model The element of the store that is related to the sprite.
+    * @param item Object The item related to the sprite. An item is an object containing the position of the shape used to describe the visualization and also pointing to the actual shape (circle, rectangle, path, etc).
+    * @param i Number The index of the element created (i.e the first created label, second created label, etc).
+    * @param display String The label.display type. May be false if the label is hidden
+    * @returns Ext.draw.Sprite The created sprite that will draw the label.
+    */
   var onCreateLabel: js.UndefOr[
     js.Function4[
       /* storeItem */ js.UndefOr[IModel], 
@@ -29,14 +29,14 @@ trait ILabel extends IBase {
     ]
   ] = js.undefined
   /** [Method] Called for updating the position of the label
-  		* @param label Ext.draw.Sprite The sprite that draws the label.
-  		* @param storeItem Ext.data.Model The element of the store that is related to the sprite.
-  		* @param item Object The item related to the sprite. An item is an object containing the position of the shape used to describe the visualization and also pointing to the actual shape (circle, rectangle, path, etc).
-  		* @param i Number The index of the element to be updated (i.e. whether it is the first, second, third from the labelGroup)
-  		* @param display String The label.display type. May be false if the label is hidden
-  		* @param animate Boolean A boolean value to set or unset animations for the labels.
-  		* @param index Number The series index.
-  		*/
+    * @param label Ext.draw.Sprite The sprite that draws the label.
+    * @param storeItem Ext.data.Model The element of the store that is related to the sprite.
+    * @param item Object The item related to the sprite. An item is an object containing the position of the shape used to describe the visualization and also pointing to the actual shape (circle, rectangle, path, etc).
+    * @param i Number The index of the element to be updated (i.e. whether it is the first, second, third from the labelGroup)
+    * @param display String The label.display type. May be false if the label is hidden
+    * @param animate Boolean A boolean value to set or unset animations for the labels.
+    * @param index Number The series index.
+    */
   var onPlaceLabel: js.UndefOr[
     js.Function7[
       /* label */ js.UndefOr[ISprite], 
@@ -91,7 +91,7 @@ object ILabel {
     if (onPlaceLabel != null) __obj.updateDynamic("onPlaceLabel")(js.Any.fromFunction7(onPlaceLabel))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILabel]

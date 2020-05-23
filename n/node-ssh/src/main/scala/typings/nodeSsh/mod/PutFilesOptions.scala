@@ -13,9 +13,13 @@ trait PutFilesOptions extends js.Object {
 
 object PutFilesOptions {
   @scala.inline
-  def apply(concurrency: Int | Double = null, sftp: SFTP = null, sftpOptions: TransferOptions = null): PutFilesOptions = {
+  def apply(
+    concurrency: js.UndefOr[Double] = js.undefined,
+    sftp: SFTP = null,
+    sftpOptions: TransferOptions = null
+  ): PutFilesOptions = {
     val __obj = js.Dynamic.literal()
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     if (sftp != null) __obj.updateDynamic("sftp")(sftp.asInstanceOf[js.Any])
     if (sftpOptions != null) __obj.updateDynamic("sftpOptions")(sftpOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFilesOptions]

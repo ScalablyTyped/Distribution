@@ -6,10 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Adaptor")
 @js.native
-class Adaptor protected () extends js.Object {
-  def this(ds: js.Any) = this()
+trait Adaptor extends js.Object {
   var options: AdaptorOptions = js.native
   var pvt: js.Any = js.native
   var `type`: Adaptor = js.native

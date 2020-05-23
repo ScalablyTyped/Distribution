@@ -20,15 +20,15 @@ object Base64ScreenShotOptions {
     fullPage: js.UndefOr[Boolean] = js.undefined,
     omitBackground: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     `type`: jpeg | png = null
   ): Base64ScreenShotOptions = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullPage)) __obj.updateDynamic("fullPage")(fullPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitBackground)) __obj.updateDynamic("omitBackground")(omitBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullPage)) __obj.updateDynamic("fullPage")(fullPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitBackground)) __obj.updateDynamic("omitBackground")(omitBackground.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base64ScreenShotOptions]
   }

@@ -1,8 +1,8 @@
 package typings.reactIntl.mod
 
 import typings.react.mod.Component
-import typings.reactIntl.PartialStateCache
-import typings.reactIntl.PickIntlConfigformatsmessDefaultFormats
+import typings.reactIntl.anon.PartialStateCache
+import typings.reactIntl.anon.PickIntlConfigformatsmessDefaultFormats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

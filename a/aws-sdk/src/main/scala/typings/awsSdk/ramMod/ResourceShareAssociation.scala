@@ -50,7 +50,7 @@ object ResourceShareAssociation {
     associatedEntity: String = null,
     associationType: ResourceShareAssociationType = null,
     creationTime: DateTime = null,
-    external: js.UndefOr[scala.Boolean] = js.undefined,
+    external: js.UndefOr[Boolean] = js.undefined,
     lastUpdatedTime: DateTime = null,
     resourceShareArn: String = null,
     resourceShareName: String = null,
@@ -61,7 +61,7 @@ object ResourceShareAssociation {
     if (associatedEntity != null) __obj.updateDynamic("associatedEntity")(associatedEntity.asInstanceOf[js.Any])
     if (associationType != null) __obj.updateDynamic("associationType")(associationType.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.get.asInstanceOf[js.Any])
     if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
     if (resourceShareArn != null) __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
     if (resourceShareName != null) __obj.updateDynamic("resourceShareName")(resourceShareName.asInstanceOf[js.Any])

@@ -6,40 +6,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.Touch
-  * @classdesc A instance of a single point touch on a {@link pc.TouchDevice}.
-  * @description Create a new Touch object from the browser Touch.
-  * @param {Touch} touch - The browser Touch object.
-  * @property {number} id The identifier of the touch.
-  * @property {number} x The x co-ordinate relative to the element that the TouchDevice is attached to.
-  * @property {number} y The y co-ordinate relative to the element that the TouchDevice is attached to.
-  * @property {Element} target The target element of the touch event.
-  * @property {Touch} touch The original browser Touch object.
+  * Create a new Touch object from the browser Touch.
+  * @property id - The identifier of the touch.
+  * @property x - The x co-ordinate relative to the element that the TouchDevice is attached to.
+  * @property y - The y co-ordinate relative to the element that the TouchDevice is attached to.
+  * @property target - The target element of the touch event.
+  * @property touch - The original browser Touch object.
+  * @param touch - The browser Touch object.
   */
-@JSGlobal("pc.Touch")
-@js.native
-class Touch protected () extends js.Object {
-  def this(touch: Touch) = this()
+trait Touch extends js.Object {
   /**
     * The identifier of the touch.
     */
-  var id: Double = js.native
+  var id: Double
   /**
     * The target element of the touch event.
     */
-  var target: Element = js.native
+  var target: Element
   /**
     * The original browser Touch object.
     */
-  var touch: Touch = js.native
+  var touch: Touch
   /**
     * The x co-ordinate relative to the element that the TouchDevice is attached to.
     */
-  var x: Double = js.native
+  var x: Double
   /**
     * The y co-ordinate relative to the element that the TouchDevice is attached to.
     */
-  var y: Double = js.native
+  var y: Double
+}
+
+object Touch {
+  @scala.inline
+  def apply(id: Double, target: Element, touch: Touch, x: Double, y: Double): Touch = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Touch]
+  }
 }
 

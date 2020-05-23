@@ -1,9 +1,13 @@
 package typings.jupyterlabUiComponents
 
+import typings.jupyterlabUiComponents.anon.IOptionsloadingboolean
+import typings.jupyterlabUiComponents.anon.Icon
+import typings.jupyterlabUiComponents.anon.PartialIResolverPropsIPro
+import typings.jupyterlabUiComponents.anon.PartialIResolverPropsIRea
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IIcon
 import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
 import typings.luminoWidgets.mod.Menu
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -184,7 +188,7 @@ object iconMod extends js.Object {
       *
       * @returns a LabIcon instance
       */
-    def resolve(hasIcon: AnonIcon): typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+    def resolve(hasIcon: Icon): typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
     /**
       * Resolve an icon name or a {name, svgstr} pair into a DOM element.
       * If icon arg is undefined, the function will fall back to trying to render

@@ -128,32 +128,32 @@ object PlotNetworkgraphLayoutAlgorithmOptions {
     approximation: OptionsApproximationValue = null,
     attractiveForce: js.Function = null,
     enableSimulation: js.UndefOr[Boolean] = js.undefined,
-    friction: Int | Double = null,
-    gravitationalConstant: Int | Double = null,
-    initialPositionRadius: Int | Double = null,
+    friction: js.UndefOr[Double] = js.undefined,
+    gravitationalConstant: js.UndefOr[Double] = js.undefined,
+    initialPositionRadius: js.UndefOr[Double] = js.undefined,
     initialPositions: circle | random | js.Function = null,
     integration: OptionsIntegrationValue = null,
-    linkLength: Int | Double = null,
-    maxIterations: Int | Double = null,
-    maxSpeed: Int | Double = null,
+    linkLength: js.UndefOr[Double] = js.undefined,
+    maxIterations: js.UndefOr[Double] = js.undefined,
+    maxSpeed: js.UndefOr[Double] = js.undefined,
     repulsiveForce: js.Function = null,
-    theta: Int | Double = null,
+    theta: js.UndefOr[Double] = js.undefined,
     `type`: `reingold-fruchterman` = null
   ): PlotNetworkgraphLayoutAlgorithmOptions = {
     val __obj = js.Dynamic.literal()
     if (approximation != null) __obj.updateDynamic("approximation")(approximation.asInstanceOf[js.Any])
     if (attractiveForce != null) __obj.updateDynamic("attractiveForce")(attractiveForce.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSimulation)) __obj.updateDynamic("enableSimulation")(enableSimulation.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (gravitationalConstant != null) __obj.updateDynamic("gravitationalConstant")(gravitationalConstant.asInstanceOf[js.Any])
-    if (initialPositionRadius != null) __obj.updateDynamic("initialPositionRadius")(initialPositionRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSimulation)) __obj.updateDynamic("enableSimulation")(enableSimulation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravitationalConstant)) __obj.updateDynamic("gravitationalConstant")(gravitationalConstant.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialPositionRadius)) __obj.updateDynamic("initialPositionRadius")(initialPositionRadius.get.asInstanceOf[js.Any])
     if (initialPositions != null) __obj.updateDynamic("initialPositions")(initialPositions.asInstanceOf[js.Any])
     if (integration != null) __obj.updateDynamic("integration")(integration.asInstanceOf[js.Any])
-    if (linkLength != null) __obj.updateDynamic("linkLength")(linkLength.asInstanceOf[js.Any])
-    if (maxIterations != null) __obj.updateDynamic("maxIterations")(maxIterations.asInstanceOf[js.Any])
-    if (maxSpeed != null) __obj.updateDynamic("maxSpeed")(maxSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkLength)) __obj.updateDynamic("linkLength")(linkLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIterations)) __obj.updateDynamic("maxIterations")(maxIterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSpeed)) __obj.updateDynamic("maxSpeed")(maxSpeed.get.asInstanceOf[js.Any])
     if (repulsiveForce != null) __obj.updateDynamic("repulsiveForce")(repulsiveForce.asInstanceOf[js.Any])
-    if (theta != null) __obj.updateDynamic("theta")(theta.asInstanceOf[js.Any])
+    if (!js.isUndefined(theta)) __obj.updateDynamic("theta")(theta.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotNetworkgraphLayoutAlgorithmOptions]
   }

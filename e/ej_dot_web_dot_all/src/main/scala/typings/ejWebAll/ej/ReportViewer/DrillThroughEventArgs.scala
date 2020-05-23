@@ -29,7 +29,7 @@ object DrillThroughEventArgs {
   ): DrillThroughEventArgs = {
     val __obj = js.Dynamic.literal()
     if (actionInfo != null) __obj.updateDynamic("actionInfo")(actionInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrillThroughEventArgs]

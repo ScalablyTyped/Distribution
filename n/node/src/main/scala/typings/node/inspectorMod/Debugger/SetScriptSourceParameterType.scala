@@ -24,7 +24,7 @@ object SetScriptSourceParameterType {
   @scala.inline
   def apply(scriptId: ScriptId, scriptSource: String, dryRun: js.UndefOr[Boolean] = js.undefined): SetScriptSourceParameterType = {
     val __obj = js.Dynamic.literal(scriptId = scriptId.asInstanceOf[js.Any], scriptSource = scriptSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScriptSourceParameterType]
   }
 }

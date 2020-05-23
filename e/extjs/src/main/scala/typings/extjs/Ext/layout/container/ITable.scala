@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 
 trait ITable extends IContainer {
   /** [Method] Called to perform the calculations for this layout
-  		* @param ownerContext Object
-  		*/
+    * @param ownerContext Object
+    */
   @JSName("calculate")
   var calculate_ITable: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Number) */
@@ -22,11 +22,11 @@ trait ITable extends IContainer {
   @JSName("finalizeLayout")
   var finalizeLayout_ITable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Validates item is in the proper place in the dom
-  		* @param item Object
-  		* @param target Object
-  		* @param rowIdx Object
-  		* @param cellIdx Object
-  		*/
+    * @param item Object
+    * @param target Object
+    * @param rowIdx Object
+    * @param cellIdx Object
+    */
   @JSName("isValidParent")
   var isValidParent_ITable: js.UndefOr[
     js.Function4[
@@ -58,7 +58,7 @@ object ITable {
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    columns: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
     completeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     config: js.Any = null,
     configureItem: /* item */ js.UndefOr[js.Any] => Unit = null,
@@ -108,12 +108,12 @@ object ITable {
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (completeLayout != null) __obj.updateDynamic("completeLayout")(js.Any.fromFunction1(completeLayout))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (configureItem != null) __obj.updateDynamic("configureItem")(js.Any.fromFunction1(configureItem))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (finalizeLayout != null) __obj.updateDynamic("finalizeLayout")(js.Any.fromFunction0(finalizeLayout))
     if (finishedLayout != null) __obj.updateDynamic("finishedLayout")(js.Any.fromFunction1(finishedLayout))
@@ -129,7 +129,7 @@ object ITable {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initLayout != null) __obj.updateDynamic("initLayout")(js.Any.fromFunction0(initLayout))
-    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.get.asInstanceOf[js.Any])
     if (isValidParent != null) __obj.updateDynamic("isValidParent")(js.Any.fromFunction4(isValidParent))
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -140,7 +140,7 @@ object ITable {
     if (renderItems != null) __obj.updateDynamic("renderItems")(js.Any.fromFunction2(renderItems))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (tableAttrs != null) __obj.updateDynamic("tableAttrs")(tableAttrs.asInstanceOf[js.Any])
     if (tdAttrs != null) __obj.updateDynamic("tdAttrs")(tdAttrs.asInstanceOf[js.Any])

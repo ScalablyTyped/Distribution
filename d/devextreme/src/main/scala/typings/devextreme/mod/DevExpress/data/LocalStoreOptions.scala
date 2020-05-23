@@ -18,7 +18,7 @@ object LocalStoreOptions {
   def apply(
     data: js.Array[_] = null,
     errorHandler: js.Function = null,
-    flushInterval: Int | Double = null,
+    flushInterval: js.UndefOr[Double] = js.undefined,
     immediate: js.UndefOr[Boolean] = js.undefined,
     key: String | js.Array[String] = null,
     name: String = null,
@@ -37,8 +37,8 @@ object LocalStoreOptions {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler.asInstanceOf[js.Any])
-    if (flushInterval != null) __obj.updateDynamic("flushInterval")(flushInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (!js.isUndefined(flushInterval)) __obj.updateDynamic("flushInterval")(flushInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onInserted != null) __obj.updateDynamic("onInserted")(js.Any.fromFunction2(onInserted))

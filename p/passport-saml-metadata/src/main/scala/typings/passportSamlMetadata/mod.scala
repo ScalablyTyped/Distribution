@@ -1,6 +1,8 @@
 package typings.passportSamlMetadata
 
 import typings.passportSaml.mod.SamlConfig
+import typings.passportSamlMetadata.anon.MultipleCerts
+import typings.passportSamlMetadata.anon.PartialMetadataConstructo
 import typings.passportSamlMetadata.fetchMod.FetchConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,6 +23,6 @@ object mod extends js.Object {
   def metadata(config: SamlConfig): js.Function0[Unit] = js.native
   def toPassportConfig(): SamlConfig = js.native
   def toPassportConfig(reader: typings.passportSamlMetadata.readerMod.MetadataReader): SamlConfig = js.native
-  def toPassportConfig(reader: typings.passportSamlMetadata.readerMod.MetadataReader, options: AnonMultipleCerts): SamlConfig = js.native
+  def toPassportConfig(reader: typings.passportSamlMetadata.readerMod.MetadataReader, options: MultipleCerts): SamlConfig = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonCanPurchaseUploadAllowance
+import typings.evernote.anon.CanPurchaseUploadAllowance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.PremiumInfo")
 @js.native
 class PremiumInfo () extends js.Object {
-  def this(args: AnonCanPurchaseUploadAllowance) = this()
+  def this(args: CanPurchaseUploadAllowance) = this()
   var canPurchaseUploadAllowance: js.UndefOr[Boolean] = js.native
   var currentTime: js.UndefOr[Timestamp] = js.native
   var premium: js.UndefOr[Boolean] = js.native

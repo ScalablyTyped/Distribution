@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PartialComment
 import typings.typedoc.modelsMod.Comment
 import typings.typedoc.serializationComponentsMod.SerializerComponent
 import scala.scalajs.js

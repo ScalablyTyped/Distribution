@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.FormatCondition")
 @js.native
-class FormatCondition protected () extends js.Object {
+trait FormatCondition extends js.Object {
   @JSName("Access.FormatCondition_typekey")
   var AccessDotFormatCondition_typekey: FormatCondition = js.native
   var BackColor: Double = js.native

@@ -17,6 +17,7 @@ trait RelativeTimeSpec extends js.Object {
   var past: js.UndefOr[RelativeTimeFuturePastVal] = js.undefined
   var s: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   var ss: js.UndefOr[RelativeTimeSpecVal] = js.undefined
+  var w: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   var y: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   var yy: js.UndefOr[RelativeTimeSpecVal] = js.undefined
 }
@@ -36,6 +37,7 @@ object RelativeTimeSpec {
     past: RelativeTimeFuturePastVal = null,
     s: RelativeTimeSpecVal = null,
     ss: RelativeTimeSpecVal = null,
+    w: RelativeTimeSpecVal = null,
     y: RelativeTimeSpecVal = null,
     yy: RelativeTimeSpecVal = null
   ): RelativeTimeSpec = {
@@ -52,6 +54,7 @@ object RelativeTimeSpec {
     if (past != null) __obj.updateDynamic("past")(past.asInstanceOf[js.Any])
     if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
     if (ss != null) __obj.updateDynamic("ss")(ss.asInstanceOf[js.Any])
+    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (yy != null) __obj.updateDynamic("yy")(yy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeTimeSpec]

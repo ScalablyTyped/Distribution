@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,35 +66,6 @@ object ASPxClientSpreadsheetPopupMenuType extends js.Object {
     */
   @js.native
   sealed trait SheetTab extends ASPxClientSpreadsheetPopupMenuType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ASPxClientSpreadsheetPopupMenuType with Double] = js.native
-  /* 8 */ @js.native
-  object AutoFilter extends TopLevel[AutoFilter with Double]
-  
-  /* 7 */ @js.native
-  object Cell extends TopLevel[Cell with Double]
-  
-  /* 5 */ @js.native
-  object Chart extends TopLevel[Chart with Double]
-  
-  /* 0 */ @js.native
-  object ColumnHeading extends TopLevel[ColumnHeading with Double]
-  
-  /* 4 */ @js.native
-  object Picture extends TopLevel[Picture with Double]
-  
-  /* 9 */ @js.native
-  object PivotTable extends TopLevel[PivotTable with Double]
-  
-  /* 10 */ @js.native
-  object PivotTableAutoFilter extends TopLevel[PivotTableAutoFilter with Double]
-  
-  /* 1 */ @js.native
-  object RowHeading extends TopLevel[RowHeading with Double]
-  
-  /* 3 */ @js.native
-  object SheetTab extends TopLevel[SheetTab with Double]
   
 }
 

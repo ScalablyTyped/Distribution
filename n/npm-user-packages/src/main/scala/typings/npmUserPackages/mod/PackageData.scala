@@ -1,21 +1,21 @@
 package typings.npmUserPackages.mod
 
-import typings.npmUserPackages.AnonBugs
-import typings.npmUserPackages.AnonEmail
-import typings.npmUserPackages.AnonUsername
+import typings.npmUserPackages.anon.Bugs
+import typings.npmUserPackages.anon.Email
+import typings.npmUserPackages.anon.Username
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PackageData extends js.Object {
-  var author: AnonEmail
+  var author: Email
   var date: String
   var description: String
   var keywords: js.Array[String]
-  var links: AnonBugs
-  var maintainers: js.Array[AnonUsername]
+  var links: Bugs
+  var maintainers: js.Array[Username]
   var name: String
-  var publisher: AnonUsername
+  var publisher: Username
   var scope: String
   var version: String
 }
@@ -23,14 +23,14 @@ trait PackageData extends js.Object {
 object PackageData {
   @scala.inline
   def apply(
-    author: AnonEmail,
+    author: Email,
     date: String,
     description: String,
     keywords: js.Array[String],
-    links: AnonBugs,
-    maintainers: js.Array[AnonUsername],
+    links: Bugs,
+    maintainers: js.Array[Username],
     name: String,
-    publisher: AnonUsername,
+    publisher: Username,
     scope: String,
     version: String
   ): PackageData = {

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait PushResponse extends js.Object {
   /**
-  	 * Name ref (key) of the child resource
-  	 */
+    * Name ref (key) of the child resource
+    */
   var name: String
 }
 

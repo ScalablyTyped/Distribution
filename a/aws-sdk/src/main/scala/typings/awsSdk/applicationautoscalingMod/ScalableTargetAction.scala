@@ -11,17 +11,20 @@ trait ScalableTargetAction extends js.Object {
     */
   var MaxCapacity: js.UndefOr[ResourceCapacity] = js.native
   /**
-    * The minimum capacity.
+    * The minimum capacity. For Lambda provisioned concurrency, the minimum value allowed is 0. For all other resources, the minimum value allowed is 1.
     */
   var MinCapacity: js.UndefOr[ResourceCapacity] = js.native
 }
 
 object ScalableTargetAction {
   @scala.inline
-  def apply(MaxCapacity: Int | Double = null, MinCapacity: Int | Double = null): ScalableTargetAction = {
+  def apply(
+    MaxCapacity: js.UndefOr[ResourceCapacity] = js.undefined,
+    MinCapacity: js.UndefOr[ResourceCapacity] = js.undefined
+  ): ScalableTargetAction = {
     val __obj = js.Dynamic.literal()
-    if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
-    if (MinCapacity != null) __obj.updateDynamic("MinCapacity")(MinCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinCapacity)) __obj.updateDynamic("MinCapacity")(MinCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalableTargetAction]
   }
 }

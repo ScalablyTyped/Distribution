@@ -37,6 +37,18 @@ class Characteristic () extends EventEmitter {
   def on_read(event: read, listener: js.Function2[/* data */ Buffer, /* isNotification */ Boolean, Unit]): this.type = js.native
   @JSName("on")
   def on_write(event: write, withoutResponse: Boolean, listener: js.Function1[/* error */ String, Unit]): this.type = js.native
+  def once(event: String, listener: js.Function): this.type = js.native
+  def once(event: String, option: Boolean, listener: js.Function): this.type = js.native
+  @JSName("once")
+  def once_broadcast(event: broadcast, listener: js.Function1[/* state */ String, Unit]): this.type = js.native
+  @JSName("once")
+  def once_descriptorsDiscover(event: descriptorsDiscover, listener: js.Function1[/* descriptors */ js.Array[Descriptor], Unit]): this.type = js.native
+  @JSName("once")
+  def once_notify(event: notify, listener: js.Function1[/* state */ String, Unit]): this.type = js.native
+  @JSName("once")
+  def once_read(event: read, listener: js.Function2[/* data */ Buffer, /* isNotification */ Boolean, Unit]): this.type = js.native
+  @JSName("once")
+  def once_write(event: write, withoutResponse: Boolean, listener: js.Function1[/* error */ String, Unit]): this.type = js.native
   def read(): Unit = js.native
   def read(callback: js.Function2[/* error */ String, /* data */ Buffer, Unit]): Unit = js.native
   def subscribe(): Unit = js.native

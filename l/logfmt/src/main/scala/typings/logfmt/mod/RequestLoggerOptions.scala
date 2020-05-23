@@ -14,7 +14,7 @@ object RequestLoggerOptions {
   def apply(elapsed: String = null, immediate: js.UndefOr[Boolean] = js.undefined): RequestLoggerOptions = {
     val __obj = js.Dynamic.literal()
     if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestLoggerOptions]
   }
 }

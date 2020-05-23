@@ -72,14 +72,14 @@ object IItemOptions {
     category: String = null,
     kernelIconUrl: String = null,
     metadata: ReadonlyJSONObject = null,
-    rank: Int | Double = null
+    rank: js.UndefOr[Double] = js.undefined
   ): IItemOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (kernelIconUrl != null) __obj.updateDynamic("kernelIconUrl")(kernelIconUrl.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }
 }

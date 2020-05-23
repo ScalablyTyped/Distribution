@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ArcRotateCameraMouseWheelInput")
 @js.native
-class ArcRotateCameraMouseWheelInput () extends ICameraInput[ArcRotateCamera] {
+trait ArcRotateCameraMouseWheelInput extends ICameraInput[ArcRotateCamera] {
   var _observer: js.Any = js.native
   var _wheel: js.Any = js.native
   /**

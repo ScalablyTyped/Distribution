@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Base event for class Titanium.Media.MusicPlayer
-		 */
+  * Base event for class Titanium.Media.MusicPlayer
+  */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ti.Event * / any */ trait MusicPlayerBaseEvent extends js.Object {
   /**
-  			 * Source object that fired the event.
-  			 */
+    * Source object that fired the event.
+    */
   var source: MusicPlayer
 }
 

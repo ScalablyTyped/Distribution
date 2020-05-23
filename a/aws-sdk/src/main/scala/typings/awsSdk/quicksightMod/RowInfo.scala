@@ -18,10 +18,10 @@ trait RowInfo extends js.Object {
 
 object RowInfo {
   @scala.inline
-  def apply(RowsDropped: Int | scala.Double = null, RowsIngested: Int | scala.Double = null): RowInfo = {
+  def apply(RowsDropped: js.UndefOr[long] = js.undefined, RowsIngested: js.UndefOr[long] = js.undefined): RowInfo = {
     val __obj = js.Dynamic.literal()
-    if (RowsDropped != null) __obj.updateDynamic("RowsDropped")(RowsDropped.asInstanceOf[js.Any])
-    if (RowsIngested != null) __obj.updateDynamic("RowsIngested")(RowsIngested.asInstanceOf[js.Any])
+    if (!js.isUndefined(RowsDropped)) __obj.updateDynamic("RowsDropped")(RowsDropped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RowsIngested)) __obj.updateDynamic("RowsIngested")(RowsIngested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowInfo]
   }
 }

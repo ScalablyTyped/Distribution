@@ -13,9 +13,14 @@ trait UpdateAclOptions extends js.Object {
 
 object UpdateAclOptions {
   @scala.inline
-  def apply(entity: String, role: String, generation: Int | Double = null, userProject: String = null): UpdateAclOptions = {
+  def apply(
+    entity: String,
+    role: String,
+    generation: js.UndefOr[Double] = js.undefined,
+    userProject: String = null
+  ): UpdateAclOptions = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
     if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAclOptions]
   }

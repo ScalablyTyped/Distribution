@@ -17,13 +17,13 @@ object Message {
   @scala.inline
   def apply(
     regId: String,
-    error: Error = null,
+    error: js.UndefOr[Null | Error] = js.undefined,
     errorMsg: String = null,
     messageId: String = null,
     originalRegId: String = null
   ): Message = {
     val __obj = js.Dynamic.literal(regId = regId.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (errorMsg != null) __obj.updateDynamic("errorMsg")(errorMsg.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     if (originalRegId != null) __obj.updateDynamic("originalRegId")(originalRegId.asInstanceOf[js.Any])

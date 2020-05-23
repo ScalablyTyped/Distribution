@@ -17,7 +17,7 @@ object ColorPaletteOptions {
   @scala.inline
   def apply(
     change: /* e */ ColorPaletteEvent => Unit = null,
-    columns: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
     name: String = null,
     palette: String | js.Any = null,
     tileSize: ColorPaletteTileSize = null,
@@ -25,7 +25,7 @@ object ColorPaletteOptions {
   ): ColorPaletteOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])

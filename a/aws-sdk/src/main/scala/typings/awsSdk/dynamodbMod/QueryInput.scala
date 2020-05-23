@@ -79,7 +79,7 @@ object QueryInput {
     TableName: TableName,
     AttributesToGet: AttributeNameList = null,
     ConditionalOperator: ConditionalOperator = null,
-    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
+    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
     ExclusiveStartKey: Key = null,
     ExpressionAttributeNames: ExpressionAttributeNameMap = null,
     ExpressionAttributeValues: ExpressionAttributeValueMap = null,
@@ -87,17 +87,17 @@ object QueryInput {
     IndexName: IndexName = null,
     KeyConditionExpression: KeyExpression = null,
     KeyConditions: KeyConditions = null,
-    Limit: Int | scala.Double = null,
+    Limit: js.UndefOr[PositiveIntegerObject] = js.undefined,
     ProjectionExpression: ProjectionExpression = null,
     QueryFilter: FilterConditionMap = null,
     ReturnConsumedCapacity: ReturnConsumedCapacity = null,
-    ScanIndexForward: js.UndefOr[Boolean] = js.undefined,
+    ScanIndexForward: js.UndefOr[BooleanObject] = js.undefined,
     Select: Select = null
   ): QueryInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet.asInstanceOf[js.Any])
     if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.get.asInstanceOf[js.Any])
     if (ExclusiveStartKey != null) __obj.updateDynamic("ExclusiveStartKey")(ExclusiveStartKey.asInstanceOf[js.Any])
     if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
     if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues.asInstanceOf[js.Any])
@@ -105,11 +105,11 @@ object QueryInput {
     if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName.asInstanceOf[js.Any])
     if (KeyConditionExpression != null) __obj.updateDynamic("KeyConditionExpression")(KeyConditionExpression.asInstanceOf[js.Any])
     if (KeyConditions != null) __obj.updateDynamic("KeyConditions")(KeyConditions.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression.asInstanceOf[js.Any])
     if (QueryFilter != null) __obj.updateDynamic("QueryFilter")(QueryFilter.asInstanceOf[js.Any])
     if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScanIndexForward)) __obj.updateDynamic("ScanIndexForward")(ScanIndexForward.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScanIndexForward)) __obj.updateDynamic("ScanIndexForward")(ScanIndexForward.get.asInstanceOf[js.Any])
     if (Select != null) __obj.updateDynamic("Select")(Select.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryInput]
   }

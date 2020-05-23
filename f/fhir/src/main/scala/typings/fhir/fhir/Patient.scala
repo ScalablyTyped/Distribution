@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Information about an individual or animal receiving health care services
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Patient extends DomainResource {
   /**
     * Contains extended information for property 'active'.
@@ -151,7 +151,7 @@ object Patient {
     meta: Meta = null,
     modifierExtension: js.Array[Extension] = null,
     multipleBirthBoolean: js.UndefOr[Boolean] = js.undefined,
-    multipleBirthInteger: Int | Double = null,
+    multipleBirthInteger: js.UndefOr[integer] = js.undefined,
     name: js.Array[HumanName] = null,
     photo: js.Array[Attachment] = null,
     resourceType: code = null,
@@ -170,14 +170,14 @@ object Patient {
     if (_multipleBirthBoolean != null) __obj.updateDynamic("_multipleBirthBoolean")(_multipleBirthBoolean.asInstanceOf[js.Any])
     if (_multipleBirthInteger != null) __obj.updateDynamic("_multipleBirthInteger")(_multipleBirthInteger.asInstanceOf[js.Any])
     if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (animal != null) __obj.updateDynamic("animal")(animal.asInstanceOf[js.Any])
     if (birthDate != null) __obj.updateDynamic("birthDate")(birthDate.asInstanceOf[js.Any])
     if (communication != null) __obj.updateDynamic("communication")(communication.asInstanceOf[js.Any])
     if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
     if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (!js.isUndefined(deceasedBoolean)) __obj.updateDynamic("deceasedBoolean")(deceasedBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(deceasedBoolean)) __obj.updateDynamic("deceasedBoolean")(deceasedBoolean.get.asInstanceOf[js.Any])
     if (deceasedDateTime != null) __obj.updateDynamic("deceasedDateTime")(deceasedDateTime.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
@@ -191,8 +191,8 @@ object Patient {
     if (maritalStatus != null) __obj.updateDynamic("maritalStatus")(maritalStatus.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleBirthBoolean)) __obj.updateDynamic("multipleBirthBoolean")(multipleBirthBoolean.asInstanceOf[js.Any])
-    if (multipleBirthInteger != null) __obj.updateDynamic("multipleBirthInteger")(multipleBirthInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleBirthBoolean)) __obj.updateDynamic("multipleBirthBoolean")(multipleBirthBoolean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleBirthInteger)) __obj.updateDynamic("multipleBirthInteger")(multipleBirthInteger.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])

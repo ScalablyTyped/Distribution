@@ -12,9 +12,9 @@ trait LineReaderOptions extends js.Object {
 
 object LineReaderOptions {
   @scala.inline
-  def apply(bufferSize: Int | Double = null, encoding: String = null, separator: js.Any = null): LineReaderOptions = {
+  def apply(bufferSize: js.UndefOr[Double] = js.undefined, encoding: String = null, separator: js.Any = null): LineReaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineReaderOptions]

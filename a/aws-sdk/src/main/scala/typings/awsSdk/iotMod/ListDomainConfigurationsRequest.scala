@@ -22,10 +22,14 @@ trait ListDomainConfigurationsRequest extends js.Object {
 
 object ListDomainConfigurationsRequest {
   @scala.inline
-  def apply(marker: Marker = null, pageSize: Int | Double = null, serviceType: ServiceType = null): ListDomainConfigurationsRequest = {
+  def apply(
+    marker: Marker = null,
+    pageSize: js.UndefOr[PageSize] = js.undefined,
+    serviceType: ServiceType = null
+  ): ListDomainConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDomainConfigurationsRequest]
   }

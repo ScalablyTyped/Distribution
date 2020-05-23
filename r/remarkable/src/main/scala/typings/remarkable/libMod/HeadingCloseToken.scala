@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.remarkable.libMod._Token because Already inherited */ trait HeadingCloseToken extends HeadingToken {
   @JSName("type")
   var type_HeadingCloseToken: heading_close

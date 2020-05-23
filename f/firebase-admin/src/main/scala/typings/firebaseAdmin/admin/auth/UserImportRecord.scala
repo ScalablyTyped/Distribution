@@ -1,5 +1,8 @@
 package typings.firebaseAdmin.admin.auth
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseAdmin.authMod.admin.auth.UserMetadataRequest
+import typings.firebaseAdmin.authMod.admin.auth.UserProviderRequest
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,12 +17,12 @@ trait UserImportRecord extends js.Object {
     * The user's custom claims object if available, typically used to define
     * user roles and propagated to an authenticated user's ID token.
     */
-  var customClaims: js.UndefOr[js.Object] = js.undefined
+  var customClaims: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /**
     * Whether or not the user is disabled: `true` for disabled; `false` for
     * enabled.
     */
-  var disabled: Boolean
+  var disabled: js.UndefOr[Boolean] = js.undefined
   /**
     * The user's display name.
     */
@@ -31,15 +34,15 @@ trait UserImportRecord extends js.Object {
   /**
     * Whether or not the user's primary email is verified.
     */
-  var emailVerified: Boolean
+  var emailVerified: js.UndefOr[Boolean] = js.undefined
   /**
     * Additional metadata about the user.
     */
-  var metadata: UserMetadata
+  var metadata: js.UndefOr[UserMetadataRequest] = js.undefined
   /**
-    * The multi-factor related properties for the imported user if available.
+    * The user's multi-factor related properties.
     */
-  var multiFactor: js.UndefOr[MultiFactorSettings] = js.undefined
+  var multiFactor: js.UndefOr[typings.firebaseAdmin.authMod.admin.auth.MultiFactorUpdateSettings] = js.undefined
   /**
     * The buffer of bytes representing the user's hashed password.
     * When a user is to be imported with a password hash,
@@ -62,7 +65,7 @@ trait UserImportRecord extends js.Object {
   /**
     * An array of providers (for example, Google, Facebook) linked to the user.
     */
-  var providerData: js.UndefOr[js.Array[UserInfo]] = js.undefined
+  var providerData: js.UndefOr[js.Array[UserProviderRequest]] = js.undefined
   /**
     * The identifier of the tenant where user is to be imported to.
     * When not provided in an `admin.auth.Auth` context, the user is uploaded to
@@ -80,32 +83,35 @@ trait UserImportRecord extends js.Object {
 object UserImportRecord {
   @scala.inline
   def apply(
-    disabled: Boolean,
-    emailVerified: Boolean,
-    metadata: UserMetadata,
     uid: String,
-    customClaims: js.Object = null,
+    customClaims: StringDictionary[js.Any] = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     displayName: String = null,
     email: String = null,
-    multiFactor: MultiFactorSettings = null,
+    emailVerified: js.UndefOr[Boolean] = js.undefined,
+    metadata: UserMetadataRequest = null,
+    multiFactor: typings.firebaseAdmin.authMod.admin.auth.MultiFactorUpdateSettings = null,
     passwordHash: Buffer = null,
     passwordSalt: Buffer = null,
     phoneNumber: String = null,
     photoURL: String = null,
-    providerData: js.Array[UserInfo] = null,
-    tenantId: String = null
+    providerData: js.Array[UserProviderRequest] = null,
+    tenantId: js.UndefOr[Null | String] = js.undefined
   ): UserImportRecord = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(uid = uid.asInstanceOf[js.Any])
     if (customClaims != null) __obj.updateDynamic("customClaims")(customClaims.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (multiFactor != null) __obj.updateDynamic("multiFactor")(multiFactor.asInstanceOf[js.Any])
     if (passwordHash != null) __obj.updateDynamic("passwordHash")(passwordHash.asInstanceOf[js.Any])
     if (passwordSalt != null) __obj.updateDynamic("passwordSalt")(passwordSalt.asInstanceOf[js.Any])
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL.asInstanceOf[js.Any])
     if (providerData != null) __obj.updateDynamic("providerData")(providerData.asInstanceOf[js.Any])
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
+    if (!js.isUndefined(tenantId)) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserImportRecord]
   }
 }

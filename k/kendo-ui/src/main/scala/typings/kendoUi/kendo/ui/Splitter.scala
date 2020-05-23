@@ -6,11 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Splitter")
 @js.native
-class Splitter protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: SplitterOptions) = this()
+trait Splitter extends Widget {
   @JSName("options")
   var options_Splitter: SplitterOptions = js.native
   var wrapper: JQuery = js.native
@@ -61,13 +58,5 @@ class Splitter protected () extends Widget {
   def toggle(pane: JQuery, expand: Boolean): Unit = js.native
   def toggle(pane: Element): Unit = js.native
   def toggle(pane: Element, expand: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Splitter")
-@js.native
-object Splitter extends js.Object {
-  var fn: Splitter = js.native
-  def extend(proto: js.Object): Splitter = js.native
 }
 

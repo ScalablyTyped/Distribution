@@ -6,17 +6,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.OlkCategory")
-@js.native
-class OlkCategory protected () extends js.Object {
-  var AutoSize: Boolean = js.native
-  var BackColor: OLE_COLOR = js.native
-  var BackStyle: OlBackStyle = js.native
-  var Enabled: Boolean = js.native
-  var ForeColor: OLE_COLOR = js.native
-  var MouseIcon: StdPicture = js.native
-  var MousePointer: OlMousePointer = js.native
+trait OlkCategory extends js.Object {
+  var AutoSize: Boolean
+  var BackColor: OLE_COLOR
+  var BackStyle: OlBackStyle
+  var Enabled: Boolean
+  var ForeColor: OLE_COLOR
+  var MouseIcon: StdPicture
+  var MousePointer: OlMousePointer
   @JSName("Outlook.OlkCategory_typekey")
-  var OutlookDotOlkCategory_typekey: OlkCategory = js.native
+  var OutlookDotOlkCategory_typekey: OlkCategory
+}
+
+object OlkCategory {
+  @scala.inline
+  def apply(
+    AutoSize: Boolean,
+    BackColor: OLE_COLOR,
+    BackStyle: OlBackStyle,
+    Enabled: Boolean,
+    ForeColor: OLE_COLOR,
+    MouseIcon: StdPicture,
+    MousePointer: OlMousePointer,
+    OutlookDotOlkCategory_typekey: OlkCategory
+  ): OlkCategory = {
+    val __obj = js.Dynamic.literal(AutoSize = AutoSize.asInstanceOf[js.Any], BackColor = BackColor.asInstanceOf[js.Any], BackStyle = BackStyle.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], ForeColor = ForeColor.asInstanceOf[js.Any], MouseIcon = MouseIcon.asInstanceOf[js.Any], MousePointer = MousePointer.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkCategory_typekey")(OutlookDotOlkCategory_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OlkCategory]
+  }
 }
 

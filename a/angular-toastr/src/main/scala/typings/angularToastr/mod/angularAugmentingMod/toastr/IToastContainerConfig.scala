@@ -20,7 +20,7 @@ object IToastContainerConfig {
   def apply(
     autoDismiss: js.UndefOr[Boolean] = js.undefined,
     containerId: String = null,
-    maxOpened: Int | Double = null,
+    maxOpened: js.UndefOr[Double] = js.undefined,
     newestOnTop: js.UndefOr[Boolean] = js.undefined,
     positionClass: String = null,
     preventDuplicates: js.UndefOr[Boolean] = js.undefined,
@@ -28,13 +28,13 @@ object IToastContainerConfig {
     target: String = null
   ): IToastContainerConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDismiss)) __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDismiss)) __obj.updateDynamic("autoDismiss")(autoDismiss.get.asInstanceOf[js.Any])
     if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (maxOpened != null) __obj.updateDynamic("maxOpened")(maxOpened.asInstanceOf[js.Any])
-    if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxOpened)) __obj.updateDynamic("maxOpened")(maxOpened.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop.get.asInstanceOf[js.Any])
     if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDuplicates)) __obj.updateDynamic("preventDuplicates")(preventDuplicates.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventOpenDuplicates)) __obj.updateDynamic("preventOpenDuplicates")(preventOpenDuplicates.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDuplicates)) __obj.updateDynamic("preventDuplicates")(preventDuplicates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventOpenDuplicates)) __obj.updateDynamic("preventOpenDuplicates")(preventOpenDuplicates.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastContainerConfig]
   }

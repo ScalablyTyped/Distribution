@@ -18,9 +18,9 @@ object withI18nOptions {
     withRef: js.UndefOr[Boolean] = js.undefined
   ): withI18nOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
-    if (!js.isUndefined(withHash)) __obj.updateDynamic("withHash")(withHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withHash)) __obj.updateDynamic("withHash")(withHash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[withI18nOptions]
   }
 }

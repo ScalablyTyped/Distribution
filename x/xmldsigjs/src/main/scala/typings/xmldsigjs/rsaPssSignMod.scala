@@ -1,8 +1,6 @@
 package typings.xmldsigjs
 
 import typings.xmldsigjs.algorithmMod.SignatureAlgorithm
-import typings.xmldsigjs.xmldsigjsStrings.`RSA-PSS`
-import typings.xmldsigjs.xmldsigjsStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignrsa-pss`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +33,7 @@ object rsaPssSignMod extends js.Object {
     def this(saltLength: Double) = this()
   }
   
-  val RSA_PSS: `RSA-PSS` = js.native
-  val RSA_PSS_WITH_PARAMS_NAMESPACE: `httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignrsa-pss` = js.native
+  val RSA_PSS: /* "RSA-PSS" */ String = js.native
+  val RSA_PSS_WITH_PARAMS_NAMESPACE: /* "http://www.w3.org/2007/05/xmldsig-more#rsa-pss" */ String = js.native
 }
 

@@ -22,8 +22,7 @@ trait ICompletable extends ICompletableAttributes {
 object ICompletable {
   @scala.inline
   def apply(connector: IDataConnector[IReply, Unit, IRequest, String], parent: Widget, editor: IEditor = null): ICompletable = {
-    val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICompletable]
   }
 }

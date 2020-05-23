@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-modal-dropdown
 
-Typings are for version 0.6
+Typings are for version 0.7
 
 ## Library description:
 A react-native dropdown component for both iOS and Android.

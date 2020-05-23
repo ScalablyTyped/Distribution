@@ -1,6 +1,6 @@
 package typings.sipJs.libSessionMod.InviteClientContext
 
-import typings.sipJs.AnonFromDisplayName
+import typings.sipJs.anon.FromDisplayName
 import typings.sipJs.libSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait Options extends js.Object {
   /** Deprecated. */
   var onInfo: js.UndefOr[js.Any] = js.undefined
   /** Deprecated. */
-  var params: js.UndefOr[AnonFromDisplayName] = js.undefined
+  var params: js.UndefOr[FromDisplayName] = js.undefined
   /** Deprecated. */
   var renderbody: js.UndefOr[String] = js.undefined
   /** Deprecated. */
@@ -38,17 +38,17 @@ object Options {
     extraHeaders: js.Array[String] = null,
     inviteWithoutSdp: js.UndefOr[Boolean] = js.undefined,
     onInfo: js.Any = null,
-    params: AnonFromDisplayName = null,
+    params: FromDisplayName = null,
     renderbody: String = null,
     rendertype: String = null,
     sessionDescriptionHandlerOptions: SessionDescriptionHandlerOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
+    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(inviteWithoutSdp)) __obj.updateDynamic("inviteWithoutSdp")(inviteWithoutSdp.asInstanceOf[js.Any])
+    if (!js.isUndefined(inviteWithoutSdp)) __obj.updateDynamic("inviteWithoutSdp")(inviteWithoutSdp.get.asInstanceOf[js.Any])
     if (onInfo != null) __obj.updateDynamic("onInfo")(onInfo.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (renderbody != null) __obj.updateDynamic("renderbody")(renderbody.asInstanceOf[js.Any])

@@ -43,7 +43,7 @@ object DocumentGetResponse {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any])
     if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
     if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts.asInstanceOf[js.Any])
-    if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted.get.asInstanceOf[js.Any])
     if (_deleted_conflicts != null) __obj.updateDynamic("_deleted_conflicts")(_deleted_conflicts.asInstanceOf[js.Any])
     if (_local_seq != null) __obj.updateDynamic("_local_seq")(_local_seq.asInstanceOf[js.Any])
     if (_revisions != null) __obj.updateDynamic("_revisions")(_revisions.asInstanceOf[js.Any])

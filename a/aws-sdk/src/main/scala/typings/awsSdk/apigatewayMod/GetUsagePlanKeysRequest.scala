@@ -28,12 +28,12 @@ object GetUsagePlanKeysRequest {
   @scala.inline
   def apply(
     usagePlanId: String,
-    limit: Int | scala.Double = null,
+    limit: js.UndefOr[NullableInteger] = js.undefined,
     nameQuery: String = null,
     position: String = null
   ): GetUsagePlanKeysRequest = {
     val __obj = js.Dynamic.literal(usagePlanId = usagePlanId.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (nameQuery != null) __obj.updateDynamic("nameQuery")(nameQuery.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsagePlanKeysRequest]

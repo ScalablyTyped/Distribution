@@ -1,14 +1,14 @@
 package typings.reactPlyr.mod
 
-import typings.reactPlyr.AnonActive
-import typings.reactPlyr.AnonControls
-import typings.reactPlyr.AnonDefault
-import typings.reactPlyr.AnonEnabled
-import typings.reactPlyr.AnonFocused
-import typings.reactPlyr.AnonKey
-import typings.reactPlyr.AnonKind
-import typings.reactPlyr.AnonOptions
-import typings.reactPlyr.AnonSize
+import typings.reactPlyr.anon.Active
+import typings.reactPlyr.anon.Controls
+import typings.reactPlyr.anon.Default
+import typings.reactPlyr.anon.Enabled
+import typings.reactPlyr.anon.Focused
+import typings.reactPlyr.anon.Key
+import typings.reactPlyr.anon.Kind
+import typings.reactPlyr.anon.Options
+import typings.reactPlyr.anon.Size
 import typings.reactPlyr.reactPlyrStrings.audio
 import typings.reactPlyr.reactPlyrStrings.video
 import typings.reactPlyr.reactPlyrStrings.vimeo
@@ -21,7 +21,7 @@ trait Props extends js.Object {
   var autopause: js.UndefOr[Boolean] = js.undefined
   var autoplay: js.UndefOr[Boolean] = js.undefined
   var blankVideo: js.UndefOr[String] = js.undefined
-  var captions: js.UndefOr[js.Array[AnonKind]] = js.undefined
+  var captions: js.UndefOr[js.Array[Kind]] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var clickToPlay: js.UndefOr[Boolean] = js.undefined
   var controls: js.UndefOr[js.Array[String]] = js.undefined
@@ -30,14 +30,14 @@ trait Props extends js.Object {
   var displayDuration: js.UndefOr[Boolean] = js.undefined
   var duration: js.UndefOr[Double] = js.undefined
   var enabled: js.UndefOr[Boolean] = js.undefined
-  var fullscreen: js.UndefOr[AnonEnabled] = js.undefined
+  var fullscreen: js.UndefOr[Enabled] = js.undefined
   var hideControls: js.UndefOr[Boolean] = js.undefined
   var iconPrefix: js.UndefOr[String] = js.undefined
   var iconUrl: js.UndefOr[String] = js.undefined
   var invertTime: js.UndefOr[Boolean] = js.undefined
-  var keyboard: js.UndefOr[AnonFocused] = js.undefined
+  var keyboard: js.UndefOr[Focused] = js.undefined
   var loadSprite: js.UndefOr[Boolean] = js.undefined
-  var loop: js.UndefOr[AnonActive] = js.undefined
+  var loop: js.UndefOr[Active] = js.undefined
   var muted: js.UndefOr[Boolean] = js.undefined
   var onCaptionsDisabled: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onCaptionsEnabled: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -52,17 +52,17 @@ trait Props extends js.Object {
   var onTimeUpdate: js.UndefOr[js.Function1[/* time */ js.UndefOr[Double], Unit]] = js.undefined
   var onVolumeChange: js.UndefOr[js.Function1[/* params */ OnVolumeChangeParam, Unit]] = js.undefined
   var poster: js.UndefOr[String] = js.undefined
-  var quality: js.UndefOr[AnonDefault] = js.undefined
+  var quality: js.UndefOr[Default] = js.undefined
   var ratio: js.UndefOr[String] = js.undefined
   var resetOnEnd: js.UndefOr[Boolean] = js.undefined
   var seekTime: js.UndefOr[Double] = js.undefined
   var settings: js.UndefOr[js.Array[String]] = js.undefined
-  var sources: js.UndefOr[js.Array[AnonSize]] = js.undefined
-  var speed: js.UndefOr[AnonOptions] = js.undefined
-  var storage: js.UndefOr[AnonKey] = js.undefined
+  var sources: js.UndefOr[js.Array[Size]] = js.undefined
+  var speed: js.UndefOr[Options] = js.undefined
+  var storage: js.UndefOr[Key] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var toggleInvert: js.UndefOr[Boolean] = js.undefined
-  var tooltips: js.UndefOr[AnonControls] = js.undefined
+  var tooltips: js.UndefOr[Controls] = js.undefined
   var `type`: js.UndefOr[youtube | vimeo | video | audio] = js.undefined
   var url: js.UndefOr[String] = js.undefined
   var videoId: js.UndefOr[String] = js.undefined
@@ -75,23 +75,23 @@ object Props {
     autopause: js.UndefOr[Boolean] = js.undefined,
     autoplay: js.UndefOr[Boolean] = js.undefined,
     blankVideo: String = null,
-    captions: js.Array[AnonKind] = null,
+    captions: js.Array[Kind] = null,
     className: String = null,
     clickToPlay: js.UndefOr[Boolean] = js.undefined,
     controls: js.Array[String] = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     disableContextMenu: js.UndefOr[Boolean] = js.undefined,
     displayDuration: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    fullscreen: AnonEnabled = null,
+    fullscreen: Enabled = null,
     hideControls: js.UndefOr[Boolean] = js.undefined,
     iconPrefix: String = null,
     iconUrl: String = null,
     invertTime: js.UndefOr[Boolean] = js.undefined,
-    keyboard: AnonFocused = null,
+    keyboard: Focused = null,
     loadSprite: js.UndefOr[Boolean] = js.undefined,
-    loop: AnonActive = null,
+    loop: Active = null,
     muted: js.UndefOr[Boolean] = js.undefined,
     onCaptionsDisabled: () => Unit = null,
     onCaptionsEnabled: () => Unit = null,
@@ -106,44 +106,44 @@ object Props {
     onTimeUpdate: /* time */ js.UndefOr[Double] => Unit = null,
     onVolumeChange: /* params */ OnVolumeChangeParam => Unit = null,
     poster: String = null,
-    quality: AnonDefault = null,
+    quality: Default = null,
     ratio: String = null,
     resetOnEnd: js.UndefOr[Boolean] = js.undefined,
-    seekTime: Int | Double = null,
+    seekTime: js.UndefOr[Double] = js.undefined,
     settings: js.Array[String] = null,
-    sources: js.Array[AnonSize] = null,
-    speed: AnonOptions = null,
-    storage: AnonKey = null,
+    sources: js.Array[Size] = null,
+    speed: Options = null,
+    storage: Key = null,
     title: String = null,
     toggleInvert: js.UndefOr[Boolean] = js.undefined,
-    tooltips: AnonControls = null,
+    tooltips: Controls = null,
     `type`: youtube | vimeo | video | audio = null,
     url: String = null,
     videoId: String = null,
-    volume: Int | Double = null
+    volume: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autopause)) __obj.updateDynamic("autopause")(autopause.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autopause)) __obj.updateDynamic("autopause")(autopause.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
     if (blankVideo != null) __obj.updateDynamic("blankVideo")(blankVideo.asInstanceOf[js.Any])
     if (captions != null) __obj.updateDynamic("captions")(captions.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToPlay)) __obj.updateDynamic("clickToPlay")(clickToPlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToPlay)) __obj.updateDynamic("clickToPlay")(clickToPlay.get.asInstanceOf[js.Any])
     if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableContextMenu)) __obj.updateDynamic("disableContextMenu")(disableContextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayDuration)) __obj.updateDynamic("displayDuration")(displayDuration.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableContextMenu)) __obj.updateDynamic("disableContextMenu")(disableContextMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayDuration)) __obj.updateDynamic("displayDuration")(displayDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fullscreen != null) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideControls)) __obj.updateDynamic("hideControls")(hideControls.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideControls)) __obj.updateDynamic("hideControls")(hideControls.get.asInstanceOf[js.Any])
     if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix.asInstanceOf[js.Any])
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertTime)) __obj.updateDynamic("invertTime")(invertTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(invertTime)) __obj.updateDynamic("invertTime")(invertTime.get.asInstanceOf[js.Any])
     if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadSprite)) __obj.updateDynamic("loadSprite")(loadSprite.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadSprite)) __obj.updateDynamic("loadSprite")(loadSprite.get.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
     if (onCaptionsDisabled != null) __obj.updateDynamic("onCaptionsDisabled")(js.Any.fromFunction0(onCaptionsDisabled))
     if (onCaptionsEnabled != null) __obj.updateDynamic("onCaptionsEnabled")(js.Any.fromFunction0(onCaptionsEnabled))
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction0(onEnd))
@@ -159,19 +159,19 @@ object Props {
     if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnEnd)) __obj.updateDynamic("resetOnEnd")(resetOnEnd.asInstanceOf[js.Any])
-    if (seekTime != null) __obj.updateDynamic("seekTime")(seekTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnEnd)) __obj.updateDynamic("resetOnEnd")(resetOnEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seekTime)) __obj.updateDynamic("seekTime")(seekTime.get.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleInvert)) __obj.updateDynamic("toggleInvert")(toggleInvert.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleInvert)) __obj.updateDynamic("toggleInvert")(toggleInvert.get.asInstanceOf[js.Any])
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

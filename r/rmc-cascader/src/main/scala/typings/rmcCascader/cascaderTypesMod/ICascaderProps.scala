@@ -30,7 +30,7 @@ object ICascaderProps {
   def apply(
     data: js.Array[ICascaderDataItem],
     className: String = null,
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     defaultValue: CascaderValue = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     indicatorStyle: js.Object = null,
@@ -45,9 +45,9 @@ object ICascaderProps {
   ): ICascaderProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction1(onScrollChange))

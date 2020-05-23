@@ -18,9 +18,9 @@ trait CreateRouteTableRequest extends js.Object {
 
 object CreateRouteTableRequest {
   @scala.inline
-  def apply(VpcId: VpcId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CreateRouteTableRequest = {
+  def apply(VpcId: VpcId, DryRun: js.UndefOr[Boolean] = js.undefined): CreateRouteTableRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRouteTableRequest]
   }
 }

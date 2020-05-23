@@ -11,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapTreeView")
 @js.native
-class BootstrapTreeView () extends Control {
+trait BootstrapTreeView extends Control {
   def collapseAll(): Unit = js.native
   def expandAll(): Unit = js.native
   def getNode(index: Double): BootstrapTreeViewNode | Null = js.native

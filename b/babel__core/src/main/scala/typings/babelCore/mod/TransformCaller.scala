@@ -20,8 +20,8 @@ object TransformCaller {
     supportsStaticESM: js.UndefOr[Boolean] = js.undefined
   ): TransformCaller = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsDynamicImport)) __obj.updateDynamic("supportsDynamicImport")(supportsDynamicImport.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsStaticESM)) __obj.updateDynamic("supportsStaticESM")(supportsStaticESM.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsDynamicImport)) __obj.updateDynamic("supportsDynamicImport")(supportsDynamicImport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsStaticESM)) __obj.updateDynamic("supportsStaticESM")(supportsStaticESM.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformCaller]
   }
 }

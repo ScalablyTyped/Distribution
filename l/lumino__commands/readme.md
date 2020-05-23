@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__commands
 
-Typings are for version 1.10.1
+Typings are for version 1.10.3
 
 ## Library description:
 Lumino Commands

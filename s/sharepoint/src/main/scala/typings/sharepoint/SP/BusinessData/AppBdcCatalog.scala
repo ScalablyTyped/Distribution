@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.BusinessData.AppBdcCatalog")
 @js.native
-class AppBdcCatalog () extends ClientObject {
+trait AppBdcCatalog extends ClientObject {
   def getConnectionId(lobSystemName: String, lobSystemInstanceName: String): StringResult = js.native
   def getEntity(namespace: String, name: String): Entity = js.native
   def getLobSystemInstanceProperty(lobSystemName: String, lobSystemInstanceName: String, propertyName: String): StringResult = js.native

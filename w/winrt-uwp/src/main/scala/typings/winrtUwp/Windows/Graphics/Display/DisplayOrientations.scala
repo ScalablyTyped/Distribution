@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Display
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object DisplayOrientations extends js.Object {
   /** Specifies that the monitor rotated another 90 degrees in the clockwise direction (to equal 270 degrees) to orient the display in portrait mode where the height of the display viewing area is greater than the width. This portrait mode is flipped 180 degrees from the Portrait mode. */
   @js.native
   sealed trait portraitFlipped extends DisplayOrientations
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DisplayOrientations with Double] = js.native
-  /* 1 */ @js.native
-  object landscape extends TopLevel[landscape with Double]
-  
-  /* 3 */ @js.native
-  object landscapeFlipped extends TopLevel[landscapeFlipped with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object portrait extends TopLevel[portrait with Double]
-  
-  /* 4 */ @js.native
-  object portraitFlipped extends TopLevel[portraitFlipped with Double]
   
 }
 

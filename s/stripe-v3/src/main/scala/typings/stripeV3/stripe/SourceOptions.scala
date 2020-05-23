@@ -1,9 +1,8 @@
 package typings.stripeV3.stripe
 
-import typings.stripeV3.AnonCard
-import typings.stripeV3.AnonCountry
-import typings.stripeV3.AnonIban
-import typings.stripeV3.AnonReturnurl
+import typings.stripeV3.anon.Country
+import typings.stripeV3.anon.Iban
+import typings.stripeV3.anon.Returnurl
 import typings.stripeV3.stripeV3Strings.code_verification
 import typings.stripeV3.stripeV3Strings.none
 import typings.stripeV3.stripeV3Strings.receiver
@@ -21,11 +20,11 @@ trait SourceOptions extends js.Object {
   var mandate: js.UndefOr[SourceMandate] = js.undefined
   var metadata: js.UndefOr[js.Object] = js.undefined
   var owner: js.UndefOr[OwnerInfo] = js.undefined
-  var redirect: js.UndefOr[AnonReturnurl] = js.undefined
-  var sepa_debit: js.UndefOr[AnonIban] = js.undefined
-  var sofort: js.UndefOr[AnonCountry] = js.undefined
+  var redirect: js.UndefOr[Returnurl] = js.undefined
+  var sepa_debit: js.UndefOr[Iban] = js.undefined
+  var sofort: js.UndefOr[Country] = js.undefined
   var statement_descriptor: js.UndefOr[String] = js.undefined
-  var three_d_secure: js.UndefOr[AnonCard] = js.undefined
+  var three_d_secure: js.UndefOr[typings.stripeV3.anon.Card] = js.undefined
   var token: js.UndefOr[String] = js.undefined
   var `type`: String
   var usage: js.UndefOr[reusable | single_use] = js.undefined
@@ -35,23 +34,23 @@ object SourceOptions {
   @scala.inline
   def apply(
     `type`: String,
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     currency: String = null,
     flow: redirect | receiver | code_verification | none = null,
     mandate: SourceMandate = null,
     metadata: js.Object = null,
     owner: OwnerInfo = null,
-    redirect: AnonReturnurl = null,
-    sepa_debit: AnonIban = null,
-    sofort: AnonCountry = null,
+    redirect: Returnurl = null,
+    sepa_debit: Iban = null,
+    sofort: Country = null,
     statement_descriptor: String = null,
-    three_d_secure: AnonCard = null,
+    three_d_secure: typings.stripeV3.anon.Card = null,
     token: String = null,
     usage: reusable | single_use = null
   ): SourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
     if (mandate != null) __obj.updateDynamic("mandate")(mandate.asInstanceOf[js.Any])

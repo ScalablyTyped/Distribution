@@ -12,11 +12,15 @@ trait UploadOptions extends js.Object {
 
 object UploadOptions {
   @scala.inline
-  def apply(maxFieldSize: Int | Double = null, maxFileSize: Int | Double = null, maxFiles: Int | Double = null): UploadOptions = {
+  def apply(
+    maxFieldSize: js.UndefOr[Double] = js.undefined,
+    maxFileSize: js.UndefOr[Double] = js.undefined,
+    maxFiles: js.UndefOr[Double] = js.undefined
+  ): UploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxFieldSize != null) __obj.updateDynamic("maxFieldSize")(maxFieldSize.asInstanceOf[js.Any])
-    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFieldSize)) __obj.updateDynamic("maxFieldSize")(maxFieldSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFiles)) __obj.updateDynamic("maxFiles")(maxFiles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadOptions]
   }
 }

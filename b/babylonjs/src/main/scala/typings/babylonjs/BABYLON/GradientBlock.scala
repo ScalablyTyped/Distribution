@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.GradientBlock")
 @js.native
-class GradientBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new GradientBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait GradientBlock extends NodeMaterialBlock {
   var _writeColorConstant: js.Any = js.native
   /**
     * Gets or sets the list of color steps

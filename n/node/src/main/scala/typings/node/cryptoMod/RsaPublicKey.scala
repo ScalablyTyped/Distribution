@@ -11,9 +11,9 @@ trait RsaPublicKey extends js.Object {
 
 object RsaPublicKey {
   @scala.inline
-  def apply(key: KeyLike, padding: Int | Double = null): RsaPublicKey = {
+  def apply(key: KeyLike, padding: js.UndefOr[Double] = js.undefined): RsaPublicKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaPublicKey]
   }
 }

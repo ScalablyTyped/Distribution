@@ -4,7 +4,7 @@ import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait StatefulContainerProps extends js.Object {
 object StatefulContainerProps {
   @scala.inline
   def apply(
-    stateReducer: (/* stateType */ String, /* nextState */ State, /* currentState */ State, /* event */ SyntheticEvent[HTMLInputElement, Event_]) => State,
+    stateReducer: (/* stateType */ String, /* nextState */ State, /* currentState */ State, /* event */ SyntheticEvent[HTMLInputElement, Event]) => State,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     initialState: State = null,
@@ -30,7 +30,7 @@ object StatefulContainerProps {
     overrides: RadioOverrides with RadioGroupOverrides = null
   ): StatefulContainerProps = {
     val __obj = js.Dynamic.literal(stateReducer = js.Any.fromFunction4(stateReducer))
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

@@ -25,29 +25,29 @@ object GraticuleOptions {
   @scala.inline
   def apply(
     latLabelFormatter: /* lat */ Double => String = null,
-    latLabelPosition: Int | Double = null,
+    latLabelPosition: js.UndefOr[Double] = js.undefined,
     latLabelStyle: Text = null,
     lonLabelFormatter: /* lon */ Double => String = null,
-    lonLabelPosition: Int | Double = null,
+    lonLabelPosition: js.UndefOr[Double] = js.undefined,
     lonLabelStyle: Text = null,
     map: Map = null,
-    maxLines: Int | Double = null,
+    maxLines: js.UndefOr[Double] = js.undefined,
     showLabels: js.UndefOr[Boolean] = js.undefined,
     strokeStyle: Stroke = null,
-    targetSize: Int | Double = null
+    targetSize: js.UndefOr[Double] = js.undefined
   ): GraticuleOptions = {
     val __obj = js.Dynamic.literal()
     if (latLabelFormatter != null) __obj.updateDynamic("latLabelFormatter")(js.Any.fromFunction1(latLabelFormatter))
-    if (latLabelPosition != null) __obj.updateDynamic("latLabelPosition")(latLabelPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(latLabelPosition)) __obj.updateDynamic("latLabelPosition")(latLabelPosition.get.asInstanceOf[js.Any])
     if (latLabelStyle != null) __obj.updateDynamic("latLabelStyle")(latLabelStyle.asInstanceOf[js.Any])
     if (lonLabelFormatter != null) __obj.updateDynamic("lonLabelFormatter")(js.Any.fromFunction1(lonLabelFormatter))
-    if (lonLabelPosition != null) __obj.updateDynamic("lonLabelPosition")(lonLabelPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(lonLabelPosition)) __obj.updateDynamic("lonLabelPosition")(lonLabelPosition.get.asInstanceOf[js.Any])
     if (lonLabelStyle != null) __obj.updateDynamic("lonLabelStyle")(lonLabelStyle.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLines)) __obj.updateDynamic("maxLines")(maxLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.get.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    if (targetSize != null) __obj.updateDynamic("targetSize")(targetSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetSize)) __obj.updateDynamic("targetSize")(targetSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraticuleOptions]
   }
 }

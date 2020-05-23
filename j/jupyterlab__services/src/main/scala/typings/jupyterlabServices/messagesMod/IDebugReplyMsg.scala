@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonBody
+import typings.jupyterlabServices.anon.Body
 import typings.jupyterlabServices.jupyterlabServicesStrings.control
 import typings.jupyterlabServices.jupyterlabServicesStrings.debug_reply
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IDebugReplyMsg
   extends IControlMessage[debug_reply]
      with _Message {
   @JSName("content")
-  var content_IDebugReplyMsg: AnonBody
+  var content_IDebugReplyMsg: Body
 }
 
 object IDebugReplyMsg {
   @scala.inline
   def apply(
     channel: control,
-    content: AnonBody,
+    content: Body,
     header: IHeader[debug_reply],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

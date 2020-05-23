@@ -4,78 +4,75 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.BoundingBoxRenderer")
-@js.native
-class BoundingBoxRenderer protected () extends ISceneComponent {
-  /**
-    * Instantiates a new bounding box renderer in a scene.
-    * @param scene the scene the  renderer renders in
-    */
-  def this(scene: Scene) = this()
-  var _activeMesh: js.Any = js.native
-  var _colorShader: js.Any = js.native
-  var _createIndexBuffer: js.Any = js.native
-  var _evaluateSubMesh: js.Any = js.native
-  var _fillIndexBuffer: js.Any = js.native
-  var _fillIndexData: js.Any = js.native
-  var _indexBuffer: js.Any = js.native
-  var _prepareRessources: js.Any = js.native
-  var _vertexBuffers: js.Any = js.native
+trait BoundingBoxRenderer extends ISceneComponent {
+  var _activeMesh: js.Any
+  var _colorShader: js.Any
+  var _createIndexBuffer: js.Any
+  var _evaluateSubMesh: js.Any
+  var _fillIndexBuffer: js.Any
+  var _fillIndexData: js.Any
+  var _indexBuffer: js.Any
+  var _prepareRessources: js.Any
+  var _vertexBuffers: js.Any
   /**
     * Color of the bounding box lines placed behind an object
     */
-  var backColor: Color3 = js.native
+  var backColor: Color3
   /**
     * Color of the bounding box lines placed in front of an object
     */
-  var frontColor: Color3 = js.native
-  /**
-    * The name of the component. Each component must have a unique name.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
+  var frontColor: Color3
   /**
     * @hidden
     */
-  var renderList: SmartArray[BoundingBox] = js.native
-  /**
-    * The scene the component belongs to.
-    */
-  /* CompleteClass */
-  override var scene: Scene = js.native
+  var renderList: SmartArray[BoundingBox]
   /**
     * Defines if the renderer should show the back lines or not
     */
-  var showBackLines: Boolean = js.native
-  /**
-    * Disposes the component and the associated ressources.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  /**
-    * Rebuilds the elements related to this component in case of
-    * context lost for instance.
-    */
-  /* CompleteClass */
-  override def rebuild(): Unit = js.native
-  /**
-    * Register the component to one instance of a scene.
-    */
-  /* CompleteClass */
-  override def register(): Unit = js.native
+  var showBackLines: Boolean
   /**
     * Render the bounding boxes of a specific rendering group
     * @param renderingGroupId defines the rendering group to render
     */
-  def render(renderingGroupId: Double): Unit = js.native
+  def render(renderingGroupId: Double): Unit
   /**
     * In case of occlusion queries, we can render the occlusion bounding box through this method
     * @param mesh Define the mesh to render the occlusion bounding box for
     */
-  def renderOcclusionBoundingBox(mesh: AbstractMesh): Unit = js.native
+  def renderOcclusionBoundingBox(mesh: AbstractMesh): Unit
   /**
     * @hidden
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
+}
+
+object BoundingBoxRenderer {
+  @scala.inline
+  def apply(
+    _activeMesh: js.Any,
+    _colorShader: js.Any,
+    _createIndexBuffer: js.Any,
+    _evaluateSubMesh: js.Any,
+    _fillIndexBuffer: js.Any,
+    _fillIndexData: js.Any,
+    _indexBuffer: js.Any,
+    _prepareRessources: js.Any,
+    _vertexBuffers: js.Any,
+    backColor: Color3,
+    dispose: () => Unit,
+    frontColor: Color3,
+    name: String,
+    rebuild: () => Unit,
+    register: () => Unit,
+    render: Double => Unit,
+    renderList: SmartArray[BoundingBox],
+    renderOcclusionBoundingBox: AbstractMesh => Unit,
+    reset: () => Unit,
+    scene: Scene,
+    showBackLines: Boolean
+  ): BoundingBoxRenderer = {
+    val __obj = js.Dynamic.literal(_activeMesh = _activeMesh.asInstanceOf[js.Any], _colorShader = _colorShader.asInstanceOf[js.Any], _createIndexBuffer = _createIndexBuffer.asInstanceOf[js.Any], _evaluateSubMesh = _evaluateSubMesh.asInstanceOf[js.Any], _fillIndexBuffer = _fillIndexBuffer.asInstanceOf[js.Any], _fillIndexData = _fillIndexData.asInstanceOf[js.Any], _indexBuffer = _indexBuffer.asInstanceOf[js.Any], _prepareRessources = _prepareRessources.asInstanceOf[js.Any], _vertexBuffers = _vertexBuffers.asInstanceOf[js.Any], backColor = backColor.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), frontColor = frontColor.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rebuild = js.Any.fromFunction0(rebuild), register = js.Any.fromFunction0(register), render = js.Any.fromFunction1(render), renderList = renderList.asInstanceOf[js.Any], renderOcclusionBoundingBox = js.Any.fromFunction1(renderOcclusionBoundingBox), reset = js.Any.fromFunction0(reset), scene = scene.asInstanceOf[js.Any], showBackLines = showBackLines.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BoundingBoxRenderer]
+  }
 }
 

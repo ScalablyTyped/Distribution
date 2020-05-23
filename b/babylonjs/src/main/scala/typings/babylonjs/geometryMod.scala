@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babylonjs.anon.Maximum
 import typings.babylonjs.boundingInfoMod.BoundingInfo
 import typings.babylonjs.bufferMod.VertexBuffer
 import typings.babylonjs.dataBufferMod.DataBuffer
@@ -127,7 +128,7 @@ object geometryMod extends js.Object {
     /**
       * Gets the current extend of the geometry
       */
-    def extend: AnonMaximum = js.native
+    def extend: Maximum = js.native
     /**
       * Gets the hosting engine
       * @returns the hosting Engine

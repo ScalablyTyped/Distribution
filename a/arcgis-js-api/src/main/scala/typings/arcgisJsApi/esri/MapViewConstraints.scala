@@ -92,31 +92,31 @@ object MapViewConstraints {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     effectiveLODs: js.Array[LOD] = null,
-    effectiveMaxScale: Int | Double = null,
-    effectiveMaxZoom: Int | Double = null,
-    effectiveMinScale: Int | Double = null,
-    effectiveMinZoom: Int | Double = null,
+    effectiveMaxScale: js.UndefOr[Double] = js.undefined,
+    effectiveMaxZoom: js.UndefOr[Double] = js.undefined,
+    effectiveMinScale: js.UndefOr[Double] = js.undefined,
+    effectiveMinZoom: js.UndefOr[Double] = js.undefined,
     lods: js.Array[LOD] = null,
-    maxScale: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minScale: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxScale: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minScale: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     rotationEnabled: js.UndefOr[Boolean] = js.undefined,
     snapToZoom: js.UndefOr[Boolean] = js.undefined
   ): MapViewConstraints = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (effectiveLODs != null) __obj.updateDynamic("effectiveLODs")(effectiveLODs.asInstanceOf[js.Any])
-    if (effectiveMaxScale != null) __obj.updateDynamic("effectiveMaxScale")(effectiveMaxScale.asInstanceOf[js.Any])
-    if (effectiveMaxZoom != null) __obj.updateDynamic("effectiveMaxZoom")(effectiveMaxZoom.asInstanceOf[js.Any])
-    if (effectiveMinScale != null) __obj.updateDynamic("effectiveMinScale")(effectiveMinScale.asInstanceOf[js.Any])
-    if (effectiveMinZoom != null) __obj.updateDynamic("effectiveMinZoom")(effectiveMinZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(effectiveMaxScale)) __obj.updateDynamic("effectiveMaxScale")(effectiveMaxScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(effectiveMaxZoom)) __obj.updateDynamic("effectiveMaxZoom")(effectiveMaxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(effectiveMinScale)) __obj.updateDynamic("effectiveMinScale")(effectiveMinScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(effectiveMinZoom)) __obj.updateDynamic("effectiveMinZoom")(effectiveMinZoom.get.asInstanceOf[js.Any])
     if (lods != null) __obj.updateDynamic("lods")(lods.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotationEnabled)) __obj.updateDynamic("rotationEnabled")(rotationEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapToZoom)) __obj.updateDynamic("snapToZoom")(snapToZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScale)) __obj.updateDynamic("maxScale")(maxScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScale)) __obj.updateDynamic("minScale")(minScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationEnabled)) __obj.updateDynamic("rotationEnabled")(rotationEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapToZoom)) __obj.updateDynamic("snapToZoom")(snapToZoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapViewConstraints]
   }
 }

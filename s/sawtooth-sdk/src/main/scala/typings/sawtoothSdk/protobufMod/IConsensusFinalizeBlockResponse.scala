@@ -15,10 +15,13 @@ trait IConsensusFinalizeBlockResponse extends js.Object {
 
 object IConsensusFinalizeBlockResponse {
   @scala.inline
-  def apply(blockId: Uint8Array = null, status: Status = null): IConsensusFinalizeBlockResponse = {
+  def apply(
+    blockId: js.UndefOr[Null | Uint8Array] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
+  ): IConsensusFinalizeBlockResponse = {
     val __obj = js.Dynamic.literal()
-    if (blockId != null) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockId)) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusFinalizeBlockResponse]
   }
 }

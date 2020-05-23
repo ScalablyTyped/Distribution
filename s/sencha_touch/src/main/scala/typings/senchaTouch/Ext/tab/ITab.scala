@@ -11,28 +11,28 @@ trait ITab extends IButton {
   /** [Config Option] (String) */
   var activeCls: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of active
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of activeCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getActiveCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of title
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getTitle: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of active
-  		* @param active Boolean The new value.
-  		*/
+    * @param active Boolean The new value.
+    */
   var setActive: js.UndefOr[js.Function1[/* active */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of activeCls
-  		* @param activeCls String The new value.
-  		*/
+    * @param activeCls String The new value.
+    */
   var setActiveCls: js.UndefOr[js.Function1[/* activeCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of title
-  		* @param title String The new value.
-  		*/
+    * @param title String The new value.
+    */
   var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var title: js.UndefOr[String] = js.undefined
@@ -54,7 +54,7 @@ object ITab {
   ): ITab = {
     val __obj = js.Dynamic.literal()
     if (IButton != null) js.Dynamic.global.Object.assign(__obj, IButton)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls.asInstanceOf[js.Any])
     if (getActive != null) __obj.updateDynamic("getActive")(js.Any.fromFunction0(getActive))
     if (getActiveCls != null) __obj.updateDynamic("getActiveCls")(js.Any.fromFunction0(getActiveCls))

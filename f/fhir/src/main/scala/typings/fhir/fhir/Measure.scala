@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A quality measure definition
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Measure extends DomainResource {
   /**
     * Contains extended information for property 'approvalDate'.
@@ -368,7 +368,7 @@ object Measure {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (disclaimer != null) __obj.updateDynamic("disclaimer")(disclaimer.asInstanceOf[js.Any])
     if (effectivePeriod != null) __obj.updateDynamic("effectivePeriod")(effectivePeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (guidance != null) __obj.updateDynamic("guidance")(guidance.asInstanceOf[js.Any])

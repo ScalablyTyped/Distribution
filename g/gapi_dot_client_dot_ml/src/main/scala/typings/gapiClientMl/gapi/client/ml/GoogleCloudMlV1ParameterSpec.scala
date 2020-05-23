@@ -48,8 +48,8 @@ object GoogleCloudMlV1ParameterSpec {
   def apply(
     categoricalValues: js.Array[String] = null,
     discreteValues: js.Array[Double] = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined,
     parameterName: String = null,
     scaleType: String = null,
     `type`: String = null
@@ -57,8 +57,8 @@ object GoogleCloudMlV1ParameterSpec {
     val __obj = js.Dynamic.literal()
     if (categoricalValues != null) __obj.updateDynamic("categoricalValues")(categoricalValues.asInstanceOf[js.Any])
     if (discreteValues != null) __obj.updateDynamic("discreteValues")(discreteValues.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     if (scaleType != null) __obj.updateDynamic("scaleType")(scaleType.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

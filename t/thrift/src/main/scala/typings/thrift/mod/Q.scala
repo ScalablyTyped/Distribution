@@ -1,6 +1,6 @@
 package typings.thrift.mod
 
-import typings.q.Typeofq
+import typings.q.anon.Typeofq
 import typings.q.mod.Deferred
 import typings.q.mod.IPromise
 import typings.q.mod.IWhenable

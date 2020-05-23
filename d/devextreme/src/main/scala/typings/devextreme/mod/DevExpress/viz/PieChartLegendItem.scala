@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonFill
+import typings.devextreme.anon.Fill
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,19 +22,19 @@ object PieChartLegendItem {
   @scala.inline
   def apply(
     argument: String | Date | Double = null,
-    argumentIndex: Int | Double = null,
-    marker: AnonFill = null,
+    argumentIndex: js.UndefOr[Double] = js.undefined,
+    marker: Fill = null,
     points: js.Array[piePointObject] = null,
     text: js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): PieChartLegendItem = {
     val __obj = js.Dynamic.literal()
     if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
-    if (argumentIndex != null) __obj.updateDynamic("argumentIndex")(argumentIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(argumentIndex)) __obj.updateDynamic("argumentIndex")(argumentIndex.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieChartLegendItem]
   }
 }

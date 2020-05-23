@@ -20,7 +20,7 @@ object GridFilterable {
     operators: GridFilterableOperators = null
   ): GridFilterable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra.get.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])

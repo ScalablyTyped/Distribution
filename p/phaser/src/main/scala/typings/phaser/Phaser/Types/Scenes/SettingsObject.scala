@@ -5,7 +5,7 @@ import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.Cameras.Scene2D.JSONCamera
 import typings.phaser.Phaser.Types.Core.LoaderConfig
 import typings.phaser.Phaser.Types.Core.PhysicsConfig
-import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileConfig
+import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileSection
 import typings.phaser.integer
 import typings.phaser.phaserBooleans.`false`
 import scala.scalajs.js
@@ -46,9 +46,9 @@ trait SettingsObject extends js.Object {
     */
   var map: StringDictionary[String]
   /**
-    * The Loader Packfile to be loaded before the Scene begins.
+    * Files to be loaded before the Scene begins.
     */
-  var pack: `false` | PackFileConfig
+  var pack: `false` | PackFileSection
   /**
     * The physics configuration object for the Scene.
     */
@@ -90,7 +90,7 @@ object SettingsObject {
     key: String,
     loader: LoaderConfig,
     map: StringDictionary[String],
-    pack: `false` | PackFileConfig,
+    pack: `false` | PackFileSection,
     physics: PhysicsConfig,
     plugins: `false` | js.Any,
     status: Double,

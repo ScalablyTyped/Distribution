@@ -1,6 +1,6 @@
 package typings.d3Collection.mod
 
-import typings.d3Collection.AnonKey
+import typings.d3Collection.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object NestedMap {
       Unit
     ] => Unit,
     empty: () => Boolean,
-    entries: () => js.Array[AnonKey[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType]],
+    entries: () => js.Array[Key[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType]],
     get: String => js.UndefOr[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType],
     has: String => Boolean,
     keys: () => js.Array[String],

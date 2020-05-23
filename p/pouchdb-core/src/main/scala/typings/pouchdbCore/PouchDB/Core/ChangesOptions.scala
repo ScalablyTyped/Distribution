@@ -98,7 +98,7 @@ object ChangesOptions {
   @scala.inline
   def apply(
     attachments: js.UndefOr[Boolean] = js.undefined,
-    batch_size: Int | Double = null,
+    batch_size: js.UndefOr[Double] = js.undefined,
     binary: js.UndefOr[Boolean] = js.undefined,
     conflicts: js.UndefOr[Boolean] = js.undefined,
     descending: js.UndefOr[Boolean] = js.undefined,
@@ -111,28 +111,28 @@ object ChangesOptions {
     query_params: StringDictionary[js.Any] = null,
     return_docs: js.UndefOr[Boolean] = js.undefined,
     selector: Selector = null,
-    seq_interval: Int | Double = null,
+    seq_interval: js.UndefOr[Double] = js.undefined,
     since: now | Double | String = null,
     style: main_only | all_docs = null,
     timeout: Double | `false` = null,
     view: String = null
   ): ChangesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (batch_size != null) __obj.updateDynamic("batch_size")(batch_size.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batch_size)) __obj.updateDynamic("batch_size")(batch_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.get.asInstanceOf[js.Any])
     if (doc_ids != null) __obj.updateDynamic("doc_ids")(doc_ids.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.get.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.get.asInstanceOf[js.Any])
     if (query_params != null) __obj.updateDynamic("query_params")(query_params.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_docs)) __obj.updateDynamic("return_docs")(return_docs.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_docs)) __obj.updateDynamic("return_docs")(return_docs.get.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (seq_interval != null) __obj.updateDynamic("seq_interval")(seq_interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(seq_interval)) __obj.updateDynamic("seq_interval")(seq_interval.get.asInstanceOf[js.Any])
     if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

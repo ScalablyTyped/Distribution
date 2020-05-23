@@ -17,10 +17,15 @@ trait UnsupportedFrame extends Frame {
 
 object UnsupportedFrame {
   @scala.inline
-  def apply(flags: Double, streamId: `0`, `type`: `0x3f` | `0x0c` | `0x00`, length: Int | Double = null): UnsupportedFrame = {
+  def apply(
+    flags: Double,
+    streamId: `0`,
+    `type`: `0x3f` | `0x0c` | `0x00`,
+    length: js.UndefOr[Double] = js.undefined
+  ): UnsupportedFrame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsupportedFrame]
   }
 }

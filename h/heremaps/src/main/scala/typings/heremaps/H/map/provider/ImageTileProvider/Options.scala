@@ -34,17 +34,17 @@ object Options {
     getURL: (Double, Double, Double) => String,
     crossOrigin: String | Boolean = null,
     getCopyrights: (/* rect */ Rect, /* n */ Double) => js.Array[ICopyright] = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    tileSize: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    tileSize: js.UndefOr[Double] = js.undefined,
     uri: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(getURL = js.Any.fromFunction3(getURL))
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (getCopyrights != null) __obj.updateDynamic("getCopyrights")(js.Any.fromFunction2(getCopyrights))
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

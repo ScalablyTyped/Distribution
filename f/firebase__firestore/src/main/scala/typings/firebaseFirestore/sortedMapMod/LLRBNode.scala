@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/sorted_map", "LLRBNode")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/sorted_map", "LLRBNode")
 @js.native
 class LLRBNode[K, V] protected () extends js.Object {
   def this(key: K, value: V) = this()
@@ -54,7 +54,7 @@ class LLRBNode[K, V] protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/util/sorted_map", "LLRBNode")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/sorted_map", "LLRBNode")
 @js.native
 object LLRBNode extends js.Object {
   var BLACK: Boolean = js.native

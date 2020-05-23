@@ -1,6 +1,6 @@
 package typings.reactVirtualized.mod
 
-import typings.reactVirtualized.AnonChildrenValidator
+import typings.reactVirtualized.anon.ChildrenValidator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class ScrollSync ()
 @JSImport("react-virtualized", "ScrollSync")
 @js.native
 object ScrollSync extends js.Object {
-  var propTypes: AnonChildrenValidator = js.native
+  var propTypes: ChildrenValidator = js.native
 }
 

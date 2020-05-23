@@ -25,13 +25,13 @@ object Change {
   def apply(
     value: String,
     added: js.UndefOr[Boolean] = js.undefined,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     removed: js.UndefOr[Boolean] = js.undefined
   ): Change = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(added)) __obj.updateDynamic("added")(added.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
+    if (!js.isUndefined(added)) __obj.updateDynamic("added")(added.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change]
   }
 }

@@ -23,7 +23,6 @@ object Stream {
     send: I => Unit
   ): Stream[I, O] = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), onClose = js.Any.fromFunction1(onClose), onMessage = js.Any.fromFunction1(onMessage), onOpen = js.Any.fromFunction1(onOpen), send = js.Any.fromFunction1(send))
-  
     __obj.asInstanceOf[Stream[I, O]]
   }
 }

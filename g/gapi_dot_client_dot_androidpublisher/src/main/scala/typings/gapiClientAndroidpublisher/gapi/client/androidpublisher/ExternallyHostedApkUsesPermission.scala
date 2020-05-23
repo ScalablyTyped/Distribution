@@ -13,9 +13,9 @@ trait ExternallyHostedApkUsesPermission extends js.Object {
 
 object ExternallyHostedApkUsesPermission {
   @scala.inline
-  def apply(maxSdkVersion: Int | Double = null, name: String = null): ExternallyHostedApkUsesPermission = {
+  def apply(maxSdkVersion: js.UndefOr[Double] = js.undefined, name: String = null): ExternallyHostedApkUsesPermission = {
     val __obj = js.Dynamic.literal()
-    if (maxSdkVersion != null) __obj.updateDynamic("maxSdkVersion")(maxSdkVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSdkVersion)) __obj.updateDynamic("maxSdkVersion")(maxSdkVersion.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternallyHostedApkUsesPermission]
   }

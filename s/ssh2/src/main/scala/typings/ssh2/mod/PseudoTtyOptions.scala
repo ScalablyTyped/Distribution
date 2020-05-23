@@ -20,18 +20,18 @@ trait PseudoTtyOptions extends js.Object {
 object PseudoTtyOptions {
   @scala.inline
   def apply(
-    cols: Int | Double = null,
-    height: Int | Double = null,
-    rows: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    rows: js.UndefOr[Double] = js.undefined,
     term: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): PseudoTtyOptions = {
     val __obj = js.Dynamic.literal()
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PseudoTtyOptions]
   }
 }

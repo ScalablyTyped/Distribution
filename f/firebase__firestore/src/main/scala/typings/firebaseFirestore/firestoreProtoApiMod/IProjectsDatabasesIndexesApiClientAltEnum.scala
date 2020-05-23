@@ -20,7 +20,6 @@ object IProjectsDatabasesIndexesApiClientAltEnum {
     values: () => js.Array[ProjectsDatabasesIndexesApiClientAlt]
   ): IProjectsDatabasesIndexesApiClientAltEnum = {
     val __obj = js.Dynamic.literal(JSON = JSON.asInstanceOf[js.Any], MEDIA = MEDIA.asInstanceOf[js.Any], PROTO = PROTO.asInstanceOf[js.Any], values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[IProjectsDatabasesIndexesApiClientAltEnum]
   }
 }

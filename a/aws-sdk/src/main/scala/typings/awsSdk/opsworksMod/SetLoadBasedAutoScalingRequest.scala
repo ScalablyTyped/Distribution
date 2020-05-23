@@ -29,12 +29,12 @@ object SetLoadBasedAutoScalingRequest {
   def apply(
     LayerId: String,
     DownScaling: AutoScalingThresholds = null,
-    Enable: js.UndefOr[scala.Boolean] = js.undefined,
+    Enable: js.UndefOr[Boolean] = js.undefined,
     UpScaling: AutoScalingThresholds = null
   ): SetLoadBasedAutoScalingRequest = {
     val __obj = js.Dynamic.literal(LayerId = LayerId.asInstanceOf[js.Any])
     if (DownScaling != null) __obj.updateDynamic("DownScaling")(DownScaling.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enable)) __obj.updateDynamic("Enable")(Enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enable)) __obj.updateDynamic("Enable")(Enable.get.asInstanceOf[js.Any])
     if (UpScaling != null) __obj.updateDynamic("UpScaling")(UpScaling.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetLoadBasedAutoScalingRequest]
   }

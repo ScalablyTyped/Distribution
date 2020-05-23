@@ -6,9 +6,9 @@ import typings.areWeThereYet.areWeThereYetStrings.data
 import typings.areWeThereYet.areWeThereYetStrings.end
 import typings.areWeThereYet.areWeThereYetStrings.error
 import typings.areWeThereYet.areWeThereYetStrings.readable
-import typings.node.AnonEnd
 import typings.node.Buffer
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
@@ -127,7 +127,7 @@ object mod extends js.Object {
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T): T = js.native
     /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
     @JSName("prependListener")
     def prependListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("prependListener")

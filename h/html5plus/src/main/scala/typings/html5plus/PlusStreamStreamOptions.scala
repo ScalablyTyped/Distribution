@@ -56,12 +56,12 @@ trait PlusStreamStreamOptions extends js.Object {
   /**
     * 启动流应用的快捷方式逻辑
     * 可取值：
-    * 		"auto" - 检查并引导用户打开快捷方式权限，自动创建桌面快捷方式，在不支持快捷方式滤重的系统上仅创建一次；
+    *         "auto" - 检查并引导用户打开快捷方式权限，自动创建桌面快捷方式，在不支持快捷方式滤重的系统上仅创建一次；
     *         "force" - 检查并引导用户打开快捷方式权限，自动创建桌面快捷方式，在不支持快捷方式滤重的系统上每次都尝试创建；
     *         "none" - 不检查快捷方式权限，不创建桌面快捷方式（与从桌面快捷方式启动的流程一致）；
     *         "query" - 弹出询问提示框（底部显示），用户点击确定后创建桌面快捷方式（检查并引导用户打开快捷方式权限）；
     *         "tipOnce" - 业务逻辑与"auto"类似，差别是只会引导用户打开快捷方式权限一次、toast提示一次。
-    * 	默认值为"force"。
+    *     默认值为"force"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
@@ -69,10 +69,10 @@ trait PlusStreamStreamOptions extends js.Object {
   /**
     * 退出流应用的快捷方式逻辑
     * 可取值：
-    * 		"query" - 应用退出时检查是否创建桌面快捷方式，如果查询到没有创建则弹出询问框，用户点击确定后创建桌面快捷方式（检查并引导用户打开快捷方式权限）；
+    *         "query" - 应用退出时检查是否创建桌面快捷方式，如果查询到没有创建则弹出询问框，用户点击确定后创建桌面快捷方式（检查并引导用户打开快捷方式权限）；
     *         "queryOnce" - 仅应用第一次退出检查，检查逻辑同query；
     *         "none" - 应用退出时不检查是否创建桌面快捷方式。
-    * 	默认值为"none"。
+    *     默认值为"none"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
@@ -80,9 +80,9 @@ trait PlusStreamStreamOptions extends js.Object {
   /**
     * 应用启动界面样式
     * 可取值：
-    * 	"auto"：自动选择启动界面，如果splash图片已经下载则显示splash图片，否则使用默认加载流应用界面；
-    * 	"default"：使用默认加载流应用界面（如在360浏览器环境中在标题栏下显示加载进度条）。
-    * 	默认值为"auto"。
+    *     "auto"：自动选择启动界面，如果splash图片已经下载则显示splash图片，否则使用默认加载流应用界面；
+    *     "default"：使用默认加载流应用界面（如在360浏览器环境中在标题栏下显示加载进度条）。
+    *     默认值为"auto"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */

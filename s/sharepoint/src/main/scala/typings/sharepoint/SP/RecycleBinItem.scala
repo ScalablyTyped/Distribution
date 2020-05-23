@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.RecycleBinItem")
 @js.native
-class RecycleBinItem () extends ClientObject {
+trait RecycleBinItem extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_author(): User = js.native
   def get_deletedBy(): User = js.native

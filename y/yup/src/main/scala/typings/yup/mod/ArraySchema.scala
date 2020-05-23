@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ArraySchema[T]
-  extends BasicArraySchema[js.Array[T]] {
+  extends BasicArraySchema[T, js.Array[T]] {
+  def defined(): ArraySchema[T] = js.native
   def notRequired(): NotRequiredArraySchema[T] = js.native
   def nullable(): NullableArraySchema[T] = js.native
   def nullable(isNullable: Boolean): ArraySchema[T] = js.native
@@ -17,6 +18,7 @@ trait ArraySchema[T]
   @JSName("nullable")
   def nullable_true(isNullable: `true`): NullableArraySchema[T] = js.native
   def of[U](`type`: Schema[U]): ArraySchema[U] = js.native
+  def optional(): NotRequiredArraySchema[T] = js.native
   def required(): ArraySchema[T] = js.native
   def required(message: TestOptionsMessage[js.Object, _]): ArraySchema[T] = js.native
 }

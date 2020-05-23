@@ -4,15 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FirebaseTokenGenerator")
 @js.native
-class FirebaseTokenGenerator protected () extends js.Object {
-  /**
-    * Builds a new object that can generate Firebase authentication tokens.
-    * @constructor
-    * @param { String } secret The secret for the Firebase being used (get yours from the Firebase Admin Console).
-    */
-  def this(secret: String) = this()
+trait FirebaseTokenGenerator extends js.Object {
   /**
     * Creates a token that authenticates a client with arbitrary data "data", and the specified options.
     *

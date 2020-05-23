@@ -1,6 +1,6 @@
 package typings.perfectScrollbar.mod
 
-import typings.perfectScrollbar.AnonX
+import typings.perfectScrollbar.anon.X
 import typings.perfectScrollbar.mod.PerfectScrollbar.Options
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -29,7 +29,7 @@ trait PerfectScrollbar_ extends js.Object {
   var railYHeight: Double
   var railYMarginHeight: Double
   var railYRatio: Double
-  var reach: AnonX
+  var reach: X
   var scrollbarX: HTMLElement
   var scrollbarXActive: Boolean
   var scrollbarXBottom: Double
@@ -73,7 +73,7 @@ object PerfectScrollbar_ {
     railYHeight: Double,
     railYMarginHeight: Double,
     railYRatio: Double,
-    reach: AnonX,
+    reach: X,
     scrollbarX: HTMLElement,
     scrollbarXActive: Boolean,
     scrollbarXBottom: Double,
@@ -88,10 +88,10 @@ object PerfectScrollbar_ {
     scrollbarYTop: Double,
     settings: Options,
     update: () => Unit,
-    scrollbarYOuterWidth: Int | Double = null
+    scrollbarYOuterWidth: js.UndefOr[Double] = js.undefined
   ): PerfectScrollbar_ = {
     val __obj = js.Dynamic.literal(containerHeight = containerHeight.asInstanceOf[js.Any], containerWidth = containerWidth.asInstanceOf[js.Any], contentHeight = contentHeight.asInstanceOf[js.Any], contentWidth = contentWidth.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), element = element.asInstanceOf[js.Any], isAlive = isAlive.asInstanceOf[js.Any], isNegativeScroll = isNegativeScroll.asInstanceOf[js.Any], isRtl = isRtl.asInstanceOf[js.Any], isScrollbarXUsingBottom = isScrollbarXUsingBottom.asInstanceOf[js.Any], isScrollbarYUsingBottom = isScrollbarYUsingBottom.asInstanceOf[js.Any], lastScrollLeft = lastScrollLeft.asInstanceOf[js.Any], lastScrollTop = lastScrollTop.asInstanceOf[js.Any], negativeScrollAdjustment = negativeScrollAdjustment.asInstanceOf[js.Any], railBorderXWidth = railBorderXWidth.asInstanceOf[js.Any], railBorderYWidth = railBorderYWidth.asInstanceOf[js.Any], railXMarginWidth = railXMarginWidth.asInstanceOf[js.Any], railXRatio = railXRatio.asInstanceOf[js.Any], railXWidth = railXWidth.asInstanceOf[js.Any], railYHeight = railYHeight.asInstanceOf[js.Any], railYMarginHeight = railYMarginHeight.asInstanceOf[js.Any], railYRatio = railYRatio.asInstanceOf[js.Any], reach = reach.asInstanceOf[js.Any], scrollbarX = scrollbarX.asInstanceOf[js.Any], scrollbarXActive = scrollbarXActive.asInstanceOf[js.Any], scrollbarXBottom = scrollbarXBottom.asInstanceOf[js.Any], scrollbarXLeft = scrollbarXLeft.asInstanceOf[js.Any], scrollbarXRail = scrollbarXRail.asInstanceOf[js.Any], scrollbarXWidth = scrollbarXWidth.asInstanceOf[js.Any], scrollbarY = scrollbarY.asInstanceOf[js.Any], scrollbarYActive = scrollbarYActive.asInstanceOf[js.Any], scrollbarYHeight = scrollbarYHeight.asInstanceOf[js.Any], scrollbarYRail = scrollbarYRail.asInstanceOf[js.Any], scrollbarYRight = scrollbarYRight.asInstanceOf[js.Any], scrollbarYTop = scrollbarYTop.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
-    if (scrollbarYOuterWidth != null) __obj.updateDynamic("scrollbarYOuterWidth")(scrollbarYOuterWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollbarYOuterWidth)) __obj.updateDynamic("scrollbarYOuterWidth")(scrollbarYOuterWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerfectScrollbar_]
   }
 }

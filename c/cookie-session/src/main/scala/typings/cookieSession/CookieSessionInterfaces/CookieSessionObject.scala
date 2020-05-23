@@ -24,16 +24,16 @@ trait CookieSessionObject
 object CookieSessionObject {
   @scala.inline
   def apply(
-    StringDictionary: /* propertyName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     isChanged: js.UndefOr[Boolean] = js.undefined,
     isNew: js.UndefOr[Boolean] = js.undefined,
     isPopulated: js.UndefOr[Boolean] = js.undefined
   ): CookieSessionObject = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(isChanged)) __obj.updateDynamic("isChanged")(isChanged.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNew)) __obj.updateDynamic("isNew")(isNew.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPopulated)) __obj.updateDynamic("isPopulated")(isPopulated.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChanged)) __obj.updateDynamic("isChanged")(isChanged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNew)) __obj.updateDynamic("isNew")(isNew.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPopulated)) __obj.updateDynamic("isPopulated")(isPopulated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieSessionObject]
   }
 }

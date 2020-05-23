@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.advancedActivationsMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`1`
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ThresholdedReLU () extends Layer {
   def this(args: ThresholdedReLULayerArgs) = this()
-  val DEFAULT_THETA: `1` = js.native
+  val DEFAULT_THETA: /* 1 */ Double = js.native
   val theta: Double = js.native
 }
 

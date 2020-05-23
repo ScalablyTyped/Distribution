@@ -17,12 +17,12 @@ object APIGatewayAuthorizerResult {
   def apply(
     policyDocument: PolicyDocument,
     principalId: String,
-    context: APIGatewayAuthorizerResultContext = null,
-    usageIdentifierKey: String = null
+    context: js.UndefOr[Null | APIGatewayAuthorizerResultContext] = js.undefined,
+    usageIdentifierKey: js.UndefOr[Null | String] = js.undefined
   ): APIGatewayAuthorizerResult = {
     val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], principalId = principalId.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (usageIdentifierKey != null) __obj.updateDynamic("usageIdentifierKey")(usageIdentifierKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(usageIdentifierKey)) __obj.updateDynamic("usageIdentifierKey")(usageIdentifierKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIGatewayAuthorizerResult]
   }
 }

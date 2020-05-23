@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when text in this text area is selected.
-		 */
+  * Fired when text in this text area is selected.
+  */
 trait TextAreaSelectedEvent extends TextAreaBaseEvent {
   /**
-  			 * Dictionary that describes the position and length of the selected text.
-  			 */
+    * Dictionary that describes the position and length of the selected text.
+    */
   var range: textAreaSelectedParams
 }
 

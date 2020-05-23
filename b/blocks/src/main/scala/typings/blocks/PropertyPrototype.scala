@@ -46,7 +46,7 @@ object PropertyPrototype {
     isObservable: js.UndefOr[Boolean] = js.undefined,
     letters: Validator = null,
     max: Validator = null,
-    maxErrors: Int | Double = null,
+    maxErrors: js.UndefOr[Double] = js.undefined,
     maxlength: Validator = null,
     min: Validator = null,
     minlength: Validator = null,
@@ -66,10 +66,10 @@ object PropertyPrototype {
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (equals != null) __obj.updateDynamic("equals")(equals.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (letters != null) __obj.updateDynamic("letters")(letters.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxErrors != null) __obj.updateDynamic("maxErrors")(maxErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxErrors)) __obj.updateDynamic("maxErrors")(maxErrors.get.asInstanceOf[js.Any])
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
@@ -77,8 +77,8 @@ object PropertyPrototype {
     if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateInitially)) __obj.updateDynamic("validateInitially")(validateInitially.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateInitially)) __obj.updateDynamic("validateInitially")(validateInitially.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyPrototype]
   }

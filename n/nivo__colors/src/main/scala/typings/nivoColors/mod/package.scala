@@ -13,8 +13,8 @@ package object mod {
   type InheritedColorFunction[D] = js.Function1[/* datum */ D, java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.nivoColors.AnonTheme
-    - typings.nivoColors.AnonFrom
+    - typings.nivoColors.anon.Theme
+    - typings.nivoColors.anon.From
     - typings.nivoColors.mod.InheritedColorFunction[D]
   */
   type InheritedColorProp[D] = typings.nivoColors.mod._InheritedColorProp[D] | java.lang.String | typings.nivoColors.mod.InheritedColorFunction[D]

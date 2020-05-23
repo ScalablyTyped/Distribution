@@ -1,5 +1,6 @@
 package typings.jsData
 
+import typings.jsData.anon.Added
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -216,8 +217,8 @@ object distUtilsMod extends js.Object {
       * @see utils.areDifferent
       * @since 3.0.0
       */
-    def diffObjects(newObject: js.Any, oldObject: js.Any): AnonAdded = js.native
-    def diffObjects(newObject: js.Any, oldObject: js.Any, opts: js.Any): AnonAdded = js.native
+    def diffObjects(newObject: js.Any, oldObject: js.Any): Added = js.native
+    def diffObjects(newObject: js.Any, oldObject: js.Any, opts: js.Any): Added = js.native
     /**
       * Return whether the two values are equal according to the `==` operator.
       *

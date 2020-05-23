@@ -26,9 +26,9 @@ object ListModelsParams {
     target: String = null
   ): ListModelsParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default_models)) __obj.updateDynamic("default_models")(default_models.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_models)) __obj.updateDynamic("default_models")(default_models.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListModelsParams]

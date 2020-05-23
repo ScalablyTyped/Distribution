@@ -18,10 +18,10 @@ trait FpgaInfo extends js.Object {
 
 object FpgaInfo {
   @scala.inline
-  def apply(Fpgas: FpgaDeviceInfoList = null, TotalFpgaMemoryInMiB: Int | scala.Double = null): FpgaInfo = {
+  def apply(Fpgas: FpgaDeviceInfoList = null, TotalFpgaMemoryInMiB: js.UndefOr[totalFpgaMemory] = js.undefined): FpgaInfo = {
     val __obj = js.Dynamic.literal()
     if (Fpgas != null) __obj.updateDynamic("Fpgas")(Fpgas.asInstanceOf[js.Any])
-    if (TotalFpgaMemoryInMiB != null) __obj.updateDynamic("TotalFpgaMemoryInMiB")(TotalFpgaMemoryInMiB.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalFpgaMemoryInMiB)) __obj.updateDynamic("TotalFpgaMemoryInMiB")(TotalFpgaMemoryInMiB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FpgaInfo]
   }
 }

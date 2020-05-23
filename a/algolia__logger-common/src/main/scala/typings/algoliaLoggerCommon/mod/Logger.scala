@@ -1,6 +1,6 @@
 package typings.algoliaLoggerCommon.mod
 
-import typings.algoliaLoggerCommon.ReadonlyPromisevoid
+import typings.algoliaLoggerCommon.anon.ReadonlyPromisevoid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,10 +1,9 @@
 package typings.autolinker.autolinkerMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.autolinker.AnonEmail
-import typings.autolinker.AnonHashtag
 import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilderCfg
-import typings.autolinker.autolinkerStrings.`3Dot14Dot1`
+import typings.autolinker.anon.Email
+import typings.autolinker.anon.Hashtag
 import typings.autolinker.htmlTagMod.HtmlTagCfg
 import typings.autolinker.matchMatchMod.Match
 import scala.scalajs.js
@@ -426,7 +425,7 @@ class default () extends Autolinker {
     * Ex: 0.25.1
     */
   /* CompleteClass */
-  override val version: `3Dot14Dot1` = js.native
+  override val version: /* "3.14.1" */ String = js.native
   /**
     * Automatically links URLs, Email addresses, Phone numbers, Hashtags,
     * and Mentions (Twitter, Instagram, Soundcloud) found in the given chunk of HTML. Does not link
@@ -503,12 +502,12 @@ object default extends js.Object {
     * For backwards compatibility with Autolinker 1.x, the Match classes are
     * provided as statics on the Autolinker class.
     */
-  val `match`: AnonHashtag = js.native
+  val `match`: Hashtag = js.native
   /**
     * For backwards compatibility with Autolinker 1.x, the Matcher classes are
     * provided as statics on the Autolinker class.
     */
-  val matcher: AnonEmail = js.native
+  val matcher: Email = js.native
   /**
     * @static
     * @property {String} version
@@ -517,7 +516,7 @@ object default extends js.Object {
     *
     * Ex: 0.25.1
     */
-  val version: `3Dot14Dot1` = js.native
+  val version: /* "3.14.1" */ String = js.native
   /**
     * Automatically links URLs, Email addresses, Phone Numbers, Twitter handles,
     * Hashtags, and Mentions found in the given chunk of HTML. Does not link URLs

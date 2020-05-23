@@ -15,10 +15,13 @@ trait IButton extends js.Object {
 
 object IButton {
   @scala.inline
-  def apply(openUriAction: IOpenUriAction = null, title: String = null): IButton = {
+  def apply(
+    openUriAction: js.UndefOr[Null | IOpenUriAction] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined
+  ): IButton = {
     val __obj = js.Dynamic.literal()
-    if (openUriAction != null) __obj.updateDynamic("openUriAction")(openUriAction.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(openUriAction)) __obj.updateDynamic("openUriAction")(openUriAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButton]
   }
 }

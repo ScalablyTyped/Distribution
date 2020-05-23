@@ -22,7 +22,7 @@ package object mod {
     - typings.recharts.rechartsStrings.preserveStartEnd
   */
   type AxisInterval = typings.recharts.mod._AxisInterval | scala.Double
-  type BBoxUpdateCallback = js.Function1[/* box */ typings.recharts.AnonWidth, scala.Unit]
+  type BBoxUpdateCallback = js.Function1[/* box */ typings.recharts.anon.Width, scala.Unit]
   type BarChartProps = typings.recharts.mod.CategoricalChartWrapper[typings.recharts.mod.LayoutType] with typings.recharts.mod.EventAttributes
   /* Rewritten from type alias, can be one of: 
     - scala.Double
@@ -33,7 +33,7 @@ package object mod {
   type BaseValueType = typings.recharts.mod._BaseValueType | scala.Double
   type ComposedChartProps = typings.recharts.mod.CategoricalChartWrapper[typings.recharts.mod.LayoutType] with typings.recharts.mod.EventAttributes
   type ContentRenderer[P] = js.Function1[/* props */ P, typings.react.mod.ReactNode]
-  type CoordinatesGenerator = js.Function1[/* arg */ typings.recharts.AnonHeight, js.Array[scala.Double]]
+  type CoordinatesGenerator = js.Function1[/* arg */ typings.recharts.anon.Height, js.Array[scala.Double]]
   type DataKey = java.lang.String | scala.Double | (js.Function1[
     /* dataObject */ js.Any, 
     java.lang.String | scala.Double | (js.Tuple2[scala.Double, scala.Double]) | scala.Null
@@ -41,11 +41,11 @@ package object mod {
   type DataPointFormatter = js.Function2[
     /* entry */ js.Any, 
     /* dataKey */ typings.recharts.mod.DataKey, 
-    typings.recharts.AnonErrorVal
+    typings.recharts.anon.ErrorVal
   ]
   type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, scala.Double]
   type LabelFormatter = js.Function1[/* label */ java.lang.String | scala.Double, typings.react.mod.ReactNode]
-  type LabelListProps = typings.recharts.AnonAngle with (typings.recharts.AnonDataKey | typings.recharts.AnonValueAccessor)
+  type LabelListProps = typings.recharts.anon.Angle with (typings.recharts.anon.DataKey | typings.recharts.anon.ValueAccessor)
   type LegendValueFormatter = js.Function3[
     /* value */ js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any

@@ -76,23 +76,23 @@ object ScaleConfig {
     min: WidthHeight = null,
     mode: ScaleModeType = null,
     parent: HTMLElement | String = null,
-    resizeInterval: Int | Double = null,
-    resolution: Int | Double = null,
+    resizeInterval: js.UndefOr[integer] = js.undefined,
+    resolution: js.UndefOr[Double] = js.undefined,
     width: integer | String = null,
     zoom: ZoomType | integer = null
   ): ScaleConfig = {
     val __obj = js.Dynamic.literal()
     if (autoCenter != null) __obj.updateDynamic("autoCenter")(autoCenter.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRound)) __obj.updateDynamic("autoRound")(autoRound.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandParent)) __obj.updateDynamic("expandParent")(expandParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRound)) __obj.updateDynamic("autoRound")(autoRound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandParent)) __obj.updateDynamic("expandParent")(expandParent.get.asInstanceOf[js.Any])
     if (fullscreenTarget != null) __obj.updateDynamic("fullscreenTarget")(fullscreenTarget.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (resizeInterval != null) __obj.updateDynamic("resizeInterval")(resizeInterval.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeInterval)) __obj.updateDynamic("resizeInterval")(resizeInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleConfig]

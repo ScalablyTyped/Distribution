@@ -31,7 +31,7 @@ object SupportingWidgetDefaultsFeatureTemplates {
     groupBy: String | GroupByFunction = null
   ): SupportingWidgetDefaultsFeatureTemplates = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(filterEnabled)) __obj.updateDynamic("filterEnabled")(filterEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterEnabled)) __obj.updateDynamic("filterEnabled")(filterEnabled.get.asInstanceOf[js.Any])
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportingWidgetDefaultsFeatureTemplates]
   }

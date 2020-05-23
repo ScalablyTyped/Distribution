@@ -10,8 +10,7 @@ object google extends js.Object {
   @js.native
   object feeds extends js.Object {
     @js.native
-    class Feed () extends js.Object {
-      def this(url: String) = this()
+    trait Feed extends js.Object {
       def findFeeds(): Unit = js.native
       def findFeeds(query: String): Unit = js.native
       def findFeeds(query: String, callback: js.Function1[/* result */ findResult, Unit]): Unit = js.native

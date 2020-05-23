@@ -6,11 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSG.Path2D")
 @js.native
-class Path2D protected () extends CxG {
-  def this(points: js.Array[Double | Vector2D]) = this()
-  def this(points: js.Array[Double | Vector2D], closed: Boolean) = this()
+trait Path2D extends CxG {
   var closed: Boolean = js.native
   var lastBezierControlPoint: Vector2D = js.native
   var points: js.Array[Vector2D] = js.native
@@ -23,12 +20,5 @@ class Path2D protected () extends CxG {
   def expandToCAG(pathradius: Double, resolution: Double): CAG = js.native
   def innerToCAG(): CAG = js.native
   def rectangularExtrude(width: Double, height: Double, resolution: Double): typings.openjscad.CSG = js.native
-}
-
-/* static members */
-@JSGlobal("CSG.Path2D")
-@js.native
-object Path2D extends js.Object {
-  def arc(options: IArcOptions): Path2D = js.native
 }
 

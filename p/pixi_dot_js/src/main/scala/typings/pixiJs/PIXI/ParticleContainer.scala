@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.AnonPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,13 +31,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.Container
   * @memberof PIXI
   */
-@JSGlobal("PIXI.ParticleContainer")
 @js.native
-class ParticleContainer () extends Container {
-  def this(maxSize: Double) = this()
-  def this(maxSize: Double, properties: AnonPosition) = this()
-  def this(maxSize: Double, properties: AnonPosition, batchSize: Double) = this()
-  def this(maxSize: Double, properties: AnonPosition, batchSize: Double, autoResize: Boolean) = this()
+trait ParticleContainer extends Container {
   /**
     * If true, container allocates more batches in case there are more than `maxSize` particles.
     * @member {boolean} PIXI.ParticleContainer#autoResize

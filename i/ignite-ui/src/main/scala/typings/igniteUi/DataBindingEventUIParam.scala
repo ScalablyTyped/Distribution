@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait DataBindingEventUIParam extends js.Object {
   /**
-  	 * Used to obtain reference to instance of $.ig.DataSource.
-  	 */
+    * Used to obtain reference to instance of $.ig.DataSource.
+    */
   var dataSource: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Used to obtain reference to chart widget.
-  	 */
+    * Used to obtain reference to chart widget.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

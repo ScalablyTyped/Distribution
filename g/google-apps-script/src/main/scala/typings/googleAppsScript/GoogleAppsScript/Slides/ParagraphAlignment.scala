@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,23 +27,6 @@ object ParagraphAlignment extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends ParagraphAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ParagraphAlignment with Double] = js.native
-  /* 2 */ @js.native
-  object CENTER extends TopLevel[CENTER with Double]
-  
-  /* 3 */ @js.native
-  object END extends TopLevel[END with Double]
-  
-  /* 4 */ @js.native
-  object JUSTIFIED extends TopLevel[JUSTIFIED with Double]
-  
-  /* 1 */ @js.native
-  object START extends TopLevel[START with Double]
-  
-  /* 0 */ @js.native
-  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
   
 }
 

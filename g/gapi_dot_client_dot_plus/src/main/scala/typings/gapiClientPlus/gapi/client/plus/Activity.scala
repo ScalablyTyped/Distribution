@@ -1,8 +1,8 @@
 package typings.gapiClientPlus.gapi.client.plus
 
-import typings.gapiClientPlus.AnonActor
-import typings.gapiClientPlus.AnonClientSpecificActorInfo
-import typings.gapiClientPlus.AnonTitle
+import typings.gapiClientPlus.anon.Actor
+import typings.gapiClientPlus.anon.ClientSpecificActorInfo
+import typings.gapiClientPlus.anon.Title
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Activity extends js.Object {
   /** Identifies who has access to see this activity. */
   var access: js.UndefOr[Acl] = js.undefined
   /** The person who performed this activity. */
-  var actor: js.UndefOr[AnonClientSpecificActorInfo] = js.undefined
+  var actor: js.UndefOr[ClientSpecificActorInfo] = js.undefined
   /** Street address where this activity occurred. */
   var address: js.UndefOr[String] = js.undefined
   /** Additional content added by the person who shared this activity, applicable only when resharing an activity. */
@@ -29,13 +29,13 @@ trait Activity extends js.Object {
   /** The location where this activity occurred. */
   var location: js.UndefOr[Place] = js.undefined
   /** The object of this activity. */
-  var `object`: js.UndefOr[AnonActor] = js.undefined
+  var `object`: js.UndefOr[Actor] = js.undefined
   /** ID of the place where this activity occurred. */
   var placeId: js.UndefOr[String] = js.undefined
   /** Name of the place where this activity occurred. */
   var placeName: js.UndefOr[String] = js.undefined
   /** The service provider that initially published this activity. */
-  var provider: js.UndefOr[AnonTitle] = js.undefined
+  var provider: js.UndefOr[Title] = js.undefined
   /** The time at which this activity was initially published. Formatted as an RFC 3339 timestamp. */
   var published: js.UndefOr[String] = js.undefined
   /** Radius, in meters, of the region where this activity occurred, centered at the latitude and longitude identified in geocode. */
@@ -58,7 +58,7 @@ object Activity {
   @scala.inline
   def apply(
     access: Acl = null,
-    actor: AnonClientSpecificActorInfo = null,
+    actor: ClientSpecificActorInfo = null,
     address: String = null,
     annotation: String = null,
     crosspostSource: String = null,
@@ -67,10 +67,10 @@ object Activity {
     id: String = null,
     kind: String = null,
     location: Place = null,
-    `object`: AnonActor = null,
+    `object`: Actor = null,
     placeId: String = null,
     placeName: String = null,
-    provider: AnonTitle = null,
+    provider: Title = null,
     published: String = null,
     radius: String = null,
     title: String = null,

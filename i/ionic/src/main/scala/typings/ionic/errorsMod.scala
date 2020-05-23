@@ -1,6 +1,5 @@
 package typings.ionic
 
-import typings.ionic.ionicStrings.Exception
 import typings.ionicCliFramework.mod.BaseError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object errorsMod extends js.Object {
   @js.native
-  class BaseException () extends BaseError {
-    @JSName("name")
-    val name_BaseException: Exception = js.native
-  }
+  class BaseException () extends BaseError
   
   @js.native
   class BuildCLIProgramNotFoundException () extends BaseException

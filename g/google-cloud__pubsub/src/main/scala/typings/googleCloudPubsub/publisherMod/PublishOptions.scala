@@ -22,7 +22,7 @@ object PublishOptions {
     val __obj = js.Dynamic.literal()
     if (batching != null) __obj.updateDynamic("batching")(batching.asInstanceOf[js.Any])
     if (gaxOpts != null) __obj.updateDynamic("gaxOpts")(gaxOpts.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageOrdering)) __obj.updateDynamic("messageOrdering")(messageOrdering.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageOrdering)) __obj.updateDynamic("messageOrdering")(messageOrdering.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishOptions]
   }
 }

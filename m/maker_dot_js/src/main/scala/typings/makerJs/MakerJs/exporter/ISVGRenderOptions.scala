@@ -58,7 +58,7 @@ object ISVGRenderOptions {
     fill: String = null,
     fontSize: String = null,
     origin: IPoint = null,
-    scale: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
     stroke: String = null,
     strokeWidth: String = null,
     svgAttrs: IXmlTagAttrs = null,
@@ -67,17 +67,17 @@ object ISVGRenderOptions {
     viewBox: js.UndefOr[Boolean] = js.undefined
   ): ISVGRenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(annotate)) __obj.updateDynamic("annotate")(annotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotate)) __obj.updateDynamic("annotate")(annotate.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (svgAttrs != null) __obj.updateDynamic("svgAttrs")(svgAttrs.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSvgPathOnly)) __obj.updateDynamic("useSvgPathOnly")(useSvgPathOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSvgPathOnly)) __obj.updateDynamic("useSvgPathOnly")(useSvgPathOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISVGRenderOptions]
   }
 }

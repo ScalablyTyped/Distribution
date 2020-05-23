@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 /**
   * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your Office Add-ins.
-  * 
-  * Visit "{@link https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}" 
+  *
+  * Visit "{@link https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}"
   * for more information.
   */
 @js.native
 trait UI extends js.Object {
   /**
     * Adds an event handler to the object using the specified event type.
-    * 
+    *
     * @beta
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: TBD
     *
     * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.
@@ -44,16 +44,16 @@ trait UI extends js.Object {
     * Closes the UI container where the JavaScript is executing.
     *
     * @remarks
-    * 
+    *
     * **Hosts**: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5)
-    * 
+    *
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
-    * 
+    *
     * The behavior of this method is specified by the following:
     *
     * - Called from a UI-less command button: No effect. Any dialog opened by displayDialogAsync will remain open.
     *
-    * - Called from a task pane: The task pane will close. Any dialog opened by displayDialogAsync will also close. 
+    * - Called from a task pane: The task pane will close. Any dialog opened by displayDialogAsync will also close.
     * If the task pane supports pinning and was pinned by the user, it will be un-pinned.
     *
     * - Called from a module extension: No effect.
@@ -63,29 +63,29 @@ trait UI extends js.Object {
     * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     *
     * @remarks
-    * 
+    *
     * **Hosts**: Word, Excel, Outlook, PowerPoint
-    * 
-    * **Requirement sets**: 
-    * 
+    *
+    * **Requirement sets**:
+    *
     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
-    * 
+    *
     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.4}
-    * 
-    * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 
-    * for Outlook. For more on how to specify a requirement set in your manifest, see 
+    *
+    * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4
+    * for Outlook. For more on how to specify a requirement set in your manifest, see
     * {@link https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
     *
-    * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to 
+    * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
     * other domains.
     *
     * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
-    * 
+    *
     * **Design considerations**:
     *
     * The following design considerations apply to dialog boxes:
     *
-    * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in 
+    * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in
     * Commands (custom ribbon buttons or menu items).
     *
     * - Every dialog box can be moved and resized by the user.
@@ -103,9 +103,9 @@ trait UI extends js.Object {
     * - Temporarily increase the surface area that a user has available to complete a task.
     *
     * Do not use a dialog box to interact with a document. Use a task pane instead.
-    * 
+    *
     * **displayDialogAsync Errors**:
-    * 
+    *
     * <table>
     *   <tr>
     *     <th>Code number</th>
@@ -128,10 +128,10 @@ trait UI extends js.Object {
     *     <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td>
     *   </tr>
     * </table>
-    * 
-    * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the 
+    *
+    * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
     * following information.
-    * 
+    *
     * <table>
     *   <tr>
     *     <th>Property</th>
@@ -169,13 +169,13 @@ trait UI extends js.Object {
   ): Unit = js.native
   def messageParent(message: String): Unit = js.native
   /**
-    * Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same domain as the parent. 
-    * 
+    * Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same domain as the parent.
+    *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
-    * 
-    * @param message Accepts a message from the dialog to deliver to the add-in. In addition to a boolean, anything that can serialized to a string including JSON and XML can be sent. 
+    *
+    * @param message Accepts a message from the dialog to deliver to the add-in. In addition to a boolean, anything that can serialized to a string including JSON and XML can be sent.
     */
   def messageParent(message: Boolean): Unit = js.native
 }

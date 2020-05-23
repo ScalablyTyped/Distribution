@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.DeviceOrientationCamera")
 @js.native
-class DeviceOrientationCamera protected () extends FreeCamera {
-  /**
-    * Creates a new device orientation camera
-    * @param name The name of the camera
-    * @param position The start position camera
-    * @param scene The scene the camera belongs to
-    */
-  def this(name: String, position: Vector3, scene: Scene) = this()
+trait DeviceOrientationCamera extends FreeCamera {
   var _disablePointerInputWhenUsingDeviceOrientation: js.Any = js.native
   var _dragFactor: js.Any = js.native
   var _initialQuaternion: js.Any = js.native

@@ -24,14 +24,14 @@ object RenderContextForm {
     FormUniqueId: String,
     ListData: ListDataInForm,
     ListSchema: ListSchemaInForm,
-    BaseViewID: Int | Double = null,
+    BaseViewID: js.UndefOr[Double] = js.undefined,
     CSRCustomLayout: js.UndefOr[Boolean] = js.undefined,
     ControlMode: ClientControlMode = null,
     CurrentCultureName: String = null,
-    CurrentLanguage: Int | Double = null,
+    CurrentLanguage: js.UndefOr[Double] = js.undefined,
     CurrentSelectedItems: js.Any = null,
     CurrentUICultureName: String = null,
-    ListTemplateType: Int | Double = null,
+    ListTemplateType: js.UndefOr[Double] = js.undefined,
     OnPostRender: RenderCallback | js.Array[RenderCallback] = null,
     OnPreRender: RenderCallback | js.Array[RenderCallback] = null,
     RenderBody: RenderContextForm => String = null,
@@ -47,14 +47,14 @@ object RenderContextForm {
     onRefreshFailed: js.Any = null
   ): RenderContextForm = {
     val __obj = js.Dynamic.literal(CurrentItem = CurrentItem.asInstanceOf[js.Any], FieldControlModes = FieldControlModes.asInstanceOf[js.Any], FormContext = FormContext.asInstanceOf[js.Any], FormUniqueId = FormUniqueId.asInstanceOf[js.Any], ListData = ListData.asInstanceOf[js.Any], ListSchema = ListSchema.asInstanceOf[js.Any])
-    if (BaseViewID != null) __obj.updateDynamic("BaseViewID")(BaseViewID.asInstanceOf[js.Any])
-    if (!js.isUndefined(CSRCustomLayout)) __obj.updateDynamic("CSRCustomLayout")(CSRCustomLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(BaseViewID)) __obj.updateDynamic("BaseViewID")(BaseViewID.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CSRCustomLayout)) __obj.updateDynamic("CSRCustomLayout")(CSRCustomLayout.get.asInstanceOf[js.Any])
     if (ControlMode != null) __obj.updateDynamic("ControlMode")(ControlMode.asInstanceOf[js.Any])
     if (CurrentCultureName != null) __obj.updateDynamic("CurrentCultureName")(CurrentCultureName.asInstanceOf[js.Any])
-    if (CurrentLanguage != null) __obj.updateDynamic("CurrentLanguage")(CurrentLanguage.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentLanguage)) __obj.updateDynamic("CurrentLanguage")(CurrentLanguage.get.asInstanceOf[js.Any])
     if (CurrentSelectedItems != null) __obj.updateDynamic("CurrentSelectedItems")(CurrentSelectedItems.asInstanceOf[js.Any])
     if (CurrentUICultureName != null) __obj.updateDynamic("CurrentUICultureName")(CurrentUICultureName.asInstanceOf[js.Any])
-    if (ListTemplateType != null) __obj.updateDynamic("ListTemplateType")(ListTemplateType.asInstanceOf[js.Any])
+    if (!js.isUndefined(ListTemplateType)) __obj.updateDynamic("ListTemplateType")(ListTemplateType.get.asInstanceOf[js.Any])
     if (OnPostRender != null) __obj.updateDynamic("OnPostRender")(OnPostRender.asInstanceOf[js.Any])
     if (OnPreRender != null) __obj.updateDynamic("OnPreRender")(OnPreRender.asInstanceOf[js.Any])
     if (RenderBody != null) __obj.updateDynamic("RenderBody")(js.Any.fromFunction1(RenderBody))

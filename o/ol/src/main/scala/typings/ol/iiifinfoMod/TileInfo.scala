@@ -12,9 +12,9 @@ trait TileInfo extends js.Object {
 
 object TileInfo {
   @scala.inline
-  def apply(scaleFactors: js.Array[Double], width: Double, height: Int | Double = null): TileInfo = {
+  def apply(scaleFactors: js.Array[Double], width: Double, height: js.UndefOr[Double] = js.undefined): TileInfo = {
     val __obj = js.Dynamic.literal(scaleFactors = scaleFactors.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileInfo]
   }
 }

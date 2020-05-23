@@ -50,31 +50,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.MenuItem")
-@js.native
-class MenuItem protected () extends js.Object {
-  // Docs: http://electronjs.org/docs/api/menu-item
-  /**
-    * MenuItem
-    */
-  def this(options: MenuItemConstructorOptions) = this()
-  var accelerator: js.UndefOr[Accelerator] = js.native
-  var checked: Boolean = js.native
-  var click: js.Function = js.native
-  var commandId: Double = js.native
-  var enabled: Boolean = js.native
-  var icon: js.UndefOr[NativeImage_ | String] = js.native
-  var id: String = js.native
-  var label: String = js.native
-  var menu: Menu = js.native
-  var registerAccelerator: Boolean = js.native
+trait MenuItem extends js.Object {
+  var accelerator: js.UndefOr[Accelerator] = js.undefined
+  var checked: Boolean
+  var click: js.Function
+  var commandId: Double
+  var enabled: Boolean
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
+  var id: String
+  var label: String
+  var menu: Menu
+  var registerAccelerator: Boolean
   var role: js.UndefOr[
     undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
-  ] = js.native
-  var sublabel: String = js.native
-  var submenu: js.UndefOr[Menu] = js.native
-  var toolTip: String = js.native
-  var `type`: normal | separator | submenu | checkbox | radio = js.native
-  var visible: Boolean = js.native
+  ] = js.undefined
+  var sublabel: String
+  var submenu: js.UndefOr[Menu] = js.undefined
+  var toolTip: String
+  var `type`: normal | separator | submenu | checkbox | radio
+  var visible: Boolean
+}
+
+object MenuItem {
+  @scala.inline
+  def apply(
+    checked: Boolean,
+    click: js.Function,
+    commandId: Double,
+    enabled: Boolean,
+    id: String,
+    label: String,
+    menu: Menu,
+    registerAccelerator: Boolean,
+    sublabel: String,
+    toolTip: String,
+    `type`: normal | separator | submenu | checkbox | radio,
+    visible: Boolean,
+    accelerator: Accelerator = null,
+    icon: NativeImage_ | String = null,
+    role: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu = null,
+    submenu: Menu = null
+  ): MenuItem = {
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], commandId = commandId.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], registerAccelerator = registerAccelerator.asInstanceOf[js.Any], sublabel = sublabel.asInstanceOf[js.Any], toolTip = toolTip.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (accelerator != null) __obj.updateDynamic("accelerator")(accelerator.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MenuItem]
+  }
 }
 

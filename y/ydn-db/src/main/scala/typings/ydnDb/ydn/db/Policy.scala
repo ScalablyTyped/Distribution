@@ -1,6 +1,5 @@
 package typings.ydnDb.ydn.db
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,23 +24,6 @@ object Policy extends js.Object {
   
   @js.native
   sealed trait single extends Policy
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Policy with Double] = js.native
-  /* 0 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 1 */ @js.native
-  object atomic extends TopLevel[atomic with Double]
-  
-  /* 2 */ @js.native
-  object multi extends TopLevel[multi with Double]
-  
-  /* 3 */ @js.native
-  object repeat extends TopLevel[repeat with Double]
-  
-  /* 4 */ @js.native
-  object single extends TopLevel[single with Double]
   
 }
 

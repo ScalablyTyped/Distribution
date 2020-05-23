@@ -21,13 +21,13 @@ object AudioDetails {
   def apply(
     codec: String = null,
     compression: String = null,
-    frequency: Int | Double = null,
+    frequency: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): AudioDetails = {
     val __obj = js.Dynamic.literal()
     if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioDetails]
   }

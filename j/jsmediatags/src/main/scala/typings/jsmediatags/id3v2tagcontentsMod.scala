@@ -1,6 +1,7 @@
 package typings.jsmediatags
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jsmediatags.anon.CRC
 import typings.jsmediatags.typesMod.ByteArray
 import typings.jsmediatags.typesMod.TagFrameFlags
 import typings.jsmediatags.typesMod.TagHeaderFlags
@@ -14,7 +15,7 @@ object id3v2tagcontentsMod extends js.Object {
   @js.native
   trait ID3v2TagContents extends js.Object {
     var _contents: ByteArray = js.native
-    var _extendedHeader: AnonCRC = js.native
+    var _extendedHeader: CRC = js.native
     var _frames: StringDictionary[js.Array[ByteArray]] = js.native
     var _hasExtendedHeader: Boolean = js.native
     var _major: Double = js.native

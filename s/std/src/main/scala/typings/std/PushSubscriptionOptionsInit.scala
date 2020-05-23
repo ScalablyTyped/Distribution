@@ -12,12 +12,12 @@ trait PushSubscriptionOptionsInit extends js.Object {
 object PushSubscriptionOptionsInit {
   @scala.inline
   def apply(
-    applicationServerKey: BufferSource | java.lang.String = null,
+    applicationServerKey: js.UndefOr[Null | BufferSource | java.lang.String] = js.undefined,
     userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): PushSubscriptionOptionsInit = {
     val __obj = js.Dynamic.literal()
-    if (applicationServerKey != null) __obj.updateDynamic("applicationServerKey")(applicationServerKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(userVisibleOnly)) __obj.updateDynamic("userVisibleOnly")(userVisibleOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationServerKey)) __obj.updateDynamic("applicationServerKey")(applicationServerKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(userVisibleOnly)) __obj.updateDynamic("userVisibleOnly")(userVisibleOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushSubscriptionOptionsInit]
   }
 }

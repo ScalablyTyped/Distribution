@@ -15,8 +15,8 @@ object FileSystemLoaderOptions {
   @scala.inline
   def apply(noCache: js.UndefOr[Boolean] = js.undefined, watch: js.UndefOr[Boolean] = js.undefined): FileSystemLoaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemLoaderOptions]
   }
 }

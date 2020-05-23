@@ -1,7 +1,7 @@
 package typings.gitlab.snippetsMod
 
+import typings.gitlab.anon.publicbooleanPaginatedReq
 import typings.gitlab.infrastructureMod.BaseService
-import typings.gitlab.publicbooleanPaginatedReq
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.Sudo

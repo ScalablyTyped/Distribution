@@ -17,15 +17,15 @@ object VideoBandwidthProfileOptions {
   @scala.inline
   def apply(
     dominantSpeakerPriority: Priority = null,
-    maxSubscriptionBitrate: Int | Double = null,
-    maxTracks: Int | Double = null,
+    maxSubscriptionBitrate: js.UndefOr[Double] = js.undefined,
+    maxTracks: js.UndefOr[Double] = js.undefined,
     mode: BandwidthProfileMode = null,
     renderDimensions: VideoRenderDimensions = null
   ): VideoBandwidthProfileOptions = {
     val __obj = js.Dynamic.literal()
     if (dominantSpeakerPriority != null) __obj.updateDynamic("dominantSpeakerPriority")(dominantSpeakerPriority.asInstanceOf[js.Any])
-    if (maxSubscriptionBitrate != null) __obj.updateDynamic("maxSubscriptionBitrate")(maxSubscriptionBitrate.asInstanceOf[js.Any])
-    if (maxTracks != null) __obj.updateDynamic("maxTracks")(maxTracks.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSubscriptionBitrate)) __obj.updateDynamic("maxSubscriptionBitrate")(maxSubscriptionBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTracks)) __obj.updateDynamic("maxTracks")(maxTracks.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (renderDimensions != null) __obj.updateDynamic("renderDimensions")(renderDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoBandwidthProfileOptions]

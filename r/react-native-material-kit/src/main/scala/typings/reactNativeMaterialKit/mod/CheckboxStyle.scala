@@ -18,14 +18,14 @@ object CheckboxStyle {
     borderOffColor: String = null,
     borderOnColor: String = null,
     fillColor: String = null,
-    inset: Int | Double = null,
+    inset: js.UndefOr[Double] = js.undefined,
     rippleColor: String = null
   ): CheckboxStyle = {
     val __obj = js.Dynamic.literal()
     if (borderOffColor != null) __obj.updateDynamic("borderOffColor")(borderOffColor.asInstanceOf[js.Any])
     if (borderOnColor != null) __obj.updateDynamic("borderOnColor")(borderOnColor.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
+    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.get.asInstanceOf[js.Any])
     if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxStyle]
   }

@@ -1,6 +1,5 @@
 package typings.cordovaPluginWebsql
 
-import org.scalablytyped.runtime.Instantiable5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,17 +43,4 @@ trait Database extends js.Object {
     successCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-
-@JSGlobal("Database")
-@js.native
-object Database
-  extends /** Constructor for Database object */
-Instantiable5[
-      /* name */ String, 
-      /* version */ String, 
-      /* displayname */ String, 
-      /* size */ Double, 
-      /* creationCallback */ js.Function1[/* database */ Database, Unit], 
-      Database
-    ]
 

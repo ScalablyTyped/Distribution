@@ -21,7 +21,7 @@ object IXmlCdataOptions {
   @scala.inline
   def apply(charData: String, replaceInvalidCharsInCharData: js.UndefOr[Boolean] = js.undefined): IXmlCdataOptions = {
     val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceInvalidCharsInCharData)) __obj.updateDynamic("replaceInvalidCharsInCharData")(replaceInvalidCharsInCharData.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceInvalidCharsInCharData)) __obj.updateDynamic("replaceInvalidCharsInCharData")(replaceInvalidCharsInCharData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXmlCdataOptions]
   }
 }

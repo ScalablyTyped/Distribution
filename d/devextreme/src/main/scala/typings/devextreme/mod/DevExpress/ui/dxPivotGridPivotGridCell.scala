@@ -36,7 +36,7 @@ object dxPivotGridPivotGridCell {
   def apply(
     columnPath: js.Array[String | Double | Date] = null,
     columnType: D | T | GT = null,
-    dataIndex: Int | Double = null,
+    dataIndex: js.UndefOr[Double] = js.undefined,
     expanded: js.UndefOr[Boolean] = js.undefined,
     path: js.Array[String | Double | Date] = null,
     rowPath: js.Array[String | Double | Date] = null,
@@ -48,8 +48,8 @@ object dxPivotGridPivotGridCell {
     val __obj = js.Dynamic.literal()
     if (columnPath != null) __obj.updateDynamic("columnPath")(columnPath.asInstanceOf[js.Any])
     if (columnType != null) __obj.updateDynamic("columnType")(columnType.asInstanceOf[js.Any])
-    if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataIndex)) __obj.updateDynamic("dataIndex")(dataIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (rowPath != null) __obj.updateDynamic("rowPath")(rowPath.asInstanceOf[js.Any])
     if (rowType != null) __obj.updateDynamic("rowType")(rowType.asInstanceOf[js.Any])

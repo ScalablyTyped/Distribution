@@ -28,14 +28,14 @@ object UpdateDomainContactPrivacyRequest {
   @scala.inline
   def apply(
     DomainName: DomainName,
-    AdminPrivacy: js.UndefOr[scala.Boolean] = js.undefined,
-    RegistrantPrivacy: js.UndefOr[scala.Boolean] = js.undefined,
-    TechPrivacy: js.UndefOr[scala.Boolean] = js.undefined
+    AdminPrivacy: js.UndefOr[Boolean] = js.undefined,
+    RegistrantPrivacy: js.UndefOr[Boolean] = js.undefined,
+    TechPrivacy: js.UndefOr[Boolean] = js.undefined
   ): UpdateDomainContactPrivacyRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AdminPrivacy)) __obj.updateDynamic("AdminPrivacy")(AdminPrivacy.asInstanceOf[js.Any])
-    if (!js.isUndefined(RegistrantPrivacy)) __obj.updateDynamic("RegistrantPrivacy")(RegistrantPrivacy.asInstanceOf[js.Any])
-    if (!js.isUndefined(TechPrivacy)) __obj.updateDynamic("TechPrivacy")(TechPrivacy.asInstanceOf[js.Any])
+    if (!js.isUndefined(AdminPrivacy)) __obj.updateDynamic("AdminPrivacy")(AdminPrivacy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RegistrantPrivacy)) __obj.updateDynamic("RegistrantPrivacy")(RegistrantPrivacy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TechPrivacy)) __obj.updateDynamic("TechPrivacy")(TechPrivacy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDomainContactPrivacyRequest]
   }
 }

@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,38 +48,6 @@ object EnumDWTTIFFCompressionType extends js.Object {
   /** CCITT T.6 (TIFF 6 name). */
   @js.native
   sealed trait TIFF_T6 extends EnumDWTTIFFCompressionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTTIFFCompressionType with Double] = js.native
-  /* 0 */ @js.native
-  object TIFF_AUTO extends TopLevel[TIFF_AUTO with Double]
-  
-  /* 3 */ @js.native
-  object TIFF_FAX3 extends TopLevel[TIFF_FAX3 with Double]
-  
-  /* 4 */ @js.native
-  object TIFF_FAX4 extends TopLevel[TIFF_FAX4 with Double]
-  
-  /* 7 */ @js.native
-  object TIFF_JPEG extends TopLevel[TIFF_JPEG with Double]
-  
-  /* 5 */ @js.native
-  object TIFF_LZW extends TopLevel[TIFF_LZW with Double]
-  
-  /* 1 */ @js.native
-  object TIFF_NONE extends TopLevel[TIFF_NONE with Double]
-  
-  /* 32773 */ @js.native
-  object TIFF_PACKBITS extends TopLevel[TIFF_PACKBITS with Double]
-  
-  /* 2 */ @js.native
-  object TIFF_RLE extends TopLevel[TIFF_RLE with Double]
-  
-  /* 3 */ @js.native
-  object TIFF_T4 extends TopLevel[TIFF_T4 with Double]
-  
-  /* 4 */ @js.native
-  object TIFF_T6 extends TopLevel[TIFF_T6 with Double]
   
 }
 

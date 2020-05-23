@@ -29,25 +29,25 @@ object PngOptions {
   @scala.inline
   def apply(
     adaptiveFiltering: js.UndefOr[Boolean] = js.undefined,
-    colors: Int | Double = null,
-    colours: Int | Double = null,
-    compressionLevel: Int | Double = null,
-    dither: Int | Double = null,
+    colors: js.UndefOr[Double] = js.undefined,
+    colours: js.UndefOr[Double] = js.undefined,
+    compressionLevel: js.UndefOr[Double] = js.undefined,
+    dither: js.UndefOr[Double] = js.undefined,
     force: js.UndefOr[Boolean] = js.undefined,
     palette: js.UndefOr[Boolean] = js.undefined,
     progressive: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null
+    quality: js.UndefOr[Double] = js.undefined
   ): PngOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adaptiveFiltering)) __obj.updateDynamic("adaptiveFiltering")(adaptiveFiltering.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (colours != null) __obj.updateDynamic("colours")(colours.asInstanceOf[js.Any])
-    if (compressionLevel != null) __obj.updateDynamic("compressionLevel")(compressionLevel.asInstanceOf[js.Any])
-    if (dither != null) __obj.updateDynamic("dither")(dither.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(palette)) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(adaptiveFiltering)) __obj.updateDynamic("adaptiveFiltering")(adaptiveFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colours)) __obj.updateDynamic("colours")(colours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressionLevel)) __obj.updateDynamic("compressionLevel")(compressionLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dither)) __obj.updateDynamic("dither")(dither.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(palette)) __obj.updateDynamic("palette")(palette.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PngOptions]
   }
 }

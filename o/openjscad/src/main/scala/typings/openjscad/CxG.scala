@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CxG")
 @js.native
-class CxG () extends js.Object {
+trait CxG extends js.Object {
   def getBounds(): js.Array[CxG] = js.native
   def mirrored(plane: Plane): CxG = js.native
   def mirroredX(): CxG = js.native

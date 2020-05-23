@@ -29,14 +29,14 @@ object dxChartSeriesTypesCommonSeriesHoverStyle {
     color: String = null,
     dashStyle: dash | dot | longDash | solid = null,
     hatching: dxChartSeriesTypesCommonSeriesHoverStyleHatching = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): dxChartSeriesTypesCommonSeriesHoverStyle = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (hatching != null) __obj.updateDynamic("hatching")(hatching.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesHoverStyle]
   }
 }

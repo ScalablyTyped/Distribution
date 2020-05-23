@@ -50,14 +50,14 @@ object JobSchema {
     web_url: String,
     artifacts_expire_at: Date = null,
     coverage: String = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     finished_at: Date = null,
     started_at: Date = null
   ): JobSchema = {
     val __obj = js.Dynamic.literal(allow_failure = allow_failure.asInstanceOf[js.Any], artifacts = artifacts.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pipeline = pipeline.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], runner = runner.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], web_url = web_url.asInstanceOf[js.Any])
     if (artifacts_expire_at != null) __obj.updateDynamic("artifacts_expire_at")(artifacts_expire_at.asInstanceOf[js.Any])
     if (coverage != null) __obj.updateDynamic("coverage")(coverage.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (finished_at != null) __obj.updateDynamic("finished_at")(finished_at.asInstanceOf[js.Any])
     if (started_at != null) __obj.updateDynamic("started_at")(started_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobSchema]

@@ -14,6 +14,12 @@ import scala.scalajs.js.annotation._
 
 trait ITerminalOptions extends js.Object {
   /**
+    * Whether to allow the use of proposed API. When false, any usage of APIs
+    * marked as experimental/proposed will throw an error. This defaults to
+    * true currently, but will change to false in v5.0.
+    */
+  var allowProposedApi: js.UndefOr[Boolean] = js.undefined
+  /**
     * Whether background should support non-opaque color. It must be set before
     * executing the `Terminal.open()` method and can't be changed later without
     * executing it again. Note that enabling this can negatively impact
@@ -86,13 +92,19 @@ trait ITerminalOptions extends js.Object {
     */
   var fontWeightBold: js.UndefOr[FontWeight] = js.undefined
   /**
-    * The spacing in whole pixels between characters..
+    * The spacing in whole pixels between characters.
     */
   var letterSpacing: js.UndefOr[Double] = js.undefined
   /**
     * The line height used to render text.
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
+  /**
+    * The duration in milliseconds before link tooltip events fire when
+    * hovering on a link.
+    * @deprecated This will be removed when the link matcher API is removed.
+    */
+  var linkTooltipHoverDuration: js.UndefOr[Double] = js.undefined
   /**
     * What log level to use, this will log for all levels below and including
     * what is set:
@@ -195,73 +207,77 @@ trait ITerminalOptions extends js.Object {
 object ITerminalOptions {
   @scala.inline
   def apply(
+    allowProposedApi: js.UndefOr[Boolean] = js.undefined,
     allowTransparency: js.UndefOr[Boolean] = js.undefined,
     bellSound: String = null,
     bellStyle: none | sound = null,
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     convertEol: js.UndefOr[Boolean] = js.undefined,
     cursorBlink: js.UndefOr[Boolean] = js.undefined,
     cursorStyle: block | underline | bar = null,
-    cursorWidth: Int | Double = null,
+    cursorWidth: js.UndefOr[Double] = js.undefined,
     disableStdin: js.UndefOr[Boolean] = js.undefined,
     drawBoldTextInBrightColors: js.UndefOr[Boolean] = js.undefined,
     fastScrollModifier: alt | ctrl | shift = null,
-    fastScrollSensitivity: Int | Double = null,
+    fastScrollSensitivity: js.UndefOr[Double] = js.undefined,
     fontFamily: String = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     fontWeight: FontWeight = null,
     fontWeightBold: FontWeight = null,
-    letterSpacing: Int | Double = null,
-    lineHeight: Int | Double = null,
+    letterSpacing: js.UndefOr[Double] = js.undefined,
+    lineHeight: js.UndefOr[Double] = js.undefined,
+    linkTooltipHoverDuration: js.UndefOr[Double] = js.undefined,
     logLevel: LogLevel = null,
     macOptionClickForcesSelection: js.UndefOr[Boolean] = js.undefined,
     macOptionIsMeta: js.UndefOr[Boolean] = js.undefined,
-    minimumContrastRatio: Int | Double = null,
+    minimumContrastRatio: js.UndefOr[Double] = js.undefined,
     rendererType: RendererType = null,
     rightClickSelectsWord: js.UndefOr[Boolean] = js.undefined,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     screenReaderMode: js.UndefOr[Boolean] = js.undefined,
-    scrollSensitivity: Int | Double = null,
-    scrollback: Int | Double = null,
-    tabStopWidth: Int | Double = null,
+    scrollSensitivity: js.UndefOr[Double] = js.undefined,
+    scrollback: js.UndefOr[Double] = js.undefined,
+    tabStopWidth: js.UndefOr[Double] = js.undefined,
     theme: ITheme = null,
     windowOptions: IWindowOptions = null,
     windowsMode: js.UndefOr[Boolean] = js.undefined,
     wordSeparator: String = null
   ): ITerminalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowProposedApi)) __obj.updateDynamic("allowProposedApi")(allowProposedApi.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.get.asInstanceOf[js.Any])
     if (bellSound != null) __obj.updateDynamic("bellSound")(bellSound.asInstanceOf[js.Any])
     if (bellStyle != null) __obj.updateDynamic("bellStyle")(bellStyle.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (!js.isUndefined(convertEol)) __obj.updateDynamic("convertEol")(convertEol.asInstanceOf[js.Any])
-    if (!js.isUndefined(cursorBlink)) __obj.updateDynamic("cursorBlink")(cursorBlink.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(convertEol)) __obj.updateDynamic("convertEol")(convertEol.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorBlink)) __obj.updateDynamic("cursorBlink")(cursorBlink.get.asInstanceOf[js.Any])
     if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
-    if (cursorWidth != null) __obj.updateDynamic("cursorWidth")(cursorWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStdin)) __obj.updateDynamic("disableStdin")(disableStdin.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawBoldTextInBrightColors)) __obj.updateDynamic("drawBoldTextInBrightColors")(drawBoldTextInBrightColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorWidth)) __obj.updateDynamic("cursorWidth")(cursorWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStdin)) __obj.updateDynamic("disableStdin")(disableStdin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawBoldTextInBrightColors)) __obj.updateDynamic("drawBoldTextInBrightColors")(drawBoldTextInBrightColors.get.asInstanceOf[js.Any])
     if (fastScrollModifier != null) __obj.updateDynamic("fastScrollModifier")(fastScrollModifier.asInstanceOf[js.Any])
-    if (fastScrollSensitivity != null) __obj.updateDynamic("fastScrollSensitivity")(fastScrollSensitivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastScrollSensitivity)) __obj.updateDynamic("fastScrollSensitivity")(fastScrollSensitivity.get.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (fontWeightBold != null) __obj.updateDynamic("fontWeightBold")(fontWeightBold.asInstanceOf[js.Any])
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(letterSpacing)) __obj.updateDynamic("letterSpacing")(letterSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineHeight)) __obj.updateDynamic("lineHeight")(lineHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkTooltipHoverDuration)) __obj.updateDynamic("linkTooltipHoverDuration")(linkTooltipHoverDuration.get.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(macOptionClickForcesSelection)) __obj.updateDynamic("macOptionClickForcesSelection")(macOptionClickForcesSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(macOptionIsMeta)) __obj.updateDynamic("macOptionIsMeta")(macOptionIsMeta.asInstanceOf[js.Any])
-    if (minimumContrastRatio != null) __obj.updateDynamic("minimumContrastRatio")(minimumContrastRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(macOptionClickForcesSelection)) __obj.updateDynamic("macOptionClickForcesSelection")(macOptionClickForcesSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(macOptionIsMeta)) __obj.updateDynamic("macOptionIsMeta")(macOptionIsMeta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumContrastRatio)) __obj.updateDynamic("minimumContrastRatio")(minimumContrastRatio.get.asInstanceOf[js.Any])
     if (rendererType != null) __obj.updateDynamic("rendererType")(rendererType.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightClickSelectsWord)) __obj.updateDynamic("rightClickSelectsWord")(rightClickSelectsWord.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenReaderMode)) __obj.updateDynamic("screenReaderMode")(screenReaderMode.asInstanceOf[js.Any])
-    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
-    if (scrollback != null) __obj.updateDynamic("scrollback")(scrollback.asInstanceOf[js.Any])
-    if (tabStopWidth != null) __obj.updateDynamic("tabStopWidth")(tabStopWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightClickSelectsWord)) __obj.updateDynamic("rightClickSelectsWord")(rightClickSelectsWord.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenReaderMode)) __obj.updateDynamic("screenReaderMode")(screenReaderMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollSensitivity)) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollback)) __obj.updateDynamic("scrollback")(scrollback.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabStopWidth)) __obj.updateDynamic("tabStopWidth")(tabStopWidth.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (windowOptions != null) __obj.updateDynamic("windowOptions")(windowOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsMode)) __obj.updateDynamic("windowsMode")(windowsMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsMode)) __obj.updateDynamic("windowsMode")(windowsMode.get.asInstanceOf[js.Any])
     if (wordSeparator != null) __obj.updateDynamic("wordSeparator")(wordSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITerminalOptions]
   }

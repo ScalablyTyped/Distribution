@@ -21,14 +21,14 @@ object UserProfile {
     name: String,
     userId: String,
     imageData: String = null,
-    status: Int | Double = null,
-    timestamp: Int | Double = null,
+    status: js.UndefOr[Double] = js.undefined,
+    timestamp: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): UserProfile = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
     if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfile]
   }

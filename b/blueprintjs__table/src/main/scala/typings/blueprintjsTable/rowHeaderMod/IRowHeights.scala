@@ -13,14 +13,14 @@ trait IRowHeights extends js.Object {
 object IRowHeights {
   @scala.inline
   def apply(
-    defaultRowHeight: Int | Double = null,
-    maxRowHeight: Int | Double = null,
-    minRowHeight: Int | Double = null
+    defaultRowHeight: js.UndefOr[Double] = js.undefined,
+    maxRowHeight: js.UndefOr[Double] = js.undefined,
+    minRowHeight: js.UndefOr[Double] = js.undefined
   ): IRowHeights = {
     val __obj = js.Dynamic.literal()
-    if (defaultRowHeight != null) __obj.updateDynamic("defaultRowHeight")(defaultRowHeight.asInstanceOf[js.Any])
-    if (maxRowHeight != null) __obj.updateDynamic("maxRowHeight")(maxRowHeight.asInstanceOf[js.Any])
-    if (minRowHeight != null) __obj.updateDynamic("minRowHeight")(minRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultRowHeight)) __obj.updateDynamic("defaultRowHeight")(defaultRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRowHeight)) __obj.updateDynamic("maxRowHeight")(maxRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRowHeight)) __obj.updateDynamic("minRowHeight")(minRowHeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRowHeights]
   }
 }

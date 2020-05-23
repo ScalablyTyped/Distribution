@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation-drawer
 
-Typings are for version 2.4.11
+Typings are for version 2.4.13
 
 ## Library description:
 Drawer navigator component for React Navigation

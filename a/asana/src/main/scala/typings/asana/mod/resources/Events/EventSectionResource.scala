@@ -1,12 +1,12 @@
 package typings.asana.mod.resources.Events
 
-import typings.asana.AnonGid
+import typings.asana.anon.Gid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait EventSectionResource extends EventResource {
-  var project: AnonGid = js.native
+  var project: Gid = js.native
 }
 

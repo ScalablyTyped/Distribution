@@ -47,7 +47,7 @@ trait IRefundCreationOptions extends IDataOptionsWithMetadata {
 object IRefundCreationOptions {
   @scala.inline
   def apply(
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null,
@@ -56,13 +56,13 @@ object IRefundCreationOptions {
     reverse_transfer: js.UndefOr[Boolean] = js.undefined
   ): IRefundCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (!js.isUndefined(refund_application_fee)) __obj.updateDynamic("refund_application_fee")(refund_application_fee.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse_transfer)) __obj.updateDynamic("reverse_transfer")(reverse_transfer.asInstanceOf[js.Any])
+    if (!js.isUndefined(refund_application_fee)) __obj.updateDynamic("refund_application_fee")(refund_application_fee.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse_transfer)) __obj.updateDynamic("reverse_transfer")(reverse_transfer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRefundCreationOptions]
   }
 }

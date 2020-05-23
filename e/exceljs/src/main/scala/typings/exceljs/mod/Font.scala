@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.PartialColor
+import typings.exceljs.anon.PartialColor
 import typings.exceljs.exceljsStrings.double
 import typings.exceljs.exceljsStrings.doubleAccounting
 import typings.exceljs.exceljsStrings.major

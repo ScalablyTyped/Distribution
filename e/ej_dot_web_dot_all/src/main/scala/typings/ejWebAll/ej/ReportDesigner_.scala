@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.ReportDesigner")
 @js.native
-class ReportDesigner_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.ReportDesigner.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.ReportDesigner.Model) = this()
+trait ReportDesigner_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.ReportDesigner.Model = js.native
   @JSName("model")
   var model_ReportDesigner_ : typings.ejWebAll.ej.ReportDesigner.Model = js.native

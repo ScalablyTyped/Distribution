@@ -57,24 +57,24 @@ object Output {
   def apply(
     Name: string,
     OutputArn: string,
-    DataTransferSubscriberFeePercent: Int | Double = null,
+    DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.undefined,
     Description: string = null,
     Destination: string = null,
     Encryption: Encryption = null,
     EntitlementArn: string = null,
     MediaLiveInputArn: string = null,
-    Port: Int | Double = null,
+    Port: js.UndefOr[integer] = js.undefined,
     Transport: Transport = null,
     VpcInterfaceAttachment: VpcInterfaceAttachment = null
   ): Output = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], OutputArn = OutputArn.asInstanceOf[js.Any])
-    if (DataTransferSubscriberFeePercent != null) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Destination != null) __obj.updateDynamic("Destination")(Destination.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
     if (EntitlementArn != null) __obj.updateDynamic("EntitlementArn")(EntitlementArn.asInstanceOf[js.Any])
     if (MediaLiveInputArn != null) __obj.updateDynamic("MediaLiveInputArn")(MediaLiveInputArn.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (Transport != null) __obj.updateDynamic("Transport")(Transport.asInstanceOf[js.Any])
     if (VpcInterfaceAttachment != null) __obj.updateDynamic("VpcInterfaceAttachment")(VpcInterfaceAttachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]

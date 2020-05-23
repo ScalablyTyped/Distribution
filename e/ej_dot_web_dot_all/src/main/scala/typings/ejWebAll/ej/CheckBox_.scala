@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.CheckBox")
 @js.native
-class CheckBox_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.CheckBox.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.CheckBox.Model) = this()
+trait CheckBox_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.CheckBox.Model = js.native
   @JSName("model")
   var model_CheckBox_ : typings.ejWebAll.ej.CheckBox.Model = js.native

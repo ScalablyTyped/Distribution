@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object VpnCredentialType extends js.Object {
   /** Represents a password change. The current password, new password, and a confirmation of the new password will be collected. */
   @js.native
   sealed trait usernamePasswordChange extends VpnCredentialType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnCredentialType with Double] = js.native
-  /* 5 */ @js.native
-  object protectedCertificate extends TopLevel[protectedCertificate with Double]
-  
-  /* 4 */ @js.native
-  object smartCard extends TopLevel[smartCard with Double]
-  
-  /* 6 */ @js.native
-  object unProtectedCertificate extends TopLevel[unProtectedCertificate with Double]
-  
-  /* 1 */ @js.native
-  object usernameOtpPin extends TopLevel[usernameOtpPin with Double]
-  
-  /* 0 */ @js.native
-  object usernamePassword extends TopLevel[usernamePassword with Double]
-  
-  /* 2 */ @js.native
-  object usernamePasswordAndPin extends TopLevel[usernamePasswordAndPin with Double]
-  
-  /* 3 */ @js.native
-  object usernamePasswordChange extends TopLevel[usernamePasswordChange with Double]
   
 }
 

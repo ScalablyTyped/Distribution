@@ -1,9 +1,15 @@
 package typings.phaser.Phaser.Loader.FileTypes
 
+import typings.phaser.Phaser.Cache.BaseCache
 import typings.phaser.Phaser.Loader.File
 import typings.phaser.Phaser.Loader.LoaderPlugin
-import typings.phaser.Phaser.Types.Loader.FileTypes.VideoFileConfig
+import typings.phaser.Phaser.Loader.MultiFile
+import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
+import typings.phaser.integer
+import typings.std.EventTarget
+import typings.std.ProgressEvent
+import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,60 +21,46 @@ import scala.scalajs.js.annotation._
   * 
   * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#video.
   */
-@JSGlobal("Phaser.Loader.FileTypes.VideoFile")
-@js.native
-class VideoFile protected () extends File {
-  /**
-    * 
-    * @param loader A reference to the Loader that is responsible for this file.
-    * @param key The key to use for this file, or a file configuration object.
-    * @param urlConfig The absolute or relative URL to load this file from in a config object.
-    * @param loadEvent The load event to listen for when _not_ loading as a blob. Either 'loadeddata', 'canplay' or 'canplaythrough'.
-    * @param asBlob Load the video as a data blob, or via the Video element?
-    * @param noAudio Does the video have an audio track? If not you can enable auto-playing on it.
-    * @param xhrSettings Extra XHR Settings specifically for this file.
-    */
-  def this(loader: LoaderPlugin, key: String) = this()
-  def this(loader: LoaderPlugin, key: VideoFileConfig) = this()
-  def this(loader: LoaderPlugin, key: String, urlConfig: js.Any) = this()
-  def this(loader: LoaderPlugin, key: VideoFileConfig, urlConfig: js.Any) = this()
-  def this(loader: LoaderPlugin, key: String, urlConfig: js.Any, loadEvent: String) = this()
-  def this(loader: LoaderPlugin, key: VideoFileConfig, urlConfig: js.Any, loadEvent: String) = this()
-  def this(loader: LoaderPlugin, key: String, urlConfig: js.Any, loadEvent: String, asBlob: Boolean) = this()
-  def this(loader: LoaderPlugin, key: VideoFileConfig, urlConfig: js.Any, loadEvent: String, asBlob: Boolean) = this()
-  def this(
-    loader: LoaderPlugin,
+trait VideoFile extends File
+
+object VideoFile {
+  @scala.inline
+  def apply(
+    addToCache: () => Unit,
+    bytesLoaded: Double,
+    bytesTotal: Double,
+    cache: BaseCache | TextureManager,
+    config: js.Any,
+    data: js.Any,
+    destroy: () => Unit,
+    hasCacheConflict: () => Boolean,
     key: String,
-    urlConfig: js.Any,
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean
-  ) = this()
-  def this(
+    linkFile: File,
+    load: () => Unit,
     loader: LoaderPlugin,
-    key: VideoFileConfig,
-    urlConfig: js.Any,
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    urlConfig: js.Any,
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean,
-    xhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: VideoFileConfig,
-    urlConfig: js.Any,
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean,
-    xhrSettings: XHRSettingsObject
-  ) = this()
+    multiFile: MultiFile,
+    onError: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit,
+    onLoad: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit,
+    onProcess: () => Unit,
+    onProcessComplete: () => Unit,
+    onProcessError: () => Unit,
+    onProgress: ProgressEvent[EventTarget] => Unit,
+    pendingDestroy: () => Unit,
+    percentComplete: Double,
+    resetXHR: () => Unit,
+    setLink: File => Unit,
+    src: String,
+    state: integer,
+    `type`: String,
+    url: String,
+    xhrLoader: XMLHttpRequest,
+    xhrSettings: XHRSettingsObject,
+    crossOrigin: String = null
+  ): VideoFile = {
+    val __obj = js.Dynamic.literal(addToCache = js.Any.fromFunction0(addToCache), bytesLoaded = bytesLoaded.asInstanceOf[js.Any], bytesTotal = bytesTotal.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), hasCacheConflict = js.Any.fromFunction0(hasCacheConflict), key = key.asInstanceOf[js.Any], linkFile = linkFile.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loader = loader.asInstanceOf[js.Any], multiFile = multiFile.asInstanceOf[js.Any], onError = js.Any.fromFunction2(onError), onLoad = js.Any.fromFunction2(onLoad), onProcess = js.Any.fromFunction0(onProcess), onProcessComplete = js.Any.fromFunction0(onProcessComplete), onProcessError = js.Any.fromFunction0(onProcessError), onProgress = js.Any.fromFunction1(onProgress), pendingDestroy = js.Any.fromFunction0(pendingDestroy), percentComplete = percentComplete.asInstanceOf[js.Any], resetXHR = js.Any.fromFunction0(resetXHR), setLink = js.Any.fromFunction1(setLink), src = src.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], xhrLoader = xhrLoader.asInstanceOf[js.Any], xhrSettings = xhrSettings.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoFile]
+  }
 }
 

@@ -1,12 +1,12 @@
 package typings.got.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.got.GotInstanceGotBodyFnnull
-import typings.got.GotInstanceGotBodyFnstrin
-import typings.got.GotInstanceGotFormFnnull
-import typings.got.GotInstanceGotFormFnstrin
-import typings.got.GotInstanceGotJSONFn
-import typings.got.Recordgetpostputpatchhead
+import typings.got.anon.GotInstanceGotBodyFnnull
+import typings.got.anon.GotInstanceGotBodyFnstrin
+import typings.got.anon.GotInstanceGotFormFnnull
+import typings.got.anon.GotInstanceGotFormFnstrin
+import typings.got.anon.GotInstanceGotJSONFn
+import typings.got.anon.Recordgetpostputpatchhead
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,11 +47,11 @@ object ^ extends js.Object {
   def delete(url: GotUrl, options: GotBodyOptions[Null | String]): GotPromise[String] = js.native
   def delete(url: GotUrl, options: GotFormOptions[Null | String]): GotPromise[String] = js.native
   def delete(url: GotUrl, options: GotJSONOptions): GotPromise[_] = js.native
-  def extend(options: GotBodyOptions[String]): GotInstanceGotBodyFnstrin = js.native
+  def extend(options: GotBodyOptions[Null]): GotInstanceGotBodyFnnull = js.native
   def extend(options: GotFormOptions[String]): GotInstanceGotFormFnstrin = js.native
   def extend(options: GotJSONOptions): GotInstanceGotJSONFn = js.native
   @JSName("extend")
-  def extend_GotInstanceGotBodyFnnull(options: GotBodyOptions[Null]): GotInstanceGotBodyFnnull = js.native
+  def extend_GotInstanceGotBodyFnstrin(options: GotBodyOptions[String]): GotInstanceGotBodyFnstrin = js.native
   @JSName("extend")
   def extend_GotInstanceGotFormFnnull(options: GotFormOptions[Null]): GotInstanceGotFormFnnull = js.native
   def get(url: GotUrl): GotPromise[String] = js.native

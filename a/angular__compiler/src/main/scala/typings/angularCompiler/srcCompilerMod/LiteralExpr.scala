@@ -11,21 +11,10 @@ class LiteralExpr ()
   def this(value: String) = this()
   def this(value: Boolean) = this()
   def this(value: Double) = this()
-  def this(value: js.UndefOr[scala.Nothing], `type`: typings.angularCompiler.outputAstMod.Type) = this()
   def this(value: String, `type`: typings.angularCompiler.outputAstMod.Type) = this()
   def this(value: Boolean, `type`: typings.angularCompiler.outputAstMod.Type) = this()
   def this(value: Double, `type`: typings.angularCompiler.outputAstMod.Type) = this()
   def this(value: Null, `type`: typings.angularCompiler.outputAstMod.Type) = this()
-  def this(
-    value: js.UndefOr[scala.Nothing],
-    `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    value: js.UndefOr[scala.Nothing],
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
   def this(value: String, `type`: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
   def this(
     value: String,

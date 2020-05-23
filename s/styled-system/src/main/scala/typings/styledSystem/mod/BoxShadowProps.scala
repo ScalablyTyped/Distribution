@@ -17,9 +17,11 @@ trait BoxShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.O
 
 object BoxShadowProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](boxShadow: ResponsiveValue[BoxShadowProperty | Double, ThemeType] = null): BoxShadowProps[ThemeType] = {
+  def apply[ThemeType](
+    boxShadow: js.UndefOr[Null | (ResponsiveValue[BoxShadowProperty | Double, ThemeType])] = js.undefined
+  ): BoxShadowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (boxShadow != null) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxShadow)) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxShadowProps[ThemeType]]
   }
 }

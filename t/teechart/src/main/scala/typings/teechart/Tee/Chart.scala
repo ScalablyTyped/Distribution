@@ -6,10 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Tee.Chart")
 @js.native
-class Chart protected () extends IChart {
-  def this(canvas: String) = this()
+trait Chart extends IChart {
   //public aspect: IAspect;
   var axes: IAxes = js.native
   var bounds: IRectangle = js.native

@@ -1,6 +1,6 @@
 package typings.jupyterlabCells.widgetMod.CodeCell
 
-import typings.jupyterlabCells.PartialIConfig
+import typings.jupyterlabCells.anon.PartialIConfig
 import typings.jupyterlabCells.modelMod.ICellModel
 import typings.jupyterlabCells.widgetMod.Cell.IContentFactory
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
@@ -31,7 +31,7 @@ object IOptions {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
     if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory.asInstanceOf[js.Any])
     if (editorConfig != null) __obj.updateDynamic("editorConfig")(editorConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateEditorOnShow)) __obj.updateDynamic("updateEditorOnShow")(updateEditorOnShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateEditorOnShow)) __obj.updateDynamic("updateEditorOnShow")(updateEditorOnShow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

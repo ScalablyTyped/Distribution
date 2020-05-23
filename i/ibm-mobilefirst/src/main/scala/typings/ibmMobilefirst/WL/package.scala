@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object WL {
+  type FailureResponse = typings.ibmMobilefirst.WL.ResponseBase
   type Filter = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type Headers = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type LoggerCallback = js.Function3[

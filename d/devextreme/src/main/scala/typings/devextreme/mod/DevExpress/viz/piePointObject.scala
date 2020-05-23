@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait piePointObject extends basePointObject {
   /** @name piePointObject.percent */
-  var percent: String | Double | Date
+  var percent: js.UndefOr[String | Double | Date] = js.undefined
   /** @name piePointObject.hide() */
   def hide(): Unit
   /** @name piePointObject.isVisible() */
@@ -21,8 +21,6 @@ object piePointObject {
   def apply(
     clearHover: () => Unit,
     clearSelection: () => Unit,
-    data: js.Any,
-    fullState: Double,
     getColor: () => String,
     getLabel: () => baseLabelObject with js.Array[baseLabelObject],
     hide: () => Unit,
@@ -31,16 +29,25 @@ object piePointObject {
     isHovered: () => Boolean,
     isSelected: () => Boolean,
     isVisible: () => Boolean,
-    originalArgument: String | Double | Date,
-    originalValue: String | Double | Date,
-    percent: String | Double | Date,
     select: () => Unit,
-    series: js.Any,
     show: () => Unit,
     showTooltip: () => Unit,
-    tag: js.Any
+    data: js.Any = null,
+    fullState: js.UndefOr[Double] = js.undefined,
+    originalArgument: String | Double | Date = null,
+    originalValue: String | Double | Date = null,
+    percent: String | Double | Date = null,
+    series: js.Any = null,
+    tag: js.Any = null
   ): piePointObject = {
-    val __obj = js.Dynamic.literal(clearHover = js.Any.fromFunction0(clearHover), clearSelection = js.Any.fromFunction0(clearSelection), data = data.asInstanceOf[js.Any], fullState = fullState.asInstanceOf[js.Any], getColor = js.Any.fromFunction0(getColor), getLabel = js.Any.fromFunction0(getLabel), hide = js.Any.fromFunction0(hide), hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction0(hover), isHovered = js.Any.fromFunction0(isHovered), isSelected = js.Any.fromFunction0(isSelected), isVisible = js.Any.fromFunction0(isVisible), originalArgument = originalArgument.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], select = js.Any.fromFunction0(select), series = series.asInstanceOf[js.Any], show = js.Any.fromFunction0(show), showTooltip = js.Any.fromFunction0(showTooltip), tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clearHover = js.Any.fromFunction0(clearHover), clearSelection = js.Any.fromFunction0(clearSelection), getColor = js.Any.fromFunction0(getColor), getLabel = js.Any.fromFunction0(getLabel), hide = js.Any.fromFunction0(hide), hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction0(hover), isHovered = js.Any.fromFunction0(isHovered), isSelected = js.Any.fromFunction0(isSelected), isVisible = js.Any.fromFunction0(isVisible), select = js.Any.fromFunction0(select), show = js.Any.fromFunction0(show), showTooltip = js.Any.fromFunction0(showTooltip))
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullState)) __obj.updateDynamic("fullState")(fullState.get.asInstanceOf[js.Any])
+    if (originalArgument != null) __obj.updateDynamic("originalArgument")(originalArgument.asInstanceOf[js.Any])
+    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue.asInstanceOf[js.Any])
+    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[piePointObject]
   }
 }

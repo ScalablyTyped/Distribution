@@ -14,10 +14,14 @@ trait IDatasource extends js.Object {
 
 object IDatasource {
   @scala.inline
-  def apply(getRows: IGetRowsParams => Unit, destroy: () => Unit = null, rowCount: Int | Double = null): IDatasource = {
+  def apply(
+    getRows: IGetRowsParams => Unit,
+    destroy: () => Unit = null,
+    rowCount: js.UndefOr[Double] = js.undefined
+  ): IDatasource = {
     val __obj = js.Dynamic.literal(getRows = js.Any.fromFunction1(getRows))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatasource]
   }
 }

@@ -53,20 +53,20 @@ object IonRefresher {
     onIonPull: /* event */ CustomEvent[Unit] => Unit = null,
     onIonRefresh: /* event */ CustomEvent[RefresherEventDetail] => Unit = null,
     onIonStart: /* event */ CustomEvent[Unit] => Unit = null,
-    pullFactor: Int | Double = null,
-    pullMax: Int | Double = null,
-    pullMin: Int | Double = null,
+    pullFactor: js.UndefOr[Double] = js.undefined,
+    pullMax: js.UndefOr[Double] = js.undefined,
+    pullMin: js.UndefOr[Double] = js.undefined,
     snapbackDuration: String = null
   ): IonRefresher = {
     val __obj = js.Dynamic.literal()
     if (closeDuration != null) __obj.updateDynamic("closeDuration")(closeDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (onIonPull != null) __obj.updateDynamic("onIonPull")(js.Any.fromFunction1(onIonPull))
     if (onIonRefresh != null) __obj.updateDynamic("onIonRefresh")(js.Any.fromFunction1(onIonRefresh))
     if (onIonStart != null) __obj.updateDynamic("onIonStart")(js.Any.fromFunction1(onIonStart))
-    if (pullFactor != null) __obj.updateDynamic("pullFactor")(pullFactor.asInstanceOf[js.Any])
-    if (pullMax != null) __obj.updateDynamic("pullMax")(pullMax.asInstanceOf[js.Any])
-    if (pullMin != null) __obj.updateDynamic("pullMin")(pullMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullFactor)) __obj.updateDynamic("pullFactor")(pullFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullMax)) __obj.updateDynamic("pullMax")(pullMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullMin)) __obj.updateDynamic("pullMin")(pullMin.get.asInstanceOf[js.Any])
     if (snapbackDuration != null) __obj.updateDynamic("snapbackDuration")(snapbackDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRefresher]
   }

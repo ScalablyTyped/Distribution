@@ -53,7 +53,7 @@ object Authorizer {
   def apply(
     authType: String = null,
     authorizerCredentials: String = null,
-    authorizerResultTtlInSeconds: Int | scala.Double = null,
+    authorizerResultTtlInSeconds: js.UndefOr[NullableInteger] = js.undefined,
     authorizerUri: String = null,
     id: String = null,
     identitySource: String = null,
@@ -65,7 +65,7 @@ object Authorizer {
     val __obj = js.Dynamic.literal()
     if (authType != null) __obj.updateDynamic("authType")(authType.asInstanceOf[js.Any])
     if (authorizerCredentials != null) __obj.updateDynamic("authorizerCredentials")(authorizerCredentials.asInstanceOf[js.Any])
-    if (authorizerResultTtlInSeconds != null) __obj.updateDynamic("authorizerResultTtlInSeconds")(authorizerResultTtlInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorizerResultTtlInSeconds)) __obj.updateDynamic("authorizerResultTtlInSeconds")(authorizerResultTtlInSeconds.get.asInstanceOf[js.Any])
     if (authorizerUri != null) __obj.updateDynamic("authorizerUri")(authorizerUri.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (identitySource != null) __obj.updateDynamic("identitySource")(identitySource.asInstanceOf[js.Any])

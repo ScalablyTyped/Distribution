@@ -13,11 +13,15 @@ trait ICommandBarStyles extends js.Object {
 
 object ICommandBarStyles {
   @scala.inline
-  def apply(primarySet: IStyle = null, root: IStyle = null, secondarySet: IStyle = null): ICommandBarStyles = {
+  def apply(
+    primarySet: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    secondarySet: js.UndefOr[Null | IStyle] = js.undefined
+  ): ICommandBarStyles = {
     val __obj = js.Dynamic.literal()
-    if (primarySet != null) __obj.updateDynamic("primarySet")(primarySet.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (secondarySet != null) __obj.updateDynamic("secondarySet")(secondarySet.asInstanceOf[js.Any])
+    if (!js.isUndefined(primarySet)) __obj.updateDynamic("primarySet")(primarySet.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondarySet)) __obj.updateDynamic("secondarySet")(secondarySet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICommandBarStyles]
   }
 }

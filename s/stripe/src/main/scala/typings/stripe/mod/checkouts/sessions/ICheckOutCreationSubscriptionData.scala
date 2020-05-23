@@ -33,16 +33,16 @@ object ICheckOutCreationSubscriptionData {
   @scala.inline
   def apply(
     items: js.Array[ICheckOutCreationSubscriptionDataItem],
-    application_fee_percent: Int | Double = null,
+    application_fee_percent: js.UndefOr[Double] = js.undefined,
     metadata: IMetadata = null,
-    trial_end: Int | Double = null,
-    trial_period_days: Int | Double = null
+    trial_end: js.UndefOr[Double] = js.undefined,
+    trial_period_days: js.UndefOr[Double] = js.undefined
   ): ICheckOutCreationSubscriptionData = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (application_fee_percent != null) __obj.updateDynamic("application_fee_percent")(application_fee_percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee_percent)) __obj.updateDynamic("application_fee_percent")(application_fee_percent.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
-    if (trial_period_days != null) __obj.updateDynamic("trial_period_days")(trial_period_days.asInstanceOf[js.Any])
+    if (!js.isUndefined(trial_end)) __obj.updateDynamic("trial_end")(trial_end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trial_period_days)) __obj.updateDynamic("trial_period_days")(trial_period_days.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckOutCreationSubscriptionData]
   }
 }

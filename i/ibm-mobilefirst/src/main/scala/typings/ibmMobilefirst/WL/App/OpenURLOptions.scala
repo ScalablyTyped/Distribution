@@ -17,22 +17,22 @@ trait OpenURLOptions extends js.Object {
 object OpenURLOptions {
   @scala.inline
   def apply(
-    directories: Int | Double = null,
-    location: Int | Double = null,
-    menubar: Int | Double = null,
-    resizable: Int | Double = null,
-    scrollbars: Int | Double = null,
-    status: Int | Double = null,
-    toolbar: Int | Double = null
+    directories: js.UndefOr[Double] = js.undefined,
+    location: js.UndefOr[Double] = js.undefined,
+    menubar: js.UndefOr[Double] = js.undefined,
+    resizable: js.UndefOr[Double] = js.undefined,
+    scrollbars: js.UndefOr[Double] = js.undefined,
+    status: js.UndefOr[Double] = js.undefined,
+    toolbar: js.UndefOr[Double] = js.undefined
   ): OpenURLOptions = {
     val __obj = js.Dynamic.literal()
-    if (directories != null) __obj.updateDynamic("directories")(directories.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (menubar != null) __obj.updateDynamic("menubar")(menubar.asInstanceOf[js.Any])
-    if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (scrollbars != null) __obj.updateDynamic("scrollbars")(scrollbars.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(directories)) __obj.updateDynamic("directories")(directories.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(menubar)) __obj.updateDynamic("menubar")(menubar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollbars)) __obj.updateDynamic("scrollbars")(scrollbars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenURLOptions]
   }
 }

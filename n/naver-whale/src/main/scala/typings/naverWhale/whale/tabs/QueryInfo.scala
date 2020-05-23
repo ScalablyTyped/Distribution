@@ -82,31 +82,31 @@ object QueryInfo {
     currentWindow: js.UndefOr[Boolean] = js.undefined,
     discarded: js.UndefOr[Boolean] = js.undefined,
     highlighted: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     lastFocusedWindow: js.UndefOr[Boolean] = js.undefined,
     muted: js.UndefOr[Boolean] = js.undefined,
     pinned: js.UndefOr[Boolean] = js.undefined,
     status: loading | complete = null,
     title: String = null,
     url: String | js.Array[String] = null,
-    windowId: Int | Double = null,
+    windowId: js.UndefOr[Double] = js.undefined,
     windowType: normal | popup | panel | app | devtools = null
   ): QueryInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDiscardable)) __obj.updateDynamic("autoDiscardable")(autoDiscardable.asInstanceOf[js.Any])
-    if (!js.isUndefined(currentWindow)) __obj.updateDynamic("currentWindow")(currentWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(discarded)) __obj.updateDynamic("discarded")(discarded.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlighted)) __obj.updateDynamic("highlighted")(highlighted.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastFocusedWindow)) __obj.updateDynamic("lastFocusedWindow")(lastFocusedWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDiscardable)) __obj.updateDynamic("autoDiscardable")(autoDiscardable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentWindow)) __obj.updateDynamic("currentWindow")(currentWindow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(discarded)) __obj.updateDynamic("discarded")(discarded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlighted)) __obj.updateDynamic("highlighted")(highlighted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastFocusedWindow)) __obj.updateDynamic("lastFocusedWindow")(lastFocusedWindow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     if (windowType != null) __obj.updateDynamic("windowType")(windowType.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryInfo]
   }

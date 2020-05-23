@@ -64,13 +64,7 @@ object builderUtilRuntimeStrings {
   sealed trait https extends js.Object
   
   @js.native
-  sealed trait installerDotexe extends js.Object
-  
-  @js.native
   sealed trait latin1 extends js.Object
-  
-  @js.native
-  sealed trait packageDot7z extends js.Object
   
   @js.native
   sealed trait prerelease extends js.Object
@@ -132,11 +126,7 @@ object builderUtilRuntimeStrings {
   @scala.inline
   def https: https = "https".asInstanceOf[https]
   @scala.inline
-  def installerDotexe: installerDotexe = "installer.exe".asInstanceOf[installerDotexe]
-  @scala.inline
   def latin1: latin1 = "latin1".asInstanceOf[latin1]
-  @scala.inline
-  def packageDot7z: packageDot7z = "package.7z".asInstanceOf[packageDot7z]
   @scala.inline
   def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
   @scala.inline

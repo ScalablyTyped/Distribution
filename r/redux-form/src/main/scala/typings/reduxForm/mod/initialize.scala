@@ -1,7 +1,7 @@
 package typings.reduxForm.mod
 
-import typings.reduxForm.PartialInitializeOptions
 import typings.reduxForm.actionsMod.FormAction
+import typings.reduxForm.anon.PartialInitializeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

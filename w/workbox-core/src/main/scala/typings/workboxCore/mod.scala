@@ -1,5 +1,6 @@
 package typings.workboxCore
 
+import typings.workboxCore.anon.PartialCacheNameDetails
 import typings.workboxCore.cacheNamesMod.CacheNames_
 import scala.scalajs.js
 import scala.scalajs.js.`|`

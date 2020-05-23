@@ -12,6 +12,12 @@ trait KeyboardEvent extends js.Object {
   var altKey: js.UndefOr[Boolean] = js.undefined
   /**
     * Optional.
+    * Whether or not the ALTGR key is pressed.
+    * @since Chrome 79.
+    */
+  var altgrKey: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Optional.
     * Whether or not the CAPS_LOCK is enabled.
     * @since Chrome 29.
     */
@@ -41,8 +47,12 @@ trait KeyboardEvent extends js.Object {
     * @since Chrome 37.
     */
   var keyCode: js.UndefOr[Double] = js.undefined
-  /** The ID of the request. */
-  var requestId: String
+  /**
+    * Optional.
+    * The ID of the request.
+    * @deprecated since Chrome 79.
+    */
+  var requestId: js.UndefOr[String] = js.undefined
   /**
     * Optional.
     * Whether or not the SHIFT key is pressed.
@@ -57,23 +67,26 @@ object KeyboardEvent {
   def apply(
     code: String,
     key: String,
-    requestId: String,
     `type`: String,
     altKey: js.UndefOr[Boolean] = js.undefined,
+    altgrKey: js.UndefOr[Boolean] = js.undefined,
     capsLock: js.UndefOr[Boolean] = js.undefined,
     ctrlKey: js.UndefOr[Boolean] = js.undefined,
     extensionId: String = null,
-    keyCode: Int | Double = null,
+    keyCode: js.UndefOr[Double] = js.undefined,
+    requestId: String = null,
     shiftKey: js.UndefOr[Boolean] = js.undefined
   ): KeyboardEvent = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(capsLock)) __obj.updateDynamic("capsLock")(capsLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(altgrKey)) __obj.updateDynamic("altgrKey")(altgrKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(capsLock)) __obj.updateDynamic("capsLock")(capsLock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.get.asInstanceOf[js.Any])
     if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId.asInstanceOf[js.Any])
-    if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyCode)) __obj.updateDynamic("keyCode")(keyCode.get.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardEvent]
   }
 }

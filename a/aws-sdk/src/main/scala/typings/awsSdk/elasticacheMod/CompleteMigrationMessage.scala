@@ -18,9 +18,9 @@ trait CompleteMigrationMessage extends js.Object {
 
 object CompleteMigrationMessage {
   @scala.inline
-  def apply(ReplicationGroupId: String, Force: js.UndefOr[scala.Boolean] = js.undefined): CompleteMigrationMessage = {
+  def apply(ReplicationGroupId: String, Force: js.UndefOr[Boolean] = js.undefined): CompleteMigrationMessage = {
     val __obj = js.Dynamic.literal(ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.asInstanceOf[js.Any])
+    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteMigrationMessage]
   }
 }

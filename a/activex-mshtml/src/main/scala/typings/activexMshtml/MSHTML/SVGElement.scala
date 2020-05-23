@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.SVGElement")
 @js.native
-class SVGElement protected () extends js.Object {
+trait SVGElement extends js.Object {
   @JSName("MSHTML.SVGElement_typekey")
   var MSHTMLDotSVGElement_typekey: SVGElement = js.native
   val all: js.Any = js.native

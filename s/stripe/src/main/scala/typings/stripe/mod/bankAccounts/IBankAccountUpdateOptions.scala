@@ -22,15 +22,15 @@ trait IBankAccountUpdateOptions extends IDataOptionsWithMetadata {
 object IBankAccountUpdateOptions {
   @scala.inline
   def apply(
-    account_holder_name: String = null,
-    account_holder_type: individual | company = null,
+    account_holder_name: js.UndefOr[Null | String] = js.undefined,
+    account_holder_type: js.UndefOr[Null | individual | company] = js.undefined,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null
   ): IBankAccountUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name.asInstanceOf[js.Any])
-    if (account_holder_type != null) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
+    if (!js.isUndefined(account_holder_name)) __obj.updateDynamic("account_holder_name")(account_holder_name.asInstanceOf[js.Any])
+    if (!js.isUndefined(account_holder_type)) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])

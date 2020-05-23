@@ -37,17 +37,17 @@ object RegisterClientResponse {
   def apply(
     authorizationEndpoint: URI = null,
     clientId: ClientId = null,
-    clientIdIssuedAt: Int | Double = null,
+    clientIdIssuedAt: js.UndefOr[LongTimeStampType] = js.undefined,
     clientSecret: ClientSecret = null,
-    clientSecretExpiresAt: Int | Double = null,
+    clientSecretExpiresAt: js.UndefOr[LongTimeStampType] = js.undefined,
     tokenEndpoint: URI = null
   ): RegisterClientResponse = {
     val __obj = js.Dynamic.literal()
     if (authorizationEndpoint != null) __obj.updateDynamic("authorizationEndpoint")(authorizationEndpoint.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (clientIdIssuedAt != null) __obj.updateDynamic("clientIdIssuedAt")(clientIdIssuedAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientIdIssuedAt)) __obj.updateDynamic("clientIdIssuedAt")(clientIdIssuedAt.get.asInstanceOf[js.Any])
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
-    if (clientSecretExpiresAt != null) __obj.updateDynamic("clientSecretExpiresAt")(clientSecretExpiresAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientSecretExpiresAt)) __obj.updateDynamic("clientSecretExpiresAt")(clientSecretExpiresAt.get.asInstanceOf[js.Any])
     if (tokenEndpoint != null) __obj.updateDynamic("tokenEndpoint")(tokenEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterClientResponse]
   }

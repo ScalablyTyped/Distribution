@@ -56,19 +56,25 @@ object errors extends js.Object {
     */
   @js.native
   class RPError () extends Error {
+    var auth_time: js.UndefOr[Double] = js.native
     var body: js.UndefOr[js.Object] = js.native
     var checks: js.UndefOr[js.Object] = js.native
+    var exp: js.UndefOr[Double] = js.native
+    var iat: js.UndefOr[Double] = js.native
     var jwt: js.UndefOr[String] = js.native
     /* CompleteClass */
     override var message: String = js.native
     /* CompleteClass */
     override var name: String = js.native
+    var nbf: js.UndefOr[Double] = js.native
+    var now: js.UndefOr[Double] = js.native
     var params: js.UndefOr[js.Object] = js.native
     /**
       * When the error is related to an http(s) request this propetty will hold the response object
       * from got.
       */
     var response: js.UndefOr[js.Any] = js.native
+    var tolerance: js.UndefOr[Double] = js.native
   }
   
 }

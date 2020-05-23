@@ -1,6 +1,5 @@
 package typings.apolloEngineReporting.durationHistogramMod
 
-import typings.apolloEngineReporting.apolloEngineReportingNumbers.`384`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,7 @@ class DurationHistogram () extends js.Object {
 @JSImport("apollo-engine-reporting/dist/durationHistogram", "DurationHistogram")
 @js.native
 object DurationHistogram extends js.Object {
-  val BUCKET_COUNT: `384` = js.native
+  val BUCKET_COUNT: /* 384 */ Double = js.native
   val EXPONENT_LOG: Double = js.native
   def durationToBucket(durationNs: Double): Double = js.native
 }

@@ -42,7 +42,7 @@ object Node {
     append: BaseNode = null,
     childs: js.Array[Node] = null,
     editable: FieldEditable = null,
-    enum: js.Array[String] = null,
+    enum: js.UndefOr[Null | js.Array[String]] = js.undefined,
     error: ErrorObject = null,
     errorChild: Node = null,
     expanded: js.UndefOr[Boolean] = js.undefined,
@@ -56,22 +56,19 @@ object Node {
     valueFieldHTML: String = null,
     valueInnerText: String = null
   ): Node = {
-    val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldEditable = fieldEditable.asInstanceOf[js.Any], previousField = previousField.asInstanceOf[js.Any], visibleChilds = visibleChilds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldEditable = fieldEditable.asInstanceOf[js.Any], previousField = previousField.asInstanceOf[js.Any], visibleChilds = visibleChilds.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], previousValue = previousValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
     if (childs != null) __obj.updateDynamic("childs")(childs.asInstanceOf[js.Any])
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
+    if (!js.isUndefined(enum)) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (errorChild != null) __obj.updateDynamic("errorChild")(errorChild.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
     if (fieldInnerText != null) __obj.updateDynamic("fieldInnerText")(fieldInnerText.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (previousValue != null) __obj.updateDynamic("previousValue")(previousValue.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (showMore != null) __obj.updateDynamic("showMore")(showMore.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueFieldHTML != null) __obj.updateDynamic("valueFieldHTML")(valueFieldHTML.asInstanceOf[js.Any])
     if (valueInnerText != null) __obj.updateDynamic("valueInnerText")(valueInnerText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]

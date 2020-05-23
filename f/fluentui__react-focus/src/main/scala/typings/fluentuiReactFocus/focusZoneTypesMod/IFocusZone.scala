@@ -1,7 +1,7 @@
 package typings.fluentuiReactFocus.focusZoneTypesMod
 
 import typings.std.HTMLElement
-import typings.uifabricUtilities.ipointMod.IPoint
+import typings.uifabricUtilities.pointMod.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait IFocusZone extends js.Object {
   def focus(forceIntoFirstElement: Boolean): Boolean = js.native
   /**
     * Sets focus to a specific child element within the zone. This can be used in conjunction with
-    * onBeforeFocus to created delayed focus scenarios (like animate the scroll position to the correct
+    * shouldReceiveFocus to create delayed focus scenarios (like animate the scroll position to the correct
     * location and then focus.)
     * @param element - The child element within the zone to focus.
     * @returns True if focus could be set to an active element, false if no operation was taken.
@@ -35,6 +35,6 @@ trait IFocusZone extends js.Object {
     * than a center based on the last horizontal motion.
     * @param point - the new reference point.
     */
-  def setFocusAlignment(point: IPoint): Unit = js.native
+  def setFocusAlignment(point: Point): Unit = js.native
 }
 

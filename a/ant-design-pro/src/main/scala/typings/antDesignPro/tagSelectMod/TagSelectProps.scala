@@ -1,6 +1,6 @@
 package typings.antDesignPro.tagSelectMod
 
-import typings.antDesignPro.AnonCollapseText
+import typings.antDesignPro.anon.CollapseText
 import typings.antDesignPro.tagSelectOptionMod.TagSelectOptionProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait TagSelectProps extends js.Object {
   var Option: TagSelectOptionProps
-  var actionsText: js.UndefOr[AnonCollapseText] = js.undefined
+  var actionsText: js.UndefOr[CollapseText] = js.undefined
   var children: ReactElement | js.Array[ReactElement]
   var className: String
   var expandable: js.UndefOr[Boolean] = js.undefined
@@ -26,7 +26,7 @@ object TagSelectProps {
     Option: TagSelectOptionProps,
     children: ReactElement | js.Array[ReactElement],
     className: String,
-    actionsText: AnonCollapseText = null,
+    actionsText: CollapseText = null,
     expandable: js.UndefOr[Boolean] = js.undefined,
     hideCheckAll: js.UndefOr[Boolean] = js.undefined,
     onChange: /* value */ js.Array[String] => Unit = null,
@@ -35,8 +35,8 @@ object TagSelectProps {
   ): TagSelectProps = {
     val __obj = js.Dynamic.literal(Option = Option.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any])
     if (actionsText != null) __obj.updateDynamic("actionsText")(actionsText.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideCheckAll)) __obj.updateDynamic("hideCheckAll")(hideCheckAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCheckAll)) __obj.updateDynamic("hideCheckAll")(hideCheckAll.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.officeJs.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,20 +42,6 @@ object AttachmentContentFormat extends js.Object {
     */
   @js.native
   sealed trait Url extends AttachmentContentFormat
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AttachmentContentFormat with String] = js.native
-  /* "base64" */ @js.native
-  object Base64 extends TopLevel[Base64 with String]
-  
-  /* "eml" */ @js.native
-  object Eml extends TopLevel[Eml with String]
-  
-  /* "iCalendar" */ @js.native
-  object ICalendar extends TopLevel[ICalendar with String]
-  
-  /* "url" */ @js.native
-  object Url extends TopLevel[Url with String]
   
 }
 

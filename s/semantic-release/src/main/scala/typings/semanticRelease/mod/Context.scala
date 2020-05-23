@@ -1,31 +1,31 @@
 package typings.semanticRelease.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.semanticRelease.AnonError
+import typings.semanticRelease.anon.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Context extends js.Object {
   /**
-  		 * Environment variables.
-  		 */
+    * Environment variables.
+    */
   var env: StringDictionary[String]
   /**
-  		 * The previous release details.
-  		 */
+    * The previous release details.
+    */
   var lastRelease: js.UndefOr[LastRelease] = js.undefined
   /**
-  		 * The shared logger instance of semantic release.
-  		 */
-  var logger: AnonError
+    * The shared logger instance of semantic release.
+    */
+  var logger: Error
   /**
-  		 * The next release details.
-  		 */
+    * The next release details.
+    */
   var nextRelease: js.UndefOr[NextRelease] = js.undefined
   /**
-  		 * The semantic release configuration itself.
-  		 */
+    * The semantic release configuration itself.
+    */
   var options: js.UndefOr[GlobalConfig] = js.undefined
 }
 
@@ -33,7 +33,7 @@ object Context {
   @scala.inline
   def apply(
     env: StringDictionary[String],
-    logger: AnonError,
+    logger: Error,
     lastRelease: LastRelease = null,
     nextRelease: NextRelease = null,
     options: GlobalConfig = null

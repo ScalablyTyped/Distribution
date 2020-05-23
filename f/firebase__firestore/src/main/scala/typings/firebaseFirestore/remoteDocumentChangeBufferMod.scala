@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/remote_document_change_buffer", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/remote_document_change_buffer", JSImport.Namespace)
 @js.native
 object remoteDocumentChangeBufferMod extends js.Object {
   @js.native
@@ -62,7 +62,7 @@ object remoteDocumentChangeBufferMod extends js.Object {
       */
     def getEntry(transaction: PersistenceTransaction, documentKey: DocumentKey): PersistencePromise[MaybeDocument | Null] = js.native
     /* protected */ def getFromCache(transaction: PersistenceTransaction, documentKey: DocumentKey): PersistencePromise[MaybeDocument | Null] = js.native
-    /* protected */ def readTime(): SnapshotVersion = js.native
+    /* protected */ def readTime: SnapshotVersion = js.native
     /* protected */ def readTime(value: SnapshotVersion): js.Any = js.native
     /**
       * Buffers a `RemoteDocumentCache.removeEntry()` call.

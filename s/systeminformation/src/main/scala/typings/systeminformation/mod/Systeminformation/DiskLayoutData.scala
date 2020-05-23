@@ -13,6 +13,7 @@ trait DiskLayoutData extends js.Object {
   var sectorsPerTrack: Double
   var serialNum: String
   var size: Double
+  var smartData: js.UndefOr[SmartData] = js.undefined
   var smartStatus: String
   var totalCylinders: Double
   var totalHeads: Double
@@ -41,10 +42,12 @@ object DiskLayoutData {
     totalTracks: Double,
     tracksPerCylinder: Double,
     `type`: String,
-    vendor: String
+    vendor: String,
+    smartData: SmartData = null
   ): DiskLayoutData = {
     val __obj = js.Dynamic.literal(bytesPerSector = bytesPerSector.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], firmwareRevision = firmwareRevision.asInstanceOf[js.Any], interfaceType = interfaceType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sectorsPerTrack = sectorsPerTrack.asInstanceOf[js.Any], serialNum = serialNum.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], smartStatus = smartStatus.asInstanceOf[js.Any], totalCylinders = totalCylinders.asInstanceOf[js.Any], totalHeads = totalHeads.asInstanceOf[js.Any], totalSectors = totalSectors.asInstanceOf[js.Any], totalTracks = totalTracks.asInstanceOf[js.Any], tracksPerCylinder = tracksPerCylinder.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (smartData != null) __obj.updateDynamic("smartData")(smartData.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskLayoutData]
   }
 }

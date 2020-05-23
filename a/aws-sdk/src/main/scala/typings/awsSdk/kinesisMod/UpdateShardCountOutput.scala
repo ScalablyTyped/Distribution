@@ -23,14 +23,14 @@ trait UpdateShardCountOutput extends js.Object {
 object UpdateShardCountOutput {
   @scala.inline
   def apply(
-    CurrentShardCount: Int | Double = null,
+    CurrentShardCount: js.UndefOr[PositiveIntegerObject] = js.undefined,
     StreamName: StreamName = null,
-    TargetShardCount: Int | Double = null
+    TargetShardCount: js.UndefOr[PositiveIntegerObject] = js.undefined
   ): UpdateShardCountOutput = {
     val __obj = js.Dynamic.literal()
-    if (CurrentShardCount != null) __obj.updateDynamic("CurrentShardCount")(CurrentShardCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentShardCount)) __obj.updateDynamic("CurrentShardCount")(CurrentShardCount.get.asInstanceOf[js.Any])
     if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
-    if (TargetShardCount != null) __obj.updateDynamic("TargetShardCount")(TargetShardCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TargetShardCount)) __obj.updateDynamic("TargetShardCount")(TargetShardCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateShardCountOutput]
   }
 }

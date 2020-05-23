@@ -22,10 +22,10 @@ trait ListTagsForResourceResponse extends js.Object {
 
 object ListTagsForResourceResponse {
   @scala.inline
-  def apply(RequestId: String = null, Status: Int | scala.Double = null, Tags: TagList = null): ListTagsForResourceResponse = {
+  def apply(RequestId: String = null, Status: js.UndefOr[StatusCode] = js.undefined, Tags: TagList = null): ListTagsForResourceResponse = {
     val __obj = js.Dynamic.literal()
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceResponse]
   }

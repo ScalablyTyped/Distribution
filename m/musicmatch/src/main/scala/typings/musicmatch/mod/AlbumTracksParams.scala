@@ -12,10 +12,14 @@ trait AlbumTracksParams extends js.Object {
 
 object AlbumTracksParams {
   @scala.inline
-  def apply(album_id: Int | Double = null, album_mbid: Int | Double = null, format: TFormat = null): AlbumTracksParams = {
+  def apply(
+    album_id: js.UndefOr[Double] = js.undefined,
+    album_mbid: js.UndefOr[Double] = js.undefined,
+    format: TFormat = null
+  ): AlbumTracksParams = {
     val __obj = js.Dynamic.literal()
-    if (album_id != null) __obj.updateDynamic("album_id")(album_id.asInstanceOf[js.Any])
-    if (album_mbid != null) __obj.updateDynamic("album_mbid")(album_mbid.asInstanceOf[js.Any])
+    if (!js.isUndefined(album_id)) __obj.updateDynamic("album_id")(album_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(album_mbid)) __obj.updateDynamic("album_mbid")(album_mbid.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlbumTracksParams]
   }

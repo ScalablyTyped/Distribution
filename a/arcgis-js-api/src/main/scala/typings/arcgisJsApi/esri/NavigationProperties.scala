@@ -46,10 +46,10 @@ object NavigationProperties {
     mouseWheelZoomEnabled: js.UndefOr[Boolean] = js.undefined
   ): NavigationProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browserTouchPanEnabled)) __obj.updateDynamic("browserTouchPanEnabled")(browserTouchPanEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserTouchPanEnabled)) __obj.updateDynamic("browserTouchPanEnabled")(browserTouchPanEnabled.get.asInstanceOf[js.Any])
     if (gamepad != null) __obj.updateDynamic("gamepad")(gamepad.asInstanceOf[js.Any])
-    if (!js.isUndefined(momentumEnabled)) __obj.updateDynamic("momentumEnabled")(momentumEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseWheelZoomEnabled)) __obj.updateDynamic("mouseWheelZoomEnabled")(mouseWheelZoomEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(momentumEnabled)) __obj.updateDynamic("momentumEnabled")(momentumEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseWheelZoomEnabled)) __obj.updateDynamic("mouseWheelZoomEnabled")(mouseWheelZoomEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationProperties]
   }
 }

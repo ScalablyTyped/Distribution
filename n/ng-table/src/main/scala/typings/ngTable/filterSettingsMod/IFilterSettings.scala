@@ -50,16 +50,16 @@ object IFilterSettings {
   @scala.inline
   def apply[T](
     filterComparator: FilterComparator[T] = null,
-    filterDelay: Int | Double = null,
-    filterDelayThreshold: Int | Double = null,
+    filterDelay: js.UndefOr[Double] = js.undefined,
+    filterDelayThreshold: js.UndefOr[Double] = js.undefined,
     filterFilterName: String = null,
     filterFn: (/* data */ js.Array[T], /* filter */ IFilterValues, /* filterComparator */ FilterComparator[T]) => js.Array[T] = null,
     filterLayout: FilterLayout = null
   ): IFilterSettings[T] = {
     val __obj = js.Dynamic.literal()
     if (filterComparator != null) __obj.updateDynamic("filterComparator")(filterComparator.asInstanceOf[js.Any])
-    if (filterDelay != null) __obj.updateDynamic("filterDelay")(filterDelay.asInstanceOf[js.Any])
-    if (filterDelayThreshold != null) __obj.updateDynamic("filterDelayThreshold")(filterDelayThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterDelay)) __obj.updateDynamic("filterDelay")(filterDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterDelayThreshold)) __obj.updateDynamic("filterDelayThreshold")(filterDelayThreshold.get.asInstanceOf[js.Any])
     if (filterFilterName != null) __obj.updateDynamic("filterFilterName")(filterFilterName.asInstanceOf[js.Any])
     if (filterFn != null) __obj.updateDynamic("filterFn")(js.Any.fromFunction3(filterFn))
     if (filterLayout != null) __obj.updateDynamic("filterLayout")(filterLayout.asInstanceOf[js.Any])

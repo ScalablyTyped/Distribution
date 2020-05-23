@@ -28,8 +28,8 @@ object VerifiedDomain {
   ): VerifiedDomain = {
     val __obj = js.Dynamic.literal()
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInitial)) __obj.updateDynamic("isInitial")(isInitial.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInitial)) __obj.updateDynamic("isInitial")(isInitial.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifiedDomain]

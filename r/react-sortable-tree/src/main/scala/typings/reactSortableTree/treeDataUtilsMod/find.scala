@@ -1,7 +1,7 @@
 package typings.reactSortableTree.treeDataUtilsMod
 
-import typings.reactSortableTree.FullTreegetNodeKeyGetNodeExpandAllMatchPaths
-import typings.reactSortableTree.matchesArrayNodeDataFullT
+import typings.reactSortableTree.anon.FullTreegetNodeKeyGetNodeExpandAllMatchPaths
+import typings.reactSortableTree.anon.matchesArrayNodeDataFullT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

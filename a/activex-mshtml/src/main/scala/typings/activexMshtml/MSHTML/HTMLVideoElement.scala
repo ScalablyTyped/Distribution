@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLVideoElement")
 @js.native
-class HTMLVideoElement protected () extends js.Object {
+trait HTMLVideoElement extends js.Object {
   @JSName("MSHTML.HTMLVideoElement_typekey")
   var MSHTMLDotHTMLVideoElement_typekey: HTMLVideoElement = js.native
   var accessKey: String = js.native

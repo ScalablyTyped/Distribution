@@ -1,7 +1,7 @@
 
 # Scala.js typings for uniqid
 
-Typings are for version 4.1
+Typings are for version 5.2
 
 ## Library description:
 Unique ID Generator

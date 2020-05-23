@@ -30,18 +30,18 @@ object FarmOptions {
     enableWorkerThreads: js.UndefOr[Boolean] = js.undefined,
     exposedMethods: js.Array[String] = null,
     forkOptions: ForkOptions = null,
-    maxRetries: Int | Double = null,
-    numWorkers: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
+    numWorkers: js.UndefOr[Double] = js.undefined,
     setupArgs: js.Array[_] = null
   ): FarmOptions = {
     val __obj = js.Dynamic.literal()
     if (WorkerPool != null) __obj.updateDynamic("WorkerPool")(js.Any.fromFunction2(WorkerPool))
     if (computeWorkerKey != null) __obj.updateDynamic("computeWorkerKey")(js.Any.fromFunction2(computeWorkerKey))
-    if (!js.isUndefined(enableWorkerThreads)) __obj.updateDynamic("enableWorkerThreads")(enableWorkerThreads.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableWorkerThreads)) __obj.updateDynamic("enableWorkerThreads")(enableWorkerThreads.get.asInstanceOf[js.Any])
     if (exposedMethods != null) __obj.updateDynamic("exposedMethods")(exposedMethods.asInstanceOf[js.Any])
     if (forkOptions != null) __obj.updateDynamic("forkOptions")(forkOptions.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (numWorkers != null) __obj.updateDynamic("numWorkers")(numWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numWorkers)) __obj.updateDynamic("numWorkers")(numWorkers.get.asInstanceOf[js.Any])
     if (setupArgs != null) __obj.updateDynamic("setupArgs")(setupArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[FarmOptions]
   }

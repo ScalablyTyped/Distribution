@@ -18,9 +18,9 @@ trait QueueEventSubscriptionArgs extends js.Object {
 
 object QueueEventSubscriptionArgs {
   @scala.inline
-  def apply(batchSize: Int | Double = null): QueueEventSubscriptionArgs = {
+  def apply(batchSize: js.UndefOr[Double] = js.undefined): QueueEventSubscriptionArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueEventSubscriptionArgs]
   }
 }

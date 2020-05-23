@@ -2,7 +2,7 @@ package typings.fscreen.mod
 
 import typings.std.AddEventListenerOptions
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,11 +19,11 @@ trait Fscreen extends js.Object {
   def addEventListener(`type`: EventName, handler: Handler, options: Boolean): Unit = js.native
   def addEventListener(`type`: EventName, handler: Handler, options: AddEventListenerOptions): Unit = js.native
   def exitFullscreen(): Unit = js.native
-  def exitFullscreen(e: Event_): Unit = js.native
+  def exitFullscreen(e: Event): Unit = js.native
   def onfullscreenchange(): Unit = js.native
-  def onfullscreenchange(e: Event_): Unit = js.native
+  def onfullscreenchange(e: Event): Unit = js.native
   def onfullscreenerror(): Unit = js.native
-  def onfullscreenerror(e: Event_): Unit = js.native
+  def onfullscreenerror(e: Event): Unit = js.native
   def removeEventListener(`type`: EventName, handler: Handler): Unit = js.native
   def removeEventListener(`type`: EventName, handler: Handler, options: Boolean): Unit = js.native
   def removeEventListener(`type`: EventName, handler: Handler, options: AddEventListenerOptions): Unit = js.native

@@ -28,8 +28,8 @@ object TokensToFunctionOptions {
   ): TokensToFunctionOptions = {
     val __obj = js.Dynamic.literal()
     if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction2(encode))
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokensToFunctionOptions]
   }
 }

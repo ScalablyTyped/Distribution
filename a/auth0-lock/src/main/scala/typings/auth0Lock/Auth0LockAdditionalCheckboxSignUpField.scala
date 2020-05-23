@@ -1,5 +1,6 @@
 package typings.auth0Lock
 
+import typings.auth0Lock.anon.Hint
 import typings.auth0Lock.auth0LockStrings.`false`
 import typings.auth0Lock.auth0LockStrings.`true`
 import typings.auth0Lock.auth0LockStrings.checkbox
@@ -13,7 +14,7 @@ trait Auth0LockAdditionalCheckboxSignUpField extends Auth0LockAdditionalSignUpFi
   var placeholder: String
   var prefill: `true` | `false`
   var `type`: js.UndefOr[checkbox] = js.undefined
-  var validator: js.UndefOr[js.Function1[/* input */ String, AnonHint]] = js.undefined
+  var validator: js.UndefOr[js.Function1[/* input */ String, Hint]] = js.undefined
 }
 
 object Auth0LockAdditionalCheckboxSignUpField {
@@ -24,7 +25,7 @@ object Auth0LockAdditionalCheckboxSignUpField {
     prefill: `true` | `false`,
     icon: String = null,
     `type`: checkbox = null,
-    validator: /* input */ String => AnonHint = null
+    validator: /* input */ String => Hint = null
   ): Auth0LockAdditionalCheckboxSignUpField = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], prefill = prefill.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

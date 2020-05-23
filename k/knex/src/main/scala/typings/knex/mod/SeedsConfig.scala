@@ -14,7 +14,7 @@ trait SeedsConfig[V /* <: js.Object */] extends js.Object {
 
 object SeedsConfig {
   @scala.inline
-  def apply[V /* <: js.Object */](
+  def apply[V](
     directory: String = null,
     extension: String = null,
     loadExtensions: js.Array[String] = null,

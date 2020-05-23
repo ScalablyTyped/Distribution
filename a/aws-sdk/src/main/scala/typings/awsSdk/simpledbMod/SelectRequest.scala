@@ -24,11 +24,11 @@ object SelectRequest {
   @scala.inline
   def apply(
     SelectExpression: String,
-    ConsistentRead: js.UndefOr[scala.Boolean] = js.undefined,
+    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
     NextToken: String = null
   ): SelectRequest = {
     val __obj = js.Dynamic.literal(SelectExpression = SelectExpression.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectRequest]
   }

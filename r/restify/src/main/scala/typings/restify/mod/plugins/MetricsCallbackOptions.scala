@@ -61,13 +61,11 @@ object MetricsCallbackOptions {
     totalLatency: Double,
     unfinishedRequests: Double,
     connectionState: TMetricsCallback = null,
-    preLatency: Int | Double = null,
-    useLatency: Int | Double = null
+    preLatency: Double = null.asInstanceOf[Double],
+    useLatency: Double = null.asInstanceOf[Double]
   ): MetricsCallbackOptions = {
-    val __obj = js.Dynamic.literal(inflightRequests = inflightRequests.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], totalLatency = totalLatency.asInstanceOf[js.Any], unfinishedRequests = unfinishedRequests.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(inflightRequests = inflightRequests.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], totalLatency = totalLatency.asInstanceOf[js.Any], unfinishedRequests = unfinishedRequests.asInstanceOf[js.Any], preLatency = preLatency.asInstanceOf[js.Any], useLatency = useLatency.asInstanceOf[js.Any])
     if (connectionState != null) __obj.updateDynamic("connectionState")(connectionState.asInstanceOf[js.Any])
-    if (preLatency != null) __obj.updateDynamic("preLatency")(preLatency.asInstanceOf[js.Any])
-    if (useLatency != null) __obj.updateDynamic("useLatency")(useLatency.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsCallbackOptions]
   }
 }

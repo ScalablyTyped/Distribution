@@ -30,11 +30,11 @@ object UpdateWindowsDeviceAccountActionParameter {
     sessionInitiationProtocalAddress: String = null
   ): UpdateWindowsDeviceAccountActionParameter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(calendarSyncEnabled)) __obj.updateDynamic("calendarSyncEnabled")(calendarSyncEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(calendarSyncEnabled)) __obj.updateDynamic("calendarSyncEnabled")(calendarSyncEnabled.get.asInstanceOf[js.Any])
     if (deviceAccount != null) __obj.updateDynamic("deviceAccount")(deviceAccount.asInstanceOf[js.Any])
     if (deviceAccountEmail != null) __obj.updateDynamic("deviceAccountEmail")(deviceAccountEmail.asInstanceOf[js.Any])
     if (exchangeServer != null) __obj.updateDynamic("exchangeServer")(exchangeServer.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordRotationEnabled)) __obj.updateDynamic("passwordRotationEnabled")(passwordRotationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordRotationEnabled)) __obj.updateDynamic("passwordRotationEnabled")(passwordRotationEnabled.get.asInstanceOf[js.Any])
     if (sessionInitiationProtocalAddress != null) __obj.updateDynamic("sessionInitiationProtocalAddress")(sessionInitiationProtocalAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWindowsDeviceAccountActionParameter]
   }

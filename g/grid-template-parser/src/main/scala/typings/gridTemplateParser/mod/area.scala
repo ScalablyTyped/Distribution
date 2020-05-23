@@ -1,6 +1,6 @@
 package typings.gridTemplateParser.mod
 
-import typings.gridTemplateParser.PartialRect
+import typings.gridTemplateParser.anon.PartialRect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

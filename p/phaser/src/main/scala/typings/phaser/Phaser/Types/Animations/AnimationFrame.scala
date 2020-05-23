@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait AnimationFrame extends js.Object {
   /**
-    * [description]
+    * The duration, in ms, of this frame of the animation.
     */
   var duration: js.UndefOr[Double] = js.undefined
   /**
-    * [description]
+    * The key, or index number, of the frame within the animation.
     */
   var frame: String | Double
   /**
@@ -18,7 +18,7 @@ trait AnimationFrame extends js.Object {
     */
   var key: String
   /**
-    * [description]
+    * Should the parent Game Object be visible during this frame of the animation?
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
@@ -28,12 +28,12 @@ object AnimationFrame {
   def apply(
     frame: String | Double,
     key: String,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): AnimationFrame = {
     val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationFrame]
   }
 }

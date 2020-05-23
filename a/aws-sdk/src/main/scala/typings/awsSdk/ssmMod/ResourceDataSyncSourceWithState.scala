@@ -32,14 +32,14 @@ object ResourceDataSyncSourceWithState {
   @scala.inline
   def apply(
     AwsOrganizationsSource: ResourceDataSyncAwsOrganizationsSource = null,
-    IncludeFutureRegions: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludeFutureRegions: js.UndefOr[ResourceDataSyncIncludeFutureRegions] = js.undefined,
     SourceRegions: ResourceDataSyncSourceRegionList = null,
     SourceType: ResourceDataSyncSourceType = null,
     State: ResourceDataSyncState = null
   ): ResourceDataSyncSourceWithState = {
     val __obj = js.Dynamic.literal()
     if (AwsOrganizationsSource != null) __obj.updateDynamic("AwsOrganizationsSource")(AwsOrganizationsSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeFutureRegions)) __obj.updateDynamic("IncludeFutureRegions")(IncludeFutureRegions.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeFutureRegions)) __obj.updateDynamic("IncludeFutureRegions")(IncludeFutureRegions.get.asInstanceOf[js.Any])
     if (SourceRegions != null) __obj.updateDynamic("SourceRegions")(SourceRegions.asInstanceOf[js.Any])
     if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

@@ -91,7 +91,7 @@ object Opts {
     es6: js.UndefOr[Boolean] = js.undefined,
     escapeEverything: js.UndefOr[Boolean] = js.undefined,
     indent: String = null,
-    indentLevel: Int | Double = null,
+    indentLevel: js.UndefOr[Double] = js.undefined,
     isScriptContext: js.UndefOr[Boolean] = js.undefined,
     json: js.UndefOr[Boolean] = js.undefined,
     lowercaseHex: js.UndefOr[Boolean] = js.undefined,
@@ -101,18 +101,18 @@ object Opts {
     wrap: js.UndefOr[Boolean] = js.undefined
   ): Opts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(es6)) __obj.updateDynamic("es6")(es6.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeEverything)) __obj.updateDynamic("escapeEverything")(escapeEverything.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(es6)) __obj.updateDynamic("es6")(es6.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeEverything)) __obj.updateDynamic("escapeEverything")(escapeEverything.get.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (indentLevel != null) __obj.updateDynamic("indentLevel")(indentLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScriptContext)) __obj.updateDynamic("isScriptContext")(isScriptContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowercaseHex)) __obj.updateDynamic("lowercaseHex")(lowercaseHex.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentLevel)) __obj.updateDynamic("indentLevel")(indentLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScriptContext)) __obj.updateDynamic("isScriptContext")(isScriptContext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowercaseHex)) __obj.updateDynamic("lowercaseHex")(lowercaseHex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.get.asInstanceOf[js.Any])
     if (numbers != null) __obj.updateDynamic("numbers")(numbers.asInstanceOf[js.Any])
     if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts]
   }
 }

@@ -60,19 +60,19 @@ object JWTExpressOptions {
     reqProperty: String = null,
     revoke: /* jwt */ JWT => Unit = null,
     signOptions: SignOptions = null,
-    stales: Int | Double = null,
+    stales: js.UndefOr[Double] = js.undefined,
     verify: /* jwt */ JWT => Boolean = null,
     verifyOptions: VerifyOptions = null
   ): JWTExpressOptions = {
     val __obj = js.Dynamic.literal()
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (cookieOptions != null) __obj.updateDynamic("cookieOptions")(cookieOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.get.asInstanceOf[js.Any])
     if (reqProperty != null) __obj.updateDynamic("reqProperty")(reqProperty.asInstanceOf[js.Any])
     if (revoke != null) __obj.updateDynamic("revoke")(js.Any.fromFunction1(revoke))
     if (signOptions != null) __obj.updateDynamic("signOptions")(signOptions.asInstanceOf[js.Any])
-    if (stales != null) __obj.updateDynamic("stales")(stales.asInstanceOf[js.Any])
+    if (!js.isUndefined(stales)) __obj.updateDynamic("stales")(stales.get.asInstanceOf[js.Any])
     if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction1(verify))
     if (verifyOptions != null) __obj.updateDynamic("verifyOptions")(verifyOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWTExpressOptions]

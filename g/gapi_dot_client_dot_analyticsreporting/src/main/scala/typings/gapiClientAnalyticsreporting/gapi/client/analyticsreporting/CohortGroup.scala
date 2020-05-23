@@ -46,7 +46,7 @@ object CohortGroup {
   def apply(cohorts: js.Array[Cohort] = null, lifetimeValue: js.UndefOr[Boolean] = js.undefined): CohortGroup = {
     val __obj = js.Dynamic.literal()
     if (cohorts != null) __obj.updateDynamic("cohorts")(cohorts.asInstanceOf[js.Any])
-    if (!js.isUndefined(lifetimeValue)) __obj.updateDynamic("lifetimeValue")(lifetimeValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifetimeValue)) __obj.updateDynamic("lifetimeValue")(lifetimeValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CohortGroup]
   }
 }

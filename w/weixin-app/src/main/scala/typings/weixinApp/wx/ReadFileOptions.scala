@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonData
+import typings.weixinApp.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait ReadFileOptions
   var filePath: String
    // 指定读取文件的字符编码，如果不传 encoding，则以 ArrayBuffer 格式读取文件的二进制内容
   @JSName("success")
-  var success_ReadFileOptions: js.UndefOr[js.Function1[/* res */ AnonData, Unit]] = js.undefined
+  var success_ReadFileOptions: js.UndefOr[js.Function1[/* res */ Data, Unit]] = js.undefined
 }
 
 object ReadFileOptions {
@@ -22,7 +22,7 @@ object ReadFileOptions {
     complete: /* res */ js.Any => Unit = null,
     encoding: String = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonData => Unit = null
+    success: /* res */ Data => Unit = null
   ): ReadFileOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

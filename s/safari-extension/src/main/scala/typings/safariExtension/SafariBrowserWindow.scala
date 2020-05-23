@@ -13,12 +13,12 @@ trait SafariBrowserWindow extends SafariEventTarget {
   def close(): Unit = js.native
   def insertTab(tab: SafariBrowserTab, index: Double): SafariBrowserTab = js.native
   /**
-  		* Opens a new tab in the window.
-  		* Available in Safari 5.0 and later.
-  		* @param visibility Either foreground if the tab should be opened in the foreground, or background if it should be opened in the background.
-  		* @param index The desired location of the new tab.
-  		* @returns A new tab.
-  		*/
+    * Opens a new tab in the window.
+    * Available in Safari 5.0 and later.
+    * @param visibility Either foreground if the tab should be opened in the foreground, or background if it should be opened in the background.
+    * @param index The desired location of the new tab.
+    * @returns A new tab.
+    */
   def openTab(): SafariBrowserTab = js.native
   def openTab(visibility: String): SafariBrowserTab = js.native
   def openTab(visibility: String, index: Double): SafariBrowserTab = js.native

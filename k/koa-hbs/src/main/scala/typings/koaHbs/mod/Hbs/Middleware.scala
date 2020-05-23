@@ -35,7 +35,7 @@ object Middleware {
     if (blockHelperName != null) __obj.updateDynamic("blockHelperName")(blockHelperName.asInstanceOf[js.Any])
     if (contentHelperName != null) __obj.updateDynamic("contentHelperName")(contentHelperName.asInstanceOf[js.Any])
     if (defaultLayout != null) __obj.updateDynamic("defaultLayout")(defaultLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCache)) __obj.updateDynamic("disableCache")(disableCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCache)) __obj.updateDynamic("disableCache")(disableCache.get.asInstanceOf[js.Any])
     if (extname != null) __obj.updateDynamic("extname")(extname.asInstanceOf[js.Any])
     if (handlebars != null) __obj.updateDynamic("handlebars")(handlebars.asInstanceOf[js.Any])
     if (layoutsPath != null) __obj.updateDynamic("layoutsPath")(layoutsPath.asInstanceOf[js.Any])

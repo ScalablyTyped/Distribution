@@ -48,11 +48,11 @@ object CertificateCreationOptions {
     country: String = null,
     csr: String = null,
     csrConfigFile: String = null,
-    days: Int | Double = null,
+    days: js.UndefOr[Double] = js.undefined,
     emailAddress: String = null,
     extFile: String = null,
     hash: HashFunction = null,
-    keyBitsize: Int | Double = null,
+    keyBitsize: js.UndefOr[Double] = js.undefined,
     locality: String = null,
     organization: String = null,
     organizationUnit: String = null,
@@ -72,15 +72,15 @@ object CertificateCreationOptions {
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (csr != null) __obj.updateDynamic("csr")(csr.asInstanceOf[js.Any])
     if (csrConfigFile != null) __obj.updateDynamic("csrConfigFile")(csrConfigFile.asInstanceOf[js.Any])
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
     if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
     if (extFile != null) __obj.updateDynamic("extFile")(extFile.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (keyBitsize != null) __obj.updateDynamic("keyBitsize")(keyBitsize.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyBitsize)) __obj.updateDynamic("keyBitsize")(keyBitsize.get.asInstanceOf[js.Any])
     if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
     if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
     if (organizationUnit != null) __obj.updateDynamic("organizationUnit")(organizationUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfSigned)) __obj.updateDynamic("selfSigned")(selfSigned.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfSigned)) __obj.updateDynamic("selfSigned")(selfSigned.get.asInstanceOf[js.Any])
     if (serial != null) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])
     if (serviceCertificate != null) __obj.updateDynamic("serviceCertificate")(serviceCertificate.asInstanceOf[js.Any])
     if (serviceKey != null) __obj.updateDynamic("serviceKey")(serviceKey.asInstanceOf[js.Any])

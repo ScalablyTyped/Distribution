@@ -1,5 +1,7 @@
 package typings.googleCloudPubsub
 
+import typings.googleCloudPubsub.anon.MaxDelayMillis
+import typings.googleCloudPubsub.anon.MaxExtensionMinutes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +11,8 @@ import scala.scalajs.js.annotation._
 object defaultOptionsMod extends js.Object {
   @js.native
   object defaultOptions extends js.Object {
-    var publish: AnonMaxDelayMillis = js.native
-    var subscription: AnonMaxExtensionMinutes = js.native
+    var publish: MaxDelayMillis = js.native
+    var subscription: MaxExtensionMinutes = js.native
   }
   
 }

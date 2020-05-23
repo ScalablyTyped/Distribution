@@ -11,5 +11,5 @@ package object angular {
     * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
     * the `MyCustomComponent` constructor function.
     */
-  type Type = typings.angular.mod._Global_.Function
+  type Type = typings.angular.mod.global.Function
 }

@@ -52,14 +52,14 @@ object ShellOptions {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): ShellOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debugMsg)) __obj.updateDynamic("debugMsg")(debugMsg.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugMsg)) __obj.updateDynamic("debugMsg")(debugMsg.get.asInstanceOf[js.Any])
     if (executionPolicy != null) __obj.updateDynamic("executionPolicy")(executionPolicy.asInstanceOf[js.Any])
     if (inputEncoding != null) __obj.updateDynamic("inputEncoding")(inputEncoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(noProfile)) __obj.updateDynamic("noProfile")(noProfile.asInstanceOf[js.Any])
+    if (!js.isUndefined(noProfile)) __obj.updateDynamic("noProfile")(noProfile.get.asInstanceOf[js.Any])
     if (outputEncoding != null) __obj.updateDynamic("outputEncoding")(outputEncoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(pwsh)) __obj.updateDynamic("pwsh")(pwsh.asInstanceOf[js.Any])
-    if (!js.isUndefined(pwshPrev)) __obj.updateDynamic("pwshPrev")(pwshPrev.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(pwsh)) __obj.updateDynamic("pwsh")(pwsh.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pwshPrev)) __obj.updateDynamic("pwshPrev")(pwshPrev.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShellOptions]
   }
 }

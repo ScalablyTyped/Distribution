@@ -31,14 +31,14 @@ import scala.scalajs.js.annotation._
 trait RangeBorderData extends js.Object {
   /**
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[String] = js.undefined
   /**
     *
-    * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+    * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -56,7 +56,7 @@ trait RangeBorderData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    * Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
     A null value indicates that the border doesn't have uniform tintAndShade setting.
     *
     * [Api set: ExcelApi 1.9]
@@ -77,14 +77,14 @@ object RangeBorderData {
     color: String = null,
     sideIndex: BorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight | InsideVertical | InsideHorizontal | DiagonalDown | DiagonalUp = null,
     style: BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot = null,
-    tintAndShade: Int | scala.Double = null,
+    tintAndShade: js.UndefOr[scala.Double] = js.undefined,
     weight: BorderWeight | Hairline | Thin | Medium | Thick = null
   ): RangeBorderData = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (sideIndex != null) __obj.updateDynamic("sideIndex")(sideIndex.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
+    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.get.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeBorderData]
   }

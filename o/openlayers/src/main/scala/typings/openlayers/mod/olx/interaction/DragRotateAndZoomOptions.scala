@@ -13,10 +13,13 @@ trait DragRotateAndZoomOptions extends js.Object {
 
 object DragRotateAndZoomOptions {
   @scala.inline
-  def apply(condition: /* event */ MapBrowserEvent => Boolean = null, duration: Int | Double = null): DragRotateAndZoomOptions = {
+  def apply(
+    condition: /* event */ MapBrowserEvent => Boolean = null,
+    duration: js.UndefOr[Double] = js.undefined
+  ): DragRotateAndZoomOptions = {
     val __obj = js.Dynamic.literal()
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragRotateAndZoomOptions]
   }
 }

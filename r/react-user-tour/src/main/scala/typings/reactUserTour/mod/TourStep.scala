@@ -1,6 +1,6 @@
 package typings.reactUserTour.mod
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactUserTour.reactUserTourStrings.bottom
 import typings.reactUserTour.reactUserTourStrings.bottomLeft
 import typings.reactUserTour.reactUserTourStrings.left
@@ -49,14 +49,14 @@ object TourStep {
     selector: String,
     step: Double,
     title: String | Element,
-    horizontalOffset: Int | Double = null,
+    horizontalOffset: js.UndefOr[Double] = js.undefined,
     position: left | right | top | topLeft | bottom | bottomLeft = null,
-    verticalOffset: Int | Double = null
+    verticalOffset: js.UndefOr[Double] = js.undefined
   ): TourStep = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalOffset)) __obj.updateDynamic("horizontalOffset")(horizontalOffset.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalOffset)) __obj.updateDynamic("verticalOffset")(verticalOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TourStep]
   }
 }

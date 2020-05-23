@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojthematicmapMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonLocation
+import typings.oracleOraclejet.anon.Location
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.off
 import scala.scalajs.js
@@ -13,10 +13,10 @@ trait ojThematicMapLinkSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   var color: js.UndefOr[String] = js.undefined
-  var endLocation: js.UndefOr[AnonLocation] = js.undefined
+  var endLocation: js.UndefOr[Location] = js.undefined
   var selectable: js.UndefOr[auto | off] = js.undefined
   var shortDesc: js.UndefOr[String] = js.undefined
-  var startLocation: js.UndefOr[AnonLocation] = js.undefined
+  var startLocation: js.UndefOr[Location] = js.undefined
   var svgClassName: js.UndefOr[String] = js.undefined
   var svgStyle: js.UndefOr[js.Object] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
@@ -25,16 +25,16 @@ trait ojThematicMapLinkSettablePropertiesLenient
 object ojThematicMapLinkSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     categories: js.Array[String] = null,
     color: String = null,
-    endLocation: AnonLocation = null,
+    endLocation: Location = null,
     selectable: auto | off = null,
     shortDesc: String = null,
-    startLocation: AnonLocation = null,
+    startLocation: Location = null,
     svgClassName: String = null,
     svgStyle: js.Object = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ojThematicMapLinkSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -46,7 +46,7 @@ object ojThematicMapLinkSettablePropertiesLenient {
     if (startLocation != null) __obj.updateDynamic("startLocation")(startLocation.asInstanceOf[js.Any])
     if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
     if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojThematicMapLinkSettablePropertiesLenient]
   }
 }

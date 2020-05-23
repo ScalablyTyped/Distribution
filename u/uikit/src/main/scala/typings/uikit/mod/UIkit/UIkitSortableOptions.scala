@@ -23,7 +23,7 @@ object UIkitSortableOptions {
   @scala.inline
   def apply(
     `cls-custom`: String,
-    animation: Int | Double = null,
+    animation: js.UndefOr[Double] = js.undefined,
     `cls-base`: String = null,
     `cls-drag`: String = null,
     `cls-drag-state`: String = null,
@@ -33,11 +33,11 @@ object UIkitSortableOptions {
     `cls-placeholder`: String = null,
     group: String = null,
     handle: String = null,
-    threshold: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined
   ): UIkitSortableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("cls-custom")(`cls-custom`.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (`cls-base` != null) __obj.updateDynamic("cls-base")(`cls-base`.asInstanceOf[js.Any])
     if (`cls-drag` != null) __obj.updateDynamic("cls-drag")(`cls-drag`.asInstanceOf[js.Any])
     if (`cls-drag-state` != null) __obj.updateDynamic("cls-drag-state")(`cls-drag-state`.asInstanceOf[js.Any])
@@ -47,7 +47,7 @@ object UIkitSortableOptions {
     if (`cls-placeholder` != null) __obj.updateDynamic("cls-placeholder")(`cls-placeholder`.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitSortableOptions]
   }
 }

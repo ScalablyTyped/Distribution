@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,8 +68,4 @@ trait Basemap
     */
   def loadAll(): js.Promise[Basemap] = js.native
 }
-
-@JSGlobal("__esri.Basemap")
-@js.native
-object Basemap extends TopLevel[BasemapConstructor]
 

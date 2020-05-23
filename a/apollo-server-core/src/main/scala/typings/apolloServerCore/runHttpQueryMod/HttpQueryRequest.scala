@@ -1,6 +1,6 @@
 package typings.apolloServerCore.runHttpQueryMod
 
-import typings.apolloServerCore.PickRequesturlmethodheade
+import typings.apolloServerCore.anon.PickRequesturlmethodheade
 import typings.apolloServerCore.graphqlOptionsMod.GraphQLServerOptions
 import typings.apolloServerEnv.typescriptUtilityTypesMod.ValueOrPromise
 import typings.std.Record

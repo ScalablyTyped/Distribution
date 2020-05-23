@@ -119,8 +119,8 @@ object ResponseLaunchTemplateData {
     CapacityReservationSpecification: LaunchTemplateCapacityReservationSpecificationResponse = null,
     CpuOptions: LaunchTemplateCpuOptions = null,
     CreditSpecification: CreditSpecification = null,
-    DisableApiTermination: js.UndefOr[scala.Boolean] = js.undefined,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    DisableApiTermination: js.UndefOr[Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
     ElasticGpuSpecifications: ElasticGpuSpecificationResponseList = null,
     ElasticInferenceAccelerators: LaunchTemplateElasticInferenceAcceleratorResponseList = null,
     HibernationOptions: LaunchTemplateHibernationOptions = null,
@@ -147,8 +147,8 @@ object ResponseLaunchTemplateData {
     if (CapacityReservationSpecification != null) __obj.updateDynamic("CapacityReservationSpecification")(CapacityReservationSpecification.asInstanceOf[js.Any])
     if (CpuOptions != null) __obj.updateDynamic("CpuOptions")(CpuOptions.asInstanceOf[js.Any])
     if (CreditSpecification != null) __obj.updateDynamic("CreditSpecification")(CreditSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableApiTermination)) __obj.updateDynamic("DisableApiTermination")(DisableApiTermination.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableApiTermination)) __obj.updateDynamic("DisableApiTermination")(DisableApiTermination.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (ElasticGpuSpecifications != null) __obj.updateDynamic("ElasticGpuSpecifications")(ElasticGpuSpecifications.asInstanceOf[js.Any])
     if (ElasticInferenceAccelerators != null) __obj.updateDynamic("ElasticInferenceAccelerators")(ElasticInferenceAccelerators.asInstanceOf[js.Any])
     if (HibernationOptions != null) __obj.updateDynamic("HibernationOptions")(HibernationOptions.asInstanceOf[js.Any])

@@ -46,17 +46,17 @@ object UserScriptOptions {
     js_ : js.Array[ExtensionFileOrCode] = null,
     matchAboutBlank: js.UndefOr[Boolean] = js.undefined,
     runAt: RunAt = null,
-    scriptMetadata: PlainJSONValue = null
+    scriptMetadata: js.UndefOr[Null | PlainJSONValue] = js.undefined
   ): UserScriptOptions = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
-    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames.asInstanceOf[js.Any])
+    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames.get.asInstanceOf[js.Any])
     if (excludeGlobs != null) __obj.updateDynamic("excludeGlobs")(excludeGlobs.asInstanceOf[js.Any])
     if (excludeMatches != null) __obj.updateDynamic("excludeMatches")(excludeMatches.asInstanceOf[js.Any])
     if (includeGlobs != null) __obj.updateDynamic("includeGlobs")(includeGlobs.asInstanceOf[js.Any])
     if (js_ != null) __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank.get.asInstanceOf[js.Any])
     if (runAt != null) __obj.updateDynamic("runAt")(runAt.asInstanceOf[js.Any])
-    if (scriptMetadata != null) __obj.updateDynamic("scriptMetadata")(scriptMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(scriptMetadata)) __obj.updateDynamic("scriptMetadata")(scriptMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserScriptOptions]
   }
 }

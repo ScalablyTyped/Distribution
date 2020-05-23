@@ -28,18 +28,18 @@ object SingleLineMenuOptions {
     selectedStyle: CTerminal = null,
     separator: String = null,
     style: CTerminal = null,
-    y: Int | Double = null
+    y: js.UndefOr[Double] = js.undefined
   ): SingleLineMenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitOnUnexpectedKey)) __obj.updateDynamic("exitOnUnexpectedKey")(exitOnUnexpectedKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitOnUnexpectedKey)) __obj.updateDynamic("exitOnUnexpectedKey")(exitOnUnexpectedKey.get.asInstanceOf[js.Any])
     if (keyBindings != null) __obj.updateDynamic("keyBindings")(keyBindings.asInstanceOf[js.Any])
     if (nextPageHint != null) __obj.updateDynamic("nextPageHint")(nextPageHint.asInstanceOf[js.Any])
     if (previousPageHint != null) __obj.updateDynamic("previousPageHint")(previousPageHint.asInstanceOf[js.Any])
     if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleLineMenuOptions]
   }
 }

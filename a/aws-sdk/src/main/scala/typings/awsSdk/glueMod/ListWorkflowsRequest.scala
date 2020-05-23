@@ -18,9 +18,9 @@ trait ListWorkflowsRequest extends js.Object {
 
 object ListWorkflowsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: GenericString = null): ListWorkflowsRequest = {
+  def apply(MaxResults: js.UndefOr[PageSize] = js.undefined, NextToken: GenericString = null): ListWorkflowsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkflowsRequest]
   }

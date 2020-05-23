@@ -11,9 +11,9 @@ trait CompositorOption extends js.Object {
 
 object CompositorOption {
   @scala.inline
-  def apply(compressionLevel: Int | Double = null, filter: CompositorFilters = null): CompositorOption = {
+  def apply(compressionLevel: js.UndefOr[Double] = js.undefined, filter: CompositorFilters = null): CompositorOption = {
     val __obj = js.Dynamic.literal()
-    if (compressionLevel != null) __obj.updateDynamic("compressionLevel")(compressionLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressionLevel)) __obj.updateDynamic("compressionLevel")(compressionLevel.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositorOption]
   }

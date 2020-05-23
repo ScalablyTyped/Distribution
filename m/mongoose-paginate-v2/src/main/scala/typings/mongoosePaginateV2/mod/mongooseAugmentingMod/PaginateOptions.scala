@@ -31,9 +31,9 @@ object PaginateOptions {
     customLabels: CustomLabels = null,
     lean: js.UndefOr[Boolean] = js.undefined,
     leanWithId: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
-    offset: Int | Double = null,
-    page: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
+    page: js.UndefOr[Double] = js.undefined,
     pagination: js.UndefOr[Boolean] = js.undefined,
     populate: (js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions = null,
     read: ReadOptions = null,
@@ -43,12 +43,12 @@ object PaginateOptions {
     val __obj = js.Dynamic.literal()
     if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
     if (customLabels != null) __obj.updateDynamic("customLabels")(customLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(lean)) __obj.updateDynamic("lean")(lean.asInstanceOf[js.Any])
-    if (!js.isUndefined(leanWithId)) __obj.updateDynamic("leanWithId")(leanWithId.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
+    if (!js.isUndefined(lean)) __obj.updateDynamic("lean")(lean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leanWithId)) __obj.updateDynamic("leanWithId")(leanWithId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
     if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])

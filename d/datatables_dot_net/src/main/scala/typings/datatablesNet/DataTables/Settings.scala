@@ -252,7 +252,7 @@ object Settings {
     deferLoading: Double | js.Array[Double] = null,
     deferRender: js.UndefOr[Boolean] = js.undefined,
     destroy: js.UndefOr[Boolean] = js.undefined,
-    displayStart: Int | Double = null,
+    displayStart: js.UndefOr[Double] = js.undefined,
     dom: String = null,
     drawCallback: /* settings */ SettingsLegacy => Unit = null,
     footerCallback: (/* tfoot */ Node, /* data */ js.Array[js.Any], /* start */ Double, /* end */ Double, /* display */ js.Array[js.Any]) => Unit = null,
@@ -271,7 +271,7 @@ object Settings {
     orderFixed: (js.Array[(js.Array[Double | String]) | Double | String]) | js.Object = null,
     orderMulti: js.UndefOr[Boolean] = js.undefined,
     ordering: js.UndefOr[Boolean] = js.undefined,
-    pageLength: Int | Double = null,
+    pageLength: js.UndefOr[Double] = js.undefined,
     paging: js.UndefOr[Boolean] = js.undefined,
     pagingType: String = null,
     preDrawCallback: /* settings */ SettingsLegacy => Unit = null,
@@ -286,11 +286,11 @@ object Settings {
     scrollY: String = null,
     search: SearchSettings | Boolean = null,
     searchCols: js.Array[SearchSettings] = null,
-    searchDelay: Int | Double = null,
+    searchDelay: js.UndefOr[Double] = js.undefined,
     searchPlaceholder: SearchSettings = null,
     searching: js.UndefOr[Boolean] = js.undefined,
     serverSide: js.UndefOr[Boolean] = js.undefined,
-    stateDuration: Int | Double = null,
+    stateDuration: js.UndefOr[Double] = js.undefined,
     stateLoadCallback: /* settings */ SettingsLegacy => Unit = null,
     stateLoadParams: (/* settings */ SettingsLegacy, /* data */ js.Object) => Unit = null,
     stateLoaded: (/* settings */ SettingsLegacy, /* data */ js.Object) => Unit = null,
@@ -298,65 +298,65 @@ object Settings {
     stateSaveCallback: (/* settings */ SettingsLegacy, /* data */ js.Object) => Unit = null,
     stateSaveParams: (/* settings */ SettingsLegacy, /* data */ js.Object) => Unit = null,
     stripeClasses: js.Array[String] = null,
-    tabIndex: Int | Double = null
+    tabIndex: js.UndefOr[Double] = js.undefined
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
     if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (createdRow != null) __obj.updateDynamic("createdRow")(js.Any.fromFunction3(createdRow))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (deferLoading != null) __obj.updateDynamic("deferLoading")(deferLoading.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferRender)) __obj.updateDynamic("deferRender")(deferRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (displayStart != null) __obj.updateDynamic("displayStart")(displayStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferRender)) __obj.updateDynamic("deferRender")(deferRender.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayStart)) __obj.updateDynamic("displayStart")(displayStart.get.asInstanceOf[js.Any])
     if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
     if (drawCallback != null) __obj.updateDynamic("drawCallback")(js.Any.fromFunction1(drawCallback))
     if (footerCallback != null) __obj.updateDynamic("footerCallback")(js.Any.fromFunction5(footerCallback))
     if (formatNumber != null) __obj.updateDynamic("formatNumber")(js.Any.fromFunction1(formatNumber))
     if (headerCallback != null) __obj.updateDynamic("headerCallback")(js.Any.fromFunction5(headerCallback))
-    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.get.asInstanceOf[js.Any])
     if (infoCallback != null) __obj.updateDynamic("infoCallback")(js.Any.fromFunction6(infoCallback))
     if (initComplete != null) __obj.updateDynamic("initComplete")(js.Any.fromFunction2(initComplete))
-    if (!js.isUndefined(jQueryUI)) __obj.updateDynamic("jQueryUI")(jQueryUI.asInstanceOf[js.Any])
+    if (!js.isUndefined(jQueryUI)) __obj.updateDynamic("jQueryUI")(jQueryUI.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(lengthChange)) __obj.updateDynamic("lengthChange")(lengthChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(lengthChange)) __obj.updateDynamic("lengthChange")(lengthChange.get.asInstanceOf[js.Any])
     if (lengthMenu != null) __obj.updateDynamic("lengthMenu")(lengthMenu.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(orderCellsTop)) __obj.updateDynamic("orderCellsTop")(orderCellsTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(orderClasses)) __obj.updateDynamic("orderClasses")(orderClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderCellsTop)) __obj.updateDynamic("orderCellsTop")(orderCellsTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderClasses)) __obj.updateDynamic("orderClasses")(orderClasses.get.asInstanceOf[js.Any])
     if (orderFixed != null) __obj.updateDynamic("orderFixed")(orderFixed.asInstanceOf[js.Any])
-    if (!js.isUndefined(orderMulti)) __obj.updateDynamic("orderMulti")(orderMulti.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordering)) __obj.updateDynamic("ordering")(ordering.asInstanceOf[js.Any])
-    if (pageLength != null) __obj.updateDynamic("pageLength")(pageLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderMulti)) __obj.updateDynamic("orderMulti")(orderMulti.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordering)) __obj.updateDynamic("ordering")(ordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageLength)) __obj.updateDynamic("pageLength")(pageLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging.get.asInstanceOf[js.Any])
     if (pagingType != null) __obj.updateDynamic("pagingType")(pagingType.asInstanceOf[js.Any])
     if (preDrawCallback != null) __obj.updateDynamic("preDrawCallback")(js.Any.fromFunction1(preDrawCallback))
-    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing.asInstanceOf[js.Any])
+    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing.get.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(retrieve)) __obj.updateDynamic("retrieve")(retrieve.asInstanceOf[js.Any])
+    if (!js.isUndefined(retrieve)) __obj.updateDynamic("retrieve")(retrieve.get.asInstanceOf[js.Any])
     if (rowCallback != null) __obj.updateDynamic("rowCallback")(js.Any.fromFunction3(rowCallback))
     if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollCollapse)) __obj.updateDynamic("scrollCollapse")(scrollCollapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollX)) __obj.updateDynamic("scrollX")(scrollX.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollCollapse)) __obj.updateDynamic("scrollCollapse")(scrollCollapse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollX)) __obj.updateDynamic("scrollX")(scrollX.get.asInstanceOf[js.Any])
     if (scrollY != null) __obj.updateDynamic("scrollY")(scrollY.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (searchCols != null) __obj.updateDynamic("searchCols")(searchCols.asInstanceOf[js.Any])
-    if (searchDelay != null) __obj.updateDynamic("searchDelay")(searchDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchDelay)) __obj.updateDynamic("searchDelay")(searchDelay.get.asInstanceOf[js.Any])
     if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(searching)) __obj.updateDynamic("searching")(searching.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide.asInstanceOf[js.Any])
-    if (stateDuration != null) __obj.updateDynamic("stateDuration")(stateDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(searching)) __obj.updateDynamic("searching")(searching.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateDuration)) __obj.updateDynamic("stateDuration")(stateDuration.get.asInstanceOf[js.Any])
     if (stateLoadCallback != null) __obj.updateDynamic("stateLoadCallback")(js.Any.fromFunction1(stateLoadCallback))
     if (stateLoadParams != null) __obj.updateDynamic("stateLoadParams")(js.Any.fromFunction2(stateLoadParams))
     if (stateLoaded != null) __obj.updateDynamic("stateLoaded")(js.Any.fromFunction2(stateLoaded))
-    if (!js.isUndefined(stateSave)) __obj.updateDynamic("stateSave")(stateSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateSave)) __obj.updateDynamic("stateSave")(stateSave.get.asInstanceOf[js.Any])
     if (stateSaveCallback != null) __obj.updateDynamic("stateSaveCallback")(js.Any.fromFunction2(stateSaveCallback))
     if (stateSaveParams != null) __obj.updateDynamic("stateSaveParams")(js.Any.fromFunction2(stateSaveParams))
     if (stripeClasses != null) __obj.updateDynamic("stripeClasses")(stripeClasses.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

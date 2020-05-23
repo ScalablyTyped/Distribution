@@ -48,14 +48,14 @@ object ModelArtifactsInfo {
   def apply(
     dateSaved: Date,
     modelTopologyType: JSON | GraphDef,
-    modelTopologyBytes: Int | Double = null,
-    weightDataBytes: Int | Double = null,
-    weightSpecsBytes: Int | Double = null
+    modelTopologyBytes: js.UndefOr[Double] = js.undefined,
+    weightDataBytes: js.UndefOr[Double] = js.undefined,
+    weightSpecsBytes: js.UndefOr[Double] = js.undefined
   ): ModelArtifactsInfo = {
     val __obj = js.Dynamic.literal(dateSaved = dateSaved.asInstanceOf[js.Any], modelTopologyType = modelTopologyType.asInstanceOf[js.Any])
-    if (modelTopologyBytes != null) __obj.updateDynamic("modelTopologyBytes")(modelTopologyBytes.asInstanceOf[js.Any])
-    if (weightDataBytes != null) __obj.updateDynamic("weightDataBytes")(weightDataBytes.asInstanceOf[js.Any])
-    if (weightSpecsBytes != null) __obj.updateDynamic("weightSpecsBytes")(weightSpecsBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(modelTopologyBytes)) __obj.updateDynamic("modelTopologyBytes")(modelTopologyBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weightDataBytes)) __obj.updateDynamic("weightDataBytes")(weightDataBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weightSpecsBytes)) __obj.updateDynamic("weightSpecsBytes")(weightSpecsBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelArtifactsInfo]
   }
 }

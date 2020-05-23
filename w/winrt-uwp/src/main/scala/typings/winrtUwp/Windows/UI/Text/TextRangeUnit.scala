@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -139,104 +138,6 @@ object TextRangeUnit extends js.Object {
   /** A span of alphanumeric characters, an end of paragraph, or punctuation that includes any blanks that follow. */
   @js.native
   sealed trait word extends TextRangeUnit
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextRangeUnit with Double] = js.native
-  /* 21 */ @js.native
-  object allCaps extends TopLevel[allCaps with Double]
-  
-  /* 14 */ @js.native
-  object bold extends TopLevel[bold with Double]
-  
-  /* 0 */ @js.native
-  object character extends TopLevel[character with Double]
-  
-  /* 9 */ @js.native
-  object characterFormat extends TopLevel[characterFormat with Double]
-  
-  /* 13 */ @js.native
-  object cluster extends TopLevel[cluster with Double]
-  
-  /* 26 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
-  
-  /* 30 */ @js.native
-  object fontBound extends TopLevel[fontBound with Double]
-  
-  /* 12 */ @js.native
-  object hardParagraph extends TopLevel[hardParagraph with Double]
-  
-  /* 22 */ @js.native
-  object hidden extends TopLevel[hidden with Double]
-  
-  /* 25 */ @js.native
-  object imprint extends TopLevel[imprint with Double]
-  
-  /* 15 */ @js.native
-  object italic extends TopLevel[italic with Double]
-  
-  /* 4 */ @js.native
-  object line extends TopLevel[line with Double]
-  
-  /* 19 */ @js.native
-  object link extends TopLevel[link with Double]
-  
-  /* 31 */ @js.native
-  object linkProtected extends TopLevel[linkProtected with Double]
-  
-  /* 11 */ @js.native
-  object `object` extends TopLevel[`object` with Double]
-  
-  /* 23 */ @js.native
-  object outline extends TopLevel[outline with Double]
-  
-  /* 3 */ @js.native
-  object paragraph extends TopLevel[paragraph with Double]
-  
-  /* 10 */ @js.native
-  object paragraphFormat extends TopLevel[paragraphFormat with Double]
-  
-  /* 18 */ @js.native
-  object protectedText extends TopLevel[protectedText with Double]
-  
-  /* 27 */ @js.native
-  object revised extends TopLevel[revised with Double]
-  
-  /* 6 */ @js.native
-  object screen extends TopLevel[screen with Double]
-  
-  /* 7 */ @js.native
-  object section extends TopLevel[section with Double]
-  
-  /* 2 */ @js.native
-  object sentence extends TopLevel[sentence with Double]
-  
-  /* 24 */ @js.native
-  object shadow extends TopLevel[shadow with Double]
-  
-  /* 20 */ @js.native
-  object smallCaps extends TopLevel[smallCaps with Double]
-  
-  /* 5 */ @js.native
-  object story extends TopLevel[story with Double]
-  
-  /* 17 */ @js.native
-  object strikethrough extends TopLevel[strikethrough with Double]
-  
-  /* 28 */ @js.native
-  object subscript extends TopLevel[subscript with Double]
-  
-  /* 29 */ @js.native
-  object superscript extends TopLevel[superscript with Double]
-  
-  /* 16 */ @js.native
-  object underline extends TopLevel[underline with Double]
-  
-  /* 8 */ @js.native
-  object window extends TopLevel[window with Double]
-  
-  /* 1 */ @js.native
-  object word extends TopLevel[word with Double]
   
 }
 

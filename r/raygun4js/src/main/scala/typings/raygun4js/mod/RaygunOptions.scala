@@ -93,28 +93,28 @@ object RaygunOptions {
     ignoreAjaxAbort: js.UndefOr[Boolean] = js.undefined,
     ignoreAjaxError: js.UndefOr[Boolean] = js.undefined,
     pulseIgnoreUrlCasing: js.UndefOr[Boolean] = js.undefined,
-    pulseMaxVirtualPageDuration: Int | Double = null,
+    pulseMaxVirtualPageDuration: js.UndefOr[Double] = js.undefined,
     setCookieAsSecure: js.UndefOr[Boolean] = js.undefined,
     wrapAsynchronousCallbacks: js.UndefOr[Boolean] = js.undefined
   ): RaygunOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowInsecureSubmissions)) __obj.updateDynamic("allowInsecureSubmissions")(allowInsecureSubmissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInsecureSubmissions)) __obj.updateDynamic("allowInsecureSubmissions")(allowInsecureSubmissions.get.asInstanceOf[js.Any])
     if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAnonymousUserTracking)) __obj.updateDynamic("disableAnonymousUserTracking")(disableAnonymousUserTracking.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableErrorTracking)) __obj.updateDynamic("disableErrorTracking")(disableErrorTracking.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePulse)) __obj.updateDynamic("disablePulse")(disablePulse.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAnonymousUserTracking)) __obj.updateDynamic("disableAnonymousUserTracking")(disableAnonymousUserTracking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableErrorTracking)) __obj.updateDynamic("disableErrorTracking")(disableErrorTracking.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePulse)) __obj.updateDynamic("disablePulse")(disablePulse.get.asInstanceOf[js.Any])
     if (excludedHostnames != null) __obj.updateDynamic("excludedHostnames")(excludedHostnames.asInstanceOf[js.Any])
     if (excludedUserAgents != null) __obj.updateDynamic("excludedUserAgents")(excludedUserAgents.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore3rdPartyErrors)) __obj.updateDynamic("ignore3rdPartyErrors")(ignore3rdPartyErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreAjaxAbort)) __obj.updateDynamic("ignoreAjaxAbort")(ignoreAjaxAbort.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreAjaxError)) __obj.updateDynamic("ignoreAjaxError")(ignoreAjaxError.asInstanceOf[js.Any])
-    if (!js.isUndefined(pulseIgnoreUrlCasing)) __obj.updateDynamic("pulseIgnoreUrlCasing")(pulseIgnoreUrlCasing.asInstanceOf[js.Any])
-    if (pulseMaxVirtualPageDuration != null) __obj.updateDynamic("pulseMaxVirtualPageDuration")(pulseMaxVirtualPageDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(setCookieAsSecure)) __obj.updateDynamic("setCookieAsSecure")(setCookieAsSecure.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapAsynchronousCallbacks)) __obj.updateDynamic("wrapAsynchronousCallbacks")(wrapAsynchronousCallbacks.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore3rdPartyErrors)) __obj.updateDynamic("ignore3rdPartyErrors")(ignore3rdPartyErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreAjaxAbort)) __obj.updateDynamic("ignoreAjaxAbort")(ignoreAjaxAbort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreAjaxError)) __obj.updateDynamic("ignoreAjaxError")(ignoreAjaxError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pulseIgnoreUrlCasing)) __obj.updateDynamic("pulseIgnoreUrlCasing")(pulseIgnoreUrlCasing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pulseMaxVirtualPageDuration)) __obj.updateDynamic("pulseMaxVirtualPageDuration")(pulseMaxVirtualPageDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setCookieAsSecure)) __obj.updateDynamic("setCookieAsSecure")(setCookieAsSecure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapAsynchronousCallbacks)) __obj.updateDynamic("wrapAsynchronousCallbacks")(wrapAsynchronousCallbacks.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaygunOptions]
   }
 }

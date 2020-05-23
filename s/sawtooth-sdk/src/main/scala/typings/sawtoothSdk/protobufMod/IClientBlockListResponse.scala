@@ -19,16 +19,16 @@ trait IClientBlockListResponse extends js.Object {
 object IClientBlockListResponse {
   @scala.inline
   def apply(
-    blocks: js.Array[IBlock] = null,
-    headId: String = null,
-    paging: IClientPagingResponse = null,
-    status: Status = null
+    blocks: js.UndefOr[Null | js.Array[IBlock]] = js.undefined,
+    headId: js.UndefOr[Null | String] = js.undefined,
+    paging: js.UndefOr[Null | IClientPagingResponse] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
   ): IClientBlockListResponse = {
     val __obj = js.Dynamic.literal()
-    if (blocks != null) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
-    if (headId != null) __obj.updateDynamic("headId")(headId.asInstanceOf[js.Any])
-    if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(blocks)) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
+    if (!js.isUndefined(headId)) __obj.updateDynamic("headId")(headId.asInstanceOf[js.Any])
+    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBlockListResponse]
   }
 }

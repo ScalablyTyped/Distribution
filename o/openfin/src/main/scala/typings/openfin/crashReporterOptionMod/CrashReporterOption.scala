@@ -13,7 +13,7 @@ object CrashReporterOption {
   @scala.inline
   def apply(diagnosticMode: Boolean, isRunning: js.UndefOr[Boolean] = js.undefined): CrashReporterOption = {
     val __obj = js.Dynamic.literal(diagnosticMode = diagnosticMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRunning)) __obj.updateDynamic("isRunning")(isRunning.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRunning)) __obj.updateDynamic("isRunning")(isRunning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrashReporterOption]
   }
 }

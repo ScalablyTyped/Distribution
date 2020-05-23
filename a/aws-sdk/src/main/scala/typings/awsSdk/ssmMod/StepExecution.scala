@@ -105,9 +105,9 @@ object StepExecution {
     FailureDetails: FailureDetails = null,
     FailureMessage: String = null,
     Inputs: NormalStringMap = null,
-    IsCritical: js.UndefOr[scala.Boolean] = js.undefined,
-    IsEnd: js.UndefOr[scala.Boolean] = js.undefined,
-    MaxAttempts: Int | Double = null,
+    IsCritical: js.UndefOr[Boolean] = js.undefined,
+    IsEnd: js.UndefOr[Boolean] = js.undefined,
+    MaxAttempts: js.UndefOr[Integer] = js.undefined,
     NextStep: String = null,
     OnFailure: String = null,
     Outputs: AutomationParameterMap = null,
@@ -119,7 +119,7 @@ object StepExecution {
     StepStatus: AutomationExecutionStatus = null,
     TargetLocation: TargetLocation = null,
     Targets: Targets = null,
-    TimeoutSeconds: Int | Double = null,
+    TimeoutSeconds: js.UndefOr[Long] = js.undefined,
     ValidNextSteps: ValidNextStepList = null
   ): StepExecution = {
     val __obj = js.Dynamic.literal()
@@ -129,9 +129,9 @@ object StepExecution {
     if (FailureDetails != null) __obj.updateDynamic("FailureDetails")(FailureDetails.asInstanceOf[js.Any])
     if (FailureMessage != null) __obj.updateDynamic("FailureMessage")(FailureMessage.asInstanceOf[js.Any])
     if (Inputs != null) __obj.updateDynamic("Inputs")(Inputs.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsCritical)) __obj.updateDynamic("IsCritical")(IsCritical.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsEnd)) __obj.updateDynamic("IsEnd")(IsEnd.asInstanceOf[js.Any])
-    if (MaxAttempts != null) __obj.updateDynamic("MaxAttempts")(MaxAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsCritical)) __obj.updateDynamic("IsCritical")(IsCritical.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsEnd)) __obj.updateDynamic("IsEnd")(IsEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAttempts)) __obj.updateDynamic("MaxAttempts")(MaxAttempts.get.asInstanceOf[js.Any])
     if (NextStep != null) __obj.updateDynamic("NextStep")(NextStep.asInstanceOf[js.Any])
     if (OnFailure != null) __obj.updateDynamic("OnFailure")(OnFailure.asInstanceOf[js.Any])
     if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs.asInstanceOf[js.Any])
@@ -143,7 +143,7 @@ object StepExecution {
     if (StepStatus != null) __obj.updateDynamic("StepStatus")(StepStatus.asInstanceOf[js.Any])
     if (TargetLocation != null) __obj.updateDynamic("TargetLocation")(TargetLocation.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
-    if (TimeoutSeconds != null) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeoutSeconds)) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.get.asInstanceOf[js.Any])
     if (ValidNextSteps != null) __obj.updateDynamic("ValidNextSteps")(ValidNextSteps.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepExecution]
   }

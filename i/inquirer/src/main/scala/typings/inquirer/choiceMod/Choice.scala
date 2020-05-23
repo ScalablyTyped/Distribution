@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.inquirer.mod.ChoiceBase because Already inherited
 - typings.inquirer.mod.ChoiceOptions because Already inherited
 - typings.inquirer.mod.ExpandChoiceOptions because var conflicts: extra, name, short, `type`, value. Inlined key */ trait Choice[T /* <: Answers */] extends CheckboxChoiceOptions[T] {
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
 
 object Choice {
   @scala.inline
-  def apply[T /* <: Answers */](
+  def apply[T](
     disabled: Boolean,
     name: String,
     short: String,
@@ -53,7 +53,7 @@ object Choice {
     value: js.Any = null
   ): Choice[T] = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

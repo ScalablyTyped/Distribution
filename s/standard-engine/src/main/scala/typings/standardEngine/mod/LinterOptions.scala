@@ -1,6 +1,6 @@
 package typings.standardEngine.mod
 
-import typings.standardEngine.Typeofeslint
+import typings.standardEngine.anon.Typeofeslint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

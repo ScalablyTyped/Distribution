@@ -18,7 +18,7 @@ object MkdirOptions {
   ): MkdirOptions = {
     val __obj = js.Dynamic.literal()
     if (NSFileProtectionKey != null) __obj.updateDynamic("NSFileProtectionKey")(NSFileProtectionKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(NSURLIsExcludedFromBackupKey)) __obj.updateDynamic("NSURLIsExcludedFromBackupKey")(NSURLIsExcludedFromBackupKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(NSURLIsExcludedFromBackupKey)) __obj.updateDynamic("NSURLIsExcludedFromBackupKey")(NSURLIsExcludedFromBackupKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MkdirOptions]
   }
 }

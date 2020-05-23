@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAttenuation
+import typings.cesium.anon.Attenuation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PointCloudShading")
 @js.native
 class PointCloudShading () extends js.Object {
-  def this(option: AnonAttenuation) = this()
+  def this(option: Attenuation) = this()
   var attenuation: Boolean = js.native
   var backFaceCulling: Boolean = js.native
   var baseResolution: Double = js.native

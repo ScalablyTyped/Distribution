@@ -14,9 +14,9 @@ trait MemoryInfo extends js.Object {
 
 object MemoryInfo {
   @scala.inline
-  def apply(SizeInMiB: Int | scala.Double = null): MemoryInfo = {
+  def apply(SizeInMiB: js.UndefOr[MemorySize] = js.undefined): MemoryInfo = {
     val __obj = js.Dynamic.literal()
-    if (SizeInMiB != null) __obj.updateDynamic("SizeInMiB")(SizeInMiB.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeInMiB)) __obj.updateDynamic("SizeInMiB")(SizeInMiB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryInfo]
   }
 }

@@ -20,23 +20,23 @@ object ForStatement {
   def apply(
     body: Statement,
     `type`: typings.estree.estreeStrings.ForStatement,
-    init: VariableDeclaration | Expression = null,
+    init: js.UndefOr[Null | VariableDeclaration | Expression] = js.undefined,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
-    test: Expression = null,
+    test: js.UndefOr[Null | Expression] = js.undefined,
     trailingComments: js.Array[Comment] = null,
-    update: Expression = null
+    update: js.UndefOr[Null | Expression] = js.undefined
   ): ForStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForStatement]
   }
 }

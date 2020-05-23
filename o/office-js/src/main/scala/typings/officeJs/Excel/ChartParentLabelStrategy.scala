@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,17 +24,6 @@ object ChartParentLabelStrategy extends js.Object {
   
   @js.native
   sealed trait overlapping extends ChartParentLabelStrategy
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartParentLabelStrategy with String] = js.native
-  /* "Banner" */ @js.native
-  object banner extends TopLevel[banner with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Overlapping" */ @js.native
-  object overlapping extends TopLevel[overlapping with String]
   
 }
 

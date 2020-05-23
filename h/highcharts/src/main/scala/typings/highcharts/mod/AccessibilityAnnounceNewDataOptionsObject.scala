@@ -52,13 +52,13 @@ object AccessibilityAnnounceNewDataOptionsObject {
     announcementFormatter: (/* updatedSeries */ js.Array[Series], /* addedSeries */ js.UndefOr[Series], /* addedPoint */ js.UndefOr[Point]) => `false` | String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     interruptUser: js.UndefOr[Boolean] = js.undefined,
-    minAnnounceInterval: Int | Double = null
+    minAnnounceInterval: js.UndefOr[Double] = js.undefined
   ): AccessibilityAnnounceNewDataOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (announcementFormatter != null) __obj.updateDynamic("announcementFormatter")(js.Any.fromFunction3(announcementFormatter))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(interruptUser)) __obj.updateDynamic("interruptUser")(interruptUser.asInstanceOf[js.Any])
-    if (minAnnounceInterval != null) __obj.updateDynamic("minAnnounceInterval")(minAnnounceInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interruptUser)) __obj.updateDynamic("interruptUser")(interruptUser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minAnnounceInterval)) __obj.updateDynamic("minAnnounceInterval")(minAnnounceInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityAnnounceNewDataOptionsObject]
   }
 }

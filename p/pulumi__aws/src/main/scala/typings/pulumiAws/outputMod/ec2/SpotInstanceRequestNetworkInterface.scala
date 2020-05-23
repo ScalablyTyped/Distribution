@@ -28,7 +28,7 @@ object SpotInstanceRequestNetworkInterface {
     deleteOnTermination: js.UndefOr[Boolean] = js.undefined
   ): SpotInstanceRequestNetworkInterface = {
     val __obj = js.Dynamic.literal(deviceIndex = deviceIndex.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotInstanceRequestNetworkInterface]
   }
 }

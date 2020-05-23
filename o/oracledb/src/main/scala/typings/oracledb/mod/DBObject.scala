@@ -1,7 +1,7 @@
 package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracledb.AnonTypeClass
+import typings.oracledb.anon.TypeClass
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ class DBObject ()
   /**
     * When dbObject.isCollection is false, this will be an object containing attributes corresponding to the Oracle Database object attributes. 
     */
-  var attributes: Record[String, AnonTypeClass] = js.native
+  var attributes: Record[String, TypeClass] = js.native
   /** When dbObject.isCollection is true, this will be one of the DB_TYPE constants. */
   val elementType: Double = js.native
   val elementTypeClass: DBObjectClass = js.native
@@ -53,7 +53,7 @@ class DBObject ()
   def getFirstIndex(): Double = js.native
   /**
     * Returns a JavaScript array containing the ‘index’ keys.
-    */	
+    */    
   def getKeys(): js.Array[String] = js.native
   /**
     * To obtain the last index for later use to obtain a value.
@@ -69,7 +69,7 @@ class DBObject ()
   def getPrevIndex(): Double = js.native
   /**
     * Returns an array of element values as a JavaScript array in key order.
-    */	
+    */    
   def getValues(): js.Array[_] = js.native
   /**
     * Returns true if an element exists in the collection at the given index. Returns false otherwise.

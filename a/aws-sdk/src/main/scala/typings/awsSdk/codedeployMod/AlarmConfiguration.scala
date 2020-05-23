@@ -15,7 +15,7 @@ trait AlarmConfiguration extends js.Object {
     */
   var enabled: js.UndefOr[Boolean] = js.native
   /**
-    * Indicates whether a deployment should continue if information about the current state of alarms cannot be retrieved from Amazon CloudWatch. The default value is false.   true: The deployment proceeds even if alarm status information can't be retrieved from Amazon CloudWatch.   false: The deployment stops if alarm status information can't be retrieved from Amazon CloudWatch.  
+    * Indicates whether a deployment should continue if information about the current state of alarms cannot be retrieved from Amazon CloudWatch. The default value is false.    true: The deployment proceeds even if alarm status information can't be retrieved from Amazon CloudWatch.    false: The deployment stops if alarm status information can't be retrieved from Amazon CloudWatch.  
     */
   var ignorePollAlarmFailure: js.UndefOr[Boolean] = js.native
 }
@@ -24,13 +24,13 @@ object AlarmConfiguration {
   @scala.inline
   def apply(
     alarms: AlarmList = null,
-    enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    ignorePollAlarmFailure: js.UndefOr[scala.Boolean] = js.undefined
+    enabled: js.UndefOr[Boolean] = js.undefined,
+    ignorePollAlarmFailure: js.UndefOr[Boolean] = js.undefined
   ): AlarmConfiguration = {
     val __obj = js.Dynamic.literal()
     if (alarms != null) __obj.updateDynamic("alarms")(alarms.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePollAlarmFailure)) __obj.updateDynamic("ignorePollAlarmFailure")(ignorePollAlarmFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePollAlarmFailure)) __obj.updateDynamic("ignorePollAlarmFailure")(ignorePollAlarmFailure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlarmConfiguration]
   }
 }

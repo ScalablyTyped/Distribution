@@ -38,20 +38,20 @@ object MarkRangesOptions {
     exclude: js.Array[String] = null,
     filter: (/* textNode */ Element, /* term */ String, /* marksSoFar */ Double, /* marksTotal */ Double) => Boolean = null,
     iframes: js.UndefOr[Boolean] = js.undefined,
-    iframesTimeout: Int | Double = null,
+    iframesTimeout: js.UndefOr[Double] = js.undefined,
     log: js.Object = null,
     noMatch: /* term */ String => Unit = null
   ): MarkRangesOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction1(done))
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
-    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes.asInstanceOf[js.Any])
-    if (iframesTimeout != null) __obj.updateDynamic("iframesTimeout")(iframesTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iframesTimeout)) __obj.updateDynamic("iframesTimeout")(iframesTimeout.get.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (noMatch != null) __obj.updateDynamic("noMatch")(js.Any.fromFunction1(noMatch))
     __obj.asInstanceOf[MarkRangesOptions]

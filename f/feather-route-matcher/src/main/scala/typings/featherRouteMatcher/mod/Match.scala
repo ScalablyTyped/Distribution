@@ -14,8 +14,7 @@ trait Match[T] extends js.Object {
 object Match {
   @scala.inline
   def apply[T](page: T, url: String, params: StringDictionary[String] = null): Match[T] = {
-    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Match[T]]
   }
 }

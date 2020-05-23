@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonUrl
+import typings.cesium.anon.Url
 import typings.std.Request
 import typings.std.Uint16Array
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "GoogleEarthEnterpriseTerrainProvider")
 @js.native
 class GoogleEarthEnterpriseTerrainProvider protected () extends js.Object {
-  def this(options: AnonUrl) = this()
+  def this(options: Url) = this()
   var availability: TileAvailability = js.native
   var credit: Credit = js.native
   var errorEvent: Event[js.Array[_]] = js.native

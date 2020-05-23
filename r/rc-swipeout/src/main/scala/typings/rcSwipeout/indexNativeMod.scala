@@ -1,5 +1,6 @@
 package typings.rcSwipeout
 
+import typings.rcSwipeout.anon.AutoClose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ object indexNativeMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonAutoClose = js.native
+    var defaultProps: AutoClose = js.native
   }
   
 }

@@ -22,10 +22,14 @@ trait ClusterSnapshotCopy extends js.Object {
 
 object ClusterSnapshotCopy {
   @scala.inline
-  def apply(destinationRegion: String, grantName: String = null, retentionPeriod: Int | Double = null): ClusterSnapshotCopy = {
+  def apply(
+    destinationRegion: String,
+    grantName: String = null,
+    retentionPeriod: js.UndefOr[Double] = js.undefined
+  ): ClusterSnapshotCopy = {
     val __obj = js.Dynamic.literal(destinationRegion = destinationRegion.asInstanceOf[js.Any])
     if (grantName != null) __obj.updateDynamic("grantName")(grantName.asInstanceOf[js.Any])
-    if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(retentionPeriod)) __obj.updateDynamic("retentionPeriod")(retentionPeriod.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterSnapshotCopy]
   }
 }

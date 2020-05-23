@@ -1,6 +1,6 @@
 package typings.reactNavigationStack.cardStackMod
 
-import typings.reactNavigationStack.AnonGestures
+import typings.reactNavigationStack.anon.Gestures
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends CardStack {
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/CardStack", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def getDerivedStateFromProps(props: Props, state: State): AnonGestures | Null = js.native
+  def getDerivedStateFromProps(props: Props, state: State): Gestures | Null = js.native
 }
 

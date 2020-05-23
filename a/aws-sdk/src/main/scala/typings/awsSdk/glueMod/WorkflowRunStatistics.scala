@@ -35,20 +35,20 @@ trait WorkflowRunStatistics extends js.Object {
 object WorkflowRunStatistics {
   @scala.inline
   def apply(
-    FailedActions: Int | Double = null,
-    RunningActions: Int | Double = null,
-    StoppedActions: Int | Double = null,
-    SucceededActions: Int | Double = null,
-    TimeoutActions: Int | Double = null,
-    TotalActions: Int | Double = null
+    FailedActions: js.UndefOr[IntegerValue] = js.undefined,
+    RunningActions: js.UndefOr[IntegerValue] = js.undefined,
+    StoppedActions: js.UndefOr[IntegerValue] = js.undefined,
+    SucceededActions: js.UndefOr[IntegerValue] = js.undefined,
+    TimeoutActions: js.UndefOr[IntegerValue] = js.undefined,
+    TotalActions: js.UndefOr[IntegerValue] = js.undefined
   ): WorkflowRunStatistics = {
     val __obj = js.Dynamic.literal()
-    if (FailedActions != null) __obj.updateDynamic("FailedActions")(FailedActions.asInstanceOf[js.Any])
-    if (RunningActions != null) __obj.updateDynamic("RunningActions")(RunningActions.asInstanceOf[js.Any])
-    if (StoppedActions != null) __obj.updateDynamic("StoppedActions")(StoppedActions.asInstanceOf[js.Any])
-    if (SucceededActions != null) __obj.updateDynamic("SucceededActions")(SucceededActions.asInstanceOf[js.Any])
-    if (TimeoutActions != null) __obj.updateDynamic("TimeoutActions")(TimeoutActions.asInstanceOf[js.Any])
-    if (TotalActions != null) __obj.updateDynamic("TotalActions")(TotalActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailedActions)) __obj.updateDynamic("FailedActions")(FailedActions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RunningActions)) __obj.updateDynamic("RunningActions")(RunningActions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(StoppedActions)) __obj.updateDynamic("StoppedActions")(StoppedActions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SucceededActions)) __obj.updateDynamic("SucceededActions")(SucceededActions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeoutActions)) __obj.updateDynamic("TimeoutActions")(TimeoutActions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalActions)) __obj.updateDynamic("TotalActions")(TotalActions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowRunStatistics]
   }
 }

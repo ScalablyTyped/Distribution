@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait StateChangedEventUIParam extends js.Object {
   /**
-  	 * Gets the name of the action. That can be one of the following: "open" - the dialog was opened. Note: the event is raised before a possible "openAnimation" started. "close" - the dialog was closed. Note: the event is raised before a possible "closeAnimation" started. "minimize" - the dialog was minimized. "maximize" - the dialog was maximized. "restore" - the dialog was restored from minimized or maximized state. "pin" - the dialog was pinned. "unpin" - the dialog was unpinned.
-  	 */
+    * Gets the name of the action. That can be one of the following: "open" - the dialog was opened. Note: the event is raised before a possible "openAnimation" started. "close" - the dialog was closed. Note: the event is raised before a possible "closeAnimation" started. "minimize" - the dialog was minimized. "maximize" - the dialog was maximized. "restore" - the dialog was restored from minimized or maximized state. "pin" - the dialog was pinned. "unpin" - the dialog was unpinned.
+    */
   var action: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the name of the button, which triggered the event. Note: if the state was modified from the code, then "button" is undefined.
-  	 */
+    * Gets the name of the button, which triggered the event. Note: if the state was modified from the code, then "button" is undefined.
+    */
   var button: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the boolean value of the old pin state of the dialog.
-  	 */
+    * Gets the boolean value of the old pin state of the dialog.
+    */
   var oldPinned: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * Gets the old state of the dialog, which can be one of the following: "opened", "minimized", "maximized", "closed".
-  	 */
+    * Gets the old state of the dialog, which can be one of the following: "opened", "minimized", "maximized", "closed".
+    */
   var oldState: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to the igDialog widget.
-  	 */
+    * Gets a reference to the igDialog widget.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -39,7 +39,7 @@ object StateChangedEventUIParam {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (!js.isUndefined(oldPinned)) __obj.updateDynamic("oldPinned")(oldPinned.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldPinned)) __obj.updateDynamic("oldPinned")(oldPinned.get.asInstanceOf[js.Any])
     if (oldState != null) __obj.updateDynamic("oldState")(oldState.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateChangedEventUIParam]

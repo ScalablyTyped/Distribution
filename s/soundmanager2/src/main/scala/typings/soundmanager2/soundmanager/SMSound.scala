@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("soundmanager.SMSound")
 @js.native
-class SMSound () extends js.Object {
+trait SMSound extends js.Object {
   // Dynamic Properties
   var buffered: js.Array[js.Object] = js.native
   var bytesLoaded: Double | Null = js.native

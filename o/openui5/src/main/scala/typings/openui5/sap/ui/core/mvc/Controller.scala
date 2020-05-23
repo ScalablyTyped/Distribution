@@ -7,19 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.mvc.Controller")
 @js.native
-class Controller protected () extends EventProvider {
-  /**
-    * Instantiates a (MVC-style) controller. Consumers should call the constructor only in thetyped
-    * controller scenario. In the generic controller use case, they should use{@link sap.ui.controller}
-    * instead.
-    * @param sName The name of the controller to instantiate. If a controller is defined as real
-    * sub-class,                                  the "arguments" of the sub-class constructor should be
-    * given instead.
-    */
-  def this(sName: String) = this()
-  def this(sName: js.Array[_]) = this()
+trait Controller extends EventProvider {
   /**
     * Returns an Element of the connected view with the given local ID.Views automatically prepend their
     * own ID as a prefix to created Elementsto make the IDs unique even in the case of multiple view

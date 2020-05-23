@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Protection.RevocationAndRenewalItem")
-@js.native
-class RevocationAndRenewalItem () extends IRevocationAndRenewalItem {
-  /* CompleteClass */
-  override var headerHash: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var publicKeyHash: String = js.native
-  /* CompleteClass */
-  override var reasons: RevocationAndRenewalReasons = js.native
-  /* CompleteClass */
-  override var renewalId: String = js.native
+trait RevocationAndRenewalItem extends IRevocationAndRenewalItem
+
+object RevocationAndRenewalItem {
+  @scala.inline
+  def apply(
+    headerHash: String,
+    name: String,
+    publicKeyHash: String,
+    reasons: RevocationAndRenewalReasons,
+    renewalId: String
+  ): RevocationAndRenewalItem = {
+    val __obj = js.Dynamic.literal(headerHash = headerHash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publicKeyHash = publicKeyHash.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any], renewalId = renewalId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RevocationAndRenewalItem]
+  }
 }
 

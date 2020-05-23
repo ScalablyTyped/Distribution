@@ -4,131 +4,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.CylinderParticleEmitter")
-@js.native
-/**
-  * Creates a new instance CylinderParticleEmitter
-  * @param radius the radius of the emission cylinder (1 by default)
-  * @param height the height of the emission cylinder (1 by default)
-  * @param radiusRange the range of the emission cylinder [0-1] 0 Surface only, 1 Entire Radius (1 by default)
-  * @param directionRandomizer defines how much to randomize the particle direction [0-1]
-  */
-class CylinderParticleEmitter () extends IParticleEmitterType {
-  def this(/**
-    * The radius of the emission cylinder.
-    */
-  radius: Double) = this()
-  def this(
-    /**
-    * The radius of the emission cylinder.
-    */
-  radius: Double,
-    /**
-    * The height of the emission cylinder.
-    */
-  height: Double
-  ) = this()
-  def this(
-    /**
-    * The radius of the emission cylinder.
-    */
-  radius: Double,
-    /**
-    * The height of the emission cylinder.
-    */
-  height: Double,
-    /**
-    * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-    */
-  radiusRange: Double
-  ) = this()
-  def this(
-    /**
-    * The radius of the emission cylinder.
-    */
-  radius: Double,
-    /**
-    * The height of the emission cylinder.
-    */
-  height: Double,
-    /**
-    * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
-    */
-  radiusRange: Double,
-    /**
-    * How much to randomize the particle direction [0-1].
-    */
-  directionRandomizer: Double
-  ) = this()
+trait CylinderParticleEmitter extends IParticleEmitterType {
   /**
     * How much to randomize the particle direction [0-1].
     */
-  var directionRandomizer: Double = js.native
+  var directionRandomizer: Double
   /**
     * The height of the emission cylinder.
     */
-  var height: Double = js.native
+  var height: Double
   /**
     * The radius of the emission cylinder.
     */
-  var radius: Double = js.native
+  var radius: Double
   /**
     * The range of emission [0-1] 0 Surface only, 1 Entire Radius.
     */
-  var radiusRange: Double = js.native
-  /**
-    * Called by the GPUParticleSystem to setup the update shader
-    * @param effect defines the update shader
-    */
-  /* CompleteClass */
-  override def applyToShader(effect: Effect): Unit = js.native
-  /**
-    * Returns a string representing the class name
-    * @returns a string containing the class name
-    */
-  /* CompleteClass */
-  override def getClassName(): String = js.native
-  /**
-    * Returns a string to use to update the GPU particles update shader
-    * @returns the effect defines string
-    */
-  /* CompleteClass */
-  override def getEffectDefines(): String = js.native
+  var radiusRange: Double
   /**
     * Parse properties from a JSON object
     * @param serializationObject defines the JSON object
     */
-  def parse(serializationObject: js.Any): Unit = js.native
-  /**
-    * Parse properties from a JSON object
-    * @param serializationObject defines the JSON object
-    * @param scene defines the hosting scene
-    */
-  /* CompleteClass */
-  override def parse(serializationObject: js.Any, scene: Scene): Unit = js.native
-  /**
-    * Serializes the particle system to a JSON object.
-    * @returns the JSON object
-    */
-  /* CompleteClass */
-  override def serialize(): js.Any = js.native
-  /**
-    * Called by the particle System when the direction is computed for the created particle.
-    * @param worldMatrix is the world matrix of the particle system
-    * @param directionToUpdate is the direction vector to update with the result
-    * @param particle is the particle we are computed the direction for
-    * @param isLocal defines if the direction should be set in local space
-    */
-  /* CompleteClass */
-  override def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
-  /**
-    * Called by the particle System when the position is computed for the created particle.
-    * @param worldMatrix is the world matrix of the particle system
-    * @param positionToUpdate is the position vector to update with the result
-    * @param particle is the particle we are computed the position for
-    * @param isLocal defines if the position should be set in local space
-    */
-  /* CompleteClass */
-  override def startPositionFunction(worldMatrix: Matrix, positionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
+  def parse(serializationObject: js.Any): Unit
+}
+
+object CylinderParticleEmitter {
+  @scala.inline
+  def apply(
+    applyToShader: Effect => Unit,
+    directionRandomizer: Double,
+    getClassName: () => String,
+    getEffectDefines: () => String,
+    height: Double,
+    parse: js.Any => Unit,
+    radius: Double,
+    radiusRange: Double,
+    serialize: () => js.Any,
+    startDirectionFunction: (Matrix, Vector3, Particle, Boolean) => Unit,
+    startPositionFunction: (Matrix, Vector3, Particle, Boolean) => Unit
+  ): CylinderParticleEmitter = {
+    val __obj = js.Dynamic.literal(applyToShader = js.Any.fromFunction1(applyToShader), directionRandomizer = directionRandomizer.asInstanceOf[js.Any], getClassName = js.Any.fromFunction0(getClassName), getEffectDefines = js.Any.fromFunction0(getEffectDefines), height = height.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), radius = radius.asInstanceOf[js.Any], radiusRange = radiusRange.asInstanceOf[js.Any], serialize = js.Any.fromFunction0(serialize), startDirectionFunction = js.Any.fromFunction4(startDirectionFunction), startPositionFunction = js.Any.fromFunction4(startPositionFunction))
+    __obj.asInstanceOf[CylinderParticleEmitter]
+  }
 }
 

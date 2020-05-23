@@ -9,7 +9,7 @@ trait EventCondition extends js.Object {
   /**
     * The dimensions for the event filter to use for the activity.
     */
-  var Dimensions: EventDimensions = js.native
+  var Dimensions: js.UndefOr[EventDimensions] = js.native
   /**
     * The message identifier (message_id) for the message to use when determining whether message events meet the condition.
     */
@@ -18,8 +18,9 @@ trait EventCondition extends js.Object {
 
 object EventCondition {
   @scala.inline
-  def apply(Dimensions: EventDimensions, MessageActivity: string = null): EventCondition = {
-    val __obj = js.Dynamic.literal(Dimensions = Dimensions.asInstanceOf[js.Any])
+  def apply(Dimensions: EventDimensions = null, MessageActivity: string = null): EventCondition = {
+    val __obj = js.Dynamic.literal()
+    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
     if (MessageActivity != null) __obj.updateDynamic("MessageActivity")(MessageActivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventCondition]
   }

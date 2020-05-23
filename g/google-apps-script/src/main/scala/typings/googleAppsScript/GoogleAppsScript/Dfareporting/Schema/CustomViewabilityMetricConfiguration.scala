@@ -15,15 +15,15 @@ object CustomViewabilityMetricConfiguration {
   @scala.inline
   def apply(
     audible: js.UndefOr[Boolean] = js.undefined,
-    timeMillis: Int | Double = null,
-    timePercent: Int | Double = null,
-    viewabilityPercent: Int | Double = null
+    timeMillis: js.UndefOr[Double] = js.undefined,
+    timePercent: js.UndefOr[Double] = js.undefined,
+    viewabilityPercent: js.UndefOr[Double] = js.undefined
   ): CustomViewabilityMetricConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible.asInstanceOf[js.Any])
-    if (timeMillis != null) __obj.updateDynamic("timeMillis")(timeMillis.asInstanceOf[js.Any])
-    if (timePercent != null) __obj.updateDynamic("timePercent")(timePercent.asInstanceOf[js.Any])
-    if (viewabilityPercent != null) __obj.updateDynamic("viewabilityPercent")(viewabilityPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeMillis)) __obj.updateDynamic("timeMillis")(timeMillis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timePercent)) __obj.updateDynamic("timePercent")(timePercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewabilityPercent)) __obj.updateDynamic("viewabilityPercent")(viewabilityPercent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomViewabilityMetricConfiguration]
   }
 }

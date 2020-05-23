@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access._ChildLabel")
 @js.native
-class ChildLabel protected () extends js.Object {
+trait ChildLabel extends js.Object {
   @JSName("Access._ChildLabel_typekey")
   var AccessDot_ChildLabel_typekey: ChildLabel = js.native
   val Application: typings.activexAccess.Access.Application = js.native

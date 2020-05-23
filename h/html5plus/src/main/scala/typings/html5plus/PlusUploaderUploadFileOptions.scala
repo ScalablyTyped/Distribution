@@ -13,7 +13,7 @@ trait PlusUploaderUploadFileOptions extends js.Object {
   /**
     * 文件键名
     * 上传文件在上传任务中的键名，默认值为为文件名称。
-    * 	上传任务中如果已经存在相同key的上传文件或数据将导致添加文件失败。
+    *     上传任务中如果已经存在相同key的上传文件或数据将导致添加文件失败。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */

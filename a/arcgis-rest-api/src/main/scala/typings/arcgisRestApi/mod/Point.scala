@@ -16,14 +16,14 @@ object Point {
   def apply(
     x: Double,
     y: Double,
-    m: Int | Double = null,
+    m: js.UndefOr[Double] = js.undefined,
     spatialReference: SpatialReference = null,
-    z: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined
   ): Point = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.get.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

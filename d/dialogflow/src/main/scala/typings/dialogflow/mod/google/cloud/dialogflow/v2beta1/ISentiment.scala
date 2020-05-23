@@ -14,10 +14,13 @@ trait ISentiment extends js.Object {
 
 object ISentiment {
   @scala.inline
-  def apply(magnitude: Int | Double = null, score: Int | Double = null): ISentiment = {
+  def apply(
+    magnitude: js.UndefOr[Null | Double] = js.undefined,
+    score: js.UndefOr[Null | Double] = js.undefined
+  ): ISentiment = {
     val __obj = js.Dynamic.literal()
-    if (magnitude != null) __obj.updateDynamic("magnitude")(magnitude.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(magnitude)) __obj.updateDynamic("magnitude")(magnitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISentiment]
   }
 }

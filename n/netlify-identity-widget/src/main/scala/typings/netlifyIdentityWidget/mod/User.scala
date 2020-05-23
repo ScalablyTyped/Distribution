@@ -1,15 +1,15 @@
 package typings.netlifyIdentityWidget.mod
 
-import typings.netlifyIdentityWidget.AnonApiURL
-import typings.netlifyIdentityWidget.AnonAvatarurl
-import typings.netlifyIdentityWidget.AnonProvider
+import typings.netlifyIdentityWidget.anon.ApiURL
+import typings.netlifyIdentityWidget.anon.Avatarurl
+import typings.netlifyIdentityWidget.anon.Provider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait User extends js.Object {
-  var api: AnonApiURL
-  var app_metadata: AnonProvider
+  var api: ApiURL
+  var app_metadata: Provider
   var aud: String
   var audience: js.UndefOr[js.Any] = js.undefined
   var confirmed_at: String
@@ -20,14 +20,14 @@ trait User extends js.Object {
   var token: js.UndefOr[Token] = js.undefined
   var updated_at: String
   var url: String
-  var user_metadata: AnonAvatarurl
+  var user_metadata: Avatarurl
 }
 
 object User {
   @scala.inline
   def apply(
-    api: AnonApiURL,
-    app_metadata: AnonProvider,
+    api: ApiURL,
+    app_metadata: Provider,
     aud: String,
     confirmed_at: String,
     created_at: String,
@@ -36,7 +36,7 @@ object User {
     role: String,
     updated_at: String,
     url: String,
-    user_metadata: AnonAvatarurl,
+    user_metadata: Avatarurl,
     audience: js.Any = null,
     token: Token = null
   ): User = {

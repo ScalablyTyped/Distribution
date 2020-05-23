@@ -1,13 +1,12 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.AnonCount
+import typings.ejWebAll.anon.Count
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.ODataAdaptor")
 @js.native
-class ODataAdaptor () extends UrlAdaptor {
+trait ODataAdaptor extends UrlAdaptor {
   @JSName("options")
   var options_ODataAdaptor: UrlAdaptorOptions = js.native
   def generateDeleteRequest(arr: js.Array[_], e: js.Any): String = js.native
@@ -23,6 +22,6 @@ class ODataAdaptor () extends UrlAdaptor {
   def onSelect(e: js.Any): String = js.native
   def onSortBy(e: js.Any): String = js.native
   def onWhere(filters: js.Array[String]): String = js.native
-  def processResponse(data: js.Any, ds: js.Any, query: Query, xhr: js.Any, request: js.Any, changes: Changes): AnonCount = js.native
+  def processResponse(data: js.Any, ds: js.Any, query: Query, xhr: js.Any, request: js.Any, changes: Changes): Count = js.native
 }
 

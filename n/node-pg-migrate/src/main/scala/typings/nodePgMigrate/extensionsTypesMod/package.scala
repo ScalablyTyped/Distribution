@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object extensionsTypesMod {
-  type CreateExtension = typings.nodePgMigrate.extensionsTypesMod.CreateExtensionFn with typings.nodePgMigrate.AnonReverseCreateExtensionFn
+  type CreateExtension = typings.nodePgMigrate.extensionsTypesMod.CreateExtensionFn with typings.nodePgMigrate.anon.ReverseCreateExtensionFn
   type CreateExtensionFn = js.Function2[
     /* extension */ (typings.nodePgMigrate.generalTypesMod.LiteralUnion[typings.nodePgMigrate.extensionsTypesMod.Extension, java.lang.String]) | (js.Array[
       typings.nodePgMigrate.generalTypesMod.LiteralUnion[typings.nodePgMigrate.extensionsTypesMod.Extension, java.lang.String]

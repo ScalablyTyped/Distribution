@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,17 +36,6 @@ object WRAP_MODES extends js.Object {
   
   @js.native
   sealed trait REPEAT extends WRAP_MODES
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WRAP_MODES with Double] = js.native
-  /* 0 */ @js.native
-  object CLAMP extends TopLevel[CLAMP with Double]
-  
-  /* 2 */ @js.native
-  object MIRRORED_REPEAT extends TopLevel[MIRRORED_REPEAT with Double]
-  
-  /* 1 */ @js.native
-  object REPEAT extends TopLevel[REPEAT with Double]
   
 }
 

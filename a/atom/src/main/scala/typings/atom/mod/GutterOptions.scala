@@ -55,7 +55,7 @@ object GutterOptions {
     labelFn: /* lineData */ LineDataExtended => String = null,
     onMouseDown: /* lineData */ LineData => Unit = null,
     onMouseMove: /* lineData */ LineData => Unit = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     `type`: decorated | `line-number` = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): GutterOptions = {
@@ -64,9 +64,9 @@ object GutterOptions {
     if (labelFn != null) __obj.updateDynamic("labelFn")(js.Any.fromFunction1(labelFn))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GutterOptions]
   }
 }

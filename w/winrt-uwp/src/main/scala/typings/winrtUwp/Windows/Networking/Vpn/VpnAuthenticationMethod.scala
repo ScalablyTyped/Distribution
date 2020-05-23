@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object VpnAuthenticationMethod extends js.Object {
   /** Preshared key */
   @js.native
   sealed trait presharedKey extends VpnAuthenticationMethod
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnAuthenticationMethod with Double] = js.native
-  /* 2 */ @js.native
-  object certificate extends TopLevel[certificate with Double]
-  
-  /* 1 */ @js.native
-  object eap extends TopLevel[eap with Double]
-  
-  /* 0 */ @js.native
-  object mschapv2 extends TopLevel[mschapv2 with Double]
-  
-  /* 3 */ @js.native
-  object presharedKey extends TopLevel[presharedKey with Double]
   
 }
 

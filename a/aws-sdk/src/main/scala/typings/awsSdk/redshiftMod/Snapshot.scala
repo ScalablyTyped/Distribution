@@ -144,28 +144,28 @@ object Snapshot {
   @scala.inline
   def apply(
     AccountsWithRestoreAccess: AccountsWithRestoreAccessList = null,
-    ActualIncrementalBackupSizeInMegaBytes: Int | scala.Double = null,
+    ActualIncrementalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined,
     AvailabilityZone: String = null,
-    BackupProgressInMegaBytes: Int | scala.Double = null,
+    BackupProgressInMegaBytes: js.UndefOr[Double] = js.undefined,
     ClusterCreateTime: TStamp = null,
     ClusterIdentifier: String = null,
     ClusterVersion: String = null,
-    CurrentBackupRateInMegaBytesPerSecond: Int | scala.Double = null,
+    CurrentBackupRateInMegaBytesPerSecond: js.UndefOr[Double] = js.undefined,
     DBName: String = null,
-    ElapsedTimeInSeconds: Int | scala.Double = null,
-    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
-    EncryptedWithHSM: js.UndefOr[scala.Boolean] = js.undefined,
-    EnhancedVpcRouting: js.UndefOr[scala.Boolean] = js.undefined,
-    EstimatedSecondsToCompletion: Int | scala.Double = null,
+    ElapsedTimeInSeconds: js.UndefOr[Long] = js.undefined,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
+    EncryptedWithHSM: js.UndefOr[Boolean] = js.undefined,
+    EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined,
+    EstimatedSecondsToCompletion: js.UndefOr[Long] = js.undefined,
     KmsKeyId: String = null,
     MaintenanceTrackName: String = null,
-    ManualSnapshotRemainingDays: Int | scala.Double = null,
-    ManualSnapshotRetentionPeriod: Int | scala.Double = null,
+    ManualSnapshotRemainingDays: js.UndefOr[IntegerOptional] = js.undefined,
+    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
     MasterUsername: String = null,
     NodeType: String = null,
-    NumberOfNodes: Int | scala.Double = null,
+    NumberOfNodes: js.UndefOr[Integer] = js.undefined,
     OwnerAccount: String = null,
-    Port: Int | scala.Double = null,
+    Port: js.UndefOr[Integer] = js.undefined,
     RestorableNodeTypes: RestorableNodeTypeList = null,
     SnapshotCreateTime: TStamp = null,
     SnapshotIdentifier: String = null,
@@ -174,33 +174,33 @@ object Snapshot {
     SourceRegion: String = null,
     Status: String = null,
     Tags: TagList = null,
-    TotalBackupSizeInMegaBytes: Int | scala.Double = null,
+    TotalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined,
     VpcId: String = null
   ): Snapshot = {
     val __obj = js.Dynamic.literal()
     if (AccountsWithRestoreAccess != null) __obj.updateDynamic("AccountsWithRestoreAccess")(AccountsWithRestoreAccess.asInstanceOf[js.Any])
-    if (ActualIncrementalBackupSizeInMegaBytes != null) __obj.updateDynamic("ActualIncrementalBackupSizeInMegaBytes")(ActualIncrementalBackupSizeInMegaBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ActualIncrementalBackupSizeInMegaBytes)) __obj.updateDynamic("ActualIncrementalBackupSizeInMegaBytes")(ActualIncrementalBackupSizeInMegaBytes.get.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (BackupProgressInMegaBytes != null) __obj.updateDynamic("BackupProgressInMegaBytes")(BackupProgressInMegaBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupProgressInMegaBytes)) __obj.updateDynamic("BackupProgressInMegaBytes")(BackupProgressInMegaBytes.get.asInstanceOf[js.Any])
     if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime.asInstanceOf[js.Any])
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
     if (ClusterVersion != null) __obj.updateDynamic("ClusterVersion")(ClusterVersion.asInstanceOf[js.Any])
-    if (CurrentBackupRateInMegaBytesPerSecond != null) __obj.updateDynamic("CurrentBackupRateInMegaBytesPerSecond")(CurrentBackupRateInMegaBytesPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentBackupRateInMegaBytesPerSecond)) __obj.updateDynamic("CurrentBackupRateInMegaBytesPerSecond")(CurrentBackupRateInMegaBytesPerSecond.get.asInstanceOf[js.Any])
     if (DBName != null) __obj.updateDynamic("DBName")(DBName.asInstanceOf[js.Any])
-    if (ElapsedTimeInSeconds != null) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
-    if (!js.isUndefined(EncryptedWithHSM)) __obj.updateDynamic("EncryptedWithHSM")(EncryptedWithHSM.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnhancedVpcRouting)) __obj.updateDynamic("EnhancedVpcRouting")(EnhancedVpcRouting.asInstanceOf[js.Any])
-    if (EstimatedSecondsToCompletion != null) __obj.updateDynamic("EstimatedSecondsToCompletion")(EstimatedSecondsToCompletion.asInstanceOf[js.Any])
+    if (!js.isUndefined(ElapsedTimeInSeconds)) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EncryptedWithHSM)) __obj.updateDynamic("EncryptedWithHSM")(EncryptedWithHSM.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnhancedVpcRouting)) __obj.updateDynamic("EnhancedVpcRouting")(EnhancedVpcRouting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EstimatedSecondsToCompletion)) __obj.updateDynamic("EstimatedSecondsToCompletion")(EstimatedSecondsToCompletion.get.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName.asInstanceOf[js.Any])
-    if (ManualSnapshotRemainingDays != null) __obj.updateDynamic("ManualSnapshotRemainingDays")(ManualSnapshotRemainingDays.asInstanceOf[js.Any])
-    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManualSnapshotRemainingDays)) __obj.updateDynamic("ManualSnapshotRemainingDays")(ManualSnapshotRemainingDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
     if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
-    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
     if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (RestorableNodeTypes != null) __obj.updateDynamic("RestorableNodeTypes")(RestorableNodeTypes.asInstanceOf[js.Any])
     if (SnapshotCreateTime != null) __obj.updateDynamic("SnapshotCreateTime")(SnapshotCreateTime.asInstanceOf[js.Any])
     if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier.asInstanceOf[js.Any])
@@ -209,7 +209,7 @@ object Snapshot {
     if (SourceRegion != null) __obj.updateDynamic("SourceRegion")(SourceRegion.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TotalBackupSizeInMegaBytes != null) __obj.updateDynamic("TotalBackupSizeInMegaBytes")(TotalBackupSizeInMegaBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalBackupSizeInMegaBytes)) __obj.updateDynamic("TotalBackupSizeInMegaBytes")(TotalBackupSizeInMegaBytes.get.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object EmailQuerySearchFields extends js.Object {
   /** Search by subject field. */
   @js.native
   sealed trait subject extends EmailQuerySearchFields
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailQuerySearchFields with Double] = js.native
-  /* 5 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object preview extends TopLevel[preview with Double]
-  
-  /* 4 */ @js.native
-  object recipients extends TopLevel[recipients with Double]
-  
-  /* 2 */ @js.native
-  object sender extends TopLevel[sender with Double]
-  
-  /* 1 */ @js.native
-  object subject extends TopLevel[subject with Double]
   
 }
 

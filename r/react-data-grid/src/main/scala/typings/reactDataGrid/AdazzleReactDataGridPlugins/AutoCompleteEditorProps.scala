@@ -1,7 +1,7 @@
 package typings.reactDataGrid.AdazzleReactDataGridPlugins
 
 import typings.reactDataGrid.AdazzleReactDataGrid.ExcelColumn
-import typings.reactDataGrid.AnonId
+import typings.reactDataGrid.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait AutoCompleteEditorProps extends js.Object {
   var onCommit: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var options: js.UndefOr[js.Array[AnonId]] = js.undefined
+  var options: js.UndefOr[js.Array[Id]] = js.undefined
   var resultIdentifier: js.UndefOr[String] = js.undefined
   var search: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
@@ -26,12 +26,12 @@ object AutoCompleteEditorProps {
   def apply(
     column: ExcelColumn = null,
     editorDisplayValue: (/* column */ ExcelColumn, /* value */ js.Any) => String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     label: js.Any = null,
     onCommit: () => Unit = null,
     onFocus: () => Unit = null,
     onKeyDown: () => Unit = null,
-    options: js.Array[AnonId] = null,
+    options: js.Array[Id] = null,
     resultIdentifier: String = null,
     search: String = null,
     value: js.Any = null,
@@ -40,7 +40,7 @@ object AutoCompleteEditorProps {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (editorDisplayValue != null) __obj.updateDynamic("editorDisplayValue")(js.Any.fromFunction2(editorDisplayValue))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onCommit != null) __obj.updateDynamic("onCommit")(js.Any.fromFunction0(onCommit))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))

@@ -1801,6 +1801,12 @@ package object mediaconvertMod {
   */
   type MsSmoothManifestEncoding = typings.awsSdk.mediaconvertMod._MsSmoothManifestEncoding | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NO_COPY
+    - typings.awsSdk.awsSdkStrings.COPY_FROM_VIDEO
+    - java.lang.String
+  */
+  type MxfAfdSignaling = typings.awsSdk.mediaconvertMod._MxfAfdSignaling | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.BILATERAL
     - typings.awsSdk.awsSdkStrings.MEAN
     - typings.awsSdk.awsSdkStrings.GAUSSIAN

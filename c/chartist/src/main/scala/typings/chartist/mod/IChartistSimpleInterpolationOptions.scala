@@ -10,10 +10,10 @@ trait IChartistSimpleInterpolationOptions extends IChartistInterpolationOptions 
 
 object IChartistSimpleInterpolationOptions {
   @scala.inline
-  def apply(divisor: Int | Double = null, fillHoles: js.UndefOr[Boolean] = js.undefined): IChartistSimpleInterpolationOptions = {
+  def apply(divisor: js.UndefOr[Double] = js.undefined, fillHoles: js.UndefOr[Boolean] = js.undefined): IChartistSimpleInterpolationOptions = {
     val __obj = js.Dynamic.literal()
-    if (divisor != null) __obj.updateDynamic("divisor")(divisor.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillHoles)) __obj.updateDynamic("fillHoles")(fillHoles.asInstanceOf[js.Any])
+    if (!js.isUndefined(divisor)) __obj.updateDynamic("divisor")(divisor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillHoles)) __obj.updateDynamic("fillHoles")(fillHoles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChartistSimpleInterpolationOptions]
   }
 }

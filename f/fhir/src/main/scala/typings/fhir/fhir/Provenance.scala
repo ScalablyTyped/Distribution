@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Who, What, When for a set of resources
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Provenance extends DomainResource {
   /**
     * Contains extended information for property 'policy'.

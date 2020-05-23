@@ -13,35 +13,35 @@ import scala.scalajs.js.annotation._
 trait CellPropertiesFillLoadOptions extends js.Object {
   /**
     *
-    * Specifies whether to load on the `color` property.
+    * Specifies whether to load the `color` property.
     *
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether to load on the `pattern` property.
+    * Specifies whether to load the `pattern` property.
     *
     * [Api set: ExcelApi 1.9]
     */
   var pattern: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether to load on the `patternColor` property.
+    * Specifies whether to load the `patternColor` property.
     *
     * [Api set: ExcelApi 1.9]
     */
   var patternColor: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether to load on the `patternTintAndShade` property.
+    * Specifies whether to load the `patternTintAndShade` property.
     *
     * [Api set: ExcelApi 1.9]
     */
   var patternTintAndShade: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether to load on the `tintAndShade` property.
+    * Specifies whether to load the `tintAndShade` property.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -58,11 +58,11 @@ object CellPropertiesFillLoadOptions {
     tintAndShade: js.UndefOr[Boolean] = js.undefined
   ): CellPropertiesFillLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(pattern)) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(patternColor)) __obj.updateDynamic("patternColor")(patternColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(patternTintAndShade)) __obj.updateDynamic("patternTintAndShade")(patternTintAndShade.asInstanceOf[js.Any])
-    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pattern)) __obj.updateDynamic("pattern")(pattern.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(patternColor)) __obj.updateDynamic("patternColor")(patternColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(patternTintAndShade)) __obj.updateDynamic("patternTintAndShade")(patternTintAndShade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellPropertiesFillLoadOptions]
   }
 }

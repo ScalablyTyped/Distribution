@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,8 +45,4 @@ trait InputFieldGroup extends Accessor {
     */
   val visible: Boolean = js.native
 }
-
-@JSGlobal("__esri.InputFieldGroup")
-@js.native
-object InputFieldGroup extends TopLevel[InputFieldGroupConstructor]
 

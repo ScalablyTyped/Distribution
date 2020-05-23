@@ -43,7 +43,7 @@ object VoiceConnector {
     CreatedTimestamp: Iso8601Timestamp = null,
     Name: VoiceConnectorName = null,
     OutboundHostName: String = null,
-    RequireEncryption: js.UndefOr[scala.Boolean] = js.undefined,
+    RequireEncryption: js.UndefOr[Boolean] = js.undefined,
     UpdatedTimestamp: Iso8601Timestamp = null,
     VoiceConnectorId: NonEmptyString = null
   ): VoiceConnector = {
@@ -52,7 +52,7 @@ object VoiceConnector {
     if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (OutboundHostName != null) __obj.updateDynamic("OutboundHostName")(OutboundHostName.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireEncryption)) __obj.updateDynamic("RequireEncryption")(RequireEncryption.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequireEncryption)) __obj.updateDynamic("RequireEncryption")(RequireEncryption.get.asInstanceOf[js.Any])
     if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp.asInstanceOf[js.Any])
     if (VoiceConnectorId != null) __obj.updateDynamic("VoiceConnectorId")(VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceConnector]

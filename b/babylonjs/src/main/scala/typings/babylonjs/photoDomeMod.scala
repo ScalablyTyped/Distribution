@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.FaceForward
 import typings.babylonjs.backgroundMaterialMod.BackgroundMaterial
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.observableMod.Observable
@@ -23,11 +24,11 @@ object photoDomeMod extends js.Object {
       * @param options defines an object containing optional or exposed sub element properties
       * @param onError defines a callback called when an error occured while loading the texture
       */
-    def this(name: String, urlOfPhoto: String, options: AnonFaceForward, scene: Scene) = this()
+    def this(name: String, urlOfPhoto: String, options: FaceForward, scene: Scene) = this()
     def this(
       name: String,
       urlOfPhoto: String,
-      options: AnonFaceForward,
+      options: FaceForward,
       scene: Scene,
       onError: Nullable[
             js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[_], Unit]

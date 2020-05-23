@@ -437,6 +437,12 @@ trait System extends EmitterBase[SystemEvents] {
     */
   def resolveUuid(uuid: String): js.Promise[Entity] = js.native
   /**
+    * Signals the RVM to perform a health check and returns the results as json.
+    * @return {Promise.<string[]>}
+    * @tutorial System.runRvmHealthCheck
+    */
+  def runRvmHealthCheck(): js.Promise[js.Array[String]] = js.native
+  /**
     * Set the minimum log level above which logs will be written to the OpenFin log
     * @param { LogLevel } The minimum level (inclusive) above which all calls to log will be written
     * @return {Promise.<void>}

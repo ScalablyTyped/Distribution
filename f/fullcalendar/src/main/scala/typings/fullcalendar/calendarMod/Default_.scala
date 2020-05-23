@@ -1,13 +1,13 @@
 package typings.fullcalendar.calendarMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fullcalendar.AnonExtraClasses
+import typings.fullcalendar.anon.ExtraClasses
 import typings.fullcalendar.inputTypesMod.EventObjectInput
 import typings.fullcalendar.inputTypesMod.EventSourceInput
 import typings.fullcalendar.inputTypesMod.MomentInput
 import typings.fullcalendar.inputTypesMod.OptionsInput
 import typings.fullcalendar.inputTypesMod.RangeInput
-import typings.fullcalendar.jqueryHooksMod._Global_.JQuery
+import typings.fullcalendar.jqueryHooksMod.global.JQuery
 import typings.jquery.JQueryEventObject
 import typings.moment.mod.Duration_
 import typings.moment.mod.Moment
@@ -68,8 +68,8 @@ class Default_ protected () extends js.Object {
   def changeView(viewName: String, dateOrRange: RangeInput): Unit = js.native
   def clearView(): Unit = js.native
   def clientEvents(legacyQuery: js.Any): js.Any = js.native
-  def computeFooterOptions(): AnonExtraClasses = js.native
-  def computeHeaderOptions(): AnonExtraClasses = js.native
+  def computeFooterOptions(): ExtraClasses = js.native
+  def computeHeaderOptions(): ExtraClasses = js.native
   def constructed(): Unit = js.native
   def destroy(): Unit = js.native
   def elementVisible(): Boolean = js.native

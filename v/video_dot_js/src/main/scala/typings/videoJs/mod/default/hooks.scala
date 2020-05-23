@@ -16,7 +16,7 @@ object hooks extends js.Object {
     * @param [fn]
     *        Optionally add a hook (or hooks) to the lifecycle that your are getting.
     *
-    * @return	an array of hooks, or an empty array if there are none.
+    * @return    an array of hooks, or an empty array if there are none.
     */
   def apply(`type`: String): Unit = js.native
   def apply(`type`: String, fn: js.Array[js.Function0[_]]): Unit = js.native

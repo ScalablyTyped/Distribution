@@ -20,7 +20,7 @@ object HighlightProps {
   def apply(className: String = null, innerHTML: js.UndefOr[Boolean] = js.undefined): HighlightProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(innerHTML)) __obj.updateDynamic("innerHTML")(innerHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerHTML)) __obj.updateDynamic("innerHTML")(innerHTML.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightProps]
   }
 }

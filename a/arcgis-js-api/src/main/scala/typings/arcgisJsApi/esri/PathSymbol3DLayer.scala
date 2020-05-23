@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.bevel
 import typings.arcgisJsApi.arcgisJsApiStrings.bottom
@@ -126,8 +125,4 @@ trait PathSymbol3DLayer
     */
   var width: Double = js.native
 }
-
-@JSGlobal("__esri.PathSymbol3DLayer")
-@js.native
-object PathSymbol3DLayer extends TopLevel[PathSymbol3DLayerConstructor]
 

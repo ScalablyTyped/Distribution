@@ -22,7 +22,7 @@ object Styles {
   ): Styles = {
     val __obj = js.Dynamic.literal()
     if ($displayName != null) __obj.updateDynamic("$displayName")($displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined($unique)) __obj.updateDynamic("$unique")($unique.asInstanceOf[js.Any])
+    if (!js.isUndefined($unique)) __obj.updateDynamic("$unique")($unique.get.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Styles]
   }

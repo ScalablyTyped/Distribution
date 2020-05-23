@@ -56,7 +56,7 @@ object HtmlDetailedOptions {
   def apply(
     autoReload: js.UndefOr[Boolean] = js.undefined,
     dir: String = null,
-    refreshTimeout: Int | Double = null,
+    refreshTimeout: js.UndefOr[Double] = js.undefined,
     showFailed: js.UndefOr[Boolean] = js.undefined,
     showSkipped: js.UndefOr[Boolean] = js.undefined,
     showSuccess: js.UndefOr[Boolean] = js.undefined,
@@ -64,14 +64,14 @@ object HtmlDetailedOptions {
     useHostedBootstrap: js.UndefOr[Boolean] = js.undefined
   ): HtmlDetailedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoReload)) __obj.updateDynamic("autoReload")(autoReload.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReload)) __obj.updateDynamic("autoReload")(autoReload.get.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (refreshTimeout != null) __obj.updateDynamic("refreshTimeout")(refreshTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFailed)) __obj.updateDynamic("showFailed")(showFailed.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSkipped)) __obj.updateDynamic("showSkipped")(showSkipped.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSuccess)) __obj.updateDynamic("showSuccess")(showSuccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitResults)) __obj.updateDynamic("splitResults")(splitResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHostedBootstrap)) __obj.updateDynamic("useHostedBootstrap")(useHostedBootstrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshTimeout)) __obj.updateDynamic("refreshTimeout")(refreshTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFailed)) __obj.updateDynamic("showFailed")(showFailed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSkipped)) __obj.updateDynamic("showSkipped")(showSkipped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSuccess)) __obj.updateDynamic("showSuccess")(showSuccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(splitResults)) __obj.updateDynamic("splitResults")(splitResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHostedBootstrap)) __obj.updateDynamic("useHostedBootstrap")(useHostedBootstrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlDetailedOptions]
   }
 }

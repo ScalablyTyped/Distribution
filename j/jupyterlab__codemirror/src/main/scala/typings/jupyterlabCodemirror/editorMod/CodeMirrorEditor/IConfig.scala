@@ -154,11 +154,11 @@ object IConfig {
     fixedGutter: js.UndefOr[Boolean] = js.undefined,
     foldGutter: js.UndefOr[Boolean] = js.undefined,
     fontFamily: String = null,
-    fontSize: Int | Double = null,
+    fontSize: Double = null.asInstanceOf[Double],
     gutters: js.Array[String] = null,
     keyMap: String = null,
-    lineHeight: Int | Double = null,
-    lineSeparator: String = null,
+    lineHeight: Double = null.asInstanceOf[Double],
+    lineSeparator: js.UndefOr[Null | String] = js.undefined,
     lineWiseCopyCut: js.UndefOr[Boolean] = js.undefined,
     mode: String | IMode = null,
     scrollPastEnd: js.UndefOr[Boolean] = js.undefined,
@@ -167,25 +167,22 @@ object IConfig {
     smartIndent: js.UndefOr[Boolean] = js.undefined,
     theme: String = null
   ): IConfig = {
-    val __obj = js.Dynamic.literal(autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], codeFolding = codeFolding.asInstanceOf[js.Any], insertSpaces = insertSpaces.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineWrap = lineWrap.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], selectionPointer = selectionPointer.asInstanceOf[js.Any], styleActiveLine = styleActiveLine.asInstanceOf[js.Any], styleSelectedText = styleSelectedText.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverGutterNextToScrollbar)) __obj.updateDynamic("coverGutterNextToScrollbar")(coverGutterNextToScrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragDrop)) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(electricChars)) __obj.updateDynamic("electricChars")(electricChars.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], codeFolding = codeFolding.asInstanceOf[js.Any], insertSpaces = insertSpaces.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineWrap = lineWrap.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], selectionPointer = selectionPointer.asInstanceOf[js.Any], styleActiveLine = styleActiveLine.asInstanceOf[js.Any], styleSelectedText = styleSelectedText.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverGutterNextToScrollbar)) __obj.updateDynamic("coverGutterNextToScrollbar")(coverGutterNextToScrollbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragDrop)) __obj.updateDynamic("dragDrop")(dragDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(electricChars)) __obj.updateDynamic("electricChars")(electricChars.get.asInstanceOf[js.Any])
     if (extraKeys != null) __obj.updateDynamic("extraKeys")(extraKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedGutter)) __obj.updateDynamic("fixedGutter")(fixedGutter.asInstanceOf[js.Any])
-    if (!js.isUndefined(foldGutter)) __obj.updateDynamic("foldGutter")(foldGutter.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedGutter)) __obj.updateDynamic("fixedGutter")(fixedGutter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(foldGutter)) __obj.updateDynamic("foldGutter")(foldGutter.get.asInstanceOf[js.Any])
     if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
     if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (lineSeparator != null) __obj.updateDynamic("lineSeparator")(lineSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWiseCopyCut)) __obj.updateDynamic("lineWiseCopyCut")(lineWiseCopyCut.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineSeparator)) __obj.updateDynamic("lineSeparator")(lineSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWiseCopyCut)) __obj.updateDynamic("lineWiseCopyCut")(lineWiseCopyCut.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd.get.asInstanceOf[js.Any])
     if (scrollbarStyle != null) __obj.updateDynamic("scrollbarStyle")(scrollbarStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCursorWhenSelecting)) __obj.updateDynamic("showCursorWhenSelecting")(showCursorWhenSelecting.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartIndent)) __obj.updateDynamic("smartIndent")(smartIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCursorWhenSelecting)) __obj.updateDynamic("showCursorWhenSelecting")(showCursorWhenSelecting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartIndent)) __obj.updateDynamic("smartIndent")(smartIndent.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfig]
   }

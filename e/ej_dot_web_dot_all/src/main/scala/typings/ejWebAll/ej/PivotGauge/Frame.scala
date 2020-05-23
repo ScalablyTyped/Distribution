@@ -23,13 +23,13 @@ object Frame {
   @scala.inline
   def apply(
     frameType: String = null,
-    halfCircleFrameEndAngle: Int | Double = null,
-    halfCircleFrameStartAngle: Int | Double = null
+    halfCircleFrameEndAngle: js.UndefOr[Double] = js.undefined,
+    halfCircleFrameStartAngle: js.UndefOr[Double] = js.undefined
   ): Frame = {
     val __obj = js.Dynamic.literal()
     if (frameType != null) __obj.updateDynamic("frameType")(frameType.asInstanceOf[js.Any])
-    if (halfCircleFrameEndAngle != null) __obj.updateDynamic("halfCircleFrameEndAngle")(halfCircleFrameEndAngle.asInstanceOf[js.Any])
-    if (halfCircleFrameStartAngle != null) __obj.updateDynamic("halfCircleFrameStartAngle")(halfCircleFrameStartAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(halfCircleFrameEndAngle)) __obj.updateDynamic("halfCircleFrameEndAngle")(halfCircleFrameEndAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(halfCircleFrameStartAngle)) __obj.updateDynamic("halfCircleFrameStartAngle")(halfCircleFrameStartAngle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
 }

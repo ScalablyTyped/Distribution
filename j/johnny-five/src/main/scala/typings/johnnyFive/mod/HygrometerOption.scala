@@ -11,10 +11,10 @@ trait HygrometerOption extends js.Object {
 
 object HygrometerOption {
   @scala.inline
-  def apply(controller: String = null, freq: Int | Double = null): HygrometerOption = {
+  def apply(controller: String = null, freq: js.UndefOr[Double] = js.undefined): HygrometerOption = {
     val __obj = js.Dynamic.literal()
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
+    if (!js.isUndefined(freq)) __obj.updateDynamic("freq")(freq.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HygrometerOption]
   }
 }

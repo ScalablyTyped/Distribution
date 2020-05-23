@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the network [loadState](Titanium.Media.VideoPlayer.loadState) changes.
-		 */
+  * Fired when the network [loadState](Titanium.Media.VideoPlayer.loadState) changes.
+  */
 trait VideoPlayerLoadstateEvent extends VideoPlayerBaseEvent {
   /**
-  			 * Current value of the [loadState](Titanium.Media.VideoPlayer.loadState) property.
-  			 */
+    * Current value of the [loadState](Titanium.Media.VideoPlayer.loadState) property.
+    */
   var loadState: Double
 }
 

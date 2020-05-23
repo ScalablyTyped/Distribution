@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a specific instance of a product SKU that can be purchased. */
-@JSGlobal("Windows.Services.Store.StoreAvailability")
 @js.native
-abstract class StoreAvailability () extends js.Object {
+trait StoreAvailability extends js.Object {
   /** Gets the end date for the current SKU availability. */
   var endDate: Date = js.native
   /** Gets complete data for the current SKU availability from the Store in JSON format. */

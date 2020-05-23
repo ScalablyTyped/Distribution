@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.PartialIChoiceGroupOption
 import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps
 import typings.react.mod.Component
 import scala.scalajs.js

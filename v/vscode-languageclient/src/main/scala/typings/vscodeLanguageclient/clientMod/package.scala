@@ -38,7 +38,7 @@ package object clientMod {
     /* document */ typings.vscode.mod.TextDocument, 
     /* position */ typings.vscode.mod.Position, 
     /* token */ typings.vscode.mod.CancellationToken, 
-    typings.vscode.mod.ProviderResult[typings.vscode.mod.Range | typings.vscodeLanguageclient.AnonPlaceholder]
+    typings.vscode.mod.ProviderResult[typings.vscode.mod.Range | typings.vscodeLanguageclient.anon.Placeholder]
   ]
   type ProvideCodeActionsSignature = js.ThisFunction4[
     /* this */ scala.Unit, 
@@ -125,7 +125,7 @@ package object clientMod {
     /* this */ scala.Unit, 
     /* document */ typings.vscode.mod.TextDocument, 
     /* position */ typings.vscode.mod.Position, 
-    /* options */ typings.vscodeLanguageclient.AnonIncludeDeclaration, 
+    /* options */ typings.vscodeLanguageclient.anon.IncludeDeclaration, 
     /* token */ typings.vscode.mod.CancellationToken, 
     typings.vscode.mod.ProviderResult[js.Array[typings.vscode.mod.Location]]
   ]

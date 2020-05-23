@@ -1,6 +1,6 @@
 package typings.phoenix.mod
 
-import typings.phoenix.AnonJoins
+import typings.phoenix.anon.Joins
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,11 +24,11 @@ class Presence protected () extends js.Object {
 object Presence extends js.Object {
   def list[T](presences: js.Object): js.Array[T] = js.native
   def list[T](presences: js.Object, chooser: js.Function2[/* key */ String, /* presence */ js.Any, T]): js.Array[T] = js.native
-  def syncDiff(currentState: js.Object, diff: AnonJoins): js.Any = js.native
-  def syncDiff(currentState: js.Object, diff: AnonJoins, onJoin: PresenceOnJoinCallback): js.Any = js.native
+  def syncDiff(currentState: js.Object, diff: Joins): js.Any = js.native
+  def syncDiff(currentState: js.Object, diff: Joins, onJoin: PresenceOnJoinCallback): js.Any = js.native
   def syncDiff(
     currentState: js.Object,
-    diff: AnonJoins,
+    diff: Joins,
     onJoin: PresenceOnJoinCallback,
     onLeave: PresenceOnLeaveCallback
   ): js.Any = js.native

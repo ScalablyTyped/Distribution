@@ -20,13 +20,13 @@ object QueryAggregation {
   @scala.inline
   def apply(
     aggregations: js.Array[QueryAggregation] = null,
-    matching_results: Int | Double = null,
+    matching_results: js.UndefOr[Double] = js.undefined,
     results: js.Array[AggregationResult] = null,
     `type`: String = null
   ): QueryAggregation = {
     val __obj = js.Dynamic.literal()
     if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations.asInstanceOf[js.Any])
-    if (matching_results != null) __obj.updateDynamic("matching_results")(matching_results.asInstanceOf[js.Any])
+    if (!js.isUndefined(matching_results)) __obj.updateDynamic("matching_results")(matching_results.get.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryAggregation]

@@ -148,7 +148,7 @@ object UserPoolType {
     EmailConfigurationFailure: StringType = null,
     EmailVerificationMessage: EmailVerificationMessageType = null,
     EmailVerificationSubject: EmailVerificationSubjectType = null,
-    EstimatedNumberOfUsers: Int | Double = null,
+    EstimatedNumberOfUsers: js.UndefOr[IntegerType] = js.undefined,
     Id: UserPoolIdType = null,
     LambdaConfig: LambdaConfigType = null,
     LastModifiedDate: DateType = null,
@@ -181,7 +181,7 @@ object UserPoolType {
     if (EmailConfigurationFailure != null) __obj.updateDynamic("EmailConfigurationFailure")(EmailConfigurationFailure.asInstanceOf[js.Any])
     if (EmailVerificationMessage != null) __obj.updateDynamic("EmailVerificationMessage")(EmailVerificationMessage.asInstanceOf[js.Any])
     if (EmailVerificationSubject != null) __obj.updateDynamic("EmailVerificationSubject")(EmailVerificationSubject.asInstanceOf[js.Any])
-    if (EstimatedNumberOfUsers != null) __obj.updateDynamic("EstimatedNumberOfUsers")(EstimatedNumberOfUsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(EstimatedNumberOfUsers)) __obj.updateDynamic("EstimatedNumberOfUsers")(EstimatedNumberOfUsers.get.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (LambdaConfig != null) __obj.updateDynamic("LambdaConfig")(LambdaConfig.asInstanceOf[js.Any])
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])

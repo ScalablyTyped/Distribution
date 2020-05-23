@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/view", "View")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/view", "View")
 @js.native
 class View protected () extends js.Object {
   def this(query: Query, /** Documents included in the remote target */
@@ -82,7 +82,7 @@ class View protected () extends js.Object {
     * The set of remote documents that the server has told us belongs to the target associated with
     * this view.
     */
-  def syncedDocuments(): DocumentKeySet_ = js.native
+  def syncedDocuments: DocumentKeySet_ = js.native
   /**
     * Update the in-memory state of the current view with the state read from
     * persistence.

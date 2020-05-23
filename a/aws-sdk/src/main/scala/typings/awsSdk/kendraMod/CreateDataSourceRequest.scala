@@ -31,6 +31,10 @@ trait CreateDataSourceRequest extends js.Object {
     */
   var Schedule: js.UndefOr[ScanSchedule] = js.native
   /**
+    * A list of key-value pairs that identify the data source. You can use the tags to identify and organize your resources and to control access to resources.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
+  /**
     * The type of repository that contains the data source.
     */
   var Type: DataSourceType = js.native
@@ -45,11 +49,13 @@ object CreateDataSourceRequest {
     RoleArn: RoleArn,
     Type: DataSourceType,
     Description: Description = null,
-    Schedule: ScanSchedule = null
+    Schedule: ScanSchedule = null,
+    Tags: TagList = null
   ): CreateDataSourceRequest = {
     val __obj = js.Dynamic.literal(Configuration = Configuration.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSourceRequest]
   }
 }

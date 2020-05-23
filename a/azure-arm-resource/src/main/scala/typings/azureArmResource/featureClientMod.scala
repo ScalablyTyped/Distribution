@@ -1,5 +1,6 @@
 package typings.azureArmResource
 
+import typings.azureArmResource.anon.CustomHeaders
 import typings.azureArmResource.modelsMod.OperationListResult
 import typings.azureArmResource.operationsMod.Features
 import typings.msRest.mod.HttpOperationResponse
@@ -92,8 +93,8 @@ object featureClientMod extends js.Object {
       */
     def listOperations(): js.Promise[OperationListResult] = js.native
     def listOperations(callback: ServiceCallback[OperationListResult]): Unit = js.native
-    def listOperations(options: AnonCustomHeaders): js.Promise[OperationListResult] = js.native
-    def listOperations(options: AnonCustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    def listOperations(options: CustomHeaders): js.Promise[OperationListResult] = js.native
+    def listOperations(options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
     /**
       * Lists all of the available Microsoft.Features REST API operations.
       *
@@ -129,8 +130,8 @@ object featureClientMod extends js.Object {
       */
     def listOperationsNext(nextPageLink: String): js.Promise[OperationListResult] = js.native
     def listOperationsNext(nextPageLink: String, callback: ServiceCallback[OperationListResult]): Unit = js.native
-    def listOperationsNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[OperationListResult] = js.native
-    def listOperationsNext(nextPageLink: String, options: AnonCustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    def listOperationsNext(nextPageLink: String, options: CustomHeaders): js.Promise[OperationListResult] = js.native
+    def listOperationsNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
     /**
       * Lists all of the available Microsoft.Features REST API operations.
       *
@@ -149,7 +150,7 @@ object featureClientMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listOperationsNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
-    def listOperationsNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    def listOperationsNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     /**
       * Lists all of the available Microsoft.Features REST API operations.
       *
@@ -165,7 +166,7 @@ object featureClientMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listOperationsWithHttpOperationResponse(): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
-    def listOperationsWithHttpOperationResponse(options: AnonCustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    def listOperationsWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
   }
   
   @js.native

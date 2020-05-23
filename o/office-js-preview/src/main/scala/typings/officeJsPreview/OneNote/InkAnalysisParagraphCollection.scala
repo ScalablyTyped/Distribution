@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.InkAnalysisParagraphCollection")
 @js.native
-class InkAnalysisParagraphCollection () extends ClientObject {
+trait InkAnalysisParagraphCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_InkAnalysisParagraphCollection: RequestContext = js.native

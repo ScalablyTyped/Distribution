@@ -52,7 +52,7 @@ object AuthorizerDescription {
     authorizerName: AuthorizerName = null,
     creationDate: DateType = null,
     lastModifiedDate: DateType = null,
-    signingDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    signingDisabled: js.UndefOr[BooleanKey] = js.undefined,
     status: AuthorizerStatus = null,
     tokenKeyName: TokenKeyName = null,
     tokenSigningPublicKeys: PublicKeyMap = null
@@ -63,7 +63,7 @@ object AuthorizerDescription {
     if (authorizerName != null) __obj.updateDynamic("authorizerName")(authorizerName.asInstanceOf[js.Any])
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(signingDisabled)) __obj.updateDynamic("signingDisabled")(signingDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(signingDisabled)) __obj.updateDynamic("signingDisabled")(signingDisabled.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (tokenKeyName != null) __obj.updateDynamic("tokenKeyName")(tokenKeyName.asInstanceOf[js.Any])
     if (tokenSigningPublicKeys != null) __obj.updateDynamic("tokenSigningPublicKeys")(tokenSigningPublicKeys.asInstanceOf[js.Any])

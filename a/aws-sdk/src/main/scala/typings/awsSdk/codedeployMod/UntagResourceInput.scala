@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UntagResourceInput extends js.Object {
   /**
-    *  The ARN that specifies from which resource to disassociate the tags with the keys in the TagKeys input paramter. 
+    *  The Amazon Resource Name (ARN) that specifies from which resource to disassociate the tags with the keys in the TagKeys input parameter. 
     */
   var ResourceArn: Arn = js.native
   /**

@@ -16,9 +16,9 @@ trait CoverageBucket extends js.Object {
 
 object CoverageBucket {
   @scala.inline
-  def apply(meanCoverage: Int | Double = null, range: Range = null): CoverageBucket = {
+  def apply(meanCoverage: js.UndefOr[Double] = js.undefined, range: Range = null): CoverageBucket = {
     val __obj = js.Dynamic.literal()
-    if (meanCoverage != null) __obj.updateDynamic("meanCoverage")(meanCoverage.asInstanceOf[js.Any])
+    if (!js.isUndefined(meanCoverage)) __obj.updateDynamic("meanCoverage")(meanCoverage.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverageBucket]
   }

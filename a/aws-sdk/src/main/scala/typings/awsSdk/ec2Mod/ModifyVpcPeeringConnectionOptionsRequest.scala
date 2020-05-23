@@ -29,12 +29,12 @@ object ModifyVpcPeeringConnectionOptionsRequest {
   def apply(
     VpcPeeringConnectionId: VpcPeeringConnectionId,
     AccepterPeeringConnectionOptions: PeeringConnectionOptionsRequest = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     RequesterPeeringConnectionOptions: PeeringConnectionOptionsRequest = null
   ): ModifyVpcPeeringConnectionOptionsRequest = {
     val __obj = js.Dynamic.literal(VpcPeeringConnectionId = VpcPeeringConnectionId.asInstanceOf[js.Any])
     if (AccepterPeeringConnectionOptions != null) __obj.updateDynamic("AccepterPeeringConnectionOptions")(AccepterPeeringConnectionOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (RequesterPeeringConnectionOptions != null) __obj.updateDynamic("RequesterPeeringConnectionOptions")(RequesterPeeringConnectionOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcPeeringConnectionOptionsRequest]
   }

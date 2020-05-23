@@ -19,7 +19,7 @@ object ToolbarComponent {
   ): ToolbarComponent = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbarSeparatorAfter)) __obj.updateDynamic("toolbarSeparatorAfter")(toolbarSeparatorAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbarSeparatorAfter)) __obj.updateDynamic("toolbarSeparatorAfter")(toolbarSeparatorAfter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarComponent]
   }
 }

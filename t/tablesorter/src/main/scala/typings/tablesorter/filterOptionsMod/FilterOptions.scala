@@ -1,14 +1,14 @@
 package typings.tablesorter.filterOptionsMod
 
-import typings.jquery.JQuery_.Selector
+import typings.jquery.JQuery.Selector
 import typings.tablesorter.filterControlFactoryMod.FilterControlFactory
 import typings.tablesorter.filterFunctionCollectionMod.FilterFunctionCollection
 import typings.tablesorter.filterFunctionMod.FilterFunction
 import typings.tablesorter.filterPlaceholdersMod.FilterPlaceholders
 import typings.tablesorter.mappedSettingsMod.MappedSettings
 import typings.tablesorter.matchTypeSettingsMod.MatchTypeSettings
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.selectSourcesMod.SelectSources
 import typings.tablesorter.tablesorterConfigurationStoreMod.TablesorterConfigurationStore
 import scala.scalajs.js
@@ -176,9 +176,9 @@ object FilterOptions {
     filter_reset: Selector | JQuery[HTMLElement] = null,
     filter_resetOnEsc: js.UndefOr[Boolean] = js.undefined,
     filter_saveFilters: js.UndefOr[Boolean] = js.undefined,
-    filter_searchDelay: Int | Double = null,
+    filter_searchDelay: js.UndefOr[Double] = js.undefined,
     filter_searchFiltered: js.UndefOr[Boolean] = js.undefined,
-    filter_selectSource: SelectSources[TElement] | MappedSettings[SelectSources[TElement]] = null,
+    filter_selectSource: js.UndefOr[Null | SelectSources[TElement] | MappedSettings[SelectSources[TElement]]] = js.undefined,
     filter_selectSourceSeparator: String = null,
     filter_serversideFiltering: js.UndefOr[Boolean] = js.undefined,
     filter_startsWith: js.UndefOr[Boolean] = js.undefined,
@@ -186,11 +186,11 @@ object FilterOptions {
   ): FilterOptions[TElement] = {
     val __obj = js.Dynamic.literal()
     if (filter_cellFilter != null) __obj.updateDynamic("filter_cellFilter")(filter_cellFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_childByColumn)) __obj.updateDynamic("filter_childByColumn")(filter_childByColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_childRows)) __obj.updateDynamic("filter_childRows")(filter_childRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_childWithSibs)) __obj.updateDynamic("filter_childWithSibs")(filter_childWithSibs.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_columnAnyMatch)) __obj.updateDynamic("filter_columnAnyMatch")(filter_columnAnyMatch.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_columnFilters)) __obj.updateDynamic("filter_columnFilters")(filter_columnFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_childByColumn)) __obj.updateDynamic("filter_childByColumn")(filter_childByColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_childRows)) __obj.updateDynamic("filter_childRows")(filter_childRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_childWithSibs)) __obj.updateDynamic("filter_childWithSibs")(filter_childWithSibs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_columnAnyMatch)) __obj.updateDynamic("filter_columnAnyMatch")(filter_columnAnyMatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_columnFilters)) __obj.updateDynamic("filter_columnFilters")(filter_columnFilters.get.asInstanceOf[js.Any])
     if (filter_cssFilter != null) __obj.updateDynamic("filter_cssFilter")(filter_cssFilter.asInstanceOf[js.Any])
     if (filter_defaultAttrib != null) __obj.updateDynamic("filter_defaultAttrib")(filter_defaultAttrib.asInstanceOf[js.Any])
     if (filter_defaultFilter != null) __obj.updateDynamic("filter_defaultFilter")(filter_defaultFilter.asInstanceOf[js.Any])
@@ -200,23 +200,23 @@ object FilterOptions {
     if (filter_filteredRow != null) __obj.updateDynamic("filter_filteredRow")(filter_filteredRow.asInstanceOf[js.Any])
     if (filter_formatter != null) __obj.updateDynamic("filter_formatter")(filter_formatter.asInstanceOf[js.Any])
     if (filter_functions != null) __obj.updateDynamic("filter_functions")(filter_functions.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_hideEmpty)) __obj.updateDynamic("filter_hideEmpty")(filter_hideEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_hideEmpty)) __obj.updateDynamic("filter_hideEmpty")(filter_hideEmpty.get.asInstanceOf[js.Any])
     if (filter_hideFilters != null) __obj.updateDynamic("filter_hideFilters")(filter_hideFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_ignoreCase)) __obj.updateDynamic("filter_ignoreCase")(filter_ignoreCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_ignoreCase)) __obj.updateDynamic("filter_ignoreCase")(filter_ignoreCase.get.asInstanceOf[js.Any])
     if (filter_liveSearch != null) __obj.updateDynamic("filter_liveSearch")(filter_liveSearch.asInstanceOf[js.Any])
     if (filter_matchType != null) __obj.updateDynamic("filter_matchType")(filter_matchType.asInstanceOf[js.Any])
     if (filter_onlyAvail != null) __obj.updateDynamic("filter_onlyAvail")(filter_onlyAvail.asInstanceOf[js.Any])
     if (filter_placeholder != null) __obj.updateDynamic("filter_placeholder")(filter_placeholder.asInstanceOf[js.Any])
     if (filter_reset != null) __obj.updateDynamic("filter_reset")(filter_reset.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_resetOnEsc)) __obj.updateDynamic("filter_resetOnEsc")(filter_resetOnEsc.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_saveFilters)) __obj.updateDynamic("filter_saveFilters")(filter_saveFilters.asInstanceOf[js.Any])
-    if (filter_searchDelay != null) __obj.updateDynamic("filter_searchDelay")(filter_searchDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_searchFiltered)) __obj.updateDynamic("filter_searchFiltered")(filter_searchFiltered.asInstanceOf[js.Any])
-    if (filter_selectSource != null) __obj.updateDynamic("filter_selectSource")(filter_selectSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_resetOnEsc)) __obj.updateDynamic("filter_resetOnEsc")(filter_resetOnEsc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_saveFilters)) __obj.updateDynamic("filter_saveFilters")(filter_saveFilters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_searchDelay)) __obj.updateDynamic("filter_searchDelay")(filter_searchDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_searchFiltered)) __obj.updateDynamic("filter_searchFiltered")(filter_searchFiltered.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_selectSource)) __obj.updateDynamic("filter_selectSource")(filter_selectSource.asInstanceOf[js.Any])
     if (filter_selectSourceSeparator != null) __obj.updateDynamic("filter_selectSourceSeparator")(filter_selectSourceSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_serversideFiltering)) __obj.updateDynamic("filter_serversideFiltering")(filter_serversideFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_startsWith)) __obj.updateDynamic("filter_startsWith")(filter_startsWith.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_useParsedData)) __obj.updateDynamic("filter_useParsedData")(filter_useParsedData.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_serversideFiltering)) __obj.updateDynamic("filter_serversideFiltering")(filter_serversideFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_startsWith)) __obj.updateDynamic("filter_startsWith")(filter_startsWith.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_useParsedData)) __obj.updateDynamic("filter_useParsedData")(filter_useParsedData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions[TElement]]
   }
 }

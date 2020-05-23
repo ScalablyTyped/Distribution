@@ -16,12 +16,10 @@ trait WriteFlags extends js.Object
 
 object WriteFlags {
   @scala.inline
-  def BufferHint: `1` = this.cast(1)
+  def BufferHint: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def NoCompress: `2` = this.cast(2)
+  def NoCompress: `2` = 2.asInstanceOf[`2`]
   @scala.inline
-  def WriteThrough: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def WriteThrough: `4` = 4.asInstanceOf[`4`]
 }
 

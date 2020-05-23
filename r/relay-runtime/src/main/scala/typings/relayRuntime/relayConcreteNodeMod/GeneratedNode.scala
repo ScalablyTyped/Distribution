@@ -1,7 +1,7 @@
 package typings.relayRuntime.relayConcreteNodeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.relayRuntime.AnonConnection
+import typings.relayRuntime.anon.Connection
 import typings.relayRuntime.normalizationNodeMod.NormalizationOperation
 import typings.relayRuntime.normalizationNodeMod.NormalizationSelection
 import typings.relayRuntime.readerNodeMod.ReaderArgumentDefinition
@@ -38,11 +38,11 @@ object GeneratedNode {
     name: String,
     selections: js.Array[ReaderSelection],
     `type`: String,
-    metadata: AnonConnection = null
+    metadata: js.UndefOr[Null | Connection] = js.undefined
   ): GeneratedNode = {
     val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedNode]
   }
   @scala.inline
@@ -55,10 +55,10 @@ object GeneratedNode {
     kind: String,
     name: String,
     selections: js.Array[NormalizationSelection],
-    metadata: StringDictionary[js.Any] = null
+    metadata: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined
   ): GeneratedNode = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedNode]
   }
 }

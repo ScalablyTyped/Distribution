@@ -50,14 +50,14 @@ object BarChartOptions {
     bar: GroupWidth = null,
     chartArea: ChartArea = null,
     colors: js.Array[String] = null,
-    dataOpacity: Int | Double = null,
+    dataOpacity: js.UndefOr[Double] = js.undefined,
     enableInteractivity: js.UndefOr[Boolean] = js.undefined,
     focusTarget: String = null,
     fontName: String = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     hAxes: js.Any = null,
     hAxis: ChartAxis = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     isStacked: Boolean | percent | relative | absolute = null,
     legend: ChartLegend | none = null,
     reverseCategories: js.UndefOr[Boolean] = js.undefined,
@@ -69,7 +69,7 @@ object BarChartOptions {
     tooltip: ChartTooltip = null,
     vAxes: js.Any = null,
     vAxis: ChartAxis = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): BarChartOptions = {
     val __obj = js.Dynamic.literal()
     if (aggregationTarget != null) __obj.updateDynamic("aggregationTarget")(aggregationTarget.asInstanceOf[js.Any])
@@ -80,17 +80,17 @@ object BarChartOptions {
     if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (dataOpacity != null) __obj.updateDynamic("dataOpacity")(dataOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataOpacity)) __obj.updateDynamic("dataOpacity")(dataOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.get.asInstanceOf[js.Any])
     if (focusTarget != null) __obj.updateDynamic("focusTarget")(focusTarget.asInstanceOf[js.Any])
     if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (hAxes != null) __obj.updateDynamic("hAxes")(hAxes.asInstanceOf[js.Any])
     if (hAxis != null) __obj.updateDynamic("hAxis")(hAxis.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (isStacked != null) __obj.updateDynamic("isStacked")(isStacked.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseCategories)) __obj.updateDynamic("reverseCategories")(reverseCategories.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseCategories)) __obj.updateDynamic("reverseCategories")(reverseCategories.get.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
@@ -99,7 +99,7 @@ object BarChartOptions {
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (vAxes != null) __obj.updateDynamic("vAxes")(vAxes.asInstanceOf[js.Any])
     if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarChartOptions]
   }
 }

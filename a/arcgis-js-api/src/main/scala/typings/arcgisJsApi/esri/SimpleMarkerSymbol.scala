@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-marker`
 import typings.arcgisJsApi.arcgisJsApiStrings.circle
 import typings.arcgisJsApi.arcgisJsApiStrings.cross
@@ -13,14 +12,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.Symbol2D3D because Already inherited
 - typings.arcgisJsApi.esri.symbols.Symbol2D3D because Already inherited */ @js.native
 trait SimpleMarkerSymbol
-  extends MarkerSymbol
+  extends Symbol2D
+     with MarkerSymbol
      with typings.arcgisJsApi.esri.symbols.MarkerSymbol
      with typings.arcgisJsApi.esri.symbols.Symbol2D
-     with Symbol2D
      with symbolsMarkerSymbol {
   /**
     * The outline of the marker symbol. The `color` property of this object directly modifies the overall color of marker symbols defined with the `cross` or `x` [style](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style).
@@ -69,8 +68,4 @@ trait SimpleMarkerSymbol
   @JSName("type")
   val type_SimpleMarkerSymbol: `simple-marker` = js.native
 }
-
-@JSGlobal("__esri.SimpleMarkerSymbol")
-@js.native
-object SimpleMarkerSymbol extends TopLevel[SimpleMarkerSymbolConstructor]
 

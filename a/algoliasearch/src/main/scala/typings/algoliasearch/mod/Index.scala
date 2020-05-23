@@ -1,7 +1,7 @@
 package typings.algoliasearch.mod
 
-import typings.algoliasearch.AnonForwardToReplicas
-import typings.algoliasearch.AnonResults
+import typings.algoliasearch.anon.ForwardToReplicas
+import typings.algoliasearch.anon.Results
 import typings.algoliasearch.mod.SearchForFacetValues.Parameters
 import typings.std.Error
 import scala.scalajs.js
@@ -228,11 +228,11 @@ trait Index extends js.Object {
   /**
     * Gets a list of objects
     */
-  def getObjects(objectIDs: js.Array[String]): js.Promise[AnonResults] = js.native
+  def getObjects(objectIDs: js.Array[String]): js.Promise[Results] = js.native
   /**
     * Gets a list of objects
     */
-  def getObjects(objectIDs: js.Array[String], cb: js.Function2[/* err */ Error, /* res */ AnonResults, Unit]): Unit = js.native
+  def getObjects(objectIDs: js.Array[String], cb: js.Function2[/* err */ Error, /* res */ Results, Unit]): Unit = js.native
   /**
     * Get a specific query rule
     */
@@ -372,13 +372,13 @@ trait Index extends js.Object {
     * Set an index settings
     */
   def setSettings(settings: IndexSettings, cb: js.Function2[/* err */ Error, /* res */ Task, Unit]): Unit = js.native
-  def setSettings(settings: IndexSettings, extra: AnonForwardToReplicas): js.Promise[Task] = js.native
+  def setSettings(settings: IndexSettings, extra: ForwardToReplicas): js.Promise[Task] = js.native
   /**
     * Set an index settings
     */
   def setSettings(
     settings: IndexSettings,
-    extra: AnonForwardToReplicas,
+    extra: ForwardToReplicas,
     cb: js.Function2[/* err */ Error, /* res */ Task, Unit]
   ): Unit = js.native
   /**

@@ -1,9 +1,9 @@
 package typings.openpgp.mod
 
-import typings.openpgp.DecryptOptionsformatbinar
-import typings.openpgp.DecryptOptionsformatutf8
-import typings.openpgp.DecryptResultdataUint8Arr
-import typings.openpgp.DecryptResultdatastringRe
+import typings.openpgp.anon.DecryptOptionsformatbinar
+import typings.openpgp.anon.DecryptOptionsformatutf8
+import typings.openpgp.anon.DecryptResultdataUint8Arr
+import typings.openpgp.anon.DecryptResultdatastringRe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

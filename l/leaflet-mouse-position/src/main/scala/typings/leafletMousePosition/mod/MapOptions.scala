@@ -12,7 +12,7 @@ object MapOptions {
   @scala.inline
   def apply(positionControl: js.UndefOr[Boolean] = js.undefined): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(positionControl)) __obj.updateDynamic("positionControl")(positionControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionControl)) __obj.updateDynamic("positionControl")(positionControl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
 }

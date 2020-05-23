@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Services
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,41 +60,6 @@ object Maps extends js.Object {
       /** A right U-turn marker. */
       @js.native
       sealed trait uturnRight extends GuidanceLaneMarkers
-      
-      @JSBracketAccess
-      def apply(value: Double): js.UndefOr[GuidanceLaneMarkers with Double] = js.native
-      /* 6 */ @js.native
-      object hardLeft extends TopLevel[hardLeft with Double]
-      
-      /* 3 */ @js.native
-      object hardRight extends TopLevel[hardRight with Double]
-      
-      /* 7 */ @js.native
-      object left extends TopLevel[left with Double]
-      
-      /* 8 */ @js.native
-      object lightLeft extends TopLevel[lightLeft with Double]
-      
-      /* 1 */ @js.native
-      object lightRight extends TopLevel[lightRight with Double]
-      
-      /* 0 */ @js.native
-      object none extends TopLevel[none with Double]
-      
-      /* 2 */ @js.native
-      object right extends TopLevel[right with Double]
-      
-      /* 4 */ @js.native
-      object straight extends TopLevel[straight with Double]
-      
-      /* 10 */ @js.native
-      object unknown extends TopLevel[unknown with Double]
-      
-      /* 5 */ @js.native
-      object uturnLeft extends TopLevel[uturnLeft with Double]
-      
-      /* 9 */ @js.native
-      object uturnRight extends TopLevel[uturnRight with Double]
       
     }
     

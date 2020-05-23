@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SiteSettings {
-  type Param = (typings.semanticUiSite.PickImplmodules | typings.semanticUiSite.PickImplsiteNamespace | typings.semanticUiSite.PickImplnamespaceStub | typings.semanticUiSite.PickImplnamespace | typings.semanticUiSite.PickImplname | typings.semanticUiSite.PickImplsilent | typings.semanticUiSite.PickImpldebug | typings.semanticUiSite.PickImplperformance | typings.semanticUiSite.PickImplverbose) with typings.semanticUiSite.PartialPickImplkeyofImpl
+  type Param = (typings.semanticUiSite.anon.PickImplmodules | typings.semanticUiSite.anon.PickImplsiteNamespace | typings.semanticUiSite.anon.PickImplnamespaceStub | typings.semanticUiSite.anon.PickImplnamespace | typings.semanticUiSite.anon.PickImplname | typings.semanticUiSite.anon.PickImplsilent | typings.semanticUiSite.anon.PickImpldebug | typings.semanticUiSite.anon.PickImplperformance | typings.semanticUiSite.anon.PickImplverbose) with typings.semanticUiSite.anon.PartialPickImplkeyofImpl
 }

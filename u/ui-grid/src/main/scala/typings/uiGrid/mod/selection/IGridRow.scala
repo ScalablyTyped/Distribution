@@ -39,8 +39,8 @@ object IGridRow {
     isSelected: js.UndefOr[Boolean] = js.undefined
   ): IGridRow = {
     val __obj = js.Dynamic.literal(setSelected = js.Any.fromFunction1(setSelected))
-    if (!js.isUndefined(enableSelection)) __obj.updateDynamic("enableSelection")(enableSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSelection)) __obj.updateDynamic("enableSelection")(enableSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridRow]
   }
 }

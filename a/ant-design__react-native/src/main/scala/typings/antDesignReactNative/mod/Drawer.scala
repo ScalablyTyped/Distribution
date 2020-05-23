@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonDrawerWidth
+import typings.antDesignReactNative.anon.DrawerWidth
 import typings.antDesignReactNative.drawerMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Drawer () extends default
 @JSImport("@ant-design/react-native", "Drawer")
 @js.native
 object Drawer extends js.Object {
-  var defaultProps: AnonDrawerWidth = js.native
+  var defaultProps: DrawerWidth = js.native
 }
 

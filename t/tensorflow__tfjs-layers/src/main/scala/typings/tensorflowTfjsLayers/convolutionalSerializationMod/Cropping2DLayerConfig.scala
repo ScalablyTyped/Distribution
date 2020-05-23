@@ -18,7 +18,7 @@ object Cropping2DLayerConfig {
   def apply(
     cropping: Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])]),
     batch_input_shape: Shape = null,
-    batch_size: Int | Double = null,
+    batch_size: js.UndefOr[Double] = js.undefined,
     data_format: DataFormatSerialization = null,
     dtype: DataType = null,
     input_dtype: DataType = null,
@@ -28,13 +28,13 @@ object Cropping2DLayerConfig {
   ): Cropping2DLayerConfig = {
     val __obj = js.Dynamic.literal(cropping = cropping.asInstanceOf[js.Any])
     if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape.asInstanceOf[js.Any])
-    if (batch_size != null) __obj.updateDynamic("batch_size")(batch_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(batch_size)) __obj.updateDynamic("batch_size")(batch_size.get.asInstanceOf[js.Any])
     if (data_format != null) __obj.updateDynamic("data_format")(data_format.asInstanceOf[js.Any])
     if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
     if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype.asInstanceOf[js.Any])
     if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cropping2DLayerConfig]
   }
 }

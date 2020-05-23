@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Ribbon")
 @js.native
-class Ribbon_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Ribbon.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Ribbon.Model) = this()
+trait Ribbon_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.Ribbon.Model = js.native
   @JSName("model")
   var model_Ribbon_ : typings.ejWebAll.ej.Ribbon.Model = js.native

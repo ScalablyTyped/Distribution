@@ -39,7 +39,7 @@ object Result {
     language: String,
     newName: String,
     oldName: String,
-    changedPercentage: Int | Double = null,
+    changedPercentage: js.UndefOr[Double] = js.undefined,
     checksumAfter: String = null,
     checksumBefore: String = null,
     deletedFileMode: String = null,
@@ -51,22 +51,22 @@ object Result {
     newFileMode: String = null,
     newMode: String = null,
     oldMode: String = null,
-    unchangedPercentage: Int | Double = null
+    unchangedPercentage: js.UndefOr[Double] = js.undefined
   ): Result = {
     val __obj = js.Dynamic.literal(addedLines = addedLines.asInstanceOf[js.Any], blocks = blocks.asInstanceOf[js.Any], deletedLines = deletedLines.asInstanceOf[js.Any], isCombined = isCombined.asInstanceOf[js.Any], isGitDiff = isGitDiff.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], newName = newName.asInstanceOf[js.Any], oldName = oldName.asInstanceOf[js.Any])
-    if (changedPercentage != null) __obj.updateDynamic("changedPercentage")(changedPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(changedPercentage)) __obj.updateDynamic("changedPercentage")(changedPercentage.get.asInstanceOf[js.Any])
     if (checksumAfter != null) __obj.updateDynamic("checksumAfter")(checksumAfter.asInstanceOf[js.Any])
     if (checksumBefore != null) __obj.updateDynamic("checksumBefore")(checksumBefore.asInstanceOf[js.Any])
     if (deletedFileMode != null) __obj.updateDynamic("deletedFileMode")(deletedFileMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCopy)) __obj.updateDynamic("isCopy")(isCopy.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDeleted)) __obj.updateDynamic("isDeleted")(isDeleted.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNew)) __obj.updateDynamic("isNew")(isNew.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRename)) __obj.updateDynamic("isRename")(isRename.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCopy)) __obj.updateDynamic("isCopy")(isCopy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDeleted)) __obj.updateDynamic("isDeleted")(isDeleted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNew)) __obj.updateDynamic("isNew")(isNew.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRename)) __obj.updateDynamic("isRename")(isRename.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (newFileMode != null) __obj.updateDynamic("newFileMode")(newFileMode.asInstanceOf[js.Any])
     if (newMode != null) __obj.updateDynamic("newMode")(newMode.asInstanceOf[js.Any])
     if (oldMode != null) __obj.updateDynamic("oldMode")(oldMode.asInstanceOf[js.Any])
-    if (unchangedPercentage != null) __obj.updateDynamic("unchangedPercentage")(unchangedPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(unchangedPercentage)) __obj.updateDynamic("unchangedPercentage")(unchangedPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

@@ -60,11 +60,11 @@ object ClientOptions {
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureConsole)) __obj.updateDynamic("captureConsole")(captureConsole.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearContext)) __obj.updateDynamic("clearContext")(clearContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientDisplayNone)) __obj.updateDynamic("clientDisplayNone")(clientDisplayNone.asInstanceOf[js.Any])
-    if (!js.isUndefined(runInParent)) __obj.updateDynamic("runInParent")(runInParent.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIframe)) __obj.updateDynamic("useIframe")(useIframe.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureConsole)) __obj.updateDynamic("captureConsole")(captureConsole.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearContext)) __obj.updateDynamic("clearContext")(clearContext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientDisplayNone)) __obj.updateDynamic("clientDisplayNone")(clientDisplayNone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(runInParent)) __obj.updateDynamic("runInParent")(runInParent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIframe)) __obj.updateDynamic("useIframe")(useIframe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

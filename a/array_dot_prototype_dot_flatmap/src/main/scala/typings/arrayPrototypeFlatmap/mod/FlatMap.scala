@@ -1,7 +1,7 @@
 package typings.arrayPrototypeFlatmap.mod
 
 import typings.arrayPrototypeFlatmap.Array
-import typings.arrayPrototypeFlatmap.FnCall
+import typings.arrayPrototypeFlatmap.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

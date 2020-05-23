@@ -34,12 +34,10 @@ object TypeLookup {
     `null`: Null,
     number: Double,
     regexp: RegExp,
-    string: String,
-    undefined: js.UndefOr[scala.Nothing] = js.undefined
+    string: String
   ): TypeLookup = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], boolean = boolean.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], filelist = filelist.asInstanceOf[js.Any], function = js.Any.fromFunction1(function), number = number.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
     __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
-    if (!js.isUndefined(undefined)) __obj.updateDynamic("undefined")(undefined.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeLookup]
   }
 }

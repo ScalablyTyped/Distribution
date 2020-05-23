@@ -11,10 +11,13 @@ trait NodeHttpOptions extends HttpOptions {
 
 object NodeHttpOptions {
   @scala.inline
-  def apply(connectionTimeout: Int | Double = null, socketTimeout: Int | Double = null): NodeHttpOptions = {
+  def apply(
+    connectionTimeout: js.UndefOr[Double] = js.undefined,
+    socketTimeout: js.UndefOr[Double] = js.undefined
+  ): NodeHttpOptions = {
     val __obj = js.Dynamic.literal()
-    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
-    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeHttpOptions]
   }
 }

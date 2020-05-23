@@ -30,12 +30,12 @@ object UpdateDomainConfigurationRequest {
     domainConfigurationName: ReservedDomainConfigurationName,
     authorizerConfig: AuthorizerConfig = null,
     domainConfigurationStatus: DomainConfigurationStatus = null,
-    removeAuthorizerConfig: js.UndefOr[scala.Boolean] = js.undefined
+    removeAuthorizerConfig: js.UndefOr[RemoveAuthorizerConfig] = js.undefined
   ): UpdateDomainConfigurationRequest = {
     val __obj = js.Dynamic.literal(domainConfigurationName = domainConfigurationName.asInstanceOf[js.Any])
     if (authorizerConfig != null) __obj.updateDynamic("authorizerConfig")(authorizerConfig.asInstanceOf[js.Any])
     if (domainConfigurationStatus != null) __obj.updateDynamic("domainConfigurationStatus")(domainConfigurationStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeAuthorizerConfig)) __obj.updateDynamic("removeAuthorizerConfig")(removeAuthorizerConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeAuthorizerConfig)) __obj.updateDynamic("removeAuthorizerConfig")(removeAuthorizerConfig.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDomainConfigurationRequest]
   }
 }

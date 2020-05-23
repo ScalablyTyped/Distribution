@@ -21,12 +21,12 @@ object UploadBlockBlobOptions {
     contentType: String = null,
     leaseId: String = null,
     locationMode: String = null,
-    maximumExecutionTimeInMs: Int | Double = null,
+    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
     metadata: StorageMetadata = null,
-    parallelOperationThreadCount: Int | Double = null,
+    parallelOperationThreadCount: js.UndefOr[Double] = js.undefined,
     speedSummary: SpeedSummary = null,
     storeBlobContentMD5: js.UndefOr[Boolean] = js.undefined,
-    timeoutIntervalInMs: Int | Double = null,
+    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined,
     useTransactionalMD5: js.UndefOr[Boolean] = js.undefined
   ): UploadBlockBlobOptions = {
     val __obj = js.Dynamic.literal()
@@ -40,13 +40,13 @@ object UploadBlockBlobOptions {
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
     if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (parallelOperationThreadCount != null) __obj.updateDynamic("parallelOperationThreadCount")(parallelOperationThreadCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallelOperationThreadCount)) __obj.updateDynamic("parallelOperationThreadCount")(parallelOperationThreadCount.get.asInstanceOf[js.Any])
     if (speedSummary != null) __obj.updateDynamic("speedSummary")(speedSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeBlobContentMD5)) __obj.updateDynamic("storeBlobContentMD5")(storeBlobContentMD5.asInstanceOf[js.Any])
-    if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTransactionalMD5)) __obj.updateDynamic("useTransactionalMD5")(useTransactionalMD5.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeBlobContentMD5)) __obj.updateDynamic("storeBlobContentMD5")(storeBlobContentMD5.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTransactionalMD5)) __obj.updateDynamic("useTransactionalMD5")(useTransactionalMD5.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadBlockBlobOptions]
   }
 }

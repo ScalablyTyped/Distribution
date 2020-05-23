@@ -4,16 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.Scriptlet")
-@js.native
-class Scriptlet protected () extends js.Object {
+trait Scriptlet extends js.Object {
   @JSName("MSHTML.Scriptlet_typekey")
-  var MSHTMLDotScriptlet_typekey: Scriptlet = js.native
-  var Scrollbar: Boolean = js.native
-  var embed: Boolean = js.native
-  val event: js.Any = js.native
-  val readyState: Double = js.native
-  var url: String = js.native
-  def AboutBox(): Unit = js.native
+  var MSHTMLDotScriptlet_typekey: Scriptlet
+  var Scrollbar: Boolean
+  var embed: Boolean
+  val event: js.Any
+  val readyState: Double
+  var url: String
+  def AboutBox(): Unit
+}
+
+object Scriptlet {
+  @scala.inline
+  def apply(
+    AboutBox: () => Unit,
+    MSHTMLDotScriptlet_typekey: Scriptlet,
+    Scrollbar: Boolean,
+    embed: Boolean,
+    event: js.Any,
+    readyState: Double,
+    url: String
+  ): Scriptlet = {
+    val __obj = js.Dynamic.literal(AboutBox = js.Any.fromFunction0(AboutBox), Scrollbar = Scrollbar.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.Scriptlet_typekey")(MSHTMLDotScriptlet_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scriptlet]
+  }
 }
 

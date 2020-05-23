@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("cast.framework.MediaSessionEventData")
-@js.native
-class MediaSessionEventData protected () extends EventData {
-  def this(mediaSession: Media) = this()
-  var mediaSession: Media = js.native
+trait MediaSessionEventData extends EventData {
+  var mediaSession: Media
+}
+
+object MediaSessionEventData {
+  @scala.inline
+  def apply(mediaSession: Media, `type`: String): MediaSessionEventData = {
+    val __obj = js.Dynamic.literal(mediaSession = mediaSession.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaSessionEventData]
+  }
 }
 

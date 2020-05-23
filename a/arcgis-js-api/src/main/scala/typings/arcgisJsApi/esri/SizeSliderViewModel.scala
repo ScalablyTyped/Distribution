@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait SizeSliderViewModel extends SmartMappingSliderViewModel {
     */
   var stops: js.Array[SizeStop] = js.native
 }
-
-@JSGlobal("__esri.SizeSliderViewModel")
-@js.native
-object SizeSliderViewModel extends TopLevel[SizeSliderViewModelConstructor]
 

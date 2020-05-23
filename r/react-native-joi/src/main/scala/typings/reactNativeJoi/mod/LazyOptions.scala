@@ -15,7 +15,7 @@ object LazyOptions {
   @scala.inline
   def apply(once: js.UndefOr[Boolean] = js.undefined): LazyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LazyOptions]
   }
 }

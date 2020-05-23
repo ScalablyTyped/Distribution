@@ -1,7 +1,5 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.antDesignReactNativeStrings.Portal
-import typings.antDesignReactNative.antDesignReactNativeStrings.`Portal example`
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +15,7 @@ object portalDemoBasicMod extends js.Object {
   @js.native
   class default () extends PopoverExample
   
-  val description: `Portal example` = js.native
-  val title: Portal = js.native
+  val description: /* "Portal example" */ String = js.native
+  val title: /* "Portal" */ String = js.native
 }
 

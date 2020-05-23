@@ -3,6 +3,7 @@ package typings.bootstrap.mod
 import typings.bootstrap.bootstrapStrings.auto
 import typings.bootstrap.bootstrapStrings.offset
 import typings.bootstrap.bootstrapStrings.position
+import typings.bootstrap.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,19 +31,19 @@ trait ScrollspyOption extends js.Object {
     *
     * @default ""
     */
-  var target: js.UndefOr[String | Element] = js.undefined
+  var target: js.UndefOr[String | JQuery[Element] | Element] = js.undefined
 }
 
 object ScrollspyOption {
   @scala.inline
   def apply(
     method: auto | offset | position = null,
-    offset: Int | Double = null,
-    target: String | Element = null
+    offset: js.UndefOr[Double] = js.undefined,
+    target: String | JQuery[Element] | Element = null
   ): ScrollspyOption = {
     val __obj = js.Dynamic.literal()
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollspyOption]
   }

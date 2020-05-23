@@ -1,17 +1,16 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonAddedItems
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonEvent
-import typings.devextreme.AnonItemData
-import typings.devextreme.AnonItemElement
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
+import typings.devextreme.anon.AddedItems
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.Event
+import typings.devextreme.anon.ItemData
+import typings.devextreme.anon.ItemElement
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +50,7 @@ object dxMultiViewOptions {
     height: Double | String | (js.Function0[Double | String]) = null,
     hint: String = null,
     hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    itemHoldTimeout: Int | Double = null,
+    itemHoldTimeout: js.UndefOr[Double] = js.undefined,
     itemTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
       /* itemIndex */ Double, 
@@ -62,43 +61,43 @@ object dxMultiViewOptions {
     keyExpr: String | js.Function = null,
     loop: js.UndefOr[Boolean] = js.undefined,
     noDataText: String = null,
-    onContentReady: /* e */ AnonComponentElement[T] => _ = null,
-    onDisposing: /* e */ AnonModel[T] => _ = null,
-    onInitialized: /* e */ AnonElement[T] => _ = null,
-    onItemClick: (js.Function1[/* e */ AnonEvent[T], _]) | String = null,
-    onItemContextMenu: /* e */ AnonEvent[T] => _ = null,
-    onItemHold: /* e */ AnonItemData[T] => _ = null,
-    onItemRendered: /* e */ AnonItemElement[T] => _ = null,
-    onOptionChanged: /* e */ AnonName[T] => _ = null,
-    onSelectionChanged: /* e */ AnonAddedItems[T] => _ = null,
+    onContentReady: /* e */ ComponentElement[T] => _ = null,
+    onDisposing: /* e */ Model[T] => _ = null,
+    onInitialized: /* e */ typings.devextreme.anon.Element[T] => _ = null,
+    onItemClick: (js.Function1[/* e */ Event[T], _]) | String = null,
+    onItemContextMenu: /* e */ Event[T] => _ = null,
+    onItemHold: /* e */ ItemData[T] => _ = null,
+    onItemRendered: /* e */ ItemElement[T] => _ = null,
+    onOptionChanged: /* e */ Name[T] => _ = null,
+    onSelectionChanged: /* e */ AddedItems[T] => _ = null,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    selectedIndex: Int | Double = null,
+    selectedIndex: js.UndefOr[Double] = js.undefined,
     selectedItem: js.Any = null,
     selectedItemKeys: js.Array[_] = null,
     selectedItems: js.Array[_] = null,
     swipeEnabled: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxMultiViewOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferRendering)) __obj.updateDynamic("deferRendering")(deferRendering.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferRendering)) __obj.updateDynamic("deferRendering")(deferRendering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (itemHoldTimeout != null) __obj.updateDynamic("itemHoldTimeout")(itemHoldTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemHoldTimeout)) __obj.updateDynamic("itemHoldTimeout")(itemHoldTimeout.get.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (keyExpr != null) __obj.updateDynamic("keyExpr")(keyExpr.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
     if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1(onContentReady))
     if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
@@ -109,14 +108,14 @@ object dxMultiViewOptions {
     if (onItemRendered != null) __obj.updateDynamic("onItemRendered")(js.Any.fromFunction1(onItemRendered))
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1(onSelectionChanged))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     if (selectedItemKeys != null) __obj.updateDynamic("selectedItemKeys")(selectedItemKeys.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeEnabled)) __obj.updateDynamic("swipeEnabled")(swipeEnabled.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeEnabled)) __obj.updateDynamic("swipeEnabled")(swipeEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxMultiViewOptions[T]]
   }

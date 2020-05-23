@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.SerialCommunication
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object SerialParity extends js.Object {
   /** Leaves the parity bit set to 0. */
   @js.native
   sealed trait space extends SerialParity
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SerialParity with Double] = js.native
-  /* 2 */ @js.native
-  object even extends TopLevel[even with Double]
-  
-  /* 3 */ @js.native
-  object mark extends TopLevel[mark with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object odd extends TopLevel[odd with Double]
-  
-  /* 4 */ @js.native
-  object space extends TopLevel[space with Double]
   
 }
 

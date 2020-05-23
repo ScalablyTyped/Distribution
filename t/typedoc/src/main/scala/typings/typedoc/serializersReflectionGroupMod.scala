@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PartialReflectionGroup
 import typings.typedoc.reflectionGroupMod.ReflectionGroup
 import typings.typedoc.serializationComponentsMod.SerializerComponent
 import scala.scalajs.js

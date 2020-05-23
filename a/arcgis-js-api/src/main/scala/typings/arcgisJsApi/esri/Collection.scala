@@ -1,7 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.arcgisJsApi.AnonItems
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`after-add`
 import typings.arcgisJsApi.arcgisJsApiStrings.`after-changes`
@@ -14,12 +12,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.Evented because Inheritance from two classes. Inlined emit, emit, hasEventListener, on, on */ @JSGlobal("__esri.Collection")
 @js.native
-class Collection[T] () extends Accessor {
-  def this(values: js.Array[_]) = this()
-  def this(values: Collection[_]) = this()
+trait Collection[T]
+  extends Accessor
+     with Evented {
   val length: Double = js.native
   def add(item: T): Unit = js.native
   def add(item: T, index: Double): Unit = js.native
@@ -29,17 +25,6 @@ class Collection[T] () extends Accessor {
   def addMany(items: Collection[T], index: Double): Unit = js.native
   def concat(value: js.Array[T]): Collection[T] = js.native
   def concat(value: Collection[T]): Collection[T] = js.native
-  /**
-    * Emits an event on the instance. This method should only be used when creating subclasses of this class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
-    *
-    * @param type The name of the event.
-    * @param event The event payload.
-    *
-    */
-  def emit(`type`: String): Boolean = js.native
-  def emit(`type`: String, event: js.Any): Boolean = js.native
   def every(callback: ItemTestCallback[T]): Boolean = js.native
   def filter(callback: ItemTestCallback[T]): Collection[T] = js.native
   @JSName("filter")
@@ -51,15 +36,6 @@ class Collection[T] () extends Accessor {
   def flatten_U[U](callback: js.Function2[/* item */ U, /* index */ Double, js.Array[U] | Collection[U]]): Collection[U] = js.native
   def forEach(callback: ItemCallback[T]): Unit = js.native
   def getItemAt(index: Double): T = js.native
-  /**
-    * Indicates whether there is an event listener on the instance that matches the provided event name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#hasEventListener)
-    *
-    * @param type The name of the event.
-    *
-    */
-  def hasEventListener(`type`: String): Boolean = js.native
   def includes(searchElement: T): Boolean = js.native
   def indexOf(searchElement: T): Double = js.native
   def indexOf(searchElement: T, fromIndex: Double): Double = js.native
@@ -68,17 +44,6 @@ class Collection[T] () extends Accessor {
   def lastIndexOf(searchElement: T): Double = js.native
   def lastIndexOf(searchElement: T, fromIndex: Double): Double = js.native
   def map[R](callback: ItemMapCallback[T, R]): Collection[R] = js.native
-  /**
-    * Registers an event handler on the instance. Call this method to hook an event with a listener.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#on)
-    *
-    * @param type A event type, or an array of event types, to listen for.
-    * @param listener The function to call when the event is fired.
-    *
-    */
-  def on(`type`: String, listener: EventHandler | (js.Function1[/* event */ js.Any, Unit])): IHandle = js.native
-  def on(`type`: js.Array[String], listener: EventHandler): IHandle = js.native
   @JSName("on")
   def on_afteradd(`type`: `after-add`, listener: CollectionAfterAddEventHandler[T]): IHandle = js.native
   @JSName("on")
@@ -116,15 +81,5 @@ class Collection[T] () extends Accessor {
   def splice(start: Double, deleteCount: Double, items: T*): js.Array[T] = js.native
   def toArray(): js.Array[T] = js.native
   def unshift(items: T*): Double = js.native
-}
-
-/* static members */
-@JSGlobal("__esri.Collection")
-@js.native
-object Collection extends js.Object {
-  def isCollection[T](value: js.Any): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
-  def isCollection[T](value: Collection[T]): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
-  def ofType[T /* <: Base */, Base](`type`: Constructor[T]): Instantiable1[js.UndefOr[js.Array[T] | Collection[T] | (AnonItems[T, Base])], Collection[T]] = js.native
-  def ofType[T /* <: Base */, Base](`type`: Types[T, Base]): Instantiable1[js.UndefOr[js.Array[T] | Collection[T] | (AnonItems[T, Base])], Collection[T]] = js.native
 }
 

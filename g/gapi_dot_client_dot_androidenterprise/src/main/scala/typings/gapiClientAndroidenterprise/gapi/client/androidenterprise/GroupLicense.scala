@@ -44,8 +44,8 @@ object GroupLicense {
     acquisitionKind: String = null,
     approval: String = null,
     kind: String = null,
-    numProvisioned: Int | Double = null,
-    numPurchased: Int | Double = null,
+    numProvisioned: js.UndefOr[Double] = js.undefined,
+    numPurchased: js.UndefOr[Double] = js.undefined,
     permissions: String = null,
     productId: String = null
   ): GroupLicense = {
@@ -53,8 +53,8 @@ object GroupLicense {
     if (acquisitionKind != null) __obj.updateDynamic("acquisitionKind")(acquisitionKind.asInstanceOf[js.Any])
     if (approval != null) __obj.updateDynamic("approval")(approval.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (numProvisioned != null) __obj.updateDynamic("numProvisioned")(numProvisioned.asInstanceOf[js.Any])
-    if (numPurchased != null) __obj.updateDynamic("numPurchased")(numPurchased.asInstanceOf[js.Any])
+    if (!js.isUndefined(numProvisioned)) __obj.updateDynamic("numProvisioned")(numProvisioned.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numPurchased)) __obj.updateDynamic("numPurchased")(numPurchased.get.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupLicense]

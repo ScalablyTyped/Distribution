@@ -1,6 +1,6 @@
 package typings.idyll.mod
 
-import typings.idyll.AnonCompiler
+import typings.idyll.anon.Compiler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait Options extends js.Object {
   /**
     * used internally by IdyllInstance
     */
-  var inputConfig: js.UndefOr[AnonCompiler] = js.undefined
+  var inputConfig: js.UndefOr[Compiler] = js.undefined
   /**
     * the idyll file to be compiled into
     */
@@ -87,12 +87,12 @@ object Options {
     css: String = null,
     datasets: String = null,
     defaultComponents: js.UndefOr[Boolean] = js.undefined,
-    inputConfig: AnonCompiler = null,
+    inputConfig: Compiler = null,
     inputFile: String = null,
     layout: String = null,
     minify: js.UndefOr[Boolean] = js.undefined,
     output: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     ssr: js.UndefOr[Boolean] = js.undefined,
     temp: String = null,
     template: String = null,
@@ -102,22 +102,22 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (compiler != null) __obj.updateDynamic("compiler")(compiler.asInstanceOf[js.Any])
-    if (!js.isUndefined(components)) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (!js.isUndefined(components)) __obj.updateDynamic("components")(components.get.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (datasets != null) __obj.updateDynamic("datasets")(datasets.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultComponents)) __obj.updateDynamic("defaultComponents")(defaultComponents.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultComponents)) __obj.updateDynamic("defaultComponents")(defaultComponents.get.asInstanceOf[js.Any])
     if (inputConfig != null) __obj.updateDynamic("inputConfig")(inputConfig.asInstanceOf[js.Any])
     if (inputFile != null) __obj.updateDynamic("inputFile")(inputFile.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
+    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.get.asInstanceOf[js.Any])
     if (temp != null) __obj.updateDynamic("temp")(temp.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -30,7 +30,7 @@ object MobxApolloQueryOptions {
     notifyOnNetworkStatusChange: js.UndefOr[Boolean] = js.undefined,
     onError: /* error */ ApolloError => Unit = null,
     onFetch: /* result */ T => Unit = null,
-    pollInterval: Int | Double = null,
+    pollInterval: js.UndefOr[Double] = js.undefined,
     returnPartialData: js.UndefOr[Boolean] = js.undefined,
     variables: OperationVariables = null
   ): MobxApolloQueryOptions[T] = {
@@ -38,13 +38,13 @@ object MobxApolloQueryOptions {
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy.asInstanceOf[js.Any])
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchResults)) __obj.updateDynamic("fetchResults")(fetchResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchResults)) __obj.updateDynamic("fetchResults")(fetchResults.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(notifyOnNetworkStatusChange)) __obj.updateDynamic("notifyOnNetworkStatusChange")(notifyOnNetworkStatusChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(notifyOnNetworkStatusChange)) __obj.updateDynamic("notifyOnNetworkStatusChange")(notifyOnNetworkStatusChange.get.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onFetch != null) __obj.updateDynamic("onFetch")(js.Any.fromFunction1(onFetch))
-    if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollInterval)) __obj.updateDynamic("pollInterval")(pollInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData.get.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobxApolloQueryOptions[T]]
   }

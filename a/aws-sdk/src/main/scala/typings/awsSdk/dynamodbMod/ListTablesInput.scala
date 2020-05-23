@@ -18,10 +18,10 @@ trait ListTablesInput extends js.Object {
 
 object ListTablesInput {
   @scala.inline
-  def apply(ExclusiveStartTableName: TableName = null, Limit: Int | scala.Double = null): ListTablesInput = {
+  def apply(ExclusiveStartTableName: TableName = null, Limit: js.UndefOr[ListTablesInputLimit] = js.undefined): ListTablesInput = {
     val __obj = js.Dynamic.literal()
     if (ExclusiveStartTableName != null) __obj.updateDynamic("ExclusiveStartTableName")(ExclusiveStartTableName.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTablesInput]
   }
 }

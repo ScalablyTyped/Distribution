@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to find all matches of the specified text in the document.
   */
-@JSGlobal("FindAllCommand")
 @js.native
-class FindAllCommand () extends CommandWithSimpleStateBase {
+trait FindAllCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the FindAllCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param text A string value specifying text to find.

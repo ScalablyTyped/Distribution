@@ -1,12 +1,12 @@
 package typings.elasticElasticsearch.requestParamsMod
 
-import typings.elasticElasticsearch.elasticElasticsearchStrings.`d LeftparenthesisDaysRightparenthesis`
-import typings.elasticElasticsearch.elasticElasticsearchStrings.`h LeftparenthesisHoursRightparenthesis`
-import typings.elasticElasticsearch.elasticElasticsearchStrings.`m LeftparenthesisMinutesRightparenthesis`
-import typings.elasticElasticsearch.elasticElasticsearchStrings.`micros LeftparenthesisMicrosecondsRightparenthesis`
-import typings.elasticElasticsearch.elasticElasticsearchStrings.`ms LeftparenthesisMillisecondsRightparenthesis`
-import typings.elasticElasticsearch.elasticElasticsearchStrings.`nanos LeftparenthesisNanosecondsRightparenthesis`
-import typings.elasticElasticsearch.elasticElasticsearchStrings.`s LeftparenthesisSecondsRightparenthesis`
+import typings.elasticElasticsearch.elasticElasticsearchStrings.d
+import typings.elasticElasticsearch.elasticElasticsearchStrings.h
+import typings.elasticElasticsearch.elasticElasticsearchStrings.m
+import typings.elasticElasticsearch.elasticElasticsearchStrings.micros
+import typings.elasticElasticsearch.elasticElasticsearchStrings.ms
+import typings.elasticElasticsearch.elasticElasticsearchStrings.nanos
+import typings.elasticElasticsearch.elasticElasticsearchStrings.s
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +20,7 @@ trait CatTasks extends Generic {
   var node_id: js.UndefOr[String | js.Array[String]] = js.undefined
   var parent_task: js.UndefOr[Double] = js.undefined
   var s: js.UndefOr[String | js.Array[String]] = js.undefined
-  var time: js.UndefOr[
-    (`d LeftparenthesisDaysRightparenthesis`) | (`h LeftparenthesisHoursRightparenthesis`) | (`m LeftparenthesisMinutesRightparenthesis`) | (`s LeftparenthesisSecondsRightparenthesis`) | (`ms LeftparenthesisMillisecondsRightparenthesis`) | (`micros LeftparenthesisMicrosecondsRightparenthesis`) | (`nanos LeftparenthesisNanosecondsRightparenthesis`)
-  ] = js.undefined
+  var time: js.UndefOr[d | h | m | s | ms | micros | nanos] = js.undefined
   var v: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -40,31 +38,31 @@ object CatTasks {
     ignore: Double | js.Array[Double] = null,
     method: String = null,
     node_id: String | js.Array[String] = null,
-    parent_task: Int | Double = null,
+    parent_task: js.UndefOr[Double] = js.undefined,
     pretty: js.UndefOr[Boolean] = js.undefined,
     s: String | js.Array[String] = null,
     source: String = null,
-    time: (`d LeftparenthesisDaysRightparenthesis`) | (`h LeftparenthesisHoursRightparenthesis`) | (`m LeftparenthesisMinutesRightparenthesis`) | (`s LeftparenthesisSecondsRightparenthesis`) | (`ms LeftparenthesisMillisecondsRightparenthesis`) | (`micros LeftparenthesisMicrosecondsRightparenthesis`) | (`nanos LeftparenthesisNanosecondsRightparenthesis`) = null,
+    time: d | h | m | s | ms | micros | nanos = null,
     v: js.UndefOr[Boolean] = js.undefined
   ): CatTasks = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.asInstanceOf[js.Any])
+    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
+    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (node_id != null) __obj.updateDynamic("node_id")(node_id.asInstanceOf[js.Any])
-    if (parent_task != null) __obj.updateDynamic("parent_task")(parent_task.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent_task)) __obj.updateDynamic("parent_task")(parent_task.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
     if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
+    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatTasks]
   }
 }

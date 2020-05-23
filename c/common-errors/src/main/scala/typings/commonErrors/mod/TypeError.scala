@@ -1,13 +1,13 @@
 package typings.commonErrors.mod
 
-import typings.std.TypeErrorConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("common-errors", "TypeError")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.TypeError * / any */ @JSImport("common-errors", "TypeError")
 @js.native
-class TypeError protected () extends TypeErrorConstructor {
+class TypeError protected () extends js.Object {
   /**
     * @param message     any message
     * @param inner_error the Error instance that caused the current error.

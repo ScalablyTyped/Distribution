@@ -1,7 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
-import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +30,7 @@ import scala.scalajs.js.annotation._
   * rdn = new KJUR.asn1.x509.RDN({str: "O=a+O=b\\+b+O=c"}); // plus escaped
   * rdn = new KJUR.asn1.x509.RDN({str: "O=a+O=\"b+b\"+O=c"}); // double quoted
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.RDN")
-@js.native
-class RDN () extends ASN1Object {
-  def this(params: StringParam) = this()
+trait RDN extends ASN1Object {
   /**
     * add one AttributeTypeAndValue by multi-valued string
     * @param s string of multi-valued RDN
@@ -46,7 +42,7 @@ class RDN () extends ASN1Object {
     * rdn.addByMultiValuedString("O=a+O=b\+b\+b+O=c"); // multi-valued RDN with quoted plus
     * rdn.addByMultiValuedString("O=a+O=\"b+b+b\"+O=c"); // multi-valued RDN with quoted quotation
     */
-  def addByMultiValuedString(s: String): Unit = js.native
+  def addByMultiValuedString(s: String): Unit
   /**
     * add one AttributeTypeAndValue by string
     * @param s string of AttributeTypeAndValue
@@ -58,27 +54,26 @@ class RDN () extends ASN1Object {
     * rdn.addByString("CN=john");
     * rdn.addByString("serialNumber=1234"); // for multi-valued RDN
     */
-  def addByString(s: String): Unit = js.native
+  def addByString(s: String): Unit
 }
 
-/* static members */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.RDN")
-@js.native
-object RDN extends js.Object {
-  /**
-    * parse multi-valued RDN string and split into array of 'AttributeTypeAndValue'
-    * @param s multi-valued string of RDN
-    * @return array of string of AttributeTypeAndValue
-    * @description
-    * This static method parses multi-valued RDN string and split into
-    * array of AttributeTypeAndValue.
-    * @example
-    * KJUR.asn1.x509.RDN.parseString("CN=john") → ["CN=john"]
-    * KJUR.asn1.x509.RDN.parseString("CN=john+OU=test") → ["CN=john", "OU=test"]
-    * KJUR.asn1.x509.RDN.parseString('CN="jo+hn"+OU=test') → ["CN=jo+hn", "OU=test"]
-    * KJUR.asn1.x509.RDN.parseString('CN=jo\+hn+OU=test') → ["CN=jo+hn", "OU=test"]
-    * KJUR.asn1.x509.RDN.parseString("CN=john+OU=test+OU=t1") → ["CN=john", "OU=test", "OU=t1"]
-    */
-  def parseString(s: String): js.Array[String] = js.native
+object RDN {
+  @scala.inline
+  def apply(
+    addByMultiValuedString: String => Unit,
+    addByString: String => Unit,
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String
+  ): RDN = {
+    val __obj = js.Dynamic.literal(addByMultiValuedString = js.Any.fromFunction1(addByMultiValuedString), addByString = js.Any.fromFunction1(addByString), getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RDN]
+  }
 }
 

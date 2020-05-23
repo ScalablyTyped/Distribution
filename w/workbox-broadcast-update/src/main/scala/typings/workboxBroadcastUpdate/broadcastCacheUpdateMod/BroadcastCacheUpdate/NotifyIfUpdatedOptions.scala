@@ -1,6 +1,6 @@
 package typings.workboxBroadcastUpdate.broadcastCacheUpdateMod.BroadcastCacheUpdate
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait NotifyIfUpdatedOptions extends js.Object {
   var cacheName: String
-  var event: js.UndefOr[Event_] = js.undefined
+  var event: js.UndefOr[Event] = js.undefined
   var newResponse: Response
   var oldResponse: js.UndefOr[Response] = js.undefined
   var url: String
@@ -20,7 +20,7 @@ object NotifyIfUpdatedOptions {
     cacheName: String,
     newResponse: Response,
     url: String,
-    event: Event_ = null,
+    event: Event = null,
     oldResponse: Response = null
   ): NotifyIfUpdatedOptions = {
     val __obj = js.Dynamic.literal(cacheName = cacheName.asInstanceOf[js.Any], newResponse = newResponse.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])

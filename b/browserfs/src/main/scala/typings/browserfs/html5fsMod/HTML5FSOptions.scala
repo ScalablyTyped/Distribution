@@ -11,10 +11,10 @@ trait HTML5FSOptions extends js.Object {
 
 object HTML5FSOptions {
   @scala.inline
-  def apply(size: Int | Double = null, `type`: Int | Double = null): HTML5FSOptions = {
+  def apply(size: js.UndefOr[Double] = js.undefined, `type`: js.UndefOr[Double] = js.undefined): HTML5FSOptions = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTML5FSOptions]
   }
 }

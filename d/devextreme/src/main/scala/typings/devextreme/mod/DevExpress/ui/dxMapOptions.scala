@@ -1,17 +1,17 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonBing
-import typings.devextreme.AnonColor
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonIconSrc
-import typings.devextreme.AnonJQueryEventLocation
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonModelOptions
-import typings.devextreme.AnonName
-import typings.devextreme.AnonOptions
-import typings.devextreme.AnonOriginalMap
-import typings.devextreme.AnonOriginalRoute
+import typings.devextreme.anon.Bing
+import typings.devextreme.anon.Color
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.IconSrc
+import typings.devextreme.anon.JQueryEventLocation
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.ModelOptions
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.Options
+import typings.devextreme.anon.OriginalMap
+import typings.devextreme.anon.OriginalRoute
 import typings.devextreme.devextremeStrings.bing
 import typings.devextreme.devextremeStrings.google
 import typings.devextreme.devextremeStrings.googleStatic
@@ -30,27 +30,27 @@ trait dxMapOptions extends WidgetOptions[dxMap] {
   /** @name dxMap.Options.controls */
   var controls: js.UndefOr[Boolean] = js.undefined
   /** @name dxMap.Options.key */
-  var key: js.UndefOr[String | AnonBing] = js.undefined
+  var key: js.UndefOr[String | Bing] = js.undefined
   /** @name dxMap.Options.markerIconSrc */
   var markerIconSrc: js.UndefOr[String] = js.undefined
   /** @name dxMap.Options.markers */
-  var markers: js.UndefOr[js.Array[AnonIconSrc]] = js.undefined
+  var markers: js.UndefOr[js.Array[IconSrc]] = js.undefined
   /** @name dxMap.Options.onClick */
-  var onClick: js.UndefOr[(js.Function1[/* e */ AnonJQueryEventLocation, _]) | String] = js.undefined
+  var onClick: js.UndefOr[(js.Function1[/* e */ JQueryEventLocation, _]) | String] = js.undefined
   /** @name dxMap.Options.onMarkerAdded */
-  var onMarkerAdded: js.UndefOr[js.Function1[/* e */ AnonOptions, _]] = js.undefined
+  var onMarkerAdded: js.UndefOr[js.Function1[/* e */ Options, _]] = js.undefined
   /** @name dxMap.Options.onMarkerRemoved */
-  var onMarkerRemoved: js.UndefOr[js.Function1[/* e */ AnonModelOptions, _]] = js.undefined
+  var onMarkerRemoved: js.UndefOr[js.Function1[/* e */ ModelOptions, _]] = js.undefined
   /** @name dxMap.Options.onReady */
-  var onReady: js.UndefOr[js.Function1[/* e */ AnonOriginalMap, _]] = js.undefined
+  var onReady: js.UndefOr[js.Function1[/* e */ OriginalMap, _]] = js.undefined
   /** @name dxMap.Options.onRouteAdded */
-  var onRouteAdded: js.UndefOr[js.Function1[/* e */ AnonOriginalRoute, _]] = js.undefined
+  var onRouteAdded: js.UndefOr[js.Function1[/* e */ OriginalRoute, _]] = js.undefined
   /** @name dxMap.Options.onRouteRemoved */
-  var onRouteRemoved: js.UndefOr[js.Function1[/* e */ AnonModelOptions, _]] = js.undefined
+  var onRouteRemoved: js.UndefOr[js.Function1[/* e */ ModelOptions, _]] = js.undefined
   /** @name dxMap.Options.provider */
   var provider: js.UndefOr[bing | google | googleStatic] = js.undefined
   /** @name dxMap.Options.routes */
-  var routes: js.UndefOr[js.Array[AnonColor]] = js.undefined
+  var routes: js.UndefOr[js.Array[Color]] = js.undefined
   /** @name dxMap.Options.type */
   var `type`: js.UndefOr[hybrid | roadmap | satellite] = js.undefined
   /** @name dxMap.Options.zoom */
@@ -72,41 +72,41 @@ object dxMapOptions {
     height: Double | String | (js.Function0[Double | String]) = null,
     hint: String = null,
     hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    key: String | AnonBing = null,
+    key: String | Bing = null,
     markerIconSrc: String = null,
-    markers: js.Array[AnonIconSrc] = null,
-    onClick: (js.Function1[/* e */ AnonJQueryEventLocation, _]) | String = null,
-    onContentReady: /* e */ AnonComponentElement[dxMap] => _ = null,
-    onDisposing: /* e */ AnonModel[dxMap] => _ = null,
-    onInitialized: /* e */ AnonElement[dxMap] => _ = null,
-    onMarkerAdded: /* e */ AnonOptions => _ = null,
-    onMarkerRemoved: /* e */ AnonModelOptions => _ = null,
-    onOptionChanged: /* e */ AnonName[dxMap] => _ = null,
-    onReady: /* e */ AnonOriginalMap => _ = null,
-    onRouteAdded: /* e */ AnonOriginalRoute => _ = null,
-    onRouteRemoved: /* e */ AnonModelOptions => _ = null,
+    markers: js.Array[IconSrc] = null,
+    onClick: (js.Function1[/* e */ JQueryEventLocation, _]) | String = null,
+    onContentReady: /* e */ ComponentElement[dxMap] => _ = null,
+    onDisposing: /* e */ Model[dxMap] => _ = null,
+    onInitialized: /* e */ Element[dxMap] => _ = null,
+    onMarkerAdded: /* e */ Options => _ = null,
+    onMarkerRemoved: /* e */ ModelOptions => _ = null,
+    onOptionChanged: /* e */ Name[dxMap] => _ = null,
+    onReady: /* e */ OriginalMap => _ = null,
+    onRouteAdded: /* e */ OriginalRoute => _ = null,
+    onRouteRemoved: /* e */ ModelOptions => _ = null,
     provider: bing | google | googleStatic = null,
-    routes: js.Array[AnonColor] = null,
+    routes: js.Array[Color] = null,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     `type`: hybrid | roadmap | satellite = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): dxMapOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAdjust)) __obj.updateDynamic("autoAdjust")(autoAdjust.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAdjust)) __obj.updateDynamic("autoAdjust")(autoAdjust.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (markerIconSrc != null) __obj.updateDynamic("markerIconSrc")(markerIconSrc.asInstanceOf[js.Any])
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
@@ -122,12 +122,12 @@ object dxMapOptions {
     if (onRouteRemoved != null) __obj.updateDynamic("onRouteRemoved")(js.Any.fromFunction1(onRouteRemoved))
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxMapOptions]
   }
 }

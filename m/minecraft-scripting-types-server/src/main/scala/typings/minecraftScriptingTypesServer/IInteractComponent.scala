@@ -1,5 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
+import typings.minecraftScriptingTypesServer.anon.Particleoffsettowardsinteractor
+import typings.minecraftScriptingTypesServer.anon.Table
 import typings.minecraftScriptingTypesShared.MinecraftTrigger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +14,7 @@ trait IInteractComponent extends js.Object {
   /**
     * Loot table with items to add to the player's inventory upon successful interaction
     */
-  var add_items: AnonTable
+  var add_items: Table
   /**
     * Time in seconds before this entity can be interacted with again
     * @default 0.0
@@ -34,7 +36,7 @@ trait IInteractComponent extends js.Object {
   /**
     * Particle effect that will be triggered at the start of the interaction
     */
-  var particle_on_start: AnonParticleoffsettowardsinteractor
+  var particle_on_start: Particleoffsettowardsinteractor
   /**
     * An array of sound identifiers to play when the interaction occurs
     */
@@ -46,7 +48,7 @@ trait IInteractComponent extends js.Object {
   /**
     * Loot table with items to drop on the ground upon successful interaction
     */
-  var spawn_items: AnonTable
+  var spawn_items: Table
   /**
     * If true, the player will do the 'swing' animation when interacting with this entity
     * @default false
@@ -66,15 +68,15 @@ trait IInteractComponent extends js.Object {
 object IInteractComponent {
   @scala.inline
   def apply(
-    add_items: AnonTable,
+    add_items: Table,
     cooldown: Double,
     hurt_item: Double,
     interact_text: String,
     on_interact: MinecraftTrigger | String,
-    particle_on_start: AnonParticleoffsettowardsinteractor,
+    particle_on_start: Particleoffsettowardsinteractor,
     play_sounds: js.Array[String],
     spawn_entities: js.Array[String],
-    spawn_items: AnonTable,
+    spawn_items: Table,
     swing: Boolean,
     use_item: Boolean,
     transform_to_item: String = null

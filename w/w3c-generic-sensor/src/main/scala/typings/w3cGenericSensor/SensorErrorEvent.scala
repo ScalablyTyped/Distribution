@@ -1,15 +1,13 @@
 package typings.w3cGenericSensor
 
 import typings.std.Error
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SensorErrorEvent")
 @js.native
-class SensorErrorEvent protected () extends Event_ {
-  def this(`type`: String, errorEventInitDict: SensorErrorEventInit) = this()
+trait SensorErrorEvent extends Event {
   val error: Error = js.native
 }
 

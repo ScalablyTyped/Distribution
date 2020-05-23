@@ -5,37 +5,28 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Graphics.Printing.IPrintTaskOptionsCore
 import typings.winrt.Windows.Graphics.Printing.IPrintTaskOptionsCoreUIConfiguration
 import typings.winrt.Windows.Graphics.Printing.PrintPageDescription
-import typings.winrt.Windows.Graphics.Printing.PrintTaskOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails")
-@js.native
-class PrintTaskOptionDetails ()
+trait PrintTaskOptionDetails
   extends IPrintTaskOptionDetails
      with IPrintTaskOptionsCore
-     with IPrintTaskOptionsCoreUIConfiguration {
-  /* CompleteClass */
-  override var displayedOptions: IVector[String] = js.native
-  /* CompleteClass */
-  override var onbeginvalidation: js.Any = js.native
-  /* CompleteClass */
-  override var onoptionchanged: js.Any = js.native
-  /* CompleteClass */
-  override var options: IMapView[String, IPrintOptionDetails] = js.native
-  /* CompleteClass */
-  override def createItemListOption(optionId: String, displayName: String): PrintCustomItemListOptionDetails = js.native
-  /* CompleteClass */
-  override def createTextOption(optionId: String, displayName: String): PrintCustomTextOptionDetails = js.native
-  /* CompleteClass */
-  override def getPageDescription(jobPageNumber: Double): PrintPageDescription = js.native
-}
+     with IPrintTaskOptionsCoreUIConfiguration
 
-/* static members */
-@JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails")
-@js.native
-object PrintTaskOptionDetails extends js.Object {
-  def getFromPrintTaskOptions(printTaskOptions: PrintTaskOptions): PrintTaskOptionDetails = js.native
+object PrintTaskOptionDetails {
+  @scala.inline
+  def apply(
+    createItemListOption: (String, String) => PrintCustomItemListOptionDetails,
+    createTextOption: (String, String) => PrintCustomTextOptionDetails,
+    displayedOptions: IVector[String],
+    getPageDescription: Double => PrintPageDescription,
+    onbeginvalidation: js.Any,
+    onoptionchanged: js.Any,
+    options: IMapView[String, IPrintOptionDetails]
+  ): PrintTaskOptionDetails = {
+    val __obj = js.Dynamic.literal(createItemListOption = js.Any.fromFunction2(createItemListOption), createTextOption = js.Any.fromFunction2(createTextOption), displayedOptions = displayedOptions.asInstanceOf[js.Any], getPageDescription = js.Any.fromFunction1(getPageDescription), onbeginvalidation = onbeginvalidation.asInstanceOf[js.Any], onoptionchanged = onoptionchanged.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrintTaskOptionDetails]
+  }
 }
 

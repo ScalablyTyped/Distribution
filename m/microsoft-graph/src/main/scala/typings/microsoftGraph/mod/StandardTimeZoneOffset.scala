@@ -23,18 +23,18 @@ trait StandardTimeZoneOffset extends js.Object {
 object StandardTimeZoneOffset {
   @scala.inline
   def apply(
-    dayOccurrence: Int | Double = null,
+    dayOccurrence: js.UndefOr[Double] = js.undefined,
     dayOfWeek: DayOfWeek = null,
-    month: Int | Double = null,
+    month: js.UndefOr[Double] = js.undefined,
     time: String = null,
-    year: Int | Double = null
+    year: js.UndefOr[Double] = js.undefined
   ): StandardTimeZoneOffset = {
     val __obj = js.Dynamic.literal()
-    if (dayOccurrence != null) __obj.updateDynamic("dayOccurrence")(dayOccurrence.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayOccurrence)) __obj.updateDynamic("dayOccurrence")(dayOccurrence.get.asInstanceOf[js.Any])
     if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
+    if (!js.isUndefined(year)) __obj.updateDynamic("year")(year.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardTimeZoneOffset]
   }
 }

@@ -1,6 +1,5 @@
 package typings.cordovaPluginKeyboard
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -142,8 +141,4 @@ trait Keyboard extends js.Object {
   def shrinkView(shrink: Boolean): Unit = js.native
   def shrinkView(shrink: Boolean, successCallback: js.Function1[/* currentValue */ js.Any, Unit]): Unit = js.native
 }
-
-@JSGlobal("Keyboard")
-@js.native
-object Keyboard extends TopLevel[Keyboard]
 

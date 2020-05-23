@@ -1,6 +1,6 @@
 package typings.divaJs.documentLayoutMod
 
-import typings.divaJs.AnonX
+import typings.divaJs.anon.X
 import typings.divaJs.interfacesMod.Dimensions
 import typings.divaJs.interfacesMod.Offset
 import typings.divaJs.interfacesMod.PageGroup
@@ -28,6 +28,6 @@ class default protected () extends DocumentLayout {
   /* CompleteClass */
   override def getPageRegion(pageIndex: Double, options: js.Object): Offset = js.native
   /* CompleteClass */
-  override def getPageToViewportCenterOffset(pageIndex: Double, viewport: Region): AnonX = js.native
+  override def getPageToViewportCenterOffset(pageIndex: Double, viewport: Region): X = js.native
 }
 

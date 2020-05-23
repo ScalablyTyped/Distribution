@@ -127,23 +127,23 @@ object SequenceQuality {
     _truthFN: Element = null,
     _truthTP: Element = null,
     _type: Element = null,
-    end: Int | Double = null,
+    end: js.UndefOr[integer] = js.undefined,
     extension: js.Array[Extension] = null,
-    fScore: Int | Double = null,
+    fScore: js.UndefOr[decimal] = js.undefined,
     fhir_comments: js.Array[String] = null,
-    gtFP: Int | Double = null,
+    gtFP: js.UndefOr[decimal] = js.undefined,
     id: String = null,
     method: CodeableConcept = null,
     modifierExtension: js.Array[Extension] = null,
-    precision: Int | Double = null,
-    queryFP: Int | Double = null,
-    queryTP: Int | Double = null,
-    recall: Int | Double = null,
+    precision: js.UndefOr[decimal] = js.undefined,
+    queryFP: js.UndefOr[decimal] = js.undefined,
+    queryTP: js.UndefOr[decimal] = js.undefined,
+    recall: js.UndefOr[decimal] = js.undefined,
     score: Quantity = null,
     standardSequence: CodeableConcept = null,
-    start: Int | Double = null,
-    truthFN: Int | Double = null,
-    truthTP: Int | Double = null
+    start: js.UndefOr[integer] = js.undefined,
+    truthFN: js.UndefOr[decimal] = js.undefined,
+    truthTP: js.UndefOr[decimal] = js.undefined
   ): SequenceQuality = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -160,23 +160,23 @@ object SequenceQuality {
     if (_truthFN != null) __obj.updateDynamic("_truthFN")(_truthFN.asInstanceOf[js.Any])
     if (_truthTP != null) __obj.updateDynamic("_truthTP")(_truthTP.asInstanceOf[js.Any])
     if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fScore != null) __obj.updateDynamic("fScore")(fScore.asInstanceOf[js.Any])
+    if (!js.isUndefined(fScore)) __obj.updateDynamic("fScore")(fScore.get.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (gtFP != null) __obj.updateDynamic("gtFP")(gtFP.asInstanceOf[js.Any])
+    if (!js.isUndefined(gtFP)) __obj.updateDynamic("gtFP")(gtFP.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (queryFP != null) __obj.updateDynamic("queryFP")(queryFP.asInstanceOf[js.Any])
-    if (queryTP != null) __obj.updateDynamic("queryTP")(queryTP.asInstanceOf[js.Any])
-    if (recall != null) __obj.updateDynamic("recall")(recall.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryFP)) __obj.updateDynamic("queryFP")(queryFP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryTP)) __obj.updateDynamic("queryTP")(queryTP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recall)) __obj.updateDynamic("recall")(recall.get.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     if (standardSequence != null) __obj.updateDynamic("standardSequence")(standardSequence.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (truthFN != null) __obj.updateDynamic("truthFN")(truthFN.asInstanceOf[js.Any])
-    if (truthTP != null) __obj.updateDynamic("truthTP")(truthTP.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(truthFN)) __obj.updateDynamic("truthFN")(truthFN.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(truthTP)) __obj.updateDynamic("truthTP")(truthTP.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceQuality]
   }
 }

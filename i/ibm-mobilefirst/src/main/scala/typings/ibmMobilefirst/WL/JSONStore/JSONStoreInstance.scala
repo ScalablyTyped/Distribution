@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("WL.JSONStore.JSONStoreInstance")
 @js.native
-class JSONStoreInstance () extends js.Object {
+trait JSONStoreInstance extends js.Object {
   def add(data: js.Any): JQueryDeferred[_] = js.native
   def add(data: js.Any, options: AddOptions): JQueryDeferred[_] = js.native
   def advancedFind(query: js.Array[_]): JQueryDeferred[_] = js.native

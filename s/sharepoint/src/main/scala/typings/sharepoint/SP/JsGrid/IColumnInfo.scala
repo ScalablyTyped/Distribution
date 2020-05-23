@@ -52,12 +52,12 @@ object IColumnInfo {
   ): IColumnInfo = {
     val __obj = js.Dynamic.literal(columnKey = columnKey.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], fieldKeys = fieldKeys.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (imgSrc != null) __obj.updateDynamic("imgSrc")(imgSrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAutoFilterable)) __obj.updateDynamic("isAutoFilterable")(isAutoFilterable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFooter)) __obj.updateDynamic("isFooter")(isFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHidable)) __obj.updateDynamic("isHidable")(isHidable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAutoFilterable)) __obj.updateDynamic("isAutoFilterable")(isAutoFilterable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFooter)) __obj.updateDynamic("isFooter")(isFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHidable)) __obj.updateDynamic("isHidable")(isHidable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnInfo]
   }
 }

@@ -27,8 +27,8 @@ package object mod {
   type LngLatBoundsLike = typings.mapboxGl.mod.LngLatBounds | (js.Tuple2[typings.mapboxGl.mod.LngLatLike, typings.mapboxGl.mod.LngLatLike]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
   /* Rewritten from type alias, can be one of: 
     - typings.mapboxGl.mod.LngLat
-    - typings.mapboxGl.AnonLat
-    - typings.mapboxGl.AnonLon
+    - typings.mapboxGl.anon.Lat
+    - typings.mapboxGl.anon.Lon
     - js.Tuple2[scala.Double, scala.Double]
   */
   type LngLatLike = typings.mapboxGl.mod._LngLatLike | (js.Tuple2[scala.Double, scala.Double])

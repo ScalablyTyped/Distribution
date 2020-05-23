@@ -15,6 +15,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object registerTech
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.registerTech */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ js.Any
     ]
 

@@ -1,6 +1,6 @@
 package typings.lazyJs.LazyJS
 
-import typings.lazyJs.AnonProperty
+import typings.lazyJs.anon.Property
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,14 +23,12 @@ trait ObjectLikeSequence[T] extends Sequence[T] {
   def pairs(): Sequence[T] = js.native
   def pick(properties: js.Array[String]): ObjectLikeSequence[T] = js.native
   def values(): Sequence[T] = js.native
-  def watch(propertyNames: String): Sequence[AnonProperty] = js.native
-  def watch(propertyNames: js.Array[String]): Sequence[AnonProperty] = js.native
+  def watch(propertyNames: String): Sequence[Property] = js.native
+  def watch(propertyNames: js.Array[String]): Sequence[Property] = js.native
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @JSGlobal("LazyJS.ObjectLikeSequence")
 @js.native
-object ObjectLikeSequence extends js.Object {
-  def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
-}
+object ObjectLikeSequence extends js.Object
 

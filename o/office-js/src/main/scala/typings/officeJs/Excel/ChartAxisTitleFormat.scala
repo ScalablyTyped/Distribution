@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartAxisTitleFormatData
 import typings.officeJs.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartAxisTitleFormatUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartAxisTitleFormat")
 @js.native
-class ChartAxisTitleFormat () extends ClientObject {
+trait ChartAxisTitleFormat extends ClientObject {
   /**
     *
-    * Represents the border format, which includes color, linestyle, and weight.
+    * Specifies the chart axis title's border format, which includes color, linestyle, and weight.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -31,14 +30,14 @@ class ChartAxisTitleFormat () extends ClientObject {
   var context_ChartAxisTitleFormat: RequestContext = js.native
   /**
     *
-    * Represents chart fill formatting.
+    * Specifies the chart axis title's fill formatting.
     *
     * [Api set: ExcelApi 1.8]
     */
   val fill: ChartFill = js.native
   /**
     *
-    * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+    * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -50,7 +49,7 @@ class ChartAxisTitleFormat () extends ClientObject {
     */
   def load(): ChartAxisTitleFormat = js.native
   def load(options: ChartAxisTitleFormatLoadOptions): ChartAxisTitleFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartAxisTitleFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ChartAxisTitleFormat = js.native
   def load(propertyNames: String): ChartAxisTitleFormat = js.native
   def load(propertyNames: js.Array[String]): ChartAxisTitleFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

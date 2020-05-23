@@ -57,7 +57,7 @@ object SavingsPlanOffering {
   def apply(
     currency: CurrencyCode = null,
     description: SavingsPlanDescription = null,
-    durationSeconds: Int | Double = null,
+    durationSeconds: js.UndefOr[SavingsPlansDuration] = js.undefined,
     offeringId: UUID = null,
     operation: SavingsPlanOperation = null,
     paymentOption: SavingsPlanPaymentOption = null,
@@ -70,7 +70,7 @@ object SavingsPlanOffering {
     val __obj = js.Dynamic.literal()
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (durationSeconds != null) __obj.updateDynamic("durationSeconds")(durationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationSeconds)) __obj.updateDynamic("durationSeconds")(durationSeconds.get.asInstanceOf[js.Any])
     if (offeringId != null) __obj.updateDynamic("offeringId")(offeringId.asInstanceOf[js.Any])
     if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
     if (paymentOption != null) __obj.updateDynamic("paymentOption")(paymentOption.asInstanceOf[js.Any])

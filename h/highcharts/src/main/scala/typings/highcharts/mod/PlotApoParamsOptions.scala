@@ -23,9 +23,9 @@ trait PlotApoParamsOptions extends js.Object {
 
 object PlotApoParamsOptions {
   @scala.inline
-  def apply(index: Int | Double = null, periods: js.Array[Double] = null): PlotApoParamsOptions = {
+  def apply(index: js.UndefOr[Double] = js.undefined, periods: js.Array[Double] = null): PlotApoParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (periods != null) __obj.updateDynamic("periods")(periods.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotApoParamsOptions]
   }

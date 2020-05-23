@@ -101,20 +101,20 @@ object PortalQueryParamsProperties {
   def apply(
     categories: js.Array[String | js.Array[String]] = null,
     extent: ExtentProperties = null,
-    num: Int | Double = null,
+    num: js.UndefOr[Double] = js.undefined,
     query: String = null,
     sortField: title | uploaded | modified | username | created | typings.arcgisJsApi.arcgisJsApiStrings.`type` | owner | `avg-rating` | `num-ratings` | `num-comments` | `num-views` = null,
     sortOrder: asc_ | desc_ = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): PortalQueryParamsProperties = {
     val __obj = js.Dynamic.literal()
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
+    if (!js.isUndefined(num)) __obj.updateDynamic("num")(num.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalQueryParamsProperties]
   }
 }

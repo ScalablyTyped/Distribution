@@ -1,6 +1,6 @@
 package typings.slackNode.mod
 
-import typings.slackNode.AnonKey
+import typings.slackNode.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait Slack extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* response */ js.Any, Unit]
   ): this.type = js.native
   def composeUrl(): String = js.native
-  def detectEmoji(emoji: String): AnonKey = js.native
+  def detectEmoji(emoji: String): Key = js.native
   def setWebhook(url: String): this.type = js.native
   def webhook(
     options: WebhookOptions,

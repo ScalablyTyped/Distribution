@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`building-component`
 import typings.arcgisJsApi.arcgisJsApiStrings.hide
 import typings.arcgisJsApi.arcgisJsApiStrings.show
@@ -92,8 +91,4 @@ trait BuildingComponentSublayer
     */
   def getFieldDomain(fieldName: String): Domain = js.native
 }
-
-@JSGlobal("__esri.BuildingComponentSublayer")
-@js.native
-object BuildingComponentSublayer extends TopLevel[BuildingComponentSublayerConstructor]
 

@@ -27,38 +27,38 @@ object IBodyOptions {
   @scala.inline
   def apply(
     allowSleep: js.UndefOr[Boolean] = js.undefined,
-    angularDamping: Int | Double = null,
+    angularDamping: js.UndefOr[Double] = js.undefined,
     angularVelocity: Vec3 = null,
-    collisionFilterGroup: Int | Double = null,
-    collisionFilterMask: Int | Double = null,
+    collisionFilterGroup: js.UndefOr[Double] = js.undefined,
+    collisionFilterMask: js.UndefOr[Double] = js.undefined,
     fixedRotation: js.UndefOr[Boolean] = js.undefined,
-    linearDamping: Int | Double = null,
-    mass: Int | Double = null,
+    linearDamping: js.UndefOr[Double] = js.undefined,
+    mass: js.UndefOr[Double] = js.undefined,
     material: Material = null,
     position: Vec3 = null,
     quaternion: Quaternion = null,
     shape: Shape = null,
-    sleepSpeedLimit: Int | Double = null,
-    sleepTimeLimit: Int | Double = null,
-    `type`: Int | Double = null,
+    sleepSpeedLimit: js.UndefOr[Double] = js.undefined,
+    sleepTimeLimit: js.UndefOr[Double] = js.undefined,
+    `type`: js.UndefOr[Double] = js.undefined,
     velocity: Vec3 = null
   ): IBodyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep.asInstanceOf[js.Any])
-    if (angularDamping != null) __obj.updateDynamic("angularDamping")(angularDamping.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(angularDamping)) __obj.updateDynamic("angularDamping")(angularDamping.get.asInstanceOf[js.Any])
     if (angularVelocity != null) __obj.updateDynamic("angularVelocity")(angularVelocity.asInstanceOf[js.Any])
-    if (collisionFilterGroup != null) __obj.updateDynamic("collisionFilterGroup")(collisionFilterGroup.asInstanceOf[js.Any])
-    if (collisionFilterMask != null) __obj.updateDynamic("collisionFilterMask")(collisionFilterMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedRotation)) __obj.updateDynamic("fixedRotation")(fixedRotation.asInstanceOf[js.Any])
-    if (linearDamping != null) __obj.updateDynamic("linearDamping")(linearDamping.asInstanceOf[js.Any])
-    if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
+    if (!js.isUndefined(collisionFilterGroup)) __obj.updateDynamic("collisionFilterGroup")(collisionFilterGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collisionFilterMask)) __obj.updateDynamic("collisionFilterMask")(collisionFilterMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedRotation)) __obj.updateDynamic("fixedRotation")(fixedRotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linearDamping)) __obj.updateDynamic("linearDamping")(linearDamping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mass)) __obj.updateDynamic("mass")(mass.get.asInstanceOf[js.Any])
     if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (quaternion != null) __obj.updateDynamic("quaternion")(quaternion.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (sleepSpeedLimit != null) __obj.updateDynamic("sleepSpeedLimit")(sleepSpeedLimit.asInstanceOf[js.Any])
-    if (sleepTimeLimit != null) __obj.updateDynamic("sleepTimeLimit")(sleepTimeLimit.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(sleepSpeedLimit)) __obj.updateDynamic("sleepSpeedLimit")(sleepSpeedLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sleepTimeLimit)) __obj.updateDynamic("sleepTimeLimit")(sleepTimeLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyOptions]
   }

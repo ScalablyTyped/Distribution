@@ -54,30 +54,30 @@ trait PageSettings extends js.Object {
 object PageSettings {
   @scala.inline
   def apply(
-    currentPage: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
     enableQueryString: js.UndefOr[Boolean] = js.undefined,
     enableTemplates: js.UndefOr[Boolean] = js.undefined,
-    pageCount: Int | Double = null,
-    pageSize: Int | Double = null,
+    pageCount: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageSizeList: js.Array[_] = null,
     printMode: PrintMode | String = null,
     showDefaults: js.UndefOr[Boolean] = js.undefined,
     template: String = null,
-    totalPages: Int | Double = null,
-    totalRecordsCount: Int | Double = null
+    totalPages: js.UndefOr[Double] = js.undefined,
+    totalRecordsCount: js.UndefOr[Double] = js.undefined
   ): PageSettings = {
     val __obj = js.Dynamic.literal()
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableQueryString)) __obj.updateDynamic("enableQueryString")(enableQueryString.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTemplates)) __obj.updateDynamic("enableTemplates")(enableTemplates.asInstanceOf[js.Any])
-    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableQueryString)) __obj.updateDynamic("enableQueryString")(enableQueryString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTemplates)) __obj.updateDynamic("enableTemplates")(enableTemplates.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageCount)) __obj.updateDynamic("pageCount")(pageCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageSizeList != null) __obj.updateDynamic("pageSizeList")(pageSizeList.asInstanceOf[js.Any])
     if (printMode != null) __obj.updateDynamic("printMode")(printMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDefaults)) __obj.updateDynamic("showDefaults")(showDefaults.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDefaults)) __obj.updateDynamic("showDefaults")(showDefaults.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
-    if (totalRecordsCount != null) __obj.updateDynamic("totalRecordsCount")(totalRecordsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalPages)) __obj.updateDynamic("totalPages")(totalPages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalRecordsCount)) __obj.updateDynamic("totalRecordsCount")(totalRecordsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSettings]
   }
 }

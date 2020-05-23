@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,20 +24,6 @@ object ChartAxisTickMark extends js.Object {
   
   @js.native
   sealed trait outside extends ChartAxisTickMark
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartAxisTickMark with String] = js.native
-  /* "Cross" */ @js.native
-  object cross extends TopLevel[cross with String]
-  
-  /* "Inside" */ @js.native
-  object inside extends TopLevel[inside with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Outside" */ @js.native
-  object outside extends TopLevel[outside with String]
   
 }
 

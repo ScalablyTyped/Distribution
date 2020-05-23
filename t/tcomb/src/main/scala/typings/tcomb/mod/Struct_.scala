@@ -1,7 +1,7 @@
 package typings.tcomb.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.tcomb.AnonDefaultProps
+import typings.tcomb.anon.DefaultProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Struct_[T]
   extends Type[T]
      with Instantiable1[/* value */ T, T] {
   @JSName("meta")
-  var meta_Struct_ : AnonDefaultProps = js.native
+  var meta_Struct_ : DefaultProps = js.native
   @JSName("update")
   var update_Original: Update_[T] = js.native
   def extend[E /* <: T */](mixins: js.Array[StructMixin]): Struct_[E] = js.native

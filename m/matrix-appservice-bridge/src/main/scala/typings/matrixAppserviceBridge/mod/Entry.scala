@@ -28,10 +28,7 @@ object Entry {
     matrix: MatrixRoom = null,
     remote: RemoteRoom = null
   ): Entry = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], matrix_id = matrix_id.asInstanceOf[js.Any], remote_id = remote_id.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
-    if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], matrix_id = matrix_id.asInstanceOf[js.Any], remote_id = remote_id.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entry]
   }
 }

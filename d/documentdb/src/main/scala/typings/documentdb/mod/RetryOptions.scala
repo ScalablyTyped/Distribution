@@ -16,14 +16,14 @@ trait RetryOptions extends js.Object {
 object RetryOptions {
   @scala.inline
   def apply(
-    FixedRetryIntervalInMilliseconds: Int | Double = null,
-    MaxRetryAttemptCount: Int | Double = null,
-    MaxWaitTimeInSeconds: Int | Double = null
+    FixedRetryIntervalInMilliseconds: js.UndefOr[Double] = js.undefined,
+    MaxRetryAttemptCount: js.UndefOr[Double] = js.undefined,
+    MaxWaitTimeInSeconds: js.UndefOr[Double] = js.undefined
   ): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (FixedRetryIntervalInMilliseconds != null) __obj.updateDynamic("FixedRetryIntervalInMilliseconds")(FixedRetryIntervalInMilliseconds.asInstanceOf[js.Any])
-    if (MaxRetryAttemptCount != null) __obj.updateDynamic("MaxRetryAttemptCount")(MaxRetryAttemptCount.asInstanceOf[js.Any])
-    if (MaxWaitTimeInSeconds != null) __obj.updateDynamic("MaxWaitTimeInSeconds")(MaxWaitTimeInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(FixedRetryIntervalInMilliseconds)) __obj.updateDynamic("FixedRetryIntervalInMilliseconds")(FixedRetryIntervalInMilliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRetryAttemptCount)) __obj.updateDynamic("MaxRetryAttemptCount")(MaxRetryAttemptCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxWaitTimeInSeconds)) __obj.updateDynamic("MaxWaitTimeInSeconds")(MaxWaitTimeInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
 }

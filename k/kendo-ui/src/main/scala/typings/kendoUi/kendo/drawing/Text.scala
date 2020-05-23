@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.drawing.Text")
 @js.native
-class Text protected () extends Element {
-  def this(content: String, position: Point) = this()
-  def this(content: String, position: Point, options: TextOptions) = this()
+trait Text extends Element {
   @JSName("options")
   var options_Text: TextOptions = js.native
   def content(): String = js.native

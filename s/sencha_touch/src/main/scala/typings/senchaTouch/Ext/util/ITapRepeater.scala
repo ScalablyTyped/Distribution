@@ -9,42 +9,42 @@ import scala.scalajs.js.annotation._
 trait ITapRepeater
   extends typings.senchaTouch.Ext.mixin.IObservable {
   /** [Method] Returns the value of accelerate
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAccelerate: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of delay
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getDelay: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of el
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getEl: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of interval
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getInterval: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of pressCls
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getPressCls: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of preventDefault
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getPreventDefault: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of stopDefault
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getStopDefault: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of timer
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getTimer: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_ITapRepeater: js.UndefOr[
     js.Function2[
@@ -54,36 +54,36 @@ trait ITapRepeater
     ]
   ] = js.undefined
   /** [Method] Sets the value of accelerate
-  		* @param accelerate Boolean The new value.
-  		*/
+    * @param accelerate Boolean The new value.
+    */
   var setAccelerate: js.UndefOr[js.Function1[/* accelerate */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of delay
-  		* @param delay Number The new value.
-  		*/
+    * @param delay Number The new value.
+    */
   var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of el
-  		* @param el Object The new value.
-  		*/
+    * @param el Object The new value.
+    */
   var setEl: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of interval
-  		* @param interval Number The new value.
-  		*/
+    * @param interval Number The new value.
+    */
   var setInterval: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of pressCls
-  		* @param pressCls Object The new value.
-  		*/
+    * @param pressCls Object The new value.
+    */
   var setPressCls: js.UndefOr[js.Function1[/* pressCls */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of preventDefault
-  		* @param preventDefault Boolean The new value.
-  		*/
+    * @param preventDefault Boolean The new value.
+    */
   var setPreventDefault: js.UndefOr[js.Function1[/* preventDefault */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of stopDefault
-  		* @param stopDefault Boolean The new value.
-  		*/
+    * @param stopDefault Boolean The new value.
+    */
   var setStopDefault: js.UndefOr[js.Function1[/* stopDefault */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of timer
-  		* @param timer Number The new value.
-  		*/
+    * @param timer Number The new value.
+    */
   var setTimer: js.UndefOr[js.Function1[/* timer */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -215,7 +215,7 @@ object ITapRepeater {
     if (setPreventDefault != null) __obj.updateDynamic("setPreventDefault")(js.Any.fromFunction1(setPreventDefault))
     if (setStopDefault != null) __obj.updateDynamic("setStopDefault")(js.Any.fromFunction1(setStopDefault))
     if (setTimer != null) __obj.updateDynamic("setTimer")(js.Any.fromFunction1(setTimer))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

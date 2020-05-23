@@ -16,14 +16,14 @@ object NativeRouterProps {
   def apply(
     getUserConfirmation: js.Function = null,
     initialEntries: js.Array[String] = null,
-    initialIndex: Int | Double = null,
-    keyLength: Int | Double = null
+    initialIndex: js.UndefOr[Double] = js.undefined,
+    keyLength: js.UndefOr[Double] = js.undefined
   ): NativeRouterProps = {
     val __obj = js.Dynamic.literal()
     if (getUserConfirmation != null) __obj.updateDynamic("getUserConfirmation")(getUserConfirmation.asInstanceOf[js.Any])
     if (initialEntries != null) __obj.updateDynamic("initialEntries")(initialEntries.asInstanceOf[js.Any])
-    if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
-    if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialIndex)) __obj.updateDynamic("initialIndex")(initialIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyLength)) __obj.updateDynamic("keyLength")(keyLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeRouterProps]
   }
 }

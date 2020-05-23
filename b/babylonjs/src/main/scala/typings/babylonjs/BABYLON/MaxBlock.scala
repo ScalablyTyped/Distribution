@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.MaxBlock")
 @js.native
-class MaxBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new MaxBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait MaxBlock extends NodeMaterialBlock {
   /**
     * Gets the left operand input component
     */

@@ -102,27 +102,27 @@ object ObjectSymbol3DLayerProperties {
     anchor: center | top | bottom | origin | relative = null,
     anchorPosition: ObjectSymbol3DLayerAnchorPosition = null,
     castShadows: js.UndefOr[Boolean] = js.undefined,
-    depth: Int | Double = null,
-    heading: Int | Double = null,
-    height: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
+    heading: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     material: ObjectSymbol3DLayerMaterialProperties = null,
     resource: ObjectSymbol3DLayerResource = null,
-    roll: Int | Double = null,
-    tilt: Int | Double = null,
-    width: Int | Double = null
+    roll: js.UndefOr[Double] = js.undefined,
+    tilt: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): ObjectSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (anchorPosition != null) __obj.updateDynamic("anchorPosition")(anchorPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (roll != null) __obj.updateDynamic("roll")(roll.asInstanceOf[js.Any])
-    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(roll)) __obj.updateDynamic("roll")(roll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tilt)) __obj.updateDynamic("tilt")(tilt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectSymbol3DLayerProperties]
   }
 }

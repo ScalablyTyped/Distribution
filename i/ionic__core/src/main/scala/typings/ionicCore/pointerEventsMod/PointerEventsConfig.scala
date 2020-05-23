@@ -27,12 +27,12 @@ object PointerEventsConfig {
     zone: js.UndefOr[Boolean] = js.undefined
   ): PointerEventsConfig = {
     val __obj = js.Dynamic.literal(pointerDown = js.Any.fromFunction1(pointerDown))
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.get.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive.asInstanceOf[js.Any])
+    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive.get.asInstanceOf[js.Any])
     if (pointerMove != null) __obj.updateDynamic("pointerMove")(js.Any.fromFunction1(pointerMove))
     if (pointerUp != null) __obj.updateDynamic("pointerUp")(js.Any.fromFunction1(pointerUp))
-    if (!js.isUndefined(zone)) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
+    if (!js.isUndefined(zone)) __obj.updateDynamic("zone")(zone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerEventsConfig]
   }
 }

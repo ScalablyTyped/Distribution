@@ -12,11 +12,11 @@ trait AnnotationsControlPointStyleOptions extends js.Object {
 
 object AnnotationsControlPointStyleOptions {
   @scala.inline
-  def apply(fill: String = null, stroke: String = null, `stroke-width`: Int | Double = null): AnnotationsControlPointStyleOptions = {
+  def apply(fill: String = null, stroke: String = null, `stroke-width`: js.UndefOr[Double] = js.undefined): AnnotationsControlPointStyleOptions = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (`stroke-width` != null) __obj.updateDynamic("stroke-width")(`stroke-width`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`stroke-width`)) __obj.updateDynamic("stroke-width")(`stroke-width`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsControlPointStyleOptions]
   }
 }

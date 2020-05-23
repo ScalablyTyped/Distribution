@@ -4,13 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.ReferenceEntry")
-@js.native
-class ReferenceEntry protected () extends js.Object {
-  def this(fileName: String, minChar: Double, limChar: Double, isWriteAccess: Boolean) = this()
-  var fileName: String = js.native
-  var isWriteAccess: Boolean = js.native
-  var limChar: Double = js.native
-  var minChar: Double = js.native
+trait ReferenceEntry extends js.Object {
+  var fileName: String
+  var isWriteAccess: Boolean
+  var limChar: Double
+  var minChar: Double
+}
+
+object ReferenceEntry {
+  @scala.inline
+  def apply(fileName: String, isWriteAccess: Boolean, limChar: Double, minChar: Double): ReferenceEntry = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isWriteAccess = isWriteAccess.asInstanceOf[js.Any], limChar = limChar.asInstanceOf[js.Any], minChar = minChar.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReferenceEntry]
+  }
 }
 

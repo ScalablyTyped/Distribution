@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,7 +57,20 @@ trait ActionBase extends js.Object {
   var visible: Boolean
 }
 
-@JSGlobal("__esri.ActionBase")
-@js.native
-object ActionBase extends TopLevel[ActionBaseConstructor]
+object ActionBase {
+  @scala.inline
+  def apply(
+    active: Boolean,
+    className: String,
+    disabled: Boolean,
+    id: String,
+    title: String,
+    `type`: String,
+    visible: Boolean
+  ): ActionBase = {
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActionBase]
+  }
+}
 

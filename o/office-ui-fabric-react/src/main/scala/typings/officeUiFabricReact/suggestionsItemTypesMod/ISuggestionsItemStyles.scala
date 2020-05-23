@@ -16,11 +16,15 @@ trait ISuggestionsItemStyles extends js.Object {
 
 object ISuggestionsItemStyles {
   @scala.inline
-  def apply(closeButton: IStyle = null, itemButton: IStyle = null, root: IStyle = null): ISuggestionsItemStyles = {
+  def apply(
+    closeButton: js.UndefOr[Null | IStyle] = js.undefined,
+    itemButton: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
+  ): ISuggestionsItemStyles = {
     val __obj = js.Dynamic.literal()
-    if (closeButton != null) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (itemButton != null) __obj.updateDynamic("itemButton")(itemButton.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemButton)) __obj.updateDynamic("itemButton")(itemButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuggestionsItemStyles]
   }
 }

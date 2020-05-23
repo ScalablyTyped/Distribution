@@ -84,7 +84,7 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    StringDictionary: /* property */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     abortOnLimit: js.UndefOr[Boolean] = js.undefined,
     createParentPath: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
@@ -94,24 +94,24 @@ object Options {
     responseOnLimit: String = null,
     safeFileNames: Boolean | RegExp = null,
     tempFileDir: String = null,
-    uploadTimeout: Int | Double = null,
+    uploadTimeout: js.UndefOr[Double] = js.undefined,
     uriDecodeFileNames: js.UndefOr[Boolean] = js.undefined,
     useTempFiles: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(abortOnLimit)) __obj.updateDynamic("abortOnLimit")(abortOnLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(createParentPath)) __obj.updateDynamic("createParentPath")(createParentPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortOnLimit)) __obj.updateDynamic("abortOnLimit")(abortOnLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(createParentPath)) __obj.updateDynamic("createParentPath")(createParentPath.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (limitHandler != null) __obj.updateDynamic("limitHandler")(limitHandler.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseNested)) __obj.updateDynamic("parseNested")(parseNested.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseNested)) __obj.updateDynamic("parseNested")(parseNested.get.asInstanceOf[js.Any])
     if (preserveExtension != null) __obj.updateDynamic("preserveExtension")(preserveExtension.asInstanceOf[js.Any])
     if (responseOnLimit != null) __obj.updateDynamic("responseOnLimit")(responseOnLimit.asInstanceOf[js.Any])
     if (safeFileNames != null) __obj.updateDynamic("safeFileNames")(safeFileNames.asInstanceOf[js.Any])
     if (tempFileDir != null) __obj.updateDynamic("tempFileDir")(tempFileDir.asInstanceOf[js.Any])
-    if (uploadTimeout != null) __obj.updateDynamic("uploadTimeout")(uploadTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(uriDecodeFileNames)) __obj.updateDynamic("uriDecodeFileNames")(uriDecodeFileNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTempFiles)) __obj.updateDynamic("useTempFiles")(useTempFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(uploadTimeout)) __obj.updateDynamic("uploadTimeout")(uploadTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uriDecodeFileNames)) __obj.updateDynamic("uriDecodeFileNames")(uriDecodeFileNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTempFiles)) __obj.updateDynamic("useTempFiles")(useTempFiles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -20,7 +20,7 @@ object LoadBalancerTlsCertificateSummary {
   @scala.inline
   def apply(isAttached: js.UndefOr[Boolean] = js.undefined, name: ResourceName = null): LoadBalancerTlsCertificateSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerTlsCertificateSummary]
   }

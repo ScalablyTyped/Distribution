@@ -13,10 +13,10 @@ trait RevealCSSOptions extends js.Object {
 
 object RevealCSSOptions {
   @scala.inline
-  def apply(display: String = null, opacity: Int | Double = null, visibility: String = null): RevealCSSOptions = {
+  def apply(display: String = null, opacity: js.UndefOr[Double] = js.undefined, visibility: String = null): RevealCSSOptions = {
     val __obj = js.Dynamic.literal()
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevealCSSOptions]
   }

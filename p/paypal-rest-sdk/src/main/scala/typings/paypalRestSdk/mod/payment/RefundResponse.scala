@@ -23,7 +23,7 @@ object RefundResponse {
     httpStatusCode: Double,
     id: String,
     capture_id: String = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     create_time: String = null,
     description: String = null,
     fmf_details: FraudManagementFiltersDetails = null,
@@ -41,12 +41,12 @@ object RefundResponse {
     refund_reason_code: String = null,
     sale_id: String = null,
     state: String = null,
-    total_count: Int | Double = null,
+    total_count: js.UndefOr[Double] = js.undefined,
     update_time: String = null
   ): RefundResponse = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], httpStatusCode = httpStatusCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     if (capture_id != null) __obj.updateDynamic("capture_id")(capture_id.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (fmf_details != null) __obj.updateDynamic("fmf_details")(fmf_details.asInstanceOf[js.Any])
@@ -64,7 +64,7 @@ object RefundResponse {
     if (refund_reason_code != null) __obj.updateDynamic("refund_reason_code")(refund_reason_code.asInstanceOf[js.Any])
     if (sale_id != null) __obj.updateDynamic("sale_id")(sale_id.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_count)) __obj.updateDynamic("total_count")(total_count.get.asInstanceOf[js.Any])
     if (update_time != null) __obj.updateDynamic("update_time")(update_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefundResponse]
   }

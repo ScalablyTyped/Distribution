@@ -8,6 +8,6 @@ package object propsMod {
   type HTMLDivProps = typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement]
   type HTMLInputProps = typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement]
   type MaybeElement = js.UndefOr[
-    typings.react.mod._Global_.JSX.Element | typings.blueprintjsCore.blueprintjsCoreBooleans.`false` | scala.Null
+    typings.react.mod.global.JSX.Element | typings.blueprintjsCore.blueprintjsCoreBooleans.`false` | scala.Null
   ]
 }

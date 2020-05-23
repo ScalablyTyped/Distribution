@@ -37,7 +37,7 @@ object ThemeVars {
     base: light | dark,
     appBg: String = null,
     appBorderColor: String = null,
-    appBorderRadius: Int | Double = null,
+    appBorderRadius: js.UndefOr[Double] = js.undefined,
     appContentBg: String = null,
     barBg: String = null,
     barSelectedColor: String = null,
@@ -49,10 +49,10 @@ object ThemeVars {
     colorSecondary: String = null,
     fontBase: String = null,
     fontCode: String = null,
-    gridCellSize: Int | Double = null,
+    gridCellSize: js.UndefOr[Double] = js.undefined,
     inputBg: String = null,
     inputBorder: String = null,
-    inputBorderRadius: Int | Double = null,
+    inputBorderRadius: js.UndefOr[Double] = js.undefined,
     inputTextColor: String = null,
     textColor: String = null,
     textInverseColor: String = null
@@ -60,7 +60,7 @@ object ThemeVars {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any])
     if (appBg != null) __obj.updateDynamic("appBg")(appBg.asInstanceOf[js.Any])
     if (appBorderColor != null) __obj.updateDynamic("appBorderColor")(appBorderColor.asInstanceOf[js.Any])
-    if (appBorderRadius != null) __obj.updateDynamic("appBorderRadius")(appBorderRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(appBorderRadius)) __obj.updateDynamic("appBorderRadius")(appBorderRadius.get.asInstanceOf[js.Any])
     if (appContentBg != null) __obj.updateDynamic("appContentBg")(appContentBg.asInstanceOf[js.Any])
     if (barBg != null) __obj.updateDynamic("barBg")(barBg.asInstanceOf[js.Any])
     if (barSelectedColor != null) __obj.updateDynamic("barSelectedColor")(barSelectedColor.asInstanceOf[js.Any])
@@ -72,10 +72,10 @@ object ThemeVars {
     if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
     if (fontBase != null) __obj.updateDynamic("fontBase")(fontBase.asInstanceOf[js.Any])
     if (fontCode != null) __obj.updateDynamic("fontCode")(fontCode.asInstanceOf[js.Any])
-    if (gridCellSize != null) __obj.updateDynamic("gridCellSize")(gridCellSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridCellSize)) __obj.updateDynamic("gridCellSize")(gridCellSize.get.asInstanceOf[js.Any])
     if (inputBg != null) __obj.updateDynamic("inputBg")(inputBg.asInstanceOf[js.Any])
     if (inputBorder != null) __obj.updateDynamic("inputBorder")(inputBorder.asInstanceOf[js.Any])
-    if (inputBorderRadius != null) __obj.updateDynamic("inputBorderRadius")(inputBorderRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputBorderRadius)) __obj.updateDynamic("inputBorderRadius")(inputBorderRadius.get.asInstanceOf[js.Any])
     if (inputTextColor != null) __obj.updateDynamic("inputTextColor")(inputTextColor.asInstanceOf[js.Any])
     if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     if (textInverseColor != null) __obj.updateDynamic("textInverseColor")(textInverseColor.asInstanceOf[js.Any])

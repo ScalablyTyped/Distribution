@@ -15,11 +15,15 @@ trait CacheOptions extends js.Object {
 
 object CacheOptions {
   @scala.inline
-  def apply(files: Int | Double = null, items: Int | Double = null, memory: Int | Double = null): CacheOptions = {
+  def apply(
+    files: js.UndefOr[Double] = js.undefined,
+    items: js.UndefOr[Double] = js.undefined,
+    memory: js.UndefOr[Double] = js.undefined
+  ): CacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (!js.isUndefined(files)) __obj.updateDynamic("files")(files.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOptions]
   }
 }

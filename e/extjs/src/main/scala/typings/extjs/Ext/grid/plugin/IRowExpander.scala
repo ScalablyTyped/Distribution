@@ -14,8 +14,8 @@ trait IRowExpander extends IAbstractPlugin {
   /** [Config Option] (Boolean) */
   var expandOnEnter: js.UndefOr[Boolean] = js.undefined
   /** [Method] The init method is invoked after initComponent method has been run for the client Component
-  		* @param grid Object
-  		*/
+    * @param grid Object
+    */
   @JSName("init")
   var init_IRowExpander: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
@@ -65,22 +65,22 @@ object IRowExpander {
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
-    if (!js.isUndefined(expandOnDblClick)) __obj.updateDynamic("expandOnDblClick")(expandOnDblClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandOnEnter)) __obj.updateDynamic("expandOnEnter")(expandOnEnter.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandOnDblClick)) __obj.updateDynamic("expandOnDblClick")(expandOnDblClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandOnEnter)) __obj.updateDynamic("expandOnEnter")(expandOnEnter.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (getCmp != null) __obj.updateDynamic("getCmp")(js.Any.fromFunction0(getCmp))
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (pluginId != null) __obj.updateDynamic("pluginId")(pluginId.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectRowOnExpand)) __obj.updateDynamic("selectRowOnExpand")(selectRowOnExpand.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectRowOnExpand)) __obj.updateDynamic("selectRowOnExpand")(selectRowOnExpand.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setCmp != null) __obj.updateDynamic("setCmp")(js.Any.fromFunction1(setCmp))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRowExpander]

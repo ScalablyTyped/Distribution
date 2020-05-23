@@ -16,14 +16,14 @@ object AccountsCustomBatchResponseEntry {
   @scala.inline
   def apply(
     account: Account = null,
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     errors: Errors = null,
     kind: String = null,
     linkStatus: String = null
   ): AccountsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (linkStatus != null) __obj.updateDynamic("linkStatus")(linkStatus.asInstanceOf[js.Any])

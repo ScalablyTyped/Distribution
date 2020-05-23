@@ -15,7 +15,7 @@ object OperationResult {
   def apply[T](newDocument: T, removed: js.Any = null, test: js.UndefOr[Boolean] = js.undefined): OperationResult[T] = {
     val __obj = js.Dynamic.literal(newDocument = newDocument.asInstanceOf[js.Any])
     if (removed != null) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
-    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationResult[T]]
   }
 }

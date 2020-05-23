@@ -14,9 +14,9 @@ trait Parameters extends js.Object {
 
 object Parameters {
   @scala.inline
-  def apply(ExcludeBootVolume: js.UndefOr[Boolean] = js.undefined): Parameters = {
+  def apply(ExcludeBootVolume: js.UndefOr[ExcludeBootVolume] = js.undefined): Parameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ExcludeBootVolume)) __obj.updateDynamic("ExcludeBootVolume")(ExcludeBootVolume.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExcludeBootVolume)) __obj.updateDynamic("ExcludeBootVolume")(ExcludeBootVolume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters]
   }
 }

@@ -48,6 +48,6 @@ package object zepto {
     /* data */ js.Any, 
     scala.Unit
   ]
-  type ZeptoEventHandler = js.Function2[/* e */ typings.std.Event_, /* repeated */ js.Any, js.Any]
+  type ZeptoEventHandler = js.Function2[/* e */ typings.std.Event, /* repeated */ js.Any, js.Any]
   type ZeptoEventHandlers = org.scalablytyped.runtime.StringDictionary[typings.zepto.ZeptoEventHandler]
 }

@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
-import typings.winjs.AnonFull
 import typings.winjs.WinJS.Binding.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,16 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * Displays ICommands within the flow of the app. Use the ToolBar around other statically positioned app content.
   **/
-@JSGlobal("WinJS.UI.ToolBar")
 @js.native
-/**
-  * Creates a new ToolBar control.
-  * @param element The DOM element that will host the control.
-  * @param options The set of properties and values to apply to the new ToolBar.
-  **/
-class ToolBar () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait ToolBar extends js.Object {
   /**
     * Gets or sets the closedDisplayMode for the ToolBar. Values are "compact" and "full".
     **/
@@ -108,19 +99,5 @@ class ToolBar () extends js.Object {
     * @param commands The commands to show. The array elements may be ICommand objects, or the string identifiers (IDs) of commands.
     **/
   def showOnlyCommands(commands: js.Array[String | ICommand]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.ToolBar")
-@js.native
-object ToolBar extends js.Object {
-  /**
-    * Display options for the closed ToolBar.
-    **/
-  var ClosedDisplayMode: AnonFull = js.native
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

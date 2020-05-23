@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullContainerSymbol")
 @js.native
-class PullContainerSymbol protected () extends PullTypeSymbol {
-  def this(name: String, kind: PullElementKind) = this()
+trait PullContainerSymbol extends PullTypeSymbol {
   var assignedContainer: js.Any = js.native
   var assignedType: js.Any = js.native
   var assignedValue: js.Any = js.native
@@ -22,12 +20,5 @@ class PullContainerSymbol protected () extends PullTypeSymbol {
   def setExportAssignedTypeSymbol(`type`: PullTypeSymbol): Unit = js.native
   def setExportAssignedValueSymbol(symbol: PullSymbol): Unit = js.native
   def setInstanceSymbol(symbol: PullSymbol): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.PullContainerSymbol")
-@js.native
-object PullContainerSymbol extends js.Object {
-  def usedAsSymbol(containerSymbol: PullSymbol, symbol: PullSymbol): Boolean = js.native
 }
 

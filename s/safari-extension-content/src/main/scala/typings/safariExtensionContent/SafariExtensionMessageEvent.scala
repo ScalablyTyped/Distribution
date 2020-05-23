@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait SafariExtensionMessageEvent extends SafariEvent {
   /**
-  	 * The message data.
-  	 */
+    * The message data.
+    */
   var message: js.Any
   /**
-  	 * The name of the message.
-  	 */
+    * The name of the message.
+    */
   var name: String
 }
 

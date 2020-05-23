@@ -29,7 +29,7 @@ trait VivusOptions extends js.Object {
     */
   var dashGap: js.UndefOr[Double] = js.undefined
   /**
-    * 	Time between the drawing of first and last path, in frames (only for `delayed` animations).
+    *     Time between the drawing of first and last path, in frames (only for `delayed` animations).
     */
   var delay: js.UndefOr[Double] = js.undefined
   /**
@@ -91,9 +91,9 @@ object VivusOptions {
   @scala.inline
   def apply(
     animTimingFunction: /* input */ Double => Double = null,
-    dashGap: Int | Double = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
+    dashGap: js.UndefOr[Double] = js.undefined,
+    delay: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     file: String = null,
     forceRender: js.UndefOr[Boolean] = js.undefined,
     onReady: /* vivusInstance */ Vivus => Unit = null,
@@ -105,15 +105,15 @@ object VivusOptions {
   ): VivusOptions = {
     val __obj = js.Dynamic.literal()
     if (animTimingFunction != null) __obj.updateDynamic("animTimingFunction")(js.Any.fromFunction1(animTimingFunction))
-    if (dashGap != null) __obj.updateDynamic("dashGap")(dashGap.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(dashGap)) __obj.updateDynamic("dashGap")(dashGap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.get.asInstanceOf[js.Any])
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
     if (pathTimingFunction != null) __obj.updateDynamic("pathTimingFunction")(js.Any.fromFunction1(pathTimingFunction))
-    if (!js.isUndefined(reverseStack)) __obj.updateDynamic("reverseStack")(reverseStack.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfDestroy)) __obj.updateDynamic("selfDestroy")(selfDestroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseStack)) __obj.updateDynamic("reverseStack")(reverseStack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfDestroy)) __obj.updateDynamic("selfDestroy")(selfDestroy.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VivusOptions]

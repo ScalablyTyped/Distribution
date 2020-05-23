@@ -52,7 +52,7 @@ object IOptions {
     mode: Mode = null,
     overlay: IOverlay = null,
     renderer: IRenderer = null,
-    spacing: Int | Double = null,
+    spacing: js.UndefOr[Double] = js.undefined,
     tabsMovable: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
@@ -60,8 +60,8 @@ object IOptions {
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabsMovable)) __obj.updateDynamic("tabsMovable")(tabsMovable.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabsMovable)) __obj.updateDynamic("tabsMovable")(tabsMovable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

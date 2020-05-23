@@ -20,10 +20,10 @@ object MigrationOptions {
     rollback: js.UndefOr[Boolean] = js.undefined
   ): MigrationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
-    if (!js.isUndefined(drop)) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
-    if (!js.isUndefined(execute)) __obj.updateDynamic("execute")(execute.asInstanceOf[js.Any])
-    if (!js.isUndefined(rollback)) __obj.updateDynamic("rollback")(rollback.asInstanceOf[js.Any])
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drop)) __obj.updateDynamic("drop")(drop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(execute)) __obj.updateDynamic("execute")(execute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollback)) __obj.updateDynamic("rollback")(rollback.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationOptions]
   }
 }

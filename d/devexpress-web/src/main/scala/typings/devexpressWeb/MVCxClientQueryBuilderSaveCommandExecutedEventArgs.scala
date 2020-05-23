@@ -7,17 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the MVCxClientQueryBuilder.SaveCommandExecuted event.
   */
-@JSGlobal("MVCxClientQueryBuilderSaveCommandExecutedEventArgs")
-@js.native
-class MVCxClientQueryBuilderSaveCommandExecutedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the MVCxClientQueryBuilderSaveCommandExecutedEventArgs class with the specified settings.
-    * @param result An object that specifies the Save command execution result.
-    */
-  def this(result: String) = this()
+trait MVCxClientQueryBuilderSaveCommandExecutedEventArgs extends ASPxClientEventArgs {
   /**
     * Specifies the Save command execution result.
     */
-  var Result: String = js.native
+  var Result: String
+}
+
+object MVCxClientQueryBuilderSaveCommandExecutedEventArgs {
+  @scala.inline
+  def apply(Result: String): MVCxClientQueryBuilderSaveCommandExecutedEventArgs = {
+    val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MVCxClientQueryBuilderSaveCommandExecutedEventArgs]
+  }
 }
 

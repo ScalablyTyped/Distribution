@@ -57,26 +57,26 @@ object AnnotationsShapeOptions {
   def apply(
     dashStyle: DashStyleValue = null,
     fill: ColorString | GradientColorObject | PatternObject = null,
-    height: Int | Double = null,
-    r: Int | Double = null,
-    snap: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    r: js.UndefOr[Double] = js.undefined,
+    snap: js.UndefOr[Double] = js.undefined,
     src: String = null,
     stroke: ColorString = null,
-    strokeWidth: Int | Double = null,
+    strokeWidth: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): AnnotationsShapeOptions = {
     val __obj = js.Dynamic.literal()
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.get.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsShapeOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.dragdropInterfacesMod
 
-import typings.officeUiFabricReact.AnonCallback
+import typings.officeUiFabricReact.anon.Callback
 import typings.std.DragEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -29,7 +29,7 @@ trait IDragDropOptions extends js.Object {
   /**
     * Map of event name to callback function to subscribe to.
     */
-  var eventMap: js.UndefOr[js.Array[AnonCallback]] = js.undefined
+  var eventMap: js.UndefOr[js.Array[Callback]] = js.undefined
   /**
     * Unique key to associate with instance.
     */
@@ -82,7 +82,7 @@ object IDragDropOptions {
     updateDropState: (Boolean, DragEvent) => Unit,
     canDrag: /* item */ js.UndefOr[js.Any] => Boolean = null,
     canDrop: (/* dropContext */ js.UndefOr[IDragDropContext], /* dragContext */ js.UndefOr[IDragDropContext]) => Boolean = null,
-    eventMap: js.Array[AnonCallback] = null,
+    eventMap: js.Array[Callback] = null,
     key: String = null,
     onDragEnd: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit = null,
     onDragOver: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit = null,

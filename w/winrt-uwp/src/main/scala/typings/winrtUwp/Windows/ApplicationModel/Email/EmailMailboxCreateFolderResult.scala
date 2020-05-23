@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the result of a TryCreateFolderAsync operation. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailMailboxCreateFolderResult")
-@js.native
-abstract class EmailMailboxCreateFolderResult () extends js.Object {
+trait EmailMailboxCreateFolderResult extends js.Object {
   /** Get the newly created folder after a TryCreateFolderAsync operation. */
-  var folder: EmailFolder = js.native
+  var folder: EmailFolder
   /** Gets the status of a TryCreateFolderAsync operation. */
-  var status: EmailMailboxCreateFolderStatus = js.native
+  var status: EmailMailboxCreateFolderStatus
+}
+
+object EmailMailboxCreateFolderResult {
+  @scala.inline
+  def apply(folder: EmailFolder, status: EmailMailboxCreateFolderStatus): EmailMailboxCreateFolderResult = {
+    val __obj = js.Dynamic.literal(folder = folder.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EmailMailboxCreateFolderResult]
+  }
 }
 

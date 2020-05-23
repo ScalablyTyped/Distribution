@@ -13,7 +13,7 @@ object KnownUser {
   @scala.inline
   def apply(isCurrentUser: js.UndefOr[Boolean] = js.undefined, personName: String = null): KnownUser = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isCurrentUser)) __obj.updateDynamic("isCurrentUser")(isCurrentUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCurrentUser)) __obj.updateDynamic("isCurrentUser")(isCurrentUser.get.asInstanceOf[js.Any])
     if (personName != null) __obj.updateDynamic("personName")(personName.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnownUser]
   }

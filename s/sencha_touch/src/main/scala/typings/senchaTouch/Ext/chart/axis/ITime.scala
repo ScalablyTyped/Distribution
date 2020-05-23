@@ -16,50 +16,50 @@ trait ITime extends INumeric {
   /** [Config Option] (Date) */
   var fromDate: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of calculateByLabelSize
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getCalculateByLabelSize: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Mapping data value into coordinate
-  		* @param value Object
-  		* @returns Number
-  		*/
+    * @param value Object
+    * @returns Number
+    */
   @JSName("getCoordFor")
   var getCoordFor_ITime: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Double]] = js.undefined
   /** [Method] Returns the value of dateFormat
-  		* @returns String/Boolean
-  		*/
+    * @returns String/Boolean
+    */
   var getDateFormat: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of fromDate
-  		* @returns Date
-  		*/
+    * @returns Date
+    */
   var getFromDate: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of step
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getStep: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of toDate
-  		* @returns Date
-  		*/
+    * @returns Date
+    */
   var getToDate: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of calculateByLabelSize
-  		* @param calculateByLabelSize Boolean The new value.
-  		*/
+    * @param calculateByLabelSize Boolean The new value.
+    */
   var setCalculateByLabelSize: js.UndefOr[js.Function1[/* calculateByLabelSize */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of dateFormat
-  		* @param dateFormat String/Boolean The new value.
-  		*/
+    * @param dateFormat String/Boolean The new value.
+    */
   var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of fromDate
-  		* @param fromDate Date The new value.
-  		*/
+    * @param fromDate Date The new value.
+    */
   var setFromDate: js.UndefOr[js.Function1[/* fromDate */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of step
-  		* @param step Array The new value.
-  		*/
+    * @param step Array The new value.
+    */
   var setStep: js.UndefOr[js.Function1[/* step */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of toDate
-  		* @param toDate Date The new value.
-  		*/
+    * @param toDate Date The new value.
+    */
   var setToDate: js.UndefOr[js.Function1[/* toDate */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Array) */
   var step: js.UndefOr[Array] = js.undefined
@@ -132,19 +132,19 @@ object ITime {
     grid: js.Any = null,
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
-    increment: Int | Double = null,
+    increment: js.UndefOr[Double] = js.undefined,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     label: js.Any = null,
     labelInSpan: js.UndefOr[Boolean] = js.undefined,
     layout: js.Any = null,
     listeners: js.Any = null,
-    majorTickSteps: Int | Double = null,
-    maxZoom: Int | Double = null,
-    maximum: Int | Double = null,
-    minZoom: Int | Double = null,
-    minimum: Int | Double = null,
-    minorTickSteps: Int | Double = null,
+    majorTickSteps: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    maximum: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
+    minimum: js.UndefOr[Double] = js.undefined,
+    minorTickSteps: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
@@ -202,7 +202,7 @@ object ITime {
     style: js.Any = null,
     suspendEvents: () => Unit = null,
     title: js.Any = null,
-    titleMargin: Int | Double = null,
+    titleMargin: js.UndefOr[Double] = js.undefined,
     toDate: js.Any = null,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -220,7 +220,7 @@ object ITime {
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculateByLabelSize)) __obj.updateDynamic("calculateByLabelSize")(calculateByLabelSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculateByLabelSize)) __obj.updateDynamic("calculateByLabelSize")(calculateByLabelSize.get.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
@@ -272,24 +272,24 @@ object ITime {
     if (getVisibleRange != null) __obj.updateDynamic("getVisibleRange")(js.Any.fromFunction0(getVisibleRange))
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(increment)) __obj.updateDynamic("increment")(increment.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelInSpan)) __obj.updateDynamic("labelInSpan")(labelInSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelInSpan)) __obj.updateDynamic("labelInSpan")(labelInSpan.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (majorTickSteps != null) __obj.updateDynamic("majorTickSteps")(majorTickSteps.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (minorTickSteps != null) __obj.updateDynamic("minorTickSteps")(minorTickSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(majorTickSteps)) __obj.updateDynamic("majorTickSteps")(majorTickSteps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorTickSteps)) __obj.updateDynamic("minorTickSteps")(minorTickSteps.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (!js.isUndefined(needHighPrecision)) __obj.updateDynamic("needHighPrecision")(needHighPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(needHighPrecision)) __obj.updateDynamic("needHighPrecision")(needHighPrecision.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
@@ -337,13 +337,13 @@ object ITime {
     if (setTitleMargin != null) __obj.updateDynamic("setTitleMargin")(js.Any.fromFunction1(setTitleMargin))
     if (setToDate != null) __obj.updateDynamic("setToDate")(js.Any.fromFunction1(setToDate))
     if (setVisibleRange != null) __obj.updateDynamic("setVisibleRange")(js.Any.fromFunction1(setVisibleRange))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleMargin != null) __obj.updateDynamic("titleMargin")(titleMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleMargin)) __obj.updateDynamic("titleMargin")(titleMargin.get.asInstanceOf[js.Any])
     if (toDate != null) __obj.updateDynamic("toDate")(toDate.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))

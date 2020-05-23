@@ -15,10 +15,10 @@ trait TableIDOptions extends js.Object {
 
 object TableIDOptions {
   @scala.inline
-  def apply(sheetIdx: Int | Double = null, tableId: Int | Double = null): TableIDOptions = {
+  def apply(sheetIdx: js.UndefOr[Double] = js.undefined, tableId: js.UndefOr[Double] = js.undefined): TableIDOptions = {
     val __obj = js.Dynamic.literal()
-    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetIdx)) __obj.updateDynamic("sheetIdx")(sheetIdx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableId)) __obj.updateDynamic("tableId")(tableId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableIDOptions]
   }
 }

@@ -14,12 +14,12 @@ object BarValue {
   @scala.inline
   def apply(
     marker: String | js.Array[String] = null,
-    x: Int | Double = null,
+    x: js.UndefOr[Double] = js.undefined,
     y: Double | js.Array[Double] = null
   ): BarValue = {
     val __obj = js.Dynamic.literal()
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarValue]
   }

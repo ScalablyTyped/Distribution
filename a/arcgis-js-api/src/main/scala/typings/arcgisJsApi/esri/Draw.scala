@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,8 +63,4 @@ trait Draw extends Accessor {
     */
   def reset(): Unit = js.native
 }
-
-@JSGlobal("__esri.Draw")
-@js.native
-object Draw extends TopLevel[DrawConstructor]
 

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.StreetViewService")
 @js.native
-class StreetViewService () extends js.Object {
+trait StreetViewService extends js.Object {
   def getPanorama(
     request: StreetViewLocationRequest,
     cb: js.Function2[/* data */ StreetViewPanoramaData | Null, /* status */ StreetViewStatus, Unit]

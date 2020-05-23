@@ -3,7 +3,7 @@ package typings.reactVirtualized.esCollectionMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactVirtualized.esGridMod.ScrollParams
 import typings.reactVirtualized.esGridMod.SectionRenderedParams
 import typings.reactVirtualized.mod.Alignment
@@ -112,49 +112,42 @@ object CollectionProps {
     cellSizeAndPositionGetter: /* params */ Index => CollectionCellSizeAndPosition,
     height: Double,
     width: Double,
-    StringDictionary: /**
-    * PLEASE NOTE
-    * The [key: string]: any; line is here on purpose
-    * This is due to the need of force re-render of PureComponent
-    * Check the following link if you want to know more
-    * https://github.com/bvaughn/react-virtualized#pass-thru-props
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     `aria-label`: String = null,
     autoHeight: js.UndefOr[Boolean] = js.undefined,
     cellGroupRenderer: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode] = null,
     className: String = null,
-    horizontalOverscanSize: Int | Double = null,
+    horizontalOverscanSize: js.UndefOr[Double] = js.undefined,
     id: String = null,
     noContentRenderer: () => Element = null,
     onScroll: /* params */ ScrollParams => _ = null,
     onSectionRendered: /* params */ SectionRenderedParams => _ = null,
-    scrollLeft: Int | Double = null,
+    scrollLeft: js.UndefOr[Double] = js.undefined,
     scrollToAlignment: Alignment = null,
-    scrollToCell: Int | Double = null,
-    scrollTop: Int | Double = null,
-    sectionSize: Int | Double = null,
+    scrollToCell: js.UndefOr[Double] = js.undefined,
+    scrollTop: js.UndefOr[Double] = js.undefined,
+    sectionSize: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
-    verticalOverscanSize: Int | Double = null
+    verticalOverscanSize: js.UndefOr[Double] = js.undefined
   ): CollectionProps = {
     val __obj = js.Dynamic.literal(cellCount = cellCount.asInstanceOf[js.Any], cellRenderer = js.Any.fromFunction1(cellRenderer), cellSizeAndPositionGetter = js.Any.fromFunction1(cellSizeAndPositionGetter), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
     if (cellGroupRenderer != null) __obj.updateDynamic("cellGroupRenderer")(js.Any.fromFunction1(cellGroupRenderer))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (horizontalOverscanSize != null) __obj.updateDynamic("horizontalOverscanSize")(horizontalOverscanSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalOverscanSize)) __obj.updateDynamic("horizontalOverscanSize")(horizontalOverscanSize.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (noContentRenderer != null) __obj.updateDynamic("noContentRenderer")(js.Any.fromFunction0(noContentRenderer))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onSectionRendered != null) __obj.updateDynamic("onSectionRendered")(js.Any.fromFunction1(onSectionRendered))
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollLeft)) __obj.updateDynamic("scrollLeft")(scrollLeft.get.asInstanceOf[js.Any])
     if (scrollToAlignment != null) __obj.updateDynamic("scrollToAlignment")(scrollToAlignment.asInstanceOf[js.Any])
-    if (scrollToCell != null) __obj.updateDynamic("scrollToCell")(scrollToCell.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (sectionSize != null) __obj.updateDynamic("sectionSize")(sectionSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToCell)) __obj.updateDynamic("scrollToCell")(scrollToCell.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sectionSize)) __obj.updateDynamic("sectionSize")(sectionSize.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (verticalOverscanSize != null) __obj.updateDynamic("verticalOverscanSize")(verticalOverscanSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalOverscanSize)) __obj.updateDynamic("verticalOverscanSize")(verticalOverscanSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionProps]
   }
 }

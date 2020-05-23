@@ -5,12 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("USBIsochronousInTransferResult")
-@js.native
-class USBIsochronousInTransferResult protected () extends js.Object {
-  def this(packets: js.Array[USBIsochronousInTransferPacket]) = this()
-  def this(packets: js.Array[USBIsochronousInTransferPacket], data: DataView) = this()
-  val data: js.UndefOr[DataView] = js.native
-  val packets: js.Array[USBIsochronousInTransferPacket] = js.native
+trait USBIsochronousInTransferResult extends js.Object {
+  val data: js.UndefOr[DataView] = js.undefined
+  val packets: js.Array[USBIsochronousInTransferPacket]
+}
+
+object USBIsochronousInTransferResult {
+  @scala.inline
+  def apply(packets: js.Array[USBIsochronousInTransferPacket], data: DataView = null): USBIsochronousInTransferResult = {
+    val __obj = js.Dynamic.literal(packets = packets.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.asInstanceOf[USBIsochronousInTransferResult]
+  }
 }
 

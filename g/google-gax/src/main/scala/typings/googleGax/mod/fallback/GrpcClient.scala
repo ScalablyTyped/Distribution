@@ -1,6 +1,6 @@
 package typings.googleGax.mod.fallback
 
-import typings.googleGax.AnonAuth
+import typings.googleGax.anon.Auth
 import typings.googleGax.grpcMod.GrpcClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   */
 class GrpcClient ()
   extends typings.googleGax.fallbackMod.GrpcClient {
-  def this(options: AnonAuth) = this()
+  def this(options: Auth) = this()
   def this(options: GrpcClientOptions) = this()
 }
 

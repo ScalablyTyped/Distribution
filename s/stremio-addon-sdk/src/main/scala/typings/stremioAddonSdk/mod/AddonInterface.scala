@@ -1,6 +1,6 @@
 package typings.stremioAddonSdk.mod
 
-import typings.stremioAddonSdk.resourceShortManifestReso
+import typings.stremioAddonSdk.anon.resourceShortManifestReso
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

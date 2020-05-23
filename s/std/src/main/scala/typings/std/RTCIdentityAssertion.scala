@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +9,11 @@ trait RTCIdentityAssertion extends js.Object {
   var name: java.lang.String
 }
 
-@JSGlobal("RTCIdentityAssertion")
-@js.native
-object RTCIdentityAssertion
-  extends Instantiable2[/* idp */ java.lang.String, /* name */ java.lang.String, RTCIdentityAssertion]
+object RTCIdentityAssertion {
+  @scala.inline
+  def apply(idp: java.lang.String, name: java.lang.String): RTCIdentityAssertion = {
+    val __obj = js.Dynamic.literal(idp = idp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RTCIdentityAssertion]
+  }
+}
 

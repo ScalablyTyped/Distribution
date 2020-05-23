@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("__esri.Evented")
 @js.native
-class Evented () extends js.Object {
+trait Evented extends js.Object {
   /**
     * Emits an event on the instance. This method should only be used when creating subclasses of this class.
     *

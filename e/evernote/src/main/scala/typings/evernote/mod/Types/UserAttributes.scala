@@ -1,6 +1,6 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonBusinessAddress
+import typings.evernote.anon.BusinessAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.UserAttributes")
 @js.native
 class UserAttributes () extends js.Object {
-  def this(args: AnonBusinessAddress) = this()
+  def this(args: BusinessAddress) = this()
   var businessAddress: js.UndefOr[String] = js.native
   var clipFullPage: js.UndefOr[Boolean] = js.native
   var comments: js.UndefOr[String] = js.native

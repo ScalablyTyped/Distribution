@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.StartScreen
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object JumpListSystemGroupKind extends js.Object {
   /** Specifies that the system managed recent group be used in the jump list. */
   @js.native
   sealed trait recent extends JumpListSystemGroupKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[JumpListSystemGroupKind with Double] = js.native
-  /* 1 */ @js.native
-  object frequent extends TopLevel[frequent with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object recent extends TopLevel[recent with Double]
   
 }
 

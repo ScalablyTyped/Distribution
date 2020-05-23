@@ -6,12 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the TimedTextSource::Resolved event. */
-@JSGlobal("Windows.Media.Core.TimedTextSourceResolveResultEventArgs")
-@js.native
-abstract class TimedTextSourceResolveResultEventArgs () extends js.Object {
+trait TimedTextSourceResolveResultEventArgs extends js.Object {
   /** Gets an object representing the asynchronous error that occurred when the TimedTextSource was resolved. */
-  var error: TimedMetadataTrackError = js.native
+  var error: TimedMetadataTrackError
   /** Gets the list of TimedMetadataTrack objects resulting from resolving the TimedTextSource . */
-  var tracks: IVectorView[TimedMetadataTrack] = js.native
+  var tracks: IVectorView[TimedMetadataTrack]
+}
+
+object TimedTextSourceResolveResultEventArgs {
+  @scala.inline
+  def apply(error: TimedMetadataTrackError, tracks: IVectorView[TimedMetadataTrack]): TimedTextSourceResolveResultEventArgs = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimedTextSourceResolveResultEventArgs]
+  }
 }
 

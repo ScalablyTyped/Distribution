@@ -46,7 +46,7 @@ object Schedule {
     EndTime: string = null,
     EventFilter: CampaignEventFilter = null,
     Frequency: Frequency = null,
-    IsLocalTime: js.UndefOr[Boolean] = js.undefined,
+    IsLocalTime: js.UndefOr[boolean] = js.undefined,
     QuietTime: QuietTime = null,
     Timezone: string = null
   ): Schedule = {
@@ -54,7 +54,7 @@ object Schedule {
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (EventFilter != null) __obj.updateDynamic("EventFilter")(EventFilter.asInstanceOf[js.Any])
     if (Frequency != null) __obj.updateDynamic("Frequency")(Frequency.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsLocalTime)) __obj.updateDynamic("IsLocalTime")(IsLocalTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsLocalTime)) __obj.updateDynamic("IsLocalTime")(IsLocalTime.get.asInstanceOf[js.Any])
     if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime.asInstanceOf[js.Any])
     if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]

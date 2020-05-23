@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "ant-design__icons"
-version := "4.0.6-2bb559"
-scalaVersion := "2.13.1"
+version := "4.1.0-c1b246"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ant-design__icons-svg" % "4.0.0-35b35f",
-  "org.scalablytyped" %%% "csstype" % "2.6.9-313239",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-11830c",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200409Z-0bc722",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "ant-design__icons-svg" % "4.0.0-bc7b5a",
+  "org.scalablytyped" %%% "csstype" % "2.6.9-03f85a",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-4fb81d",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200515Z-0f8114",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

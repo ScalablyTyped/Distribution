@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.FormDescription")
 @js.native
-class FormDescription protected () extends js.Object {
+trait FormDescription extends js.Object {
   val Application: typings.activexOutlook.Outlook.Application = js.native
   var Category: String = js.native
   var CategorySub: String = js.native

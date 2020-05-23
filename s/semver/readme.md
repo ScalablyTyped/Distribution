@@ -1,7 +1,7 @@
 
 # Scala.js typings for semver
 
-Typings are for version 7.1
+Typings are for version 7.2
 
 ## Library description:
 The semantic version parser used by npm.

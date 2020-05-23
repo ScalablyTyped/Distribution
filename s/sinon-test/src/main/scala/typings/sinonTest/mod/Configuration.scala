@@ -29,10 +29,10 @@ object Configuration {
   ): Configuration = {
     val __obj = js.Dynamic.literal()
     if (injectInto != null) __obj.updateDynamic("injectInto")(injectInto.asInstanceOf[js.Any])
-    if (!js.isUndefined(injectIntoThis)) __obj.updateDynamic("injectIntoThis")(injectIntoThis.asInstanceOf[js.Any])
+    if (!js.isUndefined(injectIntoThis)) __obj.updateDynamic("injectIntoThis")(injectIntoThis.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFakeServer)) __obj.updateDynamic("useFakeServer")(useFakeServer.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFakeTimers)) __obj.updateDynamic("useFakeTimers")(useFakeTimers.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFakeServer)) __obj.updateDynamic("useFakeServer")(useFakeServer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFakeTimers)) __obj.updateDynamic("useFakeTimers")(useFakeTimers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

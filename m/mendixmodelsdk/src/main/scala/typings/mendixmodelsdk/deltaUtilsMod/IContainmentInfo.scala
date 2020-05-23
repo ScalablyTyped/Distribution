@@ -14,9 +14,14 @@ trait IContainmentInfo extends js.Object {
 
 object IContainmentInfo {
   @scala.inline
-  def apply(element: AbstractElement, parentId: String, parentPropertyName: String, index: Int | Double = null): IContainmentInfo = {
+  def apply(
+    element: AbstractElement,
+    parentId: String,
+    parentPropertyName: String,
+    index: js.UndefOr[Double] = js.undefined
+  ): IContainmentInfo = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], parentPropertyName = parentPropertyName.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContainmentInfo]
   }
 }

@@ -57,10 +57,10 @@ object CredentialRequestOptions {
     val __obj = js.Dynamic.literal()
     if (federated != null) __obj.updateDynamic("federated")(federated.asInstanceOf[js.Any])
     if (mediation != null) __obj.updateDynamic("mediation")(mediation.asInstanceOf[js.Any])
-    if (!js.isUndefined(password)) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (!js.isUndefined(password)) __obj.updateDynamic("password")(password.get.asInstanceOf[js.Any])
     if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmediated)) __obj.updateDynamic("unmediated")(unmediated.asInstanceOf[js.Any])
+    if (!js.isUndefined(unmediated)) __obj.updateDynamic("unmediated")(unmediated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialRequestOptions]
   }
 }

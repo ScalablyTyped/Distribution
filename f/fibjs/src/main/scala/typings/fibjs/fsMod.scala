@@ -1,23 +1,20 @@
 package typings.fibjs
 
-import typings.fibjs.fibjsNumbers.`0`
-import typings.fibjs.fibjsNumbers.`1`
-import typings.fibjs.fibjsNumbers.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 文件系统处理模块
-	* @detail 使用方法：,```JavaScript,var fs = require('fs');,```
-	*/
+  * @brief 文件系统处理模块
+  * @detail 使用方法：,```JavaScript,var fs = require('fs');,```
+  */
 @JSImport("fs", JSImport.Namespace)
 @js.native
 object fsMod extends js.Object {
-  val SEEK_CUR: `1` = js.native
-  val SEEK_END: `2` = js.native
-  val SEEK_SET: `0` = js.native
+  val SEEK_CUR: /* 1 */ Double = js.native
+  val SEEK_END: /* 2 */ Double = js.native
+  val SEEK_SET: /* 0 */ Double = js.native
   val constants: js.Object = js.native
   def access(path: String): Unit = js.native
   def access(path: String, mode: Double): Unit = js.native

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("VBIDE.VBProject")
 @js.native
-class VBProject protected () extends js.Object {
+trait VBProject extends js.Object {
   val Application: typings.activexVbide.VBIDE.Application = js.native
   var BuildFileName: String = js.native
   @JSName("Collection")

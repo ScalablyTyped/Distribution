@@ -17,7 +17,7 @@ object RegionViewOptions {
   @scala.inline
   def apply(preventDestroy: js.UndefOr[Boolean] = js.undefined): RegionViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preventDestroy)) __obj.updateDynamic("preventDestroy")(preventDestroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDestroy)) __obj.updateDynamic("preventDestroy")(preventDestroy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionViewOptions]
   }
 }

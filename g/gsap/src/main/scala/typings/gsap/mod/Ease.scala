@@ -17,5 +17,8 @@ class Ease ()
     `type`: Double,
     power: Double
   ) = this()
+  /** Translates the tween's progress ratio into the corresponding ease ratio. */
+  /* CompleteClass */
+  override def getRatio(p: Double): Double = js.native
 }
 

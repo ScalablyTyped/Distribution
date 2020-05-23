@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var cache: Cache_ = js.native
   var closeDelimiter: String = js.native
-  var delimiter: String = js.native
+  var delimiter: js.UndefOr[String] = js.native
   var fileLoader: typings.ejs.mod.fileLoader = js.native
   var localsName: String = js.native
   var openDelimiter: String = js.native

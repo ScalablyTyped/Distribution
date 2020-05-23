@@ -4,14 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("jo.Concat")
-@js.native
-class Concat protected () extends js.Object {
-  def this(value1: String, value2: String) = this()
-  def this(value1: String, value2: Concat) = this()
-  def this(value1: Concat, value2: String) = this()
-  def this(value1: Concat, value2: Concat) = this()
-  var LeftSide: String | Concat = js.native
-  var RightSide: String | Concat = js.native
+trait Concat extends js.Object {
+  var LeftSide: String | Concat
+  var RightSide: String | Concat
+}
+
+object Concat {
+  @scala.inline
+  def apply(LeftSide: String | Concat, RightSide: String | Concat): Concat = {
+    val __obj = js.Dynamic.literal(LeftSide = LeftSide.asInstanceOf[js.Any], RightSide = RightSide.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Concat]
+  }
 }
 

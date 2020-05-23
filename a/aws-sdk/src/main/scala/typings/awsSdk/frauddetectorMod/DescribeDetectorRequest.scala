@@ -22,9 +22,13 @@ trait DescribeDetectorRequest extends js.Object {
 
 object DescribeDetectorRequest {
   @scala.inline
-  def apply(detectorId: identifier, maxResults: Int | Double = null, nextToken: String = null): DescribeDetectorRequest = {
+  def apply(
+    detectorId: identifier,
+    maxResults: js.UndefOr[DetectorVersionMaxResults] = js.undefined,
+    nextToken: String = null
+  ): DescribeDetectorRequest = {
     val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDetectorRequest]
   }

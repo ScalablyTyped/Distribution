@@ -34,13 +34,13 @@ object Params {
   def apply(
     Bucket: String = null,
     Conditions: js.Array[StringDictionary[_] | (js.Tuple3[String, _, _])] = null,
-    Expires: Int | Double = null,
+    Expires: js.UndefOr[Double] = js.undefined,
     Fields: StringDictionary[js.Any] = null
   ): Params = {
     val __obj = js.Dynamic.literal()
     if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
     if (Conditions != null) __obj.updateDynamic("Conditions")(Conditions.asInstanceOf[js.Any])
-    if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(Expires)) __obj.updateDynamic("Expires")(Expires.get.asInstanceOf[js.Any])
     if (Fields != null) __obj.updateDynamic("Fields")(Fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }

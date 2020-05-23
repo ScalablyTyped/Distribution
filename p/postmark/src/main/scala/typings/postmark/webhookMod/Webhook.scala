@@ -1,6 +1,6 @@
 package typings.postmark.webhookMod
 
-import typings.postmark.AnonBounce
+import typings.postmark.anon.Bounce
 import typings.postmark.messageSupportingTypesMod.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait Webhook extends js.Object {
   var HttpHeaders: js.UndefOr[js.Array[Header]] = js.undefined
   var ID: Double
   var MessageStream: String
-  var Triggers: AnonBounce
+  var Triggers: Bounce
   var Url: String
 }
 
@@ -20,7 +20,7 @@ object Webhook {
   def apply(
     ID: Double,
     MessageStream: String,
-    Triggers: AnonBounce,
+    Triggers: Bounce,
     Url: String,
     HttpAuth: HttpAuth = null,
     HttpHeaders: js.Array[Header] = null

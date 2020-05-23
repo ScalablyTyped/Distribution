@@ -12,9 +12,9 @@ trait RTCIceCandidate extends js.Object {
 
 object RTCIceCandidate {
   @scala.inline
-  def apply(candidate: String, sdpMLineIndex: Int | Double = null, sdpMid: String = null): RTCIceCandidate = {
+  def apply(candidate: String, sdpMLineIndex: js.UndefOr[Double] = js.undefined, sdpMid: String = null): RTCIceCandidate = {
     val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any])
-    if (sdpMLineIndex != null) __obj.updateDynamic("sdpMLineIndex")(sdpMLineIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(sdpMLineIndex)) __obj.updateDynamic("sdpMLineIndex")(sdpMLineIndex.get.asInstanceOf[js.Any])
     if (sdpMid != null) __obj.updateDynamic("sdpMid")(sdpMid.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceCandidate]
   }

@@ -1,6 +1,6 @@
 package typings.knex.mod
 
-import typings.knex.AnonCancel
+import typings.knex.anon.Cancel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ class QueryBuilder[TRecord /* <: js.Object */, TResult] ()
   def queryContext(context: js.Any): QueryBuilder[TRecord, TResult] = js.native
   def skipLocked(): QueryBuilder[TRecord, TResult] = js.native
   def timeout(ms: Double): QueryBuilder[TRecord, TResult] = js.native
-  def timeout(ms: Double, options: AnonCancel): QueryBuilder[TRecord, TResult] = js.native
+  def timeout(ms: Double, options: Cancel): QueryBuilder[TRecord, TResult] = js.native
   def toSQL(): Sql = js.native
 }
 

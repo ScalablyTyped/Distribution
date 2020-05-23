@@ -30,9 +30,9 @@ object GenerateUrlsOptions {
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction2(encode))
     if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
     if (stringifyQueryParams != null) __obj.updateDynamic("stringifyQueryParams")(js.Any.fromFunction1(stringifyQueryParams))
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateUrlsOptions]
   }
 }

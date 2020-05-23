@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,26 +31,6 @@ object QuickViewGroupElementType extends js.Object {
   
   @js.native
   sealed trait text extends QuickViewGroupElementType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[QuickViewGroupElementType with Double] = js.native
-  /* 0 */ @js.native
-  object email extends TopLevel[email with Double]
-  
-  /* 1 */ @js.native
-  object link extends TopLevel[link with Double]
-  
-  /* 2 */ @js.native
-  object mobile extends TopLevel[mobile with Double]
-  
-  /* 3 */ @js.native
-  object pageLink extends TopLevel[pageLink with Double]
-  
-  /* 4 */ @js.native
-  object phone extends TopLevel[phone with Double]
-  
-  /* 5 */ @js.native
-  object text extends TopLevel[text with Double]
   
 }
 

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the Query Builder extension.
   */
-@JSGlobal("MVCxClientQueryBuilder")
 @js.native
-class MVCxClientQueryBuilder () extends ASPxClientQueryBuilder {
+trait MVCxClientQueryBuilder extends ASPxClientQueryBuilder {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */

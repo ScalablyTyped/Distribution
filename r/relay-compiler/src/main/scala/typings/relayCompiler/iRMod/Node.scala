@@ -1,6 +1,6 @@
 package typings.relayCompiler.iRMod
 
-import typings.relayCompiler.AnonFragmentTypeCondition
+import typings.relayCompiler.anon.FragmentTypeCondition
 import typings.relayCompiler.relayCompilerStrings.mutation
 import typings.relayCompiler.relayCompilerStrings.query
 import typings.relayCompiler.relayCompilerStrings.subscription
@@ -140,11 +140,11 @@ object Node {
     loc: Location,
     selections: js.Array[Selection],
     `if`: ArgumentValue = null,
-    metadata: AnonFragmentTypeCondition = null
+    metadata: js.UndefOr[Null | FragmentTypeCondition] = js.undefined
   ): Node = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
@@ -183,10 +183,9 @@ object Node {
     metadata: Metadata = null,
     useCustomizedBatch: ArgumentValue = null
   ): Node = {
-    val __obj = js.Dynamic.literal(initialCount = initialCount.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(initialCount = initialCount.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], useCustomizedBatch = useCustomizedBatch.asInstanceOf[js.Any])
+    __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (useCustomizedBatch != null) __obj.updateDynamic("useCustomizedBatch")(useCustomizedBatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

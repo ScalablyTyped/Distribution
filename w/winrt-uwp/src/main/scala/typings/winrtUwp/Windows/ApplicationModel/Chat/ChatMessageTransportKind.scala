@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ChatMessageTransportKind extends js.Object {
   /** Untriaged message */
   @js.native
   sealed trait untriaged extends ChatMessageTransportKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatMessageTransportKind with Double] = js.native
-  /* 2 */ @js.native
-  object blocked extends TopLevel[blocked with Double]
-  
-  /* 3 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 0 */ @js.native
-  object text extends TopLevel[text with Double]
-  
-  /* 1 */ @js.native
-  object untriaged extends TopLevel[untriaged with Double]
   
 }
 

@@ -13,7 +13,7 @@ object PackOption {
   @scala.inline
   def apply(inPlace: js.UndefOr[Boolean] = js.undefined): PackOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inPlace)) __obj.updateDynamic("inPlace")(inPlace.asInstanceOf[js.Any])
+    if (!js.isUndefined(inPlace)) __obj.updateDynamic("inPlace")(inPlace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackOption]
   }
 }

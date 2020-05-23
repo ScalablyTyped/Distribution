@@ -66,7 +66,7 @@ trait MathMenu extends js.Object {
 object MathMenu {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     helpURL: String = null,
     semanticsAnnotations: js.Any = null,
     showContext: js.UndefOr[Boolean] = js.undefined,
@@ -78,14 +78,14 @@ object MathMenu {
     windowSettings: js.Any = null
   ): MathMenu = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (helpURL != null) __obj.updateDynamic("helpURL")(helpURL.asInstanceOf[js.Any])
     if (semanticsAnnotations != null) __obj.updateDynamic("semanticsAnnotations")(semanticsAnnotations.asInstanceOf[js.Any])
-    if (!js.isUndefined(showContext)) __obj.updateDynamic("showContext")(showContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFontMenu)) __obj.updateDynamic("showFontMenu")(showFontMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLocale)) __obj.updateDynamic("showLocale")(showLocale.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMathPlayer)) __obj.updateDynamic("showMathPlayer")(showMathPlayer.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRenderer)) __obj.updateDynamic("showRenderer")(showRenderer.asInstanceOf[js.Any])
+    if (!js.isUndefined(showContext)) __obj.updateDynamic("showContext")(showContext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFontMenu)) __obj.updateDynamic("showFontMenu")(showFontMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLocale)) __obj.updateDynamic("showLocale")(showLocale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMathPlayer)) __obj.updateDynamic("showMathPlayer")(showMathPlayer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRenderer)) __obj.updateDynamic("showRenderer")(showRenderer.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (windowSettings != null) __obj.updateDynamic("windowSettings")(windowSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathMenu]

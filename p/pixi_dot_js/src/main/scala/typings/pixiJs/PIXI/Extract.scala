@@ -28,10 +28,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Extract")
 @js.native
-class Extract protected () extends js.Object {
-  def this(renderer: Renderer) = this()
+trait Extract extends js.Object {
   /**
     * Will return a a base64 encoded string of this target. It works by calling
     *  `Extract.getCanvas` and then running toDataURL on that.

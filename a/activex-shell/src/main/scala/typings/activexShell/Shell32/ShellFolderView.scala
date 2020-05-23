@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Shell Folder View Object */
-@JSGlobal("Shell32.ShellFolderView")
 @js.native
-class ShellFolderView protected () extends js.Object {
+trait ShellFolderView extends js.Object {
   /** Get Application object */
   val Application: js.Any = js.native
   /** Get Current View Mode */

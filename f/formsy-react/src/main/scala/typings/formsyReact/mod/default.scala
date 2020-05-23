@@ -1,7 +1,7 @@
 package typings.formsyReact.mod
 
-import typings.formsyReact.AnonDisabled
-import typings.formsyReact.PartialFormsyProps
+import typings.formsyReact.anon.Disabled
+import typings.formsyReact.anon.PartialFormsyProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,6 @@ class default protected () extends Formsy {
 object default extends js.Object {
   var defaultProps: PartialFormsyProps = js.native
   var displayName: String = js.native
-  var propTypes: AnonDisabled = js.native
+  var propTypes: Disabled = js.native
 }
 

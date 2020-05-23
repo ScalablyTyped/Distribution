@@ -38,7 +38,7 @@ trait TransformationResult[T /* <: Node */] extends js.Object {
 
 object TransformationResult {
   @scala.inline
-  def apply[T /* <: Node */](
+  def apply[T](
     dispose: () => Unit,
     emitNodeWithNotification: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit,
     substituteNode: (EmitHint, Node) => Node,

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-core/dist/kernel_names", "Transpose")
 @js.native
-object Transpose
-  extends TopLevel[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Transpose]
+object Transpose extends TopLevel[/* "Identity" */ String]
 

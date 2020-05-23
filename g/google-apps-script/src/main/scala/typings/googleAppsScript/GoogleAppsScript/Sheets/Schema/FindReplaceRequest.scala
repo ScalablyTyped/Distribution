@@ -27,18 +27,18 @@ object FindReplaceRequest {
     range: GridRange = null,
     replacement: String = null,
     searchByRegex: js.UndefOr[Boolean] = js.undefined,
-    sheetId: Int | Double = null
+    sheetId: js.UndefOr[Double] = js.undefined
   ): FindReplaceRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allSheets)) __obj.updateDynamic("allSheets")(allSheets.asInstanceOf[js.Any])
+    if (!js.isUndefined(allSheets)) __obj.updateDynamic("allSheets")(allSheets.get.asInstanceOf[js.Any])
     if (find != null) __obj.updateDynamic("find")(find.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeFormulas)) __obj.updateDynamic("includeFormulas")(includeFormulas.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchEntireCell)) __obj.updateDynamic("matchEntireCell")(matchEntireCell.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeFormulas)) __obj.updateDynamic("includeFormulas")(includeFormulas.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchEntireCell)) __obj.updateDynamic("matchEntireCell")(matchEntireCell.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (replacement != null) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchByRegex)) __obj.updateDynamic("searchByRegex")(searchByRegex.asInstanceOf[js.Any])
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchByRegex)) __obj.updateDynamic("searchByRegex")(searchByRegex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindReplaceRequest]
   }
 }

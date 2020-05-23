@@ -18,10 +18,13 @@ trait FleetResourceCreationLimitPolicy extends js.Object {
 
 object FleetResourceCreationLimitPolicy {
   @scala.inline
-  def apply(newGameSessionsPerCreator: Int | Double = null, policyPeriodInMinutes: Int | Double = null): FleetResourceCreationLimitPolicy = {
+  def apply(
+    newGameSessionsPerCreator: js.UndefOr[Double] = js.undefined,
+    policyPeriodInMinutes: js.UndefOr[Double] = js.undefined
+  ): FleetResourceCreationLimitPolicy = {
     val __obj = js.Dynamic.literal()
-    if (newGameSessionsPerCreator != null) __obj.updateDynamic("newGameSessionsPerCreator")(newGameSessionsPerCreator.asInstanceOf[js.Any])
-    if (policyPeriodInMinutes != null) __obj.updateDynamic("policyPeriodInMinutes")(policyPeriodInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(newGameSessionsPerCreator)) __obj.updateDynamic("newGameSessionsPerCreator")(newGameSessionsPerCreator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(policyPeriodInMinutes)) __obj.updateDynamic("policyPeriodInMinutes")(policyPeriodInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetResourceCreationLimitPolicy]
   }
 }

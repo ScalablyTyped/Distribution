@@ -27,10 +27,10 @@ trait Clownface[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] exten
   val values: js.Array[String] = js.native
   def addIn(predicates: SingleOrArrayOfTerms[Term]): Clownface[T, D] = js.native
   def addIn(predicates: SingleOrArrayOfTerms[Term], callback: AddCallback[D, BlankNode]): Clownface[T, D] = js.native
-  def addIn[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTermsOrLiterals[X]): Clownface[T, D] = js.native
+  def addIn[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], subjects: SingleOrArrayOfTermsOrLiterals[X]): Clownface[T, D] = js.native
   def addIn[X /* <: Term */](
     predicates: SingleOrArrayOfTerms[Term],
-    objects: SingleOrArrayOfTermsOrLiterals[X],
+    subjects: SingleOrArrayOfTermsOrLiterals[X],
     callback: AddCallback[D, X]
   ): Clownface[T, D] = js.native
   def addList[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term]): Clownface[T, D] = js.native

@@ -1,10 +1,9 @@
 package typings.antd.tableTableMod
 
-import typings.antd.AnonScrollToFirstRowOnChange
+import typings.antd.anon.ScrollToFirstRowOnChange
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.rtl
-import typings.antd.paginationPaginationMod.PaginationConfig
 import typings.antd.sizeContextMod.SizeType
 import typings.antd.spinMod.SpinProps
 import typings.antd.tableInterfaceMod.ColumnsType
@@ -15,7 +14,7 @@ import typings.antd.tableInterfaceMod.TableCurrentDataSource
 import typings.antd.tableInterfaceMod.TableLocale
 import typings.antd.tableInterfaceMod.TablePaginationConfig
 import typings.antd.tableInterfaceMod.TableRowSelection
-import typings.rcTable.AnonX
+import typings.rcTable.anon.X
 import typings.rcTable.interfaceMod.ColumnType
 import typings.rcTable.interfaceMod.ExpandableConfig
 import typings.rcTable.interfaceMod.ExpandedRowRender
@@ -66,7 +65,7 @@ trait TableProps[RecordType] extends js.Object {
   var locale: js.UndefOr[TableLocale] = js.undefined
   var onChange: js.UndefOr[
     js.Function4[
-      /* pagination */ PaginationConfig, 
+      /* pagination */ TablePaginationConfig, 
       /* filters */ Record[String, js.Array[typings.antd.tableInterfaceMod.Key] | Null], 
       /* sorter */ SorterResult[RecordType] | js.Array[SorterResult[RecordType]], 
       /* extra */ TableCurrentDataSource[RecordType], 
@@ -82,7 +81,7 @@ trait TableProps[RecordType] extends js.Object {
   var rowClassName: js.UndefOr[String | RowClassName[RecordType]] = js.undefined
   var rowKey: js.UndefOr[String | GetRowKey[RecordType]] = js.undefined
   var rowSelection: js.UndefOr[TableRowSelection[RecordType]] = js.undefined
-  var scroll: js.UndefOr[js.UndefOr[AnonX] with AnonScrollToFirstRowOnChange] = js.undefined
+  var scroll: js.UndefOr[js.UndefOr[X] with ScrollToFirstRowOnChange] = js.undefined
   var showHeader: js.UndefOr[Boolean] = js.undefined
   var showSorterTooltip: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[SizeType] = js.undefined
@@ -109,7 +108,7 @@ object TableProps {
     dropdownPrefixCls: String = null,
     emptyText: ReactNode | js.Function0[ReactNode] = null,
     expandIcon: /* props */ RenderExpandIconProps[RecordType] => ReactNode = null,
-    expandIconColumnIndex: Int | Double = null,
+    expandIconColumnIndex: js.UndefOr[Double] = js.undefined,
     expandRowByClick: js.UndefOr[Boolean] = js.undefined,
     expandable: ExpandableConfig[RecordType] = null,
     expandedRowClassName: (RecordType, /* index */ Double, /* indent */ Double) => String = null,
@@ -118,10 +117,10 @@ object TableProps {
     footer: /* data */ js.Array[RecordType] => ReactNode = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     id: String = null,
-    indentSize: Int | Double = null,
+    indentSize: js.UndefOr[Double] = js.undefined,
     loading: Boolean | SpinProps = null,
     locale: TableLocale = null,
-    onChange: (/* pagination */ PaginationConfig, /* filters */ Record[String, js.Array[typings.antd.tableInterfaceMod.Key] | Null], /* sorter */ SorterResult[RecordType] | js.Array[SorterResult[RecordType]], /* extra */ TableCurrentDataSource[RecordType]) => Unit = null,
+    onChange: (/* pagination */ TablePaginationConfig, /* filters */ Record[String, js.Array[typings.antd.tableInterfaceMod.Key] | Null], /* sorter */ SorterResult[RecordType] | js.Array[SorterResult[RecordType]], /* extra */ TableCurrentDataSource[RecordType]) => Unit = null,
     onExpand: (/* expanded */ Boolean, /* record */ RecordType) => Unit = null,
     onExpandedRowsChange: /* expandedKeys */ js.Array[Key] => Unit = null,
     onHeaderRow: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
@@ -131,7 +130,7 @@ object TableProps {
     rowClassName: String | RowClassName[RecordType] = null,
     rowKey: String | GetRowKey[RecordType] = null,
     rowSelection: TableRowSelection[RecordType] = null,
-    scroll: js.UndefOr[AnonX] with AnonScrollToFirstRowOnChange = null,
+    scroll: js.UndefOr[X] with ScrollToFirstRowOnChange = null,
     showHeader: js.UndefOr[Boolean] = js.undefined,
     showSorterTooltip: js.UndefOr[Boolean] = js.undefined,
     size: SizeType = null,
@@ -142,21 +141,21 @@ object TableProps {
     title: /* data */ js.Array[RecordType] => ReactNode = null
   ): TableProps[RecordType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (childrenColumnName != null) __obj.updateDynamic("childrenColumnName")(childrenColumnName.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.get.asInstanceOf[js.Any])
     if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (dropdownPrefixCls != null) __obj.updateDynamic("dropdownPrefixCls")(dropdownPrefixCls.asInstanceOf[js.Any])
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
-    if (expandIconColumnIndex != null) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandIconColumnIndex)) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick.get.asInstanceOf[js.Any])
     if (expandable != null) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
     if (expandedRowClassName != null) __obj.updateDynamic("expandedRowClassName")(js.Any.fromFunction3(expandedRowClassName))
     if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys.asInstanceOf[js.Any])
@@ -164,7 +163,7 @@ object TableProps {
     if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentSize)) __obj.updateDynamic("indentSize")(indentSize.get.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4(onChange))
@@ -178,8 +177,8 @@ object TableProps {
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     if (rowSelection != null) __obj.updateDynamic("rowSelection")(rowSelection.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSorterTooltip)) __obj.updateDynamic("showSorterTooltip")(showSorterTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSorterTooltip)) __obj.updateDynamic("showSorterTooltip")(showSorterTooltip.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

@@ -4,7 +4,7 @@ import typings.react.mod.ReactEventHandler
 import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,19 +27,18 @@ object TriggerParams {
   def apply(
     `aria-describedby`: String,
     `data-reach-tooltip-trigger`: String,
-    onBlur: SyntheticEvent[Element, Event_] => Unit,
-    onFocus: SyntheticEvent[Element, Event_] => Unit,
-    onKeyDown: SyntheticEvent[Element, Event_] => Unit,
-    onMouseDown: SyntheticEvent[Element, Event_] => Unit,
-    onMouseEnter: SyntheticEvent[Element, Event_] => Unit,
-    onMouseLeave: SyntheticEvent[Element, Event_] => Unit,
-    onMouseMove: SyntheticEvent[Element, Event_] => Unit,
+    onBlur: SyntheticEvent[Element, Event] => Unit,
+    onFocus: SyntheticEvent[Element, Event] => Unit,
+    onKeyDown: SyntheticEvent[Element, Event] => Unit,
+    onMouseDown: SyntheticEvent[Element, Event] => Unit,
+    onMouseEnter: SyntheticEvent[Element, Event] => Unit,
+    onMouseLeave: SyntheticEvent[Element, Event] => Unit,
+    onMouseMove: SyntheticEvent[Element, Event] => Unit,
     ref: Ref[_] = null
   ): TriggerParams = {
-    val __obj = js.Dynamic.literal(onBlur = js.Any.fromFunction1(onBlur), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseMove = js.Any.fromFunction1(onMouseMove))
+    val __obj = js.Dynamic.literal(onBlur = js.Any.fromFunction1(onBlur), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseMove = js.Any.fromFunction1(onMouseMove), ref = ref.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     __obj.updateDynamic("data-reach-tooltip-trigger")(`data-reach-tooltip-trigger`.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerParams]
   }
 }

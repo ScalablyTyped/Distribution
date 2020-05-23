@@ -2,7 +2,7 @@ package typings.antdMobileRn.popoverIndexNativeMod
 
 import typings.antdMobileRn.popoverPropsTypeMod.PopoverPropsType
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import scala.scalajs.js
@@ -21,26 +21,26 @@ trait PopoverProps extends PopoverPropsType {
 object PopoverProps {
   @scala.inline
   def apply(
-    contextStyle: StyleProp[ViewStyle] = null,
+    contextStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onSelect: (/* node */ js.Any, /* index */ js.UndefOr[Double]) => Unit = null,
     overlay: ReactNode = null,
-    overlayStyle: StyleProp[ViewStyle] = null,
+    overlayStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     renderOverlayComponent: /* values */ js.Any => Element = null,
-    style: StyleProp[ViewStyle] = null,
-    triggerStyle: StyleProp[ViewStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    triggerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): PopoverProps = {
     val __obj = js.Dynamic.literal()
-    if (contextStyle != null) __obj.updateDynamic("contextStyle")(contextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextStyle)) __obj.updateDynamic("contextStyle")(contextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayStyle)) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (renderOverlayComponent != null) __obj.updateDynamic("renderOverlayComponent")(js.Any.fromFunction1(renderOverlayComponent))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (triggerStyle != null) __obj.updateDynamic("triggerStyle")(triggerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(triggerStyle)) __obj.updateDynamic("triggerStyle")(triggerStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverProps]
   }
 }

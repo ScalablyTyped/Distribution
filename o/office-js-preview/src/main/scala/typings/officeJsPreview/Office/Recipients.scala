@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents recipients of an item. Compose mode only.
-  * 
+  *
   * [Api set: Mailbox 1.1]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
   */
 @js.native
@@ -31,15 +31,15 @@ trait Recipients extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
-    * 
+    *
     * @param recipients - The recipients to add to the recipients list.
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
@@ -66,9 +66,9 @@ trait Recipients extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -84,11 +84,11 @@ trait Recipients extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * @param options - An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -114,17 +114,17 @@ trait Recipients extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
     *
     * @param recipients - The recipients to add to the recipients list.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that
     *                 indicates any error that occurred while adding the data.
     */
@@ -148,19 +148,19 @@ trait Recipients extends js.Object {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
-    * 
+    *
     * @param recipients - The recipients to add to the recipients list.
     * @param options - An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that
     *                 indicates any error that occurred while adding the data.
     */

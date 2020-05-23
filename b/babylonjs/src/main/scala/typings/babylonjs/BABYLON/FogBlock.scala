@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FogBlock")
 @js.native
-class FogBlock protected () extends NodeMaterialBlock {
-  /**
-    * Create a new FogBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait FogBlock extends NodeMaterialBlock {
   var _fogDistanceName: js.Any = js.native
   var _fogParameters: js.Any = js.native
   /**

@@ -1,10 +1,6 @@
 package typings.scheduler
 
-import typings.scheduler.schedulerNumbers.`1`
-import typings.scheduler.schedulerNumbers.`2`
-import typings.scheduler.schedulerNumbers.`3`
-import typings.scheduler.schedulerNumbers.`4`
-import typings.scheduler.schedulerNumbers.`5`
+import typings.scheduler.anon.Delay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,15 +20,15 @@ object mod extends js.Object {
   }
   
   @JSName("unstable_IdlePriority")
-  val unstableIdlePriority: `5` = js.native
+  val unstableIdlePriority: /* 5 */ Double = js.native
   @JSName("unstable_ImmediatePriority")
-  val unstableImmediatePriority: `1` = js.native
+  val unstableImmediatePriority: /* 1 */ Double = js.native
   @JSName("unstable_LowPriority")
-  val unstableLowPriority: `4` = js.native
+  val unstableLowPriority: /* 4 */ Double = js.native
   @JSName("unstable_NormalPriority")
-  val unstableNormalPriority: `3` = js.native
+  val unstableNormalPriority: /* 3 */ Double = js.native
   @JSName("unstable_UserBlockingPriority")
-  val unstableUserBlockingPriority: `2` = js.native
+  val unstableUserBlockingPriority: /* 2 */ Double = js.native
   @JSName("unstable_cancelCallback")
   def unstableCancelCallback(callbackNode: CallbackNode): Unit = js.native
   @JSName("unstable_continueExecution")
@@ -52,7 +48,7 @@ object mod extends js.Object {
   @JSName("unstable_scheduleCallback")
   def unstableScheduleCallback(priorityLevel: Double, callback: FrameCallbackType): CallbackNode = js.native
   @JSName("unstable_scheduleCallback")
-  def unstableScheduleCallback(priorityLevel: Double, callback: FrameCallbackType, options: AnonDelay): CallbackNode = js.native
+  def unstableScheduleCallback(priorityLevel: Double, callback: FrameCallbackType, options: Delay): CallbackNode = js.native
   @JSName("unstable_shouldYield")
   def unstableShouldYield(): Boolean = js.native
   @JSName("unstable_wrapCallback")

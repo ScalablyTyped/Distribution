@@ -15,10 +15,13 @@ trait IUpdateSnapshotRequest extends js.Object {
 
 object IUpdateSnapshotRequest {
   @scala.inline
-  def apply(snapshot: ISnapshot = null, updateMask: IFieldMask = null): IUpdateSnapshotRequest = {
+  def apply(
+    snapshot: js.UndefOr[Null | ISnapshot] = js.undefined,
+    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
+  ): IUpdateSnapshotRequest = {
     val __obj = js.Dynamic.literal()
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateSnapshotRequest]
   }
 }

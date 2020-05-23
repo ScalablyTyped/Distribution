@@ -14,7 +14,7 @@ trait DeviceAuthorizationParameters
 object DeviceAuthorizationParameters {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     client_id: String = null,
     scope: String = null
   ): DeviceAuthorizationParameters = {

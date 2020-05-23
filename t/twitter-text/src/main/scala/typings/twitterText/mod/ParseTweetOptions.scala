@@ -1,6 +1,6 @@
 package typings.twitterText.mod
 
-import typings.twitterText.AnonEnd
+import typings.twitterText.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ParseTweetOptions extends js.Object {
   var defaultWeight: js.UndefOr[Double] = js.undefined
   var maxWeightedTweetLength: js.UndefOr[Double] = js.undefined
-  var ranges: js.UndefOr[js.Array[AnonEnd]] = js.undefined
+  var ranges: js.UndefOr[js.Array[End]] = js.undefined
   var scale: js.UndefOr[Double] = js.undefined
   var transformedURLLength: js.UndefOr[Double] = js.undefined
   var version: js.UndefOr[Double] = js.undefined
@@ -17,20 +17,20 @@ trait ParseTweetOptions extends js.Object {
 object ParseTweetOptions {
   @scala.inline
   def apply(
-    defaultWeight: Int | Double = null,
-    maxWeightedTweetLength: Int | Double = null,
-    ranges: js.Array[AnonEnd] = null,
-    scale: Int | Double = null,
-    transformedURLLength: Int | Double = null,
-    version: Int | Double = null
+    defaultWeight: js.UndefOr[Double] = js.undefined,
+    maxWeightedTweetLength: js.UndefOr[Double] = js.undefined,
+    ranges: js.Array[End] = null,
+    scale: js.UndefOr[Double] = js.undefined,
+    transformedURLLength: js.UndefOr[Double] = js.undefined,
+    version: js.UndefOr[Double] = js.undefined
   ): ParseTweetOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultWeight != null) __obj.updateDynamic("defaultWeight")(defaultWeight.asInstanceOf[js.Any])
-    if (maxWeightedTweetLength != null) __obj.updateDynamic("maxWeightedTweetLength")(maxWeightedTweetLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultWeight)) __obj.updateDynamic("defaultWeight")(defaultWeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWeightedTweetLength)) __obj.updateDynamic("maxWeightedTweetLength")(maxWeightedTweetLength.get.asInstanceOf[js.Any])
     if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (transformedURLLength != null) __obj.updateDynamic("transformedURLLength")(transformedURLLength.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transformedURLLength)) __obj.updateDynamic("transformedURLLength")(transformedURLLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseTweetOptions]
   }
 }

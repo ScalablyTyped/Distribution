@@ -18,15 +18,15 @@ object IDragOptions {
     actionCursor: String = null,
     cursor: String = null,
     inertia: js.UndefOr[Boolean] = js.undefined,
-    inertiaDuration: Int | Double = null,
-    tremor: Int | Double = null
+    inertiaDuration: js.UndefOr[Double] = js.undefined,
+    tremor: js.UndefOr[Double] = js.undefined
   ): IDragOptions = {
     val __obj = js.Dynamic.literal()
     if (actionCursor != null) __obj.updateDynamic("actionCursor")(actionCursor.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(inertia)) __obj.updateDynamic("inertia")(inertia.asInstanceOf[js.Any])
-    if (inertiaDuration != null) __obj.updateDynamic("inertiaDuration")(inertiaDuration.asInstanceOf[js.Any])
-    if (tremor != null) __obj.updateDynamic("tremor")(tremor.asInstanceOf[js.Any])
+    if (!js.isUndefined(inertia)) __obj.updateDynamic("inertia")(inertia.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inertiaDuration)) __obj.updateDynamic("inertiaDuration")(inertiaDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tremor)) __obj.updateDynamic("tremor")(tremor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDragOptions]
   }
 }

@@ -2,7 +2,7 @@ package typings.xadesjs.signedXmlMod
 
 import typings.std.Algorithm
 import typings.std.CryptoKey
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.xadesjs.xmlMod.QualifyingProperties
 import typings.xmldsigjs.mod.Signature
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignedXml ()
   extends typings.xmldsigjs.mod.SignedXml {
-  def this(node: Document_) = this()
+  def this(node: Document) = this()
   def this(node: Element) = this()
   var properties: QualifyingProperties | Null = js.native
   /* protected */ def ApplySignOptions(signature: Signature, algorithm: Algorithm, key: CryptoKey, options: OptionsXAdES): js.Promise[Unit] = js.native
@@ -32,7 +32,7 @@ class SignedXml ()
   def LoadXml(value: String, useContainer: Boolean): Unit = js.native
   def LoadXml(value: Element, useContainer: Boolean): Unit = js.native
   def Properties: QualifyingProperties | Null = js.native
-  def Sign(algorithm: Algorithm, key: CryptoKey, data: Document_, options: OptionsXAdES): js.Promise[Signature] = js.native
+  def Sign(algorithm: Algorithm, key: CryptoKey, data: Document, options: OptionsXAdES): js.Promise[Signature] = js.native
   def SignedProperties: typings.xadesjs.xmlMod.SignedProperties = js.native
   def UnsignedProperties: typings.xadesjs.xmlMod.UnsignedProperties = js.native
   /* protected */ def VerifySigningCertificate(): js.Promise[X509Certificate | Null] = js.native

@@ -1,6 +1,5 @@
 package typings.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -104,8 +103,4 @@ trait RegExp extends js.Object {
     */
   def test(string: java.lang.String): scala.Boolean = js.native
 }
-
-@JSGlobal("RegExp")
-@js.native
-object RegExp extends TopLevel[RegExpConstructor]
 

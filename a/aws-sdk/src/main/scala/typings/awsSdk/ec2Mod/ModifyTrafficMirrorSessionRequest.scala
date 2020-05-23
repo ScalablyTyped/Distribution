@@ -49,23 +49,23 @@ object ModifyTrafficMirrorSessionRequest {
   def apply(
     TrafficMirrorSessionId: TrafficMirrorSessionId,
     Description: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    PacketLength: Int | scala.Double = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    PacketLength: js.UndefOr[Integer] = js.undefined,
     RemoveFields: TrafficMirrorSessionFieldList = null,
-    SessionNumber: Int | scala.Double = null,
+    SessionNumber: js.UndefOr[Integer] = js.undefined,
     TrafficMirrorFilterId: TrafficMirrorFilterId = null,
     TrafficMirrorTargetId: TrafficMirrorTargetId = null,
-    VirtualNetworkId: Int | scala.Double = null
+    VirtualNetworkId: js.UndefOr[Integer] = js.undefined
   ): ModifyTrafficMirrorSessionRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorSessionId = TrafficMirrorSessionId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (PacketLength != null) __obj.updateDynamic("PacketLength")(PacketLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PacketLength)) __obj.updateDynamic("PacketLength")(PacketLength.get.asInstanceOf[js.Any])
     if (RemoveFields != null) __obj.updateDynamic("RemoveFields")(RemoveFields.asInstanceOf[js.Any])
-    if (SessionNumber != null) __obj.updateDynamic("SessionNumber")(SessionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(SessionNumber)) __obj.updateDynamic("SessionNumber")(SessionNumber.get.asInstanceOf[js.Any])
     if (TrafficMirrorFilterId != null) __obj.updateDynamic("TrafficMirrorFilterId")(TrafficMirrorFilterId.asInstanceOf[js.Any])
     if (TrafficMirrorTargetId != null) __obj.updateDynamic("TrafficMirrorTargetId")(TrafficMirrorTargetId.asInstanceOf[js.Any])
-    if (VirtualNetworkId != null) __obj.updateDynamic("VirtualNetworkId")(VirtualNetworkId.asInstanceOf[js.Any])
+    if (!js.isUndefined(VirtualNetworkId)) __obj.updateDynamic("VirtualNetworkId")(VirtualNetworkId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTrafficMirrorSessionRequest]
   }
 }

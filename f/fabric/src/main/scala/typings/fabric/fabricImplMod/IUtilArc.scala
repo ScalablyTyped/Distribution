@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait IUtilArc extends js.Object {
   /**
-  	 * Draws arc
-  	 */
+    * Draws arc
+    */
   def drawArc(ctx: CanvasRenderingContext2D, fx: Double, fy: Double, coords: js.Array[Double]): Unit
   /**
-  	 * Calculate bounding box of a elliptic-arc
-  	 * @param fx start point of arc
-  	 * @param rx horizontal radius
-  	 * @param ry vertical radius
-  	 * @param rot angle of horizontal axe
-  	 * @param large 1 or 0, whatever the arc is the big or the small on the 2 points
-  	 * @param sweep 1 or 0, 1 clockwise or counterclockwise direction
-  	 * @param tx end point of arc
-  	 */
+    * Calculate bounding box of a elliptic-arc
+    * @param fx start point of arc
+    * @param rx horizontal radius
+    * @param ry vertical radius
+    * @param rot angle of horizontal axe
+    * @param large 1 or 0, whatever the arc is the big or the small on the 2 points
+    * @param sweep 1 or 0, 1 clockwise or counterclockwise direction
+    * @param tx end point of arc
+    */
   def getBoundsOfArc(
     fx: Double,
     fy: Double,
@@ -32,12 +32,12 @@ trait IUtilArc extends js.Object {
     ty: Double
   ): js.Array[Point]
   /**
-  	 * Calculate bounding box of a beziercurve
-  	 * @param x0 starting point
-  	 * @param x1 first control point
-  	 * @param x2 secondo control point
-  	 * @param x3 end of beizer
-  	 */
+    * Calculate bounding box of a beziercurve
+    * @param x0 starting point
+    * @param x1 first control point
+    * @param x2 secondo control point
+    * @param x3 end of beizer
+    */
   def getBoundsOfCurve(x0: Double, y0: Double, x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): js.Array[Point]
 }
 

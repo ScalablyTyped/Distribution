@@ -61,9 +61,7 @@ object RouteInfo {
     child: RouteInfo = null,
     parent: RouteInfo = null
   ): RouteInfo = {
-    val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find), localName = localName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paramNames = paramNames.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], queryParams = queryParams.asInstanceOf[js.Any])
-    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find), localName = localName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paramNames = paramNames.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], queryParams = queryParams.asInstanceOf[js.Any], child = child.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteInfo]
   }
 }

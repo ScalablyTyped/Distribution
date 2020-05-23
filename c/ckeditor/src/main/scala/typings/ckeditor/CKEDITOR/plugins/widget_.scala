@@ -7,24 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.plugins.widget")
 @js.native
-class widget_ protected ()
-  extends event
-     with typings.ckeditor.CKEDITOR.plugins.widget.definition {
-  def this(
-    widgetsRepo: typings.ckeditor.CKEDITOR.plugins.widget.repository,
-    id: Double,
-    element: typings.ckeditor.CKEDITOR.dom.element,
-    widgetDef: typings.ckeditor.CKEDITOR.plugins.widget.definition
-  ) = this()
-  def this(
-    widgetsRepo: typings.ckeditor.CKEDITOR.plugins.widget.repository,
-    id: Double,
-    element: typings.ckeditor.CKEDITOR.dom.element,
-    widgetDef: typings.ckeditor.CKEDITOR.plugins.widget.definition,
-    starupData: js.Any
-  ) = this()
+trait widget_
+  extends typings.ckeditor.CKEDITOR.plugins.widget.definition
+     with event {
   val dataReady: Boolean = js.native
   val definition: typings.ckeditor.CKEDITOR.plugins.widget.definition = js.native
   val editor: typings.ckeditor.CKEDITOR.editor = js.native

@@ -1,6 +1,6 @@
 package typings.reactSortableTree.mod
 
-import typings.reactSortableTree.FullTreeexpandedboolean
+import typings.reactSortableTree.anon.FullTreeexpandedboolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

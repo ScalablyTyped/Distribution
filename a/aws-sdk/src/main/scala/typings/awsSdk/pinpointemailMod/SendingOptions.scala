@@ -14,9 +14,9 @@ trait SendingOptions extends js.Object {
 
 object SendingOptions {
   @scala.inline
-  def apply(SendingEnabled: js.UndefOr[Boolean] = js.undefined): SendingOptions = {
+  def apply(SendingEnabled: js.UndefOr[Enabled] = js.undefined): SendingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendingOptions]
   }
 }

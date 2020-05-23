@@ -1,6 +1,6 @@
 package typings.apolloServerCore.runHttpQueryMod
 
-import typings.apolloServerCore.AnonContext
+import typings.apolloServerCore.anon.Context
 import typings.apolloServerCore.apolloServerCoreStrings.cache
 import typings.apolloServerCore.apolloServerCoreStrings.plugins
 import typings.apolloServerCore.graphqlOptionsMod.GraphQLServerOptions
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object processHTTPRequest extends js.Object {
   def apply[TContext](
-    options: (WithRequired[GraphQLServerOptions[TContext, _], cache | plugins]) with AnonContext[TContext],
+    options: (WithRequired[GraphQLServerOptions[TContext, _], cache | plugins]) with Context[TContext],
     httpRequest: HttpQueryRequest
   ): js.Promise[HttpQueryResponse] = js.native
 }

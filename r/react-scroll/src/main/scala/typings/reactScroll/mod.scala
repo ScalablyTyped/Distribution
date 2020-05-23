@@ -1,11 +1,18 @@
 package typings.reactScroll
 
 import typings.react.mod.Component
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.ComponentType
+import typings.reactScroll.anon.Smooth
 import typings.reactScroll.buttonMod.ButtonProps
 import typings.reactScroll.elementMod.ElementProps
 import typings.reactScroll.linkMod.LinkProps
+import typings.reactScroll.scrollElementMod.ScrollElementProps
 import typings.reactScroll.scrollEventsMod.Events.ScrollEvent
+import typings.reactScroll.scrollLinkMod.ScrollLinkProps
 import typings.reactScroll.scrollSpyMod.ScrollSpy
+import typings.reactScroll.scrollerMod.Scroller
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +33,9 @@ object mod extends js.Object {
     extends Component[LinkProps, js.Object, js.Any]
   
   val scrollSpy: ScrollSpy = js.native
+  def ScrollElement[P](component: ComponentType[P]): ComponentClass[ScrollElementProps[P], ComponentState] = js.native
+  def ScrollLink[P](component: ComponentType[P]): ComponentClass[ScrollLinkProps[P], ComponentState] = js.native
+  def ScrollLink[P](component: ComponentType[P], customScroller: Scroller): ComponentClass[ScrollLinkProps[P], ComponentState] = js.native
   @js.native
   object Events extends js.Object {
     val scrollEvent: ScrollEvent = js.native
@@ -41,7 +51,7 @@ object mod extends js.Object {
   @js.native
   object animateScroll extends js.Object {
     def animateTopScroll(y: Double, options: js.Any, to: String, target: js.Any): Unit = js.native
-    def getAnimationType(options: AnonSmooth): js.Function1[/* x */ Double, Double] = js.native
+    def getAnimationType(options: Smooth): js.Function1[/* x */ Double, Double] = js.native
     def scrollMore(toY: Double): Unit = js.native
     def scrollMore(toY: Double, options: js.Any): Unit = js.native
     def scrollTo(toY: Double): Unit = js.native

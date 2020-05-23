@@ -26,23 +26,23 @@ object Options {
     baseDir: String = null,
     buffer: js.UndefOr[Boolean] = js.undefined,
     dirname: js.UndefOr[Boolean] = js.undefined,
-    exclude: (js.Array[String | RegExp]) | String | RegExp = null,
+    exclude: js.UndefOr[Null | (js.Array[String | RegExp]) | String | RegExp] = js.undefined,
     filename: js.UndefOr[Boolean] = js.undefined,
     global: js.UndefOr[Boolean] = js.undefined,
-    include: (js.Array[String | RegExp]) | String | RegExp = null,
+    include: js.UndefOr[Null | (js.Array[String | RegExp]) | String | RegExp] = js.undefined,
     process: js.UndefOr[Boolean] = js.undefined,
     sourceMap: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(dirname)) __obj.updateDynamic("dirname")(dirname.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(filename)) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(process)) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirname)) __obj.updateDynamic("dirname")(dirname.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclude)) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(filename)) __obj.updateDynamic("filename")(filename.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(process)) __obj.updateDynamic("process")(process.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

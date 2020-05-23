@@ -46,11 +46,11 @@ object SharedStylePropsArg {
   ): SharedStylePropsArg = {
     val __obj = js.Dynamic.literal()
     if ($arrowOffset != null) __obj.updateDynamic("$arrowOffset")($arrowOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined($isAnimating)) __obj.updateDynamic("$isAnimating")($isAnimating.asInstanceOf[js.Any])
-    if (!js.isUndefined($isOpen)) __obj.updateDynamic("$isOpen")($isOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined($isAnimating)) __obj.updateDynamic("$isAnimating")($isAnimating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($isOpen)) __obj.updateDynamic("$isOpen")($isOpen.get.asInstanceOf[js.Any])
     if ($placement != null) __obj.updateDynamic("$placement")($placement.asInstanceOf[js.Any])
     if ($popoverOffset != null) __obj.updateDynamic("$popoverOffset")($popoverOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined($showArrow)) __obj.updateDynamic("$showArrow")($showArrow.asInstanceOf[js.Any])
+    if (!js.isUndefined($showArrow)) __obj.updateDynamic("$showArrow")($showArrow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedStylePropsArg]
   }
 }

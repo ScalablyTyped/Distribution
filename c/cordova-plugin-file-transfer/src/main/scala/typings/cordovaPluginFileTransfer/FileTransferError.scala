@@ -1,6 +1,5 @@
 package typings.cordovaPluginFileTransfer
 
-import org.scalablytyped.runtime.Instantiable6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,23 +27,11 @@ trait FileTransferError extends js.Object {
   var target: String
 }
 
-@JSGlobal("FileTransferError")
-@js.native
-object FileTransferError
-  extends /** Constructor for FileTransferError object */
-Instantiable6[
-      js.UndefOr[/* code */ Double], 
-      js.UndefOr[/* source */ String], 
-      js.UndefOr[/* target */ String], 
-      js.UndefOr[/* status */ Double], 
-      js.UndefOr[/* body */ js.Any], 
-      js.UndefOr[/* exception */ js.Any], 
-      FileTransferError
-    ] {
-  var ABORT_ERR: Double = js.native
-  var CONNECTION_ERR: Double = js.native
-  var FILE_NOT_FOUND_ERR: Double = js.native
-  var INVALID_URL_ERR: Double = js.native
-  var NOT_MODIFIED_ERR: Double = js.native
+object FileTransferError {
+  @scala.inline
+  def apply(body: String, code: Double, exception: js.Any, http_status: Double, source: String, target: String): FileTransferError = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], exception = exception.asInstanceOf[js.Any], http_status = http_status.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileTransferError]
+  }
 }
 

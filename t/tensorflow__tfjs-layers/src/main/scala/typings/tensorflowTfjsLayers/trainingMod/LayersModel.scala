@@ -26,7 +26,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.tensorflowTfjsCore.modelTypesMod.InferenceModel because var conflicts: inputs, outputs. Inlined execute, execute, execute, execute, execute, execute, predict, predict, predict */ @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "LayersModel")
 @js.native
 class LayersModel protected () extends Container {

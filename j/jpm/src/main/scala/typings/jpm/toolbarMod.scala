@@ -1,5 +1,6 @@
 package typings.jpm
 
+import typings.jpm.anon.Hidden
 import typings.jpm.jpmStrings.attach
 import typings.jpm.jpmStrings.detach
 import typings.jpm.jpmStrings.hide
@@ -61,6 +62,6 @@ object toolbarMod extends js.Object {
   */
   trait ToolbarItem extends js.Object
   
-  def Toolbar(options: AnonHidden): Toolbar = js.native
+  def Toolbar(options: Hidden): Toolbar = js.native
 }
 

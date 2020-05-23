@@ -1,11 +1,12 @@
 package typings.antd.tableInterfaceMod
 
+import typings.antd.useSelectionMod.INTERNAL_SELECTION_ITEM
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SelectionItem extends js.Object {
+trait SelectionItem extends INTERNAL_SELECTION_ITEM {
   var key: String
   var onSelect: js.UndefOr[SelectionItemSelectFn] = js.undefined
   var text: ReactNode

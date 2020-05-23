@@ -14,8 +14,7 @@ trait ArtifactBuildStarted extends js.Object {
 object ArtifactBuildStarted {
   @scala.inline
   def apply(file: String, targetPresentableName: String, arch: Arch = null): ArtifactBuildStarted = {
-    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], targetPresentableName = targetPresentableName.asInstanceOf[js.Any])
-    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], targetPresentableName = targetPresentableName.asInstanceOf[js.Any], arch = arch.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactBuildStarted]
   }
 }

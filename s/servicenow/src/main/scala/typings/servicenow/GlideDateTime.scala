@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("GlideDateTime")
 @js.native
-class GlideDateTime () extends js.Object {
-  def this(value: String) = this()
-  def this(value: GlideDateTime) = this()
+trait GlideDateTime extends js.Object {
   def add(gd: Double): Unit = js.native
   def add(gd: GlideTime): Unit = js.native
   def addDaysLocalTime(amount: Double): Unit = js.native

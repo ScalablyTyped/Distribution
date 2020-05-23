@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ trait SVGAnimatedTransformList extends js.Object {
   val baseVal: SVGTransformList
 }
 
-@JSGlobal("SVGAnimatedTransformList")
-@js.native
-object SVGAnimatedTransformList extends Instantiable0[SVGAnimatedTransformList]
+object SVGAnimatedTransformList {
+  @scala.inline
+  def apply(animVal: SVGTransformList, baseVal: SVGTransformList): SVGAnimatedTransformList = {
+    val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGAnimatedTransformList]
+  }
+}
 

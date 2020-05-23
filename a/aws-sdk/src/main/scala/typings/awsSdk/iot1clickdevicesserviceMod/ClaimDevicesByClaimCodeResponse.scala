@@ -19,10 +19,10 @@ trait ClaimDevicesByClaimCodeResponse extends js.Object {
 
 object ClaimDevicesByClaimCodeResponse {
   @scala.inline
-  def apply(ClaimCode: stringMin12Max40 = null, Total: Int | Double = null): ClaimDevicesByClaimCodeResponse = {
+  def apply(ClaimCode: stringMin12Max40 = null, Total: js.UndefOr[integer] = js.undefined): ClaimDevicesByClaimCodeResponse = {
     val __obj = js.Dynamic.literal()
     if (ClaimCode != null) __obj.updateDynamic("ClaimCode")(ClaimCode.asInstanceOf[js.Any])
-    if (Total != null) __obj.updateDynamic("Total")(Total.asInstanceOf[js.Any])
+    if (!js.isUndefined(Total)) __obj.updateDynamic("Total")(Total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimDevicesByClaimCodeResponse]
   }
 }

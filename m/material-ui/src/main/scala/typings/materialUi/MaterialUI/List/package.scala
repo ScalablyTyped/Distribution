@@ -5,5 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object List {
+  type List = typings.react.mod.Component[typings.materialUi.MaterialUI.List.ListProps, js.Object, js.Any]
+  type ListItem = typings.react.mod.Component[typings.materialUi.MaterialUI.List.ListItemProps, js.Object, js.Any]
   type ListProps = typings.react.mod.HTMLAttributes[js.Object]
 }

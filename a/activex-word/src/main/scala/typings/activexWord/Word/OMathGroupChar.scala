@@ -4,17 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.OMathGroupChar")
-@js.native
-class OMathGroupChar protected () extends js.Object {
-  var AlignTop: Boolean = js.native
-  val Application: typings.activexWord.Word.Application = js.native
-  var Char: Double = js.native
-  var CharTop: Boolean = js.native
-  val Creator: Double = js.native
-  val E: OMath = js.native
-  val Parent: js.Any = js.native
+trait OMathGroupChar extends js.Object {
+  var AlignTop: Boolean
+  val Application: typings.activexWord.Word.Application
+  var Char: Double
+  var CharTop: Boolean
+  val Creator: Double
+  val E: OMath
+  val Parent: js.Any
   @JSName("Word.OMathGroupChar_typekey")
-  var WordDotOMathGroupChar_typekey: OMathGroupChar = js.native
+  var WordDotOMathGroupChar_typekey: OMathGroupChar
+}
+
+object OMathGroupChar {
+  @scala.inline
+  def apply(
+    AlignTop: Boolean,
+    Application: Application,
+    Char: Double,
+    CharTop: Boolean,
+    Creator: Double,
+    E: OMath,
+    Parent: js.Any,
+    WordDotOMathGroupChar_typekey: OMathGroupChar
+  ): OMathGroupChar = {
+    val __obj = js.Dynamic.literal(AlignTop = AlignTop.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Char = Char.asInstanceOf[js.Any], CharTop = CharTop.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.OMathGroupChar_typekey")(WordDotOMathGroupChar_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OMathGroupChar]
+  }
 }
 

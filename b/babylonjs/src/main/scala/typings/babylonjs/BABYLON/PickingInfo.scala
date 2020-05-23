@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PickingInfo")
 @js.native
-class PickingInfo () extends js.Object {
+trait PickingInfo extends js.Object {
   /** @hidden */
   var _pickingUnavailable: Boolean = js.native
   /** (See getTextureCoordinates) The barycentric U coordinate that is used when calculating the texture coordinates of the collision.*/

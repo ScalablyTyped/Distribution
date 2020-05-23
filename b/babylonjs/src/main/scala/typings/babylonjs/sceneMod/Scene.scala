@@ -1,10 +1,6 @@
 package typings.babylonjs.sceneMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.AnonAnimations
-import typings.babylonjs.AnonMax
-import typings.babylonjs.AnonOriginalValue
-import typings.babylonjs.PartialIEnvironmentHelper
 import typings.babylonjs.abstractActionManagerMod.AbstractActionManager
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.abstractSceneMod.AbstractScene
@@ -12,6 +8,10 @@ import typings.babylonjs.animatableMod.Animatable
 import typings.babylonjs.animationGroupMod.AnimationGroup
 import typings.babylonjs.animationMod.Animation
 import typings.babylonjs.animationPropertiesOverrideMod.AnimationPropertiesOverride
+import typings.babylonjs.anon.Animations
+import typings.babylonjs.anon.Max
+import typings.babylonjs.anon.OriginalValue
+import typings.babylonjs.anon.PartialIEnvironmentHelper
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.boundingBoxRendererMod.BoundingBoxRenderer
@@ -113,7 +113,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.animatableInterfaceMod.IAnimatable because var conflicts: animations. Inlined  */ @JSImport("babylonjs/scene", "Scene")
 @js.native
 class Scene protected () extends AbstractScene {
@@ -1039,9 +1039,9 @@ class Scene protected () extends AbstractScene {
   /** @hidden */
   def _processLateAnimationBindings(): Unit = js.native
   /** @hidden */
-  def _processLateAnimationBindingsForMatrices(holder: AnonAnimations): js.Any = js.native
+  def _processLateAnimationBindingsForMatrices(holder: Animations): js.Any = js.native
   /** @hidden */
-  def _processLateAnimationBindingsForQuaternions(holder: AnonOriginalValue, refQuaternion: Quaternion): Quaternion = js.native
+  def _processLateAnimationBindingsForQuaternions(holder: OriginalValue, refQuaternion: Quaternion): Quaternion = js.native
   /** @hidden */
   def _readFile(file: File, onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit]): IFileRequest = js.native
   def _readFile(
@@ -2199,8 +2199,8 @@ class Scene protected () extends AbstractScene {
     * @param filterPredicate the predicate - which meshes should be included when calculating the world size
     * @returns {{ min: Vector3; max: Vector3 }} min and max vectors
     */
-  def getWorldExtends(): AnonMax = js.native
-  def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): AnonMax = js.native
+  def getWorldExtends(): Max = js.native
+  def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): Max = js.native
   /**
     * Default image processing configuration used either in the rendering
     * Forward main pass or through the imageProcessingPostProcess if present.

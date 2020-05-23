@@ -28,13 +28,13 @@ object DescribePublicIpv4PoolsRequest {
   @scala.inline
   def apply(
     Filters: FilterList = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[PoolMaxResults] = js.undefined,
     NextToken: NextToken = null,
     PoolIds: PublicIpv4PoolIdStringList = null
   ): DescribePublicIpv4PoolsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (PoolIds != null) __obj.updateDynamic("PoolIds")(PoolIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePublicIpv4PoolsRequest]

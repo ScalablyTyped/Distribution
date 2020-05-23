@@ -65,8 +65,8 @@ object DataSource {
     username: String = null
   ): DataSource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(browseForFile)) __obj.updateDynamic("browseForFile")(browseForFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browseForFile)) __obj.updateDynamic("browseForFile")(browseForFile.get.asInstanceOf[js.Any])
     if (catalog != null) __obj.updateDynamic("catalog")(catalog.asInstanceOf[js.Any])
     if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
     if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
@@ -78,7 +78,7 @@ object DataSource {
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreQuotedLineBreaks)) __obj.updateDynamic("ignoreQuotedLineBreaks")(ignoreQuotedLineBreaks.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreQuotedLineBreaks)) __obj.updateDynamic("ignoreQuotedLineBreaks")(ignoreQuotedLineBreaks.get.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (localeIdentifier != null) __obj.updateDynamic("localeIdentifier")(localeIdentifier.asInstanceOf[js.Any])
     if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])

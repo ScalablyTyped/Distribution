@@ -2,7 +2,7 @@ package typings.istanbulLibInstrument.mod
 
 import typings.istanbulLibCoverage.mod.FileCoverage
 import typings.istanbulLibCoverage.mod.FileCoverageData
-import typings.istanbulLibInstrument.PartialInstrumenterOption
+import typings.istanbulLibInstrument.anon.PartialInstrumenterOption
 import typings.sourceMap.mod.RawSourceMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`

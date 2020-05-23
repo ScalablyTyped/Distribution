@@ -20,7 +20,7 @@ object NavbarLinkModifierProps {
     onClick: MouseEvent[Element, NativeMouseEvent] => Unit = null
   ): NavbarLinkModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowless)) __obj.updateDynamic("arrowless")(arrowless.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowless)) __obj.updateDynamic("arrowless")(arrowless.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[NavbarLinkModifierProps]
   }

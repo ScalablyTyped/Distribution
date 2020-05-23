@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when webpage download progresses.
-		 */
+  * Fired when webpage download progresses.
+  */
 trait WebViewProgressEvent extends WebViewBaseEvent {
   /**
-  			 * URL of the web document being loaded.
-  			 */
+    * URL of the web document being loaded.
+    */
   var url: String
   /**
-  			 * An estimate of what fraction of the current navigation has been loaded.
-  			 */
+    * An estimate of what fraction of the current navigation has been loaded.
+    */
   var value: Double
 }
 

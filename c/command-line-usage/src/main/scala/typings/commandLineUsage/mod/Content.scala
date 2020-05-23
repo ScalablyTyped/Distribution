@@ -1,6 +1,6 @@
 package typings.commandLineUsage.mod
 
-import typings.commandLineUsage.AnonData
+import typings.commandLineUsage.anon.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait Content extends Section {
     *     consistent throughout the array.
     *  4. An object with two properties - data and options. In this case, the data and options will be passed directly to the underlying table layout module for rendering.
     */
-  var content: js.UndefOr[String | (js.Array[_ | String]) | AnonData] = js.undefined
+  var content: js.UndefOr[String | (js.Array[_ | String]) | Data] = js.undefined
   /** The section header, always bold and underlined. */
   var header: js.UndefOr[String] = js.undefined
   /** Set to true to avoid indentation and wrapping. Useful for banners. */
@@ -25,14 +25,14 @@ trait Content extends Section {
 object Content {
   @scala.inline
   def apply(
-    content: String | (js.Array[_ | String]) | AnonData = null,
+    content: String | (js.Array[_ | String]) | Data = null,
     header: String = null,
     raw: js.UndefOr[Boolean] = js.undefined
   ): Content = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
 }

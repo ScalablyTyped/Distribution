@@ -18,9 +18,12 @@ trait ErrorRootCause extends js.Object {
 
 object ErrorRootCause {
   @scala.inline
-  def apply(ClientImpacting: js.UndefOr[scala.Boolean] = js.undefined, Services: ErrorRootCauseServices = null): ErrorRootCause = {
+  def apply(
+    ClientImpacting: js.UndefOr[NullableBoolean] = js.undefined,
+    Services: ErrorRootCauseServices = null
+  ): ErrorRootCause = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ClientImpacting)) __obj.updateDynamic("ClientImpacting")(ClientImpacting.asInstanceOf[js.Any])
+    if (!js.isUndefined(ClientImpacting)) __obj.updateDynamic("ClientImpacting")(ClientImpacting.get.asInstanceOf[js.Any])
     if (Services != null) __obj.updateDynamic("Services")(Services.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorRootCause]
   }

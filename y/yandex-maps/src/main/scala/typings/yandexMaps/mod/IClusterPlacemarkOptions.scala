@@ -1,6 +1,6 @@
 package typings.yandexMaps.mod
 
-import typings.yandexMaps.AnonHref
+import typings.yandexMaps.anon.Href
 import typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonAccordion
 import typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonCarousel
 import typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonTwoColumns
@@ -23,7 +23,7 @@ trait IClusterPlacemarkOptions extends js.Object {
   var iconContentLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   var iconLayout: js.UndefOr[String | IClassConstructor[ILayout]] = js.undefined
   var iconShape: js.UndefOr[IGeometryJson] = js.undefined
-  var icons: js.UndefOr[js.Array[AnonHref]] = js.undefined
+  var icons: js.UndefOr[js.Array[Href]] = js.undefined
   var interactivityModel: js.UndefOr[InteractivityModelKey] = js.undefined
   var numbers: js.UndefOr[js.Array[Double]] = js.undefined
   var openBalloonOnClick: js.UndefOr[Boolean] = js.undefined
@@ -36,8 +36,8 @@ object IClusterPlacemarkOptions {
   @scala.inline
   def apply(
     balloonContentLayout: clusterNumbersignballoonTwoColumns | clusterNumbersignballoonCarousel | clusterNumbersignballoonAccordion | String | IClassConstructor[ILayout] = null,
-    balloonContentLayoutHeight: Int | Double = null,
-    balloonContentLayoutWidth: Int | Double = null,
+    balloonContentLayoutHeight: js.UndefOr[Double] = js.undefined,
+    balloonContentLayoutWidth: js.UndefOr[Double] = js.undefined,
     balloonItemContentLayout: ILayout | String = null,
     balloonPanelContentLayout: String | IClassConstructor[ILayout] = null,
     cursor: String = null,
@@ -47,23 +47,23 @@ object IClusterPlacemarkOptions {
     iconContentLayout: String | IClassConstructor[ILayout] = null,
     iconLayout: String | IClassConstructor[ILayout] = null,
     iconShape: IGeometryJson = null,
-    icons: js.Array[AnonHref] = null,
+    icons: js.Array[Href] = null,
     interactivityModel: InteractivityModelKey = null,
     numbers: js.Array[Double] = null,
     openBalloonOnClick: js.UndefOr[Boolean] = js.undefined,
     openEmptyHint: js.UndefOr[Boolean] = js.undefined,
     openHintOnHover: js.UndefOr[Boolean] = js.undefined,
-    zIndexHover: Int | Double = null
+    zIndexHover: js.UndefOr[Double] = js.undefined
   ): IClusterPlacemarkOptions = {
     val __obj = js.Dynamic.literal()
     if (balloonContentLayout != null) __obj.updateDynamic("balloonContentLayout")(balloonContentLayout.asInstanceOf[js.Any])
-    if (balloonContentLayoutHeight != null) __obj.updateDynamic("balloonContentLayoutHeight")(balloonContentLayoutHeight.asInstanceOf[js.Any])
-    if (balloonContentLayoutWidth != null) __obj.updateDynamic("balloonContentLayoutWidth")(balloonContentLayoutWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(balloonContentLayoutHeight)) __obj.updateDynamic("balloonContentLayoutHeight")(balloonContentLayoutHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(balloonContentLayoutWidth)) __obj.updateDynamic("balloonContentLayoutWidth")(balloonContentLayoutWidth.get.asInstanceOf[js.Any])
     if (balloonItemContentLayout != null) __obj.updateDynamic("balloonItemContentLayout")(balloonItemContentLayout.asInstanceOf[js.Any])
     if (balloonPanelContentLayout != null) __obj.updateDynamic("balloonPanelContentLayout")(balloonPanelContentLayout.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableClickZoom)) __obj.updateDynamic("disableClickZoom")(disableClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideIconOnBalloonOpen)) __obj.updateDynamic("hideIconOnBalloonOpen")(hideIconOnBalloonOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableClickZoom)) __obj.updateDynamic("disableClickZoom")(disableClickZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideIconOnBalloonOpen)) __obj.updateDynamic("hideIconOnBalloonOpen")(hideIconOnBalloonOpen.get.asInstanceOf[js.Any])
     if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
     if (iconContentLayout != null) __obj.updateDynamic("iconContentLayout")(iconContentLayout.asInstanceOf[js.Any])
     if (iconLayout != null) __obj.updateDynamic("iconLayout")(iconLayout.asInstanceOf[js.Any])
@@ -71,10 +71,10 @@ object IClusterPlacemarkOptions {
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (interactivityModel != null) __obj.updateDynamic("interactivityModel")(interactivityModel.asInstanceOf[js.Any])
     if (numbers != null) __obj.updateDynamic("numbers")(numbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(openBalloonOnClick)) __obj.updateDynamic("openBalloonOnClick")(openBalloonOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(openEmptyHint)) __obj.updateDynamic("openEmptyHint")(openEmptyHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(openHintOnHover)) __obj.updateDynamic("openHintOnHover")(openHintOnHover.asInstanceOf[js.Any])
-    if (zIndexHover != null) __obj.updateDynamic("zIndexHover")(zIndexHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(openBalloonOnClick)) __obj.updateDynamic("openBalloonOnClick")(openBalloonOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(openEmptyHint)) __obj.updateDynamic("openEmptyHint")(openEmptyHint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(openHintOnHover)) __obj.updateDynamic("openHintOnHover")(openHintOnHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndexHover)) __obj.updateDynamic("zIndexHover")(zIndexHover.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClusterPlacemarkOptions]
   }
 }

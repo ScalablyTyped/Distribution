@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "egg-cookies" : "2.3.2"
+      "egg-cookies" : "2.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "egg-cookies" : "2.3.2"
+      "egg-cookies" : "2.3.3"
     }
   ],
   "compile-devDependencies" : [

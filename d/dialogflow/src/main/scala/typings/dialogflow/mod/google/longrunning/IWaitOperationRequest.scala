@@ -15,10 +15,13 @@ trait IWaitOperationRequest extends js.Object {
 
 object IWaitOperationRequest {
   @scala.inline
-  def apply(name: String = null, timeout: IDuration = null): IWaitOperationRequest = {
+  def apply(
+    name: js.UndefOr[Null | String] = js.undefined,
+    timeout: js.UndefOr[Null | IDuration] = js.undefined
+  ): IWaitOperationRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWaitOperationRequest]
   }
 }

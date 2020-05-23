@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Activation.ProtocolActivatedEventArgs")
-@js.native
-class ProtocolActivatedEventArgs () extends IProtocolActivatedEventArgs {
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
-  /* CompleteClass */
-  override var uri: Uri = js.native
+trait ProtocolActivatedEventArgs extends IProtocolActivatedEventArgs
+
+object ProtocolActivatedEventArgs {
+  @scala.inline
+  def apply(
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen,
+    uri: Uri
+  ): ProtocolActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProtocolActivatedEventArgs]
+  }
 }
 

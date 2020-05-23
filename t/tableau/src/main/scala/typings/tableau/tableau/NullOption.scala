@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object NullOption extends js.Object {
   /** Only include null values in the filter. */
   @js.native
   sealed trait NULL_VALUES extends NullOption
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[NullOption with String] = js.native
-  /* "allValues" */ @js.native
-  object ALL_VALUES extends TopLevel[ALL_VALUES with String]
-  
-  /* "nonNullValues" */ @js.native
-  object NON_NULL_VALUES extends TopLevel[NON_NULL_VALUES with String]
-  
-  /* "nullValues" */ @js.native
-  object NULL_VALUES extends TopLevel[NULL_VALUES with String]
   
 }
 

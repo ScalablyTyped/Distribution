@@ -36,7 +36,7 @@ object AndroidInstrumentationTest {
     if (testPackageId != null) __obj.updateDynamic("testPackageId")(testPackageId.asInstanceOf[js.Any])
     if (testRunnerClass != null) __obj.updateDynamic("testRunnerClass")(testRunnerClass.asInstanceOf[js.Any])
     if (testTargets != null) __obj.updateDynamic("testTargets")(testTargets.asInstanceOf[js.Any])
-    if (!js.isUndefined(useOrchestrator)) __obj.updateDynamic("useOrchestrator")(useOrchestrator.asInstanceOf[js.Any])
+    if (!js.isUndefined(useOrchestrator)) __obj.updateDynamic("useOrchestrator")(useOrchestrator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidInstrumentationTest]
   }
 }

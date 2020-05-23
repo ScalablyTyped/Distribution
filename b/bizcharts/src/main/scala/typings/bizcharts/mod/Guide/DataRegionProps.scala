@@ -29,7 +29,7 @@ object DataRegionProps {
     direction: upward | downward = null,
     display: js.Object = null,
     end: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _]) = null,
-    lineLength: Int | Double = null,
+    lineLength: js.UndefOr[Double] = js.undefined,
     regionStyle: js.Object = null,
     start: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _]) = null,
     style: js.Object = null,
@@ -40,11 +40,11 @@ object DataRegionProps {
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (lineLength != null) __obj.updateDynamic("lineLength")(lineLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineLength)) __obj.updateDynamic("lineLength")(lineLength.get.asInstanceOf[js.Any])
     if (regionStyle != null) __obj.updateDynamic("regionStyle")(regionStyle.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRegionProps]
   }
 }

@@ -29,12 +29,12 @@ object IIssuingDisputeCreateOptions {
   def apply(
     disputed_transaction: String,
     reason: IssuingDisputeReason,
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     evidence: IIssuingDisputeEvidence = null,
     metadata: IOptionsMetadata = null
   ): IIssuingDisputeCreateOptions = {
     val __obj = js.Dynamic.literal(disputed_transaction = disputed_transaction.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (evidence != null) __obj.updateDynamic("evidence")(evidence.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIssuingDisputeCreateOptions]

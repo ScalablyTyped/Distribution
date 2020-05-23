@@ -1,6 +1,6 @@
 package typings.schwifty.mod
 
-import typings.schwifty.TypeofModel
+import typings.schwifty.anon.TypeofModel
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

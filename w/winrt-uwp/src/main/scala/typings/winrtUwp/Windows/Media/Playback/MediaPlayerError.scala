@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Playback
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object MediaPlayerError extends js.Object {
   /** The error is unknown. */
   @js.native
   sealed trait unknown extends MediaPlayerError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaPlayerError with Double] = js.native
-  /* 1 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 3 */ @js.native
-  object decodingError extends TopLevel[decodingError with Double]
-  
-  /* 2 */ @js.native
-  object networkError extends TopLevel[networkError with Double]
-  
-  /* 4 */ @js.native
-  object sourceNotSupported extends TopLevel[sourceNotSupported with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

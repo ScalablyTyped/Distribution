@@ -1,6 +1,6 @@
 package typings.openfin.notificationMod
 
-import typings.openfin.AnonClick
+import typings.openfin.anon.Click
 import typings.openfin.baseMod.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NotificationModule extends Base {
-  var events: AnonClick = js.native
+  var events: Click = js.native
   var genNoteId: js.Any = js.native
   var nextNoteId: js.Any = js.native
   /**

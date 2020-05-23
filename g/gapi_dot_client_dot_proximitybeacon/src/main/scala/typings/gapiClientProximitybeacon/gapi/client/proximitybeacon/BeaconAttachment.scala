@@ -59,14 +59,14 @@ object BeaconAttachment {
     attachmentName: String = null,
     creationTimeMs: String = null,
     data: String = null,
-    maxDistanceMeters: Int | Double = null,
+    maxDistanceMeters: js.UndefOr[Double] = js.undefined,
     namespacedType: String = null
   ): BeaconAttachment = {
     val __obj = js.Dynamic.literal()
     if (attachmentName != null) __obj.updateDynamic("attachmentName")(attachmentName.asInstanceOf[js.Any])
     if (creationTimeMs != null) __obj.updateDynamic("creationTimeMs")(creationTimeMs.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (maxDistanceMeters != null) __obj.updateDynamic("maxDistanceMeters")(maxDistanceMeters.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDistanceMeters)) __obj.updateDynamic("maxDistanceMeters")(maxDistanceMeters.get.asInstanceOf[js.Any])
     if (namespacedType != null) __obj.updateDynamic("namespacedType")(namespacedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeaconAttachment]
   }

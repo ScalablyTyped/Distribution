@@ -59,16 +59,16 @@ object Options {
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     hidden: /* event */ CustomEvent[_] => Unit = null,
     hide: /* event */ CustomEvent[_] => Unit = null,
-    initialViewIndex: Int | Double = null,
+    initialViewIndex: js.UndefOr[Double] = js.undefined,
     `inline`: js.UndefOr[Boolean] = js.undefined,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     loading: js.UndefOr[Boolean] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
-    maxZoomRatio: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    minZoomRatio: Int | Double = null,
+    maxZoomRatio: js.UndefOr[Double] = js.undefined,
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
+    minZoomRatio: js.UndefOr[Double] = js.undefined,
     movable: js.UndefOr[Boolean] = js.undefined,
     navbar: Boolean | Visibility = null,
     ready: /* event */ CustomEvent[_] => Unit = null,
@@ -84,52 +84,52 @@ object Options {
     url: String | js.Function = null,
     view: /* event */ CustomEvent[_] => Unit = null,
     viewed: /* event */ CustomEvent[_] => Unit = null,
-    zIndex: Int | Double = null,
-    zIndexInline: Int | Double = null,
+    zIndex: js.UndefOr[Double] = js.undefined,
+    zIndexInline: js.UndefOr[Double] = js.undefined,
     zoom: /* event */ CustomEvent[_] => Unit = null,
-    zoomRatio: Int | Double = null,
+    zoomRatio: js.UndefOr[Double] = js.undefined,
     zoomable: js.UndefOr[Boolean] = js.undefined,
     zoomed: /* event */ CustomEvent[_] => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
     if (hidden != null) __obj.updateDynamic("hidden")(js.Any.fromFunction1(hidden))
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
-    if (initialViewIndex != null) __obj.updateDynamic("initialViewIndex")(initialViewIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (maxZoomRatio != null) __obj.updateDynamic("maxZoomRatio")(maxZoomRatio.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (minZoomRatio != null) __obj.updateDynamic("minZoomRatio")(minZoomRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialViewIndex)) __obj.updateDynamic("initialViewIndex")(initialViewIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoomRatio)) __obj.updateDynamic("maxZoomRatio")(maxZoomRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoomRatio)) __obj.updateDynamic("minZoomRatio")(minZoomRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.get.asInstanceOf[js.Any])
     if (navbar != null) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable.asInstanceOf[js.Any])
-    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable.get.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (shown != null) __obj.updateDynamic("shown")(js.Any.fromFunction1(shown))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleOnDblclick)) __obj.updateDynamic("toggleOnDblclick")(toggleOnDblclick.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleOnDblclick)) __obj.updateDynamic("toggleOnDblclick")(toggleOnDblclick.get.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(js.Any.fromFunction1(view))
     if (viewed != null) __obj.updateDynamic("viewed")(js.Any.fromFunction1(viewed))
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    if (zIndexInline != null) __obj.updateDynamic("zIndexInline")(zIndexInline.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndexInline)) __obj.updateDynamic("zIndexInline")(zIndexInline.get.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(js.Any.fromFunction1(zoom))
-    if (zoomRatio != null) __obj.updateDynamic("zoomRatio")(zoomRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomRatio)) __obj.updateDynamic("zoomRatio")(zoomRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.get.asInstanceOf[js.Any])
     if (zoomed != null) __obj.updateDynamic("zoomed")(js.Any.fromFunction1(zoomed))
     __obj.asInstanceOf[Options]
   }

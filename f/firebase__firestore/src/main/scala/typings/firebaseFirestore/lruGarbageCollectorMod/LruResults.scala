@@ -20,7 +20,6 @@ object LruResults {
     targetsRemoved: Double
   ): LruResults = {
     val __obj = js.Dynamic.literal(didRun = didRun.asInstanceOf[js.Any], documentsRemoved = documentsRemoved.asInstanceOf[js.Any], sequenceNumbersCollected = sequenceNumbersCollected.asInstanceOf[js.Any], targetsRemoved = targetsRemoved.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[LruResults]
   }
 }

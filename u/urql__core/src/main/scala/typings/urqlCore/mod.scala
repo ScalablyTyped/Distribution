@@ -2,12 +2,14 @@ package typings.urqlCore
 
 import typings.graphql.astMod.DocumentNode
 import typings.std.Error
+import typings.urqlCore.anon.NetworkError
 import typings.urqlCore.clientMod.ClientOptions
 import typings.urqlCore.ssrMod.SSRExchangeParams
 import typings.urqlCore.ssrMod.SSRExchange_
 import typings.urqlCore.subscriptionMod.SubscriptionExchangeOpts
 import typings.urqlCore.typesMod.Exchange
 import typings.urqlCore.typesMod.ExchangeIO
+import typings.urqlCore.typesMod.ExchangeInput
 import typings.urqlCore.typesMod.GraphQLRequest
 import typings.urqlCore.typesMod.Operation
 import typings.urqlCore.typesMod.OperationResult
@@ -27,7 +29,7 @@ object mod extends js.Object {
   @js.native
   class CombinedError protected ()
     extends typings.urqlCore.utilsMod.CombinedError {
-    def this(hasNetworkErrorGraphQLErrorsResponse: AnonNetworkError) = this()
+    def this(hasNetworkErrorGraphQLErrorsResponse: NetworkError) = this()
   }
   
   val cacheExchange: Exchange = js.native
@@ -36,7 +38,7 @@ object mod extends js.Object {
   val defaultExchanges: js.Array[Exchange] = js.native
   val fallbackExchangeIO: ExchangeIO = js.native
   val fetchExchange: Exchange = js.native
-  def composeExchanges(exchanges: js.Array[Exchange]): Exchange = js.native
+  def composeExchanges(exchanges: js.Array[Exchange]): js.Function1[/* hasClientForwardDispatchDebug */ ExchangeInput, ExchangeIO] = js.native
   def createClient(opts: ClientOptions): typings.urqlCore.clientMod.Client = js.native
   def createRequest(q: String): GraphQLRequest = js.native
   def createRequest(q: String, vars: js.Object): GraphQLRequest = js.native

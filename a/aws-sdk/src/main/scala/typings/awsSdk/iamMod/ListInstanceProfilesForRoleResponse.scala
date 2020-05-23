@@ -24,11 +24,11 @@ object ListInstanceProfilesForRoleResponse {
   @scala.inline
   def apply(
     InstanceProfiles: instanceProfileListType,
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    IsTruncated: js.UndefOr[booleanType] = js.undefined,
     Marker: responseMarkerType = null
   ): ListInstanceProfilesForRoleResponse = {
     val __obj = js.Dynamic.literal(InstanceProfiles = InstanceProfiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInstanceProfilesForRoleResponse]
   }

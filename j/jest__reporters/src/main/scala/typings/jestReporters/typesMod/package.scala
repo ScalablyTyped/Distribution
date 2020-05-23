@@ -16,5 +16,13 @@ package object typesMod {
     /* result */ typings.jestTestResult.typesMod.TestResult, 
     js.Promise[js.Any]
   ]
-  type TestRunData = js.Array[typings.jestReporters.AnonContext]
+  type TestFramework = js.Function5[
+    /* globalConfig */ typings.jestTypes.configMod.GlobalConfig, 
+    /* config */ typings.jestTypes.configMod.ProjectConfig, 
+    /* environment */ typings.jestEnvironment.mod.JestEnvironment, 
+    /* runtime */ typings.jestRuntime.mod.^, 
+    /* testPath */ java.lang.String, 
+    js.Promise[typings.jestTestResult.typesMod.TestResult]
+  ]
+  type TestRunData = js.Array[typings.jestReporters.anon.Context]
 }

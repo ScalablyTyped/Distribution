@@ -20,10 +20,10 @@ object RouteNodeOptions {
     sort: js.UndefOr[Boolean] = js.undefined
   ): RouteNodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(finalSort)) __obj.updateDynamic("finalSort")(finalSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(finalSort)) __obj.updateDynamic("finalSort")(finalSort.get.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteNodeOptions]
   }
 }

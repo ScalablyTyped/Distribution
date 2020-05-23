@@ -1,6 +1,5 @@
 package typings.cordovaPluginWebsql
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,4 @@ trait SqlTransaction extends js.Object {
     errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, _]
   ): Unit = js.native
 }
-
-@JSGlobal("SqlTransaction")
-@js.native
-object SqlTransaction extends Instantiable0[SqlTransaction]
 

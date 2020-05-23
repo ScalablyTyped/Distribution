@@ -62,7 +62,7 @@ import typings.react.mod.TrackHTMLAttributes
 import typings.react.mod.ValidationMap
 import typings.react.mod.VideoHTMLAttributes
 import typings.react.mod.WebViewHTMLAttributes
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
@@ -179,6 +179,17 @@ import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import typings.storybookComponents.actionBarMod.ActionBarProps
 import typings.storybookComponents.addonPanelMod.AddonPanelProps
+import typings.storybookComponents.anon.IsLink
+import typings.storybookComponents.anon.PartialButtonPropsRefAttr
+import typings.storybookComponents.anon.PartialDetailedHTMLPropsF
+import typings.storybookComponents.anon.PickDetailedHTMLPropsForm
+import typings.storybookComponents.anon.PickDetailedHTMLPropsHTML
+import typings.storybookComponents.anon.PropsWithChildrenDetailed
+import typings.storybookComponents.anon.StyledComponentPickPickHT
+import typings.storybookComponents.anon.StyledComponentPickPickTe
+import typings.storybookComponents.anon.StyledComponentPickSelect
+import typings.storybookComponents.anon.WeakValidationMapButtonPr
+import typings.storybookComponents.anon.WeakValidationMapDetailed
 import typings.storybookComponents.badgeMod.BadgeProps
 import typings.storybookComponents.barMod.FlexBarProps
 import typings.storybookComponents.buttonButtonMod.ButtonProps
@@ -494,7 +505,7 @@ object mod extends js.Object {
   object Button extends js.Object {
     @JSName("$$typeof")
     val DollarDollartypeof: js.Symbol = js.native
-    var defaultProps: js.UndefOr[AnonIsLink | PartialButtonPropsRefAttr] = js.native
+    var defaultProps: js.UndefOr[IsLink | PartialButtonPropsRefAttr] = js.native
     var displayName: js.UndefOr[String] = js.native
     var propTypes: js.UndefOr[WeakValidationMapButtonPr] = js.native
     /**

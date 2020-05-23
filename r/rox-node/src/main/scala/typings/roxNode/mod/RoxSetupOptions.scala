@@ -38,7 +38,7 @@ object RoxSetupOptions {
     debugLevel: verbose = null,
     devModeSecret: String = null,
     disableNetworkFetch: js.UndefOr[Boolean] = js.undefined,
-    fetchIntervalInSec: Int | Double = null,
+    fetchIntervalInSec: js.UndefOr[Double] = js.undefined,
     impressionHandler: (/* reporting */ RoxReporting, /* experiment */ RoxExperiment, /* context */ js.Any) => Unit = null,
     platform: String = null,
     roxy: String = null,
@@ -48,8 +48,8 @@ object RoxSetupOptions {
     if (configurationFetchedHandler != null) __obj.updateDynamic("configurationFetchedHandler")(js.Any.fromFunction1(configurationFetchedHandler))
     if (debugLevel != null) __obj.updateDynamic("debugLevel")(debugLevel.asInstanceOf[js.Any])
     if (devModeSecret != null) __obj.updateDynamic("devModeSecret")(devModeSecret.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNetworkFetch)) __obj.updateDynamic("disableNetworkFetch")(disableNetworkFetch.asInstanceOf[js.Any])
-    if (fetchIntervalInSec != null) __obj.updateDynamic("fetchIntervalInSec")(fetchIntervalInSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNetworkFetch)) __obj.updateDynamic("disableNetworkFetch")(disableNetworkFetch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchIntervalInSec)) __obj.updateDynamic("fetchIntervalInSec")(fetchIntervalInSec.get.asInstanceOf[js.Any])
     if (impressionHandler != null) __obj.updateDynamic("impressionHandler")(js.Any.fromFunction3(impressionHandler))
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (roxy != null) __obj.updateDynamic("roxy")(roxy.asInstanceOf[js.Any])

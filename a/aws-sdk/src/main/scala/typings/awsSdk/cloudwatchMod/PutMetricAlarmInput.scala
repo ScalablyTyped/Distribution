@@ -102,10 +102,10 @@ object PutMetricAlarmInput {
     AlarmName: AlarmName,
     ComparisonOperator: ComparisonOperator,
     EvaluationPeriods: EvaluationPeriods,
-    ActionsEnabled: js.UndefOr[Boolean] = js.undefined,
+    ActionsEnabled: js.UndefOr[ActionsEnabled] = js.undefined,
     AlarmActions: ResourceList = null,
     AlarmDescription: AlarmDescription = null,
-    DatapointsToAlarm: Int | Double = null,
+    DatapointsToAlarm: js.UndefOr[DatapointsToAlarm] = js.undefined,
     Dimensions: Dimensions = null,
     EvaluateLowSampleCountPercentile: EvaluateLowSampleCountPercentile = null,
     ExtendedStatistic: ExtendedStatistic = null,
@@ -114,19 +114,19 @@ object PutMetricAlarmInput {
     Metrics: MetricDataQueries = null,
     Namespace: Namespace = null,
     OKActions: ResourceList = null,
-    Period: Int | Double = null,
+    Period: js.UndefOr[Period] = js.undefined,
     Statistic: Statistic = null,
     Tags: TagList = null,
-    Threshold: Int | Double = null,
+    Threshold: js.UndefOr[Threshold] = js.undefined,
     ThresholdMetricId: MetricId = null,
     TreatMissingData: TreatMissingData = null,
     Unit: StandardUnit = null
   ): PutMetricAlarmInput = {
     val __obj = js.Dynamic.literal(AlarmName = AlarmName.asInstanceOf[js.Any], ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], EvaluationPeriods = EvaluationPeriods.asInstanceOf[js.Any])
-    if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled.get.asInstanceOf[js.Any])
     if (AlarmActions != null) __obj.updateDynamic("AlarmActions")(AlarmActions.asInstanceOf[js.Any])
     if (AlarmDescription != null) __obj.updateDynamic("AlarmDescription")(AlarmDescription.asInstanceOf[js.Any])
-    if (DatapointsToAlarm != null) __obj.updateDynamic("DatapointsToAlarm")(DatapointsToAlarm.asInstanceOf[js.Any])
+    if (!js.isUndefined(DatapointsToAlarm)) __obj.updateDynamic("DatapointsToAlarm")(DatapointsToAlarm.get.asInstanceOf[js.Any])
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
     if (EvaluateLowSampleCountPercentile != null) __obj.updateDynamic("EvaluateLowSampleCountPercentile")(EvaluateLowSampleCountPercentile.asInstanceOf[js.Any])
     if (ExtendedStatistic != null) __obj.updateDynamic("ExtendedStatistic")(ExtendedStatistic.asInstanceOf[js.Any])
@@ -135,10 +135,10 @@ object PutMetricAlarmInput {
     if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
     if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
     if (OKActions != null) __obj.updateDynamic("OKActions")(OKActions.asInstanceOf[js.Any])
-    if (Period != null) __obj.updateDynamic("Period")(Period.asInstanceOf[js.Any])
+    if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period.get.asInstanceOf[js.Any])
     if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Threshold != null) __obj.updateDynamic("Threshold")(Threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(Threshold)) __obj.updateDynamic("Threshold")(Threshold.get.asInstanceOf[js.Any])
     if (ThresholdMetricId != null) __obj.updateDynamic("ThresholdMetricId")(ThresholdMetricId.asInstanceOf[js.Any])
     if (TreatMissingData != null) __obj.updateDynamic("TreatMissingData")(TreatMissingData.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])

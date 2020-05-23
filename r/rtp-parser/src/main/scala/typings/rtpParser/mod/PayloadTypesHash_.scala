@@ -1,301 +1,301 @@
 package typings.rtpParser.mod
 
-import typings.rtpParser.Anon0
-import typings.rtpParser.Anon1
-import typings.rtpParser.Anon10
-import typings.rtpParser.Anon11
-import typings.rtpParser.Anon12
-import typings.rtpParser.Anon13
-import typings.rtpParser.Anon14
-import typings.rtpParser.Anon15
-import typings.rtpParser.Anon16
-import typings.rtpParser.Anon17
-import typings.rtpParser.Anon18
-import typings.rtpParser.Anon19
-import typings.rtpParser.Anon2
-import typings.rtpParser.Anon3
-import typings.rtpParser.Anon4
-import typings.rtpParser.Anon5
-import typings.rtpParser.Anon6
-import typings.rtpParser.Anon7
-import typings.rtpParser.Anon8
-import typings.rtpParser.Anon9
-import typings.rtpParser.AnonChannels
-import typings.rtpParser.AnonChannelsClockRate
-import typings.rtpParser.AnonChannelsClockRateMediaType
-import typings.rtpParser.AnonChannelsClockRateMediaTypeName
-import typings.rtpParser.AnonClockRate
-import typings.rtpParser.AnonClockRateMediaType
-import typings.rtpParser.AnonClockRateMediaTypeName
-import typings.rtpParser.AnonMediaType
-import typings.rtpParser.AnonMediaTypeName
-import typings.rtpParser.AnonName
+import typings.rtpParser.anon.Channels
+import typings.rtpParser.anon.ChannelsClockRate
+import typings.rtpParser.anon.ChannelsClockRateMediaType
+import typings.rtpParser.anon.ChannelsClockRateMediaTypeName
+import typings.rtpParser.anon.ClockRate
+import typings.rtpParser.anon.ClockRateMediaType
+import typings.rtpParser.anon.ClockRateMediaTypeName
+import typings.rtpParser.anon.MediaType
+import typings.rtpParser.anon.MediaTypeName
+import typings.rtpParser.anon.Name
+import typings.rtpParser.anon.`0`
+import typings.rtpParser.anon.`10`
+import typings.rtpParser.anon.`11`
+import typings.rtpParser.anon.`12`
+import typings.rtpParser.anon.`13`
+import typings.rtpParser.anon.`14`
+import typings.rtpParser.anon.`15`
+import typings.rtpParser.anon.`16`
+import typings.rtpParser.anon.`17`
+import typings.rtpParser.anon.`18`
+import typings.rtpParser.anon.`19`
+import typings.rtpParser.anon.`1`
+import typings.rtpParser.anon.`2`
+import typings.rtpParser.anon.`3`
+import typings.rtpParser.anon.`4`
+import typings.rtpParser.anon.`5`
+import typings.rtpParser.anon.`6`
+import typings.rtpParser.anon.`7`
+import typings.rtpParser.anon.`8`
+import typings.rtpParser.anon.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PayloadTypesHash_ extends js.Object {
-  var `0`: Anon19
-  var `1`: Anon18
-  var `10`: Anon10
-  var `100`: AnonName
-  var `101`: AnonName
-  var `102`: AnonName
-  var `103`: AnonName
-  var `104`: AnonName
-  var `105`: AnonName
-  var `106`: AnonName
-  var `107`: AnonName
-  var `108`: AnonName
-  var `109`: AnonName
-  var `11`: Anon9
-  var `110`: AnonName
-  var `111`: AnonName
-  var `112`: AnonName
-  var `113`: AnonName
-  var `114`: AnonName
-  var `115`: AnonName
-  var `116`: AnonName
-  var `117`: AnonName
-  var `118`: AnonName
-  var `119`: AnonName
-  var `12`: Anon8
-  var `120`: AnonName
-  var `121`: AnonName
-  var `122`: AnonName
-  var `123`: AnonName
-  var `124`: AnonName
-  var `125`: AnonName
-  var `126`: AnonName
-  var `127`: AnonName
-  var `13`: Anon7
-  var `14`: Anon6
-  var `15`: AnonChannelsClockRateMediaTypeName
-  var `16`: AnonChannelsClockRateMediaType
-  var `17`: AnonChannelsClockRate
-  var `18`: AnonChannels
-  var `19`: Anon18
-  var `2`: Anon18
-  var `20`: Anon5
-  var `21`: Anon5
-  var `22`: Anon5
-  var `23`: Anon5
-  var `24`: Anon4
-  var `25`: Anon3
-  var `26`: Anon2
-  var `27`: Anon4
-  var `28`: AnonClockRateMediaTypeName
-  var `29`: Anon4
-  var `3`: Anon17
-  var `30`: Anon4
-  var `31`: AnonMediaTypeName
-  var `32`: AnonClockRateMediaType
-  var `33`: AnonMediaType
-  var `34`: AnonClockRate
-  var `35`: Anon1
-  var `36`: Anon1
-  var `37`: Anon1
-  var `38`: Anon1
-  var `39`: Anon1
-  var `4`: Anon16
-  var `40`: Anon1
-  var `41`: Anon1
-  var `42`: Anon1
-  var `43`: Anon1
-  var `44`: Anon1
-  var `45`: Anon1
-  var `46`: Anon1
-  var `47`: Anon1
-  var `48`: Anon1
-  var `49`: Anon1
-  var `5`: Anon15
-  var `50`: Anon1
-  var `51`: Anon1
-  var `52`: Anon1
-  var `53`: Anon1
-  var `54`: Anon1
-  var `55`: Anon1
-  var `56`: Anon1
-  var `57`: Anon1
-  var `58`: Anon1
-  var `59`: Anon1
-  var `6`: Anon14
-  var `60`: Anon1
-  var `61`: Anon1
-  var `62`: Anon1
-  var `63`: Anon1
-  var `64`: Anon1
-  var `65`: Anon1
-  var `66`: Anon1
-  var `67`: Anon1
-  var `68`: Anon1
-  var `69`: Anon1
-  var `7`: Anon13
-  var `70`: Anon1
-  var `71`: Anon1
-  var `72`: Anon0
-  var `73`: Anon0
-  var `74`: Anon0
-  var `75`: Anon0
-  var `76`: Anon0
-  var `77`: Anon1
-  var `78`: Anon1
-  var `79`: Anon1
-  var `8`: Anon12
-  var `80`: Anon1
-  var `81`: Anon1
-  var `82`: Anon1
-  var `83`: Anon1
-  var `84`: Anon1
-  var `85`: Anon1
-  var `86`: Anon1
-  var `87`: Anon1
-  var `88`: Anon1
-  var `89`: Anon1
-  var `9`: Anon11
-  var `90`: Anon1
-  var `91`: Anon1
-  var `92`: Anon1
-  var `93`: Anon1
-  var `94`: Anon1
-  var `95`: Anon1
-  var `96`: AnonName
-  var `97`: AnonName
-  var `98`: AnonName
-  var `99`: AnonName
+  var `0`: `19`
+  var `1`: `18`
+  var `10`: typings.rtpParser.anon.`10`
+  var `100`: Name
+  var `101`: Name
+  var `102`: Name
+  var `103`: Name
+  var `104`: Name
+  var `105`: Name
+  var `106`: Name
+  var `107`: Name
+  var `108`: Name
+  var `109`: Name
+  var `11`: `9`
+  var `110`: Name
+  var `111`: Name
+  var `112`: Name
+  var `113`: Name
+  var `114`: Name
+  var `115`: Name
+  var `116`: Name
+  var `117`: Name
+  var `118`: Name
+  var `119`: Name
+  var `12`: `8`
+  var `120`: Name
+  var `121`: Name
+  var `122`: Name
+  var `123`: Name
+  var `124`: Name
+  var `125`: Name
+  var `126`: Name
+  var `127`: Name
+  var `13`: `7`
+  var `14`: `6`
+  var `15`: ChannelsClockRateMediaTypeName
+  var `16`: ChannelsClockRateMediaType
+  var `17`: ChannelsClockRate
+  var `18`: Channels
+  var `19`: `18`
+  var `2`: `18`
+  var `20`: `5`
+  var `21`: `5`
+  var `22`: `5`
+  var `23`: `5`
+  var `24`: `4`
+  var `25`: `3`
+  var `26`: `2`
+  var `27`: `4`
+  var `28`: ClockRateMediaTypeName
+  var `29`: `4`
+  var `3`: `17`
+  var `30`: `4`
+  var `31`: MediaTypeName
+  var `32`: ClockRateMediaType
+  var `33`: MediaType
+  var `34`: ClockRate
+  var `35`: `1`
+  var `36`: `1`
+  var `37`: `1`
+  var `38`: `1`
+  var `39`: `1`
+  var `4`: `16`
+  var `40`: `1`
+  var `41`: `1`
+  var `42`: `1`
+  var `43`: `1`
+  var `44`: `1`
+  var `45`: `1`
+  var `46`: `1`
+  var `47`: `1`
+  var `48`: `1`
+  var `49`: `1`
+  var `5`: `15`
+  var `50`: `1`
+  var `51`: `1`
+  var `52`: `1`
+  var `53`: `1`
+  var `54`: `1`
+  var `55`: `1`
+  var `56`: `1`
+  var `57`: `1`
+  var `58`: `1`
+  var `59`: `1`
+  var `6`: `14`
+  var `60`: `1`
+  var `61`: `1`
+  var `62`: `1`
+  var `63`: `1`
+  var `64`: `1`
+  var `65`: `1`
+  var `66`: `1`
+  var `67`: `1`
+  var `68`: `1`
+  var `69`: `1`
+  var `7`: `13`
+  var `70`: `1`
+  var `71`: `1`
+  var `72`: `0`
+  var `73`: `0`
+  var `74`: `0`
+  var `75`: `0`
+  var `76`: `0`
+  var `77`: `1`
+  var `78`: `1`
+  var `79`: `1`
+  var `8`: `12`
+  var `80`: `1`
+  var `81`: `1`
+  var `82`: `1`
+  var `83`: `1`
+  var `84`: `1`
+  var `85`: `1`
+  var `86`: `1`
+  var `87`: `1`
+  var `88`: `1`
+  var `89`: `1`
+  var `9`: `11`
+  var `90`: `1`
+  var `91`: `1`
+  var `92`: `1`
+  var `93`: `1`
+  var `94`: `1`
+  var `95`: `1`
+  var `96`: Name
+  var `97`: Name
+  var `98`: Name
+  var `99`: Name
 }
 
 object PayloadTypesHash_ {
   @scala.inline
   def apply(
-    `0`: Anon19,
-    `1`: Anon18,
-    `10`: Anon10,
-    `100`: AnonName,
-    `101`: AnonName,
-    `102`: AnonName,
-    `103`: AnonName,
-    `104`: AnonName,
-    `105`: AnonName,
-    `106`: AnonName,
-    `107`: AnonName,
-    `108`: AnonName,
-    `109`: AnonName,
-    `11`: Anon9,
-    `110`: AnonName,
-    `111`: AnonName,
-    `112`: AnonName,
-    `113`: AnonName,
-    `114`: AnonName,
-    `115`: AnonName,
-    `116`: AnonName,
-    `117`: AnonName,
-    `118`: AnonName,
-    `119`: AnonName,
-    `12`: Anon8,
-    `120`: AnonName,
-    `121`: AnonName,
-    `122`: AnonName,
-    `123`: AnonName,
-    `124`: AnonName,
-    `125`: AnonName,
-    `126`: AnonName,
-    `127`: AnonName,
-    `13`: Anon7,
-    `14`: Anon6,
-    `15`: AnonChannelsClockRateMediaTypeName,
-    `16`: AnonChannelsClockRateMediaType,
-    `17`: AnonChannelsClockRate,
-    `18`: AnonChannels,
-    `19`: Anon18,
-    `2`: Anon18,
-    `20`: Anon5,
-    `21`: Anon5,
-    `22`: Anon5,
-    `23`: Anon5,
-    `24`: Anon4,
-    `25`: Anon3,
-    `26`: Anon2,
-    `27`: Anon4,
-    `28`: AnonClockRateMediaTypeName,
-    `29`: Anon4,
-    `3`: Anon17,
-    `30`: Anon4,
-    `31`: AnonMediaTypeName,
-    `32`: AnonClockRateMediaType,
-    `33`: AnonMediaType,
-    `34`: AnonClockRate,
-    `35`: Anon1,
-    `36`: Anon1,
-    `37`: Anon1,
-    `38`: Anon1,
-    `39`: Anon1,
-    `4`: Anon16,
-    `40`: Anon1,
-    `41`: Anon1,
-    `42`: Anon1,
-    `43`: Anon1,
-    `44`: Anon1,
-    `45`: Anon1,
-    `46`: Anon1,
-    `47`: Anon1,
-    `48`: Anon1,
-    `49`: Anon1,
-    `5`: Anon15,
-    `50`: Anon1,
-    `51`: Anon1,
-    `52`: Anon1,
-    `53`: Anon1,
-    `54`: Anon1,
-    `55`: Anon1,
-    `56`: Anon1,
-    `57`: Anon1,
-    `58`: Anon1,
-    `59`: Anon1,
-    `6`: Anon14,
-    `60`: Anon1,
-    `61`: Anon1,
-    `62`: Anon1,
-    `63`: Anon1,
-    `64`: Anon1,
-    `65`: Anon1,
-    `66`: Anon1,
-    `67`: Anon1,
-    `68`: Anon1,
-    `69`: Anon1,
-    `7`: Anon13,
-    `70`: Anon1,
-    `71`: Anon1,
-    `72`: Anon0,
-    `73`: Anon0,
-    `74`: Anon0,
-    `75`: Anon0,
-    `76`: Anon0,
-    `77`: Anon1,
-    `78`: Anon1,
-    `79`: Anon1,
-    `8`: Anon12,
-    `80`: Anon1,
-    `81`: Anon1,
-    `82`: Anon1,
-    `83`: Anon1,
-    `84`: Anon1,
-    `85`: Anon1,
-    `86`: Anon1,
-    `87`: Anon1,
-    `88`: Anon1,
-    `89`: Anon1,
-    `9`: Anon11,
-    `90`: Anon1,
-    `91`: Anon1,
-    `92`: Anon1,
-    `93`: Anon1,
-    `94`: Anon1,
-    `95`: Anon1,
-    `96`: AnonName,
-    `97`: AnonName,
-    `98`: AnonName,
-    `99`: AnonName
+    `0`: `19`,
+    `1`: `18`,
+    `10`: `10`,
+    `100`: Name,
+    `101`: Name,
+    `102`: Name,
+    `103`: Name,
+    `104`: Name,
+    `105`: Name,
+    `106`: Name,
+    `107`: Name,
+    `108`: Name,
+    `109`: Name,
+    `11`: `9`,
+    `110`: Name,
+    `111`: Name,
+    `112`: Name,
+    `113`: Name,
+    `114`: Name,
+    `115`: Name,
+    `116`: Name,
+    `117`: Name,
+    `118`: Name,
+    `119`: Name,
+    `12`: `8`,
+    `120`: Name,
+    `121`: Name,
+    `122`: Name,
+    `123`: Name,
+    `124`: Name,
+    `125`: Name,
+    `126`: Name,
+    `127`: Name,
+    `13`: `7`,
+    `14`: `6`,
+    `15`: ChannelsClockRateMediaTypeName,
+    `16`: ChannelsClockRateMediaType,
+    `17`: ChannelsClockRate,
+    `18`: Channels,
+    `19`: `18`,
+    `2`: `18`,
+    `20`: `5`,
+    `21`: `5`,
+    `22`: `5`,
+    `23`: `5`,
+    `24`: `4`,
+    `25`: `3`,
+    `26`: `2`,
+    `27`: `4`,
+    `28`: ClockRateMediaTypeName,
+    `29`: `4`,
+    `3`: `17`,
+    `30`: `4`,
+    `31`: MediaTypeName,
+    `32`: ClockRateMediaType,
+    `33`: MediaType,
+    `34`: ClockRate,
+    `35`: `1`,
+    `36`: `1`,
+    `37`: `1`,
+    `38`: `1`,
+    `39`: `1`,
+    `4`: `16`,
+    `40`: `1`,
+    `41`: `1`,
+    `42`: `1`,
+    `43`: `1`,
+    `44`: `1`,
+    `45`: `1`,
+    `46`: `1`,
+    `47`: `1`,
+    `48`: `1`,
+    `49`: `1`,
+    `5`: `15`,
+    `50`: `1`,
+    `51`: `1`,
+    `52`: `1`,
+    `53`: `1`,
+    `54`: `1`,
+    `55`: `1`,
+    `56`: `1`,
+    `57`: `1`,
+    `58`: `1`,
+    `59`: `1`,
+    `6`: `14`,
+    `60`: `1`,
+    `61`: `1`,
+    `62`: `1`,
+    `63`: `1`,
+    `64`: `1`,
+    `65`: `1`,
+    `66`: `1`,
+    `67`: `1`,
+    `68`: `1`,
+    `69`: `1`,
+    `7`: `13`,
+    `70`: `1`,
+    `71`: `1`,
+    `72`: `0`,
+    `73`: `0`,
+    `74`: `0`,
+    `75`: `0`,
+    `76`: `0`,
+    `77`: `1`,
+    `78`: `1`,
+    `79`: `1`,
+    `8`: `12`,
+    `80`: `1`,
+    `81`: `1`,
+    `82`: `1`,
+    `83`: `1`,
+    `84`: `1`,
+    `85`: `1`,
+    `86`: `1`,
+    `87`: `1`,
+    `88`: `1`,
+    `89`: `1`,
+    `9`: `11`,
+    `90`: `1`,
+    `91`: `1`,
+    `92`: `1`,
+    `93`: `1`,
+    `94`: `1`,
+    `95`: `1`,
+    `96`: Name,
+    `97`: Name,
+    `98`: Name,
+    `99`: Name
   ): PayloadTypesHash_ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])

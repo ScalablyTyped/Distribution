@@ -58,13 +58,13 @@ object Options {
     color: String = null,
     container: svg | `svg-viewbox` | g | none = null,
     ecl: L | M | H | Q = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     join: js.UndefOr[Boolean] = js.undefined,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     predefined: js.UndefOr[Boolean] = js.undefined,
     pretty: js.UndefOr[Boolean] = js.undefined,
     swap: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     xmlDeclaration: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
@@ -72,14 +72,14 @@ object Options {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (ecl != null) __obj.updateDynamic("ecl")(ecl.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(join)) __obj.updateDynamic("join")(join.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(predefined)) __obj.updateDynamic("predefined")(predefined.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
-    if (!js.isUndefined(swap)) __obj.updateDynamic("swap")(swap.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(xmlDeclaration)) __obj.updateDynamic("xmlDeclaration")(xmlDeclaration.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(join)) __obj.updateDynamic("join")(join.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(predefined)) __obj.updateDynamic("predefined")(predefined.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swap)) __obj.updateDynamic("swap")(swap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xmlDeclaration)) __obj.updateDynamic("xmlDeclaration")(xmlDeclaration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

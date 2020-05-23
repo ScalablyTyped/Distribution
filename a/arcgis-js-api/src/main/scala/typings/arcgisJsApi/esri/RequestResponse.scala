@@ -55,7 +55,7 @@ object RequestResponse {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (getHeader != null) __obj.updateDynamic("getHeader")(js.Any.fromFunction1(getHeader))
     if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestResponse]
   }

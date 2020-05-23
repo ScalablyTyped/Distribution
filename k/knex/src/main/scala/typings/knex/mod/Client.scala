@@ -1,6 +1,6 @@
 package typings.knex.mod
 
-import typings.knex.AnonMax
+import typings.knex.anon.Max
 import typings.node.eventsMod.EventEmitter
 import typings.tarn.mod.Pool
 import scala.scalajs.js
@@ -41,7 +41,7 @@ class Client protected () extends EventEmitter {
   def initializeDriver(): Unit = js.native
   def initializePool(): Unit = js.native
   def initializePool(config: js.Object): Unit = js.native
-  def poolDefaults(): AnonMax = js.native
+  def poolDefaults(): Max = js.native
   def positionBindings(sql: js.Any): js.Any = js.native
   def postProcessResponse(resp: js.Any, queryContext: js.Any): js.Any = js.native
   def prepBindings(bindings: js.Any): js.Any = js.native

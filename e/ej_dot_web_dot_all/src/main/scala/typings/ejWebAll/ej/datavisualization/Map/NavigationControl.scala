@@ -40,7 +40,7 @@ object NavigationControl {
     if (absolutePosition != null) __obj.updateDynamic("absolutePosition")(absolutePosition.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (dockPosition != null) __obj.updateDynamic("dockPosition")(dockPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableNavigation)) __obj.updateDynamic("enableNavigation")(enableNavigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNavigation)) __obj.updateDynamic("enableNavigation")(enableNavigation.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationControl]
   }

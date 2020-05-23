@@ -20,7 +20,7 @@ object Service {
     pathname: String = null
   ): Service = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }

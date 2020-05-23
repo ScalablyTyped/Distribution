@@ -26,12 +26,12 @@ object RuntimeEntity {
     entity: String,
     location: js.Array[Double],
     value: String,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     groups: js.Array[CaptureGroup] = null,
     metadata: js.Object = null
   ): RuntimeEntity = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeEntity]

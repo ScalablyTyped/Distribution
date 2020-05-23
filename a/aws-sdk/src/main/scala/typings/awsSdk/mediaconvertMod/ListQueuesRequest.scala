@@ -28,13 +28,13 @@ object ListQueuesRequest {
   @scala.inline
   def apply(
     ListBy: QueueListBy = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[integerMin1Max20] = js.undefined,
     NextToken: string = null,
     Order: Order = null
   ): ListQueuesRequest = {
     val __obj = js.Dynamic.literal()
     if (ListBy != null) __obj.updateDynamic("ListBy")(ListBy.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Order != null) __obj.updateDynamic("Order")(Order.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueuesRequest]

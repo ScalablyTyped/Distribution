@@ -21,7 +21,7 @@ object SubscribeOptions {
   @scala.inline
   def apply(
     businessKey: String = null,
-    lockDuration: Int | Double = null,
+    lockDuration: js.UndefOr[Double] = js.undefined,
     processDefinitionId: String = null,
     processDefinitionIdIn: String = null,
     processDefinitionKey: String = null,
@@ -33,7 +33,7 @@ object SubscribeOptions {
   ): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
     if (businessKey != null) __obj.updateDynamic("businessKey")(businessKey.asInstanceOf[js.Any])
-    if (lockDuration != null) __obj.updateDynamic("lockDuration")(lockDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockDuration)) __obj.updateDynamic("lockDuration")(lockDuration.get.asInstanceOf[js.Any])
     if (processDefinitionId != null) __obj.updateDynamic("processDefinitionId")(processDefinitionId.asInstanceOf[js.Any])
     if (processDefinitionIdIn != null) __obj.updateDynamic("processDefinitionIdIn")(processDefinitionIdIn.asInstanceOf[js.Any])
     if (processDefinitionKey != null) __obj.updateDynamic("processDefinitionKey")(processDefinitionKey.asInstanceOf[js.Any])
@@ -41,7 +41,7 @@ object SubscribeOptions {
     if (processDefinitionVersionTag != null) __obj.updateDynamic("processDefinitionVersionTag")(processDefinitionVersionTag.asInstanceOf[js.Any])
     if (tenantIdIn != null) __obj.updateDynamic("tenantIdIn")(tenantIdIn.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutTenantId)) __obj.updateDynamic("withoutTenantId")(withoutTenantId.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutTenantId)) __obj.updateDynamic("withoutTenantId")(withoutTenantId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOptions]
   }
 }

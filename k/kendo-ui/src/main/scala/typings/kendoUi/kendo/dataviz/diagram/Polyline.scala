@@ -1,14 +1,12 @@
 package typings.kendoUi.kendo.dataviz.diagram
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.diagram.Polyline")
 @js.native
-class Polyline () extends Observable_ {
-  def this(options: PolylineOptions) = this()
+trait Polyline extends Observable {
   var drawingElement: typings.kendoUi.kendo.drawing.Path = js.native
   var options: PolylineOptions = js.native
   def points(): js.Any = js.native

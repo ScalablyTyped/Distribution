@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to certificate creation, import, and enrollment methods. */
-@JSGlobal("Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager")
 @js.native
-abstract class UserCertificateEnrollmentManager () extends js.Object {
+trait UserCertificateEnrollmentManager extends js.Object {
   /**
     * Asynchronously creates a PKCS #10 certificate request based on properties specified in a CertificateRequestProperties object.
     * @param request A CertificateRequestProperties object that contains the property values used to create the certificate request.

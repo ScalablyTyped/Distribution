@@ -1,6 +1,5 @@
 package typings.heremaps.H.map
 
-import typings.heremaps.H.map.Object.Options
 import typings.heremaps.H.map.provider.Invalidations
 import typings.heremaps.H.map.provider.ObjectProvider
 import typings.heremaps.H.math.BitMask
@@ -12,14 +11,8 @@ import scala.scalajs.js.annotation._
 /**
   * This class represents the abstract base class for map objects such as polylines, polygons, markers, groups etc.
   */
-@JSGlobal("H.map.Object")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.map.Object.Options=} - The values to initialize this object
-  */
-class Object_ () extends EventTarget {
-  def this(opt_options: Options) = this()
+trait Object_ extends EventTarget {
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
   /**
     * Checks whether the given object is an inclusive descendant of this object

@@ -26,7 +26,7 @@ object DataGroupOptions {
   ): DataGroupOptions = {
     val __obj = js.Dynamic.literal()
     if (drawPoints != null) __obj.updateDynamic("drawPoints")(drawPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeFromLegend)) __obj.updateDynamic("excludeFromLegend")(excludeFromLegend.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeFromLegend)) __obj.updateDynamic("excludeFromLegend")(excludeFromLegend.get.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
     if (shaded != null) __obj.updateDynamic("shaded")(shaded.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

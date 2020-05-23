@@ -49,12 +49,12 @@ object CircleOptions {
     showRadius: js.UndefOr[Boolean] = js.undefined
   ): CircleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(feet)) __obj.updateDynamic("feet")(feet.asInstanceOf[js.Any])
-    if (!js.isUndefined(metric)) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (!js.isUndefined(nautic)) __obj.updateDynamic("nautic")(nautic.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatMode)) __obj.updateDynamic("repeatMode")(repeatMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(feet)) __obj.updateDynamic("feet")(feet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(metric)) __obj.updateDynamic("metric")(metric.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nautic)) __obj.updateDynamic("nautic")(nautic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatMode)) __obj.updateDynamic("repeatMode")(repeatMode.get.asInstanceOf[js.Any])
     if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRadius)) __obj.updateDynamic("showRadius")(showRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRadius)) __obj.updateDynamic("showRadius")(showRadius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleOptions]
   }
 }

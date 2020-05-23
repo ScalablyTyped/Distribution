@@ -21,7 +21,7 @@ trait PlusNativeUIPickDateOption extends js.Object {
   /**
     * 日期选择对话框可选择的最大日期
     * Date类型对象，如果未设置可选择的最大日期，则使用系统默认可选择的最大日期值。
-    * 	其值必须大于minDate设置的值，否则使用系统默认可选择的最大日期值。
+    *     其值必须大于minDate设置的值，否则使用系统默认可选择的最大日期值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -36,7 +36,7 @@ trait PlusNativeUIPickDateOption extends js.Object {
   /**
     * 时间选择对话框弹出指示区域
     * JSON类型对象，格式如{top:10;left:10;width:200;height:200;}，所有值为像素值，其值为相对于容器Webview的位置。
-    * 	如未设置此值，默认在屏幕居中显示。仅在iPad上有效，其它设备忽略此值。
+    *     如未设置此值，默认在屏幕居中显示。仅在iPad上有效，其它设备忽略此值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */

@@ -5,22 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired repeatedly as the view is being scrolled.
-		 */
+  * Fired repeatedly as the view is being scrolled.
+  */
 trait ScrollableViewScrollEvent extends ScrollableViewBaseEvent {
   /**
-  			 * Index of the currently visible view of <Titanium.UI.ScrollableView.views>.
-  			 */
+    * Index of the currently visible view of <Titanium.UI.ScrollableView.views>.
+    */
   var currentPage: Double
   /**
-  			 * Current page index that the view is scrolled to as a float. For
-  			 * example, if the user is holding the `ScrollableView` in between
-  			 * the first and second page, this will have a value of 0.5.
-  			 */
+    * Current page index that the view is scrolled to as a float. For
+    * example, if the user is holding the `ScrollableView` in between
+    * the first and second page, this will have a value of 0.5.
+    */
   var currentPageAsFloat: Double
   /**
-  			 * The currently visible view.
-  			 */
+    * The currently visible view.
+    */
   var view: View
 }
 

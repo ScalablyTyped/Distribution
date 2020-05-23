@@ -14,9 +14,9 @@ trait ModifyClusterOutput extends js.Object {
 
 object ModifyClusterOutput {
   @scala.inline
-  def apply(StepConcurrencyLevel: Int | Double = null): ModifyClusterOutput = {
+  def apply(StepConcurrencyLevel: js.UndefOr[Integer] = js.undefined): ModifyClusterOutput = {
     val __obj = js.Dynamic.literal()
-    if (StepConcurrencyLevel != null) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(StepConcurrencyLevel)) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterOutput]
   }
 }

@@ -2,7 +2,7 @@ package typings.reactSortableTree.mod
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactDnd.connectorsMod.ConnectDragPreview
 import typings.reactDnd.connectorsMod.ConnectDragSource
 import typings.reactDnd.connectorsMod.ConnectableElement
@@ -77,15 +77,15 @@ object NodeRendererProps {
     rowDirection: ltr | rtl = null,
     style: CSSProperties = null,
     subtitle: /* data */ NodeData => Element = null,
-    swapDepth: Int | Double = null,
-    swapFrom: Int | Double = null,
-    swapLength: Int | Double = null,
+    swapDepth: js.UndefOr[Double] = js.undefined,
+    swapFrom: js.UndefOr[Double] = js.undefined,
+    swapLength: js.UndefOr[Double] = js.undefined,
     title: /* data */ NodeData => Element = null,
     toggleChildrenVisibility: /* data */ NodeData => Unit = null
   ): NodeRendererProps = {
     val __obj = js.Dynamic.literal(canDrag = canDrag.asInstanceOf[js.Any], connectDragPreview = js.Any.fromFunction2(connectDragPreview), connectDragSource = js.Any.fromFunction2(connectDragSource), didDrop = didDrop.asInstanceOf[js.Any], endDrag = endDrag.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isOver = isOver.asInstanceOf[js.Any], isSearchFocus = isSearchFocus.asInstanceOf[js.Any], isSearchMatch = isSearchMatch.asInstanceOf[js.Any], listIndex = listIndex.asInstanceOf[js.Any], lowerSiblingCounts = lowerSiblingCounts.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], scaffoldBlockPxWidth = scaffoldBlockPxWidth.asInstanceOf[js.Any], startDrag = startDrag.asInstanceOf[js.Any], treeId = treeId.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(canDrop)) __obj.updateDynamic("canDrop")(canDrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(canDrop)) __obj.updateDynamic("canDrop")(canDrop.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (draggedNode != null) __obj.updateDynamic("draggedNode")(draggedNode.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
@@ -93,9 +93,9 @@ object NodeRendererProps {
     if (rowDirection != null) __obj.updateDynamic("rowDirection")(rowDirection.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subtitle != null) __obj.updateDynamic("subtitle")(js.Any.fromFunction1(subtitle))
-    if (swapDepth != null) __obj.updateDynamic("swapDepth")(swapDepth.asInstanceOf[js.Any])
-    if (swapFrom != null) __obj.updateDynamic("swapFrom")(swapFrom.asInstanceOf[js.Any])
-    if (swapLength != null) __obj.updateDynamic("swapLength")(swapLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(swapDepth)) __obj.updateDynamic("swapDepth")(swapDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swapFrom)) __obj.updateDynamic("swapFrom")(swapFrom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swapLength)) __obj.updateDynamic("swapLength")(swapLength.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(js.Any.fromFunction1(title))
     if (toggleChildrenVisibility != null) __obj.updateDynamic("toggleChildrenVisibility")(js.Any.fromFunction1(toggleChildrenVisibility))
     __obj.asInstanceOf[NodeRendererProps]

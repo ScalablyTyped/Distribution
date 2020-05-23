@@ -1,7 +1,7 @@
 package typings.wordpressWordcount.mod
 
 import typings.std.RegExp
-import typings.wordpressWordcount.AnonShortcodes
+import typings.wordpressWordcount.anon.Shortcodes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Settings extends js.Object {
   var characters_excluding_spacesRegExp: RegExp
   var characters_including_spacesRegExp: RegExp
   var connectorRegExp: RegExp
-  var l10n: AnonShortcodes
+  var l10n: Shortcodes
   /** Characters to be removed from input text. */
   var removeRegExp: RegExp
   var spaceRegExp: RegExp
@@ -31,7 +31,7 @@ object Settings {
     characters_excluding_spacesRegExp: RegExp,
     characters_including_spacesRegExp: RegExp,
     connectorRegExp: RegExp,
-    l10n: AnonShortcodes,
+    l10n: Shortcodes,
     removeRegExp: RegExp,
     spaceRegExp: RegExp,
     wordsRegExp: RegExp

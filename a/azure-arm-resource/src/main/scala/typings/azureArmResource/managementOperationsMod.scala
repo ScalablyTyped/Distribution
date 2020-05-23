@@ -1,5 +1,8 @@
 package typings.azureArmResource
 
+import typings.azureArmResource.anon.CustomHeaders
+import typings.azureArmResource.anon.Expand
+import typings.azureArmResource.anon.Skiptoken
 import typings.azureArmResource.managementModelsMod.ManagementGroupListResult
 import typings.azureArmResource.managementModelsMod.ManagementGroupWithHierarchy
 import typings.azureArmResource.managementModelsMod.OperationListResult
@@ -56,8 +59,8 @@ object managementOperationsMod extends js.Object {
       */
     def get(): js.Promise[ManagementGroupWithHierarchy] = js.native
     def get(callback: ServiceCallback[ManagementGroupWithHierarchy]): Unit = js.native
-    def get(options: AnonExpand): js.Promise[ManagementGroupWithHierarchy] = js.native
-    def get(options: AnonExpand, callback: ServiceCallback[ManagementGroupWithHierarchy]): Unit = js.native
+    def get(options: Expand): js.Promise[ManagementGroupWithHierarchy] = js.native
+    def get(options: Expand, callback: ServiceCallback[ManagementGroupWithHierarchy]): Unit = js.native
     /**
       * Get the details of the management group.
       *
@@ -82,7 +85,7 @@ object managementOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def getWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ManagementGroupWithHierarchy]] = js.native
-    def getWithHttpOperationResponse(options: AnonExpand): js.Promise[HttpOperationResponse[ManagementGroupWithHierarchy]] = js.native
+    def getWithHttpOperationResponse(options: Expand): js.Promise[HttpOperationResponse[ManagementGroupWithHierarchy]] = js.native
     /**
       * List management groups for the authenticated user.
       *
@@ -124,8 +127,8 @@ object managementOperationsMod extends js.Object {
       */
     def list(): js.Promise[ManagementGroupListResult] = js.native
     def list(callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
-    def list(options: AnonSkiptoken): js.Promise[ManagementGroupListResult] = js.native
-    def list(options: AnonSkiptoken, callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
+    def list(options: Skiptoken): js.Promise[ManagementGroupListResult] = js.native
+    def list(options: Skiptoken, callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
     /**
       * List management groups for the authenticated user.
       *
@@ -163,12 +166,8 @@ object managementOperationsMod extends js.Object {
       */
     def listNext(nextPageLink: String): js.Promise[ManagementGroupListResult] = js.native
     def listNext(nextPageLink: String, callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[ManagementGroupListResult] = js.native
-    def listNext(
-      nextPageLink: String,
-      options: AnonCustomHeaders,
-      callback: ServiceCallback[ManagementGroupListResult]
-    ): Unit = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[ManagementGroupListResult] = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[ManagementGroupListResult]): Unit = js.native
     /**
       * List management groups for the authenticated user.
       *
@@ -188,7 +187,7 @@ object managementOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
-    def listNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
+    def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
     /**
       * List management groups for the authenticated user.
       *
@@ -212,7 +211,7 @@ object managementOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonSkiptoken): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
+    def listWithHttpOperationResponse(options: Skiptoken): js.Promise[HttpOperationResponse[ManagementGroupListResult]] = js.native
   }
   
   @js.native
@@ -249,8 +248,8 @@ object managementOperationsMod extends js.Object {
       */
     def list(): js.Promise[OperationListResult] = js.native
     def list(callback: ServiceCallback[OperationListResult]): Unit = js.native
-    def list(options: AnonCustomHeaders): js.Promise[OperationListResult] = js.native
-    def list(options: AnonCustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    def list(options: CustomHeaders): js.Promise[OperationListResult] = js.native
+    def list(options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
     /**
       * Lists all of the available management REST API operations.
       *
@@ -286,8 +285,8 @@ object managementOperationsMod extends js.Object {
       */
     def listNext(nextPageLink: String): js.Promise[OperationListResult] = js.native
     def listNext(nextPageLink: String, callback: ServiceCallback[OperationListResult]): Unit = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[OperationListResult] = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[OperationListResult] = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
     /**
       * Lists all of the available management REST API operations.
       *
@@ -306,7 +305,7 @@ object managementOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
-    def listNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     /**
       * Lists all of the available management REST API operations.
       *
@@ -322,7 +321,7 @@ object managementOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    def listWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
   }
   
 }

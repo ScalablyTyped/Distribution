@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(alwaysLast: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysLast)) __obj.updateDynamic("alwaysLast")(alwaysLast.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysLast)) __obj.updateDynamic("alwaysLast")(alwaysLast.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

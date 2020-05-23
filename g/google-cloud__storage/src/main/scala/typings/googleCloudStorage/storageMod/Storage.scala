@@ -2,7 +2,7 @@ package typings.googleCloudStorage.storageMod
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.googleCloudCommon.mod.Service
-import typings.googleCloudStorage.AnonOWNERROLE
+import typings.googleCloudStorage.anon.OWNERROLE
 import typings.googleCloudStorage.bucketMod.Bucket
 import typings.googleCloudStorage.channelMod.Channel
 import typings.googleCloudStorage.fileMod.FileOptions
@@ -385,6 +385,6 @@ object Storage extends js.Object {
     *   const apiResponse = data[1];
     * });
     */
-  var acl: AnonOWNERROLE = js.native
+  var acl: OWNERROLE = js.native
 }
 

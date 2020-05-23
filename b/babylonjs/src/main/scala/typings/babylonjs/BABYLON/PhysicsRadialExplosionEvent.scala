@@ -7,15 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a physics radial explosion event
   */
-@JSGlobal("BABYLON.PhysicsRadialExplosionEvent")
 @js.native
-class PhysicsRadialExplosionEvent protected () extends js.Object {
-  /**
-    * Initializes a radial explosioin event
-    * @param _scene BabylonJS scene
-    * @param _options The options for the vortex event
-    */
-  def this(_scene: Scene, _options: PhysicsRadialExplosionEventOptions) = this()
+trait PhysicsRadialExplosionEvent extends js.Object {
   var _dataFetched: js.Any = js.native
   var _intersectsWithSphere: js.Any = js.native
   var _options: js.Any = js.native

@@ -18,15 +18,15 @@ object BoxenOptions {
     align: String = null,
     borderColor: String = null,
     borderStyle: String = null,
-    margin: Int | Double = null,
-    padding: Int | Double = null
+    margin: js.UndefOr[Double] = js.undefined,
+    padding: js.UndefOr[Double] = js.undefined
   ): BoxenOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxenOptions]
   }
 }

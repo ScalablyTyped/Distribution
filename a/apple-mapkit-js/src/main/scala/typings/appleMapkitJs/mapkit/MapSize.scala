@@ -8,35 +8,32 @@ import scala.scalajs.js.annotation._
   * A pair of values in map units that define the width and height of a
   * projected coordinate span.
   */
-@JSGlobal("mapkit.MapSize")
-@js.native
-class MapSize protected () extends js.Object {
-  /**
-    * Initializes a MapSize object.
-    *
-    * @param width The distance (measured using map points) along the east-west
-    * axis of the map projection.
-    * @param height The distance (measured using map points) along the
-    * north-south axis of the map projection.
-    */
-  def this(width: Double, height: Double) = this()
+trait MapSize extends js.Object {
   /**
     * The height value, in map point units.
     */
-  var height: Double = js.native
+  var height: Double
   /**
     * The width value, in map point units.
     */
-  var width: Double = js.native
+  var width: Double
   /**
     * Returns a copy of a map size.
     */
-  def copy(): MapSize = js.native
+  def copy(): MapSize
   /**
     * Indicates whether two map sizes are equal.
     *
     * @param anotherSize The map size to equate to.
     */
-  def equals(anotherSize: MapSize): Boolean = js.native
+  def equals(anotherSize: MapSize): Boolean
+}
+
+object MapSize {
+  @scala.inline
+  def apply(copy: () => MapSize, equals: MapSize => Boolean, height: Double, width: Double): MapSize = {
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), equals = js.Any.fromFunction1(equals), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapSize]
+  }
 }
 

@@ -43,7 +43,7 @@ object ServiceArguments {
     memory: Input[Double] = null,
     memoryReservation: Input[Double] = null,
     ports: js.Array[ContainerPort] = null,
-    replicas: Int | Double = null,
+    replicas: js.UndefOr[Double] = js.undefined,
     volumes: js.Array[ContainerVolumeMount] = null,
     waitForSteadyState: js.UndefOr[Boolean] = js.undefined
   ): ServiceArguments = {
@@ -60,9 +60,9 @@ object ServiceArguments {
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     if (memoryReservation != null) __obj.updateDynamic("memoryReservation")(memoryReservation.asInstanceOf[js.Any])
     if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (replicas != null) __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
+    if (!js.isUndefined(replicas)) __obj.updateDynamic("replicas")(replicas.get.asInstanceOf[js.Any])
     if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSteadyState)) __obj.updateDynamic("waitForSteadyState")(waitForSteadyState.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForSteadyState)) __obj.updateDynamic("waitForSteadyState")(waitForSteadyState.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceArguments]
   }
 }

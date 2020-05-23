@@ -65,18 +65,18 @@ object AutocompleteProvider {
     dispose: () => Unit = null,
     excludeLowerPriority: js.UndefOr[Boolean] = js.undefined,
     getSuggestionDetailsOnSelect: /* suggestion */ AnySuggestion => (js.Promise[AnySuggestion | Null]) | AnySuggestion | Null = null,
-    inclusionPriority: Int | Double = null,
+    inclusionPriority: js.UndefOr[Double] = js.undefined,
     onDidInsertSuggestion: /* params */ SuggestionInsertedEvent => Unit = null,
-    suggestionPriority: Int | Double = null
+    suggestionPriority: js.UndefOr[Double] = js.undefined
   ): AutocompleteProvider = {
     val __obj = js.Dynamic.literal(getSuggestions = js.Any.fromFunction1(getSuggestions), selector = selector.asInstanceOf[js.Any])
     if (disableForSelector != null) __obj.updateDynamic("disableForSelector")(disableForSelector.asInstanceOf[js.Any])
     if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction0(dispose))
-    if (!js.isUndefined(excludeLowerPriority)) __obj.updateDynamic("excludeLowerPriority")(excludeLowerPriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeLowerPriority)) __obj.updateDynamic("excludeLowerPriority")(excludeLowerPriority.get.asInstanceOf[js.Any])
     if (getSuggestionDetailsOnSelect != null) __obj.updateDynamic("getSuggestionDetailsOnSelect")(js.Any.fromFunction1(getSuggestionDetailsOnSelect))
-    if (inclusionPriority != null) __obj.updateDynamic("inclusionPriority")(inclusionPriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(inclusionPriority)) __obj.updateDynamic("inclusionPriority")(inclusionPriority.get.asInstanceOf[js.Any])
     if (onDidInsertSuggestion != null) __obj.updateDynamic("onDidInsertSuggestion")(js.Any.fromFunction1(onDidInsertSuggestion))
-    if (suggestionPriority != null) __obj.updateDynamic("suggestionPriority")(suggestionPriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestionPriority)) __obj.updateDynamic("suggestionPriority")(suggestionPriority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteProvider]
   }
 }

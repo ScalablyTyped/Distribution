@@ -24,7 +24,7 @@ object BandScale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     padding: Double | SignalRef = null,
     paddingInner: Double | SignalRef = null,
     paddingOuter: Double | SignalRef = null,
@@ -39,7 +39,7 @@ object BandScale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (paddingInner != null) __obj.updateDynamic("paddingInner")(paddingInner.asInstanceOf[js.Any])
     if (paddingOuter != null) __obj.updateDynamic("paddingOuter")(paddingOuter.asInstanceOf[js.Any])

@@ -14,9 +14,9 @@ trait M2tsScte35Esam extends js.Object {
 
 object M2tsScte35Esam {
   @scala.inline
-  def apply(Scte35EsamPid: Int | Double = null): M2tsScte35Esam = {
+  def apply(Scte35EsamPid: js.UndefOr[integerMin32Max8182] = js.undefined): M2tsScte35Esam = {
     val __obj = js.Dynamic.literal()
-    if (Scte35EsamPid != null) __obj.updateDynamic("Scte35EsamPid")(Scte35EsamPid.asInstanceOf[js.Any])
+    if (!js.isUndefined(Scte35EsamPid)) __obj.updateDynamic("Scte35EsamPid")(Scte35EsamPid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[M2tsScte35Esam]
   }
 }

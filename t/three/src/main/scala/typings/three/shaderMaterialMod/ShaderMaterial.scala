@@ -1,7 +1,7 @@
 package typings.three.shaderMaterialMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.three.AnonDrawBuffers
+import typings.three.anon.DrawBuffers
 import typings.three.materialMod.Material
 import typings.three.uniformsLibMod.IUniform
 import scala.scalajs.js
@@ -18,7 +18,7 @@ class ShaderMaterial () extends Material {
   	 * @deprecated Use {@link ShaderMaterial#extensions.derivatives extensions.derivatives} instead.
   	 */
   var derivatives: js.Any = js.native
-  var extensions: AnonDrawBuffers = js.native
+  var extensions: DrawBuffers = js.native
   var fragmentShader: String = js.native
   var index0AttributeName: js.UndefOr[String] = js.native
   var lights: Boolean = js.native

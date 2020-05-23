@@ -1,8 +1,14 @@
 package typings.easyXHeaders
 
+import typings.easyXHeaders.anon.Custom
+import typings.easyXHeaders.anon.CustomFds
+import typings.easyXHeaders.anon.Cwd
+import typings.easyXHeaders.anon.Encoding
+import typings.easyXHeaders.anon.Env
 import typings.easyXHeaders.eventsMod.EventEmitter
 import typings.easyXHeaders.streamMod.Readable
 import typings.easyXHeaders.streamMod.Writable
+import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,67 +33,42 @@ object childProcessMod extends js.Object {
   def exec(command: String): ChildProcess = js.native
   def exec(
     command: String,
-    callback: js.Function3[
-      /* error */ Error, 
-      /* stdout */ typings.node.Buffer, 
-      /* stderr */ typings.node.Buffer, 
-      Unit
-    ]
+    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
-  def exec(command: String, options: AnonCustomFds): ChildProcess = js.native
+  def exec(command: String, options: CustomFds): ChildProcess = js.native
   def exec(
     command: String,
-    options: AnonCustomFds,
-    callback: js.Function3[
-      /* error */ Error, 
-      /* stdout */ typings.node.Buffer, 
-      /* stderr */ typings.node.Buffer, 
-      Unit
-    ]
+    options: CustomFds,
+    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def execFile(file: String): ChildProcess = js.native
   def execFile(file: String, args: js.Array[String]): ChildProcess = js.native
   def execFile(
     file: String,
     args: js.Array[String],
-    callback: js.Function3[
-      /* error */ Error, 
-      /* stdout */ typings.node.Buffer, 
-      /* stderr */ typings.node.Buffer, 
-      Unit
-    ]
+    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
-  def execFile(file: String, args: js.Array[String], options: AnonCwd): ChildProcess = js.native
+  def execFile(file: String, args: js.Array[String], options: Cwd): ChildProcess = js.native
   def execFile(
     file: String,
     args: js.Array[String],
-    options: AnonCwd,
-    callback: js.Function3[
-      /* error */ Error, 
-      /* stdout */ typings.node.Buffer, 
-      /* stderr */ typings.node.Buffer, 
-      Unit
-    ]
+    options: Cwd,
+    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def execFile(
     file: String,
-    callback: js.Function3[
-      /* error */ Error, 
-      /* stdout */ typings.node.Buffer, 
-      /* stderr */ typings.node.Buffer, 
-      Unit
-    ]
+    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def execFileSync(command: String): ChildProcess = js.native
   def execFileSync(command: String, args: js.Array[String]): ChildProcess = js.native
-  def execFileSync(command: String, args: js.Array[String], options: AnonEnv): ChildProcess = js.native
+  def execFileSync(command: String, args: js.Array[String], options: Env): ChildProcess = js.native
   def execSync(command: String): ChildProcess = js.native
-  def execSync(command: String, options: AnonEnv): ChildProcess = js.native
+  def execSync(command: String, options: Env): ChildProcess = js.native
   def fork(modulePath: String): ChildProcess = js.native
   def fork(modulePath: String, args: js.Array[String]): ChildProcess = js.native
-  def fork(modulePath: String, args: js.Array[String], options: AnonEncoding): ChildProcess = js.native
+  def fork(modulePath: String, args: js.Array[String], options: Encoding): ChildProcess = js.native
   def spawn(command: String): ChildProcess = js.native
   def spawn(command: String, args: js.Array[String]): ChildProcess = js.native
-  def spawn(command: String, args: js.Array[String], options: AnonCustom): ChildProcess = js.native
+  def spawn(command: String, args: js.Array[String], options: Custom): ChildProcess = js.native
 }
 

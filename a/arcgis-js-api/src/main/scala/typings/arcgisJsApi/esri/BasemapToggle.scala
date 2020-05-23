@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.toggle
 import scala.scalajs.js
@@ -60,8 +59,4 @@ trait BasemapToggle extends Widget_ {
     */
   def toggle(): Unit = js.native
 }
-
-@JSGlobal("__esri.BasemapToggle")
-@js.native
-object BasemapToggle extends TopLevel[BasemapToggleConstructor]
 

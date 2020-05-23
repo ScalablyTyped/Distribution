@@ -28,11 +28,11 @@ object ISearchBoxStyleProps {
   ): ISearchBoxStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasFocus)) __obj.updateDynamic("hasFocus")(hasFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasInput)) __obj.updateDynamic("hasInput")(hasInput.asInstanceOf[js.Any])
-    if (!js.isUndefined(underlined)) __obj.updateDynamic("underlined")(underlined.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasFocus)) __obj.updateDynamic("hasFocus")(hasFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasInput)) __obj.updateDynamic("hasInput")(hasInput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(underlined)) __obj.updateDynamic("underlined")(underlined.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchBoxStyleProps]
   }
 }

@@ -1,6 +1,6 @@
 package typings.mongoose.mod
 
-import typings.mongoose.ConnectionthenPromiseConn
+import typings.mongoose.anon.ConnectionthenPromiseConn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

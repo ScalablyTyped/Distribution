@@ -23,6 +23,8 @@ import scala.scalajs.js.annotation._
   - typings.recharts.rechartsStrings.insideEnd
   - typings.recharts.rechartsStrings.end
   - typings.recharts.rechartsStrings.center
+  - typings.recharts.rechartsStrings.centerTop
+  - typings.recharts.rechartsStrings.centerBottom
 */
 trait PositionType extends js.Object
 
@@ -31,6 +33,10 @@ object PositionType {
   def bottom: typings.recharts.rechartsStrings.bottom = "bottom".asInstanceOf[typings.recharts.rechartsStrings.bottom]
   @scala.inline
   def center: typings.recharts.rechartsStrings.center = "center".asInstanceOf[typings.recharts.rechartsStrings.center]
+  @scala.inline
+  def centerBottom: typings.recharts.rechartsStrings.centerBottom = "centerBottom".asInstanceOf[typings.recharts.rechartsStrings.centerBottom]
+  @scala.inline
+  def centerTop: typings.recharts.rechartsStrings.centerTop = "centerTop".asInstanceOf[typings.recharts.rechartsStrings.centerTop]
   @scala.inline
   def end: typings.recharts.rechartsStrings.end = "end".asInstanceOf[typings.recharts.rechartsStrings.end]
   @scala.inline

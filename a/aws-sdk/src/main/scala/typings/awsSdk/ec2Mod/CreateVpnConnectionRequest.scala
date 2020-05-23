@@ -37,13 +37,13 @@ object CreateVpnConnectionRequest {
   def apply(
     CustomerGatewayId: CustomerGatewayId,
     Type: String,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Options: VpnConnectionOptionsSpecification = null,
     TransitGatewayId: TransitGatewayId = null,
     VpnGatewayId: VpnGatewayId = null
   ): CreateVpnConnectionRequest = {
     val __obj = js.Dynamic.literal(CustomerGatewayId = CustomerGatewayId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
     if (TransitGatewayId != null) __obj.updateDynamic("TransitGatewayId")(TransitGatewayId.asInstanceOf[js.Any])
     if (VpnGatewayId != null) __obj.updateDynamic("VpnGatewayId")(VpnGatewayId.asInstanceOf[js.Any])

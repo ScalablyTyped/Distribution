@@ -42,7 +42,7 @@ object ModifySnapshotAttributeRequest {
     SnapshotId: SnapshotId,
     Attribute: SnapshotAttributeName = null,
     CreateVolumePermission: CreateVolumePermissionModifications = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     GroupNames: GroupNameStringList = null,
     OperationType: OperationType = null,
     UserIds: UserIdStringList = null
@@ -50,7 +50,7 @@ object ModifySnapshotAttributeRequest {
     val __obj = js.Dynamic.literal(SnapshotId = SnapshotId.asInstanceOf[js.Any])
     if (Attribute != null) __obj.updateDynamic("Attribute")(Attribute.asInstanceOf[js.Any])
     if (CreateVolumePermission != null) __obj.updateDynamic("CreateVolumePermission")(CreateVolumePermission.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (GroupNames != null) __obj.updateDynamic("GroupNames")(GroupNames.asInstanceOf[js.Any])
     if (OperationType != null) __obj.updateDynamic("OperationType")(OperationType.asInstanceOf[js.Any])
     if (UserIds != null) __obj.updateDynamic("UserIds")(UserIds.asInstanceOf[js.Any])

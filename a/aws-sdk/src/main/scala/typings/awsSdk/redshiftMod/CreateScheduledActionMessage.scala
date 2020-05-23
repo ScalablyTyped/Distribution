@@ -47,13 +47,13 @@ object CreateScheduledActionMessage {
     Schedule: String,
     ScheduledActionName: String,
     TargetAction: ScheduledActionType,
-    Enable: js.UndefOr[scala.Boolean] = js.undefined,
+    Enable: js.UndefOr[BooleanOptional] = js.undefined,
     EndTime: TStamp = null,
     ScheduledActionDescription: String = null,
     StartTime: TStamp = null
   ): CreateScheduledActionMessage = {
     val __obj = js.Dynamic.literal(IamRole = IamRole.asInstanceOf[js.Any], Schedule = Schedule.asInstanceOf[js.Any], ScheduledActionName = ScheduledActionName.asInstanceOf[js.Any], TargetAction = TargetAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enable)) __obj.updateDynamic("Enable")(Enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enable)) __obj.updateDynamic("Enable")(Enable.get.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (ScheduledActionDescription != null) __obj.updateDynamic("ScheduledActionDescription")(ScheduledActionDescription.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])

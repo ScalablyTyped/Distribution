@@ -16,8 +16,7 @@ trait AbstractMesh extends js.Object {
 object AbstractMesh {
   @scala.inline
   def apply(edgesRenderer: Nullable[EdgesRenderer] = null): AbstractMesh = {
-    val __obj = js.Dynamic.literal()
-    if (edgesRenderer != null) __obj.updateDynamic("edgesRenderer")(edgesRenderer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(edgesRenderer = edgesRenderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractMesh]
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core/lib/resolve/resolvable", JSImport.Namespace)
 @js.native
 object resolvableMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.uirouterCore.stateInterfaceMod.ResolveTypes because Already inherited */ @js.native
   class Resolvable protected () extends ResolvableLiteral {
     /** This constructor creates a Resolvable copy */

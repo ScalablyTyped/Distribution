@@ -27,13 +27,13 @@ object Mapping {
     errInfo: String = null,
     externalIp: String = null,
     nonce: js.Array[Double] = null,
-    timeoutId: Int | Double = null
+    timeoutId: js.UndefOr[Double] = js.undefined
   ): Mapping = {
     val __obj = js.Dynamic.literal(externalPort = externalPort.asInstanceOf[js.Any], internalIp = internalIp.asInstanceOf[js.Any], internalPort = internalPort.asInstanceOf[js.Any], lifetime = lifetime.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     if (errInfo != null) __obj.updateDynamic("errInfo")(errInfo.asInstanceOf[js.Any])
     if (externalIp != null) __obj.updateDynamic("externalIp")(externalIp.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (timeoutId != null) __obj.updateDynamic("timeoutId")(timeoutId.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutId)) __obj.updateDynamic("timeoutId")(timeoutId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mapping]
   }
 }

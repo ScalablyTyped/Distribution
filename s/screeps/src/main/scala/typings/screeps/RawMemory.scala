@@ -1,7 +1,6 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ trait RawMemory extends js.Object {
   /**
     * An object with a memory segment of another player available on this tick. Use `setActiveForeignSegment` to fetch segments on the next tick.
     */
-  var foreignSegment: AnonId = js.native
+  var foreignSegment: typings.screeps.anon.Id = js.native
   /**
     *  @deprecated Use `InterShardMemory` instead.
     *
@@ -76,8 +75,4 @@ trait RawMemory extends js.Object {
     */
   def setPublicSegments(ids: js.Array[Double]): js.UndefOr[scala.Nothing] = js.native
 }
-
-@JSGlobal("RawMemory")
-@js.native
-object RawMemory extends TopLevel[RawMemory]
 

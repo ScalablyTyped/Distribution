@@ -1,7 +1,7 @@
 package typings.swiper.mod
 
 import typings.std.HTMLElement
-import typings.swiper.AnonCurrentX
+import typings.swiper.anon.CurrentX
 import typings.swiper.swiperBooleans.`true`
 import typings.swiper.swiperEsmMod.A11y
 import typings.swiper.swiperEsmMod.Autoplay
@@ -196,7 +196,7 @@ trait Swiper extends js.Object {
   /**
     * Object with the following touch event properties:
     */
-  var touches: AnonCurrentX = js.native
+  var touches: CurrentX = js.native
   /**
     * Current value of wrapper translate
     */
@@ -313,7 +313,7 @@ trait Swiper extends js.Object {
     *
     * @example removeSlide(0); // remove first slide
     * @example removeSlide([0, 1]); // remove first and second slides
-    * @example removeAllSlides();	// Remove all slides
+    * @example removeAllSlides();    // Remove all slides
     */
   def removeSlide(slideIndex: Double): Unit = js.native
   /**

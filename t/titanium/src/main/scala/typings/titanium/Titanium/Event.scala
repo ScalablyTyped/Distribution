@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * The base type for all Titanium events.
-	 */
+  * The base type for all Titanium events.
+  */
 trait Event extends js.Object {
   /**
-  		 * True if the event will try to bubble up if possible.
-  		 */
+    * True if the event will try to bubble up if possible.
+    */
   val bubbles: Boolean
   /**
-  		 * Set to true to stop the event from bubbling.
-  		 */
+    * Set to true to stop the event from bubbling.
+    */
   var cancelBubble: Boolean
   /**
-  		 * Source object that fired the event.
-  		 */
+    * Source object that fired the event.
+    */
   val source: js.Any
   /**
-  		 * Name of the event fired.
-  		 */
+    * Name of the event fired.
+    */
   val `type`: String
 }
 

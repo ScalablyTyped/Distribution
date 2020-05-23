@@ -43,7 +43,7 @@ object ExplanationOfBenefitItemAdjudication {
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
     reason: CodeableConcept = null,
-    value: Int | Double = null
+    value: js.UndefOr[decimal] = js.undefined
   ): ExplanationOfBenefitItemAdjudication = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any])
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
@@ -55,7 +55,7 @@ object ExplanationOfBenefitItemAdjudication {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplanationOfBenefitItemAdjudication]
   }
 }

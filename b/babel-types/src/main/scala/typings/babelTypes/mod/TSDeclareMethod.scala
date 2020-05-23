@@ -36,15 +36,29 @@ object TSDeclareMethod extends js.Object {
   def apply(
     decorators: js.UndefOr[js.Array[Decorator_] | Null],
     key: Expression,
-    typeParameters: js.UndefOr[TypeParameterDeclaration_ | Noop_ | Null],
+    typeParameters: js.UndefOr[Noop_ | Null | TypeParameterDeclaration_],
     params: js.Array[LVal]
   ): TSDeclareMethod = js.native
   def apply(
     decorators: js.UndefOr[js.Array[Decorator_] | Null],
     key: Expression,
-    typeParameters: js.UndefOr[TypeParameterDeclaration_ | Noop_ | Null],
+    typeParameters: js.UndefOr[Noop_ | Null | TypeParameterDeclaration_],
     params: js.Array[LVal],
-    returnType: TypeAnnotation_ | TSTypeAnnotation | Noop_
+    returnType: Noop_
+  ): TSDeclareMethod = js.native
+  def apply(
+    decorators: js.UndefOr[js.Array[Decorator_] | Null],
+    key: Expression,
+    typeParameters: js.UndefOr[Noop_ | Null | TypeParameterDeclaration_],
+    params: js.Array[LVal],
+    returnType: TSTypeAnnotation
+  ): TSDeclareMethod = js.native
+  def apply(
+    decorators: js.UndefOr[js.Array[Decorator_] | Null],
+    key: Expression,
+    typeParameters: js.UndefOr[Noop_ | Null | TypeParameterDeclaration_],
+    params: js.Array[LVal],
+    returnType: TypeAnnotation_
   ): TSDeclareMethod = js.native
 }
 

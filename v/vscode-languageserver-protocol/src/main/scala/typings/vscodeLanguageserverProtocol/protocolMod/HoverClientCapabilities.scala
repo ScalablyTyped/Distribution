@@ -25,7 +25,7 @@ object HoverClientCapabilities {
   ): HoverClientCapabilities = {
     val __obj = js.Dynamic.literal()
     if (contentFormat != null) __obj.updateDynamic("contentFormat")(contentFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoverClientCapabilities]
   }
 }

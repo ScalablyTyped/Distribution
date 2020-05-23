@@ -13,10 +13,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.Filter
   * @memberof PIXI
   */
-@JSGlobal("PIXI.SpriteMaskFilter")
 @js.native
-class SpriteMaskFilter protected () extends Filter {
-  def this(sprite: Sprite) = this()
+trait SpriteMaskFilter extends Filter {
   /**
     * Mask matrix
     * @member {PIXI.Matrix} PIXI.SpriteMaskFilter#maskMatrix

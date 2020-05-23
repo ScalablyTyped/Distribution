@@ -23,7 +23,7 @@ object MUIDataTablePopover {
     action: /* args */ js.Any => _ = null,
     anchorEl: ReactNode = null,
     anchorOrigin: js.Any = null,
-    elevation: Int | Double = null,
+    elevation: js.UndefOr[Double] = js.undefined,
     onClose: /* args */ js.Any => _ = null,
     onExited: /* args */ js.Any => _ = null,
     option: js.UndefOr[Boolean] = js.undefined,
@@ -34,10 +34,10 @@ object MUIDataTablePopover {
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
     if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
+    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
-    if (!js.isUndefined(option)) __obj.updateDynamic("option")(option.asInstanceOf[js.Any])
+    if (!js.isUndefined(option)) __obj.updateDynamic("option")(option.get.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTablePopover]

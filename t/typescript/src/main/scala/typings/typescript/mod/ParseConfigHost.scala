@@ -16,26 +16,13 @@ trait ParseConfigHost extends js.Object {
   def readDirectory(
     rootDir: java.lang.String,
     extensions: js.Array[java.lang.String],
-    excludes: js.UndefOr[scala.Nothing],
+    excludes: js.UndefOr[js.Array[java.lang.String]],
     includes: js.Array[java.lang.String]
   ): js.Array[java.lang.String] = js.native
   def readDirectory(
     rootDir: java.lang.String,
     extensions: js.Array[java.lang.String],
-    excludes: js.UndefOr[scala.Nothing],
-    includes: js.Array[java.lang.String],
-    depth: Double
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    rootDir: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    excludes: js.Array[java.lang.String],
-    includes: js.Array[java.lang.String]
-  ): js.Array[java.lang.String] = js.native
-  def readDirectory(
-    rootDir: java.lang.String,
-    extensions: js.Array[java.lang.String],
-    excludes: js.Array[java.lang.String],
+    excludes: js.UndefOr[js.Array[java.lang.String]],
     includes: js.Array[java.lang.String],
     depth: Double
   ): js.Array[java.lang.String] = js.native

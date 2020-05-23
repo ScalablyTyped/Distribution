@@ -10,108 +10,62 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.Product")
-@js.native
-/**
-  * Default Constructor.
-  */
-class Product () extends Instance {
-  /**
-    * Construct from members.
-    *
-    * @param name Name, identifier of the Product.
-    * @param width Width, length on the X-axis in 3D.
-    * @param height Height, length on the Y-axis in 3D.
-    * @param length Length, length on the Z-axis in 3D.
-    */
-  def this(name: String, width: Double, height: Double, length: Double) = this()
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ trait Product extends Instance {
   /**
     * Height of the Product, length on the Y-axis in 3D.
     */
-  var height: Double = js.native
+  var height: Double
   /**
     * Length of the Product, length on the Z-axis in 3D.
     */
-  var length: Double = js.native
+  var length: Double
   /**
     * <p> Name, key of the Product. </p>
     *
     * <p> The name must be unique because a name identifies a {@link Product}. </p>
     */
-  var name: String = js.native
+  var name: String
   /**
     * Width of the Product, length on the X-axis in 3D.
     */
-  var width: Double = js.native
+  var width: Double
   /**
     * @inheritdoc
     */
-  def TAG(): String = js.native
-  /**
-    * <p> A type, identifier of derived class. </p>
-    *
-    * <h4> Derived types </h4>
-    * <ul>
-    *	<li> {@link Product product} </li>
-    *	<li> {@link Wrapper wrapper} </li>
-    * <ul>
-    */
-  /* CompleteClass */
-  override def TYPE(): String = js.native
-  /**
-    * Get height, length on the Y-axis in 3D.
-    */
-  /* CompleteClass */
-  override def getHeight(): Double = js.native
-  /**
-    * Get length, length on the Z-axis in 3D.
-    */
-  /* CompleteClass */
-  override def getLength(): Double = js.native
-  /**
-    * Get name.
-    */
-  /* CompleteClass */
-  override def getName(): String = js.native
-  /**
-    * Get (calculate) volume.
-    *
-    * @return width x height x length
-    */
-  /* CompleteClass */
-  override def getVolume(): Double = js.native
-  /**
-    * Get width, length on the X-axis in 3D.
-    */
-  /* CompleteClass */
-  override def getWidth(): Double = js.native
+  def TAG(): String
   /**
     * Key of a Product is its name.
     */
-  def key(): js.Any = js.native
-  /**
-    * Set height, length on the Y-axis in 3D.
-    */
-  /* CompleteClass */
-  override def setHeight(`val`: Double): Unit = js.native
-  /**
-    * Set length, length on the Z-axis in 3D.
-    */
-  /* CompleteClass */
-  override def setLength(`val`: Double): Unit = js.native
-  /**
-    * Set name.
-    */
-  /* CompleteClass */
-  override def setName(`val`: String): Unit = js.native
-  /**
-    * Set width, length on the X-axis in 3D.
-    */
-  /* CompleteClass */
-  override def setWidth(`val`: Double): Unit = js.native
+  def key(): js.Any
   /**
     * @inheritdoc
     */
-  def toXML(): js.Any = js.native
+  def toXML(): js.Any
+}
+
+object Product {
+  @scala.inline
+  def apply(
+    TAG: () => String,
+    TYPE: () => String,
+    getHeight: () => Double,
+    getLength: () => Double,
+    getName: () => String,
+    getVolume: () => Double,
+    getWidth: () => Double,
+    height: Double,
+    key: () => js.Any,
+    length: Double,
+    name: String,
+    setHeight: Double => Unit,
+    setLength: Double => Unit,
+    setName: String => Unit,
+    setWidth: Double => Unit,
+    toXML: () => js.Any,
+    width: Double
+  ): Product = {
+    val __obj = js.Dynamic.literal(TAG = js.Any.fromFunction0(TAG), TYPE = js.Any.fromFunction0(TYPE), getHeight = js.Any.fromFunction0(getHeight), getLength = js.Any.fromFunction0(getLength), getName = js.Any.fromFunction0(getName), getVolume = js.Any.fromFunction0(getVolume), getWidth = js.Any.fromFunction0(getWidth), height = height.asInstanceOf[js.Any], key = js.Any.fromFunction0(key), length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], setHeight = js.Any.fromFunction1(setHeight), setLength = js.Any.fromFunction1(setLength), setName = js.Any.fromFunction1(setName), setWidth = js.Any.fromFunction1(setWidth), toXML = js.Any.fromFunction0(toXML), width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Product]
+  }
 }
 

@@ -1,8 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.std.stdStrings.cancel
 import typings.std.stdStrings.finish
 import scala.scalajs.js
@@ -98,15 +95,4 @@ trait Animation extends EventTarget {
   def reverse(): Unit = js.native
   def updatePlaybackRate(playbackRate: Double): Unit = js.native
 }
-
-@JSGlobal("Animation")
-@js.native
-object Animation
-  extends Instantiable0[Animation]
-     with Instantiable1[/* effect */ AnimationEffect, Animation]
-     with Instantiable2[
-      (/* effect */ AnimationEffect) | (/* effect */ Null), 
-      /* timeline */ AnimationTimeline, 
-      Animation
-    ]
 

@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonSlicePartitions
+import typings.cesium.anon.SlicePartitions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "SphereOutlineGeometry")
 @js.native
 class SphereOutlineGeometry () extends Packable {
-  def this(options: AnonSlicePartitions) = this()
+  def this(options: SlicePartitions) = this()
 }
 
 /* static members */

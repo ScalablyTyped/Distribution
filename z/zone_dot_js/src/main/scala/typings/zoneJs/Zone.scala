@@ -1,6 +1,5 @@
 package typings.zoneJs
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -309,8 +308,4 @@ trait Zone extends js.Object {
     */
   def wrap[F /* <: js.Function */](callback: F, source: String): F = js.native
 }
-
-@JSGlobal("Zone")
-@js.native
-object Zone extends TopLevel[ZoneType]
 

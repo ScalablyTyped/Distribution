@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InstanceAssociationOutputLocation extends js.Object {
   /**
-    * An Amazon S3 bucket where you want to store the results of this request.
+    * An S3 bucket where you want to store the results of this request.
     */
   var S3Location: js.UndefOr[S3OutputLocation] = js.native
 }

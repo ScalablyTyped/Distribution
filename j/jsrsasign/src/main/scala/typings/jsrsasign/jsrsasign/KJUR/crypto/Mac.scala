@@ -1,6 +1,5 @@
 package typings.jsrsasign.jsrsasign.KJUR.crypto
 
-import typings.jsrsasign.AnonPass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,16 +37,13 @@ import scala.scalajs.js.annotation._
   * var mac = new KJUR.crypto.Mac({alg: "HmacSHA256", "pass": {"b64":  "Mi02/+...a=="}});
   * var mac = new KJUR.crypto.Mac({alg: "HmacSHA256", "pass": {"b64u": "Mi02_-...a"}});
   */
-@JSGlobal("jsrsasign.KJUR.crypto.Mac")
-@js.native
-class Mac protected () extends js.Object {
-  def this(params: AnonPass) = this()
+trait Mac extends js.Object {
   /**
     * completes hash calculation and returns hash result
     * @example
     * mac.digest()
     */
-  def doFinal(): Unit = js.native
+  def doFinal(): Unit
   /**
     * performs final update on the digest using hexadecimal string,
     * then completes the digest computation
@@ -55,15 +51,15 @@ class Mac protected () extends js.Object {
     * @example
     * mac.digestHex('0f2abd')
     */
-  def doFinalHex(hex: String): Unit = js.native
+  def doFinalHex(hex: String): Unit
   /**
     * performs final update on the digest using string, then completes the digest computation
     * @param str string to final update
     * @example
     * mac.digestString('aaa')
     */
-  def doFinalString(str: String): Unit = js.native
-  def setAlgAndProvider(alg: String, prov: String): Unit = js.native
+  def doFinalString(str: String): Unit
+  def setAlgAndProvider(alg: String, prov: String): Unit
   /**
     * set password for Mac
     * @param pass password for Mac
@@ -99,20 +95,36 @@ class Mac protected () extends js.Object {
     * // set password by explicit Base64URL string
     * mac.setPassword({"b64u": "Mb-c3f_"});
     */
-  def setPassword(pass: String): Unit = js.native
+  def setPassword(pass: String): Unit
   /**
     * update digest by specified hexadecimal string
     * @param hex hexadecimal string to update
     * @example
     * mac.updateHex('0afe36');
     */
-  def updateHex(hex: String): Unit = js.native
+  def updateHex(hex: String): Unit
   /**
     * update digest by specified string
     * @param str string to update
     * @example
     * mac.updateString('New York');
     */
-  def updateString(str: String): Unit = js.native
+  def updateString(str: String): Unit
+}
+
+object Mac {
+  @scala.inline
+  def apply(
+    doFinal: () => Unit,
+    doFinalHex: String => Unit,
+    doFinalString: String => Unit,
+    setAlgAndProvider: (String, String) => Unit,
+    setPassword: String => Unit,
+    updateHex: String => Unit,
+    updateString: String => Unit
+  ): Mac = {
+    val __obj = js.Dynamic.literal(doFinal = js.Any.fromFunction0(doFinal), doFinalHex = js.Any.fromFunction1(doFinalHex), doFinalString = js.Any.fromFunction1(doFinalString), setAlgAndProvider = js.Any.fromFunction2(setAlgAndProvider), setPassword = js.Any.fromFunction1(setPassword), updateHex = js.Any.fromFunction1(updateHex), updateString = js.Any.fromFunction1(updateString))
+    __obj.asInstanceOf[Mac]
+  }
 }
 

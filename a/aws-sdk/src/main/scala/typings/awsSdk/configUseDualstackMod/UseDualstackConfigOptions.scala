@@ -18,7 +18,7 @@ object UseDualstackConfigOptions {
   @scala.inline
   def apply(useDualstack: js.UndefOr[Boolean] = js.undefined): UseDualstackConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useDualstack)) __obj.updateDynamic("useDualstack")(useDualstack.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDualstack)) __obj.updateDynamic("useDualstack")(useDualstack.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseDualstackConfigOptions]
   }
 }

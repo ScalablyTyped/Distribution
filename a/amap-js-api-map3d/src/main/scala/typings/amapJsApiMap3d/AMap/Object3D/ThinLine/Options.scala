@@ -16,11 +16,11 @@ object Options {
   def apply(
     color: String,
     path: js.Array[js.Tuple2[Double, Double]],
-    altitude: Int | Double = null,
+    altitude: js.UndefOr[Double] = js.undefined,
     dashArray: js.Array[Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
     if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

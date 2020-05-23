@@ -17,16 +17,16 @@ trait Vnode[Attrs, State /* <: Lifecycle[Attrs, State] */] extends js.Object {
   /** The nodeName of a DOM element. It may also be the string [ if a vnode is a fragment, # if it's a text vnode, or < if it's a trusted HTML vnode. Additionally, it may be a component. */
   var tag: String | (ComponentTypes[Attrs, State])
   /**
-  		 * This is used instead of children if a vnode contains a text node as its only child.
-  		 * This is done for performance reasons.
-  		 * Component vnodes never use the text property even if they have a text node as their only child.
-  		 */
+    * This is used instead of children if a vnode contains a text node as its only child.
+    * This is done for performance reasons.
+    * Component vnodes never use the text property even if they have a text node as their only child.
+    */
   var text: js.UndefOr[String | Double | Boolean] = js.undefined
 }
 
 object Vnode {
   @scala.inline
-  def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](
+  def apply[Attrs, State](
     attrs: Attrs,
     state: State,
     tag: String | (ComponentTypes[Attrs, State]),

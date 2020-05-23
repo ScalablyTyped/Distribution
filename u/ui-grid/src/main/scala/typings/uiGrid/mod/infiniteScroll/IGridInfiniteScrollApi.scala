@@ -1,7 +1,7 @@
 package typings.uiGrid.mod.infiniteScroll
 
 import typings.angular.mod.IPromise
-import typings.uiGrid.AnonNeedLoadMoreData
+import typings.uiGrid.anon.NeedLoadMoreData
 import typings.uiGrid.mod.IGridInstanceOf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IGridInfiniteScrollApi[TEntity] extends js.Object {
   // Events
-  var on: AnonNeedLoadMoreData = js.native
+  var on: NeedLoadMoreData = js.native
   // Methods
   /**
     * Call this function when you have loaded the additional data requested.

@@ -57,6 +57,12 @@ package object route53Mod {
     - typings.awsSdk.awsSdkStrings.`sa-east-1`
     - typings.awsSdk.awsSdkStrings.`cn-northwest-1`
     - typings.awsSdk.awsSdkStrings.`cn-north-1`
+    - typings.awsSdk.awsSdkStrings.`af-south-1`
+    - typings.awsSdk.awsSdkStrings.`eu-south-1`
+    - typings.awsSdk.awsSdkStrings.`us-gov-west-1`
+    - typings.awsSdk.awsSdkStrings.`us-gov-east-1`
+    - typings.awsSdk.awsSdkStrings.`us-iso-east-1`
+    - typings.awsSdk.awsSdkStrings.`us-isob-east-1`
     - java.lang.String
   */
   type CloudWatchRegion = typings.awsSdk.route53Mod._CloudWatchRegion | java.lang.String
@@ -216,6 +222,8 @@ package object route53Mod {
     - typings.awsSdk.awsSdkStrings.`ap-east-1`
     - typings.awsSdk.awsSdkStrings.`me-south-1`
     - typings.awsSdk.awsSdkStrings.`ap-south-1`
+    - typings.awsSdk.awsSdkStrings.`af-south-1`
+    - typings.awsSdk.awsSdkStrings.`eu-south-1`
     - java.lang.String
   */
   type ResourceRecordSetRegion = typings.awsSdk.route53Mod._ResourceRecordSetRegion | java.lang.String
@@ -279,6 +287,10 @@ package object route53Mod {
     - typings.awsSdk.awsSdkStrings.`eu-central-1`
     - typings.awsSdk.awsSdkStrings.`ap-east-1`
     - typings.awsSdk.awsSdkStrings.`me-south-1`
+    - typings.awsSdk.awsSdkStrings.`us-gov-west-1`
+    - typings.awsSdk.awsSdkStrings.`us-gov-east-1`
+    - typings.awsSdk.awsSdkStrings.`us-iso-east-1`
+    - typings.awsSdk.awsSdkStrings.`us-isob-east-1`
     - typings.awsSdk.awsSdkStrings.`ap-southeast-1`
     - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
     - typings.awsSdk.awsSdkStrings.`ap-south-1`
@@ -289,6 +301,8 @@ package object route53Mod {
     - typings.awsSdk.awsSdkStrings.`sa-east-1`
     - typings.awsSdk.awsSdkStrings.`ca-central-1`
     - typings.awsSdk.awsSdkStrings.`cn-north-1`
+    - typings.awsSdk.awsSdkStrings.`af-south-1`
+    - typings.awsSdk.awsSdkStrings.`eu-south-1`
     - java.lang.String
   */
   type VPCRegion = typings.awsSdk.route53Mod._VPCRegion | java.lang.String

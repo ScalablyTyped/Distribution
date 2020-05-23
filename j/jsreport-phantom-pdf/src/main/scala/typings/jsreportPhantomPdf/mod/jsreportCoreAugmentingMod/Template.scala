@@ -1,6 +1,6 @@
 package typings.jsreportPhantomPdf.mod.jsreportCoreAugmentingMod
 
-import typings.jsreportPhantomPdf.PartialPhantom
+import typings.jsreportPhantomPdf.anon.PartialPhantom
 import typings.jsreportPhantomPdf.jsreportPhantomPdfStrings.`phantom-pdf`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

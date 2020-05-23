@@ -14,10 +14,13 @@ trait IExportAgentRequest extends js.Object {
 
 object IExportAgentRequest {
   @scala.inline
-  def apply(agentUri: String = null, parent: String = null): IExportAgentRequest = {
+  def apply(
+    agentUri: js.UndefOr[Null | String] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): IExportAgentRequest = {
     val __obj = js.Dynamic.literal()
-    if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(agentUri)) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExportAgentRequest]
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ajv" : "6.12.1"
+      "ajv" : "6.12.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ajv" : "6.12.1"
+      "ajv" : "6.12.2"
     }
   ],
   "compile-devDependencies" : [

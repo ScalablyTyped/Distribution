@@ -22,13 +22,13 @@ trait ChartAxisViewWindowOptions extends js.Object {
 object ChartAxisViewWindowOptions {
   @scala.inline
   def apply(
-    viewWindowMax: Int | Double = null,
-    viewWindowMin: Int | Double = null,
+    viewWindowMax: js.UndefOr[Double] = js.undefined,
+    viewWindowMin: js.UndefOr[Double] = js.undefined,
     viewWindowMode: String = null
   ): ChartAxisViewWindowOptions = {
     val __obj = js.Dynamic.literal()
-    if (viewWindowMax != null) __obj.updateDynamic("viewWindowMax")(viewWindowMax.asInstanceOf[js.Any])
-    if (viewWindowMin != null) __obj.updateDynamic("viewWindowMin")(viewWindowMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewWindowMax)) __obj.updateDynamic("viewWindowMax")(viewWindowMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewWindowMin)) __obj.updateDynamic("viewWindowMin")(viewWindowMin.get.asInstanceOf[js.Any])
     if (viewWindowMode != null) __obj.updateDynamic("viewWindowMode")(viewWindowMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisViewWindowOptions]
   }

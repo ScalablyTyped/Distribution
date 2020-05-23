@@ -1,5 +1,6 @@
 package typings.jqgrid
 
+import typings.jqgrid.anon.ColModel
 import typings.jqgrid.jqgridStrings.actions
 import typings.jqgrid.jqgridStrings.center
 import typings.jqgrid.jqgridStrings.checkbox
@@ -71,7 +72,7 @@ trait JQueryJqGridColumn extends js.Object {
     * @returns {} the formatted value
     */
   var formatter: js.UndefOr[
-    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ AnonColModel, /* rowObject */ js.Any, _])
+    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any, _])
   ] = js.undefined
   /**
     * Defines if this column is hidden at initialization.
@@ -121,29 +122,29 @@ object JQueryJqGridColumn {
     classes: String = null,
     datefmt: String = null,
     editable: js.UndefOr[Boolean] = js.undefined,
-    formatter: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ AnonColModel, /* rowObject */ js.Any, _]) = null,
+    formatter: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ ColModel, /* rowObject */ js.Any, _]) = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     index: String = null,
     key: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     search: js.UndefOr[Boolean] = js.undefined,
     sortable: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): JQueryJqGridColumn = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (cellattr != null) __obj.updateDynamic("cellattr")(js.Any.fromFunction5(cellattr))
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (datefmt != null) __obj.updateDynamic("datefmt")(datefmt.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryJqGridColumn]
   }
 }

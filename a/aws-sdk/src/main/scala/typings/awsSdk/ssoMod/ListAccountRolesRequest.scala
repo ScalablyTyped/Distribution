@@ -29,11 +29,11 @@ object ListAccountRolesRequest {
   def apply(
     accessToken: AccessTokenType,
     accountId: AccountIdType,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResultType] = js.undefined,
     nextToken: NextTokenType = null
   ): ListAccountRolesRequest = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], accountId = accountId.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccountRolesRequest]
   }

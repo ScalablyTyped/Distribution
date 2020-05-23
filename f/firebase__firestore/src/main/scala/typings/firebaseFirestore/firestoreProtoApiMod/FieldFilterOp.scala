@@ -19,24 +19,22 @@ trait FieldFilterOp extends js.Object
 
 object FieldFilterOp {
   @scala.inline
-  def ARRAY_CONTAINS: typings.firebaseFirestore.firebaseFirestoreStrings.ARRAY_CONTAINS = this.cast("ARRAY_CONTAINS")
+  def ARRAY_CONTAINS: typings.firebaseFirestore.firebaseFirestoreStrings.ARRAY_CONTAINS = "ARRAY_CONTAINS".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.ARRAY_CONTAINS]
   @scala.inline
-  def ARRAY_CONTAINS_ANY: typings.firebaseFirestore.firebaseFirestoreStrings.ARRAY_CONTAINS_ANY = this.cast("ARRAY_CONTAINS_ANY")
+  def ARRAY_CONTAINS_ANY: typings.firebaseFirestore.firebaseFirestoreStrings.ARRAY_CONTAINS_ANY = "ARRAY_CONTAINS_ANY".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.ARRAY_CONTAINS_ANY]
   @scala.inline
-  def EQUAL: typings.firebaseFirestore.firebaseFirestoreStrings.EQUAL = this.cast("EQUAL")
+  def EQUAL: typings.firebaseFirestore.firebaseFirestoreStrings.EQUAL = "EQUAL".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.EQUAL]
   @scala.inline
-  def GREATER_THAN: typings.firebaseFirestore.firebaseFirestoreStrings.GREATER_THAN = this.cast("GREATER_THAN")
+  def GREATER_THAN: typings.firebaseFirestore.firebaseFirestoreStrings.GREATER_THAN = "GREATER_THAN".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.GREATER_THAN]
   @scala.inline
-  def GREATER_THAN_OR_EQUAL: typings.firebaseFirestore.firebaseFirestoreStrings.GREATER_THAN_OR_EQUAL = this.cast("GREATER_THAN_OR_EQUAL")
+  def GREATER_THAN_OR_EQUAL: typings.firebaseFirestore.firebaseFirestoreStrings.GREATER_THAN_OR_EQUAL = "GREATER_THAN_OR_EQUAL".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.GREATER_THAN_OR_EQUAL]
   @scala.inline
-  def IN: typings.firebaseFirestore.firebaseFirestoreStrings.IN = this.cast("IN")
+  def IN: typings.firebaseFirestore.firebaseFirestoreStrings.IN = "IN".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.IN]
   @scala.inline
-  def LESS_THAN: typings.firebaseFirestore.firebaseFirestoreStrings.LESS_THAN = this.cast("LESS_THAN")
+  def LESS_THAN: typings.firebaseFirestore.firebaseFirestoreStrings.LESS_THAN = "LESS_THAN".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.LESS_THAN]
   @scala.inline
-  def LESS_THAN_OR_EQUAL: typings.firebaseFirestore.firebaseFirestoreStrings.LESS_THAN_OR_EQUAL = this.cast("LESS_THAN_OR_EQUAL")
+  def LESS_THAN_OR_EQUAL: typings.firebaseFirestore.firebaseFirestoreStrings.LESS_THAN_OR_EQUAL = "LESS_THAN_OR_EQUAL".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.LESS_THAN_OR_EQUAL]
   @scala.inline
-  def OPERATOR_UNSPECIFIED: typings.firebaseFirestore.firebaseFirestoreStrings.OPERATOR_UNSPECIFIED = this.cast("OPERATOR_UNSPECIFIED")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def OPERATOR_UNSPECIFIED: typings.firebaseFirestore.firebaseFirestoreStrings.OPERATOR_UNSPECIFIED = "OPERATOR_UNSPECIFIED".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.OPERATOR_UNSPECIFIED]
 }
 

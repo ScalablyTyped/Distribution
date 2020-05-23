@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.terminalManagerMod
 
-import typings.jupyterlabServices.OmitIOptionsserverSettingModel
+import typings.jupyterlabServices.anon.OmitIOptionsserverSettingModel
 import typings.jupyterlabServices.basemanagerMod.BaseManager
 import typings.jupyterlabServices.terminalManagerMod.TerminalManager.IOptions
 import typings.jupyterlabServices.terminalRestapiMod.IModel
@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.luminoDisposable.mod.IDisposable because Already inherited
 - typings.luminoDisposable.mod.IObservableDisposable because Already inherited
 - typings.jupyterlabServices.basemanagerMod.IManager because Already inherited

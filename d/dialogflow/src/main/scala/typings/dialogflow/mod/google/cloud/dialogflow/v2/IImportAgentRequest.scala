@@ -17,11 +17,15 @@ trait IImportAgentRequest extends js.Object {
 
 object IImportAgentRequest {
   @scala.inline
-  def apply(agentContent: Uint8Array | String = null, agentUri: String = null, parent: String = null): IImportAgentRequest = {
+  def apply(
+    agentContent: js.UndefOr[Null | Uint8Array | String] = js.undefined,
+    agentUri: js.UndefOr[Null | String] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): IImportAgentRequest = {
     val __obj = js.Dynamic.literal()
-    if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent.asInstanceOf[js.Any])
-    if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(agentContent)) __obj.updateDynamic("agentContent")(agentContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(agentUri)) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImportAgentRequest]
   }
 }

@@ -27,37 +27,37 @@ object ConsumerOptions {
   @scala.inline
   def apply(
     attributeNames: js.Array[String] = null,
-    authenticationErrorTimeout: Int | Double = null,
-    batchSize: Int | Double = null,
+    authenticationErrorTimeout: js.UndefOr[Double] = js.undefined,
+    batchSize: js.UndefOr[Double] = js.undefined,
     handleMessage: /* message */ SQSMessage => js.Promise[Unit] = null,
     handleMessageBatch: /* messages */ js.Array[SQSMessage] => js.Promise[Unit] = null,
-    handleMessageTimeout: Int | Double = null,
+    handleMessageTimeout: js.UndefOr[Double] = js.undefined,
     messageAttributeNames: js.Array[String] = null,
-    pollingWaitTimeMs: Int | Double = null,
+    pollingWaitTimeMs: js.UndefOr[Double] = js.undefined,
     queueUrl: String = null,
     region: String = null,
     sqs: ^ = null,
     stopped: js.UndefOr[Boolean] = js.undefined,
     terminateVisibilityTimeout: js.UndefOr[Boolean] = js.undefined,
-    visibilityTimeout: Int | Double = null,
-    waitTimeSeconds: Int | Double = null
+    visibilityTimeout: js.UndefOr[Double] = js.undefined,
+    waitTimeSeconds: js.UndefOr[Double] = js.undefined
   ): ConsumerOptions = {
     val __obj = js.Dynamic.literal()
     if (attributeNames != null) __obj.updateDynamic("attributeNames")(attributeNames.asInstanceOf[js.Any])
-    if (authenticationErrorTimeout != null) __obj.updateDynamic("authenticationErrorTimeout")(authenticationErrorTimeout.asInstanceOf[js.Any])
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(authenticationErrorTimeout)) __obj.updateDynamic("authenticationErrorTimeout")(authenticationErrorTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (handleMessage != null) __obj.updateDynamic("handleMessage")(js.Any.fromFunction1(handleMessage))
     if (handleMessageBatch != null) __obj.updateDynamic("handleMessageBatch")(js.Any.fromFunction1(handleMessageBatch))
-    if (handleMessageTimeout != null) __obj.updateDynamic("handleMessageTimeout")(handleMessageTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleMessageTimeout)) __obj.updateDynamic("handleMessageTimeout")(handleMessageTimeout.get.asInstanceOf[js.Any])
     if (messageAttributeNames != null) __obj.updateDynamic("messageAttributeNames")(messageAttributeNames.asInstanceOf[js.Any])
-    if (pollingWaitTimeMs != null) __obj.updateDynamic("pollingWaitTimeMs")(pollingWaitTimeMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollingWaitTimeMs)) __obj.updateDynamic("pollingWaitTimeMs")(pollingWaitTimeMs.get.asInstanceOf[js.Any])
     if (queueUrl != null) __obj.updateDynamic("queueUrl")(queueUrl.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (sqs != null) __obj.updateDynamic("sqs")(sqs.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopped)) __obj.updateDynamic("stopped")(stopped.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminateVisibilityTimeout)) __obj.updateDynamic("terminateVisibilityTimeout")(terminateVisibilityTimeout.asInstanceOf[js.Any])
-    if (visibilityTimeout != null) __obj.updateDynamic("visibilityTimeout")(visibilityTimeout.asInstanceOf[js.Any])
-    if (waitTimeSeconds != null) __obj.updateDynamic("waitTimeSeconds")(waitTimeSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopped)) __obj.updateDynamic("stopped")(stopped.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminateVisibilityTimeout)) __obj.updateDynamic("terminateVisibilityTimeout")(terminateVisibilityTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibilityTimeout)) __obj.updateDynamic("visibilityTimeout")(visibilityTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitTimeSeconds)) __obj.updateDynamic("waitTimeSeconds")(waitTimeSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumerOptions]
   }
 }

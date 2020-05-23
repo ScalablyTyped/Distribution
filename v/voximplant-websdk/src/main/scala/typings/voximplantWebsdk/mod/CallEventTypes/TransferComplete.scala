@@ -7,12 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when call has been transferred successfully
-		*/
+  *    Event dispatched when call has been transferred successfully
+  */
 trait TransferComplete extends VoxImplantCallEvent {
   /**
-  			*	Call that dispatched the event
-  			*/
+    *    Call that dispatched the event
+    */
   var call: Call
 }
 

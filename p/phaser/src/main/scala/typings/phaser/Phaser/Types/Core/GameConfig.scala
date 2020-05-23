@@ -163,29 +163,29 @@ object GameConfig {
     physics: PhysicsConfig = null,
     plugins: PluginObject | js.Array[PluginObjectItem] = null,
     render: RenderConfig = null,
-    resolution: Int | Double = null,
+    resolution: js.UndefOr[Double] = js.undefined,
     scale: ScaleConfig = null,
     scene: Scene | (js.Array[CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig]) | SettingsConfig | CreateSceneFromObjectConfig | js.Function = null,
     seed: js.Array[String] = null,
     title: String = null,
     transparent: js.UndefOr[Boolean] = js.undefined,
-    `type`: Int | Double = null,
+    `type`: js.UndefOr[Double] = js.undefined,
     url: String = null,
     version: String = null,
     width: integer | String = null,
-    zoom: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined
   ): GameConfig = {
     val __obj = js.Dynamic.literal()
     if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
     if (canvasStyle != null) __obj.updateDynamic("canvasStyle")(canvasStyle.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(customEnvironment)) __obj.updateDynamic("customEnvironment")(customEnvironment.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableContextMenu)) __obj.updateDynamic("disableContextMenu")(disableContextMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(customEnvironment)) __obj.updateDynamic("customEnvironment")(customEnvironment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableContextMenu)) __obj.updateDynamic("disableContextMenu")(disableContextMenu.get.asInstanceOf[js.Any])
     if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
     if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -196,17 +196,17 @@ object GameConfig {
     if (physics != null) __obj.updateDynamic("physics")(physics.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
     if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameConfig]
   }
 }

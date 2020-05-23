@@ -1,10 +1,8 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.AnonAntialias
-import typings.pixiJs.AnonBaseTexture
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,10 +25,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Application")
 @js.native
-class Application_ () extends js.Object {
-  def this(options: AnonAntialias) = this()
+trait Application_ extends js.Object {
   /**
     * Loader instance to help with asset loading.
     * @name PIXI.Application#loader
@@ -49,7 +45,7 @@ class Application_ () extends js.Object {
     * @name resizeTo
     * @memberof PIXI.Application#
     */
-  var resizeTo: Window_ | HTMLElement = js.native
+  var resizeTo: Window | HTMLElement = js.native
   /**
     * Reference to the renderer's screen rectangle. Its safe to use as `filterArea` or `hitArea` for the whole screen.
     * @member {PIXI.Rectangle}
@@ -90,7 +86,7 @@ class Application_ () extends js.Object {
     */
   def destroy(): Unit = js.native
   def destroy(removeView: Boolean): Unit = js.native
-  def destroy(removeView: Boolean, stageOptions: AnonBaseTexture): Unit = js.native
+  def destroy(removeView: Boolean, stageOptions: typings.pixiJs.anon.BaseTexture): Unit = js.native
   /**
     * Render the current stage.
     */

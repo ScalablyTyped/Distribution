@@ -14,13 +14,13 @@ trait PlaysInline extends js.Object
 
 object PlaysInline {
   /**
-  		 * Playback in fullscreen.
-  		 */
+    * Playback in fullscreen.
+    */
   @scala.inline
   def Fullscreen: `0` = 0.asInstanceOf[`0`]
   /**
-  		 * Playback inline
-  		 */
+    * Playback inline
+    */
   @scala.inline
   def Inline: `1` = 1.asInstanceOf[`1`]
 }

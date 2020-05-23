@@ -18,9 +18,9 @@ trait LaunchTemplateElasticInferenceAcceleratorResponse extends js.Object {
 
 object LaunchTemplateElasticInferenceAcceleratorResponse {
   @scala.inline
-  def apply(Count: Int | scala.Double = null, Type: String = null): LaunchTemplateElasticInferenceAcceleratorResponse = {
+  def apply(Count: js.UndefOr[Integer] = js.undefined, Type: String = null): LaunchTemplateElasticInferenceAcceleratorResponse = {
     val __obj = js.Dynamic.literal()
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateElasticInferenceAcceleratorResponse]
   }

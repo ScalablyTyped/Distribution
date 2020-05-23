@@ -2,9 +2,9 @@ package typings.angularRouter.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.angularCore.mod.Injector
-import typings.angularRouter.AnonDeps
-import typings.angularRouter.AnonMulti
-import typings.angularRouter.AnonProvide
+import typings.angularRouter.anon.Deps
+import typings.angularRouter.anon.Multi
+import typings.angularRouter.anon.Provide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵangularPackagesRouterRouterK extends js.Object {
   def apply(): js.Array[
-    (Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH]) | AnonDeps | AnonMulti | AnonProvide
+    (Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH]) | Deps | Multi | Provide
   ] = js.native
 }
 

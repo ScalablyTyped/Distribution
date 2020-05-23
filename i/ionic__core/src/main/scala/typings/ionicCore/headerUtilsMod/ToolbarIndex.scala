@@ -1,6 +1,6 @@
 package typings.ionicCore.headerUtilsMod
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonTitleElement
+import typings.ionicCore.componentsMod.global.HTMLIonTitleElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

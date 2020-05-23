@@ -16,17 +16,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.InternalTexture")
 @js.native
-class InternalTexture protected () extends js.Object {
-  /**
-    * Creates a new InternalTexture
-    * @param engine defines the engine to use
-    * @param source defines the type of data that will be used
-    * @param delayAllocation if the texture allocation should be delayed (default: false)
-    */
-  def this(engine: ThinEngine, source: InternalTextureSource) = this()
-  def this(engine: ThinEngine, source: InternalTextureSource, delayAllocation: Boolean) = this()
+trait InternalTexture extends js.Object {
   /** @hidden */
   var _MSAAFramebuffer: Nullable[WebGLFramebuffer] = js.native
   /** @hidden */
@@ -215,19 +206,5 @@ class InternalTexture protected () extends js.Object {
     */
   def updateSize(width: int, height: int): Unit = js.native
   def updateSize(width: int, height: int, depth: int): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.InternalTexture")
-@js.native
-object InternalTexture extends js.Object {
-  /** @hidden */
-  def _UpdateRGBDAsync(
-    internalTexture: InternalTexture,
-    data: js.Array[js.Array[ArrayBufferView]],
-    sphericalPolynomial: Nullable[SphericalPolynomial],
-    lodScale: Double,
-    lodOffset: Double
-  ): js.Promise[Unit] = js.native
 }
 

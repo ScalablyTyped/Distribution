@@ -4,12 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.ShimBase")
-@js.native
-class ShimBase protected () extends IShim {
-  def this(factory: IShimFactory) = this()
-  var factory: js.Any = js.native
-  /* CompleteClass */
-  override def dispose(dummy: js.Any): Unit = js.native
+trait ShimBase extends IShim {
+  var factory: js.Any
+}
+
+object ShimBase {
+  @scala.inline
+  def apply(dispose: js.Any => Unit, factory: js.Any): ShimBase = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction1(dispose), factory = factory.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShimBase]
+  }
 }
 

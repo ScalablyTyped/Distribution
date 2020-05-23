@@ -70,7 +70,7 @@ object CreateJobRequest {
     ClientRequestToken: string = null,
     HopDestinations: listOfHopDestination = null,
     JobTemplate: string = null,
-    Priority: Int | Double = null,
+    Priority: js.UndefOr[integerMinNegative50Max50] = js.undefined,
     Queue: string = null,
     SimulateReservedQueue: SimulateReservedQueue = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
@@ -83,7 +83,7 @@ object CreateJobRequest {
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
     if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
     if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
     if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])

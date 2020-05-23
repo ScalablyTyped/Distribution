@@ -1,11 +1,10 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.firebaseFirestoreStrings.__name__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/path", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/path", JSImport.Namespace)
 @js.native
 object pathMod extends js.Object {
   /**
@@ -35,7 +34,7 @@ object pathMod extends js.Object {
     def isImmediateParentOf(potentialChild: this.type): Boolean = js.native
     def isPrefixOf(other: this.type): Boolean = js.native
     def lastSegment(): String = js.native
-    def length(): Double = js.native
+    def length: Double = js.native
     def popFirst(): B = js.native
     def popFirst(size: Double): B = js.native
     def popLast(): B = js.native
@@ -56,7 +55,7 @@ object pathMod extends js.Object {
     def canonicalString(): String = js.native
   }
   
-  val DOCUMENT_KEY_NAME: __name__ = js.native
+  val DOCUMENT_KEY_NAME: /* "__name__" */ String = js.native
   /* static members */
   @js.native
   object FieldPath extends js.Object {

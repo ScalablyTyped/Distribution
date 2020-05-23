@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonDecimals
+import typings.sequelize.anon.Decimals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ trait DataTypeReal extends DataTypeAbstractNumber[DataTypeReal] {
   def apply(): DataTypeReal = js.native
   def apply(length: Double): DataTypeReal = js.native
   def apply(length: Double, decimals: Double): DataTypeReal = js.native
-  def apply(options: AnonDecimals): DataTypeReal = js.native
+  def apply(options: Decimals): DataTypeReal = js.native
 }
 

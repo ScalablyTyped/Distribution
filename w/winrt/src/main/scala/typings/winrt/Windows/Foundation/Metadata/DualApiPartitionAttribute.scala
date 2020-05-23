@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Foundation.Metadata.DualApiPartitionAttribute")
-@js.native
-class DualApiPartitionAttribute () extends js.Object
+trait DualApiPartitionAttribute extends js.Object
 

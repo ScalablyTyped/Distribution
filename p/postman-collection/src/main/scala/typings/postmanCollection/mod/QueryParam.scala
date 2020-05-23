@@ -1,12 +1,12 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonEncode
-import typings.postmanCollection.AnonKeyValue
+import typings.postmanCollection.anon.Encode
+import typings.postmanCollection.anon.KeyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.QueryParamDefinition because var conflicts: description, disabled, id, name. Inlined key, value, system */ @JSImport("postman-collection", "QueryParam")
@@ -18,7 +18,7 @@ class QueryParam protected () extends Property[QueryParamDefinition] {
   var system: js.UndefOr[Boolean] = js.native
   var value: Null | String = js.native
   def update(param: String): Unit = js.native
-  def update(param: AnonKeyValue): Unit = js.native
+  def update(param: KeyValue): Unit = js.native
 }
 
 /* static members */
@@ -30,7 +30,7 @@ object QueryParam extends js.Object {
   def parse(query: String): js.Array[QueryParamDefinition] = js.native
   def parseSingle(param: String, idx: Double, all: js.Array[String]): QueryParamDefinition = js.native
   def unparse(params: js.Array[QueryParamDefinition]): String = js.native
-  def unparse(params: js.Array[QueryParamDefinition], options: AnonEncode): String = js.native
+  def unparse(params: js.Array[QueryParamDefinition], options: Encode): String = js.native
   def unparseSingle(obj: QueryParamDefinition, encode: Boolean): String = js.native
 }
 

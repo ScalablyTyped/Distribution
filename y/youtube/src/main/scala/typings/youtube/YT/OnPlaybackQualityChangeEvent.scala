@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait OnPlaybackQualityChangeEvent extends PlayerEvent {
   /**
-  		 * New playback quality.
-  		 */
+    * New playback quality.
+    */
   var data: String
 }
 

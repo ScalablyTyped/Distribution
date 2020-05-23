@@ -22,11 +22,15 @@ trait PersonDetail extends js.Object {
 
 object PersonDetail {
   @scala.inline
-  def apply(BoundingBox: BoundingBox = null, Face: FaceDetail = null, Index: Int | Double = null): PersonDetail = {
+  def apply(
+    BoundingBox: BoundingBox = null,
+    Face: FaceDetail = null,
+    Index: js.UndefOr[PersonIndex] = js.undefined
+  ): PersonDetail = {
     val __obj = js.Dynamic.literal()
     if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox.asInstanceOf[js.Any])
     if (Face != null) __obj.updateDynamic("Face")(Face.asInstanceOf[js.Any])
-    if (Index != null) __obj.updateDynamic("Index")(Index.asInstanceOf[js.Any])
+    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonDetail]
   }
 }

@@ -10,7 +10,7 @@ trait GroupingOptions[T] extends js.Object {
   var aggregateChildGroups: js.UndefOr[Boolean] = js.undefined
   var aggregateCollapsed: js.UndefOr[Boolean] = js.undefined
   var aggregateEmpty: js.UndefOr[Boolean] = js.undefined
-  	// todo
+      // todo
   var aggregators: js.UndefOr[js.Array[Aggregator[T]]] = js.undefined
   var collapsed: js.UndefOr[Boolean] = js.undefined
   var comparer: js.UndefOr[js.Function2[/* a */ Group[T], /* b */ Group[T], Double]] = js.undefined
@@ -35,13 +35,13 @@ object GroupingOptions {
     predefinedValues: js.Array[_] = null
   ): GroupingOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aggregateChildGroups)) __obj.updateDynamic("aggregateChildGroups")(aggregateChildGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(aggregateCollapsed)) __obj.updateDynamic("aggregateCollapsed")(aggregateCollapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(aggregateEmpty)) __obj.updateDynamic("aggregateEmpty")(aggregateEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregateChildGroups)) __obj.updateDynamic("aggregateChildGroups")(aggregateChildGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregateCollapsed)) __obj.updateDynamic("aggregateCollapsed")(aggregateCollapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregateEmpty)) __obj.updateDynamic("aggregateEmpty")(aggregateEmpty.get.asInstanceOf[js.Any])
     if (aggregators != null) __obj.updateDynamic("aggregators")(aggregators.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (comparer != null) __obj.updateDynamic("comparer")(js.Any.fromFunction2(comparer))
-    if (!js.isUndefined(displayTotalsRow)) __obj.updateDynamic("displayTotalsRow")(displayTotalsRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayTotalsRow)) __obj.updateDynamic("displayTotalsRow")(displayTotalsRow.get.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (getter != null) __obj.updateDynamic("getter")(getter.asInstanceOf[js.Any])
     if (predefinedValues != null) __obj.updateDynamic("predefinedValues")(predefinedValues.asInstanceOf[js.Any])

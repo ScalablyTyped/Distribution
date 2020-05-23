@@ -54,28 +54,28 @@ trait INavStyles extends js.Object {
 object INavStyles {
   @scala.inline
   def apply(
-    chevronButton: IStyle = null,
-    chevronIcon: IStyle = null,
-    compositeLink: IStyle = null,
-    group: IStyle = null,
-    groupContent: IStyle = null,
-    link: IStyle = null,
-    linkText: IStyle = null,
-    navItem: IStyle = null,
-    navItems: IStyle = null,
-    root: IStyle = null
+    chevronButton: js.UndefOr[Null | IStyle] = js.undefined,
+    chevronIcon: js.UndefOr[Null | IStyle] = js.undefined,
+    compositeLink: js.UndefOr[Null | IStyle] = js.undefined,
+    group: js.UndefOr[Null | IStyle] = js.undefined,
+    groupContent: js.UndefOr[Null | IStyle] = js.undefined,
+    link: js.UndefOr[Null | IStyle] = js.undefined,
+    linkText: js.UndefOr[Null | IStyle] = js.undefined,
+    navItem: js.UndefOr[Null | IStyle] = js.undefined,
+    navItems: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
   ): INavStyles = {
     val __obj = js.Dynamic.literal()
-    if (chevronButton != null) __obj.updateDynamic("chevronButton")(chevronButton.asInstanceOf[js.Any])
-    if (chevronIcon != null) __obj.updateDynamic("chevronIcon")(chevronIcon.asInstanceOf[js.Any])
-    if (compositeLink != null) __obj.updateDynamic("compositeLink")(compositeLink.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (groupContent != null) __obj.updateDynamic("groupContent")(groupContent.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (linkText != null) __obj.updateDynamic("linkText")(linkText.asInstanceOf[js.Any])
-    if (navItem != null) __obj.updateDynamic("navItem")(navItem.asInstanceOf[js.Any])
-    if (navItems != null) __obj.updateDynamic("navItems")(navItems.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(chevronButton)) __obj.updateDynamic("chevronButton")(chevronButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(chevronIcon)) __obj.updateDynamic("chevronIcon")(chevronIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(compositeLink)) __obj.updateDynamic("compositeLink")(compositeLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupContent)) __obj.updateDynamic("groupContent")(groupContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkText)) __obj.updateDynamic("linkText")(linkText.asInstanceOf[js.Any])
+    if (!js.isUndefined(navItem)) __obj.updateDynamic("navItem")(navItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(navItems)) __obj.updateDynamic("navItems")(navItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavStyles]
   }
 }

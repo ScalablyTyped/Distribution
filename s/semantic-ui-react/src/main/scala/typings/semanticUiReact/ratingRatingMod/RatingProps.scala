@@ -42,7 +42,7 @@ object RatingProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearable != null) __obj.updateDynamic("clearable")(clearable.asInstanceOf[js.Any])
     if (defaultRating != null) __obj.updateDynamic("defaultRating")(defaultRating.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (maxRating != null) __obj.updateDynamic("maxRating")(maxRating.asInstanceOf[js.Any])
     if (onRate != null) __obj.updateDynamic("onRate")(js.Any.fromFunction2(onRate))

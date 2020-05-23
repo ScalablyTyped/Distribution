@@ -30,7 +30,7 @@ object AlertOptions {
     message: String = null,
     messageHTML: String = null,
     modifier: String = null,
-    primaryButtonIndex: Int | Double = null,
+    primaryButtonIndex: js.UndefOr[Double] = js.undefined,
     title: String = null
   ): AlertOptions = {
     val __obj = js.Dynamic.literal()
@@ -38,12 +38,12 @@ object AlertOptions {
     if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel.asInstanceOf[js.Any])
     if (buttonLabels != null) __obj.updateDynamic("buttonLabels")(buttonLabels.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (messageHTML != null) __obj.updateDynamic("messageHTML")(messageHTML.asInstanceOf[js.Any])
     if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
-    if (primaryButtonIndex != null) __obj.updateDynamic("primaryButtonIndex")(primaryButtonIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryButtonIndex)) __obj.updateDynamic("primaryButtonIndex")(primaryButtonIndex.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertOptions]
   }

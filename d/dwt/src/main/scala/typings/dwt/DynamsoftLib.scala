@@ -1,5 +1,7 @@
 package typings.dwt
 
+import typings.dwt.anon.BChrome
+import typings.dwt.anon.Ssl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +13,12 @@ trait DynamsoftLib extends js.Object {
     addEventListener  ajax  all  appendMessage  appendRichMessage  aryControlLoadImage  attachAddon  attachProperty
     base64  bio  cancelFrome  clearMessage  closeAll  closeProgress  colorStrToInt  config  css  currentStyle
     debug*/
-  var detect: AnonSsl
+  var detect: Ssl
   /*ignored
     detectButton  dialog  dialogShowStatus  dlgProgress  dlgRef  drawBoxBorder  drawImageWithHermite
     each  empty  endsWith
     */
-  var env: AnonBChrome
+  var env: BChrome
   def NewOCRReadPara(): OCRReadPara
   def NewOCRZone(): OCRZone
   def NewRedaction(): Redaction
@@ -43,8 +45,8 @@ object DynamsoftLib {
     NewOCRReadPara: () => OCRReadPara,
     NewOCRZone: () => OCRZone,
     NewRedaction: () => Redaction,
-    detect: AnonSsl,
-    env: AnonBChrome,
+    detect: Ssl,
+    env: BChrome,
     getScript: (String, Boolean, js.Function0[Unit]) => Unit,
     hideMask: () => Unit,
     showMask: () => Unit

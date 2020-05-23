@@ -1,12 +1,12 @@
 package typings.reactRnd.mod
 
-import typings.reactRnd.AnonBottom
+import typings.reactRnd.anon.Bottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait State extends js.Object {
-  var bounds: AnonBottom
+  var bounds: Bottom
   var maxHeight: js.UndefOr[Double | String] = js.undefined
   var maxWidth: js.UndefOr[Double | String] = js.undefined
   var original: Position
@@ -15,7 +15,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(
-    bounds: AnonBottom,
+    bounds: Bottom,
     original: Position,
     maxHeight: Double | String = null,
     maxWidth: Double | String = null

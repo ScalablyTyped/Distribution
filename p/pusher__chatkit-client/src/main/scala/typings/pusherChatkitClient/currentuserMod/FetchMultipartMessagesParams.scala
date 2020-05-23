@@ -18,13 +18,13 @@ object FetchMultipartMessagesParams {
   def apply(
     roomId: String,
     direction: older | newer = null,
-    initialId: Int | Double = null,
-    limit: Int | Double = null
+    initialId: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined
   ): FetchMultipartMessagesParams = {
     val __obj = js.Dynamic.literal(roomId = roomId.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (initialId != null) __obj.updateDynamic("initialId")(initialId.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialId)) __obj.updateDynamic("initialId")(initialId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchMultipartMessagesParams]
   }
 }

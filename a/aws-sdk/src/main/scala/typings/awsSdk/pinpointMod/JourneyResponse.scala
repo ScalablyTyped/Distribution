@@ -78,7 +78,7 @@ object JourneyResponse {
     CreationDate: string = null,
     LastModifiedDate: string = null,
     Limits: JourneyLimits = null,
-    LocalTime: js.UndefOr[Boolean] = js.undefined,
+    LocalTime: js.UndefOr[boolean] = js.undefined,
     QuietTime: QuietTime = null,
     RefreshFrequency: string = null,
     Schedule: JourneySchedule = null,
@@ -92,7 +92,7 @@ object JourneyResponse {
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
     if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
-    if (!js.isUndefined(LocalTime)) __obj.updateDynamic("LocalTime")(LocalTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(LocalTime)) __obj.updateDynamic("LocalTime")(LocalTime.get.asInstanceOf[js.Any])
     if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime.asInstanceOf[js.Any])
     if (RefreshFrequency != null) __obj.updateDynamic("RefreshFrequency")(RefreshFrequency.asInstanceOf[js.Any])
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])

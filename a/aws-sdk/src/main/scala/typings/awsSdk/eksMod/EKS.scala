@@ -1,7 +1,7 @@
 package typings.awsSdk.eksMod
 
-import typings.awsSdk.DescribeClusterRequestwai
-import typings.awsSdk.DescribeNodegroupRequestw
+import typings.awsSdk.anon.DescribeClusterRequestwai
+import typings.awsSdk.anon.DescribeNodegroupRequestw
 import typings.awsSdk.awsSdkStrings.clusterActive
 import typings.awsSdk.awsSdkStrings.clusterDeleted
 import typings.awsSdk.awsSdkStrings.nodegroupActive

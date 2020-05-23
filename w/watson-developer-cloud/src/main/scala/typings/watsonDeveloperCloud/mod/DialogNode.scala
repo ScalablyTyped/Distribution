@@ -84,7 +84,7 @@ object DialogNode {
     if (digress_in != null) __obj.updateDynamic("digress_in")(digress_in.asInstanceOf[js.Any])
     if (digress_out != null) __obj.updateDynamic("digress_out")(digress_out.asInstanceOf[js.Any])
     if (digress_out_slots != null) __obj.updateDynamic("digress_out_slots")(digress_out_slots.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (event_name != null) __obj.updateDynamic("event_name")(event_name.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (next_step != null) __obj.updateDynamic("next_step")(next_step.asInstanceOf[js.Any])

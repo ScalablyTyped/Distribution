@@ -30,18 +30,18 @@ trait GravityWellConfig extends js.Object {
 object GravityWellConfig {
   @scala.inline
   def apply(
-    epsilon: Int | Double = null,
-    gravity: Int | Double = null,
-    power: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    epsilon: js.UndefOr[Double] = js.undefined,
+    gravity: js.UndefOr[Double] = js.undefined,
+    power: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): GravityWellConfig = {
     val __obj = js.Dynamic.literal()
-    if (epsilon != null) __obj.updateDynamic("epsilon")(epsilon.asInstanceOf[js.Any])
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (power != null) __obj.updateDynamic("power")(power.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(epsilon)) __obj.updateDynamic("epsilon")(epsilon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gravity)) __obj.updateDynamic("gravity")(gravity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(power)) __obj.updateDynamic("power")(power.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GravityWellConfig]
   }
 }

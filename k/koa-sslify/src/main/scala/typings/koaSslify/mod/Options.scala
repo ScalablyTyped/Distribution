@@ -43,24 +43,24 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    disallowStatus: Int | Double = null,
+    disallowStatus: js.UndefOr[Double] = js.undefined,
     hostname: String = null,
     ignoreUrl: js.UndefOr[Boolean] = js.undefined,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     redirectMethods: js.Array[String] = null,
     resolver: /* ctx */ Context => Boolean = null,
     skipDefaultPort: js.UndefOr[Boolean] = js.undefined,
     temporary: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (disallowStatus != null) __obj.updateDynamic("disallowStatus")(disallowStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(disallowStatus)) __obj.updateDynamic("disallowStatus")(disallowStatus.get.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (redirectMethods != null) __obj.updateDynamic("redirectMethods")(redirectMethods.asInstanceOf[js.Any])
     if (resolver != null) __obj.updateDynamic("resolver")(js.Any.fromFunction1(resolver))
-    if (!js.isUndefined(skipDefaultPort)) __obj.updateDynamic("skipDefaultPort")(skipDefaultPort.asInstanceOf[js.Any])
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipDefaultPort)) __obj.updateDynamic("skipDefaultPort")(skipDefaultPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

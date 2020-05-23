@@ -33,7 +33,7 @@ object DescribeObjectsInput {
     marker: String = null
   ): DescribeObjectsInput = {
     val __obj = js.Dynamic.literal(objectIds = objectIds.asInstanceOf[js.Any], pipelineId = pipelineId.asInstanceOf[js.Any])
-    if (!js.isUndefined(evaluateExpressions)) __obj.updateDynamic("evaluateExpressions")(evaluateExpressions.asInstanceOf[js.Any])
+    if (!js.isUndefined(evaluateExpressions)) __obj.updateDynamic("evaluateExpressions")(evaluateExpressions.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeObjectsInput]
   }

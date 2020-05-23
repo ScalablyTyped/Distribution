@@ -28,7 +28,7 @@ trait IonSelect extends js.Object {
     */
   var interface: js.UndefOr[SelectInterface] = js.undefined
   /**
-    * Any additional options that the `alert`, `action-sheet` or `popover` interface can take. See the [AlertController API docs](../../alert/AlertController/#create), the [ActionSheetController API docs](../../action-sheet/ActionSheetController/#create) and the [PopoverController API docs](../../popover/PopoverController/#create) for the create options for each interface.
+    * Any additional options that the `alert`, `action-sheet` or `popover` interface can take. See the [ion-alert docs](../alert), the [ion-action-sheet docs](../action-sheet) and the [ion-popover docs](../popover) for the create options for each interface.  Note: `interfaceOptions` will not override `inputs` or `buttons` with the `alert` interface.
     */
   var interfaceOptions: js.UndefOr[js.Any] = js.undefined
   /**
@@ -81,7 +81,7 @@ object IonSelect {
   @scala.inline
   def apply(
     cancelText: String = null,
-    compareWith: String | SelectCompareFn = null,
+    compareWith: js.UndefOr[Null | String | SelectCompareFn] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     interface: SelectInterface = null,
     interfaceOptions: js.Any = null,
@@ -93,27 +93,27 @@ object IonSelect {
     onIonCancel: /* event */ CustomEvent[Unit] => Unit = null,
     onIonChange: /* event */ CustomEvent[SelectChangeEventDetail] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
-    placeholder: String = null,
-    selectedText: String = null,
-    value: js.Any = null
+    placeholder: js.UndefOr[Null | String] = js.undefined,
+    selectedText: js.UndefOr[Null | String] = js.undefined,
+    value: js.UndefOr[Null | js.Any] = js.undefined
   ): IonSelect = {
     val __obj = js.Dynamic.literal()
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
-    if (compareWith != null) __obj.updateDynamic("compareWith")(compareWith.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(compareWith)) __obj.updateDynamic("compareWith")(compareWith.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (interface != null) __obj.updateDynamic("interface")(interface.asInstanceOf[js.Any])
     if (interfaceOptions != null) __obj.updateDynamic("interfaceOptions")(interfaceOptions.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
     if (onIonCancel != null) __obj.updateDynamic("onIonCancel")(js.Any.fromFunction1(onIonCancel))
     if (onIonChange != null) __obj.updateDynamic("onIonChange")(js.Any.fromFunction1(onIonChange))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (selectedText != null) __obj.updateDynamic("selectedText")(selectedText.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeholder)) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedText)) __obj.updateDynamic("selectedText")(selectedText.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSelect]
   }
 }

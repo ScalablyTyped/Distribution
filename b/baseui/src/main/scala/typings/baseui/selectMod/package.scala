@@ -18,7 +18,7 @@ package object selectMod {
     /* options */ typings.baseui.selectMod.Value, 
     /* filterValue */ java.lang.String, 
     /* excludeOptions */ js.UndefOr[typings.baseui.selectMod.Value], 
-    /* newProps */ js.UndefOr[typings.baseui.AnonFilterOption], 
+    /* newProps */ js.UndefOr[typings.baseui.anon.FilterOption], 
     typings.baseui.selectMod.Value
   ]
 }

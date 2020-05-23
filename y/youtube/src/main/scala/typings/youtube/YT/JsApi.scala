@@ -14,13 +14,13 @@ trait JsApi extends js.Object
 
 object JsApi {
   /**
-  		 * JavaScript API will be disabled.
-  		 */
+    * JavaScript API will be disabled.
+    */
   @scala.inline
   def Disable: `0` = 0.asInstanceOf[`0`]
   /**
-  		 * JavaScript API will be enabled.
-  		 */
+    * JavaScript API will be enabled.
+    */
   @scala.inline
   def Enable: `1` = 1.asInstanceOf[`1`]
 }

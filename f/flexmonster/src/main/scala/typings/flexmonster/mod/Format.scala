@@ -29,13 +29,13 @@ object Format {
     beautifyFloatingPoint: js.UndefOr[Boolean] = js.undefined,
     currencySymbol: String = null,
     currencySymbolAlign: String = null,
-    decimalPlaces: Int | Double = null,
+    decimalPlaces: js.UndefOr[Double] = js.undefined,
     decimalSeparator: String = null,
     divideByZeroValue: String = null,
     infinityValue: String = null,
     isPercent: js.UndefOr[Boolean] = js.undefined,
-    maxDecimalPlaces: Int | Double = null,
-    maxSymbols: Int | Double = null,
+    maxDecimalPlaces: js.UndefOr[Double] = js.undefined,
+    maxSymbols: js.UndefOr[Double] = js.undefined,
     name: String = null,
     negativeCurrencyFormat: String = null,
     nullValue: String = null,
@@ -44,16 +44,16 @@ object Format {
     thousandsSeparator: String = null
   ): Format = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(beautifyFloatingPoint)) __obj.updateDynamic("beautifyFloatingPoint")(beautifyFloatingPoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(beautifyFloatingPoint)) __obj.updateDynamic("beautifyFloatingPoint")(beautifyFloatingPoint.get.asInstanceOf[js.Any])
     if (currencySymbol != null) __obj.updateDynamic("currencySymbol")(currencySymbol.asInstanceOf[js.Any])
     if (currencySymbolAlign != null) __obj.updateDynamic("currencySymbolAlign")(currencySymbolAlign.asInstanceOf[js.Any])
-    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimalPlaces)) __obj.updateDynamic("decimalPlaces")(decimalPlaces.get.asInstanceOf[js.Any])
     if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
     if (divideByZeroValue != null) __obj.updateDynamic("divideByZeroValue")(divideByZeroValue.asInstanceOf[js.Any])
     if (infinityValue != null) __obj.updateDynamic("infinityValue")(infinityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPercent)) __obj.updateDynamic("isPercent")(isPercent.asInstanceOf[js.Any])
-    if (maxDecimalPlaces != null) __obj.updateDynamic("maxDecimalPlaces")(maxDecimalPlaces.asInstanceOf[js.Any])
-    if (maxSymbols != null) __obj.updateDynamic("maxSymbols")(maxSymbols.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPercent)) __obj.updateDynamic("isPercent")(isPercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDecimalPlaces)) __obj.updateDynamic("maxDecimalPlaces")(maxDecimalPlaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSymbols)) __obj.updateDynamic("maxSymbols")(maxSymbols.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (negativeCurrencyFormat != null) __obj.updateDynamic("negativeCurrencyFormat")(negativeCurrencyFormat.asInstanceOf[js.Any])
     if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])

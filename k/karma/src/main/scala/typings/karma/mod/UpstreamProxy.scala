@@ -29,11 +29,16 @@ trait UpstreamProxy extends js.Object {
 
 object UpstreamProxy {
   @scala.inline
-  def apply(hostname: String = null, path: String = null, port: Int | Double = null, protocol: String = null): UpstreamProxy = {
+  def apply(
+    hostname: String = null,
+    path: String = null,
+    port: js.UndefOr[Double] = js.undefined,
+    protocol: String = null
+  ): UpstreamProxy = {
     val __obj = js.Dynamic.literal()
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpstreamProxy]
   }

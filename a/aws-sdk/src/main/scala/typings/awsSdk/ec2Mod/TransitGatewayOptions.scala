@@ -47,7 +47,7 @@ trait TransitGatewayOptions extends js.Object {
 object TransitGatewayOptions {
   @scala.inline
   def apply(
-    AmazonSideAsn: Int | scala.Double = null,
+    AmazonSideAsn: js.UndefOr[Long] = js.undefined,
     AssociationDefaultRouteTableId: String = null,
     AutoAcceptSharedAttachments: AutoAcceptSharedAttachmentsValue = null,
     DefaultRouteTableAssociation: DefaultRouteTableAssociationValue = null,
@@ -58,7 +58,7 @@ object TransitGatewayOptions {
     VpnEcmpSupport: VpnEcmpSupportValue = null
   ): TransitGatewayOptions = {
     val __obj = js.Dynamic.literal()
-    if (AmazonSideAsn != null) __obj.updateDynamic("AmazonSideAsn")(AmazonSideAsn.asInstanceOf[js.Any])
+    if (!js.isUndefined(AmazonSideAsn)) __obj.updateDynamic("AmazonSideAsn")(AmazonSideAsn.get.asInstanceOf[js.Any])
     if (AssociationDefaultRouteTableId != null) __obj.updateDynamic("AssociationDefaultRouteTableId")(AssociationDefaultRouteTableId.asInstanceOf[js.Any])
     if (AutoAcceptSharedAttachments != null) __obj.updateDynamic("AutoAcceptSharedAttachments")(AutoAcceptSharedAttachments.asInstanceOf[js.Any])
     if (DefaultRouteTableAssociation != null) __obj.updateDynamic("DefaultRouteTableAssociation")(DefaultRouteTableAssociation.asInstanceOf[js.Any])

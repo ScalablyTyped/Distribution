@@ -39,15 +39,15 @@ object SearchRuleOptions {
   def apply(
     anchoring: String = null,
     context: String = null,
-    hitsPerPage: Int | Double = null,
-    page: Int | Double = null,
+    hitsPerPage: js.UndefOr[Double] = js.undefined,
+    page: js.UndefOr[Double] = js.undefined,
     query: String = null
   ): SearchRuleOptions = {
     val __obj = js.Dynamic.literal()
     if (anchoring != null) __obj.updateDynamic("anchoring")(anchoring.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitsPerPage)) __obj.updateDynamic("hitsPerPage")(hitsPerPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchRuleOptions]
   }

@@ -1,6 +1,7 @@
 
 # Scala.js typings for co-body
 
+Typings are for version 5.1
 
 ## Library description:
 request body parsing for co

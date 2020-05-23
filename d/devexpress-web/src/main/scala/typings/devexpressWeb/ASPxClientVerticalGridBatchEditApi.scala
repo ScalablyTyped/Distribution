@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Provides members related to Batch Edit Mode
   */
-@JSGlobal("ASPxClientVerticalGridBatchEditApi")
 @js.native
-class ASPxClientVerticalGridBatchEditApi () extends js.Object {
+trait ASPxClientVerticalGridBatchEditApi extends js.Object {
   /**
     * Adds a new record when ASPxVerticalGrid is in Batch Edit mode.
     */

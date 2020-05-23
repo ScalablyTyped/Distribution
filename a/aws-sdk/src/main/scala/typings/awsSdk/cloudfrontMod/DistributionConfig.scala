@@ -103,7 +103,7 @@ object DistributionConfig {
     if (CustomErrorResponses != null) __obj.updateDynamic("CustomErrorResponses")(CustomErrorResponses.asInstanceOf[js.Any])
     if (DefaultRootObject != null) __obj.updateDynamic("DefaultRootObject")(DefaultRootObject.asInstanceOf[js.Any])
     if (HttpVersion != null) __obj.updateDynamic("HttpVersion")(HttpVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsIPV6Enabled)) __obj.updateDynamic("IsIPV6Enabled")(IsIPV6Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsIPV6Enabled)) __obj.updateDynamic("IsIPV6Enabled")(IsIPV6Enabled.get.asInstanceOf[js.Any])
     if (Logging != null) __obj.updateDynamic("Logging")(Logging.asInstanceOf[js.Any])
     if (OriginGroups != null) __obj.updateDynamic("OriginGroups")(OriginGroups.asInstanceOf[js.Any])
     if (PriceClass != null) __obj.updateDynamic("PriceClass")(PriceClass.asInstanceOf[js.Any])

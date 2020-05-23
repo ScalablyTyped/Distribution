@@ -28,7 +28,7 @@ object WindowLoadSettings {
   ): WindowLoadSettings = {
     val __obj = js.Dynamic.literal(appVersion = appVersion.asInstanceOf[js.Any], atomHome = atomHome.asInstanceOf[js.Any], devMode = devMode.asInstanceOf[js.Any], resourcePath = resourcePath.asInstanceOf[js.Any], safeMode = safeMode.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(profileStartup)) __obj.updateDynamic("profileStartup")(profileStartup.asInstanceOf[js.Any])
+    if (!js.isUndefined(profileStartup)) __obj.updateDynamic("profileStartup")(profileStartup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowLoadSettings]
   }
 }

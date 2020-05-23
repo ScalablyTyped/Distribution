@@ -20,30 +20,6 @@ object polarGridHelperMod extends js.Object {
       radials: Double,
       circles: Double,
       divisions: Double,
-      color1: js.UndefOr[scala.Nothing],
-      color2: String
-    ) = this()
-    def this(
-      radius: Double,
-      radials: Double,
-      circles: Double,
-      divisions: Double,
-      color1: js.UndefOr[scala.Nothing],
-      color2: Double
-    ) = this()
-    def this(
-      radius: Double,
-      radials: Double,
-      circles: Double,
-      divisions: Double,
-      color1: js.UndefOr[scala.Nothing],
-      color2: Color
-    ) = this()
-    def this(
-      radius: Double,
-      radials: Double,
-      circles: Double,
-      divisions: Double,
       color1: String,
       color2: String
     ) = this()

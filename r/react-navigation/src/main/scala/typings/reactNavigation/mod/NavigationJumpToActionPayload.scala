@@ -15,7 +15,7 @@ object NavigationJumpToActionPayload {
   def apply(routeName: String, key: String = null, preserveFocus: js.UndefOr[Boolean] = js.undefined): NavigationJumpToActionPayload = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveFocus)) __obj.updateDynamic("preserveFocus")(preserveFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveFocus)) __obj.updateDynamic("preserveFocus")(preserveFocus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationJumpToActionPayload]
   }
 }

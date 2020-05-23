@@ -18,10 +18,10 @@ trait DisassociateResourceSharePermissionResponse extends js.Object {
 
 object DisassociateResourceSharePermissionResponse {
   @scala.inline
-  def apply(clientToken: String = null, returnValue: js.UndefOr[scala.Boolean] = js.undefined): DisassociateResourceSharePermissionResponse = {
+  def apply(clientToken: String = null, returnValue: js.UndefOr[Boolean] = js.undefined): DisassociateResourceSharePermissionResponse = {
     val __obj = js.Dynamic.literal()
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnValue)) __obj.updateDynamic("returnValue")(returnValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnValue)) __obj.updateDynamic("returnValue")(returnValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateResourceSharePermissionResponse]
   }
 }

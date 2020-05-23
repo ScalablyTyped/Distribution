@@ -37,7 +37,7 @@ object ListBackupsInput {
   def apply(
     BackupType: BackupTypeFilter = null,
     ExclusiveStartBackupArn: BackupArn = null,
-    Limit: Int | scala.Double = null,
+    Limit: js.UndefOr[BackupsInputLimit] = js.undefined,
     TableName: TableName = null,
     TimeRangeLowerBound: TimeRangeLowerBound = null,
     TimeRangeUpperBound: TimeRangeUpperBound = null
@@ -45,7 +45,7 @@ object ListBackupsInput {
     val __obj = js.Dynamic.literal()
     if (BackupType != null) __obj.updateDynamic("BackupType")(BackupType.asInstanceOf[js.Any])
     if (ExclusiveStartBackupArn != null) __obj.updateDynamic("ExclusiveStartBackupArn")(ExclusiveStartBackupArn.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
     if (TimeRangeLowerBound != null) __obj.updateDynamic("TimeRangeLowerBound")(TimeRangeLowerBound.asInstanceOf[js.Any])
     if (TimeRangeUpperBound != null) __obj.updateDynamic("TimeRangeUpperBound")(TimeRangeUpperBound.asInstanceOf[js.Any])

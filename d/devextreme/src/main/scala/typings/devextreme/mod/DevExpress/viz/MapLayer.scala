@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait MapLayer extends js.Object {
   /** @name MapLayer.elementType */
-  var elementType: String
+  var elementType: js.UndefOr[String] = js.undefined
   /** @name MapLayer.index */
-  var index: Double
+  var index: js.UndefOr[Double] = js.undefined
   /** @name MapLayer.name */
-  var name: String
+  var name: js.UndefOr[String] = js.undefined
   /** @name MapLayer.type */
-  var `type`: String
+  var `type`: js.UndefOr[String] = js.undefined
   /** @name MapLayer.clearSelection() */
   def clearSelection(): Unit
   /** @name MapLayer.getDataSource() */
@@ -26,15 +26,18 @@ object MapLayer {
   @scala.inline
   def apply(
     clearSelection: () => Unit,
-    elementType: String,
     getDataSource: () => DataSource,
     getElements: () => js.Array[MapLayerElement],
-    index: Double,
-    name: String,
-    `type`: String
+    elementType: String = null,
+    index: js.UndefOr[Double] = js.undefined,
+    name: String = null,
+    `type`: String = null
   ): MapLayer = {
-    val __obj = js.Dynamic.literal(clearSelection = js.Any.fromFunction0(clearSelection), elementType = elementType.asInstanceOf[js.Any], getDataSource = js.Any.fromFunction0(getDataSource), getElements = js.Any.fromFunction0(getElements), index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clearSelection = js.Any.fromFunction0(clearSelection), getDataSource = js.Any.fromFunction0(getDataSource), getElements = js.Any.fromFunction0(getElements))
+    if (elementType != null) __obj.updateDynamic("elementType")(elementType.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayer]
   }
 }

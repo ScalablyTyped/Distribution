@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.SPECOCC_NONE
-  * @type {number}
-  * @description No specular occlusion.
+  * No specular occlusion.
   */
 @JSImport("playcanvas", "SPECOCC_NONE")
 @js.native

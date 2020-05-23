@@ -1,7 +1,6 @@
 package typings.jupyterlabCsvviewerExtension
 
 import typings.jupyterlabCsvviewer.mod.CSVViewer
-import typings.jupyterlabCsvviewerExtension.jupyterlabCsvviewerExtensionBooleans.`true`
 import typings.jupyterlabDocregistry.mod.DocumentWidget
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IModel
 import typings.jupyterlabDocumentsearch.interfacesMod.IFiltersType
@@ -39,13 +38,6 @@ object searchproviderMod extends js.Object {
       */
     /* CompleteClass */
     override val isReadOnly: Boolean = js.native
-    /**
-      * Set to true if the widget under search is read-only, false
-      * if it is editable.  Will be used to determine whether to show
-      * the replace option.
-      */
-    @JSName("isReadOnly")
-    val isReadOnly_CSVSearchProvider: `true` = js.native
     /**
       * The same list of matches provided by the startQuery promise resoluton
       */

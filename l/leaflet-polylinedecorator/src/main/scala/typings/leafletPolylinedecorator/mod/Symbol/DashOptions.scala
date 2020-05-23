@@ -12,10 +12,10 @@ trait DashOptions extends js.Object {
 
 object DashOptions {
   @scala.inline
-  def apply(pathOptions: PathOptions = null, pixelSize: Int | Double = null): DashOptions = {
+  def apply(pathOptions: PathOptions = null, pixelSize: js.UndefOr[Double] = js.undefined): DashOptions = {
     val __obj = js.Dynamic.literal()
     if (pathOptions != null) __obj.updateDynamic("pathOptions")(pathOptions.asInstanceOf[js.Any])
-    if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelSize)) __obj.updateDynamic("pixelSize")(pixelSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashOptions]
   }
 }

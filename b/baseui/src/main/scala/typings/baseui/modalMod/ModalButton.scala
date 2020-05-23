@@ -1,6 +1,6 @@
 package typings.baseui.modalMod
 
-import typings.baseui.ButtonPropsautoFocusboole
+import typings.baseui.anon.ButtonPropsautoFocusboole
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

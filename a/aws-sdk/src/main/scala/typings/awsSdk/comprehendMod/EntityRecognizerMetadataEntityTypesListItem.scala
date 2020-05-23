@@ -24,12 +24,12 @@ object EntityRecognizerMetadataEntityTypesListItem {
   @scala.inline
   def apply(
     EvaluationMetrics: EntityTypesEvaluationMetrics = null,
-    NumberOfTrainMentions: Int | scala.Double = null,
+    NumberOfTrainMentions: js.UndefOr[Integer] = js.undefined,
     Type: AnyLengthString = null
   ): EntityRecognizerMetadataEntityTypesListItem = {
     val __obj = js.Dynamic.literal()
     if (EvaluationMetrics != null) __obj.updateDynamic("EvaluationMetrics")(EvaluationMetrics.asInstanceOf[js.Any])
-    if (NumberOfTrainMentions != null) __obj.updateDynamic("NumberOfTrainMentions")(NumberOfTrainMentions.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfTrainMentions)) __obj.updateDynamic("NumberOfTrainMentions")(NumberOfTrainMentions.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityRecognizerMetadataEntityTypesListItem]
   }

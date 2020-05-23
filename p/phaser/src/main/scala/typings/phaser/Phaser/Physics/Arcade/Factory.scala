@@ -16,14 +16,8 @@ import scala.scalajs.js.annotation._
   * The Arcade Physics Factory allows you to easily create Arcade Physics enabled Game Objects.
   * Objects that are created by this Factory are automatically added to the physics world.
   */
-@JSGlobal("Phaser.Physics.Arcade.Factory")
 @js.native
-class Factory protected () extends js.Object {
-  /**
-    * 
-    * @param world The Arcade Physics World instance.
-    */
-  def this(world: World) = this()
+trait Factory extends js.Object {
   /**
     * A reference to the Scene this Arcade Physics instance belongs to.
     */

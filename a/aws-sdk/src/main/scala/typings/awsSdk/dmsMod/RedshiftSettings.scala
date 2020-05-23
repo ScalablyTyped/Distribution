@@ -111,58 +111,58 @@ trait RedshiftSettings extends js.Object {
 object RedshiftSettings {
   @scala.inline
   def apply(
-    AcceptAnyDate: js.UndefOr[scala.Boolean] = js.undefined,
+    AcceptAnyDate: js.UndefOr[BooleanOptional] = js.undefined,
     AfterConnectScript: String = null,
     BucketFolder: String = null,
     BucketName: String = null,
-    ConnectionTimeout: Int | Double = null,
+    ConnectionTimeout: js.UndefOr[IntegerOptional] = js.undefined,
     DatabaseName: String = null,
     DateFormat: String = null,
-    EmptyAsNull: js.UndefOr[scala.Boolean] = js.undefined,
+    EmptyAsNull: js.UndefOr[BooleanOptional] = js.undefined,
     EncryptionMode: EncryptionModeValue = null,
-    FileTransferUploadStreams: Int | Double = null,
-    LoadTimeout: Int | Double = null,
-    MaxFileSize: Int | Double = null,
+    FileTransferUploadStreams: js.UndefOr[IntegerOptional] = js.undefined,
+    LoadTimeout: js.UndefOr[IntegerOptional] = js.undefined,
+    MaxFileSize: js.UndefOr[IntegerOptional] = js.undefined,
     Password: SecretString = null,
-    Port: Int | Double = null,
-    RemoveQuotes: js.UndefOr[scala.Boolean] = js.undefined,
+    Port: js.UndefOr[IntegerOptional] = js.undefined,
+    RemoveQuotes: js.UndefOr[BooleanOptional] = js.undefined,
     ReplaceChars: String = null,
     ReplaceInvalidChars: String = null,
     ServerName: String = null,
     ServerSideEncryptionKmsKeyId: String = null,
     ServiceAccessRoleArn: String = null,
     TimeFormat: String = null,
-    TrimBlanks: js.UndefOr[scala.Boolean] = js.undefined,
-    TruncateColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    TrimBlanks: js.UndefOr[BooleanOptional] = js.undefined,
+    TruncateColumns: js.UndefOr[BooleanOptional] = js.undefined,
     Username: String = null,
-    WriteBufferSize: Int | Double = null
+    WriteBufferSize: js.UndefOr[IntegerOptional] = js.undefined
   ): RedshiftSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AcceptAnyDate)) __obj.updateDynamic("AcceptAnyDate")(AcceptAnyDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(AcceptAnyDate)) __obj.updateDynamic("AcceptAnyDate")(AcceptAnyDate.get.asInstanceOf[js.Any])
     if (AfterConnectScript != null) __obj.updateDynamic("AfterConnectScript")(AfterConnectScript.asInstanceOf[js.Any])
     if (BucketFolder != null) __obj.updateDynamic("BucketFolder")(BucketFolder.asInstanceOf[js.Any])
     if (BucketName != null) __obj.updateDynamic("BucketName")(BucketName.asInstanceOf[js.Any])
-    if (ConnectionTimeout != null) __obj.updateDynamic("ConnectionTimeout")(ConnectionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConnectionTimeout)) __obj.updateDynamic("ConnectionTimeout")(ConnectionTimeout.get.asInstanceOf[js.Any])
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
     if (DateFormat != null) __obj.updateDynamic("DateFormat")(DateFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(EmptyAsNull)) __obj.updateDynamic("EmptyAsNull")(EmptyAsNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(EmptyAsNull)) __obj.updateDynamic("EmptyAsNull")(EmptyAsNull.get.asInstanceOf[js.Any])
     if (EncryptionMode != null) __obj.updateDynamic("EncryptionMode")(EncryptionMode.asInstanceOf[js.Any])
-    if (FileTransferUploadStreams != null) __obj.updateDynamic("FileTransferUploadStreams")(FileTransferUploadStreams.asInstanceOf[js.Any])
-    if (LoadTimeout != null) __obj.updateDynamic("LoadTimeout")(LoadTimeout.asInstanceOf[js.Any])
-    if (MaxFileSize != null) __obj.updateDynamic("MaxFileSize")(MaxFileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(FileTransferUploadStreams)) __obj.updateDynamic("FileTransferUploadStreams")(FileTransferUploadStreams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(LoadTimeout)) __obj.updateDynamic("LoadTimeout")(LoadTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxFileSize)) __obj.updateDynamic("MaxFileSize")(MaxFileSize.get.asInstanceOf[js.Any])
     if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemoveQuotes)) __obj.updateDynamic("RemoveQuotes")(RemoveQuotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RemoveQuotes)) __obj.updateDynamic("RemoveQuotes")(RemoveQuotes.get.asInstanceOf[js.Any])
     if (ReplaceChars != null) __obj.updateDynamic("ReplaceChars")(ReplaceChars.asInstanceOf[js.Any])
     if (ReplaceInvalidChars != null) __obj.updateDynamic("ReplaceInvalidChars")(ReplaceInvalidChars.asInstanceOf[js.Any])
     if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])
     if (ServerSideEncryptionKmsKeyId != null) __obj.updateDynamic("ServerSideEncryptionKmsKeyId")(ServerSideEncryptionKmsKeyId.asInstanceOf[js.Any])
     if (ServiceAccessRoleArn != null) __obj.updateDynamic("ServiceAccessRoleArn")(ServiceAccessRoleArn.asInstanceOf[js.Any])
     if (TimeFormat != null) __obj.updateDynamic("TimeFormat")(TimeFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(TrimBlanks)) __obj.updateDynamic("TrimBlanks")(TrimBlanks.asInstanceOf[js.Any])
-    if (!js.isUndefined(TruncateColumns)) __obj.updateDynamic("TruncateColumns")(TruncateColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(TrimBlanks)) __obj.updateDynamic("TrimBlanks")(TrimBlanks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TruncateColumns)) __obj.updateDynamic("TruncateColumns")(TruncateColumns.get.asInstanceOf[js.Any])
     if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
-    if (WriteBufferSize != null) __obj.updateDynamic("WriteBufferSize")(WriteBufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(WriteBufferSize)) __obj.updateDynamic("WriteBufferSize")(WriteBufferSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftSettings]
   }
 }

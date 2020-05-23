@@ -1,15 +1,15 @@
 package typings.oracleOraclejet.ojdatagridMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonAccessibleActionableMode
-import typings.oracleOraclejet.AnonCell
-import typings.oracleOraclejet.AnonClassName
-import typings.oracleOraclejet.AnonColumn
-import typings.oracleOraclejet.AnonColumnEnd
-import typings.oracleOraclejet.AnonColumnIndex
-import typings.oracleOraclejet.AnonHorizontal
-import typings.oracleOraclejet.AnonMaxColumnCount
-import typings.oracleOraclejet.AnonReorder
+import typings.oracleOraclejet.anon.AccessibleActionableMode
+import typings.oracleOraclejet.anon.Cell
+import typings.oracleOraclejet.anon.ClassName
+import typings.oracleOraclejet.anon.Column
+import typings.oracleOraclejet.anon.ColumnEnd
+import typings.oracleOraclejet.anon.ColumnIndex
+import typings.oracleOraclejet.anon.Horizontal
+import typings.oracleOraclejet.anon.MaxColumnCount
+import typings.oracleOraclejet.anon.Reorder
 import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell
 import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.Selection
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
@@ -26,40 +26,40 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojdatagrid.ojDataGridSettableProperties<K, D>> */
 trait ojDataGridSettablePropertiesLenient[K, D]
   extends /* key */ StringDictionary[js.Any] {
-  var bandingInterval: js.UndefOr[AnonColumn] = js.undefined
-  var cell: js.UndefOr[AnonClassName[K, D]] = js.undefined
+  var bandingInterval: js.UndefOr[Column] = js.undefined
+  var cell: js.UndefOr[ClassName[K, D]] = js.undefined
   var currentCell: js.UndefOr[CurrentCell[K]] = js.undefined
   var data: js.UndefOr[DataProvider[K, D]] = js.undefined
-  var dnd: js.UndefOr[AnonReorder] = js.undefined
+  var dnd: js.UndefOr[Reorder] = js.undefined
   var editMode: js.UndefOr[none | cellNavigation | cellEdit] = js.undefined
-  var gridlines: js.UndefOr[AnonHorizontal] = js.undefined
-  var header: js.UndefOr[AnonColumnEnd[K, D]] = js.undefined
+  var gridlines: js.UndefOr[Horizontal] = js.undefined
+  var header: js.UndefOr[ColumnEnd[K, D]] = js.undefined
   var scrollPolicy: js.UndefOr[auto | loadMoreOnScroll | scroll] = js.undefined
-  var scrollPolicyOptions: js.UndefOr[AnonMaxColumnCount] = js.undefined
-  var scrollPosition: js.UndefOr[AnonColumnIndex[K]] = js.undefined
+  var scrollPolicyOptions: js.UndefOr[MaxColumnCount] = js.undefined
+  var scrollPosition: js.UndefOr[ColumnIndex[K]] = js.undefined
   var selection: js.UndefOr[js.Array[Selection[K]]] = js.undefined
-  var selectionMode: js.UndefOr[AnonCell] = js.undefined
-  var translations: js.UndefOr[AnonAccessibleActionableMode] = js.undefined
+  var selectionMode: js.UndefOr[Cell] = js.undefined
+  var translations: js.UndefOr[AccessibleActionableMode] = js.undefined
 }
 
 object ojDataGridSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    bandingInterval: AnonColumn = null,
-    cell: AnonClassName[K, D] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    bandingInterval: Column = null,
+    cell: ClassName[K, D] = null,
     currentCell: CurrentCell[K] = null,
     data: DataProvider[K, D] = null,
-    dnd: AnonReorder = null,
+    dnd: Reorder = null,
     editMode: none | cellNavigation | cellEdit = null,
-    gridlines: AnonHorizontal = null,
-    header: AnonColumnEnd[K, D] = null,
+    gridlines: Horizontal = null,
+    header: ColumnEnd[K, D] = null,
     scrollPolicy: auto | loadMoreOnScroll | scroll = null,
-    scrollPolicyOptions: AnonMaxColumnCount = null,
-    scrollPosition: AnonColumnIndex[K] = null,
+    scrollPolicyOptions: MaxColumnCount = null,
+    scrollPosition: ColumnIndex[K] = null,
     selection: js.Array[Selection[K]] = null,
-    selectionMode: AnonCell = null,
-    translations: AnonAccessibleActionableMode = null
+    selectionMode: Cell = null,
+    translations: AccessibleActionableMode = null
   ): ojDataGridSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

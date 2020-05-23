@@ -1,0 +1,132 @@
+package typings.openui5.global.sap.ui.model.analytics.odata4analytics
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("sap.ui.model.analytics.odata4analytics.EntityType")
+@js.native
+class EntityType protected ()
+  extends typings.openui5.sap.ui.model.analytics.odata4analytics.EntityType {
+  /**
+    * Create a representation of an OData entity type in the context of an analyticquery. Do not create
+    * your own instances.
+    * @param oModel DataJS object for the OData model containing this entity           type
+    * @param oSchema DataJS object for the schema containing this entity type
+    * @param oEntityType DataJS object for the entity type
+    */
+  def this(oModel: js.Any, oSchema: js.Any, oEntityType: js.Any) = this()
+  /**
+    * Find property by name
+    * @param sPropertyName Property name
+    * @returns The DataJS object representing the property or null if         it does not exist
+    */
+  /* CompleteClass */
+  override def findPropertyByName(sPropertyName: String): js.Any = js.native
+  /**
+    * Get the names of all properties with an associated hierarchy
+    * @returns List of all property names
+    */
+  /* CompleteClass */
+  override def getAllHierarchyPropertyNames(): js.Array[String] = js.native
+  /**
+    * Get names of properties that can be filtered, that is they can be used in$filter expressions
+    * @returns Array with names of properties that can be         filtered.
+    */
+  /* CompleteClass */
+  override def getFilterablePropertyNames(): js.Array[String] = js.native
+  /**
+    * Get heading of the property with specified name (identified by propertymetadata annotation
+    * sap:heading)
+    * @param sPropertyName Property name
+    * @returns The heading string
+    */
+  /* CompleteClass */
+  override def getHeadingOfProperty(sPropertyName: String): String = js.native
+  /**
+    * Get the hierarchy associated to a given property Based on the currentspecification, hierarchies are
+    * always recursive. TODO: Extend behaviorwhen leveled hierarchies get in scope
+    * @param sName Parameter name
+    * @returns The hierarchy         object or null if it does not exist
+    */
+  /* CompleteClass */
+  override def getHierarchy(sName: String): typings.openui5.sap.ui.model.analytics.odata4analytics.RecursiveHierarchy = js.native
+  /**
+    * Get key properties of this type
+    * @returns The list of key property names
+    */
+  /* CompleteClass */
+  override def getKeyProperties(): js.Array[String] = js.native
+  /**
+    * Get label of the property with specified name (identified by propertymetadata annotation sap:label)
+    * @param sPropertyName Property name
+    * @returns The label string
+    */
+  /* CompleteClass */
+  override def getLabelOfProperty(sPropertyName: String): String = js.native
+  /**
+    * Get all properties
+    * @returns Object with (JavaScript) properties, one for each (OData        entity type) property.
+    * These (JavaScript) properties hold the        DataJS object representing the property
+    */
+  /* CompleteClass */
+  override def getProperties(): js.Any = js.native
+  /**
+    * Get properties for which filter restrictions have been specified
+    * @returns Object with (JavaScript) properties, one for each         (OData entity type) property. The
+    * property value is from         odata4analytics.EntityType.propertyFilterRestriction and        
+    * indicates the filter restriction for this property.
+    */
+  /* CompleteClass */
+  override def getPropertiesWithFilterRestrictions(): js.Any = js.native
+  /**
+    * Get the fully qualified name for this entity type
+    * @returns The fully qualified name
+    */
+  /* CompleteClass */
+  override def getQName(): String = js.native
+  /**
+    * Get quick info of the property with specified name (identified by propertymetadata annotation
+    * sap:quickinfo)
+    * @param sPropertyName Property name
+    * @returns The quick info string
+    */
+  /* CompleteClass */
+  override def getQuickInfoOfProperty(sPropertyName: String): String = js.native
+  /**
+    * Get names of properties that must be filtered, that is they must appearin every $filter expression
+    * @returns Array with names of properties that must be         filtered.
+    */
+  /* CompleteClass */
+  override def getRequiredFilterPropertyNames(): js.Array[String] = js.native
+  /**
+    * Get names of properties that can be sorted, that is they can be used in$orderby expressions
+    * @returns Array with names of properties that can be         sorted.
+    */
+  /* CompleteClass */
+  override def getSortablePropertyNames(): js.Array[String] = js.native
+  /**
+    * Get the super-ordinate property related to the property with specifiedname (identified by property
+    * metadata annotation sap:super-ordinate)
+    * @param sPropertyName Property name
+    * @returns The DataJS object representing the super-ordinate         property or null if it does not
+    * exist
+    */
+  /* CompleteClass */
+  override def getSuperOrdinatePropertyOfProperty(sPropertyName: String): js.Any = js.native
+  /**
+    * Get the text property related to the property with specified name(identified by property metadata
+    * annotation sap:text)
+    * @param sPropertyName Property name
+    * @returns The DataJS object representing the text property or         null if it does not exist
+    */
+  /* CompleteClass */
+  override def getTextPropertyOfProperty(sPropertyName: String): js.Any = js.native
+  /**
+    * Get full description for this entity type
+    * @returns The DataJS object representing the entity type
+    */
+  /* CompleteClass */
+  override def getTypeDescription(): js.Any = js.native
+}
+

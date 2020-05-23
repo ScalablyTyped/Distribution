@@ -17,12 +17,11 @@ object CompletionRegistrationOptions {
     triggerCharacters: js.Array[String] = null,
     workDoneProgress: js.UndefOr[Boolean] = js.undefined
   ): CompletionRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(documentSelector = documentSelector.asInstanceOf[js.Any])
     if (allCommitCharacters != null) __obj.updateDynamic("allCommitCharacters")(allCommitCharacters.asInstanceOf[js.Any])
-    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider.get.asInstanceOf[js.Any])
     if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionRegistrationOptions]
   }
 }

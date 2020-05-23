@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +15,4 @@ trait backgroundColorBackground extends Background {
     */
   var color: Color_ = js.native
 }
-
-@JSGlobal("__esri.backgroundColorBackground")
-@js.native
-object backgroundColorBackground extends TopLevel[backgroundColorBackgroundConstructor]
 

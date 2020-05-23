@@ -39,7 +39,7 @@ trait UpdateBrokerResponse extends js.Object {
 object UpdateBrokerResponse {
   @scala.inline
   def apply(
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
+    AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined,
     BrokerId: string = null,
     Configuration: ConfigurationId = null,
     EngineVersion: string = null,
@@ -48,7 +48,7 @@ object UpdateBrokerResponse {
     SecurityGroups: listOfString = null
   ): UpdateBrokerResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
     if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId.asInstanceOf[js.Any])
     if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])

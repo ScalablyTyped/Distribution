@@ -1,6 +1,6 @@
 package typings.reactRelay.useBlockingPaginationFragmentMod
 
-import typings.reactRelay.AnonOnComplete
+import typings.reactRelay.anon.OnComplete
 import typings.reactRelay.useLoadMoreFunctionMod.LoadMoreFn
 import typings.reactRelay.useRefetchableFragmentNodeMod.Options
 import typings.reactRelay.useRefetchableFragmentNodeMod.RefetchFnDynamic
@@ -21,12 +21,12 @@ trait ReturnType[TQuery /* <: OperationType */, TKey, TFragmentData] extends js.
 
 object ReturnType {
   @scala.inline
-  def apply[TQuery /* <: OperationType */, TKey, TFragmentData](
+  def apply[TQuery, TKey, TFragmentData](
     data: TFragmentData,
     hasNext: Boolean,
     hasPrevious: Boolean,
-    loadNext: (/* count */ Double, /* options */ js.UndefOr[AnonOnComplete]) => Disposable,
-    loadPrevious: (/* count */ Double, /* options */ js.UndefOr[AnonOnComplete]) => Disposable,
+    loadNext: (/* count */ Double, /* options */ js.UndefOr[OnComplete]) => Disposable,
+    loadPrevious: (/* count */ Double, /* options */ js.UndefOr[OnComplete]) => Disposable,
     refetch: RefetchFnDynamic[TQuery, TKey, Options]
   ): ReturnType[TQuery, TKey, TFragmentData] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], loadNext = js.Any.fromFunction2(loadNext), loadPrevious = js.Any.fromFunction2(loadPrevious), refetch = refetch.asInstanceOf[js.Any])

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FittingDef
-  extends // allow other config settings
-/* prop */ StringDictionary[js.Any] {
+  extends /* prop */ StringDictionary[js.Any] {
   /** Static values passed to the fitting during construction */
   var config: js.UndefOr[js.Any] = js.undefined
   /** Dynamic values passed to the fitting during execution */
@@ -30,8 +29,7 @@ trait FittingDef
 object FittingDef {
   @scala.inline
   def apply(
-    StringDictionary: // allow other config settings
-  /* prop */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     config: js.Any = null,
     input: js.Any = null,
     name: String = null,

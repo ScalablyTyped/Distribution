@@ -121,7 +121,7 @@ object Instance {
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
     if (hardware != null) __obj.updateDynamic("hardware")(hardware.asInstanceOf[js.Any])
     if (ipv6Address != null) __obj.updateDynamic("ipv6Address")(ipv6Address.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStaticIp)) __obj.updateDynamic("isStaticIp")(isStaticIp.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStaticIp)) __obj.updateDynamic("isStaticIp")(isStaticIp.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (networking != null) __obj.updateDynamic("networking")(networking.asInstanceOf[js.Any])

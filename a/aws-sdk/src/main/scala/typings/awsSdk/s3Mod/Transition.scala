@@ -22,10 +22,14 @@ trait Transition extends js.Object {
 
 object Transition {
   @scala.inline
-  def apply(Date: Date = null, Days: Int | Double = null, StorageClass: TransitionStorageClass = null): Transition = {
+  def apply(
+    Date: Date = null,
+    Days: js.UndefOr[Days] = js.undefined,
+    StorageClass: TransitionStorageClass = null
+  ): Transition = {
     val __obj = js.Dynamic.literal()
     if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
-    if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
+    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transition]
   }

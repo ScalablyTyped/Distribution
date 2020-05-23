@@ -1,11 +1,10 @@
 package typings.oracleOraclejet.ojselectcomboboxMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonChildren
-import typings.oracleOraclejet.AnonClass
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonFilterFurther
-import typings.oracleOraclejet.AnonLabelValue
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.Children
+import typings.oracleOraclejet.anon.Class
+import typings.oracleOraclejet.anon.FilterFurther
+import typings.oracleOraclejet.anon.LabelValue
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.OptionContext
@@ -80,8 +79,8 @@ trait ojComboboxMany[K, D]
     ], 
     _
   ]) | Null = js.native
-  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonChildren], _]) | Null = js.native
-  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonClass], _]) | Null = js.native
+  var onOptionsKeysChanged: (js.Function1[/* event */ JetElementCustomEvent[Children], _]) | Null = js.native
+  var onPickerAttributesChanged: (js.Function1[/* event */ JetElementCustomEvent[Class], _]) | Null = js.native
   var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
   var onRawValueChanged: (js.Function1[/* event */ JetElementCustomEvent[String | Null], _]) | Null = js.native
   var onReadOnlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
@@ -92,21 +91,21 @@ trait ojComboboxMany[K, D]
   ]) | Null = js.native
   @JSName("onValueChanged")
   var onValueChanged_ojComboboxMany: (js.Function1[/* event */ JetElementCustomEvent[js.Array[_] | Null], _]) | Null = js.native
-  var onValueOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[AnonLabelValue] | Null], _]) | Null = js.native
+  var onValueOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[LabelValue] | Null], _]) | Null = js.native
   var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext, Element]) | Null] = js.native
   var options: (js.Array[
     typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
-  var optionsKeys: AnonChildren = js.native
-  var pickerAttributes: AnonClass = js.native
+  var optionsKeys: Children = js.native
+  var pickerAttributes: Class = js.native
   var placeholder: String | Null = js.native
   val rawValue: String | Null = js.native
   var readOnly: Boolean = js.native
   var required: Boolean = js.native
   @JSName("translations")
-  var translations_ojComboboxMany: AnonFilterFurther = js.native
+  var translations_ojComboboxMany: FilterFurther = js.native
   var validators: (js.Array[Validator[js.Array[_]] | RegisteredValidator]) | Null = js.native
-  var valueOptions: js.Array[AnonLabelValue] | Null = js.native
+  var valueOptions: js.Array[LabelValue] | Null = js.native
   @JSName("value")
   var value_ojComboboxMany: js.Array[_] | Null = js.native
   @JSName("addEventListener")
@@ -207,23 +206,23 @@ trait ojComboboxMany[K, D]
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildren], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Children], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_optionsKeysChanged(
     `type`: optionsKeysChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonChildren], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Children], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonClass], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pickerAttributesChanged(
     `type`: pickerAttributesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonClass], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Class], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -294,7 +293,7 @@ trait ojComboboxMany[K, D]
     `type`: valueOptionsChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.Array[AnonLabelValue] | Null], 
+      /* ev */ JetElementCustomEvent[js.Array[LabelValue] | Null], 
       _
     ]
   ): Unit = js.native
@@ -303,7 +302,7 @@ trait ojComboboxMany[K, D]
     `type`: valueOptionsChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.Array[AnonLabelValue] | Null], 
+      /* ev */ JetElementCustomEvent[js.Array[LabelValue] | Null], 
       _
     ],
     useCapture: Boolean
@@ -321,9 +320,9 @@ trait ojComboboxMany[K, D]
     typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup
   ]) | (DataProvider[K, D]) | Null = js.native
   @JSName("getProperty")
-  def getProperty_optionsKeys(property: optionsKeys): AnonChildren = js.native
+  def getProperty_optionsKeys(property: optionsKeys): Children = js.native
   @JSName("getProperty")
-  def getProperty_pickerAttributes(property: pickerAttributes): AnonClass = js.native
+  def getProperty_pickerAttributes(property: pickerAttributes): Class = js.native
   @JSName("getProperty")
   def getProperty_placeholder(property: placeholder): String | Null = js.native
   @JSName("getProperty")
@@ -335,7 +334,7 @@ trait ojComboboxMany[K, D]
   @JSName("getProperty")
   def getProperty_validators(property: validators): (js.Array[Validator[js.Array[_]] | RegisteredValidator]) | Null = js.native
   @JSName("getProperty")
-  def getProperty_valueOptions(property: valueOptions): js.Array[AnonLabelValue] | Null = js.native
+  def getProperty_valueOptions(property: valueOptions): js.Array[LabelValue] | Null = js.native
   def setProperties(properties: ojComboboxManySettablePropertiesLenient[K, D]): Unit = js.native
   @JSName("setProperty")
   def setProperty_asyncValidators(property: asyncValidators, value: js.Array[AsyncValidator[js.Array[_]]]): Unit = js.native
@@ -363,9 +362,9 @@ trait ojComboboxMany[K, D]
   @JSName("setProperty")
   def setProperty_options(property: options, value: DataProvider[K, D]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_optionsKeys(property: optionsKeys, value: AnonChildren): Unit = js.native
+  def setProperty_optionsKeys(property: optionsKeys, value: Children): Unit = js.native
   @JSName("setProperty")
-  def setProperty_pickerAttributes(property: pickerAttributes, value: AnonClass): Unit = js.native
+  def setProperty_pickerAttributes(property: pickerAttributes, value: Class): Unit = js.native
   @JSName("setProperty")
   def setProperty_placeholder(property: placeholder): Unit = js.native
   @JSName("setProperty")
@@ -379,7 +378,7 @@ trait ojComboboxMany[K, D]
   @JSName("setProperty")
   def setProperty_required(property: required, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonFilterFurther): Unit = js.native
+  def setProperty_translations(property: translations, value: FilterFurther): Unit = js.native
   @JSName("setProperty")
   def setProperty_validators(property: validators): Unit = js.native
   @JSName("setProperty")
@@ -391,13 +390,13 @@ trait ojComboboxMany[K, D]
   @JSName("setProperty")
   def setProperty_valueOptions(property: valueOptions): Unit = js.native
   @JSName("setProperty")
-  def setProperty_valueOptions(property: valueOptions, value: js.Array[AnonLabelValue]): Unit = js.native
+  def setProperty_valueOptions(property: valueOptions, value: js.Array[LabelValue]): Unit = js.native
 }
 
 @JSImport("@oracle/oraclejet/ojselectcombobox", "ojComboboxMany")
 @js.native
 object ojComboboxMany extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[typings.oracleOraclejet.anon.Element]
 }
 

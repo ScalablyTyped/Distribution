@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,14 @@ trait colorUtils extends js.Object {
   def getBackgroundColorTheme(view: MapView): js.Promise[String]
 }
 
-@JSGlobal("__esri.colorUtils")
-@js.native
-object colorUtils extends TopLevel[colorUtils]
+object colorUtils {
+  @scala.inline
+  def apply(
+    getBackgroundColor: MapView => js.Promise[Color_],
+    getBackgroundColorTheme: MapView => js.Promise[String]
+  ): colorUtils = {
+    val __obj = js.Dynamic.literal(getBackgroundColor = js.Any.fromFunction1(getBackgroundColor), getBackgroundColorTheme = js.Any.fromFunction1(getBackgroundColorTheme))
+    __obj.asInstanceOf[colorUtils]
+  }
+}
 

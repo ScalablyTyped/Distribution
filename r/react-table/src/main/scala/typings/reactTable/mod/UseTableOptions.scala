@@ -39,7 +39,7 @@ trait UseTableOptions[D /* <: js.Object */] extends js.Object {
 
 object UseTableOptions {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     columns: js.Array[Column[D]],
     data: js.Array[D],
     defaultColumn: Partial[Column[D]] = null,

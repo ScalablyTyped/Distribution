@@ -9,28 +9,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Pickers.FileOpenPicker")
-@js.native
-class FileOpenPicker () extends IFileOpenPicker {
-  /* CompleteClass */
-  override var commitButtonText: String = js.native
-  /* CompleteClass */
-  override var continuationData: ValueSet = js.native
-  /* CompleteClass */
-  override var fileTypeFilter: IVector[String] = js.native
-  /* CompleteClass */
-  override var settingsIdentifier: String = js.native
-  /* CompleteClass */
-  override var suggestedStartLocation: PickerLocationId = js.native
-  /* CompleteClass */
-  override var viewMode: PickerViewMode = js.native
-  /* CompleteClass */
-  override def pickMultipleFilesAndContinue(): Unit = js.native
-  /* CompleteClass */
-  override def pickMultipleFilesAsync(): IAsyncOperation[IVectorView[StorageFile]] = js.native
-  /* CompleteClass */
-  override def pickSingleFileAndContinue(): Unit = js.native
-  /* CompleteClass */
-  override def pickSingleFileAsync(): IAsyncOperation[StorageFile] = js.native
+trait FileOpenPicker extends IFileOpenPicker
+
+object FileOpenPicker {
+  @scala.inline
+  def apply(
+    commitButtonText: String,
+    continuationData: ValueSet,
+    fileTypeFilter: IVector[String],
+    pickMultipleFilesAndContinue: () => Unit,
+    pickMultipleFilesAsync: () => IAsyncOperation[IVectorView[StorageFile]],
+    pickSingleFileAndContinue: () => Unit,
+    pickSingleFileAsync: () => IAsyncOperation[StorageFile],
+    settingsIdentifier: String,
+    suggestedStartLocation: PickerLocationId,
+    viewMode: PickerViewMode
+  ): FileOpenPicker = {
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText.asInstanceOf[js.Any], continuationData = continuationData.asInstanceOf[js.Any], fileTypeFilter = fileTypeFilter.asInstanceOf[js.Any], pickMultipleFilesAndContinue = js.Any.fromFunction0(pickMultipleFilesAndContinue), pickMultipleFilesAsync = js.Any.fromFunction0(pickMultipleFilesAsync), pickSingleFileAndContinue = js.Any.fromFunction0(pickSingleFileAndContinue), pickSingleFileAsync = js.Any.fromFunction0(pickSingleFileAsync), settingsIdentifier = settingsIdentifier.asInstanceOf[js.Any], suggestedStartLocation = suggestedStartLocation.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileOpenPicker]
+  }
 }
 

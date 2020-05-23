@@ -1,6 +1,6 @@
 package typings.awsSdk.acmMod
 
-import typings.awsSdk.DescribeCertificateReques
+import typings.awsSdk.anon.DescribeCertificateReques
 import typings.awsSdk.awsSdkStrings.certificateValidated
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError

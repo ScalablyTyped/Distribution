@@ -24,17 +24,17 @@ object IAnimatedTileLayerOptions {
   def apply(
     mercator: js.Array[TileSource],
     autoPlay: js.UndefOr[Boolean] = js.undefined,
-    frameRate: Int | Double = null,
+    frameRate: js.UndefOr[Double] = js.undefined,
     loadingScreen: CustomOverlay = null,
-    maxTotalLoadTime: Int | Double = null,
+    maxTotalLoadTime: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): IAnimatedTileLayerOptions = {
     val __obj = js.Dynamic.literal(mercator = mercator.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameRate)) __obj.updateDynamic("frameRate")(frameRate.get.asInstanceOf[js.Any])
     if (loadingScreen != null) __obj.updateDynamic("loadingScreen")(loadingScreen.asInstanceOf[js.Any])
-    if (maxTotalLoadTime != null) __obj.updateDynamic("maxTotalLoadTime")(maxTotalLoadTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTotalLoadTime)) __obj.updateDynamic("maxTotalLoadTime")(maxTotalLoadTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimatedTileLayerOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.stremioAddonSdk.mod
 
-import typings.stremioAddonSdk.AnonDefaultVideo
+import typings.stremioAddonSdk.anon.DefaultVideo
 import typings.stremioAddonSdk.stremioAddonSdkStrings.landscape
 import typings.stremioAddonSdk.stremioAddonSdkStrings.regular
 import typings.stremioAddonSdk.stremioAddonSdkStrings.square
@@ -18,7 +18,7 @@ trait MetaDetail extends MetaPreview {
     * Human-readable that describes all the significant awards.
     */
   var awards: js.UndefOr[String] = js.undefined
-  var behaviourHints: js.UndefOr[AnonDefaultVideo] = js.undefined
+  var behaviourHints: js.UndefOr[DefaultVideo] = js.undefined
   /**
     * Array of members of the cast.
     *
@@ -96,7 +96,7 @@ object MetaDetail {
     `type`: ContentType,
     awards: String = null,
     background: String = null,
-    behaviourHints: AnonDefaultVideo = null,
+    behaviourHints: DefaultVideo = null,
     cast: js.Array[String] = null,
     country: String = null,
     description: String = null,

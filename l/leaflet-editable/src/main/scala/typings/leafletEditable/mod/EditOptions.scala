@@ -98,7 +98,7 @@ object EditOptions {
     if (polygonEditorClass != null) __obj.updateDynamic("polygonEditorClass")(polygonEditorClass.asInstanceOf[js.Any])
     if (polylineClass != null) __obj.updateDynamic("polylineClass")(polylineClass.asInstanceOf[js.Any])
     if (polylineEditorClass != null) __obj.updateDynamic("polylineEditorClass")(polylineEditorClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipMiddleMarkers)) __obj.updateDynamic("skipMiddleMarkers")(skipMiddleMarkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipMiddleMarkers)) __obj.updateDynamic("skipMiddleMarkers")(skipMiddleMarkers.get.asInstanceOf[js.Any])
     if (vertexMarkerClass != null) __obj.updateDynamic("vertexMarkerClass")(vertexMarkerClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditOptions]
   }

@@ -32,44 +32,44 @@ object IBalloonOptions {
   def apply(
     autoPan: js.UndefOr[Boolean] = js.undefined,
     autoPanCheckZoomRange: js.UndefOr[Boolean] = js.undefined,
-    autoPanDuration: Int | Double = null,
+    autoPanDuration: js.UndefOr[Double] = js.undefined,
     autoPanMargin: (js.Array[js.Array[Double] | Double]) | Double = null,
     autoPanUseMapMargin: js.UndefOr[Boolean] = js.undefined,
     closeButton: js.UndefOr[Boolean] = js.undefined,
     contentLayout: IClassConstructor[ILayout] | String = null,
     layout: IClassConstructor[ILayout] | String = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     offset: js.Array[Double] = null,
     pane: String = null,
     panelContentLayout: IClassConstructor[ILayout] | String = null,
-    panelMaxHeightRatio: Int | Double = null,
-    panelMaxMapArea: Int | Double = null,
+    panelMaxHeightRatio: js.UndefOr[Double] = js.undefined,
+    panelMaxMapArea: js.UndefOr[Double] = js.undefined,
     shadow: js.UndefOr[Boolean] = js.undefined,
     shadowLayout: IClassConstructor[ILayout] | String = null,
     shadowOffset: js.Array[Double] = null
   ): IBalloonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPanCheckZoomRange)) __obj.updateDynamic("autoPanCheckZoomRange")(autoPanCheckZoomRange.asInstanceOf[js.Any])
-    if (autoPanDuration != null) __obj.updateDynamic("autoPanDuration")(autoPanDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPanCheckZoomRange)) __obj.updateDynamic("autoPanCheckZoomRange")(autoPanCheckZoomRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPanDuration)) __obj.updateDynamic("autoPanDuration")(autoPanDuration.get.asInstanceOf[js.Any])
     if (autoPanMargin != null) __obj.updateDynamic("autoPanMargin")(autoPanMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPanUseMapMargin)) __obj.updateDynamic("autoPanUseMapMargin")(autoPanUseMapMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPanUseMapMargin)) __obj.updateDynamic("autoPanUseMapMargin")(autoPanUseMapMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
     if (contentLayout != null) __obj.updateDynamic("contentLayout")(contentLayout.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (panelContentLayout != null) __obj.updateDynamic("panelContentLayout")(panelContentLayout.asInstanceOf[js.Any])
-    if (panelMaxHeightRatio != null) __obj.updateDynamic("panelMaxHeightRatio")(panelMaxHeightRatio.asInstanceOf[js.Any])
-    if (panelMaxMapArea != null) __obj.updateDynamic("panelMaxMapArea")(panelMaxMapArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(panelMaxHeightRatio)) __obj.updateDynamic("panelMaxHeightRatio")(panelMaxHeightRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(panelMaxMapArea)) __obj.updateDynamic("panelMaxMapArea")(panelMaxMapArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
     if (shadowLayout != null) __obj.updateDynamic("shadowLayout")(shadowLayout.asInstanceOf[js.Any])
     if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBalloonOptions]

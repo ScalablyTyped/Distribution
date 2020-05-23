@@ -1,6 +1,7 @@
 package typings.reactNoSsr
 
 import typings.react.mod.Component
+import typings.reactNoSsr.anon.OnSSR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +11,8 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   class default ()
-    extends Component[AnonOnSSR, js.Object, js.Any]
+    extends Component[OnSSR, js.Object, js.Any]
   
-  type NoSSR = Component[AnonOnSSR, js.Object, js.Any]
+  type NoSSR = Component[OnSSR, js.Object, js.Any]
 }
 

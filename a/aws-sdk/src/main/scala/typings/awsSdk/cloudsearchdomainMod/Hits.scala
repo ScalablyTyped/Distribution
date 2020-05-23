@@ -28,15 +28,15 @@ object Hits {
   @scala.inline
   def apply(
     cursor: String = null,
-    found: Int | scala.Double = null,
+    found: js.UndefOr[Long] = js.undefined,
     hit: HitList = null,
-    start: Int | scala.Double = null
+    start: js.UndefOr[Long] = js.undefined
   ): Hits = {
     val __obj = js.Dynamic.literal()
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (found != null) __obj.updateDynamic("found")(found.asInstanceOf[js.Any])
+    if (!js.isUndefined(found)) __obj.updateDynamic("found")(found.get.asInstanceOf[js.Any])
     if (hit != null) __obj.updateDynamic("hit")(hit.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hits]
   }
 }

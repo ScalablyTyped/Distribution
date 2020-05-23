@@ -126,7 +126,7 @@ object Model {
     applyRangeStrokeToLabels: js.UndefOr[Boolean] = js.undefined,
     applyRangeStrokeToTicks: js.UndefOr[Boolean] = js.undefined,
     captionSettings: CaptionSettings = null,
-    comparativeMeasureValue: Int | Double = null,
+    comparativeMeasureValue: js.UndefOr[Double] = js.undefined,
     doubleClick: /* e */ DoubleClickEventArgs => Unit = null,
     drawCaption: /* e */ DrawCaptionEventArgs => Unit = null,
     drawCategory: /* e */ DrawCategoryEventArgs => Unit = null,
@@ -140,27 +140,27 @@ object Model {
     enableGroupSeparator: js.UndefOr[Boolean] = js.undefined,
     enableResizing: js.UndefOr[Boolean] = js.undefined,
     flowDirection: FlowDirection | String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     isResponsive: js.UndefOr[Boolean] = js.undefined,
     load: /* e */ LoadEventArgs => Unit = null,
     locale: String = null,
     orientation: Orientation | String = null,
-    qualitativeRangeSize: Int | Double = null,
+    qualitativeRangeSize: js.UndefOr[Double] = js.undefined,
     qualitativeRanges: js.Array[QualitativeRange] = null,
-    quantitativeScaleLength: Int | Double = null,
+    quantitativeScaleLength: js.UndefOr[Double] = js.undefined,
     quantitativeScaleSettings: QuantitativeScaleSettings = null,
     rightClick: /* e */ RightClickEventArgs => Unit = null,
     theme: String = null,
     tooltipSettings: TooltipSettings = null,
-    value: Int | Double = null,
-    width: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
-    if (!js.isUndefined(applyRangeStrokeToLabels)) __obj.updateDynamic("applyRangeStrokeToLabels")(applyRangeStrokeToLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyRangeStrokeToTicks)) __obj.updateDynamic("applyRangeStrokeToTicks")(applyRangeStrokeToTicks.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyRangeStrokeToLabels)) __obj.updateDynamic("applyRangeStrokeToLabels")(applyRangeStrokeToLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyRangeStrokeToTicks)) __obj.updateDynamic("applyRangeStrokeToTicks")(applyRangeStrokeToTicks.get.asInstanceOf[js.Any])
     if (captionSettings != null) __obj.updateDynamic("captionSettings")(captionSettings.asInstanceOf[js.Any])
-    if (comparativeMeasureValue != null) __obj.updateDynamic("comparativeMeasureValue")(comparativeMeasureValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(comparativeMeasureValue)) __obj.updateDynamic("comparativeMeasureValue")(comparativeMeasureValue.get.asInstanceOf[js.Any])
     if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
     if (drawCaption != null) __obj.updateDynamic("drawCaption")(js.Any.fromFunction1(drawCaption))
     if (drawCategory != null) __obj.updateDynamic("drawCategory")(js.Any.fromFunction1(drawCategory))
@@ -170,24 +170,24 @@ object Model {
     if (drawLabels != null) __obj.updateDynamic("drawLabels")(js.Any.fromFunction1(drawLabels))
     if (drawQualitativeRanges != null) __obj.updateDynamic("drawQualitativeRanges")(js.Any.fromFunction1(drawQualitativeRanges))
     if (drawTicks != null) __obj.updateDynamic("drawTicks")(js.Any.fromFunction1(drawTicks))
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResizing)) __obj.updateDynamic("enableResizing")(enableResizing.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResizing)) __obj.updateDynamic("enableResizing")(enableResizing.get.asInstanceOf[js.Any])
     if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (qualitativeRangeSize != null) __obj.updateDynamic("qualitativeRangeSize")(qualitativeRangeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(qualitativeRangeSize)) __obj.updateDynamic("qualitativeRangeSize")(qualitativeRangeSize.get.asInstanceOf[js.Any])
     if (qualitativeRanges != null) __obj.updateDynamic("qualitativeRanges")(qualitativeRanges.asInstanceOf[js.Any])
-    if (quantitativeScaleLength != null) __obj.updateDynamic("quantitativeScaleLength")(quantitativeScaleLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantitativeScaleLength)) __obj.updateDynamic("quantitativeScaleLength")(quantitativeScaleLength.get.asInstanceOf[js.Any])
     if (quantitativeScaleSettings != null) __obj.updateDynamic("quantitativeScaleSettings")(quantitativeScaleSettings.asInstanceOf[js.Any])
     if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltipSettings != null) __obj.updateDynamic("tooltipSettings")(tooltipSettings.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

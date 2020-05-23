@@ -1,6 +1,5 @@
 package typings.jsonRulesEngine.mod
 
-import typings.jsonRulesEngine.AnonFact
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +11,7 @@ trait ConditionProperties extends NestedCondition {
   var params: js.UndefOr[Record[String, _]] = js.undefined
   var path: js.UndefOr[String] = js.undefined
   var priority: js.UndefOr[Double] = js.undefined
-  var value: AnonFact | js.Any
+  var value: typings.jsonRulesEngine.anon.Fact | js.Any
 }
 
 object ConditionProperties {
@@ -20,15 +19,15 @@ object ConditionProperties {
   def apply(
     fact: String,
     operator: String,
-    value: AnonFact | js.Any,
+    value: typings.jsonRulesEngine.anon.Fact | js.Any,
     params: Record[String, _] = null,
     path: String = null,
-    priority: Int | Double = null
+    priority: js.UndefOr[Double] = js.undefined
   ): ConditionProperties = {
     val __obj = js.Dynamic.literal(fact = fact.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionProperties]
   }
 }

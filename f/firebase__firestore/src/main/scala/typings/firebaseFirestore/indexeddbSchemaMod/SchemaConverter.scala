@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "SchemaConverter")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "SchemaConverter")
 @js.native
 class SchemaConverter protected () extends SimpleDbSchemaConverter {
   def this(serializer: LocalSerializer) = this()

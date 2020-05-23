@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.CompositeDataState")
 @js.native
-class CompositeDataState () extends DataState {
+trait CompositeDataState extends DataState {
   /**
     * Returns an array of the properties set on the inner datastates
     */

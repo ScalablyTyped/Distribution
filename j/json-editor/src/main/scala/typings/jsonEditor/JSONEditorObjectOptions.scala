@@ -32,10 +32,10 @@ object JSONEditorObjectOptions {
     disable_properties: js.UndefOr[Boolean] = js.undefined
   ): JSONEditorObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_collapse)) __obj.updateDynamic("disable_collapse")(disable_collapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_edit_json)) __obj.updateDynamic("disable_edit_json")(disable_edit_json.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_properties)) __obj.updateDynamic("disable_properties")(disable_properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_collapse)) __obj.updateDynamic("disable_collapse")(disable_collapse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_edit_json)) __obj.updateDynamic("disable_edit_json")(disable_edit_json.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_properties)) __obj.updateDynamic("disable_properties")(disable_properties.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorObjectOptions]
   }
 }

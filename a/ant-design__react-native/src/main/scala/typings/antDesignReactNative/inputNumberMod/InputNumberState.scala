@@ -12,10 +12,14 @@ trait InputNumberState extends js.Object {
 
 object InputNumberState {
   @scala.inline
-  def apply(value: Double, focused: js.UndefOr[Boolean] = js.undefined, inputValue: Int | Double = null): InputNumberState = {
+  def apply(
+    value: Double,
+    focused: js.UndefOr[Boolean] = js.undefined,
+    inputValue: js.UndefOr[Double] = js.undefined
+  ): InputNumberState = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputValue)) __obj.updateDynamic("inputValue")(inputValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputNumberState]
   }
 }

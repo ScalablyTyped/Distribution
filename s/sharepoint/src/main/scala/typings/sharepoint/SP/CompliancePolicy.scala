@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object CompliancePolicy extends js.Object {
   @js.native
-  class SPContainerId () extends ClientObject {
+  trait SPContainerId extends ClientObject {
     def get_containerType(): ContentType = js.native
     def get_listId(): Guid = js.native
     def get_siteId(): Guid = js.native
@@ -34,7 +33,7 @@ object CompliancePolicy extends js.Object {
   sealed trait SPContainerType extends js.Object
   
   @js.native
-  class SPPolicyAssociation () extends ClientObject {
+  trait SPPolicyAssociation extends ClientObject {
     def get_allowOverride(): Boolean = js.native
     def get_comment(): String = js.native
     def get_defaultPolicyDefinitionConfigId(): js.Array[_] = js.native
@@ -66,7 +65,7 @@ object CompliancePolicy extends js.Object {
   }
   
   @js.native
-  class SPPolicyBinding () extends ClientObject {
+  trait SPPolicyBinding extends ClientObject {
     def get_identity(): js.Any = js.native
     def get_isExempt(): Boolean = js.native
     def get_mode(): js.Any = js.native
@@ -98,7 +97,7 @@ object CompliancePolicy extends js.Object {
   }
   
   @js.native
-  class SPPolicyDefinition () extends ClientObject {
+  trait SPPolicyDefinition extends ClientObject {
     def get_comment(): String = js.native
     def get_createdBy(): js.Any = js.native
     def get_defaultPolicyRuleConfigId(): js.Any = js.native
@@ -130,7 +129,7 @@ object CompliancePolicy extends js.Object {
   }
   
   @js.native
-  class SPPolicyRule () extends ClientObject {
+  trait SPPolicyRule extends ClientObject {
     def get_comment(): String = js.native
     def get_createdBy(): js.Any = js.native
     def get_description(): String = js.native
@@ -160,8 +159,7 @@ object CompliancePolicy extends js.Object {
   }
   
   @js.native
-  class SPPolicyStore protected () extends ClientObject {
-    def this(context: ClientRuntimeContext, web: Web) = this()
+  trait SPPolicyStore extends ClientObject {
     def deletePolicyAssociation(policyAssociationId: js.Any): Unit = js.native
     def deletePolicyBinding(policyBindingId: js.Any): Unit = js.native
     def deletePolicyDefinition(policyDefinitionId: js.Any): Unit = js.native
@@ -186,18 +184,8 @@ object CompliancePolicy extends js.Object {
   }
   
   @js.native
-  class SPPolicyStoreProxy protected () extends ClientObject {
-    def this(context: ClientRuntimeContext, web: Web) = this()
+  trait SPPolicyStoreProxy extends ClientObject {
     def get_policyStoreUrl(): String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object SPContainerId extends js.Object {
-    def create(context: ClientRuntimeContext, containerId: js.Any): SPContainerId = js.native
-    def createFromList(context: ClientRuntimeContext, list: List[_]): SPContainerId = js.native
-    def createFromSite(context: ClientRuntimeContext, site: Site): SPContainerId = js.native
-    def createFromWeb(context: ClientRuntimeContext, web: Web): SPContainerId = js.native
   }
   
   @js.native
@@ -213,26 +201,6 @@ object CompliancePolicy extends js.Object {
     @js.native
     sealed trait web extends SPContainerType
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SPContainerType with Double] = js.native
-    /* 2 */ @js.native
-    object list extends TopLevel[list with Double]
-    
-    /* 0 */ @js.native
-    object site extends TopLevel[site with Double]
-    
-    /* 1 */ @js.native
-    object web extends TopLevel[web with Double]
-    
-  }
-  
-  /* static members */
-  @js.native
-  object SPPolicyStore extends js.Object {
-    def createPolicyAssociation(context: ClientRuntimeContext): SPPolicyAssociation = js.native
-    def createPolicyBinding(context: ClientRuntimeContext): SPPolicyBinding = js.native
-    def createPolicyDefinition(context: ClientRuntimeContext): SPPolicyDefinition = js.native
-    def createPolicyRule(context: ClientRuntimeContext): SPPolicyRule = js.native
   }
   
 }

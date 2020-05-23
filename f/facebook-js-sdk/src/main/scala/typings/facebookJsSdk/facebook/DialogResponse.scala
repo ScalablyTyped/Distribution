@@ -11,9 +11,9 @@ trait DialogResponse extends js.Object {
 
 object DialogResponse {
   @scala.inline
-  def apply(error_code: Int | Double = null, error_message: String = null): DialogResponse = {
+  def apply(error_code: js.UndefOr[Double] = js.undefined, error_message: String = null): DialogResponse = {
     val __obj = js.Dynamic.literal()
-    if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_code)) __obj.updateDynamic("error_code")(error_code.get.asInstanceOf[js.Any])
     if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogResponse]
   }

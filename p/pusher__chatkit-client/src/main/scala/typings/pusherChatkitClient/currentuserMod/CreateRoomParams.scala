@@ -25,7 +25,7 @@ object CreateRoomParams {
     if (addUserIds != null) __obj.updateDynamic("addUserIds")(addUserIds.asInstanceOf[js.Any])
     if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRoomParams]
   }
 }

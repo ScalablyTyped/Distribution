@@ -1,10 +1,11 @@
 package typings.vegaTypings.scaleMod
 
+import typings.vegaTypings.axisMod._TickCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TimeIntervalStep extends js.Object {
+trait TimeIntervalStep extends _TickCount {
   var interval: TimeInterval
   var step: Double
 }

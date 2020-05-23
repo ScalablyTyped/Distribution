@@ -13,9 +13,9 @@ trait ICarouselSelect extends js.Object {
 
 object ICarouselSelect {
   @scala.inline
-  def apply(items: js.Array[IItem] = null): ICarouselSelect = {
+  def apply(items: js.UndefOr[Null | js.Array[IItem]] = js.undefined): ICarouselSelect = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICarouselSelect]
   }
 }

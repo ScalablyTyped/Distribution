@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.ContentType")
 @js.native
-class ContentType () extends ClientObject {
+trait ContentType extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_description(): String = js.native
   def get_displayFormTemplateName(): String = js.native

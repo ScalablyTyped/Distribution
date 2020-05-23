@@ -1,7 +1,7 @@
 package typings.uifabricUtilities.delayedRenderMod
 
 import typings.react.mod.Component
-import typings.uifabricUtilities.AnonDelay
+import typings.uifabricUtilities.anon.Delay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +22,6 @@ class DelayedRender protected ()
 @JSImport("@uifabric/utilities/lib/DelayedRender", "DelayedRender")
 @js.native
 object DelayedRender extends js.Object {
-  var defaultProps: AnonDelay = js.native
+  var defaultProps: Delay = js.native
 }
 

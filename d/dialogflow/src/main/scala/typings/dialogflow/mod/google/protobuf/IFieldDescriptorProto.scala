@@ -37,28 +37,32 @@ trait IFieldDescriptorProto extends js.Object {
 object IFieldDescriptorProto {
   @scala.inline
   def apply(
-    defaultValue: String = null,
-    extendee: String = null,
-    jsonName: String = null,
-    label: Label | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Label * / any */ String) = null,
-    name: String = null,
-    number: Int | Double = null,
-    oneofIndex: Int | Double = null,
-    options: IFieldOptions = null,
-    `type`: Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Type * / any */ String) = null,
-    typeName: String = null
+    defaultValue: js.UndefOr[Null | String] = js.undefined,
+    extendee: js.UndefOr[Null | String] = js.undefined,
+    jsonName: js.UndefOr[Null | String] = js.undefined,
+    label: js.UndefOr[
+      Null | Label | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Label * / any */ String)
+    ] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    number: js.UndefOr[Null | Double] = js.undefined,
+    oneofIndex: js.UndefOr[Null | Double] = js.undefined,
+    options: js.UndefOr[Null | IFieldOptions] = js.undefined,
+    `type`: js.UndefOr[
+      Null | Type | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldDescriptorProto.Type * / any */ String)
+    ] = js.undefined,
+    typeName: js.UndefOr[Null | String] = js.undefined
   ): IFieldDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (extendee != null) __obj.updateDynamic("extendee")(extendee.asInstanceOf[js.Any])
-    if (jsonName != null) __obj.updateDynamic("jsonName")(jsonName.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (oneofIndex != null) __obj.updateDynamic("oneofIndex")(oneofIndex.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (typeName != null) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendee)) __obj.updateDynamic("extendee")(extendee.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonName)) __obj.updateDynamic("jsonName")(jsonName.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneofIndex)) __obj.updateDynamic("oneofIndex")(oneofIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeName)) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldDescriptorProto]
   }
 }

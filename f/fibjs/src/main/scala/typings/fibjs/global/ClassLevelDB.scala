@@ -1,0 +1,16 @@
+package typings.fibjs.global
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** module Or Internal Object */
+/**
+  * @brief LevelDB 数据库对象
+  * @detail 用以创建和管理字典对象，创建方法：,```JavaScript,var db = require("db");,var test = new db.openLevelDB("test.db");,```
+  */
+@JSGlobal("Class_LevelDB")
+@js.native
+class ClassLevelDB ()
+  extends typings.fibjs.ClassLevelDB
+

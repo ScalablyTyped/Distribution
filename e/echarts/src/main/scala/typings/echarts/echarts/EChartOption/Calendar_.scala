@@ -1,7 +1,6 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonBorderColor
-import typings.echarts.AnonLineStyle
+import typings.echarts.anon.BorderColor
 import typings.echarts.echarts.EChartOption.Calendar.DayLabel
 import typings.echarts.echarts.EChartOption.Calendar.MonthLabel
 import typings.echarts.echarts.EChartOption.Calendar.YearLabel
@@ -57,7 +56,7 @@ trait Calendar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#calendar.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderColor] = js.undefined
+  var itemStyle: js.UndefOr[BorderColor] = js.undefined
   /**
     * Distance between calendar component and the left side of the container.
     * left value can be instant pixel value like 20;
@@ -103,7 +102,7 @@ trait Calendar_ extends js.Object {
   /**
     * Calendar coordinates splitLine style.
     */
-  var splitLine: js.UndefOr[AnonLineStyle] = js.undefined
+  var splitLine: js.UndefOr[typings.echarts.anon.LineStyle] = js.undefined
   /**
     * Distance between calendar component and the top side of the container.
     * top value can be instant pixel value like 20;
@@ -157,19 +156,19 @@ object Calendar_ {
     dayLabel: DayLabel = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: AnonBorderColor = null,
+    itemStyle: BorderColor = null,
     left: Double | String = null,
     monthLabel: MonthLabel = null,
     orient: horizontal | vertical = null,
     range: Double | String | (js.Array[Double | String]) = null,
     right: Double | String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    splitLine: AnonLineStyle = null,
+    splitLine: typings.echarts.anon.LineStyle = null,
     top: Double | String = null,
     width: Double | String = null,
     yearLabel: YearLabel = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): Calendar_ = {
     val __obj = js.Dynamic.literal()
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
@@ -183,13 +182,13 @@ object Calendar_ {
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (splitLine != null) __obj.updateDynamic("splitLine")(splitLine.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (yearLabel != null) __obj.updateDynamic("yearLabel")(yearLabel.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calendar_]
   }
 }

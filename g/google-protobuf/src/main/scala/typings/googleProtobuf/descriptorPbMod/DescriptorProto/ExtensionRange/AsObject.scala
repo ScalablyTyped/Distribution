@@ -13,14 +13,14 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     options: typings.googleProtobuf.descriptorPbMod.ExtensionRangeOptions.AsObject = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

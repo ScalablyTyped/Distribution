@@ -12,7 +12,7 @@ trait Options
 
 object Options {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, cwd: String = null): Options = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, cwd: String = null): Options = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])

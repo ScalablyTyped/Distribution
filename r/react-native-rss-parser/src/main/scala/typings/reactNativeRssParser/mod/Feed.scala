@@ -1,25 +1,25 @@
 package typings.reactNativeRssParser.mod
 
-import typings.reactNativeRssParser.AnonBlock
-import typings.reactNativeRssParser.AnonDescription
-import typings.reactNativeRssParser.AnonName
-import typings.reactNativeRssParser.AnonRel
+import typings.reactNativeRssParser.anon.Block
+import typings.reactNativeRssParser.anon.Description
+import typings.reactNativeRssParser.anon.Name
+import typings.reactNativeRssParser.anon.Rel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Feed extends js.Object {
-  var authors: js.Array[Maybe[AnonName]]
-  var categories: js.Array[Maybe[AnonName]]
+  var authors: js.Array[Maybe[Name]]
+  var categories: js.Array[Maybe[Name]]
   var copyright: Maybe[String]
   var description: String
-  var image: AnonDescription
+  var image: Description
   var items: js.Array[FeedItem]
-  var itunes: AnonBlock
+  var itunes: Block
   var language: String
   var lastPublished: String
   var lastUpdated: String
-  var links: js.Array[AnonRel]
+  var links: js.Array[Rel]
   var title: String
   var `type`: String
 }
@@ -27,16 +27,16 @@ trait Feed extends js.Object {
 object Feed {
   @scala.inline
   def apply(
-    authors: js.Array[Maybe[AnonName]],
-    categories: js.Array[Maybe[AnonName]],
+    authors: js.Array[Maybe[Name]],
+    categories: js.Array[Maybe[Name]],
     description: String,
-    image: AnonDescription,
+    image: Description,
     items: js.Array[FeedItem],
-    itunes: AnonBlock,
+    itunes: Block,
     language: String,
     lastPublished: String,
     lastUpdated: String,
-    links: js.Array[AnonRel],
+    links: js.Array[Rel],
     title: String,
     `type`: String,
     copyright: Maybe[String] = null

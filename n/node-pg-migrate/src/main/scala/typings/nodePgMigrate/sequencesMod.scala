@@ -17,8 +17,7 @@ object sequencesMod extends js.Object {
   def alterSequence(mOptions: MigrationOptions): AlterSequence = js.native
   def createSequence(mOptions: MigrationOptions): CreateSequence = js.native
   def dropSequence(mOptions: MigrationOptions): DropSequence = js.native
-  def parseSequenceOptions(typeShorthands: js.UndefOr[scala.Nothing], options: SequenceOptions): js.Array[String] = js.native
-  def parseSequenceOptions(typeShorthands: ColumnDefinitions, options: SequenceOptions): js.Array[String] = js.native
+  def parseSequenceOptions(typeShorthands: js.UndefOr[ColumnDefinitions], options: SequenceOptions): js.Array[String] = js.native
   def renameSequence(mOptions: MigrationOptions): RenameSequence = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.ReportDesigner
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,23 +29,6 @@ object ConfigureItems extends js.Object {
   ///Shows or hides the properties panel in configuration pane.
   @js.native
   sealed trait Property extends ConfigureItems
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ConfigureItems with Double] = js.native
-  /* 4 */ @js.native
-  object All extends TopLevel[All with Double]
-  
-  /* 1 */ @js.native
-  object Data extends TopLevel[Data with Double]
-  
-  /* 3 */ @js.native
-  object ImageManager extends TopLevel[ImageManager with Double]
-  
-  /* 2 */ @js.native
-  object Parameter extends TopLevel[Parameter with Double]
-  
-  /* 0 */ @js.native
-  object Property extends TopLevel[Property with Double]
   
 }
 

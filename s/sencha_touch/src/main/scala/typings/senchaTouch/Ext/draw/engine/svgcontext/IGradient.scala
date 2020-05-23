@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 
 trait IGradient extends IBase {
   /** [Method] Adds a color stop with the given color to the gradient at the given offset
-  		* @param offset Number
-  		* @param color String
-  		*/
+    * @param offset Number
+    * @param color String
+    */
   var addColorStop: js.UndefOr[
     js.Function2[/* offset */ js.UndefOr[Double], /* color */ js.UndefOr[String], Unit]
   ] = js.undefined
@@ -55,7 +55,7 @@ object IGradient {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGradient]

@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonDistanceDisplayCondition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PathGraphics")
 @js.native
 class PathGraphics () extends js.Object {
-  def this(options: AnonDistanceDisplayCondition) = this()
+  def this(options: typings.cesium.anon.DistanceDisplayCondition) = this()
   val definitionChanged: Event[js.Array[_]] = js.native
   var distanceDisplayCondition: Property = js.native
   var leadTime: Property | Double = js.native

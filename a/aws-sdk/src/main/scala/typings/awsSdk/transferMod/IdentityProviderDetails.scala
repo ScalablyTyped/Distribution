@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IdentityProviderDetails extends js.Object {
   /**
-    * The InvocationRole parameter provides the type of InvocationRole used to authenticate the user account.
+    * Provides the type of InvocationRole used to authenticate the user account.
     */
   var InvocationRole: js.UndefOr[Role] = js.native
   /**
-    * The Url parameter provides contains the location of the service endpoint used to authenticate users.
+    * Contains the location of the service endpoint used to authenticate users.
     */
   var Url: js.UndefOr[typings.awsSdk.transferMod.Url] = js.native
 }

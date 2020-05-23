@@ -13,11 +13,13 @@ trait ContentRangeParts extends js.Object {
 
 object ContentRangeParts {
   @scala.inline
-  def apply(unit: String, first: Int | Double = null, last: Int | Double = null, length: Int | Double = null): ContentRangeParts = {
-    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
-    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
-    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+  def apply(
+    unit: String,
+    first: Double = null.asInstanceOf[Double],
+    last: Double = null.asInstanceOf[Double],
+    length: Double = null.asInstanceOf[Double]
+  ): ContentRangeParts = {
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentRangeParts]
   }
 }

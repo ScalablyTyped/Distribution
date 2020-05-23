@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait ColumnSortingEventUIParam extends js.Object {
   /**
-  	 * Gets the column key.
-  	 */
+    * Gets the column key.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the sorting direction.
-  	 */
+    * Gets the sorting direction.
+    */
   var direction: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets sorting expressions.
-  	 */
+    * Gets sorting expressions.
+    */
   var newExpressions: js.UndefOr[js.Array[_]] = js.undefined
   /**
-  	 * Gets a reference to GridSorting.
-  	 */
+    * Gets a reference to GridSorting.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

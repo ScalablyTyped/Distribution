@@ -26,7 +26,7 @@ object IChain {
   @scala.inline
   def apply(links: js.Array[IChainLink], pathLength: Double, endless: js.UndefOr[Boolean] = js.undefined): IChain = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], pathLength = pathLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(endless)) __obj.updateDynamic("endless")(endless.asInstanceOf[js.Any])
+    if (!js.isUndefined(endless)) __obj.updateDynamic("endless")(endless.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChain]
   }
 }

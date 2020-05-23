@@ -29,12 +29,12 @@ object ListContactFlowsRequest {
   def apply(
     InstanceId: InstanceId,
     ContactFlowTypes: ContactFlowTypes = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResult1000] = js.undefined,
     NextToken: NextToken = null
   ): ListContactFlowsRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     if (ContactFlowTypes != null) __obj.updateDynamic("ContactFlowTypes")(ContactFlowTypes.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListContactFlowsRequest]
   }

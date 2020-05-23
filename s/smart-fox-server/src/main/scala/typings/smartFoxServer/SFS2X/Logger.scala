@@ -4,13 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SFS2X.Logger")
-@js.native
-class Logger () extends js.Object {
+trait Logger extends js.Object {
   /**
     * Sets the current logging level.
     * @param {number} level The minimum logging level.
     */
-  def setLevel(level: Double): Unit = js.native
+  def setLevel(level: Double): Unit
+}
+
+object Logger {
+  @scala.inline
+  def apply(setLevel: Double => Unit): Logger = {
+    val __obj = js.Dynamic.literal(setLevel = js.Any.fromFunction1(setLevel))
+    __obj.asInstanceOf[Logger]
+  }
 }
 

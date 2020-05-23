@@ -28,6 +28,10 @@ trait Input extends js.Object {
     */
   var InputClass: js.UndefOr[typings.awsSdk.medialiveMod.InputClass] = js.native
   /**
+    * Settings for the input devices.
+    */
+  var InputDevices: js.UndefOr[listOfInputDeviceSettings] = js.native
+  /**
     * Certain pull input sources can be dynamic, meaning that they can have their URL's dynamically changes
   during input switch actions. Presently, this functionality only works with MP4_FILE inputs.
     */
@@ -68,6 +72,7 @@ object Input {
     Destinations: listOfInputDestination = null,
     Id: string = null,
     InputClass: InputClass = null,
+    InputDevices: listOfInputDeviceSettings = null,
     InputSourceType: InputSourceType = null,
     MediaConnectFlows: listOfMediaConnectFlow = null,
     Name: string = null,
@@ -84,6 +89,7 @@ object Input {
     if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (InputClass != null) __obj.updateDynamic("InputClass")(InputClass.asInstanceOf[js.Any])
+    if (InputDevices != null) __obj.updateDynamic("InputDevices")(InputDevices.asInstanceOf[js.Any])
     if (InputSourceType != null) __obj.updateDynamic("InputSourceType")(InputSourceType.asInstanceOf[js.Any])
     if (MediaConnectFlows != null) __obj.updateDynamic("MediaConnectFlows")(MediaConnectFlows.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

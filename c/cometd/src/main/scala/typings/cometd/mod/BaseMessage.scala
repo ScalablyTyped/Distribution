@@ -1,12 +1,12 @@
 package typings.cometd.mod
 
-import typings.cometd.AnonHosts
+import typings.cometd.anon.Hosts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseMessage extends Message {
-  var advice: js.UndefOr[AnonHosts] = js.undefined
+  var advice: js.UndefOr[Hosts] = js.undefined
   var channel: String
   var clientId: js.UndefOr[String] = js.undefined
   var connectionType: js.UndefOr[ConnectionType] = js.undefined
@@ -25,7 +25,7 @@ object BaseMessage {
   def apply(
     channel: String,
     successful: Boolean,
-    advice: AnonHosts = null,
+    advice: Hosts = null,
     clientId: String = null,
     connectionType: ConnectionType = null,
     data: js.Any = null,

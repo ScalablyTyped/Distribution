@@ -1,8 +1,8 @@
 package typings.puppeteer.mod
 
 import typings.node.Buffer
-import typings.puppeteer.Anon0
-import typings.puppeteer.AnonDelay
+import typings.puppeteer.anon.Delay
+import typings.puppeteer.anon.`0`
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -74,7 +74,7 @@ trait ElementHandle[E /* <: Element */]
     * @param options The text and delay options.
     */
   def press(key: String): js.Promise[Unit] = js.native
-  def press(key: String, options: AnonDelay): js.Promise[Unit] = js.native
+  def press(key: String, options: Delay): js.Promise[Unit] = js.native
   /**
     * This method scrolls element into view if needed, and then uses page.screenshot to take a screenshot of the element.
     * If the element is detached from DOM, the method throws an error.
@@ -103,7 +103,7 @@ trait ElementHandle[E /* <: Element */]
     * @param options The typing options.
     */
   def `type`(text: String): js.Promise[Unit] = js.native
-  def `type`(text: String, options: Anon0): js.Promise[Unit] = js.native
+  def `type`(text: String, options: `0`): js.Promise[Unit] = js.native
   /**
     * This method expects elementHandle to point to an input element.
     * @param filePaths Sets the value of the file input these paths. If some of the filePaths are relative paths, then they are resolved relative to current working directory.

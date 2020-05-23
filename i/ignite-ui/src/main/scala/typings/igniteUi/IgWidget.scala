@@ -7,33 +7,30 @@ import scala.scalajs.js.annotation._
 
 trait IgWidget
   extends /**
-	 * Option for igWidget
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale setting for the widget.
+    *
+    */
   var locale: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
 }
 
 object IgWidget {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for igWidget
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     language: String = null,
     locale: js.Any = null,
     regional: String | js.Object = null

@@ -1,6 +1,6 @@
 package typings.expo.globalsWebMod
 
-import typings.expoLinearGradient.AnonAccessibilityActions
+import typings.expoLinearGradient.anon.AccessibilityActions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class LinearGradient ()
 @JSImport("expo/build/globals.web", "LinearGradient")
 @js.native
 object LinearGradient extends js.Object {
-  var propTypes: AnonAccessibilityActions = js.native
+  var propTypes: AccessibilityActions = js.native
 }
 

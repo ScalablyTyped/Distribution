@@ -12,11 +12,15 @@ trait CropData extends js.Object {
 
 object CropData {
   @scala.inline
-  def apply(orientation: Int | Double = null, points: js.Array[Double] = null, zoom: Int | Double = null): CropData = {
+  def apply(
+    orientation: js.UndefOr[Double] = js.undefined,
+    points: js.Array[Double] = null,
+    zoom: js.UndefOr[Double] = js.undefined
+  ): CropData = {
     val __obj = js.Dynamic.literal()
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation.get.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropData]
   }
 }

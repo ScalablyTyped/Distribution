@@ -1,5 +1,6 @@
 package typings.glMatrix
 
+import typings.glMatrix.anon.DownDegrees
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -1279,7 +1280,7 @@ object mod extends js.Object {
       * @param {number} far Far bound of the frustum
       * @returns {mat4} out
       */
-    def perspectiveFromFieldOfView(out: mat4, fov: AnonDownDegrees, near: Double, far: Double): mat4 = js.native
+    def perspectiveFromFieldOfView(out: mat4, fov: DownDegrees, near: Double, far: Double): mat4 = js.native
     def rotate(out: mat4, a: mat4, rad: Double, axis: js.Array[Double]): mat4 = js.native
     /**
       * Rotates a mat4 by the given angle

@@ -29,11 +29,11 @@ object TabsProps {
   ): TabsProps = {
     val __obj = js.Dynamic.literal()
     if (activeLinkStyle != null) __obj.updateDynamic("activeLinkStyle")(activeLinkStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles.get.asInstanceOf[js.Any])
     if (handleSelect != null) __obj.updateDynamic("handleSelect")(js.Any.fromFunction2(handleSelect))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (!js.isUndefined(renderActiveTabContentOnly)) __obj.updateDynamic("renderActiveTabContentOnly")(renderActiveTabContentOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderActiveTabContentOnly)) __obj.updateDynamic("renderActiveTabContentOnly")(renderActiveTabContentOnly.get.asInstanceOf[js.Any])
     if (selectedTab != null) __obj.updateDynamic("selectedTab")(selectedTab.asInstanceOf[js.Any])
     if (visibleTabStyle != null) __obj.updateDynamic("visibleTabStyle")(visibleTabStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsProps]

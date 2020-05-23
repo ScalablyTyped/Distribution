@@ -15,7 +15,7 @@ trait DescribePublishingDestinationResponse extends js.Object {
     */
   var DestinationProperties: typings.awsSdk.guarddutyMod.DestinationProperties = js.native
   /**
-    * The type of the publishing destination. Currently, only S3 is supported.
+    * The type of publishing destination. Currently, only Amazon S3 buckets are supported.
     */
   var DestinationType: typings.awsSdk.guarddutyMod.DestinationType = js.native
   /**

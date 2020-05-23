@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object WebAccountScope extends js.Object {
   /** Scope for single-sign-on accounts that appear in PC settings. This is the default scope. */
   @js.native
   sealed trait perUser extends WebAccountScope
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WebAccountScope with Double] = js.native
-  /* 1 */ @js.native
-  object perApplication extends TopLevel[perApplication with Double]
-  
-  /* 0 */ @js.native
-  object perUser extends TopLevel[perUser with Double]
   
 }
 

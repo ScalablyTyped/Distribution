@@ -15,10 +15,13 @@ trait ISuccessor extends js.Object {
 
 object ISuccessor {
   @scala.inline
-  def apply(deletions: js.Array[Uint8Array] = null, successor: Uint8Array = null): ISuccessor = {
+  def apply(
+    deletions: js.UndefOr[Null | js.Array[Uint8Array]] = js.undefined,
+    successor: js.UndefOr[Null | Uint8Array] = js.undefined
+  ): ISuccessor = {
     val __obj = js.Dynamic.literal()
-    if (deletions != null) __obj.updateDynamic("deletions")(deletions.asInstanceOf[js.Any])
-    if (successor != null) __obj.updateDynamic("successor")(successor.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletions)) __obj.updateDynamic("deletions")(deletions.asInstanceOf[js.Any])
+    if (!js.isUndefined(successor)) __obj.updateDynamic("successor")(successor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuccessor]
   }
 }

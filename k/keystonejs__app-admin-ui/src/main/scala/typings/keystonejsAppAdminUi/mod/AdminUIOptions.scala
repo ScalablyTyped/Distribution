@@ -1,6 +1,6 @@
 package typings.keystonejsAppAdminUi.mod
 
-import typings.keystonejsAppAdminUi.AnonAuthentication
+import typings.keystonejsAppAdminUi.anon.Authentication
 import typings.keystonejsKeystone.mod.BaseAuthStrategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,20 +12,20 @@ trait AdminUIOptions[ListNames /* <: String */, UserType /* <: js.Object */] ext
   var authStrategy: js.UndefOr[BaseAuthStrategy] = js.undefined
   var enableDefaultRoute: js.UndefOr[Boolean] = js.undefined
   var graphiqlPath: js.UndefOr[String] = js.undefined
-  var isAccessAllowed: js.UndefOr[js.Function1[/* opts */ AnonAuthentication[UserType, ListNames], Boolean]] = js.undefined
+  var isAccessAllowed: js.UndefOr[js.Function1[/* opts */ Authentication[UserType, ListNames], Boolean]] = js.undefined
   var pages: js.UndefOr[js.Array[_]] = js.undefined
   var schemaName: js.UndefOr[String] = js.undefined
 }
 
 object AdminUIOptions {
   @scala.inline
-  def apply[ListNames /* <: String */, UserType /* <: js.Object */](
+  def apply[ListNames, UserType](
     adminPath: String = null,
     apiPath: String = null,
     authStrategy: BaseAuthStrategy = null,
     enableDefaultRoute: js.UndefOr[Boolean] = js.undefined,
     graphiqlPath: String = null,
-    isAccessAllowed: /* opts */ AnonAuthentication[UserType, ListNames] => Boolean = null,
+    isAccessAllowed: /* opts */ Authentication[UserType, ListNames] => Boolean = null,
     pages: js.Array[_] = null,
     schemaName: String = null
   ): AdminUIOptions[ListNames, UserType] = {
@@ -33,7 +33,7 @@ object AdminUIOptions {
     if (adminPath != null) __obj.updateDynamic("adminPath")(adminPath.asInstanceOf[js.Any])
     if (apiPath != null) __obj.updateDynamic("apiPath")(apiPath.asInstanceOf[js.Any])
     if (authStrategy != null) __obj.updateDynamic("authStrategy")(authStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDefaultRoute)) __obj.updateDynamic("enableDefaultRoute")(enableDefaultRoute.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDefaultRoute)) __obj.updateDynamic("enableDefaultRoute")(enableDefaultRoute.get.asInstanceOf[js.Any])
     if (graphiqlPath != null) __obj.updateDynamic("graphiqlPath")(graphiqlPath.asInstanceOf[js.Any])
     if (isAccessAllowed != null) __obj.updateDynamic("isAccessAllowed")(js.Any.fromFunction1(isAccessAllowed))
     if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])

@@ -12,9 +12,6 @@ sealed trait FlowFlags extends js.Object
 @js.native
 object FlowFlags extends js.Object {
   @js.native
-  sealed trait AfterFinally extends FlowFlags
-  
-  @js.native
   sealed trait ArrayMutation extends FlowFlags
   
   @js.native
@@ -39,7 +36,7 @@ object FlowFlags extends js.Object {
   sealed trait LoopLabel extends FlowFlags
   
   @js.native
-  sealed trait PreFinally extends FlowFlags
+  sealed trait ReduceLabel extends FlowFlags
   
   @js.native
   sealed trait Referenced extends FlowFlags
@@ -61,9 +58,6 @@ object FlowFlags extends js.Object {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FlowFlags with Double] = js.native
-  /* 8192 */ @js.native
-  object AfterFinally extends TopLevel[AfterFinally with Double]
-  
   /* 256 */ @js.native
   object ArrayMutation extends TopLevel[ArrayMutation with Double]
   
@@ -88,13 +82,13 @@ object FlowFlags extends js.Object {
   /* 8 */ @js.native
   object LoopLabel extends TopLevel[LoopLabel with Double]
   
-  /* 4096 */ @js.native
-  object PreFinally extends TopLevel[PreFinally with Double]
-  
   /* 1024 */ @js.native
-  object Referenced extends TopLevel[Referenced with Double]
+  object ReduceLabel extends TopLevel[ReduceLabel with Double]
   
   /* 2048 */ @js.native
+  object Referenced extends TopLevel[Referenced with Double]
+  
+  /* 4096 */ @js.native
   object Shared extends TopLevel[Shared with Double]
   
   /* 2 */ @js.native

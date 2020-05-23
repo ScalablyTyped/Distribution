@@ -1,9 +1,9 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.FilterData
 import typings.officeJsPreview.Excel.Interfaces.FilterLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.AboveAverage
 import typings.officeJsPreview.officeJsPreviewStrings.AllDatesInPeriodApril
 import typings.officeJsPreview.officeJsPreviewStrings.AllDatesInPeriodAugust
@@ -51,15 +51,14 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.2]
   */
-@JSGlobal("Excel.Filter")
 @js.native
-class Filter () extends ClientObject {
+trait Filter extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Filter: RequestContext = js.native
   /**
     *
-    * The currently applied filter on the given column. Read-only.
+    * The currently applied filter on the given column.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -184,7 +183,7 @@ class Filter () extends ClientObject {
     */
   def load(): Filter = js.native
   def load(options: FilterLoadOptions): Filter = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Filter = js.native
+  def load(propertyNamesAndPaths: Expand): Filter = js.native
   def load(propertyNames: String): Filter = js.native
   def load(propertyNames: js.Array[String]): Filter = js.native
   /**

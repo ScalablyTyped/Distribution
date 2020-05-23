@@ -1,7 +1,7 @@
 
 # Scala.js typings for webgme
 
-Typings are for version 2.40.1
+Typings are for version 2.41.1
 
 ## Library description:
 Web-based Generic Modeling Environment

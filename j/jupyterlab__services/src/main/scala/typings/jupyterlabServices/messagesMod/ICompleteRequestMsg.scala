@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonCode
+import typings.jupyterlabServices.anon.Code
 import typings.jupyterlabServices.jupyterlabServicesStrings.complete_request
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait ICompleteRequestMsg
   extends IShellMessage[complete_request]
      with _Message {
   @JSName("content")
-  var content_ICompleteRequestMsg: AnonCode
+  var content_ICompleteRequestMsg: Code
 }
 
 object ICompleteRequestMsg {
   @scala.inline
   def apply(
     channel: shell,
-    content: AnonCode,
+    content: Code,
     header: IHeader[complete_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

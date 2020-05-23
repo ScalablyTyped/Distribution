@@ -1,5 +1,6 @@
 package typings.otplibCore
 
+import typings.otplibCore.anon.Counter
 import typings.otplibCore.utilsMod.CreateDigest
 import typings.otplibCore.utilsMod.CreateHmacKey
 import typings.otplibCore.utilsMod.HashAlgorithms
@@ -34,7 +35,7 @@ object hotpMod extends js.Object {
     /**
       * Same as [[check]] but accepts a single object based argument.
       */
-    def verify(opts: AnonCounter): Boolean = js.native
+    def verify(opts: Counter): Boolean = js.native
   }
   
   @js.native

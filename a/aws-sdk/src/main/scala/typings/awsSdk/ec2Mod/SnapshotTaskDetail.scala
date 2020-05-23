@@ -56,8 +56,8 @@ object SnapshotTaskDetail {
   @scala.inline
   def apply(
     Description: String = null,
-    DiskImageSize: Int | scala.Double = null,
-    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    DiskImageSize: js.UndefOr[Double] = js.undefined,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
     Format: String = null,
     KmsKeyId: String = null,
     Progress: String = null,
@@ -69,8 +69,8 @@ object SnapshotTaskDetail {
   ): SnapshotTaskDetail = {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DiskImageSize != null) __obj.updateDynamic("DiskImageSize")(DiskImageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(DiskImageSize)) __obj.updateDynamic("DiskImageSize")(DiskImageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
     if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])

@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Core.CoreWindowEventArgs")
-@js.native
-class CoreWindowEventArgs () extends ICoreWindowEventArgs {
-  /* CompleteClass */
-  override var handled: Boolean = js.native
+trait CoreWindowEventArgs extends ICoreWindowEventArgs
+
+object CoreWindowEventArgs {
+  @scala.inline
+  def apply(handled: Boolean): CoreWindowEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CoreWindowEventArgs]
+  }
 }
 

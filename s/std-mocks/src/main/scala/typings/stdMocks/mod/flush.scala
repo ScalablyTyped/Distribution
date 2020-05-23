@@ -1,11 +1,11 @@
 package typings.stdMocks.mod
 
-import typings.stdMocks.AnonStderr
-import typings.stdMocks.AnonStderrStdout
-import typings.stdMocks.AnonStdout
-import typings.stdMocks.Optionsstderrfalse
-import typings.stdMocks.Optionsstdoutfalse
-import typings.stdMocks.Optionsstdoutfalsestderrf
+import typings.stdMocks.anon.Optionsstderrfalse
+import typings.stdMocks.anon.Optionsstdoutfalse
+import typings.stdMocks.anon.Optionsstdoutfalsestderrf
+import typings.stdMocks.anon.Stderr
+import typings.stdMocks.anon.StderrStdout
+import typings.stdMocks.anon.Stdout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 @JSImport("std-mocks", "flush")
 @js.native
 object flush extends js.Object {
-  def apply(): AnonStderrStdout = js.native
-  def apply(opts: Optionsstderrfalse): AnonStdout = js.native
-  def apply(opts: Optionsstdoutfalse): AnonStderr = js.native
+  def apply(): StderrStdout = js.native
+  def apply(opts: Optionsstderrfalse): Stdout = js.native
+  def apply(opts: Optionsstdoutfalse): Stderr = js.native
   def apply(opts: Optionsstdoutfalsestderrf): js.Object = js.native
-  def apply(opts: Options): AnonStderrStdout = js.native
+  def apply(opts: Options): StderrStdout = js.native
 }
 

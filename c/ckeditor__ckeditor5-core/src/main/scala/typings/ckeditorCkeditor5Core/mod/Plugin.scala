@@ -1,8 +1,8 @@
 package typings.ckeditorCkeditor5Core.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.ckeditorCkeditor5Core.Anon0
-import typings.ckeditorCkeditor5Core.AnonPriority
+import typings.ckeditorCkeditor5Core.anon.Priority
+import typings.ckeditorCkeditor5Core.anon.`0`
 import typings.ckeditorCkeditor5Core.mod.editor.Editor
 import typings.ckeditorCkeditor5Utils.mod.Emitter
 import typings.ckeditorCkeditor5Utils.mod.Observable
@@ -18,9 +18,9 @@ abstract class Plugin[T] protected () extends Observable {
   var destroy: js.UndefOr[js.Function0[Null | js.Promise[T]]] = js.native
   val editor: Editor = js.native
   var init: js.UndefOr[js.Function0[Null | js.Promise[T]]] = js.native
-  def listenTo(emitter: Emitter, event: String, callback: js.Function, options: AnonPriority): Unit = js.native
-  def on(event: String, callback: js.Function, options: Anon0): Unit = js.native
-  def once(event: String, callback: js.Function, options: Anon0): Unit = js.native
+  def listenTo(emitter: Emitter, event: String, callback: js.Function, options: Priority): Unit = js.native
+  def on(event: String, callback: js.Function, options: `0`): Unit = js.native
+  def once(event: String, callback: js.Function, options: `0`): Unit = js.native
 }
 
 /* static members */

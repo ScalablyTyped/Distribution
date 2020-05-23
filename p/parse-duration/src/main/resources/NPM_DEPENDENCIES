@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "parse-duration" : "0.4.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "parse-duration" : "0.4.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

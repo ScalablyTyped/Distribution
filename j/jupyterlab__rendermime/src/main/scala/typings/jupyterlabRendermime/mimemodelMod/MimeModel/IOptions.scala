@@ -40,7 +40,7 @@ object IOptions {
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(trusted)) __obj.updateDynamic("trusted")(trusted.asInstanceOf[js.Any])
+    if (!js.isUndefined(trusted)) __obj.updateDynamic("trusted")(trusted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

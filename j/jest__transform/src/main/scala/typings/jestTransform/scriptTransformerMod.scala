@@ -1,5 +1,6 @@
 package typings.jestTransform
 
+import typings.jestTransform.anon.Code
 import typings.jestTransform.jestTransformStrings.ObjectDotLessthansignanonymousGreaterthansign
 import typings.jestTransform.typesMod.Options
 import typings.jestTransform.typesMod.TransformResult
@@ -40,7 +41,7 @@ object scriptTransformerMod extends js.Object {
     def transform(filename: Path, options: Options): TransformResult = js.native
     def transform(filename: Path, options: Options, fileSource: String): TransformResult = js.native
     def transformJson(filename: Path, options: Options, fileSource: String): String = js.native
-    def transformSource(filepath: Path, content: String, instrument: Boolean): AnonCode = js.native
+    def transformSource(filepath: Path, content: String, instrument: Boolean): Code = js.native
   }
   
   @js.native

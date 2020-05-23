@@ -48,20 +48,20 @@ object GenerateSecretOptions {
   def apply(
     google_auth_qr: js.UndefOr[Boolean] = js.undefined,
     issuer: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     name: String = null,
     otpauth_url: js.UndefOr[Boolean] = js.undefined,
     qr_codes: js.UndefOr[Boolean] = js.undefined,
     symbols: js.UndefOr[Boolean] = js.undefined
   ): GenerateSecretOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(google_auth_qr)) __obj.updateDynamic("google_auth_qr")(google_auth_qr.asInstanceOf[js.Any])
+    if (!js.isUndefined(google_auth_qr)) __obj.updateDynamic("google_auth_qr")(google_auth_qr.get.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(otpauth_url)) __obj.updateDynamic("otpauth_url")(otpauth_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(qr_codes)) __obj.updateDynamic("qr_codes")(qr_codes.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
+    if (!js.isUndefined(otpauth_url)) __obj.updateDynamic("otpauth_url")(otpauth_url.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qr_codes)) __obj.updateDynamic("qr_codes")(qr_codes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateSecretOptions]
   }
 }

@@ -24,17 +24,17 @@ object ApplicationCredit {
   @scala.inline
   def apply(
     admin_graphql_api_id: String = null,
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     description: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     test: js.UndefOr[Boolean] = js.undefined
   ): ApplicationCredit = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationCredit]
   }
 }

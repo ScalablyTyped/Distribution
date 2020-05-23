@@ -1,6 +1,7 @@
 package typings.jupyterlabTerminal
 
 import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection
+import typings.jupyterlabTerminal.anon.PartialIOptions
 import typings.jupyterlabTerminal.tokensMod.ITerminal.IOptions
 import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js

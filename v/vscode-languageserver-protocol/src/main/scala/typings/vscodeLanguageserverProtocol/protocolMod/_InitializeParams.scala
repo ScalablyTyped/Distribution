@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
 import typings.vscodeJsonrpc.mod.ProgressToken
-import typings.vscodeLanguageserverProtocol.AnonName
+import typings.vscodeLanguageserverProtocol.anon.Name
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.messages
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.off
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.verbose
@@ -20,7 +20,7 @@ trait _InitializeParams extends WorkDoneProgressParams {
     *
     * @since 3.15.0
     */
-  var clientInfo: js.UndefOr[AnonName] = js.undefined
+  var clientInfo: js.UndefOr[Name] = js.undefined
   /**
     * User provided initialization options.
     */
@@ -55,20 +55,18 @@ object _InitializeParams {
   @scala.inline
   def apply(
     capabilities: ClientCapabilities,
-    clientInfo: AnonName = null,
+    clientInfo: Name = null,
     initializationOptions: js.Any = null,
-    processId: Int | Double = null,
-    rootPath: String = null,
+    processId: Double = null.asInstanceOf[Double],
+    rootPath: js.UndefOr[Null | String] = js.undefined,
     rootUri: DocumentUri = null,
     trace: off | messages | verbose = null,
     workDoneToken: ProgressToken = null
   ): _InitializeParams = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], rootUri = rootUri.asInstanceOf[js.Any])
     if (clientInfo != null) __obj.updateDynamic("clientInfo")(clientInfo.asInstanceOf[js.Any])
     if (initializationOptions != null) __obj.updateDynamic("initializationOptions")(initializationOptions.asInstanceOf[js.Any])
-    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
-    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath.asInstanceOf[js.Any])
-    if (rootUri != null) __obj.updateDynamic("rootUri")(rootUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootPath)) __obj.updateDynamic("rootPath")(rootPath.asInstanceOf[js.Any])
     if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     if (workDoneToken != null) __obj.updateDynamic("workDoneToken")(workDoneToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[_InitializeParams]

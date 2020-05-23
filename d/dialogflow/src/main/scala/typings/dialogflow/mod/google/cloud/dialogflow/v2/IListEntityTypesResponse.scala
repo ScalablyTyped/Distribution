@@ -14,10 +14,13 @@ trait IListEntityTypesResponse extends js.Object {
 
 object IListEntityTypesResponse {
   @scala.inline
-  def apply(entityTypes: js.Array[IEntityType] = null, nextPageToken: String = null): IListEntityTypesResponse = {
+  def apply(
+    entityTypes: js.UndefOr[Null | js.Array[IEntityType]] = js.undefined,
+    nextPageToken: js.UndefOr[Null | String] = js.undefined
+  ): IListEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityTypes)) __obj.updateDynamic("entityTypes")(entityTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListEntityTypesResponse]
   }
 }

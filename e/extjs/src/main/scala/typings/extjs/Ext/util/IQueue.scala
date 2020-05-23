@@ -11,13 +11,13 @@ trait IQueue extends IBase {
   /** [Method] Removes all items from the collection  */
   var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the number of items in the collection
-  		* @returns Number the number of items in the collection.
-  		*/
+    * @returns Number the number of items in the collection.
+    */
   var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Remove an item from the collection
-  		* @param obj Object The item to remove.
-  		* @returns Object The item removed or false if no item was removed.
-  		*/
+    * @param obj Object The item to remove.
+    * @returns Object The item removed or false if no item was removed.
+    */
   var remove: js.UndefOr[js.Function1[/* obj */ js.UndefOr[js.Any], _]] = js.undefined
 }
 
@@ -61,7 +61,7 @@ object IQueue {
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueue]

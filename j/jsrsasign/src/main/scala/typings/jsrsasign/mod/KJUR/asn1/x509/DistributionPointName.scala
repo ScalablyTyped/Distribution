@@ -34,5 +34,7 @@ import scala.scalajs.js.annotation._
 class DistributionPointName protected ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.DistributionPointName {
   def this(gnOrRdn: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralNames) = this()
+  /* CompleteClass */
+  override def getEncodedHex(): String = js.native
 }
 

@@ -13,13 +13,22 @@ trait HttpDownloadOptions extends js.Object {
   var method: GET | POST
   var path: String
   var port: String
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
 }
 
 object HttpDownloadOptions {
   @scala.inline
-  def apply(hostname: String, method: GET | POST, path: String, port: String, agent: HttpsProxyAgent = null): HttpDownloadOptions = {
+  def apply(
+    hostname: String,
+    method: GET | POST,
+    path: String,
+    port: String,
+    agent: HttpsProxyAgent = null,
+    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+  ): HttpDownloadOptions = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpDownloadOptions]
   }
 }

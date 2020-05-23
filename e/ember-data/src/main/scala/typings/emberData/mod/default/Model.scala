@@ -3,7 +3,7 @@ package typings.emberData.mod.default
 import typings.ember.mod.Ember.NativeArray
 import typings.ember.mod.default.ComputedProperty
 import typings.ember.mod.default.Map
-import typings.emberData.TypeofModel
+import typings.emberData.anon.TypeofModel
 import typings.emberData.emberDataStrings.boolean
 import typings.emberData.emberDataStrings.date
 import typings.emberData.emberDataStrings.number
@@ -115,14 +115,14 @@ object Model extends js.Object {
   def eachTransformedAttribute[Class /* <: TypeofModel */](
     callback: js.Function2[
       /* name */ ModelKeys[InstanceType[Class]], 
-      /* type */ string | boolean | number | date, 
+      /* keyof ember-data.ember-data/types/registries/transform.TransformRegistry */ /* type */ string | boolean | number | date, 
       Unit
     ]
   ): Unit = js.native
   def eachTransformedAttribute[Class /* <: TypeofModel */](
     callback: js.Function2[
       /* name */ ModelKeys[InstanceType[Class]], 
-      /* type */ string | boolean | number | date, 
+      /* keyof ember-data.ember-data/types/registries/transform.TransformRegistry */ /* type */ string | boolean | number | date, 
       Unit
     ],
     binding: js.Any

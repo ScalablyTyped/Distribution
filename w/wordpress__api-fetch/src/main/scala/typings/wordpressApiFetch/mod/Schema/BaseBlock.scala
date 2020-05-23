@@ -1,16 +1,16 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonBlockversion
-import typings.wordpressApiFetch.AnonDictk
-import typings.wordpressApiFetch.AnonProtectedRaw
-import typings.wordpressApiFetch.AnonRawString
+import typings.wordpressApiFetch.anon.Blockversion
+import typings.wordpressApiFetch.anon.Dictk
+import typings.wordpressApiFetch.anon.ProtectedRaw
+import typings.wordpressApiFetch.anon.RawString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseBlock[T /* <: Context */] extends BaseResponse {
-  var content: AnonProtectedRaw with (js.Object | AnonBlockversion)
+  var content: ProtectedRaw with (js.Object | Blockversion)
   var date: String
   var date_gmt: String
   var guid: Contextual[T, js.Object, js.Object]
@@ -22,15 +22,15 @@ trait BaseBlock[T /* <: Context */] extends BaseResponse {
   var slug: String
   var status: PostStatus
   var template: String
-  var title: AnonRawString | js.Array[js.Any]
+  var title: RawString | js.Array[js.Any]
   var `type`: String
 }
 
 object BaseBlock {
   @scala.inline
-  def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
-    content: AnonProtectedRaw with (js.Object | AnonBlockversion),
+  def apply[T](
+    _links: Record[String, js.Array[Dictk]],
+    content: ProtectedRaw with (js.Object | Blockversion),
     date: String,
     date_gmt: String,
     guid: Contextual[T, js.Object, js.Object],
@@ -42,7 +42,7 @@ object BaseBlock {
     slug: String,
     status: PostStatus,
     template: String,
-    title: AnonRawString | js.Array[js.Any],
+    title: RawString | js.Array[js.Any],
     `type`: String,
     _embedded: Record[String, js.Array[_]] = null
   ): BaseBlock[T] = {

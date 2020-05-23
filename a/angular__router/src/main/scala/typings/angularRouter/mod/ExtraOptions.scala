@@ -194,7 +194,7 @@ object ExtraOptions {
   ): ExtraOptions = {
     val __obj = js.Dynamic.literal()
     if (anchorScrolling != null) __obj.updateDynamic("anchorScrolling")(anchorScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTracing)) __obj.updateDynamic("enableTracing")(enableTracing.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTracing)) __obj.updateDynamic("enableTracing")(enableTracing.get.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction1(errorHandler))
     if (initialNavigation != null) __obj.updateDynamic("initialNavigation")(initialNavigation.asInstanceOf[js.Any])
     if (malformedUriErrorHandler != null) __obj.updateDynamic("malformedUriErrorHandler")(js.Any.fromFunction3(malformedUriErrorHandler))
@@ -205,7 +205,7 @@ object ExtraOptions {
     if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
     if (scrollPositionRestoration != null) __obj.updateDynamic("scrollPositionRestoration")(scrollPositionRestoration.asInstanceOf[js.Any])
     if (urlUpdateStrategy != null) __obj.updateDynamic("urlUpdateStrategy")(urlUpdateStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraOptions]
   }
 }

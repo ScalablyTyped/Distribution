@@ -34,27 +34,27 @@ object ConcurrentAccessRestriction {
   def apply(
     deviceAllowed: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    maxConcurrentDevices: Int | Double = null,
+    maxConcurrentDevices: js.UndefOr[Double] = js.undefined,
     message: String = null,
     nonce: String = null,
     reasonCode: String = null,
     restricted: js.UndefOr[Boolean] = js.undefined,
     signature: String = null,
     source: String = null,
-    timeWindowSeconds: Int | Double = null,
+    timeWindowSeconds: js.UndefOr[Double] = js.undefined,
     volumeId: String = null
   ): ConcurrentAccessRestriction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deviceAllowed)) __obj.updateDynamic("deviceAllowed")(deviceAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceAllowed)) __obj.updateDynamic("deviceAllowed")(deviceAllowed.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maxConcurrentDevices != null) __obj.updateDynamic("maxConcurrentDevices")(maxConcurrentDevices.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentDevices)) __obj.updateDynamic("maxConcurrentDevices")(maxConcurrentDevices.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.asInstanceOf[js.Any])
+    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.get.asInstanceOf[js.Any])
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (timeWindowSeconds != null) __obj.updateDynamic("timeWindowSeconds")(timeWindowSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeWindowSeconds)) __obj.updateDynamic("timeWindowSeconds")(timeWindowSeconds.get.asInstanceOf[js.Any])
     if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConcurrentAccessRestriction]
   }

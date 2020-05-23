@@ -22,14 +22,14 @@ object DeviceComplianceActionItem {
   @scala.inline
   def apply(
     actionType: DeviceComplianceActionType = null,
-    gracePeriodHours: Int | Double = null,
+    gracePeriodHours: js.UndefOr[Double] = js.undefined,
     id: String = null,
     notificationMessageCCList: js.Array[String] = null,
     notificationTemplateId: String = null
   ): DeviceComplianceActionItem = {
     val __obj = js.Dynamic.literal()
     if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
-    if (gracePeriodHours != null) __obj.updateDynamic("gracePeriodHours")(gracePeriodHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(gracePeriodHours)) __obj.updateDynamic("gracePeriodHours")(gracePeriodHours.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (notificationMessageCCList != null) __obj.updateDynamic("notificationMessageCCList")(notificationMessageCCList.asInstanceOf[js.Any])
     if (notificationTemplateId != null) __obj.updateDynamic("notificationTemplateId")(notificationTemplateId.asInstanceOf[js.Any])

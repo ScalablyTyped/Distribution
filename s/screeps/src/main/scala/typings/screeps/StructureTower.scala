@@ -1,6 +1,6 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typings.screeps.anon.StoreRESOURCEENERGYfalse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,31 @@ trait StructureTower
   def repair(target: Structure[StructureConstant]): ScreepsReturnCode
 }
 
-@JSGlobal("StructureTower")
-@js.native
-object StructureTower extends TopLevel[StructureTowerConstructor]
+object StructureTower {
+  @scala.inline
+  def apply(
+    attack: AnyCreep => ScreepsReturnCode,
+    destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
+    energy: Double,
+    energyCapacity: Double,
+    heal: AnyCreep => ScreepsReturnCode,
+    hits: Double,
+    hitsMax: Double,
+    id: Id[StructureTower],
+    isActive: () => Boolean,
+    my: Boolean,
+    notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    pos: RoomPosition,
+    repair: Structure[StructureConstant] => ScreepsReturnCode,
+    room: Room,
+    store: StoreRESOURCEENERGYfalse,
+    structureType: STRUCTURE_TOWER,
+    owner: Owner = null
+  ): StructureTower = {
+    val __obj = js.Dynamic.literal(attack = js.Any.fromFunction1(attack), destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], energyCapacity = energyCapacity.asInstanceOf[js.Any], heal = js.Any.fromFunction1(heal), hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], repair = js.Any.fromFunction1(repair), room = room.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructureTower]
+  }
+}
 

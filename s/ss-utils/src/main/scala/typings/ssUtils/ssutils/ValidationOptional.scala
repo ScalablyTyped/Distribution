@@ -23,7 +23,7 @@ object ValidationOptional {
     val __obj = js.Dynamic.literal()
     if (errorFilter != null) __obj.updateDynamic("errorFilter")(js.Any.fromFunction3(errorFilter))
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideMessages)) __obj.updateDynamic("overrideMessages")(overrideMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideMessages)) __obj.updateDynamic("overrideMessages")(overrideMessages.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptional]
   }
 }

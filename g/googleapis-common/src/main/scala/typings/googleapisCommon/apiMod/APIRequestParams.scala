@@ -21,10 +21,10 @@ object APIRequestParams {
     params: T,
     pathParams: js.Array[String],
     requiredParams: js.Array[String],
-    mediaUrl: String = null
+    mediaUrl: js.UndefOr[Null | String] = js.undefined
   ): APIRequestParams[T] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], pathParams = pathParams.asInstanceOf[js.Any], requiredParams = requiredParams.asInstanceOf[js.Any])
-    if (mediaUrl != null) __obj.updateDynamic("mediaUrl")(mediaUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(mediaUrl)) __obj.updateDynamic("mediaUrl")(mediaUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIRequestParams[T]]
   }
 }

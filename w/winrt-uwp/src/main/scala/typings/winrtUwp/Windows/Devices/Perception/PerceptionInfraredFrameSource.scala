@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
-import typings.winrtUwp.AnonResult
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
@@ -8,6 +7,7 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.Media.Devices.Core.CameraIntrinsics
 import typings.winrtUwp.Windows.WinRTEvent
+import typings.winrtUwp.anon.Result
 import typings.winrtUwp.winrtUwpStrings.activechanged
 import typings.winrtUwp.winrtUwpStrings.availablechanged
 import typings.winrtUwp.winrtUwpStrings.cameraintrinsicschanged
@@ -18,9 +18,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A frame source that provides infrared frames. */
-@JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrameSource")
 @js.native
-abstract class PerceptionInfraredFrameSource () extends js.Object {
+trait PerceptionInfraredFrameSource extends js.Object {
   /** Gets a boolean value indicating whether or not the source is active. */
   var active: Boolean = js.native
   /** Gets a boolean value indicating whether or not the source is available. */
@@ -136,7 +135,7 @@ abstract class PerceptionInfraredFrameSource () extends js.Object {
     * Gets the transform from the infrared frame source to the target entity and sets hasResult to true, if a correlation exists. If a correlation does not exist, hasResult is set to false and result is not modified.
     * @param targetId The unique ID of the target entity.
     */
-  def tryGetTransformTo(targetId: String): AnonResult = js.native
+  def tryGetTransformTo(targetId: String): Result = js.native
   /**
     * Attempts to set a video profile on this infrared frame source. Requires an active Controller Mode control session on this frame source.
     * @param controlSession A PerceptionControlSession representing active control of this frame source.
@@ -144,32 +143,5 @@ abstract class PerceptionInfraredFrameSource () extends js.Object {
     * @return This method returns an PerceptionFrameSourcePropertyChangeResult object asynchonously. If the control session was still active when the video profile was set, and if the video profile is supported and can be activated, this will be a success result.
     */
   def trySetVideoProfileAsync(controlSession: PerceptionControlSession, profile: PerceptionVideoProfile): IPromiseWithIAsyncOperation[PerceptionFrameSourcePropertyChangeResult] = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrameSource")
-@js.native
-object PerceptionInfraredFrameSource extends js.Object {
-  /**
-    * Creates a new infrared frame source watcher.
-    * @return A new infrared frame source watcher.
-    */
-  def createWatcher(): PerceptionInfraredFrameSourceWatcher = js.native
-  /**
-    * Finds all infrared frame sources.
-    * @return When the method completes, it asynchronously returns a list of infrared frame sources.
-    */
-  def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
-  /**
-    * Finds an infrared frame source by looking up its unique ID.
-    * @param id The unique ID of the infrared frame source.
-    * @return When the method completes, it asynchronously returns an infrared frame source if one exists with the specified ID. Otherwise, this method asynchronously returns nullptr.
-    */
-  def fromIdAsync(id: String): IPromiseWithIAsyncOperation[PerceptionInfraredFrameSource] = js.native
-  /**
-    * Requests access to use infrared frame sources.
-    * @return When this method completes, it asynchronously returns a PerceptionFrameSourceAccessStatus indicating the result of the access request.
-    */
-  def requestAccessAsync(): IPromiseWithIAsyncOperation[PerceptionFrameSourceAccessStatus] = js.native
 }
 

@@ -36,7 +36,7 @@ object Summary {
   @scala.inline
   def apply(
     LastUpdated: LastUpdated = null,
-    NonCompliantResources: Int | Double = null,
+    NonCompliantResources: js.UndefOr[NonCompliantResources] = js.undefined,
     Region: Region = null,
     ResourceType: AmazonResourceType = null,
     TargetId: TargetId = null,
@@ -44,7 +44,7 @@ object Summary {
   ): Summary = {
     val __obj = js.Dynamic.literal()
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
-    if (NonCompliantResources != null) __obj.updateDynamic("NonCompliantResources")(NonCompliantResources.asInstanceOf[js.Any])
+    if (!js.isUndefined(NonCompliantResources)) __obj.updateDynamic("NonCompliantResources")(NonCompliantResources.get.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     if (TargetId != null) __obj.updateDynamic("TargetId")(TargetId.asInstanceOf[js.Any])

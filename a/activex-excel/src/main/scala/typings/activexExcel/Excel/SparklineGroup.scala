@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.SparklineGroup")
 @js.native
-class SparklineGroup protected () extends js.Object {
+trait SparklineGroup extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Axes: SparkAxes = js.native
   val Count: Double = js.native

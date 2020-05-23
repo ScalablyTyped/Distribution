@@ -1,7 +1,6 @@
 package typings.heremaps.H.map.provider
 
 import typings.heremaps.H.map.AbstractMarker
-import typings.heremaps.H.map.provider.MarkerTileProvider.Options
 import typings.heremaps.H.math.BitMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,14 +16,8 @@ import scala.scalajs.js.annotation._
   * @property max {number} - Maximum zoom level at which provider can server data, set at construction time
   * @property uid {string} - Provider instance unique identifier, generated at construction time
   */
-@JSGlobal("H.map.provider.MarkerTileProvider")
 @js.native
-class MarkerTileProvider_ protected () extends RemoteTileProvider {
-  /**
-    * Constructor
-    * @param options {H.map.provider.MarkerTileProvider.Options} - configuration for tile provider
-    */
-  def this(options: Options) = this()
+trait MarkerTileProvider_ extends RemoteTileProvider {
   /**
     * To signal to this provider that a map object has been changed. The method marks tile, that contains that object as invalid and triggers dispatchUpdate()
     * @param marker {!H.map.AbstractMarker} - The map object to be invalidated

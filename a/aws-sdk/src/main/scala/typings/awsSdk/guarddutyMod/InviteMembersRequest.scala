@@ -11,11 +11,11 @@ trait InviteMembersRequest extends js.Object {
     */
   var AccountIds: typings.awsSdk.guarddutyMod.AccountIds = js.native
   /**
-    * The unique ID of the detector of the GuardDuty account with which you want to invite members.
+    * The unique ID of the detector of the GuardDuty account that you want to invite members with.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**
-    * A boolean value that specifies whether you want to disable email notification to the accounts that you’re inviting to GuardDuty as members.
+    * A Boolean value that specifies whether you want to disable email notification to the accounts that you’re inviting to GuardDuty as members.
     */
   var DisableEmailNotification: js.UndefOr[Boolean] = js.native
   /**
@@ -29,11 +29,11 @@ object InviteMembersRequest {
   def apply(
     AccountIds: AccountIds,
     DetectorId: DetectorId,
-    DisableEmailNotification: js.UndefOr[scala.Boolean] = js.undefined,
+    DisableEmailNotification: js.UndefOr[Boolean] = js.undefined,
     Message: String = null
   ): InviteMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableEmailNotification)) __obj.updateDynamic("DisableEmailNotification")(DisableEmailNotification.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableEmailNotification)) __obj.updateDynamic("DisableEmailNotification")(DisableEmailNotification.get.asInstanceOf[js.Any])
     if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[InviteMembersRequest]
   }

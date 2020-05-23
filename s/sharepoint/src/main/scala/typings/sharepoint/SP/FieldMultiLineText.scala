@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.FieldMultiLineText")
 @js.native
-class FieldMultiLineText () extends Field {
+trait FieldMultiLineText extends Field {
   def get_allowHyperlink(): Boolean = js.native
   def get_appendOnly(): Boolean = js.native
   def get_numberOfLines(): Double = js.native

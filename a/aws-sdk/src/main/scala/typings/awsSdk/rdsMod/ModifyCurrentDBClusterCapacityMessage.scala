@@ -28,13 +28,13 @@ object ModifyCurrentDBClusterCapacityMessage {
   @scala.inline
   def apply(
     DBClusterIdentifier: String,
-    Capacity: Int | scala.Double = null,
-    SecondsBeforeTimeout: Int | scala.Double = null,
+    Capacity: js.UndefOr[IntegerOptional] = js.undefined,
+    SecondsBeforeTimeout: js.UndefOr[IntegerOptional] = js.undefined,
     TimeoutAction: String = null
   ): ModifyCurrentDBClusterCapacityMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
-    if (Capacity != null) __obj.updateDynamic("Capacity")(Capacity.asInstanceOf[js.Any])
-    if (SecondsBeforeTimeout != null) __obj.updateDynamic("SecondsBeforeTimeout")(SecondsBeforeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Capacity)) __obj.updateDynamic("Capacity")(Capacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SecondsBeforeTimeout)) __obj.updateDynamic("SecondsBeforeTimeout")(SecondsBeforeTimeout.get.asInstanceOf[js.Any])
     if (TimeoutAction != null) __obj.updateDynamic("TimeoutAction")(TimeoutAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCurrentDBClusterCapacityMessage]
   }

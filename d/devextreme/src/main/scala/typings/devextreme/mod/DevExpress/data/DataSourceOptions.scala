@@ -1,7 +1,7 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.AnonChanges
-import typings.devextreme.AnonMessage
+import typings.devextreme.anon.Changes
+import typings.devextreme.anon.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +18,9 @@ trait DataSourceOptions extends js.Object {
   /** @name DataSource.Options.map */
   var map: js.UndefOr[js.Function1[/* dataItem */ js.Any, _]] = js.undefined
   /** @name DataSource.Options.onChanged */
-  var onChanged: js.UndefOr[js.Function1[/* e */ AnonChanges, _]] = js.undefined
+  var onChanged: js.UndefOr[js.Function1[/* e */ Changes, _]] = js.undefined
   /** @name DataSource.Options.onLoadError */
-  var onLoadError: js.UndefOr[js.Function1[/* error */ AnonMessage, _]] = js.undefined
+  var onLoadError: js.UndefOr[js.Function1[/* error */ Message, _]] = js.undefined
   /** @name DataSource.Options.onLoadingChanged */
   var onLoadingChanged: js.UndefOr[js.Function1[/* isLoading */ Boolean, _]] = js.undefined
   /** @name DataSource.Options.pageSize */
@@ -57,13 +57,13 @@ object DataSourceOptions {
     filter: String | js.Array[_] | js.Function = null,
     group: String | js.Array[_] | js.Function = null,
     map: /* dataItem */ js.Any => _ = null,
-    onChanged: /* e */ AnonChanges => _ = null,
-    onLoadError: /* error */ AnonMessage => _ = null,
+    onChanged: /* e */ Changes => _ = null,
+    onLoadError: /* error */ Message => _ = null,
     onLoadingChanged: /* isLoading */ Boolean => _ = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     paginate: js.UndefOr[Boolean] = js.undefined,
     postProcess: /* data */ js.Array[_] => js.Array[_] = null,
-    pushAggregationTimeout: Int | Double = null,
+    pushAggregationTimeout: js.UndefOr[Double] = js.undefined,
     requireTotalCount: js.UndefOr[Boolean] = js.undefined,
     reshapeOnPush: js.UndefOr[Boolean] = js.undefined,
     searchExpr: String | js.Function | (js.Array[String | js.Function]) = null,
@@ -82,12 +82,12 @@ object DataSourceOptions {
     if (onChanged != null) __obj.updateDynamic("onChanged")(js.Any.fromFunction1(onChanged))
     if (onLoadError != null) __obj.updateDynamic("onLoadError")(js.Any.fromFunction1(onLoadError))
     if (onLoadingChanged != null) __obj.updateDynamic("onLoadingChanged")(js.Any.fromFunction1(onLoadingChanged))
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate.get.asInstanceOf[js.Any])
     if (postProcess != null) __obj.updateDynamic("postProcess")(js.Any.fromFunction1(postProcess))
-    if (pushAggregationTimeout != null) __obj.updateDynamic("pushAggregationTimeout")(pushAggregationTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireTotalCount)) __obj.updateDynamic("requireTotalCount")(requireTotalCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(reshapeOnPush)) __obj.updateDynamic("reshapeOnPush")(reshapeOnPush.asInstanceOf[js.Any])
+    if (!js.isUndefined(pushAggregationTimeout)) __obj.updateDynamic("pushAggregationTimeout")(pushAggregationTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireTotalCount)) __obj.updateDynamic("requireTotalCount")(requireTotalCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reshapeOnPush)) __obj.updateDynamic("reshapeOnPush")(reshapeOnPush.get.asInstanceOf[js.Any])
     if (searchExpr != null) __obj.updateDynamic("searchExpr")(searchExpr.asInstanceOf[js.Any])
     if (searchOperation != null) __obj.updateDynamic("searchOperation")(searchOperation.asInstanceOf[js.Any])
     if (searchValue != null) __obj.updateDynamic("searchValue")(searchValue.asInstanceOf[js.Any])

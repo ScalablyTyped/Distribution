@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LinuxParameters extends js.Object {
   /**
-    * The Linux capabilities for the container that are added to or dropped from the default configuration provided by Docker.  If you are using tasks that use the Fargate launch type, capabilities is supported but the add parameter is not supported. 
+    * The Linux capabilities for the container that are added to or dropped from the default configuration provided by Docker.  For tasks that use the Fargate launch type, capabilities is supported for all platform versions but the add parameter is only supported if using platform version 1.4.0 or later. 
     */
   var capabilities: js.UndefOr[KernelCapabilities] = js.native
   /**
@@ -41,19 +41,19 @@ object LinuxParameters {
   def apply(
     capabilities: KernelCapabilities = null,
     devices: DevicesList = null,
-    initProcessEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    maxSwap: Int | scala.Double = null,
-    sharedMemorySize: Int | scala.Double = null,
-    swappiness: Int | scala.Double = null,
+    initProcessEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
+    maxSwap: js.UndefOr[BoxedInteger] = js.undefined,
+    sharedMemorySize: js.UndefOr[BoxedInteger] = js.undefined,
+    swappiness: js.UndefOr[BoxedInteger] = js.undefined,
     tmpfs: TmpfsList = null
   ): LinuxParameters = {
     val __obj = js.Dynamic.literal()
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
     if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
-    if (!js.isUndefined(initProcessEnabled)) __obj.updateDynamic("initProcessEnabled")(initProcessEnabled.asInstanceOf[js.Any])
-    if (maxSwap != null) __obj.updateDynamic("maxSwap")(maxSwap.asInstanceOf[js.Any])
-    if (sharedMemorySize != null) __obj.updateDynamic("sharedMemorySize")(sharedMemorySize.asInstanceOf[js.Any])
-    if (swappiness != null) __obj.updateDynamic("swappiness")(swappiness.asInstanceOf[js.Any])
+    if (!js.isUndefined(initProcessEnabled)) __obj.updateDynamic("initProcessEnabled")(initProcessEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSwap)) __obj.updateDynamic("maxSwap")(maxSwap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sharedMemorySize)) __obj.updateDynamic("sharedMemorySize")(sharedMemorySize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swappiness)) __obj.updateDynamic("swappiness")(swappiness.get.asInstanceOf[js.Any])
     if (tmpfs != null) __obj.updateDynamic("tmpfs")(tmpfs.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinuxParameters]
   }

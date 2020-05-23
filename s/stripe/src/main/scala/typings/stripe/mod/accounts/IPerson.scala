@@ -1,9 +1,9 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.AnonAdditionaldocument
-import typings.stripe.AnonCurrentlydue
-import typings.stripe.AnonDay
-import typings.stripe.AnonDirector
+import typings.stripe.anon.Additionaldocument
+import typings.stripe.anon.Currentlydue
+import typings.stripe.anon.Day
+import typings.stripe.anon.Director
 import typings.stripe.mod.IAddress
 import typings.stripe.mod.IAddressKana
 import typings.stripe.mod.IAddressKanji
@@ -41,7 +41,7 @@ trait IPerson extends IPersonShared {
   /**
     * Information about the requirements for this person, including what information needs to be collected, and by when.
     */
-  var requirements: AnonCurrentlydue
+  var requirements: Currentlydue
   /**
     * Whether the person’s last 4 SSN digits was provided.
     */
@@ -49,7 +49,7 @@ trait IPerson extends IPersonShared {
   /**
     * The person’s verification document information.
     */
-  var verification: AnonAdditionaldocument
+  var verification: Additionaldocument
 }
 
 object IPerson {
@@ -60,14 +60,14 @@ object IPerson {
     id_number_provided: Boolean,
     metadata: IMetadata,
     `object`: person,
-    requirements: AnonCurrentlydue,
+    requirements: Currentlydue,
     ssn_last_4_provided: Boolean,
-    verification: AnonAdditionaldocument,
+    verification: Additionaldocument,
     account: String = null,
     address: IAddress = null,
     address_kana: IAddressKana = null,
     address_kanji: IAddressKanji = null,
-    dob: AnonDay = null,
+    dob: Day = null,
     email: String = null,
     first_name: String = null,
     first_name_kana: String = null,
@@ -78,7 +78,7 @@ object IPerson {
     last_name_kanji: String = null,
     maiden_name: String = null,
     phone: String = null,
-    relationship: AnonDirector = null
+    relationship: Director = null
   ): IPerson = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], id_number_provided = id_number_provided.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], requirements = requirements.asInstanceOf[js.Any], ssn_last_4_provided = ssn_last_4_provided.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])

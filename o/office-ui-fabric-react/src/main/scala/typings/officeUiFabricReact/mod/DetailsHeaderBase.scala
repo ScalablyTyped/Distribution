@@ -1,6 +1,5 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.AnonCollapseAllVisibility
 import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +16,6 @@ class DetailsHeaderBase protected ()
 @JSImport("office-ui-fabric-react", "DetailsHeaderBase")
 @js.native
 object DetailsHeaderBase extends js.Object {
-  var defaultProps: AnonCollapseAllVisibility = js.native
+  var defaultProps: typings.officeUiFabricReact.anon.CollapseAllVisibility = js.native
 }
 

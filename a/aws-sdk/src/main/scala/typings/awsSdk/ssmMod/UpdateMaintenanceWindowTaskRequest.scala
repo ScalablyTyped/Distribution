@@ -35,7 +35,7 @@ trait UpdateMaintenanceWindowTaskRequest extends js.Object {
     */
   var Replace: js.UndefOr[Boolean] = js.native
   /**
-    * The ARN of the IAM service role for Systems Manager to assume when running a maintenance window task. If you do not specify a service role ARN, Systems Manager uses your account's service-linked role. If no service-linked role for Systems Manager exists in your account, it is created when you run RegisterTaskWithMaintenanceWindow. For more information, see the following topics in the in the AWS Systems Manager User Guide:    Service-Linked Role Permissions for Systems Manager     Should I Use a Service-Linked Role or a Custom Service Role to Run Maintenance Window Tasks?    
+    * The ARN of the IAM service role for Systems Manager to assume when running a maintenance window task. If you do not specify a service role ARN, Systems Manager uses your account's service-linked role. If no service-linked role for Systems Manager exists in your account, it is created when you run RegisterTaskWithMaintenanceWindow. For more information, see the following topics in the in the AWS Systems Manager User Guide:    Using service-linked roles for Systems Manager     Should I use a service-linked role or a custom service role to run maintenance window tasks?    
     */
   var ServiceRoleArn: js.UndefOr[ServiceRole] = js.native
   /**
@@ -74,8 +74,8 @@ object UpdateMaintenanceWindowTaskRequest {
     MaxConcurrency: MaxConcurrency = null,
     MaxErrors: MaxErrors = null,
     Name: MaintenanceWindowName = null,
-    Priority: Int | Double = null,
-    Replace: js.UndefOr[scala.Boolean] = js.undefined,
+    Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined,
+    Replace: js.UndefOr[Boolean] = js.undefined,
     ServiceRoleArn: ServiceRole = null,
     Targets: Targets = null,
     TaskArn: MaintenanceWindowTaskArn = null,
@@ -88,8 +88,8 @@ object UpdateMaintenanceWindowTaskRequest {
     if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency.asInstanceOf[js.Any])
     if (MaxErrors != null) __obj.updateDynamic("MaxErrors")(MaxErrors.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(Replace)) __obj.updateDynamic("Replace")(Replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Replace)) __obj.updateDynamic("Replace")(Replace.get.asInstanceOf[js.Any])
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     if (TaskArn != null) __obj.updateDynamic("TaskArn")(TaskArn.asInstanceOf[js.Any])

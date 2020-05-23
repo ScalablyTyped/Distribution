@@ -30,10 +30,10 @@ object AdminSetUserPasswordRequest {
     Password: PasswordType,
     UserPoolId: UserPoolIdType,
     Username: UsernameType,
-    Permanent: js.UndefOr[Boolean] = js.undefined
+    Permanent: js.UndefOr[BooleanType] = js.undefined
   ): AdminSetUserPasswordRequest = {
     val __obj = js.Dynamic.literal(Password = Password.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (!js.isUndefined(Permanent)) __obj.updateDynamic("Permanent")(Permanent.asInstanceOf[js.Any])
+    if (!js.isUndefined(Permanent)) __obj.updateDynamic("Permanent")(Permanent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminSetUserPasswordRequest]
   }
 }

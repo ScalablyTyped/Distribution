@@ -29,35 +29,35 @@ object Options {
   def apply(
     chan: js.Array[String] = null,
     ipv6: js.UndefOr[Boolean] = js.undefined,
-    linger: Int | Double = null,
-    maxreconn: Int | Double = null,
+    linger: js.UndefOr[Double] = js.undefined,
+    maxreconn: js.UndefOr[Double] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
-    rcvbuf: Int | Double = null,
-    rcvmaxsize: Int | Double = null,
-    rcvprio: Int | Double = null,
-    rcvtimeo: Int | Double = null,
-    reconn: Int | Double = null,
-    sndbuf: Int | Double = null,
-    sndprio: Int | Double = null,
-    sndtimeo: Int | Double = null,
+    rcvbuf: js.UndefOr[Double] = js.undefined,
+    rcvmaxsize: js.UndefOr[Double] = js.undefined,
+    rcvprio: js.UndefOr[Double] = js.undefined,
+    rcvtimeo: js.UndefOr[Double] = js.undefined,
+    reconn: js.UndefOr[Double] = js.undefined,
+    sndbuf: js.UndefOr[Double] = js.undefined,
+    sndprio: js.UndefOr[Double] = js.undefined,
+    sndtimeo: js.UndefOr[Double] = js.undefined,
     tcpnodelay: js.UndefOr[Boolean] = js.undefined,
     wsopt: text | binary = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (chan != null) __obj.updateDynamic("chan")(chan.asInstanceOf[js.Any])
-    if (!js.isUndefined(ipv6)) __obj.updateDynamic("ipv6")(ipv6.asInstanceOf[js.Any])
-    if (linger != null) __obj.updateDynamic("linger")(linger.asInstanceOf[js.Any])
-    if (maxreconn != null) __obj.updateDynamic("maxreconn")(maxreconn.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (rcvbuf != null) __obj.updateDynamic("rcvbuf")(rcvbuf.asInstanceOf[js.Any])
-    if (rcvmaxsize != null) __obj.updateDynamic("rcvmaxsize")(rcvmaxsize.asInstanceOf[js.Any])
-    if (rcvprio != null) __obj.updateDynamic("rcvprio")(rcvprio.asInstanceOf[js.Any])
-    if (rcvtimeo != null) __obj.updateDynamic("rcvtimeo")(rcvtimeo.asInstanceOf[js.Any])
-    if (reconn != null) __obj.updateDynamic("reconn")(reconn.asInstanceOf[js.Any])
-    if (sndbuf != null) __obj.updateDynamic("sndbuf")(sndbuf.asInstanceOf[js.Any])
-    if (sndprio != null) __obj.updateDynamic("sndprio")(sndprio.asInstanceOf[js.Any])
-    if (sndtimeo != null) __obj.updateDynamic("sndtimeo")(sndtimeo.asInstanceOf[js.Any])
-    if (!js.isUndefined(tcpnodelay)) __obj.updateDynamic("tcpnodelay")(tcpnodelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipv6)) __obj.updateDynamic("ipv6")(ipv6.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linger)) __obj.updateDynamic("linger")(linger.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxreconn)) __obj.updateDynamic("maxreconn")(maxreconn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rcvbuf)) __obj.updateDynamic("rcvbuf")(rcvbuf.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rcvmaxsize)) __obj.updateDynamic("rcvmaxsize")(rcvmaxsize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rcvprio)) __obj.updateDynamic("rcvprio")(rcvprio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rcvtimeo)) __obj.updateDynamic("rcvtimeo")(rcvtimeo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconn)) __obj.updateDynamic("reconn")(reconn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sndbuf)) __obj.updateDynamic("sndbuf")(sndbuf.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sndprio)) __obj.updateDynamic("sndprio")(sndprio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sndtimeo)) __obj.updateDynamic("sndtimeo")(sndtimeo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tcpnodelay)) __obj.updateDynamic("tcpnodelay")(tcpnodelay.get.asInstanceOf[js.Any])
     if (wsopt != null) __obj.updateDynamic("wsopt")(wsopt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -6,54 +6,54 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a local notification is received by the application.
-		 */
+  * Fired when a local notification is received by the application.
+  */
 trait iOSNotificationEvent extends iOSBaseEvent {
   /**
-  			 * Alert button text ('View', by default) or slider text ('slide to unlock...', by default).
-  			 */
+    * Alert button text ('View', by default) or slider text ('slide to unlock...', by default).
+    */
   var alertAction: String
   /**
-  			 * Alert message.
-  			 */
+    * Alert message.
+    */
   var alertBody: String
   /**
-  			 * Image displayed instead of `Default.png` when launching the application.
-  			 */
+    * Image displayed instead of `Default.png` when launching the application.
+    */
   var alertLaunchImage: String
   /**
-  			 * Application badge value.
-  			 */
+    * Application badge value.
+    */
   var badge: Double
   /**
-  			 * The identifier of the app-defined [category object](Titanium.App.iOS.UserNotificationCategory). Available in Titanium SDK 7.5.0+ and iOS 10+.
-  			 */
+    * The identifier of the app-defined [category object](Titanium.App.iOS.UserNotificationCategory). Available in Titanium SDK 7.5.0+ and iOS 10+.
+    */
   var category: String
   /**
-  			 * Date and time when the notification was configured to fire.
-  			 */
+    * Date and time when the notification was configured to fire.
+    */
   var date: Date
   /**
-  			 * Boolean indicating if notification was received while app was in background. Available in Titanium SDK 6.2.0.
-  			 * On iOS 10+ this is no longer available since this event will only fire if the app is in foreground.
-  			 */
+    * Boolean indicating if notification was received while app was in background. Available in Titanium SDK 6.2.0.
+    * On iOS 10+ this is no longer available since this event will only fire if the app is in foreground.
+    */
   var inBackground: Boolean
   /**
-  			 * Name of the sound file configured to play when the notification was fired.
-  			 */
+    * Name of the sound file configured to play when the notification was fired.
+    */
   var sound: String
   /**
-  			 * The unique identifier for the thread or conversation related to this notification request.
-  			 * It will be used to visually group notifications together. Available in Titanium SDK 7.5.0+ and iOS 10+.
-  			 */
+    * The unique identifier for the thread or conversation related to this notification request.
+    * It will be used to visually group notifications together. Available in Titanium SDK 7.5.0+ and iOS 10+.
+    */
   var threadIdentifier: String
   /**
-  			 * Timezone of the date when the notification was configured to fire. Available in Titanium SDK 7.4.0+.
-  			 */
+    * Timezone of the date when the notification was configured to fire. Available in Titanium SDK 7.4.0+.
+    */
   var timezone: String
   /**
-  			 * Custom data object.
-  			 */
+    * Custom data object.
+    */
   var userInfo: js.Any
 }
 

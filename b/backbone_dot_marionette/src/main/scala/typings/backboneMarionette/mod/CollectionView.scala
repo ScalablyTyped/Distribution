@@ -2,9 +2,10 @@ package typings.backboneMarionette.mod
 
 import typings.backbone.mod.Collection
 import typings.backbone.mod.Model
-import typings.backboneMarionette.AnonInstantiable
-import typings.backboneMarionette.AnonInstantiableView
-import typings.backboneMarionette.AnonPreventRender
+import typings.backbone.mod.ModelSetOptions
+import typings.backboneMarionette.anon.Instantiable
+import typings.backboneMarionette.anon.InstantiableView
+import typings.backboneMarionette.anon.PreventRender
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
 import typings.std.DocumentFragment
 import scala.scalajs.js
@@ -13,12 +14,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone.marionette", "CollectionView")
 @js.native
-class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollection /* <: Collection[TModel] */] () extends View[TModel] {
+class CollectionView[TModel /* <: Model[_, ModelSetOptions] */, TView /* <: View[TModel] */, TCollection /* <: Collection[TModel] */] () extends View[TModel] {
   def this(options: CollectionViewOptions[TModel, TCollection]) = this()
   /**
     * Specify a child view to use.
     */
-  var childView: (js.Function1[/* model */ TModel, AnonInstantiable[TView, TModel]]) | (AnonInstantiable[TView, TModel]) = js.native
+  var childView: (js.Function1[/* model */ TModel, Instantiable[TView, TModel]]) | (Instantiable[TView, TModel]) = js.native
   /**
     * Customize the event prefix for events that are forwarded through the
     * collection view.
@@ -54,7 +55,7 @@ class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollec
   /**
     * Specify a view to use if the collection has no children.
     */
-  var emptyView: js.Function0[AnonInstantiableView[TModel]] | AnonInstantiableView[TModel] = js.native
+  var emptyView: js.Function0[InstantiableView[TModel]] | InstantiableView[TModel] = js.native
   /**
     * Define options to pass to the emptyView constructor.
     */
@@ -88,11 +89,7 @@ class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollec
     * The buildChildView is responsible for taking the ChildView class and
     * instantiating it with the appropriate data.
     */
-  def buildChildView(
-    child: TModel,
-    childViewClass: AnonInstantiable[TView, TModel],
-    childViewOptions: ViewOptions[TModel]
-  ): Unit = js.native
+  def buildChildView(child: TModel, childViewClass: Instantiable[TView, TModel], childViewOptions: ViewOptions[TModel]): Unit = js.native
   /**
     * Automatically destroys this Collection's children and cleans up
     * listeners.
@@ -157,7 +154,7 @@ class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollec
   /**
     * Remove a filter from the CollectionView.
     */
-  def removeFilter(options: AnonPreventRender): Unit = js.native
+  def removeFilter(options: PreventRender): Unit = js.native
   /**
     * If reorderOnSort is set to true, this function will be used instead
     * of re-rendering all children.
@@ -183,7 +180,7 @@ class CollectionView[TModel /* <: Model */, TView /* <: View[TModel] */, TCollec
       /* collection */ js.UndefOr[TCollection], 
       Boolean
     ],
-    options: AnonPreventRender
+    options: PreventRender
   ): Unit = js.native
 }
 

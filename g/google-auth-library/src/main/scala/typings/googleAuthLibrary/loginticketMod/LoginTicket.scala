@@ -1,6 +1,6 @@
 package typings.googleAuthLibrary.loginticketMod
 
-import typings.googleAuthLibrary.AnonEnvelope
+import typings.googleAuthLibrary.anon.Envelope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ class LoginTicket () extends js.Object {
     *
     * @return The envelope and payload
     */
-  def getAttributes(): AnonEnvelope = js.native
+  def getAttributes(): Envelope = js.native
   def getEnvelope(): js.UndefOr[String] = js.native
   def getPayload(): js.UndefOr[TokenPayload] = js.native
   /**

@@ -12,9 +12,9 @@ trait IValidationResult extends js.Object {
 
 object IValidationResult {
   @scala.inline
-  def apply(validationErrors: js.Array[IValidationError] = null): IValidationResult = {
+  def apply(validationErrors: js.UndefOr[Null | js.Array[IValidationError]] = js.undefined): IValidationResult = {
     val __obj = js.Dynamic.literal()
-    if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(validationErrors)) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidationResult]
   }
 }

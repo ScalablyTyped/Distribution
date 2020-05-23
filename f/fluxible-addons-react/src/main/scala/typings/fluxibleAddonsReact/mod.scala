@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.dispatchr.mod.DispatcherInterface
 import typings.fluxible.baseStoreMod.^
 import typings.fluxible.mod.ComponentContext
+import typings.fluxibleAddonsReact.anon.TypeofComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

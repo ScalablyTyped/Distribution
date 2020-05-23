@@ -1,6 +1,6 @@
 package typings.pendoIoBrowser.pendo
 
-import typings.pendoIoBrowser.AnonAuto
+import typings.pendoIoBrowser.anon.Auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Debugging extends js.Object {
    // TODO
   def getAllGuides(): js.Array[Guide]
-  def getAutoGuides(): AnonAuto
+  def getAutoGuides(): Auto
   def getBadgeGuides(): js.Array[Guide]
   def getEventCache(): js.Array[_]
   def getLauncherGuides(): js.Array[Guide]
@@ -18,7 +18,7 @@ object Debugging {
   @scala.inline
   def apply(
     getAllGuides: () => js.Array[Guide],
-    getAutoGuides: () => AnonAuto,
+    getAutoGuides: () => Auto,
     getBadgeGuides: () => js.Array[Guide],
     getEventCache: () => js.Array[_],
     getLauncherGuides: () => js.Array[Guide]

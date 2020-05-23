@@ -55,20 +55,20 @@ object RNFetchBlobConfig {
     overwrite: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
     session: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     trusty: js.UndefOr[Boolean] = js.undefined
   ): RNFetchBlobConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IOSBackgroundTask)) __obj.updateDynamic("IOSBackgroundTask")(IOSBackgroundTask.asInstanceOf[js.Any])
+    if (!js.isUndefined(IOSBackgroundTask)) __obj.updateDynamic("IOSBackgroundTask")(IOSBackgroundTask.get.asInstanceOf[js.Any])
     if (addAndroidDownloads != null) __obj.updateDynamic("addAndroidDownloads")(addAndroidDownloads.asInstanceOf[js.Any])
     if (appendExt != null) __obj.updateDynamic("appendExt")(appendExt.asInstanceOf[js.Any])
-    if (!js.isUndefined(fileCache)) __obj.updateDynamic("fileCache")(fileCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileCache)) __obj.updateDynamic("fileCache")(fileCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(trusty)) __obj.updateDynamic("trusty")(trusty.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trusty)) __obj.updateDynamic("trusty")(trusty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RNFetchBlobConfig]
   }
 }

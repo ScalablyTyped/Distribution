@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -107,47 +106,6 @@ object AggregationFunction extends js.Object {
     */
   @js.native
   sealed trait varianceP extends AggregationFunction
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AggregationFunction with String] = js.native
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "Average" */ @js.native
-  object average extends TopLevel[average with String]
-  
-  /* "Count" */ @js.native
-  object count extends TopLevel[count with String]
-  
-  /* "CountNumbers" */ @js.native
-  object countNumbers extends TopLevel[countNumbers with String]
-  
-  /* "Max" */ @js.native
-  object max extends TopLevel[max with String]
-  
-  /* "Min" */ @js.native
-  object min extends TopLevel[min with String]
-  
-  /* "Product" */ @js.native
-  object product extends TopLevel[product with String]
-  
-  /* "StandardDeviation" */ @js.native
-  object standardDeviation extends TopLevel[standardDeviation with String]
-  
-  /* "StandardDeviationP" */ @js.native
-  object standardDeviationP extends TopLevel[standardDeviationP with String]
-  
-  /* "Sum" */ @js.native
-  object sum extends TopLevel[sum with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
-  /* "Variance" */ @js.native
-  object variance extends TopLevel[variance with String]
-  
-  /* "VarianceP" */ @js.native
-  object varianceP extends TopLevel[varianceP with String]
   
 }
 

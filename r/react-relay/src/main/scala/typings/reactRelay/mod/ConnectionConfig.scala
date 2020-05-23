@@ -1,6 +1,6 @@
 package typings.reactRelay.mod
 
-import typings.reactRelay.AnonCount
+import typings.reactRelay.anon.Count
 import typings.reactRelay.reactRelayStrings.backward
 import typings.reactRelay.reactRelayStrings.forward
 import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
@@ -14,13 +14,13 @@ trait ConnectionConfig[Props] extends js.Object {
   var getConnectionFromProps: js.UndefOr[js.Function1[/* props */ Props, js.UndefOr[ConnectionData | Null]]] = js.undefined
   var getFragmentVariables: js.UndefOr[js.Function2[/* prevVars */ Variables, /* totalCount */ Double, Variables]] = js.undefined
   var query: GraphQLTaggedNode
-  def getVariables(props: Props, paginationInfo: AnonCount, fragmentVariables: Variables): Variables
+  def getVariables(props: Props, paginationInfo: Count, fragmentVariables: Variables): Variables
 }
 
 object ConnectionConfig {
   @scala.inline
   def apply[Props](
-    getVariables: (Props, AnonCount, Variables) => Variables,
+    getVariables: (Props, Count, Variables) => Variables,
     query: GraphQLTaggedNode,
     direction: backward | forward = null,
     getConnectionFromProps: /* props */ Props => js.UndefOr[ConnectionData | Null] = null,

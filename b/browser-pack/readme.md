@@ -1,7 +1,7 @@
 
 # Scala.js typings for browser-pack
 
-Typings are for version v6.0.1
+Typings are for version 6.1
 
 ## Library description:
 pack node-style source files from a json stream into a browser bundle

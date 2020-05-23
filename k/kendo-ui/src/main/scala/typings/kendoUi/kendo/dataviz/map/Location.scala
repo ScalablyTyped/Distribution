@@ -5,32 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.map.Location")
-@js.native
-class Location protected () extends Class {
-  def this(lat: Double, lng: Double) = this()
-  var lat: Double = js.native
-  var lng: Double = js.native
-  var options: LocationOptions = js.native
-  def destination(destination: Location, bearing: Double): Double = js.native
-  def distanceTo(distance: Double, bearing: Double): Location = js.native
-  def equals(location: Location): Boolean = js.native
-  def round(digits: Double): Location = js.native
-  def toArray(): js.Any = js.native
-  def wrap(): Location = js.native
+trait Location extends Class {
+  var lat: Double
+  var lng: Double
+  var options: LocationOptions
+  def destination(destination: Location, bearing: Double): Double
+  def distanceTo(distance: Double, bearing: Double): Location
+  def equals(location: Location): Boolean
+  def round(digits: Double): Location
+  def toArray(): js.Any
+  def wrap(): Location
 }
 
-/* static members */
-@JSGlobal("kendo.dataviz.map.Location")
-@js.native
-object Location extends js.Object {
-  def create(lat: js.Any): Location = js.native
-  def create(lat: js.Any, lng: Double): Location = js.native
-  def create(lat: Double): Location = js.native
-  def create(lat: Double, lng: Double): Location = js.native
-  def create(lat: Location): Location = js.native
-  def create(lat: Location, lng: Double): Location = js.native
-  def fromLatLng(lnglat: js.Any): Location = js.native
-  def fromLngLat(lnglat: js.Any): Location = js.native
+object Location {
+  @scala.inline
+  def apply(
+    destination: (Location, Double) => Double,
+    distanceTo: (Double, Double) => Location,
+    equals: Location => Boolean,
+    lat: Double,
+    lng: Double,
+    options: LocationOptions,
+    round: Double => Location,
+    toArray: () => js.Any,
+    wrap: () => Location
+  ): Location = {
+    val __obj = js.Dynamic.literal(destination = js.Any.fromFunction2(destination), distanceTo = js.Any.fromFunction2(distanceTo), equals = js.Any.fromFunction1(equals), lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], round = js.Any.fromFunction1(round), toArray = js.Any.fromFunction0(toArray), wrap = js.Any.fromFunction0(wrap))
+    __obj.asInstanceOf[Location]
+  }
 }
 

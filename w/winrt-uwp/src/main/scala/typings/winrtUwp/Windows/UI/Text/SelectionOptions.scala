@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object SelectionOptions extends js.Object {
   /** The start position of the selection is the active end; that is, the end that is changed by pressing Shift+Right Arrow and Shift+Left Arrow. */
   @js.native
   sealed trait startActive extends SelectionOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SelectionOptions with Double] = js.native
-  /* 3 */ @js.native
-  object active extends TopLevel[active with Double]
-  
-  /* 1 */ @js.native
-  object atEndOfLine extends TopLevel[atEndOfLine with Double]
-  
-  /* 2 */ @js.native
-  object overtype extends TopLevel[overtype with Double]
-  
-  /* 4 */ @js.native
-  object replace extends TopLevel[replace with Double]
-  
-  /* 0 */ @js.native
-  object startActive extends TopLevel[startActive with Double]
   
 }
 

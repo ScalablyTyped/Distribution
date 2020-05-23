@@ -30,14 +30,14 @@ object DateBodyProps {
     disabledDate: DateType => Boolean = null,
     prefixColumn: DateType => ReactNode = null,
     rowClassName: DateType => String = null,
-    value: DateType = null
+    value: js.UndefOr[Null | DateType] = js.undefined
   ): DateBodyProps[DateType] = {
     val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], onSelect = js.Any.fromFunction1(onSelect), prefixCls = prefixCls.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], viewDate = viewDate.asInstanceOf[js.Any])
     if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
     if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1(disabledDate))
     if (prefixColumn != null) __obj.updateDynamic("prefixColumn")(js.Any.fromFunction1(prefixColumn))
     if (rowClassName != null) __obj.updateDynamic("rowClassName")(js.Any.fromFunction1(rowClassName))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateBodyProps[DateType]]
   }
 }

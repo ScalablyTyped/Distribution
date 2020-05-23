@@ -21,15 +21,15 @@ object Consume {
     exclusive: js.UndefOr[Boolean] = js.undefined,
     noAck: js.UndefOr[Boolean] = js.undefined,
     noLocal: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null
+    priority: js.UndefOr[Double] = js.undefined
   ): Consume = {
     val __obj = js.Dynamic.literal()
     if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
     if (consumerTag != null) __obj.updateDynamic("consumerTag")(consumerTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.asInstanceOf[js.Any])
-    if (!js.isUndefined(noLocal)) __obj.updateDynamic("noLocal")(noLocal.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLocal)) __obj.updateDynamic("noLocal")(noLocal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Consume]
   }
 }

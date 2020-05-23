@@ -18,9 +18,9 @@ trait IonTab extends js.Object {
 
 object IonTab {
   @scala.inline
-  def apply(tab: String, component: ComponentRef = null): IonTab = {
+  def apply(tab: String, component: js.UndefOr[Null | ComponentRef] = js.undefined): IonTab = {
     val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonTab]
   }
 }

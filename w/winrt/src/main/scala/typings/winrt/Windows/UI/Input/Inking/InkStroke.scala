@@ -6,18 +6,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Inking.InkStroke")
-@js.native
-class InkStroke () extends IInkStroke {
-  /* CompleteClass */
-  override var boundingRect: Rect = js.native
-  /* CompleteClass */
-  override var drawingAttributes: InkDrawingAttributes = js.native
-  /* CompleteClass */
-  override var recognized: Boolean = js.native
-  /* CompleteClass */
-  override var selected: Boolean = js.native
-  /* CompleteClass */
-  override def getRenderingSegments(): IVectorView[InkStrokeRenderingSegment] = js.native
+trait InkStroke extends IInkStroke
+
+object InkStroke {
+  @scala.inline
+  def apply(
+    boundingRect: Rect,
+    drawingAttributes: InkDrawingAttributes,
+    getRenderingSegments: () => IVectorView[InkStrokeRenderingSegment],
+    recognized: Boolean,
+    selected: Boolean
+  ): InkStroke = {
+    val __obj = js.Dynamic.literal(boundingRect = boundingRect.asInstanceOf[js.Any], drawingAttributes = drawingAttributes.asInstanceOf[js.Any], getRenderingSegments = js.Any.fromFunction0(getRenderingSegments), recognized = recognized.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InkStroke]
+  }
 }
 

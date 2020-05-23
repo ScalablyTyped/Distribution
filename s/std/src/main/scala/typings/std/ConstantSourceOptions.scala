@@ -10,9 +10,9 @@ trait ConstantSourceOptions extends js.Object {
 
 object ConstantSourceOptions {
   @scala.inline
-  def apply(offset: Int | Double = null): ConstantSourceOptions = {
+  def apply(offset: js.UndefOr[Double] = js.undefined): ConstantSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstantSourceOptions]
   }
 }

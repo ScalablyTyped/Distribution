@@ -14,13 +14,13 @@ trait AutoPlay extends js.Object
 
 object AutoPlay {
   /**
-  		 * Video will autoplay when loaded.
-  		 */
+    * Video will autoplay when loaded.
+    */
   @scala.inline
   def AutoPlay: `1` = 1.asInstanceOf[`1`]
   /**
-  		 * Video does not autoplay.
-  		 */
+    * Video does not autoplay.
+    */
   @scala.inline
   def NoAutoPlay: `0` = 0.asInstanceOf[`0`]
 }

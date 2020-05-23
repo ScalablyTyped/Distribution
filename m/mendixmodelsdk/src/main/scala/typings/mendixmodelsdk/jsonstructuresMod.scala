@@ -64,7 +64,8 @@ object jsonstructuresMod extends js.Object {
       * In version 6.6.0: removed experimental
       * In version 6.2.0: introduced
       */
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.unitsMod.IAbstractUnit because Already inherited

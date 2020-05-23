@@ -19,13 +19,13 @@ object TestOptions {
   @scala.inline
   def apply(
     skip: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     todo: js.UndefOr[Boolean] = js.undefined
   ): TestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(todo)) __obj.updateDynamic("todo")(todo.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(todo)) __obj.updateDynamic("todo")(todo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestOptions]
   }
 }

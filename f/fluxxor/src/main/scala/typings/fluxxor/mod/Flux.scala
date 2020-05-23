@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fluxxor", "Flux")
 @js.native
 class Flux protected ()
-  extends EventEmitter[String | js.Symbol] {
+  extends EventEmitter[String | js.Symbol, js.Any] {
   def this(stores: js.Any, actions: js.Any) = this()
   var actions: js.Any = js.native
   var stores: js.Any = js.native

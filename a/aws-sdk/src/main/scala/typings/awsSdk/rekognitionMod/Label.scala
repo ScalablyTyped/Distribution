@@ -27,13 +27,13 @@ trait Label extends js.Object {
 object Label {
   @scala.inline
   def apply(
-    Confidence: Int | Double = null,
+    Confidence: js.UndefOr[Percent] = js.undefined,
     Instances: Instances = null,
     Name: String = null,
     Parents: Parents = null
   ): Label = {
     val __obj = js.Dynamic.literal()
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
     if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Parents != null) __obj.updateDynamic("Parents")(Parents.asInstanceOf[js.Any])

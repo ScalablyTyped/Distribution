@@ -7,27 +7,26 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientWebDocumentViewer.EditingFieldChanged and ASPxClientReportDesigner.PreviewEditingFieldChanged events.
   */
-@JSGlobal("ASPxClientWebDocumentViewerEditingFieldChangedEventArgs")
-@js.native
-class ASPxClientWebDocumentViewerEditingFieldChangedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Creates a new instance of the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs class with the specified settings.
-    * @param field An editing field whose value has been changed. This value is assigned to the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs.Field property.
-    * @param oldValue An object that specifies an editing field's previous value. This value is assigned to the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs.OldValue property.
-    * @param newValue An object that specifies an editing field's new value. This value is assigned to the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs.NewValue property.
-    */
-  def this(field: ASPxClientWebDocumentViewerEditingField, oldValue: js.Any, newValue: js.Any) = this()
+trait ASPxClientWebDocumentViewerEditingFieldChangedEventArgs extends ASPxClientEventArgs {
   /**
     * Gets an editing field whose value has been changed.
     */
-  var Field: ASPxClientWebDocumentViewerEditingField = js.native
+  var Field: ASPxClientWebDocumentViewerEditingField
   /**
     * Provides access to a new value of an editing field.
     */
-  var NewValue: js.Any = js.native
+  var NewValue: js.Any
   /**
     * Provides access to a previous value of an editing field.
     */
-  var OldValue: js.Any = js.native
+  var OldValue: js.Any
+}
+
+object ASPxClientWebDocumentViewerEditingFieldChangedEventArgs {
+  @scala.inline
+  def apply(Field: ASPxClientWebDocumentViewerEditingField, NewValue: js.Any, OldValue: js.Any): ASPxClientWebDocumentViewerEditingFieldChangedEventArgs = {
+    val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any], NewValue = NewValue.asInstanceOf[js.Any], OldValue = OldValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientWebDocumentViewerEditingFieldChangedEventArgs]
+  }
 }
 

@@ -23,12 +23,12 @@ object EmailOptions {
   @scala.inline
   def apply(
     errorLevel: Double | Boolean = null,
-    minDomainAtoms: Int | Double = null,
+    minDomainAtoms: js.UndefOr[Double] = js.undefined,
     tldWhitelist: js.Array[String] | js.Object = null
   ): EmailOptions = {
     val __obj = js.Dynamic.literal()
     if (errorLevel != null) __obj.updateDynamic("errorLevel")(errorLevel.asInstanceOf[js.Any])
-    if (minDomainAtoms != null) __obj.updateDynamic("minDomainAtoms")(minDomainAtoms.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDomainAtoms)) __obj.updateDynamic("minDomainAtoms")(minDomainAtoms.get.asInstanceOf[js.Any])
     if (tldWhitelist != null) __obj.updateDynamic("tldWhitelist")(tldWhitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailOptions]
   }

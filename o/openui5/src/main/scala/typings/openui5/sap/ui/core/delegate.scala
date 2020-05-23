@@ -14,16 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object delegate extends js.Object {
   @js.native
-  class ItemNavigation protected () extends EventProvider {
-    /**
-      * Creates an <code>ItemNavigation</code> delegate that can be attached to controls
-      * requiringcapabilities for keyboard navigation between items.
-      * @param oDomRef The root DOM reference that includes all items
-      * @param aItemDomRefs Array of DOM references representing the items for the navigation
-      * @param bNotInTabChain Whether the selected element should be in the tab chain or not
-      */
-    def this(oDomRef: Element, aItemDomRefs: js.Array[Element]) = this()
-    def this(oDomRef: Element, aItemDomRefs: js.Array[Element], bNotInTabChain: Boolean) = this()
+  trait ItemNavigation extends EventProvider {
     /**
       * Returns disabled modifiersThese modifiers will not be handled by the <code>ItemNavigation</code>
       * @param oDisabledModifiers Object that includes event type with disabled keys as an array
@@ -108,8 +99,8 @@ object delegate extends js.Object {
       * (navigation in a grid).
       * @param bTableMode Set to true if table mode should be used, else false
       * @param bTableList This sets a different behavior for table mode.In this mode we keep using table
-      * navigation but there are some differences. e.g.<ul>	<li>Page-up moves focus to the first row, not to
-      * the first cell like in table mode</li>	<li>Page-down moves focus to the last row, not to the last
+      * navigation but there are some differences. e.g.<ul>    <li>Page-up moves focus to the first row, not to
+      * the first cell like in table mode</li>    <li>Page-down moves focus to the last row, not to the last
       * cell like in table mode</li></ul>
       * @returns <code>this</code> to allow method chaining
       */
@@ -118,7 +109,7 @@ object delegate extends js.Object {
   }
   
   @js.native
-  class ScrollEnablement () extends Object {
+  trait ScrollEnablement extends Object {
     def getChildPosition(vElement: JQueryStatic): js.Any = js.native
     /**
       * Calculates scroll position of a child of a container.

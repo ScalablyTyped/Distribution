@@ -1,7 +1,7 @@
 package typings.parseGlob.mod
 
-import typings.parseGlob.AnonBasename
-import typings.parseGlob.AnonBraces
+import typings.parseGlob.anon.Basename
+import typings.parseGlob.anon.Braces
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Result extends js.Object {
   /**
     * An object with boolean information about the glob.
     */
-  var is: AnonBraces
+  var is: Braces
   /**
     * A copy of the original, unmodified glob pattern.
     */
@@ -26,12 +26,12 @@ trait Result extends js.Object {
   /**
     * File path segments.
     */
-  var path: AnonBasename
+  var path: Basename
 }
 
 object Result {
   @scala.inline
-  def apply(base: String, glob: String, is: AnonBraces, orig: String, path: AnonBasename): Result = {
+  def apply(base: String, glob: String, is: Braces, orig: String, path: Basename): Result = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], glob = glob.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any], orig = orig.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }

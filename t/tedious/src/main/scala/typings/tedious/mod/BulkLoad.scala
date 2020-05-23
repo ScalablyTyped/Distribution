@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait BulkLoad extends js.Object {
   /**
     * Adds a column to the bulk load. The column definitions should match the table you are trying to insert into. Attempting to call addColumn after the first row has been added will throw an exception.
-    * @param name	The name of the column.
-    * @param type	One of the supported data types.
-    * @param options	Additional column type information. At a minimum, nullable must be set to true or false.
+    * @param name    The name of the column.
+    * @param type    One of the supported data types.
+    * @param options    Additional column type information. At a minimum, nullable must be set to true or false.
     */
   def addColumn(name: String, `type`: TediousType, options: BulkLoadColumnOpts): Unit = js.native
   /**
@@ -20,7 +20,7 @@ trait BulkLoad extends js.Object {
   def addRow(args: js.Any*): Unit = js.native
   /**
     * Adds a row to the bulk insert. This method accepts arguments in three different formats:
-    * @param columnArray	An array representing the values of each column in the same order which they were added to the bulkLoad object.
+    * @param columnArray    An array representing the values of each column in the same order which they were added to the bulkLoad object.
     */
   def addRow(columnArray: js.Array[_]): Unit = js.native
   /**

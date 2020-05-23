@@ -1,9 +1,9 @@
 package typings.exceljs.mod
 
-import typings.exceljs.PartialAlignment
-import typings.exceljs.PartialBorders
-import typings.exceljs.PartialFont
-import typings.exceljs.PartialProtection
+import typings.exceljs.anon.PartialAlignment
+import typings.exceljs.anon.PartialBorders
+import typings.exceljs.anon.PartialFont
+import typings.exceljs.anon.PartialProtection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,9 +12,7 @@ trait DeauthenticateData extends js.Object {
 object DeauthenticateData {
   @scala.inline
   def apply(oldAuthToken: js.Object = null, oldSignedAuthToken: String = null): DeauthenticateData = {
-    val __obj = js.Dynamic.literal()
-    if (oldAuthToken != null) __obj.updateDynamic("oldAuthToken")(oldAuthToken.asInstanceOf[js.Any])
-    if (oldSignedAuthToken != null) __obj.updateDynamic("oldSignedAuthToken")(oldSignedAuthToken.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(oldAuthToken = oldAuthToken.asInstanceOf[js.Any], oldSignedAuthToken = oldSignedAuthToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeauthenticateData]
   }
 }

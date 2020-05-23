@@ -1,6 +1,6 @@
 package typings.angularCompiler.compileMetadataMod
 
-import typings.angularCompiler.AnonModule
+import typings.angularCompiler.anon.Module
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ class TransitiveCompileNgModuleMetadata () extends js.Object {
   var modulesSet: Set[_] = js.native
   var pipes: js.Array[CompileIdentifierMetadata] = js.native
   var pipesSet: Set[_] = js.native
-  var providers: js.Array[AnonModule] = js.native
+  var providers: js.Array[Module] = js.native
   def addDirective(id: CompileIdentifierMetadata): Unit = js.native
   def addEntryComponent(ec: CompileEntryComponentMetadata): Unit = js.native
   def addExportedDirective(id: CompileIdentifierMetadata): Unit = js.native

@@ -1,10 +1,10 @@
 package typings.svgJs.mod
 
 import typings.std.HTMLElement
-import typings.svgJs.Anon
-import typings.svgJs.AnonAttrs
-import typings.svgJs.AnonDegrees
-import typings.svgJs.AnonDelimiter
+import typings.svgJs.anon.Attrs
+import typings.svgJs.anon.Degrees
+import typings.svgJs.anon.Delimiter
+import typings.svgJs.anon._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,14 +61,14 @@ trait Library extends js.Object {
   var Tspan: typings.svgJs.mod.Tspan = js.native
   var Use: typings.svgJs.mod.Use = js.native
   var ViewBox: typings.svgJs.mod.ViewBox = js.native
-  var defaults: AnonAttrs = js.native
+  var defaults: Attrs = js.native
   var did: Double = js.native
-  var easing: Anon = js.native
+  var easing: _empty = js.native
   var ns: String = js.native
-  var regex: AnonDelimiter = js.native
+  var regex: Delimiter = js.native
   var supported: Boolean = js.native
   var svgjs: String = js.native
-  var utils: AnonDegrees = js.native
+  var utils: Degrees = js.native
   var xlink: String = js.native
   var xmlns: String = js.native
   def apply(domElement: HTMLElement): Doc = js.native

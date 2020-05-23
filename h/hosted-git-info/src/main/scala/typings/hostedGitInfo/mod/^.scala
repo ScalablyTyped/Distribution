@@ -10,68 +10,17 @@ class ^ protected () extends GitHost {
   def this(
     `type`: Hosts,
     user: String,
-    auth: js.UndefOr[scala.Nothing],
+    auth: js.UndefOr[String],
     project: String,
-    committish: js.UndefOr[scala.Nothing],
+    committish: js.UndefOr[String],
     defaultRepresentation: String
   ) = this()
   def this(
     `type`: Hosts,
     user: String,
-    auth: js.UndefOr[scala.Nothing],
+    auth: js.UndefOr[String],
     project: String,
-    committish: String,
-    defaultRepresentation: String
-  ) = this()
-  def this(
-    `type`: Hosts,
-    user: String,
-    auth: String,
-    project: String,
-    committish: js.UndefOr[scala.Nothing],
-    defaultRepresentation: String
-  ) = this()
-  def this(
-    `type`: Hosts,
-    user: String,
-    auth: String,
-    project: String,
-    committish: String,
-    defaultRepresentation: String
-  ) = this()
-  def this(
-    `type`: Hosts,
-    user: String,
-    auth: js.UndefOr[scala.Nothing],
-    project: String,
-    committish: js.UndefOr[scala.Nothing],
-    defaultRepresentation: String,
-    opts: FillOptions
-  ) = this()
-  def this(
-    `type`: Hosts,
-    user: String,
-    auth: js.UndefOr[scala.Nothing],
-    project: String,
-    committish: String,
-    defaultRepresentation: String,
-    opts: FillOptions
-  ) = this()
-  def this(
-    `type`: Hosts,
-    user: String,
-    auth: String,
-    project: String,
-    committish: js.UndefOr[scala.Nothing],
-    defaultRepresentation: String,
-    opts: FillOptions
-  ) = this()
-  def this(
-    `type`: Hosts,
-    user: String,
-    auth: String,
-    project: String,
-    committish: String,
+    committish: js.UndefOr[String],
     defaultRepresentation: String,
     opts: FillOptions
   ) = this()

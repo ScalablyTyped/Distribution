@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.TableColumnData
 import typings.officeJs.Excel.Interfaces.TableColumnLoadOptions
 import typings.officeJs.Excel.Interfaces.TableColumnUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,36 +16,35 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.TableColumn")
 @js.native
-class TableColumn () extends ClientObject {
+trait TableColumn extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableColumn: RequestContext = js.native
   /**
     *
-    * Retrieve the filter applied to the column. Read-only.
+    * Retrieve the filter applied to the column.
     *
     * [Api set: ExcelApi 1.2]
     */
   val filter: Filter = js.native
   /**
     *
-    * Returns a unique key that identifies the column within the table. Read-only.
+    * Returns a unique key that identifies the column within the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   val id: Double = js.native
   /**
     *
-    * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+    * Returns the index number of the column within the columns collection of the table. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
   val index: Double = js.native
   /**
     *
-    * Represents the name of the table column.
+    * Specifies the name of the table column.
     *
     * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
     */
@@ -94,7 +93,7 @@ class TableColumn () extends ClientObject {
     */
   def load(): TableColumn = js.native
   def load(options: TableColumnLoadOptions): TableColumn = js.native
-  def load(propertyNamesAndPaths: AnonExpand): TableColumn = js.native
+  def load(propertyNamesAndPaths: Expand): TableColumn = js.native
   def load(propertyNames: String): TableColumn = js.native
   def load(propertyNames: js.Array[String]): TableColumn = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

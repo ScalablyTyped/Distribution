@@ -20,14 +20,14 @@ object DialogFacebookOptions {
     title: String,
     button: js.Array[DialogFacebookButton] = null,
     message: String = null,
-    multiselect: Int | Double = null,
-    quickfind: Int | Double = null
+    multiselect: js.UndefOr[Double] = js.undefined,
+    quickfind: js.UndefOr[Double] = js.undefined
   ): DialogFacebookOptions = {
     val __obj = js.Dynamic.literal(preSelected = preSelected.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (multiselect != null) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (quickfind != null) __obj.updateDynamic("quickfind")(quickfind.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quickfind)) __obj.updateDynamic("quickfind")(quickfind.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogFacebookOptions]
   }
 }

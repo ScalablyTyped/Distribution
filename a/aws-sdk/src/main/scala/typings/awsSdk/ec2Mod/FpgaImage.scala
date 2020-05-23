@@ -72,7 +72,7 @@ object FpgaImage {
   @scala.inline
   def apply(
     CreateTime: DateTime = null,
-    DataRetentionSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    DataRetentionSupport: js.UndefOr[Boolean] = js.undefined,
     Description: String = null,
     FpgaImageGlobalId: String = null,
     FpgaImageId: String = null,
@@ -81,7 +81,7 @@ object FpgaImage {
     OwnerId: String = null,
     PciId: PciId = null,
     ProductCodes: ProductCodeList = null,
-    Public: js.UndefOr[scala.Boolean] = js.undefined,
+    Public: js.UndefOr[Boolean] = js.undefined,
     ShellVersion: String = null,
     State: FpgaImageState = null,
     Tags: TagList = null,
@@ -89,7 +89,7 @@ object FpgaImage {
   ): FpgaImage = {
     val __obj = js.Dynamic.literal()
     if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataRetentionSupport)) __obj.updateDynamic("DataRetentionSupport")(DataRetentionSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataRetentionSupport)) __obj.updateDynamic("DataRetentionSupport")(DataRetentionSupport.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (FpgaImageGlobalId != null) __obj.updateDynamic("FpgaImageGlobalId")(FpgaImageGlobalId.asInstanceOf[js.Any])
     if (FpgaImageId != null) __obj.updateDynamic("FpgaImageId")(FpgaImageId.asInstanceOf[js.Any])
@@ -98,7 +98,7 @@ object FpgaImage {
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     if (PciId != null) __obj.updateDynamic("PciId")(PciId.asInstanceOf[js.Any])
     if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(Public)) __obj.updateDynamic("Public")(Public.asInstanceOf[js.Any])
+    if (!js.isUndefined(Public)) __obj.updateDynamic("Public")(Public.get.asInstanceOf[js.Any])
     if (ShellVersion != null) __obj.updateDynamic("ShellVersion")(ShellVersion.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

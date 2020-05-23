@@ -23,12 +23,12 @@ object Point {
   def apply(
     properties: js.Any,
     zoomTo: () => Unit,
-    pointPadding: Int | Double = null,
-    value: Int | Double = null
+    pointPadding: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Null | Double] = js.undefined
   ): Point = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], zoomTo = js.Any.fromFunction0(zoomTo))
-    if (pointPadding != null) __obj.updateDynamic("pointPadding")(pointPadding.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointPadding)) __obj.updateDynamic("pointPadding")(pointPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

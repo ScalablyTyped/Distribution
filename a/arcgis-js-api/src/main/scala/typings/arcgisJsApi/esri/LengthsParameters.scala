@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`preserve-shape`
 import typings.arcgisJsApi.arcgisJsApiStrings.geodesic
 import typings.arcgisJsApi.arcgisJsApiStrings.planar
@@ -44,8 +43,4 @@ trait LengthsParameters
     */
   var polylines: js.Array[Polyline] = js.native
 }
-
-@JSGlobal("__esri.LengthsParameters")
-@js.native
-object LengthsParameters extends TopLevel[LengthsParametersConstructor]
 

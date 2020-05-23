@@ -20,7 +20,7 @@ object FileConfig {
   def apply(
     aliases: js.Array[String] = null,
     bucketName: String = null,
-    chunkSize: Int | Double = null,
+    chunkSize: js.UndefOr[Double] = js.undefined,
     contentType: String = null,
     disableMD5: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
@@ -30,9 +30,9 @@ object FileConfig {
     val __obj = js.Dynamic.literal()
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMD5)) __obj.updateDynamic("disableMD5")(disableMD5.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMD5)) __obj.updateDynamic("disableMD5")(disableMD5.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])

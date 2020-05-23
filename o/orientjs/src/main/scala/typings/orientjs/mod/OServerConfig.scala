@@ -11,10 +11,10 @@ trait OServerConfig extends js.Object {
 
 object OServerConfig {
   @scala.inline
-  def apply(host: String = null, port: Int | Double = null): OServerConfig = {
+  def apply(host: String = null, port: js.UndefOr[Double] = js.undefined): OServerConfig = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OServerConfig]
   }
 }

@@ -1,5 +1,8 @@
 package typings.gapiYoutube
 
+import typings.gapiYoutube.anon.ChannelTitle
+import typings.gapiYoutube.anon.EndAt
+import typings.gapiYoutube.anon.PrivacyStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +11,7 @@ trait GoogleApiYouTubePlaylistItemResource extends js.Object {
   /**
     * The contentDetails object is included in the resource if the included item is a YouTube video. The object contains additional information about the video.
     */
-  var contentDetails: AnonEndAt
+  var contentDetails: EndAt
   /**
     * The ETag for the playlist item resource.
     */
@@ -24,22 +27,22 @@ trait GoogleApiYouTubePlaylistItemResource extends js.Object {
   /**
     * The snippet object contains basic details about the playlist item, such as its title and position in the playlist.
     */
-  var snippet: AnonPosition
+  var snippet: ChannelTitle
   /**
     * The status object contains information about the playlist items privacy status.
     */
-  var status: AnonPrivacyStatus
+  var status: PrivacyStatus
 }
 
 object GoogleApiYouTubePlaylistItemResource {
   @scala.inline
   def apply(
-    contentDetails: AnonEndAt,
+    contentDetails: EndAt,
     etag: String,
     id: String,
     kind: String,
-    snippet: AnonPosition,
-    status: AnonPrivacyStatus
+    snippet: ChannelTitle,
+    status: PrivacyStatus
   ): GoogleApiYouTubePlaylistItemResource = {
     val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiYouTubePlaylistItemResource]

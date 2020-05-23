@@ -22,7 +22,7 @@ object Event {
     checked: js.UndefOr[Boolean] = js.undefined
   ): Event = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

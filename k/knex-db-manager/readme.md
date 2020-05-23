@@ -1,7 +1,7 @@
 
 # Scala.js typings for knex-db-manager
 
-Typings are for version 0.5
+Typings are for version 0.6
 
 ## Library description:
 Collection of administrative database operations for knex supported databases

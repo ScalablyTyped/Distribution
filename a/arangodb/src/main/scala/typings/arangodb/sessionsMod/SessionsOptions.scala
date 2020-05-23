@@ -23,7 +23,7 @@ object SessionsOptions {
     autoCreate: js.UndefOr[Boolean] = js.undefined
   ): SessionsOptions = {
     val __obj = js.Dynamic.literal(storage = storage.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionsOptions]
   }
 }

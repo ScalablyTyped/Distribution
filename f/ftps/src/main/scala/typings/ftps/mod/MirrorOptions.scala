@@ -29,7 +29,7 @@ object MirrorOptions {
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
     if (remoteDir != null) __obj.updateDynamic("remoteDir")(remoteDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(upload)) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
+    if (!js.isUndefined(upload)) __obj.updateDynamic("upload")(upload.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MirrorOptions]
   }
 }

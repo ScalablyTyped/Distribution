@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone", "Collection")
 @js.native
-class Collection[TModel /* <: Model */] () extends js.Object {
+class Collection[TModel /* <: Model[_, ModelSetOptions] */] () extends js.Object {
   def this(models: js.Array[js.Object | TModel]) = this()
   def this(models: js.Array[js.Object | TModel], options: js.Any) = this()
   /**
@@ -27,7 +27,7 @@ class Collection[TModel /* <: Model */] () extends js.Object {
     * @memberof Collection
     */
   var url: String | js.Function0[String] = js.native
-  /* private */ def _isModel(obj: js.Any): /* is backbone.backbone.Model */ Boolean = js.native
+  /* private */ def _isModel(obj: js.Any): /* is backbone.backbone.Model<any, backbone.backbone.ModelSetOptions> */ Boolean = js.native
   /* private */ def _onModelEvent(event: String, model: TModel, collection: Collection[TModel], options: js.Any): Unit = js.native
   /* private */ def _prepareModel(): js.Any = js.native
   /* private */ def _prepareModel(attributes: js.Any): js.Any = js.native
@@ -91,14 +91,14 @@ class Collection[TModel /* <: Model */] () extends js.Object {
     * Get a model from a collection, specified by an id, a cid, or by passing in a model.
     **/
   def get(id: Double): TModel = js.native
-  def get(id: Model): TModel = js.native
+  def get(id: Model[_, ModelSetOptions]): TModel = js.native
   def groupBy(iterator: String): Dictionary[js.Array[TModel]] = js.native
   def groupBy(iterator: String, context: js.Any): Dictionary[js.Array[TModel]] = js.native
   def groupBy(iterator: ListIterator[TModel, _]): Dictionary[js.Array[TModel]] = js.native
   def groupBy(iterator: ListIterator[TModel, _], context: js.Any): Dictionary[js.Array[TModel]] = js.native
   def has(key: String): Boolean = js.native
   def has(key: Double): Boolean = js.native
-  def has(key: Model): Boolean = js.native
+  def has(key: Model[_, ModelSetOptions]): Boolean = js.native
   def head(): TModel = js.native
   def head(n: Double): js.Array[TModel] = js.native
   def include(value: TModel): Boolean = js.native

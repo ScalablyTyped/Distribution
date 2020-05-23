@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type RaphaelBasicEventHandler[ThisContext, TEvent /* <: typings.std.Event_ */] = /**
+  type RaphaelBasicEventHandler[ThisContext, TEvent /* <: typings.std.Event */] = /**
     * @param event The original DOM event that triggered the event this handler was registered for.
     * @return A value that is returned as the return value of the `document.addEventListener` callback.
     */
@@ -22,7 +22,7 @@ package object mod {
       /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
     ], 
     /* values */ TArgs, 
-    typings.raphael.PartialRaphaelAttributes
+    typings.raphael.anon.PartialRaphaelAttributes
   ]
   type RaphaelCustomEasingFormula = java.lang.String with js.Object
   type RaphaelDragOnEndHandler[ThisContext] = /**
@@ -136,7 +136,7 @@ package object mod {
     scala.Double, 
     scala.Double
   ]) | (js.Array[typings.raphael.raphaelStrings.Z | typings.raphael.raphaelStrings.z_])
-  type RaphaelPotentialFailure[T /* <: js.Object */] = T with typings.raphael.AnonError
+  type RaphaelPotentialFailure[T /* <: js.Object */] = T with typings.raphael.anon.Error
   type RaphaelSetPluginMethod[TTechnology /* <: typings.raphael.mod.RaphaelTechnology */, TArgs /* <: js.Array[_] */, TRetVal] = /**
     * @param args The arguments, as required by this set plugin. They need to be passed when the plugin method
     * is called on a {@link RaphaelSet}.

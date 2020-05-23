@@ -39,12 +39,6 @@ object reactionMod extends js.Object {
     def this(
       name: String,
       onInvalidate: js.Function0[Unit],
-      errorHandler: js.UndefOr[scala.Nothing],
-      requiresObservable: Boolean
-    ) = this()
-    def this(
-      name: String,
-      onInvalidate: js.Function0[Unit],
       errorHandler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit],
       requiresObservable: Boolean
     ) = this()

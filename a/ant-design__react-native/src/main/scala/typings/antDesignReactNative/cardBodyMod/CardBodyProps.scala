@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.cardBodyMod
 
-import typings.antDesignReactNative.PickCardStylebody
+import typings.antDesignReactNative.anon.PickCardStylebody
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
@@ -15,9 +15,12 @@ trait CardBodyProps extends WithThemeStyles[PickCardStylebody] {
 
 object CardBodyProps {
   @scala.inline
-  def apply(style: StyleProp[ViewStyle] = null, styles: Partial[PickCardStylebody] = null): CardBodyProps = {
+  def apply(
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    styles: Partial[PickCardStylebody] = null
+  ): CardBodyProps = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardBodyProps]
   }

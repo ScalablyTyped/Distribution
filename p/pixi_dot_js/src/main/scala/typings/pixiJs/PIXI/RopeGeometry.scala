@@ -19,12 +19,8 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   *
   */
-@JSGlobal("PIXI.RopeGeometry")
 @js.native
-class RopeGeometry () extends MeshGeometry {
-  def this(width: Double) = this()
-  def this(width: Double, points: js.Array[Point]) = this()
-  def this(width: Double, points: js.Array[Point], textureScale: Double) = this()
+trait RopeGeometry extends MeshGeometry {
   /**
     * An array of points that determine the rope
     * @member {PIXI.Point[]} PIXI.RopeGeometry#points

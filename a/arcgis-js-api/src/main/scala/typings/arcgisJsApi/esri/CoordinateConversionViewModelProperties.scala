@@ -66,7 +66,7 @@ object CoordinateConversionViewModelProperties {
     goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     locationSymbol: SimpleMarkerSymbolProperties | PictureMarkerSymbolProperties = null,
     mode: live | capture = null,
-    requestDelay: Int | Double = null,
+    requestDelay: js.UndefOr[Double] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null
   ): CoordinateConversionViewModelProperties = {
     val __obj = js.Dynamic.literal()
@@ -76,7 +76,7 @@ object CoordinateConversionViewModelProperties {
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     if (locationSymbol != null) __obj.updateDynamic("locationSymbol")(locationSymbol.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (requestDelay != null) __obj.updateDynamic("requestDelay")(requestDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestDelay)) __obj.updateDynamic("requestDelay")(requestDelay.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoordinateConversionViewModelProperties]
   }

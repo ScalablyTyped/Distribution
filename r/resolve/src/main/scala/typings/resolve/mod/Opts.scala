@@ -16,6 +16,16 @@ trait Opts extends js.Object {
   var moduleDirectory: js.UndefOr[String | js.Array[String]] = js.undefined
   /** transform the parsed package.json contents before looking at the "main" field */
   var packageFilter: js.UndefOr[js.Function2[/* pkg */ js.Any, /* pkgfile */ String, _]] = js.undefined
+  /** return the list of candidate paths where the packages sources may be found (probably don't use this) */
+  var packageIterator: js.UndefOr[
+    js.Function4[
+      /* request */ String, 
+      /* start */ String, 
+      /* getPackageCandidates */ js.Function0[js.Array[String]], 
+      /* opts */ Opts, 
+      js.Array[String]
+    ]
+  ] = js.undefined
   /** transform a path within a package */
   var pathFilter: js.UndefOr[
     js.Function3[/* pkg */ js.Any, /* path */ String, /* relativePath */ String, String]
@@ -40,6 +50,7 @@ object Opts {
     extensions: String | js.Array[String] = null,
     moduleDirectory: String | js.Array[String] = null,
     packageFilter: (/* pkg */ js.Any, /* pkgfile */ String) => _ = null,
+    packageIterator: (/* request */ String, /* start */ String, /* getPackageCandidates */ js.Function0[js.Array[String]], /* opts */ Opts) => js.Array[String] = null,
     pathFilter: (/* pkg */ js.Any, /* path */ String, /* relativePath */ String) => String = null,
     paths: String | js.Array[String] = null,
     preserveSymlinks: js.UndefOr[Boolean] = js.undefined
@@ -50,9 +61,10 @@ object Opts {
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (moduleDirectory != null) __obj.updateDynamic("moduleDirectory")(moduleDirectory.asInstanceOf[js.Any])
     if (packageFilter != null) __obj.updateDynamic("packageFilter")(js.Any.fromFunction2(packageFilter))
+    if (packageIterator != null) __obj.updateDynamic("packageIterator")(js.Any.fromFunction4(packageIterator))
     if (pathFilter != null) __obj.updateDynamic("pathFilter")(js.Any.fromFunction3(pathFilter))
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts]
   }
 }

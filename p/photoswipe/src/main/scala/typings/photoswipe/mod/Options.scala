@@ -1,6 +1,6 @@
 package typings.photoswipe.mod
 
-import typings.photoswipe.AnonW
+import typings.photoswipe.anon.W
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -118,7 +118,7 @@ trait Options extends js.Object {
     *
     * Default undefined.
     */
-  var getThumbBoundsFn: js.UndefOr[js.Function1[/* index */ Double, AnonW]] = js.undefined
+  var getThumbBoundsFn: js.UndefOr[js.Function1[/* index */ Double, W]] = js.undefined
   /**
     * The same as the previous option, just for closing (zoom-out) transition.
     * After PhotoSwipe is opened pswp--open class will be added to the root element, you may use it to apply different transition duration in CSS.
@@ -245,62 +245,62 @@ object Options {
   def apply(
     allowNoPanText: js.UndefOr[Boolean] = js.undefined,
     arrowKeys: js.UndefOr[Boolean] = js.undefined,
-    bgOpacity: Int | Double = null,
+    bgOpacity: js.UndefOr[Double] = js.undefined,
     closeOnScroll: js.UndefOr[Boolean] = js.undefined,
     closeOnVerticalDrag: js.UndefOr[Boolean] = js.undefined,
     errorMsg: String = null,
     escKey: js.UndefOr[Boolean] = js.undefined,
     focus: js.UndefOr[Boolean] = js.undefined,
-    galleryUID: Int | Double = null,
+    galleryUID: js.UndefOr[Double] = js.undefined,
     getDoubleTapZoom: (/* isMouseClick */ Boolean, /* item */ Item) => Double = null,
     getNumItemsFn: () => Double = null,
-    getThumbBoundsFn: /* index */ Double => AnonW = null,
-    hideAnimationDuration: Int | Double = null,
+    getThumbBoundsFn: /* index */ Double => W = null,
+    hideAnimationDuration: js.UndefOr[Double] = js.undefined,
     history: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     isClickableElement: /* el */ HTMLElement => Boolean = null,
     loop: js.UndefOr[Boolean] = js.undefined,
     mainClass: String = null,
-    mainScrollEndFriction: Int | Double = null,
-    maxSpreadZoom: Int | Double = null,
+    mainScrollEndFriction: js.UndefOr[Double] = js.undefined,
+    maxSpreadZoom: js.UndefOr[Double] = js.undefined,
     modal: js.UndefOr[Boolean] = js.undefined,
     mouseUsed: js.UndefOr[Boolean] = js.undefined,
-    panEndFriction: Int | Double = null,
+    panEndFriction: js.UndefOr[Double] = js.undefined,
     pinchToClose: js.UndefOr[Boolean] = js.undefined,
     preload: js.Array[Double] = null,
-    showAnimationDuration: Int | Double = null,
+    showAnimationDuration: js.UndefOr[Double] = js.undefined,
     showHideOpacity: js.UndefOr[Boolean] = js.undefined,
-    spacing: Int | Double = null
+    spacing: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNoPanText)) __obj.updateDynamic("allowNoPanText")(allowNoPanText.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowKeys)) __obj.updateDynamic("arrowKeys")(arrowKeys.asInstanceOf[js.Any])
-    if (bgOpacity != null) __obj.updateDynamic("bgOpacity")(bgOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnScroll)) __obj.updateDynamic("closeOnScroll")(closeOnScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnVerticalDrag)) __obj.updateDynamic("closeOnVerticalDrag")(closeOnVerticalDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNoPanText)) __obj.updateDynamic("allowNoPanText")(allowNoPanText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowKeys)) __obj.updateDynamic("arrowKeys")(arrowKeys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bgOpacity)) __obj.updateDynamic("bgOpacity")(bgOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnScroll)) __obj.updateDynamic("closeOnScroll")(closeOnScroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnVerticalDrag)) __obj.updateDynamic("closeOnVerticalDrag")(closeOnVerticalDrag.get.asInstanceOf[js.Any])
     if (errorMsg != null) __obj.updateDynamic("errorMsg")(errorMsg.asInstanceOf[js.Any])
-    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (galleryUID != null) __obj.updateDynamic("galleryUID")(galleryUID.asInstanceOf[js.Any])
+    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(galleryUID)) __obj.updateDynamic("galleryUID")(galleryUID.get.asInstanceOf[js.Any])
     if (getDoubleTapZoom != null) __obj.updateDynamic("getDoubleTapZoom")(js.Any.fromFunction2(getDoubleTapZoom))
     if (getNumItemsFn != null) __obj.updateDynamic("getNumItemsFn")(js.Any.fromFunction0(getNumItemsFn))
     if (getThumbBoundsFn != null) __obj.updateDynamic("getThumbBoundsFn")(js.Any.fromFunction1(getThumbBoundsFn))
-    if (hideAnimationDuration != null) __obj.updateDynamic("hideAnimationDuration")(hideAnimationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideAnimationDuration)) __obj.updateDynamic("hideAnimationDuration")(hideAnimationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (isClickableElement != null) __obj.updateDynamic("isClickableElement")(js.Any.fromFunction1(isClickableElement))
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass.asInstanceOf[js.Any])
-    if (mainScrollEndFriction != null) __obj.updateDynamic("mainScrollEndFriction")(mainScrollEndFriction.asInstanceOf[js.Any])
-    if (maxSpreadZoom != null) __obj.updateDynamic("maxSpreadZoom")(maxSpreadZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseUsed)) __obj.updateDynamic("mouseUsed")(mouseUsed.asInstanceOf[js.Any])
-    if (panEndFriction != null) __obj.updateDynamic("panEndFriction")(panEndFriction.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinchToClose)) __obj.updateDynamic("pinchToClose")(pinchToClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(mainScrollEndFriction)) __obj.updateDynamic("mainScrollEndFriction")(mainScrollEndFriction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSpreadZoom)) __obj.updateDynamic("maxSpreadZoom")(maxSpreadZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseUsed)) __obj.updateDynamic("mouseUsed")(mouseUsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(panEndFriction)) __obj.updateDynamic("panEndFriction")(panEndFriction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinchToClose)) __obj.updateDynamic("pinchToClose")(pinchToClose.get.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (showAnimationDuration != null) __obj.updateDynamic("showAnimationDuration")(showAnimationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHideOpacity)) __obj.updateDynamic("showHideOpacity")(showHideOpacity.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAnimationDuration)) __obj.updateDynamic("showAnimationDuration")(showAnimationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHideOpacity)) __obj.updateDynamic("showHideOpacity")(showHideOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

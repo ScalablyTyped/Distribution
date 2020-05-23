@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object CatmullRom extends js.Object {
   /**
-    * Calculates a Catmull-Rom value.
-    * @param t [description]
-    * @param p0 [description]
-    * @param p1 [description]
-    * @param p2 [description]
-    * @param p3 [description]
+    * Calculates a Catmull-Rom value from the given points, based on an alpha of 0.5.
+    * @param t The amount to interpolate by.
+    * @param p0 The first control point.
+    * @param p1 The second control point.
+    * @param p2 The third control point.
+    * @param p3 The fourth control point.
     */
   def apply(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
 }

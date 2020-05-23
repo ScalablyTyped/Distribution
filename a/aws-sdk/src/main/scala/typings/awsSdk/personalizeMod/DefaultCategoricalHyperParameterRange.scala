@@ -23,12 +23,12 @@ trait DefaultCategoricalHyperParameterRange extends js.Object {
 object DefaultCategoricalHyperParameterRange {
   @scala.inline
   def apply(
-    isTunable: js.UndefOr[scala.Boolean] = js.undefined,
+    isTunable: js.UndefOr[Tunable] = js.undefined,
     name: ParameterName = null,
     values: CategoricalValues = null
   ): DefaultCategoricalHyperParameterRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isTunable)) __obj.updateDynamic("isTunable")(isTunable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTunable)) __obj.updateDynamic("isTunable")(isTunable.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultCategoricalHyperParameterRange]

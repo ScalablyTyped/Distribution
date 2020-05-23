@@ -19,10 +19,10 @@ object StackFrame {
     fileName: String,
     lineNumber: Double,
     methodName: String,
-    columnNumber: Int | Double = null
+    columnNumber: js.UndefOr[Double] = js.undefined
   ): StackFrame = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
-    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnNumber)) __obj.updateDynamic("columnNumber")(columnNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrame]
   }
 }

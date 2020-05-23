@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object UnifiedPosPowerReportingType extends js.Object {
   /** Cannot determine the state of the device, therefore no power reporting is possible. */
   @js.native
   sealed trait unknownPowerReportingType extends UnifiedPosPowerReportingType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UnifiedPosPowerReportingType with Double] = js.native
-  /* 2 */ @js.native
-  object advanced extends TopLevel[advanced with Double]
-  
-  /* 1 */ @js.native
-  object standard extends TopLevel[standard with Double]
-  
-  /* 0 */ @js.native
-  object unknownPowerReportingType extends TopLevel[unknownPowerReportingType with Double]
   
 }
 

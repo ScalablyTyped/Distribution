@@ -28,14 +28,14 @@ object ResizeEnable {
     topRight: js.UndefOr[Boolean] = js.undefined
   ): ResizeEnable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomLeft)) __obj.updateDynamic("bottomLeft")(bottomLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomRight)) __obj.updateDynamic("bottomRight")(bottomRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(topLeft)) __obj.updateDynamic("topLeft")(topLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(topRight)) __obj.updateDynamic("topRight")(topRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomLeft)) __obj.updateDynamic("bottomLeft")(bottomLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomRight)) __obj.updateDynamic("bottomRight")(bottomRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topLeft)) __obj.updateDynamic("topLeft")(topLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(topRight)) __obj.updateDynamic("topRight")(topRight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeEnable]
   }
 }

@@ -17,13 +17,13 @@ object AddonParameters {
     displayName: String | displayNameFunc = null,
     enableBeautify: js.UndefOr[Boolean] = js.undefined,
     onBeforeRender: /* domString */ String => String = null,
-    skip: Int | Double = null
+    skip: js.UndefOr[Double] = js.undefined
   ): AddonParameters = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBeautify)) __obj.updateDynamic("enableBeautify")(enableBeautify.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBeautify)) __obj.updateDynamic("enableBeautify")(enableBeautify.get.asInstanceOf[js.Any])
     if (onBeforeRender != null) __obj.updateDynamic("onBeforeRender")(js.Any.fromFunction1(onBeforeRender))
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddonParameters]
   }
 }

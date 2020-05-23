@@ -285,8 +285,8 @@ object ClosestFacilityParametersProperties {
   def apply(
     accumulateAttributes: js.Array[String] = null,
     attributeParameterValues: js.Array[ClosestFacilityParametersAttributeParameterValues] = null,
-    defaultCutoff: Int | Double = null,
-    defaultTargetFacilityCount: Int | Double = null,
+    defaultCutoff: js.UndefOr[Double] = js.undefined,
+    defaultTargetFacilityCount: js.UndefOr[Double] = js.undefined,
     directionsLanguage: String = null,
     directionsLengthUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = null,
     directionsOutputType: complete | `complete-no-events` | `instructions-only` | standard | `summary-only` = null,
@@ -297,7 +297,7 @@ object ClosestFacilityParametersProperties {
     impedanceAttribute: String = null,
     incidents: DataLayerProperties | FeatureSetProperties = null,
     outSpatialReference: SpatialReferenceProperties | String = null,
-    outputGeometryPrecision: Int | Double = null,
+    outputGeometryPrecision: js.UndefOr[Double] = js.undefined,
     outputGeometryPrecisionUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = null,
     outputLines: none | straight | `true-shape` | `true-shape-with-measure` = null,
     pointBarriers: DataLayerProperties | FeatureSetProperties = null,
@@ -321,19 +321,19 @@ object ClosestFacilityParametersProperties {
     val __obj = js.Dynamic.literal()
     if (accumulateAttributes != null) __obj.updateDynamic("accumulateAttributes")(accumulateAttributes.asInstanceOf[js.Any])
     if (attributeParameterValues != null) __obj.updateDynamic("attributeParameterValues")(attributeParameterValues.asInstanceOf[js.Any])
-    if (defaultCutoff != null) __obj.updateDynamic("defaultCutoff")(defaultCutoff.asInstanceOf[js.Any])
-    if (defaultTargetFacilityCount != null) __obj.updateDynamic("defaultTargetFacilityCount")(defaultTargetFacilityCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultCutoff)) __obj.updateDynamic("defaultCutoff")(defaultCutoff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultTargetFacilityCount)) __obj.updateDynamic("defaultTargetFacilityCount")(defaultTargetFacilityCount.get.asInstanceOf[js.Any])
     if (directionsLanguage != null) __obj.updateDynamic("directionsLanguage")(directionsLanguage.asInstanceOf[js.Any])
     if (directionsLengthUnits != null) __obj.updateDynamic("directionsLengthUnits")(directionsLengthUnits.asInstanceOf[js.Any])
     if (directionsOutputType != null) __obj.updateDynamic("directionsOutputType")(directionsOutputType.asInstanceOf[js.Any])
     if (directionsStyleName != null) __obj.updateDynamic("directionsStyleName")(directionsStyleName.asInstanceOf[js.Any])
     if (directionsTimeAttribute != null) __obj.updateDynamic("directionsTimeAttribute")(directionsTimeAttribute.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements.get.asInstanceOf[js.Any])
     if (facilities != null) __obj.updateDynamic("facilities")(facilities.asInstanceOf[js.Any])
     if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute.asInstanceOf[js.Any])
     if (incidents != null) __obj.updateDynamic("incidents")(incidents.asInstanceOf[js.Any])
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (outputGeometryPrecision != null) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputGeometryPrecision)) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.get.asInstanceOf[js.Any])
     if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits.asInstanceOf[js.Any])
     if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines.asInstanceOf[js.Any])
     if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
@@ -341,18 +341,18 @@ object ClosestFacilityParametersProperties {
     if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
     if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns.asInstanceOf[js.Any])
     if (restrictionAttributes != null) __obj.updateDynamic("restrictionAttributes")(restrictionAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnDirections)) __obj.updateDynamic("returnDirections")(returnDirections.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnFacilities)) __obj.updateDynamic("returnFacilities")(returnFacilities.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnIncidents)) __obj.updateDynamic("returnIncidents")(returnIncidents.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPointBarriers)) __obj.updateDynamic("returnPointBarriers")(returnPointBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPolygonBarriers)) __obj.updateDynamic("returnPolygonBarriers")(returnPolygonBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnRoutes)) __obj.updateDynamic("returnRoutes")(returnRoutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnDirections)) __obj.updateDynamic("returnDirections")(returnDirections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFacilities)) __obj.updateDynamic("returnFacilities")(returnFacilities.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnIncidents)) __obj.updateDynamic("returnIncidents")(returnIncidents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPointBarriers)) __obj.updateDynamic("returnPointBarriers")(returnPointBarriers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPolygonBarriers)) __obj.updateDynamic("returnPolygonBarriers")(returnPolygonBarriers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnRoutes)) __obj.updateDynamic("returnRoutes")(returnRoutes.get.asInstanceOf[js.Any])
     if (timeOfDay != null) __obj.updateDynamic("timeOfDay")(timeOfDay.asInstanceOf[js.Any])
     if (timeOfDayUsage != null) __obj.updateDynamic("timeOfDayUsage")(timeOfDayUsage.asInstanceOf[js.Any])
     if (travelDirection != null) __obj.updateDynamic("travelDirection")(travelDirection.asInstanceOf[js.Any])
     if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClosestFacilityParametersProperties]
   }
 }

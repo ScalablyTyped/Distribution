@@ -26,34 +26,34 @@ object IRevealOptions {
   def apply(
     animationIn: String = null,
     animationOut: String = null,
-    btmOffsetPct: Int | Double = null,
+    btmOffsetPct: js.UndefOr[Double] = js.undefined,
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
     closeOnEsc: js.UndefOr[Boolean] = js.undefined,
     deepLink: js.UndefOr[Boolean] = js.undefined,
     fullScreen: js.UndefOr[Boolean] = js.undefined,
-    hOffset: Int | Double = null,
-    hideDelay: Int | Double = null,
+    hOffset: js.UndefOr[Double] = js.undefined,
+    hideDelay: js.UndefOr[Double] = js.undefined,
     multipleOpened: js.UndefOr[Boolean] = js.undefined,
     overlay: js.UndefOr[Boolean] = js.undefined,
     resetOnClose: js.UndefOr[Boolean] = js.undefined,
-    showDelay: Int | Double = null,
-    vOffset: Int | Double = null
+    showDelay: js.UndefOr[Double] = js.undefined,
+    vOffset: js.UndefOr[Double] = js.undefined
   ): IRevealOptions = {
     val __obj = js.Dynamic.literal()
     if (animationIn != null) __obj.updateDynamic("animationIn")(animationIn.asInstanceOf[js.Any])
     if (animationOut != null) __obj.updateDynamic("animationOut")(animationOut.asInstanceOf[js.Any])
-    if (btmOffsetPct != null) __obj.updateDynamic("btmOffsetPct")(btmOffsetPct.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.asInstanceOf[js.Any])
-    if (!js.isUndefined(deepLink)) __obj.updateDynamic("deepLink")(deepLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
-    if (hOffset != null) __obj.updateDynamic("hOffset")(hOffset.asInstanceOf[js.Any])
-    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleOpened)) __obj.updateDynamic("multipleOpened")(multipleOpened.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnClose)) __obj.updateDynamic("resetOnClose")(resetOnClose.asInstanceOf[js.Any])
-    if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
-    if (vOffset != null) __obj.updateDynamic("vOffset")(vOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(btmOffsetPct)) __obj.updateDynamic("btmOffsetPct")(btmOffsetPct.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deepLink)) __obj.updateDynamic("deepLink")(deepLink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hOffset)) __obj.updateDynamic("hOffset")(hOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDelay)) __obj.updateDynamic("hideDelay")(hideDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleOpened)) __obj.updateDynamic("multipleOpened")(multipleOpened.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnClose)) __obj.updateDynamic("resetOnClose")(resetOnClose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDelay)) __obj.updateDynamic("showDelay")(showDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vOffset)) __obj.updateDynamic("vOffset")(vOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRevealOptions]
   }
 }

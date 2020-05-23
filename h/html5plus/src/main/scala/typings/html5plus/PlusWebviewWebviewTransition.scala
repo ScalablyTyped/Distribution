@@ -27,11 +27,11 @@ trait PlusWebviewWebviewTransition extends js.Object {
   /**
     * 窗口变换效果
     * 可取值：
-    * 	"linear"：匀速变化，匀速动画效果；
-    * 	"ease-in"：匀加速变化，逐渐变快的动画效果；
-    * 	"ease-out"：匀减速变化，逐渐变慢的动画效果；
-    * 	"ease-in-out"：先加速后减速变化，先变快后变慢的动画效果。
-    * 	默认值为"ease-in-out"。
+    *     "linear"：匀速变化，匀速动画效果；
+    *     "ease-in"：匀加速变化，逐渐变快的动画效果；
+    *     "ease-out"：匀减速变化，逐渐变慢的动画效果；
+    *     "ease-in-out"：先加速后减速变化，先变快后变慢的动画效果。
+    *     默认值为"ease-in-out"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */

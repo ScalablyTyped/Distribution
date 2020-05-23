@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MarkSpec
   extends /**
-  * Allow specifying arbitrary fields on a MarkSpec.
+  * Allow specifying arbitrary fields on a NodeSpec.
   */
 /* key */ StringDictionary[js.Any] {
   /**
@@ -61,27 +61,24 @@ trait MarkSpec
 object MarkSpec {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Allow specifying arbitrary fields on a MarkSpec.
-    */
-  /* key */ StringDictionary[js.Any] = null,
-    attrs: StringDictionary[AttributeSpec] = null,
-    excludes: String = null,
-    group: String = null,
-    inclusive: js.UndefOr[Boolean] = js.undefined,
-    parseDOM: js.Array[ParseRule] = null,
-    spanning: js.UndefOr[Boolean] = js.undefined,
-    toDOM: (/* mark */ Mark[_], /* inline */ Boolean) => DOMOutputSpec = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    attrs: js.UndefOr[Null | StringDictionary[AttributeSpec]] = js.undefined,
+    excludes: js.UndefOr[Null | String] = js.undefined,
+    group: js.UndefOr[Null | String] = js.undefined,
+    inclusive: js.UndefOr[Null | Boolean] = js.undefined,
+    parseDOM: js.UndefOr[Null | js.Array[ParseRule]] = js.undefined,
+    spanning: js.UndefOr[Null | Boolean] = js.undefined,
+    toDOM: js.UndefOr[Null | ((/* mark */ Mark[_], /* inline */ Boolean) => DOMOutputSpec)] = js.undefined
   ): MarkSpec = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    if (excludes != null) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(attrs)) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludes)) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (!js.isUndefined(inclusive)) __obj.updateDynamic("inclusive")(inclusive.asInstanceOf[js.Any])
-    if (parseDOM != null) __obj.updateDynamic("parseDOM")(parseDOM.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseDOM)) __obj.updateDynamic("parseDOM")(parseDOM.asInstanceOf[js.Any])
     if (!js.isUndefined(spanning)) __obj.updateDynamic("spanning")(spanning.asInstanceOf[js.Any])
-    if (toDOM != null) __obj.updateDynamic("toDOM")(js.Any.fromFunction2(toDOM))
+    if (!js.isUndefined(toDOM)) __obj.updateDynamic("toDOM")(if (toDOM != null) js.Any.fromFunction2(toDOM.asInstanceOf[(/* mark */ Mark[_], /* inline */ Boolean) => DOMOutputSpec]) else null)
     __obj.asInstanceOf[MarkSpec]
   }
 }

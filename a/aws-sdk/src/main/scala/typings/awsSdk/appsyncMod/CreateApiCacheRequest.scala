@@ -39,13 +39,13 @@ object CreateApiCacheRequest {
     apiId: String,
     ttl: Long,
     `type`: ApiCacheType,
-    atRestEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    transitEncryptionEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    atRestEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
+    transitEncryptionEnabled: js.UndefOr[Boolean] = js.undefined
   ): CreateApiCacheRequest = {
     val __obj = js.Dynamic.literal(apiCachingBehavior = apiCachingBehavior.asInstanceOf[js.Any], apiId = apiId.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(atRestEncryptionEnabled)) __obj.updateDynamic("atRestEncryptionEnabled")(atRestEncryptionEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitEncryptionEnabled)) __obj.updateDynamic("transitEncryptionEnabled")(transitEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(atRestEncryptionEnabled)) __obj.updateDynamic("atRestEncryptionEnabled")(atRestEncryptionEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitEncryptionEnabled)) __obj.updateDynamic("transitEncryptionEnabled")(transitEncryptionEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApiCacheRequest]
   }
 }

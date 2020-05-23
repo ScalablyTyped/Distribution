@@ -19,14 +19,14 @@ object ReadOptions {
   def apply(
     gunzip: Boolean | force = null,
     json: `true` | strict | force = null,
-    maxBytes: Int | Double = null,
-    timeout: Int | Double = null
+    maxBytes: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): ReadOptions = {
     val __obj = js.Dynamic.literal()
     if (gunzip != null) __obj.updateDynamic("gunzip")(gunzip.asInstanceOf[js.Any])
     if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
-    if (maxBytes != null) __obj.updateDynamic("maxBytes")(maxBytes.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBytes)) __obj.updateDynamic("maxBytes")(maxBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOptions]
   }
 }

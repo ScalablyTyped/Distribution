@@ -1,6 +1,6 @@
 package typings.sailsIoJs.mod
 
-import typings.sailsIoJs.AnonBody
+import typings.sailsIoJs.anon.Body
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait JWR extends js.Object {
   var headers: Headers
   var statusCode: Double
   def pipe(): Error
-  def toPOJO(): AnonBody
+  def toPOJO(): Body
 }
 
 object JWR {
@@ -22,7 +22,7 @@ object JWR {
     headers: Headers,
     pipe: () => Error,
     statusCode: Double,
-    toPOJO: () => AnonBody,
+    toPOJO: () => Body,
     error: Error = null
   ): JWR = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], pipe = js.Any.fromFunction0(pipe), statusCode = statusCode.asInstanceOf[js.Any], toPOJO = js.Any.fromFunction0(toPOJO))

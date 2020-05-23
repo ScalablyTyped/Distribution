@@ -32,16 +32,16 @@ object DescribeDhcpOptionsRequest {
   @scala.inline
   def apply(
     DhcpOptionsIds: DhcpOptionsIdStringList = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[DescribeDhcpOptionsMaxResults] = js.undefined,
     NextToken: String = null
   ): DescribeDhcpOptionsRequest = {
     val __obj = js.Dynamic.literal()
     if (DhcpOptionsIds != null) __obj.updateDynamic("DhcpOptionsIds")(DhcpOptionsIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDhcpOptionsRequest]
   }

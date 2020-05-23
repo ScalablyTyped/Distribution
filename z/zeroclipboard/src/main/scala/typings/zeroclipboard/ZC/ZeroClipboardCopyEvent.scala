@@ -2,19 +2,19 @@ package typings.zeroclipboard.ZC
 
 import typings.std.HTMLElement
 import typings.std.HTMLObjectElement
-import typings.zeroclipboard.AnonClearData
+import typings.zeroclipboard.anon.ClearData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ZeroClipboardCopyEvent extends ZeroClipboardEvent {
-  var clipboardData: AnonClearData
+  var clipboardData: ClearData
 }
 
 object ZeroClipboardCopyEvent {
   @scala.inline
   def apply(
-    clipboardData: AnonClearData,
+    clipboardData: ClearData,
     currentTarget: HTMLObjectElement,
     relatedTarget: HTMLElement,
     target: HTMLElement,

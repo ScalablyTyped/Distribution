@@ -4,19 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Filter")
-@js.native
-class Filter protected () extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Criteria1: js.Any = js.native
-  val Criteria2: js.Any = js.native
+trait Filter extends js.Object {
+  val Application: typings.activexExcel.Excel.Application
+  val Count: Double
+  val Creator: XlCreator
+  val Criteria1: js.Any
+  val Criteria2: js.Any
   @JSName("Excel.Filter_typekey")
-  var ExcelDotFilter_typekey: Filter = js.native
-  val On: Boolean = js.native
-  var Operator: XlAutoFilterOperator = js.native
-  val Parent: js.Any = js.native
-  val _Operator: XlAutoFilterOperator = js.native
+  var ExcelDotFilter_typekey: Filter
+  val On: Boolean
+  var Operator: XlAutoFilterOperator
+  val Parent: js.Any
+  val _Operator: XlAutoFilterOperator
+}
+
+object Filter {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Count: Double,
+    Creator: XlCreator,
+    Criteria1: js.Any,
+    Criteria2: js.Any,
+    ExcelDotFilter_typekey: Filter,
+    On: Boolean,
+    Operator: XlAutoFilterOperator,
+    Parent: js.Any,
+    _Operator: XlAutoFilterOperator
+  ): Filter = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Criteria1 = Criteria1.asInstanceOf[js.Any], Criteria2 = Criteria2.asInstanceOf[js.Any], On = On.asInstanceOf[js.Any], Operator = Operator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], _Operator = _Operator.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.Filter_typekey")(ExcelDotFilter_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Filter]
+  }
 }
 

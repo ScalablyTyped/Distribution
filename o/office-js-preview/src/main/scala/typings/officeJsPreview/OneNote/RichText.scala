@@ -1,10 +1,10 @@
 package typings.officeJsPreview.OneNote
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OneNote.Interfaces.RichTextData
 import typings.officeJsPreview.OneNote.Interfaces.RichTextLoadOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.RichText")
 @js.native
-class RichText () extends ClientObject {
+trait RichText extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_RichText: RequestContext = js.native
@@ -75,8 +74,8 @@ class RichText () extends ClientObject {
   def load(): RichText = js.native
   def load(option: String): RichText = js.native
   def load(option: js.Array[String]): RichText = js.native
-  def load(option: AnonExpand): RichText = js.native
   def load(option: RichTextLoadOptions): RichText = js.native
+  def load(option: Expand): RichText = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original OneNote.RichText object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.RichTextData`) that contains shallow copies of any loaded child properties from the original object.

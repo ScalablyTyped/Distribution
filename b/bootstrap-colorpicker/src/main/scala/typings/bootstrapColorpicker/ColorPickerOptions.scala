@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 trait ColorPickerOptions extends js.Object {
   /**
-    * 	By default, the colorpicker is aligned to the right of the input. If you need to switch it to the left, set align to 'left'.
+    *     By default, the colorpicker is aligned to the right of the input. If you need to switch it to the left, set align to 'left'.
     * 
     * Default: 'right'
     */
@@ -21,7 +21,7 @@ trait ColorPickerOptions extends js.Object {
     */
   var color: js.UndefOr[String] = js.undefined
   /**
-    * 	List of pre selected colors (hex format). If you choose one of these colors, the alias is returned instead of the hex code.
+    *     List of pre selected colors (hex format). If you choose one of these colors, the alias is returned instead of the hex code.
     * 
     * Default: null
     */
@@ -51,7 +51,7 @@ trait ColorPickerOptions extends js.Object {
     */
   var fallbackColor: js.UndefOr[String] = js.undefined
   /**
-    * 	Fallback color format (e.g. when not specified or for alias mode, when selecting non aliased colors)
+    *     Fallback color format (e.g. when not specified or for alias mode, when selecting non aliased colors)
     * 
     * Default: hex
     */
@@ -125,14 +125,14 @@ object ColorPickerOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorSelectors != null) __obj.updateDynamic("colorSelectors")(colorSelectors.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.get.asInstanceOf[js.Any])
     if (customClass != null) __obj.updateDynamic("customClass")(customClass.asInstanceOf[js.Any])
     if (fallbackColor != null) __obj.updateDynamic("fallbackColor")(fallbackColor.asInstanceOf[js.Any])
     if (fallbackFormat != null) __obj.updateDynamic("fallbackFormat")(fallbackFormat.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hexNumberSignPrefix)) __obj.updateDynamic("hexNumberSignPrefix")(hexNumberSignPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(hexNumberSignPrefix)) __obj.updateDynamic("hexNumberSignPrefix")(hexNumberSignPrefix.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (sliders != null) __obj.updateDynamic("sliders")(sliders.asInstanceOf[js.Any])
     if (slidersHorz != null) __obj.updateDynamic("slidersHorz")(slidersHorz.asInstanceOf[js.Any])

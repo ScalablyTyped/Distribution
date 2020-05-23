@@ -32,16 +32,16 @@ object ResumableFileObject {
   def apply(
     customResumeData: js.Any = null,
     name: String = null,
-    remaining: Int | Double = null,
-    size: Int | Double = null,
-    uuid: Int | Double = null
+    remaining: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
+    uuid: js.UndefOr[Double] = js.undefined
   ): ResumableFileObject = {
     val __obj = js.Dynamic.literal()
     if (customResumeData != null) __obj.updateDynamic("customResumeData")(customResumeData.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (remaining != null) __obj.updateDynamic("remaining")(remaining.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
+    if (!js.isUndefined(remaining)) __obj.updateDynamic("remaining")(remaining.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uuid)) __obj.updateDynamic("uuid")(uuid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResumableFileObject]
   }
 }

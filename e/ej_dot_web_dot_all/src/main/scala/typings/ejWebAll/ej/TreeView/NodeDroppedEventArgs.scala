@@ -52,7 +52,7 @@ object NodeDroppedEventArgs {
     `type`: String = null
   ): NodeDroppedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
     if (droppedElement != null) __obj.updateDynamic("droppedElement")(droppedElement.asInstanceOf[js.Any])
     if (droppedElementData != null) __obj.updateDynamic("droppedElementData")(droppedElementData.asInstanceOf[js.Any])

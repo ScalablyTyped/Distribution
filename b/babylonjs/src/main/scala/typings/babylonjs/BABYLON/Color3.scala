@@ -1,47 +1,11 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Color3")
 @js.native
-/**
-  * Creates a new Color3 object from red, green, blue values, all between 0 and 1
-  * @param r defines the red component (between 0 and 1, default is 0)
-  * @param g defines the green component (between 0 and 1, default is 0)
-  * @param b defines the blue component (between 0 and 1, default is 0)
-  */
-class Color3 () extends js.Object {
-  def this(/**
-    * Defines the red component (between 0 and 1, default is 0)
-    */
-  r: Double) = this()
-  def this(
-    /**
-    * Defines the red component (between 0 and 1, default is 0)
-    */
-  r: Double,
-    /**
-    * Defines the green component (between 0 and 1, default is 0)
-    */
-  g: Double
-  ) = this()
-  def this(
-    /**
-    * Defines the red component (between 0 and 1, default is 0)
-    */
-  r: Double,
-    /**
-    * Defines the green component (between 0 and 1, default is 0)
-    */
-  g: Double,
-    /**
-    * Defines the blue component (between 0 and 1, default is 0)
-    */
-  b: Double
-  ) = this()
+trait Color3 extends js.Object {
   /**
     * Defines the blue component (between 0 and 1, default is 0)
     */
@@ -72,9 +36,6 @@ class Color3 () extends js.Object {
     * @returns the new array
     */
   def asArray(): js.Array[Double] = js.native
-  def clampToRef(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], result: Color3): Color3 = js.native
-  def clampToRef(min: js.UndefOr[scala.Nothing], max: Double, result: Color3): Color3 = js.native
-  def clampToRef(min: Double, max: js.UndefOr[scala.Nothing], result: Color3): Color3 = js.native
   /**
     * Clamps the rgb values by the min and max values and stores the result into "result"
     * @param min defines minimum clamping value (default is 0)
@@ -82,7 +43,7 @@ class Color3 () extends js.Object {
     * @param result defines color to store the result into
     * @returns the original Color3
     */
-  def clampToRef(min: Double, max: Double, result: Color3): Color3 = js.native
+  def clampToRef(min: js.UndefOr[Double], max: js.UndefOr[Double], result: Color3): Color3 = js.native
   /**
     * Copies the rgb values from the source in the current Color3
     * @param source defines the source Color3 object
@@ -232,117 +193,5 @@ class Color3 () extends js.Object {
     * @returns a float value
     */
   def toLuminance(): Double = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.Color3")
-@js.native
-object Color3 extends js.Object {
-  var _BlackReadOnly: js.Any = js.native
-  /**
-    * Returns a Color3 value containing a black color
-    * @returns a new Color3 object
-    */
-  def Black(): Color3 = js.native
-  /**
-    * Gets a Color3 value containing a black color that must not be updated
-    */
-  def BlackReadOnly: DeepImmutable[Color3] = js.native
-  /**
-    * Returns a Color3 value containing a blue color
-    * @returns a new Color3 object
-    */
-  def Blue(): Color3 = js.native
-  /**
-    * Creates a new Color3 from the starting index of the given array
-    * @param array defines the source array
-    * @param offset defines an offset in the source array
-    * @returns a new Color3 object
-    */
-  def FromArray(array: DeepImmutable[ArrayLike[Double]]): Color3 = js.native
-  def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Color3 = js.native
-  /**
-    * Creates a new Color3 from the string containing valid hexadecimal values
-    * @param hex defines a string containing valid hexadecimal values
-    * @returns a new Color3 object
-    */
-  def FromHexString(hex: String): Color3 = js.native
-  /**
-    * Creates a new Color3 from integer values (< 256)
-    * @param r defines the red component to read from (value between 0 and 255)
-    * @param g defines the green component to read from (value between 0 and 255)
-    * @param b defines the blue component to read from (value between 0 and 255)
-    * @returns a new Color3 object
-    */
-  def FromInts(r: Double, g: Double, b: Double): Color3 = js.native
-  /**
-    * Returns a Color3 value containing a gray color
-    * @returns a new Color3 object
-    */
-  def Gray(): Color3 = js.native
-  /**
-    * Returns a Color3 value containing a green color
-    * @returns a new Color3 object
-    */
-  def Green(): Color3 = js.native
-  /**
-    * Convert Hue, saturation and value to a Color3 (RGB)
-    * @param hue defines the hue
-    * @param saturation defines the saturation
-    * @param value defines the value
-    * @param result defines the Color3 where to store the RGB values
-    */
-  def HSVtoRGBToRef(hue: Double, saturation: Double, value: Double, result: Color3): Unit = js.native
-  /**
-    * Creates a new Color3 with values linearly interpolated of "amount" between the start Color3 and the end Color3
-    * @param start defines the start Color3 value
-    * @param end defines the end Color3 value
-    * @param amount defines the gradient value between start and end
-    * @returns a new Color3 object
-    */
-  def Lerp(start: DeepImmutable[Color3], end: DeepImmutable[Color3], amount: Double): Color3 = js.native
-  /**
-    * Creates a new Color3 with values linearly interpolated of "amount" between the start Color3 and the end Color3
-    * @param left defines the start value
-    * @param right defines the end value
-    * @param amount defines the gradient factor
-    * @param result defines the Color3 object where to store the result
-    */
-  def LerpToRef(left: DeepImmutable[Color3], right: DeepImmutable[Color3], amount: Double, result: Color3): Unit = js.native
-  /**
-    * Returns a Color3 value containing a magenta color
-    * @returns a new Color3 object
-    */
-  def Magenta(): Color3 = js.native
-  /**
-    * Returns a Color3 value containing a purple color
-    * @returns a new Color3 object
-    */
-  def Purple(): Color3 = js.native
-  /**
-    * Returns a Color3 value containing a random color
-    * @returns a new Color3 object
-    */
-  def Random(): Color3 = js.native
-  /**
-    * Returns a Color3 value containing a red color
-    * @returns a new Color3 object
-    */
-  def Red(): Color3 = js.native
-  /**
-    * Returns a Color3 value containing a teal color
-    * @returns a new Color3 object
-    */
-  def Teal(): Color3 = js.native
-  /**
-    * Returns a Color3 value containing a white color
-    * @returns a new Color3 object
-    */
-  def White(): Color3 = js.native
-  /**
-    * Returns a Color3 value containing a yellow color
-    * @returns a new Color3 object
-    */
-  def Yellow(): Color3 = js.native
 }
 

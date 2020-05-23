@@ -15,7 +15,7 @@ object CheckJobsParams {
   def apply(headers: js.Object = null, return_response: js.UndefOr[Boolean] = js.undefined): CheckJobsParams = {
     val __obj = js.Dynamic.literal()
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckJobsParams]
   }
 }

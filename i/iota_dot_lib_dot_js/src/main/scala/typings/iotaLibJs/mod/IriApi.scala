@@ -1,8 +1,8 @@
 package typings.iotaLibJs.mod
 
-import typings.iotaLibJs.AnonAddresses
-import typings.iotaLibJs.AnonBalances
-import typings.iotaLibJs.AnonBranchTransaction
+import typings.iotaLibJs.anon.Addresses
+import typings.iotaLibJs.anon.Balances
+import typings.iotaLibJs.anon.BranchTransaction
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,13 +28,13 @@ trait IriApi extends js.Object {
     callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]
   ): Unit
   def findTransactions(
-    searchValues: AnonAddresses,
+    searchValues: Addresses,
     callback: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]
   ): Unit
   def getBalances(
     addresses: js.Array[String],
     treshold: Double,
-    callback: js.Function2[/* error */ Error, /* response */ AnonBalances, Unit]
+    callback: js.Function2[/* error */ Error, /* response */ Balances, Unit]
   ): Unit
   def getInclusionStates(
     transactions: js.Array[String],
@@ -44,10 +44,7 @@ trait IriApi extends js.Object {
   def getNeighbors(callback: js.Function2[/* error */ Error, /* neighbors */ js.Array[Neighbor], Unit]): Unit
   def getNodeInfo(callback: js.Function2[/* error */ Error, /* info */ NodeInfo, Unit]): Unit
   def getTips(callback: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]): Unit
-  def getTransactionsToApprove(
-    depth: Double,
-    callback: js.Function2[/* error */ Error, /* response */ AnonBranchTransaction, Unit]
-  ): Unit
+  def getTransactionsToApprove(depth: Double, callback: js.Function2[/* error */ Error, /* response */ BranchTransaction, Unit]): Unit
   def getTrytes(
     hashes: js.Array[String],
     callback: js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]
@@ -69,13 +66,13 @@ object IriApi {
     addNeighbors: (js.Array[String], js.Function2[/* error */ Error, /* addedNeighbors */ Double, Unit]) => Unit,
     attachToTangle: (String, String, Double, js.Array[String], js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]) => Unit,
     broadcastTransactions: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit,
-    findTransactions: (AnonAddresses, js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]) => Unit,
-    getBalances: (js.Array[String], Double, js.Function2[/* error */ Error, /* response */ AnonBalances, Unit]) => Unit,
+    findTransactions: (Addresses, js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]) => Unit,
+    getBalances: (js.Array[String], Double, js.Function2[/* error */ Error, /* response */ Balances, Unit]) => Unit,
     getInclusionStates: (js.Array[String], js.Array[String], js.Function2[/* error */ Error, /* states */ js.Array[Boolean], Unit]) => Unit,
     getNeighbors: js.Function2[/* error */ Error, /* neighbors */ js.Array[Neighbor], Unit] => Unit,
     getNodeInfo: js.Function2[/* error */ Error, /* info */ NodeInfo, Unit] => Unit,
     getTips: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit] => Unit,
-    getTransactionsToApprove: (Double, js.Function2[/* error */ Error, /* response */ AnonBranchTransaction, Unit]) => Unit,
+    getTransactionsToApprove: (Double, js.Function2[/* error */ Error, /* response */ BranchTransaction, Unit]) => Unit,
     getTrytes: (js.Array[String], js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]) => Unit,
     interruptAttachingToTangle: js.Function2[/* error */ Error, /* response */ js.Object, Unit] => Unit,
     removeNeighbors: (js.Array[String], js.Function2[/* error */ Error, /* removedNeighbors */ js.Array[Double], Unit]) => Unit,

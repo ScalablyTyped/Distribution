@@ -15,9 +15,9 @@ trait YAxisLabelsLevelsOptions extends js.Object {
 
 object YAxisLabelsLevelsOptions {
   @scala.inline
-  def apply(level: Int | Double = null, style: CSSObject = null): YAxisLabelsLevelsOptions = {
+  def apply(level: js.UndefOr[Double] = js.undefined, style: CSSObject = null): YAxisLabelsLevelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisLabelsLevelsOptions]
   }

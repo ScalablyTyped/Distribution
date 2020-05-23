@@ -1,7 +1,7 @@
 package typings.reactVirtualized.esWindowScrollerMod
 
 import typings.react.mod.ReactNode
-import typings.reactVirtualized.AnonScrollTop
+import typings.reactVirtualized.anon.ScrollTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait WindowScrollerChildProps extends js.Object {
   var scrollLeft: Double = js.native
   var scrollTop: Double = js.native
   var width: Double = js.native
-  def onChildScroll(params: AnonScrollTop): Unit = js.native
+  def onChildScroll(params: ScrollTop): Unit = js.native
   def registerChild(): Unit = js.native
   def registerChild(element: ReactNode): Unit = js.native
 }

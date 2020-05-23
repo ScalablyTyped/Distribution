@@ -1,6 +1,6 @@
 package typings.prettier.mod.doc.builders
 
-import typings.prettier.AnonShouldBreak
+import typings.prettier.anon.ShouldBreak
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object conditionalGroup extends js.Object {
   def apply(states: js.Array[Doc]): Group_ = js.native
-  def apply(states: js.Array[Doc], opts: AnonShouldBreak): Group_ = js.native
+  def apply(states: js.Array[Doc], opts: ShouldBreak): Group_ = js.native
 }
 

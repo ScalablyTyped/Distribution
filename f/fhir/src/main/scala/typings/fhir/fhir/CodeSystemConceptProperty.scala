@@ -82,7 +82,7 @@ object CodeSystemConceptProperty {
     valueCode: code = null,
     valueCoding: Coding = null,
     valueDateTime: dateTime = null,
-    valueInteger: Int | Double = null,
+    valueInteger: js.UndefOr[integer] = js.undefined,
     valueString: String = null
   ): CodeSystemConceptProperty = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
@@ -98,11 +98,11 @@ object CodeSystemConceptProperty {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.get.asInstanceOf[js.Any])
     if (valueCode != null) __obj.updateDynamic("valueCode")(valueCode.asInstanceOf[js.Any])
     if (valueCoding != null) __obj.updateDynamic("valueCoding")(valueCoding.asInstanceOf[js.Any])
     if (valueDateTime != null) __obj.updateDynamic("valueDateTime")(valueDateTime.asInstanceOf[js.Any])
-    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
     if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSystemConceptProperty]
   }

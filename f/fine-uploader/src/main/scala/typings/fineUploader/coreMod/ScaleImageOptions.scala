@@ -45,14 +45,14 @@ object ScaleImageOptions {
     customResizer: /* resizeInfo */ ResizeInfo => PromiseOptions = null,
     includeExif: js.UndefOr[Boolean] = js.undefined,
     orient: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): ScaleImageOptions = {
     val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any])
     if (customResizer != null) __obj.updateDynamic("customResizer")(js.Any.fromFunction1(customResizer))
-    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif.asInstanceOf[js.Any])
-    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleImageOptions]
   }

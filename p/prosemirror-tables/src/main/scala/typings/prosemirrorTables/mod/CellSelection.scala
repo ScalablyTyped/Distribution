@@ -7,7 +7,7 @@ import typings.prosemirrorModel.mod.Slice
 import typings.prosemirrorState.mod.Selection
 import typings.prosemirrorState.mod.SelectionRange
 import typings.prosemirrorState.mod.Transaction
-import typings.prosemirrorTables.AnonAnchor
+import typings.prosemirrorTables.anon.Anchor
 import typings.prosemirrorTransform.mod.Mappable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ class CellSelection[S /* <: Schema[_, _] */] protected () extends js.Object {
   def content(): Slice[S] = js.native
   def eq(other: Selection[S]): Boolean = js.native
   def forEachCell(f: js.Function2[/* node */ Node[S], /* pos */ Double, Unit]): Unit = js.native
-  def getBookmark(): AnonAnchor = js.native
+  def getBookmark(): Anchor = js.native
   def isColSelection(): Boolean = js.native
   def isRowSelection(): Boolean = js.native
   def map(doc: Node[S], mapping: Mappable): js.Any = js.native

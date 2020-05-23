@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.RangeAreasData
 import typings.officeJs.Excel.Interfaces.RangeAreasLoadOptions
 import typings.officeJs.Excel.Interfaces.RangeAreasUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.All
 import typings.officeJs.officeJsStrings.Blanks
 import typings.officeJs.officeJsStrings.ConditionalFormats
@@ -45,19 +45,18 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.RangeAreas")
 @js.native
-class RangeAreas () extends ClientObject {
+trait RangeAreas extends ClientObject {
   /**
     *
-    * Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
+    * Returns the RangeAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
     *
     * [Api set: ExcelApi 1.9]
     */
   val address: String = js.native
   /**
     *
-    * Returns the RageAreas reference in the user locale. Read-only.
+    * Returns the RangeAreas reference in the user locale.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -78,14 +77,14 @@ class RangeAreas () extends ClientObject {
   val areas: RangeCollection = js.native
   /**
     *
-    * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+    * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
     *
     * [Api set: ExcelApi 1.9]
     */
   val cellCount: Double = js.native
   /**
     *
-    * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
+    * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -102,21 +101,21 @@ class RangeAreas () extends ClientObject {
   val dataValidation: DataValidation = js.native
   /**
     *
-    * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object. Read-only.
+    * Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
     *
     * [Api set: ExcelApi 1.9]
     */
   val format: RangeFormat = js.native
   /**
     *
-    * Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
+    * Specifies if all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z").
     *
     * [Api set: ExcelApi 1.9]
     */
   val isEntireColumn: Boolean = js.native
   /**
     *
-    * Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
+    * Specifies if all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7").
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -132,7 +131,7 @@ class RangeAreas () extends ClientObject {
   var style: String = js.native
   /**
     *
-    * Returns the worksheet for the current RangeAreas. Read-only.
+    * Returns the worksheet for the current RangeAreas.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -481,7 +480,7 @@ class RangeAreas () extends ClientObject {
     */
   def load(): RangeAreas = js.native
   def load(options: RangeAreasLoadOptions): RangeAreas = js.native
-  def load(propertyNamesAndPaths: AnonExpand): RangeAreas = js.native
+  def load(propertyNamesAndPaths: Expand): RangeAreas = js.native
   def load(propertyNames: String): RangeAreas = js.native
   def load(propertyNames: js.Array[String]): RangeAreas = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

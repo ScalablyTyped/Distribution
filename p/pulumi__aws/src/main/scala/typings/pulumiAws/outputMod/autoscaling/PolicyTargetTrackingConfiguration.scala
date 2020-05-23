@@ -34,7 +34,7 @@ object PolicyTargetTrackingConfiguration {
   ): PolicyTargetTrackingConfiguration = {
     val __obj = js.Dynamic.literal(targetValue = targetValue.asInstanceOf[js.Any])
     if (customizedMetricSpecification != null) __obj.updateDynamic("customizedMetricSpecification")(customizedMetricSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScaleIn)) __obj.updateDynamic("disableScaleIn")(disableScaleIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScaleIn)) __obj.updateDynamic("disableScaleIn")(disableScaleIn.get.asInstanceOf[js.Any])
     if (predefinedMetricSpecification != null) __obj.updateDynamic("predefinedMetricSpecification")(predefinedMetricSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyTargetTrackingConfiguration]
   }

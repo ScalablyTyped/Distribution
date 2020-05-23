@@ -26,12 +26,11 @@ object ResponseMessage {
     jsonrpc: String,
     error: ResponseErrorLiteral[_] = null,
     id: Double | String = null,
-    result: String | Double | Boolean | js.Object = null
+    result: js.UndefOr[Null | String | Double | Boolean | js.Object] = js.undefined
   ): ResponseMessage = {
-    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (!js.isUndefined(result)) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseMessage]
   }
 }

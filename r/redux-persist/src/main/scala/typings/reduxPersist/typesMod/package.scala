@@ -16,7 +16,7 @@ package object typesMod {
     /* currentVersion */ scala.Double, 
     js.Promise[typings.reduxPersist.typesMod.PersistedState]
   ]
-  type PersistedState = js.UndefOr[typings.reduxPersist.AnonPersist]
+  type PersistedState = js.UndefOr[typings.reduxPersist.anon.Persist]
   type PersistorSubscribeCallback = js.Function0[js.Any]
   type RehydrateErrorType = js.Any
   type StateReconciler[S] = js.Function4[

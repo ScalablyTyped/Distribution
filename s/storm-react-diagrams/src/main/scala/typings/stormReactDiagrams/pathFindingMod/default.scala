@@ -1,7 +1,7 @@
 package typings.stormReactDiagrams.pathFindingMod
 
-import typings.stormReactDiagrams.AnonEnd
-import typings.stormReactDiagrams.AnonX
+import typings.stormReactDiagrams.anon.End
+import typings.stormReactDiagrams.anon.X
 import typings.stormReactDiagrams.mod.DiagramEngine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ class default protected () extends PathFinding {
     * finds a direct path from point A to B.
     */
   /* CompleteClass */
-  override def calculateDirectPath(from: AnonX, to: AnonX): js.Array[js.Array[Double]] = js.native
+  override def calculateDirectPath(from: X, to: X): js.Array[js.Array[Double]] = js.native
   /**
     * Puts everything together: merges the paths from/to the centre of the ports,
     * with the path calculated around other elements.
@@ -28,8 +28,8 @@ class default protected () extends PathFinding {
   /* CompleteClass */
   override def calculateDynamicPath(
     routingMatrix: js.Array[js.Array[Double]],
-    start: AnonX,
-    end: AnonX,
+    start: X,
+    end: X,
     pathToStart: js.Array[js.Array[Double]],
     pathToEnd: js.Array[js.Array[Double]]
   ): js.Any = js.native
@@ -39,6 +39,6 @@ class default protected () extends PathFinding {
     * blocked paths.
     */
   /* CompleteClass */
-  override def calculateLinkStartEndCoords(matrix: js.Array[js.Array[Double]], path: js.Array[js.Array[Double]]): AnonEnd = js.native
+  override def calculateLinkStartEndCoords(matrix: js.Array[js.Array[Double]], path: js.Array[js.Array[Double]]): End = js.native
 }
 

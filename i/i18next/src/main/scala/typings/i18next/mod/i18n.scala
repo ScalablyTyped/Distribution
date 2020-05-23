@@ -1,8 +1,8 @@
 package typings.i18next.mod
 
-import typings.i18next.AnonKeySeparator
-import typings.i18next.AnonSilent
-import typings.i18next.AnonTranslation
+import typings.i18next.anon.KeySeparator
+import typings.i18next.anon.Silent
+import typings.i18next.anon.Translation
 import typings.i18next.i18nextStrings.added
 import typings.i18next.i18nextStrings.failedLoading
 import typings.i18next.i18nextStrings.initialized
@@ -60,7 +60,7 @@ trait i18n extends js.Object {
     * Adds one key/value.
     */
   def addResource(lng: String, ns: String, key: String, value: String): Unit = js.native
-  def addResource(lng: String, ns: String, key: String, value: String, options: AnonSilent): Unit = js.native
+  def addResource(lng: String, ns: String, key: String, value: String, options: Silent): Unit = js.native
   /**
     * Adds a complete bundle.
     * Setting deep param to true will extend existing translations in that file.
@@ -120,7 +120,7 @@ trait i18n extends js.Object {
   /**
     * Returns a resource data by language.
     */
-  def getDataByLanguage(lng: String): AnonTranslation = js.native
+  def getDataByLanguage(lng: String): Translation = js.native
   /**
     * Returns a t function that defaults to given language or namespace.
     * Both params could be arrays of languages or namespaces and will be treated as fallbacks in that case.
@@ -138,7 +138,7 @@ trait i18n extends js.Object {
     * Gets one value by given key.
     */
   def getResource(lng: String, ns: String, key: String): js.Any = js.native
-  def getResource(lng: String, ns: String, key: String, options: AnonKeySeparator): js.Any = js.native
+  def getResource(lng: String, ns: String, key: String, options: KeySeparator): js.Any = js.native
   /**
     * Returns a resource bundle.
     */

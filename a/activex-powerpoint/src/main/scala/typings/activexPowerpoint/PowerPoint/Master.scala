@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.Master")
 @js.native
-class Master protected () extends js.Object {
+trait Master extends js.Object {
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val Background: ShapeRange = js.native
   var BackgroundStyle: MsoBackgroundStyleIndex = js.native

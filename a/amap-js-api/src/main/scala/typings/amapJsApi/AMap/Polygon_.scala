@@ -5,14 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Polygon")
 @js.native
-/**
-  * 多边形
-  * @param options 选项
-  */
-class Polygon_[ExtraData] () extends PathOverlay[ExtraData] {
-  def this(options: Options[ExtraData]) = this()
+trait Polygon_[ExtraData] extends PathOverlay[ExtraData] {
   /**
     * 判断指定点坐标是否在多边形范围内
     * @param point 坐标

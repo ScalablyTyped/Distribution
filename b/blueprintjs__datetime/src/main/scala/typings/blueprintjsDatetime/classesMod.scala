@@ -1,6 +1,5 @@
 package typings.blueprintjsDatetime
 
-import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.`DayPicker-Day`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ object classesMod extends js.Object {
   val DATEPICKER_CAPTION_CARET: String = js.native
   val DATEPICKER_CAPTION_MEASURE: String = js.native
   val DATEPICKER_CAPTION_SELECT: String = js.native
-  val DATEPICKER_DAY: `DayPicker-Day` = js.native
+  val DATEPICKER_DAY: /* "DayPicker-Day" */ String = js.native
   val DATEPICKER_DAY_DISABLED: String = js.native
   val DATEPICKER_DAY_IS_TODAY: String = js.native
   val DATEPICKER_DAY_OUTSIDE: String = js.native
@@ -24,6 +23,7 @@ object classesMod extends js.Object {
   val DATEPICKER_FOOTER: String = js.native
   val DATEPICKER_MONTH_SELECT: String = js.native
   val DATEPICKER_NAVBAR: String = js.native
+  val DATEPICKER_TIMEPICKER_WRAPPER: String = js.native
   val DATEPICKER_YEAR_SELECT: String = js.native
   val DATERANGEPICKER: String = js.native
   val DATERANGEPICKER_CONTIGUOUS: String = js.native

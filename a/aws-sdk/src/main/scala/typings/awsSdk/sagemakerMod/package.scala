@@ -389,7 +389,6 @@ package object sagemakerMod {
   type EndpointSummaryList = js.Array[typings.awsSdk.sagemakerMod.EndpointSummary]
   type EntityDescription = java.lang.String
   type EntityName = java.lang.String
-  type EnvironmentArn = java.lang.String
   type EnvironmentKey = java.lang.String
   type EnvironmentMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.sagemakerMod.EnvironmentValue]
   type EnvironmentValue = java.lang.String
@@ -1047,6 +1046,7 @@ package object sagemakerMod {
   */
   type S3DataType = typings.awsSdk.sagemakerMod._S3DataType | java.lang.String
   type S3Uri = java.lang.String
+  type SageMakerImageArn = java.lang.String
   type SamplingPercentage = scala.Double
   type ScheduleExpression = java.lang.String
   /* Rewritten from type alias, can be one of: 

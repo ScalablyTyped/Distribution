@@ -20,18 +20,18 @@ object Options {
   def apply(
     disableDefaultStyle: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    maxDepth: Int | Double = null,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null,
+    maxDepth: js.UndefOr[Double] = js.undefined,
+    offsetX: js.UndefOr[Double] = js.undefined,
+    offsetY: js.UndefOr[Double] = js.undefined,
     styleId: String = null,
     theme: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableDefaultStyle)) __obj.updateDynamic("disableDefaultStyle")(disableDefaultStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDefaultStyle)) __obj.updateDynamic("disableDefaultStyle")(disableDefaultStyle.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
     if (styleId != null) __obj.updateDynamic("styleId")(styleId.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

@@ -27,12 +27,12 @@ object SlickGridAutoTooltipsOption {
   def apply(
     enableForCells: js.UndefOr[Boolean] = js.undefined,
     enableForHeaderCells: js.UndefOr[Boolean] = js.undefined,
-    maxToolTipLength: Int | Double = null
+    maxToolTipLength: js.UndefOr[Double] = js.undefined
   ): SlickGridAutoTooltipsOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableForCells)) __obj.updateDynamic("enableForCells")(enableForCells.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableForHeaderCells)) __obj.updateDynamic("enableForHeaderCells")(enableForHeaderCells.asInstanceOf[js.Any])
-    if (maxToolTipLength != null) __obj.updateDynamic("maxToolTipLength")(maxToolTipLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableForCells)) __obj.updateDynamic("enableForCells")(enableForCells.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableForHeaderCells)) __obj.updateDynamic("enableForHeaderCells")(enableForHeaderCells.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxToolTipLength)) __obj.updateDynamic("maxToolTipLength")(maxToolTipLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlickGridAutoTooltipsOption]
   }
 }

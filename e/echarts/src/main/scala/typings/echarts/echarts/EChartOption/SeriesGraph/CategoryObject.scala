@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesGraph
 
-import typings.echarts.AnonBorderRadius
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonItemStyleAnonBorderTypeLabelAnonDistance
+import typings.echarts.anon.BorderRadius
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.ItemStyleBorderTypeLabelDistance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,21 +11,21 @@ trait CategoryObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.categories.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderTypeLabelAnonDistance] = js.undefined
+  var emphasis: js.UndefOr[ItemStyleBorderTypeLabelDistance] = js.undefined
   /**
     * The style of node in this category.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.categories.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * The label style of node in this category.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.categories.label
     */
-  var label: js.UndefOr[AnonBorderRadius] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.undefined
   /**
     * Name of category, which is used to correspond with
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -133,14 +133,14 @@ trait CategoryObject extends js.Object {
 object CategoryObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleAnonBorderTypeLabelAnonDistance = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonBorderRadius = null,
+    emphasis: ItemStyleBorderTypeLabelDistance = null,
+    itemStyle: BorderType = null,
+    label: BorderRadius = null,
     name: String = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
-    symbolRotate: Int | Double = null,
+    symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null
   ): CategoryObject = {
     val __obj = js.Dynamic.literal()
@@ -149,9 +149,9 @@ object CategoryObject {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.get.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoryObject]
   }

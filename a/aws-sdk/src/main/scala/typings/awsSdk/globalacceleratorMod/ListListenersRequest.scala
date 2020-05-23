@@ -22,9 +22,13 @@ trait ListListenersRequest extends js.Object {
 
 object ListListenersRequest {
   @scala.inline
-  def apply(AcceleratorArn: GenericString, MaxResults: Int | Double = null, NextToken: GenericString = null): ListListenersRequest = {
+  def apply(
+    AcceleratorArn: GenericString,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: GenericString = null
+  ): ListListenersRequest = {
     val __obj = js.Dynamic.literal(AcceleratorArn = AcceleratorArn.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListListenersRequest]
   }

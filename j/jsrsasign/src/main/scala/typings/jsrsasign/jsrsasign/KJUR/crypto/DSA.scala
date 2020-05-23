@@ -19,9 +19,8 @@ import scala.scalajs.js.annotation._
   * Some random number generators used in dsa-2.0.js was newly defined
   * in KJUR.crypto.Util class. Now all of LGPL codes are removed.
   */
-@JSGlobal("jsrsasign.KJUR.crypto.DSA")
 @js.native
-class DSA () extends js.Object {
+trait DSA extends js.Object {
   /**
     * parse hexadecimal ASN.1 DSA signature value
     * @param hSigVal hexadecimal string of ASN.1 encoded DSA signature value

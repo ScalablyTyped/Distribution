@@ -30,13 +30,13 @@ object GetSnapshotBlockResponse {
     BlockData: BlockData = null,
     Checksum: Checksum = null,
     ChecksumAlgorithm: ChecksumAlgorithm = null,
-    DataLength: Int | Double = null
+    DataLength: js.UndefOr[DataLength] = js.undefined
   ): GetSnapshotBlockResponse = {
     val __obj = js.Dynamic.literal()
     if (BlockData != null) __obj.updateDynamic("BlockData")(BlockData.asInstanceOf[js.Any])
     if (Checksum != null) __obj.updateDynamic("Checksum")(Checksum.asInstanceOf[js.Any])
     if (ChecksumAlgorithm != null) __obj.updateDynamic("ChecksumAlgorithm")(ChecksumAlgorithm.asInstanceOf[js.Any])
-    if (DataLength != null) __obj.updateDynamic("DataLength")(DataLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(DataLength)) __obj.updateDynamic("DataLength")(DataLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSnapshotBlockResponse]
   }
 }

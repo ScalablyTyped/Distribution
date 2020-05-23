@@ -18,9 +18,9 @@ trait UnionOptions extends js.Object {
 
 object UnionOptions {
   @scala.inline
-  def apply(conjunction: or | none = null): UnionOptions = {
+  def apply(conjunction: js.UndefOr[Null | or | none] = js.undefined): UnionOptions = {
     val __obj = js.Dynamic.literal()
-    if (conjunction != null) __obj.updateDynamic("conjunction")(conjunction.asInstanceOf[js.Any])
+    if (!js.isUndefined(conjunction)) __obj.updateDynamic("conjunction")(conjunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnionOptions]
   }
 }

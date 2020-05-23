@@ -1,9 +1,9 @@
 package typings.reactWidgets.multiselectMod
 
 import typings.react.mod.ReactType
-import typings.reactWidgets.AnonAction
-import typings.reactWidgets.AnonLastSearchTerm
-import typings.reactWidgets.AnonOriginalEvent
+import typings.reactWidgets.anon.Action
+import typings.reactWidgets.anon.LastSearchTerm
+import typings.reactWidgets.anon.OriginalEvent
 import typings.reactWidgets.commonPropsMod.AutoFocus
 import typings.reactWidgets.commonPropsMod.ReactWidgetsCommonDropdownProps
 import typings.reactWidgets.reactWidgetsBooleans.`false`
@@ -108,7 +108,7 @@ trait MultiselectProps
     * Change event Handler that is called when the value is changed. The handler is called with
     * an array of values.
     */
-  var onChange: js.UndefOr[js.Function2[/* dataItems */ js.Array[_], /* metadata */ AnonAction, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function2[/* dataItems */ js.Array[_], /* metadata */ Action, Unit]] = js.undefined
   /**
     * This handler fires when the user chooses to create a new tag, not in the data list. It is
     * up to the widget parent to implement creation logic, a common implementation is shown
@@ -119,12 +119,12 @@ trait MultiselectProps
     * Called when the value of the text box changes either from typing or a pasted value.
     * onSearch should be used when the searchTerm prop is set.
     */
-  var onSearch: js.UndefOr[js.Function2[/* searchTerm */ String, /* metadata */ AnonLastSearchTerm, Unit]] = js.undefined
+  var onSearch: js.UndefOr[js.Function2[/* searchTerm */ String, /* metadata */ LastSearchTerm, Unit]] = js.undefined
   /**
     * This handler fires when an item has been selected from the list. It fires before the
     * onChange handler, and fires regardless of whether the value has actually changed
     */
-  var onSelect: js.UndefOr[js.Function2[/* value */ js.Any, /* metadata */ AnonOriginalEvent, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* value */ js.Any, /* metadata */ OriginalEvent, Unit]] = js.undefined
   /**
     * Called when the Multiselect is about to open or close. onToggle should be used when the
     * open prop is set otherwise the widget will never open or close.
@@ -191,7 +191,7 @@ object MultiselectProps {
     defaultValue: js.Array[_] = null,
     disabled: Boolean | js.Array[_] = null,
     dropUp: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     filter: `false` | startsWith | endsWith | contains | (js.Function2[/* dataItem */ js.Any, /* searchTerm */ String, Boolean]) = null,
     groupBy: String | (js.Function1[/* dataItem */ js.Any, _]) = null,
     groupComponent: ReactType[_] = null,
@@ -202,11 +202,11 @@ object MultiselectProps {
     listComponent: ReactType[_] | String = null,
     listProps: js.Object = null,
     messages: MultiselectMessages = null,
-    minLength: Int | Double = null,
-    onChange: (/* dataItems */ js.Array[_], /* metadata */ AnonAction) => Unit = null,
+    minLength: js.UndefOr[Double] = js.undefined,
+    onChange: (/* dataItems */ js.Array[_], /* metadata */ Action) => Unit = null,
     onCreate: /* searchTerm */ String => Unit = null,
-    onSearch: (/* searchTerm */ String, /* metadata */ AnonLastSearchTerm) => Unit = null,
-    onSelect: (/* value */ js.Any, /* metadata */ AnonOriginalEvent) => Unit = null,
+    onSearch: (/* searchTerm */ String, /* metadata */ LastSearchTerm) => Unit = null,
+    onSelect: (/* value */ js.Any, /* metadata */ OriginalEvent) => Unit = null,
     onToggle: /* isOpen */ Boolean => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     placeholder: String = null,
@@ -220,32 +220,32 @@ object MultiselectProps {
   ): MultiselectProps = {
     val __obj = js.Dynamic.literal()
     if (allowCreate != null) __obj.updateDynamic("allowCreate")(allowCreate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(busy)) __obj.updateDynamic("busy")(busy.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(busy)) __obj.updateDynamic("busy")(busy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
     if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropUp)) __obj.updateDynamic("dropUp")(dropUp.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropUp)) __obj.updateDynamic("dropUp")(dropUp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.get.asInstanceOf[js.Any])
     if (itemComponent != null) __obj.updateDynamic("itemComponent")(itemComponent.asInstanceOf[js.Any])
     if (listComponent != null) __obj.updateDynamic("listComponent")(listComponent.asInstanceOf[js.Any])
     if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onCreate != null) __obj.updateDynamic("onCreate")(js.Any.fromFunction1(onCreate))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction2(onSearch))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (popupTransition != null) __obj.updateDynamic("popupTransition")(popupTransition.asInstanceOf[js.Any])
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])

@@ -13,12 +13,12 @@ trait HeaderOptions
 object HeaderOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     `X-Watson-Learning-Opt-Out`: js.UndefOr[Boolean] = js.undefined
   ): HeaderOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(`X-Watson-Learning-Opt-Out`)) __obj.updateDynamic("X-Watson-Learning-Opt-Out")(`X-Watson-Learning-Opt-Out`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`X-Watson-Learning-Opt-Out`)) __obj.updateDynamic("X-Watson-Learning-Opt-Out")(`X-Watson-Learning-Opt-Out`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderOptions]
   }
 }

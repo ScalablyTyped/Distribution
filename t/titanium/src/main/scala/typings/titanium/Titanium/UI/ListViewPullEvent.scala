@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the user drags the list view past the top edge of the [pullView](Titanium.UI.ListView.pullView).
-		 */
+  * Fired when the user drags the list view past the top edge of the [pullView](Titanium.UI.ListView.pullView).
+  */
 trait ListViewPullEvent extends ListViewBaseEvent {
   /**
-  			 * Determines if the `pullView` is completely visible (true) or partially hidden (false).
-  			 */
+    * Determines if the `pullView` is completely visible (true) or partially hidden (false).
+    */
   var active: Boolean
   /**
-  			 * false. This event does not bubble.
-  			 */
+    * false. This event does not bubble.
+    */
   var bubbles: Boolean
 }
 

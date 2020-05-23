@@ -35,18 +35,18 @@ object IAddress {
   @scala.inline
   def apply(
     line1: String,
-    city: String = null,
-    country: String = null,
-    line2: String = null,
-    postal_code: String = null,
-    state: String = null
+    city: js.UndefOr[Null | String] = js.undefined,
+    country: js.UndefOr[Null | String] = js.undefined,
+    line2: js.UndefOr[Null | String] = js.undefined,
+    postal_code: js.UndefOr[Null | String] = js.undefined,
+    state: js.UndefOr[Null | String] = js.undefined
   ): IAddress = {
     val __obj = js.Dynamic.literal(line1 = line1.asInstanceOf[js.Any])
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (line2 != null) __obj.updateDynamic("line2")(line2.asInstanceOf[js.Any])
-    if (postal_code != null) __obj.updateDynamic("postal_code")(postal_code.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(city)) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (!js.isUndefined(country)) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (!js.isUndefined(line2)) __obj.updateDynamic("line2")(line2.asInstanceOf[js.Any])
+    if (!js.isUndefined(postal_code)) __obj.updateDynamic("postal_code")(postal_code.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddress]
   }
 }

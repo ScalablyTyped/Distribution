@@ -2,6 +2,7 @@ package typings.vanillaSwipe
 
 import typings.std.MouseEvent
 import typings.std.TouchEvent
+import typings.vanillaSwipe.anon.AbsX
 import typings.vanillaSwipe.typesMod.ConstructorProps
 import typings.vanillaSwipe.typesMod.State
 import scala.scalajs.js
@@ -18,8 +19,8 @@ object mod extends js.Object {
     def cleanupMouseListeners(): Unit = js.native
     def cleanupTouchListeners(): Unit = js.native
     def destroy(): Unit = js.native
-    def getPosition(e: MouseEvent): AnonAbsX = js.native
-    def getPosition(e: TouchEvent): AnonAbsX = js.native
+    def getPosition(e: MouseEvent): AbsX = js.native
+    def getPosition(e: TouchEvent): AbsX = js.native
     def handleMouseDown(e: MouseEvent): Unit = js.native
     def handleMouseLeave(): Unit = js.native
     def handleMouseMove(e: MouseEvent): Unit = js.native

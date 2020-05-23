@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbTimestamp")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbTimestamp")
 @js.native
 class DbTimestamp protected () extends js.Object {
   def this(seconds: Double, nanoseconds: Double) = this()

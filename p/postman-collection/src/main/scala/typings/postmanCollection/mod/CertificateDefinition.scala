@@ -1,13 +1,13 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonSrc
+import typings.postmanCollection.anon.Src
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CertificateDefinition extends PropertyDefinition {
-  var cert: js.UndefOr[AnonSrc | String] = js.undefined
-  var key: js.UndefOr[AnonSrc | String] = js.undefined
+  var cert: js.UndefOr[Src | String] = js.undefined
+  var key: js.UndefOr[Src | String] = js.undefined
   var matches: js.UndefOr[js.Array[String] | UrlMatchPatternList] = js.undefined
   var passphrase: js.UndefOr[String] = js.undefined
 }
@@ -15,11 +15,11 @@ trait CertificateDefinition extends PropertyDefinition {
 object CertificateDefinition {
   @scala.inline
   def apply(
-    cert: AnonSrc | String = null,
+    cert: Src | String = null,
     description: String | DescriptionDefinition = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    key: AnonSrc | String = null,
+    key: Src | String = null,
     matches: js.Array[String] | UrlMatchPatternList = null,
     name: String = null,
     passphrase: String = null
@@ -27,7 +27,7 @@ object CertificateDefinition {
     val __obj = js.Dynamic.literal()
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])

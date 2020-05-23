@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FormData")
-@js.native
-class FormData () extends js.Object {
-  def append(name: String, value: js.Any): Unit = js.native
+trait FormData extends js.Object {
+  def append(name: String, value: js.Any): Unit
+}
+
+object FormData {
+  @scala.inline
+  def apply(append: (String, js.Any) => Unit): FormData = {
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction2(append))
+    __obj.asInstanceOf[FormData]
+  }
 }
 

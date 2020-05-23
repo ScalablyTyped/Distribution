@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ToastHistoryChangedType extends js.Object {
   /** Just this notification was removed with a remove command. */
   @js.native
   sealed trait removed extends ToastHistoryChangedType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ToastHistoryChangedType with Double] = js.native
-  /* 3 */ @js.native
-  object added extends TopLevel[added with Double]
-  
-  /* 0 */ @js.native
-  object cleared extends TopLevel[cleared with Double]
-  
-  /* 2 */ @js.native
-  object expired extends TopLevel[expired with Double]
-  
-  /* 1 */ @js.native
-  object removed extends TopLevel[removed with Double]
   
 }
 

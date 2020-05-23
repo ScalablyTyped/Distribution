@@ -46,8 +46,8 @@ object FlexGridItemProps {
     flexDirection: Responsive[FlexDirection] = null,
     flexGridColumnCount: Responsive[Double] = null,
     flexGridColumnGap: Responsive[Scale] = null,
-    flexGridItemCount: Int | Double = null,
-    flexGridItemIndex: Int | Double = null,
+    flexGridItemCount: js.UndefOr[Double] = js.undefined,
+    flexGridItemIndex: js.UndefOr[Double] = js.undefined,
     flexGridRowGap: Responsive[Scale] = null,
     flexWrap: Responsive[Boolean] = null,
     font: String | js.Array[String] = null,
@@ -94,7 +94,7 @@ object FlexGridItemProps {
     placeItems: Responsive[String] = null,
     placeSelf: Responsive[String] = null,
     position: Responsive[Position] = null,
-    ref: Ref[_] = null,
+    ref: js.UndefOr[Null | Ref[_]] = js.undefined,
     right: Responsive[Scale] = null,
     src: String = null,
     top: Responsive[Scale] = null,
@@ -115,8 +115,8 @@ object FlexGridItemProps {
     if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
     if (flexGridColumnCount != null) __obj.updateDynamic("flexGridColumnCount")(flexGridColumnCount.asInstanceOf[js.Any])
     if (flexGridColumnGap != null) __obj.updateDynamic("flexGridColumnGap")(flexGridColumnGap.asInstanceOf[js.Any])
-    if (flexGridItemCount != null) __obj.updateDynamic("flexGridItemCount")(flexGridItemCount.asInstanceOf[js.Any])
-    if (flexGridItemIndex != null) __obj.updateDynamic("flexGridItemIndex")(flexGridItemIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexGridItemCount)) __obj.updateDynamic("flexGridItemCount")(flexGridItemCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexGridItemIndex)) __obj.updateDynamic("flexGridItemIndex")(flexGridItemIndex.get.asInstanceOf[js.Any])
     if (flexGridRowGap != null) __obj.updateDynamic("flexGridRowGap")(flexGridRowGap.asInstanceOf[js.Any])
     if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
@@ -163,7 +163,7 @@ object FlexGridItemProps {
     if (placeItems != null) __obj.updateDynamic("placeItems")(placeItems.asInstanceOf[js.Any])
     if (placeSelf != null) __obj.updateDynamic("placeSelf")(placeSelf.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])

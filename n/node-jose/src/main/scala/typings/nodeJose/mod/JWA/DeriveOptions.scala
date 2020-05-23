@@ -24,7 +24,7 @@ object DeriveOptions {
   def apply(
     hash: Buffer = null,
     info: Buffer = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     otherInfo: Buffer = null,
     public: Buffer = null,
     salt: Buffer = null
@@ -32,7 +32,7 @@ object DeriveOptions {
     val __obj = js.Dynamic.literal()
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (otherInfo != null) __obj.updateDynamic("otherInfo")(otherInfo.asInstanceOf[js.Any])
     if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
     if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])

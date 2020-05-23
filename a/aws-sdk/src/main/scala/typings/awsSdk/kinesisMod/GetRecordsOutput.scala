@@ -24,11 +24,11 @@ object GetRecordsOutput {
   @scala.inline
   def apply(
     Records: RecordList,
-    MillisBehindLatest: Int | Double = null,
+    MillisBehindLatest: js.UndefOr[MillisBehindLatest] = js.undefined,
     NextShardIterator: ShardIterator = null
   ): GetRecordsOutput = {
     val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
-    if (MillisBehindLatest != null) __obj.updateDynamic("MillisBehindLatest")(MillisBehindLatest.asInstanceOf[js.Any])
+    if (!js.isUndefined(MillisBehindLatest)) __obj.updateDynamic("MillisBehindLatest")(MillisBehindLatest.get.asInstanceOf[js.Any])
     if (NextShardIterator != null) __obj.updateDynamic("NextShardIterator")(NextShardIterator.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecordsOutput]
   }

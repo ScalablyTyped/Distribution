@@ -61,7 +61,7 @@ object A11yOptions {
     prevSlideMessage: String = null
   ): A11yOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (firstSlideMessage != null) __obj.updateDynamic("firstSlideMessage")(firstSlideMessage.asInstanceOf[js.Any])
     if (lastSlideMessage != null) __obj.updateDynamic("lastSlideMessage")(lastSlideMessage.asInstanceOf[js.Any])
     if (nextSlideMessage != null) __obj.updateDynamic("nextSlideMessage")(nextSlideMessage.asInstanceOf[js.Any])

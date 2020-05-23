@@ -1,6 +1,6 @@
 package typings.typedoc.mod
 
-import typings.typedoc.AnonCaption
+import typings.typedoc.anon.Caption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class MarkedLinksPlugin ()
 @JSImport("typedoc", "MarkedLinksPlugin")
 @js.native
 object MarkedLinksPlugin extends js.Object {
-  def splitLinkText(text: String): AnonCaption = js.native
+  def splitLinkText(text: String): Caption = js.native
 }
 

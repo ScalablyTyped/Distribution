@@ -27,8 +27,8 @@ object IPathIntersectionOptions {
     path2Offset: IPoint = null
   ): IPathIntersectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeTangents)) __obj.updateDynamic("excludeTangents")(excludeTangents.asInstanceOf[js.Any])
-    if (!js.isUndefined(out_AreOverlapped)) __obj.updateDynamic("out_AreOverlapped")(out_AreOverlapped.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeTangents)) __obj.updateDynamic("excludeTangents")(excludeTangents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(out_AreOverlapped)) __obj.updateDynamic("out_AreOverlapped")(out_AreOverlapped.get.asInstanceOf[js.Any])
     if (path1Offset != null) __obj.updateDynamic("path1Offset")(path1Offset.asInstanceOf[js.Any])
     if (path2Offset != null) __obj.updateDynamic("path2Offset")(path2Offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathIntersectionOptions]

@@ -2,6 +2,9 @@ package typings.rotJs
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
+import typings.rotJs.anon.PartialDisplayOptions
+import typings.rotJs.anon.TypeofRect
+import typings.rotJs.anon.TypeofTileGL
 import typings.rotJs.typesMod.DisplayData
 import typings.rotJs.typesMod.DisplayOptions
 import typings.std.HTMLElement

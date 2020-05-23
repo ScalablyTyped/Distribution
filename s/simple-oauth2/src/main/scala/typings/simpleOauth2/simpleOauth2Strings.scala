@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object simpleOauth2Strings {
   @js.native
-  sealed trait AnonAuthorizeURL extends js.Object
+  sealed trait AuthorizeURL extends js.Object
   
   @js.native
   sealed trait access_token extends TokenType
@@ -34,7 +34,7 @@ object simpleOauth2Strings {
   sealed trait strict extends js.Object
   
   @scala.inline
-  def AnonAuthorizeURL: AnonAuthorizeURL = "AnonAuthorizeURL".asInstanceOf[AnonAuthorizeURL]
+  def AuthorizeURL: AuthorizeURL = "AuthorizeURL".asInstanceOf[AuthorizeURL]
   @scala.inline
   def access_token: access_token = "access_token".asInstanceOf[access_token]
   @scala.inline

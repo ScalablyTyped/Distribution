@@ -21,8 +21,8 @@ object appLoadingMod extends js.Object {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.expo.AnonAutoHideSplash
-    - typings.expo.AnonOnError
+    - typings.expo.anon.AutoHideSplash
+    - typings.expo.anon.OnError
   */
   trait Props extends js.Object
   

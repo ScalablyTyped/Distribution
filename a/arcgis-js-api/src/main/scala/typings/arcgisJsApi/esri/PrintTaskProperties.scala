@@ -17,10 +17,10 @@ trait PrintTaskProperties extends TaskProperties {
 
 object PrintTaskProperties {
   @scala.inline
-  def apply(requestOptions: js.Any = null, updateDelay: Int | Double = null, url: String = null): PrintTaskProperties = {
+  def apply(requestOptions: js.Any = null, updateDelay: js.UndefOr[Double] = js.undefined, url: String = null): PrintTaskProperties = {
     val __obj = js.Dynamic.literal()
     if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
-    if (updateDelay != null) __obj.updateDynamic("updateDelay")(updateDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateDelay)) __obj.updateDynamic("updateDelay")(updateDelay.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTaskProperties]
   }

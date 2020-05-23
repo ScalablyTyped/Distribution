@@ -1,6 +1,6 @@
 package typings.akuminaCore.mod.Digispace
 
-import typings.akuminaCore.AnonEmail
+import typings.akuminaCore.anon.Email
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class PageContext () extends js.Object
 object PageContext extends js.Object {
   var EditMode: Boolean = js.native
   var PageId: String = js.native
-  var PageRouteInfo: AnonEmail = js.native
+  var PageRouteInfo: Email = js.native
   def MapPageUrl(pageUrl: String): String = js.native
 }
 

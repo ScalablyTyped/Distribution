@@ -1,7 +1,7 @@
 package typings.fundamentalReact.linkMod
 
-import typings.fundamentalReact.PartialLinkProps
-import typings.fundamentalReact.WeakValidationMapLinkProp
+import typings.fundamentalReact.anon.PartialLinkProps
+import typings.fundamentalReact.anon.WeakValidationMapLinkProp
 import typings.fundamentalReact.fundamentalReactStrings.Link
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

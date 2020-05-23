@@ -1,6 +1,5 @@
 package typings.ixJs.Ix
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -278,8 +277,4 @@ trait Enumerable[T] extends js.Object {
   def where(selector: EnumerablePredicate[T], thisArg: js.Any): Enumerable[T] = js.native
   def zip[TRight, TResult](right: Enumerable[TRight], selector: js.Function2[/* left */ T, /* right */ TRight, TResult]): Enumerable[TResult] = js.native
 }
-
-@JSGlobal("Ix.Enumerable")
-@js.native
-object Enumerable extends TopLevel[EnumerableStatic]
 

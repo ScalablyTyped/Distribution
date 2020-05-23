@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Scenario")
 @js.native
-class Scenario protected () extends js.Object {
+trait Scenario extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("ChangingCells")
   val ChangingCells_Original: Range = js.native

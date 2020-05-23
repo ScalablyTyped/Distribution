@@ -1,6 +1,6 @@
 package typings.ytSearch.mod
 
-import typings.ytSearch.AnonSeconds
+import typings.ytSearch.anon.Seconds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait VideoMetadataResult extends js.Object {
   var ago: String
   var author: Author
   var description: String
-  var duration: AnonSeconds
+  var duration: Seconds
   var genre: String
   var image: String
   var seconds: Double
@@ -28,7 +28,7 @@ object VideoMetadataResult {
     ago: String,
     author: Author,
     description: String,
-    duration: AnonSeconds,
+    duration: Seconds,
     genre: String,
     image: String,
     seconds: Double,

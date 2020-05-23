@@ -11,9 +11,9 @@ trait ScaleControlOptions extends js.Object {
 
 object ScaleControlOptions {
   @scala.inline
-  def apply(anchor: Int | Double = null, offset: Size = null): ScaleControlOptions = {
+  def apply(anchor: js.UndefOr[ControlAnchor] = js.undefined, offset: Size = null): ScaleControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleControlOptions]
   }

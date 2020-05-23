@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a certificate chain used for signature verification. */
-@JSGlobal("Windows.Security.Cryptography.Certificates.CertificateChain")
 @js.native
-abstract class CertificateChain () extends js.Object {
+trait CertificateChain extends js.Object {
   /**
     * Gets the list of certificates from the certificate chain.
     * @param includeRoot True to include the root certificate in the results; otherwise false.

@@ -23,12 +23,12 @@ trait CatalogImportStatus extends js.Object {
 object CatalogImportStatus {
   @scala.inline
   def apply(
-    ImportCompleted: js.UndefOr[scala.Boolean] = js.undefined,
+    ImportCompleted: js.UndefOr[Boolean] = js.undefined,
     ImportTime: Timestamp = null,
     ImportedBy: NameString = null
   ): CatalogImportStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ImportCompleted)) __obj.updateDynamic("ImportCompleted")(ImportCompleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(ImportCompleted)) __obj.updateDynamic("ImportCompleted")(ImportCompleted.get.asInstanceOf[js.Any])
     if (ImportTime != null) __obj.updateDynamic("ImportTime")(ImportTime.asInstanceOf[js.Any])
     if (ImportedBy != null) __obj.updateDynamic("ImportedBy")(ImportedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatalogImportStatus]

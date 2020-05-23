@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.mobx.internalMod.ObservableMap
 import typings.mobx.mobxBooleans.`false`
 import typings.mobx.mobxBooleans.`true`
-import typings.mobx.mobxStrings.`An invariant failedComma however the error is obfuscated because this is a production buildDot`
 import typings.mobx.observablemapMod.IKeyValueMap
 import typings.std.PropertyKey
 import scala.scalajs.js
@@ -21,7 +20,7 @@ object utilsMod extends js.Object {
   }
   
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
-  val OBFUSCATED_ERROR: `An invariant failedComma however the error is obfuscated because this is a production buildDot` = js.native
+  val OBFUSCATED_ERROR: /* "An invariant failed, however the error is obfuscated because this is a production build." */ String = js.native
   def addHiddenFinalProp(`object`: js.Any, propName: PropertyKey, value: js.Any): Unit = js.native
   def addHiddenProp(`object`: js.Any, propName: PropertyKey, value: js.Any): Unit = js.native
   def assertPropertyConfigurable(`object`: js.Any, prop: PropertyKey): Unit = js.native

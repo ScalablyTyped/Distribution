@@ -31,18 +31,18 @@ trait SyntaxToken extends js.Object {
 object SyntaxToken {
   @scala.inline
   def apply(
-    BeginOffset: Int | scala.Double = null,
-    EndOffset: Int | scala.Double = null,
+    BeginOffset: js.UndefOr[Integer] = js.undefined,
+    EndOffset: js.UndefOr[Integer] = js.undefined,
     PartOfSpeech: PartOfSpeechTag = null,
     Text: String = null,
-    TokenId: Int | scala.Double = null
+    TokenId: js.UndefOr[Integer] = js.undefined
   ): SyntaxToken = {
     val __obj = js.Dynamic.literal()
-    if (BeginOffset != null) __obj.updateDynamic("BeginOffset")(BeginOffset.asInstanceOf[js.Any])
-    if (EndOffset != null) __obj.updateDynamic("EndOffset")(EndOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(BeginOffset)) __obj.updateDynamic("BeginOffset")(BeginOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EndOffset)) __obj.updateDynamic("EndOffset")(EndOffset.get.asInstanceOf[js.Any])
     if (PartOfSpeech != null) __obj.updateDynamic("PartOfSpeech")(PartOfSpeech.asInstanceOf[js.Any])
     if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
-    if (TokenId != null) __obj.updateDynamic("TokenId")(TokenId.asInstanceOf[js.Any])
+    if (!js.isUndefined(TokenId)) __obj.updateDynamic("TokenId")(TokenId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxToken]
   }
 }

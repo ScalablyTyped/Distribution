@@ -5,15 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSG.Connector")
 @js.native
-class Connector protected () extends CxG {
-  def this(point: js.Array[Double], axisvector: js.Array[Double], normalvector: js.Array[Double]) = this()
-  def this(point: js.Array[Double], axisvector: js.Array[Double], normalvector: Vector3D) = this()
-  def this(point: js.Array[Double], axisvector: Vector3D, normalvector: js.Array[Double]) = this()
-  def this(point: Vector3D, axisvector: js.Array[Double], normalvector: js.Array[Double]) = this()
-  def this(point: Vector3D, axisvector: js.Array[Double], normalvector: Vector3D) = this()
-  def this(point: Vector3D, axisvector: Vector3D, normalvector: Vector3D) = this()
+trait Connector extends CxG {
   var axisvector: Vector3D = js.native
   var normalvector: Vector3D = js.native
   var point: Vector3D = js.native

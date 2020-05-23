@@ -24,10 +24,10 @@ object CreateSubscriptionOptions {
   ): CreateSubscriptionOptions = {
     val __obj = js.Dynamic.literal()
     if (DefaultMessageTimeToLive != null) __obj.updateDynamic("DefaultMessageTimeToLive")(DefaultMessageTimeToLive.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDeadLetteringOnFilterEvaluationExceptions)) __obj.updateDynamic("EnableDeadLetteringOnFilterEvaluationExceptions")(EnableDeadLetteringOnFilterEvaluationExceptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDeadLetteringOnMessageExpiration)) __obj.updateDynamic("EnableDeadLetteringOnMessageExpiration")(EnableDeadLetteringOnMessageExpiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableDeadLetteringOnFilterEvaluationExceptions)) __obj.updateDynamic("EnableDeadLetteringOnFilterEvaluationExceptions")(EnableDeadLetteringOnFilterEvaluationExceptions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableDeadLetteringOnMessageExpiration)) __obj.updateDynamic("EnableDeadLetteringOnMessageExpiration")(EnableDeadLetteringOnMessageExpiration.get.asInstanceOf[js.Any])
     if (LockDuration != null) __obj.updateDynamic("LockDuration")(LockDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequiresSession)) __obj.updateDynamic("RequiresSession")(RequiresSession.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequiresSession)) __obj.updateDynamic("RequiresSession")(RequiresSession.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSubscriptionOptions]
   }
 }

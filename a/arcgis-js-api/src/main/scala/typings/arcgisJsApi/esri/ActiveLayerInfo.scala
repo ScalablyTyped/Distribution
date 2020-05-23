@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,8 +67,4 @@ trait ActiveLayerInfo extends Accessor {
     */
   var view: View = js.native
 }
-
-@JSGlobal("__esri.ActiveLayerInfo")
-@js.native
-object ActiveLayerInfo extends TopLevel[ActiveLayerInfoConstructor]
 

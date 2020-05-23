@@ -4,13 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullAdditionalCallResolutionData")
-@js.native
-class PullAdditionalCallResolutionData () extends js.Object {
-  var actualParametersContextTypeSymbols: js.Array[PullTypeSymbol] = js.native
-  var candidateSignature: PullSignatureSymbol = js.native
-  var diagnosticsFromOverloadResolution: js.Array[Diagnostic] = js.native
-  var resolvedSignatures: js.Array[PullSignatureSymbol] = js.native
-  var targetSymbol: PullSymbol = js.native
+trait PullAdditionalCallResolutionData extends js.Object {
+  var actualParametersContextTypeSymbols: js.Array[PullTypeSymbol]
+  var candidateSignature: PullSignatureSymbol
+  var diagnosticsFromOverloadResolution: js.Array[Diagnostic]
+  var resolvedSignatures: js.Array[PullSignatureSymbol]
+  var targetSymbol: PullSymbol
+}
+
+object PullAdditionalCallResolutionData {
+  @scala.inline
+  def apply(
+    actualParametersContextTypeSymbols: js.Array[PullTypeSymbol],
+    candidateSignature: PullSignatureSymbol,
+    diagnosticsFromOverloadResolution: js.Array[Diagnostic],
+    resolvedSignatures: js.Array[PullSignatureSymbol],
+    targetSymbol: PullSymbol
+  ): PullAdditionalCallResolutionData = {
+    val __obj = js.Dynamic.literal(actualParametersContextTypeSymbols = actualParametersContextTypeSymbols.asInstanceOf[js.Any], candidateSignature = candidateSignature.asInstanceOf[js.Any], diagnosticsFromOverloadResolution = diagnosticsFromOverloadResolution.asInstanceOf[js.Any], resolvedSignatures = resolvedSignatures.asInstanceOf[js.Any], targetSymbol = targetSymbol.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PullAdditionalCallResolutionData]
+  }
 }
 

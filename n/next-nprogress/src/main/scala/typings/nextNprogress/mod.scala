@@ -1,5 +1,6 @@
 package typings.nextNprogress
 
+import typings.nextNprogress.anon.PartialNProgressOptions
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

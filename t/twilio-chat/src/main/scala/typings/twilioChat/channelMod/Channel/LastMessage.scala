@@ -12,9 +12,9 @@ trait LastMessage extends js.Object {
 
 object LastMessage {
   @scala.inline
-  def apply(index: Int | Double = null, timestamp: Date = null): LastMessage = {
+  def apply(index: js.UndefOr[Double] = js.undefined, timestamp: Date = null): LastMessage = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastMessage]
   }

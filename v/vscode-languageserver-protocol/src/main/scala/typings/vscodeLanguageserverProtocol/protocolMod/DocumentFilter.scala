@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.vscodeLanguageserverProtocol.AnonLanguage
-  - typings.vscodeLanguageserverProtocol.AnonPattern
-  - typings.vscodeLanguageserverProtocol.AnonScheme
+  - typings.vscodeLanguageserverProtocol.anon.Language
+  - typings.vscodeLanguageserverProtocol.anon.Pattern
+  - typings.vscodeLanguageserverProtocol.anon.Scheme
 */
 trait DocumentFilter extends js.Object
 

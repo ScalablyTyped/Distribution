@@ -15,11 +15,15 @@ trait DevicesLongRunningOperationMetadata extends js.Object {
 
 object DevicesLongRunningOperationMetadata {
   @scala.inline
-  def apply(devicesCount: Int | Double = null, processingStatus: String = null, progress: Int | Double = null): DevicesLongRunningOperationMetadata = {
+  def apply(
+    devicesCount: js.UndefOr[Double] = js.undefined,
+    processingStatus: String = null,
+    progress: js.UndefOr[Double] = js.undefined
+  ): DevicesLongRunningOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (devicesCount != null) __obj.updateDynamic("devicesCount")(devicesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(devicesCount)) __obj.updateDynamic("devicesCount")(devicesCount.get.asInstanceOf[js.Any])
     if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicesLongRunningOperationMetadata]
   }
 }

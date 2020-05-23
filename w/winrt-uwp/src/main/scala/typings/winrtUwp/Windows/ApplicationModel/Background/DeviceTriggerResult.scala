@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object DeviceTriggerResult extends js.Object {
   /** The device background task cannot run because the battery is low. */
   @js.native
   sealed trait lowBattery extends DeviceTriggerResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceTriggerResult with Double] = js.native
-  /* 0 */ @js.native
-  object allowed extends TopLevel[allowed with Double]
-  
-  /* 2 */ @js.native
-  object deniedBySystem extends TopLevel[deniedBySystem with Double]
-  
-  /* 1 */ @js.native
-  object deniedByUser extends TopLevel[deniedByUser with Double]
-  
-  /* 3 */ @js.native
-  object lowBattery extends TopLevel[lowBattery with Double]
   
 }
 

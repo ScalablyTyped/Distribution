@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait ChartLegendFormatData extends js.Object {
   /**
     *
-    * Represents the border format, which includes color, linestyle, and weight. Read-only.
+    * Represents the border format, which includes color, linestyle, and weight.
     *
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderData] = js.undefined
   /**
     *
-    * Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
+    * Represents the font attributes such as font name, font size, color, etc. of a chart legend.
     *
     * [Api set: ExcelApi 1.1]
     */

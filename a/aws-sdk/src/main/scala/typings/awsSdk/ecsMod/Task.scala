@@ -175,7 +175,7 @@ object Task {
     tags: Tags = null,
     taskArn: String = null,
     taskDefinitionArn: String = null,
-    version: Int | scala.Double = null
+    version: js.UndefOr[Long] = js.undefined
   ): Task = {
     val __obj = js.Dynamic.literal()
     if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
@@ -210,7 +210,7 @@ object Task {
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (taskArn != null) __obj.updateDynamic("taskArn")(taskArn.asInstanceOf[js.Any])
     if (taskDefinitionArn != null) __obj.updateDynamic("taskDefinitionArn")(taskDefinitionArn.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
 }

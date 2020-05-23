@@ -65,7 +65,7 @@ object DisplayWebDialogOptions {
     width: String = null
   ): DisplayWebDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(displayInIFrame)) __obj.updateDynamic("displayInIFrame")(displayInIFrame.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayInIFrame)) __obj.updateDynamic("displayInIFrame")(displayInIFrame.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction2(onMessage))

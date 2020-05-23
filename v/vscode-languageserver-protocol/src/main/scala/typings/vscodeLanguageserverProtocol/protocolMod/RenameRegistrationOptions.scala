@@ -15,10 +15,9 @@ object RenameRegistrationOptions {
     prepareProvider: js.UndefOr[Boolean] = js.undefined,
     workDoneProgress: js.UndefOr[Boolean] = js.undefined
   ): RenameRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
-    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(prepareProvider)) __obj.updateDynamic("prepareProvider")(prepareProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(documentSelector = documentSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepareProvider)) __obj.updateDynamic("prepareProvider")(prepareProvider.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameRegistrationOptions]
   }
 }

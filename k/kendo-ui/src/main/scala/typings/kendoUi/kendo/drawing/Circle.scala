@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.drawing.Circle")
 @js.native
-class Circle protected () extends Element {
-  def this(geometry: typings.kendoUi.kendo.geometry.Circle) = this()
-  def this(geometry: typings.kendoUi.kendo.geometry.Circle, options: CircleOptions) = this()
+trait Circle extends Element {
   @JSName("options")
   var options_Circle: CircleOptions = js.native
   def fill(color: String): Circle = js.native

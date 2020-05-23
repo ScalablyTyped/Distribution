@@ -1,6 +1,6 @@
 package typings.autobahn.mod
 
-import typings.when.When.Promise_
+import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +21,6 @@ trait ISubscription extends js.Object {
   def handler(args: js.Array[_]): Unit = js.native
   def handler(args: js.Array[_], kwargs: js.Any): Unit = js.native
   def handler(args: js.Array[_], kwargs: js.Any, details: IEvent): Unit = js.native
-  def unsubscribe(): Promise_[_] = js.native
+  def unsubscribe(): Promise[_] = js.native
 }
 

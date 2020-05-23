@@ -53,37 +53,37 @@ object CardIOModuleProps {
     restrictPostalCodeToNumericOnly: js.UndefOr[Boolean] = js.undefined,
     scanExpiry: js.UndefOr[Boolean] = js.undefined,
     scanInstructions: String = null,
-    scannedImageDuration: Int | Double = null,
+    scannedImageDuration: js.UndefOr[Double] = js.undefined,
     suppressConfirmation: js.UndefOr[Boolean] = js.undefined,
     suppressManualEntry: js.UndefOr[Boolean] = js.undefined,
     suppressScannedCardImage: js.UndefOr[Boolean] = js.undefined,
-    unblurDigits: Int | Double = null,
+    unblurDigits: js.UndefOr[Double] = js.undefined,
     useCardIOLogo: js.UndefOr[Boolean] = js.undefined,
     usePaypalActionbarIcon: js.UndefOr[Boolean] = js.undefined
   ): CardIOModuleProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFreelyRotatingCardGuide)) __obj.updateDynamic("allowFreelyRotatingCardGuide")(allowFreelyRotatingCardGuide.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFreelyRotatingCardGuide)) __obj.updateDynamic("allowFreelyRotatingCardGuide")(allowFreelyRotatingCardGuide.get.asInstanceOf[js.Any])
     if (detectionMode != null) __obj.updateDynamic("detectionMode")(detectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableBlurWhenBackgrounding)) __obj.updateDynamic("disableBlurWhenBackgrounding")(disableBlurWhenBackgrounding.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableBlurWhenBackgrounding)) __obj.updateDynamic("disableBlurWhenBackgrounding")(disableBlurWhenBackgrounding.get.asInstanceOf[js.Any])
     if (guideColor != null) __obj.updateDynamic("guideColor")(guideColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideCardIOLogo)) __obj.updateDynamic("hideCardIOLogo")(hideCardIOLogo.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepStatusBarStyle)) __obj.updateDynamic("keepStatusBarStyle")(keepStatusBarStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCardIOLogo)) __obj.updateDynamic("hideCardIOLogo")(hideCardIOLogo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepStatusBarStyle)) __obj.updateDynamic("keepStatusBarStyle")(keepStatusBarStyle.get.asInstanceOf[js.Any])
     if (languageOrLocale != null) __obj.updateDynamic("languageOrLocale")(languageOrLocale.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCamera)) __obj.updateDynamic("noCamera")(noCamera.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireCVV)) __obj.updateDynamic("requireCVV")(requireCVV.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireCardholderName)) __obj.updateDynamic("requireCardholderName")(requireCardholderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireExpiry)) __obj.updateDynamic("requireExpiry")(requireExpiry.asInstanceOf[js.Any])
-    if (!js.isUndefined(requirePostalCode)) __obj.updateDynamic("requirePostalCode")(requirePostalCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictPostalCodeToNumericOnly)) __obj.updateDynamic("restrictPostalCodeToNumericOnly")(restrictPostalCodeToNumericOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(scanExpiry)) __obj.updateDynamic("scanExpiry")(scanExpiry.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCamera)) __obj.updateDynamic("noCamera")(noCamera.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireCVV)) __obj.updateDynamic("requireCVV")(requireCVV.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireCardholderName)) __obj.updateDynamic("requireCardholderName")(requireCardholderName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireExpiry)) __obj.updateDynamic("requireExpiry")(requireExpiry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requirePostalCode)) __obj.updateDynamic("requirePostalCode")(requirePostalCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictPostalCodeToNumericOnly)) __obj.updateDynamic("restrictPostalCodeToNumericOnly")(restrictPostalCodeToNumericOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scanExpiry)) __obj.updateDynamic("scanExpiry")(scanExpiry.get.asInstanceOf[js.Any])
     if (scanInstructions != null) __obj.updateDynamic("scanInstructions")(scanInstructions.asInstanceOf[js.Any])
-    if (scannedImageDuration != null) __obj.updateDynamic("scannedImageDuration")(scannedImageDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressConfirmation)) __obj.updateDynamic("suppressConfirmation")(suppressConfirmation.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressManualEntry)) __obj.updateDynamic("suppressManualEntry")(suppressManualEntry.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressScannedCardImage)) __obj.updateDynamic("suppressScannedCardImage")(suppressScannedCardImage.asInstanceOf[js.Any])
-    if (unblurDigits != null) __obj.updateDynamic("unblurDigits")(unblurDigits.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCardIOLogo)) __obj.updateDynamic("useCardIOLogo")(useCardIOLogo.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePaypalActionbarIcon)) __obj.updateDynamic("usePaypalActionbarIcon")(usePaypalActionbarIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(scannedImageDuration)) __obj.updateDynamic("scannedImageDuration")(scannedImageDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressConfirmation)) __obj.updateDynamic("suppressConfirmation")(suppressConfirmation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressManualEntry)) __obj.updateDynamic("suppressManualEntry")(suppressManualEntry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressScannedCardImage)) __obj.updateDynamic("suppressScannedCardImage")(suppressScannedCardImage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unblurDigits)) __obj.updateDynamic("unblurDigits")(unblurDigits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCardIOLogo)) __obj.updateDynamic("useCardIOLogo")(useCardIOLogo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePaypalActionbarIcon)) __obj.updateDynamic("usePaypalActionbarIcon")(usePaypalActionbarIcon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardIOModuleProps]
   }
 }

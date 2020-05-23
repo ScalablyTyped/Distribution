@@ -18,13 +18,13 @@ object StepperOption {
     pins: js.Any,
     stepsPerRev: Double,
     `type`: Double,
-    direction: Int | Double = null,
-    rpm: Int | Double = null
+    direction: js.UndefOr[Double] = js.undefined,
+    rpm: js.UndefOr[Double] = js.undefined
   ): StepperOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any], stepsPerRev = stepsPerRev.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (rpm != null) __obj.updateDynamic("rpm")(rpm.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rpm)) __obj.updateDynamic("rpm")(rpm.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepperOption]
   }
 }

@@ -35,12 +35,12 @@ object BucketCorsRule {
     allowedOrigins: js.Array[String],
     allowedHeaders: js.Array[String] = null,
     exposeHeaders: js.Array[String] = null,
-    maxAgeSeconds: Int | Double = null
+    maxAgeSeconds: js.UndefOr[Double] = js.undefined
   ): BucketCorsRule = {
     val __obj = js.Dynamic.literal(allowedMethods = allowedMethods.asInstanceOf[js.Any], allowedOrigins = allowedOrigins.asInstanceOf[js.Any])
     if (allowedHeaders != null) __obj.updateDynamic("allowedHeaders")(allowedHeaders.asInstanceOf[js.Any])
     if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders.asInstanceOf[js.Any])
-    if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAgeSeconds)) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketCorsRule]
   }
 }

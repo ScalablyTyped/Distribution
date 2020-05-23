@@ -1,6 +1,6 @@
 package typings.rollup.mod
 
-import typings.rollup.AnonChunkId
+import typings.rollup.anon.ChunkId
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,8 +23,8 @@ trait PluginHooks extends OutputPluginHooks {
   def options(options: InputOptions): js.UndefOr[InputOptions | Null] = js.native
   def resolveId(source: String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
   def resolveId(source: String, importer: String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
-  def resolveImportMeta(prop: String, options: AnonChunkId): js.UndefOr[String | Null] = js.native
-  def resolveImportMeta(prop: Null, options: AnonChunkId): js.UndefOr[String | Null] = js.native
+  def resolveImportMeta(prop: String, options: ChunkId): js.UndefOr[String | Null] = js.native
+  def resolveImportMeta(prop: Null, options: ChunkId): js.UndefOr[String | Null] = js.native
   def transform(code: String, id: String): js.Promise[TransformResult] | TransformResult = js.native
   def watchChange(id: String): Unit = js.native
 }

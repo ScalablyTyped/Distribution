@@ -26,8 +26,8 @@ object UIDisplayOptions {
     prependFiles: js.UndefOr[Boolean] = js.undefined
   ): UIDisplayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fileSizeOnSubmit)) __obj.updateDynamic("fileSizeOnSubmit")(fileSizeOnSubmit.asInstanceOf[js.Any])
-    if (!js.isUndefined(prependFiles)) __obj.updateDynamic("prependFiles")(prependFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileSizeOnSubmit)) __obj.updateDynamic("fileSizeOnSubmit")(fileSizeOnSubmit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prependFiles)) __obj.updateDynamic("prependFiles")(prependFiles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIDisplayOptions]
   }
 }

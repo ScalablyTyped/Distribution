@@ -13,18 +13,18 @@ trait IBinaryXhr extends IBase {
   /** [Method] As in XMLHttpRequest  */
   var getAllResponseHeaders: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] As in XMLHttpRequest
-  		* @param header Object
-  		*/
+    * @param header Object
+    */
   var getResponseHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] As in XMLHttpRequest  */
   var onreadystatechange: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] As in XMLHttpRequest
-  		* @param method Object
-  		* @param url Object
-  		* @param async Object
-  		* @param user Object
-  		* @param password Object
-  		*/
+    * @param method Object
+    * @param url Object
+    * @param async Object
+    * @param user Object
+    * @param password Object
+    */
   var open: js.UndefOr[
     js.Function5[
       /* method */ js.UndefOr[js.Any], 
@@ -36,21 +36,21 @@ trait IBinaryXhr extends IBase {
     ]
   ] = js.undefined
   /** [Method] As in XMLHttpRequest
-  		* @param mimeType Object
-  		*/
+    * @param mimeType Object
+    */
   var overrideMimeType: js.UndefOr[js.Function1[/* mimeType */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Property] (number) */
   var readyState: js.UndefOr[Double] = js.undefined
   /** [Property] (Array) */
   var responseBytes: js.UndefOr[Array] = js.undefined
   /** [Method] Initiate the request
-  		* @param body Array an array of byte values to send.
-  		*/
+    * @param body Array an array of byte values to send.
+    */
   var send: js.UndefOr[js.Function1[/* body */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] As in XMLHttpRequest
-  		* @param header Object
-  		* @param value Object
-  		*/
+    * @param header Object
+    * @param value Object
+    */
   var setRequestHeader: js.UndefOr[
     js.Function2[/* header */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
@@ -80,7 +80,7 @@ object IBinaryXhr {
     onreadystatechange: () => Unit = null,
     open: (/* method */ js.UndefOr[js.Any], /* url */ js.UndefOr[js.Any], /* async */ js.UndefOr[js.Any], /* user */ js.UndefOr[js.Any], /* password */ js.UndefOr[js.Any]) => Unit = null,
     overrideMimeType: /* mimeType */ js.UndefOr[js.Any] => Unit = null,
-    readyState: Int | Double = null,
+    readyState: js.UndefOr[Double] = js.undefined,
     requires: Array = null,
     responseBytes: Array = null,
     self: IClass = null,
@@ -88,7 +88,7 @@ object IBinaryXhr {
     setRequestHeader: (/* header */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
-    status: Int | Double = null,
+    status: js.UndefOr[Double] = js.undefined,
     statusText: String = null,
     uses: Array = null
   ): IBinaryXhr = {
@@ -110,15 +110,15 @@ object IBinaryXhr {
     if (onreadystatechange != null) __obj.updateDynamic("onreadystatechange")(js.Any.fromFunction0(onreadystatechange))
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction5(open))
     if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(js.Any.fromFunction1(overrideMimeType))
-    if (readyState != null) __obj.updateDynamic("readyState")(readyState.asInstanceOf[js.Any])
+    if (!js.isUndefined(readyState)) __obj.updateDynamic("readyState")(readyState.get.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (responseBytes != null) __obj.updateDynamic("responseBytes")(responseBytes.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (send != null) __obj.updateDynamic("send")(js.Any.fromFunction1(send))
     if (setRequestHeader != null) __obj.updateDynamic("setRequestHeader")(js.Any.fromFunction2(setRequestHeader))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBinaryXhr]

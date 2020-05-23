@@ -17,13 +17,13 @@ object RehydrateAction {
   def apply(
     key: String,
     `type`: persistSlashREHYDRATE,
-    err: RehydrateErrorType = null,
-    payload: js.Object = null
+    err: js.UndefOr[Null | RehydrateErrorType] = js.undefined,
+    payload: js.UndefOr[Null | js.Object] = js.undefined
   ): RehydrateAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(err)) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[RehydrateAction]
   }
 }

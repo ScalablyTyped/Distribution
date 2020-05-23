@@ -1,6 +1,6 @@
 package typings.jpm.contextMenuMod
 
-import typings.jpm.AnonContentScript
+import typings.jpm.anon.ContentScript
 import typings.std.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,6 +22,6 @@ trait Menu extends ItemMenuSeparator {
 @JSImport("sdk/context-menu", "Menu")
 @js.native
 object Menu extends js.Object {
-  def apply(options: AnonContentScript): Menu = js.native
+  def apply(options: ContentScript): Menu = js.native
 }
 

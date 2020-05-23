@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.AutoTextEntry")
 @js.native
-class AutoTextEntry protected () extends js.Object {
+trait AutoTextEntry extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Creator: Double = js.native
   val Index: Double = js.native

@@ -99,12 +99,12 @@ object ClientVpnEndpoint {
     DnsServers: ValueStringList = null,
     SecurityGroupIds: ClientVpnSecurityGroupIdSet = null,
     ServerCertificateArn: String = null,
-    SplitTunnel: js.UndefOr[scala.Boolean] = js.undefined,
+    SplitTunnel: js.UndefOr[Boolean] = js.undefined,
     Status: ClientVpnEndpointStatus = null,
     Tags: TagList = null,
     TransportProtocol: TransportProtocol = null,
     VpcId: VpcId = null,
-    VpnPort: Int | scala.Double = null,
+    VpnPort: js.UndefOr[Integer] = js.undefined,
     VpnProtocol: VpnProtocol = null
   ): ClientVpnEndpoint = {
     val __obj = js.Dynamic.literal()
@@ -120,12 +120,12 @@ object ClientVpnEndpoint {
     if (DnsServers != null) __obj.updateDynamic("DnsServers")(DnsServers.asInstanceOf[js.Any])
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
     if (ServerCertificateArn != null) __obj.updateDynamic("ServerCertificateArn")(ServerCertificateArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel.asInstanceOf[js.Any])
+    if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TransportProtocol != null) __obj.updateDynamic("TransportProtocol")(TransportProtocol.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
-    if (VpnPort != null) __obj.updateDynamic("VpnPort")(VpnPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(VpnPort)) __obj.updateDynamic("VpnPort")(VpnPort.get.asInstanceOf[js.Any])
     if (VpnProtocol != null) __obj.updateDynamic("VpnProtocol")(VpnProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientVpnEndpoint]
   }

@@ -4,17 +4,13 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.JQueryPromise
 import typings.kendoUi.kendo.spreadsheet.Sheet
 import typings.std.Blob
-import typings.std.Element
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Spreadsheet")
 @js.native
-class Spreadsheet protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: SpreadsheetOptions) = this()
+trait Spreadsheet extends Widget {
   @JSName("options")
   var options_Spreadsheet: SpreadsheetOptions = js.native
   var wrapper: JQuery = js.native
@@ -42,13 +38,5 @@ class Spreadsheet protected () extends Widget {
   def sheets(): js.Any = js.native
   def toJSON(): js.Any = js.native
   def undefineName(name: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Spreadsheet")
-@js.native
-object Spreadsheet extends js.Object {
-  var fn: Spreadsheet = js.native
-  def extend(proto: js.Object): Spreadsheet = js.native
 }
 

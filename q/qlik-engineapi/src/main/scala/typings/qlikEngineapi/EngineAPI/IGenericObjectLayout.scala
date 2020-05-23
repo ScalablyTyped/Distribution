@@ -29,7 +29,7 @@ trait IGenericObjectLayout extends IGenericBaseLayout {
     */
   var qSelectionInfo: INxSelectionInfo
   /**
-    * 	Name of the alternate state. Default is current selections $ .
+    *     Name of the alternate state. Default is current selections $ .
     */
   var qStateName: String
 }

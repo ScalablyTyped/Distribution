@@ -12,9 +12,9 @@ trait IClientBatchSubmitResponse extends js.Object {
 
 object IClientBatchSubmitResponse {
   @scala.inline
-  def apply(status: Status = null): IClientBatchSubmitResponse = {
+  def apply(status: js.UndefOr[Null | Status] = js.undefined): IClientBatchSubmitResponse = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBatchSubmitResponse]
   }
 }

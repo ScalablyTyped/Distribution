@@ -20,7 +20,7 @@ object BrokerEncryptionOptions {
   @scala.inline
   def apply(kmsKeyId: String, useAwsOwnedKey: js.UndefOr[Boolean] = js.undefined): BrokerEncryptionOptions = {
     val __obj = js.Dynamic.literal(kmsKeyId = kmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAwsOwnedKey)) __obj.updateDynamic("useAwsOwnedKey")(useAwsOwnedKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAwsOwnedKey)) __obj.updateDynamic("useAwsOwnedKey")(useAwsOwnedKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerEncryptionOptions]
   }
 }

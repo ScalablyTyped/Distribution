@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,14 +25,6 @@ object OpenAs extends js.Object {
   
   @js.native
   sealed trait OVERLAY extends OpenAs
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OpenAs with Double] = js.native
-  /* 0 */ @js.native
-  object FULL_SIZE extends TopLevel[FULL_SIZE with Double]
-  
-  /* 1 */ @js.native
-  object OVERLAY extends TopLevel[OVERLAY with Double]
   
 }
 

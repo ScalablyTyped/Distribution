@@ -49,22 +49,22 @@ object ProjectArtifacts {
   def apply(
     `type`: ArtifactsType,
     artifactIdentifier: String = null,
-    encryptionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined,
     location: String = null,
     name: String = null,
     namespaceType: ArtifactNamespace = null,
-    overrideArtifactName: js.UndefOr[scala.Boolean] = js.undefined,
+    overrideArtifactName: js.UndefOr[WrapperBoolean] = js.undefined,
     packaging: ArtifactPackaging = null,
     path: String = null
   ): ProjectArtifacts = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (artifactIdentifier != null) __obj.updateDynamic("artifactIdentifier")(artifactIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namespaceType != null) __obj.updateDynamic("namespaceType")(namespaceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideArtifactName)) __obj.updateDynamic("overrideArtifactName")(overrideArtifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideArtifactName)) __obj.updateDynamic("overrideArtifactName")(overrideArtifactName.get.asInstanceOf[js.Any])
     if (packaging != null) __obj.updateDynamic("packaging")(packaging.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectArtifacts]

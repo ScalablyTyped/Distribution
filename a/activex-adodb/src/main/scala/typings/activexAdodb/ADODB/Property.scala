@@ -4,15 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADODB.Property")
-@js.native
-class Property protected () extends js.Object {
+trait Property extends js.Object {
   @JSName("ADODB.Property_typekey")
-  var ADODBDotProperty_typekey: Property = js.native
+  var ADODBDotProperty_typekey: Property
   /** Sum of one or more of the values in the **PropertyAttributesEnum** enum */
-  var Attributes: PropertyAttributesEnum = js.native
-  val Name: String = js.native
-  val Type: DataTypeEnum = js.native
-  var Value: js.Any = js.native
+  var Attributes: PropertyAttributesEnum
+  val Name: String
+  val Type: DataTypeEnum
+  var Value: js.Any
+}
+
+object Property {
+  @scala.inline
+  def apply(
+    ADODBDotProperty_typekey: Property,
+    Attributes: PropertyAttributesEnum,
+    Name: String,
+    Type: DataTypeEnum,
+    Value: js.Any
+  ): Property = {
+    val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADODB.Property_typekey")(ADODBDotProperty_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Property]
+  }
 }
 

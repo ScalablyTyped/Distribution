@@ -60,9 +60,8 @@ object IEntry {
     status: ok | warning | error | deprecated = null,
     whitelistEntry: IListEntry = null
   ): IEntry = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], installed = installed.asInstanceOf[js.Any], installed_version = installed_version.asInstanceOf[js.Any], latest_version = latest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], installed = installed.asInstanceOf[js.Any], installed_version = installed_version.asInstanceOf[js.Any], latest_version = latest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     if (blacklistEntry != null) __obj.updateDynamic("blacklistEntry")(blacklistEntry.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (whitelistEntry != null) __obj.updateDynamic("whitelistEntry")(whitelistEntry.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntry]
   }

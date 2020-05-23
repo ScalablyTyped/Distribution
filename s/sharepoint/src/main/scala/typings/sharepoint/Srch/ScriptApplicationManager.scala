@@ -1,18 +1,16 @@
 package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sharepoint.AnonContextTitle
-import typings.sharepoint.SP.ClientRuntimeContext
+import typings.sharepoint.anon.ContextTitle
 import typings.std.HTMLCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Srch.ScriptApplicationManager")
 @js.native
-class ScriptApplicationManager () extends js.Object {
+trait ScriptApplicationManager extends js.Object {
   var queryGroups: StringDictionary[QueryGroup] = js.native
-  var states: AnonContextTitle = js.native
+  var states: ContextTitle = js.native
   /** Adds handler for the load event */
   def add_load(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
   /** Adds handler for the postload event */
@@ -58,13 +56,5 @@ class ScriptApplicationManager () extends js.Object {
   def remove_postLoad(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
   /** Removes handler for the preload event */
   def remove_preLoad(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Srch.ScriptApplicationManager")
-@js.native
-object ScriptApplicationManager extends js.Object {
-  def get_clientRuntimeContext(): ClientRuntimeContext = js.native
-  def get_current(): ScriptApplicationManager = js.native
 }
 

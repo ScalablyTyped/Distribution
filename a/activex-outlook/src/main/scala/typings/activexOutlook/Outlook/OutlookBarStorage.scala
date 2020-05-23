@@ -4,15 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.OutlookBarStorage")
-@js.native
-class OutlookBarStorage protected () extends js.Object {
-  val Application: typings.activexOutlook.Outlook.Application = js.native
-  val Class: OlObjectClass = js.native
-  val Groups: OutlookBarGroups = js.native
+trait OutlookBarStorage extends js.Object {
+  val Application: typings.activexOutlook.Outlook.Application
+  val Class: OlObjectClass
+  val Groups: OutlookBarGroups
   @JSName("Outlook.OutlookBarStorage_typekey")
-  var OutlookDotOutlookBarStorage_typekey: OutlookBarStorage = js.native
-  val Parent: js.Any = js.native
-  val Session: NameSpace = js.native
+  var OutlookDotOutlookBarStorage_typekey: OutlookBarStorage
+  val Parent: js.Any
+  val Session: NameSpace
+}
+
+object OutlookBarStorage {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Class: OlObjectClass,
+    Groups: OutlookBarGroups,
+    OutlookDotOutlookBarStorage_typekey: OutlookBarStorage,
+    Parent: js.Any,
+    Session: NameSpace
+  ): OutlookBarStorage = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Groups = Groups.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OutlookBarStorage_typekey")(OutlookDotOutlookBarStorage_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OutlookBarStorage]
+  }
 }
 

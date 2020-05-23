@@ -1,6 +1,5 @@
 package typings.inboxsdk.mod.Conversations
 
-import typings.inboxsdk.AnonMessageView
 import typings.inboxsdk.inboxsdkStrings.contactHover
 import typings.inboxsdk.inboxsdkStrings.destroy
 import typings.inboxsdk.inboxsdkStrings.load
@@ -39,6 +38,6 @@ trait MessageView extends js.Object {
   @JSName("on")
   def on_load(name: load, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
-  def on_viewStateChange(name: viewStateChange, cb: js.Function1[/* event */ AnonMessageView, Unit]): Unit = js.native
+  def on_viewStateChange(name: viewStateChange, cb: js.Function1[/* event */ typings.inboxsdk.anon.MessageView, Unit]): Unit = js.native
 }
 

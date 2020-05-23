@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/collections", "documentVersionMap")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/collections", "documentVersionMap")
 @js.native
 object documentVersionMap extends js.Object {
   def apply(): DocumentVersionMap_ = js.native

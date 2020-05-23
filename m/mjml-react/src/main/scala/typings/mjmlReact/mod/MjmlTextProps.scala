@@ -30,7 +30,7 @@ object MjmlTextProps {
     fontFamily: String = null,
     fontSize: String | Double = null,
     fontStyle: String = null,
-    fontWeight: Int | Double = null,
+    fontWeight: js.UndefOr[Double] = js.undefined,
     height: String | Double = null,
     letterSpacing: String = null,
     lineHeight: String = null,
@@ -44,7 +44,7 @@ object MjmlTextProps {
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontWeight)) __obj.updateDynamic("fontWeight")(fontWeight.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])

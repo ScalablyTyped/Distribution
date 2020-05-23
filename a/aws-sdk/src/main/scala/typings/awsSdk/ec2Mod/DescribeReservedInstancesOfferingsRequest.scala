@@ -72,15 +72,15 @@ object DescribeReservedInstancesOfferingsRequest {
   @scala.inline
   def apply(
     AvailabilityZone: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    IncludeMarketplace: js.UndefOr[scala.Boolean] = js.undefined,
+    IncludeMarketplace: js.UndefOr[Boolean] = js.undefined,
     InstanceTenancy: Tenancy = null,
     InstanceType: InstanceType = null,
-    MaxDuration: Int | scala.Double = null,
-    MaxInstanceCount: Int | scala.Double = null,
-    MaxResults: Int | scala.Double = null,
-    MinDuration: Int | scala.Double = null,
+    MaxDuration: js.UndefOr[Long] = js.undefined,
+    MaxInstanceCount: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MinDuration: js.UndefOr[Long] = js.undefined,
     NextToken: String = null,
     OfferingClass: OfferingClassType = null,
     OfferingType: OfferingTypeValues = null,
@@ -89,15 +89,15 @@ object DescribeReservedInstancesOfferingsRequest {
   ): DescribeReservedInstancesOfferingsRequest = {
     val __obj = js.Dynamic.literal()
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeMarketplace)) __obj.updateDynamic("IncludeMarketplace")(IncludeMarketplace.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeMarketplace)) __obj.updateDynamic("IncludeMarketplace")(IncludeMarketplace.get.asInstanceOf[js.Any])
     if (InstanceTenancy != null) __obj.updateDynamic("InstanceTenancy")(InstanceTenancy.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (MaxDuration != null) __obj.updateDynamic("MaxDuration")(MaxDuration.asInstanceOf[js.Any])
-    if (MaxInstanceCount != null) __obj.updateDynamic("MaxInstanceCount")(MaxInstanceCount.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (MinDuration != null) __obj.updateDynamic("MinDuration")(MinDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxDuration)) __obj.updateDynamic("MaxDuration")(MaxDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxInstanceCount)) __obj.updateDynamic("MaxInstanceCount")(MaxInstanceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinDuration)) __obj.updateDynamic("MinDuration")(MinDuration.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (OfferingClass != null) __obj.updateDynamic("OfferingClass")(OfferingClass.asInstanceOf[js.Any])
     if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])

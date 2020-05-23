@@ -1,18 +1,13 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonComponent
+import typings.babylonjs.anon.Component
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.Stage")
 @js.native
-/**
-  * Hide ctor from the rest of the world.
-  * @param items The items to add.
-  */
-class Stage[T /* <: js.Function */] protected () extends Array[AnonComponent[T]] {
+trait Stage[T /* <: js.Function */] extends Array[Component[T]] {
   /**
     * Clears all the steps from the stage.
     */
@@ -24,16 +19,5 @@ class Stage[T /* <: js.Function */] protected () extends Array[AnonComponent[T]]
     * @param action Defines the action to launch during the step
     */
   def registerStep(index: Double, component: ISceneComponent, action: T): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.Stage")
-@js.native
-object Stage extends js.Object {
-  /**
-    * Creates a new Stage.
-    * @returns A new instance of a Stage
-    */
-  def Create[T /* <: js.Function */](): Stage[T] = js.native
 }
 

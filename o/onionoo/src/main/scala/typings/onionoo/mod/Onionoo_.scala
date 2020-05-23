@@ -2,7 +2,7 @@ package typings.onionoo.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.onionoo.InstancePartialEndpoints
+import typings.onionoo.anon.InstancePartialEndpoints
 import typings.onionoo.mod.Onionoo.Endpoints
 import typings.onionoo.mod.Onionoo.Instance
 import typings.onionoo.mod.Onionoo.Options

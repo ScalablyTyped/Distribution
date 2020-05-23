@@ -22,15 +22,15 @@ object Target {
     query: QueryTarget = null,
     readTime: String = null,
     resumeToken: String | Uint8Array = null,
-    targetId: Int | Double = null
+    targetId: js.UndefOr[Double] = js.undefined
   ): Target = {
     val __obj = js.Dynamic.literal()
     if (documents != null) __obj.updateDynamic("documents")(documents.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
     if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetId)) __obj.updateDynamic("targetId")(targetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target]
   }
 }

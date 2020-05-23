@@ -23,19 +23,19 @@ trait IMethodDescriptorProto extends js.Object {
 object IMethodDescriptorProto {
   @scala.inline
   def apply(
-    clientStreaming: js.UndefOr[Boolean] = js.undefined,
-    inputType: String = null,
-    name: String = null,
-    options: IMethodOptions = null,
-    outputType: String = null,
-    serverStreaming: js.UndefOr[Boolean] = js.undefined
+    clientStreaming: js.UndefOr[Null | Boolean] = js.undefined,
+    inputType: js.UndefOr[Null | String] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    options: js.UndefOr[Null | IMethodOptions] = js.undefined,
+    outputType: js.UndefOr[Null | String] = js.undefined,
+    serverStreaming: js.UndefOr[Null | Boolean] = js.undefined
   ): IMethodDescriptorProto = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(clientStreaming)) __obj.updateDynamic("clientStreaming")(clientStreaming.asInstanceOf[js.Any])
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (outputType != null) __obj.updateDynamic("outputType")(outputType.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputType)) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputType)) __obj.updateDynamic("outputType")(outputType.asInstanceOf[js.Any])
     if (!js.isUndefined(serverStreaming)) __obj.updateDynamic("serverStreaming")(serverStreaming.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMethodDescriptorProto]
   }

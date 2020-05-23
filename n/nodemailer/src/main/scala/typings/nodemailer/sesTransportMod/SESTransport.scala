@@ -1,8 +1,8 @@
 package typings.nodemailer.sesTransportMod
 
 import typings.node.eventsMod.EventEmitter
-import typings.nodemailer.AnonCallback
-import typings.nodemailer.AnonPending
+import typings.nodemailer.anon.Callback
+import typings.nodemailer.anon.Pending
 import typings.nodemailer.mod.Transport
 import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.nodemailerStrings.idle
@@ -23,9 +23,9 @@ trait SESTransport
   var mailer_SESTransport: typings.nodemailer.mailerMod.^ = js.native
   var maxConnections: Double = js.native
   var options: Options = js.native
-  var pending: js.Array[AnonCallback] = js.native
+  var pending: js.Array[Callback] = js.native
   var rateInterval: Double = js.native
-  var rateMessages: js.Array[AnonPending] = js.native
+  var rateMessages: js.Array[Pending] = js.native
   var sendingRate: Double = js.native
   var sendingRateTTL: Double | Null = js.native
   var ses: js.Any = js.native

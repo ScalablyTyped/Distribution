@@ -18,9 +18,9 @@ trait DeleteVpcEndpointsRequest extends js.Object {
 
 object DeleteVpcEndpointsRequest {
   @scala.inline
-  def apply(VpcEndpointIds: VpcEndpointIdList, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeleteVpcEndpointsRequest = {
+  def apply(VpcEndpointIds: VpcEndpointIdList, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteVpcEndpointsRequest = {
     val __obj = js.Dynamic.literal(VpcEndpointIds = VpcEndpointIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcEndpointsRequest]
   }
 }

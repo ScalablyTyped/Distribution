@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Group")
 @js.native
-class Group protected () extends js.Object {
+trait Group extends js.Object {
   @JSName("DAO.Group_typekey")
   var DAODotGroup_typekey: Group = js.native
   var Name: String = js.native

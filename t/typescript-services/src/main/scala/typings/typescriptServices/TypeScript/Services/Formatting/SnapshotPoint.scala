@@ -4,13 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.SnapshotPoint")
-@js.native
-class SnapshotPoint protected () extends js.Object {
-  def this(snapshot: ITextSnapshot, position: Double) = this()
-  var position: Double = js.native
-  var snapshot: ITextSnapshot = js.native
-  def add(offset: Double): SnapshotPoint = js.native
-  def getContainingLine(): ITextSnapshotLine = js.native
+trait SnapshotPoint extends js.Object {
+  var position: Double
+  var snapshot: ITextSnapshot
+  def add(offset: Double): SnapshotPoint
+  def getContainingLine(): ITextSnapshotLine
+}
+
+object SnapshotPoint {
+  @scala.inline
+  def apply(
+    add: Double => SnapshotPoint,
+    getContainingLine: () => ITextSnapshotLine,
+    position: Double,
+    snapshot: ITextSnapshot
+  ): SnapshotPoint = {
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), getContainingLine = js.Any.fromFunction0(getContainingLine), position = position.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotPoint]
+  }
 }
 

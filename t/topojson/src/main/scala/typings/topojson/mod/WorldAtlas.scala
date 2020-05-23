@@ -1,6 +1,6 @@
 package typings.topojson.mod
 
-import typings.topojson.AnonCountries
+import typings.topojson.anon.Countries
 import typings.topojsonSpecification.mod.Arc
 import typings.topojsonSpecification.mod.Objects
 import typings.topojsonSpecification.mod.Properties
@@ -14,7 +14,7 @@ trait WorldAtlas extends Topology[Objects[Properties]] {
   @JSName("bbox")
   var bbox_WorldAtlas: js.Tuple4[Double, Double, Double, Double]
   @JSName("objects")
-  var objects_WorldAtlas: AnonCountries
+  var objects_WorldAtlas: Countries
   @JSName("transform")
   var transform_WorldAtlas: Transform
 }
@@ -24,7 +24,7 @@ object WorldAtlas {
   def apply(
     arcs: js.Array[Arc],
     bbox: js.Tuple4[Double, Double, Double, Double],
-    objects: AnonCountries,
+    objects: Countries,
     transform: Transform,
     `type`: typings.topojsonSpecification.topojsonSpecificationStrings.Topology
   ): WorldAtlas = {

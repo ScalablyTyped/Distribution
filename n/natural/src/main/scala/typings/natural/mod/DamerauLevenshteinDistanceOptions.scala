@@ -22,20 +22,20 @@ trait DamerauLevenshteinDistanceOptions extends js.Object {
 object DamerauLevenshteinDistanceOptions {
   @scala.inline
   def apply(
-    deletion_cost: Int | Double = null,
-    insertion_cost: Int | Double = null,
+    deletion_cost: js.UndefOr[Double] = js.undefined,
+    insertion_cost: js.UndefOr[Double] = js.undefined,
     restricted: js.UndefOr[Boolean] = js.undefined,
     search: js.UndefOr[Boolean] = js.undefined,
-    substitution_cost: Int | Double = null,
-    transposition_cost: Int | Double = null
+    substitution_cost: js.UndefOr[Double] = js.undefined,
+    transposition_cost: js.UndefOr[Double] = js.undefined
   ): DamerauLevenshteinDistanceOptions = {
     val __obj = js.Dynamic.literal()
-    if (deletion_cost != null) __obj.updateDynamic("deletion_cost")(deletion_cost.asInstanceOf[js.Any])
-    if (insertion_cost != null) __obj.updateDynamic("insertion_cost")(insertion_cost.asInstanceOf[js.Any])
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (substitution_cost != null) __obj.updateDynamic("substitution_cost")(substitution_cost.asInstanceOf[js.Any])
-    if (transposition_cost != null) __obj.updateDynamic("transposition_cost")(transposition_cost.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletion_cost)) __obj.updateDynamic("deletion_cost")(deletion_cost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertion_cost)) __obj.updateDynamic("insertion_cost")(insertion_cost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(substitution_cost)) __obj.updateDynamic("substitution_cost")(substitution_cost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transposition_cost)) __obj.updateDynamic("transposition_cost")(transposition_cost.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DamerauLevenshteinDistanceOptions]
   }
 }

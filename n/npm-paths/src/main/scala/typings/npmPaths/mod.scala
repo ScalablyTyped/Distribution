@@ -1,5 +1,6 @@
 package typings.npmPaths
 
+import typings.npmPaths.anon.Cwd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,6 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def apply(): js.Array[String] = js.native
   def apply(cwd: String): js.Array[String] = js.native
-  def apply(cwd: AnonCwd): js.Array[String] = js.native
+  def apply(cwd: Cwd): js.Array[String] = js.native
 }
 

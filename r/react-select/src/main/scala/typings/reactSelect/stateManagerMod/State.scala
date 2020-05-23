@@ -14,9 +14,13 @@ trait State[OptionType /* <: OptionTypeBase */] extends js.Object {
 
 object State {
   @scala.inline
-  def apply[OptionType /* <: OptionTypeBase */](inputValue: String, menuIsOpen: Boolean, value: ValueType[OptionType] = null): State[OptionType] = {
+  def apply[OptionType](
+    inputValue: String,
+    menuIsOpen: Boolean,
+    value: js.UndefOr[Null | ValueType[OptionType]] = js.undefined
+  ): State[OptionType] = {
     val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], menuIsOpen = menuIsOpen.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[State[OptionType]]
   }
 }

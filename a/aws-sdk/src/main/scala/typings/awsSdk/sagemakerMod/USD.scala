@@ -23,14 +23,14 @@ trait USD extends js.Object {
 object USD {
   @scala.inline
   def apply(
-    Cents: Int | Double = null,
-    Dollars: Int | Double = null,
-    TenthFractionsOfACent: Int | Double = null
+    Cents: js.UndefOr[Cents] = js.undefined,
+    Dollars: js.UndefOr[Dollars] = js.undefined,
+    TenthFractionsOfACent: js.UndefOr[TenthFractionsOfACent] = js.undefined
   ): USD = {
     val __obj = js.Dynamic.literal()
-    if (Cents != null) __obj.updateDynamic("Cents")(Cents.asInstanceOf[js.Any])
-    if (Dollars != null) __obj.updateDynamic("Dollars")(Dollars.asInstanceOf[js.Any])
-    if (TenthFractionsOfACent != null) __obj.updateDynamic("TenthFractionsOfACent")(TenthFractionsOfACent.asInstanceOf[js.Any])
+    if (!js.isUndefined(Cents)) __obj.updateDynamic("Cents")(Cents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Dollars)) __obj.updateDynamic("Dollars")(Dollars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TenthFractionsOfACent)) __obj.updateDynamic("TenthFractionsOfACent")(TenthFractionsOfACent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[USD]
   }
 }

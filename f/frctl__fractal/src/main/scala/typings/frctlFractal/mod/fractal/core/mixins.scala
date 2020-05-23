@@ -88,7 +88,7 @@ object mixins extends js.Object {
   /**
     * Combined EventEmitter and Configurable mixins
     */
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.frctlFractal.mod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @js.native
   abstract class ConfigurableEmitter[T] () extends EventEmitter {
     def config(): T = js.native
@@ -123,7 +123,7 @@ object mixins extends js.Object {
     def toJSON(): js.Object = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.frctlFractal.mod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @js.native
   trait Source[T, TConfig]
     extends EventEmitter

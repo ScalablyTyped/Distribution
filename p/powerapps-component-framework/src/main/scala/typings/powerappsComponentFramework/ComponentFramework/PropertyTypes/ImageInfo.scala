@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * The structure returned by getCellImageInfo and propagated down to the control to display conditional images.
-		 */
+  * The structure returned by getCellImageInfo and propagated down to the control to display conditional images.
+  */
 trait ImageInfo extends js.Object {
   /**
-  			 * The tooltip associated with that image.
-  			 */
+    * The tooltip associated with that image.
+    */
   var Tooltip: String
   /**
-  			 * The Url of the conditional image.
-  			 */
+    * The Url of the conditional image.
+    */
   var Url: String
 }
 

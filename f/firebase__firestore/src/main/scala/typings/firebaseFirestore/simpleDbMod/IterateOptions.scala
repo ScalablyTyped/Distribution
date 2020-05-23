@@ -26,9 +26,9 @@ object IterateOptions {
   ): IterateOptions = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(keysOnly)) __obj.updateDynamic("keysOnly")(keysOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(keysOnly)) __obj.updateDynamic("keysOnly")(keysOnly.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterateOptions]
   }
 }

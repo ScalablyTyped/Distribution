@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-any
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Wait for any promise to be fulfilled
@@ -10,9 +10,9 @@ Wait for any promise to be fulfilled
 | ------------------ | :-------------: |
 | Full name          | p-any |
 | Keywords           | promise, any, resolved, wait, collection, iterable, iterator, race, fulfilled, fastest, one, single, async, await, promises, bluebird |
-| # releases         | 2 |
-| # dependents       | 29 |
-| # downloads        | 4563958 |
+| # releases         | 4 |
+| # dependents       | 37 |
+| # downloads        | 12783560 |
 | # stars            | 1 |
 
 ## Links

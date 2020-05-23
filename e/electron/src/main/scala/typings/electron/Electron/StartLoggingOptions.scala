@@ -24,10 +24,13 @@ trait StartLoggingOptions extends js.Object {
 
 object StartLoggingOptions {
   @scala.inline
-  def apply(captureMode: default | includeSensitive | everything = null, maxFileSize: Int | Double = null): StartLoggingOptions = {
+  def apply(
+    captureMode: default | includeSensitive | everything = null,
+    maxFileSize: js.UndefOr[Double] = js.undefined
+  ): StartLoggingOptions = {
     val __obj = js.Dynamic.literal()
     if (captureMode != null) __obj.updateDynamic("captureMode")(captureMode.asInstanceOf[js.Any])
-    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartLoggingOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.numericInputMod
 
-import typings.blueprintjsCore.AnonPrevMaxProp
+import typings.blueprintjsCore.anon.PrevMaxProp
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import scala.scalajs.js
@@ -51,6 +51,6 @@ object NumericInput extends js.Object {
   var displayName: String = js.native
   var getSanitizedValue: js.Any = js.native
   var getStepMaxPrecision: js.Any = js.native
-  def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): AnonPrevMaxProp = js.native
+  def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = js.native
 }
 

@@ -6,11 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.ToolBar")
 @js.native
-class ToolBar protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: ToolBarOptions) = this()
+trait ToolBar extends Widget {
   @JSName("options")
   var options_ToolBar: ToolBarOptions = js.native
   var popup: Popup = js.native
@@ -32,13 +29,5 @@ class ToolBar protected () extends Widget {
   def toggle(command: String, state: Boolean): Unit = js.native
   def toggle(command: JQuery, state: Boolean): Unit = js.native
   def toggle(command: Element, state: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.ToolBar")
-@js.native
-object ToolBar extends js.Object {
-  var fn: ToolBar = js.native
-  def extend(proto: js.Object): ToolBar = js.native
 }
 

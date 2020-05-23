@@ -13,7 +13,7 @@ object ChoiceParams {
   @scala.inline
   def apply(optional: js.UndefOr[scala.Boolean] = js.undefined, value: js.Array[LocalValueBlock] = null): ChoiceParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChoiceParams]
   }

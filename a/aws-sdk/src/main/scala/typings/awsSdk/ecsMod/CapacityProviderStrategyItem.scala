@@ -22,10 +22,14 @@ trait CapacityProviderStrategyItem extends js.Object {
 
 object CapacityProviderStrategyItem {
   @scala.inline
-  def apply(capacityProvider: String, base: Int | scala.Double = null, weight: Int | scala.Double = null): CapacityProviderStrategyItem = {
+  def apply(
+    capacityProvider: String,
+    base: js.UndefOr[CapacityProviderStrategyItemBase] = js.undefined,
+    weight: js.UndefOr[CapacityProviderStrategyItemWeight] = js.undefined
+  ): CapacityProviderStrategyItem = {
     val __obj = js.Dynamic.literal(capacityProvider = capacityProvider.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityProviderStrategyItem]
   }
 }

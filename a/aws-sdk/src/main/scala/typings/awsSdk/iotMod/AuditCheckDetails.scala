@@ -35,20 +35,20 @@ trait AuditCheckDetails extends js.Object {
 object AuditCheckDetails {
   @scala.inline
   def apply(
-    checkCompliant: js.UndefOr[scala.Boolean] = js.undefined,
+    checkCompliant: js.UndefOr[CheckCompliant] = js.undefined,
     checkRunStatus: AuditCheckRunStatus = null,
     errorCode: ErrorCode = null,
     message: ErrorMessage = null,
-    nonCompliantResourcesCount: Int | Double = null,
-    totalResourcesCount: Int | Double = null
+    nonCompliantResourcesCount: js.UndefOr[NonCompliantResourcesCount] = js.undefined,
+    totalResourcesCount: js.UndefOr[TotalResourcesCount] = js.undefined
   ): AuditCheckDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkCompliant)) __obj.updateDynamic("checkCompliant")(checkCompliant.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkCompliant)) __obj.updateDynamic("checkCompliant")(checkCompliant.get.asInstanceOf[js.Any])
     if (checkRunStatus != null) __obj.updateDynamic("checkRunStatus")(checkRunStatus.asInstanceOf[js.Any])
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (nonCompliantResourcesCount != null) __obj.updateDynamic("nonCompliantResourcesCount")(nonCompliantResourcesCount.asInstanceOf[js.Any])
-    if (totalResourcesCount != null) __obj.updateDynamic("totalResourcesCount")(totalResourcesCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonCompliantResourcesCount)) __obj.updateDynamic("nonCompliantResourcesCount")(nonCompliantResourcesCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalResourcesCount)) __obj.updateDynamic("totalResourcesCount")(totalResourcesCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditCheckDetails]
   }
 }

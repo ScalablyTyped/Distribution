@@ -16,9 +16,9 @@ trait HeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends j
 
 object HeightProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](height: ResponsiveValue[TVal, ThemeType] = null): HeightProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](height: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): HeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightProps[ThemeType, TVal]]
   }
 }

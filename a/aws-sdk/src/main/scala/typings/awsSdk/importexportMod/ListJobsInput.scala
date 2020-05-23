@@ -13,11 +13,11 @@ trait ListJobsInput extends js.Object {
 
 object ListJobsInput {
   @scala.inline
-  def apply(APIVersion: APIVersion_ = null, Marker: Marker = null, MaxJobs: Int | Double = null): ListJobsInput = {
+  def apply(APIVersion: APIVersion_ = null, Marker: Marker = null, MaxJobs: js.UndefOr[MaxJobs] = js.undefined): ListJobsInput = {
     val __obj = js.Dynamic.literal()
     if (APIVersion != null) __obj.updateDynamic("APIVersion")(APIVersion.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxJobs != null) __obj.updateDynamic("MaxJobs")(MaxJobs.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxJobs)) __obj.updateDynamic("MaxJobs")(MaxJobs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJobsInput]
   }
 }

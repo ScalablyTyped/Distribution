@@ -1,6 +1,6 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typings.screeps.anon.StoreRESOURCEENERGYMinera
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,8 +78,4 @@ trait StructureLab
     */
   def unboostCreep(creep: Creep): ScreepsReturnCode = js.native
 }
-
-@JSGlobal("StructureLab")
-@js.native
-object StructureLab extends TopLevel[StructureLabConstructor]
 

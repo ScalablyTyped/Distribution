@@ -30,11 +30,11 @@ object UpdateRevisionRequest {
     DataSetId: string,
     RevisionId: string,
     Comment: stringMin0Max16384 = null,
-    Finalized: js.UndefOr[Boolean] = js.undefined
+    Finalized: js.UndefOr[boolean] = js.undefined
   ): UpdateRevisionRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(Finalized)) __obj.updateDynamic("Finalized")(Finalized.asInstanceOf[js.Any])
+    if (!js.isUndefined(Finalized)) __obj.updateDynamic("Finalized")(Finalized.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRevisionRequest]
   }
 }

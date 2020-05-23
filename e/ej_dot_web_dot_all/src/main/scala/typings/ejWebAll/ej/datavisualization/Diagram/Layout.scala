@@ -79,34 +79,34 @@ object Layout {
     getConnectorSegments: js.Any = null,
     getLayoutInfo: js.Any = null,
     horizontalAlignment: HorizontalAlignment | String = null,
-    horizontalSpacing: Int | Double = null,
+    horizontalSpacing: js.UndefOr[Double] = js.undefined,
     margin: js.Any = null,
-    maxIteration: Int | Double = null,
+    maxIteration: js.UndefOr[Double] = js.undefined,
     orientation: LayoutOrientations | String = null,
     root: String = null,
-    springFactor: Int | Double = null,
-    springLength: Int | Double = null,
+    springFactor: js.UndefOr[Double] = js.undefined,
+    springLength: js.UndefOr[Double] = js.undefined,
     `type`: LayoutTypes | String = null,
     verticalAlignment: VerticalAlignment | String = null,
-    verticalSpacing: Int | Double = null
+    verticalSpacing: js.UndefOr[Double] = js.undefined
   ): Layout = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(avoidSegmentOverlapping)) __obj.updateDynamic("avoidSegmentOverlapping")(avoidSegmentOverlapping.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidSegmentOverlapping)) __obj.updateDynamic("avoidSegmentOverlapping")(avoidSegmentOverlapping.get.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (fixedNode != null) __obj.updateDynamic("fixedNode")(fixedNode.asInstanceOf[js.Any])
     if (getConnectorSegments != null) __obj.updateDynamic("getConnectorSegments")(getConnectorSegments.asInstanceOf[js.Any])
     if (getLayoutInfo != null) __obj.updateDynamic("getLayoutInfo")(getLayoutInfo.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (horizontalSpacing != null) __obj.updateDynamic("horizontalSpacing")(horizontalSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalSpacing)) __obj.updateDynamic("horizontalSpacing")(horizontalSpacing.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maxIteration != null) __obj.updateDynamic("maxIteration")(maxIteration.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIteration)) __obj.updateDynamic("maxIteration")(maxIteration.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (springFactor != null) __obj.updateDynamic("springFactor")(springFactor.asInstanceOf[js.Any])
-    if (springLength != null) __obj.updateDynamic("springLength")(springLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(springFactor)) __obj.updateDynamic("springFactor")(springFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(springLength)) __obj.updateDynamic("springLength")(springLength.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (verticalSpacing != null) __obj.updateDynamic("verticalSpacing")(verticalSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalSpacing)) __obj.updateDynamic("verticalSpacing")(verticalSpacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
 }

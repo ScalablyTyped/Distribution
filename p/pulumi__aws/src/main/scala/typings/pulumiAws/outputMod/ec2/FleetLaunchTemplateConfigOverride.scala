@@ -38,17 +38,17 @@ object FleetLaunchTemplateConfigOverride {
     availabilityZone: String = null,
     instanceType: String = null,
     maxPrice: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     subnetId: String = null,
-    weightedCapacity: Int | Double = null
+    weightedCapacity: js.UndefOr[Double] = js.undefined
   ): FleetLaunchTemplateConfigOverride = {
     val __obj = js.Dynamic.literal()
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
     if (maxPrice != null) __obj.updateDynamic("maxPrice")(maxPrice.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
-    if (weightedCapacity != null) __obj.updateDynamic("weightedCapacity")(weightedCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(weightedCapacity)) __obj.updateDynamic("weightedCapacity")(weightedCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetLaunchTemplateConfigOverride]
   }
 }

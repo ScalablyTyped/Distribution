@@ -64,12 +64,12 @@ object SchemaDefinition {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
     if (autoValue != null) __obj.updateDynamic("autoValue")(js.Any.fromFunction0(autoValue))
-    if (!js.isUndefined(blackbox)) __obj.updateDynamic("blackbox")(blackbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(blackbox)) __obj.updateDynamic("blackbox")(blackbox.get.asInstanceOf[js.Any])
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (!js.isUndefined(decimal)) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimal)) __obj.updateDynamic("decimal")(decimal.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMax)) __obj.updateDynamic("exclusiveMax")(exclusiveMax.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMin)) __obj.updateDynamic("exclusiveMin")(exclusiveMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusiveMax)) __obj.updateDynamic("exclusiveMax")(exclusiveMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusiveMin)) __obj.updateDynamic("exclusiveMin")(exclusiveMin.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
@@ -77,7 +77,7 @@ object SchemaDefinition {
     if (minCount != null) __obj.updateDynamic("minCount")(minCount.asInstanceOf[js.Any])
     if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (regEx != null) __obj.updateDynamic("regEx")(regEx.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDefinition]
   }
 }

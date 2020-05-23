@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.SubForm")
 @js.native
-class SubForm protected () extends js.Object {
+trait SubForm extends js.Object {
   @JSName("Access.SubForm_typekey")
   var AccessDotSubForm_typekey: SubForm = js.native
   var AddColon: Boolean = js.native

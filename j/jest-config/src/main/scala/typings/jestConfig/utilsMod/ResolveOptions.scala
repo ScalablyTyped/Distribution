@@ -16,7 +16,7 @@ object ResolveOptions {
   @scala.inline
   def apply(filePath: Path, key: String, rootDir: Path, optional: js.UndefOr[Boolean] = js.undefined): ResolveOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveOptions]
   }
 }

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait IEventAction extends js.Object {
   /**
-  	         * CSS class to be added to the action element
-  	         */
+    * CSS class to be added to the action element
+    */
   var cssClass: js.UndefOr[String] = js.undefined
   /**
-  	         * The label of the action
-  	         */
+    * The label of the action
+    */
   var label: String
   /**
-  	         * The action that occurs when it's clicked
-  	         * @param args - the IEvent whose action was clicked
-  	         */
+    * The action that occurs when it's clicked
+    * @param args - the IEvent whose action was clicked
+    */
   def onClick(args: js.Any): Unit
 }
 

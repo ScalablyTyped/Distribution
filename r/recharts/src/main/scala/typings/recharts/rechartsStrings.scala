@@ -64,6 +64,12 @@ object rechartsStrings {
   sealed trait center extends PositionType
   
   @js.native
+  sealed trait centerBottom extends PositionType
+  
+  @js.native
+  sealed trait centerTop extends PositionType
+  
+  @js.native
   sealed trait centric extends js.Object
   
   @js.native
@@ -494,6 +500,10 @@ object rechartsStrings {
   def category: category = "category".asInstanceOf[category]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def centerBottom: centerBottom = "centerBottom".asInstanceOf[centerBottom]
+  @scala.inline
+  def centerTop: centerTop = "centerTop".asInstanceOf[centerTop]
   @scala.inline
   def centric: centric = "centric".asInstanceOf[centric]
   @scala.inline

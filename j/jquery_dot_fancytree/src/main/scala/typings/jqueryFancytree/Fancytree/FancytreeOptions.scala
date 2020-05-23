@@ -2,12 +2,12 @@ package typings.jqueryFancytree.Fancytree
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryEventObject
-import typings.jqueryFancytree.AnonBottom
-import typings.jqueryFancytree.AnonCache
 import typings.jqueryFancytree.Fancytree.Extensions.DragAndDrop5
 import typings.jqueryFancytree.Fancytree.Extensions.Filter
 import typings.jqueryFancytree.Fancytree.Extensions.Table
 import typings.jqueryFancytree.JQuery
+import typings.jqueryFancytree.anon.Bottom
+import typings.jqueryFancytree.anon.Cache
 import typings.jqueryFancytree.jqueryFancytreeBooleans.`false`
 import typings.jqueryFancytree.jqueryFancytreeNumbers.`0`
 import typings.jqueryFancytree.jqueryFancytreeNumbers.`1`
@@ -29,7 +29,7 @@ trait FancytreeOptions
   /** Make sure that the active node is always visible, i.e. its parents are expanded (default: true). */
   var activeVisible: js.UndefOr[Boolean] = js.undefined
   /** Default options for ajax requests. */
-  var ajax: js.UndefOr[AnonCache] = js.undefined
+  var ajax: js.UndefOr[Cache] = js.undefined
   /** (default: false) Add WAI-ARIA attributes to markup */
   var aria: js.UndefOr[Boolean] = js.undefined
   /** Activate a node when focused with the keyboard (default: true) */
@@ -78,7 +78,7 @@ trait FancytreeOptions
   /** navigate to next node by typing the first letters (default: false) */
   var quicksearch: js.UndefOr[Boolean] = js.undefined
   /** optional margins for node.scrollIntoView() (default: {top: 0, bottom: 0}) */
-  var scrollOfs: js.UndefOr[AnonBottom] = js.undefined
+  var scrollOfs: js.UndefOr[Bottom] = js.undefined
   /** scrollable container for node.scrollIntoView() (default: $container) */
   var scrollParent: js.UndefOr[JQuery | Null] = js.undefined
   /** default: multi_hier */
@@ -117,7 +117,7 @@ object FancytreeOptions {
   /* extension */ StringDictionary[js.Any] = null,
     activate: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
     activeVisible: js.UndefOr[Boolean] = js.undefined,
-    ajax: AnonCache = null,
+    ajax: Cache = null,
     aria: js.UndefOr[Boolean] = js.undefined,
     autoActivate: js.UndefOr[Boolean] = js.undefined,
     autoCollapse: js.UndefOr[Boolean] = js.undefined,
@@ -158,7 +158,7 @@ object FancytreeOptions {
     lazyLoad: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
     loadChildren: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
     loadError: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean = null,
-    minExpandLevel: Int | Double = null,
+    minExpandLevel: js.UndefOr[Double] = js.undefined,
     postProcess: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
     quicksearch: js.UndefOr[Boolean] = js.undefined,
     removeNode: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
@@ -167,8 +167,8 @@ object FancytreeOptions {
     renderTitle: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
     restore: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
-    scrollOfs: AnonBottom = null,
-    scrollParent: JQuery = null,
+    scrollOfs: Bottom = null,
+    scrollParent: js.UndefOr[Null | JQuery] = js.undefined,
     select: (/* event */ JQueryEventObject, /* data */ EventData) => Unit = null,
     selectMode: FancytreeSelectMode = null,
     source: js.Array[_] | js.Any = null,
@@ -185,12 +185,12 @@ object FancytreeOptions {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
-    if (!js.isUndefined(activeVisible)) __obj.updateDynamic("activeVisible")(activeVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeVisible)) __obj.updateDynamic("activeVisible")(activeVisible.get.asInstanceOf[js.Any])
     if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
-    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoActivate)) __obj.updateDynamic("autoActivate")(autoActivate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoActivate)) __obj.updateDynamic("autoActivate")(autoActivate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.get.asInstanceOf[js.Any])
     if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction2(beforeActivate))
     if (beforeExpand != null) __obj.updateDynamic("beforeExpand")(js.Any.fromFunction2(beforeExpand))
     if (beforeSelect != null) __obj.updateDynamic("beforeSelect")(js.Any.fromFunction2(beforeSelect))
@@ -207,46 +207,46 @@ object FancytreeOptions {
     if (debugLevel != null) __obj.updateDynamic("debugLevel")(debugLevel.asInstanceOf[js.Any])
     if (defaultKey != null) __obj.updateDynamic("defaultKey")(js.Any.fromFunction1(defaultKey))
     if (dnd5 != null) __obj.updateDynamic("dnd5")(dnd5.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAspx)) __obj.updateDynamic("enableAspx")(enableAspx.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTitles)) __obj.updateDynamic("enableTitles")(enableTitles.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAspx)) __obj.updateDynamic("enableAspx")(enableAspx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTitles)) __obj.updateDynamic("enableTitles")(enableTitles.get.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction2(expand))
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
-    if (!js.isUndefined(focusOnSelect)) __obj.updateDynamic("focusOnSelect")(focusOnSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusOnSelect)) __obj.updateDynamic("focusOnSelect")(focusOnSelect.get.asInstanceOf[js.Any])
     if (focusTree != null) __obj.updateDynamic("focusTree")(js.Any.fromFunction2(focusTree))
-    if (!js.isUndefined(generateIds)) __obj.updateDynamic("generateIds")(generateIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateIds)) __obj.updateDynamic("generateIds")(generateIds.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
     if (imagePath != null) __obj.updateDynamic("imagePath")(imagePath.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction2(init))
     if (keyPathSeparator != null) __obj.updateDynamic("keyPathSeparator")(keyPathSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (keydown != null) __obj.updateDynamic("keydown")(js.Any.fromFunction2(keydown))
     if (keypress != null) __obj.updateDynamic("keypress")(js.Any.fromFunction2(keypress))
     if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(js.Any.fromFunction2(lazyLoad))
     if (loadChildren != null) __obj.updateDynamic("loadChildren")(js.Any.fromFunction2(loadChildren))
     if (loadError != null) __obj.updateDynamic("loadError")(js.Any.fromFunction2(loadError))
-    if (minExpandLevel != null) __obj.updateDynamic("minExpandLevel")(minExpandLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(minExpandLevel)) __obj.updateDynamic("minExpandLevel")(minExpandLevel.get.asInstanceOf[js.Any])
     if (postProcess != null) __obj.updateDynamic("postProcess")(js.Any.fromFunction2(postProcess))
-    if (!js.isUndefined(quicksearch)) __obj.updateDynamic("quicksearch")(quicksearch.asInstanceOf[js.Any])
+    if (!js.isUndefined(quicksearch)) __obj.updateDynamic("quicksearch")(quicksearch.get.asInstanceOf[js.Any])
     if (removeNode != null) __obj.updateDynamic("removeNode")(js.Any.fromFunction2(removeNode))
     if (renderColumns != null) __obj.updateDynamic("renderColumns")(js.Any.fromFunction2(renderColumns))
     if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction2(renderNode))
     if (renderTitle != null) __obj.updateDynamic("renderTitle")(js.Any.fromFunction2(renderTitle))
     if (restore != null) __obj.updateDynamic("restore")(js.Any.fromFunction2(restore))
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
     if (scrollOfs != null) __obj.updateDynamic("scrollOfs")(scrollOfs.asInstanceOf[js.Any])
-    if (scrollParent != null) __obj.updateDynamic("scrollParent")(scrollParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollParent)) __obj.updateDynamic("scrollParent")(scrollParent.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
     if (selectMode != null) __obj.updateDynamic("selectMode")(selectMode.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabbable)) __obj.updateDynamic("tabbable")(tabbable.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabbable)) __obj.updateDynamic("tabbable")(tabbable.get.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (!js.isUndefined(titlesTabbable)) __obj.updateDynamic("titlesTabbable")(titlesTabbable.asInstanceOf[js.Any])
+    if (!js.isUndefined(titlesTabbable)) __obj.updateDynamic("titlesTabbable")(titlesTabbable.get.asInstanceOf[js.Any])
     if (toggleEffect != null) __obj.updateDynamic("toggleEffect")(toggleEffect.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.get.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (unselectableIgnore != null) __obj.updateDynamic("unselectableIgnore")(unselectableIgnore.asInstanceOf[js.Any])
     if (unselectableStatus != null) __obj.updateDynamic("unselectableStatus")(unselectableStatus.asInstanceOf[js.Any])

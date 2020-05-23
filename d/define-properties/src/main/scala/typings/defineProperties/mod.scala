@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   /**
-  	 * Whether the current environment correctly supports property descriptors.
-  	 */
+    * Whether the current environment correctly supports property descriptors.
+    */
   val supportsDescriptors: Boolean = js.native
   /**
     * Defines new properties in `map` as non-enumerable if they don't already

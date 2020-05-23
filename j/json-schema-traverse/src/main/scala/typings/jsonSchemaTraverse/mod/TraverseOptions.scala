@@ -21,7 +21,7 @@ object TraverseOptions {
   @scala.inline
   def apply(allKeys: js.UndefOr[Boolean] = js.undefined, cb: TraverseCallback = null): TraverseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allKeys)) __obj.updateDynamic("allKeys")(allKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(allKeys)) __obj.updateDynamic("allKeys")(allKeys.get.asInstanceOf[js.Any])
     if (cb != null) __obj.updateDynamic("cb")(cb.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraverseOptions]
   }

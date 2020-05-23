@@ -37,11 +37,11 @@ object ValidateOptions {
     stripUnknown: js.UndefOr[Boolean] = js.undefined
   ): ValidateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripUnknown)) __obj.updateDynamic("stripUnknown")(stripUnknown.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripUnknown)) __obj.updateDynamic("stripUnknown")(stripUnknown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateOptions]
   }
 }

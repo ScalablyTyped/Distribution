@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +24,4 @@ trait IdentifyTask extends Task {
   def execute(params: IdentifyParameters): js.Promise[_] = js.native
   def execute(params: IdentifyParameters, requestOptions: js.Any): js.Promise[_] = js.native
 }
-
-@JSGlobal("__esri.IdentifyTask")
-@js.native
-object IdentifyTask extends TopLevel[IdentifyTaskConstructor]
 

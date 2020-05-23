@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(arithmetic: js.UndefOr[Boolean] = js.undefined, progressive: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arithmetic)) __obj.updateDynamic("arithmetic")(arithmetic.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
+    if (!js.isUndefined(arithmetic)) __obj.updateDynamic("arithmetic")(arithmetic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

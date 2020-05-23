@@ -15,12 +15,12 @@ object Options {
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
     initialPoint: Coordinates = null,
-    radius: Int | Double = null
+    radius: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (initialPoint != null) __obj.updateDynamic("initialPoint")(initialPoint.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,8 +1,8 @@
 package typings.officeJs.Visio
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.Visio.Interfaces.SelectionData
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.Selection")
 @js.native
-class Selection () extends ClientObject {
+trait Selection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Selection: RequestContext = js.native
@@ -44,7 +43,7 @@ class Selection () extends ClientObject {
   def load(): Selection = js.native
   def load(option: String): Selection = js.native
   def load(option: js.Array[String]): Selection = js.native
-  def load(option: AnonExpand): Selection = js.native
+  def load(option: Expand): Selection = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.Selection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.SelectionData`) that contains shallow copies of any loaded child properties from the original object.

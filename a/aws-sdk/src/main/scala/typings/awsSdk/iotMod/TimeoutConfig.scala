@@ -14,9 +14,9 @@ trait TimeoutConfig extends js.Object {
 
 object TimeoutConfig {
   @scala.inline
-  def apply(inProgressTimeoutInMinutes: Int | Double = null): TimeoutConfig = {
+  def apply(inProgressTimeoutInMinutes: js.UndefOr[InProgressTimeoutInMinutes] = js.undefined): TimeoutConfig = {
     val __obj = js.Dynamic.literal()
-    if (inProgressTimeoutInMinutes != null) __obj.updateDynamic("inProgressTimeoutInMinutes")(inProgressTimeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(inProgressTimeoutInMinutes)) __obj.updateDynamic("inProgressTimeoutInMinutes")(inProgressTimeoutInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeoutConfig]
   }
 }

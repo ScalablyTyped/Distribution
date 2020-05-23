@@ -22,8 +22,8 @@ object SaveSynonymsOptions {
     replaceExistingSynonyms: js.UndefOr[Boolean] = js.undefined
   ): SaveSynonymsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forwardToReplicas)) __obj.updateDynamic("forwardToReplicas")(forwardToReplicas.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceExistingSynonyms)) __obj.updateDynamic("replaceExistingSynonyms")(replaceExistingSynonyms.asInstanceOf[js.Any])
+    if (!js.isUndefined(forwardToReplicas)) __obj.updateDynamic("forwardToReplicas")(forwardToReplicas.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceExistingSynonyms)) __obj.updateDynamic("replaceExistingSynonyms")(replaceExistingSynonyms.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveSynonymsOptions]
   }
 }

@@ -18,9 +18,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an audio graph of connected input, output, and submix nodes that manipulate and route audio. */
-@JSGlobal("Windows.Media.Audio.AudioGraph")
 @js.native
-abstract class AudioGraph () extends js.Object {
+trait AudioGraph extends js.Object {
   /** Gets the completed quantum count for the audio graph. */
   var completedQuantumCount: Double = js.native
   /** Gets the encoding properties for the audio graph. */
@@ -154,17 +153,5 @@ abstract class AudioGraph () extends js.Object {
   def start(): Unit = js.native
   /** Stops the audio graph. */
   def stop(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Media.Audio.AudioGraph")
-@js.native
-object AudioGraph extends js.Object {
-  /**
-    * Creates an audio graph with specific settings.
-    * @param settings An AudioGraphSettings object representing the source audio file.
-    * @return When this operation completes, a CreateAudioGraphResult object is returned.
-    */
-  def createAsync(settings: AudioGraphSettings): IPromiseWithIAsyncOperation[CreateAudioGraphResult] = js.native
 }
 

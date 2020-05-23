@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonEname
+import typings.jupyterlabServices.anon.Ename
 import typings.jupyterlabServices.jupyterlabServicesStrings.error
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IErrorMsg
   extends IIOPubMessage[error]
      with _Message {
   @JSName("content")
-  var content_IErrorMsg: AnonEname
+  var content_IErrorMsg: Ename
 }
 
 object IErrorMsg {
   @scala.inline
   def apply(
     channel: iopub,
-    content: AnonEname,
+    content: Ename,
     header: IHeader[error],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

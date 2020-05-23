@@ -18,10 +18,10 @@ trait Point extends js.Object {
 
 object Point {
   @scala.inline
-  def apply(pointPadding: Int | Double = null, value: Int | Double = null): Point = {
+  def apply(pointPadding: js.UndefOr[Double] = js.undefined, value: js.UndefOr[Null | Double] = js.undefined): Point = {
     val __obj = js.Dynamic.literal()
-    if (pointPadding != null) __obj.updateDynamic("pointPadding")(pointPadding.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointPadding)) __obj.updateDynamic("pointPadding")(pointPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

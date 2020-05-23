@@ -1,6 +1,6 @@
 package typings.pako.mod
 
-import typings.pako.DeflateFunctionOptionstos
+import typings.pako.anon.DeflateFunctionOptionstos
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

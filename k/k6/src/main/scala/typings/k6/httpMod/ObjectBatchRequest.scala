@@ -17,10 +17,15 @@ trait ObjectBatchRequest extends js.Object {
 
 object ObjectBatchRequest {
   @scala.inline
-  def apply(method: String, url: String, body: RequestBody = null, params: Params = null): ObjectBatchRequest = {
+  def apply(
+    method: String,
+    url: String,
+    body: js.UndefOr[Null | RequestBody] = js.undefined,
+    params: js.UndefOr[Null | Params] = js.undefined
+  ): ObjectBatchRequest = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(params)) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectBatchRequest]
   }
 }

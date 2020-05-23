@@ -18,10 +18,10 @@ trait HistogramEntry extends js.Object {
 
 object HistogramEntry {
   @scala.inline
-  def apply(Count: Int | scala.Double = null, Value: Int | scala.Double = null): HistogramEntry = {
+  def apply(Count: js.UndefOr[Integer] = js.undefined, Value: js.UndefOr[Double] = js.undefined): HistogramEntry = {
     val __obj = js.Dynamic.literal()
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramEntry]
   }
 }

@@ -1,6 +1,6 @@
 package typings.formik
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object utilsMod extends js.Object {
   def getActiveElement(): Element | Null = js.native
-  def getActiveElement(doc: Document_): Element | Null = js.native
+  def getActiveElement(doc: Document): Element | Null = js.native
   def getIn(obj: js.Any, key: String): js.Any = js.native
   def getIn(obj: js.Any, key: String, `def`: js.Any): js.Any = js.native
   def getIn(obj: js.Any, key: String, `def`: js.Any, p: Double): js.Any = js.native

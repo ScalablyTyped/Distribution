@@ -14,10 +14,13 @@ trait ILinkOutSuggestion extends js.Object {
 
 object ILinkOutSuggestion {
   @scala.inline
-  def apply(destinationName: String = null, uri: String = null): ILinkOutSuggestion = {
+  def apply(
+    destinationName: js.UndefOr[Null | String] = js.undefined,
+    uri: js.UndefOr[Null | String] = js.undefined
+  ): ILinkOutSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    if (!js.isUndefined(destinationName)) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (!js.isUndefined(uri)) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinkOutSuggestion]
   }
 }

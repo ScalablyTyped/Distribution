@@ -22,10 +22,10 @@ trait SqsAction extends js.Object {
 
 object SqsAction {
   @scala.inline
-  def apply(queueUrl: QueueUrl, payload: Payload = null, useBase64: js.UndefOr[Boolean] = js.undefined): SqsAction = {
+  def apply(queueUrl: QueueUrl, payload: Payload = null, useBase64: js.UndefOr[UseBase64] = js.undefined): SqsAction = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBase64)) __obj.updateDynamic("useBase64")(useBase64.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBase64)) __obj.updateDynamic("useBase64")(useBase64.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqsAction]
   }
 }

@@ -17,10 +17,10 @@ trait WindowResizeResult extends js.Object {
 
 object WindowResizeResult {
   @scala.inline
-  def apply(windowHeight: Int | Double = null, windowWidth: Int | Double = null): WindowResizeResult = {
+  def apply(windowHeight: js.UndefOr[Double] = js.undefined, windowWidth: js.UndefOr[Double] = js.undefined): WindowResizeResult = {
     val __obj = js.Dynamic.literal()
-    if (windowHeight != null) __obj.updateDynamic("windowHeight")(windowHeight.asInstanceOf[js.Any])
-    if (windowWidth != null) __obj.updateDynamic("windowWidth")(windowWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowHeight)) __obj.updateDynamic("windowHeight")(windowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowWidth)) __obj.updateDynamic("windowWidth")(windowWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowResizeResult]
   }
 }

@@ -1,17 +1,13 @@
 package typings.googlemaps.google.maps
 
-import typings.std.Document_
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.ImageMapType")
 @js.native
-class ImageMapType protected ()
+trait ImageMapType
   extends MVCObject
      with MapType {
-  def this(opts: ImageMapTypeOptions) = this()
   @JSName("alt")
   var alt_ImageMapType: String = js.native
   @JSName("maxZoom")
@@ -27,10 +23,6 @@ class ImageMapType protected ()
   @JSName("tileSize")
   var tileSize_ImageMapType: Size = js.native
   def getOpacity(): Double = js.native
-  /* CompleteClass */
-  override def getTile(tileCoord: Point, zoom: Double, ownerDocument: Document_): Element = js.native
-  /* CompleteClass */
-  override def releaseTile(tile: Element): Unit = js.native
   def setOpacity(opacity: Double): Unit = js.native
 }
 

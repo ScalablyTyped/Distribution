@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the base class for all diagram classes, which have X and Y axes.
   */
-@JSGlobal("ASPxClientXYDiagramBase")
-@js.native
-class ASPxClientXYDiagramBase () extends ASPxClientWebChartElement {
+trait ASPxClientXYDiagramBase extends ASPxClientWebChartElement {
   /**
     * Gets the X-axis.
     */
-  var axisX: ASPxClientAxisBase = js.native
+  var axisX: ASPxClientAxisBase
   /**
     * Gets the Y-axis.
     */
-  var axisY: ASPxClientAxisBase = js.native
+  var axisY: ASPxClientAxisBase
+}
+
+object ASPxClientXYDiagramBase {
+  @scala.inline
+  def apply(axisX: ASPxClientAxisBase, axisY: ASPxClientAxisBase, chart: ASPxClientWebChart): ASPxClientXYDiagramBase = {
+    val __obj = js.Dynamic.literal(axisX = axisX.asInstanceOf[js.Any], axisY = axisY.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientXYDiagramBase]
+  }
 }
 

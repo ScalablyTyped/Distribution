@@ -1,6 +1,6 @@
 package typings.firebaseAdmin.admin.auth
 
-import typings.firebaseAdmin.AnonEnabled
+import typings.firebaseAdmin.anon.Enabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,12 @@ trait UpdateTenantRequest extends js.Object {
   /**
     * The email sign in configuration.
     */
-  var emailSignInConfig: js.UndefOr[AnonEnabled] = js.undefined
+  var emailSignInConfig: js.UndefOr[Enabled] = js.undefined
 }
 
 object UpdateTenantRequest {
   @scala.inline
-  def apply(displayName: String = null, emailSignInConfig: AnonEnabled = null): UpdateTenantRequest = {
+  def apply(displayName: String = null, emailSignInConfig: Enabled = null): UpdateTenantRequest = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (emailSignInConfig != null) __obj.updateDynamic("emailSignInConfig")(emailSignInConfig.asInstanceOf[js.Any])

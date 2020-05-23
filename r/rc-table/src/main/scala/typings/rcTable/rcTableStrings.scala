@@ -11,9 +11,6 @@ import scala.scalajs.js.annotation._
 
 object rcTableStrings {
   @js.native
-  sealed trait RC_TABLE_INTERNAL_COL_DEFINE extends js.Object
-  
-  @js.native
   sealed trait a
     extends _Component[js.Any]
   
@@ -358,9 +355,6 @@ object rcTableStrings {
     extends _Component[js.Any]
   
   @js.native
-  sealed trait `rc-table-internal-hook` extends js.Object
-  
-  @js.native
   sealed trait right
     extends AlignType
        with _FixedType
@@ -511,8 +505,6 @@ object rcTableStrings {
   sealed trait webview
     extends _Component[js.Any]
   
-  @scala.inline
-  def RC_TABLE_INTERNAL_COL_DEFINE: RC_TABLE_INTERNAL_COL_DEFINE = "RC_TABLE_INTERNAL_COL_DEFINE".asInstanceOf[RC_TABLE_INTERNAL_COL_DEFINE]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
@@ -687,8 +679,6 @@ object rcTableStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
-  @scala.inline
-  def `rc-table-internal-hook`: `rc-table-internal-hook` = "rc-table-internal-hook".asInstanceOf[`rc-table-internal-hook`]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline

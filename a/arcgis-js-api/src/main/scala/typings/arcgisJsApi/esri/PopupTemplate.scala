@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,8 +93,4 @@ trait PopupTemplate
     */
   var title: String | js.Function | js.Promise[_] = js.native
 }
-
-@JSGlobal("__esri.PopupTemplate")
-@js.native
-object PopupTemplate extends TopLevel[PopupTemplateConstructor]
 

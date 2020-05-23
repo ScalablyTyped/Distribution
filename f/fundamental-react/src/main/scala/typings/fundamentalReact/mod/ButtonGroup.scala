@@ -1,7 +1,7 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.PartialButtonGroupProps
-import typings.fundamentalReact.WeakValidationMapButtonGr
+import typings.fundamentalReact.anon.PartialButtonGroupProps
+import typings.fundamentalReact.anon.WeakValidationMapButtonGr
 import typings.fundamentalReact.buttonGroupMod.ButtonGroupProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

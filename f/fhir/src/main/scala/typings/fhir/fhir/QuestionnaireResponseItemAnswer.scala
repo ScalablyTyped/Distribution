@@ -117,8 +117,8 @@ object QuestionnaireResponseItemAnswer {
     valueCoding: Coding = null,
     valueDate: date = null,
     valueDateTime: dateTime = null,
-    valueDecimal: Int | Double = null,
-    valueInteger: Int | Double = null,
+    valueDecimal: js.UndefOr[decimal] = js.undefined,
+    valueInteger: js.UndefOr[integer] = js.undefined,
     valueQuantity: Quantity = null,
     valueReference: Reference = null,
     valueString: String = null,
@@ -142,12 +142,12 @@ object QuestionnaireResponseItemAnswer {
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (valueAttachment != null) __obj.updateDynamic("valueAttachment")(valueAttachment.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.get.asInstanceOf[js.Any])
     if (valueCoding != null) __obj.updateDynamic("valueCoding")(valueCoding.asInstanceOf[js.Any])
     if (valueDate != null) __obj.updateDynamic("valueDate")(valueDate.asInstanceOf[js.Any])
     if (valueDateTime != null) __obj.updateDynamic("valueDateTime")(valueDateTime.asInstanceOf[js.Any])
-    if (valueDecimal != null) __obj.updateDynamic("valueDecimal")(valueDecimal.asInstanceOf[js.Any])
-    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueDecimal)) __obj.updateDynamic("valueDecimal")(valueDecimal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
     if (valueQuantity != null) __obj.updateDynamic("valueQuantity")(valueQuantity.asInstanceOf[js.Any])
     if (valueReference != null) __obj.updateDynamic("valueReference")(valueReference.asInstanceOf[js.Any])
     if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])

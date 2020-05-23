@@ -1,5 +1,7 @@
 package typings.apolloReact
 
+import typings.apolloReact.anon.Children
+import typings.apolloReact.anon.Client
 import typings.apolloReact.apolloProviderMod.default
 import typings.apolloReact.graphqlMod.OperationOption
 import typings.redux.mod.Func0
@@ -61,8 +63,8 @@ object browserMod extends js.Object {
   /* static members */
   @js.native
   object ApolloProvider extends js.Object {
-    var childContextTypes: AnonClient = js.native
-    var propTypes: AnonChildren = js.native
+    var childContextTypes: Client = js.native
+    var propTypes: Children = js.native
   }
   
 }

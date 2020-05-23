@@ -34,16 +34,16 @@ trait AnnotationMockPointOptionsObject extends js.Object {
 object AnnotationMockPointOptionsObject {
   @scala.inline
   def apply(
-    x: Int | Double = null,
-    xAxis: Double | String = null,
-    y: Int | Double = null,
-    yAxis: Double | String = null
+    x: js.UndefOr[Double] = js.undefined,
+    xAxis: js.UndefOr[Null | Double | String] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined,
+    yAxis: js.UndefOr[Null | Double | String] = js.undefined
   ): AnnotationMockPointOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxis)) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxis)) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationMockPointOptionsObject]
   }
 }

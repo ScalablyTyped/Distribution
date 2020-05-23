@@ -11,9 +11,9 @@ trait ChromeOsDeviceActiveTimeRanges extends js.Object {
 
 object ChromeOsDeviceActiveTimeRanges {
   @scala.inline
-  def apply(activeTime: Int | Double = null, date: String = null): ChromeOsDeviceActiveTimeRanges = {
+  def apply(activeTime: js.UndefOr[Double] = js.undefined, date: String = null): ChromeOsDeviceActiveTimeRanges = {
     val __obj = js.Dynamic.literal()
-    if (activeTime != null) __obj.updateDynamic("activeTime")(activeTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeTime)) __obj.updateDynamic("activeTime")(activeTime.get.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOsDeviceActiveTimeRanges]
   }

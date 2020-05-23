@@ -143,7 +143,7 @@ object LoadBalancerTlsCertificate {
     if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
     if (domainValidationRecords != null) __obj.updateDynamic("domainValidationRecords")(domainValidationRecords.asInstanceOf[js.Any])
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached.get.asInstanceOf[js.Any])
     if (issuedAt != null) __obj.updateDynamic("issuedAt")(issuedAt.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm.asInstanceOf[js.Any])

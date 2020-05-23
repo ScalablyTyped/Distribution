@@ -13,9 +13,9 @@ trait IResultMessage extends js.Object {
 
 object IResultMessage {
   @scala.inline
-  def apply(isError: Boolean, message: String, batchId: Int | Double = null, time: String = null): IResultMessage = {
+  def apply(isError: Boolean, message: String, batchId: js.UndefOr[Double] = js.undefined, time: String = null): IResultMessage = {
     val __obj = js.Dynamic.literal(isError = isError.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResultMessage]
   }

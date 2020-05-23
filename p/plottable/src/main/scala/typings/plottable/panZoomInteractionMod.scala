@@ -1,5 +1,7 @@
 package typings.plottable
 
+import typings.plottable.anon.CenterValue
+import typings.plottable.anon.X
 import typings.plottable.interactionMod.Interaction
 import typings.plottable.interactionsMod.Drag
 import typings.plottable.interfacesMod.Point
@@ -296,9 +298,9 @@ object panZoomInteractionMod extends js.Object {
       * @param {boolean} [constrained] Whether to respect the zoom extents and min/max
       * values. Default true.
       */
-    def zoom(zoomAmount: Double): AnonCenterValue = js.native
-    def zoom(zoomAmount: Double, centerValue: Point): AnonCenterValue = js.native
-    def zoom(zoomAmount: Double, centerValue: Point, constrained: Boolean): AnonCenterValue = js.native
+    def zoom(zoomAmount: Double): CenterValue = js.native
+    def zoom(zoomAmount: Double, centerValue: Point): CenterValue = js.native
+    def zoom(zoomAmount: Double, centerValue: Point, constrained: Boolean): CenterValue = js.native
   }
   
   /* static members */
@@ -309,7 +311,7 @@ object panZoomInteractionMod extends js.Object {
       */
     var _PIXELS_PER_LINE: js.Any = js.native
     /* private */ def _pointDistance(point1: js.Any, point2: js.Any): js.Any = js.native
-    def centerPoint(point1: Point, point2: Point): AnonX = js.native
+    def centerPoint(point1: Point, point2: Point): X = js.native
   }
   
   type PanCallback = js.Function0[Unit]

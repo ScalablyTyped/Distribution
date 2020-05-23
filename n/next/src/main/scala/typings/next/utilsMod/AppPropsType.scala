@@ -16,7 +16,7 @@ trait AppPropsType[R /* <: NextRouter */, P] extends js.Object {
 
 object AppPropsType {
   @scala.inline
-  def apply[R /* <: NextRouter */, P](
+  def apply[R, P](
     Component: NextComponentType[NextPageContext, _, P],
     pageProps: js.Any,
     router: R,
@@ -24,8 +24,8 @@ object AppPropsType {
     __N_SSP: js.UndefOr[Boolean] = js.undefined
   ): AppPropsType[R, P] = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], pageProps = pageProps.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any])
-    if (!js.isUndefined(__N_SSG)) __obj.updateDynamic("__N_SSG")(__N_SSG.asInstanceOf[js.Any])
-    if (!js.isUndefined(__N_SSP)) __obj.updateDynamic("__N_SSP")(__N_SSP.asInstanceOf[js.Any])
+    if (!js.isUndefined(__N_SSG)) __obj.updateDynamic("__N_SSG")(__N_SSG.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(__N_SSP)) __obj.updateDynamic("__N_SSP")(__N_SSP.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppPropsType[R, P]]
   }
 }

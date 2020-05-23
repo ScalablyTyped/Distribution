@@ -87,7 +87,7 @@ object Options {
     start: js.UndefOr[Boolean] = js.undefined,
     stoppable: js.UndefOr[Boolean] = js.undefined,
     theme: String = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (hiddenClass != null) __obj.updateDynamic("hiddenClass")(hiddenClass.asInstanceOf[js.Any])
@@ -97,10 +97,10 @@ object Options {
     if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1(onStop))
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (shownClass != null) __obj.updateDynamic("shownClass")(shownClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(stoppable)) __obj.updateDynamic("stoppable")(stoppable.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stoppable)) __obj.updateDynamic("stoppable")(stoppable.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

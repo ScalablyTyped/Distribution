@@ -10,7 +10,7 @@ import typings.luminoWidgets.menuMod.Menu.IOpenOptions
 import typings.luminoWidgets.menuMod.Menu.IOptions
 import typings.luminoWidgets.menuMod.Menu.IRenderer
 import typings.luminoWidgets.widgetMod.Widget
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLUListElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -231,7 +231,7 @@ class Menu_ protected () extends Widget {
     * called in response to events on the menu's DOM nodes. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Insert a menu item into the menu at the specified index.
     *

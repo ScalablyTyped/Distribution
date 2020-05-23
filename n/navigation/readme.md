@@ -1,7 +1,7 @@
 
 # Scala.js typings for navigation
 
-Typings are for version 5.2.0
+Typings are for version 5.3.1
 
 ## Library description:
 The data-first JavaScript router

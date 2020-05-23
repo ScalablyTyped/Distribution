@@ -1,6 +1,6 @@
 package typings.emberObject.coreMod
 
-import typings.emberObject.TypeofCoreObject
+import typings.emberObject.anon.TypeofCoreObject
 import typings.emberObject.typesMod.EmberClassArguments
 import typings.emberObject.typesMod.EmberClassConstructor
 import typings.emberObject.typesMod.EmberInstanceArguments

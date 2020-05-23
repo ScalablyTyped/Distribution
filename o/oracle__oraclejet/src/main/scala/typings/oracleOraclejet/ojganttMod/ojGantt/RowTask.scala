@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojganttMod.ojGantt
 
-import typings.oracleOraclejet.AnonEnd
-import typings.oracleOraclejet.AnonValue
+import typings.oracleOraclejet.anon.End
+import typings.oracleOraclejet.anon.Value
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.milestone
 import typings.oracleOraclejet.oracleOraclejetStrings.normal
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-over-type-literal
 trait RowTask[K2] extends js.Object {
-  var baseline: js.UndefOr[AnonEnd] = js.undefined
+  var baseline: js.UndefOr[End] = js.undefined
   var borderRadius: js.UndefOr[String] = js.undefined
   var end: js.UndefOr[String] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
@@ -20,7 +20,7 @@ trait RowTask[K2] extends js.Object {
   var label: js.UndefOr[String] = js.undefined
   var labelPosition: js.UndefOr[String | js.Array[String]] = js.undefined
   var labelStyle: js.UndefOr[js.Object] = js.undefined
-  var progress: js.UndefOr[AnonValue] = js.undefined
+  var progress: js.UndefOr[Value] = js.undefined
   var shortDesc: js.UndefOr[String] = js.undefined
   var start: js.UndefOr[String] = js.undefined
   var svgClassName: js.UndefOr[String] = js.undefined
@@ -32,14 +32,14 @@ object RowTask {
   @scala.inline
   def apply[K2](
     id: K2,
-    baseline: AnonEnd = null,
+    baseline: End = null,
     borderRadius: String = null,
     end: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     label: String = null,
     labelPosition: String | js.Array[String] = null,
     labelStyle: js.Object = null,
-    progress: AnonValue = null,
+    progress: Value = null,
     shortDesc: String = null,
     start: String = null,
     svgClassName: String = null,
@@ -50,7 +50,7 @@ object RowTask {
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])

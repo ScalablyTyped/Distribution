@@ -1,5 +1,6 @@
 package typings.reactMovable
 
+import typings.reactMovable.anon.LockVertically
 import typings.reactMovable.listMod.default
 import typings.reactMovable.typesMod.IProps
 import scala.scalajs.js
@@ -19,7 +20,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object List extends js.Object {
-    var defaultProps: AnonLockVertically = js.native
+    var defaultProps: LockVertically = js.native
   }
   
 }

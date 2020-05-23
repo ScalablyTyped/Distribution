@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.10]
   */
-@JSGlobal("Excel.SlicerStyleCollection")
 @js.native
-class SlicerStyleCollection () extends ClientObject {
+trait SlicerStyleCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_SlicerStyleCollection: RequestContext = js.native

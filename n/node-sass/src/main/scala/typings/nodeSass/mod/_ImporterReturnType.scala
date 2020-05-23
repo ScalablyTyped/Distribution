@@ -8,12 +8,12 @@ trait _ImporterReturnType extends js.Object
 
 object _ImporterReturnType {
   @scala.inline
-  def AnonFile(file: String): _ImporterReturnType = {
+  def File(file: String): _ImporterReturnType = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ImporterReturnType]
   }
   @scala.inline
-  def AnonContents(contents: String, file: String = null): _ImporterReturnType = {
+  def Contents(contents: String, file: String = null): _ImporterReturnType = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ImporterReturnType]

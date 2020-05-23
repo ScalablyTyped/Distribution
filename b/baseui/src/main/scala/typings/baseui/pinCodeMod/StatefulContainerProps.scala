@@ -1,6 +1,6 @@
 package typings.baseui.pinCodeMod
 
-import typings.baseui.AnonValues
+import typings.baseui.anon.Values
 import typings.baseui.baseuiStrings.change_
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait StatefulContainerProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var initialState: js.UndefOr[State] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* args */ AnonValues, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* args */ Values, Unit]] = js.undefined
   var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object StatefulContainerProps {
   def apply(
     children: ReactNode = null,
     initialState: State = null,
-    onChange: /* args */ AnonValues => Unit = null,
+    onChange: /* args */ Values => Unit = null,
     stateReducer: (change_, /* nextState */ State, /* currentState */ State) => State = null
   ): StatefulContainerProps = {
     val __obj = js.Dynamic.literal()

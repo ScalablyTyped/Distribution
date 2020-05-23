@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeOrderableDBInstanceOptionsMessage extends js.Object {
   /**
+    * The Availability Zone group associated with a Local Zone. Specify this parameter to retrieve available offerings for the Local Zones in the group. Omit this parameter to show the available offerings in the specified AWS Region.
+    */
+  var AvailabilityZoneGroup: js.UndefOr[String] = js.native
+  /**
     * The DB instance class filter value. Specify this parameter to show only the available offerings matching the specified DB instance class.
     */
   var DBInstanceClass: js.UndefOr[String] = js.native
@@ -44,22 +48,24 @@ object DescribeOrderableDBInstanceOptionsMessage {
   @scala.inline
   def apply(
     Engine: String,
+    AvailabilityZoneGroup: String = null,
     DBInstanceClass: String = null,
     EngineVersion: String = null,
     Filters: FilterList = null,
     LicenseModel: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
-    Vpc: js.UndefOr[scala.Boolean] = js.undefined
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    Vpc: js.UndefOr[BooleanOptional] = js.undefined
   ): DescribeOrderableDBInstanceOptionsMessage = {
     val __obj = js.Dynamic.literal(Engine = Engine.asInstanceOf[js.Any])
+    if (AvailabilityZoneGroup != null) __obj.updateDynamic("AvailabilityZoneGroup")(AvailabilityZoneGroup.asInstanceOf[js.Any])
     if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
-    if (!js.isUndefined(Vpc)) __obj.updateDynamic("Vpc")(Vpc.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Vpc)) __obj.updateDynamic("Vpc")(Vpc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrderableDBInstanceOptionsMessage]
   }
 }

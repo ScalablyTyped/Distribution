@@ -21,11 +21,15 @@ trait GetSavedFileInfoSuccess extends js.Object {
 
 object GetSavedFileInfoSuccess {
   @scala.inline
-  def apply(createTime: Int | Double = null, errMsg: String = null, size: Int | Double = null): GetSavedFileInfoSuccess = {
+  def apply(
+    createTime: js.UndefOr[Double] = js.undefined,
+    errMsg: String = null,
+    size: js.UndefOr[Double] = js.undefined
+  ): GetSavedFileInfoSuccess = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(createTime)) __obj.updateDynamic("createTime")(createTime.get.asInstanceOf[js.Any])
     if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavedFileInfoSuccess]
   }
 }

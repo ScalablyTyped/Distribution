@@ -18,9 +18,9 @@ trait ListGatewayGroupsRequest extends js.Object {
 
 object ListGatewayGroupsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null): ListGatewayGroupsRequest = {
+  def apply(MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListGatewayGroupsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGatewayGroupsRequest]
   }

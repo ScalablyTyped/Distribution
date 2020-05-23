@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("VBIDE.VBE")
 @js.native
-class VBE protected () extends js.Object {
+trait VBE extends js.Object {
   var ActiveCodePane: CodePane = js.native
   var ActiveVBProject: VBProject = js.native
   val ActiveWindow: Window = js.native

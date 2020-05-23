@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object cordovaPluginsDiagnosticStrings {
   @js.native
+  sealed trait ACCESS_BACKGROUND_LOCATION extends js.Object
+  
+  @js.native
   sealed trait ACCESS_COARSE_LOCATION extends js.Object
   
   @js.native
@@ -182,6 +185,8 @@ object cordovaPluginsDiagnosticStrings {
   @js.native
   sealed trait when_in_use extends js.Object
   
+  @scala.inline
+  def ACCESS_BACKGROUND_LOCATION: ACCESS_BACKGROUND_LOCATION = "ACCESS_BACKGROUND_LOCATION".asInstanceOf[ACCESS_BACKGROUND_LOCATION]
   @scala.inline
   def ACCESS_COARSE_LOCATION: ACCESS_COARSE_LOCATION = "ACCESS_COARSE_LOCATION".asInstanceOf[ACCESS_COARSE_LOCATION]
   @scala.inline

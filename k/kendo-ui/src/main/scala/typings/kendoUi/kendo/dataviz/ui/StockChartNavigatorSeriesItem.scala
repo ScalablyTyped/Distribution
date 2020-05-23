@@ -52,7 +52,7 @@ object StockChartNavigatorSeriesItem {
     downColor: String = null,
     downColorField: String = null,
     field: String = null,
-    gap: Int | Double = null,
+    gap: js.UndefOr[Double] = js.undefined,
     highField: String = null,
     highlight: StockChartNavigatorSeriesItemHighlight = null,
     labels: StockChartNavigatorSeriesItemLabels = null,
@@ -61,15 +61,15 @@ object StockChartNavigatorSeriesItem {
     markers: StockChartNavigatorSeriesItemMarkers = null,
     missingValues: String = null,
     name: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     openField: String = null,
     overlay: StockChartNavigatorSeriesItemOverlay = null,
-    spacing: Int | Double = null,
+    spacing: js.UndefOr[Double] = js.undefined,
     stack: Boolean | String | StockChartNavigatorSeriesItemStack = null,
     style: String = null,
     tooltip: StockChartNavigatorSeriesItemTooltip = null,
     `type`: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): StockChartNavigatorSeriesItem = {
     val __obj = js.Dynamic.literal()
     if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object StockChartNavigatorSeriesItem {
     if (downColor != null) __obj.updateDynamic("downColor")(downColor.asInstanceOf[js.Any])
     if (downColorField != null) __obj.updateDynamic("downColorField")(downColorField.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (highField != null) __obj.updateDynamic("highField")(highField.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
@@ -93,15 +93,15 @@ object StockChartNavigatorSeriesItem {
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
     if (missingValues != null) __obj.updateDynamic("missingValues")(missingValues.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (openField != null) __obj.updateDynamic("openField")(openField.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNavigatorSeriesItem]
   }
 }

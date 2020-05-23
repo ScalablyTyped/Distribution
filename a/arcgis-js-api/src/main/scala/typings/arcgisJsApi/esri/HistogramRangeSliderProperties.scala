@@ -165,7 +165,7 @@ trait HistogramRangeSliderProperties extends WidgetProperties {
 object HistogramRangeSliderProperties {
   @scala.inline
   def apply(
-    average: Int | Double = null,
+    average: js.UndefOr[Double] = js.undefined,
     barCreatedFunction: (/* index */ Double, /* element */ js.Any) => Unit = null,
     bins: js.Array[Bin] = null,
     container: String | HTMLElement = null,
@@ -177,34 +177,34 @@ object HistogramRangeSliderProperties {
     includedBarColor: Color_ | js.Array[Double] | String = null,
     label: String = null,
     labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    precision: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
+    precision: js.UndefOr[Double] = js.undefined,
     rangeType: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between` = null,
-    standardDeviation: Int | Double = null,
-    standardDeviationCount: Int | Double = null,
+    standardDeviation: js.UndefOr[Double] = js.undefined,
+    standardDeviationCount: js.UndefOr[Double] = js.undefined,
     values: js.Array[Double] = null,
     viewModel: HistogramRangeSliderViewModelProperties = null
   ): HistogramRangeSliderProperties = {
     val __obj = js.Dynamic.literal()
-    if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
+    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
     if (barCreatedFunction != null) __obj.updateDynamic("barCreatedFunction")(js.Any.fromFunction2(barCreatedFunction))
     if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (dataLineCreatedFunction != null) __obj.updateDynamic("dataLineCreatedFunction")(js.Any.fromFunction3(dataLineCreatedFunction))
     if (dataLines != null) __obj.updateDynamic("dataLines")(dataLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
     if (excludedBarColor != null) __obj.updateDynamic("excludedBarColor")(excludedBarColor.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (includedBarColor != null) __obj.updateDynamic("includedBarColor")(includedBarColor.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (rangeType != null) __obj.updateDynamic("rangeType")(rangeType.asInstanceOf[js.Any])
-    if (standardDeviation != null) __obj.updateDynamic("standardDeviation")(standardDeviation.asInstanceOf[js.Any])
-    if (standardDeviationCount != null) __obj.updateDynamic("standardDeviationCount")(standardDeviationCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardDeviation)) __obj.updateDynamic("standardDeviation")(standardDeviation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardDeviationCount)) __obj.updateDynamic("standardDeviationCount")(standardDeviationCount.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramRangeSliderProperties]

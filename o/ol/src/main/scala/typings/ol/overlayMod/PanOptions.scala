@@ -11,9 +11,9 @@ trait PanOptions extends js.Object {
 
 object PanOptions {
   @scala.inline
-  def apply(duration: Int | Double = null, easing: /* p0 */ Double => Double = null): PanOptions = {
+  def apply(duration: js.UndefOr[Double] = js.undefined, easing: /* p0 */ Double => Double = null): PanOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
     __obj.asInstanceOf[PanOptions]
   }

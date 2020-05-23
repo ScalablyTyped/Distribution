@@ -23,13 +23,13 @@ object NodePoolAutoscaling {
   @scala.inline
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
-    maxNodeCount: Int | Double = null,
-    minNodeCount: Int | Double = null
+    maxNodeCount: js.UndefOr[Double] = js.undefined,
+    minNodeCount: js.UndefOr[Double] = js.undefined
   ): NodePoolAutoscaling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (maxNodeCount != null) __obj.updateDynamic("maxNodeCount")(maxNodeCount.asInstanceOf[js.Any])
-    if (minNodeCount != null) __obj.updateDynamic("minNodeCount")(minNodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNodeCount)) __obj.updateDynamic("maxNodeCount")(maxNodeCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minNodeCount)) __obj.updateDynamic("minNodeCount")(minNodeCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodePoolAutoscaling]
   }
 }

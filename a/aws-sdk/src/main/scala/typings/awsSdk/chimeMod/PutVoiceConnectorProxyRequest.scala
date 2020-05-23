@@ -34,11 +34,11 @@ object PutVoiceConnectorProxyRequest {
     DefaultSessionExpiryMinutes: Integer,
     PhoneNumberPoolCountries: CountryList,
     VoiceConnectorId: NonEmptyString128,
-    Disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Disabled: js.UndefOr[Boolean] = js.undefined,
     FallBackPhoneNumber: E164PhoneNumber = null
   ): PutVoiceConnectorProxyRequest = {
     val __obj = js.Dynamic.literal(DefaultSessionExpiryMinutes = DefaultSessionExpiryMinutes.asInstanceOf[js.Any], PhoneNumberPoolCountries = PhoneNumberPoolCountries.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.get.asInstanceOf[js.Any])
     if (FallBackPhoneNumber != null) __obj.updateDynamic("FallBackPhoneNumber")(FallBackPhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutVoiceConnectorProxyRequest]
   }

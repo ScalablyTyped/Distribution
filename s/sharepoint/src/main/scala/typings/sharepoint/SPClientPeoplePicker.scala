@@ -11,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SPClientPeoplePicker")
 @js.native
-class SPClientPeoplePicker () extends js.Object {
+trait SPClientPeoplePicker extends js.Object {
    // null,
   var AllUrlZones: Boolean = js.native
    // 0,
@@ -151,57 +150,5 @@ class SPClientPeoplePicker () extends js.Object {
   def UpdateUnresolvedUser(results: StringResult, user: ISPClientPeoplePickerEntity): Unit = js.native
   def Validate(): Unit = js.native
   def ValidateCurrentState(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("SPClientPeoplePicker")
-@js.native
-object SPClientPeoplePicker extends js.Object {
-   // = 'Title';
-  var DescriptionName: String = js.native
-   // = 'Key';
-  var DisplayTextName: String = js.native
-   // = 'AutoFillKey';
-  var DisplayTextProperty: String = js.native
-   // = 'AutoFillTitleText';
-  var DomainProperty: String = js.native
-   // = "UNVALIDATED_EMAIL_ADDRESS";
-  var KeyProperty: String = js.native
-   // = 'Description';
-  var SIPAddressName: String = js.native
-   // = 'DomainText';
-  var SPClientPeoplePickerDict: StringDictionary[SPClientPeoplePicker] = js.native
-   // = 'DisplayText';
-  var SubDisplayTextName: String = js.native
-   // = 'AutoFillDisplayText';
-  var SubDisplayTextProperty: String = js.native
-   // = 'SIPAddress';
-  var SuggestionsName: String = js.native
-   // = 'AutoFillSubDisplayText';
-  var TitleTextProperty: String = js.native
-   // = 'MultipleMatches';
-  var UnvalidatedEmailAddressKey: String = js.native
-  var ValueName: String = js.native
-  def AddAutoFillMetaData(pickerObj: SPClientPeoplePicker, options: js.Array[ISPClientPeoplePickerEntity], numOpts: Double): js.Array[ISPClientPeoplePickerEntity] = js.native
-  def AugmentEntity(entity: ISPClientPeoplePickerEntity): ISPClientPeoplePickerEntity = js.native
-  def AugmentEntitySuggestions(pickerObj: SPClientPeoplePicker, allEntities: js.Array[ISPClientPeoplePickerEntity]): js.Array[ISPClientPeoplePickerEntity] = js.native
-  def AugmentEntitySuggestions(
-    pickerObj: SPClientPeoplePicker,
-    allEntities: js.Array[ISPClientPeoplePickerEntity],
-    mergeLocal: Boolean
-  ): js.Array[ISPClientPeoplePickerEntity] = js.native
-  def BuildAutoFillMenuItems(pickerObj: SPClientPeoplePicker, options: js.Array[ISPClientPeoplePickerEntity]): js.Array[ISPClientPeoplePickerEntity] = js.native
-  def BuildUnresolvedEntity(key: String, dispText: String): ISPClientPeoplePickerEntity = js.native
-  def CreateSPPrincipalType(acctStr: String): Double = js.native
-  def GetTopLevelControl(elmChild: HTMLElement): HTMLElement = js.native
-  def InitializeStandalonePeoplePicker(
-    clientId: String,
-    value: js.Array[ISPClientPeoplePickerEntity],
-    schema: ISPClientPeoplePickerSchema
-  ): Unit = js.native
-  def IsUserEntity(entity: ISPClientPeoplePickerEntity): Boolean = js.native
-  def ParseUserKeyPaste(userKey: String): String = js.native
-  def PickerObjectFromSubElement(elmSubElement: HTMLElement): SPClientPeoplePicker = js.native
-  def TestLocalMatch(strSearchLower: String, dataEntity: ISPClientPeoplePickerEntity): Boolean = js.native
 }
 

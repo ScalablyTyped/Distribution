@@ -1,7 +1,7 @@
 package typings.pg.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pg.TypeofPg
+import typings.pg.anon.TypeofPg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

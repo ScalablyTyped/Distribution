@@ -1,5 +1,6 @@
 package typings.ejWebAll
 
+import typings.ejWebAll.anon.Typeofej
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

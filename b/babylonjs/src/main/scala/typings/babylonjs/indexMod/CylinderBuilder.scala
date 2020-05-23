@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.AnonCap
+import typings.babylonjs.anon.Cap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,6 +42,6 @@ object CylinderBuilder extends js.Object {
     * @returns the cylinder mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#cylinder-or-cone
     */
-  def CreateCylinder(name: String, options: AnonCap, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  def CreateCylinder(name: String, options: Cap, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
 }
 

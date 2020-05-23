@@ -1,6 +1,5 @@
 package typings.cordovaPluginFileTransfer
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.cordovaPluginFile.FileEntry
 import typings.std.EventTarget
 import typings.std.ProgressEvent
@@ -90,8 +89,4 @@ trait FileTransfer extends js.Object {
     trustAllHosts: Boolean
   ): Unit = js.native
 }
-
-@JSGlobal("FileTransfer")
-@js.native
-object FileTransfer extends Instantiable0[FileTransfer]
 

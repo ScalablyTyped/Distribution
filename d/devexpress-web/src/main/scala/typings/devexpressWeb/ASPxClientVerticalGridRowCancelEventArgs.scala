@@ -7,17 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the cancelable events of a client ASPxVerticalGrid row.
   */
-@JSGlobal("ASPxClientVerticalGridRowCancelEventArgs")
-@js.native
-class ASPxClientVerticalGridRowCancelEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientVerticalGridRowCancelEventArgs class.
-    * @param row An ASPxClientVerticalGridRowCancelEventArgs object that represents the processed row.
-    */
-  def this(row: ASPxClientVerticalGridRow) = this()
+trait ASPxClientVerticalGridRowCancelEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Gets the processed client row.
     */
-  var row: ASPxClientVerticalGridRow = js.native
+  var row: ASPxClientVerticalGridRow
+}
+
+object ASPxClientVerticalGridRowCancelEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridRowCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientVerticalGridRowCancelEventArgs]
+  }
 }
 

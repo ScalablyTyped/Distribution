@@ -56,7 +56,7 @@ object UnicodeCharacterRangeBase {
     if (astral != null) __obj.updateDynamic("astral")(astral.asInstanceOf[js.Any])
     if (bmp != null) __obj.updateDynamic("bmp")(bmp.asInstanceOf[js.Any])
     if (inverseOf != null) __obj.updateDynamic("inverseOf")(inverseOf.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBmpLast)) __obj.updateDynamic("isBmpLast")(isBmpLast.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBmpLast)) __obj.updateDynamic("isBmpLast")(isBmpLast.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnicodeCharacterRangeBase]
   }
 }

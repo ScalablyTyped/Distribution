@@ -116,7 +116,7 @@ object Model {
     ignoreWords: js.Array[_] = null,
     isResponsive: js.UndefOr[Boolean] = js.undefined,
     locale: String = null,
-    maxSuggestionCount: Int | Double = null,
+    maxSuggestionCount: js.UndefOr[Double] = js.undefined,
     misspellWordCss: String = null,
     start: /* e */ StartEventArgs => Unit = null,
     targetUpdating: /* e */ TargetUpdatingEventArgs => Unit = null,
@@ -137,13 +137,13 @@ object Model {
     if (dialogClose != null) __obj.updateDynamic("dialogClose")(js.Any.fromFunction1(dialogClose))
     if (dialogOpen != null) __obj.updateDynamic("dialogOpen")(js.Any.fromFunction1(dialogOpen))
     if (dictionarySettings != null) __obj.updateDynamic("dictionarySettings")(dictionarySettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAsync)) __obj.updateDynamic("enableAsync")(enableAsync.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableValidateOnType)) __obj.updateDynamic("enableValidateOnType")(enableValidateOnType.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAsync)) __obj.updateDynamic("enableAsync")(enableAsync.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableValidateOnType)) __obj.updateDynamic("enableValidateOnType")(enableValidateOnType.get.asInstanceOf[js.Any])
     if (ignoreSettings != null) __obj.updateDynamic("ignoreSettings")(ignoreSettings.asInstanceOf[js.Any])
     if (ignoreWords != null) __obj.updateDynamic("ignoreWords")(ignoreWords.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (maxSuggestionCount != null) __obj.updateDynamic("maxSuggestionCount")(maxSuggestionCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSuggestionCount)) __obj.updateDynamic("maxSuggestionCount")(maxSuggestionCount.get.asInstanceOf[js.Any])
     if (misspellWordCss != null) __obj.updateDynamic("misspellWordCss")(misspellWordCss.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (targetUpdating != null) __obj.updateDynamic("targetUpdating")(js.Any.fromFunction1(targetUpdating))

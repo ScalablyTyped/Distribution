@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.selectableMod
 
-import typings.blueprintjsTable.draggableMod.ICoordinateData
+import typings.blueprintjsTable.dragTypesMod.ICoordinateData
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.std.MouseEvent
 import scala.scalajs.js

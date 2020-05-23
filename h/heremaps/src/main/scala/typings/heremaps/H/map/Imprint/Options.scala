@@ -22,7 +22,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojinputtextMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonRegexp
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.Element
+import typings.oracleOraclejet.anon.Regexp
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojeditablevalueMod.editableValue
 import typings.oracleOraclejet.ojinputtextMod.inputBase.ojAnimateEnd
@@ -59,7 +59,7 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] ex
   var readonly: Boolean = js.native
   var required: Boolean = js.native
   @JSName("translations")
-  var translations_inputBase: AnonRegexp = js.native
+  var translations_inputBase: Regexp = js.native
   var validators: (js.Array[Validator[V] | RegisteredValidator]) | Null = js.native
   def addEventListener(
     `type`: autocompleteChanged,
@@ -197,7 +197,7 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] ex
   @JSName("setProperty")
   def setProperty_required(property: required, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonRegexp): Unit = js.native
+  def setProperty_translations(property: translations, value: Regexp): Unit = js.native
   @JSName("setProperty")
   def setProperty_validators(property: validators): Unit = js.native
   @JSName("setProperty")
@@ -208,7 +208,7 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] ex
 @JSImport("@oracle/oraclejet/ojinputtext", "inputBase")
 @js.native
 object inputBase extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[Element]
 }
 

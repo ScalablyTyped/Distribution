@@ -16,11 +16,16 @@ trait TouchActionSync extends js.Object {
 
 object TouchActionSync {
   @scala.inline
-  def apply(action: ActionTypes, ms: Int | Double = null, x: Int | Double = null, y: Int | Double = null): TouchActionSync = {
+  def apply(
+    action: ActionTypes,
+    ms: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
+  ): TouchActionSync = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-    if (ms != null) __obj.updateDynamic("ms")(ms.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(ms)) __obj.updateDynamic("ms")(ms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchActionSync]
   }
 }

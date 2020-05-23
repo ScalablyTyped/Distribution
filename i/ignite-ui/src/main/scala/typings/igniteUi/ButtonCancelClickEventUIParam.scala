@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait ButtonCancelClickEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the igGridModalDialog element.
-  	 */
+    * Gets a reference to the igGridModalDialog element.
+    */
   var modalDialog: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets the reference to the igGridModalDialog widget.
-  	 */
+    * Gets the reference to the igGridModalDialog widget.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

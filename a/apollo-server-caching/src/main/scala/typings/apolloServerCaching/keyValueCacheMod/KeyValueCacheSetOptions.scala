@@ -10,9 +10,9 @@ trait KeyValueCacheSetOptions extends js.Object {
 
 object KeyValueCacheSetOptions {
   @scala.inline
-  def apply(ttl: Int | Double = null): KeyValueCacheSetOptions = {
+  def apply(ttl: js.UndefOr[Null | Double] = js.undefined): KeyValueCacheSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyValueCacheSetOptions]
   }
 }

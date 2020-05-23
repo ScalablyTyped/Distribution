@@ -29,8 +29,8 @@ object TputsOptions {
   ): TputsOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.get.asInstanceOf[js.Any])
     if (termcap != null) __obj.updateDynamic("termcap")(termcap.asInstanceOf[js.Any])
     if (termcapFile != null) __obj.updateDynamic("termcapFile")(termcapFile.asInstanceOf[js.Any])
     if (terminal != null) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])

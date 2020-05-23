@@ -15,7 +15,6 @@ object QueryResult {
   @scala.inline
   def apply(documents: DocumentMap_, remoteKeys: DocumentKeySet_): QueryResult = {
     val __obj = js.Dynamic.literal(documents = documents.asInstanceOf[js.Any], remoteKeys = remoteKeys.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[QueryResult]
   }
 }

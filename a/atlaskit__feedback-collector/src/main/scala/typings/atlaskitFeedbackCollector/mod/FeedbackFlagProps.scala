@@ -16,7 +16,7 @@ object FeedbackFlagProps {
     onDismissed: /* repeated */ js.Any => _ = null
   ): FeedbackFlagProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDismissAllowed)) __obj.updateDynamic("isDismissAllowed")(isDismissAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDismissAllowed)) __obj.updateDynamic("isDismissAllowed")(isDismissAllowed.get.asInstanceOf[js.Any])
     if (onDismissed != null) __obj.updateDynamic("onDismissed")(js.Any.fromFunction1(onDismissed))
     __obj.asInstanceOf[FeedbackFlagProps]
   }

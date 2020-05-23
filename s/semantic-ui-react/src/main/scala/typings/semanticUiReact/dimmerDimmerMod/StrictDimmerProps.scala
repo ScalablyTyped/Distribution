@@ -15,8 +15,8 @@ object StrictDimmerProps {
   @scala.inline
   def apply(active: js.UndefOr[Boolean] = js.undefined, page: js.UndefOr[Boolean] = js.undefined): StrictDimmerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictDimmerProps]
   }
 }

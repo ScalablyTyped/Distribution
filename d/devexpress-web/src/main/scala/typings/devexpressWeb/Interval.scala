@@ -7,23 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Defines a document's interval.
   */
-@JSGlobal("Interval")
-@js.native
-/**
-  * Initiates a new Interval object instance with the specified settings.
-  * @param start The interval's start position.
-  * @param length The interval's length.
-  */
-class Interval () extends js.Object {
-  def this(start: Double) = this()
-  def this(start: Double, length: Double) = this()
+trait Interval extends js.Object {
   /**
     * Gets the interval's character length.
     */
-  var length: Double = js.native
+  var length: Double
   /**
     * Gets the interval's start position in the document.
     */
-  var start: Double = js.native
+  var start: Double
+}
+
+object Interval {
+  @scala.inline
+  def apply(length: Double, start: Double): Interval = {
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Interval]
+  }
 }
 

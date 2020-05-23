@@ -5,50 +5,49 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.MorphInstance
-  * @classdesc An instance of pc.Morph. Contains weights to assign to every pc.MorphTarget, holds morphed buffer and associated data.
-  * @param {pc.Morph} morph - The pc.Morph to instance.
+  * An instance of pc.Morph. Contains weights to assign to every pc.MorphTarget, holds morphed buffer and associated data.
+  * @param morph - The pc.Morph to instance.
   */
-@JSGlobal("pc.MorphInstance")
-@js.native
-class MorphInstance protected () extends js.Object {
-  def this(morph: Morph) = this()
+trait MorphInstance extends js.Object {
   /**
-    * @function
-    * @name pc.MorphInstance#destroy
-    * @description Frees video memory allocated by this object.
+    * Frees video memory allocated by this object.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   /**
-    * @function
-    * @name pc.MorphInstance#getWeight
-    * @description Gets current weight of the specified morph target.
-    * @param {number} index - An index of morph target.
-    * @returns {number} Weight.
+    * Gets current weight of the specified morph target.
+    * @param index - An index of morph target.
+    * @returns Weight.
     */
-  def getWeight(index: Double): Double = js.native
+  def getWeight(index: Double): Double
   /**
-    * @function
-    * @name pc.MorphInstance#setWeight
-    * @description Sets weight of the specified morph target.
-    * @param {number} index - An index of morph target.
-    * @param {number} weight - Weight.
+    * Sets weight of the specified morph target.
+    * @param index - An index of morph target.
+    * @param weight - Weight.
     */
-  def setWeight(index: Double, weight: Double): Unit = js.native
+  def setWeight(index: Double, weight: Double): Unit
   /**
-    * @function
-    * @name pc.MorphInstance#update
-    * @param {pc.Mesh} mesh - Base mesh for the morph.
-    * @description Performs morphing. Called automatically by renderer.
+    * Performs morphing. Called automatically by renderer.
+    * @param mesh - Base mesh for the morph.
     */
-  def update(mesh: Mesh): Unit = js.native
+  def update(mesh: Mesh): Unit
   /**
-    * @function
-    * @name pc.MorphInstance#updateBounds
-    * @param {pc.Mesh} mesh - Base mesh for the morph.
-    * @description Calculates AABB for this morph instance. Called automatically by renderer.
+    * Calculates AABB for this morph instance. Called automatically by renderer.
+    * @param mesh - Base mesh for the morph.
     */
-  def updateBounds(mesh: Mesh): Unit = js.native
+  def updateBounds(mesh: Mesh): Unit
+}
+
+object MorphInstance {
+  @scala.inline
+  def apply(
+    destroy: () => Unit,
+    getWeight: Double => Double,
+    setWeight: (Double, Double) => Unit,
+    update: Mesh => Unit,
+    updateBounds: Mesh => Unit
+  ): MorphInstance = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getWeight = js.Any.fromFunction1(getWeight), setWeight = js.Any.fromFunction2(setWeight), update = js.Any.fromFunction1(update), updateBounds = js.Any.fromFunction1(updateBounds))
+    __obj.asInstanceOf[MorphInstance]
+  }
 }
 

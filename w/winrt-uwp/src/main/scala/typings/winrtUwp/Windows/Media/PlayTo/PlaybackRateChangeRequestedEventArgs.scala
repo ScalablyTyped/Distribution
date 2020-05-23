@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about the PlaybackRateChangeRequested event. */
-@JSGlobal("Windows.Media.PlayTo.PlaybackRateChangeRequestedEventArgs")
-@js.native
-abstract class PlaybackRateChangeRequestedEventArgs () extends js.Object {
+trait PlaybackRateChangeRequestedEventArgs extends js.Object {
   /** Gets the new playback rate. */
-  var rate: Double = js.native
+  var rate: Double
+}
+
+object PlaybackRateChangeRequestedEventArgs {
+  @scala.inline
+  def apply(rate: Double): PlaybackRateChangeRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlaybackRateChangeRequestedEventArgs]
+  }
 }
 

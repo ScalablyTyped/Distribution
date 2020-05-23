@@ -22,14 +22,14 @@ object Sticker {
     height: Double,
     width: Double,
     emoji: String = null,
-    file_size: Int | Double = null,
+    file_size: js.UndefOr[Double] = js.undefined,
     mask_position: MaskPosition = null,
     set_name: String = null,
     thumb: PhotoSize = null
   ): Sticker = {
     val __obj = js.Dynamic.literal(file_id = file_id.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (emoji != null) __obj.updateDynamic("emoji")(emoji.asInstanceOf[js.Any])
-    if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(file_size)) __obj.updateDynamic("file_size")(file_size.get.asInstanceOf[js.Any])
     if (mask_position != null) __obj.updateDynamic("mask_position")(mask_position.asInstanceOf[js.Any])
     if (set_name != null) __obj.updateDynamic("set_name")(set_name.asInstanceOf[js.Any])
     if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])

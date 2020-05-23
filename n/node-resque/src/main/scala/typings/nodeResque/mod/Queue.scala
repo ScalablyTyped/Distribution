@@ -2,7 +2,7 @@ package typings.nodeResque.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.nodeResque.AnonRTimestamp
+import typings.nodeResque.anon.RTimestamp
 import typings.nodeResque.nodeResqueStrings.error
 import typings.std.Error
 import scala.scalajs.js
@@ -26,7 +26,7 @@ class Queue protected () extends EventEmitter {
   def delDelayed(queue: String, jobName: String, args: js.Array[_], count: Double): js.Promise[js.Array[Double]] = js.native
   def delLock(lockName: String): js.Promise[Double] = js.native
   def delQueue(queue: String): js.Promise[Unit] = js.native
-  def delayedAt(timestamp: Double): js.Promise[AnonRTimestamp] = js.native
+  def delayedAt(timestamp: Double): js.Promise[RTimestamp] = js.native
   def encode(queue: String, jobName: String): String = js.native
   def encode(queue: String, jobName: String, args: js.Array[_]): String = js.native
   def end(): js.Promise[Unit] = js.native

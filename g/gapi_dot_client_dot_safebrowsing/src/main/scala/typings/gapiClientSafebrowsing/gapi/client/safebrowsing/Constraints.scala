@@ -30,14 +30,14 @@ trait Constraints extends js.Object {
 object Constraints {
   @scala.inline
   def apply(
-    maxDatabaseEntries: Int | Double = null,
-    maxUpdateEntries: Int | Double = null,
+    maxDatabaseEntries: js.UndefOr[Double] = js.undefined,
+    maxUpdateEntries: js.UndefOr[Double] = js.undefined,
     region: String = null,
     supportedCompressions: js.Array[String] = null
   ): Constraints = {
     val __obj = js.Dynamic.literal()
-    if (maxDatabaseEntries != null) __obj.updateDynamic("maxDatabaseEntries")(maxDatabaseEntries.asInstanceOf[js.Any])
-    if (maxUpdateEntries != null) __obj.updateDynamic("maxUpdateEntries")(maxUpdateEntries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDatabaseEntries)) __obj.updateDynamic("maxDatabaseEntries")(maxDatabaseEntries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxUpdateEntries)) __obj.updateDynamic("maxUpdateEntries")(maxUpdateEntries.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (supportedCompressions != null) __obj.updateDynamic("supportedCompressions")(supportedCompressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constraints]

@@ -33,19 +33,19 @@ object ColumnDropEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     draggedColumn: js.Any = null,
-    draggedColumnIndex: Int | Double = null,
+    draggedColumnIndex: js.UndefOr[Double] = js.undefined,
     model: js.Any = null,
     targetColumn: js.Any = null,
-    targetColumnIndex: Int | Double = null,
+    targetColumnIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): ColumnDropEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (draggedColumn != null) __obj.updateDynamic("draggedColumn")(draggedColumn.asInstanceOf[js.Any])
-    if (draggedColumnIndex != null) __obj.updateDynamic("draggedColumnIndex")(draggedColumnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggedColumnIndex)) __obj.updateDynamic("draggedColumnIndex")(draggedColumnIndex.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (targetColumn != null) __obj.updateDynamic("targetColumn")(targetColumn.asInstanceOf[js.Any])
-    if (targetColumnIndex != null) __obj.updateDynamic("targetColumnIndex")(targetColumnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetColumnIndex)) __obj.updateDynamic("targetColumnIndex")(targetColumnIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDropEventArgs]
   }

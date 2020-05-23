@@ -1,17 +1,12 @@
 package typings.kendoUi.kendo.dataviz.geometry
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.geometry.Arc")
 @js.native
-class Arc protected () extends Observable_ {
-  def this(center: js.Any) = this()
-  def this(center: typings.kendoUi.kendo.geometry.Point) = this()
-  def this(center: js.Any, options: ArcOptions) = this()
-  def this(center: typings.kendoUi.kendo.geometry.Point, options: ArcOptions) = this()
+trait Arc extends Observable {
   var anticlockwise: Boolean = js.native
   var center: typings.kendoUi.kendo.geometry.Point = js.native
   var endAngle: Double = js.native

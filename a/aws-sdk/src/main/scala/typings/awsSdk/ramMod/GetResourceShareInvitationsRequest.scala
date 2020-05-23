@@ -27,13 +27,13 @@ trait GetResourceShareInvitationsRequest extends js.Object {
 object GetResourceShareInvitationsRequest {
   @scala.inline
   def apply(
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: String = null,
     resourceShareArns: ResourceShareArnList = null,
     resourceShareInvitationArns: ResourceShareInvitationArnList = null
   ): GetResourceShareInvitationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (resourceShareArns != null) __obj.updateDynamic("resourceShareArns")(resourceShareArns.asInstanceOf[js.Any])
     if (resourceShareInvitationArns != null) __obj.updateDynamic("resourceShareInvitationArns")(resourceShareInvitationArns.asInstanceOf[js.Any])

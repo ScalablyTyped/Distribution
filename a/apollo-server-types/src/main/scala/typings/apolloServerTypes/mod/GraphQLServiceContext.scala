@@ -1,16 +1,16 @@
 package typings.apolloServerTypes.mod
 
-import typings.apolloServerTypes.AnonApiKeyHash
-import typings.apolloServerTypes.AnonCache
+import typings.apolloServerTypes.anon.ApiKeyHash
+import typings.apolloServerTypes.anon.Cache
 import typings.graphql.mod.GraphQLSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLServiceContext extends js.Object {
-  var engine: AnonApiKeyHash
+  var engine: ApiKeyHash
   var logger: Logger
-  var persistedQueries: js.UndefOr[AnonCache] = js.undefined
+  var persistedQueries: js.UndefOr[Cache] = js.undefined
   var schema: GraphQLSchema
   var schemaHash: String
 }
@@ -18,11 +18,11 @@ trait GraphQLServiceContext extends js.Object {
 object GraphQLServiceContext {
   @scala.inline
   def apply(
-    engine: AnonApiKeyHash,
+    engine: ApiKeyHash,
     logger: Logger,
     schema: GraphQLSchema,
     schemaHash: String,
-    persistedQueries: AnonCache = null
+    persistedQueries: Cache = null
   ): GraphQLServiceContext = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], schemaHash = schemaHash.asInstanceOf[js.Any])
     if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries.asInstanceOf[js.Any])

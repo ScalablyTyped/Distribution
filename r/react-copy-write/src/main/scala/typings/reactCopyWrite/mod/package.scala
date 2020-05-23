@@ -15,7 +15,7 @@ package object mod {
   type Provider[T] = typings.react.mod.Component[typings.reactCopyWrite.mod.ProviderProps[T], js.Object, js.Any]
   type RenderFn[T] = js.Function1[
     /* repeated */ typings.std.ReturnType[typings.reactCopyWrite.mod.SelectorFn[T]], 
-    typings.react.mod._Global_.JSX.Element | js.Array[typings.react.mod._Global_.JSX.Element] | scala.Null
+    typings.react.mod.global.JSX.Element | js.Array[typings.react.mod.global.JSX.Element] | scala.Null
   ]
   type SelectorFn[T] = js.Function1[/* state */ T, typings.reactCopyWrite.mod.AnyDeepMemberOfState[T]]
 }

@@ -5,6 +5,7 @@ import typings.apolloReactCommon.apolloConsumerMod.ApolloConsumerProps
 import typings.apolloReactCommon.apolloContextMod.ApolloContextValue
 import typings.apolloReactCommon.apolloProviderMod.ApolloProviderProps
 import typings.apolloReactCommon.typesMod.QueryResult
+import typings.apolloReactHooks.anon.Error
 import typings.apolloReactHooks.typesMod.LazyQueryHookOptions
 import typings.apolloReactHooks.typesMod.MutationHookOptions
 import typings.apolloReactHooks.typesMod.MutationTuple
@@ -36,7 +37,7 @@ object mod extends js.Object {
   def useMutation[TData, TVariables](mutation: DocumentNode, options: MutationHookOptions[TData, TVariables]): MutationTuple[TData, TVariables] = js.native
   def useQuery[TData, TVariables](query: DocumentNode): QueryResult[TData, TVariables] = js.native
   def useQuery[TData, TVariables](query: DocumentNode, options: QueryHookOptions[TData, TVariables]): QueryResult[TData, TVariables] = js.native
-  def useSubscription[TData, TVariables](subscription: DocumentNode): AnonError[TVariables, TData] = js.native
-  def useSubscription[TData, TVariables](subscription: DocumentNode, options: SubscriptionHookOptions[TData, TVariables]): AnonError[TVariables, TData] = js.native
+  def useSubscription[TData, TVariables](subscription: DocumentNode): Error[TVariables, TData] = js.native
+  def useSubscription[TData, TVariables](subscription: DocumentNode, options: SubscriptionHookOptions[TData, TVariables]): Error[TVariables, TData] = js.native
 }
 

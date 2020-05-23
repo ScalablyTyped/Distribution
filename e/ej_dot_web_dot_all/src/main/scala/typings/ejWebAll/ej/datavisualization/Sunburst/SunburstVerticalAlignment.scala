@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object SunburstVerticalAlignment extends js.Object {
   //string
   @js.native
   sealed trait Top extends SunburstVerticalAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SunburstVerticalAlignment with Double] = js.native
-  /* 1 */ @js.native
-  object Bottom extends TopLevel[Bottom with Double]
-  
-  /* 2 */ @js.native
-  object Middle extends TopLevel[Middle with Double]
-  
-  /* 0 */ @js.native
-  object Top extends TopLevel[Top with Double]
   
 }
 

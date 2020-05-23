@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the search bar loses focus.
-		 */
+  * Fired when the search bar loses focus.
+  */
 trait SearchBarBlurEvent extends SearchBarBaseEvent {
   /**
-  			 * Value of the search bar.
-  			 */
+    * Value of the search bar.
+    */
   var value: String
 }
 

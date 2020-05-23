@@ -72,7 +72,7 @@ object CreateBucketInput {
     Bucket: String,
     $abortSignal: AbortSignal = null,
     $httpOptions: NodeHttpOptions = null,
-    $maxRetries: Int | Double = null,
+    $maxRetries: js.UndefOr[Double] = js.undefined,
     ACL: `private` | `public-read` | `public-read-write` | `authenticated-read` | String = null,
     CreateBucketConfiguration: CreateBucketConfiguration = null,
     GrantFullControl: String = null,
@@ -84,7 +84,7 @@ object CreateBucketInput {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
     if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
     if (ACL != null) __obj.updateDynamic("ACL")(ACL.asInstanceOf[js.Any])
     if (CreateBucketConfiguration != null) __obj.updateDynamic("CreateBucketConfiguration")(CreateBucketConfiguration.asInstanceOf[js.Any])
     if (GrantFullControl != null) __obj.updateDynamic("GrantFullControl")(GrantFullControl.asInstanceOf[js.Any])

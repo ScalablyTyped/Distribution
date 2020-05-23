@@ -1,14 +1,14 @@
 package typings.oracleOraclejet.ojtableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon19
-import typings.oracleOraclejet.AnonColumnKey
-import typings.oracleOraclejet.AnonDropReorder
-import typings.oracleOraclejet.AnonField
-import typings.oracleOraclejet.AnonFooterClassName
-import typings.oracleOraclejet.AnonLabelAccSelectionAffordanceBottom
-import typings.oracleOraclejet.AnonMaxCount
-import typings.oracleOraclejet.AnonRowHeader
+import typings.oracleOraclejet.anon.ColumnKey
+import typings.oracleOraclejet.anon.DropReorder
+import typings.oracleOraclejet.anon.Field
+import typings.oracleOraclejet.anon.FooterClassName
+import typings.oracleOraclejet.anon.LabelAccSelectionAffordanceBottom
+import typings.oracleOraclejet.anon.MaxCount
+import typings.oracleOraclejet.anon.RowHeader
+import typings.oracleOraclejet.anon.`19`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojtableMod.ojTable.ColumnSelectionEnd
 import typings.oracleOraclejet.ojtableMod.ojTable.ColumnSelectionStart
@@ -32,14 +32,14 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojtable.ojTableSettableProperties<K, D>> */
 trait ojTableSettablePropertiesLenient[K, D]
   extends /* key */ StringDictionary[js.Any] {
-  var accessibility: js.UndefOr[AnonRowHeader] = js.undefined
+  var accessibility: js.UndefOr[RowHeader] = js.undefined
   var as: js.UndefOr[String] = js.undefined
-  var columns: js.UndefOr[js.Array[AnonField[K, D]]] = js.undefined
-  var columnsDefault: js.UndefOr[AnonFooterClassName[K, D]] = js.undefined
+  var columns: js.UndefOr[js.Array[Field[K, D]]] = js.undefined
+  var columnsDefault: js.UndefOr[FooterClassName[K, D]] = js.undefined
   var currentRow: js.UndefOr[CurrentRow[K]] = js.undefined
   var data: js.UndefOr[DataProvider[K, D]] = js.undefined
   var display: js.UndefOr[list | grid] = js.undefined
-  var dnd: js.UndefOr[AnonDropReorder[K, D]] = js.undefined
+  var dnd: js.UndefOr[DropReorder[K, D]] = js.undefined
   var editMode: js.UndefOr[none | rowEdit] = js.undefined
   var firstSelectedRow: js.UndefOr[js.Object] = js.undefined
   var horizontalGridVisible: js.UndefOr[auto | enabled | disabled] = js.undefined
@@ -47,44 +47,44 @@ trait ojTableSettablePropertiesLenient[K, D]
     js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]
   ] = js.undefined
   var scrollPolicy: js.UndefOr[auto | loadMoreOnScroll] = js.undefined
-  var scrollPolicyOptions: js.UndefOr[AnonMaxCount] = js.undefined
-  var scrollPosition: js.UndefOr[AnonColumnKey] = js.undefined
+  var scrollPolicyOptions: js.UndefOr[MaxCount] = js.undefined
+  var scrollPosition: js.UndefOr[ColumnKey] = js.undefined
   var selection: js.UndefOr[
     js.Array[
       (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
     ]
   ] = js.undefined
-  var selectionMode: js.UndefOr[Anon19] = js.undefined
+  var selectionMode: js.UndefOr[`19`] = js.undefined
   var selectionRequired: js.UndefOr[Boolean] = js.undefined
-  var translations: js.UndefOr[AnonLabelAccSelectionAffordanceBottom] = js.undefined
+  var translations: js.UndefOr[LabelAccSelectionAffordanceBottom] = js.undefined
   var verticalGridVisible: js.UndefOr[auto | enabled | disabled] = js.undefined
 }
 
 object ojTableSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    accessibility: AnonRowHeader = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    accessibility: RowHeader = null,
     as: String = null,
-    columns: js.Array[AnonField[K, D]] = null,
-    columnsDefault: AnonFooterClassName[K, D] = null,
+    columns: js.Array[Field[K, D]] = null,
+    columnsDefault: FooterClassName[K, D] = null,
     currentRow: CurrentRow[K] = null,
     data: DataProvider[K, D] = null,
     display: list | grid = null,
-    dnd: AnonDropReorder[K, D] = null,
+    dnd: DropReorder[K, D] = null,
     editMode: none | rowEdit = null,
     firstSelectedRow: js.Object = null,
     horizontalGridVisible: auto | enabled | disabled = null,
     rowRenderer: /* context */ RowRendererContext[K, D] => String | HTMLElement | Unit = null,
     scrollPolicy: auto | loadMoreOnScroll = null,
-    scrollPolicyOptions: AnonMaxCount = null,
-    scrollPosition: AnonColumnKey = null,
+    scrollPolicyOptions: MaxCount = null,
+    scrollPosition: ColumnKey = null,
     selection: js.Array[
       (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
     ] = null,
-    selectionMode: Anon19 = null,
+    selectionMode: `19` = null,
     selectionRequired: js.UndefOr[Boolean] = js.undefined,
-    translations: AnonLabelAccSelectionAffordanceBottom = null,
+    translations: LabelAccSelectionAffordanceBottom = null,
     verticalGridVisible: auto | enabled | disabled = null
   ): ojTableSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
@@ -106,7 +106,7 @@ object ojTableSettablePropertiesLenient {
     if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectionRequired)) __obj.updateDynamic("selectionRequired")(selectionRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionRequired)) __obj.updateDynamic("selectionRequired")(selectionRequired.get.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     if (verticalGridVisible != null) __obj.updateDynamic("verticalGridVisible")(verticalGridVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTableSettablePropertiesLenient[K, D]]

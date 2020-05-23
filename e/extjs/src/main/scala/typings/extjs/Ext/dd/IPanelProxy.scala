@@ -12,16 +12,16 @@ import scala.scalajs.js.annotation._
 
 trait IPanelProxy extends IBase {
   /** [Method] Gets the proxy s element
-  		* @returns Ext.Element The proxy's element
-  		*/
+    * @returns Ext.Element The proxy's element
+    */
   var getEl: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Gets the proxy s ghost Panel
-  		* @returns Ext.panel.Panel The proxy's ghost Panel
-  		*/
+    * @returns Ext.panel.Panel The proxy's ghost Panel
+    */
   var getGhost: js.UndefOr[js.Function0[IPanel]] = js.undefined
   /** [Method] Gets the proxy element
-  		* @returns Ext.Element The proxy's element
-  		*/
+    * @returns Ext.Element The proxy's element
+    */
   var getProxy: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Hides the proxy */
   var hide: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -30,9 +30,9 @@ trait IPanelProxy extends IBase {
   /** [Config Option] (Boolean) */
   var moveOnDrag: js.UndefOr[Boolean] = js.undefined
   /** [Method] Moves the proxy to a different position in the DOM
-  		* @param parentNode HTMLElement The proxy's parent DOM node
-  		* @param before HTMLElement The sibling node before which the proxy should be inserted. Defaults to the parent's last child if not specified.
-  		*/
+    * @param parentNode HTMLElement The proxy's parent DOM node
+    * @param before HTMLElement The sibling node before which the proxy should be inserted. Defaults to the parent's last child if not specified.
+    */
   var moveProxy: js.UndefOr[
     js.Function2[/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement], Unit]
   ] = js.undefined
@@ -86,15 +86,15 @@ object IPanelProxy {
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(insertProxy)) __obj.updateDynamic("insertProxy")(insertProxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertProxy)) __obj.updateDynamic("insertProxy")(insertProxy.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveOnDrag)) __obj.updateDynamic("moveOnDrag")(moveOnDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveOnDrag)) __obj.updateDynamic("moveOnDrag")(moveOnDrag.get.asInstanceOf[js.Any])
     if (moveProxy != null) __obj.updateDynamic("moveProxy")(js.Any.fromFunction2(moveProxy))
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanelProxy]

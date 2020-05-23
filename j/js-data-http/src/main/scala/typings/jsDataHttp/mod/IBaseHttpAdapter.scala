@@ -27,13 +27,13 @@ object IBaseHttpAdapter {
   ): IBaseHttpAdapter = {
     val __obj = js.Dynamic.literal()
     if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceTrailingSlash)) __obj.updateDynamic("forceTrailingSlash")(forceTrailingSlash.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceTrailingSlash)) __obj.updateDynamic("forceTrailingSlash")(forceTrailingSlash.get.asInstanceOf[js.Any])
     if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
     if (httpConfig != null) __obj.updateDynamic("httpConfig")(httpConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFetch)) __obj.updateDynamic("useFetch")(useFetch.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFetch)) __obj.updateDynamic("useFetch")(useFetch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseHttpAdapter]
   }
 }

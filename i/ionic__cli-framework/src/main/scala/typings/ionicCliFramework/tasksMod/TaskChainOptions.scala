@@ -1,6 +1,6 @@
 package typings.ionicCliFramework.tasksMod
 
-import typings.ionicCliFramework.PartialTaskOptions
+import typings.ionicCliFramework.anon.PartialTaskOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.deezerSdk.DeezerSdk
 
-import typings.deezerSdk.AnonAccesstoken
+import typings.deezerSdk.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait SdkOptions extends js.Object {
     * property current_track, but the author of this comment was not able no retrieve it.
     */
   val player: PlayerState
-  val token: AnonAccesstoken
+  val token: Accesstoken
 }
 
 object SdkOptions {
   @scala.inline
-  def apply(player: PlayerState, token: AnonAccesstoken): SdkOptions = {
+  def apply(player: PlayerState, token: Accesstoken): SdkOptions = {
     val __obj = js.Dynamic.literal(player = player.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[SdkOptions]
   }

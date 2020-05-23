@@ -1,6 +1,6 @@
 package typings.hibp.mod
 
-import typings.hibp.AnonBaseUrl
+import typings.hibp.anon.BaseUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object dataClasses extends js.Object {
   def apply(): js.Promise[js.Array[String] | Null] = js.native
-  def apply(options: AnonBaseUrl): js.Promise[js.Array[String] | Null] = js.native
+  def apply(options: BaseUrl): js.Promise[js.Array[String] | Null] = js.native
 }
 

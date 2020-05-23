@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-spinners
 
-Typings are for version 0.8.1
+Typings are for version 0.8.3
 
 ## Library description:
 A collection of react loading spinners

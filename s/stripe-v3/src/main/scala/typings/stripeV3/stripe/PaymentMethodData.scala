@@ -1,7 +1,7 @@
 package typings.stripeV3.stripe
 
-import typings.stripeV3.AnonBank
-import typings.stripeV3.AnonIban
+import typings.stripeV3.anon.Bank
+import typings.stripeV3.anon.Iban
 import typings.stripeV3.stripe.elements.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 trait PaymentMethodData extends js.Object {
   var billing_details: js.UndefOr[BillingDetails] = js.undefined
   var card: js.UndefOr[Element] = js.undefined
-  var ideal: js.UndefOr[Element | AnonBank] = js.undefined
-  var sepa_debit: js.UndefOr[Element | AnonIban] = js.undefined
+  var ideal: js.UndefOr[Element | Bank] = js.undefined
+  var sepa_debit: js.UndefOr[Element | Iban] = js.undefined
   /**
     * Billing information associated with the PaymentMethod
     * that may be used or required by particular types of
@@ -26,8 +26,8 @@ object PaymentMethodData {
     `type`: String,
     billing_details: BillingDetails = null,
     card: Element = null,
-    ideal: Element | AnonBank = null,
-    sepa_debit: Element | AnonIban = null
+    ideal: Element | Bank = null,
+    sepa_debit: Element | Iban = null
   ): PaymentMethodData = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

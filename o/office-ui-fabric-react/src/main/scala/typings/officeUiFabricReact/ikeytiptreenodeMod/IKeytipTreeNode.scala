@@ -74,13 +74,13 @@ object IKeytipTreeNode {
     persisted: js.UndefOr[Boolean] = js.undefined
   ): IKeytipTreeNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], keySequences = keySequences.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDynamicChildren)) __obj.updateDynamic("hasDynamicChildren")(hasDynamicChildren.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMenu)) __obj.updateDynamic("hasMenu")(hasMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDynamicChildren)) __obj.updateDynamic("hasDynamicChildren")(hasDynamicChildren.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMenu)) __obj.updateDynamic("hasMenu")(hasMenu.get.asInstanceOf[js.Any])
     if (onExecute != null) __obj.updateDynamic("onExecute")(js.Any.fromFunction2(onExecute))
     if (onReturn != null) __obj.updateDynamic("onReturn")(js.Any.fromFunction2(onReturn))
     if (overflowSetSequence != null) __obj.updateDynamic("overflowSetSequence")(overflowSetSequence.asInstanceOf[js.Any])
-    if (!js.isUndefined(persisted)) __obj.updateDynamic("persisted")(persisted.asInstanceOf[js.Any])
+    if (!js.isUndefined(persisted)) __obj.updateDynamic("persisted")(persisted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeytipTreeNode]
   }
 }

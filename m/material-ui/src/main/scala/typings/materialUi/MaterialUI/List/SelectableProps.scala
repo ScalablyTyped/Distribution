@@ -2,15 +2,13 @@ package typings.materialUi.MaterialUI.List
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectableProps extends js.Object {
-  var onChange: js.UndefOr[
-    js.Function2[/* e */ SyntheticEvent[js.Object, Event_], /* value */ js.Any, Unit]
-  ] = js.undefined
+  var onChange: js.UndefOr[js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* value */ js.Any, Unit]] = js.undefined
   var selectedItemStyle: js.UndefOr[CSSProperties] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
@@ -18,7 +16,7 @@ trait SelectableProps extends js.Object {
 object SelectableProps {
   @scala.inline
   def apply(
-    onChange: (/* e */ SyntheticEvent[js.Object, Event_], /* value */ js.Any) => Unit = null,
+    onChange: (/* e */ SyntheticEvent[js.Object, Event], /* value */ js.Any) => Unit = null,
     selectedItemStyle: CSSProperties = null,
     value: js.Any = null
   ): SelectableProps = {

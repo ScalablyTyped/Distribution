@@ -1,6 +1,5 @@
 package typings.firebaseAdmin.admin.database
 
-import typings.firebaseAdmin.admin.app.App
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Database extends js.Object {
-  var app: App = js.native
+  var app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.app.App */ js.Any = js.native
   /**
     * Gets the currently applied security rules as a string. The return value consists of
     * the rules source including comments.

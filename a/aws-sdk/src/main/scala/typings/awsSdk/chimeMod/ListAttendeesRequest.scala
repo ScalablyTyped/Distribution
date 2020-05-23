@@ -22,9 +22,9 @@ trait ListAttendeesRequest extends js.Object {
 
 object ListAttendeesRequest {
   @scala.inline
-  def apply(MeetingId: GuidString, MaxResults: Int | Double = null, NextToken: String = null): ListAttendeesRequest = {
+  def apply(MeetingId: GuidString, MaxResults: js.UndefOr[ResultMax] = js.undefined, NextToken: String = null): ListAttendeesRequest = {
     val __obj = js.Dynamic.literal(MeetingId = MeetingId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAttendeesRequest]
   }

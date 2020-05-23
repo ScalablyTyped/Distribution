@@ -1,7 +1,8 @@
 package typings.rmcDialog
 
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
+import typings.rmcDialog.anon.AfterClose
 import typings.rmcDialog.idialogproptypesMod.IDialogPropTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +40,7 @@ object dialogMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonAfterClose = js.native
+    var defaultProps: AfterClose = js.native
   }
   
 }

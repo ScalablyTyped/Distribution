@@ -21,10 +21,10 @@ trait ListRequestObject extends ParentRequest {
 
 object ListRequestObject {
   @scala.inline
-  def apply(parent: String, filter: String = null, pageSize: Int | Double = null): ListRequestObject = {
+  def apply(parent: String, filter: String = null, pageSize: js.UndefOr[Double] = js.undefined): ListRequestObject = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRequestObject]
   }
 }

@@ -32,10 +32,10 @@ object FingerprintOption {
     screen_resolution: js.UndefOr[Boolean] = js.undefined
   ): FingerprintOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canvas)) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
+    if (!js.isUndefined(canvas)) __obj.updateDynamic("canvas")(canvas.get.asInstanceOf[js.Any])
     if (hasher != null) __obj.updateDynamic("hasher")(js.Any.fromFunction2(hasher))
-    if (!js.isUndefined(ie_activex)) __obj.updateDynamic("ie_activex")(ie_activex.asInstanceOf[js.Any])
-    if (!js.isUndefined(screen_resolution)) __obj.updateDynamic("screen_resolution")(screen_resolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(ie_activex)) __obj.updateDynamic("ie_activex")(ie_activex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screen_resolution)) __obj.updateDynamic("screen_resolution")(screen_resolution.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FingerprintOption]
   }
 }

@@ -54,15 +54,15 @@ object BuildRequest {
   def apply(
     autoResize: js.UndefOr[Boolean] = js.undefined,
     bitBucketSize: `8` | `16` | `32` | `64` | packed | sparse_array = null,
-    highestTrackableValue: Int | Double = null,
-    lowestDiscernibleValue: Int | Double = null,
+    highestTrackableValue: js.UndefOr[Double] = js.undefined,
+    lowestDiscernibleValue: js.UndefOr[Double] = js.undefined,
     numberOfSignificantValueDigits: `1` | `2` | `3` | `4` | `5` = null
   ): BuildRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.get.asInstanceOf[js.Any])
     if (bitBucketSize != null) __obj.updateDynamic("bitBucketSize")(bitBucketSize.asInstanceOf[js.Any])
-    if (highestTrackableValue != null) __obj.updateDynamic("highestTrackableValue")(highestTrackableValue.asInstanceOf[js.Any])
-    if (lowestDiscernibleValue != null) __obj.updateDynamic("lowestDiscernibleValue")(lowestDiscernibleValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(highestTrackableValue)) __obj.updateDynamic("highestTrackableValue")(highestTrackableValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowestDiscernibleValue)) __obj.updateDynamic("lowestDiscernibleValue")(lowestDiscernibleValue.get.asInstanceOf[js.Any])
     if (numberOfSignificantValueDigits != null) __obj.updateDynamic("numberOfSignificantValueDigits")(numberOfSignificantValueDigits.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildRequest]
   }

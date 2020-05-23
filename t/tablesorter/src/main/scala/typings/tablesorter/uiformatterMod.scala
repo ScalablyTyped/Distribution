@@ -1,7 +1,7 @@
 package typings.tablesorter
 
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.uidatecompareoptionsMod.UIDateCompareOptions
 import typings.tablesorter.uidaterangeoptionsMod.UIDateRangeOptions
 import typings.tablesorter.uirangeoptionsMod.UIRangeOptions

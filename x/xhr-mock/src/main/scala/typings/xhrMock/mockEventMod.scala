@@ -1,9 +1,9 @@
 package typings.xhrMock
 
 import typings.std.Element
+import typings.std.Event
 import typings.std.EventInit
 import typings.std.EventTarget
-import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mockEventMod extends js.Object {
   @js.native
-  trait MockEvent extends Event_ {
+  trait MockEvent extends Event {
     @JSName("currentTarget")
     val currentTarget_MockEvent: EventTarget = js.native
     val scoped: Boolean = js.native

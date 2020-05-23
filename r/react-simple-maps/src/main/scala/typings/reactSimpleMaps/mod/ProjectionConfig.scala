@@ -17,13 +17,13 @@ object ProjectionConfig {
     center: js.Tuple2[Double, Double] = null,
     parallels: js.Tuple2[Double, Double] = null,
     rotate: js.Tuple3[Double, Double, Double] = null,
-    scale: Int | Double = null
+    scale: js.UndefOr[Double] = js.undefined
   ): ProjectionConfig = {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (parallels != null) __obj.updateDynamic("parallels")(parallels.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectionConfig]
   }
 }

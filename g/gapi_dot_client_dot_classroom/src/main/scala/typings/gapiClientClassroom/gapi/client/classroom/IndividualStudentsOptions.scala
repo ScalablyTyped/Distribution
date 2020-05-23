@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line:interface-name
 trait IndividualStudentsOptions extends js.Object {
   /**
     * Identifiers for the students that have access to the

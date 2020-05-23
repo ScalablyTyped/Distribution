@@ -16,8 +16,8 @@ object CreatePagesOptions {
     contentMD5: String = null,
     leaseId: String = null,
     locationMode: String = null,
-    maximumExecutionTimeInMs: Int | Double = null,
-    timeoutIntervalInMs: Int | Double = null,
+    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
+    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined,
     useTransactionalMD5: js.UndefOr[Boolean] = js.undefined
   ): CreatePagesOptions = {
     val __obj = js.Dynamic.literal()
@@ -25,9 +25,9 @@ object CreatePagesOptions {
     if (contentMD5 != null) __obj.updateDynamic("contentMD5")(contentMD5.asInstanceOf[js.Any])
     if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
     if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
-    if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTransactionalMD5)) __obj.updateDynamic("useTransactionalMD5")(useTransactionalMD5.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTransactionalMD5)) __obj.updateDynamic("useTransactionalMD5")(useTransactionalMD5.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePagesOptions]
   }
 }

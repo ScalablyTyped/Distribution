@@ -23,26 +23,26 @@ object MoreLikeThisOptions {
   def apply(
     on: Boolean,
     boost: js.UndefOr[Boolean] = js.undefined,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     fl: String | js.Array[String] = null,
-    maxntp: Int | Double = null,
-    maxqt: Int | Double = null,
-    maxwl: Int | Double = null,
-    mindf: Int | Double = null,
-    mintf: Int | Double = null,
-    minwl: Int | Double = null,
+    maxntp: js.UndefOr[Double] = js.undefined,
+    maxqt: js.UndefOr[Double] = js.undefined,
+    maxwl: js.UndefOr[Double] = js.undefined,
+    mindf: js.UndefOr[Double] = js.undefined,
+    mintf: js.UndefOr[Double] = js.undefined,
+    minwl: js.UndefOr[Double] = js.undefined,
     qf: String | js.Object = null
   ): MoreLikeThisOptions = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
-    if (!js.isUndefined(boost)) __obj.updateDynamic("boost")(boost.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(boost)) __obj.updateDynamic("boost")(boost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (fl != null) __obj.updateDynamic("fl")(fl.asInstanceOf[js.Any])
-    if (maxntp != null) __obj.updateDynamic("maxntp")(maxntp.asInstanceOf[js.Any])
-    if (maxqt != null) __obj.updateDynamic("maxqt")(maxqt.asInstanceOf[js.Any])
-    if (maxwl != null) __obj.updateDynamic("maxwl")(maxwl.asInstanceOf[js.Any])
-    if (mindf != null) __obj.updateDynamic("mindf")(mindf.asInstanceOf[js.Any])
-    if (mintf != null) __obj.updateDynamic("mintf")(mintf.asInstanceOf[js.Any])
-    if (minwl != null) __obj.updateDynamic("minwl")(minwl.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxntp)) __obj.updateDynamic("maxntp")(maxntp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxqt)) __obj.updateDynamic("maxqt")(maxqt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxwl)) __obj.updateDynamic("maxwl")(maxwl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mindf)) __obj.updateDynamic("mindf")(mindf.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mintf)) __obj.updateDynamic("mintf")(mintf.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minwl)) __obj.updateDynamic("minwl")(minwl.get.asInstanceOf[js.Any])
     if (qf != null) __obj.updateDynamic("qf")(qf.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoreLikeThisOptions]
   }

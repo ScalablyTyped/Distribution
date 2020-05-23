@@ -1,6 +1,6 @@
 package typings.recharts.mod
 
-import typings.recharts.AnonErrorVal
+import typings.recharts.anon.ErrorVal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,12 +24,12 @@ object ErrorBarProps {
   def apply(
     dataKey: DataKey,
     data: js.Array[_] = null,
-    dataPointFormatter: (/* entry */ js.Any, /* dataKey */ DataKey) => AnonErrorVal = null,
+    dataPointFormatter: (/* entry */ js.Any, /* dataKey */ DataKey) => ErrorVal = null,
     layout: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     stroke: String = null,
-    strokeWidth: Int | Double = null,
-    width: Int | Double = null,
+    strokeWidth: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
     xAxis: js.Object = null,
     yAxis: js.Object = null
   ): ErrorBarProps = {
@@ -37,10 +37,10 @@ object ErrorBarProps {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataPointFormatter != null) __obj.updateDynamic("dataPointFormatter")(js.Any.fromFunction2(dataPointFormatter))
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorBarProps]

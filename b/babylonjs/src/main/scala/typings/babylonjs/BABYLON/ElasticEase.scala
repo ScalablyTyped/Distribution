@@ -4,26 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ElasticEase")
-@js.native
-/**
-  * Instantiates an elastic easing function
-  * @see https://easings.net/#easeInElastic
-  * @param oscillations Defines the number of oscillations
-  * @param springiness Defines the amplitude of the oscillations
-  */
-class ElasticEase () extends EasingFunction {
-  def this(/** Defines the number of oscillations*/
-  oscillations: Double) = this()
-  def this(
-    /** Defines the number of oscillations*/
-  oscillations: Double,
-    /** Defines the amplitude of the oscillations*/
-  springiness: Double
-  ) = this()
+trait ElasticEase extends EasingFunction {
   /** Defines the number of oscillations*/
-  var oscillations: Double = js.native
+  var oscillations: Double
   /** Defines the amplitude of the oscillations*/
-  var springiness: Double = js.native
+  var springiness: Double
+}
+
+object ElasticEase {
+  @scala.inline
+  def apply(
+    _easingMode: js.Any,
+    ease: Double => Double,
+    easeInCore: Double => Double,
+    getEasingMode: () => Double,
+    oscillations: Double,
+    setEasingMode: Double => Unit,
+    springiness: Double
+  ): ElasticEase = {
+    val __obj = js.Dynamic.literal(_easingMode = _easingMode.asInstanceOf[js.Any], ease = js.Any.fromFunction1(ease), easeInCore = js.Any.fromFunction1(easeInCore), getEasingMode = js.Any.fromFunction0(getEasingMode), oscillations = oscillations.asInstanceOf[js.Any], setEasingMode = js.Any.fromFunction1(setEasingMode), springiness = springiness.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ElasticEase]
+  }
 }
 

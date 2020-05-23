@@ -1,14 +1,14 @@
 package typings.oracleOraclejet.ojdatagridMod
 
-import typings.oracleOraclejet.AnonAccessibleActionableMode
-import typings.oracleOraclejet.AnonCell
-import typings.oracleOraclejet.AnonClassName
-import typings.oracleOraclejet.AnonColumn
-import typings.oracleOraclejet.AnonColumnEnd
-import typings.oracleOraclejet.AnonColumnIndex
-import typings.oracleOraclejet.AnonHorizontal
-import typings.oracleOraclejet.AnonMaxColumnCount
-import typings.oracleOraclejet.AnonReorder
+import typings.oracleOraclejet.anon.AccessibleActionableMode
+import typings.oracleOraclejet.anon.Cell
+import typings.oracleOraclejet.anon.ClassName
+import typings.oracleOraclejet.anon.Column
+import typings.oracleOraclejet.anon.ColumnEnd
+import typings.oracleOraclejet.anon.ColumnIndex
+import typings.oracleOraclejet.anon.Horizontal
+import typings.oracleOraclejet.anon.MaxColumnCount
+import typings.oracleOraclejet.anon.Reorder
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
 import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell
 import typings.oracleOraclejet.ojdatagridMod.ojDataGrid.Selection
@@ -24,44 +24,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ojDataGridSettableProperties[K, D] extends baseComponentSettableProperties {
-  var bandingInterval: AnonColumn
-  var cell: AnonClassName[K, D]
+  var bandingInterval: Column
+  var cell: ClassName[K, D]
   var currentCell: CurrentCell[K] | Null
   var data: (DataProvider[K, D]) | Null
-  var dnd: AnonReorder
+  var dnd: Reorder
   var editMode: none | cellNavigation | cellEdit
-  var gridlines: AnonHorizontal
-  var header: AnonColumnEnd[K, D]
+  var gridlines: Horizontal
+  var header: ColumnEnd[K, D]
   var scrollPolicy: auto | loadMoreOnScroll | scroll
-  var scrollPolicyOptions: AnonMaxColumnCount
-  var scrollPosition: AnonColumnIndex[K]
+  var scrollPolicyOptions: MaxColumnCount
+  var scrollPosition: ColumnIndex[K]
   var selection: js.Array[Selection[K]]
-  var selectionMode: AnonCell
+  var selectionMode: Cell
   @JSName("translations")
-  var translations_ojDataGridSettableProperties: AnonAccessibleActionableMode
+  var translations_ojDataGridSettableProperties: AccessibleActionableMode
 }
 
 object ojDataGridSettableProperties {
   @scala.inline
   def apply[K, D](
-    bandingInterval: AnonColumn,
-    cell: AnonClassName[K, D],
-    dnd: AnonReorder,
+    bandingInterval: Column,
+    cell: ClassName[K, D],
+    dnd: Reorder,
     editMode: none | cellNavigation | cellEdit,
-    gridlines: AnonHorizontal,
-    header: AnonColumnEnd[K, D],
+    gridlines: Horizontal,
+    header: ColumnEnd[K, D],
     scrollPolicy: auto | loadMoreOnScroll | scroll,
-    scrollPolicyOptions: AnonMaxColumnCount,
-    scrollPosition: AnonColumnIndex[K],
+    scrollPolicyOptions: MaxColumnCount,
+    scrollPosition: ColumnIndex[K],
     selection: js.Array[Selection[K]],
-    selectionMode: AnonCell,
-    translations: AnonAccessibleActionableMode,
+    selectionMode: Cell,
+    translations: AccessibleActionableMode,
     currentCell: CurrentCell[K] = null,
     data: DataProvider[K, D] = null
   ): ojDataGridSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(bandingInterval = bandingInterval.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], dnd = dnd.asInstanceOf[js.Any], editMode = editMode.asInstanceOf[js.Any], gridlines = gridlines.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions.asInstanceOf[js.Any], scrollPosition = scrollPosition.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-    if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bandingInterval = bandingInterval.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], dnd = dnd.asInstanceOf[js.Any], editMode = editMode.asInstanceOf[js.Any], gridlines = gridlines.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions.asInstanceOf[js.Any], scrollPosition = scrollPosition.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], currentCell = currentCell.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojDataGridSettableProperties[K, D]]
   }
 }

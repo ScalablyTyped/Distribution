@@ -17,11 +17,15 @@ trait IContext extends js.Object {
 
 object IContext {
   @scala.inline
-  def apply(lifespanCount: Int | Double = null, name: String = null, parameters: IStruct = null): IContext = {
+  def apply(
+    lifespanCount: js.UndefOr[Null | Double] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    parameters: js.UndefOr[Null | IStruct] = js.undefined
+  ): IContext = {
     val __obj = js.Dynamic.literal()
-    if (lifespanCount != null) __obj.updateDynamic("lifespanCount")(lifespanCount.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifespanCount)) __obj.updateDynamic("lifespanCount")(lifespanCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(parameters)) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContext]
   }
 }

@@ -18,14 +18,14 @@ object ProductAction {
   def apply(
     action: ProductActionEnum,
     checkoutOption: String = null,
-    checkoutStep: Int | Double = null,
+    checkoutStep: js.UndefOr[Double] = js.undefined,
     productActionList: String = null,
     productListSource: String = null,
     transaction: Transaction = null
   ): ProductAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     if (checkoutOption != null) __obj.updateDynamic("checkoutOption")(checkoutOption.asInstanceOf[js.Any])
-    if (checkoutStep != null) __obj.updateDynamic("checkoutStep")(checkoutStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkoutStep)) __obj.updateDynamic("checkoutStep")(checkoutStep.get.asInstanceOf[js.Any])
     if (productActionList != null) __obj.updateDynamic("productActionList")(productActionList.asInstanceOf[js.Any])
     if (productListSource != null) __obj.updateDynamic("productListSource")(productListSource.asInstanceOf[js.Any])
     if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])

@@ -15,7 +15,7 @@ object NavbarDropdownModifierProps {
   def apply(align: right = null, boxed: js.UndefOr[Boolean] = js.undefined): NavbarDropdownModifierProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(boxed)) __obj.updateDynamic("boxed")(boxed.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxed)) __obj.updateDynamic("boxed")(boxed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavbarDropdownModifierProps]
   }
 }

@@ -7,12 +7,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value received when registering to receive notifications or indications from a Bluetooth LE device. */
-@JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs")
-@js.native
-abstract class GattValueChangedEventArgs () extends js.Object {
+trait GattValueChangedEventArgs extends js.Object {
   /** Gets the new Characteristic Value. */
-  var characteristicValue: IBuffer = js.native
+  var characteristicValue: IBuffer
   /** Gets the time at which the system was notified of the Characteristic Value change. */
-  var timestamp: Date = js.native
+  var timestamp: Date
+}
+
+object GattValueChangedEventArgs {
+  @scala.inline
+  def apply(characteristicValue: IBuffer, timestamp: Date): GattValueChangedEventArgs = {
+    val __obj = js.Dynamic.literal(characteristicValue = characteristicValue.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GattValueChangedEventArgs]
+  }
 }
 

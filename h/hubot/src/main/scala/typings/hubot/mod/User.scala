@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("hubot", "User")
 @js.native
 class User protected ()
-  extends /* property */ StringDictionary[js.Any] {
+  extends /* key */ StringDictionary[js.Any] {
   def this(id: String) = this()
   def this(id: String, options: js.Object) = this()
   var id: String = js.native

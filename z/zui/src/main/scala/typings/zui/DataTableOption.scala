@@ -42,14 +42,14 @@ object DataTableOption {
     colHover: js.UndefOr[Boolean] = js.undefined,
     fixCellHeight: js.UndefOr[Boolean] = js.undefined,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
-    fixedHeaderOffset: Int | Double = null,
+    fixedHeaderOffset: js.UndefOr[Double] = js.undefined,
     fixedLeftWidth: String = null,
     fixedRightWidth: String = null,
     flexHeadDrag: js.UndefOr[Boolean] = js.undefined,
-    minColWidth: Int | Double = null,
-    minFixedLeftWidth: Int | Double = null,
-    minFixedRightWidth: Int | Double = null,
-    minFlexAreaWidth: Int | Double = null,
+    minColWidth: js.UndefOr[Double] = js.undefined,
+    minFixedLeftWidth: js.UndefOr[Double] = js.undefined,
+    minFixedRightWidth: js.UndefOr[Double] = js.undefined,
+    minFlexAreaWidth: js.UndefOr[Double] = js.undefined,
     ready: () => Unit = null,
     rowHover: js.UndefOr[Boolean] = js.undefined,
     scrollPos: String = null,
@@ -61,29 +61,29 @@ object DataTableOption {
   ): DataTableOption = {
     val __obj = js.Dynamic.literal()
     if (afterLoad != null) __obj.updateDynamic("afterLoad")(js.Any.fromFunction1(afterLoad))
-    if (!js.isUndefined(checkByClickRow)) __obj.updateDynamic("checkByClickRow")(checkByClickRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkable)) __obj.updateDynamic("checkable")(checkable.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkByClickRow)) __obj.updateDynamic("checkByClickRow")(checkByClickRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkable)) __obj.updateDynamic("checkable")(checkable.get.asInstanceOf[js.Any])
     if (checkedClass != null) __obj.updateDynamic("checkedClass")(checkedClass.asInstanceOf[js.Any])
     if (checksChanged != null) __obj.updateDynamic("checksChanged")(js.Any.fromFunction1(checksChanged))
-    if (!js.isUndefined(colHover)) __obj.updateDynamic("colHover")(colHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixCellHeight)) __obj.updateDynamic("fixCellHeight")(fixCellHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
-    if (fixedHeaderOffset != null) __obj.updateDynamic("fixedHeaderOffset")(fixedHeaderOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(colHover)) __obj.updateDynamic("colHover")(colHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixCellHeight)) __obj.updateDynamic("fixCellHeight")(fixCellHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeaderOffset)) __obj.updateDynamic("fixedHeaderOffset")(fixedHeaderOffset.get.asInstanceOf[js.Any])
     if (fixedLeftWidth != null) __obj.updateDynamic("fixedLeftWidth")(fixedLeftWidth.asInstanceOf[js.Any])
     if (fixedRightWidth != null) __obj.updateDynamic("fixedRightWidth")(fixedRightWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexHeadDrag)) __obj.updateDynamic("flexHeadDrag")(flexHeadDrag.asInstanceOf[js.Any])
-    if (minColWidth != null) __obj.updateDynamic("minColWidth")(minColWidth.asInstanceOf[js.Any])
-    if (minFixedLeftWidth != null) __obj.updateDynamic("minFixedLeftWidth")(minFixedLeftWidth.asInstanceOf[js.Any])
-    if (minFixedRightWidth != null) __obj.updateDynamic("minFixedRightWidth")(minFixedRightWidth.asInstanceOf[js.Any])
-    if (minFlexAreaWidth != null) __obj.updateDynamic("minFlexAreaWidth")(minFlexAreaWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexHeadDrag)) __obj.updateDynamic("flexHeadDrag")(flexHeadDrag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minColWidth)) __obj.updateDynamic("minColWidth")(minColWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFixedLeftWidth)) __obj.updateDynamic("minFixedLeftWidth")(minFixedLeftWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFixedRightWidth)) __obj.updateDynamic("minFixedRightWidth")(minFixedRightWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFlexAreaWidth)) __obj.updateDynamic("minFlexAreaWidth")(minFlexAreaWidth.get.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
-    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover.get.asInstanceOf[js.Any])
     if (scrollPos != null) __obj.updateDynamic("scrollPos")(scrollPos.asInstanceOf[js.Any])
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (sizeChanged != null) __obj.updateDynamic("sizeChanged")(js.Any.fromFunction1(sizeChanged))
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction1(sort))
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (!js.isUndefined(storage)) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storage)) __obj.updateDynamic("storage")(storage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableOption]
   }
 }

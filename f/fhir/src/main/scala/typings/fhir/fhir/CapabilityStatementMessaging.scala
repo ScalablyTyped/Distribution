@@ -52,7 +52,7 @@ object CapabilityStatementMessaging {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
-    reliableCache: Int | Double = null,
+    reliableCache: js.UndefOr[unsignedInt] = js.undefined,
     supportedMessage: js.Array[CapabilityStatementMessagingSupportedMessage] = null
   ): CapabilityStatementMessaging = {
     val __obj = js.Dynamic.literal()
@@ -67,7 +67,7 @@ object CapabilityStatementMessaging {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (reliableCache != null) __obj.updateDynamic("reliableCache")(reliableCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(reliableCache)) __obj.updateDynamic("reliableCache")(reliableCache.get.asInstanceOf[js.Any])
     if (supportedMessage != null) __obj.updateDynamic("supportedMessage")(supportedMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementMessaging]
   }

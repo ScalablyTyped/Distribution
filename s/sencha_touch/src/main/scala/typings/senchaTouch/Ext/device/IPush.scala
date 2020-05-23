@@ -12,9 +12,9 @@ trait IPush extends IAbstract
 object IPush {
   @scala.inline
   def apply(
-    ALERT: Int | Double = null,
-    BADGE: Int | Double = null,
-    SOUND: Int | Double = null,
+    ALERT: js.UndefOr[Double] = js.undefined,
+    BADGE: js.UndefOr[Double] = js.undefined,
+    SOUND: js.UndefOr[Double] = js.undefined,
     alias: Array = null,
     alternateClassName: js.Any = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -35,9 +35,9 @@ object IPush {
     uses: Array = null
   ): IPush = {
     val __obj = js.Dynamic.literal()
-    if (ALERT != null) __obj.updateDynamic("ALERT")(ALERT.asInstanceOf[js.Any])
-    if (BADGE != null) __obj.updateDynamic("BADGE")(BADGE.asInstanceOf[js.Any])
-    if (SOUND != null) __obj.updateDynamic("SOUND")(SOUND.asInstanceOf[js.Any])
+    if (!js.isUndefined(ALERT)) __obj.updateDynamic("ALERT")(ALERT.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BADGE)) __obj.updateDynamic("BADGE")(BADGE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SOUND)) __obj.updateDynamic("SOUND")(SOUND.get.asInstanceOf[js.Any])
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
@@ -53,7 +53,7 @@ object IPush {
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (register != null) __obj.updateDynamic("register")(js.Any.fromFunction1(register))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPush]

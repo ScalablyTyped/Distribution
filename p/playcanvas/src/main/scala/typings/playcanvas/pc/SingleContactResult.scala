@@ -5,52 +5,62 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.SingleContactResult
-  * @classdesc Object holding the result of a contact between two rigid bodies.
-  * @description Create a new SingleContactResult.
-  * @param {pc.Entity} a - The first entity involved in the contact.
-  * @param {pc.Entity} b - The second entity involved in the contact.
-  * @param {pc.ContactPoint} contactPoint - The contact point between the two entities.
-  * @property {pc.Entity} a The first entity involved in the contact.
-  * @property {pc.Entity} b The second entity involved in the contact.
-  * @property {pc.Vec3} localPointA The point on Entity A where the contact occurred, relative to A.
-  * @property {pc.Vec3} localPointB The point on Entity B where the contact occurred, relative to B.
-  * @property {pc.Vec3} pointA The point on Entity A where the contact occurred, in world space.
-  * @property {pc.Vec3} pointB The point on Entity B where the contact occurred, in world space.
-  * @property {pc.Vec3} normal The normal vector of the contact on Entity B, in world space.
+  * Create a new SingleContactResult.
+  * @property a - The first entity involved in the contact.
+  * @property b - The second entity involved in the contact.
+  * @property localPointA - The point on Entity A where the contact occurred, relative to A.
+  * @property localPointB - The point on Entity B where the contact occurred, relative to B.
+  * @property pointA - The point on Entity A where the contact occurred, in world space.
+  * @property pointB - The point on Entity B where the contact occurred, in world space.
+  * @property normal - The normal vector of the contact on Entity B, in world space.
+  * @param a - The first entity involved in the contact.
+  * @param b - The second entity involved in the contact.
+  * @param contactPoint - The contact point between the two entities.
   */
-@JSGlobal("pc.SingleContactResult")
-@js.native
-class SingleContactResult protected () extends js.Object {
-  def this(a: Entity, b: Entity, contactPoint: ContactPoint) = this()
+trait SingleContactResult extends js.Object {
   /**
     * The first entity involved in the contact.
     */
-  var a: Entity = js.native
+  var a: Entity
   /**
     * The second entity involved in the contact.
     */
-  var b: Entity = js.native
+  var b: Entity
   /**
     * The point on Entity A where the contact occurred, relative to A.
     */
-  var localPointA: Vec3 = js.native
+  var localPointA: Vec3
   /**
     * The point on Entity B where the contact occurred, relative to B.
     */
-  var localPointB: Vec3 = js.native
+  var localPointB: Vec3
   /**
     * The normal vector of the contact on Entity B, in world space.
     */
-  var normal: Vec3 = js.native
+  var normal: Vec3
   /**
     * The point on Entity A where the contact occurred, in world space.
     */
-  var pointA: Vec3 = js.native
+  var pointA: Vec3
   /**
     * The point on Entity B where the contact occurred, in world space.
     */
-  var pointB: Vec3 = js.native
+  var pointB: Vec3
+}
+
+object SingleContactResult {
+  @scala.inline
+  def apply(
+    a: Entity,
+    b: Entity,
+    localPointA: Vec3,
+    localPointB: Vec3,
+    normal: Vec3,
+    pointA: Vec3,
+    pointB: Vec3
+  ): SingleContactResult = {
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], localPointA = localPointA.asInstanceOf[js.Any], localPointB = localPointB.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], pointA = pointA.asInstanceOf[js.Any], pointB = pointB.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SingleContactResult]
+  }
 }
 

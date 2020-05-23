@@ -23,31 +23,31 @@ object IGlobalMessageOptions {
   @scala.inline
   def apply(
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
-    horizontalSpacing: Int | Double = null,
-    maxCount: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    horizontalSpacing: js.UndefOr[Double] = js.undefined,
+    maxCount: js.UndefOr[Double] = js.undefined,
     onClose: /* element */ js.Any => _ = null,
     positionX: XPosition = null,
     positionY: YPosition = null,
     replaceMessage: js.UndefOr[Boolean] = js.undefined,
-    startRight: Int | Double = null,
-    startTop: Int | Double = null,
+    startRight: js.UndefOr[Double] = js.undefined,
+    startTop: js.UndefOr[Double] = js.undefined,
     templateUrl: String = null,
-    verticalSpacing: Int | Double = null
+    verticalSpacing: js.UndefOr[Double] = js.undefined
   ): IGlobalMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (horizontalSpacing != null) __obj.updateDynamic("horizontalSpacing")(horizontalSpacing.asInstanceOf[js.Any])
-    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalSpacing)) __obj.updateDynamic("horizontalSpacing")(horizontalSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCount)) __obj.updateDynamic("maxCount")(maxCount.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (positionX != null) __obj.updateDynamic("positionX")(positionX.asInstanceOf[js.Any])
     if (positionY != null) __obj.updateDynamic("positionY")(positionY.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceMessage)) __obj.updateDynamic("replaceMessage")(replaceMessage.asInstanceOf[js.Any])
-    if (startRight != null) __obj.updateDynamic("startRight")(startRight.asInstanceOf[js.Any])
-    if (startTop != null) __obj.updateDynamic("startTop")(startTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceMessage)) __obj.updateDynamic("replaceMessage")(replaceMessage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRight)) __obj.updateDynamic("startRight")(startRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTop)) __obj.updateDynamic("startTop")(startTop.get.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (verticalSpacing != null) __obj.updateDynamic("verticalSpacing")(verticalSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalSpacing)) __obj.updateDynamic("verticalSpacing")(verticalSpacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGlobalMessageOptions]
   }
 }

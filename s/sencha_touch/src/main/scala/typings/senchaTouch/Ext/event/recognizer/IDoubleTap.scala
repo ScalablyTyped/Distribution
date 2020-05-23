@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 
 trait IDoubleTap extends IRecognizer {
   /** [Method] Returns the value of maxDuration
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxDuration: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Sets the value of maxDuration
-  		* @param maxDuration Number The new value.
-  		*/
+    * @param maxDuration Number The new value.
+    */
   var setMaxDuration: js.UndefOr[js.Function1[/* maxDuration */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -71,7 +71,7 @@ object IDoubleTap {
     if (setMaxDuration != null) __obj.updateDynamic("setMaxDuration")(js.Any.fromFunction1(setMaxDuration))
     if (setOnFailed != null) __obj.updateDynamic("setOnFailed")(js.Any.fromFunction1(setOnFailed))
     if (setOnRecognized != null) __obj.updateDynamic("setOnRecognized")(js.Any.fromFunction1(setOnRecognized))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDoubleTap]

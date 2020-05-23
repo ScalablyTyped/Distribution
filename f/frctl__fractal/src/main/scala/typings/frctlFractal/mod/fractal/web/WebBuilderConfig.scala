@@ -16,14 +16,14 @@ trait WebBuilderConfig extends js.Object {
 object WebBuilderConfig {
   @scala.inline
   def apply(
-    concurrency: Int | Double = null,
+    concurrency: js.UndefOr[Double] = js.undefined,
     dest: String = null,
     ext: String = null,
     theme: WebTheme | String = null,
     urls: WebBuilderUrls = null
   ): WebBuilderConfig = {
     val __obj = js.Dynamic.literal()
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

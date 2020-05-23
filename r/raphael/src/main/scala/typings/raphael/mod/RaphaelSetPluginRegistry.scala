@@ -1,7 +1,7 @@
 package typings.raphael.mod
 
-import typings.raphael.PartialRaphaelAttributes
-import typings.raphael.PartialRaphaelGlowSetting
+import typings.raphael.anon.PartialRaphaelAttributes
+import typings.raphael.anon.PartialRaphaelGlowSetting
 import typings.raphael.raphaelStrings.`arrow-end`
 import typings.raphael.raphaelStrings.`clip-rect`
 import typings.raphael.raphaelStrings.`fill-opacity`
@@ -40,7 +40,7 @@ import typings.std.MouseEvent
 import typings.std.Parameters
 import typings.std.ReturnType
 import typings.std.TouchEvent
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -213,28 +213,28 @@ trait RaphaelSetPluginRegistry[TTechnology /* <: RaphaelTechnology */] extends j
     Parameters[
       js.Function2[
         /* callback */ js.ThisFunction1[
-          /* this */ Window_, 
+          /* this */ Window, 
           /* element */ RaphaelElement[
             TTechnology, 
             /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
           ], 
           Boolean | Unit
         ], 
-        /* thisArg */ js.UndefOr[Window_], 
+        /* thisArg */ js.UndefOr[Window], 
         this.type
       ]
     ], 
     ReturnType[
       js.Function2[
         /* callback */ js.ThisFunction1[
-          /* this */ Window_, 
+          /* this */ Window, 
           /* element */ RaphaelElement[
             TTechnology, 
             /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
           ], 
           Boolean | Unit
         ], 
-        /* thisArg */ js.UndefOr[Window_], 
+        /* thisArg */ js.UndefOr[Window], 
         this.type
       ]
     ]
@@ -819,7 +819,7 @@ trait RaphaelSetPluginRegistry[TTechnology /* <: RaphaelTechnology */] extends j
 
 object RaphaelSetPluginRegistry {
   @scala.inline
-  def apply[TTechnology /* <: RaphaelTechnology */](
+  def apply[TTechnology](
     animate: RaphaelSetPluginMethod[
       TTechnology, 
       Parameters[
@@ -997,28 +997,28 @@ object RaphaelSetPluginRegistry {
       Parameters[
         js.Function2[
           /* callback */ js.ThisFunction1[
-            /* this */ Window_, 
+            /* this */ Window, 
             /* element */ RaphaelElement[
               TTechnology, 
               /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
             ], 
             Boolean | Unit
           ], 
-          /* thisArg */ js.UndefOr[Window_], 
+          /* thisArg */ js.UndefOr[Window], 
           RaphaelSetPluginRegistry[TTechnology]
         ]
       ], 
       ReturnType[
         js.Function2[
           /* callback */ js.ThisFunction1[
-            /* this */ Window_, 
+            /* this */ Window, 
             /* element */ RaphaelElement[
               TTechnology, 
               /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
             ], 
             Boolean | Unit
           ], 
-          /* thisArg */ js.UndefOr[Window_], 
+          /* thisArg */ js.UndefOr[Window], 
           RaphaelSetPluginRegistry[TTechnology]
         ]
       ]

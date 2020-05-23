@@ -12,7 +12,7 @@ object ITransitionServiceOptions {
   @scala.inline
   def apply(animation: js.UndefOr[Boolean] = js.undefined): ITransitionServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransitionServiceOptions]
   }
 }

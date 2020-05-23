@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait IEventColor extends js.Object {
   /**
-  	         * The primary color of the event, should be darker than secondary
-  	         */
+    * The primary color of the event, should be darker than secondary
+    */
   var primary: String
   /**
-  	         * The secondary color of the event, should be lighter than primary
-  	         */
+    * The secondary color of the event, should be lighter than primary
+    */
   var secondary: String
 }
 

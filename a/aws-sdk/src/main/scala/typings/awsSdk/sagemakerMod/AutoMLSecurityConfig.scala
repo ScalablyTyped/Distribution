@@ -23,12 +23,12 @@ trait AutoMLSecurityConfig extends js.Object {
 object AutoMLSecurityConfig {
   @scala.inline
   def apply(
-    EnableInterContainerTrafficEncryption: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
     VolumeKmsKeyId: KmsKeyId = null,
     VpcConfig: VpcConfig = null
   ): AutoMLSecurityConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.get.asInstanceOf[js.Any])
     if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId.asInstanceOf[js.Any])
     if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLSecurityConfig]

@@ -1,7 +1,7 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonHref
-import typings.gapiClientAnalytics.AnonName
+import typings.gapiClientAnalytics.anon.Href
+import typings.gapiClientAnalytics.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ trait Experiment extends js.Object {
     */
   var optimizationType: js.UndefOr[String] = js.undefined
   /** Parent link for an experiment. Points to the view (profile) to which this experiment belongs. */
-  var parentLink: js.UndefOr[AnonHref] = js.undefined
+  var parentLink: js.UndefOr[Href] = js.undefined
   /** View (Profile) ID to which this experiment belongs. This field is read-only. */
   var profileId: js.UndefOr[String] = js.undefined
   /**
@@ -99,7 +99,7 @@ trait Experiment extends js.Object {
     * Array of variations. The first variation in the array is the original. The number of variations may not change once an experiment is in the RUNNING
     * state. At least two variations are required before status can be set to RUNNING.
     */
-  var variations: js.UndefOr[js.Array[AnonName]] = js.undefined
+  var variations: js.UndefOr[js.Array[Name]] = js.undefined
   /** Web property ID to which this experiment belongs. The web property ID is of the form UA-XXXXX-YY. This field is read-only. */
   var webPropertyId: js.UndefOr[String] = js.undefined
   /**
@@ -123,11 +123,11 @@ object Experiment {
     id: String = null,
     internalWebPropertyId: String = null,
     kind: String = null,
-    minimumExperimentLengthInDays: Int | Double = null,
+    minimumExperimentLengthInDays: js.UndefOr[Double] = js.undefined,
     name: String = null,
     objectiveMetric: String = null,
     optimizationType: String = null,
-    parentLink: AnonHref = null,
+    parentLink: Href = null,
     profileId: String = null,
     reasonExperimentEnded: String = null,
     rewriteVariationUrlsAsOriginal: js.UndefOr[Boolean] = js.undefined,
@@ -136,42 +136,42 @@ object Experiment {
     snippet: String = null,
     startTime: String = null,
     status: String = null,
-    trafficCoverage: Int | Double = null,
+    trafficCoverage: js.UndefOr[Double] = js.undefined,
     updated: String = null,
-    variations: js.Array[AnonName] = null,
+    variations: js.Array[Name] = null,
     webPropertyId: String = null,
-    winnerConfidenceLevel: Int | Double = null,
+    winnerConfidenceLevel: js.UndefOr[Double] = js.undefined,
     winnerFound: js.UndefOr[Boolean] = js.undefined
   ): Experiment = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(editableInGaUi)) __obj.updateDynamic("editableInGaUi")(editableInGaUi.asInstanceOf[js.Any])
+    if (!js.isUndefined(editableInGaUi)) __obj.updateDynamic("editableInGaUi")(editableInGaUi.get.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(equalWeighting)) __obj.updateDynamic("equalWeighting")(equalWeighting.asInstanceOf[js.Any])
+    if (!js.isUndefined(equalWeighting)) __obj.updateDynamic("equalWeighting")(equalWeighting.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (minimumExperimentLengthInDays != null) __obj.updateDynamic("minimumExperimentLengthInDays")(minimumExperimentLengthInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumExperimentLengthInDays)) __obj.updateDynamic("minimumExperimentLengthInDays")(minimumExperimentLengthInDays.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (objectiveMetric != null) __obj.updateDynamic("objectiveMetric")(objectiveMetric.asInstanceOf[js.Any])
     if (optimizationType != null) __obj.updateDynamic("optimizationType")(optimizationType.asInstanceOf[js.Any])
     if (parentLink != null) __obj.updateDynamic("parentLink")(parentLink.asInstanceOf[js.Any])
     if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
     if (reasonExperimentEnded != null) __obj.updateDynamic("reasonExperimentEnded")(reasonExperimentEnded.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewriteVariationUrlsAsOriginal)) __obj.updateDynamic("rewriteVariationUrlsAsOriginal")(rewriteVariationUrlsAsOriginal.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewriteVariationUrlsAsOriginal)) __obj.updateDynamic("rewriteVariationUrlsAsOriginal")(rewriteVariationUrlsAsOriginal.get.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (servingFramework != null) __obj.updateDynamic("servingFramework")(servingFramework.asInstanceOf[js.Any])
     if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (trafficCoverage != null) __obj.updateDynamic("trafficCoverage")(trafficCoverage.asInstanceOf[js.Any])
+    if (!js.isUndefined(trafficCoverage)) __obj.updateDynamic("trafficCoverage")(trafficCoverage.get.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     if (variations != null) __obj.updateDynamic("variations")(variations.asInstanceOf[js.Any])
     if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
-    if (winnerConfidenceLevel != null) __obj.updateDynamic("winnerConfidenceLevel")(winnerConfidenceLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(winnerFound)) __obj.updateDynamic("winnerFound")(winnerFound.asInstanceOf[js.Any])
+    if (!js.isUndefined(winnerConfidenceLevel)) __obj.updateDynamic("winnerConfidenceLevel")(winnerConfidenceLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(winnerFound)) __obj.updateDynamic("winnerFound")(winnerFound.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Experiment]
   }
 }

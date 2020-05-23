@@ -12,11 +12,12 @@ trait DeviceMotionEventAcceleration extends js.Object {
 
 object DeviceMotionEventAcceleration {
   @scala.inline
-  def apply(x: Int | Double = null, y: Int | Double = null, z: Int | Double = null): DeviceMotionEventAcceleration = {
-    val __obj = js.Dynamic.literal()
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+  def apply(
+    x: Double = null.asInstanceOf[Double],
+    y: Double = null.asInstanceOf[Double],
+    z: Double = null.asInstanceOf[Double]
+  ): DeviceMotionEventAcceleration = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceMotionEventAcceleration]
   }
 }

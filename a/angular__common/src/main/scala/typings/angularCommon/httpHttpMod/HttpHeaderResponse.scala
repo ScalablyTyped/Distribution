@@ -1,6 +1,6 @@
 package typings.angularCommon.httpHttpMod
 
-import typings.angularCommon.AnonHeaders
+import typings.angularCommon.anon.Headers
 import typings.angularCommon.httpHttpMod.HttpEventType.ResponseHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
 class HttpHeaderResponse ()
   extends HttpResponseBase
      with HttpEvent[js.Any] {
-  def this(init: AnonHeaders) = this()
+  def this(init: Headers) = this()
   @JSName("type")
   val type_HttpHeaderResponse: ResponseHeader = js.native
-  def clone(update: AnonHeaders): HttpHeaderResponse = js.native
+  def clone(update: Headers): HttpHeaderResponse = js.native
 }
 

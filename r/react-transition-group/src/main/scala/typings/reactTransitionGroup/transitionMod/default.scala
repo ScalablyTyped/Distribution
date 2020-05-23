@@ -1,6 +1,7 @@
 package typings.reactTransitionGroup.transitionMod
 
 import typings.react.mod.Component
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,6 +49,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("react-transition-group/Transition", JSImport.Default)
 @js.native
-class default ()
-  extends Component[TransitionProps, js.Object, js.Any]
+class default[RefElement /* <: js.UndefOr[HTMLElement] */] ()
+  extends Component[TransitionProps[RefElement], js.Object, js.Any]
 

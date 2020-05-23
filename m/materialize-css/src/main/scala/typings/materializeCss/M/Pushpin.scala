@@ -1,38 +1,22 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.MElements
-import typings.materializeCss.PartialPushpinOptions
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("M.Pushpin")
-@js.native
-class Pushpin () extends Component[PushpinOptions] {
+trait Pushpin extends Component[PushpinOptions] {
   /**
     * Original offsetTop of element
     */
-  var originalOffset: Double = js.native
+  var originalOffset: Double
 }
 
-/* static members */
-@JSGlobal("M.Pushpin")
-@js.native
-object Pushpin extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Pushpin = js.native
-  /**
-    * Init Pushpins
-    */
-  def init(els: MElements): js.Array[Pushpin] = js.native
-  def init(els: MElements, options: PartialPushpinOptions): js.Array[Pushpin] = js.native
-  /**
-    * Init Pushpin
-    */
-  def init(els: Element): Pushpin = js.native
-  def init(els: Element, options: PartialPushpinOptions): Pushpin = js.native
+object Pushpin {
+  @scala.inline
+  def apply(destroy: () => Unit, el: Element, options: PushpinOptions, originalOffset: Double): Pushpin = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], originalOffset = originalOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pushpin]
+  }
 }
 

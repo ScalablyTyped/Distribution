@@ -1,30 +1,30 @@
 package typings.gapiClientMirror.gapi.client.mirror
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientMirror.AnonAlt
-import typings.gapiClientMirror.AnonFields
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientMirror.anon.Alt
+import typings.gapiClientMirror.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubscriptionsResource extends js.Object {
   /** Deletes a subscription. */
-  def delete(request: AnonAlt): Request_[Unit]
+  def delete(request: Alt): Request[Unit]
   /** Creates a new subscription. */
-  def insert(request: AnonFields): Request_[Subscription]
+  def insert(request: Fields): Request[Subscription]
   /** Retrieves a list of subscriptions for the authenticated user and service. */
-  def list(request: AnonFields): Request_[SubscriptionsListResponse]
+  def list(request: Fields): Request[SubscriptionsListResponse]
   /** Updates an existing subscription in place. */
-  def update(request: AnonAlt): Request_[Subscription]
+  def update(request: Alt): Request[Subscription]
 }
 
 object SubscriptionsResource {
   @scala.inline
   def apply(
-    delete: AnonAlt => Request_[Unit],
-    insert: AnonFields => Request_[Subscription],
-    list: AnonFields => Request_[SubscriptionsListResponse],
-    update: AnonAlt => Request_[Subscription]
+    delete: Alt => Request[Unit],
+    insert: Fields => Request[Subscription],
+    list: Fields => Request[SubscriptionsListResponse],
+    update: Alt => Request[Subscription]
   ): SubscriptionsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[SubscriptionsResource]

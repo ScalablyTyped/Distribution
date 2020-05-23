@@ -39,14 +39,14 @@ trait ChartPointLoadOptions extends js.Object {
   var hasDataLabel: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+    * HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.7]
     */
   var markerBackgroundColor: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+    * HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -67,7 +67,7 @@ trait ChartPointLoadOptions extends js.Object {
   var markerStyle: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the value of a chart point. Read-only.
+    * Returns the value of a chart point.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -88,15 +88,15 @@ object ChartPointLoadOptions {
     value: js.UndefOr[Boolean] = js.undefined
   ): ChartPointLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDataLabel)) __obj.updateDynamic("hasDataLabel")(hasDataLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerBackgroundColor)) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerForegroundColor)) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerStyle)) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDataLabel)) __obj.updateDynamic("hasDataLabel")(hasDataLabel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerBackgroundColor)) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerForegroundColor)) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerStyle)) __obj.updateDynamic("markerStyle")(markerStyle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPointLoadOptions]
   }
 }

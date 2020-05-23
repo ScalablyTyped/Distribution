@@ -67,7 +67,7 @@ trait PlusAudioAudioPlayer extends js.Object {
   /**
     * 停止播放音频
     * 停止播放音频，音频播放对象在播放或暂停状态才能停止播放，在其它状态调用此方法无任何作用。
-    * 	停止播放后如果需要继续播放，则需调用play方法重新开始播放。
+    *     停止播放后如果需要继续播放，则需调用play方法重新开始播放。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
     */

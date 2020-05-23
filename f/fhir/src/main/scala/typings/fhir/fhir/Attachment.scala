@@ -95,7 +95,7 @@ object Attachment {
     hash: base64Binary = null,
     id: String = null,
     language: code = null,
-    size: Int | Double = null,
+    size: js.UndefOr[unsignedInt] = js.undefined,
     title: String = null,
     url: uri = null
   ): Attachment = {
@@ -118,7 +118,7 @@ object Attachment {
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]

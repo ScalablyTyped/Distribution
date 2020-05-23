@@ -8,17 +8,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.senchaTouch.Ext.IClass because Already inherited
 - typings.senchaTouch.Ext.IBase because Already inherited
 - typings.senchaTouch.Ext.draw.modifier.IModifier because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined next, previous, sprite, getNext, getPrevious, getSprite, popUp, prepareAttributes, pushDown, setNext, setPrevious, setSprite */ trait IAnimation extends IObservable {
   /** [Method] Remove special easings on the given attributes
-  		* @param attrs Object The source attributes.
-  		*/
+    * @param attrs Object The source attributes.
+    */
   var clearDurationOn: js.UndefOr[js.Function1[/* attrs */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Remove special easings on the given attributes
-  		* @param attrs String/Array The source attribute(s).
-  		*/
+    * @param attrs String/Array The source attribute(s).
+    */
   var clearEasingOn: js.UndefOr[js.Function1[/* attrs */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var customDuration: js.UndefOr[js.Any] = js.undefined
@@ -29,102 +29,102 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Function) */
   var easing: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of customDuration
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getCustomDuration: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of customEasings
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getCustomEasings: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of duration
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getDuration: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of easing
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getEasing: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of next
-  		* @returns Ext.draw.modifier.Modifier
-  		*/
+    * @returns Ext.draw.modifier.Modifier
+    */
   var getNext: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Returns the value of previous
-  		* @returns Ext.draw.modifier.Modifier
-  		*/
+    * @returns Ext.draw.modifier.Modifier
+    */
   var getPrevious: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Returns the value of sprite
-  		* @returns Ext.draw.sprite.Sprite
-  		*/
+    * @returns Ext.draw.sprite.Sprite
+    */
   var getSprite: js.UndefOr[js.Function0[ISprite]] = js.undefined
   /** [Config Option] (Ext.draw.modifier.Modifier) */
   var next: js.UndefOr[IModifier] = js.undefined
   /** [Method] Invoked when changes need to be popped up to the top
-  		* @param attributes Object The source attributes.
-  		* @param changes Object The changes to be popped up.
-  		*/
+    * @param attributes Object The source attributes.
+    * @param changes Object The changes to be popped up.
+    */
   var popUp: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Validate attribute set before use
-  		* @param attr Object The attribute to be validated. Note that it may be already initialized, so do not override properties that have already been used.
-  		*/
+    * @param attr Object The attribute to be validated. Note that it may be already initialized, so do not override properties that have already been used.
+    */
   var prepareAttributes: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Ext.draw.modifier.Modifier) */
   var previous: js.UndefOr[IModifier] = js.undefined
   /** [Method] Invoked when changes need to be pushed down to the sprite
-  		* @param attr Object The source attributes.
-  		* @param changes Object The changes to make. This object might be changed unexpectedly inside the method.
-  		* @returns Mixed
-  		*/
+    * @param attr Object The source attributes.
+    * @param changes Object The changes to make. This object might be changed unexpectedly inside the method.
+    * @returns Mixed
+    */
   var pushDown: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IAnimation: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
   ] = js.undefined
   /** [Method] Sets the value of customDuration
-  		* @param customDuration Object The new value.
-  		*/
+    * @param customDuration Object The new value.
+    */
   var setCustomDuration: js.UndefOr[js.Function1[/* customDuration */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of customEasings
-  		* @param customEasings Object The new value.
-  		*/
+    * @param customEasings Object The new value.
+    */
   var setCustomEasings: js.UndefOr[js.Function1[/* customEasings */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of duration
-  		* @param duration Number The new value.
-  		*/
+    * @param duration Number The new value.
+    */
   var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Set special duration on the given attributes
-  		* @param attrs String/Array The source attributes.
-  		* @param duration Number The special duration.
-  		*/
+    * @param attrs String/Array The source attributes.
+    * @param duration Number The special duration.
+    */
   var setDurationOn: js.UndefOr[
     js.Function2[/* attrs */ js.UndefOr[js.Any], /* duration */ js.UndefOr[Double], Unit]
   ] = js.undefined
   /** [Method] Sets the value of easing
-  		* @param easing Function The new value.
-  		*/
+    * @param easing Function The new value.
+    */
   var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Set special easings on the given attributes
-  		* @param attrs String/Array The source attribute(s).
-  		* @param easing String The special easings.
-  		*/
+    * @param attrs String/Array The source attribute(s).
+    * @param easing String The special easings.
+    */
   var setEasingOn: js.UndefOr[
     js.Function2[/* attrs */ js.UndefOr[js.Any], /* easing */ js.UndefOr[String], Unit]
   ] = js.undefined
   /** [Method] Sets the value of next
-  		* @param next Ext.draw.modifier.Modifier The new value.
-  		*/
+    * @param next Ext.draw.modifier.Modifier The new value.
+    */
   var setNext: js.UndefOr[js.Function1[/* next */ js.UndefOr[this.type], Unit]] = js.undefined
   /** [Method] Sets the value of previous
-  		* @param previous Ext.draw.modifier.Modifier The new value.
-  		*/
+    * @param previous Ext.draw.modifier.Modifier The new value.
+    */
   var setPrevious: js.UndefOr[js.Function1[/* previous */ js.UndefOr[this.type], Unit]] = js.undefined
   /** [Method] Sets the value of sprite
-  		* @param sprite Ext.draw.sprite.Sprite The new value.
-  		*/
+    * @param sprite Ext.draw.sprite.Sprite The new value.
+    */
   var setSprite: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.undefined
   /** [Config Option] (Ext.draw.sprite.Sprite) */
   var sprite: js.UndefOr[ISprite] = js.undefined
@@ -153,7 +153,7 @@ object IAnimation {
     customDuration: js.Any = null,
     customEasings: js.Any = null,
     destroy: () => Unit = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: js.Any = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     extend: String = null,
@@ -233,7 +233,7 @@ object IAnimation {
     if (customDuration != null) __obj.updateDynamic("customDuration")(customDuration.asInstanceOf[js.Any])
     if (customEasings != null) __obj.updateDynamic("customEasings")(customEasings.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -284,7 +284,7 @@ object IAnimation {
     if (setNext != null) __obj.updateDynamic("setNext")(js.Any.fromFunction1(setNext))
     if (setPrevious != null) __obj.updateDynamic("setPrevious")(js.Any.fromFunction1(setPrevious))
     if (setSprite != null) __obj.updateDynamic("setSprite")(js.Any.fromFunction1(setSprite))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction0(stop))

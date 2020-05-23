@@ -24,8 +24,7 @@ object FreeCameraInputsManager {
     addDeviceOrientation: () => FreeCameraInputsManager,
     _deviceOrientationInput: Nullable[FreeCameraDeviceOrientationInput] = null
   ): FreeCameraInputsManager = {
-    val __obj = js.Dynamic.literal(addDeviceOrientation = js.Any.fromFunction0(addDeviceOrientation))
-    if (_deviceOrientationInput != null) __obj.updateDynamic("_deviceOrientationInput")(_deviceOrientationInput.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addDeviceOrientation = js.Any.fromFunction0(addDeviceOrientation), _deviceOrientationInput = _deviceOrientationInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeCameraInputsManager]
   }
 }

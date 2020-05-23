@@ -1,8 +1,8 @@
 package typings.googleapisCommon.schemaMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleapisCommon.AnonProtocols
-import typings.googleapisCommon.AnonRef
+import typings.googleapisCommon.anon.Protocols
+import typings.googleapisCommon.anon.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +12,12 @@ trait SchemaMethod extends js.Object {
   var fragment: String
   var httpMethod: HttpMethod
   var id: String
-  var mediaUpload: AnonProtocols
+  var mediaUpload: Protocols
   var parameterOrder: js.UndefOr[js.Array[String]] = js.undefined
   var parameters: js.UndefOr[StringDictionary[SchemaParameter]] = js.undefined
   var path: String
-  var request: AnonRef
-  var response: AnonRef
+  var request: Ref
+  var response: Ref
   var sampleUrl: String
   var scopes: js.Array[String]
 }
@@ -29,10 +29,10 @@ object SchemaMethod {
     fragment: String,
     httpMethod: HttpMethod,
     id: String,
-    mediaUpload: AnonProtocols,
+    mediaUpload: Protocols,
     path: String,
-    request: AnonRef,
-    response: AnonRef,
+    request: Ref,
+    response: Ref,
     sampleUrl: String,
     scopes: js.Array[String],
     parameterOrder: js.Array[String] = null,

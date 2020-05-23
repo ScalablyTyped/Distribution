@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Used to interact with the file picker when your app provides a save location with the File Save Picker contract. */
-@JSGlobal("Windows.Storage.Pickers.Provider.FileSavePickerUI")
 @js.native
-abstract class FileSavePickerUI () extends js.Object {
+trait FileSavePickerUI extends js.Object {
   /** Gets a list of file types (extensions) that can be saved to the app that is providing the save location. */
   var allowedFileTypes: IVectorView[String] = js.native
   /** Gets the full file name of the file to save, including the file type extension. The file name and extension are specified by the user. */

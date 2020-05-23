@@ -77,7 +77,7 @@ object PiwikTrackOptions {
   def apply(
     url: String,
     _cvar: String = null,
-    _ects: Int | Double = null,
+    _ects: js.UndefOr[Double] = js.undefined,
     _id: String = null,
     _idts: String = null,
     _idvc: String = null,
@@ -85,7 +85,7 @@ object PiwikTrackOptions {
     _rcn: String = null,
     _viewts: String = null,
     action_name: String = null,
-    apiv: Int | Double = null,
+    apiv: js.UndefOr[Double] = js.undefined,
     c_i: String = null,
     c_n: String = null,
     c_p: String = null,
@@ -102,30 +102,30 @@ object PiwikTrackOptions {
     e_c: String = null,
     e_n: String = null,
     e_v: String = null,
-    ec_dt: Int | Double = null,
+    ec_dt: js.UndefOr[Double] = js.undefined,
     ec_id: String = null,
     ec_items: String = null,
-    ec_sh: Int | Double = null,
-    ec_st: Int | Double = null,
-    ec_tx: Int | Double = null,
-    gt_ms: Int | Double = null,
-    h: Int | Double = null,
-    idgoal: Int | Double = null,
+    ec_sh: js.UndefOr[Double] = js.undefined,
+    ec_st: js.UndefOr[Double] = js.undefined,
+    ec_tx: js.UndefOr[Double] = js.undefined,
+    gt_ms: js.UndefOr[Double] = js.undefined,
+    h: js.UndefOr[Double] = js.undefined,
+    idgoal: js.UndefOr[Double] = js.undefined,
     lang: String = null,
     lat: String = null,
     link: String = null,
     long: String = null,
-    m: Int | Double = null,
-    new_visit: Int | Double = null,
+    m: js.UndefOr[Double] = js.undefined,
+    new_visit: js.UndefOr[Double] = js.undefined,
     rand: String = null,
     region: String = null,
     res: String = null,
-    revenue: Int | Double = null,
-    s: Int | Double = null,
+    revenue: js.UndefOr[Double] = js.undefined,
+    s: js.UndefOr[Double] = js.undefined,
     search: String = null,
     search_cat: String = null,
-    search_count: Int | Double = null,
-    send_image: Int | Double = null,
+    search_count: js.UndefOr[Double] = js.undefined,
+    send_image: js.UndefOr[Double] = js.undefined,
     token_auth: String = null,
     ua: String = null,
     uid: String = null,
@@ -133,7 +133,7 @@ object PiwikTrackOptions {
   ): PiwikTrackOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (_cvar != null) __obj.updateDynamic("_cvar")(_cvar.asInstanceOf[js.Any])
-    if (_ects != null) __obj.updateDynamic("_ects")(_ects.asInstanceOf[js.Any])
+    if (!js.isUndefined(_ects)) __obj.updateDynamic("_ects")(_ects.get.asInstanceOf[js.Any])
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     if (_idts != null) __obj.updateDynamic("_idts")(_idts.asInstanceOf[js.Any])
     if (_idvc != null) __obj.updateDynamic("_idvc")(_idvc.asInstanceOf[js.Any])
@@ -141,7 +141,7 @@ object PiwikTrackOptions {
     if (_rcn != null) __obj.updateDynamic("_rcn")(_rcn.asInstanceOf[js.Any])
     if (_viewts != null) __obj.updateDynamic("_viewts")(_viewts.asInstanceOf[js.Any])
     if (action_name != null) __obj.updateDynamic("action_name")(action_name.asInstanceOf[js.Any])
-    if (apiv != null) __obj.updateDynamic("apiv")(apiv.asInstanceOf[js.Any])
+    if (!js.isUndefined(apiv)) __obj.updateDynamic("apiv")(apiv.get.asInstanceOf[js.Any])
     if (c_i != null) __obj.updateDynamic("c_i")(c_i.asInstanceOf[js.Any])
     if (c_n != null) __obj.updateDynamic("c_n")(c_n.asInstanceOf[js.Any])
     if (c_p != null) __obj.updateDynamic("c_p")(c_p.asInstanceOf[js.Any])
@@ -158,30 +158,30 @@ object PiwikTrackOptions {
     if (e_c != null) __obj.updateDynamic("e_c")(e_c.asInstanceOf[js.Any])
     if (e_n != null) __obj.updateDynamic("e_n")(e_n.asInstanceOf[js.Any])
     if (e_v != null) __obj.updateDynamic("e_v")(e_v.asInstanceOf[js.Any])
-    if (ec_dt != null) __obj.updateDynamic("ec_dt")(ec_dt.asInstanceOf[js.Any])
+    if (!js.isUndefined(ec_dt)) __obj.updateDynamic("ec_dt")(ec_dt.get.asInstanceOf[js.Any])
     if (ec_id != null) __obj.updateDynamic("ec_id")(ec_id.asInstanceOf[js.Any])
     if (ec_items != null) __obj.updateDynamic("ec_items")(ec_items.asInstanceOf[js.Any])
-    if (ec_sh != null) __obj.updateDynamic("ec_sh")(ec_sh.asInstanceOf[js.Any])
-    if (ec_st != null) __obj.updateDynamic("ec_st")(ec_st.asInstanceOf[js.Any])
-    if (ec_tx != null) __obj.updateDynamic("ec_tx")(ec_tx.asInstanceOf[js.Any])
-    if (gt_ms != null) __obj.updateDynamic("gt_ms")(gt_ms.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (idgoal != null) __obj.updateDynamic("idgoal")(idgoal.asInstanceOf[js.Any])
+    if (!js.isUndefined(ec_sh)) __obj.updateDynamic("ec_sh")(ec_sh.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ec_st)) __obj.updateDynamic("ec_st")(ec_st.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ec_tx)) __obj.updateDynamic("ec_tx")(ec_tx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gt_ms)) __obj.updateDynamic("gt_ms")(gt_ms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(h)) __obj.updateDynamic("h")(h.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(idgoal)) __obj.updateDynamic("idgoal")(idgoal.get.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (long != null) __obj.updateDynamic("long")(long.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (new_visit != null) __obj.updateDynamic("new_visit")(new_visit.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(new_visit)) __obj.updateDynamic("new_visit")(new_visit.get.asInstanceOf[js.Any])
     if (rand != null) __obj.updateDynamic("rand")(rand.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
-    if (revenue != null) __obj.updateDynamic("revenue")(revenue.asInstanceOf[js.Any])
-    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
+    if (!js.isUndefined(revenue)) __obj.updateDynamic("revenue")(revenue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(s)) __obj.updateDynamic("s")(s.get.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (search_cat != null) __obj.updateDynamic("search_cat")(search_cat.asInstanceOf[js.Any])
-    if (search_count != null) __obj.updateDynamic("search_count")(search_count.asInstanceOf[js.Any])
-    if (send_image != null) __obj.updateDynamic("send_image")(send_image.asInstanceOf[js.Any])
+    if (!js.isUndefined(search_count)) __obj.updateDynamic("search_count")(search_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(send_image)) __obj.updateDynamic("send_image")(send_image.get.asInstanceOf[js.Any])
     if (token_auth != null) __obj.updateDynamic("token_auth")(token_auth.asInstanceOf[js.Any])
     if (ua != null) __obj.updateDynamic("ua")(ua.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])

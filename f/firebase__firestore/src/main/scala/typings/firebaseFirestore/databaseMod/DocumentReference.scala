@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/database", "DocumentReference")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/database", "DocumentReference")
 @js.native
 class DocumentReference[T] protected ()
   extends typings.firebaseFirestoreTypes.mod.DocumentReference[T] {
@@ -35,7 +35,7 @@ class DocumentReference[T] protected ()
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/api/database", "DocumentReference")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/database", "DocumentReference")
 @js.native
 object DocumentReference extends js.Object {
   def forPath[U](path: ResourcePath, firestore: Firestore): DocumentReference[U] = js.native

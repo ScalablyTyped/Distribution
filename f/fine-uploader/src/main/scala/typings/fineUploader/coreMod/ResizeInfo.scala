@@ -39,19 +39,19 @@ object ResizeInfo {
   @scala.inline
   def apply(
     blob: File | Blob = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     image: HTMLImageElement = null,
     sourceCanvas: HTMLCanvasElement = null,
     targetCanvas: HTMLCanvasElement = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ResizeInfo = {
     val __obj = js.Dynamic.literal()
     if (blob != null) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (sourceCanvas != null) __obj.updateDynamic("sourceCanvas")(sourceCanvas.asInstanceOf[js.Any])
     if (targetCanvas != null) __obj.updateDynamic("targetCanvas")(targetCanvas.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeInfo]
   }
 }

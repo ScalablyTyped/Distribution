@@ -73,7 +73,7 @@ object NotificationOptions {
     url: String = null
   ): NotificationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreMouseOver)) __obj.updateDynamic("ignoreMouseOver")(ignoreMouseOver.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreMouseOver)) __obj.updateDynamic("ignoreMouseOver")(ignoreMouseOver.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))

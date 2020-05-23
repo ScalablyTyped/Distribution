@@ -43,7 +43,7 @@ trait DocumentIdentifier extends js.Object {
     */
   var Tags: js.UndefOr[TagList] = js.native
   /**
-    * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS Resource Types Reference in the AWS CloudFormation User Guide. 
+    * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS resource and property types reference in the AWS CloudFormation User Guide. 
     */
   var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.native
   /**

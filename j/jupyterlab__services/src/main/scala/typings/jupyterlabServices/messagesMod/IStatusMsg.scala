@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonExecutionstate
+import typings.jupyterlabServices.anon.Executionstate
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.jupyterlabServices.jupyterlabServicesStrings.status
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IStatusMsg
   extends IIOPubMessage[status]
      with _Message {
   @JSName("content")
-  var content_IStatusMsg: AnonExecutionstate
+  var content_IStatusMsg: Executionstate
 }
 
 object IStatusMsg {
   @scala.inline
   def apply(
     channel: iopub,
-    content: AnonExecutionstate,
+    content: Executionstate,
     header: IHeader[status],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

@@ -17,10 +17,9 @@ object ViewportPosition {
     anchorPage: Boolean,
     horizontalOffset: Double,
     verticalOffset: Double,
-    zoomLevel: Int | Double = null
+    zoomLevel: Double = null.asInstanceOf[Double]
   ): ViewportPosition = {
-    val __obj = js.Dynamic.literal(anchorPage = anchorPage.asInstanceOf[js.Any], horizontalOffset = horizontalOffset.asInstanceOf[js.Any], verticalOffset = verticalOffset.asInstanceOf[js.Any])
-    if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(anchorPage = anchorPage.asInstanceOf[js.Any], horizontalOffset = horizontalOffset.asInstanceOf[js.Any], verticalOffset = verticalOffset.asInstanceOf[js.Any], zoomLevel = zoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportPosition]
   }
 }

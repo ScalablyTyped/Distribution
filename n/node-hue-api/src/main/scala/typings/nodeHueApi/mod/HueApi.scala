@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation._
   */
 class HueApi () extends js.Object {
   /**
-  		 * Creates an instance of HueApi.
-  		 * @param {string} host Address of Hue bridge
-  		 * @param {string} username Application username for Hue bridge
-  		 * @param {number} [timeout]
-  		 * @param {number} [port]
-  		 */
+    * Creates an instance of HueApi.
+    * @param {string} host Address of Hue bridge
+    * @param {string} username Application username for Hue bridge
+    * @param {number} [timeout]
+    * @param {number} [port]
+    */
   def this(host: String, username: String) = this()
   def this(host: String, username: String, timeout: Double) = this()
   def this(host: String, username: String, timeout: Double, port: Double) = this()

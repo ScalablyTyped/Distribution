@@ -84,7 +84,7 @@ object Job {
     status: ExecutionStatus = null,
     stopped: DateTime = null,
     `type`: TestType = null,
-    videoCapture: js.UndefOr[scala.Boolean] = js.undefined,
+    videoCapture: js.UndefOr[VideoCapture] = js.undefined,
     videoEndpoint: String = null
   ): Job = {
     val __obj = js.Dynamic.literal()
@@ -101,7 +101,7 @@ object Job {
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (stopped != null) __obj.updateDynamic("stopped")(stopped.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoCapture)) __obj.updateDynamic("videoCapture")(videoCapture.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoCapture)) __obj.updateDynamic("videoCapture")(videoCapture.get.asInstanceOf[js.Any])
     if (videoEndpoint != null) __obj.updateDynamic("videoEndpoint")(videoEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Job]
   }

@@ -55,11 +55,11 @@ trait DescribeRestoreJobOutput extends js.Object {
 object DescribeRestoreJobOutput {
   @scala.inline
   def apply(
-    BackupSizeInBytes: Int | Double = null,
+    BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
     CompletionDate: timestamp = null,
     CreatedResourceArn: ARN = null,
     CreationDate: timestamp = null,
-    ExpectedCompletionTimeMinutes: Int | Double = null,
+    ExpectedCompletionTimeMinutes: js.UndefOr[Long_] = js.undefined,
     IamRoleArn: IAMRoleArn = null,
     PercentDone: String = null,
     RecoveryPointArn: ARN = null,
@@ -68,11 +68,11 @@ object DescribeRestoreJobOutput {
     StatusMessage: String = null
   ): DescribeRestoreJobOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupSizeInBytes != null) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
     if (CreatedResourceArn != null) __obj.updateDynamic("CreatedResourceArn")(CreatedResourceArn.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (ExpectedCompletionTimeMinutes != null) __obj.updateDynamic("ExpectedCompletionTimeMinutes")(ExpectedCompletionTimeMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExpectedCompletionTimeMinutes)) __obj.updateDynamic("ExpectedCompletionTimeMinutes")(ExpectedCompletionTimeMinutes.get.asInstanceOf[js.Any])
     if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
     if (PercentDone != null) __obj.updateDynamic("PercentDone")(PercentDone.asInstanceOf[js.Any])
     if (RecoveryPointArn != null) __obj.updateDynamic("RecoveryPointArn")(RecoveryPointArn.asInstanceOf[js.Any])

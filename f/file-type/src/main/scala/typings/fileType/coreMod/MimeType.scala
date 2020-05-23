@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.`imageSlashx-canon-cr3`
   - typings.fileType.fileTypeStrings.imageSlashtiff
   - typings.fileType.fileTypeStrings.imageSlashbmp
+  - typings.fileType.fileTypeStrings.imageSlashicns
   - typings.fileType.fileTypeStrings.`imageSlashvndDotms-photo`
   - typings.fileType.fileTypeStrings.imageSlashvndDotadobeDotphotoshop
   - typings.fileType.fileTypeStrings.applicationSlashepubPlussignzip
@@ -67,6 +68,7 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.`imageSlashx-icon`
   - typings.fileType.fileTypeStrings.`videoSlashx-flv`
   - typings.fileType.fileTypeStrings.applicationSlashpostscript
+  - typings.fileType.fileTypeStrings.applicationSlasheps
   - typings.fileType.fileTypeStrings.`applicationSlashx-xz`
   - typings.fileType.fileTypeStrings.`applicationSlashx-sqlite3`
   - typings.fileType.fileTypeStrings.`applicationSlashx-nintendo-nes-rom`
@@ -123,12 +125,17 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.`audioSlashx-xm`
   - typings.fileType.fileTypeStrings.videoSlashMP1S
   - typings.fileType.fileTypeStrings.videoSlashMP2P
+  - typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp
+  - typings.fileType.fileTypeStrings.imageSlashavif
+  - typings.fileType.fileTypeStrings.`applicationSlashx-lzh-compressed`
 */
 trait MimeType extends js.Object
 
 object MimeType {
   @scala.inline
   def applicationSlashdicom: typings.fileType.fileTypeStrings.applicationSlashdicom = "application/dicom".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashdicom]
+  @scala.inline
+  def applicationSlasheps: typings.fileType.fileTypeStrings.applicationSlasheps = "application/eps".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlasheps]
   @scala.inline
   def applicationSlashepubPlussignzip: typings.fileType.fileTypeStrings.applicationSlashepubPlussignzip = "application/epub+zip".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashepubPlussignzip]
   @scala.inline
@@ -162,6 +169,8 @@ object MimeType {
   @scala.inline
   def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument` = "application/vnd.openxmlformats-officedocument.wordprocessingml.document".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`]
   @scala.inline
+  def applicationSlashvndDotsketchupDotskp: typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp = "application/vnd.sketchup.skp".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp]
+  @scala.inline
   def applicationSlashvndDottcpdumpDotpcap: typings.fileType.fileTypeStrings.applicationSlashvndDottcpdumpDotpcap = "application/vnd.tcpdump.pcap".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashvndDottcpdumpDotpcap]
   @scala.inline
   def applicationSlashwasm: typings.fileType.fileTypeStrings.applicationSlashwasm = "application/wasm".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashwasm]
@@ -183,6 +192,8 @@ object MimeType {
   def `applicationSlashx-esri-shape`: typings.fileType.fileTypeStrings.`applicationSlashx-esri-shape` = "application/x-esri-shape".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-esri-shape`]
   @scala.inline
   def `applicationSlashx-google-chrome-extension`: typings.fileType.fileTypeStrings.`applicationSlashx-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-google-chrome-extension`]
+  @scala.inline
+  def `applicationSlashx-lzh-compressed`: typings.fileType.fileTypeStrings.`applicationSlashx-lzh-compressed` = "application/x-lzh-compressed".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-lzh-compressed`]
   @scala.inline
   def `applicationSlashx-lzip`: typings.fileType.fileTypeStrings.`applicationSlashx-lzip` = "application/x-lzip".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-lzip`]
   @scala.inline
@@ -274,6 +285,8 @@ object MimeType {
   @scala.inline
   def imageSlashapng: typings.fileType.fileTypeStrings.imageSlashapng = "image/apng".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashapng]
   @scala.inline
+  def imageSlashavif: typings.fileType.fileTypeStrings.imageSlashavif = "image/avif".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashavif]
+  @scala.inline
   def imageSlashbmp: typings.fileType.fileTypeStrings.imageSlashbmp = "image/bmp".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashbmp]
   @scala.inline
   def imageSlashbpg: typings.fileType.fileTypeStrings.imageSlashbpg = "image/bpg".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashbpg]
@@ -289,6 +302,8 @@ object MimeType {
   def imageSlashheif: typings.fileType.fileTypeStrings.imageSlashheif = "image/heif".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashheif]
   @scala.inline
   def `imageSlashheif-sequence`: typings.fileType.fileTypeStrings.`imageSlashheif-sequence` = "image/heif-sequence".asInstanceOf[typings.fileType.fileTypeStrings.`imageSlashheif-sequence`]
+  @scala.inline
+  def imageSlashicns: typings.fileType.fileTypeStrings.imageSlashicns = "image/icns".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashicns]
   @scala.inline
   def imageSlashjp2: typings.fileType.fileTypeStrings.imageSlashjp2 = "image/jp2".asInstanceOf[typings.fileType.fileTypeStrings.imageSlashjp2]
   @scala.inline

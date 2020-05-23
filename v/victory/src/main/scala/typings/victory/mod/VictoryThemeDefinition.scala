@@ -1,13 +1,13 @@
 package typings.victory.mod
 
-import typings.victory.AnonCornerRadius
-import typings.victory.borderWidthnumberstyledat
-import typings.victory.gutternumberorientationve
-import typings.victory.styleaxisCSSPropertiesaxi
-import typings.victory.styledataCSSPropertieslab
-import typings.victory.styledataCSSPropertieslabCandleColors
-import typings.victory.styledataCSSPropertieslabColorScale
-import typings.victory.stylemaxCSSPropertiesmaxL
+import typings.victory.anon.CornerRadius
+import typings.victory.anon.borderWidthnumberstyledat
+import typings.victory.anon.gutternumberorientationve
+import typings.victory.anon.styleaxisCSSPropertiesaxi
+import typings.victory.anon.styledataCSSPropertieslab
+import typings.victory.anon.styledataCSSPropertieslabCandleColors
+import typings.victory.anon.styledataCSSPropertieslabColorScale
+import typings.victory.anon.stylemaxCSSPropertiesmaxL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait VictoryThemeDefinition extends js.Object {
   var pie: js.UndefOr[styledataCSSPropertieslab] = js.undefined
   var scatter: js.UndefOr[styledataCSSPropertieslab] = js.undefined
   var stack: js.UndefOr[ThemeBaseProps] = js.undefined
-  var tooltip: js.UndefOr[AnonCornerRadius] = js.undefined
+  var tooltip: js.UndefOr[CornerRadius] = js.undefined
   var voronoi: js.UndefOr[styledataCSSPropertieslabColorScale] = js.undefined
 }
 
@@ -46,7 +46,7 @@ object VictoryThemeDefinition {
     pie: styledataCSSPropertieslab = null,
     scatter: styledataCSSPropertieslab = null,
     stack: ThemeBaseProps = null,
-    tooltip: AnonCornerRadius = null,
+    tooltip: CornerRadius = null,
     voronoi: styledataCSSPropertieslabColorScale = null
   ): VictoryThemeDefinition = {
     val __obj = js.Dynamic.literal()

@@ -5,18 +5,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides socket control data on a StreamSocketListener object. */
-@JSGlobal("Windows.Networking.Sockets.StreamSocketListenerControl")
-@js.native
-abstract class StreamSocketListenerControl () extends js.Object {
+trait StreamSocketListenerControl extends js.Object {
   /** A value that indicates whether keep-alive packets should be sent on a StreamSocket object created when a connection is received by the StreamSocketListener object. */
-  var keepAlive: Boolean = js.native
+  var keepAlive: Boolean
   /** A value that indicates whether the Nagle algorithm is used on a StreamSocket object created when a connection is received by the StreamSocketListener object. */
-  var noDelay: Boolean = js.native
+  var noDelay: Boolean
   /** The size, in bytes, of the send buffer to be used for sending data on a StreamSocket object created when a connection is received by the StreamSocketListener object. */
-  var outboundBufferSizeInBytes: Double = js.native
+  var outboundBufferSizeInBytes: Double
   /** The hop limit on an outbound packet sent to a unicast IP address by the StreamSocket object created when a connection is received by the StreamSocketListener object. */
-  var outboundUnicastHopLimit: Double = js.native
+  var outboundUnicastHopLimit: Double
   /** The quality of service to be set on a StreamSocket object created when a connection is received by the StreamSocketListener object. */
-  var qualityOfService: SocketQualityOfService = js.native
+  var qualityOfService: SocketQualityOfService
+}
+
+object StreamSocketListenerControl {
+  @scala.inline
+  def apply(
+    keepAlive: Boolean,
+    noDelay: Boolean,
+    outboundBufferSizeInBytes: Double,
+    outboundUnicastHopLimit: Double,
+    qualityOfService: SocketQualityOfService
+  ): StreamSocketListenerControl = {
+    val __obj = js.Dynamic.literal(keepAlive = keepAlive.asInstanceOf[js.Any], noDelay = noDelay.asInstanceOf[js.Any], outboundBufferSizeInBytes = outboundBufferSizeInBytes.asInstanceOf[js.Any], outboundUnicastHopLimit = outboundUnicastHopLimit.asInstanceOf[js.Any], qualityOfService = qualityOfService.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StreamSocketListenerControl]
+  }
 }
 

@@ -22,7 +22,7 @@ object Context {
   @scala.inline
   def apply(
     root: js.Any,
-    StringDictionary: /* prop */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     parentTags: Hash[Tag] = null,
     tag: Tag = null,
     tagCtx: js.Any = null

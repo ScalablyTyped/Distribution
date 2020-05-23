@@ -1,6 +1,6 @@
 package typings.agenda.mod
 
-import typings.agenda.AnonAddress
+import typings.agenda.anon.Address
 import typings.mongodb.mod.Db
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait AgendaConfiguration extends js.Object {
   /**
     * Specifies that Agenda should connect to MongoDB.
     */
-  var db: js.UndefOr[AnonAddress] = js.undefined
+  var db: js.UndefOr[Address] = js.undefined
   /**
     * Takes a number which specifies the default number of a specific job that can be running at any given moment.
     * By default it is 5.
@@ -52,22 +52,22 @@ trait AgendaConfiguration extends js.Object {
 object AgendaConfiguration {
   @scala.inline
   def apply(
-    db: AnonAddress = null,
-    defaultConcurrency: Int | Double = null,
-    defaultLockLifetime: Int | Double = null,
-    defaultLockLimit: Int | Double = null,
-    lockLimit: Int | Double = null,
-    maxConcurrency: Int | Double = null,
+    db: Address = null,
+    defaultConcurrency: js.UndefOr[Double] = js.undefined,
+    defaultLockLifetime: js.UndefOr[Double] = js.undefined,
+    defaultLockLimit: js.UndefOr[Double] = js.undefined,
+    lockLimit: js.UndefOr[Double] = js.undefined,
+    maxConcurrency: js.UndefOr[Double] = js.undefined,
     mongo: Db = null,
     processEvery: String | Double = null
   ): AgendaConfiguration = {
     val __obj = js.Dynamic.literal()
     if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
-    if (defaultConcurrency != null) __obj.updateDynamic("defaultConcurrency")(defaultConcurrency.asInstanceOf[js.Any])
-    if (defaultLockLifetime != null) __obj.updateDynamic("defaultLockLifetime")(defaultLockLifetime.asInstanceOf[js.Any])
-    if (defaultLockLimit != null) __obj.updateDynamic("defaultLockLimit")(defaultLockLimit.asInstanceOf[js.Any])
-    if (lockLimit != null) __obj.updateDynamic("lockLimit")(lockLimit.asInstanceOf[js.Any])
-    if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultConcurrency)) __obj.updateDynamic("defaultConcurrency")(defaultConcurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultLockLifetime)) __obj.updateDynamic("defaultLockLifetime")(defaultLockLifetime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultLockLimit)) __obj.updateDynamic("defaultLockLimit")(defaultLockLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockLimit)) __obj.updateDynamic("lockLimit")(lockLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrency)) __obj.updateDynamic("maxConcurrency")(maxConcurrency.get.asInstanceOf[js.Any])
     if (mongo != null) __obj.updateDynamic("mongo")(mongo.asInstanceOf[js.Any])
     if (processEvery != null) __obj.updateDynamic("processEvery")(processEvery.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgendaConfiguration]

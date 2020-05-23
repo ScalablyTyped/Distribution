@@ -18,10 +18,14 @@ trait FilteredBidDetailRow extends js.Object {
 
 object FilteredBidDetailRow {
   @scala.inline
-  def apply(bidCount: MetricValue = null, detailId: Int | Double = null, rowDimensions: RowDimensions = null): FilteredBidDetailRow = {
+  def apply(
+    bidCount: MetricValue = null,
+    detailId: js.UndefOr[Double] = js.undefined,
+    rowDimensions: RowDimensions = null
+  ): FilteredBidDetailRow = {
     val __obj = js.Dynamic.literal()
     if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount.asInstanceOf[js.Any])
-    if (detailId != null) __obj.updateDynamic("detailId")(detailId.asInstanceOf[js.Any])
+    if (!js.isUndefined(detailId)) __obj.updateDynamic("detailId")(detailId.get.asInstanceOf[js.Any])
     if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilteredBidDetailRow]
   }

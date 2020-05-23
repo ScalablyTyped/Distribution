@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Manages speech input for free-form dictation, or an arbitrary sequence of words or phrases that are defined in a grammar set. */
-@JSGlobal("Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession")
 @js.native
-abstract class SpeechContinuousRecognitionSession () extends js.Object {
+trait SpeechContinuousRecognitionSession extends js.Object {
   /** Gets or sets the time threshold at which the continuous recognition session ends due to lack of audio input. */
   var autoStopSilenceTimeout: Double = js.native
   /** Occurs when a continuous recognition session ends. */

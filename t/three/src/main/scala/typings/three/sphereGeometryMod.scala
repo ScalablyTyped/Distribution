@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.PhiStart
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import scala.scalajs.js
@@ -20,7 +21,7 @@ object sphereGeometryMod extends js.Object {
       thetaStart: js.UndefOr[Double],
       thetaLength: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonPhiStart = js.native
+    var parameters: PhiStart = js.native
   }
   
   @js.native
@@ -45,7 +46,7 @@ object sphereGeometryMod extends js.Object {
       thetaStart: js.UndefOr[Double],
       thetaLength: js.UndefOr[Double]
     ) = this()
-    var parameters: AnonPhiStart = js.native
+    var parameters: PhiStart = js.native
   }
   
 }

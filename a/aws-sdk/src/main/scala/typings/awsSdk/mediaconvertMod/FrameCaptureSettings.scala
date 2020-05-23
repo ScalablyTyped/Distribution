@@ -27,16 +27,16 @@ trait FrameCaptureSettings extends js.Object {
 object FrameCaptureSettings {
   @scala.inline
   def apply(
-    FramerateDenominator: Int | Double = null,
-    FramerateNumerator: Int | Double = null,
-    MaxCaptures: Int | Double = null,
-    Quality: Int | Double = null
+    FramerateDenominator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
+    FramerateNumerator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
+    MaxCaptures: js.UndefOr[integerMin1Max10000000] = js.undefined,
+    Quality: js.UndefOr[integerMin1Max100] = js.undefined
   ): FrameCaptureSettings = {
     val __obj = js.Dynamic.literal()
-    if (FramerateDenominator != null) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.asInstanceOf[js.Any])
-    if (FramerateNumerator != null) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.asInstanceOf[js.Any])
-    if (MaxCaptures != null) __obj.updateDynamic("MaxCaptures")(MaxCaptures.asInstanceOf[js.Any])
-    if (Quality != null) __obj.updateDynamic("Quality")(Quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxCaptures)) __obj.updateDynamic("MaxCaptures")(MaxCaptures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Quality)) __obj.updateDynamic("Quality")(Quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameCaptureSettings]
   }
 }

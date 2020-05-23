@@ -1,6 +1,6 @@
 package typings.appleMapkitJs.mapkit
 
-import typings.appleMapkitJs.AnonHeight
+import typings.appleMapkitJs.anon.Height
 import typings.std.DOMPoint
 import typings.std.Element
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait AnnotationCalloutDelegate extends js.Object {
   /**
     * Returns a point determining the callout's anchor offset.
     */
-  var calloutAnchorOffsetForAnnotation: js.UndefOr[js.Function2[/* annotation */ Annotation, /* size */ AnonHeight, DOMPoint]] = js.undefined
+  var calloutAnchorOffsetForAnnotation: js.UndefOr[js.Function2[/* annotation */ Annotation, /* size */ Height, DOMPoint]] = js.undefined
   /**
     * Returns a CSS animation used when the callout appears.
     */
@@ -50,7 +50,7 @@ trait AnnotationCalloutDelegate extends js.Object {
 object AnnotationCalloutDelegate {
   @scala.inline
   def apply(
-    calloutAnchorOffsetForAnnotation: (/* annotation */ Annotation, /* size */ AnonHeight) => DOMPoint = null,
+    calloutAnchorOffsetForAnnotation: (/* annotation */ Annotation, /* size */ Height) => DOMPoint = null,
     calloutAppearanceAnimationForAnnotation: /* annotation */ Annotation => String = null,
     calloutContentForAnnotation: /* annotation */ Annotation => Element = null,
     calloutElementForAnnotation: /* annotation */ Annotation => Element = null,

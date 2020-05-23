@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object WiFiDirectConfigurationMethod extends js.Object {
   /** This device uses the pushbutton method for pairing. A user pushes a button on both the connecting device and the accepting device in order to establish a connection between them. */
   @js.native
   sealed trait pushButton extends WiFiDirectConfigurationMethod
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectConfigurationMethod with Double] = js.native
-  /* 1 */ @js.native
-  object displayPin extends TopLevel[displayPin with Double]
-  
-  /* 0 */ @js.native
-  object providePin extends TopLevel[providePin with Double]
-  
-  /* 2 */ @js.native
-  object pushButton extends TopLevel[pushButton with Double]
   
 }
 

@@ -49,15 +49,15 @@ object GoogleCloudMlV1HyperparameterSpec {
   def apply(
     goal: String = null,
     hyperparameterMetricTag: String = null,
-    maxParallelTrials: Int | Double = null,
-    maxTrials: Int | Double = null,
+    maxParallelTrials: js.UndefOr[Double] = js.undefined,
+    maxTrials: js.UndefOr[Double] = js.undefined,
     params: js.Array[GoogleCloudMlV1ParameterSpec] = null
   ): GoogleCloudMlV1HyperparameterSpec = {
     val __obj = js.Dynamic.literal()
     if (goal != null) __obj.updateDynamic("goal")(goal.asInstanceOf[js.Any])
     if (hyperparameterMetricTag != null) __obj.updateDynamic("hyperparameterMetricTag")(hyperparameterMetricTag.asInstanceOf[js.Any])
-    if (maxParallelTrials != null) __obj.updateDynamic("maxParallelTrials")(maxParallelTrials.asInstanceOf[js.Any])
-    if (maxTrials != null) __obj.updateDynamic("maxTrials")(maxTrials.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxParallelTrials)) __obj.updateDynamic("maxParallelTrials")(maxParallelTrials.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTrials)) __obj.updateDynamic("maxTrials")(maxTrials.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1HyperparameterSpec]
   }

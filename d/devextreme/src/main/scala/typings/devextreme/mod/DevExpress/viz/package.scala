@@ -10,7 +10,7 @@ package object viz {
   type BaseSparkline = typings.devextreme.mod.DevExpress.viz.BaseWidget
   /* Rewritten from type alias, can be one of: 
     - scala.Double
-    - typings.devextreme.AnonDays
+    - typings.devextreme.anon.Days
     - typings.devextreme.devextremeStrings.day
     - typings.devextreme.devextremeStrings.hour
     - typings.devextreme.devextremeStrings.millisecond

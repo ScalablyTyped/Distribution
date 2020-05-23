@@ -1,6 +1,6 @@
 package typings.statsdClient.mod
 
-import typings.statsdClient.AnonGetExpressMiddleware
+import typings.statsdClient.anon.GetExpressMiddleware
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StatsdClient extends js.Object {
-  var helpers: AnonGetExpressMiddleware = js.native
+  var helpers: GetExpressMiddleware = js.native
   def close(): this.type = js.native
   def counter(metric: String, delta: Double): this.type = js.native
   def counter(metric: String, delta: Double, tags: Tags): this.type = js.native

@@ -20,6 +20,7 @@ trait KnexDbManager extends js.Object {
   def dropDb(dbName: String): js.Promise[Unit] = js.native
   def knexInstance(): QueryBuilder[_, _] = js.native
   def migrateDb(): js.Promise[Unit] = js.native
+  def populateDb(): js.Promise[Unit] = js.native
   def populateDb(glob: String): js.Promise[Unit] = js.native
   def truncateDb(): js.Promise[Unit] = js.native
   def truncateDb(ignoreTables: js.Array[String]): js.Promise[Unit] = js.native

@@ -13,10 +13,13 @@ trait IAssetFileDef extends js.Object {
 
 object IAssetFileDef {
   @scala.inline
-  def apply(filename: String = null, tensorInfo: ITensorInfo = null): IAssetFileDef = {
+  def apply(
+    filename: js.UndefOr[Null | String] = js.undefined,
+    tensorInfo: js.UndefOr[Null | ITensorInfo] = js.undefined
+  ): IAssetFileDef = {
     val __obj = js.Dynamic.literal()
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (tensorInfo != null) __obj.updateDynamic("tensorInfo")(tensorInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(filename)) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(tensorInfo)) __obj.updateDynamic("tensorInfo")(tensorInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAssetFileDef]
   }
 }

@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonDataArray
+import typings.reactWeui.anon.DataArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ class Grids protected () extends js.Object {
 @JSImport("react-weui", "Grids")
 @js.native
 object Grids extends js.Object {
-  var defaultProps: AnonDataArray = js.native
+  var defaultProps: DataArray = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

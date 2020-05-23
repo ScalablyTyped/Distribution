@@ -12,11 +12,11 @@ trait RestPresenceParams extends js.Object {
 
 object RestPresenceParams {
   @scala.inline
-  def apply(clientId: String = null, connectionId: String = null, limit: Int | Double = null): RestPresenceParams = {
+  def apply(clientId: String = null, connectionId: String = null, limit: js.UndefOr[Double] = js.undefined): RestPresenceParams = {
     val __obj = js.Dynamic.literal()
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestPresenceParams]
   }
 }

@@ -13,12 +13,17 @@ trait OpenGraphImages extends js.Object {
 
 object OpenGraphImages {
   @scala.inline
-  def apply(alt: String = null, height: Int | Double = null, url: String = null, width: Int | Double = null): OpenGraphImages = {
+  def apply(
+    alt: String = null,
+    height: js.UndefOr[Double] = js.undefined,
+    url: String = null,
+    width: js.UndefOr[Double] = js.undefined
+  ): OpenGraphImages = {
     val __obj = js.Dynamic.literal()
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenGraphImages]
   }
 }

@@ -1,7 +1,7 @@
 package typings.reactHotLoader.mod
 
 import typings.react.mod.ComponentType
-import typings.reactHotLoader.AnonErrors
+import typings.reactHotLoader.anon.Errors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait Config extends js.Object {
   /**
     * Global error overlay
     */
-  var ErrorOverlay: ComponentType[AnonErrors]
+  var ErrorOverlay: ComponentType[Errors]
   /**
     * Allows SFC to be used, enables "intermediate" components used by Relay, should be disabled for Preact
     */
@@ -79,7 +79,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    ErrorOverlay: ComponentType[AnonErrors],
+    ErrorOverlay: ComponentType[Errors],
     allowSFC: Boolean,
     disableHotRenderer: Boolean,
     disableHotRendererWhenInjected: Boolean,

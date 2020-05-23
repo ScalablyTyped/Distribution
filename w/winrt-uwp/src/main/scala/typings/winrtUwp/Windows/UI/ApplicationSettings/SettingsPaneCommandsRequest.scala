@@ -6,10 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains properties that are only available during the CommandsRequested event. */
-@JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest")
-@js.native
-abstract class SettingsPaneCommandsRequest () extends js.Object {
+trait SettingsPaneCommandsRequest extends js.Object {
   /** A vector that is available during the CommandsRequested event. Append SettingsCommand objects to it to make them available to the SettingsPane UI. */
-  var applicationCommands: IVector[SettingsCommand] = js.native
+  var applicationCommands: IVector[SettingsCommand]
+}
+
+object SettingsPaneCommandsRequest {
+  @scala.inline
+  def apply(applicationCommands: IVector[SettingsCommand]): SettingsPaneCommandsRequest = {
+    val __obj = js.Dynamic.literal(applicationCommands = applicationCommands.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SettingsPaneCommandsRequest]
+  }
 }
 

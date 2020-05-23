@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BarbellWeight protected () extends js.Object {
   def this(workingWeight: Double, lift: String) = this()
-  def this(workingWeight: Double, lift: String, options: options) = this()
+  def this(workingWeight: Double, lift: String, options: typings.barbellweights.mod.options) = this()
   def getResults(): js.Any = js.native
 }
 

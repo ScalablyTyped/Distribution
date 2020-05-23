@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait Settings extends js.Object {
   /**
-  		 * RowGroup extension options
-  		 */
+    * RowGroup extension options
+    */
   var rowGroup: js.UndefOr[Boolean | RowGroupSettings] = js.undefined
 }
 

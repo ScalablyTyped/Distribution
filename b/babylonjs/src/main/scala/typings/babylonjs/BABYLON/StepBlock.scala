@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.StepBlock")
 @js.native
-class StepBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new StepBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait StepBlock extends NodeMaterialBlock {
   /**
     * Gets the edge operand input component
     */

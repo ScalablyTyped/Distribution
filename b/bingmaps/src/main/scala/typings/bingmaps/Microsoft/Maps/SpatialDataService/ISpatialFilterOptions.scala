@@ -38,14 +38,14 @@ object ISpatialFilterOptions {
     end: String | Location = null,
     intersects: String | LocationRect | IPrimitive = null,
     location: String | Location = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     start: String | Location = null
   ): ISpatialFilterOptions = {
     val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (intersects != null) __obj.updateDynamic("intersects")(intersects.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpatialFilterOptions]
   }

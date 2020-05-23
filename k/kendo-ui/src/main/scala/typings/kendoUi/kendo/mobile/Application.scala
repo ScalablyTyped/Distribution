@@ -1,6 +1,6 @@
 package typings.kendoUi.kendo.mobile
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import typings.kendoUi.kendo.Router
 import typings.kendoUi.kendo.mobile.ui.Pane
 import typings.kendoUi.kendo.mobile.ui.Scroller
@@ -9,11 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.mobile.Application")
 @js.native
-class Application () extends Observable_ {
-  def this(element: js.Any) = this()
-  def this(element: js.Any, options: ApplicationOptions) = this()
+trait Application extends Observable {
   var options: ApplicationOptions = js.native
   var pane: Pane = js.native
   var router: Router = js.native

@@ -23,7 +23,7 @@ object FormulaTransform {
   ): FormulaTransform = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(initonly)) __obj.updateDynamic("initonly")(initonly.asInstanceOf[js.Any])
+    if (!js.isUndefined(initonly)) __obj.updateDynamic("initonly")(initonly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormulaTransform]
   }
 }

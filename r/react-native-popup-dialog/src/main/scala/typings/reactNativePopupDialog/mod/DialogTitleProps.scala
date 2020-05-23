@@ -21,14 +21,14 @@ object DialogTitleProps {
     title: String,
     align: AlignTypes = null,
     hasTitleBar: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    textStyle: StyleProp[TextStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    textStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined
   ): DialogTitleProps = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTitleBar)) __obj.updateDynamic("hasTitleBar")(hasTitleBar.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTitleBar)) __obj.updateDynamic("hasTitleBar")(hasTitleBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(textStyle)) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogTitleProps]
   }
 }

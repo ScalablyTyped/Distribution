@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +18,4 @@ trait RouteTask extends Task {
   def solve(params: RouteParameters): js.Promise[RouteResult] = js.native
   def solve(params: RouteParameters, requestOptions: js.Any): js.Promise[RouteResult] = js.native
 }
-
-@JSGlobal("__esri.RouteTask")
-@js.native
-object RouteTask extends TopLevel[RouteTaskConstructor]
 

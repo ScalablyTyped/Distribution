@@ -22,10 +22,14 @@ trait ListProvisionedConcurrencyConfigsRequest extends js.Object {
 
 object ListProvisionedConcurrencyConfigsRequest {
   @scala.inline
-  def apply(FunctionName: FunctionName, Marker: String = null, MaxItems: Int | Double = null): ListProvisionedConcurrencyConfigsRequest = {
+  def apply(
+    FunctionName: FunctionName,
+    Marker: String = null,
+    MaxItems: js.UndefOr[MaxProvisionedConcurrencyConfigListItems] = js.undefined
+  ): ListProvisionedConcurrencyConfigsRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisionedConcurrencyConfigsRequest]
   }
 }

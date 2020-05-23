@@ -11,10 +11,10 @@ trait MkdirOptions extends js.Object {
 
 object MkdirOptions {
   @scala.inline
-  def apply(fs: js.Any = null, mode: Int | Double = null): MkdirOptions = {
+  def apply(fs: js.Any = null, mode: js.UndefOr[Double] = js.undefined): MkdirOptions = {
     val __obj = js.Dynamic.literal()
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MkdirOptions]
   }
 }

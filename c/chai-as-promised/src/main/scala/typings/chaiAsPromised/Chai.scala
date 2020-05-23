@@ -1,8 +1,8 @@
 package typings.chaiAsPromised
 
-import typings.chai.Chai_.LanguageChains
-import typings.chai.Chai_.NumericComparison
-import typings.chai.Chai_.TypeComparison
+import typings.chai.Chai.LanguageChains
+import typings.chai.Chai.NumericComparison
+import typings.chai.Chai.TypeComparison
 import typings.std.Error
 import typings.std.PromiseLike
 import typings.std.PropertyDescriptor

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FramingBehavior")
 @js.native
-class FramingBehavior () extends Behavior[ArcRotateCamera] {
+trait FramingBehavior extends Behavior[ArcRotateCamera] {
   var _animatables: js.Any = js.native
   /**
     *  Applies any current user interaction to the camera. Takes into account maximum alpha rotation.
@@ -49,9 +48,6 @@ class FramingBehavior () extends Behavior[ArcRotateCamera] {
     * camera limits and sensibilities.
     */
   var autoCorrectCameraLimitsAndSensibility: Boolean = js.native
-  /** gets or sets behavior's name */
-  /* CompleteClass */
-  override var name: String = js.native
   /**
     * Calculates the lowest radius for the camera based on the bounding box of the mesh.
     * @param mesh The mesh on which to base the calculation. mesh boundingInfo used to estimate necessary
@@ -60,12 +56,6 @@ class FramingBehavior () extends Behavior[ArcRotateCamera] {
     *		 to fully enclose the mesh in the viewing frustum.
     */
   /* protected */ def _calculateLowerRadiusFromModelBoundingSphere(minimumWorld: Vector3, maximumWorld: Vector3): Double = js.native
-  /**
-    * Called when the behavior is attached to a target
-    * @param target defines the target where the behavior is attached to
-    */
-  /* CompleteClass */
-  override def attach(target: ArcRotateCamera): Unit = js.native
   /**
     * Gets the angle above/below the horizontal plane to return to when the return to default elevation idle
     * behaviour is triggered, in radians.
@@ -76,11 +66,6 @@ class FramingBehavior () extends Behavior[ArcRotateCamera] {
     * behaviour is triggered, in radians.
     */
   def defaultElevation(elevation: Double): js.Any = js.native
-  /**
-    * Called when the behavior is detached from its target
-    */
-  /* CompleteClass */
-  override def detach(): Unit = js.native
   /**
     * Gets the time (in milliseconds) taken to return to the default beta position.
     * Negative value indicates camera should not return to default.
@@ -107,11 +92,6 @@ class FramingBehavior () extends Behavior[ArcRotateCamera] {
     * Sets the transition time when framing the mesh, in milliseconds
     */
   def framingTime(time: Double): js.Any = js.native
-  /**
-    * Function called when the behavior needs to be initialized (after attaching it to a target)
-    */
-  /* CompleteClass */
-  override def init(): Unit = js.native
   /**
     * Gets a value indicating if the user is moving the camera
     */
@@ -203,27 +183,5 @@ class FramingBehavior () extends Behavior[ArcRotateCamera] {
     * Sets the flag that indicates if user zooming should stop animation.
     */
   def zoomStopsAnimation(flag: Boolean): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.FramingBehavior")
-@js.native
-object FramingBehavior extends js.Object {
-  /**
-    * The easing function used by animations
-    */
-  var EasingFunction: ExponentialEase = js.native
-  /**
-    * The easing mode used by animations
-    */
-  var EasingMode: Double = js.native
-  /**
-    * The camera is not allowed to zoom closer to the mesh than the point at which the adjusted bounding sphere touches the frustum sides
-    */
-  var FitFrustumSidesMode: Double = js.native
-  /**
-    * The camera can move all the way towards the mesh.
-    */
-  var IgnoreBoundsSizeMode: Double = js.native
 }
 

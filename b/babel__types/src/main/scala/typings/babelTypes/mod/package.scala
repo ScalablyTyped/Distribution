@@ -199,6 +199,7 @@ package object mod {
     - typings.babelTypes.mod.TSAnyKeyword_
     - typings.babelTypes.mod.TSArrayType_
     - typings.babelTypes.mod.TSAsExpression_
+    - typings.babelTypes.mod.TSBaseType
     - typings.babelTypes.mod.TSBigIntKeyword_
     - typings.babelTypes.mod.TSBooleanKeyword_
     - typings.babelTypes.mod.TSCallSignatureDeclaration_
@@ -297,7 +298,7 @@ package object mod {
   type RegexLiteral = typings.babelTypes.mod.RegExpLiteral_
   type RestProperty = typings.babelTypes.mod.RestElement_
   type SpreadProperty = typings.babelTypes.mod.SpreadElement_
-  type TraversalAncestors = js.Array[typings.babelTypes.AnonIndex]
+  type TraversalAncestors = js.Array[typings.babelTypes.anon.Index]
   type TraversalHandler[T] = js.ThisFunction3[
     /* this */ js.UndefOr[scala.Nothing], 
     /* node */ typings.babelTypes.mod.Node, 

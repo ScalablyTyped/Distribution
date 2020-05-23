@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Publishing.CustomizableString")
 @js.native
-class CustomizableString () extends ClientObject {
+trait CustomizableString extends ClientObject {
   def get_defaultValue(): String = js.native
   def get_usesDefaultValue(): Boolean = js.native
   def get_value(): String = js.native

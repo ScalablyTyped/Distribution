@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents the categories on an item.
-  * 
+  *
   * In Outlook, a user can tag messages and appointments by using a category to color-code them.
   * The user defines {@link Office.MasterCategories | categories in a master list} on their mailbox.
   * They can then apply one or more categories to an item.
@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox 1.8]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
@@ -30,13 +30,13 @@ trait Categories extends js.Object {
     * [Api set: Mailbox 1.8]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `InvalidCategory`: Invalid categories were provided.
     *
     * @param categories - The categories to be added to the item.
@@ -53,13 +53,13 @@ trait Categories extends js.Object {
     * [Api set: Mailbox 1.8]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `InvalidCategory`: Invalid categories were provided.
     *
     * @param categories - The categories to be added to the item.
@@ -79,9 +79,9 @@ trait Categories extends js.Object {
     * [Api set: Mailbox 1.8]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
@@ -94,9 +94,9 @@ trait Categories extends js.Object {
     * [Api set: Mailbox 1.8]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param options - An object literal that contains one or more of the following properties.
@@ -114,9 +114,9 @@ trait Categories extends js.Object {
     * [Api set: Mailbox 1.8]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param categories - The categories to be removed from the item.
@@ -132,9 +132,9 @@ trait Categories extends js.Object {
     * [Api set: Mailbox 1.8]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param categories - The categories to be removed from the item.

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/api/field_path", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/api/field_path", JSImport.Namespace)
 @js.native
 object fieldPathMod extends js.Object {
   @js.native

@@ -26,12 +26,12 @@ object ObjectStyleOptions {
     icon: Icon,
     arrows: typings.heremaps.H.map.ArrowStyle.Options = null,
     style: typings.heremaps.H.map.SpatialStyle.Options = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): ObjectStyleOptions = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
     if (arrows != null) __obj.updateDynamic("arrows")(arrows.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectStyleOptions]
   }
 }

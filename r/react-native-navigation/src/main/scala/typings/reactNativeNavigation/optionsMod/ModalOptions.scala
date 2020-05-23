@@ -16,7 +16,7 @@ object ModalOptions {
   @scala.inline
   def apply(swipeToDismiss: js.UndefOr[Boolean] = js.undefined): ModalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(swipeToDismiss)) __obj.updateDynamic("swipeToDismiss")(swipeToDismiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeToDismiss)) __obj.updateDynamic("swipeToDismiss")(swipeToDismiss.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalOptions]
   }
 }

@@ -28,13 +28,13 @@ object CodeContentDescription {
   @scala.inline
   def apply(
     CodeMD5: CodeMD5 = null,
-    CodeSize: Int | Double = null,
+    CodeSize: js.UndefOr[CodeSize] = js.undefined,
     S3ApplicationCodeLocationDescription: S3ApplicationCodeLocationDescription = null,
     TextContent: TextContent = null
   ): CodeContentDescription = {
     val __obj = js.Dynamic.literal()
     if (CodeMD5 != null) __obj.updateDynamic("CodeMD5")(CodeMD5.asInstanceOf[js.Any])
-    if (CodeSize != null) __obj.updateDynamic("CodeSize")(CodeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize.get.asInstanceOf[js.Any])
     if (S3ApplicationCodeLocationDescription != null) __obj.updateDynamic("S3ApplicationCodeLocationDescription")(S3ApplicationCodeLocationDescription.asInstanceOf[js.Any])
     if (TextContent != null) __obj.updateDynamic("TextContent")(TextContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeContentDescription]

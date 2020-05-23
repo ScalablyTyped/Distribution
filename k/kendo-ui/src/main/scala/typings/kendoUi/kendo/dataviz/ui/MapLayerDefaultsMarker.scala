@@ -12,9 +12,13 @@ trait MapLayerDefaultsMarker extends js.Object {
 
 object MapLayerDefaultsMarker {
   @scala.inline
-  def apply(opacity: Int | Double = null, shape: String = null, tooltip: MapLayerDefaultsMarkerTooltip = null): MapLayerDefaultsMarker = {
+  def apply(
+    opacity: js.UndefOr[Double] = js.undefined,
+    shape: String = null,
+    tooltip: MapLayerDefaultsMarkerTooltip = null
+  ): MapLayerDefaultsMarker = {
     val __obj = js.Dynamic.literal()
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsMarker]

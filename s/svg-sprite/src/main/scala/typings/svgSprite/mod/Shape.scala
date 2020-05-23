@@ -1,8 +1,8 @@
 package typings.svgSprite.mod
 
-import typings.svgSprite.AnonAttributes
-import typings.svgSprite.AnonBox
-import typings.svgSprite.AnonGenerator
+import typings.svgSprite.anon.Attributes
+import typings.svgSprite.anon.Box
+import typings.svgSprite.anon.Generator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +22,11 @@ trait Shape extends js.Object {
   /**
     * Dimension related options
     */
-  var dimension: js.UndefOr[AnonAttributes] = js.undefined
+  var dimension: js.UndefOr[Attributes] = js.undefined
   /**
     * SVG shape ID related options
     */
-  var id: js.UndefOr[AnonGenerator] = js.undefined
+  var id: js.UndefOr[Generator] = js.undefined
   /**
     * Path to YAML file with meta / accessibility data
     */
@@ -34,7 +34,7 @@ trait Shape extends js.Object {
   /**
     * Spacing related options
     */
-  var spacing: js.UndefOr[AnonBox] = js.undefined
+  var spacing: js.UndefOr[Box] = js.undefined
   /**
     * List of transformations / optimizations
     */
@@ -46,10 +46,10 @@ object Shape {
   def apply(
     align: String = null,
     dest: String = null,
-    dimension: AnonAttributes = null,
-    id: AnonGenerator = null,
+    dimension: Attributes = null,
+    id: Generator = null,
     meta: String = null,
-    spacing: AnonBox = null,
+    spacing: Box = null,
     transform: js.Array[String | CustomConfigurationTransform | CustomCallbackTransform] = null
   ): Shape = {
     val __obj = js.Dynamic.literal()

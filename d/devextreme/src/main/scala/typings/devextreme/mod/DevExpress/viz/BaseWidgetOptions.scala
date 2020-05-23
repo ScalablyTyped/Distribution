@@ -1,12 +1,12 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonCancelComponentData
-import typings.devextreme.AnonComponentTElementDxElementModelAny
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonFormatModel
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
-import typings.devextreme.AnonTargetAny
+import typings.devextreme.anon.CancelComponentData
+import typings.devextreme.anon.ComponentTElementDxElementModelAny
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.FormatModel
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.TargetAny
 import typings.devextreme.devextremeStrings.genericDotcarmine
 import typings.devextreme.devextremeStrings.genericDotcontrast
 import typings.devextreme.devextremeStrings.genericDotdark
@@ -36,15 +36,15 @@ trait BaseWidgetOptions[T] extends DOMComponentOptions[T] {
   /** @name BaseWidget.Options.margin */
   var margin: js.UndefOr[BaseWidgetMargin] = js.undefined
   /** @name BaseWidget.Options.onDrawn */
-  var onDrawn: js.UndefOr[js.Function1[/* e */ AnonComponentTElementDxElementModelAny[T], _]] = js.undefined
+  var onDrawn: js.UndefOr[js.Function1[/* e */ ComponentTElementDxElementModelAny[T], _]] = js.undefined
   /** @name BaseWidget.Options.onExported */
-  var onExported: js.UndefOr[js.Function1[/* e */ AnonComponentTElementDxElementModelAny[T], _]] = js.undefined
+  var onExported: js.UndefOr[js.Function1[/* e */ ComponentTElementDxElementModelAny[T], _]] = js.undefined
   /** @name BaseWidget.Options.onExporting */
-  var onExporting: js.UndefOr[js.Function1[/* e */ AnonFormatModel[T], _]] = js.undefined
+  var onExporting: js.UndefOr[js.Function1[/* e */ FormatModel[T], _]] = js.undefined
   /** @name BaseWidget.Options.onFileSaving */
-  var onFileSaving: js.UndefOr[js.Function1[/* e */ AnonCancelComponentData[T], _]] = js.undefined
+  var onFileSaving: js.UndefOr[js.Function1[/* e */ CancelComponentData[T], _]] = js.undefined
   /** @name BaseWidget.Options.onIncidentOccurred */
-  var onIncidentOccurred: js.UndefOr[js.Function1[/* e */ AnonTargetAny[T], _]] = js.undefined
+  var onIncidentOccurred: js.UndefOr[js.Function1[/* e */ TargetAny[T], _]] = js.undefined
   /** @name BaseWidget.Options.pathModified */
   var pathModified: js.UndefOr[Boolean] = js.undefined
   /** @name BaseWidget.Options.redrawOnResize */
@@ -71,14 +71,14 @@ object BaseWidgetOptions {
     height: Double | String | (js.Function0[Double | String]) = null,
     loadingIndicator: BaseWidgetLoadingIndicator = null,
     margin: BaseWidgetMargin = null,
-    onDisposing: /* e */ AnonModel[T] => _ = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[T] => _ = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[T] => _ = null,
-    onExporting: /* e */ AnonFormatModel[T] => _ = null,
-    onFileSaving: /* e */ AnonCancelComponentData[T] => _ = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[T] => _ = null,
-    onInitialized: /* e */ AnonElement[T] => _ = null,
-    onOptionChanged: /* e */ AnonName[T] => _ = null,
+    onDisposing: /* e */ Model[T] => _ = null,
+    onDrawn: /* e */ ComponentTElementDxElementModelAny[T] => _ = null,
+    onExported: /* e */ ComponentTElementDxElementModelAny[T] => _ = null,
+    onExporting: /* e */ FormatModel[T] => _ = null,
+    onFileSaving: /* e */ CancelComponentData[T] => _ = null,
+    onIncidentOccurred: /* e */ TargetAny[T] => _ = null,
+    onInitialized: /* e */ Element[T] => _ = null,
+    onOptionChanged: /* e */ Name[T] => _ = null,
     pathModified: js.UndefOr[Boolean] = js.undefined,
     redrawOnResize: js.UndefOr[Boolean] = js.undefined,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -90,7 +90,7 @@ object BaseWidgetOptions {
   ): BaseWidgetOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -104,9 +104,9 @@ object BaseWidgetOptions {
     if (onIncidentOccurred != null) __obj.updateDynamic("onIncidentOccurred")(js.Any.fromFunction1(onIncidentOccurred))
     if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

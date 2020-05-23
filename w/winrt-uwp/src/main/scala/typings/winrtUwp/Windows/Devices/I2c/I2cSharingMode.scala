@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.I2c
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object I2cSharingMode extends js.Object {
   /** Connects to the I²C bus address in shared mode, so that other connections to the I²C bus address can be made while you remain connected. */
   @js.native
   sealed trait shared extends I2cSharingMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[I2cSharingMode with Double] = js.native
-  /* 0 */ @js.native
-  object exclusive extends TopLevel[exclusive with Double]
-  
-  /* 1 */ @js.native
-  object shared extends TopLevel[shared with Double]
   
 }
 

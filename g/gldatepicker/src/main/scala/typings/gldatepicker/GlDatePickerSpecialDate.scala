@@ -22,8 +22,8 @@ object GlDatePickerSpecialDate {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatMonth)) __obj.updateDynamic("repeatMonth")(repeatMonth.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatYear)) __obj.updateDynamic("repeatYear")(repeatYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatMonth)) __obj.updateDynamic("repeatMonth")(repeatMonth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatYear)) __obj.updateDynamic("repeatYear")(repeatYear.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlDatePickerSpecialDate]
   }
 }

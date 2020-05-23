@@ -1,6 +1,6 @@
 package typings.when.mod
 
-import typings.when.When.Promise_
+import typings.when.When.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +20,8 @@ object reduce extends js.Object {
     */
   def apply[T](
     promisesOrValues: js.Array[_],
-    reduceFunc: js.Function3[/* reduction */ T, /* value */ js.Any, /* index */ Double, T | Promise_[T]],
+    reduceFunc: js.Function3[/* reduction */ T, /* value */ js.Any, /* index */ Double, T | Promise[T]],
     initialValue: T
-  ): Promise_[T] = js.native
+  ): Promise[T] = js.native
 }
 

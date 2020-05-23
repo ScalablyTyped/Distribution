@@ -27,16 +27,16 @@ trait AppLimits extends js.Object {
 object AppLimits {
   @scala.inline
   def apply(
-    daily: Int | Double = null,
-    maximumDuration: Int | Double = null,
-    messagesPerSecond: Int | Double = null,
-    total: Int | Double = null
+    daily: js.UndefOr[Double] = js.undefined,
+    maximumDuration: js.UndefOr[Double] = js.undefined,
+    messagesPerSecond: js.UndefOr[Double] = js.undefined,
+    total: js.UndefOr[Double] = js.undefined
   ): AppLimits = {
     val __obj = js.Dynamic.literal()
-    if (daily != null) __obj.updateDynamic("daily")(daily.asInstanceOf[js.Any])
-    if (maximumDuration != null) __obj.updateDynamic("maximumDuration")(maximumDuration.asInstanceOf[js.Any])
-    if (messagesPerSecond != null) __obj.updateDynamic("messagesPerSecond")(messagesPerSecond.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(daily)) __obj.updateDynamic("daily")(daily.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumDuration)) __obj.updateDynamic("maximumDuration")(maximumDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messagesPerSecond)) __obj.updateDynamic("messagesPerSecond")(messagesPerSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppLimits]
   }
 }

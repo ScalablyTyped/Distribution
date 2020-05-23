@@ -9,9 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Canvas")
 @js.native
-class Canvas () extends js.Object {
+trait Canvas extends js.Object {
   /**
     * 画布的高度
     */

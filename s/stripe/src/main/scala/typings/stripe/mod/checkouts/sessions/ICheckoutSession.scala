@@ -94,7 +94,7 @@ object ICheckoutSession {
     mode: payment | setup | subscription = null,
     payment_intent: String | IPaymentIntent = null,
     payment_method_types: js.Array[String] = null,
-    setup_intent: String = null,
+    setup_intent: js.UndefOr[Null | String] = js.undefined,
     subscription: String | ISubscription = null
   ): ICheckoutSession = {
     val __obj = js.Dynamic.literal(cancel_url = cancel_url.asInstanceOf[js.Any], display_items = display_items.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], success_url = success_url.asInstanceOf[js.Any])
@@ -107,7 +107,7 @@ object ICheckoutSession {
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent.asInstanceOf[js.Any])
     if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types.asInstanceOf[js.Any])
-    if (setup_intent != null) __obj.updateDynamic("setup_intent")(setup_intent.asInstanceOf[js.Any])
+    if (!js.isUndefined(setup_intent)) __obj.updateDynamic("setup_intent")(setup_intent.asInstanceOf[js.Any])
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckoutSession]
   }

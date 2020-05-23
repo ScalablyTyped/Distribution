@@ -52,7 +52,7 @@ object ReadGroup {
     id: String = null,
     info: Record[String, js.Array[_]] = null,
     name: String = null,
-    predictedInsertSize: Int | Double = null,
+    predictedInsertSize: js.UndefOr[Double] = js.undefined,
     programs: js.Array[Program] = null,
     referenceSetId: String = null,
     sampleId: String = null
@@ -64,7 +64,7 @@ object ReadGroup {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (predictedInsertSize != null) __obj.updateDynamic("predictedInsertSize")(predictedInsertSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(predictedInsertSize)) __obj.updateDynamic("predictedInsertSize")(predictedInsertSize.get.asInstanceOf[js.Any])
     if (programs != null) __obj.updateDynamic("programs")(programs.asInstanceOf[js.Any])
     if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId.asInstanceOf[js.Any])
     if (sampleId != null) __obj.updateDynamic("sampleId")(sampleId.asInstanceOf[js.Any])

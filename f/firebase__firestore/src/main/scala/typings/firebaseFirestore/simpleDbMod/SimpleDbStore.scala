@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/simple_db", "SimpleDbStore")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/simple_db", "SimpleDbStore")
 @js.native
 class SimpleDbStore[KeyType /* <: IDBValidKey */, ValueType /* <: js.Any */] protected () extends js.Object {
   def this(store: IDBObjectStore) = this()

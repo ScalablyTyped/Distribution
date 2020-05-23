@@ -15,10 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a sequence of event fields and provides methods for adding fields to the sequence. */
-@JSGlobal("Windows.Foundation.Diagnostics.LoggingFields")
 @js.native
-/** Initializes a new LoggingFields instance. */
-class LoggingFields () extends js.Object {
+trait LoggingFields extends js.Object {
   /**
     * Adds a boolean field with the specified field name.
     * @param name Name of the event field.

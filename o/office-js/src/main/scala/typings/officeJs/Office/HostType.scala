@@ -1,6 +1,5 @@
 package typings.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,29 +58,6 @@ object HostType extends js.Object {
     */
   @js.native
   sealed trait Word extends HostType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HostType with Double] = js.native
-  /* 6 */ @js.native
-  object Access extends TopLevel[Access with Double]
-  
-  /* 1 */ @js.native
-  object Excel extends TopLevel[Excel with Double]
-  
-  /* 4 */ @js.native
-  object OneNote extends TopLevel[OneNote with Double]
-  
-  /* 3 */ @js.native
-  object Outlook extends TopLevel[Outlook with Double]
-  
-  /* 2 */ @js.native
-  object PowerPoint extends TopLevel[PowerPoint with Double]
-  
-  /* 5 */ @js.native
-  object Project extends TopLevel[Project with Double]
-  
-  /* 0 */ @js.native
-  object Word extends TopLevel[Word with Double]
   
 }
 

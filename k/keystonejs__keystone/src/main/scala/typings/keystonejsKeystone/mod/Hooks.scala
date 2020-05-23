@@ -1,11 +1,11 @@
 package typings.keystonejsKeystone.mod
 
-import typings.keystonejsKeystone.OmitResolveInputHooksOpti
-import typings.keystonejsKeystone.OmitResolveInputHooksOptiAddFieldValidationError
-import typings.keystonejsKeystone.OmitResolveInputHooksOptiContext
-import typings.keystonejsKeystone.PickResolveInputHooksOpti
-import typings.keystonejsKeystone.PickResolveInputHooksOptiAddFieldValidationError
-import typings.keystonejsKeystone.PickResolveInputHooksOptiContext
+import typings.keystonejsKeystone.anon.OmitResolveInputHooksOpti
+import typings.keystonejsKeystone.anon.OmitResolveInputHooksOptiAddFieldValidationError
+import typings.keystonejsKeystone.anon.OmitResolveInputHooksOptiContext
+import typings.keystonejsKeystone.anon.PickResolveInputHooksOpti
+import typings.keystonejsKeystone.anon.PickResolveInputHooksOptiAddFieldValidationError
+import typings.keystonejsKeystone.anon.PickResolveInputHooksOptiContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ object Chunk {
     body: js.Array[Statement],
     `type`: typings.luaparse.luaparseStrings.Chunk,
     comments: js.Array[String] = null,
-    loc: AnonEnd = null
+    loc: End = null
   ): Chunk = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

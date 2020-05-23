@@ -41,7 +41,7 @@ object GetResourceShareAssociationsRequest {
   def apply(
     associationType: ResourceShareAssociationType,
     associationStatus: ResourceShareAssociationStatus = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: String = null,
     principal: String = null,
     resourceArn: String = null,
@@ -49,7 +49,7 @@ object GetResourceShareAssociationsRequest {
   ): GetResourceShareAssociationsRequest = {
     val __obj = js.Dynamic.literal(associationType = associationType.asInstanceOf[js.Any])
     if (associationStatus != null) __obj.updateDynamic("associationStatus")(associationStatus.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
     if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait UseSortByInstanceProps[D /* <: js.Object */] extends js.Object {
 
 object UseSortByInstanceProps {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     preSortedRows: js.Array[Row[D]],
     rows: js.Array[Row[D]],
     toggleSortBy: (IdType[D], Boolean, Boolean) => Unit

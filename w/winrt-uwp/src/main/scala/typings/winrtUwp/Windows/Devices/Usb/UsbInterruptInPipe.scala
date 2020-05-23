@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the pipe that the underlying USB driver opens to communicate with a USB interrupt IN endpoint of the device. The object also enables the app to specify an event handler. That handler that gets invoked when data is read from the endpoint. */
-@JSGlobal("Windows.Devices.Usb.UsbInterruptInPipe")
 @js.native
-abstract class UsbInterruptInPipe () extends js.Object {
+trait UsbInterruptInPipe extends js.Object {
   /** Gets the object that represents the endpoint descriptor associated with the USB interrupt IN endpoint. */
   var endpointDescriptor: UsbInterruptInEndpointDescriptor = js.native
   /** Raised when the interrupt pipe receives data from the interrupt IN endpoint. */

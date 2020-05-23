@@ -1,7 +1,7 @@
 package typings.phantom.mod
 
-import typings.phantom.AnonBottom
-import typings.phantom.AnonContents
+import typings.phantom.anon.Bottom
+import typings.phantom.anon.Contents
 import typings.phantom.phantomStrings.A3
 import typings.phantom.phantomStrings.A4
 import typings.phantom.phantomStrings.A5
@@ -15,11 +15,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IPaperSizeOptions extends js.Object {
-  var footer: js.UndefOr[AnonContents] = js.undefined
+  var footer: js.UndefOr[Contents] = js.undefined
   var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.undefined
-  var header: js.UndefOr[AnonContents] = js.undefined
+  var header: js.UndefOr[Contents] = js.undefined
   var height: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[String | AnonBottom] = js.undefined
+  var margin: js.UndefOr[String | Bottom] = js.undefined
   var orientation: js.UndefOr[portrait | landscape] = js.undefined
   var width: js.UndefOr[String] = js.undefined
 }
@@ -27,11 +27,11 @@ trait IPaperSizeOptions extends js.Object {
 object IPaperSizeOptions {
   @scala.inline
   def apply(
-    footer: AnonContents = null,
+    footer: Contents = null,
     format: A3 | A4 | A5 | Legal | Letter | Tabloid = null,
-    header: AnonContents = null,
+    header: Contents = null,
     height: String = null,
-    margin: String | AnonBottom = null,
+    margin: String | Bottom = null,
     orientation: portrait | landscape = null,
     width: String = null
   ): IPaperSizeOptions = {

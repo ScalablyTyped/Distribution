@@ -24,12 +24,12 @@ object MetricFilterMatchRecord {
   @scala.inline
   def apply(
     eventMessage: EventMessage = null,
-    eventNumber: Int | Double = null,
+    eventNumber: js.UndefOr[EventNumber] = js.undefined,
     extractedValues: ExtractedValues = null
   ): MetricFilterMatchRecord = {
     val __obj = js.Dynamic.literal()
     if (eventMessage != null) __obj.updateDynamic("eventMessage")(eventMessage.asInstanceOf[js.Any])
-    if (eventNumber != null) __obj.updateDynamic("eventNumber")(eventNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventNumber)) __obj.updateDynamic("eventNumber")(eventNumber.get.asInstanceOf[js.Any])
     if (extractedValues != null) __obj.updateDynamic("extractedValues")(extractedValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricFilterMatchRecord]
   }

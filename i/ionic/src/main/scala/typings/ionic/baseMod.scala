@@ -1,5 +1,6 @@
 package typings.ionic
 
+import typings.ionic.anon.RequiredProjectIntegratio
 import typings.ionic.commandMod.Command
 import typings.ionic.definitionsMod.CommandInstanceInfo
 import scala.scalajs.js

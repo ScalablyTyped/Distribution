@@ -30,18 +30,18 @@ object AzureChunkingOptions {
     concurrent: ConcurrentOptions = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     mandatory: js.UndefOr[Boolean] = js.undefined,
-    minFileSize: Int | Double = null,
+    minFileSize: js.UndefOr[Double] = js.undefined,
     paramNames: ParamNamesOptions = null,
-    partSize: Int | Double = null,
+    partSize: js.UndefOr[Double] = js.undefined,
     success: SuccessOptions = null
   ): AzureChunkingOptions = {
     val __obj = js.Dynamic.literal()
     if (concurrent != null) __obj.updateDynamic("concurrent")(concurrent.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.asInstanceOf[js.Any])
-    if (minFileSize != null) __obj.updateDynamic("minFileSize")(minFileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFileSize)) __obj.updateDynamic("minFileSize")(minFileSize.get.asInstanceOf[js.Any])
     if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames.asInstanceOf[js.Any])
-    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(partSize)) __obj.updateDynamic("partSize")(partSize.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureChunkingOptions]
   }

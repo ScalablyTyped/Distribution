@@ -115,16 +115,16 @@ object Read {
     alignment: LinearAlignment = null,
     duplicateFragment: js.UndefOr[Boolean] = js.undefined,
     failedVendorQualityChecks: js.UndefOr[Boolean] = js.undefined,
-    fragmentLength: Int | Double = null,
+    fragmentLength: js.UndefOr[Double] = js.undefined,
     fragmentName: String = null,
     id: String = null,
     info: Record[String, js.Array[_]] = null,
     nextMatePosition: Position = null,
-    numberReads: Int | Double = null,
+    numberReads: js.UndefOr[Double] = js.undefined,
     properPlacement: js.UndefOr[Boolean] = js.undefined,
     readGroupId: String = null,
     readGroupSetId: String = null,
-    readNumber: Int | Double = null,
+    readNumber: js.UndefOr[Double] = js.undefined,
     secondaryAlignment: js.UndefOr[Boolean] = js.undefined,
     supplementaryAlignment: js.UndefOr[Boolean] = js.undefined
   ): Read = {
@@ -132,20 +132,20 @@ object Read {
     if (alignedQuality != null) __obj.updateDynamic("alignedQuality")(alignedQuality.asInstanceOf[js.Any])
     if (alignedSequence != null) __obj.updateDynamic("alignedSequence")(alignedSequence.asInstanceOf[js.Any])
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(duplicateFragment)) __obj.updateDynamic("duplicateFragment")(duplicateFragment.asInstanceOf[js.Any])
-    if (!js.isUndefined(failedVendorQualityChecks)) __obj.updateDynamic("failedVendorQualityChecks")(failedVendorQualityChecks.asInstanceOf[js.Any])
-    if (fragmentLength != null) __obj.updateDynamic("fragmentLength")(fragmentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(duplicateFragment)) __obj.updateDynamic("duplicateFragment")(duplicateFragment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failedVendorQualityChecks)) __obj.updateDynamic("failedVendorQualityChecks")(failedVendorQualityChecks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragmentLength)) __obj.updateDynamic("fragmentLength")(fragmentLength.get.asInstanceOf[js.Any])
     if (fragmentName != null) __obj.updateDynamic("fragmentName")(fragmentName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (nextMatePosition != null) __obj.updateDynamic("nextMatePosition")(nextMatePosition.asInstanceOf[js.Any])
-    if (numberReads != null) __obj.updateDynamic("numberReads")(numberReads.asInstanceOf[js.Any])
-    if (!js.isUndefined(properPlacement)) __obj.updateDynamic("properPlacement")(properPlacement.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberReads)) __obj.updateDynamic("numberReads")(numberReads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(properPlacement)) __obj.updateDynamic("properPlacement")(properPlacement.get.asInstanceOf[js.Any])
     if (readGroupId != null) __obj.updateDynamic("readGroupId")(readGroupId.asInstanceOf[js.Any])
     if (readGroupSetId != null) __obj.updateDynamic("readGroupSetId")(readGroupSetId.asInstanceOf[js.Any])
-    if (readNumber != null) __obj.updateDynamic("readNumber")(readNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(secondaryAlignment)) __obj.updateDynamic("secondaryAlignment")(secondaryAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(supplementaryAlignment)) __obj.updateDynamic("supplementaryAlignment")(supplementaryAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(readNumber)) __obj.updateDynamic("readNumber")(readNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondaryAlignment)) __obj.updateDynamic("secondaryAlignment")(secondaryAlignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supplementaryAlignment)) __obj.updateDynamic("supplementaryAlignment")(supplementaryAlignment.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Read]
   }
 }

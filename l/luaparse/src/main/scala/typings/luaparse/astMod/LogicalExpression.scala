@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import typings.luaparse.luaparseStrings.and
 import typings.luaparse.luaparseStrings.or
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object LogicalExpression {
     operator: or | and,
     right: Expression,
     `type`: typings.luaparse.luaparseStrings.LogicalExpression,
-    loc: AnonEnd = null
+    loc: End = null
   ): LogicalExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

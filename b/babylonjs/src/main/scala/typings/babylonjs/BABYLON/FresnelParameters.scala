@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FresnelParameters")
 @js.native
-class FresnelParameters () extends js.Object {
+trait FresnelParameters extends js.Object {
   var _isEnabled: js.Any = js.native
   /**
     * Define bias applied to computed fresnel term
@@ -34,17 +33,5 @@ class FresnelParameters () extends js.Object {
     * @return the JSON serialization
     */
   def serialize(): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.FresnelParameters")
-@js.native
-object FresnelParameters extends js.Object {
-  /**
-    * Parse a JSON object and deserialize it to a new Fresnel parameter object.
-    * @param parsedFresnelParameters Define the JSON representation
-    * @returns the parsed parameters
-    */
-  def Parse(parsedFresnelParameters: js.Any): FresnelParameters = js.native
 }
 

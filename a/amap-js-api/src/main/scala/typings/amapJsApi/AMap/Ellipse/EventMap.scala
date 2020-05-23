@@ -2,7 +2,6 @@ package typings.amapJsApi.AMap.Ellipse
 
 import typings.amapJsApi.AMap.Event_
 import typings.amapJsApi.AMap.MapsEvent
-import typings.amapJsApi.AnonTargetI
 import typings.amapJsApi.amapJsApiStrings.change
 import typings.amapJsApi.amapJsApiStrings.click
 import typings.amapJsApi.amapJsApiStrings.dblclick
@@ -19,6 +18,7 @@ import typings.amapJsApi.amapJsApiStrings.show
 import typings.amapJsApi.amapJsApiStrings.touchend
 import typings.amapJsApi.amapJsApiStrings.touchmove
 import typings.amapJsApi.amapJsApiStrings.touchstart
+import typings.amapJsApi.anon.TargetI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,10 +32,10 @@ trait EventMap[I]
 object EventMap {
   @scala.inline
   def apply[I](
-    change: Event_[change, AnonTargetI[I]],
+    change: Event_[change, TargetI[I]],
     click: MapsEvent[click, I],
     dblclick: MapsEvent[dblclick, I],
-    hide: Event_[hide, AnonTargetI[I]],
+    hide: Event_[hide, TargetI[I]],
     mousedown: MapsEvent[mousedown, I],
     mousemove: MapsEvent[mousemove, I],
     mouseover: MapsEvent[mouseover, I],
@@ -44,7 +44,7 @@ object EventMap {
     rightclick: MapsEvent[rightclick, I],
     setCenter: Event_[setCenter, js.UndefOr[scala.Nothing]],
     setPath: Event_[setPath, js.UndefOr[scala.Nothing]],
-    show: Event_[show, AnonTargetI[I]],
+    show: Event_[show, TargetI[I]],
     touchend: MapsEvent[touchend, I],
     touchmove: MapsEvent[touchmove, I],
     touchstart: MapsEvent[touchstart, I]

@@ -33,13 +33,13 @@ object TerminateProvisionedProductInput {
   def apply(
     TerminateToken: IdempotencyToken,
     AcceptLanguage: AcceptLanguage = null,
-    IgnoreErrors: js.UndefOr[Boolean] = js.undefined,
+    IgnoreErrors: js.UndefOr[IgnoreErrors] = js.undefined,
     ProvisionedProductId: Id = null,
     ProvisionedProductName: ProvisionedProductNameOrArn = null
   ): TerminateProvisionedProductInput = {
     val __obj = js.Dynamic.literal(TerminateToken = TerminateToken.asInstanceOf[js.Any])
     if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(IgnoreErrors)) __obj.updateDynamic("IgnoreErrors")(IgnoreErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(IgnoreErrors)) __obj.updateDynamic("IgnoreErrors")(IgnoreErrors.get.asInstanceOf[js.Any])
     if (ProvisionedProductId != null) __obj.updateDynamic("ProvisionedProductId")(ProvisionedProductId.asInstanceOf[js.Any])
     if (ProvisionedProductName != null) __obj.updateDynamic("ProvisionedProductName")(ProvisionedProductName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateProvisionedProductInput]

@@ -6,10 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.AbstractTween")
 @js.native
-class AbstractTween () extends EventDispatcher {
-  def this(props: TweenProps) = this()
+trait AbstractTween extends EventDispatcher {
   var bounce: Boolean = js.native
   val currentLabel: String = js.native
   var duration: Double = js.native

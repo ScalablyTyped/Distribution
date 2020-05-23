@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object TimedTextScrollMode extends js.Object {
   /** Text lines roll up onto the region. */
   @js.native
   sealed trait rollup extends TimedTextScrollMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimedTextScrollMode with Double] = js.native
-  /* 0 */ @js.native
-  object popon extends TopLevel[popon with Double]
-  
-  /* 1 */ @js.native
-  object rollup extends TopLevel[rollup with Double]
   
 }
 

@@ -22,11 +22,11 @@ trait GetQueryResultsOutput extends js.Object {
 
 object GetQueryResultsOutput {
   @scala.inline
-  def apply(NextToken: Token = null, ResultSet: ResultSet = null, UpdateCount: Int | Double = null): GetQueryResultsOutput = {
+  def apply(NextToken: Token = null, ResultSet: ResultSet = null, UpdateCount: js.UndefOr[Long] = js.undefined): GetQueryResultsOutput = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ResultSet != null) __obj.updateDynamic("ResultSet")(ResultSet.asInstanceOf[js.Any])
-    if (UpdateCount != null) __obj.updateDynamic("UpdateCount")(UpdateCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(UpdateCount)) __obj.updateDynamic("UpdateCount")(UpdateCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueryResultsOutput]
   }
 }

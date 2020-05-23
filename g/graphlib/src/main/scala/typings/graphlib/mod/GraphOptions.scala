@@ -20,9 +20,9 @@ object GraphOptions {
     multigraph: js.UndefOr[Boolean] = js.undefined
   ): GraphOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compound)) __obj.updateDynamic("compound")(compound.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
-    if (!js.isUndefined(multigraph)) __obj.updateDynamic("multigraph")(multigraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(compound)) __obj.updateDynamic("compound")(compound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multigraph)) __obj.updateDynamic("multigraph")(multigraph.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphOptions]
   }
 }

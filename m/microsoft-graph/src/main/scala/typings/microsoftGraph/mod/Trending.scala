@@ -20,7 +20,7 @@ object Trending {
     resource: Entity = null,
     resourceReference: ResourceReference = null,
     resourceVisualization: ResourceVisualization = null,
-    weight: Int | Double = null
+    weight: js.UndefOr[Double] = js.undefined
   ): Trending = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -28,7 +28,7 @@ object Trending {
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (resourceReference != null) __obj.updateDynamic("resourceReference")(resourceReference.asInstanceOf[js.Any])
     if (resourceVisualization != null) __obj.updateDynamic("resourceVisualization")(resourceVisualization.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trending]
   }
 }

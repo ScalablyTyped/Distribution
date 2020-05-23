@@ -32,7 +32,7 @@ trait ActionObject
 object ActionObject {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     copy: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_], /* next */ NextFunction) => js.Any = null,
     del: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_], /* next */ NextFunction) => js.Any = null,
     delete: (/* req */ typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query], /* res */ typings.expressServeStaticCore.mod.Response[_], /* next */ NextFunction) => js.Any = null,

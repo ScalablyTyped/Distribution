@@ -29,12 +29,12 @@ object SearchFacesRequest {
   def apply(
     CollectionId: CollectionId,
     FaceId: FaceId,
-    FaceMatchThreshold: Int | Double = null,
-    MaxFaces: Int | Double = null
+    FaceMatchThreshold: js.UndefOr[Percent] = js.undefined,
+    MaxFaces: js.UndefOr[MaxFaces] = js.undefined
   ): SearchFacesRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], FaceId = FaceId.asInstanceOf[js.Any])
-    if (FaceMatchThreshold != null) __obj.updateDynamic("FaceMatchThreshold")(FaceMatchThreshold.asInstanceOf[js.Any])
-    if (MaxFaces != null) __obj.updateDynamic("MaxFaces")(MaxFaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(FaceMatchThreshold)) __obj.updateDynamic("FaceMatchThreshold")(FaceMatchThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxFaces)) __obj.updateDynamic("MaxFaces")(MaxFaces.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFacesRequest]
   }
 }

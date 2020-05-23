@@ -17,8 +17,7 @@ trait ResolvedNgModule extends js.Object {
 object ResolvedNgModule {
   @scala.inline
   def apply(decorator: NgDecorator, name: String, node: ClassDeclaration, providersExpr: Expression = null): ResolvedNgModule = {
-    val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-    if (providersExpr != null) __obj.updateDynamic("providersExpr")(providersExpr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], providersExpr = providersExpr.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedNgModule]
   }
 }

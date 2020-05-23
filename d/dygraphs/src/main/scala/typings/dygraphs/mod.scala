@@ -1,5 +1,6 @@
 package typings.dygraphs
 
+import typings.dygraphs.anon.ErrorPlotter
 import typings.dygraphs.dygraphs.Data
 import typings.dygraphs.dygraphs.Options
 import typings.std.HTMLElement
@@ -39,7 +40,7 @@ object mod extends js.Object {
     var MINUTELY: Double = js.native
     var MONTHLY: Double = js.native
     var NUM_GRANULARITIES: Double = js.native
-    var Plotters: AnonErrorPlotter = js.native
+    var Plotters: ErrorPlotter = js.native
     var QUARTERLY: Double = js.native
     // Tick granularities (passed to ticker).
     var SECONDLY: Double = js.native

@@ -32,16 +32,16 @@ object ResizeClusterMessage {
   @scala.inline
   def apply(
     ClusterIdentifier: String,
-    Classic: js.UndefOr[scala.Boolean] = js.undefined,
+    Classic: js.UndefOr[BooleanOptional] = js.undefined,
     ClusterType: String = null,
     NodeType: String = null,
-    NumberOfNodes: Int | scala.Double = null
+    NumberOfNodes: js.UndefOr[Integer] = js.undefined
   ): ResizeClusterMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(Classic)) __obj.updateDynamic("Classic")(Classic.asInstanceOf[js.Any])
+    if (!js.isUndefined(Classic)) __obj.updateDynamic("Classic")(Classic.get.asInstanceOf[js.Any])
     if (ClusterType != null) __obj.updateDynamic("ClusterType")(ClusterType.asInstanceOf[js.Any])
     if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
-    if (NumberOfNodes != null) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeClusterMessage]
   }
 }

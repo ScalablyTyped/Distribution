@@ -27,9 +27,9 @@ object FormatSettings {
     allowFontFamily: js.UndefOr[Boolean] = js.undefined
   ): FormatSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCellBorder)) __obj.updateDynamic("allowCellBorder")(allowCellBorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDecimalPlaces)) __obj.updateDynamic("allowDecimalPlaces")(allowDecimalPlaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFontFamily)) __obj.updateDynamic("allowFontFamily")(allowFontFamily.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCellBorder)) __obj.updateDynamic("allowCellBorder")(allowCellBorder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDecimalPlaces)) __obj.updateDynamic("allowDecimalPlaces")(allowDecimalPlaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFontFamily)) __obj.updateDynamic("allowFontFamily")(allowFontFamily.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatSettings]
   }
 }

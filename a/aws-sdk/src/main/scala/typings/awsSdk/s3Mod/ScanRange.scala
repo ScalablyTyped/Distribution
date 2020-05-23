@@ -18,10 +18,10 @@ trait ScanRange extends js.Object {
 
 object ScanRange {
   @scala.inline
-  def apply(End: Int | Double = null, Start: Int | Double = null): ScanRange = {
+  def apply(End: js.UndefOr[End] = js.undefined, Start: js.UndefOr[Start] = js.undefined): ScanRange = {
     val __obj = js.Dynamic.literal()
-    if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
-    if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
+    if (!js.isUndefined(End)) __obj.updateDynamic("End")(End.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Start)) __obj.updateDynamic("Start")(Start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanRange]
   }
 }

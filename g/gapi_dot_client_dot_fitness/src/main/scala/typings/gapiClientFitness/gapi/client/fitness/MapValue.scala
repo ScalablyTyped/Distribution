@@ -11,9 +11,9 @@ trait MapValue extends js.Object {
 
 object MapValue {
   @scala.inline
-  def apply(fpVal: Int | Double = null): MapValue = {
+  def apply(fpVal: js.UndefOr[Double] = js.undefined): MapValue = {
     val __obj = js.Dynamic.literal()
-    if (fpVal != null) __obj.updateDynamic("fpVal")(fpVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(fpVal)) __obj.updateDynamic("fpVal")(fpVal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapValue]
   }
 }

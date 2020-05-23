@@ -1,6 +1,6 @@
 package typings.tinajsTina.mod
 
-import typings.tinajsTina.PartialPageDefinitionsAttached
+import typings.tinajsTina.anon.PartialPageDefinitionsAttached
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

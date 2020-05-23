@@ -40,21 +40,21 @@ object InstanceTypeSpecification {
   @scala.inline
   def apply(
     BidPrice: XmlStringMaxLen256 = null,
-    BidPriceAsPercentageOfOnDemandPrice: Int | Double = null,
+    BidPriceAsPercentageOfOnDemandPrice: js.UndefOr[NonNegativeDouble] = js.undefined,
     Configurations: ConfigurationList = null,
     EbsBlockDevices: EbsBlockDeviceList = null,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[BooleanObject] = js.undefined,
     InstanceType: InstanceType = null,
-    WeightedCapacity: Int | Double = null
+    WeightedCapacity: js.UndefOr[WholeNumber] = js.undefined
   ): InstanceTypeSpecification = {
     val __obj = js.Dynamic.literal()
     if (BidPrice != null) __obj.updateDynamic("BidPrice")(BidPrice.asInstanceOf[js.Any])
-    if (BidPriceAsPercentageOfOnDemandPrice != null) __obj.updateDynamic("BidPriceAsPercentageOfOnDemandPrice")(BidPriceAsPercentageOfOnDemandPrice.asInstanceOf[js.Any])
+    if (!js.isUndefined(BidPriceAsPercentageOfOnDemandPrice)) __obj.updateDynamic("BidPriceAsPercentageOfOnDemandPrice")(BidPriceAsPercentageOfOnDemandPrice.get.asInstanceOf[js.Any])
     if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
     if (EbsBlockDevices != null) __obj.updateDynamic("EbsBlockDevices")(EbsBlockDevices.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (WeightedCapacity != null) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(WeightedCapacity)) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceTypeSpecification]
   }
 }

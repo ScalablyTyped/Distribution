@@ -1,6 +1,5 @@
 package typings.firebaseAdmin.admin.projectManagement
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,7 @@ sealed trait AppPlatform extends js.Object
 /**
   * Platforms with which a Firebase App can be associated.
   */
-@JSGlobal("admin.projectManagement.AppPlatform")
+@JSImport("firebase-admin/lib/project-management", "admin.projectManagement.AppPlatform")
 @js.native
 object AppPlatform extends js.Object {
   /**
@@ -31,17 +30,6 @@ object AppPlatform extends js.Object {
     */
   @js.native
   sealed trait PLATFORM_UNKNOWN extends AppPlatform
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AppPlatform with String] = js.native
-  /* "ANDROID" */ @js.native
-  object ANDROID extends TopLevel[ANDROID with String]
-  
-  /* "IOS" */ @js.native
-  object IOS extends TopLevel[IOS with String]
-  
-  /* "PLATFORM_UNKNOWN" */ @js.native
-  object PLATFORM_UNKNOWN extends TopLevel[PLATFORM_UNKNOWN with String]
   
 }
 

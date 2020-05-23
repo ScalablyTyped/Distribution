@@ -51,9 +51,6 @@ object jestCliStrings {
   sealed trait `Divert all output to stderrDot` extends js.Object
   
   @js.native
-  sealed trait `DocumentationColon httpsColonSlashSlashjestjsDotioSlash` extends js.Object
-  
-  @js.native
   sealed trait `Exit code of GraveaccentjestGraveaccent command if the test run failed` extends js.Object
   
   @js.native
@@ -112,9 +109,6 @@ object jestCliStrings {
   
   @js.native
   sealed trait `This option sets the default timeouts of test casesDot` extends js.Object
-  
-  @js.native
-  sealed trait `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]` extends js.Object
   
   @js.native
   sealed trait `Use this flag to show full diffs instead of a patchDot` extends js.Object
@@ -216,8 +210,6 @@ object jestCliStrings {
   @scala.inline
   def `Divert all output to stderrDot`: `Divert all output to stderrDot` = ("Divert all output to stderr.").asInstanceOf[`Divert all output to stderrDot`]
   @scala.inline
-  def `DocumentationColon httpsColonSlashSlashjestjsDotioSlash`: `DocumentationColon httpsColonSlashSlashjestjsDotioSlash` = ("Documentation: https://jestjs.io/").asInstanceOf[`DocumentationColon httpsColonSlashSlashjestjsDotioSlash`]
-  @scala.inline
   def `Exit code of GraveaccentjestGraveaccent command if the test run failed`: `Exit code of GraveaccentjestGraveaccent command if the test run failed` = ("Exit code of `jest` command if the test run failed").asInstanceOf[`Exit code of GraveaccentjestGraveaccent command if the test run failed`]
   @scala.inline
   def `Exit the test suite immediately after GraveaccentnGraveaccent number of failing testsDot`: `Exit the test suite immediately after GraveaccentnGraveaccent number of failing testsDot` = ("Exit the test suite immediately after `n` number of failing tests.").asInstanceOf[`Exit the test suite immediately after GraveaccentnGraveaccent number of failing testsDot`]
@@ -257,8 +249,6 @@ object jestCliStrings {
   def `This option sets the URL for the jsdom environmentDot`: `This option sets the URL for the jsdom environmentDot` = ("This option sets the URL for the jsdom environment.").asInstanceOf[`This option sets the URL for the jsdom environmentDot`]
   @scala.inline
   def `This option sets the default timeouts of test casesDot`: `This option sets the default timeouts of test casesDot` = ("This option sets the default timeouts of test cases.").asInstanceOf[`This option sets the default timeouts of test casesDot`]
-  @scala.inline
-  def `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]`: `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]` = ("Usage: $0 [--config=<pathToConfigFile>] [TestPathPattern]").asInstanceOf[`UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]`]
   @scala.inline
   def `Use this flag to show full diffs instead of a patchDot`: `Use this flag to show full diffs instead of a patchDot` = ("Use this flag to show full diffs instead of a patch.").asInstanceOf[`Use this flag to show full diffs instead of a patchDot`]
   @scala.inline

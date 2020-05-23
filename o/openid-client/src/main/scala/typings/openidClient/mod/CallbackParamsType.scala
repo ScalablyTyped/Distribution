@@ -23,7 +23,7 @@ trait CallbackParamsType
 object CallbackParamsType {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     access_token: String = null,
     code: String = null,
     error: String = null,

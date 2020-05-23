@@ -69,11 +69,11 @@ object UpdateFlowOutputRequest {
     Description: string = null,
     Destination: string = null,
     Encryption: UpdateEncryption = null,
-    MaxLatency: Int | Double = null,
-    Port: Int | Double = null,
+    MaxLatency: js.UndefOr[integer] = js.undefined,
+    Port: js.UndefOr[integer] = js.undefined,
     Protocol: Protocol = null,
     RemoteId: string = null,
-    SmoothingLatency: Int | Double = null,
+    SmoothingLatency: js.UndefOr[integer] = js.undefined,
     StreamId: string = null,
     VpcInterfaceAttachment: VpcInterfaceAttachment = null
   ): UpdateFlowOutputRequest = {
@@ -82,11 +82,11 @@ object UpdateFlowOutputRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Destination != null) __obj.updateDynamic("Destination")(Destination.asInstanceOf[js.Any])
     if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (MaxLatency != null) __obj.updateDynamic("MaxLatency")(MaxLatency.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxLatency)) __obj.updateDynamic("MaxLatency")(MaxLatency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     if (RemoteId != null) __obj.updateDynamic("RemoteId")(RemoteId.asInstanceOf[js.Any])
-    if (SmoothingLatency != null) __obj.updateDynamic("SmoothingLatency")(SmoothingLatency.asInstanceOf[js.Any])
+    if (!js.isUndefined(SmoothingLatency)) __obj.updateDynamic("SmoothingLatency")(SmoothingLatency.get.asInstanceOf[js.Any])
     if (StreamId != null) __obj.updateDynamic("StreamId")(StreamId.asInstanceOf[js.Any])
     if (VpcInterfaceAttachment != null) __obj.updateDynamic("VpcInterfaceAttachment")(VpcInterfaceAttachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFlowOutputRequest]

@@ -46,9 +46,9 @@ object DescribeEnvironmentsMessage {
     ApplicationName: ApplicationName = null,
     EnvironmentIds: EnvironmentIdList = null,
     EnvironmentNames: EnvironmentNamesList = null,
-    IncludeDeleted: js.UndefOr[Boolean] = js.undefined,
+    IncludeDeleted: js.UndefOr[IncludeDeleted] = js.undefined,
     IncludedDeletedBackTo: IncludeDeletedBackTo = null,
-    MaxRecords: Int | Double = null,
+    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
     NextToken: Token = null,
     VersionLabel: VersionLabel = null
   ): DescribeEnvironmentsMessage = {
@@ -56,9 +56,9 @@ object DescribeEnvironmentsMessage {
     if (ApplicationName != null) __obj.updateDynamic("ApplicationName")(ApplicationName.asInstanceOf[js.Any])
     if (EnvironmentIds != null) __obj.updateDynamic("EnvironmentIds")(EnvironmentIds.asInstanceOf[js.Any])
     if (EnvironmentNames != null) __obj.updateDynamic("EnvironmentNames")(EnvironmentNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeDeleted)) __obj.updateDynamic("IncludeDeleted")(IncludeDeleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeDeleted)) __obj.updateDynamic("IncludeDeleted")(IncludeDeleted.get.asInstanceOf[js.Any])
     if (IncludedDeletedBackTo != null) __obj.updateDynamic("IncludedDeletedBackTo")(IncludedDeletedBackTo.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (VersionLabel != null) __obj.updateDynamic("VersionLabel")(VersionLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEnvironmentsMessage]

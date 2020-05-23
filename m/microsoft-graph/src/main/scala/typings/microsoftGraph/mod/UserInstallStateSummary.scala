@@ -21,18 +21,18 @@ object UserInstallStateSummary {
   @scala.inline
   def apply(
     deviceStates: js.Array[DeviceInstallState] = null,
-    failedDeviceCount: Int | Double = null,
+    failedDeviceCount: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    installedDeviceCount: Int | Double = null,
-    notInstalledDeviceCount: Int | Double = null,
+    installedDeviceCount: js.UndefOr[Double] = js.undefined,
+    notInstalledDeviceCount: js.UndefOr[Double] = js.undefined,
     userName: String = null
   ): UserInstallStateSummary = {
     val __obj = js.Dynamic.literal()
     if (deviceStates != null) __obj.updateDynamic("deviceStates")(deviceStates.asInstanceOf[js.Any])
-    if (failedDeviceCount != null) __obj.updateDynamic("failedDeviceCount")(failedDeviceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(failedDeviceCount)) __obj.updateDynamic("failedDeviceCount")(failedDeviceCount.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (installedDeviceCount != null) __obj.updateDynamic("installedDeviceCount")(installedDeviceCount.asInstanceOf[js.Any])
-    if (notInstalledDeviceCount != null) __obj.updateDynamic("notInstalledDeviceCount")(notInstalledDeviceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(installedDeviceCount)) __obj.updateDynamic("installedDeviceCount")(installedDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notInstalledDeviceCount)) __obj.updateDynamic("notInstalledDeviceCount")(notInstalledDeviceCount.get.asInstanceOf[js.Any])
     if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInstallStateSummary]
   }

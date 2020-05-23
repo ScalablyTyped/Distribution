@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsHttpNameValueHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsHttpNameValueHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value of the Cache-Control HTTP header on HTTP content associated with an HTTP request or response. */
-@JSGlobal("Windows.Web.Http.Headers.HttpCacheDirectiveHeaderValueCollection")
 @js.native
-abstract class HttpCacheDirectiveHeaderValueCollection () extends Array[HttpNameValueHeaderValue] {
+trait HttpCacheDirectiveHeaderValueCollection extends Array[HttpNameValueHeaderValue] {
   /** Gets or sets the value of the max-age directive in the Cache-Control HTTP header. */
   var maxAge: Double = js.native
   /** Gets or sets the value of the max-stale directive in the Cache-Control HTTP header. */
@@ -45,13 +44,13 @@ abstract class HttpCacheDirectiveHeaderValueCollection () extends Array[HttpName
     * Retrieves the HttpNameValueHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpNameValueHeaderValue items in the HttpCacheDirectiveHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsHttpNameValueHeaderValue = js.native
+  def getMany(startIndex: Double): ItemsHttpNameValueHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpCacheDirectiveHeaderValueCollection .
     * @return The view of the HttpCacheDirectiveHeaderValueCollection .
     */
   def getView(): IVectorView[HttpNameValueHeaderValue] = js.native
-  def indexOf(value: HttpNameValueHeaderValue, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: HttpNameValueHeaderValue, extra: js.Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

@@ -82,12 +82,12 @@ object Level {
     width: Double,
     details: LevelDetails = null,
     fragmentError: js.UndefOr[Boolean] = js.undefined,
-    level: Int | Double = null
+    level: js.UndefOr[Double] = js.undefined
   ): Level = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], audioCodec = audioCodec.asInstanceOf[js.Any], bitrate = bitrate.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], loadError = loadError.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], unkownCodecs = unkownCodecs.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlId = urlId.asInstanceOf[js.Any], videoCodec = videoCodec.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragmentError)) __obj.updateDynamic("fragmentError")(fragmentError.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragmentError)) __obj.updateDynamic("fragmentError")(fragmentError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Level]
   }
 }

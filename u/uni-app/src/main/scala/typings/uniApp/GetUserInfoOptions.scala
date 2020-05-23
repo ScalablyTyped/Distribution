@@ -51,7 +51,7 @@ object GetUserInfoOptions {
     lang: String = null,
     provider: weixin | qq | sinaweibo | xiaomi = null,
     success: /* result */ GetUserInfoRes => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): GetUserInfoOptions = {
     val __obj = js.Dynamic.literal()
@@ -60,8 +60,8 @@ object GetUserInfoOptions {
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserInfoOptions]
   }
 }

@@ -11,7 +11,7 @@ trait DeleteInventoryResult extends js.Object {
     */
   var DeletionId: js.UndefOr[InventoryDeletionId] = js.native
   /**
-    * A summary of the delete operation. For more information about this summary, see Understanding the Delete Inventory Summary in the AWS Systems Manager User Guide.
+    * A summary of the delete operation. For more information about this summary, see Deleting custom inventory in the AWS Systems Manager User Guide.
     */
   var DeletionSummary: js.UndefOr[InventoryDeletionSummary] = js.native
   /**

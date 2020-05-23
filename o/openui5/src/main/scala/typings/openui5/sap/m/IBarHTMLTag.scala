@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object IBarHTMLTag extends js.Object {
   
   @js.native
   sealed trait Header extends IBarHTMLTag
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[IBarHTMLTag with Double] = js.native
-  /* 0 */ @js.native
-  object Div extends TopLevel[Div with Double]
-  
-  /* 1 */ @js.native
-  object Footer extends TopLevel[Footer with Double]
-  
-  /* 2 */ @js.native
-  object Header extends TopLevel[Header with Double]
   
 }
 

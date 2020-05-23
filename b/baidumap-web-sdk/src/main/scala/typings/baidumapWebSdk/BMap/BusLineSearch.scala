@@ -5,15 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.BusLineSearch")
 @js.native
-class BusLineSearch protected () extends js.Object {
-  def this(location: String) = this()
-  def this(location: Map) = this()
-  def this(location: Point) = this()
-  def this(location: String, opts: BusLineSearchOptions) = this()
-  def this(location: Map, opts: BusLineSearchOptions) = this()
-  def this(location: Point, opts: BusLineSearchOptions) = this()
+trait BusLineSearch extends js.Object {
   def clearResults(): Unit = js.native
   def disableAutoViewport(): Unit = js.native
   def enableAutoViewport(): Unit = js.native

@@ -14,8 +14,7 @@ trait EditorWithUI extends js.Object {
 object EditorWithUI {
   @scala.inline
   def apply(ui: EditorUI, element: HTMLElement = null): EditorWithUI = {
-    val __obj = js.Dynamic.literal(ui = ui.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ui = ui.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorWithUI]
   }
 }

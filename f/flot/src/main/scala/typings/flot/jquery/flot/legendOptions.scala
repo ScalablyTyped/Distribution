@@ -1,6 +1,6 @@
 package typings.flot.jquery.flot
 
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait legendOptions extends js.Object {
          //null or color
   var backgroundOpacity: js.UndefOr[Double] = js.undefined
     // between 0 and 1
-  var container: js.UndefOr[JQuery_[HTMLElement]] = js.undefined
+  var container: js.UndefOr[JQuery[HTMLElement]] = js.undefined
    //  null or (fn: string, series object -> string)
   var labelBoxBorderColor: js.UndefOr[js.Any] = js.undefined
   var labelFormatter: js.UndefOr[js.Function2[/* label */ String, /* series */ js.Any, String]] = js.undefined
@@ -30,26 +30,26 @@ object legendOptions {
   @scala.inline
   def apply(
     backgroundColor: js.Any = null,
-    backgroundOpacity: Int | Double = null,
-    container: JQuery_[HTMLElement] = null,
+    backgroundOpacity: js.UndefOr[Double] = js.undefined,
+    container: JQuery[HTMLElement] = null,
     labelBoxBorderColor: js.Any = null,
     labelFormatter: (/* label */ String, /* series */ js.Any) => String = null,
     margin: js.Any = null,
-    noColumns: Int | Double = null,
+    noColumns: js.UndefOr[Double] = js.undefined,
     position: String = null,
     show: js.UndefOr[Boolean] = js.undefined,
     sorted: js.Any = null
   ): legendOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundOpacity != null) __obj.updateDynamic("backgroundOpacity")(backgroundOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundOpacity)) __obj.updateDynamic("backgroundOpacity")(backgroundOpacity.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (labelBoxBorderColor != null) __obj.updateDynamic("labelBoxBorderColor")(labelBoxBorderColor.asInstanceOf[js.Any])
     if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction2(labelFormatter))
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (noColumns != null) __obj.updateDynamic("noColumns")(noColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(noColumns)) __obj.updateDynamic("noColumns")(noColumns.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (sorted != null) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
     __obj.asInstanceOf[legendOptions]
   }

@@ -18,9 +18,9 @@ object SafeFrameConfig {
     sandbox: js.UndefOr[Boolean] = js.undefined
   ): SafeFrameConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowOverlayExpansion)) __obj.updateDynamic("allowOverlayExpansion")(allowOverlayExpansion.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPushExpansion)) __obj.updateDynamic("allowPushExpansion")(allowPushExpansion.asInstanceOf[js.Any])
-    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOverlayExpansion)) __obj.updateDynamic("allowOverlayExpansion")(allowOverlayExpansion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPushExpansion)) __obj.updateDynamic("allowPushExpansion")(allowPushExpansion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeFrameConfig]
   }
 }

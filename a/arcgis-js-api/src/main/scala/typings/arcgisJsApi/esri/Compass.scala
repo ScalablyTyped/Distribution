@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,8 +35,4 @@ trait Compass
     */
   def reset(): Unit = js.native
 }
-
-@JSGlobal("__esri.Compass")
-@js.native
-object Compass extends TopLevel[CompassConstructor]
 

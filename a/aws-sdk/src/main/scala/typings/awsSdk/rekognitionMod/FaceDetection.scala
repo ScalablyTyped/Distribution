@@ -18,10 +18,10 @@ trait FaceDetection extends js.Object {
 
 object FaceDetection {
   @scala.inline
-  def apply(Face: FaceDetail = null, Timestamp: Int | Double = null): FaceDetection = {
+  def apply(Face: FaceDetail = null, Timestamp: js.UndefOr[Timestamp] = js.undefined): FaceDetection = {
     val __obj = js.Dynamic.literal()
     if (Face != null) __obj.updateDynamic("Face")(Face.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceDetection]
   }
 }

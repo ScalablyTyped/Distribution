@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "mirrorx"
-version := "0.2-dt-20190212Z-abf8fb"
-scalaVersion := "2.13.1"
+version := "0.2-dt-20200515Z-f65edf"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.9-313239",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20200226Z-849324",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-878ffb",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-11830c",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200409Z-0bc722",
-  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20200225Z-0c8e9c",
-  "org.scalablytyped" %%% "react-router" % "5.1-dt-20200402Z-df39e7",
-  "org.scalablytyped" %%% "redux" % "4.0.5-069469",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "csstype" % "2.6.9-03f85a",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20200518Z-48aa64",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-25ab82",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-4fb81d",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200515Z-0f8114",
+  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20200519Z-1d0254",
+  "org.scalablytyped" %%% "react-router" % "5.1-dt-20200515Z-de425a",
+  "org.scalablytyped" %%% "redux" % "4.0.5-f72eee",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

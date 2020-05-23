@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,4 @@ trait HTMLOptions extends js.Object {
   def showOption(id: String): Unit = js.native
   def showOption(id: Double): Unit = js.native
 }
-
-@JSGlobal("webix.HTMLOptions")
-@js.native
-object HTMLOptions extends TopLevel[HTMLOptions]
 

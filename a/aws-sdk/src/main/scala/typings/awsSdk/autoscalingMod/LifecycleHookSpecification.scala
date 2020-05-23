@@ -42,14 +42,14 @@ object LifecycleHookSpecification {
     LifecycleHookName: AsciiStringMaxLen255,
     LifecycleTransition: LifecycleTransition,
     DefaultResult: LifecycleActionResult = null,
-    HeartbeatTimeout: Int | Double = null,
+    HeartbeatTimeout: js.UndefOr[HeartbeatTimeout] = js.undefined,
     NotificationMetadata: XmlStringMaxLen1023 = null,
     NotificationTargetARN: NotificationTargetResourceName = null,
     RoleARN: ResourceName = null
   ): LifecycleHookSpecification = {
     val __obj = js.Dynamic.literal(LifecycleHookName = LifecycleHookName.asInstanceOf[js.Any], LifecycleTransition = LifecycleTransition.asInstanceOf[js.Any])
     if (DefaultResult != null) __obj.updateDynamic("DefaultResult")(DefaultResult.asInstanceOf[js.Any])
-    if (HeartbeatTimeout != null) __obj.updateDynamic("HeartbeatTimeout")(HeartbeatTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(HeartbeatTimeout)) __obj.updateDynamic("HeartbeatTimeout")(HeartbeatTimeout.get.asInstanceOf[js.Any])
     if (NotificationMetadata != null) __obj.updateDynamic("NotificationMetadata")(NotificationMetadata.asInstanceOf[js.Any])
     if (NotificationTargetARN != null) __obj.updateDynamic("NotificationTargetARN")(NotificationTargetARN.asInstanceOf[js.Any])
     if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])

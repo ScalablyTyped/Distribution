@@ -14,16 +14,16 @@ trait SpatialReferenceWkid extends SpatialReference {
 object SpatialReferenceWkid {
   @scala.inline
   def apply(
-    latestVcsWkid: Int | Double = null,
-    latestWkid: Int | Double = null,
-    vcsWkid: Int | Double = null,
-    wkid: Int | Double = null
+    latestVcsWkid: js.UndefOr[Double] = js.undefined,
+    latestWkid: js.UndefOr[Double] = js.undefined,
+    vcsWkid: js.UndefOr[Double] = js.undefined,
+    wkid: js.UndefOr[Double] = js.undefined
   ): SpatialReferenceWkid = {
     val __obj = js.Dynamic.literal()
-    if (latestVcsWkid != null) __obj.updateDynamic("latestVcsWkid")(latestVcsWkid.asInstanceOf[js.Any])
-    if (latestWkid != null) __obj.updateDynamic("latestWkid")(latestWkid.asInstanceOf[js.Any])
-    if (vcsWkid != null) __obj.updateDynamic("vcsWkid")(vcsWkid.asInstanceOf[js.Any])
-    if (wkid != null) __obj.updateDynamic("wkid")(wkid.asInstanceOf[js.Any])
+    if (!js.isUndefined(latestVcsWkid)) __obj.updateDynamic("latestVcsWkid")(latestVcsWkid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latestWkid)) __obj.updateDynamic("latestWkid")(latestWkid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vcsWkid)) __obj.updateDynamic("vcsWkid")(vcsWkid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wkid)) __obj.updateDynamic("wkid")(wkid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialReferenceWkid]
   }
 }

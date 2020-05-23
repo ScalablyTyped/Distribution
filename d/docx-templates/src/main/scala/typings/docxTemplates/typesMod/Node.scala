@@ -1,6 +1,6 @@
 package typings.docxTemplates.typesMod
 
-import typings.docxTemplates.AnonDictkey
+import typings.docxTemplates.anon.Dictkey
 import typings.docxTemplates.docxTemplatesBooleans.`false`
 import typings.docxTemplates.docxTemplatesBooleans.`true`
 import scala.scalajs.js
@@ -29,7 +29,7 @@ object Node {
   }
   @scala.inline
   def NonTextNode(
-    _attrs: AnonDictkey,
+    _attrs: Dictkey,
     _children: js.Array[Node],
     _fTextNode: `false`,
     _tag: String,

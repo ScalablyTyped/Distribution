@@ -45,7 +45,7 @@ object Object {
     Key: String = null,
     LastModified: Date | String | Double = null,
     Owner: Owner = null,
-    Size: Int | Double = null,
+    Size: js.UndefOr[Double] = js.undefined,
     StorageClass: STANDARD | REDUCED_REDUNDANCY | GLACIER | STANDARD_IA | ONEZONE_IA | String = null
   ): Object = {
     val __obj = js.Dynamic.literal()
@@ -53,7 +53,7 @@ object Object {
     if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
+    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Object]
   }

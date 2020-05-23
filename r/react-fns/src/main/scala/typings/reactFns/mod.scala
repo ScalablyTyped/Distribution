@@ -2,6 +2,8 @@ package typings.reactFns
 
 import typings.react.mod.ComponentType
 import typings.react.mod.SFC
+import typings.reactFns.anon.PartialScrollConfig
+import typings.reactFns.anon.PartialWindowSizeConfig
 import typings.reactFns.deviceMotionDeviceMotionMod.DeviceMotionProps
 import typings.reactFns.deviceOrientationDeviceOrientationMod.DeviceOrientationProps
 import typings.reactFns.geoPositionGeoPositionMod.GeoPositionProps

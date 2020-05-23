@@ -31,9 +31,9 @@ package object encodeMod {
   type BooleanValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[scala.Boolean]
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.colorMod.Color]
-    - typings.vegaTypings.Anon0
-    - typings.vegaTypings.AnonCount
-    - typings.vegaTypings.AnonColor
+    - typings.vegaTypings.anon.`0`
+    - typings.vegaTypings.anon.Count
+    - typings.vegaTypings.anon.Color
   */
   type ColorValueRef = typings.vegaTypings.encodeMod._ColorValueRef | typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.colorMod.Color]
   /* Rewritten from type alias, can be one of: 
@@ -53,11 +53,12 @@ package object encodeMod {
   type FontStyle = typings.vegaTypings.encodeMod._FontStyle | java.lang.String
   type FontStyleValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.FontStyle]
   type FontWeightValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.FontWeight]
-  type NumericValueRef = (typings.vegaTypings.encodeMod.ScaledValueRef[scala.Double] | js.Object) with typings.vegaTypings.AnonExponent
+  type NumericValueRef = (typings.vegaTypings.encodeMod.ScaledValueRef[scala.Double] | js.Object) with typings.vegaTypings.anon.Exponent
   type OrientValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.encodeMod.Orient]
-  type ProductionRule[T] = T | (js.Array[typings.vegaTypings.AnonTest with T])
+  type ProductionRule[T] = T | (js.Array[typings.vegaTypings.anon.Test with T])
   type RuleEncodeEntry = typings.vegaTypings.encodeMod.EncodeEntry
   type StringValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[java.lang.String]
+  type StrokeCapValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.configMod.StrokeCap]
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.vegaTypingsStrings.circle
     - typings.vegaTypings.vegaTypingsStrings.square

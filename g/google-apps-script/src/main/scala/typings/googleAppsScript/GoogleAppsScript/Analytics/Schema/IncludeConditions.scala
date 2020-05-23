@@ -15,17 +15,17 @@ trait IncludeConditions extends js.Object {
 object IncludeConditions {
   @scala.inline
   def apply(
-    daysToLookBack: Int | Double = null,
+    daysToLookBack: js.UndefOr[Double] = js.undefined,
     isSmartList: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    membershipDurationDays: Int | Double = null,
+    membershipDurationDays: js.UndefOr[Double] = js.undefined,
     segment: String = null
   ): IncludeConditions = {
     val __obj = js.Dynamic.literal()
-    if (daysToLookBack != null) __obj.updateDynamic("daysToLookBack")(daysToLookBack.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSmartList)) __obj.updateDynamic("isSmartList")(isSmartList.asInstanceOf[js.Any])
+    if (!js.isUndefined(daysToLookBack)) __obj.updateDynamic("daysToLookBack")(daysToLookBack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSmartList)) __obj.updateDynamic("isSmartList")(isSmartList.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (membershipDurationDays != null) __obj.updateDynamic("membershipDurationDays")(membershipDurationDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(membershipDurationDays)) __obj.updateDynamic("membershipDurationDays")(membershipDurationDays.get.asInstanceOf[js.Any])
     if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeConditions]
   }

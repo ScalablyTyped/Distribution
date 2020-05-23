@@ -34,8 +34,8 @@ object InternalOptions {
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
     if (ipTypes != null) __obj.updateDynamic("ipTypes")(ipTypes.asInstanceOf[js.Any])
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (!js.isUndefined(sample)) __obj.updateDynamic("sample")(sample.asInstanceOf[js.Any])
-    if (!js.isUndefined(series)) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (!js.isUndefined(sample)) __obj.updateDynamic("sample")(sample.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(series)) __obj.updateDynamic("series")(series.get.asInstanceOf[js.Any])
     if (sourcesBlackList != null) __obj.updateDynamic("sourcesBlackList")(sourcesBlackList.asInstanceOf[js.Any])
     if (sourcesWhiteList != null) __obj.updateDynamic("sourcesWhiteList")(sourcesWhiteList.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalOptions]

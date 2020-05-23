@@ -31,16 +31,16 @@ trait SearchForItemParameterObject extends js.Object {
 object SearchForItemParameterObject {
   @scala.inline
   def apply(
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     market: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     q: String = null,
     `type`: String = null
   ): SearchForItemParameterObject = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (market != null) __obj.updateDynamic("market")(market.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchForItemParameterObject]

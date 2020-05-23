@@ -18,7 +18,7 @@ object IShimmerElementsGroupStyleProps {
   @scala.inline
   def apply(theme: ITheme, flexWrap: js.UndefOr[Boolean] = js.undefined): IShimmerElementsGroupStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexWrap)) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexWrap)) __obj.updateDynamic("flexWrap")(flexWrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerElementsGroupStyleProps]
   }
 }

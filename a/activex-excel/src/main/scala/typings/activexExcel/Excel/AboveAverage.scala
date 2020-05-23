@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.AboveAverage")
 @js.native
-class AboveAverage protected () extends js.Object {
+trait AboveAverage extends js.Object {
   var AboveBelow: XlAboveBelow = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("AppliesTo")

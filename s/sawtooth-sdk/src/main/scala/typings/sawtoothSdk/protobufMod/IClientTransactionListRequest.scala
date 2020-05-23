@@ -18,16 +18,16 @@ trait IClientTransactionListRequest extends js.Object {
 object IClientTransactionListRequest {
   @scala.inline
   def apply(
-    headId: String = null,
-    paging: IClientPagingControls = null,
-    sorting: js.Array[IClientSortControls] = null,
-    transactionIds: js.Array[String] = null
+    headId: js.UndefOr[Null | String] = js.undefined,
+    paging: js.UndefOr[Null | IClientPagingControls] = js.undefined,
+    sorting: js.UndefOr[Null | js.Array[IClientSortControls]] = js.undefined,
+    transactionIds: js.UndefOr[Null | js.Array[String]] = js.undefined
   ): IClientTransactionListRequest = {
     val __obj = js.Dynamic.literal()
-    if (headId != null) __obj.updateDynamic("headId")(headId.asInstanceOf[js.Any])
-    if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
-    if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
-    if (transactionIds != null) __obj.updateDynamic("transactionIds")(transactionIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(headId)) __obj.updateDynamic("headId")(headId.asInstanceOf[js.Any])
+    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
+    if (!js.isUndefined(sorting)) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionIds)) __obj.updateDynamic("transactionIds")(transactionIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientTransactionListRequest]
   }
 }

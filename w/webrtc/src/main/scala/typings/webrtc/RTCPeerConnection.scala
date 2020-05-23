@@ -1,7 +1,7 @@
 package typings.webrtc
 
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.RTCAnswerOptions
 import typings.std.RTCIceCandidate
 import typings.std.RTCIceCandidateInit
@@ -23,7 +23,7 @@ trait RTCPeerConnection extends EventTarget {
   val currentLocalDescription: RTCSessionDescription | Null = js.native
   val currentRemoteDescription: RTCSessionDescription | Null = js.native
   val localDescription: RTCSessionDescription | Null = js.native
-  var onconnectionstatechange: PeerConnectionEventHandler[Event_] = js.native
+  var onconnectionstatechange: PeerConnectionEventHandler[Event] = js.native
   var ondatachannel: PeerConnectionEventHandler[RTCDataChannelEvent] = js.native
   var onicecandidateerror: PeerConnectionEventHandler[RTCPeerConnectionIceErrorEvent] = js.native
   var ontrack: PeerConnectionEventHandler[RTCTrackEvent] = js.native

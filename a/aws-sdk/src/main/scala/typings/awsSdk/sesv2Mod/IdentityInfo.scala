@@ -25,12 +25,12 @@ object IdentityInfo {
   def apply(
     IdentityName: Identity = null,
     IdentityType: IdentityType = null,
-    SendingEnabled: js.UndefOr[Boolean] = js.undefined
+    SendingEnabled: js.UndefOr[Enabled] = js.undefined
   ): IdentityInfo = {
     val __obj = js.Dynamic.literal()
     if (IdentityName != null) __obj.updateDynamic("IdentityName")(IdentityName.asInstanceOf[js.Any])
     if (IdentityType != null) __obj.updateDynamic("IdentityType")(IdentityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityInfo]
   }
 }

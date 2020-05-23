@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HostBindingDecorator
   extends Instantiable0[js.Any]
-     with Instantiable1[/* hostPropertyName */ String, js.Any] {
+     with Instantiable1[/* bindingPropertyName */ String, js.Any] {
   /**
     * Decorator that marks a DOM property as a host-binding property and supplies configuration
     * metadata.

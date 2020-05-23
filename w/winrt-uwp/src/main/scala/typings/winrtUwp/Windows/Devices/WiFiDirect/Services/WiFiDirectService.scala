@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a Wi-Fi Direct service. This class is used by code on a device that seeks to use a Wi-Fi Direct Service, to establish a Wi-Fi Direct Service session with the service provider. */
-@JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectService")
 @js.native
-abstract class WiFiDirectService () extends js.Object {
+trait WiFiDirectService extends js.Object {
   /** Event raised when a session request has been deferred. Note that this does not mean that the request has failed or been denied. It is a notification that the server is performing a long operation, such as waiting for a user to enter a PIN. The seeker that receives this message should begin a 120-second wait before it times out the session request, to give the server time to complete its operation. The event arguments include a buffer supplied by the server in the deferral notification with additional information. */
   @JSName("onsessiondeferred")
   var onsessiondeferred_Original: TypedEventHandler[WiFiDirectService, WiFiDirectServiceSessionDeferredEventArgs] = js.native
@@ -59,30 +58,5 @@ abstract class WiFiDirectService () extends js.Object {
     `type`: sessiondeferred,
     listener: TypedEventHandler[WiFiDirectService, WiFiDirectServiceSessionDeferredEventArgs]
   ): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectService")
-@js.native
-object WiFiDirectService extends js.Object {
-  /**
-    * Static method that retrieves a WiFiDirectService instance for a Wi-Fi Direct Service offered by the device with a given device ID.
-    * @param deviceId Device ID of the device that advertises the desired Wi-Fi Direct Service.
-    * @return An asynchronous retrieval operation. On successful completion, returns an instance of WiFiDirectService specific to the desired service instance, advertised by the indicated device.
-    */
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[WiFiDirectService] = js.native
-  /**
-    * Gets an Advanced Query Syntax (AQS) string to be used to find Wi-Fi Direct Service advertisers for a particular service.
-    * @param serviceName The service name to be found.
-    * @return The AQS string for the requested advertiser query.
-    */
-  def getSelector(serviceName: String): String = js.native
-  /**
-    * Gets an Advanced Query Syntax (AQS) string to be used to find Wi-Fi Direct Service advertisers for a particular service, where a given byte sequence appears in the advertiser's service information blob.
-    * @param serviceName The service name to be found.
-    * @param serviceInfoFilter A byte sequence that must be found in the advertiser's service information blob.
-    * @return The AQS string for the requested advertiser query.
-    */
-  def getSelector(serviceName: String, serviceInfoFilter: IBuffer): String = js.native
 }
 

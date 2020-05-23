@@ -14,11 +14,11 @@ package object mod {
     /* component */ js.Any, 
     typings.react.mod.ComponentType[
       (typings.materialUiCore.mod.Omit[
-        typings.react.mod._Global_.JSX.LibraryManagedAttributes[_, typings.materialUiCore.mod.PropsOf[_]], 
+        typings.react.mod.global.JSX.LibraryManagedAttributes[_, typings.materialUiCore.mod.PropsOf[_]], 
         /* keyof InjectedProps */ java.lang.String
       ]) with AdditionalProps
     ]
   ]
-  type PropsOf[C] = /* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[C] */ js.Any
-  type StandardProps[C, ClassKey /* <: java.lang.String */, Removals /* <: /* keyof C */ java.lang.String */] = (typings.materialUiCore.mod.Omit[C, typings.materialUiCore.materialUiCoreStrings.classes | Removals]) with typings.materialUiCore.withStylesMod.StyledComponentProps[ClassKey] with typings.materialUiCore.AnonClassName
+  type PropsOf[C] = /* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[C] */ js.Any
+  type StandardProps[C, ClassKey /* <: java.lang.String */, Removals /* <: /* keyof C */ java.lang.String */] = (typings.materialUiCore.mod.Omit[C, typings.materialUiCore.materialUiCoreStrings.classes | Removals]) with typings.materialUiCore.withStylesMod.StyledComponentProps[ClassKey] with typings.materialUiCore.anon.ClassName
 }

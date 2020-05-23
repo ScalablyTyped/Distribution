@@ -1,7 +1,7 @@
 package typings.googleCloudTasks.mod
 
-import typings.googleCloudTasks.CreateNamedRequestqueuePa
-import typings.googleCloudTasks.UpdateNamedRequestqueueEn
+import typings.googleCloudTasks.anon.CreateNamedRequestqueuePa
+import typings.googleCloudTasks.anon.UpdateNamedRequestqueueEn
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`

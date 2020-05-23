@@ -18,10 +18,10 @@ trait Bandwidth extends js.Object {
 
 object Bandwidth {
   @scala.inline
-  def apply(DownloadSpeed: Int | Double = null, UploadSpeed: Int | Double = null): Bandwidth = {
+  def apply(DownloadSpeed: js.UndefOr[Integer] = js.undefined, UploadSpeed: js.UndefOr[Integer] = js.undefined): Bandwidth = {
     val __obj = js.Dynamic.literal()
-    if (DownloadSpeed != null) __obj.updateDynamic("DownloadSpeed")(DownloadSpeed.asInstanceOf[js.Any])
-    if (UploadSpeed != null) __obj.updateDynamic("UploadSpeed")(UploadSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(DownloadSpeed)) __obj.updateDynamic("DownloadSpeed")(DownloadSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UploadSpeed)) __obj.updateDynamic("UploadSpeed")(UploadSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bandwidth]
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IOverflowSetItemProps
   extends /**
-  * Any additional properties to use when custom rendering menu items.
+  * (Optional) Any additional properties to apply to the rendered links.
   */
 /* propertyName */ StringDictionary[js.Any] {
   /**
@@ -25,10 +25,7 @@ object IOverflowSetItemProps {
   @scala.inline
   def apply(
     key: String,
-    StringDictionary: /**
-    * Any additional properties to use when custom rendering menu items.
-    */
-  /* propertyName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     keytipProps: IKeytipProps = null
   ): IOverflowSetItemProps = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])

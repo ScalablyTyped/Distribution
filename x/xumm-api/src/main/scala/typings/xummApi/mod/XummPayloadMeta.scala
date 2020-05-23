@@ -10,6 +10,8 @@ trait XummPayloadMeta extends js.Object {
   var destination: String
   var exists: Boolean
   var expired: Boolean
+  var forceAccount: js.UndefOr[Boolean] = js.undefined
+  var immutable: js.UndefOr[Boolean] = js.undefined
   var multisign: Boolean
   var pushed: Boolean
   var resolved: Boolean
@@ -36,12 +38,14 @@ object XummPayloadMeta {
     signed: Boolean,
     submit: Boolean,
     uuid: String,
+    forceAccount: js.UndefOr[Boolean] = js.undefined,
+    immutable: js.UndefOr[Boolean] = js.undefined,
     return_url_app: String = null,
     return_url_web: String = null
   ): XummPayloadMeta = {
-    val __obj = js.Dynamic.literal(app_opened = app_opened.asInstanceOf[js.Any], cancelled = cancelled.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], exists = exists.asInstanceOf[js.Any], expired = expired.asInstanceOf[js.Any], multisign = multisign.asInstanceOf[js.Any], pushed = pushed.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], resolved_destination = resolved_destination.asInstanceOf[js.Any], signed = signed.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-    if (return_url_app != null) __obj.updateDynamic("return_url_app")(return_url_app.asInstanceOf[js.Any])
-    if (return_url_web != null) __obj.updateDynamic("return_url_web")(return_url_web.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(app_opened = app_opened.asInstanceOf[js.Any], cancelled = cancelled.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], exists = exists.asInstanceOf[js.Any], expired = expired.asInstanceOf[js.Any], multisign = multisign.asInstanceOf[js.Any], pushed = pushed.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], resolved_destination = resolved_destination.asInstanceOf[js.Any], signed = signed.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], return_url_app = return_url_app.asInstanceOf[js.Any], return_url_web = return_url_web.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceAccount)) __obj.updateDynamic("forceAccount")(forceAccount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[XummPayloadMeta]
   }
 }

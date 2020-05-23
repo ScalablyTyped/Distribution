@@ -17,7 +17,7 @@ object Sha1Options {
   def Sha1AsStringOptions(asBytes: `false` = null, asString: js.UndefOr[Boolean] = js.undefined): Sha1Options = {
     val __obj = js.Dynamic.literal()
     if (asBytes != null) __obj.updateDynamic("asBytes")(asBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(asString)) __obj.updateDynamic("asString")(asString.asInstanceOf[js.Any])
+    if (!js.isUndefined(asString)) __obj.updateDynamic("asString")(asString.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sha1Options]
   }
   @scala.inline

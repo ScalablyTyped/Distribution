@@ -24,18 +24,18 @@ trait FindRequest[Content /* <: js.Object */] extends js.Object {
 
 object FindRequest {
   @scala.inline
-  def apply[Content /* <: js.Object */](
+  def apply[Content](
     selector: Selector,
     fields: js.Array[String] = null,
-    limit: Int | Double = null,
-    skip: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    skip: js.UndefOr[Double] = js.undefined,
     sort: js.Array[String | (StringDictionary[asc | desc])] = null,
     use_index: String | (js.Tuple2[String, String]) = null
   ): FindRequest[Content] = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (use_index != null) __obj.updateDynamic("use_index")(use_index.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindRequest[Content]]

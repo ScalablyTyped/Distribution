@@ -24,7 +24,7 @@ trait JobError extends js.Object {
     */
   var Message: string = js.native
   /**
-    * The unqiue identifier for the resource related to the error.
+    * The unique identifier for the resource related to the error.
     */
   var ResourceId: js.UndefOr[string] = js.native
   /**
@@ -40,14 +40,14 @@ object JobError {
     Message: string,
     Details: Details = null,
     LimitName: JobErrorLimitName = null,
-    LimitValue: Int | Double = null,
+    LimitValue: js.UndefOr[double] = js.undefined,
     ResourceId: string = null,
     ResourceType: JobErrorResourceTypes = null
   ): JobError = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
     if (LimitName != null) __obj.updateDynamic("LimitName")(LimitName.asInstanceOf[js.Any])
-    if (LimitValue != null) __obj.updateDynamic("LimitValue")(LimitValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(LimitValue)) __obj.updateDynamic("LimitValue")(LimitValue.get.asInstanceOf[js.Any])
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobError]

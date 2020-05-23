@@ -35,14 +35,14 @@ object DescribeDataSetPermissionsResponse {
     DataSetId: ResourceId = null,
     Permissions: ResourcePermissionList = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null
+    Status: js.UndefOr[StatusCode] = js.undefined
   ): DescribeDataSetPermissionsResponse = {
     val __obj = js.Dynamic.literal()
     if (DataSetArn != null) __obj.updateDynamic("DataSetArn")(DataSetArn.asInstanceOf[js.Any])
     if (DataSetId != null) __obj.updateDynamic("DataSetId")(DataSetId.asInstanceOf[js.Any])
     if (Permissions != null) __obj.updateDynamic("Permissions")(Permissions.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDataSetPermissionsResponse]
   }
 }

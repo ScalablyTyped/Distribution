@@ -1,8 +1,8 @@
 package typings.passportDiscord.mod
 
-import typings.passport.AnonFamilyName
-import typings.passport.AnonType
-import typings.passport.AnonValue
+import typings.passport.anon.FamilyName
+import typings.passport.anon.Type
+import typings.passport.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,10 +38,10 @@ object Profile {
     verified: Boolean,
     connections: js.Array[ConnectionInfo] = null,
     email: String = null,
-    emails: js.Array[AnonType] = null,
+    emails: js.Array[Type] = null,
     guilds: js.Array[GuildInfo] = null,
-    name: AnonFamilyName = null,
-    photos: js.Array[AnonValue] = null,
+    name: FamilyName = null,
+    photos: js.Array[Value] = null,
     username: String = null
   ): Profile = {
     val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], discriminator = discriminator.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fetchedAt = fetchedAt.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mfa_enabled = mfa_enabled.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])

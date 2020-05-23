@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import typings.luaparse.luaparseStrings.Ampersand
 import typings.luaparse.luaparseStrings.Asterisk
 import typings.luaparse.luaparseStrings.DotDot
@@ -39,7 +39,7 @@ object BinaryExpression {
     operator: Plussign | `-_` | Asterisk | Percentsign | ^  | Slash | SlashSlash | Ampersand | Verticalline | Tilde | LessthansignLessthansign | GreaterthansignGreaterthansign | DotDot | TildeEqualssign | EqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign,
     right: Expression,
     `type`: typings.luaparse.luaparseStrings.BinaryExpression,
-    loc: AnonEnd = null
+    loc: End = null
   ): BinaryExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

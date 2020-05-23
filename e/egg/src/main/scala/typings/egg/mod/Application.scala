@@ -29,6 +29,11 @@ class Application () extends EggApplication {
   def get(path: RouterPath, fn: String): Unit = js.native
   def get(path: RouterPath, middleware: js.Any*): Unit = js.native
   /**
+    * HTTP patch method
+    */
+  def patch(path: RouterPath, fn: String): Unit = js.native
+  def patch(path: RouterPath, middleware: js.Any*): Unit = js.native
+  /**
     * HTTP post method
     */
   def post(path: RouterPath, fn: String): Unit = js.native

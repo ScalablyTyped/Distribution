@@ -1,7 +1,7 @@
 package typings.terser.mod
 
 import typings.std.Record
-import typings.terser.TypeofASTNode
+import typings.terser.anon.TypeofASTNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

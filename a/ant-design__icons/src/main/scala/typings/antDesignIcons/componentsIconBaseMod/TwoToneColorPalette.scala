@@ -16,7 +16,7 @@ object TwoToneColorPalette {
     secondaryColor: String = null
   ): TwoToneColorPalette = {
     val __obj = js.Dynamic.literal(primaryColor = primaryColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculated)) __obj.updateDynamic("calculated")(calculated.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculated)) __obj.updateDynamic("calculated")(calculated.get.asInstanceOf[js.Any])
     if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwoToneColorPalette]
   }

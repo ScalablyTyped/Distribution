@@ -8,40 +8,13 @@ import scala.scalajs.js.annotation._
 
 object ionicCliFrameworkStrings {
   @js.native
-  sealed trait BIN_NOT_FOUND extends js.Object
-  
-  @js.native
-  sealed trait CommandNotFoundError extends js.Object
-  
-  @js.native
   sealed trait DEBUG extends LoggerLevel
   
   @js.native
   sealed trait ERROR extends LoggerLevel
   
   @js.native
-  sealed trait ERR_ICF_COMMAND_NOT_FOUND extends js.Object
-  
-  @js.native
-  sealed trait ERR_ICF_INPUT_VALIDATION extends js.Object
-  
-  @js.native
-  sealed trait ERR_ICF_IPC_MODULE_INACCESSIBLE extends js.Object
-  
-  @js.native
-  sealed trait ERR_ICF_IPC_UNKNOWN_PROCEDURE extends js.Object
-  
-  @js.native
   sealed trait INFO extends LoggerLevel
-  
-  @js.native
-  sealed trait INVALID_PACKAGE_JSON extends js.Object
-  
-  @js.native
-  sealed trait IPCError extends js.Object
-  
-  @js.native
-  sealed trait InputValidationError extends js.Object
   
   @js.native
   sealed trait WARN extends LoggerLevel
@@ -107,29 +80,11 @@ object ionicCliFrameworkStrings {
   sealed trait tick extends js.Object
   
   @scala.inline
-  def BIN_NOT_FOUND: BIN_NOT_FOUND = "BIN_NOT_FOUND".asInstanceOf[BIN_NOT_FOUND]
-  @scala.inline
-  def CommandNotFoundError: CommandNotFoundError = "CommandNotFoundError".asInstanceOf[CommandNotFoundError]
-  @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   @scala.inline
-  def ERR_ICF_COMMAND_NOT_FOUND: ERR_ICF_COMMAND_NOT_FOUND = "ERR_ICF_COMMAND_NOT_FOUND".asInstanceOf[ERR_ICF_COMMAND_NOT_FOUND]
-  @scala.inline
-  def ERR_ICF_INPUT_VALIDATION: ERR_ICF_INPUT_VALIDATION = "ERR_ICF_INPUT_VALIDATION".asInstanceOf[ERR_ICF_INPUT_VALIDATION]
-  @scala.inline
-  def ERR_ICF_IPC_MODULE_INACCESSIBLE: ERR_ICF_IPC_MODULE_INACCESSIBLE = "ERR_ICF_IPC_MODULE_INACCESSIBLE".asInstanceOf[ERR_ICF_IPC_MODULE_INACCESSIBLE]
-  @scala.inline
-  def ERR_ICF_IPC_UNKNOWN_PROCEDURE: ERR_ICF_IPC_UNKNOWN_PROCEDURE = "ERR_ICF_IPC_UNKNOWN_PROCEDURE".asInstanceOf[ERR_ICF_IPC_UNKNOWN_PROCEDURE]
-  @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
-  @scala.inline
-  def INVALID_PACKAGE_JSON: INVALID_PACKAGE_JSON = "INVALID_PACKAGE_JSON".asInstanceOf[INVALID_PACKAGE_JSON]
-  @scala.inline
-  def IPCError: IPCError = "IPCError".asInstanceOf[IPCError]
-  @scala.inline
-  def InputValidationError: InputValidationError = "InputValidationError".asInstanceOf[InputValidationError]
   @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
   @scala.inline

@@ -15,6 +15,9 @@ object ecmarkupStrings {
   sealed trait example extends js.Object
   
   @js.native
+  sealed trait external extends js.Object
+  
+  @js.native
   sealed trait figure extends js.Object
   
   @js.native
@@ -50,6 +53,8 @@ object ecmarkupStrings {
   def draft: draft = "draft".asInstanceOf[draft]
   @scala.inline
   def example: example = "example".asInstanceOf[example]
+  @scala.inline
+  def external: external = "external".asInstanceOf[external]
   @scala.inline
   def figure: figure = "figure".asInstanceOf[figure]
   @scala.inline

@@ -29,13 +29,13 @@ object SerializerOptions {
     skipGraphProperty: js.UndefOr[Boolean] = js.undefined
   ): SerializerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.asInstanceOf[js.Any])
-    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipContext)) __obj.updateDynamic("skipContext")(skipContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipGraphProperty)) __obj.updateDynamic("skipGraphProperty")(skipGraphProperty.asInstanceOf[js.Any])
+    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipContext)) __obj.updateDynamic("skipContext")(skipContext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipGraphProperty)) __obj.updateDynamic("skipGraphProperty")(skipGraphProperty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializerOptions]
   }
 }

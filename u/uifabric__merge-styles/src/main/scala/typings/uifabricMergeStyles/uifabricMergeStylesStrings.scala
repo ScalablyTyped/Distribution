@@ -42,6 +42,9 @@ object uifabricMergeStylesStrings {
   sealed trait `900` extends IFontWeight
   
   @js.native
+  sealed trait DeepPartial extends js.Object
+  
+  @js.native
   sealed trait IConcatenatedStyleSet extends js.Object
   
   @js.native
@@ -546,6 +549,8 @@ object uifabricMergeStylesStrings {
   def `800`: `800` = "800".asInstanceOf[`800`]
   @scala.inline
   def `900`: `900` = "900".asInstanceOf[`900`]
+  @scala.inline
+  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   @scala.inline
   def IConcatenatedStyleSet: IConcatenatedStyleSet = "IConcatenatedStyleSet".asInstanceOf[IConcatenatedStyleSet]
   @scala.inline

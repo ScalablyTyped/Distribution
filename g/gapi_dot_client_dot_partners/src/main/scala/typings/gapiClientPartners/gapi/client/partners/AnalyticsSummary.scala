@@ -22,14 +22,14 @@ trait AnalyticsSummary extends js.Object {
 object AnalyticsSummary {
   @scala.inline
   def apply(
-    contactsCount: Int | Double = null,
-    profileViewsCount: Int | Double = null,
-    searchViewsCount: Int | Double = null
+    contactsCount: js.UndefOr[Double] = js.undefined,
+    profileViewsCount: js.UndefOr[Double] = js.undefined,
+    searchViewsCount: js.UndefOr[Double] = js.undefined
   ): AnalyticsSummary = {
     val __obj = js.Dynamic.literal()
-    if (contactsCount != null) __obj.updateDynamic("contactsCount")(contactsCount.asInstanceOf[js.Any])
-    if (profileViewsCount != null) __obj.updateDynamic("profileViewsCount")(profileViewsCount.asInstanceOf[js.Any])
-    if (searchViewsCount != null) __obj.updateDynamic("searchViewsCount")(searchViewsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(contactsCount)) __obj.updateDynamic("contactsCount")(contactsCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(profileViewsCount)) __obj.updateDynamic("profileViewsCount")(profileViewsCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchViewsCount)) __obj.updateDynamic("searchViewsCount")(searchViewsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsSummary]
   }
 }

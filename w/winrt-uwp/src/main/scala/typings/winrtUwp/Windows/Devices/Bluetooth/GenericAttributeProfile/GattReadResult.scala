@@ -6,12 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the result of an asynchronous read operation of a GATT Characteristic or Descriptor value. */
-@JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadResult")
-@js.native
-abstract class GattReadResult () extends js.Object {
+trait GattReadResult extends js.Object {
   /** Gets the status of an asynchronous operation. */
-  var status: GattCommunicationStatus = js.native
+  var status: GattCommunicationStatus
   /** Gets the value read from the device. */
-  var value: IBuffer = js.native
+  var value: IBuffer
+}
+
+object GattReadResult {
+  @scala.inline
+  def apply(status: GattCommunicationStatus, value: IBuffer): GattReadResult = {
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GattReadResult]
+  }
 }
 

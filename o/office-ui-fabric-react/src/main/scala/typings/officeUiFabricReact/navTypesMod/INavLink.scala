@@ -110,10 +110,7 @@ object INavLink {
   def apply(
     name: String,
     url: String,
-    StringDictionary: /**
-    * (Optional) Any additional properties to apply to the rendered links.
-    */
-  /* propertyName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     ariaCurrent: page | step | location | date | time | `true` = null,
     ariaLabel: String = null,
     automationId: String = null,
@@ -137,13 +134,13 @@ object INavLink {
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (automationId != null) __obj.updateDynamic("automationId")(automationId.asInstanceOf[js.Any])
     if (collapseAriaLabel != null) __obj.updateDynamic("collapseAriaLabel")(collapseAriaLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (expandAriaLabel != null) __obj.updateDynamic("expandAriaLabel")(expandAriaLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceAnchor)) __obj.updateDynamic("forceAnchor")(forceAnchor.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceAnchor)) __obj.updateDynamic("forceAnchor")(forceAnchor.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
     if (iconProps != null) __obj.updateDynamic("iconProps")(iconProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))

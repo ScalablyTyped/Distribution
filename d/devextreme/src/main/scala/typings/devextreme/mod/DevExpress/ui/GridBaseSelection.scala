@@ -18,7 +18,7 @@ object GridBaseSelection {
   @scala.inline
   def apply(allowSelectAll: js.UndefOr[Boolean] = js.undefined, mode: multiple | none | single_ = null): GridBaseSelection = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSelectAll)) __obj.updateDynamic("allowSelectAll")(allowSelectAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSelectAll)) __obj.updateDynamic("allowSelectAll")(allowSelectAll.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridBaseSelection]
   }

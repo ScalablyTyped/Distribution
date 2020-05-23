@@ -51,13 +51,13 @@ object ConnectOptions {
     dscpTagging: js.UndefOr[Boolean] = js.undefined,
     enableDscp: js.UndefOr[Boolean] = js.undefined,
     iceServers: js.Array[RTCIceServer] = null,
-    iceServersTimeout: Int | Double = null,
+    iceServersTimeout: js.UndefOr[Double] = js.undefined,
     iceTransportPolicy: RTCIceTransportPolicy = null,
     insights: js.UndefOr[Boolean] = js.undefined,
     logLevel: LogLevel | LogLevels = null,
-    maxAudioBitrate: Int | Double = null,
-    maxVideoBitrate: Int | Double = null,
-    name: String = null,
+    maxAudioBitrate: js.UndefOr[Null | Double] = js.undefined,
+    maxVideoBitrate: js.UndefOr[Null | Double] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
     networkQuality: Boolean | NetworkQualityConfiguration = null,
     preferredAudioCodecs: js.Array[AudioCodec] = null,
     preferredVideoCodecs: js.Array[VideoCodec | VideoCodecSettings | VP8CodecSettings] = null,
@@ -66,21 +66,21 @@ object ConnectOptions {
     video: Boolean | CreateLocalTrackOptions = null
   ): ConnectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortOnIceServersTimeout)) __obj.updateDynamic("abortOnIceServersTimeout")(abortOnIceServersTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortOnIceServersTimeout)) __obj.updateDynamic("abortOnIceServersTimeout")(abortOnIceServersTimeout.get.asInstanceOf[js.Any])
     if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (!js.isUndefined(automaticSubscription)) __obj.updateDynamic("automaticSubscription")(automaticSubscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(automaticSubscription)) __obj.updateDynamic("automaticSubscription")(automaticSubscription.get.asInstanceOf[js.Any])
     if (bandwidthProfile != null) __obj.updateDynamic("bandwidthProfile")(bandwidthProfile.asInstanceOf[js.Any])
-    if (!js.isUndefined(dominantSpeaker)) __obj.updateDynamic("dominantSpeaker")(dominantSpeaker.asInstanceOf[js.Any])
-    if (!js.isUndefined(dscpTagging)) __obj.updateDynamic("dscpTagging")(dscpTagging.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDscp)) __obj.updateDynamic("enableDscp")(enableDscp.asInstanceOf[js.Any])
+    if (!js.isUndefined(dominantSpeaker)) __obj.updateDynamic("dominantSpeaker")(dominantSpeaker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dscpTagging)) __obj.updateDynamic("dscpTagging")(dscpTagging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDscp)) __obj.updateDynamic("enableDscp")(enableDscp.get.asInstanceOf[js.Any])
     if (iceServers != null) __obj.updateDynamic("iceServers")(iceServers.asInstanceOf[js.Any])
-    if (iceServersTimeout != null) __obj.updateDynamic("iceServersTimeout")(iceServersTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(iceServersTimeout)) __obj.updateDynamic("iceServersTimeout")(iceServersTimeout.get.asInstanceOf[js.Any])
     if (iceTransportPolicy != null) __obj.updateDynamic("iceTransportPolicy")(iceTransportPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(insights)) __obj.updateDynamic("insights")(insights.asInstanceOf[js.Any])
+    if (!js.isUndefined(insights)) __obj.updateDynamic("insights")(insights.get.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (maxAudioBitrate != null) __obj.updateDynamic("maxAudioBitrate")(maxAudioBitrate.asInstanceOf[js.Any])
-    if (maxVideoBitrate != null) __obj.updateDynamic("maxVideoBitrate")(maxVideoBitrate.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAudioBitrate)) __obj.updateDynamic("maxAudioBitrate")(maxAudioBitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxVideoBitrate)) __obj.updateDynamic("maxVideoBitrate")(maxVideoBitrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (networkQuality != null) __obj.updateDynamic("networkQuality")(networkQuality.asInstanceOf[js.Any])
     if (preferredAudioCodecs != null) __obj.updateDynamic("preferredAudioCodecs")(preferredAudioCodecs.asInstanceOf[js.Any])
     if (preferredVideoCodecs != null) __obj.updateDynamic("preferredVideoCodecs")(preferredVideoCodecs.asInstanceOf[js.Any])

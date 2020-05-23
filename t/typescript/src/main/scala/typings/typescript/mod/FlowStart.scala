@@ -14,11 +14,11 @@ object FlowStart {
   @scala.inline
   def apply(
     flags: FlowFlags,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     node: FunctionExpression | ArrowFunction | MethodDeclaration = null
   ): FlowStart = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowStart]
   }

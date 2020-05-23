@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object TimedTextDisplayAlignment extends js.Object {
   /** The text region is aligned in the center. */
   @js.native
   sealed trait center extends TimedTextDisplayAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimedTextDisplayAlignment with Double] = js.native
-  /* 1 */ @js.native
-  object after extends TopLevel[after with Double]
-  
-  /* 0 */ @js.native
-  object before extends TopLevel[before with Double]
-  
-  /* 2 */ @js.native
-  object center extends TopLevel[center with Double]
   
 }
 

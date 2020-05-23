@@ -22,23 +22,23 @@ object MUIDataTableBodyCell {
     children: js.Any = null,
     className: String = null,
     classes: js.Object = null,
-    colIndex: Int | Double = null,
+    colIndex: js.UndefOr[Double] = js.undefined,
     columnHeader: js.Any = null,
-    dataIndex: Int | Double = null,
+    dataIndex: js.UndefOr[Double] = js.undefined,
     options: js.Object = null,
     otherProps: js.Any = null,
-    rowIndex: Int | Double = null
+    rowIndex: js.UndefOr[Double] = js.undefined
   ): MUIDataTableBodyCell = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(colIndex)) __obj.updateDynamic("colIndex")(colIndex.get.asInstanceOf[js.Any])
     if (columnHeader != null) __obj.updateDynamic("columnHeader")(columnHeader.asInstanceOf[js.Any])
-    if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataIndex)) __obj.updateDynamic("dataIndex")(dataIndex.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (otherProps != null) __obj.updateDynamic("otherProps")(otherProps.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableBodyCell]
   }
 }

@@ -38,7 +38,7 @@ object PolicySummary {
     PolicyArn: ResourceArn = null,
     PolicyId: PolicyId = null,
     PolicyName: ResourceName = null,
-    RemediationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    RemediationEnabled: js.UndefOr[Boolean] = js.undefined,
     ResourceType: ResourceType = null,
     SecurityServiceType: SecurityServiceType = null
   ): PolicySummary = {
@@ -46,7 +46,7 @@ object PolicySummary {
     if (PolicyArn != null) __obj.updateDynamic("PolicyArn")(PolicyArn.asInstanceOf[js.Any])
     if (PolicyId != null) __obj.updateDynamic("PolicyId")(PolicyId.asInstanceOf[js.Any])
     if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemediationEnabled)) __obj.updateDynamic("RemediationEnabled")(RemediationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(RemediationEnabled)) __obj.updateDynamic("RemediationEnabled")(RemediationEnabled.get.asInstanceOf[js.Any])
     if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     if (SecurityServiceType != null) __obj.updateDynamic("SecurityServiceType")(SecurityServiceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicySummary]

@@ -36,16 +36,16 @@ object TooltipInitializeEventArgs {
     locationX: js.Any = null,
     locationY: js.Any = null,
     model: js.Any = null,
-    pointIndex: Int | Double = null,
+    pointIndex: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): TooltipInitializeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (currentText != null) __obj.updateDynamic("currentText")(currentText.asInstanceOf[js.Any])
     if (locationX != null) __obj.updateDynamic("locationX")(locationX.asInstanceOf[js.Any])
     if (locationY != null) __obj.updateDynamic("locationY")(locationY.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (pointIndex != null) __obj.updateDynamic("pointIndex")(pointIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointIndex)) __obj.updateDynamic("pointIndex")(pointIndex.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipInitializeEventArgs]
   }

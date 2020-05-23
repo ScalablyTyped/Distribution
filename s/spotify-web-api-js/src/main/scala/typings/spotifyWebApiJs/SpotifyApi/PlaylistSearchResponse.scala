@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Search for a playlist
-  * 
+  *
   * GET /v1/search?type=playlist
   * https://developer.spotify.com/web-api/search-item/
   */

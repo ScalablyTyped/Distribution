@@ -1,6 +1,6 @@
 package typings.stripeV3.stripe
 
-import typings.stripeV3.AnonBillingdetailsBillingDetails
+import typings.stripeV3.anon.BillingdetailsBillingDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait ConfirmCardPaymentData extends js.Object {
     * See the use case sections below for details.
     * Recomended
     */
-  var payment_method: js.UndefOr[String | AnonBillingdetailsBillingDetails] = js.undefined
+  var payment_method: js.UndefOr[String | BillingdetailsBillingDetails] = js.undefined
   /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
@@ -46,7 +46,7 @@ trait ConfirmCardPaymentData extends js.Object {
 object ConfirmCardPaymentData {
   @scala.inline
   def apply(
-    payment_method: String | AnonBillingdetailsBillingDetails = null,
+    payment_method: String | BillingdetailsBillingDetails = null,
     receipt_email: String = null,
     return_url: String = null,
     save_payment_method: js.UndefOr[Boolean] = js.undefined,
@@ -57,8 +57,8 @@ object ConfirmCardPaymentData {
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
     if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
-    if (!js.isUndefined(setup_future_usage)) __obj.updateDynamic("setup_future_usage")(setup_future_usage.asInstanceOf[js.Any])
+    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setup_future_usage)) __obj.updateDynamic("setup_future_usage")(setup_future_usage.get.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmCardPaymentData]
   }

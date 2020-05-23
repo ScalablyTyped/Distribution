@@ -1,6 +1,6 @@
 package typings.zingchart.mod
 
-import typings.zingchart.AnonShadow
+import typings.zingchart.anon.Shadow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -157,8 +157,8 @@ trait history extends js.Object {
     * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
     */
   var height: js.UndefOr[js.Any] = js.undefined
-  var item: js.UndefOr[AnonShadow] = js.undefined
-  var `item-off`: js.UndefOr[AnonShadow] = js.undefined
+  var item: js.UndefOr[Shadow] = js.undefined
+  var `item-off`: js.UndefOr[Shadow] = js.undefined
   /**
     * Sets the object's margin/s. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
@@ -230,7 +230,7 @@ trait history extends js.Object {
 object history {
   @scala.inline
   def apply(
-    alpha: Int | Double = null,
+    alpha: js.UndefOr[Double] = js.undefined,
     `background-color`: String = null,
     `background-color-1`: String = null,
     `background-color-2`: String = null,
@@ -256,15 +256,15 @@ object history {
     `callout-offset`: js.Any = null,
     `callout-position`: String = null,
     `callout-width`: js.Any = null,
-    `fill-angle`: Int | Double = null,
+    `fill-angle`: js.UndefOr[Double] = js.undefined,
     `fill-offset-x`: js.Any = null,
     `fill-offset-y`: js.Any = null,
     `fill-type`: String = null,
     `gradient-colors`: String = null,
     `gradient-stops`: String = null,
     height: js.Any = null,
-    item: AnonShadow = null,
-    `item-off`: AnonShadow = null,
+    item: Shadow = null,
+    `item-off`: Shadow = null,
     margin: js.Any = null,
     `margin-bottom`: js.Any = null,
     `margin-left`: js.Any = null,
@@ -272,8 +272,8 @@ object history {
     `margin-top`: js.Any = null,
     position: String = null,
     shadow: js.UndefOr[Boolean] = js.undefined,
-    `shadow-alpha`: Int | Double = null,
-    `shadow-angle`: Int | Double = null,
+    `shadow-alpha`: js.UndefOr[Double] = js.undefined,
+    `shadow-angle`: js.UndefOr[Double] = js.undefined,
     `shadow-blur`: js.Any = null,
     `shadow-color`: String = null,
     `shadow-distance`: js.Any = null,
@@ -283,7 +283,7 @@ object history {
     y: js.Any = null
   ): history = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
     if (`background-color-1` != null) __obj.updateDynamic("background-color-1")(`background-color-1`.asInstanceOf[js.Any])
     if (`background-color-2` != null) __obj.updateDynamic("background-color-2")(`background-color-2`.asInstanceOf[js.Any])
@@ -302,14 +302,14 @@ object history {
     if (`border-right` != null) __obj.updateDynamic("border-right")(`border-right`.asInstanceOf[js.Any])
     if (`border-top` != null) __obj.updateDynamic("border-top")(`border-top`.asInstanceOf[js.Any])
     if (`border-width` != null) __obj.updateDynamic("border-width")(`border-width`.asInstanceOf[js.Any])
-    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
+    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.get.asInstanceOf[js.Any])
     if (`callout-extension` != null) __obj.updateDynamic("callout-extension")(`callout-extension`.asInstanceOf[js.Any])
     if (`callout-height` != null) __obj.updateDynamic("callout-height")(`callout-height`.asInstanceOf[js.Any])
     if (`callout-hook` != null) __obj.updateDynamic("callout-hook")(`callout-hook`.asInstanceOf[js.Any])
     if (`callout-offset` != null) __obj.updateDynamic("callout-offset")(`callout-offset`.asInstanceOf[js.Any])
     if (`callout-position` != null) __obj.updateDynamic("callout-position")(`callout-position`.asInstanceOf[js.Any])
     if (`callout-width` != null) __obj.updateDynamic("callout-width")(`callout-width`.asInstanceOf[js.Any])
-    if (`fill-angle` != null) __obj.updateDynamic("fill-angle")(`fill-angle`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fill-angle`)) __obj.updateDynamic("fill-angle")(`fill-angle`.get.asInstanceOf[js.Any])
     if (`fill-offset-x` != null) __obj.updateDynamic("fill-offset-x")(`fill-offset-x`.asInstanceOf[js.Any])
     if (`fill-offset-y` != null) __obj.updateDynamic("fill-offset-y")(`fill-offset-y`.asInstanceOf[js.Any])
     if (`fill-type` != null) __obj.updateDynamic("fill-type")(`fill-type`.asInstanceOf[js.Any])
@@ -324,13 +324,13 @@ object history {
     if (`margin-right` != null) __obj.updateDynamic("margin-right")(`margin-right`.asInstanceOf[js.Any])
     if (`margin-top` != null) __obj.updateDynamic("margin-top")(`margin-top`.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (`shadow-alpha` != null) __obj.updateDynamic("shadow-alpha")(`shadow-alpha`.asInstanceOf[js.Any])
-    if (`shadow-angle` != null) __obj.updateDynamic("shadow-angle")(`shadow-angle`.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`shadow-alpha`)) __obj.updateDynamic("shadow-alpha")(`shadow-alpha`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`shadow-angle`)) __obj.updateDynamic("shadow-angle")(`shadow-angle`.get.asInstanceOf[js.Any])
     if (`shadow-blur` != null) __obj.updateDynamic("shadow-blur")(`shadow-blur`.asInstanceOf[js.Any])
     if (`shadow-color` != null) __obj.updateDynamic("shadow-color")(`shadow-color`.asInstanceOf[js.Any])
     if (`shadow-distance` != null) __obj.updateDynamic("shadow-distance")(`shadow-distance`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

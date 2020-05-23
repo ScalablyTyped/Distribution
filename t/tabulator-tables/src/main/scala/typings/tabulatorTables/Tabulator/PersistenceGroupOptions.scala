@@ -18,9 +18,9 @@ object PersistenceGroupOptions {
     groupStartOpen: js.UndefOr[Boolean] = js.undefined
   ): PersistenceGroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(groupBy)) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupHeader)) __obj.updateDynamic("groupHeader")(groupHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupStartOpen)) __obj.updateDynamic("groupStartOpen")(groupStartOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupBy)) __obj.updateDynamic("groupBy")(groupBy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupHeader)) __obj.updateDynamic("groupHeader")(groupHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupStartOpen)) __obj.updateDynamic("groupStartOpen")(groupStartOpen.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistenceGroupOptions]
   }
 }

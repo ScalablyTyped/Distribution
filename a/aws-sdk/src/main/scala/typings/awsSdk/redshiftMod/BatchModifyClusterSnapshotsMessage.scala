@@ -24,12 +24,12 @@ object BatchModifyClusterSnapshotsMessage {
   @scala.inline
   def apply(
     SnapshotIdentifierList: SnapshotIdentifierList,
-    Force: js.UndefOr[scala.Boolean] = js.undefined,
-    ManualSnapshotRetentionPeriod: Int | scala.Double = null
+    Force: js.UndefOr[Boolean] = js.undefined,
+    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   ): BatchModifyClusterSnapshotsMessage = {
     val __obj = js.Dynamic.literal(SnapshotIdentifierList = SnapshotIdentifierList.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.asInstanceOf[js.Any])
-    if (ManualSnapshotRetentionPeriod != null) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchModifyClusterSnapshotsMessage]
   }
 }

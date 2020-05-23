@@ -33,14 +33,14 @@ trait ReplaceAllShapesWithSheetsChartRequest extends js.Object {
 object ReplaceAllShapesWithSheetsChartRequest {
   @scala.inline
   def apply(
-    chartId: Int | Double = null,
+    chartId: js.UndefOr[Double] = js.undefined,
     containsText: SubstringMatchCriteria = null,
     linkingMode: String = null,
     pageObjectIds: js.Array[String] = null,
     spreadsheetId: String = null
   ): ReplaceAllShapesWithSheetsChartRequest = {
     val __obj = js.Dynamic.literal()
-    if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartId)) __obj.updateDynamic("chartId")(chartId.get.asInstanceOf[js.Any])
     if (containsText != null) __obj.updateDynamic("containsText")(containsText.asInstanceOf[js.Any])
     if (linkingMode != null) __obj.updateDynamic("linkingMode")(linkingMode.asInstanceOf[js.Any])
     if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds.asInstanceOf[js.Any])

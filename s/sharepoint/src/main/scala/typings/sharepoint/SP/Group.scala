@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Group")
 @js.native
-class Group () extends Principal {
+trait Group extends Principal {
   def get_allowMembersEditMembership(): Boolean = js.native
   def get_allowRequestToJoinLeave(): Boolean = js.native
   def get_autoAcceptRequestToJoinLeave(): Boolean = js.native

@@ -58,7 +58,7 @@ object StartTaskRequest {
     containerInstances: StringList,
     taskDefinition: String,
     cluster: String = null,
-    enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined,
+    enableECSManagedTags: js.UndefOr[Boolean] = js.undefined,
     group: String = null,
     networkConfiguration: NetworkConfiguration = null,
     overrides: TaskOverride = null,
@@ -69,7 +69,7 @@ object StartTaskRequest {
   ): StartTaskRequest = {
     val __obj = js.Dynamic.literal(containerInstances = containerInstances.asInstanceOf[js.Any], taskDefinition = taskDefinition.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])

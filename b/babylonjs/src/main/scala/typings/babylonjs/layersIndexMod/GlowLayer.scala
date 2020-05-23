@@ -1,6 +1,6 @@
 package typings.babylonjs.layersIndexMod
 
-import typings.babylonjs.PartialIGlowLayerOptions
+import typings.babylonjs.anon.PartialIGlowLayerOptions
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`

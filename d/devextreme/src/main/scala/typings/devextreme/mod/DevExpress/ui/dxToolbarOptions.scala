@@ -1,19 +1,18 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonAddedItems
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonEvent
-import typings.devextreme.AnonItemData
-import typings.devextreme.AnonItemElement
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
+import typings.devextreme.anon.AddedItems
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.Event
+import typings.devextreme.anon.ItemData
+import typings.devextreme.anon.ItemElement
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
 import typings.devextreme.devextremeStrings.bottomToolbar
 import typings.devextreme.devextremeStrings.topToolbar
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,7 +51,7 @@ object dxToolbarOptions {
     height: Double | String | (js.Function0[Double | String]) = null,
     hint: String = null,
     hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    itemHoldTimeout: Int | Double = null,
+    itemHoldTimeout: js.UndefOr[Double] = js.undefined,
     itemTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
       /* itemIndex */ Double, 
@@ -68,37 +67,37 @@ object dxToolbarOptions {
       String | Element | JQuery
     ]) = null,
     noDataText: String = null,
-    onContentReady: /* e */ AnonComponentElement[dxToolbar] => _ = null,
-    onDisposing: /* e */ AnonModel[dxToolbar] => _ = null,
-    onInitialized: /* e */ AnonElement[dxToolbar] => _ = null,
-    onItemClick: (js.Function1[/* e */ AnonEvent[dxToolbar], _]) | String = null,
-    onItemContextMenu: /* e */ AnonEvent[dxToolbar] => _ = null,
-    onItemHold: /* e */ AnonItemData[dxToolbar] => _ = null,
-    onItemRendered: /* e */ AnonItemElement[dxToolbar] => _ = null,
-    onOptionChanged: /* e */ AnonName[dxToolbar] => _ = null,
-    onSelectionChanged: /* e */ AnonAddedItems[dxToolbar] => _ = null,
+    onContentReady: /* e */ ComponentElement[dxToolbar] => _ = null,
+    onDisposing: /* e */ Model[dxToolbar] => _ = null,
+    onInitialized: /* e */ typings.devextreme.anon.Element[dxToolbar] => _ = null,
+    onItemClick: (js.Function1[/* e */ Event[dxToolbar], _]) | String = null,
+    onItemContextMenu: /* e */ Event[dxToolbar] => _ = null,
+    onItemHold: /* e */ ItemData[dxToolbar] => _ = null,
+    onItemRendered: /* e */ ItemElement[dxToolbar] => _ = null,
+    onOptionChanged: /* e */ Name[dxToolbar] => _ = null,
+    onSelectionChanged: /* e */ AddedItems[dxToolbar] => _ = null,
     renderAs: bottomToolbar | topToolbar = null,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    selectedIndex: Int | Double = null,
+    selectedIndex: js.UndefOr[Double] = js.undefined,
     selectedItem: js.Any = null,
     selectedItemKeys: js.Array[_] = null,
     selectedItems: js.Array[_] = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxToolbarOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (itemHoldTimeout != null) __obj.updateDynamic("itemHoldTimeout")(itemHoldTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemHoldTimeout)) __obj.updateDynamic("itemHoldTimeout")(itemHoldTimeout.get.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (keyExpr != null) __obj.updateDynamic("keyExpr")(keyExpr.asInstanceOf[js.Any])
@@ -114,13 +113,13 @@ object dxToolbarOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1(onSelectionChanged))
     if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     if (selectedItemKeys != null) __obj.updateDynamic("selectedItemKeys")(selectedItemKeys.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxToolbarOptions]
   }

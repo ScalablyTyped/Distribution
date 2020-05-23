@@ -45,11 +45,11 @@ object DurandalHistoryOptions {
     startRoute: String = null
   ): DurandalHistoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hashChange)) __obj.updateDynamic("hashChange")(hashChange.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashChange)) __obj.updateDynamic("hashChange")(hashChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState.get.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (routeHandler != null) __obj.updateDynamic("routeHandler")(js.Any.fromFunction1(routeHandler))
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (startRoute != null) __obj.updateDynamic("startRoute")(startRoute.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurandalHistoryOptions]
   }

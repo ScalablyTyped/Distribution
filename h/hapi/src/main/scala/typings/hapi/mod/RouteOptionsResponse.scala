@@ -84,24 +84,24 @@ trait RouteOptionsResponse extends js.Object {
 object RouteOptionsResponse {
   @scala.inline
   def apply(
-    disconnectStatusCode: Int | Double = null,
+    disconnectStatusCode: js.UndefOr[Double] = js.undefined,
     emptyStatusCode: `200` | `204` = null,
     failAction: FailAction = null,
     modify: js.UndefOr[Boolean] = js.undefined,
     options: ValidationOptions = null,
     ranges: js.UndefOr[Boolean] = js.undefined,
-    sample: Int | Double = null,
+    sample: js.UndefOr[Double] = js.undefined,
     schema: RouteOptionsResponseSchema = null,
     status: Dictionary[RouteOptionsResponseSchema] = null
   ): RouteOptionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (disconnectStatusCode != null) __obj.updateDynamic("disconnectStatusCode")(disconnectStatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(disconnectStatusCode)) __obj.updateDynamic("disconnectStatusCode")(disconnectStatusCode.get.asInstanceOf[js.Any])
     if (emptyStatusCode != null) __obj.updateDynamic("emptyStatusCode")(emptyStatusCode.asInstanceOf[js.Any])
     if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(modify)) __obj.updateDynamic("modify")(modify.asInstanceOf[js.Any])
+    if (!js.isUndefined(modify)) __obj.updateDynamic("modify")(modify.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(ranges)) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (sample != null) __obj.updateDynamic("sample")(sample.asInstanceOf[js.Any])
+    if (!js.isUndefined(ranges)) __obj.updateDynamic("ranges")(ranges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sample)) __obj.updateDynamic("sample")(sample.get.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsResponse]

@@ -17,16 +17,16 @@ object DataSourceTransportReadOptionsData {
   def apply(
     filter: DataSourceFilters = null,
     group: js.Array[DataSourceGroupItem] = null,
-    skip: Int | Double = null,
+    skip: js.UndefOr[Double] = js.undefined,
     sort: js.Array[DataSourceSortItem] = null,
-    take: Int | Double = null
+    take: js.UndefOr[Double] = js.undefined
   ): DataSourceTransportReadOptionsData = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
+    if (!js.isUndefined(take)) __obj.updateDynamic("take")(take.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportReadOptionsData]
   }
 }

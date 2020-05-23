@@ -1,19 +1,21 @@
 package typings.knockoutPaging
 
+import typings.knockoutPaging.anon.InstantiableKnockoutTemplateAnonymous
+import typings.knockoutPaging.anon.InstantiableKnockoutTemplateSourcesDomElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KnockoutTemplateSources extends js.Object {
-  var anonymousTemplate: AnonInstantiableKnockoutTemplateAnonymous
-  var domElement: AnonInstantiableKnockoutTemplateSourcesDomElement
+  var anonymousTemplate: InstantiableKnockoutTemplateAnonymous
+  var domElement: InstantiableKnockoutTemplateSourcesDomElement
 }
 
 object KnockoutTemplateSources {
   @scala.inline
   def apply(
-    anonymousTemplate: AnonInstantiableKnockoutTemplateAnonymous,
-    domElement: AnonInstantiableKnockoutTemplateSourcesDomElement
+    anonymousTemplate: InstantiableKnockoutTemplateAnonymous,
+    domElement: InstantiableKnockoutTemplateSourcesDomElement
   ): KnockoutTemplateSources = {
     val __obj = js.Dynamic.literal(anonymousTemplate = anonymousTemplate.asInstanceOf[js.Any], domElement = domElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutTemplateSources]

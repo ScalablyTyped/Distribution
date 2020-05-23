@@ -18,14 +18,14 @@ object BulkLoadColumnOpts {
     nullable: Boolean,
     length: Double | max = null,
     objName: String = null,
-    precision: Int | Double = null,
-    scale: Int | Double = null
+    precision: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined
   ): BulkLoadColumnOpts = {
     val __obj = js.Dynamic.literal(nullable = nullable.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (objName != null) __obj.updateDynamic("objName")(objName.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkLoadColumnOpts]
   }
 }

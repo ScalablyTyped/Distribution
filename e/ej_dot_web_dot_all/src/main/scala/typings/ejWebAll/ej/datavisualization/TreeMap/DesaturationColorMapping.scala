@@ -31,17 +31,17 @@ object DesaturationColorMapping {
   @scala.inline
   def apply(
     color: String = null,
-    from: Int | Double = null,
-    rangeMaximum: Int | Double = null,
-    rangeMinimum: Int | Double = null,
-    to: Int | Double = null
+    from: js.UndefOr[Double] = js.undefined,
+    rangeMaximum: js.UndefOr[Double] = js.undefined,
+    rangeMinimum: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined
   ): DesaturationColorMapping = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (rangeMaximum != null) __obj.updateDynamic("rangeMaximum")(rangeMaximum.asInstanceOf[js.Any])
-    if (rangeMinimum != null) __obj.updateDynamic("rangeMinimum")(rangeMinimum.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeMaximum)) __obj.updateDynamic("rangeMaximum")(rangeMaximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeMinimum)) __obj.updateDynamic("rangeMinimum")(rangeMinimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DesaturationColorMapping]
   }
 }

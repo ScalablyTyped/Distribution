@@ -18,23 +18,23 @@ object RTCRtpEncodingParameters {
   @scala.inline
   def apply(
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    codecPayloadType: Int | Double = null,
+    codecPayloadType: js.UndefOr[Double] = js.undefined,
     dtx: RTCDtxStatus = null,
-    maxBitrate: Int | Double = null,
-    maxFramerate: Int | Double = null,
-    ptime: Int | Double = null,
+    maxBitrate: js.UndefOr[Double] = js.undefined,
+    maxFramerate: js.UndefOr[Double] = js.undefined,
+    ptime: js.UndefOr[Double] = js.undefined,
     rid: java.lang.String = null,
-    scaleResolutionDownBy: Int | Double = null
+    scaleResolutionDownBy: js.UndefOr[Double] = js.undefined
   ): RTCRtpEncodingParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (codecPayloadType != null) __obj.updateDynamic("codecPayloadType")(codecPayloadType.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(codecPayloadType)) __obj.updateDynamic("codecPayloadType")(codecPayloadType.get.asInstanceOf[js.Any])
     if (dtx != null) __obj.updateDynamic("dtx")(dtx.asInstanceOf[js.Any])
-    if (maxBitrate != null) __obj.updateDynamic("maxBitrate")(maxBitrate.asInstanceOf[js.Any])
-    if (maxFramerate != null) __obj.updateDynamic("maxFramerate")(maxFramerate.asInstanceOf[js.Any])
-    if (ptime != null) __obj.updateDynamic("ptime")(ptime.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBitrate)) __obj.updateDynamic("maxBitrate")(maxBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFramerate)) __obj.updateDynamic("maxFramerate")(maxFramerate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ptime)) __obj.updateDynamic("ptime")(ptime.get.asInstanceOf[js.Any])
     if (rid != null) __obj.updateDynamic("rid")(rid.asInstanceOf[js.Any])
-    if (scaleResolutionDownBy != null) __obj.updateDynamic("scaleResolutionDownBy")(scaleResolutionDownBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleResolutionDownBy)) __obj.updateDynamic("scaleResolutionDownBy")(scaleResolutionDownBy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpEncodingParameters]
   }
 }

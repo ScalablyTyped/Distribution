@@ -1,6 +1,6 @@
 package typings.fullcalendar.eventRendererMod
 
-import typings.fullcalendar.AnonBackgroundcolor
+import typings.fullcalendar.anon.Backgroundcolor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ class Default_ protected () extends js.Object {
   def getFallbackStylingObjs(eventDef: js.Any): js.Array[_] = js.native
   def getSegClasses(seg: js.Any, isDraggable: js.Any, isResizable: js.Any): js.Array[String] = js.native
   def getSegs(): js.Any = js.native
-  def getSkinCss(eventDef: js.Any): AnonBackgroundcolor = js.native
+  def getSkinCss(eventDef: js.Any): Backgroundcolor = js.native
   def getStylingObjs(eventDef: js.Any): js.Array[_] = js.native
   def getTextColor(eventDef: js.Any): js.Any = js.native
   def getTimeText(eventFootprint: js.Any): js.Any = js.native

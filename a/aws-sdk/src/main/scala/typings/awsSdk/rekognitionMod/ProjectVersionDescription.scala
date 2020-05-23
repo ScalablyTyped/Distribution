@@ -55,10 +55,10 @@ trait ProjectVersionDescription extends js.Object {
 object ProjectVersionDescription {
   @scala.inline
   def apply(
-    BillableTrainingTimeInSeconds: Int | Double = null,
+    BillableTrainingTimeInSeconds: js.UndefOr[ULong] = js.undefined,
     CreationTimestamp: DateTime = null,
     EvaluationResult: EvaluationResult = null,
-    MinInferenceUnits: Int | Double = null,
+    MinInferenceUnits: js.UndefOr[InferenceUnits] = js.undefined,
     OutputConfig: OutputConfig = null,
     ProjectVersionArn: ProjectVersionArn = null,
     Status: ProjectVersionStatus = null,
@@ -68,10 +68,10 @@ object ProjectVersionDescription {
     TrainingEndTimestamp: DateTime = null
   ): ProjectVersionDescription = {
     val __obj = js.Dynamic.literal()
-    if (BillableTrainingTimeInSeconds != null) __obj.updateDynamic("BillableTrainingTimeInSeconds")(BillableTrainingTimeInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(BillableTrainingTimeInSeconds)) __obj.updateDynamic("BillableTrainingTimeInSeconds")(BillableTrainingTimeInSeconds.get.asInstanceOf[js.Any])
     if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
     if (EvaluationResult != null) __obj.updateDynamic("EvaluationResult")(EvaluationResult.asInstanceOf[js.Any])
-    if (MinInferenceUnits != null) __obj.updateDynamic("MinInferenceUnits")(MinInferenceUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinInferenceUnits)) __obj.updateDynamic("MinInferenceUnits")(MinInferenceUnits.get.asInstanceOf[js.Any])
     if (OutputConfig != null) __obj.updateDynamic("OutputConfig")(OutputConfig.asInstanceOf[js.Any])
     if (ProjectVersionArn != null) __obj.updateDynamic("ProjectVersionArn")(ProjectVersionArn.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

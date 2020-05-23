@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`dot-density`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -93,8 +92,4 @@ trait DotDensityRenderer
     */
   def calculateDotValue(scale: Double): Double = js.native
 }
-
-@JSGlobal("__esri.DotDensityRenderer")
-@js.native
-object DotDensityRenderer extends TopLevel[DotDensityRendererConstructor]
 

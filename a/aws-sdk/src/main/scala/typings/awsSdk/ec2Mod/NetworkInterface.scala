@@ -110,8 +110,8 @@ object NetworkInterface {
     PrivateIpAddress: String = null,
     PrivateIpAddresses: NetworkInterfacePrivateIpAddressList = null,
     RequesterId: String = null,
-    RequesterManaged: js.UndefOr[scala.Boolean] = js.undefined,
-    SourceDestCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    RequesterManaged: js.UndefOr[Boolean] = js.undefined,
+    SourceDestCheck: js.UndefOr[Boolean] = js.undefined,
     Status: NetworkInterfaceStatus = null,
     SubnetId: String = null,
     TagSet: TagList = null,
@@ -133,8 +133,8 @@ object NetworkInterface {
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     if (PrivateIpAddresses != null) __obj.updateDynamic("PrivateIpAddresses")(PrivateIpAddresses.asInstanceOf[js.Any])
     if (RequesterId != null) __obj.updateDynamic("RequesterId")(RequesterId.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterManaged)) __obj.updateDynamic("RequesterManaged")(RequesterManaged.asInstanceOf[js.Any])
-    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequesterManaged)) __obj.updateDynamic("RequesterManaged")(RequesterManaged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     if (TagSet != null) __obj.updateDynamic("TagSet")(TagSet.asInstanceOf[js.Any])

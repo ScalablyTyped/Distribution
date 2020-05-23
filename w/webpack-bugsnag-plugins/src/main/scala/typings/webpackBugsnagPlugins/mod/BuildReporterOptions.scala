@@ -1,6 +1,6 @@
 package typings.webpackBugsnagPlugins.mod
 
-import typings.webpackBugsnagPlugins.AnonDebug
+import typings.webpackBugsnagPlugins.anon.Debug
 import typings.webpackBugsnagPlugins.webpackBugsnagPluginsStrings.debug
 import typings.webpackBugsnagPlugins.webpackBugsnagPluginsStrings.error
 import typings.webpackBugsnagPlugins.webpackBugsnagPluginsStrings.info
@@ -25,7 +25,7 @@ trait BuildReporterOptions extends js.Object {
   /**
     * Provide a different logger object
     */
-  var logger: js.UndefOr[AnonDebug] = js.undefined
+  var logger: js.UndefOr[Debug] = js.undefined
   /**
     * The path to search for source control info
     *
@@ -39,7 +39,7 @@ object BuildReporterOptions {
   def apply(
     endpoint: String = null,
     logLevel: debug | info | warn | error = null,
-    logger: AnonDebug = null,
+    logger: Debug = null,
     path: String = null
   ): BuildReporterOptions = {
     val __obj = js.Dynamic.literal()

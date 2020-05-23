@@ -1,6 +1,7 @@
 package typings.slickCarousel
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.slickCarousel.anon.CurX
 import typings.slickCarousel.slickCarouselBooleans.`false`
 import typings.slickCarousel.slickCarouselStrings.MozTransform
 import typings.slickCarousel.slickCarouselStrings.MozTransition
@@ -154,7 +155,7 @@ object JQuerySlick {
     slideOffset: Double,
     sliding: Boolean,
     swiping: Boolean,
-    touchObject: AnonCurX,
+    touchObject: CurX,
     transformsEnabled: Boolean,
     unslicked: Boolean,
     visibilityChange: visibilitychange | mozvisibilitychange | webkitvisibilitychange,
@@ -165,42 +166,22 @@ object JQuerySlick {
     $slideTrack: JQuery = null,
     $slides: JQuery = null,
     $slidesCache: JQuery = null,
-    activeBreakpoint: Int | Double = null,
+    activeBreakpoint: Double = null.asInstanceOf[Double],
     animType: OTransform | MozTransform | webkitTransform | msTransform | transform | `false` = null,
-    autoPlayTimer: Int | Double = null,
-    currentLeft: Int | Double = null,
-    listHeight: Int | Double = null,
-    listWidth: Int | Double = null,
+    autoPlayTimer: Double = null.asInstanceOf[Double],
+    currentLeft: Double = null.asInstanceOf[Double],
+    listHeight: Double = null.asInstanceOf[Double],
+    listWidth: Double = null.asInstanceOf[Double],
     positionProp: top | left = null,
     respondTo: window | slider | min = null,
-    slideCount: Int | Double = null,
+    slideCount: Double = null.asInstanceOf[Double],
     slideWidth: Number = null,
-    swipeLeft: Int | Double = null,
+    swipeLeft: Double = null.asInstanceOf[Double],
     transformType: `-o-transform` | `-moz-transform` | `-webkit-transform` | `-ms-transform` | transition = null,
     transitionType: OTransition | MozTransition | webkitTransition | msTransition | transition = null,
-    windowTimer: Int | Double = null
+    windowTimer: Double = null.asInstanceOf[Double]
   ): JQuerySlick = {
-    val __obj = js.Dynamic.literal($list = $list.asInstanceOf[js.Any], $slider = $slider.asInstanceOf[js.Any], animProp = animProp.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any], breakpointSettings = breakpointSettings.asInstanceOf[js.Any], breakpoints = breakpoints.asInstanceOf[js.Any], cssTransitions = cssTransitions.asInstanceOf[js.Any], currentDirection = currentDirection.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], focussed = focussed.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], initials = initials.asInstanceOf[js.Any], interrupted = interrupted.asInstanceOf[js.Any], loadIndex = loadIndex.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], originalSettings = originalSettings.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], shouldClick = shouldClick.asInstanceOf[js.Any], slideOffset = slideOffset.asInstanceOf[js.Any], sliding = sliding.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any], touchObject = touchObject.asInstanceOf[js.Any], transformsEnabled = transformsEnabled.asInstanceOf[js.Any], unslicked = unslicked.asInstanceOf[js.Any], visibilityChange = visibilityChange.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any])
-    if ($dots != null) __obj.updateDynamic("$dots")($dots.asInstanceOf[js.Any])
-    if ($nextArrow != null) __obj.updateDynamic("$nextArrow")($nextArrow.asInstanceOf[js.Any])
-    if ($prevArrow != null) __obj.updateDynamic("$prevArrow")($prevArrow.asInstanceOf[js.Any])
-    if ($slideTrack != null) __obj.updateDynamic("$slideTrack")($slideTrack.asInstanceOf[js.Any])
-    if ($slides != null) __obj.updateDynamic("$slides")($slides.asInstanceOf[js.Any])
-    if ($slidesCache != null) __obj.updateDynamic("$slidesCache")($slidesCache.asInstanceOf[js.Any])
-    if (activeBreakpoint != null) __obj.updateDynamic("activeBreakpoint")(activeBreakpoint.asInstanceOf[js.Any])
-    if (animType != null) __obj.updateDynamic("animType")(animType.asInstanceOf[js.Any])
-    if (autoPlayTimer != null) __obj.updateDynamic("autoPlayTimer")(autoPlayTimer.asInstanceOf[js.Any])
-    if (currentLeft != null) __obj.updateDynamic("currentLeft")(currentLeft.asInstanceOf[js.Any])
-    if (listHeight != null) __obj.updateDynamic("listHeight")(listHeight.asInstanceOf[js.Any])
-    if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
-    if (positionProp != null) __obj.updateDynamic("positionProp")(positionProp.asInstanceOf[js.Any])
-    if (respondTo != null) __obj.updateDynamic("respondTo")(respondTo.asInstanceOf[js.Any])
-    if (slideCount != null) __obj.updateDynamic("slideCount")(slideCount.asInstanceOf[js.Any])
-    if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
-    if (swipeLeft != null) __obj.updateDynamic("swipeLeft")(swipeLeft.asInstanceOf[js.Any])
-    if (transformType != null) __obj.updateDynamic("transformType")(transformType.asInstanceOf[js.Any])
-    if (transitionType != null) __obj.updateDynamic("transitionType")(transitionType.asInstanceOf[js.Any])
-    if (windowTimer != null) __obj.updateDynamic("windowTimer")(windowTimer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal($list = $list.asInstanceOf[js.Any], $slider = $slider.asInstanceOf[js.Any], animProp = animProp.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any], breakpointSettings = breakpointSettings.asInstanceOf[js.Any], breakpoints = breakpoints.asInstanceOf[js.Any], cssTransitions = cssTransitions.asInstanceOf[js.Any], currentDirection = currentDirection.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], focussed = focussed.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], initials = initials.asInstanceOf[js.Any], interrupted = interrupted.asInstanceOf[js.Any], loadIndex = loadIndex.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], originalSettings = originalSettings.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], shouldClick = shouldClick.asInstanceOf[js.Any], slideOffset = slideOffset.asInstanceOf[js.Any], sliding = sliding.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any], touchObject = touchObject.asInstanceOf[js.Any], transformsEnabled = transformsEnabled.asInstanceOf[js.Any], unslicked = unslicked.asInstanceOf[js.Any], visibilityChange = visibilityChange.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any], $dots = $dots.asInstanceOf[js.Any], $nextArrow = $nextArrow.asInstanceOf[js.Any], $prevArrow = $prevArrow.asInstanceOf[js.Any], $slideTrack = $slideTrack.asInstanceOf[js.Any], $slides = $slides.asInstanceOf[js.Any], $slidesCache = $slidesCache.asInstanceOf[js.Any], activeBreakpoint = activeBreakpoint.asInstanceOf[js.Any], animType = animType.asInstanceOf[js.Any], autoPlayTimer = autoPlayTimer.asInstanceOf[js.Any], currentLeft = currentLeft.asInstanceOf[js.Any], listHeight = listHeight.asInstanceOf[js.Any], listWidth = listWidth.asInstanceOf[js.Any], positionProp = positionProp.asInstanceOf[js.Any], respondTo = respondTo.asInstanceOf[js.Any], slideCount = slideCount.asInstanceOf[js.Any], slideWidth = slideWidth.asInstanceOf[js.Any], swipeLeft = swipeLeft.asInstanceOf[js.Any], transformType = transformType.asInstanceOf[js.Any], transitionType = transitionType.asInstanceOf[js.Any], windowTimer = windowTimer.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuerySlick]
   }
 }

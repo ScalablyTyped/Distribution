@@ -4,7 +4,6 @@ import typings.apolloCache.dataProxyMod.DataProxy
 import typings.apolloClient.typesMod.MutationQueryReducersMap
 import typings.apolloLink.typesMod.FetchResult
 import typings.graphql.astMod.DocumentNode
-import typings.graphql.executeMod.ExecutionResult
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,13 +24,16 @@ object MutationOptions {
     errorPolicy: ErrorPolicy = null,
     fetchPolicy: FetchPolicy = null,
     optimisticResponse: T | (js.Function1[TVariables, T]) = null,
-    refetchQueries: (js.Function1[/* result */ ExecutionResult[T], RefetchQueryDescription]) | RefetchQueryDescription = null,
+    refetchQueries: (js.Function1[
+      /* result */ FetchResult[T, Record[String, _], Record[String, _]], 
+      RefetchQueryDescription
+    ]) | RefetchQueryDescription = null,
     update: (/* proxy */ DataProxy, /* mutationResult */ FetchResult[T, Record[String, js.Any], Record[String, js.Any]]) => Unit = null,
     updateQueries: MutationQueryReducersMap[T] = null,
     variables: TVariables = null
   ): MutationOptions[T, TVariables] = {
     val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any])
-    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries.asInstanceOf[js.Any])
+    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy.asInstanceOf[js.Any])
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])

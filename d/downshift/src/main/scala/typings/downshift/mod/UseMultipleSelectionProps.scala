@@ -31,12 +31,12 @@ trait UseMultipleSelectionProps[Item] extends js.Object {
 object UseMultipleSelectionProps {
   @scala.inline
   def apply[Item](
-    activeIndex: Int | Double = null,
-    defaultActiveIndex: Int | Double = null,
+    activeIndex: js.UndefOr[Double] = js.undefined,
+    defaultActiveIndex: js.UndefOr[Double] = js.undefined,
     defaultSelectedItems: js.Array[Item] = null,
     environment: Environment = null,
     getA11yRemovalMessage: /* options */ A11yRemovalMessage[Item] => String = null,
-    initialActiveIndex: Int | Double = null,
+    initialActiveIndex: js.UndefOr[Double] = js.undefined,
     initialSelectedItems: js.Array[Item] = null,
     itemToString: /* item */ Item => String = null,
     keyNavigationNext: String = null,
@@ -48,12 +48,12 @@ object UseMultipleSelectionProps {
     stateReducer: (/* state */ UseMultipleSelectionState[Item], /* actionAndChanges */ UseMultipleSelectionStateChangeOptions[Item]) => UseMultipleSelectionState[Item] = null
   ): UseMultipleSelectionProps[Item] = {
     val __obj = js.Dynamic.literal()
-    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (defaultActiveIndex != null) __obj.updateDynamic("defaultActiveIndex")(defaultActiveIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultActiveIndex)) __obj.updateDynamic("defaultActiveIndex")(defaultActiveIndex.get.asInstanceOf[js.Any])
     if (defaultSelectedItems != null) __obj.updateDynamic("defaultSelectedItems")(defaultSelectedItems.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (getA11yRemovalMessage != null) __obj.updateDynamic("getA11yRemovalMessage")(js.Any.fromFunction1(getA11yRemovalMessage))
-    if (initialActiveIndex != null) __obj.updateDynamic("initialActiveIndex")(initialActiveIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialActiveIndex)) __obj.updateDynamic("initialActiveIndex")(initialActiveIndex.get.asInstanceOf[js.Any])
     if (initialSelectedItems != null) __obj.updateDynamic("initialSelectedItems")(initialSelectedItems.asInstanceOf[js.Any])
     if (itemToString != null) __obj.updateDynamic("itemToString")(js.Any.fromFunction1(itemToString))
     if (keyNavigationNext != null) __obj.updateDynamic("keyNavigationNext")(keyNavigationNext.asInstanceOf[js.Any])

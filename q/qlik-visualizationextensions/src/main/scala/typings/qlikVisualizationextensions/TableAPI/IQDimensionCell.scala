@@ -28,10 +28,10 @@ object IQDimensionCell {
     qState: String,
     qText: String,
     select: () => Unit,
-    qNum: Int | Double = null
+    qNum: js.UndefOr[Double] = js.undefined
   ): IQDimensionCell = {
     val __obj = js.Dynamic.literal(getPercent = js.Any.fromFunction0(getPercent), getPercentOfMax = js.Any.fromFunction0(getPercentOfMax), qElemNumber = qElemNumber.asInstanceOf[js.Any], qState = qState.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any], select = js.Any.fromFunction0(select))
-    if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
+    if (!js.isUndefined(qNum)) __obj.updateDynamic("qNum")(qNum.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQDimensionCell]
   }
 }

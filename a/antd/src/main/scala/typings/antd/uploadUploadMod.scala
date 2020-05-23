@@ -1,7 +1,10 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.anon.Accept
+import typings.antd.anon.FileList
+import typings.antd.anon.Percent
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.antd.uploadInterfaceMod.RcFile
 import typings.antd.uploadInterfaceMod.UploadChangeParam
 import typings.antd.uploadInterfaceMod.UploadFile
@@ -10,7 +13,7 @@ import typings.antd.uploadInterfaceMod.UploadProps
 import typings.antd.uploadInterfaceMod.UploadState
 import typings.react.mod.Component
 import typings.react.mod.DragEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.Error
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -34,12 +37,12 @@ object uploadUploadMod extends js.Object {
     def onChange(info: UploadChangeParam[UploadFile[_]]): Unit = js.native
     def onError(error: Error, response: js.Any, file: UploadFile[_]): Unit = js.native
     def onFileDrop(e: DragEvent[HTMLDivElement]): Unit = js.native
-    def onProgress(e: AnonPercent, file: UploadFile[_]): Unit = js.native
+    def onProgress(e: Percent, file: UploadFile[_]): Unit = js.native
     def onStart(file: RcFile): Unit = js.native
     def onSuccess(response: js.Any, file: UploadFile[_], xhr: js.Any): Unit = js.native
     def renderUpload(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
     def renderUploadList(locale: UploadLocale): Element = js.native
-    def saveUpload(node: js.Any): Unit = js.native
+    def saveUpload(node: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RcUpload */ js.Any): Unit = js.native
   }
   
   @js.native
@@ -51,8 +54,8 @@ object uploadUploadMod extends js.Object {
   @js.native
   object default extends js.Object {
     var Dragger: Instantiable0[typings.antd.draggerMod.default] = js.native
-    var defaultProps: AnonAccept = js.native
-    def getDerivedStateFromProps(nextProps: UploadProps[_]): AnonFileList | Null = js.native
+    var defaultProps: Accept = js.native
+    def getDerivedStateFromProps(nextProps: UploadProps[_]): FileList | Null = js.native
   }
   
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait OpenTicketDetailOptions2
   extends BaseOptions[js.Any, js.Any] {
   var partnerId: String
-  	// 商户编号（如果传入了passId则不需要传入partnerId）
+      // 商户编号（如果传入了passId则不需要传入partnerId）
   var serialNumber: String
 }
 

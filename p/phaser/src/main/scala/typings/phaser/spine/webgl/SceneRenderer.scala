@@ -6,18 +6,12 @@ import typings.phaser.spine.Disposable
 import typings.phaser.spine.Skeleton
 import typings.phaser.spine.TextureAtlasRegion
 import typings.std.HTMLCanvasElement
-import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.webgl.SceneRenderer")
 @js.native
-class SceneRenderer protected () extends Disposable {
-  def this(canvas: HTMLCanvasElement, context: ManagedWebGLRenderingContext) = this()
-  def this(canvas: HTMLCanvasElement, context: WebGLRenderingContext) = this()
-  def this(canvas: HTMLCanvasElement, context: ManagedWebGLRenderingContext, twoColorTint: Boolean) = this()
-  def this(canvas: HTMLCanvasElement, context: WebGLRenderingContext, twoColorTint: Boolean) = this()
+trait SceneRenderer extends Disposable {
   var QUAD: js.Any = js.native
   var QUAD_TRIANGLES: js.Any = js.native
   var WHITE: js.Any = js.native
@@ -60,8 +54,6 @@ class SceneRenderer protected () extends Disposable {
     segments: Double,
     color: Color
   ): Unit = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   def drawRegion(region: TextureAtlasRegion, x: Double, y: Double, width: Double, height: Double): Unit = js.native
   def drawRegion(region: TextureAtlasRegion, x: Double, y: Double, width: Double, height: Double, color: Color): Unit = js.native
   def drawRegion(

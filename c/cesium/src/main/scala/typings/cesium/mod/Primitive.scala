@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAppearance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "Primitive")
 @js.native
 class Primitive () extends js.Object {
-  def this(options: AnonAppearance) = this()
+  def this(options: typings.cesium.anon.Appearance) = this()
   val allowPicking: Boolean = js.native
   var appearance: Appearance = js.native
   val asynchronous: Boolean = js.native

@@ -33,13 +33,13 @@ object LaunchTemplateInstanceMarketOptionsSpotOptions {
   @scala.inline
   def apply(
     validUntil: String,
-    blockDurationMinutes: Int | Double = null,
+    blockDurationMinutes: js.UndefOr[Double] = js.undefined,
     instanceInterruptionBehavior: String = null,
     maxPrice: String = null,
     spotInstanceType: String = null
   ): LaunchTemplateInstanceMarketOptionsSpotOptions = {
     val __obj = js.Dynamic.literal(validUntil = validUntil.asInstanceOf[js.Any])
-    if (blockDurationMinutes != null) __obj.updateDynamic("blockDurationMinutes")(blockDurationMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockDurationMinutes)) __obj.updateDynamic("blockDurationMinutes")(blockDurationMinutes.get.asInstanceOf[js.Any])
     if (instanceInterruptionBehavior != null) __obj.updateDynamic("instanceInterruptionBehavior")(instanceInterruptionBehavior.asInstanceOf[js.Any])
     if (maxPrice != null) __obj.updateDynamic("maxPrice")(maxPrice.asInstanceOf[js.Any])
     if (spotInstanceType != null) __obj.updateDynamic("spotInstanceType")(spotInstanceType.asInstanceOf[js.Any])

@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.MaskData")
 @js.native
-class MaskData () extends js.Object {
-  def this(maskObject: DisplayObject) = this()
+trait MaskData extends js.Object {
   /**
     * Scissor operation above the mask in stack.
     * Null if _scissorCounter is zero, rectangle instance if positive.

@@ -4,14 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Search.SearchPaneQueryChangedEventArgs")
-@js.native
-class SearchPaneQueryChangedEventArgs () extends ISearchPaneQueryChangedEventArgs {
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var linguisticDetails: SearchPaneQueryLinguisticDetails = js.native
-  /* CompleteClass */
-  override var queryText: String = js.native
+trait SearchPaneQueryChangedEventArgs extends ISearchPaneQueryChangedEventArgs
+
+object SearchPaneQueryChangedEventArgs {
+  @scala.inline
+  def apply(language: String, linguisticDetails: SearchPaneQueryLinguisticDetails, queryText: String): SearchPaneQueryChangedEventArgs = {
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], linguisticDetails = linguisticDetails.asInstanceOf[js.Any], queryText = queryText.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchPaneQueryChangedEventArgs]
+  }
 }
 

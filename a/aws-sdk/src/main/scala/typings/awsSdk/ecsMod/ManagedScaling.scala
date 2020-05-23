@@ -27,16 +27,16 @@ trait ManagedScaling extends js.Object {
 object ManagedScaling {
   @scala.inline
   def apply(
-    maximumScalingStepSize: Int | scala.Double = null,
-    minimumScalingStepSize: Int | scala.Double = null,
+    maximumScalingStepSize: js.UndefOr[ManagedScalingStepSize] = js.undefined,
+    minimumScalingStepSize: js.UndefOr[ManagedScalingStepSize] = js.undefined,
     status: ManagedScalingStatus = null,
-    targetCapacity: Int | scala.Double = null
+    targetCapacity: js.UndefOr[ManagedScalingTargetCapacity] = js.undefined
   ): ManagedScaling = {
     val __obj = js.Dynamic.literal()
-    if (maximumScalingStepSize != null) __obj.updateDynamic("maximumScalingStepSize")(maximumScalingStepSize.asInstanceOf[js.Any])
-    if (minimumScalingStepSize != null) __obj.updateDynamic("minimumScalingStepSize")(minimumScalingStepSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumScalingStepSize)) __obj.updateDynamic("maximumScalingStepSize")(maximumScalingStepSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumScalingStepSize)) __obj.updateDynamic("minimumScalingStepSize")(minimumScalingStepSize.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (targetCapacity != null) __obj.updateDynamic("targetCapacity")(targetCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetCapacity)) __obj.updateDynamic("targetCapacity")(targetCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedScaling]
   }
 }

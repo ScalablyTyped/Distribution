@@ -17,16 +17,16 @@ trait IGrowlTTLConfig extends js.Object {
 object IGrowlTTLConfig {
   @scala.inline
   def apply(
-    error: Int | Double = null,
-    info: Int | Double = null,
-    success: Int | Double = null,
-    warning: Int | Double = null
+    error: js.UndefOr[Double] = js.undefined,
+    info: js.UndefOr[Double] = js.undefined,
+    success: js.UndefOr[Double] = js.undefined,
+    warning: js.UndefOr[Double] = js.undefined
   ): IGrowlTTLConfig = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGrowlTTLConfig]
   }
 }

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 
 trait IDom extends IAbstract {
   /** [Method] Returns the value of element
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getElement: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of element
-  		* @param element Object The new value.
-  		*/
+    * @param element Object The new value.
+    */
   var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -134,7 +134,7 @@ object IDom {
     if (setElement != null) __obj.updateDynamic("setElement")(js.Any.fromFunction1(setElement))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setUseWrapper != null) __obj.updateDynamic("setUseWrapper")(js.Any.fromFunction1(setUseWrapper))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

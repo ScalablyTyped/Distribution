@@ -25,12 +25,12 @@ object PurchaseOfferingRequest {
   def apply(
     offeringId: OfferingIdentifier = null,
     offeringPromotionId: OfferingPromotionIdentifier = null,
-    quantity: Int | scala.Double = null
+    quantity: js.UndefOr[Integer] = js.undefined
   ): PurchaseOfferingRequest = {
     val __obj = js.Dynamic.literal()
     if (offeringId != null) __obj.updateDynamic("offeringId")(offeringId.asInstanceOf[js.Any])
     if (offeringPromotionId != null) __obj.updateDynamic("offeringPromotionId")(offeringPromotionId.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseOfferingRequest]
   }
 }

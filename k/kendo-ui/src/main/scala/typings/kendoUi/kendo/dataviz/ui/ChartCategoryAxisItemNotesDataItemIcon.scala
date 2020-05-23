@@ -17,16 +17,16 @@ object ChartCategoryAxisItemNotesDataItemIcon {
   def apply(
     background: String = null,
     border: ChartCategoryAxisItemNotesDataItemIconBorder = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): ChartCategoryAxisItemNotesDataItemIcon = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartCategoryAxisItemNotesDataItemIcon]
   }
 }

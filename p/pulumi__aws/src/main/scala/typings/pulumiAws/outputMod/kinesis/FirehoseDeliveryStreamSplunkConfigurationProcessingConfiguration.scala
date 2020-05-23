@@ -25,7 +25,7 @@ object FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration {
     processors: js.Array[FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor] = null
   ): FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (processors != null) __obj.updateDynamic("processors")(processors.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration]
   }

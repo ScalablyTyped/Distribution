@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.filemanager")
 @js.native
-class filemanager () extends baseview {
+trait filemanager extends baseview {
   @JSName("$dropAllow")
   var $dropAllow_Original: WebixCallback = js.native
   @JSName("$$")

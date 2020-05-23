@@ -26,11 +26,11 @@ object UpdateVoiceTemplateRequest {
   def apply(
     TemplateName: string,
     VoiceTemplateRequest: VoiceTemplateRequest,
-    CreateNewVersion: js.UndefOr[Boolean] = js.undefined,
+    CreateNewVersion: js.UndefOr[boolean] = js.undefined,
     Version: string = null
   ): UpdateVoiceTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any], VoiceTemplateRequest = VoiceTemplateRequest.asInstanceOf[js.Any])
-    if (!js.isUndefined(CreateNewVersion)) __obj.updateDynamic("CreateNewVersion")(CreateNewVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(CreateNewVersion)) __obj.updateDynamic("CreateNewVersion")(CreateNewVersion.get.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVoiceTemplateRequest]
   }

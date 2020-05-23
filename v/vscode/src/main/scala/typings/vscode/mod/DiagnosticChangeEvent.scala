@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait DiagnosticChangeEvent extends js.Object {
   /**
-  		 * An array of resources for which diagnostics have changed.
-  		 */
+    * An array of resources for which diagnostics have changed.
+    */
   val uris: js.Array[Uri]
 }
 

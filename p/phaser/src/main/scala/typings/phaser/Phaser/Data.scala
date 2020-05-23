@@ -19,13 +19,7 @@ object Data extends js.Object {
     * or have a property called `events` that is an instance of it.
     */
   @js.native
-  class DataManager protected () extends js.Object {
-    /**
-      * 
-      * @param parent The object that this DataManager belongs to.
-      * @param eventEmitter The DataManager's event emitter.
-      */
-    def this(parent: js.Object, eventEmitter: EventEmitter) = this()
+  trait DataManager extends js.Object {
     /**
       * Return the total number of entries in this Data Manager.
       */
@@ -78,8 +72,8 @@ object Data extends js.Object {
       * @param context Value to use as `this` when executing callback.
       * @param args Additional arguments that will be passed to the callback, after the game object, key, and data.
       */
-    def each(callback: DataEachCallback): DataManager = js.native
-    def each(callback: DataEachCallback, context: js.Any, args: js.Any*): DataManager = js.native
+    def each(callback: DataEachCallback): this.type = js.native
+    def each(callback: DataEachCallback, context: js.Any, args: js.Any*): this.type = js.native
     /**
       * Retrieves the value for the given key, or undefined if it doesn't exist.
       * 
@@ -119,6 +113,17 @@ object Data extends js.Object {
       */
     def has(key: String): Boolean = js.native
     /**
+      * Increase a value for the given key. If the key doesn't already exist in the Data Manager then it is increased from 0.
+      * 
+      * When the value is first set, a `setdata` event is emitted.
+      * @param key The key to increase the value for.
+      * @param data The value to increase for the given key.
+      */
+    def inc(key: String): DataManager = js.native
+    def inc(key: String, data: js.Any): DataManager = js.native
+    def inc(key: js.Object): DataManager = js.native
+    def inc(key: js.Object, data: js.Any): DataManager = js.native
+    /**
       * Merge the given object of key value pairs into this DataManager.
       * 
       * Any newly created values will emit a `setdata` event. Any updated values (see the `overwrite` argument)
@@ -126,8 +131,8 @@ object Data extends js.Object {
       * @param data The data to merge.
       * @param overwrite Whether to overwrite existing data. Defaults to true. Default true.
       */
-    def merge(data: StringDictionary[js.Any]): DataManager = js.native
-    def merge(data: StringDictionary[js.Any], overwrite: Boolean): DataManager = js.native
+    def merge(data: StringDictionary[js.Any]): this.type = js.native
+    def merge(data: StringDictionary[js.Any], overwrite: Boolean): this.type = js.native
     /**
       * Retrieves the data associated with the given 'key', deletes it from this Data Manager, then returns it.
       * @param key The key of the value to retrieve and delete.
@@ -151,12 +156,12 @@ object Data extends js.Object {
       * ```
       * @param key The key to remove, or an array of keys to remove.
       */
-    def remove(key: String): DataManager = js.native
-    def remove(key: js.Array[String]): DataManager = js.native
+    def remove(key: String): this.type = js.native
+    def remove(key: js.Array[String]): this.type = js.native
     /**
       * Delete all data in this Data Manager and unfreeze it.
       */
-    def reset(): DataManager = js.native
+    def reset(): this.type = js.native
     /**
       * Sets a value for the given key. If the key doesn't already exist in the Data Manager then it is created.
       * 
@@ -193,14 +198,22 @@ object Data extends js.Object {
       * @param key The key to set the value for. Or an object or key value pairs. If an object the `data` argument is ignored.
       * @param data The value to set for the given key. If an object is provided as the key this argument is ignored.
       */
-    def set(key: String, data: js.Any): DataManager = js.native
-    def set(key: js.Object, data: js.Any): DataManager = js.native
+    def set(key: String, data: js.Any): this.type = js.native
+    def set(key: js.Object, data: js.Any): this.type = js.native
     /**
       * Freeze or unfreeze this Data Manager. A frozen Data Manager will block all attempts
       * to create new values or update existing ones.
       * @param value Whether to freeze or unfreeze the Data Manager.
       */
-    def setFreeze(value: Boolean): DataManager = js.native
+    def setFreeze(value: Boolean): this.type = js.native
+    /**
+      * Toggle a boolean value for the given key. If the key doesn't already exist in the Data Manager then it is toggled from false.
+      * 
+      * When the value is first set, a `setdata` event is emitted.
+      * @param key The key to toggle the value for.
+      */
+    def toggle(key: String): DataManager = js.native
+    def toggle(key: js.Object): DataManager = js.native
   }
   
   /**
@@ -209,12 +222,7 @@ object Data extends js.Object {
     * or have a property called `events` that is an instance of it.
     */
   @js.native
-  class DataManagerPlugin protected () extends DataManager {
-    /**
-      * 
-      * @param scene A reference to the Scene that this DataManager belongs to.
-      */
-    def this(scene: Scene) = this()
+  trait DataManagerPlugin extends DataManager {
     /**
       * A reference to the Scene that this DataManager belongs to.
       */
@@ -223,51 +231,6 @@ object Data extends js.Object {
       * A reference to the Scene's Systems.
       */
     var systems: Systems = js.native
-  }
-  
-  @js.native
-  object Events extends js.Object {
-    /**
-      * The Change Data Event.
-      * 
-      * This event is dispatched by a Data Manager when an item in the data store is changed.
-      * 
-      * Game Objects with data enabled have an instance of a Data Manager under the `data` property. So, to listen for
-      * a change data event from a Game Object you would use: `sprite.data.on('changedata', listener)`.
-      * 
-      * This event is dispatched for all items that change in the Data Manager.
-      * To listen for the change of a specific item, use the `CHANGE_DATA_KEY_EVENT` event.
-      */
-    val CHANGE_DATA: js.Any = js.native
-    /**
-      * The Change Data Key Event.
-      * 
-      * This event is dispatched by a Data Manager when an item in the data store is changed.
-      * 
-      * Game Objects with data enabled have an instance of a Data Manager under the `data` property. So, to listen for
-      * the change of a specific data item from a Game Object you would use: `sprite.data.on('changedata-key', listener)`,
-      * where `key` is the unique string key of the data item. For example, if you have a data item stored called `gold`
-      * then you can listen for `sprite.data.on('changedata-gold')`.
-      */
-    val CHANGE_DATA_KEY: js.Any = js.native
-    /**
-      * The Remove Data Event.
-      * 
-      * This event is dispatched by a Data Manager when an item is removed from it.
-      * 
-      * Game Objects with data enabled have an instance of a Data Manager under the `data` property. So, to listen for
-      * the removal of a data item on a Game Object you would use: `sprite.data.on('removedata', listener)`.
-      */
-    val REMOVE_DATA: js.Any = js.native
-    /**
-      * The Set Data Event.
-      * 
-      * This event is dispatched by a Data Manager when a new item is added to the data store.
-      * 
-      * Game Objects with data enabled have an instance of a Data Manager under the `data` property. So, to listen for
-      * the addition of a new data item on a Game Object you would use: `sprite.data.on('setdata', listener)`.
-      */
-    val SET_DATA: js.Any = js.native
   }
   
 }

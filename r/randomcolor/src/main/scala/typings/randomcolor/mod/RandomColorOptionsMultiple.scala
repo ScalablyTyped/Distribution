@@ -24,14 +24,14 @@ object RandomColorOptionsMultiple {
   @scala.inline
   def apply(
     count: Double,
-    alpha: Int | Double = null,
+    alpha: js.UndefOr[Double] = js.undefined,
     format: hsvArray | hslArray | hsl | hsla | rgbArray | rgb | rgba | hex = null,
     hue: Double | String = null,
     luminosity: bright | light | dark | random = null,
     seed: Double | String = null
   ): RandomColorOptionsMultiple = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
     if (luminosity != null) __obj.updateDynamic("luminosity")(luminosity.asInstanceOf[js.Any])

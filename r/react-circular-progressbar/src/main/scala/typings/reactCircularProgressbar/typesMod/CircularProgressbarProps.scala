@@ -1,6 +1,6 @@
 package typings.reactCircularProgressbar.typesMod
 
-import typings.reactCircularProgressbar.AnonBackground
+import typings.reactCircularProgressbar.anon.Background
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait CircularProgressbarProps extends js.Object {
   var backgroundPadding: Double
   var circleRatio: Double
   var className: String
-  var classes: AnonBackground
+  var classes: Background
   var counterClockwise: Boolean
   var maxValue: Double
   var minValue: Double
@@ -28,7 +28,7 @@ object CircularProgressbarProps {
     backgroundPadding: Double,
     circleRatio: Double,
     className: String,
-    classes: AnonBackground,
+    classes: Background,
     counterClockwise: Boolean,
     maxValue: Double,
     minValue: Double,

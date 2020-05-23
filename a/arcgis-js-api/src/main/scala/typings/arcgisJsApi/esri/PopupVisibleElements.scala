@@ -31,8 +31,8 @@ object PopupVisibleElements {
     featureNavigation: js.UndefOr[Boolean] = js.undefined
   ): PopupVisibleElements = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(featureNavigation)) __obj.updateDynamic("featureNavigation")(featureNavigation.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(featureNavigation)) __obj.updateDynamic("featureNavigation")(featureNavigation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupVisibleElements]
   }
 }

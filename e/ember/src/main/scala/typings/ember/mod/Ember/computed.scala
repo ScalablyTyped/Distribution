@@ -1,7 +1,7 @@
 package typings.ember.mod.Ember
 
-import typings.emberObject.AnonId
-import typings.emberObject.AnonUntil
+import typings.emberObject.anon.Id
+import typings.emberObject.anon.Until
 import typings.emberObject.typesMod.ComputedPropertyCallback
 import typings.std.MethodDecorator
 import typings.std.RegExp
@@ -56,8 +56,8 @@ object computed extends js.Object {
   def bool(dependentKey: java.lang.String): typings.emberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
   def collect(dependentKeys: java.lang.String*): typings.emberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def deprecatingAlias(dependentKey: java.lang.String): typings.emberObject.computedMod.ComputedProperty[_, _] = js.native
-  def deprecatingAlias(dependentKey: java.lang.String, options: AnonId): typings.emberObject.computedMod.ComputedProperty[_, _] = js.native
-  def deprecatingAlias(dependentKey: java.lang.String, options: AnonUntil): typings.emberObject.computedMod.ComputedProperty[_, _] = js.native
+  def deprecatingAlias(dependentKey: java.lang.String, options: Id): typings.emberObject.computedMod.ComputedProperty[_, _] = js.native
+  def deprecatingAlias(dependentKey: java.lang.String, options: Until): typings.emberObject.computedMod.ComputedProperty[_, _] = js.native
   def empty(dependentKey: java.lang.String): typings.emberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
   def equal(dependentKey: java.lang.String, value: js.Any): typings.emberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
   def filter(

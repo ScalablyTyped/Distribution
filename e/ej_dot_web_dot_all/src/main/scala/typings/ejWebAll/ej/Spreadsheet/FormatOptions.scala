@@ -28,10 +28,10 @@ object FormatOptions {
     tableStyle: js.UndefOr[Boolean] = js.undefined
   ): FormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellStyle)) __obj.updateDynamic("cellStyle")(cellStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(tableStyle)) __obj.updateDynamic("tableStyle")(tableStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellStyle)) __obj.updateDynamic("cellStyle")(cellStyle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableStyle)) __obj.updateDynamic("tableStyle")(tableStyle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptions]
   }
 }

@@ -43,7 +43,7 @@ object QueryMetadata {
     googleDrivePathForLatestReport: String = null,
     latestReportRunTimeMs: String = null,
     locale: String = null,
-    reportCount: Int | Double = null,
+    reportCount: js.UndefOr[Double] = js.undefined,
     running: js.UndefOr[Boolean] = js.undefined,
     sendNotification: js.UndefOr[Boolean] = js.undefined,
     shareEmailAddress: js.Array[String] = null,
@@ -56,9 +56,9 @@ object QueryMetadata {
     if (googleDrivePathForLatestReport != null) __obj.updateDynamic("googleDrivePathForLatestReport")(googleDrivePathForLatestReport.asInstanceOf[js.Any])
     if (latestReportRunTimeMs != null) __obj.updateDynamic("latestReportRunTimeMs")(latestReportRunTimeMs.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (reportCount != null) __obj.updateDynamic("reportCount")(reportCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendNotification)) __obj.updateDynamic("sendNotification")(sendNotification.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportCount)) __obj.updateDynamic("reportCount")(reportCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendNotification)) __obj.updateDynamic("sendNotification")(sendNotification.get.asInstanceOf[js.Any])
     if (shareEmailAddress != null) __obj.updateDynamic("shareEmailAddress")(shareEmailAddress.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryMetadata]

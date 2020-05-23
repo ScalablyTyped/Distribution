@@ -1,6 +1,6 @@
 package typings.webcola.mod
 
-import typings.webcola.AnonArrowStart
+import typings.webcola.anon.ArrowStart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object makeEdgeBetween extends js.Object {
     source: typings.webcola.rectangleMod.Rectangle,
     target: typings.webcola.rectangleMod.Rectangle,
     ah: Double
-  ): AnonArrowStart = js.native
+  ): ArrowStart = js.native
 }
 

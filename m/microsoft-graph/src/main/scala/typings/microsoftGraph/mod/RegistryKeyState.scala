@@ -47,7 +47,7 @@ object RegistryKeyState {
     oldValueData: String = null,
     oldValueName: String = null,
     operation: RegistryOperation = null,
-    processId: Int | Double = null,
+    processId: js.UndefOr[Double] = js.undefined,
     valueData: String = null,
     valueName: String = null,
     valueType: RegistryValueType = null
@@ -59,7 +59,7 @@ object RegistryKeyState {
     if (oldValueData != null) __obj.updateDynamic("oldValueData")(oldValueData.asInstanceOf[js.Any])
     if (oldValueName != null) __obj.updateDynamic("oldValueName")(oldValueName.asInstanceOf[js.Any])
     if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    if (!js.isUndefined(processId)) __obj.updateDynamic("processId")(processId.get.asInstanceOf[js.Any])
     if (valueData != null) __obj.updateDynamic("valueData")(valueData.asInstanceOf[js.Any])
     if (valueName != null) __obj.updateDynamic("valueName")(valueName.asInstanceOf[js.Any])
     if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])

@@ -2,18 +2,7 @@ package typings.vegaTypings.axisMod
 
 import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.valuesMod.AlignValue
-import typings.vegaTypings.valuesMod.AnchorValue
-import typings.vegaTypings.valuesMod.BooleanValue
-import typings.vegaTypings.valuesMod.ColorValue
-import typings.vegaTypings.valuesMod.DashArrayValue
-import typings.vegaTypings.valuesMod.FontStyleValue
-import typings.vegaTypings.valuesMod.FontWeightValue
 import typings.vegaTypings.valuesMod.NumberValue
-import typings.vegaTypings.valuesMod.StringValue
-import typings.vegaTypings.valuesMod.TextBaselineValue
-import typings.vegaTypings.vegaTypingsStrings.center
-import typings.vegaTypings.vegaTypingsStrings.extent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +33,7 @@ trait Axis extends BaseAxis {
     *
     * __Default value:__ `"bottom"` for x-axes and `"left"` for y-axes.
     */
-  var orient: AxisOrient
+  var orient: AxisOrient | SignalRef
   /**
     * The anchor position of the axis in pixels. For x-axes with top or bottom orientation, this sets the axis group x coordinate. For y-axes with left or right orientation, this sets the axis group y coordinate.
     *
@@ -75,167 +64,5 @@ trait Axis extends BaseAxis {
     * Explicitly set the visible axis tick and label values.
     */
   var values: js.UndefOr[js.Array[_] | SignalRef] = js.undefined
-  /**
-    * The integer z-index indicating the layering of the axis group relative to other axis, mark, and legend groups.
-    *
-    * @TJS-type integer
-    * @minimum 0
-    */
-  var zindex: js.UndefOr[Double] = js.undefined
-}
-
-object Axis {
-  @scala.inline
-  def apply(
-    orient: AxisOrient,
-    scale: String,
-    bandPosition: NumberValue = null,
-    domain: js.UndefOr[Boolean] = js.undefined,
-    domainColor: ColorValue = null,
-    domainDash: DashArrayValue = null,
-    domainDashOffset: NumberValue = null,
-    domainOpacity: NumberValue = null,
-    domainWidth: NumberValue = null,
-    encode: AxisEncode = null,
-    format: String | TimeFormatSpecifier | SignalRef = null,
-    formatType: FormatType | SignalRef = null,
-    grid: js.UndefOr[Boolean] = js.undefined,
-    gridColor: ColorValue = null,
-    gridDash: DashArrayValue = null,
-    gridDashOffset: NumberValue = null,
-    gridOpacity: NumberValue = null,
-    gridScale: String = null,
-    gridWidth: NumberValue = null,
-    labelAlign: AlignValue = null,
-    labelAngle: NumberValue = null,
-    labelBaseline: TextBaselineValue = null,
-    labelBound: Double | Boolean | SignalRef = null,
-    labelColor: ColorValue = null,
-    labelFlush: Double | Boolean | SignalRef = null,
-    labelFlushOffset: Double | SignalRef = null,
-    labelFont: StringValue = null,
-    labelFontSize: NumberValue = null,
-    labelFontStyle: FontStyleValue = null,
-    labelFontWeight: FontWeightValue = null,
-    labelLimit: NumberValue = null,
-    labelLineHeight: NumberValue = null,
-    labelOffset: NumberValue = null,
-    labelOpacity: NumberValue = null,
-    labelOverlap: LabelOverlap | SignalRef = null,
-    labelPadding: NumberValue = null,
-    labelSeparation: Double | SignalRef = null,
-    labels: js.UndefOr[Boolean] = js.undefined,
-    maxExtent: NumberValue = null,
-    minExtent: NumberValue = null,
-    offset: NumberValue = null,
-    position: NumberValue = null,
-    tickBand: center | extent | SignalRef = null,
-    tickColor: ColorValue = null,
-    tickCount: TickCount = null,
-    tickDash: DashArrayValue = null,
-    tickDashOffset: NumberValue = null,
-    tickExtra: BooleanValue = null,
-    tickMinStep: Double | SignalRef = null,
-    tickOffset: NumberValue = null,
-    tickOpacity: NumberValue = null,
-    tickRound: BooleanValue = null,
-    tickSize: NumberValue = null,
-    tickWidth: NumberValue = null,
-    ticks: BooleanValue = null,
-    title: Text | SignalRef = null,
-    titleAlign: AlignValue = null,
-    titleAnchor: AnchorValue = null,
-    titleAngle: NumberValue = null,
-    titleBaseline: TextBaselineValue = null,
-    titleColor: ColorValue = null,
-    titleFont: StringValue = null,
-    titleFontSize: NumberValue = null,
-    titleFontStyle: FontStyleValue = null,
-    titleFontWeight: FontWeightValue = null,
-    titleLimit: NumberValue = null,
-    titleLineHeight: NumberValue = null,
-    titleOpacity: NumberValue = null,
-    titlePadding: NumberValue = null,
-    titleX: NumberValue = null,
-    titleY: NumberValue = null,
-    translate: Int | Double = null,
-    values: js.Array[_] | SignalRef = null,
-    zindex: Int | Double = null
-  ): Axis = {
-    val __obj = js.Dynamic.literal(orient = orient.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
-    if (bandPosition != null) __obj.updateDynamic("bandPosition")(bandPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(domain)) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (domainColor != null) __obj.updateDynamic("domainColor")(domainColor.asInstanceOf[js.Any])
-    if (domainDash != null) __obj.updateDynamic("domainDash")(domainDash.asInstanceOf[js.Any])
-    if (domainDashOffset != null) __obj.updateDynamic("domainDashOffset")(domainDashOffset.asInstanceOf[js.Any])
-    if (domainOpacity != null) __obj.updateDynamic("domainOpacity")(domainOpacity.asInstanceOf[js.Any])
-    if (domainWidth != null) __obj.updateDynamic("domainWidth")(domainWidth.asInstanceOf[js.Any])
-    if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatType != null) __obj.updateDynamic("formatType")(formatType.asInstanceOf[js.Any])
-    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (gridColor != null) __obj.updateDynamic("gridColor")(gridColor.asInstanceOf[js.Any])
-    if (gridDash != null) __obj.updateDynamic("gridDash")(gridDash.asInstanceOf[js.Any])
-    if (gridDashOffset != null) __obj.updateDynamic("gridDashOffset")(gridDashOffset.asInstanceOf[js.Any])
-    if (gridOpacity != null) __obj.updateDynamic("gridOpacity")(gridOpacity.asInstanceOf[js.Any])
-    if (gridScale != null) __obj.updateDynamic("gridScale")(gridScale.asInstanceOf[js.Any])
-    if (gridWidth != null) __obj.updateDynamic("gridWidth")(gridWidth.asInstanceOf[js.Any])
-    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
-    if (labelAngle != null) __obj.updateDynamic("labelAngle")(labelAngle.asInstanceOf[js.Any])
-    if (labelBaseline != null) __obj.updateDynamic("labelBaseline")(labelBaseline.asInstanceOf[js.Any])
-    if (labelBound != null) __obj.updateDynamic("labelBound")(labelBound.asInstanceOf[js.Any])
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
-    if (labelFlush != null) __obj.updateDynamic("labelFlush")(labelFlush.asInstanceOf[js.Any])
-    if (labelFlushOffset != null) __obj.updateDynamic("labelFlushOffset")(labelFlushOffset.asInstanceOf[js.Any])
-    if (labelFont != null) __obj.updateDynamic("labelFont")(labelFont.asInstanceOf[js.Any])
-    if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
-    if (labelFontStyle != null) __obj.updateDynamic("labelFontStyle")(labelFontStyle.asInstanceOf[js.Any])
-    if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight.asInstanceOf[js.Any])
-    if (labelLimit != null) __obj.updateDynamic("labelLimit")(labelLimit.asInstanceOf[js.Any])
-    if (labelLineHeight != null) __obj.updateDynamic("labelLineHeight")(labelLineHeight.asInstanceOf[js.Any])
-    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset.asInstanceOf[js.Any])
-    if (labelOpacity != null) __obj.updateDynamic("labelOpacity")(labelOpacity.asInstanceOf[js.Any])
-    if (labelOverlap != null) __obj.updateDynamic("labelOverlap")(labelOverlap.asInstanceOf[js.Any])
-    if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
-    if (labelSeparation != null) __obj.updateDynamic("labelSeparation")(labelSeparation.asInstanceOf[js.Any])
-    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (maxExtent != null) __obj.updateDynamic("maxExtent")(maxExtent.asInstanceOf[js.Any])
-    if (minExtent != null) __obj.updateDynamic("minExtent")(minExtent.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (tickBand != null) __obj.updateDynamic("tickBand")(tickBand.asInstanceOf[js.Any])
-    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
-    if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
-    if (tickDash != null) __obj.updateDynamic("tickDash")(tickDash.asInstanceOf[js.Any])
-    if (tickDashOffset != null) __obj.updateDynamic("tickDashOffset")(tickDashOffset.asInstanceOf[js.Any])
-    if (tickExtra != null) __obj.updateDynamic("tickExtra")(tickExtra.asInstanceOf[js.Any])
-    if (tickMinStep != null) __obj.updateDynamic("tickMinStep")(tickMinStep.asInstanceOf[js.Any])
-    if (tickOffset != null) __obj.updateDynamic("tickOffset")(tickOffset.asInstanceOf[js.Any])
-    if (tickOpacity != null) __obj.updateDynamic("tickOpacity")(tickOpacity.asInstanceOf[js.Any])
-    if (tickRound != null) __obj.updateDynamic("tickRound")(tickRound.asInstanceOf[js.Any])
-    if (tickSize != null) __obj.updateDynamic("tickSize")(tickSize.asInstanceOf[js.Any])
-    if (tickWidth != null) __obj.updateDynamic("tickWidth")(tickWidth.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign.asInstanceOf[js.Any])
-    if (titleAnchor != null) __obj.updateDynamic("titleAnchor")(titleAnchor.asInstanceOf[js.Any])
-    if (titleAngle != null) __obj.updateDynamic("titleAngle")(titleAngle.asInstanceOf[js.Any])
-    if (titleBaseline != null) __obj.updateDynamic("titleBaseline")(titleBaseline.asInstanceOf[js.Any])
-    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor.asInstanceOf[js.Any])
-    if (titleFont != null) __obj.updateDynamic("titleFont")(titleFont.asInstanceOf[js.Any])
-    if (titleFontSize != null) __obj.updateDynamic("titleFontSize")(titleFontSize.asInstanceOf[js.Any])
-    if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle.asInstanceOf[js.Any])
-    if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight.asInstanceOf[js.Any])
-    if (titleLimit != null) __obj.updateDynamic("titleLimit")(titleLimit.asInstanceOf[js.Any])
-    if (titleLineHeight != null) __obj.updateDynamic("titleLineHeight")(titleLineHeight.asInstanceOf[js.Any])
-    if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
-    if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
-    if (titleX != null) __obj.updateDynamic("titleX")(titleX.asInstanceOf[js.Any])
-    if (titleY != null) __obj.updateDynamic("titleY")(titleY.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Axis]
-  }
 }
 

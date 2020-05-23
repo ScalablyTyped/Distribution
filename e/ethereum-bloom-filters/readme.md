@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethereum-bloom-filters
 
-Typings are for version 1.0.6
+Typings are for version 1.0.7
 
 ## Library description:
 Ability to test bloom filters for ethereum.

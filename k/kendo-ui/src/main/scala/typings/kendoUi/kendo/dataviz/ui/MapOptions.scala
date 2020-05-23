@@ -51,9 +51,9 @@ object MapOptions {
     markerCreated: /* e */ MapMarkerCreatedEvent => Unit = null,
     markerDefaults: MapMarkerDefaults = null,
     markers: js.Array[MapMarker] = null,
-    maxZoom: Int | Double = null,
-    minSize: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minSize: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     name: String = null,
     pan: /* e */ MapPanEvent => Unit = null,
     panEnd: /* e */ MapPanEndEvent => Unit = null,
@@ -65,7 +65,7 @@ object MapOptions {
     shapeMouseEnter: /* e */ MapShapeMouseEnterEvent => Unit = null,
     shapeMouseLeave: /* e */ MapShapeMouseLeaveEvent => Unit = null,
     wraparound: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null,
+    zoom: js.UndefOr[Double] = js.undefined,
     zoomEnd: /* e */ MapZoomEndEvent => Unit = null,
     zoomStart: /* e */ MapZoomStartEvent => Unit = null,
     zoomable: js.UndefOr[Boolean] = js.undefined
@@ -82,24 +82,24 @@ object MapOptions {
     if (markerCreated != null) __obj.updateDynamic("markerCreated")(js.Any.fromFunction1(markerCreated))
     if (markerDefaults != null) __obj.updateDynamic("markerDefaults")(markerDefaults.asInstanceOf[js.Any])
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pan != null) __obj.updateDynamic("pan")(js.Any.fromFunction1(pan))
     if (panEnd != null) __obj.updateDynamic("panEnd")(js.Any.fromFunction1(panEnd))
-    if (!js.isUndefined(pannable)) __obj.updateDynamic("pannable")(pannable.asInstanceOf[js.Any])
+    if (!js.isUndefined(pannable)) __obj.updateDynamic("pannable")(pannable.get.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction1(reset))
     if (shapeClick != null) __obj.updateDynamic("shapeClick")(js.Any.fromFunction1(shapeClick))
     if (shapeCreated != null) __obj.updateDynamic("shapeCreated")(js.Any.fromFunction1(shapeCreated))
     if (shapeFeatureCreated != null) __obj.updateDynamic("shapeFeatureCreated")(js.Any.fromFunction1(shapeFeatureCreated))
     if (shapeMouseEnter != null) __obj.updateDynamic("shapeMouseEnter")(js.Any.fromFunction1(shapeMouseEnter))
     if (shapeMouseLeave != null) __obj.updateDynamic("shapeMouseLeave")(js.Any.fromFunction1(shapeMouseLeave))
-    if (!js.isUndefined(wraparound)) __obj.updateDynamic("wraparound")(wraparound.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(wraparound)) __obj.updateDynamic("wraparound")(wraparound.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     if (zoomEnd != null) __obj.updateDynamic("zoomEnd")(js.Any.fromFunction1(zoomEnd))
     if (zoomStart != null) __obj.updateDynamic("zoomStart")(js.Any.fromFunction1(zoomStart))
-    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
 }

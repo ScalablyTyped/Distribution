@@ -1,7 +1,7 @@
 package typings.cliBox.mod
 
-import typings.cliBox.AnonFullscreen
-import typings.cliBox.AnonHeight
+import typings.cliBox.anon.Fullscreen
+import typings.cliBox.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,9 @@ class Class protected () extends Box {
   def this(options: Options, text: String) = this()
   def this(options: Options, text: Text) = this()
   /* CompleteClass */
-  override var options: AnonFullscreen = js.native
+  override var options: Fullscreen = js.native
   /* CompleteClass */
-  override var settings: AnonHeight = js.native
+  override var settings: Height = js.native
   /* CompleteClass */
   override def stringify(): String = js.native
 }

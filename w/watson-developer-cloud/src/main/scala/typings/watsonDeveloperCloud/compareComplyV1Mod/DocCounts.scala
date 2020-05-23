@@ -19,16 +19,16 @@ trait DocCounts extends js.Object {
 object DocCounts {
   @scala.inline
   def apply(
-    failed: Int | Double = null,
-    pending: Int | Double = null,
-    successful: Int | Double = null,
-    total: Int | Double = null
+    failed: js.UndefOr[Double] = js.undefined,
+    pending: js.UndefOr[Double] = js.undefined,
+    successful: js.UndefOr[Double] = js.undefined,
+    total: js.UndefOr[Double] = js.undefined
   ): DocCounts = {
     val __obj = js.Dynamic.literal()
-    if (failed != null) __obj.updateDynamic("failed")(failed.asInstanceOf[js.Any])
-    if (pending != null) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
-    if (successful != null) __obj.updateDynamic("successful")(successful.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(failed)) __obj.updateDynamic("failed")(failed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(successful)) __obj.updateDynamic("successful")(successful.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocCounts]
   }
 }

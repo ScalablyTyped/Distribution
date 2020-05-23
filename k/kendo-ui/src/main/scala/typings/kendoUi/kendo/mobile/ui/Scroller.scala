@@ -1,17 +1,13 @@
 package typings.kendoUi.kendo.mobile.ui
 
 import typings.kendoUi.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.mobile.ui.Scroller")
 @js.native
-class Scroller protected ()
+trait Scroller
   extends typings.kendoUi.kendo.ui.Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: ScrollerOptions) = this()
   @JSName("options")
   var options_Scroller: ScrollerOptions = js.native
   var wrapper: JQuery = js.native
@@ -26,13 +22,5 @@ class Scroller protected ()
   def scrollTo(x: Double, y: Double): Unit = js.native
   def scrollWidth(): Unit = js.native
   def zoomOut(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.mobile.ui.Scroller")
-@js.native
-object Scroller extends js.Object {
-  var fn: Scroller = js.native
-  def extend(proto: js.Object): Scroller = js.native
 }
 

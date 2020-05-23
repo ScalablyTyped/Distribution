@@ -21,7 +21,7 @@ object EmbeddedOptions {
     height: String = null,
     id: String = null,
     sessionKey: String = null,
-    timeoutInMilliseconds: Int | Double = null,
+    timeoutInMilliseconds: js.UndefOr[Double] = js.undefined,
     width: String = null
   ): EmbeddedOptions = {
     val __obj = js.Dynamic.literal()
@@ -29,7 +29,7 @@ object EmbeddedOptions {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
-    if (timeoutInMilliseconds != null) __obj.updateDynamic("timeoutInMilliseconds")(timeoutInMilliseconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInMilliseconds)) __obj.updateDynamic("timeoutInMilliseconds")(timeoutInMilliseconds.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedOptions]
   }

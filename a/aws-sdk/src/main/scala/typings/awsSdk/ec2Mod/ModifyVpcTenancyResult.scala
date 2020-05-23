@@ -14,9 +14,9 @@ trait ModifyVpcTenancyResult extends js.Object {
 
 object ModifyVpcTenancyResult {
   @scala.inline
-  def apply(ReturnValue: js.UndefOr[scala.Boolean] = js.undefined): ModifyVpcTenancyResult = {
+  def apply(ReturnValue: js.UndefOr[Boolean] = js.undefined): ModifyVpcTenancyResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ReturnValue)) __obj.updateDynamic("ReturnValue")(ReturnValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReturnValue)) __obj.updateDynamic("ReturnValue")(ReturnValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcTenancyResult]
   }
 }

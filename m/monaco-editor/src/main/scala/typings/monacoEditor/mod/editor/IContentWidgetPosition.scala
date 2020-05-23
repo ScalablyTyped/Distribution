@@ -28,11 +28,10 @@ object IContentWidgetPosition {
   def apply(
     preference: js.Array[ContentWidgetPositionPreference],
     position: IPosition = null,
-    range: IRange = null
+    range: js.UndefOr[Null | IRange] = js.undefined
   ): IContentWidgetPosition = {
-    val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContentWidgetPosition]
   }
 }

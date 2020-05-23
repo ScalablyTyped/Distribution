@@ -34,7 +34,7 @@ object Condition {
     pattern: String = null
   ): Condition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alternatives)) __obj.updateDynamic("alternatives")(alternatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(alternatives)) __obj.updateDynamic("alternatives")(alternatives.get.asInstanceOf[js.Any])
     if (anchoring != null) __obj.updateDynamic("anchoring")(anchoring.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,8 +51,4 @@ trait SVGFEDiffuseLightingElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("SVGFEDiffuseLightingElement")
-@js.native
-object SVGFEDiffuseLightingElement extends Instantiable0[SVGFEDiffuseLightingElement]
 

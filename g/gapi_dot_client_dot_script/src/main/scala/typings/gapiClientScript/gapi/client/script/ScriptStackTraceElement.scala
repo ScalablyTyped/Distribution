@@ -13,10 +13,10 @@ trait ScriptStackTraceElement extends js.Object {
 
 object ScriptStackTraceElement {
   @scala.inline
-  def apply(function: String = null, lineNumber: Int | Double = null): ScriptStackTraceElement = {
+  def apply(function: String = null, lineNumber: js.UndefOr[Double] = js.undefined): ScriptStackTraceElement = {
     val __obj = js.Dynamic.literal()
     if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptStackTraceElement]
   }
 }

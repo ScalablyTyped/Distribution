@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jsplumb" : "2.13.1"
+      "jsplumb" : "2.13.2"
     }
   ],
   "test-dependencies" : [
     {
-      "jsplumb" : "2.13.1"
+      "jsplumb" : "2.13.2"
     }
   ],
   "compile-devDependencies" : [

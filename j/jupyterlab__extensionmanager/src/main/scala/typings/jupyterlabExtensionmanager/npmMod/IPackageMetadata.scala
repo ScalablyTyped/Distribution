@@ -1,8 +1,8 @@
 package typings.jupyterlabExtensionmanager.npmMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jupyterlabExtensionmanager.AnonDeprecated
-import typings.jupyterlabExtensionmanager.AnonDictkey
+import typings.jupyterlabExtensionmanager.anon.Deprecated
+import typings.jupyterlabExtensionmanager.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait IPackageMetadata extends js.Object {
   /**
     * A mapping of dist tags to the versions they point to.
     */
-  var `dist-tags`: AnonDictkey
+  var `dist-tags`: Dictkey
   /**
     * ISO string of the last time this package was modified.
     */
@@ -27,17 +27,17 @@ trait IPackageMetadata extends js.Object {
   /**
     * A mapping of semver-compliant version numbers to version data.
     */
-  var versions: StringDictionary[AnonDeprecated]
+  var versions: StringDictionary[Deprecated]
 }
 
 object IPackageMetadata {
   @scala.inline
   def apply(
     description: String,
-    `dist-tags`: AnonDictkey,
+    `dist-tags`: Dictkey,
     modified: String,
     name: String,
-    versions: StringDictionary[AnonDeprecated]
+    versions: StringDictionary[Deprecated]
   ): IPackageMetadata = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
     __obj.updateDynamic("dist-tags")(`dist-tags`.asInstanceOf[js.Any])

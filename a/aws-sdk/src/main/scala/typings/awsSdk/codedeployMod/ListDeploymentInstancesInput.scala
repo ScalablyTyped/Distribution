@@ -11,7 +11,7 @@ trait ListDeploymentInstancesInput extends js.Object {
     */
   var deploymentId: DeploymentId = js.native
   /**
-    * A subset of instances to list by status:   Pending: Include those instances with pending deployments.   InProgress: Include those instances where deployments are still in progress.   Succeeded: Include those instances with successful deployments.   Failed: Include those instances with failed deployments.   Skipped: Include those instances with skipped deployments.   Unknown: Include those instances with deployments in an unknown state.  
+    * A subset of instances to list by status:    Pending: Include those instances with pending deployments.    InProgress: Include those instances where deployments are still in progress.    Succeeded: Include those instances with successful deployments.    Failed: Include those instances with failed deployments.    Skipped: Include those instances with skipped deployments.    Unknown: Include those instances with deployments in an unknown state.  
     */
   var instanceStatusFilter: js.UndefOr[InstanceStatusList] = js.native
   /**

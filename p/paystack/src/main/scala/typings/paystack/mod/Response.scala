@@ -18,7 +18,7 @@ object Response {
   def apply(
     message: String,
     status: Boolean,
-    StringDictionary: /* others */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     data: js.Any = null
   ): Response = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])

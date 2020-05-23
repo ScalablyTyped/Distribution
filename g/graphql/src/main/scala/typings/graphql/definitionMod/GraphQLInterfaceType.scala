@@ -1,7 +1,7 @@
 package typings.graphql.definitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.GraphQLInterfaceTypeConfi
+import typings.graphql.anon.GraphQLInterfaceTypeConfi
 import typings.graphql.astMod.InterfaceTypeDefinitionNode
 import typings.graphql.astMod.InterfaceTypeExtensionNode
 import typings.graphql.maybeMod.Maybe

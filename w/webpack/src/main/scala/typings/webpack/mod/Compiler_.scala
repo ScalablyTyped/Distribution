@@ -244,14 +244,17 @@ class Compiler_ ()
 @js.native
 object Compiler_ extends js.Object {
   @js.native
-  class Watching protected () extends js.Object {
+  class Watching protected ()
+    extends typings.webpack.mod.Watching {
     def this(
       compiler: Compiler_,
       watchOptions: typings.webpack.mod.Compiler_.Watching.WatchOptions,
       handler: typings.webpack.mod.Compiler_.Watching.Handler
     ) = this()
-    def close(callback: js.Function0[Unit]): Unit = js.native
-    def invalidate(): Unit = js.native
+    /* CompleteClass */
+    override def close(callback: js.Function0[Unit]): Unit = js.native
+    /* CompleteClass */
+    override def invalidate(): Unit = js.native
   }
   
   @js.native

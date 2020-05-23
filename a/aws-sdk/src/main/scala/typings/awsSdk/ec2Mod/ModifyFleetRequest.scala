@@ -29,11 +29,11 @@ object ModifyFleetRequest {
   def apply(
     FleetId: FleetId,
     TargetCapacitySpecification: TargetCapacitySpecificationRequest,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     ExcessCapacityTerminationPolicy: FleetExcessCapacityTerminationPolicy = null
   ): ModifyFleetRequest = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], TargetCapacitySpecification = TargetCapacitySpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (ExcessCapacityTerminationPolicy != null) __obj.updateDynamic("ExcessCapacityTerminationPolicy")(ExcessCapacityTerminationPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyFleetRequest]
   }

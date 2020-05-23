@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fridaGum.InvocationContext because Already inherited */ trait WindowsInvocationContext extends PortableInvocationContext {
   /**
     * Current OS error value (you may replace it).

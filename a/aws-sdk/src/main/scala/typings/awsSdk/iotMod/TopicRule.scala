@@ -48,7 +48,7 @@ object TopicRule {
     createdAt: CreatedAtDate = null,
     description: Description = null,
     errorAction: Action = null,
-    ruleDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ruleDisabled: js.UndefOr[IsDisabled] = js.undefined,
     ruleName: RuleName = null,
     sql: SQL = null
   ): TopicRule = {
@@ -58,7 +58,7 @@ object TopicRule {
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (errorAction != null) __obj.updateDynamic("errorAction")(errorAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(ruleDisabled)) __obj.updateDynamic("ruleDisabled")(ruleDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruleDisabled)) __obj.updateDynamic("ruleDisabled")(ruleDisabled.get.asInstanceOf[js.Any])
     if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName.asInstanceOf[js.Any])
     if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRule]

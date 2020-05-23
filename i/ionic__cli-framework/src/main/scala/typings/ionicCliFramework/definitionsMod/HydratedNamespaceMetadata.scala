@@ -17,7 +17,7 @@ trait HydratedNamespaceMetadata[C /* <: ICommand[C, N, M, I, O] */, N /* <: INam
 
 object HydratedNamespaceMetadata {
   @scala.inline
-  def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](
+  def apply[C, N, M, I, O](
     aliases: js.Array[String],
     description: String,
     footnotes: js.Array[Footnote],

@@ -7,27 +7,26 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientRichEdit.AutoCorrect event.
   */
-@JSGlobal("ASPxClientRichEditAutoCorrectEventArgs")
-@js.native
-class ASPxClientRichEditAutoCorrectEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientRichEditAutoCorrectEventArgs object. For internal use only.
-    * @param text The input string to check whether it should be replaced.
-    * @param interval The Interval object specifying the input string.
-    * @param handled true if the event is handled and no default processing is required; otherwise false.
-    */
-  def this(text: js.Any, interval: js.Any, handled: js.Any) = this()
+trait ASPxClientRichEditAutoCorrectEventArgs extends ASPxClientEventArgs {
   /**
     * Specifies whether the event is handled.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   /**
     * Gets the input string's interval.
     */
-  var interval: Interval = js.native
+  var interval: Interval
   /**
     * Gets the input string to check whether it should be replaced.
     */
-  var text: String = js.native
+  var text: String
+}
+
+object ASPxClientRichEditAutoCorrectEventArgs {
+  @scala.inline
+  def apply(handled: Boolean, interval: Interval, text: String): ASPxClientRichEditAutoCorrectEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientRichEditAutoCorrectEventArgs]
+  }
 }
 

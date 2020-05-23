@@ -21,20 +21,20 @@ trait NearestOptions extends Options {
 object NearestOptions {
   @scala.inline
   def apply(
-    bearings: js.Array[Bearing] = null,
+    bearings: js.UndefOr[Null | js.Array[Bearing]] = js.undefined,
     coordinates: js.Array[Coordinate] = null,
     generate_hints: js.UndefOr[Boolean] = js.undefined,
     hints: js.Array[Hint] = null,
-    number: Int | Double = null,
-    radiuses: js.Array[Radius] = null
+    number: js.UndefOr[Double] = js.undefined,
+    radiuses: js.UndefOr[Null | js.Array[Radius]] = js.undefined
   ): NearestOptions = {
     val __obj = js.Dynamic.literal()
-    if (bearings != null) __obj.updateDynamic("bearings")(bearings.asInstanceOf[js.Any])
+    if (!js.isUndefined(bearings)) __obj.updateDynamic("bearings")(bearings.asInstanceOf[js.Any])
     if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
-    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints.asInstanceOf[js.Any])
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints.get.asInstanceOf[js.Any])
     if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radiuses)) __obj.updateDynamic("radiuses")(radiuses.asInstanceOf[js.Any])
     __obj.asInstanceOf[NearestOptions]
   }
 }

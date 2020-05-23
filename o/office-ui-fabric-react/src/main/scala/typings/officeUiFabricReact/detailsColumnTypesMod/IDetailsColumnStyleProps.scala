@@ -60,19 +60,19 @@ object IDetailsColumnStyleProps {
     isIconOnly: js.UndefOr[Boolean] = js.undefined,
     isIconVisible: js.UndefOr[Boolean] = js.undefined,
     isPadded: js.UndefOr[Boolean] = js.undefined,
-    transitionDurationDrag: Int | Double = null,
-    transitionDurationDrop: Int | Double = null
+    transitionDurationDrag: js.UndefOr[Double] = js.undefined,
+    transitionDurationDrop: js.UndefOr[Double] = js.undefined
   ): IDetailsColumnStyleProps = {
     val __obj = js.Dynamic.literal(cellStyleProps = cellStyleProps.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName.asInstanceOf[js.Any])
     if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActionable)) __obj.updateDynamic("isActionable")(isActionable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEmpty)) __obj.updateDynamic("isEmpty")(isEmpty.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIconOnly)) __obj.updateDynamic("isIconOnly")(isIconOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIconVisible)) __obj.updateDynamic("isIconVisible")(isIconVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPadded)) __obj.updateDynamic("isPadded")(isPadded.asInstanceOf[js.Any])
-    if (transitionDurationDrag != null) __obj.updateDynamic("transitionDurationDrag")(transitionDurationDrag.asInstanceOf[js.Any])
-    if (transitionDurationDrop != null) __obj.updateDynamic("transitionDurationDrop")(transitionDurationDrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActionable)) __obj.updateDynamic("isActionable")(isActionable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEmpty)) __obj.updateDynamic("isEmpty")(isEmpty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIconOnly)) __obj.updateDynamic("isIconOnly")(isIconOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIconVisible)) __obj.updateDynamic("isIconVisible")(isIconVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPadded)) __obj.updateDynamic("isPadded")(isPadded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDurationDrag)) __obj.updateDynamic("transitionDurationDrag")(transitionDurationDrag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDurationDrop)) __obj.updateDynamic("transitionDurationDrop")(transitionDurationDrop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsColumnStyleProps]
   }
 }

@@ -12,10 +12,10 @@ trait Policy extends js.Object {
 
 object Policy {
   @scala.inline
-  def apply(bindings: js.Array[PolicyBinding], etag: String = null, version: Int | Double = null): Policy = {
+  def apply(bindings: js.Array[PolicyBinding], etag: String = null, version: js.UndefOr[Double] = js.undefined): Policy = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any])
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policy]
   }
 }

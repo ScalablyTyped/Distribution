@@ -26,14 +26,14 @@ trait Cache extends js.Object {
 object Cache {
   @scala.inline
   def apply(
-    cacheMaxAge: Int | Double = null,
-    staleError: Int | Double = null,
-    staleRevalidate: Int | Double = null
+    cacheMaxAge: js.UndefOr[Double] = js.undefined,
+    staleError: js.UndefOr[Double] = js.undefined,
+    staleRevalidate: js.UndefOr[Double] = js.undefined
   ): Cache = {
     val __obj = js.Dynamic.literal()
-    if (cacheMaxAge != null) __obj.updateDynamic("cacheMaxAge")(cacheMaxAge.asInstanceOf[js.Any])
-    if (staleError != null) __obj.updateDynamic("staleError")(staleError.asInstanceOf[js.Any])
-    if (staleRevalidate != null) __obj.updateDynamic("staleRevalidate")(staleRevalidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheMaxAge)) __obj.updateDynamic("cacheMaxAge")(cacheMaxAge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(staleError)) __obj.updateDynamic("staleError")(staleError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(staleRevalidate)) __obj.updateDynamic("staleRevalidate")(staleRevalidate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cache]
   }
 }

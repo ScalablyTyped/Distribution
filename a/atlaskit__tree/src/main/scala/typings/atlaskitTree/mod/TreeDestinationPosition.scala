@@ -11,9 +11,9 @@ trait TreeDestinationPosition extends js.Object {
 
 object TreeDestinationPosition {
   @scala.inline
-  def apply(parentId: ItemId, index: Int | Double = null): TreeDestinationPosition = {
+  def apply(parentId: ItemId, index: js.UndefOr[Double] = js.undefined): TreeDestinationPosition = {
     val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeDestinationPosition]
   }
 }

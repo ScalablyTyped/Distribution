@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/query", "KeyFieldInFilter")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/query", "KeyFieldInFilter")
 @js.native
 class KeyFieldInFilter protected () extends FieldFilter {
   def this(

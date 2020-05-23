@@ -1,15 +1,15 @@
 package typings.oracleOraclejet.ojganttMod
 
-import typings.oracleOraclejet.Anon7
-import typings.oracleOraclejet.AnonAccessibleDependencyInfo
-import typings.oracleOraclejet.AnonBaseline
-import typings.oracleOraclejet.AnonBaselineDate
-import typings.oracleOraclejet.AnonHeightNumber
-import typings.oracleOraclejet.AnonMaxWidth
-import typings.oracleOraclejet.AnonMove
-import typings.oracleOraclejet.AnonOffsetY
-import typings.oracleOraclejet.AnonScale
-import typings.oracleOraclejet.AnonVertical
+import typings.oracleOraclejet.anon.AccessibleDependencyInfo
+import typings.oracleOraclejet.anon.Baseline
+import typings.oracleOraclejet.anon.BaselineDate
+import typings.oracleOraclejet.anon.HeightNumber
+import typings.oracleOraclejet.anon.MaxWidth
+import typings.oracleOraclejet.anon.Move
+import typings.oracleOraclejet.anon.OffsetY
+import typings.oracleOraclejet.anon.Scale
+import typings.oracleOraclejet.anon.Vertical
+import typings.oracleOraclejet.anon.`7`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentSettableProperties
 import typings.oracleOraclejet.ojganttMod.ojGantt.ReferenceObject
@@ -31,24 +31,24 @@ trait ojGanttSettableProperties[K1, K2, D1, D2] extends dvtBaseComponentSettable
   var as: String
   var axisPosition: bottom | top
   var dependencyData: js.UndefOr[DataProvider[K1, D1]] = js.undefined
-  var dnd: AnonMove
+  var dnd: Move
   var end: String
-  var gridlines: AnonVertical
-  var majorAxis: AnonScale
-  var minorAxis: AnonScale
+  var gridlines: Vertical
+  var majorAxis: Scale
+  var minorAxis: Scale
   var referenceObjects: js.Array[ReferenceObject]
-  var rowAxis: AnonMaxWidth[K2, D2]
-  var rowDefaults: AnonHeightNumber
-  var scrollPosition: AnonOffsetY
+  var rowAxis: MaxWidth[K2, D2]
+  var rowDefaults: HeightNumber
+  var scrollPosition: OffsetY
   var selection: js.Array[K2]
   var selectionMode: single | multiple | none
   var start: String
   var taskData: js.UndefOr[DataProvider[K2, D2]] = js.undefined
-  var taskDefaults: AnonBaseline
-  var tooltip: Anon7[K2, D2]
+  var taskDefaults: Baseline
+  var tooltip: `7`[K2, D2]
   @JSName("translations")
-  var translations_ojGanttSettableProperties: AnonAccessibleDependencyInfo
-  var valueFormats: AnonBaselineDate
+  var translations_ojGanttSettableProperties: AccessibleDependencyInfo
+  var valueFormats: BaselineDate
   var viewportEnd: String
   var viewportStart: String
 }
@@ -60,23 +60,23 @@ object ojGanttSettableProperties {
     animationOnDisplay: auto | none,
     as: String,
     axisPosition: bottom | top,
-    dnd: AnonMove,
+    dnd: Move,
     end: String,
-    gridlines: AnonVertical,
-    majorAxis: AnonScale,
-    minorAxis: AnonScale,
+    gridlines: Vertical,
+    majorAxis: Scale,
+    minorAxis: Scale,
     referenceObjects: js.Array[ReferenceObject],
-    rowAxis: AnonMaxWidth[K2, D2],
-    rowDefaults: AnonHeightNumber,
-    scrollPosition: AnonOffsetY,
+    rowAxis: MaxWidth[K2, D2],
+    rowDefaults: HeightNumber,
+    scrollPosition: OffsetY,
     selection: js.Array[K2],
     selectionMode: single | multiple | none,
     start: String,
-    taskDefaults: AnonBaseline,
-    tooltip: Anon7[K2, D2],
+    taskDefaults: Baseline,
+    tooltip: `7`[K2, D2],
     trackResize: on | off,
-    translations: AnonAccessibleDependencyInfo,
-    valueFormats: AnonBaselineDate,
+    translations: AccessibleDependencyInfo,
+    valueFormats: BaselineDate,
     viewportEnd: String,
     viewportStart: String,
     dependencyData: DataProvider[K1, D1] = null,

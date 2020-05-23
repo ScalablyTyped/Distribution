@@ -15,7 +15,7 @@ object IFill {
   def apply(IComponent: IComponent = null, isFill: js.UndefOr[Boolean] = js.undefined): IFill = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(isFill)) __obj.updateDynamic("isFill")(isFill.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFill)) __obj.updateDynamic("isFill")(isFill.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFill]
   }
 }

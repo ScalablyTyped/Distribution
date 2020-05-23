@@ -3,7 +3,7 @@ package typings.awsCryptoIe11Detection.cryptoOperationMod
 import typings.awsCryptoIe11Detection.keyMod.Key
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,10 +14,10 @@ trait CryptoOperation extends js.Object {
   val result: js.UndefOr[ArrayBuffer] = js.undefined
   def abort(): Unit
   def finish(): Unit
-  def onabort(event: Event_): Unit
-  def oncomplete(event: Event_): Unit
-  def onerror(event: Event_): Unit
-  def onprogress(event: Event_): Unit
+  def onabort(event: Event): Unit
+  def oncomplete(event: Event): Unit
+  def onerror(event: Event): Unit
+  def onprogress(event: Event): Unit
   def process(buffer: ArrayBufferView): Unit
 }
 
@@ -28,10 +28,10 @@ object CryptoOperation {
     algorithm: String,
     finish: () => Unit,
     key: Key,
-    onabort: Event_ => Unit,
-    oncomplete: Event_ => Unit,
-    onerror: Event_ => Unit,
-    onprogress: Event_ => Unit,
+    onabort: Event => Unit,
+    oncomplete: Event => Unit,
+    onerror: Event => Unit,
+    onprogress: Event => Unit,
     process: ArrayBufferView => Unit,
     result: ArrayBuffer = null
   ): CryptoOperation = {

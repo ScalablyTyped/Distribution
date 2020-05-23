@@ -21,7 +21,7 @@ trait ojTagCloudItemSettablePropertiesLenient
 object ojTagCloudItemSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     categories: js.Array[String] = null,
     color: String = null,
     label: String = null,
@@ -29,7 +29,7 @@ object ojTagCloudItemSettablePropertiesLenient {
     svgClassName: String = null,
     svgStyle: js.Object = null,
     url: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): ojTagCloudItemSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -40,7 +40,7 @@ object ojTagCloudItemSettablePropertiesLenient {
     if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
     if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTagCloudItemSettablePropertiesLenient]
   }
 }

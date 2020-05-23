@@ -8,7 +8,7 @@ package object mod {
   type TMapThemrProps[P] = js.Function2[
     /* ownProps */ P, 
     /* theme */ typings.reactCssThemr.mod.TReactCSSThemrTheme, 
-    P with typings.reactCssThemr.AnonTheme
+    P with typings.reactCssThemr.anon.Theme
   ]
   type ThemedComponent[P, S] = typings.react.mod.Component[P, S, js.Any]
 }

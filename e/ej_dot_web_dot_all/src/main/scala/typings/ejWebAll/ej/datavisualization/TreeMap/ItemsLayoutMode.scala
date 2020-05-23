@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.TreeMap
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object ItemsLayoutMode extends js.Object {
   //specifies the squarified as layout type position
   @js.native
   sealed trait Squarified extends ItemsLayoutMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ItemsLayoutMode with Double] = js.native
-  /* 3 */ @js.native
-  object Sliceanddiceauto extends TopLevel[Sliceanddiceauto with Double]
-  
-  /* 1 */ @js.native
-  object Sliceanddicehorizontal extends TopLevel[Sliceanddicehorizontal with Double]
-  
-  /* 2 */ @js.native
-  object Sliceanddicevertical extends TopLevel[Sliceanddicevertical with Double]
-  
-  /* 0 */ @js.native
-  object Squarified extends TopLevel[Squarified with Double]
   
 }
 

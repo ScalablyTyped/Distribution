@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,23 +29,6 @@ object ContentType extends js.Object {
   //To display the text content only in button
   @js.native
   sealed trait TextOnly extends ContentType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContentType with Double] = js.native
-  /* 2 */ @js.native
-  object ImageBoth extends TopLevel[ImageBoth with Double]
-  
-  /* 1 */ @js.native
-  object ImageOnly extends TopLevel[ImageOnly with Double]
-  
-  /* 4 */ @js.native
-  object ImageTextImage extends TopLevel[ImageTextImage with Double]
-  
-  /* 3 */ @js.native
-  object TextAndImage extends TopLevel[TextAndImage with Double]
-  
-  /* 0 */ @js.native
-  object TextOnly extends TopLevel[TextOnly with Double]
   
 }
 

@@ -18,13 +18,13 @@ object FilterOptions {
   @scala.inline
   def apply(
     filterText: KnockoutObservable[String] = null,
-    filterThrottle: Int | Double = null,
+    filterThrottle: js.UndefOr[Double] = js.undefined,
     useExternalFilter: js.UndefOr[Boolean] = js.undefined
   ): FilterOptions = {
     val __obj = js.Dynamic.literal()
     if (filterText != null) __obj.updateDynamic("filterText")(filterText.asInstanceOf[js.Any])
-    if (filterThrottle != null) __obj.updateDynamic("filterThrottle")(filterThrottle.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExternalFilter)) __obj.updateDynamic("useExternalFilter")(useExternalFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterThrottle)) __obj.updateDynamic("filterThrottle")(filterThrottle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalFilter)) __obj.updateDynamic("useExternalFilter")(useExternalFilter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions]
   }
 }

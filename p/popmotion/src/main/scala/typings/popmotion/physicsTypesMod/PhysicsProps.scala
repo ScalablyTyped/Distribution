@@ -18,22 +18,22 @@ trait PhysicsProps extends js.Object {
 object PhysicsProps {
   @scala.inline
   def apply(
-    acceleration: Int | Double = null,
-    friction: Int | Double = null,
-    from: Int | Double = null,
+    acceleration: js.UndefOr[Double] = js.undefined,
+    friction: js.UndefOr[Double] = js.undefined,
+    from: js.UndefOr[Double] = js.undefined,
     restSpeed: Double | `false` = null,
-    springStrength: Int | Double = null,
-    to: Int | Double = null,
-    velocity: Int | Double = null
+    springStrength: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined,
+    velocity: js.UndefOr[Double] = js.undefined
   ): PhysicsProps = {
     val __obj = js.Dynamic.literal()
-    if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceleration)) __obj.updateDynamic("acceleration")(acceleration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (restSpeed != null) __obj.updateDynamic("restSpeed")(restSpeed.asInstanceOf[js.Any])
-    if (springStrength != null) __obj.updateDynamic("springStrength")(springStrength.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
+    if (!js.isUndefined(springStrength)) __obj.updateDynamic("springStrength")(springStrength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocity)) __obj.updateDynamic("velocity")(velocity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhysicsProps]
   }
 }

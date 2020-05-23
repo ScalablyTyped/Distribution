@@ -38,7 +38,7 @@ object AssumeRoleWithWebIdentityResponse {
     AssumedRoleUser: AssumedRoleUser = null,
     Audience: Audience = null,
     Credentials: Credentials = null,
-    PackedPolicySize: Int | Double = null,
+    PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined,
     Provider: Issuer = null,
     SubjectFromWebIdentityToken: webIdentitySubjectType = null
   ): AssumeRoleWithWebIdentityResponse = {
@@ -46,7 +46,7 @@ object AssumeRoleWithWebIdentityResponse {
     if (AssumedRoleUser != null) __obj.updateDynamic("AssumedRoleUser")(AssumedRoleUser.asInstanceOf[js.Any])
     if (Audience != null) __obj.updateDynamic("Audience")(Audience.asInstanceOf[js.Any])
     if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
-    if (PackedPolicySize != null) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PackedPolicySize)) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.get.asInstanceOf[js.Any])
     if (Provider != null) __obj.updateDynamic("Provider")(Provider.asInstanceOf[js.Any])
     if (SubjectFromWebIdentityToken != null) __obj.updateDynamic("SubjectFromWebIdentityToken")(SubjectFromWebIdentityToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeRoleWithWebIdentityResponse]

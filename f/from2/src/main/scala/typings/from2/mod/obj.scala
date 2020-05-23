@@ -1,6 +1,6 @@
 package typings.from2.mod
 
-import typings.from2.objectModetrueReadableOpt
+import typings.from2.anon.objectModetrueReadableOpt
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLGenericElement")
 @js.native
-class HTMLGenericElement protected () extends js.Object {
+trait HTMLGenericElement extends js.Object {
   @JSName("MSHTML.HTMLGenericElement_typekey")
   var MSHTMLDotHTMLGenericElement_typekey: HTMLGenericElement = js.native
   var accessKey: String = js.native

@@ -61,7 +61,7 @@ trait PlusNativeObj extends js.Object {
   /**
     * 输入框样式
     * 用于定义输入框的显示样式，如字体大小，提示内容等信息。
-    * 	输入文本内容在指定区域水平居左，垂直居中显示。
+    *     输入文本内容在指定区域水平居左，垂直居中显示。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */

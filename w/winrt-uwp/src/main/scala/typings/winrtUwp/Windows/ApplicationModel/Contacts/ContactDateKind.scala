@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object ContactDateKind extends js.Object {
   /** An important date of the contact other than birthday or anniversary. */
   @js.native
   sealed trait other extends ContactDateKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactDateKind with Double] = js.native
-  /* 1 */ @js.native
-  object anniversary extends TopLevel[anniversary with Double]
-  
-  /* 0 */ @js.native
-  object birthday extends TopLevel[birthday with Double]
-  
-  /* 2 */ @js.native
-  object other extends TopLevel[other with Double]
   
 }
 

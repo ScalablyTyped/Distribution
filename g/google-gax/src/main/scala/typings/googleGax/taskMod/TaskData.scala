@@ -20,7 +20,7 @@ object TaskData {
     cancelled: js.UndefOr[Boolean] = js.undefined
   ): TaskData = {
     val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], callback = callback.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskData]
   }
 }

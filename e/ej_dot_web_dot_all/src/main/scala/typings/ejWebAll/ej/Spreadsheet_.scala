@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Spreadsheet.BorderOptions
 import typings.ejWebAll.ej.Spreadsheet.CellIndex
 import typings.ejWebAll.ej.Spreadsheet.DataOptions
@@ -32,19 +31,13 @@ import typings.ejWebAll.ej.Spreadsheet.XLShape
 import typings.ejWebAll.ej.Spreadsheet.XLSort
 import typings.ejWebAll.ej.Spreadsheet.XLSparkline
 import typings.ejWebAll.ej.Spreadsheet.XLValidate
-import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Spreadsheet")
 @js.native
-class Spreadsheet_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Spreadsheet.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Spreadsheet.Model) = this()
+trait Spreadsheet_ extends Widget_ {
   var XLCFormat: XLCFormat = js.native
   var XLCMenu: XLCMenu = js.native
   var XLCellType: XLCellType = js.native

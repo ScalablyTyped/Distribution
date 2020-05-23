@@ -23,7 +23,7 @@ object GetSolutionStackArgs {
   @scala.inline
   def apply(nameRegex: String, mostRecent: js.UndefOr[Boolean] = js.undefined): GetSolutionStackArgs = {
     val __obj = js.Dynamic.literal(nameRegex = nameRegex.asInstanceOf[js.Any])
-    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent.asInstanceOf[js.Any])
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSolutionStackArgs]
   }
 }

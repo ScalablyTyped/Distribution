@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object Printing3DTextureEdgeBehavior extends js.Object {
   /** Tiles repeat the texture resource at every integer junction. For example, with texture coordinates of (0.0,0.0), (0.0,3.0), (3.0,3.0), and (3.0,0.0), setting the Wrap texture edge behavior results in the texture being applied three times in both the u-and v-directions, as shown here. */
   @js.native
   sealed trait wrap extends Printing3DTextureEdgeBehavior
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Printing3DTextureEdgeBehavior with Double] = js.native
-  /* 3 */ @js.native
-  object clamp extends TopLevel[clamp with Double]
-  
-  /* 2 */ @js.native
-  object mirror extends TopLevel[mirror with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object wrap extends TopLevel[wrap with Double]
   
 }
 

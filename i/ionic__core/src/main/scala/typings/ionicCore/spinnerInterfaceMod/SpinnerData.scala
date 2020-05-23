@@ -19,22 +19,22 @@ object SpinnerData {
   @scala.inline
   def apply(
     style: js.Any,
-    cx: Int | Double = null,
-    cy: Int | Double = null,
-    r: Int | Double = null,
+    cx: js.UndefOr[Double] = js.undefined,
+    cy: js.UndefOr[Double] = js.undefined,
+    r: js.UndefOr[Double] = js.undefined,
     transform: String = null,
     viewBox: String = null,
-    y1: Int | Double = null,
-    y2: Int | Double = null
+    y1: js.UndefOr[Double] = js.undefined,
+    y2: js.UndefOr[Double] = js.undefined
   ): SpinnerData = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
-    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
-    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (!js.isUndefined(cx)) __obj.updateDynamic("cx")(cx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cy)) __obj.updateDynamic("cy")(cy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
-    if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
+    if (!js.isUndefined(y1)) __obj.updateDynamic("y1")(y1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y2)) __obj.updateDynamic("y2")(y2.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerData]
   }
 }

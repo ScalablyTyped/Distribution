@@ -39,15 +39,15 @@ object HotpVerifyOptions {
     secret: String,
     token: String,
     algorithm: Algorithm = null,
-    digits: Int | Double = null,
+    digits: js.UndefOr[Double] = js.undefined,
     encoding: Encoding = null,
-    window: Int | Double = null
+    window: js.UndefOr[Double] = js.undefined
   ): HotpVerifyOptions = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    if (!js.isUndefined(window)) __obj.updateDynamic("window")(window.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpVerifyOptions]
   }
 }

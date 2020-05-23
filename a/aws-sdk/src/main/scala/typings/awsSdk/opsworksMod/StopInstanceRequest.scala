@@ -18,9 +18,9 @@ trait StopInstanceRequest extends js.Object {
 
 object StopInstanceRequest {
   @scala.inline
-  def apply(InstanceId: String, Force: js.UndefOr[scala.Boolean] = js.undefined): StopInstanceRequest = {
+  def apply(InstanceId: String, Force: js.UndefOr[Boolean] = js.undefined): StopInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.asInstanceOf[js.Any])
+    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopInstanceRequest]
   }
 }

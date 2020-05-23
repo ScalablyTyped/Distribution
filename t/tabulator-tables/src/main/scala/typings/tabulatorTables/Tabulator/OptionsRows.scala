@@ -1,6 +1,7 @@
 package typings.tabulatorTables.Tabulator
 
 import typings.std.HTMLElement
+import typings.std.UIEvent
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesStrings.add
 import typings.tabulatorTables.tabulatorTablesStrings.bottom
@@ -210,27 +211,27 @@ object OptionsRows {
     movableRowsSentFailed: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* toTable */ typings.tabulatorTables.Tabulator) => Unit = null,
     resizableRows: js.UndefOr[Boolean] = js.undefined,
     rowAdded: /* row */ RowComponent => Unit = null,
-    rowClick: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
-    rowContext: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
-    rowDblClick: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
-    rowDblTap: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
+    rowClick: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
+    rowContext: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
+    rowDblClick: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
+    rowDblTap: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
     rowDeleted: /* row */ RowComponent => Unit = null,
     rowDeselected: /* row */ RowComponent => Unit = null,
     rowFormatter: /* row */ RowComponent => _ = null,
     rowFormatterClipboard: `false` | (js.Function1[/* row */ RowComponent, _]) = null,
     rowFormatterHtmlOutput: `false` | (js.Function1[/* row */ RowComponent, _]) = null,
     rowFormatterPrint: `false` | (js.Function1[/* row */ RowComponent, _]) = null,
-    rowMouseEnter: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
-    rowMouseLeave: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
-    rowMouseMove: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
-    rowMouseOut: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
-    rowMouseOver: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
+    rowMouseEnter: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
+    rowMouseLeave: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
+    rowMouseMove: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
+    rowMouseOut: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
+    rowMouseOver: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
     rowMoved: /* row */ RowComponent => Unit = null,
     rowResized: /* row */ RowComponent => Unit = null,
     rowSelected: /* row */ RowComponent => Unit = null,
     rowSelectionChanged: (/* data */ js.Array[_], /* rows */ js.Array[RowComponent]) => Unit = null,
-    rowTap: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
-    rowTapHold: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
+    rowTap: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
+    rowTapHold: (/* e */ UIEvent, /* row */ RowComponent) => Unit = null,
     rowUpdated: /* row */ RowComponent => Unit = null,
     scrollToRowIfVisible: js.UndefOr[Boolean] = js.undefined,
     scrollToRowPosition: ScrollToRowPostition = null,
@@ -245,7 +246,7 @@ object OptionsRows {
     if (addRowPos != null) __obj.updateDynamic("addRowPos")(addRowPos.asInstanceOf[js.Any])
     if (dataTreeRowCollapsed != null) __obj.updateDynamic("dataTreeRowCollapsed")(js.Any.fromFunction2(dataTreeRowCollapsed))
     if (dataTreeRowExpanded != null) __obj.updateDynamic("dataTreeRowExpanded")(js.Any.fromFunction2(dataTreeRowExpanded))
-    if (!js.isUndefined(movableRows)) __obj.updateDynamic("movableRows")(movableRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(movableRows)) __obj.updateDynamic("movableRows")(movableRows.get.asInstanceOf[js.Any])
     if (movableRowsConnectedTables != null) __obj.updateDynamic("movableRowsConnectedTables")(movableRowsConnectedTables.asInstanceOf[js.Any])
     if (movableRowsReceived != null) __obj.updateDynamic("movableRowsReceived")(js.Any.fromFunction3(movableRowsReceived))
     if (movableRowsReceivedFailed != null) __obj.updateDynamic("movableRowsReceivedFailed")(js.Any.fromFunction3(movableRowsReceivedFailed))
@@ -257,7 +258,7 @@ object OptionsRows {
     if (movableRowsSendingStop != null) __obj.updateDynamic("movableRowsSendingStop")(js.Any.fromFunction1(movableRowsSendingStop))
     if (movableRowsSent != null) __obj.updateDynamic("movableRowsSent")(js.Any.fromFunction3(movableRowsSent))
     if (movableRowsSentFailed != null) __obj.updateDynamic("movableRowsSentFailed")(js.Any.fromFunction3(movableRowsSentFailed))
-    if (!js.isUndefined(resizableRows)) __obj.updateDynamic("resizableRows")(resizableRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizableRows)) __obj.updateDynamic("resizableRows")(resizableRows.get.asInstanceOf[js.Any])
     if (rowAdded != null) __obj.updateDynamic("rowAdded")(js.Any.fromFunction1(rowAdded))
     if (rowClick != null) __obj.updateDynamic("rowClick")(js.Any.fromFunction2(rowClick))
     if (rowContext != null) __obj.updateDynamic("rowContext")(js.Any.fromFunction2(rowContext))
@@ -281,13 +282,13 @@ object OptionsRows {
     if (rowTap != null) __obj.updateDynamic("rowTap")(js.Any.fromFunction2(rowTap))
     if (rowTapHold != null) __obj.updateDynamic("rowTapHold")(js.Any.fromFunction2(rowTapHold))
     if (rowUpdated != null) __obj.updateDynamic("rowUpdated")(js.Any.fromFunction1(rowUpdated))
-    if (!js.isUndefined(scrollToRowIfVisible)) __obj.updateDynamic("scrollToRowIfVisible")(scrollToRowIfVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToRowIfVisible)) __obj.updateDynamic("scrollToRowIfVisible")(scrollToRowIfVisible.get.asInstanceOf[js.Any])
     if (scrollToRowPosition != null) __obj.updateDynamic("scrollToRowPosition")(scrollToRowPosition.asInstanceOf[js.Any])
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (selectableCheck != null) __obj.updateDynamic("selectableCheck")(js.Any.fromFunction1(selectableCheck))
-    if (!js.isUndefined(selectablePersistence)) __obj.updateDynamic("selectablePersistence")(selectablePersistence.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectablePersistence)) __obj.updateDynamic("selectablePersistence")(selectablePersistence.get.asInstanceOf[js.Any])
     if (selectableRangeMode != null) __obj.updateDynamic("selectableRangeMode")(selectableRangeMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectableRollingSelection)) __obj.updateDynamic("selectableRollingSelection")(selectableRollingSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectableRollingSelection)) __obj.updateDynamic("selectableRollingSelection")(selectableRollingSelection.get.asInstanceOf[js.Any])
     if (tabEndNewRow != null) __obj.updateDynamic("tabEndNewRow")(tabEndNewRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsRows]
   }

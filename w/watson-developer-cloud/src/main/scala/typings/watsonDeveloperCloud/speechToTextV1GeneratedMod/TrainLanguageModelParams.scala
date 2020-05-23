@@ -21,15 +21,15 @@ object TrainLanguageModelParams {
   @scala.inline
   def apply(
     customization_id: String,
-    customization_weight: Int | Double = null,
+    customization_weight: js.UndefOr[Double] = js.undefined,
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined,
     word_type_to_add: WordTypeToAdd | String = null
   ): TrainLanguageModelParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
-    if (customization_weight != null) __obj.updateDynamic("customization_weight")(customization_weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(customization_weight)) __obj.updateDynamic("customization_weight")(customization_weight.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (word_type_to_add != null) __obj.updateDynamic("word_type_to_add")(word_type_to_add.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainLanguageModelParams]
   }

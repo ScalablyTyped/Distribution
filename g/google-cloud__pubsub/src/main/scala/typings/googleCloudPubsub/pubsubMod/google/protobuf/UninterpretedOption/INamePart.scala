@@ -16,7 +16,6 @@ object INamePart {
   @scala.inline
   def apply(isExtension: Boolean, namePart: String): INamePart = {
     val __obj = js.Dynamic.literal(isExtension = isExtension.asInstanceOf[js.Any], namePart = namePart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[INamePart]
   }
 }

@@ -12,10 +12,10 @@ trait RealDependencyLocation extends DependencyLocation {
 
 object RealDependencyLocation {
   @scala.inline
-  def apply(start: SourcePosition, end: SourcePosition = null, index: Int | Double = null): RealDependencyLocation = {
+  def apply(start: SourcePosition, end: SourcePosition = null, index: js.UndefOr[Double] = js.undefined): RealDependencyLocation = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealDependencyLocation]
   }
 }

@@ -1,6 +1,6 @@
 package typings.frctlFractal.mod.fractal.api.components
 
-import typings.frctlFractal.AnonAlias
+import typings.frctlFractal.anon.Alias
 import typings.frctlFractal.mod.fractal.api.files.File
 import typings.frctlFractal.mod.fractal.api.files.FileCollection
 import typings.frctlFractal.mod.fractal.core.entities.Entity
@@ -14,7 +14,7 @@ trait ComponentSource extends EntitySource[Component, ComponentConfig] {
   def components(): js.Array[Component] = js.native
   def find(): js.Any = js.native
   def findFile(filePath: String): js.UndefOr[File] = js.native
-  def getReferencesOf(target: AnonAlias): js.Array[_] = js.native
+  def getReferencesOf(target: Alias): js.Array[_] = js.native
   def render(entity: String, context: js.Any): js.Promise[String] = js.native
   def render(entity: String, context: js.Any, env: js.Any): js.Promise[String] = js.native
   def render(entity: String, context: js.Any, env: js.Any, opts: js.Object): js.Promise[String] = js.native

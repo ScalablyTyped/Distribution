@@ -18,9 +18,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Shape")
 @js.native
-class Shape protected () extends js.Object {
+trait Shape extends js.Object {
   @JSName("Adjustments")
   val Adjustments_Original: Adjustments = js.native
   var AlternativeText: String = js.native

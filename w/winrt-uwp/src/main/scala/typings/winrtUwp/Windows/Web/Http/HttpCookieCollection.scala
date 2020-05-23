@@ -1,17 +1,16 @@
 package typings.winrtUwp.Windows.Web.Http
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsHttpCookie
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsHttpCookie
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides a collection container for instances of the HttpCookie class. */
-@JSGlobal("Windows.Web.Http.HttpCookieCollection")
 @js.native
-abstract class HttpCookieCollection () extends Array[HttpCookie] {
+trait HttpCookieCollection extends Array[HttpCookie] {
   /** Gets the number of cookies in the HttpCookieCollection . */
   var size: Double = js.native
   /**
@@ -29,8 +28,8 @@ abstract class HttpCookieCollection () extends Array[HttpCookie] {
     * Retrieves the HttpCookie items that start at the specified index in the HttpCookieCollection .
     * @param startIndex The zero-based index of the start of the HttpCookie items in the HttpCookieCollection .
     */
-  def getMany(startIndex: Double): AnonItemsHttpCookie = js.native
-  def indexOf(value: HttpCookie, extra: js.Any*): AnonIndex = js.native
+  def getMany(startIndex: Double): ItemsHttpCookie = js.native
+  def indexOf(value: HttpCookie, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: HttpCookie): Double = js.native

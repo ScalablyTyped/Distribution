@@ -15,18 +15,18 @@ trait MonthLabelFormatterParams extends js.Object {
 object MonthLabelFormatterParams {
   @scala.inline
   def apply(
-    M: Int | Double = null,
-    MM: Int | Double = null,
+    M: js.UndefOr[Double] = js.undefined,
+    MM: js.UndefOr[Double] = js.undefined,
     nameMap: String | Double | (js.Array[String | Double]) = null,
-    yy: Int | Double = null,
-    yyyy: Int | Double = null
+    yy: js.UndefOr[Double] = js.undefined,
+    yyyy: js.UndefOr[Double] = js.undefined
   ): MonthLabelFormatterParams = {
     val __obj = js.Dynamic.literal()
-    if (M != null) __obj.updateDynamic("M")(M.asInstanceOf[js.Any])
-    if (MM != null) __obj.updateDynamic("MM")(MM.asInstanceOf[js.Any])
+    if (!js.isUndefined(M)) __obj.updateDynamic("M")(M.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MM)) __obj.updateDynamic("MM")(MM.get.asInstanceOf[js.Any])
     if (nameMap != null) __obj.updateDynamic("nameMap")(nameMap.asInstanceOf[js.Any])
-    if (yy != null) __obj.updateDynamic("yy")(yy.asInstanceOf[js.Any])
-    if (yyyy != null) __obj.updateDynamic("yyyy")(yyyy.asInstanceOf[js.Any])
+    if (!js.isUndefined(yy)) __obj.updateDynamic("yy")(yy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yyyy)) __obj.updateDynamic("yyyy")(yyyy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonthLabelFormatterParams]
   }
 }

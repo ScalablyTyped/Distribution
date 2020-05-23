@@ -34,18 +34,18 @@ object PutPolicyOptions {
   def apply(
     callbackBody: String = null,
     callbackBodyType: String = null,
-    callbackFetchKey: Int | Double = null,
+    callbackFetchKey: js.UndefOr[Double] = js.undefined,
     callbackHost: String = null,
     callbackUrl: String = null,
-    deleteAfterDays: Int | Double = null,
-    detectMime: Int | Double = null,
+    deleteAfterDays: js.UndefOr[Double] = js.undefined,
+    detectMime: js.UndefOr[Double] = js.undefined,
     endUser: String = null,
-    expires: Int | Double = null,
-    fileType: Int | Double = null,
-    fsizeLimit: Int | Double = null,
-    fsizeMin: Int | Double = null,
-    insertOnly: Int | Double = null,
-    isPrefixalScope: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
+    fileType: js.UndefOr[Double] = js.undefined,
+    fsizeLimit: js.UndefOr[Double] = js.undefined,
+    fsizeMin: js.UndefOr[Double] = js.undefined,
+    insertOnly: js.UndefOr[Double] = js.undefined,
+    isPrefixalScope: js.UndefOr[Double] = js.undefined,
     mimeLimit: String = null,
     persistentNotifyUrl: String = null,
     persistentOps: String = null,
@@ -58,18 +58,18 @@ object PutPolicyOptions {
     val __obj = js.Dynamic.literal()
     if (callbackBody != null) __obj.updateDynamic("callbackBody")(callbackBody.asInstanceOf[js.Any])
     if (callbackBodyType != null) __obj.updateDynamic("callbackBodyType")(callbackBodyType.asInstanceOf[js.Any])
-    if (callbackFetchKey != null) __obj.updateDynamic("callbackFetchKey")(callbackFetchKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(callbackFetchKey)) __obj.updateDynamic("callbackFetchKey")(callbackFetchKey.get.asInstanceOf[js.Any])
     if (callbackHost != null) __obj.updateDynamic("callbackHost")(callbackHost.asInstanceOf[js.Any])
     if (callbackUrl != null) __obj.updateDynamic("callbackUrl")(callbackUrl.asInstanceOf[js.Any])
-    if (deleteAfterDays != null) __obj.updateDynamic("deleteAfterDays")(deleteAfterDays.asInstanceOf[js.Any])
-    if (detectMime != null) __obj.updateDynamic("detectMime")(detectMime.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteAfterDays)) __obj.updateDynamic("deleteAfterDays")(deleteAfterDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectMime)) __obj.updateDynamic("detectMime")(detectMime.get.asInstanceOf[js.Any])
     if (endUser != null) __obj.updateDynamic("endUser")(endUser.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (fsizeLimit != null) __obj.updateDynamic("fsizeLimit")(fsizeLimit.asInstanceOf[js.Any])
-    if (fsizeMin != null) __obj.updateDynamic("fsizeMin")(fsizeMin.asInstanceOf[js.Any])
-    if (insertOnly != null) __obj.updateDynamic("insertOnly")(insertOnly.asInstanceOf[js.Any])
-    if (isPrefixalScope != null) __obj.updateDynamic("isPrefixalScope")(isPrefixalScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileType)) __obj.updateDynamic("fileType")(fileType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fsizeLimit)) __obj.updateDynamic("fsizeLimit")(fsizeLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fsizeMin)) __obj.updateDynamic("fsizeMin")(fsizeMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertOnly)) __obj.updateDynamic("insertOnly")(insertOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrefixalScope)) __obj.updateDynamic("isPrefixalScope")(isPrefixalScope.get.asInstanceOf[js.Any])
     if (mimeLimit != null) __obj.updateDynamic("mimeLimit")(mimeLimit.asInstanceOf[js.Any])
     if (persistentNotifyUrl != null) __obj.updateDynamic("persistentNotifyUrl")(persistentNotifyUrl.asInstanceOf[js.Any])
     if (persistentOps != null) __obj.updateDynamic("persistentOps")(persistentOps.asInstanceOf[js.Any])

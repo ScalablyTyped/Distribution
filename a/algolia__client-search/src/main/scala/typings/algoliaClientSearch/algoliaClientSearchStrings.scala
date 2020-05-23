@@ -1,5 +1,6 @@
 package typings.algoliaClientSearch
 
+import typings.algoliaClientSearch.mod.ApiKeyACLType
 import typings.algoliaClientSearch.mod.BatchActionType
 import typings.algoliaClientSearch.mod.ScopeType
 import typings.algoliaClientSearch.mod.StrategyType
@@ -13,7 +14,9 @@ object algoliaClientSearchStrings {
   sealed trait CreateIndex extends js.Object
   
   @js.native
-  sealed trait addObject extends BatchActionType
+  sealed trait addObject
+    extends ApiKeyACLType
+       with BatchActionType
   
   @js.native
   sealed trait all extends js.Object
@@ -31,7 +34,13 @@ object algoliaClientSearchStrings {
   sealed trait altCorrection2 extends SynonymType
   
   @js.native
+  sealed trait analytics extends ApiKeyACLType
+  
+  @js.native
   sealed trait attribute extends js.Object
+  
+  @js.native
+  sealed trait browse extends ApiKeyACLType
   
   @js.native
   sealed trait contains extends js.Object
@@ -40,7 +49,15 @@ object algoliaClientSearchStrings {
   sealed trait count extends js.Object
   
   @js.native
-  sealed trait deleteObject extends BatchActionType
+  sealed trait deleteIndex extends ApiKeyACLType
+  
+  @js.native
+  sealed trait deleteObject
+    extends ApiKeyACLType
+       with BatchActionType
+  
+  @js.native
+  sealed trait editSettings extends ApiKeyACLType
   
   @js.native
   sealed trait endsWith extends js.Object
@@ -62,6 +79,12 @@ object algoliaClientSearchStrings {
   
   @js.native
   sealed trait lastWords extends js.Object
+  
+  @js.native
+  sealed trait listIndexes extends ApiKeyACLType
+  
+  @js.native
+  sealed trait logs extends ApiKeyACLType
   
   @js.native
   sealed trait min extends js.Object
@@ -94,6 +117,9 @@ object algoliaClientSearchStrings {
   sealed trait prefixNone extends js.Object
   
   @js.native
+  sealed trait recommendation extends ApiKeyACLType
+  
+  @js.native
   sealed trait remove extends js.Object
   
   @js.native
@@ -103,7 +129,15 @@ object algoliaClientSearchStrings {
   sealed trait rules extends ScopeType
   
   @js.native
-  sealed trait settings extends ScopeType
+  sealed trait search extends ApiKeyACLType
+  
+  @js.native
+  sealed trait seeUnretrievableAttributes extends ApiKeyACLType
+  
+  @js.native
+  sealed trait settings
+    extends ApiKeyACLType
+       with ScopeType
   
   @js.native
   sealed trait singleWordSynonym extends js.Object
@@ -127,6 +161,9 @@ object algoliaClientSearchStrings {
   sealed trait updateObject extends BatchActionType
   
   @js.native
+  sealed trait usage extends ApiKeyACLType
+  
+  @js.native
   sealed trait word extends js.Object
   
   @scala.inline
@@ -144,13 +181,21 @@ object algoliaClientSearchStrings {
   @scala.inline
   def altCorrection2: altCorrection2 = "altCorrection2".asInstanceOf[altCorrection2]
   @scala.inline
+  def analytics: analytics = "analytics".asInstanceOf[analytics]
+  @scala.inline
   def attribute: attribute = "attribute".asInstanceOf[attribute]
+  @scala.inline
+  def browse: browse = "browse".asInstanceOf[browse]
   @scala.inline
   def contains: contains = "contains".asInstanceOf[contains]
   @scala.inline
   def count: count = "count".asInstanceOf[count]
   @scala.inline
+  def deleteIndex: deleteIndex = "deleteIndex".asInstanceOf[deleteIndex]
+  @scala.inline
   def deleteObject: deleteObject = "deleteObject".asInstanceOf[deleteObject]
+  @scala.inline
+  def editSettings: editSettings = "editSettings".asInstanceOf[editSettings]
   @scala.inline
   def endsWith: endsWith = "endsWith".asInstanceOf[endsWith]
   @scala.inline
@@ -165,6 +210,10 @@ object algoliaClientSearchStrings {
   def is: is = "is".asInstanceOf[is]
   @scala.inline
   def lastWords: lastWords = "lastWords".asInstanceOf[lastWords]
+  @scala.inline
+  def listIndexes: listIndexes = "listIndexes".asInstanceOf[listIndexes]
+  @scala.inline
+  def logs: logs = "logs".asInstanceOf[logs]
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   @scala.inline
@@ -186,11 +235,17 @@ object algoliaClientSearchStrings {
   @scala.inline
   def prefixNone: prefixNone = "prefixNone".asInstanceOf[prefixNone]
   @scala.inline
+  def recommendation: recommendation = "recommendation".asInstanceOf[recommendation]
+  @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def rules: rules = "rules".asInstanceOf[rules]
+  @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  @scala.inline
+  def seeUnretrievableAttributes: seeUnretrievableAttributes = "seeUnretrievableAttributes".asInstanceOf[seeUnretrievableAttributes]
   @scala.inline
   def settings: settings = "settings".asInstanceOf[settings]
   @scala.inline
@@ -207,6 +262,8 @@ object algoliaClientSearchStrings {
   def synonyms: synonyms = "synonyms".asInstanceOf[synonyms]
   @scala.inline
   def updateObject: updateObject = "updateObject".asInstanceOf[updateObject]
+  @scala.inline
+  def usage: usage = "usage".asInstanceOf[usage]
   @scala.inline
   def word: word = "word".asInstanceOf[word]
 }

@@ -27,16 +27,16 @@ object MouseoverEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     model: js.Any = null,
-    selectedValue: Int | Double = null,
+    selectedValue: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): MouseoverEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedValue)) __obj.updateDynamic("selectedValue")(selectedValue.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseoverEventArgs]
   }
 }

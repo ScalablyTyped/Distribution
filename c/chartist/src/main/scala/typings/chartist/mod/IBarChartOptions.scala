@@ -39,13 +39,13 @@ object IBarChartOptions {
     classNames: IBarChartClasses = null,
     distributeSeries: js.UndefOr[Boolean] = js.undefined,
     height: Double | String = null,
-    high: Int | Double = null,
+    high: js.UndefOr[Double] = js.undefined,
     horizontalBars: js.UndefOr[Boolean] = js.undefined,
-    low: Int | Double = null,
+    low: js.UndefOr[Double] = js.undefined,
     onlyInteger: js.UndefOr[Boolean] = js.undefined,
     plugins: js.Array[_] = null,
     reverseData: js.UndefOr[Boolean] = js.undefined,
-    seriesBarDistance: Int | Double = null,
+    seriesBarDistance: js.UndefOr[Double] = js.undefined,
     stackBars: js.UndefOr[Boolean] = js.undefined,
     stackMode: overlap | accumulate = null,
     ticks: js.Array[String | Double] = null,
@@ -56,16 +56,16 @@ object IBarChartOptions {
     if (axisY != null) __obj.updateDynamic("axisY")(axisY.asInstanceOf[js.Any])
     if (chartPadding != null) __obj.updateDynamic("chartPadding")(chartPadding.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(distributeSeries)) __obj.updateDynamic("distributeSeries")(distributeSeries.asInstanceOf[js.Any])
+    if (!js.isUndefined(distributeSeries)) __obj.updateDynamic("distributeSeries")(distributeSeries.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalBars)) __obj.updateDynamic("horizontalBars")(horizontalBars.asInstanceOf[js.Any])
-    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyInteger)) __obj.updateDynamic("onlyInteger")(onlyInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalBars)) __obj.updateDynamic("horizontalBars")(horizontalBars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyInteger)) __obj.updateDynamic("onlyInteger")(onlyInteger.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData.asInstanceOf[js.Any])
-    if (seriesBarDistance != null) __obj.updateDynamic("seriesBarDistance")(seriesBarDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackBars)) __obj.updateDynamic("stackBars")(stackBars.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesBarDistance)) __obj.updateDynamic("seriesBarDistance")(seriesBarDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stackBars)) __obj.updateDynamic("stackBars")(stackBars.get.asInstanceOf[js.Any])
     if (stackMode != null) __obj.updateDynamic("stackMode")(stackMode.asInstanceOf[js.Any])
     if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

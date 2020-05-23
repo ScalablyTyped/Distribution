@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova_dot_plugins_dot_diagnostic
 
-Typings are for version 5.0.1
+Typings are for version 5.0.2
 
 ## Library description:
 Cordova/Phonegap plugin to check the state of Location/WiFi/Camera/Bluetooth device settings.

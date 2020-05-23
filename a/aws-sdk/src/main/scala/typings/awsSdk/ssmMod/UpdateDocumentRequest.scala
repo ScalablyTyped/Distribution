@@ -19,7 +19,7 @@ trait UpdateDocumentRequest extends js.Object {
     */
   var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.native
   /**
-    * (Required) The version of the document that you want to update. 
+    * (Required) The latest version of the document that you want to update. The latest document version can be specified using the $LATEST variable or by the version number. Updating a previous version of a document is not supported.
     */
   var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
   /**

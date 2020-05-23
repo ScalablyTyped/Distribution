@@ -1,5 +1,8 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.CheckboxVisibility
+import typings.officeUiFabricReact.anon.CollapseAllVisibility
+import typings.officeUiFabricReact.anon.IsSelectedOnFocus
 import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
 import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
@@ -7,7 +10,6 @@ import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps
 import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckProps
 import typings.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps
 import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps
-import typings.officeUiFabricReact.officeUiFabricReactStrings.change
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
 import typings.react.mod.FunctionComponent
@@ -69,7 +71,7 @@ object libDetailsListMod extends js.Object {
   val DetailsRow: FunctionComponent[IDetailsRowBaseProps] = js.native
   val DetailsRowCheck: FunctionComponent[IDetailsRowCheckProps] = js.native
   val DetailsRowFields: FunctionComponent[IDetailsRowFieldsProps] = js.native
-  val SELECTION_CHANGE: change = js.native
+  val SELECTION_CHANGE: /* "change" */ String = js.native
   def buildColumns(
     items: js.Array[_],
     canResizeColumns: js.UndefOr[Boolean],
@@ -131,13 +133,13 @@ object libDetailsListMod extends js.Object {
   /* static members */
   @js.native
   object DetailsHeaderBase extends js.Object {
-    var defaultProps: AnonCollapseAllVisibility = js.native
+    var defaultProps: CollapseAllVisibility = js.native
   }
   
   /* static members */
   @js.native
   object DetailsListBase extends js.Object {
-    var defaultProps: AnonCheckboxVisibility = js.native
+    var defaultProps: CheckboxVisibility = js.native
   }
   
   @js.native
@@ -198,7 +200,7 @@ object libDetailsListMod extends js.Object {
   /* static members */
   @js.native
   object SelectionZone extends js.Object {
-    var defaultProps: AnonIsSelectedOnFocus = js.native
+    var defaultProps: IsSelectedOnFocus = js.native
     def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = js.native
   }
   

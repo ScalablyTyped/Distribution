@@ -2,6 +2,7 @@ package typings.downloadjs
 
 import typings.std.Blob
 import typings.std.File
+import typings.std.Uint8Array
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,5 +20,8 @@ object mod extends js.Object {
   def apply(data: File): XMLHttpRequest | Boolean = js.native
   def apply(data: File, filename: String): XMLHttpRequest | Boolean = js.native
   def apply(data: File, filename: String, mimeType: String): XMLHttpRequest | Boolean = js.native
+  def apply(data: Uint8Array): XMLHttpRequest | Boolean = js.native
+  def apply(data: Uint8Array, filename: String): XMLHttpRequest | Boolean = js.native
+  def apply(data: Uint8Array, filename: String, mimeType: String): XMLHttpRequest | Boolean = js.native
 }
 

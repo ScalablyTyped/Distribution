@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.AnonAfterClose
+import typings.antDesignReactNative.anon.AfterClose
 import typings.antDesignReactNative.tagMod.TagNativeProps
 import typings.antDesignReactNative.tagMod.default
 import scala.scalajs.js
@@ -17,6 +17,6 @@ class Tag protected () extends default {
 @JSImport("@ant-design/react-native", "Tag")
 @js.native
 object Tag extends js.Object {
-  var defaultProps: AnonAfterClose = js.native
+  var defaultProps: AfterClose = js.native
 }
 

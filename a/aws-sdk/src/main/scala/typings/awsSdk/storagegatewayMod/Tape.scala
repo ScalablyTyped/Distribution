@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Tape extends js.Object {
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
   /**
-    * The ID of the pool that contains tapes that will be archived. The tapes in this pool are archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (Glacier or Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+    * The ID of the pool that contains tapes that will be archived. The tapes in this pool are archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S# Glacier Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
     */
   var PoolId: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolId] = js.native
   /**
@@ -50,25 +50,25 @@ object Tape {
   def apply(
     KMSKey: KMSKey = null,
     PoolId: PoolId = null,
-    Progress: Int | Double = null,
+    Progress: js.UndefOr[DoubleObject] = js.undefined,
     TapeARN: TapeARN = null,
     TapeBarcode: TapeBarcode = null,
     TapeCreatedDate: Time = null,
-    TapeSizeInBytes: Int | Double = null,
+    TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined,
     TapeStatus: TapeStatus = null,
-    TapeUsedInBytes: Int | Double = null,
+    TapeUsedInBytes: js.UndefOr[TapeUsage] = js.undefined,
     VTLDevice: VTLDeviceARN = null
   ): Tape = {
     val __obj = js.Dynamic.literal()
     if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
     if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId.asInstanceOf[js.Any])
-    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(Progress)) __obj.updateDynamic("Progress")(Progress.get.asInstanceOf[js.Any])
     if (TapeARN != null) __obj.updateDynamic("TapeARN")(TapeARN.asInstanceOf[js.Any])
     if (TapeBarcode != null) __obj.updateDynamic("TapeBarcode")(TapeBarcode.asInstanceOf[js.Any])
     if (TapeCreatedDate != null) __obj.updateDynamic("TapeCreatedDate")(TapeCreatedDate.asInstanceOf[js.Any])
-    if (TapeSizeInBytes != null) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TapeSizeInBytes)) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.get.asInstanceOf[js.Any])
     if (TapeStatus != null) __obj.updateDynamic("TapeStatus")(TapeStatus.asInstanceOf[js.Any])
-    if (TapeUsedInBytes != null) __obj.updateDynamic("TapeUsedInBytes")(TapeUsedInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TapeUsedInBytes)) __obj.updateDynamic("TapeUsedInBytes")(TapeUsedInBytes.get.asInstanceOf[js.Any])
     if (VTLDevice != null) __obj.updateDynamic("VTLDevice")(VTLDevice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tape]
   }

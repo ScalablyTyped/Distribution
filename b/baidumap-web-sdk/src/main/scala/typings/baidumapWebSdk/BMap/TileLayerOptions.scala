@@ -17,13 +17,13 @@ object TileLayerOptions {
     copyright: Copyright = null,
     tileUrlTemplate: String = null,
     transparentPng: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): TileLayerOptions = {
     val __obj = js.Dynamic.literal()
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     if (tileUrlTemplate != null) __obj.updateDynamic("tileUrlTemplate")(tileUrlTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparentPng)) __obj.updateDynamic("transparentPng")(transparentPng.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparentPng)) __obj.updateDynamic("transparentPng")(transparentPng.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileLayerOptions]
   }
 }

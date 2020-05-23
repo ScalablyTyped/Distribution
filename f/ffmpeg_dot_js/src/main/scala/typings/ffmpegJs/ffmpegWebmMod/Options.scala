@@ -20,7 +20,7 @@ object Options {
   def apply(
     arguments: js.Array[String],
     MEMFS: js.Array[Video] = null,
-    TOTAL_MEMORY: Int | Double = null,
+    TOTAL_MEMORY: js.UndefOr[Double] = js.undefined,
     mounts: js.Array[Mount] = null,
     onExit: /* code */ js.Any => Unit = null,
     print: /* data */ js.Any => Unit = null,
@@ -29,7 +29,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
     if (MEMFS != null) __obj.updateDynamic("MEMFS")(MEMFS.asInstanceOf[js.Any])
-    if (TOTAL_MEMORY != null) __obj.updateDynamic("TOTAL_MEMORY")(TOTAL_MEMORY.asInstanceOf[js.Any])
+    if (!js.isUndefined(TOTAL_MEMORY)) __obj.updateDynamic("TOTAL_MEMORY")(TOTAL_MEMORY.get.asInstanceOf[js.Any])
     if (mounts != null) __obj.updateDynamic("mounts")(mounts.asInstanceOf[js.Any])
     if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
     if (print != null) __obj.updateDynamic("print")(js.Any.fromFunction1(print))

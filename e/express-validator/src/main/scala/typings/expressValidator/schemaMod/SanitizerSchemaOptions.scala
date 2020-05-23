@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.expressValidator.expressValidatorBooleans.`true`
-  - typings.expressValidator.Anon0[K]
+  - typings.expressValidator.anon.`0`[K]
 */
-trait SanitizerSchemaOptions[K /* <: customSanitizer | blacklist | escape | unescape | ltrim | normalizeEmail | rtrim | stripLow | toArray | toBoolean | toDate | toFloat | toInt | trim | whitelist */] extends js.Object
+trait SanitizerSchemaOptions[K /* <: /* keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> */ customSanitizer | blacklist | escape | unescape | ltrim | normalizeEmail | rtrim | stripLow | toArray | toBoolean | toDate | toFloat | toInt | trim | whitelist */] extends js.Object
 

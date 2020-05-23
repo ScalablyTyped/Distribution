@@ -1,7 +1,6 @@
 package typings.minappEnv
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Generator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,8 +29,4 @@ Instantiable1[/* args (repeated) */ js.Any, Generator[js.Any, js.Any, js.Any]] {
     */
   def apply(args: js.Any*): Generator[_, _, _] = js.native
 }
-
-@JSGlobal("GeneratorFunction")
-@js.native
-object GeneratorFunction extends TopLevel[GeneratorFunctionConstructor]
 

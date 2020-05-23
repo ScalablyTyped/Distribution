@@ -33,7 +33,7 @@ object UserPoolClientAnalyticsConfiguration {
     userDataShared: js.UndefOr[Boolean] = js.undefined
   ): UserPoolClientAnalyticsConfiguration = {
     val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any], externalId = externalId.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(userDataShared)) __obj.updateDynamic("userDataShared")(userDataShared.asInstanceOf[js.Any])
+    if (!js.isUndefined(userDataShared)) __obj.updateDynamic("userDataShared")(userDataShared.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolClientAnalyticsConfiguration]
   }
 }

@@ -19,8 +19,8 @@ object IIdentifyOptions {
     ignoreWarnings: js.UndefOr[Boolean] = js.undefined
   ): IIdentifyOptions = {
     val __obj = js.Dynamic.literal(srcData = srcData.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIdentifyOptions]
   }
 }

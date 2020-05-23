@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,11 @@ trait Scrollable extends js.Object {
   def scrollTo(x: Double, y: Double): Unit
 }
 
-@JSGlobal("webix.Scrollable")
-@js.native
-object Scrollable extends TopLevel[Scrollable]
+object Scrollable {
+  @scala.inline
+  def apply(getScrollState: () => js.Any, scrollTo: (Double, Double) => Unit): Scrollable = {
+    val __obj = js.Dynamic.literal(getScrollState = js.Any.fromFunction0(getScrollState), scrollTo = js.Any.fromFunction2(scrollTo))
+    __obj.asInstanceOf[Scrollable]
+  }
+}
 

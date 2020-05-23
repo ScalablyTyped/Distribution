@@ -18,9 +18,9 @@ trait MathEvents extends js.Object {
 
 object MathEvents {
   @scala.inline
-  def apply(hover: Int | Double = null, styles: js.Any = null): MathEvents = {
+  def apply(hover: js.UndefOr[Double] = js.undefined, styles: js.Any = null): MathEvents = {
     val __obj = js.Dynamic.literal()
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathEvents]
   }

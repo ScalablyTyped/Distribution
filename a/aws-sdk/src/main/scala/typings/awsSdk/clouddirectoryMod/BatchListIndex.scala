@@ -28,12 +28,12 @@ object BatchListIndex {
   @scala.inline
   def apply(
     IndexReference: ObjectReference,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[NumberResults] = js.undefined,
     NextToken: NextToken = null,
     RangesOnIndexedValues: ObjectAttributeRangeList = null
   ): BatchListIndex = {
     val __obj = js.Dynamic.literal(IndexReference = IndexReference.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (RangesOnIndexedValues != null) __obj.updateDynamic("RangesOnIndexedValues")(RangesOnIndexedValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchListIndex]

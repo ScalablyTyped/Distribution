@@ -60,38 +60,38 @@ trait Model extends js.Object {
 object Model {
   @scala.inline
   def apply(
-    barHeight: Int | Double = null,
-    barcodeToTextGapHeight: Int | Double = null,
+    barHeight: js.UndefOr[Double] = js.undefined,
+    barcodeToTextGapHeight: js.UndefOr[Double] = js.undefined,
     darkBarColor: js.Any = null,
     displayText: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    encodeStartStopSymbol: Int | Double = null,
+    encodeStartStopSymbol: js.UndefOr[Double] = js.undefined,
     lightBarColor: js.Any = null,
     load: /* e */ LoadEventArgs => Unit = null,
-    narrowBarWidth: Int | Double = null,
+    narrowBarWidth: js.UndefOr[Double] = js.undefined,
     quietZone: QuietZone = null,
     symbologyType: SymbologyType | String = null,
     text: String = null,
     textColor: js.Any = null,
-    wideBarWidth: Int | Double = null,
-    xDimension: Int | Double = null
+    wideBarWidth: js.UndefOr[Double] = js.undefined,
+    xDimension: js.UndefOr[Double] = js.undefined
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (barHeight != null) __obj.updateDynamic("barHeight")(barHeight.asInstanceOf[js.Any])
-    if (barcodeToTextGapHeight != null) __obj.updateDynamic("barcodeToTextGapHeight")(barcodeToTextGapHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(barHeight)) __obj.updateDynamic("barHeight")(barHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barcodeToTextGapHeight)) __obj.updateDynamic("barcodeToTextGapHeight")(barcodeToTextGapHeight.get.asInstanceOf[js.Any])
     if (darkBarColor != null) __obj.updateDynamic("darkBarColor")(darkBarColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayText)) __obj.updateDynamic("displayText")(displayText.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (encodeStartStopSymbol != null) __obj.updateDynamic("encodeStartStopSymbol")(encodeStartStopSymbol.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayText)) __obj.updateDynamic("displayText")(displayText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeStartStopSymbol)) __obj.updateDynamic("encodeStartStopSymbol")(encodeStartStopSymbol.get.asInstanceOf[js.Any])
     if (lightBarColor != null) __obj.updateDynamic("lightBarColor")(lightBarColor.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
-    if (narrowBarWidth != null) __obj.updateDynamic("narrowBarWidth")(narrowBarWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(narrowBarWidth)) __obj.updateDynamic("narrowBarWidth")(narrowBarWidth.get.asInstanceOf[js.Any])
     if (quietZone != null) __obj.updateDynamic("quietZone")(quietZone.asInstanceOf[js.Any])
     if (symbologyType != null) __obj.updateDynamic("symbologyType")(symbologyType.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (wideBarWidth != null) __obj.updateDynamic("wideBarWidth")(wideBarWidth.asInstanceOf[js.Any])
-    if (xDimension != null) __obj.updateDynamic("xDimension")(xDimension.asInstanceOf[js.Any])
+    if (!js.isUndefined(wideBarWidth)) __obj.updateDynamic("wideBarWidth")(wideBarWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xDimension)) __obj.updateDynamic("xDimension")(xDimension.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

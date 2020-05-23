@@ -10,9 +10,14 @@ trait DisappearingElementAnimation extends ElementAnimation {
 
 object DisappearingElementAnimation {
   @scala.inline
-  def apply(duration: Double, interpolation: Interpolation, to: Double, startDelay: Int | Double = null): DisappearingElementAnimation = {
+  def apply(
+    duration: Double,
+    interpolation: Interpolation,
+    to: Double,
+    startDelay: js.UndefOr[Double] = js.undefined
+  ): DisappearingElementAnimation = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(startDelay)) __obj.updateDynamic("startDelay")(startDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisappearingElementAnimation]
   }
 }

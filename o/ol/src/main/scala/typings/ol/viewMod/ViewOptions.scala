@@ -39,42 +39,42 @@ object ViewOptions {
     constrainRotation: Boolean | Double = null,
     enableRotation: js.UndefOr[Boolean] = js.undefined,
     extent: Extent = null,
-    maxResolution: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minResolution: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxResolution: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minResolution: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     multiWorld: js.UndefOr[Boolean] = js.undefined,
     projection: ProjectionLike = null,
-    resolution: Int | Double = null,
+    resolution: js.UndefOr[Double] = js.undefined,
     resolutions: js.Array[Double] = null,
-    rotation: Int | Double = null,
+    rotation: js.UndefOr[Double] = js.undefined,
     showFullExtent: js.UndefOr[Boolean] = js.undefined,
     smoothExtentConstraint: js.UndefOr[Boolean] = js.undefined,
     smoothResolutionConstraint: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null,
-    zoomFactor: Int | Double = null
+    zoom: js.UndefOr[Double] = js.undefined,
+    zoomFactor: js.UndefOr[Double] = js.undefined
   ): ViewOptions = {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainOnlyCenter)) __obj.updateDynamic("constrainOnlyCenter")(constrainOnlyCenter.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainResolution)) __obj.updateDynamic("constrainResolution")(constrainResolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainOnlyCenter)) __obj.updateDynamic("constrainOnlyCenter")(constrainOnlyCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainResolution)) __obj.updateDynamic("constrainResolution")(constrainResolution.get.asInstanceOf[js.Any])
     if (constrainRotation != null) __obj.updateDynamic("constrainRotation")(constrainRotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation.get.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiWorld)) __obj.updateDynamic("multiWorld")(multiWorld.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResolution)) __obj.updateDynamic("maxResolution")(maxResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minResolution)) __obj.updateDynamic("minResolution")(minResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiWorld)) __obj.updateDynamic("multiWorld")(multiWorld.get.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
     if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFullExtent)) __obj.updateDynamic("showFullExtent")(showFullExtent.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothExtentConstraint)) __obj.updateDynamic("smoothExtentConstraint")(smoothExtentConstraint.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothResolutionConstraint)) __obj.updateDynamic("smoothResolutionConstraint")(smoothResolutionConstraint.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFullExtent)) __obj.updateDynamic("showFullExtent")(showFullExtent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothExtentConstraint)) __obj.updateDynamic("smoothExtentConstraint")(smoothExtentConstraint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothResolutionConstraint)) __obj.updateDynamic("smoothResolutionConstraint")(smoothResolutionConstraint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomFactor)) __obj.updateDynamic("zoomFactor")(zoomFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewOptions]
   }
 }

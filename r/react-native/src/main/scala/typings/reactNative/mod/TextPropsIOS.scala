@@ -24,13 +24,13 @@ object TextPropsIOS {
   @scala.inline
   def apply(
     adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined,
-    minimumFontScale: Int | Double = null,
+    minimumFontScale: js.UndefOr[Double] = js.undefined,
     suppressHighlighting: js.UndefOr[Boolean] = js.undefined
   ): TextPropsIOS = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adjustsFontSizeToFit)) __obj.updateDynamic("adjustsFontSizeToFit")(adjustsFontSizeToFit.asInstanceOf[js.Any])
-    if (minimumFontScale != null) __obj.updateDynamic("minimumFontScale")(minimumFontScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHighlighting)) __obj.updateDynamic("suppressHighlighting")(suppressHighlighting.asInstanceOf[js.Any])
+    if (!js.isUndefined(adjustsFontSizeToFit)) __obj.updateDynamic("adjustsFontSizeToFit")(adjustsFontSizeToFit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumFontScale)) __obj.updateDynamic("minimumFontScale")(minimumFontScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressHighlighting)) __obj.updateDynamic("suppressHighlighting")(suppressHighlighting.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextPropsIOS]
   }
 }

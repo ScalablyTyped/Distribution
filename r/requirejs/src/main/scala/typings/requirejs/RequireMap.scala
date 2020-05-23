@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 **/
 trait RequireMap extends js.Object {
   /**
-  	*
-  	**/
+    *
+    **/
   var fullName: String
   /**
-  	*
-  	**/
+    *
+    **/
   var name: String
   /**
-  	*
-  	**/
+    *
+    **/
   var originalName: String
   /**
-  	*
-  	**/
+    *
+    **/
   var parentMap: RequireMap
   /**
-  	*
-  	**/
+    *
+    **/
   var prefix: String
   /**
-  	*
-  	**/
+    *
+    **/
   var url: String
 }
 

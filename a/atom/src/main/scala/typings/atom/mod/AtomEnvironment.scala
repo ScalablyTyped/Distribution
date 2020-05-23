@@ -1,12 +1,12 @@
 package typings.atom.mod
 
-import typings.atom.AnonButtons
-import typings.atom.AnonDetailedMessage
-import typings.atom.AnonDevMode
-import typings.atom.AnonHeight
-import typings.atom.AnonWidth
-import typings.atom.AnonX
-import typings.atom.AnonY
+import typings.atom.anon.Buttons
+import typings.atom.anon.DetailedMessage
+import typings.atom.anon.DevMode
+import typings.atom.anon.Height
+import typings.atom.anon.Width
+import typings.atom.anon.X
+import typings.atom.anon.Y
 import typings.atom.atomStrings.beta
 import typings.atom.atomStrings.dev
 import typings.atom.atomStrings.nightly
@@ -72,7 +72,7 @@ trait AtomEnvironment extends js.Object {
     *
     *  Returns the chosen button index number if the buttons option was an array.
     */
-  def confirm(options: AnonButtons): Unit = js.native
+  def confirm(options: Buttons): Unit = js.native
   /**
     *  A flexible way to open a dialog akin to an alert dialog. If a callback
     *  is provided, then the confirmation will work asynchronously, which is
@@ -84,7 +84,7 @@ trait AtomEnvironment extends js.Object {
     *
     *  Returns the chosen button index number if the buttons option was an array.
     */
-  def confirm(options: AnonDetailedMessage): Double = js.native
+  def confirm(options: DetailedMessage): Double = js.native
   /**
     *  A flexible way to open a dialog akin to an alert dialog. If a callback
     *  is provided, then the confirmation will work asynchronously, which is
@@ -121,20 +121,20 @@ trait AtomEnvironment extends js.Object {
   /** Get the load settings for the current window. */
   def getLoadSettings(): WindowLoadSettings = js.native
   /** Get the position of current window. */
-  def getPosition(): AnonX = js.native
+  def getPosition(): X = js.native
   /**
     *  Gets the release channel of the Atom application.
     *  Returns the release channel, which can be 'dev', 'nightly', 'beta', or 'stable'.
     */
   def getReleaseChannel(): dev | nightly | beta | stable = js.native
   /** Get the size of current window. */
-  def getSize(): AnonHeight = js.native
+  def getSize(): Height = js.native
   /** Get the all the markers with the information about startup time. */
   def getStartupMarkers(): js.Array[TimingMarker] = js.native
   /** Get the version of the Atom application. */
   def getVersion(): String = js.native
   /** Get the dimensions of this window. */
-  def getWindowDimensions(): AnonWidth = js.native
+  def getWindowDimensions(): Width = js.native
   /** Get the time taken to completely load the current window. */
   def getWindowLoadTime(): Double = js.native
   /** Hide the current window. */
@@ -165,7 +165,7 @@ trait AtomEnvironment extends js.Object {
   // Managing the Atom Window
   /** Open a new Atom window using the given options. */
   def open(): Unit = js.native
-  def open(params: AnonDevMode): Unit = js.native
+  def open(params: DevMode): Unit = js.native
   // Managing the Dev Tools
   /** Open the dev tools for the current window. */
   def openDevTools(): js.Promise[Null] = js.native
@@ -182,7 +182,7 @@ trait AtomEnvironment extends js.Object {
   /** Set the size of current window. */
   def setSize(width: Double, height: Double): Unit = js.native
   /** Set the dimensions of the window. */
-  def setWindowDimensions(dimensions: AnonY): js.Promise[js.Object] = js.native
+  def setWindowDimensions(dimensions: Y): js.Promise[js.Object] = js.native
   /** Show the current window. */
   def show(): Unit = js.native
   /** Toggle the visibility of the dev tools for the current window. */

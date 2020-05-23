@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Scale
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,24 +49,6 @@ object Center extends js.Object {
     */
   @js.native
   sealed trait NO_CENTER extends Center
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Center with Double] = js.native
-  /* 1 */ @js.native
-  object CENTER_BOTH
-    extends TopLevel[typings.phaser.Phaser.Scale.Center.CENTER_BOTH with Double]
-  
-  /* 2 */ @js.native
-  object CENTER_HORIZONTALLY
-    extends TopLevel[typings.phaser.Phaser.Scale.Center.CENTER_HORIZONTALLY with Double]
-  
-  /* 3 */ @js.native
-  object CENTER_VERTICALLY
-    extends TopLevel[typings.phaser.Phaser.Scale.Center.CENTER_VERTICALLY with Double]
-  
-  /* 0 */ @js.native
-  object NO_CENTER
-    extends TopLevel[typings.phaser.Phaser.Scale.Center.NO_CENTER with Double]
   
 }
 

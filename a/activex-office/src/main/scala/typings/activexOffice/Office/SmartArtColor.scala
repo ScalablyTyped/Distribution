@@ -4,17 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.SmartArtColor")
-@js.native
-class SmartArtColor protected () extends js.Object {
-  val Application: js.Any = js.native
-  val Category: String = js.native
-  val Creator: Double = js.native
-  val Description: String = js.native
-  val Id: String = js.native
-  val Name: String = js.native
+trait SmartArtColor extends js.Object {
+  val Application: js.Any
+  val Category: String
+  val Creator: Double
+  val Description: String
+  val Id: String
+  val Name: String
   @JSName("Office.SmartArtColor_typekey")
-  var OfficeDotSmartArtColor_typekey: SmartArtColor = js.native
-  val Parent: js.Any = js.native
+  var OfficeDotSmartArtColor_typekey: SmartArtColor
+  val Parent: js.Any
+}
+
+object SmartArtColor {
+  @scala.inline
+  def apply(
+    Application: js.Any,
+    Category: String,
+    Creator: Double,
+    Description: String,
+    Id: String,
+    Name: String,
+    OfficeDotSmartArtColor_typekey: SmartArtColor,
+    Parent: js.Any
+  ): SmartArtColor = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Category = Category.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Office.SmartArtColor_typekey")(OfficeDotSmartArtColor_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SmartArtColor]
+  }
 }
 

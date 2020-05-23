@@ -33,14 +33,14 @@ object DescribeLedgerResponse {
   def apply(
     Arn: Arn = null,
     CreationDateTime: Timestamp = null,
-    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
+    DeletionProtection: js.UndefOr[DeletionProtection] = js.undefined,
     Name: LedgerName = null,
     State: LedgerState = null
   ): DescribeLedgerResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLedgerResponse]

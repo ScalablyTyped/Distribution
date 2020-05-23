@@ -1,6 +1,6 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.AnonStyles
+import typings.antdMobileRn.anon.Styles
 import typings.antdMobileRn.indexNativeMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class Accordion () extends default
 @js.native
 object Accordion extends js.Object {
   var Panel: js.Any = js.native
-  var defaultProps: AnonStyles = js.native
+  var defaultProps: Styles = js.native
 }
 

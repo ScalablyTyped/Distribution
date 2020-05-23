@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.PivotCell")
 @js.native
-class PivotCell protected () extends js.Object {
+trait PivotCell extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val CellChanged: XlCellChangedState = js.native
   @JSName("ColumnItems")

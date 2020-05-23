@@ -16,20 +16,20 @@ object SjclCipherEncryptParams {
     salt: BitArray_,
     adata: String = null,
     cipher: String = null,
-    iter: Int | Double = null,
-    ks: Int | Double = null,
+    iter: js.UndefOr[Double] = js.undefined,
+    ks: js.UndefOr[Double] = js.undefined,
     mode: String = null,
-    ts: Int | Double = null,
-    v: Int | Double = null
+    ts: js.UndefOr[Double] = js.undefined,
+    v: js.UndefOr[Double] = js.undefined
   ): SjclCipherEncryptParams = {
     val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
     if (adata != null) __obj.updateDynamic("adata")(adata.asInstanceOf[js.Any])
     if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
-    if (iter != null) __obj.updateDynamic("iter")(iter.asInstanceOf[js.Any])
-    if (ks != null) __obj.updateDynamic("ks")(ks.asInstanceOf[js.Any])
+    if (!js.isUndefined(iter)) __obj.updateDynamic("iter")(iter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ks)) __obj.updateDynamic("ks")(ks.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (ts != null) __obj.updateDynamic("ts")(ts.asInstanceOf[js.Any])
-    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
+    if (!js.isUndefined(ts)) __obj.updateDynamic("ts")(ts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclCipherEncryptParams]
   }
 }

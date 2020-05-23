@@ -33,13 +33,13 @@ object DistributionCustomErrorResponse {
   @scala.inline
   def apply(
     errorCode: Double,
-    errorCachingMinTtl: Int | Double = null,
-    responseCode: Int | Double = null,
+    errorCachingMinTtl: js.UndefOr[Double] = js.undefined,
+    responseCode: js.UndefOr[Double] = js.undefined,
     responsePagePath: String = null
   ): DistributionCustomErrorResponse = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
-    if (errorCachingMinTtl != null) __obj.updateDynamic("errorCachingMinTtl")(errorCachingMinTtl.asInstanceOf[js.Any])
-    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorCachingMinTtl)) __obj.updateDynamic("errorCachingMinTtl")(errorCachingMinTtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseCode)) __obj.updateDynamic("responseCode")(responseCode.get.asInstanceOf[js.Any])
     if (responsePagePath != null) __obj.updateDynamic("responsePagePath")(responsePagePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionCustomErrorResponse]
   }

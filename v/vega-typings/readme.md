@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-typings
 
-Typings are for version 0.15.2
+Typings are for version 0.17.1
 
 ## Library description:
 Typings for Vega.

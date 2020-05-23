@@ -36,19 +36,19 @@ object GetEmailIdentityResponse {
   @scala.inline
   def apply(
     DkimAttributes: DkimAttributes = null,
-    FeedbackForwardingStatus: js.UndefOr[Boolean] = js.undefined,
+    FeedbackForwardingStatus: js.UndefOr[Enabled] = js.undefined,
     IdentityType: IdentityType = null,
     MailFromAttributes: MailFromAttributes = null,
     Tags: TagList = null,
-    VerifiedForSendingStatus: js.UndefOr[Boolean] = js.undefined
+    VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
   ): GetEmailIdentityResponse = {
     val __obj = js.Dynamic.literal()
     if (DkimAttributes != null) __obj.updateDynamic("DkimAttributes")(DkimAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(FeedbackForwardingStatus)) __obj.updateDynamic("FeedbackForwardingStatus")(FeedbackForwardingStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(FeedbackForwardingStatus)) __obj.updateDynamic("FeedbackForwardingStatus")(FeedbackForwardingStatus.get.asInstanceOf[js.Any])
     if (IdentityType != null) __obj.updateDynamic("IdentityType")(IdentityType.asInstanceOf[js.Any])
     if (MailFromAttributes != null) __obj.updateDynamic("MailFromAttributes")(MailFromAttributes.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(VerifiedForSendingStatus)) __obj.updateDynamic("VerifiedForSendingStatus")(VerifiedForSendingStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(VerifiedForSendingStatus)) __obj.updateDynamic("VerifiedForSendingStatus")(VerifiedForSendingStatus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEmailIdentityResponse]
   }
 }

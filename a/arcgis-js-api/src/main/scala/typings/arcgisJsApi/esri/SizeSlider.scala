@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,8 +45,4 @@ trait SizeSlider extends SmartMappingSliderBase {
     */
   def updateVisualVariable(sizeVariable: SizeVariable): SizeVariable = js.native
 }
-
-@JSGlobal("__esri.SizeSlider")
-@js.native
-object SizeSlider extends TopLevel[SizeSliderConstructor]
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,4 @@ trait PortalBasemapsSource extends LocalBasemapsSource {
     */
   var updateBasemapsCallback: js.Function = js.native
 }
-
-@JSGlobal("__esri.PortalBasemapsSource")
-@js.native
-object PortalBasemapsSource extends TopLevel[PortalBasemapsSourceConstructor]
 

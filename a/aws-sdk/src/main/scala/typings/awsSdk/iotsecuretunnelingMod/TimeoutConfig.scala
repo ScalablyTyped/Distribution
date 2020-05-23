@@ -14,9 +14,9 @@ trait TimeoutConfig extends js.Object {
 
 object TimeoutConfig {
   @scala.inline
-  def apply(maxLifetimeTimeoutMinutes: Int | Double = null): TimeoutConfig = {
+  def apply(maxLifetimeTimeoutMinutes: js.UndefOr[TimeoutInMin] = js.undefined): TimeoutConfig = {
     val __obj = js.Dynamic.literal()
-    if (maxLifetimeTimeoutMinutes != null) __obj.updateDynamic("maxLifetimeTimeoutMinutes")(maxLifetimeTimeoutMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLifetimeTimeoutMinutes)) __obj.updateDynamic("maxLifetimeTimeoutMinutes")(maxLifetimeTimeoutMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeoutConfig]
   }
 }

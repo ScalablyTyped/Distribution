@@ -33,13 +33,12 @@ object UseSelectionConfig {
     locale: TableLocale,
     pageData: js.Array[RecordType],
     prefixCls: String,
-    expandIconColumnIndex: Int | Double = null,
+    expandIconColumnIndex: js.UndefOr[Double] = js.undefined,
     expandType: ExpandType = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null
   ): UseSelectionConfig[RecordType] = {
-    val __obj = js.Dynamic.literal(childrenColumnName = childrenColumnName.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getRecordByKey = js.Any.fromFunction1(getRecordByKey), getRowKey = js.Any.fromFunction2(getRowKey), locale = locale.asInstanceOf[js.Any], pageData = pageData.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
-    if (expandIconColumnIndex != null) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.asInstanceOf[js.Any])
-    if (expandType != null) __obj.updateDynamic("expandType")(expandType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(childrenColumnName = childrenColumnName.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getRecordByKey = js.Any.fromFunction1(getRecordByKey), getRowKey = js.Any.fromFunction2(getRowKey), locale = locale.asInstanceOf[js.Any], pageData = pageData.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], expandType = expandType.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandIconColumnIndex)) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.get.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     __obj.asInstanceOf[UseSelectionConfig[RecordType]]
   }

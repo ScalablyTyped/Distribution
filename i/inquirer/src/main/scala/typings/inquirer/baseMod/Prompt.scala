@@ -70,7 +70,7 @@ trait Prompt[TQuestion /* <: Question */] extends PromptBase {
 
 object Prompt {
   @scala.inline
-  def apply[TQuestion /* <: Question */](
+  def apply[TQuestion](
     _run: js.Function1[/* callback */ js.Any, Unit] => Unit,
     answers: Answers,
     close: () => Unit,

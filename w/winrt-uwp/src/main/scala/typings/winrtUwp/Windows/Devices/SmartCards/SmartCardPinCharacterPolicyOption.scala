@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.SmartCards
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object SmartCardPinCharacterPolicyOption extends js.Object {
   /** At least one of the characters in the specified character class must be in the PIN. */
   @js.native
   sealed trait requireAtLeastOne extends SmartCardPinCharacterPolicyOption
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmartCardPinCharacterPolicyOption with Double] = js.native
-  /* 0 */ @js.native
-  object allow extends TopLevel[allow with Double]
-  
-  /* 2 */ @js.native
-  object disallow extends TopLevel[disallow with Double]
-  
-  /* 1 */ @js.native
-  object requireAtLeastOne extends TopLevel[requireAtLeastOne with Double]
   
 }
 

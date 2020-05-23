@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonChannel
+import typings.cesium.anon.Channel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "GoogleEarthEnterpriseMapsProvider")
 @js.native
 class GoogleEarthEnterpriseMapsProvider protected () extends ImageryProvider {
-  def this(options: AnonChannel) = this()
+  def this(options: Channel) = this()
   val channel: Double = js.native
   val path: String = js.native
   val requestType: String = js.native

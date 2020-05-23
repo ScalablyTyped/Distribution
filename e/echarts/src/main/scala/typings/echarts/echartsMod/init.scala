@@ -1,6 +1,6 @@
 package typings.echarts.echartsMod
 
-import typings.echarts.AnonDevicePixelRatio
+import typings.echarts.anon.DevicePixelRatio
 import typings.echarts.echarts.ECharts
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 object init extends js.Object {
   def apply(dom: HTMLCanvasElement): ECharts = js.native
   def apply(dom: HTMLCanvasElement, theme: String): ECharts = js.native
-  def apply(dom: HTMLCanvasElement, theme: String, opts: AnonDevicePixelRatio): ECharts = js.native
+  def apply(dom: HTMLCanvasElement, theme: String, opts: DevicePixelRatio): ECharts = js.native
   def apply(dom: HTMLCanvasElement, theme: js.Object): ECharts = js.native
-  def apply(dom: HTMLCanvasElement, theme: js.Object, opts: AnonDevicePixelRatio): ECharts = js.native
+  def apply(dom: HTMLCanvasElement, theme: js.Object, opts: DevicePixelRatio): ECharts = js.native
   /**
     * Creates an ECharts instance, and returns an echartsInstance. You shall
     *     not initialize multiple ECharts instances on a single container.
@@ -40,8 +40,8 @@ object init extends js.Object {
     */
   def apply(dom: HTMLDivElement): ECharts = js.native
   def apply(dom: HTMLDivElement, theme: String): ECharts = js.native
-  def apply(dom: HTMLDivElement, theme: String, opts: AnonDevicePixelRatio): ECharts = js.native
+  def apply(dom: HTMLDivElement, theme: String, opts: DevicePixelRatio): ECharts = js.native
   def apply(dom: HTMLDivElement, theme: js.Object): ECharts = js.native
-  def apply(dom: HTMLDivElement, theme: js.Object, opts: AnonDevicePixelRatio): ECharts = js.native
+  def apply(dom: HTMLDivElement, theme: js.Object, opts: DevicePixelRatio): ECharts = js.native
 }
 

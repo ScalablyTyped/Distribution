@@ -1,6 +1,6 @@
 package typings.sharedb.agentMod
 
-import typings.sharedb.DuplexisServerboolean
+import typings.sharedb.anon.DuplexisServerboolean
 import typings.sharedb.sharedbMod.JSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`

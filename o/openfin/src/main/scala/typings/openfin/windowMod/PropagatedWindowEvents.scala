@@ -18,7 +18,10 @@ import typings.openfin.openfinStrings.`window-external-process-started`
 import typings.openfin.openfinStrings.`window-focused`
 import typings.openfin.openfinStrings.`window-group-changed`
 import typings.openfin.openfinStrings.`window-hidden`
+import typings.openfin.openfinStrings.`window-hotkey`
 import typings.openfin.openfinStrings.`window-initialized`
+import typings.openfin.openfinStrings.`window-layout-initialized`
+import typings.openfin.openfinStrings.`window-layout-ready`
 import typings.openfin.openfinStrings.`window-maximized`
 import typings.openfin.openfinStrings.`window-minimized`
 import typings.openfin.openfinStrings.`window-navigation-rejected`
@@ -35,6 +38,7 @@ import typings.openfin.openfinStrings.`window-user-movement-disabled`
 import typings.openfin.openfinStrings.`window-user-movement-enabled`
 import typings.openfin.openfinStrings.`window-will-move`
 import typings.openfin.openfinStrings.`window-will-resize`
+import typings.openfin.viewMod.InputEvent
 import typings.openfin.webcontentsMod.WindowResourceLoadFailedEvent
 import typings.openfin.webcontentsMod.WindowResourceResponseReceivedEvent
 import scala.scalajs.js
@@ -61,7 +65,10 @@ trait PropagatedWindowEvents[Topic] extends js.Object {
   var `window-focused`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-focused`]
   var `window-group-changed`: WindowGroupChanged[Topic, typings.openfin.openfinStrings.`window-group-changed`]
   var `window-hidden`: WindowHiddenEvent[Topic, typings.openfin.openfinStrings.`window-hidden`]
+  var `window-hotkey`: InputEvent with (WindowEvent[Topic, typings.openfin.openfinStrings.`window-hotkey`])
   var `window-initialized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-initialized`]
+  var `window-layout-initialized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-layout-initialized`]
+  var `window-layout-ready`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-layout-ready`]
   var `window-maximized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-maximized`]
   var `window-minimized`: WindowEvent[Topic, typings.openfin.openfinStrings.`window-minimized`]
   var `window-navigation-rejected`: WindowNavigationRejectedEvent[Topic, typings.openfin.openfinStrings.`window-navigation-rejected`]
@@ -101,7 +108,10 @@ object PropagatedWindowEvents {
     `window-focused`: WindowEvent[Topic, `window-focused`],
     `window-group-changed`: WindowGroupChanged[Topic, `window-group-changed`],
     `window-hidden`: WindowHiddenEvent[Topic, `window-hidden`],
+    `window-hotkey`: InputEvent with (WindowEvent[Topic, `window-hotkey`]),
     `window-initialized`: WindowEvent[Topic, `window-initialized`],
+    `window-layout-initialized`: WindowEvent[Topic, `window-layout-initialized`],
+    `window-layout-ready`: WindowEvent[Topic, `window-layout-ready`],
     `window-maximized`: WindowEvent[Topic, `window-maximized`],
     `window-minimized`: WindowEvent[Topic, `window-minimized`],
     `window-navigation-rejected`: WindowNavigationRejectedEvent[Topic, `window-navigation-rejected`],
@@ -136,7 +146,10 @@ object PropagatedWindowEvents {
     __obj.updateDynamic("window-focused")(`window-focused`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-group-changed")(`window-group-changed`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-hidden")(`window-hidden`.asInstanceOf[js.Any])
+    __obj.updateDynamic("window-hotkey")(`window-hotkey`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-initialized")(`window-initialized`.asInstanceOf[js.Any])
+    __obj.updateDynamic("window-layout-initialized")(`window-layout-initialized`.asInstanceOf[js.Any])
+    __obj.updateDynamic("window-layout-ready")(`window-layout-ready`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-maximized")(`window-maximized`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-minimized")(`window-minimized`.asInstanceOf[js.Any])
     __obj.updateDynamic("window-navigation-rejected")(`window-navigation-rejected`.asInstanceOf[js.Any])

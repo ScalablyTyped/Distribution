@@ -25,16 +25,15 @@ object State {
   @scala.inline
   def apply(
     isOpen: Boolean,
-    highlightedIndex: Int | Double = null,
-    menuLeft: Int | Double = null,
-    menuTop: Int | Double = null,
-    menuWidth: Int | Double = null
+    highlightedIndex: Double = null.asInstanceOf[Double],
+    menuLeft: js.UndefOr[Double] = js.undefined,
+    menuTop: js.UndefOr[Double] = js.undefined,
+    menuWidth: js.UndefOr[Double] = js.undefined
   ): State = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
-    if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
-    if (menuLeft != null) __obj.updateDynamic("menuLeft")(menuLeft.asInstanceOf[js.Any])
-    if (menuTop != null) __obj.updateDynamic("menuTop")(menuTop.asInstanceOf[js.Any])
-    if (menuWidth != null) __obj.updateDynamic("menuWidth")(menuWidth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], highlightedIndex = highlightedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuLeft)) __obj.updateDynamic("menuLeft")(menuLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuTop)) __obj.updateDynamic("menuTop")(menuTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuWidth)) __obj.updateDynamic("menuWidth")(menuWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

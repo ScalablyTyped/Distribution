@@ -7,37 +7,34 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientSpreadsheet.CellCancelEdit event.
   */
-@JSGlobal("ASPxClientSpreadsheetCellCancelEditEventArgs")
-@js.native
-class ASPxClientSpreadsheetCellCancelEditEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientSpreadsheetCellCancelEditEventArgs object. For internal use only.
-    * @param columnIndex Gets the active cell's column index.
-    * @param rowIndex Gets the active cell's row index.
-    * @param formula Gets the active cell's formula.
-    * @param value Gets the active cell's current value.
-    * @param sheetName Gets the current worksheet's name.
-    */
-  def this(columnIndex: Double, rowIndex: Double, formula: String, value: String, sheetName: String) = this()
+trait ASPxClientSpreadsheetCellCancelEditEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the active cell's column index.
     */
-  var columnIndex: Double = js.native
+  var columnIndex: Double
   /**
     * Gets the active cell's formula.
     */
-  var formula: String = js.native
+  var formula: String
   /**
     * Gets the active cell's row index.
     */
-  var rowIndex: Double = js.native
+  var rowIndex: Double
   /**
     * Gets the current worksheet's name.
     */
-  var sheetName: String = js.native
+  var sheetName: String
   /**
     * Gets the active cell's current value.
     */
-  var value: String = js.native
+  var value: String
+}
+
+object ASPxClientSpreadsheetCellCancelEditEventArgs {
+  @scala.inline
+  def apply(columnIndex: Double, formula: String, rowIndex: Double, sheetName: String, value: String): ASPxClientSpreadsheetCellCancelEditEventArgs = {
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], formula = formula.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], sheetName = sheetName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSpreadsheetCellCancelEditEventArgs]
+  }
 }
 

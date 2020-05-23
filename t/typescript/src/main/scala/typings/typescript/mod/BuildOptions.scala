@@ -28,12 +28,12 @@ object BuildOptions {
   ): BuildOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(assumeChangesOnlyAffectDirectDependencies)) __obj.updateDynamic("assumeChangesOnlyAffectDirectDependencies")(assumeChangesOnlyAffectDirectDependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(incremental)) __obj.updateDynamic("incremental")(incremental.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceResolution)) __obj.updateDynamic("traceResolution")(traceResolution.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeChangesOnlyAffectDirectDependencies)) __obj.updateDynamic("assumeChangesOnlyAffectDirectDependencies")(assumeChangesOnlyAffectDirectDependencies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(incremental)) __obj.updateDynamic("incremental")(incremental.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceResolution)) __obj.updateDynamic("traceResolution")(traceResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptions]
   }
 }

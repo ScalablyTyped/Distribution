@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialDataTitle
-import typings.plotlyJs.PartialFont
+import typings.plotlyJs.anon.PartialDataTitle
+import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
 import typings.plotlyJs.plotlyJsStrings.B

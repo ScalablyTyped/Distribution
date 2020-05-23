@@ -17,21 +17,21 @@ object ErrorEventInit {
   def apply(
     bubbles: js.UndefOr[scala.Boolean] = js.undefined,
     cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    colno: Int | Double = null,
+    colno: js.UndefOr[Double] = js.undefined,
     composed: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.Any = null,
     filename: java.lang.String = null,
-    lineno: Int | Double = null,
+    lineno: js.UndefOr[Double] = js.undefined,
     message: java.lang.String = null
   ): ErrorEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (colno != null) __obj.updateDynamic("colno")(colno.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colno)) __obj.updateDynamic("colno")(colno.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (lineno != null) __obj.updateDynamic("lineno")(lineno.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineno)) __obj.updateDynamic("lineno")(lineno.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorEventInit]
   }

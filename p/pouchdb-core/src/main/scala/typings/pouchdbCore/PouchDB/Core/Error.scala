@@ -26,7 +26,7 @@ object Error {
     name: String = null,
     reason: String = null,
     rev: RevisionId = null,
-    status: Int | Double = null
+    status: js.UndefOr[Double] = js.undefined
   ): Error = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
@@ -35,7 +35,7 @@ object Error {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (rev != null) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
 }

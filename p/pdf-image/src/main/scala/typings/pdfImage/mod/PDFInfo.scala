@@ -41,7 +41,7 @@ object PDFInfo {
     Suspects: String,
     Tagged: String,
     UserProperties: String,
-    StringDictionary: /* key */ StringDictionary[String] = null
+    StringDictionary: /* name */ StringDictionary[String] = null
   ): PDFInfo = {
     val __obj = js.Dynamic.literal(CreationDate = CreationDate.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Encrypted = Encrypted.asInstanceOf[js.Any], Form = Form.asInstanceOf[js.Any], JavaScript = JavaScript.asInstanceOf[js.Any], Optimized = Optimized.asInstanceOf[js.Any], Pages = Pages.asInstanceOf[js.Any], Producer = Producer.asInstanceOf[js.Any], Suspects = Suspects.asInstanceOf[js.Any], Tagged = Tagged.asInstanceOf[js.Any], UserProperties = UserProperties.asInstanceOf[js.Any])
     __obj.updateDynamic("File size")((`File size`).asInstanceOf[js.Any])

@@ -17,10 +17,10 @@ trait Dpi extends js.Object {
 
 object Dpi {
   @scala.inline
-  def apply(horizontal: Int | Double = null, vertical: Int | Double = null): Dpi = {
+  def apply(horizontal: js.UndefOr[Double] = js.undefined, vertical: js.UndefOr[Double] = js.undefined): Dpi = {
     val __obj = js.Dynamic.literal()
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dpi]
   }
 }

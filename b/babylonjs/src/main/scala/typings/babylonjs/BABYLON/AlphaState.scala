@@ -5,12 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.AlphaState")
 @js.native
-/**
-  * Initializes the state.
-  */
-class AlphaState () extends js.Object {
+trait AlphaState extends js.Object {
   var _alphaBlend: js.Any = js.native
   var _blendConstants: js.Any = js.native
   var _blendEquationParameters: js.Any = js.native

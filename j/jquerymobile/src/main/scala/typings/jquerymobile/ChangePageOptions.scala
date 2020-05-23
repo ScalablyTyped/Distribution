@@ -34,15 +34,15 @@ object ChangePageOptions {
     `type`: String = null
   ): ChangePageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSamePageTransition)) __obj.updateDynamic("allowSamePageTransition")(allowSamePageTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(changeHash)) __obj.updateDynamic("changeHash")(changeHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSamePageTransition)) __obj.updateDynamic("allowSamePageTransition")(allowSamePageTransition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(changeHash)) __obj.updateDynamic("changeHash")(changeHash.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl.asInstanceOf[js.Any])
     if (pageContainer != null) __obj.updateDynamic("pageContainer")(pageContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadPage)) __obj.updateDynamic("reloadPage")(reloadPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadPage)) __obj.updateDynamic("reloadPage")(reloadPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLoadMsg)) __obj.updateDynamic("showLoadMsg")(showLoadMsg.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLoadMsg)) __obj.updateDynamic("showLoadMsg")(showLoadMsg.get.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangePageOptions]

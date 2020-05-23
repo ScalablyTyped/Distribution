@@ -69,7 +69,7 @@ object CreateConfig {
   @scala.inline
   def apply(
     bucket: String,
-    abortCompletionThrottlingMs: Int | Double = null,
+    abortCompletionThrottlingMs: js.UndefOr[Double] = js.undefined,
     allowS3ExistenceOptimization: js.UndefOr[Boolean] = js.undefined,
     awsRegion: String = null,
     awsSignatureVersion: `2` | `4` = null,
@@ -77,68 +77,74 @@ object CreateConfig {
     aws_url: String = null,
     cloudfront: js.UndefOr[Boolean] = js.undefined,
     computeContentMd5: js.UndefOr[Boolean] = js.undefined,
-    cryptoHexEncodedHash256: /* data */ String | ArrayBuffer | Null => String = null,
-    cryptoMd5Method: /* data */ ArrayBuffer => String = null,
-    customAuthMethod: (/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String] = null,
+    cryptoHexEncodedHash256: js.UndefOr[Null | (/* data */ String | ArrayBuffer | Null => String)] = js.undefined,
+    cryptoMd5Method: js.UndefOr[Null | (/* data */ ArrayBuffer => String)] = js.undefined,
+    customAuthMethod: js.UndefOr[
+      Null | ((/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String])
+    ] = js.undefined,
     encodeFilename: js.UndefOr[Boolean] = js.undefined,
     evaporateChanged: (/* evaporate */ Evaporate, /* evaporatingCount */ Double) => Unit = null,
-    localTimeOffset: Int | Double = null,
+    localTimeOffset: js.UndefOr[Double] = js.undefined,
     logging: js.UndefOr[Boolean] = js.undefined,
-    maxConcurrentParts: Int | Double = null,
-    maxFileSize: Int | Double = null,
-    maxRetryBackoffSecs: Int | Double = null,
+    maxConcurrentParts: js.UndefOr[Double] = js.undefined,
+    maxFileSize: js.UndefOr[Double] = js.undefined,
+    maxRetryBackoffSecs: js.UndefOr[Double] = js.undefined,
     mockLocalStorage: js.UndefOr[Boolean] = js.undefined,
     onlyRetryForSameFileName: js.UndefOr[Boolean] = js.undefined,
-    partSize: Int | Double = null,
-    progressIntervalMS: Int | Double = null,
-    readableStreamPartMethod: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[_] = null,
+    partSize: js.UndefOr[Double] = js.undefined,
+    progressIntervalMS: js.UndefOr[Double] = js.undefined,
+    readableStreamPartMethod: js.UndefOr[
+      Null | ((/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[_])
+    ] = js.undefined,
     readableStreams: js.UndefOr[Boolean] = js.undefined,
-    retryBackoffPower: Int | Double = null,
+    retryBackoffPower: js.UndefOr[Double] = js.undefined,
     s3Acceleration: js.UndefOr[Boolean] = js.undefined,
-    s3FileCacheHoursAgo: Int | Double = null,
+    s3FileCacheHoursAgo: js.UndefOr[Null | Double] = js.undefined,
     sendCanonicalRequestToSignerUrl: js.UndefOr[Boolean] = js.undefined,
     signHeaders: js.Object = null,
     signParams: js.Object = null,
-    signResponseHandler: (/* response */ js.Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String] = null,
+    signResponseHandler: js.UndefOr[
+      Null | ((/* response */ js.Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String])
+    ] = js.undefined,
     signerUrl: String = null,
     timeUrl: String = null,
     xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
   ): CreateConfig = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-    if (abortCompletionThrottlingMs != null) __obj.updateDynamic("abortCompletionThrottlingMs")(abortCompletionThrottlingMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowS3ExistenceOptimization)) __obj.updateDynamic("allowS3ExistenceOptimization")(allowS3ExistenceOptimization.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortCompletionThrottlingMs)) __obj.updateDynamic("abortCompletionThrottlingMs")(abortCompletionThrottlingMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowS3ExistenceOptimization)) __obj.updateDynamic("allowS3ExistenceOptimization")(allowS3ExistenceOptimization.get.asInstanceOf[js.Any])
     if (awsRegion != null) __obj.updateDynamic("awsRegion")(awsRegion.asInstanceOf[js.Any])
     if (awsSignatureVersion != null) __obj.updateDynamic("awsSignatureVersion")(awsSignatureVersion.asInstanceOf[js.Any])
     if (aws_key != null) __obj.updateDynamic("aws_key")(aws_key.asInstanceOf[js.Any])
     if (aws_url != null) __obj.updateDynamic("aws_url")(aws_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(cloudfront)) __obj.updateDynamic("cloudfront")(cloudfront.asInstanceOf[js.Any])
-    if (!js.isUndefined(computeContentMd5)) __obj.updateDynamic("computeContentMd5")(computeContentMd5.asInstanceOf[js.Any])
-    if (cryptoHexEncodedHash256 != null) __obj.updateDynamic("cryptoHexEncodedHash256")(js.Any.fromFunction1(cryptoHexEncodedHash256))
-    if (cryptoMd5Method != null) __obj.updateDynamic("cryptoMd5Method")(js.Any.fromFunction1(cryptoMd5Method))
-    if (customAuthMethod != null) __obj.updateDynamic("customAuthMethod")(js.Any.fromFunction5(customAuthMethod))
-    if (!js.isUndefined(encodeFilename)) __obj.updateDynamic("encodeFilename")(encodeFilename.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloudfront)) __obj.updateDynamic("cloudfront")(cloudfront.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(computeContentMd5)) __obj.updateDynamic("computeContentMd5")(computeContentMd5.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cryptoHexEncodedHash256)) __obj.updateDynamic("cryptoHexEncodedHash256")(if (cryptoHexEncodedHash256 != null) js.Any.fromFunction1(cryptoHexEncodedHash256.asInstanceOf[/* data */ String | ArrayBuffer | Null => String]) else null)
+    if (!js.isUndefined(cryptoMd5Method)) __obj.updateDynamic("cryptoMd5Method")(if (cryptoMd5Method != null) js.Any.fromFunction1(cryptoMd5Method.asInstanceOf[/* data */ ArrayBuffer => String]) else null)
+    if (!js.isUndefined(customAuthMethod)) __obj.updateDynamic("customAuthMethod")(if (customAuthMethod != null) js.Any.fromFunction5(customAuthMethod.asInstanceOf[(/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String]]) else null)
+    if (!js.isUndefined(encodeFilename)) __obj.updateDynamic("encodeFilename")(encodeFilename.get.asInstanceOf[js.Any])
     if (evaporateChanged != null) __obj.updateDynamic("evaporateChanged")(js.Any.fromFunction2(evaporateChanged))
-    if (localTimeOffset != null) __obj.updateDynamic("localTimeOffset")(localTimeOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (maxConcurrentParts != null) __obj.updateDynamic("maxConcurrentParts")(maxConcurrentParts.asInstanceOf[js.Any])
-    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (maxRetryBackoffSecs != null) __obj.updateDynamic("maxRetryBackoffSecs")(maxRetryBackoffSecs.asInstanceOf[js.Any])
-    if (!js.isUndefined(mockLocalStorage)) __obj.updateDynamic("mockLocalStorage")(mockLocalStorage.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyRetryForSameFileName)) __obj.updateDynamic("onlyRetryForSameFileName")(onlyRetryForSameFileName.asInstanceOf[js.Any])
-    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
-    if (progressIntervalMS != null) __obj.updateDynamic("progressIntervalMS")(progressIntervalMS.asInstanceOf[js.Any])
-    if (readableStreamPartMethod != null) __obj.updateDynamic("readableStreamPartMethod")(js.Any.fromFunction3(readableStreamPartMethod))
-    if (!js.isUndefined(readableStreams)) __obj.updateDynamic("readableStreams")(readableStreams.asInstanceOf[js.Any])
-    if (retryBackoffPower != null) __obj.updateDynamic("retryBackoffPower")(retryBackoffPower.asInstanceOf[js.Any])
-    if (!js.isUndefined(s3Acceleration)) __obj.updateDynamic("s3Acceleration")(s3Acceleration.asInstanceOf[js.Any])
-    if (s3FileCacheHoursAgo != null) __obj.updateDynamic("s3FileCacheHoursAgo")(s3FileCacheHoursAgo.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendCanonicalRequestToSignerUrl)) __obj.updateDynamic("sendCanonicalRequestToSignerUrl")(sendCanonicalRequestToSignerUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(localTimeOffset)) __obj.updateDynamic("localTimeOffset")(localTimeOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentParts)) __obj.updateDynamic("maxConcurrentParts")(maxConcurrentParts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetryBackoffSecs)) __obj.updateDynamic("maxRetryBackoffSecs")(maxRetryBackoffSecs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mockLocalStorage)) __obj.updateDynamic("mockLocalStorage")(mockLocalStorage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyRetryForSameFileName)) __obj.updateDynamic("onlyRetryForSameFileName")(onlyRetryForSameFileName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partSize)) __obj.updateDynamic("partSize")(partSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressIntervalMS)) __obj.updateDynamic("progressIntervalMS")(progressIntervalMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readableStreamPartMethod)) __obj.updateDynamic("readableStreamPartMethod")(if (readableStreamPartMethod != null) js.Any.fromFunction3(readableStreamPartMethod.asInstanceOf[(/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[_]]) else null)
+    if (!js.isUndefined(readableStreams)) __obj.updateDynamic("readableStreams")(readableStreams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryBackoffPower)) __obj.updateDynamic("retryBackoffPower")(retryBackoffPower.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(s3Acceleration)) __obj.updateDynamic("s3Acceleration")(s3Acceleration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(s3FileCacheHoursAgo)) __obj.updateDynamic("s3FileCacheHoursAgo")(s3FileCacheHoursAgo.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendCanonicalRequestToSignerUrl)) __obj.updateDynamic("sendCanonicalRequestToSignerUrl")(sendCanonicalRequestToSignerUrl.get.asInstanceOf[js.Any])
     if (signHeaders != null) __obj.updateDynamic("signHeaders")(signHeaders.asInstanceOf[js.Any])
     if (signParams != null) __obj.updateDynamic("signParams")(signParams.asInstanceOf[js.Any])
-    if (signResponseHandler != null) __obj.updateDynamic("signResponseHandler")(js.Any.fromFunction3(signResponseHandler))
+    if (!js.isUndefined(signResponseHandler)) __obj.updateDynamic("signResponseHandler")(if (signResponseHandler != null) js.Any.fromFunction3(signResponseHandler.asInstanceOf[(/* response */ js.Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String]]) else null)
     if (signerUrl != null) __obj.updateDynamic("signerUrl")(signerUrl.asInstanceOf[js.Any])
     if (timeUrl != null) __obj.updateDynamic("timeUrl")(timeUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfig]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object MagneticStripeReaderStatus extends js.Object {
   /** A device not authenticated. */
   @js.native
   sealed trait unauthenticated extends MagneticStripeReaderStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MagneticStripeReaderStatus with Double] = js.native
-  /* 1 */ @js.native
-  object authenticated extends TopLevel[authenticated with Double]
-  
-  /* 2 */ @js.native
-  object extended extends TopLevel[extended with Double]
-  
-  /* 0 */ @js.native
-  object unauthenticated extends TopLevel[unauthenticated with Double]
   
 }
 

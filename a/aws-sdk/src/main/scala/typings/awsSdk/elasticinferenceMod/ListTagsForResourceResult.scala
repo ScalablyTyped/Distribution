@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListTagsForResourceResult extends js.Object {
   /**
-    * The tags of the Elastic Inference Accelerator.
+    *  The tags of the Elastic Inference Accelerator. 
     */
   var tags: js.UndefOr[TagMap] = js.native
 }

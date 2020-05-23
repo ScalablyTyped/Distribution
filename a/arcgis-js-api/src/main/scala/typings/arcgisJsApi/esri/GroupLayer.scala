@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.exclusive
 import typings.arcgisJsApi.arcgisJsApiStrings.group
 import typings.arcgisJsApi.arcgisJsApiStrings.independent
@@ -38,8 +37,4 @@ trait GroupLayer
     */
   def loadAll(): js.Promise[GroupLayer] = js.native
 }
-
-@JSGlobal("__esri.GroupLayer")
-@js.native
-object GroupLayer extends TopLevel[GroupLayerConstructor]
 

@@ -26,28 +26,28 @@ trait GraphQLSchemaConfig extends GraphQLSchemaValidationOptions {
 object GraphQLSchemaConfig {
   @scala.inline
   def apply(
-    allowedLegacyNames: Maybe[js.Array[String]] = null,
+    allowedLegacyNames: js.UndefOr[Null | Maybe[js.Array[String]]] = js.undefined,
     assumeValid: js.UndefOr[Boolean] = js.undefined,
-    astNode: Maybe[SchemaDefinitionNode] = null,
-    directives: Maybe[js.Array[GraphQLDirective]] = null,
-    extensionASTNodes: Maybe[js.Array[SchemaExtensionNode]] = null,
-    extensions: Maybe[Record[String, _]] = null,
-    mutation: Maybe[GraphQLObjectType[_, _, StringDictionary[_]]] = null,
-    query: Maybe[GraphQLObjectType[_, _, StringDictionary[_]]] = null,
-    subscription: Maybe[GraphQLObjectType[_, _, StringDictionary[_]]] = null,
-    types: Maybe[js.Array[GraphQLNamedType]] = null
+    astNode: js.UndefOr[Null | Maybe[SchemaDefinitionNode]] = js.undefined,
+    directives: js.UndefOr[Null | Maybe[js.Array[GraphQLDirective]]] = js.undefined,
+    extensionASTNodes: js.UndefOr[Null | Maybe[js.Array[SchemaExtensionNode]]] = js.undefined,
+    extensions: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined,
+    mutation: js.UndefOr[Null | (Maybe[GraphQLObjectType[_, _, StringDictionary[_]]])] = js.undefined,
+    query: js.UndefOr[Null | (Maybe[GraphQLObjectType[_, _, StringDictionary[_]]])] = js.undefined,
+    subscription: js.UndefOr[Null | (Maybe[GraphQLObjectType[_, _, StringDictionary[_]]])] = js.undefined,
+    types: js.UndefOr[Null | Maybe[js.Array[GraphQLNamedType]]] = js.undefined
   ): GraphQLSchemaConfig = {
     val __obj = js.Dynamic.literal()
-    if (allowedLegacyNames != null) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid.asInstanceOf[js.Any])
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (mutation != null) __obj.updateDynamic("mutation")(mutation.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowedLegacyNames)) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(directives)) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensionASTNodes)) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(mutation)) __obj.updateDynamic("mutation")(mutation.asInstanceOf[js.Any])
+    if (!js.isUndefined(query)) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLSchemaConfig]
   }
 }

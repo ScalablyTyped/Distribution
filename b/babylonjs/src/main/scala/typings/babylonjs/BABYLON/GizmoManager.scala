@@ -1,18 +1,11 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonPositionGizmo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.GizmoManager")
 @js.native
-class GizmoManager protected () extends IDisposable {
-  /**
-    * Instatiates a gizmo manager
-    * @param scene the scene to overlay the gizmos on top of
-    */
-  def this(scene: Scene) = this()
+trait GizmoManager extends IDisposable {
   var _attachedMesh: js.Any = js.native
   var _boundingBoxColor: js.Any = js.native
   var _defaultKeepDepthUtilityLayer: js.Any = js.native
@@ -32,7 +25,7 @@ class GizmoManager protected () extends IDisposable {
   /**
     * Gizmo's created by the gizmo manager, gizmo will be null until gizmo has been enabled for the first time
     */
-  var gizmos: AnonPositionGizmo = js.native
+  var gizmos: typings.babylonjs.anon.PositionGizmo = js.native
   /** Fires an event when the manager is attached to a mesh */
   var onAttachedToMeshObservable: Observable[Nullable[AbstractMesh]] = js.native
   var scene: js.Any = js.native
@@ -50,11 +43,6 @@ class GizmoManager protected () extends IDisposable {
     * If the boundingBox gizmo is enabled
     */
   def boundingBoxGizmoEnabled(value: Boolean): js.Any = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Utility layer that the bounding box gizmo belongs to
     */

@@ -27,9 +27,9 @@ object KarmaDetectBrowsers {
     usePhantomJS: js.UndefOr[Boolean] = js.undefined
   ): KarmaDetectBrowsers = {
     val __obj = js.Dynamic.literal(postDetection = js.Any.fromFunction1(postDetection))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferHeadless)) __obj.updateDynamic("preferHeadless")(preferHeadless.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePhantomJS)) __obj.updateDynamic("usePhantomJS")(usePhantomJS.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferHeadless)) __obj.updateDynamic("preferHeadless")(preferHeadless.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePhantomJS)) __obj.updateDynamic("usePhantomJS")(usePhantomJS.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KarmaDetectBrowsers]
   }
 }

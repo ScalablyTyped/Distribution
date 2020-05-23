@@ -35,7 +35,7 @@ object RoomStatus {
     participants: js.Array[RoomParticipant] = null,
     roomId: String = null,
     status: String = null,
-    statusVersion: Int | Double = null
+    statusVersion: js.UndefOr[Double] = js.undefined
   ): RoomStatus = {
     val __obj = js.Dynamic.literal()
     if (autoMatchingStatus != null) __obj.updateDynamic("autoMatchingStatus")(autoMatchingStatus.asInstanceOf[js.Any])
@@ -43,7 +43,7 @@ object RoomStatus {
     if (participants != null) __obj.updateDynamic("participants")(participants.asInstanceOf[js.Any])
     if (roomId != null) __obj.updateDynamic("roomId")(roomId.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusVersion != null) __obj.updateDynamic("statusVersion")(statusVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusVersion)) __obj.updateDynamic("statusVersion")(statusVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomStatus]
   }
 }

@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.RangeFontData
 import typings.officeJsPreview.Excel.Interfaces.RangeFontLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.RangeFontUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.DoubleAccountant
 import typings.officeJsPreview.officeJsPreviewStrings.None
 import typings.officeJsPreview.officeJsPreviewStrings.Single
@@ -20,9 +20,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.RangeFont")
 @js.native
-class RangeFont () extends ClientObject {
+trait RangeFont extends ClientObject {
   /**
     *
     * Represents the bold status of font.
@@ -32,7 +31,7 @@ class RangeFont () extends ClientObject {
   var bold: Boolean = js.native
   /**
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -42,14 +41,14 @@ class RangeFont () extends ClientObject {
   var context_RangeFont: RequestContext = js.native
   /**
     *
-    * Represents the italic status of the font.
+    * Specifies the italic status of the font.
     *
     * [Api set: ExcelApi 1.1]
     */
   var italic: Boolean = js.native
   /**
     *
-    * Font name (e.g. "Calibri")
+    * Font name (e.g., "Calibri")
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -63,14 +62,14 @@ class RangeFont () extends ClientObject {
   var size: Double = js.native
   /**
     *
-    * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
+    * Specifies the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
     *
     * [Api set: ExcelApi 1.9]
     */
   var strikethrough: Boolean = js.native
   /**
     *
-    * Represents the Subscript status of font.
+    * Specifies the Subscript status of font.
     Returns True if all the fonts of the range are Subscript.
     Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
     Returns Null otherwise.
@@ -80,7 +79,7 @@ class RangeFont () extends ClientObject {
   var subscript: Boolean = js.native
   /**
     *
-    * Represents the Superscript status of font.
+    * Specifies the Superscript status of font.
     Returns True if all the fonts of the range are Superscript.
     Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
     Returns Null otherwise.
@@ -90,7 +89,7 @@ class RangeFont () extends ClientObject {
   var superscript: Boolean = js.native
   /**
     *
-    * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    * Specifies a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
     A null value indicates that the entire range doesn't have uniform font tintAndShade setting.
     *
     * [Api set: ExcelApi 1.9]
@@ -110,7 +109,7 @@ class RangeFont () extends ClientObject {
     */
   def load(): RangeFont = js.native
   def load(options: RangeFontLoadOptions): RangeFont = js.native
-  def load(propertyNamesAndPaths: AnonExpand): RangeFont = js.native
+  def load(propertyNamesAndPaths: Expand): RangeFont = js.native
   def load(propertyNames: String): RangeFont = js.native
   def load(propertyNames: js.Array[String]): RangeFont = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

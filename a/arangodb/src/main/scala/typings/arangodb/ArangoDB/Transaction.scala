@@ -21,20 +21,20 @@ object Transaction {
   def apply(
     action: js.Object => Unit | String,
     collections: TransactionCollections | js.Array[String],
-    intermediateCommitCount: Int | Double = null,
-    intermediateCommitSize: Int | Double = null,
-    lockTimeout: Int | Double = null,
-    maxTransactionsSize: Int | Double = null,
+    intermediateCommitCount: js.UndefOr[Double] = js.undefined,
+    intermediateCommitSize: js.UndefOr[Double] = js.undefined,
+    lockTimeout: js.UndefOr[Double] = js.undefined,
+    maxTransactionsSize: js.UndefOr[Double] = js.undefined,
     params: js.Object = null,
     waitForSync: js.UndefOr[Boolean] = js.undefined
   ): Transaction = {
     val __obj = js.Dynamic.literal(action = js.Any.fromFunction1(action), collections = collections.asInstanceOf[js.Any])
-    if (intermediateCommitCount != null) __obj.updateDynamic("intermediateCommitCount")(intermediateCommitCount.asInstanceOf[js.Any])
-    if (intermediateCommitSize != null) __obj.updateDynamic("intermediateCommitSize")(intermediateCommitSize.asInstanceOf[js.Any])
-    if (lockTimeout != null) __obj.updateDynamic("lockTimeout")(lockTimeout.asInstanceOf[js.Any])
-    if (maxTransactionsSize != null) __obj.updateDynamic("maxTransactionsSize")(maxTransactionsSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(intermediateCommitCount)) __obj.updateDynamic("intermediateCommitCount")(intermediateCommitCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intermediateCommitSize)) __obj.updateDynamic("intermediateCommitSize")(intermediateCommitSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockTimeout)) __obj.updateDynamic("lockTimeout")(lockTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTransactionsSize)) __obj.updateDynamic("maxTransactionsSize")(maxTransactionsSize.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }
 }

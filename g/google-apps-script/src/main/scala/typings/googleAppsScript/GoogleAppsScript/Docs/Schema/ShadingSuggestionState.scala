@@ -12,7 +12,7 @@ object ShadingSuggestionState {
   @scala.inline
   def apply(backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined): ShadingSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backgroundColorSuggested)) __obj.updateDynamic("backgroundColorSuggested")(backgroundColorSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundColorSuggested)) __obj.updateDynamic("backgroundColorSuggested")(backgroundColorSuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadingSuggestionState]
   }
 }

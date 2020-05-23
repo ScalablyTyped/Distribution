@@ -17,14 +17,14 @@ object IHingeConstraintOptions {
   def apply(
     axisA: Vec3 = null,
     axisB: Vec3 = null,
-    maxForce: Int | Double = null,
+    maxForce: js.UndefOr[Double] = js.undefined,
     pivotA: Vec3 = null,
     pivotB: Vec3 = null
   ): IHingeConstraintOptions = {
     val __obj = js.Dynamic.literal()
     if (axisA != null) __obj.updateDynamic("axisA")(axisA.asInstanceOf[js.Any])
     if (axisB != null) __obj.updateDynamic("axisB")(axisB.asInstanceOf[js.Any])
-    if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxForce)) __obj.updateDynamic("maxForce")(maxForce.get.asInstanceOf[js.Any])
     if (pivotA != null) __obj.updateDynamic("pivotA")(pivotA.asInstanceOf[js.Any])
     if (pivotB != null) __obj.updateDynamic("pivotB")(pivotB.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHingeConstraintOptions]

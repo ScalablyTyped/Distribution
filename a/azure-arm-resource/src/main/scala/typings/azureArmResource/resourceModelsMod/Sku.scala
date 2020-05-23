@@ -34,7 +34,7 @@ trait Sku extends js.Object {
 object Sku {
   @scala.inline
   def apply(
-    capacity: Int | Double = null,
+    capacity: js.UndefOr[Double] = js.undefined,
     family: String = null,
     model: String = null,
     name: String = null,
@@ -42,7 +42,7 @@ object Sku {
     tier: String = null
   ): Sku = {
     val __obj = js.Dynamic.literal()
-    if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(capacity)) __obj.updateDynamic("capacity")(capacity.get.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

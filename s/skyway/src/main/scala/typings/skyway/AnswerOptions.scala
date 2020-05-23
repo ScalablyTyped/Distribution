@@ -14,15 +14,15 @@ trait AnswerOptions extends js.Object {
 object AnswerOptions {
   @scala.inline
   def apply(
-    audioBandwidth: Int | Double = null,
+    audioBandwidth: js.UndefOr[Double] = js.undefined,
     audioCodec: String = null,
-    videoBandwidth: Int | Double = null,
+    videoBandwidth: js.UndefOr[Double] = js.undefined,
     videoCodec: String = null
   ): AnswerOptions = {
     val __obj = js.Dynamic.literal()
-    if (audioBandwidth != null) __obj.updateDynamic("audioBandwidth")(audioBandwidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioBandwidth)) __obj.updateDynamic("audioBandwidth")(audioBandwidth.get.asInstanceOf[js.Any])
     if (audioCodec != null) __obj.updateDynamic("audioCodec")(audioCodec.asInstanceOf[js.Any])
-    if (videoBandwidth != null) __obj.updateDynamic("videoBandwidth")(videoBandwidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoBandwidth)) __obj.updateDynamic("videoBandwidth")(videoBandwidth.get.asInstanceOf[js.Any])
     if (videoCodec != null) __obj.updateDynamic("videoCodec")(videoCodec.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerOptions]
   }

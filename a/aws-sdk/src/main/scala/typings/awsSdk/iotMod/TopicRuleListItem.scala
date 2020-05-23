@@ -33,14 +33,14 @@ object TopicRuleListItem {
   def apply(
     createdAt: CreatedAtDate = null,
     ruleArn: RuleArn = null,
-    ruleDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ruleDisabled: js.UndefOr[IsDisabled] = js.undefined,
     ruleName: RuleName = null,
     topicPattern: TopicPattern = null
   ): TopicRuleListItem = {
     val __obj = js.Dynamic.literal()
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
     if (ruleArn != null) __obj.updateDynamic("ruleArn")(ruleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(ruleDisabled)) __obj.updateDynamic("ruleDisabled")(ruleDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruleDisabled)) __obj.updateDynamic("ruleDisabled")(ruleDisabled.get.asInstanceOf[js.Any])
     if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName.asInstanceOf[js.Any])
     if (topicPattern != null) __obj.updateDynamic("topicPattern")(topicPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleListItem]

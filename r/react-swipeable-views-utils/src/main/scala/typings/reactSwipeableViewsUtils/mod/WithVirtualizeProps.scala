@@ -26,16 +26,16 @@ object WithVirtualizeProps {
     slideRenderer: /* render */ SlideRenderProps => ReactNode,
     children: ReactNode = null,
     onTransitionEnd: () => Unit = null,
-    overscanSlideAfter: Int | Double = null,
-    overscanSlideBefore: Int | Double = null,
-    slideCount: Int | Double = null
+    overscanSlideAfter: js.UndefOr[Double] = js.undefined,
+    overscanSlideBefore: js.UndefOr[Double] = js.undefined,
+    slideCount: js.UndefOr[Double] = js.undefined
   ): WithVirtualizeProps = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex), slideRenderer = js.Any.fromFunction1(slideRenderer))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction0(onTransitionEnd))
-    if (overscanSlideAfter != null) __obj.updateDynamic("overscanSlideAfter")(overscanSlideAfter.asInstanceOf[js.Any])
-    if (overscanSlideBefore != null) __obj.updateDynamic("overscanSlideBefore")(overscanSlideBefore.asInstanceOf[js.Any])
-    if (slideCount != null) __obj.updateDynamic("slideCount")(slideCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(overscanSlideAfter)) __obj.updateDynamic("overscanSlideAfter")(overscanSlideAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overscanSlideBefore)) __obj.updateDynamic("overscanSlideBefore")(overscanSlideBefore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideCount)) __obj.updateDynamic("slideCount")(slideCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithVirtualizeProps]
   }
 }

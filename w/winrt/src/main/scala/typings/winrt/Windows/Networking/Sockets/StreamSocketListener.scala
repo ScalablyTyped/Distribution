@@ -6,21 +6,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Sockets.StreamSocketListener")
-@js.native
-class StreamSocketListener () extends IStreamSocketListener {
-  /* CompleteClass */
-  override var control: StreamSocketListenerControl = js.native
-  /* CompleteClass */
-  override var information: StreamSocketListenerInformation = js.native
-  /* CompleteClass */
-  override var onconnectionreceived: js.Any = js.native
-  /* CompleteClass */
-  override def bindEndpointAsync(localHostName: HostName, localServiceName: String): IAsyncAction = js.native
-  /* CompleteClass */
-  override def bindServiceNameAsync(localServiceName: String): IAsyncAction = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  def dispose(): Unit = js.native
+trait StreamSocketListener extends IStreamSocketListener {
+  def dispose(): Unit
+}
+
+object StreamSocketListener {
+  @scala.inline
+  def apply(
+    bindEndpointAsync: (HostName, String) => IAsyncAction,
+    bindServiceNameAsync: String => IAsyncAction,
+    close: () => Unit,
+    control: StreamSocketListenerControl,
+    dispose: () => Unit,
+    information: StreamSocketListenerInformation,
+    onconnectionreceived: js.Any
+  ): StreamSocketListener = {
+    val __obj = js.Dynamic.literal(bindEndpointAsync = js.Any.fromFunction2(bindEndpointAsync), bindServiceNameAsync = js.Any.fromFunction1(bindServiceNameAsync), close = js.Any.fromFunction0(close), control = control.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), information = information.asInstanceOf[js.Any], onconnectionreceived = onconnectionreceived.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StreamSocketListener]
+  }
 }
 

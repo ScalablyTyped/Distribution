@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.protobufjs.mod.AnyNestedObject because Already inherited */ trait IType extends INamespace {
   /** Extension ranges */
   var extensions: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
@@ -32,7 +32,7 @@ object IType {
   ): IType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.get.asInstanceOf[js.Any])
     if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
     if (oneofs != null) __obj.updateDynamic("oneofs")(oneofs.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

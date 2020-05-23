@@ -1,20 +1,20 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonCancelComponentData
-import typings.devextreme.AnonColorMode
-import typings.devextreme.AnonComponentDxSankey
-import typings.devextreme.AnonComponentElementEventModel
-import typings.devextreme.AnonComponentTElementDxElementModelAny
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonEventModelTarget
-import typings.devextreme.AnonFormatModel
-import typings.devextreme.AnonHorizontalOffset
-import typings.devextreme.AnonKeepLabels
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
-import typings.devextreme.AnonPadding
-import typings.devextreme.AnonTargetAny
-import typings.devextreme.AnonTargetDxSankeyNode
+import typings.devextreme.anon.CancelComponentData
+import typings.devextreme.anon.ColorMode
+import typings.devextreme.anon.ComponentDxSankey
+import typings.devextreme.anon.ComponentElementEventModel
+import typings.devextreme.anon.ComponentTElementDxElementModelAny
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.EventModelTarget
+import typings.devextreme.anon.FormatModel
+import typings.devextreme.anon.HorizontalOffset
+import typings.devextreme.anon.KeepLabels
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.Padding
+import typings.devextreme.anon.TargetAny
+import typings.devextreme.anon.TargetDxSankeyNode
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation._
 
 trait dxSankeyOptions extends BaseWidgetOptions[dxSankey] {
   /** @name dxSankey.Options.adaptiveLayout */
-  var adaptiveLayout: js.UndefOr[AnonKeepLabels] = js.undefined
+  var adaptiveLayout: js.UndefOr[KeepLabels] = js.undefined
   /** @name dxSankey.Options.alignment */
   var alignment: js.UndefOr[bottom | center | top | (js.Array[bottom | center | top])] = js.undefined
   /** @name dxSankey.Options.dataSource */
@@ -67,19 +67,19 @@ trait dxSankeyOptions extends BaseWidgetOptions[dxSankey] {
   /** @name dxSankey.Options.hoverEnabled */
   var hoverEnabled: js.UndefOr[Boolean] = js.undefined
   /** @name dxSankey.Options.label */
-  var label: js.UndefOr[AnonHorizontalOffset] = js.undefined
+  var label: js.UndefOr[HorizontalOffset] = js.undefined
   /** @name dxSankey.Options.link */
-  var link: js.UndefOr[AnonColorMode] = js.undefined
+  var link: js.UndefOr[ColorMode] = js.undefined
   /** @name dxSankey.Options.node */
-  var node: js.UndefOr[AnonPadding] = js.undefined
+  var node: js.UndefOr[Padding] = js.undefined
   /** @name dxSankey.Options.onLinkClick */
-  var onLinkClick: js.UndefOr[(js.Function1[/* e */ AnonEventModelTarget, _]) | String] = js.undefined
+  var onLinkClick: js.UndefOr[(js.Function1[/* e */ EventModelTarget, _]) | String] = js.undefined
   /** @name dxSankey.Options.onLinkHoverChanged */
-  var onLinkHoverChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxSankey, _]] = js.undefined
+  var onLinkHoverChanged: js.UndefOr[js.Function1[/* e */ ComponentDxSankey, _]] = js.undefined
   /** @name dxSankey.Options.onNodeClick */
-  var onNodeClick: js.UndefOr[(js.Function1[/* e */ AnonComponentElementEventModel, _]) | String] = js.undefined
+  var onNodeClick: js.UndefOr[(js.Function1[/* e */ ComponentElementEventModel, _]) | String] = js.undefined
   /** @name dxSankey.Options.onNodeHoverChanged */
-  var onNodeHoverChanged: js.UndefOr[js.Function1[/* e */ AnonTargetDxSankeyNode, _]] = js.undefined
+  var onNodeHoverChanged: js.UndefOr[js.Function1[/* e */ TargetDxSankeyNode, _]] = js.undefined
   /** @name dxSankey.Options.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
@@ -102,7 +102,7 @@ trait dxSankeyOptions extends BaseWidgetOptions[dxSankey] {
 object dxSankeyOptions {
   @scala.inline
   def apply(
-    adaptiveLayout: AnonKeepLabels = null,
+    adaptiveLayout: KeepLabels = null,
     alignment: bottom | center | top | (js.Array[bottom | center | top]) = null,
     bindingOptions: js.Any = null,
     dataSource: js.Array[_] | DataSource | DataSourceOptions | String = null,
@@ -111,23 +111,23 @@ object dxSankeyOptions {
     export: BaseWidgetExport = null,
     height: Double | String | (js.Function0[Double | String]) = null,
     hoverEnabled: js.UndefOr[Boolean] = js.undefined,
-    label: AnonHorizontalOffset = null,
-    link: AnonColorMode = null,
+    label: HorizontalOffset = null,
+    link: ColorMode = null,
     loadingIndicator: BaseWidgetLoadingIndicator = null,
     margin: BaseWidgetMargin = null,
-    node: AnonPadding = null,
-    onDisposing: /* e */ AnonModel[dxSankey] => _ = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[dxSankey] => _ = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[dxSankey] => _ = null,
-    onExporting: /* e */ AnonFormatModel[dxSankey] => _ = null,
-    onFileSaving: /* e */ AnonCancelComponentData[dxSankey] => _ = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[dxSankey] => _ = null,
-    onInitialized: /* e */ AnonElement[dxSankey] => _ = null,
-    onLinkClick: (js.Function1[/* e */ AnonEventModelTarget, _]) | String = null,
-    onLinkHoverChanged: /* e */ AnonComponentDxSankey => _ = null,
-    onNodeClick: (js.Function1[/* e */ AnonComponentElementEventModel, _]) | String = null,
-    onNodeHoverChanged: /* e */ AnonTargetDxSankeyNode => _ = null,
-    onOptionChanged: /* e */ AnonName[dxSankey] => _ = null,
+    node: Padding = null,
+    onDisposing: /* e */ Model[dxSankey] => _ = null,
+    onDrawn: /* e */ ComponentTElementDxElementModelAny[dxSankey] => _ = null,
+    onExported: /* e */ ComponentTElementDxElementModelAny[dxSankey] => _ = null,
+    onExporting: /* e */ FormatModel[dxSankey] => _ = null,
+    onFileSaving: /* e */ CancelComponentData[dxSankey] => _ = null,
+    onIncidentOccurred: /* e */ TargetAny[dxSankey] => _ = null,
+    onInitialized: /* e */ Element[dxSankey] => _ = null,
+    onLinkClick: (js.Function1[/* e */ EventModelTarget, _]) | String = null,
+    onLinkHoverChanged: /* e */ ComponentDxSankey => _ = null,
+    onNodeClick: (js.Function1[/* e */ ComponentElementEventModel, _]) | String = null,
+    onNodeHoverChanged: /* e */ TargetDxSankeyNode => _ = null,
+    onOptionChanged: /* e */ Name[dxSankey] => _ = null,
     palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
     paletteExtensionMode: alternate | blend | extrapolate = null,
     pathModified: js.UndefOr[Boolean] = js.undefined,
@@ -148,11 +148,11 @@ object dxSankeyOptions {
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverEnabled)) __obj.updateDynamic("hoverEnabled")(hoverEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverEnabled)) __obj.updateDynamic("hoverEnabled")(hoverEnabled.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
@@ -172,9 +172,9 @@ object dxSankeyOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sortData != null) __obj.updateDynamic("sortData")(sortData.asInstanceOf[js.Any])
     if (sourceField != null) __obj.updateDynamic("sourceField")(sourceField.asInstanceOf[js.Any])

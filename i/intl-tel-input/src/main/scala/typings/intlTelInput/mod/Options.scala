@@ -166,22 +166,22 @@ object Options {
     utilsScript: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDropdown)) __obj.updateDynamic("allowDropdown")(allowDropdown.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHideDialCode)) __obj.updateDynamic("autoHideDialCode")(autoHideDialCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDropdown)) __obj.updateDynamic("allowDropdown")(allowDropdown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideDialCode)) __obj.updateDynamic("autoHideDialCode")(autoHideDialCode.get.asInstanceOf[js.Any])
     if (autoPlaceholder != null) __obj.updateDynamic("autoPlaceholder")(autoPlaceholder.asInstanceOf[js.Any])
     if (customPlaceholder != null) __obj.updateDynamic("customPlaceholder")(js.Any.fromFunction2(customPlaceholder))
     if (dropdownContainer != null) __obj.updateDynamic("dropdownContainer")(dropdownContainer.asInstanceOf[js.Any])
     if (excludeCountries != null) __obj.updateDynamic("excludeCountries")(excludeCountries.asInstanceOf[js.Any])
-    if (!js.isUndefined(formatOnDisplay)) __obj.updateDynamic("formatOnDisplay")(formatOnDisplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatOnDisplay)) __obj.updateDynamic("formatOnDisplay")(formatOnDisplay.get.asInstanceOf[js.Any])
     if (geoIpLookup != null) __obj.updateDynamic("geoIpLookup")(js.Any.fromFunction1(geoIpLookup))
     if (hiddenInput != null) __obj.updateDynamic("hiddenInput")(hiddenInput.asInstanceOf[js.Any])
     if (initialCountry != null) __obj.updateDynamic("initialCountry")(initialCountry.asInstanceOf[js.Any])
     if (localizedCountries != null) __obj.updateDynamic("localizedCountries")(localizedCountries.asInstanceOf[js.Any])
-    if (!js.isUndefined(nationalMode)) __obj.updateDynamic("nationalMode")(nationalMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(nationalMode)) __obj.updateDynamic("nationalMode")(nationalMode.get.asInstanceOf[js.Any])
     if (onlyCountries != null) __obj.updateDynamic("onlyCountries")(onlyCountries.asInstanceOf[js.Any])
     if (placeholderNumberType != null) __obj.updateDynamic("placeholderNumberType")(placeholderNumberType.asInstanceOf[js.Any])
     if (preferredCountries != null) __obj.updateDynamic("preferredCountries")(preferredCountries.asInstanceOf[js.Any])
-    if (!js.isUndefined(separateDialCode)) __obj.updateDynamic("separateDialCode")(separateDialCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(separateDialCode)) __obj.updateDynamic("separateDialCode")(separateDialCode.get.asInstanceOf[js.Any])
     if (utilsScript != null) __obj.updateDynamic("utilsScript")(utilsScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -8,78 +8,78 @@ import scala.scalajs.js.annotation._
 
 trait IHashMap extends IObservable {
   /** [Method] Adds an item to the collection
-  		* @param key String/Object The key to associate with the item, or the new item. If a getKey implementation was specified for this HashMap, or if the key of the stored items is in a property called id, the HashMap will be able to derive the key for the new item. In this case just pass the new item in this parameter.
-  		* @param o Object The item to add.
-  		* @returns Object The item added.
-  		*/
+    * @param key String/Object The key to associate with the item, or the new item. If a getKey implementation was specified for this HashMap, or if the key of the stored items is in a property called id, the HashMap will be able to derive the key for the new item. In this case just pass the new item in this parameter.
+    * @param o Object The item to add.
+    * @returns Object The item added.
+    */
   var add: js.UndefOr[js.Function2[/* key */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Removes all items from the hash
-  		* @param initial Object
-  		* @returns Ext.util.HashMap this
-  		*/
+    * @param initial Object
+    * @returns Ext.util.HashMap this
+    */
   var clear: js.UndefOr[js.Function1[/* initial */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Method] Performs a shallow copy on this hash
-  		* @returns Ext.util.HashMap The new hash object.
-  		*/
+    * @returns Ext.util.HashMap The new hash object.
+    */
   @JSName("clone")
   var clone_FIHashMap: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Checks whether a value exists in the hash
-  		* @param value Object The value to check for.
-  		* @returns Boolean True if the value exists in the dictionary.
-  		*/
+    * @param value Object The value to check for.
+    * @returns Boolean True if the value exists in the dictionary.
+    */
   var contains: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Method] Checks whether a key exists in the hash
-  		* @param key String The key to check for.
-  		* @returns Boolean True if they key exists in the hash.
-  		*/
+    * @param key String The key to check for.
+    * @returns Boolean True if they key exists in the hash.
+    */
   var containsKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Executes the specified function once for each item in the hash
-  		* @param fn Function The function to execute.
-  		* @param scope Object The scope to execute in. Defaults to this.
-  		* @returns Ext.util.HashMap this
-  		*/
+    * @param fn Function The function to execute.
+    * @param scope Object The scope to execute in. Defaults to this.
+    * @returns Ext.util.HashMap this
+    */
   var each: js.UndefOr[
     js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], this.type]
   ] = js.undefined
   /** [Method] Retrieves an item with a particular key
-  		* @param key String The key to lookup.
-  		* @returns Object The value at that key. If it doesn't exist, undefined is returned.
-  		*/
+    * @param key String The key to lookup.
+    * @returns Object The value at that key. If it doesn't exist, undefined is returned.
+    */
   var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Gets the number of items in the hash
-  		* @returns Number The number of items in the hash.
-  		*/
+    * @returns Number The number of items in the hash.
+    */
   var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Extracts the key from an object
-  		* @param o Object The object to get the key from
-  		* @returns String The key to use.
-  		*/
+    * @param o Object The object to get the key from
+    * @returns String The key to use.
+    */
   var getKey: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], String]] = js.undefined
   /** [Method] Return all of the keys in the hash
-  		* @returns Array An array of keys.
-  		*/
+    * @returns Array An array of keys.
+    */
   var getKeys: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Return all of the values in the hash
-  		* @returns Array An array of values.
-  		*/
+    * @returns Array An array of values.
+    */
   var getValues: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Config Option] (Function) */
   var keyFn: js.UndefOr[js.Any] = js.undefined
   /** [Method] Remove an item from the hash
-  		* @param o Object The value of the item to remove.
-  		* @returns Boolean True if the item was successfully removed.
-  		*/
+    * @param o Object The value of the item to remove.
+    * @returns Boolean True if the item was successfully removed.
+    */
   var remove: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Method] Remove an item from the hash
-  		* @param key String The key to remove.
-  		* @returns Boolean True if the item was successfully removed.
-  		*/
+    * @param key String The key to remove.
+    * @returns Boolean True if the item was successfully removed.
+    */
   var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Method] Replaces an item in the hash
-  		* @param key String The key of the item.
-  		* @param value Object The new value for the item.
-  		* @returns Object The new value of the item.
-  		*/
+    * @param key String The key of the item.
+    * @param value Object The new value for the item.
+    * @returns Object The new value of the item.
+    */
   var replace: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], _]] = js.undefined
 }
 
@@ -173,7 +173,7 @@ object IHashMap {
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (keyFn != null) __obj.updateDynamic("keyFn")(keyFn.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -190,7 +190,7 @@ object IHashMap {
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

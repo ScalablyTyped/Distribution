@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.DocumentWindow")
 @js.native
-class DocumentWindow protected () extends js.Object {
+trait DocumentWindow extends js.Object {
   val Active: MsoTriState = js.native
   val ActivePane: Pane = js.native
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native

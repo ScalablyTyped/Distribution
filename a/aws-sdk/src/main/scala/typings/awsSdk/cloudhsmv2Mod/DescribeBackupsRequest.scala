@@ -28,15 +28,15 @@ object DescribeBackupsRequest {
   @scala.inline
   def apply(
     Filters: Filters = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxSize] = js.undefined,
     NextToken: NextToken = null,
-    SortAscending: js.UndefOr[scala.Boolean] = js.undefined
+    SortAscending: js.UndefOr[Boolean] = js.undefined
   ): DescribeBackupsRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(SortAscending)) __obj.updateDynamic("SortAscending")(SortAscending.asInstanceOf[js.Any])
+    if (!js.isUndefined(SortAscending)) __obj.updateDynamic("SortAscending")(SortAscending.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBackupsRequest]
   }
 }

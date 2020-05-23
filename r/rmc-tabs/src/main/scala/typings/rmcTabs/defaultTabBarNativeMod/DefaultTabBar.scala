@@ -1,7 +1,7 @@
 package typings.rmcTabs.defaultTabBarNativeMod
 
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.ScrollView
 import typings.rmcTabs.modelsMod.Models.TabData
 import scala.scalajs.js

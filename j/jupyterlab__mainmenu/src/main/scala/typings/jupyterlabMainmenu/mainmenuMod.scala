@@ -19,7 +19,7 @@ import typings.luminoWidgets.widgetMod.Widget
 import typings.luminoWidgets.widgetMod.Widget.ChildMessage
 import typings.luminoWidgets.widgetMod.Widget.Flag
 import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -192,7 +192,7 @@ object mainmenuMod extends js.Object {
       * should not be called directly by user code.
       */
     /* InferMemberOverrides */
-    override def handleEvent(event: Event_): Unit = js.native
+    override def handleEvent(event: Event): Unit = js.native
     /**
       * Test whether the widget's DOM node has the given class name.
       *

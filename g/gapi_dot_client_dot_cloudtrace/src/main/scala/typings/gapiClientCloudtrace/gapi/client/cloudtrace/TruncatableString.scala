@@ -23,9 +23,9 @@ trait TruncatableString extends js.Object {
 
 object TruncatableString {
   @scala.inline
-  def apply(truncatedByteCount: Int | Double = null, value: String = null): TruncatableString = {
+  def apply(truncatedByteCount: js.UndefOr[Double] = js.undefined, value: String = null): TruncatableString = {
     val __obj = js.Dynamic.literal()
-    if (truncatedByteCount != null) __obj.updateDynamic("truncatedByteCount")(truncatedByteCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncatedByteCount)) __obj.updateDynamic("truncatedByteCount")(truncatedByteCount.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TruncatableString]
   }

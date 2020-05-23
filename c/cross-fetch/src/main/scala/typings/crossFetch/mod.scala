@@ -2,7 +2,10 @@ package typings.crossFetch
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.TopLevel
+import typings.crossFetch.anon.Error
+import typings.crossFetch.anon.Instantiable
+import typings.crossFetch.anon.InstantiableHeaders
 import typings.std.AbortSignal
 import typings.std.ArrayBuffer
 import typings.std.Blob
@@ -170,27 +173,17 @@ object mod extends js.Object {
   
   @js.native
   object Headers
-    extends Instantiable0[typings.std.Headers]
-       with Instantiable1[/* init */ HeadersInit, typings.std.Headers]
+    extends TopLevel[InstantiableHeaders with Instantiable0[typings.std.global.Headers]]
   
   @js.native
   object Request
-    extends Instantiable1[/* input */ RequestInfo, typings.std.Request]
-       with Instantiable2[/* input */ RequestInfo, /* init */ RequestInit, typings.std.Request]
+    extends TopLevel[
+          Instantiable with (Instantiable1[/* input */ RequestInfo, typings.std.global.Request])
+        ]
   
   @js.native
   object Response
-    extends Instantiable0[typings.std.Response]
-       with Instantiable1[/* body */ BodyInit, typings.std.Response]
-       with Instantiable2[
-          (/* body */ BodyInit) | (/* body */ Null), 
-          /* init */ ResponseInit, 
-          typings.std.Response
-        ] {
-    def error(): typings.std.Response = js.native
-    def redirect(url: String): typings.std.Response = js.native
-    def redirect(url: String, status: Double): typings.std.Response = js.native
-  }
+    extends TopLevel[Error with Instantiable0[typings.std.global.Response]]
   
   @js.native
   object default extends js.Object {

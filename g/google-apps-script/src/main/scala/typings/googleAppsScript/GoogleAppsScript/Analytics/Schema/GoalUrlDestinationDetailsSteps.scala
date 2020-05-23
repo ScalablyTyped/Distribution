@@ -12,10 +12,10 @@ trait GoalUrlDestinationDetailsSteps extends js.Object {
 
 object GoalUrlDestinationDetailsSteps {
   @scala.inline
-  def apply(name: String = null, number: Int | Double = null, url: String = null): GoalUrlDestinationDetailsSteps = {
+  def apply(name: String = null, number: js.UndefOr[Double] = js.undefined, url: String = null): GoalUrlDestinationDetailsSteps = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoalUrlDestinationDetailsSteps]
   }

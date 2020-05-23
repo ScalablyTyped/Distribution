@@ -5,25 +5,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AI.RemoteDependencyData")
-@js.native
-class RemoteDependencyData () extends Domain {
-  var async: Boolean = js.native
-  var commandName: String = js.native
-  var count: Double = js.native
-  var dependencyKind: DependencyKind = js.native
-  var dependencySource: DependencySourceType = js.native
-  var dependencyTypeName: String = js.native
-  var id: String = js.native
-  var kind: DataPointType = js.native
-  var max: Double = js.native
-  var min: Double = js.native
-  var name: String = js.native
-  var properties: js.Any = js.native
-  var resultCode: String = js.native
-  var stdDev: Double = js.native
-  var success: Boolean = js.native
-  var value: Double = js.native
-  var ver: Double = js.native
+trait RemoteDependencyData extends Domain {
+  var async: Boolean
+  var commandName: String
+  var count: Double
+  var dependencyKind: DependencyKind
+  var dependencySource: DependencySourceType
+  var dependencyTypeName: String
+  var id: String
+  var kind: DataPointType
+  var max: Double
+  var min: Double
+  var name: String
+  var properties: js.Any
+  var resultCode: String
+  var stdDev: Double
+  var success: Boolean
+  var value: Double
+  var ver: Double
+}
+
+object RemoteDependencyData {
+  @scala.inline
+  def apply(
+    async: Boolean,
+    commandName: String,
+    count: Double,
+    dependencyKind: DependencyKind,
+    dependencySource: DependencySourceType,
+    dependencyTypeName: String,
+    id: String,
+    kind: DataPointType,
+    max: Double,
+    min: Double,
+    name: String,
+    properties: js.Any,
+    resultCode: String,
+    stdDev: Double,
+    success: Boolean,
+    value: Double,
+    ver: Double
+  ): RemoteDependencyData = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], commandName = commandName.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], dependencyKind = dependencyKind.asInstanceOf[js.Any], dependencySource = dependencySource.asInstanceOf[js.Any], dependencyTypeName = dependencyTypeName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any], stdDev = stdDev.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], ver = ver.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RemoteDependencyData]
+  }
 }
 

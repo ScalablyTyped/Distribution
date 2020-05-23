@@ -1,5 +1,6 @@
 package typings.agGrid
 
+import typings.agGrid.anon.ForceRefresh
 import typings.agGrid.beansMod.Beans
 import typings.agGrid.columnMod.Column
 import typings.agGrid.componentMod.Component
@@ -8,7 +9,7 @@ import typings.agGrid.iCellEditorMod.ICellEditorComp
 import typings.agGrid.iCellRendererMod.ICellRendererComp
 import typings.agGrid.rowCompMod.RowComp
 import typings.agGrid.rowNodeMod.RowNode
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -82,7 +83,7 @@ object cellCompMod extends js.Object {
     /* private */ def createEvent(domEvent: js.Any, eventType: js.Any): js.Any = js.native
     /* private */ def createGridCellVo(): js.Any = js.native
     def detach(): Unit = js.native
-    def dispatchCellContextMenuEvent(event: Event_): Unit = js.native
+    def dispatchCellContextMenuEvent(event: Event): Unit = js.native
     /* private */ def doIeFocusHack(): js.Any = js.native
     def doesUserWantToCancelKeyboardEvent(event: KeyboardEvent): Boolean = js.native
     def flashCell(): Unit = js.native
@@ -155,7 +156,7 @@ object cellCompMod extends js.Object {
     /* private */ def processStylesFromColDef(): js.Any = js.native
     /* private */ def putDataIntoCellAfterRefresh(): js.Any = js.native
     def refreshCell(): Unit = js.native
-    def refreshCell(params: AnonForceRefresh): Unit = js.native
+    def refreshCell(params: ForceRefresh): Unit = js.native
     /* private */ def refreshToolTip(): js.Any = js.native
     /* private */ def replaceContentsAfterRefresh(): js.Any = js.native
     def setFocusInOnEditor(): Unit = js.native

@@ -1,33 +1,12 @@
 package typings.openui5.sap.ui.model
 
-import typings.openui5.TypeofFilterType
+import typings.openui5.anon.TypeofFilterType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.ListBinding")
 @js.native
-class ListBinding protected () extends Binding {
-  /**
-    * Constructor for ListBinding
-    * @param oModel undefined
-    * @param sPath undefined
-    * @param oContext undefined
-    * @param aSorters initial sort order (can be either a sorter or an array of sorters)
-    * @param aFilters predefined filter/s (can be either a filter or an array of filters)
-    * @param mParameters undefined
-    */
-  def this(oModel: Model, sPath: String, oContext: Context) = this()
-  def this(oModel: Model, sPath: String, oContext: Context, aSorters: js.Array[_]) = this()
-  def this(oModel: Model, sPath: String, oContext: Context, aSorters: js.Array[_], aFilters: js.Array[_]) = this()
-  def this(
-    oModel: Model,
-    sPath: String,
-    oContext: Context,
-    aSorters: js.Array[_],
-    aFilters: js.Array[_],
-    mParameters: js.Any
-  ) = this()
+trait ListBinding extends Binding {
   /**
     * Attach event-handler <code>fnFunction</code> to the 'filter' event of this
     * <code>sap.ui.model.ListBinding</code>.<br/>

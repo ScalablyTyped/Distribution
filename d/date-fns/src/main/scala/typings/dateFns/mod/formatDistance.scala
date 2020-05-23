@@ -1,6 +1,6 @@
 package typings.dateFns.mod
 
-import typings.dateFns.AnonAddSuffix
+import typings.dateFns.anon.AddSuffix
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatDistance extends js.Object {
   def apply(date: Double, baseDate: Double): String = js.native
-  def apply(date: Double, baseDate: Double, options: AnonAddSuffix): String = js.native
+  def apply(date: Double, baseDate: Double, options: AddSuffix): String = js.native
   def apply(date: Double, baseDate: Date): String = js.native
-  def apply(date: Double, baseDate: Date, options: AnonAddSuffix): String = js.native
+  def apply(date: Double, baseDate: Date, options: AddSuffix): String = js.native
   def apply(date: Date, baseDate: Double): String = js.native
-  def apply(date: Date, baseDate: Double, options: AnonAddSuffix): String = js.native
+  def apply(date: Date, baseDate: Double, options: AddSuffix): String = js.native
   def apply(date: Date, baseDate: Date): String = js.native
-  def apply(date: Date, baseDate: Date, options: AnonAddSuffix): String = js.native
+  def apply(date: Date, baseDate: Date, options: AddSuffix): String = js.native
 }
 

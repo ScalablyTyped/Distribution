@@ -1,13 +1,13 @@
 package typings.uiGrid.mod
 
 import typings.std.RegExp
-import typings.uiGrid.AnonALL
-import typings.uiGrid.AnonALT
-import typings.uiGrid.AnonALWAYS
-import typings.uiGrid.AnonAvg
-import typings.uiGrid.AnonCOLUMNHEADERCLICK
-import typings.uiGrid.AnonCONTAINS
-import typings.uiGrid.AnonDOWN
+import typings.uiGrid.anon.ALL
+import typings.uiGrid.anon.ALT
+import typings.uiGrid.anon.ALWAYS
+import typings.uiGrid.anon.Avg
+import typings.uiGrid.anon.COLUMNHEADERCLICK
+import typings.uiGrid.anon.CONTAINS
+import typings.uiGrid.anon.DOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,13 +30,13 @@ trait IUiGridConstants extends js.Object {
   var MODEL_COL_FIELD: RegExp
   var TEMPLATE_REGEXP: RegExp
   var TOOLTIP: RegExp
-  var aggregationTypes: AnonAvg
-  var dataChange: AnonALL
-  var events: AnonCOLUMNHEADERCLICK
-  var filter: AnonCONTAINS
-  var keymap: AnonALT
-  var scrollDirection: AnonDOWN
-  var scrollbars: AnonALWAYS
+  var aggregationTypes: Avg
+  var dataChange: ALL
+  var events: COLUMNHEADERCLICK
+  var filter: CONTAINS
+  var keymap: ALT
+  var scrollDirection: DOWN
+  var scrollbars: ALWAYS
 }
 
 object IUiGridConstants {
@@ -59,13 +59,13 @@ object IUiGridConstants {
     MODEL_COL_FIELD: RegExp,
     TEMPLATE_REGEXP: RegExp,
     TOOLTIP: RegExp,
-    aggregationTypes: AnonAvg,
-    dataChange: AnonALL,
-    events: AnonCOLUMNHEADERCLICK,
-    filter: AnonCONTAINS,
-    keymap: AnonALT,
-    scrollDirection: AnonDOWN,
-    scrollbars: AnonALWAYS
+    aggregationTypes: Avg,
+    dataChange: ALL,
+    events: COLUMNHEADERCLICK,
+    filter: CONTAINS,
+    keymap: ALT,
+    scrollDirection: DOWN,
+    scrollbars: ALWAYS
   ): IUiGridConstants = {
     val __obj = js.Dynamic.literal(APOS_REGEXP = APOS_REGEXP.asInstanceOf[js.Any], ASC = ASC.asInstanceOf[js.Any], BRACKET_REGEXP = BRACKET_REGEXP.asInstanceOf[js.Any], COL_CLASS_PREFIX = COL_CLASS_PREFIX.asInstanceOf[js.Any], COL_FIELD = COL_FIELD.asInstanceOf[js.Any], CURRENCY_SYMBOLS = CURRENCY_SYMBOLS.asInstanceOf[js.Any], CUSTOM_FILTERS = CUSTOM_FILTERS.asInstanceOf[js.Any], DESC = DESC.asInstanceOf[js.Any], DISPLAY_CELL_TEMPLATE = DISPLAY_CELL_TEMPLATE.asInstanceOf[js.Any], DOT_REGEXP = DOT_REGEXP.asInstanceOf[js.Any], FUNC_REGEXP = FUNC_REGEXP.asInstanceOf[js.Any], LOG_DEBUG_MESSAGES = LOG_DEBUG_MESSAGES.asInstanceOf[js.Any], LOG_ERROR_MESSAGES = LOG_ERROR_MESSAGES.asInstanceOf[js.Any], LOG_WARN_MESSAGES = LOG_WARN_MESSAGES.asInstanceOf[js.Any], MODEL_COL_FIELD = MODEL_COL_FIELD.asInstanceOf[js.Any], TEMPLATE_REGEXP = TEMPLATE_REGEXP.asInstanceOf[js.Any], TOOLTIP = TOOLTIP.asInstanceOf[js.Any], aggregationTypes = aggregationTypes.asInstanceOf[js.Any], dataChange = dataChange.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], keymap = keymap.asInstanceOf[js.Any], scrollDirection = scrollDirection.asInstanceOf[js.Any], scrollbars = scrollbars.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUiGridConstants]

@@ -13,7 +13,7 @@ object resultMod extends js.Object {
     def expect(message: String): T = js.native
     def map[T2](func: js.Function1[/* data */ T, T2]): Result[T2, E] = js.native
     def mapErr[E2](func: js.Function1[/* err */ E, E2]): Result[T, E2] = js.native
-    def `match`[T2, E2](funcs: AnonErr[T, T2, E, E2]): T2 | E2 = js.native
+    def `match`[T2, E2](funcs: typings.typedoc.anon.Err[T, T2, E, E2]): T2 | E2 = js.native
     def unwrap(): T = js.native
     def unwrapErr(): E = js.native
   }

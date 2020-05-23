@@ -1,19 +1,14 @@
 package typings.antd.mod
 
-import typings.antd.AnonCharacter
-import typings.antd.rateMod.default
+import org.scalablytyped.runtime.TopLevel
+import typings.antd.rateMod.RateProps
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("antd", "Rate")
 @js.native
-class Rate () extends default
-
-/* static members */
-@JSImport("antd", "Rate")
-@js.native
-object Rate extends js.Object {
-  var defaultProps: AnonCharacter = js.native
-}
+object Rate extends TopLevel[ForwardRefExoticComponent[RateProps with RefAttributes[_]]]
 

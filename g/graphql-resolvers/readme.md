@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-resolvers
 
-Typings are for version 0.2
+Typings are for version 0.3
 
 ## Library description:
 Resolver composition library for GraphQL.

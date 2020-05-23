@@ -45,22 +45,22 @@ object RadiusSettings {
   def apply(
     AuthenticationProtocol: RadiusAuthenticationProtocol = null,
     DisplayLabel: RadiusDisplayLabel = null,
-    RadiusPort: Int | Double = null,
-    RadiusRetries: Int | Double = null,
+    RadiusPort: js.UndefOr[PortNumber] = js.undefined,
+    RadiusRetries: js.UndefOr[RadiusRetries] = js.undefined,
     RadiusServers: Servers = null,
-    RadiusTimeout: Int | Double = null,
+    RadiusTimeout: js.UndefOr[RadiusTimeout] = js.undefined,
     SharedSecret: RadiusSharedSecret = null,
-    UseSameUsername: js.UndefOr[Boolean] = js.undefined
+    UseSameUsername: js.UndefOr[UseSameUsername] = js.undefined
   ): RadiusSettings = {
     val __obj = js.Dynamic.literal()
     if (AuthenticationProtocol != null) __obj.updateDynamic("AuthenticationProtocol")(AuthenticationProtocol.asInstanceOf[js.Any])
     if (DisplayLabel != null) __obj.updateDynamic("DisplayLabel")(DisplayLabel.asInstanceOf[js.Any])
-    if (RadiusPort != null) __obj.updateDynamic("RadiusPort")(RadiusPort.asInstanceOf[js.Any])
-    if (RadiusRetries != null) __obj.updateDynamic("RadiusRetries")(RadiusRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(RadiusPort)) __obj.updateDynamic("RadiusPort")(RadiusPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RadiusRetries)) __obj.updateDynamic("RadiusRetries")(RadiusRetries.get.asInstanceOf[js.Any])
     if (RadiusServers != null) __obj.updateDynamic("RadiusServers")(RadiusServers.asInstanceOf[js.Any])
-    if (RadiusTimeout != null) __obj.updateDynamic("RadiusTimeout")(RadiusTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(RadiusTimeout)) __obj.updateDynamic("RadiusTimeout")(RadiusTimeout.get.asInstanceOf[js.Any])
     if (SharedSecret != null) __obj.updateDynamic("SharedSecret")(SharedSecret.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseSameUsername)) __obj.updateDynamic("UseSameUsername")(UseSameUsername.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseSameUsername)) __obj.updateDynamic("UseSameUsername")(UseSameUsername.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadiusSettings]
   }
 }

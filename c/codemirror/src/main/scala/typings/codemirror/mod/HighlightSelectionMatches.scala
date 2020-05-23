@@ -1,6 +1,5 @@
 package typings.codemirror.mod
 
-import typings.codemirror.codemirrorNumbers.`100`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,9 +11,9 @@ trait HighlightSelectionMatches extends js.Object {
     */
   var annotateScrollbar: js.UndefOr[Boolean] = js.undefined
   /**
-    * Used to specify how much time to wait, in milliseconds, before highlighting the matches. 
+    * Used to specify how much time to wait, in milliseconds, before highlighting the matches (default is 100). 
     */
-  var delay: `100`
+  var delay: js.UndefOr[Double] = js.undefined
   /**
     * Minimum amount of selected characters that triggers a highlight (default 2).
     */
@@ -40,21 +39,22 @@ trait HighlightSelectionMatches extends js.Object {
 object HighlightSelectionMatches {
   @scala.inline
   def apply(
-    delay: `100`,
     annotateScrollbar: js.UndefOr[Boolean] = js.undefined,
-    minChars: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
+    minChars: js.UndefOr[Double] = js.undefined,
     showToken: Boolean | RegExp = null,
     style: String = null,
     trim: js.UndefOr[Boolean] = js.undefined,
     wordsOnly: js.UndefOr[Boolean] = js.undefined
   ): HighlightSelectionMatches = {
-    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(annotateScrollbar)) __obj.updateDynamic("annotateScrollbar")(annotateScrollbar.asInstanceOf[js.Any])
-    if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(annotateScrollbar)) __obj.updateDynamic("annotateScrollbar")(annotateScrollbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minChars)) __obj.updateDynamic("minChars")(minChars.get.asInstanceOf[js.Any])
     if (showToken != null) __obj.updateDynamic("showToken")(showToken.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordsOnly)) __obj.updateDynamic("wordsOnly")(wordsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordsOnly)) __obj.updateDynamic("wordsOnly")(wordsOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightSelectionMatches]
   }
 }

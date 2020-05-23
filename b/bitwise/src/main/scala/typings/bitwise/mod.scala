@@ -1,5 +1,11 @@
 package typings.bitwise
 
+import typings.bitwise.anon.Modify
+import typings.bitwise.anon.Nand
+import typings.bitwise.anon.ReadWrite
+import typings.bitwise.anon.SetBit
+import typings.bitwise.anon.`0`
+import typings.bitwise.anon.`1`
 import typings.bitwise.bitwiseTypesMod.Bit
 import typings.bitwise.bitwiseTypesMod.UInt4
 import typings.bitwise.bitwiseTypesMod.UInt8
@@ -69,12 +75,12 @@ object mod extends js.Object {
   
   @js.native
   object default extends js.Object {
-    var bits: AnonNand = js.native
-    var buffer: AnonModify = js.native
-    var byte: AnonReadWrite = js.native
-    var integer: AnonSetBit = js.native
-    var nibble: Anon0 = js.native
-    var string: Anon1 = js.native
+    var bits: Nand = js.native
+    var buffer: Modify = js.native
+    var byte: ReadWrite = js.native
+    var integer: SetBit = js.native
+    var nibble: `0` = js.native
+    var string: `1` = js.native
   }
   
   @js.native

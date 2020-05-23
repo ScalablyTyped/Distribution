@@ -17,10 +17,10 @@ trait BrowseRequestData extends js.Object {
 
 object BrowseRequestData {
   @scala.inline
-  def apply(cursor: String = null, page: Int | Double = null): BrowseRequestData = {
+  def apply(cursor: String = null, page: js.UndefOr[Double] = js.undefined): BrowseRequestData = {
     val __obj = js.Dynamic.literal()
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowseRequestData]
   }
 }

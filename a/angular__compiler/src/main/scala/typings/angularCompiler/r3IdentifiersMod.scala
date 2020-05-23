@@ -51,7 +51,6 @@ object r3IdentifiersMod extends js.Object {
     var classMapInterpolateV: ExternalReference = js.native
     var classProp: ExternalReference = js.native
     var componentHostSyntheticListener: ExternalReference = js.native
-    var containerCreate: ExternalReference = js.native
     var contentQuery: ExternalReference = js.native
     var defaultStyleSanitizer: ExternalReference = js.native
     var defineComponent: ExternalReference = js.native

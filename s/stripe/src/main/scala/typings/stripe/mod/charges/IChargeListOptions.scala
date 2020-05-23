@@ -1,6 +1,6 @@
 package typings.stripe.mod.charges
 
-import typings.stripe.AnonObject
+import typings.stripe.anon.Object
 import typings.stripe.mod.IDateFilter
 import typings.stripe.mod.IListOptionsCreated
 import scala.scalajs.js
@@ -16,7 +16,7 @@ trait IChargeListOptions extends IListOptionsCreated {
     * A filter on the list based on the source of the charge. The value can be a
     * dictionary with the following options:
     */
-  var source: js.UndefOr[AnonObject] = js.undefined
+  var source: js.UndefOr[Object] = js.undefined
 }
 
 object IChargeListOptions {
@@ -27,8 +27,8 @@ object IChargeListOptions {
     ending_before: String = null,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
-    limit: Int | Double = null,
-    source: AnonObject = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    source: Object = null,
     starting_after: String = null
   ): IChargeListOptions = {
     val __obj = js.Dynamic.literal()
@@ -37,7 +37,7 @@ object IChargeListOptions {
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChargeListOptions]

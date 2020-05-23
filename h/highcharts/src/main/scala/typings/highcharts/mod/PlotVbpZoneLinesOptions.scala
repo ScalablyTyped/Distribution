@@ -19,7 +19,7 @@ object PlotVbpZoneLinesOptions {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, styles: CSSObject = null): PlotVbpZoneLinesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotVbpZoneLinesOptions]
   }

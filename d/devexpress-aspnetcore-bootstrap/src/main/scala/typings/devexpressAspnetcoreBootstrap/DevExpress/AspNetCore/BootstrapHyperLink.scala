@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapHyperLink")
 @js.native
-class BootstrapHyperLink () extends Control {
+trait BootstrapHyperLink extends Control {
   def getBadgeIconCssClass(): String = js.native
   def getBadgeText(): String = js.native
   def getCaption(): String = js.native

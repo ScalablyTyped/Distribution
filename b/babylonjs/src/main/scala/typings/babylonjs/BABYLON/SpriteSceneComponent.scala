@@ -4,45 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.SpriteSceneComponent")
-@js.native
-class SpriteSceneComponent protected () extends ISceneComponent {
-  /**
-    * Creates a new instance of the component for the given scene
-    * @param scene Defines the scene to register the component in
-    */
-  def this(scene: Scene) = this()
-  var _pickSpriteButKeepRay: js.Any = js.native
-  var _pointerDown: js.Any = js.native
-  var _pointerMove: js.Any = js.native
-  var _pointerUp: js.Any = js.native
+trait SpriteSceneComponent extends ISceneComponent {
+  var _pickSpriteButKeepRay: js.Any
+  var _pointerDown: js.Any
+  var _pointerMove: js.Any
+  var _pointerUp: js.Any
   /** @hidden */
-  var _spritePredicate: js.Any = js.native
-  /**
-    * The name of the component. Each component must have a unique name.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  /**
-    * The scene the component belongs to.
-    */
-  /* CompleteClass */
-  override var scene: Scene = js.native
-  /**
-    * Disposes the component and the associated ressources.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  /**
-    * Rebuilds the elements related to this component in case of
-    * context lost for instance.
-    */
-  /* CompleteClass */
-  override def rebuild(): Unit = js.native
-  /**
-    * Register the component to one instance of a scene.
-    */
-  /* CompleteClass */
-  override def register(): Unit = js.native
+  var _spritePredicate: js.Any
+}
+
+object SpriteSceneComponent {
+  @scala.inline
+  def apply(
+    _pickSpriteButKeepRay: js.Any,
+    _pointerDown: js.Any,
+    _pointerMove: js.Any,
+    _pointerUp: js.Any,
+    _spritePredicate: js.Any,
+    dispose: () => Unit,
+    name: String,
+    rebuild: () => Unit,
+    register: () => Unit,
+    scene: Scene
+  ): SpriteSceneComponent = {
+    val __obj = js.Dynamic.literal(_pickSpriteButKeepRay = _pickSpriteButKeepRay.asInstanceOf[js.Any], _pointerDown = _pointerDown.asInstanceOf[js.Any], _pointerMove = _pointerMove.asInstanceOf[js.Any], _pointerUp = _pointerUp.asInstanceOf[js.Any], _spritePredicate = _spritePredicate.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), name = name.asInstanceOf[js.Any], rebuild = js.Any.fromFunction0(rebuild), register = js.Any.fromFunction0(register), scene = scene.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpriteSceneComponent]
+  }
 }
 

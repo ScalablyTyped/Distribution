@@ -1,6 +1,5 @@
 package typings.winrt.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,32 +33,6 @@ object TextGetOptions extends js.Object {
   
   @js.native
   sealed trait useObjectText extends TextGetOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextGetOptions with Double] = js.native
-  /* 1 */ @js.native
-  object adjustCrlf extends TopLevel[adjustCrlf with Double]
-  
-  /* 4 */ @js.native
-  object allowFinalEop extends TopLevel[allowFinalEop with Double]
-  
-  /* 7 */ @js.native
-  object formatRtf extends TopLevel[formatRtf with Double]
-  
-  /* 6 */ @js.native
-  object includeNumbering extends TopLevel[includeNumbering with Double]
-  
-  /* 5 */ @js.native
-  object noHidden extends TopLevel[noHidden with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object useCrlf extends TopLevel[useCrlf with Double]
-  
-  /* 3 */ @js.native
-  object useObjectText extends TopLevel[useObjectText with Double]
   
 }
 

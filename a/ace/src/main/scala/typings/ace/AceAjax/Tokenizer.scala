@@ -1,6 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +11,11 @@ trait Tokenizer extends js.Object {
   def getLineTokens(): js.Any
 }
 
-@JSGlobal("AceAjax.Tokenizer")
-@js.native
-object Tokenizer
-  extends /**
-  * Constructs a new tokenizer based on the given rules and flags.
-  * @param rules The highlighting rules
-  * @param flag Any additional regular expression flags to pass (like "i" for case insensitive)
-  **/
-Instantiable2[/* rules */ js.Any, /* flag */ String, Tokenizer]
+object Tokenizer {
+  @scala.inline
+  def apply(getLineTokens: () => js.Any): Tokenizer = {
+    val __obj = js.Dynamic.literal(getLineTokens = js.Any.fromFunction0(getLineTokens))
+    __obj.asInstanceOf[Tokenizer]
+  }
+}
 

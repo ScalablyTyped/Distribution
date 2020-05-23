@@ -42,13 +42,7 @@ object DevicePose {
     orientation: Nullable[Float32Array] = null,
     position: Nullable[Float32Array] = null
   ): DevicePose = {
-    val __obj = js.Dynamic.literal()
-    if (angularAcceleration != null) __obj.updateDynamic("angularAcceleration")(angularAcceleration.asInstanceOf[js.Any])
-    if (angularVelocity != null) __obj.updateDynamic("angularVelocity")(angularVelocity.asInstanceOf[js.Any])
-    if (linearAcceleration != null) __obj.updateDynamic("linearAcceleration")(linearAcceleration.asInstanceOf[js.Any])
-    if (linearVelocity != null) __obj.updateDynamic("linearVelocity")(linearVelocity.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(angularAcceleration = angularAcceleration.asInstanceOf[js.Any], angularVelocity = angularVelocity.asInstanceOf[js.Any], linearAcceleration = linearAcceleration.asInstanceOf[js.Any], linearVelocity = linearVelocity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicePose]
   }
 }

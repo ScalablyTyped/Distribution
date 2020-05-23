@@ -3,16 +3,12 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.DataSource
 import typings.kendoUi.kendo.data.HierarchicalDataSource
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.DropDownTree")
 @js.native
-class DropDownTree protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: DropDownTreeOptions) = this()
+trait DropDownTree extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_DropDownTree: DropDownTreeOptions = js.native
@@ -35,13 +31,5 @@ class DropDownTree protected () extends Widget {
   def value(): js.Any = js.native
   def value(value: String): Unit = js.native
   def value(value: js.Any): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.DropDownTree")
-@js.native
-object DropDownTree extends js.Object {
-  var fn: DropDownTree = js.native
-  def extend(proto: js.Object): DropDownTree = js.native
 }
 

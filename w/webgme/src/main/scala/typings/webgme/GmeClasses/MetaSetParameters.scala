@@ -1,6 +1,6 @@
 package typings.webgme.GmeClasses
 
-import typings.webgme.AnonMembers
+import typings.webgme.anon.Members
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait MetaSetParameters extends js.Object {
     */
   var multiplicity: js.UndefOr[Boolean] = js.undefined
   /** the input parameters of the query. */
-  var `object`: AnonMembers
+  var `object`: Members
   /** 
     * if true, the query filters out the 
     * abstract and connection-like nodes 
@@ -27,14 +27,14 @@ trait MetaSetParameters extends js.Object {
 object MetaSetParameters {
   @scala.inline
   def apply(
-    `object`: AnonMembers,
+    `object`: Members,
     multiplicity: js.UndefOr[Boolean] = js.undefined,
     sensitive: js.UndefOr[Boolean] = js.undefined
   ): MetaSetParameters = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiplicity)) __obj.updateDynamic("multiplicity")(multiplicity.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplicity)) __obj.updateDynamic("multiplicity")(multiplicity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaSetParameters]
   }
 }

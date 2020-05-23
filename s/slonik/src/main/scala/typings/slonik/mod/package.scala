@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object mod {
   type ClientConfigurationInputType = typings.slonik.mod.ClientConfigurationType
   type ConnectionRoutineType[T] = js.Function1[/* connection */ typings.slonik.mod.DatabasePoolConnectionType, js.Promise[T]]
-  type DatabaseConfigurationType = java.lang.String | typings.slonik.AnonDatabase
+  type DatabaseConfigurationType = java.lang.String | typings.slonik.anon.Database
   type IdentifierNormalizerType = js.Function1[/* identifierName */ java.lang.String, java.lang.String]
   type LoggerType = js.Function1[/* repeated */ java.lang.String, scala.Nothing]
   type MaybePromiseType[T] = T | js.Promise[T]

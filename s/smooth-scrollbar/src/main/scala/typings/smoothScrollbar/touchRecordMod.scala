@@ -1,6 +1,7 @@
 package typings.smoothScrollbar
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.smoothScrollbar.anon.Y
 import typings.std.Touch
 import typings.std.TouchEvent
 import scala.scalajs.js
@@ -21,8 +22,8 @@ object touchRecordMod extends js.Object {
     var _renew: js.Any = js.native
     var _setActiveID: js.Any = js.native
     var _touchList: js.Any = js.native
-    def getDelta(): AnonY = js.native
-    def getVelocity(): AnonY = js.native
+    def getDelta(): Y = js.native
+    def getVelocity(): Y = js.native
     def isActive(): Boolean = js.native
     def release(evt: TouchEvent): Unit = js.native
     def track(evt: TouchEvent): NumberDictionary[Tracker] = js.native
@@ -32,10 +33,10 @@ object touchRecordMod extends js.Object {
   @js.native
   class Tracker protected () extends js.Object {
     def this(touch: Touch) = this()
-    var delta: AnonY = js.native
-    var lastPosition: AnonY = js.native
+    var delta: Y = js.native
+    var lastPosition: Y = js.native
     var updateTime: Double = js.native
-    var velocity: AnonY = js.native
+    var velocity: Y = js.native
     def update(touch: Touch): Unit = js.native
   }
   

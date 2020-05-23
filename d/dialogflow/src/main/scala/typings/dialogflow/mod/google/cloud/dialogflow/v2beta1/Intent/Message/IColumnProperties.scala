@@ -18,12 +18,14 @@ trait IColumnProperties extends js.Object {
 object IColumnProperties {
   @scala.inline
   def apply(
-    header: String = null,
-    horizontalAlignment: HorizontalAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment * / any */ String) = null
+    header: js.UndefOr[Null | String] = js.undefined,
+    horizontalAlignment: js.UndefOr[
+      Null | HorizontalAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment * / any */ String)
+    ] = js.undefined
   ): IColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnProperties]
   }
 }

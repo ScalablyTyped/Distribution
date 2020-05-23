@@ -1,6 +1,6 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
-import typings.ionicCore.AnonVisible
+import typings.ionicCore.anon.Visible
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait IonSplitPane extends js.Object {
   /**
     * Expression to be called when the split-pane visibility has changed
     */
-  var onIonSplitPaneVisible: js.UndefOr[js.Function1[/* event */ CustomEvent[AnonVisible], Unit]] = js.undefined
+  var onIonSplitPaneVisible: js.UndefOr[js.Function1[/* event */ CustomEvent[Visible], Unit]] = js.undefined
   /**
     * When the split-pane should be shown. Can be a CSS media query expression, or a shortcut expression. Can also be a boolean expression.
     */
@@ -30,12 +30,12 @@ object IonSplitPane {
   def apply(
     contentId: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    onIonSplitPaneVisible: /* event */ CustomEvent[AnonVisible] => Unit = null,
+    onIonSplitPaneVisible: /* event */ CustomEvent[Visible] => Unit = null,
     when: String | Boolean = null
   ): IonSplitPane = {
     val __obj = js.Dynamic.literal()
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (onIonSplitPaneVisible != null) __obj.updateDynamic("onIonSplitPaneVisible")(js.Any.fromFunction1(onIonSplitPaneVisible))
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSplitPane]

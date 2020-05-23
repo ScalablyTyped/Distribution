@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.OlkComboBox")
 @js.native
-class OlkComboBox protected () extends js.Object {
+trait OlkComboBox extends js.Object {
   var AutoSize: Boolean = js.native
   var AutoTab: Boolean = js.native
   var AutoWordSelect: Boolean = js.native

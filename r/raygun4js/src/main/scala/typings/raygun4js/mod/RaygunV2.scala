@@ -1,7 +1,7 @@
 package typings.raygun4js.mod
 
-import typings.raygun4js.AnonLevel
-import typings.raygun4js.AnonType
+import typings.raygun4js.anon.Level
+import typings.raygun4js.anon.Type
 import typings.raygun4js.raygun4jsStrings.apiKey
 import typings.raygun4js.raygun4jsStrings.attach
 import typings.raygun4js.raygun4jsStrings.detach
@@ -69,14 +69,14 @@ trait RaygunV2 extends js.Object {
   def apply(key: onBeforeXHR, callback: js.Function1[/* xhr */ XMLHttpRequest, Unit]): Unit = js.native
   def apply(key: options, value: RaygunOptions): Unit = js.native
   def apply(key: recordBreadcrumb, message: String, metadata: js.Object): Unit = js.native
-  def apply(key: recordBreadcrumb, message: AnonLevel, metadata: js.Object): Unit = js.native
+  def apply(key: recordBreadcrumb, message: Level, metadata: js.Object): Unit = js.native
   def apply(key: saveIfOffline, value: Boolean): Unit = js.native
   def apply(key: send, value: js.Any): Unit = js.native
   def apply(key: setBreadcrumbLevel, level: BreadcrumbLevel): Unit = js.native
   def apply(key: setFilterScope, value: String): Unit = js.native
   def apply(key: setUser, value: RaygunV2UserDetails): Unit = js.native
   def apply(key: setVersion, value: String): Unit = js.native
-  def apply(key: trackEvent, value: AnonType): Unit = js.native
+  def apply(key: trackEvent, value: Type): Unit = js.native
   def apply(key: whitelistCrossOriginDomains, values: js.Array[String]): Unit = js.native
   def apply(key: withCustomData, value: js.Any): Unit = js.native
   def apply(key: withTags, values: js.Array[String]): Unit = js.native

@@ -1,10 +1,10 @@
 package typings.angularCompiler.apiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompiler.AnonExpressionSelector
-import typings.angularCompiler.AnonNgContentSelectors
-import typings.angularCompiler.AnonUsesOnChanges
 import typings.angularCompiler.angularCompilerStrings.invalid
+import typings.angularCompiler.anon.ExpressionSelector
+import typings.angularCompiler.anon.NgContentSelectors
+import typings.angularCompiler.anon.UsesOnChanges
 import typings.angularCompiler.coreMod.ChangeDetectionStrategy
 import typings.angularCompiler.coreMod.ViewEncapsulation
 import typings.angularCompiler.interpolationConfigMod.InterpolationConfig
@@ -30,7 +30,7 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
     * A list of directive selectors and an expression referencing the directive type which are in the
     * scope of the compilation.
     */
-  var directives: js.Array[AnonExpressionSelector]
+  var directives: js.Array[ExpressionSelector]
   /**
     * An encapsulation policy for the template and CSS styles. One of:
     * - `ViewEncapsulation.Native`: Use shadow roots. This works only if natively available on the
@@ -68,7 +68,7 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
   /**
     * Information about the component's template.
     */
-  var template: AnonNgContentSelectors
+  var template: NgContentSelectors
   /**
     * The list of view providers defined in the component.
     */
@@ -84,7 +84,7 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
 object R3ComponentMetadata {
   @scala.inline
   def apply(
-    directives: js.Array[AnonExpressionSelector],
+    directives: js.Array[ExpressionSelector],
     encapsulation: ViewEncapsulation,
     fullInheritance: Boolean,
     host: R3HostMetadata,
@@ -92,14 +92,14 @@ object R3ComponentMetadata {
     inputs: StringDictionary[String | (js.Tuple2[String, String])],
     internalType: Expression,
     interpolation: InterpolationConfig,
-    lifecycle: AnonUsesOnChanges,
+    lifecycle: UsesOnChanges,
     name: String,
     outputs: StringDictionary[String],
     pipes: Map[String, Expression],
     queries: js.Array[R3QueryMetadata],
     relativeContextFilePath: String,
     styles: js.Array[String],
-    template: AnonNgContentSelectors,
+    template: NgContentSelectors,
     `type`: R3Reference,
     typeArgumentCount: Double,
     typeSourceSpan: ParseSourceSpan,
@@ -114,15 +114,9 @@ object R3ComponentMetadata {
     selector: String = null,
     viewProviders: Expression = null
   ): R3ComponentMetadata = {
-    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], i18nUseExternalIds = i18nUseExternalIds.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], relativeContextFilePath = relativeContextFilePath.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], wrapDirectivesAndPipesInClosure = wrapDirectivesAndPipesInClosure.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], i18nUseExternalIds = i18nUseExternalIds.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], relativeContextFilePath = relativeContextFilePath.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], wrapDirectivesAndPipesInClosure = wrapDirectivesAndPipesInClosure.asInstanceOf[js.Any], animations = animations.asInstanceOf[js.Any], deps = deps.asInstanceOf[js.Any], exportAs = exportAs.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], viewProviders = viewProviders.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (animations != null) __obj.updateDynamic("animations")(animations.asInstanceOf[js.Any])
     if (changeDetection != null) __obj.updateDynamic("changeDetection")(changeDetection.asInstanceOf[js.Any])
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
-    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs.asInstanceOf[js.Any])
-    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (viewProviders != null) __obj.updateDynamic("viewProviders")(viewProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3ComponentMetadata]
   }
 }

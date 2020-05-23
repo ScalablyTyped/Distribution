@@ -1,6 +1,5 @@
 package typings.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,26 +55,6 @@ object Alignment extends js.Object {
     */
   @js.native
   sealed trait unknown extends Alignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Alignment with String] = js.native
-  /* "Centered" */ @js.native
-  object centered extends TopLevel[centered with String]
-  
-  /* "Justified" */ @js.native
-  object justified extends TopLevel[justified with String]
-  
-  /* "Left" */ @js.native
-  object left extends TopLevel[left with String]
-  
-  /* "Mixed" */ @js.native
-  object mixed extends TopLevel[mixed with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
   
 }
 

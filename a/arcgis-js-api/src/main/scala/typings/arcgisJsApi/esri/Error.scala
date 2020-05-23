@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,11 @@ trait Error extends js.Object {
   var name: String
 }
 
-@JSGlobal("__esri.Error")
-@js.native
-object Error extends TopLevel[ErrorConstructor]
+object Error {
+  @scala.inline
+  def apply(details: js.Any, message: String, name: String): Error = {
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Error]
+  }
+}
 

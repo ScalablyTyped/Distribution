@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 trait DataBarConditionalFormatData extends js.Object {
   /**
     *
-    * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     "" (empty string) if no axis is present or set.
     *
     * [Api set: ExcelApi 1.6]
@@ -32,7 +32,7 @@ trait DataBarConditionalFormatData extends js.Object {
   var axisFormat: js.UndefOr[ConditionalDataBarAxisFormat | Automatic | None | CellMidPoint] = js.undefined
   /**
     *
-    * Represents the direction that the data bar graphic should be based on.
+    * Specifies the direction that the data bar graphic should be based on.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -47,14 +47,14 @@ trait DataBarConditionalFormatData extends js.Object {
   var lowerBoundRule: js.UndefOr[ConditionalDataBarRule] = js.undefined
   /**
     *
-    * Representation of all values to the left of the axis in an Excel data bar. Read-only.
+    * Representation of all values to the left of the axis in an Excel data bar.
     *
     * [Api set: ExcelApi 1.6]
     */
   var negativeFormat: js.UndefOr[ConditionalDataBarNegativeFormatData] = js.undefined
   /**
     *
-    * Representation of all values to the right of the axis in an Excel data bar. Read-only.
+    * Representation of all values to the right of the axis in an Excel data bar.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -95,7 +95,7 @@ object DataBarConditionalFormatData {
     if (lowerBoundRule != null) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule.asInstanceOf[js.Any])
     if (negativeFormat != null) __obj.updateDynamic("negativeFormat")(negativeFormat.asInstanceOf[js.Any])
     if (positiveFormat != null) __obj.updateDynamic("positiveFormat")(positiveFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly.get.asInstanceOf[js.Any])
     if (upperBoundRule != null) __obj.updateDynamic("upperBoundRule")(upperBoundRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataBarConditionalFormatData]
   }

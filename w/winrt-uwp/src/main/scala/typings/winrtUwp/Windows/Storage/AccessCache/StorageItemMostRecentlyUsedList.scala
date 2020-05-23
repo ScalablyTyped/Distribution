@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents your app's most recently used list (MRU) (obtained from the static StorageApplicationPermissions.MostRecentlyUsedList property). You use your MRU to track items (files and/or folders) that the user has accessed most recently. Items are stored in the MRU as StorageFile and StorageFolder objects. */
-@JSGlobal("Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList")
 @js.native
-abstract class StorageItemMostRecentlyUsedList () extends js.Object {
+trait StorageItemMostRecentlyUsedList extends js.Object {
   /** Gets an object for retrieving storage items from the most recently used (MRU) list. */
   var entries: AccessListEntryView = js.native
   /** Gets the maximum number of storage items that the most recently used (MRU) list can contain. */

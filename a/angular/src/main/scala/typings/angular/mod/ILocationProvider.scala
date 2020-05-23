@@ -1,6 +1,6 @@
 package typings.angular.mod
 
-import typings.angular.AnonEnabled
+import typings.angular.anon.Enabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ trait ILocationProvider extends IServiceProvider {
   // implementation tests it as boolean, which makes more sense
   // since this is a toggler
   def html5Mode(active: Boolean): ILocationProvider = js.native
-  def html5Mode(mode: AnonEnabled): ILocationProvider = js.native
+  def html5Mode(mode: Enabled): ILocationProvider = js.native
 }
 

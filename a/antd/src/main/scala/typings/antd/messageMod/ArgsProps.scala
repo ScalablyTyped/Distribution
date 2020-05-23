@@ -19,15 +19,14 @@ object ArgsProps {
   def apply(
     `type`: NoticeType,
     content: ReactNode = null,
-    duration: Int | Double = null,
+    duration: Double = null.asInstanceOf[Double],
     icon: ReactNode = null,
     key: String | Double = null,
     onClose: () => Unit = null
   ): ArgsProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))

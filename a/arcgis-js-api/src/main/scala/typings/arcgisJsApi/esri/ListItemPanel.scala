@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -57,7 +56,19 @@ trait ListItemPanel extends js.Object {
   var visible: Boolean
 }
 
-@JSGlobal("__esri.ListItemPanel")
-@js.native
-object ListItemPanel extends TopLevel[ListItemPanelConstructor]
+object ListItemPanel {
+  @scala.inline
+  def apply(
+    className: String,
+    content: Widget_ | HTMLElement | String | js.Array[_],
+    image: String,
+    listItem: ListItem,
+    open: Boolean,
+    title: String,
+    visible: Boolean
+  ): ListItemPanel = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], listItem = listItem.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListItemPanel]
+  }
+}
 

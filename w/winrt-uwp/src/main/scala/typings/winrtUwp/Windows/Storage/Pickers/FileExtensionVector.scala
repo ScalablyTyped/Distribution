@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Storage.Pickers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsArray
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a random-access collection of file name extensions. */
-@JSGlobal("Windows.Storage.Pickers.FileExtensionVector")
 @js.native
-abstract class FileExtensionVector () extends Array[String] {
+trait FileExtensionVector extends Array[String] {
   /** Gets the number of file name extensions in the collection. */
   var size: Double = js.native
   /**
@@ -37,13 +36,13 @@ abstract class FileExtensionVector () extends Array[String] {
     * Retrieves the file name extensions that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the file name extensions in the collection to retrieve.
     */
-  def getMany(startIndex: Double): AnonItemsArray = js.native
+  def getMany(startIndex: Double): ItemsArray = js.native
   /**
     * Retrieves an immutable view of the collection of file name extensions.
     * @return The view of the collection.
     */
   def getView(): IVectorView[String] = js.native
-  def indexOf(value: String, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: String, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: String): Double = js.native

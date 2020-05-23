@@ -22,9 +22,9 @@ trait GetDocumentTextDetectionRequest extends js.Object {
 
 object GetDocumentTextDetectionRequest {
   @scala.inline
-  def apply(JobId: JobId, MaxResults: Int | Double = null, NextToken: PaginationToken = null): GetDocumentTextDetectionRequest = {
+  def apply(JobId: JobId, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: PaginationToken = null): GetDocumentTextDetectionRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentTextDetectionRequest]
   }

@@ -52,14 +52,14 @@ object EditSettings {
     showDeleteConfirmDialog: js.UndefOr[Boolean] = js.undefined
   ): EditSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAdding)) __obj.updateDynamic("allowAdding")(allowAdding.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDeleting)) __obj.updateDynamic("allowDeleting")(allowDeleting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowIndent)) __obj.updateDynamic("allowIndent")(allowIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAdding)) __obj.updateDynamic("allowAdding")(allowAdding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDeleting)) __obj.updateDynamic("allowDeleting")(allowDeleting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowIndent)) __obj.updateDynamic("allowIndent")(allowIndent.get.asInstanceOf[js.Any])
     if (beginEditAction != null) __obj.updateDynamic("beginEditAction")(beginEditAction.asInstanceOf[js.Any])
     if (editMode != null) __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])
     if (rowPosition != null) __obj.updateDynamic("rowPosition")(rowPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDeleteConfirmDialog)) __obj.updateDynamic("showDeleteConfirmDialog")(showDeleteConfirmDialog.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDeleteConfirmDialog)) __obj.updateDynamic("showDeleteConfirmDialog")(showDeleteConfirmDialog.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditSettings]
   }
 }

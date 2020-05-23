@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.IMsoChartFormat")
 @js.native
-class IMsoChartFormat protected () extends js.Object {
+trait IMsoChartFormat extends js.Object {
   @JSName("Adjustments")
   val Adjustments_Original: Adjustments = js.native
   val Application: js.Any = js.native

@@ -115,7 +115,7 @@ object OverlayOptions {
     close: JQuery = null,
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
     closeOnEsc: js.UndefOr[Boolean] = js.undefined,
-    closeSpeed: Int | Double = null,
+    closeSpeed: js.UndefOr[Double] = js.undefined,
     effect: String = null,
     fixed: js.UndefOr[Boolean] = js.undefined,
     left: center | Double = null,
@@ -132,19 +132,19 @@ object OverlayOptions {
   ): OverlayOptions = {
     val __obj = js.Dynamic.literal()
     if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.asInstanceOf[js.Any])
-    if (closeSpeed != null) __obj.updateDynamic("closeSpeed")(closeSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeSpeed)) __obj.updateDynamic("closeSpeed")(closeSpeed.get.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load.get.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (onBeforeClose != null) __obj.updateDynamic("onBeforeClose")(onBeforeClose.asInstanceOf[js.Any])
     if (onBeforeLoad != null) __obj.updateDynamic("onBeforeLoad")(onBeforeLoad.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
     if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneInstance)) __obj.updateDynamic("oneInstance")(oneInstance.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneInstance)) __obj.updateDynamic("oneInstance")(oneInstance.get.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])

@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.DragAxis
 import typings.babylonjs.easingMod.BackEase
 import typings.babylonjs.easingMod.ExponentialEase
 import typings.babylonjs.transformNodeMod.TransformNode
@@ -53,7 +54,7 @@ object behaviorsIndexMod extends js.Object {
     */
   class PointerDragBehavior ()
     extends typings.babylonjs.meshesIndexMod.PointerDragBehavior {
-    def this(options: AnonDragAxis) = this()
+    def this(options: DragAxis) = this()
   }
   
   @js.native

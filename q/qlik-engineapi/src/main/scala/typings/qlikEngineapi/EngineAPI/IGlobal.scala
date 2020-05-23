@@ -1,8 +1,8 @@
 package typings.qlikEngineapi.EngineAPI
 
-import typings.qlikEngineapi.AnonQBnfDefs
-import typings.qlikEngineapi.AnonQBnfHash
-import typings.qlikEngineapi.AnonQFolder
+import typings.qlikEngineapi.anon.QBnfDefs
+import typings.qlikEngineapi.anon.QBnfHash
+import typings.qlikEngineapi.anon.QFolder
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -250,7 +250,7 @@ trait IGlobal extends IGeneratedAPI {
     * - the chart functions if qBnfType is set to E.
     * @returns A Promise qBnfHash
     */
-  def getBaseBNFHash(qBnfType: BnfType): js.Promise[AnonQBnfHash] = js.native
+  def getBaseBNFHash(qBnfType: BnfType): js.Promise[QBnfHash] = js.native
   /**
     * Gets the current Backus-Naur Form (BNF) grammar of the Qlik engine scripting language,
     * as well as a string hash calculated from that grammar. The BNF rules define the syntax
@@ -264,7 +264,7 @@ trait IGlobal extends IGeneratedAPI {
     *                   E: returns the chart functions.
     * @returns qBnfDefs and qBnfHash
     */
-  def getBaseBNFString(qBnfType: BnfType): js.Promise[AnonQBnfDefs] = js.native
+  def getBaseBNFString(qBnfType: BnfType): js.Promise[QBnfDefs] = js.native
   /**
     * Get a Config Object
     * @returns A Promise qConfig
@@ -356,7 +356,7 @@ trait IGlobal extends IGeneratedAPI {
     * Gets the MyDocumenstFolder Path in the system.
     * @returns A Promise of the MyDocumenstFolder Path
     */
-  def getMyDocumentsFolder(): js.Promise[AnonQFolder] = js.native
+  def getMyDocumentsFolder(): js.Promise[QFolder] = js.native
   /**
     * Returns the list of the ODBC connectors that are installed in the system.
     * @returns A Promise Array of OdbcDsn

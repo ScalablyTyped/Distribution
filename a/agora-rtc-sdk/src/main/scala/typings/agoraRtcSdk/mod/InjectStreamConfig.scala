@@ -26,7 +26,7 @@ trait InjectStreamConfig extends js.Object {
     *
     * Positive integer. The default value is 48. The value range is [1, 10000].
     *
-    * **Note:**
+    * **Note**
     *
     * Agora recommends that you stay with the default value and not reset it at this point of time.
     */
@@ -36,7 +36,7 @@ trait InjectStreamConfig extends js.Object {
     *
     * Positive integer. The default value is 1. The value range is [1, 2].
     *
-    * **Note:**
+    * **Note**
     *
     * Agora recommends that you stay with the default value and not reset it at this point of time.
     */
@@ -48,7 +48,7 @@ trait InjectStreamConfig extends js.Object {
     * - 44100: (Default) 44.1 kHz
     * - 48000: 48 kHz
     *
-    * **Note:**
+    * **Note**
     *
     * Agora recommends that you stay with the default value and not reset it at this point of time.
     */
@@ -64,7 +64,7 @@ trait InjectStreamConfig extends js.Object {
     *
     * Positive integer. The default value is 400 Kbps. The value range is [1, 10000].
     *
-    * **Note:**
+    * **Note**
     *
     * The setting of the video bitrate is closely linked to the resolution. If the video bitrate you set is beyond the reasonable range, the SDK will set it within the reasonable range instead.
     */
@@ -92,24 +92,24 @@ trait InjectStreamConfig extends js.Object {
 object InjectStreamConfig {
   @scala.inline
   def apply(
-    audioBitrate: Int | Double = null,
-    audioChannels: Int | Double = null,
-    audioSampleRate: Int | Double = null,
-    height: Int | Double = null,
-    videoBitrate: Int | Double = null,
-    videoFramerate: Int | Double = null,
-    videoGop: Int | Double = null,
-    width: Int | Double = null
+    audioBitrate: js.UndefOr[Double] = js.undefined,
+    audioChannels: js.UndefOr[Double] = js.undefined,
+    audioSampleRate: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    videoBitrate: js.UndefOr[Double] = js.undefined,
+    videoFramerate: js.UndefOr[Double] = js.undefined,
+    videoGop: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): InjectStreamConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioBitrate != null) __obj.updateDynamic("audioBitrate")(audioBitrate.asInstanceOf[js.Any])
-    if (audioChannels != null) __obj.updateDynamic("audioChannels")(audioChannels.asInstanceOf[js.Any])
-    if (audioSampleRate != null) __obj.updateDynamic("audioSampleRate")(audioSampleRate.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (videoBitrate != null) __obj.updateDynamic("videoBitrate")(videoBitrate.asInstanceOf[js.Any])
-    if (videoFramerate != null) __obj.updateDynamic("videoFramerate")(videoFramerate.asInstanceOf[js.Any])
-    if (videoGop != null) __obj.updateDynamic("videoGop")(videoGop.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioBitrate)) __obj.updateDynamic("audioBitrate")(audioBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioChannels)) __obj.updateDynamic("audioChannels")(audioChannels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioSampleRate)) __obj.updateDynamic("audioSampleRate")(audioSampleRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoBitrate)) __obj.updateDynamic("videoBitrate")(videoBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoFramerate)) __obj.updateDynamic("videoFramerate")(videoFramerate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoGop)) __obj.updateDynamic("videoGop")(videoGop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectStreamConfig]
   }
 }

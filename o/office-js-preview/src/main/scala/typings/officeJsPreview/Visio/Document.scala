@@ -1,12 +1,12 @@
 package typings.officeJsPreview.Visio
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.Visio.Interfaces.DocumentData
 import typings.officeJsPreview.Visio.Interfaces.DocumentLoadOptions
 import typings.officeJsPreview.Visio.Interfaces.DocumentUpdateData
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.Document")
 @js.native
-class Document () extends ClientObject {
+trait Document extends ClientObject {
   /**
     *
     * Represents a Visio application instance that contains this document. Read-only.
@@ -123,8 +122,8 @@ class Document () extends ClientObject {
   def load(): Document = js.native
   def load(option: String): Document = js.native
   def load(option: js.Array[String]): Document = js.native
-  def load(option: AnonExpand): Document = js.native
   def load(option: DocumentLoadOptions): Document = js.native
+  def load(option: Expand): Document = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Document): Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

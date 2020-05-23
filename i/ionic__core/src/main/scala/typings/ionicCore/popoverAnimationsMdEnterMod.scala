@@ -1,7 +1,7 @@
 package typings.ionicCore
 
 import typings.ionicCore.animationInterfaceMod.Animation
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object popoverAnimationsMdEnterMod extends js.Object {
   def mdEnterAnimation(baseEl: HTMLElement): Animation = js.native
-  def mdEnterAnimation(baseEl: HTMLElement, ev: Event_): Animation = js.native
+  def mdEnterAnimation(baseEl: HTMLElement, ev: Event): Animation = js.native
 }
 

@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait UntagResourceRequest extends js.Object {
+  /**
+    * 
+    */
   var ResourceARN: ResourceArn = js.native
+  /**
+    * 
+    */
   var TagKeys: TagKeyList = js.native
 }
 

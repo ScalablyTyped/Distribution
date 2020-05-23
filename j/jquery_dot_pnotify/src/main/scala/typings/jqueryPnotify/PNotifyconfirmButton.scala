@@ -24,7 +24,7 @@ object PNotifyconfirmButton {
   ): PNotifyconfirmButton = {
     val __obj = js.Dynamic.literal(click = js.Any.fromFunction2(click))
     if (addClass != null) __obj.updateDynamic("addClass")(addClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(promptTrigger)) __obj.updateDynamic("promptTrigger")(promptTrigger.asInstanceOf[js.Any])
+    if (!js.isUndefined(promptTrigger)) __obj.updateDynamic("promptTrigger")(promptTrigger.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNotifyconfirmButton]
   }

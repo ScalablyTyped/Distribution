@@ -31,7 +31,7 @@ object ColorScaleConditionalFormatData {
   ): ColorScaleConditionalFormatData = {
     val __obj = js.Dynamic.literal()
     if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (!js.isUndefined(threeColorScale)) __obj.updateDynamic("threeColorScale")(threeColorScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(threeColorScale)) __obj.updateDynamic("threeColorScale")(threeColorScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorScaleConditionalFormatData]
   }
 }

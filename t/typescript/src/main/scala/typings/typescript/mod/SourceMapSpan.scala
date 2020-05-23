@@ -27,10 +27,10 @@ object SourceMapSpan {
     sourceColumn: Double,
     sourceIndex: Double,
     sourceLine: Double,
-    nameIndex: Int | Double = null
+    nameIndex: js.UndefOr[Double] = js.undefined
   ): SourceMapSpan = {
     val __obj = js.Dynamic.literal(emittedColumn = emittedColumn.asInstanceOf[js.Any], emittedLine = emittedLine.asInstanceOf[js.Any], sourceColumn = sourceColumn.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], sourceLine = sourceLine.asInstanceOf[js.Any])
-    if (nameIndex != null) __obj.updateDynamic("nameIndex")(nameIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(nameIndex)) __obj.updateDynamic("nameIndex")(nameIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMapSpan]
   }
 }

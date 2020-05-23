@@ -19,14 +19,14 @@ object EmbedProps {
     allow: String = null,
     allowFullScreen: js.UndefOr[Boolean] = js.undefined,
     frameBorder: Double | String = null,
-    ratio: Int | Double = null,
+    ratio: js.UndefOr[Double] = js.undefined,
     src: String = null
   ): EmbedProps = {
     val __obj = js.Dynamic.literal()
     if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.get.asInstanceOf[js.Any])
     if (frameBorder != null) __obj.updateDynamic("frameBorder")(frameBorder.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbedProps]
   }

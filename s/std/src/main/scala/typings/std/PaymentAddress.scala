@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,24 @@ trait PaymentAddress extends js.Object {
   def toJSON(): js.Any
 }
 
-@JSGlobal("PaymentAddress")
-@js.native
-object PaymentAddress extends Instantiable0[PaymentAddress]
+object PaymentAddress {
+  @scala.inline
+  def apply(
+    addressLine: js.Array[java.lang.String],
+    city: java.lang.String,
+    country: java.lang.String,
+    dependentLocality: java.lang.String,
+    languageCode: java.lang.String,
+    organization: java.lang.String,
+    phone: java.lang.String,
+    postalCode: java.lang.String,
+    recipient: java.lang.String,
+    region: java.lang.String,
+    sortingCode: java.lang.String,
+    toJSON: () => js.Any
+  ): PaymentAddress = {
+    val __obj = js.Dynamic.literal(addressLine = addressLine.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], dependentLocality = dependentLocality.asInstanceOf[js.Any], languageCode = languageCode.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], sortingCode = sortingCode.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.asInstanceOf[PaymentAddress]
+  }
+}
 

@@ -1,7 +1,7 @@
 package typings.babylonjs.webXRAbstractMotionControllerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.AnonGamepadIndices
+import typings.babylonjs.anon.GamepadIndices
 import typings.babylonjs.babylonjsStrings._empty
 import typings.babylonjs.babylonjsStrings.`xr-standard`
 import scala.scalajs.js
@@ -19,7 +19,7 @@ trait IMotionControllerLayout extends js.Object {
   var components: /**
     * A map of component Ids
     */
-  StringDictionary[AnonGamepadIndices]
+  StringDictionary[GamepadIndices]
   /**
     * Is it xr standard mapping or not
     */
@@ -41,7 +41,7 @@ object IMotionControllerLayout {
     components: /**
     * A map of component Ids
     */
-  StringDictionary[AnonGamepadIndices],
+  StringDictionary[GamepadIndices],
     gamepadMapping: _empty | `xr-standard`,
     rootNodeName: String,
     selectComponentId: String

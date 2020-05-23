@@ -1,493 +1,493 @@
 package typings.baseui.phoneInputMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.baseui.Anon0
-import typings.baseui.Anon1
-import typings.baseui.Anon10
-import typings.baseui.Anon100
-import typings.baseui.Anon101
-import typings.baseui.Anon102
-import typings.baseui.Anon103
-import typings.baseui.Anon104
-import typings.baseui.Anon105
-import typings.baseui.Anon106
-import typings.baseui.Anon107
-import typings.baseui.Anon108
-import typings.baseui.Anon109
-import typings.baseui.Anon11
-import typings.baseui.Anon110
-import typings.baseui.Anon111
-import typings.baseui.Anon112
-import typings.baseui.Anon113
-import typings.baseui.Anon114
-import typings.baseui.Anon115
-import typings.baseui.Anon116
-import typings.baseui.Anon117
-import typings.baseui.Anon118
-import typings.baseui.Anon119
-import typings.baseui.Anon12
-import typings.baseui.Anon120
-import typings.baseui.Anon121
-import typings.baseui.Anon122
-import typings.baseui.Anon123
-import typings.baseui.Anon124
-import typings.baseui.Anon125
-import typings.baseui.Anon126
-import typings.baseui.Anon127
-import typings.baseui.Anon128
-import typings.baseui.Anon129
-import typings.baseui.Anon13
-import typings.baseui.Anon130
-import typings.baseui.Anon131
-import typings.baseui.Anon132
-import typings.baseui.Anon133
-import typings.baseui.Anon134
-import typings.baseui.Anon135
-import typings.baseui.Anon136
-import typings.baseui.Anon137
-import typings.baseui.Anon138
-import typings.baseui.Anon139
-import typings.baseui.Anon14
-import typings.baseui.Anon140
-import typings.baseui.Anon141
-import typings.baseui.Anon142
-import typings.baseui.Anon143
-import typings.baseui.Anon144
-import typings.baseui.Anon145
-import typings.baseui.Anon146
-import typings.baseui.Anon147
-import typings.baseui.Anon148
-import typings.baseui.Anon149
-import typings.baseui.Anon15
-import typings.baseui.Anon150
-import typings.baseui.Anon151
-import typings.baseui.Anon152
-import typings.baseui.Anon153
-import typings.baseui.Anon154
-import typings.baseui.Anon155
-import typings.baseui.Anon156
-import typings.baseui.Anon157
-import typings.baseui.Anon158
-import typings.baseui.Anon159
-import typings.baseui.Anon16
-import typings.baseui.Anon160
-import typings.baseui.Anon161
-import typings.baseui.Anon162
-import typings.baseui.Anon163
-import typings.baseui.Anon164
-import typings.baseui.Anon165
-import typings.baseui.Anon166
-import typings.baseui.Anon167
-import typings.baseui.Anon168
-import typings.baseui.Anon169
-import typings.baseui.Anon17
-import typings.baseui.Anon170
-import typings.baseui.Anon171
-import typings.baseui.Anon172
-import typings.baseui.Anon173
-import typings.baseui.Anon174
-import typings.baseui.Anon175
-import typings.baseui.Anon176
-import typings.baseui.Anon177
-import typings.baseui.Anon178
-import typings.baseui.Anon179
-import typings.baseui.Anon18
-import typings.baseui.Anon180
-import typings.baseui.Anon181
-import typings.baseui.Anon182
-import typings.baseui.Anon183
-import typings.baseui.Anon184
-import typings.baseui.Anon185
-import typings.baseui.Anon186
-import typings.baseui.Anon187
-import typings.baseui.Anon188
-import typings.baseui.Anon189
-import typings.baseui.Anon19
-import typings.baseui.Anon190
-import typings.baseui.Anon191
-import typings.baseui.Anon192
-import typings.baseui.Anon193
-import typings.baseui.Anon194
-import typings.baseui.Anon195
-import typings.baseui.Anon196
-import typings.baseui.Anon197
-import typings.baseui.Anon198
-import typings.baseui.Anon199
-import typings.baseui.Anon2
-import typings.baseui.Anon20
-import typings.baseui.Anon200
-import typings.baseui.Anon201
-import typings.baseui.Anon202
-import typings.baseui.Anon203
-import typings.baseui.Anon204
-import typings.baseui.Anon205
-import typings.baseui.Anon206
-import typings.baseui.Anon207
-import typings.baseui.Anon208
-import typings.baseui.Anon209
-import typings.baseui.Anon21
-import typings.baseui.Anon210
-import typings.baseui.Anon211
-import typings.baseui.Anon212
-import typings.baseui.Anon213
-import typings.baseui.Anon214
-import typings.baseui.Anon215
-import typings.baseui.Anon216
-import typings.baseui.Anon217
-import typings.baseui.Anon218
-import typings.baseui.Anon219
-import typings.baseui.Anon22
-import typings.baseui.Anon220
-import typings.baseui.Anon221
-import typings.baseui.Anon222
-import typings.baseui.Anon223
-import typings.baseui.Anon224
-import typings.baseui.Anon225
-import typings.baseui.Anon226
-import typings.baseui.Anon227
-import typings.baseui.Anon228
-import typings.baseui.Anon229
-import typings.baseui.Anon23
-import typings.baseui.Anon230
-import typings.baseui.Anon231
-import typings.baseui.Anon232
-import typings.baseui.Anon233
-import typings.baseui.Anon234
-import typings.baseui.Anon235
-import typings.baseui.Anon24
-import typings.baseui.Anon25
-import typings.baseui.Anon26
-import typings.baseui.Anon27
-import typings.baseui.Anon28
-import typings.baseui.Anon29
-import typings.baseui.Anon3
-import typings.baseui.Anon30
-import typings.baseui.Anon31
-import typings.baseui.Anon32
-import typings.baseui.Anon33
-import typings.baseui.Anon34
-import typings.baseui.Anon35
-import typings.baseui.Anon36
-import typings.baseui.Anon37
-import typings.baseui.Anon38
-import typings.baseui.Anon39
-import typings.baseui.Anon4
-import typings.baseui.Anon40
-import typings.baseui.Anon41
-import typings.baseui.Anon42
-import typings.baseui.Anon43
-import typings.baseui.Anon44
-import typings.baseui.Anon45
-import typings.baseui.Anon46
-import typings.baseui.Anon47
-import typings.baseui.Anon48
-import typings.baseui.Anon49
-import typings.baseui.Anon5
-import typings.baseui.Anon50
-import typings.baseui.Anon51
-import typings.baseui.Anon52
-import typings.baseui.Anon53
-import typings.baseui.Anon54
-import typings.baseui.Anon55
-import typings.baseui.Anon56
-import typings.baseui.Anon57
-import typings.baseui.Anon58
-import typings.baseui.Anon59
-import typings.baseui.Anon6
-import typings.baseui.Anon60
-import typings.baseui.Anon61
-import typings.baseui.Anon62
-import typings.baseui.Anon63
-import typings.baseui.Anon64
-import typings.baseui.Anon65
-import typings.baseui.Anon66
-import typings.baseui.Anon67
-import typings.baseui.Anon68
-import typings.baseui.Anon69
-import typings.baseui.Anon7
-import typings.baseui.Anon70
-import typings.baseui.Anon71
-import typings.baseui.Anon72
-import typings.baseui.Anon73
-import typings.baseui.Anon74
-import typings.baseui.Anon75
-import typings.baseui.Anon76
-import typings.baseui.Anon77
-import typings.baseui.Anon78
-import typings.baseui.Anon79
-import typings.baseui.Anon8
-import typings.baseui.Anon80
-import typings.baseui.Anon81
-import typings.baseui.Anon82
-import typings.baseui.Anon83
-import typings.baseui.Anon84
-import typings.baseui.Anon85
-import typings.baseui.Anon86
-import typings.baseui.Anon87
-import typings.baseui.Anon88
-import typings.baseui.Anon89
-import typings.baseui.Anon9
-import typings.baseui.Anon90
-import typings.baseui.Anon91
-import typings.baseui.Anon92
-import typings.baseui.Anon93
-import typings.baseui.Anon94
-import typings.baseui.Anon95
-import typings.baseui.Anon96
-import typings.baseui.Anon97
-import typings.baseui.Anon98
-import typings.baseui.Anon99
-import typings.baseui.AnonDialCode
-import typings.baseui.AnonDialCodeId
-import typings.baseui.AnonDialCodeIdLabel
-import typings.baseui.AnonIdLabel
-import typings.baseui.AnonLabel
+import typings.baseui.anon.DialCode
+import typings.baseui.anon.DialCodeId
+import typings.baseui.anon.DialCodeIdLabel
+import typings.baseui.anon.IdLabel
+import typings.baseui.anon.Label
+import typings.baseui.anon.`0`
+import typings.baseui.anon.`100`
+import typings.baseui.anon.`101`
+import typings.baseui.anon.`102`
+import typings.baseui.anon.`103`
+import typings.baseui.anon.`104`
+import typings.baseui.anon.`105`
+import typings.baseui.anon.`106`
+import typings.baseui.anon.`107`
+import typings.baseui.anon.`108`
+import typings.baseui.anon.`109`
+import typings.baseui.anon.`10`
+import typings.baseui.anon.`110`
+import typings.baseui.anon.`111`
+import typings.baseui.anon.`112`
+import typings.baseui.anon.`113`
+import typings.baseui.anon.`114`
+import typings.baseui.anon.`115`
+import typings.baseui.anon.`116`
+import typings.baseui.anon.`117`
+import typings.baseui.anon.`118`
+import typings.baseui.anon.`119`
+import typings.baseui.anon.`11`
+import typings.baseui.anon.`120`
+import typings.baseui.anon.`121`
+import typings.baseui.anon.`122`
+import typings.baseui.anon.`123`
+import typings.baseui.anon.`124`
+import typings.baseui.anon.`125`
+import typings.baseui.anon.`126`
+import typings.baseui.anon.`127`
+import typings.baseui.anon.`128`
+import typings.baseui.anon.`129`
+import typings.baseui.anon.`12`
+import typings.baseui.anon.`130`
+import typings.baseui.anon.`131`
+import typings.baseui.anon.`132`
+import typings.baseui.anon.`133`
+import typings.baseui.anon.`134`
+import typings.baseui.anon.`135`
+import typings.baseui.anon.`136`
+import typings.baseui.anon.`137`
+import typings.baseui.anon.`138`
+import typings.baseui.anon.`139`
+import typings.baseui.anon.`13`
+import typings.baseui.anon.`140`
+import typings.baseui.anon.`141`
+import typings.baseui.anon.`142`
+import typings.baseui.anon.`143`
+import typings.baseui.anon.`144`
+import typings.baseui.anon.`145`
+import typings.baseui.anon.`146`
+import typings.baseui.anon.`147`
+import typings.baseui.anon.`148`
+import typings.baseui.anon.`149`
+import typings.baseui.anon.`14`
+import typings.baseui.anon.`150`
+import typings.baseui.anon.`151`
+import typings.baseui.anon.`152`
+import typings.baseui.anon.`153`
+import typings.baseui.anon.`154`
+import typings.baseui.anon.`155`
+import typings.baseui.anon.`156`
+import typings.baseui.anon.`157`
+import typings.baseui.anon.`158`
+import typings.baseui.anon.`159`
+import typings.baseui.anon.`15`
+import typings.baseui.anon.`160`
+import typings.baseui.anon.`161`
+import typings.baseui.anon.`162`
+import typings.baseui.anon.`163`
+import typings.baseui.anon.`164`
+import typings.baseui.anon.`165`
+import typings.baseui.anon.`166`
+import typings.baseui.anon.`167`
+import typings.baseui.anon.`168`
+import typings.baseui.anon.`169`
+import typings.baseui.anon.`16`
+import typings.baseui.anon.`170`
+import typings.baseui.anon.`171`
+import typings.baseui.anon.`172`
+import typings.baseui.anon.`173`
+import typings.baseui.anon.`174`
+import typings.baseui.anon.`175`
+import typings.baseui.anon.`176`
+import typings.baseui.anon.`177`
+import typings.baseui.anon.`178`
+import typings.baseui.anon.`179`
+import typings.baseui.anon.`17`
+import typings.baseui.anon.`180`
+import typings.baseui.anon.`181`
+import typings.baseui.anon.`182`
+import typings.baseui.anon.`183`
+import typings.baseui.anon.`184`
+import typings.baseui.anon.`185`
+import typings.baseui.anon.`186`
+import typings.baseui.anon.`187`
+import typings.baseui.anon.`188`
+import typings.baseui.anon.`189`
+import typings.baseui.anon.`18`
+import typings.baseui.anon.`190`
+import typings.baseui.anon.`191`
+import typings.baseui.anon.`192`
+import typings.baseui.anon.`193`
+import typings.baseui.anon.`194`
+import typings.baseui.anon.`195`
+import typings.baseui.anon.`196`
+import typings.baseui.anon.`197`
+import typings.baseui.anon.`198`
+import typings.baseui.anon.`199`
+import typings.baseui.anon.`19`
+import typings.baseui.anon.`1`
+import typings.baseui.anon.`200`
+import typings.baseui.anon.`201`
+import typings.baseui.anon.`202`
+import typings.baseui.anon.`203`
+import typings.baseui.anon.`204`
+import typings.baseui.anon.`205`
+import typings.baseui.anon.`206`
+import typings.baseui.anon.`207`
+import typings.baseui.anon.`208`
+import typings.baseui.anon.`209`
+import typings.baseui.anon.`20`
+import typings.baseui.anon.`210`
+import typings.baseui.anon.`211`
+import typings.baseui.anon.`212`
+import typings.baseui.anon.`213`
+import typings.baseui.anon.`214`
+import typings.baseui.anon.`215`
+import typings.baseui.anon.`216`
+import typings.baseui.anon.`217`
+import typings.baseui.anon.`218`
+import typings.baseui.anon.`219`
+import typings.baseui.anon.`21`
+import typings.baseui.anon.`220`
+import typings.baseui.anon.`221`
+import typings.baseui.anon.`222`
+import typings.baseui.anon.`223`
+import typings.baseui.anon.`224`
+import typings.baseui.anon.`225`
+import typings.baseui.anon.`226`
+import typings.baseui.anon.`227`
+import typings.baseui.anon.`228`
+import typings.baseui.anon.`229`
+import typings.baseui.anon.`22`
+import typings.baseui.anon.`230`
+import typings.baseui.anon.`231`
+import typings.baseui.anon.`232`
+import typings.baseui.anon.`233`
+import typings.baseui.anon.`234`
+import typings.baseui.anon.`235`
+import typings.baseui.anon.`23`
+import typings.baseui.anon.`24`
+import typings.baseui.anon.`25`
+import typings.baseui.anon.`26`
+import typings.baseui.anon.`27`
+import typings.baseui.anon.`28`
+import typings.baseui.anon.`29`
+import typings.baseui.anon.`2`
+import typings.baseui.anon.`30`
+import typings.baseui.anon.`31`
+import typings.baseui.anon.`32`
+import typings.baseui.anon.`33`
+import typings.baseui.anon.`34`
+import typings.baseui.anon.`35`
+import typings.baseui.anon.`36`
+import typings.baseui.anon.`37`
+import typings.baseui.anon.`38`
+import typings.baseui.anon.`39`
+import typings.baseui.anon.`3`
+import typings.baseui.anon.`40`
+import typings.baseui.anon.`41`
+import typings.baseui.anon.`42`
+import typings.baseui.anon.`43`
+import typings.baseui.anon.`44`
+import typings.baseui.anon.`45`
+import typings.baseui.anon.`46`
+import typings.baseui.anon.`47`
+import typings.baseui.anon.`48`
+import typings.baseui.anon.`49`
+import typings.baseui.anon.`4`
+import typings.baseui.anon.`50`
+import typings.baseui.anon.`51`
+import typings.baseui.anon.`52`
+import typings.baseui.anon.`53`
+import typings.baseui.anon.`54`
+import typings.baseui.anon.`55`
+import typings.baseui.anon.`56`
+import typings.baseui.anon.`57`
+import typings.baseui.anon.`58`
+import typings.baseui.anon.`59`
+import typings.baseui.anon.`5`
+import typings.baseui.anon.`60`
+import typings.baseui.anon.`61`
+import typings.baseui.anon.`62`
+import typings.baseui.anon.`63`
+import typings.baseui.anon.`64`
+import typings.baseui.anon.`65`
+import typings.baseui.anon.`66`
+import typings.baseui.anon.`67`
+import typings.baseui.anon.`68`
+import typings.baseui.anon.`69`
+import typings.baseui.anon.`6`
+import typings.baseui.anon.`70`
+import typings.baseui.anon.`71`
+import typings.baseui.anon.`72`
+import typings.baseui.anon.`73`
+import typings.baseui.anon.`74`
+import typings.baseui.anon.`75`
+import typings.baseui.anon.`76`
+import typings.baseui.anon.`77`
+import typings.baseui.anon.`78`
+import typings.baseui.anon.`79`
+import typings.baseui.anon.`7`
+import typings.baseui.anon.`80`
+import typings.baseui.anon.`81`
+import typings.baseui.anon.`82`
+import typings.baseui.anon.`83`
+import typings.baseui.anon.`84`
+import typings.baseui.anon.`85`
+import typings.baseui.anon.`86`
+import typings.baseui.anon.`87`
+import typings.baseui.anon.`88`
+import typings.baseui.anon.`89`
+import typings.baseui.anon.`8`
+import typings.baseui.anon.`90`
+import typings.baseui.anon.`91`
+import typings.baseui.anon.`92`
+import typings.baseui.anon.`93`
+import typings.baseui.anon.`94`
+import typings.baseui.anon.`95`
+import typings.baseui.anon.`96`
+import typings.baseui.anon.`97`
+import typings.baseui.anon.`98`
+import typings.baseui.anon.`99`
+import typings.baseui.anon.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait COUNTRIES extends js.Object {
-  var AD: AnonDialCodeIdLabel
-  var AE: Anon222
-  var AF: AnonDialCode
-  var AG: Anon2
-  var AI: Anon1
-  var AL: AnonLabel
-  var AM: Anon4
-  var AO: Anon0
-  var AR: Anon3
-  var AS: AnonIdLabel
-  var AT: Anon7
-  var AU: Anon6
-  var AW: Anon5
-  var AX: Anon235
-  var AZ: Anon8
-  var BA: Anon20
-  var BB: Anon12
-  var BD: Anon11
-  var BE: Anon14
-  var BF: Anon27
-  var BG: Anon26
-  var BH: Anon10
-  var BI: Anon28
-  var BJ: Anon16
-  var BL: Anon172
-  var BM: Anon17
-  var BN: Anon25
-  var BO: Anon19
-  var BR: Anon22
-  var BS: Anon9
-  var BT: Anon18
-  var BW: Anon21
-  var BY: Anon13
-  var BZ: Anon15
-  var CA: Anon31
-  var CC: Anon39
-  var CD: Anon42
-  var CF: Anon34
-  var CG: Anon43
-  var CH: Anon203
-  var CI: Anon46
-  var CK: Anon44
-  var CL: Anon36
-  var CM: Anon30
-  var CN: Anon37
-  var CO: Anon40
-  var CR: Anon45
-  var CU: Anon48
-  var CV: Anon32
-  var CW: Anon49
-  var CX: Anon38
-  var CY: Anon50
-  var CZ: Anon51
-  var DE: Anon73
-  var DJ: Anon53
-  var DK: Anon52
-  var DM: Anon54
-  var DO: Anon55
-  var DZ: AnonDialCodeId
-  var EC: Anon56
-  var EE: Anon61
-  var EG: Anon57
-  var ER: Anon60
-  var ES: Anon196
-  var ET: Anon62
-  var FI: Anon66
-  var FJ: Anon65
-  var FK: Anon63
-  var FM: Anon132
-  var FO: Anon64
-  var FR: Anon67
-  var GA: Anon70
-  var GB: Anon223
-  var GD: Anon78
-  var GE: Anon72
-  var GF: Anon68
-  var GG: Anon82
-  var GH: Anon74
-  var GI: Anon75
-  var GL: Anon77
-  var GM: Anon71
-  var GN: Anon83
-  var GP: Anon79
-  var GQ: Anon59
-  var GR: Anon76
-  var GT: Anon81
-  var GU: Anon80
-  var GW: Anon84
-  var GY: Anon85
-  var HK: Anon88
-  var HN: Anon87
-  var HR: Anon47
-  var HT: Anon86
-  var HU: Anon89
-  var ID: Anon92
-  var IE: Anon95
-  var IL: Anon97
-  var IM: Anon96
-  var IN: Anon91
-  var IO: Anon23
-  var IQ: Anon94
-  var IR: Anon93
-  var IS: Anon90
-  var IT: Anon98
-  var JE: Anon101
-  var JM: Anon99
-  var JO: Anon102
-  var JP: Anon100
-  var KE: Anon104
-  var KG: Anon108
-  var KH: Anon29
-  var KI: Anon105
-  var KM: Anon41
-  var KN: Anon174
-  var KP: Anon152
-  var KR: Anon194
-  var KW: Anon107
-  var KY: Anon33
-  var KZ: Anon103
-  var LA: Anon109
-  var LB: Anon111
-  var LC: Anon175
-  var LI: Anon115
-  var LK: Anon197
-  var LR: Anon113
-  var LS: Anon112
-  var LT: Anon116
-  var LU: Anon117
-  var LV: Anon110
-  var LY: Anon114
-  var MA: Anon138
-  var MC: Anon134
-  var MD: Anon133
-  var ME: Anon136
-  var MF: Anon176
-  var MG: Anon120
-  var MH: Anon126
-  var MK: Anon119
-  var ML: Anon124
-  var MM: Anon140
-  var MN: Anon135
-  var MO: Anon118
-  var MP: Anon153
-  var MQ: Anon127
-  var MR: Anon128
-  var MS: Anon137
-  var MT: Anon125
-  var MU: Anon129
-  var MV: Anon123
-  var MW: Anon121
-  var MX: Anon131
-  var MY: Anon122
-  var MZ: Anon139
-  var NA: Anon141
-  var NC: Anon145
-  var NE: Anon148
-  var NF: Anon151
-  var NG: Anon149
-  var NI: Anon147
-  var NL: Anon144
-  var NO: Anon154
-  var NP: Anon143
-  var NR: Anon142
-  var NU: Anon150
-  var NZ: Anon146
-  var OM: Anon155
-  var PA: Anon159
-  var PE: Anon162
-  var PF: Anon69
-  var PG: Anon160
-  var PH: Anon163
-  var PK: Anon156
-  var PL: Anon164
-  var PM: Anon177
-  var PR: Anon166
-  var PS: Anon158
-  var PT: Anon165
-  var PW: Anon157
-  var PY: Anon161
-  var QA: Anon167
-  var RE: Anon168
-  var RO: Anon169
-  var RS: Anon184
-  var RU: Anon170
-  var RW: Anon171
-  var SA: Anon182
-  var SB: Anon191
-  var SC: Anon185
-  var SD: Anon198
-  var SE: Anon202
-  var SG: Anon187
-  var SH: Anon173
-  var SI: Anon190
-  var SJ: Anon200
-  var SK: Anon189
-  var SL: Anon186
-  var SM: Anon180
-  var SN: Anon183
-  var SO: Anon192
-  var SR: Anon199
-  var SS: Anon195
-  var ST: Anon181
-  var SV: Anon58
-  var SX: Anon188
-  var SY: Anon204
-  var SZ: Anon201
-  var TC: Anon217
-  var TD: Anon35
-  var TG: Anon210
-  var TH: Anon208
-  var TJ: Anon206
-  var TK: Anon211
-  var TL: Anon209
-  var TM: Anon216
-  var TN: Anon214
-  var TO: Anon212
-  var TR: Anon215
-  var TT: Anon213
-  var TV: Anon218
-  var TW: Anon205
-  var TZ: Anon207
-  var UA: Anon221
-  var UG: Anon220
-  var US: Anon224
-  var UY: Anon225
-  var UZ: Anon226
-  var VA: Anon228
-  var VC: Anon178
-  var VE: Anon229
-  var VG: Anon24
-  var VI: Anon219
-  var VN: Anon230
-  var VU: Anon227
-  var WF: Anon231
-  var WS: Anon179
-  var XK: Anon106
-  var YE: Anon232
-  var YT: Anon130
-  var ZA: Anon193
-  var ZM: Anon233
-  var ZW: Anon234
+  var AD: DialCodeIdLabel
+  var AE: `222`
+  var AF: DialCode
+  var AG: `2`
+  var AI: `1`
+  var AL: Label
+  var AM: `4`
+  var AO: `0`
+  var AR: `3`
+  var AS: IdLabel
+  var AT: `7`
+  var AU: `6`
+  var AW: `5`
+  var AX: `235`
+  var AZ: `8`
+  var BA: `20`
+  var BB: `12`
+  var BD: `11`
+  var BE: `14`
+  var BF: `27`
+  var BG: `26`
+  var BH: `10`
+  var BI: `28`
+  var BJ: `16`
+  var BL: `172`
+  var BM: `17`
+  var BN: `25`
+  var BO: `19`
+  var BR: `22`
+  var BS: `9`
+  var BT: `18`
+  var BW: `21`
+  var BY: `13`
+  var BZ: `15`
+  var CA: `31`
+  var CC: `39`
+  var CD: `42`
+  var CF: `34`
+  var CG: `43`
+  var CH: `203`
+  var CI: `46`
+  var CK: `44`
+  var CL: `36`
+  var CM: `30`
+  var CN: `37`
+  var CO: `40`
+  var CR: `45`
+  var CU: `48`
+  var CV: `32`
+  var CW: `49`
+  var CX: `38`
+  var CY: `50`
+  var CZ: `51`
+  var DE: `73`
+  var DJ: `53`
+  var DK: `52`
+  var DM: `54`
+  var DO: `55`
+  var DZ: DialCodeId
+  var EC: `56`
+  var EE: `61`
+  var EG: `57`
+  var ER: `60`
+  var ES: `196`
+  var ET: `62`
+  var FI: `66`
+  var FJ: `65`
+  var FK: `63`
+  var FM: `132`
+  var FO: `64`
+  var FR: `67`
+  var GA: `70`
+  var GB: `223`
+  var GD: `78`
+  var GE: `72`
+  var GF: `68`
+  var GG: `82`
+  var GH: `74`
+  var GI: `75`
+  var GL: `77`
+  var GM: `71`
+  var GN: `83`
+  var GP: `79`
+  var GQ: `59`
+  var GR: `76`
+  var GT: `81`
+  var GU: `80`
+  var GW: `84`
+  var GY: `85`
+  var HK: `88`
+  var HN: `87`
+  var HR: `47`
+  var HT: `86`
+  var HU: `89`
+  var ID: `92`
+  var IE: `95`
+  var IL: `97`
+  var IM: `96`
+  var IN: `91`
+  var IO: `23`
+  var IQ: `94`
+  var IR: `93`
+  var IS: `90`
+  var IT: `98`
+  var JE: `101`
+  var JM: `99`
+  var JO: `102`
+  var JP: `100`
+  var KE: `104`
+  var KG: `108`
+  var KH: `29`
+  var KI: `105`
+  var KM: `41`
+  var KN: `174`
+  var KP: `152`
+  var KR: `194`
+  var KW: `107`
+  var KY: `33`
+  var KZ: `103`
+  var LA: `109`
+  var LB: `111`
+  var LC: `175`
+  var LI: `115`
+  var LK: `197`
+  var LR: `113`
+  var LS: `112`
+  var LT: `116`
+  var LU: `117`
+  var LV: `110`
+  var LY: `114`
+  var MA: `138`
+  var MC: `134`
+  var MD: `133`
+  var ME: `136`
+  var MF: `176`
+  var MG: `120`
+  var MH: `126`
+  var MK: `119`
+  var ML: `124`
+  var MM: `140`
+  var MN: `135`
+  var MO: `118`
+  var MP: `153`
+  var MQ: `127`
+  var MR: `128`
+  var MS: `137`
+  var MT: `125`
+  var MU: `129`
+  var MV: `123`
+  var MW: `121`
+  var MX: `131`
+  var MY: `122`
+  var MZ: `139`
+  var NA: `141`
+  var NC: `145`
+  var NE: `148`
+  var NF: `151`
+  var NG: `149`
+  var NI: `147`
+  var NL: `144`
+  var NO: `154`
+  var NP: `143`
+  var NR: `142`
+  var NU: `150`
+  var NZ: `146`
+  var OM: `155`
+  var PA: `159`
+  var PE: `162`
+  var PF: `69`
+  var PG: `160`
+  var PH: `163`
+  var PK: `156`
+  var PL: `164`
+  var PM: `177`
+  var PR: `166`
+  var PS: `158`
+  var PT: `165`
+  var PW: `157`
+  var PY: `161`
+  var QA: `167`
+  var RE: `168`
+  var RO: `169`
+  var RS: `184`
+  var RU: `170`
+  var RW: `171`
+  var SA: `182`
+  var SB: `191`
+  var SC: `185`
+  var SD: `198`
+  var SE: `202`
+  var SG: `187`
+  var SH: `173`
+  var SI: `190`
+  var SJ: `200`
+  var SK: `189`
+  var SL: `186`
+  var SM: `180`
+  var SN: `183`
+  var SO: `192`
+  var SR: `199`
+  var SS: `195`
+  var ST: `181`
+  var SV: `58`
+  var SX: `188`
+  var SY: `204`
+  var SZ: `201`
+  var TC: `217`
+  var TD: `35`
+  var TG: `210`
+  var TH: `208`
+  var TJ: `206`
+  var TK: `211`
+  var TL: `209`
+  var TM: `216`
+  var TN: `214`
+  var TO: `212`
+  var TR: `215`
+  var TT: `213`
+  var TV: `218`
+  var TW: `205`
+  var TZ: `207`
+  var UA: `221`
+  var UG: `220`
+  var US: `224`
+  var UY: `225`
+  var UZ: `226`
+  var VA: `228`
+  var VC: `178`
+  var VE: `229`
+  var VG: `24`
+  var VI: `219`
+  var VN: `230`
+  var VU: `227`
+  var WF: `231`
+  var WS: `179`
+  var XK: `106`
+  var YE: `232`
+  var YT: `130`
+  var ZA: `193`
+  var ZM: `233`
+  var ZW: `234`
 }
 
 @JSImport("baseui/phone-input", "COUNTRIES")

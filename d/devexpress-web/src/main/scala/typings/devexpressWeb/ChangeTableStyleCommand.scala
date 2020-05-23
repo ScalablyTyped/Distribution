@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the selected table's style.
   */
-@JSGlobal("ChangeTableStyleCommand")
 @js.native
-class ChangeTableStyleCommand () extends CommandBase {
+trait ChangeTableStyleCommand extends CommandBase {
   /**
     * Executes the ChangeTableStyleCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param style A TableStyle object specifying the style applying to the table.

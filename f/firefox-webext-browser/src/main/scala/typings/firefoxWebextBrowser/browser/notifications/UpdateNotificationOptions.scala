@@ -1,6 +1,6 @@
 package typings.firefoxWebextBrowser.browser.notifications
 
-import typings.firefoxWebextBrowser.AnonIconUrl
+import typings.firefoxWebextBrowser.anon.IconUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait UpdateNotificationOptions extends js.Object {
     * Text and icons for up to two notification action buttons.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var buttons: js.UndefOr[js.Array[AnonIconUrl]] = js.undefined
+  var buttons: js.UndefOr[js.Array[IconUrl]] = js.undefined
   /** Alternate notification content with a lower-weight font. */
   var contextMessage: js.UndefOr[String] = js.undefined
   /** A timestamp associated with the notification, in milliseconds past the epoch. */
@@ -43,16 +43,16 @@ object UpdateNotificationOptions {
   @scala.inline
   def apply(
     appIconMaskUrl: String = null,
-    buttons: js.Array[AnonIconUrl] = null,
+    buttons: js.Array[IconUrl] = null,
     contextMessage: String = null,
-    eventTime: Int | Double = null,
+    eventTime: js.UndefOr[Double] = js.undefined,
     iconUrl: String = null,
     imageUrl: String = null,
     isClickable: js.UndefOr[Boolean] = js.undefined,
     items: js.Array[NotificationItem] = null,
     message: String = null,
-    priority: Int | Double = null,
-    progress: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
+    progress: js.UndefOr[Double] = js.undefined,
     title: String = null,
     `type`: TemplateType = null
   ): UpdateNotificationOptions = {
@@ -60,14 +60,14 @@ object UpdateNotificationOptions {
     if (appIconMaskUrl != null) __obj.updateDynamic("appIconMaskUrl")(appIconMaskUrl.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (contextMessage != null) __obj.updateDynamic("contextMessage")(contextMessage.asInstanceOf[js.Any])
-    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventTime)) __obj.updateDynamic("eventTime")(eventTime.get.asInstanceOf[js.Any])
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClickable)) __obj.updateDynamic("isClickable")(isClickable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isClickable)) __obj.updateDynamic("isClickable")(isClickable.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotificationOptions]

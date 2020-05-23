@@ -32,35 +32,35 @@ trait FlexboxProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object FlexboxProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    alignContent: ResponsiveValue[AlignContentProperty, ThemeType] = null,
-    alignItems: ResponsiveValue[AlignItemsProperty, ThemeType] = null,
-    alignSelf: ResponsiveValue[AlignSelfProperty, ThemeType] = null,
-    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem], ThemeType] = null,
-    flexBasis: ResponsiveValue[FlexBasisProperty[TLengthStyledSystem], ThemeType] = null,
-    flexDirection: ResponsiveValue[FlexDirectionProperty, ThemeType] = null,
-    flexGrow: ResponsiveValue[GlobalsNumber, ThemeType] = null,
-    flexShrink: ResponsiveValue[GlobalsNumber, ThemeType] = null,
-    flexWrap: ResponsiveValue[FlexWrapProperty, ThemeType] = null,
-    justifyContent: ResponsiveValue[JustifyContentProperty, ThemeType] = null,
-    justifyItems: ResponsiveValue[JustifyItemsProperty, ThemeType] = null,
-    justifySelf: ResponsiveValue[JustifySelfProperty, ThemeType] = null,
-    order: ResponsiveValue[GlobalsNumber, ThemeType] = null
+  def apply[ThemeType](
+    alignContent: js.UndefOr[Null | (ResponsiveValue[AlignContentProperty, ThemeType])] = js.undefined,
+    alignItems: js.UndefOr[Null | (ResponsiveValue[AlignItemsProperty, ThemeType])] = js.undefined,
+    alignSelf: js.UndefOr[Null | (ResponsiveValue[AlignSelfProperty, ThemeType])] = js.undefined,
+    flex: js.UndefOr[Null | (ResponsiveValue[FlexProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    flexBasis: js.UndefOr[Null | (ResponsiveValue[FlexBasisProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    flexDirection: js.UndefOr[Null | (ResponsiveValue[FlexDirectionProperty, ThemeType])] = js.undefined,
+    flexGrow: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined,
+    flexShrink: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined,
+    flexWrap: js.UndefOr[Null | (ResponsiveValue[FlexWrapProperty, ThemeType])] = js.undefined,
+    justifyContent: js.UndefOr[Null | (ResponsiveValue[JustifyContentProperty, ThemeType])] = js.undefined,
+    justifyItems: js.UndefOr[Null | (ResponsiveValue[JustifyItemsProperty, ThemeType])] = js.undefined,
+    justifySelf: js.UndefOr[Null | (ResponsiveValue[JustifySelfProperty, ThemeType])] = js.undefined,
+    order: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, ThemeType])] = js.undefined
   ): FlexboxProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (flexBasis != null) __obj.updateDynamic("flexBasis")(flexBasis.asInstanceOf[js.Any])
-    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
-    if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
-    if (flexShrink != null) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
-    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (justifyItems != null) __obj.updateDynamic("justifyItems")(justifyItems.asInstanceOf[js.Any])
-    if (justifySelf != null) __obj.updateDynamic("justifySelf")(justifySelf.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignContent)) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignItems)) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignSelf)) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexBasis)) __obj.updateDynamic("flexBasis")(flexBasis.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexDirection)) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexGrow)) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexShrink)) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexWrap)) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(justifyContent)) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(justifyItems)) __obj.updateDynamic("justifyItems")(justifyItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(justifySelf)) __obj.updateDynamic("justifySelf")(justifySelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexboxProps[ThemeType]]
   }
 }

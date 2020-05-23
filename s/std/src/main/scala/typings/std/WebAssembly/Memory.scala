@@ -1,6 +1,5 @@
 package typings.std.WebAssembly
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +10,11 @@ trait Memory extends _ExportValue {
   def grow(delta: Double): Double
 }
 
-@JSGlobal("WebAssembly.Memory")
-@js.native
-object Memory extends Instantiable1[/* descriptor */ MemoryDescriptor, Memory]
+object Memory {
+  @scala.inline
+  def apply(buffer: ArrayBuffer, grow: Double => Double): Memory = {
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], grow = js.Any.fromFunction1(grow))
+    __obj.asInstanceOf[Memory]
+  }
+}
 

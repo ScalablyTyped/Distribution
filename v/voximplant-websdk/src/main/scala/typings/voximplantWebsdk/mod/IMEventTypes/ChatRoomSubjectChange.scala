@@ -6,24 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched if chat room subject was changed
-		*/
+  *    Event dispatched if chat room subject was changed
+  */
 trait ChatRoomSubjectChange extends VoxImplantIMEvent {
   /**
-  			* User id who changed the subject
-  			*/
+    * User id who changed the subject
+    */
   var id: String
   /**
-  			* Resource name
-  			*/
+    * Resource name
+    */
   var resource: String
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
   /**
-  			* New subject
-  			*/
+    * New subject
+    */
   var subject: String
 }
 

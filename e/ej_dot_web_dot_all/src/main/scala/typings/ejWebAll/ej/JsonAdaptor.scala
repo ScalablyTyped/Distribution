@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.JsonAdaptor")
 @js.native
-class JsonAdaptor () extends Adaptor {
+trait JsonAdaptor extends Adaptor {
   def batchRequest(dm: DataManager, changes: Changes, e: js.Any): Changes = js.native
   def insert(dm: DataManager, data: js.Any): js.Any = js.native
   def insert(dm: DataManager, data: js.Any, tableName: String): js.Any = js.native

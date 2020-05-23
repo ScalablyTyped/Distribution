@@ -54,7 +54,7 @@ object IdPOptions {
     getUserFromRequest: /* req */ Request_[ParamsDictionary, _, _, Query] => _ = null,
     inResponseTo: String = null,
     keyEncryptionAlgorighm: String = null,
-    lifetimeInSeconds: Int | Double = null,
+    lifetimeInSeconds: js.UndefOr[Double] = js.undefined,
     profileMapper: ProfileMapperConstructor = null,
     recipient: String = null,
     signResponse: js.UndefOr[Boolean] = js.undefined,
@@ -72,10 +72,10 @@ object IdPOptions {
     if (getUserFromRequest != null) __obj.updateDynamic("getUserFromRequest")(js.Any.fromFunction1(getUserFromRequest))
     if (inResponseTo != null) __obj.updateDynamic("inResponseTo")(inResponseTo.asInstanceOf[js.Any])
     if (keyEncryptionAlgorighm != null) __obj.updateDynamic("keyEncryptionAlgorighm")(keyEncryptionAlgorighm.asInstanceOf[js.Any])
-    if (lifetimeInSeconds != null) __obj.updateDynamic("lifetimeInSeconds")(lifetimeInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifetimeInSeconds)) __obj.updateDynamic("lifetimeInSeconds")(lifetimeInSeconds.get.asInstanceOf[js.Any])
     if (profileMapper != null) __obj.updateDynamic("profileMapper")(profileMapper.asInstanceOf[js.Any])
     if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
-    if (!js.isUndefined(signResponse)) __obj.updateDynamic("signResponse")(signResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(signResponse)) __obj.updateDynamic("signResponse")(signResponse.get.asInstanceOf[js.Any])
     if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdPOptions]
   }

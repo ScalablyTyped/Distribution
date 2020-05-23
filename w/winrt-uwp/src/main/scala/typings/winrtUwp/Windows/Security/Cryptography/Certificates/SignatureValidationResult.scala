@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object SignatureValidationResult extends js.Object {
   /** The signature was verified. */
   @js.native
   sealed trait success extends SignatureValidationResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SignatureValidationResult with Double] = js.native
-  /* 2 */ @js.native
-  object badMessage extends TopLevel[badMessage with Double]
-  
-  /* 1 */ @js.native
-  object invalidParameter extends TopLevel[invalidParameter with Double]
-  
-  /* 3 */ @js.native
-  object invalidSignature extends TopLevel[invalidSignature with Double]
-  
-  /* 4 */ @js.native
-  object otherErrors extends TopLevel[otherErrors with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
   
 }
 

@@ -1,6 +1,6 @@
 package typings.atom.mod
 
-import typings.atom.AnonInstantiable
+import typings.atom.anon.Instantiable
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait ViewRegistry extends js.Object {
     */
   // tslint:disable-next-line:no-any
   def addViewProvider[T](
-    modelConstructor: AnonInstantiable[T],
+    modelConstructor: Instantiable[T],
     createView: js.Function1[/* instance */ T, js.UndefOr[HTMLElement]]
   ): Disposable = js.native
   def getView(obj: js.Object): HTMLElement = js.native

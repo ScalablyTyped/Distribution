@@ -1,6 +1,6 @@
 package typings.intercomClient.companyMod
 
-import typings.intercomClient.AnonNext
+import typings.intercomClient.anon.Next
 import typings.intercomClient.intercomClientStrings.companyDotlist
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait List extends js.Object {
   var companies: js.Array[Company with CompanyIdentifier]
-  var pages: AnonNext
+  var pages: Next
   var total_count: Double
   var `type`: companyDotlist
 }
@@ -17,7 +17,7 @@ object List {
   @scala.inline
   def apply(
     companies: js.Array[Company with CompanyIdentifier],
-    pages: AnonNext,
+    pages: Next,
     total_count: Double,
     `type`: companyDotlist
   ): List = {

@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.mergeMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`-1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Concatenate_ () extends Merge {
   def this(args: ConcatenateLayerArgs) = this()
-  val DEFAULT_AXIS: `-1` = js.native
+  val DEFAULT_AXIS: /* -1 */ Double = js.native
   val axis: js.Any = js.native
 }
 

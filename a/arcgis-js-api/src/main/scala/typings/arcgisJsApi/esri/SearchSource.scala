@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -152,8 +151,4 @@ trait SearchSource extends JSONSupport {
     */
   def getSuggestions(params: js.Any): js.Promise[js.Array[SuggestResult]] = js.native
 }
-
-@JSGlobal("__esri.SearchSource")
-@js.native
-object SearchSource extends TopLevel[SearchSourceConstructor]
 

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutInstancePublicPortsRequest extends js.Object {
   /**
-    * The Lightsail instance name of the public port(s) you are setting.
+    * The name of the instance for which to open ports.
     */
   var instanceName: ResourceName = js.native
   /**
-    * Specifies information about the public port(s).
+    * An array of objects to describe the ports to open for the specified instance.
     */
   var portInfos: PortInfoList = js.native
 }

@@ -21,9 +21,9 @@ trait WorkerOptions extends js.Object {
 
 object WorkerOptions {
   @scala.inline
-  def apply(path: String, n: Int | Double = null, workers: js.Array[_] = null): WorkerOptions = {
+  def apply(path: String, n: js.UndefOr[Double] = js.undefined, workers: js.Array[_] = null): WorkerOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
+    if (!js.isUndefined(n)) __obj.updateDynamic("n")(n.get.asInstanceOf[js.Any])
     if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerOptions]
   }

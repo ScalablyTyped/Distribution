@@ -62,14 +62,14 @@ object DescribeAlgorithmOutput {
     CreationTime: CreationTime,
     TrainingSpecification: TrainingSpecification,
     AlgorithmDescription: EntityDescription = null,
-    CertifyForMarketplace: js.UndefOr[scala.Boolean] = js.undefined,
+    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
     InferenceSpecification: InferenceSpecification = null,
     ProductId: ProductId = null,
     ValidationSpecification: AlgorithmValidationSpecification = null
   ): DescribeAlgorithmOutput = {
     val __obj = js.Dynamic.literal(AlgorithmArn = AlgorithmArn.asInstanceOf[js.Any], AlgorithmName = AlgorithmName.asInstanceOf[js.Any], AlgorithmStatus = AlgorithmStatus.asInstanceOf[js.Any], AlgorithmStatusDetails = AlgorithmStatusDetails.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], TrainingSpecification = TrainingSpecification.asInstanceOf[js.Any])
     if (AlgorithmDescription != null) __obj.updateDynamic("AlgorithmDescription")(AlgorithmDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.asInstanceOf[js.Any])
+    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.get.asInstanceOf[js.Any])
     if (InferenceSpecification != null) __obj.updateDynamic("InferenceSpecification")(InferenceSpecification.asInstanceOf[js.Any])
     if (ProductId != null) __obj.updateDynamic("ProductId")(ProductId.asInstanceOf[js.Any])
     if (ValidationSpecification != null) __obj.updateDynamic("ValidationSpecification")(ValidationSpecification.asInstanceOf[js.Any])

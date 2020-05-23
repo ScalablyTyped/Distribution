@@ -14,9 +14,9 @@ trait UpdateThingGroupResponse extends js.Object {
 
 object UpdateThingGroupResponse {
   @scala.inline
-  def apply(version: Int | Double = null): UpdateThingGroupResponse = {
+  def apply(version: js.UndefOr[Version] = js.undefined): UpdateThingGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThingGroupResponse]
   }
 }

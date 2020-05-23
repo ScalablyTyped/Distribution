@@ -18,6 +18,9 @@ trait CreateRuleGroupRequest extends js.Object {
     * A friendly name or description of the RuleGroup. You can't change Name after you create a RuleGroup.
     */
   var Name: ResourceName = js.native
+  /**
+    * 
+    */
   var Tags: js.UndefOr[TagList] = js.native
 }
 

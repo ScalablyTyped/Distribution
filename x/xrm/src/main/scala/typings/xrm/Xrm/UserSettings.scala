@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import typings.xrm.Xrm.Collection.ItemCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,15 +30,26 @@ trait UserSettings extends js.Object {
     */
   var languageId: Double
   /**
+    * Returns a collection of lookup objects containing the GUID and display name of each of the security role or teams that the user is associated with.
+    */
+  var roles: ItemCollection[LookupValue]
+  /**
     * Returns an array of strings that represent the GUID values of each of the security role privilege that the user is associated with or any teams that the user is associated with.
     */
   var securityRolePrivileges: js.Array[String]
   /**
     * Returns an array of strings that represent the GUID values of each of the security role that the user is associated with or any teams that the user is associated with.
+    * @deprecated Deprecated in v9.1; use {@link Xrm.UserSettings.roles globalContext.userSettings.roles} instead to display names of security roles or teams along with the ID.
+    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   var securityRoles: js.Array[String]
   /**
+    * Returns a lookup object containing the ID, display name, and entity type of the transaction currency for the current user.
+    */
+  var transactionCurrency: LookupValue
+  /**
     * Returns the transaction currency ID for the current user.
+    * @deprecated Deprecated in v9.1; use {@link Xrm.UserSettings.transactionCurrency globalContext.userSettings.transactionCurrency} instead to display name along with the ID.
     */
   var transactionCurrencyId: String
   /**
@@ -68,13 +80,15 @@ object UserSettings {
     isHighContrastEnabled: Boolean,
     isRTL: Boolean,
     languageId: Double,
+    roles: ItemCollection[LookupValue],
     securityRolePrivileges: js.Array[String],
     securityRoles: js.Array[String],
+    transactionCurrency: LookupValue,
     transactionCurrencyId: String,
     userId: String,
     userName: String
   ): UserSettings = {
-    val __obj = js.Dynamic.literal(dateFormattingInfo = js.Any.fromFunction0(dateFormattingInfo), defaultDashboardId = defaultDashboardId.asInstanceOf[js.Any], getTimeZoneOffsetMinutes = js.Any.fromFunction0(getTimeZoneOffsetMinutes), isGuidedHelpEnabled = isGuidedHelpEnabled.asInstanceOf[js.Any], isHighContrastEnabled = isHighContrastEnabled.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any], languageId = languageId.asInstanceOf[js.Any], securityRolePrivileges = securityRolePrivileges.asInstanceOf[js.Any], securityRoles = securityRoles.asInstanceOf[js.Any], transactionCurrencyId = transactionCurrencyId.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dateFormattingInfo = js.Any.fromFunction0(dateFormattingInfo), defaultDashboardId = defaultDashboardId.asInstanceOf[js.Any], getTimeZoneOffsetMinutes = js.Any.fromFunction0(getTimeZoneOffsetMinutes), isGuidedHelpEnabled = isGuidedHelpEnabled.asInstanceOf[js.Any], isHighContrastEnabled = isHighContrastEnabled.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any], languageId = languageId.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any], securityRolePrivileges = securityRolePrivileges.asInstanceOf[js.Any], securityRoles = securityRoles.asInstanceOf[js.Any], transactionCurrency = transactionCurrency.asInstanceOf[js.Any], transactionCurrencyId = transactionCurrencyId.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserSettings]
   }
 }

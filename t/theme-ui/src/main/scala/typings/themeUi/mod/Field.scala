@@ -1,7 +1,7 @@
 package typings.themeUi.mod
 
 import typings.react.mod.ElementType
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.themeUiComponents.mod.FieldProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

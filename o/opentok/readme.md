@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentok
 
-Typings are for version v2.3.2
+Typings are for version v2.9.2
 
 ## Library description:
 OpenTok server-side SDK

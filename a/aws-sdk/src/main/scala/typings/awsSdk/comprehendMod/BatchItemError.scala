@@ -22,11 +22,11 @@ trait BatchItemError extends js.Object {
 
 object BatchItemError {
   @scala.inline
-  def apply(ErrorCode: String = null, ErrorMessage: String = null, Index: Int | scala.Double = null): BatchItemError = {
+  def apply(ErrorCode: String = null, ErrorMessage: String = null, Index: js.UndefOr[Integer] = js.undefined): BatchItemError = {
     val __obj = js.Dynamic.literal()
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (Index != null) __obj.updateDynamic("Index")(Index.asInstanceOf[js.Any])
+    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchItemError]
   }
 }

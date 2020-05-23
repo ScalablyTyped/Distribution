@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object createClassExpression extends js.Object {
   def apply(
     modifiers: js.UndefOr[js.Array[Modifier]],
-    name: js.UndefOr[java.lang.String | Identifier],
+    name: js.UndefOr[Identifier | java.lang.String],
     typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
     heritageClauses: js.UndefOr[js.Array[HeritageClause]],
     members: js.Array[ClassElement]

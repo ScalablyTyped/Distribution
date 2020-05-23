@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonButtonType
+import typings.antdMobile.anon.ButtonType
 import typings.antdMobile.resultMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Result () extends default
 @JSImport("antd-mobile", "Result")
 @js.native
 object Result extends js.Object {
-  var defaultProps: AnonButtonType = js.native
+  var defaultProps: ButtonType = js.native
 }
 

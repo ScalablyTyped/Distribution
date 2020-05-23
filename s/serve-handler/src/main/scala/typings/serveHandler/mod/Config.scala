@@ -153,14 +153,14 @@ object Config {
     val __obj = js.Dynamic.literal()
     if (cleanUrls != null) __obj.updateDynamic("cleanUrls")(cleanUrls.asInstanceOf[js.Any])
     if (directoryListing != null) __obj.updateDynamic("directoryListing")(directoryListing.asInstanceOf[js.Any])
-    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
     if (redirects != null) __obj.updateDynamic("redirects")(redirects.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderSingle)) __obj.updateDynamic("renderSingle")(renderSingle.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderSingle)) __obj.updateDynamic("renderSingle")(renderSingle.get.asInstanceOf[js.Any])
     if (rewrites != null) __obj.updateDynamic("rewrites")(rewrites.asInstanceOf[js.Any])
-    if (!js.isUndefined(symlinks)) __obj.updateDynamic("symlinks")(symlinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(trailingSlash)) __obj.updateDynamic("trailingSlash")(trailingSlash.asInstanceOf[js.Any])
+    if (!js.isUndefined(symlinks)) __obj.updateDynamic("symlinks")(symlinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailingSlash)) __obj.updateDynamic("trailingSlash")(trailingSlash.get.asInstanceOf[js.Any])
     if (unlisted != null) __obj.updateDynamic("unlisted")(unlisted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }

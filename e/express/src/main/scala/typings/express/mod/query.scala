@@ -1,6 +1,6 @@
 package typings.express.mod
 
-import typings.express.FnCall
+import typings.express.anon.FnCall
 import typings.qs.mod.IParseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -29,8 +29,7 @@ object IQueryListState {
     activeItem: T | ICreateNewItem = null,
     createNewItem: T = null
   ): IQueryListState[T] = {
-    val __obj = js.Dynamic.literal(filteredItems = filteredItems.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-    if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filteredItems = filteredItems.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], activeItem = activeItem.asInstanceOf[js.Any])
     if (createNewItem != null) __obj.updateDynamic("createNewItem")(createNewItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryListState[T]]
   }

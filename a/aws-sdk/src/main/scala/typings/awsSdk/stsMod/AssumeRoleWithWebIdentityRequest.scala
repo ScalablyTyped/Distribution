@@ -43,13 +43,13 @@ object AssumeRoleWithWebIdentityRequest {
     RoleArn: arnType,
     RoleSessionName: roleSessionNameType,
     WebIdentityToken: clientTokenType,
-    DurationSeconds: Int | Double = null,
+    DurationSeconds: js.UndefOr[roleDurationSecondsType] = js.undefined,
     Policy: sessionPolicyDocumentType = null,
     PolicyArns: policyDescriptorListType = null,
     ProviderId: urlType = null
   ): AssumeRoleWithWebIdentityRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], RoleSessionName = RoleSessionName.asInstanceOf[js.Any], WebIdentityToken = WebIdentityToken.asInstanceOf[js.Any])
-    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
     if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
     if (PolicyArns != null) __obj.updateDynamic("PolicyArns")(PolicyArns.asInstanceOf[js.Any])
     if (ProviderId != null) __obj.updateDynamic("ProviderId")(ProviderId.asInstanceOf[js.Any])

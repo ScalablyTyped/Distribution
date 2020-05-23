@@ -19,8 +19,8 @@ object CommandOptions {
   ): CommandOptions = {
     val __obj = js.Dynamic.literal()
     if (executableFile != null) __obj.updateDynamic("executableFile")(executableFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(noHelp)) __obj.updateDynamic("noHelp")(noHelp.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noHelp)) __obj.updateDynamic("noHelp")(noHelp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandOptions]
   }
 }

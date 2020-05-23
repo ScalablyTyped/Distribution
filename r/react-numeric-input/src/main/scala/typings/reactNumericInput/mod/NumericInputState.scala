@@ -24,20 +24,20 @@ object NumericInputState {
     btnDownHover: js.UndefOr[Boolean] = js.undefined,
     btnUpActive: js.UndefOr[Boolean] = js.undefined,
     btnUpHover: js.UndefOr[Boolean] = js.undefined,
-    selectionEnd: Int | Double = null,
-    selectionStart: Int | Double = null,
+    selectionEnd: js.UndefOr[Null | Double] = js.undefined,
+    selectionStart: js.UndefOr[Null | Double] = js.undefined,
     stringValue: String = null,
-    value: Int | Double = null
+    value: js.UndefOr[Null | Double] = js.undefined
   ): NumericInputState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(btnDownActive)) __obj.updateDynamic("btnDownActive")(btnDownActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(btnDownHover)) __obj.updateDynamic("btnDownHover")(btnDownHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(btnUpActive)) __obj.updateDynamic("btnUpActive")(btnUpActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(btnUpHover)) __obj.updateDynamic("btnUpHover")(btnUpHover.asInstanceOf[js.Any])
-    if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
-    if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(btnDownActive)) __obj.updateDynamic("btnDownActive")(btnDownActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(btnDownHover)) __obj.updateDynamic("btnDownHover")(btnDownHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(btnUpActive)) __obj.updateDynamic("btnUpActive")(btnUpActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(btnUpHover)) __obj.updateDynamic("btnUpHover")(btnUpHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionEnd)) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionStart)) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumericInputState]
   }
 }

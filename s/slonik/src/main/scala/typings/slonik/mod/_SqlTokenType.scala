@@ -34,9 +34,8 @@ object _SqlTokenType {
   }
   @scala.inline
   def JsonSqlTokenType(`type`: js.Symbol, value: SerializableValueType = null): _SqlTokenType = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SqlTokenType]
   }
   @scala.inline

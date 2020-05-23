@@ -10,7 +10,7 @@ import typings.prosemirrorModel.mod.NodeRange
 import typings.prosemirrorModel.mod.NodeType
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorModel.mod.Slice
-import typings.prosemirrorTransform.AnonAttrs
+import typings.prosemirrorTransform.anon.Attrs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -146,14 +146,12 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   def replaceWith(from: Double, to: Double, content: Fragment[S]): this.type = js.native
   def replaceWith(from: Double, to: Double, content: Node[S]): this.type = js.native
-  def setBlockType(from: Double, to: js.UndefOr[scala.Nothing], `type`: NodeType[S]): this.type = js.native
-  def setBlockType(from: Double, to: js.UndefOr[scala.Nothing], `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
   /**
     * Set the type of all textblocks (partly) between `from` and `to` to
     * the given node type with the given attributes.
     */
-  def setBlockType(from: Double, to: Double, `type`: NodeType[S]): this.type = js.native
-  def setBlockType(from: Double, to: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
+  def setBlockType(from: Double, to: js.UndefOr[Double], `type`: NodeType[S]): this.type = js.native
+  def setBlockType(from: Double, to: js.UndefOr[Double], `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
   /**
     * Change the type, attributes, and/or marks of the node at `pos`.
     * When `nodeType` is null, the existing node type is preserved,
@@ -171,7 +169,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   def split(pos: Double): this.type = js.native
   def split(pos: Double, depth: Double): this.type = js.native
-  def split(pos: Double, depth: Double, typesAfter: js.Array[AnonAttrs[S]]): this.type = js.native
+  def split(pos: Double, depth: Double, typesAfter: js.Array[Attrs[S]]): this.type = js.native
   /**
     * Apply a new step in this transform, saving the result. Throws an
     * error when the step fails.
@@ -182,6 +180,6 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     * The wrappers are assumed to be valid in this position, and should
     * probably be computed with [`findWrapping`](#transform.findWrapping).
     */
-  def wrap(range: NodeRange[S], wrappers: js.Array[AnonAttrs[S]]): this.type = js.native
+  def wrap(range: NodeRange[S], wrappers: js.Array[Attrs[S]]): this.type = js.native
 }
 

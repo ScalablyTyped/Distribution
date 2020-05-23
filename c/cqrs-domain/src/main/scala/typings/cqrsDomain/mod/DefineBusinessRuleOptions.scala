@@ -23,11 +23,11 @@ trait DefineBusinessRuleOptions extends js.Object {
 
 object DefineBusinessRuleOptions {
   @scala.inline
-  def apply(description: String = null, name: String = null, priority: Int | Double = null): DefineBusinessRuleOptions = {
+  def apply(description: String = null, name: String = null, priority: js.UndefOr[Double] = js.undefined): DefineBusinessRuleOptions = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineBusinessRuleOptions]
   }
 }

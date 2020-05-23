@@ -23,7 +23,7 @@ object PropTypes {
     onUpdate: /* data */ PanelWidth => Unit = null,
     panelColor: String = null,
     panelWidths: js.Array[PanelWidth | Null] = null,
-    spacing: Int | Double = null
+    spacing: js.UndefOr[Double] = js.undefined
   ): PropTypes = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
@@ -31,7 +31,7 @@ object PropTypes {
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (panelColor != null) __obj.updateDynamic("panelColor")(panelColor.asInstanceOf[js.Any])
     if (panelWidths != null) __obj.updateDynamic("panelWidths")(panelWidths.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropTypes]
   }
 }

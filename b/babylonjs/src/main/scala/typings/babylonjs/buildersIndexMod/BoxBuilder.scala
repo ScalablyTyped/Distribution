@@ -1,6 +1,6 @@
 package typings.babylonjs.buildersIndexMod
 
-import typings.babylonjs.AnonBottomBaseAt
+import typings.babylonjs.anon.BottomBaseAt
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -32,7 +32,7 @@ object BoxBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns the box mesh
     */
-  def CreateBox(name: String, options: AnonBottomBaseAt): Mesh = js.native
-  def CreateBox(name: String, options: AnonBottomBaseAt, scene: Nullable[Scene]): Mesh = js.native
+  def CreateBox(name: String, options: BottomBaseAt): Mesh = js.native
+  def CreateBox(name: String, options: BottomBaseAt, scene: Nullable[Scene]): Mesh = js.native
 }
 

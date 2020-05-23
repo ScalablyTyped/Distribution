@@ -7,18 +7,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an imported video segment. */
-@JSGlobal("Windows.Media.Import.PhotoImportVideoSegment")
-@js.native
-abstract class PhotoImportVideoSegment () extends js.Object {
+trait PhotoImportVideoSegment extends js.Object {
   /** Gets the date of the imported video segment. */
-  var date: Date = js.native
+  var date: Date
   /** Gets the name of the imported video segment. */
-  var name: String = js.native
+  var name: String
   /** Gets the sibling file associated with the imported video segment. */
-  var sibling: PhotoImportSidecar = js.native
+  var sibling: PhotoImportSidecar
   /** Gets the sidecar file associated with the imported video segment. */
-  var sidecars: IVectorView[PhotoImportSidecar] = js.native
+  var sidecars: IVectorView[PhotoImportSidecar]
   /** Gets the size of the imported video segment, in bytes. */
-  var sizeInBytes: Double = js.native
+  var sizeInBytes: Double
+}
+
+object PhotoImportVideoSegment {
+  @scala.inline
+  def apply(
+    date: Date,
+    name: String,
+    sibling: PhotoImportSidecar,
+    sidecars: IVectorView[PhotoImportSidecar],
+    sizeInBytes: Double
+  ): PhotoImportVideoSegment = {
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sibling = sibling.asInstanceOf[js.Any], sidecars = sidecars.asInstanceOf[js.Any], sizeInBytes = sizeInBytes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhotoImportVideoSegment]
+  }
 }
 

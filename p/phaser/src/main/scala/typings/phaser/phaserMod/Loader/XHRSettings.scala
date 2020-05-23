@@ -17,18 +17,15 @@ object XHRSettings extends js.Object {
     * @param user Optional username for the XHR request. Default ''.
     * @param password Optional password for the XHR request. Default ''.
     * @param timeout Optional XHR timeout value. Default 0.
+    * @param withCredentials Optional XHR withCredentials value. Default false.
     */
-  def apply(): XHRSettingsObject = js.native
-  def apply(responseType: XMLHttpRequestResponseType): XHRSettingsObject = js.native
-  def apply(responseType: XMLHttpRequestResponseType, async: Boolean): XHRSettingsObject = js.native
-  def apply(responseType: XMLHttpRequestResponseType, async: Boolean, user: String): XHRSettingsObject = js.native
-  def apply(responseType: XMLHttpRequestResponseType, async: Boolean, user: String, password: String): XHRSettingsObject = js.native
   def apply(
-    responseType: XMLHttpRequestResponseType,
-    async: Boolean,
-    user: String,
-    password: String,
-    timeout: integer
+    responseType: js.UndefOr[XMLHttpRequestResponseType],
+    async: js.UndefOr[Boolean],
+    user: js.UndefOr[String],
+    password: js.UndefOr[String],
+    timeout: js.UndefOr[integer],
+    withCredentials: js.UndefOr[Boolean]
   ): XHRSettingsObject = js.native
 }
 

@@ -22,6 +22,8 @@ trait JobOperation extends js.Object {
     * Directs the specified job to execute a PUT Copy object call on each object in the manifest.
     */
   var S3PutObjectCopy: js.UndefOr[S3CopyObjectOperation] = js.native
+  var S3PutObjectLegalHold: js.UndefOr[S3SetObjectLegalHoldOperation] = js.native
+  var S3PutObjectRetention: js.UndefOr[S3SetObjectRetentionOperation] = js.native
   /**
     * Directs the specified job to execute a PUT Object tagging call on each object in the manifest.
     */
@@ -35,6 +37,8 @@ object JobOperation {
     S3InitiateRestoreObject: S3InitiateRestoreObjectOperation = null,
     S3PutObjectAcl: S3SetObjectAclOperation = null,
     S3PutObjectCopy: S3CopyObjectOperation = null,
+    S3PutObjectLegalHold: S3SetObjectLegalHoldOperation = null,
+    S3PutObjectRetention: S3SetObjectRetentionOperation = null,
     S3PutObjectTagging: S3SetObjectTaggingOperation = null
   ): JobOperation = {
     val __obj = js.Dynamic.literal()
@@ -42,6 +46,8 @@ object JobOperation {
     if (S3InitiateRestoreObject != null) __obj.updateDynamic("S3InitiateRestoreObject")(S3InitiateRestoreObject.asInstanceOf[js.Any])
     if (S3PutObjectAcl != null) __obj.updateDynamic("S3PutObjectAcl")(S3PutObjectAcl.asInstanceOf[js.Any])
     if (S3PutObjectCopy != null) __obj.updateDynamic("S3PutObjectCopy")(S3PutObjectCopy.asInstanceOf[js.Any])
+    if (S3PutObjectLegalHold != null) __obj.updateDynamic("S3PutObjectLegalHold")(S3PutObjectLegalHold.asInstanceOf[js.Any])
+    if (S3PutObjectRetention != null) __obj.updateDynamic("S3PutObjectRetention")(S3PutObjectRetention.asInstanceOf[js.Any])
     if (S3PutObjectTagging != null) __obj.updateDynamic("S3PutObjectTagging")(S3PutObjectTagging.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobOperation]
   }

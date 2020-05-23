@@ -1,6 +1,6 @@
 package typings.typescript.mod
 
-import typings.typescript.AnonTypeArguments
+import typings.typescript.anon.TypeArguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,9 +87,9 @@ trait TypeChecker extends js.Object {
     */
   def runWithCancellationToken[T](token: CancellationToken, cb: js.Function1[/* checker */ this.type, T]): T = js.native
   /** Note that the resulting nodes cannot be checked. */
-  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind): js.UndefOr[SignatureDeclaration with AnonTypeArguments] = js.native
-  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node): js.UndefOr[SignatureDeclaration with AnonTypeArguments] = js.native
-  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[SignatureDeclaration with AnonTypeArguments] = js.native
+  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind): js.UndefOr[SignatureDeclaration with TypeArguments] = js.native
+  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node): js.UndefOr[SignatureDeclaration with TypeArguments] = js.native
+  def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[SignatureDeclaration with TypeArguments] = js.native
   def signatureToString(signature: Signature): java.lang.String = js.native
   def signatureToString(signature: Signature, enclosingDeclaration: Node): java.lang.String = js.native
   def signatureToString(signature: Signature, enclosingDeclaration: Node, flags: TypeFormatFlags): java.lang.String = js.native

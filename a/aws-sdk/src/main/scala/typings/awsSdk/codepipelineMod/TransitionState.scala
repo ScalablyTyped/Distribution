@@ -28,13 +28,13 @@ object TransitionState {
   @scala.inline
   def apply(
     disabledReason: DisabledReason = null,
-    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[Enabled] = js.undefined,
     lastChangedAt: LastChangedAt = null,
     lastChangedBy: LastChangedBy = null
   ): TransitionState = {
     val __obj = js.Dynamic.literal()
     if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (lastChangedAt != null) __obj.updateDynamic("lastChangedAt")(lastChangedAt.asInstanceOf[js.Any])
     if (lastChangedBy != null) __obj.updateDynamic("lastChangedBy")(lastChangedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionState]

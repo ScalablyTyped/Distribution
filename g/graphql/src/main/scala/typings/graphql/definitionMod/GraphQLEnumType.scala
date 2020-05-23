@@ -1,7 +1,7 @@
 package typings.graphql.definitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.GraphQLEnumTypeConfigexte
+import typings.graphql.anon.GraphQLEnumTypeConfigexte
 import typings.graphql.astMod.EnumTypeDefinitionNode
 import typings.graphql.astMod.EnumTypeExtensionNode
 import typings.graphql.astMod.ValueNode

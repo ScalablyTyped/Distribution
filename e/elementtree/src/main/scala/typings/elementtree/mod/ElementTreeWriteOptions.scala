@@ -21,16 +21,16 @@ object ElementTreeWriteOptions {
   def apply(
     default_namespace: String = null,
     encoding: String = null,
-    indent: Int | Double = null,
+    indent: js.UndefOr[Double] = js.undefined,
     method: xml | text = null,
     xml_declaration: js.UndefOr[Boolean] = js.undefined
   ): ElementTreeWriteOptions = {
     val __obj = js.Dynamic.literal()
     if (default_namespace != null) __obj.updateDynamic("default_namespace")(default_namespace.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(xml_declaration)) __obj.updateDynamic("xml_declaration")(xml_declaration.asInstanceOf[js.Any])
+    if (!js.isUndefined(xml_declaration)) __obj.updateDynamic("xml_declaration")(xml_declaration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementTreeWriteOptions]
   }
 }

@@ -12,10 +12,10 @@ trait SubResponseInfo extends js.Object {
 
 object SubResponseInfo {
   @scala.inline
-  def apply(field: String, end: Int | Double = null, start: Int | Double = null): SubResponseInfo = {
+  def apply(field: String, end: js.UndefOr[Double] = js.undefined, start: js.UndefOr[Double] = js.undefined): SubResponseInfo = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubResponseInfo]
   }
 }

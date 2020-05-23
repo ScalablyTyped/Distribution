@@ -37,7 +37,7 @@ object RouteTableAssociation {
   def apply(
     AssociationState: RouteTableAssociationState = null,
     GatewayId: String = null,
-    Main: js.UndefOr[scala.Boolean] = js.undefined,
+    Main: js.UndefOr[Boolean] = js.undefined,
     RouteTableAssociationId: String = null,
     RouteTableId: String = null,
     SubnetId: String = null
@@ -45,7 +45,7 @@ object RouteTableAssociation {
     val __obj = js.Dynamic.literal()
     if (AssociationState != null) __obj.updateDynamic("AssociationState")(AssociationState.asInstanceOf[js.Any])
     if (GatewayId != null) __obj.updateDynamic("GatewayId")(GatewayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Main)) __obj.updateDynamic("Main")(Main.asInstanceOf[js.Any])
+    if (!js.isUndefined(Main)) __obj.updateDynamic("Main")(Main.get.asInstanceOf[js.Any])
     if (RouteTableAssociationId != null) __obj.updateDynamic("RouteTableAssociationId")(RouteTableAssociationId.asInstanceOf[js.Any])
     if (RouteTableId != null) __obj.updateDynamic("RouteTableId")(RouteTableId.asInstanceOf[js.Any])
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])

@@ -17,10 +17,10 @@ trait LongPressActionsSuccessData extends js.Object {
 
 object LongPressActionsSuccessData {
   @scala.inline
-  def apply(index: Int | Double = null, tapIndex: Int | Double = null): LongPressActionsSuccessData = {
+  def apply(index: js.UndefOr[Double] = js.undefined, tapIndex: js.UndefOr[Double] = js.undefined): LongPressActionsSuccessData = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (tapIndex != null) __obj.updateDynamic("tapIndex")(tapIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapIndex)) __obj.updateDynamic("tapIndex")(tapIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LongPressActionsSuccessData]
   }
 }

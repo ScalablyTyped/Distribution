@@ -23,7 +23,7 @@ trait CascaderProps extends js.Object {
   var expandTrigger: js.UndefOr[String] = js.undefined
   var fieldNames: js.UndefOr[CascaderFieldNames] = js.undefined
   var filedNames: js.UndefOr[CascaderFieldNames] = js.undefined
-  var getPopupContainer: js.Any
+  var getPopupContainer: js.UndefOr[js.Any] = js.undefined
   var loadData: js.UndefOr[js.Function1[/* selectOptions */ js.Array[CascaderOption], Unit]] = js.undefined
   var loadingIcon: js.UndefOr[ReactNode] = js.undefined
   var onChange: js.UndefOr[
@@ -43,7 +43,6 @@ trait CascaderProps extends js.Object {
 object CascaderProps {
   @scala.inline
   def apply(
-    getPopupContainer: js.Any,
     builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     changeOnSelect: js.UndefOr[Boolean] = js.undefined,
     children: ReactElement = null,
@@ -54,6 +53,7 @@ object CascaderProps {
     expandTrigger: String = null,
     fieldNames: CascaderFieldNames = null,
     filedNames: CascaderFieldNames = null,
+    getPopupContainer: js.Any = null,
     loadData: /* selectOptions */ js.Array[CascaderOption] => Unit = null,
     loadingIcon: ReactNode = null,
     onChange: (/* value */ js.Array[String], /* selectOptions */ js.Array[CascaderOption]) => Unit = null,
@@ -67,17 +67,18 @@ object CascaderProps {
     transitionName: String = null,
     value: js.Array[String] = null
   ): CascaderProps = {
-    val __obj = js.Dynamic.literal(getPopupContainer = getPopupContainer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements.asInstanceOf[js.Any])
-    if (!js.isUndefined(changeOnSelect)) __obj.updateDynamic("changeOnSelect")(changeOnSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(changeOnSelect)) __obj.updateDynamic("changeOnSelect")(changeOnSelect.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (dropdownMenuColumnStyle != null) __obj.updateDynamic("dropdownMenuColumnStyle")(dropdownMenuColumnStyle.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
     if (expandTrigger != null) __obj.updateDynamic("expandTrigger")(expandTrigger.asInstanceOf[js.Any])
     if (fieldNames != null) __obj.updateDynamic("fieldNames")(fieldNames.asInstanceOf[js.Any])
     if (filedNames != null) __obj.updateDynamic("filedNames")(filedNames.asInstanceOf[js.Any])
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer.asInstanceOf[js.Any])
     if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1(loadData))
     if (loadingIcon != null) __obj.updateDynamic("loadingIcon")(loadingIcon.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
@@ -86,7 +87,7 @@ object CascaderProps {
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName.asInstanceOf[js.Any])
     if (popupPlacement != null) __obj.updateDynamic("popupPlacement")(popupPlacement.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

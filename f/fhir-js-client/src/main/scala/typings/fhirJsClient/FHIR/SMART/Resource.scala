@@ -21,13 +21,7 @@ trait Resource
 
 object Resource {
   @scala.inline
-  def apply(
-    resourceType: String,
-    StringDictionary: /**
-    * Making this interface extendable since this is not a complete type definition of FHIR Resource
-    */
-  /* propName */ StringDictionary[js.Any] = null
-  ): Resource = {
+  def apply(resourceType: String, StringDictionary: /* name */ StringDictionary[js.Any] = null): Resource = {
     val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Resource]

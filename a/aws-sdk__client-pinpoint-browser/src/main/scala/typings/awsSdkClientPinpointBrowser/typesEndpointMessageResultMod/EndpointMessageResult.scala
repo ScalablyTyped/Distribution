@@ -70,7 +70,7 @@ object EndpointMessageResult {
     Address: String = null,
     DeliveryStatus: SUCCESSFUL | THROTTLED | TEMPORARY_FAILURE | PERMANENT_FAILURE | UNKNOWN_FAILURE | OPT_OUT | DUPLICATE | String = null,
     MessageId: String = null,
-    StatusCode: Int | Double = null,
+    StatusCode: js.UndefOr[Double] = js.undefined,
     StatusMessage: String = null,
     UpdatedToken: String = null
   ): EndpointMessageResult = {
@@ -78,7 +78,7 @@ object EndpointMessageResult {
     if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
     if (DeliveryStatus != null) __obj.updateDynamic("DeliveryStatus")(DeliveryStatus.asInstanceOf[js.Any])
     if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId.asInstanceOf[js.Any])
-    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode.get.asInstanceOf[js.Any])
     if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
     if (UpdatedToken != null) __obj.updateDynamic("UpdatedToken")(UpdatedToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointMessageResult]

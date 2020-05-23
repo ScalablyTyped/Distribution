@@ -7,24 +7,30 @@ import scala.scalajs.js.annotation._
 /**
   * Declare client constants that specify the Gantt's view type.
   */
-@JSGlobal("ASPxClientGanttViewType")
-@js.native
-class ASPxClientGanttViewType () extends js.Object {
+trait ASPxClientGanttViewType extends js.Object {
   /**
     * Displays days.
     */
-  var Days: Double = js.native
+  var Days: Double
   /**
     * Displays hours.
     */
-  var Hours: Double = js.native
+  var Hours: Double
   /**
     * Display months.
     */
-  var Months: Double = js.native
+  var Months: Double
   /**
     * Displays weeks.
     */
-  var Weeks: Double = js.native
+  var Weeks: Double
+}
+
+object ASPxClientGanttViewType {
+  @scala.inline
+  def apply(Days: Double, Hours: Double, Months: Double, Weeks: Double): ASPxClientGanttViewType = {
+    val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Hours = Hours.asInstanceOf[js.Any], Months = Months.asInstanceOf[js.Any], Weeks = Weeks.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGanttViewType]
+  }
 }
 

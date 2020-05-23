@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.AnonAnimation
+import typings.devextreme.anon.Animation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait animationPresets extends js.Object {
   /** @name animationPresets.registerDefaultPresets() */
   def registerDefaultPresets(): Unit = js.native
   /** @name animationPresets.registerPreset(name, config) */
-  def registerPreset(name: String, config: AnonAnimation): Unit = js.native
+  def registerPreset(name: String, config: Animation): Unit = js.native
   /** @name animationPresets.resetToDefaults() */
   def resetToDefaults(): Unit = js.native
 }

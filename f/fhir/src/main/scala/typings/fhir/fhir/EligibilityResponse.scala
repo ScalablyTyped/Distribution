@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * EligibilityResponse resource
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait EligibilityResponse extends DomainResource {
   /**
     * Contains extended information for property 'created'.
@@ -131,7 +131,7 @@ object EligibilityResponse {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
     if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(inforce)) __obj.updateDynamic("inforce")(inforce.asInstanceOf[js.Any])
+    if (!js.isUndefined(inforce)) __obj.updateDynamic("inforce")(inforce.get.asInstanceOf[js.Any])
     if (insurance != null) __obj.updateDynamic("insurance")(insurance.asInstanceOf[js.Any])
     if (insurer != null) __obj.updateDynamic("insurer")(insurer.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])

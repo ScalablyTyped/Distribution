@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO find source documentation
 trait FusionTablesCell extends js.Object {
   var columnName: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[String] = js.undefined

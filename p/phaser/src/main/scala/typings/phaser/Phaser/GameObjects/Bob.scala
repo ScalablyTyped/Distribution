@@ -21,19 +21,8 @@ import scala.scalajs.js.annotation._
   * You can manipulate Bob objects directly from your game code, but the creation and destruction of them should be
   * handled via the Blitter parent.
   */
-@JSGlobal("Phaser.GameObjects.Bob")
 @js.native
-class Bob protected () extends js.Object {
-  /**
-    * 
-    * @param blitter The parent Blitter object is responsible for updating this Bob.
-    * @param x The horizontal position of this Game Object in the world, relative to the parent Blitter position.
-    * @param y The vertical position of this Game Object in the world, relative to the parent Blitter position.
-    * @param frame The Frame this Bob will render with, as defined in the Texture the parent Blitter is using.
-    * @param visible Should the Bob render visible or not to start with?
-    */
-  def this(blitter: Blitter, x: Double, y: Double, frame: String, visible: Boolean) = this()
-  def this(blitter: Blitter, x: Double, y: Double, frame: integer, visible: Boolean) = this()
+trait Bob extends js.Object {
   /**
     * The alpha value of the Bob, between 0 and 1.
     * 
@@ -98,14 +87,14 @@ class Bob protected () extends js.Object {
     * @param y The y position of the Bob. Bob coordinate are relative to the position of the Blitter object.
     * @param frame The Frame the Bob will use. It _must_ be part of the Texture the parent Blitter object is using.
     */
-  def reset(x: Double, y: Double): Bob = js.native
-  def reset(x: Double, y: Double, frame: String): Bob = js.native
-  def reset(x: Double, y: Double, frame: Frame): Bob = js.native
-  def reset(x: Double, y: Double, frame: integer): Bob = js.native
+  def reset(x: Double, y: Double): this.type = js.native
+  def reset(x: Double, y: Double, frame: String): this.type = js.native
+  def reset(x: Double, y: Double, frame: Frame): this.type = js.native
+  def reset(x: Double, y: Double, frame: integer): this.type = js.native
   /**
     * Resets the horizontal and vertical flipped state of this Bob back to their default un-flipped state.
     */
-  def resetFlip(): Bob = js.native
+  def resetFlip(): this.type = js.native
   /**
     * Set the Alpha level of this Bob. The alpha controls the opacity of the Game Object as it renders.
     * Alpha values are provided as a float between 0, fully transparent, and 1, fully opaque.
@@ -113,50 +102,50 @@ class Bob protected () extends js.Object {
     * A Bob with alpha 0 will skip rendering.
     * @param value The alpha value used for this Bob. Between 0 and 1.
     */
-  def setAlpha(value: Double): Bob = js.native
+  def setAlpha(value: Double): this.type = js.native
   /**
     * Sets the horizontal and vertical flipped state of this Bob.
     * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
     */
-  def setFlip(x: Boolean, y: Boolean): Bob = js.native
+  def setFlip(x: Boolean, y: Boolean): this.type = js.native
   /**
     * Sets the horizontal flipped state of this Bob.
     * @param value The flipped state. `false` for no flip, or `true` to be flipped.
     */
-  def setFlipX(value: Boolean): Bob = js.native
+  def setFlipX(value: Boolean): this.type = js.native
   /**
     * Sets the vertical flipped state of this Bob.
     * @param value The flipped state. `false` for no flip, or `true` to be flipped.
     */
-  def setFlipY(value: Boolean): Bob = js.native
+  def setFlipY(value: Boolean): this.type = js.native
   /**
     * Changes the Texture Frame being used by this Bob.
     * The frame must be part of the Texture the parent Blitter is using.
     * If no value is given it will use the default frame of the Blitter parent.
     * @param frame The frame to be used during rendering.
     */
-  def setFrame(): Bob = js.native
-  def setFrame(frame: String): Bob = js.native
-  def setFrame(frame: Frame): Bob = js.native
-  def setFrame(frame: integer): Bob = js.native
+  def setFrame(): this.type = js.native
+  def setFrame(frame: String): this.type = js.native
+  def setFrame(frame: Frame): this.type = js.native
+  def setFrame(frame: integer): this.type = js.native
   /**
     * Changes the position of this Bob to the values given.
     * @param x The x position of the Bob. Bob coordinate are relative to the position of the Blitter object.
     * @param y The y position of the Bob. Bob coordinate are relative to the position of the Blitter object.
     */
-  def setPosition(x: Double, y: Double): Bob = js.native
+  def setPosition(x: Double, y: Double): this.type = js.native
   /**
     * Sets the tint of this Bob.
     * @param value The tint value used for this Bob. Between 0 and 0xffffff.
     */
-  def setTint(value: Double): Bob = js.native
+  def setTint(value: Double): this.type = js.native
   /**
     * Sets the visibility of this Bob.
     * 
     * An invisible Bob will skip rendering.
     * @param value The visible state of the Game Object.
     */
-  def setVisible(value: Boolean): Bob = js.native
+  def setVisible(value: Boolean): this.type = js.native
 }
 

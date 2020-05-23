@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +42,17 @@ trait LayerPerformanceInfo extends js.Object {
   var totalNumberOfFeatures: Double
 }
 
-@JSGlobal("__esri.LayerPerformanceInfo")
-@js.native
-object LayerPerformanceInfo extends TopLevel[LayerPerformanceInfo]
+object LayerPerformanceInfo {
+  @scala.inline
+  def apply(
+    displayedNumberOfFeatures: Double,
+    layer: Layer,
+    maximumNumberOfFeatures: Double,
+    memory: Double,
+    totalNumberOfFeatures: Double
+  ): LayerPerformanceInfo = {
+    val __obj = js.Dynamic.literal(displayedNumberOfFeatures = displayedNumberOfFeatures.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], maximumNumberOfFeatures = maximumNumberOfFeatures.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], totalNumberOfFeatures = totalNumberOfFeatures.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LayerPerformanceInfo]
+  }
+}
 

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,8 +22,4 @@ trait Cache extends js.Object {
   def matchAll(request: RequestInfo, options: CacheQueryOptions): js.Promise[js.Array[Response]] = js.native
   def put(request: RequestInfo, response: Response): js.Promise[Unit] = js.native
 }
-
-@JSGlobal("Cache")
-@js.native
-object Cache extends Instantiable0[Cache]
 

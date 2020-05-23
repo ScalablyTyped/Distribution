@@ -96,10 +96,10 @@ object AdalConfig {
     correlationId: String = null,
     displayCall: /* url */ String => Unit = null,
     endpoints: StringDictionary[String] = null,
-    expireOffsetSeconds: Int | Double = null,
+    expireOffsetSeconds: js.UndefOr[Double] = js.undefined,
     extraQueryParameter: String = null,
     instance: String = null,
-    loadFrameTimeout: Int | Double = null,
+    loadFrameTimeout: js.UndefOr[Double] = js.undefined,
     localLoginUrl: String = null,
     logOutUri: String = null,
     loginResource: String = null,
@@ -116,15 +116,15 @@ object AdalConfig {
     if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
     if (displayCall != null) __obj.updateDynamic("displayCall")(js.Any.fromFunction1(displayCall))
     if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
-    if (expireOffsetSeconds != null) __obj.updateDynamic("expireOffsetSeconds")(expireOffsetSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(expireOffsetSeconds)) __obj.updateDynamic("expireOffsetSeconds")(expireOffsetSeconds.get.asInstanceOf[js.Any])
     if (extraQueryParameter != null) __obj.updateDynamic("extraQueryParameter")(extraQueryParameter.asInstanceOf[js.Any])
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (loadFrameTimeout != null) __obj.updateDynamic("loadFrameTimeout")(loadFrameTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadFrameTimeout)) __obj.updateDynamic("loadFrameTimeout")(loadFrameTimeout.get.asInstanceOf[js.Any])
     if (localLoginUrl != null) __obj.updateDynamic("localLoginUrl")(localLoginUrl.asInstanceOf[js.Any])
     if (logOutUri != null) __obj.updateDynamic("logOutUri")(logOutUri.asInstanceOf[js.Any])
     if (loginResource != null) __obj.updateDynamic("loginResource")(loginResource.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigateToLoginRequestUrl)) __obj.updateDynamic("navigateToLoginRequestUrl")(navigateToLoginRequestUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(popUp)) __obj.updateDynamic("popUp")(popUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigateToLoginRequestUrl)) __obj.updateDynamic("navigateToLoginRequestUrl")(navigateToLoginRequestUrl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(popUp)) __obj.updateDynamic("popUp")(popUp.get.asInstanceOf[js.Any])
     if (postLogoutRedirectUri != null) __obj.updateDynamic("postLogoutRedirectUri")(postLogoutRedirectUri.asInstanceOf[js.Any])
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
     if (tenant != null) __obj.updateDynamic("tenant")(tenant.asInstanceOf[js.Any])

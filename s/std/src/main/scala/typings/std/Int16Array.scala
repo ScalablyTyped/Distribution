@@ -1,7 +1,6 @@
 package typings.std
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -333,8 +332,4 @@ trait Int16Array extends /* index */ NumberDictionary[Double] {
     */
   def values(): IterableIterator[Double] = js.native
 }
-
-@JSGlobal("Int16Array")
-@js.native
-object Int16Array extends TopLevel[Int16ArrayConstructor]
 

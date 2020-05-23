@@ -1,7 +1,7 @@
 package typings.uifabricStyling.iconsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricMergeStyles.irawstylebaseMod.IFontFace
 import typings.uifabricMergeStyles.istyleMod.IRawStyle
 import scala.scalajs.js

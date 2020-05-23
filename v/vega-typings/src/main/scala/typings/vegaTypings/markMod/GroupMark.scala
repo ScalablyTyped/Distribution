@@ -34,6 +34,7 @@ object GroupMark {
   @scala.inline
   def apply(
     `type`: group,
+    aria: js.UndefOr[Boolean] = js.undefined,
     axes: js.Array[Axis] = null,
     clip: Clip = null,
     data: js.Array[Data] = null,
@@ -56,10 +57,11 @@ object GroupMark {
     title: String | Title = null,
     transform: js.Array[Transforms] = null,
     usermeta: js.Object = null,
-    zindex: Int | Double = null
+    zindex: js.UndefOr[Double] = js.undefined
   ): GroupMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
     if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -82,7 +84,7 @@ object GroupMark {
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (usermeta != null) __obj.updateDynamic("usermeta")(usermeta.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupMark]
   }
 }

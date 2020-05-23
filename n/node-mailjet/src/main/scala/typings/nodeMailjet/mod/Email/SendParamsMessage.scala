@@ -1,6 +1,5 @@
 package typings.nodeMailjet.mod.Email
 
-import typings.nodeMailjet.AnonEmail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,13 +12,13 @@ trait SendParamsMessage extends js.Object {
   var CustomID: js.UndefOr[String] = js.undefined
   var DeduplicateCampaign: js.UndefOr[Boolean] = js.undefined
   var EventPayload: js.UndefOr[String] = js.undefined
-  var From: AnonEmail
+  var From: typings.nodeMailjet.anon.Email
   var HTMLPart: js.UndefOr[String] = js.undefined
   var Headers: js.UndefOr[js.Object] = js.undefined
   var InlinedAttachments: js.UndefOr[js.Array[InlinedAttachment]] = js.undefined
   var MonitoringCategory: js.UndefOr[String] = js.undefined
   var ReplyTo: js.UndefOr[SendParamsRecipient] = js.undefined
-  var Sender: js.UndefOr[AnonEmail] = js.undefined
+  var Sender: js.UndefOr[typings.nodeMailjet.anon.Email] = js.undefined
   var Subject: String
   var TemplateID: js.UndefOr[Double] = js.undefined
   var TemplateLanguage: js.UndefOr[Boolean] = js.undefined
@@ -32,7 +31,7 @@ trait SendParamsMessage extends js.Object {
 object SendParamsMessage {
   @scala.inline
   def apply(
-    From: AnonEmail,
+    From: typings.nodeMailjet.anon.Email,
     Subject: String,
     To: js.Array[SendParamsRecipient],
     Attachments: js.Array[Attachment] = null,
@@ -47,8 +46,8 @@ object SendParamsMessage {
     InlinedAttachments: js.Array[InlinedAttachment] = null,
     MonitoringCategory: String = null,
     ReplyTo: SendParamsRecipient = null,
-    Sender: AnonEmail = null,
-    TemplateID: Int | Double = null,
+    Sender: typings.nodeMailjet.anon.Email = null,
+    TemplateID: js.UndefOr[Double] = js.undefined,
     TemplateLanguage: js.UndefOr[Boolean] = js.undefined,
     TextPart: String = null,
     URLTags: String = null,
@@ -60,7 +59,7 @@ object SendParamsMessage {
     if (Cc != null) __obj.updateDynamic("Cc")(Cc.asInstanceOf[js.Any])
     if (CustomCampaign != null) __obj.updateDynamic("CustomCampaign")(CustomCampaign.asInstanceOf[js.Any])
     if (CustomID != null) __obj.updateDynamic("CustomID")(CustomID.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeduplicateCampaign)) __obj.updateDynamic("DeduplicateCampaign")(DeduplicateCampaign.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeduplicateCampaign)) __obj.updateDynamic("DeduplicateCampaign")(DeduplicateCampaign.get.asInstanceOf[js.Any])
     if (EventPayload != null) __obj.updateDynamic("EventPayload")(EventPayload.asInstanceOf[js.Any])
     if (HTMLPart != null) __obj.updateDynamic("HTMLPart")(HTMLPart.asInstanceOf[js.Any])
     if (Headers != null) __obj.updateDynamic("Headers")(Headers.asInstanceOf[js.Any])
@@ -68,8 +67,8 @@ object SendParamsMessage {
     if (MonitoringCategory != null) __obj.updateDynamic("MonitoringCategory")(MonitoringCategory.asInstanceOf[js.Any])
     if (ReplyTo != null) __obj.updateDynamic("ReplyTo")(ReplyTo.asInstanceOf[js.Any])
     if (Sender != null) __obj.updateDynamic("Sender")(Sender.asInstanceOf[js.Any])
-    if (TemplateID != null) __obj.updateDynamic("TemplateID")(TemplateID.asInstanceOf[js.Any])
-    if (!js.isUndefined(TemplateLanguage)) __obj.updateDynamic("TemplateLanguage")(TemplateLanguage.asInstanceOf[js.Any])
+    if (!js.isUndefined(TemplateID)) __obj.updateDynamic("TemplateID")(TemplateID.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TemplateLanguage)) __obj.updateDynamic("TemplateLanguage")(TemplateLanguage.get.asInstanceOf[js.Any])
     if (TextPart != null) __obj.updateDynamic("TextPart")(TextPart.asInstanceOf[js.Any])
     if (URLTags != null) __obj.updateDynamic("URLTags")(URLTags.asInstanceOf[js.Any])
     if (Variables != null) __obj.updateDynamic("Variables")(Variables.asInstanceOf[js.Any])

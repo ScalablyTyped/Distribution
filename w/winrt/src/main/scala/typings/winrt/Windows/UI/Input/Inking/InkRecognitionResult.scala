@@ -6,14 +6,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.Input.Inking.InkRecognitionResult")
-@js.native
-class InkRecognitionResult () extends IInkRecognitionResult {
-  /* CompleteClass */
-  override var boundingRect: Rect = js.native
-  /* CompleteClass */
-  override def getStrokes(): IVectorView[InkStroke] = js.native
-  /* CompleteClass */
-  override def getTextCandidates(): IVectorView[String] = js.native
+trait InkRecognitionResult extends IInkRecognitionResult
+
+object InkRecognitionResult {
+  @scala.inline
+  def apply(
+    boundingRect: Rect,
+    getStrokes: () => IVectorView[InkStroke],
+    getTextCandidates: () => IVectorView[String]
+  ): InkRecognitionResult = {
+    val __obj = js.Dynamic.literal(boundingRect = boundingRect.asInstanceOf[js.Any], getStrokes = js.Any.fromFunction0(getStrokes), getTextCandidates = js.Any.fromFunction0(getTextCandidates))
+    __obj.asInstanceOf[InkRecognitionResult]
+  }
 }
 

@@ -34,10 +34,10 @@ object DurationFormatSettings {
     forceLength: js.UndefOr[Boolean] = js.undefined,
     grouping: js.Array[Double] = null,
     groupingSeparator: String = null,
-    largest: Int | Double = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
-    precision: Int | Double = null,
+    largest: js.UndefOr[Double] = js.undefined,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined,
+    precision: js.UndefOr[Double] = js.undefined,
     stopTrim: String = null,
     template: String | TemplateFunction = null,
     trim: `false` | UnitOfTrimV1 | UnitOfTrim | String | (js.Array[UnitOfTrim | String]) = null,
@@ -51,22 +51,22 @@ object DurationFormatSettings {
   ): DurationFormatSettings = {
     val __obj = js.Dynamic.literal()
     if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceLength)) __obj.updateDynamic("forceLength")(forceLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceLength)) __obj.updateDynamic("forceLength")(forceLength.get.asInstanceOf[js.Any])
     if (grouping != null) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
     if (groupingSeparator != null) __obj.updateDynamic("groupingSeparator")(groupingSeparator.asInstanceOf[js.Any])
-    if (largest != null) __obj.updateDynamic("largest")(largest.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(largest)) __obj.updateDynamic("largest")(largest.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (stopTrim != null) __obj.updateDynamic("stopTrim")(stopTrim.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (trim != null) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     if (trunc != null) __obj.updateDynamic("trunc")(trunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGrouping)) __obj.updateDynamic("useGrouping")(useGrouping.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLeftUnits)) __obj.updateDynamic("useLeftUnits")(useLeftUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePlural)) __obj.updateDynamic("usePlural")(usePlural.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGrouping)) __obj.updateDynamic("useGrouping")(useGrouping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLeftUnits)) __obj.updateDynamic("useLeftUnits")(useLeftUnits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePlural)) __obj.updateDynamic("usePlural")(usePlural.get.asInstanceOf[js.Any])
     if (useSignificantDigits != null) __obj.updateDynamic("useSignificantDigits")(useSignificantDigits.asInstanceOf[js.Any])
-    if (!js.isUndefined(useToLocaleString)) __obj.updateDynamic("useToLocaleString")(useToLocaleString.asInstanceOf[js.Any])
+    if (!js.isUndefined(useToLocaleString)) __obj.updateDynamic("useToLocaleString")(useToLocaleString.get.asInstanceOf[js.Any])
     if (userLocale != null) __obj.updateDynamic("userLocale")(userLocale.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationFormatSettings]
   }

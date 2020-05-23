@@ -16,13 +16,13 @@ object ScaleEffect {
   def apply(
     direction: String = null,
     origin: js.Array[String] = null,
-    percent: Int | Double = null,
+    percent: js.UndefOr[Double] = js.undefined,
     scale: String = null
   ): ScaleEffect = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleEffect]
   }

@@ -1,5 +1,6 @@
 package typings.jestEach
 
+import typings.jestEach.anon.Describe
 import typings.jestEach.bindMod.GlobalCallback
 import typings.jestTypes.globalMod.EachTable
 import typings.jestTypes.globalMod.EachTestFn
@@ -26,8 +27,8 @@ object mod extends js.Object {
     def apply(
       table: EachTable,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type Global.TemplateData is not an array type */ data: TemplateData
-    ): AnonDescribe = js.native
-    def withGlobal(g: typings.jestTypes.globalMod.Global): js.Function2[/* table */ EachTable, /* data */ TemplateData, AnonDescribe] = js.native
+    ): Describe = js.native
+    def withGlobal(g: typings.jestTypes.globalMod.Global): js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe] = js.native
   }
   
   type Global = typings.jestTypes.globalMod.Global

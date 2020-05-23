@@ -5,22 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.OnCellErrorStateChanged")
-@js.native
-class OnCellErrorStateChanged protected () extends IEventArgs {
-  def this(
-    recordKey: Double,
-    fieldKey: String,
+trait OnCellErrorStateChanged extends IEventArgs {
+  var bAddingError: Boolean
+  var bCellCurrentlyHasError: Boolean
+  var bCellHadError: Boolean
+  var errorId: Double
+  var fieldKey: String
+  var recordKey: Double
+}
+
+object OnCellErrorStateChanged {
+  @scala.inline
+  def apply(
     bAddingError: Boolean,
     bCellCurrentlyHasError: Boolean,
     bCellHadError: Boolean,
-    errorId: Double
-  ) = this()
-  var bAddingError: Boolean = js.native
-  var bCellCurrentlyHasError: Boolean = js.native
-  var bCellHadError: Boolean = js.native
-  var errorId: Double = js.native
-  var fieldKey: String = js.native
-  var recordKey: Double = js.native
+    errorId: Double,
+    fieldKey: String,
+    recordKey: Double
+  ): OnCellErrorStateChanged = {
+    val __obj = js.Dynamic.literal(bAddingError = bAddingError.asInstanceOf[js.Any], bCellCurrentlyHasError = bCellCurrentlyHasError.asInstanceOf[js.Any], bCellHadError = bCellHadError.asInstanceOf[js.Any], errorId = errorId.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnCellErrorStateChanged]
+  }
 }
 

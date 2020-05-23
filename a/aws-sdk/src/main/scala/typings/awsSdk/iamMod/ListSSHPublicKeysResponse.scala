@@ -23,12 +23,12 @@ trait ListSSHPublicKeysResponse extends js.Object {
 object ListSSHPublicKeysResponse {
   @scala.inline
   def apply(
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
+    IsTruncated: js.UndefOr[booleanType] = js.undefined,
     Marker: responseMarkerType = null,
     SSHPublicKeys: SSHPublicKeyListType = null
   ): ListSSHPublicKeysResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (SSHPublicKeys != null) __obj.updateDynamic("SSHPublicKeys")(SSHPublicKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSSHPublicKeysResponse]

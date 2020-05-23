@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Media.Capture
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,6 @@ object CameraCaptureUIMode extends js.Object {
   
   @js.native
   sealed trait video extends CameraCaptureUIMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CameraCaptureUIMode with Double] = js.native
-  /* 1 */ @js.native
-  object photo extends TopLevel[photo with Double]
-  
-  /* 0 */ @js.native
-  object photoOrVideo extends TopLevel[photoOrVideo with Double]
-  
-  /* 2 */ @js.native
-  object video extends TopLevel[video with Double]
   
 }
 

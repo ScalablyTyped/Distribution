@@ -40,13 +40,13 @@ object TopicRulePayload {
     awsIotSqlVersion: AwsIotSqlVersion = null,
     description: Description = null,
     errorAction: Action = null,
-    ruleDisabled: js.UndefOr[scala.Boolean] = js.undefined
+    ruleDisabled: js.UndefOr[IsDisabled] = js.undefined
   ): TopicRulePayload = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
     if (awsIotSqlVersion != null) __obj.updateDynamic("awsIotSqlVersion")(awsIotSqlVersion.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (errorAction != null) __obj.updateDynamic("errorAction")(errorAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(ruleDisabled)) __obj.updateDynamic("ruleDisabled")(ruleDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruleDisabled)) __obj.updateDynamic("ruleDisabled")(ruleDisabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRulePayload]
   }
 }

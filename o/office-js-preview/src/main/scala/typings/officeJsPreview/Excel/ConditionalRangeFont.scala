@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ConditionalRangeFontData
 import typings.officeJsPreview.Excel.Interfaces.ConditionalRangeFontLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ConditionalRangeFontUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Double
 import typings.officeJsPreview.officeJsPreviewStrings.None
 import typings.officeJsPreview.officeJsPreviewStrings.Single
@@ -19,19 +19,18 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.ConditionalRangeFont")
 @js.native
-class ConditionalRangeFont () extends ClientObject {
+trait ConditionalRangeFont extends ClientObject {
   /**
     *
-    * Represents the bold status of font.
+    * Specifies if the font is bold.
     *
     * [Api set: ExcelApi 1.6]
     */
   var bold: Boolean = js.native
   /**
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -41,21 +40,21 @@ class ConditionalRangeFont () extends ClientObject {
   var context_ConditionalRangeFont: RequestContext = js.native
   /**
     *
-    * Represents the italic status of the font.
+    * Specifies if the font is italic.
     *
     * [Api set: ExcelApi 1.6]
     */
   var italic: Boolean = js.native
   /**
     *
-    * Represents the strikethrough status of the font.
+    * Specifies the strikethrough status of the font.
     *
     * [Api set: ExcelApi 1.6]
     */
   var strikethrough: Boolean = js.native
   /**
     *
-    * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+    * The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -73,7 +72,7 @@ class ConditionalRangeFont () extends ClientObject {
     */
   def load(): ConditionalRangeFont = js.native
   def load(options: ConditionalRangeFontLoadOptions): ConditionalRangeFont = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ConditionalRangeFont = js.native
+  def load(propertyNamesAndPaths: Expand): ConditionalRangeFont = js.native
   def load(propertyNames: String): ConditionalRangeFont = js.native
   def load(propertyNames: js.Array[String]): ConditionalRangeFont = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

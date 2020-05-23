@@ -93,11 +93,11 @@ object CreateSimulationJobResponse {
     lastStartedAt: LastStartedAt = null,
     lastUpdatedAt: LastUpdatedAt = null,
     loggingConfig: LoggingConfig = null,
-    maxJobDurationInSeconds: Int | Double = null,
+    maxJobDurationInSeconds: js.UndefOr[JobDuration] = js.undefined,
     outputLocation: OutputLocation = null,
     robotApplications: RobotApplicationConfigs = null,
     simulationApplications: SimulationApplicationConfigs = null,
-    simulationTimeMillis: Int | Double = null,
+    simulationTimeMillis: js.UndefOr[SimulationTimeMillis] = js.undefined,
     status: SimulationJobStatus = null,
     tags: TagMap = null,
     vpcConfig: VPCConfigResponse = null
@@ -113,11 +113,11 @@ object CreateSimulationJobResponse {
     if (lastStartedAt != null) __obj.updateDynamic("lastStartedAt")(lastStartedAt.asInstanceOf[js.Any])
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
     if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
-    if (maxJobDurationInSeconds != null) __obj.updateDynamic("maxJobDurationInSeconds")(maxJobDurationInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxJobDurationInSeconds)) __obj.updateDynamic("maxJobDurationInSeconds")(maxJobDurationInSeconds.get.asInstanceOf[js.Any])
     if (outputLocation != null) __obj.updateDynamic("outputLocation")(outputLocation.asInstanceOf[js.Any])
     if (robotApplications != null) __obj.updateDynamic("robotApplications")(robotApplications.asInstanceOf[js.Any])
     if (simulationApplications != null) __obj.updateDynamic("simulationApplications")(simulationApplications.asInstanceOf[js.Any])
-    if (simulationTimeMillis != null) __obj.updateDynamic("simulationTimeMillis")(simulationTimeMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(simulationTimeMillis)) __obj.updateDynamic("simulationTimeMillis")(simulationTimeMillis.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.amapJsApiDriving.AMap.Driving
 
 import typings.amapJsApi.AMap.LngLat
-import typings.amapJsApiDriving.AnonIsWaypoint
+import typings.amapJsApiDriving.anon.IsWaypoint
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.PoiExt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ trait SearchResultExt
   /**
     * 驾车规划途经点
     */
-  var waypoints: js.Array[PoiExt with AnonIsWaypoint]
+  var waypoints: js.Array[PoiExt with IsWaypoint]
 }
 
 object SearchResultExt {
@@ -43,11 +43,11 @@ object SearchResultExt {
     originName: String,
     routes: js.Array[DriveRoute],
     start: PoiExt,
-    waypoints: js.Array[PoiExt with AnonIsWaypoint],
-    taxi_cost: Int | Double = null
+    waypoints: js.Array[PoiExt with IsWaypoint],
+    taxi_cost: js.UndefOr[Double] = js.undefined
   ): SearchResultExt = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], destinationName = destinationName.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], originName = originName.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
-    if (taxi_cost != null) __obj.updateDynamic("taxi_cost")(taxi_cost.asInstanceOf[js.Any])
+    if (!js.isUndefined(taxi_cost)) __obj.updateDynamic("taxi_cost")(taxi_cost.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResultExt]
   }
 }

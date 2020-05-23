@@ -25,12 +25,12 @@ object DeleteIAMPolicyAssignmentResponse {
   def apply(
     AssignmentName: IAMPolicyAssignmentName = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null
+    Status: js.UndefOr[StatusCode] = js.undefined
   ): DeleteIAMPolicyAssignmentResponse = {
     val __obj = js.Dynamic.literal()
     if (AssignmentName != null) __obj.updateDynamic("AssignmentName")(AssignmentName.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIAMPolicyAssignmentResponse]
   }
 }

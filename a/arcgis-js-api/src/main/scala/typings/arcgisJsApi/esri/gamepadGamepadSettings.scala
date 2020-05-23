@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`forward-down`
 import typings.arcgisJsApi.arcgisJsApiStrings.`forward-up`
 import typings.arcgisJsApi.arcgisJsApiStrings.pan
@@ -44,8 +43,4 @@ trait gamepadGamepadSettings extends Accessor {
     */
   var tiltDirection: `forward-down` | `forward-up` = js.native
 }
-
-@JSGlobal("__esri.gamepadGamepadSettings")
-@js.native
-object gamepadGamepadSettings extends TopLevel[gamepadGamepadSettingsConstructor]
 

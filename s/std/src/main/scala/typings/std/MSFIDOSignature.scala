@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ trait MSFIDOSignature extends js.Object {
   val signature: java.lang.String
 }
 
-@JSGlobal("MSFIDOSignature")
-@js.native
-object MSFIDOSignature extends Instantiable0[MSFIDOSignature]
+object MSFIDOSignature {
+  @scala.inline
+  def apply(authnrData: java.lang.String, clientData: java.lang.String, signature: java.lang.String): MSFIDOSignature = {
+    val __obj = js.Dynamic.literal(authnrData = authnrData.asInstanceOf[js.Any], clientData = clientData.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MSFIDOSignature]
+  }
+}
 

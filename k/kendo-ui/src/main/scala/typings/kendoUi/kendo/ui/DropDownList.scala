@@ -2,16 +2,12 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.DataSource
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.DropDownList")
 @js.native
-class DropDownList protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: DropDownListOptions) = this()
+trait DropDownList extends Widget {
   var dataSource: DataSource = js.native
   var filterInput: JQuery = js.native
   var list: JQuery = js.native
@@ -42,13 +38,5 @@ class DropDownList protected () extends Widget {
   def toggle(toggle: Boolean): Unit = js.native
   def value(): String = js.native
   def value(value: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.DropDownList")
-@js.native
-object DropDownList extends js.Object {
-  var fn: DropDownList = js.native
-  def extend(proto: js.Object): DropDownList = js.native
 }
 

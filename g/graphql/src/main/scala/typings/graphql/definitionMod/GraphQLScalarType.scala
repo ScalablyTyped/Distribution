@@ -1,7 +1,7 @@
 package typings.graphql.definitionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.GraphQLScalarTypeConfigan
+import typings.graphql.anon.GraphQLScalarTypeConfigan
 import typings.graphql.astMod.ScalarTypeDefinitionNode
 import typings.graphql.astMod.ScalarTypeExtensionNode
 import typings.graphql.astMod.ValueNode

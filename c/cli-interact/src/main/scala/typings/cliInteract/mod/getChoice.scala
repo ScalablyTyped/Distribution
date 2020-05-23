@@ -1,6 +1,6 @@
 package typings.cliInteract.mod
 
-import typings.cliInteract.ChoiceOptionsreturnNumeri
+import typings.cliInteract.anon.ChoiceOptionsreturnNumeri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -22,7 +22,7 @@ trait LegendLayout extends BaseLegendLayout {
 object LegendLayout {
   @scala.inline
   def apply(
-    anchor: TitleAnchor | SignalRef = null,
+    anchor: js.UndefOr[Null | TitleAnchor | SignalRef] = js.undefined,
     bottom: BaseLegendLayout = null,
     `bottom-left`: BaseLegendLayout = null,
     `bottom-right`: BaseLegendLayout = null,
@@ -38,7 +38,7 @@ object LegendLayout {
     `top-right`: BaseLegendLayout = null
   ): LegendLayout = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (`bottom-left` != null) __obj.updateDynamic("bottom-left")(`bottom-left`.asInstanceOf[js.Any])
     if (`bottom-right` != null) __obj.updateDynamic("bottom-right")(`bottom-right`.asInstanceOf[js.Any])

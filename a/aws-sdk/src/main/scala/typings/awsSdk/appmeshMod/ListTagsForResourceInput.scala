@@ -32,9 +32,9 @@ trait ListTagsForResourceInput extends js.Object {
 
 object ListTagsForResourceInput {
   @scala.inline
-  def apply(resourceArn: Arn, limit: Int | Double = null, nextToken: String = null): ListTagsForResourceInput = {
+  def apply(resourceArn: Arn, limit: js.UndefOr[TagsLimit] = js.undefined, nextToken: String = null): ListTagsForResourceInput = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceInput]
   }

@@ -1,6 +1,6 @@
 package typings.angularCore.mod
 
-import typings.angularCore.AnonName
+import typings.angularCore.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +47,7 @@ object Injector extends js.Object {
     * @returns The new injector instance.
     *
     */
-  def create(options: AnonName): Injector = js.native
+  def create(options: Name): Injector = js.native
   /**
     * @deprecated from v5 use the new signature Injector.create(options)
     */

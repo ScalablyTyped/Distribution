@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonPassed
+import typings.aliApp.anon.Passed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 trait StartZMVerifyOptions
   extends BaseOptions[js.Any, js.Any] {
   var bizNo: String
-  	// 认证标识
+      // 认证标识
   @JSName("success")
-  var success_StartZMVerifyOptions: js.UndefOr[js.Function1[/* res */ AnonPassed, Unit]] = js.undefined
+  var success_StartZMVerifyOptions: js.UndefOr[js.Function1[/* res */ Passed, Unit]] = js.undefined
 }
 
 object StartZMVerifyOptions {
@@ -21,7 +21,7 @@ object StartZMVerifyOptions {
     bizNo: String,
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonPassed => Unit = null
+    success: /* res */ Passed => Unit = null
   ): StartZMVerifyOptions = {
     val __obj = js.Dynamic.literal(bizNo = bizNo.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

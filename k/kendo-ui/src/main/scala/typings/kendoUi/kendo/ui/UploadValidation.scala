@@ -14,13 +14,13 @@ object UploadValidation {
   @scala.inline
   def apply(
     allowedExtensions: js.Any = null,
-    maxFileSize: Int | Double = null,
-    minFileSize: Int | Double = null
+    maxFileSize: js.UndefOr[Double] = js.undefined,
+    minFileSize: js.UndefOr[Double] = js.undefined
   ): UploadValidation = {
     val __obj = js.Dynamic.literal()
     if (allowedExtensions != null) __obj.updateDynamic("allowedExtensions")(allowedExtensions.asInstanceOf[js.Any])
-    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (minFileSize != null) __obj.updateDynamic("minFileSize")(minFileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFileSize)) __obj.updateDynamic("minFileSize")(minFileSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadValidation]
   }
 }

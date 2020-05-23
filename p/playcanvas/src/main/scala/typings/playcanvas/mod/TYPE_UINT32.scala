@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.TYPE_UINT32
-  * @type {number}
-  * @description Unsigned integer vertex element type.
+  * Unsigned integer vertex element type.
   */
 @JSImport("playcanvas", "TYPE_UINT32")
 @js.native

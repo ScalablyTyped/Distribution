@@ -1,11 +1,11 @@
 package typings.reactNativeGestureHandler.mod
 
 import typings.react.mod.Ref
-import typings.reactNativeGestureHandler.AnonBottom
-import typings.reactNativeGestureHandler.AnonBottomHeight
-import typings.reactNativeGestureHandler.AnonHeight
-import typings.reactNativeGestureHandler.AnonLeft
-import typings.reactNativeGestureHandler.AnonRight
+import typings.reactNativeGestureHandler.anon.Bottom
+import typings.reactNativeGestureHandler.anon.BottomHeight
+import typings.reactNativeGestureHandler.anon.Height
+import typings.reactNativeGestureHandler.anon.Left
+import typings.reactNativeGestureHandler.anon.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,37 +26,37 @@ object TapGestureHandlerProperties {
   @scala.inline
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Double | AnonBottom | AnonLeft | AnonRight | AnonHeight | AnonBottomHeight = null,
+    hitSlop: Double | Bottom | Left | Right | Height | BottomHeight = null,
     id: String = null,
-    maxDelayMs: Int | Double = null,
-    maxDeltaX: Int | Double = null,
-    maxDeltaY: Int | Double = null,
-    maxDist: Int | Double = null,
-    maxDurationMs: Int | Double = null,
-    minPointers: Int | Double = null,
-    numberOfTaps: Int | Double = null,
+    maxDelayMs: js.UndefOr[Double] = js.undefined,
+    maxDeltaX: js.UndefOr[Double] = js.undefined,
+    maxDeltaY: js.UndefOr[Double] = js.undefined,
+    maxDist: js.UndefOr[Double] = js.undefined,
+    maxDurationMs: js.UndefOr[Double] = js.undefined,
+    minPointers: js.UndefOr[Double] = js.undefined,
+    numberOfTaps: js.UndefOr[Double] = js.undefined,
     onGestureEvent: /* event */ TapGestureHandlerGestureEvent => Unit = null,
     onHandlerStateChange: /* event */ TapGestureHandlerStateChangeEvent => Unit = null,
     shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined,
-    simultaneousHandlers: Ref[_] | js.Array[Ref[_]] = null,
-    waitFor: Ref[_] | js.Array[Ref[_]] = null
+    simultaneousHandlers: js.UndefOr[Null | Ref[_] | js.Array[Ref[_]]] = js.undefined,
+    waitFor: js.UndefOr[Null | Ref[_] | js.Array[Ref[_]]] = js.undefined
   ): TapGestureHandlerProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxDelayMs != null) __obj.updateDynamic("maxDelayMs")(maxDelayMs.asInstanceOf[js.Any])
-    if (maxDeltaX != null) __obj.updateDynamic("maxDeltaX")(maxDeltaX.asInstanceOf[js.Any])
-    if (maxDeltaY != null) __obj.updateDynamic("maxDeltaY")(maxDeltaY.asInstanceOf[js.Any])
-    if (maxDist != null) __obj.updateDynamic("maxDist")(maxDist.asInstanceOf[js.Any])
-    if (maxDurationMs != null) __obj.updateDynamic("maxDurationMs")(maxDurationMs.asInstanceOf[js.Any])
-    if (minPointers != null) __obj.updateDynamic("minPointers")(minPointers.asInstanceOf[js.Any])
-    if (numberOfTaps != null) __obj.updateDynamic("numberOfTaps")(numberOfTaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelayMs)) __obj.updateDynamic("maxDelayMs")(maxDelayMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDeltaX)) __obj.updateDynamic("maxDeltaX")(maxDeltaX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDeltaY)) __obj.updateDynamic("maxDeltaY")(maxDeltaY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDist)) __obj.updateDynamic("maxDist")(maxDist.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDurationMs)) __obj.updateDynamic("maxDurationMs")(maxDurationMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPointers)) __obj.updateDynamic("minPointers")(minPointers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfTaps)) __obj.updateDynamic("numberOfTaps")(numberOfTaps.get.asInstanceOf[js.Any])
     if (onGestureEvent != null) __obj.updateDynamic("onGestureEvent")(js.Any.fromFunction1(onGestureEvent))
     if (onHandlerStateChange != null) __obj.updateDynamic("onHandlerStateChange")(js.Any.fromFunction1(onHandlerStateChange))
-    if (!js.isUndefined(shouldCancelWhenOutside)) __obj.updateDynamic("shouldCancelWhenOutside")(shouldCancelWhenOutside.asInstanceOf[js.Any])
-    if (simultaneousHandlers != null) __obj.updateDynamic("simultaneousHandlers")(simultaneousHandlers.asInstanceOf[js.Any])
-    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCancelWhenOutside)) __obj.updateDynamic("shouldCancelWhenOutside")(shouldCancelWhenOutside.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(simultaneousHandlers)) __obj.updateDynamic("simultaneousHandlers")(simultaneousHandlers.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitFor)) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TapGestureHandlerProperties]
   }
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TestContext extends TestContextBase {
   /**
-  		 * Mark a test as completed.
-  		 */
+    * Mark a test as completed.
+    */
   var done: Null = js.native
 }
 

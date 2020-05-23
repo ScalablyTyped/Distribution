@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Diagram
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object ConnectorShapes extends js.Object {
   //Used to specify connector type as UMLClassifier
   @js.native
   sealed trait UMLClassifier extends ConnectorShapes
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ConnectorShapes with Double] = js.native
-  /* 0 */ @js.native
-  object BPMN extends TopLevel[BPMN with Double]
-  
-  /* 2 */ @js.native
-  object UMLActivity extends TopLevel[UMLActivity with Double]
-  
-  /* 1 */ @js.native
-  object UMLClassifier extends TopLevel[UMLClassifier with Double]
   
 }
 

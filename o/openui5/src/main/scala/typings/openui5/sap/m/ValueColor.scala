@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,20 +24,6 @@ object ValueColor extends js.Object {
   
   @js.native
   sealed trait Neutral extends ValueColor
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ValueColor with Double] = js.native
-  /* 0 */ @js.native
-  object Critical extends TopLevel[Critical with Double]
-  
-  /* 1 */ @js.native
-  object Error extends TopLevel[Error with Double]
-  
-  /* 2 */ @js.native
-  object Good extends TopLevel[Good with Double]
-  
-  /* 3 */ @js.native
-  object Neutral extends TopLevel[Neutral with Double]
   
 }
 

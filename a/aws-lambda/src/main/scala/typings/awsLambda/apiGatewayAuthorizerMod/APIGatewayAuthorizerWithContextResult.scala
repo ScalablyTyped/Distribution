@@ -14,14 +14,14 @@ trait APIGatewayAuthorizerWithContextResult[TAuthorizerContext /* <: APIGatewayA
 
 object APIGatewayAuthorizerWithContextResult {
   @scala.inline
-  def apply[TAuthorizerContext /* <: APIGatewayAuthorizerResultContext */](
+  def apply[TAuthorizerContext](
     context: TAuthorizerContext,
     policyDocument: PolicyDocument,
     principalId: String,
-    usageIdentifierKey: String = null
+    usageIdentifierKey: js.UndefOr[Null | String] = js.undefined
   ): APIGatewayAuthorizerWithContextResult[TAuthorizerContext] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], policyDocument = policyDocument.asInstanceOf[js.Any], principalId = principalId.asInstanceOf[js.Any])
-    if (usageIdentifierKey != null) __obj.updateDynamic("usageIdentifierKey")(usageIdentifierKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(usageIdentifierKey)) __obj.updateDynamic("usageIdentifierKey")(usageIdentifierKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIGatewayAuthorizerWithContextResult[TAuthorizerContext]]
   }
 }

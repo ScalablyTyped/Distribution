@@ -20,7 +20,7 @@ object IOption {
     desiredResponseDataType: DataType = null,
     files: js.Array[IFileData] = null,
     method: String = null,
-    timeoutInSeconds: Int | Double = null,
+    timeoutInSeconds: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): IOption = {
     val __obj = js.Dynamic.literal()
@@ -28,7 +28,7 @@ object IOption {
     if (desiredResponseDataType != null) __obj.updateDynamic("desiredResponseDataType")(desiredResponseDataType.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (timeoutInSeconds != null) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInSeconds)) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOption]
   }

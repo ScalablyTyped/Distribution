@@ -2,6 +2,7 @@ package typings.popmotion
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.popmotion.actionMod.Action
+import typings.popmotion.actionTypesMod.ColdSubscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object vectorMod extends js.Object {
   val default: VectorActionFactory = js.native
-  type ActionFactory = js.Function1[/* props */ Props, Action]
-  type ActionMap = StringDictionary[Action]
+  type ActionFactory = js.Function1[/* props */ Props, Action[ColdSubscription]]
+  type ActionMap = StringDictionary[Action[ColdSubscription]]
   type Props = StringDictionary[js.Any]
   type TypeTest = js.Function1[/* v */ js.Any, Boolean]
   type TypeTestMap = StringDictionary[TypeTest]

@@ -38,18 +38,18 @@ trait ChartScrollablePlotAreaOptions extends js.Object {
 object ChartScrollablePlotAreaOptions {
   @scala.inline
   def apply(
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    opacity: Int | Double = null,
-    scrollPositionX: Int | Double = null,
-    scrollPositionY: Int | Double = null
+    minHeight: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
+    scrollPositionX: js.UndefOr[Double] = js.undefined,
+    scrollPositionY: js.UndefOr[Double] = js.undefined
   ): ChartScrollablePlotAreaOptions = {
     val __obj = js.Dynamic.literal()
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (scrollPositionX != null) __obj.updateDynamic("scrollPositionX")(scrollPositionX.asInstanceOf[js.Any])
-    if (scrollPositionY != null) __obj.updateDynamic("scrollPositionY")(scrollPositionY.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollPositionX)) __obj.updateDynamic("scrollPositionX")(scrollPositionX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollPositionY)) __obj.updateDynamic("scrollPositionY")(scrollPositionY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartScrollablePlotAreaOptions]
   }
 }

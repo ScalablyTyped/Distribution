@@ -1,27 +1,22 @@
 package typings.sharepoint
 
+import typings.sharepoint.anon.Dictname
+import typings.sharepoint.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SPClientPeoplePickerMRU")
-@js.native
-class SPClientPeoplePickerMRU () extends js.Object {
-  def GetItems(strKey: String): AnonDictname = js.native
-  def ResetCache(): Unit = js.native
-  def SetItem[T /* <: AnonKey */](strSearchTerm: String, objEntity: T): Unit = js.native
+trait SPClientPeoplePickerMRU extends js.Object {
+  def GetItems(strKey: String): Dictname
+  def ResetCache(): Unit
+  def SetItem[T /* <: Key */](strSearchTerm: String, objEntity: T): Unit
 }
 
-/* static members */
-@JSGlobal("SPClientPeoplePickerMRU")
-@js.native
-object SPClientPeoplePickerMRU extends js.Object {
-   // = 1;
-  var MaxPPMRUItems: Double = js.native
-   // = 200;
-  var PPMRUDomLocalStoreKey: String = js.native
-  var PPMRUVersion: Double = js.native
-   // = "ClientPeoplePickerMRU";
-  def GetSPClientPeoplePickerMRU(): SPClientPeoplePickerMRU = js.native
+object SPClientPeoplePickerMRU {
+  @scala.inline
+  def apply(GetItems: String => Dictname, ResetCache: () => Unit, SetItem: (String, js.Any) => Unit): SPClientPeoplePickerMRU = {
+    val __obj = js.Dynamic.literal(GetItems = js.Any.fromFunction1(GetItems), ResetCache = js.Any.fromFunction0(ResetCache), SetItem = js.Any.fromFunction2(SetItem))
+    __obj.asInstanceOf[SPClientPeoplePickerMRU]
+  }
 }
 

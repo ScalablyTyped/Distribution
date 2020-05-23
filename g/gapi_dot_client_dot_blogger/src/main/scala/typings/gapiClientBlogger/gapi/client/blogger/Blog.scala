@@ -1,8 +1,8 @@
 package typings.gapiClientBlogger.gapi.client.blogger
 
-import typings.gapiClientBlogger.AnonCountry
-import typings.gapiClientBlogger.AnonItems
-import typings.gapiClientBlogger.AnonSelfLink
+import typings.gapiClientBlogger.anon.Country
+import typings.gapiClientBlogger.anon.Items
+import typings.gapiClientBlogger.anon.SelfLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,13 +17,13 @@ trait Blog extends js.Object {
   /** The kind of this entry. Always blogger#blog */
   var kind: js.UndefOr[String] = js.undefined
   /** The locale this Blog is set to. */
-  var locale: js.UndefOr[AnonCountry] = js.undefined
+  var locale: js.UndefOr[Country] = js.undefined
   /** The name of this blog. This is displayed as the title. */
   var name: js.UndefOr[String] = js.undefined
   /** The container of pages in this blog. */
-  var pages: js.UndefOr[AnonSelfLink] = js.undefined
+  var pages: js.UndefOr[SelfLink] = js.undefined
   /** The container of posts in this blog. */
-  var posts: js.UndefOr[AnonItems] = js.undefined
+  var posts: js.UndefOr[Items] = js.undefined
   /** RFC 3339 date-time when this blog was published. */
   var published: js.UndefOr[String] = js.undefined
   /** The API REST URL to fetch this resource from. */
@@ -43,10 +43,10 @@ object Blog {
     description: String = null,
     id: String = null,
     kind: String = null,
-    locale: AnonCountry = null,
+    locale: Country = null,
     name: String = null,
-    pages: AnonSelfLink = null,
-    posts: AnonItems = null,
+    pages: SelfLink = null,
+    posts: Items = null,
     published: String = null,
     selfLink: String = null,
     status: String = null,

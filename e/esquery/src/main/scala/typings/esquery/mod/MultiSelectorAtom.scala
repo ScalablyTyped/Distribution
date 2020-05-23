@@ -13,7 +13,7 @@ object MultiSelectorAtom {
   def apply(selectors: js.Array[SubjectSelector], `type`: String, subject: js.UndefOr[Boolean] = js.undefined): MultiSelectorAtom = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelectorAtom]
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.xregexp.mod.Feature
   - typings.xregexp.xregexpStrings.`astral namespacing`
   - typings.xregexp.xregexpStrings.`namespacing astral`
-  - typings.xregexp.AnonAstral
+  - typings.xregexp.anon.Astral
 */
 trait FeatureOptions extends js.Object
 

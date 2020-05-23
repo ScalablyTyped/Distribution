@@ -1,6 +1,6 @@
 package typings.smoothScrollbar.smoothScrollbarMod
 
-import typings.smoothScrollbar.TypeofScrollbarPlugin
+import typings.smoothScrollbar.anon.TypeofScrollbarPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

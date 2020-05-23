@@ -17,7 +17,7 @@ trait EndpointIdentifier
 object EndpointIdentifier {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.UndefOr[String]] = null,
+    StringDictionary: /* header */ StringDictionary[js.UndefOr[String]] = null,
     accessKeyId: String = null,
     operation: String = null,
     region: String = null,

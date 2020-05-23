@@ -16,11 +16,11 @@ object ChatManagerConstructorArgs {
   def apply(
     instanceLocator: String,
     userId: String,
-    connectionTimeout: Int | Double = null,
+    connectionTimeout: js.UndefOr[Double] = js.undefined,
     logger: Logger = null
   ): ChatManagerConstructorArgs = {
     val __obj = js.Dynamic.literal(instanceLocator = instanceLocator.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatManagerConstructorArgs]
   }

@@ -7,26 +7,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Base interface for dataset record result. Supports value retrival by column name.
-			 */
+  * Base interface for dataset record result. Supports value retrival by column name.
+  */
 trait EntityRecord extends js.Object {
   /**
-  				 * Get the current formatted value of this record column.
-  				 * @param columnName Column name of the record
-  				 */
+    * Get the current formatted value of this record column.
+    * @param columnName Column name of the record
+    */
   def getFormattedValue(columnName: String): String
   /**
-  				 * Get the object that encapsulates an Entity Reference as a plain object
-  				 */
+    * Get the object that encapsulates an Entity Reference as a plain object
+    */
   def getNamedReference(): EntityReference
   /**
-  				 * Get the record ID
-  				 */
+    * Get the record ID
+    */
   def getRecordId(): String
   /**
-  				 * Get the raw value of the record's column
-  				 * @param columnName Column name of the record
-  				 */
+    * Get the raw value of the record's column
+    * @param columnName Column name of the record
+    */
   def getValue(columnName: String): String | Date | Double | (js.Array[Double | EntityReference]) | Boolean | EntityReference
 }
 

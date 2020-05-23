@@ -237,7 +237,7 @@ object Avail {
     if (altId != null) __obj.updateDynamic("altId")(altId.asInstanceOf[js.Any])
     if (availId != null) __obj.updateDynamic("availId")(availId.asInstanceOf[js.Any])
     if (captionExemption != null) __obj.updateDynamic("captionExemption")(captionExemption.asInstanceOf[js.Any])
-    if (!js.isUndefined(captionIncluded)) __obj.updateDynamic("captionIncluded")(captionIncluded.asInstanceOf[js.Any])
+    if (!js.isUndefined(captionIncluded)) __obj.updateDynamic("captionIncluded")(captionIncluded.get.asInstanceOf[js.Any])
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (encodeId != null) __obj.updateDynamic("encodeId")(encodeId.asInstanceOf[js.Any])

@@ -40,7 +40,7 @@ trait Application extends js.Object {
 object Application {
   @scala.inline
   def apply(
-    achievement_count: Int | Double = null,
+    achievement_count: js.UndefOr[Double] = js.undefined,
     assets: js.Array[ImageAsset] = null,
     author: String = null,
     category: ApplicationCategory = null,
@@ -50,12 +50,12 @@ object Application {
     instances: js.Array[Instance] = null,
     kind: String = null,
     lastUpdatedTimestamp: String = null,
-    leaderboard_count: Int | Double = null,
+    leaderboard_count: js.UndefOr[Double] = js.undefined,
     name: String = null,
     themeColor: String = null
   ): Application = {
     val __obj = js.Dynamic.literal()
-    if (achievement_count != null) __obj.updateDynamic("achievement_count")(achievement_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(achievement_count)) __obj.updateDynamic("achievement_count")(achievement_count.get.asInstanceOf[js.Any])
     if (assets != null) __obj.updateDynamic("assets")(assets.asInstanceOf[js.Any])
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
@@ -65,7 +65,7 @@ object Application {
     if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp.asInstanceOf[js.Any])
-    if (leaderboard_count != null) __obj.updateDynamic("leaderboard_count")(leaderboard_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(leaderboard_count)) __obj.updateDynamic("leaderboard_count")(leaderboard_count.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (themeColor != null) __obj.updateDynamic("themeColor")(themeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Application]

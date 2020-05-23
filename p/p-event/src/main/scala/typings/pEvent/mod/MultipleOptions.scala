@@ -41,20 +41,20 @@ trait MultipleOptions[EmittedType /* <: js.Array[_] */] extends Options[EmittedT
 
 object MultipleOptions {
   @scala.inline
-  def apply[EmittedType /* <: js.Array[_] */](
+  def apply[EmittedType](
     count: Double,
     filter: EmittedType => Boolean = null,
     multiArgs: js.UndefOr[Boolean] = js.undefined,
     rejectionEvents: js.Array[String | js.Symbol] = null,
     resolveImmediately: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): MultipleOptions[EmittedType] = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.get.asInstanceOf[js.Any])
     if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolveImmediately)) __obj.updateDynamic("resolveImmediately")(resolveImmediately.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveImmediately)) __obj.updateDynamic("resolveImmediately")(resolveImmediately.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleOptions[EmittedType]]
   }
 }

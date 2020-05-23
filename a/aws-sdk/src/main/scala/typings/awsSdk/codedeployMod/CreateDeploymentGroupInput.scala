@@ -27,7 +27,7 @@ trait CreateDeploymentGroupInput extends js.Object {
     */
   var blueGreenDeploymentConfiguration: js.UndefOr[BlueGreenDeploymentConfiguration] = js.native
   /**
-    * If specified, the deployment configuration name can be either one of the predefined configurations provided with AWS CodeDeploy or a custom deployment configuration that you create by calling the create deployment configuration operation. CodeDeployDefault.OneAtATime is the default deployment configuration. It is used if a configuration isn't specified for the deployment or deployment group. For more information about the predefined deployment configurations in AWS CodeDeploy, see Working with Deployment Groups in AWS CodeDeploy in the AWS CodeDeploy User Guide.
+    * If specified, the deployment configuration name can be either one of the predefined configurations provided with AWS CodeDeploy or a custom deployment configuration that you create by calling the create deployment configuration operation.  CodeDeployDefault.OneAtATime is the default deployment configuration. It is used if a configuration isn't specified for the deployment or deployment group. For more information about the predefined deployment configurations in AWS CodeDeploy, see Working with Deployment Configurations in CodeDeploy in the AWS CodeDeploy User Guide.
     */
   var deploymentConfigName: js.UndefOr[DeploymentConfigName] = js.native
   /**
@@ -63,7 +63,7 @@ trait CreateDeploymentGroupInput extends js.Object {
     */
   var onPremisesTagSet: js.UndefOr[OnPremisesTagSet] = js.native
   /**
-    * A service role ARN that allows AWS CodeDeploy to act on the user's behalf when interacting with AWS services.
+    * A service role Amazon Resource Name (ARN) that allows AWS CodeDeploy to act on the user's behalf when interacting with AWS services.
     */
   var serviceRoleArn: Role = js.native
   /**

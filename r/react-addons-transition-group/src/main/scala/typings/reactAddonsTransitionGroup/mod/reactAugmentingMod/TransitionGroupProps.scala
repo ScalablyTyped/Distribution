@@ -1,6 +1,6 @@
 package typings.reactAddonsTransitionGroup.mod.reactAugmentingMod
 
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -68,7 +68,7 @@ import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
 import typings.reactAddonsTransitionGroup.mod.ReactTransitionGroup
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -85,9 +85,9 @@ object TransitionGroupProps {
     `aria-autocomplete`: none | `inline` | list | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
+    `aria-colcount`: js.UndefOr[Double] = js.undefined,
+    `aria-colindex`: js.UndefOr[Double] = js.undefined,
+    `aria-colspan`: js.UndefOr[Double] = js.undefined,
     `aria-controls`: String = null,
     `aria-current`: Boolean | page | step | location | date | time = null,
     `aria-describedby`: String = null,
@@ -104,7 +104,7 @@ object TransitionGroupProps {
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
+    `aria-level`: js.UndefOr[Double] = js.undefined,
     `aria-live`: off | assertive | polite = null,
     `aria-modal`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
@@ -112,21 +112,21 @@ object TransitionGroupProps {
     `aria-orientation`: horizontal | vertical = null,
     `aria-owns`: String = null,
     `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
+    `aria-posinset`: js.UndefOr[Double] = js.undefined,
     `aria-pressed`: Boolean | mixed = null,
     `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
     `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
     `aria-required`: js.UndefOr[Boolean] = js.undefined,
     `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
+    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
+    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
+    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
     `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
+    `aria-setsize`: js.UndefOr[Double] = js.undefined,
     `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
+    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
+    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
+    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
     `aria-valuetext`: String = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
@@ -138,12 +138,12 @@ object TransitionGroupProps {
     component: ReactType[_] = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
+    draggable: js.UndefOr[Booleanish] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -155,15 +155,15 @@ object TransitionGroupProps {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
-    onAbort: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
+    onAbort: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[ReactTransitionGroup] => Unit = null,
     onAnimationIteration: AnimationEvent[ReactTransitionGroup] => Unit = null,
     onAnimationStart: AnimationEvent[ReactTransitionGroup] => Unit = null,
     onAuxClick: MouseEvent[ReactTransitionGroup, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[ReactTransitionGroup] => Unit = null,
     onBlur: FocusEvent[ReactTransitionGroup] => Unit = null,
-    onCanPlay: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
     onChange: FormEvent[ReactTransitionGroup] => Unit = null,
     onClick: MouseEvent[ReactTransitionGroup, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[ReactTransitionGroup] => Unit = null,
@@ -181,21 +181,21 @@ object TransitionGroupProps {
     onDragOver: DragEvent[ReactTransitionGroup] => Unit = null,
     onDragStart: DragEvent[ReactTransitionGroup] => Unit = null,
     onDrop: DragEvent[ReactTransitionGroup] => Unit = null,
-    onDurationChange: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onEnded: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onError: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onEmptied: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onEnded: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onError: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
     onFocus: FocusEvent[ReactTransitionGroup] => Unit = null,
     onInput: FormEvent[ReactTransitionGroup] => Unit = null,
     onInvalid: FormEvent[ReactTransitionGroup] => Unit = null,
     onKeyDown: KeyboardEvent[ReactTransitionGroup] => Unit = null,
     onKeyPress: KeyboardEvent[ReactTransitionGroup] => Unit = null,
     onKeyUp: KeyboardEvent[ReactTransitionGroup] => Unit = null,
-    onLoad: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
+    onLoad: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
     onMouseDown: MouseEvent[ReactTransitionGroup, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[ReactTransitionGroup, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[ReactTransitionGroup, NativeMouseEvent] => Unit = null,
@@ -204,9 +204,9 @@ object TransitionGroupProps {
     onMouseOver: MouseEvent[ReactTransitionGroup, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[ReactTransitionGroup, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[ReactTransitionGroup] => Unit = null,
-    onPause: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onPlay: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
+    onPause: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onPlay: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onPlaying: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
     onPointerCancel: PointerEvent[ReactTransitionGroup] => Unit = null,
     onPointerDown: PointerEvent[ReactTransitionGroup] => Unit = null,
     onPointerEnter: PointerEvent[ReactTransitionGroup] => Unit = null,
@@ -215,39 +215,39 @@ object TransitionGroupProps {
     onPointerOut: PointerEvent[ReactTransitionGroup] => Unit = null,
     onPointerOver: PointerEvent[ReactTransitionGroup] => Unit = null,
     onPointerUp: PointerEvent[ReactTransitionGroup] => Unit = null,
-    onProgress: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
+    onProgress: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onRateChange: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
     onReset: FormEvent[ReactTransitionGroup] => Unit = null,
     onScroll: UIEvent[ReactTransitionGroup, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onSelect: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onStalled: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onSeeking: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onSelect: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onStalled: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
     onSubmit: FormEvent[ReactTransitionGroup] => Unit = null,
-    onSuspend: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
     onTouchCancel: TouchEvent[ReactTransitionGroup] => Unit = null,
     onTouchEnd: TouchEvent[ReactTransitionGroup] => Unit = null,
     onTouchMove: TouchEvent[ReactTransitionGroup] => Unit = null,
     onTouchStart: TouchEvent[ReactTransitionGroup] => Unit = null,
     onTransitionEnd: TransitionEvent[ReactTransitionGroup] => Unit = null,
-    onVolumeChange: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[ReactTransitionGroup, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
+    onWaiting: SyntheticEvent[ReactTransitionGroup, Event] => Unit = null,
     onWheel: WheelEvent[ReactTransitionGroup] => Unit = null,
     placeholder: String = null,
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
     resource: String = null,
-    results: Int | Double = null,
+    results: js.UndefOr[Double] = js.undefined,
     role: String = null,
     security: String = null,
     slot: String = null,
-    spellCheck: js.UndefOr[Boolean] = js.undefined,
+    spellCheck: js.UndefOr[Booleanish] = js.undefined,
     style: CSSProperties = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     title: String = null,
     translate: yes | no = null,
     typeof: String = null,
@@ -258,52 +258,52 @@ object TransitionGroupProps {
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
     if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
@@ -317,11 +317,11 @@ object TransitionGroupProps {
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
@@ -329,7 +329,7 @@ object TransitionGroupProps {
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
@@ -416,15 +416,15 @@ object TransitionGroupProps {
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])

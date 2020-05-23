@@ -28,14 +28,14 @@ object AwsCloudFrontDistributionLogging {
   @scala.inline
   def apply(
     Bucket: NonEmptyString = null,
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    IncludeCookies: js.UndefOr[scala.Boolean] = js.undefined,
+    Enabled: js.UndefOr[Boolean] = js.undefined,
+    IncludeCookies: js.UndefOr[Boolean] = js.undefined,
     Prefix: NonEmptyString = null
   ): AwsCloudFrontDistributionLogging = {
     val __obj = js.Dynamic.literal()
     if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeCookies)) __obj.updateDynamic("IncludeCookies")(IncludeCookies.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeCookies)) __obj.updateDynamic("IncludeCookies")(IncludeCookies.get.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsCloudFrontDistributionLogging]
   }

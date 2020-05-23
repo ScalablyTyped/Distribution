@@ -56,10 +56,10 @@ object UpdateSecurityProfileRequest {
     additionalMetricsToRetainV2: AdditionalMetricsToRetainV2List = null,
     alertTargets: AlertTargets = null,
     behaviors: Behaviors = null,
-    deleteAdditionalMetricsToRetain: js.UndefOr[scala.Boolean] = js.undefined,
-    deleteAlertTargets: js.UndefOr[scala.Boolean] = js.undefined,
-    deleteBehaviors: js.UndefOr[scala.Boolean] = js.undefined,
-    expectedVersion: Int | Double = null,
+    deleteAdditionalMetricsToRetain: js.UndefOr[DeleteAdditionalMetricsToRetain] = js.undefined,
+    deleteAlertTargets: js.UndefOr[DeleteAlertTargets] = js.undefined,
+    deleteBehaviors: js.UndefOr[DeleteBehaviors] = js.undefined,
+    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined,
     securityProfileDescription: SecurityProfileDescription = null
   ): UpdateSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName.asInstanceOf[js.Any])
@@ -67,10 +67,10 @@ object UpdateSecurityProfileRequest {
     if (additionalMetricsToRetainV2 != null) __obj.updateDynamic("additionalMetricsToRetainV2")(additionalMetricsToRetainV2.asInstanceOf[js.Any])
     if (alertTargets != null) __obj.updateDynamic("alertTargets")(alertTargets.asInstanceOf[js.Any])
     if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteAdditionalMetricsToRetain)) __obj.updateDynamic("deleteAdditionalMetricsToRetain")(deleteAdditionalMetricsToRetain.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteAlertTargets)) __obj.updateDynamic("deleteAlertTargets")(deleteAlertTargets.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteBehaviors)) __obj.updateDynamic("deleteBehaviors")(deleteBehaviors.asInstanceOf[js.Any])
-    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteAdditionalMetricsToRetain)) __obj.updateDynamic("deleteAdditionalMetricsToRetain")(deleteAdditionalMetricsToRetain.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteAlertTargets)) __obj.updateDynamic("deleteAlertTargets")(deleteAlertTargets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteBehaviors)) __obj.updateDynamic("deleteBehaviors")(deleteBehaviors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
     if (securityProfileDescription != null) __obj.updateDynamic("securityProfileDescription")(securityProfileDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSecurityProfileRequest]
   }

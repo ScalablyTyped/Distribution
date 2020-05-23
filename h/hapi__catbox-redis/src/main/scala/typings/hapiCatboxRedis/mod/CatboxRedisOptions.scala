@@ -1,7 +1,7 @@
 package typings.hapiCatboxRedis.mod
 
 import typings.hapiCatbox.mod.ClientOptions
-import typings.hapiCatboxRedis.AnonHost
+import typings.hapiCatboxRedis.anon.Host
 import typings.ioredis.mod.Redis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,7 @@ trait CatboxRedisOptions extends ClientOptions {
   /**
     * an array of redis sentinel addresses to connect to.
     */
-  var sentinels: js.UndefOr[js.Array[AnonHost]] = js.undefined
+  var sentinels: js.UndefOr[js.Array[Host]] = js.undefined
   /**
     * the unix socket string to connect to (if socket is provided, host and port are ignored)
     */
@@ -57,9 +57,9 @@ object CatboxRedisOptions {
     host: String = null,
     partition: String = null,
     password: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     sentinelName: String = null,
-    sentinels: js.Array[AnonHost] = null,
+    sentinels: js.Array[Host] = null,
     socket: String = null,
     url: String = null
   ): CatboxRedisOptions = {
@@ -69,7 +69,7 @@ object CatboxRedisOptions {
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (sentinelName != null) __obj.updateDynamic("sentinelName")(sentinelName.asInstanceOf[js.Any])
     if (sentinels != null) __obj.updateDynamic("sentinels")(sentinels.asInstanceOf[js.Any])
     if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])

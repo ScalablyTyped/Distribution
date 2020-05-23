@@ -42,16 +42,16 @@ object IGridOptions {
   def apply(
     enableExpandable: js.UndefOr[Boolean] = js.undefined,
     enableExpandableRowHeader: js.UndefOr[Boolean] = js.undefined,
-    expandableRowHeaderWidth: Int | Double = null,
-    expandableRowHeight: Int | Double = null,
+    expandableRowHeaderWidth: js.UndefOr[Double] = js.undefined,
+    expandableRowHeight: js.UndefOr[Double] = js.undefined,
     expandableRowScope: IScope | js.Object = null,
     expandableRowTemplate: String = null
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableExpandable)) __obj.updateDynamic("enableExpandable")(enableExpandable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableExpandableRowHeader)) __obj.updateDynamic("enableExpandableRowHeader")(enableExpandableRowHeader.asInstanceOf[js.Any])
-    if (expandableRowHeaderWidth != null) __obj.updateDynamic("expandableRowHeaderWidth")(expandableRowHeaderWidth.asInstanceOf[js.Any])
-    if (expandableRowHeight != null) __obj.updateDynamic("expandableRowHeight")(expandableRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableExpandable)) __obj.updateDynamic("enableExpandable")(enableExpandable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableExpandableRowHeader)) __obj.updateDynamic("enableExpandableRowHeader")(enableExpandableRowHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandableRowHeaderWidth)) __obj.updateDynamic("expandableRowHeaderWidth")(expandableRowHeaderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandableRowHeight)) __obj.updateDynamic("expandableRowHeight")(expandableRowHeight.get.asInstanceOf[js.Any])
     if (expandableRowScope != null) __obj.updateDynamic("expandableRowScope")(expandableRowScope.asInstanceOf[js.Any])
     if (expandableRowTemplate != null) __obj.updateDynamic("expandableRowTemplate")(expandableRowTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]

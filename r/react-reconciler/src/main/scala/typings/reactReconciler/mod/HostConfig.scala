@@ -1,6 +1,6 @@
 package typings.reactReconciler.mod
 
-import typings.reactReconciler.AnonTimeout
+import typings.reactReconciler.anon.Timeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -221,7 +221,7 @@ trait HostConfig[Type, Props, Container, Instance, TextInstance, HydratableInsta
   ): Null | UpdatePayload = js.native
   def resetAfterCommit(containerInfo: Container): Unit = js.native
   def scheduleDeferredCallback(callback: js.Function0[_]): js.Any = js.native
-  def scheduleDeferredCallback(callback: js.Function0[_], options: AnonTimeout): js.Any = js.native
+  def scheduleDeferredCallback(callback: js.Function0[_], options: Timeout): js.Any = js.native
   def setTimeout(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): TimeoutHandle | NoTimeout = js.native
   def shouldDeprioritizeSubtree(`type`: Type, props: Props): Boolean = js.native
   def shouldSetTextContent(`type`: Type, props: Props): Boolean = js.native

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.AnonCompactCardHeight
+import typings.officeUiFabricReact.anon.CompactCardHeight
 import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +17,6 @@ class ExpandingCardBase protected ()
 @JSImport("office-ui-fabric-react", "ExpandingCardBase")
 @js.native
 object ExpandingCardBase extends js.Object {
-  var defaultProps: AnonCompactCardHeight = js.native
+  var defaultProps: CompactCardHeight = js.native
 }
 

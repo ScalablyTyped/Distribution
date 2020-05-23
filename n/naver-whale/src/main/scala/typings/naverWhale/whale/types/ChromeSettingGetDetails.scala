@@ -13,7 +13,7 @@ object ChromeSettingGetDetails {
   @scala.inline
   def apply(incognito: js.UndefOr[Boolean] = js.undefined): ChromeSettingGetDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeSettingGetDetails]
   }
 }

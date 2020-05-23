@@ -2,16 +2,12 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
 import typings.std.Date
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Calendar")
 @js.native
-class Calendar protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: CalendarOptions) = this()
+trait Calendar extends Widget {
   @JSName("options")
   var options_Calendar: CalendarOptions = js.native
   var wrapper: JQuery = js.native
@@ -32,13 +28,5 @@ class Calendar protected () extends Widget {
   def value(value: String): Unit = js.native
   def value(value: Date): Unit = js.native
   def view(): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Calendar")
-@js.native
-object Calendar extends js.Object {
-  var fn: Calendar = js.native
-  def extend(proto: js.Object): Calendar = js.native
 }
 

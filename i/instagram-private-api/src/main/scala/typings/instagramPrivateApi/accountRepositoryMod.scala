@@ -5,6 +5,8 @@ import typings.instagramPrivateApi.accountRepositoryCurrentUserResponseMod.Accou
 import typings.instagramPrivateApi.accountRepositoryCurrentUserResponseMod.AccountRepositoryCurrentUserResponseUser
 import typings.instagramPrivateApi.accountRepositoryLoginResponseMod.AccountRepositoryLoginResponseLoggedInUser
 import typings.instagramPrivateApi.accountTwoFactorLoginOptionsMod.AccountTwoFactorLoginOptions
+import typings.instagramPrivateApi.anon.Email
+import typings.instagramPrivateApi.anon.Encrypted
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.statusResponseMod.StatusResponse
 import typings.node.Buffer
@@ -22,10 +24,10 @@ object accountRepositoryMod extends js.Object {
     def changeProfilePicture(picture: Buffer): js.Promise[AccountRepositoryCurrentUserResponseRootObject] = js.native
     def contactPointPrefill(): js.Promise[_] = js.native
     def contactPointPrefill(usage: String): js.Promise[_] = js.native
-    def create(hasUsernamePasswordEmailFirst_name: AnonEmail): js.Promise[_] = js.native
+    def create(hasUsernamePasswordEmailFirst_name: Email): js.Promise[_] = js.native
     def currentUser(): js.Promise[AccountRepositoryCurrentUserResponseUser] = js.native
     def editProfile(options: AccountEditProfileOptions): js.Promise[AccountRepositoryCurrentUserResponseUser] = js.native
-    def encryptPassword(password: String): AnonEncrypted = js.native
+    def encryptPassword(password: String): Encrypted = js.native
     def getPrefillCandidates(): js.Promise[_] = js.native
     def login(username: String, password: String): js.Promise[AccountRepositoryLoginResponseLoggedInUser] = js.native
     def logout(): js.Promise[StatusResponse] = js.native

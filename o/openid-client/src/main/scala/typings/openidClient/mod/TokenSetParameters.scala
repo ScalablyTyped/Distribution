@@ -41,9 +41,9 @@ trait TokenSetParameters
 object TokenSetParameters {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     access_token: String = null,
-    expires_at: Int | Double = null,
+    expires_at: js.UndefOr[Double] = js.undefined,
     id_token: String = null,
     refresh_token: String = null,
     scope: String = null,
@@ -53,7 +53,7 @@ object TokenSetParameters {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (expires_at != null) __obj.updateDynamic("expires_at")(expires_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires_at)) __obj.updateDynamic("expires_at")(expires_at.get.asInstanceOf[js.Any])
     if (id_token != null) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
     if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])

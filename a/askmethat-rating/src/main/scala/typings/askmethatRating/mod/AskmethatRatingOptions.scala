@@ -48,8 +48,8 @@ object AskmethatRatingOptions {
     fontClass: String = null,
     hoverColor: String = null,
     inputName: String = null,
-    maxRating: Int | Double = null,
-    minRating: Int | Double = null,
+    maxRating: js.UndefOr[Double] = js.undefined,
+    minRating: js.UndefOr[Double] = js.undefined,
     popover: AskmethatRatingPopoverOptions = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
     step: AskmethatRatingSteps = null
@@ -59,10 +59,10 @@ object AskmethatRatingOptions {
     if (fontClass != null) __obj.updateDynamic("fontClass")(fontClass.asInstanceOf[js.Any])
     if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
     if (inputName != null) __obj.updateDynamic("inputName")(inputName.asInstanceOf[js.Any])
-    if (maxRating != null) __obj.updateDynamic("maxRating")(maxRating.asInstanceOf[js.Any])
-    if (minRating != null) __obj.updateDynamic("minRating")(minRating.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRating)) __obj.updateDynamic("maxRating")(maxRating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRating)) __obj.updateDynamic("minRating")(minRating.get.asInstanceOf[js.Any])
     if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[AskmethatRatingOptions]
   }

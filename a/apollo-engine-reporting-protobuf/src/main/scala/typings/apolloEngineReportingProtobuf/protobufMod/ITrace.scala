@@ -35,12 +35,6 @@ trait ITrace extends js.Object {
   var http: js.UndefOr[IHTTP | Null] = js.undefined
   /** Trace legacySignatureNeedsResigning */
   var legacySignatureNeedsResigning: js.UndefOr[String | Null] = js.undefined
-  /** Trace originReportedDurationNs */
-  var originReportedDurationNs: js.UndefOr[Double | Null] = js.undefined
-  /** Trace originReportedEndTime */
-  var originReportedEndTime: js.UndefOr[ITimestamp | Null] = js.undefined
-  /** Trace originReportedStartTime */
-  var originReportedStartTime: js.UndefOr[ITimestamp | Null] = js.undefined
   /** Trace persistedQueryHit */
   var persistedQueryHit: js.UndefOr[Boolean | Null] = js.undefined
   /** Trace persistedQueryRegister */
@@ -60,52 +54,46 @@ trait ITrace extends js.Object {
 object ITrace {
   @scala.inline
   def apply(
-    cachePolicy: ICachePolicy = null,
-    clientAddress: String = null,
-    clientName: String = null,
-    clientReferenceId: String = null,
-    clientVersion: String = null,
-    details: IDetails = null,
-    durationNs: Int | Double = null,
-    endTime: ITimestamp = null,
-    forbiddenOperation: js.UndefOr[Boolean] = js.undefined,
-    fullQueryCacheHit: js.UndefOr[Boolean] = js.undefined,
-    http: IHTTP = null,
-    legacySignatureNeedsResigning: String = null,
-    originReportedDurationNs: Int | Double = null,
-    originReportedEndTime: ITimestamp = null,
-    originReportedStartTime: ITimestamp = null,
-    persistedQueryHit: js.UndefOr[Boolean] = js.undefined,
-    persistedQueryRegister: js.UndefOr[Boolean] = js.undefined,
-    queryPlan: IQueryPlanNode = null,
-    registeredOperation: js.UndefOr[Boolean] = js.undefined,
-    root: INode = null,
-    signature: String = null,
-    startTime: ITimestamp = null
+    cachePolicy: js.UndefOr[Null | ICachePolicy] = js.undefined,
+    clientAddress: js.UndefOr[Null | String] = js.undefined,
+    clientName: js.UndefOr[Null | String] = js.undefined,
+    clientReferenceId: js.UndefOr[Null | String] = js.undefined,
+    clientVersion: js.UndefOr[Null | String] = js.undefined,
+    details: js.UndefOr[Null | IDetails] = js.undefined,
+    durationNs: js.UndefOr[Null | Double] = js.undefined,
+    endTime: js.UndefOr[Null | ITimestamp] = js.undefined,
+    forbiddenOperation: js.UndefOr[Null | Boolean] = js.undefined,
+    fullQueryCacheHit: js.UndefOr[Null | Boolean] = js.undefined,
+    http: js.UndefOr[Null | IHTTP] = js.undefined,
+    legacySignatureNeedsResigning: js.UndefOr[Null | String] = js.undefined,
+    persistedQueryHit: js.UndefOr[Null | Boolean] = js.undefined,
+    persistedQueryRegister: js.UndefOr[Null | Boolean] = js.undefined,
+    queryPlan: js.UndefOr[Null | IQueryPlanNode] = js.undefined,
+    registeredOperation: js.UndefOr[Null | Boolean] = js.undefined,
+    root: js.UndefOr[Null | INode] = js.undefined,
+    signature: js.UndefOr[Null | String] = js.undefined,
+    startTime: js.UndefOr[Null | ITimestamp] = js.undefined
   ): ITrace = {
     val __obj = js.Dynamic.literal()
-    if (cachePolicy != null) __obj.updateDynamic("cachePolicy")(cachePolicy.asInstanceOf[js.Any])
-    if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress.asInstanceOf[js.Any])
-    if (clientName != null) __obj.updateDynamic("clientName")(clientName.asInstanceOf[js.Any])
-    if (clientReferenceId != null) __obj.updateDynamic("clientReferenceId")(clientReferenceId.asInstanceOf[js.Any])
-    if (clientVersion != null) __obj.updateDynamic("clientVersion")(clientVersion.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (durationNs != null) __obj.updateDynamic("durationNs")(durationNs.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(cachePolicy)) __obj.updateDynamic("cachePolicy")(cachePolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientAddress)) __obj.updateDynamic("clientAddress")(clientAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientName)) __obj.updateDynamic("clientName")(clientName.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientReferenceId)) __obj.updateDynamic("clientReferenceId")(clientReferenceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientVersion)) __obj.updateDynamic("clientVersion")(clientVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(details)) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationNs)) __obj.updateDynamic("durationNs")(durationNs.asInstanceOf[js.Any])
+    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (!js.isUndefined(forbiddenOperation)) __obj.updateDynamic("forbiddenOperation")(forbiddenOperation.asInstanceOf[js.Any])
     if (!js.isUndefined(fullQueryCacheHit)) __obj.updateDynamic("fullQueryCacheHit")(fullQueryCacheHit.asInstanceOf[js.Any])
-    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
-    if (legacySignatureNeedsResigning != null) __obj.updateDynamic("legacySignatureNeedsResigning")(legacySignatureNeedsResigning.asInstanceOf[js.Any])
-    if (originReportedDurationNs != null) __obj.updateDynamic("originReportedDurationNs")(originReportedDurationNs.asInstanceOf[js.Any])
-    if (originReportedEndTime != null) __obj.updateDynamic("originReportedEndTime")(originReportedEndTime.asInstanceOf[js.Any])
-    if (originReportedStartTime != null) __obj.updateDynamic("originReportedStartTime")(originReportedStartTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(http)) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    if (!js.isUndefined(legacySignatureNeedsResigning)) __obj.updateDynamic("legacySignatureNeedsResigning")(legacySignatureNeedsResigning.asInstanceOf[js.Any])
     if (!js.isUndefined(persistedQueryHit)) __obj.updateDynamic("persistedQueryHit")(persistedQueryHit.asInstanceOf[js.Any])
     if (!js.isUndefined(persistedQueryRegister)) __obj.updateDynamic("persistedQueryRegister")(persistedQueryRegister.asInstanceOf[js.Any])
-    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryPlan)) __obj.updateDynamic("queryPlan")(queryPlan.asInstanceOf[js.Any])
     if (!js.isUndefined(registeredOperation)) __obj.updateDynamic("registeredOperation")(registeredOperation.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITrace]
   }
 }

@@ -25,13 +25,8 @@ import scala.scalajs.js.annotation._
   * d3 = new KJUR.asn1.DERUTCTime({'date': new Date(Date.UTC(2015, 0, 31, 0, 0, 0, 0))});
   * d4 = new KJUR.asn1.DERUTCTime('130430125959Z');
   */
-@JSGlobal("jsrsasign.KJUR.asn1.DERUTCTime")
 @js.native
-class DERUTCTime () extends DERAbstractTime {
-  def this(params: String) = this()
-  def this(params: DateParam) = this()
-  def this(params: HexParam) = this()
-  def this(params: StringParam) = this()
+trait DERUTCTime extends DERAbstractTime {
   /**
     * set value by a Date object
     * @param dateObject Date object to set ASN.1 value(V)

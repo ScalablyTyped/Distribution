@@ -1,6 +1,6 @@
 package typings.hapi.mod
 
-import typings.hapi.AnonVhost
+import typings.hapi.anon.Vhost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +14,14 @@ trait ServerRegisterOptions extends js.Object {
   /**
     * modifiers applied to each route added by the plugin:
     */
-  var routes: js.UndefOr[AnonVhost] = js.undefined
+  var routes: js.UndefOr[Vhost] = js.undefined
 }
 
 object ServerRegisterOptions {
   @scala.inline
-  def apply(once: js.UndefOr[Boolean] = js.undefined, routes: AnonVhost = null): ServerRegisterOptions = {
+  def apply(once: js.UndefOr[Boolean] = js.undefined, routes: Vhost = null): ServerRegisterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
     if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerRegisterOptions]
   }

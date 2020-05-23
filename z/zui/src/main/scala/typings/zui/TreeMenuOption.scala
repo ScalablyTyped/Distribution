@@ -22,11 +22,11 @@ object TreeMenuOption {
     itemWrapper: js.UndefOr[Boolean] = js.undefined
   ): TreeMenuOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     if (itemCreator != null) __obj.updateDynamic("itemCreator")(js.Any.fromFunction2(itemCreator))
-    if (!js.isUndefined(itemWrapper)) __obj.updateDynamic("itemWrapper")(itemWrapper.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemWrapper)) __obj.updateDynamic("itemWrapper")(itemWrapper.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeMenuOption]
   }
 }

@@ -2,21 +2,17 @@ package typings.amapJsApiMap3d.AMap.Object3D
 
 import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApi.AMap.Pixel
-import typings.amapJsApiMap3d.AMap.Object3D.MeshLine.Options
-import typings.amapJsApiMap3d.AnonColor
-import typings.amapJsApiMap3d.AnonPath
-import typings.amapJsApiMap3d.AnonUnit
-import typings.amapJsApiMap3d.Geometry3DreadonlyvertexI
+import typings.amapJsApiMap3d.anon.Color
+import typings.amapJsApiMap3d.anon.Geometry3DreadonlyvertexI
+import typings.amapJsApiMap3d.anon.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // inherit from WideLine
-@JSGlobal("AMap.Object3D.MeshLine")
 @js.native
-class MeshLine protected ()
+trait MeshLine
   extends typings.amapJsApiMap3d.AMap.Object3D {
-  def this(options: Options) = this()
   @JSName("geometry")
   val geometry_MeshLine: Geometry3DreadonlyvertexI = js.native
   var width: Double = js.native
@@ -30,6 +26,6 @@ class MeshLine protected ()
 @JSGlobal("AMap.Object3D.MeshLine")
 @js.native
 object MeshLine extends js.Object {
-  type Options = AnonColor with (AnonPath | AnonUnit)
+  type Options = Color with (Path | typings.amapJsApiMap3d.anon.Unit)
 }
 

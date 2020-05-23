@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object EmailMailboxOtherAppWriteAccess extends js.Object {
   /** No external applications may write to this mailbox. */
   @js.native
   sealed trait none extends EmailMailboxOtherAppWriteAccess
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMailboxOtherAppWriteAccess with Double] = js.native
-  /* 1 */ @js.native
-  object limited extends TopLevel[limited with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

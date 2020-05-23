@@ -23,8 +23,8 @@ object UserPoolDeviceConfiguration {
     deviceOnlyRememberedOnUserPrompt: js.UndefOr[Boolean] = js.undefined
   ): UserPoolDeviceConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(challengeRequiredOnNewDevice)) __obj.updateDynamic("challengeRequiredOnNewDevice")(challengeRequiredOnNewDevice.asInstanceOf[js.Any])
-    if (!js.isUndefined(deviceOnlyRememberedOnUserPrompt)) __obj.updateDynamic("deviceOnlyRememberedOnUserPrompt")(deviceOnlyRememberedOnUserPrompt.asInstanceOf[js.Any])
+    if (!js.isUndefined(challengeRequiredOnNewDevice)) __obj.updateDynamic("challengeRequiredOnNewDevice")(challengeRequiredOnNewDevice.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceOnlyRememberedOnUserPrompt)) __obj.updateDynamic("deviceOnlyRememberedOnUserPrompt")(deviceOnlyRememberedOnUserPrompt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolDeviceConfiguration]
   }
 }

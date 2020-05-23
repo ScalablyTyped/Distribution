@@ -24,12 +24,12 @@ object Config {
   def apply(
     boundary: String = null,
     headerFirst: js.UndefOr[Boolean] = js.undefined,
-    maxHeaderPairs: Int | Double = null
+    maxHeaderPairs: js.UndefOr[Double] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerFirst)) __obj.updateDynamic("headerFirst")(headerFirst.asInstanceOf[js.Any])
-    if (maxHeaderPairs != null) __obj.updateDynamic("maxHeaderPairs")(maxHeaderPairs.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerFirst)) __obj.updateDynamic("headerFirst")(headerFirst.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeaderPairs)) __obj.updateDynamic("maxHeaderPairs")(maxHeaderPairs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

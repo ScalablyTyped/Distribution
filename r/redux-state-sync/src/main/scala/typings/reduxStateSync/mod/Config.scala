@@ -18,7 +18,7 @@ object Config {
   @scala.inline
   def apply(
     blacklist: js.Array[String] = null,
-    broadcastChannelOption: js.Object = null,
+    broadcastChannelOption: js.UndefOr[Null | js.Object] = js.undefined,
     channel: String = null,
     predicate: /* action */ AnyAction => Boolean | Null = null,
     prepareState: /* state */ js.Any => _ = null,
@@ -26,7 +26,7 @@ object Config {
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
-    if (broadcastChannelOption != null) __obj.updateDynamic("broadcastChannelOption")(broadcastChannelOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(broadcastChannelOption)) __obj.updateDynamic("broadcastChannelOption")(broadcastChannelOption.asInstanceOf[js.Any])
     if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
     if (prepareState != null) __obj.updateDynamic("prepareState")(js.Any.fromFunction1(prepareState))

@@ -1,20 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
-import typings.baidumapWebSdk.AnonCustomData
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.LocalSearch")
 @js.native
-class LocalSearch protected () extends js.Object {
-  def this(location: String) = this()
-  def this(location: Map) = this()
-  def this(location: Point) = this()
-  def this(location: String, opts: LocalSearchOptions) = this()
-  def this(location: Map, opts: LocalSearchOptions) = this()
-  def this(location: Point, opts: LocalSearchOptions) = this()
+trait LocalSearch extends js.Object {
   def clearResults(): Unit = js.native
   def disableAutoViewport(): Unit = js.native
   def disableFirstResultSelection(): Unit = js.native
@@ -29,21 +21,41 @@ class LocalSearch protected () extends js.Object {
   def search(keyword: js.Array[String]): Unit = js.native
   def search(keyword: js.Array[String], option: LocalSearchSearchOptions): Unit = js.native
   def searchInBounds(keyword: String, bounds: Bounds): Unit = js.native
-  def searchInBounds(keyword: String, bounds: Bounds, option: AnonCustomData): Unit = js.native
+  def searchInBounds(keyword: String, bounds: Bounds, option: typings.baidumapWebSdk.anon.CustomData): Unit = js.native
   def searchInBounds(keyword: js.Array[String], bounds: Bounds): Unit = js.native
-  def searchInBounds(keyword: js.Array[String], bounds: Bounds, option: AnonCustomData): Unit = js.native
+  def searchInBounds(keyword: js.Array[String], bounds: Bounds, option: typings.baidumapWebSdk.anon.CustomData): Unit = js.native
   def searchNearby(keyword: String, center: String, radius: Double): Unit = js.native
-  def searchNearby(keyword: String, center: String, radius: Double, option: AnonCustomData): Unit = js.native
+  def searchNearby(keyword: String, center: String, radius: Double, option: typings.baidumapWebSdk.anon.CustomData): Unit = js.native
   def searchNearby(keyword: String, center: LocalResultPoi, radius: Double): Unit = js.native
-  def searchNearby(keyword: String, center: LocalResultPoi, radius: Double, option: AnonCustomData): Unit = js.native
+  def searchNearby(
+    keyword: String,
+    center: LocalResultPoi,
+    radius: Double,
+    option: typings.baidumapWebSdk.anon.CustomData
+  ): Unit = js.native
   def searchNearby(keyword: String, center: Point, radius: Double): Unit = js.native
-  def searchNearby(keyword: String, center: Point, radius: Double, option: AnonCustomData): Unit = js.native
+  def searchNearby(keyword: String, center: Point, radius: Double, option: typings.baidumapWebSdk.anon.CustomData): Unit = js.native
   def searchNearby(keyword: js.Array[String], center: String, radius: Double): Unit = js.native
-  def searchNearby(keyword: js.Array[String], center: String, radius: Double, option: AnonCustomData): Unit = js.native
+  def searchNearby(
+    keyword: js.Array[String],
+    center: String,
+    radius: Double,
+    option: typings.baidumapWebSdk.anon.CustomData
+  ): Unit = js.native
   def searchNearby(keyword: js.Array[String], center: LocalResultPoi, radius: Double): Unit = js.native
-  def searchNearby(keyword: js.Array[String], center: LocalResultPoi, radius: Double, option: AnonCustomData): Unit = js.native
+  def searchNearby(
+    keyword: js.Array[String],
+    center: LocalResultPoi,
+    radius: Double,
+    option: typings.baidumapWebSdk.anon.CustomData
+  ): Unit = js.native
   def searchNearby(keyword: js.Array[String], center: Point, radius: Double): Unit = js.native
-  def searchNearby(keyword: js.Array[String], center: Point, radius: Double, option: AnonCustomData): Unit = js.native
+  def searchNearby(
+    keyword: js.Array[String],
+    center: Point,
+    radius: Double,
+    option: typings.baidumapWebSdk.anon.CustomData
+  ): Unit = js.native
   def setInfoHtmlSetCallback(callback: js.Function2[/* poi */ LocalResultPoi, /* html */ HTMLElement, Unit]): Unit = js.native
   def setLocation(location: String): Unit = js.native
   def setLocation(location: Map): Unit = js.native

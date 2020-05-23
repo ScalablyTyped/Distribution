@@ -26,15 +26,15 @@ object RefetchState {
     mirroredFragmentIdentifier: String,
     fetchPolicy: FetchPolicy = null,
     onComplete: /* arg */ Error | Null => Unit = null,
-    refetchEnvironment: Environment = null,
-    refetchVariables: Variables = null,
+    refetchEnvironment: js.UndefOr[Null | Environment] = js.undefined,
+    refetchVariables: js.UndefOr[Null | Variables] = js.undefined,
     renderPolicy: RenderPolicy = null
   ): RefetchState = {
     val __obj = js.Dynamic.literal(mirroredEnvironment = mirroredEnvironment.asInstanceOf[js.Any], mirroredFragmentIdentifier = mirroredFragmentIdentifier.asInstanceOf[js.Any])
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (refetchEnvironment != null) __obj.updateDynamic("refetchEnvironment")(refetchEnvironment.asInstanceOf[js.Any])
-    if (refetchVariables != null) __obj.updateDynamic("refetchVariables")(refetchVariables.asInstanceOf[js.Any])
+    if (!js.isUndefined(refetchEnvironment)) __obj.updateDynamic("refetchEnvironment")(refetchEnvironment.asInstanceOf[js.Any])
+    if (!js.isUndefined(refetchVariables)) __obj.updateDynamic("refetchVariables")(refetchVariables.asInstanceOf[js.Any])
     if (renderPolicy != null) __obj.updateDynamic("renderPolicy")(renderPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefetchState]
   }

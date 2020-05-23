@@ -11,9 +11,9 @@ package object dataMod {
     - typings.vegaTypings.dataMod.FormatSV
     - typings.vegaTypings.dataMod.FormatDSV
     - typings.vegaTypings.dataMod.FormatTopoJSON
-    - typings.vegaTypings.AnonParse
+    - typings.vegaTypings.anon.Parse
   */
   type Format = typings.vegaTypings.dataMod._Format | typings.vegaTypings.dataMod.FormatTopoJSON
-  type FormatTopoJSON = typings.vegaTypings.AnonProperty with (typings.vegaTypings.AnonFeature | typings.vegaTypings.AnonFilter)
+  type FormatTopoJSON = typings.vegaTypings.anon.Property with (typings.vegaTypings.anon.Feature | typings.vegaTypings.anon.Filter)
   type Parse = typings.vegaTypings.vegaTypingsStrings.auto | (org.scalablytyped.runtime.StringDictionary[typings.vegaTypings.dataMod.DataType | java.lang.String])
 }

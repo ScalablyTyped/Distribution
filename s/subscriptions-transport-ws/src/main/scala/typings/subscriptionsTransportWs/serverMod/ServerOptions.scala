@@ -29,7 +29,7 @@ object ServerOptions {
   @scala.inline
   def apply(
     execute: (/* schema */ GraphQLSchema, /* document */ DocumentNode, /* rootValue */ js.UndefOr[js.Any], /* contextValue */ js.UndefOr[js.Any], /* variableValues */ js.UndefOr[StringDictionary[js.Any]], /* operationName */ js.UndefOr[String], /* fieldResolver */ js.UndefOr[GraphQLFieldResolver[js.Any, js.Any, StringDictionary[js.Any]]]) => ExecutionResult[ExecutionResultDataDefault] | js.Promise[ExecutionResult[ExecutionResultDataDefault]] | (AsyncIterator[ExecutionResult[ExecutionResultDataDefault], js.Any, js.UndefOr[scala.Nothing]]) = null,
-    keepAlive: Int | Double = null,
+    keepAlive: js.UndefOr[Double] = js.undefined,
     onConnect: js.Function = null,
     onDisconnect: js.Function = null,
     onOperation: js.Function = null,
@@ -43,7 +43,7 @@ object ServerOptions {
   ): ServerOptions = {
     val __obj = js.Dynamic.literal()
     if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction7(execute))
-    if (keepAlive != null) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
     if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect.asInstanceOf[js.Any])
     if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(onDisconnect.asInstanceOf[js.Any])
     if (onOperation != null) __obj.updateDynamic("onOperation")(onOperation.asInstanceOf[js.Any])

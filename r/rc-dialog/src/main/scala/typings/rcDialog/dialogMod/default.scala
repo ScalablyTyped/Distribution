@@ -1,6 +1,6 @@
 package typings.rcDialog.dialogMod
 
-import typings.rcDialog.AnonClassName
+import typings.rcDialog.anon.ClassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends Dialog {
 @JSImport("rc-dialog/lib/Dialog", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonClassName = js.native
+  var defaultProps: ClassName = js.native
 }
 

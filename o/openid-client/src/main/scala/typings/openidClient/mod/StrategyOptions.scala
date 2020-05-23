@@ -29,7 +29,7 @@ trait StrategyOptions[TClient /* <: Client */] extends js.Object {
 
 object StrategyOptions {
   @scala.inline
-  def apply[TClient /* <: Client */](
+  def apply[TClient](
     client: TClient,
     params: AuthorizationParameters = null,
     passReqToCallback: js.UndefOr[Boolean] = js.undefined,
@@ -38,7 +38,7 @@ object StrategyOptions {
   ): StrategyOptions[TClient] = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.get.asInstanceOf[js.Any])
     if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     if (usePKCE != null) __obj.updateDynamic("usePKCE")(usePKCE.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptions[TClient]]

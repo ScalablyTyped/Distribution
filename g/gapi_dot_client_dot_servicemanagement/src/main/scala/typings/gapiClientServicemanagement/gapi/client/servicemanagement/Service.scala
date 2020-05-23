@@ -120,7 +120,7 @@ object Service {
     authentication: Authentication = null,
     backend: Backend = null,
     billing: Billing = null,
-    configVersion: Int | Double = null,
+    configVersion: js.UndefOr[Double] = js.undefined,
     context: Context = null,
     control: Control = null,
     customError: CustomError = null,
@@ -151,7 +151,7 @@ object Service {
     if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
     if (backend != null) __obj.updateDynamic("backend")(backend.asInstanceOf[js.Any])
     if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
-    if (configVersion != null) __obj.updateDynamic("configVersion")(configVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(configVersion)) __obj.updateDynamic("configVersion")(configVersion.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
     if (customError != null) __obj.updateDynamic("customError")(customError.asInstanceOf[js.Any])

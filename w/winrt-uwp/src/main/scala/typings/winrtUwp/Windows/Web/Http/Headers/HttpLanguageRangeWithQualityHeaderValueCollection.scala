@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsHttpLanguageRangeWithQualityHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsHttpLanguageRangeWithQualityHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value of the Accept-Language HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValueCollection")
 @js.native
-abstract class HttpLanguageRangeWithQualityHeaderValueCollection () extends Array[HttpLanguageRangeWithQualityHeaderValue] {
+trait HttpLanguageRangeWithQualityHeaderValueCollection extends Array[HttpLanguageRangeWithQualityHeaderValue] {
   /** Gets the number of HttpLanguageRangeWithQualityHeaderValue objects in the collection. */
   var size: Double = js.native
   /**
@@ -37,13 +36,13 @@ abstract class HttpLanguageRangeWithQualityHeaderValueCollection () extends Arra
     * Retrieves the HttpLanguageRangeWithQualityHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpLanguageRangeWithQualityHeaderValue items in the HttpLanguageRangeWithQualityHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsHttpLanguageRangeWithQualityHeaderValue = js.native
+  def getMany(startIndex: Double): ItemsHttpLanguageRangeWithQualityHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpLanguageRangeWithQualityHeaderValueCollection .
     * @return The view of the HttpLanguageRangeWithQualityHeaderValueCollection .
     */
   def getView(): IVectorView[HttpLanguageRangeWithQualityHeaderValue] = js.native
-  def indexOf(value: HttpLanguageRangeWithQualityHeaderValue, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: HttpLanguageRangeWithQualityHeaderValue, extra: js.Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

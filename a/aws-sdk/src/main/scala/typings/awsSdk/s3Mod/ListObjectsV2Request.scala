@@ -27,7 +27,7 @@ trait ListObjectsV2Request extends js.Object {
     */
   var FetchOwner: js.UndefOr[typings.awsSdk.s3Mod.FetchOwner] = js.native
   /**
-    * Sets the maximum number of keys returned in the response. The response might contain fewer keys but will never contain more.
+    * Sets the maximum number of keys returned in the response. By default the API returns up to 1,000 key names. The response might contain fewer keys but will never contain more.
     */
   var MaxKeys: js.UndefOr[typings.awsSdk.s3Mod.MaxKeys] = js.native
   /**
@@ -51,8 +51,8 @@ object ListObjectsV2Request {
     ContinuationToken: Token = null,
     Delimiter: Delimiter = null,
     EncodingType: EncodingType = null,
-    FetchOwner: js.UndefOr[Boolean] = js.undefined,
-    MaxKeys: Int | Double = null,
+    FetchOwner: js.UndefOr[FetchOwner] = js.undefined,
+    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
     Prefix: Prefix = null,
     RequestPayer: RequestPayer = null,
     StartAfter: StartAfter = null
@@ -61,8 +61,8 @@ object ListObjectsV2Request {
     if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(FetchOwner)) __obj.updateDynamic("FetchOwner")(FetchOwner.asInstanceOf[js.Any])
-    if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(FetchOwner)) __obj.updateDynamic("FetchOwner")(FetchOwner.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys.get.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     if (StartAfter != null) __obj.updateDynamic("StartAfter")(StartAfter.asInstanceOf[js.Any])

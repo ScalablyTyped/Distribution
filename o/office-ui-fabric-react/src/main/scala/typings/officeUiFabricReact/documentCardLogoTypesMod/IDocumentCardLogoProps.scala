@@ -46,7 +46,7 @@ object IDocumentCardLogoProps {
     componentRef: IRefObject[IDocumentCardLogo] = null,
     key: Key = null,
     logoName: String = null,
-    ref: LegacyRef[DocumentCardLogoBase] = null,
+    ref: js.UndefOr[Null | LegacyRef[DocumentCardLogoBase]] = js.undefined,
     styles: IStyleFunctionOrObject[IDocumentCardLogoStyleProps, IDocumentCardLogoStyles] = null,
     theme: ITheme = null
   ): IDocumentCardLogoProps = {
@@ -55,7 +55,7 @@ object IDocumentCardLogoProps {
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (logoName != null) __obj.updateDynamic("logoName")(logoName.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardLogoProps]

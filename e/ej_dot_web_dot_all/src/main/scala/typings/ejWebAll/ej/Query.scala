@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Query")
 @js.native
-class Query () extends js.Object {
+trait Query extends js.Object {
   def addParams(key: String, value: String): Query = js.native
   def execute(dataManager: DataManager, done: js.Any): js.Any = js.native
   def execute(dataManager: DataManager, done: js.Any, fail: String): js.Any = js.native
@@ -50,13 +49,5 @@ class Query () extends js.Object {
     ignoreAccent: Boolean
   ): Query = js.native
   def where(predicate: Predicate): Query = js.native
-}
-
-/* static members */
-@JSGlobal("ej.Query")
-@js.native
-object Query extends js.Object {
-  var fn: Query = js.native
-  def extend(prototype: js.Any): Query = js.native
 }
 

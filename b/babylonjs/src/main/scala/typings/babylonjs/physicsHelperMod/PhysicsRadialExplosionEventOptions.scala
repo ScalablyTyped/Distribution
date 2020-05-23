@@ -1,6 +1,6 @@
 package typings.babylonjs.physicsHelperMod
 
-import typings.babylonjs.AnonDiameterSegments
+import typings.babylonjs.anon.DiameterSegments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ class PhysicsRadialExplosionEventOptions () extends js.Object {
   /**
     * Sphere options for the radial explosion.
     */
-  var sphere: AnonDiameterSegments = js.native
+  var sphere: DiameterSegments = js.native
   /**
     * The strenth of the explosion.
     */

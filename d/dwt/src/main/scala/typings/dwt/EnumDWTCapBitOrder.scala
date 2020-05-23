@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object EnumDWTCapBitOrder extends js.Object {
   /** Indicates that the leftmost bit in the byte (usually bit 7) is the byte's Most Significant Bit. */
   @js.native
   sealed trait TWBO_MSBFIRST extends EnumDWTCapBitOrder
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTCapBitOrder with Double] = js.native
-  /* 0 */ @js.native
-  object TWBO_LSBFIRST extends TopLevel[TWBO_LSBFIRST with Double]
-  
-  /* 1 */ @js.native
-  object TWBO_MSBFIRST extends TopLevel[TWBO_MSBFIRST with Double]
   
 }
 

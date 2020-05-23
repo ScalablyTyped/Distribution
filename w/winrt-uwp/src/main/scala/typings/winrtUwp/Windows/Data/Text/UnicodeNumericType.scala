@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Data.Text
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object UnicodeNumericType extends js.Object {
   /** A character that represents another type of numeric value, such as a fraction. */
   @js.native
   sealed trait numeric extends UnicodeNumericType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UnicodeNumericType with Double] = js.native
-  /* 1 */ @js.native
-  object decimal extends TopLevel[decimal with Double]
-  
-  /* 2 */ @js.native
-  object digit extends TopLevel[digit with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object numeric extends TopLevel[numeric with Double]
   
 }
 

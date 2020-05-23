@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System.RemoteSystems
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object RemoteSystemAuthorizationKind extends js.Object {
   /** The client device can only discover devices signed in by the same user. */
   @js.native
   sealed trait sameUser extends RemoteSystemAuthorizationKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RemoteSystemAuthorizationKind with Double] = js.native
-  /* 1 */ @js.native
-  object anonymous extends TopLevel[anonymous with Double]
-  
-  /* 0 */ @js.native
-  object sameUser extends TopLevel[sameUser with Double]
   
 }
 

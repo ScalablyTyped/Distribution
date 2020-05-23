@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	* Command proxy object.
-	*/
+  * Command proxy object.
+  */
 trait ICommand extends js.Object {
   /**
-  		* Determines whether the command can execute or not.
-  		*/
+    * Determines whether the command can execute or not.
+    */
   var canExecute: Boolean
   /**
-  		* Determines whether the command is currently executing.
-  		*/
+    * Determines whether the command is currently executing.
+    */
   var isExecuting: Boolean
   /**
-  		* Executes the command function.
-  		*/
+    * Executes the command function.
+    */
   def execute(): js.Any
 }
 

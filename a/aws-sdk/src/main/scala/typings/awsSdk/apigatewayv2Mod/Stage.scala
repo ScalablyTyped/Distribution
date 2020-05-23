@@ -69,8 +69,8 @@ object Stage {
   def apply(
     StageName: StringWithLengthBetween1And128,
     AccessLogSettings: AccessLogSettings = null,
-    ApiGatewayManaged: js.UndefOr[Boolean] = js.undefined,
-    AutoDeploy: js.UndefOr[Boolean] = js.undefined,
+    ApiGatewayManaged: js.UndefOr[boolean] = js.undefined,
+    AutoDeploy: js.UndefOr[boolean] = js.undefined,
     ClientCertificateId: Id = null,
     CreatedDate: timestampIso8601 = null,
     DefaultRouteSettings: RouteSettings = null,
@@ -84,8 +84,8 @@ object Stage {
   ): Stage = {
     val __obj = js.Dynamic.literal(StageName = StageName.asInstanceOf[js.Any])
     if (AccessLogSettings != null) __obj.updateDynamic("AccessLogSettings")(AccessLogSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApiGatewayManaged)) __obj.updateDynamic("ApiGatewayManaged")(ApiGatewayManaged.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoDeploy)) __obj.updateDynamic("AutoDeploy")(AutoDeploy.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApiGatewayManaged)) __obj.updateDynamic("ApiGatewayManaged")(ApiGatewayManaged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoDeploy)) __obj.updateDynamic("AutoDeploy")(AutoDeploy.get.asInstanceOf[js.Any])
     if (ClientCertificateId != null) __obj.updateDynamic("ClientCertificateId")(ClientCertificateId.asInstanceOf[js.Any])
     if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
     if (DefaultRouteSettings != null) __obj.updateDynamic("DefaultRouteSettings")(DefaultRouteSettings.asInstanceOf[js.Any])

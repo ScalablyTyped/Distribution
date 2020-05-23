@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Claim, Pre-determination or Pre-authorization
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Claim extends DomainResource {
   /**
     * Contains extended information for property 'created'.

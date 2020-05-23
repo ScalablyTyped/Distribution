@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`text-area`
 import typings.arcgisJsApi.arcgisJsApiStrings.`text-box`
 import typings.arcgisJsApi.arcgisJsApiStrings.date
@@ -126,8 +125,4 @@ trait InputField extends Accessor {
     */
   val visible: Boolean = js.native
 }
-
-@JSGlobal("__esri.InputField")
-@js.native
-object InputField extends TopLevel[InputFieldConstructor]
 

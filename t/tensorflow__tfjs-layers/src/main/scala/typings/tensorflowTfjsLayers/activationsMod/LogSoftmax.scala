@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.activationsMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.logSoftmax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ class LogSoftmax () extends Activation
 @js.native
 object LogSoftmax extends js.Object {
   /** @nocollapse */
-  val className: logSoftmax = js.native
+  val className: /* "logSoftmax" */ String = js.native
 }
 

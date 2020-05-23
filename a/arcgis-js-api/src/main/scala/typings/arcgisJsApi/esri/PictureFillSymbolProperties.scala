@@ -73,9 +73,9 @@ object PictureFillSymbolProperties {
     url: String = null,
     width: Double | String = null,
     xoffset: Double | String = null,
-    xscale: Int | Double = null,
+    xscale: js.UndefOr[Double] = js.undefined,
     yoffset: Double | String = null,
-    yscale: Int | Double = null
+    yscale: js.UndefOr[Double] = js.undefined
   ): PictureFillSymbolProperties = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -85,9 +85,9 @@ object PictureFillSymbolProperties {
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
-    if (xscale != null) __obj.updateDynamic("xscale")(xscale.asInstanceOf[js.Any])
+    if (!js.isUndefined(xscale)) __obj.updateDynamic("xscale")(xscale.get.asInstanceOf[js.Any])
     if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
-    if (yscale != null) __obj.updateDynamic("yscale")(yscale.asInstanceOf[js.Any])
+    if (!js.isUndefined(yscale)) __obj.updateDynamic("yscale")(yscale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureFillSymbolProperties]
   }
 }

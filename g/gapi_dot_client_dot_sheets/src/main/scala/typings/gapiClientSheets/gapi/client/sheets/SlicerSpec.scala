@@ -40,7 +40,7 @@ object SlicerSpec {
     applyToPivotTables: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: Color = null,
     backgroundColorStyle: ColorStyle = null,
-    columnIndex: Int | Double = null,
+    columnIndex: js.UndefOr[Double] = js.undefined,
     dataRange: GridRange = null,
     filterCriteria: FilterCriteria = null,
     horizontalAlignment: String = null,
@@ -48,10 +48,10 @@ object SlicerSpec {
     title: String = null
   ): SlicerSpec = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyToPivotTables)) __obj.updateDynamic("applyToPivotTables")(applyToPivotTables.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyToPivotTables)) __obj.updateDynamic("applyToPivotTables")(applyToPivotTables.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (backgroundColorStyle != null) __obj.updateDynamic("backgroundColorStyle")(backgroundColorStyle.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
     if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange.asInstanceOf[js.Any])
     if (filterCriteria != null) __obj.updateDynamic("filterCriteria")(filterCriteria.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])

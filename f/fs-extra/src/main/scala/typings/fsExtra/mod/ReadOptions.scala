@@ -26,7 +26,7 @@ object ReadOptions {
     if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (reviver != null) __obj.updateDynamic("reviver")(reviver.asInstanceOf[js.Any])
-    if (!js.isUndefined(throws)) __obj.updateDynamic("throws")(throws.asInstanceOf[js.Any])
+    if (!js.isUndefined(throws)) __obj.updateDynamic("throws")(throws.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOptions]
   }
 }

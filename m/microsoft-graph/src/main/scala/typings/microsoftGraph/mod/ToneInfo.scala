@@ -11,9 +11,9 @@ trait ToneInfo extends js.Object {
 
 object ToneInfo {
   @scala.inline
-  def apply(sequenceId: Int | Double = null, tone: Tone = null): ToneInfo = {
+  def apply(sequenceId: js.UndefOr[Double] = js.undefined, tone: Tone = null): ToneInfo = {
     val __obj = js.Dynamic.literal()
-    if (sequenceId != null) __obj.updateDynamic("sequenceId")(sequenceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequenceId)) __obj.updateDynamic("sequenceId")(sequenceId.get.asInstanceOf[js.Any])
     if (tone != null) __obj.updateDynamic("tone")(tone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneInfo]
   }

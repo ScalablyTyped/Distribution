@@ -68,6 +68,7 @@ package object backupMod {
   type CronExpression = java.lang.String
   type IAMPolicy = java.lang.String
   type IAMRoleArn = java.lang.String
+  type IsEnabled = scala.Boolean
   type ListOfTags = js.Array[typings.awsSdk.backupMod.Condition]
   type Long_ = scala.Double
   type MaxResults = scala.Double
@@ -87,6 +88,7 @@ package object backupMod {
   type RecoveryPointStatus = typings.awsSdk.backupMod._RecoveryPointStatus | java.lang.String
   type ResourceArns = js.Array[typings.awsSdk.backupMod.ARN]
   type ResourceType = java.lang.String
+  type ResourceTypeOptInPreference = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.backupMod.IsEnabled]
   type ResourceTypes = js.Array[typings.awsSdk.backupMod.ResourceType]
   type RestoreJobId = java.lang.String
   /* Rewritten from type alias, can be one of: 

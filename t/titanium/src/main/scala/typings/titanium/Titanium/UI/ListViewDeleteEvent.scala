@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a list row is deleted by the user.
-		 */
+  * Fired when a list row is deleted by the user.
+  */
 trait ListViewDeleteEvent extends ListViewBaseEvent {
   /**
-  			 * false. This event does not bubble.
-  			 */
+    * false. This event does not bubble.
+    */
   var bubbles: Boolean
   /**
-  			 * The item ID bound to the list item that generated the event.
-  			 */
+    * The item ID bound to the list item that generated the event.
+    */
   var itemId: String
   /**
-  			 * Item index.
-  			 */
+    * Item index.
+    */
   var itemIndex: Double
   /**
-  			 * List section from which the item is deleted.
-  			 */
+    * List section from which the item is deleted.
+    */
   var section: ListSection
   /**
-  			 * Section index.
-  			 */
+    * Section index.
+    */
   var sectionIndex: Double
 }
 

@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 trait ConditionalRangeFormatData extends js.Object {
   /**
     *
-    * Collection of border objects that apply to the overall conditional format range. Read-only.
+    * Collection of border objects that apply to the overall conditional format range.
     *
     * [Api set: ExcelApi 1.6]
     */
   var borders: js.UndefOr[js.Array[ConditionalRangeBorderData]] = js.undefined
   /**
     *
-    * Returns the fill object defined on the overall conditional format range. Read-only.
+    * Returns the fill object defined on the overall conditional format range.
     *
     * [Api set: ExcelApi 1.6]
     */
   var fill: js.UndefOr[ConditionalRangeFillData] = js.undefined
   /**
     *
-    * Returns the font object defined on the overall conditional format range. Read-only.
+    * Returns the font object defined on the overall conditional format range.
     *
     * [Api set: ExcelApi 1.6]
     */

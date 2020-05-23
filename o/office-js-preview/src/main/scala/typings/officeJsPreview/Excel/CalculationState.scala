@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,17 +36,6 @@ object CalculationState extends js.Object {
     */
   @js.native
   sealed trait pending extends CalculationState
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[CalculationState with String] = js.native
-  /* "Calculating" */ @js.native
-  object calculating extends TopLevel[calculating with String]
-  
-  /* "Done" */ @js.native
-  object done extends TopLevel[done with String]
-  
-  /* "Pending" */ @js.native
-  object pending extends TopLevel[pending with String]
   
 }
 

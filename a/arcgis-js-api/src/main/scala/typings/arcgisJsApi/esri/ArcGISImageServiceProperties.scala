@@ -192,15 +192,15 @@ trait ArcGISImageServiceProperties extends js.Object {
 object ArcGISImageServiceProperties {
   @scala.inline
   def apply(
-    compressionQuality: Int | Double = null,
-    compressionTolerance: Int | Double = null,
+    compressionQuality: js.UndefOr[Double] = js.undefined,
+    compressionTolerance: js.UndefOr[Double] = js.undefined,
     copyright: String = null,
     definitionExpression: String = null,
     fields: js.Array[FieldProperties] = null,
     format: png | png8 | png24 | png32 | jpg | jpgpng | lerc | tiff = null,
     hasMultidimensions: js.UndefOr[Boolean] = js.undefined,
-    imageMaxHeight: Int | Double = null,
-    imageMaxWidth: Int | Double = null,
+    imageMaxHeight: js.UndefOr[Double] = js.undefined,
+    imageMaxWidth: js.UndefOr[Double] = js.undefined,
     interpolation: nearest | bilinear | cubic | majority = null,
     mosaicRule: MosaicRuleProperties = null,
     multidimensionalInfo: js.Any = null,
@@ -216,15 +216,15 @@ object ArcGISImageServiceProperties {
     url: String = null
   ): ArcGISImageServiceProperties = {
     val __obj = js.Dynamic.literal()
-    if (compressionQuality != null) __obj.updateDynamic("compressionQuality")(compressionQuality.asInstanceOf[js.Any])
-    if (compressionTolerance != null) __obj.updateDynamic("compressionTolerance")(compressionTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressionQuality)) __obj.updateDynamic("compressionQuality")(compressionQuality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressionTolerance)) __obj.updateDynamic("compressionTolerance")(compressionTolerance.get.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMultidimensions)) __obj.updateDynamic("hasMultidimensions")(hasMultidimensions.asInstanceOf[js.Any])
-    if (imageMaxHeight != null) __obj.updateDynamic("imageMaxHeight")(imageMaxHeight.asInstanceOf[js.Any])
-    if (imageMaxWidth != null) __obj.updateDynamic("imageMaxWidth")(imageMaxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMultidimensions)) __obj.updateDynamic("hasMultidimensions")(hasMultidimensions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageMaxHeight)) __obj.updateDynamic("imageMaxHeight")(imageMaxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageMaxWidth)) __obj.updateDynamic("imageMaxWidth")(imageMaxWidth.get.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
     if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule.asInstanceOf[js.Any])
     if (multidimensionalInfo != null) __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo.asInstanceOf[js.Any])

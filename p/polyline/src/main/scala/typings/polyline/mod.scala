@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("polyline", JSImport.Namespace)
 @js.native
-object mod extends TopLevel[Polyline_]
+object mod extends TopLevel[Polyline]
 

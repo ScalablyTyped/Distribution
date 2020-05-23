@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ trait MediaStreamError extends js.Object {
   val name: java.lang.String
 }
 
-@JSGlobal("MediaStreamError")
-@js.native
-object MediaStreamError extends Instantiable0[MediaStreamError]
+object MediaStreamError {
+  @scala.inline
+  def apply(name: java.lang.String, constraintName: java.lang.String = null, message: java.lang.String = null): MediaStreamError = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraintName = constraintName.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaStreamError]
+  }
+}
 

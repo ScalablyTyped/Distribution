@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.GAMMA_SRGB
-  * @type {number}
-  * @description Apply sRGB gamma correction.
+  * Apply sRGB gamma correction.
   */
 @JSImport("playcanvas", "GAMMA_SRGB")
 @js.native

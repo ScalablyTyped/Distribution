@@ -11,7 +11,7 @@ package object policiesTypesMod {
     /* options */ typings.nodePgMigrate.policiesTypesMod.PolicyOptions, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type CreatePolicy = typings.nodePgMigrate.policiesTypesMod.CreatePolicyFn with typings.nodePgMigrate.AnonReverseCreatePolicyFn
+  type CreatePolicy = typings.nodePgMigrate.policiesTypesMod.CreatePolicyFn with typings.nodePgMigrate.anon.ReverseCreatePolicyFn
   type CreatePolicyFn = js.Function3[
     /* tableName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* policyName */ java.lang.String, 
@@ -27,7 +27,7 @@ package object policiesTypesMod {
     /* options */ js.UndefOr[typings.nodePgMigrate.generalTypesMod.IfExistsOption], 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RenamePolicy = typings.nodePgMigrate.policiesTypesMod.RenamePolicyFn with typings.nodePgMigrate.AnonReverseRenamePolicyFn
+  type RenamePolicy = typings.nodePgMigrate.policiesTypesMod.RenamePolicyFn with typings.nodePgMigrate.anon.ReverseRenamePolicyFn
   type RenamePolicyFn = js.Function3[
     /* tableName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* policyName */ java.lang.String, 

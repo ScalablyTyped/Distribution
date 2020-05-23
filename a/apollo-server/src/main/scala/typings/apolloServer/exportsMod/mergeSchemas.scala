@@ -1,7 +1,7 @@
 package typings.apolloServer.exportsMod
 
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.AnonInheritResolversFromInterfaces
+import typings.graphqlTools.anon.InheritResolversFromInterfaces
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mergeSchemas extends js.Object {
   def apply(
-    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfacesMergeDirectives: AnonInheritResolversFromInterfaces
+    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfacesMergeDirectives: InheritResolversFromInterfaces
   ): GraphQLSchema = js.native
 }
 

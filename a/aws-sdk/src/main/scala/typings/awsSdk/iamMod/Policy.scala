@@ -53,26 +53,26 @@ object Policy {
   @scala.inline
   def apply(
     Arn: arnType = null,
-    AttachmentCount: Int | Double = null,
+    AttachmentCount: js.UndefOr[attachmentCountType] = js.undefined,
     CreateDate: dateType = null,
     DefaultVersionId: policyVersionIdType = null,
     Description: policyDescriptionType = null,
-    IsAttachable: js.UndefOr[Boolean] = js.undefined,
+    IsAttachable: js.UndefOr[booleanType] = js.undefined,
     Path: policyPathType = null,
-    PermissionsBoundaryUsageCount: Int | Double = null,
+    PermissionsBoundaryUsageCount: js.UndefOr[attachmentCountType] = js.undefined,
     PolicyId: idType = null,
     PolicyName: policyNameType = null,
     UpdateDate: dateType = null
   ): Policy = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (AttachmentCount != null) __obj.updateDynamic("AttachmentCount")(AttachmentCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AttachmentCount)) __obj.updateDynamic("AttachmentCount")(AttachmentCount.get.asInstanceOf[js.Any])
     if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
     if (DefaultVersionId != null) __obj.updateDynamic("DefaultVersionId")(DefaultVersionId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsAttachable)) __obj.updateDynamic("IsAttachable")(IsAttachable.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsAttachable)) __obj.updateDynamic("IsAttachable")(IsAttachable.get.asInstanceOf[js.Any])
     if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
-    if (PermissionsBoundaryUsageCount != null) __obj.updateDynamic("PermissionsBoundaryUsageCount")(PermissionsBoundaryUsageCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(PermissionsBoundaryUsageCount)) __obj.updateDynamic("PermissionsBoundaryUsageCount")(PermissionsBoundaryUsageCount.get.asInstanceOf[js.Any])
     if (PolicyId != null) __obj.updateDynamic("PolicyId")(PolicyId.asInstanceOf[js.Any])
     if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName.asInstanceOf[js.Any])
     if (UpdateDate != null) __obj.updateDynamic("UpdateDate")(UpdateDate.asInstanceOf[js.Any])

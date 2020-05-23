@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief dns 域名查询模块
-	* @detail 基础模块，引用方式：,```JavaScript,var dns = require('dns');,```
-	*/
+  * @brief dns 域名查询模块
+  * @detail 基础模块，引用方式：,```JavaScript,var dns = require('dns');,```
+  */
 @JSImport("dns", JSImport.Namespace)
 @js.native
 object dnsMod extends js.Object {

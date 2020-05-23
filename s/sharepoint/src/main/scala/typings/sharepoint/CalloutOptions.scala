@@ -5,36 +5,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CalloutOptions")
-@js.native
-class CalloutOptions () extends js.Object {
+trait CalloutOptions extends js.Object {
   /** Some unique id for the callout. */
-  var ID: String = js.native
+  var ID: String
   /** One of the following: "topBottom" (default) or "leftRight". */
-  var beakOrientation: String = js.native
+  var beakOrientation: String
   /** If defined, callout will be inscribed into the bounding element. */
-  var boundingBox: HTMLElement = js.native
+  var boundingBox: HTMLElement
   /** String (HTML allowed) that represents contents of the callout window. */
-  var content: String = js.native
+  var content: String
   /** HTML element that represents contents of the callout window. */
-  var contentElement: HTMLElement = js.native
+  var contentElement: HTMLElement
   /** Content element's width in pixels. By default = 350. */
-  var contentWidth: Double = js.native
+  var contentWidth: Double
   /** Element on that the callout is shown. */
-  var launchPoint: HTMLElement = js.native
+  var launchPoint: HTMLElement
   /** Defines opening behavior */
-  var openOptions: CalloutOpenOptions = js.native
+  var openOptions: CalloutOpenOptions
   /** Title for the callout */
-  var title: String = js.native
+  var title: String
   /** Fires right after the callout is closed */
-  def onClosedCallback(callout: Callout): Unit = js.native
+  def onClosedCallback(callout: Callout): Unit
   /** Fires right before the callout is closed */
-  def onClosingCallback(callout: Callout): Unit = js.native
+  def onClosingCallback(callout: Callout): Unit
   /** Fires right after the callout is shown */
-  def onOpenedCallback(callout: Callout): Unit = js.native
+  def onOpenedCallback(callout: Callout): Unit
   /** Fires after the callout is rendered but before it is positioned and shown */
-  def onOpeningCallback(callout: Callout): Unit = js.native
+  def onOpeningCallback(callout: Callout): Unit
   /** Sets the position of the callout during its opening phase. For an example of a position algorithm function, please explore defaultPositionAlgorithm function from the callout.debug.js file */
-  def positionAlgorithm(callout: Callout): Unit = js.native
+  def positionAlgorithm(callout: Callout): Unit
+}
+
+object CalloutOptions {
+  @scala.inline
+  def apply(
+    ID: String,
+    beakOrientation: String,
+    boundingBox: HTMLElement,
+    content: String,
+    contentElement: HTMLElement,
+    contentWidth: Double,
+    launchPoint: HTMLElement,
+    onClosedCallback: Callout => Unit,
+    onClosingCallback: Callout => Unit,
+    onOpenedCallback: Callout => Unit,
+    onOpeningCallback: Callout => Unit,
+    openOptions: CalloutOpenOptions,
+    positionAlgorithm: Callout => Unit,
+    title: String
+  ): CalloutOptions = {
+    val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], beakOrientation = beakOrientation.asInstanceOf[js.Any], boundingBox = boundingBox.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentElement = contentElement.asInstanceOf[js.Any], contentWidth = contentWidth.asInstanceOf[js.Any], launchPoint = launchPoint.asInstanceOf[js.Any], onClosedCallback = js.Any.fromFunction1(onClosedCallback), onClosingCallback = js.Any.fromFunction1(onClosingCallback), onOpenedCallback = js.Any.fromFunction1(onOpenedCallback), onOpeningCallback = js.Any.fromFunction1(onOpeningCallback), openOptions = openOptions.asInstanceOf[js.Any], positionAlgorithm = js.Any.fromFunction1(positionAlgorithm), title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CalloutOptions]
+  }
 }
 

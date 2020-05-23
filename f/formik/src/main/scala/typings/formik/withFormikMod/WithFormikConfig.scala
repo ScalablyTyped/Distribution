@@ -52,7 +52,7 @@ trait WithFormikConfig[Props, Values /* <: FormikValues */, DeprecatedPayload] e
 
 object WithFormikConfig {
   @scala.inline
-  def apply[Props, Values /* <: FormikValues */, DeprecatedPayload](
+  def apply[Props, Values, DeprecatedPayload](
     handleSubmit: (Values, FormikBag[Props, Values]) => Unit,
     displayName: String = null,
     enableReinitialize: js.UndefOr[Boolean] = js.undefined,
@@ -70,7 +70,7 @@ object WithFormikConfig {
   ): WithFormikConfig[Props, Values, DeprecatedPayload] = {
     val __obj = js.Dynamic.literal(handleSubmit = js.Any.fromFunction2(handleSubmit))
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableReinitialize)) __obj.updateDynamic("enableReinitialize")(enableReinitialize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableReinitialize)) __obj.updateDynamic("enableReinitialize")(enableReinitialize.get.asInstanceOf[js.Any])
     if (isInitialValid != null) __obj.updateDynamic("isInitialValid")(isInitialValid.asInstanceOf[js.Any])
     if (mapPropsToErrors != null) __obj.updateDynamic("mapPropsToErrors")(js.Any.fromFunction1(mapPropsToErrors))
     if (mapPropsToStatus != null) __obj.updateDynamic("mapPropsToStatus")(js.Any.fromFunction1(mapPropsToStatus))
@@ -78,9 +78,9 @@ object WithFormikConfig {
     if (mapPropsToValues != null) __obj.updateDynamic("mapPropsToValues")(js.Any.fromFunction1(mapPropsToValues))
     if (mapValuesToPayload != null) __obj.updateDynamic("mapValuesToPayload")(js.Any.fromFunction1(mapValuesToPayload))
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
-    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnMount)) __obj.updateDynamic("validateOnMount")(validateOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnMount)) __obj.updateDynamic("validateOnMount")(validateOnMount.get.asInstanceOf[js.Any])
     if (validationSchema != null) __obj.updateDynamic("validationSchema")(validationSchema.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithFormikConfig[Props, Values, DeprecatedPayload]]
   }

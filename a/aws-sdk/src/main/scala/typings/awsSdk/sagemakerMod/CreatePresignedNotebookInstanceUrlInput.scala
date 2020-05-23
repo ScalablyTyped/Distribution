@@ -20,10 +20,10 @@ object CreatePresignedNotebookInstanceUrlInput {
   @scala.inline
   def apply(
     NotebookInstanceName: NotebookInstanceName,
-    SessionExpirationDurationInSeconds: Int | Double = null
+    SessionExpirationDurationInSeconds: js.UndefOr[SessionExpirationDurationInSeconds] = js.undefined
   ): CreatePresignedNotebookInstanceUrlInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
-    if (SessionExpirationDurationInSeconds != null) __obj.updateDynamic("SessionExpirationDurationInSeconds")(SessionExpirationDurationInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(SessionExpirationDurationInSeconds)) __obj.updateDynamic("SessionExpirationDurationInSeconds")(SessionExpirationDurationInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePresignedNotebookInstanceUrlInput]
   }
 }

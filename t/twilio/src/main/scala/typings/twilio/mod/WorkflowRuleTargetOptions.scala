@@ -16,13 +16,13 @@ object WorkflowRuleTargetOptions {
   def apply(
     queue: String,
     expression: String = null,
-    priority: Int | Double = null,
-    timeout: Int | Double = null
+    priority: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): WorkflowRuleTargetOptions = {
     val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any])
     if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowRuleTargetOptions]
   }
 }

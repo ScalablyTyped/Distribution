@@ -1,7 +1,7 @@
 package typings.bnJs.mod
 
-import typings.bnJs.AnonA
-import typings.bnJs.TypeofBuffer
+import typings.bnJs.anon.A
+import typings.bnJs.anon.TypeofBuffer
 import typings.bnJs.bnJsNumbers.`-1`
 import typings.bnJs.bnJsNumbers.`0`
 import typings.bnJs.bnJsNumbers.`1`
@@ -68,7 +68,7 @@ trait BN extends js.Object {
   /**
     * @description Extended GCD results `({ a: ..., b: ..., gcd: ... })`
     */
-  def egcd(b: BN): AnonA = js.native
+  def egcd(b: BN): A = js.native
   /**
     * @description a equals b
     */

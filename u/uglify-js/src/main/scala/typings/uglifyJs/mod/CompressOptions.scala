@@ -310,9 +310,9 @@ object CompressOptions {
     loops: js.UndefOr[Boolean] = js.undefined,
     negate_iife: js.UndefOr[Boolean] = js.undefined,
     objects: js.UndefOr[Boolean] = js.undefined,
-    passes: Int | Double = null,
+    passes: js.UndefOr[Double] = js.undefined,
     properties: js.UndefOr[Boolean] = js.undefined,
-    pure_funcs: js.Array[String] = null,
+    pure_funcs: js.UndefOr[Null | js.Array[String]] = js.undefined,
     pure_getters: Boolean | strict = null,
     reduce_funcs: js.UndefOr[Boolean] = js.undefined,
     reduce_vars: js.UndefOr[Boolean] = js.undefined,
@@ -320,7 +320,7 @@ object CompressOptions {
     side_effects: js.UndefOr[Boolean] = js.undefined,
     strings: js.UndefOr[Boolean] = js.undefined,
     switches: js.UndefOr[Boolean] = js.undefined,
-    top_retain: js.UndefOr[Boolean] = js.undefined,
+    top_retain: js.UndefOr[Null | Boolean] = js.undefined,
     toplevel: js.UndefOr[Boolean] = js.undefined,
     typeofs: js.UndefOr[Boolean] = js.undefined,
     unsafe: js.UndefOr[Boolean] = js.undefined,
@@ -333,53 +333,53 @@ object CompressOptions {
     unused: js.UndefOr[Boolean] = js.undefined
   ): CompressOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arguments)) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (!js.isUndefined(assignments)) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(booleans)) __obj.updateDynamic("booleans")(booleans.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapse_vars)) __obj.updateDynamic("collapse_vars")(collapse_vars.asInstanceOf[js.Any])
-    if (!js.isUndefined(comparisons)) __obj.updateDynamic("comparisons")(comparisons.asInstanceOf[js.Any])
-    if (!js.isUndefined(conditionals)) __obj.updateDynamic("conditionals")(conditionals.asInstanceOf[js.Any])
-    if (!js.isUndefined(dead_code)) __obj.updateDynamic("dead_code")(dead_code.asInstanceOf[js.Any])
-    if (!js.isUndefined(directives)) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (!js.isUndefined(drop_console)) __obj.updateDynamic("drop_console")(drop_console.asInstanceOf[js.Any])
-    if (!js.isUndefined(drop_debugger)) __obj.updateDynamic("drop_debugger")(drop_debugger.asInstanceOf[js.Any])
-    if (!js.isUndefined(evaluate)) __obj.updateDynamic("evaluate")(evaluate.asInstanceOf[js.Any])
-    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (!js.isUndefined(functions)) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
+    if (!js.isUndefined(arguments)) __obj.updateDynamic("arguments")(arguments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(assignments)) __obj.updateDynamic("assignments")(assignments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(booleans)) __obj.updateDynamic("booleans")(booleans.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapse_vars)) __obj.updateDynamic("collapse_vars")(collapse_vars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(comparisons)) __obj.updateDynamic("comparisons")(comparisons.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(conditionals)) __obj.updateDynamic("conditionals")(conditionals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dead_code)) __obj.updateDynamic("dead_code")(dead_code.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(directives)) __obj.updateDynamic("directives")(directives.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drop_console)) __obj.updateDynamic("drop_console")(drop_console.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drop_debugger)) __obj.updateDynamic("drop_debugger")(drop_debugger.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(evaluate)) __obj.updateDynamic("evaluate")(evaluate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(functions)) __obj.updateDynamic("functions")(functions.get.asInstanceOf[js.Any])
     if (global_defs != null) __obj.updateDynamic("global_defs")(global_defs.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoist_funs)) __obj.updateDynamic("hoist_funs")(hoist_funs.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoist_props)) __obj.updateDynamic("hoist_props")(hoist_props.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoist_vars)) __obj.updateDynamic("hoist_vars")(hoist_vars.asInstanceOf[js.Any])
-    if (!js.isUndefined(if_return)) __obj.updateDynamic("if_return")(if_return.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoist_funs)) __obj.updateDynamic("hoist_funs")(hoist_funs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoist_props)) __obj.updateDynamic("hoist_props")(hoist_props.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoist_vars)) __obj.updateDynamic("hoist_vars")(hoist_vars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(if_return)) __obj.updateDynamic("if_return")(if_return.get.asInstanceOf[js.Any])
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(join_vars)) __obj.updateDynamic("join_vars")(join_vars.asInstanceOf[js.Any])
+    if (!js.isUndefined(join_vars)) __obj.updateDynamic("join_vars")(join_vars.get.asInstanceOf[js.Any])
     if (keep_fargs != null) __obj.updateDynamic("keep_fargs")(keep_fargs.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_infinity)) __obj.updateDynamic("keep_infinity")(keep_infinity.asInstanceOf[js.Any])
-    if (!js.isUndefined(loops)) __obj.updateDynamic("loops")(loops.asInstanceOf[js.Any])
-    if (!js.isUndefined(negate_iife)) __obj.updateDynamic("negate_iife")(negate_iife.asInstanceOf[js.Any])
-    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
-    if (passes != null) __obj.updateDynamic("passes")(passes.asInstanceOf[js.Any])
-    if (!js.isUndefined(properties)) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (pure_funcs != null) __obj.updateDynamic("pure_funcs")(pure_funcs.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_infinity)) __obj.updateDynamic("keep_infinity")(keep_infinity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loops)) __obj.updateDynamic("loops")(loops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(negate_iife)) __obj.updateDynamic("negate_iife")(negate_iife.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passes)) __obj.updateDynamic("passes")(passes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(properties)) __obj.updateDynamic("properties")(properties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pure_funcs)) __obj.updateDynamic("pure_funcs")(pure_funcs.asInstanceOf[js.Any])
     if (pure_getters != null) __obj.updateDynamic("pure_getters")(pure_getters.asInstanceOf[js.Any])
-    if (!js.isUndefined(reduce_funcs)) __obj.updateDynamic("reduce_funcs")(reduce_funcs.asInstanceOf[js.Any])
-    if (!js.isUndefined(reduce_vars)) __obj.updateDynamic("reduce_vars")(reduce_vars.asInstanceOf[js.Any])
-    if (!js.isUndefined(sequences)) __obj.updateDynamic("sequences")(sequences.asInstanceOf[js.Any])
-    if (!js.isUndefined(side_effects)) __obj.updateDynamic("side_effects")(side_effects.asInstanceOf[js.Any])
-    if (!js.isUndefined(strings)) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
-    if (!js.isUndefined(switches)) __obj.updateDynamic("switches")(switches.asInstanceOf[js.Any])
+    if (!js.isUndefined(reduce_funcs)) __obj.updateDynamic("reduce_funcs")(reduce_funcs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reduce_vars)) __obj.updateDynamic("reduce_vars")(reduce_vars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sequences)) __obj.updateDynamic("sequences")(sequences.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(side_effects)) __obj.updateDynamic("side_effects")(side_effects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strings)) __obj.updateDynamic("strings")(strings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(switches)) __obj.updateDynamic("switches")(switches.get.asInstanceOf[js.Any])
     if (!js.isUndefined(top_retain)) __obj.updateDynamic("top_retain")(top_retain.asInstanceOf[js.Any])
-    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeofs)) __obj.updateDynamic("typeofs")(typeofs.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_Function)) __obj.updateDynamic("unsafe_Function")(unsafe_Function.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_comps)) __obj.updateDynamic("unsafe_comps")(unsafe_comps.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_math)) __obj.updateDynamic("unsafe_math")(unsafe_math.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_proto)) __obj.updateDynamic("unsafe_proto")(unsafe_proto.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_regexp)) __obj.updateDynamic("unsafe_regexp")(unsafe_regexp.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_undefined)) __obj.updateDynamic("unsafe_undefined")(unsafe_undefined.asInstanceOf[js.Any])
-    if (!js.isUndefined(unused)) __obj.updateDynamic("unused")(unused.asInstanceOf[js.Any])
+    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeofs)) __obj.updateDynamic("typeofs")(typeofs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe_Function)) __obj.updateDynamic("unsafe_Function")(unsafe_Function.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe_comps)) __obj.updateDynamic("unsafe_comps")(unsafe_comps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe_math)) __obj.updateDynamic("unsafe_math")(unsafe_math.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe_proto)) __obj.updateDynamic("unsafe_proto")(unsafe_proto.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe_regexp)) __obj.updateDynamic("unsafe_regexp")(unsafe_regexp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe_undefined)) __obj.updateDynamic("unsafe_undefined")(unsafe_undefined.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unused)) __obj.updateDynamic("unused")(unused.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressOptions]
   }
 }

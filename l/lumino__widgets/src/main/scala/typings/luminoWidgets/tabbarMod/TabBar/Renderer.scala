@@ -3,7 +3,6 @@ package typings.luminoWidgets.tabbarMod.TabBar
 import typings.luminoVirtualdom.mod.ElementDataset
 import typings.luminoVirtualdom.mod.ElementInlineStyle
 import typings.luminoVirtualdom.mod.VirtualElement
-import typings.luminoWidgets.luminoWidgetsStrings.`Dotlm-TabBar-tabCloseIcon`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,11 +27,6 @@ class Renderer ()
     */
   /* CompleteClass */
   override val closeIconSelector: String = js.native
-  /**
-    * A selector which matches the close icon node in a tab.
-    */
-  @JSName("closeIconSelector")
-  val closeIconSelector_Renderer: `Dotlm-TabBar-tabCloseIcon` = js.native
   /**
     * Create the class name for the tab icon.
     *

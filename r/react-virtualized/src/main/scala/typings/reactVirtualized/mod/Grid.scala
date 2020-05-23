@@ -1,6 +1,6 @@
 package typings.reactVirtualized.mod
 
-import typings.reactVirtualized.AnonAriareadonly
+import typings.reactVirtualized.anon.Ariareadonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class Grid ()
 @JSImport("react-virtualized", "Grid")
 @js.native
 object Grid extends js.Object {
-  var defaultProps: AnonAriareadonly = js.native
+  var defaultProps: Ariareadonly = js.native
 }
 

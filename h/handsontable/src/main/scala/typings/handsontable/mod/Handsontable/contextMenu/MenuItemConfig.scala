@@ -68,10 +68,10 @@ object MenuItemConfig {
   ): MenuItemConfig = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection.get.asInstanceOf[js.Any])
     if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCommand)) __obj.updateDynamic("isCommand")(isCommand.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCommand)) __obj.updateDynamic("isCommand")(isCommand.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])

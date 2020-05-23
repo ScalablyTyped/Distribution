@@ -10,6 +10,10 @@ package object mapkit {
     /* data */ typings.appleMapkitJs.mapkit.SearchAutocompleteResponse, 
     scala.Unit
   ]
+  /**
+    * A customized annotation with image resources that you provide.
+    */
+  type ImageAnnotation = typings.appleMapkitJs.mapkit.Annotation
   type ImportGeoJSONCallback = js.Function2[
     /* error */ typings.std.Error, 
     /* result */ typings.appleMapkitJs.mapkit.ItemCollection, 
@@ -17,7 +21,7 @@ package object mapkit {
   ]
   type SearchCallback[Q] = js.Function2[
     /* error */ typings.std.Error | scala.Null, 
-    /* data */ typings.appleMapkitJs.AnonDisplayRegion[Q], 
+    /* data */ typings.appleMapkitJs.anon.DisplayRegion[Q], 
     scala.Unit
   ]
   type URLTemplateCallback = js.Function5[

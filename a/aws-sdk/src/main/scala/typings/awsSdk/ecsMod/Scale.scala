@@ -18,10 +18,10 @@ trait Scale extends js.Object {
 
 object Scale {
   @scala.inline
-  def apply(unit: ScaleUnit = null, value: Int | scala.Double = null): Scale = {
+  def apply(unit: ScaleUnit = null, value: js.UndefOr[Double] = js.undefined): Scale = {
     val __obj = js.Dynamic.literal()
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scale]
   }
 }

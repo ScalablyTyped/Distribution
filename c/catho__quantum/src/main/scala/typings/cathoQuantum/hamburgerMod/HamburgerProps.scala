@@ -21,9 +21,9 @@ object HamburgerProps {
   ): HamburgerProps = {
     val __obj = js.Dynamic.literal()
     if (ariaLabelDescription != null) __obj.updateDynamic("ariaLabelDescription")(ariaLabelDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpened)) __obj.updateDynamic("isOpened")(isOpened.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNotification)) __obj.updateDynamic("showNotification")(showNotification.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpened)) __obj.updateDynamic("isOpened")(isOpened.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNotification)) __obj.updateDynamic("showNotification")(showNotification.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HamburgerProps]
   }
 }

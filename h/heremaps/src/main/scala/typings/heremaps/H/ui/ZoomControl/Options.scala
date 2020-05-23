@@ -24,13 +24,13 @@ object Options {
     alignment: LayoutAlignment = null,
     slider: js.UndefOr[Boolean] = js.undefined,
     sliderSnaps: js.UndefOr[Boolean] = js.undefined,
-    zoomSpeed: Int | Double = null
+    zoomSpeed: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(slider)) __obj.updateDynamic("slider")(slider.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliderSnaps)) __obj.updateDynamic("sliderSnaps")(sliderSnaps.asInstanceOf[js.Any])
-    if (zoomSpeed != null) __obj.updateDynamic("zoomSpeed")(zoomSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(slider)) __obj.updateDynamic("slider")(slider.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderSnaps)) __obj.updateDynamic("sliderSnaps")(sliderSnaps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomSpeed)) __obj.updateDynamic("zoomSpeed")(zoomSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -113,7 +113,7 @@ object Organization {
     if (marketingNotificationEmails != null) __obj.updateDynamic("marketingNotificationEmails")(marketingNotificationEmails.asInstanceOf[js.Any])
     if (mobileDeviceManagementAuthority != null) __obj.updateDynamic("mobileDeviceManagementAuthority")(mobileDeviceManagementAuthority.asInstanceOf[js.Any])
     if (onPremisesLastSyncDateTime != null) __obj.updateDynamic("onPremisesLastSyncDateTime")(onPremisesLastSyncDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled.get.asInstanceOf[js.Any])
     if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
     if (preferredLanguage != null) __obj.updateDynamic("preferredLanguage")(preferredLanguage.asInstanceOf[js.Any])
     if (privacyProfile != null) __obj.updateDynamic("privacyProfile")(privacyProfile.asInstanceOf[js.Any])

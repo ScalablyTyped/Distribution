@@ -20,7 +20,7 @@ trait ojValidationGroupSettablePropertiesLenient
 object ojValidationGroupSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     valid: valid | pending | invalidHidden | invalidShown = null
   ): ojValidationGroupSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()

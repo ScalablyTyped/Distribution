@@ -1,13 +1,11 @@
 package typings.googleDriveRealtimeApi.gapi.drive.realtime
 
-import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gapi.drive.realtime.CollaborativeList")
 @js.native
-class CollaborativeList[V] () extends CollaborativeObject {
+trait CollaborativeList[V] extends CollaborativeObject {
   // The number of entries in the list. Assign to this field to reduce the size of the list.
   // Note that the length given must be less than or equal to the current size.
   // The length of a list cannot be extended in this way.
@@ -64,12 +62,5 @@ class CollaborativeList[V] () extends CollaborativeObject {
   def replaceRange(index: Double, values: js.Array[V]): Unit = js.native
   // Sets the item at the given index
   def set(index: Double, value: V): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("gapi.drive.realtime.CollaborativeList")
-@js.native
-object CollaborativeList extends js.Object {
-  var `type`: List = js.native
 }
 

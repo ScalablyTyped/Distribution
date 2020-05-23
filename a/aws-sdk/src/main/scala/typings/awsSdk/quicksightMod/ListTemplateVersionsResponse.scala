@@ -29,13 +29,13 @@ object ListTemplateVersionsResponse {
   def apply(
     NextToken: String = null,
     RequestId: String = null,
-    Status: Int | scala.Double = null,
+    Status: js.UndefOr[StatusCode] = js.undefined,
     TemplateVersionSummaryList: TemplateVersionSummaryList = null
   ): ListTemplateVersionsResponse = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     if (TemplateVersionSummaryList != null) __obj.updateDynamic("TemplateVersionSummaryList")(TemplateVersionSummaryList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTemplateVersionsResponse]
   }

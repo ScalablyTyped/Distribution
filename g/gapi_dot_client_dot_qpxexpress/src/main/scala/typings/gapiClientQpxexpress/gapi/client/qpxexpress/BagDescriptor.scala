@@ -21,14 +21,14 @@ object BagDescriptor {
   @scala.inline
   def apply(
     commercialName: String = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     description: js.Array[String] = null,
     kind: String = null,
     subcode: String = null
   ): BagDescriptor = {
     val __obj = js.Dynamic.literal()
     if (commercialName != null) __obj.updateDynamic("commercialName")(commercialName.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (subcode != null) __obj.updateDynamic("subcode")(subcode.asInstanceOf[js.Any])

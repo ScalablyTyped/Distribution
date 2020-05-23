@@ -18,7 +18,7 @@ trait PlusCameraCameraOptions extends js.Object {
   /**
     * 拍照或摄像文件保存的路径
     * 可设置具体文件名（如"_doc/camera/a.jpg"）；也可只设置路径，以"/"结尾则表明是路径（如"_doc/camera/"）。
-    * 	如未设置文件名称或设置的文件名冲突则文件名由程序程序自动生成。
+    *     如未设置文件名称或设置的文件名冲突则文件名由程序程序自动生成。
     * - _doc/: 应用私有文档目录
     * - _documents/: 共享文档目录
     * - _downloads/: 共享下载目录
@@ -45,11 +45,11 @@ trait PlusCameraCameraOptions extends js.Object {
   /**
     * 是否优化图片
     * 自动调整图片的方向，在部分设备上可能出现图片方向不正确的问题，此参数将配置是否自动调整图片方向。
-    * 	可取值：
-    * 		true - 自动调整图片方向；
-    * 		false - 不调整。
-    * 	默认值为true。
-    * 	注意：自动调整图片方向将消耗部分系统资源，可能会导致拍照后回调触发时机延迟，将此值设置为false则可避免延迟问题。
+    *     可取值：
+    *         true - 自动调整图片方向；
+    *         false - 不调整。
+    *     默认值为true。
+    *     注意：自动调整图片方向将消耗部分系统资源，可能会导致拍照后回调触发时机延迟，将此值设置为false则可避免延迟问题。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
@@ -71,8 +71,8 @@ trait PlusCameraCameraOptions extends js.Object {
   /**
     * 视频长度
     * 单位为秒（s），小于等于0表示不限定视频长度。
-    * 	默认值为0（不限定视频长度）。
-    * 	注意：仅在调用拍摄视频（startVideoCapture）时有效。
+    *     默认值为0（不限定视频长度）。
+    *     注意：仅在调用拍摄视频（startVideoCapture）时有效。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
@@ -88,16 +88,16 @@ object PlusCameraCameraOptions {
     optimize: js.UndefOr[Boolean] = js.undefined,
     popover: PlusCameraPopPosition = null,
     resolution: String = null,
-    videoMaximumDuration: Int | Double = null
+    videoMaximumDuration: js.UndefOr[Double] = js.undefined
   ): PlusCameraCameraOptions = {
     val __obj = js.Dynamic.literal()
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimize)) __obj.updateDynamic("optimize")(optimize.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimize)) __obj.updateDynamic("optimize")(optimize.get.asInstanceOf[js.Any])
     if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (videoMaximumDuration != null) __obj.updateDynamic("videoMaximumDuration")(videoMaximumDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoMaximumDuration)) __obj.updateDynamic("videoMaximumDuration")(videoMaximumDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusCameraCameraOptions]
   }
 }

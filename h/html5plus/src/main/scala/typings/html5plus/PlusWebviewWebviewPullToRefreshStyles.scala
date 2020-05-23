@@ -20,7 +20,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends js.Object {
   /**
     * 在下拉可刷新状态时显示的内容
     * 支持以下属性：
-    * 	caption：在下拉可刷新状态时下拉刷新控件上显示的标题内容。
+    *     caption：在下拉可刷新状态时下拉刷新控件上显示的标题内容。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -28,7 +28,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends js.Object {
   /**
     * 在释放可刷新状态时显示的内容
     * 支持以下属性：
-    * 	caption：在释放可刷新状态时下拉刷新控件上显示的标题内容。
+    *     caption：在释放可刷新状态时下拉刷新控件上显示的标题内容。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -36,7 +36,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends js.Object {
   /**
     * 在正在刷新状态时显示的内容
     * 支持以下属性：
-    * 	caption：在正在刷新状态时下拉刷新控件上显示的标题内容。
+    *     caption：在正在刷新状态时下拉刷新控件上显示的标题内容。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -51,8 +51,8 @@ trait PlusWebviewWebviewPullToRefreshStyles extends js.Object {
   /**
     * 下拉刷新控件的起始位置
     * 仅对"circle"样式下拉刷新控件有效，用于定义刷新控件下拉时的起始位置。
-    * 	相对于Webview的顶部偏移量，支持百分比，如"10%"；像素值，如"50px"。
-    * 	默认值为"0px"。
+    *     相对于Webview的顶部偏移量，支持百分比，如"10%"；像素值，如"50px"。
+    *     默认值为"0px"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -67,9 +67,9 @@ trait PlusWebviewWebviewPullToRefreshStyles extends js.Object {
   /**
     * 下拉刷新样式
     * 用于定义下拉刷新风格样式，可取值：
-    * 	"default" - 经典下拉刷新样式（下拉拖动时页面内容跟随）；
-    * 	"circle" - 圆圈样式下拉刷新控件样式（下拉拖动时仅刷新控件跟随）。
-    * 	默认值为"default"。
+    *     "default" - 经典下拉刷新样式（下拉拖动时页面内容跟随）；
+    *     "circle" - 圆圈样式下拉刷新控件样式（下拉拖动时仅刷新控件跟随）。
+    *     默认值为"default"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -77,7 +77,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends js.Object {
   /**
     * 是否开启Webview窗口的下拉刷新功能
     * true表示开启窗口的下拉刷新功能；
-    * 	false表示关闭窗口的下拉刷新功能。
+    *     false表示关闭窗口的下拉刷新功能。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
@@ -106,7 +106,7 @@ object PlusWebviewWebviewPullToRefreshStyles {
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(support)) __obj.updateDynamic("support")(support.asInstanceOf[js.Any])
+    if (!js.isUndefined(support)) __obj.updateDynamic("support")(support.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewPullToRefreshStyles]
   }
 }

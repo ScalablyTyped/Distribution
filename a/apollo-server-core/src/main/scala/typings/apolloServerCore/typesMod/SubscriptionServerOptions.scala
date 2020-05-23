@@ -24,12 +24,12 @@ object SubscriptionServerOptions {
   @scala.inline
   def apply(
     path: String,
-    keepAlive: Int | Double = null,
+    keepAlive: js.UndefOr[Double] = js.undefined,
     onConnect: (/* connectionParams */ js.Object, /* websocket */ ^, /* context */ ConnectionContext) => _ = null,
     onDisconnect: (/* websocket */ ^, /* context */ ConnectionContext) => _ = null
   ): SubscriptionServerOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (keepAlive != null) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
     if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction3(onConnect))
     if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(js.Any.fromFunction2(onDisconnect))
     __obj.asInstanceOf[SubscriptionServerOptions]

@@ -20,12 +20,12 @@ trait ITab extends IButton {
   /** [Property] (Boolean) */
   var isTab: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets this tab s attached card
-  		* @param card Ext.Component The card to set
-  		*/
+    * @param card Ext.Component The card to set
+    */
   var setCard: js.UndefOr[js.Function1[/* card */ js.UndefOr[IComponent], Unit]] = js.undefined
   /** [Method] Sets the tab as either closable or not
-  		* @param closable Boolean Pass false to make the tab not closable. Otherwise the tab will be made closable (eg a close button will appear on the tab)
-  		*/
+    * @param closable Boolean Pass false to make the tab not closable. Otherwise the tab will be made closable (eg a close button will appear on the tab)
+    */
   var setClosable: js.UndefOr[js.Function1[/* closable */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 
@@ -44,12 +44,12 @@ object ITab {
   ): ITab = {
     val __obj = js.Dynamic.literal()
     if (IButton != null) js.Dynamic.global.Object.assign(__obj, IButton)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
     if (closableCls != null) __obj.updateDynamic("closableCls")(closableCls.asInstanceOf[js.Any])
     if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTab)) __obj.updateDynamic("isTab")(isTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTab)) __obj.updateDynamic("isTab")(isTab.get.asInstanceOf[js.Any])
     if (setCard != null) __obj.updateDynamic("setCard")(js.Any.fromFunction1(setCard))
     if (setClosable != null) __obj.updateDynamic("setClosable")(js.Any.fromFunction1(setClosable))
     __obj.asInstanceOf[ITab]

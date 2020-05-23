@@ -12,10 +12,10 @@ trait BeforeOptions extends Options {
 
 object BeforeOptions {
   @scala.inline
-  def apply(before: `true`, after: js.UndefOr[Boolean] = js.undefined, wait: Int | Double = null): BeforeOptions = {
+  def apply(before: `true`, after: js.UndefOr[Boolean] = js.undefined, wait: js.UndefOr[Double] = js.undefined): BeforeOptions = {
     val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any])
-    if (!js.isUndefined(after)) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(after)) __obj.updateDynamic("after")(after.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeOptions]
   }
 }

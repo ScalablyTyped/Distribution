@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the search using either [searchView](Titanium.UI.ListView.searchView) or [searchText](Titanium.UI.ListView.searchText) has no results.
-		 */
+  * Fired when the search using either [searchView](Titanium.UI.ListView.searchView) or [searchText](Titanium.UI.ListView.searchText) has no results.
+  */
 trait ListViewNoresultsEvent extends ListViewBaseEvent {
   /**
-  			 * false. This event does not bubble.
-  			 */
+    * false. This event does not bubble.
+    */
   var bubbles: Boolean
 }
 

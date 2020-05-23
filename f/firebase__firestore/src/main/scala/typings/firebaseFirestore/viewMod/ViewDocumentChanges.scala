@@ -30,7 +30,6 @@ object ViewDocumentChanges {
     needsRefill: Boolean
   ): ViewDocumentChanges = {
     val __obj = js.Dynamic.literal(changeSet = changeSet.asInstanceOf[js.Any], documentSet = documentSet.asInstanceOf[js.Any], mutatedKeys = mutatedKeys.asInstanceOf[js.Any], needsRefill = needsRefill.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ViewDocumentChanges]
   }
 }

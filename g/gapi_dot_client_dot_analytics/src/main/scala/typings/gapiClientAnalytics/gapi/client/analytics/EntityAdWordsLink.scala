@@ -1,6 +1,5 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonWebPropertyRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,7 @@ trait EntityAdWordsLink extends js.Object {
   /** A list of AdWords client accounts. These cannot be MCC accounts. This field is required when creating an AdWords link. It cannot be empty. */
   var adWordsAccounts: js.UndefOr[js.Array[AdWordsAccount]] = js.undefined
   /** Web property being linked. */
-  var entity: js.UndefOr[AnonWebPropertyRef] = js.undefined
+  var entity: js.UndefOr[typings.gapiClientAnalytics.anon.WebPropertyRef] = js.undefined
   /** Entity AdWords link ID */
   var id: js.UndefOr[String] = js.undefined
   /** Resource type for entity AdWords link. */
@@ -26,7 +25,7 @@ object EntityAdWordsLink {
   @scala.inline
   def apply(
     adWordsAccounts: js.Array[AdWordsAccount] = null,
-    entity: AnonWebPropertyRef = null,
+    entity: typings.gapiClientAnalytics.anon.WebPropertyRef = null,
     id: String = null,
     kind: String = null,
     name: String = null,

@@ -14,9 +14,9 @@ trait CropOptions extends js.Object
 
 object CropOptions {
   @scala.inline
-  def CropTrueOptions(aspectRatio: Int | Double = null, crop: `true` = null): CropOptions = {
+  def CropTrueOptions(aspectRatio: js.UndefOr[AspectRatio] = js.undefined, crop: `true` = null): CropOptions = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio.get.asInstanceOf[js.Any])
     if (crop != null) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropOptions]
   }

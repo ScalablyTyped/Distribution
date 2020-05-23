@@ -1,7 +1,7 @@
 
 # Scala.js typings for media-typer
 
-Typings are for version 0.3
+Typings are for version 1.1
 
 ## Library description:
 Simple RFC 6838 media type parser and formatter

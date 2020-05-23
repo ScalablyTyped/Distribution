@@ -9,10 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.visualization.HeatmapLayer")
 @js.native
-class HeatmapLayer () extends MVCObject {
-  def this(opts: HeatmapLayerOptions) = this()
+trait HeatmapLayer extends MVCObject {
   def getData(): MVCArray[LatLng | WeightedLocation] = js.native
   def getMap(): Map[Element] = js.native
   def setData(data: js.Array[LatLng | WeightedLocation]): Unit = js.native

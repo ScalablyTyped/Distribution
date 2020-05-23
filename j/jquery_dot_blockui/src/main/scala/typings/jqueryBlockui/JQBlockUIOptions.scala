@@ -78,7 +78,7 @@ object JQBlockUIOptions {
   @scala.inline
   def apply(
     allowBodyStretch: js.UndefOr[Boolean] = js.undefined,
-    baseZ: Int | Double = null,
+    baseZ: js.UndefOr[Double] = js.undefined,
     bindEvents: js.UndefOr[Boolean] = js.undefined,
     blockMsgClass: String = null,
     centerX: js.UndefOr[Boolean] = js.undefined,
@@ -87,8 +87,8 @@ object JQBlockUIOptions {
     css: js.Any = null,
     cursorReset: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    fadeIn: Int | Double = null,
-    fadeOut: Int | Double = null,
+    fadeIn: js.UndefOr[Double] = js.undefined,
+    fadeOut: js.UndefOr[Double] = js.undefined,
     focusInput: js.UndefOr[Boolean] = js.undefined,
     forceIframe: js.UndefOr[Boolean] = js.undefined,
     growlCSS: js.Any = null,
@@ -98,40 +98,40 @@ object JQBlockUIOptions {
     onBlock: () => Unit = null,
     onUnblock: (/* element */ js.Any, /* options */ js.Any) => Unit = null,
     overlayCSS: js.Any = null,
-    quirksmodeOffsetHack: Int | Double = null,
+    quirksmodeOffsetHack: js.UndefOr[Double] = js.undefined,
     showOverlay: js.UndefOr[Boolean] = js.undefined,
     theme: js.UndefOr[Boolean] = js.undefined,
     themedCSS: js.Any = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     title: String = null
   ): JQBlockUIOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowBodyStretch)) __obj.updateDynamic("allowBodyStretch")(allowBodyStretch.asInstanceOf[js.Any])
-    if (baseZ != null) __obj.updateDynamic("baseZ")(baseZ.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindEvents)) __obj.updateDynamic("bindEvents")(bindEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowBodyStretch)) __obj.updateDynamic("allowBodyStretch")(allowBodyStretch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseZ)) __obj.updateDynamic("baseZ")(baseZ.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindEvents)) __obj.updateDynamic("bindEvents")(bindEvents.get.asInstanceOf[js.Any])
     if (blockMsgClass != null) __obj.updateDynamic("blockMsgClass")(blockMsgClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerX)) __obj.updateDynamic("centerX")(centerX.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerY)) __obj.updateDynamic("centerY")(centerY.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainTabKey)) __obj.updateDynamic("constrainTabKey")(constrainTabKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerX)) __obj.updateDynamic("centerX")(centerX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerY)) __obj.updateDynamic("centerY")(centerY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainTabKey)) __obj.updateDynamic("constrainTabKey")(constrainTabKey.get.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (cursorReset != null) __obj.updateDynamic("cursorReset")(cursorReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (fadeIn != null) __obj.updateDynamic("fadeIn")(fadeIn.asInstanceOf[js.Any])
-    if (fadeOut != null) __obj.updateDynamic("fadeOut")(fadeOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusInput)) __obj.updateDynamic("focusInput")(focusInput.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIframe)) __obj.updateDynamic("forceIframe")(forceIframe.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeIn)) __obj.updateDynamic("fadeIn")(fadeIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeOut)) __obj.updateDynamic("fadeOut")(fadeOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusInput)) __obj.updateDynamic("focusInput")(focusInput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceIframe)) __obj.updateDynamic("forceIframe")(forceIframe.get.asInstanceOf[js.Any])
     if (growlCSS != null) __obj.updateDynamic("growlCSS")(growlCSS.asInstanceOf[js.Any])
     if (iframeSrc != null) __obj.updateDynamic("iframeSrc")(iframeSrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreIfBlocked)) __obj.updateDynamic("ignoreIfBlocked")(ignoreIfBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreIfBlocked)) __obj.updateDynamic("ignoreIfBlocked")(ignoreIfBlocked.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onBlock != null) __obj.updateDynamic("onBlock")(js.Any.fromFunction0(onBlock))
     if (onUnblock != null) __obj.updateDynamic("onUnblock")(js.Any.fromFunction2(onUnblock))
     if (overlayCSS != null) __obj.updateDynamic("overlayCSS")(overlayCSS.asInstanceOf[js.Any])
-    if (quirksmodeOffsetHack != null) __obj.updateDynamic("quirksmodeOffsetHack")(quirksmodeOffsetHack.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(theme)) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(quirksmodeOffsetHack)) __obj.updateDynamic("quirksmodeOffsetHack")(quirksmodeOffsetHack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(theme)) __obj.updateDynamic("theme")(theme.get.asInstanceOf[js.Any])
     if (themedCSS != null) __obj.updateDynamic("themedCSS")(themedCSS.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQBlockUIOptions]
   }

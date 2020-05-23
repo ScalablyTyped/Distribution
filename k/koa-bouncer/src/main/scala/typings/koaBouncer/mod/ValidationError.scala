@@ -1,6 +1,6 @@
 package typings.koaBouncer.mod
 
-import typings.koaBouncer.AnonKey
+import typings.koaBouncer.anon.Key
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ValidationError protected () extends Error {
   def this(key: String, message: String) = this()
-  var bouncer: AnonKey = js.native
+  var bouncer: Key = js.native
   /* CompleteClass */
   override var message: String = js.native
   /* CompleteClass */

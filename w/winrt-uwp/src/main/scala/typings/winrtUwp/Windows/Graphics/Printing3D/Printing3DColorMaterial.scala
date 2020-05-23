@@ -6,13 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a color material used in the 3D model. */
-@JSGlobal("Windows.Graphics.Printing3D.Printing3DColorMaterial")
-@js.native
-/** Creates an instance of the Printing3DColorMaterial class. */
-class Printing3DColorMaterial () extends js.Object {
+trait Printing3DColorMaterial extends js.Object {
   /** Gets or sets the color of the material. */
-  var color: Color = js.native
+  var color: Color
   /** Gets or sets the color value of the material. */
-  var value: Double = js.native
+  var value: Double
+}
+
+object Printing3DColorMaterial {
+  @scala.inline
+  def apply(color: Color, value: Double): Printing3DColorMaterial = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Printing3DColorMaterial]
+  }
 }
 

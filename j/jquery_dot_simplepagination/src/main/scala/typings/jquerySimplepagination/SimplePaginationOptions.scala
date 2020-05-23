@@ -103,7 +103,7 @@ trait SimplePaginationOptions extends js.Object {
     */
   var onPageClick: js.UndefOr[js.Function2[/* page */ Double, /* event */ js.Any, Unit]] = js.undefined
   /**
-    * 	If specified, items and itemsOnPage will not be used to calculate the number of pages.
+    *     If specified, items and itemsOnPage will not be used to calculate the number of pages.
     * 
     * @type {number}
     * @memberof SimplePaginationOptions
@@ -132,23 +132,23 @@ object SimplePaginationOptions {
   @scala.inline
   def apply(
     cssStyle: String = null,
-    currentPage: Int | Double = null,
-    displayedPages: Int | Double = null,
-    edges: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
+    displayedPages: js.UndefOr[Double] = js.undefined,
+    edges: js.UndefOr[Double] = js.undefined,
     ellipsePageSet: js.UndefOr[Boolean] = js.undefined,
     ellipseText: String = null,
     hrefTextPrefix: String = null,
     hrefTextSuffix: String = null,
     invertPageOrder: js.UndefOr[Boolean] = js.undefined,
-    items: Int | Double = null,
-    itemsOnPage: Int | Double = null,
+    items: js.UndefOr[Double] = js.undefined,
+    itemsOnPage: js.UndefOr[Double] = js.undefined,
     labelMap: js.Array[_] = null,
     listStyle: js.UndefOr[Boolean] = js.undefined,
     nextAtFront: js.UndefOr[Boolean] = js.undefined,
     nextText: String = null,
     onInit: () => Unit = null,
     onPageClick: (/* page */ Double, /* event */ js.Any) => Unit = null,
-    pages: Int | Double = null,
+    pages: js.UndefOr[Double] = js.undefined,
     prevText: String = null,
     selectOnClick: js.UndefOr[Boolean] = js.undefined,
     useAnchors: js.UndefOr[Boolean] = js.undefined,
@@ -157,28 +157,28 @@ object SimplePaginationOptions {
   ): SimplePaginationOptions = {
     val __obj = js.Dynamic.literal()
     if (cssStyle != null) __obj.updateDynamic("cssStyle")(cssStyle.asInstanceOf[js.Any])
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (displayedPages != null) __obj.updateDynamic("displayedPages")(displayedPages.asInstanceOf[js.Any])
-    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsePageSet)) __obj.updateDynamic("ellipsePageSet")(ellipsePageSet.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayedPages)) __obj.updateDynamic("displayedPages")(displayedPages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edges)) __obj.updateDynamic("edges")(edges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ellipsePageSet)) __obj.updateDynamic("ellipsePageSet")(ellipsePageSet.get.asInstanceOf[js.Any])
     if (ellipseText != null) __obj.updateDynamic("ellipseText")(ellipseText.asInstanceOf[js.Any])
     if (hrefTextPrefix != null) __obj.updateDynamic("hrefTextPrefix")(hrefTextPrefix.asInstanceOf[js.Any])
     if (hrefTextSuffix != null) __obj.updateDynamic("hrefTextSuffix")(hrefTextSuffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertPageOrder)) __obj.updateDynamic("invertPageOrder")(invertPageOrder.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (itemsOnPage != null) __obj.updateDynamic("itemsOnPage")(itemsOnPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(invertPageOrder)) __obj.updateDynamic("invertPageOrder")(invertPageOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemsOnPage)) __obj.updateDynamic("itemsOnPage")(itemsOnPage.get.asInstanceOf[js.Any])
     if (labelMap != null) __obj.updateDynamic("labelMap")(labelMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(listStyle)) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(nextAtFront)) __obj.updateDynamic("nextAtFront")(nextAtFront.asInstanceOf[js.Any])
+    if (!js.isUndefined(listStyle)) __obj.updateDynamic("listStyle")(listStyle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextAtFront)) __obj.updateDynamic("nextAtFront")(nextAtFront.get.asInstanceOf[js.Any])
     if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
     if (onPageClick != null) __obj.updateDynamic("onPageClick")(js.Any.fromFunction2(onPageClick))
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (!js.isUndefined(pages)) __obj.updateDynamic("pages")(pages.get.asInstanceOf[js.Any])
     if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAnchors)) __obj.updateDynamic("useAnchors")(useAnchors.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEndEdge)) __obj.updateDynamic("useEndEdge")(useEndEdge.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStartEdge)) __obj.updateDynamic("useStartEdge")(useStartEdge.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAnchors)) __obj.updateDynamic("useAnchors")(useAnchors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEndEdge)) __obj.updateDynamic("useEndEdge")(useEndEdge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStartEdge)) __obj.updateDynamic("useStartEdge")(useStartEdge.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimplePaginationOptions]
   }
 }

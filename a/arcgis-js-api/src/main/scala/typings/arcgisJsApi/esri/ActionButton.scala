@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,21 @@ trait ActionButton extends ActionBase {
   var image: String
 }
 
-@JSGlobal("__esri.ActionButton")
-@js.native
-object ActionButton extends TopLevel[ActionButtonConstructor]
+object ActionButton {
+  @scala.inline
+  def apply(
+    active: Boolean,
+    className: String,
+    disabled: Boolean,
+    id: String,
+    image: String,
+    title: String,
+    `type`: String,
+    visible: Boolean
+  ): ActionButton = {
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActionButton]
+  }
+}
 

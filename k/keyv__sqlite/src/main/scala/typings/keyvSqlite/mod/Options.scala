@@ -14,14 +14,14 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    busyTimeout: Int | Double = null,
-    keySize: Int | Double = null,
+    busyTimeout: js.UndefOr[Double] = js.undefined,
+    keySize: js.UndefOr[Double] = js.undefined,
     table: String = null,
     uri: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (busyTimeout != null) __obj.updateDynamic("busyTimeout")(busyTimeout.asInstanceOf[js.Any])
-    if (keySize != null) __obj.updateDynamic("keySize")(keySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(busyTimeout)) __obj.updateDynamic("busyTimeout")(busyTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keySize)) __obj.updateDynamic("keySize")(keySize.get.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

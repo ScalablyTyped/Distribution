@@ -1,6 +1,6 @@
 package typings.docxTemplates.typesMod
 
-import typings.docxTemplates.AnonDictkey
+import typings.docxTemplates.anon.Dictkey
 import typings.docxTemplates.docxTemplatesBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined docx-templates.docx-templates/lib/types.BaseNode & {  _fTextNode  :false,   _tag  :string,   _attrs  :{[key: string] : sax.sax.QualifiedAttribute | string,   Extension ? :string}} */
 trait NonTextNode extends Node {
-  var _attrs: AnonDictkey
+  var _attrs: Dictkey
   var _children: js.Array[Node]
   var _fTextNode: `false`
   var _ifName: js.UndefOr[String] = js.undefined
@@ -19,7 +19,7 @@ trait NonTextNode extends Node {
 object NonTextNode {
   @scala.inline
   def apply(
-    _attrs: AnonDictkey,
+    _attrs: Dictkey,
     _children: js.Array[Node],
     _fTextNode: `false`,
     _tag: String,

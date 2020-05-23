@@ -7,7 +7,6 @@ import typings.firebaseStorage.locationMod.Location
 import typings.firebaseStorage.referenceMod.Reference
 import typings.firebaseStorage.requestMod.Request
 import typings.firebaseStorage.requestinfoMod.RequestInfo
-import typings.firebaseStorage.requestmakerMod.requestMaker
 import typings.firebaseStorage.serviceMod.Service
 import typings.firebaseStorage.xhriopoolMod.XhrIoPool
 import scala.scalajs.js
@@ -23,7 +22,7 @@ object authwrapperMod extends js.Object {
       app: Null,
       authProvider: Provider[FirebaseAuthInternalName],
       maker: js.Function2[/* p1 */ AuthWrapper, /* p2 */ Location, Reference],
-      requestMaker: requestMaker,
+      requestMaker: typings.firebaseStorage.requestmakerMod.requestMaker,
       service: Service,
       pool: XhrIoPool
     ) = this()
@@ -31,7 +30,7 @@ object authwrapperMod extends js.Object {
       app: FirebaseApp,
       authProvider: Provider[FirebaseAuthInternalName],
       maker: js.Function2[/* p1 */ AuthWrapper, /* p2 */ Location, Reference],
-      requestMaker: requestMaker,
+      requestMaker: typings.firebaseStorage.requestmakerMod.requestMaker,
       service: Service,
       pool: XhrIoPool
     ) = this()

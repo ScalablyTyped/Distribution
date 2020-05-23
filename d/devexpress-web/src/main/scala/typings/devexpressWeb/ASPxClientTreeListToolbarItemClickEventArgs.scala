@@ -7,30 +7,36 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxTreeList.ToolbarItemClick event.
   */
-@JSGlobal("ASPxClientTreeListToolbarItemClickEventArgs")
-@js.native
-class ASPxClientTreeListToolbarItemClickEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientTreeListToolbarItemClickEventArgs class.
-    * @param item An ASPxClientMenu object that should be clicked to fire the event.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    */
-  def this(item: ASPxClientMenuItem, processOnServer: Boolean) = this()
+trait ASPxClientTreeListToolbarItemClickEventArgs extends ASPxClientProcessingModeEventArgs {
   /**
     * Gets the clicked menu item
     */
-  var item: ASPxClientMenuItem = js.native
+  var item: ASPxClientMenuItem
   /**
     * Gets the toolbar index related to the event.
     */
-  var toolbarIndex: Double = js.native
+  var toolbarIndex: Double
   /**
     * Gets the toolbar name.
     */
-  var toolbarName: String = js.native
+  var toolbarName: String
   /**
     * Specifies whether a postback or a callback is used to finally process the event on the server side.
     */
-  var usePostBack: Boolean = js.native
+  var usePostBack: Boolean
+}
+
+object ASPxClientTreeListToolbarItemClickEventArgs {
+  @scala.inline
+  def apply(
+    item: ASPxClientMenuItem,
+    processOnServer: Boolean,
+    toolbarIndex: Double,
+    toolbarName: String,
+    usePostBack: Boolean
+  ): ASPxClientTreeListToolbarItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], toolbarIndex = toolbarIndex.asInstanceOf[js.Any], toolbarName = toolbarName.asInstanceOf[js.Any], usePostBack = usePostBack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientTreeListToolbarItemClickEventArgs]
+  }
 }
 

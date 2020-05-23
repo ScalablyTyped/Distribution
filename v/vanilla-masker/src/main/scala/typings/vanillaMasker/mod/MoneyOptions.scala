@@ -25,7 +25,7 @@ object MoneyOptions {
   @scala.inline
   def apply(
     delimiter: String = null,
-    precision: Int | Double = null,
+    precision: js.UndefOr[Double] = js.undefined,
     separator: String = null,
     suffixUnit: String = null,
     unit: String = null,
@@ -33,11 +33,11 @@ object MoneyOptions {
   ): MoneyOptions = {
     val __obj = js.Dynamic.literal()
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (suffixUnit != null) __obj.updateDynamic("suffixUnit")(suffixUnit.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(zeroCents)) __obj.updateDynamic("zeroCents")(zeroCents.asInstanceOf[js.Any])
+    if (!js.isUndefined(zeroCents)) __obj.updateDynamic("zeroCents")(zeroCents.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoneyOptions]
   }
 }

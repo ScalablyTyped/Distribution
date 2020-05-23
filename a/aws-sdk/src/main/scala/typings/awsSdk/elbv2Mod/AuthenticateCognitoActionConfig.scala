@@ -50,14 +50,14 @@ object AuthenticateCognitoActionConfig {
     OnUnauthenticatedRequest: AuthenticateCognitoActionConditionalBehaviorEnum = null,
     Scope: AuthenticateCognitoActionScope = null,
     SessionCookieName: AuthenticateCognitoActionSessionCookieName = null,
-    SessionTimeout: Int | Double = null
+    SessionTimeout: js.UndefOr[AuthenticateCognitoActionSessionTimeout] = js.undefined
   ): AuthenticateCognitoActionConfig = {
     val __obj = js.Dynamic.literal(UserPoolArn = UserPoolArn.asInstanceOf[js.Any], UserPoolClientId = UserPoolClientId.asInstanceOf[js.Any], UserPoolDomain = UserPoolDomain.asInstanceOf[js.Any])
     if (AuthenticationRequestExtraParams != null) __obj.updateDynamic("AuthenticationRequestExtraParams")(AuthenticationRequestExtraParams.asInstanceOf[js.Any])
     if (OnUnauthenticatedRequest != null) __obj.updateDynamic("OnUnauthenticatedRequest")(OnUnauthenticatedRequest.asInstanceOf[js.Any])
     if (Scope != null) __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])
     if (SessionCookieName != null) __obj.updateDynamic("SessionCookieName")(SessionCookieName.asInstanceOf[js.Any])
-    if (SessionTimeout != null) __obj.updateDynamic("SessionTimeout")(SessionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(SessionTimeout)) __obj.updateDynamic("SessionTimeout")(SessionTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateCognitoActionConfig]
   }
 }

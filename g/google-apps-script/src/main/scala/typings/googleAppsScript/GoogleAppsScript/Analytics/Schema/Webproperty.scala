@@ -43,7 +43,7 @@ object Webproperty {
     name: String = null,
     parentLink: WebpropertyParentLink = null,
     permissions: WebpropertyPermissions = null,
-    profileCount: Int | Double = null,
+    profileCount: js.UndefOr[Double] = js.undefined,
     selfLink: String = null,
     starred: js.UndefOr[Boolean] = js.undefined,
     updated: String = null,
@@ -53,7 +53,7 @@ object Webproperty {
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (childLink != null) __obj.updateDynamic("childLink")(childLink.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataRetentionResetOnNewActivity)) __obj.updateDynamic("dataRetentionResetOnNewActivity")(dataRetentionResetOnNewActivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataRetentionResetOnNewActivity)) __obj.updateDynamic("dataRetentionResetOnNewActivity")(dataRetentionResetOnNewActivity.get.asInstanceOf[js.Any])
     if (dataRetentionTtl != null) __obj.updateDynamic("dataRetentionTtl")(dataRetentionTtl.asInstanceOf[js.Any])
     if (defaultProfileId != null) __obj.updateDynamic("defaultProfileId")(defaultProfileId.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -64,9 +64,9 @@ object Webproperty {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parentLink != null) __obj.updateDynamic("parentLink")(parentLink.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (profileCount != null) __obj.updateDynamic("profileCount")(profileCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(profileCount)) __obj.updateDynamic("profileCount")(profileCount.get.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webproperty]

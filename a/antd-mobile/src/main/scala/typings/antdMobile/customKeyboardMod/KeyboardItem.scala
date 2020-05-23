@@ -1,6 +1,6 @@
 package typings.antdMobile.customKeyboardMod
 
-import typings.antdMobile.AnonOnClick
+import typings.antdMobile.anon.OnClick
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ class KeyboardItem ()
 @JSImport("antd-mobile/lib/input-item/CustomKeyboard", "KeyboardItem")
 @js.native
 object KeyboardItem extends js.Object {
-  var defaultProps: AnonOnClick = js.native
+  var defaultProps: OnClick = js.native
 }
 

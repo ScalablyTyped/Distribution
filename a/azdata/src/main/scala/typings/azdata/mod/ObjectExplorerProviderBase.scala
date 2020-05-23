@@ -20,10 +20,10 @@ object ObjectExplorerProviderBase {
     providerId: String,
     refreshNode: ExpandNodeInfo => Thenable[Boolean],
     registerOnExpandCompleted: js.Function1[/* response */ ObjectExplorerExpandInfo, _] => Unit,
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): ObjectExplorerProviderBase = {
     val __obj = js.Dynamic.literal(expandNode = js.Any.fromFunction1(expandNode), findNodes = js.Any.fromFunction1(findNodes), providerId = providerId.asInstanceOf[js.Any], refreshNode = js.Any.fromFunction1(refreshNode), registerOnExpandCompleted = js.Any.fromFunction1(registerOnExpandCompleted))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectExplorerProviderBase]
   }
 }

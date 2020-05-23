@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.RowColumnPivotHierarchyData
 import typings.officeJs.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
 import typings.officeJs.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.RowColumnPivotHierarchy")
 @js.native
-class RowColumnPivotHierarchy () extends ClientObject {
+trait RowColumnPivotHierarchy extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_RowColumnPivotHierarchy: RequestContext = js.native
@@ -57,7 +56,7 @@ class RowColumnPivotHierarchy () extends ClientObject {
     */
   def load(): RowColumnPivotHierarchy = js.native
   def load(options: RowColumnPivotHierarchyLoadOptions): RowColumnPivotHierarchy = js.native
-  def load(propertyNamesAndPaths: AnonExpand): RowColumnPivotHierarchy = js.native
+  def load(propertyNamesAndPaths: Expand): RowColumnPivotHierarchy = js.native
   def load(propertyNames: String): RowColumnPivotHierarchy = js.native
   def load(propertyNames: js.Array[String]): RowColumnPivotHierarchy = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

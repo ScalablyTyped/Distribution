@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,16 +27,5 @@ trait KeyboardEvent extends UIEvent {
   val repeat: scala.Boolean = js.native
   val shiftKey: scala.Boolean = js.native
   def getModifierState(keyArg: java.lang.String): scala.Boolean = js.native
-}
-
-@JSGlobal("KeyboardEvent")
-@js.native
-object KeyboardEvent
-  extends Instantiable1[/* type */ java.lang.String, KeyboardEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ KeyboardEventInit, KeyboardEvent] {
-  val DOM_KEY_LOCATION_LEFT: Double = js.native
-  val DOM_KEY_LOCATION_NUMPAD: Double = js.native
-  val DOM_KEY_LOCATION_RIGHT: Double = js.native
-  val DOM_KEY_LOCATION_STANDARD: Double = js.native
 }
 

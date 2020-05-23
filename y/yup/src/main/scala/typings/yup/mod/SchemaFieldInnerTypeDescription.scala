@@ -1,6 +1,6 @@
 package typings.yup.mod
 
-import typings.yup.AnonName
+import typings.yup.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait SchemaFieldInnerTypeDescription extends SchemaFieldDescription {
   var innerType: js.UndefOr[SchemaFieldDescription] = js.undefined
   var label: String
   var meta: js.Object
-  var tests: js.Array[AnonName]
+  var tests: js.Array[Name]
   var `type`: String
 }
 
@@ -19,7 +19,7 @@ object SchemaFieldInnerTypeDescription {
   def apply(
     label: String,
     meta: js.Object,
-    tests: js.Array[AnonName],
+    tests: js.Array[Name],
     `type`: String,
     innerType: SchemaFieldDescription = null
   ): SchemaFieldInnerTypeDescription = {

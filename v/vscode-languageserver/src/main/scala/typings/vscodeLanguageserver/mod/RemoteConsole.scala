@@ -1,12 +1,14 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.ClientCapabilities
-import typings.vscodeLanguageserverProtocol.protocolMod.ServerCapabilities
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RemoteConsole extends Remote {
+trait RemoteConsole extends js.Object {
+  /**
+    * The connection this remote is attached to.
+    */
+  var connection: IConnection
   /**
     * Show an error message.
     *
@@ -36,17 +38,13 @@ trait RemoteConsole extends Remote {
 object RemoteConsole {
   @scala.inline
   def apply(
-    attach: IConnection => Unit,
     connection: IConnection,
     error: String => Unit,
-    fillServerCapabilities: ServerCapabilities => Unit,
     info: String => Unit,
-    initialize: ClientCapabilities => Unit,
     log: String => Unit,
     warn: String => Unit
   ): RemoteConsole = {
-    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), connection = connection.asInstanceOf[js.Any], error = js.Any.fromFunction1(error), fillServerCapabilities = js.Any.fromFunction1(fillServerCapabilities), info = js.Any.fromFunction1(info), initialize = js.Any.fromFunction1(initialize), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
-  
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
     __obj.asInstanceOf[RemoteConsole]
   }
 }

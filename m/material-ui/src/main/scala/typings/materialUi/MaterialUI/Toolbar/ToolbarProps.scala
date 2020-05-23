@@ -20,7 +20,7 @@ object ToolbarProps {
   ): ToolbarProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(noGutter)) __obj.updateDynamic("noGutter")(noGutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(noGutter)) __obj.updateDynamic("noGutter")(noGutter.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarProps]
   }

@@ -1,6 +1,8 @@
 package typings.sipJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sipJs.anon.Host
+import typings.sipJs.anon.Parsed
 import typings.sipJs.nameAddrHeaderMod.NameAddrHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,12 +19,12 @@ object incomingMessageMod extends js.Object {
     var data: String = js.native
     var from: NameAddrHeader = js.native
     var fromTag: String = js.native
-    var headers: StringDictionary[js.Array[AnonParsed]] = js.native
+    var headers: StringDictionary[js.Array[Parsed]] = js.native
     var method: String = js.native
     var referTo: js.UndefOr[String] = js.native
     var to: NameAddrHeader = js.native
     var toTag: String = js.native
-    var via: AnonHost = js.native
+    var via: Host = js.native
     var viaBranch: String = js.native
     /**
       * Insert a header of the given name and value into the last position of the

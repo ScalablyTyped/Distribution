@@ -11,9 +11,9 @@ trait ISlider extends js.Object {
 
 object ISlider {
   @scala.inline
-  def apply(focus: () => Unit, value: Int | Double = null): ISlider = {
+  def apply(focus: () => Unit, value: js.UndefOr[Double] = js.undefined): ISlider = {
     val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISlider]
   }
 }

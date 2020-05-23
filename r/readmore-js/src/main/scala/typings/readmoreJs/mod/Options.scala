@@ -42,13 +42,13 @@ object Options {
     beforeToggle: (/* trigger */ Element, /* element */ Element, /* expanded */ Boolean) => Unit = null,
     blockCSS: String = null,
     blockProcessed: (/* element */ Element, /* collapsable */ Boolean) => Unit = null,
-    collapsedHeight: Int | Double = null,
+    collapsedHeight: js.UndefOr[Double] = js.undefined,
     embedCSS: js.UndefOr[Boolean] = js.undefined,
-    heightMargin: Int | Double = null,
+    heightMargin: js.UndefOr[Double] = js.undefined,
     lessLink: (js.Function1[/* element */ Element, String]) | String = null,
     moreLink: (js.Function1[/* element */ Element, String]) | String = null,
     sourceOrder: after | before = null,
-    speed: Int | Double = null,
+    speed: js.UndefOr[Double] = js.undefined,
     startOpen: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -56,14 +56,14 @@ object Options {
     if (beforeToggle != null) __obj.updateDynamic("beforeToggle")(js.Any.fromFunction3(beforeToggle))
     if (blockCSS != null) __obj.updateDynamic("blockCSS")(blockCSS.asInstanceOf[js.Any])
     if (blockProcessed != null) __obj.updateDynamic("blockProcessed")(js.Any.fromFunction2(blockProcessed))
-    if (collapsedHeight != null) __obj.updateDynamic("collapsedHeight")(collapsedHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(embedCSS)) __obj.updateDynamic("embedCSS")(embedCSS.asInstanceOf[js.Any])
-    if (heightMargin != null) __obj.updateDynamic("heightMargin")(heightMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsedHeight)) __obj.updateDynamic("collapsedHeight")(collapsedHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(embedCSS)) __obj.updateDynamic("embedCSS")(embedCSS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightMargin)) __obj.updateDynamic("heightMargin")(heightMargin.get.asInstanceOf[js.Any])
     if (lessLink != null) __obj.updateDynamic("lessLink")(lessLink.asInstanceOf[js.Any])
     if (moreLink != null) __obj.updateDynamic("moreLink")(moreLink.asInstanceOf[js.Any])
     if (sourceOrder != null) __obj.updateDynamic("sourceOrder")(sourceOrder.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOpen)) __obj.updateDynamic("startOpen")(startOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOpen)) __obj.updateDynamic("startOpen")(startOpen.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

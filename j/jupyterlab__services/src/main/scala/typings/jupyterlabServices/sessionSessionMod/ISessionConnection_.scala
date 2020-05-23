@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.sessionSessionMod
 
 import typings.jupyterlabCoreutils.interfacesMod.IChangedArgs
-import typings.jupyterlabServices.PartialIModelId
+import typings.jupyterlabServices.anon.PartialIModelId
 import typings.jupyterlabServices.jupyterlabServicesStrings.`type`
 import typings.jupyterlabServices.jupyterlabServicesStrings.kernel
 import typings.jupyterlabServices.jupyterlabServicesStrings.name
@@ -183,9 +183,8 @@ object ISessionConnection_ {
     unhandledMessage: ISignal[ISessionConnection_, IMessage[MessageType]],
     kernel: IKernelConnection = null
   ): ISessionConnection_ = {
-    val __obj = js.Dynamic.literal(anyMessage = anyMessage.asInstanceOf[js.Any], changeKernel = js.Any.fromFunction1(changeKernel), connectionStatusChanged = connectionStatusChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), disposed = disposed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], iopubMessage = iopubMessage.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], kernelChanged = kernelChanged.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], propertyChanged = propertyChanged.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], setName = js.Any.fromFunction1(setName), setPath = js.Any.fromFunction1(setPath), setType = js.Any.fromFunction1(setType), shutdown = js.Any.fromFunction0(shutdown), statusChanged = statusChanged.asInstanceOf[js.Any], unhandledMessage = unhandledMessage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(anyMessage = anyMessage.asInstanceOf[js.Any], changeKernel = js.Any.fromFunction1(changeKernel), connectionStatusChanged = connectionStatusChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), disposed = disposed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], iopubMessage = iopubMessage.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], kernelChanged = kernelChanged.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], propertyChanged = propertyChanged.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], setName = js.Any.fromFunction1(setName), setPath = js.Any.fromFunction1(setPath), setType = js.Any.fromFunction1(setType), shutdown = js.Any.fromFunction0(shutdown), statusChanged = statusChanged.asInstanceOf[js.Any], unhandledMessage = unhandledMessage.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (kernel != null) __obj.updateDynamic("kernel")(kernel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISessionConnection_]
   }
 }

@@ -18,9 +18,9 @@ trait PortRange extends js.Object {
 
 object PortRange {
   @scala.inline
-  def apply(MinRange: Port, MaxRange: Int | Double = null): PortRange = {
+  def apply(MinRange: Port, MaxRange: js.UndefOr[Port] = js.undefined): PortRange = {
     val __obj = js.Dynamic.literal(MinRange = MinRange.asInstanceOf[js.Any])
-    if (MaxRange != null) __obj.updateDynamic("MaxRange")(MaxRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRange)) __obj.updateDynamic("MaxRange")(MaxRange.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortRange]
   }
 }

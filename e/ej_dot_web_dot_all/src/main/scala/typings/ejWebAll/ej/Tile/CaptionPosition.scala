@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Tile
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object CaptionPosition extends js.Object {
   ///To set the outer position of the tile text
   @js.native
   sealed trait Outer extends CaptionPosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CaptionPosition with Double] = js.native
-  /* 1 */ @js.native
-  object Innerbottom extends TopLevel[Innerbottom with Double]
-  
-  /* 0 */ @js.native
-  object Innertop extends TopLevel[Innertop with Double]
-  
-  /* 2 */ @js.native
-  object Outer extends TopLevel[Outer with Double]
   
 }
 

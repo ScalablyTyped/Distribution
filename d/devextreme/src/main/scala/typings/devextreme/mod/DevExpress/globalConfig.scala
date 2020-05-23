@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.AnonCloseIcon
+import typings.devextreme.anon.CloseIcon
 import typings.devextreme.devextremeStrings.filled
 import typings.devextreme.devextremeStrings.outlined
 import typings.devextreme.devextremeStrings.underlined
@@ -17,7 +17,7 @@ trait globalConfig extends js.Object {
   /** @name globalConfig.editorStylingMode */
   var editorStylingMode: js.UndefOr[outlined | underlined | filled] = js.undefined
   /** @name globalConfig.floatingActionButtonConfig */
-  var floatingActionButtonConfig: js.UndefOr[AnonCloseIcon] = js.undefined
+  var floatingActionButtonConfig: js.UndefOr[CloseIcon] = js.undefined
   /** @name globalConfig.forceIsoDateParsing */
   var forceIsoDateParsing: js.UndefOr[Boolean] = js.undefined
   /** @name globalConfig.oDataFilterToLower */
@@ -41,7 +41,7 @@ object globalConfig {
     decimalSeparator: String = null,
     defaultCurrency: String = null,
     editorStylingMode: outlined | underlined | filled = null,
-    floatingActionButtonConfig: AnonCloseIcon = null,
+    floatingActionButtonConfig: CloseIcon = null,
     forceIsoDateParsing: js.UndefOr[Boolean] = js.undefined,
     oDataFilterToLower: js.UndefOr[Boolean] = js.undefined,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -55,13 +55,13 @@ object globalConfig {
     if (defaultCurrency != null) __obj.updateDynamic("defaultCurrency")(defaultCurrency.asInstanceOf[js.Any])
     if (editorStylingMode != null) __obj.updateDynamic("editorStylingMode")(editorStylingMode.asInstanceOf[js.Any])
     if (floatingActionButtonConfig != null) __obj.updateDynamic("floatingActionButtonConfig")(floatingActionButtonConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIsoDateParsing)) __obj.updateDynamic("forceIsoDateParsing")(forceIsoDateParsing.asInstanceOf[js.Any])
-    if (!js.isUndefined(oDataFilterToLower)) __obj.updateDynamic("oDataFilterToLower")(oDataFilterToLower.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceIsoDateParsing)) __obj.updateDynamic("forceIsoDateParsing")(forceIsoDateParsing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oDataFilterToLower)) __obj.updateDynamic("oDataFilterToLower")(oDataFilterToLower.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (serverDecimalSeparator != null) __obj.updateDynamic("serverDecimalSeparator")(serverDecimalSeparator.asInstanceOf[js.Any])
     if (thousandsSeparator != null) __obj.updateDynamic("thousandsSeparator")(thousandsSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLegacyStoreResult)) __obj.updateDynamic("useLegacyStoreResult")(useLegacyStoreResult.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLegacyVisibleIndex)) __obj.updateDynamic("useLegacyVisibleIndex")(useLegacyVisibleIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLegacyStoreResult)) __obj.updateDynamic("useLegacyStoreResult")(useLegacyStoreResult.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLegacyVisibleIndex)) __obj.updateDynamic("useLegacyVisibleIndex")(useLegacyVisibleIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[globalConfig]
   }
 }

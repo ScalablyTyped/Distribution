@@ -1,6 +1,6 @@
 package typings.stripeV3.stripe.paymentIntents
 
-import typings.stripeV3.AnonDestination
+import typings.stripeV3.anon.Destination
 import typings.stripeV3.stripe.Error
 import typings.stripeV3.stripe.List
 import typings.stripeV3.stripe.Metadata
@@ -140,7 +140,7 @@ trait PaymentIntent extends js.Object {
   /**
     * The data with which to automatically create a Transfer when the payment is finalized.
     */
-  var transfer_data: AnonDestination | Null
+  var transfer_data: Destination | Null
   /**
     * A string that identifies the resulting payment as part of a group.
     */
@@ -167,9 +167,9 @@ object PaymentIntent {
     payment_method_types: js.Array[String],
     status: PaymentIntentStatus,
     application: String = null,
-    application_fee_amount: Int | Double = null,
+    application_fee_amount: Double = null.asInstanceOf[Double],
     cancelation_reason: PaymentIntentCancelationReason = null,
-    canceled_at: Int | Double = null,
+    canceled_at: Double = null.asInstanceOf[Double],
     customer: String = null,
     description: String = null,
     last_payment_error: Error = null,
@@ -180,27 +180,12 @@ object PaymentIntent {
     shipping: ShippingDetails = null,
     source: String = null,
     statement_descriptor: String = null,
-    transfer_data: AnonDestination = null,
+    transfer_data: Destination = null,
     transfer_group: String = null
   ): PaymentIntent = {
-    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_capturable = amount_capturable.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], capture_method = capture_method.asInstanceOf[js.Any], charges = charges.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], confirmation_method = confirmation_method.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_capturable = amount_capturable.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], capture_method = capture_method.asInstanceOf[js.Any], charges = charges.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], confirmation_method = confirmation_method.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], application = application.asInstanceOf[js.Any], application_fee_amount = application_fee_amount.asInstanceOf[js.Any], cancelation_reason = cancelation_reason.asInstanceOf[js.Any], canceled_at = canceled_at.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], last_payment_error = last_payment_error.asInstanceOf[js.Any], on_behalf_of = on_behalf_of.asInstanceOf[js.Any], payment_method = payment_method.asInstanceOf[js.Any], receipt_email = receipt_email.asInstanceOf[js.Any], review = review.asInstanceOf[js.Any], shipping = shipping.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], transfer_data = transfer_data.asInstanceOf[js.Any], transfer_group = transfer_group.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
-    if (cancelation_reason != null) __obj.updateDynamic("cancelation_reason")(cancelation_reason.asInstanceOf[js.Any])
-    if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (last_payment_error != null) __obj.updateDynamic("last_payment_error")(last_payment_error.asInstanceOf[js.Any])
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
-    if (review != null) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
-    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
-    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentIntent]
   }
 }

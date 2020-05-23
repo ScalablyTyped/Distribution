@@ -4,7 +4,7 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IClass
 import typings.senchaTouch.Ext.chart.IAbstractChart
 import typings.senchaTouch.Ext.mixin.IObservable
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,25 +13,25 @@ trait ICrossZoom extends IAbstract {
   /** [Config Option] (Object/Array) */
   var axes: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of axes
-  		* @returns Object/Array
-  		*/
+    * @returns Object/Array
+    */
   var getAxes: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of undoButton
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getUndoButton: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Placeholder method
-  		* @param e Object
-  		*/
+    * @param e Object
+    */
   @JSName("onGesture")
   var onGesture_ICrossZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of axes
-  		* @param axes Object/Array The new value.
-  		*/
+    * @param axes Object/Array The new value.
+    */
   var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of undoButton
-  		* @param undoButton Object The new value.
-  		*/
+    * @param undoButton Object The new value.
+    */
   var setUndoButton: js.UndefOr[js.Function1[/* undoButton */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -67,8 +67,8 @@ object ICrossZoom {
     getGesture: () => String = null,
     getId: () => _ = null,
     getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getItemForEvent: /* e */ js.UndefOr[Event_] => _ = null,
-    getItemsForEvent: /* e */ js.UndefOr[Event_] => Array = null,
+    getItemForEvent: /* e */ js.UndefOr[Event] => _ = null,
+    getItemsForEvent: /* e */ js.UndefOr[Event] => Array = null,
     getListeners: () => _ = null,
     getUndoButton: () => _ = null,
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
@@ -101,7 +101,7 @@ object ICrossZoom {
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    throttleGap: Int | Double = null,
+    throttleGap: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -125,7 +125,7 @@ object ICrossZoom {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
@@ -168,10 +168,10 @@ object ICrossZoom {
     if (setGesture != null) __obj.updateDynamic("setGesture")(js.Any.fromFunction1(setGesture))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setUndoButton != null) __obj.updateDynamic("setUndoButton")(js.Any.fromFunction1(setUndoButton))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (throttleGap != null) __obj.updateDynamic("throttleGap")(throttleGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttleGap)) __obj.updateDynamic("throttleGap")(throttleGap.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

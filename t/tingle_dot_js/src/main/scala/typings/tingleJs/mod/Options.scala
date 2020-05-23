@@ -35,10 +35,10 @@ object Options {
     if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel.asInstanceOf[js.Any])
     if (closeMethods != null) __obj.updateDynamic("closeMethods")(closeMethods.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
     if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyFooter)) __obj.updateDynamic("stickyFooter")(stickyFooter.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyFooter)) __obj.updateDynamic("stickyFooter")(stickyFooter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

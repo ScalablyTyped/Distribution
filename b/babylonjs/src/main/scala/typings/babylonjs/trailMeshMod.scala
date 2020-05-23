@@ -42,14 +42,13 @@ object trailMeshMod extends js.Object {
     var _sectionNormalVectors: js.Any = js.native
     var _sectionPolygonPointsCount: js.Any = js.native
     var _sectionVectors: js.Any = js.native
-    def clone(name: js.UndefOr[scala.Nothing], newGenerator: TransformNode): TrailMesh = js.native
     /**
       * Returns a new TrailMesh object.
       * @param name is a string, the name given to the new mesh
       * @param newGenerator use new generator object for cloned trail mesh
       * @returns a new mesh
       */
-    def clone(name: String, newGenerator: TransformNode): TrailMesh = js.native
+    def clone(name: js.UndefOr[String], newGenerator: TransformNode): TrailMesh = js.native
     /**
       * Start trailing mesh.
       */

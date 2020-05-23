@@ -13,12 +13,10 @@ trait ProjectsDatabasesIndexesApiClientAlt extends js.Object
 
 object ProjectsDatabasesIndexesApiClientAlt {
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def json: typings.firebaseFirestore.firebaseFirestoreStrings.json = "json".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.json]
   @scala.inline
-  def json: typings.firebaseFirestore.firebaseFirestoreStrings.json = this.cast("json")
+  def media: typings.firebaseFirestore.firebaseFirestoreStrings.media = "media".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.media]
   @scala.inline
-  def media: typings.firebaseFirestore.firebaseFirestoreStrings.media = this.cast("media")
-  @scala.inline
-  def proto: typings.firebaseFirestore.firebaseFirestoreStrings.proto = this.cast("proto")
+  def proto: typings.firebaseFirestore.firebaseFirestoreStrings.proto = "proto".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.proto]
 }
 

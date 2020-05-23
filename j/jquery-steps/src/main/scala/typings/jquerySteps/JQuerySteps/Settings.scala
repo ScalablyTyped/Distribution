@@ -168,27 +168,27 @@ object Settings {
     onStepChanging: (/* event */ String, /* currentIndex */ Double, /* newIndex */ Double) => Boolean = null,
     saveState: js.UndefOr[Boolean] = js.undefined,
     showFinishButtonAlways: js.UndefOr[Boolean] = js.undefined,
-    startIndex: Int | Double = null,
+    startIndex: js.UndefOr[Double] = js.undefined,
     stepsContainerTag: String = null,
     stepsOrientation: String | Double = null,
     suppressPaginationOnFocus: js.UndefOr[Boolean] = js.undefined,
     titleTemplate: String = null,
     transitionEffect: String | Double = null,
-    transitionEffectSpeed: Int | Double = null
+    transitionEffectSpeed: js.UndefOr[Double] = js.undefined
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (actionContainerTag != null) __obj.updateDynamic("actionContainerTag")(actionContainerTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (bodyTag != null) __obj.updateDynamic("bodyTag")(bodyTag.asInstanceOf[js.Any])
     if (contentContainerTag != null) __obj.updateDynamic("contentContainerTag")(contentContainerTag.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAllSteps)) __obj.updateDynamic("enableAllSteps")(enableAllSteps.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCancelButton)) __obj.updateDynamic("enableCancelButton")(enableCancelButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableContentCache)) __obj.updateDynamic("enableContentCache")(enableContentCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFinishButton)) __obj.updateDynamic("enableFinishButton")(enableFinishButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableKeyNavigation)) __obj.updateDynamic("enableKeyNavigation")(enableKeyNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePagination)) __obj.updateDynamic("enablePagination")(enablePagination.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceMoveForward)) __obj.updateDynamic("forceMoveForward")(forceMoveForward.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAllSteps)) __obj.updateDynamic("enableAllSteps")(enableAllSteps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCancelButton)) __obj.updateDynamic("enableCancelButton")(enableCancelButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableContentCache)) __obj.updateDynamic("enableContentCache")(enableContentCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFinishButton)) __obj.updateDynamic("enableFinishButton")(enableFinishButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKeyNavigation)) __obj.updateDynamic("enableKeyNavigation")(enableKeyNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePagination)) __obj.updateDynamic("enablePagination")(enablePagination.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceMoveForward)) __obj.updateDynamic("forceMoveForward")(forceMoveForward.get.asInstanceOf[js.Any])
     if (headerTag != null) __obj.updateDynamic("headerTag")(headerTag.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (loadingTemplate != null) __obj.updateDynamic("loadingTemplate")(loadingTemplate.asInstanceOf[js.Any])
@@ -199,15 +199,15 @@ object Settings {
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction2(onInit))
     if (onStepChanged != null) __obj.updateDynamic("onStepChanged")(js.Any.fromFunction3(onStepChanged))
     if (onStepChanging != null) __obj.updateDynamic("onStepChanging")(js.Any.fromFunction3(onStepChanging))
-    if (!js.isUndefined(saveState)) __obj.updateDynamic("saveState")(saveState.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFinishButtonAlways)) __obj.updateDynamic("showFinishButtonAlways")(showFinishButtonAlways.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveState)) __obj.updateDynamic("saveState")(saveState.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFinishButtonAlways)) __obj.updateDynamic("showFinishButtonAlways")(showFinishButtonAlways.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     if (stepsContainerTag != null) __obj.updateDynamic("stepsContainerTag")(stepsContainerTag.asInstanceOf[js.Any])
     if (stepsOrientation != null) __obj.updateDynamic("stepsOrientation")(stepsOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressPaginationOnFocus)) __obj.updateDynamic("suppressPaginationOnFocus")(suppressPaginationOnFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressPaginationOnFocus)) __obj.updateDynamic("suppressPaginationOnFocus")(suppressPaginationOnFocus.get.asInstanceOf[js.Any])
     if (titleTemplate != null) __obj.updateDynamic("titleTemplate")(titleTemplate.asInstanceOf[js.Any])
     if (transitionEffect != null) __obj.updateDynamic("transitionEffect")(transitionEffect.asInstanceOf[js.Any])
-    if (transitionEffectSpeed != null) __obj.updateDynamic("transitionEffectSpeed")(transitionEffectSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionEffectSpeed)) __obj.updateDynamic("transitionEffectSpeed")(transitionEffectSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

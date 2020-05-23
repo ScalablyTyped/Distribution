@@ -39,7 +39,7 @@ trait CreateAssociationRequest extends js.Object {
     */
   var Name: DocumentARN = js.native
   /**
-    * An Amazon S3 bucket where you want to store the output details of the request.
+    * An S3 bucket where you want to store the output details of the request.
     */
   var OutputLocation: js.UndefOr[InstanceAssociationOutputLocation] = js.native
   /**
@@ -51,7 +51,11 @@ trait CreateAssociationRequest extends js.Object {
     */
   var ScheduleExpression: js.UndefOr[typings.awsSdk.ssmMod.ScheduleExpression] = js.native
   /**
-    * The targets (either instances or tags) for the association. You must specify a value for Targets if you don't specify a value for InstanceId.
+    * The mode for generating association compliance. You can specify AUTO or MANUAL. In AUTO mode, the system uses the status of the association execution to determine the compliance status. If the association execution runs successfully, then the association is COMPLIANT. If the association execution doesn't run successfully, the association is NON-COMPLIANT. In MANUAL mode, you must specify the AssociationId as a parameter for the PutComplianceItems API action. In this case, compliance data is not managed by State Manager. It is managed by your direct call to the PutComplianceItems API action. By default, all associations use AUTO mode.
+    */
+  var SyncCompliance: js.UndefOr[AssociationSyncCompliance] = js.native
+  /**
+    * The targets for the association. You can target instances by using tags, AWS Resource Groups, all instances in an AWS account, or individual instance IDs. For more information about choosing targets for an association, see Using targets and rate controls with State Manager associations in the AWS Systems Manager User Guide.
     */
   var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
 }
@@ -70,6 +74,7 @@ object CreateAssociationRequest {
     OutputLocation: InstanceAssociationOutputLocation = null,
     Parameters: Parameters = null,
     ScheduleExpression: ScheduleExpression = null,
+    SyncCompliance: AssociationSyncCompliance = null,
     Targets: Targets = null
   ): CreateAssociationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
@@ -83,6 +88,7 @@ object CreateAssociationRequest {
     if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression.asInstanceOf[js.Any])
+    if (SyncCompliance != null) __obj.updateDynamic("SyncCompliance")(SyncCompliance.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAssociationRequest]
   }

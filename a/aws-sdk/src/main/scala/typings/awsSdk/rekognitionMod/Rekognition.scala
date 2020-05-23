@@ -1,6 +1,6 @@
 package typings.awsSdk.rekognitionMod
 
-import typings.awsSdk.DescribeProjectVersionsRe
+import typings.awsSdk.anon.DescribeProjectVersionsRe
 import typings.awsSdk.awsSdkStrings.projectVersionRunning
 import typings.awsSdk.awsSdkStrings.projectVersionTrainingCompleted
 import typings.awsSdk.configMod.ConfigBase

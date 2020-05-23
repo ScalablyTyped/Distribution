@@ -1,7 +1,7 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonColorLevel
-import typings.devextreme.AnonDisplayMode
+import typings.devextreme.anon.ColorLevel
+import typings.devextreme.anon.DisplayMode
 import typings.devextreme.devextremeStrings.allArgumentPoints
 import typings.devextreme.devextremeStrings.allSeriesPoints
 import typings.devextreme.devextremeStrings.area
@@ -102,14 +102,14 @@ object dxChartCommonSeriesSettings {
     axis: String = null,
     bar: js.Any = null,
     barOverlapGroup: String = null,
-    barPadding: Int | Double = null,
-    barWidth: Int | Double = null,
+    barPadding: js.UndefOr[Double] = js.undefined,
+    barWidth: js.UndefOr[Double] = js.undefined,
     border: dxChartSeriesTypesCommonSeriesBorder = null,
     bubble: js.Any = null,
     candlestick: js.Any = null,
     closeValueField: String = null,
     color: String = null,
-    cornerRadius: Int | Double = null,
+    cornerRadius: js.UndefOr[Double] = js.undefined,
     dashStyle: dash | dot | longDash | solid = null,
     fullstackedarea: js.Any = null,
     fullstackedbar: js.Any = null,
@@ -124,9 +124,9 @@ object dxChartCommonSeriesSettings {
     label: dxChartSeriesTypesCommonSeriesLabel = null,
     line: js.Any = null,
     lowValueField: String = null,
-    maxLabelCount: Int | Double = null,
-    minBarSize: Int | Double = null,
-    opacity: Int | Double = null,
+    maxLabelCount: js.UndefOr[Double] = js.undefined,
+    minBarSize: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
     openValueField: String = null,
     pane: String = null,
     point: dxChartSeriesTypesCommonSeriesPoint = null,
@@ -134,7 +134,7 @@ object dxChartCommonSeriesSettings {
     rangeValue2Field: String = null,
     rangearea: js.Any = null,
     rangebar: js.Any = null,
-    reduction: AnonColorLevel = null,
+    reduction: ColorLevel = null,
     scatter: js.Any = null,
     selectionMode: allArgumentPoints | allSeriesPoints | excludePoints | includePoints | none | onlyPoint = null,
     selectionStyle: dxChartSeriesTypesCommonSeriesSelectionStyle = null,
@@ -153,10 +153,10 @@ object dxChartCommonSeriesSettings {
     stock: js.Any = null,
     tagField: String = null,
     `type`: area | bar | bubble | candlestick | fullstackedarea | fullstackedbar | fullstackedline | fullstackedspline | fullstackedsplinearea | line | rangearea | rangebar_ | scatter | spline | splinearea | stackedarea | stackedbar | stackedline | stackedspline | stackedsplinearea | steparea | stepline | stock = null,
-    valueErrorBar: AnonDisplayMode = null,
+    valueErrorBar: DisplayMode = null,
     valueField: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): dxChartCommonSeriesSettings = {
     val __obj = js.Dynamic.literal()
     if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation.asInstanceOf[js.Any])
@@ -165,14 +165,14 @@ object dxChartCommonSeriesSettings {
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
     if (barOverlapGroup != null) __obj.updateDynamic("barOverlapGroup")(barOverlapGroup.asInstanceOf[js.Any])
-    if (barPadding != null) __obj.updateDynamic("barPadding")(barPadding.asInstanceOf[js.Any])
-    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(barPadding)) __obj.updateDynamic("barPadding")(barPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barWidth)) __obj.updateDynamic("barWidth")(barWidth.get.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (bubble != null) __obj.updateDynamic("bubble")(bubble.asInstanceOf[js.Any])
     if (candlestick != null) __obj.updateDynamic("candlestick")(candlestick.asInstanceOf[js.Any])
     if (closeValueField != null) __obj.updateDynamic("closeValueField")(closeValueField.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(cornerRadius)) __obj.updateDynamic("cornerRadius")(cornerRadius.get.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (fullstackedarea != null) __obj.updateDynamic("fullstackedarea")(fullstackedarea.asInstanceOf[js.Any])
     if (fullstackedbar != null) __obj.updateDynamic("fullstackedbar")(fullstackedbar.asInstanceOf[js.Any])
@@ -182,14 +182,14 @@ object dxChartCommonSeriesSettings {
     if (highValueField != null) __obj.updateDynamic("highValueField")(highValueField.asInstanceOf[js.Any])
     if (hoverMode != null) __obj.updateDynamic("hoverMode")(hoverMode.asInstanceOf[js.Any])
     if (hoverStyle != null) __obj.updateDynamic("hoverStyle")(hoverStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmptyPoints)) __obj.updateDynamic("ignoreEmptyPoints")(ignoreEmptyPoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEmptyPoints)) __obj.updateDynamic("ignoreEmptyPoints")(ignoreEmptyPoints.get.asInstanceOf[js.Any])
     if (innerColor != null) __obj.updateDynamic("innerColor")(innerColor.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (lowValueField != null) __obj.updateDynamic("lowValueField")(lowValueField.asInstanceOf[js.Any])
-    if (maxLabelCount != null) __obj.updateDynamic("maxLabelCount")(maxLabelCount.asInstanceOf[js.Any])
-    if (minBarSize != null) __obj.updateDynamic("minBarSize")(minBarSize.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLabelCount)) __obj.updateDynamic("maxLabelCount")(maxLabelCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minBarSize)) __obj.updateDynamic("minBarSize")(minBarSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (openValueField != null) __obj.updateDynamic("openValueField")(openValueField.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
@@ -201,7 +201,7 @@ object dxChartCommonSeriesSettings {
     if (scatter != null) __obj.updateDynamic("scatter")(scatter.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
     if (sizeField != null) __obj.updateDynamic("sizeField")(sizeField.asInstanceOf[js.Any])
     if (spline != null) __obj.updateDynamic("spline")(spline.asInstanceOf[js.Any])
     if (splinearea != null) __obj.updateDynamic("splinearea")(splinearea.asInstanceOf[js.Any])
@@ -218,8 +218,8 @@ object dxChartCommonSeriesSettings {
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (valueErrorBar != null) __obj.updateDynamic("valueErrorBar")(valueErrorBar.asInstanceOf[js.Any])
     if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartCommonSeriesSettings]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object FileUpdateStatus extends js.Object {
   /** User input (like credentials) is needed to update the file. */
   @js.native
   sealed trait userInputNeeded extends FileUpdateStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileUpdateStatus with Double] = js.native
-  /* 1 */ @js.native
-  object complete extends TopLevel[complete with Double]
-  
-  /* 5 */ @js.native
-  object completeAndRenamed extends TopLevel[completeAndRenamed with Double]
-  
-  /* 3 */ @js.native
-  object currentlyUnavailable extends TopLevel[currentlyUnavailable with Double]
-  
-  /* 4 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 0 */ @js.native
-  object incomplete extends TopLevel[incomplete with Double]
-  
-  /* 2 */ @js.native
-  object userInputNeeded extends TopLevel[userInputNeeded with Double]
   
 }
 

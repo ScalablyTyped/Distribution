@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 // chayns.dialog.select()
 trait DialogSelectConfig extends js.Object {
   var buttons: js.UndefOr[js.Array[_]] = js.undefined
-  		// TODO interface for buttons
+          // TODO interface for buttons
   var list: js.Array[DialogSelectConfigItem]
   var message: js.UndefOr[String] = js.undefined
   var multiselect: js.UndefOr[Boolean] = js.undefined
@@ -28,8 +28,8 @@ object DialogSelectConfig {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(quickfind)) __obj.updateDynamic("quickfind")(quickfind.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quickfind)) __obj.updateDynamic("quickfind")(quickfind.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogSelectConfig]
   }
 }

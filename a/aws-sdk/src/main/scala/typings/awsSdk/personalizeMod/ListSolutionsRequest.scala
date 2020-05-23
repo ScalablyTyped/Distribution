@@ -22,10 +22,14 @@ trait ListSolutionsRequest extends js.Object {
 
 object ListSolutionsRequest {
   @scala.inline
-  def apply(datasetGroupArn: Arn = null, maxResults: Int | Double = null, nextToken: NextToken = null): ListSolutionsRequest = {
+  def apply(
+    datasetGroupArn: Arn = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    nextToken: NextToken = null
+  ): ListSolutionsRequest = {
     val __obj = js.Dynamic.literal()
     if (datasetGroupArn != null) __obj.updateDynamic("datasetGroupArn")(datasetGroupArn.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSolutionsRequest]
   }

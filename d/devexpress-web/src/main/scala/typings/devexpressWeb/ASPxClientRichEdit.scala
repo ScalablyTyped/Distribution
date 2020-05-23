@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxRichEdit object.
   */
-@JSGlobal("ASPxClientRichEdit")
 @js.native
-class ASPxClientRichEdit () extends ASPxClientControl {
+trait ASPxClientRichEdit extends ASPxClientControl {
   /**
     * Occurs when the active sub-document is substituted with another sub-document.
     */
@@ -162,16 +161,5 @@ class ASPxClientRichEdit () extends ASPxClientControl {
     * @param fullscreen true to activate full-screen mode; false to deactivate full-screen mode.
     */
   def SetFullscreenMode(fullscreen: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientRichEdit")
-@js.native
-object ASPxClientRichEdit extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientRichEdit type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientRichEdit = js.native
 }
 

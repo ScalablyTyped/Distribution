@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonDataSourceCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "DataSourceDisplay")
 @js.native
 class DataSourceDisplay protected () extends js.Object {
-  def this(options: AnonDataSourceCollection) = this()
+  def this(options: typings.cesium.anon.DataSourceCollection) = this()
   var dataSources: DataSourceCollection = js.native
   var defaultDataSource: CustomDataSource = js.native
   var scene: Scene = js.native

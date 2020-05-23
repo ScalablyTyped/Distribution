@@ -13,17 +13,17 @@ trait V1RandomOptions
 object V1RandomOptions {
   @scala.inline
   def apply(
-    clockseq: Int | Double = null,
+    clockseq: js.UndefOr[Double] = js.undefined,
     msecs: Double | Date = null,
     node: InputBuffer = null,
-    nsecs: Int | Double = null,
+    nsecs: js.UndefOr[Double] = js.undefined,
     random: InputBuffer = null
   ): V1RandomOptions = {
     val __obj = js.Dynamic.literal()
-    if (clockseq != null) __obj.updateDynamic("clockseq")(clockseq.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockseq)) __obj.updateDynamic("clockseq")(clockseq.get.asInstanceOf[js.Any])
     if (msecs != null) __obj.updateDynamic("msecs")(msecs.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (nsecs != null) __obj.updateDynamic("nsecs")(nsecs.asInstanceOf[js.Any])
+    if (!js.isUndefined(nsecs)) __obj.updateDynamic("nsecs")(nsecs.get.asInstanceOf[js.Any])
     if (random != null) __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
     __obj.asInstanceOf[V1RandomOptions]
   }

@@ -125,9 +125,9 @@ object ICustomer {
     metadata: IMetadata,
     `object`: customer,
     subscriptions: ICustomerSubscriptions,
-    account_balance: Int | Double = null,
+    account_balance: js.UndefOr[Double] = js.undefined,
     address: IAddress = null,
-    balance: Int | Double = null,
+    balance: js.UndefOr[Double] = js.undefined,
     cards: CustomerCards = null,
     currency: String = null,
     default_source: String | IStripeSource = null,
@@ -135,8 +135,8 @@ object ICustomer {
     discount: IDiscount = null,
     email: String = null,
     invoice_prefix: String = null,
-    invoice_settings: ICustomerInvoiceSettings = null,
-    name: String = null,
+    invoice_settings: js.UndefOr[Null | ICustomerInvoiceSettings] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
     phone: String = null,
     preferred_locales: js.Array[String] = null,
     shipping: IShippingInformation = null,
@@ -146,23 +146,19 @@ object ICustomer {
     tax_info: js.Any = null,
     tax_info_verification: js.Any = null
   ): ICustomer = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], delinquent = delinquent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], delinquent = delinquent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], default_source = default_source.asInstanceOf[js.Any], shipping = shipping.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
+    if (!js.isUndefined(account_balance)) __obj.updateDynamic("account_balance")(account_balance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(balance)) __obj.updateDynamic("balance")(balance.get.asInstanceOf[js.Any])
     if (cards != null) __obj.updateDynamic("cards")(cards.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (discount != null) __obj.updateDynamic("discount")(discount.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (invoice_prefix != null) __obj.updateDynamic("invoice_prefix")(invoice_prefix.asInstanceOf[js.Any])
-    if (invoice_settings != null) __obj.updateDynamic("invoice_settings")(invoice_settings.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(invoice_settings)) __obj.updateDynamic("invoice_settings")(invoice_settings.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
     if (preferred_locales != null) __obj.updateDynamic("preferred_locales")(preferred_locales.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     if (tax_exempt != null) __obj.updateDynamic("tax_exempt")(tax_exempt.asInstanceOf[js.Any])
     if (tax_ids != null) __obj.updateDynamic("tax_ids")(tax_ids.asInstanceOf[js.Any])

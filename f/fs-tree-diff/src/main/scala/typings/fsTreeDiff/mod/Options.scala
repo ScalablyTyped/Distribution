@@ -15,7 +15,7 @@ object Options {
   def apply(entries: js.Array[BaseEntry] = null, sortAndExpand: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortAndExpand)) __obj.updateDynamic("sortAndExpand")(sortAndExpand.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortAndExpand)) __obj.updateDynamic("sortAndExpand")(sortAndExpand.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,6 +1,6 @@
 package typings.pouchdbCore.PouchDB.Core
 
-import typings.pouchdbCore.AnonIds
+import typings.pouchdbCore.anon.Ids
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait GetMeta extends js.Object {
   var _conflicts: js.UndefOr[js.Array[RevisionId]] = js.undefined
   var _rev: RevisionId
   /** Only present if `GetOptions.revs_info` is `true` */
-  var _revisions: js.UndefOr[AnonIds] = js.undefined
+  var _revisions: js.UndefOr[Ids] = js.undefined
   /** Only present if `GetOptions.revs` is `true` */
   var _revs_info: js.UndefOr[js.Array[RevisionInfo]] = js.undefined
 }
@@ -27,7 +27,7 @@ object GetMeta {
     _rev: RevisionId,
     _attachments: Attachments = null,
     _conflicts: js.Array[RevisionId] = null,
-    _revisions: AnonIds = null,
+    _revisions: Ids = null,
     _revs_info: js.Array[RevisionInfo] = null
   ): GetMeta = {
     val __obj = js.Dynamic.literal(_rev = _rev.asInstanceOf[js.Any])

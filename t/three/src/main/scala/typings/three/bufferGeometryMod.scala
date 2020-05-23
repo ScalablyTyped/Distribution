@@ -1,6 +1,8 @@
 package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.three.anon.MaterialIndex
+import typings.three.anon.Start
 import typings.three.box3Mod.Box3
 import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.directGeometryMod.DirectGeometry
@@ -28,12 +30,12 @@ object bufferGeometryMod extends js.Object {
     var attributes: StringDictionary[BufferAttribute | InterleavedBufferAttribute] = js.native
     var boundingBox: Box3 = js.native
     var boundingSphere: Sphere = js.native
-    var drawRange: AnonStart = js.native
+    var drawRange: Start = js.native
     /**
     	 * @deprecated Use {@link BufferGeometry#groups .groups} instead.
     	 */
     var drawcalls: js.Any = js.native
-    var groups: js.Array[AnonMaterialIndex] = js.native
+    var groups: js.Array[MaterialIndex] = js.native
     /**
     	 * Unique number of this buffergeometry instance
     	 */

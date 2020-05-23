@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/server_timestamps", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/server_timestamps", JSImport.Namespace)
 @js.native
 object serverTimestampsMod extends js.Object {
   def getLocalWriteTime(

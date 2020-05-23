@@ -25,9 +25,9 @@ object VerifyResult {
     signerCertificateVerified: js.UndefOr[Boolean] = js.undefined
   ): VerifyResult = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-    if (!js.isUndefined(signatureVerified)) __obj.updateDynamic("signatureVerified")(signatureVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(signatureVerified)) __obj.updateDynamic("signatureVerified")(signatureVerified.get.asInstanceOf[js.Any])
     if (signerCertificate != null) __obj.updateDynamic("signerCertificate")(signerCertificate.asInstanceOf[js.Any])
-    if (!js.isUndefined(signerCertificateVerified)) __obj.updateDynamic("signerCertificateVerified")(signerCertificateVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(signerCertificateVerified)) __obj.updateDynamic("signerCertificateVerified")(signerCertificateVerified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyResult]
   }
 }

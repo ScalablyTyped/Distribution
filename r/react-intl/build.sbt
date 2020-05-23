@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "react-intl"
-version := "3.12.1-3b2448"
-scalaVersion := "2.13.1"
+version := "3.12.1-bc93c0"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.9-313239",
-  "org.scalablytyped" %%% "formatjs__intl-listformat" % "1.4.2-edc79a",
-  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "4.5.10-e78e0f",
-  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "3.2.0-2a4c4f",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.2.0-7a73d7",
-  "org.scalablytyped" %%% "intl-messageformat" % "7.8.4-996aac",
-  "org.scalablytyped" %%% "intl-messageformat-parser" % "3.6.4-11fe77",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-11830c",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200409Z-0bc722",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "csstype" % "2.6.9-03f85a",
+  "org.scalablytyped" %%% "formatjs__intl-listformat" % "1.4.2-c2111c",
+  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "4.5.10-f87a5b",
+  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "3.2.0-31f22d",
+  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.2.0-915d9f",
+  "org.scalablytyped" %%% "intl-messageformat" % "7.8.4-082a2a",
+  "org.scalablytyped" %%% "intl-messageformat-parser" % "3.6.4-346590",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-4fb81d",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200515Z-0f8114",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait FilterData extends js.Object {
   /**
     *
-    * The currently applied filter on the given column. Read-only.
+    * The currently applied filter on the given column.
     *
     * [Api set: ExcelApi 1.2]
     */

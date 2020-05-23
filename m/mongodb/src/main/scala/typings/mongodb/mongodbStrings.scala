@@ -188,6 +188,9 @@ object mongodbStrings {
   sealed trait slow_only extends ProfilingLevel
   
   @js.native
+  sealed trait snappy extends js.Object
+  
+  @js.native
   sealed trait snapshot extends ReadConcernLevel
   
   @js.native
@@ -213,6 +216,9 @@ object mongodbStrings {
   
   @js.native
   sealed trait warn extends js.Object
+  
+  @js.native
+  sealed trait zlib extends js.Object
   
   @scala.inline
   def AcceptedFields: AcceptedFields = "AcceptedFields".asInstanceOf[AcceptedFields]
@@ -333,6 +339,8 @@ object mongodbStrings {
   @scala.inline
   def slow_only: slow_only = "slow_only".asInstanceOf[slow_only]
   @scala.inline
+  def snappy: snappy = "snappy".asInstanceOf[snappy]
+  @scala.inline
   def snapshot: snapshot = "snapshot".asInstanceOf[snapshot]
   @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
@@ -350,5 +358,7 @@ object mongodbStrings {
   def updateLookup: updateLookup = "updateLookup".asInstanceOf[updateLookup]
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
+  @scala.inline
+  def zlib: zlib = "zlib".asInstanceOf[zlib]
 }
 

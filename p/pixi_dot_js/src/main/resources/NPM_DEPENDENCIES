@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pixi.js" : "5.2.1"
+      "pixi.js" : "5.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "pixi.js" : "5.2.1"
+      "pixi.js" : "5.2.4"
     }
   ],
   "compile-devDependencies" : [

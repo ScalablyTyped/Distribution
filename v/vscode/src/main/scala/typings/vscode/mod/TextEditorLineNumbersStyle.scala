@@ -12,20 +12,20 @@ sealed trait TextEditorLineNumbersStyle extends js.Object
 @js.native
 object TextEditorLineNumbersStyle extends js.Object {
   /**
-  		 * Do not render the line numbers.
-  		 */
+    * Do not render the line numbers.
+    */
   @js.native
   sealed trait Off extends TextEditorLineNumbersStyle
   
   /**
-  		 * Render the line numbers.
-  		 */
+    * Render the line numbers.
+    */
   @js.native
   sealed trait On extends TextEditorLineNumbersStyle
   
   /**
-  		 * Render the line numbers with values relative to the primary cursor location.
-  		 */
+    * Render the line numbers with values relative to the primary cursor location.
+    */
   @js.native
   sealed trait Relative extends TextEditorLineNumbersStyle
   

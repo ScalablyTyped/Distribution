@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRPlaneDetector")
 @js.native
-class WebXRPlaneDetector protected () extends WebXRAbstractFeature {
-  /**
-    * construct a new Plane Detector
-    * @param _xrSessionManager an instance of xr Session manager
-    * @param _options configuration to use when constructing this feature
-    */
-  def this(_xrSessionManager: WebXRSessionManager) = this()
-  def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRPlaneDetectorOptions) = this()
+trait WebXRPlaneDetector extends WebXRAbstractFeature {
   var _detectedPlanes: js.Any = js.native
   var _enabled: js.Any = js.native
   var _init: js.Any = js.native
@@ -38,21 +30,5 @@ class WebXRPlaneDetector protected () extends WebXRAbstractFeature {
     * This can execute N times every frame
     */
   var onPlaneUpdatedObservable: Observable[IWebXRPlane] = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.WebXRPlaneDetector")
-@js.native
-object WebXRPlaneDetector extends js.Object {
-  /**
-    * The module's name
-    */
-  val Name: String = js.native
-  /**
-    * The (Babylon) version of this module.
-    * This is an integer representing the implementation version.
-    * This number does not correspond to the WebXR specs version
-    */
-  val Version: Double = js.native
 }
 

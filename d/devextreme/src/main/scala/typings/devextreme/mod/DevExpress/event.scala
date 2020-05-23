@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.devextreme.mod.DevExpress.dxEvent
-  - typings.devextreme.mod._Global_.JQueryEventObject
+  - typings.devextreme.mod.global.JQueryEventObject
 */
 trait event extends js.Object
 
@@ -31,7 +31,7 @@ object event {
   @scala.inline
   def JQueryEventObject(cancel: js.UndefOr[Boolean] = js.undefined): event = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[event]
   }
 }

@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
   */
 trait OptionsMenuCallbackObject extends js.Object {
   /**
-  	 * The relevant Menu.
-  	 */
+    * The relevant Menu.
+    */
   var menu: js.UndefOr[Menu] = js.undefined
 }
 

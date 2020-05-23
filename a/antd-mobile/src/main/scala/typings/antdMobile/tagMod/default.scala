@@ -1,6 +1,6 @@
 package typings.antdMobile.tagMod
 
-import typings.antdMobile.AnonAfterClose
+import typings.antdMobile.anon.AfterClose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends Tag {
 @JSImport("antd-mobile/lib/tag", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonAfterClose = js.native
+  var defaultProps: AfterClose = js.native
 }
 

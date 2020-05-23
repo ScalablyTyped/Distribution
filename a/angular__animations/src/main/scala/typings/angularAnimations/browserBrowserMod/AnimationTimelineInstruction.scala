@@ -33,10 +33,9 @@ object AnimationTimelineInstruction {
     easing: String = null,
     stretchStartingKeyframe: js.UndefOr[Boolean] = js.undefined
   ): AnimationTimelineInstruction = {
-    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], keyframes = keyframes.asInstanceOf[js.Any], postStyleProps = postStyleProps.asInstanceOf[js.Any], preStyleProps = preStyleProps.asInstanceOf[js.Any], subTimeline = subTimeline.asInstanceOf[js.Any], totalTime = totalTime.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], keyframes = keyframes.asInstanceOf[js.Any], postStyleProps = postStyleProps.asInstanceOf[js.Any], preStyleProps = preStyleProps.asInstanceOf[js.Any], subTimeline = subTimeline.asInstanceOf[js.Any], totalTime = totalTime.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchStartingKeyframe)) __obj.updateDynamic("stretchStartingKeyframe")(stretchStartingKeyframe.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretchStartingKeyframe)) __obj.updateDynamic("stretchStartingKeyframe")(stretchStartingKeyframe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTimelineInstruction]
   }
 }

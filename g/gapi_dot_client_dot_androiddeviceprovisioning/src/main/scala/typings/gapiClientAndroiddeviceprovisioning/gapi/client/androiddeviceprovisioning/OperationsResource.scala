@@ -1,7 +1,7 @@
 package typings.gapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAndroiddeviceprovisioning.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientAndroiddeviceprovisioning.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +12,12 @@ trait OperationsResource extends js.Object {
     * method to poll the operation result at intervals as recommended by the API
     * service.
     */
-  def get(request: AnonAccesstoken): Request_[Operation]
+  def get(request: Accesstoken): Request[Operation]
 }
 
 object OperationsResource {
   @scala.inline
-  def apply(get: AnonAccesstoken => Request_[Operation]): OperationsResource = {
+  def apply(get: Accesstoken => Request[Operation]): OperationsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[OperationsResource]
   }

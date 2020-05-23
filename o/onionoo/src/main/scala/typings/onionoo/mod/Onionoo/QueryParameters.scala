@@ -168,9 +168,9 @@ object QueryParameters {
     flag: String = null,
     host_name: String = null,
     last_seen_days: String = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     lookup: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     order: String = null,
     os: String = null,
     recommended_version: js.UndefOr[Boolean] = js.undefined,
@@ -190,13 +190,13 @@ object QueryParameters {
     if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
     if (host_name != null) __obj.updateDynamic("host_name")(host_name.asInstanceOf[js.Any])
     if (last_seen_days != null) __obj.updateDynamic("last_seen_days")(last_seen_days.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(lookup.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
-    if (!js.isUndefined(recommended_version)) __obj.updateDynamic("recommended_version")(recommended_version.asInstanceOf[js.Any])
-    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running.asInstanceOf[js.Any])
+    if (!js.isUndefined(recommended_version)) __obj.updateDynamic("recommended_version")(recommended_version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running.get.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

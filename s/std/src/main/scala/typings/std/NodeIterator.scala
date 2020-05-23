@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,20 @@ trait NodeIterator extends js.Object {
   def previousNode(): Node | Null
 }
 
-@JSGlobal("NodeIterator")
-@js.native
-object NodeIterator extends Instantiable0[NodeIterator]
+object NodeIterator {
+  @scala.inline
+  def apply(
+    detach: () => Unit,
+    nextNode: () => Node | Null,
+    pointerBeforeReferenceNode: scala.Boolean,
+    previousNode: () => Node | Null,
+    referenceNode: Node,
+    root: Node,
+    whatToShow: Double,
+    filter: NodeFilter = null
+  ): NodeIterator = {
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), nextNode = js.Any.fromFunction0(nextNode), pointerBeforeReferenceNode = pointerBeforeReferenceNode.asInstanceOf[js.Any], previousNode = js.Any.fromFunction0(previousNode), referenceNode = referenceNode.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodeIterator]
+  }
+}
 

@@ -6,7 +6,7 @@ import typings.react.mod.ClassAttributes
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -285,66 +285,66 @@ object TableProps {
     rowHeight: Double,
     rowsCount: Double,
     width: Double,
-    bufferRowCount: Int | Double = null,
-    cellGroupWrapperHeight: Int | Double = null,
+    bufferRowCount: js.UndefOr[Double] = js.undefined,
+    cellGroupWrapperHeight: js.UndefOr[Double] = js.undefined,
     className: String = null,
-    footerHeight: Int | Double = null,
-    groupHeaderHeight: Int | Double = null,
-    height: Int | Double = null,
+    footerHeight: js.UndefOr[Double] = js.undefined,
+    groupHeaderHeight: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     isColumnReordering: js.UndefOr[Boolean] = js.undefined,
     isColumnResizing: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
     keyboardPageEnabled: js.UndefOr[Boolean] = js.undefined,
     keyboardScrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
     onColumnReorderEndCallback: /* event */ ColumnReorderEndEvent => Unit = null,
     onColumnResizeEndCallback: (/* newColumnWidth */ Double, /* columnKey */ String) => Unit = null,
     onContentHeightChange: /* newHeight */ Double => Unit = null,
     onHorizontalScroll: /* scrollPos */ Double => Boolean = null,
-    onRowClick: (/* event */ SyntheticEvent[Table, Event_], /* rowIndex */ Double) => Unit = null,
-    onRowDoubleClick: (/* event */ SyntheticEvent[Table, Event_], /* rowIndex */ Double) => Unit = null,
-    onRowMouseDown: (/* event */ SyntheticEvent[Table, Event_], /* rowIndex */ Double) => Unit = null,
-    onRowMouseEnter: (/* event */ SyntheticEvent[Table, Event_], /* rowIndex */ Double) => Unit = null,
-    onRowMouseLeave: (/* event */ SyntheticEvent[Table, Event_], /* rowIndex */ Double) => Unit = null,
-    onRowMouseUp: (/* event */ SyntheticEvent[Table, Event_], /* rowIndex */ Double) => Unit = null,
-    onRowTouchEnd: (/* event */ SyntheticEvent[Table, Event_], /* rowIndex */ Double) => Unit = null,
-    onRowTouchMove: (/* event */ SyntheticEvent[Table, Event_], /* rowIndex */ Double) => Unit = null,
-    onRowTouchStart: (/* event */ SyntheticEvent[Table, Event_], /* rowIndex */ Double) => Unit = null,
+    onRowClick: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowDoubleClick: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowMouseDown: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowMouseEnter: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowMouseLeave: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowMouseUp: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowTouchEnd: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowTouchMove: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
+    onRowTouchStart: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit = null,
     onScrollEnd: (/* x */ Double, /* y */ Double) => Unit = null,
     onScrollStart: (/* x */ Double, /* y */ Double) => Unit = null,
     onVerticalScroll: /* scrollPos */ Double => Boolean = null,
     overflowX: hidden | auto = null,
     overflowY: hidden | auto = null,
-    ownerHeight: Int | Double = null,
-    ref: LegacyRef[Table] = null,
+    ownerHeight: js.UndefOr[Double] = js.undefined,
+    ref: js.UndefOr[Null | LegacyRef[Table]] = js.undefined,
     rowClassNameGetter: /* index */ Double => String = null,
     rowExpanded: ElementOrFunc[RowProps] = null,
     rowHeightGetter: /* index */ Double => Double = null,
     rowKeyGetter: /* index */ Double => String = null,
-    scrollLeft: Int | Double = null,
-    scrollToColumn: Int | Double = null,
-    scrollToRow: Int | Double = null,
-    scrollTop: Int | Double = null,
+    scrollLeft: js.UndefOr[Double] = js.undefined,
+    scrollToColumn: js.UndefOr[Double] = js.undefined,
+    scrollToRow: js.UndefOr[Double] = js.undefined,
+    scrollTop: js.UndefOr[Double] = js.undefined,
     showScrollbarX: js.UndefOr[Boolean] = js.undefined,
     showScrollbarY: js.UndefOr[Boolean] = js.undefined,
     stopScrollPropagation: js.UndefOr[Boolean] = js.undefined,
-    subRowHeight: Int | Double = null,
+    subRowHeight: js.UndefOr[Double] = js.undefined,
     subRowHeightGetter: /* index */ Double => Double = null,
     touchScrollEnabled: js.UndefOr[Boolean] = js.undefined
   ): TableProps = {
     val __obj = js.Dynamic.literal(headerHeight = headerHeight.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any], rowsCount = rowsCount.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (bufferRowCount != null) __obj.updateDynamic("bufferRowCount")(bufferRowCount.asInstanceOf[js.Any])
-    if (cellGroupWrapperHeight != null) __obj.updateDynamic("cellGroupWrapperHeight")(cellGroupWrapperHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferRowCount)) __obj.updateDynamic("bufferRowCount")(bufferRowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellGroupWrapperHeight)) __obj.updateDynamic("cellGroupWrapperHeight")(cellGroupWrapperHeight.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (footerHeight != null) __obj.updateDynamic("footerHeight")(footerHeight.asInstanceOf[js.Any])
-    if (groupHeaderHeight != null) __obj.updateDynamic("groupHeaderHeight")(groupHeaderHeight.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isColumnReordering)) __obj.updateDynamic("isColumnReordering")(isColumnReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(isColumnResizing)) __obj.updateDynamic("isColumnResizing")(isColumnResizing.asInstanceOf[js.Any])
+    if (!js.isUndefined(footerHeight)) __obj.updateDynamic("footerHeight")(footerHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupHeaderHeight)) __obj.updateDynamic("groupHeaderHeight")(groupHeaderHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isColumnReordering)) __obj.updateDynamic("isColumnReordering")(isColumnReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isColumnResizing)) __obj.updateDynamic("isColumnResizing")(isColumnResizing.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardPageEnabled)) __obj.updateDynamic("keyboardPageEnabled")(keyboardPageEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardScrollEnabled)) __obj.updateDynamic("keyboardScrollEnabled")(keyboardScrollEnabled.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardPageEnabled)) __obj.updateDynamic("keyboardPageEnabled")(keyboardPageEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardScrollEnabled)) __obj.updateDynamic("keyboardScrollEnabled")(keyboardScrollEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
     if (onColumnReorderEndCallback != null) __obj.updateDynamic("onColumnReorderEndCallback")(js.Any.fromFunction1(onColumnReorderEndCallback))
     if (onColumnResizeEndCallback != null) __obj.updateDynamic("onColumnResizeEndCallback")(js.Any.fromFunction2(onColumnResizeEndCallback))
     if (onContentHeightChange != null) __obj.updateDynamic("onContentHeightChange")(js.Any.fromFunction1(onContentHeightChange))
@@ -363,22 +363,22 @@ object TableProps {
     if (onVerticalScroll != null) __obj.updateDynamic("onVerticalScroll")(js.Any.fromFunction1(onVerticalScroll))
     if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
     if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
-    if (ownerHeight != null) __obj.updateDynamic("ownerHeight")(ownerHeight.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ownerHeight)) __obj.updateDynamic("ownerHeight")(ownerHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (rowClassNameGetter != null) __obj.updateDynamic("rowClassNameGetter")(js.Any.fromFunction1(rowClassNameGetter))
     if (rowExpanded != null) __obj.updateDynamic("rowExpanded")(rowExpanded.asInstanceOf[js.Any])
     if (rowHeightGetter != null) __obj.updateDynamic("rowHeightGetter")(js.Any.fromFunction1(rowHeightGetter))
     if (rowKeyGetter != null) __obj.updateDynamic("rowKeyGetter")(js.Any.fromFunction1(rowKeyGetter))
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
-    if (scrollToColumn != null) __obj.updateDynamic("scrollToColumn")(scrollToColumn.asInstanceOf[js.Any])
-    if (scrollToRow != null) __obj.updateDynamic("scrollToRow")(scrollToRow.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(showScrollbarX)) __obj.updateDynamic("showScrollbarX")(showScrollbarX.asInstanceOf[js.Any])
-    if (!js.isUndefined(showScrollbarY)) __obj.updateDynamic("showScrollbarY")(showScrollbarY.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopScrollPropagation)) __obj.updateDynamic("stopScrollPropagation")(stopScrollPropagation.asInstanceOf[js.Any])
-    if (subRowHeight != null) __obj.updateDynamic("subRowHeight")(subRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollLeft)) __obj.updateDynamic("scrollLeft")(scrollLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToColumn)) __obj.updateDynamic("scrollToColumn")(scrollToColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToRow)) __obj.updateDynamic("scrollToRow")(scrollToRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showScrollbarX)) __obj.updateDynamic("showScrollbarX")(showScrollbarX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showScrollbarY)) __obj.updateDynamic("showScrollbarY")(showScrollbarY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopScrollPropagation)) __obj.updateDynamic("stopScrollPropagation")(stopScrollPropagation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subRowHeight)) __obj.updateDynamic("subRowHeight")(subRowHeight.get.asInstanceOf[js.Any])
     if (subRowHeightGetter != null) __obj.updateDynamic("subRowHeightGetter")(js.Any.fromFunction1(subRowHeightGetter))
-    if (!js.isUndefined(touchScrollEnabled)) __obj.updateDynamic("touchScrollEnabled")(touchScrollEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchScrollEnabled)) __obj.updateDynamic("touchScrollEnabled")(touchScrollEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProps]
   }
 }

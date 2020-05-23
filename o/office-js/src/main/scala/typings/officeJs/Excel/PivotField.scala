@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.PivotFieldData
 import typings.officeJs.Excel.Interfaces.PivotFieldLoadOptions
 import typings.officeJs.Excel.Interfaces.PivotFieldUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Ascending
 import typings.officeJs.officeJsStrings.Descending
 import scala.scalajs.js
@@ -18,9 +18,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.PivotField")
 @js.native
-class PivotField () extends ClientObject {
+trait PivotField extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PivotField: RequestContext = js.native
@@ -66,7 +65,7 @@ class PivotField () extends ClientObject {
     */
   def load(): PivotField = js.native
   def load(options: PivotFieldLoadOptions): PivotField = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PivotField = js.native
+  def load(propertyNamesAndPaths: Expand): PivotField = js.native
   def load(propertyNames: String): PivotField = js.native
   def load(propertyNames: js.Array[String]): PivotField = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -89,7 +88,7 @@ class PivotField () extends ClientObject {
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param sortBy Specifies if the sorting is done in ascending or descending order.
     */
   def sortByLabels(sortBy: SortBy): Unit = js.native
   /**
@@ -98,7 +97,7 @@ class PivotField () extends ClientObject {
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param sortBy Specifies if the sorting is done in ascending or descending order.
     * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
     * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
@@ -113,7 +112,7 @@ class PivotField () extends ClientObject {
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param sortBy Specifies if the sorting is done in ascending or descending order.
     * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
     * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,

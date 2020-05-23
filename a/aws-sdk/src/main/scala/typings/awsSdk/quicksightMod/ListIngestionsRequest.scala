@@ -29,11 +29,11 @@ object ListIngestionsRequest {
   def apply(
     AwsAccountId: AwsAccountId,
     DataSetId: java.lang.String,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[IngestionMaxResults] = js.undefined,
     NextToken: java.lang.String = null
   ): ListIngestionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIngestionsRequest]
   }

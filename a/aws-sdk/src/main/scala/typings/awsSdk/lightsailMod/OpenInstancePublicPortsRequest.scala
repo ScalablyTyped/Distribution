@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait OpenInstancePublicPortsRequest extends js.Object {
   /**
-    * The name of the instance for which you want to open the public ports.
+    * The name of the instance for which to open ports.
     */
   var instanceName: ResourceName = js.native
   /**
-    * An array of key-value pairs containing information about the port mappings.
+    * An object to describe the ports to open for the specified instance.
     */
   var portInfo: PortInfo = js.native
 }

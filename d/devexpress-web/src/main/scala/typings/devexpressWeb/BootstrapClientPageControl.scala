@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the BootstrapPageControl control.
   */
-@JSGlobal("BootstrapClientPageControl")
 @js.native
-class BootstrapClientPageControl () extends ASPxClientPageControl {
+trait BootstrapClientPageControl extends ASPxClientPageControl {
   /**
     * Returns the HTML code that represents the contents of the specified page within the page control. A string that represents the specified page's HTML content.
     * @param tab An BootstrapClientTab object that specifies the required page.

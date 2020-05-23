@@ -5,10 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait NavOutlet extends js.Object {
-  def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
-  def setRouteId(id: String, params: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[RouteWrite] = js.native
-  def setRouteId(id: String, params: ComponentProps[Null], direction: RouterDirection): js.Promise[RouteWrite] = js.native
+  def getRouteId(): js.Promise[js.UndefOr[RouteID]]
+  def setRouteId(id: String, params: js.UndefOr[ComponentProps[Null]], direction: RouterDirection): js.Promise[RouteWrite]
+}
+
+object NavOutlet {
+  @scala.inline
+  def apply(
+    getRouteId: () => js.Promise[js.UndefOr[RouteID]],
+    setRouteId: (String, js.UndefOr[ComponentProps[Null]], RouterDirection) => js.Promise[RouteWrite]
+  ): NavOutlet = {
+    val __obj = js.Dynamic.literal(getRouteId = js.Any.fromFunction0(getRouteId), setRouteId = js.Any.fromFunction3(setRouteId))
+    __obj.asInstanceOf[NavOutlet]
+  }
 }
 

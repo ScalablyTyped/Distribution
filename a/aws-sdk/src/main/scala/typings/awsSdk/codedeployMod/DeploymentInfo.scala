@@ -35,7 +35,7 @@ trait DeploymentInfo extends js.Object {
     */
   var createTime: js.UndefOr[Timestamp] = js.native
   /**
-    * The means by which the deployment was created:   user: A user created the deployment.   autoscaling: Amazon EC2 Auto Scaling created the deployment.   codeDeployRollback: A rollback process created the deployment.  
+    * The means by which the deployment was created:    user: A user created the deployment.    autoscaling: Amazon EC2 Auto Scaling created the deployment.    codeDeployRollback: A rollback process created the deployment.  
     */
   var creator: js.UndefOr[DeploymentCreator] = js.native
   /**
@@ -71,7 +71,11 @@ trait DeploymentInfo extends js.Object {
     */
   var errorInformation: js.UndefOr[ErrorInformation] = js.native
   /**
-    * Information about how AWS CodeDeploy handles files that already exist in a deployment target location but weren't part of the previous successful deployment.   DISALLOW: The deployment fails. This is also the default behavior if no option is specified.   OVERWRITE: The version of the file from the application revision currently being deployed replaces the version already on the instance.   RETAIN: The version of the file already on the instance is kept and used as part of the new deployment.  
+    * The unique ID for an external resource (for example, a CloudFormation stack ID) that is linked to this deployment.
+    */
+  var externalId: js.UndefOr[ExternalId] = js.native
+  /**
+    * Information about how AWS CodeDeploy handles files that already exist in a deployment target location but weren't part of the previous successful deployment.    DISALLOW: The deployment fails. This is also the default behavior if no option is specified.    OVERWRITE: The version of the file from the application revision currently being deployed replaces the version already on the instance.    RETAIN: The version of the file already on the instance is kept and used as part of the new deployment.  
     */
   var fileExistsBehavior: js.UndefOr[FileExistsBehavior] = js.native
   /**
@@ -135,9 +139,10 @@ object DeploymentInfo {
     deploymentStyle: DeploymentStyle = null,
     description: Description = null,
     errorInformation: ErrorInformation = null,
+    externalId: ExternalId = null,
     fileExistsBehavior: FileExistsBehavior = null,
-    ignoreApplicationStopFailures: js.UndefOr[scala.Boolean] = js.undefined,
-    instanceTerminationWaitTimeStarted: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined,
+    instanceTerminationWaitTimeStarted: js.UndefOr[Boolean] = js.undefined,
     loadBalancerInfo: LoadBalancerInfo = null,
     previousRevision: RevisionLocation = null,
     revision: RevisionLocation = null,
@@ -145,7 +150,7 @@ object DeploymentInfo {
     startTime: Timestamp = null,
     status: DeploymentStatus = null,
     targetInstances: TargetInstances = null,
-    updateOutdatedInstancesOnly: js.UndefOr[scala.Boolean] = js.undefined
+    updateOutdatedInstancesOnly: js.UndefOr[Boolean] = js.undefined
   ): DeploymentInfo = {
     val __obj = js.Dynamic.literal()
     if (additionalDeploymentStatusInfo != null) __obj.updateDynamic("additionalDeploymentStatusInfo")(additionalDeploymentStatusInfo.asInstanceOf[js.Any])
@@ -164,9 +169,10 @@ object DeploymentInfo {
     if (deploymentStyle != null) __obj.updateDynamic("deploymentStyle")(deploymentStyle.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (errorInformation != null) __obj.updateDynamic("errorInformation")(errorInformation.asInstanceOf[js.Any])
+    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
     if (fileExistsBehavior != null) __obj.updateDynamic("fileExistsBehavior")(fileExistsBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreApplicationStopFailures)) __obj.updateDynamic("ignoreApplicationStopFailures")(ignoreApplicationStopFailures.asInstanceOf[js.Any])
-    if (!js.isUndefined(instanceTerminationWaitTimeStarted)) __obj.updateDynamic("instanceTerminationWaitTimeStarted")(instanceTerminationWaitTimeStarted.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreApplicationStopFailures)) __obj.updateDynamic("ignoreApplicationStopFailures")(ignoreApplicationStopFailures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(instanceTerminationWaitTimeStarted)) __obj.updateDynamic("instanceTerminationWaitTimeStarted")(instanceTerminationWaitTimeStarted.get.asInstanceOf[js.Any])
     if (loadBalancerInfo != null) __obj.updateDynamic("loadBalancerInfo")(loadBalancerInfo.asInstanceOf[js.Any])
     if (previousRevision != null) __obj.updateDynamic("previousRevision")(previousRevision.asInstanceOf[js.Any])
     if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
@@ -174,7 +180,7 @@ object DeploymentInfo {
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (targetInstances != null) __obj.updateDynamic("targetInstances")(targetInstances.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateOutdatedInstancesOnly)) __obj.updateDynamic("updateOutdatedInstancesOnly")(updateOutdatedInstancesOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOutdatedInstancesOnly)) __obj.updateDynamic("updateOutdatedInstancesOnly")(updateOutdatedInstancesOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentInfo]
   }
 }

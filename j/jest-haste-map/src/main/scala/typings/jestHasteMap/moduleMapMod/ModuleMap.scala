@@ -31,10 +31,8 @@ trait ModuleMap extends js.Object {
   def getModule(name: String, platform: Null, supportsNativePlatform: Boolean, `type`: HTypeValue): Path | Null = js.native
   def getModule(name: String, platform: Null, supportsNativePlatform: Null, `type`: HTypeValue): Path | Null = js.native
   def getPackage(name: String): Path | Null = js.native
-  def getPackage(name: String, platform: js.UndefOr[scala.Nothing], _supportsNativePlatform: Boolean): Path | Null = js.native
-  def getPackage(name: String, platform: String): Path | Null = js.native
-  def getPackage(name: String, platform: String, _supportsNativePlatform: Boolean): Path | Null = js.native
-  def getPackage(name: String, platform: Null, _supportsNativePlatform: Boolean): Path | Null = js.native
+  def getPackage(name: String, platform: js.UndefOr[String]): Path | Null = js.native
+  def getPackage(name: String, platform: js.UndefOr[Null | String], _supportsNativePlatform: Boolean): Path | Null = js.native
   def getRawModuleMap(): RawModuleMap = js.native
   def toJSON(): SerializableModuleMap = js.native
 }

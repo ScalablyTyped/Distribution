@@ -12,10 +12,14 @@ trait ICalendarYearState extends js.Object {
 
 object ICalendarYearState {
   @scala.inline
-  def apply(fromYear: Double, navigatedYear: Int | Double = null, selectedYear: Int | Double = null): ICalendarYearState = {
+  def apply(
+    fromYear: Double,
+    navigatedYear: js.UndefOr[Double] = js.undefined,
+    selectedYear: js.UndefOr[Double] = js.undefined
+  ): ICalendarYearState = {
     val __obj = js.Dynamic.literal(fromYear = fromYear.asInstanceOf[js.Any])
-    if (navigatedYear != null) __obj.updateDynamic("navigatedYear")(navigatedYear.asInstanceOf[js.Any])
-    if (selectedYear != null) __obj.updateDynamic("selectedYear")(selectedYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigatedYear)) __obj.updateDynamic("navigatedYear")(navigatedYear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedYear)) __obj.updateDynamic("selectedYear")(selectedYear.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalendarYearState]
   }
 }

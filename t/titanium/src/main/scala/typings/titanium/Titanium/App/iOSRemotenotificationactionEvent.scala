@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a user selects an action for an interactive remote notification.
-		 */
+  * Fired when a user selects an action for an interactive remote notification.
+  */
 trait iOSRemotenotificationactionEvent extends iOSBaseEvent {
   /**
-  			 * Identifier of the category of the interactive notification.
-  			 */
+    * Identifier of the category of the interactive notification.
+    */
   var category: String
   /**
-  			 * The payload passed to the Apple Push Notification Service.
-  			 */
+    * The payload passed to the Apple Push Notification Service.
+    */
   var data: js.Any
   /**
-  			 * Identifier of the action that was selected of the interactive notification.
-  			 */
+    * Identifier of the action that was selected of the interactive notification.
+    */
   var identifier: String
 }
 

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Workspace")
 @js.native
-class Workspace protected () extends js.Object {
+trait Workspace extends js.Object {
   @JSName("Connections")
   val Connections_Original: Connections = js.native
   @JSName("DAO.Workspace_typekey")

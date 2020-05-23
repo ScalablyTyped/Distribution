@@ -25,15 +25,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map Maps JavaScript API} */
-@JSGlobal("google.maps.Map")
 @js.native
-class Map[E /* <: Element */] protected () extends MVCObject {
-  /**
-    * Creates a new map inside of the given HTML container, which is typically a DIV element.
-    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.constructor Maps JavaScript API}
-    */
-  def this(mapDiv: E) = this()
-  def this(mapDiv: E, opts: MapOptions) = this()
+trait Map[E /* <: Element */] extends MVCObject {
   /**
     * Additional controls to attach to the map.
     * To add a control to the map, add the control's `<div>` to the {@link MVCArray} corresponding to the {@link ControlPosition} where it should be rendered.

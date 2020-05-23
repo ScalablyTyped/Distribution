@@ -3,7 +3,7 @@ package typings.jsoneditor.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.ace.AceAjax.Ace
 import typings.ajv.mod.Ajv
-import typings.jsoneditor.AnonPath
+import typings.jsoneditor.anon.Path
 import typings.std.Error
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -147,7 +147,7 @@ trait JSONEditorOptions extends js.Object {
     * The function must either return a string containing CSS class names, or return undefined in order to do nothing for a specific node.
     * In order to update css classes when they depend on external state, you can call `editor.refresh()`.
     */
-  var onClassName: js.UndefOr[js.Function1[/* classNameParams */ AnonPath, js.UndefOr[String]]] = js.undefined
+  var onClassName: js.UndefOr[js.Function1[/* classNameParams */ Path, js.UndefOr[String]]] = js.undefined
   /**
     * Callback function triggered when the user clicks a color. Can be used to implement a custom color picker.
     * @param parent An HTML element where the color picker can be attached. JSONEditor comes with a built-in color picker,
@@ -314,11 +314,11 @@ object JSONEditorOptions {
     escapeUnicode: js.UndefOr[Boolean] = js.undefined,
     executeQuery: (/* json */ js.Any, /* query */ String) => _ = null,
     history: js.UndefOr[Boolean] = js.undefined,
-    indentation: Int | Double = null,
+    indentation: js.UndefOr[Double] = js.undefined,
     language: String = null,
     languages: StringDictionary[StringDictionary[String]] = null,
     mainMenuBar: js.UndefOr[Boolean] = js.undefined,
-    maxVisibleChilds: Int | Double = null,
+    maxVisibleChilds: js.UndefOr[Double] = js.undefined,
     modalAnchor: HTMLElement = null,
     mode: JSONEditorMode = null,
     modes: js.Array[JSONEditorMode] = null,
@@ -327,7 +327,7 @@ object JSONEditorOptions {
     onChange: () => Unit = null,
     onChangeJSON: /* json */ js.Any => Unit = null,
     onChangeText: /* jsonString */ String => Unit = null,
-    onClassName: /* classNameParams */ AnonPath => js.UndefOr[String] = null,
+    onClassName: /* classNameParams */ Path => js.UndefOr[String] = null,
     onColorPicker: (/* parent */ HTMLElement, /* color */ String, /* onChange */ js.Function1[/* color */ Color, Unit]) => Unit = null,
     onCreateMenu: (/* menuItems */ js.Array[MenuItem], /* node */ MenuItemNode) => js.Array[MenuItem] = null,
     onEditable: /* node */ EditableNode | js.Object => Boolean | FieldEditable = null,
@@ -355,23 +355,23 @@ object JSONEditorOptions {
     if (ace != null) __obj.updateDynamic("ace")(ace.asInstanceOf[js.Any])
     if (ajv != null) __obj.updateDynamic("ajv")(ajv.asInstanceOf[js.Any])
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorPicker)) __obj.updateDynamic("colorPicker")(colorPicker.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorPicker)) __obj.updateDynamic("colorPicker")(colorPicker.get.asInstanceOf[js.Any])
     if (createQuery != null) __obj.updateDynamic("createQuery")(js.Any.fromFunction2(createQuery))
-    if (!js.isUndefined(enableSort)) __obj.updateDynamic("enableSort")(enableSort.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTransform)) __obj.updateDynamic("enableTransform")(enableTransform.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeUnicode)) __obj.updateDynamic("escapeUnicode")(escapeUnicode.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSort)) __obj.updateDynamic("enableSort")(enableSort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTransform)) __obj.updateDynamic("enableTransform")(enableTransform.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeUnicode)) __obj.updateDynamic("escapeUnicode")(escapeUnicode.get.asInstanceOf[js.Any])
     if (executeQuery != null) __obj.updateDynamic("executeQuery")(js.Any.fromFunction2(executeQuery))
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentation)) __obj.updateDynamic("indentation")(indentation.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (!js.isUndefined(mainMenuBar)) __obj.updateDynamic("mainMenuBar")(mainMenuBar.asInstanceOf[js.Any])
-    if (maxVisibleChilds != null) __obj.updateDynamic("maxVisibleChilds")(maxVisibleChilds.asInstanceOf[js.Any])
+    if (!js.isUndefined(mainMenuBar)) __obj.updateDynamic("mainMenuBar")(mainMenuBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxVisibleChilds)) __obj.updateDynamic("maxVisibleChilds")(maxVisibleChilds.get.asInstanceOf[js.Any])
     if (modalAnchor != null) __obj.updateDynamic("modalAnchor")(modalAnchor.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (modes != null) __obj.updateDynamic("modes")(modes.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigationBar)) __obj.updateDynamic("navigationBar")(navigationBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationBar)) __obj.updateDynamic("navigationBar")(navigationBar.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction0(onChange))
     if (onChangeJSON != null) __obj.updateDynamic("onChangeJSON")(js.Any.fromFunction1(onChangeJSON))
     if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
@@ -391,9 +391,9 @@ object JSONEditorOptions {
     if (queryDescription != null) __obj.updateDynamic("queryDescription")(queryDescription.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (schemaRefs != null) __obj.updateDynamic("schemaRefs")(schemaRefs.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortObjectKeys)) __obj.updateDynamic("sortObjectKeys")(sortObjectKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusBar)) __obj.updateDynamic("statusBar")(statusBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortObjectKeys)) __obj.updateDynamic("sortObjectKeys")(sortObjectKeys.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusBar)) __obj.updateDynamic("statusBar")(statusBar.get.asInstanceOf[js.Any])
     if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (timestampFormat != null) __obj.updateDynamic("timestampFormat")(js.Any.fromFunction1(timestampFormat))

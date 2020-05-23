@@ -55,7 +55,7 @@ object Slot {
     slotConstraint: SlotConstraint,
     description: Description = null,
     obfuscationSetting: ObfuscationSetting = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Priority] = js.undefined,
     responseCard: ResponseCard = null,
     sampleUtterances: SlotUtteranceList = null,
     slotType: CustomOrBuiltinSlotTypeName = null,
@@ -65,7 +65,7 @@ object Slot {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], slotConstraint = slotConstraint.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (obfuscationSetting != null) __obj.updateDynamic("obfuscationSetting")(obfuscationSetting.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard.asInstanceOf[js.Any])
     if (sampleUtterances != null) __obj.updateDynamic("sampleUtterances")(sampleUtterances.asInstanceOf[js.Any])
     if (slotType != null) __obj.updateDynamic("slotType")(slotType.asInstanceOf[js.Any])

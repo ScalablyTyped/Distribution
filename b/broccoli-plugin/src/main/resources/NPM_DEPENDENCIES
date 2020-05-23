@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "broccoli-plugin" : "4.0.2"
+      "broccoli-plugin" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "broccoli-plugin" : "4.0.2"
+      "broccoli-plugin" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

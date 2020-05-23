@@ -1,6 +1,9 @@
 package typings.jpm
 
 import typings.jpm.FFAddonSDK.Port
+import typings.jpm.anon.ContentScriptFile
+import typings.jpm.anon.Focus
+import typings.jpm.anon.Script
 import typings.jpm.jpmStrings.end
 import typings.jpm.jpmStrings.error
 import typings.jpm.jpmStrings.hide
@@ -22,7 +25,7 @@ import scala.scalajs.js.annotation._
 object panelMod extends js.Object {
   @js.native
   trait Panel extends js.Object {
-    var allow: js.UndefOr[AnonScript] = js.native
+    var allow: js.UndefOr[Script] = js.native
     var contentScript: js.UndefOr[String | js.Array[String]] = js.native
     var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.native
     var contentScriptOptions: js.UndefOr[js.Any] = js.native
@@ -47,16 +50,16 @@ object panelMod extends js.Object {
     def removeListener(event: String, listener: js.Function): Unit = js.native
     def resize(width: Double, height: Double): Unit = js.native
     def show(): Unit = js.native
-    def show(options: AnonFocus): Unit = js.native
+    def show(options: Focus): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
     - typings.jpm.FFAddonSDK.ToggleButton
     - typings.jpm.FFAddonSDK.Widget
-    - typings.jpm.AnonBottom
+    - typings.jpm.anon.Bottom
   */
   trait PanelPosition extends js.Object
   
-  def Panel(options: AnonContentScriptFile): Panel = js.native
+  def Panel(options: ContentScriptFile): Panel = js.native
 }
 

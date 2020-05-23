@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class DynamicTexture protected ()
   extends typings.babylonjs.materialsIndexMod.DynamicTexture {
-  def this(name: String, options: js.Any, scene: js.UndefOr[scala.Nothing], generateMipMaps: Boolean) = this()
-  def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean) = this()
   /**
     * Creates a DynamicTexture
     * @param name defines the name of the texture
@@ -19,42 +17,23 @@ class DynamicTexture protected ()
     * @param samplingMode defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
     * @param format defines the texture format to use (default is Engine.TEXTUREFORMAT_RGBA)
     */
-  def this(name: String, options: js.Any, scene: typings.babylonjs.sceneMod.Scene, generateMipMaps: Boolean) = this()
   def this(
     name: String,
     options: js.Any,
-    scene: js.UndefOr[scala.Nothing],
+    scene: js.UndefOr[Null | typings.babylonjs.sceneMod.Scene],
+    generateMipMaps: Boolean
+  ) = this()
+  def this(
+    name: String,
+    options: js.Any,
+    scene: js.UndefOr[Null | typings.babylonjs.sceneMod.Scene],
     generateMipMaps: Boolean,
     samplingMode: Double
   ) = this()
-  def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean, samplingMode: Double) = this()
   def this(
     name: String,
     options: js.Any,
-    scene: typings.babylonjs.sceneMod.Scene,
-    generateMipMaps: Boolean,
-    samplingMode: Double
-  ) = this()
-  def this(
-    name: String,
-    options: js.Any,
-    scene: js.UndefOr[scala.Nothing],
-    generateMipMaps: Boolean,
-    samplingMode: Double,
-    format: Double
-  ) = this()
-  def this(
-    name: String,
-    options: js.Any,
-    scene: Null,
-    generateMipMaps: Boolean,
-    samplingMode: Double,
-    format: Double
-  ) = this()
-  def this(
-    name: String,
-    options: js.Any,
-    scene: typings.babylonjs.sceneMod.Scene,
+    scene: js.UndefOr[Null | typings.babylonjs.sceneMod.Scene],
     generateMipMaps: Boolean,
     samplingMode: Double,
     format: Double

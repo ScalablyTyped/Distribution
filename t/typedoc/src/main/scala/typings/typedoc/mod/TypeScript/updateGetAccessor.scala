@@ -16,131 +16,23 @@ import scala.scalajs.js.annotation._
 object updateGetAccessor extends js.Object {
   def apply(
     node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration]
   ): GetAccessorDeclaration = js.native
   def apply(
     node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): GetAccessorDeclaration = js.native
   def apply(
     node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def apply(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,

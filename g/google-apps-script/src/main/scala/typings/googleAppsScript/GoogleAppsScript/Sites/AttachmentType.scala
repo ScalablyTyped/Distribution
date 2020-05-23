@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Sites
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,14 +22,6 @@ object AttachmentType extends js.Object {
   
   @js.native
   sealed trait WEB extends AttachmentType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AttachmentType with Double] = js.native
-  /* 1 */ @js.native
-  object HOSTED extends TopLevel[HOSTED with Double]
-  
-  /* 0 */ @js.native
-  object WEB extends TopLevel[WEB with Double]
   
 }
 

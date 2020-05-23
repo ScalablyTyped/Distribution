@@ -20,19 +20,19 @@ object TableColumns {
   @scala.inline
   def apply(
     alignment: left | center | right = null,
-    paddingLeft: Int | Double = null,
-    paddingRight: Int | Double = null,
-    truncate: Int | Double = null,
-    width: Int | Double = null,
+    paddingLeft: js.UndefOr[Double] = js.undefined,
+    paddingRight: js.UndefOr[Double] = js.undefined,
+    truncate: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
     wrapWord: js.UndefOr[Boolean] = js.undefined
   ): TableColumns = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapWord)) __obj.updateDynamic("wrapWord")(wrapWord.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingLeft)) __obj.updateDynamic("paddingLeft")(paddingLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRight)) __obj.updateDynamic("paddingRight")(paddingRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapWord)) __obj.updateDynamic("wrapWord")(wrapWord.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumns]
   }
 }

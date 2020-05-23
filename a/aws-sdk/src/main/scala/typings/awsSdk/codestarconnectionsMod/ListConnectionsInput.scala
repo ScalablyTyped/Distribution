@@ -23,12 +23,12 @@ trait ListConnectionsInput extends js.Object {
 object ListConnectionsInput {
   @scala.inline
   def apply(
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     ProviderTypeFilter: ProviderType = null
   ): ListConnectionsInput = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ProviderTypeFilter != null) __obj.updateDynamic("ProviderTypeFilter")(ProviderTypeFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConnectionsInput]

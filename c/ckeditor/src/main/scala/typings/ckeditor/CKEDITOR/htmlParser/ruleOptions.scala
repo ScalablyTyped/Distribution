@@ -16,8 +16,8 @@ object ruleOptions {
     excludeNestedEditable: js.UndefOr[Boolean] = js.undefined
   ): ruleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyToAll)) __obj.updateDynamic("applyToAll")(applyToAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeNestedEditable)) __obj.updateDynamic("excludeNestedEditable")(excludeNestedEditable.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyToAll)) __obj.updateDynamic("applyToAll")(applyToAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeNestedEditable)) __obj.updateDynamic("excludeNestedEditable")(excludeNestedEditable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ruleOptions]
   }
 }

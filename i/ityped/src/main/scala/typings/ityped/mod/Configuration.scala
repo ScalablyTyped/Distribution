@@ -15,15 +15,15 @@ object Configuration {
   @scala.inline
   def apply(
     loop: js.UndefOr[Boolean] = js.undefined,
-    pause: Int | Double = null,
+    pause: js.UndefOr[Double] = js.undefined,
     strings: js.Array[String] = null,
-    typeSpeed: Int | Double = null
+    typeSpeed: js.UndefOr[Double] = js.undefined
   ): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.get.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
-    if (typeSpeed != null) __obj.updateDynamic("typeSpeed")(typeSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeSpeed)) __obj.updateDynamic("typeSpeed")(typeSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

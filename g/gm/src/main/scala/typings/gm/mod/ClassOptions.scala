@@ -19,8 +19,8 @@ object ClassOptions {
   ): ClassOptions = {
     val __obj = js.Dynamic.literal()
     if (appPath != null) __obj.updateDynamic("appPath")(appPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageMagick)) __obj.updateDynamic("imageMagick")(imageMagick.asInstanceOf[js.Any])
-    if (!js.isUndefined(nativeAutoOrient)) __obj.updateDynamic("nativeAutoOrient")(nativeAutoOrient.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageMagick)) __obj.updateDynamic("imageMagick")(imageMagick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nativeAutoOrient)) __obj.updateDynamic("nativeAutoOrient")(nativeAutoOrient.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassOptions]
   }
 }

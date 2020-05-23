@@ -25,7 +25,7 @@ object IOptions {
     comparator: (/* file1 */ File, /* file2 */ File) => Double = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asc)) __obj.updateDynamic("asc")(asc.asInstanceOf[js.Any])
+    if (!js.isUndefined(asc)) __obj.updateDynamic("asc")(asc.get.asInstanceOf[js.Any])
     if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction2(comparator))
     __obj.asInstanceOf[IOptions]
   }

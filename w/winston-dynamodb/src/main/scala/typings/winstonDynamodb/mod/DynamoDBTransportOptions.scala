@@ -27,10 +27,10 @@ object DynamoDBTransportOptions {
   ): DynamoDBTransportOptions = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
     if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamoDoc)) __obj.updateDynamic("dynamoDoc")(dynamoDoc.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamoDoc)) __obj.updateDynamic("dynamoDoc")(dynamoDoc.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEnvironment)) __obj.updateDynamic("useEnvironment")(useEnvironment.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEnvironment)) __obj.updateDynamic("useEnvironment")(useEnvironment.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamoDBTransportOptions]
   }
 }

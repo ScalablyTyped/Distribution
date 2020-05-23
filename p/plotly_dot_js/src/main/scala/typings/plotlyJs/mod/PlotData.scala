@@ -1,16 +1,16 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonEnd
-import typings.plotlyJs.PartialDataTitle
-import typings.plotlyJs.PartialDelta
-import typings.plotlyJs.PartialFont
-import typings.plotlyJs.PartialGauge
-import typings.plotlyJs.PartialHoverLabel
-import typings.plotlyJs.PartialPlotMarker
-import typings.plotlyJs.PartialPlotNumber
-import typings.plotlyJs.PartialScatterLine
-import typings.plotlyJs.PartialScatterMarkerLine
-import typings.plotlyJs.Partialrowsnumbercolumnsn
+import typings.plotlyJs.anon.End
+import typings.plotlyJs.anon.PartialDataTitle
+import typings.plotlyJs.anon.PartialDelta
+import typings.plotlyJs.anon.PartialFont
+import typings.plotlyJs.anon.PartialGauge
+import typings.plotlyJs.anon.PartialHoverLabel
+import typings.plotlyJs.anon.PartialPlotMarker
+import typings.plotlyJs.anon.PartialPlotNumber
+import typings.plotlyJs.anon.PartialScatterLine
+import typings.plotlyJs.anon.PartialScatterMarkerLine
+import typings.plotlyJs.anon.Partialrowsnumbercolumnsn
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.`bottom center`
 import typings.plotlyJs.plotlyJsStrings.`bottom left`
@@ -57,6 +57,7 @@ import typings.plotlyJs.plotlyJsStrings.numberPlussigndelta
 import typings.plotlyJs.plotlyJsStrings.outside
 import typings.plotlyJs.plotlyJsStrings.percent
 import typings.plotlyJs.plotlyJsStrings.points
+import typings.plotlyJs.plotlyJsStrings.remainder
 import typings.plotlyJs.plotlyJsStrings.sd
 import typings.plotlyJs.plotlyJsStrings.skip
 import typings.plotlyJs.plotlyJsStrings.spline
@@ -71,6 +72,7 @@ import typings.plotlyJs.plotlyJsStrings.tonext
 import typings.plotlyJs.plotlyJsStrings.tonextx
 import typings.plotlyJs.plotlyJsStrings.tonexty
 import typings.plotlyJs.plotlyJsStrings.toself
+import typings.plotlyJs.plotlyJsStrings.total
 import typings.plotlyJs.plotlyJsStrings.tozerox
 import typings.plotlyJs.plotlyJsStrings.tozeroy
 import typings.plotlyJs.plotlyJsStrings.v
@@ -115,6 +117,7 @@ import scala.scalajs.js.annotation._
 trait PlotData extends js.Object {
   var autobinx: Boolean
   var boxmean: Boolean | sd
+  var branchvalues: total | remainder
   var colorscale: ColorScale
   var connectgaps: Boolean
   var customdata: js.Array[Datum]
@@ -133,6 +136,7 @@ trait PlotData extends js.Object {
   var hovertemplate: String | js.Array[String]
   var hovertext: String | js.Array[String]
   var labels: js.Array[Datum]
+  var lat: js.Array[Datum]
   var legendgroup: String
   var line: PartialScatterLine
   @JSName("line.color")
@@ -147,6 +151,7 @@ trait PlotData extends js.Object {
   var lineDotsmoothing: Double
   @JSName("line.width")
   var lineDotwidth: Double
+  var lon: js.Array[Datum]
   var marker: PartialPlotMarker
   @JSName("marker.color")
   var markerDotcolor: Color
@@ -211,7 +216,7 @@ trait PlotData extends js.Object {
   var width: Double | js.Array[Double]
   var x: (js.Array[js.Array[Datum] | Datum]) | TypedArray
   var xaxis: String
-  var xbins: AnonEnd
+  var xbins: End
   var xgap: Double
   var xy: Float32Array
   var y: (js.Array[js.Array[Datum] | Datum]) | TypedArray
@@ -226,6 +231,7 @@ object PlotData {
   def apply(
     autobinx: Boolean,
     boxmean: Boolean | sd,
+    branchvalues: total | remainder,
     colorscale: ColorScale,
     connectgaps: Boolean,
     customdata: js.Array[Datum],
@@ -244,6 +250,7 @@ object PlotData {
     hovertemplate: String | js.Array[String],
     hovertext: String | js.Array[String],
     labels: js.Array[Datum],
+    lat: js.Array[Datum],
     legendgroup: String,
     line: PartialScatterLine,
     lineDotcolor: Color,
@@ -252,6 +259,7 @@ object PlotData {
     lineDotsimplify: Boolean,
     lineDotsmoothing: Double,
     lineDotwidth: Double,
+    lon: js.Array[Datum],
     marker: PartialPlotMarker,
     markerDotcolor: Color,
     markerDotcolorscale: ColorScale | js.Array[ColorScale],
@@ -297,7 +305,7 @@ object PlotData {
     width: Double | js.Array[Double],
     x: (js.Array[js.Array[Datum] | Datum]) | TypedArray,
     xaxis: String,
-    xbins: AnonEnd,
+    xbins: End,
     xgap: Double,
     xy: Float32Array,
     y: (js.Array[js.Array[Datum] | Datum]) | TypedArray,
@@ -306,7 +314,7 @@ object PlotData {
     z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
     zsmooth: fast | best | `false`
   ): PlotData = {
-    val __obj = js.Dynamic.literal(autobinx = autobinx.asInstanceOf[js.Any], boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps.asInstanceOf[js.Any], customdata = customdata.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], error_x = error_x.asInstanceOf[js.Any], error_y = error_y.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], gauge = gauge.asInstanceOf[js.Any], hole = hole.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], hovertext = hovertext.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], legendgroup = legendgroup.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], showscale = showscale.asInstanceOf[js.Any], stackgroup = stackgroup.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textfont = textfont.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xbins = xbins.asInstanceOf[js.Any], xgap = xgap.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], ygap = ygap.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autobinx = autobinx.asInstanceOf[js.Any], boxmean = boxmean.asInstanceOf[js.Any], branchvalues = branchvalues.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps.asInstanceOf[js.Any], customdata = customdata.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], error_x = error_x.asInstanceOf[js.Any], error_y = error_y.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], gauge = gauge.asInstanceOf[js.Any], hole = hole.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], hovertext = hovertext.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], legendgroup = legendgroup.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], showscale = showscale.asInstanceOf[js.Any], stackgroup = stackgroup.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textfont = textfont.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xbins = xbins.asInstanceOf[js.Any], xgap = xgap.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], ygap = ygap.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
     __obj.updateDynamic("line.color")(lineDotcolor.asInstanceOf[js.Any])
     __obj.updateDynamic("line.dash")(lineDotdash.asInstanceOf[js.Any])
     __obj.updateDynamic("line.shape")(lineDotshape.asInstanceOf[js.Any])

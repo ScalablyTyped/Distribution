@@ -390,22 +390,22 @@ object ChartOptions {
     animation: Boolean | AnimationOptionsObject = null,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderRadius: Int | Double = null,
-    borderWidth: Int | Double = null,
+    borderRadius: js.UndefOr[Double] = js.undefined,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     className: String = null,
-    colorCount: Int | Double = null,
+    colorCount: js.UndefOr[Double] = js.undefined,
     displayErrors: js.UndefOr[Boolean] = js.undefined,
     events: ChartEventsOptions = null,
-    height: Double | String = null,
+    height: js.UndefOr[Null | Double | String] = js.undefined,
     ignoreHiddenSeries: js.UndefOr[Boolean] = js.undefined,
     inverted: js.UndefOr[Boolean] = js.undefined,
     map: String | js.Array[_] = null,
     mapTransforms: js.Any = null,
     margin: Double | js.Array[Double] = null,
-    marginBottom: Int | Double = null,
-    marginLeft: Int | Double = null,
-    marginRight: Int | Double = null,
-    marginTop: Int | Double = null,
+    marginBottom: js.UndefOr[Double] = js.undefined,
+    marginLeft: js.UndefOr[Double] = js.undefined,
+    marginRight: js.UndefOr[Double] = js.undefined,
+    marginTop: js.UndefOr[Double] = js.undefined,
     numberFormatter: (/* number */ Double, /* decimals */ Double, /* decimalPoint */ js.UndefOr[String], /* thousandsSep */ js.UndefOr[String]) => String = null,
     options3d: Chart3dOptions = null,
     panKey: OptionsPanKeyValue = null,
@@ -416,7 +416,7 @@ object ChartOptions {
     plotBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
     plotBackgroundImage: String = null,
     plotBorderColor: ColorString | GradientColorObject | PatternObject = null,
-    plotBorderWidth: Int | Double = null,
+    plotBorderWidth: js.UndefOr[Double] = js.undefined,
     plotShadow: Boolean | CSSObject = null,
     polar: js.UndefOr[Boolean] = js.undefined,
     proj4: js.Function = null,
@@ -428,68 +428,68 @@ object ChartOptions {
     shadow: Boolean | CSSObject = null,
     showAxes: js.UndefOr[Boolean] = js.undefined,
     spacing: js.Array[Double] = null,
-    spacingBottom: Int | Double = null,
-    spacingLeft: Int | Double = null,
-    spacingRight: Int | Double = null,
-    spacingTop: Int | Double = null,
+    spacingBottom: js.UndefOr[Double] = js.undefined,
+    spacingLeft: js.UndefOr[Double] = js.undefined,
+    spacingRight: js.UndefOr[Double] = js.undefined,
+    spacingTop: js.UndefOr[Double] = js.undefined,
     style: CSSObject = null,
     styledMode: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null,
-    width: Double | String = null,
+    width: js.UndefOr[Null | Double | String] = js.undefined,
     zoomKey: OptionsZoomKeyValue = null,
     zoomType: OptionsZoomTypeValue = null
   ): ChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (colorCount != null) __obj.updateDynamic("colorCount")(colorCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayErrors)) __obj.updateDynamic("displayErrors")(displayErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorCount)) __obj.updateDynamic("colorCount")(colorCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayErrors)) __obj.updateDynamic("displayErrors")(displayErrors.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreHiddenSeries)) __obj.updateDynamic("ignoreHiddenSeries")(ignoreHiddenSeries.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHiddenSeries)) __obj.updateDynamic("ignoreHiddenSeries")(ignoreHiddenSeries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (mapTransforms != null) __obj.updateDynamic("mapTransforms")(mapTransforms.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.get.asInstanceOf[js.Any])
     if (numberFormatter != null) __obj.updateDynamic("numberFormatter")(js.Any.fromFunction4(numberFormatter))
     if (options3d != null) __obj.updateDynamic("options3d")(options3d.asInstanceOf[js.Any])
     if (panKey != null) __obj.updateDynamic("panKey")(panKey.asInstanceOf[js.Any])
     if (panning != null) __obj.updateDynamic("panning")(panning.asInstanceOf[js.Any])
     if (parallelAxes != null) __obj.updateDynamic("parallelAxes")(parallelAxes.asInstanceOf[js.Any])
-    if (!js.isUndefined(parallelCoordinates)) __obj.updateDynamic("parallelCoordinates")(parallelCoordinates.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallelCoordinates)) __obj.updateDynamic("parallelCoordinates")(parallelCoordinates.get.asInstanceOf[js.Any])
     if (pinchType != null) __obj.updateDynamic("pinchType")(pinchType.asInstanceOf[js.Any])
     if (plotBackgroundColor != null) __obj.updateDynamic("plotBackgroundColor")(plotBackgroundColor.asInstanceOf[js.Any])
     if (plotBackgroundImage != null) __obj.updateDynamic("plotBackgroundImage")(plotBackgroundImage.asInstanceOf[js.Any])
     if (plotBorderColor != null) __obj.updateDynamic("plotBorderColor")(plotBorderColor.asInstanceOf[js.Any])
-    if (plotBorderWidth != null) __obj.updateDynamic("plotBorderWidth")(plotBorderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(plotBorderWidth)) __obj.updateDynamic("plotBorderWidth")(plotBorderWidth.get.asInstanceOf[js.Any])
     if (plotShadow != null) __obj.updateDynamic("plotShadow")(plotShadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.asInstanceOf[js.Any])
+    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.get.asInstanceOf[js.Any])
     if (proj4 != null) __obj.updateDynamic("proj4")(proj4.asInstanceOf[js.Any])
-    if (!js.isUndefined(reflow)) __obj.updateDynamic("reflow")(reflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(reflow)) __obj.updateDynamic("reflow")(reflow.get.asInstanceOf[js.Any])
     if (renderTo != null) __obj.updateDynamic("renderTo")(renderTo.asInstanceOf[js.Any])
     if (resetZoomButton != null) __obj.updateDynamic("resetZoomButton")(resetZoomButton.asInstanceOf[js.Any])
     if (scrollablePlotArea != null) __obj.updateDynamic("scrollablePlotArea")(scrollablePlotArea.asInstanceOf[js.Any])
     if (selectionMarkerFill != null) __obj.updateDynamic("selectionMarkerFill")(selectionMarkerFill.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAxes)) __obj.updateDynamic("showAxes")(showAxes.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAxes)) __obj.updateDynamic("showAxes")(showAxes.get.asInstanceOf[js.Any])
     if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (spacingBottom != null) __obj.updateDynamic("spacingBottom")(spacingBottom.asInstanceOf[js.Any])
-    if (spacingLeft != null) __obj.updateDynamic("spacingLeft")(spacingLeft.asInstanceOf[js.Any])
-    if (spacingRight != null) __obj.updateDynamic("spacingRight")(spacingRight.asInstanceOf[js.Any])
-    if (spacingTop != null) __obj.updateDynamic("spacingTop")(spacingTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacingBottom)) __obj.updateDynamic("spacingBottom")(spacingBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacingLeft)) __obj.updateDynamic("spacingLeft")(spacingLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacingRight)) __obj.updateDynamic("spacingRight")(spacingRight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spacingTop)) __obj.updateDynamic("spacingTop")(spacingTop.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(styledMode)) __obj.updateDynamic("styledMode")(styledMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(styledMode)) __obj.updateDynamic("styledMode")(styledMode.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zoomKey != null) __obj.updateDynamic("zoomKey")(zoomKey.asInstanceOf[js.Any])
     if (zoomType != null) __obj.updateDynamic("zoomType")(zoomType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartOptions]

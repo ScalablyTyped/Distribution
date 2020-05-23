@@ -1,7 +1,7 @@
 package typings.winstonMail.mod
 
 import typings.std.Transport
-import typings.winstonMail.AnonLevel
+import typings.winstonMail.anon.Level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ class Mail protected () extends Transport {
   var subject: String = js.native
   var to: String = js.native
   var unique: Boolean = js.native
-  def filter(obj: AnonLevel): Boolean = js.native
+  def filter(obj: Level): Boolean = js.native
   def log(level: js.Any, msg: js.Any, meta: js.Any, callback: js.Any): js.Any = js.native
 }
 

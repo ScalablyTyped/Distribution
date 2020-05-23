@@ -20,9 +20,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.CellFormat")
 @js.native
-class CellFormat protected () extends js.Object {
+trait CellFormat extends js.Object {
   var AddIndent: Boolean = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("Borders")

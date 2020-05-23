@@ -49,7 +49,7 @@ object Activity {
   def apply(
     CommentMetadata: CommentMetadata = null,
     Initiator: UserMetadata = null,
-    IsIndirectActivity: js.UndefOr[Boolean] = js.undefined,
+    IsIndirectActivity: js.UndefOr[BooleanType] = js.undefined,
     OrganizationId: IdType = null,
     OriginalParent: ResourceMetadata = null,
     Participants: Participants = null,
@@ -60,7 +60,7 @@ object Activity {
     val __obj = js.Dynamic.literal()
     if (CommentMetadata != null) __obj.updateDynamic("CommentMetadata")(CommentMetadata.asInstanceOf[js.Any])
     if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsIndirectActivity)) __obj.updateDynamic("IsIndirectActivity")(IsIndirectActivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsIndirectActivity)) __obj.updateDynamic("IsIndirectActivity")(IsIndirectActivity.get.asInstanceOf[js.Any])
     if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId.asInstanceOf[js.Any])
     if (OriginalParent != null) __obj.updateDynamic("OriginalParent")(OriginalParent.asInstanceOf[js.Any])
     if (Participants != null) __obj.updateDynamic("Participants")(Participants.asInstanceOf[js.Any])

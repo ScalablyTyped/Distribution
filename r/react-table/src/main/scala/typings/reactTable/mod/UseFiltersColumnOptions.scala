@@ -14,7 +14,7 @@ trait UseFiltersColumnOptions[D /* <: js.Object */] extends js.Object {
 
 object UseFiltersColumnOptions {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     Filter: Renderer[FilterProps[D]] = null,
     defaultCanFilter: js.UndefOr[Boolean] = js.undefined,
     disableFilters: js.UndefOr[Boolean] = js.undefined,
@@ -22,8 +22,8 @@ object UseFiltersColumnOptions {
   ): UseFiltersColumnOptions[D] = {
     val __obj = js.Dynamic.literal()
     if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultCanFilter)) __obj.updateDynamic("defaultCanFilter")(defaultCanFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFilters)) __obj.updateDynamic("disableFilters")(disableFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultCanFilter)) __obj.updateDynamic("defaultCanFilter")(defaultCanFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFilters)) __obj.updateDynamic("disableFilters")(disableFilters.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseFiltersColumnOptions[D]]
   }

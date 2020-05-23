@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait WebviewPortMapping extends js.Object {
   /**
-  		 * Destination port. The `webviewPort` is resolved to this port.
-  		 */
+    * Destination port. The `webviewPort` is resolved to this port.
+    */
   val extensionHostPort: Double
   /**
-  		 * Localhost port to remap inside the webview.
-  		 */
+    * Localhost port to remap inside the webview.
+    */
   val webviewPort: Double
 }
 

@@ -32,10 +32,10 @@ object IDirectionsRequestOptions {
   @scala.inline
   def apply(
     distanceUnit: DistanceUnit = null,
-    maxRoutes: Int | Double = null,
+    maxRoutes: js.UndefOr[Double] = js.undefined,
     routeAvoidance: js.Array[RouteAvoidance] = null,
     routeDraggable: js.UndefOr[Boolean] = js.undefined,
-    routeIndex: Int | Double = null,
+    routeIndex: js.UndefOr[Double] = js.undefined,
     routeMode: RouteMode = null,
     routeOptimization: RouteOptimization = null,
     time: Date = null,
@@ -44,10 +44,10 @@ object IDirectionsRequestOptions {
   ): IDirectionsRequestOptions = {
     val __obj = js.Dynamic.literal()
     if (distanceUnit != null) __obj.updateDynamic("distanceUnit")(distanceUnit.asInstanceOf[js.Any])
-    if (maxRoutes != null) __obj.updateDynamic("maxRoutes")(maxRoutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRoutes)) __obj.updateDynamic("maxRoutes")(maxRoutes.get.asInstanceOf[js.Any])
     if (routeAvoidance != null) __obj.updateDynamic("routeAvoidance")(routeAvoidance.asInstanceOf[js.Any])
-    if (!js.isUndefined(routeDraggable)) __obj.updateDynamic("routeDraggable")(routeDraggable.asInstanceOf[js.Any])
-    if (routeIndex != null) __obj.updateDynamic("routeIndex")(routeIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(routeDraggable)) __obj.updateDynamic("routeDraggable")(routeDraggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(routeIndex)) __obj.updateDynamic("routeIndex")(routeIndex.get.asInstanceOf[js.Any])
     if (routeMode != null) __obj.updateDynamic("routeMode")(routeMode.asInstanceOf[js.Any])
     if (routeOptimization != null) __obj.updateDynamic("routeOptimization")(routeOptimization.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])

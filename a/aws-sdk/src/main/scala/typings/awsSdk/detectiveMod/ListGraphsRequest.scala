@@ -18,9 +18,9 @@ trait ListGraphsRequest extends js.Object {
 
 object ListGraphsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: PaginationToken = null): ListGraphsRequest = {
+  def apply(MaxResults: js.UndefOr[MemberResultsLimit] = js.undefined, NextToken: PaginationToken = null): ListGraphsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGraphsRequest]
   }

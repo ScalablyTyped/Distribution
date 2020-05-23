@@ -18,9 +18,9 @@ trait ConnectionDraining extends js.Object {
 
 object ConnectionDraining {
   @scala.inline
-  def apply(Enabled: ConnectionDrainingEnabled, Timeout: Int | Double = null): ConnectionDraining = {
+  def apply(Enabled: ConnectionDrainingEnabled, Timeout: js.UndefOr[ConnectionDrainingTimeout] = js.undefined): ConnectionDraining = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-    if (Timeout != null) __obj.updateDynamic("Timeout")(Timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionDraining]
   }
 }

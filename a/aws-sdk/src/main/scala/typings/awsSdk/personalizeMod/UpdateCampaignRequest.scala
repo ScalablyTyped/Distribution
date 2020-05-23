@@ -22,9 +22,13 @@ trait UpdateCampaignRequest extends js.Object {
 
 object UpdateCampaignRequest {
   @scala.inline
-  def apply(campaignArn: Arn, minProvisionedTPS: Int | Double = null, solutionVersionArn: Arn = null): UpdateCampaignRequest = {
+  def apply(
+    campaignArn: Arn,
+    minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.undefined,
+    solutionVersionArn: Arn = null
+  ): UpdateCampaignRequest = {
     val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any])
-    if (minProvisionedTPS != null) __obj.updateDynamic("minProvisionedTPS")(minProvisionedTPS.asInstanceOf[js.Any])
+    if (!js.isUndefined(minProvisionedTPS)) __obj.updateDynamic("minProvisionedTPS")(minProvisionedTPS.get.asInstanceOf[js.Any])
     if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCampaignRequest]
   }

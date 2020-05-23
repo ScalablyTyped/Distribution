@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNativeJoi.mod._SchemaLike because Already inherited
 - typings.reactNativeJoi.mod._Schema because Already inherited */ @js.native
 trait AlternativesSchema extends AnySchema {

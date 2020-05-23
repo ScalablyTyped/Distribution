@@ -16,16 +16,16 @@ object ILifeCycle {
   @scala.inline
   def apply(
     deleted: String = null,
-    deletionMessage: String = null,
+    deletionMessage: js.UndefOr[Null | String] = js.undefined,
     deprecated: String = null,
-    deprecationMessage: String = null,
+    deprecationMessage: js.UndefOr[Null | String] = js.undefined,
     introduced: String = null
   ): ILifeCycle = {
     val __obj = js.Dynamic.literal()
     if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (deletionMessage != null) __obj.updateDynamic("deletionMessage")(deletionMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletionMessage)) __obj.updateDynamic("deletionMessage")(deletionMessage.asInstanceOf[js.Any])
     if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecationMessage)) __obj.updateDynamic("deprecationMessage")(deprecationMessage.asInstanceOf[js.Any])
     if (introduced != null) __obj.updateDynamic("introduced")(introduced.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILifeCycle]
   }

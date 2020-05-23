@@ -15,7 +15,7 @@ object StrictOptions {
   @scala.inline
   def apply(exactMatch: js.UndefOr[Boolean] = js.undefined): StrictOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictOptions]
   }
 }

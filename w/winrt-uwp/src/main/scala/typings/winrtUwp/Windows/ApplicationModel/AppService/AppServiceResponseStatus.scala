@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.AppService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object AppServiceResponseStatus extends js.Object {
   /** An unknown error occurred. */
   @js.native
   sealed trait unknown extends AppServiceResponseStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppServiceResponseStatus with Double] = js.native
-  /* 1 */ @js.native
-  object failure extends TopLevel[failure with Double]
-  
-  /* 2 */ @js.native
-  object resourceLimitsExceeded extends TopLevel[resourceLimitsExceeded with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 3 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

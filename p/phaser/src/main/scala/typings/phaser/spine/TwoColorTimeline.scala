@@ -4,12 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.TwoColorTimeline")
-@js.native
-class TwoColorTimeline protected () extends CurveTimeline {
-  def this(frameCount: Double) = this()
-  var frames: ArrayLike[Double] = js.native
-  var slotIndex: Double = js.native
+trait TwoColorTimeline extends CurveTimeline {
+  var frames: ArrayLike[Double]
+  var slotIndex: Double
   def setFrame(
     frameIndex: Double,
     time: Double,
@@ -20,28 +17,27 @@ class TwoColorTimeline protected () extends CurveTimeline {
     r2: Double,
     g2: Double,
     b2: Double
-  ): Unit = js.native
+  ): Unit
 }
 
-/* static members */
-@JSGlobal("spine.TwoColorTimeline")
-@js.native
-object TwoColorTimeline extends js.Object {
-  var A: Double = js.native
-  var B: Double = js.native
-  var B2: Double = js.native
-  var ENTRIES: Double = js.native
-  var G: Double = js.native
-  var G2: Double = js.native
-  var PREV_A: Double = js.native
-  var PREV_B: Double = js.native
-  var PREV_B2: Double = js.native
-  var PREV_G: Double = js.native
-  var PREV_G2: Double = js.native
-  var PREV_R: Double = js.native
-  var PREV_R2: Double = js.native
-  var PREV_TIME: Double = js.native
-  var R: Double = js.native
-  var R2: Double = js.native
+object TwoColorTimeline {
+  @scala.inline
+  def apply(
+    apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
+    curves: js.Any,
+    frames: ArrayLike[Double],
+    getCurvePercent: (Double, Double) => Double,
+    getCurveType: Double => Double,
+    getFrameCount: () => Double,
+    getPropertyId: () => Double,
+    setCurve: (Double, Double, Double, Double, Double) => Unit,
+    setFrame: (Double, Double, Double, Double, Double, Double, Double, Double, Double) => Unit,
+    setLinear: Double => Unit,
+    setStepped: Double => Unit,
+    slotIndex: Double
+  ): TwoColorTimeline = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction7(apply), curves = curves.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], getCurvePercent = js.Any.fromFunction2(getCurvePercent), getCurveType = js.Any.fromFunction1(getCurveType), getFrameCount = js.Any.fromFunction0(getFrameCount), getPropertyId = js.Any.fromFunction0(getPropertyId), setCurve = js.Any.fromFunction5(setCurve), setFrame = js.Any.fromFunction9(setFrame), setLinear = js.Any.fromFunction1(setLinear), setStepped = js.Any.fromFunction1(setStepped), slotIndex = slotIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TwoColorTimeline]
+  }
 }
 

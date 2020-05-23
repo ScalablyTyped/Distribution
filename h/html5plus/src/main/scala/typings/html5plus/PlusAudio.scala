@@ -47,7 +47,7 @@ trait PlusAudio extends js.Object {
   /**
     * 创建音频播放对象
     * 创建一个音频文件播放对象，用于打开音频文件并播放。
-    * 	可通过path参数指定要播放的音频文件。创建后返回播放对象，通过Audio.play方法开始播放。
+    *     可通过path参数指定要播放的音频文件。创建后返回播放对象，通过Audio.play方法开始播放。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
     */

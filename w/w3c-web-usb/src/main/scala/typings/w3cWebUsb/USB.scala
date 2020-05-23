@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("USB")
 @js.native
-class USB () extends EventTarget {
+trait USB extends EventTarget {
   var onconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _]) | Null = js.native
   var ondisconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _]) | Null = js.native
   @JSName("addEventListener")

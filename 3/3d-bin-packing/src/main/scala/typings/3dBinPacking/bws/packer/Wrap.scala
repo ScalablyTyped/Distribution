@@ -17,88 +17,59 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.Wrap")
-@js.native
-class Wrap protected () extends js.Object {
-  /**
-    * Construct from a Wrapper.
-    *
-    * @param wrapper A wrapper who will contain an instance.
-    */
-  def this(wrapper: Wrapper) = this()
-  /**
-    * Construct from a Wrapper and Instance with its position and default orientation 1.
-    *
-    * @param wrapper A wrapper who contains the instance.
-    * @param instance An instance contained into the wrapper.
-    * @param x Coordinate-X of the {@link instance} placement in the {@link wrapper}.
-    * @param y Coordinate-Y of the {@link instance} placement in the {@link wrapper}.
-    * @param z Coordinate-Z of the {@link instance} placement in the {@link wrapper}.
-    */
-  def this(wrapper: Wrapper, instance: Instance, x: Double, y: Double, z: Double) = this()
-  /**
-    * Construct from a Wrapper and Instance with its position and orientation.
-    *
-    * @param wrapper A wrapper who contains the instance.
-    * @param instance An instance contained into the wrapper.
-    * @param x Coordinate-X of the {@link instance} placement in the {@link wrapper}.
-    * @param y Coordinate-Y of the {@link instance} placement in the {@link wrapper}.
-    * @param z Coordinate-Z of the {@link instance} placement in the {@link wrapper}.
-    * @param orientation Placement orientation of wrapped {@link instance}.
-    */
-  def this(wrapper: Wrapper, instance: Instance, x: Double, y: Double, z: Double, orientation: Double) = this()
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ trait Wrap extends js.Object {
   @JSName("$instanceName")
-  val $instanceName: String = js.native
+  val $instanceName: String
   @JSName("$layoutScale")
-  val $layoutScale: String = js.native
+  val $layoutScale: String
   @JSName("$position")
-  val $position: String = js.native
+  val $position: String
   /**
     * An instance wrapped into the {@link wrapper}.
     */
-  var instance: Instance = js.native
+  var instance: Instance
   /**
     * Placement orientation of wrapped {@link instance}.
     */
-  var orientation: Double = js.native
+  var orientation: Double
   /**
     * A wrapper wrapping the {@link instance}.
     */
-  var wrapper: Wrapper = js.native
+  var wrapper: Wrapper
   /**
     * Coordinate-X of the instance placement in the wrapper.
     */
-  var x: Double = js.native
+  var x: Double
   /**
     * Coordinate-Y of the instance placement in the wrapper.
     */
-  var y: Double = js.native
+  var y: Double
   /**
     * Coordinate-Z of the instance placement in the wrapper.
     */
-  var z: Double = js.native
+  var z: Double
   /**
     * @inheritdoc
     */
-  def TAG(): String = js.native
+  def TAG(): String
   /**
     * @brief Orientation change is occured in level of the packer.
     *
     * @details orientation Packer's new orientation.
     */
-  def changeWrapperOrientation(orientation: Double): Unit = js.native
+  def changeWrapperOrientation(orientation: Double): Unit
   /**
     * @inheritdoc
     */
   def construct(
     xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-  ): Unit = js.native
+  ): Unit
   /**
     * Factory method of wrapped Instance.
     *
     * @param type Type of contained Instance's type.
     */
-  /* protected */ def createInstance(`type`: String): Instance = js.native
+  /* protected */ def createInstance(`type`: String): Instance
   /**
     * @brief Estimate orientation by given size.
     *
@@ -106,53 +77,53 @@ class Wrap protected () extends js.Object {
     * @param height Height by placement.
     * @param length Length by placement.
     */
-  def estimateOrientation(width: Double, height: Double, length: Double): Unit = js.native
+  def estimateOrientation(width: Double, height: Double, length: Double): Unit
   /**
     * Get instance.
     */
-  def getInstance(): Instance = js.native
+  def getInstance(): Instance
   /**
     * Get height.
     */
-  def getLayoutHeight(): Double = js.native
+  def getLayoutHeight(): Double
   /**
     * Get width.
     */
-  def getLayoutWidth(): Double = js.native
+  def getLayoutWidth(): Double
   /**
     * Get length.
     */
-  def getLength(): Double = js.native
+  def getLength(): Double
   /**
     * Get orientation.
     */
-  def getOrientation(): Double = js.native
+  def getOrientation(): Double
   /**
     * Get volume.
     */
-  def getVolume(): Double = js.native
+  def getVolume(): Double
   /**
     * Get wrapper.
     */
-  def getWrapper(): Wrapper = js.native
+  def getWrapper(): Wrapper
   /**
     * Get x.
     */
-  def getX(): Double = js.native
+  def getX(): Double
   /**
     * Get y.
     */
-  def getY(): Double = js.native
+  def getY(): Double
   /**
     * Get z.
     */
-  def getZ(): Double = js.native
+  def getZ(): Double
   /**
     * Set orientation.
     *
     * @param orientation Orientation code (1 to 6).
     */
-  def setOrientation(orientation: Double): Unit = js.native
+  def setOrientation(orientation: Double): Unit
   /**
     * Set position.
     *
@@ -160,10 +131,46 @@ class Wrap protected () extends js.Object {
     * @param y Coordinate-Y of the instance placement in the wrapper.
     * @param z Coordinate-Z of the instance placement in the wrapper.
     */
-  def setPosition(x: Double, y: Double, z: Double): Unit = js.native
+  def setPosition(x: Double, y: Double, z: Double): Unit
   /**
     * @inheritdoc
     */
-  def toXML(): js.Any = js.native
+  def toXML(): js.Any
+}
+
+object Wrap {
+  @scala.inline
+  def apply(
+    $instanceName: String,
+    $layoutScale: String,
+    $position: String,
+    TAG: () => String,
+    changeWrapperOrientation: Double => Unit,
+    construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit,
+    createInstance: String => Instance,
+    estimateOrientation: (Double, Double, Double) => Unit,
+    getInstance: () => Instance,
+    getLayoutHeight: () => Double,
+    getLayoutWidth: () => Double,
+    getLength: () => Double,
+    getOrientation: () => Double,
+    getVolume: () => Double,
+    getWrapper: () => Wrapper,
+    getX: () => Double,
+    getY: () => Double,
+    getZ: () => Double,
+    instance: Instance,
+    orientation: Double,
+    setOrientation: Double => Unit,
+    setPosition: (Double, Double, Double) => Unit,
+    toXML: () => js.Any,
+    wrapper: Wrapper,
+    x: Double,
+    y: Double,
+    z: Double
+  ): Wrap = {
+    val __obj = js.Dynamic.literal($instanceName = $instanceName.asInstanceOf[js.Any], $layoutScale = $layoutScale.asInstanceOf[js.Any], $position = $position.asInstanceOf[js.Any], TAG = js.Any.fromFunction0(TAG), changeWrapperOrientation = js.Any.fromFunction1(changeWrapperOrientation), construct = js.Any.fromFunction1(construct), createInstance = js.Any.fromFunction1(createInstance), estimateOrientation = js.Any.fromFunction3(estimateOrientation), getInstance = js.Any.fromFunction0(getInstance), getLayoutHeight = js.Any.fromFunction0(getLayoutHeight), getLayoutWidth = js.Any.fromFunction0(getLayoutWidth), getLength = js.Any.fromFunction0(getLength), getOrientation = js.Any.fromFunction0(getOrientation), getVolume = js.Any.fromFunction0(getVolume), getWrapper = js.Any.fromFunction0(getWrapper), getX = js.Any.fromFunction0(getX), getY = js.Any.fromFunction0(getY), getZ = js.Any.fromFunction0(getZ), instance = instance.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], setOrientation = js.Any.fromFunction1(setOrientation), setPosition = js.Any.fromFunction3(setPosition), toXML = js.Any.fromFunction0(toXML), wrapper = wrapper.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Wrap]
+  }
 }
 

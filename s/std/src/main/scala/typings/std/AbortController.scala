@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,11 @@ trait AbortController extends js.Object {
   def abort(): Unit
 }
 
-@JSGlobal("AbortController")
-@js.native
-object AbortController extends Instantiable0[AbortController]
+object AbortController {
+  @scala.inline
+  def apply(abort: () => Unit, signal: AbortSignal): AbortController = {
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), signal = signal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AbortController]
+  }
+}
 

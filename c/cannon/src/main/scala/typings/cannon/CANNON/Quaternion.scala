@@ -4,13 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.Quaternion")
 @js.native
-class Quaternion () extends js.Object {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, z: Double) = this()
-  def this(x: Double, y: Double, z: Double, w: Double) = this()
+trait Quaternion extends js.Object {
   var w: Double = js.native
   var x: Double = js.native
   var y: Double = js.native

@@ -14,14 +14,14 @@ trait IBasicForm extends IObservable {
   /** [Config Option] (Object) */
   var api: js.UndefOr[js.Any] = js.undefined
   /** [Method] Calls Ext applyIf for all field in this form with the passed object
-  		* @param obj Object The object to be applied
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param obj Object The object to be applied
+    * @returns Ext.form.Basic this
+    */
   var applyIfToFields: js.UndefOr[js.Function1[/* obj */ js.UndefOr[js.Any], IBasic]] = js.undefined
   /** [Method] Calls Ext apply for all fields in this form with the passed object
-  		* @param obj Object The object to be applied
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param obj Object The object to be applied
+    * @returns Ext.form.Basic this
+    */
   var applyToFields: js.UndefOr[js.Function1[/* obj */ js.UndefOr[js.Any], IBasic]] = js.undefined
   /** [Config Option] (Object) */
   var baseParams: js.UndefOr[js.Any] = js.undefined
@@ -30,46 +30,46 @@ trait IBasicForm extends IObservable {
   /** [Method] Check whether the validity of the entire form has changed since it was last checked and if so fire the validitychang  */
   var checkValidity: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Clears all invalid field messages in this form
-  		* @returns Ext.form.Basic this
-  		*/
+    * @returns Ext.form.Basic this
+    */
   var clearInvalid: js.UndefOr[js.Function0[IBasic]] = js.undefined
   /** [Method] Destroys this object  */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Performs a predefined action an implementation of Ext form action Action to perform application specific processing
-  		* @param action String/Ext.form.action.Action The name of the predefined action type, or instance of Ext.form.action.Action to perform.
-  		* @param options Object The options to pass to the Ext.form.action.Action that will get created, if the action argument is a String. All of the config options listed below are supported by both the submit and load actions unless otherwise noted (custom actions could also accept other config options):
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param action String/Ext.form.action.Action The name of the predefined action type, or instance of Ext.form.action.Action to perform.
+    * @param options Object The options to pass to the Ext.form.action.Action that will get created, if the action argument is a String. All of the config options listed below are supported by both the submit and load actions unless otherwise noted (custom actions could also accept other config options):
+    * @returns Ext.form.Basic this
+    */
   var doAction: js.UndefOr[
     js.Function2[/* action */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], IBasic]
   ] = js.undefined
   /** [Config Option] (Object/Ext.data.reader.Reader) */
   var errorReader: js.UndefOr[js.Any] = js.undefined
   /** [Method] Find a specific Ext form field Field in this form by id or name
-  		* @param id String The value to search for (specify either a id or name or hiddenName).
-  		* @returns any The first matching field, or null if none was found.
-  		*/
+    * @param id String The value to search for (specify either a id or name or hiddenName).
+    * @returns any The first matching field, or null if none was found.
+    */
   var findField: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], _]] = js.undefined
   /** [Method] Retrieves the fields in the form as a set of key value pairs using their getModelData  method to collect the values
-  		* @param dirtyOnly Boolean If true, only fields that are dirty will be included in the result.
-  		* @returns Object
-  		*/
+    * @param dirtyOnly Boolean If true, only fields that are dirty will be included in the result.
+    * @returns Object
+    */
   var getFieldValues: js.UndefOr[js.Function1[/* dirtyOnly */ js.UndefOr[Boolean], _]] = js.undefined
   /** [Method] Return all the Ext form field Field components in the owner container
-  		* @returns Ext.util.MixedCollection Collection of the Field objects
-  		*/
+    * @returns Ext.util.MixedCollection Collection of the Field objects
+    */
   var getFields: js.UndefOr[js.Function0[IMixedCollection]] = js.undefined
   /** [Method] Returns the last Ext data Model instance that was loaded via loadRecord
-  		* @returns Ext.data.Model The record
-  		*/
+    * @returns Ext.data.Model The record
+    */
   var getRecord: js.UndefOr[js.Function0[IModel]] = js.undefined
   /** [Method] Retrieves the fields in the form as a set of key value pairs using their getSubmitData  method to collect the values
-  		* @param asString Boolean If true, will return the key/value collection as a single URL-encoded param string.
-  		* @param dirtyOnly Boolean If true, only fields that are dirty will be included in the result.
-  		* @param includeEmptyText Boolean If true, the configured emptyText of empty fields will be used.
-  		* @param useDataValues Boolean If true, the getModelData method is used to retrieve values from fields, otherwise the getSubmitData method is used.
-  		* @returns String/Object
-  		*/
+    * @param asString Boolean If true, will return the key/value collection as a single URL-encoded param string.
+    * @param dirtyOnly Boolean If true, only fields that are dirty will be included in the result.
+    * @param includeEmptyText Boolean If true, the configured emptyText of empty fields will be used.
+    * @param useDataValues Boolean If true, the getModelData method is used to retrieve values from fields, otherwise the getSubmitData method is used.
+    * @returns String/Object
+    */
   var getValues: js.UndefOr[
     js.Function4[
       /* asString */ js.UndefOr[Boolean], 
@@ -82,33 +82,33 @@ trait IBasicForm extends IObservable {
   /** [Method] Returns true if the form contains any invalid fields  */
   var hasInvalidField: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns true if the form contains a file upload field
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var hasUpload: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true if any fields in this form have changed from their original values
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isDirty: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true if client side validation on the form is successful
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isValid: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (Boolean) */
   var jsonSubmit: js.UndefOr[Boolean] = js.undefined
   /** [Method] Shortcut to do a load action
-  		* @param options Object The options to pass to the action (see doAction for details)
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param options Object The options to pass to the action (see doAction for details)
+    * @returns Ext.form.Basic this
+    */
   var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBasic]] = js.undefined
   /** [Method] Loads an Ext data Model into this form by calling setValues with the record data
-  		* @param record Ext.data.Model The record to load
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param record Ext.data.Model The record to load
+    * @returns Ext.form.Basic this
+    */
   var loadRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.undefined
   /** [Method] Mark fields in this form invalid in bulk
-  		* @param errors Object/Object[]/Ext.data.Errors Either an array in the form [{id:'fieldId', msg:'The message'}, ...], an object hash of {id: msg, id2: msg2}, or a Ext.data.Errors object.
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param errors Object/Object[]/Ext.data.Errors Either an array in the form [{id:'fieldId', msg:'The message'}, ...], an object hash of {id: msg, id2: msg2}, or a Ext.data.Errors object.
+    * @returns Ext.form.Basic this
+    */
   var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], IBasic]] = js.undefined
   /** [Config Option] (String) */
   var method: js.UndefOr[String] = js.undefined
@@ -121,30 +121,30 @@ trait IBasicForm extends IObservable {
   /** [Config Option] (Object/Ext.data.reader.Reader) */
   var reader: js.UndefOr[js.Any] = js.undefined
   /** [Method] Resets all fields in this form
-  		* @param resetRecord Boolean True to unbind any record set by loadRecord
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param resetRecord Boolean True to unbind any record set by loadRecord
+    * @returns Ext.form.Basic this
+    */
   var reset: js.UndefOr[js.Function1[/* resetRecord */ js.UndefOr[Boolean], IBasic]] = js.undefined
   /** [Method] Set values for fields in this form in bulk
-  		* @param values Object/Object[] Either an array in the form: [{id:'clientName', value:'Fred. Olsen Lines'}, {id:'portOfLoading', value:'FXT'}, {id:'portOfDischarge', value:'OSL'} ]  or an object hash of the form: {  clientName: 'Fred. Olsen Lines',  portOfLoading: 'FXT',  portOfDischarge: 'OSL' }
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param values Object/Object[] Either an array in the form: [{id:'clientName', value:'Fred. Olsen Lines'}, {id:'portOfLoading', value:'FXT'}, {id:'portOfDischarge', value:'OSL'} ]  or an object hash of the form: {  clientName: 'Fred. Olsen Lines',  portOfLoading: 'FXT',  portOfDischarge: 'OSL' }
+    * @returns Ext.form.Basic this
+    */
   var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], IBasic]] = js.undefined
   /** [Config Option] (Boolean) */
   var standardSubmit: js.UndefOr[Boolean] = js.undefined
   /** [Method] Shortcut to do a submit action
-  		* @param options Object The options to pass to the action (see doAction for details).
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param options Object The options to pass to the action (see doAction for details).
+    * @returns Ext.form.Basic this
+    */
   var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBasic]] = js.undefined
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Boolean) */
   var trackResetOnLoad: js.UndefOr[Boolean] = js.undefined
   /** [Method] Persists the values in this form into the passed Ext data Model object in a beginEdit endEdit block
-  		* @param record Ext.data.Model The record to edit
-  		* @returns Ext.form.Basic this
-  		*/
+    * @param record Ext.data.Model The record to edit
+    * @returns Ext.form.Basic this
+    */
   var updateRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.undefined
   /** [Config Option] (String) */
   var url: js.UndefOr[String] = js.undefined
@@ -226,7 +226,7 @@ object IBasicForm {
     submit: /* options */ js.UndefOr[js.Any] => IBasic = null,
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     trackResetOnLoad: js.UndefOr[Boolean] = js.undefined,
     un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     updateRecord: /* record */ js.UndefOr[IModel] => IBasic = null,
@@ -274,9 +274,9 @@ object IBasicForm {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
-    if (!js.isUndefined(jsonSubmit)) __obj.updateDynamic("jsonSubmit")(jsonSubmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonSubmit)) __obj.updateDynamic("jsonSubmit")(jsonSubmit.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loadRecord != null) __obj.updateDynamic("loadRecord")(js.Any.fromFunction1(loadRecord))
@@ -288,7 +288,7 @@ object IBasicForm {
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (paramOrder != null) __obj.updateDynamic("paramOrder")(paramOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash.get.asInstanceOf[js.Any])
     if (reader != null) __obj.updateDynamic("reader")(reader.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
     if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
@@ -299,14 +299,14 @@ object IBasicForm {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setValues != null) __obj.updateDynamic("setValues")(js.Any.fromFunction1(setValues))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardSubmit)) __obj.updateDynamic("standardSubmit")(standardSubmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardSubmit)) __obj.updateDynamic("standardSubmit")(standardSubmit.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (submit != null) __obj.updateDynamic("submit")(js.Any.fromFunction1(submit))
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackResetOnLoad)) __obj.updateDynamic("trackResetOnLoad")(trackResetOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackResetOnLoad)) __obj.updateDynamic("trackResetOnLoad")(trackResetOnLoad.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (updateRecord != null) __obj.updateDynamic("updateRecord")(js.Any.fromFunction1(updateRecord))
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

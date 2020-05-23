@@ -12,9 +12,9 @@ trait IConsensusInitializeBlockResponse extends js.Object {
 
 object IConsensusInitializeBlockResponse {
   @scala.inline
-  def apply(status: Status = null): IConsensusInitializeBlockResponse = {
+  def apply(status: js.UndefOr[Null | Status] = js.undefined): IConsensusInitializeBlockResponse = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusInitializeBlockResponse]
   }
 }

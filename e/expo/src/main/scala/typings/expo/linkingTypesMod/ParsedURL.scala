@@ -19,11 +19,7 @@ object ParsedURL {
     queryParams: QueryParams = null,
     scheme: String = null
   ): ParsedURL = {
-    val __obj = js.Dynamic.literal()
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], queryParams = queryParams.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedURL]
   }
 }

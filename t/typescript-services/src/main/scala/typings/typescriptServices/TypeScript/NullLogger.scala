@@ -4,20 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.NullLogger")
-@js.native
-class NullLogger () extends ILogger {
-  /* CompleteClass */
-  override def debug(): Boolean = js.native
-  /* CompleteClass */
-  override def error(): Boolean = js.native
-  /* CompleteClass */
-  override def fatal(): Boolean = js.native
-  /* CompleteClass */
-  override def information(): Boolean = js.native
-  /* CompleteClass */
-  override def log(s: String): Unit = js.native
-  /* CompleteClass */
-  override def warning(): Boolean = js.native
+trait NullLogger extends ILogger
+
+object NullLogger {
+  @scala.inline
+  def apply(
+    debug: () => Boolean,
+    error: () => Boolean,
+    fatal: () => Boolean,
+    information: () => Boolean,
+    log: String => Unit,
+    warning: () => Boolean
+  ): NullLogger = {
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction0(debug), error = js.Any.fromFunction0(error), fatal = js.Any.fromFunction0(fatal), information = js.Any.fromFunction0(information), log = js.Any.fromFunction1(log), warning = js.Any.fromFunction0(warning))
+    __obj.asInstanceOf[NullLogger]
+  }
 }
 

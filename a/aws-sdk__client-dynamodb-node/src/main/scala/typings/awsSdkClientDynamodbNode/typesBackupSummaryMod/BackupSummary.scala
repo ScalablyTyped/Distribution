@@ -60,7 +60,7 @@ object BackupSummary {
     BackupCreationDateTime: Date | String | Double = null,
     BackupExpiryDateTime: Date | String | Double = null,
     BackupName: String = null,
-    BackupSizeBytes: Int | Double = null,
+    BackupSizeBytes: js.UndefOr[Double] = js.undefined,
     BackupStatus: CREATING | DELETED | AVAILABLE | String = null,
     BackupType: USER | SYSTEM | String = null,
     TableArn: String = null,
@@ -72,7 +72,7 @@ object BackupSummary {
     if (BackupCreationDateTime != null) __obj.updateDynamic("BackupCreationDateTime")(BackupCreationDateTime.asInstanceOf[js.Any])
     if (BackupExpiryDateTime != null) __obj.updateDynamic("BackupExpiryDateTime")(BackupExpiryDateTime.asInstanceOf[js.Any])
     if (BackupName != null) __obj.updateDynamic("BackupName")(BackupName.asInstanceOf[js.Any])
-    if (BackupSizeBytes != null) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupSizeBytes)) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.get.asInstanceOf[js.Any])
     if (BackupStatus != null) __obj.updateDynamic("BackupStatus")(BackupStatus.asInstanceOf[js.Any])
     if (BackupType != null) __obj.updateDynamic("BackupType")(BackupType.asInstanceOf[js.Any])
     if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn.asInstanceOf[js.Any])

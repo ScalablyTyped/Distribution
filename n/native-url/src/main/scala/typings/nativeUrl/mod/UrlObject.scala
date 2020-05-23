@@ -25,31 +25,33 @@ trait UrlObject extends js.Object {
 object UrlObject {
   @scala.inline
   def apply(
-    auth: String = null,
-    hash: String = null,
-    host: String = null,
-    hostname: String = null,
-    href: String = null,
-    path: String = null,
-    pathname: String = null,
-    port: String | Double = null,
-    protocol: String = null,
-    query: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQueryInput */ js.Any) = null,
-    search: String = null,
-    slashes: js.UndefOr[Boolean] = js.undefined
+    auth: js.UndefOr[Null | String] = js.undefined,
+    hash: js.UndefOr[Null | String] = js.undefined,
+    host: js.UndefOr[Null | String] = js.undefined,
+    hostname: js.UndefOr[Null | String] = js.undefined,
+    href: js.UndefOr[Null | String] = js.undefined,
+    path: js.UndefOr[Null | String] = js.undefined,
+    pathname: js.UndefOr[Null | String] = js.undefined,
+    port: js.UndefOr[Null | String | Double] = js.undefined,
+    protocol: js.UndefOr[Null | String] = js.undefined,
+    query: js.UndefOr[
+      Null | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQueryInput */ js.Any)
+    ] = js.undefined,
+    search: js.UndefOr[Null | String] = js.undefined,
+    slashes: js.UndefOr[Null | Boolean] = js.undefined
   ): UrlObject = {
     val __obj = js.Dynamic.literal()
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (!js.isUndefined(host)) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(hostname)) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (!js.isUndefined(href)) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathname)) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(protocol)) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(query)) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (!js.isUndefined(slashes)) __obj.updateDynamic("slashes")(slashes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlObject]
   }

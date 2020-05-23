@@ -14,7 +14,7 @@ object HocProps {
   @scala.inline
   def apply(api: API, active: js.UndefOr[Boolean] = js.undefined): HocProps = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HocProps]
   }
 }

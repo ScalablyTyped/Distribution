@@ -24,13 +24,13 @@ object ToggleButtonClickEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     model: js.Any = null,
-    target: Int | Double = null,
+    target: js.UndefOr[Double] = js.undefined,
     `type`: String = null
   ): ToggleButtonClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToggleButtonClickEventArgs]
   }

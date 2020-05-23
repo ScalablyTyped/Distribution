@@ -1,17 +1,17 @@
 package typings.baseui.buttonMod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.PropsWithoutRef
+import typings.react.mod.RefAttributes
+import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("baseui/button", "Button")
 @js.native
-class Button ()
-  extends Component[ButtonProps, js.Object, js.Any] {
-  def focus(): Unit = js.native
-  def internalOnClick(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): Unit = js.native
-}
+object Button extends TopLevel[
+      ForwardRefExoticComponent[PropsWithoutRef[ButtonProps] with RefAttributes[HTMLButtonElement]]
+    ]
 

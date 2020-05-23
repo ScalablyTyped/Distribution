@@ -33,16 +33,16 @@ object WorkspaceCreationProperties {
   def apply(
     CustomSecurityGroupId: SecurityGroupId = null,
     DefaultOu: DefaultOu = null,
-    EnableInternetAccess: js.UndefOr[Boolean] = js.undefined,
-    EnableMaintenanceMode: js.UndefOr[Boolean] = js.undefined,
-    UserEnabledAsLocalAdministrator: js.UndefOr[Boolean] = js.undefined
+    EnableInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
+    EnableMaintenanceMode: js.UndefOr[BooleanObject] = js.undefined,
+    UserEnabledAsLocalAdministrator: js.UndefOr[BooleanObject] = js.undefined
   ): WorkspaceCreationProperties = {
     val __obj = js.Dynamic.literal()
     if (CustomSecurityGroupId != null) __obj.updateDynamic("CustomSecurityGroupId")(CustomSecurityGroupId.asInstanceOf[js.Any])
     if (DefaultOu != null) __obj.updateDynamic("DefaultOu")(DefaultOu.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableInternetAccess)) __obj.updateDynamic("EnableInternetAccess")(EnableInternetAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableMaintenanceMode)) __obj.updateDynamic("EnableMaintenanceMode")(EnableMaintenanceMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserEnabledAsLocalAdministrator)) __obj.updateDynamic("UserEnabledAsLocalAdministrator")(UserEnabledAsLocalAdministrator.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableInternetAccess)) __obj.updateDynamic("EnableInternetAccess")(EnableInternetAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableMaintenanceMode)) __obj.updateDynamic("EnableMaintenanceMode")(EnableMaintenanceMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UserEnabledAsLocalAdministrator)) __obj.updateDynamic("UserEnabledAsLocalAdministrator")(UserEnabledAsLocalAdministrator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceCreationProperties]
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/theme-light-extension" : "2.1.0"
+      "@jupyterlab/theme-light-extension" : "2.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/theme-light-extension" : "2.1.0"
+      "@jupyterlab/theme-light-extension" : "2.1.2"
     }
   ],
   "compile-devDependencies" : [

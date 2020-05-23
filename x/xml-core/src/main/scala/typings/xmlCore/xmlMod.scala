@@ -1,8 +1,6 @@
 package typings.xmlCore
 
 import org.scalablytyped.runtime.TopLevel
-import typings.xmlCore.xmlCoreStrings._empty
-import typings.xmlCore.xmlCoreStrings.applicationSlashxml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +11,9 @@ object xmlMod extends js.Object {
   @js.native
   sealed trait XmlNodeType extends js.Object
   
-  val APPLICATION_XML: applicationSlashxml = js.native
-  val DEFAULT_NAMESPACE_URI: _empty = js.native
-  val DEFAULT_PREFIX: _empty = js.native
+  val APPLICATION_XML: /* "application/xml" */ String = js.native
+  val DEFAULT_NAMESPACE_URI: /* "" */ String = js.native
+  val DEFAULT_PREFIX: /* "" */ String = js.native
   @js.native
   object XmlNodeType extends js.Object {
     @js.native

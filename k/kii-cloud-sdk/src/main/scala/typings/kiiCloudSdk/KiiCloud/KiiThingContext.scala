@@ -1,6 +1,6 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.AnonSuccess
+import typings.kiiCloudSdk.anon.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * represents a KiiThingContext object
   */
-@JSGlobal("KiiCloud.KiiThingContext")
 @js.native
-class KiiThingContext () extends js.Object {
+trait KiiThingContext extends js.Object {
   /**
     * Creates a reference to a bucket in App scope operated by thing.
     *
@@ -125,8 +124,8 @@ class KiiThingContext () extends js.Object {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonSuccess): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonSuccess, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
   /**
     * Creates a reference to an object operated by thing using object`s URI.
     *

@@ -17,5 +17,5 @@ package object mod {
     /* ref */ js.UndefOr[typings.react.mod.RefObject[js.Any]], 
     typings.react.mod.RefObject[js.Any]
   ]
-  type WithTestHook[P /* <: js.Object */] = P with typings.cavy.AnonGenerateTestHook
+  type WithTestHook[P /* <: js.Object */] = P with typings.cavy.anon.GenerateTestHook
 }

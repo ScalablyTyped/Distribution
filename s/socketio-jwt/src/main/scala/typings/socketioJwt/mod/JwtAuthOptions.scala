@@ -22,12 +22,12 @@ object JwtAuthOptions {
     secret: String | JwtSecretFunc,
     callback: js.UndefOr[Boolean] = js.undefined,
     handshake: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): JwtAuthOptions = {
     val __obj = js.Dynamic.literal(decodedPropertyName = decodedPropertyName.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(callback)) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (!js.isUndefined(handshake)) __obj.updateDynamic("handshake")(handshake.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(callback)) __obj.updateDynamic("callback")(callback.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handshake)) __obj.updateDynamic("handshake")(handshake.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JwtAuthOptions]
   }
 }

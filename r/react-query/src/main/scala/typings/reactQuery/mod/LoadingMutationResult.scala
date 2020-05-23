@@ -22,12 +22,11 @@ object LoadingMutationResult {
     promise: js.Promise[TResult],
     reset: () => Unit,
     status: loading,
-    data: js.UndefOr[scala.Nothing] = js.undefined,
-    error: js.UndefOr[scala.Nothing] = js.undefined
+    data: TResult = null,
+    error: js.Any = null
   ): LoadingMutationResult[TResult] = {
-    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingMutationResult[TResult]]
   }
 }

@@ -30,12 +30,12 @@ object RedshiftParameters {
     Database: Database,
     ClusterId: ClusterId = null,
     Host: Host = null,
-    Port: Int | scala.Double = null
+    Port: js.UndefOr[OptionalPort] = js.undefined
   ): RedshiftParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any])
     if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
     if (Host != null) __obj.updateDynamic("Host")(Host.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftParameters]
   }
 }

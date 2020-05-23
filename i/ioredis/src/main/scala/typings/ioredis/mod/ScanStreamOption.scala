@@ -11,9 +11,9 @@ trait ScanStreamOption extends js.Object {
 
 object ScanStreamOption {
   @scala.inline
-  def apply(count: Int | Double = null, `match`: String = null): ScanStreamOption = {
+  def apply(count: js.UndefOr[Double] = js.undefined, `match`: String = null): ScanStreamOption = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanStreamOption]
   }

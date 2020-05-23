@@ -12,9 +12,9 @@ trait IGetAgentRequest extends js.Object {
 
 object IGetAgentRequest {
   @scala.inline
-  def apply(parent: String = null): IGetAgentRequest = {
+  def apply(parent: js.UndefOr[Null | String] = js.undefined): IGetAgentRequest = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetAgentRequest]
   }
 }

@@ -1,5 +1,6 @@
 package typings.blueprintjsTimezone
 
+import typings.blueprintjsTimezone.anon.PartialITimezonePickerPro
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbreviation
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.composite
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.name

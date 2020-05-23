@@ -18,9 +18,9 @@ trait ProductViewAggregationValue extends js.Object {
 
 object ProductViewAggregationValue {
   @scala.inline
-  def apply(ApproximateCount: Int | Double = null, Value: AttributeValue = null): ProductViewAggregationValue = {
+  def apply(ApproximateCount: js.UndefOr[ApproximateCount] = js.undefined, Value: AttributeValue = null): ProductViewAggregationValue = {
     val __obj = js.Dynamic.literal()
-    if (ApproximateCount != null) __obj.updateDynamic("ApproximateCount")(ApproximateCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApproximateCount)) __obj.updateDynamic("ApproximateCount")(ApproximateCount.get.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductViewAggregationValue]
   }

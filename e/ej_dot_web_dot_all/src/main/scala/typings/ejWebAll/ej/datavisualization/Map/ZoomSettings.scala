@@ -46,20 +46,20 @@ object ZoomSettings {
     enableMouseWheelZoom: js.UndefOr[Boolean] = js.undefined,
     enableZoom: js.UndefOr[Boolean] = js.undefined,
     enableZoomOnSelection: js.UndefOr[Boolean] = js.undefined,
-    factor: Int | Double = null,
-    level: Int | Double = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null
+    factor: js.UndefOr[Double] = js.undefined,
+    level: js.UndefOr[Double] = js.undefined,
+    maxValue: js.UndefOr[Double] = js.undefined,
+    minValue: js.UndefOr[Double] = js.undefined
   ): ZoomSettings = {
     val __obj = js.Dynamic.literal()
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableZoom)) __obj.updateDynamic("enableZoom")(enableZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableZoomOnSelection)) __obj.updateDynamic("enableZoomOnSelection")(enableZoomOnSelection.asInstanceOf[js.Any])
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableZoom)) __obj.updateDynamic("enableZoom")(enableZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableZoomOnSelection)) __obj.updateDynamic("enableZoomOnSelection")(enableZoomOnSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomSettings]
   }
 }

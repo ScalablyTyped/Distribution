@@ -1,7 +1,7 @@
 package typings.navigo.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.navigo.AnonHooks
+import typings.navigo.anon.Hooks
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait Navigo extends js.Object {
   def historyAPIUpdateMethod(): Unit = js.native
   def historyAPIUpdateMethod(method: String): Unit = js.native
   def hooks(hooks: GenericHooks): Unit = js.native
-  def lastRouteResolved(): AnonHooks = js.native
+  def lastRouteResolved(): Hooks = js.native
   def link(path: String): String = js.native
   def navigate(path: String): Unit = js.native
   def navigate(path: String, absolute: Boolean): Unit = js.native

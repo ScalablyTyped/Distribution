@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "formsy-react" : "2.0.2"
+      "formsy-react" : "2.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "formsy-react" : "2.0.2"
+      "formsy-react" : "2.0.3"
     }
   ],
   "compile-devDependencies" : [

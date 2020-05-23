@@ -45,7 +45,7 @@ object PutCompositeAlarmInput {
   def apply(
     AlarmName: AlarmName,
     AlarmRule: AlarmRule,
-    ActionsEnabled: js.UndefOr[Boolean] = js.undefined,
+    ActionsEnabled: js.UndefOr[ActionsEnabled] = js.undefined,
     AlarmActions: ResourceList = null,
     AlarmDescription: AlarmDescription = null,
     InsufficientDataActions: ResourceList = null,
@@ -53,7 +53,7 @@ object PutCompositeAlarmInput {
     Tags: TagList = null
   ): PutCompositeAlarmInput = {
     val __obj = js.Dynamic.literal(AlarmName = AlarmName.asInstanceOf[js.Any], AlarmRule = AlarmRule.asInstanceOf[js.Any])
-    if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled.get.asInstanceOf[js.Any])
     if (AlarmActions != null) __obj.updateDynamic("AlarmActions")(AlarmActions.asInstanceOf[js.Any])
     if (AlarmDescription != null) __obj.updateDynamic("AlarmDescription")(AlarmDescription.asInstanceOf[js.Any])
     if (InsufficientDataActions != null) __obj.updateDynamic("InsufficientDataActions")(InsufficientDataActions.asInstanceOf[js.Any])

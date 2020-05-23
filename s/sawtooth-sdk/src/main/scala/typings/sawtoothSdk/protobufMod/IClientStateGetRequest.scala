@@ -13,10 +13,13 @@ trait IClientStateGetRequest extends js.Object {
 
 object IClientStateGetRequest {
   @scala.inline
-  def apply(address: String = null, stateRoot: String = null): IClientStateGetRequest = {
+  def apply(
+    address: js.UndefOr[Null | String] = js.undefined,
+    stateRoot: js.UndefOr[Null | String] = js.undefined
+  ): IClientStateGetRequest = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (stateRoot != null) __obj.updateDynamic("stateRoot")(stateRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateRoot)) __obj.updateDynamic("stateRoot")(stateRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientStateGetRequest]
   }
 }

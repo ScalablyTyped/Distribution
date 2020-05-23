@@ -7,19 +7,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Used to read Contact objects in batches from the ContactStore which may be local or remotely located. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactReader")
-@js.native
-abstract class ContactReader () extends js.Object {
+trait ContactReader extends js.Object {
   /**
     * Gets the reason a Contact matched the search query. Returns the properties and substrings that match.
     * @param contact The Contact for which to get the matching properties.
     * @return The list of matching properties and match reasons.
     */
-  def getMatchingPropertiesWithMatchReason(contact: Contact): IVectorView[ContactMatchReason] = js.native
+  def getMatchingPropertiesWithMatchReason(contact: Contact): IVectorView[ContactMatchReason]
   /**
     * Asynchronously reads a batch of Contact objects from the ContactStore .
     * @return The batch of contacts read from the ContactStore .
     */
-  def readBatchAsync(): IPromiseWithIAsyncOperation[ContactBatch] = js.native
+  def readBatchAsync(): IPromiseWithIAsyncOperation[ContactBatch]
+}
+
+object ContactReader {
+  @scala.inline
+  def apply(
+    getMatchingPropertiesWithMatchReason: Contact => IVectorView[ContactMatchReason],
+    readBatchAsync: () => IPromiseWithIAsyncOperation[ContactBatch]
+  ): ContactReader = {
+    val __obj = js.Dynamic.literal(getMatchingPropertiesWithMatchReason = js.Any.fromFunction1(getMatchingPropertiesWithMatchReason), readBatchAsync = js.Any.fromFunction0(readBatchAsync))
+    __obj.asInstanceOf[ContactReader]
+  }
 }
 

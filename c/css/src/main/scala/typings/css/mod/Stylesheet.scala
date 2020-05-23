@@ -1,6 +1,6 @@
 package typings.css.mod
 
-import typings.css.AnonContent
+import typings.css.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object Stylesheet {
   @scala.inline
   def apply(
     parent: Node = null,
-    position: AnonContent = null,
+    position: Content = null,
     stylesheet: StyleRules = null,
     `type`: String = null
   ): Stylesheet = {

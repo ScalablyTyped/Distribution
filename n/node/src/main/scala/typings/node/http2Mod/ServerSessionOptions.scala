@@ -43,13 +43,13 @@ object ServerSessionOptions {
     ] = null,
     Http2ServerResponse: Instantiable1[/* stream */ ServerHttp2Stream, Http2ServerResponse] = null,
     createConnection: (/* authority */ URL_, ServerSessionOptions) => Duplex = null,
-    maxDeflateDynamicTableSize: Int | Double = null,
-    maxHeaderListPairs: Int | Double = null,
-    maxOutstandingPings: Int | Double = null,
-    maxSendHeaderBlockLength: Int | Double = null,
-    maxSessionMemory: Int | Double = null,
-    paddingStrategy: Int | Double = null,
-    peerMaxConcurrentStreams: Int | Double = null,
+    maxDeflateDynamicTableSize: js.UndefOr[Double] = js.undefined,
+    maxHeaderListPairs: js.UndefOr[Double] = js.undefined,
+    maxOutstandingPings: js.UndefOr[Double] = js.undefined,
+    maxSendHeaderBlockLength: js.UndefOr[Double] = js.undefined,
+    maxSessionMemory: js.UndefOr[Double] = js.undefined,
+    paddingStrategy: js.UndefOr[Double] = js.undefined,
+    peerMaxConcurrentStreams: js.UndefOr[Double] = js.undefined,
     selectPadding: (/* frameLen */ Double, /* maxFrameLen */ Double) => Double = null,
     settings: Settings = null
   ): ServerSessionOptions = {
@@ -59,13 +59,13 @@ object ServerSessionOptions {
     if (Http2ServerRequest != null) __obj.updateDynamic("Http2ServerRequest")(Http2ServerRequest.asInstanceOf[js.Any])
     if (Http2ServerResponse != null) __obj.updateDynamic("Http2ServerResponse")(Http2ServerResponse.asInstanceOf[js.Any])
     if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
-    if (maxDeflateDynamicTableSize != null) __obj.updateDynamic("maxDeflateDynamicTableSize")(maxDeflateDynamicTableSize.asInstanceOf[js.Any])
-    if (maxHeaderListPairs != null) __obj.updateDynamic("maxHeaderListPairs")(maxHeaderListPairs.asInstanceOf[js.Any])
-    if (maxOutstandingPings != null) __obj.updateDynamic("maxOutstandingPings")(maxOutstandingPings.asInstanceOf[js.Any])
-    if (maxSendHeaderBlockLength != null) __obj.updateDynamic("maxSendHeaderBlockLength")(maxSendHeaderBlockLength.asInstanceOf[js.Any])
-    if (maxSessionMemory != null) __obj.updateDynamic("maxSessionMemory")(maxSessionMemory.asInstanceOf[js.Any])
-    if (paddingStrategy != null) __obj.updateDynamic("paddingStrategy")(paddingStrategy.asInstanceOf[js.Any])
-    if (peerMaxConcurrentStreams != null) __obj.updateDynamic("peerMaxConcurrentStreams")(peerMaxConcurrentStreams.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDeflateDynamicTableSize)) __obj.updateDynamic("maxDeflateDynamicTableSize")(maxDeflateDynamicTableSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeaderListPairs)) __obj.updateDynamic("maxHeaderListPairs")(maxHeaderListPairs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxOutstandingPings)) __obj.updateDynamic("maxOutstandingPings")(maxOutstandingPings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSendHeaderBlockLength)) __obj.updateDynamic("maxSendHeaderBlockLength")(maxSendHeaderBlockLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSessionMemory)) __obj.updateDynamic("maxSessionMemory")(maxSessionMemory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingStrategy)) __obj.updateDynamic("paddingStrategy")(paddingStrategy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerMaxConcurrentStreams)) __obj.updateDynamic("peerMaxConcurrentStreams")(peerMaxConcurrentStreams.get.asInstanceOf[js.Any])
     if (selectPadding != null) __obj.updateDynamic("selectPadding")(js.Any.fromFunction2(selectPadding))
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerSessionOptions]

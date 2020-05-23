@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ContactQuerySearchScope extends js.Object {
   /** Server */
   @js.native
   sealed trait server extends ContactQuerySearchScope
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactQuerySearchScope with Double] = js.native
-  /* 0 */ @js.native
-  object local extends TopLevel[local with Double]
-  
-  /* 1 */ @js.native
-  object server extends TopLevel[server with Double]
   
 }
 

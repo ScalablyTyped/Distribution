@@ -14,9 +14,9 @@ trait ArrayProperties extends js.Object {
 
 object ArrayProperties {
   @scala.inline
-  def apply(size: Int | Double = null): ArrayProperties = {
+  def apply(size: js.UndefOr[Integer] = js.undefined): ArrayProperties = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayProperties]
   }
 }

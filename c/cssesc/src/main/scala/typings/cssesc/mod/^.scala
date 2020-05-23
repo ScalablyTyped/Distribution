@@ -1,6 +1,6 @@
 package typings.cssesc.mod
 
-import typings.cssesc.ReadonlyPartialOptions
+import typings.cssesc.anon.ReadonlyPartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

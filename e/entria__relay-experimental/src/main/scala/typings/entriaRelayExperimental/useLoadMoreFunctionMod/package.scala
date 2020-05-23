@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object useLoadMoreFunctionMod {
   type LoadMoreFn = js.Function2[
     /* count */ scala.Double, 
-    /* options */ js.UndefOr[typings.entriaRelayExperimental.AnonOnComplete], 
+    /* options */ js.UndefOr[typings.entriaRelayExperimental.anon.OnComplete], 
     typings.relayRuntime.relayRuntimeTypesMod.Disposable
   ]
 }

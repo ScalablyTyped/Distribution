@@ -1,6 +1,6 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonLocalData
+import typings.jweixin.anon.LocalData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +10,14 @@ trait IgetLocalImgData extends BaseParams {
    // 图片的localID
   // localData是图片的base64数据，可以用img标签显示
   @JSName("success")
-  def success_MIgetLocalImgData(res: AnonLocalData): Unit
+  def success_MIgetLocalImgData(res: LocalData): Unit
 }
 
 object IgetLocalImgData {
   @scala.inline
   def apply(
     localId: String,
-    success: AnonLocalData => Unit,
+    success: LocalData => Unit,
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IgetLocalImgData = {

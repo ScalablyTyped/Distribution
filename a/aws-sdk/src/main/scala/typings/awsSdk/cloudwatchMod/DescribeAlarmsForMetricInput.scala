@@ -43,14 +43,14 @@ object DescribeAlarmsForMetricInput {
     Namespace: Namespace,
     Dimensions: Dimensions = null,
     ExtendedStatistic: ExtendedStatistic = null,
-    Period: Int | Double = null,
+    Period: js.UndefOr[Period] = js.undefined,
     Statistic: Statistic = null,
     Unit: StandardUnit = null
   ): DescribeAlarmsForMetricInput = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
     if (ExtendedStatistic != null) __obj.updateDynamic("ExtendedStatistic")(ExtendedStatistic.asInstanceOf[js.Any])
-    if (Period != null) __obj.updateDynamic("Period")(Period.asInstanceOf[js.Any])
+    if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period.get.asInstanceOf[js.Any])
     if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAlarmsForMetricInput]

@@ -19,17 +19,17 @@ object ExportResponseData {
   def apply(
     ID: Double,
     Status: ResponseStatus,
-    CreationTS: Int | Double = null,
-    ExpirationTS: Int | Double = null,
-    FromTs: Int | Double = null,
-    ToTs: Int | Double = null,
+    CreationTS: js.UndefOr[Double] = js.undefined,
+    ExpirationTS: js.UndefOr[Double] = js.undefined,
+    FromTs: js.UndefOr[Double] = js.undefined,
+    ToTs: js.UndefOr[Double] = js.undefined,
     URL: String = null
   ): ExportResponseData = {
     val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-    if (CreationTS != null) __obj.updateDynamic("CreationTS")(CreationTS.asInstanceOf[js.Any])
-    if (ExpirationTS != null) __obj.updateDynamic("ExpirationTS")(ExpirationTS.asInstanceOf[js.Any])
-    if (FromTs != null) __obj.updateDynamic("FromTs")(FromTs.asInstanceOf[js.Any])
-    if (ToTs != null) __obj.updateDynamic("ToTs")(ToTs.asInstanceOf[js.Any])
+    if (!js.isUndefined(CreationTS)) __obj.updateDynamic("CreationTS")(CreationTS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExpirationTS)) __obj.updateDynamic("ExpirationTS")(ExpirationTS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FromTs)) __obj.updateDynamic("FromTs")(FromTs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ToTs)) __obj.updateDynamic("ToTs")(ToTs.get.asInstanceOf[js.Any])
     if (URL != null) __obj.updateDynamic("URL")(URL.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportResponseData]
   }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.BackgroundTransfer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object BackgroundTransferPriority extends js.Object {
   /** High priority setting for an operation. Ensures that the operation doesn't get placed at the very end of the queue, and is instead placed near the front. */
   @js.native
   sealed trait high extends BackgroundTransferPriority
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BackgroundTransferPriority with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object high extends TopLevel[high with Double]
   
 }
 

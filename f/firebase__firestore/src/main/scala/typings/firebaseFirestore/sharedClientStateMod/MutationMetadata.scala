@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/shared_client_state", "MutationMetadata")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/shared_client_state", "MutationMetadata")
 @js.native
 class MutationMetadata protected () extends js.Object {
   def this(user: User, batchId: BatchId, state: MutationBatchState) = this()
@@ -21,7 +21,7 @@ class MutationMetadata protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/shared_client_state", "MutationMetadata")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/shared_client_state", "MutationMetadata")
 @js.native
 object MutationMetadata extends js.Object {
   /**

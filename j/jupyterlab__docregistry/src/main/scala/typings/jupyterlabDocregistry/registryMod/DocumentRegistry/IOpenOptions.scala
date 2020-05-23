@@ -40,14 +40,14 @@ object IOpenOptions {
   def apply(
     activate: js.UndefOr[Boolean] = js.undefined,
     mode: InsertMode = null,
-    rank: Int | Double = null,
-    ref: String = null
+    rank: js.UndefOr[Double] = js.undefined,
+    ref: js.UndefOr[Null | String] = js.undefined
   ): IOpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate.asInstanceOf[js.Any])
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenOptions]
   }
 }

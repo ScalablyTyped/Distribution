@@ -11,10 +11,10 @@ trait IterateOptions extends js.Object {
 
 object IterateOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, probability: Int | Double = null): IterateOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, probability: js.UndefOr[Double] = js.undefined): IterateOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (probability != null) __obj.updateDynamic("probability")(probability.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(probability)) __obj.updateDynamic("probability")(probability.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterateOptions]
   }
 }

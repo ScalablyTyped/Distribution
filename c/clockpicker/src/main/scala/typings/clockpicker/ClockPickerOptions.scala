@@ -39,7 +39,7 @@ object ClockPickerOptions {
     beforeShow: () => Unit = null,
     default: String = null,
     donetext: String = null,
-    fromnow: Int | Double = null,
+    fromnow: js.UndefOr[Double] = js.undefined,
     init: () => Unit = null,
     placement: String = null,
     twelvehour: js.UndefOr[Boolean] = js.undefined,
@@ -51,18 +51,18 @@ object ClockPickerOptions {
     if (afterHourSelect != null) __obj.updateDynamic("afterHourSelect")(js.Any.fromFunction0(afterHourSelect))
     if (afterShow != null) __obj.updateDynamic("afterShow")(js.Any.fromFunction0(afterShow))
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
     if (beforeDone != null) __obj.updateDynamic("beforeDone")(js.Any.fromFunction0(beforeDone))
     if (beforeHide != null) __obj.updateDynamic("beforeHide")(js.Any.fromFunction0(beforeHide))
     if (beforeHourSelect != null) __obj.updateDynamic("beforeHourSelect")(js.Any.fromFunction0(beforeHourSelect))
     if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction0(beforeShow))
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (donetext != null) __obj.updateDynamic("donetext")(donetext.asInstanceOf[js.Any])
-    if (fromnow != null) __obj.updateDynamic("fromnow")(fromnow.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromnow)) __obj.updateDynamic("fromnow")(fromnow.get.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(twelvehour)) __obj.updateDynamic("twelvehour")(twelvehour.asInstanceOf[js.Any])
-    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate.asInstanceOf[js.Any])
+    if (!js.isUndefined(twelvehour)) __obj.updateDynamic("twelvehour")(twelvehour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClockPickerOptions]
   }
 }

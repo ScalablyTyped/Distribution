@@ -23,10 +23,10 @@ trait Debuggee extends js.Object {
 
 object Debuggee {
   @scala.inline
-  def apply(extensionId: String = null, tabId: Int | Double = null, targetId: String = null): Debuggee = {
+  def apply(extensionId: String = null, tabId: js.UndefOr[Double] = js.undefined, targetId: String = null): Debuggee = {
     val __obj = js.Dynamic.literal()
     if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId.asInstanceOf[js.Any])
-    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
     if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Debuggee]
   }

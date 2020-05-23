@@ -47,10 +47,10 @@ trait ListRecordsResponse extends js.Object {
 object ListRecordsResponse {
   @scala.inline
   def apply(
-    Count: Int | Double = null,
-    DatasetDeletedAfterRequestedSyncCount: js.UndefOr[scala.Boolean] = js.undefined,
-    DatasetExists: js.UndefOr[scala.Boolean] = js.undefined,
-    DatasetSyncCount: Int | Double = null,
+    Count: js.UndefOr[Integer] = js.undefined,
+    DatasetDeletedAfterRequestedSyncCount: js.UndefOr[Boolean] = js.undefined,
+    DatasetExists: js.UndefOr[Boolean] = js.undefined,
+    DatasetSyncCount: js.UndefOr[Long] = js.undefined,
     LastModifiedBy: String = null,
     MergedDatasetNames: MergedDatasetNameList = null,
     NextToken: String = null,
@@ -58,10 +58,10 @@ object ListRecordsResponse {
     SyncSessionToken: String = null
   ): ListRecordsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
-    if (!js.isUndefined(DatasetDeletedAfterRequestedSyncCount)) __obj.updateDynamic("DatasetDeletedAfterRequestedSyncCount")(DatasetDeletedAfterRequestedSyncCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(DatasetExists)) __obj.updateDynamic("DatasetExists")(DatasetExists.asInstanceOf[js.Any])
-    if (DatasetSyncCount != null) __obj.updateDynamic("DatasetSyncCount")(DatasetSyncCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DatasetDeletedAfterRequestedSyncCount)) __obj.updateDynamic("DatasetDeletedAfterRequestedSyncCount")(DatasetDeletedAfterRequestedSyncCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DatasetExists)) __obj.updateDynamic("DatasetExists")(DatasetExists.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DatasetSyncCount)) __obj.updateDynamic("DatasetSyncCount")(DatasetSyncCount.get.asInstanceOf[js.Any])
     if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy.asInstanceOf[js.Any])
     if (MergedDatasetNames != null) __obj.updateDynamic("MergedDatasetNames")(MergedDatasetNames.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])

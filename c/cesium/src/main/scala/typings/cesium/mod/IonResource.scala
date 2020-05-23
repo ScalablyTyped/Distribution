@@ -1,9 +1,9 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonAccessToken
-import typings.cesium.AnonEndpoint
-import typings.cesium.AnonHeaders
-import typings.cesium.AnonPreserveQueryParameters
+import typings.cesium.anon.AccessToken
+import typings.cesium.anon.Endpoint
+import typings.cesium.anon.Headers
+import typings.cesium.anon.PreserveQueryParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "IonResource")
 @js.native
 class IonResource protected () extends Resource {
-  def this(option: AnonEndpoint) = this()
+  def this(option: Endpoint) = this()
   val credits: js.Array[String] = js.native
   def fetchImage(): js.UndefOr[js.Promise[_]] = js.native
   def fetchJsonp(): js.UndefOr[js.Promise[_]] = js.native
   def fetchXMLS(): js.UndefOr[js.Promise[_]] = js.native
   def getDerivedResource(): Resource = js.native
-  def getDerivedResource(option: AnonPreserveQueryParameters): Resource = js.native
+  def getDerivedResource(option: PreserveQueryParameters): Resource = js.native
   def getUrlComponent(): String = js.native
   def getUrlComponent(query: Boolean): String = js.native
-  def post(data: js.Any, options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
+  def post(data: js.Any, options: Headers): js.UndefOr[js.Promise[_]] = js.native
   def setQueryParameters(params: js.Any): Unit = js.native
   def setTemplateValues(params: js.Any): Unit = js.native
 }
@@ -30,6 +30,6 @@ class IonResource protected () extends Resource {
 @js.native
 object IonResource extends js.Object {
   def fromAssetId(assetId: String): js.Promise[IonResource] = js.native
-  def fromAssetId(assetId: String, options: AnonAccessToken): js.Promise[IonResource] = js.native
+  def fromAssetId(assetId: String, options: AccessToken): js.Promise[IonResource] = js.native
 }
 

@@ -26,13 +26,13 @@ object ExtendOptions {
     objectPrototype: js.UndefOr[Boolean] = js.undefined
   ): ExtendOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enhance)) __obj.updateDynamic("enhance")(enhance.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhanceArray)) __obj.updateDynamic("enhanceArray")(enhanceArray.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhanceString)) __obj.updateDynamic("enhanceString")(enhanceString.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhance)) __obj.updateDynamic("enhance")(enhance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhanceArray)) __obj.updateDynamic("enhanceArray")(enhanceArray.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhanceString)) __obj.updateDynamic("enhanceString")(enhanceString.get.asInstanceOf[js.Any])
     if (except != null) __obj.updateDynamic("except")(except.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (namespaces != null) __obj.updateDynamic("namespaces")(namespaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectPrototype)) __obj.updateDynamic("objectPrototype")(objectPrototype.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectPrototype)) __obj.updateDynamic("objectPrototype")(objectPrototype.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendOptions]
   }
 }

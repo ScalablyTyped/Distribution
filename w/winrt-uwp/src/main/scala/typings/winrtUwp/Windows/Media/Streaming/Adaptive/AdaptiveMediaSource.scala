@@ -2,11 +2,7 @@ package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
-import typings.winrtUwp.Windows.Foundation.Uri
-import typings.winrtUwp.Windows.Storage.Streams.IInputStream
-import typings.winrtUwp.Windows.Web.Http.HttpClient
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.downloadbitratechanged
 import typings.winrtUwp.winrtUwpStrings.downloadcompleted
@@ -18,9 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the source of adaptive streaming content. */
-@JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSource")
 @js.native
-abstract class AdaptiveMediaSource () extends js.Object {
+trait AdaptiveMediaSource extends js.Object {
   var advancedSettings: js.Any = js.native
    /* unmapped type */ /** Gets a value indicating if the content streamed by the media source contains only audio. */
   var audioOnlyPlayback: Boolean = js.native
@@ -121,47 +116,5 @@ abstract class AdaptiveMediaSource () extends js.Object {
     `type`: playbackbitratechanged,
     listener: TypedEventHandler[AdaptiveMediaSource, AdaptiveMediaSourcePlaybackBitrateChangedEventArgs]
   ): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSource")
-@js.native
-object AdaptiveMediaSource extends js.Object {
-  /**
-    * Asynchronously creates a AdaptiveMediaSource object from the provided input stream.
-    * @param stream The input stream from which the AdaptiveMediaSource is created.
-    * @param uri The URI of the source. This is used by the AdaptiveMediaSource to resolve relative URIs.
-    * @param contentType A string that identifies the MIME content type of the source. This can be an Http Live Streaming (HLS) or a Dynamic Adaptive Streaming over HTTP (DASH) content type.
-    * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
-    */
-  def createFromStreamAsync(stream: IInputStream, uri: Uri, contentType: String): IPromiseWithIAsyncOperation[AdaptiveMediaSourceCreationResult] = js.native
-  /**
-    * Asynchronously creates a AdaptiveMediaSource object from the provided input stream.
-    * @param stream The input stream from which the AdaptiveMediaSource is created.
-    * @param uri The URI of the source. This is used by the AdaptiveMediaSource to resolve relative URIs.
-    * @param contentType A string that identifies the MIME content type of the source. This can be an Http Live Streaming (HLS) or a Dynamic Adaptive Streaming over HTTP (DASH) content type.
-    * @param httpClient The HttpClient instance that the AdaptiveMediaSource should use for downloading resources. This allows you to specify custom HTTP headers for the requests.
-    * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
-    */
-  def createFromStreamAsync(stream: IInputStream, uri: Uri, contentType: String, httpClient: HttpClient): IPromiseWithIAsyncOperation[AdaptiveMediaSourceCreationResult] = js.native
-  /**
-    * Asynchronously creates a AdaptiveMediaSource object from the Uniform Resource Identifier (URI) of the source.
-    * @param uri The URI of the source.
-    * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
-    */
-  def createFromUriAsync(uri: Uri): IPromiseWithIAsyncOperation[AdaptiveMediaSourceCreationResult] = js.native
-  /**
-    * Asynchronously creates a AdaptiveMediaSource object from the Uniform Resource Identifier (URI) of the source.
-    * @param uri The URI of the source.
-    * @param httpClient The HttpClient instance that the AdaptiveMediaSource should use for downloading resources. This allows you to specify custom HTTP headers for the requests.
-    * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
-    */
-  def createFromUriAsync(uri: Uri, httpClient: HttpClient): IPromiseWithIAsyncOperation[AdaptiveMediaSourceCreationResult] = js.native
-  /**
-    * Determines whether the content type of the source is supported.
-    * @param contentType A string that identifies the content type of the source. Can be a Http Live Streaming (HLS) or Dynamic Adaptive Streaming over HTTP (DASH) content type.
-    * @return Returns a value that indicates whether the content type of the source is supported. true if supported; otherwise, false.
-    */
-  def isContentTypeSupported(contentType: String): Boolean = js.native
 }
 

@@ -68,34 +68,34 @@ object MatterSetBodyConfig {
   def apply(
     addToWorld: js.UndefOr[Boolean] = js.undefined,
     flagInternal: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    maxSides: Int | Double = null,
-    minimumArea: Int | Double = null,
-    radius: Int | Double = null,
-    removeCollinear: Int | Double = null,
-    sides: Int | Double = null,
-    slope: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    maxSides: js.UndefOr[Double] = js.undefined,
+    minimumArea: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined,
+    removeCollinear: js.UndefOr[Double] = js.undefined,
+    sides: js.UndefOr[Double] = js.undefined,
+    slope: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     verts: String | js.Array[_] = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): MatterSetBodyConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addToWorld)) __obj.updateDynamic("addToWorld")(addToWorld.asInstanceOf[js.Any])
-    if (!js.isUndefined(flagInternal)) __obj.updateDynamic("flagInternal")(flagInternal.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (maxSides != null) __obj.updateDynamic("maxSides")(maxSides.asInstanceOf[js.Any])
-    if (minimumArea != null) __obj.updateDynamic("minimumArea")(minimumArea.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (removeCollinear != null) __obj.updateDynamic("removeCollinear")(removeCollinear.asInstanceOf[js.Any])
-    if (sides != null) __obj.updateDynamic("sides")(sides.asInstanceOf[js.Any])
-    if (slope != null) __obj.updateDynamic("slope")(slope.asInstanceOf[js.Any])
+    if (!js.isUndefined(addToWorld)) __obj.updateDynamic("addToWorld")(addToWorld.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flagInternal)) __obj.updateDynamic("flagInternal")(flagInternal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSides)) __obj.updateDynamic("maxSides")(maxSides.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumArea)) __obj.updateDynamic("minimumArea")(minimumArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeCollinear)) __obj.updateDynamic("removeCollinear")(removeCollinear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sides)) __obj.updateDynamic("sides")(sides.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slope)) __obj.updateDynamic("slope")(slope.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (verts != null) __obj.updateDynamic("verts")(verts.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterSetBodyConfig]
   }
 }

@@ -37,6 +37,7 @@ trait PaginationProps extends js.Object {
   var showTotal: js.UndefOr[
     js.Function2[/* total */ Double, /* range */ js.Tuple2[Double, Double], ReactNode]
   ] = js.undefined
+  var simple: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var total: js.UndefOr[Double] = js.undefined
 }
@@ -45,9 +46,9 @@ object PaginationProps {
   @scala.inline
   def apply(
     className: String = null,
-    current: Int | Double = null,
-    defaultCurrent: Int | Double = null,
-    defaultPageSize: Int | Double = null,
+    current: js.UndefOr[Double] = js.undefined,
+    defaultCurrent: js.UndefOr[Double] = js.undefined,
+    defaultPageSize: js.UndefOr[Double] = js.undefined,
     hideOnSinglePage: js.UndefOr[Boolean] = js.undefined,
     itemRender: (/* page */ Double, /* type */ String, /* element */ ReactNode) => ReactNode = null,
     jumpNextIcon: ComponentType[js.Object] | ReactNode = null,
@@ -56,7 +57,7 @@ object PaginationProps {
     nextIcon: ComponentType[js.Object] | ReactNode = null,
     onChange: (/* page */ Double, /* pageSize */ Double) => Unit = null,
     onShowSizeChange: (/* current */ Double, /* size */ Double) => Unit = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageSizeOptions: js.Array[String] = null,
     prefixCls: String = null,
     prevIcon: ComponentType[js.Object] | ReactNode = null,
@@ -68,15 +69,16 @@ object PaginationProps {
     showSizeChanger: js.UndefOr[Boolean] = js.undefined,
     showTitle: js.UndefOr[Boolean] = js.undefined,
     showTotal: (/* total */ Double, /* range */ js.Tuple2[Double, Double]) => ReactNode = null,
+    simple: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    total: Int | Double = null
+    total: js.UndefOr[Double] = js.undefined
   ): PaginationProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (defaultCurrent != null) __obj.updateDynamic("defaultCurrent")(defaultCurrent.asInstanceOf[js.Any])
-    if (defaultPageSize != null) __obj.updateDynamic("defaultPageSize")(defaultPageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnSinglePage)) __obj.updateDynamic("hideOnSinglePage")(hideOnSinglePage.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultCurrent)) __obj.updateDynamic("defaultCurrent")(defaultCurrent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPageSize)) __obj.updateDynamic("defaultPageSize")(defaultPageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnSinglePage)) __obj.updateDynamic("hideOnSinglePage")(hideOnSinglePage.get.asInstanceOf[js.Any])
     if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction3(itemRender))
     if (jumpNextIcon != null) __obj.updateDynamic("jumpNextIcon")(jumpNextIcon.asInstanceOf[js.Any])
     if (jumpPrevIcon != null) __obj.updateDynamic("jumpPrevIcon")(jumpPrevIcon.asInstanceOf[js.Any])
@@ -84,20 +86,21 @@ object PaginationProps {
     if (nextIcon != null) __obj.updateDynamic("nextIcon")(nextIcon.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onShowSizeChange != null) __obj.updateDynamic("onShowSizeChange")(js.Any.fromFunction2(onShowSizeChange))
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageSizeOptions != null) __obj.updateDynamic("pageSizeOptions")(pageSizeOptions.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (prevIcon != null) __obj.updateDynamic("prevIcon")(prevIcon.asInstanceOf[js.Any])
     if (selectComponentClass != null) __obj.updateDynamic("selectComponentClass")(selectComponentClass.asInstanceOf[js.Any])
     if (selectPrefixCls != null) __obj.updateDynamic("selectPrefixCls")(selectPrefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLessItems)) __obj.updateDynamic("showLessItems")(showLessItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPrevNextJumpers)) __obj.updateDynamic("showPrevNextJumpers")(showPrevNextJumpers.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLessItems)) __obj.updateDynamic("showLessItems")(showLessItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPrevNextJumpers)) __obj.updateDynamic("showPrevNextJumpers")(showPrevNextJumpers.get.asInstanceOf[js.Any])
     if (showQuickJumper != null) __obj.updateDynamic("showQuickJumper")(showQuickJumper.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSizeChanger)) __obj.updateDynamic("showSizeChanger")(showSizeChanger.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSizeChanger)) __obj.updateDynamic("showSizeChanger")(showSizeChanger.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.get.asInstanceOf[js.Any])
     if (showTotal != null) __obj.updateDynamic("showTotal")(js.Any.fromFunction2(showTotal))
+    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
 }

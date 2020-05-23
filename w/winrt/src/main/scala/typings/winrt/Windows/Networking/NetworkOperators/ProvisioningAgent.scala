@@ -5,19 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.NetworkOperators.ProvisioningAgent")
-@js.native
-class ProvisioningAgent () extends IProvisioningAgent {
-  /* CompleteClass */
-  override def getProvisionedProfile(mediaType: ProfileMediaType, profileName: String): ProvisionedProfile = js.native
-  /* CompleteClass */
-  override def provisionFromXmlDocumentAsync(provisioningXmlDocument: String): IAsyncOperation[ProvisionFromXmlDocumentResults] = js.native
-}
+trait ProvisioningAgent extends IProvisioningAgent
 
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.ProvisioningAgent")
-@js.native
-object ProvisioningAgent extends js.Object {
-  def createFromNetworkAccountId(networkAccountId: String): ProvisioningAgent = js.native
+object ProvisioningAgent {
+  @scala.inline
+  def apply(
+    getProvisionedProfile: (ProfileMediaType, String) => ProvisionedProfile,
+    provisionFromXmlDocumentAsync: String => IAsyncOperation[ProvisionFromXmlDocumentResults]
+  ): ProvisioningAgent = {
+    val __obj = js.Dynamic.literal(getProvisionedProfile = js.Any.fromFunction2(getProvisionedProfile), provisionFromXmlDocumentAsync = js.Any.fromFunction1(provisionFromXmlDocumentAsync))
+    __obj.asInstanceOf[ProvisioningAgent]
+  }
 }
 

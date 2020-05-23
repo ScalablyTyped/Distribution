@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the SpeechRecognizer.StateChangedEvent event. */
-@JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizerStateChangedEventArgs")
-@js.native
-abstract class SpeechRecognizerStateChangedEventArgs () extends js.Object {
+trait SpeechRecognizerStateChangedEventArgs extends js.Object {
   /** Gets the audio capture state. */
-  var state: SpeechRecognizerState = js.native
+  var state: SpeechRecognizerState
+}
+
+object SpeechRecognizerStateChangedEventArgs {
+  @scala.inline
+  def apply(state: SpeechRecognizerState): SpeechRecognizerStateChangedEventArgs = {
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpeechRecognizerStateChangedEventArgs]
+  }
 }
 

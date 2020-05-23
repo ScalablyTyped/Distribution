@@ -1,6 +1,5 @@
 package typings.openui5.sap.ui.core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object OpenState extends js.Object {
   
   @js.native
   sealed trait OPENING extends OpenState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OpenState with Double] = js.native
-  /* 0 */ @js.native
-  object CLOSED extends TopLevel[CLOSED with Double]
-  
-  /* 1 */ @js.native
-  object CLOSING extends TopLevel[CLOSING with Double]
-  
-  /* 2 */ @js.native
-  object OPEN extends TopLevel[OPEN with Double]
-  
-  /* 3 */ @js.native
-  object OPENING extends TopLevel[OPENING with Double]
   
 }
 

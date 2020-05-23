@@ -1,6 +1,6 @@
 package typings.pino.mod
 
-import typings.pino.AnonLabel
+import typings.pino.anon.Label
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait LogEvent extends js.Object {
     * Holds the `label` (for instance `info`), and the corresponding numerical `value` (for instance `30`).
     * This could be important in cases where client side level values and labels differ from server side.
     */
-  var level: AnonLabel
+  var level: Label
   /**
     * All arguments passed to logger method, (for instance `logger.info('a', 'b', 'c')` would result in `messages`
     * array `['a', 'b', 'c']`).
@@ -40,7 +40,7 @@ trait LogEvent extends js.Object {
 
 object LogEvent {
   @scala.inline
-  def apply(bindings: js.Array[Bindings], level: AnonLabel, messages: js.Array[_], ts: Double): LogEvent = {
+  def apply(bindings: js.Array[Bindings], level: Label, messages: js.Array[_], ts: Double): LogEvent = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogEvent]
   }

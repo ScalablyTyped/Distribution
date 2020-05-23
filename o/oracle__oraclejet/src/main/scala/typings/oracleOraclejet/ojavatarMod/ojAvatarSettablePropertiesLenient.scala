@@ -23,7 +23,7 @@ trait ojAvatarSettablePropertiesLenient
 object ojAvatarSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     initials: String = null,
     size: xxs | xs | sm | md | lg | xl | xxl = null,
     src: String = null

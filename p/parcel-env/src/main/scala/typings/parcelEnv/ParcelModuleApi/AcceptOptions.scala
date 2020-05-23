@@ -22,8 +22,8 @@ object AcceptOptions {
     ignoreUnaccepted: js.UndefOr[Boolean] = js.undefined
   ): AcceptOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnaccepted)) __obj.updateDynamic("ignoreUnaccepted")(ignoreUnaccepted.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnaccepted)) __obj.updateDynamic("ignoreUnaccepted")(ignoreUnaccepted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptOptions]
   }
 }

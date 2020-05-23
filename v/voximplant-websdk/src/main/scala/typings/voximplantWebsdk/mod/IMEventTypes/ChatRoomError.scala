@@ -6,24 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		* Event dispatched in case of error while chat room operation
-		*/
+  * Event dispatched in case of error while chat room operation
+  */
 trait ChatRoomError extends VoxImplantIMEvent {
   /**
-  			* Error code
-  			*/
+    * Error code
+    */
   var code: String
   /**
-  			* Operation name
-  			*/
+    * Operation name
+    */
   var operation: String
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
   /**
-  			* Error description
-  			*/
+    * Error description
+    */
   var text: String
 }
 

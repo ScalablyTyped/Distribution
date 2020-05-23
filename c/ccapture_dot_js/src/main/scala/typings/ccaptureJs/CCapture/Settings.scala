@@ -58,27 +58,27 @@ object Settings {
   @scala.inline
   def apply(
     format: webm | gif | png | jpg | ffmpegserver,
-    autoSaveTime: Int | Double = null,
+    autoSaveTime: js.UndefOr[Double] = js.undefined,
     display: js.UndefOr[Boolean] = js.undefined,
-    framerate: Int | Double = null,
-    motionBlurFrames: Int | Double = null,
+    framerate: js.UndefOr[Double] = js.undefined,
+    motionBlurFrames: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    quality: Int | Double = null,
-    startTime: Int | Double = null,
-    timeLimit: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
+    startTime: js.UndefOr[Double] = js.undefined,
+    timeLimit: js.UndefOr[Double] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined,
     workersPath: String = null
   ): Settings = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    if (autoSaveTime != null) __obj.updateDynamic("autoSaveTime")(autoSaveTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (framerate != null) __obj.updateDynamic("framerate")(framerate.asInstanceOf[js.Any])
-    if (motionBlurFrames != null) __obj.updateDynamic("motionBlurFrames")(motionBlurFrames.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSaveTime)) __obj.updateDynamic("autoSaveTime")(autoSaveTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(framerate)) __obj.updateDynamic("framerate")(framerate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionBlurFrames)) __obj.updateDynamic("motionBlurFrames")(motionBlurFrames.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (timeLimit != null) __obj.updateDynamic("timeLimit")(timeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeLimit)) __obj.updateDynamic("timeLimit")(timeLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     if (workersPath != null) __obj.updateDynamic("workersPath")(workersPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }

@@ -18,7 +18,7 @@ object babel {
     presets: js.Array[String] = null
   ): babel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheDirectory)) __obj.updateDynamic("cacheDirectory")(cacheDirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheDirectory)) __obj.updateDynamic("cacheDirectory")(cacheDirectory.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
     __obj.asInstanceOf[babel]

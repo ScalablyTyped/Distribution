@@ -1,7 +1,7 @@
 package typings.alexaSdk.mod
 
-import typings.alexaSdk.AnonHeightPixels
-import typings.alexaSdk.AnonText
+import typings.alexaSdk.anon.HeightPixels
+import typings.alexaSdk.anon.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +53,7 @@ object utils extends js.Object {
       * @param description text used to describe the image in a screen reader
       * @returns Image
       */
-    def makeImages(imgArr: js.Array[AnonHeightPixels], description: String): Image = js.native
+    def makeImages(imgArr: js.Array[HeightPixels], description: String): Image = js.native
   }
   
   /**
@@ -80,7 +80,7 @@ object utils extends js.Object {
       * @param tertiaryText tertiary Text
       * @returns TextContent
       */
-    def makeTextContent(primaryText: AnonText, secondaryText: AnonText, tertiaryText: AnonText): TextContent = js.native
+    def makeTextContent(primaryText: Text, secondaryText: Text, tertiaryText: Text): TextContent = js.native
   }
   
 }

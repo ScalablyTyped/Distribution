@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Windows")
 @js.native
-class Windows protected () extends js.Object {
+trait Windows extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Count: Double = js.native
   val Creator: Double = js.native

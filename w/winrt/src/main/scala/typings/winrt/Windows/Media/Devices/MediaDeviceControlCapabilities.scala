@@ -4,20 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Devices.MediaDeviceControlCapabilities")
-@js.native
-class MediaDeviceControlCapabilities () extends IMediaDeviceControlCapabilities {
-  /* CompleteClass */
-  override var autoModeSupported: Boolean = js.native
-  /* CompleteClass */
-  override var default: Double = js.native
-  /* CompleteClass */
-  override var max: Double = js.native
-  /* CompleteClass */
-  override var min: Double = js.native
-  /* CompleteClass */
-  override var step: Double = js.native
-  /* CompleteClass */
-  override var supported: Boolean = js.native
+trait MediaDeviceControlCapabilities extends IMediaDeviceControlCapabilities
+
+object MediaDeviceControlCapabilities {
+  @scala.inline
+  def apply(
+    autoModeSupported: Boolean,
+    default: Double,
+    max: Double,
+    min: Double,
+    step: Double,
+    supported: Boolean
+  ): MediaDeviceControlCapabilities = {
+    val __obj = js.Dynamic.literal(autoModeSupported = autoModeSupported.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaDeviceControlCapabilities]
+  }
 }
 

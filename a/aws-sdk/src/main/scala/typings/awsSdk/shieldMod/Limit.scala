@@ -18,9 +18,9 @@ trait Limit extends js.Object {
 
 object Limit {
   @scala.inline
-  def apply(Max: Int | scala.Double = null, Type: String = null): Limit = {
+  def apply(Max: js.UndefOr[Long] = js.undefined, Type: String = null): Limit = {
     val __obj = js.Dynamic.literal()
-    if (Max != null) __obj.updateDynamic("Max")(Max.asInstanceOf[js.Any])
+    if (!js.isUndefined(Max)) __obj.updateDynamic("Max")(Max.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limit]
   }

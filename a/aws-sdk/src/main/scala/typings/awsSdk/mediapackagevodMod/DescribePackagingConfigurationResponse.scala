@@ -22,6 +22,7 @@ trait DescribePackagingConfigurationResponse extends js.Object {
     * The ID of a PackagingGroup.
     */
   var PackagingGroupId: js.UndefOr[string] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.native
 }
 
 object DescribePackagingConfigurationResponse {
@@ -33,7 +34,8 @@ object DescribePackagingConfigurationResponse {
     HlsPackage: HlsPackage = null,
     Id: string = null,
     MssPackage: MssPackage = null,
-    PackagingGroupId: string = null
+    PackagingGroupId: string = null,
+    Tags: Tags = null
   ): DescribePackagingConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
@@ -43,6 +45,7 @@ object DescribePackagingConfigurationResponse {
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (MssPackage != null) __obj.updateDynamic("MssPackage")(MssPackage.asInstanceOf[js.Any])
     if (PackagingGroupId != null) __obj.updateDynamic("PackagingGroupId")(PackagingGroupId.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePackagingConfigurationResponse]
   }
 }

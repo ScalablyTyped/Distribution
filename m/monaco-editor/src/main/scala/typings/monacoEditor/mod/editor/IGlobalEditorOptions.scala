@@ -55,21 +55,21 @@ object IGlobalEditorOptions {
     detectIndentation: js.UndefOr[Boolean] = js.undefined,
     insertSpaces: js.UndefOr[Boolean] = js.undefined,
     largeFileOptimizations: js.UndefOr[Boolean] = js.undefined,
-    maxTokenizationLineLength: Int | Double = null,
+    maxTokenizationLineLength: js.UndefOr[Double] = js.undefined,
     stablePeek: js.UndefOr[Boolean] = js.undefined,
-    tabSize: Int | Double = null,
+    tabSize: js.UndefOr[Double] = js.undefined,
     trimAutoWhitespace: js.UndefOr[Boolean] = js.undefined,
     wordBasedSuggestions: js.UndefOr[Boolean] = js.undefined
   ): IGlobalEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detectIndentation)) __obj.updateDynamic("detectIndentation")(detectIndentation.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaces)) __obj.updateDynamic("insertSpaces")(insertSpaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(largeFileOptimizations)) __obj.updateDynamic("largeFileOptimizations")(largeFileOptimizations.asInstanceOf[js.Any])
-    if (maxTokenizationLineLength != null) __obj.updateDynamic("maxTokenizationLineLength")(maxTokenizationLineLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(stablePeek)) __obj.updateDynamic("stablePeek")(stablePeek.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimAutoWhitespace)) __obj.updateDynamic("trimAutoWhitespace")(trimAutoWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordBasedSuggestions)) __obj.updateDynamic("wordBasedSuggestions")(wordBasedSuggestions.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectIndentation)) __obj.updateDynamic("detectIndentation")(detectIndentation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertSpaces)) __obj.updateDynamic("insertSpaces")(insertSpaces.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(largeFileOptimizations)) __obj.updateDynamic("largeFileOptimizations")(largeFileOptimizations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTokenizationLineLength)) __obj.updateDynamic("maxTokenizationLineLength")(maxTokenizationLineLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stablePeek)) __obj.updateDynamic("stablePeek")(stablePeek.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimAutoWhitespace)) __obj.updateDynamic("trimAutoWhitespace")(trimAutoWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordBasedSuggestions)) __obj.updateDynamic("wordBasedSuggestions")(wordBasedSuggestions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGlobalEditorOptions]
   }
 }

@@ -38,7 +38,7 @@ object BundleEntrySearch {
     id: String = null,
     mode: code = null,
     modifierExtension: js.Array[Extension] = null,
-    score: Int | Double = null
+    score: js.UndefOr[decimal] = js.undefined
   ): BundleEntrySearch = {
     val __obj = js.Dynamic.literal()
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
@@ -50,7 +50,7 @@ object BundleEntrySearch {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleEntrySearch]
   }
 }

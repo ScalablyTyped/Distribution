@@ -1,29 +1,28 @@
 package typings.webpackServe.mod
 
-import typings.webpackServe.AnonCompiler
-import typings.webpackServe.AnonCompilerStats
-import typings.webpackServe.AnonOptions
-import typings.webpackServe.AnonStats
+import typings.webpackServe.anon.Compiler
+import typings.webpackServe.anon.CompilerStats
+import typings.webpackServe.anon.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EventMap extends js.Object {
-  var `build-finished`: AnonStats
-  var `build-started`: AnonCompiler
-  var `compiler-error`: AnonCompilerStats
-  var `compiler-warning`: AnonCompilerStats
-  var listening: AnonOptions
+  var `build-finished`: Stats
+  var `build-started`: Compiler
+  var `compiler-error`: CompilerStats
+  var `compiler-warning`: CompilerStats
+  var listening: typings.webpackServe.anon.Options
 }
 
 object EventMap {
   @scala.inline
   def apply(
-    `build-finished`: AnonStats,
-    `build-started`: AnonCompiler,
-    `compiler-error`: AnonCompilerStats,
-    `compiler-warning`: AnonCompilerStats,
-    listening: AnonOptions
+    `build-finished`: Stats,
+    `build-started`: Compiler,
+    `compiler-error`: CompilerStats,
+    `compiler-warning`: CompilerStats,
+    listening: typings.webpackServe.anon.Options
   ): EventMap = {
     val __obj = js.Dynamic.literal(listening = listening.asInstanceOf[js.Any])
     __obj.updateDynamic("build-finished")(`build-finished`.asInstanceOf[js.Any])

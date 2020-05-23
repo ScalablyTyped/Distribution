@@ -36,6 +36,11 @@ object mod extends js.Object {
     var processDataPath: js.Any = js.native
     var retrieveData: js.Any = js.native
     /**
+      * Returns the number of element which constitutes the array
+      * @param dataPath
+      */
+    def count(dataPath: String): Double = js.native
+    /**
       * Delete the data
       * @param dataPath path leading to the data
       */
@@ -62,6 +67,13 @@ object mod extends js.Object {
       * @param dataPath
       */
     def getData(dataPath: String): js.Any = js.native
+    /**
+      * Returns the index of the object that meets the criteria submitted.
+      * @param dataPath
+      * @param id the value of the index
+      */
+    def getIndex(dataPath: String, value: String): Double = js.native
+    def getIndex(dataPath: String, value: String, item: String): Double = js.native
     /**
       * Manually load the database
       * It is automatically called when the first getData is done

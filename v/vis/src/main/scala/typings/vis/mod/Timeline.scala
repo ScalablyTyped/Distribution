@@ -1,11 +1,11 @@
 package typings.vis.mod
 
 import typings.std.Date
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
-import typings.vis.AnonAnimation
-import typings.vis.AnonGroups
-import typings.vis.AnonMax
+import typings.vis.anon.Animation
+import typings.vis.anon.Groups
+import typings.vis.anon.Max
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,11 +58,11 @@ class Timeline protected () extends js.Object {
     */
   def getCustomTime(): Date = js.native
   def getCustomTime(id: IdType): Date = js.native
-  def getEventProperties(event: Event_): TimelineEventPropertiesResult = js.native
+  def getEventProperties(event: Event): TimelineEventPropertiesResult = js.native
   /**
     * Get the range of all the items as an object containing min date and max date
     */
-  def getItemRange(): AnonMax = js.native
+  def getItemRange(): Max = js.native
   /**
     * Get an array with the ids of the currently selected items
     */
@@ -134,7 +134,7 @@ class Timeline protected () extends js.Object {
     * This is a convenience method for individually calling both setItems(items) and setGroups(groups).
     * Both items and groups can be an Array with Objects, a DataSet (offering 2 way data binding), or a DataView (offering 1 way data binding).
     */
-  def setData(data: AnonGroups): Unit = js.native
+  def setData(data: Groups): Unit = js.native
   /**
     * Set a data set with groups for the Timeline.
     */
@@ -153,13 +153,13 @@ class Timeline protected () extends js.Object {
     */
   def setOptions(options: TimelineOptions): Unit = js.native
   def setSelection(ids: js.Array[IdType]): Unit = js.native
-  def setSelection(ids: js.Array[IdType], options: AnonAnimation): Unit = js.native
+  def setSelection(ids: js.Array[IdType], options: Animation): Unit = js.native
   /**
     * Select one or multiple items by their id. The currently selected items will be unselected.
     * To unselect all selected items, call `setSelection([])`.
     */
   def setSelection(ids: IdType): Unit = js.native
-  def setSelection(ids: IdType, options: AnonAnimation): Unit = js.native
+  def setSelection(ids: IdType, options: Animation): Unit = js.native
   def setWindow(start: js.Any, date: js.Any): Unit = js.native
   /**
     * Set the current visible window.

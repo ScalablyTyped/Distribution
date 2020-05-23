@@ -20,7 +20,7 @@ object YarnConfiguration {
   @scala.inline
   def apply(flat: js.UndefOr[Boolean] = js.undefined, resolutions: Dependency = null): YarnConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.asInstanceOf[js.Any])
+    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.get.asInstanceOf[js.Any])
     if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[YarnConfiguration]
   }

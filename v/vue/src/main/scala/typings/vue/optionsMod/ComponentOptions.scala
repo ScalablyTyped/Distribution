@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import typings.std.Error
 import typings.std.Record
-import typings.vue.AnonEvent
+import typings.vue.anon.Event
 import typings.vue.vnodeMod.VNode
 import typings.vue.vueMod.CreateElement
 import typings.vue.vueMod.Vue
@@ -57,7 +57,7 @@ trait ComponentOptions[V /* <: Vue */, Data, Methods, Computed, PropsDef, Props]
       ]) | VueConstructor[Vue]
     ]
   ] = js.undefined
-  var model: js.UndefOr[AnonEvent] = js.undefined
+  var model: js.UndefOr[Event] = js.undefined
   var mounted: js.UndefOr[js.Function0[Unit]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var parent: js.UndefOr[Vue] = js.undefined
@@ -79,7 +79,7 @@ trait ComponentOptions[V /* <: Vue */, Data, Methods, Computed, PropsDef, Props]
 
 object ComponentOptions {
   @scala.inline
-  def apply[V /* <: Vue */, Data, Methods, Computed, PropsDef, Props](
+  def apply[V, Data, Methods, Computed, PropsDef, Props](
     activated: () => Unit = null,
     beforeCreate: js.ThisFunction0[/* this */ V, Unit] = null,
     beforeDestroy: () => Unit = null,
@@ -118,7 +118,7 @@ object ComponentOptions {
         DefaultProps
       ]) | VueConstructor[Vue]
     ] = null,
-    model: AnonEvent = null,
+    model: Event = null,
     mounted: () => Unit = null,
     name: String = null,
     parent: Vue = null,
@@ -140,7 +140,7 @@ object ComponentOptions {
     if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
     if (beforeMount != null) __obj.updateDynamic("beforeMount")(js.Any.fromFunction0(beforeMount))
     if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction0(beforeUpdate))
-    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.get.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (computed != null) __obj.updateDynamic("computed")(computed.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(js.Any.fromFunction0(created))
@@ -153,7 +153,7 @@ object ComponentOptions {
     if (errorCaptured != null) __obj.updateDynamic("errorCaptured")(js.Any.fromFunction3(errorCaptured))
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(inheritAttrs)) __obj.updateDynamic("inheritAttrs")(inheritAttrs.asInstanceOf[js.Any])
+    if (!js.isUndefined(inheritAttrs)) __obj.updateDynamic("inheritAttrs")(inheritAttrs.get.asInstanceOf[js.Any])
     if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.pkijs.mod
 
-import typings.pkijs.AnonCounter
+import typings.pkijs.anon.Counter
 import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +17,6 @@ object kdfWithCounter extends js.Object {
     * @param {number} Counter
     * @param {ArrayBuffer} SharedInfo Usually DER encoded "ECC_CMS_SharedInfo" structure
     */
-  def apply(hashFunction: String, Zbuffer: ArrayBuffer, Counter: Double, SharedInfo: ArrayBuffer): js.Thenable[AnonCounter] = js.native
+  def apply(hashFunction: String, Zbuffer: ArrayBuffer, Counter: Double, SharedInfo: ArrayBuffer): js.Thenable[Counter] = js.native
 }
 

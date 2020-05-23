@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("OData.OrderByStatement")
 @js.native
-class OrderByStatement protected () extends IExecutable {
-  def this(propertyName: String) = this()
-  def this(propertyName: String, sortOrder: String) = this()
+trait OrderByStatement extends IExecutable {
   var direction: js.Any = js.native
   var propertyName: js.Any = js.native
 }

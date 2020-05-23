@@ -1,6 +1,6 @@
 package typings.reactNativeMaterialUi.mod
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`1`
 import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`2`
 import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`3`
@@ -39,8 +39,8 @@ object ListItemProps {
     testID: String = null
   ): ListItemProps = {
     val __obj = js.Dynamic.literal(centerElement = centerElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(dense)) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
-    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (!js.isUndefined(dense)) __obj.updateDynamic("dense")(dense.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.get.asInstanceOf[js.Any])
     if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement.asInstanceOf[js.Any])
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))

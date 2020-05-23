@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,20 +27,6 @@ object ChartBinType extends js.Object {
   
   @js.native
   sealed trait category extends ChartBinType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartBinType with String] = js.native
-  /* "Auto" */ @js.native
-  object auto extends TopLevel[auto with String]
-  
-  /* "BinCount" */ @js.native
-  object binCount extends TopLevel[binCount with String]
-  
-  /* "BinWidth" */ @js.native
-  object binWidth extends TopLevel[binWidth with String]
-  
-  /* "Category" */ @js.native
-  object category extends TopLevel[category with String]
   
 }
 

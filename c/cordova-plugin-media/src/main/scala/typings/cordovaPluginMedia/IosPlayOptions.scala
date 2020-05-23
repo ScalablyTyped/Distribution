@@ -16,12 +16,12 @@ trait IosPlayOptions extends js.Object {
 object IosPlayOptions {
   @scala.inline
   def apply(
-    numberOfLoops: Int | Double = null,
+    numberOfLoops: js.UndefOr[Double] = js.undefined,
     playAudioWhenScreenIsLocked: js.UndefOr[Boolean] = js.undefined
   ): IosPlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (numberOfLoops != null) __obj.updateDynamic("numberOfLoops")(numberOfLoops.asInstanceOf[js.Any])
-    if (!js.isUndefined(playAudioWhenScreenIsLocked)) __obj.updateDynamic("playAudioWhenScreenIsLocked")(playAudioWhenScreenIsLocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfLoops)) __obj.updateDynamic("numberOfLoops")(numberOfLoops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(playAudioWhenScreenIsLocked)) __obj.updateDynamic("playAudioWhenScreenIsLocked")(playAudioWhenScreenIsLocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosPlayOptions]
   }
 }

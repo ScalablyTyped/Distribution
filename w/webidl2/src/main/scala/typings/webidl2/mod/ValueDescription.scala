@@ -12,23 +12,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ValueDescription extends js.Object {
-  var negative: Boolean | Null
-  var `type`: string | number | boolean | `null` | Infinity | NaN | sequence | dictionary
-  var value: String | js.Array[_] | Null
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.webidl2.mod.ValueDescriptionString
+  - typings.webidl2.mod.ValueDescriptionNumber
+  - typings.webidl2.mod.ValueDescriptionBoolean
+  - typings.webidl2.mod.ValueDescriptionNull
+  - typings.webidl2.mod.ValueDescriptionInfinity
+  - typings.webidl2.mod.ValueDescriptionNaN
+  - typings.webidl2.mod.ValueDescriptionSequence
+  - typings.webidl2.mod.ValueDescriptionDictionary
+*/
+trait ValueDescription extends js.Object
 
 object ValueDescription {
   @scala.inline
-  def apply(
-    `type`: string | number | boolean | `null` | Infinity | NaN | sequence | dictionary,
-    negative: js.UndefOr[Boolean] = js.undefined,
-    value: String | js.Array[_] = null
-  ): ValueDescription = {
+  def ValueDescriptionInfinity(negative: Boolean, `type`: Infinity): ValueDescription = {
+    val __obj = js.Dynamic.literal(negative = negative.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueDescription]
+  }
+  @scala.inline
+  def ValueDescriptionNaN(`type`: NaN): ValueDescription = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueDescription]
+  }
+  @scala.inline
+  def ValueDescriptionBoolean(`type`: boolean, value: Boolean): ValueDescription = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueDescription]
+  }
+  @scala.inline
+  def ValueDescriptionDictionary(`type`: dictionary): ValueDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueDescription]
+  }
+  @scala.inline
+  def ValueDescriptionNull(`type`: `null`): ValueDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueDescription]
+  }
+  @scala.inline
+  def ValueDescriptionString(`type`: string, value: String): ValueDescription = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueDescription]
+  }
+  @scala.inline
+  def ValueDescriptionNumber(`type`: number, value: String): ValueDescription = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueDescription]
+  }
+  @scala.inline
+  def ValueDescriptionSequence(`type`: sequence, value: js.Array[js.Any]): ValueDescription = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueDescription]
   }
 }

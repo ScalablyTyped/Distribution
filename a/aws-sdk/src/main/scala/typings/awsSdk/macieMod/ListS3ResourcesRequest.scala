@@ -22,9 +22,13 @@ trait ListS3ResourcesRequest extends js.Object {
 
 object ListS3ResourcesRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, memberAccountId: AWSAccountId = null, nextToken: NextToken = null): ListS3ResourcesRequest = {
+  def apply(
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    memberAccountId: AWSAccountId = null,
+    nextToken: NextToken = null
+  ): ListS3ResourcesRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (memberAccountId != null) __obj.updateDynamic("memberAccountId")(memberAccountId.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListS3ResourcesRequest]

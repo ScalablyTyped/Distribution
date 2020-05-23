@@ -152,7 +152,7 @@ trait BSTreeKV[K, V /* <: K */] extends js.Object {
 
 object BSTreeKV {
   @scala.inline
-  def apply[K, V /* <: K */](
+  def apply[K, V](
     add: V => Boolean,
     clear: () => Unit,
     compare: js.Any,

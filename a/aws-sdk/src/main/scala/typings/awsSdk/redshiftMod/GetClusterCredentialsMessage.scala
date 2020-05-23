@@ -37,16 +37,16 @@ object GetClusterCredentialsMessage {
   def apply(
     ClusterIdentifier: String,
     DbUser: String,
-    AutoCreate: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoCreate: js.UndefOr[BooleanOptional] = js.undefined,
     DbGroups: DbGroupList = null,
     DbName: String = null,
-    DurationSeconds: Int | scala.Double = null
+    DurationSeconds: js.UndefOr[IntegerOptional] = js.undefined
   ): GetClusterCredentialsMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], DbUser = DbUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoCreate)) __obj.updateDynamic("AutoCreate")(AutoCreate.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoCreate)) __obj.updateDynamic("AutoCreate")(AutoCreate.get.asInstanceOf[js.Any])
     if (DbGroups != null) __obj.updateDynamic("DbGroups")(DbGroups.asInstanceOf[js.Any])
     if (DbName != null) __obj.updateDynamic("DbName")(DbName.asInstanceOf[js.Any])
-    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClusterCredentialsMessage]
   }
 }

@@ -12,9 +12,9 @@ trait IGcsSource extends js.Object {
 
 object IGcsSource {
   @scala.inline
-  def apply(uri: String = null): IGcsSource = {
+  def apply(uri: js.UndefOr[Null | String] = js.undefined): IGcsSource = {
     val __obj = js.Dynamic.literal()
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    if (!js.isUndefined(uri)) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGcsSource]
   }
 }

@@ -13,40 +13,40 @@ trait IJson extends IWriter {
   /** [Config Option] (Boolean) */
   var encode: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns the value of allowSingle
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAllowSingle: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of encode
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getEncode: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of encodeRequest
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getEncodeRequest: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of rootProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getRootProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var root: js.UndefOr[String] = js.undefined
   /** [Config Option] (String) */
   var rootProperty: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of allowSingle
-  		* @param allowSingle Boolean The new value.
-  		*/
+    * @param allowSingle Boolean The new value.
+    */
   var setAllowSingle: js.UndefOr[js.Function1[/* allowSingle */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of encode
-  		* @param encode Boolean The new value.
-  		*/
+    * @param encode Boolean The new value.
+    */
   var setEncode: js.UndefOr[js.Function1[/* encode */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of encodeRequest
-  		* @param encodeRequest Boolean The new value.
-  		*/
+    * @param encodeRequest Boolean The new value.
+    */
   var setEncodeRequest: js.UndefOr[js.Function1[/* encodeRequest */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of rootProperty
-  		* @param rootProperty String The new value.
-  		*/
+    * @param rootProperty String The new value.
+    */
   var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -93,14 +93,14 @@ object IJson {
   ): IJson = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSingle)) __obj.updateDynamic("allowSingle")(allowSingle.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSingle)) __obj.updateDynamic("allowSingle")(allowSingle.get.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
+    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (getAllowSingle != null) __obj.updateDynamic("getAllowSingle")(js.Any.fromFunction0(getAllowSingle))
     if (getEncode != null) __obj.updateDynamic("getEncode")(js.Any.fromFunction0(getEncode))
@@ -124,11 +124,11 @@ object IJson {
     if (setNameProperty != null) __obj.updateDynamic("setNameProperty")(js.Any.fromFunction1(setNameProperty))
     if (setRootProperty != null) __obj.updateDynamic("setRootProperty")(js.Any.fromFunction1(setRootProperty))
     if (setWriteAllFields != null) __obj.updateDynamic("setWriteAllFields")(js.Any.fromFunction1(setWriteAllFields))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
-    if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IJson]
   }
 }

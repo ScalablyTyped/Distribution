@@ -28,17 +28,17 @@ object ListWorkspacesParams {
     headers: js.Object = null,
     include_audit: js.UndefOr[Boolean] = js.undefined,
     include_count: js.UndefOr[Boolean] = js.undefined,
-    page_limit: Int | Double = null,
+    page_limit: js.UndefOr[Double] = js.undefined,
     return_response: js.UndefOr[Boolean] = js.undefined,
     sort: Sort | String = null
   ): ListWorkspacesParams = {
     val __obj = js.Dynamic.literal()
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_audit)) __obj.updateDynamic("include_audit")(include_audit.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_count)) __obj.updateDynamic("include_count")(include_count.asInstanceOf[js.Any])
-    if (page_limit != null) __obj.updateDynamic("page_limit")(page_limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_audit)) __obj.updateDynamic("include_audit")(include_audit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_count)) __obj.updateDynamic("include_count")(include_count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page_limit)) __obj.updateDynamic("page_limit")(page_limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkspacesParams]
   }

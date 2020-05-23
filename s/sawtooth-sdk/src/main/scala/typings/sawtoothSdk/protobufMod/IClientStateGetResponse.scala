@@ -17,11 +17,15 @@ trait IClientStateGetResponse extends js.Object {
 
 object IClientStateGetResponse {
   @scala.inline
-  def apply(stateRoot: String = null, status: Status = null, value: Uint8Array = null): IClientStateGetResponse = {
+  def apply(
+    stateRoot: js.UndefOr[Null | String] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined,
+    value: js.UndefOr[Null | Uint8Array] = js.undefined
+  ): IClientStateGetResponse = {
     val __obj = js.Dynamic.literal()
-    if (stateRoot != null) __obj.updateDynamic("stateRoot")(stateRoot.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateRoot)) __obj.updateDynamic("stateRoot")(stateRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientStateGetResponse]
   }
 }

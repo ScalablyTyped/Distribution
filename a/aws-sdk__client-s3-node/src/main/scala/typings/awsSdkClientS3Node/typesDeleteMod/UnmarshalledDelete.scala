@@ -17,7 +17,7 @@ object UnmarshalledDelete {
   @scala.inline
   def apply(Objects: js.Array[UnmarshalledObjectIdentifier], Quiet: js.UndefOr[Boolean] = js.undefined): UnmarshalledDelete = {
     val __obj = js.Dynamic.literal(Objects = Objects.asInstanceOf[js.Any])
-    if (!js.isUndefined(Quiet)) __obj.updateDynamic("Quiet")(Quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(Quiet)) __obj.updateDynamic("Quiet")(Quiet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledDelete]
   }
 }

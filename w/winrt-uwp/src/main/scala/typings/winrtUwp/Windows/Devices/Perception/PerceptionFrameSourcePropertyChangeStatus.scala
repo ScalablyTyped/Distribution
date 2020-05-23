@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object PerceptionFrameSourcePropertyChangeStatus extends js.Object {
   /** The requested property change was not accepted because the value is not in a valid range. */
   @js.native
   sealed trait valueOutOfRange extends PerceptionFrameSourcePropertyChangeStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PerceptionFrameSourcePropertyChangeStatus with Double] = js.native
-  /* 1 */ @js.native
-  object accepted extends TopLevel[accepted with Double]
-  
-  /* 2 */ @js.native
-  object lostControl extends TopLevel[lostControl with Double]
-  
-  /* 3 */ @js.native
-  object propertyNotSupported extends TopLevel[propertyNotSupported with Double]
-  
-  /* 4 */ @js.native
-  object propertyReadOnly extends TopLevel[propertyReadOnly with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 5 */ @js.native
-  object valueOutOfRange extends TopLevel[valueOutOfRange with Double]
   
 }
 

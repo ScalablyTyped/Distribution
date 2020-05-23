@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ChartSeriesFormatData extends js.Object {
   /**
     *
-    * Represents line formatting. Read-only.
+    * Represents line formatting.
     *
     * [Api set: ExcelApi 1.1]
     */

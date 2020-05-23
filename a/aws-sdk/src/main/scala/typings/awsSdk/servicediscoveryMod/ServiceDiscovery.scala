@@ -102,12 +102,12 @@ trait ServiceDiscovery extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeregisterInstanceResponse, Unit]
   ): Request[DeregisterInstanceResponse, AWSError] = js.native
   /**
-    * Discovers registered instances for a specified namespace and service.
+    * Discovers registered instances for a specified namespace and service. You can use DiscoverInstances to discover instances for any type of namespace. For public and private DNS namespaces, you can also use DNS queries to discover instances.
     */
   def discoverInstances(): Request[DiscoverInstancesResponse, AWSError] = js.native
   def discoverInstances(callback: js.Function2[/* err */ AWSError, /* data */ DiscoverInstancesResponse, Unit]): Request[DiscoverInstancesResponse, AWSError] = js.native
   /**
-    * Discovers registered instances for a specified namespace and service.
+    * Discovers registered instances for a specified namespace and service. You can use DiscoverInstances to discover instances for any type of namespace. For public and private DNS namespaces, you can also use DNS queries to discover instances.
     */
   def discoverInstances(params: DiscoverInstancesRequest): Request[DiscoverInstancesResponse, AWSError] = js.native
   def discoverInstances(
@@ -258,12 +258,12 @@ trait ServiceDiscovery extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Submits a request to perform the following operations:   Add or delete DnsRecords configurations   Update the TTL setting for existing DnsRecords configurations   Add, update, or delete HealthCheckConfig for a specified service   For public and private DNS namespaces, you must specify all DnsRecords configurations (and, optionally, HealthCheckConfig) that you want to appear in the updated service. Any current configurations that don't appear in an UpdateService request are deleted. When you update the TTL setting for a service, AWS Cloud Map also updates the corresponding settings in all the records and health checks that were created by using the specified service.
+    * Submits a request to perform the following operations:   Update the TTL setting for existing DnsRecords configurations   Add, update, or delete HealthCheckConfig for a specified service  You can't add, update, or delete a HealthCheckCustomConfig configuration.    For public and private DNS namespaces, note the following:   If you omit any existing DnsRecords or HealthCheckConfig configurations from an UpdateService request, the configurations are deleted from the service.   If you omit an existing HealthCheckCustomConfig configuration from an UpdateService request, the configuration is not deleted from the service.   When you update settings for a service, AWS Cloud Map also updates the corresponding settings in all the records and health checks that were created by using the specified service.
     */
   def updateService(): Request[UpdateServiceResponse, AWSError] = js.native
   def updateService(callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceResponse, Unit]): Request[UpdateServiceResponse, AWSError] = js.native
   /**
-    * Submits a request to perform the following operations:   Add or delete DnsRecords configurations   Update the TTL setting for existing DnsRecords configurations   Add, update, or delete HealthCheckConfig for a specified service   For public and private DNS namespaces, you must specify all DnsRecords configurations (and, optionally, HealthCheckConfig) that you want to appear in the updated service. Any current configurations that don't appear in an UpdateService request are deleted. When you update the TTL setting for a service, AWS Cloud Map also updates the corresponding settings in all the records and health checks that were created by using the specified service.
+    * Submits a request to perform the following operations:   Update the TTL setting for existing DnsRecords configurations   Add, update, or delete HealthCheckConfig for a specified service  You can't add, update, or delete a HealthCheckCustomConfig configuration.    For public and private DNS namespaces, note the following:   If you omit any existing DnsRecords or HealthCheckConfig configurations from an UpdateService request, the configurations are deleted from the service.   If you omit an existing HealthCheckCustomConfig configuration from an UpdateService request, the configuration is not deleted from the service.   When you update settings for a service, AWS Cloud Map also updates the corresponding settings in all the records and health checks that were created by using the specified service.
     */
   def updateService(params: UpdateServiceRequest): Request[UpdateServiceResponse, AWSError] = js.native
   def updateService(

@@ -16,14 +16,14 @@ trait IVersionDef extends js.Object {
 object IVersionDef {
   @scala.inline
   def apply(
-    badConsumers: js.Array[Double] = null,
-    minConsumer: Int | Double = null,
-    producer: Int | Double = null
+    badConsumers: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    minConsumer: js.UndefOr[Null | Double] = js.undefined,
+    producer: js.UndefOr[Null | Double] = js.undefined
   ): IVersionDef = {
     val __obj = js.Dynamic.literal()
-    if (badConsumers != null) __obj.updateDynamic("badConsumers")(badConsumers.asInstanceOf[js.Any])
-    if (minConsumer != null) __obj.updateDynamic("minConsumer")(minConsumer.asInstanceOf[js.Any])
-    if (producer != null) __obj.updateDynamic("producer")(producer.asInstanceOf[js.Any])
+    if (!js.isUndefined(badConsumers)) __obj.updateDynamic("badConsumers")(badConsumers.asInstanceOf[js.Any])
+    if (!js.isUndefined(minConsumer)) __obj.updateDynamic("minConsumer")(minConsumer.asInstanceOf[js.Any])
+    if (!js.isUndefined(producer)) __obj.updateDynamic("producer")(producer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVersionDef]
   }
 }

@@ -22,7 +22,7 @@ object DateTimeOptions {
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem.asInstanceOf[js.Any])
     if (outputCalendar != null) __obj.updateDynamic("outputCalendar")(outputCalendar.asInstanceOf[js.Any])
-    if (!js.isUndefined(setZone)) __obj.updateDynamic("setZone")(setZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(setZone)) __obj.updateDynamic("setZone")(setZone.get.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeOptions]
   }

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,4 @@ trait RandomSource extends js.Object {
   def getRandomValues(array: Uint8Array): Uint8Array = js.native
   def getRandomValues(array: Uint8ClampedArray): Uint8ClampedArray = js.native
 }
-
-@JSGlobal("RandomSource")
-@js.native
-object RandomSource extends Instantiable0[RandomSource]
 

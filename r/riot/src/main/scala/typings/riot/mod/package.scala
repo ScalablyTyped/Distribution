@@ -11,7 +11,7 @@ package object mod {
   ]
   type InstalledPluginsSet = typings.std.Set[typings.riot.mod.ComponentEnhancer]
   type PureComponentFactoryFunction[InitialProps, Context] = js.Function1[
-    /* hasSlotsAttributesProps */ typings.riot.AnonAttributes[InitialProps], 
+    /* hasSlotsAttributesProps */ typings.riot.anon.Attributes[InitialProps], 
     typings.riot.mod.RiotPureComponent[Context]
   ]
   type RegisteredComponentsMap = typings.std.Map[

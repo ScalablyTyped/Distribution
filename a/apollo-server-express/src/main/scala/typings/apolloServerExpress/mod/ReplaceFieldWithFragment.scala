@@ -1,7 +1,7 @@
 package typings.apolloServerExpress.mod
 
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.AnonField
+import typings.graphqlTools.anon.Field
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReplaceFieldWithFragment protected ()
   extends typings.graphqlTools.mod.ReplaceFieldWithFragment {
-  def this(targetSchema: GraphQLSchema, fragments: js.Array[AnonField]) = this()
+  def this(targetSchema: GraphQLSchema, fragments: js.Array[Field]) = this()
 }
 

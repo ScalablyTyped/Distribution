@@ -28,8 +28,7 @@ object PreRenderedChunk {
     name: String,
     facadeModuleId: String = null
   ): PreRenderedChunk = {
-    val __obj = js.Dynamic.literal(dynamicImports = dynamicImports.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (facadeModuleId != null) __obj.updateDynamic("facadeModuleId")(facadeModuleId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dynamicImports = dynamicImports.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], facadeModuleId = facadeModuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreRenderedChunk]
   }
 }

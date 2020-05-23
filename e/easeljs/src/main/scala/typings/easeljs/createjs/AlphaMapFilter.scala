@@ -6,11 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.AlphaMapFilter")
 @js.native
-class AlphaMapFilter protected () extends Filter {
-  def this(alphaMap: HTMLCanvasElement) = this()
-  def this(alphaMap: HTMLImageElement) = this()
+trait AlphaMapFilter extends Filter {
   // properties
   var alphaMap: HTMLImageElement | HTMLCanvasElement = js.native
 }

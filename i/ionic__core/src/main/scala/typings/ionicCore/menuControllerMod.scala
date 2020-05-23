@@ -1,7 +1,7 @@
 package typings.ionicCore
 
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
-import typings.ionicCore.componentsMod._Global_.HTMLIonMenuElement
+import typings.ionicCore.componentsMod.global.HTMLIonMenuElement
 import typings.ionicCore.menuInterfaceMod.MenuI
 import scala.scalajs.js
 import scala.scalajs.js.`|`

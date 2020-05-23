@@ -1,7 +1,7 @@
 package typings.stellarSdk.mod
 
 import typings.node.Buffer
-import typings.stellarBase.AnonHint
+import typings.stellarBase.anon.Hint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object xdr extends js.Object {
   @js.native
   class DecoratedSignature protected ()
     extends typings.stellarBase.mod.xdr.DecoratedSignature {
-    def this(keys: AnonHint) = this()
+    def this(keys: Hint) = this()
   }
   
   @js.native

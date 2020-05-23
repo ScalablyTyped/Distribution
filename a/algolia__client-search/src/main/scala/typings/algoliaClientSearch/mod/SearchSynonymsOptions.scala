@@ -21,10 +21,14 @@ trait SearchSynonymsOptions extends js.Object {
 
 object SearchSynonymsOptions {
   @scala.inline
-  def apply(hitsPerPage: Int | Double = null, page: Int | Double = null, `type`: String = null): SearchSynonymsOptions = {
+  def apply(
+    hitsPerPage: js.UndefOr[Double] = js.undefined,
+    page: js.UndefOr[Double] = js.undefined,
+    `type`: String = null
+  ): SearchSynonymsOptions = {
     val __obj = js.Dynamic.literal()
-    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitsPerPage)) __obj.updateDynamic("hitsPerPage")(hitsPerPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchSynonymsOptions]
   }

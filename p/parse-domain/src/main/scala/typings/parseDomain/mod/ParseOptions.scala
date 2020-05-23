@@ -15,7 +15,7 @@ object ParseOptions {
   def apply(customTlds: RegExp | js.Array[String] = null, privateTlds: js.UndefOr[Boolean] = js.undefined): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (customTlds != null) __obj.updateDynamic("customTlds")(customTlds.asInstanceOf[js.Any])
-    if (!js.isUndefined(privateTlds)) __obj.updateDynamic("privateTlds")(privateTlds.asInstanceOf[js.Any])
+    if (!js.isUndefined(privateTlds)) __obj.updateDynamic("privateTlds")(privateTlds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

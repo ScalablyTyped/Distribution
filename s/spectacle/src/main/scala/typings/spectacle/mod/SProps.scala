@@ -12,7 +12,7 @@ object SProps {
   @scala.inline
   def apply(
     bgColor: String = null,
-    bgDarken: Int | Double = null,
+    bgDarken: js.UndefOr[Double] = js.undefined,
     bgImage: String = null,
     bold: js.UndefOr[Boolean] = js.undefined,
     caps: js.UndefOr[Boolean] = js.undefined,
@@ -29,12 +29,12 @@ object SProps {
   ): SProps = {
     val __obj = js.Dynamic.literal()
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
-    if (bgDarken != null) __obj.updateDynamic("bgDarken")(bgDarken.asInstanceOf[js.Any])
+    if (!js.isUndefined(bgDarken)) __obj.updateDynamic("bgDarken")(bgDarken.get.asInstanceOf[js.Any])
     if (bgImage != null) __obj.updateDynamic("bgImage")(bgImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (!js.isUndefined(caps)) __obj.updateDynamic("caps")(caps.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(caps)) __obj.updateDynamic("caps")(caps.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

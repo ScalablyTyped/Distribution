@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Action extends js.Object {
   /**
-    * GuardDuty Finding activity type.
+    * The GuardDuty finding activity type.
     */
   var ActionType: js.UndefOr[String] = js.native
   /**

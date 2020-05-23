@@ -11,9 +11,9 @@ trait IGetPeersResponse extends js.Object {
 
 object IGetPeersResponse {
   @scala.inline
-  def apply(peerEndpoints: js.Array[String] = null): IGetPeersResponse = {
+  def apply(peerEndpoints: js.UndefOr[Null | js.Array[String]] = js.undefined): IGetPeersResponse = {
     val __obj = js.Dynamic.literal()
-    if (peerEndpoints != null) __obj.updateDynamic("peerEndpoints")(peerEndpoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(peerEndpoints)) __obj.updateDynamic("peerEndpoints")(peerEndpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetPeersResponse]
   }
 }

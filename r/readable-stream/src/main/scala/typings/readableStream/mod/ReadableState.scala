@@ -1,5 +1,6 @@
 package typings.readableStream.mod
 
+import typings.node.BufferEncoding
 import typings.node.stringDecoderMod.StringDecoder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,10 +10,10 @@ trait ReadableState extends js.Object {
   var awaitDrain: Double
   var buffer: BufferList[_]
   var decoder: StringDecoder | Null
-  var defaultEncoding: String
+  var defaultEncoding: BufferEncoding
   var destroyed: Boolean
   var emittedReadable: Boolean
-  var encoding: String | Null
+  var encoding: BufferEncoding | Null
   var endEmitted: Boolean
   var ended: Boolean
   var flowing: js.Any
@@ -35,7 +36,7 @@ object ReadableState {
   def apply(
     awaitDrain: Double,
     buffer: BufferList[_],
-    defaultEncoding: String,
+    defaultEncoding: BufferEncoding,
     destroyed: Boolean,
     emittedReadable: Boolean,
     endEmitted: Boolean,
@@ -53,11 +54,9 @@ object ReadableState {
     resumeScheduled: Boolean,
     sync: Boolean,
     decoder: StringDecoder = null,
-    encoding: String = null
+    encoding: BufferEncoding = null
   ): ReadableState = {
-    val __obj = js.Dynamic.literal(awaitDrain = awaitDrain.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any], defaultEncoding = defaultEncoding.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], emittedReadable = emittedReadable.asInstanceOf[js.Any], endEmitted = endEmitted.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], flowing = flowing.asInstanceOf[js.Any], highWaterMark = highWaterMark.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], needReadable = needReadable.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any], pipesCount = pipesCount.asInstanceOf[js.Any], readableListening = readableListening.asInstanceOf[js.Any], reading = reading.asInstanceOf[js.Any], readingMore = readingMore.asInstanceOf[js.Any], resumeScheduled = resumeScheduled.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
-    if (decoder != null) __obj.updateDynamic("decoder")(decoder.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(awaitDrain = awaitDrain.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any], defaultEncoding = defaultEncoding.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], emittedReadable = emittedReadable.asInstanceOf[js.Any], endEmitted = endEmitted.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], flowing = flowing.asInstanceOf[js.Any], highWaterMark = highWaterMark.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], needReadable = needReadable.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any], pipesCount = pipesCount.asInstanceOf[js.Any], readableListening = readableListening.asInstanceOf[js.Any], reading = reading.asInstanceOf[js.Any], readingMore = readingMore.asInstanceOf[js.Any], resumeScheduled = resumeScheduled.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], decoder = decoder.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableState]
   }
 }

@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.AnonFileName
+import typings.canvasjs.anon.FileName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,7 +68,7 @@ class Chart protected () extends js.Object {
     * Export the chart as image (jpg / png).
     * @param options Setting when export
     */
-  def exportChart(options: AnonFileName): Unit = js.native
+  def exportChart(options: FileName): Unit = js.native
   /**
     * Returns the specified property of Chart.
     * @param propertyName Name of the property.

@@ -35,10 +35,10 @@ object TaskScheduledEventDetails {
     region: Name,
     resource: Name,
     resourceType: Name,
-    timeoutInSeconds: Int | Double = null
+    timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
   ): TaskScheduledEventDetails = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
-    if (timeoutInSeconds != null) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInSeconds)) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskScheduledEventDetails]
   }
 }

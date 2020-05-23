@@ -9,27 +9,33 @@ import typings.spotifyWebApiJs.SpotifyApi.ArtistsRelatedArtistsResponse
 import typings.spotifyWebApiJs.SpotifyApi.ArtistsTopTracksResponse
 import typings.spotifyWebApiJs.SpotifyApi.AudioFeaturesResponse
 import typings.spotifyWebApiJs.SpotifyApi.AvailableGenreSeedsResponse
-import typings.spotifyWebApiJs.SpotifyApi.CategoryPlaylistsReponse
-import typings.spotifyWebApiJs.SpotifyApi.ChangePlaylistDetailsReponse
+import typings.spotifyWebApiJs.SpotifyApi.CategoryPlaylistsResponse
+import typings.spotifyWebApiJs.SpotifyApi.ChangePlaylistDetailsResponse
 import typings.spotifyWebApiJs.SpotifyApi.CheckUserSavedAlbumsResponse
+import typings.spotifyWebApiJs.SpotifyApi.CheckUsersSavedShowsResponse
 import typings.spotifyWebApiJs.SpotifyApi.CheckUsersSavedTracksResponse
 import typings.spotifyWebApiJs.SpotifyApi.CreatePlaylistResponse
 import typings.spotifyWebApiJs.SpotifyApi.CurrentPlaybackResponse
 import typings.spotifyWebApiJs.SpotifyApi.CurrentUsersProfileResponse
 import typings.spotifyWebApiJs.SpotifyApi.CurrentlyPlayingResponse
 import typings.spotifyWebApiJs.SpotifyApi.DeviceSpecificParameterObject
+import typings.spotifyWebApiJs.SpotifyApi.EpisodeSearchResponse
 import typings.spotifyWebApiJs.SpotifyApi.FollowArtistsOrUsersResponse
-import typings.spotifyWebApiJs.SpotifyApi.FollowPlaylistReponse
+import typings.spotifyWebApiJs.SpotifyApi.FollowPlaylistResponse
 import typings.spotifyWebApiJs.SpotifyApi.ListOfFeaturedPlaylistsResponse
 import typings.spotifyWebApiJs.SpotifyApi.ListOfNewReleasesResponse
 import typings.spotifyWebApiJs.SpotifyApi.ListOfUsersPlaylistsResponse
+import typings.spotifyWebApiJs.SpotifyApi.ListOfUsersShowsResponse
 import typings.spotifyWebApiJs.SpotifyApi.MultipleAlbumsResponse
 import typings.spotifyWebApiJs.SpotifyApi.MultipleArtistsResponse
 import typings.spotifyWebApiJs.SpotifyApi.MultipleAudioFeaturesResponse
 import typings.spotifyWebApiJs.SpotifyApi.MultipleCategoriesResponse
+import typings.spotifyWebApiJs.SpotifyApi.MultipleEpisodesResponse
+import typings.spotifyWebApiJs.SpotifyApi.MultipleShowsResponse
 import typings.spotifyWebApiJs.SpotifyApi.MultipleTracksResponse
 import typings.spotifyWebApiJs.SpotifyApi.PlayParameterObject
 import typings.spotifyWebApiJs.SpotifyApi.PlaybackRepeatState
+import typings.spotifyWebApiJs.SpotifyApi.PlaylistCoverImageResponse
 import typings.spotifyWebApiJs.SpotifyApi.PlaylistSearchResponse
 import typings.spotifyWebApiJs.SpotifyApi.PlaylistSnapshotResponse
 import typings.spotifyWebApiJs.SpotifyApi.PlaylistTrackResponse
@@ -38,28 +44,34 @@ import typings.spotifyWebApiJs.SpotifyApi.RecommendationsFromSeedsResponse
 import typings.spotifyWebApiJs.SpotifyApi.RecommendationsOptionsObject
 import typings.spotifyWebApiJs.SpotifyApi.RemoveAlbumsForUserResponse
 import typings.spotifyWebApiJs.SpotifyApi.RemoveTracksFromPlaylistResponse
+import typings.spotifyWebApiJs.SpotifyApi.RemoveUsersSavedShowsResponse
 import typings.spotifyWebApiJs.SpotifyApi.RemoveUsersSavedTracksResponse
 import typings.spotifyWebApiJs.SpotifyApi.ReorderPlaylistTracksResponse
 import typings.spotifyWebApiJs.SpotifyApi.ReplacePlaylistTracksResponse
 import typings.spotifyWebApiJs.SpotifyApi.SaveAlbumsForUserResponse
+import typings.spotifyWebApiJs.SpotifyApi.SaveShowsForUserResponse
 import typings.spotifyWebApiJs.SpotifyApi.SaveTracksForUserResponse
 import typings.spotifyWebApiJs.SpotifyApi.SearchForItemParameterObject
 import typings.spotifyWebApiJs.SpotifyApi.SearchResponse
+import typings.spotifyWebApiJs.SpotifyApi.ShowEpisodesResponse
+import typings.spotifyWebApiJs.SpotifyApi.ShowSearchResponse
 import typings.spotifyWebApiJs.SpotifyApi.SingleAlbumResponse
 import typings.spotifyWebApiJs.SpotifyApi.SingleArtistResponse
 import typings.spotifyWebApiJs.SpotifyApi.SingleCategoryResponse
+import typings.spotifyWebApiJs.SpotifyApi.SingleEpisodeResponse
 import typings.spotifyWebApiJs.SpotifyApi.SinglePlaylistResponse
+import typings.spotifyWebApiJs.SpotifyApi.SingleShowResponse
 import typings.spotifyWebApiJs.SpotifyApi.SingleTrackResponse
 import typings.spotifyWebApiJs.SpotifyApi.TrackRelinkingParameterObject
 import typings.spotifyWebApiJs.SpotifyApi.TrackSearchResponse
 import typings.spotifyWebApiJs.SpotifyApi.TransferPlaybackParameterObject
 import typings.spotifyWebApiJs.SpotifyApi.UnfollowArtistsOrUsersResponse
-import typings.spotifyWebApiJs.SpotifyApi.UnfollowPlaylistReponse
-import typings.spotifyWebApiJs.SpotifyApi.UploadCustomPlaylistCoverImageReponse
+import typings.spotifyWebApiJs.SpotifyApi.UnfollowPlaylistResponse
+import typings.spotifyWebApiJs.SpotifyApi.UploadCustomPlaylistCoverImageResponse
 import typings.spotifyWebApiJs.SpotifyApi.UserDevicesResponse
 import typings.spotifyWebApiJs.SpotifyApi.UserFollowsUsersOrArtistsResponse
 import typings.spotifyWebApiJs.SpotifyApi.UserProfileResponse
-import typings.spotifyWebApiJs.SpotifyApi.UsersFollowPlaylistReponse
+import typings.spotifyWebApiJs.SpotifyApi.UsersFollowPlaylistResponse
 import typings.spotifyWebApiJs.SpotifyApi.UsersFollowedArtistsResponse
 import typings.spotifyWebApiJs.SpotifyApi.UsersRecentlyPlayedTracksResponse
 import typings.spotifyWebApiJs.SpotifyApi.UsersSavedAlbumsResponse
@@ -99,6 +111,21 @@ trait SpotifyWebApiJs extends js.Object {
     options: js.Object,
     callback: ResultsCallback[SaveAlbumsForUserResponse]
   ): js.Promise[SaveAlbumsForUserResponse] = js.native
+  /**
+    * Adds a list of shows to the current user's saved shows.
+    * See [Save Shows for Current User](https://developer.spotify.com/documentation/web-api/reference/library/save-shows-user/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {Array<string>} showIds The ids of the shows. If you know their Spotify URI it is easy
+    * to find their show id (e.g. spotify:show:<here_is_the_show_id>)
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def addToMySavedShows(showIds: js.Array[String]): js.Promise[SaveShowsForUserResponse] = js.native
+  def addToMySavedShows(showIds: js.Array[String], options: js.Object): js.Promise[SaveShowsForUserResponse] = js.native
+  def addToMySavedShows(showIds: js.Array[String], options: js.Object, callback: ResultsCallback[SaveShowsForUserResponse]): js.Promise[SaveShowsForUserResponse] = js.native
   /**
     * Adds a list of tracks to the current user's saved tracks.
     * See [Save Tracks for Current User](https://developer.spotify.com/web-api/save-tracks-user/) on
@@ -153,12 +180,12 @@ trait SpotifyWebApiJs extends js.Object {
     * whether the users are following the playlist sent in the request.
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
-  def areFollowingPlaylist(playlistId: String, userIds: js.Array[String]): js.Promise[UsersFollowPlaylistReponse] = js.native
+  def areFollowingPlaylist(playlistId: String, userIds: js.Array[String]): js.Promise[UsersFollowPlaylistResponse] = js.native
   def areFollowingPlaylist(
     playlistId: String,
     userIds: js.Array[String],
-    callback: ResultsCallback[UsersFollowPlaylistReponse]
-  ): js.Promise[UsersFollowPlaylistReponse] = js.native
+    callback: ResultsCallback[UsersFollowPlaylistResponse]
+  ): js.Promise[UsersFollowPlaylistResponse] = js.native
   /**
     * Change a playlist's name and public/private state
     * See [Change a Playlist's Details](https://developer.spotify.com/web-api/change-playlist-details/) on
@@ -171,8 +198,8 @@ trait SpotifyWebApiJs extends js.Object {
     * one is the error object (null if no error), and the second is the value if the request succeeded.
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
-  def changePlaylistDetails(playlistId: String, data: js.Object): js.Promise[ChangePlaylistDetailsReponse] = js.native
-  def changePlaylistDetails(playlistId: String, data: js.Object, callback: ResultsCallback[ChangePlaylistDetailsReponse]): js.Promise[ChangePlaylistDetailsReponse] = js.native
+  def changePlaylistDetails(playlistId: String, data: js.Object): js.Promise[ChangePlaylistDetailsResponse] = js.native
+  def changePlaylistDetails(playlistId: String, data: js.Object, callback: ResultsCallback[ChangePlaylistDetailsResponse]): js.Promise[ChangePlaylistDetailsResponse] = js.native
   /**
     * Check if one or more albums is already saved in the current Spotify user's "Your Music" library.
     * See [Check User's Saved Albums](https://developer.spotify.com/web-api/check-users-saved-albums/) on
@@ -192,6 +219,25 @@ trait SpotifyWebApiJs extends js.Object {
     options: js.Object,
     callback: ResultsCallback[CheckUserSavedAlbumsResponse]
   ): js.Promise[CheckUserSavedAlbumsResponse] = js.native
+  /**
+    * Checks if the current user's saved shows contains a certain list of shows.
+    * See [Check Current User's Saved Shows](https://developer.spotify.com/documentation/web-api/reference/library/check-users-saved-shows/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {Array<string>} showIds The ids of the shows. If you know their Spotify URI it is easy
+    * to find their show id (e.g. spotify:show:<here_is_the_show_id>)
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def containsMySavedShows(showIds: js.Array[String]): js.Promise[CheckUsersSavedShowsResponse] = js.native
+  def containsMySavedShows(showIds: js.Array[String], options: js.Object): js.Promise[CheckUsersSavedShowsResponse] = js.native
+  def containsMySavedShows(
+    showIds: js.Array[String],
+    options: js.Object,
+    callback: ResultsCallback[CheckUsersSavedShowsResponse]
+  ): js.Promise[CheckUsersSavedShowsResponse] = js.native
   /**
     * Checks if the current user's saved tracks contains a certain list of tracks.
     * See [Check Current User's Saved Tracks](https://developer.spotify.com/web-api/check-users-saved-tracks/) on
@@ -252,9 +298,9 @@ trait SpotifyWebApiJs extends js.Object {
     * one is the error object (null if no error), and the second is an empty value if the request succeeded.
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
-  def followPlaylist(playlistId: String): js.Promise[FollowPlaylistReponse] = js.native
-  def followPlaylist(playlistId: String, options: js.Object): js.Promise[FollowPlaylistReponse] = js.native
-  def followPlaylist(playlistId: String, options: js.Object, callback: ResultsCallback[FollowPlaylistReponse]): js.Promise[FollowPlaylistReponse] = js.native
+  def followPlaylist(playlistId: String): js.Promise[FollowPlaylistResponse] = js.native
+  def followPlaylist(playlistId: String, options: js.Object): js.Promise[FollowPlaylistResponse] = js.native
+  def followPlaylist(playlistId: String, options: js.Object, callback: ResultsCallback[FollowPlaylistResponse]): js.Promise[FollowPlaylistResponse] = js.native
   /**
     * Adds the current user as a follower of one or more other Spotify users.
     * See [Follow Artists or Users](https://developer.spotify.com/web-api/follow-artists-users/) on
@@ -273,7 +319,7 @@ trait SpotifyWebApiJs extends js.Object {
     *
     * @return {string} accessToken The access token
     */
-  def getAccessToken(): String = js.native
+  def getAccessToken(): String | Null = js.native
   /**
     * Fetches an album from the Spotify catalog.
     * See [Get an Album](https://developer.spotify.com/web-api/get-album/) on
@@ -405,7 +451,7 @@ trait SpotifyWebApiJs extends js.Object {
     callback: ResultsCallback[MultipleArtistsResponse]
   ): js.Promise[MultipleArtistsResponse] = js.native
   /**
-    * Get audio feature information for a single track identified by its unique Spotify ID. 
+    * Get audio feature information for a single track identified by its unique Spotify ID.
     * See [Get Audio Analysis for a Track](https://developer.spotify.com/documentation/web-api/https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-analysis/) on
     * the Spotify Developer site for more information about the endpoint.
     * @param {string} trackId The id of the track. If you know the Spotify URI it is easy
@@ -489,9 +535,43 @@ trait SpotifyWebApiJs extends js.Object {
     * one is the error object (null if no error), and the second is the value if the request succeeded.
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
-  def getCategoryPlaylists(categoryId: String): js.Promise[CategoryPlaylistsReponse] = js.native
-  def getCategoryPlaylists(categoryId: String, options: js.Object): js.Promise[CategoryPlaylistsReponse] = js.native
-  def getCategoryPlaylists(categoryId: String, options: js.Object, callback: ResultsCallback[CategoryPlaylistsReponse]): js.Promise[CategoryPlaylistsReponse] = js.native
+  def getCategoryPlaylists(categoryId: String): js.Promise[CategoryPlaylistsResponse] = js.native
+  def getCategoryPlaylists(categoryId: String, options: js.Object): js.Promise[CategoryPlaylistsResponse] = js.native
+  def getCategoryPlaylists(categoryId: String, options: js.Object, callback: ResultsCallback[CategoryPlaylistsResponse]): js.Promise[CategoryPlaylistsResponse] = js.native
+  /**
+    * Fetches an episode from the Spotify catalog.
+    * See [Get an Episode](https://developer.spotify.com/documentation/web-api/reference/episodes/get-an-episode/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {string} episodeId The id of the episode. If you know the Spotify URI it is easy
+    * to find the episode id (e.g. spotify:episode:<here_is_the_episode_id>)
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def getEpisode(episodeId: String): js.Promise[SingleEpisodeResponse] = js.native
+  def getEpisode(episodeId: String, options: js.Object): js.Promise[SingleEpisodeResponse] = js.native
+  def getEpisode(episodeId: String, options: js.Object, callback: ResultsCallback[SingleEpisodeResponse]): js.Promise[SingleEpisodeResponse] = js.native
+  /**
+    * Fetches multiple episodes from the Spotify catalog.
+    * See [Get Several Episodes](https://developer.spotify.com/documentation/web-api/reference/episodes/get-several-episodes/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {Array<string>} episodeIds The ids of the episodes. If you know their Spotify URI it is easy
+    * to find their episode id (e.g. spotify:episode:<here_is_the_episode_id>)
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def getEpisodes(episodeIds: js.Array[String]): js.Promise[MultipleEpisodesResponse] = js.native
+  def getEpisodes(episodeIds: js.Array[String], options: js.Object): js.Promise[MultipleEpisodesResponse] = js.native
+  def getEpisodes(
+    episodeIds: js.Array[String],
+    options: js.Object,
+    callback: ResultsCallback[MultipleEpisodesResponse]
+  ): js.Promise[MultipleEpisodesResponse] = js.native
   /**
     * Fetches a list of Spotify featured playlists (shown, for example, on a Spotify player's "Browse" tab).
     * See [Get a List of Featured Playlists](https://developer.spotify.com/web-api/get-list-featured-playlists/) on
@@ -612,6 +692,19 @@ trait SpotifyWebApiJs extends js.Object {
   def getMySavedAlbums(options: js.Object): js.Promise[UsersSavedAlbumsResponse] = js.native
   def getMySavedAlbums(options: js.Object, callback: ResultsCallback[UsersSavedAlbumsResponse]): js.Promise[UsersSavedAlbumsResponse] = js.native
   /**
+    * Fetches current user's saved shows.
+    * See [Get Current User's Saved Shows](https://developer.spotify.com/documentation/web-api/reference/library/get-users-saved-shows/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def getMySavedShows(): js.Promise[ListOfUsersShowsResponse] = js.native
+  def getMySavedShows(options: js.Object): js.Promise[ListOfUsersShowsResponse] = js.native
+  def getMySavedShows(options: js.Object, callback: ResultsCallback[ListOfUsersShowsResponse]): js.Promise[ListOfUsersShowsResponse] = js.native
+  /**
     * Fetches current user's saved tracks.
     * See [Get Current User's Saved Tracks](https://developer.spotify.com/web-api/get-users-saved-tracks/) on
     * the Spotify Developer site for more information about the endpoint.
@@ -679,6 +772,19 @@ trait SpotifyWebApiJs extends js.Object {
   def getPlaylist(playlistId: String, options: js.Object): js.Promise[SinglePlaylistResponse] = js.native
   def getPlaylist(playlistId: String, options: js.Object, callback: ResultsCallback[SinglePlaylistResponse]): js.Promise[SinglePlaylistResponse] = js.native
   /**
+    * Gets the current image associated with a specific playlist.
+    * See [Get a Playlist Cover Image](https://developer.spotify.com/documentation/web-api/reference/playlists/get-playlist-cover/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {string} playlistId The id of the playlist. If you know the Spotify URI it is easy
+    * to find the playlist id (e.g. spotify:playlist:<here_is_the_playlist_id>)
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def getPlaylistCoverImage(playlistId: String): js.Promise[PlaylistCoverImageResponse] = js.native
+  def getPlaylistCoverImage(playlistId: String, callback: ResultsCallback[PlaylistCoverImageResponse]): js.Promise[PlaylistCoverImageResponse] = js.native
+  /**
     * Fetches the tracks from a specific playlist.
     * See [Get a Playlist's Tracks](https://developer.spotify.com/web-api/get-playlists-tracks/) on
     * the Spotify Developer site for more information about the endpoint.
@@ -706,6 +812,51 @@ trait SpotifyWebApiJs extends js.Object {
   def getRecommendations(): js.Promise[RecommendationsFromSeedsResponse] = js.native
   def getRecommendations(options: RecommendationsOptionsObject): js.Promise[RecommendationsFromSeedsResponse] = js.native
   def getRecommendations(options: RecommendationsOptionsObject, callback: ResultsCallback[RecommendationsFromSeedsResponse]): js.Promise[RecommendationsFromSeedsResponse] = js.native
+  /**
+    * Fetches a show from the Spotify catalog.
+    * See [Get a Show](https://developer.spotify.com/documentation/web-api/reference/shows/get-a-show/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {string} showId The id of the show. If you know the Spotify URI it is easy
+    * to find the show id (e.g. spotify:show:<here_is_the_show_id>)
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def getShow(showId: String): js.Promise[SingleShowResponse] = js.native
+  def getShow(showId: String, options: js.Object): js.Promise[SingleShowResponse] = js.native
+  def getShow(showId: String, options: js.Object, callback: ResultsCallback[SingleShowResponse]): js.Promise[SingleShowResponse] = js.native
+  /**
+    * Fetches the episodes of a show from the Spotify catalog.
+    * See [Get a Show's Episodes](https://developer.spotify.com/documentation/web-api/reference/shows/get-shows-episodes/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {string} showId The id of the show. If you know the Spotify URI it is easy
+    * to find the show id (e.g. spotify:show:<here_is_the_show_id>)
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def getShowEpisodes(showId: String): js.Promise[ShowEpisodesResponse] = js.native
+  def getShowEpisodes(showId: String, options: js.Object): js.Promise[ShowEpisodesResponse] = js.native
+  def getShowEpisodes(showId: String, options: js.Object, callback: ResultsCallback[ShowEpisodesResponse]): js.Promise[ShowEpisodesResponse] = js.native
+  /**
+    * Fetches multiple shows from the Spotify catalog.
+    * See [Get Several Shows](https://developer.spotify.com/documentation/web-api/reference/shows/get-several-shows/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {Array<string>} showIds The ids of the shows. If you know their Spotify URI it is easy
+    * to find their show id (e.g. spotify:show:<here_is_the_show_id>)
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def getShows(showIds: js.Array[String]): js.Promise[MultipleShowsResponse] = js.native
+  def getShows(showIds: js.Array[String], options: js.Object): js.Promise[MultipleShowsResponse] = js.native
+  def getShows(showIds: js.Array[String], options: js.Object, callback: ResultsCallback[MultipleShowsResponse]): js.Promise[MultipleShowsResponse] = js.native
   /**
     * Fetches a track from the Spotify catalog.
     * See [Get a Track](https://developer.spotify.com/web-api/get-track/) on
@@ -843,6 +994,25 @@ trait SpotifyWebApiJs extends js.Object {
     options: js.Object,
     callback: ResultsCallback[RemoveAlbumsForUserResponse]
   ): js.Promise[RemoveAlbumsForUserResponse] = js.native
+  /**
+    * Remove a list of shows from the current user's saved shows.
+    * See [Remove Shows for Current User](https://developer.spotify.com/documentation/web-api/reference/library/remove-shows-user/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {Array<string>} showIds The ids of the shows. If you know their Spotify URI it is easy
+    * to find their show id (e.g. spotify:show:<here_is_the_show_id>)
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def removeFromMySavedShows(showIds: js.Array[String]): js.Promise[RemoveUsersSavedShowsResponse] = js.native
+  def removeFromMySavedShows(showIds: js.Array[String], options: js.Object): js.Promise[RemoveUsersSavedShowsResponse] = js.native
+  def removeFromMySavedShows(
+    showIds: js.Array[String],
+    options: js.Object,
+    callback: ResultsCallback[RemoveUsersSavedShowsResponse]
+  ): js.Promise[RemoveUsersSavedShowsResponse] = js.native
   /**
     * Remove a list of tracks from the current user's saved tracks.
     * See [Remove Tracks for Current User](https://developer.spotify.com/web-api/remove-tracks-user/) on
@@ -1030,6 +1200,24 @@ trait SpotifyWebApiJs extends js.Object {
     callback: ResultsCallback[ArtistSearchResponse]
   ): js.Promise[ArtistSearchResponse] = js.native
   /**
+    * Fetches episodes from the Spotify catalog according to a query.
+    * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {string} query The search query
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def searchEpisodes(query: String): js.Promise[EpisodeSearchResponse] = js.native
+  def searchEpisodes(query: String, options: SearchForItemParameterObject): js.Promise[EpisodeSearchResponse] = js.native
+  def searchEpisodes(
+    query: String,
+    options: SearchForItemParameterObject,
+    callback: ResultsCallback[EpisodeSearchResponse]
+  ): js.Promise[EpisodeSearchResponse] = js.native
+  /**
     * Fetches playlists from the Spotify catalog according to a query.
     * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
     * the Spotify Developer site for more information about the endpoint.
@@ -1047,6 +1235,24 @@ trait SpotifyWebApiJs extends js.Object {
     options: SearchForItemParameterObject,
     callback: ResultsCallback[PlaylistSearchResponse]
   ): js.Promise[PlaylistSearchResponse] = js.native
+  /**
+    * Fetches shows from the Spotify catalog according to a query.
+    * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
+    * the Spotify Developer site for more information about the endpoint.
+    *
+    * @param {string} query The search query
+    * @param {Object} options A JSON object with options that can be passed
+    * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
+    * one is the error object (null if no error), and the second is the value if the request succeeded.
+    * @return {Object} Null if a callback is provided, a `Promise` object otherwise
+    */
+  def searchShows(query: String): js.Promise[ShowSearchResponse] = js.native
+  def searchShows(query: String, options: SearchForItemParameterObject): js.Promise[ShowSearchResponse] = js.native
+  def searchShows(
+    query: String,
+    options: SearchForItemParameterObject,
+    callback: ResultsCallback[ShowSearchResponse]
+  ): js.Promise[ShowSearchResponse] = js.native
   /**
     * Fetches tracks from the Spotify catalog according to a query.
     * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -1080,6 +1286,7 @@ trait SpotifyWebApiJs extends js.Object {
   def seek(position: Double, callback: VoidResultsCallback): Unit = js.native
   def seek(position: Double, options: DeviceSpecificParameterObject): js.Promise[Unit] = js.native
   def seek(position: Double, options: DeviceSpecificParameterObject, callback: VoidResultsCallback): Unit = js.native
+  def setAccessToken(): Unit = js.native
   /**
     * Sets the access token to be used.
     * See [the Authorization Guide](https://developer.spotify.com/web-api/authorization-guide/) on
@@ -1217,8 +1424,8 @@ trait SpotifyWebApiJs extends js.Object {
     * one is the error object (null if no error), and the second is an empty value if the request succeeded.
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
-  def unfollowPlaylist(playlistId: String): js.Promise[UnfollowPlaylistReponse] = js.native
-  def unfollowPlaylist(playlistId: String, callback: ResultsCallback[UnfollowPlaylistReponse]): js.Promise[UnfollowPlaylistReponse] = js.native
+  def unfollowPlaylist(playlistId: String): js.Promise[UnfollowPlaylistResponse] = js.native
+  def unfollowPlaylist(playlistId: String, callback: ResultsCallback[UnfollowPlaylistResponse]): js.Promise[UnfollowPlaylistResponse] = js.native
   /**
     * Removes the current user as a follower of one or more other Spotify users.
     * See [Unfollow Artists or Users](https://developer.spotify.com/web-api/unfollow-artists-users/) on
@@ -1244,11 +1451,11 @@ trait SpotifyWebApiJs extends js.Object {
     * one is the error object (null if no error), and the second is the value if the request succeeded.
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
-  def uploadCustomPlaylistCoverImage(playlistId: String, imageData: String): js.Promise[UploadCustomPlaylistCoverImageReponse] = js.native
+  def uploadCustomPlaylistCoverImage(playlistId: String, imageData: String): js.Promise[UploadCustomPlaylistCoverImageResponse] = js.native
   def uploadCustomPlaylistCoverImage(
     playlistId: String,
     imageData: String,
-    callback: ResultsCallback[UploadCustomPlaylistCoverImageReponse]
-  ): js.Promise[UploadCustomPlaylistCoverImageReponse] = js.native
+    callback: ResultsCallback[UploadCustomPlaylistCoverImageResponse]
+  ): js.Promise[UploadCustomPlaylistCoverImageResponse] = js.native
 }
 

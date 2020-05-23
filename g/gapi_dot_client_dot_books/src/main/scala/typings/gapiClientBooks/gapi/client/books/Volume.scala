@@ -1,12 +1,12 @@
 package typings.gapiClientBooks.gapi.client.books
 
-import typings.gapiClientBooks.AnonAccessViewStatus
-import typings.gapiClientBooks.AnonAcquiredTime
-import typings.gapiClientBooks.AnonAllowAnonLogging
-import typings.gapiClientBooks.AnonBuyLink
-import typings.gapiClientBooks.AnonExplanation
-import typings.gapiClientBooks.AnonLayers
-import typings.gapiClientBooks.AnonTextSnippet
+import typings.gapiClientBooks.anon.AccessViewStatus
+import typings.gapiClientBooks.anon.AcquiredTime
+import typings.gapiClientBooks.anon.AllowAnonLogging
+import typings.gapiClientBooks.anon.BuyLink
+import typings.gapiClientBooks.anon.Explanation
+import typings.gapiClientBooks.anon.Layers
+import typings.gapiClientBooks.anon.TextSnippet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Volume extends js.Object {
     * Any information about a volume related to reading or obtaining that volume text. This information can depend on country (books may be public domain in
     * one country but not in another, e.g.).
     */
-  var accessInfo: js.UndefOr[AnonAccessViewStatus] = js.undefined
+  var accessInfo: js.UndefOr[AccessViewStatus] = js.undefined
   /** Opaque identifier for a specific version of a volume resource. (In LITE projection) */
   var etag: js.UndefOr[String] = js.undefined
   /** Unique identifier for a volume. (In LITE projection.) */
@@ -24,38 +24,38 @@ trait Volume extends js.Object {
   /** Resource type for a volume. (In LITE projection.) */
   var kind: js.UndefOr[String] = js.undefined
   /** What layers exist in this volume and high level information about them. */
-  var layerInfo: js.UndefOr[AnonLayers] = js.undefined
+  var layerInfo: js.UndefOr[Layers] = js.undefined
   /** Recommendation related information for this volume. */
-  var recommendedInfo: js.UndefOr[AnonExplanation] = js.undefined
+  var recommendedInfo: js.UndefOr[Explanation] = js.undefined
   /**
     * Any information about a volume related to the eBookstore and/or purchaseability. This information can depend on the country where the request
     * originates from (i.e. books may not be for sale in certain countries).
     */
-  var saleInfo: js.UndefOr[AnonBuyLink] = js.undefined
+  var saleInfo: js.UndefOr[BuyLink] = js.undefined
   /** Search result information related to this volume. */
-  var searchInfo: js.UndefOr[AnonTextSnippet] = js.undefined
+  var searchInfo: js.UndefOr[TextSnippet] = js.undefined
   /** URL to this resource. (In LITE projection.) */
   var selfLink: js.UndefOr[String] = js.undefined
   /** User specific information related to this volume. (e.g. page this user last read or whether they purchased this book) */
-  var userInfo: js.UndefOr[AnonAcquiredTime] = js.undefined
+  var userInfo: js.UndefOr[AcquiredTime] = js.undefined
   /** General volume information. */
-  var volumeInfo: js.UndefOr[AnonAllowAnonLogging] = js.undefined
+  var volumeInfo: js.UndefOr[AllowAnonLogging] = js.undefined
 }
 
 object Volume {
   @scala.inline
   def apply(
-    accessInfo: AnonAccessViewStatus = null,
+    accessInfo: AccessViewStatus = null,
     etag: String = null,
     id: String = null,
     kind: String = null,
-    layerInfo: AnonLayers = null,
-    recommendedInfo: AnonExplanation = null,
-    saleInfo: AnonBuyLink = null,
-    searchInfo: AnonTextSnippet = null,
+    layerInfo: Layers = null,
+    recommendedInfo: Explanation = null,
+    saleInfo: BuyLink = null,
+    searchInfo: TextSnippet = null,
     selfLink: String = null,
-    userInfo: AnonAcquiredTime = null,
-    volumeInfo: AnonAllowAnonLogging = null
+    userInfo: AcquiredTime = null,
+    volumeInfo: AllowAnonLogging = null
   ): Volume = {
     val __obj = js.Dynamic.literal()
     if (accessInfo != null) __obj.updateDynamic("accessInfo")(accessInfo.asInstanceOf[js.Any])

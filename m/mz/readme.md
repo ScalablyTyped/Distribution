@@ -1,6 +1,7 @@
 
 # Scala.js typings for mz
 
+Typings are for version 2.7
 
 ## Library description:
 modernize node.js to current ECMAScript standards
@@ -9,9 +10,9 @@ modernize node.js to current ECMAScript standards
 | ------------------ | :-------------: |
 | Full name          | mz |
 | Keywords           | promisify, promise, thenify, then, es6 |
-| # releases         | 2 |
-| # dependents       | 1136 |
-| # downloads        | 29620831 |
+| # releases         | 1 |
+| # dependents       | 1256 |
+| # downloads        | 54317591 |
 | # stars            | 54 |
 
 ## Links

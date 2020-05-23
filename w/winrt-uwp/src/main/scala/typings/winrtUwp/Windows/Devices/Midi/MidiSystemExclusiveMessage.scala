@@ -6,19 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a MIDI message that specifies a system exclusive message. */
-@JSGlobal("Windows.Devices.Midi.MidiSystemExclusiveMessage")
-@js.native
-class MidiSystemExclusiveMessage protected () extends js.Object {
-  /**
-    * Creates a new MidiSystemExclusiveMessage object.
-    * @param rawData The system exclusive data.
-    */
-  def this(rawData: IBuffer) = this()
+trait MidiSystemExclusiveMessage extends js.Object {
   /** Gets the array of bytes associated with the MIDI message, including status byte. */
-  var rawData: IBuffer = js.native
+  var rawData: IBuffer
   /** Gets the duration from when the MidiInPort was created to the time the message was received. For messages being sent to a MidiOutPort , this value has no meaning. */
-  var timestamp: Double = js.native
+  var timestamp: Double
   /** Gets the type of this MIDI message. */
-  var `type`: MidiMessageType = js.native
+  var `type`: MidiMessageType
+}
+
+object MidiSystemExclusiveMessage {
+  @scala.inline
+  def apply(rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): MidiSystemExclusiveMessage = {
+    val __obj = js.Dynamic.literal(rawData = rawData.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MidiSystemExclusiveMessage]
+  }
 }
 

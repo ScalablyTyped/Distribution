@@ -21,7 +21,9 @@ trait Conversions extends js.Object {
   /**
     * color keyword in css to ansi code
     */
-  def keyword(keyword: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 148 */ js.Any): String
+  def keyword(
+    keyword: /* keyof ansi-styles.anon.TypeofcssKeywords */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 148 */ js.Any
+  ): String
   def lab(l: Double, a: Double, b: Double): String
   def lch(l: Double, c: Double, h: Double): String
   def rgb(r: Double, g: Double, b: Double): String
@@ -41,7 +43,7 @@ object Conversions {
     hsl: (Double, Double, Double) => String,
     hsv: (Double, Double, Double) => String,
     hwb: (Double, Double, Double) => String,
-    keyword: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 148 */ js.Any => String,
+    keyword: /* keyof ansi-styles.anon.TypeofcssKeywords */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 148 */ js.Any => String,
     lab: (Double, Double, Double) => String,
     lch: (Double, Double, Double) => String,
     rgb: (Double, Double, Double) => String,

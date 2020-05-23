@@ -1,5 +1,6 @@
 package typings.shopifyPrime
 
+import typings.shopifyPrime.anon.Accept
 import typings.shopifyPrime.shopifyPrimeStrings.DELETE
 import typings.shopifyPrime.shopifyPrimeStrings.GET
 import typings.shopifyPrime.shopifyPrimeStrings.POST
@@ -55,13 +56,13 @@ object baseServiceMod extends js.Object {
   /* static members */
   @js.native
   object BaseService extends js.Object {
-    def buildDefaultHeaders(): AnonAccept = js.native
+    def buildDefaultHeaders(): Accept = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    def buildDefaultHeaders(): AnonAccept = js.native
+    def buildDefaultHeaders(): Accept = js.native
   }
   
 }

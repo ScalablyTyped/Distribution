@@ -1,6 +1,6 @@
 package typings.antdMobileRn.radioItemNativeMod
 
-import typings.antdMobileRn.AnonTarget
+import typings.antdMobileRn.anon.Target
 import typings.antdMobileRn.radioPropsTypeMod.RadioItemPropsType
 import typings.antdMobileRn.radioStyleIndexNativeMod.IRadioStyle
 import typings.reactNative.mod.ImageStyle
@@ -23,26 +23,26 @@ object RadioItemNativeProps {
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onChange: /* e */ AnonTarget => Unit = null,
+    onChange: /* e */ Target => Unit = null,
     onClick: () => _ = null,
     radioProps: js.Object = null,
-    radioStyle: StyleProp[ImageStyle] = null,
-    style: StyleProp[ViewStyle] = null,
+    radioStyle: js.UndefOr[Null | StyleProp[ImageStyle]] = js.undefined,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     styles: IRadioStyle = null,
     wrapLabel: js.UndefOr[Boolean] = js.undefined
   ): RadioItemNativeProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (radioProps != null) __obj.updateDynamic("radioProps")(radioProps.asInstanceOf[js.Any])
-    if (radioStyle != null) __obj.updateDynamic("radioStyle")(radioStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(radioStyle)) __obj.updateDynamic("radioStyle")(radioStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapLabel)) __obj.updateDynamic("wrapLabel")(wrapLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapLabel)) __obj.updateDynamic("wrapLabel")(wrapLabel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioItemNativeProps]
   }
 }

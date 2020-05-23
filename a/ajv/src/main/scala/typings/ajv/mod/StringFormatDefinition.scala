@@ -21,7 +21,7 @@ object StringFormatDefinition {
     `type`: string = null
   ): StringFormatDefinition = {
     val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(js.Any.fromFunction2(compare))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringFormatDefinition]

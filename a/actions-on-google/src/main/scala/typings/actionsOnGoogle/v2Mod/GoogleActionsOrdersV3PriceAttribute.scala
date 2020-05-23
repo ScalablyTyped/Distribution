@@ -40,7 +40,7 @@ object GoogleActionsOrdersV3PriceAttribute {
   @scala.inline
   def apply(
     amount: GoogleActionsOrdersV3Money = null,
-    amountMillipercentage: Int | Double = null,
+    amountMillipercentage: js.UndefOr[Double] = js.undefined,
     name: String = null,
     state: GoogleActionsOrdersV3PriceAttributeState = null,
     taxIncluded: js.UndefOr[Boolean] = js.undefined,
@@ -48,10 +48,10 @@ object GoogleActionsOrdersV3PriceAttribute {
   ): GoogleActionsOrdersV3PriceAttribute = {
     val __obj = js.Dynamic.literal()
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (amountMillipercentage != null) __obj.updateDynamic("amountMillipercentage")(amountMillipercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(amountMillipercentage)) __obj.updateDynamic("amountMillipercentage")(amountMillipercentage.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(taxIncluded)) __obj.updateDynamic("taxIncluded")(taxIncluded.asInstanceOf[js.Any])
+    if (!js.isUndefined(taxIncluded)) __obj.updateDynamic("taxIncluded")(taxIncluded.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3PriceAttribute]
   }

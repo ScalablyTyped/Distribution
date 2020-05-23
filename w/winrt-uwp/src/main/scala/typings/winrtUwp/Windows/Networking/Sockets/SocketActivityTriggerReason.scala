@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object SocketActivityTriggerReason extends js.Object {
   /** A StreamSocket was closed. */
   @js.native
   sealed trait socketClosed extends SocketActivityTriggerReason
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocketActivityTriggerReason with Double] = js.native
-  /* 2 */ @js.native
-  object connectionAccepted extends TopLevel[connectionAccepted with Double]
-  
-  /* 3 */ @js.native
-  object keepAliveTimerExpired extends TopLevel[keepAliveTimerExpired with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object socketActivity extends TopLevel[socketActivity with Double]
-  
-  /* 4 */ @js.native
-  object socketClosed extends TopLevel[socketClosed with Double]
   
 }
 

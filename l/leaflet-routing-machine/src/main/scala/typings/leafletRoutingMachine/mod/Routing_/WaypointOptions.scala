@@ -12,7 +12,7 @@ object WaypointOptions {
   @scala.inline
   def apply(allowUTurn: js.UndefOr[Boolean] = js.undefined): WaypointOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUTurn)) __obj.updateDynamic("allowUTurn")(allowUTurn.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUTurn)) __obj.updateDynamic("allowUTurn")(allowUTurn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaypointOptions]
   }
 }

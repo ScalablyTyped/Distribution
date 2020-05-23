@@ -1,8 +1,8 @@
 package typings.tablesorter
 
-import typings.jquery.JQuery_.jqXHR
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.jquery.JQuery.jqXHR
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.pagerDataPartMod.PagerDataPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -17,10 +17,10 @@ trait BlogListOptions extends js.Object {
 
 object BlogListOptions {
   @scala.inline
-  def apply(handle: String = null, since_id: Int | Double = null): BlogListOptions = {
+  def apply(handle: String = null, since_id: js.UndefOr[Double] = js.undefined): BlogListOptions = {
     val __obj = js.Dynamic.literal()
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (since_id != null) __obj.updateDynamic("since_id")(since_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(since_id)) __obj.updateDynamic("since_id")(since_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlogListOptions]
   }
 }

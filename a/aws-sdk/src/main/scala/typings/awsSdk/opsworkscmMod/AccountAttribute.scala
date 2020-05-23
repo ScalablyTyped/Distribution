@@ -22,11 +22,15 @@ trait AccountAttribute extends js.Object {
 
 object AccountAttribute {
   @scala.inline
-  def apply(Maximum: Int | Double = null, Name: String = null, Used: Int | Double = null): AccountAttribute = {
+  def apply(
+    Maximum: js.UndefOr[Integer] = js.undefined,
+    Name: String = null,
+    Used: js.UndefOr[Integer] = js.undefined
+  ): AccountAttribute = {
     val __obj = js.Dynamic.literal()
-    if (Maximum != null) __obj.updateDynamic("Maximum")(Maximum.asInstanceOf[js.Any])
+    if (!js.isUndefined(Maximum)) __obj.updateDynamic("Maximum")(Maximum.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Used != null) __obj.updateDynamic("Used")(Used.asInstanceOf[js.Any])
+    if (!js.isUndefined(Used)) __obj.updateDynamic("Used")(Used.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountAttribute]
   }
 }

@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojcolorpaletteMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonLabel
-import typings.oracleOraclejet.AnonLabelNone
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.Element
+import typings.oracleOraclejet.anon.Label
+import typings.oracleOraclejet.anon.LabelNone
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojcolorMod.^
 import typings.oracleOraclejet.ojcolorpaletteMod.ojColorPalette.ojAnimateEnd
@@ -45,12 +45,12 @@ trait ojColorPalette extends editableValue[^, ojColorPaletteSettableProperties, 
   var onOjAnimateEnd_ojColorPalette: (js.Function1[/* event */ ojAnimateEnd, _]) | Null = js.native
   @JSName("onOjAnimateStart")
   var onOjAnimateStart_ojColorPalette: (js.Function1[/* event */ ojAnimateStart, _]) | Null = js.native
-  var onPaletteChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[AnonLabel]], _]) | Null = js.native
+  var onPaletteChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Label]], _]) | Null = js.native
   var onSwatchSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[xs | sm | lg], _]) | Null = js.native
-  var palette: js.Array[AnonLabel] = js.native
+  var palette: js.Array[Label] = js.native
   var swatchSize: xs | sm | lg = js.native
   @JSName("translations")
-  var translations_ojColorPalette: AnonLabelNone = js.native
+  var translations_ojColorPalette: LabelNone = js.native
   def addEventListener(
     `type`: labelDisplayChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | off], _]
@@ -92,12 +92,12 @@ trait ojColorPalette extends editableValue[^, ojColorPaletteSettableProperties, 
   @JSName("addEventListener")
   def addEventListener_paletteChanged(
     `type`: paletteChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[AnonLabel]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Label]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_paletteChanged(
     `type`: paletteChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[AnonLabel]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Label]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("getProperty")
@@ -107,7 +107,7 @@ trait ojColorPalette extends editableValue[^, ojColorPaletteSettableProperties, 
   @JSName("getProperty")
   def getProperty_layout(property: layout): grid | list = js.native
   @JSName("getProperty")
-  def getProperty_palette(property: palette): js.Array[AnonLabel] = js.native
+  def getProperty_palette(property: palette): js.Array[Label] = js.native
   @JSName("getProperty")
   def getProperty_swatchSize(property: swatchSize): xs | sm | lg = js.native
   def setProperties(properties: ojColorPaletteSettablePropertiesLenient): Unit = js.native
@@ -123,15 +123,15 @@ trait ojColorPalette extends editableValue[^, ojColorPaletteSettableProperties, 
   @JSName("setProperty")
   def setProperty_labelledBy(property: labelledBy, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_palette(property: palette, value: js.Array[AnonLabel]): Unit = js.native
+  def setProperty_palette(property: palette, value: js.Array[Label]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonLabelNone): Unit = js.native
+  def setProperty_translations(property: translations, value: LabelNone): Unit = js.native
 }
 
 @JSImport("@oracle/oraclejet/ojcolorpalette", "ojColorPalette")
 @js.native
 object ojColorPalette extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[Element]
 }
 

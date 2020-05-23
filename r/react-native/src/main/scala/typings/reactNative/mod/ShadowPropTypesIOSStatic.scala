@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.AnonHeight
+import typings.reactNative.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait ShadowPropTypesIOSStatic extends js.Object {
     * Sets the drop shadow offset
     * @platform ios
     */
-  var shadowOffset: AnonHeight
+  var shadowOffset: Height
   /**
     * Sets the drop shadow opacity (multiplied by the color's alpha component)
     * @platform ios
@@ -30,7 +30,7 @@ trait ShadowPropTypesIOSStatic extends js.Object {
 
 object ShadowPropTypesIOSStatic {
   @scala.inline
-  def apply(shadowColor: String, shadowOffset: AnonHeight, shadowOpacity: Double, shadowRadius: Double): ShadowPropTypesIOSStatic = {
+  def apply(shadowColor: String, shadowOffset: Height, shadowOpacity: Double, shadowRadius: Double): ShadowPropTypesIOSStatic = {
     val __obj = js.Dynamic.literal(shadowColor = shadowColor.asInstanceOf[js.Any], shadowOffset = shadowOffset.asInstanceOf[js.Any], shadowOpacity = shadowOpacity.asInstanceOf[js.Any], shadowRadius = shadowRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowPropTypesIOSStatic]
   }

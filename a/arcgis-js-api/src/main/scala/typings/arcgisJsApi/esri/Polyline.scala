@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import typings.arcgisJsApi.esri.geometry.Geometry
 import scala.scalajs.js
@@ -91,8 +90,4 @@ trait Polyline
     */
   def setPoint(pathIndex: Double, pointIndex: Double, point: Point): Polyline = js.native
 }
-
-@JSGlobal("__esri.Polyline")
-@js.native
-object Polyline extends TopLevel[PolylineConstructor]
 

@@ -76,9 +76,6 @@ object mathColorMod extends js.Object {
       * @returns the new array
       */
     def asArray(): js.Array[Double] = js.native
-    def clampToRef(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], result: Color3): Color3 = js.native
-    def clampToRef(min: js.UndefOr[scala.Nothing], max: Double, result: Color3): Color3 = js.native
-    def clampToRef(min: Double, max: js.UndefOr[scala.Nothing], result: Color3): Color3 = js.native
     /**
       * Clamps the rgb values by the min and max values and stores the result into "result"
       * @param min defines minimum clamping value (default is 0)
@@ -86,7 +83,7 @@ object mathColorMod extends js.Object {
       * @param result defines color to store the result into
       * @returns the original Color3
       */
-    def clampToRef(min: Double, max: Double, result: Color3): Color3 = js.native
+    def clampToRef(min: js.UndefOr[Double], max: js.UndefOr[Double], result: Color3): Color3 = js.native
     /**
       * Copies the rgb values from the source in the current Color3
       * @param source defines the source Color3 object
@@ -326,9 +323,6 @@ object mathColorMod extends js.Object {
       * @returns the new array
       */
     def asArray(): js.Array[Double] = js.native
-    def clampToRef(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], result: Color4): Color4 = js.native
-    def clampToRef(min: js.UndefOr[scala.Nothing], max: Double, result: Color4): Color4 = js.native
-    def clampToRef(min: Double, max: js.UndefOr[scala.Nothing], result: Color4): Color4 = js.native
     /**
       * Clamps the rgb values by the min and max values and stores the result into "result"
       * @param min defines minimum clamping value (default is 0)
@@ -336,7 +330,7 @@ object mathColorMod extends js.Object {
       * @param result defines color to store the result into.
       * @returns the cuurent Color4
       */
-    def clampToRef(min: Double, max: Double, result: Color4): Color4 = js.native
+    def clampToRef(min: js.UndefOr[Double], max: js.UndefOr[Double], result: Color4): Color4 = js.native
     /**
       * Copies the given Color4 values into the current one
       * @param source defines the source Color4 object

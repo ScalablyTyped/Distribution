@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FollowCameraPointersInput")
 @js.native
-class FollowCameraPointersInput () extends BaseCameraPointersInput {
+trait FollowCameraPointersInput extends BaseCameraPointersInput {
   var _warning: js.Any = js.native
   var _warningCounter: js.Any = js.native
   /**

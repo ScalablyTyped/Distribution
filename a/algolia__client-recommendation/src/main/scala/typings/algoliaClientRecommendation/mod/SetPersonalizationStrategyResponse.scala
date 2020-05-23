@@ -8,18 +8,18 @@ trait SetPersonalizationStrategyResponse extends js.Object {
   /**
     * The message.
     */
-  val message: String
+  var message: String
   /**
     * The status code.
     */
-  val status: js.UndefOr[Double] = js.undefined
+  var status: js.UndefOr[Double] = js.undefined
 }
 
 object SetPersonalizationStrategyResponse {
   @scala.inline
-  def apply(message: String, status: Int | Double = null): SetPersonalizationStrategyResponse = {
+  def apply(message: String, status: js.UndefOr[Double] = js.undefined): SetPersonalizationStrategyResponse = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetPersonalizationStrategyResponse]
   }
 }

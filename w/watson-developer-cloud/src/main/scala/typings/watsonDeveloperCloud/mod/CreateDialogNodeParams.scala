@@ -94,7 +94,7 @@ object CreateDialogNodeParams {
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (previous_sibling != null) __obj.updateDynamic("previous_sibling")(previous_sibling.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (user_label != null) __obj.updateDynamic("user_label")(user_label.asInstanceOf[js.Any])
     if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])

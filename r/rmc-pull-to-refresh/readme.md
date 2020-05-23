@@ -1,7 +1,7 @@
 
 # Scala.js typings for rmc-pull-to-refresh
 
-Typings are for version 1.0.11
+Typings are for version 1.0.12
 
 ## Library description:
 React Mobile Pull To Refresh Component

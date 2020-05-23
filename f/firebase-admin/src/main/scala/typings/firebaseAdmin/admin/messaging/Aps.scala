@@ -15,7 +15,7 @@ trait Aps
     * Alert to be included in the message. This may be a string or an object of
     * type `admin.messaging.ApsAlert`.
     */
-  var alert: js.UndefOr[String | ApsAlert] = js.undefined
+  var alert: js.UndefOr[String | typings.firebaseAdmin.messagingMod.admin.messaging.ApsAlert] = js.undefined
   /**
     * Badge to be displayed with the message. Set to 0 to remove the badge. When
     * not specified, the badge will remain unchanged.
@@ -37,7 +37,7 @@ trait Aps
   /**
     * Sound to be played with the message.
     */
-  var sound: js.UndefOr[String | CriticalSound] = js.undefined
+  var sound: js.UndefOr[String | typings.firebaseAdmin.messagingMod.admin.messaging.CriticalSound] = js.undefined
   /**
     * An app-specific identifier for grouping notifications.
     */
@@ -47,22 +47,22 @@ trait Aps
 object Aps {
   @scala.inline
   def apply(
-    StringDictionary: /* customData */ StringDictionary[js.Any] = null,
-    alert: String | ApsAlert = null,
-    badge: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    alert: String | typings.firebaseAdmin.messagingMod.admin.messaging.ApsAlert = null,
+    badge: js.UndefOr[Double] = js.undefined,
     category: String = null,
     contentAvailable: js.UndefOr[Boolean] = js.undefined,
     mutableContent: js.UndefOr[Boolean] = js.undefined,
-    sound: String | CriticalSound = null,
+    sound: String | typings.firebaseAdmin.messagingMod.admin.messaging.CriticalSound = null,
     threadId: String = null
   ): Aps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentAvailable)) __obj.updateDynamic("contentAvailable")(contentAvailable.asInstanceOf[js.Any])
-    if (!js.isUndefined(mutableContent)) __obj.updateDynamic("mutableContent")(mutableContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentAvailable)) __obj.updateDynamic("contentAvailable")(contentAvailable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mutableContent)) __obj.updateDynamic("mutableContent")(mutableContent.get.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
     if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aps]

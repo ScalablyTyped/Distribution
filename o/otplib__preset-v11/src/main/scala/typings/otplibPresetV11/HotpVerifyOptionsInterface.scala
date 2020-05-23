@@ -12,9 +12,9 @@ trait HotpVerifyOptionsInterface extends js.Object {
 
 object HotpVerifyOptionsInterface {
   @scala.inline
-  def apply(counter: Int | Double = null, secret: String = null, token: String = null): HotpVerifyOptionsInterface = {
+  def apply(counter: js.UndefOr[Double] = js.undefined, secret: String = null, token: String = null): HotpVerifyOptionsInterface = {
     val __obj = js.Dynamic.literal()
-    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
+    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.get.asInstanceOf[js.Any])
     if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpVerifyOptionsInterface]

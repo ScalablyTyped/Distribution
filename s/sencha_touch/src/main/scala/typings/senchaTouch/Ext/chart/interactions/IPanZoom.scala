@@ -4,7 +4,7 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IClass
 import typings.senchaTouch.Ext.chart.IAbstractChart
 import typings.senchaTouch.Ext.mixin.IObservable
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,75 +13,75 @@ trait IPanZoom extends IAbstract {
   /** [Config Option] (Object/Array) */
   var axes: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of axes
-  		* @returns Object/Array
-  		*/
+    * @returns Object/Array
+    */
   var getAxes: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of hideLabelInGesture
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getHideLabelInGesture: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of maxZoom
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getMaxZoom: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of minZoom
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getMinZoom: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of modeToggleButton
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getModeToggleButton: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of panGesture
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPanGesture: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of showOverflowArrows
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getShowOverflowArrows: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of zoomOnPanGesture
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getZoomOnPanGesture: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Placeholder method
-  		* @param e Object
-  		*/
+    * @param e Object
+    */
   @JSName("onGesture")
   var onGesture_IPanZoom: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Object) */
   var overflowArrowOptions: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of axes
-  		* @param axes Object/Array The new value.
-  		*/
+    * @param axes Object/Array The new value.
+    */
   var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of hideLabelInGesture
-  		* @param hideLabelInGesture Boolean The new value.
-  		*/
+    * @param hideLabelInGesture Boolean The new value.
+    */
   var setHideLabelInGesture: js.UndefOr[js.Function1[/* hideLabelInGesture */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of maxZoom
-  		* @param maxZoom Object The new value.
-  		*/
+    * @param maxZoom Object The new value.
+    */
   var setMaxZoom: js.UndefOr[js.Function1[/* maxZoom */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of minZoom
-  		* @param minZoom Object The new value.
-  		*/
+    * @param minZoom Object The new value.
+    */
   var setMinZoom: js.UndefOr[js.Function1[/* minZoom */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of modeToggleButton
-  		* @param modeToggleButton Object The new value.
-  		*/
+    * @param modeToggleButton Object The new value.
+    */
   var setModeToggleButton: js.UndefOr[js.Function1[/* modeToggleButton */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of panGesture
-  		* @param panGesture String The new value.
-  		*/
+    * @param panGesture String The new value.
+    */
   var setPanGesture: js.UndefOr[js.Function1[/* panGesture */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of showOverflowArrows
-  		* @param showOverflowArrows Boolean The new value.
-  		*/
+    * @param showOverflowArrows Boolean The new value.
+    */
   var setShowOverflowArrows: js.UndefOr[js.Function1[/* showOverflowArrows */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of zoomOnPanGesture
-  		* @param zoomOnPanGesture Boolean The new value.
-  		*/
+    * @param zoomOnPanGesture Boolean The new value.
+    */
   var setZoomOnPanGesture: js.UndefOr[js.Function1[/* zoomOnPanGesture */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var showOverflowArrows: js.UndefOr[Boolean] = js.undefined
@@ -120,8 +120,8 @@ object IPanZoom {
     getHideLabelInGesture: () => Boolean = null,
     getId: () => _ = null,
     getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getItemForEvent: /* e */ js.UndefOr[Event_] => _ = null,
-    getItemsForEvent: /* e */ js.UndefOr[Event_] => Array = null,
+    getItemForEvent: /* e */ js.UndefOr[Event] => _ = null,
+    getItemsForEvent: /* e */ js.UndefOr[Event] => Array = null,
     getListeners: () => _ = null,
     getMaxZoom: () => _ = null,
     getMinZoom: () => _ = null,
@@ -167,7 +167,7 @@ object IPanZoom {
     singleton: js.UndefOr[Boolean] = js.undefined,
     statics: js.Any = null,
     suspendEvents: () => Unit = null,
-    throttleGap: Int | Double = null,
+    throttleGap: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -191,7 +191,7 @@ object IPanZoom {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
@@ -247,11 +247,11 @@ object IPanZoom {
     if (setPanGesture != null) __obj.updateDynamic("setPanGesture")(js.Any.fromFunction1(setPanGesture))
     if (setShowOverflowArrows != null) __obj.updateDynamic("setShowOverflowArrows")(js.Any.fromFunction1(setShowOverflowArrows))
     if (setZoomOnPanGesture != null) __obj.updateDynamic("setZoomOnPanGesture")(js.Any.fromFunction1(setZoomOnPanGesture))
-    if (!js.isUndefined(showOverflowArrows)) __obj.updateDynamic("showOverflowArrows")(showOverflowArrows.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOverflowArrows)) __obj.updateDynamic("showOverflowArrows")(showOverflowArrows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (throttleGap != null) __obj.updateDynamic("throttleGap")(throttleGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttleGap)) __obj.updateDynamic("throttleGap")(throttleGap.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

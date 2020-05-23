@@ -1,6 +1,5 @@
 package typings.webvrApi
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +15,19 @@ trait VRPose extends js.Object {
   val timestamp: Double
 }
 
-@JSGlobal("VRPose")
-@js.native
-object VRPose extends Instantiable0[VRPose]
+object VRPose {
+  @scala.inline
+  def apply(
+    timestamp: Double,
+    angularAcceleration: Float32Array = null,
+    angularVelocity: Float32Array = null,
+    linearAcceleration: Float32Array = null,
+    linearVelocity: Float32Array = null,
+    orientation: Float32Array = null,
+    position: Float32Array = null
+  ): VRPose = {
+    val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any], angularAcceleration = angularAcceleration.asInstanceOf[js.Any], angularVelocity = angularVelocity.asInstanceOf[js.Any], linearAcceleration = linearAcceleration.asInstanceOf[js.Any], linearVelocity = linearVelocity.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VRPose]
+  }
+}
 

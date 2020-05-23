@@ -1,6 +1,6 @@
 package typings.babylonjs.webXRControllerComponentMod
 
-import typings.babylonjs.AnonY
+import typings.babylonjs.anon.Y
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
@@ -70,7 +70,7 @@ class WebXRControllerComponent protected () extends IDisposable {
     * If axes are available for this component (like a touchpad or thumbstick) the observers will be notified when
     * the axes data changes
     */
-  var onAxisValueChangedObservable: Observable[AnonY] = js.native
+  var onAxisValueChangedObservable: Observable[Y] = js.native
   /**
     * Observers registered here will be triggered when the state of a button changes
     * State change is either pressed / touched / value

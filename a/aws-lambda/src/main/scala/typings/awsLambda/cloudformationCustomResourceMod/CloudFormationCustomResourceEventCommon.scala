@@ -1,6 +1,6 @@
 package typings.awsLambda.cloudformationCustomResourceMod
 
-import typings.awsLambda.AnonDictKey
+import typings.awsLambda.anon.DictKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CloudFormationCustomResourceEventCommon extends js.Object {
   var LogicalResourceId: String
   var RequestId: String
-  var ResourceProperties: AnonDictKey
+  var ResourceProperties: DictKey
   var ResourceType: String
   var ResponseURL: String
   var ServiceToken: String
@@ -20,7 +20,7 @@ object CloudFormationCustomResourceEventCommon {
   def apply(
     LogicalResourceId: String,
     RequestId: String,
-    ResourceProperties: AnonDictKey,
+    ResourceProperties: DictKey,
     ResourceType: String,
     ResponseURL: String,
     ServiceToken: String,

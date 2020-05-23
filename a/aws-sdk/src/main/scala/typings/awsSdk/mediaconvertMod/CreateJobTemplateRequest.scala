@@ -57,7 +57,7 @@ object CreateJobTemplateRequest {
     Category: string = null,
     Description: string = null,
     HopDestinations: listOfHopDestination = null,
-    Priority: Int | Double = null,
+    Priority: js.UndefOr[integerMinNegative50Max50] = js.undefined,
     Queue: string = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
     Tags: mapOfString = null
@@ -67,7 +67,7 @@ object CreateJobTemplateRequest {
     if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

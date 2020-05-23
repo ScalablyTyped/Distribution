@@ -47,7 +47,7 @@ object CellSelectedEventArgs {
   @scala.inline
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
-    cellIndex: Int | Double = null,
+    cellIndex: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     model: js.Any = null,
     previousCellIndex: js.Any = null,
@@ -55,13 +55,13 @@ object CellSelectedEventArgs {
     previousRowIndex: js.Any = null,
     previousTargetCell: js.Any = null,
     previousTargetRow: js.Any = null,
-    rowIndex: Int | Double = null,
+    rowIndex: js.UndefOr[Double] = js.undefined,
     targetCell: js.Any = null,
     targetRow: js.Any = null
   ): CellSelectedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (previousCellIndex != null) __obj.updateDynamic("previousCellIndex")(previousCellIndex.asInstanceOf[js.Any])
@@ -69,7 +69,7 @@ object CellSelectedEventArgs {
     if (previousRowIndex != null) __obj.updateDynamic("previousRowIndex")(previousRowIndex.asInstanceOf[js.Any])
     if (previousTargetCell != null) __obj.updateDynamic("previousTargetCell")(previousTargetCell.asInstanceOf[js.Any])
     if (previousTargetRow != null) __obj.updateDynamic("previousTargetRow")(previousTargetRow.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     if (targetCell != null) __obj.updateDynamic("targetCell")(targetCell.asInstanceOf[js.Any])
     if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellSelectedEventArgs]

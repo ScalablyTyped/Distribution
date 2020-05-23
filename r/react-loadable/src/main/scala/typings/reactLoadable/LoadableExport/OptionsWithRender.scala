@@ -34,19 +34,19 @@ trait OptionsWithRender[Props, Exports /* <: js.Object */]
 
 object OptionsWithRender {
   @scala.inline
-  def apply[Props, Exports /* <: js.Object */](
+  def apply[Props, Exports](
     loader: () => js.Promise[Exports],
     loading: ComponentType[LoadingComponentProps],
     render: (Exports, Props) => ReactNode,
-    delay: Double | `false` = null,
+    delay: js.UndefOr[Null | Double | `false`] = js.undefined,
     modules: js.Array[String] = null,
-    timeout: Double | `false` = null,
+    timeout: js.UndefOr[Null | Double | `false`] = js.undefined,
     webpack: () => js.Array[String | Double] = null
   ): OptionsWithRender[Props, Exports] = {
     val __obj = js.Dynamic.literal(loader = js.Any.fromFunction0(loader), loading = loading.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (webpack != null) __obj.updateDynamic("webpack")(js.Any.fromFunction0(webpack))
     __obj.asInstanceOf[OptionsWithRender[Props, Exports]]
   }

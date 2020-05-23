@@ -1,6 +1,6 @@
 package typings.bugsnagJs.commonMod
 
-import typings.bugsnagJs.AnonNotify
+import typings.bugsnagJs.anon.Notify
 import typings.bugsnagJs.clientMod.ILogger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait IFinalConfig extends IConfig {
   @JSName("consoleBreadcrumbsEnabled")
   var consoleBreadcrumbsEnabled_IFinalConfig: Boolean
   @JSName("endpoints")
-  var endpoints_IFinalConfig: AnonNotify
+  var endpoints_IFinalConfig: Notify
   @JSName("interactionBreadcrumbsEnabled")
   var interactionBreadcrumbsEnabled_IFinalConfig: Boolean
   @JSName("maxBreadcrumbs")
@@ -49,7 +49,7 @@ object IFinalConfig {
     beforeSend: js.Array[BeforeSend],
     collectUserIp: Boolean,
     consoleBreadcrumbsEnabled: Boolean,
-    endpoints: AnonNotify,
+    endpoints: Notify,
     interactionBreadcrumbsEnabled: Boolean,
     maxBreadcrumbs: Double,
     maxEvents: Double,
@@ -58,20 +58,18 @@ object IFinalConfig {
     releaseStage: String,
     appVersion: String = null,
     endpoint: String = null,
-    logger: ILogger = null,
+    logger: js.UndefOr[Null | ILogger] = js.undefined,
     metaData: js.Object = null,
     networkBreadcrumbsEnabled: js.UndefOr[Boolean] = js.undefined,
     sessionEndpoint: String = null,
     user: js.Object = null
   ): IFinalConfig = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], autoBreadcrumbs = autoBreadcrumbs.asInstanceOf[js.Any], autoCaptureSessions = autoCaptureSessions.asInstanceOf[js.Any], autoNotify = autoNotify.asInstanceOf[js.Any], beforeSend = beforeSend.asInstanceOf[js.Any], collectUserIp = collectUserIp.asInstanceOf[js.Any], consoleBreadcrumbsEnabled = consoleBreadcrumbsEnabled.asInstanceOf[js.Any], endpoints = endpoints.asInstanceOf[js.Any], interactionBreadcrumbsEnabled = interactionBreadcrumbsEnabled.asInstanceOf[js.Any], maxBreadcrumbs = maxBreadcrumbs.asInstanceOf[js.Any], maxEvents = maxEvents.asInstanceOf[js.Any], navigationBreadcrumbsEnabled = navigationBreadcrumbsEnabled.asInstanceOf[js.Any], notifyReleaseStages = notifyReleaseStages.asInstanceOf[js.Any], releaseStage = releaseStage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], autoBreadcrumbs = autoBreadcrumbs.asInstanceOf[js.Any], autoCaptureSessions = autoCaptureSessions.asInstanceOf[js.Any], autoNotify = autoNotify.asInstanceOf[js.Any], beforeSend = beforeSend.asInstanceOf[js.Any], collectUserIp = collectUserIp.asInstanceOf[js.Any], consoleBreadcrumbsEnabled = consoleBreadcrumbsEnabled.asInstanceOf[js.Any], endpoints = endpoints.asInstanceOf[js.Any], interactionBreadcrumbsEnabled = interactionBreadcrumbsEnabled.asInstanceOf[js.Any], maxBreadcrumbs = maxBreadcrumbs.asInstanceOf[js.Any], maxEvents = maxEvents.asInstanceOf[js.Any], navigationBreadcrumbsEnabled = navigationBreadcrumbsEnabled.asInstanceOf[js.Any], notifyReleaseStages = notifyReleaseStages.asInstanceOf[js.Any], releaseStage = releaseStage.asInstanceOf[js.Any], metaData = metaData.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkBreadcrumbsEnabled)) __obj.updateDynamic("networkBreadcrumbsEnabled")(networkBreadcrumbsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(logger)) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkBreadcrumbsEnabled)) __obj.updateDynamic("networkBreadcrumbsEnabled")(networkBreadcrumbsEnabled.get.asInstanceOf[js.Any])
     if (sessionEndpoint != null) __obj.updateDynamic("sessionEndpoint")(sessionEndpoint.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFinalConfig]
   }
 }

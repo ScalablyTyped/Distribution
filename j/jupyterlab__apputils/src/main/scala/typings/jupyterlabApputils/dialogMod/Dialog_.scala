@@ -3,7 +3,7 @@ package typings.jupyterlabApputils.dialogMod
 import typings.jupyterlabApputils.dialogMod.Dialog.IOptions
 import typings.jupyterlabApputils.dialogMod.Dialog.IResult
 import typings.luminoWidgets.mod.Widget
-import typings.std.Event_
+import typings.std.Event
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -63,7 +63,7 @@ class Dialog_[T] () extends Widget {
     * called in response to events on the panel's DOM node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Launch the dialog as a modal window.
     *

@@ -1,6 +1,6 @@
 package typings.baseui.tooltipMod
 
-import typings.baseui.AnonClose
+import typings.baseui.anon.Close
 import typings.baseui.baseuiStrings.auto
 import typings.baseui.baseuiStrings.bottom
 import typings.baseui.baseuiStrings.bottomLeft
@@ -36,7 +36,7 @@ trait StatefulTooltipProps extends js.Object {
   var animateOutTime: js.UndefOr[Double] = js.undefined
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
-  var content: js.UndefOr[ReactNode | (js.Function1[/* args */ AnonClose, ReactNode])] = js.undefined
+  var content: js.UndefOr[ReactNode | (js.Function1[/* args */ Close, ReactNode])] = js.undefined
   var `data-baseweb`: js.UndefOr[String] = js.undefined
   var dismissOnClickOutside: js.UndefOr[Boolean] = js.undefined
   var dismissOnEsc: js.UndefOr[Boolean] = js.undefined
@@ -65,10 +65,10 @@ object StatefulTooltipProps {
   @scala.inline
   def apply(
     accessibilityType: none | menu | tooltip = null,
-    animateOutTime: Int | Double = null,
+    animateOutTime: js.UndefOr[Double] = js.undefined,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
-    content: ReactNode | (js.Function1[/* args */ AnonClose, ReactNode]) = null,
+    content: ReactNode | (js.Function1[/* args */ Close, ReactNode]) = null,
     `data-baseweb`: String = null,
     dismissOnClickOutside: js.UndefOr[Boolean] = js.undefined,
     dismissOnEsc: js.UndefOr[Boolean] = js.undefined,
@@ -78,8 +78,8 @@ object StatefulTooltipProps {
     initialState: State = null,
     mountNode: HTMLElement = null,
     onClose: () => _ = null,
-    onMouseEnterDelay: Int | Double = null,
-    onMouseLeaveDelay: Int | Double = null,
+    onMouseEnterDelay: js.UndefOr[Double] = js.undefined,
+    onMouseLeaveDelay: js.UndefOr[Double] = js.undefined,
     onOpen: () => _ = null,
     overrides: Overrides = null,
     placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = null,
@@ -92,28 +92,28 @@ object StatefulTooltipProps {
   ): StatefulTooltipProps = {
     val __obj = js.Dynamic.literal()
     if (accessibilityType != null) __obj.updateDynamic("accessibilityType")(accessibilityType.asInstanceOf[js.Any])
-    if (animateOutTime != null) __obj.updateDynamic("animateOutTime")(animateOutTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateOutTime)) __obj.updateDynamic("animateOutTime")(animateOutTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (`data-baseweb` != null) __obj.updateDynamic("data-baseweb")(`data-baseweb`.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissOnClickOutside)) __obj.updateDynamic("dismissOnClickOutside")(dismissOnClickOutside.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissOnEsc)) __obj.updateDynamic("dismissOnEsc")(dismissOnEsc.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusLock)) __obj.updateDynamic("focusLock")(focusLock.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissOnClickOutside)) __obj.updateDynamic("dismissOnClickOutside")(dismissOnClickOutside.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissOnEsc)) __obj.updateDynamic("dismissOnEsc")(dismissOnEsc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusLock)) __obj.updateDynamic("focusLock")(focusLock.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBoundary)) __obj.updateDynamic("ignoreBoundary")(ignoreBoundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBoundary)) __obj.updateDynamic("ignoreBoundary")(ignoreBoundary.get.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (onMouseEnterDelay != null) __obj.updateDynamic("onMouseEnterDelay")(onMouseEnterDelay.asInstanceOf[js.Any])
-    if (onMouseLeaveDelay != null) __obj.updateDynamic("onMouseLeaveDelay")(onMouseLeaveDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(onMouseEnterDelay)) __obj.updateDynamic("onMouseEnterDelay")(onMouseEnterDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onMouseLeaveDelay)) __obj.updateDynamic("onMouseLeaveDelay")(onMouseLeaveDelay.get.asInstanceOf[js.Any])
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (popperOptions != null) __obj.updateDynamic("popperOptions")(popperOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow.get.asInstanceOf[js.Any])
     if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3(stateReducer))
     if (triggerType != null) __obj.updateDynamic("triggerType")(triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulTooltipProps]

@@ -4,19 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.MaskInput")
 @js.native
-class MaskInput protected () extends InputBase {
-  /**
-    * Constructor for a new MaskInput.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId ID for the new control, generated automatically if no ID is given
-    * @param mSettings Initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait MaskInput extends InputBase {
   /**
     * Gets a replacement string for the character being placed in the input.Subclasses may override this
     * method in order to get some additional behavior. For instance, switching current inputcharacter with

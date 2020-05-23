@@ -44,14 +44,14 @@ object Options {
     cache: js.UndefOr[Boolean] = js.undefined,
     cacheKeyFn: /* key */ js.Any => _ = null,
     cacheMap: CacheMap[K, js.Promise[V]] = null,
-    maxBatchSize: Int | Double = null
+    maxBatchSize: js.UndefOr[Double] = js.undefined
   ): Options[K, V] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
     if (cacheKeyFn != null) __obj.updateDynamic("cacheKeyFn")(js.Any.fromFunction1(cacheKeyFn))
     if (cacheMap != null) __obj.updateDynamic("cacheMap")(cacheMap.asInstanceOf[js.Any])
-    if (maxBatchSize != null) __obj.updateDynamic("maxBatchSize")(maxBatchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBatchSize)) __obj.updateDynamic("maxBatchSize")(maxBatchSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[K, V]]
   }
 }

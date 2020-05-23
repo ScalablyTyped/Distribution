@@ -17,9 +17,9 @@ trait ZIndexProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Obje
 
 object ZIndexProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](zIndex: ResponsiveValue[ZIndexProperty, ThemeType] = null): ZIndexProps[ThemeType] = {
+  def apply[ThemeType](zIndex: js.UndefOr[Null | (ResponsiveValue[ZIndexProperty, ThemeType])] = js.undefined): ZIndexProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZIndexProps[ThemeType]]
   }
 }

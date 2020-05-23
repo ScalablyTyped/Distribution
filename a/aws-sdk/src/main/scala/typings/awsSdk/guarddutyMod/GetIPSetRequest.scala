@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetIPSetRequest extends js.Object {
   /**
-    * The unique ID of the detector the ipSet is associated with.
+    * The unique ID of the detector that the IPSet is associated with.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**

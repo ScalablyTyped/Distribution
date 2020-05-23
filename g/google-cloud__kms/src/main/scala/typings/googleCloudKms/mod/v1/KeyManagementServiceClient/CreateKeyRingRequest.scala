@@ -1,6 +1,6 @@
 package typings.googleCloudKms.mod.v1.KeyManagementServiceClient
 
-import typings.googleCloudKms.PartialKeyRing
+import typings.googleCloudKms.anon.PartialKeyRing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

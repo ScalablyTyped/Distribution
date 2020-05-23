@@ -19,7 +19,7 @@ object PngBufferParams {
   ): PngBufferParams = {
     val __obj = js.Dynamic.literal()
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(interlaced)) __obj.updateDynamic("interlaced")(interlaced.asInstanceOf[js.Any])
+    if (!js.isUndefined(interlaced)) __obj.updateDynamic("interlaced")(interlaced.get.asInstanceOf[js.Any])
     if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
     __obj.asInstanceOf[PngBufferParams]
   }

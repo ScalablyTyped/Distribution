@@ -7,5 +7,10 @@ import scala.scalajs.js.annotation._
 /* augmented module */
 @JSImport("highcharts", JSImport.Namespace)
 @js.native
-object highchartsAugmentingMod extends js.Object
+object highchartsAugmentingMod extends js.Object {
+  /**
+    * 3D axis for z coordinates.
+    */
+  var ZAxis: js.Any = js.native
+}
 

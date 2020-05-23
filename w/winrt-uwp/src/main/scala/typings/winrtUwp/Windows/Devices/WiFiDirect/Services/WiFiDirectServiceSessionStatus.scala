@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object WiFiDirectServiceSessionStatus extends js.Object {
   /** A session has been requested. */
   @js.native
   sealed trait requested extends WiFiDirectServiceSessionStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectServiceSessionStatus with Double] = js.native
-  /* 0 */ @js.native
-  object closed extends TopLevel[closed with Double]
-  
-  /* 1 */ @js.native
-  object initiated extends TopLevel[initiated with Double]
-  
-  /* 3 */ @js.native
-  object open extends TopLevel[open with Double]
-  
-  /* 2 */ @js.native
-  object requested extends TopLevel[requested with Double]
   
 }
 

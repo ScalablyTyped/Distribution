@@ -56,7 +56,7 @@ package object mod {
     * An object literal of this type is used to represent the metadata of a constructor dependency.
     * The type itself is never referred to from generated code.
     */
-  type CtorDependency = typings.angularCore.AnonAttribute | scala.Null
+  type CtorDependency = typings.angularCore.anon.Attribute | scala.Null
   /**
     * Factory for ViewDefinitions/NgModuleDefinitions.
     * We use a function so we can reexeute it in case an error happens and use the given logger
@@ -111,7 +111,7 @@ package object mod {
     */
   type ExpandoInstructions = js.Array[scala.Double | typings.angularCore.mod.HostBindingsFunction[js.Any] | scala.Null]
   type ForwardRefFn = js.Function0[js.Any]
-  type GlobalTargetResolver = js.Function1[/* element */ js.Any, typings.angularCore.AnonNameGlobalTargetName]
+  type GlobalTargetResolver = js.Function1[/* element */ js.Any, typings.angularCore.anon.NameGlobalTargetName]
   /**
     * Array of hooks that should be executed for a view and their directive indices.
     *

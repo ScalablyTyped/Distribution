@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +16,4 @@ trait SVGFESpotLightElement extends SVGElement {
   val y: SVGAnimatedNumber = js.native
   val z: SVGAnimatedNumber = js.native
 }
-
-@JSGlobal("SVGFESpotLightElement")
-@js.native
-object SVGFESpotLightElement extends Instantiable0[SVGFESpotLightElement]
 

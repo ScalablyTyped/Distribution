@@ -1,6 +1,6 @@
 package typings.weixinApp.wx
 
-import typings.weixinApp.AnonEncryptedData
+import typings.weixinApp.anon.EncryptedData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait WeRunDataOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_WeRunDataOptions: js.UndefOr[js.Function1[/* res */ AnonEncryptedData, Unit]] = js.undefined
+  var success_WeRunDataOptions: js.UndefOr[js.Function1[/* res */ EncryptedData, Unit]] = js.undefined
 }
 
 object WeRunDataOptions {
@@ -16,7 +16,7 @@ object WeRunDataOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonEncryptedData => Unit = null
+    success: /* res */ EncryptedData => Unit = null
   ): WeRunDataOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

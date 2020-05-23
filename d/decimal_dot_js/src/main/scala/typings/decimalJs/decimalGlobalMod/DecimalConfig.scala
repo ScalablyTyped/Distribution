@@ -22,24 +22,24 @@ object DecimalConfig {
   def apply(
     crypto: js.UndefOr[Boolean] = js.undefined,
     defaults: js.UndefOr[Boolean] = js.undefined,
-    maxE: Int | Double = null,
-    minE: Int | Double = null,
+    maxE: js.UndefOr[Double] = js.undefined,
+    minE: js.UndefOr[Double] = js.undefined,
     modulo: DecimalModulo = null,
-    precision: Int | Double = null,
+    precision: js.UndefOr[Double] = js.undefined,
     rounding: DecimalRounding = null,
-    toExpNeg: Int | Double = null,
-    toExpPos: Int | Double = null
+    toExpNeg: js.UndefOr[Double] = js.undefined,
+    toExpPos: js.UndefOr[Double] = js.undefined
   ): DecimalConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(crypto)) __obj.updateDynamic("crypto")(crypto.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (maxE != null) __obj.updateDynamic("maxE")(maxE.asInstanceOf[js.Any])
-    if (minE != null) __obj.updateDynamic("minE")(minE.asInstanceOf[js.Any])
+    if (!js.isUndefined(crypto)) __obj.updateDynamic("crypto")(crypto.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxE)) __obj.updateDynamic("maxE")(maxE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minE)) __obj.updateDynamic("minE")(minE.get.asInstanceOf[js.Any])
     if (modulo != null) __obj.updateDynamic("modulo")(modulo.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     if (rounding != null) __obj.updateDynamic("rounding")(rounding.asInstanceOf[js.Any])
-    if (toExpNeg != null) __obj.updateDynamic("toExpNeg")(toExpNeg.asInstanceOf[js.Any])
-    if (toExpPos != null) __obj.updateDynamic("toExpPos")(toExpPos.asInstanceOf[js.Any])
+    if (!js.isUndefined(toExpNeg)) __obj.updateDynamic("toExpNeg")(toExpNeg.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toExpPos)) __obj.updateDynamic("toExpPos")(toExpPos.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecimalConfig]
   }
 }

@@ -1,6 +1,6 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.AnonButtonClick
+import typings.antdMobileRn.anon.ButtonClick
 import typings.antdMobileRn.resultIndexNativeMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Result () extends default
 @JSImport("antd-mobile-rn", "Result")
 @js.native
 object Result extends js.Object {
-  var defaultProps: AnonButtonClick = js.native
+  var defaultProps: ButtonClick = js.native
 }
 

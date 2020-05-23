@@ -1,6 +1,6 @@
 package typings.handsontable.mod.Handsontable.plugins
 
-import typings.std.Document_
+import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.WeakSet
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait FocusableWrapper extends js.Object {
   var eventManager: EventManager
   var listenersCount: WeakSet[HTMLElement]
   var mainElement: HTMLElement
-  var rootDocument: Document_
+  var rootDocument: Document
   def focus(): Unit
   def getFocusableElement(): HTMLElement
   def setFocusableElement(element: HTMLElement): Unit
@@ -26,7 +26,7 @@ object FocusableWrapper {
     getFocusableElement: () => HTMLElement,
     listenersCount: WeakSet[HTMLElement],
     mainElement: HTMLElement,
-    rootDocument: Document_,
+    rootDocument: Document,
     setFocusableElement: HTMLElement => Unit,
     useSecondaryElement: () => Unit
   ): FocusableWrapper = {

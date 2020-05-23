@@ -41,22 +41,22 @@ trait SymbolOptionsObject extends js.Object {
 object SymbolOptionsObject {
   @scala.inline
   def apply(
-    anchorX: Int | Double = null,
-    anchorY: Int | Double = null,
-    end: Int | Double = null,
+    anchorX: js.UndefOr[Double] = js.undefined,
+    anchorY: js.UndefOr[Double] = js.undefined,
+    end: js.UndefOr[Double] = js.undefined,
     open: js.UndefOr[Boolean] = js.undefined,
-    r: Int | Double = null,
+    r: js.UndefOr[Double] = js.undefined,
     rounded: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): SymbolOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (anchorX != null) __obj.updateDynamic("anchorX")(anchorX.asInstanceOf[js.Any])
-    if (anchorY != null) __obj.updateDynamic("anchorY")(anchorY.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchorX)) __obj.updateDynamic("anchorX")(anchorX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchorY)) __obj.updateDynamic("anchorY")(anchorY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolOptionsObject]
   }
 }

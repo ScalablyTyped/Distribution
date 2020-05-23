@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Explanation of Benefit resource
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ExplanationOfBenefit extends DomainResource {
   /**
     * Contains extended information for property 'created'.
@@ -227,7 +227,7 @@ object ExplanationOfBenefit {
     patient: Reference = null,
     payee: ExplanationOfBenefitPayee = null,
     payment: ExplanationOfBenefitPayment = null,
-    precedence: Int | Double = null,
+    precedence: js.UndefOr[positiveInt] = js.undefined,
     prescription: Reference = null,
     procedure: js.Array[ExplanationOfBenefitProcedure] = null,
     processNote: js.Array[ExplanationOfBenefitProcessNote] = null,
@@ -285,7 +285,7 @@ object ExplanationOfBenefit {
     if (patient != null) __obj.updateDynamic("patient")(patient.asInstanceOf[js.Any])
     if (payee != null) __obj.updateDynamic("payee")(payee.asInstanceOf[js.Any])
     if (payment != null) __obj.updateDynamic("payment")(payment.asInstanceOf[js.Any])
-    if (precedence != null) __obj.updateDynamic("precedence")(precedence.asInstanceOf[js.Any])
+    if (!js.isUndefined(precedence)) __obj.updateDynamic("precedence")(precedence.get.asInstanceOf[js.Any])
     if (prescription != null) __obj.updateDynamic("prescription")(prescription.asInstanceOf[js.Any])
     if (procedure != null) __obj.updateDynamic("procedure")(procedure.asInstanceOf[js.Any])
     if (processNote != null) __obj.updateDynamic("processNote")(processNote.asInstanceOf[js.Any])

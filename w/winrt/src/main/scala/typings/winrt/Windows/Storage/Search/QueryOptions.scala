@@ -9,36 +9,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Search.QueryOptions")
-@js.native
-class QueryOptions () extends IQueryOptions {
-  def this(query: CommonFolderQuery) = this()
-  def this(query: CommonFileQuery, fileTypeFilter: IIterable[String]) = this()
-  /* CompleteClass */
-  override var applicationSearchFilter: String = js.native
-  /* CompleteClass */
-  override var dateStackOption: DateStackOption = js.native
-  /* CompleteClass */
-  override var fileTypeFilter: IVector[String] = js.native
-  /* CompleteClass */
-  override var folderDepth: FolderDepth = js.native
-  /* CompleteClass */
-  override var groupPropertyName: String = js.native
-  /* CompleteClass */
-  override var indexerOption: IndexerOption = js.native
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var sortOrder: IVector[SortEntry] = js.native
-  /* CompleteClass */
-  override var userSearchFilter: String = js.native
-  /* CompleteClass */
-  override def loadFromString(value: String): Unit = js.native
-  /* CompleteClass */
-  override def saveToString(): String = js.native
-  /* CompleteClass */
-  override def setPropertyPrefetch(options: PropertyPrefetchOptions, propertiesToRetrieve: IIterable[String]): Unit = js.native
-  /* CompleteClass */
-  override def setThumbnailPrefetch(mode: ThumbnailMode, requestedSize: Double, options: ThumbnailOptions): Unit = js.native
+trait QueryOptions extends IQueryOptions
+
+object QueryOptions {
+  @scala.inline
+  def apply(
+    applicationSearchFilter: String,
+    dateStackOption: DateStackOption,
+    fileTypeFilter: IVector[String],
+    folderDepth: FolderDepth,
+    groupPropertyName: String,
+    indexerOption: IndexerOption,
+    language: String,
+    loadFromString: String => Unit,
+    saveToString: () => String,
+    setPropertyPrefetch: (PropertyPrefetchOptions, IIterable[String]) => Unit,
+    setThumbnailPrefetch: (ThumbnailMode, Double, ThumbnailOptions) => Unit,
+    sortOrder: IVector[SortEntry],
+    userSearchFilter: String
+  ): QueryOptions = {
+    val __obj = js.Dynamic.literal(applicationSearchFilter = applicationSearchFilter.asInstanceOf[js.Any], dateStackOption = dateStackOption.asInstanceOf[js.Any], fileTypeFilter = fileTypeFilter.asInstanceOf[js.Any], folderDepth = folderDepth.asInstanceOf[js.Any], groupPropertyName = groupPropertyName.asInstanceOf[js.Any], indexerOption = indexerOption.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], loadFromString = js.Any.fromFunction1(loadFromString), saveToString = js.Any.fromFunction0(saveToString), setPropertyPrefetch = js.Any.fromFunction2(setPropertyPrefetch), setThumbnailPrefetch = js.Any.fromFunction3(setThumbnailPrefetch), sortOrder = sortOrder.asInstanceOf[js.Any], userSearchFilter = userSearchFilter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueryOptions]
+  }
 }
 

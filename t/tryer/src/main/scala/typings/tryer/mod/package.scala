@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type TryerStatic = js.Function1[/* options */ typings.tryer.ReadonlyOptions, scala.Unit]
+  type TryerStatic = js.Function1[/* options */ typings.tryer.anon.ReadonlyOptions, scala.Unit]
 }

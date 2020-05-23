@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object rcFieldFormStrings {
   @js.native
-  sealed trait RC_FORM_INTERNAL_HOOKS extends js.Object
-  
-  @js.native
   sealed trait additions extends js.Object
   
   @js.native
@@ -204,8 +201,6 @@ object rcFieldFormStrings {
   @js.native
   sealed trait yes extends js.Object
   
-  @scala.inline
-  def RC_FORM_INTERNAL_HOOKS: RC_FORM_INTERNAL_HOOKS = "RC_FORM_INTERNAL_HOOKS".asInstanceOf[RC_FORM_INTERNAL_HOOKS]
   @scala.inline
   def additions: additions = "additions".asInstanceOf[additions]
   @scala.inline

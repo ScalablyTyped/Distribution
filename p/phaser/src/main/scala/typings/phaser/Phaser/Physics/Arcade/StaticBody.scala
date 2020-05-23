@@ -14,21 +14,14 @@ import scala.scalajs.js.annotation._
   * A Static Arcade Physics Body.
   * 
   * A Static Body never moves, and isn't automatically synchronized with its parent Game Object.
-  * That means if you make any change to the parent's origin, position, or scale after creating or adding the body, you'll need to update the Body manually.
+  * That means if you make any change to the parent's origin, position, or scale after creating or adding the body, you'll need to update the Static Body manually.
   * 
   * A Static Body can collide with other Bodies, but is never moved by collisions.
   * 
   * Its dynamic counterpart is {@link Phaser.Physics.Arcade.Body}.
   */
-@JSGlobal("Phaser.Physics.Arcade.StaticBody")
 @js.native
-class StaticBody protected () extends js.Object {
-  /**
-    * 
-    * @param world The Arcade Physics simulation this Static Body belongs to.
-    * @param gameObject The Game Object this Static Body belongs to.
-    */
-  def this(world: World, gameObject: GameObject) = this()
+trait StaticBody extends js.Object {
   /**
     * A constant `false` value expected by the Arcade Physics simulation.
     */
@@ -123,11 +116,11 @@ class StaticBody protected () extends js.Object {
     */
   var mass: Double = js.native
   /**
-    * The offset of this Static Body's actual position from any updated position.
+    * The offset set by {@link Phaser.Physics.Arcade.StaticBody#setCircle} or {@link Phaser.Physics.Arcade.StaticBody#setSize}.
     * 
-    * Unlike a dynamic Body, a Static Body does not follow its Game Object. As such, this offset is only applied when resizing the Static Body.
+    * This doesn't affect the Static Body's position, because a Static Body does not follow its Game Object.
     */
-  var offset: Vector2 = js.native
+  val offset: Vector2 = js.native
   /**
     * Whether the simulation emits a `collide` event when this StaticBody collides with another.
     */
@@ -162,8 +155,8 @@ class StaticBody protected () extends js.Object {
     */
   var position: Vector2 = js.native
   /**
-    * If this Static Body is circular, this is the unscaled radius of the Static Body's boundary, as set by {@link #setCircle}, in source pixels.
-    * The true radius is equal to `halfWidth`.
+    * If this Static Body is circular, this is the radius of the boundary, as set by {@link Phaser.Physics.Arcade.StaticBody#setCircle}, in pixels.
+    * Equal to `halfWidth`.
     */
   var radius: Double = js.native
   /**
@@ -256,7 +249,7 @@ class StaticBody protected () extends js.Object {
   def reset(x: Double): Unit = js.native
   def reset(x: Double, y: Double): Unit = js.native
   /**
-    * Sets this Static Body to have a circular body and sets its sizes and position.
+    * Sets this Static Body to have a circular body and sets its size and position.
     * @param radius The radius of the StaticBody, in pixels.
     * @param offsetX The horizontal offset of the StaticBody from its Game Object, in pixels.
     * @param offsetY The vertical offset of the StaticBody from its Game Object, in pixels.
@@ -279,17 +272,18 @@ class StaticBody protected () extends js.Object {
     */
   def setMass(value: Double): StaticBody = js.native
   /**
-    * Sets the offset of the body.
-    * @param x The horizontal offset of the Body from the Game Object's center.
-    * @param y The vertical offset of the Body from the Game Object's center.
+    * Positions the Static Body at an offset from its Game Object.
+    * @param x The horizontal offset of the Static Body from the Game Object's `x`.
+    * @param y The vertical offset of the Static Body from the Game Object's `y`.
     */
   def setOffset(x: Double, y: Double): StaticBody = js.native
   /**
-    * Sets the size of the body.
+    * Sets the size of the Static Body.
+    * When `center` is true, also repositions it.
     * Resets the width and height to match current frame, if no width and height provided and a frame is found.
-    * @param width The width of the Body in pixels. Cannot be zero. If not given, and the parent Game Object has a frame, it will use the frame width.
-    * @param height The height of the Body in pixels. Cannot be zero. If not given, and the parent Game Object has a frame, it will use the frame height.
-    * @param center Modify the Body's `offset`, placing the Body's center on its Game Object's center. Only works if the Game Object has the `getCenter` method. Default true.
+    * @param width The width of the Static Body in pixels. Cannot be zero. If not given, and the parent Game Object has a frame, it will use the frame width.
+    * @param height The height of the Static Body in pixels. Cannot be zero. If not given, and the parent Game Object has a frame, it will use the frame height.
+    * @param center Place the Static Body's center on its Game Object's center. Only works if the Game Object has the `getCenter` method. Default true.
     */
   def setSize(): StaticBody = js.native
   def setSize(width: integer): StaticBody = js.native
@@ -304,7 +298,7 @@ class StaticBody protected () extends js.Object {
     */
   def updateCenter(): Unit = js.native
   /**
-    * Syncs the Body's position and size with its parent Game Object.
+    * Syncs the Static Body's position and size with its parent Game Object.
     */
   def updateFromGameObject(): StaticBody = js.native
   /**

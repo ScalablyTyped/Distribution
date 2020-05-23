@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,8 +39,4 @@ trait ClassedColorSlider extends SmartMappingSliderBase {
   def updateFromRendererResult(rendererResult: ClassBreaksRendererResult): Unit = js.native
   def updateFromRendererResult(rendererResult: ClassBreaksRendererResult, histogramResult: HistogramResult): Unit = js.native
 }
-
-@JSGlobal("__esri.ClassedColorSlider")
-@js.native
-object ClassedColorSlider extends TopLevel[ClassedColorSliderConstructor]
 

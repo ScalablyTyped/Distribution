@@ -11,7 +11,7 @@ trait GetFindingsRequest extends js.Object {
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
   /**
-    * IDs of the findings that you want to retrieve.
+    * The IDs of the findings that you want to retrieve.
     */
   var FindingIds: typings.awsSdk.guarddutyMod.FindingIds = js.native
   /**

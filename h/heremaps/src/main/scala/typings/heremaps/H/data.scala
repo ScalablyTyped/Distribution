@@ -1,6 +1,5 @@
 package typings.heremaps.H
 
-import org.scalablytyped.runtime.TopLevel
 import typings.heremaps.H.data.AbstractReader.State
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.map.layer.ObjectLayer
@@ -17,12 +16,7 @@ object data extends js.Object {
     * An abstract reader class defines interface for data readers and has general functionality related to fetching data and reader events.
     */
   @js.native
-  /**
-    * Constructor
-    * @param opt_url {string=}
-    */
-  class AbstractReader () extends EventTarget {
-    def this(opt_url: String) = this()
+  trait AbstractReader extends EventTarget {
     /**
       * Method returns H.map.layer.ObjectLayer that contains parsed data, and can be added directly to the map. It returns new instance of the class with every invocation.
       * If data hasn't been parsed it will return H.map.layer.ObjectLayer that contains partial information, and reader will add new parsed objects to the layer's provider later on.
@@ -60,23 +54,6 @@ object data extends js.Object {
   
   @js.native
   object AbstractReader extends js.Object {
-    /**
-      * The event class for state events that are dispatched by AbstractReader
-      */
-    @js.native
-    class Event protected ()
-      extends typings.heremaps.H.util.Event {
-      /**
-        * Constructor
-        * @param target {(H.data.AbstractReader | H.map.Object)} - The target that's passed to event listeners
-        * @param type {string} - The type of the event
-        * @param state {H.data.AbstractReader.State} - The state of the target firing an event
-        * @param message {string} - The message associated with an event
-        */
-      def this(target: AbstractReader, `type`: String, state: State, message: String) = this()
-      def this(target: Object, `type`: String, state: State, message: String) = this()
-    }
-    
     @js.native
     sealed trait State extends js.Object
     
@@ -97,22 +74,12 @@ object data extends js.Object {
       @js.native
       sealed trait VISIT extends State
       
-      @JSBracketAccess
-      def apply(value: Double): js.UndefOr[State with Double] = js.native
-      /* 0 */ @js.native
-      object ERROR extends TopLevel[ERROR with Double]
-      
-      /* 1 */ @js.native
-      object LOADING extends TopLevel[LOADING with Double]
-      
-      /* 3 */ @js.native
-      object READY extends TopLevel[READY with Double]
-      
-      /* 2 */ @js.native
-      object VISIT extends TopLevel[VISIT with Double]
-      
     }
     
+    /**
+      * The event class for state events that are dispatched by AbstractReader
+      */
+    type Event = typings.heremaps.H.util.Event
   }
   
 }

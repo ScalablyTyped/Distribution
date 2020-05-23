@@ -1,6 +1,6 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.AnonCorrelationData
+import typings.mqttPacket.anon.CorrelationData
 import typings.mqttPacket.mqttPacketStrings.publish
 import typings.node.Buffer
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait IPublishPacket
   var cmd_IPublishPacket: publish
   var dup: Boolean
   var payload: String | Buffer
-  var properties: js.UndefOr[AnonCorrelationData] = js.undefined
+  var properties: js.UndefOr[CorrelationData] = js.undefined
   var qos: QoS
   var retain: Boolean
   var topic: String
@@ -29,13 +29,13 @@ object IPublishPacket {
     qos: QoS,
     retain: Boolean,
     topic: String,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonCorrelationData = null
+    length: js.UndefOr[Double] = js.undefined,
+    messageId: js.UndefOr[Double] = js.undefined,
+    properties: CorrelationData = null
   ): IPublishPacket = {
     val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], dup = dup.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], retain = retain.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageId)) __obj.updateDynamic("messageId")(messageId.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPublishPacket]
   }

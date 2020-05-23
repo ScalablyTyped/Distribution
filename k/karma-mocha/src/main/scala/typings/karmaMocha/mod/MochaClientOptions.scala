@@ -18,8 +18,7 @@ trait MochaClientOptions
 object MochaClientOptions {
   @scala.inline
   def apply(
-    StringDictionary: /** any supported Mocha configuration options */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     export: js.Array[String] = null,
     opts: `true` | String = null
   ): MochaClientOptions = {

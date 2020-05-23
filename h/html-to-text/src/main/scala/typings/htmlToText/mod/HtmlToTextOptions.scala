@@ -1,7 +1,7 @@
 package typings.htmlToText.mod
 
-import typings.htmlToText.AnonForceWrapOnLimit
-import typings.htmlToText.AnonIsAttributeValue
+import typings.htmlToText.anon.ForceWrapOnLimit
+import typings.htmlToText.anon.IsAttributeValue
 import typings.htmlToText.htmlToTextBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait HtmlToTextOptions extends js.Object {
     * defines the text decoding options given to `he.decode`
     * For more information see the [he](https://github.com/mathiasbynens/he) module
     */
-  var decodeOptions: js.UndefOr[AnonIsAttributeValue] = js.undefined
+  var decodeOptions: js.UndefOr[IsAttributeValue] = js.undefined
   /**
     * Customize the formatting of individual element types.
     */
@@ -51,7 +51,7 @@ trait HtmlToTextOptions extends js.Object {
   /**
     * describes how to wrap long words
     */
-  var longWordSplit: js.UndefOr[AnonForceWrapOnLimit] = js.undefined
+  var longWordSplit: js.UndefOr[ForceWrapOnLimit] = js.undefined
   /**
     *  Dont print brackets around the link if true
     */
@@ -100,13 +100,13 @@ object HtmlToTextOptions {
   @scala.inline
   def apply(
     baseElement: String | js.Array[String] = null,
-    decodeOptions: AnonIsAttributeValue = null,
+    decodeOptions: IsAttributeValue = null,
     format: Formatters = null,
     hideLinkHrefIfSameAsText: js.UndefOr[Boolean] = js.undefined,
     ignoreHref: js.UndefOr[Boolean] = js.undefined,
     ignoreImage: js.UndefOr[Boolean] = js.undefined,
     linkHrefBaseUrl: String = null,
-    longWordSplit: AnonForceWrapOnLimit = null,
+    longWordSplit: ForceWrapOnLimit = null,
     noLinkBrackets: js.UndefOr[Boolean] = js.undefined,
     preserveNewlines: js.UndefOr[Boolean] = js.undefined,
     returnDomByDefault: js.UndefOr[Boolean] = js.undefined,
@@ -114,25 +114,25 @@ object HtmlToTextOptions {
     tables: js.Array[String] | Boolean = null,
     unorderedListItemPrefix: String = null,
     uppercaseHeadings: js.UndefOr[Boolean] = js.undefined,
-    wordwrap: Double | `false` = null
+    wordwrap: js.UndefOr[Null | Double | `false`] = js.undefined
   ): HtmlToTextOptions = {
     val __obj = js.Dynamic.literal()
     if (baseElement != null) __obj.updateDynamic("baseElement")(baseElement.asInstanceOf[js.Any])
     if (decodeOptions != null) __obj.updateDynamic("decodeOptions")(decodeOptions.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideLinkHrefIfSameAsText)) __obj.updateDynamic("hideLinkHrefIfSameAsText")(hideLinkHrefIfSameAsText.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreHref)) __obj.updateDynamic("ignoreHref")(ignoreHref.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreImage)) __obj.updateDynamic("ignoreImage")(ignoreImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideLinkHrefIfSameAsText)) __obj.updateDynamic("hideLinkHrefIfSameAsText")(hideLinkHrefIfSameAsText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHref)) __obj.updateDynamic("ignoreHref")(ignoreHref.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreImage)) __obj.updateDynamic("ignoreImage")(ignoreImage.get.asInstanceOf[js.Any])
     if (linkHrefBaseUrl != null) __obj.updateDynamic("linkHrefBaseUrl")(linkHrefBaseUrl.asInstanceOf[js.Any])
     if (longWordSplit != null) __obj.updateDynamic("longWordSplit")(longWordSplit.asInstanceOf[js.Any])
-    if (!js.isUndefined(noLinkBrackets)) __obj.updateDynamic("noLinkBrackets")(noLinkBrackets.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveNewlines)) __obj.updateDynamic("preserveNewlines")(preserveNewlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnDomByDefault)) __obj.updateDynamic("returnDomByDefault")(returnDomByDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleNewLineParagraphs)) __obj.updateDynamic("singleNewLineParagraphs")(singleNewLineParagraphs.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLinkBrackets)) __obj.updateDynamic("noLinkBrackets")(noLinkBrackets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveNewlines)) __obj.updateDynamic("preserveNewlines")(preserveNewlines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnDomByDefault)) __obj.updateDynamic("returnDomByDefault")(returnDomByDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleNewLineParagraphs)) __obj.updateDynamic("singleNewLineParagraphs")(singleNewLineParagraphs.get.asInstanceOf[js.Any])
     if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     if (unorderedListItemPrefix != null) __obj.updateDynamic("unorderedListItemPrefix")(unorderedListItemPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(uppercaseHeadings)) __obj.updateDynamic("uppercaseHeadings")(uppercaseHeadings.asInstanceOf[js.Any])
-    if (wordwrap != null) __obj.updateDynamic("wordwrap")(wordwrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(uppercaseHeadings)) __obj.updateDynamic("uppercaseHeadings")(uppercaseHeadings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordwrap)) __obj.updateDynamic("wordwrap")(wordwrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlToTextOptions]
   }
 }

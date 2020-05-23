@@ -24,14 +24,14 @@ object StrategyOption {
     authType: String = null,
     authorizationURL: String = null,
     profileURL: String = null,
-    svcType: Int | Double = null,
+    svcType: js.UndefOr[Double] = js.undefined,
     tokenURL: String = null
   ): StrategyOption = {
     val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     if (authType != null) __obj.updateDynamic("authType")(authType.asInstanceOf[js.Any])
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL.asInstanceOf[js.Any])
     if (profileURL != null) __obj.updateDynamic("profileURL")(profileURL.asInstanceOf[js.Any])
-    if (svcType != null) __obj.updateDynamic("svcType")(svcType.asInstanceOf[js.Any])
+    if (!js.isUndefined(svcType)) __obj.updateDynamic("svcType")(svcType.get.asInstanceOf[js.Any])
     if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOption]
   }

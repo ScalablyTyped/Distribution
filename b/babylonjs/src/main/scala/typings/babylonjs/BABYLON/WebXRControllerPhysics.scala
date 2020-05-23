@@ -1,19 +1,12 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonImpostorType
+import typings.babylonjs.anon.ImpostorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRControllerPhysics")
 @js.native
-class WebXRControllerPhysics protected () extends WebXRAbstractFeature {
-  /**
-    * Construct a new Controller Physics Feature
-    * @param _xrSessionManager the corresponding xr session manager
-    * @param _options options to create this feature with
-    */
-  def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRControllerPhysicsOptions) = this()
+trait WebXRControllerPhysics extends WebXRAbstractFeature {
   var _attachController: js.Any = js.native
   var _controllers: js.Any = js.native
   var _debugMode: js.Any = js.native
@@ -53,22 +46,6 @@ class WebXRControllerPhysics protected () extends WebXRAbstractFeature {
     * Update the physics properties provided in the constructor
     * @param newProperties the new properties object
     */
-  def setPhysicsProperties(newProperties: AnonImpostorType): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.WebXRControllerPhysics")
-@js.native
-object WebXRControllerPhysics extends js.Object {
-  /**
-    * The module's name
-    */
-  val Name: String = js.native
-  /**
-    * The (Babylon) version of this module.
-    * This is an integer representing the implementation version.
-    * This number does not correspond to the webxr specs version
-    */
-  val Version: Double = js.native
+  def setPhysicsProperties(newProperties: ImpostorType): Unit = js.native
 }
 

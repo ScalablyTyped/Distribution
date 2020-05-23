@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxPopupMenu object.
   */
-@JSGlobal("ASPxClientPopupMenu")
 @js.native
-class ASPxClientPopupMenu () extends ASPxClientMenuBase {
+trait ASPxClientPopupMenu extends ASPxClientMenuBase {
   /**
     * Returns an object that invoked the popup menu.
     */
@@ -53,16 +52,5 @@ class ASPxClientPopupMenu () extends ASPxClientMenuBase {
     * @param y An integer value specifying the y-coordinate of the popup menu's display position.
     */
   def ShowAtPos(x: Double, y: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientPopupMenu")
-@js.native
-object ASPxClientPopupMenu extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientPopupMenu type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientPopupMenu = js.native
 }
 

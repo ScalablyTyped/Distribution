@@ -49,17 +49,17 @@ object FormatOptions {
   @scala.inline
   def apply(
     fraction: String = null,
-    lowerExp: Int | Double = null,
+    lowerExp: js.UndefOr[Double] = js.undefined,
     notation: fixed | exponential | engineering | auto = null,
-    precision: Int | Double = null,
-    upperExp: Int | Double = null
+    precision: js.UndefOr[Double] = js.undefined,
+    upperExp: js.UndefOr[Double] = js.undefined
   ): FormatOptions = {
     val __obj = js.Dynamic.literal()
     if (fraction != null) __obj.updateDynamic("fraction")(fraction.asInstanceOf[js.Any])
-    if (lowerExp != null) __obj.updateDynamic("lowerExp")(lowerExp.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerExp)) __obj.updateDynamic("lowerExp")(lowerExp.get.asInstanceOf[js.Any])
     if (notation != null) __obj.updateDynamic("notation")(notation.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (upperExp != null) __obj.updateDynamic("upperExp")(upperExp.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperExp)) __obj.updateDynamic("upperExp")(upperExp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptions]
   }
 }

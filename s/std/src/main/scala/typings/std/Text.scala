@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +18,4 @@ trait Text
     */
   def splitText(offset: Double): Text = js.native
 }
-
-@JSGlobal("Text")
-@js.native
-object Text
-  extends Instantiable0[Text]
-     with Instantiable1[/* data */ java.lang.String, Text]
 

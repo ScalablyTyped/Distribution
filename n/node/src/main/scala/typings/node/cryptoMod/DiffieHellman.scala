@@ -1,6 +1,7 @@
 package typings.node.cryptoMod
 
 import typings.node.Buffer
+import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,9 +29,9 @@ class DiffieHellman protected () extends js.Object {
   def getPrivateKey(encoding: HexBase64Latin1Encoding): String = js.native
   def getPublicKey(): Buffer = js.native
   def getPublicKey(encoding: HexBase64Latin1Encoding): String = js.native
-  def setPrivateKey(private_key: String, encoding: String): Unit = js.native
+  def setPrivateKey(private_key: String, encoding: BufferEncoding): Unit = js.native
   def setPrivateKey(private_key: ArrayBufferView): Unit = js.native
-  def setPublicKey(public_key: String, encoding: String): Unit = js.native
+  def setPublicKey(public_key: String, encoding: BufferEncoding): Unit = js.native
   def setPublicKey(public_key: ArrayBufferView): Unit = js.native
 }
 

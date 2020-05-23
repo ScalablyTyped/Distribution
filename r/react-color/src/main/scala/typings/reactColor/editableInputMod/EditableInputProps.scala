@@ -29,7 +29,7 @@ object EditableInputProps {
     key: Key = null,
     label: String = null,
     onChange: /* color */ ColorResult => Unit = null,
-    ref: LegacyRef[EditableInput] = null,
+    ref: js.UndefOr[Null | LegacyRef[EditableInput]] = js.undefined,
     style: EditableInputStyles = null,
     value: js.Any = null
   ): EditableInputProps = {
@@ -40,7 +40,7 @@ object EditableInputProps {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditableInputProps]

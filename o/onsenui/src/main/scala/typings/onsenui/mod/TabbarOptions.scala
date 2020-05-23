@@ -35,7 +35,7 @@ object TabbarOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepPage)) __obj.updateDynamic("keepPage")(keepPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepPage)) __obj.updateDynamic("keepPage")(keepPage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabbarOptions]
   }
 }

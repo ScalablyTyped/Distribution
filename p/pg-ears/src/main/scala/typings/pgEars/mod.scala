@@ -1,5 +1,6 @@
 package typings.pgEars
 
+import typings.pgEars.anon.ClientConfigmaxAttemptsnu
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

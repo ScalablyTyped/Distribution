@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 
 trait IJsonProvider extends IProvider {
   /** [Method] Create an event from a response object
-  		* @param response Object Response object
-  		* @returns Ext.direct.Event The event
-  		*/
+    * @param response Object Response object
+    * @returns Ext.direct.Event The event
+    */
   var createEvent: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IEvent]] = js.undefined
   /** [Method] Creates a set of events based on the XHR response
-  		* @param response Object The XHR response
-  		* @returns Ext.direct.Event[] An array of Ext.direct.Event
-  		*/
+    * @param response Object The XHR response
+    * @returns Ext.direct.Event[] An array of Ext.direct.Event
+    */
   var createEvents: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], Array]] = js.undefined
 }
 
@@ -96,7 +96,7 @@ object IJsonProvider {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isConnected != null) __obj.updateDynamic("isConnected")(js.Any.fromFunction0(isConnected))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -110,7 +110,7 @@ object IJsonProvider {
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

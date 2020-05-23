@@ -44,20 +44,20 @@ object AccountSettings {
   @scala.inline
   def apply(
     awsAccountNumber: AWSAccountNumber = null,
-    defaultJobTimeoutMinutes: Int | scala.Double = null,
-    maxJobTimeoutMinutes: Int | scala.Double = null,
+    defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
+    maxJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
     maxSlots: MaxSlotMap = null,
-    skipAppResign: js.UndefOr[scala.Boolean] = js.undefined,
+    skipAppResign: js.UndefOr[SkipAppResign] = js.undefined,
     trialMinutes: TrialMinutes = null,
     unmeteredDevices: PurchasedDevicesMap = null,
     unmeteredRemoteAccessDevices: PurchasedDevicesMap = null
   ): AccountSettings = {
     val __obj = js.Dynamic.literal()
     if (awsAccountNumber != null) __obj.updateDynamic("awsAccountNumber")(awsAccountNumber.asInstanceOf[js.Any])
-    if (defaultJobTimeoutMinutes != null) __obj.updateDynamic("defaultJobTimeoutMinutes")(defaultJobTimeoutMinutes.asInstanceOf[js.Any])
-    if (maxJobTimeoutMinutes != null) __obj.updateDynamic("maxJobTimeoutMinutes")(maxJobTimeoutMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultJobTimeoutMinutes)) __obj.updateDynamic("defaultJobTimeoutMinutes")(defaultJobTimeoutMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxJobTimeoutMinutes)) __obj.updateDynamic("maxJobTimeoutMinutes")(maxJobTimeoutMinutes.get.asInstanceOf[js.Any])
     if (maxSlots != null) __obj.updateDynamic("maxSlots")(maxSlots.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.get.asInstanceOf[js.Any])
     if (trialMinutes != null) __obj.updateDynamic("trialMinutes")(trialMinutes.asInstanceOf[js.Any])
     if (unmeteredDevices != null) __obj.updateDynamic("unmeteredDevices")(unmeteredDevices.asInstanceOf[js.Any])
     if (unmeteredRemoteAccessDevices != null) __obj.updateDynamic("unmeteredRemoteAccessDevices")(unmeteredRemoteAccessDevices.asInstanceOf[js.Any])

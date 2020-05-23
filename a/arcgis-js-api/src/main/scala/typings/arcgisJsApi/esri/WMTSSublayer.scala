@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,8 +81,4 @@ trait WMTSSublayer
     */
   var title: String = js.native
 }
-
-@JSGlobal("__esri.WMTSSublayer")
-@js.native
-object WMTSSublayer extends TopLevel[WMTSSublayerConstructor]
 

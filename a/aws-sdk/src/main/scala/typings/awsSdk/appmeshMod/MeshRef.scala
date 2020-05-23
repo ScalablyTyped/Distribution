@@ -10,6 +10,8 @@ trait MeshRef extends js.Object {
     * The full Amazon Resource Name (ARN) of the service mesh.
     */
   var arn: Arn = js.native
+  var createdAt: Timestamp = js.native
+  var lastUpdatedAt: Timestamp = js.native
   /**
     * The name of the service mesh.
     */
@@ -21,15 +23,24 @@ trait MeshRef extends js.Object {
   var meshOwner: AccountId = js.native
   /**
     * The AWS IAM account ID of the resource owner. If the account ID is not your own, then it's
-    the ID of the mesh owner, or another account that the mesh is shared with. For more information about mesh sharing, see Working with Shared Meshes.
+    the ID of the mesh owner or of another account that the mesh is shared with. For more information about mesh sharing, see Working with Shared Meshes.
     */
   var resourceOwner: AccountId = js.native
+  var version: Long = js.native
 }
 
 object MeshRef {
   @scala.inline
-  def apply(arn: Arn, meshName: ResourceName, meshOwner: AccountId, resourceOwner: AccountId): MeshRef = {
-    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], meshName = meshName.asInstanceOf[js.Any], meshOwner = meshOwner.asInstanceOf[js.Any], resourceOwner = resourceOwner.asInstanceOf[js.Any])
+  def apply(
+    arn: Arn,
+    createdAt: Timestamp,
+    lastUpdatedAt: Timestamp,
+    meshName: ResourceName,
+    meshOwner: AccountId,
+    resourceOwner: AccountId,
+    version: Long
+  ): MeshRef = {
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], lastUpdatedAt = lastUpdatedAt.asInstanceOf[js.Any], meshName = meshName.asInstanceOf[js.Any], meshOwner = meshOwner.asInstanceOf[js.Any], resourceOwner = resourceOwner.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshRef]
   }
 }

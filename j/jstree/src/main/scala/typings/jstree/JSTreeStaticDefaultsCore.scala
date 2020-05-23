@@ -185,16 +185,16 @@ object JSTreeStaticDefaultsCore {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (check_callback != null) __obj.updateDynamic("check_callback")(check_callback.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(dblclick_toggle)) __obj.updateDynamic("dblclick_toggle")(dblclick_toggle.asInstanceOf[js.Any])
-    if (!js.isUndefined(expand_selected_onload)) __obj.updateDynamic("expand_selected_onload")(expand_selected_onload.asInstanceOf[js.Any])
-    if (!js.isUndefined(force_text)) __obj.updateDynamic("force_text")(force_text.asInstanceOf[js.Any])
+    if (!js.isUndefined(dblclick_toggle)) __obj.updateDynamic("dblclick_toggle")(dblclick_toggle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand_selected_onload)) __obj.updateDynamic("expand_selected_onload")(expand_selected_onload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_text)) __obj.updateDynamic("force_text")(force_text.get.asInstanceOf[js.Any])
     if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(loaded_state)) __obj.updateDynamic("loaded_state")(loaded_state.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(restore_focus)) __obj.updateDynamic("restore_focus")(restore_focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(loaded_state)) __obj.updateDynamic("loaded_state")(loaded_state.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restore_focus)) __obj.updateDynamic("restore_focus")(restore_focus.get.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     if (themes != null) __obj.updateDynamic("themes")(themes.asInstanceOf[js.Any])
-    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker.asInstanceOf[js.Any])
+    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsCore]
   }
 }

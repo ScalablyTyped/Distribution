@@ -24,7 +24,7 @@ object RefreshToken {
     client: Client,
     refreshToken: String,
     user: User,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     refreshTokenExpiresAt: Date = null,
     scope: String | js.Array[String] = null
   ): RefreshToken = {

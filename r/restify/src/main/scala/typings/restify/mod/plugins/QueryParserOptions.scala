@@ -48,25 +48,25 @@ object QueryParserOptions {
   @scala.inline
   def apply(
     allowDots: js.UndefOr[Boolean] = js.undefined,
-    arrayLimit: Int | Double = null,
-    depth: Int | Double = null,
+    arrayLimit: js.UndefOr[Double] = js.undefined,
+    depth: js.UndefOr[Double] = js.undefined,
     mapParams: js.UndefOr[Boolean] = js.undefined,
     overrideParams: js.UndefOr[Boolean] = js.undefined,
-    parameterLimit: Int | Double = null,
+    parameterLimit: js.UndefOr[Double] = js.undefined,
     parseArrays: js.UndefOr[Boolean] = js.undefined,
     plainObjects: js.UndefOr[Boolean] = js.undefined,
     strictNullHandling: js.UndefOr[Boolean] = js.undefined
   ): QueryParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots.asInstanceOf[js.Any])
-    if (arrayLimit != null) __obj.updateDynamic("arrayLimit")(arrayLimit.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.asInstanceOf[js.Any])
-    if (parameterLimit != null) __obj.updateDynamic("parameterLimit")(parameterLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseArrays)) __obj.updateDynamic("parseArrays")(parseArrays.asInstanceOf[js.Any])
-    if (!js.isUndefined(plainObjects)) __obj.updateDynamic("plainObjects")(plainObjects.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrayLimit)) __obj.updateDynamic("arrayLimit")(arrayLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parameterLimit)) __obj.updateDynamic("parameterLimit")(parameterLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseArrays)) __obj.updateDynamic("parseArrays")(parseArrays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(plainObjects)) __obj.updateDynamic("plainObjects")(plainObjects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParserOptions]
   }
 }

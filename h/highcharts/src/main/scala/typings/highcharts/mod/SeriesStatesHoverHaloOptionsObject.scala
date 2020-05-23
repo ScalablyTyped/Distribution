@@ -31,14 +31,14 @@ object SeriesStatesHoverHaloOptionsObject {
   def apply(
     attributes: PlotTilemapStatesHoverHaloAttributesOptions | SVGAttributes = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null,
-    size: Int | Double = null
+    opacity: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined
   ): SeriesStatesHoverHaloOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesStatesHoverHaloOptionsObject]
   }
 }

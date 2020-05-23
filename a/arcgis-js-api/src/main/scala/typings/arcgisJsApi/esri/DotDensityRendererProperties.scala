@@ -79,23 +79,23 @@ object DotDensityRendererProperties {
     authoringInfo: AuthoringInfoProperties = null,
     backgroundColor: Color_ | js.Array[Double] | String = null,
     dotBlendingEnabled: js.UndefOr[Boolean] = js.undefined,
-    dotValue: Int | Double = null,
+    dotValue: js.UndefOr[Double] = js.undefined,
     legendOptions: DotDensityRendererLegendOptions = null,
     outline: SimpleLineSymbolProperties = null,
-    referenceScale: Int | Double = null,
-    seed: Int | Double = null,
+    referenceScale: js.UndefOr[Double] = js.undefined,
+    seed: js.UndefOr[Double] = js.undefined,
     visualVariables: js.Array[VisualVariableProperties] = null
   ): DotDensityRendererProperties = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotBlendingEnabled)) __obj.updateDynamic("dotBlendingEnabled")(dotBlendingEnabled.asInstanceOf[js.Any])
-    if (dotValue != null) __obj.updateDynamic("dotValue")(dotValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotBlendingEnabled)) __obj.updateDynamic("dotBlendingEnabled")(dotBlendingEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotValue)) __obj.updateDynamic("dotValue")(dotValue.get.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
     if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (referenceScale != null) __obj.updateDynamic("referenceScale")(referenceScale.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (!js.isUndefined(referenceScale)) __obj.updateDynamic("referenceScale")(referenceScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
     if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotDensityRendererProperties]
   }

@@ -1,13 +1,14 @@
 package typings.awsSdk.cloudformationMod
 
-import typings.awsSdk.DescribeChangeSetInputwai
-import typings.awsSdk.DescribeStacksInputwaiter
-import typings.awsSdk.DescribeTypeRegistrationI
+import typings.awsSdk.anon.DescribeChangeSetInputwai
+import typings.awsSdk.anon.DescribeStacksInputwaiter
+import typings.awsSdk.anon.DescribeTypeRegistrationI
 import typings.awsSdk.awsSdkStrings.changeSetCreateComplete
 import typings.awsSdk.awsSdkStrings.stackCreateComplete
 import typings.awsSdk.awsSdkStrings.stackDeleteComplete
 import typings.awsSdk.awsSdkStrings.stackExists
 import typings.awsSdk.awsSdkStrings.stackImportComplete
+import typings.awsSdk.awsSdkStrings.stackRollbackComplete
 import typings.awsSdk.awsSdkStrings.stackUpdateComplete
 import typings.awsSdk.awsSdkStrings.typeRegistrationComplete
 import typings.awsSdk.configMod.ConfigBase
@@ -838,6 +839,27 @@ trait CloudFormation extends Service {
   @JSName("waitFor")
   def waitFor_stackImportComplete(
     state: stackImportComplete,
+    params: DescribeStacksInputwaiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
+  ): Request[DescribeStacksOutput, AWSError] = js.native
+  /**
+    * Waits for the stackRollbackComplete state by periodically calling the underlying CloudFormation.describeStacksoperation every 30 seconds (at most 120 times). Wait until stack status is UPDATE_ROLLBACK_COMPLETE.
+    */
+  @JSName("waitFor")
+  def waitFor_stackRollbackComplete(state: stackRollbackComplete): Request[DescribeStacksOutput, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_stackRollbackComplete(
+    state: stackRollbackComplete,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
+  ): Request[DescribeStacksOutput, AWSError] = js.native
+  /**
+    * Waits for the stackRollbackComplete state by periodically calling the underlying CloudFormation.describeStacksoperation every 30 seconds (at most 120 times). Wait until stack status is UPDATE_ROLLBACK_COMPLETE.
+    */
+  @JSName("waitFor")
+  def waitFor_stackRollbackComplete(state: stackRollbackComplete, params: DescribeStacksInputwaiter): Request[DescribeStacksOutput, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_stackRollbackComplete(
+    state: stackRollbackComplete,
     params: DescribeStacksInputwaiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
   ): Request[DescribeStacksOutput, AWSError] = js.native

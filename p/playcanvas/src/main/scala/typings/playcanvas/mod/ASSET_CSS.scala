@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {string}
-  * @name pc.ASSET_CSS
-  * @description Asset type name for CSS.
+  * Asset type name for CSS.
   */
 @JSImport("playcanvas", "ASSET_CSS")
 @js.native

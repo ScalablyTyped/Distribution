@@ -17,12 +17,14 @@ trait IVoiceSelectionParams extends js.Object {
 object IVoiceSelectionParams {
   @scala.inline
   def apply(
-    name: String = null,
-    ssmlGender: SsmlVoiceGender | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SsmlVoiceGender * / any */ String) = null
+    name: js.UndefOr[Null | String] = js.undefined,
+    ssmlGender: js.UndefOr[
+      Null | SsmlVoiceGender | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SsmlVoiceGender * / any */ String)
+    ] = js.undefined
   ): IVoiceSelectionParams = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ssmlGender != null) __obj.updateDynamic("ssmlGender")(ssmlGender.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssmlGender)) __obj.updateDynamic("ssmlGender")(ssmlGender.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVoiceSelectionParams]
   }
 }

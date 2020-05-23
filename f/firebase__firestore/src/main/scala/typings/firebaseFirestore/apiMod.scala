@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/api", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/api", JSImport.Namespace)
 @js.native
 object apiMod extends js.Object {
   def makeConstructorPrivate[T /* <: js.Function */](cls: T): T = js.native

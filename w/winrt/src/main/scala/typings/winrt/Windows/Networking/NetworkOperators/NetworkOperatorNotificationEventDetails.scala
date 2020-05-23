@@ -5,20 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails")
-@js.native
-class NetworkOperatorNotificationEventDetails () extends INetworkOperatorNotificationEventDetails {
-  /* CompleteClass */
-  override var encodingType: Double = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var networkAccountId: String = js.native
-  /* CompleteClass */
-  override var notificationType: NetworkOperatorEventMessageType = js.native
-  /* CompleteClass */
-  override var ruleId: String = js.native
-  /* CompleteClass */
-  override var smsMessage: ISmsMessage = js.native
+trait NetworkOperatorNotificationEventDetails extends INetworkOperatorNotificationEventDetails
+
+object NetworkOperatorNotificationEventDetails {
+  @scala.inline
+  def apply(
+    encodingType: Double,
+    message: String,
+    networkAccountId: String,
+    notificationType: NetworkOperatorEventMessageType,
+    ruleId: String,
+    smsMessage: ISmsMessage
+  ): NetworkOperatorNotificationEventDetails = {
+    val __obj = js.Dynamic.literal(encodingType = encodingType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], networkAccountId = networkAccountId.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any], smsMessage = smsMessage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkOperatorNotificationEventDetails]
+  }
 }
 

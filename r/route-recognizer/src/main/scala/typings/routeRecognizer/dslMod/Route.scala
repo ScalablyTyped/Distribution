@@ -12,9 +12,13 @@ trait Route extends js.Object {
 
 object Route {
   @scala.inline
-  def apply(path: String, handler: Opaque = null, queryParams: js.Array[String] = null): Route = {
+  def apply(
+    path: String,
+    handler: js.UndefOr[Null | Opaque] = js.undefined,
+    queryParams: js.Array[String] = null
+  ): Route = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    if (!js.isUndefined(handler)) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }

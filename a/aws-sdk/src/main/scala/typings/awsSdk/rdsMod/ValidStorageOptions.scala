@@ -35,14 +35,14 @@ object ValidStorageOptions {
     ProvisionedIops: RangeList = null,
     StorageSize: RangeList = null,
     StorageType: String = null,
-    SupportsStorageAutoscaling: js.UndefOr[scala.Boolean] = js.undefined
+    SupportsStorageAutoscaling: js.UndefOr[Boolean] = js.undefined
   ): ValidStorageOptions = {
     val __obj = js.Dynamic.literal()
     if (IopsToStorageRatio != null) __obj.updateDynamic("IopsToStorageRatio")(IopsToStorageRatio.asInstanceOf[js.Any])
     if (ProvisionedIops != null) __obj.updateDynamic("ProvisionedIops")(ProvisionedIops.asInstanceOf[js.Any])
     if (StorageSize != null) __obj.updateDynamic("StorageSize")(StorageSize.asInstanceOf[js.Any])
     if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsStorageAutoscaling)) __obj.updateDynamic("SupportsStorageAutoscaling")(SupportsStorageAutoscaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsStorageAutoscaling)) __obj.updateDynamic("SupportsStorageAutoscaling")(SupportsStorageAutoscaling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidStorageOptions]
   }
 }

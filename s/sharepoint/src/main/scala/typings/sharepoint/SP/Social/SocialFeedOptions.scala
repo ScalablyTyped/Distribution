@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Social.SocialFeedOptions")
 @js.native
-class SocialFeedOptions () extends ClientObject {
+trait SocialFeedOptions extends ClientObject {
   def get_maxThreadCount(): Double = js.native
   def get_newerThan(): String = js.native
   def get_olderThan(): String = js.native

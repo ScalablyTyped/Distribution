@@ -9,5 +9,9 @@ import scala.scalajs.js.annotation._
 class StackNode[T] protected ()
   extends typings.jsGraphAlgorithms.JsGraphs.StackNode[T] {
   def this(value: T) = this()
+  /* CompleteClass */
+  override var next: typings.jsGraphAlgorithms.JsGraphs.StackNode[T] | Null = js.native
+  /* CompleteClass */
+  override var value: T = js.native
 }
 

@@ -12,17 +12,17 @@ trait ColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
 
 object ColorProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](
-    backgroundColor: ResponsiveValue[TVal, ThemeType] = null,
-    bg: ResponsiveValue[TVal, ThemeType] = null,
-    color: ResponsiveValue[TVal, ThemeType] = null,
-    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null
+  def apply[ThemeType, TVal](
+    backgroundColor: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    bg: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    color: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    opacity: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, RequiredTheme])] = js.undefined
   ): ColorProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(bg)) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorProps[ThemeType, TVal]]
   }
 }

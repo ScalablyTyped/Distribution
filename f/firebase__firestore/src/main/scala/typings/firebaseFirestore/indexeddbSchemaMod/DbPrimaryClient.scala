@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbPrimaryClient")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbPrimaryClient")
 @js.native
 class DbPrimaryClient protected () extends js.Object {
   def this(
@@ -20,7 +20,7 @@ class DbPrimaryClient protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbPrimaryClient")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbPrimaryClient")
 @js.native
 object DbPrimaryClient extends js.Object {
   /**

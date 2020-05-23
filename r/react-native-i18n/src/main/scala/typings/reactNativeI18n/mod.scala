@@ -27,7 +27,7 @@ object mod extends js.Object {
   object default extends js.Object {
     var defaultLocale: String = js.native
     var defaultSeparator: String = js.native
-    var fallbacks: Boolean = js.native
+    var fallbacks: Boolean | String | (StringDictionary[String | js.Array[String]]) = js.native
     // tslint:disable-next-line prefer-declare-function
     var getFullScope: js.Function2[
         /* scope */ String | js.Array[String], 

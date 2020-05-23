@@ -13,12 +13,12 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    StringDictionary: /* property */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     lookup: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(lookup)) __obj.updateDynamic("lookup")(lookup.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookup)) __obj.updateDynamic("lookup")(lookup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

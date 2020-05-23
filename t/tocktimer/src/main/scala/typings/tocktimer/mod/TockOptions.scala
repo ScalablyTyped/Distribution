@@ -29,11 +29,11 @@ object TockOptions {
     callback: () => Unit,
     complete: () => Unit,
     countdown: js.UndefOr[Boolean] = js.undefined,
-    interval: Int | Double = null
+    interval: js.UndefOr[Double] = js.undefined
   ): TockOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), complete = js.Any.fromFunction0(complete))
-    if (!js.isUndefined(countdown)) __obj.updateDynamic("countdown")(countdown.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(countdown)) __obj.updateDynamic("countdown")(countdown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TockOptions]
   }
 }

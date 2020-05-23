@@ -45,7 +45,7 @@ object assets extends js.Object {
     def toVinylStream(): Readable = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.frctlFractal.mod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @js.native
   trait AssetSourceCollection extends EventEmitter {
     @JSName(js.Symbol.iterator)

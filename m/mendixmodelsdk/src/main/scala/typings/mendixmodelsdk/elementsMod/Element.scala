@@ -1,14 +1,15 @@
 package typings.mendixmodelsdk.elementsMod
 
-import typings.mendixmodelsdk.AnonCopy
 import typings.mendixmodelsdk.abstractModelMod.AbstractModel
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.anon.Copy
 import typings.mendixmodelsdk.unitsMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/sdk/internal/elements", "Element")
@@ -32,7 +33,7 @@ abstract class Element protected () extends AbstractElement {
   /**
     * Creates a deep copy of this element and its children. Also returns a map from original to new IDs.
     */
-  def deepCopyWithIdMap(targetModel: IAbstractModel): AnonCopy = js.native
+  def deepCopyWithIdMap(targetModel: IAbstractModel): Copy = js.native
   /**
     * Detaches this element from the model, so that it can be attached in a different place.
     */

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.BaseCameraPointersInput")
 @js.native
-abstract class BaseCameraPointersInput () extends ICameraInput[Camera] {
+trait BaseCameraPointersInput extends ICameraInput[Camera] {
   /**
     * Whether keyboard modifier keys are pressed at time of last mouse event.
     */

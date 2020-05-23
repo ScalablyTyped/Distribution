@@ -18,10 +18,10 @@ trait DominantLanguage extends js.Object {
 
 object DominantLanguage {
   @scala.inline
-  def apply(LanguageCode: String = null, Score: Int | scala.Double = null): DominantLanguage = {
+  def apply(LanguageCode: String = null, Score: js.UndefOr[Float] = js.undefined): DominantLanguage = {
     val __obj = js.Dynamic.literal()
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DominantLanguage]
   }
 }

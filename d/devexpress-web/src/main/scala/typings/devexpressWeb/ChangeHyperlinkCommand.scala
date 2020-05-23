@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the specified hyperlink.
   */
-@JSGlobal("ChangeHyperlinkCommand")
 @js.native
-class ChangeHyperlinkCommand () extends CommandWithSimpleStateBase {
+trait ChangeHyperlinkCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the ChangeHyperlinkCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param fieldIndex An integer value specifying the field's index in the specified sub-document.

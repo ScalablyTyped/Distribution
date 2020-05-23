@@ -29,7 +29,7 @@ object IssuerMetadata {
   @scala.inline
   def apply(
     issuer: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     authorization_endpoint: String = null,
     end_session_endpoint: String = null,
     introspection_endpoint_auth_methods_supported: js.Array[String] = null,

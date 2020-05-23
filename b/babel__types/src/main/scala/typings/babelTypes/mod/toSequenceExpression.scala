@@ -1,6 +1,6 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.AnonBuildUndefinedNode
+import typings.babelTypes.anon.BuildUndefinedNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@babel/types", "toSequenceExpression")
 @js.native
 object toSequenceExpression extends js.Object {
-  def apply(nodes: js.Array[Node], scope: AnonBuildUndefinedNode): js.UndefOr[SequenceExpression_] = js.native
+  def apply(nodes: js.Array[Node], scope: BuildUndefinedNode): js.UndefOr[SequenceExpression_] = js.native
 }
 

@@ -22,9 +22,9 @@ trait EnvironmentVariable extends js.Object {
 
 object EnvironmentVariable {
   @scala.inline
-  def apply(Key: String, Value: String, Secure: js.UndefOr[scala.Boolean] = js.undefined): EnvironmentVariable = {
+  def apply(Key: String, Value: String, Secure: js.UndefOr[Boolean] = js.undefined): EnvironmentVariable = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-    if (!js.isUndefined(Secure)) __obj.updateDynamic("Secure")(Secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(Secure)) __obj.updateDynamic("Secure")(Secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentVariable]
   }
 }

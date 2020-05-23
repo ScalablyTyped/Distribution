@@ -31,12 +31,12 @@ object FilterableOptions {
   ): FilterableOptions = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhanced)) __obj.updateDynamic("enhanced")(enhanced.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhanced)) __obj.updateDynamic("enhanced")(enhanced.get.asInstanceOf[js.Any])
     if (filterCallback != null) __obj.updateDynamic("filterCallback")(js.Any.fromFunction2(filterCallback))
     if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterReveal)) __obj.updateDynamic("filterReveal")(filterReveal.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterReveal)) __obj.updateDynamic("filterReveal")(filterReveal.get.asInstanceOf[js.Any])
     if (filterTheme != null) __obj.updateDynamic("filterTheme")(filterTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterableOptions]
   }

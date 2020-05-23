@@ -5,112 +5,97 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.KhronosTextureContainer")
-@js.native
-class KhronosTextureContainer protected () extends js.Object {
-  /**
-    * Creates a new KhronosTextureContainer
-    * @param data contents of the KTX container file
-    * @param facesExpected should be either 1 or 6, based whether a cube texture or or
-    * @param threeDExpected provision for indicating that data should be a 3D texture, not implemented
-    * @param textureArrayExpected provision for indicating that data should be a texture array, not implemented
-    */
-  def this(/** contents of the KTX container file */
-  data: ArrayBufferView, facesExpected: Double) = this()
-  def this(
-    /** contents of the KTX container file */
-  data: ArrayBufferView,
-    facesExpected: Double,
-    threeDExpected: Boolean
-  ) = this()
-  def this(
-    /** contents of the KTX container file */
-  data: ArrayBufferView,
-    facesExpected: Double,
-    threeDExpected: Boolean,
-    textureArrayExpected: Boolean
-  ) = this()
-  var _upload2DCompressedLevels: js.Any = js.native
+trait KhronosTextureContainer extends js.Object {
+  var _upload2DCompressedLevels: js.Any
   /**
     * Gets the bytes of key value data
     */
-  var bytesOfKeyValueData: Double = js.native
+  var bytesOfKeyValueData: Double
   /** contents of the KTX container file */
-  var data: ArrayBufferView = js.native
+  var data: ArrayBufferView
   /**
     * Gets the base internal format
     */
-  var glBaseInternalFormat: Double = js.native
+  var glBaseInternalFormat: Double
   /**
     * Gets the openGL format
     */
-  var glFormat: Double = js.native
+  var glFormat: Double
   /**
     * Gets the openGL internal format
     */
-  var glInternalFormat: Double = js.native
+  var glInternalFormat: Double
   /**
     * Gets the openGL type
     */
-  var glType: Double = js.native
+  var glType: Double
   /**
     * Gets the openGL type size
     */
-  var glTypeSize: Double = js.native
+  var glTypeSize: Double
   /**
     * If the container has been made invalid (eg. constructor failed to correctly load array buffer)
     */
-  var isInvalid: Boolean = js.native
+  var isInvalid: Boolean
   /**
     * Gets the load type
     */
-  var loadType: Double = js.native
+  var loadType: Double
   /**
     * Gets the number of array elements
     */
-  var numberOfArrayElements: Double = js.native
+  var numberOfArrayElements: Double
   /**
     * Gets the number of faces
     */
-  var numberOfFaces: Double = js.native
+  var numberOfFaces: Double
   /**
     * Gets the number of mipmap levels
     */
-  var numberOfMipmapLevels: Double = js.native
+  var numberOfMipmapLevels: Double
   /**
     * Gets image depth in pixels
     */
-  var pixelDepth: Double = js.native
+  var pixelDepth: Double
   /**
     * Gets image height in pixel
     */
-  var pixelHeight: Double = js.native
+  var pixelHeight: Double
   /**
     * Gets image width in pixel
     */
-  var pixelWidth: Double = js.native
+  var pixelWidth: Double
   /**
     * Uploads KTX content to a Babylon Texture.
     * It is assumed that the texture has already been created & is currently bound
     * @hidden
     */
-  def uploadLevels(texture: InternalTexture, loadMipmaps: Boolean): Unit = js.native
+  def uploadLevels(texture: InternalTexture, loadMipmaps: Boolean): Unit
 }
 
-/* static members */
-@JSGlobal("BABYLON.KhronosTextureContainer")
-@js.native
-object KhronosTextureContainer extends js.Object {
-  var COMPRESSED_2D: js.Any = js.native
-  var COMPRESSED_3D: js.Any = js.native
-  var HEADER_LEN: js.Any = js.native
-  var TEX_2D: js.Any = js.native
-  var TEX_3D: js.Any = js.native
-  /**
-    * Checks if the given data starts with a KTX file identifier.
-    * @param data the data to check
-    * @returns true if the data is a KTX file or false otherwise
-    */
-  def IsValid(data: ArrayBufferView): Boolean = js.native
+object KhronosTextureContainer {
+  @scala.inline
+  def apply(
+    _upload2DCompressedLevels: js.Any,
+    bytesOfKeyValueData: Double,
+    data: ArrayBufferView,
+    glBaseInternalFormat: Double,
+    glFormat: Double,
+    glInternalFormat: Double,
+    glType: Double,
+    glTypeSize: Double,
+    isInvalid: Boolean,
+    loadType: Double,
+    numberOfArrayElements: Double,
+    numberOfFaces: Double,
+    numberOfMipmapLevels: Double,
+    pixelDepth: Double,
+    pixelHeight: Double,
+    pixelWidth: Double,
+    uploadLevels: (InternalTexture, Boolean) => Unit
+  ): KhronosTextureContainer = {
+    val __obj = js.Dynamic.literal(_upload2DCompressedLevels = _upload2DCompressedLevels.asInstanceOf[js.Any], bytesOfKeyValueData = bytesOfKeyValueData.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], glBaseInternalFormat = glBaseInternalFormat.asInstanceOf[js.Any], glFormat = glFormat.asInstanceOf[js.Any], glInternalFormat = glInternalFormat.asInstanceOf[js.Any], glType = glType.asInstanceOf[js.Any], glTypeSize = glTypeSize.asInstanceOf[js.Any], isInvalid = isInvalid.asInstanceOf[js.Any], loadType = loadType.asInstanceOf[js.Any], numberOfArrayElements = numberOfArrayElements.asInstanceOf[js.Any], numberOfFaces = numberOfFaces.asInstanceOf[js.Any], numberOfMipmapLevels = numberOfMipmapLevels.asInstanceOf[js.Any], pixelDepth = pixelDepth.asInstanceOf[js.Any], pixelHeight = pixelHeight.asInstanceOf[js.Any], pixelWidth = pixelWidth.asInstanceOf[js.Any], uploadLevels = js.Any.fromFunction2(uploadLevels))
+    __obj.asInstanceOf[KhronosTextureContainer]
+  }
 }
 

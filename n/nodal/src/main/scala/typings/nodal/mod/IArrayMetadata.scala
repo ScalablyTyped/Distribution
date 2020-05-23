@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IArrayMetadata
-  extends /* other */ StringDictionary[js.Any] {
+  extends /* item */ StringDictionary[js.Any] {
   var offset: js.UndefOr[Double] = js.undefined
   var total: js.UndefOr[Double] = js.undefined
 }
@@ -14,14 +14,14 @@ trait IArrayMetadata
 object IArrayMetadata {
   @scala.inline
   def apply(
-    StringDictionary: /* other */ StringDictionary[js.Any] = null,
-    offset: Int | Double = null,
-    total: Int | Double = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    offset: js.UndefOr[Double] = js.undefined,
+    total: js.UndefOr[Double] = js.undefined
   ): IArrayMetadata = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IArrayMetadata]
   }
 }

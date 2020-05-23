@@ -25,20 +25,22 @@ trait IConsensusBlock extends js.Object {
 object IConsensusBlock {
   @scala.inline
   def apply(
-    blockId: Uint8Array = null,
-    blockNum: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = null,
-    payload: Uint8Array = null,
-    previousId: Uint8Array = null,
-    signerId: Uint8Array = null,
-    summary: Uint8Array = null
+    blockId: js.UndefOr[Null | Uint8Array] = js.undefined,
+    blockNum: js.UndefOr[
+      Null | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+    ] = js.undefined,
+    payload: js.UndefOr[Null | Uint8Array] = js.undefined,
+    previousId: js.UndefOr[Null | Uint8Array] = js.undefined,
+    signerId: js.UndefOr[Null | Uint8Array] = js.undefined,
+    summary: js.UndefOr[Null | Uint8Array] = js.undefined
   ): IConsensusBlock = {
     val __obj = js.Dynamic.literal()
-    if (blockId != null) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
-    if (blockNum != null) __obj.updateDynamic("blockNum")(blockNum.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (previousId != null) __obj.updateDynamic("previousId")(previousId.asInstanceOf[js.Any])
-    if (signerId != null) __obj.updateDynamic("signerId")(signerId.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockId)) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockNum)) __obj.updateDynamic("blockNum")(blockNum.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(previousId)) __obj.updateDynamic("previousId")(previousId.asInstanceOf[js.Any])
+    if (!js.isUndefined(signerId)) __obj.updateDynamic("signerId")(signerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(summary)) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsensusBlock]
   }
 }

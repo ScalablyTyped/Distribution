@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.tableBodyCellsMod
 
 import typings.blueprintjsCore.mod.AbstractComponent2
-import typings.blueprintjsTable.AnonRenderMode
+import typings.blueprintjsTable.anon.RenderMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,6 +34,6 @@ class TableBodyCells ()
 @js.native
 object TableBodyCells extends js.Object {
   var cellReactKey: js.Any = js.native
-  var defaultProps: AnonRenderMode = js.native
+  var defaultProps: RenderMode = js.native
 }
 

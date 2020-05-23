@@ -20,7 +20,9 @@ trait AndroidApp extends js.Object {
     * @return A promise that resolves when the given certificate
     *     has been added to the Android app.
     */
-  def addShaCertificate(certificateToAdd: ShaCertificate): js.Promise[Unit]
+  def addShaCertificate(
+    certificateToAdd: typings.firebaseAdmin.projectManagementMod.admin.projectManagement.ShaCertificate
+  ): js.Promise[Unit]
   /**
     * Deletes the specified SHA certificate from this Android app.
     *
@@ -29,7 +31,9 @@ trait AndroidApp extends js.Object {
     * @return A promise that resolves when the specified
     *     certificate has been removed from the Android app.
     */
-  def deleteShaCertificate(certificateToRemove: ShaCertificate): js.Promise[Unit]
+  def deleteShaCertificate(
+    certificateToRemove: typings.firebaseAdmin.projectManagementMod.admin.projectManagement.ShaCertificate
+  ): js.Promise[Unit]
   /**
     * Gets the configuration artifact associated with this app.
     *
@@ -44,14 +48,20 @@ trait AndroidApp extends js.Object {
     *
     * @return A promise that resolves to the retrieved metadata about this Android app.
     */
-  def getMetadata(): js.Promise[AndroidAppMetadata]
+  def getMetadata(): js.Promise[
+    typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AndroidAppMetadata
+  ]
   /**
     * Gets the list of SHA certificates associated with this Android app in Firebase.
     *
     * @return The list of SHA-1 and SHA-256 certificates associated with this Android app in
     *     Firebase.
     */
-  def getShaCertificates(): js.Promise[js.Array[ShaCertificate]]
+  def getShaCertificates(): js.Promise[
+    js.Array[
+      typings.firebaseAdmin.projectManagementMod.admin.projectManagement.ShaCertificate
+    ]
+  ]
   /**
     * Sets the optional user-assigned display name of the app.
     *
@@ -65,12 +75,18 @@ trait AndroidApp extends js.Object {
 object AndroidApp {
   @scala.inline
   def apply(
-    addShaCertificate: ShaCertificate => js.Promise[Unit],
+    addShaCertificate: typings.firebaseAdmin.projectManagementMod.admin.projectManagement.ShaCertificate => js.Promise[Unit],
     appId: String,
-    deleteShaCertificate: ShaCertificate => js.Promise[Unit],
+    deleteShaCertificate: typings.firebaseAdmin.projectManagementMod.admin.projectManagement.ShaCertificate => js.Promise[Unit],
     getConfig: () => js.Promise[String],
-    getMetadata: () => js.Promise[AndroidAppMetadata],
-    getShaCertificates: () => js.Promise[js.Array[ShaCertificate]],
+    getMetadata: () => js.Promise[
+      typings.firebaseAdmin.projectManagementMod.admin.projectManagement.AndroidAppMetadata
+    ],
+    getShaCertificates: () => js.Promise[
+      js.Array[
+        typings.firebaseAdmin.projectManagementMod.admin.projectManagement.ShaCertificate
+      ]
+    ],
     setDisplayName: String => js.Promise[Unit]
   ): AndroidApp = {
     val __obj = js.Dynamic.literal(addShaCertificate = js.Any.fromFunction1(addShaCertificate), appId = appId.asInstanceOf[js.Any], deleteShaCertificate = js.Any.fromFunction1(deleteShaCertificate), getConfig = js.Any.fromFunction0(getConfig), getMetadata = js.Any.fromFunction0(getMetadata), getShaCertificates = js.Any.fromFunction0(getShaCertificates), setDisplayName = js.Any.fromFunction1(setDisplayName))

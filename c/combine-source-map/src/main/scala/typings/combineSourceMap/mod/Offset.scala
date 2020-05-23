@@ -12,10 +12,10 @@ trait Offset extends js.Object {
 
 object Offset {
   @scala.inline
-  def apply(column: Int | Double = null, line: Int | Double = null): Offset = {
+  def apply(column: js.UndefOr[Double] = js.undefined, line: js.UndefOr[Double] = js.undefined): Offset = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Offset]
   }
 }

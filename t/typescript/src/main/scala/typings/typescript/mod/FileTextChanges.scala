@@ -18,7 +18,7 @@ object FileTextChanges {
     isNewFile: js.UndefOr[Boolean] = js.undefined
   ): FileTextChanges = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], textChanges = textChanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNewFile)) __obj.updateDynamic("isNewFile")(isNewFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNewFile)) __obj.updateDynamic("isNewFile")(isNewFile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileTextChanges]
   }
 }

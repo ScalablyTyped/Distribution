@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.getBreadcrumbPropsMod
 
-import typings.antDesignProLayout.PickanyroutesitemRender
+import typings.antDesignProLayout.anon.PickanyroutesitemRender
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

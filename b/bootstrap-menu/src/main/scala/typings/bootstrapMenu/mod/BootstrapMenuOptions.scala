@@ -1,7 +1,7 @@
 package typings.bootstrapMenu.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jquery.JQuery_
+import typings.jquery.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait BootstrapMenuOptions extends js.Object {
   /**
     * Obtain specific data about the currently opened element, to pass it to the rest of user-defined functions of an action.
     */
-  var fetchElementData: js.UndefOr[js.Function1[/* jqueryElement */ JQuery_[HTMLElement], BootstrapMenuRowElement]] = js.undefined
+  var fetchElementData: js.UndefOr[js.Function1[/* jqueryElement */ JQuery[HTMLElement], BootstrapMenuRowElement]] = js.undefined
   /**
     * The event to listen to open the menu. Valid values are *click*, *right-click*, *hover*. Defaults to *right-click*.
     */
@@ -62,7 +62,7 @@ object BootstrapMenuOptions {
     _actionSelectEvent: String = null,
     actionsGroups: js.Array[js.Array[String]] = null,
     container: String = null,
-    fetchElementData: /* jqueryElement */ JQuery_[HTMLElement] => BootstrapMenuRowElement = null,
+    fetchElementData: /* jqueryElement */ JQuery[HTMLElement] => BootstrapMenuRowElement = null,
     menuEvent: BootstrapMenuEvent = null,
     menuPosition: BootstrapMenuPosition = null,
     menuSource: BootstrapMenuSource = null,

@@ -42,13 +42,13 @@ object EurekaInstanceConfig {
     vipAddress: String,
     actionType: ActionType = null,
     appGroupName: String = null,
-    countryId: Int | Double = null,
+    countryId: js.UndefOr[Double] = js.undefined,
     healthCheckUrl: String = null,
     homePageUrl: String = null,
     instanceId: String = null,
     isCoordinatingDiscoveryServer: js.UndefOr[Boolean] = js.undefined,
-    lastDirtyTimestamp: Int | Double = null,
-    lastUpdatedTimestamp: Int | Double = null,
+    lastDirtyTimestamp: js.UndefOr[Double] = js.undefined,
+    lastUpdatedTimestamp: js.UndefOr[Double] = js.undefined,
     leaseInfo: LeaseInfo = null,
     metadata: StringDictionary[String] = null,
     overriddenstatus: InstanceStatus = null,
@@ -63,13 +63,13 @@ object EurekaInstanceConfig {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], dataCenterInfo = dataCenterInfo.asInstanceOf[js.Any], hostName = hostName.asInstanceOf[js.Any], ipAddr = ipAddr.asInstanceOf[js.Any], vipAddress = vipAddress.asInstanceOf[js.Any])
     if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
     if (appGroupName != null) __obj.updateDynamic("appGroupName")(appGroupName.asInstanceOf[js.Any])
-    if (countryId != null) __obj.updateDynamic("countryId")(countryId.asInstanceOf[js.Any])
+    if (!js.isUndefined(countryId)) __obj.updateDynamic("countryId")(countryId.get.asInstanceOf[js.Any])
     if (healthCheckUrl != null) __obj.updateDynamic("healthCheckUrl")(healthCheckUrl.asInstanceOf[js.Any])
     if (homePageUrl != null) __obj.updateDynamic("homePageUrl")(homePageUrl.asInstanceOf[js.Any])
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCoordinatingDiscoveryServer)) __obj.updateDynamic("isCoordinatingDiscoveryServer")(isCoordinatingDiscoveryServer.asInstanceOf[js.Any])
-    if (lastDirtyTimestamp != null) __obj.updateDynamic("lastDirtyTimestamp")(lastDirtyTimestamp.asInstanceOf[js.Any])
-    if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCoordinatingDiscoveryServer)) __obj.updateDynamic("isCoordinatingDiscoveryServer")(isCoordinatingDiscoveryServer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastDirtyTimestamp)) __obj.updateDynamic("lastDirtyTimestamp")(lastDirtyTimestamp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastUpdatedTimestamp)) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp.get.asInstanceOf[js.Any])
     if (leaseInfo != null) __obj.updateDynamic("leaseInfo")(leaseInfo.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (overriddenstatus != null) __obj.updateDynamic("overriddenstatus")(overriddenstatus.asInstanceOf[js.Any])

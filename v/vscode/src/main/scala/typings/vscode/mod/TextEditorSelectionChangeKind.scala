@@ -12,20 +12,20 @@ sealed trait TextEditorSelectionChangeKind extends js.Object
 @js.native
 object TextEditorSelectionChangeKind extends js.Object {
   /**
-  		 * Selection changed because a command ran.
-  		 */
+    * Selection changed because a command ran.
+    */
   @js.native
   sealed trait Command extends TextEditorSelectionChangeKind
   
   /**
-  		 * Selection changed due to typing in the editor.
-  		 */
+    * Selection changed due to typing in the editor.
+    */
   @js.native
   sealed trait Keyboard extends TextEditorSelectionChangeKind
   
   /**
-  		 * Selection change due to clicking in the editor.
-  		 */
+    * Selection change due to clicking in the editor.
+    */
   @js.native
   sealed trait Mouse extends TextEditorSelectionChangeKind
   

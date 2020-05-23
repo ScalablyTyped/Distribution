@@ -26,8 +26,8 @@ object ITrendProps {
   ): ITrendProps = {
     val __obj = js.Dynamic.literal(flag = flag.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorful)) __obj.updateDynamic("colorful")(colorful.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseColor)) __obj.updateDynamic("reverseColor")(reverseColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorful)) __obj.updateDynamic("colorful")(colorful.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseColor)) __obj.updateDynamic("reverseColor")(reverseColor.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITrendProps]
   }

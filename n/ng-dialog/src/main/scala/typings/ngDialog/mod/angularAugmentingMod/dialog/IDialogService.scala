@@ -14,10 +14,10 @@ trait IDialogService extends js.Object {
   def getDefaults(): IDialogOptions = js.native
   def getOpenDialogs(): js.Array[String] = js.native
   /**
-  			 * Determine whether the specified dialog is open or not.
-  			 * @param id Dialog id to check for.
-  			 * @returns {boolean} Indicating whether it exists or not.
-  			 */
+    * Determine whether the specified dialog is open or not.
+    * @param id Dialog id to check for.
+    * @returns {boolean} Indicating whether it exists or not.
+    */
   def isOpen(id: String): Boolean = js.native
   def open(options: IDialogOpenOptions): IDialogOpenResult = js.native
   def openConfirm(options: IDialogOpenConfirmOptions): IPromise[_] = js.native

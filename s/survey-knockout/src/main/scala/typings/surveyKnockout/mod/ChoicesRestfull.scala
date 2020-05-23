@@ -1,6 +1,6 @@
 package typings.surveyKnockout.mod
 
-import typings.surveyKnockout.AnonRequest
+import typings.surveyKnockout.anon.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,6 +44,6 @@ class ChoicesRestfull () extends Base {
 object ChoicesRestfull extends js.Object {
   var EncodeParameters: Boolean = js.native
   def clearCache(): Unit = js.native
-  def onBeforeSendRequest(sender: ChoicesRestfull, options: AnonRequest): Unit = js.native
+  def onBeforeSendRequest(sender: ChoicesRestfull, options: Request): Unit = js.native
 }
 

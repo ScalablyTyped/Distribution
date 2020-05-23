@@ -28,9 +28,9 @@ object Post {
     excerpt: String = null,
     link: String = null,
     more: String = null,
-    next: Page = null,
+    next: js.UndefOr[Null | Page] = js.undefined,
     photos: js.Array[String] = null,
-    prev: Page = null,
+    prev: js.UndefOr[Null | Page] = js.undefined,
     published: js.UndefOr[Boolean] = js.undefined,
     raw: String = null,
     updated: Moment = null
@@ -40,10 +40,10 @@ object Post {
     if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (more != null) __obj.updateDynamic("more")(more.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (!js.isUndefined(next)) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
-    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
-    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (!js.isUndefined(prev)) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.get.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Post]

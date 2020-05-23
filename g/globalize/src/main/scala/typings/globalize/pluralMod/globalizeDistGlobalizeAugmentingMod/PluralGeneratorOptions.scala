@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait PluralGeneratorOptions extends js.Object {
   /**
-  		 * cardinal (default), or ordinal.
-  		 */
+    * cardinal (default), or ordinal.
+    */
   var `type`: js.UndefOr[cardinal | ordinal] = js.undefined
 }
 

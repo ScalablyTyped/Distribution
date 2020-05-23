@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.PdfViewer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,35 +45,6 @@ object ToolbarItems extends js.Object {
   ///Shows only text search tool in the toolbar.
   @js.native
   sealed trait TextSearchTool extends ToolbarItems
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ToolbarItems with Double] = js.native
-  /* 8 */ @js.native
-  object All extends TopLevel[All with Double]
-  
-  /* 3 */ @js.native
-  object DownloadTool extends TopLevel[DownloadTool with Double]
-  
-  /* 0 */ @js.native
-  object MagnificationTools extends TopLevel[MagnificationTools with Double]
-  
-  /* 1 */ @js.native
-  object PageNavigationTools extends TopLevel[PageNavigationTools with Double]
-  
-  /* 2 */ @js.native
-  object PrintTools extends TopLevel[PrintTools with Double]
-  
-  /* 7 */ @js.native
-  object SelectionTool extends TopLevel[SelectionTool with Double]
-  
-  /* 6 */ @js.native
-  object SignatureTool extends TopLevel[SignatureTool with Double]
-  
-  /* 5 */ @js.native
-  object TextMarkupAnnotationTools extends TopLevel[TextMarkupAnnotationTools with Double]
-  
-  /* 4 */ @js.native
-  object TextSearchTool extends TopLevel[TextSearchTool with Double]
   
 }
 

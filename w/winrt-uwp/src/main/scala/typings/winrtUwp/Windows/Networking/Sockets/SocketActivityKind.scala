@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object SocketActivityKind extends js.Object {
   /** A socket type of StreamSocketListener . */
   @js.native
   sealed trait streamSocketListener extends SocketActivityKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocketActivityKind with Double] = js.native
-  /* 2 */ @js.native
-  object datagramSocket extends TopLevel[datagramSocket with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object streamSocket extends TopLevel[streamSocket with Double]
-  
-  /* 1 */ @js.native
-  object streamSocketListener extends TopLevel[streamSocketListener with Double]
   
 }
 

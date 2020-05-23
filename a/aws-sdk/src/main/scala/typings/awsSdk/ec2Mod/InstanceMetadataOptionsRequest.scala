@@ -24,12 +24,12 @@ object InstanceMetadataOptionsRequest {
   @scala.inline
   def apply(
     HttpEndpoint: InstanceMetadataEndpointState = null,
-    HttpPutResponseHopLimit: Int | scala.Double = null,
+    HttpPutResponseHopLimit: js.UndefOr[Integer] = js.undefined,
     HttpTokens: HttpTokensState = null
   ): InstanceMetadataOptionsRequest = {
     val __obj = js.Dynamic.literal()
     if (HttpEndpoint != null) __obj.updateDynamic("HttpEndpoint")(HttpEndpoint.asInstanceOf[js.Any])
-    if (HttpPutResponseHopLimit != null) __obj.updateDynamic("HttpPutResponseHopLimit")(HttpPutResponseHopLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(HttpPutResponseHopLimit)) __obj.updateDynamic("HttpPutResponseHopLimit")(HttpPutResponseHopLimit.get.asInstanceOf[js.Any])
     if (HttpTokens != null) __obj.updateDynamic("HttpTokens")(HttpTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceMetadataOptionsRequest]
   }

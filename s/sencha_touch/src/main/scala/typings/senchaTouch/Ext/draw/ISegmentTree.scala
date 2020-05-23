@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 
 trait ISegmentTree extends IBase {
   /** [Method] Returns the minimum range of data that fits the given range and step size
-  		* @param min Number
-  		* @param max Number
-  		* @param estStep Number
-  		* @returns Object The aggregation information.
-  		*/
+    * @param min Number
+    * @param max Number
+    * @param estStep Number
+    * @returns Object The aggregation information.
+    */
   var getAggregation: js.UndefOr[
     js.Function3[
       /* min */ js.UndefOr[Double], 
@@ -23,16 +23,16 @@ trait ISegmentTree extends IBase {
     ]
   ] = js.undefined
   /** [Method] Returns the value of strategy
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getStrategy: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the data of the segment tree
-  		* @param dataX Number
-  		* @param dataOpen Number
-  		* @param dataHigh Number
-  		* @param dataLow Number
-  		* @param dataClose Number
-  		*/
+    * @param dataX Number
+    * @param dataOpen Number
+    * @param dataHigh Number
+    * @param dataLow Number
+    * @param dataClose Number
+    */
   var setData: js.UndefOr[
     js.Function5[
       /* dataX */ js.UndefOr[Double], 
@@ -44,8 +44,8 @@ trait ISegmentTree extends IBase {
     ]
   ] = js.undefined
   /** [Method] Sets the value of strategy
-  		* @param strategy String The new value.
-  		*/
+    * @param strategy String The new value.
+    */
   var setStrategy: js.UndefOr[js.Function1[/* strategy */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -93,7 +93,7 @@ object ISegmentTree {
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction5(setData))
     if (setStrategy != null) __obj.updateDynamic("setStrategy")(js.Any.fromFunction1(setStrategy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISegmentTree]

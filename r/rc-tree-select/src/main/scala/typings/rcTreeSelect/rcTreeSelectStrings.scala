@@ -1,22 +1,12 @@
 package typings.rcTreeSelect
 
 import typings.rcTreeSelect.interfaceMod.SelectSource
-import typings.rcTreeSelect.strategyUtilMod.CheckedStrategy
 import typings.rcTreeSelect.useKeyValueMappingMod._SkipType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object rcTreeSelectStrings {
-  @js.native
-  sealed trait SHOW_ALL extends CheckedStrategy
-  
-  @js.native
-  sealed trait SHOW_CHILD extends CheckedStrategy
-  
-  @js.native
-  sealed trait SHOW_PARENT extends CheckedStrategy
-  
   @js.native
   sealed trait checkbox extends _SkipType
   
@@ -35,12 +25,6 @@ object rcTreeSelectStrings {
   @js.native
   sealed trait selection extends SelectSource
   
-  @scala.inline
-  def SHOW_ALL: SHOW_ALL = "SHOW_ALL".asInstanceOf[SHOW_ALL]
-  @scala.inline
-  def SHOW_CHILD: SHOW_CHILD = "SHOW_CHILD".asInstanceOf[SHOW_CHILD]
-  @scala.inline
-  def SHOW_PARENT: SHOW_PARENT = "SHOW_PARENT".asInstanceOf[SHOW_PARENT]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline

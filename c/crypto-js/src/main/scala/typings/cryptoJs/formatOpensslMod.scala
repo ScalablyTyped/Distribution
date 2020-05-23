@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatOpensslMod
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof format.OpenSSL */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mode.CFB */ js.Any
     ]
 

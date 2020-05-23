@@ -24,10 +24,10 @@ object CalendarDayData {
     size: Double,
     x: Double,
     y: Double,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): CalendarDayData = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarDayData]
   }
 }

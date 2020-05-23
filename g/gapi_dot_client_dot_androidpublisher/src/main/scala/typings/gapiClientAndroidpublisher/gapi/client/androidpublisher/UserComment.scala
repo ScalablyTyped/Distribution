@@ -40,32 +40,32 @@ trait UserComment extends js.Object {
 object UserComment {
   @scala.inline
   def apply(
-    androidOsVersion: Int | Double = null,
-    appVersionCode: Int | Double = null,
+    androidOsVersion: js.UndefOr[Double] = js.undefined,
+    appVersionCode: js.UndefOr[Double] = js.undefined,
     appVersionName: String = null,
     device: String = null,
     deviceMetadata: DeviceMetadata = null,
     lastModified: Timestamp = null,
     originalText: String = null,
     reviewerLanguage: String = null,
-    starRating: Int | Double = null,
+    starRating: js.UndefOr[Double] = js.undefined,
     text: String = null,
-    thumbsDownCount: Int | Double = null,
-    thumbsUpCount: Int | Double = null
+    thumbsDownCount: js.UndefOr[Double] = js.undefined,
+    thumbsUpCount: js.UndefOr[Double] = js.undefined
   ): UserComment = {
     val __obj = js.Dynamic.literal()
-    if (androidOsVersion != null) __obj.updateDynamic("androidOsVersion")(androidOsVersion.asInstanceOf[js.Any])
-    if (appVersionCode != null) __obj.updateDynamic("appVersionCode")(appVersionCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidOsVersion)) __obj.updateDynamic("androidOsVersion")(androidOsVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appVersionCode)) __obj.updateDynamic("appVersionCode")(appVersionCode.get.asInstanceOf[js.Any])
     if (appVersionName != null) __obj.updateDynamic("appVersionName")(appVersionName.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata.asInstanceOf[js.Any])
     if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
     if (originalText != null) __obj.updateDynamic("originalText")(originalText.asInstanceOf[js.Any])
     if (reviewerLanguage != null) __obj.updateDynamic("reviewerLanguage")(reviewerLanguage.asInstanceOf[js.Any])
-    if (starRating != null) __obj.updateDynamic("starRating")(starRating.asInstanceOf[js.Any])
+    if (!js.isUndefined(starRating)) __obj.updateDynamic("starRating")(starRating.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (thumbsDownCount != null) __obj.updateDynamic("thumbsDownCount")(thumbsDownCount.asInstanceOf[js.Any])
-    if (thumbsUpCount != null) __obj.updateDynamic("thumbsUpCount")(thumbsUpCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbsDownCount)) __obj.updateDynamic("thumbsDownCount")(thumbsDownCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbsUpCount)) __obj.updateDynamic("thumbsUpCount")(thumbsUpCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserComment]
   }
 }

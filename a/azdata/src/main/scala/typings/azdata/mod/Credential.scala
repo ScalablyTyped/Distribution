@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait Credential extends js.Object {
   /**
-  		 * Unique ID identifying the credential
-  		 */
+    * Unique ID identifying the credential
+    */
   var credentialId: String
   /**
-  		 * password
-  		 */
+    * password
+    */
   var password: String
 }
 

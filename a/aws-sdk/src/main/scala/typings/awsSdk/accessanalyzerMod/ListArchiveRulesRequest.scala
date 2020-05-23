@@ -22,9 +22,9 @@ trait ListArchiveRulesRequest extends js.Object {
 
 object ListArchiveRulesRequest {
   @scala.inline
-  def apply(analyzerName: Name, maxResults: Int | Double = null, nextToken: Token = null): ListArchiveRulesRequest = {
+  def apply(analyzerName: Name, maxResults: js.UndefOr[Integer] = js.undefined, nextToken: Token = null): ListArchiveRulesRequest = {
     val __obj = js.Dynamic.literal(analyzerName = analyzerName.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListArchiveRulesRequest]
   }

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait IgZoomSliderMethods extends js.Object {
   /**
-  	 * Destroys widget.
-  	 */
+    * Destroys widget.
+    */
   def destroy(): Unit
   /**
-  	 * Flushes the gauge.
-  	 */
+    * Flushes the gauge.
+    */
   def flush(): Unit
   def notifySizeChanged(): Unit
 }

@@ -1,7 +1,7 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonDictk
+import typings.wordpressApiFetch.anon.Dictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +28,8 @@ trait BaseUser[T /* <: Context */] extends BaseResponse {
 
 object BaseUser {
   @scala.inline
-  def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
+  def apply[T](
+    _links: Record[String, js.Array[Dictk]],
     avatar_urls: Record[Double, String],
     capabilities: Record[String, Boolean],
     description: String,

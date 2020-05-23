@@ -94,7 +94,7 @@ trait ISearchProvider[T /* <: Widget */] extends js.Object {
 
 object ISearchProvider {
   @scala.inline
-  def apply[T /* <: Widget */](
+  def apply[T](
     changed: ISignal[ISearchProvider[T], Unit],
     endQuery: () => js.Promise[Unit],
     endSearch: () => js.Promise[Unit],
@@ -106,12 +106,11 @@ object ISearchProvider {
     replaceAllMatches: String => js.Promise[Boolean],
     replaceCurrentMatch: String => js.Promise[Boolean],
     startQuery: (RegExp, T, IFiltersType) => js.Promise[js.Array[ISearchMatch]],
-    currentMatchIndex: Int | Double = null,
+    currentMatchIndex: Double = null.asInstanceOf[Double],
     hasOutputs: js.UndefOr[Boolean] = js.undefined
   ): ISearchProvider[T] = {
-    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], endQuery = js.Any.fromFunction0(endQuery), endSearch = js.Any.fromFunction0(endSearch), getInitialQuery = js.Any.fromFunction1(getInitialQuery), highlightNext = js.Any.fromFunction0(highlightNext), highlightPrevious = js.Any.fromFunction0(highlightPrevious), isReadOnly = isReadOnly.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], replaceAllMatches = js.Any.fromFunction1(replaceAllMatches), replaceCurrentMatch = js.Any.fromFunction1(replaceCurrentMatch), startQuery = js.Any.fromFunction3(startQuery))
-    if (currentMatchIndex != null) __obj.updateDynamic("currentMatchIndex")(currentMatchIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasOutputs)) __obj.updateDynamic("hasOutputs")(hasOutputs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], endQuery = js.Any.fromFunction0(endQuery), endSearch = js.Any.fromFunction0(endSearch), getInitialQuery = js.Any.fromFunction1(getInitialQuery), highlightNext = js.Any.fromFunction0(highlightNext), highlightPrevious = js.Any.fromFunction0(highlightPrevious), isReadOnly = isReadOnly.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], replaceAllMatches = js.Any.fromFunction1(replaceAllMatches), replaceCurrentMatch = js.Any.fromFunction1(replaceCurrentMatch), startQuery = js.Any.fromFunction3(startQuery), currentMatchIndex = currentMatchIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasOutputs)) __obj.updateDynamic("hasOutputs")(hasOutputs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchProvider[T]]
   }
 }

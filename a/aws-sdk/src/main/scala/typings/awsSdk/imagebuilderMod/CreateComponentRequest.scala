@@ -39,6 +39,10 @@ trait CreateComponentRequest extends js.Object {
     */
   var semanticVersion: VersionNumber = js.native
   /**
+    *  The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the parent image OS version during image recipe creation. 
+    */
+  var supportedOsVersions: js.UndefOr[OsVersionList] = js.native
+  /**
     * The tags of the component.
     */
   var tags: js.UndefOr[TagMap] = js.native
@@ -59,6 +63,7 @@ object CreateComponentRequest {
     data: InlineComponentData = null,
     description: NonEmptyString = null,
     kmsKeyId: NonEmptyString = null,
+    supportedOsVersions: OsVersionList = null,
     tags: TagMap = null,
     uri: Uri = null
   ): CreateComponentRequest = {
@@ -67,6 +72,7 @@ object CreateComponentRequest {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (supportedOsVersions != null) __obj.updateDynamic("supportedOsVersions")(supportedOsVersions.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateComponentRequest]

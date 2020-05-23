@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.RelatedField")
 @js.native
-class RelatedField () extends ClientObject {
+trait RelatedField extends ClientObject {
   def get_fieldId(): Guid = js.native
   def get_listId(): Guid = js.native
   def get_lookupList(): List[_] = js.native

@@ -1,21 +1,20 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonAction
-import typings.devextreme.AnonAddedItems
-import typings.devextreme.AnonComponentDxList
-import typings.devextreme.AnonComponentElement
-import typings.devextreme.AnonComponentElementItemData
-import typings.devextreme.AnonDirection
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementItemData
-import typings.devextreme.AnonGroupData
-import typings.devextreme.AnonItemElement
-import typings.devextreme.AnonItemIndexJQueryEvent
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonModelValue
-import typings.devextreme.AnonName
-import typings.devextreme.AnonReachedBottom
-import typings.devextreme.AnonToIndex
+import typings.devextreme.anon.Action
+import typings.devextreme.anon.AddedItems
+import typings.devextreme.anon.ComponentDxList
+import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.ComponentElementItemData
+import typings.devextreme.anon.Direction
+import typings.devextreme.anon.ElementItemData
+import typings.devextreme.anon.GroupData
+import typings.devextreme.anon.ItemElement
+import typings.devextreme.anon.ItemIndexJQueryEvent
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.ModelValue
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.ReachedBottom
+import typings.devextreme.anon.ToIndex
 import typings.devextreme.devextremeStrings.all
 import typings.devextreme.devextremeStrings.allPages
 import typings.devextreme.devextremeStrings.always
@@ -41,7 +40,7 @@ import typings.devextreme.devextremeStrings.toggle
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -85,38 +84,38 @@ trait dxListOptions
   @JSName("items")
   var items_dxListOptions: js.UndefOr[js.Array[String | dxListItem | _]] = js.undefined
   /** @name dxList.Options.menuItems */
-  var menuItems: js.UndefOr[js.Array[AnonAction]] = js.undefined
+  var menuItems: js.UndefOr[js.Array[Action]] = js.undefined
   /** @name dxList.Options.menuMode */
   var menuMode: js.UndefOr[context | slide] = js.undefined
   /** @name dxList.Options.nextButtonText */
   var nextButtonText: js.UndefOr[String] = js.undefined
   /** @name dxList.Options.onGroupRendered */
-  var onGroupRendered: js.UndefOr[js.Function1[/* e */ AnonGroupData, _]] = js.undefined
+  var onGroupRendered: js.UndefOr[js.Function1[/* e */ GroupData, _]] = js.undefined
   /** @name dxList.Options.onItemClick */
   @JSName("onItemClick")
-  var onItemClick_dxListOptions: js.UndefOr[(js.Function1[/* e */ AnonItemIndexJQueryEvent, _]) | String] = js.undefined
+  var onItemClick_dxListOptions: js.UndefOr[(js.Function1[/* e */ ItemIndexJQueryEvent, _]) | String] = js.undefined
   /** @name dxList.Options.onItemContextMenu */
   @JSName("onItemContextMenu")
-  var onItemContextMenu_dxListOptions: js.UndefOr[js.Function1[/* e */ AnonItemIndexJQueryEvent, _]] = js.undefined
+  var onItemContextMenu_dxListOptions: js.UndefOr[js.Function1[/* e */ ItemIndexJQueryEvent, _]] = js.undefined
   /** @name dxList.Options.onItemDeleted */
-  var onItemDeleted: js.UndefOr[js.Function1[/* e */ AnonElementItemData, _]] = js.undefined
+  var onItemDeleted: js.UndefOr[js.Function1[/* e */ ElementItemData, _]] = js.undefined
   /** @name dxList.Options.onItemDeleting */
-  var onItemDeleting: js.UndefOr[js.Function1[/* e */ AnonComponentElementItemData, _]] = js.undefined
+  var onItemDeleting: js.UndefOr[js.Function1[/* e */ ComponentElementItemData, _]] = js.undefined
   /** @name dxList.Options.onItemHold */
   @JSName("onItemHold")
-  var onItemHold_dxListOptions: js.UndefOr[js.Function1[/* e */ AnonItemIndexJQueryEvent, _]] = js.undefined
+  var onItemHold_dxListOptions: js.UndefOr[js.Function1[/* e */ ItemIndexJQueryEvent, _]] = js.undefined
   /** @name dxList.Options.onItemReordered */
-  var onItemReordered: js.UndefOr[js.Function1[/* e */ AnonToIndex, _]] = js.undefined
+  var onItemReordered: js.UndefOr[js.Function1[/* e */ ToIndex, _]] = js.undefined
   /** @name dxList.Options.onItemSwipe */
-  var onItemSwipe: js.UndefOr[js.Function1[/* e */ AnonDirection, _]] = js.undefined
+  var onItemSwipe: js.UndefOr[js.Function1[/* e */ Direction, _]] = js.undefined
   /** @name dxList.Options.onPageLoading */
-  var onPageLoading: js.UndefOr[js.Function1[/* e */ AnonComponentDxList, _]] = js.undefined
+  var onPageLoading: js.UndefOr[js.Function1[/* e */ ComponentDxList, _]] = js.undefined
   /** @name dxList.Options.onPullRefresh */
-  var onPullRefresh: js.UndefOr[js.Function1[/* e */ AnonComponentDxList, _]] = js.undefined
+  var onPullRefresh: js.UndefOr[js.Function1[/* e */ ComponentDxList, _]] = js.undefined
   /** @name dxList.Options.onScroll */
-  var onScroll: js.UndefOr[js.Function1[/* e */ AnonReachedBottom, _]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* e */ ReachedBottom, _]] = js.undefined
   /** @name dxList.Options.onSelectAllValueChanged */
-  var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ AnonModelValue, _]] = js.undefined
+  var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ ModelValue, _]] = js.undefined
   /** @name dxList.Options.pageLoadMode */
   var pageLoadMode: js.UndefOr[nextButton | scrollBottom] = js.undefined
   /** @name dxList.Options.pageLoadingText */
@@ -177,7 +176,7 @@ object dxListOptions {
     indicateLoading: js.UndefOr[Boolean] = js.undefined,
     itemDeleteMode: context | slideButton | slideItem | static | swipe | toggle = null,
     itemDragging: dxSortableOptions = null,
-    itemHoldTimeout: Int | Double = null,
+    itemHoldTimeout: js.UndefOr[Double] = js.undefined,
     itemTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
       /* itemIndex */ Double, 
@@ -186,28 +185,28 @@ object dxListOptions {
     ]) = null,
     items: js.Array[String | dxListItem | _] = null,
     keyExpr: String | js.Function = null,
-    menuItems: js.Array[AnonAction] = null,
+    menuItems: js.Array[Action] = null,
     menuMode: context | slide = null,
     nextButtonText: String = null,
     noDataText: String = null,
-    onContentReady: /* e */ AnonComponentElement[dxList] => _ = null,
-    onDisposing: /* e */ AnonModel[dxList] => _ = null,
-    onGroupRendered: /* e */ AnonGroupData => _ = null,
-    onInitialized: /* e */ AnonElement[dxList] => _ = null,
-    onItemClick: (js.Function1[/* e */ AnonItemIndexJQueryEvent, _]) | String = null,
-    onItemContextMenu: /* e */ AnonItemIndexJQueryEvent => _ = null,
-    onItemDeleted: /* e */ AnonElementItemData => _ = null,
-    onItemDeleting: /* e */ AnonComponentElementItemData => _ = null,
-    onItemHold: /* e */ AnonItemIndexJQueryEvent => _ = null,
-    onItemRendered: /* e */ AnonItemElement[dxList] => _ = null,
-    onItemReordered: /* e */ AnonToIndex => _ = null,
-    onItemSwipe: /* e */ AnonDirection => _ = null,
-    onOptionChanged: /* e */ AnonName[dxList] => _ = null,
-    onPageLoading: /* e */ AnonComponentDxList => _ = null,
-    onPullRefresh: /* e */ AnonComponentDxList => _ = null,
-    onScroll: /* e */ AnonReachedBottom => _ = null,
-    onSelectAllValueChanged: /* e */ AnonModelValue => _ = null,
-    onSelectionChanged: /* e */ AnonAddedItems[dxList] => _ = null,
+    onContentReady: /* e */ ComponentElement[dxList] => _ = null,
+    onDisposing: /* e */ Model[dxList] => _ = null,
+    onGroupRendered: /* e */ GroupData => _ = null,
+    onInitialized: /* e */ typings.devextreme.anon.Element[dxList] => _ = null,
+    onItemClick: (js.Function1[/* e */ ItemIndexJQueryEvent, _]) | String = null,
+    onItemContextMenu: /* e */ ItemIndexJQueryEvent => _ = null,
+    onItemDeleted: /* e */ ElementItemData => _ = null,
+    onItemDeleting: /* e */ ComponentElementItemData => _ = null,
+    onItemHold: /* e */ ItemIndexJQueryEvent => _ = null,
+    onItemRendered: /* e */ ItemElement[dxList] => _ = null,
+    onItemReordered: /* e */ ToIndex => _ = null,
+    onItemSwipe: /* e */ Direction => _ = null,
+    onOptionChanged: /* e */ Name[dxList] => _ = null,
+    onPageLoading: /* e */ ComponentDxList => _ = null,
+    onPullRefresh: /* e */ ComponentDxList => _ = null,
+    onScroll: /* e */ ReachedBottom => _ = null,
+    onSelectAllValueChanged: /* e */ ModelValue => _ = null,
+    onSelectionChanged: /* e */ AddedItems[dxList] => _ = null,
     pageLoadMode: nextButton | scrollBottom = null,
     pageLoadingText: String = null,
     pullRefreshEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -223,43 +222,43 @@ object dxListOptions {
     searchEnabled: js.UndefOr[Boolean] = js.undefined,
     searchExpr: String | js.Function | (js.Array[String | js.Function]) = null,
     searchMode: contains | startswith | equals = null,
-    searchTimeout: Int | Double = null,
+    searchTimeout: js.UndefOr[Double] = js.undefined,
     searchValue: String = null,
     selectAllMode: allPages | page = null,
-    selectedIndex: Int | Double = null,
+    selectedIndex: js.UndefOr[Double] = js.undefined,
     selectedItem: js.Any = null,
     selectedItemKeys: js.Array[_] = null,
     selectedItems: js.Array[_] = null,
     selectionMode: all | multiple | none | single_ = null,
     showScrollbar: always | never | onHover | onScroll = null,
     showSelectionControls: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     useNativeScrolling: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String | (js.Function0[Double | String]) = null
   ): dxListOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowItemDeleting)) __obj.updateDynamic("allowItemDeleting")(allowItemDeleting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowItemReordering)) __obj.updateDynamic("allowItemReordering")(allowItemReordering.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowItemDeleting)) __obj.updateDynamic("allowItemDeleting")(allowItemDeleting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowItemReordering)) __obj.updateDynamic("allowItemReordering")(allowItemReordering.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounceEnabled)) __obj.updateDynamic("bounceEnabled")(bounceEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsibleGroups)) __obj.updateDynamic("collapsibleGroups")(collapsibleGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(bounceEnabled)) __obj.updateDynamic("bounceEnabled")(bounceEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsibleGroups)) __obj.updateDynamic("collapsibleGroups")(collapsibleGroups.get.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayExpr != null) __obj.updateDynamic("displayExpr")(displayExpr.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
     if (groupTemplate != null) __obj.updateDynamic("groupTemplate")(groupTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped.asInstanceOf[js.Any])
+    if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(indicateLoading)) __obj.updateDynamic("indicateLoading")(indicateLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicateLoading)) __obj.updateDynamic("indicateLoading")(indicateLoading.get.asInstanceOf[js.Any])
     if (itemDeleteMode != null) __obj.updateDynamic("itemDeleteMode")(itemDeleteMode.asInstanceOf[js.Any])
     if (itemDragging != null) __obj.updateDynamic("itemDragging")(itemDragging.asInstanceOf[js.Any])
-    if (itemHoldTimeout != null) __obj.updateDynamic("itemHoldTimeout")(itemHoldTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemHoldTimeout)) __obj.updateDynamic("itemHoldTimeout")(itemHoldTimeout.get.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (keyExpr != null) __obj.updateDynamic("keyExpr")(keyExpr.asInstanceOf[js.Any])
@@ -287,32 +286,32 @@ object dxListOptions {
     if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1(onSelectionChanged))
     if (pageLoadMode != null) __obj.updateDynamic("pageLoadMode")(pageLoadMode.asInstanceOf[js.Any])
     if (pageLoadingText != null) __obj.updateDynamic("pageLoadingText")(pageLoadingText.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullRefreshEnabled)) __obj.updateDynamic("pullRefreshEnabled")(pullRefreshEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullRefreshEnabled)) __obj.updateDynamic("pullRefreshEnabled")(pullRefreshEnabled.get.asInstanceOf[js.Any])
     if (pulledDownText != null) __obj.updateDynamic("pulledDownText")(pulledDownText.asInstanceOf[js.Any])
     if (pullingDownText != null) __obj.updateDynamic("pullingDownText")(pullingDownText.asInstanceOf[js.Any])
     if (refreshingText != null) __obj.updateDynamic("refreshingText")(refreshingText.asInstanceOf[js.Any])
-    if (!js.isUndefined(repaintChangesOnly)) __obj.updateDynamic("repaintChangesOnly")(repaintChangesOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollByContent)) __obj.updateDynamic("scrollByContent")(scrollByContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollByThumb)) __obj.updateDynamic("scrollByThumb")(scrollByThumb.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollingEnabled)) __obj.updateDynamic("scrollingEnabled")(scrollingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(repaintChangesOnly)) __obj.updateDynamic("repaintChangesOnly")(repaintChangesOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollByContent)) __obj.updateDynamic("scrollByContent")(scrollByContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollByThumb)) __obj.updateDynamic("scrollByThumb")(scrollByThumb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollingEnabled)) __obj.updateDynamic("scrollingEnabled")(scrollingEnabled.get.asInstanceOf[js.Any])
     if (searchEditorOptions != null) __obj.updateDynamic("searchEditorOptions")(searchEditorOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchEnabled)) __obj.updateDynamic("searchEnabled")(searchEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchEnabled)) __obj.updateDynamic("searchEnabled")(searchEnabled.get.asInstanceOf[js.Any])
     if (searchExpr != null) __obj.updateDynamic("searchExpr")(searchExpr.asInstanceOf[js.Any])
     if (searchMode != null) __obj.updateDynamic("searchMode")(searchMode.asInstanceOf[js.Any])
-    if (searchTimeout != null) __obj.updateDynamic("searchTimeout")(searchTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchTimeout)) __obj.updateDynamic("searchTimeout")(searchTimeout.get.asInstanceOf[js.Any])
     if (searchValue != null) __obj.updateDynamic("searchValue")(searchValue.asInstanceOf[js.Any])
     if (selectAllMode != null) __obj.updateDynamic("selectAllMode")(selectAllMode.asInstanceOf[js.Any])
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     if (selectedItemKeys != null) __obj.updateDynamic("selectedItemKeys")(selectedItemKeys.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (showScrollbar != null) __obj.updateDynamic("showScrollbar")(showScrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSelectionControls)) __obj.updateDynamic("showSelectionControls")(showSelectionControls.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeScrolling)) __obj.updateDynamic("useNativeScrolling")(useNativeScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSelectionControls)) __obj.updateDynamic("showSelectionControls")(showSelectionControls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeScrolling)) __obj.updateDynamic("useNativeScrolling")(useNativeScrolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxListOptions]
   }

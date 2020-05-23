@@ -21,13 +21,13 @@ object CertificationStatus {
     examStatuses: js.Array[CertificationExamStatus] = null,
     isCertified: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null,
-    userCount: Int | Double = null
+    userCount: js.UndefOr[Double] = js.undefined
   ): CertificationStatus = {
     val __obj = js.Dynamic.literal()
     if (examStatuses != null) __obj.updateDynamic("examStatuses")(examStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCertified)) __obj.updateDynamic("isCertified")(isCertified.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCertified)) __obj.updateDynamic("isCertified")(isCertified.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (userCount != null) __obj.updateDynamic("userCount")(userCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(userCount)) __obj.updateDynamic("userCount")(userCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificationStatus]
   }
 }

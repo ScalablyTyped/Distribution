@@ -17,16 +17,16 @@ trait ThrownCall[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends Call
 
 object ThrownCall {
   @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](
+  def apply[T](
     arguments: Parameters[T],
     `throw`: js.Any,
     `type`: `throw`,
-    `this`: js.UndefOr[scala.Nothing] = js.undefined
+    `this`: js.UndefOr[This[T]] = js.undefined
   ): ThrownCall[T] = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
     __obj.updateDynamic("throw")(`throw`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`this`)) __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`this`)) __obj.updateDynamic("this")(`this`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrownCall[T]]
   }
 }

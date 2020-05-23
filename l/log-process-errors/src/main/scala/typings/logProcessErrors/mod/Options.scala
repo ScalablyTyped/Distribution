@@ -1,6 +1,6 @@
 package typings.logProcessErrors.mod
 
-import typings.logProcessErrors.PartialRecordExceptionTyp
+import typings.logProcessErrors.anon.PartialRecordExceptionTyp
 import typings.logProcessErrors.logProcessErrorsStrings.`node-tap`
 import typings.logProcessErrors.logProcessErrorsStrings.ava
 import typings.logProcessErrors.logProcessErrorsStrings.jasmine
@@ -57,7 +57,7 @@ object Options {
     testing: ava | mocha | jasmine | tape | `node-tap` = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
     if (exitOn != null) __obj.updateDynamic("exitOn")(exitOn.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))

@@ -24,11 +24,11 @@ object Options {
   def apply(
     end: Double,
     start: Double,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: (/* currentTime */ Double, /* beginningTime */ Double, /* changeInValue */ Double, /* duration */ Double) => Double = null
   ): Options = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction4(easing))
     __obj.asInstanceOf[Options]
   }

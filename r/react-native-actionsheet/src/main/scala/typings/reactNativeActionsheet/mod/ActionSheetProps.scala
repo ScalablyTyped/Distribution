@@ -19,15 +19,15 @@ object ActionSheetProps {
   def apply(
     onPress: Double => Unit,
     options: js.Array[String],
-    cancelButtonIndex: Int | Double = null,
-    destructiveButtonIndex: Int | Double = null,
+    cancelButtonIndex: js.UndefOr[Double] = js.undefined,
+    destructiveButtonIndex: js.UndefOr[Double] = js.undefined,
     message: String = null,
     tintColor: String = null,
     title: String = null
   ): ActionSheetProps = {
     val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress), options = options.asInstanceOf[js.Any])
-    if (cancelButtonIndex != null) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.asInstanceOf[js.Any])
-    if (destructiveButtonIndex != null) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelButtonIndex)) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(destructiveButtonIndex)) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

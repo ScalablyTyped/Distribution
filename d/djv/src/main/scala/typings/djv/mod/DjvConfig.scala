@@ -35,7 +35,7 @@ object DjvConfig {
     val __obj = js.Dynamic.literal()
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction0(errorHandler))
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (!js.isUndefined(inner)) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
+    if (!js.isUndefined(inner)) __obj.updateDynamic("inner")(inner.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (versionConfigure != null) __obj.updateDynamic("versionConfigure")(js.Any.fromFunction1(versionConfigure))
     __obj.asInstanceOf[DjvConfig]

@@ -18,10 +18,10 @@ trait PutParameterResult extends js.Object {
 
 object PutParameterResult {
   @scala.inline
-  def apply(Tier: ParameterTier = null, Version: Int | Double = null): PutParameterResult = {
+  def apply(Tier: ParameterTier = null, Version: js.UndefOr[PSParameterVersion] = js.undefined): PutParameterResult = {
     val __obj = js.Dynamic.literal()
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutParameterResult]
   }
 }

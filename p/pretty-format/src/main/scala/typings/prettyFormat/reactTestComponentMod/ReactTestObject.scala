@@ -18,13 +18,13 @@ object ReactTestObject {
   def apply(
     DollarDollartypeof: js.Symbol,
     `type`: String,
-    children: js.Array[ReactTestChild] = null,
+    children: js.UndefOr[Null | js.Array[ReactTestChild]] = js.undefined,
     props: Record[String, _] = null
   ): ReactTestObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactTestObject]
   }

@@ -1,8 +1,10 @@
 package typings.antd
 
+import typings.antd.anon.Cancel
+import typings.antd.anon.InsertExtraNode
 import typings.antd.antdStrings.`ant-click-animating-without-extra-node`
 import typings.antd.antdStrings.`ant-click-animating`
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.std.AnimationEvent
@@ -16,7 +18,7 @@ import scala.scalajs.js.annotation._
 object waveMod extends js.Object {
   @js.native
   trait Wave
-    extends Component[AnonInsertExtraNode, js.Object, js.Any] {
+    extends Component[InsertExtraNode, js.Object, js.Any] {
     var animationStart: js.Any = js.native
     var animationStartId: js.Any = js.native
     var clickWaveTimeoutId: js.Any = js.native
@@ -24,7 +26,7 @@ object waveMod extends js.Object {
     var destroyed: js.Any = js.native
     var extraNode: js.Any = js.native
     var instance: js.UndefOr[js.Any] = js.native
-    def bindAnimationEvent(node: HTMLElement): js.UndefOr[AnonCancel] = js.native
+    def bindAnimationEvent(node: HTMLElement): js.UndefOr[Cancel] = js.native
     @JSName("componentDidMount")
     def componentDidMount_MWave(): Unit = js.native
     @JSName("componentWillUnmount")

@@ -106,7 +106,7 @@ object InterpolationOptions {
     escapeValue: js.UndefOr[Boolean] = js.undefined,
     format: (/* value */ js.Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String]) => String = null,
     formatSeparator: String = null,
-    maxReplaces: Int | Double = null,
+    maxReplaces: js.UndefOr[Double] = js.undefined,
     nestingOptionsSeparator: String = null,
     nestingPrefix: String = null,
     nestingPrefixEscaped: String = null,
@@ -123,10 +123,10 @@ object InterpolationOptions {
     val __obj = js.Dynamic.literal()
     if (defaultVariables != null) __obj.updateDynamic("defaultVariables")(defaultVariables.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction1(escape))
-    if (!js.isUndefined(escapeValue)) __obj.updateDynamic("escapeValue")(escapeValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeValue)) __obj.updateDynamic("escapeValue")(escapeValue.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3(format))
     if (formatSeparator != null) __obj.updateDynamic("formatSeparator")(formatSeparator.asInstanceOf[js.Any])
-    if (maxReplaces != null) __obj.updateDynamic("maxReplaces")(maxReplaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReplaces)) __obj.updateDynamic("maxReplaces")(maxReplaces.get.asInstanceOf[js.Any])
     if (nestingOptionsSeparator != null) __obj.updateDynamic("nestingOptionsSeparator")(nestingOptionsSeparator.asInstanceOf[js.Any])
     if (nestingPrefix != null) __obj.updateDynamic("nestingPrefix")(nestingPrefix.asInstanceOf[js.Any])
     if (nestingPrefixEscaped != null) __obj.updateDynamic("nestingPrefixEscaped")(nestingPrefixEscaped.asInstanceOf[js.Any])
@@ -138,7 +138,7 @@ object InterpolationOptions {
     if (suffixEscaped != null) __obj.updateDynamic("suffixEscaped")(suffixEscaped.asInstanceOf[js.Any])
     if (unescapePrefix != null) __obj.updateDynamic("unescapePrefix")(unescapePrefix.asInstanceOf[js.Any])
     if (unescapeSuffix != null) __obj.updateDynamic("unescapeSuffix")(unescapeSuffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRawValueToEscape)) __obj.updateDynamic("useRawValueToEscape")(useRawValueToEscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(useRawValueToEscape)) __obj.updateDynamic("useRawValueToEscape")(useRawValueToEscape.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterpolationOptions]
   }
 }

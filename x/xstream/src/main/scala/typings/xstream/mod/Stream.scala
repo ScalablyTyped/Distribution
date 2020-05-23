@@ -1,7 +1,7 @@
 package typings.xstream.mod
 
 import typings.std.Partial
-import typings.xstream.AnonSubscribe
+import typings.xstream.anon.Subscribe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -302,7 +302,6 @@ class Stream[T] () extends InternalListener[T] {
     * @return {Stream}
     */
   def replaceError(replace: js.Function1[/* err */ js.Any, Stream[T]]): Stream[T] = js.native
-  def setDebugListener(): Unit = js.native
   /**
     * Adds a "debug" listener to the stream. There can only be one debug
     * listener, that's why this is 'setDebugListener'. To remove the debug
@@ -323,6 +322,7 @@ class Stream[T] () extends InternalListener[T] {
     *
     * @param {Listener<T>} listener
     */
+  def setDebugListener(): Unit = js.native
   def setDebugListener(listener: Partial[Listener[T]]): Unit = js.native
   /**
     * Forces the Stream to emit the "completed" event to its listeners.
@@ -899,7 +899,7 @@ object Stream extends js.Object {
     * @param {any} observable The observable to be converted as a stream.
     * @return {Stream}
     */
-  def fromObservable[T](obs: AnonSubscribe): Stream[T] = js.native
+  def fromObservable[T](obs: Subscribe): Stream[T] = js.native
   /**
     * Converts a promise to a stream. The returned stream will emit the resolved
     * value of the promise, and then complete. However, if the promise is

@@ -27,7 +27,7 @@ object ListLogsParams {
     cursor: String = null,
     filter: String = null,
     headers: js.Object = null,
-    page_limit: Int | Double = null,
+    page_limit: js.UndefOr[Double] = js.undefined,
     return_response: js.UndefOr[Boolean] = js.undefined,
     sort: String = null
   ): ListLogsParams = {
@@ -35,8 +35,8 @@ object ListLogsParams {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (page_limit != null) __obj.updateDynamic("page_limit")(page_limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(page_limit)) __obj.updateDynamic("page_limit")(page_limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLogsParams]
   }

@@ -34,7 +34,7 @@ trait PivotLabelFilter extends js.Object {
   var comparator: js.UndefOr[String] = js.undefined
   /**
     *
-    * Indicates the condition for the filter, which defines the necessary filtering criteria.
+    * Specifies the condition for the filter, which defines the necessary filtering criteria.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -88,7 +88,7 @@ object PivotLabelFilter {
   ): PivotLabelFilter = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
     if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
     if (substring != null) __obj.updateDynamic("substring")(substring.asInstanceOf[js.Any])
     if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])

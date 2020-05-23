@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver", "ErrorCodes")
 @js.native
 object ErrorCodes extends js.Object {
+  val ContentModified: Double = js.native
   val InternalError: Double = js.native
   val InvalidParams: Double = js.native
   val InvalidRequest: Double = js.native

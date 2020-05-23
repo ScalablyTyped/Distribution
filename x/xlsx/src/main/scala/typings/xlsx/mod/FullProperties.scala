@@ -52,7 +52,7 @@ object FullProperties {
     Subject: String = null,
     Title: String = null,
     Version: String = null,
-    Worksheets: Int | Double = null
+    Worksheets: js.UndefOr[Double] = js.undefined
   ): FullProperties = {
     val __obj = js.Dynamic.literal()
     if (AppVersion != null) __obj.updateDynamic("AppVersion")(AppVersion.asInstanceOf[js.Any])
@@ -64,23 +64,23 @@ object FullProperties {
     if (ContentStatus != null) __obj.updateDynamic("ContentStatus")(ContentStatus.asInstanceOf[js.Any])
     if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
     if (DocSecurity != null) __obj.updateDynamic("DocSecurity")(DocSecurity.asInstanceOf[js.Any])
-    if (!js.isUndefined(HyperlinksChanged)) __obj.updateDynamic("HyperlinksChanged")(HyperlinksChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(HyperlinksChanged)) __obj.updateDynamic("HyperlinksChanged")(HyperlinksChanged.get.asInstanceOf[js.Any])
     if (Identifier != null) __obj.updateDynamic("Identifier")(Identifier.asInstanceOf[js.Any])
     if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords.asInstanceOf[js.Any])
     if (Language != null) __obj.updateDynamic("Language")(Language.asInstanceOf[js.Any])
     if (LastAuthor != null) __obj.updateDynamic("LastAuthor")(LastAuthor.asInstanceOf[js.Any])
     if (LastPrinted != null) __obj.updateDynamic("LastPrinted")(LastPrinted.asInstanceOf[js.Any])
-    if (!js.isUndefined(LinksUpToDate)) __obj.updateDynamic("LinksUpToDate")(LinksUpToDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(LinksUpToDate)) __obj.updateDynamic("LinksUpToDate")(LinksUpToDate.get.asInstanceOf[js.Any])
     if (Manager != null) __obj.updateDynamic("Manager")(Manager.asInstanceOf[js.Any])
     if (ModifiedDate != null) __obj.updateDynamic("ModifiedDate")(ModifiedDate.asInstanceOf[js.Any])
     if (Revision != null) __obj.updateDynamic("Revision")(Revision.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScaleCrop)) __obj.updateDynamic("ScaleCrop")(ScaleCrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(SharedDoc)) __obj.updateDynamic("SharedDoc")(SharedDoc.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScaleCrop)) __obj.updateDynamic("ScaleCrop")(ScaleCrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SharedDoc)) __obj.updateDynamic("SharedDoc")(SharedDoc.get.asInstanceOf[js.Any])
     if (SheetNames != null) __obj.updateDynamic("SheetNames")(SheetNames.asInstanceOf[js.Any])
     if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
     if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
-    if (Worksheets != null) __obj.updateDynamic("Worksheets")(Worksheets.asInstanceOf[js.Any])
+    if (!js.isUndefined(Worksheets)) __obj.updateDynamic("Worksheets")(Worksheets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullProperties]
   }
 }

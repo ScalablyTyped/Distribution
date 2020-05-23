@@ -1,6 +1,6 @@
 package typings.raygun4js.mod
 
-import typings.raygun4js.AnonPath
+import typings.raygun4js.anon.Path
 import typings.raygun4js.raygun4jsStrings.Clicks
 import typings.raygun4js.raygun4jsStrings.Console
 import typings.raygun4js.raygun4jsStrings.Navigation
@@ -162,7 +162,7 @@ trait RaygunStatic extends js.Object {
     * Track Single Page Application route events.
     */
   @JSName("trackEvent")
-  def trackEvent_pageView(`type`: pageView, options: AnonPath): Unit = js.native
+  def trackEvent_pageView(`type`: pageView, options: Path): Unit = js.native
   /**
     * Whitelist damains which should transmit errors to Raygun.
     */

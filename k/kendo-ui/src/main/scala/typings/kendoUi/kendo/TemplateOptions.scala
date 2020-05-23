@@ -14,7 +14,7 @@ object TemplateOptions {
   def apply(paramName: String = null, useWithBlock: js.UndefOr[Boolean] = js.undefined): TemplateOptions = {
     val __obj = js.Dynamic.literal()
     if (paramName != null) __obj.updateDynamic("paramName")(paramName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useWithBlock)) __obj.updateDynamic("useWithBlock")(useWithBlock.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWithBlock)) __obj.updateDynamic("useWithBlock")(useWithBlock.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonNetworkAvailable
+import typings.aliApp.anon.NetworkAvailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait GetNetworkTypeOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_GetNetworkTypeOptions: js.UndefOr[js.Function1[/* res */ AnonNetworkAvailable, Unit]] = js.undefined
+  var success_GetNetworkTypeOptions: js.UndefOr[js.Function1[/* res */ NetworkAvailable, Unit]] = js.undefined
 }
 
 object GetNetworkTypeOptions {
@@ -18,7 +18,7 @@ object GetNetworkTypeOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonNetworkAvailable => Unit = null
+    success: /* res */ NetworkAvailable => Unit = null
   ): GetNetworkTypeOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

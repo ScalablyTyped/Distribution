@@ -11,10 +11,10 @@ trait TimecodeOptions extends js.Object {
 
 object TimecodeOptions {
   @scala.inline
-  def apply(frameRate: Int | Double = null, ms: js.UndefOr[Boolean] = js.undefined): TimecodeOptions = {
+  def apply(frameRate: js.UndefOr[Double] = js.undefined, ms: js.UndefOr[Boolean] = js.undefined): TimecodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(ms)) __obj.updateDynamic("ms")(ms.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameRate)) __obj.updateDynamic("frameRate")(frameRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ms)) __obj.updateDynamic("ms")(ms.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimecodeOptions]
   }
 }

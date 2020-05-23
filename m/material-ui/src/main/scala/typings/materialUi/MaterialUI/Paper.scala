@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("__MaterialUI.Paper")
 @js.native
-class Paper ()
+trait Paper
   extends Component[PaperProps, js.Object, js.Any]
 

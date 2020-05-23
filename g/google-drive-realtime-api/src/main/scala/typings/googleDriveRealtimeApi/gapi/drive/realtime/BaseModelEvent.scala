@@ -8,30 +8,30 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BaseModelEvent
   extends /* Parameters:
-		 target
-		 gapi.drive.realtime.CollaborativeObject
-		 The collaborative object that initiated the event.
-		 Value must not be null.
-		 sessionId
-		 string
-		 The id of the session that initiated the event.
-		 userId
-		 string
-		 The user id of the user that initiated the event.
-		 compoundOperationNames
-		 Array of string
-		 The list of names from the hierarchy of compound operations that initiated the event.
-		 Value must not be null.
-		 isLocal
-		 boolean
-		 True if the event originated in the local session.
-		 isUndo
-		 boolean
-		 True if the event originated from an undo call.
-		 isRedo
-		 boolean
-		 True if the event originated from a redo call.
-		 */
+  target
+  gapi.drive.realtime.CollaborativeObject
+  The collaborative object that initiated the event.
+  Value must not be null.
+  sessionId
+  string
+  The id of the session that initiated the event.
+  userId
+  string
+  The user id of the user that initiated the event.
+  compoundOperationNames
+  Array of string
+  The list of names from the hierarchy of compound operations that initiated the event.
+  Value must not be null.
+  isLocal
+  boolean
+  True if the event originated in the local session.
+  isUndo
+  boolean
+  True if the event originated from an undo call.
+  isRedo
+  boolean
+  True if the event originated from a redo call.
+  */
 Instantiable7[
       /* target */ CollaborativeObject, 
       /* sessionId */ String, 

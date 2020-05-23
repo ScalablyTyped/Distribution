@@ -1,5 +1,8 @@
 package typings.tslint
 
+import typings.tslint.anon.Options
+import typings.tslint.anon.OptionsArray
+import typings.tslint.anon.OptionsNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,26 +36,26 @@ object recommendedMod extends js.Object {
     var `no-switch-case-fall-through`: Boolean = js.native
     var `no-unused-expression`: Boolean = js.native
     var `no-use-before-declare`: Boolean = js.native
-    var `one-variable-per-declaration`: AnonOptionsArray = js.native
+    var `one-variable-per-declaration`: OptionsArray = js.native
     var radix: Boolean = js.native
-    var `triple-equals`: AnonOptionsArray = js.native
+    var `triple-equals`: OptionsArray = js.native
     var `use-isnan`: Boolean = js.native
-    var `variable-name`: AnonOptionsArray = js.native
+    var `variable-name`: OptionsArray = js.native
   }
   
   @js.native
   object rules extends js.Object {
     var `adjacent-overload-signatures`: Boolean = js.native
-    var `array-type`: AnonOptionsArray = js.native
-    var `ban-types`: AnonOptions = js.native
+    var `array-type`: OptionsArray = js.native
+    var `ban-types`: Options = js.native
     var `callable-types`: Boolean = js.native
     var `class-name`: Boolean = js.native
-    var `comment-format`: AnonOptionsArray = js.native
+    var `comment-format`: OptionsArray = js.native
     var `cyclomatic-complexity`: Boolean = js.native
     var forin: Boolean = js.native
     var `jsdoc-format`: Boolean = js.native
     var `label-position`: Boolean = js.native
-    var `max-classes-per-file`: AnonOptionsNumber = js.native
+    var `max-classes-per-file`: OptionsNumber = js.native
     var `new-parens`: Boolean = js.native
     var `no-angle-bracket-type-assertion`: Boolean = js.native
     var `no-any`: Boolean = js.native
@@ -85,17 +88,17 @@ object recommendedMod extends js.Object {
     var `no-var-keyword`: Boolean = js.native
     var `no-var-requires`: Boolean = js.native
     var `object-literal-shorthand`: Boolean = js.native
-    var `one-variable-per-declaration`: AnonOptionsArray = js.native
-    var `only-arrow-functions`: AnonOptionsArray = js.native
+    var `one-variable-per-declaration`: OptionsArray = js.native
+    var `only-arrow-functions`: OptionsArray = js.native
     var `prefer-const`: Boolean = js.native
     var `prefer-for-of`: Boolean = js.native
     var radix: Boolean = js.native
-    var `triple-equals`: AnonOptionsArray = js.native
+    var `triple-equals`: OptionsArray = js.native
     var typedef: Boolean = js.native
     var `typeof-compare`: Boolean = js.native
     var `unified-signatures`: Boolean = js.native
     var `use-isnan`: Boolean = js.native
-    var `variable-name`: AnonOptionsArray = js.native
+    var `variable-name`: OptionsArray = js.native
   }
   
 }

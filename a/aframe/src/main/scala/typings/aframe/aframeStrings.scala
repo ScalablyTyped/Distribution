@@ -53,6 +53,9 @@ object aframeStrings {
   sealed trait componentchanged extends js.Object
   
   @js.native
+  sealed trait componentinitialized extends js.Object
+  
+  @js.native
   sealed trait componentremoved extends js.Object
   
   @js.native
@@ -172,6 +175,8 @@ object aframeStrings {
   def color: color = "color".asInstanceOf[color]
   @scala.inline
   def componentchanged: componentchanged = "componentchanged".asInstanceOf[componentchanged]
+  @scala.inline
+  def componentinitialized: componentinitialized = "componentinitialized".asInstanceOf[componentinitialized]
   @scala.inline
   def componentremoved: componentremoved = "componentremoved".asInstanceOf[componentremoved]
   @scala.inline

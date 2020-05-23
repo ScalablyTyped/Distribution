@@ -4,7 +4,7 @@ import typings.reactNative.mod.Animated.SpringAnimationConfig
 import typings.reactNative.mod.Animated.TimingAnimationConfig
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.AnonHeight
+import typings.reactNativeElements.anon.Height
 import typings.reactNativeElements.reactNativeElementsStrings.horizontal
 import typings.reactNativeElements.reactNativeElementsStrings.spring
 import typings.reactNativeElements.reactNativeElementsStrings.timing
@@ -112,7 +112,7 @@ trait SliderProps extends js.Object {
     *
     * @default "{width: 40, height: 40}"
     */
-  var thumbTouchSize: js.UndefOr[AnonHeight] = js.undefined
+  var thumbTouchSize: js.UndefOr[Height] = js.undefined
   /**
     * The style applied to the track
     */
@@ -134,42 +134,42 @@ object SliderProps {
     debugTouchArea: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     maximumTrackTintColor: String = null,
-    maximumValue: Int | Double = null,
+    maximumValue: js.UndefOr[Double] = js.undefined,
     minimumTrackTintColor: String = null,
-    minimumValue: Int | Double = null,
+    minimumValue: js.UndefOr[Double] = js.undefined,
     onSlidingComplete: /* value */ Double => Unit = null,
     onSlidingStart: /* value */ Double => Unit = null,
     onValueChange: /* value */ Double => Unit = null,
     orientation: horizontal | vertical = null,
-    step: Int | Double = null,
-    style: StyleProp[ViewStyle] = null,
-    thumbStyle: StyleProp[ViewStyle] = null,
+    step: js.UndefOr[Double] = js.undefined,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    thumbStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     thumbTintColor: String = null,
-    thumbTouchSize: AnonHeight = null,
-    trackStyle: StyleProp[ViewStyle] = null,
-    value: Int | Double = null
+    thumbTouchSize: Height = null,
+    trackStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
   ): SliderProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animateTransitions)) __obj.updateDynamic("animateTransitions")(animateTransitions.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateTransitions)) __obj.updateDynamic("animateTransitions")(animateTransitions.get.asInstanceOf[js.Any])
     if (animationConfig != null) __obj.updateDynamic("animationConfig")(animationConfig.asInstanceOf[js.Any])
     if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugTouchArea)) __obj.updateDynamic("debugTouchArea")(debugTouchArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugTouchArea)) __obj.updateDynamic("debugTouchArea")(debugTouchArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (maximumTrackTintColor != null) __obj.updateDynamic("maximumTrackTintColor")(maximumTrackTintColor.asInstanceOf[js.Any])
-    if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumValue)) __obj.updateDynamic("maximumValue")(maximumValue.get.asInstanceOf[js.Any])
     if (minimumTrackTintColor != null) __obj.updateDynamic("minimumTrackTintColor")(minimumTrackTintColor.asInstanceOf[js.Any])
-    if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumValue)) __obj.updateDynamic("minimumValue")(minimumValue.get.asInstanceOf[js.Any])
     if (onSlidingComplete != null) __obj.updateDynamic("onSlidingComplete")(js.Any.fromFunction1(onSlidingComplete))
     if (onSlidingStart != null) __obj.updateDynamic("onSlidingStart")(js.Any.fromFunction1(onSlidingStart))
     if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1(onValueChange))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (thumbStyle != null) __obj.updateDynamic("thumbStyle")(thumbStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbStyle)) __obj.updateDynamic("thumbStyle")(thumbStyle.asInstanceOf[js.Any])
     if (thumbTintColor != null) __obj.updateDynamic("thumbTintColor")(thumbTintColor.asInstanceOf[js.Any])
     if (thumbTouchSize != null) __obj.updateDynamic("thumbTouchSize")(thumbTouchSize.asInstanceOf[js.Any])
-    if (trackStyle != null) __obj.updateDynamic("trackStyle")(trackStyle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackStyle)) __obj.updateDynamic("trackStyle")(trackStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderProps]
   }
 }

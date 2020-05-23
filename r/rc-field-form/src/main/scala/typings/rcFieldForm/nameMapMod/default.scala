@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 /**
   * NameMap like a `Map` but accepts `string[]` as key.
   */
-@JSImport("rc-field-form/lib/utils/NameMap", JSImport.Default)
+@JSImport("rc-field-form/es/utils/NameMap", JSImport.Default)
 @js.native
 class default[T] () extends NameMap[T] {
   /* CompleteClass */

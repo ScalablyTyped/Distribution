@@ -50,7 +50,7 @@ object BucketLifecycleRule {
   def apply(
     enabled: Boolean,
     id: String,
-    abortIncompleteMultipartUploadDays: Int | Double = null,
+    abortIncompleteMultipartUploadDays: js.UndefOr[Double] = js.undefined,
     expiration: BucketLifecycleRuleExpiration = null,
     noncurrentVersionExpiration: BucketLifecycleRuleNoncurrentVersionExpiration = null,
     noncurrentVersionTransitions: js.Array[BucketLifecycleRuleNoncurrentVersionTransition] = null,
@@ -59,7 +59,7 @@ object BucketLifecycleRule {
     transitions: js.Array[BucketLifecycleRuleTransition] = null
   ): BucketLifecycleRule = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (abortIncompleteMultipartUploadDays != null) __obj.updateDynamic("abortIncompleteMultipartUploadDays")(abortIncompleteMultipartUploadDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortIncompleteMultipartUploadDays)) __obj.updateDynamic("abortIncompleteMultipartUploadDays")(abortIncompleteMultipartUploadDays.get.asInstanceOf[js.Any])
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
     if (noncurrentVersionExpiration != null) __obj.updateDynamic("noncurrentVersionExpiration")(noncurrentVersionExpiration.asInstanceOf[js.Any])
     if (noncurrentVersionTransitions != null) __obj.updateDynamic("noncurrentVersionTransitions")(noncurrentVersionTransitions.asInstanceOf[js.Any])

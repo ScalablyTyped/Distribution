@@ -1,6 +1,6 @@
 package typings.aliApp.my
 
-import typings.aliApp.AnonConnected
+import typings.aliApp.anon.Connected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait OnBLEConnectionStateChangedOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_OnBLEConnectionStateChangedOptions: js.UndefOr[js.Function1[/* res */ AnonConnected, Unit]] = js.undefined
+  var success_OnBLEConnectionStateChangedOptions: js.UndefOr[js.Function1[/* res */ Connected, Unit]] = js.undefined
 }
 
 object OnBLEConnectionStateChangedOptions {
@@ -16,7 +16,7 @@ object OnBLEConnectionStateChangedOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonConnected => Unit = null
+    success: /* res */ Connected => Unit = null
   ): OnBLEConnectionStateChangedOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

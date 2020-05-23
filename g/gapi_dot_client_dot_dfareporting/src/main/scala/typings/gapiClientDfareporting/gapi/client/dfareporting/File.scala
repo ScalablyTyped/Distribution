@@ -1,6 +1,6 @@
 package typings.gapiClientDfareporting.gapi.client.dfareporting
 
-import typings.gapiClientDfareporting.AnonApiUrl
+import typings.gapiClientDfareporting.anon.ApiUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait File extends js.Object {
   /** The status of the report file. */
   var status: js.UndefOr[String] = js.undefined
   /** The URLs where the completed report file can be downloaded. */
-  var urls: js.UndefOr[AnonApiUrl] = js.undefined
+  var urls: js.UndefOr[ApiUrl] = js.undefined
 }
 
 object File {
@@ -40,7 +40,7 @@ object File {
     lastModifiedTime: String = null,
     reportId: String = null,
     status: String = null,
-    urls: AnonApiUrl = null
+    urls: ApiUrl = null
   ): File = {
     val __obj = js.Dynamic.literal()
     if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])

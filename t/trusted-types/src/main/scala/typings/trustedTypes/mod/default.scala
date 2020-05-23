@@ -1,7 +1,7 @@
 package typings.trustedTypes.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.trustedTypes.mod._Global_.TrustedTypePolicyFactory
+import typings.trustedTypes.mod.global.TrustedTypePolicyFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

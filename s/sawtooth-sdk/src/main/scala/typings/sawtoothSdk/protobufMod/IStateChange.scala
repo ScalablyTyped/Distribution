@@ -17,11 +17,15 @@ trait IStateChange extends js.Object {
 
 object IStateChange {
   @scala.inline
-  def apply(address: String = null, `type`: Type = null, value: Uint8Array = null): IStateChange = {
+  def apply(
+    address: js.UndefOr[Null | String] = js.undefined,
+    `type`: js.UndefOr[Null | Type] = js.undefined,
+    value: js.UndefOr[Null | Uint8Array] = js.undefined
+  ): IStateChange = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStateChange]
   }
 }

@@ -3,6 +3,13 @@ package typings.tsMockito
 import org.scalablytyped.runtime.Instantiable1
 import typings.std.Error
 import typings.std.RegExp
+import typings.tsMockito.anon.Fn0
+import typings.tsMockito.anon.Fn1
+import typings.tsMockito.anon.FnCall
+import typings.tsMockito.anon.FnCallClazz
+import typings.tsMockito.anon.FnCallExpectedClass
+import typings.tsMockito.anon.FnCallMethod
+import typings.tsMockito.anon.FnCallMockedValue
 import typings.tsMockito.argCaptorMod.ArgCaptor1
 import typings.tsMockito.argCaptorMod.ArgCaptor10
 import typings.tsMockito.argCaptorMod.ArgCaptor2

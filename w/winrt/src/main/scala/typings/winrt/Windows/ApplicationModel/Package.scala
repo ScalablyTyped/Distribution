@@ -7,37 +7,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Package")
-@js.native
-class Package () extends IPackage {
-  /* CompleteClass */
-  override var dependencies: IVectorView[Package] = js.native
-  /* CompleteClass */
-  override var description: String = js.native
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /* CompleteClass */
-  override var id: PackageId = js.native
-  /* CompleteClass */
-  override var installedLocation: StorageFolder = js.native
-  /* CompleteClass */
-  override var isBundle: Boolean = js.native
-  /* CompleteClass */
-  override var isDevelopmentMode: Boolean = js.native
-  /* CompleteClass */
-  override var isFramework: Boolean = js.native
-  /* CompleteClass */
-  override var isResourcePackage: Boolean = js.native
-  /* CompleteClass */
-  override var logo: Uri = js.native
-  /* CompleteClass */
-  override var publisherDisplayName: String = js.native
-}
+trait Package extends IPackage
 
-/* static members */
-@JSGlobal("Windows.ApplicationModel.Package")
-@js.native
-object Package extends js.Object {
-  var current: Package = js.native
+object Package {
+  @scala.inline
+  def apply(
+    dependencies: IVectorView[Package],
+    description: String,
+    displayName: String,
+    id: PackageId,
+    installedLocation: StorageFolder,
+    isBundle: Boolean,
+    isDevelopmentMode: Boolean,
+    isFramework: Boolean,
+    isResourcePackage: Boolean,
+    logo: Uri,
+    publisherDisplayName: String
+  ): Package = {
+    val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], installedLocation = installedLocation.asInstanceOf[js.Any], isBundle = isBundle.asInstanceOf[js.Any], isDevelopmentMode = isDevelopmentMode.asInstanceOf[js.Any], isFramework = isFramework.asInstanceOf[js.Any], isResourcePackage = isResourcePackage.asInstanceOf[js.Any], logo = logo.asInstanceOf[js.Any], publisherDisplayName = publisherDisplayName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Package]
+  }
 }
 

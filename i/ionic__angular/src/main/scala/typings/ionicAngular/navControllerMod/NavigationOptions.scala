@@ -23,24 +23,24 @@ object NavigationOptions {
     fragment: String = null,
     preserveFragment: js.UndefOr[Boolean] = js.undefined,
     preserveQueryParams: js.UndefOr[Boolean] = js.undefined,
-    queryParams: Params = null,
-    queryParamsHandling: QueryParamsHandling = null,
-    relativeTo: ActivatedRoute = null,
+    queryParams: js.UndefOr[Null | Params] = js.undefined,
+    queryParamsHandling: js.UndefOr[Null | QueryParamsHandling] = js.undefined,
+    relativeTo: js.UndefOr[Null | ActivatedRoute] = js.undefined,
     replaceUrl: js.UndefOr[Boolean] = js.undefined,
     skipLocationChange: js.UndefOr[Boolean] = js.undefined,
     state: StringDictionary[js.Any] = null
   ): NavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
     if (animationDirection != null) __obj.updateDynamic("animationDirection")(animationDirection.asInstanceOf[js.Any])
     if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveFragment)) __obj.updateDynamic("preserveFragment")(preserveFragment.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveQueryParams)) __obj.updateDynamic("preserveQueryParams")(preserveQueryParams.asInstanceOf[js.Any])
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
-    if (queryParamsHandling != null) __obj.updateDynamic("queryParamsHandling")(queryParamsHandling.asInstanceOf[js.Any])
-    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceUrl)) __obj.updateDynamic("replaceUrl")(replaceUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipLocationChange)) __obj.updateDynamic("skipLocationChange")(skipLocationChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveFragment)) __obj.updateDynamic("preserveFragment")(preserveFragment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveQueryParams)) __obj.updateDynamic("preserveQueryParams")(preserveQueryParams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryParams)) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryParamsHandling)) __obj.updateDynamic("queryParamsHandling")(queryParamsHandling.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeTo)) __obj.updateDynamic("relativeTo")(relativeTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceUrl)) __obj.updateDynamic("replaceUrl")(replaceUrl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipLocationChange)) __obj.updateDynamic("skipLocationChange")(skipLocationChange.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationOptions]
   }

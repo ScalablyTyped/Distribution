@@ -17,13 +17,13 @@ object KeepAlive {
   @scala.inline
   def apply(
     forceNoop: js.UndefOr[Boolean] = js.undefined,
-    idleInterval: Int | Double = null,
-    interval: Int | Double = null
+    idleInterval: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined
   ): KeepAlive = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceNoop)) __obj.updateDynamic("forceNoop")(forceNoop.asInstanceOf[js.Any])
-    if (idleInterval != null) __obj.updateDynamic("idleInterval")(idleInterval.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceNoop)) __obj.updateDynamic("forceNoop")(forceNoop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(idleInterval)) __obj.updateDynamic("idleInterval")(idleInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeepAlive]
   }
 }

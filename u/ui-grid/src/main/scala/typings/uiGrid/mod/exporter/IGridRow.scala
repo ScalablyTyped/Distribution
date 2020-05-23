@@ -17,7 +17,7 @@ object IGridRow {
   @scala.inline
   def apply(exporterEnableExporting: js.UndefOr[Boolean] = js.undefined): IGridRow = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exporterEnableExporting)) __obj.updateDynamic("exporterEnableExporting")(exporterEnableExporting.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterEnableExporting)) __obj.updateDynamic("exporterEnableExporting")(exporterEnableExporting.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridRow]
   }
 }

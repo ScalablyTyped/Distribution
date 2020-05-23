@@ -1,6 +1,7 @@
 package typings.pouchdbCore
 
 import typings.pouchdbCore.PouchDB.Core._AttachmentData
+import typings.pouchdbCore.anon.Data
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -89,7 +90,7 @@ trait Buffer
   def swap16(): Buffer = js.native
   def swap32(): Buffer = js.native
   def swap64(): Buffer = js.native
-  def toJSON(): AnonData = js.native
+  def toJSON(): Data = js.native
   def toString(encoding: String): String = js.native
   def toString(encoding: String, start: Double): String = js.native
   def toString(encoding: String, start: Double, end: Double): String = js.native

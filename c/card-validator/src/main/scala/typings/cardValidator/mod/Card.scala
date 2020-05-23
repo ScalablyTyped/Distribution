@@ -1,12 +1,12 @@
 package typings.cardValidator.mod
 
-import typings.cardValidator.AnonName
+import typings.cardValidator.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Card extends js.Object {
-  var code: AnonName
+  var code: Name
   var gaps: js.Array[Double]
   var isAmex: Boolean
   var lengths: js.Array[Double]
@@ -18,7 +18,7 @@ trait Card extends js.Object {
 object Card {
   @scala.inline
   def apply(
-    code: AnonName,
+    code: Name,
     gaps: js.Array[Double],
     isAmex: Boolean,
     lengths: js.Array[Double],

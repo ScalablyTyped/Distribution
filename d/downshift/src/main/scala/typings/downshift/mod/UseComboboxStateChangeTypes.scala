@@ -12,6 +12,9 @@ sealed trait UseComboboxStateChangeTypes extends js.Object
 @js.native
 object UseComboboxStateChangeTypes extends js.Object {
   @js.native
+  sealed trait ControlledPropUpdatedSelectedItem extends UseComboboxStateChangeTypes
+  
+  @js.native
   sealed trait FunctionCloseMenu extends UseComboboxStateChangeTypes
   
   @js.native
@@ -70,6 +73,9 @@ object UseComboboxStateChangeTypes extends js.Object {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[UseComboboxStateChangeTypes with String] = js.native
+  /* "__controlled_prop_updated_selected_item__" */ @js.native
+  object ControlledPropUpdatedSelectedItem extends TopLevel[ControlledPropUpdatedSelectedItem with String]
+  
   /* "__function_close_menu__" */ @js.native
   object FunctionCloseMenu extends TopLevel[FunctionCloseMenu with String]
   

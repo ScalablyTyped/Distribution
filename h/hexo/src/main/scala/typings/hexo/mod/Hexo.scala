@@ -1,8 +1,8 @@
 package typings.hexo.mod
 
-import typings.hexo.AnonArgs
-import typings.hexo.AnonConsole
-import typings.hexo.AnonContent
+import typings.hexo.anon.Args
+import typings.hexo.anon.Console
+import typings.hexo.anon.Content
 import typings.hexo.hexoStrings.`new`
 import typings.hexo.hexoStrings.create
 import typings.hexo.hexoStrings.delete
@@ -29,8 +29,8 @@ trait Hexo extends EventEmitter {
     */
   val config: HexoConfig = js.native
   val config_path: String = js.native
-  val env: AnonArgs = js.native
-  val extend: AnonConsole = js.native
+  val env: Args = js.native
+  val extend: Console = js.native
   /**
     * Local variables are used for template rendering, which is the `site` variable in templates.
     * https://hexo.io/api/locals
@@ -125,7 +125,7 @@ trait Hexo extends EventEmitter {
     * Emitted after a new post has been created. This event returns the post data:
     */
   @JSName("on")
-  def on_new(ev: `new`, fn: js.Function1[/* post */ AnonContent, Unit]): this.type = js.native
+  def on_new(ev: `new`, fn: js.Function1[/* post */ Content, Unit]): this.type = js.native
   /**
     * Emitted after initialization finishes.
     */

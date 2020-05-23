@@ -46,14 +46,8 @@ import scala.scalajs.js.annotation._
   * 
   * Please also see the Input examples and tutorials for further information.
   */
-@JSGlobal("Phaser.Input.InputPlugin")
 @js.native
-class InputPlugin protected () extends EventEmitter {
-  /**
-    * 
-    * @param scene A reference to the Scene that this Input Plugin is responsible for.
-    */
-  def this(scene: Scene) = this()
+trait InputPlugin extends EventEmitter {
   /**
     * The current active input Pointer.
     */
@@ -262,13 +256,13 @@ class InputPlugin protected () extends EventEmitter {
     * @param callback The 'contains' function to invoke to check if the pointer is within the hit area.
     * @param dropZone Is this Game Object a drop zone or not? Default false.
     */
-  def enable(gameObject: GameObject): InputPlugin = js.native
-  def enable(gameObject: GameObject, shape: js.Any): InputPlugin = js.native
-  def enable(gameObject: GameObject, shape: js.Any, callback: HitAreaCallback): InputPlugin = js.native
-  def enable(gameObject: GameObject, shape: js.Any, callback: HitAreaCallback, dropZone: Boolean): InputPlugin = js.native
-  def enable(gameObject: GameObject, shape: InputConfiguration): InputPlugin = js.native
-  def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback): InputPlugin = js.native
-  def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): InputPlugin = js.native
+  def enable(gameObject: GameObject): this.type = js.native
+  def enable(gameObject: GameObject, shape: js.Any): this.type = js.native
+  def enable(gameObject: GameObject, shape: js.Any, callback: HitAreaCallback): this.type = js.native
+  def enable(gameObject: GameObject, shape: js.Any, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  def enable(gameObject: GameObject, shape: InputConfiguration): this.type = js.native
+  def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
+  def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   /**
     * Creates an Input Debug Shape for the given Game Object.
     * 
@@ -296,8 +290,8 @@ class InputPlugin protected () extends EventEmitter {
     * @param gameObject The Game Object to create the input debug shape for.
     * @param color The outline color of the debug shape. Default 0x00ff00.
     */
-  def enableDebug(gameObject: GameObject): InputPlugin = js.native
-  def enableDebug(gameObject: GameObject, color: Double): InputPlugin = js.native
+  def enableDebug(gameObject: GameObject): this.type = js.native
+  def enableDebug(gameObject: GameObject, color: Double): this.type = js.native
   /**
     * Returns the drag state of the given Pointer for this Input Plugin.
     * 
@@ -360,7 +354,7 @@ class InputPlugin protected () extends EventEmitter {
     * The shape is destroyed immediately and the `hitAreaDebug` property is set to `null`.
     * @param gameObject The Game Object to remove the input debug shape from.
     */
-  def removeDebug(gameObject: GameObject): InputPlugin = js.native
+  def removeDebug(gameObject: GameObject): this.type = js.native
   /**
     * Tells the Input system to set a custom cursor.
     * 
@@ -382,7 +376,7 @@ class InputPlugin protected () extends EventEmitter {
     * It's up to you to pick a suitable cursor format that works across the range of browsers you need to support.
     * @param cursor The CSS to be used when setting the default cursor.
     */
-  def setDefaultCursor(cursor: String): InputPlugin = js.native
+  def setDefaultCursor(cursor: String): this.type = js.native
   /**
     * Sets the drag state of the given Pointer for this Input Plugin.
     * 
@@ -398,8 +392,8 @@ class InputPlugin protected () extends EventEmitter {
     * @param state The drag state value. An integer between 0 and 5.
     */
   def setDragState(pointer: Pointer, state: integer): Unit = js.native
-  def setDraggable(gameObjects: js.Array[GameObject]): InputPlugin = js.native
-  def setDraggable(gameObjects: js.Array[GameObject], value: Boolean): InputPlugin = js.native
+  def setDraggable(gameObjects: js.Array[GameObject]): this.type = js.native
+  def setDraggable(gameObjects: js.Array[GameObject], value: Boolean): this.type = js.native
   /**
     * Sets the draggable state of the given array of Game Objects.
     * 
@@ -409,20 +403,20 @@ class InputPlugin protected () extends EventEmitter {
     * @param gameObjects An array of Game Objects to change the draggable state on.
     * @param value Set to `true` if the Game Objects should be made draggable, `false` if they should be unset. Default true.
     */
-  def setDraggable(gameObjects: GameObject): InputPlugin = js.native
-  def setDraggable(gameObjects: GameObject, value: Boolean): InputPlugin = js.native
+  def setDraggable(gameObjects: GameObject): this.type = js.native
+  def setDraggable(gameObjects: GameObject, value: Boolean): this.type = js.native
   /**
     * When set to `true` the global Input Manager will emulate DOM behavior by only emitting events from
     * the top-most Scene in the Scene List. By default, if a Scene receives an input event it will then stop the event
     * from flowing down to any Scenes below it in the Scene list. To disable this behavior call this method with `false`.
     * @param value Set to `true` to stop processing input events on the Scene that receives it, or `false` to let the event continue down the Scene list.
     */
-  def setGlobalTopOnly(value: Boolean): InputPlugin = js.native
-  def setHitArea(gameObjects: js.Array[GameObject]): InputPlugin = js.native
-  def setHitArea(gameObjects: js.Array[GameObject], shape: js.Any): InputPlugin = js.native
-  def setHitArea(gameObjects: js.Array[GameObject], shape: js.Any, callback: HitAreaCallback): InputPlugin = js.native
-  def setHitArea(gameObjects: js.Array[GameObject], shape: InputConfiguration): InputPlugin = js.native
-  def setHitArea(gameObjects: js.Array[GameObject], shape: InputConfiguration, callback: HitAreaCallback): InputPlugin = js.native
+  def setGlobalTopOnly(value: Boolean): this.type = js.native
+  def setHitArea(gameObjects: js.Array[GameObject]): this.type = js.native
+  def setHitArea(gameObjects: js.Array[GameObject], shape: js.Any): this.type = js.native
+  def setHitArea(gameObjects: js.Array[GameObject], shape: js.Any, callback: HitAreaCallback): this.type = js.native
+  def setHitArea(gameObjects: js.Array[GameObject], shape: InputConfiguration): this.type = js.native
+  def setHitArea(gameObjects: js.Array[GameObject], shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
   /**
     * Sets the hit area for the given array of Game Objects.
     * 
@@ -439,13 +433,13 @@ class InputPlugin protected () extends EventEmitter {
     * @param shape Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not specified a Rectangle will be used.
     * @param callback The 'contains' function to invoke to check if the pointer is within the hit area.
     */
-  def setHitArea(gameObjects: GameObject): InputPlugin = js.native
-  def setHitArea(gameObjects: GameObject, shape: js.Any): InputPlugin = js.native
-  def setHitArea(gameObjects: GameObject, shape: js.Any, callback: HitAreaCallback): InputPlugin = js.native
-  def setHitArea(gameObjects: GameObject, shape: InputConfiguration): InputPlugin = js.native
-  def setHitArea(gameObjects: GameObject, shape: InputConfiguration, callback: HitAreaCallback): InputPlugin = js.native
-  def setHitAreaCircle(gameObjects: js.Array[GameObject], x: Double, y: Double, radius: Double): InputPlugin = js.native
-  def setHitAreaCircle(gameObjects: js.Array[GameObject], x: Double, y: Double, radius: Double, callback: HitAreaCallback): InputPlugin = js.native
+  def setHitArea(gameObjects: GameObject): this.type = js.native
+  def setHitArea(gameObjects: GameObject, shape: js.Any): this.type = js.native
+  def setHitArea(gameObjects: GameObject, shape: js.Any, callback: HitAreaCallback): this.type = js.native
+  def setHitArea(gameObjects: GameObject, shape: InputConfiguration): this.type = js.native
+  def setHitArea(gameObjects: GameObject, shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
+  def setHitAreaCircle(gameObjects: js.Array[GameObject], x: Double, y: Double, radius: Double): this.type = js.native
+  def setHitAreaCircle(gameObjects: js.Array[GameObject], x: Double, y: Double, radius: Double, callback: HitAreaCallback): this.type = js.native
   /**
     * Sets the hit area for an array of Game Objects to be a `Phaser.Geom.Circle` shape, using
     * the given coordinates and radius to control its position and size.
@@ -455,9 +449,9 @@ class InputPlugin protected () extends EventEmitter {
     * @param radius The radius of the circle.
     * @param callback The hit area callback. If undefined it uses Circle.Contains.
     */
-  def setHitAreaCircle(gameObjects: GameObject, x: Double, y: Double, radius: Double): InputPlugin = js.native
-  def setHitAreaCircle(gameObjects: GameObject, x: Double, y: Double, radius: Double, callback: HitAreaCallback): InputPlugin = js.native
-  def setHitAreaEllipse(gameObjects: js.Array[GameObject], x: Double, y: Double, width: Double, height: Double): InputPlugin = js.native
+  def setHitAreaCircle(gameObjects: GameObject, x: Double, y: Double, radius: Double): this.type = js.native
+  def setHitAreaCircle(gameObjects: GameObject, x: Double, y: Double, radius: Double, callback: HitAreaCallback): this.type = js.native
+  def setHitAreaEllipse(gameObjects: js.Array[GameObject], x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def setHitAreaEllipse(
     gameObjects: js.Array[GameObject],
     x: Double,
@@ -465,7 +459,7 @@ class InputPlugin protected () extends EventEmitter {
     width: Double,
     height: Double,
     callback: HitAreaCallback
-  ): InputPlugin = js.native
+  ): this.type = js.native
   /**
     * Sets the hit area for an array of Game Objects to be a `Phaser.Geom.Ellipse` shape, using
     * the given coordinates and dimensions to control its position and size.
@@ -476,7 +470,7 @@ class InputPlugin protected () extends EventEmitter {
     * @param height The height of the ellipse.
     * @param callback The hit area callback. If undefined it uses Ellipse.Contains.
     */
-  def setHitAreaEllipse(gameObjects: GameObject, x: Double, y: Double, width: Double, height: Double): InputPlugin = js.native
+  def setHitAreaEllipse(gameObjects: GameObject, x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def setHitAreaEllipse(
     gameObjects: GameObject,
     x: Double,
@@ -484,18 +478,18 @@ class InputPlugin protected () extends EventEmitter {
     width: Double,
     height: Double,
     callback: HitAreaCallback
-  ): InputPlugin = js.native
-  def setHitAreaFromTexture(gameObjects: js.Array[GameObject]): InputPlugin = js.native
-  def setHitAreaFromTexture(gameObjects: js.Array[GameObject], callback: HitAreaCallback): InputPlugin = js.native
+  ): this.type = js.native
+  def setHitAreaFromTexture(gameObjects: js.Array[GameObject]): this.type = js.native
+  def setHitAreaFromTexture(gameObjects: js.Array[GameObject], callback: HitAreaCallback): this.type = js.native
   /**
     * Sets the hit area for an array of Game Objects to be a `Phaser.Geom.Rectangle` shape, using
     * the Game Objects texture frame to define the position and size of the hit area.
     * @param gameObjects An array of Game Objects to set as having an ellipse hit area.
     * @param callback The hit area callback. If undefined it uses Rectangle.Contains.
     */
-  def setHitAreaFromTexture(gameObjects: GameObject): InputPlugin = js.native
-  def setHitAreaFromTexture(gameObjects: GameObject, callback: HitAreaCallback): InputPlugin = js.native
-  def setHitAreaRectangle(gameObjects: js.Array[GameObject], x: Double, y: Double, width: Double, height: Double): InputPlugin = js.native
+  def setHitAreaFromTexture(gameObjects: GameObject): this.type = js.native
+  def setHitAreaFromTexture(gameObjects: GameObject, callback: HitAreaCallback): this.type = js.native
+  def setHitAreaRectangle(gameObjects: js.Array[GameObject], x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def setHitAreaRectangle(
     gameObjects: js.Array[GameObject],
     x: Double,
@@ -503,7 +497,7 @@ class InputPlugin protected () extends EventEmitter {
     width: Double,
     height: Double,
     callback: HitAreaCallback
-  ): InputPlugin = js.native
+  ): this.type = js.native
   /**
     * Sets the hit area for an array of Game Objects to be a `Phaser.Geom.Rectangle` shape, using
     * the given coordinates and dimensions to control its position and size.
@@ -514,7 +508,7 @@ class InputPlugin protected () extends EventEmitter {
     * @param height The height of the rectangle.
     * @param callback The hit area callback. If undefined it uses Rectangle.Contains.
     */
-  def setHitAreaRectangle(gameObjects: GameObject, x: Double, y: Double, width: Double, height: Double): InputPlugin = js.native
+  def setHitAreaRectangle(gameObjects: GameObject, x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def setHitAreaRectangle(
     gameObjects: GameObject,
     x: Double,
@@ -522,7 +516,7 @@ class InputPlugin protected () extends EventEmitter {
     width: Double,
     height: Double,
     callback: HitAreaCallback
-  ): InputPlugin = js.native
+  ): this.type = js.native
   def setHitAreaTriangle(
     gameObjects: js.Array[GameObject],
     x1: Double,
@@ -531,7 +525,7 @@ class InputPlugin protected () extends EventEmitter {
     y2: Double,
     x3: Double,
     y3: Double
-  ): InputPlugin = js.native
+  ): this.type = js.native
   def setHitAreaTriangle(
     gameObjects: js.Array[GameObject],
     x1: Double,
@@ -541,7 +535,7 @@ class InputPlugin protected () extends EventEmitter {
     x3: Double,
     y3: Double,
     callback: HitAreaCallback
-  ): InputPlugin = js.native
+  ): this.type = js.native
   /**
     * Sets the hit area for an array of Game Objects to be a `Phaser.Geom.Triangle` shape, using
     * the given coordinates to control the position of its points.
@@ -554,7 +548,7 @@ class InputPlugin protected () extends EventEmitter {
     * @param y3 The y coordinate of the third point of the triangle.
     * @param callback The hit area callback. If undefined it uses Triangle.Contains.
     */
-  def setHitAreaTriangle(gameObjects: GameObject, x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): InputPlugin = js.native
+  def setHitAreaTriangle(gameObjects: GameObject, x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): this.type = js.native
   def setHitAreaTriangle(
     gameObjects: GameObject,
     x1: Double,
@@ -564,7 +558,7 @@ class InputPlugin protected () extends EventEmitter {
     x3: Double,
     y3: Double,
     callback: HitAreaCallback
-  ): InputPlugin = js.native
+  ): this.type = js.native
   /**
     * Sets the Pointers to always poll.
     * 
@@ -575,20 +569,20 @@ class InputPlugin protected () extends EventEmitter {
     * are constantly moving, but the pointer may not have. Polling every frame has additional computation
     * costs, especially if there are a large number of interactive objects in your game.
     */
-  def setPollAlways(): InputPlugin = js.native
+  def setPollAlways(): this.type = js.native
   /**
     * Sets the Pointers to only poll when they are moved or updated.
     * 
     * When a pointer is polled it runs a hit test to see which Game Objects are currently below it,
     * or being interacted with it.
     */
-  def setPollOnMove(): InputPlugin = js.native
+  def setPollOnMove(): this.type = js.native
   /**
     * Sets the poll rate value. This is the amount of time that should have elapsed before a pointer
     * will be polled again. See the `setPollAlways` and `setPollOnMove` methods.
     * @param value The amount of time, in ms, that should elapsed before re-polling the pointers.
     */
-  def setPollRate(value: Double): InputPlugin = js.native
+  def setPollRate(value: Double): this.type = js.native
   /**
     * When set to `true` this Input Plugin will emulate DOM behavior by only emitting events from
     * the top-most Game Objects in the Display List.
@@ -596,7 +590,7 @@ class InputPlugin protected () extends EventEmitter {
     * If set to `false` it will emit events from all Game Objects below a Pointer, not just the top one.
     * @param value `true` to only include the top-most Game Object, or `false` to include all Game Objects in a hit test.
     */
-  def setTopOnly(value: Boolean): InputPlugin = js.native
+  def setTopOnly(value: Boolean): this.type = js.native
   /**
     * Given an array of Game Objects, sort the array and return it, so that the objects are in depth index order
     * with the lowest at the bottom.
@@ -609,7 +603,7 @@ class InputPlugin protected () extends EventEmitter {
     * When called, it stops the Input Manager from allowing _this specific event_ to be processed by any other Scene
     * not yet handled in the scene list.
     */
-  def stopPropagation(): InputPlugin = js.native
+  def stopPropagation(): this.type = js.native
   /**
     * This is called automatically by the Input Manager.
     * It emits events for plugins to listen to and also handles polling updates, if enabled.

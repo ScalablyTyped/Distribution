@@ -25,7 +25,7 @@ object HistoryNavigationOptions {
   def apply(key: String = null, replaceState: js.UndefOr[Boolean] = js.undefined): HistoryNavigationOptions = {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryNavigationOptions]
   }
 }

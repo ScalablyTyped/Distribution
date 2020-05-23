@@ -36,11 +36,11 @@ trait ListItemProps
 object ListItemProps {
   @scala.inline
   def apply(
-    activeStyle: StyleProp[ViewStyle] = null,
+    activeStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     align: top | middle | bottom = null,
     arrow: horizontal | down | up | empty | _empty = null,
     children: ReactNode = null,
-    delayLongPress: Int | Double = null,
+    delayLongPress: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     extra: ReactNode = null,
@@ -50,30 +50,30 @@ object ListItemProps {
     onPressIn: /* event */ GestureResponderEvent => Unit = null,
     onPressOut: /* event */ GestureResponderEvent => Unit = null,
     platform: android | ios = null,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     styles: Partial[ListStyle] = null,
-    thumb: ReactNode = null,
+    thumb: js.UndefOr[Null | ReactNode] = js.undefined,
     wrap: js.UndefOr[Boolean] = js.undefined
   ): ListItemProps = {
     val __obj = js.Dynamic.literal()
-    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeStyle)) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (arrow != null) __obj.updateDynamic("arrow")(arrow.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayLongPress)) __obj.updateDynamic("delayLongPress")(delayLongPress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleLine)) __obj.updateDynamic("multipleLine")(multipleLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleLine)) __obj.updateDynamic("multipleLine")(multipleLine.get.asInstanceOf[js.Any])
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
     if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
     if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb)) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemProps]
   }
 }

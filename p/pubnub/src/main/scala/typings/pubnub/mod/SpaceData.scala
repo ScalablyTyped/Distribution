@@ -19,12 +19,12 @@ object SpaceData {
     id: String,
     name: String,
     updated: String,
-    custom: StringDictionary[String] = null,
-    description: String = null
+    custom: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined
   ): SpaceData = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], eTag = eTag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpaceData]
   }
 }

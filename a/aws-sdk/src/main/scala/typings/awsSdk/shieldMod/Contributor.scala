@@ -18,10 +18,10 @@ trait Contributor extends js.Object {
 
 object Contributor {
   @scala.inline
-  def apply(Name: String = null, Value: Int | scala.Double = null): Contributor = {
+  def apply(Name: String = null, Value: js.UndefOr[Long] = js.undefined): Contributor = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contributor]
   }
 }

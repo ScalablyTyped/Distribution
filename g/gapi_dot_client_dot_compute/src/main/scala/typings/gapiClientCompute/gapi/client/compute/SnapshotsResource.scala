@@ -1,10 +1,9 @@
 package typings.gapiClientCompute.gapi.client.compute
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCompute.AnonAlt
-import typings.gapiClientCompute.AnonKeyOauthtoken
-import typings.gapiClientCompute.AnonQuotaUserSnapshot
-import typings.gapiClientCompute.AnonSnapshot
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCompute.anon.Alt
+import typings.gapiClientCompute.anon.KeyOauthtoken
+import typings.gapiClientCompute.anon.QuotaUserSnapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,22 +15,22 @@ trait SnapshotsResource extends js.Object {
     *
     * For more information, see Deleting snaphots.
     */
-  def delete(request: AnonSnapshot): Request_[Operation]
+  def delete(request: typings.gapiClientCompute.anon.Snapshot): Request[Operation]
   /** Returns the specified Snapshot resource. Get a list of available snapshots by making a list() request. */
-  def get(request: AnonQuotaUserSnapshot): Request_[Snapshot]
+  def get(request: QuotaUserSnapshot): Request[Snapshot]
   /** Retrieves the list of Snapshot resources contained within the specified project. */
-  def list(request: AnonAlt): Request_[SnapshotList]
+  def list(request: Alt): Request[SnapshotList]
   /** Sets the labels on a snapshot. To learn more about labels, read the Labeling Resources documentation. */
-  def setLabels(request: AnonKeyOauthtoken): Request_[Operation]
+  def setLabels(request: KeyOauthtoken): Request[Operation]
 }
 
 object SnapshotsResource {
   @scala.inline
   def apply(
-    delete: AnonSnapshot => Request_[Operation],
-    get: AnonQuotaUserSnapshot => Request_[Snapshot],
-    list: AnonAlt => Request_[SnapshotList],
-    setLabels: AnonKeyOauthtoken => Request_[Operation]
+    delete: typings.gapiClientCompute.anon.Snapshot => Request[Operation],
+    get: QuotaUserSnapshot => Request[Snapshot],
+    list: Alt => Request[SnapshotList],
+    setLabels: KeyOauthtoken => Request[Operation]
   ): SnapshotsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), setLabels = js.Any.fromFunction1(setLabels))
     __obj.asInstanceOf[SnapshotsResource]

@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine.mod.model
 
-import typings.ckeditorCkeditor5Engine.AnonIncludeSelf
-import typings.ckeditorCkeditor5Engine.AnonIncludeSelfBoolean
+import typings.ckeditorCkeditor5Engine.anon.IncludeSelf
+import typings.ckeditorCkeditor5Engine.anon.IncludeSelfBoolean
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.documentFragment
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.element
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.rootElement
@@ -31,12 +31,12 @@ class Node ()
   val previousSibling: Node | Null = js.native
   val root: Node | DocumentFragment = js.native
   val startOffset: Double | Null = js.native
-  def getAncestors(options: AnonIncludeSelf): js.Array[Node] = js.native
+  def getAncestors(options: IncludeSelf): js.Array[Node] = js.native
   def getAttribute(key: String): js.Any = js.native
   def getAttributeKeys(): Iterable[String] = js.native
   def getAttributes(): Iterable[_] = js.native
   def getCommonAncestor(node: Node): Element | DocumentFragment | Null = js.native
-  def getCommonAncestor(node: Node, options: AnonIncludeSelfBoolean): Element | DocumentFragment | Null = js.native
+  def getCommonAncestor(node: Node, options: IncludeSelfBoolean): Element | DocumentFragment | Null = js.native
   def getPath(): js.Array[Double] = js.native
   def hasAttribute(key: String): Boolean = js.native
   def is(`type`: String, name: String): Boolean = js.native

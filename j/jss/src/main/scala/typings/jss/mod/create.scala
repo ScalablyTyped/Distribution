@@ -1,6 +1,6 @@
 package typings.jss.mod
 
-import typings.jss.PartialJssOptions
+import typings.jss.anon.PartialJssOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

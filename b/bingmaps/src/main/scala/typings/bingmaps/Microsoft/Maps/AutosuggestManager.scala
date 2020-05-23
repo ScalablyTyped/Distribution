@@ -4,15 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.AutosuggestManager")
 @js.native
-/**
-  * @constructor
-  * @requires The Microsoft.Maps.Autosuggest module.
-  * @param options The options to use with the autosuggest manager.
-  */
-class AutosuggestManager () extends js.Object {
-  def this(options: IAutosuggestOptions) = this()
+trait AutosuggestManager extends js.Object {
   /**
     * Attaches the Autosuggest functionality to an input box.
     * @param suggestionBoxId The HTML element identifier of the input box.

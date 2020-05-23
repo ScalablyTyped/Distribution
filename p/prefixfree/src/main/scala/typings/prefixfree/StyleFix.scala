@@ -1,6 +1,5 @@
 package typings.prefixfree
 
-import org.scalablytyped.runtime.TopLevel
 import typings.prefixfree.StyleFix.StyleFixer
 import typings.std.Element
 import typings.std.ElementCSSInlineStyle
@@ -29,7 +28,7 @@ trait StyleFix extends js.Object {
 
 @JSGlobal("StyleFix")
 @js.native
-object StyleFix extends TopLevel[StyleFix] {
+object StyleFix extends js.Object {
   type StyleFixer = js.Function3[/* css */ String, /* raw */ Boolean, /* element */ Element, String]
 }
 

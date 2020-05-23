@@ -7,17 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientGlobalEvents.EndCallback event.
   */
-@JSGlobal("ASPxClientGlobalEndCallbackEventArgs")
-@js.native
-class ASPxClientGlobalEndCallbackEventArgs protected () extends ASPxClientEndCallbackEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGlobalEndCallbackEventArgs class.
-    * @param control An ASPxClientControl class descendant object that is the control that initiated a callback.
-    */
-  def this(control: ASPxClientControl) = this()
+trait ASPxClientGlobalEndCallbackEventArgs extends ASPxClientEndCallbackEventArgs {
   /**
     * Gets an object that initiated a callback.
     */
-  var control: ASPxClientControl = js.native
+  var control: ASPxClientControl
+}
+
+object ASPxClientGlobalEndCallbackEventArgs {
+  @scala.inline
+  def apply(command: String, control: ASPxClientControl): ASPxClientGlobalEndCallbackEventArgs = {
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGlobalEndCallbackEventArgs]
+  }
 }
 

@@ -21,7 +21,7 @@ trait PanelHeadProps
 object PanelHeadProps {
   @scala.inline
   def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
     description: String = null,
     headingLevel: `2` | `3` | `4` | `5` | `6` = null,

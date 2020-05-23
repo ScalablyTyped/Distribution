@@ -1,16 +1,13 @@
 package typings.officeUiFabricReact.scrollablePaneDefaultExampleMod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/ScrollablePane/examples/ScrollablePane.Default.Example", "ScrollablePaneDefaultExample")
 @js.native
-class ScrollablePaneDefaultExample protected ()
-  extends Component[js.Object, js.Object, js.Any] {
-  def this(props: js.Any) = this()
-  var _createContentArea: js.Any = js.native
-  var _items: js.Any = js.native
-}
+object ScrollablePaneDefaultExample
+  extends TopLevel[FunctionComponent[js.Object]]
 

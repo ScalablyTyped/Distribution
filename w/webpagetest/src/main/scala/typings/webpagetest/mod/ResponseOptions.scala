@@ -11,9 +11,9 @@ trait ResponseOptions extends js.Object {
 
 object ResponseOptions {
   @scala.inline
-  def apply(request: Int | Double = null): ResponseOptions = {
+  def apply(request: js.UndefOr[Double] = js.undefined): ResponseOptions = {
     val __obj = js.Dynamic.literal()
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (!js.isUndefined(request)) __obj.updateDynamic("request")(request.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseOptions]
   }
 }

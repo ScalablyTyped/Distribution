@@ -14,10 +14,13 @@ trait ISetIamPolicyRequest extends js.Object {
 
 object ISetIamPolicyRequest {
   @scala.inline
-  def apply(policy: IPolicy = null, resource: String = null): ISetIamPolicyRequest = {
+  def apply(
+    policy: js.UndefOr[Null | IPolicy] = js.undefined,
+    resource: js.UndefOr[Null | String] = js.undefined
+  ): ISetIamPolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (!js.isUndefined(policy)) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (!js.isUndefined(resource)) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetIamPolicyRequest]
   }
 }

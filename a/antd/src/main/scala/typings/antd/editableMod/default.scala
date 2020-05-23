@@ -1,6 +1,6 @@
 package typings.antd.editableMod
 
-import typings.antd.PartialEditableState
+import typings.antd.anon.PartialEditableState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

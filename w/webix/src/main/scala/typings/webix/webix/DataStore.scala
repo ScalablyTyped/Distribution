@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import typings.webix.webix.ui.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -97,8 +96,4 @@ trait DataStore extends js.Object {
   def updateItem(id: String, data: js.Any): Unit = js.native
   def updateItem(id: Double, data: js.Any): Unit = js.native
 }
-
-@JSGlobal("webix.DataStore")
-@js.native
-object DataStore extends TopLevel[DataStore]
 

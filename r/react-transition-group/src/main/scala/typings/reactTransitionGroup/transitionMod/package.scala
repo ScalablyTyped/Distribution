@@ -5,9 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object transitionMod {
-  type EndHandler = js.Function2[/* node */ typings.std.HTMLElement, /* done */ js.Function0[scala.Unit], scala.Unit]
-  type EnterHandler = js.Function2[/* node */ typings.std.HTMLElement, /* isAppearing */ scala.Boolean, scala.Unit]
-  type ExitHandler = js.Function1[/* node */ typings.std.HTMLElement, scala.Unit]
+  type EndHandler[RefElement /* <: js.UndefOr[typings.std.HTMLElement] */] = typings.reactTransitionGroup.transitionMod.RefHandler[
+    RefElement, 
+    js.Function2[/* node */ typings.std.HTMLElement, /* done */ js.Function0[scala.Unit], scala.Unit], 
+    js.Function1[/* done */ js.Function0[scala.Unit], scala.Unit]
+  ]
+  type EnterHandler[RefElement /* <: js.UndefOr[typings.std.HTMLElement] */] = typings.reactTransitionGroup.transitionMod.RefHandler[
+    RefElement, 
+    js.Function2[/* node */ typings.std.HTMLElement, /* isAppearing */ scala.Boolean, scala.Unit], 
+    js.Function1[/* isAppearing */ scala.Boolean, scala.Unit]
+  ]
+  type ExitHandler[E /* <: js.UndefOr[typings.std.HTMLElement] */] = typings.reactTransitionGroup.transitionMod.RefHandler[
+    E, 
+    js.Function1[/* node */ typings.std.HTMLElement, scala.Unit], 
+    js.Function0[scala.Unit]
+  ]
+  type RefHandler[RefElement /* <: js.UndefOr[typings.std.HTMLElement] */, ImplicitRefHandler /* <: js.Function2[/* node */ typings.std.HTMLElement, /* repeated */ js.Any, scala.Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, scala.Unit] */] = /* import warning: importer.ImportType#apply Failed type conversion: react-transition-group.anon.Explicit<ImplicitRefHandler, ExplicitRefHandler>[RefElement extends undefined ? 'implicit' : 'explicit'] */ js.Any
   /**
     * The Transition component lets you describe a transition from one component
     * state to another _over time_ with a simple declarative API. Most commonly
@@ -49,9 +62,14 @@ package object transitionMod {
     * ```
     *
     */
-  type Transition = typings.react.mod.Component[typings.reactTransitionGroup.transitionMod.TransitionProps, js.Object, js.Any]
+  type Transition[RefElement /* <: js.UndefOr[typings.std.HTMLElement] */] = typings.react.mod.Component[
+    typings.reactTransitionGroup.transitionMod.TransitionProps[RefElement], 
+    js.Object, 
+    js.Any
+  ]
   type TransitionChildren = typings.react.mod.ReactNode | (js.Function1[
     /* status */ typings.reactTransitionGroup.transitionMod.TransitionStatus, 
     typings.react.mod.ReactNode
   ])
+  type TransitionStatus = /* "entering" */ java.lang.String
 }

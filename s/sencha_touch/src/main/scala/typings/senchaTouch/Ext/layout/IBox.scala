@@ -11,21 +11,21 @@ trait IBox extends IDefault {
   /** [Config Option] (String) */
   var align: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of align
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getAlign: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of orient
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getOrient: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of pack
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPack: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method]
-  		* @param item Object
-  		* @param isInner Object
-  		*/
+    * @param item Object
+    * @param isInner Object
+    */
   @JSName("onItemInnerStateChange")
   var onItemInnerStateChange_IBox: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* isInner */ js.UndefOr[js.Any], Unit]
@@ -33,16 +33,16 @@ trait IBox extends IDefault {
   /** [Config Option] (String) */
   var pack: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of align
-  		* @param align String The new value.
-  		*/
+    * @param align String The new value.
+    */
   var setAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of orient
-  		* @param orient String The new value.
-  		*/
+    * @param orient String The new value.
+    */
   var setOrient: js.UndefOr[js.Function1[/* orient */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of pack
-  		* @param pack String The new value.
-  		*/
+    * @param pack String The new value.
+    */
   var setPack: js.UndefOr[js.Function1[/* pack */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -166,7 +166,7 @@ object IBox {
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setOrient != null) __obj.updateDynamic("setOrient")(js.Any.fromFunction1(setOrient))
     if (setPack != null) __obj.updateDynamic("setPack")(js.Any.fromFunction1(setPack))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

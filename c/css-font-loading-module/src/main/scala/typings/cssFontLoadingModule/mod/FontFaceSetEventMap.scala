@@ -1,6 +1,6 @@
 package typings.cssFontLoadingModule.mod
 
-import typings.cssFontLoadingModule.mod._Global_.FontFaceSetLoadEvent
+import typings.cssFontLoadingModule.mod.global.FontFaceSetLoadEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

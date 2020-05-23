@@ -1,7 +1,6 @@
 package typings.xmlCore.errorMod
 
 import typings.std.Error
-import typings.xmlCore.xmlCoreStrings.XMLJS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +14,6 @@ class XmlError protected () extends Error {
   override var message: String = js.native
   /* CompleteClass */
   override var name: String = js.native
-  val prefix: XMLJS = js.native
+  val prefix: /* "XMLJS" */ String = js.native
 }
 

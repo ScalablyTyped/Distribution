@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Pickers.Provider.TargetFileRequest")
-@js.native
-class TargetFileRequest () extends ITargetFileRequest {
-  /* CompleteClass */
-  override var targetFile: IStorageFile = js.native
-  /* CompleteClass */
-  override def getDeferral(): TargetFileRequestDeferral = js.native
+trait TargetFileRequest extends ITargetFileRequest
+
+object TargetFileRequest {
+  @scala.inline
+  def apply(getDeferral: () => TargetFileRequestDeferral, targetFile: IStorageFile): TargetFileRequest = {
+    val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), targetFile = targetFile.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetFileRequest]
+  }
 }
 

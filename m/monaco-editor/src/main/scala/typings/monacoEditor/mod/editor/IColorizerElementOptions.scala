@@ -11,10 +11,10 @@ trait IColorizerElementOptions extends IColorizerOptions {
 
 object IColorizerElementOptions {
   @scala.inline
-  def apply(mimeType: String = null, tabSize: Int | Double = null, theme: String = null): IColorizerElementOptions = {
+  def apply(mimeType: String = null, tabSize: js.UndefOr[Double] = js.undefined, theme: String = null): IColorizerElementOptions = {
     val __obj = js.Dynamic.literal()
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorizerElementOptions]
   }

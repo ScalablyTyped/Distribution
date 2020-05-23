@@ -1,14 +1,14 @@
 package typings.reactImageGallery.mod
 
 import typings.react.mod.ReactNode
-import typings.reactImageGallery.AnonCurrentIndex
+import typings.reactImageGallery.anon.CurrentIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactImageGalleryItem extends js.Object {
   var bulletClass: js.UndefOr[String] = js.undefined
-  var bulletOnClick: js.UndefOr[js.Function1[/* hasItemItemIndexCurrentIndex */ AnonCurrentIndex, Unit]] = js.undefined
+  var bulletOnClick: js.UndefOr[js.Function1[/* hasItemItemIndexCurrentIndex */ CurrentIndex, Unit]] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var fullscreen: js.UndefOr[String] = js.undefined
   var original: js.UndefOr[String] = js.undefined
@@ -30,7 +30,7 @@ object ReactImageGalleryItem {
   @scala.inline
   def apply(
     bulletClass: String = null,
-    bulletOnClick: /* hasItemItemIndexCurrentIndex */ AnonCurrentIndex => Unit = null,
+    bulletOnClick: /* hasItemItemIndexCurrentIndex */ CurrentIndex => Unit = null,
     description: String = null,
     fullscreen: String = null,
     original: String = null,

@@ -30,11 +30,11 @@ object DescribeDashboardRequest {
     AwsAccountId: AwsAccountId,
     DashboardId: RestrictiveResourceId,
     AliasName: AliasName = null,
-    VersionNumber: Int | scala.Double = null
+    VersionNumber: js.UndefOr[VersionNumber] = js.undefined
   ): DescribeDashboardRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any])
     if (AliasName != null) __obj.updateDynamic("AliasName")(AliasName.asInstanceOf[js.Any])
-    if (VersionNumber != null) __obj.updateDynamic("VersionNumber")(VersionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDashboardRequest]
   }
 }

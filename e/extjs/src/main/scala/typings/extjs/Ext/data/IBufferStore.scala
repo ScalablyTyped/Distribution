@@ -41,7 +41,7 @@ object IBufferStore {
     commitChanges: () => Unit = null,
     config: js.Any = null,
     count: /* grouped */ js.UndefOr[Boolean] => Double = null,
-    currentPage: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     defaultProxyType: String = null,
     defaultSortDirection: String = null,
@@ -98,7 +98,7 @@ object IBufferStore {
     isSortable: js.UndefOr[Boolean] = js.undefined,
     isStore: js.UndefOr[Boolean] = js.undefined,
     last: /* grouped */ js.UndefOr[Boolean] => _ = null,
-    leadingBufferZone: Int | Double = null,
+    leadingBufferZone: js.UndefOr[Double] = js.undefined,
     listeners: js.Any = null,
     load: /* options */ js.UndefOr[js.Any] => Unit = null,
     loadData: (/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[Boolean]) => Unit = null,
@@ -113,13 +113,13 @@ object IBufferStore {
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     nextPage: /* options */ js.UndefOr[js.Any] => Unit = null,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     prefetch: /* options */ js.UndefOr[js.Any] => Unit = null,
     prefetchPage: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit = null,
     prefetchRange: (/* start */ js.UndefOr[js.Any], /* end */ js.UndefOr[js.Any]) => Unit = null,
     previousPage: /* options */ js.UndefOr[js.Any] => Unit = null,
     proxy: js.Any = null,
-    purgePageCount: Int | Double = null,
+    purgePageCount: js.UndefOr[Double] = js.undefined,
     query: (/* property */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IMixedCollection = null,
     queryBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection = null,
     rejectChanges: () => Unit = null,
@@ -157,7 +157,7 @@ object IBufferStore {
     suspendEvent: /* repeated */ js.Any => Unit = null,
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     sync: /* options */ js.UndefOr[js.Any] => IStore = null,
-    trailingBufferZone: Int | Double = null,
+    trailingBufferZone: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null
   ): IBufferStore = {
@@ -171,12 +171,12 @@ object IBufferStore {
     if (aggregate != null) __obj.updateDynamic("aggregate")(js.Any.fromFunction4(aggregate))
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
     if (autoLoad != null) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.get.asInstanceOf[js.Any])
     if (average != null) __obj.updateDynamic("average")(js.Any.fromFunction2(average))
     if (batchUpdateMode != null) __obj.updateDynamic("batchUpdateMode")(batchUpdateMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered.get.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
@@ -184,13 +184,13 @@ object IBufferStore {
     if (clearGrouping != null) __obj.updateDynamic("clearGrouping")(js.Any.fromFunction0(clearGrouping))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
-    if (!js.isUndefined(clearOnPageLoad)) __obj.updateDynamic("clearOnPageLoad")(clearOnPageLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearRemovedOnLoad)) __obj.updateDynamic("clearRemovedOnLoad")(clearRemovedOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnPageLoad)) __obj.updateDynamic("clearOnPageLoad")(clearOnPageLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearRemovedOnLoad)) __obj.updateDynamic("clearRemovedOnLoad")(clearRemovedOnLoad.get.asInstanceOf[js.Any])
     if (collect != null) __obj.updateDynamic("collect")(js.Any.fromFunction3(collect))
     if (commitChanges != null) __obj.updateDynamic("commitChanges")(js.Any.fromFunction0(commitChanges))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(js.Any.fromFunction1(count))
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (defaultProxyType != null) __obj.updateDynamic("defaultProxyType")(defaultProxyType.asInstanceOf[js.Any])
     if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection.asInstanceOf[js.Any])
@@ -200,7 +200,7 @@ object IBufferStore {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (filterBy != null) __obj.updateDynamic("filterBy")(js.Any.fromFunction2(filterBy))
-    if (!js.isUndefined(filterOnLoad)) __obj.updateDynamic("filterOnLoad")(filterOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterOnLoad)) __obj.updateDynamic("filterOnLoad")(filterOnLoad.get.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (find != null) __obj.updateDynamic("find")(js.Any.fromFunction6(find))
     if (findBy != null) __obj.updateDynamic("findBy")(js.Any.fromFunction3(findBy))
@@ -239,15 +239,15 @@ object IBufferStore {
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initSortable != null) __obj.updateDynamic("initSortable")(js.Any.fromFunction0(initSortable))
     if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction2(insert))
-    if (!js.isUndefined(isDestroyed)) __obj.updateDynamic("isDestroyed")(isDestroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDestroyed)) __obj.updateDynamic("isDestroyed")(isDestroyed.get.asInstanceOf[js.Any])
     if (isFiltered != null) __obj.updateDynamic("isFiltered")(js.Any.fromFunction0(isFiltered))
     if (isGrouped != null) __obj.updateDynamic("isGrouped")(js.Any.fromFunction0(isGrouped))
     if (isLoading != null) __obj.updateDynamic("isLoading")(js.Any.fromFunction0(isLoading))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStore)) __obj.updateDynamic("isStore")(isStore.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStore)) __obj.updateDynamic("isStore")(isStore.get.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction1(last))
-    if (leadingBufferZone != null) __obj.updateDynamic("leadingBufferZone")(leadingBufferZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(leadingBufferZone)) __obj.updateDynamic("leadingBufferZone")(leadingBufferZone.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction2(loadData))
@@ -262,21 +262,21 @@ object IBufferStore {
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (nextPage != null) __obj.updateDynamic("nextPage")(js.Any.fromFunction1(nextPage))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (prefetch != null) __obj.updateDynamic("prefetch")(js.Any.fromFunction1(prefetch))
     if (prefetchPage != null) __obj.updateDynamic("prefetchPage")(js.Any.fromFunction2(prefetchPage))
     if (prefetchRange != null) __obj.updateDynamic("prefetchRange")(js.Any.fromFunction2(prefetchRange))
     if (previousPage != null) __obj.updateDynamic("previousPage")(js.Any.fromFunction1(previousPage))
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (purgePageCount != null) __obj.updateDynamic("purgePageCount")(purgePageCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(purgePageCount)) __obj.updateDynamic("purgePageCount")(purgePageCount.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction5(query))
     if (queryBy != null) __obj.updateDynamic("queryBy")(js.Any.fromFunction2(queryBy))
     if (rejectChanges != null) __obj.updateDynamic("rejectChanges")(js.Any.fromFunction0(rejectChanges))
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
     if (reload != null) __obj.updateDynamic("reload")(js.Any.fromFunction1(reload))
-    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteGroup)) __obj.updateDynamic("remoteGroup")(remoteGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteGroup)) __obj.updateDynamic("remoteGroup")(remoteGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort.get.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction1(removeAll))
     if (removeAt != null) __obj.updateDynamic("removeAt")(js.Any.fromFunction2(removeAt))
@@ -291,14 +291,14 @@ object IBufferStore {
     if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction0(save))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setProxy != null) __obj.updateDynamic("setProxy")(js.Any.fromFunction1(setProxy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction0(sort))
-    if (!js.isUndefined(sortOnFilter)) __obj.updateDynamic("sortOnFilter")(sortOnFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortOnLoad)) __obj.updateDynamic("sortOnLoad")(sortOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortOnFilter)) __obj.updateDynamic("sortOnFilter")(sortOnFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortOnLoad)) __obj.updateDynamic("sortOnLoad")(sortOnLoad.get.asInstanceOf[js.Any])
     if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot.asInstanceOf[js.Any])
     if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])
-    if (!js.isUndefined(statefulFilters)) __obj.updateDynamic("statefulFilters")(statefulFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(statefulFilters)) __obj.updateDynamic("statefulFilters")(statefulFilters.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (storeId != null) __obj.updateDynamic("storeId")(storeId.asInstanceOf[js.Any])
     if (sum != null) __obj.updateDynamic("sum")(js.Any.fromFunction2(sum))
@@ -306,7 +306,7 @@ object IBufferStore {
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
     if (sync != null) __obj.updateDynamic("sync")(js.Any.fromFunction1(sync))
-    if (trailingBufferZone != null) __obj.updateDynamic("trailingBufferZone")(trailingBufferZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailingBufferZone)) __obj.updateDynamic("trailingBufferZone")(trailingBufferZone.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBufferStore]

@@ -20,14 +20,14 @@ object CreateUnitOptions {
   @scala.inline
   def apply(
     aliases: js.Array[String] = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     `override`: js.UndefOr[Boolean] = js.undefined,
     prefixes: none | short | long | binary_short | binary_long = null
   ): CreateUnitOptions = {
     val __obj = js.Dynamic.literal()
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.get.asInstanceOf[js.Any])
     if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUnitOptions]
   }

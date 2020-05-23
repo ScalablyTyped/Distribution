@@ -25,10 +25,10 @@ trait ScaleRangeLayerProperties extends js.Object {
 
 object ScaleRangeLayerProperties {
   @scala.inline
-  def apply(maxScale: Int | Double = null, minScale: Int | Double = null): ScaleRangeLayerProperties = {
+  def apply(maxScale: js.UndefOr[Double] = js.undefined, minScale: js.UndefOr[Double] = js.undefined): ScaleRangeLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScale)) __obj.updateDynamic("maxScale")(maxScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScale)) __obj.updateDynamic("minScale")(minScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleRangeLayerProperties]
   }
 }

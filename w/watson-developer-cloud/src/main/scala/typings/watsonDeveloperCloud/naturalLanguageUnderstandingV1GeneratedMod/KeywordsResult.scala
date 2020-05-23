@@ -21,16 +21,16 @@ trait KeywordsResult extends js.Object {
 object KeywordsResult {
   @scala.inline
   def apply(
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     emotion: EmotionScores = null,
-    relevance: Int | Double = null,
+    relevance: js.UndefOr[Double] = js.undefined,
     sentiment: FeatureSentimentResults = null,
     text: String = null
   ): KeywordsResult = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (emotion != null) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
-    if (relevance != null) __obj.updateDynamic("relevance")(relevance.asInstanceOf[js.Any])
+    if (!js.isUndefined(relevance)) __obj.updateDynamic("relevance")(relevance.get.asInstanceOf[js.Any])
     if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeywordsResult]

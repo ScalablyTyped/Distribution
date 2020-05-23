@@ -1,6 +1,6 @@
 package typings.grunt.grunt.util
 
-import typings.grunt.AnonCustom
+import typings.grunt.anon.Custom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait ISpawnOptions extends js.Object {
   /**
     * Additional options for the Node.js child_process spawn method.
     */
-  var opts: js.UndefOr[AnonCustom] = js.undefined
+  var opts: js.UndefOr[Custom] = js.undefined
 }
 
 object ISpawnOptions {
@@ -41,13 +41,13 @@ object ISpawnOptions {
     cmd: String = null,
     fallback: js.Any = null,
     grunt: js.UndefOr[Boolean] = js.undefined,
-    opts: AnonCustom = null
+    opts: Custom = null
   ): ISpawnOptions = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (cmd != null) __obj.updateDynamic("cmd")(cmd.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(grunt)) __obj.updateDynamic("grunt")(grunt.asInstanceOf[js.Any])
+    if (!js.isUndefined(grunt)) __obj.updateDynamic("grunt")(grunt.get.asInstanceOf[js.Any])
     if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpawnOptions]
   }

@@ -1,7 +1,7 @@
 package typings.nodeIpc.mod.NodeIPC
 
-import typings.nodeIpc.AnonFamily
-import typings.nodeIpc.AnonPrivate
+import typings.nodeIpc.anon.Family
+import typings.nodeIpc.anon.Private
 import typings.nodeIpc.nodeIpcStrings.ascii
 import typings.nodeIpc.nodeIpcStrings.base64
 import typings.nodeIpc.nodeIpcStrings.hex
@@ -37,7 +37,7 @@ trait Config extends js.Object {
     * Primarily used when specifying which interface a client should connect through.
     * see the socket.connect documentation in the node.js api https://nodejs.org/api/net.html#net_socket_connect_options_connectlistener
     */
-  var interfaces: AnonFamily
+  var interfaces: Family
   /**
     * Default: 5
     * Set the depth for util.inspect during ipc.log
@@ -107,7 +107,7 @@ trait Config extends js.Object {
     * Synchronous requests. Clients will not send new requests until the server answers
     */
   var sync: Boolean
-  var tls: AnonPrivate
+  var tls: Private
   /**
     * Default: true
     * Defaults to true meaning that the module will take care of deleting the IPC socket prior to startup.
@@ -128,7 +128,7 @@ object Config {
     appspace: String,
     encoding: ascii | utf8 | utf16le | ucs2 | base64 | hex,
     id: String,
-    interfaces: AnonFamily,
+    interfaces: Family,
     logDepth: Double,
     logInColor: Boolean,
     logger: String => Unit,
@@ -142,7 +142,7 @@ object Config {
     socketRoot: String,
     stopRetrying: Boolean,
     sync: Boolean,
-    tls: AnonPrivate,
+    tls: Private,
     unlink: Boolean
   ): Config = {
     val __obj = js.Dynamic.literal(appspace = appspace.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], logDepth = logDepth.asInstanceOf[js.Any], logInColor = logInColor.asInstanceOf[js.Any], logger = js.Any.fromFunction1(logger), maxConnections = maxConnections.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any], networkHost = networkHost.asInstanceOf[js.Any], networkPort = networkPort.asInstanceOf[js.Any], rawBuffer = rawBuffer.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], socketRoot = socketRoot.asInstanceOf[js.Any], stopRetrying = stopRetrying.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any], unlink = unlink.asInstanceOf[js.Any])

@@ -16,17 +16,17 @@ object Options {
   @scala.inline
   def apply(
     drain: js.UndefOr[Boolean] = js.undefined,
-    length: Int | Double = null,
-    speed: Int | Double = null,
-    time: Int | Double = null,
-    transferred: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined,
+    time: js.UndefOr[Double] = js.undefined,
+    transferred: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drain)) __obj.updateDynamic("drain")(drain.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (transferred != null) __obj.updateDynamic("transferred")(transferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(drain)) __obj.updateDynamic("drain")(drain.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transferred)) __obj.updateDynamic("transferred")(transferred.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

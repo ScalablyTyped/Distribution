@@ -1,7 +1,7 @@
 package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angular.mod._Global_.Function
+import typings.angular.mod.global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 trait IAttributes
   extends /**
-  * this is necessary to be able to access the scoped attributes. it's not very elegant
-  * because you have to use attrs['foo'] instead of attrs.foo but I don't know of a better way
-  * this should really be limited to return string but it creates this problem: http://stackoverflow.com/q/17201854/165656
+  * Indexer which should return ng.INgModelController for most properties but cannot because of "All named properties must be assignable to string indexer type" constraint - see https://github.com/Microsoft/TypeScript/issues/272
   */
 /* name */ StringDictionary[js.Any] {
   /**
@@ -77,12 +75,7 @@ object IAttributes {
     $removeClass: String => Unit,
     $set: (String, js.Any) => Unit,
     $updateClass: (String, String) => Unit,
-    StringDictionary: /**
-    * this is necessary to be able to access the scoped attributes. it's not very elegant
-    * because you have to use attrs['foo'] instead of attrs.foo but I don't know of a better way
-    * this should really be limited to return string but it creates this problem: http://stackoverflow.com/q/17201854/165656
-    */
-  /* name */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): IAttributes = {
     val __obj = js.Dynamic.literal($addClass = js.Any.fromFunction1($addClass), $attr = $attr.asInstanceOf[js.Any], $normalize = js.Any.fromFunction1($normalize), $observe = js.Any.fromFunction2($observe), $removeClass = js.Any.fromFunction1($removeClass), $set = js.Any.fromFunction2($set), $updateClass = js.Any.fromFunction2($updateClass))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

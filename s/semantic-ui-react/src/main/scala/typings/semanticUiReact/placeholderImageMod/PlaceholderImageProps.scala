@@ -22,8 +22,8 @@ object PlaceholderImageProps {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(rectangular)) __obj.updateDynamic("rectangular")(rectangular.asInstanceOf[js.Any])
-    if (!js.isUndefined(square)) __obj.updateDynamic("square")(square.asInstanceOf[js.Any])
+    if (!js.isUndefined(rectangular)) __obj.updateDynamic("rectangular")(rectangular.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(square)) __obj.updateDynamic("square")(square.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceholderImageProps]
   }
 }

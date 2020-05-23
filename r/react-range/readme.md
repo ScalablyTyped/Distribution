@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-range
 
-Typings are for version 1.6.0
+Typings are for version 1.6.6
 
 ## Library description:
 Range input. Slides in all directions.

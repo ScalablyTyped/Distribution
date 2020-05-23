@@ -59,13 +59,13 @@ object TouchBarScrubberConstructorOptions {
     showArrowButtons: js.UndefOr[Boolean] = js.undefined
   ): TouchBarScrubberConstructorOptions = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.asInstanceOf[js.Any])
+    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.get.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction1(highlight))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showArrowButtons)) __obj.updateDynamic("showArrowButtons")(showArrowButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(showArrowButtons)) __obj.updateDynamic("showArrowButtons")(showArrowButtons.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarScrubberConstructorOptions]
   }
 }

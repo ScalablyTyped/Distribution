@@ -31,10 +31,6 @@ class CancellationTokenSource () extends CancelableSource {
     */
   var _unlink: js.Any = js.native
   /**
-    * Gets a CancellationToken linked to this source.
-    */
-  val token: CancellationToken = js.native
-  /**
     * Cancels the source, evaluating any registered callbacks. If any callback raises an exception,
     * the exception is propagated to a host specific unhanedle exception mechanism.
     */
@@ -43,5 +39,9 @@ class CancellationTokenSource () extends CancelableSource {
     * Closes the source, preventing the possibility of future cancellation.
     */
   def close(): Unit = js.native
+  /**
+    * Gets a CancellationToken linked to this source.
+    */
+  def token: CancellationToken = js.native
 }
 

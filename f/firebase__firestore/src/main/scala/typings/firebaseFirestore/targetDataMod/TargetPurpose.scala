@@ -19,14 +19,12 @@ object TargetPurpose {
     * The query target was used to refill a query after an existence filter mismatch.
     */
   @scala.inline
-  def ExistenceFilterMismatch: `1` = this.cast(1)
+  def ExistenceFilterMismatch: `1` = 1.asInstanceOf[`1`]
   /** The query target was used to resolve a limbo document. */
   @scala.inline
-  def LimboResolution: `2` = this.cast(2)
+  def LimboResolution: `2` = 2.asInstanceOf[`2`]
   /** A regular, normal query target. */
   @scala.inline
-  def Listen: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Listen: `0` = 0.asInstanceOf[`0`]
 }
 

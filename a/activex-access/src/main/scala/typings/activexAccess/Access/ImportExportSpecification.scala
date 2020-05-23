@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.ImportExportSpecification")
 @js.native
-class ImportExportSpecification protected () extends js.Object {
+trait ImportExportSpecification extends js.Object {
   @JSName("Access.ImportExportSpecification_typekey")
   var AccessDotImportExportSpecification_typekey: ImportExportSpecification = js.native
   val Application: typings.activexAccess.Access.Application = js.native

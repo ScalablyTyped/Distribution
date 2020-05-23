@@ -11,9 +11,9 @@ trait AppearancePreferences extends js.Object {
 
 object AppearancePreferences {
   @scala.inline
-  def apply(colorScheme: ColorSchemeName = null): AppearancePreferences = {
+  def apply(colorScheme: js.UndefOr[Null | ColorSchemeName] = js.undefined): AppearancePreferences = {
     val __obj = js.Dynamic.literal()
-    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorScheme)) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppearancePreferences]
   }
 }

@@ -53,20 +53,20 @@ object ServerInfoProperties {
   @scala.inline
   def apply(
     adminTokenServiceUrl: String = null,
-    currentVersion: Int | Double = null,
+    currentVersion: js.UndefOr[Double] = js.undefined,
     hasPortal: js.UndefOr[Boolean] = js.undefined,
     hasServer: js.UndefOr[Boolean] = js.undefined,
     server: String = null,
-    shortLivedTokenValidity: Int | Double = null,
+    shortLivedTokenValidity: js.UndefOr[Double] = js.undefined,
     tokenServiceUrl: String = null
   ): ServerInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (adminTokenServiceUrl != null) __obj.updateDynamic("adminTokenServiceUrl")(adminTokenServiceUrl.asInstanceOf[js.Any])
-    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasPortal)) __obj.updateDynamic("hasPortal")(hasPortal.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasServer)) __obj.updateDynamic("hasServer")(hasServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentVersion)) __obj.updateDynamic("currentVersion")(currentVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasPortal)) __obj.updateDynamic("hasPortal")(hasPortal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasServer)) __obj.updateDynamic("hasServer")(hasServer.get.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (shortLivedTokenValidity != null) __obj.updateDynamic("shortLivedTokenValidity")(shortLivedTokenValidity.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortLivedTokenValidity)) __obj.updateDynamic("shortLivedTokenValidity")(shortLivedTokenValidity.get.asInstanceOf[js.Any])
     if (tokenServiceUrl != null) __obj.updateDynamic("tokenServiceUrl")(tokenServiceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInfoProperties]
   }

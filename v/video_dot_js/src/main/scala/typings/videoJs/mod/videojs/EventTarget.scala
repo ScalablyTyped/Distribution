@@ -2,8 +2,7 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.CustomEvent
-import typings.std.Event_
-import typings.videoJs.mod.videojs.EventTarget.Event
+import typings.std.Event
 import typings.videoJs.mod.videojs.EventTarget.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,7 +42,7 @@ trait EventTarget extends js.Object {
     * @see {@link EventTarget#trigger}
     */
   def dispatchEvent(event: String): Unit = js.native
-  def dispatchEvent(event: Event_): Unit = js.native
+  def dispatchEvent(event: Event): Unit = js.native
   /**
     * Removes an `event listener` for a specific event from an instance of `EventTarget`.
     * This makes it so that the `event listener` will no longer get called when the
@@ -113,7 +112,7 @@ trait EventTarget extends js.Object {
     *        an event name.
     */
   def trigger(event: String): Unit = js.native
-  def trigger(event: Event): Unit = js.native
+  def trigger(event: typings.videoJs.mod.videojs.EventTarget.Event): Unit = js.native
 }
 
 @JSImport("video.js", "videojs.EventTarget")
@@ -137,6 +136,10 @@ object EventTarget extends js.Object {
     * @param [hash]
     *        hash of data sent during the event
     */
-  type EventListener = js.Function2[/* e */ Event, /* data */ js.UndefOr[js.Any], Unit]
+  type EventListener = js.Function2[
+    /* e */ typings.videoJs.mod.videojs.EventTarget.Event, 
+    /* data */ js.UndefOr[js.Any], 
+    Unit
+  ]
 }
 

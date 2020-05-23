@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,17 +24,6 @@ object MarkerSize extends js.Object {
   
   @js.native
   sealed trait TINY extends MarkerSize
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MarkerSize with Double] = js.native
-  /* 1 */ @js.native
-  object MID extends TopLevel[MID with Double]
-  
-  /* 2 */ @js.native
-  object SMALL extends TopLevel[SMALL with Double]
-  
-  /* 0 */ @js.native
-  object TINY extends TopLevel[TINY with Double]
   
 }
 

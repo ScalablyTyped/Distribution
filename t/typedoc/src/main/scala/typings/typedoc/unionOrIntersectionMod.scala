@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/converter/types/union-or-intersection", JSImport.Namespace)
 @js.native
 object unionOrIntersectionMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedoc.componentMod.ComponentHost because Already inherited
   - typings.typedoc.utilsEventsMod.EventDispatcher because Already inherited
   - typings.typedoc.componentMod.AbstractComponent because Already inherited

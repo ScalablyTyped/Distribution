@@ -58,7 +58,7 @@ object IonMenu {
   def apply(
     contentId: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    maxEdgeStart: Int | Double = null,
+    maxEdgeStart: js.UndefOr[Double] = js.undefined,
     menuId: String = null,
     onIonDidClose: /* event */ CustomEvent[Unit] => Unit = null,
     onIonDidOpen: /* event */ CustomEvent[Unit] => Unit = null,
@@ -70,15 +70,15 @@ object IonMenu {
   ): IonMenu = {
     val __obj = js.Dynamic.literal()
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (maxEdgeStart != null) __obj.updateDynamic("maxEdgeStart")(maxEdgeStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxEdgeStart)) __obj.updateDynamic("maxEdgeStart")(maxEdgeStart.get.asInstanceOf[js.Any])
     if (menuId != null) __obj.updateDynamic("menuId")(menuId.asInstanceOf[js.Any])
     if (onIonDidClose != null) __obj.updateDynamic("onIonDidClose")(js.Any.fromFunction1(onIonDidClose))
     if (onIonDidOpen != null) __obj.updateDynamic("onIonDidOpen")(js.Any.fromFunction1(onIonDidOpen))
     if (onIonWillClose != null) __obj.updateDynamic("onIonWillClose")(js.Any.fromFunction1(onIonWillClose))
     if (onIonWillOpen != null) __obj.updateDynamic("onIonWillOpen")(js.Any.fromFunction1(onIonWillOpen))
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeGesture)) __obj.updateDynamic("swipeGesture")(swipeGesture.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeGesture)) __obj.updateDynamic("swipeGesture")(swipeGesture.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenu]
   }

@@ -19,6 +19,8 @@ package object storagegatewayMod {
   type ActiveDirectoryStatus = typings.awsSdk.storagegatewayMod._ActiveDirectoryStatus | java.lang.String
   type AuditDestinationARN = java.lang.String
   type Authentication = java.lang.String
+  type AutomaticTapeCreationPolicyInfos = js.Array[typings.awsSdk.storagegatewayMod.AutomaticTapeCreationPolicyInfo]
+  type AutomaticTapeCreationRules = js.Array[typings.awsSdk.storagegatewayMod.AutomaticTapeCreationRule]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.COMPLETE
     - typings.awsSdk.awsSdkStrings.FAILED
@@ -100,6 +102,7 @@ package object storagegatewayMod {
   type LocationARN = java.lang.String
   type Marker = java.lang.String
   type MediumChangerType = java.lang.String
+  type MinimumNumTapes = scala.Double
   type MinuteOfHour = scala.Double
   type NFSFileShareInfoList = js.Array[typings.awsSdk.storagegatewayMod.NFSFileShareInfo]
   type NetworkInterfaceId = java.lang.String

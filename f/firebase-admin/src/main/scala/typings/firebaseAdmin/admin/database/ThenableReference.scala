@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @extends {admin.database.Reference}
+  * @extends {Reference}
   */
 @js.native
 trait ThenableReference

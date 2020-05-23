@@ -15,7 +15,7 @@ trait ApnsConfig extends js.Object {
   /**
     * Options for features provided by the FCM SDK for iOS.
     */
-  var fcmOptions: js.UndefOr[ApnsFcmOptions] = js.undefined
+  var fcmOptions: js.UndefOr[typings.firebaseAdmin.messagingMod.admin.messaging.ApnsFcmOptions] = js.undefined
   /**
     * A collection of APNs headers. Header values must be strings.
     */
@@ -23,15 +23,15 @@ trait ApnsConfig extends js.Object {
   /**
     * An APNs payload to be included in the message.
     */
-  var payload: js.UndefOr[ApnsPayload] = js.undefined
+  var payload: js.UndefOr[typings.firebaseAdmin.messagingMod.admin.messaging.ApnsPayload] = js.undefined
 }
 
 object ApnsConfig {
   @scala.inline
   def apply(
-    fcmOptions: ApnsFcmOptions = null,
+    fcmOptions: typings.firebaseAdmin.messagingMod.admin.messaging.ApnsFcmOptions = null,
     headers: StringDictionary[String] = null,
-    payload: ApnsPayload = null
+    payload: typings.firebaseAdmin.messagingMod.admin.messaging.ApnsPayload = null
   ): ApnsConfig = {
     val __obj = js.Dynamic.literal()
     if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions.asInstanceOf[js.Any])

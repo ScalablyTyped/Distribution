@@ -38,16 +38,16 @@ object CreateFileSystemLustreConfiguration {
     DeploymentType: LustreDeploymentType = null,
     ExportPath: ArchivePath = null,
     ImportPath: ArchivePath = null,
-    ImportedFileChunkSize: Int | Double = null,
-    PerUnitStorageThroughput: Int | Double = null,
+    ImportedFileChunkSize: js.UndefOr[Megabytes] = js.undefined,
+    PerUnitStorageThroughput: js.UndefOr[PerUnitStorageThroughput] = js.undefined,
     WeeklyMaintenanceStartTime: WeeklyTime = null
   ): CreateFileSystemLustreConfiguration = {
     val __obj = js.Dynamic.literal()
     if (DeploymentType != null) __obj.updateDynamic("DeploymentType")(DeploymentType.asInstanceOf[js.Any])
     if (ExportPath != null) __obj.updateDynamic("ExportPath")(ExportPath.asInstanceOf[js.Any])
     if (ImportPath != null) __obj.updateDynamic("ImportPath")(ImportPath.asInstanceOf[js.Any])
-    if (ImportedFileChunkSize != null) __obj.updateDynamic("ImportedFileChunkSize")(ImportedFileChunkSize.asInstanceOf[js.Any])
-    if (PerUnitStorageThroughput != null) __obj.updateDynamic("PerUnitStorageThroughput")(PerUnitStorageThroughput.asInstanceOf[js.Any])
+    if (!js.isUndefined(ImportedFileChunkSize)) __obj.updateDynamic("ImportedFileChunkSize")(ImportedFileChunkSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PerUnitStorageThroughput)) __obj.updateDynamic("PerUnitStorageThroughput")(PerUnitStorageThroughput.get.asInstanceOf[js.Any])
     if (WeeklyMaintenanceStartTime != null) __obj.updateDynamic("WeeklyMaintenanceStartTime")(WeeklyMaintenanceStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFileSystemLustreConfiguration]
   }

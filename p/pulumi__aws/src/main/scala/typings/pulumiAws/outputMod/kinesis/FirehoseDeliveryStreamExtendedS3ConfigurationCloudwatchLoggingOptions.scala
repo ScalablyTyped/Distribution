@@ -28,7 +28,7 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions {
     logStreamName: String = null
   ): FirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
     if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions]

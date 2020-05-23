@@ -10,7 +10,8 @@ class IonBackButtonDelegate protected ()
   extends typings.ionicAngular.ionBackButtonMod.IonBackButtonDelegate {
   def this(
     routerOutlet: typings.ionicAngular.ionRouterOutletMod.IonRouterOutlet,
-    navCtrl: typings.ionicAngular.navControllerMod.NavController
+    navCtrl: typings.ionicAngular.navControllerMod.NavController,
+    config: typings.ionicAngular.configMod.Config
   ) = this()
 }
 

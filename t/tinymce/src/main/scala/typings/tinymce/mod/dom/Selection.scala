@@ -3,7 +3,7 @@ package typings.tinymce.mod.dom
 import typings.std.Element
 import typings.std.Node
 import typings.std.Range
-import typings.std.Window_
+import typings.std.Window
 import typings.tinymce.mod.Editor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tinymce", "dom.Selection")
 @js.native
 class Selection protected () extends js.Object {
-  def this(dom: DOMUtils, win: Window_, editor: Editor, serializer: Serializer) = this()
+  def this(dom: DOMUtils, win: Window, editor: Editor, serializer: Serializer) = this()
   def collapse(): Unit = js.native
   def collapse(toStart: Boolean): Unit = js.native
   def getBookmark(): js.Object = js.native

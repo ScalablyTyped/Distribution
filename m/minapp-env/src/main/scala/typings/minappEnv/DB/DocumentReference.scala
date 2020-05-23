@@ -2,19 +2,16 @@ package typings.minappEnv.DB
 
 import typings.minappEnv.OQ
 import typings.minappEnv.Promise
-import typings.minappEnv.RQIGetDocumentOptions
-import typings.minappEnv.RQIRemoveSingleDocumentOp
-import typings.minappEnv.RQISetSingleDocumentOptio
-import typings.minappEnv.RQIUpdateSingleDocumentOp
+import typings.minappEnv.anon.RQIGetDocumentOptions
+import typings.minappEnv.anon.RQIRemoveSingleDocumentOp
+import typings.minappEnv.anon.RQISetSingleDocumentOptio
+import typings.minappEnv.anon.RQIUpdateSingleDocumentOp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DB.DocumentReference")
 @js.native
-class DocumentReference protected () extends js.Object {
-  protected def this(docId: String, database: Database) = this()
-  protected def this(docId: Double, database: Database) = this()
+trait DocumentReference extends js.Object {
   def field(`object`: js.Object): this.type = js.native
   // get(options?: IGetDocumentOptions): Promise<IQuerySingleResult> | void
   // set(options?: ISetSingleDocumentOptions): Promise<ISetResult> | void

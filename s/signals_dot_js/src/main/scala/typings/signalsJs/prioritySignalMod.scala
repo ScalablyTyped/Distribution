@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("signals.js/lib/org/osflash/signals/PrioritySignal", JSImport.Namespace)
 @js.native
 object prioritySignalMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.signalsJs.ioncesignalMod.IOnceSignal because Already inherited
   - typings.signalsJs.isignalMod.ISignal because Already inherited
   - typings.signalsJs.iprioritysignalMod.IPrioritySignal because var conflicts: numListeners, valueClasses. Inlined addWithPriority, addOnceWithPriority */ @js.native

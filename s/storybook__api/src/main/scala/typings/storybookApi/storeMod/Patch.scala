@@ -1,5 +1,6 @@
 package typings.storybookApi.storeMod
 
+import typings.history.mod.LocationState
 import typings.reachRouter.mod.NavigateFn
 import typings.reachRouter.mod.WindowLocation
 import typings.storybookApi.layoutMod.Layout
@@ -24,7 +25,7 @@ trait Patch extends js.Object {
   var dismissedVersionNotification: js.UndefOr[String] = js.undefined
   var lastVersionCheck: js.UndefOr[Double] = js.undefined
   var layout: js.UndefOr[Layout] = js.undefined
-  var location: js.UndefOr[WindowLocation] = js.undefined
+  var location: js.UndefOr[WindowLocation[LocationState]] = js.undefined
   var navigate: js.UndefOr[NavigateFn] = js.undefined
   var notifications: js.UndefOr[js.Array[Notification]] = js.undefined
   var path: js.UndefOr[String] = js.undefined
@@ -46,9 +47,9 @@ object Patch {
     customQueryParams: QueryParams = null,
     default: js.UndefOr[Boolean] = js.undefined,
     dismissedVersionNotification: String = null,
-    lastVersionCheck: Int | Double = null,
+    lastVersionCheck: js.UndefOr[Double] = js.undefined,
     layout: Layout = null,
-    location: WindowLocation = null,
+    location: WindowLocation[LocationState] = null,
     navigate: NavigateFn = null,
     notifications: js.Array[Notification] = null,
     path: String = null,
@@ -65,9 +66,9 @@ object Patch {
   ): Patch = {
     val __obj = js.Dynamic.literal()
     if (customQueryParams != null) __obj.updateDynamic("customQueryParams")(customQueryParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
     if (dismissedVersionNotification != null) __obj.updateDynamic("dismissedVersionNotification")(dismissedVersionNotification.asInstanceOf[js.Any])
-    if (lastVersionCheck != null) __obj.updateDynamic("lastVersionCheck")(lastVersionCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastVersionCheck)) __obj.updateDynamic("lastVersionCheck")(lastVersionCheck.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (navigate != null) __obj.updateDynamic("navigate")(navigate.asInstanceOf[js.Any])
@@ -75,7 +76,7 @@ object Patch {
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (selectedPanel != null) __obj.updateDynamic("selectedPanel")(selectedPanel.asInstanceOf[js.Any])
     if (shortcuts != null) __obj.updateDynamic("shortcuts")(shortcuts.asInstanceOf[js.Any])
-    if (!js.isUndefined(storiesConfigured)) __obj.updateDynamic("storiesConfigured")(storiesConfigured.asInstanceOf[js.Any])
+    if (!js.isUndefined(storiesConfigured)) __obj.updateDynamic("storiesConfigured")(storiesConfigured.get.asInstanceOf[js.Any])
     if (storiesHash != null) __obj.updateDynamic("storiesHash")(storiesHash.asInstanceOf[js.Any])
     if (storyId != null) __obj.updateDynamic("storyId")(storyId.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

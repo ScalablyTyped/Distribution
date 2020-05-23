@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialEdits
-import typings.plotlyJs.Partialfilenamestringscal
+import typings.plotlyJs.anon.PartialEdits
+import typings.plotlyJs.anon.Partialfilenamestringscal
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsNumbers.`0`
 import typings.plotlyJs.plotlyJsNumbers.`1`
@@ -39,22 +39,22 @@ trait Config extends js.Object {
   /** Which localization should we use? Should be a string like 'en' or 'en-US' */
   var locale: String
   /**
-  	 * Turn all console logging on or off (errors will be thrown)
-  	 * This should ONLY be set via Plotly.setPlotConfig
-  	 */
+    * Turn all console logging on or off (errors will be thrown)
+    * This should ONLY be set via Plotly.setPlotConfig
+    */
   var logging: Boolean | `0` | `1` | `2`
   /**
-  	 * Mapbox access token (required to plot mapbox trace types)
-  	 * If using an Mapbox Atlas server, set this option to '',
-  	 * so that plotly.js won't attempt to authenticate to the public Mapbox server.
-  	 */
+    * Mapbox access token (required to plot mapbox trace types)
+    * If using an Mapbox Atlas server, set this option to '',
+    * so that plotly.js won't attempt to authenticate to the public Mapbox server.
+    */
   var mapboxAccessToken: String
   /**
-  	 * fully custom mode bar buttons as nested array, where the outer
-  	 * arrays represents button groups, and the inner arrays have
-  	 * buttons config objects or names of default buttons
-  	 * (see ./components/modebar/buttons.js for more info)
-  	 */
+    * fully custom mode bar buttons as nested array, where the outer
+    * arrays represents button groups, and the inner arrays have
+    * buttons config objects or names of default buttons
+    * (see ./components/modebar/buttons.js for more info)
+    */
   var modeBarButtons: (js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false`
   /** add mode bar button using config objects (see ./components/modebar/buttons.js for list of arguments) */
   var modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons]
@@ -63,10 +63,10 @@ trait Config extends js.Object {
   /** increase the pixel ratio for Gl plot images */
   var plotGlPixelRatio: Double
   /**
-  	 * When set it determines base URL for the 'Edit in Chart Studio' `showEditInChartStudio`/`showSendToCloud` mode bar button and the showLink/sendData on-graph link.
-  	 * To enable sending your data to Chart Studio Cloud, you need to set both `plotlyServerURL` to 'https://chart-studio.plotly.com' and also set `showSendToCloud` to true.
-  	 * @default ''
-  	 */
+    * When set it determines base URL for the 'Edit in Chart Studio' `showEditInChartStudio`/`showSendToCloud` mode bar button and the showLink/sendData on-graph link.
+    * To enable sending your data to Chart Studio Cloud, you need to set both `plotlyServerURL` to 'https://chart-studio.plotly.com' and also set `showSendToCloud` to true.
+    * @default ''
+    */
   var plotlyServerURL: String
   /** set the length of the undo/redo queue */
   var queueLength: Double
@@ -81,22 +81,22 @@ trait Config extends js.Object {
   /** enable direct range entry at the pan/zoom drag points (drag handles must be enabled above) */
   var showAxisRangeEntryBoxes: Boolean
   /**
-  	 * Same as `showSendToCloud`, but use a pencil icon instead of a floppy-disk.
-  	 * Note that if both `showSendToCloud` and `showEditInChartStudio` are turned, only `showEditInChartStudio` will be honored.
-  	 * @default false
-  	 */
+    * Same as `showSendToCloud`, but use a pencil icon instead of a floppy-disk.
+    * Note that if both `showSendToCloud` and `showEditInChartStudio` are turned, only `showEditInChartStudio` will be honored.
+    * @default false
+    */
   var showEditInChartStudio: Boolean
   /** link to open this plot in plotly */
   var showLink: Boolean
   /**
-  	 * Should we include a ModeBar button, labeled "Edit in Chart Studio",
-  	 * that sends this chart to chart-studio.plotly.com (formerly plot.ly)
-  	 * or another plotly server as specified by `plotlyServerURL` for editing, export, etc?
-  	 * Prior to version 1.43.0 this button was included by default, now it is opt-in using this flag.
-  	 * Note that this button can (depending on `plotlyServerURL` being set) send your data to an external server.
-  	 * However that server does not persist your data until you arrive at the Chart Studio and explicitly click "Save".
-  	 * @default false
-  	 */
+    * Should we include a ModeBar button, labeled "Edit in Chart Studio",
+    * that sends this chart to chart-studio.plotly.com (formerly plot.ly)
+    * or another plotly server as specified by `plotlyServerURL` for editing, export, etc?
+    * Prior to version 1.43.0 this button was included by default, now it is opt-in using this flag.
+    * Note that this button can (depending on `plotlyServerURL` being set) send your data to an external server.
+    * However that server does not persist your data until you arrive at the Chart Studio and explicitly click "Save".
+    * @default false
+    */
   var showSendToCloud: Boolean
   /** false or function adding source(s) to linkText <text> */
   var showSources: Boolean
@@ -109,9 +109,9 @@ trait Config extends js.Object {
   /** URL to topojson files used in geo charts */
   var topojsonURL: String
   /**
-  	 * function to add the background color to a different container
-  	 * or 'opaque' to ensure there's white behind it
-  	 */
+    * function to add the background color to a different container
+    * or 'opaque' to ensure there's white behind it
+    */
   def setBackground(): String | opaque | transparent
 }
 

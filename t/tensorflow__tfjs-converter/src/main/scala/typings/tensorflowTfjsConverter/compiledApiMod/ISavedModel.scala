@@ -13,10 +13,13 @@ trait ISavedModel extends js.Object {
 
 object ISavedModel {
   @scala.inline
-  def apply(metaGraphs: js.Array[IMetaGraphDef] = null, savedModelSchemaVersion: Double | String = null): ISavedModel = {
+  def apply(
+    metaGraphs: js.UndefOr[Null | js.Array[IMetaGraphDef]] = js.undefined,
+    savedModelSchemaVersion: js.UndefOr[Null | Double | String] = js.undefined
+  ): ISavedModel = {
     val __obj = js.Dynamic.literal()
-    if (metaGraphs != null) __obj.updateDynamic("metaGraphs")(metaGraphs.asInstanceOf[js.Any])
-    if (savedModelSchemaVersion != null) __obj.updateDynamic("savedModelSchemaVersion")(savedModelSchemaVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(metaGraphs)) __obj.updateDynamic("metaGraphs")(metaGraphs.asInstanceOf[js.Any])
+    if (!js.isUndefined(savedModelSchemaVersion)) __obj.updateDynamic("savedModelSchemaVersion")(savedModelSchemaVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISavedModel]
   }
 }

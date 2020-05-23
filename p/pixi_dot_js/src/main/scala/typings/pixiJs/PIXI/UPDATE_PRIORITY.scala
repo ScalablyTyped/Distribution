@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,23 +40,6 @@ object UPDATE_PRIORITY extends js.Object {
   
   @js.native
   sealed trait UTILITY extends UPDATE_PRIORITY
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UPDATE_PRIORITY with Double] = js.native
-  /* 1 */ @js.native
-  object HIGH extends TopLevel[HIGH with Double]
-  
-  /* 0 */ @js.native
-  object INTERACTION extends TopLevel[INTERACTION with Double]
-  
-  /* 3 */ @js.native
-  object LOW extends TopLevel[LOW with Double]
-  
-  /* 2 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
-  
-  /* 4 */ @js.native
-  object UTILITY extends TopLevel[UTILITY with Double]
   
 }
 

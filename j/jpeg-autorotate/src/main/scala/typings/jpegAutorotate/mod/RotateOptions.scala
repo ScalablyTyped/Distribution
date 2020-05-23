@@ -10,9 +10,9 @@ trait RotateOptions extends js.Object {
 
 object RotateOptions {
   @scala.inline
-  def apply(quality: Int | Double = null): RotateOptions = {
+  def apply(quality: js.UndefOr[Double] = js.undefined): RotateOptions = {
     val __obj = js.Dynamic.literal()
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateOptions]
   }
 }

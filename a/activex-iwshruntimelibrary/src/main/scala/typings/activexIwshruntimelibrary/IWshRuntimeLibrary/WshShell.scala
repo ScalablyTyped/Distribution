@@ -14,9 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Shell Object */
-@JSGlobal("IWshRuntimeLibrary.WshShell")
 @js.native
-class WshShell protected () extends js.Object {
+trait WshShell extends js.Object {
   var CurrentDirectory: String = js.native
   /**
     * Note that **Environment** doesn't actually return a callable object; the call is only usable in the context of the **Environment** property. The following:

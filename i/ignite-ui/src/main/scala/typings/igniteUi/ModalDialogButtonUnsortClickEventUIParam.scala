@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait ModalDialogButtonUnsortClickEventUIParam extends js.Object {
   /**
-  	 * Gets the column key.
-  	 */
+    * Gets the column key.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to the modal dialog element. This is a jQuery object.
-  	 */
+    * Gets a reference to the modal dialog element. This is a jQuery object.
+    */
   var modalDialogElement: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets a reference to GridSorting.
-  	 */
+    * Gets a reference to GridSorting.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 

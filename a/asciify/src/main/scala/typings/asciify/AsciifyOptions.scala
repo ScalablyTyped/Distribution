@@ -12,11 +12,11 @@ trait AsciifyOptions extends js.Object {
 
 object AsciifyOptions {
   @scala.inline
-  def apply(color: String = null, font: String = null, maxWidth: Int | Double = null): AsciifyOptions = {
+  def apply(color: String = null, font: String = null, maxWidth: js.UndefOr[Double] = js.undefined): AsciifyOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsciifyOptions]
   }
 }

@@ -11,15 +11,14 @@ import scala.scalajs.js.annotation._
 object digestAuthenticationMod extends js.Object {
   @js.native
   class DigestAuthentication protected () extends js.Object {
-    def this(loggerFactory: LoggerFactory) = this()
-    def this(loggerFactory: LoggerFactory, username: String) = this()
-    def this(loggerFactory: LoggerFactory, username: js.UndefOr[scala.Nothing], password: String) = this()
     /**
       * Constructor.
       * @param loggerFactory - LoggerFactory.
       * @param username - Username.
       * @param password - Password.
       */
+    def this(loggerFactory: LoggerFactory) = this()
+    def this(loggerFactory: LoggerFactory, username: String) = this()
     def this(loggerFactory: LoggerFactory, username: String, password: String) = this()
     var algorithm: js.Any = js.native
     /**

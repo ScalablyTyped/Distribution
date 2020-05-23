@@ -15,6 +15,6 @@ package object jqueryAjaxfile {
     /* repeated */ typings.jqueryAjaxfile.JQueryPromiseCallback[js.Any] | js.Array[typings.jqueryAjaxfile.JQueryPromiseCallback[js.Any]], 
     typings.jqueryAjaxfile.JQueryPromise[U]
   ]
+  type Mocha = typings.jqueryAjaxfile.Mocha_
   type MochaDone = js.Function1[/* error */ js.UndefOr[typings.std.Error], scala.Unit]
-  type Mocha_ = typings.jqueryAjaxfile.Mocha__
 }

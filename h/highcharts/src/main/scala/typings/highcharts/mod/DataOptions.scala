@@ -189,12 +189,12 @@ object DataOptions {
     complete: /* chartOptions */ Options => Unit = null,
     csv: String = null,
     csvURL: String = null,
-    dataRefreshRate: Int | Double = null,
+    dataRefreshRate: js.UndefOr[Double] = js.undefined,
     dateFormat: OptionsDateFormatValue = null,
     decimalPoint: String = null,
     enablePolling: js.UndefOr[Boolean] = js.undefined,
-    endColumn: Int | Double = null,
-    endRow: Int | Double = null,
+    endColumn: js.UndefOr[Double] = js.undefined,
+    endRow: js.UndefOr[Double] = js.undefined,
     firstRowAsNames: js.UndefOr[Boolean] = js.undefined,
     googleSpreadsheetKey: String = null,
     googleSpreadsheetWorksheet: String = null,
@@ -205,8 +205,8 @@ object DataOptions {
     rows: js.Array[js.Array[DataValueType]] = null,
     rowsURL: String = null,
     seriesMapping: js.Array[Dictionary[Double]] = null,
-    startColumn: Int | Double = null,
-    startRow: Int | Double = null,
+    startColumn: js.UndefOr[Double] = js.undefined,
+    startRow: js.UndefOr[Double] = js.undefined,
     switchRowsAndColumns: js.UndefOr[Boolean] = js.undefined,
     table: String | HTMLElement = null
   ): DataOptions = {
@@ -217,13 +217,13 @@ object DataOptions {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (csv != null) __obj.updateDynamic("csv")(csv.asInstanceOf[js.Any])
     if (csvURL != null) __obj.updateDynamic("csvURL")(csvURL.asInstanceOf[js.Any])
-    if (dataRefreshRate != null) __obj.updateDynamic("dataRefreshRate")(dataRefreshRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataRefreshRate)) __obj.updateDynamic("dataRefreshRate")(dataRefreshRate.get.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
     if (decimalPoint != null) __obj.updateDynamic("decimalPoint")(decimalPoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePolling)) __obj.updateDynamic("enablePolling")(enablePolling.asInstanceOf[js.Any])
-    if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
-    if (endRow != null) __obj.updateDynamic("endRow")(endRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstRowAsNames)) __obj.updateDynamic("firstRowAsNames")(firstRowAsNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePolling)) __obj.updateDynamic("enablePolling")(enablePolling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endColumn)) __obj.updateDynamic("endColumn")(endColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endRow)) __obj.updateDynamic("endRow")(endRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstRowAsNames)) __obj.updateDynamic("firstRowAsNames")(firstRowAsNames.get.asInstanceOf[js.Any])
     if (googleSpreadsheetKey != null) __obj.updateDynamic("googleSpreadsheetKey")(googleSpreadsheetKey.asInstanceOf[js.Any])
     if (googleSpreadsheetWorksheet != null) __obj.updateDynamic("googleSpreadsheetWorksheet")(googleSpreadsheetWorksheet.asInstanceOf[js.Any])
     if (itemDelimiter != null) __obj.updateDynamic("itemDelimiter")(itemDelimiter.asInstanceOf[js.Any])
@@ -233,9 +233,9 @@ object DataOptions {
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (rowsURL != null) __obj.updateDynamic("rowsURL")(rowsURL.asInstanceOf[js.Any])
     if (seriesMapping != null) __obj.updateDynamic("seriesMapping")(seriesMapping.asInstanceOf[js.Any])
-    if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])
-    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(switchRowsAndColumns)) __obj.updateDynamic("switchRowsAndColumns")(switchRowsAndColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(startColumn)) __obj.updateDynamic("startColumn")(startColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(switchRowsAndColumns)) __obj.updateDynamic("switchRowsAndColumns")(switchRowsAndColumns.get.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataOptions]
   }

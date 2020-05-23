@@ -50,29 +50,29 @@ trait InspectOptions extends js.Object {
 object InspectOptions {
   @scala.inline
   def apply(
-    breakLength: Int | Double = null,
+    breakLength: js.UndefOr[Double] = js.undefined,
     colors: js.UndefOr[Boolean] = js.undefined,
     compact: Boolean | Double = null,
     customInspect: js.UndefOr[Boolean] = js.undefined,
-    depth: Int | Double = null,
+    depth: js.UndefOr[Null | Double] = js.undefined,
     getters: get | set | Boolean = null,
-    maxArrayLength: Int | Double = null,
-    maxStringLength: Int | Double = null,
+    maxArrayLength: js.UndefOr[Null | Double] = js.undefined,
+    maxStringLength: js.UndefOr[Null | Double] = js.undefined,
     showHidden: js.UndefOr[Boolean] = js.undefined,
     showProxy: js.UndefOr[Boolean] = js.undefined,
     sorted: Boolean | (js.Function2[/* a */ String, /* b */ String, Double]) = null
   ): InspectOptions = {
     val __obj = js.Dynamic.literal()
-    if (breakLength != null) __obj.updateDynamic("breakLength")(breakLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakLength)) __obj.updateDynamic("breakLength")(breakLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
     if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(customInspect)) __obj.updateDynamic("customInspect")(customInspect.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(customInspect)) __obj.updateDynamic("customInspect")(customInspect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
-    if (maxArrayLength != null) __obj.updateDynamic("maxArrayLength")(maxArrayLength.asInstanceOf[js.Any])
-    if (maxStringLength != null) __obj.updateDynamic("maxStringLength")(maxStringLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(showProxy)) __obj.updateDynamic("showProxy")(showProxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxArrayLength)) __obj.updateDynamic("maxArrayLength")(maxArrayLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxStringLength)) __obj.updateDynamic("maxStringLength")(maxStringLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showProxy)) __obj.updateDynamic("showProxy")(showProxy.get.asInstanceOf[js.Any])
     if (sorted != null) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
     __obj.asInstanceOf[InspectOptions]
   }

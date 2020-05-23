@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.List")
 @js.native
-class List protected () extends js.Object {
+trait List extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Creator: Double = js.native
   val ListParagraphs: typings.activexWord.Word.ListParagraphs = js.native

@@ -45,8 +45,8 @@ trait TeXInputProcessor extends js.Object {
 object TeXInputProcessor {
   @scala.inline
   def apply(
-    MAXBUFFER: Int | Double = null,
-    MAXMACROS: Int | Double = null,
+    MAXBUFFER: js.UndefOr[Double] = js.undefined,
+    MAXMACROS: js.UndefOr[Double] = js.undefined,
     Macros: js.Any = null,
     MultLineWidth: String = null,
     TagIndent: String = null,
@@ -55,8 +55,8 @@ object TeXInputProcessor {
     extensions: js.Array[String] = null
   ): TeXInputProcessor = {
     val __obj = js.Dynamic.literal()
-    if (MAXBUFFER != null) __obj.updateDynamic("MAXBUFFER")(MAXBUFFER.asInstanceOf[js.Any])
-    if (MAXMACROS != null) __obj.updateDynamic("MAXMACROS")(MAXMACROS.asInstanceOf[js.Any])
+    if (!js.isUndefined(MAXBUFFER)) __obj.updateDynamic("MAXBUFFER")(MAXBUFFER.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MAXMACROS)) __obj.updateDynamic("MAXMACROS")(MAXMACROS.get.asInstanceOf[js.Any])
     if (Macros != null) __obj.updateDynamic("Macros")(Macros.asInstanceOf[js.Any])
     if (MultLineWidth != null) __obj.updateDynamic("MultLineWidth")(MultLineWidth.asInstanceOf[js.Any])
     if (TagIndent != null) __obj.updateDynamic("TagIndent")(TagIndent.asInstanceOf[js.Any])

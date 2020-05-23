@@ -35,17 +35,16 @@ trait IAccountRequirements extends js.Object {
 object IAccountRequirements {
   @scala.inline
   def apply(
-    current_deadline: Int | Double = null,
+    current_deadline: Double = null.asInstanceOf[Double],
     currently_due: js.Array[String] = null,
-    disabled_reason: String = null,
+    disabled_reason: js.UndefOr[Null | String] = js.undefined,
     eventually_due: js.Array[String] = null,
     past_due: js.Array[String] = null,
     pending_verification: js.Array[String] = null
   ): IAccountRequirements = {
-    val __obj = js.Dynamic.literal()
-    if (current_deadline != null) __obj.updateDynamic("current_deadline")(current_deadline.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(current_deadline = current_deadline.asInstanceOf[js.Any])
     if (currently_due != null) __obj.updateDynamic("currently_due")(currently_due.asInstanceOf[js.Any])
-    if (disabled_reason != null) __obj.updateDynamic("disabled_reason")(disabled_reason.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled_reason)) __obj.updateDynamic("disabled_reason")(disabled_reason.asInstanceOf[js.Any])
     if (eventually_due != null) __obj.updateDynamic("eventually_due")(eventually_due.asInstanceOf[js.Any])
     if (past_due != null) __obj.updateDynamic("past_due")(past_due.asInstanceOf[js.Any])
     if (pending_verification != null) __obj.updateDynamic("pending_verification")(pending_verification.asInstanceOf[js.Any])

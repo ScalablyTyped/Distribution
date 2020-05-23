@@ -13,5 +13,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object getNewColor extends js.Object {
   def apply(ev: MouseEvent[Element, NativeMouseEvent], prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = js.native
+  def apply(ev: typings.std.MouseEvent, prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = js.native
 }
 

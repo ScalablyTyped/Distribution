@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object MediaCaptureOptimization extends js.Object {
   /** High picture quality is prioritized. */
   @js.native
   sealed trait quality extends MediaCaptureOptimization
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaCaptureOptimization with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 2 */ @js.native
-  object latency extends TopLevel[latency with Double]
-  
-  /* 5 */ @js.native
-  object latencyThenPower extends TopLevel[latencyThenPower with Double]
-  
-  /* 4 */ @js.native
-  object latencyThenQuality extends TopLevel[latencyThenQuality with Double]
-  
-  /* 3 */ @js.native
-  object power extends TopLevel[power with Double]
-  
-  /* 6 */ @js.native
-  object powerAndQuality extends TopLevel[powerAndQuality with Double]
-  
-  /* 1 */ @js.native
-  object quality extends TopLevel[quality with Double]
   
 }
 

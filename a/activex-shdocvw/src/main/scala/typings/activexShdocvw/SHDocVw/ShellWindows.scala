@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** ShellDispatch Load in Shell Context */
-@JSGlobal("SHDocVw.ShellWindows")
 @js.native
-class ShellWindows protected () extends js.Object {
+trait ShellWindows extends js.Object {
   /** Get count of open Shell windows */
   val Count: Double = js.native
   @JSName("SHDocVw.ShellWindows_typekey")

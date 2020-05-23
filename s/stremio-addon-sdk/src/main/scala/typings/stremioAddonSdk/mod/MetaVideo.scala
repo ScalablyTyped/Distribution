@@ -68,18 +68,18 @@ object MetaVideo {
     released: String,
     title: String,
     available: js.UndefOr[Boolean] = js.undefined,
-    episode: Int | Double = null,
+    episode: js.UndefOr[Double] = js.undefined,
     overview: String = null,
-    season: Int | Double = null,
+    season: js.UndefOr[Double] = js.undefined,
     streams: js.Array[Stream] = null,
     thumbnail: String = null,
     trailer: String = null
   ): MetaVideo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], released = released.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
-    if (episode != null) __obj.updateDynamic("episode")(episode.asInstanceOf[js.Any])
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(episode)) __obj.updateDynamic("episode")(episode.get.asInstanceOf[js.Any])
     if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
-    if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
+    if (!js.isUndefined(season)) __obj.updateDynamic("season")(season.get.asInstanceOf[js.Any])
     if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
     if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     if (trailer != null) __obj.updateDynamic("trailer")(trailer.asInstanceOf[js.Any])

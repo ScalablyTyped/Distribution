@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prex" : "0.4.6"
+      "prex" : "0.4.7"
     }
   ],
   "test-dependencies" : [
     {
-      "prex" : "0.4.6"
+      "prex" : "0.4.7"
     }
   ],
   "compile-devDependencies" : [

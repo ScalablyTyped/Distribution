@@ -24,8 +24,8 @@ trait PlusMapsGeocodeOptions extends js.Object {
   /**
     * 源数据的坐标系类型
     * 仅在反向地理编码转换时生效。
-    * 	“wgs84”：表示WGS-84坐标系； “gcj02”：表示国测局经纬度坐标系； “bd09”：表示百度墨卡托坐标系； “bd09ll”：表示百度经纬度坐标系；
-    * 	默认使用wgs84坐标系。
+    *     “wgs84”：表示WGS-84坐标系； “gcj02”：表示国测局经纬度坐标系； “bd09”：表示百度墨卡托坐标系； “bd09ll”：表示百度经纬度坐标系；
+    *     默认使用wgs84坐标系。
     * - wgs84: WGS-84坐标系，即GPS设备采集的原始GPS坐标
     * - gcj02: 国测局经纬度坐标系，soso地图、aliyun地图、mapabc地图和amap地图所用的坐标系
     * - bd09: 百度墨卡托坐标系

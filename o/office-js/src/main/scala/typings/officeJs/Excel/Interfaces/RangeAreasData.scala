@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait RangeAreasData extends js.Object {
   /**
     *
-    * Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
+    * Returns the RangeAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
     *
     * [Api set: ExcelApi 1.9]
     */
   var address: js.UndefOr[String] = js.undefined
   /**
     *
-    * Returns the RageAreas reference in the user locale. Read-only.
+    * Returns the RangeAreas reference in the user locale.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -36,14 +36,14 @@ trait RangeAreasData extends js.Object {
   var areas: js.UndefOr[js.Array[RangeData]] = js.undefined
   /**
     *
-    * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+    * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
     *
     * [Api set: ExcelApi 1.9]
     */
   var cellCount: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
+    * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -57,21 +57,21 @@ trait RangeAreasData extends js.Object {
   var dataValidation: js.UndefOr[DataValidationData] = js.undefined
   /**
     *
-    * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object. Read-only.
+    * Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
     *
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[RangeFormatData] = js.undefined
   /**
     *
-    * Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
+    * Specifies if all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z").
     *
     * [Api set: ExcelApi 1.9]
     */
   var isEntireColumn: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
+    * Specifies if all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7").
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -92,9 +92,9 @@ object RangeAreasData {
   def apply(
     address: String = null,
     addressLocal: String = null,
-    areaCount: Int | Double = null,
+    areaCount: js.UndefOr[Double] = js.undefined,
     areas: js.Array[RangeData] = null,
-    cellCount: Int | Double = null,
+    cellCount: js.UndefOr[Double] = js.undefined,
     conditionalFormats: js.Array[ConditionalFormatData] = null,
     dataValidation: DataValidationData = null,
     format: RangeFormatData = null,
@@ -105,14 +105,14 @@ object RangeAreasData {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (areaCount != null) __obj.updateDynamic("areaCount")(areaCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(areaCount)) __obj.updateDynamic("areaCount")(areaCount.get.asInstanceOf[js.Any])
     if (areas != null) __obj.updateDynamic("areas")(areas.asInstanceOf[js.Any])
-    if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.get.asInstanceOf[js.Any])
     if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats.asInstanceOf[js.Any])
     if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeAreasData]
   }

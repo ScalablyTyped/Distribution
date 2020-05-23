@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("jsts.geom.IntersectionMatrix")
 @js.native
-class IntersectionMatrix () extends js.Object {
-  def this(elements: js.Array[String]) = this()
-  def this(other: IntersectionMatrix) = this()
+trait IntersectionMatrix extends js.Object {
   def add(im: IntersectionMatrix): Unit = js.native
   def get(row: Double, column: Double): Double = js.native
   def isContains(): Boolean = js.native
@@ -31,14 +28,5 @@ class IntersectionMatrix () extends js.Object {
   def setAtLeast(row: Double, col: Double, dimensionValue: Double): Unit = js.native
   def setAtLeastIfValid(row: Double, col: Double, minimumDimensionValue: Double): Unit = js.native
   def transpose(): IntersectionMatrix = js.native
-}
-
-/* static members */
-@JSGlobal("jsts.geom.IntersectionMatrix")
-@js.native
-object IntersectionMatrix extends js.Object {
-  def isTrue(actualDimensionValue: Double): Boolean = js.native
-  def matches(actualDimensionSymbols: String, requiredDimensionSymbols: String): Boolean = js.native
-  def matches(actualDimensionValue: Double, requiredDimensionSymbol: String): Boolean = js.native
 }
 

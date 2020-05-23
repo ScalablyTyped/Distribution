@@ -1,10 +1,6 @@
 package typings.xmldsigjs
 
 import typings.xmldsigjs.algorithmMod.SignatureAlgorithm
-import typings.xmldsigjs.xmldsigjsStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignsha1-rsa-MGF1`
-import typings.xmldsigjs.xmldsigjsStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignsha256-rsa-MGF1`
-import typings.xmldsigjs.xmldsigjsStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignsha384-rsa-MGF1`
-import typings.xmldsigjs.xmldsigjsStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignsha512-rsa-MGF1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,9 +23,9 @@ object rsaPssWithoutParamsSignMod extends js.Object {
   @js.native
   class RsaPssWithoutParamsSha512 () extends RsaPssWithoutParamsBase
   
-  val RSA_PSS_SHA1_NAMESPACE: `httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignsha1-rsa-MGF1` = js.native
-  val RSA_PSS_SHA256_NAMESPACE: `httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignsha256-rsa-MGF1` = js.native
-  val RSA_PSS_SHA384_NAMESPACE: `httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignsha384-rsa-MGF1` = js.native
-  val RSA_PSS_SHA512_NAMESPACE: `httpColonSlashSlashwwwDotw3DotorgSlash2007Slash05Slashxmldsig-moreNumbersignsha512-rsa-MGF1` = js.native
+  val RSA_PSS_SHA1_NAMESPACE: /* "http://www.w3.org/2007/05/xmldsig-more#sha1-rsa-MGF1" */ String = js.native
+  val RSA_PSS_SHA256_NAMESPACE: /* "http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1" */ String = js.native
+  val RSA_PSS_SHA384_NAMESPACE: /* "http://www.w3.org/2007/05/xmldsig-more#sha384-rsa-MGF1" */ String = js.native
+  val RSA_PSS_SHA512_NAMESPACE: /* "http://www.w3.org/2007/05/xmldsig-more#sha512-rsa-MGF1" */ String = js.native
 }
 

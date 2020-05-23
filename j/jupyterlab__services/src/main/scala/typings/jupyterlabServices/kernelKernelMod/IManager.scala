@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.kernelKernelMod
 
-import typings.jupyterlabServices.OmitIOptionsmodelserverSe
+import typings.jupyterlabServices.anon.OmitIOptionsmodelserverSe
 import typings.jupyterlabServices.kernelKernelMod.IKernelConnection.IOptions
 import typings.jupyterlabServices.kernelRestapiMod.IKernelOptions
 import typings.jupyterlabServices.kernelRestapiMod.IModel

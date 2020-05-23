@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when the drawer view changes it's position.
-			 */
+  * Fired when the drawer view changes it's position.
+  */
 trait DrawerLayoutSlideEvent extends DrawerLayoutBaseEvent {
   /**
-  				 * Contains the drawer frame type. Either `left` or `right`.
-  				 */
+    * Contains the drawer frame type. Either `left` or `right`.
+    */
   var drawer: String
   /**
-  				 * The current drawer offset.
-  				 */
+    * The current drawer offset.
+    */
   var offset: Double
 }
 

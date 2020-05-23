@@ -14,17 +14,17 @@ object LockConstraintOptions {
   @scala.inline
   def apply(
     collideConnected: js.UndefOr[Boolean] = js.undefined,
-    localAngleB: Int | Double = null,
+    localAngleB: js.UndefOr[Double] = js.undefined,
     localOffsetB: js.Tuple2[Double, Double] = null,
-    maxForce: Int | Double = null,
+    maxForce: js.UndefOr[Double] = js.undefined,
     wakeUpBodies: js.UndefOr[Boolean] = js.undefined
   ): LockConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected.asInstanceOf[js.Any])
-    if (localAngleB != null) __obj.updateDynamic("localAngleB")(localAngleB.asInstanceOf[js.Any])
+    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(localAngleB)) __obj.updateDynamic("localAngleB")(localAngleB.get.asInstanceOf[js.Any])
     if (localOffsetB != null) __obj.updateDynamic("localOffsetB")(localOffsetB.asInstanceOf[js.Any])
-    if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
-    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxForce)) __obj.updateDynamic("maxForce")(maxForce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LockConstraintOptions]
   }
 }

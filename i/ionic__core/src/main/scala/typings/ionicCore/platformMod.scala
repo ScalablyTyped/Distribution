@@ -15,7 +15,7 @@ import typings.ionicCore.ionicCoreStrings.phablet
 import typings.ionicCore.ionicCoreStrings.pwa
 import typings.ionicCore.ionicCoreStrings.tablet
 import typings.std.RegExp
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,10 +26,10 @@ object platformMod extends js.Object {
   @js.native
   trait IsPlatformSignature extends js.Object {
     def apply(plt: Platforms): Boolean = js.native
-    def apply(win: Window_, plt: Platforms): Boolean = js.native
+    def apply(win: Window, plt: Platforms): Boolean = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof @ionic/core.anon.Android */ /* Rewritten from type alias, can be one of: 
     - typings.ionicCore.ionicCoreStrings.ipad
     - typings.ionicCore.ionicCoreStrings.iphone
     - typings.ionicCore.ionicCoreStrings.ios
@@ -57,6 +57,6 @@ object platformMod extends js.Object {
   def setupPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
-  def testUserAgent(win: Window_, expr: RegExp): Boolean = js.native
+  def testUserAgent(win: Window, expr: RegExp): Boolean = js.native
 }
 

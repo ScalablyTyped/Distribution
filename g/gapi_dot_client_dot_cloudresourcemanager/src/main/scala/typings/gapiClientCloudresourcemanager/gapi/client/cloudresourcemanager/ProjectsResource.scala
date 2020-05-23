@@ -1,17 +1,17 @@
 package typings.gapiClientCloudresourcemanager.gapi.client.cloudresourcemanager
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCloudresourcemanager.AnonAccesstoken
-import typings.gapiClientCloudresourcemanager.AnonAlt
-import typings.gapiClientCloudresourcemanager.AnonFields
-import typings.gapiClientCloudresourcemanager.AnonFilter
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCloudresourcemanager.anon.Accesstoken
+import typings.gapiClientCloudresourcemanager.anon.Alt
+import typings.gapiClientCloudresourcemanager.anon.Fields
+import typings.gapiClientCloudresourcemanager.anon.Filter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProjectsResource extends js.Object {
   /** Clears a `Policy` from a resource. */
-  def clearOrgPolicy(request: AnonAccesstoken): Request_[js.Object]
+  def clearOrgPolicy(request: Accesstoken): Request[js.Object]
   /**
     * Request that a new Project be created. The result is an Operation which
     * can be used to track the creation process. It is automatically deleted
@@ -26,7 +26,7 @@ trait ProjectsResource extends js.Object {
     * `resourcemanager.projects.create` on the specified parent for the new
     * project.
     */
-  def create(request: AnonAlt): Request_[Operation]
+  def create(request: Alt): Request[Operation]
   /**
     * Marks the Project identified by the specified
     * `project_id` (for example, `my-project-123`) for deletion.
@@ -53,27 +53,27 @@ trait ProjectsResource extends js.Object {
     *
     * The caller must have modify permissions for this Project.
     */
-  def delete(request: AnonFields): Request_[js.Object]
+  def delete(request: Fields): Request[js.Object]
   /**
     * Retrieves the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
     *
     * The caller must have read permissions for this Project.
     */
-  def get(request: AnonFields): Request_[Project]
+  def get(request: Fields): Request[Project]
   /**
     * Gets a list of ancestors in the resource hierarchy for the Project
     * identified by the specified `project_id` (for example, `my-project-123`).
     *
     * The caller must have read permissions for this Project.
     */
-  def getAncestry(request: AnonFields): Request_[GetAncestryResponse]
+  def getAncestry(request: Fields): Request[GetAncestryResponse]
   /**
     * Gets the effective `Policy` on a resource. This is the result of merging
     * `Policies` in the resource hierarchy. The returned `Policy` will not have
     * an `etag`set because it is a computed `Policy` across multiple resources.
     */
-  def getEffectiveOrgPolicy(request: AnonAccesstoken): Request_[OrgPolicy]
+  def getEffectiveOrgPolicy(request: Accesstoken): Request[OrgPolicy]
   /**
     * Returns the IAM access control policy for the specified Project.
     * Permission is denied if the policy or the resource does not exist.
@@ -81,7 +81,7 @@ trait ProjectsResource extends js.Object {
     * Authorization requires the Google IAM permission
     * `resourcemanager.projects.getIamPolicy` on the project
     */
-  def getIamPolicy(request: AnonAccesstoken): Request_[Policy]
+  def getIamPolicy(request: Accesstoken): Request[Policy]
   /**
     * Gets a `Policy` on a resource.
     *
@@ -90,17 +90,17 @@ trait ProjectsResource extends js.Object {
     * `etag` value can be used with `SetOrgPolicy()` to create or update a
     * `Policy` during read-modify-write.
     */
-  def getOrgPolicy(request: AnonAccesstoken): Request_[OrgPolicy]
+  def getOrgPolicy(request: Accesstoken): Request[OrgPolicy]
   /**
     * Lists Projects that are visible to the user and satisfy the
     * specified filter. This method returns Projects in an unspecified order.
     * New Projects do not necessarily appear at the end of the list.
     */
-  def list(request: AnonFilter): Request_[ListProjectsResponse]
+  def list(request: Filter): Request[ListProjectsResponse]
   /** Lists `Constraints` that could be applied on the specified resource. */
-  def listAvailableOrgPolicyConstraints(request: AnonAccesstoken): Request_[ListAvailableOrgPolicyConstraintsResponse]
+  def listAvailableOrgPolicyConstraints(request: Accesstoken): Request[ListAvailableOrgPolicyConstraintsResponse]
   /** Lists all the `Policies` set for a particular resource. */
-  def listOrgPolicies(request: AnonAccesstoken): Request_[ListOrgPoliciesResponse]
+  def listOrgPolicies(request: Accesstoken): Request[ListOrgPoliciesResponse]
   /**
     * Sets the IAM access control policy for the specified Project. Replaces
     * any existing policy.
@@ -145,7 +145,7 @@ trait ProjectsResource extends js.Object {
     * Authorization requires the Google IAM permission
     * `resourcemanager.projects.setIamPolicy` on the project
     */
-  def setIamPolicy(request: AnonAccesstoken): Request_[Policy]
+  def setIamPolicy(request: Accesstoken): Request[Policy]
   /**
     * Updates the specified `Policy` on the resource. Creates a new `Policy` for
     * that `Constraint` on the resource if one does not exist.
@@ -153,13 +153,13 @@ trait ProjectsResource extends js.Object {
     * Not supplying an `etag` on the request `Policy` results in an unconditional
     * write of the `Policy`.
     */
-  def setOrgPolicy(request: AnonAccesstoken): Request_[OrgPolicy]
+  def setOrgPolicy(request: Accesstoken): Request[OrgPolicy]
   /**
     * Returns permissions that a caller has on the specified Project.
     *
     * There are no permissions required for making this API call.
     */
-  def testIamPermissions(request: AnonAccesstoken): Request_[TestIamPermissionsResponse]
+  def testIamPermissions(request: Accesstoken): Request[TestIamPermissionsResponse]
   /**
     * Restores the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
@@ -169,35 +169,35 @@ trait ProjectsResource extends js.Object {
     *
     * The caller must have modify permissions for this Project.
     */
-  def undelete(request: AnonFields): Request_[js.Object]
+  def undelete(request: Fields): Request[js.Object]
   /**
     * Updates the attributes of the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
     *
     * The caller must have modify permissions for this Project.
     */
-  def update(request: AnonFields): Request_[Project]
+  def update(request: Fields): Request[Project]
 }
 
 object ProjectsResource {
   @scala.inline
   def apply(
-    clearOrgPolicy: AnonAccesstoken => Request_[js.Object],
-    create: AnonAlt => Request_[Operation],
-    delete: AnonFields => Request_[js.Object],
-    get: AnonFields => Request_[Project],
-    getAncestry: AnonFields => Request_[GetAncestryResponse],
-    getEffectiveOrgPolicy: AnonAccesstoken => Request_[OrgPolicy],
-    getIamPolicy: AnonAccesstoken => Request_[Policy],
-    getOrgPolicy: AnonAccesstoken => Request_[OrgPolicy],
-    list: AnonFilter => Request_[ListProjectsResponse],
-    listAvailableOrgPolicyConstraints: AnonAccesstoken => Request_[ListAvailableOrgPolicyConstraintsResponse],
-    listOrgPolicies: AnonAccesstoken => Request_[ListOrgPoliciesResponse],
-    setIamPolicy: AnonAccesstoken => Request_[Policy],
-    setOrgPolicy: AnonAccesstoken => Request_[OrgPolicy],
-    testIamPermissions: AnonAccesstoken => Request_[TestIamPermissionsResponse],
-    undelete: AnonFields => Request_[js.Object],
-    update: AnonFields => Request_[Project]
+    clearOrgPolicy: Accesstoken => Request[js.Object],
+    create: Alt => Request[Operation],
+    delete: Fields => Request[js.Object],
+    get: Fields => Request[Project],
+    getAncestry: Fields => Request[GetAncestryResponse],
+    getEffectiveOrgPolicy: Accesstoken => Request[OrgPolicy],
+    getIamPolicy: Accesstoken => Request[Policy],
+    getOrgPolicy: Accesstoken => Request[OrgPolicy],
+    list: Filter => Request[ListProjectsResponse],
+    listAvailableOrgPolicyConstraints: Accesstoken => Request[ListAvailableOrgPolicyConstraintsResponse],
+    listOrgPolicies: Accesstoken => Request[ListOrgPoliciesResponse],
+    setIamPolicy: Accesstoken => Request[Policy],
+    setOrgPolicy: Accesstoken => Request[OrgPolicy],
+    testIamPermissions: Accesstoken => Request[TestIamPermissionsResponse],
+    undelete: Fields => Request[js.Object],
+    update: Fields => Request[Project]
   ): ProjectsResource = {
     val __obj = js.Dynamic.literal(clearOrgPolicy = js.Any.fromFunction1(clearOrgPolicy), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getAncestry = js.Any.fromFunction1(getAncestry), getEffectiveOrgPolicy = js.Any.fromFunction1(getEffectiveOrgPolicy), getIamPolicy = js.Any.fromFunction1(getIamPolicy), getOrgPolicy = js.Any.fromFunction1(getOrgPolicy), list = js.Any.fromFunction1(list), listAvailableOrgPolicyConstraints = js.Any.fromFunction1(listAvailableOrgPolicyConstraints), listOrgPolicies = js.Any.fromFunction1(listOrgPolicies), setIamPolicy = js.Any.fromFunction1(setIamPolicy), setOrgPolicy = js.Any.fromFunction1(setOrgPolicy), testIamPermissions = js.Any.fromFunction1(testIamPermissions), undelete = js.Any.fromFunction1(undelete), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[ProjectsResource]

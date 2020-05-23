@@ -2,10 +2,11 @@ package typings.expressServeStaticCore.mod
 
 import typings.expressServeStaticCore.expressServeStaticCoreBooleans.`false`
 import typings.expressServeStaticCore.expressServeStaticCoreStrings.`set-cookie`
-import typings.node.AnonEnd
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.qs.mod.ParsedQs
 import typings.rangeParser.mod.Options
 import typings.rangeParser.mod.Ranges
 import typings.rangeParser.mod.Result
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Request[P /* <: Params */, ResBody, ReqBody, ReqQuery]
   extends IncomingMessage
-     with typings.expressServeStaticCore.mod._Global_.Express.Request {
+     with typings.expressServeStaticCore.mod.global.Express.Request {
   /**
     * Return an array of Accepted media types
     * ordered from highest quality to lowest.
@@ -188,8 +189,8 @@ trait Request[P /* <: Params */, ResBody, ReqBody, ReqQuery]
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def app(req: Request[ParamsDictionary, _, _, Query], res: Response[_]): js.Any = js.native
-  def app(req: Request[ParamsDictionary, _, _, Query], res: ServerResponse): js.Any = js.native
+  def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_]): js.Any = js.native
+  def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
   def app(req: IncomingMessage, res: Response[_]): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   def get(name: String): js.UndefOr[String] = js.native
@@ -258,7 +259,7 @@ trait Request[P /* <: Params */, ResBody, ReqBody, ReqQuery]
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   /**
     * Parse Range header field, capping to the given `size`.
     *

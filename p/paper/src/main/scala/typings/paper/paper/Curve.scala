@@ -16,17 +16,8 @@ import scala.scalajs.js.annotation._
   * convenient ways to work with parts of the path, finding lengths, positions or
   * tangents at given offsets.
   */
-@JSGlobal("paper.Curve")
 @js.native
-class Curve protected () extends js.Object {
-  /** 
-    * Creates a new curve object.
-    */
-  def this(segment1: Segment, segment2: Segment) = this()
-  /** 
-    * Creates a new curve object.
-    */
-  def this(point1: Point, handle1: Point, handle2: Point, point2: Point) = this()
+trait Curve extends js.Object {
   /** 
     * The area that the curve's geometry is covering.
     */

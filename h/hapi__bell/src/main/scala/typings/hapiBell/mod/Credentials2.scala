@@ -16,12 +16,12 @@ object Credentials2 {
     provider: Provider | custom,
     query: StringLikeMap,
     token: String,
-    expiresIn: Int | Double = null,
+    expiresIn: js.UndefOr[Double] = js.undefined,
     profile: js.Object = null,
     refreshToken: String = null
   ): Credentials2 = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiresIn)) __obj.updateDynamic("expiresIn")(expiresIn.get.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials2]

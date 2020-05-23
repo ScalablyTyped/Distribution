@@ -21,18 +21,18 @@ trait EmotionScores extends js.Object {
 object EmotionScores {
   @scala.inline
   def apply(
-    anger: Int | Double = null,
-    disgust: Int | Double = null,
-    fear: Int | Double = null,
-    joy: Int | Double = null,
-    sadness: Int | Double = null
+    anger: js.UndefOr[Double] = js.undefined,
+    disgust: js.UndefOr[Double] = js.undefined,
+    fear: js.UndefOr[Double] = js.undefined,
+    joy: js.UndefOr[Double] = js.undefined,
+    sadness: js.UndefOr[Double] = js.undefined
   ): EmotionScores = {
     val __obj = js.Dynamic.literal()
-    if (anger != null) __obj.updateDynamic("anger")(anger.asInstanceOf[js.Any])
-    if (disgust != null) __obj.updateDynamic("disgust")(disgust.asInstanceOf[js.Any])
-    if (fear != null) __obj.updateDynamic("fear")(fear.asInstanceOf[js.Any])
-    if (joy != null) __obj.updateDynamic("joy")(joy.asInstanceOf[js.Any])
-    if (sadness != null) __obj.updateDynamic("sadness")(sadness.asInstanceOf[js.Any])
+    if (!js.isUndefined(anger)) __obj.updateDynamic("anger")(anger.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disgust)) __obj.updateDynamic("disgust")(disgust.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fear)) __obj.updateDynamic("fear")(fear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(joy)) __obj.updateDynamic("joy")(joy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sadness)) __obj.updateDynamic("sadness")(sadness.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmotionScores]
   }
 }

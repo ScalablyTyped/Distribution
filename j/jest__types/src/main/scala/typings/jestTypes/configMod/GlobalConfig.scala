@@ -1,7 +1,7 @@
 package typings.jestTypes.configMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jestTypes.AnonConfig
+import typings.jestTypes.anon.Config
 import typings.jestTypes.jestTypesStrings.`json-summary`
 import typings.jestTypes.jestTypesStrings.`text-lcov`
 import typings.jestTypes.jestTypesStrings.`text-summary`
@@ -75,7 +75,7 @@ trait GlobalConfig extends js.Object {
   var verbose: js.UndefOr[Boolean | Null] = js.undefined
   var watch: Boolean
   var watchAll: Boolean
-  var watchPlugins: js.UndefOr[js.Array[AnonConfig] | Null] = js.undefined
+  var watchPlugins: js.UndefOr[js.Array[Config] | Null] = js.undefined
   var watchman: Boolean
 }
 
@@ -128,32 +128,32 @@ object GlobalConfig {
     watch: Boolean,
     watchAll: Boolean,
     watchman: Boolean,
-    collectCoverageOnlyFrom: StringDictionary[Boolean] = null,
+    collectCoverageOnlyFrom: js.UndefOr[Null | StringDictionary[Boolean]] = js.undefined,
     coveragePathIgnorePatterns: js.Array[String] = null,
-    enabledTestsMap: StringDictionary[StringDictionary[Boolean]] = null,
-    filter: Path = null,
-    globalSetup: String = null,
-    globalTeardown: String = null,
-    noSCM: js.UndefOr[Boolean] = js.undefined,
-    outputFile: Path = null,
-    replname: String = null,
-    testResultsProcessor: String = null,
-    verbose: js.UndefOr[Boolean] = js.undefined,
-    watchPlugins: js.Array[AnonConfig] = null
+    enabledTestsMap: js.UndefOr[Null | StringDictionary[StringDictionary[Boolean]]] = js.undefined,
+    filter: js.UndefOr[Null | Path] = js.undefined,
+    globalSetup: js.UndefOr[Null | String] = js.undefined,
+    globalTeardown: js.UndefOr[Null | String] = js.undefined,
+    noSCM: js.UndefOr[Null | Boolean] = js.undefined,
+    outputFile: js.UndefOr[Null | Path] = js.undefined,
+    replname: js.UndefOr[Null | String] = js.undefined,
+    testResultsProcessor: js.UndefOr[Null | String] = js.undefined,
+    verbose: js.UndefOr[Null | Boolean] = js.undefined,
+    watchPlugins: js.UndefOr[Null | js.Array[Config]] = js.undefined
   ): GlobalConfig = {
     val __obj = js.Dynamic.literal(bail = bail.asInstanceOf[js.Any], changedFilesWithAncestor = changedFilesWithAncestor.asInstanceOf[js.Any], changedSince = changedSince.asInstanceOf[js.Any], collectCoverage = collectCoverage.asInstanceOf[js.Any], collectCoverageFrom = collectCoverageFrom.asInstanceOf[js.Any], coverageDirectory = coverageDirectory.asInstanceOf[js.Any], coverageReporters = coverageReporters.asInstanceOf[js.Any], coverageThreshold = coverageThreshold.asInstanceOf[js.Any], detectLeaks = detectLeaks.asInstanceOf[js.Any], detectOpenHandles = detectOpenHandles.asInstanceOf[js.Any], errorOnDeprecated = errorOnDeprecated.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], extraGlobals = extraGlobals.asInstanceOf[js.Any], findRelatedTests = findRelatedTests.asInstanceOf[js.Any], forceExit = forceExit.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], lastCommit = lastCommit.asInstanceOf[js.Any], listTests = listTests.asInstanceOf[js.Any], logHeapUsage = logHeapUsage.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], maxWorkers = maxWorkers.asInstanceOf[js.Any], noStackTrace = noStackTrace.asInstanceOf[js.Any], nonFlagArgs = nonFlagArgs.asInstanceOf[js.Any], notify = notify.asInstanceOf[js.Any], notifyMode = notifyMode.asInstanceOf[js.Any], onlyChanged = onlyChanged.asInstanceOf[js.Any], onlyFailures = onlyFailures.asInstanceOf[js.Any], passWithNoTests = passWithNoTests.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], reporters = reporters.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any], runTestsByPath = runTestsByPath.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], skipFilter = skipFilter.asInstanceOf[js.Any], testFailureExitCode = testFailureExitCode.asInstanceOf[js.Any], testNamePattern = testNamePattern.asInstanceOf[js.Any], testPathPattern = testPathPattern.asInstanceOf[js.Any], testSequencer = testSequencer.asInstanceOf[js.Any], testTimeout = testTimeout.asInstanceOf[js.Any], updateSnapshot = updateSnapshot.asInstanceOf[js.Any], useStderr = useStderr.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], watchAll = watchAll.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
-    if (collectCoverageOnlyFrom != null) __obj.updateDynamic("collectCoverageOnlyFrom")(collectCoverageOnlyFrom.asInstanceOf[js.Any])
+    if (!js.isUndefined(collectCoverageOnlyFrom)) __obj.updateDynamic("collectCoverageOnlyFrom")(collectCoverageOnlyFrom.asInstanceOf[js.Any])
     if (coveragePathIgnorePatterns != null) __obj.updateDynamic("coveragePathIgnorePatterns")(coveragePathIgnorePatterns.asInstanceOf[js.Any])
-    if (enabledTestsMap != null) __obj.updateDynamic("enabledTestsMap")(enabledTestsMap.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (globalSetup != null) __obj.updateDynamic("globalSetup")(globalSetup.asInstanceOf[js.Any])
-    if (globalTeardown != null) __obj.updateDynamic("globalTeardown")(globalTeardown.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabledTestsMap)) __obj.updateDynamic("enabledTestsMap")(enabledTestsMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalSetup)) __obj.updateDynamic("globalSetup")(globalSetup.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalTeardown)) __obj.updateDynamic("globalTeardown")(globalTeardown.asInstanceOf[js.Any])
     if (!js.isUndefined(noSCM)) __obj.updateDynamic("noSCM")(noSCM.asInstanceOf[js.Any])
-    if (outputFile != null) __obj.updateDynamic("outputFile")(outputFile.asInstanceOf[js.Any])
-    if (replname != null) __obj.updateDynamic("replname")(replname.asInstanceOf[js.Any])
-    if (testResultsProcessor != null) __obj.updateDynamic("testResultsProcessor")(testResultsProcessor.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputFile)) __obj.updateDynamic("outputFile")(outputFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(replname)) __obj.updateDynamic("replname")(replname.asInstanceOf[js.Any])
+    if (!js.isUndefined(testResultsProcessor)) __obj.updateDynamic("testResultsProcessor")(testResultsProcessor.asInstanceOf[js.Any])
     if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
-    if (watchPlugins != null) __obj.updateDynamic("watchPlugins")(watchPlugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(watchPlugins)) __obj.updateDynamic("watchPlugins")(watchPlugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalConfig]
   }
 }

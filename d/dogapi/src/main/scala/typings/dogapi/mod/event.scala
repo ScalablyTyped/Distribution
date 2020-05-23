@@ -1,7 +1,7 @@
 package typings.dogapi.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dogapi.AnonAggregationkey
+import typings.dogapi.anon.Aggregationkey
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait event extends js.Object {
   def create(
     title: String,
     text: String,
-    properties: AnonAggregationkey,
+    properties: Aggregationkey,
     callback: js.Function2[/* err */ Error | Null, /* res */ EventCreateResponse, Unit]
   ): Unit = js.native
 }

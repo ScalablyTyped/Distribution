@@ -47,25 +47,25 @@ object AnnotationsFibonacciTypeOptions {
   @scala.inline
   def apply(
     backgroundColors: js.Object = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     labels: js.Array[AnnotationsFibonacciTypeLabelsOptions] = null,
     line: AnnotationsFibonacciTypeLineOptions = null,
     lineColor: String = null,
     lineColors: js.Object = null,
     points: js.Array[AnnotationsFibonacciTypePointsOptions] = null,
-    xAxis: Int | Double = null,
-    yAxis: Int | Double = null
+    xAxis: js.UndefOr[Double] = js.undefined,
+    yAxis: js.UndefOr[Double] = js.undefined
   ): AnnotationsFibonacciTypeOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColors != null) __obj.updateDynamic("backgroundColors")(backgroundColors.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineColors != null) __obj.updateDynamic("lineColors")(lineColors.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxis)) __obj.updateDynamic("xAxis")(xAxis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxis)) __obj.updateDynamic("yAxis")(yAxis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsFibonacciTypeOptions]
   }
 }

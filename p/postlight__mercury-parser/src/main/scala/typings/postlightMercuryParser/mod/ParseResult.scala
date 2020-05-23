@@ -41,15 +41,7 @@ object ParseResult {
     next_page_url: String = null,
     title: String = null
   ): ParseResult = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], rendered_pages = rendered_pages.asInstanceOf[js.Any], total_pages = total_pages.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], word_count = word_count.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (date_published != null) __obj.updateDynamic("date_published")(date_published.asInstanceOf[js.Any])
-    if (dek != null) __obj.updateDynamic("dek")(dek.asInstanceOf[js.Any])
-    if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt.asInstanceOf[js.Any])
-    if (lead_image_url != null) __obj.updateDynamic("lead_image_url")(lead_image_url.asInstanceOf[js.Any])
-    if (next_page_url != null) __obj.updateDynamic("next_page_url")(next_page_url.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], rendered_pages = rendered_pages.asInstanceOf[js.Any], total_pages = total_pages.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], word_count = word_count.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], date_published = date_published.asInstanceOf[js.Any], dek = dek.asInstanceOf[js.Any], excerpt = excerpt.asInstanceOf[js.Any], lead_image_url = lead_image_url.asInstanceOf[js.Any], next_page_url = next_page_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseResult]
   }
 }

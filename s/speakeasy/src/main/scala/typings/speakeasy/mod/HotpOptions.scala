@@ -27,18 +27,18 @@ object HotpOptions {
     secret: String,
     algorithm: Algorithm = null,
     digest: Buffer = null,
-    digits: Int | Double = null,
+    digits: js.UndefOr[Double] = js.undefined,
     encoding: Encoding = null,
     key: String = null,
-    length: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined
   ): HotpOptions = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpOptions]
   }
 }

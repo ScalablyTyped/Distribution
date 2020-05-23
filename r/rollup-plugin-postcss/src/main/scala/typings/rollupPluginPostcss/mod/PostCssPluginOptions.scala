@@ -1,8 +1,8 @@
 package typings.rollupPluginPostcss.mod
 
 import typings.cssnano.mod.CssNanoOptions
-import typings.rollupPluginPostcss.AnonCtx
-import typings.rollupPluginPostcss.AnonInsertAt
+import typings.rollupPluginPostcss.anon.Ctx
+import typings.rollupPluginPostcss.anon.InsertAt
 import typings.rollupPluginPostcss.rollupPluginPostcssStrings.`inline`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 
 trait PostCssPluginOptions extends js.Object {
   var autoModules: js.UndefOr[Boolean] = js.undefined
-  var config: js.UndefOr[Boolean | AnonCtx] = js.undefined
+  var config: js.UndefOr[Boolean | Ctx] = js.undefined
   var exec: js.UndefOr[Boolean] = js.undefined
   var extensions: js.UndefOr[js.Array[String]] = js.undefined
   var extract: js.UndefOr[Boolean | String] = js.undefined
-  var inject: js.UndefOr[Boolean | AnonInsertAt] = js.undefined
+  var inject: js.UndefOr[Boolean | InsertAt] = js.undefined
   var loaders: js.UndefOr[js.Array[_]] = js.undefined
   var minimize: js.UndefOr[Boolean | CssNanoOptions] = js.undefined
   var modules: js.UndefOr[Boolean | js.Any] = js.undefined
@@ -32,11 +32,11 @@ object PostCssPluginOptions {
   @scala.inline
   def apply(
     autoModules: js.UndefOr[Boolean] = js.undefined,
-    config: Boolean | AnonCtx = null,
+    config: Boolean | Ctx = null,
     exec: js.UndefOr[Boolean] = js.undefined,
     extensions: js.Array[String] = null,
     extract: Boolean | String = null,
-    inject: Boolean | AnonInsertAt = null,
+    inject: Boolean | InsertAt = null,
     loaders: js.Array[_] = null,
     minimize: Boolean | CssNanoOptions = null,
     modules: Boolean | js.Any = null,
@@ -50,9 +50,9 @@ object PostCssPluginOptions {
     syntax: /* repeated */ js.Any => Unit | String = null
   ): PostCssPluginOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoModules)) __obj.updateDynamic("autoModules")(autoModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoModules)) __obj.updateDynamic("autoModules")(autoModules.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(exec)) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
+    if (!js.isUndefined(exec)) __obj.updateDynamic("exec")(exec.get.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (extract != null) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])
     if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])

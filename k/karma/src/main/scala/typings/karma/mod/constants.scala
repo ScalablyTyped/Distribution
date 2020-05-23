@@ -1,6 +1,6 @@
 package typings.karma.mod
 
-import typings.karma.AnonPattern
+import typings.karma.anon.Pattern
 import typings.karma.karmaStrings.DEBUG
 import typings.karma.karmaStrings.ERROR
 import typings.karma.karmaStrings.INFO
@@ -30,7 +30,7 @@ object constants extends js.Object {
   val VERSION: String = js.native
   @js.native
   object CONSOLE_APPENDER extends js.Object {
-    var layout: AnonPattern = js.native
+    var layout: Pattern = js.native
     var `type`: String = js.native
   }
   

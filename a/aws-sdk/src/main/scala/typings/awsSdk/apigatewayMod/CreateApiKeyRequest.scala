@@ -45,8 +45,8 @@ object CreateApiKeyRequest {
   def apply(
     customerId: String = null,
     description: String = null,
-    enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    generateDistinctId: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[Boolean] = js.undefined,
+    generateDistinctId: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     stageKeys: ListOfStageKeys = null,
     tags: MapOfStringToString = null,
@@ -55,8 +55,8 @@ object CreateApiKeyRequest {
     val __obj = js.Dynamic.literal()
     if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateDistinctId)) __obj.updateDynamic("generateDistinctId")(generateDistinctId.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateDistinctId)) __obj.updateDynamic("generateDistinctId")(generateDistinctId.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (stageKeys != null) __obj.updateDynamic("stageKeys")(stageKeys.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

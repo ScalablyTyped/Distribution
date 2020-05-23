@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.visualization.ChartWrapper")
 @js.native
-class ChartWrapper () extends js.Object {
-  def this(spec: ChartSpecs) = this()
+trait ChartWrapper extends js.Object {
   def draw(): Unit = js.native
   def draw(container_ref: HTMLElement): Unit = js.native
   def getChart(): js.Any = js.native

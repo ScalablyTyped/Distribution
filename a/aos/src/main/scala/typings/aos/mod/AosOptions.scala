@@ -78,36 +78,36 @@ object AosOptions {
   def apply(
     anchorPlacement: anchorPlacementOptions = null,
     animatedClassName: String = null,
-    debounceDelay: Int | Double = null,
-    delay: Int | Double = null,
+    debounceDelay: js.UndefOr[Double] = js.undefined,
+    delay: js.UndefOr[Double] = js.undefined,
     disable: phone | tablet | mobile | Boolean | js.Function0[Boolean] = null,
     disableMutationObserver: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: easingOptions = null,
     initClassName: String = null,
     mirror: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     once: js.UndefOr[Boolean] = js.undefined,
     startEvent: String = null,
-    throttleDelay: Int | Double = null,
+    throttleDelay: js.UndefOr[Double] = js.undefined,
     useClassNames: js.UndefOr[Boolean] = js.undefined
   ): AosOptions = {
     val __obj = js.Dynamic.literal()
     if (anchorPlacement != null) __obj.updateDynamic("anchorPlacement")(anchorPlacement.asInstanceOf[js.Any])
     if (animatedClassName != null) __obj.updateDynamic("animatedClassName")(animatedClassName.asInstanceOf[js.Any])
-    if (debounceDelay != null) __obj.updateDynamic("debounceDelay")(debounceDelay.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(debounceDelay)) __obj.updateDynamic("debounceDelay")(debounceDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (disable != null) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMutationObserver)) __obj.updateDynamic("disableMutationObserver")(disableMutationObserver.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMutationObserver)) __obj.updateDynamic("disableMutationObserver")(disableMutationObserver.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (initClassName != null) __obj.updateDynamic("initClassName")(initClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
     if (startEvent != null) __obj.updateDynamic("startEvent")(startEvent.asInstanceOf[js.Any])
-    if (throttleDelay != null) __obj.updateDynamic("throttleDelay")(throttleDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(useClassNames)) __obj.updateDynamic("useClassNames")(useClassNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttleDelay)) __obj.updateDynamic("throttleDelay")(throttleDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useClassNames)) __obj.updateDynamic("useClassNames")(useClassNames.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AosOptions]
   }
 }

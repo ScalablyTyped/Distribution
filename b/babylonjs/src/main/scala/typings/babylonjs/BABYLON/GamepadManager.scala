@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.GamepadManager")
 @js.native
-/**
-  * Initializes the gamepad manager
-  * @param _scene BabylonJS scene
-  */
-class GamepadManager () extends js.Object {
-  def this(_scene: Scene) = this()
+trait GamepadManager extends js.Object {
   var _addNewGamepad: js.Any = js.native
   var _babylonGamepads: js.Any = js.native
   var _gamepadEventSupported: js.Any = js.native

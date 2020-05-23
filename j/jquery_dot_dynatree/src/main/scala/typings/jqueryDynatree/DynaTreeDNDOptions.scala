@@ -34,7 +34,7 @@ object DynaTreeDNDOptions {
   @scala.inline
   def apply(
     revert: Boolean,
-    autoExpandMS: Int | Double = null,
+    autoExpandMS: js.UndefOr[Double] = js.undefined,
     onDragEnter: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit = null,
     onDragLeave: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit = null,
     onDragOver: (/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String) => Unit = null,
@@ -44,14 +44,14 @@ object DynaTreeDNDOptions {
     preventVoidMoves: js.UndefOr[Boolean] = js.undefined
   ): DynaTreeDNDOptions = {
     val __obj = js.Dynamic.literal(revert = revert.asInstanceOf[js.Any])
-    if (autoExpandMS != null) __obj.updateDynamic("autoExpandMS")(autoExpandMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoExpandMS)) __obj.updateDynamic("autoExpandMS")(autoExpandMS.get.asInstanceOf[js.Any])
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction2(onDragEnter))
     if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction2(onDragLeave))
     if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction3(onDragOver))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
     if (onDragStop != null) __obj.updateDynamic("onDragStop")(js.Any.fromFunction1(onDragStop))
     if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction3(onDrop))
-    if (!js.isUndefined(preventVoidMoves)) __obj.updateDynamic("preventVoidMoves")(preventVoidMoves.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventVoidMoves)) __obj.updateDynamic("preventVoidMoves")(preventVoidMoves.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeDNDOptions]
   }
 }

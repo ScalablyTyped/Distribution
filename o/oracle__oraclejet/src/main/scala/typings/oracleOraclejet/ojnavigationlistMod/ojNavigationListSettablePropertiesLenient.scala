@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojnavigationlistMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonDefaultRootLabel
-import typings.oracleOraclejet.AnonSelectable
+import typings.oracleOraclejet.anon.DefaultRootLabel
+import typings.oracleOraclejet.anon.Selectable
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojkeysetMod.KeySet
 import typings.oracleOraclejet.oracleOraclejetStrings.all
@@ -29,17 +29,17 @@ trait ojNavigationListSettablePropertiesLenient[K, D]
   var edge: js.UndefOr[top | start] = js.undefined
   var expanded: js.UndefOr[KeySet[K]] = js.undefined
   var hierarchyMenuThreshold: js.UndefOr[Double] = js.undefined
-  var item: js.UndefOr[AnonSelectable[K, D]] = js.undefined
+  var item: js.UndefOr[Selectable[K, D]] = js.undefined
   var overflow: js.UndefOr[popup | hidden] = js.undefined
   var rootLabel: js.UndefOr[String] = js.undefined
   var selection: js.UndefOr[K] = js.undefined
-  var translations: js.UndefOr[AnonDefaultRootLabel] = js.undefined
+  var translations: js.UndefOr[DefaultRootLabel] = js.undefined
 }
 
 object ojNavigationListSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     as: String = null,
     currentItem: K = null,
     data: DataProvider[K, D] = null,
@@ -47,12 +47,12 @@ object ojNavigationListSettablePropertiesLenient {
     drillMode: none | collapsible | sliding = null,
     edge: top | start = null,
     expanded: KeySet[K] = null,
-    hierarchyMenuThreshold: Int | Double = null,
-    item: AnonSelectable[K, D] = null,
+    hierarchyMenuThreshold: js.UndefOr[Double] = js.undefined,
+    item: Selectable[K, D] = null,
     overflow: popup | hidden = null,
     rootLabel: String = null,
     selection: K = null,
-    translations: AnonDefaultRootLabel = null
+    translations: DefaultRootLabel = null
   ): ojNavigationListSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -63,7 +63,7 @@ object ojNavigationListSettablePropertiesLenient {
     if (drillMode != null) __obj.updateDynamic("drillMode")(drillMode.asInstanceOf[js.Any])
     if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
     if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (hierarchyMenuThreshold != null) __obj.updateDynamic("hierarchyMenuThreshold")(hierarchyMenuThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(hierarchyMenuThreshold)) __obj.updateDynamic("hierarchyMenuThreshold")(hierarchyMenuThreshold.get.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (rootLabel != null) __obj.updateDynamic("rootLabel")(rootLabel.asInstanceOf[js.Any])

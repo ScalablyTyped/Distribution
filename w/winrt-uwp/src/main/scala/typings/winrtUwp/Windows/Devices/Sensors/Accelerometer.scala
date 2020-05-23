@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an accelerometer sensor. */
-@JSGlobal("Windows.Devices.Sensors.Accelerometer")
 @js.native
-abstract class Accelerometer () extends js.Object {
+trait Accelerometer extends js.Object {
   /** Gets the device identifier. */
   var deviceId: String = js.native
   /** Gets the maximum number of events that can be batched by the sensor. */
@@ -57,16 +56,5 @@ abstract class Accelerometer () extends js.Object {
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_shaken(`type`: shaken, listener: TypedEventHandler[Accelerometer, AccelerometerShakenEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.Accelerometer")
-@js.native
-object Accelerometer extends js.Object {
-  /**
-    * Returns the default accelerometer.
-    * @return The default accelerometer or null if no integrated accelerometers are found.
-    */
-  def getDefault(): Accelerometer = js.native
 }
 

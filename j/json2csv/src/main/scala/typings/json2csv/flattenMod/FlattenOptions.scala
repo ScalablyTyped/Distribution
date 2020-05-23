@@ -18,8 +18,8 @@ object FlattenOptions {
     separator: String = null
   ): FlattenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrays)) __obj.updateDynamic("arrays")(arrays.asInstanceOf[js.Any])
-    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrays)) __obj.updateDynamic("arrays")(arrays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlattenOptions]
   }

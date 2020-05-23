@@ -2,14 +2,14 @@ package typings.firebaseFirestore.mutationMod
 
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.MaybeDocument
-import typings.firebaseFirestore.modelFieldValueMod.ObjectValue
+import typings.firebaseFirestore.objectValueMod.ObjectValue
 import typings.firebaseFirestore.snapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.timestampMod.Timestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/model/mutation", "Mutation")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/mutation", "Mutation")
 @js.native
 abstract class Mutation () extends js.Object {
   val key: DocumentKey = js.native
@@ -73,7 +73,7 @@ abstract class Mutation () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/model/mutation", "Mutation")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/model/mutation", "Mutation")
 @js.native
 object Mutation extends js.Object {
   /* protected */ def getPostMutationVersion(): SnapshotVersion = js.native
@@ -81,7 +81,7 @@ object Mutation extends js.Object {
     * Returns the version from the given document for use as the result of a
     * mutation. Mutations are defined to return the version of the base document
     * only if it is an existing document. Deleted and unknown documents have a
-    * post-mutation version of SnapshotVersion.MIN.
+    * post-mutation version of SnapshotVersion.min().
     */
   /* protected */ def getPostMutationVersion(maybeDoc: MaybeDocument): SnapshotVersion = js.native
 }

@@ -107,12 +107,12 @@ trait Server extends js.Object {
 object Server {
   @scala.inline
   def apply(
-    AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined,
-    BackupRetentionCount: Int | Double = null,
+    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
+    BackupRetentionCount: js.UndefOr[Integer] = js.undefined,
     CloudFormationStackArn: String = null,
     CreatedAt: Timestamp = null,
     CustomDomain: CustomDomain = null,
-    DisableAutomatedBackup: js.UndefOr[scala.Boolean] = js.undefined,
+    DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined,
     Endpoint: String = null,
     Engine: String = null,
     EngineAttributes: EngineAttributes = null,
@@ -133,12 +133,12 @@ object Server {
     SubnetIds: Strings = null
   ): Server = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.asInstanceOf[js.Any])
-    if (BackupRetentionCount != null) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupRetentionCount)) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.get.asInstanceOf[js.Any])
     if (CloudFormationStackArn != null) __obj.updateDynamic("CloudFormationStackArn")(CloudFormationStackArn.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
     if (CustomDomain != null) __obj.updateDynamic("CustomDomain")(CustomDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup.get.asInstanceOf[js.Any])
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineAttributes != null) __obj.updateDynamic("EngineAttributes")(EngineAttributes.asInstanceOf[js.Any])

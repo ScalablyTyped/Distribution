@@ -1,8 +1,8 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.mod._Global_.JQuery
-import typings.devextreme.mod._Global_.JQueryPromise
-import typings.devextreme.mod._Global_.Promise
+import typings.devextreme.mod.global.JQuery
+import typings.devextreme.mod.global.JQueryPromise
+import typings.devextreme.mod.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

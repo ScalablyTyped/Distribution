@@ -31,7 +31,6 @@ object CredentialsProvider {
     setChangeListener: CredentialChangeListener => Unit
   ): CredentialsProvider = {
     val __obj = js.Dynamic.literal(getToken = js.Any.fromFunction0(getToken), invalidateToken = js.Any.fromFunction0(invalidateToken), removeChangeListener = js.Any.fromFunction0(removeChangeListener), setChangeListener = js.Any.fromFunction1(setChangeListener))
-  
     __obj.asInstanceOf[CredentialsProvider]
   }
 }

@@ -1,7 +1,7 @@
 package typings.xmlbuilder.mod
 
-import typings.xmlbuilder.AnonEncoding
-import typings.xmlbuilder.AnonPubID
+import typings.xmlbuilder.anon.Encoding
+import typings.xmlbuilder.anon.PubID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,8 @@ abstract class XMLNode () extends js.Object {
     * @returns the parent node
     */
   def cdata(value: String): XMLElement = js.native
-  def com(value: String): XMLElement = js.native
+  @JSName("com")
+  def com_(value: String): XMLElement = js.native
   /**
     * Creates a new comment node and appends it to the list of child nodes.
     * 
@@ -84,9 +85,9 @@ abstract class XMLNode () extends js.Object {
   def dec(version: String): XMLElement = js.native
   def dec(version: String, encoding: String): XMLElement = js.native
   def dec(version: String, encoding: String, standalone: Boolean): XMLElement = js.native
-  def dec(version: AnonEncoding): XMLElement = js.native
-  def dec(version: AnonEncoding, encoding: String): XMLElement = js.native
-  def dec(version: AnonEncoding, encoding: String, standalone: Boolean): XMLElement = js.native
+  def dec(version: Encoding): XMLElement = js.native
+  def dec(version: Encoding, encoding: String): XMLElement = js.native
+  def dec(version: Encoding, encoding: String, standalone: Boolean): XMLElement = js.native
   /**
     * Creates the XML declaration.
     * 
@@ -102,9 +103,9 @@ abstract class XMLNode () extends js.Object {
   def declaration(version: String): XMLElement = js.native
   def declaration(version: String, encoding: String): XMLElement = js.native
   def declaration(version: String, encoding: String, standalone: Boolean): XMLElement = js.native
-  def declaration(version: AnonEncoding): XMLElement = js.native
-  def declaration(version: AnonEncoding, encoding: String): XMLElement = js.native
-  def declaration(version: AnonEncoding, encoding: String, standalone: Boolean): XMLElement = js.native
+  def declaration(version: Encoding): XMLElement = js.native
+  def declaration(version: Encoding, encoding: String): XMLElement = js.native
+  def declaration(version: Encoding, encoding: String, standalone: Boolean): XMLElement = js.native
   def doc(): XMLDocument = js.native
   /**
     * Creates the document type definition.
@@ -119,8 +120,8 @@ abstract class XMLNode () extends js.Object {
   def doctype(): XMLDocType = js.native
   def doctype(pubID: String): XMLDocType = js.native
   def doctype(pubID: String, sysID: String): XMLDocType = js.native
-  def doctype(pubID: AnonPubID): XMLDocType = js.native
-  def doctype(pubID: AnonPubID, sysID: String): XMLDocType = js.native
+  def doctype(pubID: PubID): XMLDocType = js.native
+  def doctype(pubID: PubID, sysID: String): XMLDocType = js.native
   /**
     * Returns the document node.
     * 
@@ -130,8 +131,8 @@ abstract class XMLNode () extends js.Object {
   def dtd(): XMLDocType = js.native
   def dtd(pubID: String): XMLDocType = js.native
   def dtd(pubID: String, sysID: String): XMLDocType = js.native
-  def dtd(pubID: AnonPubID): XMLDocType = js.native
-  def dtd(pubID: AnonPubID, sysID: String): XMLDocType = js.native
+  def dtd(pubID: PubID): XMLDocType = js.native
+  def dtd(pubID: PubID, sysID: String): XMLDocType = js.native
   def e(name: js.Any): XMLElement = js.native
   def e(name: js.Any, attributes: js.Object): XMLElement = js.native
   def e(name: js.Any, attributes: js.Object, text: js.Any): XMLElement = js.native

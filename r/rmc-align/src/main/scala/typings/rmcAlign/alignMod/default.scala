@@ -1,6 +1,6 @@
 package typings.rmcAlign.alignMod
 
-import typings.rmcAlign.AnonDisabled
+import typings.rmcAlign.anon.Disabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Align
 @JSImport("rmc-align/lib/Align", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonDisabled = js.native
+  var defaultProps: Disabled = js.native
 }
 

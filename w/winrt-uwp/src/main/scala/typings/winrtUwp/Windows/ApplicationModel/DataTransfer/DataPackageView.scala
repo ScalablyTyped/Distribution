@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A read-only version of a DataPackage . Apps that receive shared content get this object when acquiring content. */
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackageView")
 @js.native
-abstract class DataPackageView () extends js.Object {
+trait DataPackageView extends js.Object {
   /** Returns the formats the DataPackageView contains. */
   var availableFormats: IVectorView[String] = js.native
   /** Gets a DataPackagePropertySetView object, which contains a read-only set of properties for the data in the DataPackageView object. */

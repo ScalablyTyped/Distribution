@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a deferred asynchronous change request. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangedDeferral")
-@js.native
-abstract class ChatMessageChangedDeferral () extends js.Object {
+trait ChatMessageChangedDeferral extends js.Object {
   /** Fires to indicate that the deferred change request has completed. */
-  def complete(): Unit = js.native
+  def complete(): Unit
+}
+
+object ChatMessageChangedDeferral {
+  @scala.inline
+  def apply(complete: () => Unit): ChatMessageChangedDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
+    __obj.asInstanceOf[ChatMessageChangedDeferral]
+  }
 }
 

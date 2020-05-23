@@ -28,13 +28,13 @@ object SeekBackgroundAudioOptions {
   def apply(
     complete: () => Unit = null,
     fail: () => Unit = null,
-    position: Int | Double = null,
+    position: js.UndefOr[Double] = js.undefined,
     success: () => Unit = null
   ): SeekBackgroundAudioOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[SeekBackgroundAudioOptions]
   }

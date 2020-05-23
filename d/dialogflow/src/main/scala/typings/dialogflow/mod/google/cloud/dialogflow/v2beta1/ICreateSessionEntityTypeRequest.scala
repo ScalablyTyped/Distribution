@@ -14,10 +14,13 @@ trait ICreateSessionEntityTypeRequest extends js.Object {
 
 object ICreateSessionEntityTypeRequest {
   @scala.inline
-  def apply(parent: String = null, sessionEntityType: ISessionEntityType = null): ICreateSessionEntityTypeRequest = {
+  def apply(
+    parent: js.UndefOr[Null | String] = js.undefined,
+    sessionEntityType: js.UndefOr[Null | ISessionEntityType] = js.undefined
+  ): ICreateSessionEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (sessionEntityType != null) __obj.updateDynamic("sessionEntityType")(sessionEntityType.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionEntityType)) __obj.updateDynamic("sessionEntityType")(sessionEntityType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateSessionEntityTypeRequest]
   }
 }

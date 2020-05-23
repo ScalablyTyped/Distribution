@@ -16,9 +16,9 @@ trait BottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends j
 
 object BottomProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](bottom: ResponsiveValue[TVal, ThemeType] = null): BottomProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](bottom: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): BottomProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomProps[ThemeType, TVal]]
   }
 }

@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	*	VoxImplant roster item
-	*/
+  *    VoxImplant roster item
+  */
 trait RosterItem extends js.Object {
   /**
-  		*	Groups this roster item belongs to
-  		*/
+    *    Groups this roster item belongs to
+    */
   var groups: js.Array[String]
   /**
-  		*	User id
-  		*/
+    *    User id
+    */
   var id: String
   /**
-  		*	User display name
-  		*/
+    *    User display name
+    */
   var name: String
   /**
-  		*	Resources
-  		*/
+    *    Resources
+    */
   var resources: js.Array[String]
   /**
-  		*	Subscription type
-  		*/
+    *    Subscription type
+    */
   var subscription_type: Double
 }
 

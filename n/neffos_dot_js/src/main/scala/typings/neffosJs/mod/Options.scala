@@ -12,11 +12,15 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(headers: Headers = null, protocols: js.Array[String] = null, reconnnect: Int | Double = null): Options = {
+  def apply(
+    headers: Headers = null,
+    protocols: js.Array[String] = null,
+    reconnnect: js.UndefOr[Double] = js.undefined
+  ): Options = {
     val __obj = js.Dynamic.literal()
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (reconnnect != null) __obj.updateDynamic("reconnnect")(reconnnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnnect)) __obj.updateDynamic("reconnnect")(reconnnect.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

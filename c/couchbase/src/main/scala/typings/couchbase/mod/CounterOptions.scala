@@ -26,16 +26,16 @@ trait CounterOptions extends js.Object {
 object CounterOptions {
   @scala.inline
   def apply(
-    expiry: Int | Double = null,
-    initial: Int | Double = null,
-    persist_to: Int | Double = null,
-    replicate_to: Int | Double = null
+    expiry: js.UndefOr[Double] = js.undefined,
+    initial: js.UndefOr[Double] = js.undefined,
+    persist_to: js.UndefOr[Double] = js.undefined,
+    replicate_to: js.UndefOr[Double] = js.undefined
   ): CounterOptions = {
     val __obj = js.Dynamic.literal()
-    if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (persist_to != null) __obj.updateDynamic("persist_to")(persist_to.asInstanceOf[js.Any])
-    if (replicate_to != null) __obj.updateDynamic("replicate_to")(replicate_to.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiry)) __obj.updateDynamic("expiry")(expiry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(persist_to)) __obj.updateDynamic("persist_to")(persist_to.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replicate_to)) __obj.updateDynamic("replicate_to")(replicate_to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterOptions]
   }
 }

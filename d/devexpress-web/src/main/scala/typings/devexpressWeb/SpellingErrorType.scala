@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,14 +24,6 @@ object SpellingErrorType extends js.Object {
     */
   @js.native
   sealed trait Repeating extends SpellingErrorType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SpellingErrorType with Double] = js.native
-  /* 0 */ @js.native
-  object Misspelling extends TopLevel[Misspelling with Double]
-  
-  /* 1 */ @js.native
-  object Repeating extends TopLevel[Repeating with Double]
   
 }
 

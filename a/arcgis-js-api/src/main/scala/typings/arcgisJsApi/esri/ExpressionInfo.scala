@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,4 @@ trait ExpressionInfo
     */
   var title: String = js.native
 }
-
-@JSGlobal("__esri.ExpressionInfo")
-@js.native
-object ExpressionInfo extends TopLevel[ExpressionInfoConstructor]
 

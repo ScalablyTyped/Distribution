@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -243,7 +242,18 @@ trait color extends js.Object {
   def createVisualVariable(params: colorCreateVisualVariableParams): js.Promise[VisualVariableResult]
 }
 
-@JSGlobal("__esri.color")
-@js.native
-object color extends TopLevel[color]
+object color {
+  @scala.inline
+  def apply(
+    createAgeRenderer: colorCreateAgeRendererParams => js.Promise[AgeRendererResult],
+    createClassBreaksRenderer: colorCreateClassBreaksRendererParams => js.Promise[ClassBreaksRendererResult],
+    createContinuousRenderer: colorCreateContinuousRendererParams => js.Promise[ContinuousRendererResult],
+    createPCContinuousRenderer: colorCreatePCContinuousRendererParams => js.Promise[PCContinuousRendererResult],
+    createPCTrueColorRenderer: colorCreatePCTrueColorRendererParams => js.Promise[PCTrueColorRendererResult],
+    createVisualVariable: colorCreateVisualVariableParams => js.Promise[VisualVariableResult]
+  ): color = {
+    val __obj = js.Dynamic.literal(createAgeRenderer = js.Any.fromFunction1(createAgeRenderer), createClassBreaksRenderer = js.Any.fromFunction1(createClassBreaksRenderer), createContinuousRenderer = js.Any.fromFunction1(createContinuousRenderer), createPCContinuousRenderer = js.Any.fromFunction1(createPCContinuousRenderer), createPCTrueColorRenderer = js.Any.fromFunction1(createPCTrueColorRenderer), createVisualVariable = js.Any.fromFunction1(createVisualVariable))
+    __obj.asInstanceOf[color]
+  }
+}
 

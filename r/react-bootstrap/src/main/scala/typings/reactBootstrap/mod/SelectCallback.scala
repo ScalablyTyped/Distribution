@@ -4,7 +4,7 @@ import typings.react.mod.EventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,6 @@ trait SelectCallback
     * It does not reflect the underlying event and should not be used.
     */
   def apply(e: MouseEvent[js.Object, NativeMouseEvent]): Unit = js.native
-  def apply(eventKey: js.Any, e: SyntheticEvent[js.Object, Event_]): Unit = js.native
+  def apply(eventKey: js.Any, e: SyntheticEvent[js.Object, Event]): Unit = js.native
 }
 

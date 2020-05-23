@@ -1,5 +1,6 @@
 package typings.widestLine
 
+import typings.widestLine.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   // declare function widestLine(input: string): number;
   // export = widestLine;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Get the visual width of the widest line in a string - the number of columns required to display it.
   	@example

@@ -14,10 +14,13 @@ trait ISpeechContext extends js.Object {
 
 object ISpeechContext {
   @scala.inline
-  def apply(boost: Int | Double = null, phrases: js.Array[String] = null): ISpeechContext = {
+  def apply(
+    boost: js.UndefOr[Null | Double] = js.undefined,
+    phrases: js.UndefOr[Null | js.Array[String]] = js.undefined
+  ): ISpeechContext = {
     val __obj = js.Dynamic.literal()
-    if (boost != null) __obj.updateDynamic("boost")(boost.asInstanceOf[js.Any])
-    if (phrases != null) __obj.updateDynamic("phrases")(phrases.asInstanceOf[js.Any])
+    if (!js.isUndefined(boost)) __obj.updateDynamic("boost")(boost.asInstanceOf[js.Any])
+    if (!js.isUndefined(phrases)) __obj.updateDynamic("phrases")(phrases.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpeechContext]
   }
 }

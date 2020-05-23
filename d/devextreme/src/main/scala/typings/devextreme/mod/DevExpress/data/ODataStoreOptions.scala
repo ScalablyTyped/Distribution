@@ -1,7 +1,7 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.AnonAsync
-import typings.devextreme.AnonErrorDetails
+import typings.devextreme.anon.Async
+import typings.devextreme.anon.ErrorDetails
 import typings.devextreme.devextremeStrings.Decimal
 import typings.devextreme.devextremeStrings.Int32
 import typings.devextreme.devextremeStrings.Int64
@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation._
 
 trait ODataStoreOptions extends StoreOptions[ODataStore] {
   /** @name ODataStore.Options.beforeSend */
-  var beforeSend: js.UndefOr[js.Function1[/* options */ AnonAsync, _]] = js.undefined
+  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, _]] = js.undefined
   /** @name ODataStore.Options.deserializeDates */
   var deserializeDates: js.UndefOr[Boolean] = js.undefined
   /** @name ODataStore.Options.errorHandler */
   @JSName("errorHandler")
-  var errorHandler_ODataStoreOptions: js.UndefOr[js.Function1[/* e */ AnonErrorDetails, _]] = js.undefined
+  var errorHandler_ODataStoreOptions: js.UndefOr[js.Function1[/* e */ ErrorDetails, _]] = js.undefined
   /** @name ODataStore.Options.fieldTypes */
   var fieldTypes: js.UndefOr[js.Any] = js.undefined
   /** @name ODataStore.Options.filterToLower */
@@ -40,9 +40,9 @@ trait ODataStoreOptions extends StoreOptions[ODataStore] {
 object ODataStoreOptions {
   @scala.inline
   def apply(
-    beforeSend: /* options */ AnonAsync => _ = null,
+    beforeSend: /* options */ Async => _ = null,
     deserializeDates: js.UndefOr[Boolean] = js.undefined,
-    errorHandler: /* e */ AnonErrorDetails => _ = null,
+    errorHandler: /* e */ ErrorDetails => _ = null,
     fieldTypes: js.Any = null,
     filterToLower: js.UndefOr[Boolean] = js.undefined,
     jsonp: js.UndefOr[Boolean] = js.undefined,
@@ -60,16 +60,16 @@ object ODataStoreOptions {
     onUpdated: (/* key */ js.Any | java.lang.String | Double, /* values */ js.Any) => _ = null,
     onUpdating: (/* key */ js.Any | java.lang.String | Double, /* values */ js.Any) => _ = null,
     url: java.lang.String = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): ODataStoreOptions = {
     val __obj = js.Dynamic.literal()
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
-    if (!js.isUndefined(deserializeDates)) __obj.updateDynamic("deserializeDates")(deserializeDates.asInstanceOf[js.Any])
+    if (!js.isUndefined(deserializeDates)) __obj.updateDynamic("deserializeDates")(deserializeDates.get.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction1(errorHandler))
     if (fieldTypes != null) __obj.updateDynamic("fieldTypes")(fieldTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterToLower)) __obj.updateDynamic("filterToLower")(filterToLower.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsonp)) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterToLower)) __obj.updateDynamic("filterToLower")(filterToLower.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonp)) __obj.updateDynamic("jsonp")(jsonp.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
     if (onInserted != null) __obj.updateDynamic("onInserted")(js.Any.fromFunction2(onInserted))
@@ -84,8 +84,8 @@ object ODataStoreOptions {
     if (onUpdated != null) __obj.updateDynamic("onUpdated")(js.Any.fromFunction2(onUpdated))
     if (onUpdating != null) __obj.updateDynamic("onUpdating")(js.Any.fromFunction2(onUpdating))
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ODataStoreOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.auth0Lock
 
+import typings.auth0Lock.anon.Aud
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ trait AuthResult extends js.Object {
   var appState: js.UndefOr[js.Any] = js.undefined
   var expiresIn: Double
   var idToken: String
-  var idTokenPayload: AnonAud
+  var idTokenPayload: Aud
   var refreshToken: js.UndefOr[String] = js.undefined
   var scope: js.UndefOr[String] = js.undefined
   var state: String
@@ -22,7 +23,7 @@ object AuthResult {
     accessToken: String,
     expiresIn: Double,
     idToken: String,
-    idTokenPayload: AnonAud,
+    idTokenPayload: Aud,
     state: String,
     tokenType: String,
     appState: js.Any = null,

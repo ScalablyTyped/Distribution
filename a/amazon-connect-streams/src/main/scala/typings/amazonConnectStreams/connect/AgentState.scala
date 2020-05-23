@@ -32,13 +32,13 @@ object AgentState {
   def apply(
     name: String,
     `type`: AgentStateType,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     muted: js.UndefOr[Boolean] = js.undefined
   ): AgentState = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentState]
   }
 }

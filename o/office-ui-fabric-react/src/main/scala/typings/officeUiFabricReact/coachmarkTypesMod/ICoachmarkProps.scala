@@ -177,19 +177,19 @@ object ICoachmarkProps {
     ariaLabelledByText: String = null,
     beaconColorOne: String = null,
     beaconColorTwo: String = null,
-    beakHeight: Int | Double = null,
-    beakWidth: Int | Double = null,
+    beakHeight: js.UndefOr[Double] = js.undefined,
+    beakWidth: js.UndefOr[Double] = js.undefined,
     className: String = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
     componentRef: IRefObject[ICoachmark] = null,
-    delayBeforeCoachmarkAnimation: Int | Double = null,
-    delayBeforeMouseOpen: Int | Double = null,
-    height: Int | Double = null,
+    delayBeforeCoachmarkAnimation: js.UndefOr[Double] = js.undefined,
+    delayBeforeMouseOpen: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     isCollapsed: js.UndefOr[Boolean] = js.undefined,
     isPositionForced: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
-    mouseProximityOffset: Int | Double = null,
+    mouseProximityOffset: js.UndefOr[Double] = js.undefined,
     onAnimationOpenEnd: () => Unit = null,
     onAnimationOpenStart: () => Unit = null,
     onDismiss: /* ev */ js.UndefOr[js.Any] => Unit = null,
@@ -198,14 +198,14 @@ object ICoachmarkProps {
     positioningContainerProps: IPositioningContainerProps = null,
     preventDismissOnLostFocus: js.UndefOr[Boolean] = js.undefined,
     preventFocusOnMount: js.UndefOr[Boolean] = js.undefined,
-    ref: LegacyRef[CoachmarkBase] = null,
+    ref: js.UndefOr[Null | LegacyRef[CoachmarkBase]] = js.undefined,
     styles: IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles] = null,
     target: HTMLElement | String = null,
     teachingBubbleRef: ITeachingBubble = null,
     theme: ITheme = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ICoachmarkProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     if (ariaAlertText != null) __obj.updateDynamic("ariaAlertText")(ariaAlertText.asInstanceOf[js.Any])
     if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy.asInstanceOf[js.Any])
     if (ariaDescribedByText != null) __obj.updateDynamic("ariaDescribedByText")(ariaDescribedByText.asInstanceOf[js.Any])
@@ -213,33 +213,32 @@ object ICoachmarkProps {
     if (ariaLabelledByText != null) __obj.updateDynamic("ariaLabelledByText")(ariaLabelledByText.asInstanceOf[js.Any])
     if (beaconColorOne != null) __obj.updateDynamic("beaconColorOne")(beaconColorOne.asInstanceOf[js.Any])
     if (beaconColorTwo != null) __obj.updateDynamic("beaconColorTwo")(beaconColorTwo.asInstanceOf[js.Any])
-    if (beakHeight != null) __obj.updateDynamic("beakHeight")(beakHeight.asInstanceOf[js.Any])
-    if (beakWidth != null) __obj.updateDynamic("beakWidth")(beakWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(beakHeight)) __obj.updateDynamic("beakHeight")(beakHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(beakWidth)) __obj.updateDynamic("beakWidth")(beakWidth.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (delayBeforeCoachmarkAnimation != null) __obj.updateDynamic("delayBeforeCoachmarkAnimation")(delayBeforeCoachmarkAnimation.asInstanceOf[js.Any])
-    if (delayBeforeMouseOpen != null) __obj.updateDynamic("delayBeforeMouseOpen")(delayBeforeMouseOpen.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPositionForced)) __obj.updateDynamic("isPositionForced")(isPositionForced.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayBeforeCoachmarkAnimation)) __obj.updateDynamic("delayBeforeCoachmarkAnimation")(delayBeforeCoachmarkAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayBeforeMouseOpen)) __obj.updateDynamic("delayBeforeMouseOpen")(delayBeforeMouseOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPositionForced)) __obj.updateDynamic("isPositionForced")(isPositionForced.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (mouseProximityOffset != null) __obj.updateDynamic("mouseProximityOffset")(mouseProximityOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseProximityOffset)) __obj.updateDynamic("mouseProximityOffset")(mouseProximityOffset.get.asInstanceOf[js.Any])
     if (onAnimationOpenEnd != null) __obj.updateDynamic("onAnimationOpenEnd")(js.Any.fromFunction0(onAnimationOpenEnd))
     if (onAnimationOpenStart != null) __obj.updateDynamic("onAnimationOpenStart")(js.Any.fromFunction0(onAnimationOpenStart))
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (!js.isUndefined(persistentBeak)) __obj.updateDynamic("persistentBeak")(persistentBeak.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentBeak)) __obj.updateDynamic("persistentBeak")(persistentBeak.get.asInstanceOf[js.Any])
     if (positioningContainerProps != null) __obj.updateDynamic("positioningContainerProps")(positioningContainerProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDismissOnLostFocus)) __obj.updateDynamic("preventDismissOnLostFocus")(preventDismissOnLostFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventFocusOnMount)) __obj.updateDynamic("preventFocusOnMount")(preventFocusOnMount.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDismissOnLostFocus)) __obj.updateDynamic("preventDismissOnLostFocus")(preventDismissOnLostFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventFocusOnMount)) __obj.updateDynamic("preventFocusOnMount")(preventFocusOnMount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (teachingBubbleRef != null) __obj.updateDynamic("teachingBubbleRef")(teachingBubbleRef.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoachmarkProps]
   }
 }

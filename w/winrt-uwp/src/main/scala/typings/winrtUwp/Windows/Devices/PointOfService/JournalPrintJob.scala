@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a set of printing instructions that you want to run on the journal printer station. */
-@JSGlobal("Windows.Devices.PointOfService.JournalPrintJob")
 @js.native
-abstract class JournalPrintJob () extends js.Object {
+trait JournalPrintJob extends js.Object {
   /**
     * Runs the print job on the journal printer station asynchronously.
     * @return The operation to run the print job. This operation returns true if the print job succeeds; otherwise, the operation returns false.

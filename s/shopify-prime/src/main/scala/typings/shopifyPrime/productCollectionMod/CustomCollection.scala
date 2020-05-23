@@ -1,7 +1,7 @@
 package typings.shopifyPrime.productCollectionMod
 
-import typings.shopifyPrime.AnonAttachment
-import typings.shopifyPrime.AnonId
+import typings.shopifyPrime.anon.Attachment
+import typings.shopifyPrime.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait CustomCollection extends ProductCollection {
     * product_id - Required when adding a new item
     * id - Required when shifting the position of a product that was previously added to the collection
     */
-  var collects: js.Array[AnonId]
+  var collects: js.Array[Id]
   /**
     * "key": "new"
     * "value": "newvalue"
@@ -39,12 +39,12 @@ trait CustomCollection extends ProductCollection {
 object CustomCollection {
   @scala.inline
   def apply(
-    collects: js.Array[AnonId],
+    collects: js.Array[Id],
     admin_graphql_api_id: String = null,
     body_html: String = null,
     handle: String = null,
-    id: Int | Double = null,
-    image: AnonAttachment = null,
+    id: js.UndefOr[Double] = js.undefined,
+    image: Attachment = null,
     metafield: String = null,
     published: js.UndefOr[Boolean] = js.undefined,
     published_at: String = null,
@@ -58,10 +58,10 @@ object CustomCollection {
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (body_html != null) __obj.updateDynamic("body_html")(body_html.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (metafield != null) __obj.updateDynamic("metafield")(metafield.asInstanceOf[js.Any])
-    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.get.asInstanceOf[js.Any])
     if (published_at != null) __obj.updateDynamic("published_at")(published_at.asInstanceOf[js.Any])
     if (published_scope != null) __obj.updateDynamic("published_scope")(published_scope.asInstanceOf[js.Any])
     if (sort_order != null) __obj.updateDynamic("sort_order")(sort_order.asInstanceOf[js.Any])

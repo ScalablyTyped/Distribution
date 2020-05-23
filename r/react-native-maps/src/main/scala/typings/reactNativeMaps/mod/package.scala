@@ -9,6 +9,6 @@ package object mod {
   //  Overlay
   // =======================================================================
   type Coordinate = js.Tuple2[scala.Double, scala.Double]
-  type KmlMapEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNativeMaps.AnonMarkers]
-  type MapEvent[T] = typings.reactNative.mod.NativeSyntheticEvent[T with typings.reactNativeMaps.AnonCoordinate]
+  type KmlMapEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNativeMaps.anon.Markers]
+  type MapEvent[T] = typings.reactNative.mod.NativeSyntheticEvent[T with typings.reactNativeMaps.anon.Coordinate]
 }

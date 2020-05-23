@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLMapElement")
 @js.native
-class HTMLMapElement protected () extends js.Object {
+trait HTMLMapElement extends js.Object {
   @JSName("MSHTML.HTMLMapElement_typekey")
   var MSHTMLDotHTMLMapElement_typekey: HTMLMapElement = js.native
   var accessKey: String = js.native

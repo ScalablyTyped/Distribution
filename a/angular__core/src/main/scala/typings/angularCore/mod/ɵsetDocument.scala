@@ -1,6 +1,6 @@
 package typings.angularCore.mod
 
-import typings.std.Document_
+import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵsetDocument extends js.Object {
   def apply(): Unit = js.native
-  def apply(document: Document_): Unit = js.native
+  def apply(document: Document): Unit = js.native
 }
 

@@ -3,7 +3,7 @@ package typings.mdns.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.TopLevel
-import typings.mdns.AnonName
+import typings.mdns.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ServiceType
   extends Instantiable1[
-      (/* serviceTypeIdentifier */ AnonName) | (/* serviceTypeIdentifier */ js.Array[String]) | (/* serviceType */ ServiceType) | (/* serviceTypeIdentifier */ String), 
+      (/* serviceTypeIdentifier */ js.Array[String]) | (/* serviceTypeIdentifier */ Name) | (/* serviceType */ ServiceType) | (/* serviceTypeIdentifier */ String), 
       ServiceType
     ]
      with Instantiable3[
@@ -25,7 +25,7 @@ trait ServiceType
   var protocol: String = js.native
   var subtypes: js.Array[String] = js.native
   def fromArray(serviceTypeIdentifier: js.Array[String]): ServiceType = js.native
-  def fromJSON(serviceTypeIdentifier: AnonName): ServiceType = js.native
+  def fromJSON(serviceTypeIdentifier: Name): ServiceType = js.native
   def fromJSON(serviceType: ServiceType): ServiceType = js.native
   def fromString(serviceTypeIdentifier: String): ServiceType = js.native
   def toArray(): js.Array[String] = js.native

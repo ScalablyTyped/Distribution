@@ -1,7 +1,7 @@
 package typings.babylonjs.helpersIndexMod
 
-import typings.babylonjs.AnonAutoPlay
 import typings.babylonjs.HTMLVideoElement
+import typings.babylonjs.anon.AutoPlay
 import typings.babylonjs.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,9 +17,9 @@ class VideoDome protected ()
     * @param urlsOrVideo defines the url(s) or the video element to use
     * @param options An object containing optional or exposed sub element properties
     */
-  def this(name: String, urlsOrVideo: String, options: AnonAutoPlay, scene: Scene) = this()
-  def this(name: String, urlsOrVideo: js.Array[String], options: AnonAutoPlay, scene: Scene) = this()
-  def this(name: String, urlsOrVideo: HTMLVideoElement, options: AnonAutoPlay, scene: Scene) = this()
+  def this(name: String, urlsOrVideo: String, options: AutoPlay, scene: Scene) = this()
+  def this(name: String, urlsOrVideo: js.Array[String], options: AutoPlay, scene: Scene) = this()
+  def this(name: String, urlsOrVideo: HTMLVideoElement, options: AutoPlay, scene: Scene) = this()
 }
 
 /* static members */

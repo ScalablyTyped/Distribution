@@ -32,9 +32,7 @@ object projMod extends js.Object {
   def cloneTransform(input: js.Array[Double]): js.Array[Double] = js.native
   def cloneTransform(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = js.native
   def cloneTransform(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = js.native
-  def createProjection(projection: js.UndefOr[scala.Nothing], defaultCode: String): default = js.native
-  def createProjection(projection: String, defaultCode: String): default = js.native
-  def createProjection(projection: default, defaultCode: String): default = js.native
+  def createProjection(projection: js.UndefOr[String | default], defaultCode: String): default = js.native
   def createTransformFromCoordinateTransform(coordTransform: js.Function1[/* p0 */ Coordinate, Coordinate]): TransformFunction = js.native
   def equivalent(projection1: default, projection2: default): Boolean = js.native
   def fromLonLat(coordinate: Coordinate): Coordinate = js.native

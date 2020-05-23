@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A record of information transmitted from a sender to a receiver
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Communication extends DomainResource {
   /**
     * Contains extended information for property 'notDone'.
@@ -170,7 +170,7 @@ object Communication {
     if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(notDone)) __obj.updateDynamic("notDone")(notDone.asInstanceOf[js.Any])
+    if (!js.isUndefined(notDone)) __obj.updateDynamic("notDone")(notDone.get.asInstanceOf[js.Any])
     if (notDoneReason != null) __obj.updateDynamic("notDoneReason")(notDoneReason.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     if (partOf != null) __obj.updateDynamic("partOf")(partOf.asInstanceOf[js.Any])

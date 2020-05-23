@@ -37,13 +37,13 @@ object ListViolationEventsRequest {
   def apply(
     endTime: Timestamp,
     startTime: Timestamp,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null,
     securityProfileName: SecurityProfileName = null,
     thingName: DeviceDefenderThingName = null
   ): ListViolationEventsRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (securityProfileName != null) __obj.updateDynamic("securityProfileName")(securityProfileName.asInstanceOf[js.Any])
     if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])

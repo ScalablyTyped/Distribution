@@ -1,9 +1,9 @@
 package typings.loopback.mod
 
 import typings.expressServeStaticCore.mod.Handler
-import typings.loopback.AnonDataSource
-import typings.loopback.AnonEnabled
-import typings.loopback.TypeofModel
+import typings.loopback.anon.DataSource
+import typings.loopback.anon.Enabled
+import typings.loopback.anon.TypeofModel
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -127,8 +127,8 @@ trait LoopBackApplication
     * @returns {any} this (fluent API
     * @header app.middlewareFromConfig(factory, config
     */
-  def middlewareFromConfig(factory: js.Function0[Unit], config: AnonEnabled): js.Any = js.native
-  def model(Model: String, config: AnonDataSource): js.Any = js.native
+  def middlewareFromConfig(factory: js.Function0[Unit], config: Enabled): js.Any = js.native
+  def model(Model: String, config: DataSource): js.Any = js.native
   /**
     * Listen for connections and update the configured port
     * When there are no parameters or there is only one callback parameter,
@@ -175,7 +175,7 @@ trait LoopBackApplication
     * @en
     * @returns {any} the model clas
     */
-  def model(Model: js.Any, config: AnonDataSource): js.Any = js.native
+  def model(Model: js.Any, config: DataSource): js.Any = js.native
   /**
     * Get the models exported by the app. Returns only models defined using `app.model()
     * There are two ways to access models

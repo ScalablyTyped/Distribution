@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.visualization.CoreChartBase")
 @js.native
-abstract class CoreChartBase () extends ChartBaseRenderable {
+trait CoreChartBase extends ChartBaseRenderable {
   def getAction(id: String): ChartAction = js.native
   def getAction(id: Double): ChartAction = js.native
   def getBoundingBox(id: String): ChartBoundingBox = js.native

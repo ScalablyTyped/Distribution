@@ -35,18 +35,18 @@ trait StackSummary extends js.Object {
 object StackSummary {
   @scala.inline
   def apply(
-    AppsCount: Int | scala.Double = null,
+    AppsCount: js.UndefOr[Integer] = js.undefined,
     Arn: String = null,
     InstancesCount: InstancesCount = null,
-    LayersCount: Int | scala.Double = null,
+    LayersCount: js.UndefOr[Integer] = js.undefined,
     Name: String = null,
     StackId: String = null
   ): StackSummary = {
     val __obj = js.Dynamic.literal()
-    if (AppsCount != null) __obj.updateDynamic("AppsCount")(AppsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AppsCount)) __obj.updateDynamic("AppsCount")(AppsCount.get.asInstanceOf[js.Any])
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (InstancesCount != null) __obj.updateDynamic("InstancesCount")(InstancesCount.asInstanceOf[js.Any])
-    if (LayersCount != null) __obj.updateDynamic("LayersCount")(LayersCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(LayersCount)) __obj.updateDynamic("LayersCount")(LayersCount.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSummary]

@@ -23,12 +23,12 @@ trait GetSampledRequestsResponse extends js.Object {
 object GetSampledRequestsResponse {
   @scala.inline
   def apply(
-    PopulationSize: Int | Double = null,
+    PopulationSize: js.UndefOr[PopulationSize] = js.undefined,
     SampledRequests: SampledHTTPRequests = null,
     TimeWindow: TimeWindow = null
   ): GetSampledRequestsResponse = {
     val __obj = js.Dynamic.literal()
-    if (PopulationSize != null) __obj.updateDynamic("PopulationSize")(PopulationSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PopulationSize)) __obj.updateDynamic("PopulationSize")(PopulationSize.get.asInstanceOf[js.Any])
     if (SampledRequests != null) __obj.updateDynamic("SampledRequests")(SampledRequests.asInstanceOf[js.Any])
     if (TimeWindow != null) __obj.updateDynamic("TimeWindow")(TimeWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSampledRequestsResponse]

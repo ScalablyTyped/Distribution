@@ -3,7 +3,7 @@ package typings.reactFocusLock.interfacesMod
 import typings.react.mod.ElementType
 import typings.react.mod.Ref
 import typings.react.mod.RefObject
-import typings.reactFocusLock.AnonChildrenChildrenType
+import typings.reactFocusLock.anon.ChildrenChildrenType
 import typings.reactFocusLock.reactFocusLockStrings.tail
 import typings.std.FocusOptions
 import typings.std.HTMLElement
@@ -20,7 +20,7 @@ trait ReactFocusLockProps[ChildrenType, LockProps] extends js.Object {
   /**
     * Component to use, defaults to 'div'
     */
-  var as: js.UndefOr[String | (ElementType[LockProps with AnonChildrenChildrenType[ChildrenType]])] = js.undefined
+  var as: js.UndefOr[String | (ElementType[LockProps with ChildrenChildrenType[ChildrenType]])] = js.undefined
   /**
     * enables or disables autoFocusing feature.
     * If enabled - will move focus inside Lock, selecting the first or autoFocusable element
@@ -79,7 +79,7 @@ object ReactFocusLockProps {
   @scala.inline
   def apply[ChildrenType, LockProps](
     allowTextSelection: js.UndefOr[Boolean] = js.undefined,
-    as: String | (ElementType[LockProps with AnonChildrenChildrenType[ChildrenType]]) = null,
+    as: String | (ElementType[LockProps with ChildrenChildrenType[ChildrenType]]) = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     children: ChildrenType = null,
     className: String = null,
@@ -90,25 +90,25 @@ object ReactFocusLockProps {
     onActivation: /* node */ HTMLElement => Unit = null,
     onDeactivation: /* node */ HTMLElement => Unit = null,
     persistentFocus: js.UndefOr[Boolean] = js.undefined,
-    ref: Ref[HTMLElement] = null,
+    ref: js.UndefOr[Null | Ref[HTMLElement]] = js.undefined,
     returnFocus: Boolean | FocusOptions = null,
     shards: js.Array[RefObject[_] | HTMLElement] = null,
     whiteList: /* activeElement */ HTMLElement => Boolean = null
   ): ReactFocusLockProps[ChildrenType, LockProps] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowTextSelection)) __obj.updateDynamic("allowTextSelection")(allowTextSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTextSelection)) __obj.updateDynamic("allowTextSelection")(allowTextSelection.get.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (lockProps != null) __obj.updateDynamic("lockProps")(lockProps.asInstanceOf[js.Any])
     if (noFocusGuards != null) __obj.updateDynamic("noFocusGuards")(noFocusGuards.asInstanceOf[js.Any])
     if (onActivation != null) __obj.updateDynamic("onActivation")(js.Any.fromFunction1(onActivation))
     if (onDeactivation != null) __obj.updateDynamic("onDeactivation")(js.Any.fromFunction1(onDeactivation))
-    if (!js.isUndefined(persistentFocus)) __obj.updateDynamic("persistentFocus")(persistentFocus.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentFocus)) __obj.updateDynamic("persistentFocus")(persistentFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (returnFocus != null) __obj.updateDynamic("returnFocus")(returnFocus.asInstanceOf[js.Any])
     if (shards != null) __obj.updateDynamic("shards")(shards.asInstanceOf[js.Any])
     if (whiteList != null) __obj.updateDynamic("whiteList")(js.Any.fromFunction1(whiteList))

@@ -27,7 +27,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (shallow != null) __obj.updateDynamic("shallow")(shallow.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

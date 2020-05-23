@@ -32,40 +32,40 @@ object MoveToOpts {
   @scala.inline
   def apply(
     avoid: js.Array[_ | RoomPosition] = null,
-    costCallback: (/* roomName */ String, /* costMatrix */ CostMatrix) => Boolean | CostMatrix = null,
-    heuristicWeight: Int | Double = null,
+    costCallback: (/* roomName */ String, /* costMatrix */ CostMatrix) => Unit | CostMatrix = null,
+    heuristicWeight: js.UndefOr[Double] = js.undefined,
     ignore: js.Array[_ | RoomPosition] = null,
     ignoreCreeps: js.UndefOr[Boolean] = js.undefined,
     ignoreDestructibleStructures: js.UndefOr[Boolean] = js.undefined,
     ignoreRoads: js.UndefOr[Boolean] = js.undefined,
-    maxOps: Int | Double = null,
-    maxRooms: Int | Double = null,
+    maxOps: js.UndefOr[Double] = js.undefined,
+    maxRooms: js.UndefOr[Double] = js.undefined,
     noPathFinding: js.UndefOr[Boolean] = js.undefined,
-    plainCost: Int | Double = null,
-    range: Int | Double = null,
-    reusePath: Int | Double = null,
+    plainCost: js.UndefOr[Double] = js.undefined,
+    range: js.UndefOr[Double] = js.undefined,
+    reusePath: js.UndefOr[Double] = js.undefined,
     serialize: js.UndefOr[Boolean] = js.undefined,
     serializeMemory: js.UndefOr[Boolean] = js.undefined,
-    swampCost: Int | Double = null,
+    swampCost: js.UndefOr[Double] = js.undefined,
     visualizePathStyle: PolyStyle = null
   ): MoveToOpts = {
     val __obj = js.Dynamic.literal()
     if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
     if (costCallback != null) __obj.updateDynamic("costCallback")(js.Any.fromFunction2(costCallback))
-    if (heuristicWeight != null) __obj.updateDynamic("heuristicWeight")(heuristicWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(heuristicWeight)) __obj.updateDynamic("heuristicWeight")(heuristicWeight.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCreeps)) __obj.updateDynamic("ignoreCreeps")(ignoreCreeps.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDestructibleStructures)) __obj.updateDynamic("ignoreDestructibleStructures")(ignoreDestructibleStructures.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreRoads)) __obj.updateDynamic("ignoreRoads")(ignoreRoads.asInstanceOf[js.Any])
-    if (maxOps != null) __obj.updateDynamic("maxOps")(maxOps.asInstanceOf[js.Any])
-    if (maxRooms != null) __obj.updateDynamic("maxRooms")(maxRooms.asInstanceOf[js.Any])
-    if (!js.isUndefined(noPathFinding)) __obj.updateDynamic("noPathFinding")(noPathFinding.asInstanceOf[js.Any])
-    if (plainCost != null) __obj.updateDynamic("plainCost")(plainCost.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (reusePath != null) __obj.updateDynamic("reusePath")(reusePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
-    if (!js.isUndefined(serializeMemory)) __obj.updateDynamic("serializeMemory")(serializeMemory.asInstanceOf[js.Any])
-    if (swampCost != null) __obj.updateDynamic("swampCost")(swampCost.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCreeps)) __obj.updateDynamic("ignoreCreeps")(ignoreCreeps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDestructibleStructures)) __obj.updateDynamic("ignoreDestructibleStructures")(ignoreDestructibleStructures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreRoads)) __obj.updateDynamic("ignoreRoads")(ignoreRoads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxOps)) __obj.updateDynamic("maxOps")(maxOps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRooms)) __obj.updateDynamic("maxRooms")(maxRooms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noPathFinding)) __obj.updateDynamic("noPathFinding")(noPathFinding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(plainCost)) __obj.updateDynamic("plainCost")(plainCost.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reusePath)) __obj.updateDynamic("reusePath")(reusePath.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeMemory)) __obj.updateDynamic("serializeMemory")(serializeMemory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swampCost)) __obj.updateDynamic("swampCost")(swampCost.get.asInstanceOf[js.Any])
     if (visualizePathStyle != null) __obj.updateDynamic("visualizePathStyle")(visualizePathStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveToOpts]
   }

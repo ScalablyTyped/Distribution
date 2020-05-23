@@ -31,7 +31,7 @@ object Request {
   ): Request = {
     val __obj = js.Dynamic.literal()
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
-    if (!js.isUndefined(canceled)) __obj.updateDynamic("canceled")(canceled.asInstanceOf[js.Any])
+    if (!js.isUndefined(canceled)) __obj.updateDynamic("canceled")(canceled.get.asInstanceOf[js.Any])
     if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])

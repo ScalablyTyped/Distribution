@@ -17,13 +17,13 @@ object GetCertificateAuthorityRevocationConfigurationCrlConfiguration {
   def apply(
     customCname: String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    expirationInDays: Int | Double = null,
+    expirationInDays: js.UndefOr[Double] = js.undefined,
     s3BucketName: String = null
   ): GetCertificateAuthorityRevocationConfigurationCrlConfiguration = {
     val __obj = js.Dynamic.literal()
     if (customCname != null) __obj.updateDynamic("customCname")(customCname.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (expirationInDays != null) __obj.updateDynamic("expirationInDays")(expirationInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expirationInDays)) __obj.updateDynamic("expirationInDays")(expirationInDays.get.asInstanceOf[js.Any])
     if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCertificateAuthorityRevocationConfigurationCrlConfiguration]
   }

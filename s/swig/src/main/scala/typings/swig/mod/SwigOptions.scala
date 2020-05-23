@@ -26,7 +26,7 @@ object SwigOptions {
     varControls: js.Array[String] = null
   ): SwigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoescape)) __obj.updateDynamic("autoescape")(autoescape.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoescape)) __obj.updateDynamic("autoescape")(autoescape.get.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (cmtControls != null) __obj.updateDynamic("cmtControls")(cmtControls.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])

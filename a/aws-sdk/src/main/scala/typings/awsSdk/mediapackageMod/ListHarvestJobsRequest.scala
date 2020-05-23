@@ -29,13 +29,13 @@ object ListHarvestJobsRequest {
   def apply(
     IncludeChannelId: string = null,
     IncludeStatus: string = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: string = null
   ): ListHarvestJobsRequest = {
     val __obj = js.Dynamic.literal()
     if (IncludeChannelId != null) __obj.updateDynamic("IncludeChannelId")(IncludeChannelId.asInstanceOf[js.Any])
     if (IncludeStatus != null) __obj.updateDynamic("IncludeStatus")(IncludeStatus.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHarvestJobsRequest]
   }

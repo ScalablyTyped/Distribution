@@ -26,9 +26,6 @@ class FieldStat () extends IFieldStat {
   /** FieldStat latencyCount. */
   @JSName("latencyCount")
   var latencyCount_FieldStat: js.Array[Double] = js.native
-  /** FieldStat name. */
-  @JSName("name")
-  var name_FieldStat: String = js.native
   /** FieldStat requestsWithErrorsCount. */
   @JSName("requestsWithErrorsCount")
   var requestsWithErrorsCount_FieldStat: Double = js.native

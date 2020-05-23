@@ -84,12 +84,12 @@ object FieldInfoFormatProperties {
   def apply(
     dateFormat: default | `short-date` | `short-date-short-time` | `short-date-long-time` | `short-date-long-time-24` | `long-month-day-year` | `long-month-day-year-short-time` | `long-month-day-year-short-time-24` | `long-month-day-year-long-time` | `long-month-day-year-long-time-24` | `day-short-month-year` | `day-short-month-year-short-time` | `day-short-month-year-short-time-24` | `day-short-month-year-long-time` | `day-short-month-year-long-time-24` | `long-date` | `long-date-short-time` | `long-date-short-time-24` | `long-date-long-time` | `long-date-long-time-24` | `long-month-year` | `short-month-year` | year = null,
     digitSeparator: js.UndefOr[Boolean] = js.undefined,
-    places: Int | Double = null
+    places: js.UndefOr[Double] = js.undefined
   ): FieldInfoFormatProperties = {
     val __obj = js.Dynamic.literal()
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(digitSeparator)) __obj.updateDynamic("digitSeparator")(digitSeparator.asInstanceOf[js.Any])
-    if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
+    if (!js.isUndefined(digitSeparator)) __obj.updateDynamic("digitSeparator")(digitSeparator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(places)) __obj.updateDynamic("places")(places.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInfoFormatProperties]
   }
 }

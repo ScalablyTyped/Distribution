@@ -1,6 +1,6 @@
 package typings.materialAnimation
 
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   val transformStyleProperties: js.Array[String] = js.native
-  def getCorrectEventName(windowObj: Window_, eventType: String): String = js.native
-  def getCorrectPropertyName(windowObj: Window_, eventType: String): String = js.native
+  def getCorrectEventName(windowObj: Window, eventType: String): String = js.native
+  def getCorrectPropertyName(windowObj: Window, eventType: String): String = js.native
 }
 

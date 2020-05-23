@@ -16,9 +16,8 @@ trait SignatureHelpTriggerReason extends js.Object
 
 object SignatureHelpTriggerReason {
   @scala.inline
-  def SignatureHelpInvokedReason(kind: invoked, triggerCharacter: js.UndefOr[scala.Nothing] = js.undefined): SignatureHelpTriggerReason = {
+  def SignatureHelpInvokedReason(kind: invoked): SignatureHelpTriggerReason = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerCharacter)) __obj.updateDynamic("triggerCharacter")(triggerCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpTriggerReason]
   }
   @scala.inline

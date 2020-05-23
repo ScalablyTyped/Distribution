@@ -30,12 +30,12 @@ trait GooglePrivacyDlpV2beta1FixedSizeBucketingConfig extends js.Object {
 object GooglePrivacyDlpV2beta1FixedSizeBucketingConfig {
   @scala.inline
   def apply(
-    bucketSize: Int | Double = null,
+    bucketSize: js.UndefOr[Double] = js.undefined,
     lowerBound: GooglePrivacyDlpV2beta1Value = null,
     upperBound: GooglePrivacyDlpV2beta1Value = null
   ): GooglePrivacyDlpV2beta1FixedSizeBucketingConfig = {
     val __obj = js.Dynamic.literal()
-    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bucketSize)) __obj.updateDynamic("bucketSize")(bucketSize.get.asInstanceOf[js.Any])
     if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
     if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1FixedSizeBucketingConfig]

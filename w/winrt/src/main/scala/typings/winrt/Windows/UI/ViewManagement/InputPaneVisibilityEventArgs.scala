@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.ViewManagement.InputPaneVisibilityEventArgs")
-@js.native
-class InputPaneVisibilityEventArgs () extends IInputPaneVisibilityEventArgs {
-  /* CompleteClass */
-  override var ensuredFocusedElementInView: Boolean = js.native
-  /* CompleteClass */
-  override var occludedRect: Rect = js.native
+trait InputPaneVisibilityEventArgs extends IInputPaneVisibilityEventArgs
+
+object InputPaneVisibilityEventArgs {
+  @scala.inline
+  def apply(ensuredFocusedElementInView: Boolean, occludedRect: Rect): InputPaneVisibilityEventArgs = {
+    val __obj = js.Dynamic.literal(ensuredFocusedElementInView = ensuredFocusedElementInView.asInstanceOf[js.Any], occludedRect = occludedRect.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InputPaneVisibilityEventArgs]
+  }
 }
 

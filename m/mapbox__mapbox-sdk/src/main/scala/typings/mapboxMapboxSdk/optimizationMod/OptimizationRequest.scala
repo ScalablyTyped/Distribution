@@ -93,9 +93,9 @@ object OptimizationRequest {
     if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundtrip)) __obj.updateDynamic("roundtrip")(roundtrip.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundtrip)) __obj.updateDynamic("roundtrip")(roundtrip.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptimizationRequest]
   }
 }

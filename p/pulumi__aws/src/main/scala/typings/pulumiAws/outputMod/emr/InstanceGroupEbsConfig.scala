@@ -26,11 +26,16 @@ trait InstanceGroupEbsConfig extends js.Object {
 
 object InstanceGroupEbsConfig {
   @scala.inline
-  def apply(size: Double, `type`: String, iops: Int | Double = null, volumesPerInstance: Int | Double = null): InstanceGroupEbsConfig = {
+  def apply(
+    size: Double,
+    `type`: String,
+    iops: js.UndefOr[Double] = js.undefined,
+    volumesPerInstance: js.UndefOr[Double] = js.undefined
+  ): InstanceGroupEbsConfig = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
-    if (volumesPerInstance != null) __obj.updateDynamic("volumesPerInstance")(volumesPerInstance.asInstanceOf[js.Any])
+    if (!js.isUndefined(iops)) __obj.updateDynamic("iops")(iops.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(volumesPerInstance)) __obj.updateDynamic("volumesPerInstance")(volumesPerInstance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupEbsConfig]
   }
 }

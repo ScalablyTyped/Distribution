@@ -6,13 +6,12 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type ComponentClassProps[C] = js.Any
-  type ElementConfig[C] = typings.react.mod._Global_.JSX.LibraryManagedAttributes[C, typings.reactWithStyles.mod.ElementProps[C]]
+  type ElementConfig[C] = typings.react.mod.global.JSX.LibraryManagedAttributes[C, typings.reactWithStyles.mod.ElementProps[C]]
   type ElementProps[C] = typings.reactWithStyles.mod.SFCProps[C] | typings.reactWithStyles.mod.ComponentClassProps[C]
   type Nullable[T] = js.UndefOr[T | scala.Null]
   type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type SFCProps[C] = js.Any
   type Styles = org.scalablytyped.runtime.StringDictionary[
-    typings.reactWithStyles.mod.Nullable[typings.reactWithStyles.CSSPropertiespseudoSelect]
+    typings.reactWithStyles.mod.Nullable[typings.reactWithStyles.anon.CSSPropertiespseudoSelect]
   ]
-  type Theme = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

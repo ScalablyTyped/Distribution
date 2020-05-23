@@ -6,26 +6,26 @@ import scala.scalajs.js.annotation._
 
 trait DecorationRenderOptions extends ThemableDecorationRenderOptions {
   /**
-  		 * Overwrite options for dark themes.
-  		 */
+    * Overwrite options for dark themes.
+    */
   var dark: js.UndefOr[ThemableDecorationRenderOptions] = js.undefined
   /**
-  		 * Should the decoration be rendered also on the whitespace after the line text.
-  		 * Defaults to `false`.
-  		 */
+    * Should the decoration be rendered also on the whitespace after the line text.
+    * Defaults to `false`.
+    */
   var isWholeLine: js.UndefOr[Boolean] = js.undefined
   /**
-  		 * Overwrite options for light themes.
-  		 */
+    * Overwrite options for light themes.
+    */
   var light: js.UndefOr[ThemableDecorationRenderOptions] = js.undefined
   /**
-  		 * The position in the overview ruler where the decoration should be rendered.
-  		 */
+    * The position in the overview ruler where the decoration should be rendered.
+    */
   var overviewRulerLane: js.UndefOr[OverviewRulerLane] = js.undefined
   /**
-  		 * Customize the growing behavior of the decoration when edits occur at the edges of the decoration's range.
-  		 * Defaults to `DecorationRangeBehavior.OpenOpen`.
-  		 */
+    * Customize the growing behavior of the decoration when edits occur at the edges of the decoration's range.
+    * Defaults to `DecorationRangeBehavior.OpenOpen`.
+    */
   var rangeBehavior: js.UndefOr[DecorationRangeBehavior] = js.undefined
 }
 
@@ -78,7 +78,7 @@ object DecorationRenderOptions {
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (gutterIconPath != null) __obj.updateDynamic("gutterIconPath")(gutterIconPath.asInstanceOf[js.Any])
     if (gutterIconSize != null) __obj.updateDynamic("gutterIconSize")(gutterIconSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWholeLine)) __obj.updateDynamic("isWholeLine")(isWholeLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWholeLine)) __obj.updateDynamic("isWholeLine")(isWholeLine.get.asInstanceOf[js.Any])
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
     if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

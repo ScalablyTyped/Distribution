@@ -5,8 +5,8 @@ import typings.devextreme.mod.DevExpress.fileProvider.ArrayFileProviderOptions
 import typings.devextreme.mod.DevExpress.fileProvider.CustomFileProviderOptions
 import typings.devextreme.mod.DevExpress.fileProvider.FileProviderOptions
 import typings.devextreme.mod.DevExpress.fileProvider.RemoteFileProviderOptions
-import typings.devextreme.mod._Global_.JQueryPromise
-import typings.devextreme.mod._Global_.Promise
+import typings.devextreme.mod.global.JQueryPromise
+import typings.devextreme.mod.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

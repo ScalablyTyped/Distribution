@@ -37,16 +37,16 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(
-    maximum: Int | Double = null,
+    maximum: js.UndefOr[Double] = js.undefined,
     orientation: Orientation = null,
-    page: Int | Double = null,
-    value: Int | Double = null
+    page: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -15,7 +15,7 @@ object MatchTags {
   @scala.inline
   def apply(bothTags: js.UndefOr[Boolean] = js.undefined): MatchTags = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bothTags)) __obj.updateDynamic("bothTags")(bothTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(bothTags)) __obj.updateDynamic("bothTags")(bothTags.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchTags]
   }
 }

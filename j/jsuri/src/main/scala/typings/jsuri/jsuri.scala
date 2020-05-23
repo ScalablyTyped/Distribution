@@ -8,13 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object jsuri extends js.Object {
   @js.native
-  /**
-    * Creates a new Uri object
-    * @constructor
-    * @param {string} str
-    */
-  class Uri () extends js.Object {
-    def this(str: String) = this()
+  trait Uri extends js.Object {
     /**
       * adds a query parameter
       * @param  {string}  key        add values for key

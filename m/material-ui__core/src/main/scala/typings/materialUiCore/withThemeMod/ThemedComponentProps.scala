@@ -16,9 +16,9 @@ trait ThemedComponentProps extends js.Object {
 
 object ThemedComponentProps {
   @scala.inline
-  def apply(innerRef: Ref[_] | RefObject[_] = null, theme: Theme = null): ThemedComponentProps = {
+  def apply(innerRef: js.UndefOr[Null | Ref[_] | RefObject[_]] = js.undefined, theme: Theme = null): ThemedComponentProps = {
     val __obj = js.Dynamic.literal()
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemedComponentProps]
   }

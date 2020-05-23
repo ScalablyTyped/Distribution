@@ -160,7 +160,7 @@ object ITimeEntryOptions {
     beforeSetTime: js.Function = null,
     beforeShow: js.Function = null,
     defaultTime: Date | Double | String = null,
-    initialField: Int | Double = null,
+    initialField: js.UndefOr[Double] = js.undefined,
     maxTime: Date | Double | js.Array[Double] | String = null,
     minTime: Date | Double | js.Array[Double] | String = null,
     noSeparatorEntry: js.UndefOr[Boolean] = js.undefined,
@@ -186,24 +186,24 @@ object ITimeEntryOptions {
     if (beforeSetTime != null) __obj.updateDynamic("beforeSetTime")(beforeSetTime.asInstanceOf[js.Any])
     if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow.asInstanceOf[js.Any])
     if (defaultTime != null) __obj.updateDynamic("defaultTime")(defaultTime.asInstanceOf[js.Any])
-    if (initialField != null) __obj.updateDynamic("initialField")(initialField.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialField)) __obj.updateDynamic("initialField")(initialField.get.asInstanceOf[js.Any])
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
     if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSeparatorEntry)) __obj.updateDynamic("noSeparatorEntry")(noSeparatorEntry.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSeparatorEntry)) __obj.updateDynamic("noSeparatorEntry")(noSeparatorEntry.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(show24Hours)) __obj.updateDynamic("show24Hours")(show24Hours.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(show24Hours)) __obj.updateDynamic("show24Hours")(show24Hours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.get.asInstanceOf[js.Any])
     if (spinnerBigImage != null) __obj.updateDynamic("spinnerBigImage")(spinnerBigImage.asInstanceOf[js.Any])
     if (spinnerBigSize != null) __obj.updateDynamic("spinnerBigSize")(spinnerBigSize.asInstanceOf[js.Any])
     if (spinnerImage != null) __obj.updateDynamic("spinnerImage")(spinnerImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(spinnerIncDecOnly)) __obj.updateDynamic("spinnerIncDecOnly")(spinnerIncDecOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinnerIncDecOnly)) __obj.updateDynamic("spinnerIncDecOnly")(spinnerIncDecOnly.get.asInstanceOf[js.Any])
     if (spinnerRepeat != null) __obj.updateDynamic("spinnerRepeat")(spinnerRepeat.asInstanceOf[js.Any])
     if (spinnerSize != null) __obj.updateDynamic("spinnerSize")(spinnerSize.asInstanceOf[js.Any])
     if (spinnerTexts != null) __obj.updateDynamic("spinnerTexts")(spinnerTexts.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabToExit)) __obj.updateDynamic("tabToExit")(tabToExit.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabToExit)) __obj.updateDynamic("tabToExit")(tabToExit.get.asInstanceOf[js.Any])
     if (timeSteps != null) __obj.updateDynamic("timeSteps")(timeSteps.asInstanceOf[js.Any])
-    if (!js.isUndefined(unlimitedHours)) __obj.updateDynamic("unlimitedHours")(unlimitedHours.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMouseWheel)) __obj.updateDynamic("useMouseWheel")(useMouseWheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(unlimitedHours)) __obj.updateDynamic("unlimitedHours")(unlimitedHours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMouseWheel)) __obj.updateDynamic("useMouseWheel")(useMouseWheel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeEntryOptions]
   }
 }

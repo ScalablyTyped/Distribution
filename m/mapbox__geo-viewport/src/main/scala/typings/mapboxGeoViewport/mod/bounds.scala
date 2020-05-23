@@ -1,6 +1,6 @@
 package typings.mapboxGeoViewport.mod
 
-import typings.mapboxGeoViewport.AnonLat
+import typings.mapboxGeoViewport.anon.Lat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object bounds extends js.Object {
     dimensions: js.Tuple2[Double, Double],
     tileSize: Double
   ): BoundingBox = js.native
-  def apply(viewport: AnonLat, zoom: Double, dimensions: js.Tuple2[Double, Double]): BoundingBox = js.native
-  def apply(viewport: AnonLat, zoom: Double, dimensions: js.Tuple2[Double, Double], tileSize: Double): BoundingBox = js.native
+  def apply(viewport: Lat, zoom: Double, dimensions: js.Tuple2[Double, Double]): BoundingBox = js.native
+  def apply(viewport: Lat, zoom: Double, dimensions: js.Tuple2[Double, Double], tileSize: Double): BoundingBox = js.native
 }
 

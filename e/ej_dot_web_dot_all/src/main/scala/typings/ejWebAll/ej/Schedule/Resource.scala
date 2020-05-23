@@ -36,7 +36,7 @@ object Resource {
     title: String = null
   ): Resource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (resourceSettings != null) __obj.updateDynamic("resourceSettings")(resourceSettings.asInstanceOf[js.Any])

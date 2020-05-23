@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapButton")
 @js.native
-class BootstrapButton () extends Control {
+trait BootstrapButton extends Control {
   def doClick(): Unit = js.native
   def focus(): Unit = js.native
   def getBadgeIconCssClass(): String = js.native

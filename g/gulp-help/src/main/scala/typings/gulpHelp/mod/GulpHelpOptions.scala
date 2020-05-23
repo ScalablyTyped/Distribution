@@ -40,8 +40,8 @@ object GulpHelpOptions {
     if (afterPrintCallback != null) __obj.updateDynamic("afterPrintCallback")(afterPrintCallback.asInstanceOf[js.Any])
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDepsMessage)) __obj.updateDynamic("hideDepsMessage")(hideDepsMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideEmpty)) __obj.updateDynamic("hideEmpty")(hideEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDepsMessage)) __obj.updateDynamic("hideDepsMessage")(hideDepsMessage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideEmpty)) __obj.updateDynamic("hideEmpty")(hideEmpty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GulpHelpOptions]
   }
 }

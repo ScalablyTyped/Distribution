@@ -1,6 +1,6 @@
 package typings.mockKnex.mod
 
-import typings.knex.mod.Sql
+import typings.mockKnex.mod.Knex.Sql
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when loading resource.
-		 */
+  * Fired when loading resource.
+  */
 trait WebViewOnLoadResourceEvent extends WebViewBaseEvent {
   /**
-  			 * The url of the resource that will load.
-  			 */
+    * The url of the resource that will load.
+    */
   var url: String
 }
 

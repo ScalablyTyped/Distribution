@@ -44,16 +44,16 @@ object Options {
     dstPath: String = null,
     filter: String = null,
     format: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     progressive: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null,
-    sharpening: Int | Double = null,
+    quality: js.UndefOr[Double] = js.undefined,
+    sharpening: js.UndefOr[Double] = js.undefined,
     srcData: String = null,
     srcFormat: String = null,
     srcPath: String = null,
     strip: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    width: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (colorspace != null) __obj.updateDynamic("colorspace")(colorspace.asInstanceOf[js.Any])
@@ -61,16 +61,16 @@ object Options {
     if (dstPath != null) __obj.updateDynamic("dstPath")(dstPath.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (sharpening != null) __obj.updateDynamic("sharpening")(sharpening.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sharpening)) __obj.updateDynamic("sharpening")(sharpening.get.asInstanceOf[js.Any])
     if (srcData != null) __obj.updateDynamic("srcData")(srcData.asInstanceOf[js.Any])
     if (srcFormat != null) __obj.updateDynamic("srcFormat")(srcFormat.asInstanceOf[js.Any])
     if (srcPath != null) __obj.updateDynamic("srcPath")(srcPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -1,6 +1,6 @@
 package typings.stripe.mod.resources
 
-import typings.stripe.AnonMetadata
+import typings.stripe.anon.Metadata
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IDataOptions
 import typings.stripe.mod.IList
@@ -130,21 +130,21 @@ class ApplicationFees () extends StripeResource {
     response: IResponseFn[IApplicationFeeRefund]
   ): js.Promise[IApplicationFeeRefund] = js.native
   def retrieveRefund(feeId: String, refundId: String, response: IResponseFn[IApplicationFeeRefund]): js.Promise[IApplicationFeeRefund] = js.native
-  def updateRefund(feeId: String, refundId: String, data: AnonMetadata): js.Promise[IApplicationFeeRefund] = js.native
+  def updateRefund(feeId: String, refundId: String, data: Metadata): js.Promise[IApplicationFeeRefund] = js.native
   /**
     * Updates the specified application fee refund by setting the values of the parameters passed. Any parameters not provided will be left
     * unchanged.
     *
     * This request only accepts metadata as an argument.
     */
-  def updateRefund(feeId: String, refundId: String, data: AnonMetadata, options: HeaderOptions): js.Promise[IApplicationFeeRefund] = js.native
+  def updateRefund(feeId: String, refundId: String, data: Metadata, options: HeaderOptions): js.Promise[IApplicationFeeRefund] = js.native
   def updateRefund(
     feeId: String,
     refundId: String,
-    data: AnonMetadata,
+    data: Metadata,
     options: HeaderOptions,
     response: IResponseFn[IApplicationFeeRefund]
   ): js.Promise[IApplicationFeeRefund] = js.native
-  def updateRefund(feeId: String, refundId: String, data: AnonMetadata, response: IResponseFn[IApplicationFeeRefund]): js.Promise[IApplicationFeeRefund] = js.native
+  def updateRefund(feeId: String, refundId: String, data: Metadata, response: IResponseFn[IApplicationFeeRefund]): js.Promise[IApplicationFeeRefund] = js.native
 }
 

@@ -3,7 +3,7 @@ package typings.relayCompiler.schemaMod
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.astMod.TypeNode
 import typings.graphql.astMod.ValueNode
-import typings.relayCompiler.AnonArgs
+import typings.relayCompiler.anon.Args
 import typings.relayCompiler.iRMod.Field
 import typings.std.ReadonlySet
 import scala.scalajs.js
@@ -54,7 +54,7 @@ trait Schema extends js.Object {
   def getFieldArgByName(field: FieldID, argName: String): js.UndefOr[Argument | Null] = js.native
   def getFieldArgs(field: FieldID): js.Array[Argument] = js.native
   def getFieldByName(`type`: CompositeTypeID | InputObjectTypeID, fieldName: String): js.UndefOr[FieldID | Null] = js.native
-  def getFieldConfig(field: FieldID): AnonArgs = js.native
+  def getFieldConfig(field: FieldID): Args = js.native
   def getFieldName(field: FieldID): String = js.native
   def getFieldParentType(field: FieldID): TypeID = js.native
   def getFieldType(field: FieldID): TypeID = js.native

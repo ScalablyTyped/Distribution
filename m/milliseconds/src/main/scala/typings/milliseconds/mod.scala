@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("milliseconds", JSImport.Namespace)
 @js.native
-object mod extends TopLevel[Milliseconds_]
+object mod extends TopLevel[Milliseconds]
 

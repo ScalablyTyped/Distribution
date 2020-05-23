@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.Control")
 @js.native
-class Control protected () extends js.Object {
+trait Control extends js.Object {
   var BoundValue: js.Any = js.native
   var Cancel: Boolean = js.native
   var ControlSource: String = js.native

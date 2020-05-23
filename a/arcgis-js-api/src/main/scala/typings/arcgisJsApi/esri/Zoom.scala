@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,8 +49,4 @@ trait Zoom extends Widget_ {
     */
   def zoomOut(): Unit = js.native
 }
-
-@JSGlobal("__esri.Zoom")
-@js.native
-object Zoom extends TopLevel[ZoomConstructor]
 

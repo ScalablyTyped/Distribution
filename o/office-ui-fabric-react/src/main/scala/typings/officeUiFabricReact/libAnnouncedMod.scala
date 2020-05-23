@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
+import typings.officeUiFabricReact.anon.PartialIAnnouncedProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

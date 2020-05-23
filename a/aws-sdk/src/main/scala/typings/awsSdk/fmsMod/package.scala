@@ -20,7 +20,12 @@ package object fmsMod {
   type ComplianceViolators = js.Array[typings.awsSdk.fmsMod.ComplianceViolator]
   type CustomerPolicyScopeId = java.lang.String
   type CustomerPolicyScopeIdList = js.Array[typings.awsSdk.fmsMod.CustomerPolicyScopeId]
-  type CustomerPolicyScopeIdType = typings.awsSdk.awsSdkStrings.ACCOUNT | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACCOUNT
+    - typings.awsSdk.awsSdkStrings.ORG_UNIT
+    - java.lang.String
+  */
+  type CustomerPolicyScopeIdType = typings.awsSdk.fmsMod._CustomerPolicyScopeIdType | java.lang.String
   type CustomerPolicyScopeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.fmsMod.CustomerPolicyScopeIdList]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AWSCONFIG

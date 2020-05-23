@@ -10,9 +10,9 @@ trait ExplodeEffect extends js.Object {
 
 object ExplodeEffect {
   @scala.inline
-  def apply(pieces: Int | Double = null): ExplodeEffect = {
+  def apply(pieces: js.UndefOr[Double] = js.undefined): ExplodeEffect = {
     val __obj = js.Dynamic.literal()
-    if (pieces != null) __obj.updateDynamic("pieces")(pieces.asInstanceOf[js.Any])
+    if (!js.isUndefined(pieces)) __obj.updateDynamic("pieces")(pieces.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplodeEffect]
   }
 }

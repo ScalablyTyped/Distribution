@@ -1,17 +1,17 @@
 package typings.gapiClientCompute.gapi.client.compute
 
-import typings.gapiClientCompute.AnonIPProtocol
+import typings.gapiClientCompute.anon.IPProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Firewall extends js.Object {
   /** The list of ALLOW rules specified by this firewall. Each rule specifies a protocol and port-range tuple that describes a permitted connection. */
-  var allowed: js.UndefOr[js.Array[AnonIPProtocol]] = js.undefined
+  var allowed: js.UndefOr[js.Array[IPProtocol]] = js.undefined
   /** [Output Only] Creation timestamp in RFC3339 text format. */
   var creationTimestamp: js.UndefOr[String] = js.undefined
   /** The list of DENY rules specified by this firewall. Each rule specifies a protocol and port-range tuple that describes a permitted connection. */
-  var denied: js.UndefOr[js.Array[AnonIPProtocol]] = js.undefined
+  var denied: js.UndefOr[js.Array[IPProtocol]] = js.undefined
   /** An optional description of this resource. Provide this property when you create the resource. */
   var description: js.UndefOr[String] = js.undefined
   /**
@@ -76,9 +76,9 @@ trait Firewall extends js.Object {
 object Firewall {
   @scala.inline
   def apply(
-    allowed: js.Array[AnonIPProtocol] = null,
+    allowed: js.Array[IPProtocol] = null,
     creationTimestamp: String = null,
-    denied: js.Array[AnonIPProtocol] = null,
+    denied: js.Array[IPProtocol] = null,
     description: String = null,
     destinationRanges: js.Array[String] = null,
     direction: String = null,
@@ -86,7 +86,7 @@ object Firewall {
     kind: String = null,
     name: String = null,
     network: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     selfLink: String = null,
     sourceRanges: js.Array[String] = null,
     sourceTags: js.Array[String] = null,
@@ -103,7 +103,7 @@ object Firewall {
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (sourceRanges != null) __obj.updateDynamic("sourceRanges")(sourceRanges.asInstanceOf[js.Any])
     if (sourceTags != null) __obj.updateDynamic("sourceTags")(sourceTags.asInstanceOf[js.Any])

@@ -1,104 +1,103 @@
 package typings.materialUi.MaterialUI.Styles
 
-import typings.materialUi.AnonAccentColor
-import typings.materialUi.AnonActionColor
-import typings.materialUi.AnonBackgroundColor
-import typings.materialUi.AnonBackgroundColorColor
-import typings.materialUi.AnonBackgroundColorString
-import typings.materialUi.AnonBodyColor
-import typings.materialUi.AnonBorderColor
-import typings.materialUi.AnonBorderColorString
-import typings.materialUi.AnonBorderColorTextColor
-import typings.materialUi.AnonBoxColor
-import typings.materialUi.AnonButtonFilterColor
-import typings.materialUi.AnonButtonSize
-import typings.materialUi.AnonCalendarTextColor
-import typings.materialUi.AnonCheckedColor
-import typings.materialUi.AnonClockCircleColor
-import typings.materialUi.AnonColor
-import typings.materialUi.AnonColorFontWeight
-import typings.materialUi.AnonColorString
-import typings.materialUi.AnonConnectorLineColor
-import typings.materialUi.AnonContainerBackgroundColor
-import typings.materialUi.AnonDataHeight
-import typings.materialUi.AnonDeleteIconColor
-import typings.materialUi.AnonDisabledColor
-import typings.materialUi.AnonDisabledTextColor
-import typings.materialUi.AnonFontWeight
-import typings.materialUi.AnonHandleColorZero
-import typings.materialUi.AnonHeight
-import typings.materialUi.AnonHeightSpacing
-import typings.materialUi.AnonHoverColor
-import typings.materialUi.AnonIconColor
-import typings.materialUi.AnonLabelColor
-import typings.materialUi.AnonLeftIconColor
-import typings.materialUi.AnonLoadingStrokeColor
-import typings.materialUi.AnonOverlayContentBackground
-import typings.materialUi.AnonRippleBackgroundColor
-import typings.materialUi.AnonSelectedTextColor
-import typings.materialUi.AnonSpacing
-import typings.materialUi.AnonSubtitleColor
-import typings.materialUi.AnonTapHighlightColor
-import typings.materialUi.AnonTextColor
-import typings.materialUi.AnonWidth
-import typings.materialUi.AnonZDepthShadows
+import typings.materialUi.anon.AccentColor
+import typings.materialUi.anon.ActionColor
+import typings.materialUi.anon.BackgroundColor
+import typings.materialUi.anon.BackgroundColorColor
+import typings.materialUi.anon.BackgroundColorString
+import typings.materialUi.anon.BodyColor
+import typings.materialUi.anon.BorderColor
+import typings.materialUi.anon.BorderColorString
+import typings.materialUi.anon.BorderColorTextColor
+import typings.materialUi.anon.BoxColor
+import typings.materialUi.anon.ButtonFilterColor
+import typings.materialUi.anon.ButtonSize
+import typings.materialUi.anon.CalendarTextColor
+import typings.materialUi.anon.CheckedColor
+import typings.materialUi.anon.ClockCircleColor
+import typings.materialUi.anon.Color
+import typings.materialUi.anon.ColorFontWeight
+import typings.materialUi.anon.ColorString
+import typings.materialUi.anon.ConnectorLineColor
+import typings.materialUi.anon.ContainerBackgroundColor
+import typings.materialUi.anon.DataHeight
+import typings.materialUi.anon.DeleteIconColor
+import typings.materialUi.anon.DisabledColor
+import typings.materialUi.anon.DisabledTextColor
+import typings.materialUi.anon.FontWeight
+import typings.materialUi.anon.HandleColorZero
+import typings.materialUi.anon.Height
+import typings.materialUi.anon.HeightSpacing
+import typings.materialUi.anon.HoverColor
+import typings.materialUi.anon.IconColor
+import typings.materialUi.anon.LabelColor
+import typings.materialUi.anon.LeftIconColor
+import typings.materialUi.anon.LoadingStrokeColor
+import typings.materialUi.anon.OverlayContentBackground
+import typings.materialUi.anon.RippleBackgroundColor
+import typings.materialUi.anon.SelectedTextColor
+import typings.materialUi.anon.SubtitleColor
+import typings.materialUi.anon.TapHighlightColor
+import typings.materialUi.anon.TextColor
+import typings.materialUi.anon.Width
+import typings.materialUi.anon.ZDepthShadows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MuiTheme extends js.Object {
-  var appBar: js.UndefOr[AnonColor] = js.undefined
-  var avatar: js.UndefOr[AnonBackgroundColor] = js.undefined
-  var badge: js.UndefOr[AnonFontWeight] = js.undefined
+  var appBar: js.UndefOr[Color] = js.undefined
+  var avatar: js.UndefOr[BackgroundColor] = js.undefined
+  var badge: js.UndefOr[FontWeight] = js.undefined
   var baseTheme: js.UndefOr[RawTheme] = js.undefined
-  var button: js.UndefOr[AnonHeight] = js.undefined
-  var card: js.UndefOr[AnonSubtitleColor] = js.undefined
-  var cardMedia: js.UndefOr[AnonOverlayContentBackground] = js.undefined
-  var cardText: js.UndefOr[AnonTextColor] = js.undefined
-  var checkbox: js.UndefOr[AnonBoxColor] = js.undefined
-  var chip: js.UndefOr[AnonDeleteIconColor] = js.undefined
-  var datePicker: js.UndefOr[AnonCalendarTextColor] = js.undefined
-  var dialog: js.UndefOr[AnonBodyColor] = js.undefined
-  var drawer: js.UndefOr[AnonWidth] = js.undefined
-  var dropDownMenu: js.UndefOr[AnonAccentColor] = js.undefined
-  var enhancedButton: js.UndefOr[AnonTapHighlightColor] = js.undefined
-  var flatButton: js.UndefOr[AnonButtonFilterColor] = js.undefined
-  var floatingActionButton: js.UndefOr[AnonButtonSize] = js.undefined
+  var button: js.UndefOr[Height] = js.undefined
+  var card: js.UndefOr[SubtitleColor] = js.undefined
+  var cardMedia: js.UndefOr[OverlayContentBackground] = js.undefined
+  var cardText: js.UndefOr[TextColor] = js.undefined
+  var checkbox: js.UndefOr[BoxColor] = js.undefined
+  var chip: js.UndefOr[DeleteIconColor] = js.undefined
+  var datePicker: js.UndefOr[CalendarTextColor] = js.undefined
+  var dialog: js.UndefOr[BodyColor] = js.undefined
+  var drawer: js.UndefOr[Width] = js.undefined
+  var dropDownMenu: js.UndefOr[AccentColor] = js.undefined
+  var enhancedButton: js.UndefOr[TapHighlightColor] = js.undefined
+  var flatButton: js.UndefOr[ButtonFilterColor] = js.undefined
+  var floatingActionButton: js.UndefOr[ButtonSize] = js.undefined
   var fontFamily: js.UndefOr[String] = js.undefined
-  var gridTile: js.UndefOr[AnonTextColor] = js.undefined
-  var icon: js.UndefOr[AnonBackgroundColorColor] = js.undefined
-  var inkBar: js.UndefOr[AnonBackgroundColorString] = js.undefined
+  var gridTile: js.UndefOr[TextColor] = js.undefined
+  var icon: js.UndefOr[BackgroundColorColor] = js.undefined
+  var inkBar: js.UndefOr[BackgroundColorString] = js.undefined
   var isRtl: js.UndefOr[Boolean] = js.undefined
-  var listItem: js.UndefOr[AnonLeftIconColor] = js.undefined
-  var menu: js.UndefOr[AnonContainerBackgroundColor] = js.undefined
-  var menuItem: js.UndefOr[AnonDataHeight] = js.undefined
-  var menuSubheader: js.UndefOr[AnonBorderColor] = js.undefined
-  var overlay: js.UndefOr[AnonBackgroundColorString] = js.undefined
+  var listItem: js.UndefOr[LeftIconColor] = js.undefined
+  var menu: js.UndefOr[ContainerBackgroundColor] = js.undefined
+  var menuItem: js.UndefOr[DataHeight] = js.undefined
+  var menuSubheader: js.UndefOr[BorderColor] = js.undefined
+  var overlay: js.UndefOr[BackgroundColorString] = js.undefined
   var palette: js.UndefOr[ThemePalette] = js.undefined
-  var paper: js.UndefOr[AnonZDepthShadows] = js.undefined
-  var radioButton: js.UndefOr[AnonCheckedColor] = js.undefined
-  var raisedButton: js.UndefOr[AnonDisabledColor] = js.undefined
+  var paper: js.UndefOr[ZDepthShadows] = js.undefined
+  var radioButton: js.UndefOr[CheckedColor] = js.undefined
+  var raisedButton: js.UndefOr[DisabledColor] = js.undefined
   var rawTheme: js.UndefOr[RawTheme] = js.undefined
-  var refreshIndicator: js.UndefOr[AnonLoadingStrokeColor] = js.undefined
-  var ripple: js.UndefOr[AnonColorString] = js.undefined
-  var slider: js.UndefOr[AnonHandleColorZero] = js.undefined
-  var snackbar: js.UndefOr[AnonActionColor] = js.undefined
+  var refreshIndicator: js.UndefOr[LoadingStrokeColor] = js.undefined
+  var ripple: js.UndefOr[ColorString] = js.undefined
+  var slider: js.UndefOr[HandleColorZero] = js.undefined
+  var snackbar: js.UndefOr[ActionColor] = js.undefined
   var spacing: js.UndefOr[Spacing] = js.undefined
-  var stepper: js.UndefOr[AnonConnectorLineColor] = js.undefined
-  var subheader: js.UndefOr[AnonColorFontWeight] = js.undefined
-  var svgIcon: js.UndefOr[AnonColorString] = js.undefined
-  var table: js.UndefOr[AnonBackgroundColorString] = js.undefined
-  var tableFooter: js.UndefOr[AnonBorderColorTextColor] = js.undefined
-  var tableHeader: js.UndefOr[AnonBorderColorString] = js.undefined
-  var tableHeaderColumn: js.UndefOr[AnonSpacing] = js.undefined
-  var tableRow: js.UndefOr[AnonHoverColor] = js.undefined
-  var tableRowColumn: js.UndefOr[AnonHeightSpacing] = js.undefined
-  var tabs: js.UndefOr[AnonSelectedTextColor] = js.undefined
-  var textField: js.UndefOr[AnonDisabledTextColor] = js.undefined
-  var timePicker: js.UndefOr[AnonClockCircleColor] = js.undefined
-  var toggle: js.UndefOr[AnonLabelColor] = js.undefined
-  var toolbar: js.UndefOr[AnonIconColor] = js.undefined
-  var tooltip: js.UndefOr[AnonRippleBackgroundColor] = js.undefined
+  var stepper: js.UndefOr[ConnectorLineColor] = js.undefined
+  var subheader: js.UndefOr[ColorFontWeight] = js.undefined
+  var svgIcon: js.UndefOr[ColorString] = js.undefined
+  var table: js.UndefOr[BackgroundColorString] = js.undefined
+  var tableFooter: js.UndefOr[BorderColorTextColor] = js.undefined
+  var tableHeader: js.UndefOr[BorderColorString] = js.undefined
+  var tableHeaderColumn: js.UndefOr[typings.materialUi.anon.Spacing] = js.undefined
+  var tableRow: js.UndefOr[HoverColor] = js.undefined
+  var tableRowColumn: js.UndefOr[HeightSpacing] = js.undefined
+  var tabs: js.UndefOr[SelectedTextColor] = js.undefined
+  var textField: js.UndefOr[DisabledTextColor] = js.undefined
+  var timePicker: js.UndefOr[ClockCircleColor] = js.undefined
+  var toggle: js.UndefOr[LabelColor] = js.undefined
+  var toolbar: js.UndefOr[IconColor] = js.undefined
+  var tooltip: js.UndefOr[RippleBackgroundColor] = js.undefined
   var userAgent: js.UndefOr[String | Boolean] = js.undefined
   var zIndex: js.UndefOr[typings.materialUi.MaterialUI.Styles.zIndex] = js.undefined
 }
@@ -106,58 +105,58 @@ trait MuiTheme extends js.Object {
 object MuiTheme {
   @scala.inline
   def apply(
-    appBar: AnonColor = null,
-    avatar: AnonBackgroundColor = null,
-    badge: AnonFontWeight = null,
+    appBar: Color = null,
+    avatar: BackgroundColor = null,
+    badge: FontWeight = null,
     baseTheme: RawTheme = null,
-    button: AnonHeight = null,
-    card: AnonSubtitleColor = null,
-    cardMedia: AnonOverlayContentBackground = null,
-    cardText: AnonTextColor = null,
-    checkbox: AnonBoxColor = null,
-    chip: AnonDeleteIconColor = null,
-    datePicker: AnonCalendarTextColor = null,
-    dialog: AnonBodyColor = null,
-    drawer: AnonWidth = null,
-    dropDownMenu: AnonAccentColor = null,
-    enhancedButton: AnonTapHighlightColor = null,
-    flatButton: AnonButtonFilterColor = null,
-    floatingActionButton: AnonButtonSize = null,
+    button: Height = null,
+    card: SubtitleColor = null,
+    cardMedia: OverlayContentBackground = null,
+    cardText: TextColor = null,
+    checkbox: BoxColor = null,
+    chip: DeleteIconColor = null,
+    datePicker: CalendarTextColor = null,
+    dialog: BodyColor = null,
+    drawer: Width = null,
+    dropDownMenu: AccentColor = null,
+    enhancedButton: TapHighlightColor = null,
+    flatButton: ButtonFilterColor = null,
+    floatingActionButton: ButtonSize = null,
     fontFamily: String = null,
-    gridTile: AnonTextColor = null,
-    icon: AnonBackgroundColorColor = null,
-    inkBar: AnonBackgroundColorString = null,
+    gridTile: TextColor = null,
+    icon: BackgroundColorColor = null,
+    inkBar: BackgroundColorString = null,
     isRtl: js.UndefOr[Boolean] = js.undefined,
-    listItem: AnonLeftIconColor = null,
-    menu: AnonContainerBackgroundColor = null,
-    menuItem: AnonDataHeight = null,
-    menuSubheader: AnonBorderColor = null,
-    overlay: AnonBackgroundColorString = null,
+    listItem: LeftIconColor = null,
+    menu: ContainerBackgroundColor = null,
+    menuItem: DataHeight = null,
+    menuSubheader: BorderColor = null,
+    overlay: BackgroundColorString = null,
     palette: ThemePalette = null,
-    paper: AnonZDepthShadows = null,
-    radioButton: AnonCheckedColor = null,
-    raisedButton: AnonDisabledColor = null,
+    paper: ZDepthShadows = null,
+    radioButton: CheckedColor = null,
+    raisedButton: DisabledColor = null,
     rawTheme: RawTheme = null,
-    refreshIndicator: AnonLoadingStrokeColor = null,
-    ripple: AnonColorString = null,
-    slider: AnonHandleColorZero = null,
-    snackbar: AnonActionColor = null,
+    refreshIndicator: LoadingStrokeColor = null,
+    ripple: ColorString = null,
+    slider: HandleColorZero = null,
+    snackbar: ActionColor = null,
     spacing: Spacing = null,
-    stepper: AnonConnectorLineColor = null,
-    subheader: AnonColorFontWeight = null,
-    svgIcon: AnonColorString = null,
-    table: AnonBackgroundColorString = null,
-    tableFooter: AnonBorderColorTextColor = null,
-    tableHeader: AnonBorderColorString = null,
-    tableHeaderColumn: AnonSpacing = null,
-    tableRow: AnonHoverColor = null,
-    tableRowColumn: AnonHeightSpacing = null,
-    tabs: AnonSelectedTextColor = null,
-    textField: AnonDisabledTextColor = null,
-    timePicker: AnonClockCircleColor = null,
-    toggle: AnonLabelColor = null,
-    toolbar: AnonIconColor = null,
-    tooltip: AnonRippleBackgroundColor = null,
+    stepper: ConnectorLineColor = null,
+    subheader: ColorFontWeight = null,
+    svgIcon: ColorString = null,
+    table: BackgroundColorString = null,
+    tableFooter: BorderColorTextColor = null,
+    tableHeader: BorderColorString = null,
+    tableHeaderColumn: typings.materialUi.anon.Spacing = null,
+    tableRow: HoverColor = null,
+    tableRowColumn: HeightSpacing = null,
+    tabs: SelectedTextColor = null,
+    textField: DisabledTextColor = null,
+    timePicker: ClockCircleColor = null,
+    toggle: LabelColor = null,
+    toolbar: IconColor = null,
+    tooltip: RippleBackgroundColor = null,
     userAgent: String | Boolean = null,
     zIndex: zIndex = null
   ): MuiTheme = {
@@ -183,7 +182,7 @@ object MuiTheme {
     if (gridTile != null) __obj.updateDynamic("gridTile")(gridTile.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (inkBar != null) __obj.updateDynamic("inkBar")(inkBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.get.asInstanceOf[js.Any])
     if (listItem != null) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
     if (menuItem != null) __obj.updateDynamic("menuItem")(menuItem.asInstanceOf[js.Any])

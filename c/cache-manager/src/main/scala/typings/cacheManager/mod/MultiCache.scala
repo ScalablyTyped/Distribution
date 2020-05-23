@@ -10,6 +10,7 @@ trait MultiCache extends js.Object {
   def del(key: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
   def get[T](key: String): js.Promise[_] = js.native
   def get[T](key: String, callback: js.Function2[/* error */ js.Any, /* result */ T, Unit]): Unit = js.native
+  def reset(cb: js.Function0[Unit]): Unit = js.native
   def set[T](key: String, value: T, options: CachingConfig): js.Promise[_] = js.native
   def set[T](key: String, value: T, options: CachingConfig, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
   def set[T](key: String, value: T, ttl: Double): js.Promise[_] = js.native

@@ -11,10 +11,10 @@ trait BufferedIteratorOptions extends js.Object {
 
 object BufferedIteratorOptions {
   @scala.inline
-  def apply(autoStart: js.UndefOr[Boolean] = js.undefined, maxBufferSize: Int | Double = null): BufferedIteratorOptions = {
+  def apply(autoStart: js.UndefOr[Boolean] = js.undefined, maxBufferSize: js.UndefOr[Double] = js.undefined): BufferedIteratorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
-    if (maxBufferSize != null) __obj.updateDynamic("maxBufferSize")(maxBufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBufferSize)) __obj.updateDynamic("maxBufferSize")(maxBufferSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferedIteratorOptions]
   }
 }

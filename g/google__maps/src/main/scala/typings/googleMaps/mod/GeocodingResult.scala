@@ -18,7 +18,7 @@ trait GeocodingResult extends js.Object {
     *    over time for the same address. A component can change position in the array.
     *    The type of the component can change. A particular component may be missing in a later response.
     */
-  var address_components: js.Array[AddressComponent]
+  var address_components: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]]
   /**
     * is a string containing the human-readable address of this location.
     *
@@ -82,7 +82,7 @@ trait GeocodingResult extends js.Object {
 object GeocodingResult {
   @scala.inline
   def apply(
-    address_components: js.Array[AddressComponent],
+    address_components: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]],
     formatted_address: String,
     geometry: AddressGeometry,
     partial_match: Boolean,

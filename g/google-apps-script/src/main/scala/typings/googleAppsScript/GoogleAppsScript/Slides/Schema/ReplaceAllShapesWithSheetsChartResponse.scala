@@ -10,9 +10,9 @@ trait ReplaceAllShapesWithSheetsChartResponse extends js.Object {
 
 object ReplaceAllShapesWithSheetsChartResponse {
   @scala.inline
-  def apply(occurrencesChanged: Int | Double = null): ReplaceAllShapesWithSheetsChartResponse = {
+  def apply(occurrencesChanged: js.UndefOr[Double] = js.undefined): ReplaceAllShapesWithSheetsChartResponse = {
     val __obj = js.Dynamic.literal()
-    if (occurrencesChanged != null) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(occurrencesChanged)) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAllShapesWithSheetsChartResponse]
   }
 }

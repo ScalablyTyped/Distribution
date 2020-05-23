@@ -35,6 +35,9 @@ import scala.scalajs.js.annotation._
   - typings.moment.momentStrings.quarter
   - typings.moment.momentStrings.quarters
   - typings.moment.momentStrings.Q
+  - typings.moment.momentStrings.isoWeek
+  - typings.moment.momentStrings.isoWeeks
+  - typings.moment.momentStrings.W
 */
 trait DurationConstructor extends js.Object
 
@@ -43,6 +46,8 @@ object DurationConstructor {
   def M: typings.moment.momentStrings.M = "M".asInstanceOf[typings.moment.momentStrings.M]
   @scala.inline
   def Q: typings.moment.momentStrings.Q = "Q".asInstanceOf[typings.moment.momentStrings.Q]
+  @scala.inline
+  def W: typings.moment.momentStrings.W = "W".asInstanceOf[typings.moment.momentStrings.W]
   @scala.inline
   def d: d_ = "d".asInstanceOf[d_]
   @scala.inline
@@ -55,6 +60,10 @@ object DurationConstructor {
   def hour: typings.moment.momentStrings.hour = "hour".asInstanceOf[typings.moment.momentStrings.hour]
   @scala.inline
   def hours: typings.moment.momentStrings.hours = "hours".asInstanceOf[typings.moment.momentStrings.hours]
+  @scala.inline
+  def isoWeek: typings.moment.momentStrings.isoWeek = "isoWeek".asInstanceOf[typings.moment.momentStrings.isoWeek]
+  @scala.inline
+  def isoWeeks: typings.moment.momentStrings.isoWeeks = "isoWeeks".asInstanceOf[typings.moment.momentStrings.isoWeeks]
   @scala.inline
   def m: m_ = "m".asInstanceOf[m_]
   @scala.inline

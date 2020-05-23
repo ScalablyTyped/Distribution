@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object TimedTextLineAlignment extends js.Object {
   /** The text line is aligned in the direction of the start of the text. */
   @js.native
   sealed trait start extends TimedTextLineAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimedTextLineAlignment with Double] = js.native
-  /* 2 */ @js.native
-  object center extends TopLevel[center with Double]
-  
-  /* 1 */ @js.native
-  object end extends TopLevel[end with Double]
-  
-  /* 0 */ @js.native
-  object start extends TopLevel[start with Double]
   
 }
 

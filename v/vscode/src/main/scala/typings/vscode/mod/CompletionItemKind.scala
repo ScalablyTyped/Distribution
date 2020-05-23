@@ -48,6 +48,9 @@ object CompletionItemKind extends js.Object {
   sealed trait Interface extends CompletionItemKind
   
   @js.native
+  sealed trait Issue extends CompletionItemKind
+  
+  @js.native
   sealed trait Keyword extends CompletionItemKind
   
   @js.native
@@ -79,6 +82,9 @@ object CompletionItemKind extends js.Object {
   
   @js.native
   sealed trait Unit extends CompletionItemKind
+  
+  @js.native
+  sealed trait User extends CompletionItemKind
   
   @js.native
   sealed trait Value extends CompletionItemKind
@@ -126,6 +132,9 @@ object CompletionItemKind extends js.Object {
   /* 7 */ @js.native
   object Interface extends TopLevel[Interface with Double]
   
+  /* 26 */ @js.native
+  object Issue extends TopLevel[Issue with Double]
+  
   /* 13 */ @js.native
   object Keyword extends TopLevel[Keyword with Double]
   
@@ -158,6 +167,9 @@ object CompletionItemKind extends js.Object {
   
   /* 10 */ @js.native
   object Unit extends TopLevel[Unit with Double]
+  
+  /* 25 */ @js.native
+  object User extends TopLevel[User with Double]
   
   /* 11 */ @js.native
   object Value extends TopLevel[Value with Double]

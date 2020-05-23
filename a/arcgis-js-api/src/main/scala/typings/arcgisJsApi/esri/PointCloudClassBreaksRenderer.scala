@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`absolute-value`
 import typings.arcgisJsApi.arcgisJsApiStrings.`high-four-bit`
 import typings.arcgisJsApi.arcgisJsApiStrings.`low-four-bit`
@@ -50,8 +49,4 @@ trait PointCloudClassBreaksRenderer
   @JSName("type")
   val type_PointCloudClassBreaksRenderer: `point-cloud-class-breaks` = js.native
 }
-
-@JSGlobal("__esri.PointCloudClassBreaksRenderer")
-@js.native
-object PointCloudClassBreaksRenderer extends TopLevel[PointCloudClassBreaksRendererConstructor]
 

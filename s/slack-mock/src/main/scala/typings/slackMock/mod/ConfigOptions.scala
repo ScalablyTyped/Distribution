@@ -11,10 +11,10 @@ trait ConfigOptions extends js.Object {
 
 object ConfigOptions {
   @scala.inline
-  def apply(logLevel: String = null, rtmPort: Int | Double = null): ConfigOptions = {
+  def apply(logLevel: String = null, rtmPort: js.UndefOr[Double] = js.undefined): ConfigOptions = {
     val __obj = js.Dynamic.literal()
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (rtmPort != null) __obj.updateDynamic("rtmPort")(rtmPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtmPort)) __obj.updateDynamic("rtmPort")(rtmPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

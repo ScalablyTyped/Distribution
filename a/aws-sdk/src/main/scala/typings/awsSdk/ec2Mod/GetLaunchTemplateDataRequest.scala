@@ -18,9 +18,9 @@ trait GetLaunchTemplateDataRequest extends js.Object {
 
 object GetLaunchTemplateDataRequest {
   @scala.inline
-  def apply(InstanceId: InstanceId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): GetLaunchTemplateDataRequest = {
+  def apply(InstanceId: InstanceId, DryRun: js.UndefOr[Boolean] = js.undefined): GetLaunchTemplateDataRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLaunchTemplateDataRequest]
   }
 }

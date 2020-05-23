@@ -1,8 +1,8 @@
 package typings.jupyterlabSettingregistry.settingregistryMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jupyterlabSettingregistry.AnonComposite
-import typings.jupyterlabSettingregistry.phaseinPhaseTransform
+import typings.jupyterlabSettingregistry.anon.Composite
+import typings.jupyterlabSettingregistry.anon.phaseinPhaseTransform
 import typings.jupyterlabSettingregistry.settingregistryMod.SettingRegistry.IOptions
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
@@ -87,7 +87,7 @@ class SettingRegistry_ protected () extends ISettingRegistry {
     * @returns A promise that resolves when the setting is retrieved.
     */
   /* CompleteClass */
-  override def get(plugin: String, key: String): js.Promise[AnonComposite] = js.native
+  override def get(plugin: String, key: String): js.Promise[Composite] = js.native
   /**
     * Load a plugin's settings into the setting registry.
     *

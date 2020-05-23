@@ -20,7 +20,7 @@ object SideEffectProps {
   ): SideEffectProps = {
     val __obj = js.Dynamic.literal(reduceComponentsToState = js.Any.fromFunction2(reduceComponentsToState))
     if (handleStateChange != null) __obj.updateDynamic("handleStateChange")(js.Any.fromFunction1(handleStateChange))
-    if (!js.isUndefined(inAmpMode)) __obj.updateDynamic("inAmpMode")(inAmpMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(inAmpMode)) __obj.updateDynamic("inAmpMode")(inAmpMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SideEffectProps]
   }
 }

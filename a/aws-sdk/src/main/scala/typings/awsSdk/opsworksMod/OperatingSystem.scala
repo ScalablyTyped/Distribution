@@ -44,7 +44,7 @@ object OperatingSystem {
     Name: String = null,
     ReportedName: String = null,
     ReportedVersion: String = null,
-    Supported: js.UndefOr[scala.Boolean] = js.undefined,
+    Supported: js.UndefOr[Boolean] = js.undefined,
     Type: String = null
   ): OperatingSystem = {
     val __obj = js.Dynamic.literal()
@@ -53,7 +53,7 @@ object OperatingSystem {
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (ReportedName != null) __obj.updateDynamic("ReportedName")(ReportedName.asInstanceOf[js.Any])
     if (ReportedVersion != null) __obj.updateDynamic("ReportedVersion")(ReportedVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(Supported)) __obj.updateDynamic("Supported")(Supported.asInstanceOf[js.Any])
+    if (!js.isUndefined(Supported)) __obj.updateDynamic("Supported")(Supported.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperatingSystem]
   }

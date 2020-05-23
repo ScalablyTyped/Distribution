@@ -3,7 +3,7 @@ package typings.blueprintjsTable.tableMod
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsTable.columnHeaderMod.IColumnWidths
 import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
-import typings.blueprintjsTable.draggableMod.ICoordinateData
+import typings.blueprintjsTable.dragTypesMod.ICoordinateData
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.blueprintjsTable.esmRegionsMod.IStyledRegionGroup
 import typings.blueprintjsTable.esmRegionsMod.RegionCardinality
@@ -18,7 +18,7 @@ import typings.blueprintjsTable.rowHeaderMod.IRowHeaderRenderer
 import typings.blueprintjsTable.rowHeaderMod.IRowHeights
 import typings.blueprintjsTable.selectableMod.ISelectedRegionTransform
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -272,8 +272,8 @@ object ITableProps {
     children: ReactElement | js.Array[ReactElement] = null,
     className: String = null,
     columnWidths: js.Array[js.UndefOr[Double | Null]] = null,
-    defaultColumnWidth: Int | Double = null,
-    defaultRowHeight: Int | Double = null,
+    defaultColumnWidth: js.UndefOr[Double] = js.undefined,
+    defaultRowHeight: js.UndefOr[Double] = js.undefined,
     enableColumnInteractionBar: js.UndefOr[Boolean] = js.undefined,
     enableColumnReordering: js.UndefOr[Boolean] = js.undefined,
     enableColumnResizing: js.UndefOr[Boolean] = js.undefined,
@@ -287,13 +287,13 @@ object ITableProps {
     forceRerenderOnSelectionChange: js.UndefOr[Boolean] = js.undefined,
     getCellClipboardData: (/* row */ Double, /* col */ Double) => _ = null,
     loadingOptions: js.Array[TableLoadingOption] = null,
-    maxColumnWidth: Int | Double = null,
-    maxRowHeight: Int | Double = null,
-    minColumnWidth: Int | Double = null,
-    minRowHeight: Int | Double = null,
-    numFrozenColumns: Int | Double = null,
-    numFrozenRows: Int | Double = null,
-    numRows: Int | Double = null,
+    maxColumnWidth: js.UndefOr[Double] = js.undefined,
+    maxRowHeight: js.UndefOr[Double] = js.undefined,
+    minColumnWidth: js.UndefOr[Double] = js.undefined,
+    minRowHeight: js.UndefOr[Double] = js.undefined,
+    numFrozenColumns: js.UndefOr[Double] = js.undefined,
+    numFrozenRows: js.UndefOr[Double] = js.undefined,
+    numRows: js.UndefOr[Double] = js.undefined,
     onColumnWidthChanged: (/* index */ Double, /* size */ Double) => Unit = null,
     onColumnsReordered: (/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double) => Unit = null,
     onCompleteRender: () => Unit = null,
@@ -316,28 +316,28 @@ object ITableProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (columnWidths != null) __obj.updateDynamic("columnWidths")(columnWidths.asInstanceOf[js.Any])
-    if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
-    if (defaultRowHeight != null) __obj.updateDynamic("defaultRowHeight")(defaultRowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnInteractionBar)) __obj.updateDynamic("enableColumnInteractionBar")(enableColumnInteractionBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnReordering)) __obj.updateDynamic("enableColumnReordering")(enableColumnReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFocusedCell)) __obj.updateDynamic("enableFocusedCell")(enableFocusedCell.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGhostCells)) __obj.updateDynamic("enableGhostCells")(enableGhostCells.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMultipleSelection)) __obj.updateDynamic("enableMultipleSelection")(enableMultipleSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowHeader)) __obj.updateDynamic("enableRowHeader")(enableRowHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowReordering)) __obj.updateDynamic("enableRowReordering")(enableRowReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowResizing)) __obj.updateDynamic("enableRowResizing")(enableRowResizing.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultColumnWidth)) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultRowHeight)) __obj.updateDynamic("defaultRowHeight")(defaultRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnInteractionBar)) __obj.updateDynamic("enableColumnInteractionBar")(enableColumnInteractionBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnReordering)) __obj.updateDynamic("enableColumnReordering")(enableColumnReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFocusedCell)) __obj.updateDynamic("enableFocusedCell")(enableFocusedCell.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGhostCells)) __obj.updateDynamic("enableGhostCells")(enableGhostCells.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMultipleSelection)) __obj.updateDynamic("enableMultipleSelection")(enableMultipleSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowHeader)) __obj.updateDynamic("enableRowHeader")(enableRowHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowReordering)) __obj.updateDynamic("enableRowReordering")(enableRowReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowResizing)) __obj.updateDynamic("enableRowResizing")(enableRowResizing.get.asInstanceOf[js.Any])
     if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRerenderOnSelectionChange)) __obj.updateDynamic("forceRerenderOnSelectionChange")(forceRerenderOnSelectionChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRerenderOnSelectionChange)) __obj.updateDynamic("forceRerenderOnSelectionChange")(forceRerenderOnSelectionChange.get.asInstanceOf[js.Any])
     if (getCellClipboardData != null) __obj.updateDynamic("getCellClipboardData")(js.Any.fromFunction2(getCellClipboardData))
     if (loadingOptions != null) __obj.updateDynamic("loadingOptions")(loadingOptions.asInstanceOf[js.Any])
-    if (maxColumnWidth != null) __obj.updateDynamic("maxColumnWidth")(maxColumnWidth.asInstanceOf[js.Any])
-    if (maxRowHeight != null) __obj.updateDynamic("maxRowHeight")(maxRowHeight.asInstanceOf[js.Any])
-    if (minColumnWidth != null) __obj.updateDynamic("minColumnWidth")(minColumnWidth.asInstanceOf[js.Any])
-    if (minRowHeight != null) __obj.updateDynamic("minRowHeight")(minRowHeight.asInstanceOf[js.Any])
-    if (numFrozenColumns != null) __obj.updateDynamic("numFrozenColumns")(numFrozenColumns.asInstanceOf[js.Any])
-    if (numFrozenRows != null) __obj.updateDynamic("numFrozenRows")(numFrozenRows.asInstanceOf[js.Any])
-    if (numRows != null) __obj.updateDynamic("numRows")(numRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxColumnWidth)) __obj.updateDynamic("maxColumnWidth")(maxColumnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRowHeight)) __obj.updateDynamic("maxRowHeight")(maxRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minColumnWidth)) __obj.updateDynamic("minColumnWidth")(minColumnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRowHeight)) __obj.updateDynamic("minRowHeight")(minRowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFrozenColumns)) __obj.updateDynamic("numFrozenColumns")(numFrozenColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numFrozenRows)) __obj.updateDynamic("numFrozenRows")(numFrozenRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numRows)) __obj.updateDynamic("numRows")(numRows.get.asInstanceOf[js.Any])
     if (onColumnWidthChanged != null) __obj.updateDynamic("onColumnWidthChanged")(js.Any.fromFunction2(onColumnWidthChanged))
     if (onColumnsReordered != null) __obj.updateDynamic("onColumnsReordered")(js.Any.fromFunction3(onColumnsReordered))
     if (onCompleteRender != null) __obj.updateDynamic("onCompleteRender")(js.Any.fromFunction0(onCompleteRender))

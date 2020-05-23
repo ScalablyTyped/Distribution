@@ -7,10 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a package storage volume. */
-@JSGlobal("Windows.Management.Deployment.PackageVolume")
 @js.native
-/** Initializes a new instance of the PackageVolume class. */
-class PackageVolume () extends js.Object {
+trait PackageVolume extends js.Object {
   /** Describes whether a volume is in an offline state. */
   var isOffline: Boolean = js.native
   /** Describes whether a volume is an internal system volume mapped to the %SYSTEMDRIVER% environment variable. */

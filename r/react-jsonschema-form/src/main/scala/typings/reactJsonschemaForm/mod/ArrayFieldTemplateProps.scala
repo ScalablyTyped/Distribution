@@ -2,26 +2,26 @@ package typings.reactJsonschemaForm.mod
 
 import typings.jsonSchema.mod.JSONSchema6
 import typings.react.mod.StatelessComponent
-import typings.reactJsonschemaForm.AnonChildren
-import typings.reactJsonschemaForm.AnonDefinitions
-import typings.reactJsonschemaForm.AnonDescription
-import typings.reactJsonschemaForm.AnonId
+import typings.reactJsonschemaForm.anon.Children
+import typings.reactJsonschemaForm.anon.Definitions
+import typings.reactJsonschemaForm.anon.Description
+import typings.reactJsonschemaForm.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArrayFieldTemplateProps[T] extends js.Object {
-  var DescriptionField: StatelessComponent[AnonDescription]
-  var TitleField: StatelessComponent[AnonId]
+  var DescriptionField: StatelessComponent[Description]
+  var TitleField: StatelessComponent[Id]
   var canAdd: Boolean
   var className: String
   var disabled: Boolean
   var formContext: js.Any
   var formData: T
   var idSchema: IdSchema[_]
-  var items: js.Array[AnonChildren]
+  var items: js.Array[Children]
   var readonly: Boolean
-  var registry: AnonDefinitions
+  var registry: Definitions
   var required: Boolean
   var schema: JSONSchema6
   var title: String
@@ -32,18 +32,18 @@ trait ArrayFieldTemplateProps[T] extends js.Object {
 object ArrayFieldTemplateProps {
   @scala.inline
   def apply[T](
-    DescriptionField: StatelessComponent[AnonDescription],
-    TitleField: StatelessComponent[AnonId],
+    DescriptionField: StatelessComponent[Description],
+    TitleField: StatelessComponent[Id],
     canAdd: Boolean,
     className: String,
     disabled: Boolean,
     formContext: js.Any,
     formData: T,
     idSchema: IdSchema[_],
-    items: js.Array[AnonChildren],
+    items: js.Array[Children],
     onAddClick: js.Any => js.Function1[/* event */ js.Any, Unit],
     readonly: Boolean,
-    registry: AnonDefinitions,
+    registry: Definitions,
     required: Boolean,
     schema: JSONSchema6,
     title: String,

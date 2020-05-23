@@ -16,16 +16,16 @@ object PoolOptions {
   @scala.inline
   def apply(
     autoCleanIdle: js.UndefOr[Boolean] = js.undefined,
-    connectTimeout: Int | Double = null,
-    idleTimeout: Int | Double = null,
-    maxPoolSize: Int | Double = null,
+    connectTimeout: js.UndefOr[Double] = js.undefined,
+    idleTimeout: js.UndefOr[Double] = js.undefined,
+    maxPoolSize: js.UndefOr[Double] = js.undefined,
     systemNaming: js.Any = null
   ): PoolOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCleanIdle)) __obj.updateDynamic("autoCleanIdle")(autoCleanIdle.asInstanceOf[js.Any])
-    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
-    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (maxPoolSize != null) __obj.updateDynamic("maxPoolSize")(maxPoolSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCleanIdle)) __obj.updateDynamic("autoCleanIdle")(autoCleanIdle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectTimeout)) __obj.updateDynamic("connectTimeout")(connectTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(idleTimeout)) __obj.updateDynamic("idleTimeout")(idleTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPoolSize)) __obj.updateDynamic("maxPoolSize")(maxPoolSize.get.asInstanceOf[js.Any])
     if (systemNaming != null) __obj.updateDynamic("systemNaming")(systemNaming.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolOptions]
   }

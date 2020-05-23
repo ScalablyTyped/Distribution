@@ -12,9 +12,9 @@ trait ISuggestion extends js.Object {
 
 object ISuggestion {
   @scala.inline
-  def apply(title: String = null): ISuggestion = {
+  def apply(title: js.UndefOr[Null | String] = js.undefined): ISuggestion = {
     val __obj = js.Dynamic.literal()
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuggestion]
   }
 }

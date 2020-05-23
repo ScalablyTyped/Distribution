@@ -1,5 +1,6 @@
 package typings.vec3
 
+import typings.vec3.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   class Vec3 protected () extends js.Object {
     def this(locationStr: String) = this()
     def this(location: js.Array[Double]) = this()
-    def this(location: AnonX) = this()
+    def this(location: X) = this()
     def this(x: Double, y: Double, z: Double) = this()
     def abs(): Vec3 = js.native
     def add(other: Vec3): Vec3 = js.native

@@ -1,7 +1,7 @@
 package typings.stripejs.elementMod
 
-import typings.stripejs.AnonEmpty
-import typings.stripejs.AnonInvalid
+import typings.stripejs.anon.Empty
+import typings.stripejs.anon.Invalid
 import typings.stripejs.stripejsStrings.default
 import typings.stripejs.stripejsStrings.solid
 import scala.scalajs.js
@@ -37,20 +37,20 @@ trait CardElementOptions extends BaseOptions {
 object CardElementOptions {
   @scala.inline
   def apply(
-    classes: AnonEmpty = null,
+    classes: Empty = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hideIcon: js.UndefOr[Boolean] = js.undefined,
     hidePostalCode: js.UndefOr[Boolean] = js.undefined,
     iconStyle: solid | default = null,
     placeholder: String = null,
-    style: AnonInvalid = null,
+    style: Invalid = null,
     value: js.Any = null
   ): CardElementOptions = {
     val __obj = js.Dynamic.literal()
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.get.asInstanceOf[js.Any])
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

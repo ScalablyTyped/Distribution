@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * @param name
   *         The name of a plugin.
   *
-  * @return	The plugin (or `undefined`).
+  * @return    The plugin (or `undefined`).
   */
 @JSImport("video.js/dist/alt/video.core", "getPlugin")
 @js.native

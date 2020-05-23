@@ -1,6 +1,6 @@
 package typings.materializeCss.M
 
-import typings.materializeCss.PartialInternationalizati
+import typings.materializeCss.anon.PartialInternationalizati
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

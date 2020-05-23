@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * DateTime Field Behavior options
-		 * 0 - None - Unknown DateTime Behavior,
-		 * 1 - UserLocal - Respect user local time. Dates stored as UTC,
-		 * 3 - TimeZoneIndependent - Dates and time stored without conversion to UTC
-		 */
+  * DateTime Field Behavior options
+  * 0 - None - Unknown DateTime Behavior,
+  * 1 - UserLocal - Respect user local time. Dates stored as UTC,
+  * 3 - TimeZoneIndependent - Dates and time stored without conversion to UTC
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`

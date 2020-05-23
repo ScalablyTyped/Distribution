@@ -44,7 +44,7 @@ object Defaults {
     if (Anchor != null) __obj.updateDynamic("Anchor")(Anchor.asInstanceOf[js.Any])
     if (Anchors != null) __obj.updateDynamic("Anchors")(Anchors.asInstanceOf[js.Any])
     if (ConnectionOverlays != null) __obj.updateDynamic("ConnectionOverlays")(ConnectionOverlays.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectionsDetachable)) __obj.updateDynamic("ConnectionsDetachable")(ConnectionsDetachable.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConnectionsDetachable)) __obj.updateDynamic("ConnectionsDetachable")(ConnectionsDetachable.get.asInstanceOf[js.Any])
     if (Connector != null) __obj.updateDynamic("Connector")(Connector.asInstanceOf[js.Any])
     if (Container != null) __obj.updateDynamic("Container")(Container.asInstanceOf[js.Any])
     if (DragOptions != null) __obj.updateDynamic("DragOptions")(DragOptions.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object Defaults {
     if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints.asInstanceOf[js.Any])
     if (HoverPaintStyle != null) __obj.updateDynamic("HoverPaintStyle")(HoverPaintStyle.asInstanceOf[js.Any])
     if (PaintStyle != null) __obj.updateDynamic("PaintStyle")(PaintStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReattachConnections)) __obj.updateDynamic("ReattachConnections")(ReattachConnections.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReattachConnections)) __obj.updateDynamic("ReattachConnections")(ReattachConnections.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Defaults]
   }
 }

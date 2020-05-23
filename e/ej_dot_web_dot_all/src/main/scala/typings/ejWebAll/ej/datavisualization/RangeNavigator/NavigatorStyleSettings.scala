@@ -75,16 +75,16 @@ object NavigatorStyleSettings {
     leftThumbTemplate: String = null,
     majorGridLineStyle: NavigatorStyleSettingsMajorGridLineStyle = null,
     minorGridLineStyle: NavigatorStyleSettingsMinorGridLineStyle = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     rightThumbTemplate: String = null,
     selectedRegionColor: String = null,
-    selectedRegionOpacity: Int | Double = null,
+    selectedRegionOpacity: js.UndefOr[Double] = js.undefined,
     selectionSettings: NavigatorStyleSettingsSelectionSettings = null,
     thumbColor: String = null,
-    thumbRadius: Int | Double = null,
+    thumbRadius: js.UndefOr[Double] = js.undefined,
     thumbStroke: String = null,
     unselectedRegionColor: String = null,
-    unselectedRegionOpacity: Int | Double = null
+    unselectedRegionOpacity: js.UndefOr[Double] = js.undefined
   ): NavigatorStyleSettings = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
@@ -93,16 +93,16 @@ object NavigatorStyleSettings {
     if (leftThumbTemplate != null) __obj.updateDynamic("leftThumbTemplate")(leftThumbTemplate.asInstanceOf[js.Any])
     if (majorGridLineStyle != null) __obj.updateDynamic("majorGridLineStyle")(majorGridLineStyle.asInstanceOf[js.Any])
     if (minorGridLineStyle != null) __obj.updateDynamic("minorGridLineStyle")(minorGridLineStyle.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (rightThumbTemplate != null) __obj.updateDynamic("rightThumbTemplate")(rightThumbTemplate.asInstanceOf[js.Any])
     if (selectedRegionColor != null) __obj.updateDynamic("selectedRegionColor")(selectedRegionColor.asInstanceOf[js.Any])
-    if (selectedRegionOpacity != null) __obj.updateDynamic("selectedRegionOpacity")(selectedRegionOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedRegionOpacity)) __obj.updateDynamic("selectedRegionOpacity")(selectedRegionOpacity.get.asInstanceOf[js.Any])
     if (selectionSettings != null) __obj.updateDynamic("selectionSettings")(selectionSettings.asInstanceOf[js.Any])
     if (thumbColor != null) __obj.updateDynamic("thumbColor")(thumbColor.asInstanceOf[js.Any])
-    if (thumbRadius != null) __obj.updateDynamic("thumbRadius")(thumbRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbRadius)) __obj.updateDynamic("thumbRadius")(thumbRadius.get.asInstanceOf[js.Any])
     if (thumbStroke != null) __obj.updateDynamic("thumbStroke")(thumbStroke.asInstanceOf[js.Any])
     if (unselectedRegionColor != null) __obj.updateDynamic("unselectedRegionColor")(unselectedRegionColor.asInstanceOf[js.Any])
-    if (unselectedRegionOpacity != null) __obj.updateDynamic("unselectedRegionOpacity")(unselectedRegionOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(unselectedRegionOpacity)) __obj.updateDynamic("unselectedRegionOpacity")(unselectedRegionOpacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorStyleSettings]
   }
 }

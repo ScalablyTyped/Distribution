@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ChartPlotAreaFormatData extends js.Object {
   /**
     *
-    * Represents the border attributes of a chart plotArea.
+    * Specifies the border attributes of a chart plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */

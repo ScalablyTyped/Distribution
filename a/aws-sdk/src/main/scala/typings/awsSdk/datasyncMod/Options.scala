@@ -60,7 +60,7 @@ object Options {
   @scala.inline
   def apply(
     Atime: Atime = null,
-    BytesPerSecond: Int | Double = null,
+    BytesPerSecond: js.UndefOr[BytesPerSecond] = js.undefined,
     Gid: Gid = null,
     LogLevel: LogLevel = null,
     Mtime: Mtime = null,
@@ -74,7 +74,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (Atime != null) __obj.updateDynamic("Atime")(Atime.asInstanceOf[js.Any])
-    if (BytesPerSecond != null) __obj.updateDynamic("BytesPerSecond")(BytesPerSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(BytesPerSecond)) __obj.updateDynamic("BytesPerSecond")(BytesPerSecond.get.asInstanceOf[js.Any])
     if (Gid != null) __obj.updateDynamic("Gid")(Gid.asInstanceOf[js.Any])
     if (LogLevel != null) __obj.updateDynamic("LogLevel")(LogLevel.asInstanceOf[js.Any])
     if (Mtime != null) __obj.updateDynamic("Mtime")(Mtime.asInstanceOf[js.Any])

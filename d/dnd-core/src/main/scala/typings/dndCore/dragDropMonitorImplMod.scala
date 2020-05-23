@@ -1,5 +1,7 @@
 package typings.dndCore
 
+import typings.dndCore.anon.HandlerIds
+import typings.dndCore.anon.Shallow
 import typings.dndCore.interfacesMod.DragDropMonitor
 import typings.dndCore.interfacesMod.HandlerRegistry
 import typings.dndCore.interfacesMod.Listener
@@ -21,10 +23,9 @@ object dragDropMonitorImplMod extends js.Object {
     def canDragSource(sourceId: String): Boolean = js.native
     def canDropOnTarget(targetId: String): Boolean = js.native
     def isDraggingSource(sourceId: String): Boolean = js.native
-    def isOverTarget(targetId: js.UndefOr[scala.Nothing], options: AnonShallow): Boolean = js.native
     def isOverTarget(targetId: String): Boolean = js.native
-    def isOverTarget(targetId: String, options: AnonShallow): Boolean = js.native
-    def subscribeToStateChange(listener: Listener, options: AnonHandlerIds): Unsubscribe = js.native
+    def isOverTarget(targetId: String, options: Shallow): Boolean = js.native
+    def subscribeToStateChange(listener: Listener, options: HandlerIds): Unsubscribe = js.native
   }
   
   @js.native

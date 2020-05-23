@@ -71,7 +71,7 @@ trait MeshMaterialProperties extends js.Object {
 object MeshMaterialProperties {
   @scala.inline
   def apply(
-    alphaCutoff: Int | Double = null,
+    alphaCutoff: js.UndefOr[Double] = js.undefined,
     alphaMode: auto | blend | opaque | mask = null,
     color: Color_ | js.Array[Double] | String = null,
     colorTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null,
@@ -79,11 +79,11 @@ object MeshMaterialProperties {
     normalTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null
   ): MeshMaterialProperties = {
     val __obj = js.Dynamic.literal()
-    if (alphaCutoff != null) __obj.updateDynamic("alphaCutoff")(alphaCutoff.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaCutoff)) __obj.updateDynamic("alphaCutoff")(alphaCutoff.get.asInstanceOf[js.Any])
     if (alphaMode != null) __obj.updateDynamic("alphaMode")(alphaMode.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorTexture != null) __obj.updateDynamic("colorTexture")(colorTexture.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided.get.asInstanceOf[js.Any])
     if (normalTexture != null) __obj.updateDynamic("normalTexture")(normalTexture.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshMaterialProperties]
   }

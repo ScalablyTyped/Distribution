@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.vscode.mod.Uri
   - typings.vscode.mod.TextDocument
   - typings.vscode.mod.WorkspaceFolder
-  - typings.vscode.AnonLanguageId
+  - typings.vscode.anon.LanguageId
 */
 trait ConfigurationScope extends js.Object
 

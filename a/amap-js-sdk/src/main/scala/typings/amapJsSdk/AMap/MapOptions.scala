@@ -49,10 +49,10 @@ object MapOptions {
     isHotspot: js.UndefOr[Boolean] = js.undefined,
     jogEnable: js.UndefOr[Boolean] = js.undefined,
     keyboardEnable: js.UndefOr[Boolean] = js.undefined,
-    labelzIndex: Int | Double = null,
+    labelzIndex: js.UndefOr[Double] = js.undefined,
     lang: String = null,
     layers: js.Array[TileLayer] = null,
-    level: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
     mapStyle: String = null,
     resizeEnable: js.UndefOr[Boolean] = js.undefined,
     rotateEnable: js.UndefOr[Boolean] = js.undefined,
@@ -64,31 +64,31 @@ object MapOptions {
     zooms: js.Array[Double] = null
   ): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animateEnable)) __obj.updateDynamic("animateEnable")(animateEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateEnable)) __obj.updateDynamic("animateEnable")(animateEnable.get.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (crs != null) __obj.updateDynamic("crs")(crs.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (defaultLayer != null) __obj.updateDynamic("defaultLayer")(defaultLayer.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragEnable)) __obj.updateDynamic("dragEnable")(dragEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandZoomRange)) __obj.updateDynamic("expandZoomRange")(expandZoomRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragEnable)) __obj.updateDynamic("dragEnable")(dragEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandZoomRange)) __obj.updateDynamic("expandZoomRange")(expandZoomRange.get.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (indoorMap != null) __obj.updateDynamic("indoorMap")(indoorMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHotspot)) __obj.updateDynamic("isHotspot")(isHotspot.asInstanceOf[js.Any])
-    if (!js.isUndefined(jogEnable)) __obj.updateDynamic("jogEnable")(jogEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardEnable)) __obj.updateDynamic("keyboardEnable")(keyboardEnable.asInstanceOf[js.Any])
-    if (labelzIndex != null) __obj.updateDynamic("labelzIndex")(labelzIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHotspot)) __obj.updateDynamic("isHotspot")(isHotspot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jogEnable)) __obj.updateDynamic("jogEnable")(jogEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardEnable)) __obj.updateDynamic("keyboardEnable")(keyboardEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelzIndex)) __obj.updateDynamic("labelzIndex")(labelzIndex.get.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeEnable)) __obj.updateDynamic("resizeEnable")(resizeEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateEnable)) __obj.updateDynamic("rotateEnable")(rotateEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollWheel)) __obj.updateDynamic("scrollWheel")(scrollWheel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIndoorMap)) __obj.updateDynamic("showIndoorMap")(showIndoorMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeEnable)) __obj.updateDynamic("resizeEnable")(resizeEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateEnable)) __obj.updateDynamic("rotateEnable")(rotateEnable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollWheel)) __obj.updateDynamic("scrollWheel")(scrollWheel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIndoorMap)) __obj.updateDynamic("showIndoorMap")(showIndoorMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomEnable)) __obj.updateDynamic("zoomEnable")(zoomEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEnable)) __obj.updateDynamic("zoomEnable")(zoomEnable.get.asInstanceOf[js.Any])
     if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }

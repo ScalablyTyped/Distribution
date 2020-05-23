@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an inclinometer sensor. */
-@JSGlobal("Windows.Devices.Sensors.Inclinometer")
 @js.native
-abstract class Inclinometer () extends js.Object {
+trait Inclinometer extends js.Object {
   /** Gets the device identifier. */
   var deviceId: String = js.native
   /** Gets the minimum report interval supported by the inclinometer. */
@@ -45,21 +44,5 @@ abstract class Inclinometer () extends js.Object {
     `type`: readingchanged,
     listener: TypedEventHandler[Inclinometer, InclinometerReadingChangedEventArgs]
   ): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.Inclinometer")
-@js.native
-object Inclinometer extends js.Object {
-  /**
-    * Returns the default inclinometer.
-    * @return The default inclinometer or null if no inclinometers are found.
-    */
-  def getDefault(): Inclinometer = js.native
-  /**
-    * Returns the default inclinometer.
-    * @return The default inclinometer or null if no inclinometers are found.
-    */
-  def getDefaultForRelativeReadings(): Inclinometer = js.native
 }
 

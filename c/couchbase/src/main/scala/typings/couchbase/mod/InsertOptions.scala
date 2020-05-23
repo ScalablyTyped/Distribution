@@ -14,18 +14,22 @@ trait InsertOptions extends js.Object {
     */
   var persist_to: js.UndefOr[Double] = js.undefined
   /**
-    * 	Ensures this operation is replicated to this many nodes.
+    *     Ensures this operation is replicated to this many nodes.
     */
   var replicate_to: js.UndefOr[Double] = js.undefined
 }
 
 object InsertOptions {
   @scala.inline
-  def apply(expiry: Int | Double = null, persist_to: Int | Double = null, replicate_to: Int | Double = null): InsertOptions = {
+  def apply(
+    expiry: js.UndefOr[Double] = js.undefined,
+    persist_to: js.UndefOr[Double] = js.undefined,
+    replicate_to: js.UndefOr[Double] = js.undefined
+  ): InsertOptions = {
     val __obj = js.Dynamic.literal()
-    if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
-    if (persist_to != null) __obj.updateDynamic("persist_to")(persist_to.asInstanceOf[js.Any])
-    if (replicate_to != null) __obj.updateDynamic("replicate_to")(replicate_to.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiry)) __obj.updateDynamic("expiry")(expiry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(persist_to)) __obj.updateDynamic("persist_to")(persist_to.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replicate_to)) __obj.updateDynamic("replicate_to")(replicate_to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertOptions]
   }
 }

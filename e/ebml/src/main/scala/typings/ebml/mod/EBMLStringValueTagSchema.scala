@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.ebml.mod.EBMLTagSchema because Already inherited */ trait EBMLStringValueTagSchema extends EBMLDefaultableTagSchema {
   @JSName("type")
   var type_EBMLStringValueTagSchema: s
@@ -29,7 +29,7 @@ object EBMLStringValueTagSchema {
     i: String = null,
     mandatory: js.UndefOr[Boolean] = js.undefined,
     maxver: String = null,
-    minver: Int | Double = null,
+    minver: js.UndefOr[Double] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
     recursive: js.UndefOr[Boolean] = js.undefined,
     strong: informational_ | Informational = null,
@@ -40,15 +40,15 @@ object EBMLStringValueTagSchema {
     if (cppname != null) __obj.updateDynamic("cppname")(cppname.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (del != null) __obj.updateDynamic("del")(del.asInstanceOf[js.Any])
-    if (!js.isUndefined(divx)) __obj.updateDynamic("divx")(divx.asInstanceOf[js.Any])
+    if (!js.isUndefined(divx)) __obj.updateDynamic("divx")(divx.get.asInstanceOf[js.Any])
     if (i != null) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
-    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.asInstanceOf[js.Any])
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.get.asInstanceOf[js.Any])
     if (maxver != null) __obj.updateDynamic("maxver")(maxver.asInstanceOf[js.Any])
-    if (minver != null) __obj.updateDynamic("minver")(minver.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(minver)) __obj.updateDynamic("minver")(minver.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.get.asInstanceOf[js.Any])
     if (strong != null) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
-    if (!js.isUndefined(webm)) __obj.updateDynamic("webm")(webm.asInstanceOf[js.Any])
+    if (!js.isUndefined(webm)) __obj.updateDynamic("webm")(webm.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBMLStringValueTagSchema]
   }
 }

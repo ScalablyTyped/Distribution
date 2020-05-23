@@ -1,9 +1,9 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ImageData
 import typings.officeJs.Excel.Interfaces.ImageLoadOptions
 import typings.officeJs.OfficeExtension.ClientObject
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.BMP
 import typings.officeJs.officeJsStrings.GIF
 import typings.officeJs.officeJsStrings.JPEG
@@ -20,29 +20,28 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.Image")
 @js.native
-class Image () extends ClientObject {
+trait Image extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Image: RequestContext = js.native
   /**
     *
-    * Returns the format of the image. Read-only.
+    * Returns the format of the image.
     *
     * [Api set: ExcelApi 1.9]
     */
   val format: PictureFormat | UNKNOWN | BMP | JPEG | GIF | PNG | SVG = js.native
   /**
     *
-    * Represents the shape identifier for the image object. Read-only.
+    * Specifies the shape identifier for the image object.
     *
     * [Api set: ExcelApi 1.9]
     */
   val id: String = js.native
   /**
     *
-    * Returns the Shape object associated with the image. Read-only.
+    * Returns the Shape object associated with the image.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -54,7 +53,7 @@ class Image () extends ClientObject {
     */
   def load(): Image = js.native
   def load(options: ImageLoadOptions): Image = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Image = js.native
+  def load(propertyNamesAndPaths: Expand): Image = js.native
   def load(propertyNames: String): Image = js.native
   def load(propertyNames: js.Array[String]): Image = js.native
   /**

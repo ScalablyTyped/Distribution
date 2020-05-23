@@ -40,9 +40,9 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (!js.isUndefined(injectCss)) __obj.updateDynamic("injectCss")(injectCss.asInstanceOf[js.Any])
+    if (!js.isUndefined(injectCss)) __obj.updateDynamic("injectCss")(injectCss.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequest")
-@js.native
-class DataRequest () extends IDataRequest {
-  /* CompleteClass */
-  override var data: DataPackage = js.native
-  /* CompleteClass */
-  override var deadline: Date = js.native
-  /* CompleteClass */
-  override def failWithDisplayText(value: String): Unit = js.native
-  /* CompleteClass */
-  override def getDeferral(): DataRequestDeferral = js.native
+trait DataRequest extends IDataRequest
+
+object DataRequest {
+  @scala.inline
+  def apply(
+    data: DataPackage,
+    deadline: Date,
+    failWithDisplayText: String => Unit,
+    getDeferral: () => DataRequestDeferral
+  ): DataRequest = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], deadline = deadline.asInstanceOf[js.Any], failWithDisplayText = js.Any.fromFunction1(failWithDisplayText), getDeferral = js.Any.fromFunction0(getDeferral))
+    __obj.asInstanceOf[DataRequest]
+  }
 }
 

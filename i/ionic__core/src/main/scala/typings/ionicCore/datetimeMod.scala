@@ -1,6 +1,6 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonDatetimeElement
+import typings.ionicCore.componentsMod.global.HTMLIonDatetimeElement
 import typings.ionicCore.datetimeInterfaceMod.DatetimeChangeEventDetail
 import typings.ionicCore.datetimeInterfaceMod.DatetimeOptions
 import typings.ionicCore.mod.StyleEventDetail

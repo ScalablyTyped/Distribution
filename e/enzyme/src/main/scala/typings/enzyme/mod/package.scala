@@ -14,6 +14,6 @@ package object mod {
   type StatelessComponent[Props] = js.Function2[
     /* props */ Props, 
     /* context */ js.UndefOr[js.Any], 
-    typings.react.mod._Global_.JSX.Element | scala.Null
+    typings.react.mod.global.JSX.Element | scala.Null
   ]
 }

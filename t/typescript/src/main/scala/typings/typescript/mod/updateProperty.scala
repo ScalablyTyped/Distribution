@@ -11,29 +11,59 @@ object updateProperty extends js.Object {
     node: PropertyDeclaration,
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
-    name: java.lang.String | PropertyName
+    name: java.lang.String
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
-    name: java.lang.String | PropertyName,
-    questionOrExclamationToken: QuestionToken | ExclamationToken
+    name: java.lang.String,
+    questionOrExclamationToken: ExclamationToken | QuestionToken
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
-    name: java.lang.String | PropertyName,
-    questionOrExclamationToken: QuestionToken | ExclamationToken,
+    name: java.lang.String,
+    questionOrExclamationToken: ExclamationToken | QuestionToken,
     `type`: TypeNode
   ): PropertyDeclaration = js.native
   def apply(
     node: PropertyDeclaration,
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
-    name: java.lang.String | PropertyName,
-    questionOrExclamationToken: QuestionToken | ExclamationToken,
+    name: java.lang.String,
+    questionOrExclamationToken: ExclamationToken | QuestionToken,
+    `type`: TypeNode,
+    initializer: Expression
+  ): PropertyDeclaration = js.native
+  def apply(
+    node: PropertyDeclaration,
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
+    name: PropertyName
+  ): PropertyDeclaration = js.native
+  def apply(
+    node: PropertyDeclaration,
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
+    name: PropertyName,
+    questionOrExclamationToken: ExclamationToken | QuestionToken
+  ): PropertyDeclaration = js.native
+  def apply(
+    node: PropertyDeclaration,
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
+    name: PropertyName,
+    questionOrExclamationToken: ExclamationToken | QuestionToken,
+    `type`: TypeNode
+  ): PropertyDeclaration = js.native
+  def apply(
+    node: PropertyDeclaration,
+    decorators: js.UndefOr[js.Array[Decorator]],
+    modifiers: js.UndefOr[js.Array[Modifier]],
+    name: PropertyName,
+    questionOrExclamationToken: ExclamationToken | QuestionToken,
     `type`: TypeNode,
     initializer: Expression
   ): PropertyDeclaration = js.native

@@ -125,20 +125,20 @@ object RequestOptions {
     query: js.Any = null,
     responseType: json | xml | text | blob | `array-buffer` | document | image = null,
     signal: AbortSignal = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     useProxy: js.UndefOr[Boolean] = js.undefined
   ): RequestOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (authMode != null) __obj.updateDynamic("authMode")(authMode.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheBust)) __obj.updateDynamic("cacheBust")(cacheBust.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheBust)) __obj.updateDynamic("cacheBust")(cacheBust.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(useProxy)) __obj.updateDynamic("useProxy")(useProxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useProxy)) __obj.updateDynamic("useProxy")(useProxy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.nivoCore.mod
 
-import typings.nivoCore.PartialCSSProperties
+import typings.nivoCore.anon.PartialCSSProperties
 import typings.nivoCore.nivoCoreStrings.x
 import typings.nivoCore.nivoCoreStrings.y
 import typings.std.Date

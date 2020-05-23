@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 
 trait ColumnGroupProps extends Props[ColumnGroup] {
   /**
-  	     * The horizontal alignment of the table cell content.
+    * The horizontal alignment of the table cell content.
     * 'left', 'center', 'right'
-  	     */
+    */
   var align: js.UndefOr[String] = js.undefined
   /**
-  	     * Controls if the column group is fixed when scrolling in the X
-  	     * axis.
-  	     *
-  	     * defaultValue: false
-  	     */
+    * Controls if the column group is fixed when scrolling in the X
+    * axis.
+    *
+    * defaultValue: false
+    */
   var fixed: js.UndefOr[Boolean] = js.undefined
   /**
     * The header cell for this column group. This can either be
@@ -53,14 +53,14 @@ object ColumnGroupProps {
     children: ReactNode = null,
     fixed: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
-    ref: LegacyRef[ColumnGroup] = null
+    ref: js.UndefOr[Null | LegacyRef[ColumnGroup]] = js.undefined
   ): ColumnGroupProps = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupProps]
   }
 }

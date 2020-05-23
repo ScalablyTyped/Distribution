@@ -12,10 +12,14 @@ trait IHelmetExpectCtConfiguration extends js.Object {
 
 object IHelmetExpectCtConfiguration {
   @scala.inline
-  def apply(enforce: js.UndefOr[Boolean] = js.undefined, maxAge: Int | Double = null, reportUri: String = null): IHelmetExpectCtConfiguration = {
+  def apply(
+    enforce: js.UndefOr[Boolean] = js.undefined,
+    maxAge: js.UndefOr[Double] = js.undefined,
+    reportUri: String = null
+  ): IHelmetExpectCtConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     if (reportUri != null) __obj.updateDynamic("reportUri")(reportUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHelmetExpectCtConfiguration]
   }

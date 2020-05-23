@@ -6,10 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides details about the device updates that invoked the trigger. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceWatcherTriggerDetails")
-@js.native
-abstract class DeviceWatcherTriggerDetails () extends js.Object {
+trait DeviceWatcherTriggerDetails extends js.Object {
   /** Gets the events that activated the trigger. */
-  var deviceWatcherEvents: IVectorView[DeviceWatcherEvent] = js.native
+  var deviceWatcherEvents: IVectorView[DeviceWatcherEvent]
+}
+
+object DeviceWatcherTriggerDetails {
+  @scala.inline
+  def apply(deviceWatcherEvents: IVectorView[DeviceWatcherEvent]): DeviceWatcherTriggerDetails = {
+    val __obj = js.Dynamic.literal(deviceWatcherEvents = deviceWatcherEvents.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeviceWatcherTriggerDetails]
+  }
 }
 

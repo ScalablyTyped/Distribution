@@ -23,7 +23,7 @@ object IGridMetadata {
   def apply(
     KeyColumnName: String,
     GridOperationalConstantsFieldKeyMap: NumberDictionary[String] = null,
-    GroupingLevel: Int | Double = null,
+    GroupingLevel: js.UndefOr[Double] = js.undefined,
     GroupingPrefix: String = null,
     IsGanttEnabled: js.UndefOr[Boolean] = js.undefined,
     IsHierarchyEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -33,11 +33,11 @@ object IGridMetadata {
   ): IGridMetadata = {
     val __obj = js.Dynamic.literal(KeyColumnName = KeyColumnName.asInstanceOf[js.Any])
     if (GridOperationalConstantsFieldKeyMap != null) __obj.updateDynamic("GridOperationalConstantsFieldKeyMap")(GridOperationalConstantsFieldKeyMap.asInstanceOf[js.Any])
-    if (GroupingLevel != null) __obj.updateDynamic("GroupingLevel")(GroupingLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(GroupingLevel)) __obj.updateDynamic("GroupingLevel")(GroupingLevel.get.asInstanceOf[js.Any])
     if (GroupingPrefix != null) __obj.updateDynamic("GroupingPrefix")(GroupingPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsGanttEnabled)) __obj.updateDynamic("IsGanttEnabled")(IsGanttEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsHierarchyEnabled)) __obj.updateDynamic("IsHierarchyEnabled")(IsHierarchyEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsSorted)) __obj.updateDynamic("IsSorted")(IsSorted.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsGanttEnabled)) __obj.updateDynamic("IsGanttEnabled")(IsGanttEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsHierarchyEnabled)) __obj.updateDynamic("IsHierarchyEnabled")(IsHierarchyEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsSorted)) __obj.updateDynamic("IsSorted")(IsSorted.get.asInstanceOf[js.Any])
     if (RecordKeyHash != null) __obj.updateDynamic("RecordKeyHash")(RecordKeyHash.asInstanceOf[js.Any])
     if (RecordKeyOrderChanged != null) __obj.updateDynamic("RecordKeyOrderChanged")(RecordKeyOrderChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridMetadata]

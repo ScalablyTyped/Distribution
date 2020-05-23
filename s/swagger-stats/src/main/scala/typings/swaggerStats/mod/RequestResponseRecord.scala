@@ -2,9 +2,9 @@ package typings.swaggerStats.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
-import typings.swaggerStats.AnonDeprecated
-import typings.swaggerStats.AnonHostname
-import typings.swaggerStats.AnonRequest
+import typings.swaggerStats.anon.Deprecated
+import typings.swaggerStats.anon.Hostname
+import typings.swaggerStats.anon.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 trait RequestResponseRecord
   extends /* field */ StringDictionary[js.Any] {
   var `@timestamp`: String
-  var api: AnonDeprecated
+  var api: Deprecated
   var attrs: js.UndefOr[Record[String, String]] = js.undefined
   var attrsint: js.UndefOr[Record[String, Double]] = js.undefined
   var endts: Double
-  var http: AnonRequest
+  var http: Request
   var ip: String
   var method: String
-  var node: AnonHostname
+  var node: Hostname
   var path: String
   var port: String
   var query: String
@@ -32,19 +32,19 @@ object RequestResponseRecord {
   @scala.inline
   def apply(
     `@timestamp`: String,
-    api: AnonDeprecated,
+    api: Deprecated,
     endts: Double,
-    http: AnonRequest,
+    http: Request,
     ip: String,
     method: String,
-    node: AnonHostname,
+    node: Hostname,
     path: String,
     port: String,
     query: String,
     real_ip: String,
     responsetime: Double,
     startts: Double,
-    StringDictionary: /* field */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     attrs: Record[String, String] = null,
     attrsint: Record[String, Double] = null
   ): RequestResponseRecord = {

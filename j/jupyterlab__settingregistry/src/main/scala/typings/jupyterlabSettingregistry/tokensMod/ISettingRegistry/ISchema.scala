@@ -67,7 +67,7 @@ object ISchema {
   @scala.inline
   def apply(
     `type`: `object`,
-    default: PartialJSONValue = null,
+    default: js.UndefOr[Null | PartialJSONValue] = js.undefined,
     description: String = null,
     `jupyterDotlabDotsetting-deprecated`: js.UndefOr[Boolean] = js.undefined,
     `jupyterDotlabDotsetting-icon`: String = null,
@@ -80,14 +80,14 @@ object ISchema {
   ): ISchema = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(`jupyterDotlabDotsetting-deprecated`)) __obj.updateDynamic("jupyter.lab.setting-deprecated")(`jupyterDotlabDotsetting-deprecated`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`jupyterDotlabDotsetting-deprecated`)) __obj.updateDynamic("jupyter.lab.setting-deprecated")(`jupyterDotlabDotsetting-deprecated`.get.asInstanceOf[js.Any])
     if (`jupyterDotlabDotsetting-icon` != null) __obj.updateDynamic("jupyter.lab.setting-icon")(`jupyterDotlabDotsetting-icon`.asInstanceOf[js.Any])
     if (`jupyterDotlabDotsetting-icon-class` != null) __obj.updateDynamic("jupyter.lab.setting-icon-class")(`jupyterDotlabDotsetting-icon-class`.asInstanceOf[js.Any])
     if (`jupyterDotlabDotsetting-icon-label` != null) __obj.updateDynamic("jupyter.lab.setting-icon-label")(`jupyterDotlabDotsetting-icon-label`.asInstanceOf[js.Any])
     if (jupyterDotlabDotshortcuts != null) __obj.updateDynamic("jupyter.lab.shortcuts")(jupyterDotlabDotshortcuts.asInstanceOf[js.Any])
-    if (!js.isUndefined(jupyterDotlabDottransform)) __obj.updateDynamic("jupyter.lab.transform")(jupyterDotlabDottransform.asInstanceOf[js.Any])
+    if (!js.isUndefined(jupyterDotlabDottransform)) __obj.updateDynamic("jupyter.lab.transform")(jupyterDotlabDottransform.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISchema]

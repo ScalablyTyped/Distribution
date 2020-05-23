@@ -12,21 +12,21 @@ trait XmlDecl[Parent] extends js.Object {
   var _standalone: js.Any = js.native
   val _validation: js.Any = js.native
   var _version: js.Any = js.native
-  def encoding(): js.Any = js.native
   /**
     * Sets the encoding associated with this declaration.
     */
+  def encoding(): js.Any = js.native
   def encoding(encoding: String): js.Any = js.native
   /**
     * Gets the encoding associated with this declaration.
     */
   @JSName("encoding")
   def encoding_Union: js.UndefOr[String] = js.native
-  def standalone(): js.Any = js.native
   /**
     * Sets the value of the standalone attribute associated with this
     * declaration.
     */
+  def standalone(): js.Any = js.native
   def standalone(standalone: String): js.Any = js.native
   /**
     * Gets the value of the standalone attribute associated with this

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,8 +41,4 @@ trait TimeInfo
     */
   var trackIdField: String = js.native
 }
-
-@JSGlobal("__esri.TimeInfo")
-@js.native
-object TimeInfo extends TopLevel[TimeInfoConstructor]
 

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.DataState")
 @js.native
-class DataState () extends Object {
+trait DataState extends Object {
   /**
     * Returns or sets whether the data state is changed.As long as changed was not set to false the data
     * state is dirtyand the corresponding binding will fire data state change events.

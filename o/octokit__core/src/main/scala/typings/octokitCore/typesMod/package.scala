@@ -12,7 +12,7 @@ package object typesMod {
     /* options */ typings.octokitCore.typesMod.OctokitOptions, 
     org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Unit
   ]
-  type RequestParameters = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitTypes.RequestParameters */ js.Any
+  type RequestParameters = typings.octokitTypes.requestParametersMod.RequestParameters
   type ReturnTypeOf[T /* <: typings.octokitCore.typesMod.AnyFunction | js.Array[typings.octokitCore.typesMod.AnyFunction] */] = (typings.octokitCore.typesMod.UnionToIntersection[
     typings.std.ReturnType[
       /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any

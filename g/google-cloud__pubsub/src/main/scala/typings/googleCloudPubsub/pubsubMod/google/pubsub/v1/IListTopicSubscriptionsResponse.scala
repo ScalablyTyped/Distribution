@@ -14,10 +14,13 @@ trait IListTopicSubscriptionsResponse extends js.Object {
 
 object IListTopicSubscriptionsResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, subscriptions: js.Array[String] = null): IListTopicSubscriptionsResponse = {
+  def apply(
+    nextPageToken: js.UndefOr[Null | String] = js.undefined,
+    subscriptions: js.UndefOr[Null | js.Array[String]] = js.undefined
+  ): IListTopicSubscriptionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscriptions)) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListTopicSubscriptionsResponse]
   }
 }

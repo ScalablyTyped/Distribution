@@ -3,16 +3,12 @@ package typings.phaser.spine.webgl
 import typings.phaser.spine.Color
 import typings.phaser.spine.Disposable
 import typings.phaser.spine.Skeleton
-import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.webgl.SkeletonDebugRenderer")
 @js.native
-class SkeletonDebugRenderer protected () extends Disposable {
-  def this(context: ManagedWebGLRenderingContext) = this()
-  def this(context: WebGLRenderingContext) = this()
+trait SkeletonDebugRenderer extends Disposable {
   var aabbColor: Color = js.native
   var attachmentLineColor: Color = js.native
   var boneLineColor: Color = js.native
@@ -35,17 +31,7 @@ class SkeletonDebugRenderer protected () extends Disposable {
   var temp: js.Any = js.native
   var triangleLineColor: Color = js.native
   var vertices: js.Any = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   def draw(shapes: ShapeRenderer, skeleton: Skeleton): Unit = js.native
   def draw(shapes: ShapeRenderer, skeleton: Skeleton, ignoredBones: js.Array[String]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("spine.webgl.SkeletonDebugRenderer")
-@js.native
-object SkeletonDebugRenderer extends js.Object {
-  var GREEN: js.Any = js.native
-  var LIGHT_GRAY: js.Any = js.native
 }
 

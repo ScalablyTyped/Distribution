@@ -57,6 +57,7 @@ package object apigatewayv2Mod {
     - java.lang.String
   */
   type EndpointType = typings.awsSdk.apigatewayv2Mod._EndpointType | java.lang.String
+  type ExportedApi = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.apigatewayv2Mod.Blob | java.lang.String
   type Id = java.lang.String
   type IdentitySourceList = js.Array[typings.awsSdk.apigatewayv2Mod.string]
   type IntegerWithLengthBetween0And3600 = scala.Double

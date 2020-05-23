@@ -10,33 +10,30 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.ParticleRenderer")
-@js.native
-class ParticleRenderer protected () extends js.Object {
-  def this(renderer: Renderer) = this()
+trait ParticleRenderer extends js.Object {
   /**
     * The default shader that is used if a sprite doesn't have a more specific one.
     *
     * @member {PIXI.Shader} PIXI.ParticleRenderer#shader
     */
-  var shader: Shader = js.native
+  var shader: Shader
   /**
     * The WebGL state in which this renderer will work.
     *
     * @member {PIXI.State} PIXI.ParticleRenderer#state
     * @readonly
     */
-  val state: State = js.native
+  val state: State
   /**
     * Destroys the ParticleRenderer.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   /**
     * Renders the particle container object.
     *
     * @param {PIXI.ParticleContainer} container - The container to render using this ParticleRenderer
     */
-  def render(container: ParticleContainer): Unit = js.native
+  def render(container: ParticleContainer): Unit
   /**
     * Uploads the position.
     *
@@ -54,7 +51,7 @@ class ParticleRenderer protected () extends js.Object {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
   /**
     * Uploads the rotiation.
     *
@@ -72,7 +69,7 @@ class ParticleRenderer protected () extends js.Object {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
   /**
     * Uploads the tint.
     *
@@ -90,7 +87,7 @@ class ParticleRenderer protected () extends js.Object {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
   /**
     * Uploads the Uvs
     *
@@ -108,7 +105,7 @@ class ParticleRenderer protected () extends js.Object {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
   /**
     * Uploads the vertices.
     *
@@ -126,6 +123,24 @@ class ParticleRenderer protected () extends js.Object {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
+}
+
+object ParticleRenderer {
+  @scala.inline
+  def apply(
+    destroy: () => Unit,
+    render: ParticleContainer => Unit,
+    shader: Shader,
+    state: State,
+    uploadPosition: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit,
+    uploadRotation: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit,
+    uploadTint: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit,
+    uploadUvs: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit,
+    uploadVertices: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit
+  ): ParticleRenderer = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), render = js.Any.fromFunction1(render), shader = shader.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], uploadPosition = js.Any.fromFunction6(uploadPosition), uploadRotation = js.Any.fromFunction6(uploadRotation), uploadTint = js.Any.fromFunction6(uploadTint), uploadUvs = js.Any.fromFunction6(uploadUvs), uploadVertices = js.Any.fromFunction6(uploadVertices))
+    __obj.asInstanceOf[ParticleRenderer]
+  }
 }
 

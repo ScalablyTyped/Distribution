@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait ListItemTextProps
   extends Props
      with /**
-  * Additional properties passed to root container.
+  * Additional properties passed to inner input element.
   */
 /* key */ StringDictionary[js.Any] {
   /**
@@ -34,7 +34,7 @@ object ListItemTextProps {
   @scala.inline
   def apply(
     StringDictionary: /**
-    * Additional properties passed to root container.
+    * Additional properties passed to inner input element.
     */
   /* key */ StringDictionary[js.Any] = null,
     children: ReactNode = null,
@@ -93,7 +93,7 @@ object ListItemTextProps {
     if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemTextProps]

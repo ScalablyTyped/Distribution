@@ -6,10 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("GmePanel.Logger")
-@js.native
-class Logger () extends js.Object {
-  def createLogger(name: String, options: LogOptions): Logger = js.native
-  def createWithGmeConfig(name: String, gmeConfig: GmeConfig): Logger = js.native
+trait Logger extends js.Object {
+  def createLogger(name: String, options: LogOptions): Logger
+  def createWithGmeConfig(name: String, gmeConfig: GmeConfig): Logger
+}
+
+object Logger {
+  @scala.inline
+  def apply(createLogger: (String, LogOptions) => Logger, createWithGmeConfig: (String, GmeConfig) => Logger): Logger = {
+    val __obj = js.Dynamic.literal(createLogger = js.Any.fromFunction2(createLogger), createWithGmeConfig = js.Any.fromFunction2(createWithGmeConfig))
+    __obj.asInstanceOf[Logger]
+  }
 }
 

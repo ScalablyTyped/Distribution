@@ -28,8 +28,8 @@ trait ISplitter extends IComponent {
   /** [Config Option] (Boolean) */
   var performCollapse: js.UndefOr[Boolean] = js.undefined
   /** [Method] Work around IE bug
-  		* @returns Ext.Component this
-  		*/
+    * @returns Ext.Component this
+    */
   @JSName("setSize")
   var setSize_ISplitter: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Config Option] (Number) */
@@ -44,29 +44,29 @@ object ISplitter {
     collapseTarget: js.Any = null,
     collapsedCls: String = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
-    defaultSplitMax: Int | Double = null,
-    defaultSplitMin: Int | Double = null,
+    defaultSplitMax: js.UndefOr[Double] = js.undefined,
+    defaultSplitMin: js.UndefOr[Double] = js.undefined,
     getTrackerConfig: () => Unit = null,
     onRender: () => Unit = null,
     orientation: String = null,
     performCollapse: js.UndefOr[Boolean] = js.undefined,
     setSize: () => IComponent = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): ISplitter = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(collapseOnDblClick)) __obj.updateDynamic("collapseOnDblClick")(collapseOnDblClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseOnDblClick)) __obj.updateDynamic("collapseOnDblClick")(collapseOnDblClick.get.asInstanceOf[js.Any])
     if (collapseTarget != null) __obj.updateDynamic("collapseTarget")(collapseTarget.asInstanceOf[js.Any])
     if (collapsedCls != null) __obj.updateDynamic("collapsedCls")(collapsedCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (defaultSplitMax != null) __obj.updateDynamic("defaultSplitMax")(defaultSplitMax.asInstanceOf[js.Any])
-    if (defaultSplitMin != null) __obj.updateDynamic("defaultSplitMin")(defaultSplitMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSplitMax)) __obj.updateDynamic("defaultSplitMax")(defaultSplitMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSplitMin)) __obj.updateDynamic("defaultSplitMin")(defaultSplitMin.get.asInstanceOf[js.Any])
     if (getTrackerConfig != null) __obj.updateDynamic("getTrackerConfig")(js.Any.fromFunction0(getTrackerConfig))
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(performCollapse)) __obj.updateDynamic("performCollapse")(performCollapse.asInstanceOf[js.Any])
+    if (!js.isUndefined(performCollapse)) __obj.updateDynamic("performCollapse")(performCollapse.get.asInstanceOf[js.Any])
     if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction0(setSize))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISplitter]
   }
 }

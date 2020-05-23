@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("common-errors", "AlreadyInUseError")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "AlreadyInUseError")
 @js.native
-class AlreadyInUseError protected () extends ErrorConstructor {
+class AlreadyInUseError protected () extends js.Object {
   /**
     * @param entityName the entity that owns the protected resource
     * @param args       the fields or attributes that are already in use

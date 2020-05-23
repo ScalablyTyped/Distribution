@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.ViewManagement
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object FullScreenSystemOverlayMode extends js.Object {
   /** Edge gestures call up system overlays, like the taskbar and title bar. */
   @js.native
   sealed trait standard extends FullScreenSystemOverlayMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FullScreenSystemOverlayMode with Double] = js.native
-  /* 1 */ @js.native
-  object minimal extends TopLevel[minimal with Double]
-  
-  /* 0 */ @js.native
-  object standard extends TopLevel[standard with Double]
   
 }
 

@@ -8,5 +8,5 @@ package object carouselMod {
   type CarouselProps = (typings.reactBootstrap.mod.Omit[
     typings.react.mod.HTMLProps[typings.reactBootstrap.carouselMod.Carousel], 
     typings.reactBootstrap.reactBootstrapStrings.wrap
-  ]) with typings.reactBootstrap.AnonActiveIndex
+  ]) with typings.reactBootstrap.anon.ActiveIndex
 }

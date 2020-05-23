@@ -1,7 +1,7 @@
 
 # Scala.js typings for urql
 
-Typings are for version 1.9.6
+Typings are for version 1.9.7
 
 ## Library description:
 A highly customizable and versatile GraphQL client for React

@@ -8,7 +8,7 @@ trait MultipleGetObjectsResponse[TObject] extends js.Object {
   /**
     * The list of objects.
     */
-  val results: js.Array[TObject with ObjectWithObjectID]
+  var results: js.Array[TObject with ObjectWithObjectID]
 }
 
 object MultipleGetObjectsResponse {

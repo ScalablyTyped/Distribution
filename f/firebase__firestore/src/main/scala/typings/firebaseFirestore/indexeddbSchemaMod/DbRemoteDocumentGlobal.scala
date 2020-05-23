@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbRemoteDocumentGlobal")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbRemoteDocumentGlobal")
 @js.native
 class DbRemoteDocumentGlobal protected () extends js.Object {
   /**
@@ -16,7 +16,7 @@ class DbRemoteDocumentGlobal protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@firebase/firestore/dist/lib/src/local/indexeddb_schema", "DbRemoteDocumentGlobal")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbRemoteDocumentGlobal")
 @js.native
 object DbRemoteDocumentGlobal extends js.Object {
   var key: String = js.native

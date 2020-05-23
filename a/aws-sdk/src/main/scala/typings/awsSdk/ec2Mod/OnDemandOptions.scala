@@ -38,17 +38,17 @@ object OnDemandOptions {
     AllocationStrategy: FleetOnDemandAllocationStrategy = null,
     CapacityReservationOptions: CapacityReservationOptions = null,
     MaxTotalPrice: String = null,
-    MinTargetCapacity: Int | scala.Double = null,
-    SingleAvailabilityZone: js.UndefOr[scala.Boolean] = js.undefined,
-    SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
+    MinTargetCapacity: js.UndefOr[Integer] = js.undefined,
+    SingleAvailabilityZone: js.UndefOr[Boolean] = js.undefined,
+    SingleInstanceType: js.UndefOr[Boolean] = js.undefined
   ): OnDemandOptions = {
     val __obj = js.Dynamic.literal()
     if (AllocationStrategy != null) __obj.updateDynamic("AllocationStrategy")(AllocationStrategy.asInstanceOf[js.Any])
     if (CapacityReservationOptions != null) __obj.updateDynamic("CapacityReservationOptions")(CapacityReservationOptions.asInstanceOf[js.Any])
     if (MaxTotalPrice != null) __obj.updateDynamic("MaxTotalPrice")(MaxTotalPrice.asInstanceOf[js.Any])
-    if (MinTargetCapacity != null) __obj.updateDynamic("MinTargetCapacity")(MinTargetCapacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(SingleAvailabilityZone)) __obj.updateDynamic("SingleAvailabilityZone")(SingleAvailabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(SingleInstanceType)) __obj.updateDynamic("SingleInstanceType")(SingleInstanceType.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinTargetCapacity)) __obj.updateDynamic("MinTargetCapacity")(MinTargetCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SingleAvailabilityZone)) __obj.updateDynamic("SingleAvailabilityZone")(SingleAvailabilityZone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SingleInstanceType)) __obj.updateDynamic("SingleInstanceType")(SingleInstanceType.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDemandOptions]
   }
 }

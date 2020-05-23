@@ -13,8 +13,8 @@ trait StudentSubmission extends js.Object {
   var alternateLink: js.UndefOr[String] = js.undefined
   /**
     * Optional grade. If unset, no grade was set.
-    * This value must be non-negative. Decimal (i.e. non-integer) values are
-    * allowed, but will be rounded to two decimal places.
+    * This value must be non-negative. Decimal (that is, non-integer) values are
+    * allowed, but are rounded to two decimal places.
     *
     * This may be modified only by course teachers.
     */
@@ -23,14 +23,14 @@ trait StudentSubmission extends js.Object {
     * Submission content when course_work_type is ASSIGNMENT.
     *
     * Students can modify this content using
-    * google.classroom.Work.ModifyAttachments.
+    * ModifyAttachments.
     */
   var assignmentSubmission: js.UndefOr[AssignmentSubmission] = js.undefined
   /**
     * Whether this student submission is associated with the Developer Console
     * project making the request.
     *
-    * See google.classroom.Work.CreateCourseWork for more
+    * See CreateCourseWork for more
     * details.
     *
     * Read-only.
@@ -63,8 +63,8 @@ trait StudentSubmission extends js.Object {
   var creationTime: js.UndefOr[String] = js.undefined
   /**
     * Optional pending grade. If unset, no grade was set.
-    * This value must be non-negative. Decimal (i.e. non-integer) values are
-    * allowed, but will be rounded to two decimal places.
+    * This value must be non-negative. Decimal (that is, non-integer) values are
+    * allowed, but are rounded to two decimal places.
     *
     * This is only visible to and modifiable by course teachers.
     */
@@ -117,14 +117,14 @@ object StudentSubmission {
   @scala.inline
   def apply(
     alternateLink: String = null,
-    assignedGrade: Int | Double = null,
+    assignedGrade: js.UndefOr[Double] = js.undefined,
     assignmentSubmission: AssignmentSubmission = null,
     associatedWithDeveloper: js.UndefOr[Boolean] = js.undefined,
     courseId: String = null,
     courseWorkId: String = null,
     courseWorkType: String = null,
     creationTime: String = null,
-    draftGrade: Int | Double = null,
+    draftGrade: js.UndefOr[Double] = js.undefined,
     id: String = null,
     late: js.UndefOr[Boolean] = js.undefined,
     multipleChoiceSubmission: MultipleChoiceSubmission = null,
@@ -136,16 +136,16 @@ object StudentSubmission {
   ): StudentSubmission = {
     val __obj = js.Dynamic.literal()
     if (alternateLink != null) __obj.updateDynamic("alternateLink")(alternateLink.asInstanceOf[js.Any])
-    if (assignedGrade != null) __obj.updateDynamic("assignedGrade")(assignedGrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(assignedGrade)) __obj.updateDynamic("assignedGrade")(assignedGrade.get.asInstanceOf[js.Any])
     if (assignmentSubmission != null) __obj.updateDynamic("assignmentSubmission")(assignmentSubmission.asInstanceOf[js.Any])
-    if (!js.isUndefined(associatedWithDeveloper)) __obj.updateDynamic("associatedWithDeveloper")(associatedWithDeveloper.asInstanceOf[js.Any])
+    if (!js.isUndefined(associatedWithDeveloper)) __obj.updateDynamic("associatedWithDeveloper")(associatedWithDeveloper.get.asInstanceOf[js.Any])
     if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
     if (courseWorkId != null) __obj.updateDynamic("courseWorkId")(courseWorkId.asInstanceOf[js.Any])
     if (courseWorkType != null) __obj.updateDynamic("courseWorkType")(courseWorkType.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (draftGrade != null) __obj.updateDynamic("draftGrade")(draftGrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(draftGrade)) __obj.updateDynamic("draftGrade")(draftGrade.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(late)) __obj.updateDynamic("late")(late.asInstanceOf[js.Any])
+    if (!js.isUndefined(late)) __obj.updateDynamic("late")(late.get.asInstanceOf[js.Any])
     if (multipleChoiceSubmission != null) __obj.updateDynamic("multipleChoiceSubmission")(multipleChoiceSubmission.asInstanceOf[js.Any])
     if (shortAnswerSubmission != null) __obj.updateDynamic("shortAnswerSubmission")(shortAnswerSubmission.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

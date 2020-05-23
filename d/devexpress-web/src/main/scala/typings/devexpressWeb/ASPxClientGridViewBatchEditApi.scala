@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Provides members related to Batch Edit Mode
   */
-@JSGlobal("ASPxClientGridViewBatchEditApi")
 @js.native
-class ASPxClientGridViewBatchEditApi () extends js.Object {
+trait ASPxClientGridViewBatchEditApi extends js.Object {
   /**
     * Adds a new row when ASPxGridView is in Batch Edit mode.
     */

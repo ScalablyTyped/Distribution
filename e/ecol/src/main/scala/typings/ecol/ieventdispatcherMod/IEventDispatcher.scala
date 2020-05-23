@@ -19,7 +19,7 @@ trait IEventDispatcher[T, SourceT /* <: IContainer[T, SourceT, IteratorT, Revers
 
 object IEventDispatcher {
   @scala.inline
-  def apply[T, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */](
+  def apply[T, SourceT, IteratorT, ReverseT](
     addEventListener: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit,
     dispatchEvent: CollectionEvent[T, SourceT, IteratorT, ReverseT] => Unit,
     hasEventListener: Type => Boolean,

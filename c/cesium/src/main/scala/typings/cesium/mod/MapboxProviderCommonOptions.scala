@@ -38,15 +38,15 @@ object MapboxProviderCommonOptions {
   def apply(
     credit: Credit | String = null,
     ellipsoid: Ellipsoid = null,
-    maximumLevel: Int | Double = null,
-    minimumLevel: Int | Double = null,
+    maximumLevel: js.UndefOr[Double] = js.undefined,
+    minimumLevel: js.UndefOr[Double] = js.undefined,
     rectangle: Rectangle = null
   ): MapboxProviderCommonOptions = {
     val __obj = js.Dynamic.literal()
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
-    if (maximumLevel != null) __obj.updateDynamic("maximumLevel")(maximumLevel.asInstanceOf[js.Any])
-    if (minimumLevel != null) __obj.updateDynamic("minimumLevel")(minimumLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumLevel)) __obj.updateDynamic("maximumLevel")(maximumLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumLevel)) __obj.updateDynamic("minimumLevel")(minimumLevel.get.asInstanceOf[js.Any])
     if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapboxProviderCommonOptions]
   }

@@ -1,21 +1,21 @@
 package typings.urlparser.mod
 
-import typings.urlparser.AnonBase
-import typings.urlparser.AnonHostname
-import typings.urlparser.AnonParams
+import typings.urlparser.anon.Base
+import typings.urlparser.anon.Hostname
+import typings.urlparser.anon.Params
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UrlData extends js.Object {
-  var host: AnonHostname
-  var path: AnonBase
-  var query: AnonParams
+  var host: Hostname
+  var path: Base
+  var query: Params
 }
 
 object UrlData {
   @scala.inline
-  def apply(host: AnonHostname, path: AnonBase, query: AnonParams): UrlData = {
+  def apply(host: Hostname, path: Base, query: Params): UrlData = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlData]
   }

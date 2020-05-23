@@ -42,11 +42,11 @@ object PresignOption {
     signingName: String,
     signingRegion: String,
     endpoint: HttpEndpoint = null,
-    expireTime: Int | Double = null
+    expireTime: js.UndefOr[Double] = js.undefined
   ): PresignOption = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], signingName = signingName.asInstanceOf[js.Any], signingRegion = signingRegion.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(expireTime)) __obj.updateDynamic("expireTime")(expireTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresignOption]
   }
 }

@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -129,56 +128,6 @@ object ShowAsCalculation extends js.Object {
     */
   @js.native
   sealed trait unknown extends ShowAsCalculation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShowAsCalculation with String] = js.native
-  /* "DifferenceFrom" */ @js.native
-  object differenceFrom extends TopLevel[differenceFrom with String]
-  
-  /* "Index" */ @js.native
-  object index extends TopLevel[index with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "PercentDifferenceFrom" */ @js.native
-  object percentDifferenceFrom extends TopLevel[percentDifferenceFrom with String]
-  
-  /* "PercentOf" */ @js.native
-  object percentOf extends TopLevel[percentOf with String]
-  
-  /* "PercentOfColumnTotal" */ @js.native
-  object percentOfColumnTotal extends TopLevel[percentOfColumnTotal with String]
-  
-  /* "PercentOfGrandTotal" */ @js.native
-  object percentOfGrandTotal extends TopLevel[percentOfGrandTotal with String]
-  
-  /* "PercentOfParentColumnTotal" */ @js.native
-  object percentOfParentColumnTotal extends TopLevel[percentOfParentColumnTotal with String]
-  
-  /* "PercentOfParentRowTotal" */ @js.native
-  object percentOfParentRowTotal extends TopLevel[percentOfParentRowTotal with String]
-  
-  /* "PercentOfParentTotal" */ @js.native
-  object percentOfParentTotal extends TopLevel[percentOfParentTotal with String]
-  
-  /* "PercentOfRowTotal" */ @js.native
-  object percentOfRowTotal extends TopLevel[percentOfRowTotal with String]
-  
-  /* "PercentRunningTotal" */ @js.native
-  object percentRunningTotal extends TopLevel[percentRunningTotal with String]
-  
-  /* "RankAscending" */ @js.native
-  object rankAscending extends TopLevel[rankAscending with String]
-  
-  /* "RankDecending" */ @js.native
-  object rankDecending extends TopLevel[rankDecending with String]
-  
-  /* "RunningTotal" */ @js.native
-  object runningTotal extends TopLevel[runningTotal with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
   
 }
 

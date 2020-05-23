@@ -20,12 +20,12 @@ object TabIconDetails {
   def apply(
     imageData: ImageData | NumberDictionary[ImageData] = null,
     path: js.Any = null,
-    tabId: Int | Double = null
+    tabId: js.UndefOr[Double] = js.undefined
   ): TabIconDetails = {
     val __obj = js.Dynamic.literal()
     if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabIconDetails]
   }
 }

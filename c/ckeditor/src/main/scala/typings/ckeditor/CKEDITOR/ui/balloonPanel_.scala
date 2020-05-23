@@ -1,14 +1,14 @@
 package typings.ckeditor.CKEDITOR.ui
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.ckeditor.AnonFocusElement
-import typings.ckeditor.AnonRemoveListenerListenerRegistration
 import typings.ckeditor.CKEDITOR.dom.element
 import typings.ckeditor.CKEDITOR.listenerRegistration
 import typings.ckeditor.CKEDITOR.ui.balloonPanel.parts
 import typings.ckeditor.CKEDITOR.ui.balloonPanel.rect
 import typings.ckeditor.CKEDITOR.ui.balloonPanel.templateDefinitions
 import typings.ckeditor.CKEDITOR.ui.balloonPanel.templates
+import typings.ckeditor.anon.FocusElement
+import typings.ckeditor.anon.RemoveListenerListenerRegistration
 import typings.ckeditor.ckeditorStrings.bottom
 import typings.ckeditor.ckeditorStrings.left
 import typings.ckeditor.ckeditorStrings.right
@@ -17,10 +17,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.ui.balloonPanel")
 @js.native
-class balloonPanel_ () extends js.Object {
-  var activeShowListeners: NumberDictionary[AnonRemoveListenerListenerRegistration] = js.native
+trait balloonPanel_ extends js.Object {
+  var activeShowListeners: NumberDictionary[RemoveListenerListenerRegistration] = js.native
   var editor: typings.ckeditor.CKEDITOR.editor = js.native
   var focusables: NumberDictionary[element] = js.native
   var height: String = js.native
@@ -38,8 +37,8 @@ class balloonPanel_ () extends js.Object {
   def addShowListener(listener: js.Function0[listenerRegistration]): listenerRegistration = js.native
   def attach(element: element): Unit = js.native
   def attach(element: element, options: Boolean): Unit = js.native
-  def attach(element: element, options: AnonFocusElement): Unit = js.native
   def attach(element: element, options: element): Unit = js.native
+  def attach(element: element, options: FocusElement): Unit = js.native
   def blur(): Unit = js.native
   def build(): Unit = js.native
   def deactivateShowListener(id: Double): Unit = js.native

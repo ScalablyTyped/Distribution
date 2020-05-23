@@ -36,7 +36,7 @@ trait PivotValueFilter extends js.Object {
   var comparator: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Indicates the condition for the filter, which defines the necessary filtering criteria.
+    * Specifies the condition for the filter, which defines the necessary filtering criteria.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -60,7 +60,7 @@ trait PivotValueFilter extends js.Object {
   var lowerBound: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Indicates whether the filter is for the top/bottom N items, top/bottom N percent, or top/bottom N sum.
+    * Specifies if the filter is for the top/bottom N items, top/bottom N percent, or top/bottom N sum.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -97,20 +97,20 @@ object PivotValueFilter {
   def apply(
     condition: ValueFilterCondition | Unknown_ | Equals | GreaterThan | GreaterThanOrEqualTo | LessThan | LessThanOrEqualTo | Between | TopN | BottomN,
     value: String,
-    comparator: Int | Double = null,
+    comparator: js.UndefOr[Double] = js.undefined,
     exclusive: js.UndefOr[Boolean] = js.undefined,
-    lowerBound: Int | Double = null,
+    lowerBound: js.UndefOr[Double] = js.undefined,
     selectionType: TopBottomSelectionType | Items | Percent | Sum = null,
-    threshold: Int | Double = null,
-    upperBound: Int | Double = null
+    threshold: js.UndefOr[Double] = js.undefined,
+    upperBound: js.UndefOr[Double] = js.undefined
   ): PivotValueFilter = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
+    if (!js.isUndefined(comparator)) __obj.updateDynamic("comparator")(comparator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerBound)) __obj.updateDynamic("lowerBound")(lowerBound.get.asInstanceOf[js.Any])
     if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperBound)) __obj.updateDynamic("upperBound")(upperBound.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotValueFilter]
   }
 }

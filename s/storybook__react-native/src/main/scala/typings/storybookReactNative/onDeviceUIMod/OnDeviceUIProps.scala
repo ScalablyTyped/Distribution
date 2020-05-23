@@ -18,16 +18,16 @@ object OnDeviceUIProps {
   def apply(
     stories: js.Any,
     isUIHidden: js.UndefOr[Boolean] = js.undefined,
-    keyboardAvoidingViewVerticalOffset: Int | Double = null,
+    keyboardAvoidingViewVerticalOffset: js.UndefOr[Double] = js.undefined,
     shouldDisableKeyboardAvoidingView: js.UndefOr[Boolean] = js.undefined,
-    tabOpen: Int | Double = null,
+    tabOpen: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): OnDeviceUIProps = {
     val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUIHidden)) __obj.updateDynamic("isUIHidden")(isUIHidden.asInstanceOf[js.Any])
-    if (keyboardAvoidingViewVerticalOffset != null) __obj.updateDynamic("keyboardAvoidingViewVerticalOffset")(keyboardAvoidingViewVerticalOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldDisableKeyboardAvoidingView)) __obj.updateDynamic("shouldDisableKeyboardAvoidingView")(shouldDisableKeyboardAvoidingView.asInstanceOf[js.Any])
-    if (tabOpen != null) __obj.updateDynamic("tabOpen")(tabOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUIHidden)) __obj.updateDynamic("isUIHidden")(isUIHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardAvoidingViewVerticalOffset)) __obj.updateDynamic("keyboardAvoidingViewVerticalOffset")(keyboardAvoidingViewVerticalOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldDisableKeyboardAvoidingView)) __obj.updateDynamic("shouldDisableKeyboardAvoidingView")(shouldDisableKeyboardAvoidingView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabOpen)) __obj.updateDynamic("tabOpen")(tabOpen.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDeviceUIProps]
   }

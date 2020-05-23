@@ -1,6 +1,6 @@
 package typings.webgme.Blobs
 
-import typings.webgme.Global.GmeLogger
+import typings.webgme.Global_.GmeLogger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

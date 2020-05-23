@@ -1,6 +1,6 @@
 package typings.antd.mod
 
-import typings.antd.AnonCurrent
+import typings.antd.anon.Current
 import typings.antd.libStepsMod.StepProps
 import typings.antd.libStepsMod.default
 import typings.react.mod.ClassicComponentClass
@@ -17,6 +17,6 @@ class Steps () extends default
 @js.native
 object Steps extends js.Object {
   var Step: ClassicComponentClass[StepProps] = js.native
-  var defaultProps: AnonCurrent = js.native
+  var defaultProps: Current = js.native
 }
 

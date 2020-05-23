@@ -1,6 +1,6 @@
 package typings.vueTelInput.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait VueTelInputMethods extends js.Object {
   def getCountries(list: js.Array[_]): js.Array[_]
   def getItemClass(index: Double, iso2: String): js.Any
   def initializeCountry(): Unit
-  def keyboardNav(e: Event_): Unit
+  def keyboardNav(e: Event): Unit
   def onBlur(): Unit
   def onInput(): Unit
   def reset(): Unit
@@ -28,7 +28,7 @@ object VueTelInputMethods {
     getCountries: js.Array[_] => js.Array[_],
     getItemClass: (Double, String) => js.Any,
     initializeCountry: () => Unit,
-    keyboardNav: Event_ => Unit,
+    keyboardNav: Event => Unit,
     onBlur: () => Unit,
     onInput: () => Unit,
     reset: () => Unit,

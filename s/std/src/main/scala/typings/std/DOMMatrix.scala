@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,16 +45,5 @@ trait DOMMatrix extends DOMMatrixReadOnly {
   def translateSelf(tx: Double): DOMMatrix = js.native
   def translateSelf(tx: Double, ty: Double): DOMMatrix = js.native
   def translateSelf(tx: Double, ty: Double, tz: Double): DOMMatrix = js.native
-}
-
-@JSGlobal("DOMMatrix")
-@js.native
-object DOMMatrix
-  extends Instantiable0[DOMMatrix]
-     with Instantiable1[(/* init */ js.Array[Double]) | (/* init */ java.lang.String), DOMMatrix] {
-  def fromFloat32Array(array32: Float32Array): DOMMatrix = js.native
-  def fromFloat64Array(array64: Float64Array): DOMMatrix = js.native
-  def fromMatrix(): DOMMatrix = js.native
-  def fromMatrix(other: DOMMatrixInit): DOMMatrix = js.native
 }
 

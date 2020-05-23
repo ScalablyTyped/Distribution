@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SubscriptionDelegate extends js.Object {
   /**
-    * Called upon receiving an incoming in dialog NOTIFY request.
+    * Called upon receiving an incoming NOTIFY request.
     * @param notification - A notification. See {@link Notification} for details.
     */
   def onNotify(notification: Notification): Unit

@@ -8,7 +8,7 @@ trait ListApiKeysResponse extends js.Object {
   /**
     * List of keys
     */
-  val keys: js.Array[GetApiKeyResponse]
+  var keys: js.Array[GetApiKeyResponse]
 }
 
 object ListApiKeysResponse {

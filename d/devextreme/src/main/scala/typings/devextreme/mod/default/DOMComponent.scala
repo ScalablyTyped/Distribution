@@ -1,8 +1,8 @@
 package typings.devextreme.mod.default
 
-import typings.devextreme.AnonDevice
+import typings.devextreme.anon.Device
 import typings.devextreme.mod.DevExpress.DOMComponentOptions
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ class DOMComponent protected ()
 @js.native
 object DOMComponent extends js.Object {
   /** @name DOMComponent.defaultOptions(rule) */
-  def defaultOptions(rule: AnonDevice): Unit = js.native
+  def defaultOptions(rule: Device): Unit = js.native
   def getInstance(element: JQuery): typings.devextreme.mod.DevExpress.DOMComponent = js.native
   /** @name DOMComponent.getInstance(element) */
   def getInstance(element: Element): typings.devextreme.mod.DevExpress.DOMComponent = js.native

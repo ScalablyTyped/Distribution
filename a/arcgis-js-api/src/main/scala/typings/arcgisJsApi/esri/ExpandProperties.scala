@@ -111,7 +111,7 @@ object ExpandProperties {
     expandTooltip: String = null,
     expanded: js.UndefOr[Boolean] = js.undefined,
     group: String = null,
-    iconNumber: Int | Double = null,
+    iconNumber: js.UndefOr[Double] = js.undefined,
     id: String = null,
     label: String = null,
     mode: String = null,
@@ -119,17 +119,17 @@ object ExpandProperties {
     viewModel: ExpandViewModelProperties = null
   ): ExpandProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse.get.asInstanceOf[js.Any])
     if (collapseIconClass != null) __obj.updateDynamic("collapseIconClass")(collapseIconClass.asInstanceOf[js.Any])
     if (collapseTooltip != null) __obj.updateDynamic("collapseTooltip")(collapseTooltip.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
     if (expandIconClass != null) __obj.updateDynamic("expandIconClass")(expandIconClass.asInstanceOf[js.Any])
     if (expandTooltip != null) __obj.updateDynamic("expandTooltip")(expandTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (iconNumber != null) __obj.updateDynamic("iconNumber")(iconNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconNumber)) __obj.updateDynamic("iconNumber")(iconNumber.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])

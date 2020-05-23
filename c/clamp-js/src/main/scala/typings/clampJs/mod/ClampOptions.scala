@@ -20,16 +20,16 @@ object ClampOptions {
     clamp: Double | String = null,
     splitOnChars: js.Array[String] = null,
     truncationChar: String = null,
-    truncationHTML: String = null,
+    truncationHTML: js.UndefOr[Null | String] = js.undefined,
     useNativeClamp: js.UndefOr[Boolean] = js.undefined
   ): ClampOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (clamp != null) __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
     if (splitOnChars != null) __obj.updateDynamic("splitOnChars")(splitOnChars.asInstanceOf[js.Any])
     if (truncationChar != null) __obj.updateDynamic("truncationChar")(truncationChar.asInstanceOf[js.Any])
-    if (truncationHTML != null) __obj.updateDynamic("truncationHTML")(truncationHTML.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeClamp)) __obj.updateDynamic("useNativeClamp")(useNativeClamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncationHTML)) __obj.updateDynamic("truncationHTML")(truncationHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeClamp)) __obj.updateDynamic("useNativeClamp")(useNativeClamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClampOptions]
   }
 }

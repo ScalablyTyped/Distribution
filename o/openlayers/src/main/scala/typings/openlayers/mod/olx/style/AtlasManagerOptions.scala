@@ -12,11 +12,15 @@ trait AtlasManagerOptions extends js.Object {
 
 object AtlasManagerOptions {
   @scala.inline
-  def apply(initialSize: Int | Double = null, maxSize: Int | Double = null, space: Int | Double = null): AtlasManagerOptions = {
+  def apply(
+    initialSize: js.UndefOr[Double] = js.undefined,
+    maxSize: js.UndefOr[Double] = js.undefined,
+    space: js.UndefOr[Double] = js.undefined
+  ): AtlasManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (initialSize != null) __obj.updateDynamic("initialSize")(initialSize.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialSize)) __obj.updateDynamic("initialSize")(initialSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(space)) __obj.updateDynamic("space")(space.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtlasManagerOptions]
   }
 }

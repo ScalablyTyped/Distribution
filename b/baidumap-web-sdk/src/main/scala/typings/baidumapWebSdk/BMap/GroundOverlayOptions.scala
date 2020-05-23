@@ -14,16 +14,16 @@ trait GroundOverlayOptions extends js.Object {
 object GroundOverlayOptions {
   @scala.inline
   def apply(
-    displayOnMaxLevel: Int | Double = null,
-    displayOnMinLevel: Int | Double = null,
+    displayOnMaxLevel: js.UndefOr[Double] = js.undefined,
+    displayOnMinLevel: js.UndefOr[Double] = js.undefined,
     imageURL: String = null,
-    opacity: Int | Double = null
+    opacity: js.UndefOr[Double] = js.undefined
   ): GroundOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (displayOnMaxLevel != null) __obj.updateDynamic("displayOnMaxLevel")(displayOnMaxLevel.asInstanceOf[js.Any])
-    if (displayOnMinLevel != null) __obj.updateDynamic("displayOnMinLevel")(displayOnMinLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayOnMaxLevel)) __obj.updateDynamic("displayOnMaxLevel")(displayOnMaxLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayOnMinLevel)) __obj.updateDynamic("displayOnMinLevel")(displayOnMinLevel.get.asInstanceOf[js.Any])
     if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroundOverlayOptions]
   }
 }

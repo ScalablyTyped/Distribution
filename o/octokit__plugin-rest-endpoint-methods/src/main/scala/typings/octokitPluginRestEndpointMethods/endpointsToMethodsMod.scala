@@ -1,8 +1,8 @@
 package typings.octokitPluginRestEndpointMethods
 
 import typings.octokitCore.mod.Octokit
-import typings.octokitPluginRestEndpointMethods.distTypesTypesMod.EndpointsDefaultsAndDecorations
-import typings.octokitPluginRestEndpointMethods.typesMod.RestEndpointMethods
+import typings.octokitPluginRestEndpointMethods.methodTypesMod.RestEndpointMethods
+import typings.octokitPluginRestEndpointMethods.typesMod.EndpointsDefaultsAndDecorations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

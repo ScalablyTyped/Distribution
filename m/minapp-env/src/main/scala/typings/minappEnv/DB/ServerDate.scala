@@ -4,10 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DB.ServerDate")
-@js.native
-abstract class ServerDate () extends js.Object {
-  def this(options: IServerDateOptions) = this()
-  val options: IServerDateOptions = js.native
+trait ServerDate extends js.Object {
+  val options: IServerDateOptions
+}
+
+object ServerDate {
+  @scala.inline
+  def apply(options: IServerDateOptions): ServerDate = {
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerDate]
+  }
 }
 

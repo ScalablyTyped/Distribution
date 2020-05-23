@@ -1,6 +1,7 @@
 package typings.immutable.mod
 
 import typings.immutable.Immutable.Collection.Indexed
+import typings.immutable.Immutable.Set
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,14 +40,14 @@ trait Stack[T] extends Indexed[T] {
     * not filtering out any values.
     */
   @JSName("filter")
-  def filter_F_T_Set_[F /* <: T */](
+  def filter_F_T_Set[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean]
-  ): typings.immutable.Immutable.Set_[F] = js.native
+  ): Set[F] = js.native
   @JSName("filter")
-  def filter_F_T_Set_[F /* <: T */](
+  def filter_F_T_Set[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
-  ): typings.immutable.Immutable.Set_[F] = js.native
+  ): Set[F] = js.native
   // Reading values
   /**
     * Alias for `Stack.first()`.

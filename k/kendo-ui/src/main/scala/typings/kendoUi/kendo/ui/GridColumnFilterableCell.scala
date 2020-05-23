@@ -23,10 +23,10 @@ object GridColumnFilterableCell {
   def apply(
     dataSource: js.Any | DataSource = null,
     dataTextField: String = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    inputWidth: Int | Double = null,
-    minLength: Int | Double = null,
+    inputWidth: js.UndefOr[Double] = js.undefined,
+    minLength: js.UndefOr[Double] = js.undefined,
     operator: String = null,
     showOperators: js.UndefOr[Boolean] = js.undefined,
     suggestionOperator: String = null,
@@ -35,12 +35,12 @@ object GridColumnFilterableCell {
     val __obj = js.Dynamic.literal()
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (inputWidth != null) __obj.updateDynamic("inputWidth")(inputWidth.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputWidth)) __obj.updateDynamic("inputWidth")(inputWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOperators)) __obj.updateDynamic("showOperators")(showOperators.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOperators)) __obj.updateDynamic("showOperators")(showOperators.get.asInstanceOf[js.Any])
     if (suggestionOperator != null) __obj.updateDynamic("suggestionOperator")(suggestionOperator.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnFilterableCell]

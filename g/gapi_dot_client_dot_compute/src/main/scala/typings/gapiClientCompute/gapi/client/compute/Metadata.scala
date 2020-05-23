@@ -1,6 +1,6 @@
 package typings.gapiClientCompute.gapi.client.compute
 
-import typings.gapiClientCompute.AnonKey
+import typings.gapiClientCompute.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,14 +13,14 @@ trait Metadata extends js.Object {
     */
   var fingerprint: js.UndefOr[String] = js.undefined
   /** Array of key/value pairs. The total size of all keys and values must be less than 512 KB. */
-  var items: js.UndefOr[js.Array[AnonKey]] = js.undefined
+  var items: js.UndefOr[js.Array[Key]] = js.undefined
   /** [Output Only] Type of the resource. Always compute#metadata for metadata. */
   var kind: js.UndefOr[String] = js.undefined
 }
 
 object Metadata {
   @scala.inline
-  def apply(fingerprint: String = null, items: js.Array[AnonKey] = null, kind: String = null): Metadata = {
+  def apply(fingerprint: String = null, items: js.Array[Key] = null, kind: String = null): Metadata = {
     val __obj = js.Dynamic.literal()
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])

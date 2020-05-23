@@ -74,7 +74,7 @@ package object cloudsearchMod {
   type IndexFieldStatusList = js.Array[typings.awsSdk.cloudsearchMod.IndexFieldStatus]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.int
-    - typings.awsSdk.awsSdkStrings.double
+    - typings.awsSdk.awsSdkStrings.double_
     - typings.awsSdk.awsSdkStrings.literal
     - typings.awsSdk.awsSdkStrings.text_
     - typings.awsSdk.awsSdkStrings.date_

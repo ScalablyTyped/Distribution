@@ -30,7 +30,7 @@ object AnchorOptions {
   @scala.inline
   def apply(
     callback: (/* token */ typings.markdownIt.tokenMod.^, /* anchor_info */ AnchorInfo) => Unit = null,
-    level: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
     permalink: js.UndefOr[Boolean] = js.undefined,
     permalinkBefore: js.UndefOr[Boolean] = js.undefined,
     permalinkClass: String = null,
@@ -41,9 +41,9 @@ object AnchorOptions {
   ): AnchorOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(permalink)) __obj.updateDynamic("permalink")(permalink.asInstanceOf[js.Any])
-    if (!js.isUndefined(permalinkBefore)) __obj.updateDynamic("permalinkBefore")(permalinkBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(permalink)) __obj.updateDynamic("permalink")(permalink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(permalinkBefore)) __obj.updateDynamic("permalinkBefore")(permalinkBefore.get.asInstanceOf[js.Any])
     if (permalinkClass != null) __obj.updateDynamic("permalinkClass")(permalinkClass.asInstanceOf[js.Any])
     if (permalinkHref != null) __obj.updateDynamic("permalinkHref")(js.Any.fromFunction1(permalinkHref))
     if (permalinkSymbol != null) __obj.updateDynamic("permalinkSymbol")(permalinkSymbol.asInstanceOf[js.Any])

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 
 trait IDatabase extends IBase {
   /** [Method]
-  		* @param sql String/String[]/Object/Object[]/SQLStatement/SQLStatement[] SQL Command to run with optional arguments and callbacks
-  		* @param success Function callback for successful transaction
-  		* @param failure Function callback for failed transaction
-  		*/
+    * @param sql String/String[]/Object/Object[]/SQLStatement/SQLStatement[] SQL Command to run with optional arguments and callbacks
+    * @param success Function callback for successful transaction
+    * @param failure Function callback for failed transaction
+    */
   var transaction: js.UndefOr[
     js.Function3[
       /* sql */ js.UndefOr[js.Any], 
@@ -60,7 +60,7 @@ object IDatabase {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (transaction != null) __obj.updateDynamic("transaction")(js.Any.fromFunction3(transaction))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

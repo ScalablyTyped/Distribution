@@ -13,7 +13,7 @@ trait SkObject[T /* <: SkObject[T] */] extends js.Object {
 
 object SkObject {
   @scala.inline
-  def apply[T /* <: SkObject[T] */](
+  def apply[T](
     delete: () => Unit,
     deleteAfter: () => Unit,
     isAliasOf: js.Any => Boolean,

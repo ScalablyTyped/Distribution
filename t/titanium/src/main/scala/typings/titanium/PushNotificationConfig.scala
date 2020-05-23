@@ -10,20 +10,20 @@ import scala.scalajs.js.annotation._
   */
 trait PushNotificationConfig extends js.Object {
   /**
-  	 * Callback function invoked upon receiving a new push notification.
-  	 */
+    * Callback function invoked upon receiving a new push notification.
+    */
   var callback: js.UndefOr[js.Function1[/* param0 */ PushNotificationData, Unit]] = js.undefined
   /**
-  	 * Callback function called when an error occurs during registration.
-  	 */
+    * Callback function called when an error occurs during registration.
+    */
   var error: js.UndefOr[js.Function1[/* param0 */ PushNotificationErrorArg, Unit]] = js.undefined
   /**
-  	 * Callback function called when the push registration is successfully completed.
-  	 */
+    * Callback function called when the push registration is successfully completed.
+    */
   var success: js.UndefOr[js.Function1[/* param0 */ PushNotificationSuccessArg, Unit]] = js.undefined
   /**
-  	 * Array of `NOTIFICATION_TYPE` constants that the application would like to receive.
-  	 */
+    * Array of `NOTIFICATION_TYPE` constants that the application would like to receive.
+    */
   var types: js.UndefOr[js.Array[Double]] = js.undefined
 }
 

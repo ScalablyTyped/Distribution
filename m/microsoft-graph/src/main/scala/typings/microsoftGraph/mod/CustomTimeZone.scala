@@ -19,13 +19,13 @@ trait CustomTimeZone extends TimeZoneBase {
 object CustomTimeZone {
   @scala.inline
   def apply(
-    bias: Int | Double = null,
+    bias: js.UndefOr[Double] = js.undefined,
     daylightOffset: DaylightTimeZoneOffset = null,
     name: String = null,
     standardOffset: StandardTimeZoneOffset = null
   ): CustomTimeZone = {
     val __obj = js.Dynamic.literal()
-    if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
+    if (!js.isUndefined(bias)) __obj.updateDynamic("bias")(bias.get.asInstanceOf[js.Any])
     if (daylightOffset != null) __obj.updateDynamic("daylightOffset")(daylightOffset.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (standardOffset != null) __obj.updateDynamic("standardOffset")(standardOffset.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.AnonType
+import typings.devextreme.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait PivotGridDataSourceOptions extends js.Object {
   var retrieveFields: js.UndefOr[Boolean] = js.undefined
   /** @name PivotGridDataSource.Options.store */
   var store: js.UndefOr[
-    Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[AnonType] | AnonType
+    Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[Type] | Type
   ] = js.undefined
 }
 
@@ -42,7 +42,7 @@ object PivotGridDataSourceOptions {
     paginate: js.UndefOr[Boolean] = js.undefined,
     remoteOperations: js.UndefOr[Boolean] = js.undefined,
     retrieveFields: js.UndefOr[Boolean] = js.undefined,
-    store: Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[AnonType] | AnonType = null
+    store: Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[Type] | Type = null
   ): PivotGridDataSourceOptions = {
     val __obj = js.Dynamic.literal()
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
@@ -51,9 +51,9 @@ object PivotGridDataSourceOptions {
     if (onFieldsPrepared != null) __obj.updateDynamic("onFieldsPrepared")(js.Any.fromFunction1(onFieldsPrepared))
     if (onLoadError != null) __obj.updateDynamic("onLoadError")(js.Any.fromFunction1(onLoadError))
     if (onLoadingChanged != null) __obj.updateDynamic("onLoadingChanged")(js.Any.fromFunction1(onLoadingChanged))
-    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteOperations)) __obj.updateDynamic("remoteOperations")(remoteOperations.asInstanceOf[js.Any])
-    if (!js.isUndefined(retrieveFields)) __obj.updateDynamic("retrieveFields")(retrieveFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteOperations)) __obj.updateDynamic("remoteOperations")(remoteOperations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retrieveFields)) __obj.updateDynamic("retrieveFields")(retrieveFields.get.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridDataSourceOptions]
   }

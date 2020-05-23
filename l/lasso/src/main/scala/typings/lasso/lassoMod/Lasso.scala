@@ -1,6 +1,6 @@
 package typings.lasso.lassoMod
 
-import typings.lasso.AnonParts
+import typings.lasso.anon.Parts
 import typings.lasso.dependenciesMod.DependencyRegistry
 import typings.lasso.lassoPageResultMod.LassoPageResult
 import typings.lasso.writersMod.Writer
@@ -22,7 +22,7 @@ trait Lasso extends EventEmitter {
   @JSName("writer")
   var writer_Original: Writer = js.native
   def addTransform(transform: js.Any): Unit = js.native
-  def buildLassoCacheKey(lassoContext: typings.lasso.lassoContextMod.default): AnonParts = js.native
+  def buildLassoCacheKey(lassoContext: typings.lasso.lassoContextMod.default): Parts = js.native
   def buildPageBundles(options: js.Any, lassoContext: typings.lasso.lassoContextMod.default, callback: Callback): Unit = js.native
   def createAppBundleMappings(bundleSetConfig: js.Any, lassoContext: typings.lasso.lassoContextMod.default, callback: Callback): js.Any = js.native
   def createLassoContext(): typings.lasso.lassoContextMod.default = js.native

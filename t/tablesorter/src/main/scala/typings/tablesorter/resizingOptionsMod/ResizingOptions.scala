@@ -42,10 +42,10 @@ object ResizingOptions {
     resizable_widths: js.Array[String] = null
   ): ResizingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable_addLastColumn)) __obj.updateDynamic("resizable_addLastColumn")(resizable_addLastColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable_includeFooter)) __obj.updateDynamic("resizable_includeFooter")(resizable_includeFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable_targetLast)) __obj.updateDynamic("resizable_targetLast")(resizable_targetLast.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable_addLastColumn)) __obj.updateDynamic("resizable_addLastColumn")(resizable_addLastColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable_includeFooter)) __obj.updateDynamic("resizable_includeFooter")(resizable_includeFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable_targetLast)) __obj.updateDynamic("resizable_targetLast")(resizable_targetLast.get.asInstanceOf[js.Any])
     if (resizable_throttle != null) __obj.updateDynamic("resizable_throttle")(resizable_throttle.asInstanceOf[js.Any])
     if (resizable_widths != null) __obj.updateDynamic("resizable_widths")(resizable_widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizingOptions]

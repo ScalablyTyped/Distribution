@@ -51,14 +51,14 @@ object Component {
     text: String,
     `type`: String,
     abbr: String = null,
-    abbr_priority: Int | Double = null,
+    abbr_priority: js.UndefOr[Double] = js.undefined,
     directions: js.Array[String] = null,
     imageBaseURL: String = null
   ): Component = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
-    if (abbr_priority != null) __obj.updateDynamic("abbr_priority")(abbr_priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(abbr_priority)) __obj.updateDynamic("abbr_priority")(abbr_priority.get.asInstanceOf[js.Any])
     if (directions != null) __obj.updateDynamic("directions")(directions.asInstanceOf[js.Any])
     if (imageBaseURL != null) __obj.updateDynamic("imageBaseURL")(imageBaseURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Component]

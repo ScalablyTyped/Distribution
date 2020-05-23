@@ -28,22 +28,22 @@ object ISuggestionsStyles {
   @scala.inline
   def apply(
     subComponentStyles: ISuggestionsSubComponentStyles,
-    forceResolveButton: IStyle = null,
-    noSuggestions: IStyle = null,
-    root: IStyle = null,
-    searchForMoreButton: IStyle = null,
-    suggestionsAvailable: IStyle = null,
-    suggestionsContainer: IStyle = null,
-    title: IStyle = null
+    forceResolveButton: js.UndefOr[Null | IStyle] = js.undefined,
+    noSuggestions: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    searchForMoreButton: js.UndefOr[Null | IStyle] = js.undefined,
+    suggestionsAvailable: js.UndefOr[Null | IStyle] = js.undefined,
+    suggestionsContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    title: js.UndefOr[Null | IStyle] = js.undefined
   ): ISuggestionsStyles = {
     val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
-    if (forceResolveButton != null) __obj.updateDynamic("forceResolveButton")(forceResolveButton.asInstanceOf[js.Any])
-    if (noSuggestions != null) __obj.updateDynamic("noSuggestions")(noSuggestions.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (searchForMoreButton != null) __obj.updateDynamic("searchForMoreButton")(searchForMoreButton.asInstanceOf[js.Any])
-    if (suggestionsAvailable != null) __obj.updateDynamic("suggestionsAvailable")(suggestionsAvailable.asInstanceOf[js.Any])
-    if (suggestionsContainer != null) __obj.updateDynamic("suggestionsContainer")(suggestionsContainer.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceResolveButton)) __obj.updateDynamic("forceResolveButton")(forceResolveButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSuggestions)) __obj.updateDynamic("noSuggestions")(noSuggestions.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchForMoreButton)) __obj.updateDynamic("searchForMoreButton")(searchForMoreButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestionsAvailable)) __obj.updateDynamic("suggestionsAvailable")(suggestionsAvailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestionsContainer)) __obj.updateDynamic("suggestionsContainer")(suggestionsContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuggestionsStyles]
   }
 }

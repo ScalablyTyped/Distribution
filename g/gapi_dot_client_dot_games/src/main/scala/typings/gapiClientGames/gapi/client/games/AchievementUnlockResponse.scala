@@ -16,7 +16,7 @@ object AchievementUnlockResponse {
   def apply(kind: String = null, newlyUnlocked: js.UndefOr[Boolean] = js.undefined): AchievementUnlockResponse = {
     val __obj = js.Dynamic.literal()
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementUnlockResponse]
   }
 }

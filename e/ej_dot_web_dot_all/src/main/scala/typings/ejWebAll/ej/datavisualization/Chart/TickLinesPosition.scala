@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Chart
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +17,6 @@ object TickLinesPosition extends js.Object {
   //string
   @js.native
   sealed trait Outside extends TickLinesPosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TickLinesPosition with Double] = js.native
-  /* 0 */ @js.native
-  object Inside extends TopLevel[Inside with Double]
-  
-  /* 1 */ @js.native
-  object Outside extends TopLevel[Outside with Double]
   
 }
 

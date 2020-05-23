@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Constructable
-  extends Instantiable1[/* args (repeated) */ js.Any, js.Any]
+  extends Instantiable1[/* expectedClass */ js.Any, js.Any]
 

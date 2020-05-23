@@ -41,10 +41,10 @@ object IRendererFactory {
     createRenderer: IRendererOptions => IRenderer,
     mimeTypes: js.Array[String],
     safe: Boolean,
-    defaultRank: Int | Double = null
+    defaultRank: js.UndefOr[Double] = js.undefined
   ): IRendererFactory = {
     val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer), mimeTypes = mimeTypes.asInstanceOf[js.Any], safe = safe.asInstanceOf[js.Any])
-    if (defaultRank != null) __obj.updateDynamic("defaultRank")(defaultRank.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultRank)) __obj.updateDynamic("defaultRank")(defaultRank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRendererFactory]
   }
 }

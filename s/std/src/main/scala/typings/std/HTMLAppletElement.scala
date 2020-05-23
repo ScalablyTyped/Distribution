@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,8 +45,4 @@ trait HTMLAppletElement extends HTMLElement {
   /** @deprecated */
   var width: java.lang.String = js.native
 }
-
-@JSGlobal("HTMLAppletElement")
-@js.native
-object HTMLAppletElement extends Instantiable0[HTMLAppletElement]
 

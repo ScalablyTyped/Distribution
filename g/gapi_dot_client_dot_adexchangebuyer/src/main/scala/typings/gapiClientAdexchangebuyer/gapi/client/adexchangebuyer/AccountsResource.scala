@@ -1,31 +1,31 @@
 package typings.gapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAdexchangebuyer.AnonAlt
-import typings.gapiClientAdexchangebuyer.AnonConfirmUnsafeAccountChange
-import typings.gapiClientAdexchangebuyer.AnonFields
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientAdexchangebuyer.anon.Alt
+import typings.gapiClientAdexchangebuyer.anon.ConfirmUnsafeAccountChange
+import typings.gapiClientAdexchangebuyer.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AccountsResource extends js.Object {
   /** Gets one account by ID. */
-  def get(request: AnonAlt): Request_[Account]
+  def get(request: Alt): Request[Account]
   /** Retrieves the authenticated user's list of accounts. */
-  def list(request: AnonFields): Request_[AccountsList]
+  def list(request: Fields): Request[AccountsList]
   /** Updates an existing account. This method supports patch semantics. */
-  def patch(request: AnonConfirmUnsafeAccountChange): Request_[Account]
+  def patch(request: ConfirmUnsafeAccountChange): Request[Account]
   /** Updates an existing account. */
-  def update(request: AnonConfirmUnsafeAccountChange): Request_[Account]
+  def update(request: ConfirmUnsafeAccountChange): Request[Account]
 }
 
 object AccountsResource {
   @scala.inline
   def apply(
-    get: AnonAlt => Request_[Account],
-    list: AnonFields => Request_[AccountsList],
-    patch: AnonConfirmUnsafeAccountChange => Request_[Account],
-    update: AnonConfirmUnsafeAccountChange => Request_[Account]
+    get: Alt => Request[Account],
+    list: Fields => Request[AccountsList],
+    patch: ConfirmUnsafeAccountChange => Request[Account],
+    update: ConfirmUnsafeAccountChange => Request[Account]
   ): AccountsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[AccountsResource]

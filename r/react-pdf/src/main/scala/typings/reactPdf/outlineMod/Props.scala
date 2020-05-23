@@ -1,7 +1,7 @@
 package typings.reactPdf.outlineMod
 
 import typings.pdfjsDist.mod.PDFTreeNode
-import typings.reactPdf.AnonPageNumber
+import typings.reactPdf.anon.PageNumber
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait Props extends js.Object {
     * Function called when an outline item has been clicked.
     * Usually, you would like to use this callback to move the user wherever they requested to.
     */
-  var onItemClick: js.UndefOr[js.Function1[/* hasPageNumber */ AnonPageNumber, Unit]] = js.undefined
+  var onItemClick: js.UndefOr[js.Function1[/* hasPageNumber */ PageNumber, Unit]] = js.undefined
   /**
     * Function called in case of an error while retrieving the outline.
     */
@@ -32,7 +32,7 @@ object Props {
   @scala.inline
   def apply(
     className: String | js.Array[String] = null,
-    onItemClick: /* hasPageNumber */ AnonPageNumber => Unit = null,
+    onItemClick: /* hasPageNumber */ PageNumber => Unit = null,
     onLoadError: /* error */ Error => Unit = null,
     onLoadSuccess: /* outline */ js.Array[PDFTreeNode] => Unit = null
   ): Props = {

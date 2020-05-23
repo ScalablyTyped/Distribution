@@ -1,7 +1,7 @@
 package typings.meteor.mod.Accounts
 
-import typings.meteor.AnonError
-import typings.meteor.Meteor.User_
+import typings.meteor.Meteor.User
+import typings.meteor.anon.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ object checkPassword extends js.Object {
     * properties `digest` and `algorithm` (in which case we bcrypt
     * `password.digest`).
     */
-  def apply(user: User_, password: Password): AnonError = js.native
+  def apply(user: User, password: Password): Error = js.native
 }
 

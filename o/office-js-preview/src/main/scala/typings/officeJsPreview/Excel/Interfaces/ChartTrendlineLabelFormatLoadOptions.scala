@@ -18,14 +18,14 @@ trait ChartTrendlineLabelFormatLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the border format, which includes color, linestyle, and weight.
+    * Specifies the border format, which includes color, linestyle, and weight.
     *
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderLoadOptions] = js.undefined
   /**
     *
-    * Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+    * Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -40,7 +40,7 @@ object ChartTrendlineLabelFormatLoadOptions {
     font: ChartFontLoadOptions = null
   ): ChartTrendlineLabelFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTrendlineLabelFormatLoadOptions]

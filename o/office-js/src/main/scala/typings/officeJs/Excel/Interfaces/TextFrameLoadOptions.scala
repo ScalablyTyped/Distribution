@@ -18,7 +18,7 @@ trait TextFrameLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+    * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -32,7 +32,7 @@ trait TextFrameLoadOptions extends js.Object {
   var bottomMargin: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether the text frame contains text.
+    * Specifies if the text frame contains text.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -128,20 +128,20 @@ object TextFrameLoadOptions {
     verticalOverflow: js.UndefOr[Boolean] = js.undefined
   ): TextFrameLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSizeSetting)) __obj.updateDynamic("autoSizeSetting")(autoSizeSetting.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomMargin)) __obj.updateDynamic("bottomMargin")(bottomMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasText)) __obj.updateDynamic("hasText")(hasText.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalOverflow)) __obj.updateDynamic("horizontalOverflow")(horizontalOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftMargin)) __obj.updateDynamic("leftMargin")(leftMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(readingOrder)) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightMargin)) __obj.updateDynamic("rightMargin")(rightMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSizeSetting)) __obj.updateDynamic("autoSizeSetting")(autoSizeSetting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomMargin)) __obj.updateDynamic("bottomMargin")(bottomMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasText)) __obj.updateDynamic("hasText")(hasText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalOverflow)) __obj.updateDynamic("horizontalOverflow")(horizontalOverflow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftMargin)) __obj.updateDynamic("leftMargin")(leftMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readingOrder)) __obj.updateDynamic("readingOrder")(readingOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightMargin)) __obj.updateDynamic("rightMargin")(rightMargin.get.asInstanceOf[js.Any])
     if (textRange != null) __obj.updateDynamic("textRange")(textRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(topMargin)) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalOverflow)) __obj.updateDynamic("verticalOverflow")(verticalOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(topMargin)) __obj.updateDynamic("topMargin")(topMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalOverflow)) __obj.updateDynamic("verticalOverflow")(verticalOverflow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFrameLoadOptions]
   }
 }

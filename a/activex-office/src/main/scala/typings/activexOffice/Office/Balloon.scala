@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.Balloon")
 @js.native
-class Balloon protected () extends js.Object {
+trait Balloon extends js.Object {
   var Animation: MsoAnimationType = js.native
   val Application: js.Any = js.native
   var BalloonType: MsoBalloonType = js.native

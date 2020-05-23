@@ -20,10 +20,10 @@ trait FillStyle extends js.Object {
 
 object FillStyle {
   @scala.inline
-  def apply(alpha: Int | Double = null, color: Int | Double = null): FillStyle = {
+  def apply(alpha: js.UndefOr[Double] = js.undefined, color: js.UndefOr[Double] = js.undefined): FillStyle = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillStyle]
   }
 }

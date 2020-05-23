@@ -44,9 +44,9 @@ trait PlusPushMessageOptions extends js.Object {
   /**
     * 推送消息的提示音
     * 显示消息时的播放的提示音，可取值：
-    * 	“system”-表示使用系统通知提示音；
-    * 	“none”-表示不使用提示音；
-    * 	默认值为“system”。
+    *     “system”-表示使用系统通知提示音；
+    *     “none”-表示不使用提示音；
+    *     默认值为“system”。
     * - system: 使用系统通知提示音
     * - none: 不使用提示音
     * 
@@ -74,7 +74,7 @@ object PlusPushMessageOptions {
   def apply(
     appid: String = null,
     cover: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     icon: String = null,
     sound: system | none = null,
     title: String = null,
@@ -82,8 +82,8 @@ object PlusPushMessageOptions {
   ): PlusPushMessageOptions = {
     val __obj = js.Dynamic.literal()
     if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
-    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

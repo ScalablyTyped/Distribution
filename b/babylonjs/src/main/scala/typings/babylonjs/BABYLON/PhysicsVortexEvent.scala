@@ -7,16 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a physics vortex event
   */
-@JSGlobal("BABYLON.PhysicsVortexEvent")
 @js.native
-class PhysicsVortexEvent protected () extends js.Object {
-  /**
-    * Initializes the physics vortex event
-    * @param _scene The BabylonJS scene
-    * @param _origin The origin position of the vortex
-    * @param _options The options for the vortex event
-    */
-  def this(_scene: Scene, _origin: Vector3, _options: PhysicsVortexEventOptions) = this()
+trait PhysicsVortexEvent extends js.Object {
   var _cylinder: js.Any = js.native
   var _cylinderPosition: js.Any = js.native
   var _dataFetched: js.Any = js.native

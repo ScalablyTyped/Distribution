@@ -57,7 +57,7 @@ object CreateCommitInput {
     commitMessage: Message = null,
     deleteFiles: DeleteFileEntries = null,
     email: Email = null,
-    keepEmptyFolders: js.UndefOr[Boolean] = js.undefined,
+    keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined,
     parentCommitId: CommitId = null,
     putFiles: PutFileEntries = null,
     setFileModes: SetFileModeEntries = null
@@ -67,7 +67,7 @@ object CreateCommitInput {
     if (commitMessage != null) __obj.updateDynamic("commitMessage")(commitMessage.asInstanceOf[js.Any])
     if (deleteFiles != null) __obj.updateDynamic("deleteFiles")(deleteFiles.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepEmptyFolders)) __obj.updateDynamic("keepEmptyFolders")(keepEmptyFolders.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepEmptyFolders)) __obj.updateDynamic("keepEmptyFolders")(keepEmptyFolders.get.asInstanceOf[js.Any])
     if (parentCommitId != null) __obj.updateDynamic("parentCommitId")(parentCommitId.asInstanceOf[js.Any])
     if (putFiles != null) __obj.updateDynamic("putFiles")(putFiles.asInstanceOf[js.Any])
     if (setFileModes != null) __obj.updateDynamic("setFileModes")(setFileModes.asInstanceOf[js.Any])

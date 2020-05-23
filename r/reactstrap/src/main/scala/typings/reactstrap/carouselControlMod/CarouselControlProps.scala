@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait CarouselControlProps
   extends AllHTMLAttributes[HTMLElement]
      with ClassAttributes[HTMLElement]
-     with /* s */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var direction: prev | next
   var directionText: String
@@ -29,7 +29,7 @@ object CarouselControlProps {
     onClickHandler: () => Unit,
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     ClassAttributes: ClassAttributes[HTMLElement] = null,
-    StringDictionary: /* s */ StringDictionary[js.Any] = null,
+    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     cssModule: CSSModule = null
   ): CarouselControlProps = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], directionText = directionText.asInstanceOf[js.Any], onClickHandler = js.Any.fromFunction0(onClickHandler))

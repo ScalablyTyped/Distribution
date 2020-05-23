@@ -1,7 +1,7 @@
 package typings.antd.mod
 
-import typings.antd.AnonType
-import typings.antd.TypeofRadioGroup
+import typings.antd.anon.Type
+import typings.antd.anon.TypeofRadioGroup
 import typings.antd.radioButtonMod.RadioButtonProps
 import typings.antd.radioInterfaceMod.RadioGroupContextProps
 import typings.antd.radioMod.default
@@ -23,6 +23,6 @@ object Radio extends js.Object {
   var Button: ForwardRefExoticComponent[RadioButtonProps with RefAttributes[_]] = js.native
   var Group: TypeofRadioGroup = js.native
   var contextType: Context[RadioGroupContextProps | Null] = js.native
-  var defaultProps: AnonType = js.native
+  var defaultProps: Type = js.native
 }
 

@@ -40,8 +40,7 @@ trait IBindablePropertyConfig
 object IBindablePropertyConfig {
   @scala.inline
   def apply(
-    StringDictionary: // For compatibility and future extension
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     attribute: String = null,
     changeHandler: String = null,
     defaultBindingMode: bindingMode | oneTime | oneWay | twoWay | fromView | toView = null,
@@ -56,7 +55,7 @@ object IBindablePropertyConfig {
     if (defaultBindingMode != null) __obj.updateDynamic("defaultBindingMode")(defaultBindingMode.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryProperty)) __obj.updateDynamic("primaryProperty")(primaryProperty.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryProperty)) __obj.updateDynamic("primaryProperty")(primaryProperty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBindablePropertyConfig]
   }
 }

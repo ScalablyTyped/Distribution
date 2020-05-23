@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object LoggingOpcode extends js.Object {
   /** An event that represents the activity being suspended pending another activity's completion. */
   @js.native
   sealed trait suspend extends LoggingOpcode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LoggingOpcode with Double] = js.native
-  /* 0 */ @js.native
-  object info extends TopLevel[info with Double]
-  
-  /* 3 */ @js.native
-  object reply extends TopLevel[reply with Double]
-  
-  /* 4 */ @js.native
-  object resume extends TopLevel[resume with Double]
-  
-  /* 6 */ @js.native
-  object send extends TopLevel[send with Double]
-  
-  /* 1 */ @js.native
-  object start extends TopLevel[start with Double]
-  
-  /* 2 */ @js.native
-  object stop extends TopLevel[stop with Double]
-  
-  /* 5 */ @js.native
-  object suspend extends TopLevel[suspend with Double]
   
 }
 

@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,14 +22,6 @@ object OnClose extends js.Object {
   
   @js.native
   sealed trait RELOAD_ADD_ON extends OnClose
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OnClose with Double] = js.native
-  /* 0 */ @js.native
-  object NOTHING extends TopLevel[NOTHING with Double]
-  
-  /* 1 */ @js.native
-  object RELOAD_ADD_ON extends TopLevel[RELOAD_ADD_ON with Double]
   
 }
 

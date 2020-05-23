@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object getLocalImgData extends js.Object {
   /**
-  	 * 获取本地图片接口
-  	 */
+    * 获取本地图片接口
+    */
   def apply(params: IgetLocalImgData): Unit = js.native
 }
 

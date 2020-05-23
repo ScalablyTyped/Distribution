@@ -23,13 +23,13 @@ trait ListStreamsRequest extends js.Object {
 object ListStreamsRequest {
   @scala.inline
   def apply(
-    ascendingOrder: js.UndefOr[scala.Boolean] = js.undefined,
-    maxResults: Int | Double = null,
+    ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null
   ): ListStreamsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascendingOrder)) __obj.updateDynamic("ascendingOrder")(ascendingOrder.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(ascendingOrder)) __obj.updateDynamic("ascendingOrder")(ascendingOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStreamsRequest]
   }

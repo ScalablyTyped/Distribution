@@ -1,7 +1,7 @@
 package typings.inquirer.mod
 
-import typings.node.processMod._Global_.NodeJS.ReadStream
-import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.node.processMod.global.NodeJS.ReadStream
+import typings.node.processMod.global.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

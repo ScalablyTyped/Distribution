@@ -6,20 +6,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Box2D.Collision.b2OBB")
-@js.native
-class b2OBB () extends js.Object {
+trait b2OBB extends js.Object {
   /**
-  		* The rotation matrix.
-  		**/
-  var R: b2Mat22 = js.native
+    * The rotation matrix.
+    **/
+  var R: b2Mat22
   /**
-  		* The local centroid.
-  		**/
-  var center: b2Vec2 = js.native
+    * The local centroid.
+    **/
+  var center: b2Vec2
   /**
-  		* The half-widths.
-  		**/
-  var extents: b2Vec2 = js.native
+    * The half-widths.
+    **/
+  var extents: b2Vec2
+}
+
+object b2OBB {
+  @scala.inline
+  def apply(R: b2Mat22, center: b2Vec2, extents: b2Vec2): b2OBB = {
+    val __obj = js.Dynamic.literal(R = R.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], extents = extents.asInstanceOf[js.Any])
+    __obj.asInstanceOf[b2OBB]
+  }
 }
 

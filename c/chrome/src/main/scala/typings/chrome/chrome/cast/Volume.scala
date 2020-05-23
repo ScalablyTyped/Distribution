@@ -4,18 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.Volume")
-@js.native
-/**
-  * @param {?number=} opt_level
-  * @param {?boolean=} opt_muted
-  * @constructor
-  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Volume
-  */
-class Volume () extends js.Object {
-  def this(level: Double) = this()
-  def this(level: Double, muted: Boolean) = this()
-  var level: js.UndefOr[Double] = js.native
-  var muted: js.UndefOr[Boolean] = js.native
+trait Volume extends js.Object {
+  var level: js.UndefOr[Double] = js.undefined
+  var muted: js.UndefOr[Boolean] = js.undefined
+}
+
+object Volume {
+  @scala.inline
+  def apply(level: js.UndefOr[Double] = js.undefined, muted: js.UndefOr[Boolean] = js.undefined): Volume = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Volume]
+  }
 }
 

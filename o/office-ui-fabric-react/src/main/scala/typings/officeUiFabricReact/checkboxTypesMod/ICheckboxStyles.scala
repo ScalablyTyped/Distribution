@@ -36,20 +36,20 @@ trait ICheckboxStyles extends js.Object {
 object ICheckboxStyles {
   @scala.inline
   def apply(
-    checkbox: IStyle = null,
-    checkmark: IStyle = null,
-    input: IStyle = null,
-    label: IStyle = null,
-    root: IStyle = null,
-    text: IStyle = null
+    checkbox: js.UndefOr[Null | IStyle] = js.undefined,
+    checkmark: js.UndefOr[Null | IStyle] = js.undefined,
+    input: js.UndefOr[Null | IStyle] = js.undefined,
+    label: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    text: js.UndefOr[Null | IStyle] = js.undefined
   ): ICheckboxStyles = {
     val __obj = js.Dynamic.literal()
-    if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox.asInstanceOf[js.Any])
-    if (checkmark != null) __obj.updateDynamic("checkmark")(checkmark.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkbox)) __obj.updateDynamic("checkbox")(checkbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkmark)) __obj.updateDynamic("checkmark")(checkmark.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckboxStyles]
   }
 }

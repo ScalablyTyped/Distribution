@@ -1,6 +1,6 @@
 package typings.tablesorter
 
-import typings.tablesorter.mod._Global_.JQuery
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.tablesorterConfigurationStoreMod.TablesorterConfigurationStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`

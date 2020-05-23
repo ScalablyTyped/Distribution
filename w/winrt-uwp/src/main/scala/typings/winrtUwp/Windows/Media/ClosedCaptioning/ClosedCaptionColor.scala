@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.ClosedCaptioning
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,35 +46,6 @@ object ClosedCaptionColor extends js.Object {
   /** Yellow */
   @js.native
   sealed trait yellow extends ClosedCaptionColor
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClosedCaptionColor with Double] = js.native
-  /* 2 */ @js.native
-  object black extends TopLevel[black with Double]
-  
-  /* 5 */ @js.native
-  object blue extends TopLevel[blue with Double]
-  
-  /* 8 */ @js.native
-  object cyan extends TopLevel[cyan with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 4 */ @js.native
-  object green extends TopLevel[green with Double]
-  
-  /* 7 */ @js.native
-  object magenta extends TopLevel[magenta with Double]
-  
-  /* 3 */ @js.native
-  object red extends TopLevel[red with Double]
-  
-  /* 1 */ @js.native
-  object white extends TopLevel[white with Double]
-  
-  /* 6 */ @js.native
-  object yellow extends TopLevel[yellow with Double]
   
 }
 

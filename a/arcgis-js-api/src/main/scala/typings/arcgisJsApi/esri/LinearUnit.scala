@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.feet_
 import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
@@ -30,8 +29,4 @@ trait LinearUnit
     */
   var units: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = js.native
 }
-
-@JSGlobal("__esri.LinearUnit")
-@js.native
-object LinearUnit extends TopLevel[LinearUnitConstructor]
 

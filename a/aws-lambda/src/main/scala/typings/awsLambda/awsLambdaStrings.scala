@@ -261,6 +261,9 @@ object awsLambdaStrings {
   sealed trait SUPPRESS extends js.Object
   
   @js.native
+  sealed trait `Scheduled Event` extends js.Object
+  
+  @js.native
   sealed trait Source extends CodePipelineActionCategory
   
   @js.native
@@ -512,6 +515,8 @@ object awsLambdaStrings {
   def SUPERSEDED: SUPERSEDED = "SUPERSEDED".asInstanceOf[SUPERSEDED]
   @scala.inline
   def SUPPRESS: SUPPRESS = "SUPPRESS".asInstanceOf[SUPPRESS]
+  @scala.inline
+  def `Scheduled Event`: `Scheduled Event` = ("Scheduled Event").asInstanceOf[`Scheduled Event`]
   @scala.inline
   def Source: Source = "Source".asInstanceOf[Source]
   @scala.inline

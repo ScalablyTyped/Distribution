@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
   */
 trait LaunchOptionsType extends js.Object {
   /**
-  	 * The application or service that triggered the handled URL.
-  	 */
+    * The application or service that triggered the handled URL.
+    */
   var source: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * The url that was triggered by the application or service.
-  	 */
+    * The url that was triggered by the application or service.
+    */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 

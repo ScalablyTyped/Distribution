@@ -20,10 +20,10 @@ object AdminServicesProvider {
     getDatabaseInfo: String => Thenable[DatabaseInfo],
     getDefaultDatabaseInfo: String => Thenable[DatabaseInfo],
     providerId: String,
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): AdminServicesProvider = {
     val __obj = js.Dynamic.literal(createDatabase = js.Any.fromFunction2(createDatabase), createLogin = js.Any.fromFunction2(createLogin), getDatabaseInfo = js.Any.fromFunction1(getDatabaseInfo), getDefaultDatabaseInfo = js.Any.fromFunction1(getDefaultDatabaseInfo), providerId = providerId.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminServicesProvider]
   }
 }

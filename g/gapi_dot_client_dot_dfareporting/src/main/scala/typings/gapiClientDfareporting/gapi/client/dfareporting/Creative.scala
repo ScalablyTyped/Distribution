@@ -297,7 +297,7 @@ object Creative {
     renderingId: String = null,
     renderingIdDimensionValue: DimensionValue = null,
     requiredFlashPluginVersion: String = null,
-    requiredFlashVersion: Int | Double = null,
+    requiredFlashVersion: js.UndefOr[Double] = js.undefined,
     size: Size = null,
     skipOffset: VideoOffset = null,
     skippable: js.UndefOr[Boolean] = js.undefined,
@@ -314,22 +314,22 @@ object Creative {
     totalFileSize: String = null,
     `type`: String = null,
     universalAdId: UniversalAdId = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     videoDescription: String = null,
-    videoDuration: Int | Double = null
+    videoDuration: js.UndefOr[Double] = js.undefined
   ): Creative = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (adParameters != null) __obj.updateDynamic("adParameters")(adParameters.asInstanceOf[js.Any])
     if (adTagKeys != null) __obj.updateDynamic("adTagKeys")(adTagKeys.asInstanceOf[js.Any])
     if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowScriptAccess)) __obj.updateDynamic("allowScriptAccess")(allowScriptAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowScriptAccess)) __obj.updateDynamic("allowScriptAccess")(allowScriptAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
     if (artworkType != null) __obj.updateDynamic("artworkType")(artworkType.asInstanceOf[js.Any])
     if (authoringSource != null) __obj.updateDynamic("authoringSource")(authoringSource.asInstanceOf[js.Any])
     if (authoringTool != null) __obj.updateDynamic("authoringTool")(authoringTool.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAdvanceImages)) __obj.updateDynamic("autoAdvanceImages")(autoAdvanceImages.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAdvanceImages)) __obj.updateDynamic("autoAdvanceImages")(autoAdvanceImages.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (backupImageClickThroughUrl != null) __obj.updateDynamic("backupImageClickThroughUrl")(backupImageClickThroughUrl.asInstanceOf[js.Any])
     if (backupImageFeatures != null) __obj.updateDynamic("backupImageFeatures")(backupImageFeatures.asInstanceOf[js.Any])
@@ -339,17 +339,17 @@ object Creative {
     if (commercialId != null) __obj.updateDynamic("commercialId")(commercialId.asInstanceOf[js.Any])
     if (companionCreatives != null) __obj.updateDynamic("companionCreatives")(companionCreatives.asInstanceOf[js.Any])
     if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(convertFlashToHtml5)) __obj.updateDynamic("convertFlashToHtml5")(convertFlashToHtml5.asInstanceOf[js.Any])
+    if (!js.isUndefined(convertFlashToHtml5)) __obj.updateDynamic("convertFlashToHtml5")(convertFlashToHtml5.get.asInstanceOf[js.Any])
     if (counterCustomEvents != null) __obj.updateDynamic("counterCustomEvents")(counterCustomEvents.asInstanceOf[js.Any])
     if (creativeAssetSelection != null) __obj.updateDynamic("creativeAssetSelection")(creativeAssetSelection.asInstanceOf[js.Any])
     if (creativeAssets != null) __obj.updateDynamic("creativeAssets")(creativeAssets.asInstanceOf[js.Any])
     if (creativeFieldAssignments != null) __obj.updateDynamic("creativeFieldAssignments")(creativeFieldAssignments.asInstanceOf[js.Any])
     if (customKeyValues != null) __obj.updateDynamic("customKeyValues")(customKeyValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicAssetSelection)) __obj.updateDynamic("dynamicAssetSelection")(dynamicAssetSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicAssetSelection)) __obj.updateDynamic("dynamicAssetSelection")(dynamicAssetSelection.get.asInstanceOf[js.Any])
     if (exitCustomEvents != null) __obj.updateDynamic("exitCustomEvents")(exitCustomEvents.asInstanceOf[js.Any])
     if (fsCommand != null) __obj.updateDynamic("fsCommand")(fsCommand.asInstanceOf[js.Any])
     if (htmlCode != null) __obj.updateDynamic("htmlCode")(htmlCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(htmlCodeLocked)) __obj.updateDynamic("htmlCodeLocked")(htmlCodeLocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(htmlCodeLocked)) __obj.updateDynamic("htmlCodeLocked")(htmlCodeLocked.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
@@ -362,12 +362,12 @@ object Creative {
     if (renderingId != null) __obj.updateDynamic("renderingId")(renderingId.asInstanceOf[js.Any])
     if (renderingIdDimensionValue != null) __obj.updateDynamic("renderingIdDimensionValue")(renderingIdDimensionValue.asInstanceOf[js.Any])
     if (requiredFlashPluginVersion != null) __obj.updateDynamic("requiredFlashPluginVersion")(requiredFlashPluginVersion.asInstanceOf[js.Any])
-    if (requiredFlashVersion != null) __obj.updateDynamic("requiredFlashVersion")(requiredFlashVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiredFlashVersion)) __obj.updateDynamic("requiredFlashVersion")(requiredFlashVersion.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (skipOffset != null) __obj.updateDynamic("skipOffset")(skipOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(skippable)) __obj.updateDynamic("skippable")(skippable.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslOverride)) __obj.updateDynamic("sslOverride")(sslOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(skippable)) __obj.updateDynamic("skippable")(skippable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslOverride)) __obj.updateDynamic("sslOverride")(sslOverride.get.asInstanceOf[js.Any])
     if (studioAdvertiserId != null) __obj.updateDynamic("studioAdvertiserId")(studioAdvertiserId.asInstanceOf[js.Any])
     if (studioCreativeId != null) __obj.updateDynamic("studioCreativeId")(studioCreativeId.asInstanceOf[js.Any])
     if (studioTraffickedCreativeId != null) __obj.updateDynamic("studioTraffickedCreativeId")(studioTraffickedCreativeId.asInstanceOf[js.Any])
@@ -379,9 +379,9 @@ object Creative {
     if (totalFileSize != null) __obj.updateDynamic("totalFileSize")(totalFileSize.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (universalAdId != null) __obj.updateDynamic("universalAdId")(universalAdId.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     if (videoDescription != null) __obj.updateDynamic("videoDescription")(videoDescription.asInstanceOf[js.Any])
-    if (videoDuration != null) __obj.updateDynamic("videoDuration")(videoDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoDuration)) __obj.updateDynamic("videoDuration")(videoDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Creative]
   }
 }

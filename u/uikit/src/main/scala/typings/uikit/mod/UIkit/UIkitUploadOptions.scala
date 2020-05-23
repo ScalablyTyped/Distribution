@@ -40,7 +40,7 @@ object UIkitUploadOptions {
     `cls-dragover`: String = null,
     complete: js.Object = null,
     `complete-all`: js.Object = null,
-    concurrent: Int | Double = null,
+    concurrent: js.UndefOr[Double] = js.undefined,
     error: js.Object = null,
     fail: js.Object = null,
     load: js.Object = null,
@@ -65,7 +65,7 @@ object UIkitUploadOptions {
     if (`cls-dragover` != null) __obj.updateDynamic("cls-dragover")(`cls-dragover`.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
     if (`complete-all` != null) __obj.updateDynamic("complete-all")(`complete-all`.asInstanceOf[js.Any])
-    if (concurrent != null) __obj.updateDynamic("concurrent")(concurrent.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrent)) __obj.updateDynamic("concurrent")(concurrent.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(fail.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
@@ -75,7 +75,7 @@ object UIkitUploadOptions {
     if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
     if (`msg-invalid-mime` != null) __obj.updateDynamic("msg-invalid-mime")(`msg-invalid-mime`.asInstanceOf[js.Any])
     if (`msg-invalid-name` != null) __obj.updateDynamic("msg-invalid-name")(`msg-invalid-name`.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])

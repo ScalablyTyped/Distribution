@@ -36,25 +36,25 @@ object ClientConfigurationType {
   @scala.inline
   def apply(
     captureStackTrace: js.UndefOr[Boolean] = js.undefined,
-    connectionRetryLimit: Int | Double = null,
+    connectionRetryLimit: js.UndefOr[Double] = js.undefined,
     connectionTimeout: Double | DISABLE_TIMEOUT = null,
     idleInTransactionSessionTimeout: Double | DISABLE_TIMEOUT = null,
-    idleTimeout: Int | Double = null,
+    idleTimeout: js.UndefOr[Double] = js.undefined,
     interceptors: js.Array[InterceptorType] = null,
-    maximumPoolSize: Int | Double = null,
+    maximumPoolSize: js.UndefOr[Double] = js.undefined,
     preferNativeBindings: js.UndefOr[Boolean] = js.undefined,
     statementTimeout: Double | DISABLE_TIMEOUT = null,
     typeParsers: js.Array[TypeParserType[_]] = null
   ): ClientConfigurationType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureStackTrace)) __obj.updateDynamic("captureStackTrace")(captureStackTrace.asInstanceOf[js.Any])
-    if (connectionRetryLimit != null) __obj.updateDynamic("connectionRetryLimit")(connectionRetryLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureStackTrace)) __obj.updateDynamic("captureStackTrace")(captureStackTrace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionRetryLimit)) __obj.updateDynamic("connectionRetryLimit")(connectionRetryLimit.get.asInstanceOf[js.Any])
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (idleInTransactionSessionTimeout != null) __obj.updateDynamic("idleInTransactionSessionTimeout")(idleInTransactionSessionTimeout.asInstanceOf[js.Any])
-    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(idleTimeout)) __obj.updateDynamic("idleTimeout")(idleTimeout.get.asInstanceOf[js.Any])
     if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors.asInstanceOf[js.Any])
-    if (maximumPoolSize != null) __obj.updateDynamic("maximumPoolSize")(maximumPoolSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferNativeBindings)) __obj.updateDynamic("preferNativeBindings")(preferNativeBindings.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumPoolSize)) __obj.updateDynamic("maximumPoolSize")(maximumPoolSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferNativeBindings)) __obj.updateDynamic("preferNativeBindings")(preferNativeBindings.get.asInstanceOf[js.Any])
     if (statementTimeout != null) __obj.updateDynamic("statementTimeout")(statementTimeout.asInstanceOf[js.Any])
     if (typeParsers != null) __obj.updateDynamic("typeParsers")(typeParsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfigurationType]

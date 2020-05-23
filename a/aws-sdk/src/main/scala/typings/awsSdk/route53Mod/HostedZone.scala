@@ -40,12 +40,12 @@ object HostedZone {
     Name: DNSName,
     Config: HostedZoneConfig = null,
     LinkedService: LinkedService = null,
-    ResourceRecordSetCount: Int | Double = null
+    ResourceRecordSetCount: js.UndefOr[HostedZoneRRSetCount] = js.undefined
   ): HostedZone = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (Config != null) __obj.updateDynamic("Config")(Config.asInstanceOf[js.Any])
     if (LinkedService != null) __obj.updateDynamic("LinkedService")(LinkedService.asInstanceOf[js.Any])
-    if (ResourceRecordSetCount != null) __obj.updateDynamic("ResourceRecordSetCount")(ResourceRecordSetCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ResourceRecordSetCount)) __obj.updateDynamic("ResourceRecordSetCount")(ResourceRecordSetCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedZone]
   }
 }

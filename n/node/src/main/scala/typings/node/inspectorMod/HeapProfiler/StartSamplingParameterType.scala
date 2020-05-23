@@ -13,9 +13,9 @@ trait StartSamplingParameterType extends js.Object {
 
 object StartSamplingParameterType {
   @scala.inline
-  def apply(samplingInterval: Int | Double = null): StartSamplingParameterType = {
+  def apply(samplingInterval: js.UndefOr[Double] = js.undefined): StartSamplingParameterType = {
     val __obj = js.Dynamic.literal()
-    if (samplingInterval != null) __obj.updateDynamic("samplingInterval")(samplingInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(samplingInterval)) __obj.updateDynamic("samplingInterval")(samplingInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSamplingParameterType]
   }
 }

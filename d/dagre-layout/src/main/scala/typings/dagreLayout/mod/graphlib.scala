@@ -1,8 +1,8 @@
 package typings.dagreLayout.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dagreLayout.AnonCompound
-import typings.dagreLayout.AnonName
+import typings.dagreLayout.anon.Compound
+import typings.dagreLayout.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object graphlib extends js.Object {
   @js.native
   class Graph () extends js.Object {
-    def this(opt: AnonCompound) = this()
+    def this(opt: Compound) = this()
     def edge(id: js.Any): js.Any = js.native
     def edges(): js.Array[Edge] = js.native
     def graph(): GraphLabel = js.native
@@ -23,8 +23,8 @@ object graphlib extends js.Object {
     def setDefaultEdgeLabel(callback: js.Function0[String | js.Object]): Graph = js.native
     def setDefaultNodeLabel(callback: String): Graph = js.native
     def setDefaultNodeLabel(callback: js.Function0[String | js.Object]): Graph = js.native
-    def setEdge(params: AnonName): Graph = js.native
-    def setEdge(params: AnonName, value: String): Graph = js.native
+    def setEdge(params: Name): Graph = js.native
+    def setEdge(params: Name, value: String): Graph = js.native
     def setEdge(sourceId: String, targetId: String): Graph = js.native
     def setEdge(sourceId: String, targetId: String, options: StringDictionary[js.Any]): Graph = js.native
     def setEdge(sourceId: String, targetId: String, options: StringDictionary[js.Any], value: String): Graph = js.native

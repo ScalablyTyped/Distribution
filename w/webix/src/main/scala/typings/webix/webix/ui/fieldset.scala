@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.fieldset")
 @js.native
-class fieldset () extends baseview {
+trait fieldset extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

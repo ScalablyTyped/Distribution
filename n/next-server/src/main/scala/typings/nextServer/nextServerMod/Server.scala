@@ -1,7 +1,7 @@
 package typings.nextServer.nextServerMod
 
-import typings.nextServer.AnonAmpBindInitData
-import typings.nextServer.AnonAmphtml
+import typings.nextServer.anon.AmpBindInitData
+import typings.nextServer.anon.Amphtml
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.querystringMod.ParsedUrlQuery
@@ -41,7 +41,7 @@ trait Server extends js.Object {
   var publicDir: String = js.native
   var quiet: Boolean = js.native
   var readBuildId: js.Any = js.native
-  var renderOpts: AnonAmpBindInitData = js.native
+  var renderOpts: AmpBindInitData = js.native
   var renderToHTMLWithComponents: js.Any = js.native
   /**
     * Resolves path to resolver function
@@ -85,7 +85,7 @@ trait Server extends js.Object {
     res: ServerResponse,
     pathname: String,
     query: ParsedUrlQuery,
-    hasAmphtmlDataOnlyHasAmp: AnonAmphtml
+    hasAmphtmlDataOnlyHasAmp: Amphtml
   ): js.Promise[String | Null] = js.native
   def serveStatic(req: IncomingMessage, res: ServerResponse, path: String): js.Promise[Unit] = js.native
   def serveStatic(req: IncomingMessage, res: ServerResponse, path: String, parsedUrl: UrlWithParsedQuery): js.Promise[Unit] = js.native

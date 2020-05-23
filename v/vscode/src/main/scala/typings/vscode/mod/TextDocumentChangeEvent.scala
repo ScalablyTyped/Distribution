@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait TextDocumentChangeEvent extends js.Object {
   /**
-  		 * An array of content changes.
-  		 */
+    * An array of content changes.
+    */
   val contentChanges: js.Array[TextDocumentContentChangeEvent]
   /**
-  		 * The affected document.
-  		 */
+    * The affected document.
+    */
   val document: TextDocument
 }
 

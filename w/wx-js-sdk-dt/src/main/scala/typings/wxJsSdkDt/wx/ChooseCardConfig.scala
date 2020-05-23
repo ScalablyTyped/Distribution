@@ -1,6 +1,6 @@
 package typings.wxJsSdkDt.wx
 
-import typings.wxJsSdkDt.AnonCardList
+import typings.wxJsSdkDt.anon.CardList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait ChooseCardConfig extends WxBaseRequestConfig {
     * var cardList= res.cardList; 用户选中的卡券列表信息
     */
   @JSName("success")
-  var success_ChooseCardConfig: js.UndefOr[js.Function1[/* res */ AnonCardList, Unit]] = js.undefined
+  var success_ChooseCardConfig: js.UndefOr[js.Function1[/* res */ CardList, Unit]] = js.undefined
   /**
     * 卡券签名时间戳
     */
@@ -54,7 +54,7 @@ object ChooseCardConfig {
     complete: /* res */ js.UndefOr[js.Any] => Unit = null,
     fail: /* error */ js.UndefOr[js.Any] => Unit = null,
     shopId: String = null,
-    success: /* res */ AnonCardList => Unit = null
+    success: /* res */ CardList => Unit = null
   ): ChooseCardConfig = {
     val __obj = js.Dynamic.literal(cardSign = cardSign.asInstanceOf[js.Any], nonceStr = nonceStr.asInstanceOf[js.Any], signType = signType.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))

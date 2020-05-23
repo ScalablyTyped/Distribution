@@ -10,25 +10,29 @@ import scala.scalajs.js.annotation._
   */
 trait MenuPopupShowParams extends js.Object {
   /**
-  	 * Determines whether the menu popup should be opened or closed animated.
-  	 */
+    * Determines whether the menu popup should be opened or closed animated.
+    */
   var animated: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * Indicates the arrow direction of the menu popup.
-  	 */
+    * Indicates the arrow direction of the menu popup.
+    */
   var arrowDirection: js.UndefOr[Double] = js.undefined
   /**
-  	 * The view where the menu pop is shown at.
-  	 */
+    * The view where the menu pop is shown at.
+    */
   var view: View
 }
 
 object MenuPopupShowParams {
   @scala.inline
-  def apply(view: View, animated: js.UndefOr[Boolean] = js.undefined, arrowDirection: Int | Double = null): MenuPopupShowParams = {
+  def apply(
+    view: View,
+    animated: js.UndefOr[Boolean] = js.undefined,
+    arrowDirection: js.UndefOr[Double] = js.undefined
+  ): MenuPopupShowParams = {
     val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (arrowDirection != null) __obj.updateDynamic("arrowDirection")(arrowDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowDirection)) __obj.updateDynamic("arrowDirection")(arrowDirection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuPopupShowParams]
   }
 }

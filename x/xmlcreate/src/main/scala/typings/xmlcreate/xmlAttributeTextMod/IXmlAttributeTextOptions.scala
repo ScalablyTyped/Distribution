@@ -20,7 +20,7 @@ object IXmlAttributeTextOptions {
   @scala.inline
   def apply(charData: String, replaceInvalidCharsInCharData: js.UndefOr[Boolean] = js.undefined): IXmlAttributeTextOptions = {
     val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceInvalidCharsInCharData)) __obj.updateDynamic("replaceInvalidCharsInCharData")(replaceInvalidCharsInCharData.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceInvalidCharsInCharData)) __obj.updateDynamic("replaceInvalidCharsInCharData")(replaceInvalidCharsInCharData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXmlAttributeTextOptions]
   }
 }

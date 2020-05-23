@@ -2,9 +2,9 @@ package typings.reactIntl.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
-import typings.reactIntl.PartialPickProps2children
-import typings.reactIntl.PickProps2childrenotherze
-import typings.reactIntl.WeakValidationMapPickProp
+import typings.reactIntl.anon.PartialPickProps2children
+import typings.reactIntl.anon.PickProps2childrenotherze
+import typings.reactIntl.anon.WeakValidationMapPickProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

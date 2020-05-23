@@ -5,7 +5,7 @@ import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorState.mod.EditorState
 import typings.prosemirrorState.mod.Transaction
 import typings.prosemirrorView.mod.EditorView
-import typings.std.Event_
+import typings.std.Event
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -73,33 +73,33 @@ trait MenuItemSpec[S /* <: Schema[_, _] */] extends js.Object {
   /**
     * The function to execute when the menu item is activated.
     */
-  def run(p1: EditorState[S], p2: js.Function1[/* p */ Transaction[S], Unit], p3: EditorView[S], p4: Event_): Unit
+  def run(p1: EditorState[S], p2: js.Function1[/* p */ Transaction[S], Unit], p3: EditorView[S], p4: Event): Unit
 }
 
 object MenuItemSpec {
   @scala.inline
-  def apply[S /* <: Schema[_, _] */](
+  def apply[S](
     `class`: String,
     css: String,
     execEvent: String,
-    run: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event_) => Unit,
-    active: /* p */ EditorState[S] => Boolean = null,
-    enable: /* p */ EditorState[S] => Boolean = null,
-    icon: StringDictionary[js.Any] = null,
-    label: String = null,
-    render: /* p */ EditorView[S] => Node = null,
-    select: /* p */ EditorState[S] => Boolean = null,
-    title: String | (js.Function1[/* p */ EditorState[S], String]) = null
+    run: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit,
+    active: js.UndefOr[Null | (/* p */ EditorState[S] => Boolean)] = js.undefined,
+    enable: js.UndefOr[Null | (/* p */ EditorState[S] => Boolean)] = js.undefined,
+    icon: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined,
+    label: js.UndefOr[Null | String] = js.undefined,
+    render: js.UndefOr[Null | (/* p */ EditorView[S] => Node)] = js.undefined,
+    select: js.UndefOr[Null | (/* p */ EditorState[S] => Boolean)] = js.undefined,
+    title: js.UndefOr[Null | String | (js.Function1[/* p */ EditorState[S], String])] = js.undefined
   ): MenuItemSpec[S] = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], execEvent = execEvent.asInstanceOf[js.Any], run = js.Any.fromFunction4(run))
     __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (active != null) __obj.updateDynamic("active")(js.Any.fromFunction1(active))
-    if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction1(enable))
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(if (active != null) js.Any.fromFunction1(active.asInstanceOf[/* p */ EditorState[S] => Boolean]) else null)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(if (enable != null) js.Any.fromFunction1(enable.asInstanceOf[/* p */ EditorState[S] => Boolean]) else null)
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(render)) __obj.updateDynamic("render")(if (render != null) js.Any.fromFunction1(render.asInstanceOf[/* p */ EditorView[S] => Node]) else null)
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(if (select != null) js.Any.fromFunction1(select.asInstanceOf[/* p */ EditorState[S] => Boolean]) else null)
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemSpec[S]]
   }
 }

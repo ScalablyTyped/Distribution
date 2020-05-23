@@ -1,7 +1,7 @@
 package typings.reactJsonschemaForm.schemaFieldMod
 
 import typings.jsonSchema.mod.JSONSchema6
-import typings.reactJsonschemaForm.AnonDefinitions
+import typings.reactJsonschemaForm.anon.Definitions
 import typings.reactJsonschemaForm.mod.ErrorSchema
 import typings.reactJsonschemaForm.mod.IdSchema
 import typings.reactJsonschemaForm.mod.UiSchema
@@ -15,7 +15,7 @@ trait SchemaFieldProps[T] extends js.Object {
   var formContext: js.Any
   var formData: T
   var idSchema: IdSchema[_]
-  var registry: AnonDefinitions
+  var registry: Definitions
   var schema: JSONSchema6
   var uiSchema: UiSchema
 }
@@ -27,7 +27,7 @@ object SchemaFieldProps {
     formContext: js.Any,
     formData: T,
     idSchema: IdSchema[_],
-    registry: AnonDefinitions,
+    registry: Definitions,
     schema: JSONSchema6,
     uiSchema: UiSchema
   ): SchemaFieldProps[T] = {

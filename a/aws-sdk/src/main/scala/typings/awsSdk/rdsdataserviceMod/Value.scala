@@ -52,25 +52,25 @@ object Value {
   @scala.inline
   def apply(
     arrayValues: ArrayValueList = null,
-    bigIntValue: Int | Double = null,
-    bitValue: js.UndefOr[scala.Boolean] = js.undefined,
+    bigIntValue: js.UndefOr[BoxedLong] = js.undefined,
+    bitValue: js.UndefOr[BoxedBoolean] = js.undefined,
     blobValue: _Blob = null,
-    doubleValue: Int | Double = null,
-    intValue: Int | Double = null,
-    isNull: js.UndefOr[scala.Boolean] = js.undefined,
-    realValue: Int | Double = null,
+    doubleValue: js.UndefOr[BoxedDouble] = js.undefined,
+    intValue: js.UndefOr[BoxedInteger] = js.undefined,
+    isNull: js.UndefOr[BoxedBoolean] = js.undefined,
+    realValue: js.UndefOr[BoxedFloat] = js.undefined,
     stringValue: String = null,
     structValue: StructValue = null
   ): Value = {
     val __obj = js.Dynamic.literal()
     if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues.asInstanceOf[js.Any])
-    if (bigIntValue != null) __obj.updateDynamic("bigIntValue")(bigIntValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(bitValue)) __obj.updateDynamic("bitValue")(bitValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(bigIntValue)) __obj.updateDynamic("bigIntValue")(bigIntValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitValue)) __obj.updateDynamic("bitValue")(bitValue.get.asInstanceOf[js.Any])
     if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue.asInstanceOf[js.Any])
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNull)) __obj.updateDynamic("isNull")(isNull.asInstanceOf[js.Any])
-    if (realValue != null) __obj.updateDynamic("realValue")(realValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intValue)) __obj.updateDynamic("intValue")(intValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNull)) __obj.updateDynamic("isNull")(isNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(realValue)) __obj.updateDynamic("realValue")(realValue.get.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     if (structValue != null) __obj.updateDynamic("structValue")(structValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]

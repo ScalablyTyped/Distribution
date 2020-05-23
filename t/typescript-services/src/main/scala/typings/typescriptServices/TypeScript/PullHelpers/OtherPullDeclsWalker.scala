@@ -5,14 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullHelpers.OtherPullDeclsWalker")
-@js.native
-class OtherPullDeclsWalker () extends js.Object {
-  var currentlyWalkingOtherDecls: js.Any = js.native
+trait OtherPullDeclsWalker extends js.Object {
+  var currentlyWalkingOtherDecls: js.Any
   def walkOtherPullDecls(
     currentDecl: PullDecl,
     otherDecls: js.Array[PullDecl],
     callBack: js.Function1[/* otherDecl */ PullDecl, Unit]
-  ): Unit = js.native
+  ): Unit
+}
+
+object OtherPullDeclsWalker {
+  @scala.inline
+  def apply(
+    currentlyWalkingOtherDecls: js.Any,
+    walkOtherPullDecls: (PullDecl, js.Array[PullDecl], js.Function1[/* otherDecl */ PullDecl, Unit]) => Unit
+  ): OtherPullDeclsWalker = {
+    val __obj = js.Dynamic.literal(currentlyWalkingOtherDecls = currentlyWalkingOtherDecls.asInstanceOf[js.Any], walkOtherPullDecls = js.Any.fromFunction3(walkOtherPullDecls))
+    __obj.asInstanceOf[OtherPullDeclsWalker]
+  }
 }
 

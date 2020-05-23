@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "rsocket-websocket-server"
-version := "0.0-dt-20200327Z-9ab7ef"
-scalaVersion := "2.13.1"
+version := "0.0-dt-20200515Z-bff30a"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "rsocket-core" % "0.0-dt-20200218Z-e06e2e",
-  "org.scalablytyped" %%% "rsocket-flowable" % "0.0-dt-20200404Z-27f88b",
-  "org.scalablytyped" %%% "rsocket-types" % "0.0-dt-20200225Z-02c601",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470",
-  "org.scalablytyped" %%% "ws" % "7.2-dt-20200413Z-deeaca")
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "rsocket-core" % "0.0-dt-20200218Z-1b68e2",
+  "org.scalablytyped" %%% "rsocket-flowable" % "0.0-dt-20200515Z-a04188",
+  "org.scalablytyped" %%% "rsocket-types" % "0.0-dt-20200515Z-84916f",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
+  "org.scalablytyped" %%% "ws" % "7.2-dt-20200413Z-19ac01")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

@@ -23,17 +23,17 @@ object CircleRippleProps {
     children: ReactNode = null,
     color: String = null,
     key: Key = null,
-    opacity: Int | Double = null,
-    ref: LegacyRef[CircleRipple] = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    ref: js.UndefOr[Null | LegacyRef[CircleRipple]] = js.undefined,
     style: CSSProperties = null
   ): CircleRippleProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aborted)) __obj.updateDynamic("aborted")(aborted.asInstanceOf[js.Any])
+    if (!js.isUndefined(aborted)) __obj.updateDynamic("aborted")(aborted.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleRippleProps]
   }

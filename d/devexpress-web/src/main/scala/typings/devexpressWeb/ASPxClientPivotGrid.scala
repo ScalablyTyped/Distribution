@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the ASPxPivotGrid control.
   */
-@JSGlobal("ASPxClientPivotGrid")
 @js.native
-class ASPxClientPivotGrid () extends ASPxClientControl {
+trait ASPxClientPivotGrid extends ASPxClientControl {
   /** @deprecated Use the EndCallback event instead */
   /**
     * Fires after a callback that has been processed on the server returns back to the client.
@@ -92,16 +91,5 @@ class ASPxClientPivotGrid () extends ASPxClientControl {
     * Shows the Filter Editor.
     */
   def ShowPrefilter(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientPivotGrid")
-@js.native
-object ASPxClientPivotGrid extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientPivotGrid type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientPivotGrid = js.native
 }
 

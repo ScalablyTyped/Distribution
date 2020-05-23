@@ -12,9 +12,9 @@ trait IRbmSuggestedActionDial extends js.Object {
 
 object IRbmSuggestedActionDial {
   @scala.inline
-  def apply(phoneNumber: String = null): IRbmSuggestedActionDial = {
+  def apply(phoneNumber: js.UndefOr[Null | String] = js.undefined): IRbmSuggestedActionDial = {
     val __obj = js.Dynamic.literal()
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(phoneNumber)) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmSuggestedActionDial]
   }
 }

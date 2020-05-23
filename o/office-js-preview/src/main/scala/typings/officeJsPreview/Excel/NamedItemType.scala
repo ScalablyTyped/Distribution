@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,29 +33,6 @@ object NamedItemType extends js.Object {
   
   @js.native
   sealed trait string extends NamedItemType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[NamedItemType with String] = js.native
-  /* "Array" */ @js.native
-  object array extends TopLevel[array with String]
-  
-  /* "Boolean" */ @js.native
-  object boolean extends TopLevel[boolean with String]
-  
-  /* "Double" */ @js.native
-  object double extends TopLevel[double with String]
-  
-  /* "Error" */ @js.native
-  object error extends TopLevel[error with String]
-  
-  /* "Integer" */ @js.native
-  object integer extends TopLevel[integer with String]
-  
-  /* "Range" */ @js.native
-  object range extends TopLevel[range with String]
-  
-  /* "String" */ @js.native
-  object string extends TopLevel[string with String]
   
 }
 

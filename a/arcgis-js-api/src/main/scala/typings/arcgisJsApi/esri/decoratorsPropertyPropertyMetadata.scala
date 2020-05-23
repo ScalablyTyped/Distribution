@@ -72,9 +72,9 @@ object decoratorsPropertyPropertyMetadata {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (aliasOf != null) __obj.updateDynamic("aliasOf")(aliasOf.asInstanceOf[js.Any])
     if (cast != null) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
-    if (!js.isUndefined(constructOnly)) __obj.updateDynamic("constructOnly")(constructOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(constructOnly)) __obj.updateDynamic("constructOnly")(constructOnly.get.asInstanceOf[js.Any])
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[decoratorsPropertyPropertyMetadata]

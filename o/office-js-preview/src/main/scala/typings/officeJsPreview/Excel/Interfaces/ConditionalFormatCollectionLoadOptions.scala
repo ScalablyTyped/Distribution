@@ -90,7 +90,7 @@ trait ConditionalFormatCollectionLoadOptions extends js.Object {
   var iconSetOrNullObject: js.UndefOr[IconSetConditionalFormatLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+    * For EACH ITEM in the collection: The Priority of the Conditional Format within the current ConditionalFormatCollection.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -115,7 +115,7 @@ trait ConditionalFormatCollectionLoadOptions extends js.Object {
     changes other conditional formats' priorities, to allow for a contiguous priority order.
     Use a negative priority to begin from the back.
     Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -162,7 +162,7 @@ trait ConditionalFormatCollectionLoadOptions extends js.Object {
   var topBottomOrNullObject: js.UndefOr[TopBottomConditionalFormatLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time. Read-only.
+    * For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -195,7 +195,7 @@ object ConditionalFormatCollectionLoadOptions {
     `type`: js.UndefOr[Boolean] = js.undefined
   ): ConditionalFormatCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue.asInstanceOf[js.Any])
     if (cellValueOrNullObject != null) __obj.updateDynamic("cellValueOrNullObject")(cellValueOrNullObject.asInstanceOf[js.Any])
     if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale.asInstanceOf[js.Any])
@@ -206,16 +206,16 @@ object ConditionalFormatCollectionLoadOptions {
     if (dataBarOrNullObject != null) __obj.updateDynamic("dataBarOrNullObject")(dataBarOrNullObject.asInstanceOf[js.Any])
     if (iconSet != null) __obj.updateDynamic("iconSet")(iconSet.asInstanceOf[js.Any])
     if (iconSetOrNullObject != null) __obj.updateDynamic("iconSetOrNullObject")(iconSetOrNullObject.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
     if (presetOrNullObject != null) __obj.updateDynamic("presetOrNullObject")(presetOrNullObject.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopIfTrue)) __obj.updateDynamic("stopIfTrue")(stopIfTrue.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopIfTrue)) __obj.updateDynamic("stopIfTrue")(stopIfTrue.get.asInstanceOf[js.Any])
     if (textComparison != null) __obj.updateDynamic("textComparison")(textComparison.asInstanceOf[js.Any])
     if (textComparisonOrNullObject != null) __obj.updateDynamic("textComparisonOrNullObject")(textComparisonOrNullObject.asInstanceOf[js.Any])
     if (topBottom != null) __obj.updateDynamic("topBottom")(topBottom.asInstanceOf[js.Any])
     if (topBottomOrNullObject != null) __obj.updateDynamic("topBottomOrNullObject")(topBottomOrNullObject.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalFormatCollectionLoadOptions]
   }
 }

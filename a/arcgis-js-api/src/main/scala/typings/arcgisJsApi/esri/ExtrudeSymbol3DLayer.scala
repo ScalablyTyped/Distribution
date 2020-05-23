@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.extrude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,8 +46,4 @@ trait ExtrudeSymbol3DLayer
   @JSName("type")
   val type_ExtrudeSymbol3DLayer: extrude = js.native
 }
-
-@JSGlobal("__esri.ExtrudeSymbol3DLayer")
-@js.native
-object ExtrudeSymbol3DLayer extends TopLevel[ExtrudeSymbol3DLayerConstructor]
 

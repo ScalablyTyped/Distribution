@@ -24,7 +24,7 @@ object baseClientMod extends js.Object {
       * @return {AxiosInstance}
       */
     var buildDefaultHttpClient: js.Any = js.native
-    var clientOptions: Configuration = js.native
+    var clientOptions: js.Any = js.native
     var clientVersion: String = js.native
     var errorHandler: ErrorHandler = js.native
     var getBaseHttpRequestURL: js.Any = js.native
@@ -77,6 +77,7 @@ object baseClientMod extends js.Object {
       * @param {string} token - HTTP request token
       */
     var verifyToken: js.Any = js.native
+    def getClientOptions(): Configuration = js.native
     /**
       * JSON object with default headers sent by HTTP request.
       */
@@ -101,6 +102,7 @@ object baseClientMod extends js.Object {
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String): js.Promise[T] = js.native
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String, queryParameters: js.Object): js.Promise[T] = js.native
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String, queryParameters: js.Object, callback: Callback[T]): js.Promise[T] = js.native
+    def setClientOptions(configOptions: Configuration): Unit = js.native
     /**
       * Set default values for count and offset when doing filtering with API requests if they are not specified by filter.
       */

@@ -131,7 +131,7 @@ object Event {
     originalStart: String = null,
     originalStartTimeZone: String = null,
     recurrence: PatternedRecurrence = null,
-    reminderMinutesBeforeStart: Int | Double = null,
+    reminderMinutesBeforeStart: js.UndefOr[Double] = js.undefined,
     responseRequested: js.UndefOr[Boolean] = js.undefined,
     responseStatus: ResponseStatus = null,
     sensitivity: Sensitivity = null,
@@ -154,15 +154,15 @@ object Event {
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasAttachments)) __obj.updateDynamic("hasAttachments")(hasAttachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAttachments)) __obj.updateDynamic("hasAttachments")(hasAttachments.get.asInstanceOf[js.Any])
     if (iCalUId != null) __obj.updateDynamic("iCalUId")(iCalUId.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (importance != null) __obj.updateDynamic("importance")(importance.asInstanceOf[js.Any])
     if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllDay)) __obj.updateDynamic("isAllDay")(isAllDay.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCancelled)) __obj.updateDynamic("isCancelled")(isCancelled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOrganizer)) __obj.updateDynamic("isOrganizer")(isOrganizer.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReminderOn)) __obj.updateDynamic("isReminderOn")(isReminderOn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllDay)) __obj.updateDynamic("isAllDay")(isAllDay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCancelled)) __obj.updateDynamic("isCancelled")(isCancelled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOrganizer)) __obj.updateDynamic("isOrganizer")(isOrganizer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReminderOn)) __obj.updateDynamic("isReminderOn")(isReminderOn.get.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
@@ -173,8 +173,8 @@ object Event {
     if (originalStart != null) __obj.updateDynamic("originalStart")(originalStart.asInstanceOf[js.Any])
     if (originalStartTimeZone != null) __obj.updateDynamic("originalStartTimeZone")(originalStartTimeZone.asInstanceOf[js.Any])
     if (recurrence != null) __obj.updateDynamic("recurrence")(recurrence.asInstanceOf[js.Any])
-    if (reminderMinutesBeforeStart != null) __obj.updateDynamic("reminderMinutesBeforeStart")(reminderMinutesBeforeStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseRequested)) __obj.updateDynamic("responseRequested")(responseRequested.asInstanceOf[js.Any])
+    if (!js.isUndefined(reminderMinutesBeforeStart)) __obj.updateDynamic("reminderMinutesBeforeStart")(reminderMinutesBeforeStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseRequested)) __obj.updateDynamic("responseRequested")(responseRequested.get.asInstanceOf[js.Any])
     if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus.asInstanceOf[js.Any])
     if (sensitivity != null) __obj.updateDynamic("sensitivity")(sensitivity.asInstanceOf[js.Any])
     if (seriesMasterId != null) __obj.updateDynamic("seriesMasterId")(seriesMasterId.asInstanceOf[js.Any])

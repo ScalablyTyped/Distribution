@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.RoutingSlip")
 @js.native
-class RoutingSlip protected () extends js.Object {
+trait RoutingSlip extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Creator: Double = js.native
   var Delivery: WdRoutingSlipDelivery = js.native

@@ -31,16 +31,16 @@ object ColReorderSettings {
   @scala.inline
   def apply(
     reorderCallback: () => Unit,
-    fixedColumnsLeft: Int | Double = null,
-    fixedColumnsRight: Int | Double = null,
+    fixedColumnsLeft: js.UndefOr[Double] = js.undefined,
+    fixedColumnsRight: js.UndefOr[Double] = js.undefined,
     order: js.Array[Double] = null,
     realtime: js.UndefOr[Boolean] = js.undefined
   ): ColReorderSettings = {
     val __obj = js.Dynamic.literal(reorderCallback = js.Any.fromFunction0(reorderCallback))
-    if (fixedColumnsLeft != null) __obj.updateDynamic("fixedColumnsLeft")(fixedColumnsLeft.asInstanceOf[js.Any])
-    if (fixedColumnsRight != null) __obj.updateDynamic("fixedColumnsRight")(fixedColumnsRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedColumnsLeft)) __obj.updateDynamic("fixedColumnsLeft")(fixedColumnsLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedColumnsRight)) __obj.updateDynamic("fixedColumnsRight")(fixedColumnsRight.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColReorderSettings]
   }
 }

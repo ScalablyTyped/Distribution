@@ -16,11 +16,15 @@ trait ParameterOptions extends js.Object {
 
 object ParameterOptions {
   @scala.inline
-  def apply(length: Double | max = null, precision: Int | Double = null, scale: Int | Double = null): ParameterOptions = {
+  def apply(
+    length: Double | max = null,
+    precision: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined
+  ): ParameterOptions = {
     val __obj = js.Dynamic.literal()
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterOptions]
   }
 }

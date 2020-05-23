@@ -1,9 +1,9 @@
 package typings.braintreeWeb.mod
 
-import typings.braintreeWeb.AnonCard
-import typings.braintreeWeb.AnonClient
-import typings.braintreeWeb.AnonEnrollmentId
-import typings.braintreeWeb.AnonHostedFields
+import typings.braintreeWeb.anon.Card
+import typings.braintreeWeb.anon.Client
+import typings.braintreeWeb.anon.EnrollmentId
+import typings.braintreeWeb.anon.HostedFields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait UnionPay_ extends js.Object {
     *   // ...
     * });
     */
-  def create(options: AnonClient, callback: callback): Unit = js.native
+  def create(options: Client, callback: callback): Unit = js.native
   /**
     * Enrolls a UnionPay card. Use {@link UnionPay#fetchCapabilities|fetchCapabilities} to determine if the SMS enrollment process is required.
     * @public
@@ -93,7 +93,7 @@ trait UnionPay_ extends js.Object {
     * });
     * @returns {void}
     */
-  def enroll(options: AnonHostedFields, callback: callback): Unit = js.native
+  def enroll(options: HostedFields, callback: callback): Unit = js.native
   /**
     * Fetches the capabilities of a card, including whether or not the SMS enrollment process is required.
     * @public
@@ -165,7 +165,7 @@ trait UnionPay_ extends js.Object {
     * });
     * @returns {void}
     */
-  def fetchCapabilities(options: AnonCard, callback: callback): Unit = js.native
+  def fetchCapabilities(options: Card, callback: callback): Unit = js.native
   /**
     * Cleanly tear down anything set up by {@link module:braintree-web/unionpay.create|create}. This only needs to be called when using UnionPay with Hosted Fields.
     * @public
@@ -229,6 +229,6 @@ trait UnionPay_ extends js.Object {
     * });
     * @returns {void}
     */
-  def tokenize(options: AnonEnrollmentId, callback: callback): Unit = js.native
+  def tokenize(options: EnrollmentId, callback: callback): Unit = js.native
 }
 

@@ -1,15 +1,18 @@
 package typings.ckeditor.CKEDITOR
 
-import typings.ckeditor.AnonTabId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.dialogCommand")
-@js.native
-class dialogCommand protected () extends js.Object {
-  def this(dialogName: String) = this()
-  def this(dialogName: String, ext: AnonTabId) = this()
-  var value: js.Any = js.native
+trait dialogCommand extends js.Object {
+  var value: js.Any
+}
+
+object dialogCommand {
+  @scala.inline
+  def apply(value: js.Any): dialogCommand = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[dialogCommand]
+  }
 }
 

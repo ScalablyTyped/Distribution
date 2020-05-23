@@ -1,8 +1,8 @@
 package typings.soap.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.soap.AnonNamespace
-import typings.soap.AnonNamespaces
+import typings.soap.anon.Namespace
+import typings.soap.anon.Namespaces
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,11 +32,11 @@ object IServerOptions {
     forceSoap12Headers: js.UndefOr[Boolean] = js.undefined,
     handleNilAsNull: js.UndefOr[Boolean] = js.undefined,
     ignoreBaseNameSpaces: js.UndefOr[Boolean] = js.undefined,
-    ignoredNamespaces: Boolean | js.Array[String] | AnonNamespaces = null,
+    ignoredNamespaces: Boolean | js.Array[String] | Namespaces = null,
     namespaceArrayElements: js.UndefOr[Boolean] = js.undefined,
     normalizeNames: js.UndefOr[Boolean] = js.undefined,
     oneWay: IOneWayOptions = null,
-    overrideRootElement: AnonNamespace = null,
+    overrideRootElement: Namespace = null,
     preserveWhitespace: js.UndefOr[Boolean] = js.undefined,
     returnFault: js.UndefOr[Boolean] = js.undefined,
     strict: js.UndefOr[Boolean] = js.undefined,
@@ -52,22 +52,22 @@ object IServerOptions {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], services = services.asInstanceOf[js.Any])
     if (attributesKey != null) __obj.updateDynamic("attributesKey")(attributesKey.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (!js.isUndefined(enableChunkedEncoding)) __obj.updateDynamic("enableChunkedEncoding")(enableChunkedEncoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeXML)) __obj.updateDynamic("escapeXML")(escapeXML.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSoap12Headers)) __obj.updateDynamic("forceSoap12Headers")(forceSoap12Headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleNilAsNull)) __obj.updateDynamic("handleNilAsNull")(handleNilAsNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBaseNameSpaces)) __obj.updateDynamic("ignoreBaseNameSpaces")(ignoreBaseNameSpaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableChunkedEncoding)) __obj.updateDynamic("enableChunkedEncoding")(enableChunkedEncoding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeXML)) __obj.updateDynamic("escapeXML")(escapeXML.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSoap12Headers)) __obj.updateDynamic("forceSoap12Headers")(forceSoap12Headers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleNilAsNull)) __obj.updateDynamic("handleNilAsNull")(handleNilAsNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBaseNameSpaces)) __obj.updateDynamic("ignoreBaseNameSpaces")(ignoreBaseNameSpaces.get.asInstanceOf[js.Any])
     if (ignoredNamespaces != null) __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaceArrayElements)) __obj.updateDynamic("namespaceArrayElements")(namespaceArrayElements.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalizeNames)) __obj.updateDynamic("normalizeNames")(normalizeNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaceArrayElements)) __obj.updateDynamic("namespaceArrayElements")(namespaceArrayElements.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeNames)) __obj.updateDynamic("normalizeNames")(normalizeNames.get.asInstanceOf[js.Any])
     if (oneWay != null) __obj.updateDynamic("oneWay")(oneWay.asInstanceOf[js.Any])
     if (overrideRootElement != null) __obj.updateDynamic("overrideRootElement")(overrideRootElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnFault)) __obj.updateDynamic("returnFault")(returnFault.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressStack)) __obj.updateDynamic("suppressStack")(suppressStack.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFault)) __obj.updateDynamic("returnFault")(returnFault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressStack)) __obj.updateDynamic("suppressStack")(suppressStack.get.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEmptyTag)) __obj.updateDynamic("useEmptyTag")(useEmptyTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEmptyTag)) __obj.updateDynamic("useEmptyTag")(useEmptyTag.get.asInstanceOf[js.Any])
     if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey.asInstanceOf[js.Any])
     if (wsdl_headers != null) __obj.updateDynamic("wsdl_headers")(wsdl_headers.asInstanceOf[js.Any])
     if (wsdl_options != null) __obj.updateDynamic("wsdl_options")(wsdl_options.asInstanceOf[js.Any])

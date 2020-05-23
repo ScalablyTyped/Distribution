@@ -1,8 +1,8 @@
 package typings.stompjs.mod
 
 import typings.std.WebSocket
-import typings.stompjs.AnonHost
-import typings.stompjs.AnonIncoming
+import typings.stompjs.anon.Host
+import typings.stompjs.anon.Incoming
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 class Client_ () extends js.Object {
   var connected: Boolean = js.native
   var counter: Double = js.native
-  var heartbeat: AnonIncoming = js.native
+  var heartbeat: Incoming = js.native
   var maxWebSocketFrameSize: Double = js.native
   var ws: WebSocket = js.native
   def abort(transaction: String): js.Any = js.native
@@ -26,9 +26,9 @@ class Client_ () extends js.Object {
     connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
     errorCallback: js.Function1[/* error */ Frame | String, _]
   ): js.Any = js.native
-  def connect(headers: AnonHost, connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _]): js.Any = js.native
+  def connect(headers: Host, connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _]): js.Any = js.native
   def connect(
-    headers: AnonHost,
+    headers: Host,
     connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
     errorCallback: js.Function1[/* error */ Frame | String, _]
   ): js.Any = js.native

@@ -1,6 +1,6 @@
 package typings.urql.subscriptionMod
 
-import typings.urql.PartialOperationContext
+import typings.urql.anon.PartialOperationContext
 import typings.urql.useSubscriptionMod.UseSubscriptionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`

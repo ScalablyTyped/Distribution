@@ -18,14 +18,14 @@ object SearchUserOptions {
     username: String,
     includeActive: js.UndefOr[Boolean] = js.undefined,
     includeInactive: js.UndefOr[Boolean] = js.undefined,
-    maxResults: Int | Double = null,
-    startAt: Int | Double = null
+    maxResults: js.UndefOr[Double] = js.undefined,
+    startAt: js.UndefOr[Double] = js.undefined
   ): SearchUserOptions = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeActive)) __obj.updateDynamic("includeActive")(includeActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeActive)) __obj.updateDynamic("includeActive")(includeActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAt)) __obj.updateDynamic("startAt")(startAt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchUserOptions]
   }
 }

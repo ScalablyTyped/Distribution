@@ -43,14 +43,14 @@ object PDFViewerProps {
     canvasCss: String = null,
     children: ReactNode = null,
     css: String = null,
-    defaultScale: Int | Double = null,
+    defaultScale: js.UndefOr[Double] = js.undefined,
     hideNavbar: js.UndefOr[Boolean] = js.undefined,
     hideRotation: js.UndefOr[Boolean] = js.undefined,
     hideZoom: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
     loader: ReactNode = null,
-    maxScale: Int | Double = null,
-    minScale: Int | Double = null,
+    maxScale: js.UndefOr[Double] = js.undefined,
+    minScale: js.UndefOr[Double] = js.undefined,
     navbarOnTop: js.UndefOr[Boolean] = js.undefined,
     navigation: js.Any = null,
     onDocumentClick: () => Unit = null,
@@ -58,12 +58,12 @@ object PDFViewerProps {
     onPrevBtnClick: /* page */ Double => Unit = null,
     onRotation: /* angle */ Double => Unit = null,
     onZoom: /* scale */ Double => Unit = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     protectContent: js.UndefOr[Boolean] = js.undefined,
-    ref: LegacyRef[PDFViewer] = null,
-    rotationAngle: Int | Double = null,
-    scale: Int | Double = null,
-    scaleStep: Int | Double = null,
+    ref: js.UndefOr[Null | LegacyRef[PDFViewer]] = js.undefined,
+    rotationAngle: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined,
+    scaleStep: js.UndefOr[Double] = js.undefined,
     watermark: Watermark = null
   ): PDFViewerProps = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
@@ -71,27 +71,27 @@ object PDFViewerProps {
     if (canvasCss != null) __obj.updateDynamic("canvasCss")(canvasCss.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (defaultScale != null) __obj.updateDynamic("defaultScale")(defaultScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNavbar)) __obj.updateDynamic("hideNavbar")(hideNavbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideRotation)) __obj.updateDynamic("hideRotation")(hideRotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideZoom)) __obj.updateDynamic("hideZoom")(hideZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultScale)) __obj.updateDynamic("defaultScale")(defaultScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideNavbar)) __obj.updateDynamic("hideNavbar")(hideNavbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideRotation)) __obj.updateDynamic("hideRotation")(hideRotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideZoom)) __obj.updateDynamic("hideZoom")(hideZoom.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(navbarOnTop)) __obj.updateDynamic("navbarOnTop")(navbarOnTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScale)) __obj.updateDynamic("maxScale")(maxScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScale)) __obj.updateDynamic("minScale")(minScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navbarOnTop)) __obj.updateDynamic("navbarOnTop")(navbarOnTop.get.asInstanceOf[js.Any])
     if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
     if (onDocumentClick != null) __obj.updateDynamic("onDocumentClick")(js.Any.fromFunction0(onDocumentClick))
     if (onNextBtnClick != null) __obj.updateDynamic("onNextBtnClick")(js.Any.fromFunction1(onNextBtnClick))
     if (onPrevBtnClick != null) __obj.updateDynamic("onPrevBtnClick")(js.Any.fromFunction1(onPrevBtnClick))
     if (onRotation != null) __obj.updateDynamic("onRotation")(js.Any.fromFunction1(onRotation))
     if (onZoom != null) __obj.updateDynamic("onZoom")(js.Any.fromFunction1(onZoom))
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (!js.isUndefined(protectContent)) __obj.updateDynamic("protectContent")(protectContent.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (scaleStep != null) __obj.updateDynamic("scaleStep")(scaleStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(protectContent)) __obj.updateDynamic("protectContent")(protectContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotationAngle)) __obj.updateDynamic("rotationAngle")(rotationAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleStep)) __obj.updateDynamic("scaleStep")(scaleStep.get.asInstanceOf[js.Any])
     if (watermark != null) __obj.updateDynamic("watermark")(watermark.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerProps]
   }

@@ -171,7 +171,7 @@ trait Model extends js.Object {
     */
   var name: js.UndefOr[String] = js.undefined
   /** This API holds configuration setting for paste cleanup behavior.
-    * @Default {{ listConversion: false, cleanCSS: false,	removeStyles: false, cleanElements: false }}
+    * @Default {{ listConversion: false, cleanCSS: false,    removeStyles: false, cleanElements: false }}
     */
   var pasteCleanupSettings: js.UndefOr[PasteCleanupSettings] = js.undefined
   /** Fires before the RTE Edit area is rendered and after the toolbar is rendered.
@@ -294,8 +294,8 @@ object Model {
     autoHeight: js.UndefOr[Boolean] = js.undefined,
     change: /* e */ ChangeEventArgs => Unit = null,
     colorCode: js.Any = null,
-    colorPaletteColumns: Int | Double = null,
-    colorPaletteRows: Int | Double = null,
+    colorPaletteColumns: js.UndefOr[Double] = js.undefined,
+    colorPaletteRows: js.UndefOr[Double] = js.undefined,
     contextMenuClick: /* e */ ContextMenuClickEventArgs => Unit = null,
     create: /* e */ CreateEventArgs => Unit = null,
     cssClass: String = null,
@@ -325,7 +325,7 @@ object Model {
     keyup: /* e */ KeyupEventArgs => Unit = null,
     locale: String = null,
     maxHeight: String | Double = null,
-    maxLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
     maxWidth: String | Double = null,
     minHeight: String | Double = null,
     minWidth: String | Double = null,
@@ -346,13 +346,13 @@ object Model {
     showRoundedCorner: js.UndefOr[Boolean] = js.undefined,
     showToolbar: js.UndefOr[Boolean] = js.undefined,
     showWordCount: js.UndefOr[Boolean] = js.undefined,
-    tableColumns: Int | Double = null,
-    tableRows: Int | Double = null,
+    tableColumns: js.UndefOr[Double] = js.undefined,
+    tableRows: js.UndefOr[Double] = js.undefined,
     toolbarOverflowMode: ToolbarOverflowMode | String = null,
     tools: Tools = null,
     toolsList: js.Array[_] = null,
     tooltipSettings: js.Any = null,
-    undoStackLimit: Int | Double = null,
+    undoStackLimit: js.UndefOr[Double] = js.undefined,
     validationMessage: js.Any = null,
     validationRules: js.Any = null,
     value: String = null,
@@ -360,25 +360,25 @@ object Model {
     zoomStep: String | Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (colorCode != null) __obj.updateDynamic("colorCode")(colorCode.asInstanceOf[js.Any])
-    if (colorPaletteColumns != null) __obj.updateDynamic("colorPaletteColumns")(colorPaletteColumns.asInstanceOf[js.Any])
-    if (colorPaletteRows != null) __obj.updateDynamic("colorPaletteRows")(colorPaletteRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorPaletteColumns)) __obj.updateDynamic("colorPaletteColumns")(colorPaletteColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorPaletteRows)) __obj.updateDynamic("colorPaletteRows")(colorPaletteRows.get.asInstanceOf[js.Any])
     if (contextMenuClick != null) __obj.updateDynamic("contextMenuClick")(js.Any.fromFunction1(contextMenuClick))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enableHtmlEncode)) __obj.updateDynamic("enableHtmlEncode")(enableHtmlEncode.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTabKeyNavigation)) __obj.updateDynamic("enableTabKeyNavigation")(enableTabKeyNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableXHTML)) __obj.updateDynamic("enableXHTML")(enableXHTML.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHtmlEncode)) __obj.updateDynamic("enableHtmlEncode")(enableHtmlEncode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTabKeyNavigation)) __obj.updateDynamic("enableTabKeyNavigation")(enableTabKeyNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableXHTML)) __obj.updateDynamic("enableXHTML")(enableXHTML.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction1(execute))
     if (exportToPdfSettings != null) __obj.updateDynamic("exportToPdfSettings")(exportToPdfSettings.asInstanceOf[js.Any])
     if (exportToWordSettings != null) __obj.updateDynamic("exportToWordSettings")(exportToWordSettings.asInstanceOf[js.Any])
@@ -392,12 +392,12 @@ object Model {
     if (iframeAttributes != null) __obj.updateDynamic("iframeAttributes")(iframeAttributes.asInstanceOf[js.Any])
     if (imageBrowser != null) __obj.updateDynamic("imageBrowser")(imageBrowser.asInstanceOf[js.Any])
     if (importSettings != null) __obj.updateDynamic("importSettings")(importSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (keydown != null) __obj.updateDynamic("keydown")(js.Any.fromFunction1(keydown))
     if (keyup != null) __obj.updateDynamic("keyup")(js.Any.fromFunction1(keyup))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
@@ -405,26 +405,26 @@ object Model {
     if (pasteCleanupSettings != null) __obj.updateDynamic("pasteCleanupSettings")(pasteCleanupSettings.asInstanceOf[js.Any])
     if (preRender != null) __obj.updateDynamic("preRender")(js.Any.fromFunction1(preRender))
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (!js.isUndefined(showCharCount)) __obj.updateDynamic("showCharCount")(showCharCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClearAll)) __obj.updateDynamic("showClearAll")(showClearAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClearFormat)) __obj.updateDynamic("showClearFormat")(showClearFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(showContextMenu)) __obj.updateDynamic("showContextMenu")(showContextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCustomTable)) __obj.updateDynamic("showCustomTable")(showCustomTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDimensions)) __obj.updateDynamic("showDimensions")(showDimensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFontOption)) __obj.updateDynamic("showFontOption")(showFontOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHtmlSource)) __obj.updateDynamic("showHtmlSource")(showHtmlSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHtmlTagInfo)) __obj.updateDynamic("showHtmlTagInfo")(showHtmlTagInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWordCount)) __obj.updateDynamic("showWordCount")(showWordCount.asInstanceOf[js.Any])
-    if (tableColumns != null) __obj.updateDynamic("tableColumns")(tableColumns.asInstanceOf[js.Any])
-    if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCharCount)) __obj.updateDynamic("showCharCount")(showCharCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClearAll)) __obj.updateDynamic("showClearAll")(showClearAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClearFormat)) __obj.updateDynamic("showClearFormat")(showClearFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showContextMenu)) __obj.updateDynamic("showContextMenu")(showContextMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCustomTable)) __obj.updateDynamic("showCustomTable")(showCustomTable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDimensions)) __obj.updateDynamic("showDimensions")(showDimensions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFontOption)) __obj.updateDynamic("showFontOption")(showFontOption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHtmlSource)) __obj.updateDynamic("showHtmlSource")(showHtmlSource.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHtmlTagInfo)) __obj.updateDynamic("showHtmlTagInfo")(showHtmlTagInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWordCount)) __obj.updateDynamic("showWordCount")(showWordCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableColumns)) __obj.updateDynamic("tableColumns")(tableColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableRows)) __obj.updateDynamic("tableRows")(tableRows.get.asInstanceOf[js.Any])
     if (toolbarOverflowMode != null) __obj.updateDynamic("toolbarOverflowMode")(toolbarOverflowMode.asInstanceOf[js.Any])
     if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     if (toolsList != null) __obj.updateDynamic("toolsList")(toolsList.asInstanceOf[js.Any])
     if (tooltipSettings != null) __obj.updateDynamic("tooltipSettings")(tooltipSettings.asInstanceOf[js.Any])
-    if (undoStackLimit != null) __obj.updateDynamic("undoStackLimit")(undoStackLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(undoStackLimit)) __obj.updateDynamic("undoStackLimit")(undoStackLimit.get.asInstanceOf[js.Any])
     if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

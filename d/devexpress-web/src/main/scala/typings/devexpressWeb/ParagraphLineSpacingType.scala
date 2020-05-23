@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,32 +48,6 @@ object ParagraphLineSpacingType extends js.Object {
     */
   @js.native
   sealed trait Single extends ParagraphLineSpacingType
-  
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[ParagraphLineSpacingType with scala.Double] = js.native
-  /* 5 */ @js.native
-  object AtLeast
-    extends TopLevel[AtLeast with scala.Double]
-  
-  /* 2 */ @js.native
-  object Double
-    extends TopLevel[Double with scala.Double]
-  
-  /* 4 */ @js.native
-  object Exactly
-    extends TopLevel[Exactly with scala.Double]
-  
-  /* 3 */ @js.native
-  object Multiple
-    extends TopLevel[Multiple with scala.Double]
-  
-  /* 1 */ @js.native
-  object Sesquialteral
-    extends TopLevel[Sesquialteral with scala.Double]
-  
-  /* 0 */ @js.native
-  object Single
-    extends TopLevel[Single with scala.Double]
   
 }
 

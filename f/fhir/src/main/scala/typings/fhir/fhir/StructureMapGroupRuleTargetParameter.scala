@@ -65,9 +65,9 @@ object StructureMapGroupRuleTargetParameter {
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
     valueBoolean: js.UndefOr[Boolean] = js.undefined,
-    valueDecimal: Int | Double = null,
+    valueDecimal: js.UndefOr[decimal] = js.undefined,
     valueId: id = null,
-    valueInteger: Int | Double = null,
+    valueInteger: js.UndefOr[integer] = js.undefined,
     valueString: String = null
   ): StructureMapGroupRuleTargetParameter = {
     val __obj = js.Dynamic.literal()
@@ -82,10 +82,10 @@ object StructureMapGroupRuleTargetParameter {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.asInstanceOf[js.Any])
-    if (valueDecimal != null) __obj.updateDynamic("valueDecimal")(valueDecimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueDecimal)) __obj.updateDynamic("valueDecimal")(valueDecimal.get.asInstanceOf[js.Any])
     if (valueId != null) __obj.updateDynamic("valueId")(valueId.asInstanceOf[js.Any])
-    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
     if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructureMapGroupRuleTargetParameter]
   }

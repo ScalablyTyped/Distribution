@@ -1,7 +1,7 @@
 package typings.gapiClientScript.gapi.client.script
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientScript.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientScript.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +18,12 @@ trait ScriptsResource extends js.Object {
     * authentication token, open the project in the script editor, then select
     * &#42;&#42;File > Project properties&#42;&#42; and click the &#42;&#42;Scopes&#42;&#42; tab.
     */
-  def run(request: AnonAccesstoken): Request_[Operation]
+  def run(request: Accesstoken): Request[Operation]
 }
 
 object ScriptsResource {
   @scala.inline
-  def apply(run: AnonAccesstoken => Request_[Operation]): ScriptsResource = {
+  def apply(run: Accesstoken => Request[Operation]): ScriptsResource = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[ScriptsResource]
   }

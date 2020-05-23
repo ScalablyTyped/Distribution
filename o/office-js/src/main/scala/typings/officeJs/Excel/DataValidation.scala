@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.DataValidationData
 import typings.officeJs.Excel.Interfaces.DataValidationLoadOptions
 import typings.officeJs.Excel.Interfaces.DataValidationUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Custom
 import typings.officeJs.officeJsStrings.Date
 import typings.officeJs.officeJsStrings.Decimal
@@ -27,9 +27,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.DataValidation")
 @js.native
-class DataValidation () extends ClientObject {
+trait DataValidation extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_DataValidation: RequestContext = js.native
@@ -42,7 +41,7 @@ class DataValidation () extends ClientObject {
   var errorAlert: DataValidationErrorAlert = js.native
   /**
     *
-    * Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+    * Specifies if data validation will be performed on blank cells, it defaults to true.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -102,7 +101,7 @@ class DataValidation () extends ClientObject {
     */
   def load(): DataValidation = js.native
   def load(options: DataValidationLoadOptions): DataValidation = js.native
-  def load(propertyNamesAndPaths: AnonExpand): DataValidation = js.native
+  def load(propertyNamesAndPaths: Expand): DataValidation = js.native
   def load(propertyNames: String): DataValidation = js.native
   def load(propertyNames: js.Array[String]): DataValidation = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

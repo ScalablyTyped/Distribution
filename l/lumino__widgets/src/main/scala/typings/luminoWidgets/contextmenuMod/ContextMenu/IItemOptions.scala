@@ -44,15 +44,15 @@ object IItemOptions {
     selector: String,
     args: ReadonlyJSONObject = null,
     command: String = null,
-    rank: Int | Double = null,
-    submenu: Menu = null,
+    rank: js.UndefOr[Double] = js.undefined,
+    submenu: js.UndefOr[Null | Menu] = js.undefined,
     `type`: ItemType = null
   ): IItemOptions = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(submenu)) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Ime Mode
-			 * 0 - Auto,
-			 * 1 - Inactive,
-			 * 2 - Active,
-			 * 3 - Disabled
-			 */
+  * Ime Mode
+  * 0 - Auto,
+  * 1 - Inactive,
+  * 2 - Active,
+  * 3 - Disabled
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`

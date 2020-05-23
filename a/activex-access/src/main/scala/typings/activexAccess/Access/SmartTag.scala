@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.SmartTag")
 @js.native
-class SmartTag protected () extends js.Object {
+trait SmartTag extends js.Object {
   @JSName("Access.SmartTag_typekey")
   var AccessDotSmartTag_typekey: SmartTag = js.native
   val Application: typings.activexAccess.Access.Application = js.native

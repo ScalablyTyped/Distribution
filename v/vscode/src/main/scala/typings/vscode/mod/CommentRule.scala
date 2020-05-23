@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait CommentRule extends js.Object {
   /**
-  		 * The block comment character pair, like `/ * block comment *&#47;`
-  		 */
+    * The block comment character pair, like `/ * block comment *&#47;`
+    */
   var blockComment: js.UndefOr[CharacterPair] = js.undefined
   /**
-  		 * The line comment token, like `// this is a comment`
-  		 */
+    * The line comment token, like `// this is a comment`
+    */
   var lineComment: js.UndefOr[String] = js.undefined
 }
 

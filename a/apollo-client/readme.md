@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-client
 
-Typings are for version 2.6.8
+Typings are for version 2.6.10
 
 ## Library description:
 A simple yet functional GraphQL client.

@@ -8,11 +8,11 @@ trait SearchSynonymsResponse extends js.Object {
   /**
     * The list of synonyms.
     */
-  val hits: js.Array[Synonym]
+  var hits: js.Array[Synonym]
   /**
     * The number of synonyms on the list.
     */
-  val nbHits: Double
+  var nbHits: Double
 }
 
 object SearchSynonymsResponse {

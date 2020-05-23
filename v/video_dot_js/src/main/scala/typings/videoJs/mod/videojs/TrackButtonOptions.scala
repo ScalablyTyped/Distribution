@@ -18,7 +18,7 @@ object TrackButtonOptions {
   ): TrackButtonOptions = {
     val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(iniChildren)) __obj.updateDynamic("iniChildren")(iniChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(iniChildren)) __obj.updateDynamic("iniChildren")(iniChildren.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackButtonOptions]
   }

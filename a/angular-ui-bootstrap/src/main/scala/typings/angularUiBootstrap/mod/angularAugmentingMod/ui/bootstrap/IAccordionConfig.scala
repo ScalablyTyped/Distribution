@@ -17,7 +17,7 @@ object IAccordionConfig {
   @scala.inline
   def apply(closeOthers: js.UndefOr[Boolean] = js.undefined): IAccordionConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closeOthers)) __obj.updateDynamic("closeOthers")(closeOthers.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOthers)) __obj.updateDynamic("closeOthers")(closeOthers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccordionConfig]
   }
 }

@@ -28,12 +28,12 @@ object UpdateAcceleratorAttributesRequest {
   @scala.inline
   def apply(
     AcceleratorArn: GenericString,
-    FlowLogsEnabled: js.UndefOr[Boolean] = js.undefined,
+    FlowLogsEnabled: js.UndefOr[GenericBoolean] = js.undefined,
     FlowLogsS3Bucket: GenericString = null,
     FlowLogsS3Prefix: GenericString = null
   ): UpdateAcceleratorAttributesRequest = {
     val __obj = js.Dynamic.literal(AcceleratorArn = AcceleratorArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(FlowLogsEnabled)) __obj.updateDynamic("FlowLogsEnabled")(FlowLogsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(FlowLogsEnabled)) __obj.updateDynamic("FlowLogsEnabled")(FlowLogsEnabled.get.asInstanceOf[js.Any])
     if (FlowLogsS3Bucket != null) __obj.updateDynamic("FlowLogsS3Bucket")(FlowLogsS3Bucket.asInstanceOf[js.Any])
     if (FlowLogsS3Prefix != null) __obj.updateDynamic("FlowLogsS3Prefix")(FlowLogsS3Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAcceleratorAttributesRequest]

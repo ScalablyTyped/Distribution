@@ -42,7 +42,7 @@ object CookieOptions {
     domain: String = null,
     encode: /* value */ js.Any => _ = null,
     expirationUnit: String = null,
-    expires: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
     path: String = null,
     secure: js.UndefOr[Boolean] = js.undefined
   ): CookieOptions = {
@@ -51,9 +51,9 @@ object CookieOptions {
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction1(encode))
     if (expirationUnit != null) __obj.updateDynamic("expirationUnit")(expirationUnit.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieOptions]
   }
 }

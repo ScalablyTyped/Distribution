@@ -102,7 +102,7 @@ object IInvoiceListUpcomingLineItemsOptions {
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     invoice_items: js.Array[InvoiceItem] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     starting_after: String = null,
     subscription: String = null,
     subscription_billing_cycle_anchor: now | unchanged = null,
@@ -111,9 +111,9 @@ object IInvoiceListUpcomingLineItemsOptions {
     subscription_cancel_now: js.UndefOr[Boolean] = js.undefined,
     subscription_items: js.Array[ISubscriptionUpdateItem] = null,
     subscription_prorate: js.UndefOr[Boolean] = js.undefined,
-    subscription_proration_date: Int | Double = null,
-    subscription_start_date: Int | Double = null,
-    subscription_tax_percent: Int | Double = null,
+    subscription_proration_date: js.UndefOr[Double] = js.undefined,
+    subscription_start_date: js.UndefOr[Double] = js.undefined,
+    subscription_tax_percent: js.UndefOr[Double] = js.undefined,
     subscription_trial_end: now | Double | String = null,
     subscription_trial_from_plan: js.UndefOr[Boolean] = js.undefined
   ): IInvoiceListUpcomingLineItemsOptions = {
@@ -124,20 +124,20 @@ object IInvoiceListUpcomingLineItemsOptions {
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (invoice_items != null) __obj.updateDynamic("invoice_items")(invoice_items.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     if (subscription_billing_cycle_anchor != null) __obj.updateDynamic("subscription_billing_cycle_anchor")(subscription_billing_cycle_anchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscription_cancel_at)) __obj.updateDynamic("subscription_cancel_at")(subscription_cancel_at.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscription_cancel_at_period_end)) __obj.updateDynamic("subscription_cancel_at_period_end")(subscription_cancel_at_period_end.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscription_cancel_now)) __obj.updateDynamic("subscription_cancel_now")(subscription_cancel_now.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription_cancel_at)) __obj.updateDynamic("subscription_cancel_at")(subscription_cancel_at.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription_cancel_at_period_end)) __obj.updateDynamic("subscription_cancel_at_period_end")(subscription_cancel_at_period_end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription_cancel_now)) __obj.updateDynamic("subscription_cancel_now")(subscription_cancel_now.get.asInstanceOf[js.Any])
     if (subscription_items != null) __obj.updateDynamic("subscription_items")(subscription_items.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscription_prorate)) __obj.updateDynamic("subscription_prorate")(subscription_prorate.asInstanceOf[js.Any])
-    if (subscription_proration_date != null) __obj.updateDynamic("subscription_proration_date")(subscription_proration_date.asInstanceOf[js.Any])
-    if (subscription_start_date != null) __obj.updateDynamic("subscription_start_date")(subscription_start_date.asInstanceOf[js.Any])
-    if (subscription_tax_percent != null) __obj.updateDynamic("subscription_tax_percent")(subscription_tax_percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription_prorate)) __obj.updateDynamic("subscription_prorate")(subscription_prorate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription_proration_date)) __obj.updateDynamic("subscription_proration_date")(subscription_proration_date.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription_start_date)) __obj.updateDynamic("subscription_start_date")(subscription_start_date.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription_tax_percent)) __obj.updateDynamic("subscription_tax_percent")(subscription_tax_percent.get.asInstanceOf[js.Any])
     if (subscription_trial_end != null) __obj.updateDynamic("subscription_trial_end")(subscription_trial_end.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscription_trial_from_plan)) __obj.updateDynamic("subscription_trial_from_plan")(subscription_trial_from_plan.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription_trial_from_plan)) __obj.updateDynamic("subscription_trial_from_plan")(subscription_trial_from_plan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceListUpcomingLineItemsOptions]
   }
 }

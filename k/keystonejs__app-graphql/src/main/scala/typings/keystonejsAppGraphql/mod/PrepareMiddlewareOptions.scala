@@ -14,7 +14,7 @@ object PrepareMiddlewareOptions {
   @scala.inline
   def apply(keystone: Keystone[String], dev: js.UndefOr[Boolean] = js.undefined): PrepareMiddlewareOptions = {
     val __obj = js.Dynamic.literal(keystone = keystone.asInstanceOf[js.Any])
-    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.asInstanceOf[js.Any])
+    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrepareMiddlewareOptions]
   }
 }

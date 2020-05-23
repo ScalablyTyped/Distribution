@@ -25,8 +25,8 @@ object TitleModifierProps {
   ): TitleModifierProps = {
     val __obj = js.Dynamic.literal()
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(spaced)) __obj.updateDynamic("spaced")(spaced.asInstanceOf[js.Any])
-    if (!js.isUndefined(subtitle)) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaced)) __obj.updateDynamic("spaced")(spaced.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtitle)) __obj.updateDynamic("subtitle")(subtitle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TitleModifierProps]
   }
 }

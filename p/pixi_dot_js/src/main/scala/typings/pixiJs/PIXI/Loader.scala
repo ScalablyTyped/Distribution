@@ -64,11 +64,8 @@ import scala.scalajs.js.annotation._
   * @param {string} [baseUrl=''] - The base url for all resources loaded by this loader.
   * @param {number} [concurrency=10] - The number of resources to load concurrently.
   */
-@JSGlobal("PIXI.Loader")
 @js.native
-class Loader () extends EventEmitter {
-  def this(baseUrl: String) = this()
-  def this(baseUrl: String, concurrency: Double) = this()
+trait Loader extends EventEmitter {
   var baseUrl: String = js.native
   var concurrency: Double = js.native
   var defaultQueryString: String = js.native
@@ -242,29 +239,9 @@ class Loader () extends EventEmitter {
   def use(fn: js.Function): this.type = js.native
 }
 
-/* static members */
 @JSGlobal("PIXI.Loader")
 @js.native
 object Loader extends js.Object {
-  /**
-    * A premade instance of the loader that can be used to load resources.
-    * @name shared
-    * @type {PIXI.Loader}
-    * @static
-    * @memberof PIXI.Loader
-    */
-  var shared: Loader = js.native
-  /**
-    * Adds a Loader plugin for the global shared loader and all
-    * new Loader instances created.
-    *
-    * @static
-    * @method registerPlugin
-    * @memberof PIXI.Loader
-    * @param {PIXI.ILoaderPlugin} plugin - The plugin to add
-    * @return {PIXI.Loader} Reference to PIXI.Loader for chaining
-    */
-  def registerPlugin(plugin: ILoaderPlugin): Loader = js.native
   /**
     * @memberof PIXI.Loader
     * @callback loaderMiddleware

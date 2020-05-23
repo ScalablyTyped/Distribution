@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`line-through`
 import typings.arcgisJsApi.arcgisJsApiStrings.bold
 import typings.arcgisJsApi.arcgisJsApiStrings.bolder
@@ -63,8 +62,4 @@ trait Font
     */
   var weight: normal | bold | bolder | lighter = js.native
 }
-
-@JSGlobal("__esri.Font")
-@js.native
-object Font extends TopLevel[FontConstructor]
 

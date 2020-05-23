@@ -22,10 +22,10 @@ object UpgradeElasticsearchDomainRequest {
   def apply(
     DomainName: DomainName,
     TargetVersion: ElasticsearchVersionString,
-    PerformCheckOnly: js.UndefOr[scala.Boolean] = js.undefined
+    PerformCheckOnly: js.UndefOr[Boolean] = js.undefined
   ): UpgradeElasticsearchDomainRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], TargetVersion = TargetVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformCheckOnly)) __obj.updateDynamic("PerformCheckOnly")(PerformCheckOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(PerformCheckOnly)) __obj.updateDynamic("PerformCheckOnly")(PerformCheckOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeElasticsearchDomainRequest]
   }
 }

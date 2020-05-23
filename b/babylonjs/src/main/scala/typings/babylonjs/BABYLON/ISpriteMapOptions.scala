@@ -46,22 +46,22 @@ trait ISpriteMapOptions extends js.Object {
 object ISpriteMapOptions {
   @scala.inline
   def apply(
-    baseTile: Int | Double = null,
+    baseTile: js.UndefOr[Double] = js.undefined,
     colorMultiply: Vector3 = null,
     flipU: js.UndefOr[Boolean] = js.undefined,
-    layerCount: Int | Double = null,
-    maxAnimationFrames: Int | Double = null,
+    layerCount: js.UndefOr[Double] = js.undefined,
+    maxAnimationFrames: js.UndefOr[Double] = js.undefined,
     outputPosition: Vector3 = null,
     outputRotation: Vector3 = null,
     outputSize: Vector2 = null,
     stageSize: Vector2 = null
   ): ISpriteMapOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseTile != null) __obj.updateDynamic("baseTile")(baseTile.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseTile)) __obj.updateDynamic("baseTile")(baseTile.get.asInstanceOf[js.Any])
     if (colorMultiply != null) __obj.updateDynamic("colorMultiply")(colorMultiply.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipU)) __obj.updateDynamic("flipU")(flipU.asInstanceOf[js.Any])
-    if (layerCount != null) __obj.updateDynamic("layerCount")(layerCount.asInstanceOf[js.Any])
-    if (maxAnimationFrames != null) __obj.updateDynamic("maxAnimationFrames")(maxAnimationFrames.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipU)) __obj.updateDynamic("flipU")(flipU.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(layerCount)) __obj.updateDynamic("layerCount")(layerCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAnimationFrames)) __obj.updateDynamic("maxAnimationFrames")(maxAnimationFrames.get.asInstanceOf[js.Any])
     if (outputPosition != null) __obj.updateDynamic("outputPosition")(outputPosition.asInstanceOf[js.Any])
     if (outputRotation != null) __obj.updateDynamic("outputRotation")(outputRotation.asInstanceOf[js.Any])
     if (outputSize != null) __obj.updateDynamic("outputSize")(outputSize.asInstanceOf[js.Any])

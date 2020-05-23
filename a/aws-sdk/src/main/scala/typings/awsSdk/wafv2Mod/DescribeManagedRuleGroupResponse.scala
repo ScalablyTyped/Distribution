@@ -18,9 +18,9 @@ trait DescribeManagedRuleGroupResponse extends js.Object {
 
 object DescribeManagedRuleGroupResponse {
   @scala.inline
-  def apply(Capacity: Int | Double = null, Rules: RuleSummaries = null): DescribeManagedRuleGroupResponse = {
+  def apply(Capacity: js.UndefOr[CapacityUnit] = js.undefined, Rules: RuleSummaries = null): DescribeManagedRuleGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (Capacity != null) __obj.updateDynamic("Capacity")(Capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(Capacity)) __obj.updateDynamic("Capacity")(Capacity.get.asInstanceOf[js.Any])
     if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeManagedRuleGroupResponse]
   }

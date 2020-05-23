@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Ribbon.SQMUtility")
-@js.native
-class SQMUtility () extends js.Object
+trait SQMUtility extends js.Object
 

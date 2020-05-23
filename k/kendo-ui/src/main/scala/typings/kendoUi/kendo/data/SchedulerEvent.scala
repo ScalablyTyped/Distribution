@@ -1,15 +1,12 @@
 package typings.kendoUi.kendo.data
 
-import typings.kendoUi.TypeofSchedulerEvent
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.data.SchedulerEvent")
 @js.native
-class SchedulerEvent () extends Model {
-  def this(data: SchedulerEventData) = this()
+trait SchedulerEvent extends Model {
   var description: String = js.native
   var end: Date = js.native
   var endTimezone: String = js.native
@@ -31,15 +28,5 @@ class SchedulerEvent () extends Model {
   def isRecurring(): Boolean = js.native
   def toOccurrence(options: js.Any): SchedulerEvent = js.native
   def update(eventInfo: SchedulerEventData): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.data.SchedulerEvent")
-@js.native
-object SchedulerEvent extends js.Object {
-  var fields: DataSourceSchemaModelFields = js.native
-  var idField: String = js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofSchedulerEvent = js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofSchedulerEvent = js.native
 }
 

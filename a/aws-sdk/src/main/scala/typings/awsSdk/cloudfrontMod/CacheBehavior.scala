@@ -68,20 +68,20 @@ object CacheBehavior {
     ViewerProtocolPolicy: ViewerProtocolPolicy,
     AllowedMethods: AllowedMethods = null,
     Compress: js.UndefOr[Boolean] = js.undefined,
-    DefaultTTL: Int | Double = null,
+    DefaultTTL: js.UndefOr[long] = js.undefined,
     FieldLevelEncryptionId: String = null,
     LambdaFunctionAssociations: LambdaFunctionAssociations = null,
-    MaxTTL: Int | Double = null,
+    MaxTTL: js.UndefOr[long] = js.undefined,
     SmoothStreaming: js.UndefOr[Boolean] = js.undefined
   ): CacheBehavior = {
     val __obj = js.Dynamic.literal(ForwardedValues = ForwardedValues.asInstanceOf[js.Any], MinTTL = MinTTL.asInstanceOf[js.Any], PathPattern = PathPattern.asInstanceOf[js.Any], TargetOriginId = TargetOriginId.asInstanceOf[js.Any], TrustedSigners = TrustedSigners.asInstanceOf[js.Any], ViewerProtocolPolicy = ViewerProtocolPolicy.asInstanceOf[js.Any])
     if (AllowedMethods != null) __obj.updateDynamic("AllowedMethods")(AllowedMethods.asInstanceOf[js.Any])
-    if (!js.isUndefined(Compress)) __obj.updateDynamic("Compress")(Compress.asInstanceOf[js.Any])
-    if (DefaultTTL != null) __obj.updateDynamic("DefaultTTL")(DefaultTTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(Compress)) __obj.updateDynamic("Compress")(Compress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultTTL)) __obj.updateDynamic("DefaultTTL")(DefaultTTL.get.asInstanceOf[js.Any])
     if (FieldLevelEncryptionId != null) __obj.updateDynamic("FieldLevelEncryptionId")(FieldLevelEncryptionId.asInstanceOf[js.Any])
     if (LambdaFunctionAssociations != null) __obj.updateDynamic("LambdaFunctionAssociations")(LambdaFunctionAssociations.asInstanceOf[js.Any])
-    if (MaxTTL != null) __obj.updateDynamic("MaxTTL")(MaxTTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(SmoothStreaming)) __obj.updateDynamic("SmoothStreaming")(SmoothStreaming.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxTTL)) __obj.updateDynamic("MaxTTL")(MaxTTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SmoothStreaming)) __obj.updateDynamic("SmoothStreaming")(SmoothStreaming.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheBehavior]
   }
 }

@@ -1,7 +1,7 @@
 package typings.apicache.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apicache.AnonExclude
+import typings.apicache.anon.Exclude
 import typings.redis.mod.RedisClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait Options_ extends js.Object {
     * if provided, uses the [node-redis](https://github.com/NodeRedis/node_redis) client instead of [memory-cache](https://github.com/ptarjan/node-cache)
     */
   var redisClient: js.UndefOr[RedisClient] = js.undefined
-  var statusCodes: js.UndefOr[AnonExclude] = js.undefined
+  var statusCodes: js.UndefOr[Exclude] = js.undefined
   /**
     * enable/disable performance tracking... WARNING: super cool feature, but may cause memory overhead issues
     */
@@ -43,19 +43,19 @@ object Options_ {
     headerBlacklist: js.Array[String] = null,
     headers: StringDictionary[String] = null,
     redisClient: RedisClient = null,
-    statusCodes: AnonExclude = null,
+    statusCodes: Exclude = null,
     trackPerformance: js.UndefOr[Boolean] = js.undefined
   ): Options_ = {
     val __obj = js.Dynamic.literal()
     if (appendKey != null) __obj.updateDynamic("appendKey")(appendKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (defaultDuration != null) __obj.updateDynamic("defaultDuration")(defaultDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (headerBlacklist != null) __obj.updateDynamic("headerBlacklist")(headerBlacklist.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (redisClient != null) __obj.updateDynamic("redisClient")(redisClient.asInstanceOf[js.Any])
     if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackPerformance)) __obj.updateDynamic("trackPerformance")(trackPerformance.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackPerformance)) __obj.updateDynamic("trackPerformance")(trackPerformance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options_]
   }
 }

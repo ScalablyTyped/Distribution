@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object UserPictureSize extends js.Object {
   /** The picture size is 64x64. */
   @js.native
   sealed trait size64x64 extends UserPictureSize
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserPictureSize with Double] = js.native
-  /* 3 */ @js.native
-  object size1080x1080 extends TopLevel[size1080x1080 with Double]
-  
-  /* 1 */ @js.native
-  object size208x208 extends TopLevel[size208x208 with Double]
-  
-  /* 2 */ @js.native
-  object size424x424 extends TopLevel[size424x424 with Double]
-  
-  /* 0 */ @js.native
-  object size64x64 extends TopLevel[size64x64 with Double]
   
 }
 

@@ -1,6 +1,6 @@
 package typings.httpProxyAgent.mod
 
-import typings.httpProxyAgent.PartialUrl
+import typings.httpProxyAgent.anon.PartialUrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

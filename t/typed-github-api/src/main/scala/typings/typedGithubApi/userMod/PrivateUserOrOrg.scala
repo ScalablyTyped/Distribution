@@ -1,7 +1,7 @@
 package typings.typedGithubApi.userMod
 
 import typings.std.Date
-import typings.typedGithubApi.AnonCollaborators
+import typings.typedGithubApi.anon.Collaborators
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait PrivateUserOrOrg extends UserOrOrg {
   var collaborators: Double
   var disk_usage: Double
   var owned_private_repos: Double
-  var plan: AnonCollaborators
+  var plan: Collaborators
   var private_gists: Double
   var total_private_repos: Double
 }
@@ -33,7 +33,7 @@ object PrivateUserOrOrg {
     login: String,
     name: String,
     owned_private_repos: Double,
-    plan: AnonCollaborators,
+    plan: Collaborators,
     private_gists: Double,
     public_gists: Double,
     public_repos: Double,

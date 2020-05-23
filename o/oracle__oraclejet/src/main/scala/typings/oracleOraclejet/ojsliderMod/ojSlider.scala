@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojsliderMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonInvalidStep
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.Element
+import typings.oracleOraclejet.anon.InvalidStep
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojeditablevalueMod.editableValue
 import typings.oracleOraclejet.ojsliderMod.ojSlider.ojAnimateEnd
@@ -49,7 +49,7 @@ trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, 
   var step: Double | Null = js.native
   val transientValue: Double = js.native
   @JSName("translations")
-  var translations_ojSlider: AnonInvalidStep = js.native
+  var translations_ojSlider: InvalidStep = js.native
   var `type`: fromMin | fromMax | single = js.native
   def addEventListener(
     `type`: orientationChanged,
@@ -154,7 +154,7 @@ trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, 
   @JSName("setProperty")
   def setProperty_transientValue(property: typings.oracleOraclejet.oracleOraclejetStrings.transientValue, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonInvalidStep): Unit = js.native
+  def setProperty_translations(property: translations, value: InvalidStep): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")
@@ -164,7 +164,7 @@ trait ojSlider extends editableValue[Double | Null, ojSliderSettableProperties, 
 @JSImport("@oracle/oraclejet/ojslider", "ojSlider")
 @js.native
 object ojSlider extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[Element]
 }
 

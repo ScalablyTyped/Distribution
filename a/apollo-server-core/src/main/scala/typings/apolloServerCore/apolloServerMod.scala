@@ -1,5 +1,6 @@
 package typings.apolloServerCore
 
+import typings.apolloServerCore.anon.PartialGraphQLServerOptio
 import typings.apolloServerCore.graphqlOptionsMod.GraphQLServerOptions
 import typings.apolloServerCore.typesMod.Config
 import typings.apolloServerCore.typesMod.FileUploadOptions
@@ -49,6 +50,7 @@ object apolloServerMod extends js.Object {
     /* protected */ def graphQLServerOptions(): js.Promise[GraphQLServerOptions[Record[String, _], _]] = js.native
     /* protected */ def graphQLServerOptions(integrationContextArgument: Record[String, _]): js.Promise[GraphQLServerOptions[Record[String, _], _]] = js.native
     def installSubscriptionHandlers(server: Server): Unit = js.native
+    def installSubscriptionHandlers(server: typings.ws.mod.Server): Unit = js.native
     def setGraphQLPath(path: String): Unit = js.native
     def stop(): js.Promise[Unit] = js.native
     /* protected */ def supportsSubscriptions(): Boolean = js.native

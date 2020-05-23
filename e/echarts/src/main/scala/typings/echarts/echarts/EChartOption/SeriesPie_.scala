@@ -1,13 +1,13 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAnimationDurationUpdate
-import typings.echarts.AnonAnimationEasing
-import typings.echarts.AnonAnimationEasingUpdate
-import typings.echarts.AnonDictunknownPropertyBorderColor
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonLabelAnonFontWeight
-import typings.echarts.AnonLength2
-import typings.echarts.AnonTextBorderWidth
+import typings.echarts.anon.AnimationDurationUpdate
+import typings.echarts.anon.AnimationEasing
+import typings.echarts.anon.AnimationEasingUpdate
+import typings.echarts.anon.DictunknownPropertyBorderColor
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.LabelFontWeight
+import typings.echarts.anon.Length2
+import typings.echarts.anon.TextBorderWidth
 import typings.echarts.echarts.EChartOption.SeriesPie.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -250,7 +250,7 @@ trait SeriesPie_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.emphasis
     */
-  var emphasis: js.UndefOr[AnonLabelAnonFontWeight] = js.undefined
+  var emphasis: js.UndefOr[LabelFontWeight] = js.undefined
   /**
     * Whether to enable the zoom animation effects when hovering sectors.
     *
@@ -285,7 +285,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonDictunknownPropertyBorderColor] = js.undefined
+  var itemStyle: js.UndefOr[DictunknownPropertyBorderColor] = js.undefined
   /**
     * Text label of pie chart, to explain some data information about
     * graphic item like value, name and so on.
@@ -297,7 +297,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.label
     */
-  var label: js.UndefOr[AnonTextBorderWidth] = js.undefined
+  var label: js.UndefOr[TextBorderWidth] = js.undefined
   /**
     * The style of visual guide line. Will show when
     * [label position](https://echarts.apache.org/en/option.html#series-pie.label.position)
@@ -308,7 +308,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.labelLine
     */
-  var labelLine: js.UndefOr[AnonLength2] = js.undefined
+  var labelLine: js.UndefOr[Length2] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -327,21 +327,21 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationEasingUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationEasingUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markLine
     */
-  var markLine: js.UndefOr[AnonAnimationEasing] = js.undefined
+  var markLine: js.UndefOr[AnimationEasing] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimationDurationUpdate] = js.undefined
+  var markPoint: js.UndefOr[AnimationDurationUpdate] = js.undefined
   /**
     * The minimum angle of sector (0 ~ 360).
     * It prevents some sector from being too small when value is small,
@@ -477,7 +477,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * @default
     * "pie"
@@ -529,83 +529,83 @@ object SeriesPie_ {
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
     animationEasingUpdate: String = null,
-    animationThreshold: Int | Double = null,
+    animationThreshold: js.UndefOr[Double] = js.undefined,
     animationType: String = null,
     avoidLabelOverlap: js.UndefOr[Boolean] = js.undefined,
     center: js.Array[_] = null,
     clockwise: js.UndefOr[Boolean] = js.undefined,
     cursor: String = null,
     data: js.Array[js.Array[Double] | DataObject | Double] = null,
-    datasetIndex: Int | Double = null,
-    emphasis: AnonLabelAnonFontWeight = null,
+    datasetIndex: js.UndefOr[Double] = js.undefined,
+    emphasis: LabelFontWeight = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
-    hoverOffset: Int | Double = null,
+    hoverOffset: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    itemStyle: AnonDictunknownPropertyBorderColor = null,
-    label: AnonTextBorderWidth = null,
-    labelLine: AnonLength2 = null,
+    itemStyle: DictunknownPropertyBorderColor = null,
+    label: TextBorderWidth = null,
+    labelLine: Length2 = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnonAnimationEasingUpdate = null,
-    markLine: AnonAnimationEasing = null,
-    markPoint: AnonAnimationDurationUpdate = null,
-    minAngle: Int | Double = null,
-    minShowLabelAngle: Int | Double = null,
+    markArea: AnimationEasingUpdate = null,
+    markLine: AnimationEasing = null,
+    markPoint: AnimationDurationUpdate = null,
+    minAngle: js.UndefOr[Double] = js.undefined,
+    minShowLabelAngle: js.UndefOr[Double] = js.undefined,
     name: String = null,
     radius: js.Array[_] | Double | String = null,
     roseType: Boolean | String = null,
     selectedMode: Boolean | String = null,
-    selectedOffset: Int | Double = null,
+    selectedOffset: js.UndefOr[Double] = js.undefined,
     seriesLayoutBy: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     stillShowZeroSum: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     `type`: String = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): SeriesPie_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
     if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
     if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(avoidLabelOverlap)) __obj.updateDynamic("avoidLabelOverlap")(avoidLabelOverlap.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidLabelOverlap)) __obj.updateDynamic("avoidLabelOverlap")(avoidLabelOverlap.get.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.get.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(datasetIndex)) __obj.updateDynamic("datasetIndex")(datasetIndex.get.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation.asInstanceOf[js.Any])
-    if (hoverOffset != null) __obj.updateDynamic("hoverOffset")(hoverOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverOffset)) __obj.updateDynamic("hoverOffset")(hoverOffset.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelLine != null) __obj.updateDynamic("labelLine")(labelLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.get.asInstanceOf[js.Any])
     if (markArea != null) __obj.updateDynamic("markArea")(markArea.asInstanceOf[js.Any])
     if (markLine != null) __obj.updateDynamic("markLine")(markLine.asInstanceOf[js.Any])
     if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint.asInstanceOf[js.Any])
-    if (minAngle != null) __obj.updateDynamic("minAngle")(minAngle.asInstanceOf[js.Any])
-    if (minShowLabelAngle != null) __obj.updateDynamic("minShowLabelAngle")(minShowLabelAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(minAngle)) __obj.updateDynamic("minAngle")(minAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minShowLabelAngle)) __obj.updateDynamic("minShowLabelAngle")(minShowLabelAngle.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (roseType != null) __obj.updateDynamic("roseType")(roseType.asInstanceOf[js.Any])
     if (selectedMode != null) __obj.updateDynamic("selectedMode")(selectedMode.asInstanceOf[js.Any])
-    if (selectedOffset != null) __obj.updateDynamic("selectedOffset")(selectedOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedOffset)) __obj.updateDynamic("selectedOffset")(selectedOffset.get.asInstanceOf[js.Any])
     if (seriesLayoutBy != null) __obj.updateDynamic("seriesLayoutBy")(seriesLayoutBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(stillShowZeroSum)) __obj.updateDynamic("stillShowZeroSum")(stillShowZeroSum.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stillShowZeroSum)) __obj.updateDynamic("stillShowZeroSum")(stillShowZeroSum.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPie_]
   }
 }

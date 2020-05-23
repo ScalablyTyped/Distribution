@@ -20,19 +20,19 @@ trait DetectedApp extends Entity {
 object DetectedApp {
   @scala.inline
   def apply(
-    deviceCount: Int | Double = null,
+    deviceCount: js.UndefOr[Double] = js.undefined,
     displayName: String = null,
     id: String = null,
     managedDevices: js.Array[ManagedDevice] = null,
-    sizeInByte: Int | Double = null,
+    sizeInByte: js.UndefOr[Double] = js.undefined,
     version: String = null
   ): DetectedApp = {
     val __obj = js.Dynamic.literal()
-    if (deviceCount != null) __obj.updateDynamic("deviceCount")(deviceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceCount)) __obj.updateDynamic("deviceCount")(deviceCount.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (managedDevices != null) __obj.updateDynamic("managedDevices")(managedDevices.asInstanceOf[js.Any])
-    if (sizeInByte != null) __obj.updateDynamic("sizeInByte")(sizeInByte.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeInByte)) __obj.updateDynamic("sizeInByte")(sizeInByte.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectedApp]
   }

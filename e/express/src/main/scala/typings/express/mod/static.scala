@@ -1,6 +1,6 @@
 package typings.express.mod
 
-import typings.express.Typeofm
+import typings.express.anon.Typeofm
 import typings.serveStatic.mod.ServeStaticOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -19,12 +19,14 @@ trait IBrowseCarouselCard extends js.Object {
 object IBrowseCarouselCard {
   @scala.inline
   def apply(
-    imageDisplayOptions: ImageDisplayOptions | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions * / any */ String) = null,
-    items: js.Array[IBrowseCarouselCardItem] = null
+    imageDisplayOptions: js.UndefOr[
+      Null | ImageDisplayOptions | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions * / any */ String)
+    ] = js.undefined,
+    items: js.UndefOr[Null | js.Array[IBrowseCarouselCardItem]] = js.undefined
   ): IBrowseCarouselCard = {
     val __obj = js.Dynamic.literal()
-    if (imageDisplayOptions != null) __obj.updateDynamic("imageDisplayOptions")(imageDisplayOptions.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageDisplayOptions)) __obj.updateDynamic("imageDisplayOptions")(imageDisplayOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBrowseCarouselCard]
   }
 }

@@ -17,27 +17,37 @@ import scala.scalajs.js.annotation._
   *
   * NOTE: 'params' can be omitted.
   */
-@JSGlobal("jsrsasign.KJUR.asn1.DERAbstractString")
-@js.native
-class DERAbstractString () extends js.Object {
-  def this(params: HexParam) = this()
-  def this(params: StringParam) = this()
-  var s: String = js.native
-  def getFreshValueHex(): String = js.native
+trait DERAbstractString extends js.Object {
+  var s: String
+  def getFreshValueHex(): String
   /**
     * get string value of this string object
     * @return string value of this string object
     */
-  def getString(): String = js.native
+  def getString(): String
   /**
     * set value by a string
     * @param newS value by a string to set
     */
-  def setString(newS: String): Unit = js.native
+  def setString(newS: String): Unit
   /**
     * set value by a hexadecimal string
     * @param newHexString value by a hexadecimal string to set
     */
-  def setStringHex(newHexString: String): Unit = js.native
+  def setStringHex(newHexString: String): Unit
+}
+
+object DERAbstractString {
+  @scala.inline
+  def apply(
+    getFreshValueHex: () => String,
+    getString: () => String,
+    s: String,
+    setString: String => Unit,
+    setStringHex: String => Unit
+  ): DERAbstractString = {
+    val __obj = js.Dynamic.literal(getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getString = js.Any.fromFunction0(getString), s = s.asInstanceOf[js.Any], setString = js.Any.fromFunction1(setString), setStringHex = js.Any.fromFunction1(setStringHex))
+    __obj.asInstanceOf[DERAbstractString]
+  }
 }
 

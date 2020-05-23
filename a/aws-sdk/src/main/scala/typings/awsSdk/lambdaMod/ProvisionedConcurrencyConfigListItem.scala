@@ -39,20 +39,20 @@ trait ProvisionedConcurrencyConfigListItem extends js.Object {
 object ProvisionedConcurrencyConfigListItem {
   @scala.inline
   def apply(
-    AllocatedProvisionedConcurrentExecutions: Int | Double = null,
-    AvailableProvisionedConcurrentExecutions: Int | Double = null,
+    AllocatedProvisionedConcurrentExecutions: js.UndefOr[NonNegativeInteger] = js.undefined,
+    AvailableProvisionedConcurrentExecutions: js.UndefOr[NonNegativeInteger] = js.undefined,
     FunctionArn: FunctionArn = null,
     LastModified: Timestamp = null,
-    RequestedProvisionedConcurrentExecutions: Int | Double = null,
+    RequestedProvisionedConcurrentExecutions: js.UndefOr[PositiveInteger] = js.undefined,
     Status: ProvisionedConcurrencyStatusEnum = null,
     StatusReason: String = null
   ): ProvisionedConcurrencyConfigListItem = {
     val __obj = js.Dynamic.literal()
-    if (AllocatedProvisionedConcurrentExecutions != null) __obj.updateDynamic("AllocatedProvisionedConcurrentExecutions")(AllocatedProvisionedConcurrentExecutions.asInstanceOf[js.Any])
-    if (AvailableProvisionedConcurrentExecutions != null) __obj.updateDynamic("AvailableProvisionedConcurrentExecutions")(AvailableProvisionedConcurrentExecutions.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllocatedProvisionedConcurrentExecutions)) __obj.updateDynamic("AllocatedProvisionedConcurrentExecutions")(AllocatedProvisionedConcurrentExecutions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AvailableProvisionedConcurrentExecutions)) __obj.updateDynamic("AvailableProvisionedConcurrentExecutions")(AvailableProvisionedConcurrentExecutions.get.asInstanceOf[js.Any])
     if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (RequestedProvisionedConcurrentExecutions != null) __obj.updateDynamic("RequestedProvisionedConcurrentExecutions")(RequestedProvisionedConcurrentExecutions.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequestedProvisionedConcurrentExecutions)) __obj.updateDynamic("RequestedProvisionedConcurrentExecutions")(RequestedProvisionedConcurrentExecutions.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedConcurrencyConfigListItem]

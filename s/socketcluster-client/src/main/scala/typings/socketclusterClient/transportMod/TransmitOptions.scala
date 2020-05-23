@@ -12,7 +12,7 @@ object TransmitOptions {
   @scala.inline
   def apply(force: js.UndefOr[Boolean] = js.undefined): TransmitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransmitOptions]
   }
 }

@@ -93,20 +93,20 @@ object WindowsPhone81GeneralConfiguration {
     microsoftAccountBlocked: js.UndefOr[Boolean] = js.undefined,
     nfcBlocked: js.UndefOr[Boolean] = js.undefined,
     passwordBlockSimple: js.UndefOr[Boolean] = js.undefined,
-    passwordExpirationDays: Int | Double = null,
-    passwordMinimumCharacterSetCount: Int | Double = null,
-    passwordMinimumLength: Int | Double = null,
-    passwordMinutesOfInactivityBeforeScreenTimeout: Int | Double = null,
-    passwordPreviousPasswordBlockCount: Int | Double = null,
+    passwordExpirationDays: js.UndefOr[Double] = js.undefined,
+    passwordMinimumCharacterSetCount: js.UndefOr[Double] = js.undefined,
+    passwordMinimumLength: js.UndefOr[Double] = js.undefined,
+    passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[Double] = js.undefined,
+    passwordPreviousPasswordBlockCount: js.UndefOr[Double] = js.undefined,
     passwordRequired: js.UndefOr[Boolean] = js.undefined,
     passwordRequiredType: RequiredPasswordType = null,
-    passwordSignInFailureCountBeforeFactoryReset: Int | Double = null,
+    passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[Double] = js.undefined,
     screenCaptureBlocked: js.UndefOr[Boolean] = js.undefined,
     storageBlockRemovableStorage: js.UndefOr[Boolean] = js.undefined,
     storageRequireEncryption: js.UndefOr[Boolean] = js.undefined,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     webBrowserBlocked: js.UndefOr[Boolean] = js.undefined,
     wifiBlockAutomaticConnectHotspots: js.UndefOr[Boolean] = js.undefined,
     wifiBlockHotspotReporting: js.UndefOr[Boolean] = js.undefined,
@@ -114,12 +114,12 @@ object WindowsPhone81GeneralConfiguration {
     windowsStoreBlocked: js.UndefOr[Boolean] = js.undefined
   ): WindowsPhone81GeneralConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyOnlyToWindowsPhone81)) __obj.updateDynamic("applyOnlyToWindowsPhone81")(applyOnlyToWindowsPhone81.asInstanceOf[js.Any])
-    if (!js.isUndefined(appsBlockCopyPaste)) __obj.updateDynamic("appsBlockCopyPaste")(appsBlockCopyPaste.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyOnlyToWindowsPhone81)) __obj.updateDynamic("applyOnlyToWindowsPhone81")(applyOnlyToWindowsPhone81.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appsBlockCopyPaste)) __obj.updateDynamic("appsBlockCopyPaste")(appsBlockCopyPaste.get.asInstanceOf[js.Any])
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothBlocked)) __obj.updateDynamic("bluetoothBlocked")(bluetoothBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(cameraBlocked)) __obj.updateDynamic("cameraBlocked")(cameraBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularBlockWifiTethering)) __obj.updateDynamic("cellularBlockWifiTethering")(cellularBlockWifiTethering.asInstanceOf[js.Any])
+    if (!js.isUndefined(bluetoothBlocked)) __obj.updateDynamic("bluetoothBlocked")(bluetoothBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cameraBlocked)) __obj.updateDynamic("cameraBlocked")(cameraBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularBlockWifiTethering)) __obj.updateDynamic("cellularBlockWifiTethering")(cellularBlockWifiTethering.get.asInstanceOf[js.Any])
     if (compliantAppListType != null) __obj.updateDynamic("compliantAppListType")(compliantAppListType.asInstanceOf[js.Any])
     if (compliantAppsList != null) __obj.updateDynamic("compliantAppsList")(compliantAppsList.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
@@ -127,34 +127,34 @@ object WindowsPhone81GeneralConfiguration {
     if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
     if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
     if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(diagnosticDataBlockSubmission)) __obj.updateDynamic("diagnosticDataBlockSubmission")(diagnosticDataBlockSubmission.asInstanceOf[js.Any])
+    if (!js.isUndefined(diagnosticDataBlockSubmission)) __obj.updateDynamic("diagnosticDataBlockSubmission")(diagnosticDataBlockSubmission.get.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailBlockAddingAccounts)) __obj.updateDynamic("emailBlockAddingAccounts")(emailBlockAddingAccounts.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailBlockAddingAccounts)) __obj.updateDynamic("emailBlockAddingAccounts")(emailBlockAddingAccounts.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(locationServicesBlocked)) __obj.updateDynamic("locationServicesBlocked")(locationServicesBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(microsoftAccountBlocked)) __obj.updateDynamic("microsoftAccountBlocked")(microsoftAccountBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(nfcBlocked)) __obj.updateDynamic("nfcBlocked")(nfcBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordBlockSimple)) __obj.updateDynamic("passwordBlockSimple")(passwordBlockSimple.asInstanceOf[js.Any])
-    if (passwordExpirationDays != null) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.asInstanceOf[js.Any])
-    if (passwordMinimumCharacterSetCount != null) __obj.updateDynamic("passwordMinimumCharacterSetCount")(passwordMinimumCharacterSetCount.asInstanceOf[js.Any])
-    if (passwordMinimumLength != null) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.asInstanceOf[js.Any])
-    if (passwordMinutesOfInactivityBeforeScreenTimeout != null) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.asInstanceOf[js.Any])
-    if (passwordPreviousPasswordBlockCount != null) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationServicesBlocked)) __obj.updateDynamic("locationServicesBlocked")(locationServicesBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(microsoftAccountBlocked)) __obj.updateDynamic("microsoftAccountBlocked")(microsoftAccountBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nfcBlocked)) __obj.updateDynamic("nfcBlocked")(nfcBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordBlockSimple)) __obj.updateDynamic("passwordBlockSimple")(passwordBlockSimple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordExpirationDays)) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumCharacterSetCount)) __obj.updateDynamic("passwordMinimumCharacterSetCount")(passwordMinimumCharacterSetCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumLength)) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinutesOfInactivityBeforeScreenTimeout)) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordPreviousPasswordBlockCount)) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.get.asInstanceOf[js.Any])
     if (passwordRequiredType != null) __obj.updateDynamic("passwordRequiredType")(passwordRequiredType.asInstanceOf[js.Any])
-    if (passwordSignInFailureCountBeforeFactoryReset != null) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenCaptureBlocked)) __obj.updateDynamic("screenCaptureBlocked")(screenCaptureBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageBlockRemovableStorage)) __obj.updateDynamic("storageBlockRemovableStorage")(storageBlockRemovableStorage.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageRequireEncryption)) __obj.updateDynamic("storageRequireEncryption")(storageRequireEncryption.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordSignInFailureCountBeforeFactoryReset)) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenCaptureBlocked)) __obj.updateDynamic("screenCaptureBlocked")(screenCaptureBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageBlockRemovableStorage)) __obj.updateDynamic("storageBlockRemovableStorage")(storageBlockRemovableStorage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageRequireEncryption)) __obj.updateDynamic("storageRequireEncryption")(storageRequireEncryption.get.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(webBrowserBlocked)) __obj.updateDynamic("webBrowserBlocked")(webBrowserBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(wifiBlockAutomaticConnectHotspots)) __obj.updateDynamic("wifiBlockAutomaticConnectHotspots")(wifiBlockAutomaticConnectHotspots.asInstanceOf[js.Any])
-    if (!js.isUndefined(wifiBlockHotspotReporting)) __obj.updateDynamic("wifiBlockHotspotReporting")(wifiBlockHotspotReporting.asInstanceOf[js.Any])
-    if (!js.isUndefined(wifiBlocked)) __obj.updateDynamic("wifiBlocked")(wifiBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsStoreBlocked)) __obj.updateDynamic("windowsStoreBlocked")(windowsStoreBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webBrowserBlocked)) __obj.updateDynamic("webBrowserBlocked")(webBrowserBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wifiBlockAutomaticConnectHotspots)) __obj.updateDynamic("wifiBlockAutomaticConnectHotspots")(wifiBlockAutomaticConnectHotspots.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wifiBlockHotspotReporting)) __obj.updateDynamic("wifiBlockHotspotReporting")(wifiBlockHotspotReporting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wifiBlocked)) __obj.updateDynamic("wifiBlocked")(wifiBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsStoreBlocked)) __obj.updateDynamic("windowsStoreBlocked")(windowsStoreBlocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsPhone81GeneralConfiguration]
   }
 }

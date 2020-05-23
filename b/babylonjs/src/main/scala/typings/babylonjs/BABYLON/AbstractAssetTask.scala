@@ -1,20 +1,12 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonException
+import typings.babylonjs.anon.Exception
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.AbstractAssetTask")
 @js.native
-abstract class AbstractAssetTask protected () extends js.Object {
-  /**
-    * Creates a new AssetsManager
-    * @param name defines the name of the task
-    */
-  def this(/**
-    * Task name
-    */ name: String) = this()
+trait AbstractAssetTask extends js.Object {
   var _errorObject: js.Any = js.native
   var _isCompleted: js.Any = js.native
   var _taskState: js.Any = js.native
@@ -33,7 +25,7 @@ abstract class AbstractAssetTask protected () extends js.Object {
   /**
     * Gets the current error object (if task is in error)
     */
-  def errorObject: AnonException = js.native
+  def errorObject: Exception = js.native
   /**
     * Get if the task is completed
     */

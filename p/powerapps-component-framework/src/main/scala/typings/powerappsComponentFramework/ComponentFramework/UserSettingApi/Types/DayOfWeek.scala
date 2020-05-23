@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Day Of Week Enum
-			 * 0 - Sunday,
-			 * 1 - Monday,
-			 * 2 - Tuesday,
-			 * 3 - Wednesday,
-			 * 4 - Thursday,
-			 * 5 - Friday,
-			 * 6 - Saturday
-			 */
+  * Day Of Week Enum
+  * 0 - Sunday,
+  * 1 - Monday,
+  * 2 - Tuesday,
+  * 3 - Wednesday,
+  * 4 - Thursday,
+  * 5 - Friday,
+  * 6 - Saturday
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`

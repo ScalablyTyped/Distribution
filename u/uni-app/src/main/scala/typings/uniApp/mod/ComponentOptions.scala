@@ -16,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.uniApp.App.AppInstance because var conflicts: onHide, onShow. Inlined globalData, onLaunch, onError, onPageNotFound, onUniNViewMessage */ trait ComponentOptions[V /* <: Vue */]
   extends PageInstance[js.Any, js.Any] {
   /**
@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation._
 
 object ComponentOptions {
   @scala.inline
-  def apply[V /* <: Vue */](
+  def apply[V](
     globalData: AnyObject = null,
     mpType: String = null,
     onBackPress: /* options */ BackPressOption => _ = null,

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/symbol/has-instance", JSImport.Namespace)
 @js.native
 object symbolHasInstanceMod
-  extends TopLevel[js.Symbol]
+  extends TopLevel[js.Any]
 

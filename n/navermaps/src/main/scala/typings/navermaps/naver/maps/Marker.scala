@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.Marker")
 @js.native
-class Marker protected () extends OverlayView {
-  def this(options: MarkerOptions) = this()
+trait Marker extends OverlayView {
   def getAnimation(): Animation = js.native
   def getClickable(): Boolean = js.native
   def getCursor(): String = js.native

@@ -1,7 +1,8 @@
 package typings.surveyKnockout.mod
 
 import typings.std.File
-import typings.surveyKnockout.AnonName
+import typings.surveyKnockout.anon.Calculations
+import typings.surveyKnockout.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,6 +95,7 @@ class QuestionFileModel protected () extends Question {
     * The remove file confirmation message.
     */
   def getConfirmRemoveMessage(fileName: String): String = js.native
+  def getPlainData(options: Calculations): js.Any = js.native
   /**
     * Load multiple files programmatically.
     * @param files
@@ -102,7 +104,7 @@ class QuestionFileModel protected () extends Question {
   /**
     * Remove file item programmatically.
     */
-  def removeFile(content: AnonName): Unit = js.native
+  def removeFile(content: Name): Unit = js.native
   /* protected */ def stateChanged(state: String): Unit = js.native
 }
 

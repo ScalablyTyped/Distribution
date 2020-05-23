@@ -69,18 +69,18 @@ object InlineQueryResult {
     input_message_content: InputMessageContent = null,
     last_name: String = null,
     reply_markup: InlineKeyboardMarkup = null,
-    thumb_height: Int | Double = null,
+    thumb_height: js.UndefOr[Double] = js.undefined,
     thumb_url: String = null,
-    thumb_width: Int | Double = null
+    thumb_width: js.UndefOr[Double] = js.undefined
   ): InlineQueryResult = {
     val __obj = js.Dynamic.literal(first_name = first_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (thumb_height != null) __obj.updateDynamic("thumb_height")(thumb_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_height)) __obj.updateDynamic("thumb_height")(thumb_height.get.asInstanceOf[js.Any])
     if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
-    if (thumb_width != null) __obj.updateDynamic("thumb_width")(thumb_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_width)) __obj.updateDynamic("thumb_width")(thumb_width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResult]
   }
   @scala.inline
@@ -90,9 +90,9 @@ object InlineQueryResult {
     `type`: mpeg4_gif,
     caption: String = null,
     input_message_content: InputMessageContent = null,
-    mpeg4_duration: Int | Double = null,
-    mpeg4_height: Int | Double = null,
-    mpeg4_width: Int | Double = null,
+    mpeg4_duration: js.UndefOr[Double] = js.undefined,
+    mpeg4_height: js.UndefOr[Double] = js.undefined,
+    mpeg4_width: js.UndefOr[Double] = js.undefined,
     reply_markup: InlineKeyboardMarkup = null,
     thumb_url: String = null,
     title: String = null
@@ -101,9 +101,9 @@ object InlineQueryResult {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
-    if (mpeg4_duration != null) __obj.updateDynamic("mpeg4_duration")(mpeg4_duration.asInstanceOf[js.Any])
-    if (mpeg4_height != null) __obj.updateDynamic("mpeg4_height")(mpeg4_height.asInstanceOf[js.Any])
-    if (mpeg4_width != null) __obj.updateDynamic("mpeg4_width")(mpeg4_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(mpeg4_duration)) __obj.updateDynamic("mpeg4_duration")(mpeg4_duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mpeg4_height)) __obj.updateDynamic("mpeg4_height")(mpeg4_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mpeg4_width)) __obj.updateDynamic("mpeg4_width")(mpeg4_width.get.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
@@ -156,9 +156,9 @@ object InlineQueryResult {
     description: String = null,
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null,
-    video_duration: Int | Double = null,
-    video_height: Int | Double = null,
-    video_width: Int | Double = null
+    video_duration: js.UndefOr[Double] = js.undefined,
+    video_height: js.UndefOr[Double] = js.undefined,
+    video_width: js.UndefOr[Double] = js.undefined
   ): InlineQueryResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], thumb_url = thumb_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], video_url = video_url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -166,9 +166,9 @@ object InlineQueryResult {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (video_duration != null) __obj.updateDynamic("video_duration")(video_duration.asInstanceOf[js.Any])
-    if (video_height != null) __obj.updateDynamic("video_height")(video_height.asInstanceOf[js.Any])
-    if (video_width != null) __obj.updateDynamic("video_width")(video_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(video_duration)) __obj.updateDynamic("video_duration")(video_duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(video_height)) __obj.updateDynamic("video_height")(video_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(video_width)) __obj.updateDynamic("video_width")(video_width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResult]
   }
   @scala.inline
@@ -187,14 +187,14 @@ object InlineQueryResult {
     caption: String = null,
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null,
-    voice_duration: Int | Double = null
+    voice_duration: js.UndefOr[Double] = js.undefined
   ): InlineQueryResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], voice_url = voice_url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (voice_duration != null) __obj.updateDynamic("voice_duration")(voice_duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(voice_duration)) __obj.updateDynamic("voice_duration")(voice_duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResult]
   }
   @scala.inline
@@ -256,9 +256,9 @@ object InlineQueryResult {
     id: String,
     `type`: gif,
     caption: String = null,
-    gif_duration: Int | Double = null,
-    gif_height: Int | Double = null,
-    gif_width: Int | Double = null,
+    gif_duration: js.UndefOr[Double] = js.undefined,
+    gif_height: js.UndefOr[Double] = js.undefined,
+    gif_width: js.UndefOr[Double] = js.undefined,
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null,
     thumb_url: String = null,
@@ -267,9 +267,9 @@ object InlineQueryResult {
     val __obj = js.Dynamic.literal(gif_url = gif_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (gif_duration != null) __obj.updateDynamic("gif_duration")(gif_duration.asInstanceOf[js.Any])
-    if (gif_height != null) __obj.updateDynamic("gif_height")(gif_height.asInstanceOf[js.Any])
-    if (gif_width != null) __obj.updateDynamic("gif_width")(gif_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(gif_duration)) __obj.updateDynamic("gif_duration")(gif_duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gif_height)) __obj.updateDynamic("gif_height")(gif_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gif_width)) __obj.updateDynamic("gif_width")(gif_width.get.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
@@ -285,8 +285,8 @@ object InlineQueryResult {
     caption: String = null,
     description: String = null,
     input_message_content: InputMessageContent = null,
-    photo_height: Int | Double = null,
-    photo_width: Int | Double = null,
+    photo_height: js.UndefOr[Double] = js.undefined,
+    photo_width: js.UndefOr[Double] = js.undefined,
     reply_markup: InlineKeyboardMarkup = null,
     title: String = null
   ): InlineQueryResult = {
@@ -295,8 +295,8 @@ object InlineQueryResult {
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
-    if (photo_height != null) __obj.updateDynamic("photo_height")(photo_height.asInstanceOf[js.Any])
-    if (photo_width != null) __obj.updateDynamic("photo_width")(photo_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(photo_height)) __obj.updateDynamic("photo_height")(photo_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(photo_width)) __obj.updateDynamic("photo_width")(photo_width.get.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResult]
@@ -310,19 +310,19 @@ object InlineQueryResult {
     description: String = null,
     hide_url: js.UndefOr[Boolean] = js.undefined,
     reply_markup: InlineKeyboardMarkup = null,
-    thumb_height: Int | Double = null,
+    thumb_height: js.UndefOr[Double] = js.undefined,
     thumb_url: String = null,
-    thumb_width: Int | Double = null,
+    thumb_width: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): InlineQueryResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], input_message_content = input_message_content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide_url)) __obj.updateDynamic("hide_url")(hide_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide_url)) __obj.updateDynamic("hide_url")(hide_url.get.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (thumb_height != null) __obj.updateDynamic("thumb_height")(thumb_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_height)) __obj.updateDynamic("thumb_height")(thumb_height.get.asInstanceOf[js.Any])
     if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
-    if (thumb_width != null) __obj.updateDynamic("thumb_width")(thumb_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_width)) __obj.updateDynamic("thumb_width")(thumb_width.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResult]
   }
@@ -332,7 +332,7 @@ object InlineQueryResult {
     id: String,
     title: String,
     `type`: audio,
-    audio_duration: Int | Double = null,
+    audio_duration: js.UndefOr[Double] = js.undefined,
     caption: String = null,
     input_message_content: InputMessageContent = null,
     performer: String = null,
@@ -340,7 +340,7 @@ object InlineQueryResult {
   ): InlineQueryResult = {
     val __obj = js.Dynamic.literal(audio_url = audio_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (audio_duration != null) __obj.updateDynamic("audio_duration")(audio_duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(audio_duration)) __obj.updateDynamic("audio_duration")(audio_duration.get.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])
@@ -375,17 +375,17 @@ object InlineQueryResult {
     `type`: location,
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null,
-    thumb_height: Int | Double = null,
+    thumb_height: js.UndefOr[Double] = js.undefined,
     thumb_url: String = null,
-    thumb_width: Int | Double = null
+    thumb_width: js.UndefOr[Double] = js.undefined
   ): InlineQueryResult = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (thumb_height != null) __obj.updateDynamic("thumb_height")(thumb_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_height)) __obj.updateDynamic("thumb_height")(thumb_height.get.asInstanceOf[js.Any])
     if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
-    if (thumb_width != null) __obj.updateDynamic("thumb_width")(thumb_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_width)) __obj.updateDynamic("thumb_width")(thumb_width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResult]
   }
   @scala.inline
@@ -415,9 +415,9 @@ object InlineQueryResult {
     description: String = null,
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null,
-    thumb_height: Int | Double = null,
+    thumb_height: js.UndefOr[Double] = js.undefined,
     thumb_url: String = null,
-    thumb_width: Int | Double = null
+    thumb_width: js.UndefOr[Double] = js.undefined
   ): InlineQueryResult = {
     val __obj = js.Dynamic.literal(document_url = document_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -425,9 +425,9 @@ object InlineQueryResult {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (thumb_height != null) __obj.updateDynamic("thumb_height")(thumb_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_height)) __obj.updateDynamic("thumb_height")(thumb_height.get.asInstanceOf[js.Any])
     if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
-    if (thumb_width != null) __obj.updateDynamic("thumb_width")(thumb_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_width)) __obj.updateDynamic("thumb_width")(thumb_width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResult]
   }
   @scala.inline
@@ -441,18 +441,18 @@ object InlineQueryResult {
     foursquare_id: String = null,
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null,
-    thumb_height: Int | Double = null,
+    thumb_height: js.UndefOr[Double] = js.undefined,
     thumb_url: String = null,
-    thumb_width: Int | Double = null
+    thumb_width: js.UndefOr[Double] = js.undefined
   ): InlineQueryResult = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (foursquare_id != null) __obj.updateDynamic("foursquare_id")(foursquare_id.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (thumb_height != null) __obj.updateDynamic("thumb_height")(thumb_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_height)) __obj.updateDynamic("thumb_height")(thumb_height.get.asInstanceOf[js.Any])
     if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
-    if (thumb_width != null) __obj.updateDynamic("thumb_width")(thumb_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb_width)) __obj.updateDynamic("thumb_width")(thumb_width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResult]
   }
 }

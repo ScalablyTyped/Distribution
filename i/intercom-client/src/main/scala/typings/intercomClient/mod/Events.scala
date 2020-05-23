@@ -1,6 +1,6 @@
 package typings.intercomClient.mod
 
-import typings.intercomClient.PartialEvent
+import typings.intercomClient.anon.PartialEvent
 import typings.intercomClient.companyMod.List
 import typings.intercomClient.eventMod.ListParam
 import typings.node.httpMod.IncomingMessage

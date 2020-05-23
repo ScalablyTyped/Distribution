@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonDimensions
+import typings.cesium.anon.Dimensions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "BoxGraphics")
 @js.native
 class BoxGraphics () extends js.Object {
-  def this(options: AnonDimensions) = this()
+  def this(options: Dimensions) = this()
   var definitionChanged: Event[js.Array[_]] = js.native
   var dimensions: Property = js.native
   var fill: Property = js.native

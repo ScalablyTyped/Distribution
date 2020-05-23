@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object closeWindow extends js.Object {
   /**
-  	 * 关闭当前网页窗口接口
-  	 */
+    * 关闭当前网页窗口接口
+    */
   def apply(): Unit = js.native
 }
 

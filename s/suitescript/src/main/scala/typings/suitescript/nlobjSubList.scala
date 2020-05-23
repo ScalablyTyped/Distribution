@@ -19,7 +19,7 @@ trait nlobjSubList
   *
   * @return
   */
-Instantiable0[/* nlobjSubList */ js.Any] {
+Instantiable0[js.Any] {
   /**
     * add a button to this sublist.
     *

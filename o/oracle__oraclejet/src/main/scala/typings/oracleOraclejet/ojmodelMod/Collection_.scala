@@ -1,15 +1,15 @@
 package typings.oracleOraclejet.ojmodelMod
 
-import typings.oracleOraclejet.AnonAdd
-import typings.oracleOraclejet.AnonAt
-import typings.oracleOraclejet.AnonDeferred
-import typings.oracleOraclejet.AnonDictpropNameDeferred
-import typings.oracleOraclejet.AnonDictpropNameSilent
-import typings.oracleOraclejet.AnonError
-import typings.oracleOraclejet.AnonMerge
-import typings.oracleOraclejet.AnonSilent
-import typings.oracleOraclejet.AnonStartIndex
-import typings.oracleOraclejet.AnonSuccess
+import typings.oracleOraclejet.anon.Add
+import typings.oracleOraclejet.anon.At
+import typings.oracleOraclejet.anon.Deferred
+import typings.oracleOraclejet.anon.DictpropNameDeferred
+import typings.oracleOraclejet.anon.DictpropNameSilent
+import typings.oracleOraclejet.anon.Error
+import typings.oracleOraclejet.anon.Merge
+import typings.oracleOraclejet.anon.Silent
+import typings.oracleOraclejet.anon.StartIndex
+import typings.oracleOraclejet.anon.Success
 import typings.oracleOraclejet.ojmodelMod.Collection.CustomPagingOptionsReturn
 import typings.oracleOraclejet.ojmodelMod.Collection.SetRangeLocalPromise
 import scala.scalajs.js
@@ -45,31 +45,31 @@ class Collection_ () extends js.Object {
   var url: Null | String | js.Function0[String] = js.native
   def abort(): js.Promise[Null] = js.native
   def add(m: js.Array[Model | js.Object]): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
-  def add(m: js.Array[Model | js.Object], options: AnonAt): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
+  def add(m: js.Array[Model | js.Object], options: At): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def add(m: js.Object): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
-  def add(m: js.Object, options: AnonAt): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
+  def add(m: js.Object, options: At): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def add(m: Model): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
-  def add(m: Model, options: AnonAt): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
+  def add(m: Model, options: At): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def any(iterator: js.Function1[/* param0 */ js.Object, Unit]): Boolean = js.native
   def any(iterator: js.Function1[/* param0 */ js.Object, Unit], context: js.Object): Boolean = js.native
   def at(index: Double): Model | js.Promise[Model] | Null = js.native
-  def at(index: Double, options: AnonDeferred): Model | js.Promise[Model] | Null = js.native
+  def at(index: Double, options: Deferred): Model | js.Promise[Model] | Null = js.native
   def contains(model: js.Object): Boolean | js.Promise[Boolean] = js.native
   def contains(model: js.Object, options: js.Object): Boolean | js.Promise[Boolean] = js.native
   def create(): Model | Boolean | js.Promise[Model] = js.native
   def create(attributes: js.Object): Model | Boolean | js.Promise[Model] = js.native
-  def create(attributes: js.Object, options: AnonAt): Model | Boolean | js.Promise[Model] = js.native
+  def create(attributes: js.Object, options: At): Model | Boolean | js.Promise[Model] = js.native
   def difference(var_args: js.Array[Model]*): js.Array[Model] = js.native
   def each(iterator: js.Function1[/* param0 */ Model, Unit]): js.UndefOr[scala.Nothing] = js.native
   def each(iterator: js.Function1[/* param0 */ Model, Unit], context: js.Object): js.UndefOr[scala.Nothing] = js.native
   def fetch(): js.Object = js.native
-  def fetch(options: AnonAdd): js.Object = js.native
+  def fetch(options: Add): js.Object = js.native
   def filter(iterator: js.Function1[/* param0 */ Model, Unit]): js.Array[Model] = js.native
   def filter(iterator: js.Function1[/* param0 */ Model, Unit], context: js.Object): js.Array[Model] = js.native
   def findWhere(attrs: js.Array[js.Object]): Model | js.Promise[Model] = js.native
-  def findWhere(attrs: js.Array[js.Object], options: AnonDictpropNameDeferred): Model | js.Promise[Model] = js.native
+  def findWhere(attrs: js.Array[js.Object], options: DictpropNameDeferred): Model | js.Promise[Model] = js.native
   def findWhere(attrs: js.Object): Model | js.Promise[Model] = js.native
-  def findWhere(attrs: js.Object, options: AnonDictpropNameDeferred): Model | js.Promise[Model] = js.native
+  def findWhere(attrs: js.Object, options: DictpropNameDeferred): Model | js.Promise[Model] = js.native
   def first(): js.Array[Model] | Null | js.Promise[_] = js.native
   def first(n: Double): js.Array[Model] | Null | js.Promise[_] = js.native
   def first(n: Double, options: js.Object): js.Array[Model] | Null | js.Promise[_] = js.native
@@ -117,7 +117,7 @@ class Collection_ () extends js.Object {
   def min(iterator: js.Function1[/* param0 */ js.Object, Unit], context: js.Object): js.Object = js.native
   def modelId(attrs: js.Object): Null | String = js.native
   def next(n: Double): js.Object | Null = js.native
-  def next(n: Double, options: AnonError): js.Object | Null = js.native
+  def next(n: Double, options: Error): js.Object | Null = js.native
   def off(): js.UndefOr[scala.Nothing] = js.native
   def off(eventType: String): js.UndefOr[scala.Nothing] = js.native
   def off(eventType: String, callback: js.Function2[/* eventType */ String, /* data */ js.Object, Unit]): js.UndefOr[scala.Nothing] = js.native
@@ -154,27 +154,27 @@ class Collection_ () extends js.Object {
   def parse(param0: js.Object): js.Object = js.native
   def pluck(attr: String): js.Array[js.Object] = js.native
   def pop(): Model | js.Promise[Model] = js.native
-  def pop(options: AnonSilent): Model | js.Promise[Model] = js.native
+  def pop(options: Silent): Model | js.Promise[Model] = js.native
   def previous(n: Double): js.Object = js.native
-  def previous(n: Double, options: AnonError): js.Object = js.native
+  def previous(n: Double, options: Error): js.Object = js.native
   def push(m: js.Object): js.UndefOr[js.Promise[js.Array[Model]]] = js.native
-  def push(m: js.Object, options: AnonAt): js.UndefOr[js.Promise[js.Array[Model]]] = js.native
+  def push(m: js.Object, options: At): js.UndefOr[js.Promise[js.Array[Model]]] = js.native
   def push(m: Model): js.UndefOr[js.Promise[js.Array[Model]]] = js.native
-  def push(m: Model, options: AnonAt): js.UndefOr[js.Promise[js.Array[Model]]] = js.native
+  def push(m: Model, options: At): js.UndefOr[js.Promise[js.Array[Model]]] = js.native
   def refresh(): js.Promise[js.UndefOr[SetRangeLocalPromise]] = js.native
-  def refresh(options: AnonStartIndex): js.Promise[js.UndefOr[SetRangeLocalPromise]] = js.native
+  def refresh(options: StartIndex): js.Promise[js.UndefOr[SetRangeLocalPromise]] = js.native
   def remove(m: js.Array[Model]): js.Array[Model] | js.Object = js.native
   def remove(m: js.Array[Model], options: js.Object): js.Array[Model] | js.Object = js.native
   def remove(m: Model): js.Array[Model] | js.Object = js.native
   def remove(m: Model, options: js.Object): js.Array[Model] | js.Object = js.native
   def reset(): Model | js.Array[Model] = js.native
   def reset(data: js.Object): Model | js.Array[Model] = js.native
-  def reset(data: js.Object, options: AnonDictpropNameSilent): Model | js.Array[Model] = js.native
+  def reset(data: js.Object, options: DictpropNameSilent): Model | js.Array[Model] = js.native
   def rest(): js.Array[js.Object] | js.Promise[_] = js.native
   def rest(n: Double): js.Array[js.Object] | js.Promise[_] = js.native
   def rest(n: Double, options: js.Object): js.Array[js.Object] | js.Promise[_] = js.native
   def set(models: js.Object): js.Promise[_] | Null = js.native
-  def set(models: js.Object, options: AnonMerge): js.Promise[_] | Null = js.native
+  def set(models: js.Object, options: Merge): js.Promise[_] | Null = js.native
   def setFetchSize(n: Double): js.UndefOr[scala.Nothing] = js.native
   def setModelLimit(n: Double): js.UndefOr[scala.Nothing] = js.native
   def setRangeLocal(start: Double, count: Double): js.Promise[SetRangeLocalPromise] = js.native
@@ -185,7 +185,7 @@ class Collection_ () extends js.Object {
   def slice(start: Double, end: Double): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def slice(start: Double, end: Double, options: js.Object): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def sort(): js.Promise[SetRangeLocalPromise] | Null = js.native
-  def sort(options: AnonStartIndex): js.Promise[SetRangeLocalPromise] | Null = js.native
+  def sort(options: StartIndex): js.Promise[SetRangeLocalPromise] | Null = js.native
   def sortBy(iterator: String): js.Array[Model] = js.native
   def sortBy(iterator: String, context: js.Object): js.Array[Model] = js.native
   def sortBy(iterator: js.Function1[/* param0 */ Model, js.Object]): js.Array[Model] = js.native
@@ -201,11 +201,11 @@ class Collection_ () extends js.Object {
     callback: js.Function2[/* eventType */ String, /* data */ js.Object, Unit]
   ): js.UndefOr[scala.Nothing] = js.native
   def sync(method: String, collection: Collection): js.Object = js.native
-  def sync(method: String, collection: Collection, options: AnonSuccess): js.Object = js.native
+  def sync(method: String, collection: Collection, options: Success): js.Object = js.native
   def toJSON(): js.Array[js.Object] = js.native
   def trigger(eventType: String): js.UndefOr[scala.Nothing] = js.native
   def unshift(m: js.Object): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
-  def unshift(m: js.Object, options: AnonAt): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
+  def unshift(m: js.Object, options: At): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def whenReady(): js.Promise[_] = js.native
   def where(attrs: js.Array[js.Object]): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def where(attrs: js.Array[js.Object], options: js.Object): js.Promise[js.Array[Model]] | js.Array[Model] = js.native

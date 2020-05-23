@@ -1,7 +1,7 @@
 
 # Scala.js typings for dom-align
 
-Typings are for version 1.10.4
+Typings are for version 1.12.0
 
 ## Library description:
 Align DOM Node Flexibly

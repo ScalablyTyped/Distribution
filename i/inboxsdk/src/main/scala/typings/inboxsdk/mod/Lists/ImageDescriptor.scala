@@ -16,12 +16,12 @@ object ImageDescriptor {
   def apply(
     imageUrl: String,
     imageClass: String = null,
-    orderHint: Int | Double = null,
+    orderHint: js.UndefOr[Double] = js.undefined,
     tooltip: String = null
   ): ImageDescriptor = {
     val __obj = js.Dynamic.literal(imageUrl = imageUrl.asInstanceOf[js.Any])
     if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderHint)) __obj.updateDynamic("orderHint")(orderHint.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageDescriptor]
   }

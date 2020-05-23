@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the TracingStatusChanged event. */
-@JSGlobal("Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs")
-@js.native
-abstract class TracingStatusChangedEventArgs () extends js.Object {
+trait TracingStatusChangedEventArgs extends js.Object {
   /** Gets a value that indicates whether tracing is active. */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   /** Gets the trace level for the current tracing session. */
-  var traceLevel: CausalityTraceLevel = js.native
+  var traceLevel: CausalityTraceLevel
+}
+
+object TracingStatusChangedEventArgs {
+  @scala.inline
+  def apply(enabled: Boolean, traceLevel: CausalityTraceLevel): TracingStatusChangedEventArgs = {
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], traceLevel = traceLevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TracingStatusChangedEventArgs]
+  }
 }
 

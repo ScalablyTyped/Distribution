@@ -15,16 +15,16 @@ trait V1BaseOptions extends js.Object {
 object V1BaseOptions {
   @scala.inline
   def apply(
-    clockseq: Int | Double = null,
+    clockseq: js.UndefOr[Double] = js.undefined,
     msecs: Double | Date = null,
     node: InputBuffer = null,
-    nsecs: Int | Double = null
+    nsecs: js.UndefOr[Double] = js.undefined
   ): V1BaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (clockseq != null) __obj.updateDynamic("clockseq")(clockseq.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockseq)) __obj.updateDynamic("clockseq")(clockseq.get.asInstanceOf[js.Any])
     if (msecs != null) __obj.updateDynamic("msecs")(msecs.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (nsecs != null) __obj.updateDynamic("nsecs")(nsecs.asInstanceOf[js.Any])
+    if (!js.isUndefined(nsecs)) __obj.updateDynamic("nsecs")(nsecs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[V1BaseOptions]
   }
 }

@@ -44,14 +44,14 @@ object AddressCandidateProperties {
     attributes: js.Any = null,
     extent: ExtentProperties = null,
     location: PointProperties = null,
-    score: Int | Double = null
+    score: js.UndefOr[Double] = js.undefined
   ): AddressCandidateProperties = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressCandidateProperties]
   }
 }

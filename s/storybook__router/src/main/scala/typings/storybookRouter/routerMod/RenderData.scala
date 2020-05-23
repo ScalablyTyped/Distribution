@@ -1,5 +1,6 @@
 package typings.storybookRouter.routerMod
 
+import typings.history.mod.LocationState
 import typings.reachRouter.mod.NavigateFn
 import typings.reachRouter.mod.WindowLocation
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 /* Inlined @reach/router.@reach/router.RouteComponentProps<{}> & @storybook/router.@storybook/router/dist/router.Other */
 trait RenderData extends js.Object {
   var default: js.UndefOr[Boolean] = js.undefined
-  var location: js.UndefOr[WindowLocation] = js.undefined
+  var location: js.UndefOr[WindowLocation[LocationState]] = js.undefined
   var navigate: js.UndefOr[NavigateFn] = js.undefined
   var path: js.UndefOr[String] = js.undefined
   var storyId: js.UndefOr[String] = js.undefined
@@ -21,7 +22,7 @@ object RenderData {
   @scala.inline
   def apply(
     default: js.UndefOr[Boolean] = js.undefined,
-    location: WindowLocation = null,
+    location: WindowLocation[LocationState] = null,
     navigate: NavigateFn = null,
     path: String = null,
     storyId: String = null,
@@ -29,7 +30,7 @@ object RenderData {
     viewMode: String = null
   ): RenderData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (navigate != null) __obj.updateDynamic("navigate")(navigate.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])

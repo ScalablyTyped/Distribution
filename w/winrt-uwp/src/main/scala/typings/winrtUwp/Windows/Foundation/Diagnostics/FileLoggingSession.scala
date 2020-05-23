@@ -11,14 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the destination of logged messages from LoggingChannel instances. */
-@JSGlobal("Windows.Foundation.Diagnostics.FileLoggingSession")
 @js.native
-class FileLoggingSession protected () extends js.Object {
-  /**
-    * Initializes a new instance of the FileLoggingSession class.
-    * @param name The name of the logging session.
-    */
-  def this(name: String) = this()
+trait FileLoggingSession extends js.Object {
   /** Gets the name of the logging session. */
   var name: String = js.native
   /** Raised when a log file is saved. */

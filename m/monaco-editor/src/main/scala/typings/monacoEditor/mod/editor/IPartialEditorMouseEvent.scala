@@ -13,8 +13,7 @@ trait IPartialEditorMouseEvent extends js.Object {
 object IPartialEditorMouseEvent {
   @scala.inline
   def apply(event: IMouseEvent, target: IMouseTarget = null): IPartialEditorMouseEvent = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPartialEditorMouseEvent]
   }
 }

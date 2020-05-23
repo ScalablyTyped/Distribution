@@ -18,18 +18,18 @@ object styleObj {
   def apply(
     dashArray: String = null,
     fillColor: String = null,
-    fillOpacity: Int | Double = null,
+    fillOpacity: js.UndefOr[Double] = js.undefined,
     outlineColor: String = null,
-    outlineOpacity: Int | Double = null,
-    outlineThicknessPix: Int | Double = null
+    outlineOpacity: js.UndefOr[Double] = js.undefined,
+    outlineThicknessPix: js.UndefOr[Double] = js.undefined
   ): styleObj = {
     val __obj = js.Dynamic.literal()
     if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
     if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (outlineOpacity != null) __obj.updateDynamic("outlineOpacity")(outlineOpacity.asInstanceOf[js.Any])
-    if (outlineThicknessPix != null) __obj.updateDynamic("outlineThicknessPix")(outlineThicknessPix.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineOpacity)) __obj.updateDynamic("outlineOpacity")(outlineOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineThicknessPix)) __obj.updateDynamic("outlineThicknessPix")(outlineThicknessPix.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[styleObj]
   }
 }

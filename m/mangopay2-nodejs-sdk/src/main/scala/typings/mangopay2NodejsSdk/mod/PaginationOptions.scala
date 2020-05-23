@@ -19,10 +19,10 @@ trait PaginationOptions extends js.Object {
 
 object PaginationOptions {
   @scala.inline
-  def apply(Page: Int | Double = null, Per_Page: Int | Double = null): PaginationOptions = {
+  def apply(Page: js.UndefOr[Double] = js.undefined, Per_Page: js.UndefOr[Double] = js.undefined): PaginationOptions = {
     val __obj = js.Dynamic.literal()
-    if (Page != null) __obj.updateDynamic("Page")(Page.asInstanceOf[js.Any])
-    if (Per_Page != null) __obj.updateDynamic("Per_Page")(Per_Page.asInstanceOf[js.Any])
+    if (!js.isUndefined(Page)) __obj.updateDynamic("Page")(Page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Per_Page)) __obj.updateDynamic("Per_Page")(Per_Page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationOptions]
   }
 }

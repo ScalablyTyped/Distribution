@@ -1,6 +1,6 @@
 package typings.grommet.distributionMod
 
-import typings.grommet.AnonColorValue
+import typings.grommet.anon.ColorValue
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.BasisType
@@ -20,13 +20,13 @@ trait DistributionProps extends js.Object {
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
-  var values: js.Array[AnonColorValue]
+  var values: js.Array[ColorValue]
 }
 
 object DistributionProps {
   @scala.inline
   def apply(
-    values: js.Array[AnonColorValue],
+    values: js.Array[ColorValue],
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     basis: BasisType = null,
@@ -41,7 +41,7 @@ object DistributionProps {
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (basis != null) __obj.updateDynamic("basis")(basis.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

@@ -56,9 +56,9 @@ object TableProperties {
   ): TableProperties = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerRow)) __obj.updateDynamic("headerRow")(headerRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerRow)) __obj.updateDynamic("headerRow")(headerRow.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalsRow)) __obj.updateDynamic("totalsRow")(totalsRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalsRow)) __obj.updateDynamic("totalsRow")(totalsRow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProperties]
   }
 }

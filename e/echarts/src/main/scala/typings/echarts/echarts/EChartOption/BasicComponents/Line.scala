@@ -23,7 +23,7 @@ object Line {
   def apply(
     lineStyle: LineStyle = null,
     onZero: js.UndefOr[Boolean] = js.undefined,
-    onZeroAxisIndex: Int | Double = null,
+    onZeroAxisIndex: js.UndefOr[Double] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,
     symbol: String | js.Array[String] = null,
     symbolOffset: js.Array[Double] = null,
@@ -31,9 +31,9 @@ object Line {
   ): Line = {
     val __obj = js.Dynamic.literal()
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(onZero)) __obj.updateDynamic("onZero")(onZero.asInstanceOf[js.Any])
-    if (onZeroAxisIndex != null) __obj.updateDynamic("onZeroAxisIndex")(onZeroAxisIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(onZero)) __obj.updateDynamic("onZero")(onZero.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onZeroAxisIndex)) __obj.updateDynamic("onZeroAxisIndex")(onZeroAxisIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])

@@ -15,15 +15,15 @@ object RTCOfferOptions {
   @scala.inline
   def apply(
     iceRestart: js.UndefOr[Boolean] = js.undefined,
-    offerToReceiveAudio: Int | Double = null,
-    offerToReceiveVideo: Int | Double = null,
+    offerToReceiveAudio: js.UndefOr[Double] = js.undefined,
+    offerToReceiveVideo: js.UndefOr[Double] = js.undefined,
     voiceActivityDetection: js.UndefOr[Boolean] = js.undefined
   ): RTCOfferOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(iceRestart)) __obj.updateDynamic("iceRestart")(iceRestart.asInstanceOf[js.Any])
-    if (offerToReceiveAudio != null) __obj.updateDynamic("offerToReceiveAudio")(offerToReceiveAudio.asInstanceOf[js.Any])
-    if (offerToReceiveVideo != null) __obj.updateDynamic("offerToReceiveVideo")(offerToReceiveVideo.asInstanceOf[js.Any])
-    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection.asInstanceOf[js.Any])
+    if (!js.isUndefined(iceRestart)) __obj.updateDynamic("iceRestart")(iceRestart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offerToReceiveAudio)) __obj.updateDynamic("offerToReceiveAudio")(offerToReceiveAudio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offerToReceiveVideo)) __obj.updateDynamic("offerToReceiveVideo")(offerToReceiveVideo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCOfferOptions]
   }
 }

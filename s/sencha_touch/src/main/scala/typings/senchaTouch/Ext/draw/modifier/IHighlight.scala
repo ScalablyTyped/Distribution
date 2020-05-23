@@ -11,28 +11,28 @@ trait IHighlight extends IModifier {
   /** [Config Option] (Boolean) */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /** [Method] Filter modifier changes if overriding source attributes
-  		* @param attr Object The source attributes.
-  		* @param changes Object The modifier changes.
-  		* @returns * The filtered changes.
-  		*/
+    * @param attr Object The source attributes.
+    * @param changes Object The modifier changes.
+    * @returns * The filtered changes.
+    */
   var filterChanges: js.UndefOr[js.Function2[/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the value of enabled
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getEnabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of highlightStyle
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getHighlightStyle: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Object) */
   var highlightStyle: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of enabled
-  		* @param enabled Boolean The new value.
-  		*/
+    * @param enabled Boolean The new value.
+    */
   var setEnabled: js.UndefOr[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of highlightStyle
-  		* @param highlightStyle Object The new value.
-  		*/
+    * @param highlightStyle Object The new value.
+    */
   var setHighlightStyle: js.UndefOr[js.Function1[/* highlightStyle */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -84,7 +84,7 @@ object IHighlight {
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (filterChanges != null) __obj.updateDynamic("filterChanges")(js.Any.fromFunction2(filterChanges))
     if (getEnabled != null) __obj.updateDynamic("getEnabled")(js.Any.fromFunction0(getEnabled))
@@ -109,7 +109,7 @@ object IHighlight {
     if (setNext != null) __obj.updateDynamic("setNext")(js.Any.fromFunction1(setNext))
     if (setPrevious != null) __obj.updateDynamic("setPrevious")(js.Any.fromFunction1(setPrevious))
     if (setSprite != null) __obj.updateDynamic("setSprite")(js.Any.fromFunction1(setSprite))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

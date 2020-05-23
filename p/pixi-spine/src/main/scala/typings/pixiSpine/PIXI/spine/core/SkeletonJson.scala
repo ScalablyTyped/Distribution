@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.SkeletonJson")
 @js.native
-class SkeletonJson protected () extends js.Object {
-  def this(attachmentLoader: AttachmentLoader) = this()
+trait SkeletonJson extends js.Object {
   var attachmentLoader: AttachmentLoader = js.native
   var linkedMeshes: js.Any = js.native
   var scale: Double = js.native
@@ -18,16 +16,5 @@ class SkeletonJson protected () extends js.Object {
   def readSkeletonData(json: String): SkeletonData = js.native
   def readSkeletonData(json: js.Any): SkeletonData = js.native
   def readVertices(map: js.Any, attachment: VertexAttachment, verticesLength: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.spine.core.SkeletonJson")
-@js.native
-object SkeletonJson extends js.Object {
-  def blendModeFromString(str: String): BlendMode = js.native
-  def positionModeFromString(str: String): PositionMode = js.native
-  def rotateModeFromString(str: String): RotateMode = js.native
-  def spacingModeFromString(str: String): SpacingMode = js.native
-  def transformModeFromString(str: String): TransformMode = js.native
 }
 

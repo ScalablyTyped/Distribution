@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object ComposedEmailType extends js.Object {
   
   @js.native
   sealed trait STANDALONE_DRAFT extends ComposedEmailType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ComposedEmailType with Double] = js.native
-  /* 0 */ @js.native
-  object REPLY_AS_DRAFT extends TopLevel[REPLY_AS_DRAFT with Double]
-  
-  /* 1 */ @js.native
-  object STANDALONE_DRAFT extends TopLevel[STANDALONE_DRAFT with Double]
   
 }
 

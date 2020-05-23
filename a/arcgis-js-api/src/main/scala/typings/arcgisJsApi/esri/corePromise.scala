@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,8 +43,4 @@ trait corePromise extends js.Object {
   def when(callback: js.Function): js.Promise[_] = js.native
   def when(callback: js.Function, errback: js.Function): js.Promise[_] = js.native
 }
-
-@JSGlobal("__esri.corePromise")
-@js.native
-object corePromise extends TopLevel[corePromiseConstructor]
 

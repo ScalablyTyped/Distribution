@@ -6,10 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the FocusChanged event. */
-@JSGlobal("Windows.Media.Capture.MediaCaptureFocusChangedEventArgs")
-@js.native
-abstract class MediaCaptureFocusChangedEventArgs () extends js.Object {
+trait MediaCaptureFocusChangedEventArgs extends js.Object {
   /** Gets the current focus state of the capture device. */
-  var focusState: MediaCaptureFocusState = js.native
+  var focusState: MediaCaptureFocusState
+}
+
+object MediaCaptureFocusChangedEventArgs {
+  @scala.inline
+  def apply(focusState: MediaCaptureFocusState): MediaCaptureFocusChangedEventArgs = {
+    val __obj = js.Dynamic.literal(focusState = focusState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaCaptureFocusChangedEventArgs]
+  }
 }
 

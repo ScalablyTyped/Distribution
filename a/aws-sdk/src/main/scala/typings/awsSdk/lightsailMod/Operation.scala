@@ -77,7 +77,7 @@ object Operation {
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
     if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTerminal)) __obj.updateDynamic("isTerminal")(isTerminal.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTerminal)) __obj.updateDynamic("isTerminal")(isTerminal.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (operationDetails != null) __obj.updateDynamic("operationDetails")(operationDetails.asInstanceOf[js.Any])
     if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])

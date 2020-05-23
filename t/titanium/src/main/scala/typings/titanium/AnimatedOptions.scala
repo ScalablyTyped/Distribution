@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
   */
 trait AnimatedOptions extends js.Object {
   /**
-  	 * If `true`, animate a transition for the method/value change.
-  	 * Note that for most uses cases the default is assumed to be `false`. The exceptions tend to be <Titanium.UI.Window> methods.
-  	 */
+    * If `true`, animate a transition for the method/value change.
+    * Note that for most uses cases the default is assumed to be `false`. The exceptions tend to be <Titanium.UI.Window> methods.
+    */
   var animated: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object AnimatedOptions {
   @scala.inline
   def apply(animated: js.UndefOr[Boolean] = js.undefined): AnimatedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedOptions]
   }
 }

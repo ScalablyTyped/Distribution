@@ -26,10 +26,10 @@ trait PivotGroupSortValueBucket extends js.Object {
 
 object PivotGroupSortValueBucket {
   @scala.inline
-  def apply(buckets: js.Array[ExtendedValue] = null, valuesIndex: Int | Double = null): PivotGroupSortValueBucket = {
+  def apply(buckets: js.Array[ExtendedValue] = null, valuesIndex: js.UndefOr[Double] = js.undefined): PivotGroupSortValueBucket = {
     val __obj = js.Dynamic.literal()
     if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
-    if (valuesIndex != null) __obj.updateDynamic("valuesIndex")(valuesIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(valuesIndex)) __obj.updateDynamic("valuesIndex")(valuesIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGroupSortValueBucket]
   }
 }

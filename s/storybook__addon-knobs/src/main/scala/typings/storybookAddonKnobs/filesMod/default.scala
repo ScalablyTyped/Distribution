@@ -3,8 +3,8 @@ package typings.storybookAddonKnobs.filesMod
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
-import typings.storybookAddonKnobs.PartialFilesTypeProps
-import typings.storybookAddonKnobs.WeakValidationMapFilesTyp
+import typings.storybookAddonKnobs.anon.PartialFilesTypeProps
+import typings.storybookAddonKnobs.anon.WeakValidationMapFilesTyp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -40,20 +40,20 @@ object SchemaAttributeType {
   @scala.inline
   def apply(
     AttributeDataType: AttributeDataType = null,
-    DeveloperOnlyAttribute: js.UndefOr[Boolean] = js.undefined,
-    Mutable: js.UndefOr[Boolean] = js.undefined,
+    DeveloperOnlyAttribute: js.UndefOr[BooleanType] = js.undefined,
+    Mutable: js.UndefOr[BooleanType] = js.undefined,
     Name: CustomAttributeNameType = null,
     NumberAttributeConstraints: NumberAttributeConstraintsType = null,
-    Required: js.UndefOr[Boolean] = js.undefined,
+    Required: js.UndefOr[BooleanType] = js.undefined,
     StringAttributeConstraints: StringAttributeConstraintsType = null
   ): SchemaAttributeType = {
     val __obj = js.Dynamic.literal()
     if (AttributeDataType != null) __obj.updateDynamic("AttributeDataType")(AttributeDataType.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeveloperOnlyAttribute)) __obj.updateDynamic("DeveloperOnlyAttribute")(DeveloperOnlyAttribute.asInstanceOf[js.Any])
-    if (!js.isUndefined(Mutable)) __obj.updateDynamic("Mutable")(Mutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeveloperOnlyAttribute)) __obj.updateDynamic("DeveloperOnlyAttribute")(DeveloperOnlyAttribute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Mutable)) __obj.updateDynamic("Mutable")(Mutable.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (NumberAttributeConstraints != null) __obj.updateDynamic("NumberAttributeConstraints")(NumberAttributeConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(Required)) __obj.updateDynamic("Required")(Required.asInstanceOf[js.Any])
+    if (!js.isUndefined(Required)) __obj.updateDynamic("Required")(Required.get.asInstanceOf[js.Any])
     if (StringAttributeConstraints != null) __obj.updateDynamic("StringAttributeConstraints")(StringAttributeConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttributeType]
   }

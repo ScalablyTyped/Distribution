@@ -20,15 +20,15 @@ object CommentThreadSnippet {
     channelId: String = null,
     isPublic: js.UndefOr[Boolean] = js.undefined,
     topLevelComment: Comment = null,
-    totalReplyCount: Int | Double = null,
+    totalReplyCount: js.UndefOr[Double] = js.undefined,
     videoId: String = null
   ): CommentThreadSnippet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canReply)) __obj.updateDynamic("canReply")(canReply.asInstanceOf[js.Any])
+    if (!js.isUndefined(canReply)) __obj.updateDynamic("canReply")(canReply.get.asInstanceOf[js.Any])
     if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.get.asInstanceOf[js.Any])
     if (topLevelComment != null) __obj.updateDynamic("topLevelComment")(topLevelComment.asInstanceOf[js.Any])
-    if (totalReplyCount != null) __obj.updateDynamic("totalReplyCount")(totalReplyCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalReplyCount)) __obj.updateDynamic("totalReplyCount")(totalReplyCount.get.asInstanceOf[js.Any])
     if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentThreadSnippet]
   }

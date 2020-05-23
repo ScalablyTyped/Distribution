@@ -45,7 +45,7 @@ object ThemeStatic {
     cardTitleStyle: CardTitleStyle = null,
     checkboxStyle: CheckboxStyle = null,
     fontColor: String = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     iconToggleStyle: IconToggleStyle = null,
     primaryColor: String = null,
     primaryColorRGB: String = null,
@@ -70,7 +70,7 @@ object ThemeStatic {
     if (cardTitleStyle != null) __obj.updateDynamic("cardTitleStyle")(cardTitleStyle.asInstanceOf[js.Any])
     if (checkboxStyle != null) __obj.updateDynamic("checkboxStyle")(checkboxStyle.asInstanceOf[js.Any])
     if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (iconToggleStyle != null) __obj.updateDynamic("iconToggleStyle")(iconToggleStyle.asInstanceOf[js.Any])
     if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
     if (primaryColorRGB != null) __obj.updateDynamic("primaryColorRGB")(primaryColorRGB.asInstanceOf[js.Any])

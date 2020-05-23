@@ -1,6 +1,6 @@
 package typings.gapiClientYoutubeanalytics.gapi.client.youtubeanalytics
 
-import typings.gapiClientYoutubeanalytics.AnonColumnType
+import typings.gapiClientYoutubeanalytics.anon.ColumnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait ResultTable extends js.Object {
     * example, if the API request contains the parameters dimensions=ageGroup,gender&metrics=viewerPercentage, the API response will return columns in this
     * order: ageGroup,gender,viewerPercentage.
     */
-  var columnHeaders: js.UndefOr[js.Array[AnonColumnType]] = js.undefined
+  var columnHeaders: js.UndefOr[js.Array[ColumnType]] = js.undefined
   /** This value specifies the type of data included in the API response. For the query method, the kind property value will be youtubeAnalytics#resultTable. */
   var kind: js.UndefOr[String] = js.undefined
   /**
@@ -28,7 +28,7 @@ trait ResultTable extends js.Object {
 object ResultTable {
   @scala.inline
   def apply(
-    columnHeaders: js.Array[AnonColumnType] = null,
+    columnHeaders: js.Array[ColumnType] = null,
     kind: String = null,
     rows: js.Array[js.Array[_]] = null
   ): ResultTable = {

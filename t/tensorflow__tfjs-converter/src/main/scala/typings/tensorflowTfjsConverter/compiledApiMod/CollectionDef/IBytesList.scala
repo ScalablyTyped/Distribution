@@ -13,9 +13,9 @@ trait IBytesList extends js.Object {
 
 object IBytesList {
   @scala.inline
-  def apply(value: js.Array[Uint8Array] = null): IBytesList = {
+  def apply(value: js.UndefOr[Null | js.Array[Uint8Array]] = js.undefined): IBytesList = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBytesList]
   }
 }

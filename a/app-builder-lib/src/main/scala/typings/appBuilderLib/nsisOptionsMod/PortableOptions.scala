@@ -32,26 +32,26 @@ trait PortableOptions
 object PortableOptions {
   @scala.inline
   def apply(
-    artifactName: String = null,
-    guid: String = null,
-    publish: Publish = null,
+    artifactName: js.UndefOr[Null | String] = js.undefined,
+    guid: js.UndefOr[Null | String] = js.undefined,
+    publish: js.UndefOr[Null | Publish] = js.undefined,
     requestExecutionLevel: user | highest | admin = null,
-    splashImage: String = null,
+    splashImage: js.UndefOr[Null | String] = js.undefined,
     unicode: js.UndefOr[Boolean] = js.undefined,
     unpackDirName: String = null,
     useZip: js.UndefOr[Boolean] = js.undefined,
     warningsAsErrors: js.UndefOr[Boolean] = js.undefined
   ): PortableOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (!js.isUndefined(guid)) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (requestExecutionLevel != null) __obj.updateDynamic("requestExecutionLevel")(requestExecutionLevel.asInstanceOf[js.Any])
-    if (splashImage != null) __obj.updateDynamic("splashImage")(splashImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
+    if (!js.isUndefined(splashImage)) __obj.updateDynamic("splashImage")(splashImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.get.asInstanceOf[js.Any])
     if (unpackDirName != null) __obj.updateDynamic("unpackDirName")(unpackDirName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip.asInstanceOf[js.Any])
-    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortableOptions]
   }
 }

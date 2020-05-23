@@ -17,7 +17,7 @@ trait Context[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] extends js.Ob
 
 object Context {
   @scala.inline
-  def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */](dataset: D, term: T, graph: QuadGraph = null): Context[D, T] = {
+  def apply[D, T](dataset: D, term: T, graph: QuadGraph = null): Context[D, T] = {
     val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any])
     if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context[D, T]]

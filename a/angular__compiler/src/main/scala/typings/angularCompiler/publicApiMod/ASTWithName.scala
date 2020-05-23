@@ -1,0 +1,17 @@
+package typings.angularCompiler.publicApiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler/public_api", "ASTWithName")
+@js.native
+abstract class ASTWithName protected ()
+  extends typings.angularCompiler.srcCompilerMod.ASTWithName {
+  def this(
+    span: typings.angularCompiler.astMod.ParseSpan,
+    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
+    nameSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan
+  ) = this()
+}
+

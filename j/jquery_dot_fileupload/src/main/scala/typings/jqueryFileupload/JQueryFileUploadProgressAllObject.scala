@@ -12,11 +12,15 @@ trait JQueryFileUploadProgressAllObject extends js.Object {
 
 object JQueryFileUploadProgressAllObject {
   @scala.inline
-  def apply(bitrate: Int | Double = null, loaded: Int | Double = null, total: Int | Double = null): JQueryFileUploadProgressAllObject = {
+  def apply(
+    bitrate: js.UndefOr[Double] = js.undefined,
+    loaded: js.UndefOr[Double] = js.undefined,
+    total: js.UndefOr[Double] = js.undefined
+  ): JQueryFileUploadProgressAllObject = {
     val __obj = js.Dynamic.literal()
-    if (bitrate != null) __obj.updateDynamic("bitrate")(bitrate.asInstanceOf[js.Any])
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitrate)) __obj.updateDynamic("bitrate")(bitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryFileUploadProgressAllObject]
   }
 }

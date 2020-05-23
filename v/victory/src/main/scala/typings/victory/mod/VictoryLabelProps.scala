@@ -2,7 +2,7 @@ package typings.victory.mod
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
-import typings.victory.AnonX
+import typings.victory.anon.X
 import typings.victory.victoryStrings.parallel
 import typings.victory.victoryStrings.perpendicular
 import typings.victory.victoryStrings.vertical
@@ -74,7 +74,7 @@ trait VictoryLabelProps extends js.Object {
     * Victory components will pass an origin prop is to define the center point in svg coordinates for polar charts.
     * **This prop should not be set manually.**
     */
-  var origin: js.UndefOr[AnonX] = js.undefined
+  var origin: js.UndefOr[X] = js.undefined
   /**
     * Victory components can pass a boolean polar prop to specify whether a label is part of a polar chart.
     * **This prop should not be set manually.**
@@ -132,7 +132,7 @@ object VictoryLabelProps {
     events: DOMAttributes[_] = null,
     labelPlacement: parallel | perpendicular | vertical = null,
     lineHeight: StringOrNumberOrCallback = null,
-    origin: AnonX = null,
+    origin: X = null,
     polar: js.UndefOr[Boolean] = js.undefined,
     renderInPortal: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties | js.Array[CSSProperties] = null,
@@ -140,8 +140,8 @@ object VictoryLabelProps {
     textAnchor: TextAnchorType | js.Function0[TextAnchorType] = null,
     transform: String | js.Object | (js.Function0[String | js.Object]) = null,
     verticalAnchor: VerticalAnchorType | js.Function0[VerticalAnchorType] = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): VictoryLabelProps = {
     val __obj = js.Dynamic.literal()
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
@@ -156,15 +156,15 @@ object VictoryLabelProps {
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderInPortal)) __obj.updateDynamic("renderInPortal")(renderInPortal.asInstanceOf[js.Any])
+    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderInPortal)) __obj.updateDynamic("renderInPortal")(renderInPortal.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (verticalAnchor != null) __obj.updateDynamic("verticalAnchor")(verticalAnchor.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryLabelProps]
   }
 }

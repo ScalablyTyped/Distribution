@@ -6,11 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.odata.ODataAnnotations")
 @js.native
-class ODataAnnotations protected () extends EventProvider {
-  def this(aAnnotationURI: String, oMetadata: ODataMetadata, mParams: js.Any) = this()
-  def this(aAnnotationURI: js.Array[String], oMetadata: ODataMetadata, mParams: js.Any) = this()
+trait ODataAnnotations extends EventProvider {
   /**
     * Adds either one URL or an array of URLs to be loaded and parsed. The result will be merged into the
     * annotationsdata which can be retrieved using the getAnnotations-method.

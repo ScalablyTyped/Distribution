@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ sealed trait Days extends js.Object
   * [Api set: Mailbox 1.7]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.Days")
@@ -79,38 +78,6 @@ object Days extends js.Object {
     */
   @js.native
   sealed trait WeekendDay extends Days
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Days with String] = js.native
-  /* "day" */ @js.native
-  object Day extends TopLevel[Day with String]
-  
-  /* "fri" */ @js.native
-  object Fri extends TopLevel[Fri with String]
-  
-  /* "mon" */ @js.native
-  object Mon extends TopLevel[Mon with String]
-  
-  /* "sat" */ @js.native
-  object Sat extends TopLevel[Sat with String]
-  
-  /* "sun" */ @js.native
-  object Sun extends TopLevel[Sun with String]
-  
-  /* "thu" */ @js.native
-  object Thu extends TopLevel[Thu with String]
-  
-  /* "tue" */ @js.native
-  object Tue extends TopLevel[Tue with String]
-  
-  /* "wed" */ @js.native
-  object Wed extends TopLevel[Wed with String]
-  
-  /* "weekday" */ @js.native
-  object Weekday extends TopLevel[Weekday with String]
-  
-  /* "weekendDay" */ @js.native
-  object WeekendDay extends TopLevel[WeekendDay with String]
   
 }
 

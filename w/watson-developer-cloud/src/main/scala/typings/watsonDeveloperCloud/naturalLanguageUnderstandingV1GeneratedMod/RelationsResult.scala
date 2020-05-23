@@ -20,13 +20,13 @@ object RelationsResult {
   @scala.inline
   def apply(
     arguments: js.Array[RelationArgument] = null,
-    score: Int | Double = null,
+    score: js.UndefOr[Double] = js.undefined,
     sentence: String = null,
     `type`: String = null
   ): RelationsResult = {
     val __obj = js.Dynamic.literal()
     if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     if (sentence != null) __obj.updateDynamic("sentence")(sentence.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationsResult]

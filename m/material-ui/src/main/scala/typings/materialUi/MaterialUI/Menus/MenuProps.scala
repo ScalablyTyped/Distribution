@@ -5,7 +5,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,15 +20,11 @@ trait MenuProps extends js.Object {
   var maxHeight: js.UndefOr[Double] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[
-      /* e */ SyntheticEvent[js.Object, Event_], 
-      /* itemValue */ js.Any | js.Array[_], 
-      Unit
-    ]
+    js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[_], Unit]
   ] = js.undefined
   var onEscKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
   var onItemClick: js.UndefOr[
-    js.Function2[/* e */ SyntheticEvent[js.Object, Event_], /* item */ MenuItem, Unit]
+    js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem, Unit]
   ] = js.undefined
   var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
   var selectedMenuItemStyle: js.UndefOr[CSSProperties] = js.undefined
@@ -46,11 +42,11 @@ object MenuProps {
     disableAutoFocus: js.UndefOr[Boolean] = js.undefined,
     initiallyKeyboardFocused: js.UndefOr[Boolean] = js.undefined,
     listStyle: CSSProperties = null,
-    maxHeight: Int | Double = null,
+    maxHeight: js.UndefOr[Double] = js.undefined,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    onChange: (/* e */ SyntheticEvent[js.Object, Event_], /* itemValue */ js.Any | js.Array[_]) => Unit = null,
+    onChange: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[_]) => Unit = null,
     onEscKeyDown: KeyboardEvent[js.Object] => Unit = null,
-    onItemClick: (/* e */ SyntheticEvent[js.Object, Event_], /* item */ MenuItem) => Unit = null,
+    onItemClick: (/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem) => Unit = null,
     onKeyDown: KeyboardEvent[js.Object] => Unit = null,
     selectedMenuItemStyle: CSSProperties = null,
     style: CSSProperties = null,
@@ -59,13 +55,13 @@ object MenuProps {
     width: String | Double = null
   ): MenuProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAutoFocus)) __obj.updateDynamic("disableAutoFocus")(disableAutoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(initiallyKeyboardFocused)) __obj.updateDynamic("initiallyKeyboardFocused")(initiallyKeyboardFocused.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAutoFocus)) __obj.updateDynamic("disableAutoFocus")(disableAutoFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initiallyKeyboardFocused)) __obj.updateDynamic("initiallyKeyboardFocused")(initiallyKeyboardFocused.get.asInstanceOf[js.Any])
     if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onEscKeyDown != null) __obj.updateDynamic("onEscKeyDown")(js.Any.fromFunction1(onEscKeyDown))
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))

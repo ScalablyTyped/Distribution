@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Input
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object EdgeGestureKind extends js.Object {
   /** The user made a swipe gesture on a touch-enabled screen. */
   @js.native
   sealed trait touch extends EdgeGestureKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EdgeGestureKind with Double] = js.native
-  /* 1 */ @js.native
-  object keyboard extends TopLevel[keyboard with Double]
-  
-  /* 2 */ @js.native
-  object mouse extends TopLevel[mouse with Double]
-  
-  /* 0 */ @js.native
-  object touch extends TopLevel[touch with Double]
   
 }
 

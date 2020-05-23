@@ -1,5 +1,6 @@
 package typings.yaml.mod
 
+import typings.yaml.parseCstMod.ParsedCST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

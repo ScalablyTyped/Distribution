@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.visualization.MapsEventListener")
-@js.native
-class MapsEventListener () extends js.Object
+// TODO find source documentation
+trait MapsEventListener extends js.Object
 

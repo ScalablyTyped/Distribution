@@ -23,7 +23,7 @@ trait Condition extends js.Object {
     */
   var LogicalOperator: js.UndefOr[typings.awsSdk.glueMod.LogicalOperator] = js.native
   /**
-    * The condition state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT, and FAILED.
+    * The condition state. Currently, the only job states that a trigger can listen for are SUCCEEDED, STOPPED, FAILED, and TIMEOUT. The only crawler states that a trigger can listen for are SUCCEEDED, FAILED, and CANCELLED.
     */
   var State: js.UndefOr[JobRunState] = js.native
 }

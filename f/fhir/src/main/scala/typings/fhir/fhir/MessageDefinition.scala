@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A resource that defines a type of message that can be exchanged between systems
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait MessageDefinition extends DomainResource {
   /**
     * Contains extended information for property 'category'.
@@ -233,7 +233,7 @@ object MessageDefinition {
     if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -249,7 +249,7 @@ object MessageDefinition {
     if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
     if (replaces != null) __obj.updateDynamic("replaces")(replaces.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseRequired)) __obj.updateDynamic("responseRequired")(responseRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseRequired)) __obj.updateDynamic("responseRequired")(responseRequired.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

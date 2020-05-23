@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
   *
   * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
   *
+  * [Api set: Mailbox 1.1]
+  *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait AttachmentDetails extends js.Object {
@@ -23,12 +25,11 @@ trait AttachmentDetails extends js.Object {
   var attachmentType: AttachmentType | String
   /**
     * Gets the MIME content type of the attachment.
-    * 
-    * This property is only available in Read mode.
     */
   var contentType: String
   /**
     * Gets the Exchange attachment ID of the attachment.
+    * However, if the attachment type is `MailboxEnums.AttachmentType.Cloud`, then a URL for the file is returned.
     */
   var id: String
   /**
@@ -37,7 +38,7 @@ trait AttachmentDetails extends js.Object {
   var isInline: Boolean
   /**
     * Gets the name of the attachment.
-    * 
+    *
     * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
     * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.
     */
@@ -46,12 +47,6 @@ trait AttachmentDetails extends js.Object {
     * Gets the size of the attachment in bytes.
     */
   var size: Double
-  /**
-    * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.
-    * 
-    * [Api set: Mailbox 1.8]
-    */
-  var url: String
 }
 
 object AttachmentDetails {
@@ -62,10 +57,9 @@ object AttachmentDetails {
     id: String,
     isInline: Boolean,
     name: String,
-    size: Double,
-    url: String
+    size: Double
   ): AttachmentDetails = {
-    val __obj = js.Dynamic.literal(attachmentType = attachmentType.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isInline = isInline.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isInline = isInline.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentDetails]
   }
 }

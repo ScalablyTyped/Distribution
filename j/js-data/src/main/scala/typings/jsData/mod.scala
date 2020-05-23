@@ -1,13 +1,13 @@
 package typings.jsData
 
+import typings.jsData.anon.Added
+import typings.jsData.anon.Array
+import typings.jsData.anon.Boolean
+import typings.jsData.anon._empty
 import typings.jsData.collectionMod.CollectionOpts
 import typings.jsData.collectionMod.default
 import typings.jsData.componentMod.ComponentOpts
 import typings.jsData.dataStoreMod.DataStoreOpts
-import typings.jsData.jsDataStrings.`LessthansignPercentsignEqualssign version PercentsignGreaterthansign`
-import typings.jsData.jsDataStrings.belongsTo
-import typings.jsData.jsDataStrings.hasMany
-import typings.jsData.jsDataStrings.hasOne
 import typings.jsData.mapperMod.MapperOpts
 import typings.jsData.mindexMod.IndexOpts
 import typings.jsData.schemaMod.SchemaDefinition
@@ -95,10 +95,10 @@ object mod extends js.Object {
     def this(opts: SimpleStoreOpts) = this()
   }
   
-  val belongsToType: belongsTo = js.native
-  val hasManyType: hasMany = js.native
-  val hasOneType: hasOne = js.native
-  val version: `LessthansignPercentsignEqualssign version PercentsignGreaterthansign` = js.native
+  val belongsToType: /* "belongsTo" */ String = js.native
+  val hasManyType: /* "hasMany" */ String = js.native
+  val hasOneType: /* "hasOne" */ String = js.native
+  val version: /* "<%= version %>" */ String = js.native
   def belongsTo(related: js.Any, opts: js.Any): js.Function1[/* mapper */ js.Any, Unit] = js.native
   def hasMany(related: js.Any, opts: js.Any): js.Function1[/* mapper */ js.Any, Unit] = js.native
   def hasOne(related: js.Any, opts: js.Any): js.Function1[/* mapper */ js.Any, Unit] = js.native
@@ -257,7 +257,7 @@ object mod extends js.Object {
       * @since 3.0.0
       * @type {Object}
       */
-    var ops: Anon = js.native
+    var ops: _empty = js.native
   }
   
   /* static members */
@@ -278,8 +278,8 @@ object mod extends js.Object {
     var NUMERIC_OPS: js.Array[String] = js.native
     var OBJECT_OPS: js.Array[String] = js.native
     var STRING_OPS: js.Array[String] = js.native
-    var typeGroupValidators: AnonArray = js.native
-    var types: AnonBoolean = js.native
+    var typeGroupValidators: Array = js.native
+    var types: Boolean = js.native
     var validationKeywords: js.Any = js.native
     def validate(value: js.Any, schema: js.Any): js.Array[_] = js.native
     def validate(value: js.Any, schema: js.Any, opts: js.Any): js.Array[_] = js.native
@@ -365,8 +365,8 @@ object mod extends js.Object {
       * @see utils.diffObjects
       * @since 3.0.0
       */
-    def areDifferent(newObject: js.Any, oldObject: js.Any): Boolean = js.native
-    def areDifferent(newObject: js.Any, oldObject: js.Any, opts: js.Any): Boolean = js.native
+    def areDifferent(newObject: js.Any, oldObject: js.Any): scala.Boolean = js.native
+    def areDifferent(newObject: js.Any, oldObject: js.Any, opts: js.Any): scala.Boolean = js.native
     /**
       * Deep copy a value.
       *
@@ -429,7 +429,7 @@ object mod extends js.Object {
       * @see utils.equal
       * @since 3.0.0
       */
-    def deepEqual(a: js.Any, b: js.Any): Boolean = js.native
+    def deepEqual(a: js.Any, b: js.Any): scala.Boolean = js.native
     /**
       * Recursively shallow fill in own enumerable properties from `source` to
       * `dest`.
@@ -491,8 +491,8 @@ object mod extends js.Object {
       * @see utils.areDifferent
       * @since 3.0.0
       */
-    def diffObjects(newObject: js.Any, oldObject: js.Any): AnonAdded = js.native
-    def diffObjects(newObject: js.Any, oldObject: js.Any, opts: js.Any): AnonAdded = js.native
+    def diffObjects(newObject: js.Any, oldObject: js.Any): Added = js.native
+    def diffObjects(newObject: js.Any, oldObject: js.Any, opts: js.Any): Added = js.native
     /**
       * Return whether the two values are equal according to the `==` operator.
       *
@@ -508,7 +508,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the two values are equal according to `==`.
       * @since 3.0.0
       */
-    def equal(a: js.Any, b: js.Any): Boolean = js.native
+    def equal(a: js.Any, b: js.Any): scala.Boolean = js.native
     /**
       * Produce a factory function for making Error objects with the provided
       * metadata. Used throughout the various js-data components.
@@ -732,7 +732,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is an array.
       * @since 3.0.0
       */
-    def isArray(arg: js.Any): /* is std.Array<any> */ Boolean = js.native
+    def isArray(arg: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
     /**
       * Return whether `prop` is matched by any string or regular expression in
       * `blacklist`.
@@ -751,7 +751,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether `prop` was matched.
       * @since 3.0.0
       */
-    def isBlacklisted(prop: js.Any, blacklist: js.Any): Boolean = js.native
+    def isBlacklisted(prop: js.Any, blacklist: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is a boolean.
       *
@@ -767,7 +767,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is a boolean.
       * @since 3.0.0
       */
-    def isBoolean(value: js.Any): Boolean = js.native
+    def isBoolean(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is a date.
       *
@@ -783,7 +783,7 @@ object mod extends js.Object {
       * @returns {Date} Whether the provided value is a date.
       * @since 3.0.0
       */
-    def isDate(value: js.Any): Boolean = js.native
+    def isDate(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is a function.
       *
@@ -799,7 +799,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is a function.
       * @since 3.0.0
       */
-    def isFunction(value: js.Any): Boolean = js.native
+    def isFunction(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is an integer.
       *
@@ -817,7 +817,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is an integer.
       * @since 3.0.0
       */
-    def isInteger(value: js.Any): Boolean = js.native
+    def isInteger(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is `null`.
       *
@@ -833,7 +833,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is `null`.
       * @since 3.0.0
       */
-    def isNull(value: js.Any): Boolean = js.native
+    def isNull(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is a number.
       *
@@ -851,7 +851,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is a number.
       * @since 3.0.0
       */
-    def isNumber(value: js.Any): Boolean = js.native
+    def isNumber(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is an object.
       *
@@ -867,7 +867,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is an object.
       * @since 3.0.0
       */
-    def isObject(value: js.Any): Boolean = js.native
+    def isObject(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is a regular expression.
       *
@@ -885,7 +885,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is a regular expression.
       * @since 3.0.0
       */
-    def isRegExp(value: js.Any): Boolean = js.native
+    def isRegExp(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is a string or a number.
       *
@@ -902,7 +902,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is a string or a number.
       * @since 3.0.0
       */
-    def isSorN(value: js.Any): Boolean = js.native
+    def isSorN(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is a string.
       *
@@ -918,7 +918,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is a string.
       * @since 3.0.0
       */
-    def isString(value: js.Any): Boolean = js.native
+    def isString(value: js.Any): scala.Boolean = js.native
     /**
       * Return whether the provided value is a `undefined`.
       *
@@ -936,7 +936,7 @@ object mod extends js.Object {
       * @returns {boolean} Whether the provided value is a `undefined`.
       * @since 3.0.0
       */
-    def isUndefined(value: js.Any): Boolean = js.native
+    def isUndefined(value: js.Any): scala.Boolean = js.native
     /**
       * Mix in logging capabilities to the target.
       *

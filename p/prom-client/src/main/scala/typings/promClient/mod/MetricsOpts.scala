@@ -15,7 +15,7 @@ object MetricsOpts {
   @scala.inline
   def apply(timestamps: js.UndefOr[Boolean] = js.undefined): MetricsOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsOpts]
   }
 }

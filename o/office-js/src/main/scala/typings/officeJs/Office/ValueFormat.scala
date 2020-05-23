@@ -1,6 +1,5 @@
 package typings.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +30,6 @@ object ValueFormat extends js.Object {
     */
   @js.native
   sealed trait Unformatted extends ValueFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ValueFormat with Double] = js.native
-  /* 1 */ @js.native
-  object Formatted extends TopLevel[Formatted with Double]
-  
-  /* 0 */ @js.native
-  object Unformatted extends TopLevel[Unformatted with Double]
   
 }
 

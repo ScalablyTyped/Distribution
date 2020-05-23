@@ -130,12 +130,12 @@ trait AppConfig extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]
   ): Request[Application, AWSError] = js.native
   /**
-    * Retrieve information about a configuration.
+    * Receive information about a configuration.  AWS AppConfig uses the value of the ClientConfigurationVersion parameter to identify the configuration version on your clients. If you don’t send ClientConfigurationVersion with each call to GetConfiguration, your clients receive the current configuration. You are charged each time your clients receive a configuration. To avoid excess charges, we recommend that you include the ClientConfigurationVersion value with every call to GetConfiguration. This value must be saved on your client. Subsequent calls to GetConfiguration must pass this value by using the ClientConfigurationVersion parameter.  
     */
   def getConfiguration(): Request[Configuration, AWSError] = js.native
   def getConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ Configuration, Unit]): Request[Configuration, AWSError] = js.native
   /**
-    * Retrieve information about a configuration.
+    * Receive information about a configuration.  AWS AppConfig uses the value of the ClientConfigurationVersion parameter to identify the configuration version on your clients. If you don’t send ClientConfigurationVersion with each call to GetConfiguration, your clients receive the current configuration. You are charged each time your clients receive a configuration. To avoid excess charges, we recommend that you include the ClientConfigurationVersion value with every call to GetConfiguration. This value must be saved on your client. Subsequent calls to GetConfiguration must pass this value by using the ClientConfigurationVersion parameter.  
     */
   def getConfiguration(params: GetConfigurationRequest): Request[Configuration, AWSError] = js.native
   def getConfiguration(

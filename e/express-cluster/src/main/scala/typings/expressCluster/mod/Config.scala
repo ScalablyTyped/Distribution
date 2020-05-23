@@ -16,17 +16,17 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     outputStream: WritableStream = null,
     respawn: js.UndefOr[Boolean] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined,
     workerListener: () => Unit = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(respawn)) __obj.updateDynamic("respawn")(respawn.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(respawn)) __obj.updateDynamic("respawn")(respawn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     if (workerListener != null) __obj.updateDynamic("workerListener")(js.Any.fromFunction0(workerListener))
     __obj.asInstanceOf[Config]
   }

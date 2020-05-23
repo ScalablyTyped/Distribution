@@ -29,7 +29,7 @@ trait Iterator[Key, T, SourceT /* <: typings.tstl.uniqueMapMod.UniqueMap[Key, T,
 
 object Iterator {
   @scala.inline
-  def apply[Key, T, SourceT /* <: typings.tstl.uniqueMapMod.UniqueMap[Key, T, SourceT, IteratorT, ReverseT] */, IteratorT /* <: Iterator[Key, T, SourceT, IteratorT, ReverseT] */, ReverseT /* <: ReverseIterator[Key, T, SourceT, IteratorT, ReverseT] */](
+  def apply[Key, T, SourceT, IteratorT, ReverseT](
     first: Key,
     next: () => IteratorT,
     prev: () => IteratorT,

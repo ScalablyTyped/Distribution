@@ -1,6 +1,5 @@
 package typings.es6Collections
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +17,4 @@ trait Set[T] extends js.Object {
   def keys(): Iterator[T] = js.native
   def values(): Iterator[T] = js.native
 }
-
-@JSGlobal("Set")
-@js.native
-object Set extends TopLevel[SetConstructor]
 

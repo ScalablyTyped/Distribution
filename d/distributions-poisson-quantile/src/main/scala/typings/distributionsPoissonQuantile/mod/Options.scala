@@ -25,15 +25,15 @@ object Options {
     accessor: (/* d */ Data, /* i */ Double) => _ = null,
     copy: js.UndefOr[Boolean] = js.undefined,
     dtype: DataType = null,
-    lambda: Int | Double = null,
+    lambda: js.UndefOr[Double] = js.undefined,
     path: String = null,
     sep: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (accessor != null) __obj.updateDynamic("accessor")(js.Any.fromFunction2(accessor))
-    if (!js.isUndefined(copy)) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
+    if (!js.isUndefined(copy)) __obj.updateDynamic("copy")(copy.get.asInstanceOf[js.Any])
     if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
+    if (!js.isUndefined(lambda)) __obj.updateDynamic("lambda")(lambda.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (sep != null) __obj.updateDynamic("sep")(sep.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

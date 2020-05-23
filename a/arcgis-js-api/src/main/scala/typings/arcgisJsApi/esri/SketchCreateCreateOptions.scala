@@ -43,13 +43,13 @@ object SketchCreateCreateOptions {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    defaultZ: Int | Double = null,
+    defaultZ: js.UndefOr[Double] = js.undefined,
     hasZ: js.UndefOr[Boolean] = js.undefined,
     mode: hybrid | freehand | click = null
   ): SketchCreateCreateOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (defaultZ != null) __obj.updateDynamic("defaultZ")(defaultZ.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultZ)) __obj.updateDynamic("defaultZ")(defaultZ.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchCreateCreateOptions]
   }

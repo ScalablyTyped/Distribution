@@ -31,14 +31,12 @@ object IHtmlElementTextureOptions {
   def apply(
     engine: Nullable[ThinEngine] = null,
     generateMipMaps: js.UndefOr[Boolean] = js.undefined,
-    samplingMode: Int | Double = null,
+    samplingMode: js.UndefOr[Double] = js.undefined,
     scene: Nullable[Scene] = null
   ): IHtmlElementTextureOptions = {
-    val __obj = js.Dynamic.literal()
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateMipMaps)) __obj.updateDynamic("generateMipMaps")(generateMipMaps.asInstanceOf[js.Any])
-    if (samplingMode != null) __obj.updateDynamic("samplingMode")(samplingMode.asInstanceOf[js.Any])
-    if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateMipMaps)) __obj.updateDynamic("generateMipMaps")(generateMipMaps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(samplingMode)) __obj.updateDynamic("samplingMode")(samplingMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHtmlElementTextureOptions]
   }
 }

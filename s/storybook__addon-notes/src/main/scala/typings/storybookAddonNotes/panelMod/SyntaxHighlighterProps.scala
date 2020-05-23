@@ -16,7 +16,7 @@ object SyntaxHighlighterProps {
   @scala.inline
   def apply(
     children: ReactElement,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null
   ): SyntaxHighlighterProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Http
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object HttpResponseMessageSource extends js.Object {
   /** A default value that should not be returned under normal circumstances. */
   @js.native
   sealed trait none extends HttpResponseMessageSource
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HttpResponseMessageSource with Double] = js.native
-  /* 1 */ @js.native
-  object cache extends TopLevel[cache with Double]
-  
-  /* 2 */ @js.native
-  object network extends TopLevel[network with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

@@ -18,10 +18,10 @@ trait Certificate extends js.Object {
 
 object Certificate {
   @scala.inline
-  def apply(CertificateArn: CertificateArn = null, IsDefault: js.UndefOr[Boolean] = js.undefined): Certificate = {
+  def apply(CertificateArn: CertificateArn = null, IsDefault: js.UndefOr[Default] = js.undefined): Certificate = {
     val __obj = js.Dynamic.literal()
     if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Certificate]
   }
 }

@@ -12,10 +12,10 @@ trait MediaType extends js.Object {
 
 object MediaType {
   @scala.inline
-  def apply(params: js.Any, `type`: String, q: Int | Double = null): MediaType = {
+  def apply(params: js.Any, `type`: String, q: js.UndefOr[Double] = js.undefined): MediaType = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
+    if (!js.isUndefined(q)) __obj.updateDynamic("q")(q.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaType]
   }
 }

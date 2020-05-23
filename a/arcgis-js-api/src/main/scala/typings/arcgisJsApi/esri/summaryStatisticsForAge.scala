@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,13 @@ trait summaryStatisticsForAge extends js.Object {
   def summaryStatisticsForAge(params: summaryStatisticsForAgeSummaryStatisticsForAgeParams): js.Promise[SummaryStatisticsResult]
 }
 
-@JSGlobal("__esri.summaryStatisticsForAge")
-@js.native
-object summaryStatisticsForAge extends TopLevel[summaryStatisticsForAge]
+object summaryStatisticsForAge {
+  @scala.inline
+  def apply(
+    summaryStatisticsForAge: summaryStatisticsForAgeSummaryStatisticsForAgeParams => js.Promise[SummaryStatisticsResult]
+  ): summaryStatisticsForAge = {
+    val __obj = js.Dynamic.literal(summaryStatisticsForAge = js.Any.fromFunction1(summaryStatisticsForAge))
+    __obj.asInstanceOf[summaryStatisticsForAge]
+  }
+}
 

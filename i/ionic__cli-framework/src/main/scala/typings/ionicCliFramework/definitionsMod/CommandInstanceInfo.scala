@@ -13,7 +13,7 @@ trait CommandInstanceInfo[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace
 
 object CommandInstanceInfo {
   @scala.inline
-  def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](
+  def apply[C, N, M, I, O](
     env: ProcessEnv,
     executor: IExecutor[C, N, M, I, O],
     location: NamespaceLocateResult[C, N, M, I, O]

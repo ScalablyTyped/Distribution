@@ -20,13 +20,13 @@ object TouchGesturechangeEvent {
     preventDefault: js.Function,
     sender: Touch,
     center: Point = null,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     event: JQueryEventObject = null,
     touches: js.Any = null
   ): TouchGesturechangeEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (touches != null) __obj.updateDynamic("touches")(touches.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchGesturechangeEvent]

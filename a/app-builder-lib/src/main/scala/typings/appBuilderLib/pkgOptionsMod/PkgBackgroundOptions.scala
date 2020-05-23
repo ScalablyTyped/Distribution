@@ -25,11 +25,15 @@ trait PkgBackgroundOptions extends js.Object {
 
 object PkgBackgroundOptions {
   @scala.inline
-  def apply(alignment: BackgroundAlignment = null, file: String = null, scaling: BackgroundScaling = null): PkgBackgroundOptions = {
+  def apply(
+    alignment: js.UndefOr[Null | BackgroundAlignment] = js.undefined,
+    file: String = null,
+    scaling: js.UndefOr[Null | BackgroundScaling] = js.undefined
+  ): PkgBackgroundOptions = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignment)) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaling)) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
     __obj.asInstanceOf[PkgBackgroundOptions]
   }
 }

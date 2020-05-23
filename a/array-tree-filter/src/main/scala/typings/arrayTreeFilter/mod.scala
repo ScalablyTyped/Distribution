@@ -1,5 +1,6 @@
 package typings.arrayTreeFilter
 
+import typings.arrayTreeFilter.anon.ChildrenKeyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   def default[T](
     data: js.Array[T],
     filterFn: js.Function2[/* item */ T, /* level */ Double, Boolean],
-    options: AnonChildrenKeyName
+    options: ChildrenKeyName
   ): js.Array[T] = js.native
 }
 

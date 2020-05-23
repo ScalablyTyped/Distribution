@@ -55,26 +55,26 @@ object DomainStatus {
     DomainName: DomainName,
     RequiresIndexDocuments: Boolean,
     ARN: ARN = null,
-    Created: js.UndefOr[scala.Boolean] = js.undefined,
-    Deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    Created: js.UndefOr[Boolean] = js.undefined,
+    Deleted: js.UndefOr[Boolean] = js.undefined,
     DocService: ServiceEndpoint = null,
     Limits: Limits = null,
-    Processing: js.UndefOr[scala.Boolean] = js.undefined,
-    SearchInstanceCount: Int | scala.Double = null,
+    Processing: js.UndefOr[Boolean] = js.undefined,
+    SearchInstanceCount: js.UndefOr[InstanceCount] = js.undefined,
     SearchInstanceType: SearchInstanceType = null,
-    SearchPartitionCount: Int | scala.Double = null,
+    SearchPartitionCount: js.UndefOr[PartitionCount] = js.undefined,
     SearchService: ServiceEndpoint = null
   ): DomainStatus = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], RequiresIndexDocuments = RequiresIndexDocuments.asInstanceOf[js.Any])
     if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(Created)) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
-    if (!js.isUndefined(Deleted)) __obj.updateDynamic("Deleted")(Deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(Created)) __obj.updateDynamic("Created")(Created.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Deleted)) __obj.updateDynamic("Deleted")(Deleted.get.asInstanceOf[js.Any])
     if (DocService != null) __obj.updateDynamic("DocService")(DocService.asInstanceOf[js.Any])
     if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
-    if (!js.isUndefined(Processing)) __obj.updateDynamic("Processing")(Processing.asInstanceOf[js.Any])
-    if (SearchInstanceCount != null) __obj.updateDynamic("SearchInstanceCount")(SearchInstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(Processing)) __obj.updateDynamic("Processing")(Processing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SearchInstanceCount)) __obj.updateDynamic("SearchInstanceCount")(SearchInstanceCount.get.asInstanceOf[js.Any])
     if (SearchInstanceType != null) __obj.updateDynamic("SearchInstanceType")(SearchInstanceType.asInstanceOf[js.Any])
-    if (SearchPartitionCount != null) __obj.updateDynamic("SearchPartitionCount")(SearchPartitionCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(SearchPartitionCount)) __obj.updateDynamic("SearchPartitionCount")(SearchPartitionCount.get.asInstanceOf[js.Any])
     if (SearchService != null) __obj.updateDynamic("SearchService")(SearchService.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainStatus]
   }

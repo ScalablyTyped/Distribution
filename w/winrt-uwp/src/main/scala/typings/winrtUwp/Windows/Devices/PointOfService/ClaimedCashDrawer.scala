@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to exclusive and privileged methods, properties, and events on a point-of-service cash drawer device. */
-@JSGlobal("Windows.Devices.PointOfService.ClaimedCashDrawer")
 @js.native
-abstract class ClaimedCashDrawer () extends js.Object {
+trait ClaimedCashDrawer extends js.Object {
   /** Gets the close alarm for this cash drawer. This is only valid if IsDrawerOpenSensorAvailable is true. */
   var closeAlarm: CashDrawerCloseAlarm = js.native
   /** The identifier string of the claimed cash drawer device. */

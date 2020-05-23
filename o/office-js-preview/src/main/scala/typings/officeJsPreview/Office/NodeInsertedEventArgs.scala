@@ -14,7 +14,7 @@ trait NodeInsertedEventArgs extends js.Object {
   var isUndoRedo: Boolean
   /**
     * Gets the node that was just added to the CustomXMLPart object.
-    * 
+    *
     * Note that this node may have children, if a subtree was just added to the document.
     */
   var newNode: CustomXmlNode

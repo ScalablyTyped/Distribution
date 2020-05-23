@@ -1,6 +1,6 @@
 package typings.reactBootstrapTable2Filter.mod
 
-import typings.reactBootstrapTable2Filter.PartialSelectFilterPropsa
+import typings.reactBootstrapTable2Filter.anon.PartialSelectFilterPropsa
 import typings.reactBootstrapTableNext.mod.TableColumnFilterProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

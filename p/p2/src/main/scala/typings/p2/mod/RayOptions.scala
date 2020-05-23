@@ -22,18 +22,18 @@ object RayOptions {
     to: js.Tuple2[Double, Double],
     callback: /* result */ RaycastResult => Unit = null,
     checkCollisionResponse: js.UndefOr[Boolean] = js.undefined,
-    collisionGroup: Int | Double = null,
-    collisionMask: Int | Double = null,
-    mode: Int | Double = null,
+    collisionGroup: js.UndefOr[Double] = js.undefined,
+    collisionMask: js.UndefOr[Double] = js.undefined,
+    mode: js.UndefOr[Double] = js.undefined,
     skipBackfaces: js.UndefOr[Boolean] = js.undefined
   ): RayOptions = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (!js.isUndefined(checkCollisionResponse)) __obj.updateDynamic("checkCollisionResponse")(checkCollisionResponse.asInstanceOf[js.Any])
-    if (collisionGroup != null) __obj.updateDynamic("collisionGroup")(collisionGroup.asInstanceOf[js.Any])
-    if (collisionMask != null) __obj.updateDynamic("collisionMask")(collisionMask.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipBackfaces)) __obj.updateDynamic("skipBackfaces")(skipBackfaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkCollisionResponse)) __obj.updateDynamic("checkCollisionResponse")(checkCollisionResponse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collisionGroup)) __obj.updateDynamic("collisionGroup")(collisionGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collisionMask)) __obj.updateDynamic("collisionMask")(collisionMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipBackfaces)) __obj.updateDynamic("skipBackfaces")(skipBackfaces.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RayOptions]
   }
 }

@@ -14,7 +14,7 @@ object Shape {
   def apply(`type`: SerializationType, sensitive: js.UndefOr[scala.Boolean] = js.undefined): Shape = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shape]
   }
 }

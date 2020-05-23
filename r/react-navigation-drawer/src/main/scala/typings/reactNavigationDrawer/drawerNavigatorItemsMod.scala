@@ -4,6 +4,7 @@ import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.react.mod.ContextType
 import typings.reactNavigation.mod.SupportedThemes
+import typings.reactNavigationDrawer.anon.ActiveBackgroundColor
 import typings.reactNavigationDrawer.typesMod.DrawerNavigatorItemsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +31,7 @@ object drawerNavigatorItemsMod extends js.Object {
   @js.native
   object default extends js.Object {
     var contextType: Context[SupportedThemes] = js.native
-    var defaultProps: AnonActiveBackgroundColor = js.native
+    var defaultProps: ActiveBackgroundColor = js.native
   }
   
 }

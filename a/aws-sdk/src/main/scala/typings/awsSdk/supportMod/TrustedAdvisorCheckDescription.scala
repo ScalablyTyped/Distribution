@@ -11,7 +11,7 @@ trait TrustedAdvisorCheckDescription extends js.Object {
     */
   var category: String = js.native
   /**
-    * The description of the Trusted Advisor check, which includes the alert criteria and recommended actions (contains HTML markup).
+    * The description of the Trusted Advisor check, which includes the alert criteria and recommended operations (contains HTML markup).
     */
   var description: String = js.native
   /**

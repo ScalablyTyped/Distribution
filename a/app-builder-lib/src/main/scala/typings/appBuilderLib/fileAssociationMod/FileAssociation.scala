@@ -32,6 +32,11 @@ trait FileAssociation extends js.Object {
     */
   val name: js.UndefOr[String | Null] = js.undefined
   /**
+    * *macOS-only* The app’s rank with respect to the type. The value can be `Owner`, `Default`, `Alternate`, or `None`. Corresponds to `LSHandlerRank`.
+    * @default Default
+    */
+  val rank: js.UndefOr[String] = js.undefined
+  /**
     * *macOS-only* The app’s role with respect to the type. The value can be `Editor`, `Viewer`, `Shell`, or `None`. Corresponds to `CFBundleTypeRole`.
     * @default Editor
     */
@@ -42,19 +47,21 @@ object FileAssociation {
   @scala.inline
   def apply(
     ext: String | js.Array[String],
-    description: String = null,
-    icon: String = null,
+    description: js.UndefOr[Null | String] = js.undefined,
+    icon: js.UndefOr[Null | String] = js.undefined,
     isPackage: js.UndefOr[Boolean] = js.undefined,
-    mimeType: String = null,
-    name: String = null,
+    mimeType: js.UndefOr[Null | String] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    rank: String = null,
     role: String = null
   ): FileAssociation = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPackage)) __obj.updateDynamic("isPackage")(isPackage.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPackage)) __obj.updateDynamic("isPackage")(isPackage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mimeType)) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileAssociation]
   }

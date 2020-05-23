@@ -18,9 +18,9 @@ trait UpdateHITReviewStatusRequest extends js.Object {
 
 object UpdateHITReviewStatusRequest {
   @scala.inline
-  def apply(HITId: EntityId, Revert: js.UndefOr[scala.Boolean] = js.undefined): UpdateHITReviewStatusRequest = {
+  def apply(HITId: EntityId, Revert: js.UndefOr[Boolean] = js.undefined): UpdateHITReviewStatusRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Revert)) __obj.updateDynamic("Revert")(Revert.asInstanceOf[js.Any])
+    if (!js.isUndefined(Revert)) __obj.updateDynamic("Revert")(Revert.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateHITReviewStatusRequest]
   }
 }

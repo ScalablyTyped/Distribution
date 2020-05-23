@@ -17,12 +17,17 @@ trait IDatePickerStyles extends js.Object {
 
 object IDatePickerStyles {
   @scala.inline
-  def apply(callout: IStyle = null, icon: IStyle = null, root: IStyle = null, textField: IStyle = null): IDatePickerStyles = {
+  def apply(
+    callout: js.UndefOr[Null | IStyle] = js.undefined,
+    icon: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    textField: js.UndefOr[Null | IStyle] = js.undefined
+  ): IDatePickerStyles = {
     val __obj = js.Dynamic.literal()
-    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
+    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(textField)) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePickerStyles]
   }
 }

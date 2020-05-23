@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 trait ApplicationData extends js.Object {
   /**
     *
-    * Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+    * Returns the Excel calculation engine version used for the last full recalculation.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -30,7 +30,7 @@ trait ApplicationData extends js.Object {
   var calculationMode: js.UndefOr[CalculationMode | Automatic | AutomaticExceptTables | Manual] = js.undefined
   /**
     *
-    * Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+    * Returns the calculation state of the application. See Excel.CalculationState for details.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -39,16 +39,14 @@ trait ApplicationData extends js.Object {
     *
     * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var cultureInfo: js.UndefOr[CultureInfoData] = js.undefined
   /**
     *
     * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var decimalSeparator: js.UndefOr[String] = js.undefined
   /**
@@ -64,17 +62,15 @@ trait ApplicationData extends js.Object {
     *
     * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var thousandsSeparator: js.UndefOr[String] = js.undefined
   /**
     *
-    * Specifies whether the system separators of Microsoft Excel are enabled.
+    * Specifies if the system separators of Excel are enabled.
     System separators include the decimal separator and thousands separator.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.11]
     */
   var useSystemSeparators: js.UndefOr[Boolean] = js.undefined
 }
@@ -82,7 +78,7 @@ trait ApplicationData extends js.Object {
 object ApplicationData {
   @scala.inline
   def apply(
-    calculationEngineVersion: Int | Double = null,
+    calculationEngineVersion: js.UndefOr[Double] = js.undefined,
     calculationMode: CalculationMode | Automatic | AutomaticExceptTables | Manual = null,
     calculationState: CalculationState | Done | Calculating | Pending = null,
     cultureInfo: CultureInfoData = null,
@@ -92,14 +88,14 @@ object ApplicationData {
     useSystemSeparators: js.UndefOr[Boolean] = js.undefined
   ): ApplicationData = {
     val __obj = js.Dynamic.literal()
-    if (calculationEngineVersion != null) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.get.asInstanceOf[js.Any])
     if (calculationMode != null) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
     if (calculationState != null) __obj.updateDynamic("calculationState")(calculationState.asInstanceOf[js.Any])
     if (cultureInfo != null) __obj.updateDynamic("cultureInfo")(cultureInfo.asInstanceOf[js.Any])
     if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
     if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation.asInstanceOf[js.Any])
     if (thousandsSeparator != null) __obj.updateDynamic("thousandsSeparator")(thousandsSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSystemSeparators)) __obj.updateDynamic("useSystemSeparators")(useSystemSeparators.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSystemSeparators)) __obj.updateDynamic("useSystemSeparators")(useSystemSeparators.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationData]
   }
 }

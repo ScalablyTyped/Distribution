@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object RegExpSettings {
-  type Param = (typings.semanticUiSearch.PickImplescapeEscape | typings.semanticUiSearch.PickImplbeginsWith) with typings.semanticUiSearch.PartialPickImplkeyofImplBeginsWith
+  type Param = (typings.semanticUiSearch.anon.PickImplescapeEscape | typings.semanticUiSearch.anon.PickImplbeginsWith) with typings.semanticUiSearch.anon.PartialPickImplkeyofImplBeginsWith
 }

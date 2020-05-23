@@ -36,11 +36,11 @@ object SplitterResizedEventArgs {
     prevSplitterPosition: String = null
   ): SplitterResizedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (currentSplitterPosition != null) __obj.updateDynamic("currentSplitterPosition")(currentSplitterPosition.asInstanceOf[js.Any])
     if (customSplitterPosition != null) __obj.updateDynamic("customSplitterPosition")(customSplitterPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOnResize)) __obj.updateDynamic("isOnResize")(isOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSplitterIndex)) __obj.updateDynamic("isSplitterIndex")(isSplitterIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOnResize)) __obj.updateDynamic("isOnResize")(isOnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSplitterIndex)) __obj.updateDynamic("isSplitterIndex")(isSplitterIndex.get.asInstanceOf[js.Any])
     if (prevSplitterPosition != null) __obj.updateDynamic("prevSplitterPosition")(prevSplitterPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitterResizedEventArgs]
   }

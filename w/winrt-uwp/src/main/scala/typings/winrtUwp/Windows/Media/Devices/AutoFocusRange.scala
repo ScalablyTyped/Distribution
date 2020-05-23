@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object AutoFocusRange extends js.Object {
   /** Normal range. */
   @js.native
   sealed trait normal extends AutoFocusRange
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AutoFocusRange with Double] = js.native
-  /* 0 */ @js.native
-  object fullRange extends TopLevel[fullRange with Double]
-  
-  /* 1 */ @js.native
-  object `macro` extends TopLevel[`macro` with Double]
-  
-  /* 2 */ @js.native
-  object normal extends TopLevel[normal with Double]
   
 }
 

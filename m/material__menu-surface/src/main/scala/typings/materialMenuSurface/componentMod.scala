@@ -2,6 +2,7 @@ package typings.materialMenuSurface
 
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialBase.foundationMod.default
+import typings.materialMenuSurface.anon.PartialMDCMenuDistance
 import typings.materialMenuSurface.constantsMod.Corner
 import typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation
 import typings.std.Element

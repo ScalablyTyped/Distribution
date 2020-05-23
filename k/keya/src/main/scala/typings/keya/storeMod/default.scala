@@ -1,7 +1,7 @@
 package typings.keya.storeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.keya.AnonKey
+import typings.keya.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,13 +17,13 @@ abstract class default protected () extends Store {
   /* CompleteClass */
   override var version: Double = js.native
   /* CompleteClass */
-  override def all(): js.Promise[js.Array[AnonKey]] = js.native
+  override def all(): js.Promise[js.Array[Key]] = js.native
   /* CompleteClass */
   override def clear(): js.Promise[Unit] = js.native
   /* CompleteClass */
   override def delete(key: String): js.Promise[Boolean] = js.native
   /* CompleteClass */
-  override def find(finder: js.Function2[/* value */ js.Any, /* name */ String, js.Promise[Boolean] | Boolean]): js.Promise[js.Array[AnonKey]] = js.native
+  override def find(finder: js.Function2[/* value */ js.Any, /* name */ String, js.Promise[Boolean] | Boolean]): js.Promise[js.Array[Key]] = js.native
   /* CompleteClass */
   override def get(key: String): js.Promise[_] = js.native
   /* CompleteClass */

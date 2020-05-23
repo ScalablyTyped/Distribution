@@ -22,10 +22,14 @@ trait DescribeTagsType extends js.Object {
 
 object DescribeTagsType {
   @scala.inline
-  def apply(Filters: Filters = null, MaxRecords: Int | Double = null, NextToken: XmlString = null): DescribeTagsType = {
+  def apply(
+    Filters: Filters = null,
+    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
+    NextToken: XmlString = null
+  ): DescribeTagsType = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTagsType]
   }

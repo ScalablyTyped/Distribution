@@ -57,17 +57,17 @@ object Options {
     oneofs: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alternateCommentMode)) __obj.updateDynamic("alternateCommentMode")(alternateCommentMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrays)) __obj.updateDynamic("arrays")(arrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(alternateCommentMode)) __obj.updateDynamic("alternateCommentMode")(alternateCommentMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrays)) __obj.updateDynamic("arrays")(arrays.get.asInstanceOf[js.Any])
     if (bytes != null) __obj.updateDynamic("bytes")(bytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.get.asInstanceOf[js.Any])
     if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
     if (includeDirs != null) __obj.updateDynamic("includeDirs")(includeDirs.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepCase)) __obj.updateDynamic("keepCase")(keepCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepCase)) __obj.updateDynamic("keepCase")(keepCase.get.asInstanceOf[js.Any])
     if (longs != null) __obj.updateDynamic("longs")(longs.asInstanceOf[js.Any])
-    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneofs)) __obj.updateDynamic("oneofs")(oneofs.asInstanceOf[js.Any])
+    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneofs)) __obj.updateDynamic("oneofs")(oneofs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

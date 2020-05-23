@@ -48,7 +48,7 @@ object Build {
     CreationTime: Timestamp = null,
     Name: FreeText = null,
     OperatingSystem: OperatingSystem = null,
-    SizeOnDisk: Int | scala.Double = null,
+    SizeOnDisk: js.UndefOr[PositiveLong] = js.undefined,
     Status: BuildStatus = null,
     Version: FreeText = null
   ): Build = {
@@ -58,7 +58,7 @@ object Build {
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (OperatingSystem != null) __obj.updateDynamic("OperatingSystem")(OperatingSystem.asInstanceOf[js.Any])
-    if (SizeOnDisk != null) __obj.updateDynamic("SizeOnDisk")(SizeOnDisk.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeOnDisk)) __obj.updateDynamic("SizeOnDisk")(SizeOnDisk.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Build]

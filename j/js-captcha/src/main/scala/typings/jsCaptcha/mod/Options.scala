@@ -34,8 +34,8 @@ object Options {
     canvasFillStyle: String = null,
     canvasFontFamily: String = null,
     canvasFontSize: String = null,
-    canvasHeight: Int | Double = null,
-    canvasWidth: Int | Double = null,
+    canvasHeight: js.UndefOr[Double] = js.undefined,
+    canvasWidth: js.UndefOr[Double] = js.undefined,
     clearOnSubmit: js.UndefOr[Boolean] = js.undefined,
     el: String = null,
     focusOnError: js.UndefOr[Boolean] = js.undefined,
@@ -47,13 +47,13 @@ object Options {
     if (canvasFillStyle != null) __obj.updateDynamic("canvasFillStyle")(canvasFillStyle.asInstanceOf[js.Any])
     if (canvasFontFamily != null) __obj.updateDynamic("canvasFontFamily")(canvasFontFamily.asInstanceOf[js.Any])
     if (canvasFontSize != null) __obj.updateDynamic("canvasFontSize")(canvasFontSize.asInstanceOf[js.Any])
-    if (canvasHeight != null) __obj.updateDynamic("canvasHeight")(canvasHeight.asInstanceOf[js.Any])
-    if (canvasWidth != null) __obj.updateDynamic("canvasWidth")(canvasWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnSubmit)) __obj.updateDynamic("clearOnSubmit")(clearOnSubmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(canvasHeight)) __obj.updateDynamic("canvasHeight")(canvasHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(canvasWidth)) __obj.updateDynamic("canvasWidth")(canvasWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnSubmit)) __obj.updateDynamic("clearOnSubmit")(clearOnSubmit.get.asInstanceOf[js.Any])
     if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusOnError)) __obj.updateDynamic("focusOnError")(focusOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusOnError)) __obj.updateDynamic("focusOnError")(focusOnError.get.asInstanceOf[js.Any])
     if (requiredValue != null) __obj.updateDynamic("requiredValue")(requiredValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnError)) __obj.updateDynamic("resetOnError")(resetOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnError)) __obj.updateDynamic("resetOnError")(resetOnError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

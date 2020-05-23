@@ -11,6 +11,10 @@ trait ParameterHistory extends js.Object {
     */
   var AllowedPattern: js.UndefOr[typings.awsSdk.ssmMod.AllowedPattern] = js.native
   /**
+    * The data type of the parameter, such as text or aws:ec2:image. The default is text.
+    */
+  var DataType: js.UndefOr[ParameterDataType] = js.native
+  /**
     * Information about the parameter.
     */
   var Description: js.UndefOr[ParameterDescription] = js.native
@@ -35,7 +39,7 @@ trait ParameterHistory extends js.Object {
     */
   var Name: js.UndefOr[PSParameterName] = js.native
   /**
-    * Information about the policies assigned to a parameter.  Working with Parameter Policies in the AWS Systems Manager User Guide.
+    * Information about the policies assigned to a parameter.  Assigning parameter policies in the AWS Systems Manager User Guide.
     */
   var Policies: js.UndefOr[ParameterPolicyList] = js.native
   /**
@@ -60,6 +64,7 @@ object ParameterHistory {
   @scala.inline
   def apply(
     AllowedPattern: AllowedPattern = null,
+    DataType: ParameterDataType = null,
     Description: ParameterDescription = null,
     KeyId: ParameterKeyId = null,
     Labels: ParameterLabelList = null,
@@ -70,10 +75,11 @@ object ParameterHistory {
     Tier: ParameterTier = null,
     Type: ParameterType = null,
     Value: PSParameterValue = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[PSParameterVersion] = js.undefined
   ): ParameterHistory = {
     val __obj = js.Dynamic.literal()
     if (AllowedPattern != null) __obj.updateDynamic("AllowedPattern")(AllowedPattern.asInstanceOf[js.Any])
+    if (DataType != null) __obj.updateDynamic("DataType")(DataType.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
@@ -84,7 +90,7 @@ object ParameterHistory {
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterHistory]
   }
 }

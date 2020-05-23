@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.ReadonlyPromisevoid
+import typings.algoliaClientSearch.anon.ReadonlyPromisevoid
 import typings.algoliaTransporter.mod.Transporter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

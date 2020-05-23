@@ -24,12 +24,12 @@ object ExportingButtonsContextButtonThemeOptions {
   @scala.inline
   def apply(
     fill: ColorString | GradientColorObject | PatternObject = null,
-    padding: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
     stroke: ColorString = null
   ): ExportingButtonsContextButtonThemeOptions = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingButtonsContextButtonThemeOptions]
   }

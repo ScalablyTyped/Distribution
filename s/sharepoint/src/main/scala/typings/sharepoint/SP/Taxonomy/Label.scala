@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.Label")
 @js.native
-class Label () extends ClientObject {
+trait Label extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_isDefaultForLanguage(): Boolean = js.native
   def get_language(): Double = js.native

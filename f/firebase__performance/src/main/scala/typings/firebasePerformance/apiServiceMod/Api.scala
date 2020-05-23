@@ -1,8 +1,8 @@
 package typings.firebasePerformance.apiServiceMod
 
-import typings.firebasePerformance.apiServiceMod._Global_.Window
-import typings.std.Document_
-import typings.std.Navigator_
+import typings.firebasePerformance.apiServiceMod.global.Window
+import typings.std.Document
+import typings.std.Navigator
 import typings.std.PerformanceEntry
 import typings.std.Storage
 import scala.scalajs.js
@@ -15,9 +15,9 @@ class Api () extends js.Object {
   def this(window: Window) = this()
   /** PreformanceObserver constructor function. */
   val PerformanceObserver: js.Any = js.native
-  val document: Document_ = js.native
+  val document: Document = js.native
   val localStorage: js.UndefOr[Storage] = js.native
-  val navigator: Navigator_ = js.native
+  val navigator: Navigator = js.native
   val onFirstInputDelay: js.UndefOr[js.Function] = js.native
   val performance: js.Any = js.native
   val window: js.UndefOr[Window] = js.native

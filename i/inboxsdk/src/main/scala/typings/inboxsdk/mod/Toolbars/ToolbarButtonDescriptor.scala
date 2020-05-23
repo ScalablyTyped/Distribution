@@ -31,18 +31,18 @@ object ToolbarButtonDescriptor {
     iconUrl: String = null,
     keyboardShortcutHandle: KeyboardShortcutHandle = null,
     listSection: SectionNames = null,
-    orderHint: Int | Double = null,
+    orderHint: js.UndefOr[Double] = js.undefined,
     positions: js.Array[ToolbarButtonPosition] = null,
     threadSection: SectionNames = null
   ): ToolbarButtonDescriptor = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.get.asInstanceOf[js.Any])
     if (hideFor != null) __obj.updateDynamic("hideFor")(js.Any.fromFunction1(hideFor))
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
     if (keyboardShortcutHandle != null) __obj.updateDynamic("keyboardShortcutHandle")(keyboardShortcutHandle.asInstanceOf[js.Any])
     if (listSection != null) __obj.updateDynamic("listSection")(listSection.asInstanceOf[js.Any])
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderHint)) __obj.updateDynamic("orderHint")(orderHint.get.asInstanceOf[js.Any])
     if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
     if (threadSection != null) __obj.updateDynamic("threadSection")(threadSection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarButtonDescriptor]

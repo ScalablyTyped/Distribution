@@ -1,6 +1,6 @@
 package typings.stripe.mod.disputes
 
-import typings.stripe.AnonDueby
+import typings.stripe.anon.Dueby
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
 import typings.stripe.mod.balance.IBalanceTransaction
@@ -67,7 +67,7 @@ trait IDispute extends IResourceObject {
   /**
     * Information about the evidence submission.
     */
-  var evidence_details: js.UndefOr[AnonDueby] = js.undefined
+  var evidence_details: js.UndefOr[Dueby] = js.undefined
   /**
     * If true, it is still possible to refund the disputed payment. Once the payment has been fully
     * refunded, no further funds will be withdrawn from your Stripe account as a result of this dispute.
@@ -111,7 +111,7 @@ object IDispute {
     `object`: dispute,
     reason: duplicate | fraudulent | subscription_canceled | product_unacceptable | product_not_received | unrecognized | credit_not_processed | incorrect_account_details | insufficient_funds | bank_cannot_process | debit_not_authorized | general,
     status: warning_needs_response | warning_under_review | warning_closed | needs_response | response_disabled | under_review | charge_refunded | won | lost,
-    evidence_details: AnonDueby = null
+    evidence_details: Dueby = null
   ): IDispute = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], balance_transactions = balance_transactions.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], evidence = evidence.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_charge_refundable = is_charge_refundable.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])

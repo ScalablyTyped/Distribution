@@ -20,11 +20,11 @@ object ActionDefinition {
   ): ActionDefinition = {
     val __obj = js.Dynamic.literal()
     if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(asyncResult)) __obj.updateDynamic("asyncResult")(asyncResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncResult)) __obj.updateDynamic("asyncResult")(asyncResult.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (preEmit != null) __obj.updateDynamic("preEmit")(js.Any.fromFunction1(preEmit))
     if (shouldEmit != null) __obj.updateDynamic("shouldEmit")(js.Any.fromFunction1(shouldEmit))
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionDefinition]
   }
 }

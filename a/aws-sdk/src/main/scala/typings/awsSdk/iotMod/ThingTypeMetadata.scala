@@ -24,12 +24,12 @@ object ThingTypeMetadata {
   @scala.inline
   def apply(
     creationDate: CreationDate = null,
-    deprecated: js.UndefOr[scala.Boolean] = js.undefined,
+    deprecated: js.UndefOr[Boolean] = js.undefined,
     deprecationDate: DeprecationDate = null
   ): ThingTypeMetadata = {
     val __obj = js.Dynamic.literal()
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
     if (deprecationDate != null) __obj.updateDynamic("deprecationDate")(deprecationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingTypeMetadata]
   }

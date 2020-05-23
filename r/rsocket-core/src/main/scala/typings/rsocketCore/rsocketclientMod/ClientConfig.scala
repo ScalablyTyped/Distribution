@@ -1,6 +1,6 @@
 package typings.rsocketCore.rsocketclientMod
 
-import typings.rsocketCore.AnonDataMimeType
+import typings.rsocketCore.anon.DataMimeType
 import typings.rsocketCore.rsocketleaseMod.Leases
 import typings.rsocketCore.rsocketserializationMod.PayloadSerializers
 import typings.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
@@ -16,14 +16,14 @@ trait ClientConfig[D, M] extends js.Object {
   var leases: js.UndefOr[js.Function0[Leases[_]]] = js.undefined
   var responder: js.UndefOr[Partial[Responder[D, M]]] = js.undefined
   var serializers: js.UndefOr[PayloadSerializers[D, M]] = js.undefined
-  var setup: AnonDataMimeType[D, M]
+  var setup: DataMimeType[D, M]
   var transport: DuplexConnection
 }
 
 object ClientConfig {
   @scala.inline
   def apply[D, M](
-    setup: AnonDataMimeType[D, M],
+    setup: DataMimeType[D, M],
     transport: DuplexConnection,
     errorHandler: /* error */ Error => Unit = null,
     leases: () => Leases[_] = null,

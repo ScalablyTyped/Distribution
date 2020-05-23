@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ErrorSettings {
-  type Param = (typings.semanticUiTransition.PickImplnoAnimation | typings.semanticUiTransition.PickImplmethod) with typings.semanticUiTransition.PartialPickImplkeyofImplMethod
+  type Param = (typings.semanticUiTransition.anon.PickImplnoAnimation | typings.semanticUiTransition.anon.PickImplmethod) with typings.semanticUiTransition.anon.PartialPickImplkeyofImplMethod
 }

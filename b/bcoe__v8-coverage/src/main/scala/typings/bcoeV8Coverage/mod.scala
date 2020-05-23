@@ -1,5 +1,9 @@
 package typings.bcoeV8Coverage
 
+import typings.bcoeV8Coverage.anon.ReadonlyFunctionCov
+import typings.bcoeV8Coverage.anon.ReadonlyProcessCov
+import typings.bcoeV8Coverage.anon.ReadonlyRangeCov
+import typings.bcoeV8Coverage.anon.ReadonlyScriptCov
 import typings.bcoeV8Coverage.asciiMod.ReadonlyRangeTree
 import typings.bcoeV8Coverage.typesMod.FunctionCov
 import typings.bcoeV8Coverage.typesMod.ProcessCov

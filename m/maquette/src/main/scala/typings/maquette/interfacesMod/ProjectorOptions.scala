@@ -1,6 +1,6 @@
 package typings.maquette.interfacesMod
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +28,7 @@ trait ProjectorOptions extends js.Object {
 object ProjectorOptions {
   @scala.inline
   def apply(
-    performanceLogger: (/* eventType */ PerformanceLoggerEvent, /* trigger */ js.UndefOr[Event_]) => Unit = null,
+    performanceLogger: (/* eventType */ PerformanceLoggerEvent, /* trigger */ js.UndefOr[Event]) => Unit = null,
     styleApplyer: (/* domNode */ HTMLElement, /* styleName */ String, /* value */ String) => Unit = null
   ): ProjectorOptions = {
     val __obj = js.Dynamic.literal()

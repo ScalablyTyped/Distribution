@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Playback
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object MediaPlayerState extends js.Object {
   /** Not implemented. */
   @js.native
   sealed trait stopped extends MediaPlayerState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaPlayerState with Double] = js.native
-  /* 2 */ @js.native
-  object buffering extends TopLevel[buffering with Double]
-  
-  /* 0 */ @js.native
-  object closed extends TopLevel[closed with Double]
-  
-  /* 1 */ @js.native
-  object opening extends TopLevel[opening with Double]
-  
-  /* 4 */ @js.native
-  object paused extends TopLevel[paused with Double]
-  
-  /* 3 */ @js.native
-  object playing extends TopLevel[playing with Double]
-  
-  /* 5 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
   
 }
 

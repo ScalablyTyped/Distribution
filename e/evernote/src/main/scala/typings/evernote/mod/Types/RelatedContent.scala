@@ -1,6 +1,6 @@
 package typings.evernote.mod.Types
 
-import typings.evernote.AnonAccessType
+import typings.evernote.anon.AccessType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("evernote", "Types.RelatedContent")
 @js.native
 class RelatedContent () extends js.Object {
-  def this(args: AnonAccessType) = this()
+  def this(args: AccessType) = this()
   var accessType: js.UndefOr[RelatedContentAccess] = js.native
   var authors: js.UndefOr[js.Array[String]] = js.native
   var clipUrl: js.UndefOr[String] = js.native

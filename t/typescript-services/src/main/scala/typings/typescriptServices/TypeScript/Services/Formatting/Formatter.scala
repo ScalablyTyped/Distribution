@@ -1,24 +1,11 @@
 package typings.typescriptServices.TypeScript.Services.Formatting
 
-import typings.typescriptServices.FormattingOptions
-import typings.typescriptServices.TypeScript.SourceUnitSyntax
-import typings.typescriptServices.TypeScript.TextSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.Formatter")
 @js.native
-class Formatter protected () extends MultipleTokenIndenter {
-  def this(
-    textSpan: TextSpan,
-    sourceUnit: SourceUnitSyntax,
-    indentFirstToken: Boolean,
-    options: FormattingOptions,
-    snapshot: ITextSnapshot,
-    rulesProvider: RulesProvider,
-    formattingRequestKind: FormattingRequestKind
-  ) = this()
+trait Formatter extends MultipleTokenIndenter {
   var formattingContext: js.Any = js.native
   var formattingRequestKind: js.Any = js.native
   var previousTokenParent: js.Any = js.native
@@ -35,20 +22,5 @@ class Formatter protected () extends MultipleTokenIndenter {
   /* private */ def trimWhitespace(line: js.Any, token: js.Any): js.Any = js.native
   /* private */ def trimWhitespaceInLineRange(startLine: js.Any, endLine: js.Any): js.Any = js.native
   /* private */ def trimWhitespaceInLineRange(startLine: js.Any, endLine: js.Any, token: js.Any): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.Services.Formatting.Formatter")
-@js.native
-object Formatter extends js.Object {
-  def getEdits(
-    textSpan: TextSpan,
-    sourceUnit: SourceUnitSyntax,
-    options: FormattingOptions,
-    indentFirstToken: Boolean,
-    snapshot: ITextSnapshot,
-    rulesProvider: RulesProvider,
-    formattingRequestKind: FormattingRequestKind
-  ): js.Array[TextEditInfo] = js.native
 }
 

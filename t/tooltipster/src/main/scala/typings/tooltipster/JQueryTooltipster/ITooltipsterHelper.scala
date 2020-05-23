@@ -27,14 +27,14 @@ object ITooltipsterHelper {
   @scala.inline
   def apply(
     origin: HTMLElement,
-    event: MouseEvent | TouchEvent = null,
+    event: js.UndefOr[Null | MouseEvent | TouchEvent] = js.undefined,
     geo: ITooltipsterGeoHelper = null,
     mode: natural | constrained = null,
     tooltip: HTMLElement = null,
     tooltipClone: HTMLElement = null
   ): ITooltipsterHelper = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (!js.isUndefined(event)) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (geo != null) __obj.updateDynamic("geo")(geo.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])

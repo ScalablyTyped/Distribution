@@ -37,7 +37,7 @@ object Options {
     if (detective != null) __obj.updateDynamic("detective")(detective.asInstanceOf[js.Any])
     if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(isListForm)) __obj.updateDynamic("isListForm")(isListForm.asInstanceOf[js.Any])
+    if (!js.isUndefined(isListForm)) __obj.updateDynamic("isListForm")(isListForm.get.asInstanceOf[js.Any])
     if (nodeModulesConfig != null) __obj.updateDynamic("nodeModulesConfig")(nodeModulesConfig.asInstanceOf[js.Any])
     if (nonExistent != null) __obj.updateDynamic("nonExistent")(nonExistent.asInstanceOf[js.Any])
     if (requireConfig != null) __obj.updateDynamic("requireConfig")(requireConfig.asInstanceOf[js.Any])

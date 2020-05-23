@@ -5,14 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSG.Vector3D")
 @js.native
-class Vector3D protected () extends CxG {
-  def this(v2: js.Array[Double]) = this()
-  def this(v2: Vector2D) = this()
-  def this(v3: Vector3D) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, z: Double) = this()
+trait Vector3D extends CxG {
   var x: Double = js.native
   var y: Double = js.native
   var z: Double = js.native
@@ -35,12 +29,5 @@ class Vector3D protected () extends CxG {
   def randomNonParallelVector(): Vector3D = js.native
   def times(a: Double): Vector3D = js.native
   def unit(): Vector3D = js.native
-}
-
-/* static members */
-@JSGlobal("CSG.Vector3D")
-@js.native
-object Vector3D extends js.Object {
-  def Create(x: Double, y: Double, z: Double): Vector3D = js.native
 }
 

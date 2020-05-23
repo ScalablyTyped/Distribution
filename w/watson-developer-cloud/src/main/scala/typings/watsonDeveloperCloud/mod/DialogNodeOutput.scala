@@ -18,8 +18,7 @@ trait DialogNodeOutput
 object DialogNodeOutput {
   @scala.inline
   def apply(
-    StringDictionary: /** DialogNodeOutput accepts additional properties. */
-  /* propName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     generic: js.Array[DialogNodeOutputGeneric] = null,
     modifiers: DialogNodeOutputModifiers = null
   ): DialogNodeOutput = {

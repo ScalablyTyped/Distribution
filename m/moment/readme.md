@@ -1,7 +1,7 @@
 
 # Scala.js typings for moment
 
-Typings are for version 2.24.0
+Typings are for version 2.26.0
 
 ## Library description:
 Parse, validate, manipulate, and display dates

@@ -13,10 +13,10 @@ trait PerfSample extends js.Object {
 
 object PerfSample {
   @scala.inline
-  def apply(sampleTime: Timestamp = null, value: Int | Double = null): PerfSample = {
+  def apply(sampleTime: Timestamp = null, value: js.UndefOr[Double] = js.undefined): PerfSample = {
     val __obj = js.Dynamic.literal()
     if (sampleTime != null) __obj.updateDynamic("sampleTime")(sampleTime.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerfSample]
   }
 }

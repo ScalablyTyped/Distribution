@@ -3,8 +3,10 @@ package typings.useSidecar
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.Error
+import typings.useSidecar.anon.PartialIConfig
+import typings.useSidecar.anon.ReadonlySideCarMedium
 import typings.useSidecar.renderPropMod.CombinedProps
 import typings.useSidecar.renderPropMod.Options
 import typings.useSidecar.renderPropMod.RenderPropComponent

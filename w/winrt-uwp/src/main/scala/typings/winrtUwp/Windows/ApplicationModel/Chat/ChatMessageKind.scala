@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object ChatMessageKind extends js.Object {
   /** A non-SMS/MMS message written to the device by the app */
   @js.native
   sealed trait transportCustom extends ChatMessageKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatMessageKind with Double] = js.native
-  /* 1 */ @js.native
-  object fileTransferRequest extends TopLevel[fileTransferRequest with Double]
-  
-  /* 3 */ @js.native
-  object joinedConversation extends TopLevel[joinedConversation with Double]
-  
-  /* 4 */ @js.native
-  object leftConversation extends TopLevel[leftConversation with Double]
-  
-  /* 5 */ @js.native
-  object otherParticipantJoinedConversation extends TopLevel[otherParticipantJoinedConversation with Double]
-  
-  /* 6 */ @js.native
-  object otherParticipantLeftConversation extends TopLevel[otherParticipantLeftConversation with Double]
-  
-  /* 0 */ @js.native
-  object standard extends TopLevel[standard with Double]
-  
-  /* 2 */ @js.native
-  object transportCustom extends TopLevel[transportCustom with Double]
   
 }
 

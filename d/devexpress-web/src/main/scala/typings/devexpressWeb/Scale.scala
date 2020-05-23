@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Defines the scaling settings.
   */
-@JSGlobal("Scale")
-@js.native
-class Scale () extends js.Object {
+trait Scale extends js.Object {
   /**
     * Specifies the image's x-scale factor as a percent.
     */
-  var x: Double = js.native
+  var x: Double
   /**
     * Specifies the image's y-scale factor as a percent.
     */
-  var y: Double = js.native
+  var y: Double
+}
+
+object Scale {
+  @scala.inline
+  def apply(x: Double, y: Double): Scale = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scale]
+  }
 }
 

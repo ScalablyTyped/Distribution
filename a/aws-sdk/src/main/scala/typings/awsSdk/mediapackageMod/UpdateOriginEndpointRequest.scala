@@ -57,8 +57,8 @@ object UpdateOriginEndpointRequest {
     ManifestName: string = null,
     MssPackage: MssPackage = null,
     Origination: Origination = null,
-    StartoverWindowSeconds: Int | Double = null,
-    TimeDelaySeconds: Int | Double = null,
+    StartoverWindowSeconds: js.UndefOr[integer] = js.undefined,
+    TimeDelaySeconds: js.UndefOr[integer] = js.undefined,
     Whitelist: listOfString = null
   ): UpdateOriginEndpointRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
@@ -70,8 +70,8 @@ object UpdateOriginEndpointRequest {
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
     if (MssPackage != null) __obj.updateDynamic("MssPackage")(MssPackage.asInstanceOf[js.Any])
     if (Origination != null) __obj.updateDynamic("Origination")(Origination.asInstanceOf[js.Any])
-    if (StartoverWindowSeconds != null) __obj.updateDynamic("StartoverWindowSeconds")(StartoverWindowSeconds.asInstanceOf[js.Any])
-    if (TimeDelaySeconds != null) __obj.updateDynamic("TimeDelaySeconds")(TimeDelaySeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(StartoverWindowSeconds)) __obj.updateDynamic("StartoverWindowSeconds")(StartoverWindowSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeDelaySeconds)) __obj.updateDynamic("TimeDelaySeconds")(TimeDelaySeconds.get.asInstanceOf[js.Any])
     if (Whitelist != null) __obj.updateDynamic("Whitelist")(Whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOriginEndpointRequest]
   }

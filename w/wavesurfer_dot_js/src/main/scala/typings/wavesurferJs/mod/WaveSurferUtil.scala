@@ -2,14 +2,14 @@ package typings.wavesurferJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
-import typings.wavesurferJs.AnonXhr
+import typings.wavesurferJs.anon.Xhr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WaveSurferUtil extends js.Object {
   var Observer: typings.wavesurferJs.mod.Observer
-  def ajax(options: AnonXhr): Observer
+  def ajax(options: Xhr): Observer
   def extend(dest: js.Object, sources: js.Object*): js.Object
   def frame(fn: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Double]
   def getId(): String
@@ -24,7 +24,7 @@ object WaveSurferUtil {
   @scala.inline
   def apply(
     Observer: Observer,
-    ajax: AnonXhr => Observer,
+    ajax: Xhr => Observer,
     extend: (js.Object, /* repeated */ js.Object) => js.Object,
     frame: js.Function1[/* repeated */ js.Any, Unit] => js.Function1[/* repeated */ js.Any, Double],
     getId: () => String,

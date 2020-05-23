@@ -28,10 +28,14 @@ trait PlacePhotoRequest extends js.Object {
 
 object PlacePhotoRequest {
   @scala.inline
-  def apply(photoreference: String, maxheight: Int | Double = null, maxwidth: Int | Double = null): PlacePhotoRequest = {
+  def apply(
+    photoreference: String,
+    maxheight: js.UndefOr[Double] = js.undefined,
+    maxwidth: js.UndefOr[Double] = js.undefined
+  ): PlacePhotoRequest = {
     val __obj = js.Dynamic.literal(photoreference = photoreference.asInstanceOf[js.Any])
-    if (maxheight != null) __obj.updateDynamic("maxheight")(maxheight.asInstanceOf[js.Any])
-    if (maxwidth != null) __obj.updateDynamic("maxwidth")(maxwidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxheight)) __obj.updateDynamic("maxheight")(maxheight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxwidth)) __obj.updateDynamic("maxwidth")(maxwidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacePhotoRequest]
   }
 }

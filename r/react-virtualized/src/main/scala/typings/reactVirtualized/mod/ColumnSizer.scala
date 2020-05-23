@@ -1,6 +1,6 @@
 package typings.reactVirtualized.mod
 
-import typings.reactVirtualized.AnonChildren
+import typings.reactVirtualized.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class ColumnSizer ()
 @JSImport("react-virtualized", "ColumnSizer")
 @js.native
 object ColumnSizer extends js.Object {
-  var propTypes: AnonChildren = js.native
+  var propTypes: Children = js.native
 }
 

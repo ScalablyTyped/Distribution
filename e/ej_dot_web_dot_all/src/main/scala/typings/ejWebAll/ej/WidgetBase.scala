@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.WidgetBase")
 @js.native
-class WidgetBase () extends js.Object {
+trait WidgetBase extends js.Object {
   var element: JQuery = js.native
   def _off(element: JQuery): js.Any = js.native
   def _off(element: JQuery, eventName: String): js.Any = js.native

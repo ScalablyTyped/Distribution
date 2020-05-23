@@ -22,7 +22,7 @@ object IKeyComboProps {
   def apply(combo: String, className: String = null, minimal: js.UndefOr[Boolean] = js.undefined): IKeyComboProps = {
     val __obj = js.Dynamic.literal(combo = combo.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyComboProps]
   }
 }

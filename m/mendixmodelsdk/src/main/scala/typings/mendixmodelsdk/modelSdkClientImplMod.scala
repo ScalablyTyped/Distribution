@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.anon.Instantiable
 import typings.mendixmodelsdk.commonMod.common.ICallback
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.commonMod.common.IVoidCallback
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation._
 object modelSdkClientImplMod extends js.Object {
   @js.native
   class ModelSdkClientImpl[IT /* <: IAbstractModel */, CT /* <: AbstractModel with IT */] protected () extends js.Object {
-    def this(connectionConfig: ISdkConfig, modelConstructor: AnonInstantiable[CT, IT]) = this()
+    def this(connectionConfig: ISdkConfig, modelConstructor: Instantiable[CT, IT]) = this()
     var client: js.Any = js.native
     var connectionConfig: js.Any = js.native
     var modelConstructor: js.Any = js.native
@@ -187,6 +188,16 @@ object modelSdkClientImplMod extends js.Object {
       * Revokes access of the member specified to his/her OpenID to the default working copy of this project.
       */
     def revokeAccessByProject(projectId: String, memberOpenId: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
+    def setProjectMembers(projectId: String, memberOpenids: js.Array[String]): js.Promise[Unit] = js.native
+    /**
+      * Sets all members that have access specified by their OpenID to the default working copy of this project.
+      */
+    def setProjectMembers(
+      projectId: String,
+      memberOpenids: js.Array[String],
+      callback: IVoidCallback,
+      errorCallback: IErrorCallback
+    ): Unit = js.native
     def startAppUpdate(workingCopyId: String): js.Promise[IDeployJobStatus] = js.native
     /**
       * Start deploy this working copy and create new job.

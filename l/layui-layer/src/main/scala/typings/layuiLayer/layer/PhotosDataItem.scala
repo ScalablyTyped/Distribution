@@ -17,9 +17,9 @@ trait PhotosDataItem extends js.Object {
 
 object PhotosDataItem {
   @scala.inline
-  def apply(alt: String, src: String, thumb: String, pid: Int | Double = null): PhotosDataItem = {
+  def apply(alt: String, src: String, thumb: String, pid: js.UndefOr[Double] = js.undefined): PhotosDataItem = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any])
-    if (pid != null) __obj.updateDynamic("pid")(pid.asInstanceOf[js.Any])
+    if (!js.isUndefined(pid)) __obj.updateDynamic("pid")(pid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotosDataItem]
   }
 }

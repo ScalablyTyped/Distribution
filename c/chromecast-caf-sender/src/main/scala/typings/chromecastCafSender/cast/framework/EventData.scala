@@ -4,10 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("cast.framework.EventData")
-@js.native
-abstract class EventData protected () extends js.Object {
-  def this(`type`: String) = this()
-  var `type`: String = js.native
+trait EventData extends js.Object {
+  var `type`: String
+}
+
+object EventData {
+  @scala.inline
+  def apply(`type`: String): EventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventData]
+  }
 }
 

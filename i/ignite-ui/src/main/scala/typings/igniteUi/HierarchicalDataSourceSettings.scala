@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait HierarchicalDataSourceSettings
   extends /**
-	 * Option for HierarchicalDataSourceSettings
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   var autogenerate: js.UndefOr[Boolean] = js.undefined
   var callback: js.UndefOr[js.Any] = js.undefined
@@ -28,14 +28,14 @@ trait HierarchicalDataSourceSettings
   var responseContentType: js.UndefOr[js.Any] = js.undefined
   var responseDataType: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * All of the rest - paging, sorting, filtering, can be defined in the layouts definition, which will "override" the parent defs
-  	 * IMPORTANT:  if there is no paging, sorting or filtering, an instance of $.ig.DataSource won't be created for child row islands
-  	 */
+    * All of the rest - paging, sorting, filtering, can be defined in the layouts definition, which will "override" the parent defs
+    * IMPORTANT:  if there is no paging, sorting or filtering, an instance of $.ig.DataSource won't be created for child row islands
+    */
   var schema: js.UndefOr[HierarchicalDataSourceSettingsSchema] = js.undefined
   var sorting: js.UndefOr[HierarchicalDataSourceSettingsSorting] = js.undefined
   /**
-  	 * Other options
-  	 */
+    * Other options
+    */
   var `type`: js.UndefOr[String] = js.undefined
   var urlParamsEncoded: js.UndefOr[js.Any] = js.undefined
   var urlParamsEncoding: js.UndefOr[js.Any] = js.undefined
@@ -44,10 +44,7 @@ trait HierarchicalDataSourceSettings
 object HierarchicalDataSourceSettings {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for HierarchicalDataSourceSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     autogenerate: js.UndefOr[Boolean] = js.undefined,
     callback: js.Any = null,
     callee: js.Any = null,
@@ -57,9 +54,9 @@ object HierarchicalDataSourceSettings {
     dataSource: js.Any = null,
     defaultChildrenDataProperty: String = null,
     filtering: HierarchicalDataSourceSettingsFiltering = null,
-    initialDataBindDepth: Int | Double = null,
+    initialDataBindDepth: js.UndefOr[Double] = js.undefined,
     localSchemaTransform: js.UndefOr[Boolean] = js.undefined,
-    maxDataBindDepth: Int | Double = null,
+    maxDataBindDepth: js.UndefOr[Double] = js.undefined,
     odata: js.UndefOr[Boolean] = js.undefined,
     paging: HierarchicalDataSourceSettingsPaging = null,
     requestType: String = null,
@@ -73,7 +70,7 @@ object HierarchicalDataSourceSettings {
   ): HierarchicalDataSourceSettings = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(autogenerate)) __obj.updateDynamic("autogenerate")(autogenerate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autogenerate)) __obj.updateDynamic("autogenerate")(autogenerate.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (callee != null) __obj.updateDynamic("callee")(callee.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -82,10 +79,10 @@ object HierarchicalDataSourceSettings {
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (defaultChildrenDataProperty != null) __obj.updateDynamic("defaultChildrenDataProperty")(defaultChildrenDataProperty.asInstanceOf[js.Any])
     if (filtering != null) __obj.updateDynamic("filtering")(filtering.asInstanceOf[js.Any])
-    if (initialDataBindDepth != null) __obj.updateDynamic("initialDataBindDepth")(initialDataBindDepth.asInstanceOf[js.Any])
-    if (!js.isUndefined(localSchemaTransform)) __obj.updateDynamic("localSchemaTransform")(localSchemaTransform.asInstanceOf[js.Any])
-    if (maxDataBindDepth != null) __obj.updateDynamic("maxDataBindDepth")(maxDataBindDepth.asInstanceOf[js.Any])
-    if (!js.isUndefined(odata)) __obj.updateDynamic("odata")(odata.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDataBindDepth)) __obj.updateDynamic("initialDataBindDepth")(initialDataBindDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(localSchemaTransform)) __obj.updateDynamic("localSchemaTransform")(localSchemaTransform.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDataBindDepth)) __obj.updateDynamic("maxDataBindDepth")(maxDataBindDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(odata)) __obj.updateDynamic("odata")(odata.get.asInstanceOf[js.Any])
     if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
     if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType.asInstanceOf[js.Any])

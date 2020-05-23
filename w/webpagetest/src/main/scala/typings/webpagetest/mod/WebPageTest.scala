@@ -1,6 +1,5 @@
 package typings.webpagetest.mod
 
-import typings.webpagetest.AnonResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,8 +22,8 @@ trait WebPageTest extends js.Object {
   def getHARData(id: String, options: Options, callback: Callback[_]): Unit = js.native
   def getHistory(days: Double, callback: Callback[_]): Unit = js.native
   def getHistory(days: Double, options: Options, callback: Callback[_]): Unit = js.native
-  def getLocations(callback: Callback[AnonResponse]): Unit = js.native
-  def getLocations(options: Options with RequestOptions, callback: Callback[AnonResponse]): Unit = js.native
+  def getLocations(callback: Callback[typings.webpagetest.anon.Response]): Unit = js.native
+  def getLocations(options: Options with RequestOptions, callback: Callback[typings.webpagetest.anon.Response]): Unit = js.native
   def getNetLogData(id: String, callback: Callback[_]): Unit = js.native
   def getNetLogData(id: String, options: Options with RunOptions, callback: Callback[_]): Unit = js.native
   def getPageSpeedData(id: String, callback: Callback[_]): Unit = js.native

@@ -1,6 +1,6 @@
 package typings.restIo.authorizedResourceMod
 
-import typings.restIo.AnonADMIN
+import typings.restIo.anon.ADMIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends AuthorizedResource
 @JSImport("rest-io/lib/src/authorizedResource", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var ROLES: AnonADMIN = js.native
+  var ROLES: ADMIN = js.native
 }
 

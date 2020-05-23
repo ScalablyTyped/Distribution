@@ -33,14 +33,14 @@ object Rule {
   def apply(
     Actions: Actions = null,
     Conditions: RuleConditionList = null,
-    IsDefault: js.UndefOr[Boolean] = js.undefined,
+    IsDefault: js.UndefOr[IsDefault] = js.undefined,
     Priority: String = null,
     RuleArn: RuleArn = null
   ): Rule = {
     val __obj = js.Dynamic.literal()
     if (Actions != null) __obj.updateDynamic("Actions")(Actions.asInstanceOf[js.Any])
     if (Conditions != null) __obj.updateDynamic("Conditions")(Conditions.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
     if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (RuleArn != null) __obj.updateDynamic("RuleArn")(RuleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]

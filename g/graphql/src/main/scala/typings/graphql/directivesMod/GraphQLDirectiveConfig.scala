@@ -24,17 +24,17 @@ object GraphQLDirectiveConfig {
   def apply(
     locations: js.Array[DirectiveLocationEnum],
     name: String,
-    args: Maybe[GraphQLFieldConfigArgumentMap] = null,
-    astNode: Maybe[DirectiveDefinitionNode] = null,
-    description: Maybe[String] = null,
-    extensions: Maybe[Record[String, _]] = null,
-    isRepeatable: js.UndefOr[Boolean] = js.undefined
+    args: js.UndefOr[Null | Maybe[GraphQLFieldConfigArgumentMap]] = js.undefined,
+    astNode: js.UndefOr[Null | Maybe[DirectiveDefinitionNode]] = js.undefined,
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined,
+    extensions: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined,
+    isRepeatable: js.UndefOr[Null | Maybe[Boolean]] = js.undefined
   ): GraphQLDirectiveConfig = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(args)) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (!js.isUndefined(isRepeatable)) __obj.updateDynamic("isRepeatable")(isRepeatable.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLDirectiveConfig]
   }

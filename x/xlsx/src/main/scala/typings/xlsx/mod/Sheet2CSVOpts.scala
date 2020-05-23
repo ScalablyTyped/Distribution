@@ -30,10 +30,10 @@ object Sheet2CSVOpts {
     val __obj = js.Dynamic.literal()
     if (FS != null) __obj.updateDynamic("FS")(FS.asInstanceOf[js.Any])
     if (RS != null) __obj.updateDynamic("RS")(RS.asInstanceOf[js.Any])
-    if (!js.isUndefined(blankrows)) __obj.updateDynamic("blankrows")(blankrows.asInstanceOf[js.Any])
+    if (!js.isUndefined(blankrows)) __obj.updateDynamic("blankrows")(blankrows.get.asInstanceOf[js.Any])
     if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipHidden)) __obj.updateDynamic("skipHidden")(skipHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipHidden)) __obj.updateDynamic("skipHidden")(skipHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sheet2CSVOpts]
   }
 }

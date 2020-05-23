@@ -17,12 +17,12 @@ object ViewportProps {
     longitude: Double,
     width: Double,
     zoom: Double,
-    bearing: Int | Double = null,
-    pitch: Int | Double = null
+    bearing: js.UndefOr[Double] = js.undefined,
+    pitch: js.UndefOr[Double] = js.undefined
   ): ViewportProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportProps]
   }
 }

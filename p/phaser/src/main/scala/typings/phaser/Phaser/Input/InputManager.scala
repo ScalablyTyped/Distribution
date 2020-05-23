@@ -29,15 +29,8 @@ import scala.scalajs.js.annotation._
   * should be considered private. Instead, you should use the Input Plugin, which is a Scene level system, responsible
   * for dealing with all input events for a Scene.
   */
-@JSGlobal("Phaser.Input.InputManager")
 @js.native
-class InputManager protected () extends js.Object {
-  /**
-    * 
-    * @param game The Game instance that owns the Input Manager.
-    * @param config The Input Configuration object, as set in the Game Config.
-    */
-  def this(game: Game, config: js.Object) = this()
+trait InputManager extends js.Object {
   /**
     * The most recently active Pointer object.
     * 

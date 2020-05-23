@@ -25,18 +25,18 @@ object TransferUpload {
   def apply(
     name: String,
     size: Double,
-    cid: Int | Double = null,
-    clientftfid: Int | Double = null,
+    cid: js.UndefOr[Double] = js.undefined,
+    clientftfid: js.UndefOr[Double] = js.undefined,
     cpw: String = null,
-    overwrite: Int | Double = null,
-    resume: Int | Double = null
+    overwrite: js.UndefOr[Double] = js.undefined,
+    resume: js.UndefOr[Double] = js.undefined
   ): TransferUpload = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
-    if (clientftfid != null) __obj.updateDynamic("clientftfid")(clientftfid.asInstanceOf[js.Any])
+    if (!js.isUndefined(cid)) __obj.updateDynamic("cid")(cid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientftfid)) __obj.updateDynamic("clientftfid")(clientftfid.get.asInstanceOf[js.Any])
     if (cpw != null) __obj.updateDynamic("cpw")(cpw.asInstanceOf[js.Any])
-    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
-    if (resume != null) __obj.updateDynamic("resume")(resume.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferUpload]
   }
 }

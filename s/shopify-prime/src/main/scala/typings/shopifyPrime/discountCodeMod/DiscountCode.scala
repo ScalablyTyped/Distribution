@@ -29,14 +29,14 @@ object DiscountCode {
     admin_graphql_api_id: String = null,
     amount: String = null,
     code: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     `type`: percentage | shipping | fixed_amount | String = null
   ): DiscountCode = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscountCode]
   }

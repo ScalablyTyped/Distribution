@@ -1,8 +1,8 @@
 package typings.materialUiCore.tablePaginationTablePaginationMod
 
-import typings.materialUiCore.PartialClassNameMapTableP
-import typings.materialUiCore.PartialIconButtonProps
-import typings.materialUiCore.PartialSelectProps
+import typings.materialUiCore.anon.PartialClassNameMapTableP
+import typings.materialUiCore.anon.PartialIconButtonProps
+import typings.materialUiCore.anon.PartialSelectProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -62,7 +62,7 @@ import typings.materialUiCore.materialUiCoreStrings.yes
 import typings.materialUiCore.tableCellTableCellMod.Padding
 import typings.materialUiCore.tableCellTableCellMod.SortDirection
 import typings.materialUiCore.tablePaginationActionsMod.TablePaginationActionsProps
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -164,7 +164,7 @@ trait TablePaginationProps extends js.Object {
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
   var count: Double = js.native
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   var datatype: js.UndefOr[String] = js.native
   var defaultChecked: js.UndefOr[Boolean] = js.native
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native

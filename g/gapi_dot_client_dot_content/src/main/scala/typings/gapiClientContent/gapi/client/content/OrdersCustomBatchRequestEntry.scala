@@ -34,7 +34,7 @@ trait OrdersCustomBatchRequestEntry extends js.Object {
 object OrdersCustomBatchRequestEntry {
   @scala.inline
   def apply(
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     cancel: OrdersCustomBatchRequestEntryCancel = null,
     cancelLineItem: OrdersCustomBatchRequestEntryCancelLineItem = null,
     merchantId: String = null,
@@ -48,7 +48,7 @@ object OrdersCustomBatchRequestEntry {
     updateShipment: OrdersCustomBatchRequestEntryUpdateShipment = null
   ): OrdersCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (cancelLineItem != null) __obj.updateDynamic("cancelLineItem")(cancelLineItem.asInstanceOf[js.Any])
     if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])

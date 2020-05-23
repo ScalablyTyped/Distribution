@@ -1,6 +1,6 @@
 package typings.marked.mod
 
-import typings.marked.AnonAlign
+import typings.marked.anon.Align
 import typings.marked.markedNumbers.`1`
 import typings.marked.markedNumbers.`2`
 import typings.marked.markedNumbers.`3`
@@ -19,8 +19,7 @@ class Renderer () extends js.Object {
   def blockquote(quote: String): String = js.native
   def br(): String = js.native
   def checkbox(checked: Boolean): String = js.native
-  def code(code: String, language: js.UndefOr[scala.Nothing], isEscaped: Boolean): String = js.native
-  def code(code: String, language: String, isEscaped: Boolean): String = js.native
+  def code(code: String, language: js.UndefOr[String], isEscaped: Boolean): String = js.native
   def codespan(code: String): String = js.native
   def del(text: String): String = js.native
   def em(text: String): String = js.native
@@ -51,7 +50,7 @@ class Renderer () extends js.Object {
   def paragraph(text: String): String = js.native
   def strong(text: String): String = js.native
   def table(header: String, body: String): String = js.native
-  def tablecell(content: String, flags: AnonAlign): String = js.native
+  def tablecell(content: String, flags: Align): String = js.native
   def tablerow(content: String): String = js.native
   def text(text: String): String = js.native
 }

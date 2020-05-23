@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.Ref
 import typings.reactNative.mod.ImageRequireSource
-import typings.reactNativePhoneInput.TypeofTextInput
+import typings.reactNativePhoneInput.anon.TypeofTextInput
 import typings.std.ThisType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

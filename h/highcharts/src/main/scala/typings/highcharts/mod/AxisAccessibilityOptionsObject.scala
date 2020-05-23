@@ -32,7 +32,7 @@ object AxisAccessibilityOptionsObject {
   ): AxisAccessibilityOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (rangeDescription != null) __obj.updateDynamic("rangeDescription")(rangeDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisAccessibilityOptionsObject]
   }

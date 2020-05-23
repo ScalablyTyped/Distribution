@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Drive
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,23 +33,6 @@ object Access extends js.Object {
   
   @js.native
   sealed trait PRIVATE extends Access
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Access with Double] = js.native
-  /* 0 */ @js.native
-  object ANYONE extends TopLevel[ANYONE with Double]
-  
-  /* 1 */ @js.native
-  object ANYONE_WITH_LINK extends TopLevel[ANYONE_WITH_LINK with Double]
-  
-  /* 2 */ @js.native
-  object DOMAIN extends TopLevel[DOMAIN with Double]
-  
-  /* 3 */ @js.native
-  object DOMAIN_WITH_LINK extends TopLevel[DOMAIN_WITH_LINK with Double]
-  
-  /* 4 */ @js.native
-  object PRIVATE extends TopLevel[PRIVATE with Double]
   
 }
 

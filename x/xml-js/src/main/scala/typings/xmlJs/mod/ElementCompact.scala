@@ -1,7 +1,6 @@
 package typings.xmlJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.xmlJs.AnonAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,7 @@ trait ElementCompact
   var _attributes: js.UndefOr[Attributes] = js.undefined
   var _cdata: js.UndefOr[String] = js.undefined
   var _comment: js.UndefOr[String] = js.undefined
-  var _declaration: js.UndefOr[AnonAttributes] = js.undefined
+  var _declaration: js.UndefOr[typings.xmlJs.anon.Attributes] = js.undefined
   var _doctype: js.UndefOr[String] = js.undefined
   var _instruction: js.UndefOr[StringDictionary[String]] = js.undefined
   var _text: js.UndefOr[String | Double] = js.undefined
@@ -20,11 +19,11 @@ trait ElementCompact
 object ElementCompact {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     _attributes: Attributes = null,
     _cdata: String = null,
     _comment: String = null,
-    _declaration: AnonAttributes = null,
+    _declaration: typings.xmlJs.anon.Attributes = null,
     _doctype: String = null,
     _instruction: StringDictionary[String] = null,
     _text: String | Double = null

@@ -21,10 +21,10 @@ object EditorOptions {
     IndentStyle: IndentStyle,
     NewLineCharacter: java.lang.String,
     TabSize: Double,
-    BaseIndentSize: Int | Double = null
+    BaseIndentSize: js.UndefOr[Double] = js.undefined
   ): EditorOptions = {
     val __obj = js.Dynamic.literal(ConvertTabsToSpaces = ConvertTabsToSpaces.asInstanceOf[js.Any], IndentSize = IndentSize.asInstanceOf[js.Any], IndentStyle = IndentStyle.asInstanceOf[js.Any], NewLineCharacter = NewLineCharacter.asInstanceOf[js.Any], TabSize = TabSize.asInstanceOf[js.Any])
-    if (BaseIndentSize != null) __obj.updateDynamic("BaseIndentSize")(BaseIndentSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(BaseIndentSize)) __obj.updateDynamic("BaseIndentSize")(BaseIndentSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorOptions]
   }
 }

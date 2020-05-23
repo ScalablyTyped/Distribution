@@ -8,8 +8,8 @@ trait ValidateCallback[FormData, P, ErrorType] extends js.Object {
   var fieldValidatorKeys: js.Array[String]
   var initialRender: Boolean
   var lastFieldValidatorKeys: js.Array[String]
-  var nextProps: P with (InjectedFormProps[FormData, P, ErrorType])
-  var props: P with (InjectedFormProps[FormData, P, ErrorType])
+  var nextProps: DecoratedFormProps[FormData, P, ErrorType]
+  var props: DecoratedFormProps[FormData, P, ErrorType]
   var structure: js.Any
   var values: FormData
 }
@@ -20,8 +20,8 @@ object ValidateCallback {
     fieldValidatorKeys: js.Array[String],
     initialRender: Boolean,
     lastFieldValidatorKeys: js.Array[String],
-    nextProps: P with (InjectedFormProps[FormData, P, ErrorType]),
-    props: P with (InjectedFormProps[FormData, P, ErrorType]),
+    nextProps: DecoratedFormProps[FormData, P, ErrorType],
+    props: DecoratedFormProps[FormData, P, ErrorType],
     structure: js.Any,
     values: FormData
   ): ValidateCallback[FormData, P, ErrorType] = {

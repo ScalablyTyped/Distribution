@@ -24,10 +24,10 @@ trait RetryOptions extends js.Object {
 
 object RetryOptions {
   @scala.inline
-  def apply(`match`: js.Array[String | RegExp | Error] = null, max: Int | Double = null): RetryOptions = {
+  def apply(`match`: js.Array[String | RegExp | Error] = null, max: js.UndefOr[Double] = js.undefined): RetryOptions = {
     val __obj = js.Dynamic.literal()
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
 }

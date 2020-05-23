@@ -32,15 +32,15 @@ trait ModelEvaluateArgs extends js.Object {
 object ModelEvaluateArgs {
   @scala.inline
   def apply(
-    batchSize: Int | Double = null,
+    batchSize: js.UndefOr[Double] = js.undefined,
     sampleWeight: Tensor[Rank] = null,
-    steps: Int | Double = null,
+    steps: js.UndefOr[Double] = js.undefined,
     verbose: ModelLoggingVerbosity = null
   ): ModelEvaluateArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     if (sampleWeight != null) __obj.updateDynamic("sampleWeight")(sampleWeight.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.get.asInstanceOf[js.Any])
     if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelEvaluateArgs]
   }

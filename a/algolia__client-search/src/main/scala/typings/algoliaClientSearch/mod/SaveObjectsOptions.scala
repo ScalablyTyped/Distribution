@@ -15,7 +15,7 @@ object SaveObjectsOptions {
   @scala.inline
   def apply(autoGenerateObjectIDIfNotExist: js.UndefOr[Boolean] = js.undefined): SaveObjectsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoGenerateObjectIDIfNotExist)) __obj.updateDynamic("autoGenerateObjectIDIfNotExist")(autoGenerateObjectIDIfNotExist.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGenerateObjectIDIfNotExist)) __obj.updateDynamic("autoGenerateObjectIDIfNotExist")(autoGenerateObjectIDIfNotExist.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveObjectsOptions]
   }
 }

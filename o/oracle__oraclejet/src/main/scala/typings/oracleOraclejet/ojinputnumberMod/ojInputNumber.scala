@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojinputnumberMod
 
-import typings.oracleOraclejet.AnonAction
-import typings.oracleOraclejet.AnonElement
-import typings.oracleOraclejet.AnonNumberRange
+import typings.oracleOraclejet.anon.Action
+import typings.oracleOraclejet.anon.Element
+import typings.oracleOraclejet.anon.NumberRange
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojeditablevalueMod.editableValue
 import typings.oracleOraclejet.ojinputnumberMod.ojInputNumber.ojAnimateEnd
@@ -83,7 +83,7 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
   var required: Boolean = js.native
   var step: Double | Null = js.native
   @JSName("translations")
-  var translations_ojInputNumber: AnonNumberRange = js.native
+  var translations_ojInputNumber: NumberRange = js.native
   var validators: js.Array[Validator[Double] | RegisteredValidator] = js.native
   var virtualKeyboard: auto | number | text = js.native
   def addEventListener(
@@ -316,7 +316,7 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
   @JSName("setProperty")
   def setProperty_step(property: step, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonNumberRange): Unit = js.native
+  def setProperty_translations(property: translations, value: NumberRange): Unit = js.native
   @JSName("setProperty")
   def setProperty_validators(property: validators, value: js.Array[Validator[Double] | RegisteredValidator]): Unit = js.native
   @JSName("setProperty")
@@ -333,7 +333,7 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
 @JSImport("@oracle/oraclejet/ojinputnumber", "ojInputNumber")
 @js.native
 object ojInputNumber extends js.Object {
-  type ojAnimateEnd = CustomEvent[AnonAction]
-  type ojAnimateStart = CustomEvent[AnonElement]
+  type ojAnimateEnd = CustomEvent[Action]
+  type ojAnimateStart = CustomEvent[Element]
 }
 

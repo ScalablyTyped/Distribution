@@ -1,5 +1,6 @@
 package typings.smoothScrollbar
 
+import typings.smoothScrollbar.anon.PartialScrollIntoViewOpti
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
 import typings.std.HTMLElement
 import scala.scalajs.js

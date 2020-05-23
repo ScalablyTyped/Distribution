@@ -18,9 +18,9 @@ trait InstanceState extends js.Object {
 
 object InstanceState {
   @scala.inline
-  def apply(Code: Int | scala.Double = null, Name: InstanceStateName = null): InstanceState = {
+  def apply(Code: js.UndefOr[Integer] = js.undefined, Name: InstanceStateName = null): InstanceState = {
     val __obj = js.Dynamic.literal()
-    if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
+    if (!js.isUndefined(Code)) __obj.updateDynamic("Code")(Code.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceState]
   }

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.TreeMap
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object TextOverflow extends js.Object {
   //Wrap the label by word when its width exceeds grid width
   @js.native
   sealed trait WrapByWord extends TextOverflow
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextOverflow with Double] = js.native
-  /* 1 */ @js.native
-  object Hide extends TopLevel[Hide with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 2 */ @js.native
-  object Wrap extends TopLevel[Wrap with Double]
-  
-  /* 3 */ @js.native
-  object WrapByWord extends TopLevel[WrapByWord with Double]
   
 }
 

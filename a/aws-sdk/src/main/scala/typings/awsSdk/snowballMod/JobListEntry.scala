@@ -41,7 +41,7 @@ object JobListEntry {
   def apply(
     CreationDate: Timestamp = null,
     Description: String = null,
-    IsMaster: js.UndefOr[scala.Boolean] = js.undefined,
+    IsMaster: js.UndefOr[Boolean] = js.undefined,
     JobId: String = null,
     JobState: JobState = null,
     JobType: JobType = null,
@@ -50,7 +50,7 @@ object JobListEntry {
     val __obj = js.Dynamic.literal()
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsMaster)) __obj.updateDynamic("IsMaster")(IsMaster.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsMaster)) __obj.updateDynamic("IsMaster")(IsMaster.get.asInstanceOf[js.Any])
     if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
     if (JobState != null) __obj.updateDynamic("JobState")(JobState.asInstanceOf[js.Any])
     if (JobType != null) __obj.updateDynamic("JobType")(JobType.asInstanceOf[js.Any])

@@ -36,7 +36,7 @@ object ScalesCustomLabel {
     font: ScalesCustomLabelsFont = null,
     position: ScalesCustomLabelsPosition = null,
     positionType: CustomLabelPositionType | String = null,
-    textAngle: Int | Double = null,
+    textAngle: js.UndefOr[Double] = js.undefined,
     value: String = null
   ): ScalesCustomLabel = {
     val __obj = js.Dynamic.literal()
@@ -44,7 +44,7 @@ object ScalesCustomLabel {
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (positionType != null) __obj.updateDynamic("positionType")(positionType.asInstanceOf[js.Any])
-    if (textAngle != null) __obj.updateDynamic("textAngle")(textAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(textAngle)) __obj.updateDynamic("textAngle")(textAngle.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesCustomLabel]
   }

@@ -1,8 +1,6 @@
 package typings.stripeV3.stripe.paymentRequest
 
-import typings.stripeV3.AnonApplePay
-import typings.stripeV3.AnonShippingAddress
-import typings.stripeV3.AnonShippingOption
+import typings.stripeV3.anon.ApplePay
 import typings.stripeV3.stripeV3Strings.cancel
 import typings.stripeV3.stripeV3Strings.paymentmethod
 import typings.stripeV3.stripeV3Strings.shippingaddresschange
@@ -15,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StripePaymentRequest extends js.Object {
-  def canMakePayment(): js.Promise[AnonApplePay | Null] = js.native
+  def canMakePayment(): js.Promise[ApplePay | Null] = js.native
   @JSName("on")
   def on_cancel(event: cancel, handler: js.Function0[Unit]): Unit = js.native
   @JSName("on")
@@ -24,9 +22,15 @@ trait StripePaymentRequest extends js.Object {
     handler: js.Function1[/* response */ StripePaymentMethodPaymentResponse, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_shippingaddresschange(event: shippingaddresschange, handler: js.Function1[/* response */ AnonShippingAddress, Unit]): Unit = js.native
+  def on_shippingaddresschange(
+    event: shippingaddresschange,
+    handler: js.Function1[/* response */ typings.stripeV3.anon.ShippingAddress, Unit]
+  ): Unit = js.native
   @JSName("on")
-  def on_shippingoptionchange(event: shippingoptionchange, handler: js.Function1[/* response */ AnonShippingOption, Unit]): Unit = js.native
+  def on_shippingoptionchange(
+    event: shippingoptionchange,
+    handler: js.Function1[/* response */ typings.stripeV3.anon.ShippingOption, Unit]
+  ): Unit = js.native
   @JSName("on")
   def on_source(event: source, handler: js.Function1[/* response */ StripeSourcePaymentResponse, Unit]): Unit = js.native
   @JSName("on")

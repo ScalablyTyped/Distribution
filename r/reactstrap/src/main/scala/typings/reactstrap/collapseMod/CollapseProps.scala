@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.AllHTMLAttributes
 import typings.react.mod.ClassAttributes
 import typings.react.mod.ReactType
-import typings.reactstrap.AnonHide
+import typings.reactstrap.anon.Hide
 import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait CollapseProps
      with /* key */ StringDictionary[js.Any] {
   var classNames: js.UndefOr[String] = js.undefined
   var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var delay: js.UndefOr[AnonHide] = js.undefined
+  var delay: js.UndefOr[Hide] = js.undefined
   var isOpen: js.UndefOr[Boolean] = js.undefined
   var navbar: js.UndefOr[Boolean] = js.undefined
   var onClosed: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -38,7 +38,7 @@ object CollapseProps {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     classNames: String = null,
     cssModule: CSSModule = null,
-    delay: AnonHide = null,
+    delay: Hide = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
     navbar: js.UndefOr[Boolean] = js.undefined,
     onClosed: () => Unit = null,
@@ -57,8 +57,8 @@ object CollapseProps {
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(navbar)) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navbar)) __obj.updateDynamic("navbar")(navbar.get.asInstanceOf[js.Any])
     if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction0(onClosed))
     if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction0(onEntered))
     if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction0(onEntering))

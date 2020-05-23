@@ -1,6 +1,6 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.AnonDelete
+import typings.algoliaClientSearch.anon.Delete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait ConsequenceQuery extends js.Object {
   /**
     * List of edits.
     */
-  val edits: js.UndefOr[js.Array[AnonDelete]] = js.undefined
+  val edits: js.UndefOr[js.Array[Delete]] = js.undefined
   /**
     * List of removes.
     *
@@ -19,7 +19,7 @@ trait ConsequenceQuery extends js.Object {
 
 object ConsequenceQuery {
   @scala.inline
-  def apply(edits: js.Array[AnonDelete] = null, remove: js.Array[String] = null): ConsequenceQuery = {
+  def apply(edits: js.Array[Delete] = null, remove: js.Array[String] = null): ConsequenceQuery = {
     val __obj = js.Dynamic.literal()
     if (edits != null) __obj.updateDynamic("edits")(edits.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when keyboard search button is pressed.
-		 */
+  * Fired when keyboard search button is pressed.
+  */
 trait SearchBarReturnEvent extends SearchBarBaseEvent {
   /**
-  			 * Value of the search bar.
-  			 */
+    * Value of the search bar.
+    */
   var value: String
 }
 

@@ -1,17 +1,16 @@
 package typings.winrtUwp.Windows.Data.Xml.Dom
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsIXmlNode
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsIXmlNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Encapsulates iteration through the collection of attribute nodes. */
-@JSGlobal("Windows.Data.Xml.Dom.XmlNamedNodeMap")
 @js.native
-abstract class XmlNamedNodeMap () extends Array[IXmlNode] {
+trait XmlNamedNodeMap extends Array[IXmlNode] {
   /** Gets the number of elements in the vector view. */
   var size: Double = js.native
   /**
@@ -29,7 +28,7 @@ abstract class XmlNamedNodeMap () extends Array[IXmlNode] {
     * Returns the items that start at the specified index of the vector view.
     * @param startIndex The zero-based index of the start of the items in the vector to return.
     */
-  def getMany(startIndex: Double): AnonItemsIXmlNode = js.native
+  def getMany(startIndex: Double): ItemsIXmlNode = js.native
   /**
     * Retrieves the attribute with the specified name.
     * @param name The name of the attribute.
@@ -43,7 +42,7 @@ abstract class XmlNamedNodeMap () extends Array[IXmlNode] {
     * @return The attribute with the specified namespace and name. This method returns Null if the attribute node is not in this collection.
     */
   def getNamedItemNS(namespaceUri: js.Any, name: String): IXmlNode = js.native
-  def indexOf(value: IXmlNode, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: IXmlNode, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: IXmlNode): Double = js.native

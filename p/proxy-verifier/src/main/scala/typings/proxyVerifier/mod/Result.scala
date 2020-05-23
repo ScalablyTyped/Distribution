@@ -1,6 +1,6 @@
 package typings.proxyVerifier.mod
 
-import typings.proxyVerifier.AnonCode
+import typings.proxyVerifier.anon.Code
 import typings.proxyVerifier.proxyVerifierBooleans.`false`
 import typings.proxyVerifier.proxyVerifierBooleans.`true`
 import scala.scalajs.js
@@ -20,7 +20,7 @@ object Result {
     __obj.asInstanceOf[Result]
   }
   @scala.inline
-  def NotWorkingResult(error: AnonCode, ok: `false`): Result = {
+  def NotWorkingResult(error: Code, ok: `false`): Result = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }

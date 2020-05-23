@@ -19,13 +19,13 @@ object PointCloudRGBRendererProperties {
     colorModulation: PointCloudRendererColorModulation = null,
     field: String = null,
     pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
-    pointsPerInch: Int | Double = null
+    pointsPerInch: js.UndefOr[Double] = js.undefined
   ): PointCloudRGBRendererProperties = {
     val __obj = js.Dynamic.literal()
     if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm.asInstanceOf[js.Any])
-    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsPerInch)) __obj.updateDynamic("pointsPerInch")(pointsPerInch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudRGBRendererProperties]
   }
 }

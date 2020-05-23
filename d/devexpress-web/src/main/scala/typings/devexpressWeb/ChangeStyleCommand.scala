@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to change the selected range's style.
   */
-@JSGlobal("ChangeStyleCommand")
 @js.native
-class ChangeStyleCommand () extends CommandBase {
+trait ChangeStyleCommand extends CommandBase {
   /**
     * Executes the ChangeStyleCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param style An object that contains the style settings object, or the style name.

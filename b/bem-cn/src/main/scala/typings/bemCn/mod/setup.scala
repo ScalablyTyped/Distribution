@@ -1,6 +1,6 @@
 package typings.bemCn.mod
 
-import typings.bemCn.PartialBemSettings
+import typings.bemCn.anon.PartialBemSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

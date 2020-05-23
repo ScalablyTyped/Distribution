@@ -24,52 +24,52 @@ trait ISurface
   /** [Config Option] (Boolean) */
   var dirty: js.UndefOr[Boolean] = js.undefined
   /** [Method]
-  		* @param sprite Ext.draw.sprite.Sprite
-  		* @param isWithoutTransform Boolean
-  		* @returns Object
-  		*/
+    * @param sprite Ext.draw.sprite.Sprite
+    * @param isWithoutTransform Boolean
+    * @returns Object
+    */
   var getBBox: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[ISprite], /* isWithoutTransform */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Returns the value of background
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getBackground: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns true if the surface is dirty
-  		* @returns Boolean 'true' if the surface is dirty
-  		*/
+    * @returns Boolean 'true' if the surface is dirty
+    */
   var getDirty: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method]
-  		* @param id String The unique identifier of the group.
-  		* @returns Ext.draw.Group The group.
-  		*/
+    * @param id String The unique identifier of the group.
+    * @returns Ext.draw.Group The group.
+    */
   var getGroup: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], IGroup]] = js.undefined
   /** [Method] Returns the value of groups
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getGroups: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the value of items
-  		* @returns Ext.draw.Group
-  		*/
+    * @returns Ext.draw.Group
+    */
   var getItems: js.UndefOr[js.Function0[IGroup]] = js.undefined
   /** [Method] Returns the value of region
-  		* @returns Array
-  		*/
+    * @returns Array
+    */
   var getRegion: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Config Option] (Array) */
   var groups: js.UndefOr[Array] = js.undefined
   /** [Config Option] (Ext.draw.Group) */
   var items: js.UndefOr[IGroup] = js.undefined
   /** [Method] Invoked when a sprite is adding to the surface
-  		* @param sprite Ext.draw.sprite.Sprite The sprite to be added.
-  		*/
+    * @param sprite Ext.draw.sprite.Sprite The sprite to be added.
+    */
   var onAdd: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.undefined
   /** [Config Option] (Array) */
   var region: js.UndefOr[Array] = js.undefined
   /** [Method] Remove a given sprite from the surface optionally destroying the sprite in the process
-  		* @param sprite Ext.draw.sprite.Sprite
-  		* @param destroySprite Boolean
-  		*/
+    * @param sprite Ext.draw.sprite.Sprite
+    * @param destroySprite Boolean
+    */
   var remove: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
@@ -82,29 +82,29 @@ trait ISurface
   /** [Method] Reset the matrix of the surface  */
   var resetTransform: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Round the number to align to the pixels on device
-  		* @param num Number The number to align.
-  		* @returns Number The resultant alignment.
-  		*/
+    * @param num Number The number to align.
+    * @returns Number The resultant alignment.
+    */
   var roundPixel: js.UndefOr[js.Function1[/* num */ js.UndefOr[Double], Double]] = js.undefined
   /** [Method] Sets the value of background
-  		* @param background Object The new value.
-  		*/
+    * @param background Object The new value.
+    */
   var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of groups
-  		* @param groups Array The new value.
-  		*/
+    * @param groups Array The new value.
+    */
   var setGroups: js.UndefOr[js.Function1[/* groups */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Sets the value of items
-  		* @param items Ext.draw.Group The new value.
-  		*/
+    * @param items Ext.draw.Group The new value.
+    */
   var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[IGroup], Unit]] = js.undefined
   /** [Method] Sets the value of region
-  		* @param region Array The new value.
-  		*/
+    * @param region Array The new value.
+    */
   var setRegion: js.UndefOr[js.Function1[/* region */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Mark the surface to render after another surface is updated
-  		* @param surface Ext.draw.Surface The surface to wait for.
-  		*/
+    * @param surface Ext.draw.Surface The surface to wait for.
+    */
   var waitFor: js.UndefOr[js.Function1[/* surface */ js.UndefOr[this.type], Unit]] = js.undefined
 }
 
@@ -151,7 +151,7 @@ object ISurface {
     extend: String = null,
     fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
     fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
-    flex: Int | Double = null,
+    flex: js.UndefOr[Double] = js.undefined,
     floating: js.UndefOr[Boolean] = js.undefined,
     floatingCls: String = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
@@ -347,7 +347,7 @@ object ISurface {
     waitFor: /* surface */ js.UndefOr[ISurface] => Unit = null,
     width: js.Any = null,
     xtype: String = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): ISurface = {
     val __obj = js.Dynamic.literal()
     if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction0(add))
@@ -367,7 +367,7 @@ object ISurface {
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
     if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
@@ -377,9 +377,9 @@ object ISurface {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (devicePixelRatio != null) __obj.updateDynamic("devicePixelRatio")(devicePixelRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.get.asInstanceOf[js.Any])
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls.asInstanceOf[js.Any])
     if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
     if (docked != null) __obj.updateDynamic("docked")(docked.asInstanceOf[js.Any])
@@ -390,10 +390,10 @@ object ISurface {
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
     if (floatingCls != null) __obj.updateDynamic("floatingCls")(floatingCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
     if (getAlignmentInfo != null) __obj.updateDynamic("getAlignmentInfo")(js.Any.fromFunction2(getAlignmentInfo))
     if (getBBox != null) __obj.updateDynamic("getBBox")(js.Any.fromFunction2(getBBox))
     if (getBackground != null) __obj.updateDynamic("getBackground")(js.Any.fromFunction0(getBackground))
@@ -455,11 +455,11 @@ object ISurface {
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasParent != null) __obj.updateDynamic("hasParent")(js.Any.fromFunction0(hasParent))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (hiddenCls != null) __obj.updateDynamic("hiddenCls")(hiddenCls.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap.get.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
@@ -470,7 +470,7 @@ object ISurface {
     if (isXType != null) __obj.updateDynamic("isXType")(js.Any.fromFunction2(isXType))
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(layoutOnOrientationChange)) __obj.updateDynamic("layoutOnOrientationChange")(layoutOnOrientationChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(layoutOnOrientationChange)) __obj.updateDynamic("layoutOnOrientationChange")(layoutOnOrientationChange.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -479,9 +479,9 @@ object ISurface {
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (!js.isUndefined(monitorOrientation)) __obj.updateDynamic("monitorOrientation")(monitorOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorOrientation)) __obj.updateDynamic("monitorOrientation")(monitorOrientation.get.asInstanceOf[js.Any])
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
@@ -565,12 +565,12 @@ object ISurface {
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation.asInstanceOf[js.Any])
     if (showBy != null) __obj.updateDynamic("showBy")(js.Any.fromFunction2(showBy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopMaskTapEvent)) __obj.updateDynamic("stopMaskTapEvent")(stopMaskTapEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopMaskTapEvent)) __obj.updateDynamic("stopMaskTapEvent")(stopMaskTapEvent.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styleHtmlCls != null) __obj.updateDynamic("styleHtmlCls")(styleHtmlCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleHtmlContent)) __obj.updateDynamic("styleHtmlContent")(styleHtmlContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleHtmlContent)) __obj.updateDynamic("styleHtmlContent")(styleHtmlContent.get.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
@@ -586,7 +586,7 @@ object ISurface {
     if (waitFor != null) __obj.updateDynamic("waitFor")(js.Any.fromFunction1(waitFor))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xtype != null) __obj.updateDynamic("xtype")(xtype.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISurface]
   }
 }

@@ -12,9 +12,9 @@ trait IGossipBatchResponse extends js.Object {
 
 object IGossipBatchResponse {
   @scala.inline
-  def apply(content: Uint8Array = null): IGossipBatchResponse = {
+  def apply(content: js.UndefOr[Null | Uint8Array] = js.undefined): IGossipBatchResponse = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGossipBatchResponse]
   }
 }

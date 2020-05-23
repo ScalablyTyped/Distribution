@@ -57,26 +57,26 @@ object ConfigurationOptionDescription {
   def apply(
     ChangeSeverity: ConfigurationOptionSeverity = null,
     DefaultValue: ConfigurationOptionDefaultValue = null,
-    MaxLength: Int | Double = null,
-    MaxValue: Int | Double = null,
-    MinValue: Int | Double = null,
+    MaxLength: js.UndefOr[OptionRestrictionMaxLength] = js.undefined,
+    MaxValue: js.UndefOr[OptionRestrictionMaxValue] = js.undefined,
+    MinValue: js.UndefOr[OptionRestrictionMinValue] = js.undefined,
     Name: ConfigurationOptionName = null,
     Namespace: OptionNamespace = null,
     Regex: OptionRestrictionRegex = null,
-    UserDefined: js.UndefOr[Boolean] = js.undefined,
+    UserDefined: js.UndefOr[UserDefinedOption] = js.undefined,
     ValueOptions: ConfigurationOptionPossibleValues = null,
     ValueType: ConfigurationOptionValueType = null
   ): ConfigurationOptionDescription = {
     val __obj = js.Dynamic.literal()
     if (ChangeSeverity != null) __obj.updateDynamic("ChangeSeverity")(ChangeSeverity.asInstanceOf[js.Any])
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (MaxLength != null) __obj.updateDynamic("MaxLength")(MaxLength.asInstanceOf[js.Any])
-    if (MaxValue != null) __obj.updateDynamic("MaxValue")(MaxValue.asInstanceOf[js.Any])
-    if (MinValue != null) __obj.updateDynamic("MinValue")(MinValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxLength)) __obj.updateDynamic("MaxLength")(MaxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxValue)) __obj.updateDynamic("MaxValue")(MaxValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinValue)) __obj.updateDynamic("MinValue")(MinValue.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
     if (Regex != null) __obj.updateDynamic("Regex")(Regex.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserDefined)) __obj.updateDynamic("UserDefined")(UserDefined.asInstanceOf[js.Any])
+    if (!js.isUndefined(UserDefined)) __obj.updateDynamic("UserDefined")(UserDefined.get.asInstanceOf[js.Any])
     if (ValueOptions != null) __obj.updateDynamic("ValueOptions")(ValueOptions.asInstanceOf[js.Any])
     if (ValueType != null) __obj.updateDynamic("ValueType")(ValueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationOptionDescription]

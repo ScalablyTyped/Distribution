@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.Polyline")
 @js.native
-class Polyline () extends MVCObject {
-  def this(opts: PolylineOptions) = this()
+trait Polyline extends MVCObject {
   def getDraggable(): Boolean = js.native
   def getEditable(): Boolean = js.native
   def getMap(): Map[Element] = js.native

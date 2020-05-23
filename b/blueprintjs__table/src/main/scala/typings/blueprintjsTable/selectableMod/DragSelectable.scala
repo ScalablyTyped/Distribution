@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.selectableMod
 
-import typings.blueprintjsTable.PartialIDragSelectablePro
+import typings.blueprintjsTable.anon.PartialIDragSelectablePro
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

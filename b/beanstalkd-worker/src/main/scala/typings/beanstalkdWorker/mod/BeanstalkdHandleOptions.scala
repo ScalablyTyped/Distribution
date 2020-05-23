@@ -15,11 +15,15 @@ trait BeanstalkdHandleOptions extends js.Object {
 
 object BeanstalkdHandleOptions {
   @scala.inline
-  def apply(backoff: BeanstalkdHandleBackoff = null, tries: Int | Double = null, width: Int | Double = null): BeanstalkdHandleOptions = {
+  def apply(
+    backoff: BeanstalkdHandleBackoff = null,
+    tries: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): BeanstalkdHandleOptions = {
     val __obj = js.Dynamic.literal()
     if (backoff != null) __obj.updateDynamic("backoff")(backoff.asInstanceOf[js.Any])
-    if (tries != null) __obj.updateDynamic("tries")(tries.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(tries)) __obj.updateDynamic("tries")(tries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeanstalkdHandleOptions]
   }
 }

@@ -24,12 +24,12 @@ object DesiredWeightAndCapacity {
   @scala.inline
   def apply(
     VariantName: VariantName,
-    DesiredInstanceCount: Int | Double = null,
-    DesiredWeight: Int | Double = null
+    DesiredInstanceCount: js.UndefOr[TaskCount] = js.undefined,
+    DesiredWeight: js.UndefOr[VariantWeight] = js.undefined
   ): DesiredWeightAndCapacity = {
     val __obj = js.Dynamic.literal(VariantName = VariantName.asInstanceOf[js.Any])
-    if (DesiredInstanceCount != null) __obj.updateDynamic("DesiredInstanceCount")(DesiredInstanceCount.asInstanceOf[js.Any])
-    if (DesiredWeight != null) __obj.updateDynamic("DesiredWeight")(DesiredWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredInstanceCount)) __obj.updateDynamic("DesiredInstanceCount")(DesiredInstanceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredWeight)) __obj.updateDynamic("DesiredWeight")(DesiredWeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DesiredWeightAndCapacity]
   }
 }

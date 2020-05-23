@@ -1,6 +1,6 @@
 package typings.dockerode.mod
 
-import typings.dockerode.AnonCurrent
+import typings.dockerode.anon.Current
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait ContainerStats extends js.Object {
   var cpu_stats: CPUStats
   var memory_stats: MemoryStats
   var networks: NetworkStats
-  var pid_stats: AnonCurrent
+  var pid_stats: Current
   var precpu_stats: CPUStats
   var read: String
 }
@@ -20,7 +20,7 @@ object ContainerStats {
     cpu_stats: CPUStats,
     memory_stats: MemoryStats,
     networks: NetworkStats,
-    pid_stats: AnonCurrent,
+    pid_stats: Current,
     precpu_stats: CPUStats,
     read: String
   ): ContainerStats = {

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.IHTMLXMLHttpRequest")
 @js.native
-class IHTMLXMLHttpRequest protected () extends js.Object {
+trait IHTMLXMLHttpRequest extends js.Object {
   @JSName("MSHTML.IHTMLXMLHttpRequest_typekey")
   var MSHTMLDotIHTMLXMLHttpRequest_typekey: IHTMLXMLHttpRequest = js.native
   var onreadystatechange: js.Any = js.native

@@ -7,7 +7,5 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the CrosshairGroupHeaderElement class.
   */
-@JSGlobal("ASPxClientCrosshairGroupHeaderElement")
-@js.native
-class ASPxClientCrosshairGroupHeaderElement () extends js.Object
+trait ASPxClientCrosshairGroupHeaderElement extends js.Object
 

@@ -33,15 +33,15 @@ object GooglePrivacyDlpV2beta1InspectConfig {
     includeQuote: js.UndefOr[Boolean] = js.undefined,
     infoTypeLimits: js.Array[GooglePrivacyDlpV2beta1InfoTypeLimit] = null,
     infoTypes: js.Array[GooglePrivacyDlpV2beta1InfoType] = null,
-    maxFindings: Int | Double = null,
+    maxFindings: js.UndefOr[Double] = js.undefined,
     minLikelihood: String = null
   ): GooglePrivacyDlpV2beta1InspectConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeTypes)) __obj.updateDynamic("excludeTypes")(excludeTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeQuote)) __obj.updateDynamic("includeQuote")(includeQuote.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeTypes)) __obj.updateDynamic("excludeTypes")(excludeTypes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeQuote)) __obj.updateDynamic("includeQuote")(includeQuote.get.asInstanceOf[js.Any])
     if (infoTypeLimits != null) __obj.updateDynamic("infoTypeLimits")(infoTypeLimits.asInstanceOf[js.Any])
     if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes.asInstanceOf[js.Any])
-    if (maxFindings != null) __obj.updateDynamic("maxFindings")(maxFindings.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFindings)) __obj.updateDynamic("maxFindings")(maxFindings.get.asInstanceOf[js.Any])
     if (minLikelihood != null) __obj.updateDynamic("minLikelihood")(minLikelihood.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectConfig]
   }

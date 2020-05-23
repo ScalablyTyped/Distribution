@@ -2,6 +2,7 @@ package typings.xhr2Cookies
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import typings.xhr2Cookies.anon.BaseUrl
 import typings.xhr2Cookies.xmlHttpRequestMod.XMLHttpRequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +36,7 @@ object mod extends js.Object {
     var UNSENT: Double = js.native
     var XMLHttpRequestUpload: Instantiable0[typings.xhr2Cookies.xmlHttpRequestUploadMod.XMLHttpRequestUpload] = js.native
     var cookieJar: js.Any = js.native
-    def nodejsSet(options: AnonBaseUrl): Unit = js.native
+    def nodejsSet(options: BaseUrl): Unit = js.native
   }
   
 }

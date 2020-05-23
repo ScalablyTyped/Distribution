@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Networking.Sockets
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +15,6 @@ object ControlChannelTriggerResourceType extends js.Object {
   
   @js.native
   sealed trait requestSoftwareSlot extends ControlChannelTriggerResourceType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ControlChannelTriggerResourceType with Double] = js.native
-  /* 1 */ @js.native
-  object requestHardwareSlot extends TopLevel[requestHardwareSlot with Double]
-  
-  /* 0 */ @js.native
-  object requestSoftwareSlot extends TopLevel[requestSoftwareSlot with Double]
   
 }
 

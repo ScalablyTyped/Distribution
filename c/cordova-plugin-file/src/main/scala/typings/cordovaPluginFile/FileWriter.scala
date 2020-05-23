@@ -41,12 +41,3 @@ trait FileWriter extends FileSaver {
   def write(data: Blob): Unit = js.native
 }
 
-/* FileWriter states */
-@JSGlobal("FileWriter")
-@js.native
-object FileWriter extends js.Object {
-  var DONE: Double = js.native
-  var INIT: Double = js.native
-  var WRITING: Double = js.native
-}
-

@@ -37,11 +37,11 @@ object Task {
     executionId: String = null,
     id: String = null,
     lockExpirationTime: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     processDefinitionId: String = null,
     processDefinitionKey: String = null,
     processInstanceId: String = null,
-    retries: Int | Double = null,
+    retries: js.UndefOr[Double] = js.undefined,
     tenantId: String = null,
     topicName: String = null,
     workerId: String = null
@@ -55,11 +55,11 @@ object Task {
     if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lockExpirationTime != null) __obj.updateDynamic("lockExpirationTime")(lockExpirationTime.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (processDefinitionId != null) __obj.updateDynamic("processDefinitionId")(processDefinitionId.asInstanceOf[js.Any])
     if (processDefinitionKey != null) __obj.updateDynamic("processDefinitionKey")(processDefinitionKey.asInstanceOf[js.Any])
     if (processInstanceId != null) __obj.updateDynamic("processInstanceId")(processInstanceId.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
     if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
     if (topicName != null) __obj.updateDynamic("topicName")(topicName.asInstanceOf[js.Any])
     if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])

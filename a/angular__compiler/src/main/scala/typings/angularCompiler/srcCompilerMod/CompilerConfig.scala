@@ -1,6 +1,6 @@
 package typings.angularCompiler.srcCompilerMod
 
-import typings.angularCompiler.AnonDefaultEncapsulation
+import typings.angularCompiler.anon.DefaultEncapsulation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompilerConfig ()
   extends typings.angularCompiler.configMod.CompilerConfig {
-  def this(hasDefaultEncapsulationUseJitJitDevModeMissingTranslationPreserveWhitespacesStrictInjectionParameters: AnonDefaultEncapsulation) = this()
+  def this(hasDefaultEncapsulationUseJitJitDevModeMissingTranslationPreserveWhitespacesStrictInjectionParameters: DefaultEncapsulation) = this()
 }
 

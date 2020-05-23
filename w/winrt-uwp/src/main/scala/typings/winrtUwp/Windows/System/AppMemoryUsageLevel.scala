@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object AppMemoryUsageLevel extends js.Object {
   /** Medium app memory usage. */
   @js.native
   sealed trait medium extends AppMemoryUsageLevel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppMemoryUsageLevel with Double] = js.native
-  /* 2 */ @js.native
-  object high extends TopLevel[high with Double]
-  
-  /* 0 */ @js.native
-  object low extends TopLevel[low with Double]
-  
-  /* 1 */ @js.native
-  object medium extends TopLevel[medium with Double]
   
 }
 

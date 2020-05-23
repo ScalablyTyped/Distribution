@@ -29,10 +29,15 @@ import scala.scalajs.js.annotation._
   *      aACompromise            (8) }
   * ```
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.DistributionPointName")
-@js.native
-class DistributionPointName protected () extends js.Object {
-  def this(gnOrRdn: GeneralNames) = this()
-  def getEncodedHex(): String = js.native
+trait DistributionPointName extends js.Object {
+  def getEncodedHex(): String
+}
+
+object DistributionPointName {
+  @scala.inline
+  def apply(getEncodedHex: () => String): DistributionPointName = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex))
+    __obj.asInstanceOf[DistributionPointName]
+  }
 }
 

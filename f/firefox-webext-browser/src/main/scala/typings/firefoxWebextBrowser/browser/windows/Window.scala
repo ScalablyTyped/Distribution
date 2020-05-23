@@ -56,28 +56,28 @@ object Window {
     alwaysOnTop: Boolean,
     focused: Boolean,
     incognito: Boolean,
-    height: Int | Double = null,
-    id: Int | Double = null,
-    left: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    id: js.UndefOr[Double] = js.undefined,
+    left: js.UndefOr[Double] = js.undefined,
     sessionId: String = null,
     state: WindowState = null,
     tabs: js.Array[Tab] = null,
     title: String = null,
-    top: Int | Double = null,
+    top: js.UndefOr[Double] = js.undefined,
     `type`: WindowType = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Window = {
     val __obj = js.Dynamic.literal(alwaysOnTop = alwaysOnTop.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
 }

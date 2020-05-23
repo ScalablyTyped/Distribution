@@ -1,24 +1,24 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonArgumentComponent
-import typings.devextreme.AnonCancelComponentData
-import typings.devextreme.AnonComponentDxPolarChart
-import typings.devextreme.AnonComponentTElementDxElement
-import typings.devextreme.AnonComponentTElementDxElementModelAny
-import typings.devextreme.AnonConvertToAxisDataType
-import typings.devextreme.AnonCustomizeSeriesNameField
-import typings.devextreme.AnonDuration
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementModelTarget
-import typings.devextreme.AnonElementTarget
-import typings.devextreme.AnonFormatModel
-import typings.devextreme.AnonJQueryEventModelTarget
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonModelTarget
-import typings.devextreme.AnonName
-import typings.devextreme.AnonPreviousRange
-import typings.devextreme.AnonRange
-import typings.devextreme.AnonTargetAny
+import typings.devextreme.anon.ArgumentComponent
+import typings.devextreme.anon.CancelComponentData
+import typings.devextreme.anon.ComponentDxPolarChart
+import typings.devextreme.anon.ComponentTElementDxElement
+import typings.devextreme.anon.ComponentTElementDxElementModelAny
+import typings.devextreme.anon.ConvertToAxisDataType
+import typings.devextreme.anon.CustomizeSeriesNameField
+import typings.devextreme.anon.Duration
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.ElementModelTarget
+import typings.devextreme.anon.ElementTarget
+import typings.devextreme.anon.FormatModel
+import typings.devextreme.anon.JQueryEventModelTarget
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.ModelTarget
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.PreviousRange
+import typings.devextreme.anon.Range
+import typings.devextreme.anon.TargetAny
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -82,7 +82,7 @@ trait dxPolarChartOptions extends BaseChartOptions[dxPolarChart] {
   /** @name dxPolarChart.Options.containerBackgroundColor */
   var containerBackgroundColor: js.UndefOr[String] = js.undefined
   /** @name dxPolarChart.Options.dataPrepareSettings */
-  var dataPrepareSettings: js.UndefOr[AnonConvertToAxisDataType] = js.undefined
+  var dataPrepareSettings: js.UndefOr[ConvertToAxisDataType] = js.undefined
   /** @deprecated */
   /** @name dxPolarChart.Options.equalBarWidth */
   var equalBarWidth: js.UndefOr[Boolean] = js.undefined
@@ -92,25 +92,25 @@ trait dxPolarChartOptions extends BaseChartOptions[dxPolarChart] {
   /** @name dxPolarChart.Options.negativesAsZeroes */
   var negativesAsZeroes: js.UndefOr[Boolean] = js.undefined
   /** @name dxPolarChart.Options.onArgumentAxisClick */
-  var onArgumentAxisClick: js.UndefOr[(js.Function1[/* e */ AnonArgumentComponent, _]) | String] = js.undefined
+  var onArgumentAxisClick: js.UndefOr[(js.Function1[/* e */ ArgumentComponent, _]) | String] = js.undefined
   /** @name dxPolarChart.Options.onLegendClick */
-  var onLegendClick: js.UndefOr[(js.Function1[/* e */ AnonJQueryEventModelTarget, _]) | String] = js.undefined
+  var onLegendClick: js.UndefOr[(js.Function1[/* e */ JQueryEventModelTarget, _]) | String] = js.undefined
   /** @name dxPolarChart.Options.onSeriesClick */
-  var onSeriesClick: js.UndefOr[(js.Function1[/* e */ AnonJQueryEventModelTarget, _]) | String] = js.undefined
+  var onSeriesClick: js.UndefOr[(js.Function1[/* e */ JQueryEventModelTarget, _]) | String] = js.undefined
   /** @name dxPolarChart.Options.onSeriesHoverChanged */
-  var onSeriesHoverChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxPolarChart, _]] = js.undefined
+  var onSeriesHoverChanged: js.UndefOr[js.Function1[/* e */ ComponentDxPolarChart, _]] = js.undefined
   /** @name dxPolarChart.Options.onSeriesSelectionChanged */
-  var onSeriesSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxPolarChart, _]] = js.undefined
+  var onSeriesSelectionChanged: js.UndefOr[js.Function1[/* e */ ComponentDxPolarChart, _]] = js.undefined
   /** @name dxPolarChart.Options.onZoomEnd */
-  var onZoomEnd: js.UndefOr[js.Function1[/* e */ AnonPreviousRange, _]] = js.undefined
+  var onZoomEnd: js.UndefOr[js.Function1[/* e */ PreviousRange, _]] = js.undefined
   /** @name dxPolarChart.Options.onZoomStart */
-  var onZoomStart: js.UndefOr[js.Function1[/* e */ AnonRange, _]] = js.undefined
+  var onZoomStart: js.UndefOr[js.Function1[/* e */ Range, _]] = js.undefined
   /** @name dxPolarChart.Options.resolveLabelOverlapping */
   var resolveLabelOverlapping: js.UndefOr[hide | none] = js.undefined
   /** @name dxPolarChart.Options.seriesSelectionMode */
   var seriesSelectionMode: js.UndefOr[multiple | single_] = js.undefined
   /** @name dxPolarChart.Options.seriesTemplate */
-  var seriesTemplate: js.UndefOr[AnonCustomizeSeriesNameField] = js.undefined
+  var seriesTemplate: js.UndefOr[CustomizeSeriesNameField] = js.undefined
   /** @name dxPolarChart.Options.series */
   @JSName("series")
   var series_dxPolarChartOptions: js.UndefOr[PolarChartSeries | js.Array[PolarChartSeries]] = js.undefined
@@ -127,18 +127,18 @@ object dxPolarChartOptions {
   @scala.inline
   def apply(
     adaptiveLayout: dxPolarChartAdaptiveLayout = null,
-    animation: AnonDuration | Boolean = null,
+    animation: Duration | Boolean = null,
     argumentAxis: dxPolarChartArgumentAxis = null,
-    barGroupPadding: Int | Double = null,
-    barGroupWidth: Int | Double = null,
-    barWidth: Int | Double = null,
+    barGroupPadding: js.UndefOr[Double] = js.undefined,
+    barGroupWidth: js.UndefOr[Double] = js.undefined,
+    barWidth: js.UndefOr[Double] = js.undefined,
     bindingOptions: js.Any = null,
     commonAxisSettings: dxPolarChartCommonAxisSettings = null,
     commonSeriesSettings: dxPolarChartCommonSeriesSettings = null,
     containerBackgroundColor: String = null,
     customizeLabel: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesLabel = null,
     customizePoint: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesPoint = null,
-    dataPrepareSettings: AnonConvertToAxisDataType = null,
+    dataPrepareSettings: ConvertToAxisDataType = null,
     dataSource: js.Array[_] | DataSource | DataSourceOptions | String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     elementAttr: js.Any = null,
@@ -149,27 +149,27 @@ object dxPolarChartOptions {
     loadingIndicator: BaseWidgetLoadingIndicator = null,
     margin: BaseWidgetMargin = null,
     negativesAsZeroes: js.UndefOr[Boolean] = js.undefined,
-    onArgumentAxisClick: (js.Function1[/* e */ AnonArgumentComponent, _]) | String = null,
-    onDisposing: /* e */ AnonModel[dxPolarChart] => _ = null,
-    onDone: /* e */ AnonComponentTElementDxElement[dxPolarChart] => _ = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[dxPolarChart] => _ = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[dxPolarChart] => _ = null,
-    onExporting: /* e */ AnonFormatModel[dxPolarChart] => _ = null,
-    onFileSaving: /* e */ AnonCancelComponentData[dxPolarChart] => _ = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[dxPolarChart] => _ = null,
-    onInitialized: /* e */ AnonElement[dxPolarChart] => _ = null,
-    onLegendClick: (js.Function1[/* e */ AnonJQueryEventModelTarget, _]) | String = null,
-    onOptionChanged: /* e */ AnonName[dxPolarChart] => _ = null,
-    onPointClick: (js.Function1[/* e */ AnonModelTarget[dxPolarChart], _]) | String = null,
-    onPointHoverChanged: /* e */ AnonElementTarget => _ = null,
-    onPointSelectionChanged: /* e */ AnonElementTarget => _ = null,
-    onSeriesClick: (js.Function1[/* e */ AnonJQueryEventModelTarget, _]) | String = null,
-    onSeriesHoverChanged: /* e */ AnonComponentDxPolarChart => _ = null,
-    onSeriesSelectionChanged: /* e */ AnonComponentDxPolarChart => _ = null,
-    onTooltipHidden: /* e */ AnonElementModelTarget[dxPolarChart] => _ = null,
-    onTooltipShown: /* e */ AnonElementModelTarget[dxPolarChart] => _ = null,
-    onZoomEnd: /* e */ AnonPreviousRange => _ = null,
-    onZoomStart: /* e */ AnonRange => _ = null,
+    onArgumentAxisClick: (js.Function1[/* e */ ArgumentComponent, _]) | String = null,
+    onDisposing: /* e */ Model[dxPolarChart] => _ = null,
+    onDone: /* e */ ComponentTElementDxElement[dxPolarChart] => _ = null,
+    onDrawn: /* e */ ComponentTElementDxElementModelAny[dxPolarChart] => _ = null,
+    onExported: /* e */ ComponentTElementDxElementModelAny[dxPolarChart] => _ = null,
+    onExporting: /* e */ FormatModel[dxPolarChart] => _ = null,
+    onFileSaving: /* e */ CancelComponentData[dxPolarChart] => _ = null,
+    onIncidentOccurred: /* e */ TargetAny[dxPolarChart] => _ = null,
+    onInitialized: /* e */ Element[dxPolarChart] => _ = null,
+    onLegendClick: (js.Function1[/* e */ JQueryEventModelTarget, _]) | String = null,
+    onOptionChanged: /* e */ Name[dxPolarChart] => _ = null,
+    onPointClick: (js.Function1[/* e */ ModelTarget[dxPolarChart], _]) | String = null,
+    onPointHoverChanged: /* e */ ElementTarget => _ = null,
+    onPointSelectionChanged: /* e */ ElementTarget => _ = null,
+    onSeriesClick: (js.Function1[/* e */ JQueryEventModelTarget, _]) | String = null,
+    onSeriesHoverChanged: /* e */ ComponentDxPolarChart => _ = null,
+    onSeriesSelectionChanged: /* e */ ComponentDxPolarChart => _ = null,
+    onTooltipHidden: /* e */ ElementModelTarget[dxPolarChart] => _ = null,
+    onTooltipShown: /* e */ ElementModelTarget[dxPolarChart] => _ = null,
+    onZoomEnd: /* e */ PreviousRange => _ = null,
+    onZoomStart: /* e */ Range => _ = null,
     palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
     paletteExtensionMode: alternate | blend | extrapolate = null,
     pathModified: js.UndefOr[Boolean] = js.undefined,
@@ -179,7 +179,7 @@ object dxPolarChartOptions {
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
     series: PolarChartSeries | js.Array[PolarChartSeries] = null,
     seriesSelectionMode: multiple | single_ = null,
-    seriesTemplate: AnonCustomizeSeriesNameField = null,
+    seriesTemplate: CustomizeSeriesNameField = null,
     size: BaseWidgetSize = null,
     theme: genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight = null,
     title: BaseWidgetTitle | String = null,
@@ -192,9 +192,9 @@ object dxPolarChartOptions {
     if (adaptiveLayout != null) __obj.updateDynamic("adaptiveLayout")(adaptiveLayout.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (argumentAxis != null) __obj.updateDynamic("argumentAxis")(argumentAxis.asInstanceOf[js.Any])
-    if (barGroupPadding != null) __obj.updateDynamic("barGroupPadding")(barGroupPadding.asInstanceOf[js.Any])
-    if (barGroupWidth != null) __obj.updateDynamic("barGroupWidth")(barGroupWidth.asInstanceOf[js.Any])
-    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(barGroupPadding)) __obj.updateDynamic("barGroupPadding")(barGroupPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barGroupWidth)) __obj.updateDynamic("barGroupWidth")(barGroupWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barWidth)) __obj.updateDynamic("barWidth")(barWidth.get.asInstanceOf[js.Any])
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (commonAxisSettings != null) __obj.updateDynamic("commonAxisSettings")(commonAxisSettings.asInstanceOf[js.Any])
     if (commonSeriesSettings != null) __obj.updateDynamic("commonSeriesSettings")(commonSeriesSettings.asInstanceOf[js.Any])
@@ -203,15 +203,15 @@ object dxPolarChartOptions {
     if (customizePoint != null) __obj.updateDynamic("customizePoint")(js.Any.fromFunction1(customizePoint))
     if (dataPrepareSettings != null) __obj.updateDynamic("dataPrepareSettings")(dataPrepareSettings.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(equalBarWidth)) __obj.updateDynamic("equalBarWidth")(equalBarWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(equalBarWidth)) __obj.updateDynamic("equalBarWidth")(equalBarWidth.get.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(negativesAsZeroes)) __obj.updateDynamic("negativesAsZeroes")(negativesAsZeroes.asInstanceOf[js.Any])
+    if (!js.isUndefined(negativesAsZeroes)) __obj.updateDynamic("negativesAsZeroes")(negativesAsZeroes.get.asInstanceOf[js.Any])
     if (onArgumentAxisClick != null) __obj.updateDynamic("onArgumentAxisClick")(onArgumentAxisClick.asInstanceOf[js.Any])
     if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
     if (onDone != null) __obj.updateDynamic("onDone")(js.Any.fromFunction1(onDone))
@@ -235,11 +235,11 @@ object dxPolarChartOptions {
     if (onZoomStart != null) __obj.updateDynamic("onZoomStart")(js.Any.fromFunction1(onZoomStart))
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
     if (pointSelectionMode != null) __obj.updateDynamic("pointSelectionMode")(pointSelectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
     if (resolveLabelOverlapping != null) __obj.updateDynamic("resolveLabelOverlapping")(resolveLabelOverlapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (seriesSelectionMode != null) __obj.updateDynamic("seriesSelectionMode")(seriesSelectionMode.asInstanceOf[js.Any])
     if (seriesTemplate != null) __obj.updateDynamic("seriesTemplate")(seriesTemplate.asInstanceOf[js.Any])
@@ -247,7 +247,7 @@ object dxPolarChartOptions {
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSpiderWeb)) __obj.updateDynamic("useSpiderWeb")(useSpiderWeb.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSpiderWeb)) __obj.updateDynamic("useSpiderWeb")(useSpiderWeb.get.asInstanceOf[js.Any])
     if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartOptions]

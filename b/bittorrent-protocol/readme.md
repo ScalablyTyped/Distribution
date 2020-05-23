@@ -1,7 +1,7 @@
 
 # Scala.js typings for bittorrent-protocol
 
-Typings are for version 2.2
+Typings are for version 3.1
 
 ## Library description:
 Simple, robust, BitTorrent peer wire protocol implementation

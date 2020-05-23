@@ -36,13 +36,13 @@ object IDoReloadExParams {
   @scala.inline
   def apply(
     qDebug: js.UndefOr[Boolean] = js.undefined,
-    qMode: Int | Double = null,
+    qMode: js.UndefOr[Double] = js.undefined,
     qPartial: js.UndefOr[Boolean] = js.undefined
   ): IDoReloadExParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(qDebug)) __obj.updateDynamic("qDebug")(qDebug.asInstanceOf[js.Any])
-    if (qMode != null) __obj.updateDynamic("qMode")(qMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(qPartial)) __obj.updateDynamic("qPartial")(qPartial.asInstanceOf[js.Any])
+    if (!js.isUndefined(qDebug)) __obj.updateDynamic("qDebug")(qDebug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qMode)) __obj.updateDynamic("qMode")(qMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qPartial)) __obj.updateDynamic("qPartial")(qPartial.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDoReloadExParams]
   }
 }

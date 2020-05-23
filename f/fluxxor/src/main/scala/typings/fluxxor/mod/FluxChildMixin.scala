@@ -1,6 +1,6 @@
 package typings.fluxxor.mod
 
-import typings.fluxxor.TypeofReact
+import typings.fluxxor.anon.TypeofReact
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -37,12 +37,7 @@ object APIGatewayProxyEventBase {
     queryStringParameters: StringDictionary[String] = null,
     stageVariables: StringDictionary[String] = null
   ): APIGatewayProxyEventBase[TAuthorizerContext] = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], multiValueHeaders = multiValueHeaders.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (multiValueQueryStringParameters != null) __obj.updateDynamic("multiValueQueryStringParameters")(multiValueQueryStringParameters.asInstanceOf[js.Any])
-    if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters.asInstanceOf[js.Any])
-    if (queryStringParameters != null) __obj.updateDynamic("queryStringParameters")(queryStringParameters.asInstanceOf[js.Any])
-    if (stageVariables != null) __obj.updateDynamic("stageVariables")(stageVariables.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], multiValueHeaders = multiValueHeaders.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], multiValueQueryStringParameters = multiValueQueryStringParameters.asInstanceOf[js.Any], pathParameters = pathParameters.asInstanceOf[js.Any], queryStringParameters = queryStringParameters.asInstanceOf[js.Any], stageVariables = stageVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIGatewayProxyEventBase[TAuthorizerContext]]
   }
 }

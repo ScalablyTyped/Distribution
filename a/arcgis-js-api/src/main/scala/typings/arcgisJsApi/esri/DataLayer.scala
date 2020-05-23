@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`envelope-intersects`
 import typings.arcgisJsApi.arcgisJsApiStrings.`index-intersects`
 import typings.arcgisJsApi.arcgisJsApiStrings.contains
@@ -58,8 +57,4 @@ trait DataLayer
     */
   var where: String = js.native
 }
-
-@JSGlobal("__esri.DataLayer")
-@js.native
-object DataLayer extends TopLevel[DataLayerConstructor]
 

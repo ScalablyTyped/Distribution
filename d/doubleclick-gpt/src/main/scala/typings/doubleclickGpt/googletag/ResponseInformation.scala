@@ -17,14 +17,14 @@ object ResponseInformation {
   def apply(
     advertiserId: String,
     campaignId: String,
-    creativeId: Int | Double = null,
-    creativeTemplateId: Int | Double = null,
-    lineItemId: Int | Double = null
+    creativeId: js.UndefOr[Double] = js.undefined,
+    creativeTemplateId: js.UndefOr[Double] = js.undefined,
+    lineItemId: js.UndefOr[Double] = js.undefined
   ): ResponseInformation = {
     val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], campaignId = campaignId.asInstanceOf[js.Any])
-    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
-    if (creativeTemplateId != null) __obj.updateDynamic("creativeTemplateId")(creativeTemplateId.asInstanceOf[js.Any])
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
+    if (!js.isUndefined(creativeId)) __obj.updateDynamic("creativeId")(creativeId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(creativeTemplateId)) __obj.updateDynamic("creativeTemplateId")(creativeTemplateId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineItemId)) __obj.updateDynamic("lineItemId")(lineItemId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseInformation]
   }
 }

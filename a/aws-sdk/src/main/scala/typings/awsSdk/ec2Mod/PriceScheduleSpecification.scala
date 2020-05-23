@@ -24,13 +24,13 @@ object PriceScheduleSpecification {
   @scala.inline
   def apply(
     CurrencyCode: CurrencyCodeValues = null,
-    Price: Int | scala.Double = null,
-    Term: Int | scala.Double = null
+    Price: js.UndefOr[Double] = js.undefined,
+    Term: js.UndefOr[Long] = js.undefined
   ): PriceScheduleSpecification = {
     val __obj = js.Dynamic.literal()
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (Price != null) __obj.updateDynamic("Price")(Price.asInstanceOf[js.Any])
-    if (Term != null) __obj.updateDynamic("Term")(Term.asInstanceOf[js.Any])
+    if (!js.isUndefined(Price)) __obj.updateDynamic("Price")(Price.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Term)) __obj.updateDynamic("Term")(Term.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriceScheduleSpecification]
   }
 }

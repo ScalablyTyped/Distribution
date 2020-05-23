@@ -13,7 +13,7 @@ object UIkitHeightMatchOptions {
   @scala.inline
   def apply(row: js.UndefOr[Boolean] = js.undefined, target: String = null): UIkitHeightMatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitHeightMatchOptions]
   }

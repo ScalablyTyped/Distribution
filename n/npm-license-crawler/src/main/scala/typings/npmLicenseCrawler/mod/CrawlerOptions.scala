@@ -46,15 +46,15 @@ object CrawlerOptions {
   ): CrawlerOptions = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
     if (csv != null) __obj.updateDynamic("csv")(csv.asInstanceOf[js.Any])
-    if (!js.isUndefined(dependencies)) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development.asInstanceOf[js.Any])
+    if (!js.isUndefined(dependencies)) __obj.updateDynamic("dependencies")(dependencies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development.get.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitVersion)) __obj.updateDynamic("omitVersion")(omitVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyDirectDependencies)) __obj.updateDynamic("onlyDirectDependencies")(onlyDirectDependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.asInstanceOf[js.Any])
-    if (!js.isUndefined(relativeLicensePath)) __obj.updateDynamic("relativeLicensePath")(relativeLicensePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(unknown)) __obj.updateDynamic("unknown")(unknown.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitVersion)) __obj.updateDynamic("omitVersion")(omitVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyDirectDependencies)) __obj.updateDynamic("onlyDirectDependencies")(onlyDirectDependencies.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeLicensePath)) __obj.updateDynamic("relativeLicensePath")(relativeLicensePath.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknown)) __obj.updateDynamic("unknown")(unknown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrawlerOptions]
   }
 }

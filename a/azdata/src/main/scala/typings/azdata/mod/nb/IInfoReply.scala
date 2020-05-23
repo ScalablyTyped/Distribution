@@ -1,13 +1,13 @@
 package typings.azdata.mod.nb
 
-import typings.azdata.AnonText
+import typings.azdata.anon.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IInfoReply extends js.Object {
   var banner: String
-  var help_links: js.Array[AnonText]
+  var help_links: js.Array[Text]
   var implementation: String
   var implementation_version: String
   var language_info: ILanguageInfo
@@ -18,7 +18,7 @@ object IInfoReply {
   @scala.inline
   def apply(
     banner: String,
-    help_links: js.Array[AnonText],
+    help_links: js.Array[Text],
     implementation: String,
     implementation_version: String,
     language_info: ILanguageInfo,

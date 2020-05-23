@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,30 +21,8 @@ import scala.scalajs.js.annotation._
   * You can also control the inner and outer radius, which is how 'long' each point of the star is.
   * Modify these values to create more interesting shapes.
   */
-@JSGlobal("Phaser.GameObjects.Star")
 @js.native
-class Star protected () extends Shape {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this Game Object in the world. Default 0.
-    * @param y The vertical position of this Game Object in the world. Default 0.
-    * @param points The number of points on the star. Default 5.
-    * @param innerRadius The inner radius of the star. Default 32.
-    * @param outerRadius The outer radius of the star. Default 64.
-    * @param fillColor The color the star will be filled with, i.e. 0xff0000 for red.
-    * @param fillAlpha The alpha the star will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
-    */
-  def this(
-    scene: Scene,
-    x: js.UndefOr[Double],
-    y: js.UndefOr[Double],
-    points: js.UndefOr[Double],
-    innerRadius: js.UndefOr[Double],
-    outerRadius: js.UndefOr[Double],
-    fillColor: js.UndefOr[Double],
-    fillAlpha: js.UndefOr[Double]
-  ) = this()
+trait Star extends Shape {
   /**
     * The inner radius of the Star shape.
     */

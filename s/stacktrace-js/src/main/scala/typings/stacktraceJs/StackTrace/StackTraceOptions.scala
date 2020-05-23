@@ -19,7 +19,7 @@ object StackTraceOptions {
   ): StackTraceOptions = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.asInstanceOf[js.Any])
+    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.get.asInstanceOf[js.Any])
     if (sourceCache != null) __obj.updateDynamic("sourceCache")(sourceCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackTraceOptions]
   }

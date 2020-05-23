@@ -42,60 +42,60 @@ object CreateModel {
   @scala.inline
   def apply(
     comment: typings.nodeZendesk.mod.Requests.Comments.CreateModel,
-    assignee_id: Int | Double = null,
-    brand_id: Int | Double = null,
-    collaborator_ids: js.Array[Double] = null,
-    collaborators: js.Array[_] = null,
-    custom_fields: js.Array[Field] = null,
-    due_at: String = null,
-    email_cc_ids: js.Array[Double] = null,
-    external_id: String = null,
-    fields: js.Array[Field] = null,
-    follower_ids: js.Array[Double] = null,
-    forum_topic_id: Int | Double = null,
-    group_id: Int | Double = null,
-    macro_ids: js.Array[Double] = null,
-    organization_id: Int | Double = null,
-    priority: Priority = null,
-    problem_id: Int | Double = null,
-    raw_subject: String = null,
-    recipient: String = null,
-    requester_id: Int | Double = null,
-    status: Status = null,
-    subject: String = null,
-    submitter_id: Int | Double = null,
-    tags: js.Array[String] = null,
-    ticket_form_id: Int | Double = null,
-    `type`: TicketType = null,
-    via_followup_source_id: Int | Double = null
+    assignee_id: js.UndefOr[Null | ZendeskID] = js.undefined,
+    brand_id: js.UndefOr[Null | Double] = js.undefined,
+    collaborator_ids: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    collaborators: js.UndefOr[Null | js.Array[_]] = js.undefined,
+    custom_fields: js.UndefOr[Null | js.Array[Field]] = js.undefined,
+    due_at: js.UndefOr[Null | String] = js.undefined,
+    email_cc_ids: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    external_id: js.UndefOr[Null | String] = js.undefined,
+    fields: js.UndefOr[Null | js.Array[Field]] = js.undefined,
+    follower_ids: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    forum_topic_id: js.UndefOr[Null | Double] = js.undefined,
+    group_id: js.UndefOr[Null | Double] = js.undefined,
+    macro_ids: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    organization_id: js.UndefOr[Null | Double] = js.undefined,
+    priority: js.UndefOr[Null | Priority] = js.undefined,
+    problem_id: js.UndefOr[Null | Double] = js.undefined,
+    raw_subject: js.UndefOr[Null | String] = js.undefined,
+    recipient: js.UndefOr[Null | String] = js.undefined,
+    requester_id: js.UndefOr[ZendeskID] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined,
+    subject: js.UndefOr[Null | String] = js.undefined,
+    submitter_id: js.UndefOr[Null | ZendeskID] = js.undefined,
+    tags: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    ticket_form_id: js.UndefOr[Null | Double] = js.undefined,
+    `type`: js.UndefOr[Null | TicketType] = js.undefined,
+    via_followup_source_id: js.UndefOr[Null | Double] = js.undefined
   ): CreateModel = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any])
-    if (assignee_id != null) __obj.updateDynamic("assignee_id")(assignee_id.asInstanceOf[js.Any])
-    if (brand_id != null) __obj.updateDynamic("brand_id")(brand_id.asInstanceOf[js.Any])
-    if (collaborator_ids != null) __obj.updateDynamic("collaborator_ids")(collaborator_ids.asInstanceOf[js.Any])
-    if (collaborators != null) __obj.updateDynamic("collaborators")(collaborators.asInstanceOf[js.Any])
-    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
-    if (due_at != null) __obj.updateDynamic("due_at")(due_at.asInstanceOf[js.Any])
-    if (email_cc_ids != null) __obj.updateDynamic("email_cc_ids")(email_cc_ids.asInstanceOf[js.Any])
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (follower_ids != null) __obj.updateDynamic("follower_ids")(follower_ids.asInstanceOf[js.Any])
-    if (forum_topic_id != null) __obj.updateDynamic("forum_topic_id")(forum_topic_id.asInstanceOf[js.Any])
-    if (group_id != null) __obj.updateDynamic("group_id")(group_id.asInstanceOf[js.Any])
-    if (macro_ids != null) __obj.updateDynamic("macro_ids")(macro_ids.asInstanceOf[js.Any])
-    if (organization_id != null) __obj.updateDynamic("organization_id")(organization_id.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (problem_id != null) __obj.updateDynamic("problem_id")(problem_id.asInstanceOf[js.Any])
-    if (raw_subject != null) __obj.updateDynamic("raw_subject")(raw_subject.asInstanceOf[js.Any])
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
-    if (requester_id != null) __obj.updateDynamic("requester_id")(requester_id.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (submitter_id != null) __obj.updateDynamic("submitter_id")(submitter_id.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (ticket_form_id != null) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (via_followup_source_id != null) __obj.updateDynamic("via_followup_source_id")(via_followup_source_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(assignee_id)) __obj.updateDynamic("assignee_id")(assignee_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(brand_id)) __obj.updateDynamic("brand_id")(brand_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(collaborator_ids)) __obj.updateDynamic("collaborator_ids")(collaborator_ids.asInstanceOf[js.Any])
+    if (!js.isUndefined(collaborators)) __obj.updateDynamic("collaborators")(collaborators.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom_fields)) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(due_at)) __obj.updateDynamic("due_at")(due_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(email_cc_ids)) __obj.updateDynamic("email_cc_ids")(email_cc_ids.asInstanceOf[js.Any])
+    if (!js.isUndefined(external_id)) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(follower_ids)) __obj.updateDynamic("follower_ids")(follower_ids.asInstanceOf[js.Any])
+    if (!js.isUndefined(forum_topic_id)) __obj.updateDynamic("forum_topic_id")(forum_topic_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(group_id)) __obj.updateDynamic("group_id")(group_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(macro_ids)) __obj.updateDynamic("macro_ids")(macro_ids.asInstanceOf[js.Any])
+    if (!js.isUndefined(organization_id)) __obj.updateDynamic("organization_id")(organization_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(problem_id)) __obj.updateDynamic("problem_id")(problem_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw_subject)) __obj.updateDynamic("raw_subject")(raw_subject.asInstanceOf[js.Any])
+    if (!js.isUndefined(recipient)) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
+    if (!js.isUndefined(requester_id)) __obj.updateDynamic("requester_id")(requester_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (!js.isUndefined(submitter_id)) __obj.updateDynamic("submitter_id")(submitter_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticket_form_id)) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(via_followup_source_id)) __obj.updateDynamic("via_followup_source_id")(via_followup_source_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModel]
   }
 }

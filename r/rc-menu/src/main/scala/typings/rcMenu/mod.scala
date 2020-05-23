@@ -1,5 +1,7 @@
 package typings.rcMenu
 
+import typings.rcMenu.anon.BuiltinPlacements
+import typings.rcMenu.anon.Disabled
 import typings.rcMenu.dividerMod.DividerProps
 import typings.rcMenu.menuMod.MenuProps
 import typings.react.mod.FC
@@ -31,21 +33,21 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object ItemGroup extends js.Object {
-    var defaultProps: AnonDisabled = js.native
+    var defaultProps: Disabled = js.native
     var isMenuItemGroup: Boolean = js.native
   }
   
   /* static members */
   @js.native
   object MenuItemGroup extends js.Object {
-    var defaultProps: AnonDisabled = js.native
+    var defaultProps: Disabled = js.native
     var isMenuItemGroup: Boolean = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonBuiltinPlacements = js.native
+    var defaultProps: BuiltinPlacements = js.native
   }
   
 }

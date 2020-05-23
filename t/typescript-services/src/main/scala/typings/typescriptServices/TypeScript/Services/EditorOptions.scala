@@ -4,19 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.EditorOptions")
-@js.native
-class EditorOptions () extends js.Object {
-  var ConvertTabsToSpaces: Boolean = js.native
-  var IndentSize: Double = js.native
-  var NewLineCharacter: String = js.native
-  var TabSize: Double = js.native
+trait EditorOptions extends js.Object {
+  var ConvertTabsToSpaces: Boolean
+  var IndentSize: Double
+  var NewLineCharacter: String
+  var TabSize: Double
 }
 
-/* static members */
-@JSGlobal("TypeScript.Services.EditorOptions")
-@js.native
-object EditorOptions extends js.Object {
-  def clone(objectToClone: EditorOptions): EditorOptions = js.native
+object EditorOptions {
+  @scala.inline
+  def apply(ConvertTabsToSpaces: Boolean, IndentSize: Double, NewLineCharacter: String, TabSize: Double): EditorOptions = {
+    val __obj = js.Dynamic.literal(ConvertTabsToSpaces = ConvertTabsToSpaces.asInstanceOf[js.Any], IndentSize = IndentSize.asInstanceOf[js.Any], NewLineCharacter = NewLineCharacter.asInstanceOf[js.Any], TabSize = TabSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EditorOptions]
+  }
 }
 

@@ -1,16 +1,16 @@
 package typings.nyaapi.mod.si
 
-import typings.nyaapi.AnonCode
-import typings.nyaapi.AnonFile
+import typings.nyaapi.anon.Code
+import typings.nyaapi.anon.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Torrent extends js.Object {
-  var category: AnonCode
+  var category: Code
   var fileSize: String
   var leechers: String
-  var links: AnonFile
+  var links: File
   var name: String
   var nbDownload: String
   var seeders: String
@@ -20,10 +20,10 @@ trait Torrent extends js.Object {
 object Torrent {
   @scala.inline
   def apply(
-    category: AnonCode,
+    category: Code,
     fileSize: String,
     leechers: String,
-    links: AnonFile,
+    links: File,
     name: String,
     nbDownload: String,
     seeders: String,

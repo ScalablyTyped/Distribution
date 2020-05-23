@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the ASPxFileManager control.
   */
-@JSGlobal("ASPxClientFileManager")
 @js.native
-class ASPxClientFileManager () extends ASPxClientControl {
+trait ASPxClientFileManager extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -206,16 +205,5 @@ class ASPxClientFileManager () extends ASPxClientControl {
     * @param onCallback A ASPxClientFileManagerCallback object that is the JavaScript function that receives the callback data as a parameter.
     */
   def SetCurrentFolderPath(path: String, onCallback: ASPxClientFileManagerCallback): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientFileManager")
-@js.native
-object ASPxClientFileManager extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientFileManager type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientFileManager = js.native
 }
 

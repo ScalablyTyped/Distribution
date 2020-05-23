@@ -1,5 +1,6 @@
 package typings.phantomjs
 
+import typings.phantomjs.anon.Charset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +31,7 @@ trait FileSystem extends js.Object {
   def move(source: String, destination: String): Unit = js.native
   // File Functions
   def open(path: String, mode: String): Stream = js.native
-  def open(path: String, options: AnonCharset): Stream = js.native
+  def open(path: String, options: Charset): Stream = js.native
   def read(path: String): String = js.native
   def readLink(path: String): String = js.native
   def remove(path: String): Unit = js.native

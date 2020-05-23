@@ -1,8 +1,8 @@
 package typings.fundamentalReact.timeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalReact.AnonHour
-import typings.fundamentalReact.AnonMeridiemAM
+import typings.fundamentalReact.anon.Hour
+import typings.fundamentalReact.anon.MeridiemAM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,14 +17,14 @@ trait TimeProps
   var hoursInputProps: js.UndefOr[js.Any] = js.undefined
   var hoursUpButtonProps: js.UndefOr[js.Any] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  var localizedText: js.UndefOr[AnonMeridiemAM] = js.undefined
+  var localizedText: js.UndefOr[MeridiemAM] = js.undefined
   var meridiemDownButtonProps: js.UndefOr[js.Any] = js.undefined
   var meridiemInputProps: js.UndefOr[js.Any] = js.undefined
   var meridiemUpButtonProps: js.UndefOr[js.Any] = js.undefined
   var minutesDownButtonProps: js.UndefOr[js.Any] = js.undefined
   var minutesInputProps: js.UndefOr[js.Any] = js.undefined
   var minutesUpButtonProps: js.UndefOr[js.Any] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* time */ AnonHour, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* time */ Hour, Unit]] = js.undefined
   var secondsDownButtonProps: js.UndefOr[js.Any] = js.undefined
   var secondsInputProps: js.UndefOr[js.Any] = js.undefined
   var secondsUpButtonProps: js.UndefOr[js.Any] = js.undefined
@@ -32,13 +32,13 @@ trait TimeProps
   var showMinute: js.UndefOr[Boolean] = js.undefined
   var showSecond: js.UndefOr[Boolean] = js.undefined
   var spinners: js.UndefOr[Boolean] = js.undefined
-  var time: js.UndefOr[AnonHour] = js.undefined
+  var time: js.UndefOr[Hour] = js.undefined
 }
 
 object TimeProps {
   @scala.inline
   def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     disableStyles: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     format12Hours: js.UndefOr[Boolean] = js.undefined,
@@ -46,14 +46,14 @@ object TimeProps {
     hoursInputProps: js.Any = null,
     hoursUpButtonProps: js.Any = null,
     id: String = null,
-    localizedText: AnonMeridiemAM = null,
+    localizedText: MeridiemAM = null,
     meridiemDownButtonProps: js.Any = null,
     meridiemInputProps: js.Any = null,
     meridiemUpButtonProps: js.Any = null,
     minutesDownButtonProps: js.Any = null,
     minutesInputProps: js.Any = null,
     minutesUpButtonProps: js.Any = null,
-    onChange: /* time */ AnonHour => Unit = null,
+    onChange: /* time */ Hour => Unit = null,
     secondsDownButtonProps: js.Any = null,
     secondsInputProps: js.Any = null,
     secondsUpButtonProps: js.Any = null,
@@ -61,13 +61,13 @@ object TimeProps {
     showMinute: js.UndefOr[Boolean] = js.undefined,
     showSecond: js.UndefOr[Boolean] = js.undefined,
     spinners: js.UndefOr[Boolean] = js.undefined,
-    time: AnonHour = null
+    time: Hour = null
   ): TimeProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(format12Hours)) __obj.updateDynamic("format12Hours")(format12Hours.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(format12Hours)) __obj.updateDynamic("format12Hours")(format12Hours.get.asInstanceOf[js.Any])
     if (hoursDownButtonProps != null) __obj.updateDynamic("hoursDownButtonProps")(hoursDownButtonProps.asInstanceOf[js.Any])
     if (hoursInputProps != null) __obj.updateDynamic("hoursInputProps")(hoursInputProps.asInstanceOf[js.Any])
     if (hoursUpButtonProps != null) __obj.updateDynamic("hoursUpButtonProps")(hoursUpButtonProps.asInstanceOf[js.Any])
@@ -83,10 +83,10 @@ object TimeProps {
     if (secondsDownButtonProps != null) __obj.updateDynamic("secondsDownButtonProps")(secondsDownButtonProps.asInstanceOf[js.Any])
     if (secondsInputProps != null) __obj.updateDynamic("secondsInputProps")(secondsInputProps.asInstanceOf[js.Any])
     if (secondsUpButtonProps != null) __obj.updateDynamic("secondsUpButtonProps")(secondsUpButtonProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.asInstanceOf[js.Any])
-    if (!js.isUndefined(spinners)) __obj.updateDynamic("spinners")(spinners.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinners)) __obj.updateDynamic("spinners")(spinners.get.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeProps]
   }

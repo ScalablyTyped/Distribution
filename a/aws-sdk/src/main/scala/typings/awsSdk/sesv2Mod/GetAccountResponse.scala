@@ -35,19 +35,19 @@ trait GetAccountResponse extends js.Object {
 object GetAccountResponse {
   @scala.inline
   def apply(
-    DedicatedIpAutoWarmupEnabled: js.UndefOr[Boolean] = js.undefined,
+    DedicatedIpAutoWarmupEnabled: js.UndefOr[Enabled] = js.undefined,
     EnforcementStatus: GeneralEnforcementStatus = null,
-    ProductionAccessEnabled: js.UndefOr[Boolean] = js.undefined,
+    ProductionAccessEnabled: js.UndefOr[Enabled] = js.undefined,
     SendQuota: SendQuota = null,
-    SendingEnabled: js.UndefOr[Boolean] = js.undefined,
+    SendingEnabled: js.UndefOr[Enabled] = js.undefined,
     SuppressionAttributes: SuppressionAttributes = null
   ): GetAccountResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DedicatedIpAutoWarmupEnabled)) __obj.updateDynamic("DedicatedIpAutoWarmupEnabled")(DedicatedIpAutoWarmupEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(DedicatedIpAutoWarmupEnabled)) __obj.updateDynamic("DedicatedIpAutoWarmupEnabled")(DedicatedIpAutoWarmupEnabled.get.asInstanceOf[js.Any])
     if (EnforcementStatus != null) __obj.updateDynamic("EnforcementStatus")(EnforcementStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProductionAccessEnabled)) __obj.updateDynamic("ProductionAccessEnabled")(ProductionAccessEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProductionAccessEnabled)) __obj.updateDynamic("ProductionAccessEnabled")(ProductionAccessEnabled.get.asInstanceOf[js.Any])
     if (SendQuota != null) __obj.updateDynamic("SendQuota")(SendQuota.asInstanceOf[js.Any])
-    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.get.asInstanceOf[js.Any])
     if (SuppressionAttributes != null) __obj.updateDynamic("SuppressionAttributes")(SuppressionAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountResponse]
   }

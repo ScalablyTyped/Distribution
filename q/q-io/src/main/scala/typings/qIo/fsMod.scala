@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.q.mod.Promise
 import typings.qIo.QioFS.Stats
+import typings.qIo.anon.TypeofQioFS
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

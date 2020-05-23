@@ -6,13 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRExperienceHelper")
 @js.native
-/**
-  * Creates a WebXRExperienceHelper
-  * @param scene The scene the helper should be created in
-  */
-class WebXRExperienceHelper protected () extends IDisposable {
+trait WebXRExperienceHelper extends IDisposable {
   var _nonVRCamera: js.Any = js.native
   var _nonXRToXRCamera: js.Any = js.native
   var _originalSceneAutoClear: js.Any = js.native
@@ -44,11 +39,6 @@ class WebXRExperienceHelper protected () extends IDisposable {
     */
   var state: WebXRState = js.native
   /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  /**
     * Enters XR mode (This must be done within a user interaction in most browsers eg. button click)
     * @param sessionMode options for the XR session
     * @param referenceSpaceType frame of reference of the XR session
@@ -66,17 +56,5 @@ class WebXRExperienceHelper protected () extends IDisposable {
     * @returns promise that resolves after xr mode has exited
     */
   def exitXRAsync(): js.Promise[Unit] = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.WebXRExperienceHelper")
-@js.native
-object WebXRExperienceHelper extends js.Object {
-  /**
-    * Creates the experience helper
-    * @param scene the scene to attach the experience helper to
-    * @returns a promise for the experience helper
-    */
-  def CreateAsync(scene: Scene): js.Promise[WebXRExperienceHelper] = js.native
 }
 

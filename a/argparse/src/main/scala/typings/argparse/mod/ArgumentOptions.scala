@@ -1,12 +1,12 @@
 package typings.argparse.mod
 
-import typings.argparse.AnonInstantiableAction
+import typings.argparse.anon.InstantiableAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArgumentOptions extends js.Object {
-  var action: js.UndefOr[String | AnonInstantiableAction] = js.undefined
+  var action: js.UndefOr[String | InstantiableAction] = js.undefined
    // tslint:disable-line:ban-types
   var choices: js.UndefOr[String | js.Array[String]] = js.undefined
   var constant: js.UndefOr[js.Any] = js.undefined
@@ -24,7 +24,7 @@ trait ArgumentOptions extends js.Object {
 object ArgumentOptions {
   @scala.inline
   def apply(
-    action: String | AnonInstantiableAction = null,
+    action: String | InstantiableAction = null,
     choices: String | js.Array[String] = null,
     constant: js.Any = null,
     defaultValue: js.Any = null,
@@ -46,7 +46,7 @@ object ArgumentOptions {
     if (metavar != null) __obj.updateDynamic("metavar")(metavar.asInstanceOf[js.Any])
     if (nargs != null) __obj.updateDynamic("nargs")(nargs.asInstanceOf[js.Any])
     if (optionStrings != null) __obj.updateDynamic("optionStrings")(optionStrings.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgumentOptions]
   }

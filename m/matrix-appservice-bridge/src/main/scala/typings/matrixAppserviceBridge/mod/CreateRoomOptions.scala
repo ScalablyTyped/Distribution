@@ -33,7 +33,7 @@ object CreateRoomOptions {
     topic: String = null
   ): CreateRoomOptions = {
     val __obj = js.Dynamic.literal(invite = invite.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_direct)) __obj.updateDynamic("is_direct")(is_direct.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_direct)) __obj.updateDynamic("is_direct")(is_direct.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
     if (room_alias_name != null) __obj.updateDynamic("room_alias_name")(room_alias_name.asInstanceOf[js.Any])

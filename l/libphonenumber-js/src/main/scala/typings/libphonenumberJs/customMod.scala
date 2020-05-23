@@ -1,5 +1,9 @@
 package typings.libphonenumberJs
 
+import typings.libphonenumberJs.anon.DefaultCallingCode
+import typings.libphonenumberJs.anon.DefaultCountry
+import typings.libphonenumberJs.anon.DefaultCountryCountryCode
+import typings.libphonenumberJs.anon.countryinCountryCodeNatio
 import typings.libphonenumberJs.mod.FormatNumberOptions
 import typings.libphonenumberJs.mod.ParseNumberOptions
 import typings.libphonenumberJs.mod.ParsedNumber
@@ -21,9 +25,7 @@ import scala.scalajs.js.annotation._
 object customMod extends js.Object {
   @js.native
   class AsYouType protected () extends js.Object {
-    def this(defaultCountryCode: js.UndefOr[scala.Nothing], metadata: Metadata) = this()
-    def this(defaultCountryCode: AnonDefaultCallingCode, metadata: Metadata) = this()
-    def this(defaultCountryCode: CountryCode, metadata: Metadata) = this()
+    def this(defaultCountryCode: js.UndefOr[CountryCode | DefaultCallingCode], metadata: Metadata) = this()
     var country: js.UndefOr[CountryCode] = js.native
     def getNationalNumber(): String = js.native
     def getNumber(): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
@@ -39,7 +41,7 @@ object customMod extends js.Object {
   @js.native
   class ParsedNumberSearch protected () extends js.Object {
     def this(text: String, metadata: Metadata) = this()
-    def this(text: String, options: AnonDefaultCountryCountryCode, metadata: Metadata) = this()
+    def this(text: String, options: DefaultCountryCountryCode, metadata: Metadata) = this()
     def hasNext(): Boolean = js.native
     def next(): js.UndefOr[NumberFoundLegacy] = js.native
   }
@@ -58,19 +60,19 @@ object customMod extends js.Object {
   @js.native
   class PhoneNumberMatcher protected () extends js.Object {
     def this(text: String, metadata: Metadata) = this()
-    def this(text: String, options: AnonDefaultCountry, metadata: Metadata) = this()
+    def this(text: String, options: DefaultCountry, metadata: Metadata) = this()
     def hasNext(): Boolean = js.native
     def next(): js.UndefOr[NumberFound] = js.native
   }
   
   def findNumbers(text: String, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
-  def findNumbers(text: String, options: AnonDefaultCountry, metadata: Metadata): js.Array[NumberFound] = js.native
+  def findNumbers(text: String, options: DefaultCountry, metadata: Metadata): js.Array[NumberFound] = js.native
   def findNumbers(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFound] = js.native
   def findParsedNumbers(text: String, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
-  def findParsedNumbers(text: String, options: AnonDefaultCountryCountryCode, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
+  def findParsedNumbers(text: String, options: DefaultCountryCountryCode, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
   def findParsedNumbers(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
   def findPhoneNumbersInText(text: String, metadata: Metadata): js.Array[NumberFound] = js.native
-  def findPhoneNumbersInText(text: String, options: AnonDefaultCallingCode, metadata: Metadata): js.Array[NumberFound] = js.native
+  def findPhoneNumbersInText(text: String, options: DefaultCallingCode, metadata: Metadata): js.Array[NumberFound] = js.native
   def findPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFound] = js.native
   def format(parsedNumber: ParsedNumber, format: NumberFormat, metadata: Metadata): String = js.native
   def format(phone: NationalNumber, country: CountryCode, format: NumberFormat, metadata: Metadata): String = js.native
@@ -116,17 +118,17 @@ object customMod extends js.Object {
   def parsePhoneNumber(text: String, defaultCountry: CountryCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def parsePhoneNumber(text: String, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def parsePhoneNumberCharacter(character: String): String = js.native
-  def parsePhoneNumberFromString(text: String, defaultCountry: AnonDefaultCallingCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
+  def parsePhoneNumberFromString(text: String, defaultCountry: DefaultCallingCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def parsePhoneNumberFromString(text: String, defaultCountry: CountryCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def parsePhoneNumberFromString(text: String, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def searchNumbers(text: String, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
-  def searchNumbers(text: String, options: AnonDefaultCountry, metadata: Metadata): IterableIterator[NumberFound] = js.native
+  def searchNumbers(text: String, options: DefaultCountry, metadata: Metadata): IterableIterator[NumberFound] = js.native
   def searchNumbers(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
   def searchParsedNumbers(text: String, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
-  def searchParsedNumbers(text: String, options: AnonDefaultCountryCountryCode, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
+  def searchParsedNumbers(text: String, options: DefaultCountryCountryCode, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
   def searchParsedNumbers(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
   def searchPhoneNumbersInText(text: String, metadata: Metadata): IterableIterator[NumberFound] = js.native
-  def searchPhoneNumbersInText(text: String, options: AnonDefaultCallingCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
+  def searchPhoneNumbersInText(text: String, options: DefaultCallingCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
   def searchPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
 }
 

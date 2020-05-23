@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.DoNotInstantiate
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.mathAxisMod.Space
@@ -254,10 +255,10 @@ object transformNodeMod extends js.Object {
       */
     def instantiateHierarchy(): Nullable[TransformNode] = js.native
     def instantiateHierarchy(newParent: Nullable[TransformNode]): Nullable[TransformNode] = js.native
-    def instantiateHierarchy(newParent: Nullable[TransformNode], options: AnonDoNotInstantiate): Nullable[TransformNode] = js.native
+    def instantiateHierarchy(newParent: Nullable[TransformNode], options: DoNotInstantiate): Nullable[TransformNode] = js.native
     def instantiateHierarchy(
       newParent: Nullable[TransformNode],
-      options: AnonDoNotInstantiate,
+      options: DoNotInstantiate,
       onNewNodeCreated: js.Function2[/* source */ this.type, /* clone */ this.type, Unit]
     ): Nullable[TransformNode] = js.native
     /**

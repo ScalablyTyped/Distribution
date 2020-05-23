@@ -22,7 +22,7 @@ object WorldOptions {
     val __obj = js.Dynamic.literal()
     if (broadphase != null) __obj.updateDynamic("broadphase")(broadphase.asInstanceOf[js.Any])
     if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (!js.isUndefined(islandSplit)) __obj.updateDynamic("islandSplit")(islandSplit.asInstanceOf[js.Any])
+    if (!js.isUndefined(islandSplit)) __obj.updateDynamic("islandSplit")(islandSplit.get.asInstanceOf[js.Any])
     if (solver != null) __obj.updateDynamic("solver")(solver.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorldOptions]
   }

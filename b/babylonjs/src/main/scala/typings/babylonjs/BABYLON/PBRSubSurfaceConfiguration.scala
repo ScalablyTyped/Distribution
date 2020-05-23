@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PBRSubSurfaceConfiguration")
 @js.native
-class PBRSubSurfaceConfiguration protected () extends js.Object {
-  /**
-    * Instantiate a new istance of sub surface configuration.
-    * @param markAllSubMeshesAsTexturesDirty Callback to flag the material to dirty
-    */
-  def this(markAllSubMeshesAsTexturesDirty: js.Function0[Unit]) = this()
+trait PBRSubSurfaceConfiguration extends js.Object {
   /**
     * Returns the texture used for refraction or null if none is used.
     * @param scene defines the scene the material belongs to.
@@ -207,34 +201,5 @@ class PBRSubSurfaceConfiguration protected () extends js.Object {
     * @returns true if unbound, otherwise false
     */
   def unbind(activeEffect: Effect): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.PBRSubSurfaceConfiguration")
-@js.native
-object PBRSubSurfaceConfiguration extends js.Object {
-  /**
-    * Add fallbacks to the effect fallbacks list.
-    * @param defines defines the Base texture to use.
-    * @param fallbacks defines the current fallback list.
-    * @param currentRank defines the current fallback rank.
-    * @returns the new fallback rank.
-    */
-  def AddFallbacks(defines: IMaterialSubSurfaceDefines, fallbacks: EffectFallbacks, currentRank: Double): Double = js.native
-  /**
-    * Add the required samplers to the current list.
-    * @param samplers defines the current sampler list.
-    */
-  def AddSamplers(samplers: js.Array[String]): Unit = js.native
-  /**
-    * Add the required uniforms to the current list.
-    * @param uniforms defines the current uniform list.
-    */
-  def AddUniforms(uniforms: js.Array[String]): Unit = js.native
-  /**
-    * Add the required uniforms to the current buffer.
-    * @param uniformBuffer defines the current uniform buffer.
-    */
-  def PrepareUniformBuffer(uniformBuffer: UniformBuffer): Unit = js.native
 }
 

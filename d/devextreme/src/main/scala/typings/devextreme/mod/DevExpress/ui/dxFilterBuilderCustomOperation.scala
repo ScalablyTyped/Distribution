@@ -1,7 +1,7 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonField
-import typings.devextreme.AnonSetValue
+import typings.devextreme.anon.Field
+import typings.devextreme.anon.SetValue
 import typings.devextreme.devextremeStrings.`object`
 import typings.devextreme.devextremeStrings.boolean_
 import typings.devextreme.devextremeStrings.date
@@ -9,7 +9,7 @@ import typings.devextreme.devextremeStrings.datetime
 import typings.devextreme.devextremeStrings.number
 import typings.devextreme.devextremeStrings.string_
 import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod._Global_.JQuery
+import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,16 +27,12 @@ trait dxFilterBuilderCustomOperation extends js.Object {
   /** @name dxFilterBuilderCustomOperation.caption */
   var caption: js.UndefOr[String] = js.undefined
   /** @name dxFilterBuilderCustomOperation.customizeText */
-  var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ AnonField, String]] = js.undefined
+  var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ Field, String]] = js.undefined
   /** @name dxFilterBuilderCustomOperation.dataTypes */
   var dataTypes: js.UndefOr[js.Array[string_ | number | date | boolean_ | `object` | datetime]] = js.undefined
   /** @name dxFilterBuilderCustomOperation.editorTemplate */
   var editorTemplate: js.UndefOr[
-    typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* conditionInfo */ AnonSetValue, 
-      /* container */ dxElement, 
-      String | Element | JQuery
-    ])
+    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* conditionInfo */ SetValue, /* container */ dxElement, String | Element | JQuery])
   ] = js.undefined
   /** @name dxFilterBuilderCustomOperation.hasValue */
   var hasValue: js.UndefOr[Boolean] = js.undefined
@@ -51,13 +47,9 @@ object dxFilterBuilderCustomOperation {
   def apply(
     calculateFilterExpression: (/* filterValue */ js.Any, /* field */ dxFilterBuilderField) => String | js.Array[_] | js.Function = null,
     caption: String = null,
-    customizeText: /* fieldInfo */ AnonField => String = null,
+    customizeText: /* fieldInfo */ Field => String = null,
     dataTypes: js.Array[string_ | number | date | boolean_ | `object` | datetime] = null,
-    editorTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* conditionInfo */ AnonSetValue, 
-      /* container */ dxElement, 
-      String | Element | JQuery
-    ]) = null,
+    editorTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* conditionInfo */ SetValue, /* container */ dxElement, String | Element | JQuery]) = null,
     hasValue: js.UndefOr[Boolean] = js.undefined,
     icon: String = null,
     name: String = null
@@ -68,7 +60,7 @@ object dxFilterBuilderCustomOperation {
     if (customizeText != null) __obj.updateDynamic("customizeText")(js.Any.fromFunction1(customizeText))
     if (dataTypes != null) __obj.updateDynamic("dataTypes")(dataTypes.asInstanceOf[js.Any])
     if (editorTemplate != null) __obj.updateDynamic("editorTemplate")(editorTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasValue)) __obj.updateDynamic("hasValue")(hasValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasValue)) __obj.updateDynamic("hasValue")(hasValue.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFilterBuilderCustomOperation]

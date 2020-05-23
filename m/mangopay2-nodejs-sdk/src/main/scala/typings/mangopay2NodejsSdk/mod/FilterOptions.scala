@@ -22,10 +22,14 @@ import scala.scalajs.js.annotation._
 
 object FilterOptions {
   @scala.inline
-  def apply(AfterDate: Int | Double = null, BeforeDate: Int | Double = null, Sort: ColumnAndDirection = null): FilterOptions = {
+  def apply(
+    AfterDate: js.UndefOr[Timestamp] = js.undefined,
+    BeforeDate: js.UndefOr[Timestamp] = js.undefined,
+    Sort: ColumnAndDirection = null
+  ): FilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (AfterDate != null) __obj.updateDynamic("AfterDate")(AfterDate.asInstanceOf[js.Any])
-    if (BeforeDate != null) __obj.updateDynamic("BeforeDate")(BeforeDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(AfterDate)) __obj.updateDynamic("AfterDate")(AfterDate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BeforeDate)) __obj.updateDynamic("BeforeDate")(BeforeDate.get.asInstanceOf[js.Any])
     if (Sort != null) __obj.updateDynamic("Sort")(Sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions]
   }

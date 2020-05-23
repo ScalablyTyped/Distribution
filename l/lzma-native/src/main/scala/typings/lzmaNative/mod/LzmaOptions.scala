@@ -23,26 +23,26 @@ trait LzmaOptions extends js.Object {
 object LzmaOptions {
   @scala.inline
   def apply(
-    blockSize: Int | Double = null,
-    bufsize: Int | Double = null,
+    blockSize: js.UndefOr[Double] = js.undefined,
+    bufsize: js.UndefOr[Double] = js.undefined,
     check: Check = null,
     flags: TELL_NO_CHECK | TELL_UNSUPPORTED_CHECK | TELL_ANY_CHECK | CONCATENATED = null,
-    memlimit: Int | Double = null,
+    memlimit: js.UndefOr[Double] = js.undefined,
     preset: Preset = null,
     synchronous: js.UndefOr[Boolean] = js.undefined,
-    threads: Int | Double = null,
-    timeout: Int | Double = null
+    threads: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): LzmaOptions = {
     val __obj = js.Dynamic.literal()
-    if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
-    if (bufsize != null) __obj.updateDynamic("bufsize")(bufsize.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockSize)) __obj.updateDynamic("blockSize")(blockSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufsize)) __obj.updateDynamic("bufsize")(bufsize.get.asInstanceOf[js.Any])
     if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (memlimit != null) __obj.updateDynamic("memlimit")(memlimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(memlimit)) __obj.updateDynamic("memlimit")(memlimit.get.asInstanceOf[js.Any])
     if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.asInstanceOf[js.Any])
-    if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threads)) __obj.updateDynamic("threads")(threads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LzmaOptions]
   }
 }

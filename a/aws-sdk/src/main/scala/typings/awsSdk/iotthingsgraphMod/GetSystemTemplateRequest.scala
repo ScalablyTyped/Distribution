@@ -18,9 +18,9 @@ trait GetSystemTemplateRequest extends js.Object {
 
 object GetSystemTemplateRequest {
   @scala.inline
-  def apply(id: Urn, revisionNumber: Int | Double = null): GetSystemTemplateRequest = {
+  def apply(id: Urn, revisionNumber: js.UndefOr[Version] = js.undefined): GetSystemTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(revisionNumber)) __obj.updateDynamic("revisionNumber")(revisionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSystemTemplateRequest]
   }
 }

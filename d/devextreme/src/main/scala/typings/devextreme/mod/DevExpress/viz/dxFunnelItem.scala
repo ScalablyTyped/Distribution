@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait dxFunnelItem extends js.Object {
   /** @name dxFunnelItem.argument */
-  var argument: String | Date | Double
+  var argument: js.UndefOr[String | Date | Double] = js.undefined
   /** @name dxFunnelItem.data */
-  var data: js.Any
+  var data: js.UndefOr[js.Any] = js.undefined
   /** @name dxFunnelItem.percent */
-  var percent: Double
+  var percent: js.UndefOr[Double] = js.undefined
   /** @name dxFunnelItem.value */
-  var value: Double
+  var value: js.UndefOr[Double] = js.undefined
   /** @name dxFunnelItem.getColor() */
   def getColor(): String
   /** @name dxFunnelItem.hover(state) */
@@ -31,18 +31,22 @@ trait dxFunnelItem extends js.Object {
 object dxFunnelItem {
   @scala.inline
   def apply(
-    argument: String | Date | Double,
-    data: js.Any,
     getColor: () => String,
     hover: Boolean => Unit,
     isHovered: () => Boolean,
     isSelected: () => Boolean,
-    percent: Double,
     select: Boolean => Unit,
     showTooltip: () => Unit,
-    value: Double
+    argument: String | Date | Double = null,
+    data: js.Any = null,
+    percent: js.UndefOr[Double] = js.undefined,
+    value: js.UndefOr[Double] = js.undefined
   ): dxFunnelItem = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getColor = js.Any.fromFunction0(getColor), hover = js.Any.fromFunction1(hover), isHovered = js.Any.fromFunction0(isHovered), isSelected = js.Any.fromFunction0(isSelected), percent = percent.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), showTooltip = js.Any.fromFunction0(showTooltip), value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getColor = js.Any.fromFunction0(getColor), hover = js.Any.fromFunction1(hover), isHovered = js.Any.fromFunction0(isHovered), isSelected = js.Any.fromFunction0(isSelected), select = js.Any.fromFunction1(select), showTooltip = js.Any.fromFunction0(showTooltip))
+    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFunnelItem]
   }
 }

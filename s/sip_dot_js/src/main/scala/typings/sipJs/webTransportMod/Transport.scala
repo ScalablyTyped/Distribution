@@ -7,7 +7,7 @@ import typings.sipJs.sipJsStrings.connected
 import typings.sipJs.sipJsStrings.connecting
 import typings.sipJs.sipJsStrings.disconnected
 import typings.sipJs.sipJsStrings.disconnecting
-import typings.sipJs.sipJsStrings.message_
+import typings.sipJs.sipJsStrings.message
 import typings.sipJs.transportStateMod.TransportState
 import typings.std.WebSocket
 import scala.scalajs.js
@@ -196,7 +196,7 @@ class Transport protected ()
     * @deprecated Use `onMessage`.
     */
   @JSName("on")
-  def on_message(event: message_, listener: js.Function1[/* message */ String, Unit]): this.type = js.native
+  def on_message(event: message, listener: js.Function1[/* message */ String, Unit]): this.type = js.native
   /**
     * Send a message.
     *

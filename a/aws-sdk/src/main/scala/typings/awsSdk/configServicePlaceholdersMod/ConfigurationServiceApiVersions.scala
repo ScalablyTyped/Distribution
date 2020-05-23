@@ -118,6 +118,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var ioteventsdata: js.UndefOr[typings.awsSdk.ioteventsdataMod.apiVersion] = js.native
   var iotjobsdataplane: js.UndefOr[typings.awsSdk.iotjobsdataplaneMod.apiVersion] = js.native
   var iotsecuretunneling: js.UndefOr[typings.awsSdk.iotsecuretunnelingMod.apiVersion] = js.native
+  var iotsitewise: js.UndefOr[typings.awsSdk.iotsitewiseMod.apiVersion] = js.native
   var iotthingsgraph: js.UndefOr[typings.awsSdk.iotthingsgraphMod.apiVersion] = js.native
   var kafka: js.UndefOr[typings.awsSdk.kafkaMod.apiVersion] = js.native
   var kendra: js.UndefOr[typings.awsSdk.kendraMod.apiVersion] = js.native
@@ -137,6 +138,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var lightsail: js.UndefOr[typings.awsSdk.lightsailMod.apiVersion] = js.native
   var machinelearning: js.UndefOr[typings.awsSdk.machinelearningMod.apiVersion] = js.native
   var macie: js.UndefOr[typings.awsSdk.macieMod.apiVersion] = js.native
+  var macie2: js.UndefOr[typings.awsSdk.macie2Mod.apiVersion] = js.native
   var managedblockchain: js.UndefOr[typings.awsSdk.managedblockchainMod.apiVersion] = js.native
   var marketplacecatalog: js.UndefOr[typings.awsSdk.marketplacecatalogMod.apiVersion] = js.native
   var marketplacecommerceanalytics: js.UndefOr[typings.awsSdk.marketplacecommerceanalyticsMod.apiVersion] = js.native
@@ -214,6 +216,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var sts: js.UndefOr[typings.awsSdk.stsMod.apiVersion] = js.native
   var support: js.UndefOr[typings.awsSdk.supportMod.apiVersion] = js.native
   var swf: js.UndefOr[typings.awsSdk.swfMod.apiVersion] = js.native
+  var synthetics: js.UndefOr[typings.awsSdk.syntheticsMod.apiVersion] = js.native
   var textract: js.UndefOr[typings.awsSdk.textractMod.apiVersion] = js.native
   var transcribeservice: js.UndefOr[typings.awsSdk.transcribeserviceMod.apiVersion] = js.native
   var transfer: js.UndefOr[typings.awsSdk.transferMod.apiVersion] = js.native
@@ -343,6 +346,7 @@ object ConfigurationServiceApiVersions {
     ioteventsdata: typings.awsSdk.ioteventsdataMod.apiVersion = null,
     iotjobsdataplane: typings.awsSdk.iotjobsdataplaneMod.apiVersion = null,
     iotsecuretunneling: typings.awsSdk.iotsecuretunnelingMod.apiVersion = null,
+    iotsitewise: typings.awsSdk.iotsitewiseMod.apiVersion = null,
     iotthingsgraph: typings.awsSdk.iotthingsgraphMod.apiVersion = null,
     kafka: typings.awsSdk.kafkaMod.apiVersion = null,
     kendra: typings.awsSdk.kendraMod.apiVersion = null,
@@ -362,6 +366,7 @@ object ConfigurationServiceApiVersions {
     lightsail: typings.awsSdk.lightsailMod.apiVersion = null,
     machinelearning: typings.awsSdk.machinelearningMod.apiVersion = null,
     macie: typings.awsSdk.macieMod.apiVersion = null,
+    macie2: typings.awsSdk.macie2Mod.apiVersion = null,
     managedblockchain: typings.awsSdk.managedblockchainMod.apiVersion = null,
     marketplacecatalog: typings.awsSdk.marketplacecatalogMod.apiVersion = null,
     marketplacecommerceanalytics: typings.awsSdk.marketplacecommerceanalyticsMod.apiVersion = null,
@@ -439,6 +444,7 @@ object ConfigurationServiceApiVersions {
     sts: typings.awsSdk.stsMod.apiVersion = null,
     support: typings.awsSdk.supportMod.apiVersion = null,
     swf: typings.awsSdk.swfMod.apiVersion = null,
+    synthetics: typings.awsSdk.syntheticsMod.apiVersion = null,
     textract: typings.awsSdk.textractMod.apiVersion = null,
     transcribeservice: typings.awsSdk.transcribeserviceMod.apiVersion = null,
     transfer: typings.awsSdk.transferMod.apiVersion = null,
@@ -565,6 +571,7 @@ object ConfigurationServiceApiVersions {
     if (ioteventsdata != null) __obj.updateDynamic("ioteventsdata")(ioteventsdata.asInstanceOf[js.Any])
     if (iotjobsdataplane != null) __obj.updateDynamic("iotjobsdataplane")(iotjobsdataplane.asInstanceOf[js.Any])
     if (iotsecuretunneling != null) __obj.updateDynamic("iotsecuretunneling")(iotsecuretunneling.asInstanceOf[js.Any])
+    if (iotsitewise != null) __obj.updateDynamic("iotsitewise")(iotsitewise.asInstanceOf[js.Any])
     if (iotthingsgraph != null) __obj.updateDynamic("iotthingsgraph")(iotthingsgraph.asInstanceOf[js.Any])
     if (kafka != null) __obj.updateDynamic("kafka")(kafka.asInstanceOf[js.Any])
     if (kendra != null) __obj.updateDynamic("kendra")(kendra.asInstanceOf[js.Any])
@@ -584,6 +591,7 @@ object ConfigurationServiceApiVersions {
     if (lightsail != null) __obj.updateDynamic("lightsail")(lightsail.asInstanceOf[js.Any])
     if (machinelearning != null) __obj.updateDynamic("machinelearning")(machinelearning.asInstanceOf[js.Any])
     if (macie != null) __obj.updateDynamic("macie")(macie.asInstanceOf[js.Any])
+    if (macie2 != null) __obj.updateDynamic("macie2")(macie2.asInstanceOf[js.Any])
     if (managedblockchain != null) __obj.updateDynamic("managedblockchain")(managedblockchain.asInstanceOf[js.Any])
     if (marketplacecatalog != null) __obj.updateDynamic("marketplacecatalog")(marketplacecatalog.asInstanceOf[js.Any])
     if (marketplacecommerceanalytics != null) __obj.updateDynamic("marketplacecommerceanalytics")(marketplacecommerceanalytics.asInstanceOf[js.Any])
@@ -661,6 +669,7 @@ object ConfigurationServiceApiVersions {
     if (sts != null) __obj.updateDynamic("sts")(sts.asInstanceOf[js.Any])
     if (support != null) __obj.updateDynamic("support")(support.asInstanceOf[js.Any])
     if (swf != null) __obj.updateDynamic("swf")(swf.asInstanceOf[js.Any])
+    if (synthetics != null) __obj.updateDynamic("synthetics")(synthetics.asInstanceOf[js.Any])
     if (textract != null) __obj.updateDynamic("textract")(textract.asInstanceOf[js.Any])
     if (transcribeservice != null) __obj.updateDynamic("transcribeservice")(transcribeservice.asInstanceOf[js.Any])
     if (transfer != null) __obj.updateDynamic("transfer")(transfer.asInstanceOf[js.Any])

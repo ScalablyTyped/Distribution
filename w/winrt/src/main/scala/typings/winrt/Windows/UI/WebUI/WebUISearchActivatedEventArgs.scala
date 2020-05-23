@@ -8,22 +8,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.WebUI.WebUISearchActivatedEventArgs")
-@js.native
-class WebUISearchActivatedEventArgs ()
+trait WebUISearchActivatedEventArgs
   extends ISearchActivatedEventArgs
-     with IActivatedEventArgsDeferral {
-  /* CompleteClass */
-  override var activatedOperation: ActivatedOperation = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var queryText: String = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
+     with IActivatedEventArgsDeferral
+
+object WebUISearchActivatedEventArgs {
+  @scala.inline
+  def apply(
+    activatedOperation: ActivatedOperation,
+    kind: ActivationKind,
+    language: String,
+    previousExecutionState: ApplicationExecutionState,
+    queryText: String,
+    splashScreen: SplashScreen
+  ): WebUISearchActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], queryText = queryText.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUISearchActivatedEventArgs]
+  }
 }
 

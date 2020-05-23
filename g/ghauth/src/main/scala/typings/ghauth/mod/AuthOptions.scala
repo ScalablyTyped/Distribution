@@ -45,7 +45,7 @@ object AuthOptions {
   ): AuthOptions = {
     val __obj = js.Dynamic.literal(configName = configName.asInstanceOf[js.Any])
     if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSave)) __obj.updateDynamic("noSave")(noSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSave)) __obj.updateDynamic("noSave")(noSave.get.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     if (promptName != null) __obj.updateDynamic("promptName")(promptName.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])

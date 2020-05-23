@@ -1,6 +1,6 @@
 package typings.reactNativeElements.mod
 
-import typings.reactNativeElements.AnonAndroid
+import typings.reactNativeElements.anon.Android
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Colors_ extends js.Object {
   val grey4: String
   val grey5: String
   val greyOutline: String
-  val platform: AnonAndroid
+  val platform: Android
   val primary: String
   val searchBg: String
   val secondary: String
@@ -37,7 +37,7 @@ object Colors_ {
     grey4: String,
     grey5: String,
     greyOutline: String,
-    platform: AnonAndroid,
+    platform: Android,
     primary: String,
     searchBg: String,
     secondary: String,

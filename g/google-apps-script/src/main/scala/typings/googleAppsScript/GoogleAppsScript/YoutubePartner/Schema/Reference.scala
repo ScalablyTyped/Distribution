@@ -39,7 +39,7 @@ object Reference {
     id: String = null,
     ignoreFpMatch: js.UndefOr[Boolean] = js.undefined,
     kind: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     origination: Origination = null,
     status: String = null,
     statusReason: String = null,
@@ -48,21 +48,21 @@ object Reference {
   ): Reference = {
     val __obj = js.Dynamic.literal()
     if (assetId != null) __obj.updateDynamic("assetId")(assetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(audioswapEnabled)) __obj.updateDynamic("audioswapEnabled")(audioswapEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioswapEnabled)) __obj.updateDynamic("audioswapEnabled")(audioswapEnabled.get.asInstanceOf[js.Any])
     if (claimId != null) __obj.updateDynamic("claimId")(claimId.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (duplicateLeader != null) __obj.updateDynamic("duplicateLeader")(duplicateLeader.asInstanceOf[js.Any])
     if (excludedIntervals != null) __obj.updateDynamic("excludedIntervals")(excludedIntervals.asInstanceOf[js.Any])
-    if (!js.isUndefined(fpDirect)) __obj.updateDynamic("fpDirect")(fpDirect.asInstanceOf[js.Any])
+    if (!js.isUndefined(fpDirect)) __obj.updateDynamic("fpDirect")(fpDirect.get.asInstanceOf[js.Any])
     if (hashCode != null) __obj.updateDynamic("hashCode")(hashCode.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreFpMatch)) __obj.updateDynamic("ignoreFpMatch")(ignoreFpMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreFpMatch)) __obj.updateDynamic("ignoreFpMatch")(ignoreFpMatch.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (origination != null) __obj.updateDynamic("origination")(origination.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(urgent)) __obj.updateDynamic("urgent")(urgent.asInstanceOf[js.Any])
+    if (!js.isUndefined(urgent)) __obj.updateDynamic("urgent")(urgent.get.asInstanceOf[js.Any])
     if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }

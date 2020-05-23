@@ -12,7 +12,7 @@ object ExtraSpawnOptions {
   @scala.inline
   def apply(isPipeInput: js.UndefOr[Boolean] = js.undefined): ExtraSpawnOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPipeInput)) __obj.updateDynamic("isPipeInput")(isPipeInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPipeInput)) __obj.updateDynamic("isPipeInput")(isPipeInput.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraSpawnOptions]
   }
 }

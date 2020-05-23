@@ -12,7 +12,7 @@ object GetTokenOptions {
   @scala.inline
   def apply(forceRefresh: js.UndefOr[Boolean] = js.undefined): GetTokenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTokenOptions]
   }
 }

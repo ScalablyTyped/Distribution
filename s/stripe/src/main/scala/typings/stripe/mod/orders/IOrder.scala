@@ -1,6 +1,6 @@
 package typings.stripe.mod.orders
 
-import typings.stripe.AnonCanceled
+import typings.stripe.anon.Canceled
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
 import typings.stripe.mod.IShippingInformation
@@ -75,7 +75,7 @@ trait IOrder extends IResourceObject {
   /**
     * The timestamps at which the order status was updated
     */
-  var status_transitions: AnonCanceled
+  var status_transitions: Canceled
   var updated: Double
 }
 
@@ -101,7 +101,7 @@ object IOrder {
     shipping: IShippingInformation,
     shipping_methods: js.Array[IShippingMethod],
     status: OrderStatus,
-    status_transitions: AnonCanceled,
+    status_transitions: Canceled,
     updated: Double
   ): IOrder = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_returned = amount_returned.asInstanceOf[js.Any], application = application.asInstanceOf[js.Any], application_fee = application_fee.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], external_coupon_code = external_coupon_code.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], selected_shipping_method = selected_shipping_method.asInstanceOf[js.Any], shipping = shipping.asInstanceOf[js.Any], shipping_methods = shipping_methods.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_transitions = status_transitions.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])

@@ -18,9 +18,9 @@ trait ElasticInferenceAccelerator extends js.Object {
 
 object ElasticInferenceAccelerator {
   @scala.inline
-  def apply(Type: String, Count: Int | scala.Double = null): ElasticInferenceAccelerator = {
+  def apply(Type: String, Count: js.UndefOr[ElasticInferenceAcceleratorCount] = js.undefined): ElasticInferenceAccelerator = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticInferenceAccelerator]
   }
 }

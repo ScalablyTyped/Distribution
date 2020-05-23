@@ -14,9 +14,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(concurrency: Int | Double = null): Options = {
+  def apply(concurrency: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

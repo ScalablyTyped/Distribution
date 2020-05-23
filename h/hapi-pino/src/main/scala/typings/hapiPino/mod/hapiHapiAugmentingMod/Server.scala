@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Server extends js.Object {
-  def logger(): Logger
+  var logger: Logger
 }
 
 object Server {
   @scala.inline
-  def apply(logger: () => Logger): Server = {
-    val __obj = js.Dynamic.literal(logger = js.Any.fromFunction0(logger))
+  def apply(logger: Logger): Server = {
+    val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[Server]
   }
 }

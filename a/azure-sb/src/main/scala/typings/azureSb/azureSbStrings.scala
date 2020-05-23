@@ -32,21 +32,6 @@ object azureSbStrings {
   sealed trait busy extends badges
   
   @js.native
-  sealed trait d2p1ColonActiveMessageCount extends js.Object
-  
-  @js.native
-  sealed trait d2p1ColonDeadLetterMessageCount extends js.Object
-  
-  @js.native
-  sealed trait d2p1ColonScheduledMessageCount extends js.Object
-  
-  @js.native
-  sealed trait d2p1ColonTransferDeadLetterMessageCount extends js.Object
-  
-  @js.native
-  sealed trait d2p1ColonTransferMessageCount extends js.Object
-  
-  @js.native
   sealed trait error extends badges
   
   @js.native
@@ -101,16 +86,6 @@ object azureSbStrings {
   def away: away = "away".asInstanceOf[away]
   @scala.inline
   def busy: busy = "busy".asInstanceOf[busy]
-  @scala.inline
-  def d2p1ColonActiveMessageCount: d2p1ColonActiveMessageCount = "d2p1:ActiveMessageCount".asInstanceOf[d2p1ColonActiveMessageCount]
-  @scala.inline
-  def d2p1ColonDeadLetterMessageCount: d2p1ColonDeadLetterMessageCount = "d2p1:DeadLetterMessageCount".asInstanceOf[d2p1ColonDeadLetterMessageCount]
-  @scala.inline
-  def d2p1ColonScheduledMessageCount: d2p1ColonScheduledMessageCount = "d2p1:ScheduledMessageCount".asInstanceOf[d2p1ColonScheduledMessageCount]
-  @scala.inline
-  def d2p1ColonTransferDeadLetterMessageCount: d2p1ColonTransferDeadLetterMessageCount = "d2p1:TransferDeadLetterMessageCount".asInstanceOf[d2p1ColonTransferDeadLetterMessageCount]
-  @scala.inline
-  def d2p1ColonTransferMessageCount: d2p1ColonTransferMessageCount = "d2p1:TransferMessageCount".asInstanceOf[d2p1ColonTransferMessageCount]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline

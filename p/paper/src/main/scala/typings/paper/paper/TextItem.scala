@@ -11,9 +11,8 @@ import scala.scalajs.js.annotation._
   *     that is unique to their type, but share the underlying properties and
   *     functions that they inherit from TextItem.
   */
-@JSGlobal("paper.TextItem")
 @js.native
-class TextItem () extends Item {
+trait TextItem extends Item {
   /** 
     * The text contents of the text item.
     */

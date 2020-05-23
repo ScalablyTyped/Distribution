@@ -25,7 +25,7 @@ object BasicTooltipProps {
     value: String | Double = null
   ): BasicTooltipProps = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableChip)) __obj.updateDynamic("enableChip")(enableChip.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableChip)) __obj.updateDynamic("enableChip")(enableChip.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (renderContent != null) __obj.updateDynamic("renderContent")(js.Any.fromFunction0(renderContent))

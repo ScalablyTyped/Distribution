@@ -9,11 +9,11 @@ trait SVGZoomAndPan extends js.Object {
   val zoomAndPan: Double
 }
 
-@JSGlobal("SVGZoomAndPan")
-@js.native
-object SVGZoomAndPan extends js.Object {
-  val SVG_ZOOMANDPAN_DISABLE: Double = js.native
-  val SVG_ZOOMANDPAN_MAGNIFY: Double = js.native
-  val SVG_ZOOMANDPAN_UNKNOWN: Double = js.native
+object SVGZoomAndPan {
+  @scala.inline
+  def apply(zoomAndPan: Double): SVGZoomAndPan = {
+    val __obj = js.Dynamic.literal(zoomAndPan = zoomAndPan.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGZoomAndPan]
+  }
 }
 

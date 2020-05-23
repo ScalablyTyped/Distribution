@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.pixiJs.PIXI.ILoaderPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("pixi.js", "TextureLoader")
 @js.native
-class TextureLoader ()
-  extends typings.pixiJs.PIXI.TextureLoader
+class TextureLoader () extends ILoaderPlugin
 
 /* static members */
 @JSImport("pixi.js", "TextureLoader")

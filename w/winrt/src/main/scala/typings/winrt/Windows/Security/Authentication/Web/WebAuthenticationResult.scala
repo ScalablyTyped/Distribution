@@ -4,14 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationResult")
-@js.native
-class WebAuthenticationResult () extends IWebAuthenticationResult {
-  /* CompleteClass */
-  override var responseData: String = js.native
-  /* CompleteClass */
-  override var responseErrorDetail: Double = js.native
-  /* CompleteClass */
-  override var responseStatus: WebAuthenticationStatus = js.native
+trait WebAuthenticationResult extends IWebAuthenticationResult
+
+object WebAuthenticationResult {
+  @scala.inline
+  def apply(responseData: String, responseErrorDetail: Double, responseStatus: WebAuthenticationStatus): WebAuthenticationResult = {
+    val __obj = js.Dynamic.literal(responseData = responseData.asInstanceOf[js.Any], responseErrorDetail = responseErrorDetail.asInstanceOf[js.Any], responseStatus = responseStatus.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebAuthenticationResult]
+  }
 }
 

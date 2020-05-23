@@ -20,11 +20,11 @@ object AvailableCapacity {
   @scala.inline
   def apply(
     AvailableInstanceCapacity: AvailableInstanceCapacityList = null,
-    AvailableVCpus: Int | scala.Double = null
+    AvailableVCpus: js.UndefOr[Integer] = js.undefined
   ): AvailableCapacity = {
     val __obj = js.Dynamic.literal()
     if (AvailableInstanceCapacity != null) __obj.updateDynamic("AvailableInstanceCapacity")(AvailableInstanceCapacity.asInstanceOf[js.Any])
-    if (AvailableVCpus != null) __obj.updateDynamic("AvailableVCpus")(AvailableVCpus.asInstanceOf[js.Any])
+    if (!js.isUndefined(AvailableVCpus)) __obj.updateDynamic("AvailableVCpus")(AvailableVCpus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailableCapacity]
   }
 }

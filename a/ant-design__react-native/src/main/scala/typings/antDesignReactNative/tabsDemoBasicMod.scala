@@ -1,7 +1,5 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.antDesignReactNativeStrings.Tabs
-import typings.antDesignReactNative.antDesignReactNativeStrings.`Tabs example`
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +15,7 @@ object tabsDemoBasicMod extends js.Object {
   @js.native
   class default () extends BasicTabsExample
   
-  val description: `Tabs example` = js.native
-  val title: Tabs = js.native
+  val description: /* "Tabs example" */ String = js.native
+  val title: /* "Tabs" */ String = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk
 
+import typings.mendixmodelsdk.iworkingcopyeventMod.BuildResultStatus
 import typings.mendixmodelsdk.structuresMod.StructureState
 import typings.mendixmodelsdk.transactionManagerMod.TransactionType
 import typings.mendixmodelsdk.transportInterfacesMod.CannotFixAppState
@@ -49,6 +50,9 @@ object mendixmodelsdkStrings {
   sealed trait FAILED_STAGING extends SuccessAppState
   
   @js.native
+  sealed trait Failure extends BuildResultStatus
+  
+  @js.native
   sealed trait INVALID_OPENID extends CannotFixAppState
   
   @js.native
@@ -80,6 +84,9 @@ object mendixmodelsdkStrings {
   
   @js.native
   sealed trait Sandbox extends js.Object
+  
+  @js.native
+  sealed trait Success extends BuildResultStatus
   
   @js.native
   sealed trait UNKNOWN extends CannotFixAppState
@@ -187,7 +194,7 @@ object mendixmodelsdkStrings {
   sealed trait started_ extends IUpdateAppJobStatus
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success_ extends js.Object
   
   @js.native
   sealed trait switch extends LockType
@@ -229,6 +236,8 @@ object mendixmodelsdkStrings {
   @scala.inline
   def FAILED_STAGING: FAILED_STAGING = "FAILED_STAGING".asInstanceOf[FAILED_STAGING]
   @scala.inline
+  def Failure: Failure = "Failure".asInstanceOf[Failure]
+  @scala.inline
   def INVALID_OPENID: INVALID_OPENID = "INVALID_OPENID".asInstanceOf[INVALID_OPENID]
   @scala.inline
   def INVALID_PROJECTID: INVALID_PROJECTID = "INVALID_PROJECTID".asInstanceOf[INVALID_PROJECTID]
@@ -250,6 +259,8 @@ object mendixmodelsdkStrings {
   def STOPPED: STOPPED = "STOPPED".asInstanceOf[STOPPED]
   @scala.inline
   def Sandbox: Sandbox = "Sandbox".asInstanceOf[Sandbox]
+  @scala.inline
+  def Success: Success = "Success".asInstanceOf[Success]
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   @scala.inline
@@ -321,7 +332,7 @@ object mendixmodelsdkStrings {
   @scala.inline
   def started_ : started_ = "started".asInstanceOf[started_]
   @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  def success_ : success_ = "success".asInstanceOf[success_]
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   @scala.inline

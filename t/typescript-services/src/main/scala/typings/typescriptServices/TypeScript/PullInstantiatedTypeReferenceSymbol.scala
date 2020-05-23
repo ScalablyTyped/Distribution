@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullInstantiatedTypeReferenceSymbol")
 @js.native
-class PullInstantiatedTypeReferenceSymbol protected () extends PullTypeReferenceSymbol {
-  def this(
-    referencedTypeSymbol: PullTypeSymbol,
-    _typeParameterArgumentMap: TypeArgumentMap,
-    isInstanceReferenceType: Boolean
-  ) = this()
+trait PullInstantiatedTypeReferenceSymbol extends PullTypeReferenceSymbol {
   var _allInstantiatedMemberNameCache: js.Any = js.native
   var _generativeTypeClassification: js.Any = js.native
   var _instantiatedAssociatedContainerType: js.Any = js.native
@@ -26,12 +20,5 @@ class PullInstantiatedTypeReferenceSymbol protected () extends PullTypeReference
   var _typeParameterArgumentMap: js.Any = js.native
   var isInstanceReferenceType: Boolean = js.native
   /* private */ def populateInstantiatedMemberFromReferencedMember(referencedMember: js.Any): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.PullInstantiatedTypeReferenceSymbol")
-@js.native
-object PullInstantiatedTypeReferenceSymbol extends js.Object {
-  def create(resolver: PullTypeResolver, `type`: PullTypeSymbol, typeParameterArgumentMap: TypeArgumentMap): PullInstantiatedTypeReferenceSymbol = js.native
 }
 

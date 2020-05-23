@@ -24,25 +24,25 @@ object UIkitDropdownOptions {
     animation: String = null,
     boundary: String = null,
     `boundary-align`: js.UndefOr[Boolean] = js.undefined,
-    `delay-hide`: Int | Double = null,
-    `delay-show`: Int | Double = null,
-    duration: Int | Double = null,
+    `delay-hide`: js.UndefOr[Double] = js.undefined,
+    `delay-show`: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined,
     flip: Boolean | String = null,
     mode: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     pos: String = null,
     toggle: String | Boolean = null
   ): UIkitDropdownOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(`boundary-align`)) __obj.updateDynamic("boundary-align")(`boundary-align`.asInstanceOf[js.Any])
-    if (`delay-hide` != null) __obj.updateDynamic("delay-hide")(`delay-hide`.asInstanceOf[js.Any])
-    if (`delay-show` != null) __obj.updateDynamic("delay-show")(`delay-show`.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(`boundary-align`)) __obj.updateDynamic("boundary-align")(`boundary-align`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`delay-hide`)) __obj.updateDynamic("delay-hide")(`delay-hide`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`delay-show`)) __obj.updateDynamic("delay-show")(`delay-show`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
     if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitDropdownOptions]

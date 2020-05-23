@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gapi.drive.realtime.CollaborativeObject")
 @js.native
-class CollaborativeObject () extends js.Object {
+trait CollaborativeObject extends js.Object {
   // The id of this collaborative object. Read-only.
   var id: String = js.native
   // The type of this collaborative object. For standard collaborative objects,

@@ -113,23 +113,23 @@ object ConfigOptions {
     browser: String = null,
     ca: js.Any = null,
     cache: String = null,
-    `cache-lock-retries`: Int | Double = null,
-    `cache-lock-stale`: Int | Double = null,
-    `cache-lock-wait`: Int | Double = null,
-    `cache-max`: Int | Double = null,
-    `cache-min`: Int | Double = null,
+    `cache-lock-retries`: js.UndefOr[Double] = js.undefined,
+    `cache-lock-stale`: js.UndefOr[Double] = js.undefined,
+    `cache-lock-wait`: js.UndefOr[Double] = js.undefined,
+    `cache-max`: js.UndefOr[Double] = js.undefined,
+    `cache-min`: js.UndefOr[Double] = js.undefined,
     cafile: String = null,
     cert: String = null,
     color: js.Any = null,
-    depth: Int | Double = null,
+    depth: js.UndefOr[Double] = js.undefined,
     description: js.UndefOr[Boolean] = js.undefined,
     dev: js.UndefOr[Boolean] = js.undefined,
     editor: String = null,
     `engine-strict`: js.UndefOr[Boolean] = js.undefined,
-    `fetch-retries`: Int | Double = null,
-    `fetch-retry-factor`: Int | Double = null,
-    `fetch-retry-maxtimeout`: Int | Double = null,
-    `fetch-retry-mintimeout`: Int | Double = null,
+    `fetch-retries`: js.UndefOr[Double] = js.undefined,
+    `fetch-retry-factor`: js.UndefOr[Double] = js.undefined,
+    `fetch-retry-maxtimeout`: js.UndefOr[Double] = js.undefined,
+    `fetch-retry-mintimeout`: js.UndefOr[Double] = js.undefined,
     force: js.UndefOr[Boolean] = js.undefined,
     git: String = null,
     `git-tag-version`: js.UndefOr[Boolean] = js.undefined,
@@ -182,7 +182,7 @@ object ConfigOptions {
     `strict-ssl`: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
     tmp: String = null,
-    umask: Int | Double = null,
+    umask: js.UndefOr[Double] = js.undefined,
     unicode: js.UndefOr[Boolean] = js.undefined,
     `unsafe-perm`: js.UndefOr[Boolean] = js.undefined,
     usage: js.UndefOr[Boolean] = js.undefined,
@@ -194,90 +194,90 @@ object ConfigOptions {
     viewer: String = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_exit)) __obj.updateDynamic("_exit")(_exit.asInstanceOf[js.Any])
-    if (!js.isUndefined(`always-auth`)) __obj.updateDynamic("always-auth")(`always-auth`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`bin-links`)) __obj.updateDynamic("bin-links")(`bin-links`.asInstanceOf[js.Any])
+    if (!js.isUndefined(_exit)) __obj.updateDynamic("_exit")(_exit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`always-auth`)) __obj.updateDynamic("always-auth")(`always-auth`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`bin-links`)) __obj.updateDynamic("bin-links")(`bin-links`.get.asInstanceOf[js.Any])
     if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (`cache-lock-retries` != null) __obj.updateDynamic("cache-lock-retries")(`cache-lock-retries`.asInstanceOf[js.Any])
-    if (`cache-lock-stale` != null) __obj.updateDynamic("cache-lock-stale")(`cache-lock-stale`.asInstanceOf[js.Any])
-    if (`cache-lock-wait` != null) __obj.updateDynamic("cache-lock-wait")(`cache-lock-wait`.asInstanceOf[js.Any])
-    if (`cache-max` != null) __obj.updateDynamic("cache-max")(`cache-max`.asInstanceOf[js.Any])
-    if (`cache-min` != null) __obj.updateDynamic("cache-min")(`cache-min`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`cache-lock-retries`)) __obj.updateDynamic("cache-lock-retries")(`cache-lock-retries`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`cache-lock-stale`)) __obj.updateDynamic("cache-lock-stale")(`cache-lock-stale`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`cache-lock-wait`)) __obj.updateDynamic("cache-lock-wait")(`cache-lock-wait`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`cache-max`)) __obj.updateDynamic("cache-max")(`cache-max`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`cache-min`)) __obj.updateDynamic("cache-min")(`cache-min`.get.asInstanceOf[js.Any])
     if (cafile != null) __obj.updateDynamic("cafile")(cafile.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.get.asInstanceOf[js.Any])
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
-    if (!js.isUndefined(`engine-strict`)) __obj.updateDynamic("engine-strict")(`engine-strict`.asInstanceOf[js.Any])
-    if (`fetch-retries` != null) __obj.updateDynamic("fetch-retries")(`fetch-retries`.asInstanceOf[js.Any])
-    if (`fetch-retry-factor` != null) __obj.updateDynamic("fetch-retry-factor")(`fetch-retry-factor`.asInstanceOf[js.Any])
-    if (`fetch-retry-maxtimeout` != null) __obj.updateDynamic("fetch-retry-maxtimeout")(`fetch-retry-maxtimeout`.asInstanceOf[js.Any])
-    if (`fetch-retry-mintimeout` != null) __obj.updateDynamic("fetch-retry-mintimeout")(`fetch-retry-mintimeout`.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(`engine-strict`)) __obj.updateDynamic("engine-strict")(`engine-strict`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fetch-retries`)) __obj.updateDynamic("fetch-retries")(`fetch-retries`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fetch-retry-factor`)) __obj.updateDynamic("fetch-retry-factor")(`fetch-retry-factor`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fetch-retry-maxtimeout`)) __obj.updateDynamic("fetch-retry-maxtimeout")(`fetch-retry-maxtimeout`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fetch-retry-mintimeout`)) __obj.updateDynamic("fetch-retry-mintimeout")(`fetch-retry-mintimeout`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (git != null) __obj.updateDynamic("git")(git.asInstanceOf[js.Any])
-    if (!js.isUndefined(`git-tag-version`)) __obj.updateDynamic("git-tag-version")(`git-tag-version`.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(`git-tag-version`)) __obj.updateDynamic("git-tag-version")(`git-tag-version`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
     if (globalconfig != null) __obj.updateDynamic("globalconfig")(globalconfig.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     if (`https-proxy` != null) __obj.updateDynamic("https-proxy")(`https-proxy`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`ignore-scripts`)) __obj.updateDynamic("ignore-scripts")(`ignore-scripts`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`ignore-scripts`)) __obj.updateDynamic("ignore-scripts")(`ignore-scripts`.get.asInstanceOf[js.Any])
     if (`init-module` != null) __obj.updateDynamic("init-module")(`init-module`.asInstanceOf[js.Any])
     if (initDotauthorDotemail != null) __obj.updateDynamic("init.author.email")(initDotauthorDotemail.asInstanceOf[js.Any])
     if (initDotauthorDotname != null) __obj.updateDynamic("init.author.name")(initDotauthorDotname.asInstanceOf[js.Any])
     if (initDotauthorDoturl != null) __obj.updateDynamic("init.author.url")(initDotauthorDoturl.asInstanceOf[js.Any])
     if (initDotlicense != null) __obj.updateDynamic("init.license")(initDotlicense.asInstanceOf[js.Any])
     if (initDotversion != null) __obj.updateDynamic("init.version")(initDotversion.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.get.asInstanceOf[js.Any])
     if (`local-address` != null) __obj.updateDynamic("local-address")(`local-address`.asInstanceOf[js.Any])
     if (loglevel != null) __obj.updateDynamic("loglevel")(loglevel.asInstanceOf[js.Any])
     if (logstream != null) __obj.updateDynamic("logstream")(logstream.asInstanceOf[js.Any])
-    if (!js.isUndefined(long)) __obj.updateDynamic("long")(long.asInstanceOf[js.Any])
+    if (!js.isUndefined(long)) __obj.updateDynamic("long")(long.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (`node-version` != null) __obj.updateDynamic("node-version")(`node-version`.asInstanceOf[js.Any])
-    if (!js.isUndefined(npat)) __obj.updateDynamic("npat")(npat.asInstanceOf[js.Any])
-    if (!js.isUndefined(`onload-script`)) __obj.updateDynamic("onload-script")(`onload-script`.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseable)) __obj.updateDynamic("parseable")(parseable.asInstanceOf[js.Any])
+    if (!js.isUndefined(npat)) __obj.updateDynamic("npat")(npat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`onload-script`)) __obj.updateDynamic("onload-script")(`onload-script`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseable)) __obj.updateDynamic("parseable")(parseable.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.asInstanceOf[js.Any])
-    if (!js.isUndefined(`proprietary-attribs`)) __obj.updateDynamic("proprietary-attribs")(`proprietary-attribs`.asInstanceOf[js.Any])
+    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`proprietary-attribs`)) __obj.updateDynamic("proprietary-attribs")(`proprietary-attribs`.get.asInstanceOf[js.Any])
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(`rebuild-bundle`)) __obj.updateDynamic("rebuild-bundle")(`rebuild-bundle`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`rebuild-bundle`)) __obj.updateDynamic("rebuild-bundle")(`rebuild-bundle`.get.asInstanceOf[js.Any])
     if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
-    if (!js.isUndefined(rollback)) __obj.updateDynamic("rollback")(rollback.asInstanceOf[js.Any])
-    if (!js.isUndefined(save)) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (!js.isUndefined(`save-bundle`)) __obj.updateDynamic("save-bundle")(`save-bundle`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`save-dev`)) __obj.updateDynamic("save-dev")(`save-dev`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`save-exact`)) __obj.updateDynamic("save-exact")(`save-exact`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`save-optional`)) __obj.updateDynamic("save-optional")(`save-optional`.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollback)) __obj.updateDynamic("rollback")(rollback.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(save)) __obj.updateDynamic("save")(save.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`save-bundle`)) __obj.updateDynamic("save-bundle")(`save-bundle`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`save-dev`)) __obj.updateDynamic("save-dev")(`save-dev`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`save-exact`)) __obj.updateDynamic("save-exact")(`save-exact`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`save-optional`)) __obj.updateDynamic("save-optional")(`save-optional`.get.asInstanceOf[js.Any])
     if (`save-prefix` != null) __obj.updateDynamic("save-prefix")(`save-prefix`.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (searchexclude != null) __obj.updateDynamic("searchexclude")(searchexclude.asInstanceOf[js.Any])
     if (searchopts != null) __obj.updateDynamic("searchopts")(searchopts.asInstanceOf[js.Any])
     if (searchsort != null) __obj.updateDynamic("searchsort")(searchsort.asInstanceOf[js.Any])
     if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrinkwrap)) __obj.updateDynamic("shrinkwrap")(shrinkwrap.asInstanceOf[js.Any])
-    if (!js.isUndefined(`sign-git-tag`)) __obj.updateDynamic("sign-git-tag")(`sign-git-tag`.asInstanceOf[js.Any])
+    if (!js.isUndefined(shrinkwrap)) __obj.updateDynamic("shrinkwrap")(shrinkwrap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`sign-git-tag`)) __obj.updateDynamic("sign-git-tag")(`sign-git-tag`.get.asInstanceOf[js.Any])
     if (spin != null) __obj.updateDynamic("spin")(spin.asInstanceOf[js.Any])
-    if (!js.isUndefined(`strict-ssl`)) __obj.updateDynamic("strict-ssl")(`strict-ssl`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`strict-ssl`)) __obj.updateDynamic("strict-ssl")(`strict-ssl`.get.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (tmp != null) __obj.updateDynamic("tmp")(tmp.asInstanceOf[js.Any])
-    if (umask != null) __obj.updateDynamic("umask")(umask.asInstanceOf[js.Any])
-    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
-    if (!js.isUndefined(`unsafe-perm`)) __obj.updateDynamic("unsafe-perm")(`unsafe-perm`.asInstanceOf[js.Any])
-    if (!js.isUndefined(usage)) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
+    if (!js.isUndefined(umask)) __obj.updateDynamic("umask")(umask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`unsafe-perm`)) __obj.updateDynamic("unsafe-perm")(`unsafe-perm`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usage)) __obj.updateDynamic("usage")(usage.get.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     if (`user-agent` != null) __obj.updateDynamic("user-agent")(`user-agent`.asInstanceOf[js.Any])
     if (userconfig != null) __obj.updateDynamic("userconfig")(userconfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(versions)) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(versions)) __obj.updateDynamic("versions")(versions.get.asInstanceOf[js.Any])
     if (viewer != null) __obj.updateDynamic("viewer")(viewer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }

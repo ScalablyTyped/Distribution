@@ -13,7 +13,6 @@ object MetadataValue {
   @scala.inline
   def apply(equals: js.Function): MetadataValue = {
     val __obj = js.Dynamic.literal(equals = equals.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[MetadataValue]
   }
 }

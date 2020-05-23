@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait Values extends js.Object {
   def setValues(values: js.Any): Unit = js.native
   def setValues(values: js.Any, update: Boolean): Unit = js.native
 }
-
-@JSGlobal("webix.Values")
-@js.native
-object Values extends TopLevel[Values]
 

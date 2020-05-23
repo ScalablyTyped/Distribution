@@ -4,29 +4,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.SpellingOptions")
-@js.native
-class SpellingOptions protected () extends js.Object {
-  var ArabicModes: XlArabicModes = js.native
-  var ArabicStrictAlefHamza: Boolean = js.native
-  var ArabicStrictFinalYaa: Boolean = js.native
-  var ArabicStrictTaaMarboota: Boolean = js.native
-  var BrazilReform: XlPortugueseReform = js.native
-  var DictLang: Double = js.native
+trait SpellingOptions extends js.Object {
+  var ArabicModes: XlArabicModes
+  var ArabicStrictAlefHamza: Boolean
+  var ArabicStrictFinalYaa: Boolean
+  var ArabicStrictTaaMarboota: Boolean
+  var BrazilReform: XlPortugueseReform
+  var DictLang: Double
   @JSName("Excel.SpellingOptions_typekey")
-  var ExcelDotSpellingOptions_typekey: SpellingOptions = js.native
-  var GermanPostReform: Boolean = js.native
-  var HebrewModes: XlHebrewModes = js.native
-  var IgnoreCaps: Boolean = js.native
-  var IgnoreFileNames: Boolean = js.native
-  var IgnoreMixedDigits: Boolean = js.native
-  var KoreanCombineAux: Boolean = js.native
-  var KoreanProcessCompound: Boolean = js.native
-  var KoreanUseAutoChangeList: Boolean = js.native
-  var PortugalReform: XlPortugueseReform = js.native
-  var RussianStrictE: Boolean = js.native
-  var SpanishModes: XlSpanishModes = js.native
-  var SuggestMainOnly: Boolean = js.native
-  var UserDict: String = js.native
+  var ExcelDotSpellingOptions_typekey: SpellingOptions
+  var GermanPostReform: Boolean
+  var HebrewModes: XlHebrewModes
+  var IgnoreCaps: Boolean
+  var IgnoreFileNames: Boolean
+  var IgnoreMixedDigits: Boolean
+  var KoreanCombineAux: Boolean
+  var KoreanProcessCompound: Boolean
+  var KoreanUseAutoChangeList: Boolean
+  var PortugalReform: XlPortugueseReform
+  var RussianStrictE: Boolean
+  var SpanishModes: XlSpanishModes
+  var SuggestMainOnly: Boolean
+  var UserDict: String
+}
+
+object SpellingOptions {
+  @scala.inline
+  def apply(
+    ArabicModes: XlArabicModes,
+    ArabicStrictAlefHamza: Boolean,
+    ArabicStrictFinalYaa: Boolean,
+    ArabicStrictTaaMarboota: Boolean,
+    BrazilReform: XlPortugueseReform,
+    DictLang: Double,
+    ExcelDotSpellingOptions_typekey: SpellingOptions,
+    GermanPostReform: Boolean,
+    HebrewModes: XlHebrewModes,
+    IgnoreCaps: Boolean,
+    IgnoreFileNames: Boolean,
+    IgnoreMixedDigits: Boolean,
+    KoreanCombineAux: Boolean,
+    KoreanProcessCompound: Boolean,
+    KoreanUseAutoChangeList: Boolean,
+    PortugalReform: XlPortugueseReform,
+    RussianStrictE: Boolean,
+    SpanishModes: XlSpanishModes,
+    SuggestMainOnly: Boolean,
+    UserDict: String
+  ): SpellingOptions = {
+    val __obj = js.Dynamic.literal(ArabicModes = ArabicModes.asInstanceOf[js.Any], ArabicStrictAlefHamza = ArabicStrictAlefHamza.asInstanceOf[js.Any], ArabicStrictFinalYaa = ArabicStrictFinalYaa.asInstanceOf[js.Any], ArabicStrictTaaMarboota = ArabicStrictTaaMarboota.asInstanceOf[js.Any], BrazilReform = BrazilReform.asInstanceOf[js.Any], DictLang = DictLang.asInstanceOf[js.Any], GermanPostReform = GermanPostReform.asInstanceOf[js.Any], HebrewModes = HebrewModes.asInstanceOf[js.Any], IgnoreCaps = IgnoreCaps.asInstanceOf[js.Any], IgnoreFileNames = IgnoreFileNames.asInstanceOf[js.Any], IgnoreMixedDigits = IgnoreMixedDigits.asInstanceOf[js.Any], KoreanCombineAux = KoreanCombineAux.asInstanceOf[js.Any], KoreanProcessCompound = KoreanProcessCompound.asInstanceOf[js.Any], KoreanUseAutoChangeList = KoreanUseAutoChangeList.asInstanceOf[js.Any], PortugalReform = PortugalReform.asInstanceOf[js.Any], RussianStrictE = RussianStrictE.asInstanceOf[js.Any], SpanishModes = SpanishModes.asInstanceOf[js.Any], SuggestMainOnly = SuggestMainOnly.asInstanceOf[js.Any], UserDict = UserDict.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.SpellingOptions_typekey")(ExcelDotSpellingOptions_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpellingOptions]
+  }
 }
 

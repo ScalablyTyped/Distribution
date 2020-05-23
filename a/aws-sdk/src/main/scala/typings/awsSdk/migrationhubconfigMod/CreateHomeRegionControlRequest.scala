@@ -22,9 +22,9 @@ trait CreateHomeRegionControlRequest extends js.Object {
 
 object CreateHomeRegionControlRequest {
   @scala.inline
-  def apply(HomeRegion: HomeRegion, Target: Target, DryRun: js.UndefOr[Boolean] = js.undefined): CreateHomeRegionControlRequest = {
+  def apply(HomeRegion: HomeRegion, Target: Target, DryRun: js.UndefOr[DryRun] = js.undefined): CreateHomeRegionControlRequest = {
     val __obj = js.Dynamic.literal(HomeRegion = HomeRegion.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHomeRegionControlRequest]
   }
 }

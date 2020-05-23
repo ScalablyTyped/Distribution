@@ -19,7 +19,7 @@ trait BufferList[D /* <: Buffer */] extends js.Object {
 
 object BufferList {
   @scala.inline
-  def apply[D /* <: Buffer */](
+  def apply[D](
     clear: () => Unit,
     concat: Double => D,
     head: Entry[D],

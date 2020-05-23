@@ -14,9 +14,6 @@ object firebaseRemoteConfigStrings {
   sealed trait active_config_etag extends ProjectNamespaceKeyFieldValue
   
   @js.native
-  sealed trait app_namespace_store extends js.Object
-  
-  @js.native
   sealed trait `fetch-client-network` extends ErrorCode
   
   @js.native
@@ -74,8 +71,6 @@ object firebaseRemoteConfigStrings {
   def active_config: active_config = "active_config".asInstanceOf[active_config]
   @scala.inline
   def active_config_etag: active_config_etag = "active_config_etag".asInstanceOf[active_config_etag]
-  @scala.inline
-  def app_namespace_store: app_namespace_store = "app_namespace_store".asInstanceOf[app_namespace_store]
   @scala.inline
   def `fetch-client-network`: `fetch-client-network` = "fetch-client-network".asInstanceOf[`fetch-client-network`]
   @scala.inline

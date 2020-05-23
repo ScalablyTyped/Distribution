@@ -10,10 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Wrapper[T /* <: Members[T] */]
-  extends /**
-  * Methods and fields.
-  */
-/* name */ StringDictionary[js.Any] {
+  extends /* name */ StringDictionary[js.Any] {
   /**
     * Allocates a new instance without initializing it.
     *
@@ -45,11 +42,11 @@ trait Wrapper[T /* <: Members[T] */]
     * Instance used for chaining up to super-class method implementations.
     */
   @JSName("$super")
-  var $super: typings.fridaGum.Wrapper = js.native
+  var $super: typings.fridaGum.anon.Wrapper = js.native
   /**
     * Retrieves a `java.lang.Class` wrapper for the current class.
     */
-  var `class`: typings.fridaGum.Wrapper = js.native
+  var `class`: typings.fridaGum.anon.Wrapper = js.native
   /**
     * Allocates a new instance without initializing it.
     *

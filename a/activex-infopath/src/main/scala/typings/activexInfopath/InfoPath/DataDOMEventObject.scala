@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.DataDOMEventObject")
 @js.native
-class DataDOMEventObject protected () extends js.Object {
+trait DataDOMEventObject extends js.Object {
   @JSName("InfoPath.DataDOMEventObject_typekey")
   var InfoPathDotDataDOMEventObject_typekey: DataDOMEventObject = js.native
   val IsUndoRedo: Boolean = js.native

@@ -26,35 +26,35 @@ object RTCIceCandidatePairStats {
     id: java.lang.String,
     timestamp: Double,
     `type`: RTCStatsType,
-    availableIncomingBitrate: Int | Double = null,
-    availableOutgoingBitrate: Int | Double = null,
-    bytesReceived: Int | Double = null,
-    bytesSent: Int | Double = null,
+    availableIncomingBitrate: js.UndefOr[Double] = js.undefined,
+    availableOutgoingBitrate: js.UndefOr[Double] = js.undefined,
+    bytesReceived: js.UndefOr[Double] = js.undefined,
+    bytesSent: js.UndefOr[Double] = js.undefined,
     localCandidateId: java.lang.String = null,
     nominated: js.UndefOr[scala.Boolean] = js.undefined,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     readable: js.UndefOr[scala.Boolean] = js.undefined,
     remoteCandidateId: java.lang.String = null,
-    roundTripTime: Int | Double = null,
+    roundTripTime: js.UndefOr[Double] = js.undefined,
     state: RTCStatsIceCandidatePairState = null,
     transportId: java.lang.String = null,
     writable: js.UndefOr[scala.Boolean] = js.undefined
   ): RTCIceCandidatePairStats = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (availableIncomingBitrate != null) __obj.updateDynamic("availableIncomingBitrate")(availableIncomingBitrate.asInstanceOf[js.Any])
-    if (availableOutgoingBitrate != null) __obj.updateDynamic("availableOutgoingBitrate")(availableOutgoingBitrate.asInstanceOf[js.Any])
-    if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
-    if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
+    if (!js.isUndefined(availableIncomingBitrate)) __obj.updateDynamic("availableIncomingBitrate")(availableIncomingBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(availableOutgoingBitrate)) __obj.updateDynamic("availableOutgoingBitrate")(availableOutgoingBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytesReceived)) __obj.updateDynamic("bytesReceived")(bytesReceived.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytesSent)) __obj.updateDynamic("bytesSent")(bytesSent.get.asInstanceOf[js.Any])
     if (localCandidateId != null) __obj.updateDynamic("localCandidateId")(localCandidateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(nominated)) __obj.updateDynamic("nominated")(nominated.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
+    if (!js.isUndefined(nominated)) __obj.updateDynamic("nominated")(nominated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.get.asInstanceOf[js.Any])
     if (remoteCandidateId != null) __obj.updateDynamic("remoteCandidateId")(remoteCandidateId.asInstanceOf[js.Any])
-    if (roundTripTime != null) __obj.updateDynamic("roundTripTime")(roundTripTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundTripTime)) __obj.updateDynamic("roundTripTime")(roundTripTime.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (transportId != null) __obj.updateDynamic("transportId")(transportId.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceCandidatePairStats]
   }
 }

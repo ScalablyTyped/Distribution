@@ -37,7 +37,7 @@ object ProvisioningArtifactParameter {
   def apply(
     DefaultValue: DefaultValue = null,
     Description: Description = null,
-    IsNoEcho: js.UndefOr[Boolean] = js.undefined,
+    IsNoEcho: js.UndefOr[NoEcho] = js.undefined,
     ParameterConstraints: ParameterConstraints = null,
     ParameterKey: ParameterKey = null,
     ParameterType: ParameterType = null
@@ -45,7 +45,7 @@ object ProvisioningArtifactParameter {
     val __obj = js.Dynamic.literal()
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsNoEcho)) __obj.updateDynamic("IsNoEcho")(IsNoEcho.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsNoEcho)) __obj.updateDynamic("IsNoEcho")(IsNoEcho.get.asInstanceOf[js.Any])
     if (ParameterConstraints != null) __obj.updateDynamic("ParameterConstraints")(ParameterConstraints.asInstanceOf[js.Any])
     if (ParameterKey != null) __obj.updateDynamic("ParameterKey")(ParameterKey.asInstanceOf[js.Any])
     if (ParameterType != null) __obj.updateDynamic("ParameterType")(ParameterType.asInstanceOf[js.Any])

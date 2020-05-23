@@ -1,7 +1,7 @@
 package typings.synaptic.mod
 
-import typings.synaptic.AnonActivationsentences
-import typings.synaptic.AnonConnection
+import typings.synaptic.anon.Activationsentences
+import typings.synaptic.anon.Connection
 import typings.synaptic.mod.Neuron.Connection_
 import typings.synaptic.mod.Neuron.SquashingFunction
 import scala.scalajs.js
@@ -39,8 +39,8 @@ class Neuron_ () extends js.Object {
     * Returns true or false whether the neuron is connected to another neuron (parameter).
     * @param neuron
     */
-  def connected(): AnonConnection | Boolean = js.native
-  def connected(neuron: js.Any): AnonConnection | Boolean = js.native
+  def connected(): Connection | Boolean = js.native
+  def connected(neuron: js.Any): Connection | Boolean = js.native
   /**
     * A neuron can gate a connection between two neurons, or a neuron's self-connection. This allows you to create second order neural network architectures.
     * @param connection
@@ -49,9 +49,9 @@ class Neuron_ () extends js.Object {
   /**
     * Hardcodes the behavior of the neuron into an optimized function.
     */
-  def optimize(): AnonActivationsentences = js.native
-  def optimize(optimized: js.Any): AnonActivationsentences = js.native
-  def optimize(optimized: js.Any, layer: js.Any): AnonActivationsentences = js.native
+  def optimize(): Activationsentences = js.native
+  def optimize(optimized: js.Any): Activationsentences = js.native
+  def optimize(optimized: js.Any, layer: js.Any): Activationsentences = js.native
   /**
     * A neuron can project a connection to another neuron. Neurons can also self-connect.
     */

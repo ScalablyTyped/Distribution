@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object NamespaceStubSettings {
-  type Param = (typings.semanticUiSite.PickImplcache | typings.semanticUiSite.PickImplconfig | typings.semanticUiSite.PickImplsections | typings.semanticUiSite.PickImplsection | typings.semanticUiSite.PickImplutilities) with typings.semanticUiSite.PartialPickImplkeyofImplCache
+  type Param = (typings.semanticUiSite.anon.PickImplcache | typings.semanticUiSite.anon.PickImplconfig | typings.semanticUiSite.anon.PickImplsections | typings.semanticUiSite.anon.PickImplsection | typings.semanticUiSite.anon.PickImplutilities) with typings.semanticUiSite.anon.PartialPickImplkeyofImplCache
 }

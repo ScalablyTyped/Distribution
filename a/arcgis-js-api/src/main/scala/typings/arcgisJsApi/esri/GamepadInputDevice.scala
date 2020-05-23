@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Gamepad
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,8 +14,4 @@ trait GamepadInputDevice extends Accessor {
     */
   val native: Gamepad = js.native
 }
-
-@JSGlobal("__esri.GamepadInputDevice")
-@js.native
-object GamepadInputDevice extends TopLevel[GamepadInputDeviceConstructor]
 

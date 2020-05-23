@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/plots/linePlot", JSImport.Namespace)
 @js.native
 object linePlotMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Basis */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.linear
     - typings.plottable.plottableStrings.linearClosed
     - typings.plottable.plottableStrings.step

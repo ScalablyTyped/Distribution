@@ -11,8 +11,7 @@ trait DownloadUrl extends js.Object {
 object DownloadUrl {
   @scala.inline
   def apply(url: String = null): DownloadUrl = {
-    val __obj = js.Dynamic.literal()
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadUrl]
   }
 }

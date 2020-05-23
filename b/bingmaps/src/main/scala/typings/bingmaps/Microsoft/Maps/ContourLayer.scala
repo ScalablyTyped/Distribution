@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.ContourLayer")
 @js.native
-class ContourLayer protected () extends Layer {
-  /**
-    * @constructor
-    * @param contourLines The contour lines that compose this layer.
-    * @param options The contour layer options.
-    */
-  def this(contourLines: js.Array[ContourLine]) = this()
-  def this(contourLines: js.Array[ContourLine], options: IContourLayerOptions) = this()
+trait ContourLayer extends Layer {
   /**
     * Gets the contour lines of this layer.
     * @returns The contour lines of this layer.

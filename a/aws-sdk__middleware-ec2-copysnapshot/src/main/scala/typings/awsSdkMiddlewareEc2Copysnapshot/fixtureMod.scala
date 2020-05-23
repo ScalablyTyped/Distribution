@@ -1,5 +1,7 @@
 package typings.awsSdkMiddlewareEc2Copysnapshot
 
+import typings.awsSdkMiddlewareEc2Copysnapshot.anon.AccessKeyId
+import typings.awsSdkMiddlewareEc2Copysnapshot.anon.Hostname
 import typings.awsSdkTypes.cryptoMod.SourceData
 import typings.awsSdkTypes.middlewareMod.HandlerExecutionContext
 import typings.std.ArrayBuffer
@@ -26,8 +28,8 @@ object fixtureMod extends js.Object {
   val fromUtf8: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Mock<{}> */ js.Any = js.native
   val nextHandler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Mock<Promise<void>> */ js.Any = js.native
   val toBase64: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Mock<{}> */ js.Any = js.native
-  def credentials(): js.Promise[AnonAccessKeyId] = js.native
-  def endpoint(): js.Promise[AnonHostname] = js.native
+  def credentials(): js.Promise[AccessKeyId] = js.native
+  def endpoint(): js.Promise[Hostname] = js.native
   def region(): js.Promise[String] = js.native
 }
 

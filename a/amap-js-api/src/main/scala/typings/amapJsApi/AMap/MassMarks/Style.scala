@@ -27,9 +27,9 @@ trait Style extends js.Object {
 
 object Style {
   @scala.inline
-  def apply(anchor: Pixel, size: Size, url: String, rotation: Int | Double = null): Style = {
+  def apply(anchor: Pixel, size: Size, url: String, rotation: js.UndefOr[Double] = js.undefined): Style = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Style]
   }
 }

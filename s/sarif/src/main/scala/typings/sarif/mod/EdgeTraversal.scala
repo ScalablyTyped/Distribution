@@ -35,13 +35,13 @@ object EdgeTraversal {
     finalState: StringDictionary[MultiformatMessageString] = null,
     message: Message = null,
     properties: PropertyBag = null,
-    stepOverEdgeCount: Int | Double = null
+    stepOverEdgeCount: js.UndefOr[Double] = js.undefined
   ): EdgeTraversal = {
     val __obj = js.Dynamic.literal(edgeId = edgeId.asInstanceOf[js.Any])
     if (finalState != null) __obj.updateDynamic("finalState")(finalState.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (stepOverEdgeCount != null) __obj.updateDynamic("stepOverEdgeCount")(stepOverEdgeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepOverEdgeCount)) __obj.updateDynamic("stepOverEdgeCount")(stepOverEdgeCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeTraversal]
   }
 }

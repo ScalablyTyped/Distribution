@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 trait BindingData extends js.Object {
   /**
     *
-    * Represents binding identifier. Read-only.
+    * Represents binding identifier.
     *
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     *
-    * Returns the type of the binding. See Excel.BindingType for details. Read-only.
+    * Returns the type of the binding. See Excel.BindingType for details.
     *
     * [Api set: ExcelApi 1.1]
     */

@@ -13,10 +13,10 @@ trait X11Options extends js.Object {
 
 object X11Options {
   @scala.inline
-  def apply(screen: Int | Double = null, single: js.UndefOr[Boolean] = js.undefined): X11Options = {
+  def apply(screen: js.UndefOr[Double] = js.undefined, single: js.UndefOr[Boolean] = js.undefined): X11Options = {
     val __obj = js.Dynamic.literal()
-    if (screen != null) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(screen)) __obj.updateDynamic("screen")(screen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[X11Options]
   }
 }

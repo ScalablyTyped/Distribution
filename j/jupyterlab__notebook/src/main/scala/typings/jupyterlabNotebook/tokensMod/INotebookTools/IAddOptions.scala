@@ -26,9 +26,9 @@ trait IAddOptions extends js.Object {
 
 object IAddOptions {
   @scala.inline
-  def apply(tool: ITool, rank: Int | Double = null, section: common | advanced = null): IAddOptions = {
+  def apply(tool: ITool, rank: js.UndefOr[Double] = js.undefined, section: common | advanced = null): IAddOptions = {
     val __obj = js.Dynamic.literal(tool = tool.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddOptions]
   }

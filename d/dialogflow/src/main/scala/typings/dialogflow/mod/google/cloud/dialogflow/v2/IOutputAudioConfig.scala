@@ -19,14 +19,16 @@ trait IOutputAudioConfig extends js.Object {
 object IOutputAudioConfig {
   @scala.inline
   def apply(
-    audioEncoding: OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.OutputAudioEncoding * / any */ String) = null,
-    sampleRateHertz: Int | Double = null,
-    synthesizeSpeechConfig: ISynthesizeSpeechConfig = null
+    audioEncoding: js.UndefOr[
+      Null | OutputAudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.OutputAudioEncoding * / any */ String)
+    ] = js.undefined,
+    sampleRateHertz: js.UndefOr[Null | Double] = js.undefined,
+    synthesizeSpeechConfig: js.UndefOr[Null | ISynthesizeSpeechConfig] = js.undefined
   ): IOutputAudioConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
-    if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
-    if (synthesizeSpeechConfig != null) __obj.updateDynamic("synthesizeSpeechConfig")(synthesizeSpeechConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioEncoding)) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRateHertz)) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(synthesizeSpeechConfig)) __obj.updateDynamic("synthesizeSpeechConfig")(synthesizeSpeechConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOutputAudioConfig]
   }
 }

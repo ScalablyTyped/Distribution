@@ -32,10 +32,10 @@ trait AuthProviderConfigFilter extends js.Object {
 
 object AuthProviderConfigFilter {
   @scala.inline
-  def apply(`type`: saml | oidc, maxResults: Int | Double = null, pageToken: String = null): AuthProviderConfigFilter = {
+  def apply(`type`: saml | oidc, maxResults: js.UndefOr[Double] = js.undefined, pageToken: String = null): AuthProviderConfigFilter = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthProviderConfigFilter]
   }

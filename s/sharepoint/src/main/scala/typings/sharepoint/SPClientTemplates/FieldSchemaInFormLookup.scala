@@ -1,6 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
-import typings.sharepoint.AnonLookupId
+import typings.sharepoint.anon.LookupId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait FieldSchemaInFormLookup extends FieldSchemaInForm {
   /** Number of choices. Appears only for Lookup field. */
   var ChoiceCount: Double
   /** List of choices for this field. */
-  var Choices: js.Array[AnonLookupId]
+  var Choices: js.Array[LookupId]
   /** Indicates if the field is a dependent lookup */
   var DependentLookup: Boolean
   var LookupListId: String
@@ -33,7 +33,7 @@ object FieldSchemaInFormLookup {
     AllowMultipleValues: Boolean,
     BaseDisplayFormUrl: String,
     ChoiceCount: Double,
-    Choices: js.Array[AnonLookupId],
+    Choices: js.Array[LookupId],
     DependentLookup: Boolean,
     Description: String,
     Direction: String,

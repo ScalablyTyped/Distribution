@@ -18,14 +18,14 @@ object ISPClientAutoFillData {
   def apply(
     AutoFillDisplayText: String = null,
     AutoFillKey: js.Any = null,
-    AutoFillMenuOptionType: Int | Double = null,
+    AutoFillMenuOptionType: js.UndefOr[Double] = js.undefined,
     AutoFillSubDisplayText: String = null,
     AutoFillTitleText: String = null
   ): ISPClientAutoFillData = {
     val __obj = js.Dynamic.literal()
     if (AutoFillDisplayText != null) __obj.updateDynamic("AutoFillDisplayText")(AutoFillDisplayText.asInstanceOf[js.Any])
     if (AutoFillKey != null) __obj.updateDynamic("AutoFillKey")(AutoFillKey.asInstanceOf[js.Any])
-    if (AutoFillMenuOptionType != null) __obj.updateDynamic("AutoFillMenuOptionType")(AutoFillMenuOptionType.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoFillMenuOptionType)) __obj.updateDynamic("AutoFillMenuOptionType")(AutoFillMenuOptionType.get.asInstanceOf[js.Any])
     if (AutoFillSubDisplayText != null) __obj.updateDynamic("AutoFillSubDisplayText")(AutoFillSubDisplayText.asInstanceOf[js.Any])
     if (AutoFillTitleText != null) __obj.updateDynamic("AutoFillTitleText")(AutoFillTitleText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISPClientAutoFillData]

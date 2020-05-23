@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,15 @@ trait MediaKeySystemAccess extends js.Object {
   def getConfiguration(): MediaKeySystemConfiguration
 }
 
-@JSGlobal("MediaKeySystemAccess")
-@js.native
-object MediaKeySystemAccess extends Instantiable0[MediaKeySystemAccess]
+object MediaKeySystemAccess {
+  @scala.inline
+  def apply(
+    createMediaKeys: () => js.Promise[MediaKeys],
+    getConfiguration: () => MediaKeySystemConfiguration,
+    keySystem: java.lang.String
+  ): MediaKeySystemAccess = {
+    val __obj = js.Dynamic.literal(createMediaKeys = js.Any.fromFunction0(createMediaKeys), getConfiguration = js.Any.fromFunction0(getConfiguration), keySystem = keySystem.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaKeySystemAccess]
+  }
+}
 

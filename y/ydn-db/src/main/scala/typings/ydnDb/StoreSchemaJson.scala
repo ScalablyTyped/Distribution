@@ -24,8 +24,8 @@ object StoreSchemaJson {
     `type`: String = null
   ): StoreSchemaJson = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
-    if (!js.isUndefined(dispatchEvents)) __obj.updateDynamic("dispatchEvents")(dispatchEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dispatchEvents)) __obj.updateDynamic("dispatchEvents")(dispatchEvents.get.asInstanceOf[js.Any])
     if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
     if (keyPath != null) __obj.updateDynamic("keyPath")(keyPath.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

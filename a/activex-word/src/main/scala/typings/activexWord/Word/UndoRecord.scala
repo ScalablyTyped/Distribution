@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.UndoRecord")
 @js.native
-class UndoRecord protected () extends js.Object {
+trait UndoRecord extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   val Creator: Double = js.native
   val CustomRecordLevel: Double = js.native

@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sauronMod {
-  type SauronComponentMap = org.scalablytyped.runtime.StringDictionary[typings.sauronjs.TypeofComponent]
+  type SauronComponentMap = org.scalablytyped.runtime.StringDictionary[typings.sauronjs.anon.TypeofComponent]
 }

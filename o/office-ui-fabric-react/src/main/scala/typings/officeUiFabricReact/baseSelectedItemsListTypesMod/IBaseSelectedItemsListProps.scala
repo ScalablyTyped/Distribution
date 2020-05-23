@@ -6,7 +6,7 @@ import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import typings.react.mod.ClassAttributes
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import scala.scalajs.js
@@ -85,7 +85,7 @@ object IBaseSelectedItemsListProps {
     onItemSelected: /* selectedItem */ js.UndefOr[T] => T | js.Thenable[T] = null,
     onItemsDeleted: /* deletedItems */ js.Array[T] => Unit = null,
     onRenderItem: /* props */ ISelectedItemProps[T] => Element = null,
-    ref: LegacyRef[js.Any] = null,
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined,
     removeButtonAriaLabel: String = null,
     selectedItems: js.Array[T] = null,
     selection: Selection[IObjectWithKey] = null
@@ -102,7 +102,7 @@ object IBaseSelectedItemsListProps {
     if (onItemSelected != null) __obj.updateDynamic("onItemSelected")(js.Any.fromFunction1(onItemSelected))
     if (onItemsDeleted != null) __obj.updateDynamic("onItemsDeleted")(js.Any.fromFunction1(onItemsDeleted))
     if (onRenderItem != null) __obj.updateDynamic("onRenderItem")(js.Any.fromFunction1(onRenderItem))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (removeButtonAriaLabel != null) __obj.updateDynamic("removeButtonAriaLabel")(removeButtonAriaLabel.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])

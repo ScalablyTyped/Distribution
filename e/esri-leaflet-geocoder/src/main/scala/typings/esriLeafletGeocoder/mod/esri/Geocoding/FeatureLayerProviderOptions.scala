@@ -16,21 +16,21 @@ object FeatureLayerProviderOptions {
   def apply(
     url: String,
     attribution: String = null,
-    bufferRadius: Int | Double = null,
+    bufferRadius: js.UndefOr[Double] = js.undefined,
     formatSuggestion: /* featureInformation */ js.Any => String = null,
     label: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[Double] = js.undefined,
     searchFields: String | js.Array[String] = null,
-    token: String = null
+    token: js.UndefOr[Null | String] = js.undefined
   ): FeatureLayerProviderOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (bufferRadius != null) __obj.updateDynamic("bufferRadius")(bufferRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferRadius)) __obj.updateDynamic("bufferRadius")(bufferRadius.get.asInstanceOf[js.Any])
     if (formatSuggestion != null) __obj.updateDynamic("formatSuggestion")(js.Any.fromFunction1(formatSuggestion))
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (searchFields != null) __obj.updateDynamic("searchFields")(searchFields.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerProviderOptions]
   }
 }

@@ -1,7 +1,7 @@
 package typings.tinajsTina.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tinajsTina.PartialComponentDefinitio
+import typings.tinajsTina.anon.PartialComponentDefinitio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

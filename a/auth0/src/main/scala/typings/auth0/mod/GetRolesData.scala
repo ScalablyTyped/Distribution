@@ -12,11 +12,15 @@ trait GetRolesData extends js.Object {
 
 object GetRolesData {
   @scala.inline
-  def apply(name_filter: String = null, page: Int | Double = null, per_page: Int | Double = null): GetRolesData = {
+  def apply(
+    name_filter: String = null,
+    page: js.UndefOr[Double] = js.undefined,
+    per_page: js.UndefOr[Double] = js.undefined
+  ): GetRolesData = {
     val __obj = js.Dynamic.literal()
     if (name_filter != null) __obj.updateDynamic("name_filter")(name_filter.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(per_page)) __obj.updateDynamic("per_page")(per_page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRolesData]
   }
 }

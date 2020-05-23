@@ -18,7 +18,7 @@ object FormatNumberOptionsWithoutIDD {
   ): FormatNumberOptionsWithoutIDD = {
     val __obj = js.Dynamic.literal()
     if (formatExtension != null) __obj.updateDynamic("formatExtension")(js.Any.fromFunction3(formatExtension))
-    if (!js.isUndefined(v2)) __obj.updateDynamic("v2")(v2.asInstanceOf[js.Any])
+    if (!js.isUndefined(v2)) __obj.updateDynamic("v2")(v2.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatNumberOptionsWithoutIDD]
   }
 }

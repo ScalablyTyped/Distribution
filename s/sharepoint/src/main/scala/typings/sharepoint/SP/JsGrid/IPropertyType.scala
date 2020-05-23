@@ -1,6 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
-import typings.sharepoint.AnonDataValue
+import typings.sharepoint.anon.DataValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait IPropertyType extends js.Object {
     fieldKey: String,
     newValue: js.Any,
     bIsLocalized: Boolean,
-    fnCallback: js.Function1[/* args */ AnonDataValue, Unit],
+    fnCallback: js.Function1[/* args */ DataValue, Unit],
     fnError: js.Any
   ): Unit
 }
@@ -21,7 +21,7 @@ trait IPropertyType extends js.Object {
 object IPropertyType {
   @scala.inline
   def apply(
-    BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ AnonDataValue, Unit], js.Any) => Unit,
+    BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
     ID: String
   ): IPropertyType = {
     val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = js.Any.fromFunction6(BeginValidateNormalizeConvert), ID = ID.asInstanceOf[js.Any])

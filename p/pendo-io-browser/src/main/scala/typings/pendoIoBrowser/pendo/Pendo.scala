@@ -1,7 +1,7 @@
 package typings.pendoIoBrowser.pendo
 
-import typings.pendoIoBrowser.AnonSteps
-import typings.pendoIoBrowser.AnonUntil
+import typings.pendoIoBrowser.anon.Steps
+import typings.pendoIoBrowser.anon.Until
 import typings.pendoIoBrowser.pendoIoBrowserBooleans.`false`
 import typings.pendoIoBrowser.pendoIoBrowserBooleans.`true`
 import typings.pendoIoBrowser.pendoIoBrowserStrings.No
@@ -44,11 +44,11 @@ trait Pendo extends js.Object {
   def loadGuides(): Unit = js.native
   // Guide Events
   def onGuideAdvanced(): Unit = js.native
-  def onGuideAdvanced(steps: AnonSteps): Unit = js.native
+  def onGuideAdvanced(steps: Steps): Unit = js.native
   def onGuideAdvanced(step: GuideStep): Unit = js.native
   def onGuideDismissed(): Unit = js.native
   def onGuideDismissed(step: GuideStep): Unit = js.native
-  def onGuideDismissed(until: AnonUntil): Unit = js.native
+  def onGuideDismissed(until: Until): Unit = js.native
   def onGuidePrevious(): Unit = js.native
   def onGuidePrevious(step: GuideStep): Unit = js.native
   def removeLauncher(): Unit = js.native

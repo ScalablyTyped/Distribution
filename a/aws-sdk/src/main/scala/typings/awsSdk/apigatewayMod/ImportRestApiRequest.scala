@@ -24,11 +24,11 @@ object ImportRestApiRequest {
   @scala.inline
   def apply(
     body: _Blob,
-    failOnWarnings: js.UndefOr[scala.Boolean] = js.undefined,
+    failOnWarnings: js.UndefOr[Boolean] = js.undefined,
     parameters: MapOfStringToString = null
   ): ImportRestApiRequest = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnWarnings)) __obj.updateDynamic("failOnWarnings")(failOnWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnWarnings)) __obj.updateDynamic("failOnWarnings")(failOnWarnings.get.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportRestApiRequest]
   }

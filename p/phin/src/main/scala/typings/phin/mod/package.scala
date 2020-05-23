@@ -14,6 +14,6 @@ package object mod {
     scala.Unit
   ]
   // Form and data property has been written this way so they're mutually exclusive.
-  type IWithData[T /* <: js.Object */] = T with typings.phin.AnonData
-  type IWithForm[T /* <: js.Object */] = T with typings.phin.AnonForm
+  type IWithData[T /* <: js.Object */] = T with typings.phin.anon.Data
+  type IWithForm[T /* <: js.Object */] = T with typings.phin.anon.Form
 }

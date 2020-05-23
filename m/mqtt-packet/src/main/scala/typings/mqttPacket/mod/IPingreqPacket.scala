@@ -14,10 +14,14 @@ trait IPingreqPacket
 
 object IPingreqPacket {
   @scala.inline
-  def apply(cmd: pingreq, length: Int | Double = null, messageId: Int | Double = null): IPingreqPacket = {
+  def apply(
+    cmd: pingreq,
+    length: js.UndefOr[Double] = js.undefined,
+    messageId: js.UndefOr[Double] = js.undefined
+  ): IPingreqPacket = {
     val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageId)) __obj.updateDynamic("messageId")(messageId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPingreqPacket]
   }
 }

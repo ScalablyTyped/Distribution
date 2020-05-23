@@ -15,7 +15,7 @@ object SymbolOptionsObject {
   @scala.inline
   def apply(rounded: js.UndefOr[Boolean] = js.undefined): SymbolOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.asInstanceOf[js.Any])
+    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolOptionsObject]
   }
 }

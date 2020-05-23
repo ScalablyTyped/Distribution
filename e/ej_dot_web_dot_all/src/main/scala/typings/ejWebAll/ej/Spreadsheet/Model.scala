@@ -376,7 +376,7 @@ object Model {
   def apply(
     actionBegin: /* e */ ActionBeginEventArgs => Unit = null,
     actionComplete: /* e */ ActionCompleteEventArgs => Unit = null,
-    activeSheetIndex: Int | Double = null,
+    activeSheetIndex: js.UndefOr[Double] = js.undefined,
     allowAutoCellType: js.UndefOr[Boolean] = js.undefined,
     allowAutoFill: js.UndefOr[Boolean] = js.undefined,
     allowAutoSum: js.UndefOr[Boolean] = js.undefined,
@@ -410,7 +410,7 @@ object Model {
     allowSparkline: js.UndefOr[Boolean] = js.undefined,
     allowUndoRedo: js.UndefOr[Boolean] = js.undefined,
     allowWrap: js.UndefOr[Boolean] = js.undefined,
-    apWidth: Int | Double = null,
+    apWidth: js.UndefOr[Double] = js.undefined,
     autoFillBegin: /* e */ AutoFillBeginEventArgs => Unit = null,
     autoFillComplete: /* e */ AutoFillCompleteEventArgs => Unit = null,
     autoFillSettings: AutoFillSettings = null,
@@ -428,8 +428,8 @@ object Model {
     cellSave: /* e */ CellSaveEventArgs => Unit = null,
     cellSelected: /* e */ CellSelectedEventArgs => Unit = null,
     chartSettings: ChartSettings = null,
-    columnCount: Int | Double = null,
-    columnWidth: Int | Double = null,
+    columnCount: js.UndefOr[Double] = js.undefined,
+    columnWidth: js.UndefOr[Double] = js.undefined,
     contextMenuClick: /* e */ ContextMenuClickEventArgs => Unit = null,
     cssClass: String = null,
     customFormulas: js.Array[_] = null,
@@ -463,57 +463,57 @@ object Model {
     resizeStart: /* e */ ResizeStartEventArgs => Unit = null,
     ribbonClick: /* e */ RibbonClickEventArgs => Unit = null,
     ribbonSettings: RibbonSettings = null,
-    rowCount: Int | Double = null,
-    rowHeight: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     scrollSettings: ScrollSettings = null,
     selectionSettings: SelectionSettings = null,
-    sheetCount: Int | Double = null,
+    sheetCount: js.UndefOr[Double] = js.undefined,
     sheets: js.Array[Sheet] = null,
     showPager: js.UndefOr[Boolean] = js.undefined,
     showRibbon: js.UndefOr[Boolean] = js.undefined,
     tabClick: /* e */ TabClickEventArgs => Unit = null,
     tabSelect: /* e */ TabSelectEventArgs => Unit = null,
-    undoRedoStep: Int | Double = null,
+    undoRedoStep: js.UndefOr[Double] = js.undefined,
     userName: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (actionBegin != null) __obj.updateDynamic("actionBegin")(js.Any.fromFunction1(actionBegin))
     if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
-    if (activeSheetIndex != null) __obj.updateDynamic("activeSheetIndex")(activeSheetIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAutoCellType)) __obj.updateDynamic("allowAutoCellType")(allowAutoCellType.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAutoFill)) __obj.updateDynamic("allowAutoFill")(allowAutoFill.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAutoSum)) __obj.updateDynamic("allowAutoSum")(allowAutoSum.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCellFormatting)) __obj.updateDynamic("allowCellFormatting")(allowCellFormatting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCellType)) __obj.updateDynamic("allowCellType")(allowCellType.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCharts)) __obj.updateDynamic("allowCharts")(allowCharts.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowClipboard)) __obj.updateDynamic("allowClipboard")(allowClipboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowComments)) __obj.updateDynamic("allowComments")(allowComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowConditionalFormats)) __obj.updateDynamic("allowConditionalFormats")(allowConditionalFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDataValidation)) __obj.updateDynamic("allowDataValidation")(allowDataValidation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDelete)) __obj.updateDynamic("allowDelete")(allowDelete.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFormatAsTable)) __obj.updateDynamic("allowFormatAsTable")(allowFormatAsTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFormatPainter)) __obj.updateDynamic("allowFormatPainter")(allowFormatPainter.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFormulaBar)) __obj.updateDynamic("allowFormulaBar")(allowFormulaBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFreezing)) __obj.updateDynamic("allowFreezing")(allowFreezing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHyperlink)) __obj.updateDynamic("allowHyperlink")(allowHyperlink.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowImport)) __obj.updateDynamic("allowImport")(allowImport.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInsert)) __obj.updateDynamic("allowInsert")(allowInsert.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowLockCell)) __obj.updateDynamic("allowLockCell")(allowLockCell.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMerging)) __obj.updateDynamic("allowMerging")(allowMerging.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowOverflow)) __obj.updateDynamic("allowOverflow")(allowOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSearching)) __obj.updateDynamic("allowSearching")(allowSearching.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSparkline)) __obj.updateDynamic("allowSparkline")(allowSparkline.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowUndoRedo)) __obj.updateDynamic("allowUndoRedo")(allowUndoRedo.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowWrap)) __obj.updateDynamic("allowWrap")(allowWrap.asInstanceOf[js.Any])
-    if (apWidth != null) __obj.updateDynamic("apWidth")(apWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeSheetIndex)) __obj.updateDynamic("activeSheetIndex")(activeSheetIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAutoCellType)) __obj.updateDynamic("allowAutoCellType")(allowAutoCellType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAutoFill)) __obj.updateDynamic("allowAutoFill")(allowAutoFill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAutoSum)) __obj.updateDynamic("allowAutoSum")(allowAutoSum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCellFormatting)) __obj.updateDynamic("allowCellFormatting")(allowCellFormatting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCellType)) __obj.updateDynamic("allowCellType")(allowCellType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCharts)) __obj.updateDynamic("allowCharts")(allowCharts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowClipboard)) __obj.updateDynamic("allowClipboard")(allowClipboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowComments)) __obj.updateDynamic("allowComments")(allowComments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowConditionalFormats)) __obj.updateDynamic("allowConditionalFormats")(allowConditionalFormats.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDataValidation)) __obj.updateDynamic("allowDataValidation")(allowDataValidation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDelete)) __obj.updateDynamic("allowDelete")(allowDelete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFormatAsTable)) __obj.updateDynamic("allowFormatAsTable")(allowFormatAsTable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFormatPainter)) __obj.updateDynamic("allowFormatPainter")(allowFormatPainter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFormulaBar)) __obj.updateDynamic("allowFormulaBar")(allowFormulaBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFreezing)) __obj.updateDynamic("allowFreezing")(allowFreezing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHyperlink)) __obj.updateDynamic("allowHyperlink")(allowHyperlink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowImport)) __obj.updateDynamic("allowImport")(allowImport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInsert)) __obj.updateDynamic("allowInsert")(allowInsert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLockCell)) __obj.updateDynamic("allowLockCell")(allowLockCell.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMerging)) __obj.updateDynamic("allowMerging")(allowMerging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOverflow)) __obj.updateDynamic("allowOverflow")(allowOverflow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSearching)) __obj.updateDynamic("allowSearching")(allowSearching.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSparkline)) __obj.updateDynamic("allowSparkline")(allowSparkline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUndoRedo)) __obj.updateDynamic("allowUndoRedo")(allowUndoRedo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowWrap)) __obj.updateDynamic("allowWrap")(allowWrap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(apWidth)) __obj.updateDynamic("apWidth")(apWidth.get.asInstanceOf[js.Any])
     if (autoFillBegin != null) __obj.updateDynamic("autoFillBegin")(js.Any.fromFunction1(autoFillBegin))
     if (autoFillComplete != null) __obj.updateDynamic("autoFillComplete")(js.Any.fromFunction1(autoFillComplete))
     if (autoFillSettings != null) __obj.updateDynamic("autoFillSettings")(autoFillSettings.asInstanceOf[js.Any])
@@ -531,8 +531,8 @@ object Model {
     if (cellSave != null) __obj.updateDynamic("cellSave")(js.Any.fromFunction1(cellSave))
     if (cellSelected != null) __obj.updateDynamic("cellSelected")(js.Any.fromFunction1(cellSelected))
     if (chartSettings != null) __obj.updateDynamic("chartSettings")(chartSettings.asInstanceOf[js.Any])
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
     if (contextMenuClick != null) __obj.updateDynamic("contextMenuClick")(js.Any.fromFunction1(contextMenuClick))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (customFormulas != null) __obj.updateDynamic("customFormulas")(customFormulas.asInstanceOf[js.Any])
@@ -542,14 +542,14 @@ object Model {
     if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
     if (editRangeBegin != null) __obj.updateDynamic("editRangeBegin")(js.Any.fromFunction1(editRangeBegin))
     if (editRangeComplete != null) __obj.updateDynamic("editRangeComplete")(js.Any.fromFunction1(editRangeComplete))
-    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePivotTable)) __obj.updateDynamic("enablePivotTable")(enablePivotTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTouch)) __obj.updateDynamic("enableTouch")(enableTouch.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePivotTable)) __obj.updateDynamic("enablePivotTable")(enablePivotTable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouch)) __obj.updateDynamic("enableTouch")(enableTouch.get.asInstanceOf[js.Any])
     if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings.asInstanceOf[js.Any])
     if (formatSettings != null) __obj.updateDynamic("formatSettings")(formatSettings.asInstanceOf[js.Any])
     if (importSettings != null) __obj.updateDynamic("importSettings")(importSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(isImport)) __obj.updateDynamic("isImport")(isImport.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isImport)) __obj.updateDynamic("isImport")(isImport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly.get.asInstanceOf[js.Any])
     if (keyDown != null) __obj.updateDynamic("keyDown")(js.Any.fromFunction1(keyDown))
     if (keyUp != null) __obj.updateDynamic("keyUp")(js.Any.fromFunction1(keyUp))
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
@@ -566,17 +566,17 @@ object Model {
     if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction1(resizeStart))
     if (ribbonClick != null) __obj.updateDynamic("ribbonClick")(js.Any.fromFunction1(ribbonClick))
     if (ribbonSettings != null) __obj.updateDynamic("ribbonSettings")(ribbonSettings.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (scrollSettings != null) __obj.updateDynamic("scrollSettings")(scrollSettings.asInstanceOf[js.Any])
     if (selectionSettings != null) __obj.updateDynamic("selectionSettings")(selectionSettings.asInstanceOf[js.Any])
-    if (sheetCount != null) __obj.updateDynamic("sheetCount")(sheetCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetCount)) __obj.updateDynamic("sheetCount")(sheetCount.get.asInstanceOf[js.Any])
     if (sheets != null) __obj.updateDynamic("sheets")(sheets.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPager)) __obj.updateDynamic("showPager")(showPager.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRibbon)) __obj.updateDynamic("showRibbon")(showRibbon.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPager)) __obj.updateDynamic("showPager")(showPager.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRibbon)) __obj.updateDynamic("showRibbon")(showRibbon.get.asInstanceOf[js.Any])
     if (tabClick != null) __obj.updateDynamic("tabClick")(js.Any.fromFunction1(tabClick))
     if (tabSelect != null) __obj.updateDynamic("tabSelect")(js.Any.fromFunction1(tabSelect))
-    if (undoRedoStep != null) __obj.updateDynamic("undoRedoStep")(undoRedoStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(undoRedoStep)) __obj.updateDynamic("undoRedoStep")(undoRedoStep.get.asInstanceOf[js.Any])
     if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

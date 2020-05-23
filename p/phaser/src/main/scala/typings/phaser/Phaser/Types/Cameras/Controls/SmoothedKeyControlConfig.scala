@@ -16,6 +16,10 @@ trait SmoothedKeyControlConfig extends js.Object {
     */
   var camera: js.UndefOr[Camera] = js.undefined
   /**
+    * The Key to be pressed that will move the Camera down.
+    */
+  var down: js.UndefOr[Key] = js.undefined
+  /**
     * The horizontal and vertical drag applied to the camera when it is moving.
     */
   var drag: js.UndefOr[Double | js.Object] = js.undefined
@@ -54,6 +58,7 @@ object SmoothedKeyControlConfig {
   def apply(
     acceleration: Double | js.Object = null,
     camera: Camera = null,
+    down: Key = null,
     drag: Double | js.Object = null,
     left: Key = null,
     maxSpeed: Double | js.Object = null,
@@ -61,11 +66,12 @@ object SmoothedKeyControlConfig {
     up: Key = null,
     zoomIn: Key = null,
     zoomOut: Key = null,
-    zoomSpeed: Int | Double = null
+    zoomSpeed: js.UndefOr[Double] = js.undefined
   ): SmoothedKeyControlConfig = {
     val __obj = js.Dynamic.literal()
     if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration.asInstanceOf[js.Any])
     if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
+    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (maxSpeed != null) __obj.updateDynamic("maxSpeed")(maxSpeed.asInstanceOf[js.Any])
@@ -73,7 +79,7 @@ object SmoothedKeyControlConfig {
     if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
     if (zoomIn != null) __obj.updateDynamic("zoomIn")(zoomIn.asInstanceOf[js.Any])
     if (zoomOut != null) __obj.updateDynamic("zoomOut")(zoomOut.asInstanceOf[js.Any])
-    if (zoomSpeed != null) __obj.updateDynamic("zoomSpeed")(zoomSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomSpeed)) __obj.updateDynamic("zoomSpeed")(zoomSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmoothedKeyControlConfig]
   }
 }

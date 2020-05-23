@@ -4,17 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.LngLat")
 @js.native
-class LngLat protected () extends js.Object {
-  /**
-    * 构造一个地理坐标对象
-    * @param lng 经度
-    * @param lat 纬度
-    * @param noAutofix 是否自动修正
-    */
-  def this(lng: Double, lat: Double) = this()
-  def this(lng: Double, lat: Double, noAutofix: Boolean) = this()
+trait LngLat extends js.Object {
   // internal
   def add(lnglat: LngLat): LngLat = js.native
   def add(lnglat: LngLat, noAutofix: Boolean): LngLat = js.native

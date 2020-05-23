@@ -22,9 +22,13 @@ trait ListUserPoolClientsRequest extends js.Object {
 
 object ListUserPoolClientsRequest {
   @scala.inline
-  def apply(UserPoolId: UserPoolIdType, MaxResults: Int | Double = null, NextToken: PaginationKey = null): ListUserPoolClientsRequest = {
+  def apply(
+    UserPoolId: UserPoolIdType,
+    MaxResults: js.UndefOr[QueryLimit] = js.undefined,
+    NextToken: PaginationKey = null
+  ): ListUserPoolClientsRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserPoolClientsRequest]
   }

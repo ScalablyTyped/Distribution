@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesHeatmap
 
-import typings.echarts.AnonBorderType
-import typings.echarts.AnonDistance
-import typings.echarts.AnonItemStyleAnonBorderTypeLabelAnonDistance
+import typings.echarts.anon.BorderType
+import typings.echarts.anon.Distance
+import typings.echarts.anon.ItemStyleBorderTypeLabelDistance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-heatmap.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonItemStyleAnonBorderTypeLabelAnonDistance] = js.undefined
+  var emphasis: js.UndefOr[ItemStyleBorderTypeLabelDistance] = js.undefined
   /**
     * Style of a single data point. It is valid with
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -20,7 +20,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
   /**
     * It is valid with
     * [coordinateSystem](https://echarts.apache.org/en/option.html#series-heatmap.coordinateSystem)
@@ -29,7 +29,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-heatmap.data.label
     */
-  var label: js.UndefOr[AnonDistance] = js.undefined
+  var label: js.UndefOr[Distance] = js.undefined
   /**
     * Name of data item.
     *
@@ -49,9 +49,9 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: AnonItemStyleAnonBorderTypeLabelAnonDistance = null,
-    itemStyle: AnonBorderType = null,
-    label: AnonDistance = null,
+    emphasis: ItemStyleBorderTypeLabelDistance = null,
+    itemStyle: BorderType = null,
+    label: Distance = null,
     name: String = null,
     value: js.Array[_] = null
   ): DataObject = {

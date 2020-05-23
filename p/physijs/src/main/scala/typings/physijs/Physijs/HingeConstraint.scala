@@ -1,20 +1,25 @@
 package typings.physijs.Physijs
 
-import typings.three.mod.Object3D
-import typings.three.mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Physijs.HingeConstraint")
-@js.native
-class HingeConstraint protected () extends Constraint {
-  def this(objecta: Object3D, objectb: Object3D, position: Vector3) = this()
-  def this(objecta: Object3D, objectb: Object3D, position: Vector3, axis: Vector3) = this()
-  def disableMotor(): Unit = js.native
-  def enableAngularMotor(velocity: Double, acceleration: Double): Unit = js.native
-  /* CompleteClass */
-  override def getDefinition(): js.Any = js.native
-  def setLimits(low: Double, high: Double, bias_factor: Double, relaxation_factor: Double): Unit = js.native
+trait HingeConstraint extends Constraint {
+  def disableMotor(): Unit
+  def enableAngularMotor(velocity: Double, acceleration: Double): Unit
+  def setLimits(low: Double, high: Double, bias_factor: Double, relaxation_factor: Double): Unit
+}
+
+object HingeConstraint {
+  @scala.inline
+  def apply(
+    disableMotor: () => Unit,
+    enableAngularMotor: (Double, Double) => Unit,
+    getDefinition: () => js.Any,
+    setLimits: (Double, Double, Double, Double) => Unit
+  ): HingeConstraint = {
+    val __obj = js.Dynamic.literal(disableMotor = js.Any.fromFunction0(disableMotor), enableAngularMotor = js.Any.fromFunction2(enableAngularMotor), getDefinition = js.Any.fromFunction0(getDefinition), setLimits = js.Any.fromFunction4(setLimits))
+    __obj.asInstanceOf[HingeConstraint]
+  }
 }
 

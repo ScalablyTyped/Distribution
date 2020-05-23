@@ -14,8 +14,7 @@ trait CallStreamOptions extends js.Object {
 object CallStreamOptions {
   @scala.inline
   def apply(deadline: Deadline, flags: Double, host: String, parentCall: Call = null): CallStreamOptions = {
-    val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any])
-    if (parentCall != null) __obj.updateDynamic("parentCall")(parentCall.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], parentCall = parentCall.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallStreamOptions]
   }
 }

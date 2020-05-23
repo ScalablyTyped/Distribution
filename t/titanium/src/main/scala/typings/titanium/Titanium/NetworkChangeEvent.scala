@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when network connectivity changes.
-	 */
+  * Fired when network connectivity changes.
+  */
 trait NetworkChangeEvent extends NetworkBaseEvent {
   /**
-  		 * New network type
-  		 */
+    * New network type
+    */
   var networkType: Double
   /**
-  		 * New network type as a string.
-  		 */
+    * New network type as a string.
+    */
   var networkTypeName: String
   /**
-  		 * Boolean indicating if the device is connected to the network.
-  		 */
+    * Boolean indicating if the device is connected to the network.
+    */
   var online: Boolean
   /**
-  		 * Human-readable text describing the reason for the change.
-  		 */
+    * Human-readable text describing the reason for the change.
+    */
   var reason: String
 }
 

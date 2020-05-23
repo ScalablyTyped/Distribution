@@ -39,8 +39,8 @@ object FeatureLayerApplyEditsOptions {
   ): FeatureLayerApplyEditsOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalIdUsed)) __obj.updateDynamic("globalIdUsed")(globalIdUsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(rollbackOnFailureEnabled)) __obj.updateDynamic("rollbackOnFailureEnabled")(rollbackOnFailureEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalIdUsed)) __obj.updateDynamic("globalIdUsed")(globalIdUsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollbackOnFailureEnabled)) __obj.updateDynamic("rollbackOnFailureEnabled")(rollbackOnFailureEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerApplyEditsOptions]
   }
 }

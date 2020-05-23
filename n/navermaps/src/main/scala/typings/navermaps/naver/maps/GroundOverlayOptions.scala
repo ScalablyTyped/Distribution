@@ -12,11 +12,15 @@ trait GroundOverlayOptions extends js.Object {
 
 object GroundOverlayOptions {
   @scala.inline
-  def apply(clickable: js.UndefOr[Boolean] = js.undefined, map: Map = null, opacity: Int | Double = null): GroundOverlayOptions = {
+  def apply(
+    clickable: js.UndefOr[Boolean] = js.undefined,
+    map: js.UndefOr[Null | Map] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined
+  ): GroundOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroundOverlayOptions]
   }
 }

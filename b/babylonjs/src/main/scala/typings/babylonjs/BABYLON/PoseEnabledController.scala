@@ -4,16 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PoseEnabledController")
 @js.native
-class PoseEnabledController protected ()
+trait PoseEnabledController
   extends Gamepad
      with PoseControlled {
-  /**
-    * Creates a new PoseEnabledController from a gamepad
-    * @param browserGamepad the gamepad that the PoseEnabledController should be created from
-    */
-  def this(browserGamepad: js.Any) = this()
   var _calculatedPosition: Vector3 = js.native
   var _calculatedRotation: js.Any = js.native
   var _deviceRoomPosition: js.Any = js.native
@@ -53,39 +47,14 @@ class PoseEnabledController protected ()
   @JSName("devicePosition")
   var devicePosition_PoseEnabledController: Vector3 = js.native
   /**
-    * The rotation quaternion of the device in babylon space.
-    */
-  /* CompleteClass */
-  override var deviceRotationQuaternion: Quaternion = js.native
-  /**
-    * The scale of the device to be used when translating from device space to babylon space.
-    */
-  /* CompleteClass */
-  override var deviceScaleFactor: Double = js.native
-  /**
     * If the controller is used in a webXR session
     */
   var isXR: Boolean = js.native
-  /**
-    * The position of the object in babylon space.
-    */
-  /* CompleteClass */
-  override var position: Vector3 = js.native
-  /**
-    * The raw pose coming from the device.
-    */
-  /* CompleteClass */
-  override var rawPose: Nullable[DevicePose] = js.native
   /**
     * The raw pose from the device
     */
   @JSName("rawPose")
   var rawPose_PoseEnabledController: DevicePose = js.native
-  /**
-    * The rotation quaternion of the object in babylon space.
-    */
-  /* CompleteClass */
-  override var rotationQuaternion: Quaternion = js.native
   /**
     * @hidden
     */
@@ -115,21 +84,5 @@ class PoseEnabledController protected ()
     * The mesh that is attached to the controller
     */
   def mesh: Nullable[AbstractMesh] = js.native
-  /**
-    * Updates the poseControlled values based on the input device pose.
-    * @param poseData the pose data to update the object with
-    */
-  /* CompleteClass */
-  override def updateFromDevice(poseData: DevicePose): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.PoseEnabledController")
-@js.native
-object PoseEnabledController extends js.Object {
-  /**
-    * Name of the child mesh that can be used to cast a ray from the controller
-    */
-  val POINTING_POSE: String = js.native
 }
 

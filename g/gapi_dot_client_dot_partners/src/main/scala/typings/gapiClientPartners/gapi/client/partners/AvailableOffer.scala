@@ -34,11 +34,11 @@ trait AvailableOffer extends js.Object {
 object AvailableOffer {
   @scala.inline
   def apply(
-    available: Int | Double = null,
+    available: js.UndefOr[Double] = js.undefined,
     countryOfferInfos: js.Array[CountryOfferInfo] = null,
     description: String = null,
     id: String = null,
-    maxAccountAge: Int | Double = null,
+    maxAccountAge: js.UndefOr[Double] = js.undefined,
     name: String = null,
     offerLevel: String = null,
     offerType: String = null,
@@ -48,17 +48,17 @@ object AvailableOffer {
     terms: String = null
   ): AvailableOffer = {
     val __obj = js.Dynamic.literal()
-    if (available != null) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.get.asInstanceOf[js.Any])
     if (countryOfferInfos != null) __obj.updateDynamic("countryOfferInfos")(countryOfferInfos.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxAccountAge != null) __obj.updateDynamic("maxAccountAge")(maxAccountAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAccountAge)) __obj.updateDynamic("maxAccountAge")(maxAccountAge.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (offerLevel != null) __obj.updateDynamic("offerLevel")(offerLevel.asInstanceOf[js.Any])
     if (offerType != null) __obj.updateDynamic("offerType")(offerType.asInstanceOf[js.Any])
     if (qualifiedCustomer != null) __obj.updateDynamic("qualifiedCustomer")(qualifiedCustomer.asInstanceOf[js.Any])
-    if (!js.isUndefined(qualifiedCustomersComplete)) __obj.updateDynamic("qualifiedCustomersComplete")(qualifiedCustomersComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSpecialOfferCopy)) __obj.updateDynamic("showSpecialOfferCopy")(showSpecialOfferCopy.asInstanceOf[js.Any])
+    if (!js.isUndefined(qualifiedCustomersComplete)) __obj.updateDynamic("qualifiedCustomersComplete")(qualifiedCustomersComplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSpecialOfferCopy)) __obj.updateDynamic("showSpecialOfferCopy")(showSpecialOfferCopy.get.asInstanceOf[js.Any])
     if (terms != null) __obj.updateDynamic("terms")(terms.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailableOffer]
   }

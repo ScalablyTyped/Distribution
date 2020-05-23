@@ -7,22 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait OlapFlatDataSourceOptionsMetadata
   extends /**
-	 * Option for OlapFlatDataSourceOptionsMetadata
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Optional="false" Metadata used for the creation of the cube.
-  	 */
+    * Optional="false" Metadata used for the creation of the cube.
+    */
   var cube: js.UndefOr[OlapFlatDataSourceOptionsMetadataCube] = js.undefined
 }
 
 object OlapFlatDataSourceOptionsMetadata {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for OlapFlatDataSourceOptionsMetadata
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     cube: OlapFlatDataSourceOptionsMetadataCube = null
   ): OlapFlatDataSourceOptionsMetadata = {
     val __obj = js.Dynamic.literal()

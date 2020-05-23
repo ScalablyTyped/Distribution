@@ -1,12 +1,12 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.AnonAnimationAnimationDelay
-import typings.echarts.AnonAreaColorEmphasis
-import typings.echarts.AnonBorderWidth
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonMin
-import typings.echarts.AnonPrecision
-import typings.echarts.AnonSymbolSize
+import typings.echarts.anon.AnimationAnimationDelay
+import typings.echarts.anon.AreaColorEmphasis
+import typings.echarts.anon.BorderWidth
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.Min
+import typings.echarts.anon.Precision
+import typings.echarts.anon.SymbolSize
 import typings.echarts.echarts.EChartOption.SeriesMap.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -179,7 +179,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonAreaColorEmphasis] = js.undefined
+  var itemStyle: js.UndefOr[AreaColorEmphasis] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -191,7 +191,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.label
     */
-  var label: js.UndefOr[AnonBorderWidth] = js.undefined
+  var label: js.UndefOr[BorderWidth] = js.undefined
   /**
     * `layoutCenter` and `layoutSize` provides layout strategy other
     * than `left/right/top/bottom/width/height`.
@@ -304,21 +304,21 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationAnimationDelay] = js.undefined
+  var markArea: js.UndefOr[AnimationAnimationDelay] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine
     */
-  var markLine: js.UndefOr[AnonPrecision] = js.undefined
+  var markLine: js.UndefOr[Precision] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markPoint
     */
-  var markPoint: js.UndefOr[AnonSymbolSize] = js.undefined
+  var markPoint: js.UndefOr[SymbolSize] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -375,7 +375,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.scaleLimit
     */
-  var scaleLimit: js.UndefOr[AnonMin] = js.undefined
+  var scaleLimit: js.UndefOr[Min] = js.undefined
   /**
     * Selected mode decides whether multiple selecting is supported.
     * By default, `false` is used for disabling selection.
@@ -433,7 +433,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * Distance between component and the top side of the container.
     *
@@ -503,48 +503,48 @@ trait SeriesMap_ extends js.Object {
 object SeriesMap_ {
   @scala.inline
   def apply(
-    aspectScale: Int | Double = null,
+    aspectScale: js.UndefOr[Double] = js.undefined,
     bottom: Double | String = null,
     boundingCoords: js.Array[_] = null,
     center: js.Array[_] = null,
     data: js.Array[Double | DataObject] = null,
-    datasetIndex: Int | Double = null,
-    geoIndex: Int | Double = null,
+    datasetIndex: js.UndefOr[Double] = js.undefined,
+    geoIndex: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    itemStyle: AnonAreaColorEmphasis = null,
-    label: AnonBorderWidth = null,
+    itemStyle: AreaColorEmphasis = null,
+    label: BorderWidth = null,
     layoutCenter: js.Array[_] = null,
     layoutSize: Double | String = null,
     left: Double | String = null,
     map: String = null,
     mapValueCalculation: String = null,
-    markArea: AnonAnimationAnimationDelay = null,
-    markLine: AnonPrecision = null,
-    markPoint: AnonSymbolSize = null,
+    markArea: AnimationAnimationDelay = null,
+    markLine: Precision = null,
+    markPoint: SymbolSize = null,
     name: String = null,
     nameMap: js.Object = null,
     right: Double | String = null,
     roam: Boolean | String = null,
-    scaleLimit: AnonMin = null,
+    scaleLimit: Min = null,
     selectedMode: Boolean | String = null,
     seriesLayoutBy: String = null,
     showLegendSymbol: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     top: Double | String = null,
     `type`: String = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null,
-    zoom: Int | Double = null
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined,
+    zoom: js.UndefOr[Double] = js.undefined
   ): SeriesMap_ = {
     val __obj = js.Dynamic.literal()
-    if (aspectScale != null) __obj.updateDynamic("aspectScale")(aspectScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspectScale)) __obj.updateDynamic("aspectScale")(aspectScale.get.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (boundingCoords != null) __obj.updateDynamic("boundingCoords")(boundingCoords.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
-    if (geoIndex != null) __obj.updateDynamic("geoIndex")(geoIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(datasetIndex)) __obj.updateDynamic("datasetIndex")(datasetIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(geoIndex)) __obj.updateDynamic("geoIndex")(geoIndex.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
@@ -563,14 +563,14 @@ object SeriesMap_ {
     if (scaleLimit != null) __obj.updateDynamic("scaleLimit")(scaleLimit.asInstanceOf[js.Any])
     if (selectedMode != null) __obj.updateDynamic("selectedMode")(selectedMode.asInstanceOf[js.Any])
     if (seriesLayoutBy != null) __obj.updateDynamic("seriesLayoutBy")(seriesLayoutBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLegendSymbol)) __obj.updateDynamic("showLegendSymbol")(showLegendSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLegendSymbol)) __obj.updateDynamic("showLegendSymbol")(showLegendSymbol.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesMap_]
   }
 }

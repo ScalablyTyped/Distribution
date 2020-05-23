@@ -1,8 +1,8 @@
 package typings.coinbaseCommerceNode.mod
 
-import typings.coinbaseCommerceNode.AnonBlock
-import typings.coinbaseCommerceNode.AnonContext
-import typings.coinbaseCommerceNode.PartialRecordCryptoNamest
+import typings.coinbaseCommerceNode.anon.Block
+import typings.coinbaseCommerceNode.anon.Context
+import typings.coinbaseCommerceNode.anon.PartialRecordCryptoNamest
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.charge
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonconfirmed
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColoncreated
@@ -83,7 +83,7 @@ object resources extends js.Object {
       * Array of charge payment objects.
       */
     /* CompleteClass */
-    override var payments: js.Array[AnonBlock] = js.native
+    override var payments: js.Array[Block] = js.native
     /**
       * Charge price information object.
       */
@@ -103,7 +103,7 @@ object resources extends js.Object {
       * Array of status update objects.
       */
     /* CompleteClass */
-    override var timeline: js.Array[AnonContext] = js.native
+    override var timeline: js.Array[Context] = js.native
   }
   
   /**

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("algebra.js", "Expression")
 @js.native
 class Expression ()
-  extends typings.algebraJs.mod.algebra.js.Expression {
+  extends typings.algebraJs.mod.algebra.js_.Expression {
   def this(variable: Union) = this()
 }
 

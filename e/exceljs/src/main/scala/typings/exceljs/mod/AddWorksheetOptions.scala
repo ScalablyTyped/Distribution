@@ -1,7 +1,7 @@
 package typings.exceljs.mod
 
-import typings.exceljs.PartialPageSetup
-import typings.exceljs.PartialWorksheetPropertie
+import typings.exceljs.anon.PartialPageSetup
+import typings.exceljs.anon.PartialWorksheetPropertie
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

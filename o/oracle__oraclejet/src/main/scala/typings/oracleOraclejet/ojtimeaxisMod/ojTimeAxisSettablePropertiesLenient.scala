@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojtimeaxisMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonLabelAndValue
+import typings.oracleOraclejet.anon.LabelAndValue
 import typings.oracleOraclejet.ojtimeaxisMod.ojTimeAxis.Converters
 import typings.oracleOraclejet.ojvalidationBaseMod.Converter
 import typings.oracleOraclejet.oracleOraclejetStrings.days
@@ -26,19 +26,19 @@ trait ojTimeAxisSettablePropertiesLenient
   var scale: js.UndefOr[seconds | minutes | hours | days | weeks | months | quarters | years] = js.undefined
   var start: js.UndefOr[String] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonLabelAndValue] = js.undefined
+  var translations: js.UndefOr[LabelAndValue] = js.undefined
 }
 
 object ojTimeAxisSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     converter: Converters | Converter[String] = null,
     end: String = null,
     scale: seconds | minutes | hours | days | weeks | months | quarters | years = null,
     start: String = null,
     trackResize: on | off = null,
-    translations: AnonLabelAndValue = null
+    translations: LabelAndValue = null
   ): ojTimeAxisSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

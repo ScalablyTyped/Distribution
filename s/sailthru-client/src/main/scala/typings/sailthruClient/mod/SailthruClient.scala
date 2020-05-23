@@ -1,6 +1,6 @@
 package typings.sailthruClient.mod
 
-import typings.sailthruClient.AnonLimit
+import typings.sailthruClient.anon.Limit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -104,7 +104,7 @@ trait SailthruClient extends js.Object {
     * @param action API action to get rate limit information
     * @param method API method to get rate limit information
     */
-  def getLastRateLimitInfo(action: String, method: String): AnonLimit = js.native
+  def getLastRateLimitInfo(action: String, method: String): Limit = js.native
   /**
     * Return a list of all the lists in your account.
     * @param callback a standard callback function which will be invoked after the API server responds

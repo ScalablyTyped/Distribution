@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +9,11 @@ sealed trait WeekNumber extends js.Object
 
 /**
   * Specifies the week of the month.
-  * 
+  *
   * [Api set: Mailbox 1.7]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.WeekNumber")
@@ -49,23 +48,6 @@ object WeekNumber extends js.Object {
     */
   @js.native
   sealed trait Third extends WeekNumber
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[WeekNumber with String] = js.native
-  /* "first" */ @js.native
-  object First extends TopLevel[First with String]
-  
-  /* "fourth" */ @js.native
-  object Fourth extends TopLevel[Fourth with String]
-  
-  /* "last" */ @js.native
-  object Last extends TopLevel[Last with String]
-  
-  /* "second" */ @js.native
-  object Second extends TopLevel[Second with String]
-  
-  /* "third" */ @js.native
-  object Third extends TopLevel[Third with String]
   
 }
 

@@ -67,7 +67,7 @@ object PutIntentRequest {
     checksum: String = null,
     conclusionStatement: Statement = null,
     confirmationPrompt: Prompt = null,
-    createVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    createVersion: js.UndefOr[Boolean] = js.undefined,
     description: Description = null,
     dialogCodeHook: CodeHook = null,
     followUpPrompt: FollowUpPrompt = null,
@@ -81,7 +81,7 @@ object PutIntentRequest {
     if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     if (conclusionStatement != null) __obj.updateDynamic("conclusionStatement")(conclusionStatement.asInstanceOf[js.Any])
     if (confirmationPrompt != null) __obj.updateDynamic("confirmationPrompt")(confirmationPrompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dialogCodeHook != null) __obj.updateDynamic("dialogCodeHook")(dialogCodeHook.asInstanceOf[js.Any])
     if (followUpPrompt != null) __obj.updateDynamic("followUpPrompt")(followUpPrompt.asInstanceOf[js.Any])

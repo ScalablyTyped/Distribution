@@ -1,7 +1,7 @@
 
 # Scala.js typings for chromedriver
 
-Typings are for version 2.38
+Typings are for version 81.0
 
 ## Library description:
 ChromeDriver for Selenium

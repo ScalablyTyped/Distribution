@@ -1,6 +1,7 @@
 package typings.firebaseInstallations
 
 import typings.firebaseAppTypes.mod.FirebaseApp
+import typings.firebaseInstallations.anon.PartialAppConfig
 import typings.firebaseInstallations.appConfigMod.AppConfig
 import typings.firebaseInstallations.firebaseDependenciesMod.FirebaseDependencies
 import scala.scalajs.js

@@ -20,11 +20,11 @@ object ModifyCertificatesMessage {
   @scala.inline
   def apply(
     CertificateIdentifier: String = null,
-    RemoveCustomerOverride: js.UndefOr[scala.Boolean] = js.undefined
+    RemoveCustomerOverride: js.UndefOr[BooleanOptional] = js.undefined
   ): ModifyCertificatesMessage = {
     val __obj = js.Dynamic.literal()
     if (CertificateIdentifier != null) __obj.updateDynamic("CertificateIdentifier")(CertificateIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemoveCustomerOverride)) __obj.updateDynamic("RemoveCustomerOverride")(RemoveCustomerOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(RemoveCustomerOverride)) __obj.updateDynamic("RemoveCustomerOverride")(RemoveCustomerOverride.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCertificatesMessage]
   }
 }

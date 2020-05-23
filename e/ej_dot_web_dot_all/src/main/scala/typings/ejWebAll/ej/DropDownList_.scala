@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.DropDownList")
 @js.native
-class DropDownList_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.DropDownList.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.DropDownList.Model) = this()
+trait DropDownList_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.DropDownList.Model = js.native
   @JSName("model")
   var model_DropDownList_ : typings.ejWebAll.ej.DropDownList.Model = js.native

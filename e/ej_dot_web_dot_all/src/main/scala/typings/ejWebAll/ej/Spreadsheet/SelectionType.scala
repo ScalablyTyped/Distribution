@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object SelectionType extends js.Object {
   ///To select only Row in Spreadsheet.
   @js.native
   sealed trait Row extends SelectionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SelectionType with Double] = js.native
-  /* 0 */ @js.native
-  object Column extends TopLevel[Column with Double]
-  
-  /* 2 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 1 */ @js.native
-  object Row extends TopLevel[Row with Double]
   
 }
 

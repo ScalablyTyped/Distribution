@@ -61,9 +61,9 @@ object Fulfillment {
   def apply(
     admin_graphql_api_id: String = null,
     created_at: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     line_items: js.Array[LineItem] = null,
-    order_id: Int | Double = null,
+    order_id: js.UndefOr[Double] = js.undefined,
     receipt: js.Any = null,
     status: String = null,
     tracking_company: String = null,
@@ -76,9 +76,9 @@ object Fulfillment {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (line_items != null) __obj.updateDynamic("line_items")(line_items.asInstanceOf[js.Any])
-    if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(order_id)) __obj.updateDynamic("order_id")(order_id.get.asInstanceOf[js.Any])
     if (receipt != null) __obj.updateDynamic("receipt")(receipt.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (tracking_company != null) __obj.updateDynamic("tracking_company")(tracking_company.asInstanceOf[js.Any])

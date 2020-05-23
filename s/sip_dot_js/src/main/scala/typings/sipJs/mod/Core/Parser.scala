@@ -1,6 +1,6 @@
 package typings.sipJs.mod.Core
 
-import typings.sipJs.AnonError
+import typings.sipJs.anon.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,13 +14,13 @@ object Parser extends js.Object {
     data: js.Any,
     headerStart: Double,
     headerEnd: Double
-  ): Boolean | AnonError = js.native
+  ): Boolean | Error = js.native
   def parseHeader(
     message: typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage,
     data: js.Any,
     headerStart: Double,
     headerEnd: Double
-  ): Boolean | AnonError = js.native
+  ): Boolean | Error = js.native
   def parseMessage(data: String, logger: typings.sipJs.loggerMod.Logger): js.UndefOr[
     typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage | typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage
   ] = js.native

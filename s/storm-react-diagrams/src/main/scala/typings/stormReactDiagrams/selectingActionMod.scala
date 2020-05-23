@@ -1,5 +1,6 @@
 package typings.stormReactDiagrams
 
+import typings.stormReactDiagrams.anon.Bottom
 import typings.stormReactDiagrams.baseActionMod.BaseAction
 import typings.stormReactDiagrams.diagramModelMod.DiagramModel
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object selectingActionMod extends js.Object {
     var mouseX2: Double = js.native
     var mouseY2: Double = js.native
     def containsElement(x: Double, y: Double, diagramModel: DiagramModel): Boolean = js.native
-    def getBoxDimensions(): AnonBottom = js.native
+    def getBoxDimensions(): Bottom = js.native
   }
   
 }

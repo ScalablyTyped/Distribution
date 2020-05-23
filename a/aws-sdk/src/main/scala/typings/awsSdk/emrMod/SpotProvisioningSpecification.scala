@@ -25,10 +25,10 @@ object SpotProvisioningSpecification {
   def apply(
     TimeoutAction: SpotProvisioningTimeoutAction,
     TimeoutDurationMinutes: WholeNumber,
-    BlockDurationMinutes: Int | Double = null
+    BlockDurationMinutes: js.UndefOr[WholeNumber] = js.undefined
   ): SpotProvisioningSpecification = {
     val __obj = js.Dynamic.literal(TimeoutAction = TimeoutAction.asInstanceOf[js.Any], TimeoutDurationMinutes = TimeoutDurationMinutes.asInstanceOf[js.Any])
-    if (BlockDurationMinutes != null) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockDurationMinutes)) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotProvisioningSpecification]
   }
 }

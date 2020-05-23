@@ -49,8 +49,8 @@ object LifecycleHook {
   def apply(
     AutoScalingGroupName: ResourceName = null,
     DefaultResult: LifecycleActionResult = null,
-    GlobalTimeout: Int | Double = null,
-    HeartbeatTimeout: Int | Double = null,
+    GlobalTimeout: js.UndefOr[GlobalTimeout] = js.undefined,
+    HeartbeatTimeout: js.UndefOr[HeartbeatTimeout] = js.undefined,
     LifecycleHookName: AsciiStringMaxLen255 = null,
     LifecycleTransition: LifecycleTransition = null,
     NotificationMetadata: XmlStringMaxLen1023 = null,
@@ -60,8 +60,8 @@ object LifecycleHook {
     val __obj = js.Dynamic.literal()
     if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
     if (DefaultResult != null) __obj.updateDynamic("DefaultResult")(DefaultResult.asInstanceOf[js.Any])
-    if (GlobalTimeout != null) __obj.updateDynamic("GlobalTimeout")(GlobalTimeout.asInstanceOf[js.Any])
-    if (HeartbeatTimeout != null) __obj.updateDynamic("HeartbeatTimeout")(HeartbeatTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(GlobalTimeout)) __obj.updateDynamic("GlobalTimeout")(GlobalTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HeartbeatTimeout)) __obj.updateDynamic("HeartbeatTimeout")(HeartbeatTimeout.get.asInstanceOf[js.Any])
     if (LifecycleHookName != null) __obj.updateDynamic("LifecycleHookName")(LifecycleHookName.asInstanceOf[js.Any])
     if (LifecycleTransition != null) __obj.updateDynamic("LifecycleTransition")(LifecycleTransition.asInstanceOf[js.Any])
     if (NotificationMetadata != null) __obj.updateDynamic("NotificationMetadata")(NotificationMetadata.asInstanceOf[js.Any])

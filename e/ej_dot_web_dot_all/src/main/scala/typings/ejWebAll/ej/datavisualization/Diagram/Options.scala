@@ -49,9 +49,9 @@ object Options {
     margin: js.Any = null,
     mode: ExportModes = null,
     multiplePage: js.UndefOr[Boolean] = js.undefined,
-    pageHeight: Int | Double = null,
+    pageHeight: js.UndefOr[Double] = js.undefined,
     pageOrientation: PageOrientations = null,
-    pageWidth: Int | Double = null,
+    pageWidth: js.UndefOr[Double] = js.undefined,
     region: Region = null,
     stretch: Stretch = null
   ): Options = {
@@ -61,10 +61,10 @@ object Options {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage.asInstanceOf[js.Any])
-    if (pageHeight != null) __obj.updateDynamic("pageHeight")(pageHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageHeight)) __obj.updateDynamic("pageHeight")(pageHeight.get.asInstanceOf[js.Any])
     if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation.asInstanceOf[js.Any])
-    if (pageWidth != null) __obj.updateDynamic("pageWidth")(pageWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageWidth)) __obj.updateDynamic("pageWidth")(pageWidth.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (stretch != null) __obj.updateDynamic("stretch")(stretch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

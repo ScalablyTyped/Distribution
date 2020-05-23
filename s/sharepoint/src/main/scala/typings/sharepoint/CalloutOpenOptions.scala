@@ -4,14 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CalloutOpenOptions")
-@js.native
-class CalloutOpenOptions () extends js.Object {
+trait CalloutOpenOptions extends js.Object {
   /** Callout will be closed on blur */
-  var closeCalloutOnBlur: Boolean = js.native
+  var closeCalloutOnBlur: Boolean
   /** HTML event name, e.g. "click" */
-  var event: String = js.native
+  var event: String
   /** Close button will be shown within the callout window */
-  var showCloseButton: Boolean = js.native
+  var showCloseButton: Boolean
+}
+
+object CalloutOpenOptions {
+  @scala.inline
+  def apply(closeCalloutOnBlur: Boolean, event: String, showCloseButton: Boolean): CalloutOpenOptions = {
+    val __obj = js.Dynamic.literal(closeCalloutOnBlur = closeCalloutOnBlur.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], showCloseButton = showCloseButton.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CalloutOpenOptions]
+  }
 }
 

@@ -23,13 +23,11 @@ object Options {
     stage: String = null,
     watch: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
     if (extraServicePath != null) __obj.updateDynamic("extraServicePath")(extraServicePath.asInstanceOf[js.Any])
     if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDeploy)) __obj.updateDynamic("noDeploy")(noDeploy.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDeploy)) __obj.updateDynamic("noDeploy")(noDeploy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

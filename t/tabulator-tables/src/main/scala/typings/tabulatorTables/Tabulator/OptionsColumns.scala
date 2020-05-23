@@ -108,7 +108,7 @@ object OptionsColumns {
     columnCalcs: Boolean | both | table | group = null,
     columnHeaderSortMulti: js.UndefOr[Boolean] = js.undefined,
     columnHeaderVertAlign: VerticalAlign = null,
-    columnMinWidth: Int | Double = null,
+    columnMinWidth: js.UndefOr[Double] = js.undefined,
     columnMoved: (/* column */ ColumnComponent, /* columns */ js.Array[_]) => Unit = null,
     columnResized: /* column */ ColumnComponent => Unit = null,
     columnTitleChanged: /* column */ ColumnComponent => Unit = null,
@@ -133,33 +133,33 @@ object OptionsColumns {
     tooltipsHeader: js.UndefOr[Boolean] = js.undefined
   ): OptionsColumns = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoColumns)) __obj.updateDynamic("autoColumns")(autoColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoColumns)) __obj.updateDynamic("autoColumns")(autoColumns.get.asInstanceOf[js.Any])
     if (columnCalcs != null) __obj.updateDynamic("columnCalcs")(columnCalcs.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnHeaderSortMulti)) __obj.updateDynamic("columnHeaderSortMulti")(columnHeaderSortMulti.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHeaderSortMulti)) __obj.updateDynamic("columnHeaderSortMulti")(columnHeaderSortMulti.get.asInstanceOf[js.Any])
     if (columnHeaderVertAlign != null) __obj.updateDynamic("columnHeaderVertAlign")(columnHeaderVertAlign.asInstanceOf[js.Any])
-    if (columnMinWidth != null) __obj.updateDynamic("columnMinWidth")(columnMinWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnMinWidth)) __obj.updateDynamic("columnMinWidth")(columnMinWidth.get.asInstanceOf[js.Any])
     if (columnMoved != null) __obj.updateDynamic("columnMoved")(js.Any.fromFunction2(columnMoved))
     if (columnResized != null) __obj.updateDynamic("columnResized")(js.Any.fromFunction1(columnResized))
     if (columnTitleChanged != null) __obj.updateDynamic("columnTitleChanged")(js.Any.fromFunction1(columnTitleChanged))
     if (columnVisibilityChanged != null) __obj.updateDynamic("columnVisibilityChanged")(js.Any.fromFunction2(columnVisibilityChanged))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerSort)) __obj.updateDynamic("headerSort")(headerSort.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerSortTristate)) __obj.updateDynamic("headerSortTristate")(headerSortTristate.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerVisible)) __obj.updateDynamic("headerVisible")(headerVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerSort)) __obj.updateDynamic("headerSort")(headerSort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerSortTristate)) __obj.updateDynamic("headerSortTristate")(headerSortTristate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerVisible)) __obj.updateDynamic("headerVisible")(headerVisible.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (!js.isUndefined(layoutColumnsOnNewData)) __obj.updateDynamic("layoutColumnsOnNewData")(layoutColumnsOnNewData.asInstanceOf[js.Any])
-    if (!js.isUndefined(movableColumns)) __obj.updateDynamic("movableColumns")(movableColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(layoutColumnsOnNewData)) __obj.updateDynamic("layoutColumnsOnNewData")(layoutColumnsOnNewData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(movableColumns)) __obj.updateDynamic("movableColumns")(movableColumns.get.asInstanceOf[js.Any])
     if (nestedFieldSeparator != null) __obj.updateDynamic("nestedFieldSeparator")(nestedFieldSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
+    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.get.asInstanceOf[js.Any])
     if (resizableColumns != null) __obj.updateDynamic("resizableColumns")(resizableColumns.asInstanceOf[js.Any])
     if (responsiveLayout != null) __obj.updateDynamic("responsiveLayout")(responsiveLayout.asInstanceOf[js.Any])
     if (responsiveLayoutCollapseFormatter != null) __obj.updateDynamic("responsiveLayoutCollapseFormatter")(js.Any.fromFunction1(responsiveLayoutCollapseFormatter))
-    if (!js.isUndefined(responsiveLayoutCollapseStartOpen)) __obj.updateDynamic("responsiveLayoutCollapseStartOpen")(responsiveLayoutCollapseStartOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsiveLayoutCollapseUseFormatters)) __obj.updateDynamic("responsiveLayoutCollapseUseFormatters")(responsiveLayoutCollapseUseFormatters.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollToColumnIfVisible)) __obj.updateDynamic("scrollToColumnIfVisible")(scrollToColumnIfVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsiveLayoutCollapseStartOpen)) __obj.updateDynamic("responsiveLayoutCollapseStartOpen")(responsiveLayoutCollapseStartOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsiveLayoutCollapseUseFormatters)) __obj.updateDynamic("responsiveLayoutCollapseUseFormatters")(responsiveLayoutCollapseUseFormatters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToColumnIfVisible)) __obj.updateDynamic("scrollToColumnIfVisible")(scrollToColumnIfVisible.get.asInstanceOf[js.Any])
     if (scrollToColumnPosition != null) __obj.updateDynamic("scrollToColumnPosition")(scrollToColumnPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipsHeader)) __obj.updateDynamic("tooltipsHeader")(tooltipsHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipsHeader)) __obj.updateDynamic("tooltipsHeader")(tooltipsHeader.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsColumns]
   }
 }

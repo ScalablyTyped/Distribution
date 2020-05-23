@@ -122,8 +122,8 @@ object KMSConfiguration {
     endpointProvider: js.Any = null,
     handler: /* context */ HandlerExecutionContext => FinalizeHandler[js.Object, _, Blob] = null,
     httpHandler: HttpHandler[Blob, HttpOptions] = null,
-    maxRedirects: Int | Double = null,
-    maxRetries: Int | Double = null,
+    maxRedirects: js.UndefOr[Double] = js.undefined,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     profile: String = null,
     retryDecider: /* error */ SdkError => Boolean = null,
     sha256: HashConstructor = null,
@@ -143,14 +143,14 @@ object KMSConfiguration {
     if (endpointProvider != null) __obj.updateDynamic("endpointProvider")(endpointProvider.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
     if (httpHandler != null) __obj.updateDynamic("httpHandler")(httpHandler.asInstanceOf[js.Any])
-    if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRedirects)) __obj.updateDynamic("maxRedirects")(maxRedirects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     if (retryDecider != null) __obj.updateDynamic("retryDecider")(js.Any.fromFunction1(retryDecider))
     if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
     if (signer != null) __obj.updateDynamic("signer")(signer.asInstanceOf[js.Any])
     if (signingName != null) __obj.updateDynamic("signingName")(signingName.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslEnabled)) __obj.updateDynamic("sslEnabled")(sslEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslEnabled)) __obj.updateDynamic("sslEnabled")(sslEnabled.get.asInstanceOf[js.Any])
     if (streamCollector != null) __obj.updateDynamic("streamCollector")(js.Any.fromFunction1(streamCollector))
     if (urlParser != null) __obj.updateDynamic("urlParser")(js.Any.fromFunction1(urlParser))
     if (utf8Decoder != null) __obj.updateDynamic("utf8Decoder")(js.Any.fromFunction1(utf8Decoder))

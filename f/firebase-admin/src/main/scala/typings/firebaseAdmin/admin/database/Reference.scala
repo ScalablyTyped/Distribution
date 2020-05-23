@@ -1,6 +1,6 @@
 package typings.firebaseAdmin.admin.database
 
-import typings.firebaseAdmin.AnonCommitted
+import typings.firebaseAdmin.anon.Committed
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -66,6 +66,7 @@ trait Reference extends Query {
     * ```
     */
   var parent: Reference | Null = js.native
+  /** @deprecated Removed in next major release to match Web SDK typings. */
   var path: String = js.native
   /**
     * The root `Reference` of the Database.
@@ -376,16 +377,16 @@ trait Reference extends Query {
     * @return Returns a Promise that can optionally be used instead of the `onComplete`
     *   callback to handle success and failure.
     */
-  def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[AnonCommitted] = js.native
+  def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[Committed] = js.native
   def transaction(
     transactionUpdate: js.Function1[/* a */ js.Any, _],
     onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, _]
-  ): js.Promise[AnonCommitted] = js.native
+  ): js.Promise[Committed] = js.native
   def transaction(
     transactionUpdate: js.Function1[/* a */ js.Any, _],
     onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, _],
     applyLocally: Boolean
-  ): js.Promise[AnonCommitted] = js.native
+  ): js.Promise[Committed] = js.native
   /**
     * Writes multiple values to the Database at once.
     *

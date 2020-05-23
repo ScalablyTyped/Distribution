@@ -60,7 +60,7 @@ object Backup {
     DirectoryInformation: ActiveDirectoryBackupAttributes = null,
     FailureDetails: BackupFailureDetails = null,
     KmsKeyId: KmsKeyId = null,
-    ProgressPercent: Int | Double = null,
+    ProgressPercent: js.UndefOr[ProgressPercent] = js.undefined,
     ResourceARN: ResourceARN = null,
     Tags: Tags = null
   ): Backup = {
@@ -68,7 +68,7 @@ object Backup {
     if (DirectoryInformation != null) __obj.updateDynamic("DirectoryInformation")(DirectoryInformation.asInstanceOf[js.Any])
     if (FailureDetails != null) __obj.updateDynamic("FailureDetails")(FailureDetails.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (ProgressPercent != null) __obj.updateDynamic("ProgressPercent")(ProgressPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgressPercent)) __obj.updateDynamic("ProgressPercent")(ProgressPercent.get.asInstanceOf[js.Any])
     if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Backup]

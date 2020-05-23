@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,8 +55,4 @@ trait HTMLStyleElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("HTMLStyleElement")
-@js.native
-object HTMLStyleElement extends Instantiable0[HTMLStyleElement]
 

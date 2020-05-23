@@ -1,9 +1,9 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.TableSortData
 import typings.officeJsPreview.Excel.Interfaces.TableSortLoadOptions
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.PinYin
 import typings.officeJsPreview.officeJsPreviewStrings.StrokeCount
 import scala.scalajs.js
@@ -16,29 +16,28 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.2]
   */
-@JSGlobal("Excel.TableSort")
 @js.native
-class TableSort () extends ClientObject {
+trait TableSort extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableSort: RequestContext = js.native
   /**
     *
-    * Represents the current conditions used to last sort the table. Read-only.
+    * Specifies the current conditions used to last sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   val fields: js.Array[SortField] = js.native
   /**
     *
-    * Represents whether the casing impacted the last sort of the table. Read-only.
+    * Specifies if the casing impacts the last sort of the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   val matchCase: Boolean = js.native
   /**
     *
-    * Represents Chinese character ordering method last used to sort the table. Read-only.
+    * Represents Chinese character ordering method last used to sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -75,7 +74,7 @@ class TableSort () extends ClientObject {
     */
   def load(): TableSort = js.native
   def load(options: TableSortLoadOptions): TableSort = js.native
-  def load(propertyNamesAndPaths: AnonExpand): TableSort = js.native
+  def load(propertyNamesAndPaths: Expand): TableSort = js.native
   def load(propertyNames: String): TableSort = js.native
   def load(propertyNames: js.Array[String]): TableSort = js.native
   /**

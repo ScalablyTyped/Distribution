@@ -25,11 +25,11 @@ object AssociatePhoneNumbersWithVoiceConnectorRequest {
   def apply(
     VoiceConnectorId: NonEmptyString,
     E164PhoneNumbers: E164PhoneNumberList = null,
-    ForceAssociate: js.UndefOr[scala.Boolean] = js.undefined
+    ForceAssociate: js.UndefOr[NullableBoolean] = js.undefined
   ): AssociatePhoneNumbersWithVoiceConnectorRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
     if (E164PhoneNumbers != null) __obj.updateDynamic("E164PhoneNumbers")(E164PhoneNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceAssociate)) __obj.updateDynamic("ForceAssociate")(ForceAssociate.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceAssociate)) __obj.updateDynamic("ForceAssociate")(ForceAssociate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociatePhoneNumbersWithVoiceConnectorRequest]
   }
 }

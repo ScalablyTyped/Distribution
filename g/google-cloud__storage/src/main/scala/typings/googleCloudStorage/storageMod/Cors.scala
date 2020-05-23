@@ -14,13 +14,13 @@ trait Cors extends js.Object {
 object Cors {
   @scala.inline
   def apply(
-    maxAgeSeconds: Int | Double = null,
+    maxAgeSeconds: js.UndefOr[Double] = js.undefined,
     method: js.Array[String] = null,
     origin: js.Array[String] = null,
     responseHeader: js.Array[String] = null
   ): Cors = {
     val __obj = js.Dynamic.literal()
-    if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAgeSeconds)) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (responseHeader != null) __obj.updateDynamic("responseHeader")(responseHeader.asInstanceOf[js.Any])

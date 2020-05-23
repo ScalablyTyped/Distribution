@@ -1,6 +1,6 @@
 package typings.baseui.menuMod
 
-import typings.baseui.AnonEventItem
+import typings.baseui.anon.EventItem
 import typings.baseui.baseuiStrings.click
 import typings.baseui.baseuiStrings.focus
 import typings.baseui.baseuiStrings.mouseEnter
@@ -40,9 +40,9 @@ object StatefulContainerProps {
     getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => RenderItemProps = null,
     initialState: StatefulContainerState = null,
     onActiveDescendantChange: /* id */ js.UndefOr[String] => Unit = null,
-    onItemSelect: /* args */ AnonEventItem => js.Any = null,
+    onItemSelect: /* args */ EventItem => js.Any = null,
     removeMenuFromNesting: /* ref */ Ref[HTMLElement] => Unit = null,
-    rootRef: Ref[_] = null,
+    rootRef: js.UndefOr[Null | Ref[_]] = js.undefined,
     stateReducer: (/* changeType */ moveDown | moveUp | reset | click | focus | mouseEnter, /* changes */ StatefulContainerState, /* currentState */ StatefulContainerState) => StatefulContainerState = null
   ): StatefulContainerProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
@@ -55,7 +55,7 @@ object StatefulContainerProps {
     if (onActiveDescendantChange != null) __obj.updateDynamic("onActiveDescendantChange")(js.Any.fromFunction1(onActiveDescendantChange))
     if (onItemSelect != null) __obj.updateDynamic("onItemSelect")(js.Any.fromFunction1(onItemSelect))
     if (removeMenuFromNesting != null) __obj.updateDynamic("removeMenuFromNesting")(js.Any.fromFunction1(removeMenuFromNesting))
-    if (rootRef != null) __obj.updateDynamic("rootRef")(rootRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootRef)) __obj.updateDynamic("rootRef")(rootRef.asInstanceOf[js.Any])
     if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3(stateReducer))
     __obj.asInstanceOf[StatefulContainerProps]
   }

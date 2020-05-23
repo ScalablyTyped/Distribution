@@ -1,7 +1,7 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonEndValue
-import typings.devextreme.AnonStart
+import typings.devextreme.anon.EndValue
+import typings.devextreme.anon.Start
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -36,7 +36,7 @@ trait dxLinearGaugeRangeContainer extends BaseGaugeRangeContainer {
   /** @name dxLinearGauge.Options.rangeContainer.verticalOrientation */
   var verticalOrientation: js.UndefOr[bottom | center | top] = js.undefined
   /** @name dxLinearGauge.Options.rangeContainer.width */
-  var width: js.UndefOr[AnonStart | Double] = js.undefined
+  var width: js.UndefOr[Start | Double] = js.undefined
 }
 
 object dxLinearGaugeRangeContainer {
@@ -44,17 +44,17 @@ object dxLinearGaugeRangeContainer {
   def apply(
     backgroundColor: String = null,
     horizontalOrientation: center | left | right = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
     paletteExtensionMode: alternate | blend | extrapolate = null,
-    ranges: js.Array[AnonEndValue] = null,
+    ranges: js.Array[EndValue] = null,
     verticalOrientation: bottom | center | top = null,
-    width: AnonStart | Double = null
+    width: Start | Double = null
   ): dxLinearGaugeRangeContainer = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (horizontalOrientation != null) __obj.updateDynamic("horizontalOrientation")(horizontalOrientation.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
     if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])

@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.microflowsMod.microflows
 
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
@@ -27,6 +28,15 @@ class SynchronizeAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FSynchronizeAction: IModel = js.native
+  /**
+    * In version 8.10.0: introduced
+    */
+  def `type`: SynchronizationType = js.native
+  def `type`(newValue: SynchronizationType): js.Any = js.native
+  /**
+    * In version 8.10.0: introduced
+    */
+  def variableNames: IList[String] = js.native
 }
 
 /* static members */

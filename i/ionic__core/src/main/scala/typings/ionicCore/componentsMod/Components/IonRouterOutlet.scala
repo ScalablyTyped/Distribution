@@ -32,11 +32,9 @@ trait IonRouterOutlet extends js.Object {
   var mode: ios | md = js.native
   var swipeHandler: js.UndefOr[SwipeGestureHandler] = js.native
   def commit(enteringEl: HTMLElement): js.Promise[Boolean] = js.native
-  def commit(enteringEl: HTMLElement, leavingEl: js.UndefOr[scala.Nothing], opts: RouterOutletOptions): js.Promise[Boolean] = js.native
   def commit(enteringEl: HTMLElement, leavingEl: HTMLElement): js.Promise[Boolean] = js.native
   def commit(enteringEl: HTMLElement, leavingEl: HTMLElement, opts: RouterOutletOptions): js.Promise[Boolean] = js.native
   def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
-  def setRouteId(id: String, params: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[RouteWrite] = js.native
-  def setRouteId(id: String, params: ComponentProps[Null], direction: RouterDirection): js.Promise[RouteWrite] = js.native
+  def setRouteId(id: String, params: js.UndefOr[ComponentProps[Null]], direction: RouterDirection): js.Promise[RouteWrite] = js.native
 }
 

@@ -1,6 +1,7 @@
 package typings.phantomjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.phantomjs.anon.Architecture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait System extends js.Object {
   var args: js.Array[String]
   var env: StringDictionary[String]
-  var os: AnonArchitecture
+  var os: Architecture
   var pid: Double
   var platform: String
 }
@@ -18,7 +19,7 @@ object System {
   def apply(
     args: js.Array[String],
     env: StringDictionary[String],
-    os: AnonArchitecture,
+    os: Architecture,
     pid: Double,
     platform: String
   ): System = {

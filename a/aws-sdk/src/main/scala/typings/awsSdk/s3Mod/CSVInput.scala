@@ -39,7 +39,7 @@ trait CSVInput extends js.Object {
 object CSVInput {
   @scala.inline
   def apply(
-    AllowQuotedRecordDelimiter: js.UndefOr[Boolean] = js.undefined,
+    AllowQuotedRecordDelimiter: js.UndefOr[AllowQuotedRecordDelimiter] = js.undefined,
     Comments: Comments = null,
     FieldDelimiter: FieldDelimiter = null,
     FileHeaderInfo: FileHeaderInfo = null,
@@ -48,7 +48,7 @@ object CSVInput {
     RecordDelimiter: RecordDelimiter = null
   ): CSVInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowQuotedRecordDelimiter)) __obj.updateDynamic("AllowQuotedRecordDelimiter")(AllowQuotedRecordDelimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowQuotedRecordDelimiter)) __obj.updateDynamic("AllowQuotedRecordDelimiter")(AllowQuotedRecordDelimiter.get.asInstanceOf[js.Any])
     if (Comments != null) __obj.updateDynamic("Comments")(Comments.asInstanceOf[js.Any])
     if (FieldDelimiter != null) __obj.updateDynamic("FieldDelimiter")(FieldDelimiter.asInstanceOf[js.Any])
     if (FileHeaderInfo != null) __obj.updateDynamic("FileHeaderInfo")(FileHeaderInfo.asInstanceOf[js.Any])

@@ -21,9 +21,9 @@ trait IonRadioGroup extends js.Object {
 
 object IonRadioGroup {
   @scala.inline
-  def apply(allowEmptySelection: Boolean, name: String, value: js.Any = null): IonRadioGroup = {
+  def apply(allowEmptySelection: Boolean, name: String, value: js.UndefOr[Null | js.Any] = js.undefined): IonRadioGroup = {
     val __obj = js.Dynamic.literal(allowEmptySelection = allowEmptySelection.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRadioGroup]
   }
 }

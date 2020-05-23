@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.FormatCondition")
 @js.native
-class FormatCondition protected () extends js.Object {
+trait FormatCondition extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native

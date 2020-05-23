@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`map-image`
 import typings.arcgisJsApi.arcgisJsApiStrings.bmp
 import typings.arcgisJsApi.arcgisJsApiStrings.gif
@@ -17,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.ArcGISMapService because var conflicts: fullExtent. Inlined capabilities, copyright, legendEnabled, spatialReference, version */ @js.native
 trait MapImageLayer
   extends Layer
@@ -182,8 +181,4 @@ trait MapImageLayer
     */
   def loadAll(): js.Promise[Sublayer] = js.native
 }
-
-@JSGlobal("__esri.MapImageLayer")
-@js.native
-object MapImageLayer extends TopLevel[MapImageLayerConstructor]
 

@@ -5,20 +5,20 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.SFC
-import typings.react.mod._Global_.JSX.Element
-import typings.reactBigCalendar.AnonDate
-import typings.reactBigCalendar.AnonDateHeader
-import typings.reactBigCalendar.AnonEvent
+import typings.react.mod.global.JSX.Element
+import typings.reactBigCalendar.anon.Date
+import typings.reactBigCalendar.anon.DateHeader
+import typings.reactBigCalendar.anon.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Components_[TEvent /* <: js.Object */] extends js.Object {
-  var agenda: js.UndefOr[AnonDate] = js.undefined
+  var agenda: js.UndefOr[Date] = js.undefined
   var dateCellWrapper: js.UndefOr[
     SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element
   ] = js.undefined
-  var day: js.UndefOr[AnonEvent] = js.undefined
+  var day: js.UndefOr[Header] = js.undefined
   var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.undefined
   var eventContainerWrapper: js.UndefOr[
     SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element
@@ -28,7 +28,7 @@ trait Components_[TEvent /* <: js.Object */] extends js.Object {
     * component used as a header for each column in the TimeGridHeader
     */
   var header: js.UndefOr[ComponentType[HeaderProps]] = js.undefined
-  var month: js.UndefOr[AnonDateHeader] = js.undefined
+  var month: js.UndefOr[DateHeader] = js.undefined
   var resourceHeader: js.UndefOr[ComponentType[ResourceHeaderProps]] = js.undefined
   var timeGutterHeader: js.UndefOr[
     SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element
@@ -40,26 +40,26 @@ trait Components_[TEvent /* <: js.Object */] extends js.Object {
     SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element
   ] = js.undefined
   var toolbar: js.UndefOr[ComponentType[ToolbarProps]] = js.undefined
-  var week: js.UndefOr[AnonEvent] = js.undefined
+  var week: js.UndefOr[Header] = js.undefined
 }
 
 object Components_ {
   @scala.inline
-  def apply[TEvent /* <: js.Object */](
-    agenda: AnonDate = null,
+  def apply[TEvent](
+    agenda: Date = null,
     dateCellWrapper: SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element = null,
-    day: AnonEvent = null,
+    day: Header = null,
     event: ComponentType[EventProps[TEvent]] = null,
     eventContainerWrapper: SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element = null,
     eventWrapper: ComponentType[EventWrapperProps[TEvent]] = null,
     header: ComponentType[HeaderProps] = null,
-    month: AnonDateHeader = null,
+    month: DateHeader = null,
     resourceHeader: ComponentType[ResourceHeaderProps] = null,
     timeGutterHeader: SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element = null,
     timeGutterWrapper: SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element = null,
     timeSlotWrapper: SFC[js.Object] | (Component[js.Object, js.Object, _]) | (ComponentClass[js.Object, ComponentState]) | Element = null,
     toolbar: ComponentType[ToolbarProps] = null,
-    week: AnonEvent = null
+    week: Header = null
   ): Components_[TEvent] = {
     val __obj = js.Dynamic.literal()
     if (agenda != null) __obj.updateDynamic("agenda")(agenda.asInstanceOf[js.Any])

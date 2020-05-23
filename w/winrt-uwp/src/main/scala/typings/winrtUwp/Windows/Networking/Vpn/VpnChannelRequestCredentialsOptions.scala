@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object VpnChannelRequestCredentialsOptions extends js.Object {
   /** Use for single sign on. */
   @js.native
   sealed trait useForSingleSignIn extends VpnChannelRequestCredentialsOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnChannelRequestCredentialsOptions with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object retrying extends TopLevel[retrying with Double]
-  
-  /* 2 */ @js.native
-  object useForSingleSignIn extends TopLevel[useForSingleSignIn with Double]
   
 }
 

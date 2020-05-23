@@ -38,8 +38,7 @@ object HeaderContext {
     parentElement: Element,
     datasource: DataProvider[K, D] = null
   ): HeaderContext[K, D] = {
-    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
-    if (datasource != null) __obj.updateDynamic("datasource")(datasource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], datasource = datasource.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderContext[K, D]]
   }
 }

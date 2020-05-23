@@ -39,21 +39,21 @@ trait IpPermission extends js.Object {
 object IpPermission {
   @scala.inline
   def apply(
-    FromPort: Int | scala.Double = null,
+    FromPort: js.UndefOr[Integer] = js.undefined,
     IpProtocol: String = null,
     IpRanges: IpRangeList = null,
     Ipv6Ranges: Ipv6RangeList = null,
     PrefixListIds: PrefixListIdList = null,
-    ToPort: Int | scala.Double = null,
+    ToPort: js.UndefOr[Integer] = js.undefined,
     UserIdGroupPairs: UserIdGroupPairList = null
   ): IpPermission = {
     val __obj = js.Dynamic.literal()
-    if (FromPort != null) __obj.updateDynamic("FromPort")(FromPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort.get.asInstanceOf[js.Any])
     if (IpProtocol != null) __obj.updateDynamic("IpProtocol")(IpProtocol.asInstanceOf[js.Any])
     if (IpRanges != null) __obj.updateDynamic("IpRanges")(IpRanges.asInstanceOf[js.Any])
     if (Ipv6Ranges != null) __obj.updateDynamic("Ipv6Ranges")(Ipv6Ranges.asInstanceOf[js.Any])
     if (PrefixListIds != null) __obj.updateDynamic("PrefixListIds")(PrefixListIds.asInstanceOf[js.Any])
-    if (ToPort != null) __obj.updateDynamic("ToPort")(ToPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort.get.asInstanceOf[js.Any])
     if (UserIdGroupPairs != null) __obj.updateDynamic("UserIdGroupPairs")(UserIdGroupPairs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpPermission]
   }

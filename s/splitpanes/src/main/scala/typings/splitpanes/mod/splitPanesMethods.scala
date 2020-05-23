@@ -1,6 +1,6 @@
 package typings.splitpanes.mod
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +12,12 @@ trait splitPanesMethods extends js.Object {
   def findNextExpandedPane(splitterIndex: Double): js.Object
   def findPrevExpandedPane(splitterIndex: Double): js.Object
   def getCurrentDragPercentage(drag: js.Object): Double
-  def getCurrentMouseDrag(e: Event_): positionTypes
-  def onMouseDown(e: Event_, splitterIndex: Double): Unit
-  def onMouseMove(e: Event_): Unit
+  def getCurrentMouseDrag(e: Event): positionTypes
+  def onMouseDown(e: Event, splitterIndex: Double): Unit
+  def onMouseMove(e: Event): Unit
   def onMouseUp(): Unit
-  def onSplitterClick(e: Event_, splitterIndex: Double): Unit
-  def onSplitterDblClick(e: Event_, splitterIndex: Double): Unit
+  def onSplitterClick(e: Event, splitterIndex: Double): Unit
+  def onSplitterDblClick(e: Event, splitterIndex: Double): Unit
   def sumNextPanesSize(splitterIndex: Double): js.Object
   def sumPrevPanesSize(splitterIndex: Double): js.Object
 }
@@ -31,12 +31,12 @@ object splitPanesMethods {
     findNextExpandedPane: Double => js.Object,
     findPrevExpandedPane: Double => js.Object,
     getCurrentDragPercentage: js.Object => Double,
-    getCurrentMouseDrag: Event_ => positionTypes,
-    onMouseDown: (Event_, Double) => Unit,
-    onMouseMove: Event_ => Unit,
+    getCurrentMouseDrag: Event => positionTypes,
+    onMouseDown: (Event, Double) => Unit,
+    onMouseMove: Event => Unit,
     onMouseUp: () => Unit,
-    onSplitterClick: (Event_, Double) => Unit,
-    onSplitterDblClick: (Event_, Double) => Unit,
+    onSplitterClick: (Event, Double) => Unit,
+    onSplitterDblClick: (Event, Double) => Unit,
     sumNextPanesSize: Double => js.Object,
     sumPrevPanesSize: Double => js.Object
   ): splitPanesMethods = {

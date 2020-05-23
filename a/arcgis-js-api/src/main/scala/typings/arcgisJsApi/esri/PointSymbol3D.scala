@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`point-3d`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,8 +32,4 @@ trait PointSymbol3D
     */
   var verticalOffset: PointSymbol3DVerticalOffset = js.native
 }
-
-@JSGlobal("__esri.PointSymbol3D")
-@js.native
-object PointSymbol3D extends TopLevel[PointSymbol3DConstructor]
 

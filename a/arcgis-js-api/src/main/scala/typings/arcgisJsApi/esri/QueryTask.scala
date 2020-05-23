@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,8 +89,4 @@ trait QueryTask extends Task {
   def executeRelationshipQuery(relationshipQuery: RelationshipQueryProperties, requestOptions: js.Any): js.Promise[_] = js.native
   def executeRelationshipQuery(relationshipQuery: RelationshipQuery, requestOptions: js.Any): js.Promise[_] = js.native
 }
-
-@JSGlobal("__esri.QueryTask")
-@js.native
-object QueryTask extends TopLevel[QueryTaskConstructor]
 

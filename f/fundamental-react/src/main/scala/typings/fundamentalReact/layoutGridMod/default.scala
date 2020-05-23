@@ -1,7 +1,7 @@
 package typings.fundamentalReact.layoutGridMod
 
-import typings.fundamentalReact.PartialLayoutGridProps
-import typings.fundamentalReact.WeakValidationMapLayoutGr
+import typings.fundamentalReact.anon.PartialLayoutGridProps
+import typings.fundamentalReact.anon.WeakValidationMapLayoutGr
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap

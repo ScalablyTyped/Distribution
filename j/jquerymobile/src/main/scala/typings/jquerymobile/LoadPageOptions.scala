@@ -18,7 +18,7 @@ object LoadPageOptions {
   @scala.inline
   def apply(
     data: js.Any = null,
-    loadMsgDelay: Int | Double = null,
+    loadMsgDelay: js.UndefOr[Double] = js.undefined,
     pageContainer: JQuery = null,
     reloadPage: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
@@ -27,11 +27,11 @@ object LoadPageOptions {
   ): LoadPageOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (loadMsgDelay != null) __obj.updateDynamic("loadMsgDelay")(loadMsgDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadMsgDelay)) __obj.updateDynamic("loadMsgDelay")(loadMsgDelay.get.asInstanceOf[js.Any])
     if (pageContainer != null) __obj.updateDynamic("pageContainer")(pageContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadPage)) __obj.updateDynamic("reloadPage")(reloadPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadPage)) __obj.updateDynamic("reloadPage")(reloadPage.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLoadMsg)) __obj.updateDynamic("showLoadMsg")(showLoadMsg.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLoadMsg)) __obj.updateDynamic("showLoadMsg")(showLoadMsg.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadPageOptions]
   }

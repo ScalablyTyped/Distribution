@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 class ColorInformation protected () extends js.Object {
   /**
-  		 * Creates a new color range.
-  		 *
-  		 * @param range The range the color appears in. Must not be empty.
-  		 * @param color The value of the color.
-  		 * @param format The format in which this color is currently formatted.
-  		 */
+    * Creates a new color range.
+    *
+    * @param range The range the color appears in. Must not be empty.
+    * @param color The value of the color.
+    * @param format The format in which this color is currently formatted.
+    */
   def this(range: Range, color: Color) = this()
   /**
-  		 * The actual color value for this color range.
-  		 */
+    * The actual color value for this color range.
+    */
   var color: Color = js.native
   /**
-  		 * The range in the document where this color appears.
-  		 */
+    * The range in the document where this color appears.
+    */
   var range: Range = js.native
 }
 

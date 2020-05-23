@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 class Disposable protected ()
   extends typings.rxLite.Rx.Disposable {
   def this(action: js.Function0[Unit]) = this()
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 
 /* static members */

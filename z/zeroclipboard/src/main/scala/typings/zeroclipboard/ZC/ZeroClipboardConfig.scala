@@ -106,7 +106,7 @@ object ZeroClipboardConfig {
     containerClass: String = null,
     containerId: String = null,
     fixLineEndings: js.UndefOr[Boolean] = js.undefined,
-    flashLoadTimeout: Int | Double = null,
+    flashLoadTimeout: js.UndefOr[Double] = js.undefined,
     forceEnhancedClipboard: js.UndefOr[Boolean] = js.undefined,
     forceHandCursor: js.UndefOr[Boolean] = js.undefined,
     hoverClass: String = null,
@@ -114,25 +114,25 @@ object ZeroClipboardConfig {
     swfPath: String = null,
     title: String = null,
     trustedDomains: js.Array[String] = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): ZeroClipboardConfig = {
     val __obj = js.Dynamic.literal()
     if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoActivate)) __obj.updateDynamic("autoActivate")(autoActivate.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbleEvents)) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheBust)) __obj.updateDynamic("cacheBust")(cacheBust.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoActivate)) __obj.updateDynamic("autoActivate")(autoActivate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbleEvents)) __obj.updateDynamic("bubbleEvents")(bubbleEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheBust)) __obj.updateDynamic("cacheBust")(cacheBust.get.asInstanceOf[js.Any])
     if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass.asInstanceOf[js.Any])
     if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixLineEndings)) __obj.updateDynamic("fixLineEndings")(fixLineEndings.asInstanceOf[js.Any])
-    if (flashLoadTimeout != null) __obj.updateDynamic("flashLoadTimeout")(flashLoadTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceEnhancedClipboard)) __obj.updateDynamic("forceEnhancedClipboard")(forceEnhancedClipboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHandCursor)) __obj.updateDynamic("forceHandCursor")(forceHandCursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixLineEndings)) __obj.updateDynamic("fixLineEndings")(fixLineEndings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flashLoadTimeout)) __obj.updateDynamic("flashLoadTimeout")(flashLoadTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceEnhancedClipboard)) __obj.updateDynamic("forceEnhancedClipboard")(forceEnhancedClipboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceHandCursor)) __obj.updateDynamic("forceHandCursor")(forceHandCursor.get.asInstanceOf[js.Any])
     if (hoverClass != null) __obj.updateDynamic("hoverClass")(hoverClass.asInstanceOf[js.Any])
     if (swfObjectId != null) __obj.updateDynamic("swfObjectId")(swfObjectId.asInstanceOf[js.Any])
     if (swfPath != null) __obj.updateDynamic("swfPath")(swfPath.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (trustedDomains != null) __obj.updateDynamic("trustedDomains")(trustedDomains.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeroClipboardConfig]
   }
 }

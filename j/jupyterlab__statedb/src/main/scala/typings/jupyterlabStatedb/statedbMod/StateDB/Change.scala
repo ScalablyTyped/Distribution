@@ -27,9 +27,8 @@ trait Change extends js.Object {
 object Change {
   @scala.inline
   def apply(`type`: clear | remove | save, id: String = null): Change = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change]
   }
 }

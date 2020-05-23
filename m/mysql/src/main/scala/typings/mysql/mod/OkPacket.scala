@@ -36,12 +36,12 @@ object OkPacket {
     insertId: Double,
     message: String,
     protocol41: Boolean,
-    serverStatus: Int | Double = null,
-    warningCount: Int | Double = null
+    serverStatus: js.UndefOr[Double] = js.undefined,
+    warningCount: js.UndefOr[Double] = js.undefined
   ): OkPacket = {
     val __obj = js.Dynamic.literal(affectedRows = affectedRows.asInstanceOf[js.Any], changedRows = changedRows.asInstanceOf[js.Any], fieldCount = fieldCount.asInstanceOf[js.Any], insertId = insertId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], protocol41 = protocol41.asInstanceOf[js.Any])
-    if (serverStatus != null) __obj.updateDynamic("serverStatus")(serverStatus.asInstanceOf[js.Any])
-    if (warningCount != null) __obj.updateDynamic("warningCount")(warningCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverStatus)) __obj.updateDynamic("serverStatus")(serverStatus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(warningCount)) __obj.updateDynamic("warningCount")(warningCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OkPacket]
   }
 }

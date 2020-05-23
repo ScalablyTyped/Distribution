@@ -98,7 +98,7 @@ trait ConditionalFormatUpdateData extends js.Object {
     changes other conditional formats' priorities, to allow for a contiguous priority order.
     Use a negative priority to begin from the back.
     Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -160,7 +160,7 @@ object ConditionalFormatUpdateData {
     iconSetOrNullObject: IconSetConditionalFormatUpdateData = null,
     preset: PresetCriteriaConditionalFormatUpdateData = null,
     presetOrNullObject: PresetCriteriaConditionalFormatUpdateData = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     stopIfTrue: js.UndefOr[Boolean] = js.undefined,
     textComparison: TextConditionalFormatUpdateData = null,
     textComparisonOrNullObject: TextConditionalFormatUpdateData = null,
@@ -180,8 +180,8 @@ object ConditionalFormatUpdateData {
     if (iconSetOrNullObject != null) __obj.updateDynamic("iconSetOrNullObject")(iconSetOrNullObject.asInstanceOf[js.Any])
     if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
     if (presetOrNullObject != null) __obj.updateDynamic("presetOrNullObject")(presetOrNullObject.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopIfTrue)) __obj.updateDynamic("stopIfTrue")(stopIfTrue.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopIfTrue)) __obj.updateDynamic("stopIfTrue")(stopIfTrue.get.asInstanceOf[js.Any])
     if (textComparison != null) __obj.updateDynamic("textComparison")(textComparison.asInstanceOf[js.Any])
     if (textComparisonOrNullObject != null) __obj.updateDynamic("textComparisonOrNullObject")(textComparisonOrNullObject.asInstanceOf[js.Any])
     if (topBottom != null) __obj.updateDynamic("topBottom")(topBottom.asInstanceOf[js.Any])

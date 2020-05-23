@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,26 @@ trait StructureObserver
   def observeRoom(roomName: String): ScreepsReturnCode
 }
 
-@JSGlobal("StructureObserver")
-@js.native
-object StructureObserver extends TopLevel[StructureObserverConstructor]
+object StructureObserver {
+  @scala.inline
+  def apply(
+    destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
+    hits: Double,
+    hitsMax: Double,
+    id: Id[StructureObserver],
+    isActive: () => Boolean,
+    my: Boolean,
+    notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    observeRoom: String => ScreepsReturnCode,
+    pos: RoomPosition,
+    room: Room,
+    structureType: STRUCTURE_OBSERVER,
+    owner: Owner = null
+  ): StructureObserver = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), observeRoom = js.Any.fromFunction1(observeRoom), pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructureObserver]
+  }
+}
 

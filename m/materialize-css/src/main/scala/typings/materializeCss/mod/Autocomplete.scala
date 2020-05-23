@@ -1,7 +1,9 @@
 package typings.materializeCss.mod
 
+import typings.materializeCss.M.AutocompleteData
+import typings.materializeCss.M.AutocompleteOptions
 import typings.materializeCss.MElements
-import typings.materializeCss.PartialAutocompleteOption
+import typings.materializeCss.anon.PartialAutocompleteOption
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +12,51 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "Autocomplete")
 @js.native
 class Autocomplete ()
-  extends typings.materializeCss.M.Autocomplete
+  extends typings.materializeCss.M.Autocomplete {
+  /**
+    * Index of the current selected option.
+    */
+  /* CompleteClass */
+  override var activeIndex: Double = js.native
+  /**
+    * Number of matching autocomplete options.
+    */
+  /* CompleteClass */
+  override var count: Double = js.native
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  override var el: Element = js.native
+  /* CompleteClass */
+  override var isOpen: Boolean = js.native
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  override var options: AutocompleteOptions = js.native
+  /* CompleteClass */
+  override def close(): Unit = js.native
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  /* CompleteClass */
+  override def open(): Unit = js.native
+  /**
+    * Select a specific autocomplete options.
+    * @param el Element of the autocomplete option.
+    */
+  /* CompleteClass */
+  override def selectOption(el: Element): Unit = js.native
+  /**
+    * Update autocomplete options data.
+    * @param data Autocomplete options data object.
+    */
+  /* CompleteClass */
+  override def updateData(data: AutocompleteData): Unit = js.native
+}
 
 /* static members */
 @JSImport("materialize-css", "Autocomplete")

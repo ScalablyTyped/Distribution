@@ -550,8 +550,7 @@ object ConfigValues {
     `tool-barDotposition`: Top | Right | Bottom | Left,
     `tool-barDotuseTouchBar`: String,
     `tool-barDotvisible`: Boolean,
-    StringDictionary: // tslint:disable-next-line:no-any
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     editorDotcommentEnd: String = null,
     editorDotcommentStart: String = null,
     editorDotdecreaseIndentPattern: String = null,
@@ -645,11 +644,11 @@ object ConfigValues {
     __obj.updateDynamic("tool-bar.useTouchBar")(`tool-barDotuseTouchBar`.asInstanceOf[js.Any])
     __obj.updateDynamic("tool-bar.visible")(`tool-barDotvisible`.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (editorDotcommentEnd != null) __obj.updateDynamic("editor.commentEnd")(editorDotcommentEnd.asInstanceOf[js.Any])
-    if (editorDotcommentStart != null) __obj.updateDynamic("editor.commentStart")(editorDotcommentStart.asInstanceOf[js.Any])
-    if (editorDotdecreaseIndentPattern != null) __obj.updateDynamic("editor.decreaseIndentPattern")(editorDotdecreaseIndentPattern.asInstanceOf[js.Any])
-    if (editorDotfoldEndPattern != null) __obj.updateDynamic("editor.foldEndPattern")(editorDotfoldEndPattern.asInstanceOf[js.Any])
-    if (editorDotincreaseIndentPattern != null) __obj.updateDynamic("editor.increaseIndentPattern")(editorDotincreaseIndentPattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.commentEnd")(editorDotcommentEnd.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.commentStart")(editorDotcommentStart.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.decreaseIndentPattern")(editorDotdecreaseIndentPattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.foldEndPattern")(editorDotfoldEndPattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.increaseIndentPattern")(editorDotincreaseIndentPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigValues]
   }
 }

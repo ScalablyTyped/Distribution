@@ -1,8 +1,8 @@
 package typings.gapiClientReseller.gapi.client.reseller
 
-import typings.gapiClientReseller.AnonCommitmentInterval
-import typings.gapiClientReseller.AnonIsInTrial
-import typings.gapiClientReseller.AnonMinimumTransferableSeats
+import typings.gapiClientReseller.anon.CommitmentInterval
+import typings.gapiClientReseller.anon.IsInTrial
+import typings.gapiClientReseller.anon.MinimumTransferableSeats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait Subscription extends js.Object {
     * The plan property is required. In this version of the API, the G Suite plans are the flexible plan, annual commitment plan, and the 30-day free trial
     * plan. For more information about the API"s payment plans, see the API concepts.
     */
-  var plan: js.UndefOr[AnonCommitmentInterval] = js.undefined
+  var plan: js.UndefOr[CommitmentInterval] = js.undefined
   /**
     * This is an optional property. This purchase order (PO) information is for resellers to use for their company tracking usage. If a purchaseOrderId value
     * is given it appears in the API responses and shows up in the invoice. The property accepts up to 80 plain text characters.
@@ -76,9 +76,9 @@ trait Subscription extends js.Object {
     */
   var suspensionReasons: js.UndefOr[js.Array[String]] = js.undefined
   /** Read-only transfer related information for the subscription. For more information, see retrieve transferable subscriptions for a customer. */
-  var transferInfo: js.UndefOr[AnonMinimumTransferableSeats] = js.undefined
+  var transferInfo: js.UndefOr[MinimumTransferableSeats] = js.undefined
   /** The G Suite annual commitment and flexible payment plans can be in a 30-day free trial. For more information, see the API concepts. */
-  var trialSettings: js.UndefOr[AnonIsInTrial] = js.undefined
+  var trialSettings: js.UndefOr[IsInTrial] = js.undefined
 }
 
 object Subscription {
@@ -90,7 +90,7 @@ object Subscription {
     customerId: String = null,
     dealCode: String = null,
     kind: String = null,
-    plan: AnonCommitmentInterval = null,
+    plan: CommitmentInterval = null,
     purchaseOrderId: String = null,
     renewalSettings: RenewalSettings = null,
     resourceUiUrl: String = null,
@@ -100,8 +100,8 @@ object Subscription {
     status: String = null,
     subscriptionId: String = null,
     suspensionReasons: js.Array[String] = null,
-    transferInfo: AnonMinimumTransferableSeats = null,
-    trialSettings: AnonIsInTrial = null
+    transferInfo: MinimumTransferableSeats = null,
+    trialSettings: IsInTrial = null
   ): Subscription = {
     val __obj = js.Dynamic.literal()
     if (billingMethod != null) __obj.updateDynamic("billingMethod")(billingMethod.asInstanceOf[js.Any])

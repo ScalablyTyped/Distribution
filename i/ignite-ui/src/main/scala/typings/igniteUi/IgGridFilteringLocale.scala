@@ -7,353 +7,350 @@ import scala.scalajs.js.annotation._
 
 trait IgGridFilteringLocale
   extends /**
-	 * Option for IgGridFilteringLocale
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * 'Advance Button' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Advance Button' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var advancedButtonLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'After' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'After' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var afterLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * After null text that will be used for the filter editors.
-  	 *
-  	 */
+    * After null text that will be used for the filter editors.
+    *
+    */
   var afterNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'At or after' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'At or after' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var atAfterLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'At or before' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'At or before' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var atBeforeLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'At' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'At' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var atLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Before' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Before' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var beforeLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Before null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Before null text that will be used for the filter editors.
+    *
+    */
   var beforeNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Clear' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Clear' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var clearLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Contains' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Contains' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var containsLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Contains null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Contains null text that will be used for the filter editors.
+    *
+    */
   var containsNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Does not contain' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Does not contain' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var doesNotContainLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Does not contain null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Does not contain null text that will be used for the filter editors.
+    *
+    */
   var doesNotContainNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Does not Equal' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Does not Equal' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var doesNotEqualLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Does not equal null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Does not equal null text that will be used for the filter editors.
+    *
+    */
   var doesNotEqualNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * Empty null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Empty null text that will be used for the filter editors.
+    *
+    */
   var emptyNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Starts with' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Starts with' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var endsWithLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * EndsWith null text that will be used for the filter editors.
-  	 *
-  	 */
+    * EndsWith null text that will be used for the filter editors.
+    *
+    */
   var endsWithNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Equals' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Equals' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var equalsLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Equals null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Equals null text that will be used for the filter editors.
+    *
+    */
   var equalsNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'False' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'False' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var falseLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Feature chooser text when filter is shown and filter [mode](ui.iggridfiltering#options:mode) is simple.
-  	 *
-  	 */
+    * Feature chooser text when filter is shown and filter [mode](ui.iggridfiltering#options:mode) is simple.
+    *
+    */
   var featureChooserText: js.UndefOr[String] = js.undefined
   /**
-  	 * Feature chooser text when filter [mode](ui.iggridfiltering#options:mode) is advanced.
-  	 *
-  	 */
+    * Feature chooser text when filter [mode](ui.iggridfiltering#options:mode) is advanced.
+    *
+    */
   var featureChooserTextAdvancedFilter: js.UndefOr[String] = js.undefined
   /**
-  	 * Feature chooser text when filter is hidden and filter [mode](ui.iggridfiltering#options:mode) is simple.
-  	 *
-  	 */
+    * Feature chooser text when filter is hidden and filter [mode](ui.iggridfiltering#options:mode) is simple.
+    *
+    */
   var featureChooserTextHide: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the Add button label for the filtering dialog.
-  	 *
-  	 */
+    * Specifies the Add button label for the filtering dialog.
+    *
+    */
   var filterDialogAddLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the All label for the filtering dialog.
-  	 *
-  	 */
+    * Specifies the All label for the filtering dialog.
+    *
+    */
   var filterDialogAllLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the Any label for the filtering dialog.
-  	 *
-  	 */
+    * Specifies the Any label for the filtering dialog.
+    *
+    */
   var filterDialogAnyLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the dialog's Cancel button label.
-  	 *
-  	 */
+    * Specifies the dialog's Cancel button label.
+    *
+    */
   var filterDialogCancelLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the filter dialog caption label.
-  	 *
-  	 */
+    * Specifies the filter dialog caption label.
+    *
+    */
   var filterDialogCaptionLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies clear all label in the filter dialog.
-  	 *
-  	 */
+    * Specifies clear all label in the filter dialog.
+    *
+    */
   var filterDialogClearAllLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the Close label for the filtering dialog.
-  	 *
-  	 */
+    * Specifies the Close label for the filtering dialog.
+    *
+    */
   var filterDialogCloseLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the filter condition drop-down label.
-  	 *
-  	 */
+    * Specifies the filter condition drop-down label.
+    *
+    */
   var filterDialogConditionDropDownLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the filter condition label.
-  	 *
-  	 */
+    * Specifies the filter condition label.
+    *
+    */
   var filterDialogConditionLabel1: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the filter condition label.
-  	 *
-  	 */
+    * Specifies the filter condition label.
+    *
+    */
   var filterDialogConditionLabel2: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the Error label for the filtering dialog.
-  	 *
-  	 */
+    * Specifies the Error label for the filtering dialog.
+    *
+    */
   var filterDialogErrorLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the dialog's Ok button label.
-  	 *
-  	 */
+    * Specifies the dialog's Ok button label.
+    *
+    */
   var filterDialogOkLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the summary template for the matching records.
-  	 *
-  	 */
+    * Specifies the summary template for the matching records.
+    *
+    */
   var filterSummaryTemplate: js.UndefOr[String] = js.undefined
   /**
-  	 * Specifies the Filtering summary title.
-  	 *
-  	 */
+    * Specifies the Filtering summary title.
+    *
+    */
   var filterSummaryTitleLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Greater Than' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Greater Than' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var greaterThanLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Greater than null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Greater than null text that will be used for the filter editors.
+    *
+    */
   var greaterThanNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Greater Than or Equal' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Greater Than or Equal' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var greaterThanOrEqualToLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Greater than or equal to null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Greater than or equal to null text that will be used for the filter editors.
+    *
+    */
   var greaterThanOrEqualToNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Last Month' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Last Month' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var lastMonthLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Last Year' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Last Year' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var lastYearLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Less Than' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Less Than' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var lessThanLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Less than null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Less than null text that will be used for the filter editors.
+    *
+    */
   var lessThanNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Less Than or Equal' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Less Than or Equal' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var lessThanOrEqualToLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Less than or equal to null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Less than or equal to null text that will be used for the filter editors.
+    *
+    */
   var lessThanOrEqualToNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Next Month' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Next Month' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var nextMonthLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Next Year' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Next Year' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var nextYearLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'No Filter' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'No Filter' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var noFilterLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Not at' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Not at' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var notAtLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Not empty null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Not empty null text that will be used for the filter editors.
+    *
+    */
   var notEmptyNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * Not empty null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Not empty null text that will be used for the filter editors.
+    *
+    */
   var notNullNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Not On' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Not On' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var notOnLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Not on null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Not on null text that will be used for the filter editors.
+    *
+    */
   var notOnNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * Not empty null text that will be used for the filter editors.
-  	 *
-  	 */
+    * Not empty null text that will be used for the filter editors.
+    *
+    */
   var nullNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'On' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'On' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var onLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * On null text that will be used for the filter editors.
-  	 *
-  	 */
+    * On null text that will be used for the filter editors.
+    *
+    */
   var onNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Starts with' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Starts with' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var startsWithLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * StartsWith null text that will be used for the filter editors.
-  	 *
-  	 */
+    * StartsWith null text that will be used for the filter editors.
+    *
+    */
   var startsWithNullText: js.UndefOr[String] = js.undefined
   /**
-  	 * 'This Month' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'This Month' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var thisMonthLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'This Year' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'This Year' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var thisYearLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Today' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Today' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var todayLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * Custom tooltip template for the filter button, when a filter is applied.
-  	 *
-  	 */
+    * Custom tooltip template for the filter button, when a filter is applied.
+    *
+    */
   var tooltipTemplate: js.UndefOr[String] = js.undefined
   /**
-  	 * 'True' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'True' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var trueLabel: js.UndefOr[String] = js.undefined
   /**
-  	 * 'Yesterday' label that is used for the predefined filtering conditions in the filter dropdowns.
-  	 *
-  	 */
+    * 'Yesterday' label that is used for the predefined filtering conditions in the filter dropdowns.
+    *
+    */
   var yesterdayLabel: js.UndefOr[String] = js.undefined
 }
 
 object IgGridFilteringLocale {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgGridFilteringLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     advancedButtonLabel: String = null,
     afterLabel: String = null,
     afterNullText: String = null,

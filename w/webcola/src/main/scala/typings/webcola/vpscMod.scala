@@ -1,5 +1,7 @@
 package typings.webcola
 
+import typings.webcola.anon.DesiredCenter
+import typings.webcola.anon.LowerBound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +25,7 @@ object vpscMod extends js.Object {
     def findMinLM(): Constraint = js.native
     def isActiveDirectedPathBetween(u: Variable, v: Variable): Boolean = js.native
     def mergeAcross(b: Block, c: Constraint, dist: Double): Unit = js.native
-    def splitBetween(vl: Variable, vr: Variable): AnonConstraint = js.native
+    def splitBetween(vl: Variable, vr: Variable): typings.webcola.anon.Constraint = js.native
     def traverse(visit: js.Function1[/* c */ Constraint, _], acc: js.Array[_]): Unit = js.native
     def traverse(visit: js.Function1[/* c */ Constraint, _], acc: js.Array[_], v: Variable): Unit = js.native
     def traverse(visit: js.Function1[/* c */ Constraint, _], acc: js.Array[_], v: Variable, prev: Variable): Unit = js.native
@@ -101,9 +103,9 @@ object vpscMod extends js.Object {
     def visitNeighbours(prev: Variable, f: js.Function2[/* c */ Constraint, /* next */ this.type, Unit]): Unit = js.native
   }
   
-  def removeOverlapInOneDimension(spans: js.Array[AnonDesiredCenter]): AnonLowerBound = js.native
-  def removeOverlapInOneDimension(spans: js.Array[AnonDesiredCenter], lowerBound: Double): AnonLowerBound = js.native
-  def removeOverlapInOneDimension(spans: js.Array[AnonDesiredCenter], lowerBound: Double, upperBound: Double): AnonLowerBound = js.native
+  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter]): LowerBound = js.native
+  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double): LowerBound = js.native
+  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double, upperBound: Double): LowerBound = js.native
   /* static members */
   @js.native
   object Block extends js.Object {

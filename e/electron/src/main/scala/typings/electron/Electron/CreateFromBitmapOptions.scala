@@ -15,9 +15,9 @@ trait CreateFromBitmapOptions extends js.Object {
 
 object CreateFromBitmapOptions {
   @scala.inline
-  def apply(height: Double, width: Double, scaleFactor: Int | Double = null): CreateFromBitmapOptions = {
+  def apply(height: Double, width: Double, scaleFactor: js.UndefOr[Double] = js.undefined): CreateFromBitmapOptions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactor)) __obj.updateDynamic("scaleFactor")(scaleFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFromBitmapOptions]
   }
 }

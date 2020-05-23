@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ClassNameSettings {
-  type Param = (typings.semanticUiSidebar.PickImplactive | typings.semanticUiSidebar.PickImplanimating | typings.semanticUiSidebar.PickImpldimmed | typings.semanticUiSidebar.PickImplios | typings.semanticUiSidebar.PickImplpushable | typings.semanticUiSidebar.PickImplpushed | typings.semanticUiSidebar.PickImplright | typings.semanticUiSidebar.PickImpltop | typings.semanticUiSidebar.PickImplleft | typings.semanticUiSidebar.PickImplbottom | typings.semanticUiSidebar.PickImplvisible) with typings.semanticUiSidebar.PartialPickImplkeyofImplActive
+  type Param = (typings.semanticUiSidebar.anon.PickImplactive | typings.semanticUiSidebar.anon.PickImplanimating | typings.semanticUiSidebar.anon.PickImpldimmed | typings.semanticUiSidebar.anon.PickImplios | typings.semanticUiSidebar.anon.PickImplpushable | typings.semanticUiSidebar.anon.PickImplpushed | typings.semanticUiSidebar.anon.PickImplright | typings.semanticUiSidebar.anon.PickImpltop | typings.semanticUiSidebar.anon.PickImplleft | typings.semanticUiSidebar.anon.PickImplbottom | typings.semanticUiSidebar.anon.PickImplvisible) with typings.semanticUiSidebar.anon.PartialPickImplkeyofImplActive
 }

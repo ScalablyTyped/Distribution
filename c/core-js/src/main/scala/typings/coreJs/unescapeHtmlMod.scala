@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/string/unescape-html", JSImport.Namespace)
 @js.native
 object unescapeHtmlMod
-  extends TopLevel[js.Function1[/* text */ java.lang.String, java.lang.String]]
+  extends TopLevel[js.Function1[/* str */ java.lang.String, java.lang.String]]
 

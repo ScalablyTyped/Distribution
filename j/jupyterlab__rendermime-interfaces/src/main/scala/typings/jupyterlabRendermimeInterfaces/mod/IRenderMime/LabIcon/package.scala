@@ -8,5 +8,5 @@ package object LabIcon {
   /**
     * A type that can be resolved to a LabIcon instance.
     */
-  type IResolvable = java.lang.String | typings.jupyterlabRendermimeInterfaces.IIconPartialIRenderer
+  type IResolvable = java.lang.String | typings.jupyterlabRendermimeInterfaces.anon.IIconPartialIRenderer
 }

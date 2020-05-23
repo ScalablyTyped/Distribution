@@ -30,7 +30,7 @@ object RegistrationOptions {
     if (migrateOnStart != null) __obj.updateDynamic("migrateOnStart")(migrateOnStart.asInstanceOf[js.Any])
     if (migrationsDir != null) __obj.updateDynamic("migrationsDir")(migrationsDir.asInstanceOf[js.Any])
     if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
-    if (!js.isUndefined(teardownOnStop)) __obj.updateDynamic("teardownOnStop")(teardownOnStop.asInstanceOf[js.Any])
+    if (!js.isUndefined(teardownOnStop)) __obj.updateDynamic("teardownOnStop")(teardownOnStop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistrationOptions]
   }
 }

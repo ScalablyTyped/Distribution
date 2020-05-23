@@ -12,9 +12,9 @@ trait resurrectOptions extends js.Object {
 
 object resurrectOptions {
   @scala.inline
-  def apply(name: String, requestId: String, now: Int | Double = null): resurrectOptions = {
+  def apply(name: String, requestId: String, now: js.UndefOr[Double] = js.undefined): resurrectOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
-    if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
+    if (!js.isUndefined(now)) __obj.updateDynamic("now")(now.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[resurrectOptions]
   }
 }

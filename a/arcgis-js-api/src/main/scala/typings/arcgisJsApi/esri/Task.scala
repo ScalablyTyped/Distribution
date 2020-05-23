@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +19,4 @@ trait Task extends Accessor {
     */
   var url: String = js.native
 }
-
-@JSGlobal("__esri.Task")
-@js.native
-object Task extends TopLevel[TaskConstructor]
 

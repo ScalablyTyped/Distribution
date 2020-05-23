@@ -18,10 +18,10 @@ trait ChefConfiguration extends js.Object {
 
 object ChefConfiguration {
   @scala.inline
-  def apply(BerkshelfVersion: String = null, ManageBerkshelf: js.UndefOr[scala.Boolean] = js.undefined): ChefConfiguration = {
+  def apply(BerkshelfVersion: String = null, ManageBerkshelf: js.UndefOr[Boolean] = js.undefined): ChefConfiguration = {
     val __obj = js.Dynamic.literal()
     if (BerkshelfVersion != null) __obj.updateDynamic("BerkshelfVersion")(BerkshelfVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManageBerkshelf)) __obj.updateDynamic("ManageBerkshelf")(ManageBerkshelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManageBerkshelf)) __obj.updateDynamic("ManageBerkshelf")(ManageBerkshelf.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChefConfiguration]
   }
 }

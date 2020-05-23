@@ -11,10 +11,10 @@ trait JSONFormatterOptions extends js.Object {
 
 object JSONFormatterOptions {
   @scala.inline
-  def apply(change: () => Unit = null, indentation: Int | Double = null): JSONFormatterOptions = {
+  def apply(change: () => Unit = null, indentation: js.UndefOr[Double] = js.undefined): JSONFormatterOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction0(change))
-    if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentation)) __obj.updateDynamic("indentation")(indentation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONFormatterOptions]
   }
 }

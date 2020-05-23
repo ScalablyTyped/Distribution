@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartDataLabelsData
 import typings.officeJs.Excel.Interfaces.ChartDataLabelsLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartDataLabelsUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.BestFit
 import typings.officeJs.officeJsStrings.Bottom
 import typings.officeJs.officeJsStrings.Callout
@@ -30,12 +30,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartDataLabels")
 @js.native
-class ChartDataLabels () extends ClientObject {
+trait ChartDataLabels extends ClientObject {
   /**
     *
-    * Represents whether data labels automatically generate appropriate text based on context.
+    * Specifies if data labels automatically generate appropriate text based on context.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -45,14 +44,14 @@ class ChartDataLabels () extends ClientObject {
   var context_ChartDataLabels: RequestContext = js.native
   /**
     *
-    * Represents the format of chart data labels, which includes fill and font formatting. Read-only.
+    * Specifies the format of chart data labels, which includes fill and font formatting.
     *
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartDataLabelFormat = js.native
   /**
     *
-    * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
+    * Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
     This property is valid only when TextOrientation of data label is 0.
     *
     * [Api set: ExcelApi 1.8]
@@ -60,14 +59,14 @@ class ChartDataLabels () extends ClientObject {
   var horizontalAlignment: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed = js.native
   /**
     *
-    * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells
+    * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
     *
     * [Api set: ExcelApi 1.9]
     */
   var linkNumberFormat: Boolean = js.native
   /**
     *
-    * Represents the format code for data labels.
+    * Specifies the format code for data labels.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -88,42 +87,42 @@ class ChartDataLabels () extends ClientObject {
   var separator: String = js.native
   /**
     *
-    * Boolean value representing if the data label bubble size is visible or not.
+    * Specifies if the data label bubble size is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
   var showBubbleSize: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label category name is visible or not.
+    * Specifies if the data label category name is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
   var showCategoryName: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label legend key is visible or not.
+    * Specifies if the data label legend key is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
   var showLegendKey: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label percentage is visible or not.
+    * Specifies if the data label percentage is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
   var showPercentage: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label series name is visible or not.
+    * Specifies if the data label series name is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
   var showSeriesName: Boolean = js.native
   /**
     *
-    * Boolean value representing if the data label value is visible or not.
+    * Specifies if the data label value is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -150,7 +149,7 @@ class ChartDataLabels () extends ClientObject {
     */
   def load(): ChartDataLabels = js.native
   def load(options: ChartDataLabelsLoadOptions): ChartDataLabels = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartDataLabels = js.native
+  def load(propertyNamesAndPaths: Expand): ChartDataLabels = js.native
   def load(propertyNames: String): ChartDataLabels = js.native
   def load(propertyNames: js.Array[String]): ChartDataLabels = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

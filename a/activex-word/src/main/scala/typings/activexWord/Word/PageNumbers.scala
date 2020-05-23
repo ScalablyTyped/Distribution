@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.PageNumbers")
 @js.native
-class PageNumbers protected () extends js.Object {
+trait PageNumbers extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   var ChapterPageSeparator: WdSeparatorType = js.native
   val Count: Double = js.native

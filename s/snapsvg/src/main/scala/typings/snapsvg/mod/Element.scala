@@ -1,8 +1,8 @@
 package typings.snapsvg.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.snapsvg.AnonAlpha
-import typings.snapsvg.AnonAnim
+import typings.snapsvg.anon.Alpha
+import typings.snapsvg.anon.Anim
 import typings.snapsvg.snapsvgStrings.viewBox
 import typings.std.HTMLElement
 import typings.std.MouseEvent
@@ -109,7 +109,7 @@ trait Element extends js.Object {
   ): Element = js.native
   def getAlign(el: Element, way: String): String = js.native
   def getBBox(): BBox = js.native
-  def getPointAtLength(length: Double): AnonAlpha = js.native
+  def getPointAtLength(length: Double): Alpha = js.native
   def getSubpath(from: Double, to: Double): String = js.native
   def getTotalLength(): Double = js.native
   def hasClass(value: String): Boolean = js.native
@@ -128,7 +128,7 @@ trait Element extends js.Object {
     hoverOutHandler: js.Function1[/* event */ MouseEvent, Unit],
     thisArg: js.Any
   ): Element = js.native
-  def inAnim(): js.Array[AnonAnim] = js.native
+  def inAnim(): js.Array[Anim] = js.native
   def innerSVG(): String = js.native
   def insertAfter(el: Element): Element = js.native
   def insertBefore(el: Element): Element = js.native

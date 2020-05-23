@@ -20,7 +20,7 @@ object RuleFactoryOptions {
     Renderer: Renderer = null,
     classes: js.Object = null,
     generateId: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     jss: Jss = null,
     selector: String = null,
     sheet: StyleSheet[String | Double | js.Symbol] = null
@@ -29,7 +29,7 @@ object RuleFactoryOptions {
     if (Renderer != null) __obj.updateDynamic("Renderer")(Renderer.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (generateId != null) __obj.updateDynamic("generateId")(js.Any.fromFunction2(generateId))
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (jss != null) __obj.updateDynamic("jss")(jss.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (sheet != null) __obj.updateDynamic("sheet")(sheet.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object ConnectionType extends js.Object {
   
   @js.native
   sealed trait OUTBOUND extends ConnectionType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConnectionType with String] = js.native
-  /* "agent" */ @js.native
-  object AGENT extends TopLevel[AGENT with String]
-  
-  /* "inbound" */ @js.native
-  object INBOUND extends TopLevel[INBOUND with String]
-  
-  /* "monitoring" */ @js.native
-  object MONITORING extends TopLevel[MONITORING with String]
-  
-  /* "outbound" */ @js.native
-  object OUTBOUND extends TopLevel[OUTBOUND with String]
   
 }
 

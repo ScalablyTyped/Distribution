@@ -1,17 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Resources.Core
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsArray
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a collection of ResourceContext language qualifiers. */
-@JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceContextLanguagesVectorView")
 @js.native
-abstract class ResourceContextLanguagesVectorView () extends Array[String] {
+trait ResourceContextLanguagesVectorView extends Array[String] {
   /** Gets the number of ResourceContext language qualifiers in the set. */
   var size: Double = js.native
   /**
@@ -29,8 +28,8 @@ abstract class ResourceContextLanguagesVectorView () extends Array[String] {
     * Returns the ResourceContext language qualifiers that start at the specified index in the set.
     * @param startIndex The zero-based index of the start of the ResourceContext language qualifiers in the set to return.
     */
-  def getMany(startIndex: Double): AnonItemsArray = js.native
-  def indexOf(value: String, extra: js.Any*): AnonIndex = js.native
+  def getMany(startIndex: Double): ItemsArray = js.native
+  def indexOf(value: String, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: String): Double = js.native

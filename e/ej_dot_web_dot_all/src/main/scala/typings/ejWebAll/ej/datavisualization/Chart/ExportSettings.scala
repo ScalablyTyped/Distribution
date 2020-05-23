@@ -38,7 +38,7 @@ object ExportSettings {
   @scala.inline
   def apply(
     action: String = null,
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     filename: String = null,
     mode: ExportingMode | String = null,
     multipleExport: js.UndefOr[Boolean] = js.undefined,
@@ -47,10 +47,10 @@ object ExportSettings {
   ): ExportSettings = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleExport)) __obj.updateDynamic("multipleExport")(multipleExport.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleExport)) __obj.updateDynamic("multipleExport")(multipleExport.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettings]

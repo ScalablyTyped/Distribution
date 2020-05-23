@@ -38,7 +38,7 @@ object SpawnOptions {
   ): SpawnOptions = {
     val __obj = js.Dynamic.literal()
     if (directions != null) __obj.updateDynamic("directions")(directions.asInstanceOf[js.Any])
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
     if (energyStructures != null) __obj.updateDynamic("energyStructures")(energyStructures.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpawnOptions]

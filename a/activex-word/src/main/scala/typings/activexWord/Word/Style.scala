@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Style")
 @js.native
-class Style protected () extends js.Object {
+trait Style extends js.Object {
   val Application: typings.activexWord.Word.Application = js.native
   var AutomaticallyUpdate: Boolean = js.native
   var BaseStyle: js.Any = js.native

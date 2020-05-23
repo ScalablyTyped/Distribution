@@ -20,7 +20,7 @@ trait FlagIconProps extends js.Object {
   var rotate: js.UndefOr[FlagIconRotate] = js.undefined
   var size: js.UndefOr[FlagIconSize] = js.undefined
   /**
-    * 	Uses the 1x1 image if true.
+    *     Uses the 1x1 image if true.
     */
   var squared: js.UndefOr[Boolean] = js.undefined
   /**
@@ -49,7 +49,7 @@ object FlagIconProps {
     if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(squared)) __obj.updateDynamic("squared")(squared.asInstanceOf[js.Any])
+    if (!js.isUndefined(squared)) __obj.updateDynamic("squared")(squared.get.asInstanceOf[js.Any])
     if (styleName != null) __obj.updateDynamic("styleName")(styleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlagIconProps]
   }

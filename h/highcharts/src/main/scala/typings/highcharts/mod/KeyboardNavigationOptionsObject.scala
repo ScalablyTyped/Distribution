@@ -45,11 +45,11 @@ object KeyboardNavigationOptionsObject {
     wrapAround: js.UndefOr[Boolean] = js.undefined
   ): KeyboardNavigationOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (focusBorder != null) __obj.updateDynamic("focusBorder")(focusBorder.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (seriesNavigation != null) __obj.updateDynamic("seriesNavigation")(seriesNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardNavigationOptionsObject]
   }
 }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.StandardMaterialDefines")
 @js.native
-class StandardMaterialDefines ()
+trait StandardMaterialDefines
   extends MaterialDefines
      with IImageProcessingConfigurationDefines {
   var ALPHAFROMDIFFUSE: Boolean = js.native
@@ -23,14 +22,6 @@ class StandardMaterialDefines ()
   var CLIPPLANE4: Boolean = js.native
   var CLIPPLANE5: Boolean = js.native
   var CLIPPLANE6: Boolean = js.native
-  /* CompleteClass */
-  override var COLORCURVES: Boolean = js.native
-  /* CompleteClass */
-  override var COLORGRADING: Boolean = js.native
-  /* CompleteClass */
-  override var COLORGRADING3D: Boolean = js.native
-  /* CompleteClass */
-  override var CONTRAST: Boolean = js.native
   var DEPTHPREPASS: Boolean = js.native
   var DIFFUSE: Boolean = js.native
   var DIFFUSEDIRECTUV: Double = js.native
@@ -39,15 +30,9 @@ class StandardMaterialDefines ()
   var EMISSIVEASILLUMINATION: Boolean = js.native
   var EMISSIVEDIRECTUV: Double = js.native
   var EMISSIVEFRESNEL: Boolean = js.native
-  /* CompleteClass */
-  override var EXPOSURE: Boolean = js.native
   var FOG: Boolean = js.native
   var FRESNEL: Boolean = js.native
   var GLOSSINESS: Boolean = js.native
-  /* CompleteClass */
-  override var IMAGEPROCESSING: Boolean = js.native
-  /* CompleteClass */
-  override var IMAGEPROCESSINGPOSTPROCESS: Boolean = js.native
   var INSTANCES: Boolean = js.native
   var INVERTCUBICMAP: Boolean = js.native
   /**
@@ -102,19 +87,11 @@ class StandardMaterialDefines ()
   var REFRACTIONFRESNEL: Boolean = js.native
   var REFRACTIONMAP_3D: Boolean = js.native
   var ROUGHNESS: Boolean = js.native
-  /* CompleteClass */
-  override var SAMPLER3DBGRMAP: Boolean = js.native
-  /* CompleteClass */
-  override var SAMPLER3DGREENDEPTH: Boolean = js.native
   var SHADOWFLOAT: Boolean = js.native
   var SPECULAR: Boolean = js.native
   var SPECULARDIRECTUV: Double = js.native
   var SPECULAROVERALPHA: Boolean = js.native
   var SPECULARTERM: Boolean = js.native
-  /* CompleteClass */
-  override var TONEMAPPING: Boolean = js.native
-  /* CompleteClass */
-  override var TONEMAPPING_ACES: Boolean = js.native
   var TWOSIDEDLIGHTING: Boolean = js.native
   var USELIGHTMAPASSHADOWMAP: Boolean = js.native
   var USE_LOCAL_REFLECTIONMAP_CUBIC: Boolean = js.native
@@ -122,12 +99,6 @@ class StandardMaterialDefines ()
   var UV2: Boolean = js.native
   var VERTEXALPHA: Boolean = js.native
   var VERTEXCOLOR: Boolean = js.native
-  /* CompleteClass */
-  override var VIGNETTE: Boolean = js.native
-  /* CompleteClass */
-  override var VIGNETTEBLENDMODEMULTIPLY: Boolean = js.native
-  /* CompleteClass */
-  override var VIGNETTEBLENDMODEOPAQUE: Boolean = js.native
   def setReflectionMode(modeToEnable: String): Unit = js.native
 }
 

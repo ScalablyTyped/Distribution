@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccountEventArgs")
-@js.native
-class MobileBroadbandAccountEventArgs () extends IMobileBroadbandAccountEventArgs {
-  /* CompleteClass */
-  override var networkAccountId: String = js.native
+trait MobileBroadbandAccountEventArgs extends IMobileBroadbandAccountEventArgs
+
+object MobileBroadbandAccountEventArgs {
+  @scala.inline
+  def apply(networkAccountId: String): MobileBroadbandAccountEventArgs = {
+    val __obj = js.Dynamic.literal(networkAccountId = networkAccountId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MobileBroadbandAccountEventArgs]
+  }
 }
 

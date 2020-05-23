@@ -1,7 +1,6 @@
 package typings.appBuilderLib
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.appBuilderLib.appBuilderLibStrings.Slashopt
 import typings.appBuilderLib.linuxOptionsMod.LinuxTargetSpecificOptions
 import typings.appBuilderLib.linuxPackagerMod.LinuxPackager
 import typings.appBuilderLib.platformPackagerMod.IconInfo
@@ -44,6 +43,6 @@ object linuxTargetHelperMod extends js.Object {
     ): js.Promise[String] = js.native
   }
   
-  val installPrefix: Slashopt = js.native
+  val installPrefix: /* "/opt" */ String = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object EmailMessageDownloadState extends js.Object {
   /** The email message is partially downloaded. */
   @js.native
   sealed trait partiallyDownloaded extends EmailMessageDownloadState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMessageDownloadState with Double] = js.native
-  /* 2 */ @js.native
-  object downloaded extends TopLevel[downloaded with Double]
-  
-  /* 1 */ @js.native
-  object downloading extends TopLevel[downloading with Double]
-  
-  /* 3 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 0 */ @js.native
-  object partiallyDownloaded extends TopLevel[partiallyDownloaded with Double]
   
 }
 

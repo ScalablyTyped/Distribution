@@ -64,7 +64,7 @@ object DataSourceValue {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formatString != null) __obj.updateDynamic("formatString")(formatString.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField.get.asInstanceOf[js.Any])
     if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
     if (summaryType != null) __obj.updateDynamic("summaryType")(summaryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceValue]

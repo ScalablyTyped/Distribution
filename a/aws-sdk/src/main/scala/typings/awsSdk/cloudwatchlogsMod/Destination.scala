@@ -37,7 +37,7 @@ object Destination {
   def apply(
     accessPolicy: AccessPolicy = null,
     arn: Arn = null,
-    creationTime: Int | Double = null,
+    creationTime: js.UndefOr[Timestamp] = js.undefined,
     destinationName: DestinationName = null,
     roleArn: RoleArn = null,
     targetArn: TargetArn = null
@@ -45,7 +45,7 @@ object Destination {
     val __obj = js.Dynamic.literal()
     if (accessPolicy != null) __obj.updateDynamic("accessPolicy")(accessPolicy.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime.get.asInstanceOf[js.Any])
     if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])

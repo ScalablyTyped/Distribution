@@ -1,7 +1,7 @@
 package typings.node.replMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.node.AnonOptions
+import typings.node.anon.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("repl", "writer")
 @js.native
-object writer extends TopLevel[REPLWriter with AnonOptions]
+object writer extends TopLevel[REPLWriter with Options]
 

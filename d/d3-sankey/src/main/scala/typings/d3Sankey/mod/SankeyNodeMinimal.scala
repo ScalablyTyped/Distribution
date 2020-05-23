@@ -52,29 +52,29 @@ trait SankeyNodeMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPro
 
 object SankeyNodeMinimal {
   @scala.inline
-  def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](
-    depth: Int | Double = null,
-    height: Int | Double = null,
-    index: Int | Double = null,
+  def apply[N, L](
+    depth: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
     sourceLinks: js.Array[SankeyLink[N, L]] = null,
     targetLinks: js.Array[SankeyLink[N, L]] = null,
-    value: Int | Double = null,
-    x0: Int | Double = null,
-    x1: Int | Double = null,
-    y0: Int | Double = null,
-    y1: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined,
+    x0: js.UndefOr[Double] = js.undefined,
+    x1: js.UndefOr[Double] = js.undefined,
+    y0: js.UndefOr[Double] = js.undefined,
+    y1: js.UndefOr[Double] = js.undefined
   ): SankeyNodeMinimal[N, L] = {
     val __obj = js.Dynamic.literal()
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (sourceLinks != null) __obj.updateDynamic("sourceLinks")(sourceLinks.asInstanceOf[js.Any])
     if (targetLinks != null) __obj.updateDynamic("targetLinks")(targetLinks.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (x0 != null) __obj.updateDynamic("x0")(x0.asInstanceOf[js.Any])
-    if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
-    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
-    if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x0)) __obj.updateDynamic("x0")(x0.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x1)) __obj.updateDynamic("x1")(x1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y0)) __obj.updateDynamic("y0")(y0.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y1)) __obj.updateDynamic("y1")(y1.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SankeyNodeMinimal[N, L]]
   }
 }

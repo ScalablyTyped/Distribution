@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 
 trait IComponent extends IEvented {
   /** [Method] Adds a CSS class or classes to this Component s rendered element
-  		* @param cls String The CSS class to add.
-  		* @param prefix String Optional prefix to add to each class.
-  		* @param suffix String Optional suffix to add to each class.
-  		*/
+    * @param cls String The CSS class to add.
+    * @param prefix String Optional prefix to add to each class.
+    * @param suffix String Optional suffix to add to each class.
+    */
   var addCls: js.UndefOr[
     js.Function3[
       /* cls */ js.UndefOr[String], 
@@ -65,195 +65,195 @@ trait IComponent extends IEvented {
   /** [Config Option] (Boolean) */
   var fullscreen: js.UndefOr[Boolean] = js.undefined
   /** [Method] Prepares information on aligning this to component using alignment
-  		* @param component Object
-  		* @param alignment Object
-  		*/
+    * @param component Object
+    * @param alignment Object
+    */
   var getAlignmentInfo: js.UndefOr[
     js.Function2[/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Returns the value of baseCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getBaseCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of border
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getBorder: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of bottom
-  		* @returns any
-  		*/
+    * @returns any
+    */
   var getBottom: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of centered
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getCentered: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of cls
-  		* @returns any
-  		*/
+    * @returns any
+    */
   var getCls: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of contentEl
-  		* @returns Ext.Element/HTMLElement/String
-  		*/
+    * @returns Ext.Element/HTMLElement/String
+    */
   var getContentEl: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of data
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getData: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of disabled
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of disabledCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDisabledCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of docked
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDocked: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Retrieves the top level element representing this component
-  		* @returns Ext.dom.Element
-  		*/
+    * @returns Ext.dom.Element
+    */
   var getEl: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Returns the value of enterAnimation
-  		* @returns String/Mixed
-  		*/
+    * @returns String/Mixed
+    */
   var getEnterAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of exitAnimation
-  		* @returns String/Mixed
-  		*/
+    * @returns String/Mixed
+    */
   var getExitAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of flex
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getFlex: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of floatingCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getFloatingCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of height
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getHeight: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of hidden
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of hiddenCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getHiddenCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of hideAnimation
-  		* @returns String/Mixed
-  		*/
+    * @returns String/Mixed
+    */
   var getHideAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of html
-  		* @returns String/Ext.Element/HTMLElement
-  		*/
+    * @returns String/Ext.Element/HTMLElement
+    */
   var getHtml: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of itemId
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getItemId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of left
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getLeft: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of margin
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getMargin: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of maxHeight
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getMaxHeight: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of maxWidth
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getMaxWidth: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of minHeight
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getMinHeight: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of minWidth
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getMinWidth: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of padding
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getPadding: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the parent of this component if it has one
-  		* @returns Ext.Component The parent of this component.
-  		*/
+    * @returns Ext.Component The parent of this component.
+    */
   var getParent: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Returns the value of plugins
-  		* @returns Object/Array
-  		*/
+    * @returns Object/Array
+    */
   var getPlugins: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of record
-  		* @returns Ext.data.Model
-  		*/
+    * @returns Ext.data.Model
+    */
   var getRecord: js.UndefOr[js.Function0[IModel]] = js.undefined
   /** [Method] Returns the value of renderTo
-  		* @returns Ext.Element
-  		*/
+    * @returns Ext.Element
+    */
   var getRenderTo: js.UndefOr[js.Function0[typings.senchaTouch.Ext.IElement]] = js.undefined
   /** [Method] Returns the value of right
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getRight: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of showAnimation
-  		* @returns String/Mixed
-  		*/
+    * @returns String/Mixed
+    */
   var getShowAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the height and width of the Component
-  		* @returns Object The current height and width of the Component.
-  		*/
+    * @returns Object The current height and width of the Component.
+    */
   var getSize: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of style
-  		* @returns String/Object
-  		*/
+    * @returns String/Object
+    */
   var getStyle: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of styleHtmlCls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getStyleHtmlCls: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of styleHtmlContent
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getStyleHtmlContent: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of top
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getTop: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of tpl
-  		* @returns String/String[]/Ext.Template/Ext.XTemplate[]
-  		*/
+    * @returns String/String[]/Ext.Template/Ext.XTemplate[]
+    */
   var getTpl: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of tplWriteMode
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getTplWriteMode: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of ui
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getUi: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of width
-  		* @returns Number/String
-  		*/
+    * @returns Number/String
+    */
   var getWidth: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns this Component s xtype hierarchy as a slash delimited string
-  		* @returns String The xtype hierarchy string.
-  		*/
+    * @returns String The xtype hierarchy string.
+    */
   var getXTypes: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of zIndex
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getZIndex: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns true if this component has a parent
-  		* @returns Boolean true if this component has a parent.
-  		*/
+    * @returns Boolean true if this component has a parent.
+    */
   var hasParent: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (Number/String) */
   var height: js.UndefOr[js.Any] = js.undefined
@@ -262,9 +262,9 @@ trait IComponent extends IEvented {
   /** [Config Option] (String) */
   var hiddenCls: js.UndefOr[String] = js.undefined
   /** [Method] Hides this Component optionally using an animation
-  		* @param animation Object/Boolean You can specify an animation here or a bool to use the hideAnimation config.
-  		* @returns Ext.Component
-  		*/
+    * @param animation Object/Boolean You can specify an animation here or a bool to use the hideAnimation config.
+    * @returns Ext.Component
+    */
   var hide: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Config Option] (String/Mixed) */
   var hideAnimation: js.UndefOr[js.Any] = js.undefined
@@ -277,18 +277,18 @@ trait IComponent extends IEvented {
   /** [Method] Allows addition of behavior to the rendering phase  */
   var initialize: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns true if this Component is currently disabled
-  		* @returns Boolean true if currently disabled.
-  		*/
+    * @returns Boolean true if currently disabled.
+    */
   var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns true if this Component is currently hidden
-  		* @returns Boolean true if currently hidden.
-  		*/
+    * @returns Boolean true if currently hidden.
+    */
   var isHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Tests whether or not this Component is of a specific xtype
-  		* @param xtype String The xtype to check for this Component.
-  		* @param shallow Boolean false to check whether this Component is descended from the xtype (this is the default), or true to check whether this Component is directly of the specified xtype.
-  		* @returns Boolean true if this component descends from the specified xtype, false otherwise.
-  		*/
+    * @param xtype String The xtype to check for this Component.
+    * @param shallow Boolean false to check whether this Component is descended from the xtype (this is the default), or true to check whether this Component is directly of the specified xtype.
+    * @returns Boolean true if this component descends from the specified xtype, false otherwise.
+    */
   var isXType: js.UndefOr[
     js.Function2[/* xtype */ js.UndefOr[String], /* shallow */ js.UndefOr[Boolean], Boolean]
   ] = js.undefined
@@ -319,10 +319,10 @@ trait IComponent extends IEvented {
   /** [Config Option] (Ext.data.Model) */
   var record: js.UndefOr[IModel] = js.undefined
   /** [Method] Removes the given CSS class es from this Component s rendered element
-  		* @param cls String The class(es) to remove.
-  		* @param prefix String Optional prefix to prepend before each class.
-  		* @param suffix String Optional suffix to append to each class.
-  		*/
+    * @param cls String The class(es) to remove.
+    * @param prefix String Optional prefix to prepend before each class.
+    * @param suffix String Optional suffix to append to each class.
+    */
   var removeCls: js.UndefOr[
     js.Function3[
       /* cls */ js.UndefOr[String], 
@@ -334,11 +334,11 @@ trait IComponent extends IEvented {
   /** [Config Option] (Ext.Element) */
   var renderTo: js.UndefOr[typings.senchaTouch.Ext.IElement] = js.undefined
   /** [Method] Replaces specified classes with the newly specified classes
-  		* @param oldCls String The class(es) to remove.
-  		* @param newCls String The class(es) to add.
-  		* @param prefix String Optional prefix to prepend before each class.
-  		* @param suffix String Optional suffix to append to each class.
-  		*/
+    * @param oldCls String The class(es) to remove.
+    * @param newCls String The class(es) to add.
+    * @param prefix String Optional prefix to prepend before each class.
+    * @param suffix String Optional suffix to append to each class.
+    */
   var replaceCls: js.UndefOr[
     js.Function4[
       /* oldCls */ js.UndefOr[String], 
@@ -355,197 +355,197 @@ trait IComponent extends IEvented {
   /** [Config Option] (Boolean/String/Object) */
   var scroll: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of baseCls
-  		* @param baseCls String The new value.
-  		*/
+    * @param baseCls String The new value.
+    */
   var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of border
-  		* @param border Number/String The new value.
-  		*/
+    * @param border Number/String The new value.
+    */
   var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of bottom
-  		* @param bottom Number/String The new value.
-  		*/
+    * @param bottom Number/String The new value.
+    */
   var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of centered
-  		* @param centered Boolean The new value.
-  		*/
+    * @param centered Boolean The new value.
+    */
   var setCentered: js.UndefOr[js.Function1[/* centered */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of cls
-  		* @param cls String/String[] The new value.
-  		*/
+    * @param cls String/String[] The new value.
+    */
   var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of contentEl
-  		* @param contentEl Ext.Element/HTMLElement/String The new value.
-  		*/
+    * @param contentEl Ext.Element/HTMLElement/String The new value.
+    */
   var setContentEl: js.UndefOr[js.Function1[/* contentEl */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of data
-  		* @param data Object The new value.
-  		*/
+    * @param data Object The new value.
+    */
   var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of disabled
-  		* @param disabled Boolean The new value.
-  		*/
+    * @param disabled Boolean The new value.
+    */
   var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of disabledCls
-  		* @param disabledCls String The new value.
-  		*/
+    * @param disabledCls String The new value.
+    */
   var setDisabledCls: js.UndefOr[js.Function1[/* disabledCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of docked
-  		* @param docked String The new value.
-  		*/
+    * @param docked String The new value.
+    */
   var setDocked: js.UndefOr[js.Function1[/* docked */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of draggable
-  		* @param draggable Object The new value.
-  		*/
+    * @param draggable Object The new value.
+    */
   var setDraggable: js.UndefOr[js.Function1[/* draggable */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of enterAnimation
-  		* @param enterAnimation String/Mixed The new value.
-  		*/
+    * @param enterAnimation String/Mixed The new value.
+    */
   var setEnterAnimation: js.UndefOr[js.Function1[/* enterAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of exitAnimation
-  		* @param exitAnimation String/Mixed The new value.
-  		*/
+    * @param exitAnimation String/Mixed The new value.
+    */
   var setExitAnimation: js.UndefOr[js.Function1[/* exitAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of flex
-  		* @param flex Number The new value.
-  		*/
+    * @param flex Number The new value.
+    */
   var setFlex: js.UndefOr[js.Function1[/* flex */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Used to update the floating state of this component
-  		* @param floating Boolean true if you want to float this component.
-  		*/
+    * @param floating Boolean true if you want to float this component.
+    */
   var setFloating: js.UndefOr[js.Function1[/* floating */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of floatingCls
-  		* @param floatingCls String The new value.
-  		*/
+    * @param floatingCls String The new value.
+    */
   var setFloatingCls: js.UndefOr[js.Function1[/* floatingCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of height
-  		* @param height Number/String The new value.
-  		*/
+    * @param height Number/String The new value.
+    */
   var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of hidden
-  		* @param hidden Boolean The new value.
-  		*/
+    * @param hidden Boolean The new value.
+    */
   var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of hiddenCls
-  		* @param hiddenCls String The new value.
-  		*/
+    * @param hiddenCls String The new value.
+    */
   var setHiddenCls: js.UndefOr[js.Function1[/* hiddenCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of hideAnimation
-  		* @param hideAnimation String/Mixed The new value.
-  		*/
+    * @param hideAnimation String/Mixed The new value.
+    */
   var setHideAnimation: js.UndefOr[js.Function1[/* hideAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of html
-  		* @param html String/Ext.Element/HTMLElement The new value.
-  		*/
+    * @param html String/Ext.Element/HTMLElement The new value.
+    */
   var setHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of itemId
-  		* @param itemId String The new value.
-  		*/
+    * @param itemId String The new value.
+    */
   var setItemId: js.UndefOr[js.Function1[/* itemId */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of left
-  		* @param left Number/String The new value.
-  		*/
+    * @param left Number/String The new value.
+    */
   var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of margin
-  		* @param margin Number/String The new value.
-  		*/
+    * @param margin Number/String The new value.
+    */
   var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of maxHeight
-  		* @param maxHeight Number/String The new value.
-  		*/
+    * @param maxHeight Number/String The new value.
+    */
   var setMaxHeight: js.UndefOr[js.Function1[/* maxHeight */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of maxWidth
-  		* @param maxWidth Number/String The new value.
-  		*/
+    * @param maxWidth Number/String The new value.
+    */
   var setMaxWidth: js.UndefOr[js.Function1[/* maxWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of minHeight
-  		* @param minHeight Number/String The new value.
-  		*/
+    * @param minHeight Number/String The new value.
+    */
   var setMinHeight: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of minWidth
-  		* @param minWidth Number/String The new value.
-  		*/
+    * @param minWidth Number/String The new value.
+    */
   var setMinWidth: js.UndefOr[js.Function1[/* minWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of padding
-  		* @param padding Number/String The new value.
-  		*/
+    * @param padding Number/String The new value.
+    */
   var setPadding: js.UndefOr[js.Function1[/* padding */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of plugins
-  		* @param plugins Object/Array The new value.
-  		*/
+    * @param plugins Object/Array The new value.
+    */
   var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of record
-  		* @param record Ext.data.Model The new value.
-  		*/
+    * @param record Ext.data.Model The new value.
+    */
   var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Unit]] = js.undefined
   /** [Method] Sets the value of renderTo
-  		* @param renderTo Ext.Element The new value.
-  		*/
+    * @param renderTo Ext.Element The new value.
+    */
   var setRenderTo: js.UndefOr[js.Function1[/* renderTo */ js.UndefOr[typings.senchaTouch.Ext.IElement], Unit]] = js.undefined
   /** [Method] Sets the value of right
-  		* @param right Number/String The new value.
-  		*/
+    * @param right Number/String The new value.
+    */
   var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] This method has moved to Ext Container  */
   var setScrollable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Sets the value of showAnimation
-  		* @param showAnimation String/Mixed The new value.
-  		*/
+    * @param showAnimation String/Mixed The new value.
+    */
   var setShowAnimation: js.UndefOr[js.Function1[/* showAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the size of the Component
-  		* @param width Number The new width for the Component.
-  		* @param height Number The new height for the Component.
-  		*/
+    * @param width Number The new width for the Component.
+    * @param height Number The new height for the Component.
+    */
   var setSize: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], Unit]
   ] = js.undefined
   /** [Method] Sets the value of style
-  		* @param style String/Object The new value.
-  		*/
+    * @param style String/Object The new value.
+    */
   var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of styleHtmlCls
-  		* @param styleHtmlCls String The new value.
-  		*/
+    * @param styleHtmlCls String The new value.
+    */
   var setStyleHtmlCls: js.UndefOr[js.Function1[/* styleHtmlCls */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of styleHtmlContent
-  		* @param styleHtmlContent Boolean The new value.
-  		*/
+    * @param styleHtmlContent Boolean The new value.
+    */
   var setStyleHtmlContent: js.UndefOr[js.Function1[/* styleHtmlContent */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of top
-  		* @param top Number/String The new value.
-  		*/
+    * @param top Number/String The new value.
+    */
   var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of tpl
-  		* @param tpl String/String[]/Ext.Template/Ext.XTemplate[] The new value.
-  		*/
+    * @param tpl String/String[]/Ext.Template/Ext.XTemplate[] The new value.
+    */
   var setTpl: js.UndefOr[js.Function1[/* tpl */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of tplWriteMode
-  		* @param tplWriteMode String The new value.
-  		*/
+    * @param tplWriteMode String The new value.
+    */
   var setTplWriteMode: js.UndefOr[js.Function1[/* tplWriteMode */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of ui
-  		* @param ui String The new value.
-  		*/
+    * @param ui String The new value.
+    */
   var setUi: js.UndefOr[js.Function1[/* ui */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of width
-  		* @param width Number/String The new value.
-  		*/
+    * @param width Number/String The new value.
+    */
   var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of zIndex
-  		* @param zIndex Number The new value.
-  		*/
+    * @param zIndex Number The new value.
+    */
   var setZIndex: js.UndefOr[js.Function1[/* zIndex */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Shows this component optionally using an animation
-  		* @param animation Object/Boolean You can specify an animation here or a bool to use the showAnimation config.
-  		* @returns Ext.Component
-  		*/
+    * @param animation Object/Boolean You can specify an animation here or a bool to use the showAnimation config.
+    * @returns Ext.Component
+    */
   var show: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Config Option] (String/Mixed) */
   var showAnimation: js.UndefOr[js.Any] = js.undefined
   /** [Method] Shows this component by another component
-  		* @param component Ext.Component The target component to show this component by.
-  		* @param alignment String The specific alignment.
-  		*/
+    * @param component Ext.Component The target component to show this component by.
+    * @param alignment String The specific alignment.
+    */
   var showBy: js.UndefOr[
     js.Function2[/* component */ js.UndefOr[this.type], /* alignment */ js.UndefOr[String], Unit]
   ] = js.undefined
@@ -566,18 +566,18 @@ trait IComponent extends IEvented {
   /** [Config Option] (String) */
   var ui: js.UndefOr[String] = js.undefined
   /** [Method] Walks up the ownerCt axis looking for an ancestor Container which matches the passed simple selector
-  		* @param selector String The simple selector to test.
-  		* @returns Ext.Container The matching ancestor Container (or undefined if no match was found).
-  		*/
+    * @param selector String The simple selector to test.
+    * @returns Ext.Container The matching ancestor Container (or undefined if no match was found).
+    */
   var up: js.UndefOr[
     js.Function1[/* selector */ js.UndefOr[String], typings.senchaTouch.Ext.IContainer]
   ] = js.undefined
   /** [Method] Updates the HTML content of the Component  */
   var update: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Updates the styleHtmlCls configuration
-  		* @param newHtmlCls Object
-  		* @param oldHtmlCls Object
-  		*/
+    * @param newHtmlCls Object
+    * @param oldHtmlCls Object
+    */
   var updateStyleHtmlCls: js.UndefOr[
     js.Function2[/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
@@ -627,7 +627,7 @@ object IComponent {
     extend: String = null,
     fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
     fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
-    flex: Int | Double = null,
+    flex: js.UndefOr[Double] = js.undefined,
     floating: js.UndefOr[Boolean] = js.undefined,
     floatingCls: String = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
@@ -801,7 +801,7 @@ object IComponent {
     uses: Array = null,
     width: js.Any = null,
     xtype: String = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): IComponent = {
     val __obj = js.Dynamic.literal()
     if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
@@ -819,7 +819,7 @@ object IComponent {
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
     if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls.asInstanceOf[js.Any])
@@ -828,7 +828,7 @@ object IComponent {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls.asInstanceOf[js.Any])
     if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
     if (docked != null) __obj.updateDynamic("docked")(docked.asInstanceOf[js.Any])
@@ -839,10 +839,10 @@ object IComponent {
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
     if (floatingCls != null) __obj.updateDynamic("floatingCls")(floatingCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
     if (getAlignmentInfo != null) __obj.updateDynamic("getAlignmentInfo")(js.Any.fromFunction2(getAlignmentInfo))
     if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
     if (getBorder != null) __obj.updateDynamic("getBorder")(js.Any.fromFunction0(getBorder))
@@ -896,11 +896,11 @@ object IComponent {
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasParent != null) __obj.updateDynamic("hasParent")(js.Any.fromFunction0(hasParent))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (hiddenCls != null) __obj.updateDynamic("hiddenCls")(hiddenCls.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap.get.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
@@ -910,7 +910,7 @@ object IComponent {
     if (isHidden != null) __obj.updateDynamic("isHidden")(js.Any.fromFunction0(isHidden))
     if (isXType != null) __obj.updateDynamic("isXType")(js.Any.fromFunction2(isXType))
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (!js.isUndefined(layoutOnOrientationChange)) __obj.updateDynamic("layoutOnOrientationChange")(layoutOnOrientationChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(layoutOnOrientationChange)) __obj.updateDynamic("layoutOnOrientationChange")(layoutOnOrientationChange.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -919,9 +919,9 @@ object IComponent {
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (!js.isUndefined(monitorOrientation)) __obj.updateDynamic("monitorOrientation")(monitorOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorOrientation)) __obj.updateDynamic("monitorOrientation")(monitorOrientation.get.asInstanceOf[js.Any])
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
@@ -993,12 +993,12 @@ object IComponent {
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation.asInstanceOf[js.Any])
     if (showBy != null) __obj.updateDynamic("showBy")(js.Any.fromFunction2(showBy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopMaskTapEvent)) __obj.updateDynamic("stopMaskTapEvent")(stopMaskTapEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopMaskTapEvent)) __obj.updateDynamic("stopMaskTapEvent")(stopMaskTapEvent.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styleHtmlCls != null) __obj.updateDynamic("styleHtmlCls")(styleHtmlCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleHtmlContent)) __obj.updateDynamic("styleHtmlContent")(styleHtmlContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleHtmlContent)) __obj.updateDynamic("styleHtmlContent")(styleHtmlContent.get.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
@@ -1013,7 +1013,7 @@ object IComponent {
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xtype != null) __obj.updateDynamic("xtype")(xtype.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponent]
   }
 }

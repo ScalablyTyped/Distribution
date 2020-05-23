@@ -1,6 +1,6 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.TypeofRMCDefaultTabBar
+import typings.antdMobileRn.anon.TypeofRMCDefaultTabBar
 import typings.antdMobileRn.tabsIndexNativeMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,13 +1,13 @@
 package typings.wegameApi.wx.types
 
-import typings.wegameApi.AnonErrMsg
+import typings.wegameApi.anon.ErrMsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RenameParams extends js.Object {
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var fail: js.UndefOr[js.Function1[/* res */ AnonErrMsg, Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
   var newPath: String
   var oldPath: String
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -19,7 +19,7 @@ object RenameParams {
     newPath: String,
     oldPath: String,
     complete: () => Unit = null,
-    fail: /* res */ AnonErrMsg => Unit = null,
+    fail: /* res */ ErrMsg => Unit = null,
     success: () => Unit = null
   ): RenameParams = {
     val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 
 trait ISencha extends IBase {
   /** [Method] Returns a Ext device sqlite Database instance
-  		* @param config Object The object which contains the following config options:
-  		* @returns Ext.device.sqlite.Database The opened database, null if an error occured.
-  		*/
+    * @param config Object The object which contains the following config options:
+    * @returns Ext.device.sqlite.Database The opened database, null if an error occured.
+    */
   var openDatabase: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], IDatabase]] = js.undefined
 }
 
@@ -53,7 +53,7 @@ object ISencha {
     if (openDatabase != null) __obj.updateDynamic("openDatabase")(js.Any.fromFunction1(openDatabase))
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISencha]

@@ -22,14 +22,11 @@ object State {
     dropResult: js.Any,
     item: js.Any,
     targetIds: js.Array[String],
-    isSourcePublic: js.UndefOr[Boolean] = js.undefined,
+    isSourcePublic: Boolean = null.asInstanceOf[Boolean],
     itemType: Identifier | js.Array[Identifier] = null,
     sourceId: String = null
   ): State = {
-    val __obj = js.Dynamic.literal(didDrop = didDrop.asInstanceOf[js.Any], dropResult = dropResult.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], targetIds = targetIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSourcePublic)) __obj.updateDynamic("isSourcePublic")(isSourcePublic.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (sourceId != null) __obj.updateDynamic("sourceId")(sourceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(didDrop = didDrop.asInstanceOf[js.Any], dropResult = dropResult.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], targetIds = targetIds.asInstanceOf[js.Any], isSourcePublic = isSourcePublic.asInstanceOf[js.Any], itemType = itemType.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

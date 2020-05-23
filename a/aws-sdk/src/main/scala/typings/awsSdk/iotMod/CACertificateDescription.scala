@@ -60,7 +60,7 @@ object CACertificateDescription {
     certificateId: CertificateId = null,
     certificatePem: CertificatePem = null,
     creationDate: DateType = null,
-    customerVersion: Int | Double = null,
+    customerVersion: js.UndefOr[CustomerVersion] = js.undefined,
     generationId: GenerationId = null,
     lastModifiedDate: DateType = null,
     ownedBy: AwsAccountId = null,
@@ -73,7 +73,7 @@ object CACertificateDescription {
     if (certificateId != null) __obj.updateDynamic("certificateId")(certificateId.asInstanceOf[js.Any])
     if (certificatePem != null) __obj.updateDynamic("certificatePem")(certificatePem.asInstanceOf[js.Any])
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (customerVersion != null) __obj.updateDynamic("customerVersion")(customerVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(customerVersion)) __obj.updateDynamic("customerVersion")(customerVersion.get.asInstanceOf[js.Any])
     if (generationId != null) __obj.updateDynamic("generationId")(generationId.asInstanceOf[js.Any])
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
     if (ownedBy != null) __obj.updateDynamic("ownedBy")(ownedBy.asInstanceOf[js.Any])

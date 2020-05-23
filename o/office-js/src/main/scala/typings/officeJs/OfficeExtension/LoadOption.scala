@@ -51,14 +51,14 @@ object LoadOption {
   def apply(
     expand: String | js.Array[String] = null,
     select: String | js.Array[String] = null,
-    skip: Int | Double = null,
-    top: Int | Double = null
+    skip: js.UndefOr[Double] = js.undefined,
+    top: js.UndefOr[Double] = js.undefined
   ): LoadOption = {
     val __obj = js.Dynamic.literal()
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOption]
   }
 }

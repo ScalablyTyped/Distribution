@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
   * Provides options for how to get the data in a binding.
   *
   * @remarks
-  * 
+  *
   * If the rows option is used, the value must be "thisRow".
   */
 trait GetBindingDataOptions extends js.Object {
@@ -25,7 +25,7 @@ trait GetBindingDataOptions extends js.Object {
     */
   var columnCount: js.UndefOr[Double] = js.undefined
   /**
-    * Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data. 
+    * Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data.
     * Use Office.FilterType or text value.
     */
   var filterType: js.UndefOr[FilterType | String] = js.undefined
@@ -35,7 +35,7 @@ trait GetBindingDataOptions extends js.Object {
   var rowCount: js.UndefOr[Double] = js.undefined
   /**
     * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
-    * 
+    *
     * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
     * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
     * to build no-code business solutions for web and mobile devices.
@@ -50,7 +50,7 @@ trait GetBindingDataOptions extends js.Object {
     */
   var startRow: js.UndefOr[Double] = js.undefined
   /**
-    * Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value. 
+    * Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value.
     * Default: Unformatted data.
     */
   var valueFormat: js.UndefOr[ValueFormat | String] = js.undefined
@@ -61,23 +61,23 @@ object GetBindingDataOptions {
   def apply(
     asyncContext: js.Any = null,
     coercionType: CoercionType | String = null,
-    columnCount: Int | Double = null,
+    columnCount: js.UndefOr[Double] = js.undefined,
     filterType: FilterType | String = null,
-    rowCount: Int | Double = null,
+    rowCount: js.UndefOr[Double] = js.undefined,
     rows: String = null,
-    startColumn: Int | Double = null,
-    startRow: Int | Double = null,
+    startColumn: js.UndefOr[Double] = js.undefined,
+    startRow: js.UndefOr[Double] = js.undefined,
     valueFormat: ValueFormat | String = null
   ): GetBindingDataOptions = {
     val __obj = js.Dynamic.literal()
     if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
     if (coercionType != null) __obj.updateDynamic("coercionType")(coercionType.asInstanceOf[js.Any])
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])
-    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(startColumn)) __obj.updateDynamic("startColumn")(startColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
     if (valueFormat != null) __obj.updateDynamic("valueFormat")(valueFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBindingDataOptions]
   }

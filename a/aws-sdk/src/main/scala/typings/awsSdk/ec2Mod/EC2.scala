@@ -1,24 +1,24 @@
 package typings.awsSdk.ec2Mod
 
-import typings.awsSdk.DescribeBundleTasksReques
-import typings.awsSdk.DescribeConversionTasksRe
-import typings.awsSdk.DescribeCustomerGatewaysR
-import typings.awsSdk.DescribeExportTasksReques
-import typings.awsSdk.DescribeImagesRequestwait
-import typings.awsSdk.DescribeInstanceStatusReq
-import typings.awsSdk.DescribeInstancesRequestw
-import typings.awsSdk.DescribeKeyPairsRequestwa
-import typings.awsSdk.DescribeNatGatewaysReques
-import typings.awsSdk.DescribeNetworkInterfaces
-import typings.awsSdk.DescribeSecurityGroupsReq
-import typings.awsSdk.DescribeSnapshotsRequestw
-import typings.awsSdk.DescribeSpotInstanceReque
-import typings.awsSdk.DescribeSubnetsRequestwai
-import typings.awsSdk.DescribeVolumesRequestwai
-import typings.awsSdk.DescribeVpcPeeringConnect
-import typings.awsSdk.DescribeVpcsRequestwaiter
-import typings.awsSdk.DescribeVpnConnectionsReq
-import typings.awsSdk.GetPasswordDataRequestwai
+import typings.awsSdk.anon.DescribeBundleTasksReques
+import typings.awsSdk.anon.DescribeConversionTasksRe
+import typings.awsSdk.anon.DescribeCustomerGatewaysR
+import typings.awsSdk.anon.DescribeExportTasksReques
+import typings.awsSdk.anon.DescribeImagesRequestwait
+import typings.awsSdk.anon.DescribeInstanceStatusReq
+import typings.awsSdk.anon.DescribeInstancesRequestw
+import typings.awsSdk.anon.DescribeKeyPairsRequestwa
+import typings.awsSdk.anon.DescribeNatGatewaysReques
+import typings.awsSdk.anon.DescribeNetworkInterfaces
+import typings.awsSdk.anon.DescribeSecurityGroupsReq
+import typings.awsSdk.anon.DescribeSnapshotsRequestw
+import typings.awsSdk.anon.DescribeSpotInstanceReque
+import typings.awsSdk.anon.DescribeSubnetsRequestwai
+import typings.awsSdk.anon.DescribeVolumesRequestwai
+import typings.awsSdk.anon.DescribeVpcPeeringConnect
+import typings.awsSdk.anon.DescribeVpcsRequestwaiter
+import typings.awsSdk.anon.DescribeVpnConnectionsReq
+import typings.awsSdk.anon.GetPasswordDataRequestwai
 import typings.awsSdk.awsSdkStrings.bundleTaskComplete
 import typings.awsSdk.awsSdkStrings.conversionTaskCancelled
 import typings.awsSdk.awsSdkStrings.conversionTaskCompleted
@@ -809,12 +809,12 @@ trait EC2 extends Service {
   def createKeyPair(params: CreateKeyPairRequest): Request[KeyPair, AWSError] = js.native
   def createKeyPair(params: CreateKeyPairRequest, callback: js.Function2[/* err */ AWSError, /* data */ KeyPair, Unit]): Request[KeyPair, AWSError] = js.native
   /**
-    * Creates a launch template. A launch template contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify a launch template instead of providing the launch parameters in the request.
+    * Creates a launch template. A launch template contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify a launch template instead of providing the launch parameters in the request. For more information, see Launching an instance from a launch templatein the Amazon Elastic Compute Cloud User Guide.
     */
   def createLaunchTemplate(): Request[CreateLaunchTemplateResult, AWSError] = js.native
   def createLaunchTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateLaunchTemplateResult, Unit]): Request[CreateLaunchTemplateResult, AWSError] = js.native
   /**
-    * Creates a launch template. A launch template contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify a launch template instead of providing the launch parameters in the request.
+    * Creates a launch template. A launch template contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify a launch template instead of providing the launch parameters in the request. For more information, see Launching an instance from a launch templatein the Amazon Elastic Compute Cloud User Guide.
     */
   def createLaunchTemplate(params: CreateLaunchTemplateRequest): Request[CreateLaunchTemplateResult, AWSError] = js.native
   def createLaunchTemplate(
@@ -822,12 +822,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLaunchTemplateResult, Unit]
   ): Request[CreateLaunchTemplateResult, AWSError] = js.native
   /**
-    * Creates a new version for a launch template. You can specify an existing version of launch template from which to base the new version. Launch template versions are numbered in the order in which they are created. You cannot specify, change, or replace the numbering of launch template versions.
+    * Creates a new version for a launch template. You can specify an existing version of launch template from which to base the new version. Launch template versions are numbered in the order in which they are created. You cannot specify, change, or replace the numbering of launch template versions. For more information, see Managing launch template versionsin the Amazon Elastic Compute Cloud User Guide.
     */
   def createLaunchTemplateVersion(): Request[CreateLaunchTemplateVersionResult, AWSError] = js.native
   def createLaunchTemplateVersion(callback: js.Function2[/* err */ AWSError, /* data */ CreateLaunchTemplateVersionResult, Unit]): Request[CreateLaunchTemplateVersionResult, AWSError] = js.native
   /**
-    * Creates a new version for a launch template. You can specify an existing version of launch template from which to base the new version. Launch template versions are numbered in the order in which they are created. You cannot specify, change, or replace the numbering of launch template versions.
+    * Creates a new version for a launch template. You can specify an existing version of launch template from which to base the new version. Launch template versions are numbered in the order in which they are created. You cannot specify, change, or replace the numbering of launch template versions. For more information, see Managing launch template versionsin the Amazon Elastic Compute Cloud User Guide.
     */
   def createLaunchTemplateVersion(params: CreateLaunchTemplateVersionRequest): Request[CreateLaunchTemplateVersionResult, AWSError] = js.native
   def createLaunchTemplateVersion(
@@ -1055,12 +1055,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSubnetResult, Unit]
   ): Request[CreateSubnetResult, AWSError] = js.native
   /**
-    * Adds or overwrites the specified tags for the specified Amazon EC2 resource or resources. Each resource can have a maximum of 50 tags. Each tag consists of a key and optional value. Tag keys must be unique per resource. For more information about tags, see Tagging Your Resources in the Amazon Elastic Compute Cloud User Guide. For more information about creating IAM policies that control users' access to resources based on tags, see Supported Resource-Level Permissions for Amazon EC2 API Actions in the Amazon Elastic Compute Cloud User Guide.
+    * Adds or overwrites only the specified tags for the specified Amazon EC2 resource or resources. When you specify an existing tag key, the value is overwritten with the new value. Each resource can have a maximum of 50 tags. Each tag consists of a key and optional value. Tag keys must be unique per resource. For more information about tags, see Tagging Your Resources in the Amazon Elastic Compute Cloud User Guide. For more information about creating IAM policies that control users' access to resources based on tags, see Supported Resource-Level Permissions for Amazon EC2 API Actions in the Amazon Elastic Compute Cloud User Guide.
     */
   def createTags(): Request[js.Object, AWSError] = js.native
   def createTags(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Adds or overwrites the specified tags for the specified Amazon EC2 resource or resources. Each resource can have a maximum of 50 tags. Each tag consists of a key and optional value. Tag keys must be unique per resource. For more information about tags, see Tagging Your Resources in the Amazon Elastic Compute Cloud User Guide. For more information about creating IAM policies that control users' access to resources based on tags, see Supported Resource-Level Permissions for Amazon EC2 API Actions in the Amazon Elastic Compute Cloud User Guide.
+    * Adds or overwrites only the specified tags for the specified Amazon EC2 resource or resources. When you specify an existing tag key, the value is overwritten with the new value. Each resource can have a maximum of 50 tags. Each tag consists of a key and optional value. Tag keys must be unique per resource. For more information about tags, see Tagging Your Resources in the Amazon Elastic Compute Cloud User Guide. For more information about creating IAM policies that control users' access to resources based on tags, see Supported Resource-Level Permissions for Amazon EC2 API Actions in the Amazon Elastic Compute Cloud User Guide.
     */
   def createTags(params: CreateTagsRequest): Request[js.Object, AWSError] = js.native
   def createTags(params: CreateTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
@@ -1904,12 +1904,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcPeeringConnectionResult, Unit]
   ): Request[DeleteVpcPeeringConnectionResult, AWSError] = js.native
   /**
-    * Deletes the specified VPN connection. If you're deleting the VPC and its associated components, we recommend that you detach the virtual private gateway from the VPC and delete the VPC before deleting the VPN connection. If you believe that the tunnel credentials for your VPN connection have been compromised, you can delete the VPN connection and create a new one that has new keys, without needing to delete the VPC or virtual private gateway. If you create a new VPN connection, you must reconfigure the customer gateway using the new configuration information returned with the new VPN connection ID.
+    * Deletes the specified VPN connection. If you're deleting the VPC and its associated components, we recommend that you detach the virtual private gateway from the VPC and delete the VPC before deleting the VPN connection. If you believe that the tunnel credentials for your VPN connection have been compromised, you can delete the VPN connection and create a new one that has new keys, without needing to delete the VPC or virtual private gateway. If you create a new VPN connection, you must reconfigure the customer gateway device using the new configuration information returned with the new VPN connection ID. For certificate-based authentication, delete all AWS Certificate Manager (ACM) private certificates used for the AWS-side tunnel endpoints for the VPN connection before deleting the VPN connection.
     */
   def deleteVpnConnection(): Request[js.Object, AWSError] = js.native
   def deleteVpnConnection(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified VPN connection. If you're deleting the VPC and its associated components, we recommend that you detach the virtual private gateway from the VPC and delete the VPC before deleting the VPN connection. If you believe that the tunnel credentials for your VPN connection have been compromised, you can delete the VPN connection and create a new one that has new keys, without needing to delete the VPC or virtual private gateway. If you create a new VPN connection, you must reconfigure the customer gateway using the new configuration information returned with the new VPN connection ID.
+    * Deletes the specified VPN connection. If you're deleting the VPC and its associated components, we recommend that you detach the virtual private gateway from the VPC and delete the VPC before deleting the VPN connection. If you believe that the tunnel credentials for your VPN connection have been compromised, you can delete the VPN connection and create a new one that has new keys, without needing to delete the VPC or virtual private gateway. If you create a new VPN connection, you must reconfigure the customer gateway device using the new configuration information returned with the new VPN connection ID. For certificate-based authentication, delete all AWS Certificate Manager (ACM) private certificates used for the AWS-side tunnel endpoints for the VPN connection before deleting the VPN connection.
     */
   def deleteVpnConnection(params: DeleteVpnConnectionRequest): Request[js.Object, AWSError] = js.native
   def deleteVpnConnection(
@@ -3741,12 +3741,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisableVpcClassicLinkResult, Unit]
   ): Request[DisableVpcClassicLinkResult, AWSError] = js.native
   /**
-    * Disables ClassicLink DNS support for a VPC. If disabled, DNS hostnames resolve to public IP addresses when addressed between a linked EC2-Classic instance and instances in the VPC to which it's linked. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide.
+    * Disables ClassicLink DNS support for a VPC. If disabled, DNS hostnames resolve to public IP addresses when addressed between a linked EC2-Classic instance and instances in the VPC to which it's linked. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide. You must specify a VPC ID in the request.
     */
   def disableVpcClassicLinkDnsSupport(): Request[DisableVpcClassicLinkDnsSupportResult, AWSError] = js.native
   def disableVpcClassicLinkDnsSupport(callback: js.Function2[/* err */ AWSError, /* data */ DisableVpcClassicLinkDnsSupportResult, Unit]): Request[DisableVpcClassicLinkDnsSupportResult, AWSError] = js.native
   /**
-    * Disables ClassicLink DNS support for a VPC. If disabled, DNS hostnames resolve to public IP addresses when addressed between a linked EC2-Classic instance and instances in the VPC to which it's linked. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide.
+    * Disables ClassicLink DNS support for a VPC. If disabled, DNS hostnames resolve to public IP addresses when addressed between a linked EC2-Classic instance and instances in the VPC to which it's linked. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide. You must specify a VPC ID in the request.
     */
   def disableVpcClassicLinkDnsSupport(params: DisableVpcClassicLinkDnsSupportRequest): Request[DisableVpcClassicLinkDnsSupportResult, AWSError] = js.native
   def disableVpcClassicLinkDnsSupport(
@@ -3795,12 +3795,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateIamInstanceProfileResult, Unit]
   ): Request[DisassociateIamInstanceProfileResult, AWSError] = js.native
   /**
-    * Disassociates a subnet from a route table. After you perform this action, the subnet no longer uses the routes in the route table. Instead, it uses the routes in the VPC's main route table. For more information about route tables, see Route Tables in the Amazon Virtual Private Cloud User Guide.
+    * Disassociates a subnet or gateway from a route table. After you perform this action, the subnet no longer uses the routes in the route table. Instead, it uses the routes in the VPC's main route table. For more information about route tables, see Route Tables in the Amazon Virtual Private Cloud User Guide.
     */
   def disassociateRouteTable(): Request[js.Object, AWSError] = js.native
   def disassociateRouteTable(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Disassociates a subnet from a route table. After you perform this action, the subnet no longer uses the routes in the route table. Instead, it uses the routes in the VPC's main route table. For more information about route tables, see Route Tables in the Amazon Virtual Private Cloud User Guide.
+    * Disassociates a subnet or gateway from a route table. After you perform this action, the subnet no longer uses the routes in the route table. Instead, it uses the routes in the VPC's main route table. For more information about route tables, see Route Tables in the Amazon Virtual Private Cloud User Guide.
     */
   def disassociateRouteTable(params: DisassociateRouteTableRequest): Request[js.Object, AWSError] = js.native
   def disassociateRouteTable(
@@ -3944,12 +3944,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ EnableVpcClassicLinkResult, Unit]
   ): Request[EnableVpcClassicLinkResult, AWSError] = js.native
   /**
-    * Enables a VPC to support DNS hostname resolution for ClassicLink. If enabled, the DNS hostname of a linked EC2-Classic instance resolves to its private IP address when addressed from an instance in the VPC to which it's linked. Similarly, the DNS hostname of an instance in a VPC resolves to its private IP address when addressed from a linked EC2-Classic instance. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide.
+    * Enables a VPC to support DNS hostname resolution for ClassicLink. If enabled, the DNS hostname of a linked EC2-Classic instance resolves to its private IP address when addressed from an instance in the VPC to which it's linked. Similarly, the DNS hostname of an instance in a VPC resolves to its private IP address when addressed from a linked EC2-Classic instance. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide. You must specify a VPC ID in the request.
     */
   def enableVpcClassicLinkDnsSupport(): Request[EnableVpcClassicLinkDnsSupportResult, AWSError] = js.native
   def enableVpcClassicLinkDnsSupport(callback: js.Function2[/* err */ AWSError, /* data */ EnableVpcClassicLinkDnsSupportResult, Unit]): Request[EnableVpcClassicLinkDnsSupportResult, AWSError] = js.native
   /**
-    * Enables a VPC to support DNS hostname resolution for ClassicLink. If enabled, the DNS hostname of a linked EC2-Classic instance resolves to its private IP address when addressed from an instance in the VPC to which it's linked. Similarly, the DNS hostname of an instance in a VPC resolves to its private IP address when addressed from a linked EC2-Classic instance. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide.
+    * Enables a VPC to support DNS hostname resolution for ClassicLink. If enabled, the DNS hostname of a linked EC2-Classic instance resolves to its private IP address when addressed from an instance in the VPC to which it's linked. Similarly, the DNS hostname of an instance in a VPC resolves to its private IP address when addressed from a linked EC2-Classic instance. For more information, see ClassicLink in the Amazon Elastic Compute Cloud User Guide. You must specify a VPC ID in the request.
     */
   def enableVpcClassicLinkDnsSupport(params: EnableVpcClassicLinkDnsSupportRequest): Request[EnableVpcClassicLinkDnsSupportResult, AWSError] = js.native
   def enableVpcClassicLinkDnsSupport(
@@ -4831,12 +4831,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcTenancyResult, Unit]
   ): Request[ModifyVpcTenancyResult, AWSError] = js.native
   /**
-    * Modifies the target gateway of an AWS Site-to-Site VPN connection. The following migration options are available:   An existing virtual private gateway to a new virtual private gateway   An existing virtual private gateway to a transit gateway   An existing transit gateway to a new transit gateway   An existing transit gateway to a virtual private gateway   Before you perform the migration to the new gateway, you must configure the new gateway. Use CreateVpnGateway to create a virtual private gateway, or CreateTransitGateway to create a transit gateway. This step is required when you migrate from a virtual private gateway with static routes to a transit gateway.  You must delete the static routes before you migrate to the new gateway. Keep a copy of the static route before you delete it. You will need to add back these routes to the transit gateway after the VPN connection migration is complete. After you migrate to the new gateway, you might need to modify your VPC route table. Use CreateRoute and DeleteRoute to make the changes described in VPN Gateway Target Modification Required VPC Route Table Updates in the AWS Site-to-Site VPN User Guide.  When the new gateway is a transit gateway, modify the transit gateway route table to allow traffic between the VPC and the AWS Site-to-Site VPN connection. Use CreateTransitGatewayRoute to add the routes.  If you deleted VPN static routes, you must add the static routes to the transit gateway route table. After you perform this operation, the AWS VPN endpoint's IP addresses on the AWS side and the tunnel options remain intact. Your AWS Site-to-Site VPN connection will be temporarily unavailable for a brief period while we provision the new endpoints.
+    * Modifies the customer gateway or the target gateway of an AWS Site-to-Site VPN connection. To modify the target gateway, the following migration options are available:   An existing virtual private gateway to a new virtual private gateway   An existing virtual private gateway to a transit gateway   An existing transit gateway to a new transit gateway   An existing transit gateway to a virtual private gateway   Before you perform the migration to the new gateway, you must configure the new gateway. Use CreateVpnGateway to create a virtual private gateway, or CreateTransitGateway to create a transit gateway. This step is required when you migrate from a virtual private gateway with static routes to a transit gateway.  You must delete the static routes before you migrate to the new gateway. Keep a copy of the static route before you delete it. You will need to add back these routes to the transit gateway after the VPN connection migration is complete. After you migrate to the new gateway, you might need to modify your VPC route table. Use CreateRoute and DeleteRoute to make the changes described in VPN Gateway Target Modification Required VPC Route Table Updates in the AWS Site-to-Site VPN User Guide.  When the new gateway is a transit gateway, modify the transit gateway route table to allow traffic between the VPC and the AWS Site-to-Site VPN connection. Use CreateTransitGatewayRoute to add the routes.  If you deleted VPN static routes, you must add the static routes to the transit gateway route table. After you perform this operation, the AWS VPN endpoint's IP addresses on the AWS side and the tunnel options remain intact. Your AWS Site-to-Site VPN connection will be temporarily unavailable for a brief period while we provision the new endpoints.
     */
   def modifyVpnConnection(): Request[ModifyVpnConnectionResult, AWSError] = js.native
   def modifyVpnConnection(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpnConnectionResult, Unit]): Request[ModifyVpnConnectionResult, AWSError] = js.native
   /**
-    * Modifies the target gateway of an AWS Site-to-Site VPN connection. The following migration options are available:   An existing virtual private gateway to a new virtual private gateway   An existing virtual private gateway to a transit gateway   An existing transit gateway to a new transit gateway   An existing transit gateway to a virtual private gateway   Before you perform the migration to the new gateway, you must configure the new gateway. Use CreateVpnGateway to create a virtual private gateway, or CreateTransitGateway to create a transit gateway. This step is required when you migrate from a virtual private gateway with static routes to a transit gateway.  You must delete the static routes before you migrate to the new gateway. Keep a copy of the static route before you delete it. You will need to add back these routes to the transit gateway after the VPN connection migration is complete. After you migrate to the new gateway, you might need to modify your VPC route table. Use CreateRoute and DeleteRoute to make the changes described in VPN Gateway Target Modification Required VPC Route Table Updates in the AWS Site-to-Site VPN User Guide.  When the new gateway is a transit gateway, modify the transit gateway route table to allow traffic between the VPC and the AWS Site-to-Site VPN connection. Use CreateTransitGatewayRoute to add the routes.  If you deleted VPN static routes, you must add the static routes to the transit gateway route table. After you perform this operation, the AWS VPN endpoint's IP addresses on the AWS side and the tunnel options remain intact. Your AWS Site-to-Site VPN connection will be temporarily unavailable for a brief period while we provision the new endpoints.
+    * Modifies the customer gateway or the target gateway of an AWS Site-to-Site VPN connection. To modify the target gateway, the following migration options are available:   An existing virtual private gateway to a new virtual private gateway   An existing virtual private gateway to a transit gateway   An existing transit gateway to a new transit gateway   An existing transit gateway to a virtual private gateway   Before you perform the migration to the new gateway, you must configure the new gateway. Use CreateVpnGateway to create a virtual private gateway, or CreateTransitGateway to create a transit gateway. This step is required when you migrate from a virtual private gateway with static routes to a transit gateway.  You must delete the static routes before you migrate to the new gateway. Keep a copy of the static route before you delete it. You will need to add back these routes to the transit gateway after the VPN connection migration is complete. After you migrate to the new gateway, you might need to modify your VPC route table. Use CreateRoute and DeleteRoute to make the changes described in VPN Gateway Target Modification Required VPC Route Table Updates in the AWS Site-to-Site VPN User Guide.  When the new gateway is a transit gateway, modify the transit gateway route table to allow traffic between the VPC and the AWS Site-to-Site VPN connection. Use CreateTransitGatewayRoute to add the routes.  If you deleted VPN static routes, you must add the static routes to the transit gateway route table. After you perform this operation, the AWS VPN endpoint's IP addresses on the AWS side and the tunnel options remain intact. Your AWS Site-to-Site VPN connection will be temporarily unavailable for a brief period while we provision the new endpoints.
     */
   def modifyVpnConnection(params: ModifyVpnConnectionRequest): Request[ModifyVpnConnectionResult, AWSError] = js.native
   def modifyVpnConnection(

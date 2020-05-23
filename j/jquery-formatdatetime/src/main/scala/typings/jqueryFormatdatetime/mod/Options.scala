@@ -39,7 +39,7 @@ object Options {
     if (getSuffix != null) __obj.updateDynamic("getSuffix")(js.Any.fromFunction1(getSuffix))
     if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
     if (monthNamesShort != null) __obj.updateDynamic("monthNamesShort")(monthNamesShort.asInstanceOf[js.Any])
-    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc.asInstanceOf[js.Any])
+    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -13,11 +13,16 @@ trait Annotation extends js.Object {
 
 object Annotation {
   @scala.inline
-  def apply(text: String, `type`: String, column: Int | Double = null, row: Int | Double = null): Annotation = {
+  def apply(
+    text: String,
+    `type`: String,
+    column: js.UndefOr[Double] = js.undefined,
+    row: js.UndefOr[Double] = js.undefined
+  ): Annotation = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
 }

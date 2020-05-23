@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the image-related properties of an item (like a file or folder). */
-@JSGlobal("Windows.Storage.FileProperties.ImageProperties")
 @js.native
-abstract class ImageProperties () extends js.Object {
+trait ImageProperties extends js.Object {
   /** Gets or sets the manufacturer of the camera that took the photo. */
   var cameraManufacturer: String = js.native
   /** Gets or sets the model of the camera that took the photo. */

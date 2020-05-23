@@ -11,10 +11,10 @@ trait VisualizationSelectionArray extends js.Object {
 
 object VisualizationSelectionArray {
   @scala.inline
-  def apply(column: Int | Double = null, row: Int | Double = null): VisualizationSelectionArray = {
+  def apply(column: js.UndefOr[Double] = js.undefined, row: js.UndefOr[Double] = js.undefined): VisualizationSelectionArray = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualizationSelectionArray]
   }
 }

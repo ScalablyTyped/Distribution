@@ -59,13 +59,13 @@ object JQueryRatyOptions {
     mouseout: (/* score */ Double, /* event */ JQueryEventObject) => Unit = null,
     mouseover: (/* score */ Double, /* event */ JQueryEventObject) => Unit = null,
     noRatedMsg: String = null,
-    number: Int | Double = null,
-    numberMax: Int | Double = null,
+    number: js.UndefOr[Double] = js.undefined,
+    numberMax: js.UndefOr[Double] = js.undefined,
     path: String = null,
     precision: js.UndefOr[Boolean] = js.undefined,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     round: JQueryRatyRoundingOptions = null,
-    score: Int | Double = null,
+    score: js.UndefOr[Double] = js.undefined,
     scoreName: String = null,
     single: js.UndefOr[Boolean] = js.undefined,
     space: js.UndefOr[Boolean] = js.undefined,
@@ -81,37 +81,37 @@ object JQueryRatyOptions {
     targetType: String = null
   ): JQueryRatyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (cancelClass != null) __obj.updateDynamic("cancelClass")(cancelClass.asInstanceOf[js.Any])
     if (cancelHint != null) __obj.updateDynamic("cancelHint")(cancelHint.asInstanceOf[js.Any])
     if (cancelOff != null) __obj.updateDynamic("cancelOff")(cancelOff.asInstanceOf[js.Any])
     if (cancelOn != null) __obj.updateDynamic("cancelOn")(cancelOn.asInstanceOf[js.Any])
     if (cancelPlace != null) __obj.updateDynamic("cancelPlace")(cancelPlace.asInstanceOf[js.Any])
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction2(click))
-    if (!js.isUndefined(half)) __obj.updateDynamic("half")(half.asInstanceOf[js.Any])
-    if (!js.isUndefined(halfShow)) __obj.updateDynamic("halfShow")(halfShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(half)) __obj.updateDynamic("half")(half.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(halfShow)) __obj.updateDynamic("halfShow")(halfShow.get.asInstanceOf[js.Any])
     if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
     if (iconRange != null) __obj.updateDynamic("iconRange")(iconRange.asInstanceOf[js.Any])
     if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction2(mouseout))
     if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction2(mouseover))
     if (noRatedMsg != null) __obj.updateDynamic("noRatedMsg")(noRatedMsg.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (numberMax != null) __obj.updateDynamic("numberMax")(numberMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberMax)) __obj.updateDynamic("numberMax")(numberMax.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     if (scoreName != null) __obj.updateDynamic("scoreName")(scoreName.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
-    if (!js.isUndefined(space)) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(space)) __obj.updateDynamic("space")(space.get.asInstanceOf[js.Any])
     if (starHalf != null) __obj.updateDynamic("starHalf")(starHalf.asInstanceOf[js.Any])
     if (starOff != null) __obj.updateDynamic("starOff")(starOff.asInstanceOf[js.Any])
     if (starOn != null) __obj.updateDynamic("starOn")(starOn.asInstanceOf[js.Any])
     if (starType != null) __obj.updateDynamic("starType")(starType.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (targetFormat != null) __obj.updateDynamic("targetFormat")(targetFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetKeep)) __obj.updateDynamic("targetKeep")(targetKeep.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetKeep)) __obj.updateDynamic("targetKeep")(targetKeep.get.asInstanceOf[js.Any])
     if (targetScore != null) __obj.updateDynamic("targetScore")(targetScore.asInstanceOf[js.Any])
     if (targetText != null) __obj.updateDynamic("targetText")(targetText.asInstanceOf[js.Any])
     if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])

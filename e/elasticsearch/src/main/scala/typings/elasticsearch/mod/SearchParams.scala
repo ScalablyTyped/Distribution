@@ -65,30 +65,30 @@ object SearchParams {
     explain: js.UndefOr[Boolean] = js.undefined,
     fielddataFields: NameList = null,
     filterPath: String | js.Array[String] = null,
-    from: Int | Double = null,
+    from: js.UndefOr[Double] = js.undefined,
     ignore: Double | js.Array[Double] = null,
     ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
     index: NameList = null,
     lenient: js.UndefOr[Boolean] = js.undefined,
     lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined,
-    maxRetries: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     method: String = null,
     preference: String = null,
     q: String = null,
     requestCache: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: Int | Double = null,
+    requestTimeout: js.UndefOr[Double] = js.undefined,
     routing: NameList = null,
     scroll: TimeSpan = null,
     searchType: query_then_fetch | dfs_query_then_fetch = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     sort: NameList = null,
     stats: NameList = null,
     storedFields: NameList = null,
     suggestField: String = null,
     suggestMode: missing | popular | always = null,
-    suggestSize: Int | Double = null,
+    suggestSize: js.UndefOr[Double] = js.undefined,
     suggestText: String = null,
-    terminateAfter: Int | Double = null,
+    terminateAfter: js.UndefOr[Double] = js.undefined,
     timeout: TimeSpan = null,
     trackScores: js.UndefOr[Boolean] = js.undefined,
     `type`: NameList = null,
@@ -98,45 +98,45 @@ object SearchParams {
     if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
     if (_sourceExclude != null) __obj.updateDynamic("_sourceExclude")(_sourceExclude.asInstanceOf[js.Any])
     if (_sourceInclude != null) __obj.updateDynamic("_sourceInclude")(_sourceInclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.asInstanceOf[js.Any])
-    if (!js.isUndefined(analyzeWildcard)) __obj.updateDynamic("analyzeWildcard")(analyzeWildcard.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(analyzeWildcard)) __obj.updateDynamic("analyzeWildcard")(analyzeWildcard.get.asInstanceOf[js.Any])
     if (analyzer != null) __obj.updateDynamic("analyzer")(analyzer.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (defaultOperator != null) __obj.updateDynamic("defaultOperator")(defaultOperator.asInstanceOf[js.Any])
     if (df != null) __obj.updateDynamic("df")(df.asInstanceOf[js.Any])
     if (docvalueFields != null) __obj.updateDynamic("docvalueFields")(docvalueFields.asInstanceOf[js.Any])
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.asInstanceOf[js.Any])
+    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.get.asInstanceOf[js.Any])
     if (fielddataFields != null) __obj.updateDynamic("fielddataFields")(fielddataFields.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.get.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(lenient)) __obj.updateDynamic("lenient")(lenient.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowercaseExpandedTerms)) __obj.updateDynamic("lowercaseExpandedTerms")(lowercaseExpandedTerms.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(lenient)) __obj.updateDynamic("lenient")(lenient.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowercaseExpandedTerms)) __obj.updateDynamic("lowercaseExpandedTerms")(lowercaseExpandedTerms.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestCache)) __obj.updateDynamic("requestCache")(requestCache.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestCache)) __obj.updateDynamic("requestCache")(requestCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
     if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     if (searchType != null) __obj.updateDynamic("searchType")(searchType.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (storedFields != null) __obj.updateDynamic("storedFields")(storedFields.asInstanceOf[js.Any])
     if (suggestField != null) __obj.updateDynamic("suggestField")(suggestField.asInstanceOf[js.Any])
     if (suggestMode != null) __obj.updateDynamic("suggestMode")(suggestMode.asInstanceOf[js.Any])
-    if (suggestSize != null) __obj.updateDynamic("suggestSize")(suggestSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestSize)) __obj.updateDynamic("suggestSize")(suggestSize.get.asInstanceOf[js.Any])
     if (suggestText != null) __obj.updateDynamic("suggestText")(suggestText.asInstanceOf[js.Any])
-    if (terminateAfter != null) __obj.updateDynamic("terminateAfter")(terminateAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminateAfter)) __obj.updateDynamic("terminateAfter")(terminateAfter.get.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackScores)) __obj.updateDynamic("trackScores")(trackScores.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackScores)) __obj.updateDynamic("trackScores")(trackScores.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchParams]
   }
 }

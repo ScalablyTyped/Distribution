@@ -19,7 +19,7 @@ trait ClownfaceInitWithValues[D /* <: DatasetCore[Quad, Quad] */] extends js.Obj
 
 object ClownfaceInitWithValues {
   @scala.inline
-  def apply[D /* <: DatasetCore[Quad, Quad] */](
+  def apply[D](
     value: js.Array[String],
     _context: js.Array[Context[D, Term]] = null,
     dataset: D = null,

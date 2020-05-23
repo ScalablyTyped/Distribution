@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends BLAKE2s {
   def this(digestLength: Double) = this()
-  def this(digestLength: js.UndefOr[scala.Nothing], config: BLAKE2sConfig) = this()
-  def this(digestLength: js.UndefOr[scala.Nothing], key: ByteArray) = this()
-  def this(digestLength: Double, config: BLAKE2sConfig) = this()
-  def this(digestLength: Double, key: ByteArray) = this()
+  def this(digestLength: js.UndefOr[Double], config: BLAKE2sConfig) = this()
+  def this(digestLength: js.UndefOr[Double], key: ByteArray) = this()
 }
 
 /* static members */

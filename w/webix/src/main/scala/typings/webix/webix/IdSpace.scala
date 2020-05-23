@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import typings.webix.webix.ui.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,8 +13,4 @@ trait IdSpace extends js.Object {
   def innerId(id: Double): Double | String = js.native
   def ui(view: js.Any): baseview = js.native
 }
-
-@JSGlobal("webix.IdSpace")
-@js.native
-object IdSpace extends TopLevel[IdSpace]
 

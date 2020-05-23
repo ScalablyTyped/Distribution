@@ -7,20 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A quaternion.
   */
-@JSGlobal("Phaser.Math.Quaternion")
 @js.native
-/**
-  * 
-  * @param x The x component.
-  * @param y The y component.
-  * @param z The z component.
-  * @param w The w component.
-  */
-class Quaternion () extends js.Object {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, z: Double) = this()
-  def this(x: Double, y: Double, z: Double, w: Double) = this()
+trait Quaternion extends js.Object {
   /**
     * The w component of this Quaternion.
     */
@@ -123,9 +111,9 @@ class Quaternion () extends js.Object {
     */
   def rotateZ(rad: Double): Quaternion = js.native
   /**
-    * [description]
-    * @param a [description]
-    * @param b [description]
+    * Rotates this Quaternion based on the two given vectors.
+    * @param a The transform rotation vector.
+    * @param b The target rotation vector.
     */
   def rotationTo(a: Vector3, b: Vector3): Quaternion = js.native
   /**

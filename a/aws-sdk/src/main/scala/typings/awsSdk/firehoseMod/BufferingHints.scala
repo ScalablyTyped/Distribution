@@ -18,10 +18,13 @@ trait BufferingHints extends js.Object {
 
 object BufferingHints {
   @scala.inline
-  def apply(IntervalInSeconds: Int | Double = null, SizeInMBs: Int | Double = null): BufferingHints = {
+  def apply(
+    IntervalInSeconds: js.UndefOr[IntervalInSeconds] = js.undefined,
+    SizeInMBs: js.UndefOr[SizeInMBs] = js.undefined
+  ): BufferingHints = {
     val __obj = js.Dynamic.literal()
-    if (IntervalInSeconds != null) __obj.updateDynamic("IntervalInSeconds")(IntervalInSeconds.asInstanceOf[js.Any])
-    if (SizeInMBs != null) __obj.updateDynamic("SizeInMBs")(SizeInMBs.asInstanceOf[js.Any])
+    if (!js.isUndefined(IntervalInSeconds)) __obj.updateDynamic("IntervalInSeconds")(IntervalInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeInMBs)) __obj.updateDynamic("SizeInMBs")(SizeInMBs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferingHints]
   }
 }

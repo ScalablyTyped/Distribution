@@ -2,6 +2,10 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.connect.mod.Server
+import typings.meteor.anon.AbsolutePath
+import typings.meteor.anon.CordovaCompatibilityVersions
+import typings.meteor.anon.Major
+import typings.meteor.anon.Module
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
@@ -21,7 +25,7 @@ object webappMod extends js.Object {
     def onListening(callback: js.Function): Unit = js.native
     def suppressConnectErrors(): Unit = js.native
     @js.native
-    object clientPrograms extends /* key */ StringDictionary[AnonCordovaCompatibilityVersions]
+    object clientPrograms extends /* key */ StringDictionary[CordovaCompatibilityVersions]
     
   }
   
@@ -33,7 +37,7 @@ object webappMod extends js.Object {
     def generateBoilerplate(): Unit = js.native
     def generateBoilerplateInstance(arch: String, manifest: js.Any, additionalOptions: js.Any): js.Any = js.native
     def getBoilerplate(request: IncomingMessage, arch: String): String = js.native
-    def identifyBrowser(userAgentString: String): AnonMajor = js.native
+    def identifyBrowser(userAgentString: String): Major = js.native
     def inlineScriptsAllowed(): Boolean = js.native
     def parsePort(port: String): Double = js.native
     def registerBoilerplateDataCallback(key: String, callback: js.Function): js.Function = js.native
@@ -43,10 +47,10 @@ object webappMod extends js.Object {
     def setInlineScriptsAllowed(inlineScriptsAllowed: Boolean): Unit = js.native
     def staticFilesMiddleware(staticFiles: StaticFiles, req: IncomingMessage, res: ServerResponse, next: js.Function): Unit = js.native
     @js.native
-    object NpmModules extends /* key */ StringDictionary[AnonModule]
+    object NpmModules extends /* key */ StringDictionary[Module]
     
   }
   
-  type StaticFiles = StringDictionary[AnonAbsolutePath]
+  type StaticFiles = StringDictionary[AbsolutePath]
 }
 

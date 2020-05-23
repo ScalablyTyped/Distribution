@@ -42,6 +42,9 @@ object wouterStrings {
   sealed trait dialog extends js.Object
   
   @js.native
+  sealed trait eager extends js.Object
+  
+  @js.native
   sealed trait email extends js.Object
   
   @js.native
@@ -61,6 +64,9 @@ object wouterStrings {
   
   @js.native
   sealed trait `inline` extends js.Object
+  
+  @js.native
+  sealed trait `lazy` extends js.Object
   
   @js.native
   sealed trait link extends js.Object
@@ -174,6 +180,8 @@ object wouterStrings {
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
+  def eager: eager = "eager".asInstanceOf[eager]
+  @scala.inline
   def email: email = "email".asInstanceOf[email]
   @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
@@ -187,6 +195,8 @@ object wouterStrings {
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  @scala.inline
+  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline

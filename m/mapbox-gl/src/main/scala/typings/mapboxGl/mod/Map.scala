@@ -1,11 +1,11 @@
 package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mapboxGl.AnonData
-import typings.mapboxGl.AnonDiff
-import typings.mapboxGl.AnonFilter
-import typings.mapboxGl.AnonPixelRatio
-import typings.mapboxGl.AnonSourceLayer
+import typings.mapboxGl.anon.Data
+import typings.mapboxGl.anon.Diff
+import typings.mapboxGl.anon.Filter
+import typings.mapboxGl.anon.PixelRatio
+import typings.mapboxGl.anon.SourceLayer
 import typings.mapboxGl.mapboxGlStrings.`bottom-left`
 import typings.mapboxGl.mapboxGlStrings.`bottom-right`
 import typings.mapboxGl.mapboxGlStrings.`top-left`
@@ -92,6 +92,7 @@ class Map () extends Evented {
     */
   var showPadding: Boolean = js.native
   var showTileBoundaries: Boolean = js.native
+  var touchPitch: TouchPitchHandler = js.native
   var touchZoomRotate: TouchZoomRotateHandler = js.native
   def addControl(control: Control): this.type = js.native
   def addControl(control: IControl): this.type = js.native
@@ -111,14 +112,14 @@ class Map () extends Evented {
   def addControl_topright(control: Control, position: `top-right`): this.type = js.native
   @JSName("addControl")
   def addControl_topright(control: IControl, position: `top-right`): this.type = js.native
-  def addImage(name: String, image: AnonData): this.type = js.native
-  def addImage(name: String, image: AnonData, options: AnonPixelRatio): this.type = js.native
+  def addImage(name: String, image: Data): this.type = js.native
+  def addImage(name: String, image: Data, options: PixelRatio): this.type = js.native
   def addImage(name: String, image: ArrayBufferView): this.type = js.native
-  def addImage(name: String, image: ArrayBufferView, options: AnonPixelRatio): this.type = js.native
+  def addImage(name: String, image: ArrayBufferView, options: PixelRatio): this.type = js.native
   def addImage(name: String, image: HTMLImageElement): this.type = js.native
-  def addImage(name: String, image: HTMLImageElement, options: AnonPixelRatio): this.type = js.native
+  def addImage(name: String, image: HTMLImageElement, options: PixelRatio): this.type = js.native
   def addImage(name: String, image: ImageData): this.type = js.native
-  def addImage(name: String, image: ImageData, options: AnonPixelRatio): this.type = js.native
+  def addImage(name: String, image: ImageData, options: PixelRatio): this.type = js.native
   def addLayer(layer: CustomLayerInterface): this.type = js.native
   def addLayer(layer: CustomLayerInterface, before: String): this.type = js.native
   def addLayer(layer: Layer): this.type = js.native
@@ -966,9 +967,9 @@ class Map () extends Evented {
     */
   def queryRenderedFeatures(): js.Array[MapboxGeoJSONFeature] = js.native
   def queryRenderedFeatures(pointOrBox: js.Tuple2[PointLike, PointLike]): js.Array[MapboxGeoJSONFeature] = js.native
-  def queryRenderedFeatures(pointOrBox: js.Tuple2[PointLike, PointLike], options: AnonFilter): js.Array[MapboxGeoJSONFeature] = js.native
+  def queryRenderedFeatures(pointOrBox: js.Tuple2[PointLike, PointLike], options: Filter): js.Array[MapboxGeoJSONFeature] = js.native
   def queryRenderedFeatures(pointOrBox: PointLike): js.Array[MapboxGeoJSONFeature] = js.native
-  def queryRenderedFeatures(pointOrBox: PointLike, options: AnonFilter): js.Array[MapboxGeoJSONFeature] = js.native
+  def queryRenderedFeatures(pointOrBox: PointLike, options: Filter): js.Array[MapboxGeoJSONFeature] = js.native
   /**
     * Returns an array of GeoJSON Feature objects representing features within the specified vector tile or GeoJSON source that satisfy the query parameters.
     *
@@ -980,7 +981,7 @@ class Map () extends Evented {
     * @param parameters
     */
   def querySourceFeatures(sourceID: String): js.Array[MapboxGeoJSONFeature] = js.native
-  def querySourceFeatures(sourceID: String, parameters: AnonSourceLayer): js.Array[MapboxGeoJSONFeature] = js.native
+  def querySourceFeatures(sourceID: String, parameters: SourceLayer): js.Array[MapboxGeoJSONFeature] = js.native
   def remove(): Unit = js.native
   def removeControl(control: Control): this.type = js.native
   def removeControl(control: IControl): this.type = js.native
@@ -1007,6 +1008,7 @@ class Map () extends Evented {
   def setFeatureState(feature: MapboxGeoJSONFeature, state: StringDictionary[js.Any]): Unit = js.native
   def setFilter(layer: String): this.type = js.native
   def setFilter(layer: String, filter: js.Array[_]): this.type = js.native
+  def setFilter(layer: String, filter: Boolean): this.type = js.native
   def setLayerZoomRange(layerId: String, minzoom: Double, maxzoom: Double): this.type = js.native
   def setLayoutProperty(layer: String, name: String, value: js.Any): this.type = js.native
   def setLight(options: Light): this.type = js.native
@@ -1041,9 +1043,9 @@ class Map () extends Evented {
   def setRenderWorldCopies(): this.type = js.native
   def setRenderWorldCopies(renderWorldCopies: Boolean): this.type = js.native
   def setStyle(style: String): this.type = js.native
-  def setStyle(style: String, options: AnonDiff): this.type = js.native
+  def setStyle(style: String, options: Diff): this.type = js.native
   def setStyle(style: Style): this.type = js.native
-  def setStyle(style: Style, options: AnonDiff): this.type = js.native
+  def setStyle(style: Style, options: Diff): this.type = js.native
   def setZoom(zoom: Double): this.type = js.native
   def setZoom(zoom: Double, eventData: EventData): this.type = js.native
   def snapToNorth(): this.type = js.native

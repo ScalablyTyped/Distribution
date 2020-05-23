@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.Menu")
 @js.native
-class Menu_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Menu.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Menu.Model) = this()
+trait Menu_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.Menu.Model = js.native
   @JSName("model")
   var model_Menu_ : typings.ejWebAll.ej.Menu.Model = js.native

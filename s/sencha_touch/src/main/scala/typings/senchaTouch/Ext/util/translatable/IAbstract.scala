@@ -10,36 +10,36 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IEvented {
   /** [Method] Returns the value of easing
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getEasing: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of easingX
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getEasingX: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of easingY
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getEasingY: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of useWrapper
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getUseWrapper: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of easing
-  		* @param easing Object The new value.
-  		*/
+    * @param easing Object The new value.
+    */
   var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of easingX
-  		* @param easingX Object The new value.
-  		*/
+    * @param easingX Object The new value.
+    */
   var setEasingX: js.UndefOr[js.Function1[/* easingX */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of easingY
-  		* @param easingY Object The new value.
-  		*/
+    * @param easingY Object The new value.
+    */
   var setEasingY: js.UndefOr[js.Function1[/* easingY */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of useWrapper
-  		* @param useWrapper Object The new value.
-  		*/
+    * @param useWrapper Object The new value.
+    */
   var setUseWrapper: js.UndefOr[js.Function1[/* useWrapper */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -155,7 +155,7 @@ object IAbstract {
     if (setEasingY != null) __obj.updateDynamic("setEasingY")(js.Any.fromFunction1(setEasingY))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setUseWrapper != null) __obj.updateDynamic("setUseWrapper")(js.Any.fromFunction1(setUseWrapper))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

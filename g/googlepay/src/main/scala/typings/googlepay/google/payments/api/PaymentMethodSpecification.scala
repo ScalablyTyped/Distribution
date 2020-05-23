@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Specification of accepted payment method.
+  * Specification of accepted payment method for use in `loadPaymentData`.
   */
 trait PaymentMethodSpecification extends js.Object {
   /**

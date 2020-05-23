@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojarraydataproviderMod
 
-import typings.oracleOraclejet.AnonIdAttribute
+import typings.oracleOraclejet.anon.IdAttribute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ^[K, D] protected () extends ArrayDataProvider[K, D] {
   def this(data: js.Array[_]) = this()
   def this(data: js.Function0[js.Array[_]]) = this()
-  def this(data: js.Array[_], options: AnonIdAttribute[D]) = this()
-  def this(data: js.Function0[js.Array[_]], options: AnonIdAttribute[D]) = this()
+  def this(data: js.Array[_], options: IdAttribute[D]) = this()
+  def this(data: js.Function0[js.Array[_]], options: IdAttribute[D]) = this()
 }
 

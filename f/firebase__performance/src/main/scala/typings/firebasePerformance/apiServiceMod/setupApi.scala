@@ -1,6 +1,6 @@
 package typings.firebasePerformance.apiServiceMod
 
-import typings.firebasePerformance.apiServiceMod._Global_.Window
+import typings.firebasePerformance.apiServiceMod.global.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

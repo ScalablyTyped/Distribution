@@ -9,16 +9,8 @@ import scala.scalajs.js.annotation._
   * The StringBuilder class represents a mutable string of characters and provides a mechanism to concatenate a sequence of strings.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb310852(v=vs.100).aspx}
   */
-@JSGlobal("Sys.StringBuilder")
 @js.native
-//#region Constructors
-/**
-  * Creates a new instance of StringBuilder and optionally accepts initial text to concatenate. You can specify a string in the optional initialText parameter to initialize the value of the StringBuilder instance.
-  * @param initialText
-  *           (Optional) The string that is used to initialize the value of the instance. If the value is null, the new StringBuilder instance will contain an empty string ("").
-  */
-class StringBuilder () extends js.Object {
-  def this(initialText: String) = this()
+trait StringBuilder extends js.Object {
   //#endregion
   //#region Methods
   /**

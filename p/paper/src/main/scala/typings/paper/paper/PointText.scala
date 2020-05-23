@@ -9,23 +9,8 @@ import scala.scalajs.js.annotation._
   * project which starts from a certain point and extends by the amount of
   * characters contained in it.
   */
-@JSGlobal("paper.PointText")
 @js.native
-class PointText protected () extends TextItem {
-  /** 
-    * Creates a point text item from the properties described by an object
-    * literal.
-    * 
-    * @param object - an object containing properties describing the
-    *     path's attributes
-    */
-  def this(`object`: js.Object) = this()
-  /** 
-    * Creates a point text item
-    * 
-    * @param point - the position where the text will start
-    */
-  def this(point: Point) = this()
+trait PointText extends TextItem {
   /** 
     * The PointText's anchor point
     */

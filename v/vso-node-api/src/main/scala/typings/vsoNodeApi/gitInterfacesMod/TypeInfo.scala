@@ -1,39 +1,39 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonActive
-import typings.vsoNodeApi.AnonEnumValuesAnonAddAdd
-import typings.vsoNodeApi.AnonEnumValuesAnonAllOrNone
-import typings.vsoNodeApi.AnonEnumValuesAnonAndroidStudio
-import typings.vsoNodeApi.AnonEnumValuesAnonAsyncOperationNotFound
-import typings.vsoNodeApi.AnonEnumValuesAnonAttachment
-import typings.vsoNodeApi.AnonEnumValuesAnonAutoMerged
-import typings.vsoNodeApi.AnonEnumValuesAnonBad
-import typings.vsoNodeApi.AnonEnumValuesAnonBadRequest
-import typings.vsoNodeApi.AnonEnumValuesAnonBase64Encoded
-import typings.vsoNodeApi.AnonEnumValuesAnonBranch
-import typings.vsoNodeApi.AnonEnumValuesAnonCaseSensitive
-import typings.vsoNodeApi.AnonEnumValuesAnonChange
-import typings.vsoNodeApi.AnonEnumValuesAnonCodeChange
-import typings.vsoNodeApi.AnonEnumValuesAnonCommit
-import typings.vsoNodeApi.AnonEnumValuesAnonConflicts
-import typings.vsoNodeApi.AnonEnumValuesAnonContains
-import typings.vsoNodeApi.AnonEnumValuesAnonCreateBranchPermissionRequired
-import typings.vsoNodeApi.AnonEnumValuesAnonEncoding
-import typings.vsoNodeApi.AnonEnumValuesAnonFirstParent
-import typings.vsoNodeApi.AnonEnumValuesAnonFolder
-import typings.vsoNodeApi.AnonEnumValuesAnonForcePush
-import typings.vsoNodeApi.AnonEnumValuesAnonFull
-import typings.vsoNodeApi.AnonEnumValuesAnonInProgress_
-import typings.vsoNodeApi.AnonEnumValuesAnonInvalidPath
-import typings.vsoNodeApi.AnonEnumValuesAnonKeepBothFiles
-import typings.vsoNodeApi.AnonEnumValuesAnonKeepSourceDeleteTarget
-import typings.vsoNodeApi.AnonEnumValuesAnonNotApplicable
-import typings.vsoNodeApi.AnonEnumValuesAnonNotSet
-import typings.vsoNodeApi.AnonEnumValuesAnonPartiallyResolved
-import typings.vsoNodeApi.AnonEnumValuesAnonPickSourceAction
-import typings.vsoNodeApi.AnonEnumValuesAnonPrevious
-import typings.vsoNodeApi.AnonEnumValuesAnonPreviousChange
-import typings.vsoNodeApi.AnonEnumValuesAnonRename
+import typings.vsoNodeApi.anon.EnumValuesActive
+import typings.vsoNodeApi.anon.EnumValuesAddAdd
+import typings.vsoNodeApi.anon.EnumValuesAllOrNone
+import typings.vsoNodeApi.anon.EnumValuesAndroidStudio
+import typings.vsoNodeApi.anon.EnumValuesAsyncOperationNotFound
+import typings.vsoNodeApi.anon.EnumValuesAttachment
+import typings.vsoNodeApi.anon.EnumValuesAutoMerged
+import typings.vsoNodeApi.anon.EnumValuesBad
+import typings.vsoNodeApi.anon.EnumValuesBadRequest
+import typings.vsoNodeApi.anon.EnumValuesBase64Encoded
+import typings.vsoNodeApi.anon.EnumValuesBranch
+import typings.vsoNodeApi.anon.EnumValuesCaseSensitive
+import typings.vsoNodeApi.anon.EnumValuesChange
+import typings.vsoNodeApi.anon.EnumValuesCodeChange
+import typings.vsoNodeApi.anon.EnumValuesCommit
+import typings.vsoNodeApi.anon.EnumValuesConflicts
+import typings.vsoNodeApi.anon.EnumValuesContains
+import typings.vsoNodeApi.anon.EnumValuesCreateBranchPermissionRequired
+import typings.vsoNodeApi.anon.EnumValuesEncoding
+import typings.vsoNodeApi.anon.EnumValuesFirstParent
+import typings.vsoNodeApi.anon.EnumValuesFolder
+import typings.vsoNodeApi.anon.EnumValuesForcePush
+import typings.vsoNodeApi.anon.EnumValuesFull
+import typings.vsoNodeApi.anon.EnumValuesInProgress_
+import typings.vsoNodeApi.anon.EnumValuesInvalidPath
+import typings.vsoNodeApi.anon.EnumValuesKeepBothFiles
+import typings.vsoNodeApi.anon.EnumValuesKeepSourceDeleteTarget
+import typings.vsoNodeApi.anon.EnumValuesNotApplicable
+import typings.vsoNodeApi.anon.EnumValuesNotSet
+import typings.vsoNodeApi.anon.EnumValuesPartiallyResolved
+import typings.vsoNodeApi.anon.EnumValuesPickSourceAction
+import typings.vsoNodeApi.anon.EnumValuesPrevious
+import typings.vsoNodeApi.anon.EnumValuesPreviousChange
+import typings.vsoNodeApi.anon.EnumValuesRename
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +46,13 @@ object TypeInfo extends js.Object {
   var ChangeList: js.Any = js.native
   var Comment: js.Any = js.native
   var CommentThread: js.Any = js.native
-  var CommentThreadStatus: AnonEnumValuesAnonActive = js.native
-  var CommentType: AnonEnumValuesAnonCodeChange = js.native
+  var CommentThreadStatus: EnumValuesActive = js.native
+  var CommentType: EnumValuesCodeChange = js.native
   var GitAnnotatedTag: js.Any = js.native
-  var GitAsyncOperationStatus: AnonEnumValuesAnonInProgress_ = js.native
+  var GitAsyncOperationStatus: EnumValuesInProgress_ = js.native
   var GitAsyncRefOperation: js.Any = js.native
   var GitAsyncRefOperationDetail: js.Any = js.native
-  var GitAsyncRefOperationFailureStatus: AnonEnumValuesAnonAsyncOperationNotFound = js.native
+  var GitAsyncRefOperationFailureStatus: EnumValuesAsyncOperationNotFound = js.native
   var GitAsyncRefOperationParameters: js.Any = js.native
   var GitAsyncRefOperationSource: js.Any = js.native
   var GitBaseVersionDescriptor: js.Any = js.native
@@ -78,13 +78,13 @@ object TypeInfo extends js.Object {
   var GitConflictRenameAdd: js.Any = js.native
   var GitConflictRenameDelete: js.Any = js.native
   var GitConflictRenameRename: js.Any = js.native
-  var GitConflictType: AnonEnumValuesAnonAddAdd = js.native
+  var GitConflictType: EnumValuesAddAdd = js.native
   var GitConflictUpdateResult: js.Any = js.native
-  var GitConflictUpdateStatus: AnonEnumValuesAnonBadRequest = js.native
+  var GitConflictUpdateStatus: EnumValuesBadRequest = js.native
   var GitDeletedRepository: js.Any = js.native
   var GitForkRef: js.Any = js.native
   var GitForkSyncRequest: js.Any = js.native
-  var GitHistoryMode: AnonEnumValuesAnonFirstParent = js.native
+  var GitHistoryMode: EnumValuesFirstParent = js.native
   var GitImportFailedEvent: js.Any = js.native
   var GitImportRequest: js.Any = js.native
   var GitImportSucceededEvent: js.Any = js.native
@@ -93,9 +93,9 @@ object TypeInfo extends js.Object {
   var GitItemRequestData: js.Any = js.native
   var GitLastChangeTreeItems: js.Any = js.native
   var GitObject: js.Any = js.native
-  var GitObjectType: AnonEnumValuesAnonBad = js.native
+  var GitObjectType: EnumValuesBad = js.native
   var GitPathAction: js.Any = js.native
-  var GitPathActions: AnonEnumValuesAnonRename = js.native
+  var GitPathActions: EnumValuesRename = js.native
   var GitPathToItemsCollection: js.Any = js.native
   var GitPullRequest: js.Any = js.native
   var GitPullRequestChange: js.Any = js.native
@@ -104,8 +104,8 @@ object TypeInfo extends js.Object {
   var GitPullRequestIterationChanges: js.Any = js.native
   var GitPullRequestQuery: js.Any = js.native
   var GitPullRequestQueryInput: js.Any = js.native
-  var GitPullRequestQueryType: AnonEnumValuesAnonCommit = js.native
-  var GitPullRequestReviewFileType: AnonEnumValuesAnonAttachment = js.native
+  var GitPullRequestQueryType: EnumValuesCommit = js.native
+  var GitPullRequestReviewFileType: EnumValuesAttachment = js.native
   var GitPullRequestSearchCriteria: js.Any = js.native
   var GitPullRequestStatus: js.Any = js.native
   var GitPush: js.Any = js.native
@@ -117,26 +117,26 @@ object TypeInfo extends js.Object {
   var GitQueryRefsCriteria: js.Any = js.native
   var GitRef: js.Any = js.native
   var GitRefFavorite: js.Any = js.native
-  var GitRefSearchType: AnonEnumValuesAnonContains = js.native
-  var GitRefUpdateMode: AnonEnumValuesAnonAllOrNone = js.native
+  var GitRefSearchType: EnumValuesContains = js.native
+  var GitRefUpdateMode: EnumValuesAllOrNone = js.native
   var GitRefUpdateResult: js.Any = js.native
-  var GitRefUpdateStatus: AnonEnumValuesAnonCreateBranchPermissionRequired = js.native
+  var GitRefUpdateStatus: EnumValuesCreateBranchPermissionRequired = js.native
   var GitRepository: js.Any = js.native
   var GitRepositoryCreateOptions: js.Any = js.native
   var GitRepositoryRef: js.Any = js.native
-  var GitResolutionError: AnonEnumValuesAnonInvalidPath = js.native
+  var GitResolutionError: EnumValuesInvalidPath = js.native
   var GitResolutionMergeContent: js.Any = js.native
-  var GitResolutionMergeType: AnonEnumValuesAnonAutoMerged = js.native
+  var GitResolutionMergeType: EnumValuesAutoMerged = js.native
   var GitResolutionPathConflict: js.Any = js.native
-  var GitResolutionPathConflictAction: AnonEnumValuesAnonKeepSourceDeleteTarget = js.native
+  var GitResolutionPathConflictAction: EnumValuesKeepSourceDeleteTarget = js.native
   var GitResolutionPickOneAction: js.Any = js.native
   var GitResolutionRename1to2: js.Any = js.native
-  var GitResolutionRename1to2Action: AnonEnumValuesAnonKeepBothFiles = js.native
-  var GitResolutionStatus: AnonEnumValuesAnonPartiallyResolved = js.native
-  var GitResolutionWhichAction: AnonEnumValuesAnonPickSourceAction = js.native
+  var GitResolutionRename1to2Action: EnumValuesKeepBothFiles = js.native
+  var GitResolutionStatus: EnumValuesPartiallyResolved = js.native
+  var GitResolutionWhichAction: EnumValuesPickSourceAction = js.native
   var GitRevert: js.Any = js.native
   var GitStatus: js.Any = js.native
-  var GitStatusState: AnonEnumValuesAnonNotApplicable = js.native
+  var GitStatusState: EnumValuesNotApplicable = js.native
   var GitTargetVersionDescriptor: js.Any = js.native
   var GitTreeDiff: js.Any = js.native
   var GitTreeDiffEntry: js.Any = js.native
@@ -145,20 +145,20 @@ object TypeInfo extends js.Object {
   var GitTreeRef: js.Any = js.native
   var GitUserDate: js.Any = js.native
   var GitVersionDescriptor: js.Any = js.native
-  var GitVersionOptions: AnonEnumValuesAnonPreviousChange = js.native
-  var GitVersionType: AnonEnumValuesAnonBranch = js.native
+  var GitVersionOptions: EnumValuesPreviousChange = js.native
+  var GitVersionType: EnumValuesBranch = js.native
   var HistoryEntry: js.Any = js.native
   var IncludedGitCommit: js.Any = js.native
   var ItemContent: js.Any = js.native
-  var ItemContentType: AnonEnumValuesAnonBase64Encoded = js.native
+  var ItemContentType: EnumValuesBase64Encoded = js.native
   var ItemDetailsOptions: js.Any = js.native
-  var IterationReason: AnonEnumValuesAnonForcePush = js.native
-  var PullRequestAsyncStatus: AnonEnumValuesAnonConflicts = js.native
-  var PullRequestMergeFailureType: AnonEnumValuesAnonCaseSensitive = js.native
-  var PullRequestStatus: AnonEnumValuesAnonNotSet = js.native
-  var RefFavoriteType: AnonEnumValuesAnonFolder = js.native
+  var IterationReason: EnumValuesForcePush = js.native
+  var PullRequestAsyncStatus: EnumValuesConflicts = js.native
+  var PullRequestMergeFailureType: EnumValuesCaseSensitive = js.native
+  var PullRequestStatus: EnumValuesNotSet = js.native
+  var RefFavoriteType: EnumValuesFolder = js.native
   var SupportedIde: js.Any = js.native
-  var SupportedIdeType: AnonEnumValuesAnonAndroidStudio = js.native
+  var SupportedIdeType: EnumValuesAndroidStudio = js.native
   var TfvcBranch: js.Any = js.native
   var TfvcBranchRef: js.Any = js.native
   var TfvcChange: js.Any = js.native
@@ -174,11 +174,11 @@ object TypeInfo extends js.Object {
   var TfvcShelveset: js.Any = js.native
   var TfvcShelvesetRef: js.Any = js.native
   var TfvcVersionDescriptor: js.Any = js.native
-  var TfvcVersionOption: AnonEnumValuesAnonPrevious = js.native
-  var TfvcVersionType: AnonEnumValuesAnonChange = js.native
+  var TfvcVersionOption: EnumValuesPrevious = js.native
+  var TfvcVersionType: EnumValuesChange = js.native
   var UpdateRefsRequest: js.Any = js.native
-  var VersionControlChangeType: AnonEnumValuesAnonEncoding = js.native
+  var VersionControlChangeType: EnumValuesEncoding = js.native
   var VersionControlProjectInfo: js.Any = js.native
-  var VersionControlRecursionType: AnonEnumValuesAnonFull = js.native
+  var VersionControlRecursionType: EnumValuesFull = js.native
 }
 

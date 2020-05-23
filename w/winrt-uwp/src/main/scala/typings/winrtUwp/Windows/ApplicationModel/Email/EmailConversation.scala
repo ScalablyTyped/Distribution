@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an email conversation. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailConversation")
 @js.native
-abstract class EmailConversation () extends js.Object {
+trait EmailConversation extends js.Object {
   /** Gets the EmailFlagState for the conversation. */
   var flagState: EmailFlagState = js.native
   /** Gets a Boolean value indicating if the conversation has an attachment. */

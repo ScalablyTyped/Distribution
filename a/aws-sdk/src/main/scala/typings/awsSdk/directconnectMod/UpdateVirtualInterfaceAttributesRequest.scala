@@ -18,9 +18,9 @@ trait UpdateVirtualInterfaceAttributesRequest extends js.Object {
 
 object UpdateVirtualInterfaceAttributesRequest {
   @scala.inline
-  def apply(virtualInterfaceId: VirtualInterfaceId, mtu: Int | Double = null): UpdateVirtualInterfaceAttributesRequest = {
+  def apply(virtualInterfaceId: VirtualInterfaceId, mtu: js.UndefOr[MTU] = js.undefined): UpdateVirtualInterfaceAttributesRequest = {
     val __obj = js.Dynamic.literal(virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
-    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVirtualInterfaceAttributesRequest]
   }
 }

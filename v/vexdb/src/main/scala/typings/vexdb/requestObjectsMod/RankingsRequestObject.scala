@@ -33,8 +33,8 @@ object RankingsRequestObject {
     ccwm: NumberRequest = null,
     division: StringRequest = null,
     dpr: NumberRequest = null,
-    limit_number: Int | Double = null,
-    limit_start: Int | Double = null,
+    limit_number: js.UndefOr[Double] = js.undefined,
+    limit_start: js.UndefOr[Double] = js.undefined,
     losses: NumberRequest = null,
     max_score: NumberRequest = null,
     opr: NumberRequest = null,
@@ -54,14 +54,14 @@ object RankingsRequestObject {
     if (ccwm != null) __obj.updateDynamic("ccwm")(ccwm.asInstanceOf[js.Any])
     if (division != null) __obj.updateDynamic("division")(division.asInstanceOf[js.Any])
     if (dpr != null) __obj.updateDynamic("dpr")(dpr.asInstanceOf[js.Any])
-    if (limit_number != null) __obj.updateDynamic("limit_number")(limit_number.asInstanceOf[js.Any])
-    if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
     if (losses != null) __obj.updateDynamic("losses")(losses.asInstanceOf[js.Any])
     if (max_score != null) __obj.updateDynamic("max_score")(max_score.asInstanceOf[js.Any])
     if (opr != null) __obj.updateDynamic("opr")(opr.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (sp != null) __obj.updateDynamic("sp")(sp.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])

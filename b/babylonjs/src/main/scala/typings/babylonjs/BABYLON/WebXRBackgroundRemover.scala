@@ -4,22 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRBackgroundRemover")
 @js.native
-class WebXRBackgroundRemover protected () extends WebXRAbstractFeature {
-  /**
-    * constructs a new background remover module
-    * @param _xrSessionManager the session manager for this module
-    * @param options read-only options to be used in this module
-    */
-  def this(_xrSessionManager: WebXRSessionManager) = this()
-  def this(
-    _xrSessionManager: WebXRSessionManager,
-    /**
-    * read-only options to be used in this module
-    */
-  options: IWebXRBackgroundRemoverOptions
-  ) = this()
+trait WebXRBackgroundRemover extends WebXRAbstractFeature {
   var _setBackgroundState: js.Any = js.native
   /**
     * registered observers will be triggered when the background state changes
@@ -29,21 +15,5 @@ class WebXRBackgroundRemover protected () extends WebXRAbstractFeature {
     * read-only options to be used in this module
     */
   val options: IWebXRBackgroundRemoverOptions = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.WebXRBackgroundRemover")
-@js.native
-object WebXRBackgroundRemover extends js.Object {
-  /**
-    * The module's name
-    */
-  val Name: String = js.native
-  /**
-    * The (Babylon) version of this module.
-    * This is an integer representing the implementation version.
-    * This number does not correspond to the WebXR specs version
-    */
-  val Version: Double = js.native
 }
 

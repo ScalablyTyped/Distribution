@@ -4,18 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.InterfaceDeclarationSyntax")
 @js.native
-class InterfaceDeclarationSyntax protected () extends SyntaxNode {
-  def this(
-    modifiers: ISyntaxList,
-    interfaceKeyword: ISyntaxToken,
-    identifier: ISyntaxToken,
-    typeParameterList: TypeParameterListSyntax,
-    heritageClauses: ISyntaxList,
-    body: ObjectTypeSyntax,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait InterfaceDeclarationSyntax extends SyntaxNode {
   var body: ObjectTypeSyntax = js.native
   var heritageClauses: ISyntaxList = js.native
   var identifier: ISyntaxToken = js.native
@@ -38,13 +28,5 @@ class InterfaceDeclarationSyntax protected () extends SyntaxNode {
   def withModifier(modifier: ISyntaxToken): InterfaceDeclarationSyntax = js.native
   def withModifiers(modifiers: ISyntaxList): InterfaceDeclarationSyntax = js.native
   def withTypeParameterList(typeParameterList: TypeParameterListSyntax): InterfaceDeclarationSyntax = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.InterfaceDeclarationSyntax")
-@js.native
-object InterfaceDeclarationSyntax extends js.Object {
-  def create(interfaceKeyword: ISyntaxToken, identifier: ISyntaxToken, body: ObjectTypeSyntax): InterfaceDeclarationSyntax = js.native
-  def create1(identifier: ISyntaxToken): InterfaceDeclarationSyntax = js.native
 }
 

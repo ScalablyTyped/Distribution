@@ -2,7 +2,7 @@ package typings.webpackBlocksUglify.mod
 
 import typings.std.RegExp
 import typings.uglifyJs.mod.MinifyOptions
-import typings.webpackBlocksUglify.AnonCode
+import typings.webpackBlocksUglify.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Options extends js.Object {
   var exclude: js.UndefOr[TestType | js.Array[TestType]] = js.undefined
   var extractComments: js.UndefOr[Boolean | String | RegExp | ExtractCommentsFunction] = js.undefined
   var include: js.UndefOr[TestType | js.Array[TestType]] = js.undefined
-  var minify: js.UndefOr[js.Function2[/* file */ js.Any, /* sourceMap */ js.Any, AnonCode]] = js.undefined
+  var minify: js.UndefOr[js.Function2[/* file */ js.Any, /* sourceMap */ js.Any, Code]] = js.undefined
   var parallel: js.UndefOr[Boolean | Double] = js.undefined
   var sourceMap: js.UndefOr[Boolean] = js.undefined
   var test: js.UndefOr[TestType | js.Array[TestType]] = js.undefined
@@ -31,7 +31,7 @@ object Options {
     exclude: TestType | js.Array[TestType] = null,
     extractComments: Boolean | String | RegExp | ExtractCommentsFunction = null,
     include: TestType | js.Array[TestType] = null,
-    minify: (/* file */ js.Any, /* sourceMap */ js.Any) => AnonCode = null,
+    minify: (/* file */ js.Any, /* sourceMap */ js.Any) => Code = null,
     parallel: Boolean | Double = null,
     sourceMap: js.UndefOr[Boolean] = js.undefined,
     test: TestType | js.Array[TestType] = null,
@@ -47,7 +47,7 @@ object Options {
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (minify != null) __obj.updateDynamic("minify")(js.Any.fromFunction2(minify))
     if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.get.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     if (uglifyOptions != null) __obj.updateDynamic("uglifyOptions")(uglifyOptions.asInstanceOf[js.Any])
     if (warningsFilter != null) __obj.updateDynamic("warningsFilter")(js.Any.fromFunction2(warningsFilter))

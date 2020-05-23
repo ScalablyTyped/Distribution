@@ -16,15 +16,8 @@ import scala.scalajs.js.annotation._
   * 
   * Its static counterpart is {@link Phaser.Physics.Arcade.StaticBody}.
   */
-@JSGlobal("Phaser.Physics.Arcade.Body")
 @js.native
-class Body protected () extends js.Object {
-  /**
-    * 
-    * @param world The Arcade Physics simulation this Body belongs to.
-    * @param gameObject The Game Object this Body belongs to.
-    */
-  def this(world: World, gameObject: GameObject) = this()
+trait Body extends js.Object {
   /**
     * The Body's change in velocity, in pixels per second squared.
     */
@@ -122,10 +115,10 @@ class Body protected () extends js.Object {
     */
   var deltaMax: Vector2 = js.native
   /**
-    * Absolute loss of velocity due to movement, in pixels per second squared.
+    * When `useDamping` is false (the default), this is absolute loss of velocity due to movement, in pixels per second squared (a vector).
     * The x and y components are applied separately.
     * 
-    * When `useDamping` is true, this is 1 minus the damping factor.
+    * When `useDamping` is true, this is 1 minus the damping factor (a number).
     * A value of 1 means the Body loses no velocity.
     * A value of 0.95 means the Body loses 5% of its velocity per step.
     * A value of 0.5 means the Body loses 50% of its velocity per step.

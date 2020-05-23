@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxDockManager object.
   */
-@JSGlobal("ASPxClientDockManager")
 @js.native
-class ASPxClientDockManager () extends ASPxClientControl {
+trait ASPxClientDockManager extends ASPxClientControl {
   /**
     * Fires on the client side after a panel is docked in a zone.
     */
@@ -83,16 +82,5 @@ class ASPxClientDockManager () extends ASPxClientControl {
     */
   def PerformCallback(parameter: String): Unit = js.native
   def PerformCallback(parameter: String, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientDockManager")
-@js.native
-object ASPxClientDockManager extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientDockManager type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientDockManager = js.native
 }
 

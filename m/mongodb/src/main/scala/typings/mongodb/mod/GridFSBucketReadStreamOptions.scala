@@ -14,16 +14,16 @@ trait GridFSBucketReadStreamOptions extends js.Object {
 object GridFSBucketReadStreamOptions {
   @scala.inline
   def apply(
-    end: Int | scala.Double = null,
-    skip: Int | scala.Double = null,
-    sort: Int | scala.Double = null,
-    start: Int | scala.Double = null
+    end: js.UndefOr[scala.Double] = js.undefined,
+    skip: js.UndefOr[scala.Double] = js.undefined,
+    sort: js.UndefOr[scala.Double] = js.undefined,
+    start: js.UndefOr[scala.Double] = js.undefined
   ): GridFSBucketReadStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFSBucketReadStreamOptions]
   }
 }

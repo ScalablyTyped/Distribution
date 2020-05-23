@@ -23,7 +23,7 @@ object IonFabList {
   @scala.inline
   def apply(activated: js.UndefOr[Boolean] = js.undefined, side: start | end | top | bottom = null): IonFabList = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated.asInstanceOf[js.Any])
+    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated.get.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonFabList]
   }

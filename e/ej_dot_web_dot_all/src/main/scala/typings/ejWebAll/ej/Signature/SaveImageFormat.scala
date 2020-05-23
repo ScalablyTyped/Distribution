@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Signature
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,20 +25,6 @@ object SaveImageFormat extends js.Object {
   ///To save the signature image with TIFF format only.
   @js.native
   sealed trait TIFF extends SaveImageFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SaveImageFormat with Double] = js.native
-  /* 2 */ @js.native
-  object BMP extends TopLevel[BMP with Double]
-  
-  /* 1 */ @js.native
-  object JPG extends TopLevel[JPG with Double]
-  
-  /* 0 */ @js.native
-  object PNG extends TopLevel[PNG with Double]
-  
-  /* 3 */ @js.native
-  object TIFF extends TopLevel[TIFF with Double]
   
 }
 

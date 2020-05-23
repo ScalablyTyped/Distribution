@@ -1,6 +1,6 @@
 package typings.backlogJs.mod
 
-import typings.backlogJs.AnonMethod
+import typings.backlogJs.anon.Method
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait Request extends js.Object {
   def post[T](path: String): js.Promise[T] = js.native
   def post[T](path: String, params: js.Any): js.Promise[T] = js.native
   def put[T](path: String, params: js.Any): js.Promise[T] = js.native
-  def request(options: AnonMethod): js.Promise[Response] = js.native
+  def request(options: Method): js.Promise[Response] = js.native
   /* private */ def toFormData(params: js.Any): js.Any = js.native
   /* private */ def toQueryString(params: js.Any): js.Any = js.native
 }

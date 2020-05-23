@@ -24,18 +24,18 @@ object GetClientsOptions {
     include_totals: js.UndefOr[Boolean] = js.undefined,
     is_first_party: js.UndefOr[Boolean] = js.undefined,
     is_global: js.UndefOr[Boolean] = js.undefined,
-    page: Int | Double = null,
-    per_page: Int | Double = null
+    page: js.UndefOr[Double] = js.undefined,
+    per_page: js.UndefOr[Double] = js.undefined
   ): GetClientsOptions = {
     val __obj = js.Dynamic.literal()
     if (app_type != null) __obj.updateDynamic("app_type")(app_type.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_fields)) __obj.updateDynamic("include_fields")(include_fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_totals)) __obj.updateDynamic("include_totals")(include_totals.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_first_party)) __obj.updateDynamic("is_first_party")(is_first_party.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_global)) __obj.updateDynamic("is_global")(is_global.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_fields)) __obj.updateDynamic("include_fields")(include_fields.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_totals)) __obj.updateDynamic("include_totals")(include_totals.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_first_party)) __obj.updateDynamic("is_first_party")(is_first_party.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_global)) __obj.updateDynamic("is_global")(is_global.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(per_page)) __obj.updateDynamic("per_page")(per_page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClientsOptions]
   }
 }

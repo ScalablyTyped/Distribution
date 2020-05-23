@@ -6,7 +6,7 @@ import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.mod.ContextMenu
 import typings.luminoWidgets.mod.Widget
-import typings.std.Event_
+import typings.std.Event
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -113,7 +113,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     *
     * A subclass may reimplement this method as needed.
     */
-  /* protected */ def evtResize(event: Event_): Unit = js.native
+  /* protected */ def evtResize(event: Event): Unit = js.native
   /**
     * Handle the DOM events for the application.
     *
@@ -124,7 +124,7 @@ class Application_[T /* <: Widget */] protected () extends js.Object {
     * called in response to events registered for the application. It
     * should not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Test whether a plugin is registered with the application.
     *

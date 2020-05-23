@@ -31,8 +31,8 @@ object DeploymentGroupAlarmConfiguration {
   ): DeploymentGroupAlarmConfiguration = {
     val __obj = js.Dynamic.literal()
     if (alarms != null) __obj.updateDynamic("alarms")(alarms.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePollAlarmFailure)) __obj.updateDynamic("ignorePollAlarmFailure")(ignorePollAlarmFailure.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePollAlarmFailure)) __obj.updateDynamic("ignorePollAlarmFailure")(ignorePollAlarmFailure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentGroupAlarmConfiguration]
   }
 }

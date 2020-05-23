@@ -15,16 +15,16 @@ trait ConnectionMetadata extends js.Object {
 object ConnectionMetadata {
   @scala.inline
   def apply(
-    count: String = null,
-    cursor: String = null,
-    direction: String = null,
-    path: js.Array[String] = null
+    count: js.UndefOr[Null | String] = js.undefined,
+    cursor: js.UndefOr[Null | String] = js.undefined,
+    direction: js.UndefOr[Null | String] = js.undefined,
+    path: js.UndefOr[Null | js.Array[String]] = js.undefined
   ): ConnectionMetadata = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursor)) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionMetadata]
   }
 }

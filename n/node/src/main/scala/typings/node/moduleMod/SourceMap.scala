@@ -4,9 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @experimental
-  */
 @JSImport("module", "SourceMap")
 @js.native
 class SourceMap protected () extends js.Object {

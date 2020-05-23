@@ -36,11 +36,15 @@ trait PlusAccelerometerAcceleration extends js.Object {
 
 object PlusAccelerometerAcceleration {
   @scala.inline
-  def apply(xAxis: Int | Double = null, yAxis: Int | Double = null, zAxis: Int | Double = null): PlusAccelerometerAcceleration = {
+  def apply(
+    xAxis: js.UndefOr[Double] = js.undefined,
+    yAxis: js.UndefOr[Double] = js.undefined,
+    zAxis: js.UndefOr[Double] = js.undefined
+  ): PlusAccelerometerAcceleration = {
     val __obj = js.Dynamic.literal()
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
-    if (zAxis != null) __obj.updateDynamic("zAxis")(zAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxis)) __obj.updateDynamic("xAxis")(xAxis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxis)) __obj.updateDynamic("yAxis")(yAxis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zAxis)) __obj.updateDynamic("zAxis")(zAxis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusAccelerometerAcceleration]
   }
 }

@@ -44,9 +44,9 @@ object OnenotePage {
     createdDateTime: String = null,
     id: String = null,
     lastModifiedDateTime: String = null,
-    level: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
     links: PageLinks = null,
-    order: Int | Double = null,
+    order: js.UndefOr[Double] = js.undefined,
     parentNotebook: Notebook = null,
     parentSection: OnenoteSection = null,
     self: String = null,
@@ -60,9 +60,9 @@ object OnenotePage {
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     if (parentNotebook != null) __obj.updateDynamic("parentNotebook")(parentNotebook.asInstanceOf[js.Any])
     if (parentSection != null) __obj.updateDynamic("parentSection")(parentSection.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])

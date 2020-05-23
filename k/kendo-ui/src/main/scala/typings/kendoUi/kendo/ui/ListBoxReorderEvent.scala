@@ -18,12 +18,12 @@ object ListBoxReorderEvent {
     sender: ListBox,
     dataItems: js.Any = null,
     items: js.Any = null,
-    offset: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined
   ): ListBoxReorderEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (dataItems != null) __obj.updateDynamic("dataItems")(dataItems.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxReorderEvent]
   }
 }

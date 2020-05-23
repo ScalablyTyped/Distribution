@@ -1,8 +1,8 @@
 package typings.gapiClientCloudfunctions.gapi.client.cloudfunctions
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCloudfunctions.AnonAccesstoken
-import typings.gapiClientCloudfunctions.AnonAlt
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCloudfunctions.anon.Accesstoken
+import typings.gapiClientCloudfunctions.anon.Alt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait OperationsResource extends js.Object {
     * method to poll the operation result at intervals as recommended by the API
     * service.
     */
-  def get(request: AnonAccesstoken): Request_[Operation]
+  def get(request: Accesstoken): Request[Operation]
   /**
     * Lists operations that match the specified filter in the request. If the
     * server doesn't support this method, it returns `UNIMPLEMENTED`.
@@ -26,12 +26,12 @@ trait OperationsResource extends js.Object {
     * collection id, however overriding users must ensure the name binding
     * is the parent resource, without the operations collection id.
     */
-  def list(request: AnonAlt): Request_[ListOperationsResponse]
+  def list(request: Alt): Request[ListOperationsResponse]
 }
 
 object OperationsResource {
   @scala.inline
-  def apply(get: AnonAccesstoken => Request_[Operation], list: AnonAlt => Request_[ListOperationsResponse]): OperationsResource = {
+  def apply(get: Accesstoken => Request[Operation], list: Alt => Request[ListOperationsResponse]): OperationsResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[OperationsResource]
   }

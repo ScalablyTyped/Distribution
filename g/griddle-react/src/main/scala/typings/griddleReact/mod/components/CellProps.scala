@@ -25,7 +25,7 @@ object CellProps {
   def apply(
     className: String = null,
     columnId: String = null,
-    griddleKey: Int | Double = null,
+    griddleKey: js.UndefOr[Double] = js.undefined,
     onClick: MouseEvent[Element, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[Element, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[Element, NativeMouseEvent] => Unit = null,
@@ -35,7 +35,7 @@ object CellProps {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
-    if (griddleKey != null) __obj.updateDynamic("griddleKey")(griddleKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(griddleKey)) __obj.updateDynamic("griddleKey")(griddleKey.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))

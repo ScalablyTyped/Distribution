@@ -27,7 +27,7 @@ trait TestInvokeAuthorizerRequest extends js.Object {
     */
   var token: js.UndefOr[Token] = js.native
   /**
-    * The signature made with the token and your custom authentication service's private key.
+    * The signature made with the token and your custom authentication service's private key. This value must be Base-64-encoded.
     */
   var tokenSignature: js.UndefOr[TokenSignature] = js.native
 }

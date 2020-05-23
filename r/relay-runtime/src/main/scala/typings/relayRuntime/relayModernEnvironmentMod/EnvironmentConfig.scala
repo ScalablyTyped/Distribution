@@ -31,21 +31,21 @@ object EnvironmentConfig {
     network: Network,
     store: Store,
     configName: String = null,
-    handlerProvider: /* handle */ String => js.Any = null,
-    log: /* logEvent */ LogEvent => Unit = null,
-    missingFieldHandlers: js.Array[MissingFieldHandler] = null,
-    operationLoader: OperationLoader = null,
-    operationTracker: OperationTracker = null,
-    scheduler: TaskScheduler = null
+    handlerProvider: js.UndefOr[Null | (/* handle */ String => js.Any)] = js.undefined,
+    log: js.UndefOr[Null | (/* logEvent */ LogEvent => Unit)] = js.undefined,
+    missingFieldHandlers: js.UndefOr[Null | js.Array[MissingFieldHandler]] = js.undefined,
+    operationLoader: js.UndefOr[Null | OperationLoader] = js.undefined,
+    operationTracker: js.UndefOr[Null | OperationTracker] = js.undefined,
+    scheduler: js.UndefOr[Null | TaskScheduler] = js.undefined
   ): EnvironmentConfig = {
     val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
     if (configName != null) __obj.updateDynamic("configName")(configName.asInstanceOf[js.Any])
-    if (handlerProvider != null) __obj.updateDynamic("handlerProvider")(js.Any.fromFunction1(handlerProvider))
-    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
-    if (missingFieldHandlers != null) __obj.updateDynamic("missingFieldHandlers")(missingFieldHandlers.asInstanceOf[js.Any])
-    if (operationLoader != null) __obj.updateDynamic("operationLoader")(operationLoader.asInstanceOf[js.Any])
-    if (operationTracker != null) __obj.updateDynamic("operationTracker")(operationTracker.asInstanceOf[js.Any])
-    if (scheduler != null) __obj.updateDynamic("scheduler")(scheduler.asInstanceOf[js.Any])
+    if (!js.isUndefined(handlerProvider)) __obj.updateDynamic("handlerProvider")(if (handlerProvider != null) js.Any.fromFunction1(handlerProvider.asInstanceOf[/* handle */ String => js.Any]) else null)
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(if (log != null) js.Any.fromFunction1(log.asInstanceOf[/* logEvent */ LogEvent => Unit]) else null)
+    if (!js.isUndefined(missingFieldHandlers)) __obj.updateDynamic("missingFieldHandlers")(missingFieldHandlers.asInstanceOf[js.Any])
+    if (!js.isUndefined(operationLoader)) __obj.updateDynamic("operationLoader")(operationLoader.asInstanceOf[js.Any])
+    if (!js.isUndefined(operationTracker)) __obj.updateDynamic("operationTracker")(operationTracker.asInstanceOf[js.Any])
+    if (!js.isUndefined(scheduler)) __obj.updateDynamic("scheduler")(scheduler.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentConfig]
   }
 }

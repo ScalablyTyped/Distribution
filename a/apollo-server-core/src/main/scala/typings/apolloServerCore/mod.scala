@@ -1,15 +1,17 @@
 package typings.apolloServerCore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.apolloServerCore.anon.EditorcursorShape
+import typings.apolloServerCore.anon.FnCall
 import typings.apolloServerCore.graphqlOptionsMod.GraphQLServerOptions
 import typings.apolloServerCore.playgroundMod.PlaygroundConfig
 import typings.apolloServerCore.runHttpQueryMod.HttpQueryRequest
 import typings.apolloServerCore.runHttpQueryMod.HttpQueryResponse
 import typings.apolloServerCore.typesMod.Config
 import typings.apolloServerEnv.mod.Request
-import typings.apolloServerErrors.AnonDebug
-import typings.apolloServerErrors.ErrorextensionsRecordstri
-import typings.apolloServerErrors.ErrorextensionsRecordstriExtensions
+import typings.apolloServerErrors.anon.Debug
+import typings.apolloServerErrors.anon.ErrorextensionsRecordstri
+import typings.apolloServerErrors.anon.ErrorextensionsRecordstriExtensions
 import typings.apolloServerTypes.mod.ValueOrPromise
 import typings.apollographqlGraphqlPlaygroundHtml.renderPlaygroundPageMod.RenderPageOptions
 import typings.graphql.astMod.DocumentNode
@@ -92,7 +94,7 @@ object mod extends js.Object {
   def createPlaygroundOptions(): js.UndefOr[RenderPageOptions] = js.native
   def createPlaygroundOptions(playground: PlaygroundConfig): js.UndefOr[RenderPageOptions] = js.native
   def formatApolloErrors(errors: js.Array[Error]): js.Array[typings.apolloServerErrors.mod.ApolloError] = js.native
-  def formatApolloErrors(errors: js.Array[Error], options: AnonDebug): js.Array[typings.apolloServerErrors.mod.ApolloError] = js.native
+  def formatApolloErrors(errors: js.Array[Error], options: Debug): js.Array[typings.apolloServerErrors.mod.ApolloError] = js.native
   def gql(template: String, substitutions: js.Any*): DocumentNode = js.native
   def gql(template: TemplateStringsArray, substitutions: js.Any*): DocumentNode = js.native
   def resolveGraphqlOptions(
@@ -105,7 +107,7 @@ object mod extends js.Object {
   def toApolloError(error: ErrorextensionsRecordstri, code: String): ErrorextensionsRecordstriExtensions = js.native
   @js.native
   object defaultPlaygroundOptions extends js.Object {
-    var settings: AnonEditorcursorShape = js.native
+    var settings: EditorcursorShape = js.native
     var version: String = js.native
   }
   

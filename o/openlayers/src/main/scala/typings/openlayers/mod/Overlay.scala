@@ -93,7 +93,6 @@ class Overlay protected () extends Object {
     * @api stable
     */
   def setOffset(offset: js.Array[Double]): Unit = js.native
-  def setPosition(): Unit = js.native
   /**
     * Set the position for this overlay. If the position is `undefined` the
     * overlay is hidden.
@@ -102,6 +101,7 @@ class Overlay protected () extends Object {
     * @observable
     * @api stable
     */
+  def setPosition(): Unit = js.native
   def setPosition(position: Coordinate_): Unit = js.native
   /**
     * Set the positioning for this overlay.

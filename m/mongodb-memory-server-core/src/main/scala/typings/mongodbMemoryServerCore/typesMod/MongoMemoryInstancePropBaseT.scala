@@ -16,13 +16,13 @@ object MongoMemoryInstancePropBaseT {
   def apply(
     args: js.Array[String] = null,
     dbPath: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Null | Double] = js.undefined,
     storageEngine: StorageEngineT = null
   ): MongoMemoryInstancePropBaseT = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (dbPath != null) __obj.updateDynamic("dbPath")(dbPath.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoMemoryInstancePropBaseT]
   }

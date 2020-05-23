@@ -27,21 +27,21 @@ trait PositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 
 object PositionProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
-    bottom: ResponsiveValue[BottomProperty[TLengthStyledSystem], ThemeType] = null,
-    left: ResponsiveValue[LeftProperty[TLengthStyledSystem], ThemeType] = null,
-    position: ResponsiveValue[PositionProperty, ThemeType] = null,
-    right: ResponsiveValue[RightProperty[TLengthStyledSystem], ThemeType] = null,
-    top: ResponsiveValue[TopProperty[TLengthStyledSystem], ThemeType] = null,
-    zIndex: ResponsiveValue[ZIndexProperty, ThemeType] = null
+  def apply[ThemeType](
+    bottom: js.UndefOr[Null | (ResponsiveValue[BottomProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    left: js.UndefOr[Null | (ResponsiveValue[LeftProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    position: js.UndefOr[Null | (ResponsiveValue[PositionProperty, ThemeType])] = js.undefined,
+    right: js.UndefOr[Null | (ResponsiveValue[RightProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    top: js.UndefOr[Null | (ResponsiveValue[TopProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
+    zIndex: js.UndefOr[Null | (ResponsiveValue[ZIndexProperty, ThemeType])] = js.undefined
   ): PositionProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionProps[ThemeType]]
   }
 }

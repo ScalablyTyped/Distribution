@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.CubeField")
 @js.native
-class CubeField protected () extends js.Object {
+trait CubeField extends js.Object {
   val AllItemsVisible: Boolean = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   var Caption: String = js.native

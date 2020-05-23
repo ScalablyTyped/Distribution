@@ -56,22 +56,22 @@ object Options {
   def apply(
     attachResetToRequest: js.UndefOr[Boolean] = js.undefined,
     failCallback: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ js.Function, /* nextValidRequestDate */ js.Any) => Unit = null,
-    freeRetries: Int | Double = null,
+    freeRetries: js.UndefOr[Double] = js.undefined,
     handleStoreError: js.Any = null,
-    lifetime: Int | Double = null,
-    maxWait: Int | Double = null,
-    minWait: Int | Double = null,
+    lifetime: js.UndefOr[Double] = js.undefined,
+    maxWait: js.UndefOr[Double] = js.undefined,
+    minWait: js.UndefOr[Double] = js.undefined,
     refreshTimeoutOnRequest: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attachResetToRequest)) __obj.updateDynamic("attachResetToRequest")(attachResetToRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachResetToRequest)) __obj.updateDynamic("attachResetToRequest")(attachResetToRequest.get.asInstanceOf[js.Any])
     if (failCallback != null) __obj.updateDynamic("failCallback")(js.Any.fromFunction4(failCallback))
-    if (freeRetries != null) __obj.updateDynamic("freeRetries")(freeRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeRetries)) __obj.updateDynamic("freeRetries")(freeRetries.get.asInstanceOf[js.Any])
     if (handleStoreError != null) __obj.updateDynamic("handleStoreError")(handleStoreError.asInstanceOf[js.Any])
-    if (lifetime != null) __obj.updateDynamic("lifetime")(lifetime.asInstanceOf[js.Any])
-    if (maxWait != null) __obj.updateDynamic("maxWait")(maxWait.asInstanceOf[js.Any])
-    if (minWait != null) __obj.updateDynamic("minWait")(minWait.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshTimeoutOnRequest)) __obj.updateDynamic("refreshTimeoutOnRequest")(refreshTimeoutOnRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifetime)) __obj.updateDynamic("lifetime")(lifetime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWait)) __obj.updateDynamic("maxWait")(maxWait.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWait)) __obj.updateDynamic("minWait")(minWait.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshTimeoutOnRequest)) __obj.updateDynamic("refreshTimeoutOnRequest")(refreshTimeoutOnRequest.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

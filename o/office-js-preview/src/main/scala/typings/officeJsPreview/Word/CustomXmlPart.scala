@@ -1,10 +1,10 @@
 package typings.officeJsPreview.Word
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.Word.Interfaces.CustomXmlPartData
 import typings.officeJsPreview.Word.Interfaces.CustomXmlPartLoadOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@JSGlobal("Word.CustomXmlPart")
 @js.native
-class CustomXmlPart () extends ClientObject {
+trait CustomXmlPart extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_CustomXmlPart: RequestContext = js.native
@@ -122,8 +121,8 @@ class CustomXmlPart () extends ClientObject {
   def load(): CustomXmlPart = js.native
   def load(option: String): CustomXmlPart = js.native
   def load(option: js.Array[String]): CustomXmlPart = js.native
-  def load(option: AnonExpand): CustomXmlPart = js.native
   def load(option: CustomXmlPartLoadOptions): CustomXmlPart = js.native
+  def load(option: Expand): CustomXmlPart = js.native
   /**
     *
     * Queries the XML content of the custom XML part.

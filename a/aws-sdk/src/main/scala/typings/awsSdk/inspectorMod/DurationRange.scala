@@ -18,10 +18,13 @@ trait DurationRange extends js.Object {
 
 object DurationRange {
   @scala.inline
-  def apply(maxSeconds: Int | Double = null, minSeconds: Int | Double = null): DurationRange = {
+  def apply(
+    maxSeconds: js.UndefOr[AssessmentRunDuration] = js.undefined,
+    minSeconds: js.UndefOr[AssessmentRunDuration] = js.undefined
+  ): DurationRange = {
     val __obj = js.Dynamic.literal()
-    if (maxSeconds != null) __obj.updateDynamic("maxSeconds")(maxSeconds.asInstanceOf[js.Any])
-    if (minSeconds != null) __obj.updateDynamic("minSeconds")(minSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSeconds)) __obj.updateDynamic("maxSeconds")(maxSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSeconds)) __obj.updateDynamic("minSeconds")(minSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationRange]
   }
 }

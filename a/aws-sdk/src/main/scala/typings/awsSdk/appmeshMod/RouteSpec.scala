@@ -35,14 +35,14 @@ object RouteSpec {
     grpcRoute: GrpcRoute = null,
     http2Route: HttpRoute = null,
     httpRoute: HttpRoute = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[RoutePriority] = js.undefined,
     tcpRoute: TcpRoute = null
   ): RouteSpec = {
     val __obj = js.Dynamic.literal()
     if (grpcRoute != null) __obj.updateDynamic("grpcRoute")(grpcRoute.asInstanceOf[js.Any])
     if (http2Route != null) __obj.updateDynamic("http2Route")(http2Route.asInstanceOf[js.Any])
     if (httpRoute != null) __obj.updateDynamic("httpRoute")(httpRoute.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (tcpRoute != null) __obj.updateDynamic("tcpRoute")(tcpRoute.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpec]
   }

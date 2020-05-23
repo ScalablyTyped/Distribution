@@ -21,15 +21,15 @@ object UpdateFilter {
   @scala.inline
   def apply(
     properties: js.Array[UpdatePropertyName] = null,
-    tabId: Int | Double = null,
+    tabId: js.UndefOr[Double] = js.undefined,
     urls: js.Array[String] = null,
-    windowId: Int | Double = null
+    windowId: js.UndefOr[Double] = js.undefined
   ): UpdateFilter = {
     val __obj = js.Dynamic.literal()
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFilter]
   }
 }

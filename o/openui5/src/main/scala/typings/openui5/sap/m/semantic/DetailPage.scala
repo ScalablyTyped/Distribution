@@ -7,19 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.semantic.DetailPage")
 @js.native
-class DetailPage protected () extends ShareMenuPage {
-  /**
-    * Constructor for a new DetailPageAccepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId ID for the new control, generated automatically if no ID is given
-    * @param mSettings Initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait DetailPage extends ShareMenuPage {
   /**
     * Destroys the addAction in the aggregation <code>addAction</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining

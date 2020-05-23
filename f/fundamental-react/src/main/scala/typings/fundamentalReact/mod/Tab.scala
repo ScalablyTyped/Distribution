@@ -1,7 +1,7 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.PartialTabProps
-import typings.fundamentalReact.WeakValidationMapTabProps
+import typings.fundamentalReact.anon.PartialTabProps
+import typings.fundamentalReact.anon.WeakValidationMapTabProps
 import typings.fundamentalReact.tabMod.TabProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

@@ -4,14 +4,13 @@ import typings.firebaseFirestore.queryMod.Query
 import typings.firebaseFirestore.syncEngineMod.SyncEngine
 import typings.firebaseFirestore.syncEngineMod.SyncEngineListener
 import typings.firebaseFirestore.typesMod.OnlineState
-import typings.firebaseFirestore.typesMod.TargetId
 import typings.firebaseFirestore.viewSnapshotMod.ViewSnapshot
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/event_manager", "EventManager")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/event_manager", "EventManager")
 @js.native
 class EventManager protected () extends SyncEngineListener {
   def this(syncEngine: SyncEngine) = this()
@@ -21,7 +20,7 @@ class EventManager protected () extends SyncEngineListener {
   var snapshotsInSyncListeners: js.Any = js.native
   var syncEngine: js.Any = js.native
   def addSnapshotsInSyncListener(observer: Observer[Unit]): Unit = js.native
-  def listen(listener: QueryListener): js.Promise[TargetId] = js.native
+  def listen(listener: QueryListener): js.Promise[Unit] = js.native
   /** Handles a change in online state. */
   /* CompleteClass */
   override def onOnlineStateChange(onlineState: OnlineState): Unit = js.native

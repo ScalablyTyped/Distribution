@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 
 trait ISencha extends IBase {
   /** [Method] Checks if the current user is able to make payments
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var canMakePayments: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Returns a Ext data Store instance of all purchases delivered to the current user
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var getCompletedPurchases: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Returns a Ext data Store instance of all products available to purchase
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var getProducts: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Returns a Ext data Store instance of all purchases the current user has been charged
-  		* @param config Object
-  		*/
+    * @param config Object
+    */
   var getPurchases: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -70,7 +70,7 @@ object ISencha {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISencha]

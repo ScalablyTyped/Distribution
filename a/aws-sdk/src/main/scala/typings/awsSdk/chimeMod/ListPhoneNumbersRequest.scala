@@ -37,7 +37,7 @@ object ListPhoneNumbersRequest {
   def apply(
     FilterName: PhoneNumberAssociationName = null,
     FilterValue: String = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[ResultMax] = js.undefined,
     NextToken: String = null,
     ProductType: PhoneNumberProductType = null,
     Status: PhoneNumberStatus = null
@@ -45,7 +45,7 @@ object ListPhoneNumbersRequest {
     val __obj = js.Dynamic.literal()
     if (FilterName != null) __obj.updateDynamic("FilterName")(FilterName.asInstanceOf[js.Any])
     if (FilterValue != null) __obj.updateDynamic("FilterValue")(FilterValue.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (ProductType != null) __obj.updateDynamic("ProductType")(ProductType.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

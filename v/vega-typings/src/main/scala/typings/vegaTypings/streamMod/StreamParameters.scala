@@ -21,20 +21,20 @@ object StreamParameters {
   def apply(
     between: js.Array[Stream] = null,
     consume: js.UndefOr[Boolean] = js.undefined,
-    debounce: Int | Double = null,
+    debounce: js.UndefOr[Double] = js.undefined,
     filter: Expr | js.Array[Expr] = null,
     markname: String = null,
     marktype: MarkType = null,
-    throttle: Int | Double = null
+    throttle: js.UndefOr[Double] = js.undefined
   ): StreamParameters = {
     val __obj = js.Dynamic.literal()
     if (between != null) __obj.updateDynamic("between")(between.asInstanceOf[js.Any])
-    if (!js.isUndefined(consume)) __obj.updateDynamic("consume")(consume.asInstanceOf[js.Any])
-    if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
+    if (!js.isUndefined(consume)) __obj.updateDynamic("consume")(consume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debounce)) __obj.updateDynamic("debounce")(debounce.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (markname != null) __obj.updateDynamic("markname")(markname.asInstanceOf[js.Any])
     if (marktype != null) __obj.updateDynamic("marktype")(marktype.asInstanceOf[js.Any])
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttle)) __obj.updateDynamic("throttle")(throttle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamParameters]
   }
 }

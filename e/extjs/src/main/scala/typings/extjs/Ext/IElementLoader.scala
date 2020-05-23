@@ -21,18 +21,18 @@ trait IElementLoader extends IObservable {
   /** [Config Option] (Function) */
   var failure: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the target of this loader
-  		* @returns Ext.Component The target or null if none exists.
-  		*/
+    * @returns Ext.Component The target or null if none exists.
+    */
   var getTarget: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Checks whether the loader is automatically refreshing
-  		* @returns Boolean True if the loader is automatically refreshing
-  		*/
+    * @returns Boolean True if the loader is automatically refreshing
+    */
   var isAutoRefreshing: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Property] (Boolean) */
   var isLoader: js.UndefOr[Boolean] = js.undefined
   /** [Method] Loads new data from the server
-  		* @param options Object The options for the request. They can be any configuration option that can be specified for the class, with the exception of the target option. Note that any options passed to the method will override any class defaults.
-  		*/
+    * @param options Object The options for the request. They can be any configuration option that can be specified for the class, with the exception of the target option. Note that any options passed to the method will override any class defaults.
+    */
   var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Boolean/String) */
   var loadMask: js.UndefOr[js.Any] = js.undefined
@@ -45,13 +45,13 @@ trait IElementLoader extends IObservable {
   /** [Config Option] (Boolean) */
   var scripts: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets an Ext Element as the target of this loader
-  		* @param target String/HTMLElement/Ext.Element The element or its ID.
-  		*/
+    * @param target String/HTMLElement/Ext.Element The element or its ID.
+    */
   var setTarget: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Automatically refreshes the content over a specified period
-  		* @param interval Number The interval to refresh in ms.
-  		* @param options Object The options to pass to the load method. See load
-  		*/
+    * @param interval Number The interval to refresh in ms.
+    * @param options Object The options to pass to the load method. See load
+    */
   var startAutoRefresh: js.UndefOr[
     js.Function2[/* interval */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
@@ -160,8 +160,8 @@ object IElementLoader {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isAutoRefreshing != null) __obj.updateDynamic("isAutoRefreshing")(js.Any.fromFunction0(isAutoRefreshing))
-    if (!js.isUndefined(isLoader)) __obj.updateDynamic("isLoader")(isLoader.asInstanceOf[js.Any])
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLoader)) __obj.updateDynamic("isLoader")(isLoader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loadMask != null) __obj.updateDynamic("loadMask")(loadMask.asInstanceOf[js.Any])
@@ -178,10 +178,10 @@ object IElementLoader {
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(scripts)) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
+    if (!js.isUndefined(scripts)) __obj.updateDynamic("scripts")(scripts.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setTarget != null) __obj.updateDynamic("setTarget")(js.Any.fromFunction1(setTarget))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (startAutoRefresh != null) __obj.updateDynamic("startAutoRefresh")(js.Any.fromFunction2(startAutoRefresh))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stopAutoRefresh != null) __obj.updateDynamic("stopAutoRefresh")(js.Any.fromFunction0(stopAutoRefresh))

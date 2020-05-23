@@ -1,6 +1,7 @@
 
 # Scala.js typings for escape-html
 
+Typings are for version 1.0
 
 ## Library description:
 Escape string for use in HTML

@@ -35,20 +35,20 @@ trait Cors extends js.Object {
 object Cors {
   @scala.inline
   def apply(
-    AllowCredentials: js.UndefOr[Boolean] = js.undefined,
+    AllowCredentials: js.UndefOr[boolean] = js.undefined,
     AllowHeaders: CorsHeaderList = null,
     AllowMethods: CorsMethodList = null,
     AllowOrigins: CorsOriginList = null,
     ExposeHeaders: CorsHeaderList = null,
-    MaxAge: Int | Double = null
+    MaxAge: js.UndefOr[IntegerWithLengthBetweenMinus1And86400] = js.undefined
   ): Cors = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowCredentials)) __obj.updateDynamic("AllowCredentials")(AllowCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowCredentials)) __obj.updateDynamic("AllowCredentials")(AllowCredentials.get.asInstanceOf[js.Any])
     if (AllowHeaders != null) __obj.updateDynamic("AllowHeaders")(AllowHeaders.asInstanceOf[js.Any])
     if (AllowMethods != null) __obj.updateDynamic("AllowMethods")(AllowMethods.asInstanceOf[js.Any])
     if (AllowOrigins != null) __obj.updateDynamic("AllowOrigins")(AllowOrigins.asInstanceOf[js.Any])
     if (ExposeHeaders != null) __obj.updateDynamic("ExposeHeaders")(ExposeHeaders.asInstanceOf[js.Any])
-    if (MaxAge != null) __obj.updateDynamic("MaxAge")(MaxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxAge)) __obj.updateDynamic("MaxAge")(MaxAge.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cors]
   }
 }

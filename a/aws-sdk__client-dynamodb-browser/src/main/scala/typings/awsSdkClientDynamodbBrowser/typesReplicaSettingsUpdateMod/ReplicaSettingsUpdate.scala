@@ -38,12 +38,12 @@ object ReplicaSettingsUpdate {
     RegionName: String,
     ReplicaGlobalSecondaryIndexSettingsUpdate: js.Array[ReplicaGlobalSecondaryIndexSettingsUpdate] | Iterable[ReplicaGlobalSecondaryIndexSettingsUpdate] = null,
     ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
-    ReplicaProvisionedReadCapacityUnits: Int | Double = null
+    ReplicaProvisionedReadCapacityUnits: js.UndefOr[Double] = js.undefined
   ): ReplicaSettingsUpdate = {
     val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
     if (ReplicaGlobalSecondaryIndexSettingsUpdate != null) __obj.updateDynamic("ReplicaGlobalSecondaryIndexSettingsUpdate")(ReplicaGlobalSecondaryIndexSettingsUpdate.asInstanceOf[js.Any])
     if (ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate")(ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate.asInstanceOf[js.Any])
-    if (ReplicaProvisionedReadCapacityUnits != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityUnits")(ReplicaProvisionedReadCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReplicaProvisionedReadCapacityUnits)) __obj.updateDynamic("ReplicaProvisionedReadCapacityUnits")(ReplicaProvisionedReadCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaSettingsUpdate]
   }
 }

@@ -1,6 +1,6 @@
 package typings.eggCore.mod
 
-import typings.eggCore.AnonExports
+import typings.eggCore.anon.Exports
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,12 +39,12 @@ trait FileLoaderBase extends js.Object {
     * @return {Array} items
     * @since 1.0.0
     */
-  def parse(): js.Array[AnonExports]
+  def parse(): js.Array[Exports]
 }
 
 object FileLoaderBase {
   @scala.inline
-  def apply(load: () => js.Object, parse: () => js.Array[AnonExports]): FileLoaderBase = {
+  def apply(load: () => js.Object, parse: () => js.Array[Exports]): FileLoaderBase = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction0(load), parse = js.Any.fromFunction0(parse))
     __obj.asInstanceOf[FileLoaderBase]
   }

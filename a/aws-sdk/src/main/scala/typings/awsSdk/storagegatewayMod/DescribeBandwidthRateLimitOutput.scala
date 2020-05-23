@@ -20,13 +20,13 @@ trait DescribeBandwidthRateLimitOutput extends js.Object {
 object DescribeBandwidthRateLimitOutput {
   @scala.inline
   def apply(
-    AverageDownloadRateLimitInBitsPerSec: Int | Double = null,
-    AverageUploadRateLimitInBitsPerSec: Int | Double = null,
+    AverageDownloadRateLimitInBitsPerSec: js.UndefOr[BandwidthDownloadRateLimit] = js.undefined,
+    AverageUploadRateLimitInBitsPerSec: js.UndefOr[BandwidthUploadRateLimit] = js.undefined,
     GatewayARN: GatewayARN = null
   ): DescribeBandwidthRateLimitOutput = {
     val __obj = js.Dynamic.literal()
-    if (AverageDownloadRateLimitInBitsPerSec != null) __obj.updateDynamic("AverageDownloadRateLimitInBitsPerSec")(AverageDownloadRateLimitInBitsPerSec.asInstanceOf[js.Any])
-    if (AverageUploadRateLimitInBitsPerSec != null) __obj.updateDynamic("AverageUploadRateLimitInBitsPerSec")(AverageUploadRateLimitInBitsPerSec.asInstanceOf[js.Any])
+    if (!js.isUndefined(AverageDownloadRateLimitInBitsPerSec)) __obj.updateDynamic("AverageDownloadRateLimitInBitsPerSec")(AverageDownloadRateLimitInBitsPerSec.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AverageUploadRateLimitInBitsPerSec)) __obj.updateDynamic("AverageUploadRateLimitInBitsPerSec")(AverageUploadRateLimitInBitsPerSec.get.asInstanceOf[js.Any])
     if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBandwidthRateLimitOutput]
   }

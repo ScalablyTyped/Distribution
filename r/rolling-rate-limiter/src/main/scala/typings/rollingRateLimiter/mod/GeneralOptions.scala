@@ -12,9 +12,9 @@ trait GeneralOptions extends js.Object {
 
 object GeneralOptions {
   @scala.inline
-  def apply(interval: Double, maxInInterval: Double, minDifference: Int | Double = null): GeneralOptions = {
+  def apply(interval: Double, maxInInterval: Double, minDifference: js.UndefOr[Double] = js.undefined): GeneralOptions = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], maxInInterval = maxInInterval.asInstanceOf[js.Any])
-    if (minDifference != null) __obj.updateDynamic("minDifference")(minDifference.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDifference)) __obj.updateDynamic("minDifference")(minDifference.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralOptions]
   }
 }

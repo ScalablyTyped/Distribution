@@ -5,27 +5,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when the device detects a click against a preview action.
-			 */
+  * Fired when the device detects a click against a preview action.
+  */
 trait PreviewActionClickEvent extends PreviewActionBaseEvent {
   /**
-  				 * The index of the clicked action.
-  				 */
+    * The index of the clicked action.
+    */
   var index: Double
   /**
-  				 * The item ID of cell, if the `previewContext` property of the <Titanium.UI.iOS.PreviewContext>
-  				 * is a <Titanium.UI.ListView>.
-  				 */
+    * The item ID of cell, if the `previewContext` property of the <Titanium.UI.iOS.PreviewContext>
+    * is a <Titanium.UI.ListView>.
+    */
   var itemId: String
   /**
-  				 * The index of the clicked row, if the `previewContext` property of the <Titanium.UI.iOS.PreviewContext>
-  				 * is a <Titanium.UI.ListView>.
-  				 */
+    * The index of the clicked row, if the `previewContext` property of the <Titanium.UI.iOS.PreviewContext>
+    * is a <Titanium.UI.ListView>.
+    */
   var itemIndex: Double
   /**
-  				 * The index of the clicked section, if the `previewContext` property of the <Titanium.UI.iOS.PreviewContext>
-  				 * is a <Titanium.UI.ListView>.
-  				 */
+    * The index of the clicked section, if the `previewContext` property of the <Titanium.UI.iOS.PreviewContext>
+    * is a <Titanium.UI.ListView>.
+    */
   var sectionIndex: Double
 }
 

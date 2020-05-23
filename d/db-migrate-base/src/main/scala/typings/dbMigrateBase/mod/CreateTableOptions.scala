@@ -14,7 +14,7 @@ object CreateTableOptions {
   def apply(columns: js.Array[ColumnSpec] = null, ifNotExists: js.UndefOr[Boolean] = js.undefined): CreateTableOptions = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTableOptions]
   }
 }

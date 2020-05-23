@@ -13,7 +13,7 @@ object WriteOptions {
   @scala.inline
   def apply(batch: js.UndefOr[Boolean] = js.undefined, filters: js.Array[FilterFunction] = null): WriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
+    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.get.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteOptions]
   }

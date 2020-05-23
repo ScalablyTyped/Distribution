@@ -15,7 +15,7 @@ trait RegisterTaskWithMaintenanceWindowRequest extends js.Object {
     */
   var Description: js.UndefOr[MaintenanceWindowDescription] = js.native
   /**
-    * A structure containing information about an Amazon S3 bucket to write instance-level logs to.    LoggingInfo has been deprecated. To specify an S3 bucket to contain logs, instead use the OutputS3BucketName and OutputS3KeyPrefix options in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters. 
+    * A structure containing information about an S3 bucket to write instance-level logs to.    LoggingInfo has been deprecated. To specify an S3 bucket to contain logs, instead use the OutputS3BucketName and OutputS3KeyPrefix options in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters. 
     */
   var LoggingInfo: js.UndefOr[typings.awsSdk.ssmMod.LoggingInfo] = js.native
   /**
@@ -35,7 +35,7 @@ trait RegisterTaskWithMaintenanceWindowRequest extends js.Object {
     */
   var Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.native
   /**
-    * The ARN of the IAM service role for Systems Manager to assume when running a maintenance window task. If you do not specify a service role ARN, Systems Manager uses your account's service-linked role. If no service-linked role for Systems Manager exists in your account, it is created when you run RegisterTaskWithMaintenanceWindow. For more information, see the following topics in the in the AWS Systems Manager User Guide:    Service-Linked Role Permissions for Systems Manager     Should I Use a Service-Linked Role or a Custom Service Role to Run Maintenance Window Tasks?    
+    * The ARN of the IAM service role for Systems Manager to assume when running a maintenance window task. If you do not specify a service role ARN, Systems Manager uses your account's service-linked role. If no service-linked role for Systems Manager exists in your account, it is created when you run RegisterTaskWithMaintenanceWindow. For more information, see the following topics in the in the AWS Systems Manager User Guide:    Using service-linked roles for Systems Manager     Should I use a service-linked role or a custom service role to run maintenance window tasks?    
     */
   var ServiceRoleArn: js.UndefOr[ServiceRole] = js.native
   /**
@@ -77,7 +77,7 @@ object RegisterTaskWithMaintenanceWindowRequest {
     Description: MaintenanceWindowDescription = null,
     LoggingInfo: LoggingInfo = null,
     Name: MaintenanceWindowName = null,
-    Priority: Int | Double = null,
+    Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined,
     ServiceRoleArn: ServiceRole = null,
     TaskInvocationParameters: MaintenanceWindowTaskInvocationParameters = null,
     TaskParameters: MaintenanceWindowTaskParameters = null
@@ -87,7 +87,7 @@ object RegisterTaskWithMaintenanceWindowRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn.asInstanceOf[js.Any])
     if (TaskInvocationParameters != null) __obj.updateDynamic("TaskInvocationParameters")(TaskInvocationParameters.asInstanceOf[js.Any])
     if (TaskParameters != null) __obj.updateDynamic("TaskParameters")(TaskParameters.asInstanceOf[js.Any])

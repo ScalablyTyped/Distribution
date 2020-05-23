@@ -10,9 +10,9 @@ trait ISHA3Cfg extends js.Object {
 
 object ISHA3Cfg {
   @scala.inline
-  def apply(outputLength: Int | Double = null): ISHA3Cfg = {
+  def apply(outputLength: js.UndefOr[Double] = js.undefined): ISHA3Cfg = {
     val __obj = js.Dynamic.literal()
-    if (outputLength != null) __obj.updateDynamic("outputLength")(outputLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputLength)) __obj.updateDynamic("outputLength")(outputLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISHA3Cfg]
   }
 }

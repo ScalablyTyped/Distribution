@@ -1,6 +1,6 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.AnonBrowser
+import typings.nightwatch.anon.Browser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +56,7 @@ trait NightwatchDesiredCapabilities extends js.Object {
     * Available values for most loggers are "OFF", "SEVERE", "WARNING", "INFO", "CONFIG", "FINE", "FINER", "FINEST", "ALL".
     * This produces a JSON object looking something like: {"loggingPrefs": {"driver": "INFO", "server": "OFF", "browser": "FINE"}}.
     */
-  var loggingPrefs: js.UndefOr[AnonBrowser] = js.undefined
+  var loggingPrefs: js.UndefOr[Browser] = js.undefined
   /**
     * Whether the session is capable of generating native events when simulating user input.
     */
@@ -99,11 +99,11 @@ object NightwatchDesiredCapabilities {
     chromeOptions: ChromeOptions = null,
     cssSelectorsEnabled: js.UndefOr[Boolean] = js.undefined,
     databaseEnabled: js.UndefOr[Boolean] = js.undefined,
-    elementScrollBehaviour: Int | Double = null,
+    elementScrollBehaviour: js.UndefOr[Double] = js.undefined,
     handlesAlerts: js.UndefOr[Boolean] = js.undefined,
     javascriptEnabled: js.UndefOr[Boolean] = js.undefined,
     locationContextEnabled: js.UndefOr[Boolean] = js.undefined,
-    loggingPrefs: AnonBrowser = null,
+    loggingPrefs: Browser = null,
     nativeEvents: js.UndefOr[Boolean] = js.undefined,
     platform: String = null,
     rotatable: js.UndefOr[Boolean] = js.undefined,
@@ -113,25 +113,25 @@ object NightwatchDesiredCapabilities {
     webStorageEnabled: js.UndefOr[Boolean] = js.undefined
   ): NightwatchDesiredCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptSslCerts)) __obj.updateDynamic("acceptSslCerts")(acceptSslCerts.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationCacheEnabled)) __obj.updateDynamic("applicationCacheEnabled")(applicationCacheEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(browserConnectionEnabled)) __obj.updateDynamic("browserConnectionEnabled")(browserConnectionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptSslCerts)) __obj.updateDynamic("acceptSslCerts")(acceptSslCerts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationCacheEnabled)) __obj.updateDynamic("applicationCacheEnabled")(applicationCacheEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(browserConnectionEnabled)) __obj.updateDynamic("browserConnectionEnabled")(browserConnectionEnabled.get.asInstanceOf[js.Any])
     if (browserName != null) __obj.updateDynamic("browserName")(browserName.asInstanceOf[js.Any])
     if (chromeOptions != null) __obj.updateDynamic("chromeOptions")(chromeOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(cssSelectorsEnabled)) __obj.updateDynamic("cssSelectorsEnabled")(cssSelectorsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(databaseEnabled)) __obj.updateDynamic("databaseEnabled")(databaseEnabled.asInstanceOf[js.Any])
-    if (elementScrollBehaviour != null) __obj.updateDynamic("elementScrollBehaviour")(elementScrollBehaviour.asInstanceOf[js.Any])
-    if (!js.isUndefined(handlesAlerts)) __obj.updateDynamic("handlesAlerts")(handlesAlerts.asInstanceOf[js.Any])
-    if (!js.isUndefined(javascriptEnabled)) __obj.updateDynamic("javascriptEnabled")(javascriptEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(locationContextEnabled)) __obj.updateDynamic("locationContextEnabled")(locationContextEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(cssSelectorsEnabled)) __obj.updateDynamic("cssSelectorsEnabled")(cssSelectorsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(databaseEnabled)) __obj.updateDynamic("databaseEnabled")(databaseEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(elementScrollBehaviour)) __obj.updateDynamic("elementScrollBehaviour")(elementScrollBehaviour.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(handlesAlerts)) __obj.updateDynamic("handlesAlerts")(handlesAlerts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(javascriptEnabled)) __obj.updateDynamic("javascriptEnabled")(javascriptEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationContextEnabled)) __obj.updateDynamic("locationContextEnabled")(locationContextEnabled.get.asInstanceOf[js.Any])
     if (loggingPrefs != null) __obj.updateDynamic("loggingPrefs")(loggingPrefs.asInstanceOf[js.Any])
-    if (!js.isUndefined(nativeEvents)) __obj.updateDynamic("nativeEvents")(nativeEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(nativeEvents)) __obj.updateDynamic("nativeEvents")(nativeEvents.get.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable.asInstanceOf[js.Any])
-    if (!js.isUndefined(takesScreenShot)) __obj.updateDynamic("takesScreenShot")(takesScreenShot.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(takesScreenShot)) __obj.updateDynamic("takesScreenShot")(takesScreenShot.get.asInstanceOf[js.Any])
     if (unexpectedAlertBehaviour != null) __obj.updateDynamic("unexpectedAlertBehaviour")(unexpectedAlertBehaviour.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(webStorageEnabled)) __obj.updateDynamic("webStorageEnabled")(webStorageEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(webStorageEnabled)) __obj.updateDynamic("webStorageEnabled")(webStorageEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchDesiredCapabilities]
   }
 }

@@ -23,15 +23,15 @@ object ClipHtmlOptions {
   def apply(
     html: `true`,
     breakWords: js.UndefOr[Boolean] = js.undefined,
-    imageWeight: Int | Double = null,
+    imageWeight: js.UndefOr[Double] = js.undefined,
     indicator: String = null,
-    maxLines: Int | Double = null
+    maxLines: js.UndefOr[Double] = js.undefined
   ): ClipHtmlOptions = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
-    if (!js.isUndefined(breakWords)) __obj.updateDynamic("breakWords")(breakWords.asInstanceOf[js.Any])
-    if (imageWeight != null) __obj.updateDynamic("imageWeight")(imageWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakWords)) __obj.updateDynamic("breakWords")(breakWords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageWeight)) __obj.updateDynamic("imageWeight")(imageWeight.get.asInstanceOf[js.Any])
     if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLines)) __obj.updateDynamic("maxLines")(maxLines.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipHtmlOptions]
   }
 }

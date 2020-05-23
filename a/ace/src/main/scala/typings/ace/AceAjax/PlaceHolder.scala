@@ -1,7 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable4
-import org.scalablytyped.runtime.Instantiable6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,31 +43,20 @@ trait PlaceHolder extends js.Object {
   def showOtherMarkers(): Unit
 }
 
-@JSGlobal("AceAjax.PlaceHolder")
-@js.native
-object PlaceHolder
-  extends /**
-  * - @param session (Document): The document to associate with the anchor
-  * - @param length (Number): The starting row position
-  * - @param pos (Number): The starting column position
-  * - @param others (String):
-  * - @param mainClass (String):
-  * - @param othersClass (String):
-  **/
-Instantiable6[
-      /* session */ Document, 
-      /* length */ Double, 
-      /* pos */ Double, 
-      /* others */ String, 
-      /* mainClass */ String, 
-      /* othersClass */ String, 
-      PlaceHolder
-    ]
-     with Instantiable4[
-      /* session */ IEditSession, 
-      /* length */ Double, 
-      /* pos */ Position, 
-      /* positions */ js.Array[Position], 
-      PlaceHolder
-    ]
+object PlaceHolder {
+  @scala.inline
+  def apply(
+    cancel: () => Unit,
+    detach: () => Unit,
+    hideOtherMarkers: () => Unit,
+    on: (String, js.Function1[/* e */ js.Any, _]) => Unit,
+    onCursorChange: () => Unit,
+    onUpdate: () => Unit,
+    setup: () => Unit,
+    showOtherMarkers: () => Unit
+  ): PlaceHolder = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), detach = js.Any.fromFunction0(detach), hideOtherMarkers = js.Any.fromFunction0(hideOtherMarkers), on = js.Any.fromFunction2(on), onCursorChange = js.Any.fromFunction0(onCursorChange), onUpdate = js.Any.fromFunction0(onUpdate), setup = js.Any.fromFunction0(setup), showOtherMarkers = js.Any.fromFunction0(showOtherMarkers))
+    __obj.asInstanceOf[PlaceHolder]
+  }
+}
 

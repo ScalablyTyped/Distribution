@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ContactChangeType extends js.Object {
   /** A contact was modified. */
   @js.native
   sealed trait modified extends ContactChangeType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactChangeType with Double] = js.native
-  /* 3 */ @js.native
-  object changeTrackingLost extends TopLevel[changeTrackingLost with Double]
-  
-  /* 0 */ @js.native
-  object created extends TopLevel[created with Double]
-  
-  /* 2 */ @js.native
-  object deleted extends TopLevel[deleted with Double]
-  
-  /* 1 */ @js.native
-  object modified extends TopLevel[modified with Double]
   
 }
 

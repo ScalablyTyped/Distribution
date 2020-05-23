@@ -80,7 +80,7 @@ object Stage {
   @scala.inline
   def apply(
     accessLogSettings: AccessLogSettings = null,
-    cacheClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheClusterEnabled: js.UndefOr[Boolean] = js.undefined,
     cacheClusterSize: CacheClusterSize = null,
     cacheClusterStatus: CacheClusterStatus = null,
     canarySettings: CanarySettings = null,
@@ -93,13 +93,13 @@ object Stage {
     methodSettings: MapOfMethodSettings = null,
     stageName: String = null,
     tags: MapOfStringToString = null,
-    tracingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    tracingEnabled: js.UndefOr[Boolean] = js.undefined,
     variables: MapOfStringToString = null,
     webAclArn: String = null
   ): Stage = {
     val __obj = js.Dynamic.literal()
     if (accessLogSettings != null) __obj.updateDynamic("accessLogSettings")(accessLogSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheClusterEnabled)) __obj.updateDynamic("cacheClusterEnabled")(cacheClusterEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheClusterEnabled)) __obj.updateDynamic("cacheClusterEnabled")(cacheClusterEnabled.get.asInstanceOf[js.Any])
     if (cacheClusterSize != null) __obj.updateDynamic("cacheClusterSize")(cacheClusterSize.asInstanceOf[js.Any])
     if (cacheClusterStatus != null) __obj.updateDynamic("cacheClusterStatus")(cacheClusterStatus.asInstanceOf[js.Any])
     if (canarySettings != null) __obj.updateDynamic("canarySettings")(canarySettings.asInstanceOf[js.Any])
@@ -112,7 +112,7 @@ object Stage {
     if (methodSettings != null) __obj.updateDynamic("methodSettings")(methodSettings.asInstanceOf[js.Any])
     if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracingEnabled)) __obj.updateDynamic("tracingEnabled")(tracingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracingEnabled)) __obj.updateDynamic("tracingEnabled")(tracingEnabled.get.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     if (webAclArn != null) __obj.updateDynamic("webAclArn")(webAclArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stage]

@@ -1,6 +1,6 @@
 package typings.gulpTypescript.reporterMod
 
-import typings.gulpTypescript.AnonCharacter
+import typings.gulpTypescript.anon.Character
 import typings.gulpTypescript.typesMod.VinylFile
 import typings.std.Error
 import typings.typescript.mod.Diagnostic
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 
 trait TypeScriptError extends Error {
   var diagnostic: Diagnostic
-  var endPosition: js.UndefOr[AnonCharacter] = js.undefined
+  var endPosition: js.UndefOr[Character] = js.undefined
   var file: js.UndefOr[VinylFile] = js.undefined
   var fullFilename: js.UndefOr[String] = js.undefined
   var relativeFilename: js.UndefOr[String] = js.undefined
-  var startPosition: js.UndefOr[AnonCharacter] = js.undefined
+  var startPosition: js.UndefOr[Character] = js.undefined
   var tsFile: js.UndefOr[SourceFile] = js.undefined
 }
 
@@ -25,12 +25,12 @@ object TypeScriptError {
     diagnostic: Diagnostic,
     message: String,
     name: String,
-    endPosition: AnonCharacter = null,
+    endPosition: Character = null,
     file: VinylFile = null,
     fullFilename: String = null,
     relativeFilename: String = null,
     stack: String = null,
-    startPosition: AnonCharacter = null,
+    startPosition: Character = null,
     tsFile: SourceFile = null
   ): TypeScriptError = {
     val __obj = js.Dynamic.literal(diagnostic = diagnostic.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])

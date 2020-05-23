@@ -47,7 +47,7 @@ object FontFaceConfiguration {
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(formatHint)) __obj.updateDynamic("formatHint")(formatHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatHint)) __obj.updateDynamic("formatHint")(formatHint.get.asInstanceOf[js.Any])
     if (localFonts != null) __obj.updateDynamic("localFonts")(localFonts.asInstanceOf[js.Any])
     if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFaceConfiguration]

@@ -22,12 +22,12 @@ object SegmentData {
     segment: js.Array[Extent],
     depth: js.Array[Double] = null,
     featureSegments: js.Array[SegmentData] = null,
-    index: Int | Double = null
+    index: js.UndefOr[Double] = js.undefined
   ): SegmentData = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (featureSegments != null) __obj.updateDynamic("featureSegments")(featureSegments.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentData]
   }
 }

@@ -92,25 +92,25 @@ trait TableRowData extends js.Object {
 object TableRowData {
   @scala.inline
   def apply(
-    cellCount: Int | Double = null,
+    cellCount: js.UndefOr[Double] = js.undefined,
     cells: js.Array[TableCellData] = null,
     font: FontData = null,
     horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     isHeader: js.UndefOr[Boolean] = js.undefined,
-    preferredHeight: Int | Double = null,
-    rowIndex: Int | Double = null,
+    preferredHeight: js.UndefOr[Double] = js.undefined,
+    rowIndex: js.UndefOr[Double] = js.undefined,
     shadingColor: String = null,
     values: js.Array[js.Array[String]] = null,
     verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = null
   ): TableRowData = {
     val __obj = js.Dynamic.literal()
-    if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.get.asInstanceOf[js.Any])
     if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader.asInstanceOf[js.Any])
-    if (preferredHeight != null) __obj.updateDynamic("preferredHeight")(preferredHeight.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferredHeight)) __obj.updateDynamic("preferredHeight")(preferredHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])

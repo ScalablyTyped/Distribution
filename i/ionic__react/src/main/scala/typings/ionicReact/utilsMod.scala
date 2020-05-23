@@ -1,6 +1,8 @@
 package typings.ionicReact
 
 import typings.ionicCore.mod.Config_
+import typings.ionicCore.platformMod.Platforms
+import typings.ionicReact.anon.ElementeventskeystringeEv
 import typings.ionicReact.ionicReactPropsMod.IonicReactProps
 import typings.ionicReact.ionicReactStrings.android
 import typings.ionicReact.ionicReactStrings.capacitor
@@ -22,8 +24,8 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.PropsWithoutRef
 import typings.react.mod.RefAttributes
 import typings.std.DOMTokenList
-import typings.std.Document_
-import typings.std.Event_
+import typings.std.Document
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Omit
 import scala.scalajs.js
@@ -43,18 +45,16 @@ object utilsMod extends js.Object {
   def getClassName(classList: DOMTokenList, newProps: js.Any, oldProps: js.Any): String = js.native
   def getConfig(): Config_ | Null = js.native
   def getPlatforms(): js.Array[
-    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+    ipad | iphone | ios | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
   def isCoveredByReact(eventNameSuffix: String): Boolean = js.native
-  def isCoveredByReact(eventNameSuffix: String, doc: Document_): Boolean = js.native
-  def isPlatform(
-    platform: ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ): Boolean = js.native
+  def isCoveredByReact(eventNameSuffix: String, doc: Document): Boolean = js.native
+  def isPlatform(platform: Platforms): Boolean = js.native
   def syncEvent(node: ElementeventskeystringeEv, eventName: String): Unit = js.native
   def syncEvent(
     node: ElementeventskeystringeEv,
     eventName: String,
-    newEventHandler: js.Function1[/* e */ Event_, _]
+    newEventHandler: js.Function1[/* e */ Event, _]
   ): Unit = js.native
   type IonicReactExternalProps[PropType, ElementType] = PropType with (Omit[HTMLAttributes[ElementType], style]) with IonicReactProps
 }

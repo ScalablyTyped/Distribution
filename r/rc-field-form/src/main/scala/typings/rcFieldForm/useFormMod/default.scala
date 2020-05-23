@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-field-form/lib/useForm", JSImport.Default)
+@JSImport("rc-field-form/es/useForm", JSImport.Default)
 @js.native
 object default extends js.Object {
   def apply(): js.Array[FormInstance] = js.native

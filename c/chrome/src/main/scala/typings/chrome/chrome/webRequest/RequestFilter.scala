@@ -21,14 +21,14 @@ object RequestFilter {
   @scala.inline
   def apply(
     urls: js.Array[String],
-    tabId: Int | Double = null,
+    tabId: js.UndefOr[Double] = js.undefined,
     types: js.Array[ResourceType] = null,
-    windowId: Int | Double = null
+    windowId: js.UndefOr[Double] = js.undefined
   ): RequestFilter = {
     val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
-    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestFilter]
   }
 }

@@ -5,54 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.DynamicTexture")
 @js.native
-class DynamicTexture protected () extends Texture {
-  def this(name: String, options: js.Any, scene: js.UndefOr[scala.Nothing], generateMipMaps: Boolean) = this()
-  def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean) = this()
-  /**
-    * Creates a DynamicTexture
-    * @param name defines the name of the texture
-    * @param options provides 3 alternatives for width and height of texture, a canvas, object with width and height properties, number for both width and height
-    * @param scene defines the scene where you want the texture
-    * @param generateMipMaps defines the use of MinMaps or not (default is false)
-    * @param samplingMode defines the sampling mode to use (default is Texture.TRILINEAR_SAMPLINGMODE)
-    * @param format defines the texture format to use (default is Engine.TEXTUREFORMAT_RGBA)
-    */
-  def this(name: String, options: js.Any, scene: Scene, generateMipMaps: Boolean) = this()
-  def this(
-    name: String,
-    options: js.Any,
-    scene: js.UndefOr[scala.Nothing],
-    generateMipMaps: Boolean,
-    samplingMode: Double
-  ) = this()
-  def this(name: String, options: js.Any, scene: Null, generateMipMaps: Boolean, samplingMode: Double) = this()
-  def this(name: String, options: js.Any, scene: Scene, generateMipMaps: Boolean, samplingMode: Double) = this()
-  def this(
-    name: String,
-    options: js.Any,
-    scene: js.UndefOr[scala.Nothing],
-    generateMipMaps: Boolean,
-    samplingMode: Double,
-    format: Double
-  ) = this()
-  def this(
-    name: String,
-    options: js.Any,
-    scene: Null,
-    generateMipMaps: Boolean,
-    samplingMode: Double,
-    format: Double
-  ) = this()
-  def this(
-    name: String,
-    options: js.Any,
-    scene: Scene,
-    generateMipMaps: Boolean,
-    samplingMode: Double,
-    format: Double
-  ) = this()
+trait DynamicTexture extends Texture {
   var _canvas: js.Any = js.native
   var _context: js.Any = js.native
   var _engine: js.Any = js.native
@@ -62,114 +16,6 @@ class DynamicTexture protected () extends Texture {
     * Clears the texture
     */
   def clear(): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    font: String,
-    color: String,
-    clearColor: String
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean,
-    update: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    font: String,
-    color: String,
-    clearColor: String
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean,
-    update: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[scala.Nothing],
-    y: Null,
-    font: String,
-    color: String,
-    clearColor: String
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[scala.Nothing],
-    y: Null,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: js.UndefOr[scala.Nothing],
-    y: Null,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean,
-    update: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    font: String,
-    color: String,
-    clearColor: String
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean,
-    update: Boolean
-  ): Unit = js.native
   /**
     * Draws text onto the texture
     * @param text defines the text to be drawn
@@ -181,58 +27,18 @@ class DynamicTexture protected () extends Texture {
     * @param invertY defines the direction for the Y axis (default is true - y increases downwards)
     * @param update defines whether texture is immediately update (default is true)
     */
-  def drawText(text: String, x: Double, y: Double, font: String, color: String, clearColor: String): Unit = js.native
   def drawText(
     text: String,
-    x: Double,
-    y: Double,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: Double,
-    y: Double,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean,
-    update: Boolean
-  ): Unit = js.native
-  def drawText(text: String, x: Double, y: Null, font: String, color: String, clearColor: String): Unit = js.native
-  def drawText(
-    text: String,
-    x: Double,
-    y: Null,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: Double,
-    y: Null,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean,
-    update: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: Null,
-    y: js.UndefOr[scala.Nothing],
+    x: js.UndefOr[Double | Null],
+    y: js.UndefOr[Double | Null],
     font: String,
     color: String,
     clearColor: String
   ): Unit = js.native
   def drawText(
     text: String,
-    x: Null,
-    y: js.UndefOr[scala.Nothing],
+    x: js.UndefOr[Double | Null],
+    y: js.UndefOr[Double | Null],
     font: String,
     color: String,
     clearColor: String,
@@ -240,40 +46,8 @@ class DynamicTexture protected () extends Texture {
   ): Unit = js.native
   def drawText(
     text: String,
-    x: Null,
-    y: js.UndefOr[scala.Nothing],
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean,
-    update: Boolean
-  ): Unit = js.native
-  def drawText(text: String, x: Null, y: Double, font: String, color: String, clearColor: String): Unit = js.native
-  def drawText(
-    text: String,
-    x: Null,
-    y: Double,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean
-  ): Unit = js.native
-  def drawText(
-    text: String,
-    x: Null,
-    y: Double,
-    font: String,
-    color: String,
-    clearColor: String,
-    invertY: Boolean,
-    update: Boolean
-  ): Unit = js.native
-  def drawText(text: String, x: Null, y: Null, font: String, color: String, clearColor: String): Unit = js.native
-  def drawText(text: String, x: Null, y: Null, font: String, color: String, clearColor: String, invertY: Boolean): Unit = js.native
-  def drawText(
-    text: String,
-    x: Null,
-    y: Null,
+    x: js.UndefOr[Double | Null],
+    y: js.UndefOr[Double | Null],
     font: String,
     color: String,
     clearColor: String,

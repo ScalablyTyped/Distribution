@@ -58,9 +58,9 @@ object Room {
     lastUpdateDetails: RoomModification = null,
     participants: js.Array[RoomParticipant] = null,
     roomId: String = null,
-    roomStatusVersion: Int | Double = null,
+    roomStatusVersion: js.UndefOr[Double] = js.undefined,
     status: String = null,
-    variant: Int | Double = null
+    variant: js.UndefOr[Double] = js.undefined
   ): Room = {
     val __obj = js.Dynamic.literal()
     if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
@@ -73,9 +73,9 @@ object Room {
     if (lastUpdateDetails != null) __obj.updateDynamic("lastUpdateDetails")(lastUpdateDetails.asInstanceOf[js.Any])
     if (participants != null) __obj.updateDynamic("participants")(participants.asInstanceOf[js.Any])
     if (roomId != null) __obj.updateDynamic("roomId")(roomId.asInstanceOf[js.Any])
-    if (roomStatusVersion != null) __obj.updateDynamic("roomStatusVersion")(roomStatusVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(roomStatusVersion)) __obj.updateDynamic("roomStatusVersion")(roomStatusVersion.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (!js.isUndefined(variant)) __obj.updateDynamic("variant")(variant.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Room]
   }
 }

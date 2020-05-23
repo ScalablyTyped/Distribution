@@ -23,12 +23,12 @@ object QuotaServiceApplyOptions {
     allow: Double,
     identifier: String,
     timeUnit: minute | hour | day | week | month,
-    interval: Int | Double = null,
-    weight: Int | Double = null
+    interval: js.UndefOr[Double] = js.undefined,
+    weight: js.UndefOr[Double] = js.undefined
   ): QuotaServiceApplyOptions = {
     val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], timeUnit = timeUnit.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaServiceApplyOptions]
   }
 }

@@ -43,24 +43,24 @@ trait ClassifierEvaluationMetrics extends js.Object {
 object ClassifierEvaluationMetrics {
   @scala.inline
   def apply(
-    Accuracy: Int | scala.Double = null,
-    F1Score: Int | scala.Double = null,
-    HammingLoss: Int | scala.Double = null,
-    MicroF1Score: Int | scala.Double = null,
-    MicroPrecision: Int | scala.Double = null,
-    MicroRecall: Int | scala.Double = null,
-    Precision: Int | scala.Double = null,
-    Recall: Int | scala.Double = null
+    Accuracy: js.UndefOr[Double] = js.undefined,
+    F1Score: js.UndefOr[Double] = js.undefined,
+    HammingLoss: js.UndefOr[Double] = js.undefined,
+    MicroF1Score: js.UndefOr[Double] = js.undefined,
+    MicroPrecision: js.UndefOr[Double] = js.undefined,
+    MicroRecall: js.UndefOr[Double] = js.undefined,
+    Precision: js.UndefOr[Double] = js.undefined,
+    Recall: js.UndefOr[Double] = js.undefined
   ): ClassifierEvaluationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (Accuracy != null) __obj.updateDynamic("Accuracy")(Accuracy.asInstanceOf[js.Any])
-    if (F1Score != null) __obj.updateDynamic("F1Score")(F1Score.asInstanceOf[js.Any])
-    if (HammingLoss != null) __obj.updateDynamic("HammingLoss")(HammingLoss.asInstanceOf[js.Any])
-    if (MicroF1Score != null) __obj.updateDynamic("MicroF1Score")(MicroF1Score.asInstanceOf[js.Any])
-    if (MicroPrecision != null) __obj.updateDynamic("MicroPrecision")(MicroPrecision.asInstanceOf[js.Any])
-    if (MicroRecall != null) __obj.updateDynamic("MicroRecall")(MicroRecall.asInstanceOf[js.Any])
-    if (Precision != null) __obj.updateDynamic("Precision")(Precision.asInstanceOf[js.Any])
-    if (Recall != null) __obj.updateDynamic("Recall")(Recall.asInstanceOf[js.Any])
+    if (!js.isUndefined(Accuracy)) __obj.updateDynamic("Accuracy")(Accuracy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(F1Score)) __obj.updateDynamic("F1Score")(F1Score.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HammingLoss)) __obj.updateDynamic("HammingLoss")(HammingLoss.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MicroF1Score)) __obj.updateDynamic("MicroF1Score")(MicroF1Score.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MicroPrecision)) __obj.updateDynamic("MicroPrecision")(MicroPrecision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MicroRecall)) __obj.updateDynamic("MicroRecall")(MicroRecall.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Precision)) __obj.updateDynamic("Precision")(Precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Recall)) __obj.updateDynamic("Recall")(Recall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierEvaluationMetrics]
   }
 }

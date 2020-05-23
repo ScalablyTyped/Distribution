@@ -4,14 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Connectivity.LanIdentifier")
-@js.native
-class LanIdentifier () extends ILanIdentifier {
-  /* CompleteClass */
-  override var infrastructureId: LanIdentifierData = js.native
-  /* CompleteClass */
-  override var networkAdapterId: String = js.native
-  /* CompleteClass */
-  override var portId: LanIdentifierData = js.native
+trait LanIdentifier extends ILanIdentifier
+
+object LanIdentifier {
+  @scala.inline
+  def apply(infrastructureId: LanIdentifierData, networkAdapterId: String, portId: LanIdentifierData): LanIdentifier = {
+    val __obj = js.Dynamic.literal(infrastructureId = infrastructureId.asInstanceOf[js.Any], networkAdapterId = networkAdapterId.asInstanceOf[js.Any], portId = portId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LanIdentifier]
+  }
 }
 

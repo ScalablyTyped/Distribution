@@ -20,7 +20,7 @@ object DeploymentGroupAutoRollbackConfiguration {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, events: js.Array[String] = null): DeploymentGroupAutoRollbackConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentGroupAutoRollbackConfiguration]
   }

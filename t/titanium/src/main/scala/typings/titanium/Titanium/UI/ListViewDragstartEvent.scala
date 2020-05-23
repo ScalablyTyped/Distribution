@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the user starts dragging the list view.
-		 */
+  * Fired when the user starts dragging the list view.
+  */
 trait ListViewDragstartEvent extends ListViewBaseEvent {
   /**
-  			 * false. This event does not bubble.
-  			 */
+    * false. This event does not bubble.
+    */
   var bubbles: Boolean
 }
 

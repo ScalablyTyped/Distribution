@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** TextStream object */
-@JSGlobal("Scripting.TextStream")
 @js.native
-class TextStream protected () extends js.Object {
+trait TextStream extends js.Object {
   /** Is the current position at the end of a line? */
   val AtEndOfLine: Boolean = js.native
   /** Is the current position at the end of the stream? */

@@ -1,5 +1,6 @@
 package typings.reactVirtualized
 
+import typings.reactVirtualized.anon.ChildrenValidator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ object scrollSyncMod extends js.Object {
   /* static members */
   @js.native
   object ScrollSync extends js.Object {
-    var propTypes: AnonChildrenValidator = js.native
+    var propTypes: ChildrenValidator = js.native
   }
   
 }

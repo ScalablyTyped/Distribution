@@ -38,16 +38,16 @@ object Configurations {
   def apply(
     classNames: ClassnamesConfigurations = null,
     clone: js.UndefOr[Boolean] = js.undefined,
-    openingInterval: Int | Double = null,
+    openingInterval: js.UndefOr[Double] = js.undefined,
     panelNodetype: String = null,
-    transitionDuration: Int | Double = null
+    transitionDuration: js.UndefOr[Double] = js.undefined
   ): Configurations = {
     val __obj = js.Dynamic.literal()
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
-    if (openingInterval != null) __obj.updateDynamic("openingInterval")(openingInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(openingInterval)) __obj.updateDynamic("openingInterval")(openingInterval.get.asInstanceOf[js.Any])
     if (panelNodetype != null) __obj.updateDynamic("panelNodetype")(panelNodetype.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configurations]
   }
 }

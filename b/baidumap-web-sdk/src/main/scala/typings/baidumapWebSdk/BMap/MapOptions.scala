@@ -20,16 +20,16 @@ object MapOptions {
     enableHighResolution: js.UndefOr[Boolean] = js.undefined,
     enableMapClick: js.UndefOr[Boolean] = js.undefined,
     mapType: MapType = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined
   ): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableAutoResize)) __obj.updateDynamic("enableAutoResize")(enableAutoResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHighResolution)) __obj.updateDynamic("enableHighResolution")(enableHighResolution.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMapClick)) __obj.updateDynamic("enableMapClick")(enableMapClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoResize)) __obj.updateDynamic("enableAutoResize")(enableAutoResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHighResolution)) __obj.updateDynamic("enableHighResolution")(enableHighResolution.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMapClick)) __obj.updateDynamic("enableMapClick")(enableMapClick.get.asInstanceOf[js.Any])
     if (mapType != null) __obj.updateDynamic("mapType")(mapType.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
 }

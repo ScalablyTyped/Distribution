@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,26 +44,6 @@ object ALPHA_MODES extends js.Object {
   
   @js.native
   sealed trait UNPACK extends ALPHA_MODES
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ALPHA_MODES with Double] = js.native
-  /* 0 */ @js.native
-  object NO_PREMULTIPLIED_ALPHA extends TopLevel[NO_PREMULTIPLIED_ALPHA with Double]
-  
-  /* 3 */ @js.native
-  object NPM extends TopLevel[NPM with Double]
-  
-  /* 5 */ @js.native
-  object PMA extends TopLevel[PMA with Double]
-  
-  /* 2 */ @js.native
-  object PREMULTIPLIED_ALPHA extends TopLevel[PREMULTIPLIED_ALPHA with Double]
-  
-  /* 1 */ @js.native
-  object PREMULTIPLY_ON_UPLOAD extends TopLevel[PREMULTIPLY_ON_UPLOAD with Double]
-  
-  /* 4 */ @js.native
-  object UNPACK extends TopLevel[UNPACK with Double]
   
 }
 

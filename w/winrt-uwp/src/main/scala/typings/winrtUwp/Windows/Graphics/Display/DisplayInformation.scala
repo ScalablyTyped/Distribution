@@ -6,7 +6,6 @@ import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.colorprofilechanged
-import typings.winrtUwp.winrtUwpStrings.displaycontentsinvalidated
 import typings.winrtUwp.winrtUwpStrings.dpichanged
 import typings.winrtUwp.winrtUwpStrings.orientationchanged
 import typings.winrtUwp.winrtUwpStrings.stereoenabledchanged
@@ -15,9 +14,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Monitors and controls physical display information. The class provides events to allow clients to monitor for changes in the display. */
-@JSGlobal("Windows.Graphics.Display.DisplayInformation")
 @js.native
-abstract class DisplayInformation () extends js.Object {
+trait DisplayInformation extends js.Object {
   /** Gets the current orientation of a rectangular monitor. */
   var currentOrientation: DisplayOrientations = js.native
   /** Diagonal size of the display in inches. */
@@ -79,29 +77,5 @@ abstract class DisplayInformation () extends js.Object {
   def removeEventListener_orientationchanged(`type`: orientationchanged, listener: TypedEventHandler[DisplayInformation, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_stereoenabledchanged(`type`: stereoenabledchanged, listener: TypedEventHandler[DisplayInformation, _]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Graphics.Display.DisplayInformation")
-@js.native
-object DisplayInformation extends js.Object {
-  /** Gets and sets the preferred orientation of the app. */
-  var autoRotationPreferences: DisplayOrientations = js.native
-  /** Occurs when the display requires redrawing. */
-  @JSName("ondisplaycontentsinvalidated")
-  var ondisplaycontentsinvalidated_Original: TypedEventHandler[DisplayInformation, _] = js.native
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_displaycontentsinvalidated(`type`: displaycontentsinvalidated, listener: TypedEventHandler[DisplayInformation, _]): Unit = js.native
-  /**
-    * Gets the current physical display information.
-    * @return A DisplayInformation object that contains the current physical display information.
-    */
-  def getForCurrentView(): DisplayInformation = js.native
-  /** Occurs when the display requires redrawing. */
-  def ondisplaycontentsinvalidated(ev: js.Any with WinRTEvent[DisplayInformation]): Unit = js.native
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_displaycontentsinvalidated(`type`: displaycontentsinvalidated, listener: TypedEventHandler[DisplayInformation, _]): Unit = js.native
 }
 

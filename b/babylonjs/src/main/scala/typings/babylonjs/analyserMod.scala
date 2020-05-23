@@ -1,5 +1,7 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Width
+import typings.babylonjs.anon.Y
 import typings.babylonjs.sceneMod.Scene
 import typings.std.AudioNode
 import typings.std.Float32Array
@@ -27,12 +29,12 @@ object analyserMod extends js.Object {
       * Gets or sets the position of the debug canvas
       * @ignorenaming
       */
-    var DEBUGCANVASPOS: AnonY = js.native
+    var DEBUGCANVASPOS: Y = js.native
     /**
       * Gets or sets the debug canvas size
       * @ignorenaming
       */
-    var DEBUGCANVASSIZE: AnonWidth = js.native
+    var DEBUGCANVASSIZE: Width = js.native
     /**
       * Gets or sets the FFT table size
       * @ignorenaming

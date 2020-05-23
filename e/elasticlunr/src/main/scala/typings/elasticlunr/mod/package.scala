@@ -12,7 +12,7 @@ package object mod {
     */ typings.elasticlunr.elasticlunrStrings.FieldSearchConfig with org.scalablytyped.runtime.TopLevel[js.Any]
   type IndexDocuments[T] = org.scalablytyped.runtime.StringDictionary[T]
   type IndexTokens = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
-  type InvertedIndexDocs = org.scalablytyped.runtime.StringDictionary[typings.elasticlunr.AnonTf]
+  type InvertedIndexDocs = org.scalablytyped.runtime.StringDictionary[typings.elasticlunr.anon.Tf]
   type PipelineFunction = js.Function3[
     /* token */ java.lang.String, 
     /* i */ scala.Double, 

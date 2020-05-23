@@ -39,7 +39,7 @@ trait VpnGateway extends js.Object {
 object VpnGateway {
   @scala.inline
   def apply(
-    AmazonSideAsn: Int | scala.Double = null,
+    AmazonSideAsn: js.UndefOr[Long] = js.undefined,
     AvailabilityZone: String = null,
     State: VpnState = null,
     Tags: TagList = null,
@@ -48,7 +48,7 @@ object VpnGateway {
     VpnGatewayId: String = null
   ): VpnGateway = {
     val __obj = js.Dynamic.literal()
-    if (AmazonSideAsn != null) __obj.updateDynamic("AmazonSideAsn")(AmazonSideAsn.asInstanceOf[js.Any])
+    if (!js.isUndefined(AmazonSideAsn)) __obj.updateDynamic("AmazonSideAsn")(AmazonSideAsn.get.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

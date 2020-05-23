@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.data.PivotDataSource")
 @js.native
-class PivotDataSource () extends DataSource {
-  def this(options: PivotDataSourceOptions) = this()
+trait PivotDataSource extends DataSource {
   def axes(): PivotSchemaAxes = js.native
   def catalog(): String = js.native
   def catalog(`val`: String): Unit = js.native

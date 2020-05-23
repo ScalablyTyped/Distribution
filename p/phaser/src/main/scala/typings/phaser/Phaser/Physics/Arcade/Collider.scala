@@ -11,28 +11,8 @@ import scala.scalajs.js.annotation._
   * An Arcade Physics Collider will automatically check for collision, or overlaps, between two objects
   * every step. If a collision, or overlap, occurs it will invoke the given callbacks.
   */
-@JSGlobal("Phaser.Physics.Arcade.Collider")
 @js.native
-class Collider protected () extends js.Object {
-  /**
-    * 
-    * @param world The Arcade physics World that will manage the collisions.
-    * @param overlapOnly Whether to check for collisions or overlap.
-    * @param object1 The first object to check for collision.
-    * @param object2 The second object to check for collision.
-    * @param collideCallback The callback to invoke when the two objects collide.
-    * @param processCallback The callback to invoke when the two objects collide. Must return a boolean.
-    * @param callbackContext The scope in which to call the callbacks.
-    */
-  def this(
-    world: World,
-    overlapOnly: Boolean,
-    object1: ArcadeColliderType,
-    object2: ArcadeColliderType,
-    collideCallback: ArcadePhysicsCallback,
-    processCallback: ArcadePhysicsCallback,
-    callbackContext: js.Any
-  ) = this()
+trait Collider extends js.Object {
   /**
     * Whether the collider is active.
     */

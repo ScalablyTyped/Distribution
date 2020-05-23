@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait RowsRenderingEventUIParam extends js.Object {
   /**
-  	 * Gets a reference to the grid.
-  	 */
+    * Gets a reference to the grid.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets reference to the grid's table body.
-  	 */
+    * Gets reference to the grid's table body.
+    */
   var tbody: js.UndefOr[Element] = js.undefined
 }
 

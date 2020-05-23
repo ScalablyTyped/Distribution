@@ -28,7 +28,7 @@ object StyledGridProps {
     $behavior: BEHAVIOR = null,
     $gridGutters: Responsive[Double] = null,
     $gridMargins: Responsive[Double] = null,
-    $gridMaxWidth: Int | Double = null,
+    $gridMaxWidth: js.UndefOr[Double] = js.undefined,
     $gridUnit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any = null
   ): StyledGridProps = {
     val __obj = js.Dynamic.literal()
@@ -36,7 +36,7 @@ object StyledGridProps {
     if ($behavior != null) __obj.updateDynamic("$behavior")($behavior.asInstanceOf[js.Any])
     if ($gridGutters != null) __obj.updateDynamic("$gridGutters")($gridGutters.asInstanceOf[js.Any])
     if ($gridMargins != null) __obj.updateDynamic("$gridMargins")($gridMargins.asInstanceOf[js.Any])
-    if ($gridMaxWidth != null) __obj.updateDynamic("$gridMaxWidth")($gridMaxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined($gridMaxWidth)) __obj.updateDynamic("$gridMaxWidth")($gridMaxWidth.get.asInstanceOf[js.Any])
     if ($gridUnit != null) __obj.updateDynamic("$gridUnit")($gridUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyledGridProps]
   }

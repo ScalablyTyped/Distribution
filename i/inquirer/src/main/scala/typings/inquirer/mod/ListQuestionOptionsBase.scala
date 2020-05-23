@@ -32,7 +32,7 @@ object ListQuestionOptionsBase {
     filter: /* input */ js.Any => _ = null,
     message: AsyncDynamicQuestionProperty[String, T] = null,
     name: KeyUnion[T] = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
     suffix: String = null,
     `type`: String = null,
@@ -45,7 +45,7 @@ object ListQuestionOptionsBase {
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

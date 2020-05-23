@@ -162,25 +162,8 @@ object ɵDirectiveDef {
     ] = null,
     viewQuery: (/* rf */ ɵRenderFlags, T) => Unit = null
   ): ɵDirectiveDef[T] = {
-    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs.asInstanceOf[js.Any], hostVars = hostVars.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs.asInstanceOf[js.Any], hostVars = hostVars.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any], afterContentChecked = js.Any.fromFunction0(afterContentChecked), afterContentInit = js.Any.fromFunction0(afterContentInit), afterViewChecked = js.Any.fromFunction0(afterViewChecked), afterViewInit = js.Any.fromFunction0(afterViewInit), contentQueries = js.Any.fromFunction3(contentQueries), doCheck = js.Any.fromFunction0(doCheck), exportAs = exportAs.asInstanceOf[js.Any], factory = factory.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], hostAttrs = hostAttrs.asInstanceOf[js.Any], hostBindings = js.Any.fromFunction2(hostBindings), onChanges = js.Any.fromFunction0(onChanges), onDestroy = js.Any.fromFunction0(onDestroy), onInit = js.Any.fromFunction0(onInit), providersResolver = js.Any.fromFunction2(providersResolver), setInput = setInput.asInstanceOf[js.Any], viewQuery = js.Any.fromFunction2(viewQuery))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (afterContentChecked != null) __obj.updateDynamic("afterContentChecked")(js.Any.fromFunction0(afterContentChecked))
-    if (afterContentInit != null) __obj.updateDynamic("afterContentInit")(js.Any.fromFunction0(afterContentInit))
-    if (afterViewChecked != null) __obj.updateDynamic("afterViewChecked")(js.Any.fromFunction0(afterViewChecked))
-    if (afterViewInit != null) __obj.updateDynamic("afterViewInit")(js.Any.fromFunction0(afterViewInit))
-    if (contentQueries != null) __obj.updateDynamic("contentQueries")(js.Any.fromFunction3(contentQueries))
-    if (doCheck != null) __obj.updateDynamic("doCheck")(js.Any.fromFunction0(doCheck))
-    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs.asInstanceOf[js.Any])
-    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (hostAttrs != null) __obj.updateDynamic("hostAttrs")(hostAttrs.asInstanceOf[js.Any])
-    if (hostBindings != null) __obj.updateDynamic("hostBindings")(js.Any.fromFunction2(hostBindings))
-    if (onChanges != null) __obj.updateDynamic("onChanges")(js.Any.fromFunction0(onChanges))
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
-    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
-    if (providersResolver != null) __obj.updateDynamic("providersResolver")(js.Any.fromFunction2(providersResolver))
-    if (setInput != null) __obj.updateDynamic("setInput")(setInput.asInstanceOf[js.Any])
-    if (viewQuery != null) __obj.updateDynamic("viewQuery")(js.Any.fromFunction2(viewQuery))
     __obj.asInstanceOf[ɵDirectiveDef[T]]
   }
 }

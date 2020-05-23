@@ -24,12 +24,12 @@ object DescribePatchBaselinesRequest {
   @scala.inline
   def apply(
     Filters: PatchOrchestratorFilterList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[PatchBaselineMaxResults] = js.undefined,
     NextToken: NextToken = null
   ): DescribePatchBaselinesRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePatchBaselinesRequest]
   }

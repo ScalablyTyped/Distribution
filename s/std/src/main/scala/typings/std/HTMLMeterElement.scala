@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +15,4 @@ trait HTMLMeterElement extends HTMLElement {
   var optimum: Double = js.native
   var value: Double = js.native
 }
-
-@JSGlobal("HTMLMeterElement")
-@js.native
-object HTMLMeterElement extends Instantiable0[HTMLMeterElement]
 

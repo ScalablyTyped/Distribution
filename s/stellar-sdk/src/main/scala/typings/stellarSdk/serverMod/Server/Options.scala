@@ -14,7 +14,7 @@ object Options {
   @scala.inline
   def apply(allowHttp: js.UndefOr[Boolean] = js.undefined, appName: String = null, appVersion: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHttp)) __obj.updateDynamic("allowHttp")(allowHttp.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHttp)) __obj.updateDynamic("allowHttp")(allowHttp.get.asInstanceOf[js.Any])
     if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
     if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

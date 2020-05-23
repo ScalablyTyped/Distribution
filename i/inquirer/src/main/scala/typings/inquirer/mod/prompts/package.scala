@@ -15,7 +15,7 @@ package object prompts {
     * @template T
     * The type of the answers.
     */
-  type PromptOptions[T /* <: typings.inquirer.mod.Question[typings.inquirer.mod.Answers] */] = T with typings.inquirer.AnonChoices
+  type PromptOptions[T /* <: typings.inquirer.mod.Question[typings.inquirer.mod.Answers] */] = T with typings.inquirer.anon.Choices
   /**
     * Represents the state of a prompt.
     */

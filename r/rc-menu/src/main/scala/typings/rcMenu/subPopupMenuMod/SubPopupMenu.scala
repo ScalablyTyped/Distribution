@@ -1,6 +1,6 @@
 package typings.rcMenu.subPopupMenuMod
 
-import typings.rcMenu.AnonFocusable
+import typings.rcMenu.anon.Focusable
 import typings.rcMenu.interfaceMod.DestroyEventHandler
 import typings.rcMenu.interfaceMod.HoverEventHandler
 import typings.rcMenu.interfaceMod.MenuClickEventHandler
@@ -53,6 +53,6 @@ class SubPopupMenu protected ()
 @JSImport("rc-menu/lib/SubPopupMenu", "SubPopupMenu")
 @js.native
 object SubPopupMenu extends js.Object {
-  var defaultProps: AnonFocusable = js.native
+  var defaultProps: Focusable = js.native
 }
 

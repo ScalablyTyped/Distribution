@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`count-or-amount`
 import typings.arcgisJsApi.arcgisJsApiStrings.`date-and-time`
 import typings.arcgisJsApi.arcgisJsApiStrings.`global-id`
@@ -129,8 +128,4 @@ trait Field
     */
   var valueType: binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier` = js.native
 }
-
-@JSGlobal("__esri.Field")
-@js.native
-object Field extends TopLevel[FieldConstructor]
 

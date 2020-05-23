@@ -1,6 +1,6 @@
 package typings.testingLibraryVue.mod
 
-import typings.testingLibraryDom.PartialConfig
+import typings.testingLibraryDom.anon.PartialConfig
 import typings.testingLibraryDom.configMod.ConfigFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`

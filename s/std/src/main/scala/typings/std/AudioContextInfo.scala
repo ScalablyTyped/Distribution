@@ -11,10 +11,10 @@ trait AudioContextInfo extends js.Object {
 
 object AudioContextInfo {
   @scala.inline
-  def apply(currentTime: Int | Double = null, sampleRate: Int | Double = null): AudioContextInfo = {
+  def apply(currentTime: js.UndefOr[Double] = js.undefined, sampleRate: js.UndefOr[Double] = js.undefined): AudioContextInfo = {
     val __obj = js.Dynamic.literal()
-    if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentTime)) __obj.updateDynamic("currentTime")(currentTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioContextInfo]
   }
 }

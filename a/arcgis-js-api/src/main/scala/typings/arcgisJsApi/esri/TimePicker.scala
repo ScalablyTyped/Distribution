@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +19,4 @@ trait TimePicker extends Widget_ {
     */
   var viewModel: TimePickerViewModel = js.native
 }
-
-@JSGlobal("__esri.TimePicker")
-@js.native
-object TimePicker extends TopLevel[TimePickerConstructor]
 

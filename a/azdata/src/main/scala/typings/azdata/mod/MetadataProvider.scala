@@ -20,10 +20,10 @@ object MetadataProvider {
     getTableInfo: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]],
     getViewInfo: (String, ObjectMetadata) => Thenable[js.Array[ColumnMetadata]],
     providerId: String,
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): MetadataProvider = {
     val __obj = js.Dynamic.literal(getDatabases = js.Any.fromFunction1(getDatabases), getMetadata = js.Any.fromFunction1(getMetadata), getTableInfo = js.Any.fromFunction2(getTableInfo), getViewInfo = js.Any.fromFunction2(getViewInfo), providerId = providerId.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataProvider]
   }
 }

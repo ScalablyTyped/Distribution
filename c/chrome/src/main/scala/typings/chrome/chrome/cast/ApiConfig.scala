@@ -4,41 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.ApiConfig")
-@js.native
-class ApiConfig protected () extends js.Object {
-  /**
-    * @param {!chrome.cast.SessionRequest} sessionRequest
-    * @param {function(!chrome.cast.Session)} sessionListener
-    * @param {function(!chrome.cast.ReceiverAvailability,Array<Object>)}
-    *     receiverListener
-    * @param {chrome.cast.AutoJoinPolicy=} opt_autoJoinPolicy
-    * @param {chrome.cast.DefaultActionPolicy=} opt_defaultActionPolicy
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.ApiConfig
-    */
-  def this(
+trait ApiConfig extends js.Object {
+  var autoJoinPolicy: js.UndefOr[AutoJoinPolicy] = js.undefined
+  var defaultActionPolicy: DefaultActionPolicy
+  var sessionRequest: SessionRequest
+  def receiverListener(receiverAvailability: ReceiverAvailability): Unit
+  def sessionListener(session: Session): Unit
+}
+
+object ApiConfig {
+  @scala.inline
+  def apply(
+    defaultActionPolicy: DefaultActionPolicy,
+    receiverListener: ReceiverAvailability => Unit,
+    sessionListener: Session => Unit,
     sessionRequest: SessionRequest,
-    sessionListener: js.Function1[/* session */ Session, Unit],
-    receiverListener: js.Function1[/* receiverAvailability */ ReceiverAvailability, Unit]
-  ) = this()
-  def this(
-    sessionRequest: SessionRequest,
-    sessionListener: js.Function1[/* session */ Session, Unit],
-    receiverListener: js.Function1[/* receiverAvailability */ ReceiverAvailability, Unit],
-    autoJoinPolicy: AutoJoinPolicy
-  ) = this()
-  def this(
-    sessionRequest: SessionRequest,
-    sessionListener: js.Function1[/* session */ Session, Unit],
-    receiverListener: js.Function1[/* receiverAvailability */ ReceiverAvailability, Unit],
-    autoJoinPolicy: AutoJoinPolicy,
-    defaultActionPolicy: DefaultActionPolicy
-  ) = this()
-  var autoJoinPolicy: js.UndefOr[AutoJoinPolicy] = js.native
-  var defaultActionPolicy: DefaultActionPolicy = js.native
-  var sessionRequest: SessionRequest = js.native
-  def receiverListener(receiverAvailability: ReceiverAvailability): Unit = js.native
-  def sessionListener(session: Session): Unit = js.native
+    autoJoinPolicy: AutoJoinPolicy = null
+  ): ApiConfig = {
+    val __obj = js.Dynamic.literal(defaultActionPolicy = defaultActionPolicy.asInstanceOf[js.Any], receiverListener = js.Any.fromFunction1(receiverListener), sessionListener = js.Any.fromFunction1(sessionListener), sessionRequest = sessionRequest.asInstanceOf[js.Any])
+    if (autoJoinPolicy != null) __obj.updateDynamic("autoJoinPolicy")(autoJoinPolicy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApiConfig]
+  }
 }
 

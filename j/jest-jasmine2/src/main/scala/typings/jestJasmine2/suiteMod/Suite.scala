@@ -58,6 +58,6 @@ trait Suite extends js.Object {
   def pend(): Unit = js.native
   def pend(_message: String): Unit = js.native
   def sharedUserContext(): js.Object = js.native
-  def status(): failed | pending | disabled | finished = js.native
+  def status(): disabled | pending | failed | finished = js.native
 }
 

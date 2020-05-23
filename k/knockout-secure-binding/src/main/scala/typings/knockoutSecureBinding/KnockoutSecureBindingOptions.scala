@@ -24,7 +24,7 @@ object KnockoutSecureBindingOptions {
     if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
     if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (!js.isUndefined(noVirtualElements)) __obj.updateDynamic("noVirtualElements")(noVirtualElements.asInstanceOf[js.Any])
+    if (!js.isUndefined(noVirtualElements)) __obj.updateDynamic("noVirtualElements")(noVirtualElements.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutSecureBindingOptions]
   }
 }

@@ -344,20 +344,20 @@ object StructureMapGroupRuleSource {
     defaultValueCount: Count = null,
     defaultValueDate: date = null,
     defaultValueDateTime: dateTime = null,
-    defaultValueDecimal: Int | Double = null,
+    defaultValueDecimal: js.UndefOr[decimal] = js.undefined,
     defaultValueDistance: Distance = null,
     defaultValueDuration: Duration = null,
     defaultValueHumanName: HumanName = null,
     defaultValueId: id = null,
     defaultValueIdentifier: Identifier = null,
     defaultValueInstant: instant = null,
-    defaultValueInteger: Int | Double = null,
+    defaultValueInteger: js.UndefOr[integer] = js.undefined,
     defaultValueMarkdown: markdown = null,
     defaultValueMeta: Meta = null,
     defaultValueMoney: Money = null,
     defaultValueOid: oid = null,
     defaultValuePeriod: Period = null,
-    defaultValuePositiveInt: Int | Double = null,
+    defaultValuePositiveInt: js.UndefOr[positiveInt] = js.undefined,
     defaultValueQuantity: Quantity = null,
     defaultValueRange: Range = null,
     defaultValueRatio: Ratio = null,
@@ -367,7 +367,7 @@ object StructureMapGroupRuleSource {
     defaultValueString: String = null,
     defaultValueTime: time = null,
     defaultValueTiming: Timing = null,
-    defaultValueUnsignedInt: Int | Double = null,
+    defaultValueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
     defaultValueUri: uri = null,
     element: String = null,
     extension: js.Array[Extension] = null,
@@ -375,7 +375,7 @@ object StructureMapGroupRuleSource {
     id: String = null,
     listMode: code = null,
     max: String = null,
-    min: Int | Double = null,
+    min: js.UndefOr[integer] = js.undefined,
     modifierExtension: js.Array[Extension] = null,
     `type`: String = null,
     variable: id = null
@@ -415,7 +415,7 @@ object StructureMapGroupRuleSource {
     if (defaultValueAnnotation != null) __obj.updateDynamic("defaultValueAnnotation")(defaultValueAnnotation.asInstanceOf[js.Any])
     if (defaultValueAttachment != null) __obj.updateDynamic("defaultValueAttachment")(defaultValueAttachment.asInstanceOf[js.Any])
     if (defaultValueBase64Binary != null) __obj.updateDynamic("defaultValueBase64Binary")(defaultValueBase64Binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValueBoolean)) __obj.updateDynamic("defaultValueBoolean")(defaultValueBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValueBoolean)) __obj.updateDynamic("defaultValueBoolean")(defaultValueBoolean.get.asInstanceOf[js.Any])
     if (defaultValueCode != null) __obj.updateDynamic("defaultValueCode")(defaultValueCode.asInstanceOf[js.Any])
     if (defaultValueCodeableConcept != null) __obj.updateDynamic("defaultValueCodeableConcept")(defaultValueCodeableConcept.asInstanceOf[js.Any])
     if (defaultValueCoding != null) __obj.updateDynamic("defaultValueCoding")(defaultValueCoding.asInstanceOf[js.Any])
@@ -423,20 +423,20 @@ object StructureMapGroupRuleSource {
     if (defaultValueCount != null) __obj.updateDynamic("defaultValueCount")(defaultValueCount.asInstanceOf[js.Any])
     if (defaultValueDate != null) __obj.updateDynamic("defaultValueDate")(defaultValueDate.asInstanceOf[js.Any])
     if (defaultValueDateTime != null) __obj.updateDynamic("defaultValueDateTime")(defaultValueDateTime.asInstanceOf[js.Any])
-    if (defaultValueDecimal != null) __obj.updateDynamic("defaultValueDecimal")(defaultValueDecimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValueDecimal)) __obj.updateDynamic("defaultValueDecimal")(defaultValueDecimal.get.asInstanceOf[js.Any])
     if (defaultValueDistance != null) __obj.updateDynamic("defaultValueDistance")(defaultValueDistance.asInstanceOf[js.Any])
     if (defaultValueDuration != null) __obj.updateDynamic("defaultValueDuration")(defaultValueDuration.asInstanceOf[js.Any])
     if (defaultValueHumanName != null) __obj.updateDynamic("defaultValueHumanName")(defaultValueHumanName.asInstanceOf[js.Any])
     if (defaultValueId != null) __obj.updateDynamic("defaultValueId")(defaultValueId.asInstanceOf[js.Any])
     if (defaultValueIdentifier != null) __obj.updateDynamic("defaultValueIdentifier")(defaultValueIdentifier.asInstanceOf[js.Any])
     if (defaultValueInstant != null) __obj.updateDynamic("defaultValueInstant")(defaultValueInstant.asInstanceOf[js.Any])
-    if (defaultValueInteger != null) __obj.updateDynamic("defaultValueInteger")(defaultValueInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValueInteger)) __obj.updateDynamic("defaultValueInteger")(defaultValueInteger.get.asInstanceOf[js.Any])
     if (defaultValueMarkdown != null) __obj.updateDynamic("defaultValueMarkdown")(defaultValueMarkdown.asInstanceOf[js.Any])
     if (defaultValueMeta != null) __obj.updateDynamic("defaultValueMeta")(defaultValueMeta.asInstanceOf[js.Any])
     if (defaultValueMoney != null) __obj.updateDynamic("defaultValueMoney")(defaultValueMoney.asInstanceOf[js.Any])
     if (defaultValueOid != null) __obj.updateDynamic("defaultValueOid")(defaultValueOid.asInstanceOf[js.Any])
     if (defaultValuePeriod != null) __obj.updateDynamic("defaultValuePeriod")(defaultValuePeriod.asInstanceOf[js.Any])
-    if (defaultValuePositiveInt != null) __obj.updateDynamic("defaultValuePositiveInt")(defaultValuePositiveInt.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValuePositiveInt)) __obj.updateDynamic("defaultValuePositiveInt")(defaultValuePositiveInt.get.asInstanceOf[js.Any])
     if (defaultValueQuantity != null) __obj.updateDynamic("defaultValueQuantity")(defaultValueQuantity.asInstanceOf[js.Any])
     if (defaultValueRange != null) __obj.updateDynamic("defaultValueRange")(defaultValueRange.asInstanceOf[js.Any])
     if (defaultValueRatio != null) __obj.updateDynamic("defaultValueRatio")(defaultValueRatio.asInstanceOf[js.Any])
@@ -446,7 +446,7 @@ object StructureMapGroupRuleSource {
     if (defaultValueString != null) __obj.updateDynamic("defaultValueString")(defaultValueString.asInstanceOf[js.Any])
     if (defaultValueTime != null) __obj.updateDynamic("defaultValueTime")(defaultValueTime.asInstanceOf[js.Any])
     if (defaultValueTiming != null) __obj.updateDynamic("defaultValueTiming")(defaultValueTiming.asInstanceOf[js.Any])
-    if (defaultValueUnsignedInt != null) __obj.updateDynamic("defaultValueUnsignedInt")(defaultValueUnsignedInt.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValueUnsignedInt)) __obj.updateDynamic("defaultValueUnsignedInt")(defaultValueUnsignedInt.get.asInstanceOf[js.Any])
     if (defaultValueUri != null) __obj.updateDynamic("defaultValueUri")(defaultValueUri.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
@@ -454,7 +454,7 @@ object StructureMapGroupRuleSource {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])

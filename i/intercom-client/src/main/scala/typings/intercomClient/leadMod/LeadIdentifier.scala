@@ -5,19 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.intercomClient.AnonId
-  - typings.intercomClient.AnonUserid
+  - typings.intercomClient.anon.Id
+  - typings.intercomClient.anon.Userid
 */
 trait LeadIdentifier extends js.Object
 
 object LeadIdentifier {
   @scala.inline
-  def AnonId(id: String): LeadIdentifier = {
+  def Id(id: String): LeadIdentifier = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeadIdentifier]
   }
   @scala.inline
-  def AnonUserid(user_id: String): LeadIdentifier = {
+  def Userid(user_id: String): LeadIdentifier = {
     val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeadIdentifier]
   }

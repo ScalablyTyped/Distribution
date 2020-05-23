@@ -18,9 +18,9 @@ trait ListChannelsRequest extends js.Object {
 
 object ListChannelsRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, nextToken: NextToken = null): ListChannelsRequest = {
+  def apply(maxResults: js.UndefOr[MaxResults] = js.undefined, nextToken: NextToken = null): ListChannelsRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListChannelsRequest]
   }

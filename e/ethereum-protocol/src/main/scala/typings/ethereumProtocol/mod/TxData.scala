@@ -16,7 +16,7 @@ object TxData {
     data: String = null,
     gas: Double | String | default = null,
     gasPrice: Double | String | default = null,
-    nonce: Int | Double = null,
+    nonce: js.UndefOr[Double] = js.undefined,
     to: String = null,
     value: Double | String | default = null
   ): TxData = {
@@ -24,7 +24,7 @@ object TxData {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
     if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonce)) __obj.updateDynamic("nonce")(nonce.get.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TxData]

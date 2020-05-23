@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.UI.WebUI.WebUINavigatedOperation")
-@js.native
-class WebUINavigatedOperation () extends IWebUINavigatedOperation {
-  /* CompleteClass */
-  override def getDeferral(): WebUINavigatedDeferral = js.native
+trait WebUINavigatedOperation extends IWebUINavigatedOperation
+
+object WebUINavigatedOperation {
+  @scala.inline
+  def apply(getDeferral: () => WebUINavigatedDeferral): WebUINavigatedOperation = {
+    val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral))
+    __obj.asInstanceOf[WebUINavigatedOperation]
+  }
 }
 

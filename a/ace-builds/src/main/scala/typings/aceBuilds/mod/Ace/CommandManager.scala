@@ -1,8 +1,8 @@
 package typings.aceBuilds.mod.Ace
 
-import typings.aceBuilds.AnonMac
 import typings.aceBuilds.aceBuildsStrings.afterExec
 import typings.aceBuilds.aceBuildsStrings.exec
+import typings.aceBuilds.anon.Mac
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +14,8 @@ trait CommandManager extends EventEmitter {
   def addCommand(command: Command): Unit = js.native
   def bindKey(key: String, command: CommandLike): Unit = js.native
   def bindKey(key: String, command: CommandLike, position: Double): Unit = js.native
-  def bindKey(key: AnonMac, command: CommandLike): Unit = js.native
-  def bindKey(key: AnonMac, command: CommandLike, position: Double): Unit = js.native
+  def bindKey(key: Mac, command: CommandLike): Unit = js.native
+  def bindKey(key: Mac, command: CommandLike, position: Double): Unit = js.native
   def exec(command: String, editor: Editor, args: js.Any): Boolean = js.native
   @JSName("on")
   def on_afterExec(name: afterExec, callback: execEventHandler): js.Function = js.native

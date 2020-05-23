@@ -42,14 +42,14 @@ trait IDirective[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /
 
 object IDirective {
   @scala.inline
-  def apply[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](
+  def apply[TScope, TElement, TAttributes, TController](
     bindToController: Boolean | StringDictionary[String] = null,
     compile: (TElement, TAttributes, /* transclude */ ITranscludeFunction) => Unit | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController]) = null,
     controller: String | Injectable[IControllerConstructor] = null,
     controllerAs: String = null,
     link: (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController]) = null,
     multiElement: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     replace: js.UndefOr[Boolean] = js.undefined,
     require: String | js.Array[String] | StringDictionary[String] = null,
     restrict: String = null,
@@ -66,16 +66,16 @@ object IDirective {
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiElement)) __obj.updateDynamic("multiElement")(multiElement.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiElement)) __obj.updateDynamic("multiElement")(multiElement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.get.asInstanceOf[js.Any])
     if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
     if (restrict != null) __obj.updateDynamic("restrict")(restrict.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateNamespace != null) __obj.updateDynamic("templateNamespace")(templateNamespace.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.get.asInstanceOf[js.Any])
     if (transclude != null) __obj.updateDynamic("transclude")(transclude.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDirective[TScope, TElement, TAttributes, TController]]
   }

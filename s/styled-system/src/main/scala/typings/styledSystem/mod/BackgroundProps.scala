@@ -24,19 +24,21 @@ trait BackgroundProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
 
 object BackgroundProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](
-    background: ResponsiveValue[TVal, ThemeType] = null,
-    backgroundImage: ResponsiveValue[BackgroundImageProperty, ThemeType] = null,
-    backgroundPosition: ResponsiveValue[BackgroundPositionProperty[TLengthStyledSystem], ThemeType] = null,
-    backgroundRepeat: ResponsiveValue[BackgroundRepeatProperty, ThemeType] = null,
-    backgroundSize: ResponsiveValue[BackgroundSizeProperty[TLengthStyledSystem], ThemeType] = null
+  def apply[ThemeType, TVal](
+    background: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
+    backgroundImage: js.UndefOr[Null | (ResponsiveValue[BackgroundImageProperty, ThemeType])] = js.undefined,
+    backgroundPosition: js.UndefOr[
+      Null | (ResponsiveValue[BackgroundPositionProperty[TLengthStyledSystem], ThemeType])
+    ] = js.undefined,
+    backgroundRepeat: js.UndefOr[Null | (ResponsiveValue[BackgroundRepeatProperty, ThemeType])] = js.undefined,
+    backgroundSize: js.UndefOr[Null | (ResponsiveValue[BackgroundSizeProperty[TLengthStyledSystem], ThemeType])] = js.undefined
   ): BackgroundProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
-    if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
-    if (backgroundRepeat != null) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])
-    if (backgroundSize != null) __obj.updateDynamic("backgroundSize")(backgroundSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundImage)) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundPosition)) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundRepeat)) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundSize)) __obj.updateDynamic("backgroundSize")(backgroundSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundProps[ThemeType, TVal]]
   }
 }

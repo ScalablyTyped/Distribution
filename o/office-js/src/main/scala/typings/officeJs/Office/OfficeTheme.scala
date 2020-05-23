@@ -19,19 +19,19 @@ import scala.scalajs.js.annotation._
   */
 trait OfficeTheme extends js.Object {
   /**
-    * Gets the Office theme body background color as a hexadecimal color triplet (e.g. "FFA500").
+    * Gets the Office theme body background color as a hexadecimal color triplet (e.g., "FFA500").
     */
   var bodyBackgroundColor: String
   /**
-    * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g. "FFA500").
+    * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., "FFA500").
     */
   var bodyForegroundColor: String
   /**
-    * Gets the Office theme control background color as a hexadecimal color triplet (e.g. "FFA500").
+    * Gets the Office theme control background color as a hexadecimal color triplet (e.g., "FFA500").
     */
   var controlBackgroundColor: String
   /**
-    * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g. "FFA500").
+    * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "FFA500").
     */
   var controlForegroundColor: String
 }

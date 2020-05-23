@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ConditionalDataBarPositiveFormatData
 import typings.officeJs.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
 import typings.officeJs.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +16,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.ConditionalDataBarPositiveFormat")
 @js.native
-class ConditionalDataBarPositiveFormat () extends ClientObject {
+trait ConditionalDataBarPositiveFormat extends ClientObject {
   /**
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     "" (empty string) if no border is present or set.
     *
     * [Api set: ExcelApi 1.6]
@@ -32,14 +31,14 @@ class ConditionalDataBarPositiveFormat () extends ClientObject {
   var context_ConditionalDataBarPositiveFormat: RequestContext = js.native
   /**
     *
-    * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.6]
     */
   var fillColor: String = js.native
   /**
     *
-    * Boolean representation of whether or not the DataBar has a gradient.
+    * Specifies if the DataBar has a gradient.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -51,7 +50,7 @@ class ConditionalDataBarPositiveFormat () extends ClientObject {
     */
   def load(): ConditionalDataBarPositiveFormat = js.native
   def load(options: ConditionalDataBarPositiveFormatLoadOptions): ConditionalDataBarPositiveFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ConditionalDataBarPositiveFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ConditionalDataBarPositiveFormat = js.native
   def load(propertyNames: String): ConditionalDataBarPositiveFormat = js.native
   def load(propertyNames: js.Array[String]): ConditionalDataBarPositiveFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

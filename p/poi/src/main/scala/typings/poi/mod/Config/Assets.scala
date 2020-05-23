@@ -10,9 +10,9 @@ trait Assets extends js.Object {
 
 object Assets {
   @scala.inline
-  def apply(inlineImageMaxSize: Int | Double = null): Assets = {
+  def apply(inlineImageMaxSize: js.UndefOr[Double] = js.undefined): Assets = {
     val __obj = js.Dynamic.literal()
-    if (inlineImageMaxSize != null) __obj.updateDynamic("inlineImageMaxSize")(inlineImageMaxSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineImageMaxSize)) __obj.updateDynamic("inlineImageMaxSize")(inlineImageMaxSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Assets]
   }
 }

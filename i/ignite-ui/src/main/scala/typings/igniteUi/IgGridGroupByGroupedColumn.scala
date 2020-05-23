@@ -7,37 +7,34 @@ import scala.scalajs.js.annotation._
 
 trait IgGridGroupByGroupedColumn
   extends /**
-	 * Option for IgGridGroupByGroupedColumn
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * [column](ui.iggrid#options:columns) object for the column that is grouped
-  	 *
-  	 */
+    * [column](ui.iggrid#options:columns) object for the column that is grouped
+    *
+    */
   var col: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * sort order - ascending or descending
-  	 *
-  	 */
+    * sort order - ascending or descending
+    *
+    */
   var dir: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Key of the column that's grouped
-  	 */
+    * Key of the column that's grouped
+    */
   var key: js.UndefOr[String] = js.undefined
   /**
-  	 * Key of the columnLayout, if the grid is hierarchical
-  	 *
-  	 */
+    * Key of the columnLayout, if the grid is hierarchical
+    *
+    */
   var layout: js.UndefOr[String] = js.undefined
 }
 
 object IgGridGroupByGroupedColumn {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgGridGroupByGroupedColumn
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     col: js.Any = null,
     dir: js.Any = null,
     key: String = null,

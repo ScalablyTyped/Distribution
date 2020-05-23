@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object MediaPlaybackAutoRepeatMode extends js.Object {
   /** Repeat the current track. */
   @js.native
   sealed trait track extends MediaPlaybackAutoRepeatMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaPlaybackAutoRepeatMode with Double] = js.native
-  /* 2 */ @js.native
-  object list extends TopLevel[list with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object track extends TopLevel[track with Double]
   
 }
 

@@ -23,7 +23,7 @@ object PrimitiveDefinition {
   ): PrimitiveDefinition = {
     val __obj = js.Dynamic.literal()
     if (defaultComponents != null) __obj.updateDynamic("defaultComponents")(defaultComponents.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
     if (mappings != null) __obj.updateDynamic("mappings")(mappings.asInstanceOf[js.Any])
     if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimitiveDefinition]

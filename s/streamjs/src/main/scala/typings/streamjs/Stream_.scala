@@ -17,9 +17,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Stream")
 @js.native
-class Stream_[T] () extends js.Object {
+trait Stream_[T] extends js.Object {
   def allMatch(predicate: Predicate[T]): Boolean = js.native
   def allMatch(regexp: RegExp): Boolean = js.native
   def allMatch(sample: Sample): Boolean = js.native

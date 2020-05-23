@@ -21,8 +21,8 @@ object ListenOptions {
     waitForSyncWhenOnline: js.UndefOr[Boolean] = js.undefined
   ): ListenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeMetadataChanges)) __obj.updateDynamic("includeMetadataChanges")(includeMetadataChanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSyncWhenOnline)) __obj.updateDynamic("waitForSyncWhenOnline")(waitForSyncWhenOnline.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeMetadataChanges)) __obj.updateDynamic("includeMetadataChanges")(includeMetadataChanges.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForSyncWhenOnline)) __obj.updateDynamic("waitForSyncWhenOnline")(waitForSyncWhenOnline.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenOptions]
   }
 }

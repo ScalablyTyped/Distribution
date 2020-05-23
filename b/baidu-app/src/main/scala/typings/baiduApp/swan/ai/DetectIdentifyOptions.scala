@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 用户向服务请求检测图像中的主体位置。
-		 */
+  * 用户向服务请求检测图像中的主体位置。
+  */
 trait DetectIdentifyOptions
   extends BaseOptions[js.Any, js.Any] {
   var image: String
@@ -25,13 +25,13 @@ object DetectIdentifyOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
     success: /* res */ DetectIdentifyResponse => Unit = null,
-    with_face: Int | Double = null
+    with_face: js.UndefOr[Double] = js.undefined
   ): DetectIdentifyOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (with_face != null) __obj.updateDynamic("with_face")(with_face.asInstanceOf[js.Any])
+    if (!js.isUndefined(with_face)) __obj.updateDynamic("with_face")(with_face.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectIdentifyOptions]
   }
 }

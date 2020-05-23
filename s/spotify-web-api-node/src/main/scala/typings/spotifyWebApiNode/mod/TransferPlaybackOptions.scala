@@ -13,7 +13,7 @@ object TransferPlaybackOptions {
   @scala.inline
   def apply(device_ids: js.Array[String], play: js.UndefOr[Boolean] = js.undefined): TransferPlaybackOptions = {
     val __obj = js.Dynamic.literal(device_ids = device_ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
+    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferPlaybackOptions]
   }
 }

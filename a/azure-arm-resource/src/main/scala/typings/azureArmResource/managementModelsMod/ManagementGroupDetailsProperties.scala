@@ -20,14 +20,14 @@ object ManagementGroupDetailsProperties {
     parent: ParentGroupInfo = null,
     updatedBy: String = null,
     updatedTime: Date = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): ManagementGroupDetailsProperties = {
     val __obj = js.Dynamic.literal()
     if (managementGroupType != null) __obj.updateDynamic("managementGroupType")(managementGroupType.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (updatedBy != null) __obj.updateDynamic("updatedBy")(updatedBy.asInstanceOf[js.Any])
     if (updatedTime != null) __obj.updateDynamic("updatedTime")(updatedTime.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagementGroupDetailsProperties]
   }
 }

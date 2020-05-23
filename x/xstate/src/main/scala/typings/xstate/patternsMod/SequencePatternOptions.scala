@@ -13,7 +13,7 @@ trait SequencePatternOptions[TEvent /* <: EventObject */] extends js.Object {
 
 object SequencePatternOptions {
   @scala.inline
-  def apply[TEvent /* <: EventObject */](nextEvent: Event[TEvent] = null, prevEvent: Event[TEvent] = null): SequencePatternOptions[TEvent] = {
+  def apply[TEvent](nextEvent: Event[TEvent] = null, prevEvent: Event[TEvent] = null): SequencePatternOptions[TEvent] = {
     val __obj = js.Dynamic.literal()
     if (nextEvent != null) __obj.updateDynamic("nextEvent")(nextEvent.asInstanceOf[js.Any])
     if (prevEvent != null) __obj.updateDynamic("prevEvent")(prevEvent.asInstanceOf[js.Any])

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait ChartGridlinesData extends js.Object {
   /**
     *
-    * Represents the formatting of chart gridlines. Read-only.
+    * Represents the formatting of chart gridlines.
     *
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartGridlinesFormatData] = js.undefined
   /**
     *
-    * Boolean value representing if the axis gridlines are visible or not.
+    * Specifies if the axis gridlines are visible.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -27,7 +27,7 @@ object ChartGridlinesData {
   def apply(format: ChartGridlinesFormatData = null, visible: js.UndefOr[Boolean] = js.undefined): ChartGridlinesData = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartGridlinesData]
   }
 }

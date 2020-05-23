@@ -31,12 +31,7 @@ object Fields {
   def apply(
     Policy: String,
     `X-Amz-Signature`: String,
-    StringDictionary: /**
-    * Additional keys that must be included in the form to be submitted. This
-    * will include signature metadata as well as any fields provided to
-    * s3.createPresignedPost
-    */
-  /* key */ StringDictionary[String] = null
+    StringDictionary: /* name */ StringDictionary[String] = null
   ): Fields = {
     val __obj = js.Dynamic.literal(Policy = Policy.asInstanceOf[js.Any])
     __obj.updateDynamic("X-Amz-Signature")(`X-Amz-Signature`.asInstanceOf[js.Any])

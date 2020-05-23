@@ -14,10 +14,13 @@ trait IModifyPushConfigRequest extends js.Object {
 
 object IModifyPushConfigRequest {
   @scala.inline
-  def apply(pushConfig: IPushConfig = null, subscription: String = null): IModifyPushConfigRequest = {
+  def apply(
+    pushConfig: js.UndefOr[Null | IPushConfig] = js.undefined,
+    subscription: js.UndefOr[Null | String] = js.undefined
+  ): IModifyPushConfigRequest = {
     val __obj = js.Dynamic.literal()
-    if (pushConfig != null) __obj.updateDynamic("pushConfig")(pushConfig.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(pushConfig)) __obj.updateDynamic("pushConfig")(pushConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModifyPushConfigRequest]
   }
 }

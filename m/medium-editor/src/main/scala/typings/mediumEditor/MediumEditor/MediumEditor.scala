@@ -2,7 +2,7 @@ package typings.mediumEditor.MediumEditor
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.mediumEditor.AnonMajor
+import typings.mediumEditor.anon.Major
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import typings.std.NodeList
@@ -21,7 +21,7 @@ Instantiable1[/* elements */ elementType, typings.mediumEditor.MediumEditor.Medi
       typings.mediumEditor.MediumEditor.MediumEditor
     ] {
   // Properties
-  var version: AnonMajor = js.native
+  var version: Major = js.native
   def addElements(elements: elementType): Unit = js.native
   // Helper Functions
   def checkContentChanged(): Unit = js.native

@@ -14,10 +14,13 @@ trait IOpDeprecation extends js.Object {
 
 object IOpDeprecation {
   @scala.inline
-  def apply(explanation: String = null, version: Int | Double = null): IOpDeprecation = {
+  def apply(
+    explanation: js.UndefOr[Null | String] = js.undefined,
+    version: js.UndefOr[Null | Double] = js.undefined
+  ): IOpDeprecation = {
     val __obj = js.Dynamic.literal()
-    if (explanation != null) __obj.updateDynamic("explanation")(explanation.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(explanation)) __obj.updateDynamic("explanation")(explanation.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpDeprecation]
   }
 }

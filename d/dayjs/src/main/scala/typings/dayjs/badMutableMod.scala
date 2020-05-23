@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dayjs/plugin/badMutable", JSImport.Namespace)
 @js.native
-object badMutableMod extends TopLevel[PluginFunc]
+object badMutableMod
+  extends TopLevel[PluginFunc[js.Any]]
 

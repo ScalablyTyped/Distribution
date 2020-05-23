@@ -3,7 +3,9 @@ package typings.testingLibraryJestDom
 import typings.std.HTMLElement
 import typings.std.Record
 import typings.std.RegExp
+import typings.std.ReturnType
 import typings.std.SVGElement
+import typings.testingLibraryJestDom.anon.NormalizeWhitespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -285,6 +287,104 @@ object jest extends js.Object {
     def toHaveClass(classNames: String*): R = js.native
     /**
       * @description
+      * Check the accessible description for an element.
+      * This allows you to check whether the given element has a description or not.
+      *
+      * An element gets its description via the
+      * [`aria-describedby` attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute).
+      * Set this to the `id` of one or more other elements. These elements may be nested
+      * inside, be outside, or a sibling of the passed in element.
+      *
+      * Whitespace is normalized. Using multiple ids will
+      * [join the referenced elements’ text content separated by a space](https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_description).
+      *
+      * When a `string` argument is passed through, it will perform a whole
+      * case-sensitive match to the description text.
+      *
+      * To perform a case-insensitive match, you can use a `RegExp` with the `/i`
+      * modifier.
+      *
+      * To perform a partial match, you can pass a `RegExp` or use
+      * `expect.stringContaining("partial string")`.
+      *
+      * @example
+      * <button aria-label="Close" aria-describedby="description-close">
+      *   X
+      * </button>
+      * <div id="description-close">
+      *   Closing will discard any changes
+      * </div>
+      *
+      * <button>Delete</button>
+      *
+      * const closeButton = getByRole('button', {name: 'Close'})
+      *
+      * expect(closeButton).toHaveDescription('Closing will discard any changes')
+      * expect(closeButton).toHaveDescription(/will discard/) // to partially match
+      * expect(closeButton).toHaveDescription(expect.stringContaining('will discard')) // to partially match
+      * expect(closeButton).toHaveDescription(/^closing/i) // to use case-insensitive match
+      * expect(closeButton).not.toHaveDescription('Other description')
+      *
+      * const deleteButton = getByRole('button', {name: 'Delete'})
+      * expect(deleteButton).not.toHaveDescription()
+      * expect(deleteButton).toHaveDescription('') // Missing or empty description always becomes a blank string
+      * @see
+      * [testing-library/jest-dom#tohavedescription](https:github.com/testing-library/jest-dom#tohavedescription)
+      */
+    def toHaveDescription(): R = js.native
+    def toHaveDescription(text: String): R = js.native
+    def toHaveDescription(text: RegExp): R = js.native
+    def toHaveDescription(
+      text: ReturnType[
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof expect.stringContaining */ _
+        ]
+    ): R = js.native
+    /**
+      * @description
+      * This allows you to check whether the given form element has the specified displayed value (the one the
+      * end user will see). It accepts <input>, <select> and <textarea> elements with the exception of <input type="checkbox">
+      * and <input type="radio">, which can be meaningfully matched only using toBeChecked or toHaveFormValues.
+      * @example
+      * <label for="input-example">First name</label>
+      * <input type="text" id="input-example" value="Luca" />
+      *
+      * <label for="textarea-example">Description</label>
+      * <textarea id="textarea-example">An example description here.</textarea>
+      *
+      * <label for="single-select-example">Fruit</label>
+      * <select id="single-select-example">
+      *   <option value="">Select a fruit...</option>
+      *   <option value="banana">Banana</option>
+      *   <option value="ananas">Ananas</option>
+      *   <option value="avocado">Avocado</option>
+      * </select>
+      *
+      * <label for="mutiple-select-example">Fruits</label>
+      * <select id="multiple-select-example" multiple>
+      *   <option value="">Select a fruit...</option>
+      *   <option value="banana" selected>Banana</option>
+      *   <option value="ananas">Ananas</option>
+      *   <option value="avocado" selected>Avocado</option>
+      * </select>
+      *
+      * const input = screen.getByLabelText('First name')
+      * const textarea = screen.getByLabelText('Description')
+      * const selectSingle = screen.getByLabelText('Fruit')
+      * const selectMultiple = screen.getByLabelText('Fruits')
+      *
+      * expect(input).toHaveDisplayValue('Luca')
+      * expect(textarea).toHaveDisplayValue('An example description here.')
+      * expect(selectSingle).toHaveDisplayValue('Select a fruit...')
+      * expect(selectMultiple).toHaveDisplayValue(['Banana', 'Avocado'])
+      *
+      * @see
+      * [testing-library/jest-dom#tohavedisplayvalue](https:github.com/testing-library/jest-dom#tohavedisplayvalue)
+      */
+    def toHaveDisplayValue(value: String): R = js.native
+    def toHaveDisplayValue(value: js.Array[String | RegExp]): R = js.native
+    def toHaveDisplayValue(value: RegExp): R = js.native
+    /**
+      * @description
       * Assert whether an element has focus or not.
       * @example
       * <div>
@@ -369,9 +469,9 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tohavetextcontent](https:github.com/testing-library/jest-dom#tohavetextcontent)
       */
     def toHaveTextContent(text: String): R = js.native
-    def toHaveTextContent(text: String, options: AnonNormalizeWhitespace): R = js.native
+    def toHaveTextContent(text: String, options: NormalizeWhitespace): R = js.native
     def toHaveTextContent(text: RegExp): R = js.native
-    def toHaveTextContent(text: RegExp, options: AnonNormalizeWhitespace): R = js.native
+    def toHaveTextContent(text: RegExp, options: NormalizeWhitespace): R = js.native
     /**
       * @description
       * Check whether the given form element has the specified value.

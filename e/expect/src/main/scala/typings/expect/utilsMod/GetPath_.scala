@@ -20,7 +20,7 @@ object GetPath_ {
     value: js.Any = null
   ): GetPath_ = {
     val __obj = js.Dynamic.literal(lastTraversedObject = lastTraversedObject.asInstanceOf[js.Any], traversedPath = traversedPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasEndProp)) __obj.updateDynamic("hasEndProp")(hasEndProp.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasEndProp)) __obj.updateDynamic("hasEndProp")(hasEndProp.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPath_]
   }

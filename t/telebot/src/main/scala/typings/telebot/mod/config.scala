@@ -1,7 +1,7 @@
 package typings.telebot.mod
 
-import typings.telebot.AnonCert
-import typings.telebot.AnonInterval
+import typings.telebot.anon.Cert
+import typings.telebot.anon.Interval
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,11 +13,11 @@ trait config extends js.Object {
    // Optional. Use build-in plugins from pluginFolder.
   var pluginFolder: js.UndefOr[String] = js.undefined
    // Required. Telegram Bot API token.
-  var polling: js.UndefOr[AnonInterval] = js.undefined
+  var polling: js.UndefOr[Interval] = js.undefined
   var token: String
    // Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
   var usePlugins: js.UndefOr[js.Array[String]] = js.undefined
-  var webhook: js.UndefOr[AnonCert] = js.undefined
+  var webhook: js.UndefOr[Cert] = js.undefined
 }
 
 object config {
@@ -27,9 +27,9 @@ object config {
     allowedUpdates: js.Array[String] = null,
     pluginConfig: js.Any = null,
     pluginFolder: String = null,
-    polling: AnonInterval = null,
+    polling: Interval = null,
     usePlugins: js.Array[String] = null,
-    webhook: AnonCert = null
+    webhook: Cert = null
   ): config = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     if (allowedUpdates != null) __obj.updateDynamic("allowedUpdates")(allowedUpdates.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,29 +33,6 @@ object ChartLegendPosition extends js.Object {
   
   @js.native
   sealed trait top extends ChartLegendPosition
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartLegendPosition with String] = js.native
-  /* "Bottom" */ @js.native
-  object bottom extends TopLevel[bottom with String]
-  
-  /* "Corner" */ @js.native
-  object corner extends TopLevel[corner with String]
-  
-  /* "Custom" */ @js.native
-  object custom extends TopLevel[custom with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "Left" */ @js.native
-  object left extends TopLevel[left with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
-  /* "Top" */ @js.native
-  object top extends TopLevel[top with String]
   
 }
 

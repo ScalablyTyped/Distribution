@@ -1,6 +1,6 @@
 package typings.serverless.serviceMod
 
-import typings.serverless.AnonCompiledCloudFormationTemplate
+import typings.serverless.anon.CompiledCloudFormationTemplate
 import typings.serverless.mod.Event
 import typings.serverless.mod.FunctionDefinition
 import scala.scalajs.js
@@ -14,7 +14,7 @@ class ^ protected () extends Service {
   /* CompleteClass */
   override var custom: Custom = js.native
   /* CompleteClass */
-  override var provider: AnonCompiledCloudFormationTemplate = js.native
+  override var provider: CompiledCloudFormationTemplate = js.native
   /* CompleteClass */
   override def getAllEventsInFunction(functionName: String): js.Array[Event] = js.native
   /* CompleteClass */

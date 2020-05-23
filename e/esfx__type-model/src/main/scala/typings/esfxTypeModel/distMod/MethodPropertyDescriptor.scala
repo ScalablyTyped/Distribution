@@ -13,16 +13,16 @@ trait MethodPropertyDescriptor[T /* <: js.Function1[/* repeated */ js.Any, _] */
 
 object MethodPropertyDescriptor {
   @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](
+  def apply[T](
     value: T,
     configurable: js.UndefOr[Boolean] = js.undefined,
     enumerable: js.UndefOr[Boolean] = js.undefined,
     writable: js.UndefOr[Boolean] = js.undefined
   ): MethodPropertyDescriptor[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
+    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodPropertyDescriptor[T]]
   }
 }

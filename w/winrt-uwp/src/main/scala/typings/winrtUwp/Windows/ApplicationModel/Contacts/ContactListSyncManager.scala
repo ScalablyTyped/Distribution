@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides functionality for syncing contact information with the server. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactListSyncManager")
 @js.native
-abstract class ContactListSyncManager () extends js.Object {
+trait ContactListSyncManager extends js.Object {
   /** Gets the last time a sync was attempted with the server. */
   var lastAttemptedSyncTime: Date = js.native
   /** Gets the last time the ContactList was successfully synced with the server. */

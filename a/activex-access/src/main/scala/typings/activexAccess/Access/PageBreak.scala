@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.PageBreak")
 @js.native
-class PageBreak protected () extends js.Object {
+trait PageBreak extends js.Object {
   @JSName("Access.PageBreak_typekey")
   var AccessDotPageBreak_typekey: PageBreak = js.native
   val Application: typings.activexAccess.Access.Application = js.native

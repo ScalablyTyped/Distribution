@@ -78,8 +78,8 @@ object IOptions {
     if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(defaultRenderer.asInstanceOf[js.Any])
     if (defaultSizes != null) __obj.updateDynamic("defaultSizes")(defaultSizes.asInstanceOf[js.Any])
     if (headerVisibility != null) __obj.updateDynamic("headerVisibility")(headerVisibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchLastColumn)) __obj.updateDynamic("stretchLastColumn")(stretchLastColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchLastRow)) __obj.updateDynamic("stretchLastRow")(stretchLastRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretchLastColumn)) __obj.updateDynamic("stretchLastColumn")(stretchLastColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretchLastRow)) __obj.updateDynamic("stretchLastRow")(stretchLastRow.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

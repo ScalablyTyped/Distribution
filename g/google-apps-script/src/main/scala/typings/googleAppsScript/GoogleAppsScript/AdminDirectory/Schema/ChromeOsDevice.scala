@@ -107,7 +107,7 @@ object ChromeOsDevice {
     if (systemRamFreeReports != null) __obj.updateDynamic("systemRamFreeReports")(systemRamFreeReports.asInstanceOf[js.Any])
     if (systemRamTotal != null) __obj.updateDynamic("systemRamTotal")(systemRamTotal.asInstanceOf[js.Any])
     if (tpmVersionInfo != null) __obj.updateDynamic("tpmVersionInfo")(tpmVersionInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(willAutoRenew)) __obj.updateDynamic("willAutoRenew")(willAutoRenew.asInstanceOf[js.Any])
+    if (!js.isUndefined(willAutoRenew)) __obj.updateDynamic("willAutoRenew")(willAutoRenew.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOsDevice]
   }
 }

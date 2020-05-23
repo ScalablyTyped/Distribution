@@ -4,8 +4,14 @@ import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.GameObjects.Components.TransformMatrix
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Types.Renderer.Snapshot.SnapshotState
+import typings.phaser.integer
+import typings.std.ArrayBuffer
 import typings.std.CanvasRenderingContext2D
+import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
+import typings.std.Uint8Array
+import typings.std.WebGLBuffer
+import typings.std.WebGLProgram
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -132,6 +138,300 @@ object Renderer extends js.Object {
         * @param config The configuration object for this WebGL Pipeline, as described above.
         */
       def this(config: js.Object) = this()
+      /**
+        * Indicates if the current pipeline is active or not for this frame only.
+        * Reset in the onRender method.
+        */
+      /* CompleteClass */
+      override var active: Boolean = js.native
+      /**
+        * Array of objects that describe the vertex attributes
+        */
+      /* CompleteClass */
+      override var attributes: js.Object = js.native
+      /**
+        * Uint8 view to the vertex raw buffer. Used for uploading vertex buffer resources
+        * to the GPU.
+        */
+      /* CompleteClass */
+      override var bytes: Uint8Array = js.native
+      /**
+        * Indicates if the current pipeline is flushing the contents to the GPU.
+        * When the variable is set the flush function will be locked.
+        */
+      /* CompleteClass */
+      override var flushLocked: Boolean = js.native
+      /**
+        * The Game which owns this WebGL Pipeline.
+        */
+      /* CompleteClass */
+      override var game: typings.phaser.Phaser.Game = js.native
+      /**
+        * The WebGL context this WebGL Pipeline uses.
+        */
+      /* CompleteClass */
+      override var gl: WebGLRenderingContext = js.native
+      /**
+        * Height of the current viewport
+        */
+      /* CompleteClass */
+      override var height: Double = js.native
+      /**
+        * Name of the Pipeline. Used for identifying
+        */
+      /* CompleteClass */
+      override var name: String = js.native
+      /**
+        * The handle to a WebGL program
+        */
+      /* CompleteClass */
+      override var program: WebGLProgram = js.native
+      /**
+        * The WebGL Renderer which owns this WebGL Pipeline.
+        */
+      /* CompleteClass */
+      override var renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer = js.native
+      /**
+        * Used to store the current game resolution
+        */
+      /* CompleteClass */
+      override var resolution: Double = js.native
+      /**
+        * The primitive topology which the pipeline will use to submit draw calls
+        */
+      /* CompleteClass */
+      override var topology: integer = js.native
+      /**
+        * The handle to a WebGL vertex buffer object.
+        */
+      /* CompleteClass */
+      override var vertexBuffer: WebGLBuffer = js.native
+      /**
+        * The limit of vertices that the pipeline can hold
+        */
+      /* CompleteClass */
+      override var vertexCapacity: integer = js.native
+      /**
+        * This will store the amount of components of 32 bit length
+        */
+      /* CompleteClass */
+      override var vertexComponentCount: integer = js.native
+      /**
+        * How many vertices have been fed to the current pipeline.
+        */
+      /* CompleteClass */
+      override var vertexCount: Double = js.native
+      /**
+        * Raw byte buffer of vertices.
+        */
+      /* CompleteClass */
+      override var vertexData: ArrayBuffer = js.native
+      /**
+        * The size in bytes of the vertex
+        */
+      /* CompleteClass */
+      override var vertexSize: integer = js.native
+      /**
+        * The canvas which this WebGL Pipeline renders to.
+        */
+      /* CompleteClass */
+      override var view: HTMLCanvasElement = js.native
+      /**
+        * Width of the current viewport
+        */
+      /* CompleteClass */
+      override var width: Double = js.native
+      /**
+        * Adds a description of vertex attribute to the pipeline
+        * @param name Name of the vertex attribute
+        * @param size Vertex component size
+        * @param type Type of the attribute
+        * @param normalized Is the value normalized to a range
+        * @param offset Byte offset to the beginning of the first element in the vertex
+        */
+      /* CompleteClass */
+      override def addAttribute(name: String, size: integer, `type`: integer, normalized: Boolean, offset: integer): this.type = js.native
+      /**
+        * Binds the pipeline resources, including programs, vertex buffers and binds attributes
+        */
+      /* CompleteClass */
+      override def bind(): this.type = js.native
+      /**
+        * Called when the Game has fully booted and the Renderer has finished setting up.
+        * 
+        * By this stage all Game level systems are now in place and you can perform any final
+        * tasks that the pipeline may need that relied on game systems such as the Texture Manager.
+        */
+      /* CompleteClass */
+      override def boot(): Unit = js.native
+      /**
+        * Removes all object references in this WebGL Pipeline and removes its program from the WebGL context.
+        */
+      /* CompleteClass */
+      override def destroy(): this.type = js.native
+      /**
+        * Uploads the vertex data and emits a draw call
+        * for the current batch of vertices.
+        */
+      /* CompleteClass */
+      override def flush(): this.type = js.native
+      /**
+        * Set whenever this WebGL Pipeline is bound to a WebGL Renderer.
+        * 
+        * This method is called every time the WebGL Pipeline is attempted to be bound, even if it already is the current pipeline.
+        */
+      /* CompleteClass */
+      override def onBind(): this.type = js.native
+      /**
+        * Called after each frame has been completely rendered and snapshots have been taken.
+        */
+      /* CompleteClass */
+      override def onPostRender(): this.type = js.native
+      /**
+        * Called before each frame is rendered, but after the canvas has been cleared.
+        */
+      /* CompleteClass */
+      override def onPreRender(): this.type = js.native
+      /**
+        * Called before a Scene's Camera is rendered.
+        * @param scene The Scene being rendered.
+        * @param camera The Scene Camera being rendered with.
+        */
+      /* CompleteClass */
+      override def onRender(scene: typings.phaser.Phaser.Scene, camera: Camera): this.type = js.native
+      /**
+        * Resizes the properties used to describe the viewport
+        * @param width The new width of this WebGL Pipeline.
+        * @param height The new height of this WebGL Pipeline.
+        * @param resolution The resolution this WebGL Pipeline should be resized to.
+        */
+      /* CompleteClass */
+      override def resize(width: Double, height: Double, resolution: Double): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param x The new value of the `float` uniform.
+        */
+      /* CompleteClass */
+      override def setFloat1(name: String, x: Double): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param arr The new value to be used for the uniform variable.
+        */
+      /* CompleteClass */
+      override def setFloat1v(name: String, arr: Float32Array): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param x The new X component of the `vec2` uniform.
+        * @param y The new Y component of the `vec2` uniform.
+        */
+      /* CompleteClass */
+      override def setFloat2(name: String, x: Double, y: Double): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param arr The new value to be used for the uniform variable.
+        */
+      /* CompleteClass */
+      override def setFloat2v(name: String, arr: Float32Array): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param x The new X component of the `vec3` uniform.
+        * @param y The new Y component of the `vec3` uniform.
+        * @param z The new Z component of the `vec3` uniform.
+        */
+      /* CompleteClass */
+      override def setFloat3(name: String, x: Double, y: Double, z: Double): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param arr The new value to be used for the uniform variable.
+        */
+      /* CompleteClass */
+      override def setFloat3v(name: String, arr: Float32Array): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param x X component of the uniform
+        * @param y Y component of the uniform
+        * @param z Z component of the uniform
+        * @param w W component of the uniform
+        */
+      /* CompleteClass */
+      override def setFloat4(name: String, x: Double, y: Double, z: Double, w: Double): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param arr The new value to be used for the uniform variable.
+        */
+      /* CompleteClass */
+      override def setFloat4v(name: String, arr: Float32Array): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param x The new value of the `int` uniform.
+        */
+      /* CompleteClass */
+      override def setInt1(name: String, x: integer): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param x The new X component of the `ivec2` uniform.
+        * @param y The new Y component of the `ivec2` uniform.
+        */
+      /* CompleteClass */
+      override def setInt2(name: String, x: integer, y: integer): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param x The new X component of the `ivec3` uniform.
+        * @param y The new Y component of the `ivec3` uniform.
+        * @param z The new Z component of the `ivec3` uniform.
+        */
+      /* CompleteClass */
+      override def setInt3(name: String, x: integer, y: integer, z: integer): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param x X component of the uniform
+        * @param y Y component of the uniform
+        * @param z Z component of the uniform
+        * @param w W component of the uniform
+        */
+      /* CompleteClass */
+      override def setInt4(name: String, x: integer, y: integer, z: integer, w: integer): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param transpose Whether to transpose the matrix. Should be `false`.
+        * @param matrix The new values for the `mat2` uniform.
+        */
+      /* CompleteClass */
+      override def setMatrix2(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param transpose Whether to transpose the matrix. Should be `false`.
+        * @param matrix The new values for the `mat3` uniform.
+        */
+      /* CompleteClass */
+      override def setMatrix3(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+      /**
+        * Set a uniform value of the current pipeline program.
+        * @param name The name of the uniform to look-up and modify.
+        * @param transpose Should the matrix be transpose
+        * @param matrix Matrix data
+        */
+      /* CompleteClass */
+      override def setMatrix4(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+      /**
+        * Check if the current batch of vertices is full.
+        */
+      /* CompleteClass */
+      override def shouldFlush(): Boolean = js.native
     }
     
     /**
@@ -176,6 +476,334 @@ object Renderer extends js.Object {
           * @param config Used for overriding shader an pipeline properties if extending this pipeline.
           */
         def this(config: js.Object) = this()
+        /**
+          * Indicates if the current pipeline is active or not for this frame only.
+          * Reset in the onRender method.
+          */
+        /* CompleteClass */
+        override var active: Boolean = js.native
+        /**
+          * Array of objects that describe the vertex attributes
+          */
+        /* CompleteClass */
+        override var attributes: js.Object = js.native
+        /**
+          * Uint8 view to the vertex raw buffer. Used for uploading vertex buffer resources
+          * to the GPU.
+          */
+        /* CompleteClass */
+        override var bytes: Uint8Array = js.native
+        /**
+          * Indicates if the current pipeline is flushing the contents to the GPU.
+          * When the variable is set the flush function will be locked.
+          */
+        /* CompleteClass */
+        override var flushLocked: Boolean = js.native
+        /**
+          * The Game which owns this WebGL Pipeline.
+          */
+        /* CompleteClass */
+        override var game: typings.phaser.Phaser.Game = js.native
+        /**
+          * The WebGL context this WebGL Pipeline uses.
+          */
+        /* CompleteClass */
+        override var gl: WebGLRenderingContext = js.native
+        /**
+          * Height of the current viewport
+          */
+        /* CompleteClass */
+        override var height: Double = js.native
+        /**
+          * Size of the batch.
+          */
+        /* CompleteClass */
+        override var maxQuads: Double = js.native
+        /**
+          * Name of the Pipeline. Used for identifying
+          */
+        /* CompleteClass */
+        override var name: String = js.native
+        /**
+          * The handle to a WebGL program
+          */
+        /* CompleteClass */
+        override var program: WebGLProgram = js.native
+        /**
+          * The WebGL Renderer which owns this WebGL Pipeline.
+          */
+        /* CompleteClass */
+        override var renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer = js.native
+        /**
+          * Used to store the current game resolution
+          */
+        /* CompleteClass */
+        override var resolution: Double = js.native
+        /**
+          * Dirty flag to check if resolution properties need to be updated on the 
+          * masking shader.
+          */
+        /* CompleteClass */
+        override var resolutionDirty: Boolean = js.native
+        /**
+          * The primitive topology which the pipeline will use to submit draw calls
+          */
+        /* CompleteClass */
+        override var topology: integer = js.native
+        /**
+          * The handle to a WebGL vertex buffer object.
+          */
+        /* CompleteClass */
+        override var vertexBuffer: WebGLBuffer = js.native
+        /**
+          * The limit of vertices that the pipeline can hold
+          */
+        /* CompleteClass */
+        override var vertexCapacity: integer = js.native
+        /**
+          * This will store the amount of components of 32 bit length
+          */
+        /* CompleteClass */
+        override var vertexComponentCount: integer = js.native
+        /**
+          * How many vertices have been fed to the current pipeline.
+          */
+        /* CompleteClass */
+        override var vertexCount: Double = js.native
+        /**
+          * Raw byte buffer of vertices.
+          */
+        /* CompleteClass */
+        override var vertexData: ArrayBuffer = js.native
+        /**
+          * The size in bytes of the vertex
+          */
+        /* CompleteClass */
+        override var vertexSize: integer = js.native
+        /**
+          * Float32 view of the array buffer containing the pipeline's vertices.
+          */
+        /* CompleteClass */
+        override var vertexViewF32: Float32Array = js.native
+        /**
+          * The canvas which this WebGL Pipeline renders to.
+          */
+        /* CompleteClass */
+        override var view: HTMLCanvasElement = js.native
+        /**
+          * Width of the current viewport
+          */
+        /* CompleteClass */
+        override var width: Double = js.native
+        /**
+          * Adds a description of vertex attribute to the pipeline
+          * @param name Name of the vertex attribute
+          * @param size Vertex component size
+          * @param type Type of the attribute
+          * @param normalized Is the value normalized to a range
+          * @param offset Byte offset to the beginning of the first element in the vertex
+          */
+        /* CompleteClass */
+        override def addAttribute(name: String, size: integer, `type`: integer, normalized: Boolean, offset: integer): this.type = js.native
+        /**
+          * Binds necessary resources and renders the mask to a separated framebuffer.
+          * The framebuffer for the masked object is also bound for further use.
+          * @param mask GameObject used as mask.
+          * @param maskedObject GameObject masked by the mask GameObject.
+          * @param camera The camera rendering the current mask.
+          */
+        /* CompleteClass */
+        override def beginMask(mask: GameObject, maskedObject: GameObject, camera: Camera): Unit = js.native
+        /**
+          * Binds the pipeline resources, including programs, vertex buffers and binds attributes
+          */
+        /* CompleteClass */
+        override def bind(): this.type = js.native
+        /**
+          * Called when the Game has fully booted and the Renderer has finished setting up.
+          * 
+          * By this stage all Game level systems are now in place and you can perform any final
+          * tasks that the pipeline may need that relied on game systems such as the Texture Manager.
+          */
+        /* CompleteClass */
+        override def boot(): Unit = js.native
+        /**
+          * Removes all object references in this WebGL Pipeline and removes its program from the WebGL context.
+          */
+        /* CompleteClass */
+        override def destroy(): this.type = js.native
+        /**
+          * The masked game objects framebuffer is unbound and its texture 
+          * is bound together with the mask texture and the mask shader and 
+          * a draw call with a single quad is processed. Here is where the
+          * masking effect is applied.
+          * @param mask GameObject used as a mask.
+          */
+        /* CompleteClass */
+        override def endMask(mask: GameObject): Unit = js.native
+        /**
+          * Uploads the vertex data and emits a draw call
+          * for the current batch of vertices.
+          */
+        /* CompleteClass */
+        override def flush(): this.type = js.native
+        /**
+          * Set whenever this WebGL Pipeline is bound to a WebGL Renderer.
+          * 
+          * This method is called every time the WebGL Pipeline is attempted to be bound, even if it already is the current pipeline.
+          */
+        /* CompleteClass */
+        override def onBind(): this.type = js.native
+        /**
+          * Called after each frame has been completely rendered and snapshots have been taken.
+          */
+        /* CompleteClass */
+        override def onPostRender(): this.type = js.native
+        /**
+          * Called before each frame is rendered, but after the canvas has been cleared.
+          */
+        /* CompleteClass */
+        override def onPreRender(): this.type = js.native
+        /**
+          * Called before a Scene's Camera is rendered.
+          * @param scene The Scene being rendered.
+          * @param camera The Scene Camera being rendered with.
+          */
+        /* CompleteClass */
+        override def onRender(scene: typings.phaser.Phaser.Scene, camera: Camera): this.type = js.native
+        /**
+          * Resizes the properties used to describe the viewport
+          * @param width The new width of this WebGL Pipeline.
+          * @param height The new height of this WebGL Pipeline.
+          * @param resolution The resolution this WebGL Pipeline should be resized to.
+          */
+        /* CompleteClass */
+        override def resize(width: Double, height: Double, resolution: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new value of the `float` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat1(name: String, x: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat1v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `vec2` uniform.
+          * @param y The new Y component of the `vec2` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat2(name: String, x: Double, y: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat2v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `vec3` uniform.
+          * @param y The new Y component of the `vec3` uniform.
+          * @param z The new Z component of the `vec3` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat3(name: String, x: Double, y: Double, z: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat3v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x X component of the uniform
+          * @param y Y component of the uniform
+          * @param z Z component of the uniform
+          * @param w W component of the uniform
+          */
+        /* CompleteClass */
+        override def setFloat4(name: String, x: Double, y: Double, z: Double, w: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat4v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new value of the `int` uniform.
+          */
+        /* CompleteClass */
+        override def setInt1(name: String, x: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `ivec2` uniform.
+          * @param y The new Y component of the `ivec2` uniform.
+          */
+        /* CompleteClass */
+        override def setInt2(name: String, x: integer, y: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `ivec3` uniform.
+          * @param y The new Y component of the `ivec3` uniform.
+          * @param z The new Z component of the `ivec3` uniform.
+          */
+        /* CompleteClass */
+        override def setInt3(name: String, x: integer, y: integer, z: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x X component of the uniform
+          * @param y Y component of the uniform
+          * @param z Z component of the uniform
+          * @param w W component of the uniform
+          */
+        /* CompleteClass */
+        override def setInt4(name: String, x: integer, y: integer, z: integer, w: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Whether to transpose the matrix. Should be `false`.
+          * @param matrix The new values for the `mat2` uniform.
+          */
+        /* CompleteClass */
+        override def setMatrix2(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Whether to transpose the matrix. Should be `false`.
+          * @param matrix The new values for the `mat3` uniform.
+          */
+        /* CompleteClass */
+        override def setMatrix3(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Should the matrix be transpose
+          * @param matrix Matrix data
+          */
+        /* CompleteClass */
+        override def setMatrix4(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Check if the current batch of vertices is full.
+          */
+        /* CompleteClass */
+        override def shouldFlush(): Boolean = js.native
       }
       
       /**
@@ -191,6 +819,300 @@ object Renderer extends js.Object {
           * @param config The configuration of the pipeline, same as the {@link Phaser.Renderer.WebGL.Pipelines.TextureTintPipeline}. The fragment shader will be replaced with the lighting shader.
           */
         def this(config: js.Object) = this()
+        /**
+          * Indicates if the current pipeline is active or not for this frame only.
+          * Reset in the onRender method.
+          */
+        /* CompleteClass */
+        override var active: Boolean = js.native
+        /**
+          * Array of objects that describe the vertex attributes
+          */
+        /* CompleteClass */
+        override var attributes: js.Object = js.native
+        /**
+          * Uint8 view to the vertex raw buffer. Used for uploading vertex buffer resources
+          * to the GPU.
+          */
+        /* CompleteClass */
+        override var bytes: Uint8Array = js.native
+        /**
+          * Indicates if the current pipeline is flushing the contents to the GPU.
+          * When the variable is set the flush function will be locked.
+          */
+        /* CompleteClass */
+        override var flushLocked: Boolean = js.native
+        /**
+          * The Game which owns this WebGL Pipeline.
+          */
+        /* CompleteClass */
+        override var game: typings.phaser.Phaser.Game = js.native
+        /**
+          * The WebGL context this WebGL Pipeline uses.
+          */
+        /* CompleteClass */
+        override var gl: WebGLRenderingContext = js.native
+        /**
+          * Height of the current viewport
+          */
+        /* CompleteClass */
+        override var height: Double = js.native
+        /**
+          * Name of the Pipeline. Used for identifying
+          */
+        /* CompleteClass */
+        override var name: String = js.native
+        /**
+          * The handle to a WebGL program
+          */
+        /* CompleteClass */
+        override var program: WebGLProgram = js.native
+        /**
+          * The WebGL Renderer which owns this WebGL Pipeline.
+          */
+        /* CompleteClass */
+        override var renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer = js.native
+        /**
+          * Used to store the current game resolution
+          */
+        /* CompleteClass */
+        override var resolution: Double = js.native
+        /**
+          * The primitive topology which the pipeline will use to submit draw calls
+          */
+        /* CompleteClass */
+        override var topology: integer = js.native
+        /**
+          * The handle to a WebGL vertex buffer object.
+          */
+        /* CompleteClass */
+        override var vertexBuffer: WebGLBuffer = js.native
+        /**
+          * The limit of vertices that the pipeline can hold
+          */
+        /* CompleteClass */
+        override var vertexCapacity: integer = js.native
+        /**
+          * This will store the amount of components of 32 bit length
+          */
+        /* CompleteClass */
+        override var vertexComponentCount: integer = js.native
+        /**
+          * How many vertices have been fed to the current pipeline.
+          */
+        /* CompleteClass */
+        override var vertexCount: Double = js.native
+        /**
+          * Raw byte buffer of vertices.
+          */
+        /* CompleteClass */
+        override var vertexData: ArrayBuffer = js.native
+        /**
+          * The size in bytes of the vertex
+          */
+        /* CompleteClass */
+        override var vertexSize: integer = js.native
+        /**
+          * The canvas which this WebGL Pipeline renders to.
+          */
+        /* CompleteClass */
+        override var view: HTMLCanvasElement = js.native
+        /**
+          * Width of the current viewport
+          */
+        /* CompleteClass */
+        override var width: Double = js.native
+        /**
+          * Adds a description of vertex attribute to the pipeline
+          * @param name Name of the vertex attribute
+          * @param size Vertex component size
+          * @param type Type of the attribute
+          * @param normalized Is the value normalized to a range
+          * @param offset Byte offset to the beginning of the first element in the vertex
+          */
+        /* CompleteClass */
+        override def addAttribute(name: String, size: integer, `type`: integer, normalized: Boolean, offset: integer): this.type = js.native
+        /**
+          * Binds the pipeline resources, including programs, vertex buffers and binds attributes
+          */
+        /* CompleteClass */
+        override def bind(): this.type = js.native
+        /**
+          * Called when the Game has fully booted and the Renderer has finished setting up.
+          * 
+          * By this stage all Game level systems are now in place and you can perform any final
+          * tasks that the pipeline may need that relied on game systems such as the Texture Manager.
+          */
+        /* CompleteClass */
+        override def boot(): Unit = js.native
+        /**
+          * Removes all object references in this WebGL Pipeline and removes its program from the WebGL context.
+          */
+        /* CompleteClass */
+        override def destroy(): this.type = js.native
+        /**
+          * Uploads the vertex data and emits a draw call
+          * for the current batch of vertices.
+          */
+        /* CompleteClass */
+        override def flush(): this.type = js.native
+        /**
+          * Set whenever this WebGL Pipeline is bound to a WebGL Renderer.
+          * 
+          * This method is called every time the WebGL Pipeline is attempted to be bound, even if it already is the current pipeline.
+          */
+        /* CompleteClass */
+        override def onBind(): this.type = js.native
+        /**
+          * Called after each frame has been completely rendered and snapshots have been taken.
+          */
+        /* CompleteClass */
+        override def onPostRender(): this.type = js.native
+        /**
+          * Called before each frame is rendered, but after the canvas has been cleared.
+          */
+        /* CompleteClass */
+        override def onPreRender(): this.type = js.native
+        /**
+          * Called before a Scene's Camera is rendered.
+          * @param scene The Scene being rendered.
+          * @param camera The Scene Camera being rendered with.
+          */
+        /* CompleteClass */
+        override def onRender(scene: typings.phaser.Phaser.Scene, camera: Camera): this.type = js.native
+        /**
+          * Resizes the properties used to describe the viewport
+          * @param width The new width of this WebGL Pipeline.
+          * @param height The new height of this WebGL Pipeline.
+          * @param resolution The resolution this WebGL Pipeline should be resized to.
+          */
+        /* CompleteClass */
+        override def resize(width: Double, height: Double, resolution: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new value of the `float` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat1(name: String, x: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat1v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `vec2` uniform.
+          * @param y The new Y component of the `vec2` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat2(name: String, x: Double, y: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat2v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `vec3` uniform.
+          * @param y The new Y component of the `vec3` uniform.
+          * @param z The new Z component of the `vec3` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat3(name: String, x: Double, y: Double, z: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat3v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x X component of the uniform
+          * @param y Y component of the uniform
+          * @param z Z component of the uniform
+          * @param w W component of the uniform
+          */
+        /* CompleteClass */
+        override def setFloat4(name: String, x: Double, y: Double, z: Double, w: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat4v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new value of the `int` uniform.
+          */
+        /* CompleteClass */
+        override def setInt1(name: String, x: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `ivec2` uniform.
+          * @param y The new Y component of the `ivec2` uniform.
+          */
+        /* CompleteClass */
+        override def setInt2(name: String, x: integer, y: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `ivec3` uniform.
+          * @param y The new Y component of the `ivec3` uniform.
+          * @param z The new Z component of the `ivec3` uniform.
+          */
+        /* CompleteClass */
+        override def setInt3(name: String, x: integer, y: integer, z: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x X component of the uniform
+          * @param y Y component of the uniform
+          * @param z Z component of the uniform
+          * @param w W component of the uniform
+          */
+        /* CompleteClass */
+        override def setInt4(name: String, x: integer, y: integer, z: integer, w: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Whether to transpose the matrix. Should be `false`.
+          * @param matrix The new values for the `mat2` uniform.
+          */
+        /* CompleteClass */
+        override def setMatrix2(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Whether to transpose the matrix. Should be `false`.
+          * @param matrix The new values for the `mat3` uniform.
+          */
+        /* CompleteClass */
+        override def setMatrix3(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Should the matrix be transpose
+          * @param matrix Matrix data
+          */
+        /* CompleteClass */
+        override def setMatrix4(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Check if the current batch of vertices is full.
+          */
+        /* CompleteClass */
+        override def shouldFlush(): Boolean = js.native
       }
       
       /**
@@ -214,6 +1136,615 @@ object Renderer extends js.Object {
           * @param config The configuration options for this Texture Tint Pipeline, as described above.
           */
         def this(config: js.Object) = this()
+        /**
+          * Indicates if the current pipeline is active or not for this frame only.
+          * Reset in the onRender method.
+          */
+        /* CompleteClass */
+        override var active: Boolean = js.native
+        /**
+          * Array of objects that describe the vertex attributes
+          */
+        /* CompleteClass */
+        override var attributes: js.Object = js.native
+        /**
+          * Uint8 view to the vertex raw buffer. Used for uploading vertex buffer resources
+          * to the GPU.
+          */
+        /* CompleteClass */
+        override var bytes: Uint8Array = js.native
+        /**
+          * Indicates if the current pipeline is flushing the contents to the GPU.
+          * When the variable is set the flush function will be locked.
+          */
+        /* CompleteClass */
+        override var flushLocked: Boolean = js.native
+        /**
+          * The Game which owns this WebGL Pipeline.
+          */
+        /* CompleteClass */
+        override var game: typings.phaser.Phaser.Game = js.native
+        /**
+          * The WebGL context this WebGL Pipeline uses.
+          */
+        /* CompleteClass */
+        override var gl: WebGLRenderingContext = js.native
+        /**
+          * Height of the current viewport
+          */
+        /* CompleteClass */
+        override var height: Double = js.native
+        /**
+          * Name of the Pipeline. Used for identifying
+          */
+        /* CompleteClass */
+        override var name: String = js.native
+        /**
+          * The handle to a WebGL program
+          */
+        /* CompleteClass */
+        override var program: WebGLProgram = js.native
+        /**
+          * The WebGL Renderer which owns this WebGL Pipeline.
+          */
+        /* CompleteClass */
+        override var renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer = js.native
+        /**
+          * Used to store the current game resolution
+          */
+        /* CompleteClass */
+        override var resolution: Double = js.native
+        /**
+          * The primitive topology which the pipeline will use to submit draw calls
+          */
+        /* CompleteClass */
+        override var topology: integer = js.native
+        /**
+          * The handle to a WebGL vertex buffer object.
+          */
+        /* CompleteClass */
+        override var vertexBuffer: WebGLBuffer = js.native
+        /**
+          * The limit of vertices that the pipeline can hold
+          */
+        /* CompleteClass */
+        override var vertexCapacity: integer = js.native
+        /**
+          * This will store the amount of components of 32 bit length
+          */
+        /* CompleteClass */
+        override var vertexComponentCount: integer = js.native
+        /**
+          * How many vertices have been fed to the current pipeline.
+          */
+        /* CompleteClass */
+        override var vertexCount: Double = js.native
+        /**
+          * Raw byte buffer of vertices.
+          */
+        /* CompleteClass */
+        override var vertexData: ArrayBuffer = js.native
+        /**
+          * The size in bytes of the vertex
+          */
+        /* CompleteClass */
+        override var vertexSize: integer = js.native
+        /**
+          * The canvas which this WebGL Pipeline renders to.
+          */
+        /* CompleteClass */
+        override var view: HTMLCanvasElement = js.native
+        /**
+          * Width of the current viewport
+          */
+        /* CompleteClass */
+        override var width: Double = js.native
+        /**
+          * Adds a description of vertex attribute to the pipeline
+          * @param name Name of the vertex attribute
+          * @param size Vertex component size
+          * @param type Type of the attribute
+          * @param normalized Is the value normalized to a range
+          * @param offset Byte offset to the beginning of the first element in the vertex
+          */
+        /* CompleteClass */
+        override def addAttribute(name: String, size: integer, `type`: integer, normalized: Boolean, offset: integer): this.type = js.native
+        /**
+          * Binds the pipeline resources, including programs, vertex buffers and binds attributes
+          */
+        /* CompleteClass */
+        override def bind(): this.type = js.native
+        /**
+          * Called when the Game has fully booted and the Renderer has finished setting up.
+          * 
+          * By this stage all Game level systems are now in place and you can perform any final
+          * tasks that the pipeline may need that relied on game systems such as the Texture Manager.
+          */
+        /* CompleteClass */
+        override def boot(): Unit = js.native
+        /**
+          * Removes all object references in this WebGL Pipeline and removes its program from the WebGL context.
+          */
+        /* CompleteClass */
+        override def destroy(): this.type = js.native
+        /**
+          * Uploads the vertex data and emits a draw call
+          * for the current batch of vertices.
+          */
+        /* CompleteClass */
+        override def flush(): this.type = js.native
+        /**
+          * Set whenever this WebGL Pipeline is bound to a WebGL Renderer.
+          * 
+          * This method is called every time the WebGL Pipeline is attempted to be bound, even if it already is the current pipeline.
+          */
+        /* CompleteClass */
+        override def onBind(): this.type = js.native
+        /**
+          * Called after each frame has been completely rendered and snapshots have been taken.
+          */
+        /* CompleteClass */
+        override def onPostRender(): this.type = js.native
+        /**
+          * Called before each frame is rendered, but after the canvas has been cleared.
+          */
+        /* CompleteClass */
+        override def onPreRender(): this.type = js.native
+        /**
+          * Called before a Scene's Camera is rendered.
+          * @param scene The Scene being rendered.
+          * @param camera The Scene Camera being rendered with.
+          */
+        /* CompleteClass */
+        override def onRender(scene: typings.phaser.Phaser.Scene, camera: Camera): this.type = js.native
+        /**
+          * Resizes the properties used to describe the viewport
+          * @param width The new width of this WebGL Pipeline.
+          * @param height The new height of this WebGL Pipeline.
+          * @param resolution The resolution this WebGL Pipeline should be resized to.
+          */
+        /* CompleteClass */
+        override def resize(width: Double, height: Double, resolution: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new value of the `float` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat1(name: String, x: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat1v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `vec2` uniform.
+          * @param y The new Y component of the `vec2` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat2(name: String, x: Double, y: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat2v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `vec3` uniform.
+          * @param y The new Y component of the `vec3` uniform.
+          * @param z The new Z component of the `vec3` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat3(name: String, x: Double, y: Double, z: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat3v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x X component of the uniform
+          * @param y Y component of the uniform
+          * @param z Z component of the uniform
+          * @param w W component of the uniform
+          */
+        /* CompleteClass */
+        override def setFloat4(name: String, x: Double, y: Double, z: Double, w: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat4v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new value of the `int` uniform.
+          */
+        /* CompleteClass */
+        override def setInt1(name: String, x: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `ivec2` uniform.
+          * @param y The new Y component of the `ivec2` uniform.
+          */
+        /* CompleteClass */
+        override def setInt2(name: String, x: integer, y: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `ivec3` uniform.
+          * @param y The new Y component of the `ivec3` uniform.
+          * @param z The new Z component of the `ivec3` uniform.
+          */
+        /* CompleteClass */
+        override def setInt3(name: String, x: integer, y: integer, z: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x X component of the uniform
+          * @param y Y component of the uniform
+          * @param z Z component of the uniform
+          * @param w W component of the uniform
+          */
+        /* CompleteClass */
+        override def setInt4(name: String, x: integer, y: integer, z: integer, w: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Whether to transpose the matrix. Should be `false`.
+          * @param matrix The new values for the `mat2` uniform.
+          */
+        /* CompleteClass */
+        override def setMatrix2(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Whether to transpose the matrix. Should be `false`.
+          * @param matrix The new values for the `mat3` uniform.
+          */
+        /* CompleteClass */
+        override def setMatrix3(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Should the matrix be transpose
+          * @param matrix Matrix data
+          */
+        /* CompleteClass */
+        override def setMatrix4(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Check if the current batch of vertices is full.
+          */
+        /* CompleteClass */
+        override def shouldFlush(): Boolean = js.native
+      }
+      
+      /**
+        * TextureTintStripPipeline implements the rendering infrastructure
+        * for displaying textured objects
+        * The config properties are:
+        * - game: Current game instance.
+        * - renderer: Current WebGL renderer.
+        * - vertShader: Source for vertex shader as a string.
+        * - fragShader: Source for fragment shader as a string.
+        * - vertexCapacity: The amount of vertices that shall be allocated
+        * - vertexSize: The size of a single vertex in bytes.
+        */
+      @js.native
+      class TextureTintStripPipeline protected ()
+        extends typings.phaser.Phaser.Renderer.WebGL.Pipelines.TextureTintStripPipeline {
+        /**
+          * 
+          * @param config The configuration options for this Texture Tint Pipeline, as described above.
+          */
+        def this(config: js.Object) = this()
+        /**
+          * Indicates if the current pipeline is active or not for this frame only.
+          * Reset in the onRender method.
+          */
+        /* CompleteClass */
+        override var active: Boolean = js.native
+        /**
+          * Array of objects that describe the vertex attributes
+          */
+        /* CompleteClass */
+        override var attributes: js.Object = js.native
+        /**
+          * Uint8 view to the vertex raw buffer. Used for uploading vertex buffer resources
+          * to the GPU.
+          */
+        /* CompleteClass */
+        override var bytes: Uint8Array = js.native
+        /**
+          * Indicates if the current pipeline is flushing the contents to the GPU.
+          * When the variable is set the flush function will be locked.
+          */
+        /* CompleteClass */
+        override var flushLocked: Boolean = js.native
+        /**
+          * The Game which owns this WebGL Pipeline.
+          */
+        /* CompleteClass */
+        override var game: typings.phaser.Phaser.Game = js.native
+        /**
+          * The WebGL context this WebGL Pipeline uses.
+          */
+        /* CompleteClass */
+        override var gl: WebGLRenderingContext = js.native
+        /**
+          * Height of the current viewport
+          */
+        /* CompleteClass */
+        override var height: Double = js.native
+        /**
+          * Name of the Pipeline. Used for identifying
+          */
+        /* CompleteClass */
+        override var name: String = js.native
+        /**
+          * The handle to a WebGL program
+          */
+        /* CompleteClass */
+        override var program: WebGLProgram = js.native
+        /**
+          * The WebGL Renderer which owns this WebGL Pipeline.
+          */
+        /* CompleteClass */
+        override var renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer = js.native
+        /**
+          * Used to store the current game resolution
+          */
+        /* CompleteClass */
+        override var resolution: Double = js.native
+        /**
+          * The primitive topology which the pipeline will use to submit draw calls
+          */
+        /* CompleteClass */
+        override var topology: integer = js.native
+        /**
+          * The handle to a WebGL vertex buffer object.
+          */
+        /* CompleteClass */
+        override var vertexBuffer: WebGLBuffer = js.native
+        /**
+          * The limit of vertices that the pipeline can hold
+          */
+        /* CompleteClass */
+        override var vertexCapacity: integer = js.native
+        /**
+          * This will store the amount of components of 32 bit length
+          */
+        /* CompleteClass */
+        override var vertexComponentCount: integer = js.native
+        /**
+          * How many vertices have been fed to the current pipeline.
+          */
+        /* CompleteClass */
+        override var vertexCount: Double = js.native
+        /**
+          * Raw byte buffer of vertices.
+          */
+        /* CompleteClass */
+        override var vertexData: ArrayBuffer = js.native
+        /**
+          * The size in bytes of the vertex
+          */
+        /* CompleteClass */
+        override var vertexSize: integer = js.native
+        /**
+          * The canvas which this WebGL Pipeline renders to.
+          */
+        /* CompleteClass */
+        override var view: HTMLCanvasElement = js.native
+        /**
+          * Width of the current viewport
+          */
+        /* CompleteClass */
+        override var width: Double = js.native
+        /**
+          * Adds a description of vertex attribute to the pipeline
+          * @param name Name of the vertex attribute
+          * @param size Vertex component size
+          * @param type Type of the attribute
+          * @param normalized Is the value normalized to a range
+          * @param offset Byte offset to the beginning of the first element in the vertex
+          */
+        /* CompleteClass */
+        override def addAttribute(name: String, size: integer, `type`: integer, normalized: Boolean, offset: integer): this.type = js.native
+        /**
+          * Binds the pipeline resources, including programs, vertex buffers and binds attributes
+          */
+        /* CompleteClass */
+        override def bind(): this.type = js.native
+        /**
+          * Called when the Game has fully booted and the Renderer has finished setting up.
+          * 
+          * By this stage all Game level systems are now in place and you can perform any final
+          * tasks that the pipeline may need that relied on game systems such as the Texture Manager.
+          */
+        /* CompleteClass */
+        override def boot(): Unit = js.native
+        /**
+          * Removes all object references in this WebGL Pipeline and removes its program from the WebGL context.
+          */
+        /* CompleteClass */
+        override def destroy(): this.type = js.native
+        /**
+          * Uploads the vertex data and emits a draw call
+          * for the current batch of vertices.
+          */
+        /* CompleteClass */
+        override def flush(): this.type = js.native
+        /**
+          * Set whenever this WebGL Pipeline is bound to a WebGL Renderer.
+          * 
+          * This method is called every time the WebGL Pipeline is attempted to be bound, even if it already is the current pipeline.
+          */
+        /* CompleteClass */
+        override def onBind(): this.type = js.native
+        /**
+          * Called after each frame has been completely rendered and snapshots have been taken.
+          */
+        /* CompleteClass */
+        override def onPostRender(): this.type = js.native
+        /**
+          * Called before each frame is rendered, but after the canvas has been cleared.
+          */
+        /* CompleteClass */
+        override def onPreRender(): this.type = js.native
+        /**
+          * Called before a Scene's Camera is rendered.
+          * @param scene The Scene being rendered.
+          * @param camera The Scene Camera being rendered with.
+          */
+        /* CompleteClass */
+        override def onRender(scene: typings.phaser.Phaser.Scene, camera: Camera): this.type = js.native
+        /**
+          * Resizes the properties used to describe the viewport
+          * @param width The new width of this WebGL Pipeline.
+          * @param height The new height of this WebGL Pipeline.
+          * @param resolution The resolution this WebGL Pipeline should be resized to.
+          */
+        /* CompleteClass */
+        override def resize(width: Double, height: Double, resolution: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new value of the `float` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat1(name: String, x: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat1v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `vec2` uniform.
+          * @param y The new Y component of the `vec2` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat2(name: String, x: Double, y: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat2v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `vec3` uniform.
+          * @param y The new Y component of the `vec3` uniform.
+          * @param z The new Z component of the `vec3` uniform.
+          */
+        /* CompleteClass */
+        override def setFloat3(name: String, x: Double, y: Double, z: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat3v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x X component of the uniform
+          * @param y Y component of the uniform
+          * @param z Z component of the uniform
+          * @param w W component of the uniform
+          */
+        /* CompleteClass */
+        override def setFloat4(name: String, x: Double, y: Double, z: Double, w: Double): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param arr The new value to be used for the uniform variable.
+          */
+        /* CompleteClass */
+        override def setFloat4v(name: String, arr: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new value of the `int` uniform.
+          */
+        /* CompleteClass */
+        override def setInt1(name: String, x: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `ivec2` uniform.
+          * @param y The new Y component of the `ivec2` uniform.
+          */
+        /* CompleteClass */
+        override def setInt2(name: String, x: integer, y: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x The new X component of the `ivec3` uniform.
+          * @param y The new Y component of the `ivec3` uniform.
+          * @param z The new Z component of the `ivec3` uniform.
+          */
+        /* CompleteClass */
+        override def setInt3(name: String, x: integer, y: integer, z: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param x X component of the uniform
+          * @param y Y component of the uniform
+          * @param z Z component of the uniform
+          * @param w W component of the uniform
+          */
+        /* CompleteClass */
+        override def setInt4(name: String, x: integer, y: integer, z: integer, w: integer): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Whether to transpose the matrix. Should be `false`.
+          * @param matrix The new values for the `mat2` uniform.
+          */
+        /* CompleteClass */
+        override def setMatrix2(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Whether to transpose the matrix. Should be `false`.
+          * @param matrix The new values for the `mat3` uniform.
+          */
+        /* CompleteClass */
+        override def setMatrix3(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Set a uniform value of the current pipeline program.
+          * @param name The name of the uniform to look-up and modify.
+          * @param transpose Should the matrix be transpose
+          * @param matrix Matrix data
+          */
+        /* CompleteClass */
+        override def setMatrix4(name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
+        /**
+          * Check if the current batch of vertices is full.
+          */
+        /* CompleteClass */
+        override def shouldFlush(): Boolean = js.native
       }
       
     }

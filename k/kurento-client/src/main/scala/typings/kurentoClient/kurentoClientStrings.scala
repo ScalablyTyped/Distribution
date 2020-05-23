@@ -21,6 +21,9 @@ object kurentoClientStrings {
   sealed trait Paused extends js.Object
   
   @js.native
+  sealed trait RecorderEndpoint extends js.Object
+  
+  @js.native
   sealed trait Recording extends js.Object
   
   @js.native
@@ -39,6 +42,8 @@ object kurentoClientStrings {
   def OnIceCandidate: OnIceCandidate = "OnIceCandidate".asInstanceOf[OnIceCandidate]
   @scala.inline
   def Paused: Paused = "Paused".asInstanceOf[Paused]
+  @scala.inline
+  def RecorderEndpoint: RecorderEndpoint = "RecorderEndpoint".asInstanceOf[RecorderEndpoint]
   @scala.inline
   def Recording: Recording = "Recording".asInstanceOf[Recording]
   @scala.inline

@@ -5,20 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.SingleContactResult
-  * @classdesc Object holding the result of a contact between two rigid bodies.
-  * @description Create a new SingleContactResult.
-  * @param {pc.Entity} a - The first entity involved in the contact.
-  * @param {pc.Entity} b - The second entity involved in the contact.
-  * @param {pc.ContactPoint} contactPoint - The contact point between the two entities.
-  * @property {pc.Entity} a The first entity involved in the contact.
-  * @property {pc.Entity} b The second entity involved in the contact.
-  * @property {pc.Vec3} localPointA The point on Entity A where the contact occurred, relative to A.
-  * @property {pc.Vec3} localPointB The point on Entity B where the contact occurred, relative to B.
-  * @property {pc.Vec3} pointA The point on Entity A where the contact occurred, in world space.
-  * @property {pc.Vec3} pointB The point on Entity B where the contact occurred, in world space.
-  * @property {pc.Vec3} normal The normal vector of the contact on Entity B, in world space.
+  * Create a new SingleContactResult.
+  * @property a - The first entity involved in the contact.
+  * @property b - The second entity involved in the contact.
+  * @property localPointA - The point on Entity A where the contact occurred, relative to A.
+  * @property localPointB - The point on Entity B where the contact occurred, relative to B.
+  * @property pointA - The point on Entity A where the contact occurred, in world space.
+  * @property pointB - The point on Entity B where the contact occurred, in world space.
+  * @property normal - The normal vector of the contact on Entity B, in world space.
+  * @param a - The first entity involved in the contact.
+  * @param b - The second entity involved in the contact.
+  * @param contactPoint - The contact point between the two entities.
   */
 @JSImport("playcanvas", "SingleContactResult")
 @js.native
@@ -29,5 +26,40 @@ class SingleContactResult protected ()
     b: typings.playcanvas.pc.Entity,
     contactPoint: typings.playcanvas.pc.ContactPoint
   ) = this()
+  /**
+    * The first entity involved in the contact.
+    */
+  /* CompleteClass */
+  override var a: typings.playcanvas.pc.Entity = js.native
+  /**
+    * The second entity involved in the contact.
+    */
+  /* CompleteClass */
+  override var b: typings.playcanvas.pc.Entity = js.native
+  /**
+    * The point on Entity A where the contact occurred, relative to A.
+    */
+  /* CompleteClass */
+  override var localPointA: typings.playcanvas.pc.Vec3 = js.native
+  /**
+    * The point on Entity B where the contact occurred, relative to B.
+    */
+  /* CompleteClass */
+  override var localPointB: typings.playcanvas.pc.Vec3 = js.native
+  /**
+    * The normal vector of the contact on Entity B, in world space.
+    */
+  /* CompleteClass */
+  override var normal: typings.playcanvas.pc.Vec3 = js.native
+  /**
+    * The point on Entity A where the contact occurred, in world space.
+    */
+  /* CompleteClass */
+  override var pointA: typings.playcanvas.pc.Vec3 = js.native
+  /**
+    * The point on Entity B where the contact occurred, in world space.
+    */
+  /* CompleteClass */
+  override var pointB: typings.playcanvas.pc.Vec3 = js.native
 }
 

@@ -54,14 +54,14 @@ object Format {
     color: String = null,
     componentType: series = null,
     data: js.Any = null,
-    dataIndex: Int | Double = null,
-    dimensionIndex: Int | Double = null,
+    dataIndex: js.UndefOr[Double] = js.undefined,
+    dimensionIndex: js.UndefOr[Double] = js.undefined,
     dimensionNames: js.Array[String] = null,
     encode: js.Object = null,
     marker: String = null,
     name: String = null,
-    percent: Int | Double = null,
-    seriesIndex: Int | Double = null,
+    percent: js.UndefOr[Double] = js.undefined,
+    seriesIndex: js.UndefOr[Double] = js.undefined,
     seriesName: String = null,
     seriesType: String = null,
     value: Double | js.Array[_] = null
@@ -72,14 +72,14 @@ object Format {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (componentType != null) __obj.updateDynamic("componentType")(componentType.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
-    if (dimensionIndex != null) __obj.updateDynamic("dimensionIndex")(dimensionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataIndex)) __obj.updateDynamic("dataIndex")(dataIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dimensionIndex)) __obj.updateDynamic("dimensionIndex")(dimensionIndex.get.asInstanceOf[js.Any])
     if (dimensionNames != null) __obj.updateDynamic("dimensionNames")(dimensionNames.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
-    if (seriesIndex != null) __obj.updateDynamic("seriesIndex")(seriesIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seriesIndex)) __obj.updateDynamic("seriesIndex")(seriesIndex.get.asInstanceOf[js.Any])
     if (seriesName != null) __obj.updateDynamic("seriesName")(seriesName.asInstanceOf[js.Any])
     if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

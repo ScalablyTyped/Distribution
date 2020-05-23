@@ -1,12 +1,12 @@
 package typings.qlikEngineapi.EngineAPI
 
-import typings.qlikEngineapi.AnonQBookmarkId
-import typings.qlikEngineapi.AnonQDownloadInfo
-import typings.qlikEngineapi.AnonQFields
-import typings.qlikEngineapi.AnonQFormatSpec
-import typings.qlikEngineapi.AnonQLineage
-import typings.qlikEngineapi.AnonQName
-import typings.qlikEngineapi.AnonQk
+import typings.qlikEngineapi.anon.QBookmarkId
+import typings.qlikEngineapi.anon.QDownloadInfo
+import typings.qlikEngineapi.anon.QFields
+import typings.qlikEngineapi.anon.QFormatSpec
+import typings.qlikEngineapi.anon.QLineage
+import typings.qlikEngineapi.anon.QName
+import typings.qlikEngineapi.anon.Qk
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import typings.qlikEngineapi.qlikEngineapiStrings.SlashqListObjectDef
 import typings.std.MediaList
@@ -400,8 +400,8 @@ trait IApp
     *                   qExpires - download expires in [s]
     * @returns - return a Promise with the qDownloadInfo
     */
-  def exportReducedData(): js.Promise[AnonQDownloadInfo] = js.native
-  def exportReducedData(qOptions: AnonQBookmarkId): js.Promise[AnonQDownloadInfo] = js.native
+  def exportReducedData(): js.Promise[QDownloadInfo] = js.native
+  def exportReducedData(qOptions: QBookmarkId): js.Promise[QDownloadInfo] = js.native
   /**
     * Retrieves any fields that belong to the same archipelago as the specified field and
     * that match at least one of the specified tags.
@@ -564,7 +564,7 @@ trait IApp
   def getEmptyScript(qLocalizedMainSection: String): js.Promise[String] = js.native
   /**
     * Retrieves the variables that are tagged as favorite.
-    * @returns - return a Promise 	Array of String
+    * @returns - return a Promise     Array of String
     */
   def getFavoriteVariables(): js.Promise[js.Array[String]] = js.native
   /**
@@ -586,7 +586,7 @@ trait IApp
     * @param qReadableName: name of a Field that is declared with DECLARE FIELD DEFINITION
     * @returns qname wich contains the expression
     */
-  def getFieldOnTheFlyByName(qReadableName: String): js.Promise[AnonQName] = js.native
+  def getFieldOnTheFlyByName(qReadableName: String): js.Promise[QName] = js.native
   /**
     * Lists the fields of a table for a folder connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -595,8 +595,8 @@ trait IApp
     * @param qTable - Name of the table. This parameter must be set for XLS, XLSX, HTML and XML files.
     * @returns - return a Promise Array of DataField or String.
     */
-  def getFileTableFields(qConnectionId: String, qDataFormat: IFileDataFormat, qTable: String): js.Promise[AnonQFields] = js.native
-  def getFileTableFields(qConnectionId: String, qDataFormat: IFileDataFormat, qTable: String, qRelativePath: String): js.Promise[AnonQFields] = js.native
+  def getFileTableFields(qConnectionId: String, qDataFormat: IFileDataFormat, qTable: String): js.Promise[QFields] = js.native
+  def getFileTableFields(qConnectionId: String, qDataFormat: IFileDataFormat, qTable: String, qRelativePath: String): js.Promise[QFields] = js.native
   /**
     * Lists the values in a table for a folder connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -605,7 +605,7 @@ trait IApp
     * @param qTable - Name of the table. This parameter must be set for XLS, XLSX, HTML and XML files.
     * @returns - return a Promise <Array of DataField> or <String>.
     */
-  def getFileTablePreview(qConnectionId: String, qRelativePath: String, qDataFormat: IFileDataFormat, qTable: String): js.Promise[AnonQFormatSpec] = js.native
+  def getFileTablePreview(qConnectionId: String, qRelativePath: String, qDataFormat: IFileDataFormat, qTable: String): js.Promise[QFormatSpec] = js.native
   /**
     * Lists the tables for a folder connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -650,7 +650,7 @@ trait IApp
     * Returns the lineage of the datamodel.
     * @returns - return a Promise of qLineage.
     */
-  def getLineage(): js.Promise[AnonQLineage] = js.native
+  def getLineage(): js.Promise[QLineage] = js.native
   /**
     * Retrieves locale information.
     * @returns - return a Promise of LocaleInfo.
@@ -770,7 +770,7 @@ trait IApp
     qCellHeight: Double,
     qSyntheticMode: Boolean,
     qIncludeSysVars: Boolean
-  ): js.Promise[AnonQk] = js.native
+  ): js.Promise[Qk] = js.native
   /**
     * Fetches updated variables after a statement execution.
     *

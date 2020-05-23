@@ -24,22 +24,22 @@ object IDropdownMenuOptions {
     autoclose: js.UndefOr[Boolean] = js.undefined,
     clickOpen: js.UndefOr[Boolean] = js.undefined,
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
-    closingTime: Int | Double = null,
+    closingTime: js.UndefOr[Double] = js.undefined,
     disableHover: js.UndefOr[Boolean] = js.undefined,
     forceFollow: js.UndefOr[Boolean] = js.undefined,
-    hoverDelay: Int | Double = null,
+    hoverDelay: js.UndefOr[Double] = js.undefined,
     rightClass: String = null,
     verticalClass: String = null
   ): IDropdownMenuOptions = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickOpen)) __obj.updateDynamic("clickOpen")(clickOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
-    if (closingTime != null) __obj.updateDynamic("closingTime")(closingTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHover)) __obj.updateDynamic("disableHover")(disableHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFollow)) __obj.updateDynamic("forceFollow")(forceFollow.asInstanceOf[js.Any])
-    if (hoverDelay != null) __obj.updateDynamic("hoverDelay")(hoverDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickOpen)) __obj.updateDynamic("clickOpen")(clickOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closingTime)) __obj.updateDynamic("closingTime")(closingTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHover)) __obj.updateDynamic("disableHover")(disableHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFollow)) __obj.updateDynamic("forceFollow")(forceFollow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverDelay)) __obj.updateDynamic("hoverDelay")(hoverDelay.get.asInstanceOf[js.Any])
     if (rightClass != null) __obj.updateDynamic("rightClass")(rightClass.asInstanceOf[js.Any])
     if (verticalClass != null) __obj.updateDynamic("verticalClass")(verticalClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDropdownMenuOptions]

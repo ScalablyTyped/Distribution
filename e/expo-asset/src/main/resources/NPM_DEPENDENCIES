@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-asset" : "8.1.4"
+      "expo-asset" : "8.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-asset" : "8.1.4"
+      "expo-asset" : "8.1.5"
     }
   ],
   "compile-devDependencies" : [

@@ -16,79 +16,79 @@ trait ITreeStore extends INodeStore {
   /** [Config Option] (String) */
   var defaultRootProperty: js.UndefOr[String] = js.undefined
   /** [Method] Get the Record with the specified id
-  		* @param id Object
-  		* @returns Ext.data.Model/undefined The Record with the passed id. Returns undefined if not found.
-  		*/
+    * @param id Object
+    * @returns Ext.data.Model/undefined The Record with the passed id. Returns undefined if not found.
+    */
   @JSName("getById")
   var getById_ITreeStore: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the value of clearOnLoad
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getClearOnLoad: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of defaultRootId
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDefaultRootId: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of defaultRootProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDefaultRootProperty: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the record node by id
-  		* @param id Object
-  		* @returns Ext.data.NodeInterface
-  		*/
+    * @param id Object
+    * @returns Ext.data.NodeInterface
+    */
   var getNodeById: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], INodeInterface]] = js.undefined
   /** [Method] Returns the value of nodeParam
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getNodeParam: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of root
-  		* @returns Ext.data.Model/Ext.data.NodeInterface/Object
-  		*/
+    * @returns Ext.data.Model/Ext.data.NodeInterface/Object
+    */
   var getRoot: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the root node for this tree
-  		* @param node Object
-  		* @returns Ext.data.Model
-  		*/
+    * @param node Object
+    * @returns Ext.data.Model
+    */
   var getRootNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], IModel]] = js.undefined
   /** [Method] Loads the Store using its configured proxy
-  		* @param options Object config object. This is passed into the Operation object that is created and then sent to the proxy's Ext.data.proxy.Proxy.read function. The options can also contain a node, which indicates which node is to be loaded. If not specified, it will default to the root node.
-  		* @returns Object
-  		*/
+    * @param options Object config object. This is passed into the Operation object that is created and then sent to the proxy's Ext.data.proxy.Proxy.read function. The options can also contain a node, which indicates which node is to be loaded. If not specified, it will default to the root node.
+    * @returns Object
+    */
   @JSName("load")
   var load_ITreeStore: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (String) */
   var nodeParam: js.UndefOr[String] = js.undefined
   /** [Method] Called internally when a Proxy has completed a load request
-  		* @param operation Object
-  		*/
+    * @param operation Object
+    */
   var onProxyLoad: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (Ext.data.Model/Ext.data.NodeInterface/Object) */
   var root: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of clearOnLoad
-  		* @param clearOnLoad Boolean The new value.
-  		*/
+    * @param clearOnLoad Boolean The new value.
+    */
   var setClearOnLoad: js.UndefOr[js.Function1[/* clearOnLoad */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of defaultRootId
-  		* @param defaultRootId String The new value.
-  		*/
+    * @param defaultRootId String The new value.
+    */
   var setDefaultRootId: js.UndefOr[js.Function1[/* defaultRootId */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of defaultRootProperty
-  		* @param defaultRootProperty String The new value.
-  		*/
+    * @param defaultRootProperty String The new value.
+    */
   var setDefaultRootProperty: js.UndefOr[js.Function1[/* defaultRootProperty */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of nodeParam
-  		* @param nodeParam String The new value.
-  		*/
+    * @param nodeParam String The new value.
+    */
   var setNodeParam: js.UndefOr[js.Function1[/* nodeParam */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of root
-  		* @param root Ext.data.Model/Ext.data.NodeInterface/Object The new value.
-  		*/
+    * @param root Ext.data.Model/Ext.data.NodeInterface/Object The new value.
+    */
   var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the root node for this tree
-  		* @param node Ext.data.Model
-  		* @returns Ext.data.Model
-  		*/
+    * @param node Ext.data.Model
+    * @returns Ext.data.Model
+    */
   var setRootNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[IModel], IModel]] = js.undefined
 }
 
@@ -118,7 +118,7 @@ object ITreeStore {
     clearOnLoad: js.UndefOr[Boolean] = js.undefined,
     clearOnPageLoad: js.UndefOr[Boolean] = js.undefined,
     config: js.Any = null,
-    currentPage: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     defaultRootId: String = null,
     defaultRootProperty: String = null,
@@ -224,7 +224,7 @@ object ITreeStore {
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onProxyLoad: /* operation */ js.UndefOr[js.Any] => Unit = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     params: js.Any = null,
     platformConfig: js.Any = null,
     plugins: js.Any = null,
@@ -293,7 +293,7 @@ object ITreeStore {
     suspendEvents: () => Unit = null,
     sync: /* options */ js.UndefOr[js.Any] => _ = null,
     syncRemovedRecords: js.UndefOr[Boolean] = js.undefined,
-    totalCount: Int | Double = null,
+    totalCount: js.UndefOr[Double] = js.undefined,
     un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -311,24 +311,24 @@ object ITreeStore {
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (applyData != null) __obj.updateDynamic("applyData")(js.Any.fromFunction1(applyData))
     if (autoLoad != null) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync.get.asInstanceOf[js.Any])
     if (average != null) __obj.updateDynamic("average")(js.Any.fromFunction1(average))
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered.get.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (clearFilter != null) __obj.updateDynamic("clearFilter")(js.Any.fromFunction1(clearFilter))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (!js.isUndefined(clearOnLoad)) __obj.updateDynamic("clearOnLoad")(clearOnLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnPageLoad)) __obj.updateDynamic("clearOnPageLoad")(clearOnPageLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnLoad)) __obj.updateDynamic("clearOnLoad")(clearOnLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnPageLoad)) __obj.updateDynamic("clearOnPageLoad")(clearOnPageLoad.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (defaultRootId != null) __obj.updateDynamic("defaultRootId")(defaultRootId.asInstanceOf[js.Any])
     if (defaultRootProperty != null) __obj.updateDynamic("defaultRootProperty")(defaultRootProperty.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(destroyRemovedRecords)) __obj.updateDynamic("destroyRemovedRecords")(destroyRemovedRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyRemovedRecords)) __obj.updateDynamic("destroyRemovedRecords")(destroyRemovedRecords.get.asInstanceOf[js.Any])
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -343,7 +343,7 @@ object ITreeStore {
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (first != null) __obj.updateDynamic("first")(js.Any.fromFunction0(first))
-    if (!js.isUndefined(folderSort)) __obj.updateDynamic("folderSort")(folderSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(folderSort)) __obj.updateDynamic("folderSort")(folderSort.get.asInstanceOf[js.Any])
     if (getAllCount != null) __obj.updateDynamic("getAllCount")(js.Any.fromFunction0(getAllCount))
     if (getAt != null) __obj.updateDynamic("getAt")(js.Any.fromFunction1(getAt))
     if (getAutoLoad != null) __obj.updateDynamic("getAutoLoad")(js.Any.fromFunction0(getAutoLoad))
@@ -429,18 +429,18 @@ object ITreeStore {
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
     if (onProxyLoad != null) __obj.updateDynamic("onProxyLoad")(js.Any.fromFunction1(onProxyLoad))
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (previousPage != null) __obj.updateDynamic("previousPage")(js.Any.fromFunction1(previousPage))
     if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (queryBy != null) __obj.updateDynamic("queryBy")(js.Any.fromFunction2(queryBy))
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.get.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
-    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteGroup)) __obj.updateDynamic("remoteGroup")(remoteGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteGroup)) __obj.updateDynamic("remoteGroup")(remoteGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort.get.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
     if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction1(removeAll))
@@ -450,7 +450,7 @@ object ITreeStore {
     if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootVisible)) __obj.updateDynamic("rootVisible")(rootVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootVisible)) __obj.updateDynamic("rootVisible")(rootVisible.get.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAutoLoad != null) __obj.updateDynamic("setAutoLoad")(js.Any.fromFunction1(setAutoLoad))
     if (setAutoSync != null) __obj.updateDynamic("setAutoSync")(js.Any.fromFunction1(setAutoSync))
@@ -489,7 +489,7 @@ object ITreeStore {
     if (setStoreId != null) __obj.updateDynamic("setStoreId")(js.Any.fromFunction1(setStoreId))
     if (setSyncRemovedRecords != null) __obj.updateDynamic("setSyncRemovedRecords")(js.Any.fromFunction1(setSyncRemovedRecords))
     if (setTotalCount != null) __obj.updateDynamic("setTotalCount")(js.Any.fromFunction1(setTotalCount))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction3(sort))
     if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
@@ -497,8 +497,8 @@ object ITreeStore {
     if (sum != null) __obj.updateDynamic("sum")(js.Any.fromFunction1(sum))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (sync != null) __obj.updateDynamic("sync")(js.Any.fromFunction1(sync))
-    if (!js.isUndefined(syncRemovedRecords)) __obj.updateDynamic("syncRemovedRecords")(syncRemovedRecords.asInstanceOf[js.Any])
-    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(syncRemovedRecords)) __obj.updateDynamic("syncRemovedRecords")(syncRemovedRecords.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalCount)) __obj.updateDynamic("totalCount")(totalCount.get.asInstanceOf[js.Any])
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))

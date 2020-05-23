@@ -37,14 +37,14 @@ object BodyCells {
     column_header_ids: js.Array[ColumnHeaderIds] = null,
     column_header_texts: js.Array[ColumnHeaderTexts] = null,
     column_header_texts_normalized: js.Array[ColumnHeaderTextsNormalized] = null,
-    column_index_begin: Int | Double = null,
-    column_index_end: Int | Double = null,
+    column_index_begin: js.UndefOr[Double] = js.undefined,
+    column_index_end: js.UndefOr[Double] = js.undefined,
     location: Location = null,
     row_header_ids: js.Array[RowHeaderIds] = null,
     row_header_texts: js.Array[RowHeaderTexts] = null,
     row_header_texts_normalized: js.Array[RowHeaderTextsNormalized] = null,
-    row_index_begin: Int | Double = null,
-    row_index_end: Int | Double = null,
+    row_index_begin: js.UndefOr[Double] = js.undefined,
+    row_index_end: js.UndefOr[Double] = js.undefined,
     text: String = null
   ): BodyCells = {
     val __obj = js.Dynamic.literal()
@@ -53,14 +53,14 @@ object BodyCells {
     if (column_header_ids != null) __obj.updateDynamic("column_header_ids")(column_header_ids.asInstanceOf[js.Any])
     if (column_header_texts != null) __obj.updateDynamic("column_header_texts")(column_header_texts.asInstanceOf[js.Any])
     if (column_header_texts_normalized != null) __obj.updateDynamic("column_header_texts_normalized")(column_header_texts_normalized.asInstanceOf[js.Any])
-    if (column_index_begin != null) __obj.updateDynamic("column_index_begin")(column_index_begin.asInstanceOf[js.Any])
-    if (column_index_end != null) __obj.updateDynamic("column_index_end")(column_index_end.asInstanceOf[js.Any])
+    if (!js.isUndefined(column_index_begin)) __obj.updateDynamic("column_index_begin")(column_index_begin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(column_index_end)) __obj.updateDynamic("column_index_end")(column_index_end.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (row_header_ids != null) __obj.updateDynamic("row_header_ids")(row_header_ids.asInstanceOf[js.Any])
     if (row_header_texts != null) __obj.updateDynamic("row_header_texts")(row_header_texts.asInstanceOf[js.Any])
     if (row_header_texts_normalized != null) __obj.updateDynamic("row_header_texts_normalized")(row_header_texts_normalized.asInstanceOf[js.Any])
-    if (row_index_begin != null) __obj.updateDynamic("row_index_begin")(row_index_begin.asInstanceOf[js.Any])
-    if (row_index_end != null) __obj.updateDynamic("row_index_end")(row_index_end.asInstanceOf[js.Any])
+    if (!js.isUndefined(row_index_begin)) __obj.updateDynamic("row_index_begin")(row_index_begin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(row_index_end)) __obj.updateDynamic("row_index_end")(row_index_end.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyCells]
   }

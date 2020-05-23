@@ -15,14 +15,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageView2Options extends js.Object {
-  	// 新图的图像质量，取值范围：1-100
+      // 新图的图像质量，取值范围：1-100
   var format: jpg | gif | png | webp | String
-  	// 具体含义由缩略模式决定
+      // 具体含义由缩略模式决定
   var h: Double
   var mode: `0` | `1` | `2` | `3` | `4` | `5`
-  	// 具体含义由缩略模式决定
+      // 具体含义由缩略模式决定
   var q: Double
-  	// 缩略模式，共6种[0-5]
+      // 缩略模式，共6种[0-5]
   var w: Double
 }
 

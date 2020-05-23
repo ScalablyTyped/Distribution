@@ -35,12 +35,12 @@ object GetDocumentVersionRequest {
     VersionId: DocumentVersionIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
     Fields: FieldNamesType = null,
-    IncludeCustomMetadata: js.UndefOr[Boolean] = js.undefined
+    IncludeCustomMetadata: js.UndefOr[BooleanType] = js.undefined
   ): GetDocumentVersionRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
     if (Fields != null) __obj.updateDynamic("Fields")(Fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeCustomMetadata)) __obj.updateDynamic("IncludeCustomMetadata")(IncludeCustomMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeCustomMetadata)) __obj.updateDynamic("IncludeCustomMetadata")(IncludeCustomMetadata.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentVersionRequest]
   }
 }

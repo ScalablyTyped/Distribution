@@ -41,19 +41,19 @@ object TargetTrackingConfiguration {
   def apply(
     TargetValue: MetricScale,
     CustomizedScalingMetricSpecification: CustomizedScalingMetricSpecification = null,
-    DisableScaleIn: js.UndefOr[Boolean] = js.undefined,
-    EstimatedInstanceWarmup: Int | Double = null,
+    DisableScaleIn: js.UndefOr[DisableScaleIn] = js.undefined,
+    EstimatedInstanceWarmup: js.UndefOr[Cooldown] = js.undefined,
     PredefinedScalingMetricSpecification: PredefinedScalingMetricSpecification = null,
-    ScaleInCooldown: Int | Double = null,
-    ScaleOutCooldown: Int | Double = null
+    ScaleInCooldown: js.UndefOr[Cooldown] = js.undefined,
+    ScaleOutCooldown: js.UndefOr[Cooldown] = js.undefined
   ): TargetTrackingConfiguration = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
     if (CustomizedScalingMetricSpecification != null) __obj.updateDynamic("CustomizedScalingMetricSpecification")(CustomizedScalingMetricSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableScaleIn)) __obj.updateDynamic("DisableScaleIn")(DisableScaleIn.asInstanceOf[js.Any])
-    if (EstimatedInstanceWarmup != null) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableScaleIn)) __obj.updateDynamic("DisableScaleIn")(DisableScaleIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EstimatedInstanceWarmup)) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.get.asInstanceOf[js.Any])
     if (PredefinedScalingMetricSpecification != null) __obj.updateDynamic("PredefinedScalingMetricSpecification")(PredefinedScalingMetricSpecification.asInstanceOf[js.Any])
-    if (ScaleInCooldown != null) __obj.updateDynamic("ScaleInCooldown")(ScaleInCooldown.asInstanceOf[js.Any])
-    if (ScaleOutCooldown != null) __obj.updateDynamic("ScaleOutCooldown")(ScaleOutCooldown.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScaleInCooldown)) __obj.updateDynamic("ScaleInCooldown")(ScaleInCooldown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScaleOutCooldown)) __obj.updateDynamic("ScaleOutCooldown")(ScaleOutCooldown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetTrackingConfiguration]
   }
 }

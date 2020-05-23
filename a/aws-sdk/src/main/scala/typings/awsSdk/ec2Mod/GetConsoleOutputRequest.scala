@@ -24,12 +24,12 @@ object GetConsoleOutputRequest {
   @scala.inline
   def apply(
     InstanceId: InstanceId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    Latest: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    Latest: js.UndefOr[Boolean] = js.undefined
   ): GetConsoleOutputRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(Latest)) __obj.updateDynamic("Latest")(Latest.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Latest)) __obj.updateDynamic("Latest")(Latest.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConsoleOutputRequest]
   }
 }

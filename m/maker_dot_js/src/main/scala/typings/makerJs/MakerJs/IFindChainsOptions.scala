@@ -22,13 +22,13 @@ object IFindChainsOptions {
   @scala.inline
   def apply(
     byLayers: js.UndefOr[Boolean] = js.undefined,
-    pointMatchingDistance: Int | Double = null,
+    pointMatchingDistance: js.UndefOr[Double] = js.undefined,
     shallow: js.UndefOr[Boolean] = js.undefined
   ): IFindChainsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(byLayers)) __obj.updateDynamic("byLayers")(byLayers.asInstanceOf[js.Any])
-    if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.asInstanceOf[js.Any])
+    if (!js.isUndefined(byLayers)) __obj.updateDynamic("byLayers")(byLayers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointMatchingDistance)) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFindChainsOptions]
   }
 }

@@ -21,16 +21,16 @@ trait ISnapshot extends js.Object {
 object ISnapshot {
   @scala.inline
   def apply(
-    expireTime: ITimestamp = null,
-    labels: StringDictionary[String] = null,
-    name: String = null,
-    topic: String = null
+    expireTime: js.UndefOr[Null | ITimestamp] = js.undefined,
+    labels: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    topic: js.UndefOr[Null | String] = js.undefined
   ): ISnapshot = {
     val __obj = js.Dynamic.literal()
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    if (!js.isUndefined(expireTime)) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(topic)) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISnapshot]
   }
 }

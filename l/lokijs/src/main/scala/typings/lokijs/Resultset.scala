@@ -1,5 +1,7 @@
 package typings.lokijs
 
+import typings.lokijs.anon.PartialGetDataOptions
+import typings.lokijs.anon.PartialSimplesortOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,15 +16,8 @@ import scala.scalajs.js.annotation._
   *      .where(function(obj) { return obj.name === 'Toyota' })
   *      .data();
   */
-@JSGlobal("Resultset")
 @js.native
-class Resultset[E /* <: js.Object */] protected () extends js.Object {
-  /**
-    * @param collection - The collection which this Resultset will query against.
-    * @param options
-    */
-  def this(collection: Collection[E]) = this()
-  def this(collection: Collection[E], options: js.Any) = this()
+trait Resultset[E /* <: js.Object */] extends js.Object {
   @JSName("$and")
   var $and_Original: js.Function1[/* expressionArray */ js.Array[LokiQuery[E]], this.type] = js.native
   @JSName("$or")

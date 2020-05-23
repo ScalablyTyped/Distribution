@@ -6,10 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/error", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/error", JSImport.Namespace)
 @js.native
 object errorMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.firebaseFirestoreTypes.mod.FirestoreError because var conflicts: message, name, stack. Inlined code */ @js.native
   class FirestoreError protected () extends Error {
     def this(code: Code, message: String) = this()

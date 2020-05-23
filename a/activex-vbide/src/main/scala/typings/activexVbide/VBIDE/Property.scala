@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("VBIDE.Property")
 @js.native
-class Property protected () extends js.Object {
+trait Property extends js.Object {
   val Application: typings.activexVbide.VBIDE.Application = js.native
   @JSName("Collection")
   val Collection_Original: Properties = js.native

@@ -1,6 +1,5 @@
 package typings.pouchdbCore.PouchDB
 
-import typings.pouchdbCore.AnonRevRevisionId
 import typings.pouchdbCore.Blob
 import typings.pouchdbCore.Buffer
 import typings.pouchdbCore.EventEmitter
@@ -36,6 +35,7 @@ import typings.pouchdbCore.PouchDB.Core.Revision
 import typings.pouchdbCore.PouchDB.Core.RevisionDiffOptions
 import typings.pouchdbCore.PouchDB.Core.RevisionDiffResponse
 import typings.pouchdbCore.PouchDB.Core.RevisionId
+import typings.pouchdbCore.anon.RevRevisionId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -137,12 +137,12 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
   def getAttachment(docId: DocumentId, attachmentId: AttachmentId): js.Promise[Blob | Buffer] = js.native
   /** Get attachment data */
   def getAttachment(docId: DocumentId, attachmentId: AttachmentId, callback: Callback[Blob | Buffer]): Unit = js.native
-  def getAttachment(docId: DocumentId, attachmentId: AttachmentId, options: AnonRevRevisionId): js.Promise[Blob | Buffer] = js.native
+  def getAttachment(docId: DocumentId, attachmentId: AttachmentId, options: RevRevisionId): js.Promise[Blob | Buffer] = js.native
   /** Get attachment data */
   def getAttachment(
     docId: DocumentId,
     attachmentId: AttachmentId,
-    options: AnonRevRevisionId,
+    options: RevRevisionId,
     callback: Callback[Blob | Buffer]
   ): Unit = js.native
   /** Get database information */

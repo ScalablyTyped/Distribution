@@ -25,10 +25,10 @@ object TextOptions {
     color: String | js.Array[Double] = null,
     font: String = null,
     highlight: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null,
-    rotation: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    rotation: js.UndefOr[Double] = js.undefined,
     rotationOrigin: js.Array[Double] = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     strikeOut: js.UndefOr[Boolean] = js.undefined,
     textBox: TextBox = null,
     underline: js.UndefOr[Boolean] = js.undefined
@@ -37,14 +37,14 @@ object TextOptions {
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
     if (rotationOrigin != null) __obj.updateDynamic("rotationOrigin")(rotationOrigin.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikeOut)) __obj.updateDynamic("strikeOut")(strikeOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikeOut)) __obj.updateDynamic("strikeOut")(strikeOut.get.asInstanceOf[js.Any])
     if (textBox != null) __obj.updateDynamic("textBox")(textBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextOptions]
   }
 }

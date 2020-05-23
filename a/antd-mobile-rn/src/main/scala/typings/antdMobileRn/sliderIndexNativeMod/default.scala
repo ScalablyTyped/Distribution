@@ -1,6 +1,6 @@
 package typings.antdMobileRn.sliderIndexNativeMod
 
-import typings.antdMobileRn.AnonDefaultValue
+import typings.antdMobileRn.anon.DefaultValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends SliderAntm
 @JSImport("antd-mobile-rn/lib/slider/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonDefaultValue = js.native
+  var defaultProps: DefaultValue = js.native
 }
 

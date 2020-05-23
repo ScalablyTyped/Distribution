@@ -31,18 +31,18 @@ trait HlsMediaStoreSettings extends js.Object {
 object HlsMediaStoreSettings {
   @scala.inline
   def apply(
-    ConnectionRetryInterval: Int | Double = null,
-    FilecacheDuration: Int | Double = null,
+    ConnectionRetryInterval: js.UndefOr[integerMin0] = js.undefined,
+    FilecacheDuration: js.UndefOr[integerMin0Max600] = js.undefined,
     MediaStoreStorageClass: HlsMediaStoreStorageClass = null,
-    NumRetries: Int | Double = null,
-    RestartDelay: Int | Double = null
+    NumRetries: js.UndefOr[integerMin0] = js.undefined,
+    RestartDelay: js.UndefOr[integerMin0Max15] = js.undefined
   ): HlsMediaStoreSettings = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionRetryInterval != null) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.asInstanceOf[js.Any])
-    if (FilecacheDuration != null) __obj.updateDynamic("FilecacheDuration")(FilecacheDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConnectionRetryInterval)) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FilecacheDuration)) __obj.updateDynamic("FilecacheDuration")(FilecacheDuration.get.asInstanceOf[js.Any])
     if (MediaStoreStorageClass != null) __obj.updateDynamic("MediaStoreStorageClass")(MediaStoreStorageClass.asInstanceOf[js.Any])
-    if (NumRetries != null) __obj.updateDynamic("NumRetries")(NumRetries.asInstanceOf[js.Any])
-    if (RestartDelay != null) __obj.updateDynamic("RestartDelay")(RestartDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumRetries)) __obj.updateDynamic("NumRetries")(NumRetries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RestartDelay)) __obj.updateDynamic("RestartDelay")(RestartDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsMediaStoreSettings]
   }
 }

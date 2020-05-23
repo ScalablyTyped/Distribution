@@ -27,8 +27,8 @@ object CreateRecipientProps {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipPhoneNumberValidation)) __obj.updateDynamic("skipPhoneNumberValidation")(skipPhoneNumberValidation.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipSMSNotifications)) __obj.updateDynamic("skipSMSNotifications")(skipSMSNotifications.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipPhoneNumberValidation)) __obj.updateDynamic("skipPhoneNumberValidation")(skipPhoneNumberValidation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipSMSNotifications)) __obj.updateDynamic("skipSMSNotifications")(skipSMSNotifications.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRecipientProps]
   }
 }

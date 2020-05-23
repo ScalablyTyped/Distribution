@@ -15,16 +15,16 @@ trait IDetailsListStyles extends js.Object {
 object IDetailsListStyles {
   @scala.inline
   def apply(
-    contentWrapper: IStyle = null,
-    focusZone: IStyle = null,
-    headerWrapper: IStyle = null,
-    root: IStyle = null
+    contentWrapper: js.UndefOr[Null | IStyle] = js.undefined,
+    focusZone: js.UndefOr[Null | IStyle] = js.undefined,
+    headerWrapper: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
   ): IDetailsListStyles = {
     val __obj = js.Dynamic.literal()
-    if (contentWrapper != null) __obj.updateDynamic("contentWrapper")(contentWrapper.asInstanceOf[js.Any])
-    if (focusZone != null) __obj.updateDynamic("focusZone")(focusZone.asInstanceOf[js.Any])
-    if (headerWrapper != null) __obj.updateDynamic("headerWrapper")(headerWrapper.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentWrapper)) __obj.updateDynamic("contentWrapper")(contentWrapper.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusZone)) __obj.updateDynamic("focusZone")(focusZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerWrapper)) __obj.updateDynamic("headerWrapper")(headerWrapper.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsListStyles]
   }
 }

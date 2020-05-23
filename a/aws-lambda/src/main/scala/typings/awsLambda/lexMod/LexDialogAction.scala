@@ -1,8 +1,8 @@
 package typings.awsLambda.lexMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsLambda.AnonContent
-import typings.awsLambda.AnonContentType
+import typings.awsLambda.anon.Content
+import typings.awsLambda.anon.ContentType
 import typings.awsLambda.awsLambdaStrings.Close
 import typings.awsLambda.awsLambdaStrings.ConfirmIntent
 import typings.awsLambda.awsLambdaStrings.Delegate
@@ -25,7 +25,7 @@ trait LexDialogAction extends js.Object
 
 object LexDialogAction {
   @scala.inline
-  def LexDialogActionElicitIntent(`type`: ElicitIntent, message: AnonContent = null, responseCard: AnonContentType = null): LexDialogAction = {
+  def LexDialogActionElicitIntent(`type`: ElicitIntent, message: Content = null, responseCard: ContentType = null): LexDialogAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
@@ -38,8 +38,8 @@ object LexDialogAction {
     slotToElicit: String,
     slots: StringDictionary[String | Null],
     `type`: ElicitSlot,
-    message: AnonContent = null,
-    responseCard: AnonContentType = null
+    message: Content = null,
+    responseCard: ContentType = null
   ): LexDialogAction = {
     val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], slotToElicit = slotToElicit.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -51,8 +51,8 @@ object LexDialogAction {
   def LexDialogActionClose(
     fulfillmentState: Fulfilled | Failed_,
     `type`: Close,
-    message: AnonContent = null,
-    responseCard: AnonContentType = null
+    message: Content = null,
+    responseCard: ContentType = null
   ): LexDialogAction = {
     val __obj = js.Dynamic.literal(fulfillmentState = fulfillmentState.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -65,8 +65,8 @@ object LexDialogAction {
     intentName: String,
     slots: StringDictionary[String | Null],
     `type`: ConfirmIntent,
-    message: AnonContent = null,
-    responseCard: AnonContentType = null
+    message: Content = null,
+    responseCard: ContentType = null
   ): LexDialogAction = {
     val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -1,9 +1,9 @@
 package typings.kiiCloudSdk.KiiCloud
 
-import typings.kiiCloudSdk.Anon22
-import typings.kiiCloudSdk.Anon23
-import typings.kiiCloudSdk.Anon24
-import typings.kiiCloudSdk.Anon25
+import typings.kiiCloudSdk.anon.`20`
+import typings.kiiCloudSdk.anon.`21`
+import typings.kiiCloudSdk.anon.`22`
+import typings.kiiCloudSdk.anon.`23`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +11,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a KiiPushSubscription.
   */
-@JSGlobal("KiiCloud.KiiPushSubscription")
 @js.native
-class KiiPushSubscription () extends js.Object {
+trait KiiPushSubscription extends js.Object {
   /**
     * Check subscription of bucket, topic.
     *
@@ -76,9 +75,9 @@ class KiiPushSubscription () extends js.Object {
     *     );
     */
   def isSubscribed(target: KiiBucket): js.Promise[js.Tuple3[KiiPushSubscription, KiiBucket, Boolean]] = js.native
-  def isSubscribed(target: KiiBucket, callbacks: Anon24): js.Promise[js.Tuple3[KiiPushSubscription, KiiBucket, Boolean]] = js.native
+  def isSubscribed(target: KiiBucket, callbacks: `22`): js.Promise[js.Tuple3[KiiPushSubscription, KiiBucket, Boolean]] = js.native
   def isSubscribed(target: KiiTopic): js.Promise[js.Tuple3[KiiPushSubscription, KiiTopic, Boolean]] = js.native
-  def isSubscribed(target: KiiTopic, callbacks: Anon25): js.Promise[js.Tuple3[KiiPushSubscription, KiiTopic, Boolean]] = js.native
+  def isSubscribed(target: KiiTopic, callbacks: `23`): js.Promise[js.Tuple3[KiiPushSubscription, KiiTopic, Boolean]] = js.native
   /**
     * Subscribe to bucket or topic.
     *
@@ -129,9 +128,9 @@ class KiiPushSubscription () extends js.Object {
     *     );
     */
   def subscribe(target: KiiBucket): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
-  def subscribe(target: KiiBucket, callbacks: Anon22): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
+  def subscribe(target: KiiBucket, callbacks: `20`): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
   def subscribe(target: KiiTopic): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
-  def subscribe(target: KiiTopic, callbacks: Anon23): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
+  def subscribe(target: KiiTopic, callbacks: `21`): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
   /**
     * Unsubscribe to bucket or topic.
     *
@@ -182,8 +181,8 @@ class KiiPushSubscription () extends js.Object {
     *     );
     */
   def unsubscribe(target: KiiBucket): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
-  def unsubscribe(target: KiiBucket, callbacks: Anon22): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
+  def unsubscribe(target: KiiBucket, callbacks: `20`): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
   def unsubscribe(target: KiiTopic): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
-  def unsubscribe(target: KiiTopic, callbacks: Anon23): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
+  def unsubscribe(target: KiiTopic, callbacks: `21`): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
 }
 

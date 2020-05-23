@@ -20,7 +20,6 @@ object IUnaryFilterOpEnum {
     values: () => js.Array[UnaryFilterOp]
   ): IUnaryFilterOpEnum = {
     val __obj = js.Dynamic.literal(IS_NAN = IS_NAN.asInstanceOf[js.Any], IS_NULL = IS_NULL.asInstanceOf[js.Any], OPERATOR_UNSPECIFIED = OPERATOR_UNSPECIFIED.asInstanceOf[js.Any], values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[IUnaryFilterOpEnum]
   }
 }

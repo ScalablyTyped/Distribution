@@ -15,13 +15,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.Notification")
 @js.native
-/**
-  * Notification
-  */
-class Notification () extends EventEmitter {
-  def this(options: NotificationConstructorOptions) = this()
+trait Notification extends EventEmitter {
   var actions: js.Array[NotificationAction] = js.native
   var body: String = js.native
   var closeButtonText: String = js.native
@@ -108,15 +103,5 @@ class Notification () extends EventEmitter {
     * previously shown notification and create a new one with identical properties.
     */
   def show(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Electron.Notification")
-@js.native
-object Notification extends js.Object {
-  /**
-    * Whether or not desktop notifications are supported on the current system
-    */
-  def isSupported(): Boolean = js.native
 }
 

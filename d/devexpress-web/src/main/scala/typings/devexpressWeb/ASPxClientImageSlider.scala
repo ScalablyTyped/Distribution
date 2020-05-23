@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxImageSlider object.
   */
-@JSGlobal("ASPxClientImageSlider")
 @js.native
-class ASPxClientImageSlider () extends ASPxClientControl {
+trait ASPxClientImageSlider extends ASPxClientControl {
   /**
     * Occurs after the active image, displayed within the image area, is changed.
     */
@@ -84,16 +83,5 @@ class ASPxClientImageSlider () extends ASPxClientControl {
     * @param preventAnimation true to prevent the animation effect; false to change images using animation.
     */
   def SetActiveItemIndex(index: Double, preventAnimation: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientImageSlider")
-@js.native
-object ASPxClientImageSlider extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientImageSlider type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientImageSlider = js.native
 }
 

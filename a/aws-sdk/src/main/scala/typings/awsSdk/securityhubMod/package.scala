@@ -172,6 +172,7 @@ package object securityhubMod {
   type StandardsSubscriptionArns = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   type StandardsSubscriptionRequests = js.Array[typings.awsSdk.securityhubMod.StandardsSubscriptionRequest]
   type StandardsSubscriptions = js.Array[typings.awsSdk.securityhubMod.StandardsSubscription]
+  type StatusReasonsList = js.Array[typings.awsSdk.securityhubMod.StatusReason]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.EQUALS
     - typings.awsSdk.awsSdkStrings.PREFIX

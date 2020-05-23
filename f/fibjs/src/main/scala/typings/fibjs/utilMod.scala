@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 常用工具模块
-	* @detail 
-	*/
+  * @brief 常用工具模块
+  * @detail 
+  */
 @JSImport("util", JSImport.Namespace)
 @js.native
 object utilMod extends js.Object {

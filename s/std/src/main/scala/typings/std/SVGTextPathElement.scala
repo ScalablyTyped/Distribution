@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,16 +54,5 @@ trait SVGTextPathElement
     callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
-}
-
-@JSGlobal("SVGTextPathElement")
-@js.native
-object SVGTextPathElement extends Instantiable0[SVGTextPathElement] {
-  val TEXTPATH_METHODTYPE_ALIGN: Double = js.native
-  val TEXTPATH_METHODTYPE_STRETCH: Double = js.native
-  val TEXTPATH_METHODTYPE_UNKNOWN: Double = js.native
-  val TEXTPATH_SPACINGTYPE_AUTO: Double = js.native
-  val TEXTPATH_SPACINGTYPE_EXACT: Double = js.native
-  val TEXTPATH_SPACINGTYPE_UNKNOWN: Double = js.native
 }
 

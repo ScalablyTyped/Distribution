@@ -4,19 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.RuleOperationContext")
-@js.native
-class RuleOperationContext protected () extends js.Object {
-  def this(funcs: (js.Function1[/* context */ FormattingContext, Boolean])*) = this()
-  var customContextChecks: js.Any = js.native
-  def InContext(context: FormattingContext): Boolean = js.native
-  def IsAny(): Boolean = js.native
+trait RuleOperationContext extends js.Object {
+  var customContextChecks: js.Any
+  def InContext(context: FormattingContext): Boolean
+  def IsAny(): Boolean
 }
 
-/* static members */
-@JSGlobal("TypeScript.Services.Formatting.RuleOperationContext")
-@js.native
-object RuleOperationContext extends js.Object {
-  var Any: RuleOperationContext = js.native
+object RuleOperationContext {
+  @scala.inline
+  def apply(InContext: FormattingContext => Boolean, IsAny: () => Boolean, customContextChecks: js.Any): RuleOperationContext = {
+    val __obj = js.Dynamic.literal(InContext = js.Any.fromFunction1(InContext), IsAny = js.Any.fromFunction0(IsAny), customContextChecks = customContextChecks.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuleOperationContext]
+  }
 }
 

@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.badgeMod
 
-import typings.antDesignReactNative.AnonCorner
+import typings.antDesignReactNative.anon.Corner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Badge
 @JSImport("@ant-design/react-native/lib/badge", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonCorner = js.native
+  var defaultProps: Corner = js.native
 }
 

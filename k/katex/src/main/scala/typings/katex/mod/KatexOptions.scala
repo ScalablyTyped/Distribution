@@ -134,28 +134,28 @@ object KatexOptions {
     globalGroup: js.UndefOr[Boolean] = js.undefined,
     leqno: js.UndefOr[Boolean] = js.undefined,
     macros: js.Any = null,
-    maxExpand: Int | Double = null,
-    maxSize: Int | Double = null,
-    minRuleThickness: Int | Double = null,
+    maxExpand: js.UndefOr[Double] = js.undefined,
+    maxSize: js.UndefOr[Double] = js.undefined,
+    minRuleThickness: js.UndefOr[Double] = js.undefined,
     output: html | mathml | htmlAndMathml = null,
     strict: Boolean | String | js.Function = null,
     throwOnError: js.UndefOr[Boolean] = js.undefined,
     trust: Boolean | (js.Function1[/* context */ TrustContext, Boolean]) = null
   ): KatexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colorIsTextColor)) __obj.updateDynamic("colorIsTextColor")(colorIsTextColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayMode)) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorIsTextColor)) __obj.updateDynamic("colorIsTextColor")(colorIsTextColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayMode)) __obj.updateDynamic("displayMode")(displayMode.get.asInstanceOf[js.Any])
     if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(fleqn)) __obj.updateDynamic("fleqn")(fleqn.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalGroup)) __obj.updateDynamic("globalGroup")(globalGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(leqno)) __obj.updateDynamic("leqno")(leqno.asInstanceOf[js.Any])
+    if (!js.isUndefined(fleqn)) __obj.updateDynamic("fleqn")(fleqn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalGroup)) __obj.updateDynamic("globalGroup")(globalGroup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leqno)) __obj.updateDynamic("leqno")(leqno.get.asInstanceOf[js.Any])
     if (macros != null) __obj.updateDynamic("macros")(macros.asInstanceOf[js.Any])
-    if (maxExpand != null) __obj.updateDynamic("maxExpand")(maxExpand.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minRuleThickness != null) __obj.updateDynamic("minRuleThickness")(minRuleThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxExpand)) __obj.updateDynamic("maxExpand")(maxExpand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRuleThickness)) __obj.updateDynamic("minRuleThickness")(minRuleThickness.get.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError.get.asInstanceOf[js.Any])
     if (trust != null) __obj.updateDynamic("trust")(trust.asInstanceOf[js.Any])
     __obj.asInstanceOf[KatexOptions]
   }

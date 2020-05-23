@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.FUNC_ALWAYS
-  * @type {number}
-  * @description Always pass.
+  * Always pass.
   */
 @JSImport("playcanvas", "FUNC_ALWAYS")
 @js.native

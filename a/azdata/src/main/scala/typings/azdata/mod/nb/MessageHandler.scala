@@ -11,7 +11,7 @@ trait MessageHandler[T /* <: IMessage */] extends js.Object {
 
 object MessageHandler {
   @scala.inline
-  def apply[T /* <: IMessage */](handle: T => Unit | Thenable[Unit]): MessageHandler[T] = {
+  def apply[T](handle: T => Unit | Thenable[Unit]): MessageHandler[T] = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
     __obj.asInstanceOf[MessageHandler[T]]
   }

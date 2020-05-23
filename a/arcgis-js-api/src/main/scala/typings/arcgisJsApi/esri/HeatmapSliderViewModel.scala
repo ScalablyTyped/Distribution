@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait HeatmapSliderViewModel extends SmartMappingSliderViewModel {
     */
   def getStopInfo(): js.Array[HeatmapSliderViewModelStopInfo] = js.native
 }
-
-@JSGlobal("__esri.HeatmapSliderViewModel")
-@js.native
-object HeatmapSliderViewModel extends TopLevel[HeatmapSliderViewModelConstructor]
 

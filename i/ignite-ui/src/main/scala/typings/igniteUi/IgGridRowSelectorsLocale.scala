@@ -7,38 +7,35 @@ import scala.scalajs.js.annotation._
 
 trait IgGridRowSelectorsLocale
   extends /**
-	 * Option for IgGridRowSelectorsLocale
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * Deselect all text for the select/deselect all overlay.
-  	 *
-  	 */
+    * Deselect all text for the select/deselect all overlay.
+    *
+    */
   var deselectAllText: js.UndefOr[String] = js.undefined
   /**
-  	 * Deselected records text for the select/deselect all overlay.
-  	 *
-  	 */
+    * Deselected records text for the select/deselect all overlay.
+    *
+    */
   var deselectedRecordsText: js.UndefOr[String] = js.undefined
   /**
-  	 * Select all text for the select/deselect all overlay.
-  	 *
-  	 */
+    * Select all text for the select/deselect all overlay.
+    *
+    */
   var selectAllText: js.UndefOr[String] = js.undefined
   /**
-  	 * Selected records text for the select/deselect all overlay.
-  	 *
-  	 */
+    * Selected records text for the select/deselect all overlay.
+    *
+    */
   var selectedRecordsText: js.UndefOr[String] = js.undefined
 }
 
 object IgGridRowSelectorsLocale {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for IgGridRowSelectorsLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     deselectAllText: String = null,
     deselectedRecordsText: String = null,
     selectAllText: String = null,

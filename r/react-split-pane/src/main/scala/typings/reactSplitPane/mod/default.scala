@@ -1,6 +1,6 @@
 package typings.reactSplitPane.mod
 
-import typings.reactSplitPane.PartialSplitPaneState
+import typings.reactSplitPane.anon.PartialSplitPaneState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

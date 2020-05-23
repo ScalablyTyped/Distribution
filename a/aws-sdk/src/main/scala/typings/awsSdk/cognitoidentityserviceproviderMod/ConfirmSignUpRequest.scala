@@ -48,14 +48,14 @@ object ConfirmSignUpRequest {
     Username: UsernameType,
     AnalyticsMetadata: AnalyticsMetadataType = null,
     ClientMetadata: ClientMetadataType = null,
-    ForceAliasCreation: js.UndefOr[Boolean] = js.undefined,
+    ForceAliasCreation: js.UndefOr[ForceAliasCreation] = js.undefined,
     SecretHash: SecretHashType = null,
     UserContextData: UserContextDataType = null
   ): ConfirmSignUpRequest = {
     val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], ConfirmationCode = ConfirmationCode.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     if (AnalyticsMetadata != null) __obj.updateDynamic("AnalyticsMetadata")(AnalyticsMetadata.asInstanceOf[js.Any])
     if (ClientMetadata != null) __obj.updateDynamic("ClientMetadata")(ClientMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceAliasCreation)) __obj.updateDynamic("ForceAliasCreation")(ForceAliasCreation.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceAliasCreation)) __obj.updateDynamic("ForceAliasCreation")(ForceAliasCreation.get.asInstanceOf[js.Any])
     if (SecretHash != null) __obj.updateDynamic("SecretHash")(SecretHash.asInstanceOf[js.Any])
     if (UserContextData != null) __obj.updateDynamic("UserContextData")(UserContextData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmSignUpRequest]

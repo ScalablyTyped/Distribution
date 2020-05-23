@@ -7,43 +7,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXRManagedOutputCanvas")
-@js.native
-class WebXRManagedOutputCanvas protected () extends WebXRRenderTarget {
-  /**
-    * Initializes the canvas to be added/removed upon entering/exiting xr
-    * @param _xrSessionManager The XR Session manager
-    * @param _options optional configuration for this canvas output. defaults will be used if not provided
-    */
-  def this(_xrSessionManager: WebXRSessionManager) = this()
-  def this(_xrSessionManager: WebXRSessionManager, _options: WebXRManagedOutputCanvasOptions) = this()
-  var _addCanvas: js.Any = js.native
-  var _canvas: js.Any = js.native
-  var _engine: js.Any = js.native
-  var _options: js.Any = js.native
-  var _removeCanvas: js.Any = js.native
-  var _setManagedOutputCanvas: js.Any = js.native
-  /**
-    * xrpresent context of the canvas which can be used to display/mirror xr content
-    */
-  /* CompleteClass */
-  override var canvasContext: WebGLRenderingContext = js.native
-  /**
-    * xr layer for the canvas
-    */
-  /* CompleteClass */
-  override var xrLayer: Nullable[XRWebGLLayer] = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  /**
-    * Initializes the xr layer for the session
-    * @param xrSession xr session
-    * @returns a promise that will resolve once the XR Layer has been created
-    */
-  /* CompleteClass */
-  override def initializeXRLayerAsync(xrSession: XRSession): js.Promise[XRWebGLLayer] = js.native
+trait WebXRManagedOutputCanvas extends WebXRRenderTarget {
+  var _addCanvas: js.Any
+  var _canvas: js.Any
+  var _engine: js.Any
+  var _options: js.Any
+  var _removeCanvas: js.Any
+  var _setManagedOutputCanvas: js.Any
+}
+
+object WebXRManagedOutputCanvas {
+  @scala.inline
+  def apply(
+    _addCanvas: js.Any,
+    _canvas: js.Any,
+    _engine: js.Any,
+    _options: js.Any,
+    _removeCanvas: js.Any,
+    _setManagedOutputCanvas: js.Any,
+    canvasContext: WebGLRenderingContext,
+    dispose: () => Unit,
+    initializeXRLayerAsync: XRSession => js.Promise[XRWebGLLayer],
+    xrLayer: Nullable[XRWebGLLayer] = null
+  ): WebXRManagedOutputCanvas = {
+    val __obj = js.Dynamic.literal(_addCanvas = _addCanvas.asInstanceOf[js.Any], _canvas = _canvas.asInstanceOf[js.Any], _engine = _engine.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _removeCanvas = _removeCanvas.asInstanceOf[js.Any], _setManagedOutputCanvas = _setManagedOutputCanvas.asInstanceOf[js.Any], canvasContext = canvasContext.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), initializeXRLayerAsync = js.Any.fromFunction1(initializeXRLayerAsync), xrLayer = xrLayer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebXRManagedOutputCanvas]
+  }
 }
 

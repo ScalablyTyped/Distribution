@@ -25,10 +25,10 @@ object StartImportLabelsTaskRunRequest {
   def apply(
     InputS3Path: UriString,
     TransformId: HashString,
-    ReplaceAllLabels: js.UndefOr[scala.Boolean] = js.undefined
+    ReplaceAllLabels: js.UndefOr[ReplaceBoolean] = js.undefined
   ): StartImportLabelsTaskRunRequest = {
     val __obj = js.Dynamic.literal(InputS3Path = InputS3Path.asInstanceOf[js.Any], TransformId = TransformId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReplaceAllLabels)) __obj.updateDynamic("ReplaceAllLabels")(ReplaceAllLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReplaceAllLabels)) __obj.updateDynamic("ReplaceAllLabels")(ReplaceAllLabels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImportLabelsTaskRunRequest]
   }
 }

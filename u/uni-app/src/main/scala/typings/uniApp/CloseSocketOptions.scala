@@ -30,14 +30,14 @@ trait CloseSocketOptions extends js.Object {
 object CloseSocketOptions {
   @scala.inline
   def apply(
-    code: Int | Double = null,
+    code: js.UndefOr[Double] = js.undefined,
     complete: /* result */ GeneralCallbackResult => Unit = null,
     fail: /* result */ GeneralCallbackResult => Unit = null,
     reason: String = null,
     success: /* result */ GeneralCallbackResult => Unit = null
   ): CloseSocketOptions = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])

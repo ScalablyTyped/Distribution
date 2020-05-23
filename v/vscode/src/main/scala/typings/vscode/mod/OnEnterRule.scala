@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait OnEnterRule extends js.Object {
   /**
-  		 * The action to execute.
-  		 */
+    * The action to execute.
+    */
   var action: EnterAction
   /**
-  		 * This rule will only execute if the text after the cursor matches this regular expression.
-  		 */
+    * This rule will only execute if the text after the cursor matches this regular expression.
+    */
   var afterText: js.UndefOr[RegExp] = js.undefined
   /**
-  		 * This rule will only execute if the text before the cursor matches this regular expression.
-  		 */
+    * This rule will only execute if the text before the cursor matches this regular expression.
+    */
   var beforeText: RegExp
 }
 

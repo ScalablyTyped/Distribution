@@ -9,9 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides an interface for a barometric sensor to measure atmospheric pressure. */
-@JSGlobal("Windows.Devices.Sensors.Barometer")
 @js.native
-abstract class Barometer () extends js.Object {
+trait Barometer extends js.Object {
   /** Gets the device identifier. */
   var deviceId: String = js.native
   /** The smallest report interval that is supported by this barometer sensor. */
@@ -34,16 +33,5 @@ abstract class Barometer () extends js.Object {
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Barometer, BarometerReadingChangedEventArgs]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.Barometer")
-@js.native
-object Barometer extends js.Object {
-  /**
-    * Returns the default barometer sensor.
-    * @return The default barometer.
-    */
-  def getDefault(): Barometer = js.native
 }
 

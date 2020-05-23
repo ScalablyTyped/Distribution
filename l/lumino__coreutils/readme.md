@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__coreutils
 
-Typings are for version 1.4.2
+Typings are for version 1.4.3
 
 ## Library description:
 Lumino Core Utilities

@@ -313,7 +313,7 @@ object Model {
     headerTemplate: String = null,
     height: String | Double = null,
     htmlAttributes: js.Any = null,
-    itemsCount: Int | Double = null,
+    itemsCount: js.UndefOr[Double] = js.undefined,
     loadOnDemand: js.UndefOr[Boolean] = js.undefined,
     locale: String = null,
     maxPopupHeight: String | Double = null,
@@ -332,7 +332,7 @@ object Model {
     readOnly: js.UndefOr[Boolean] = js.undefined,
     search: /* e */ SearchEventArgs => Unit = null,
     select: /* e */ SelectEventArgs => Unit = null,
-    selectedIndex: Int | Double = null,
+    selectedIndex: js.UndefOr[Double] = js.undefined,
     selectedIndices: js.Array[_] = null,
     showCheckbox: js.UndefOr[Boolean] = js.undefined,
     showPopupOnLoad: js.UndefOr[Boolean] = js.undefined,
@@ -353,12 +353,12 @@ object Model {
     if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
     if (actionFailure != null) __obj.updateDynamic("actionFailure")(js.Any.fromFunction1(actionFailure))
     if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(js.Any.fromFunction1(actionSuccess))
-    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling.get.asInstanceOf[js.Any])
     if (beforePopupHide != null) __obj.updateDynamic("beforePopupHide")(js.Any.fromFunction1(beforePopupHide))
     if (beforePopupShown != null) __obj.updateDynamic("beforePopupShown")(js.Any.fromFunction1(beforePopupShown))
     if (cascade != null) __obj.updateDynamic("cascade")(js.Any.fromFunction1(cascade))
     if (cascadeTo != null) __obj.updateDynamic("cascadeTo")(cascadeTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (checkChange != null) __obj.updateDynamic("checkChange")(js.Any.fromFunction1(checkChange))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
@@ -367,15 +367,15 @@ object Model {
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (delimiterChar != null) __obj.updateDynamic("delimiterChar")(delimiterChar.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFilterSearch)) __obj.updateDynamic("enableFilterSearch")(enableFilterSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableIncrementalSearch)) __obj.updateDynamic("enableIncrementalSearch")(enableIncrementalSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePopupResize)) __obj.updateDynamic("enablePopupResize")(enablePopupResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableServerFiltering)) __obj.updateDynamic("enableServerFiltering")(enableServerFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFilterSearch)) __obj.updateDynamic("enableFilterSearch")(enableFilterSearch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableIncrementalSearch)) __obj.updateDynamic("enableIncrementalSearch")(enableIncrementalSearch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePopupResize)) __obj.updateDynamic("enablePopupResize")(enablePopupResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableServerFiltering)) __obj.updateDynamic("enableServerFiltering")(enableServerFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (focusIn != null) __obj.updateDynamic("focusIn")(js.Any.fromFunction1(focusIn))
@@ -383,8 +383,8 @@ object Model {
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (itemsCount != null) __obj.updateDynamic("itemsCount")(itemsCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemsCount)) __obj.updateDynamic("itemsCount")(itemsCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxPopupHeight != null) __obj.updateDynamic("maxPopupHeight")(maxPopupHeight.asInstanceOf[js.Any])
     if (maxPopupWidth != null) __obj.updateDynamic("maxPopupWidth")(maxPopupWidth.asInstanceOf[js.Any])
@@ -399,14 +399,14 @@ object Model {
     if (popupShown != null) __obj.updateDynamic("popupShown")(js.Any.fromFunction1(popupShown))
     if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(js.Any.fromFunction1(search))
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
     if (selectedIndices != null) __obj.updateDynamic("selectedIndices")(selectedIndices.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPopupOnLoad)) __obj.updateDynamic("showPopupOnLoad")(showPopupOnLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPopupOnLoad)) __obj.updateDynamic("showPopupOnLoad")(showPopupOnLoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (targetID != null) __obj.updateDynamic("targetID")(targetID.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])

@@ -24,9 +24,9 @@ trait RequestOptions
   /** 默认为 GET，有效值：OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT */
   var method: js.UndefOr[GET | OPTIONS | HEAD | POST | PUT | DELETE | TRACE | CONNECT] = js.undefined
   /**
-  		 * 设置响应的数据类型。合法值：text、arraybuffer
-  		 * @version 1.7.0
-  		 */
+    * 设置响应的数据类型。合法值：text、arraybuffer
+    * @version 1.7.0
+    */
   var responseType: js.UndefOr[String] = js.undefined
   /** 开发者服务器接口地址 */
   var url: String

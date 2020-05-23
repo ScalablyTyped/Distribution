@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-navigation" : "6.4.0"
+      "react-native-navigation" : "6.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-navigation" : "6.4.0"
+      "react-native-navigation" : "6.6.2"
     }
   ],
   "compile-devDependencies" : [

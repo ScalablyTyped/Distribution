@@ -1,6 +1,6 @@
 package typings.egjsAxes.animationManagerMod
 
-import typings.egjsAxes.AnonDestPos
+import typings.egjsAxes.anon.DestPos
 import typings.egjsAxes.axesMod.AxesOption
 import typings.egjsAxes.axisManagerMod.Axis
 import typings.egjsAxes.axisManagerMod.AxisManager
@@ -30,7 +30,7 @@ class AnimationManager protected () extends js.Object {
   /* private */ def frame(param: js.Any): js.Any = js.native
   def getDuration(depaPos: Axis, destPos: Axis): Double = js.native
   def getDuration(depaPos: Axis, destPos: Axis, wishDuration: Double): Double = js.native
-  def getUserControll(param: AnimationParam): AnonDestPos = js.native
+  def getUserControll(param: AnimationParam): DestPos = js.native
   def grab(axes: js.Array[String]): Unit = js.native
   def grab(axes: js.Array[String], event: js.Any): Unit = js.native
   def restore(): Unit = js.native

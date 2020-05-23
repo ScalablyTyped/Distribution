@@ -37,9 +37,9 @@ object ApplicationLoadOptions {
     showToolbars: js.UndefOr[Boolean] = js.undefined
   ): ApplicationLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolbars)) __obj.updateDynamic("showToolbars")(showToolbars.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToolbars)) __obj.updateDynamic("showToolbars")(showToolbars.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationLoadOptions]
   }
 }

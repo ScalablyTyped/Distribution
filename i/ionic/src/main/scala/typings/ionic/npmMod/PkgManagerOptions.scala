@@ -30,12 +30,12 @@ object PkgManagerOptions {
     scriptArgs: js.Array[String] = null
   ): PkgManagerOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
     if (pkg != null) __obj.updateDynamic("pkg")(pkg.asInstanceOf[js.Any])
-    if (!js.isUndefined(save)) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveDev)) __obj.updateDynamic("saveDev")(saveDev.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveExact)) __obj.updateDynamic("saveExact")(saveExact.asInstanceOf[js.Any])
+    if (!js.isUndefined(save)) __obj.updateDynamic("save")(save.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveDev)) __obj.updateDynamic("saveDev")(saveDev.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveExact)) __obj.updateDynamic("saveExact")(saveExact.get.asInstanceOf[js.Any])
     if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
     if (scriptArgs != null) __obj.updateDynamic("scriptArgs")(scriptArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PkgManagerOptions]

@@ -132,7 +132,7 @@ object IGlideOptions {
   def apply(
     afterInit: js.Function = null,
     afterTransition: js.Function = null,
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationTimingFunc: String = null,
     arrowLeftClass: String = null,
     arrowLeftText: String = null,
@@ -157,7 +157,7 @@ object IGlideOptions {
     val __obj = js.Dynamic.literal()
     if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit.asInstanceOf[js.Any])
     if (afterTransition != null) __obj.updateDynamic("afterTransition")(afterTransition.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (animationTimingFunc != null) __obj.updateDynamic("animationTimingFunc")(animationTimingFunc.asInstanceOf[js.Any])
     if (arrowLeftClass != null) __obj.updateDynamic("arrowLeftClass")(arrowLeftClass.asInstanceOf[js.Any])
     if (arrowLeftText != null) __obj.updateDynamic("arrowLeftText")(arrowLeftText.asInstanceOf[js.Any])
@@ -169,11 +169,11 @@ object IGlideOptions {
     if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit.asInstanceOf[js.Any])
     if (beforeTransition != null) __obj.updateDynamic("beforeTransition")(beforeTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverpause)) __obj.updateDynamic("hoverpause")(hoverpause.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverpause)) __obj.updateDynamic("hoverpause")(hoverpause.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
     if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigationCenter)) __obj.updateDynamic("navigationCenter")(navigationCenter.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationCenter)) __obj.updateDynamic("navigationCenter")(navigationCenter.get.asInstanceOf[js.Any])
     if (navigationClass != null) __obj.updateDynamic("navigationClass")(navigationClass.asInstanceOf[js.Any])
     if (navigationCurrentItemClass != null) __obj.updateDynamic("navigationCurrentItemClass")(navigationCurrentItemClass.asInstanceOf[js.Any])
     if (navigationItemClass != null) __obj.updateDynamic("navigationItemClass")(navigationItemClass.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__celltags-extension
 
-Typings are for version 2.1.0
+Typings are for version 2.1.2
 
 ## Library description:
 An extension for manipulating tags in cell metadata

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object forStatement extends js.Object {
   def apply(
-    init: js.UndefOr[VariableDeclaration_ | Expression | Null],
+    init: js.UndefOr[Expression | Null | VariableDeclaration_],
     test: js.UndefOr[Expression | Null],
     update: js.UndefOr[Expression | Null],
     body: Statement

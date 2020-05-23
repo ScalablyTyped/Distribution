@@ -12,9 +12,9 @@ trait DescriptorOptions extends js.Object {
 
 object DescriptorOptions {
   @scala.inline
-  def apply(uuid: String, value: Buffer | String = null): DescriptorOptions = {
+  def apply(uuid: String, value: js.UndefOr[Null | Buffer | String] = js.undefined): DescriptorOptions = {
     val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescriptorOptions]
   }
 }

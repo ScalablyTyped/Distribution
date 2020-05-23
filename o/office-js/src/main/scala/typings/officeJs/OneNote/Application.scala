@@ -1,10 +1,10 @@
 package typings.officeJs.OneNote
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OneNote.Interfaces.ApplicationData
 import typings.officeJs.OneNote.Interfaces.ApplicationLoadOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.Application")
 @js.native
-class Application () extends ClientObject {
+trait Application extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Application: RequestContext = js.native
@@ -119,8 +118,8 @@ class Application () extends ClientObject {
   def load(): Application = js.native
   def load(option: String): Application = js.native
   def load(option: js.Array[String]): Application = js.native
-  def load(option: AnonExpand): Application = js.native
   def load(option: ApplicationLoadOptions): Application = js.native
+  def load(option: Expand): Application = js.native
   /**
     *
     * Opens the specified page in the application instance.

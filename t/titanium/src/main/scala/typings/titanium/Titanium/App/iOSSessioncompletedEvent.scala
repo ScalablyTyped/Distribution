@@ -5,38 +5,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired to indicate that a [urlSession](Modules.URLSession) task finished transferring data.
-		 * Available only on iOS 7 and later.
-		 */
+  * Fired to indicate that a [urlSession](Modules.URLSession) task finished transferring data.
+  * Available only on iOS 7 and later.
+  */
 trait iOSSessioncompletedEvent extends iOSBaseEvent {
   /**
-  			 * The error code of the error, if any (potentially system-dependent).
-  			 */
+    * The error code of the error, if any (potentially system-dependent).
+    */
   var errorCode: Double
   /**
-  			 * A string containing the localized description of the error.
-  			 */
+    * A string containing the localized description of the error.
+    */
   var message: String
   /**
-  			 * The response text for upload tasks (since SDK 7.2.0).
-  			 */
+    * The response text for upload tasks (since SDK 7.2.0).
+    */
   var responseText: String
   /**
-  			 * The `urlSession` session identifier. If it does not exist, this property is not provided.
-  			 * This property is available since Titanium Mobile 5.4.0.GA.
-  			 */
+    * The `urlSession` session identifier. If it does not exist, this property is not provided.
+    * This property is available since Titanium Mobile 5.4.0.GA.
+    */
   var sessionIdentifier: String
   /**
-  			 * The response status code for upload tasks (since SDK 7.2.0).
-  			 */
+    * The response status code for upload tasks (since SDK 7.2.0).
+    */
   var statusCode: Double
   /**
-  			 * Indicates if the operation succeeded. Returns true if download succeeded, false otherwise.
-  			 */
+    * Indicates if the operation succeeded. Returns true if download succeeded, false otherwise.
+    */
   var success: Boolean
   /**
-  			 * The `urlSession` download task's identifier.
-  			 */
+    * The `urlSession` download task's identifier.
+    */
   var taskIdentifier: Double
 }
 

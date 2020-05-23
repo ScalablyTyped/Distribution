@@ -5,8 +5,8 @@ import typings.jestWatcher.typesMod.JestHookSubscriber
 import typings.jestWatcher.typesMod.UpdateConfigCallback
 import typings.jestWatcher.typesMod.UsageData
 import typings.jestWatcher.typesMod.WatchPlugin
-import typings.node.processMod._Global_.NodeJS.ReadStream
-import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.node.processMod.global.NodeJS.ReadStream
+import typings.node.processMod.global.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ object BaseWatchPlugin {
     isInternal: js.UndefOr[Boolean] = js.undefined
   ): BaseWatchPlugin = {
     val __obj = js.Dynamic.literal(_stdin = _stdin.asInstanceOf[js.Any], _stdout = _stdout.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), getUsageInfo = js.Any.fromFunction1(getUsageInfo), onKey = js.Any.fromFunction1(onKey), run = js.Any.fromFunction2(run))
-    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseWatchPlugin]
   }
 }

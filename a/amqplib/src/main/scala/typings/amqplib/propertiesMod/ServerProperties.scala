@@ -23,7 +23,7 @@ object ServerProperties {
     platform: String,
     product: String,
     version: String,
-    StringDictionary: /* key */ StringDictionary[js.UndefOr[String]] = null,
+    StringDictionary: /* header */ StringDictionary[js.UndefOr[String]] = null,
     copyright: String = null
   ): ServerProperties = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])

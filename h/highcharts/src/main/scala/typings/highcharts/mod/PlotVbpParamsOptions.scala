@@ -19,9 +19,9 @@ trait PlotVbpParamsOptions extends js.Object {
 
 object PlotVbpParamsOptions {
   @scala.inline
-  def apply(ranges: Int | Double = null, volumeSeriesID: String = null): PlotVbpParamsOptions = {
+  def apply(ranges: js.UndefOr[Double] = js.undefined, volumeSeriesID: String = null): PlotVbpParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
+    if (!js.isUndefined(ranges)) __obj.updateDynamic("ranges")(ranges.get.asInstanceOf[js.Any])
     if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotVbpParamsOptions]
   }

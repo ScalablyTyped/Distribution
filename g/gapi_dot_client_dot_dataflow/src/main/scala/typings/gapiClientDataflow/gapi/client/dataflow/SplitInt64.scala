@@ -13,10 +13,10 @@ trait SplitInt64 extends js.Object {
 
 object SplitInt64 {
   @scala.inline
-  def apply(highBits: Int | Double = null, lowBits: Int | Double = null): SplitInt64 = {
+  def apply(highBits: js.UndefOr[Double] = js.undefined, lowBits: js.UndefOr[Double] = js.undefined): SplitInt64 = {
     val __obj = js.Dynamic.literal()
-    if (highBits != null) __obj.updateDynamic("highBits")(highBits.asInstanceOf[js.Any])
-    if (lowBits != null) __obj.updateDynamic("lowBits")(lowBits.asInstanceOf[js.Any])
+    if (!js.isUndefined(highBits)) __obj.updateDynamic("highBits")(highBits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowBits)) __obj.updateDynamic("lowBits")(lowBits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitInt64]
   }
 }

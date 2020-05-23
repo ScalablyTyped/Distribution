@@ -12,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Manages workflow definitions and workflow activity authoring. */
-@JSGlobal("SP.WorkflowServices.WorkflowDeploymentService")
 @js.native
-class WorkflowDeploymentService () extends ClientObject {
+trait WorkflowDeploymentService extends ClientObject {
   /** Deletes the URL of a workflow definition's collateral file.
     @param workflowDefinitionId The guid identifier of the workflow definition.  */
   def deleteCollateral(workflowDefinitionId: String, leafFileName: String): Unit = js.native

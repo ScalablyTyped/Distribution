@@ -1,7 +1,7 @@
 package typings.materialUiCore.createShallowMod
 
-import typings.materialUiCore.Fn1
-import typings.materialUiCore.PartialShallowOptions
+import typings.materialUiCore.anon.Fn1
+import typings.materialUiCore.anon.PartialShallowOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

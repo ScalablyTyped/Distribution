@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the CallbackPanel extension.
   */
-@JSGlobal("MVCxClientCallbackPanel")
 @js.native
-class MVCxClientCallbackPanel () extends ASPxClientCallbackPanel {
+trait MVCxClientCallbackPanel extends ASPxClientCallbackPanel {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -22,16 +21,5 @@ class MVCxClientCallbackPanel () extends ASPxClientCallbackPanel {
     */
   def PerformCallback(data: js.Any): Unit = js.native
   def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientCallbackPanel")
-@js.native
-object MVCxClientCallbackPanel extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientCallbackPanel type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientCallbackPanel = js.native
 }
 

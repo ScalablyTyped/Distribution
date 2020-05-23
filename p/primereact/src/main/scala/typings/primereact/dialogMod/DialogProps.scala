@@ -1,7 +1,7 @@
 package typings.primereact.dialogMod
 
-import typings.primereact.AnonMaximized
-import typings.react.mod._Global_.JSX.Element
+import typings.primereact.anon.Maximized
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait DialogProps extends js.Object {
   var maximizable: js.UndefOr[Boolean] = js.undefined
   var maximized: js.UndefOr[Boolean] = js.undefined
   var modal: js.UndefOr[Boolean] = js.undefined
-  var onMaximize: js.UndefOr[js.Function1[/* e */ AnonMaximized, Unit]] = js.undefined
+  var onMaximize: js.UndefOr[js.Function1[/* e */ Maximized, Unit]] = js.undefined
   var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var rtl: js.UndefOr[Boolean] = js.undefined
@@ -42,7 +42,7 @@ object DialogProps {
     onHide: () => Unit,
     appendTo: HTMLElement = null,
     ariaCloseIconLabel: String = null,
-    baseZIndex: Int | Double = null,
+    baseZIndex: js.UndefOr[Double] = js.undefined,
     blockScroll: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
@@ -58,7 +58,7 @@ object DialogProps {
     maximizable: js.UndefOr[Boolean] = js.undefined,
     maximized: js.UndefOr[Boolean] = js.undefined,
     modal: js.UndefOr[Boolean] = js.undefined,
-    onMaximize: /* e */ AnonMaximized => Unit = null,
+    onMaximize: /* e */ Maximized => Unit = null,
     onShow: () => Unit = null,
     position: String = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
@@ -69,29 +69,29 @@ object DialogProps {
     val __obj = js.Dynamic.literal(onHide = js.Any.fromFunction0(onHide))
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (ariaCloseIconLabel != null) __obj.updateDynamic("ariaCloseIconLabel")(ariaCloseIconLabel.asInstanceOf[js.Any])
-    if (baseZIndex != null) __obj.updateDynamic("baseZIndex")(baseZIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(blockScroll)) __obj.updateDynamic("blockScroll")(blockScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(baseZIndex)) __obj.updateDynamic("baseZIndex")(baseZIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockScroll)) __obj.updateDynamic("blockScroll")(blockScroll.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape.get.asInstanceOf[js.Any])
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissableMask)) __obj.updateDynamic("dismissableMask")(dismissableMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusOnShow)) __obj.updateDynamic("focusOnShow")(focusOnShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissableMask)) __obj.updateDynamic("dismissableMask")(dismissableMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusOnShow)) __obj.updateDynamic("focusOnShow")(focusOnShow.get.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (iconsTemplate != null) __obj.updateDynamic("iconsTemplate")(js.Any.fromFunction0(iconsTemplate))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maskClassName != null) __obj.updateDynamic("maskClassName")(maskClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximizable)) __obj.updateDynamic("maximizable")(maximizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximized)) __obj.updateDynamic("maximized")(maximized.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximizable)) __obj.updateDynamic("maximizable")(maximizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximized)) __obj.updateDynamic("maximized")(maximized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
     if (onMaximize != null) __obj.updateDynamic("onMaximize")(js.Any.fromFunction1(onMaximize))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogProps]
   }
 }

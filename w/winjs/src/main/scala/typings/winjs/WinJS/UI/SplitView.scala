@@ -1,10 +1,7 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
-import typings.winjs.AnonInline
-import typings.winjs.AnonLeft
-import typings.winjs.AnonOverlay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,17 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * Displays a SplitView which renders a collapsable pane next to arbitrary HTML content.
   **/
-@JSGlobal("WinJS.UI.SplitView")
 @js.native
-/**
-  * Creates a new SplitView.
-  * @constructor
-  * @param element The DOM element hosts the new SplitView.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-  **/
-class SplitView () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait SplitView extends js.Object {
   /**
     * Gets or sets the display mode of the SplitView's pane when it is closed.
     **/
@@ -78,22 +66,22 @@ class SplitView () extends js.Object {
     * Raised immediately after the pane is fully closed.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterclose(eventInfo: Event_): Unit = js.native
+  def onafterclose(eventInfo: Event): Unit = js.native
   /**
     * Raised immediately after the pane is fully open.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafteropen(eventInfo: Event_): Unit = js.native
+  def onafteropen(eventInfo: Event): Unit = js.native
   /**
     * Raised just before closing the pane. Call preventDefault on this event to stop the pane from closing.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeclose(eventInfo: Event_): Unit = js.native
+  def onbeforeclose(eventInfo: Event): Unit = js.native
   /**
     * Raised just before opening the pane. Call preventDefault on this event to stop the pane from opening.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeopen(eventInfo: Event_): Unit = js.native
+  def onbeforeopen(eventInfo: Event): Unit = js.native
   /**
     * Opens the SplitView's pane.
     **/
@@ -106,27 +94,5 @@ class SplitView () extends js.Object {
     **/
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.SplitView")
-@js.native
-object SplitView extends js.Object {
-  /**
-    * Display options for a SplitView's pane when it is closed.
-    **/
-  var ClosedDisplayMode: AnonInline = js.native
-  /**
-    * Display options for a SplitView's pane when it is open.
-    **/
-  var OpenedDisplayMode: AnonOverlay = js.native
-  /**
-    * Placement options for a SplitView's pane.
-    **/
-  var PanePlacement: AnonLeft = js.native
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
 }
 

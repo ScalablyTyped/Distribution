@@ -1,6 +1,6 @@
 package typings.carlo.mod
 
-import typings.carlo.AnonBody
+import typings.carlo.anon.Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait HttpRequest extends js.Object {
   /**
     * Fulfills the network request with the given data. 'Content-Length' header is generated in case it is not listed in the headers.
     */
-  def fulfill(options: AnonBody): js.Promise[Unit]
+  def fulfill(options: Body): js.Promise[Unit]
   /**
     * Network request headers
     */
@@ -45,7 +45,7 @@ object HttpRequest {
     abort: () => js.Promise[Unit],
     continue: () => js.Promise[Unit],
     fail: () => js.Promise[Unit],
-    fulfill: AnonBody => js.Promise[Unit],
+    fulfill: Body => js.Promise[Unit],
     headers: () => js.Object,
     method: () => String,
     url: () => String

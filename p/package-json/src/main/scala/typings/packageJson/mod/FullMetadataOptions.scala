@@ -27,7 +27,7 @@ object FullMetadataOptions {
   ): FullMetadataOptions = {
     val __obj = js.Dynamic.literal(fullMetadata = fullMetadata.asInstanceOf[js.Any])
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (!js.isUndefined(allVersions)) __obj.updateDynamic("allVersions")(allVersions.asInstanceOf[js.Any])
+    if (!js.isUndefined(allVersions)) __obj.updateDynamic("allVersions")(allVersions.get.asInstanceOf[js.Any])
     if (registryUrl != null) __obj.updateDynamic("registryUrl")(registryUrl.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullMetadataOptions]

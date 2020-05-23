@@ -1,6 +1,6 @@
 package typings.cacheableLookup.mod
 
-import typings.cacheableLookup.LookupOptionsalltrue
+import typings.cacheableLookup.anon.LookupOptionsalltrue
 import typings.node.NodeJS.ErrnoException
 import typings.node.httpMod.Agent
 import scala.scalajs.js

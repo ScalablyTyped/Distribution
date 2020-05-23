@@ -31,7 +31,7 @@ trait Destination extends js.Object {
     */
   var ReplicationTime: js.UndefOr[typings.awsSdk.s3Mod.ReplicationTime] = js.native
   /**
-    *  The storage class to use when replicating objects, such as standard or reduced redundancy. By default, Amazon S3 uses the storage class of the source object to create the object replica.  For valid values, see the StorageClass element of the PUT Bucket replication action in the Amazon Simple Storage Service API Reference.
+    *  The storage class to use when replicating objects, such as S3 Standard or reduced redundancy. By default, Amazon S3 uses the storage class of the source object to create the object replica.  For valid values, see the StorageClass element of the PUT Bucket replication action in the Amazon Simple Storage Service API Reference.
     */
   var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.native
 }

@@ -19,11 +19,11 @@ object JsonOptions {
   @scala.inline
   def apply(
     replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _] = null,
-    space: Int | Double = null
+    space: js.UndefOr[Double] = js.undefined
   ): JsonOptions = {
     val __obj = js.Dynamic.literal()
     if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
+    if (!js.isUndefined(space)) __obj.updateDynamic("space")(space.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonOptions]
   }
 }

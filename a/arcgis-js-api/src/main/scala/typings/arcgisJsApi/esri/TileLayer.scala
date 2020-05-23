@@ -1,13 +1,12 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.tile
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.arcgisJsApi.esri.ArcGISCachedService because var conflicts: copyright. Inlined tileInfo
 - typings.arcgisJsApi.esri.ArcGISMapService because var conflicts: fullExtent. Inlined capabilities, copyright, legendEnabled, spatialReference, version */ @js.native
 trait TileLayer
@@ -137,8 +136,4 @@ trait TileLayer
     */
   def getTileUrl(level: Double, row: Double, col: Double): String = js.native
 }
-
-@JSGlobal("__esri.TileLayer")
-@js.native
-object TileLayer extends TopLevel[TileLayerConstructor]
 

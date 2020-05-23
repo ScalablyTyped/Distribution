@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PerturbNormalBlock")
 @js.native
-class PerturbNormalBlock protected () extends NodeMaterialBlock {
-  /**
-    * Create a new PerturbNormalBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait PerturbNormalBlock extends NodeMaterialBlock {
   var _tangentSpaceParameterName: js.Any = js.native
   /** Gets or sets a boolean indicating that normal should be inverted on X axis */
   var invertX: Boolean = js.native

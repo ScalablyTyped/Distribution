@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.FieldRatingScale")
 @js.native
-class FieldRatingScale () extends FieldMultiChoice {
+trait FieldRatingScale extends FieldMultiChoice {
   def get_gridEndNumber(): Double = js.native
   def get_gridNAOptionText(): String = js.native
   def get_gridStartNumber(): Double = js.native

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * 文件系统中的写文件对象，用于写入文件内容
   * FileWriter对象是从设备文件系统写入文件FileWriter对象是从设备文件系统写入文件的一种方式，用户注册自己的事件监听器来接收writestart、progress、write、writeend、error和abort事件。
-  * 	一个FileWriter对象是为单个文件的操作而创建。你可以使用该对象多次对相应文件进行写入操作。FileWriter维护该文件的指针位置及长度属性，这样你就可以寻找和写入文件的任何地方。
-  * 	默认情况下，FileWriter从文件的开头开始写入（将覆盖现有数据）。FileWriter对象的seek方法可设置文件操作指定位置，如fw.seek(fw.length-1)写入操作就会从文件的末尾开始。
+  *     一个FileWriter对象是为单个文件的操作而创建。你可以使用该对象多次对相应文件进行写入操作。FileWriter维护该文件的指针位置及长度属性，这样你就可以寻找和写入文件的任何地方。
+  *     默认情况下，FileWriter从文件的开头开始写入（将覆盖现有数据）。FileWriter对象的seek方法可设置文件操作指定位置，如fw.seek(fw.length-1)写入操作就会从文件的末尾开始。
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
@@ -98,7 +98,7 @@ trait PlusIoFileWriter extends js.Object {
   /**
     * 终止文件写入操作
     * 写入文件数据操作开始后，可通过此方法取消写入文件数据操作。
-    * 	调用此方法后将触发文件写入对象的onabort事件。
+    *     调用此方法后将触发文件写入对象的onabort事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -106,7 +106,7 @@ trait PlusIoFileWriter extends js.Object {
   /**
     * 定位文件操作位置
     * 定位文件的操作位置，有效值为0到文件的总长度减1。
-    * 	0表示文件的起始位置。
+    *     0表示文件的起始位置。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -123,7 +123,7 @@ trait PlusIoFileWriter extends js.Object {
   /**
     * 向文件中写入数据
     * 从文件当前定位的位置开始，写入数据到文件中。
-    * 	如果文件中已经存在数据，新写入的数据将覆盖已有数据。
+    *     如果文件中已经存在数据，新写入的数据将覆盖已有数据。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */

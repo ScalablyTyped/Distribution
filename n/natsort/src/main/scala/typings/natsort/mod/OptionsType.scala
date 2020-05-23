@@ -13,8 +13,8 @@ object OptionsType {
   @scala.inline
   def apply(desc: js.UndefOr[Boolean] = js.undefined, insensitive: js.UndefOr[Boolean] = js.undefined): OptionsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (!js.isUndefined(insensitive)) __obj.updateDynamic("insensitive")(insensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insensitive)) __obj.updateDynamic("insensitive")(insensitive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsType]
   }
 }

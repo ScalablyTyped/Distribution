@@ -25,12 +25,12 @@ object DescribeVTLDevicesInput {
   @scala.inline
   def apply(
     GatewayARN: GatewayARN,
-    Limit: Int | Double = null,
+    Limit: js.UndefOr[PositiveIntObject] = js.undefined,
     Marker: Marker = null,
     VTLDeviceARNs: VTLDeviceARNs = null
   ): DescribeVTLDevicesInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (VTLDeviceARNs != null) __obj.updateDynamic("VTLDeviceARNs")(VTLDeviceARNs.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVTLDevicesInput]

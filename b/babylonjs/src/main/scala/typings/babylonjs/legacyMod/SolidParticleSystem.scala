@@ -1,6 +1,6 @@
 package typings.babylonjs.legacyMod
 
-import typings.babylonjs.AnonBSphereRadiusFactor
+import typings.babylonjs.anon.BSphereRadiusFactor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +26,6 @@ class SolidParticleSystem protected ()
     * @example bSphereRadiusFactor = 1.0 / Math.sqrt(3.0) => the bounding sphere exactly matches a spherical mesh.
     */
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
-  def this(name: String, scene: typings.babylonjs.sceneMod.Scene, options: AnonBSphereRadiusFactor) = this()
+  def this(name: String, scene: typings.babylonjs.sceneMod.Scene, options: BSphereRadiusFactor) = this()
 }
 

@@ -27,7 +27,7 @@ trait RasterPaint extends AnyPaint {
 object RasterPaint {
   @scala.inline
   def apply(
-    `circle-sort-key`: Int | Double = null,
+    `circle-sort-key`: js.UndefOr[Double] = js.undefined,
     `raster-brightness-max`: Double | Expression = null,
     `raster-brightness-max-transition`: Transition = null,
     `raster-brightness-min`: Double | Expression = null,
@@ -44,7 +44,7 @@ object RasterPaint {
     `raster-saturation-transition`: Transition = null
   ): RasterPaint = {
     val __obj = js.Dynamic.literal()
-    if (`circle-sort-key` != null) __obj.updateDynamic("circle-sort-key")(`circle-sort-key`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`circle-sort-key`)) __obj.updateDynamic("circle-sort-key")(`circle-sort-key`.get.asInstanceOf[js.Any])
     if (`raster-brightness-max` != null) __obj.updateDynamic("raster-brightness-max")(`raster-brightness-max`.asInstanceOf[js.Any])
     if (`raster-brightness-max-transition` != null) __obj.updateDynamic("raster-brightness-max-transition")(`raster-brightness-max-transition`.asInstanceOf[js.Any])
     if (`raster-brightness-min` != null) __obj.updateDynamic("raster-brightness-min")(`raster-brightness-min`.asInstanceOf[js.Any])

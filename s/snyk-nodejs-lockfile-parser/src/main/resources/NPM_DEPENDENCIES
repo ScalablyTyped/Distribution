@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "snyk-nodejs-lockfile-parser" : "1.22.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "snyk-nodejs-lockfile-parser" : "1.22.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

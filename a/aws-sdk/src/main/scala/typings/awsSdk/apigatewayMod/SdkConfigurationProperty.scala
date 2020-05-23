@@ -35,14 +35,14 @@ object SdkConfigurationProperty {
     description: String = null,
     friendlyName: String = null,
     name: String = null,
-    required: js.UndefOr[scala.Boolean] = js.undefined
+    required: js.UndefOr[Boolean] = js.undefined
   ): SdkConfigurationProperty = {
     val __obj = js.Dynamic.literal()
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SdkConfigurationProperty]
   }
 }

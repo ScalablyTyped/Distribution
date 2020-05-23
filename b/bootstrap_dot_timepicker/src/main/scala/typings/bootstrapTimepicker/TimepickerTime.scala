@@ -15,17 +15,17 @@ trait TimepickerTime extends js.Object {
 object TimepickerTime {
   @scala.inline
   def apply(
-    hours: Int | Double = null,
+    hours: js.UndefOr[Double] = js.undefined,
     meridian: String = null,
-    minutes: Int | Double = null,
-    seconds: Int | Double = null,
+    minutes: js.UndefOr[Double] = js.undefined,
+    seconds: js.UndefOr[Double] = js.undefined,
     value: String = null
   ): TimepickerTime = {
     val __obj = js.Dynamic.literal()
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
+    if (!js.isUndefined(hours)) __obj.updateDynamic("hours")(hours.get.asInstanceOf[js.Any])
     if (meridian != null) __obj.updateDynamic("meridian")(meridian.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(minutes)) __obj.updateDynamic("minutes")(minutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimepickerTime]
   }

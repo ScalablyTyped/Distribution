@@ -34,13 +34,13 @@ object GetRecommendationsRequest {
     campaignArn: Arn,
     context: Context = null,
     itemId: ItemID = null,
-    numResults: Int | Double = null,
+    numResults: js.UndefOr[NumResults] = js.undefined,
     userId: UserID = null
   ): GetRecommendationsRequest = {
     val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (numResults != null) __obj.updateDynamic("numResults")(numResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecommendationsRequest]
   }

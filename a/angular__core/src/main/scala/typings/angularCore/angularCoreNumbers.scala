@@ -1,6 +1,5 @@
 package typings.angularCore
 
-import typings.angularCore.mod.ActiveIndexFlag
 import typings.angularCore.mod.IcuType
 import typings.angularCore.mod.LViewFlags
 import typings.angularCore.mod.OutputType
@@ -31,9 +30,7 @@ import scala.scalajs.js.annotation._
 
 object angularCoreNumbers {
   @js.native
-  sealed trait `-1`
-    extends ActiveIndexFlag
-       with ɵAttributeMarker
+  sealed trait `-1` extends ɵAttributeMarker
   
   @js.native
   sealed trait `0`
@@ -56,8 +53,7 @@ object angularCoreNumbers {
   
   @js.native
   sealed trait `1`
-    extends ActiveIndexFlag
-       with IcuType
+    extends IcuType
        with LViewFlags
        with OutputType
        with RootContextFlags
@@ -80,13 +76,7 @@ object angularCoreNumbers {
        with ɵRenderFlags
   
   @js.native
-  sealed trait `10` extends LViewFlags
-  
-  @js.native
   sealed trait `100` extends ɵPlayState
-  
-  @js.native
-  sealed trait `1023` extends LViewFlags
   
   @js.native
   sealed trait `1024`
@@ -99,6 +89,9 @@ object angularCoreNumbers {
   
   @js.native
   sealed trait `1073741824` extends ɵNodeFlags
+  
+  @js.native
+  sealed trait `11` extends LViewFlags
   
   @js.native
   sealed trait `12` extends ViewState
@@ -143,8 +136,7 @@ object angularCoreNumbers {
   
   @js.native
   sealed trait `2`
-    extends ActiveIndexFlag
-       with RootContextFlags
+    extends RootContextFlags
        with SelectorFlags
        with StyleSanitizeMode
        with TNodeFlags
@@ -175,7 +167,12 @@ object angularCoreNumbers {
   sealed trait `20224` extends ɵNodeFlags
   
   @js.native
-  sealed trait `2048` extends ɵNodeFlags
+  sealed trait `2047` extends LViewFlags
+  
+  @js.native
+  sealed trait `2048`
+    extends LViewFlags
+       with ɵNodeFlags
   
   @js.native
   sealed trait `2097152` extends ɵNodeFlags
@@ -313,17 +310,15 @@ object angularCoreNumbers {
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def `10`: `10` = 10.asInstanceOf[`10`]
-  @scala.inline
   def `100`: `100` = 100.asInstanceOf[`100`]
-  @scala.inline
-  def `1023`: `1023` = 1023.asInstanceOf[`1023`]
   @scala.inline
   def `1024`: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
   def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
   @scala.inline
   def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
+  @scala.inline
+  def `11`: `11` = 11.asInstanceOf[`11`]
   @scala.inline
   def `12`: `12` = 12.asInstanceOf[`12`]
   @scala.inline
@@ -354,6 +349,8 @@ object angularCoreNumbers {
   def `201347067`: `201347067` = 201347067.asInstanceOf[`201347067`]
   @scala.inline
   def `20224`: `20224` = 20224.asInstanceOf[`20224`]
+  @scala.inline
+  def `2047`: `2047` = 2047.asInstanceOf[`2047`]
   @scala.inline
   def `2048`: `2048` = 2048.asInstanceOf[`2048`]
   @scala.inline

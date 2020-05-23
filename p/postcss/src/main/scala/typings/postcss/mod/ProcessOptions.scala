@@ -1,6 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.PickProcessOptionsmapfrom
+import typings.postcss.anon.PickProcessOptionsmapfrom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

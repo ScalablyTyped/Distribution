@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents and manages the search pane that opens when a user activates the Search charm. The search pane provides a consistent, touch-friendly search box and optional search suggestions. */
-@JSGlobal("Windows.ApplicationModel.Search.SearchPane")
 @js.native
-abstract class SearchPane () extends js.Object {
+trait SearchPane extends js.Object {
   /** The Internet Engineering Task Force (IETF) language tag (BCP 47 standard) that identifies the language currently associated with the user's text input device. */
   var language: String = js.native
   /** Fires when the user changes the text in the search box. */
@@ -113,18 +112,5 @@ abstract class SearchPane () extends js.Object {
     * @return True if the search box text was set successfully. Otherwise, false.
     */
   def trySetQueryText(query: String): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.ApplicationModel.Search.SearchPane")
-@js.native
-object SearchPane extends js.Object {
-  /**
-    * Retrieves an instance of the search pane from which users can search within the app.
-    * @return An instance of the search pane, which provides a consistent, touch-friendly search box and optional search suggestions for searching within the current application.
-    */
-  def getForCurrentView(): SearchPane = js.native
-  /** Hides the current app's UI. */
-  def hideThisApplication(): Unit = js.native
 }
 

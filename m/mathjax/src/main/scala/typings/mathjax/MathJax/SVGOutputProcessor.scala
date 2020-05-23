@@ -89,17 +89,17 @@ trait SVGOutputProcessor extends js.Object {
 object SVGOutputProcessor {
   @scala.inline
   def apply(
-    EqnChunk: Int | Double = null,
-    EqnChunkDelay: Int | Double = null,
-    EqnChunkFactor: Int | Double = null,
+    EqnChunk: js.UndefOr[Double] = js.undefined,
+    EqnChunkDelay: js.UndefOr[Double] = js.undefined,
+    EqnChunkFactor: js.UndefOr[Double] = js.undefined,
     addMMLclasses: js.UndefOr[Boolean] = js.undefined,
-    blacker: Int | Double = null,
+    blacker: js.UndefOr[Double] = js.undefined,
     font: String = null,
     linebreaks: LineBreaks = null,
     matchFontHeight: js.UndefOr[Boolean] = js.undefined,
-    minScaleAdjust: Int | Double = null,
+    minScaleAdjust: js.UndefOr[Double] = js.undefined,
     mtextFontInherit: js.UndefOr[Boolean] = js.undefined,
-    scale: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
     styles: js.Any = null,
     tooltip: ToolTip = null,
     undefinedFamily: String = null,
@@ -107,22 +107,22 @@ object SVGOutputProcessor {
     useGlobalCache: js.UndefOr[Boolean] = js.undefined
   ): SVGOutputProcessor = {
     val __obj = js.Dynamic.literal()
-    if (EqnChunk != null) __obj.updateDynamic("EqnChunk")(EqnChunk.asInstanceOf[js.Any])
-    if (EqnChunkDelay != null) __obj.updateDynamic("EqnChunkDelay")(EqnChunkDelay.asInstanceOf[js.Any])
-    if (EqnChunkFactor != null) __obj.updateDynamic("EqnChunkFactor")(EqnChunkFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(addMMLclasses)) __obj.updateDynamic("addMMLclasses")(addMMLclasses.asInstanceOf[js.Any])
-    if (blacker != null) __obj.updateDynamic("blacker")(blacker.asInstanceOf[js.Any])
+    if (!js.isUndefined(EqnChunk)) __obj.updateDynamic("EqnChunk")(EqnChunk.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EqnChunkDelay)) __obj.updateDynamic("EqnChunkDelay")(EqnChunkDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EqnChunkFactor)) __obj.updateDynamic("EqnChunkFactor")(EqnChunkFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(addMMLclasses)) __obj.updateDynamic("addMMLclasses")(addMMLclasses.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blacker)) __obj.updateDynamic("blacker")(blacker.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (linebreaks != null) __obj.updateDynamic("linebreaks")(linebreaks.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchFontHeight)) __obj.updateDynamic("matchFontHeight")(matchFontHeight.asInstanceOf[js.Any])
-    if (minScaleAdjust != null) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.asInstanceOf[js.Any])
-    if (!js.isUndefined(mtextFontInherit)) __obj.updateDynamic("mtextFontInherit")(mtextFontInherit.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchFontHeight)) __obj.updateDynamic("matchFontHeight")(matchFontHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScaleAdjust)) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtextFontInherit)) __obj.updateDynamic("mtextFontInherit")(mtextFontInherit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (undefinedFamily != null) __obj.updateDynamic("undefinedFamily")(undefinedFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFontCache)) __obj.updateDynamic("useFontCache")(useFontCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGlobalCache)) __obj.updateDynamic("useGlobalCache")(useGlobalCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFontCache)) __obj.updateDynamic("useFontCache")(useFontCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGlobalCache)) __obj.updateDynamic("useGlobalCache")(useGlobalCache.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGOutputProcessor]
   }
 }

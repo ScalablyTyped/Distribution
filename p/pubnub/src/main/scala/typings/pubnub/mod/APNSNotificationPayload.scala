@@ -17,7 +17,7 @@ object APNSNotificationPayload {
     isSilent: Boolean,
     payload: js.Object,
     apnsPushType: String = null,
-    badge: Int | Double = null,
+    badge: js.UndefOr[Double] = js.undefined,
     body: String = null,
     sound: String = null,
     subtitle: String = null,
@@ -25,7 +25,7 @@ object APNSNotificationPayload {
   ): APNSNotificationPayload = {
     val __obj = js.Dynamic.literal(configurations = configurations.asInstanceOf[js.Any], isSilent = isSilent.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     if (apnsPushType != null) __obj.updateDynamic("apnsPushType")(apnsPushType.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])

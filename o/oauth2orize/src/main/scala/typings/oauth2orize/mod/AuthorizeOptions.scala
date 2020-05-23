@@ -11,9 +11,9 @@ trait AuthorizeOptions extends js.Object {
 
 object AuthorizeOptions {
   @scala.inline
-  def apply(idLength: Int | Double = null, sessionKey: String = null): AuthorizeOptions = {
+  def apply(idLength: js.UndefOr[Double] = js.undefined, sessionKey: String = null): AuthorizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (idLength != null) __obj.updateDynamic("idLength")(idLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(idLength)) __obj.updateDynamic("idLength")(idLength.get.asInstanceOf[js.Any])
     if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeOptions]
   }

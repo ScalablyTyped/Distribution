@@ -18,15 +18,15 @@ object RenderOptions {
   def apply(
     map: Map,
     autoViewport: js.UndefOr[Boolean] = js.undefined,
-    highlightMode: Int | Double = null,
+    highlightMode: js.UndefOr[HighlightModes] = js.undefined,
     panel: String | HTMLElement = null,
     selectFirstResult: js.UndefOr[Boolean] = js.undefined
   ): RenderOptions = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoViewport)) __obj.updateDynamic("autoViewport")(autoViewport.asInstanceOf[js.Any])
-    if (highlightMode != null) __obj.updateDynamic("highlightMode")(highlightMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoViewport)) __obj.updateDynamic("autoViewport")(autoViewport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightMode)) __obj.updateDynamic("highlightMode")(highlightMode.get.asInstanceOf[js.Any])
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectFirstResult)) __obj.updateDynamic("selectFirstResult")(selectFirstResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectFirstResult)) __obj.updateDynamic("selectFirstResult")(selectFirstResult.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
 }

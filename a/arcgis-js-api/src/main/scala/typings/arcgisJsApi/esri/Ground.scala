@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -84,8 +83,4 @@ trait Ground
   def queryElevation(geometry: Polyline): js.Promise[ElevationQueryResult] = js.native
   def queryElevation(geometry: Polyline, options: GroundQueryElevationOptions): js.Promise[ElevationQueryResult] = js.native
 }
-
-@JSGlobal("__esri.Ground")
-@js.native
-object Ground extends TopLevel[GroundConstructor]
 

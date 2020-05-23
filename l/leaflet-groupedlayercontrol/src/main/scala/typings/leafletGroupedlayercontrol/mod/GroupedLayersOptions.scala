@@ -26,10 +26,10 @@ object GroupedLayersOptions {
     position: ControlPosition = null
   ): GroupedLayersOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoZIndex)) __obj.updateDynamic("autoZIndex")(autoZIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoZIndex)) __obj.updateDynamic("autoZIndex")(autoZIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (exclusiveGroups != null) __obj.updateDynamic("exclusiveGroups")(exclusiveGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupCheckboxes)) __obj.updateDynamic("groupCheckboxes")(groupCheckboxes.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupCheckboxes)) __obj.updateDynamic("groupCheckboxes")(groupCheckboxes.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupedLayersOptions]
   }

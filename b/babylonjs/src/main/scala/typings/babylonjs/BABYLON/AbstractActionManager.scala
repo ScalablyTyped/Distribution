@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.AbstractActionManager")
 @js.native
-abstract class AbstractActionManager () extends IDisposable {
+trait AbstractActionManager extends IDisposable {
   /** Gets the list of actions */
   var actions: js.Array[IAction] = js.native
   /** Gets the cursor to use when hovering items */
@@ -15,11 +14,6 @@ abstract class AbstractActionManager () extends IDisposable {
     * Gets or sets a boolean indicating that the manager is recursive meaning that it can trigger action from children
     */
   var isRecursive: Boolean = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Does this action manager has pick triggers
     */
@@ -75,27 +69,5 @@ abstract class AbstractActionManager () extends IDisposable {
     * @return a boolean indicating whether the action has been unregistered
     */
   def unregisterAction(action: IAction): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.AbstractActionManager")
-@js.native
-object AbstractActionManager extends js.Object {
-  /** Gets the list of active triggers */
-  var Triggers: org.scalablytyped.runtime.StringDictionary[Double] = js.native
-  /**
-    * Does exist one action manager with at least one pick trigger
-    **/
-  def HasPickTriggers: Boolean = js.native
-  /**
-    * Does exist one action manager that handles actions of a given trigger
-    * @param trigger defines the trigger to be tested
-    * @return a boolean indicating whether the trigger is handeled by at least one action manager
-    **/
-  def HasSpecificTrigger(trigger: Double): Boolean = js.native
-  /**
-    * Does exist one action manager with at least one trigger
-    **/
-  def HasTriggers: Boolean = js.native
 }
 

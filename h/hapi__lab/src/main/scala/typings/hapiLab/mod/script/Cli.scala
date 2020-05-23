@@ -233,7 +233,7 @@ object Cli {
     assert: String = null,
     bail: js.UndefOr[Boolean] = js.undefined,
     colors: js.UndefOr[Boolean] = js.undefined,
-    `context-timeout`: Int | Double = null,
+    `context-timeout`: js.UndefOr[Double] = js.undefined,
     coverage: js.UndefOr[Boolean] = js.undefined,
     `coverage-all`: js.UndefOr[Boolean] = js.undefined,
     `coverage-exclude`: js.Array[String] = null,
@@ -241,7 +241,7 @@ object Cli {
     `coverage-module`: js.Array[String] = null,
     `coverage-path`: String = null,
     coveragePattern: RegExp = null,
-    `default-plan-threshold`: Int | Double = null,
+    `default-plan-threshold`: js.UndefOr[Double] = js.undefined,
     dry: js.UndefOr[Boolean] = js.undefined,
     environment: String = null,
     flat: js.UndefOr[Boolean] = js.undefined,
@@ -257,14 +257,14 @@ object Cli {
     output: String | js.Array[String] = null,
     path: js.Array[String] = null,
     pattern: RegExp = null,
-    progress: Int | Double = null,
+    progress: js.UndefOr[Double] = js.undefined,
     reporter: String | js.Array[String] = null,
-    retries: Int | Double = null,
+    retries: js.UndefOr[Double] = js.undefined,
     seed: String = null,
     `silent-skips`: js.UndefOr[Boolean] = js.undefined,
     sourcemaps: js.UndefOr[Boolean] = js.undefined,
-    threshold: Int | Double = null,
-    timeout: Int | Double = null,
+    threshold: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined,
     transform: js.Array[Transformer] = null,
     types: js.UndefOr[Boolean] = js.undefined,
     `types-test`: String = null
@@ -273,42 +273,42 @@ object Cli {
     __obj.updateDynamic("lint-errors-threshold")(`lint-errors-threshold`.asInstanceOf[js.Any])
     __obj.updateDynamic("lint-warnings-threshold")(`lint-warnings-threshold`.asInstanceOf[js.Any])
     if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (`context-timeout` != null) __obj.updateDynamic("context-timeout")(`context-timeout`.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverage)) __obj.updateDynamic("coverage")(coverage.asInstanceOf[js.Any])
-    if (!js.isUndefined(`coverage-all`)) __obj.updateDynamic("coverage-all")(`coverage-all`.asInstanceOf[js.Any])
+    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`context-timeout`)) __obj.updateDynamic("context-timeout")(`context-timeout`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverage)) __obj.updateDynamic("coverage")(coverage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`coverage-all`)) __obj.updateDynamic("coverage-all")(`coverage-all`.get.asInstanceOf[js.Any])
     if (`coverage-exclude` != null) __obj.updateDynamic("coverage-exclude")(`coverage-exclude`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`coverage-flat`)) __obj.updateDynamic("coverage-flat")(`coverage-flat`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`coverage-flat`)) __obj.updateDynamic("coverage-flat")(`coverage-flat`.get.asInstanceOf[js.Any])
     if (`coverage-module` != null) __obj.updateDynamic("coverage-module")(`coverage-module`.asInstanceOf[js.Any])
     if (`coverage-path` != null) __obj.updateDynamic("coverage-path")(`coverage-path`.asInstanceOf[js.Any])
     if (coveragePattern != null) __obj.updateDynamic("coveragePattern")(coveragePattern.asInstanceOf[js.Any])
-    if (`default-plan-threshold` != null) __obj.updateDynamic("default-plan-threshold")(`default-plan-threshold`.asInstanceOf[js.Any])
-    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry.asInstanceOf[js.Any])
+    if (!js.isUndefined(`default-plan-threshold`)) __obj.updateDynamic("default-plan-threshold")(`default-plan-threshold`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry.get.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.asInstanceOf[js.Any])
+    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.get.asInstanceOf[js.Any])
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
     if (grep != null) __obj.updateDynamic("grep")(grep.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect.asInstanceOf[js.Any])
-    if (!js.isUndefined(leaks)) __obj.updateDynamic("leaks")(leaks.asInstanceOf[js.Any])
-    if (!js.isUndefined(lint)) __obj.updateDynamic("lint")(lint.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lint-fix`)) __obj.updateDynamic("lint-fix")(`lint-fix`.asInstanceOf[js.Any])
+    if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leaks)) __obj.updateDynamic("leaks")(leaks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lint)) __obj.updateDynamic("lint")(lint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lint-fix`)) __obj.updateDynamic("lint-fix")(`lint-fix`.get.asInstanceOf[js.Any])
     if (`lint-options` != null) __obj.updateDynamic("lint-options")(`lint-options`.asInstanceOf[js.Any])
     if (linter != null) __obj.updateDynamic("linter")(linter.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
     if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (!js.isUndefined(`silent-skips`)) __obj.updateDynamic("silent-skips")(`silent-skips`.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(`silent-skips`)) __obj.updateDynamic("silent-skips")(`silent-skips`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types.get.asInstanceOf[js.Any])
     if (`types-test` != null) __obj.updateDynamic("types-test")(`types-test`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cli]
   }

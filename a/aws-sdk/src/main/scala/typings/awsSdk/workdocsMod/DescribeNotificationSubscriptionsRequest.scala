@@ -22,9 +22,9 @@ trait DescribeNotificationSubscriptionsRequest extends js.Object {
 
 object DescribeNotificationSubscriptionsRequest {
   @scala.inline
-  def apply(OrganizationId: IdType, Limit: Int | Double = null, Marker: PageMarkerType = null): DescribeNotificationSubscriptionsRequest = {
+  def apply(OrganizationId: IdType, Limit: js.UndefOr[LimitType] = js.undefined, Marker: PageMarkerType = null): DescribeNotificationSubscriptionsRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotificationSubscriptionsRequest]
   }

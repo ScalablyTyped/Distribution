@@ -67,7 +67,7 @@ object RemoteItem {
     parentReference: ItemReference = null,
     shared: Shared = null,
     sharepointIds: SharepointIds = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     specialFolder: SpecialFolder = null,
     webDavUrl: String = null,
     webUrl: String = null
@@ -86,7 +86,7 @@ object RemoteItem {
     if (parentReference != null) __obj.updateDynamic("parentReference")(parentReference.asInstanceOf[js.Any])
     if (shared != null) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
     if (sharepointIds != null) __obj.updateDynamic("sharepointIds")(sharepointIds.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (specialFolder != null) __obj.updateDynamic("specialFolder")(specialFolder.asInstanceOf[js.Any])
     if (webDavUrl != null) __obj.updateDynamic("webDavUrl")(webDavUrl.asInstanceOf[js.Any])
     if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonValues
+import typings.sequelize.anon.Values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait DataTypeEnum extends DataTypeAbstract {
     */
   def apply(): DataTypeEnum = js.native
   def apply(args: String*): DataTypeEnum = js.native
-  def apply(options: AnonValues): DataTypeEnum = js.native
+  def apply(options: Values): DataTypeEnum = js.native
   def apply(values: String): DataTypeEnum = js.native
   def apply(values: js.Array[String]): DataTypeEnum = js.native
 }

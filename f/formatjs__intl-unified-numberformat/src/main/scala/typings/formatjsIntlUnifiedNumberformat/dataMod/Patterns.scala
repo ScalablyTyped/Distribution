@@ -45,7 +45,7 @@ class Patterns protected () extends NumberLocalePatternData {
     numberingSystem: String,
     unit: String,
     currency: String,
-    currencySign: standard | accounting
+    currencySign: /* keyof @formatjs/intl-utils.@formatjs/intl-utils/dist/number-types.CurrencySignPattern */ standard | accounting
   ) = this()
   var _currency: js.UndefOr[js.Any] = js.native
   var _unit: js.UndefOr[js.Any] = js.native

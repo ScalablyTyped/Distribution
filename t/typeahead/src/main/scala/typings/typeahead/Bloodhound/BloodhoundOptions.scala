@@ -76,16 +76,16 @@ object BloodhoundOptions {
     prefetch: String | PrefetchOptions[T] = null,
     remote: String | RemoteOptions[T] = null,
     sorter: (/* a */ T, /* b */ T) => Double = null,
-    sufficient: Int | Double = null
+    sufficient: js.UndefOr[Double] = js.undefined
   ): BloodhoundOptions[T] = {
     val __obj = js.Dynamic.literal(datumTokenizer = js.Any.fromFunction1(datumTokenizer), queryTokenizer = js.Any.fromFunction1(queryTokenizer))
     if (identify != null) __obj.updateDynamic("identify")(js.Any.fromFunction1(identify))
-    if (!js.isUndefined(initialize)) __obj.updateDynamic("initialize")(initialize.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialize)) __obj.updateDynamic("initialize")(initialize.get.asInstanceOf[js.Any])
     if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
     if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
     if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
     if (sorter != null) __obj.updateDynamic("sorter")(js.Any.fromFunction2(sorter))
-    if (sufficient != null) __obj.updateDynamic("sufficient")(sufficient.asInstanceOf[js.Any])
+    if (!js.isUndefined(sufficient)) __obj.updateDynamic("sufficient")(sufficient.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BloodhoundOptions[T]]
   }
 }

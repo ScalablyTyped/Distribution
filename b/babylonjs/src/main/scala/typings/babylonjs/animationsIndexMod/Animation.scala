@@ -53,20 +53,6 @@ class Animation protected ()
     /**The data type of the animation */
   dataType: Double,
     /**The loop mode of the animation */
-  loopMode: js.UndefOr[scala.Nothing],
-    /**Specifies if blending should be enabled */
-  enableBlending: Boolean
-  ) = this()
-  def this(
-    /**Name of the animation */
-  name: String,
-    /**Property to animate */
-  targetProperty: String,
-    /**The frames per second of the animation */
-  framePerSecond: Double,
-    /**The data type of the animation */
-  dataType: Double,
-    /**The loop mode of the animation */
   loopMode: Double,
     /**Specifies if blending should be enabled */
   enableBlending: Boolean

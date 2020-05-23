@@ -26,7 +26,7 @@ object IsocontourTransform {
   @scala.inline
   def apply(
     `type`: isocontour,
-    as: String | SignalRef = null,
+    as: js.UndefOr[Null | String | SignalRef] = js.undefined,
     field: String | TransformField = null,
     levels: Double | SignalRef = null,
     nice: Boolean | SignalRef = null,
@@ -39,7 +39,7 @@ object IsocontourTransform {
   ): IsocontourTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (!js.isUndefined(as)) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])

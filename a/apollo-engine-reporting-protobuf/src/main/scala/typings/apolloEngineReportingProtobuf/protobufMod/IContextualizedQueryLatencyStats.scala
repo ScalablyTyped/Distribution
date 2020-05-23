@@ -13,10 +13,13 @@ trait IContextualizedQueryLatencyStats extends js.Object {
 
 object IContextualizedQueryLatencyStats {
   @scala.inline
-  def apply(context: IStatsContext = null, queryLatencyStats: IQueryLatencyStats = null): IContextualizedQueryLatencyStats = {
+  def apply(
+    context: js.UndefOr[Null | IStatsContext] = js.undefined,
+    queryLatencyStats: js.UndefOr[Null | IQueryLatencyStats] = js.undefined
+  ): IContextualizedQueryLatencyStats = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (queryLatencyStats != null) __obj.updateDynamic("queryLatencyStats")(queryLatencyStats.asInstanceOf[js.Any])
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryLatencyStats)) __obj.updateDynamic("queryLatencyStats")(queryLatencyStats.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualizedQueryLatencyStats]
   }
 }

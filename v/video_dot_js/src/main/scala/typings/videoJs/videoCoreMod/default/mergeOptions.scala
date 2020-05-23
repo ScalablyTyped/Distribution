@@ -14,7 +14,7 @@ object mergeOptions extends js.Object {
     * @param sources
     *          One or more objects to merge into a new object.
     *
-    * @return	A new object that is the merged result of all sources.
+    * @return    A new object that is the merged result of all sources.
     */
   def apply[A, B, C, D, E, F](option: A): A with B with C with D with E with F = js.native
   def apply[A, B, C, D, E, F](option: A, option2: B): A with B with C with D with E with F = js.native

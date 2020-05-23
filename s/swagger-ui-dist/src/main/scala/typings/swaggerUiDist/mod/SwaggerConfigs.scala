@@ -82,14 +82,14 @@ trait SwaggerConfigs
 object SwaggerConfigs {
   @scala.inline
   def apply(
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     configUrl: String = null,
     deepLinking: js.UndefOr[Boolean] = js.undefined,
     docExpansion: list | full | none = null,
-    domNode: String | HTMLElement = null,
-    dom_id: String = null,
+    domNode: js.UndefOr[Null | String | HTMLElement] = js.undefined,
+    dom_id: js.UndefOr[Null | String] = js.undefined,
     layout: String = null,
-    maxDisplayedTags: Int | Double = null,
+    maxDisplayedTags: js.UndefOr[Double] = js.undefined,
     operationsSorter: () => Unit = null,
     plugins: js.Any = null,
     presets: js.Array[_] = null,
@@ -102,12 +102,12 @@ object SwaggerConfigs {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (configUrl != null) __obj.updateDynamic("configUrl")(configUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(deepLinking)) __obj.updateDynamic("deepLinking")(deepLinking.asInstanceOf[js.Any])
+    if (!js.isUndefined(deepLinking)) __obj.updateDynamic("deepLinking")(deepLinking.get.asInstanceOf[js.Any])
     if (docExpansion != null) __obj.updateDynamic("docExpansion")(docExpansion.asInstanceOf[js.Any])
-    if (domNode != null) __obj.updateDynamic("domNode")(domNode.asInstanceOf[js.Any])
-    if (dom_id != null) __obj.updateDynamic("dom_id")(dom_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(domNode)) __obj.updateDynamic("domNode")(domNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(dom_id)) __obj.updateDynamic("dom_id")(dom_id.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (maxDisplayedTags != null) __obj.updateDynamic("maxDisplayedTags")(maxDisplayedTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDisplayedTags)) __obj.updateDynamic("maxDisplayedTags")(maxDisplayedTags.get.asInstanceOf[js.Any])
     if (operationsSorter != null) __obj.updateDynamic("operationsSorter")(js.Any.fromFunction0(operationsSorter))
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])

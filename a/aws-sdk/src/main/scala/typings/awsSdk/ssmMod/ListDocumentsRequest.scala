@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListDocumentsRequest extends js.Object {
   /**
-    * One or more filters. Use a filter to return a more specific list of results.
+    * This data type is deprecated. Instead, use Filters.
     */
   var DocumentFilterList: js.UndefOr[typings.awsSdk.ssmMod.DocumentFilterList] = js.native
   /**
-    * One or more filters. Use a filter to return a more specific list of results.
+    * One or more DocumentKeyValuesFilter objects. Use a filter to return a more specific list of results. For keys, you can specify one or more key-value pair tags that have been applied to a document. Other valid keys include Owner, Name, PlatformTypes, DocumentType, and TargetType. For example, to return documents you own use Key=Owner,Values=Self. To specify a custom key-value pair, use the format Key=tag:tagName,Values=valueName.
     */
   var Filters: js.UndefOr[DocumentKeyValuesFilterList] = js.native
   /**
@@ -29,13 +29,13 @@ object ListDocumentsRequest {
   def apply(
     DocumentFilterList: DocumentFilterList = null,
     Filters: DocumentKeyValuesFilterList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null
   ): ListDocumentsRequest = {
     val __obj = js.Dynamic.literal()
     if (DocumentFilterList != null) __obj.updateDynamic("DocumentFilterList")(DocumentFilterList.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDocumentsRequest]
   }

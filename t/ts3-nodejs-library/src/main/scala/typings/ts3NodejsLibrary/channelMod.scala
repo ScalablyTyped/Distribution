@@ -2,6 +2,7 @@ package typings.ts3NodejsLibrary
 
 import typings.node.Buffer
 import typings.ts3NodejsLibrary.abstractMod.Abstract
+import typings.ts3NodejsLibrary.anon.PartialClientList
 import typings.ts3NodejsLibrary.clientMod.TeamSpeakClient
 import typings.ts3NodejsLibrary.enumMod.Codec
 import typings.ts3NodejsLibrary.propertyTypesMod.ChannelEdit

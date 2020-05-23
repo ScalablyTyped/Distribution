@@ -5,18 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Shortcut Object */
-@JSGlobal("IWshRuntimeLibrary.WshShortcut")
-@js.native
-class WshShortcut protected () extends js.Object {
-  var Arguments: String = js.native
-  var Description: String = js.native
-  val FullName: String = js.native
-  var Hotkey: String = js.native
+trait WshShortcut extends js.Object {
+  var Arguments: String
+  var Description: String
+  val FullName: String
+  var Hotkey: String
   @JSName("IWshRuntimeLibrary.WshShortcut_typekey")
-  var IWshRuntimeLibraryDotWshShortcut_typekey: WshShortcut = js.native
-  var IconLocation: String = js.native
-  val RelativePath: String = js.native
-  var TargetPath: String = js.native
+  var IWshRuntimeLibraryDotWshShortcut_typekey: WshShortcut
+  var IconLocation: String
+  val RelativePath: String
+  var TargetPath: String
   /**
     * Possible values:
     *
@@ -25,9 +23,31 @@ class WshShortcut protected () extends js.Object {
     * * **3** -- Activates the window and displays it as a maximized window.
     * * **7** -- Displays the window as a minimized window. The active window remains active.
     */
-  var WindowStyle: ShortcutWindowStyle = js.native
-  var WorkingDirectory: String = js.native
-  def Load(PathLink: String): Unit = js.native
-  def Save(): Unit = js.native
+  var WindowStyle: ShortcutWindowStyle
+  var WorkingDirectory: String
+  def Load(PathLink: String): Unit
+  def Save(): Unit
+}
+
+object WshShortcut {
+  @scala.inline
+  def apply(
+    Arguments: String,
+    Description: String,
+    FullName: String,
+    Hotkey: String,
+    IWshRuntimeLibraryDotWshShortcut_typekey: WshShortcut,
+    IconLocation: String,
+    Load: String => Unit,
+    RelativePath: String,
+    Save: () => Unit,
+    TargetPath: String,
+    WindowStyle: ShortcutWindowStyle,
+    WorkingDirectory: String
+  ): WshShortcut = {
+    val __obj = js.Dynamic.literal(Arguments = Arguments.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], FullName = FullName.asInstanceOf[js.Any], Hotkey = Hotkey.asInstanceOf[js.Any], IconLocation = IconLocation.asInstanceOf[js.Any], Load = js.Any.fromFunction1(Load), RelativePath = RelativePath.asInstanceOf[js.Any], Save = js.Any.fromFunction0(Save), TargetPath = TargetPath.asInstanceOf[js.Any], WindowStyle = WindowStyle.asInstanceOf[js.Any], WorkingDirectory = WorkingDirectory.asInstanceOf[js.Any])
+    __obj.updateDynamic("IWshRuntimeLibrary.WshShortcut_typekey")(IWshRuntimeLibraryDotWshShortcut_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WshShortcut]
+  }
 }
 

@@ -35,7 +35,7 @@ trait AwsSecurityFinding extends js.Object {
     */
   var FirstObservedAt: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security-findings providers' solutions, this generator can be called a rule, a check, a detector, a plug-in, etc. 
+    * The identifier for the solution-specific component (a discrete unit of logic) that generated a finding. In various security-findings providers' solutions, this generator can be called a rule, a check, a detector, a plugin, etc. 
     */
   var GeneratorId: NonEmptyString = js.native
   /**
@@ -148,8 +148,8 @@ object AwsSecurityFinding {
     Types: TypeList,
     UpdatedAt: NonEmptyString,
     Compliance: Compliance = null,
-    Confidence: Int | scala.Double = null,
-    Criticality: Int | scala.Double = null,
+    Confidence: js.UndefOr[Integer] = js.undefined,
+    Criticality: js.UndefOr[Integer] = js.undefined,
     FirstObservedAt: NonEmptyString = null,
     LastObservedAt: NonEmptyString = null,
     Malware: MalwareList = null,
@@ -169,8 +169,8 @@ object AwsSecurityFinding {
   ): AwsSecurityFinding = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], GeneratorId = GeneratorId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], ProductArn = ProductArn.asInstanceOf[js.Any], Resources = Resources.asInstanceOf[js.Any], SchemaVersion = SchemaVersion.asInstanceOf[js.Any], Severity = Severity.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     if (Compliance != null) __obj.updateDynamic("Compliance")(Compliance.asInstanceOf[js.Any])
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
-    if (Criticality != null) __obj.updateDynamic("Criticality")(Criticality.asInstanceOf[js.Any])
+    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Criticality)) __obj.updateDynamic("Criticality")(Criticality.get.asInstanceOf[js.Any])
     if (FirstObservedAt != null) __obj.updateDynamic("FirstObservedAt")(FirstObservedAt.asInstanceOf[js.Any])
     if (LastObservedAt != null) __obj.updateDynamic("LastObservedAt")(LastObservedAt.asInstanceOf[js.Any])
     if (Malware != null) __obj.updateDynamic("Malware")(Malware.asInstanceOf[js.Any])

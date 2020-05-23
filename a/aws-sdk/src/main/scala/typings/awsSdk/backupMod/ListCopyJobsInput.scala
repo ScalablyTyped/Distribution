@@ -23,7 +23,7 @@ trait ListCopyJobsInput extends js.Object {
     */
   var ByResourceArn: js.UndefOr[ARN] = js.native
   /**
-    * Returns only backup jobs for the specified resources:    DynamoDB for Amazon DynamoDB    EBS for Amazon Elastic Block Store    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
+    * Returns only backup jobs for the specified resources:    EBS for Amazon Elastic Block Store    EFS for Amazon Elastic File System    RDS for Amazon Relational Database Service    Storage Gateway for AWS Storage Gateway  
     */
   var ByResourceType: js.UndefOr[ResourceType] = js.native
   /**
@@ -49,7 +49,7 @@ object ListCopyJobsInput {
     ByResourceArn: ARN = null,
     ByResourceType: ResourceType = null,
     ByState: CopyJobState = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: String = null
   ): ListCopyJobsInput = {
     val __obj = js.Dynamic.literal()
@@ -59,7 +59,7 @@ object ListCopyJobsInput {
     if (ByResourceArn != null) __obj.updateDynamic("ByResourceArn")(ByResourceArn.asInstanceOf[js.Any])
     if (ByResourceType != null) __obj.updateDynamic("ByResourceType")(ByResourceType.asInstanceOf[js.Any])
     if (ByState != null) __obj.updateDynamic("ByState")(ByState.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCopyJobsInput]
   }

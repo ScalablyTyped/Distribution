@@ -15,12 +15,6 @@ object reduxSagaCoreStrings {
   sealed trait ALL extends js.Object
   
   @js.native
-  sealed trait AnonContext extends js.Object
-  
-  @js.native
-  sealed trait AnonContextFn extends js.Object
-  
-  @js.native
   sealed trait CALL extends js.Object
   
   @js.native
@@ -33,10 +27,16 @@ object reduxSagaCoreStrings {
   sealed trait CPS extends js.Object
   
   @js.native
+  sealed trait Context extends js.Object
+  
+  @js.native
   sealed trait FLUSH extends js.Object
   
   @js.native
   sealed trait FORK extends js.Object
+  
+  @js.native
+  sealed trait Fn extends js.Object
   
   @js.native
   sealed trait GET_CONTEXT extends js.Object
@@ -81,10 +81,6 @@ object reduxSagaCoreStrings {
   @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
   @scala.inline
-  def AnonContext: AnonContext = "AnonContext".asInstanceOf[AnonContext]
-  @scala.inline
-  def AnonContextFn: AnonContextFn = "AnonContextFn".asInstanceOf[AnonContextFn]
-  @scala.inline
   def CALL: CALL = "CALL".asInstanceOf[CALL]
   @scala.inline
   def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
@@ -93,9 +89,13 @@ object reduxSagaCoreStrings {
   @scala.inline
   def CPS: CPS = "CPS".asInstanceOf[CPS]
   @scala.inline
+  def Context: Context = "Context".asInstanceOf[Context]
+  @scala.inline
   def FLUSH: FLUSH = "FLUSH".asInstanceOf[FLUSH]
   @scala.inline
   def FORK: FORK = "FORK".asInstanceOf[FORK]
+  @scala.inline
+  def Fn: Fn = "Fn".asInstanceOf[Fn]
   @scala.inline
   def GET_CONTEXT: GET_CONTEXT = "GET_CONTEXT".asInstanceOf[GET_CONTEXT]
   @scala.inline

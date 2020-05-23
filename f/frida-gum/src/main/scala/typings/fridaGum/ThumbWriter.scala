@@ -7,18 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Generates machine code for arm.
   */
-@JSGlobal("ThumbWriter")
 @js.native
-class ThumbWriter protected () extends js.Object {
-  /**
-    * Creates a new code writer for generating ARM machine code
-    * written directly to memory at `codeAddress`.
-    *
-    * @param codeAddress Memory address to write generated code to.
-    * @param options Options for customizing code generation.
-    */
-  def this(codeAddress: NativePointerValue) = this()
-  def this(codeAddress: NativePointerValue, options: ThumbWriterOptions) = this()
+trait ThumbWriter extends js.Object {
   /**
     * Memory location of the first byte of output.
     */
@@ -36,6 +26,12 @@ class ThumbWriter protected () extends js.Object {
     */
   var pc: NativePointer = js.native
   /**
+    * Commits the first pending reference to the given label, returning
+    * `true` on success. Returns `false` if the given label hasn't been
+    * defined yet, or there are no more pending references to it.
+    */
+  def commitLabel(id: String): Boolean = js.native
+  /**
     * Eagerly cleans up memory.
     */
   def dispose(): Unit = js.native
@@ -50,8 +46,8 @@ class ThumbWriter protected () extends js.Object {
     * Puts an ADD instruction.
     */
   def putAddRegImm(dstReg: ArmRegister, immValue: Double): Unit = js.native
-  def putAddRegImm(dstReg: ArmRegister, immValue: Int64_): Unit = js.native
-  def putAddRegImm(dstReg: ArmRegister, immValue: UInt64_): Unit = js.native
+  def putAddRegImm(dstReg: ArmRegister, immValue: Int64): Unit = js.native
+  def putAddRegImm(dstReg: ArmRegister, immValue: UInt64): Unit = js.native
   /**
     * Puts an ADD instruction.
     */
@@ -60,12 +56,18 @@ class ThumbWriter protected () extends js.Object {
     * Puts an ADD instruction.
     */
   def putAddRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Double): Unit = js.native
-  def putAddRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Int64_): Unit = js.native
-  def putAddRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: UInt64_): Unit = js.native
+  def putAddRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Int64): Unit = js.native
+  def putAddRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: UInt64): Unit = js.native
   /**
     * Puts an ADD instruction.
     */
   def putAddRegRegReg(dstReg: ArmRegister, leftReg: ArmRegister, rightReg: ArmRegister): Unit = js.native
+  /**
+    * Puts an AND instruction.
+    */
+  def putAndRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Double): Unit = js.native
+  def putAndRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Int64): Unit = js.native
+  def putAndRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: UInt64): Unit = js.native
   /**
     * Puts a B COND instruction referencing `labelId`, defined by a past
     * or future `putLabel()`.
@@ -169,6 +171,10 @@ class ThumbWriter protected () extends js.Object {
     */
   def putLabel(id: String): Unit = js.native
   /**
+    * Puts an LDMIA MASK instruction.
+    */
+  def putLdmiaRegMask(reg: ArmRegister, mask: Double): Unit = js.native
+  /**
     * Puts an LDR instruction.
     */
   def putLdrRegAddress(reg: ArmRegister, address: NativePointerValue): Unit = js.native
@@ -180,12 +186,32 @@ class ThumbWriter protected () extends js.Object {
     * Puts an LDR instruction.
     */
   def putLdrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: Double): Unit = js.native
-  def putLdrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: Int64_): Unit = js.native
-  def putLdrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: UInt64_): Unit = js.native
+  def putLdrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: Int64): Unit = js.native
+  def putLdrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: UInt64): Unit = js.native
   /**
     * Puts an LDR instruction.
     */
   def putLdrRegU32(reg: ArmRegister, `val`: Double): Unit = js.native
+  /**
+    * Puts an LDRB instruction.
+    */
+  def putLdrbRegReg(dstReg: ArmRegister, srcReg: ArmRegister): Unit = js.native
+  /**
+    * Puts a LSLS instruction.
+    */
+  def putLslsRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Double): Unit = js.native
+  /**
+    * Puts a LSRS instruction.
+    */
+  def putLsrsRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Double): Unit = js.native
+  /**
+    * Puts a MOV CPSR instruction.
+    */
+  def putMovCpsrReg(reg: ArmRegister): Unit = js.native
+  /**
+    * Puts a MOV CPSR instruction.
+    */
+  def putMovRegCpsr(reg: ArmRegister): Unit = js.native
   /**
     * Puts a MOV instruction.
     */
@@ -222,14 +248,14 @@ class ThumbWriter protected () extends js.Object {
     * Puts a STR instruction.
     */
   def putStrRegRegOffset(srcReg: ArmRegister, dstReg: ArmRegister, dstOffset: Double): Unit = js.native
-  def putStrRegRegOffset(srcReg: ArmRegister, dstReg: ArmRegister, dstOffset: Int64_): Unit = js.native
-  def putStrRegRegOffset(srcReg: ArmRegister, dstReg: ArmRegister, dstOffset: UInt64_): Unit = js.native
+  def putStrRegRegOffset(srcReg: ArmRegister, dstReg: ArmRegister, dstOffset: Int64): Unit = js.native
+  def putStrRegRegOffset(srcReg: ArmRegister, dstReg: ArmRegister, dstOffset: UInt64): Unit = js.native
   /**
     * Puts a SUB instruction.
     */
   def putSubRegImm(dstReg: ArmRegister, immValue: Double): Unit = js.native
-  def putSubRegImm(dstReg: ArmRegister, immValue: Int64_): Unit = js.native
-  def putSubRegImm(dstReg: ArmRegister, immValue: UInt64_): Unit = js.native
+  def putSubRegImm(dstReg: ArmRegister, immValue: Int64): Unit = js.native
+  def putSubRegImm(dstReg: ArmRegister, immValue: UInt64): Unit = js.native
   /**
     * Puts a SUB instruction.
     */
@@ -238,12 +264,18 @@ class ThumbWriter protected () extends js.Object {
     * Puts a SUB instruction.
     */
   def putSubRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Double): Unit = js.native
-  def putSubRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Int64_): Unit = js.native
-  def putSubRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: UInt64_): Unit = js.native
+  def putSubRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: Int64): Unit = js.native
+  def putSubRegRegImm(dstReg: ArmRegister, leftReg: ArmRegister, rightValue: UInt64): Unit = js.native
   /**
     * Puts a SUB instruction.
     */
   def putSubRegRegReg(dstReg: ArmRegister, leftReg: ArmRegister, rightReg: ArmRegister): Unit = js.native
+  /**
+    * Puts a VLDR instruction.
+    */
+  def putVldrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: Double): Unit = js.native
+  def putVldrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: Int64): Unit = js.native
+  def putVldrRegRegOffset(dstReg: ArmRegister, srcReg: ArmRegister, srcOffset: UInt64): Unit = js.native
   /**
     * Recycles instance.
     */

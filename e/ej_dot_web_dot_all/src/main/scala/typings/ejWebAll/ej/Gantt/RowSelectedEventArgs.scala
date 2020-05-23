@@ -24,13 +24,13 @@ object RowSelectedEventArgs {
   def apply(
     cancel: js.UndefOr[Boolean] = js.undefined,
     data: js.Any = null,
-    recordIndex: Int | Double = null,
+    recordIndex: js.UndefOr[Double] = js.undefined,
     targetRow: js.Any = null
   ): RowSelectedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(recordIndex)) __obj.updateDynamic("recordIndex")(recordIndex.get.asInstanceOf[js.Any])
     if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSelectedEventArgs]
   }

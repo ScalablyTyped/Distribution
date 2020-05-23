@@ -13,7 +13,7 @@ object ShowHideOptions {
   @scala.inline
   def apply(withLegend: js.UndefOr[Boolean] = js.undefined): ShowHideOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(withLegend)) __obj.updateDynamic("withLegend")(withLegend.asInstanceOf[js.Any])
+    if (!js.isUndefined(withLegend)) __obj.updateDynamic("withLegend")(withLegend.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowHideOptions]
   }
 }

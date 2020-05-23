@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The entry point to all services provided by the Windows core text APIs and the text input server. This object is associated with an application's UI thread (the thread that CoreWindow runs on). */
-@JSGlobal("Windows.UI.Text.Core.CoreTextServicesManager")
 @js.native
-abstract class CoreTextServicesManager () extends js.Object {
+trait CoreTextServicesManager extends js.Object {
   /** Gets a Language object representing the current input language. */
   var inputLanguage: Language = js.native
   /** Occurs when the current input language has changed. */
@@ -31,16 +30,5 @@ abstract class CoreTextServicesManager () extends js.Object {
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_inputlanguagechanged(`type`: inputlanguagechanged, listener: TypedEventHandler[CoreTextServicesManager, _]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.UI.Text.Core.CoreTextServicesManager")
-@js.native
-object CoreTextServicesManager extends js.Object {
-  /**
-    * Gets the CoreTextServicesManager object for the currently active view.
-    * @return A CoreTextServicesManager instance, which can be used to create further objects to support the app's text input scenarios.
-    */
-  def getForCurrentView(): CoreTextServicesManager = js.native
 }
 

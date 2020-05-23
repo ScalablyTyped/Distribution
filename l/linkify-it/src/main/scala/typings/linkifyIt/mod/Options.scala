@@ -18,9 +18,9 @@ object Options {
     fuzzyLink: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fuzzyEmail)) __obj.updateDynamic("fuzzyEmail")(fuzzyEmail.asInstanceOf[js.Any])
-    if (!js.isUndefined(fuzzyIP)) __obj.updateDynamic("fuzzyIP")(fuzzyIP.asInstanceOf[js.Any])
-    if (!js.isUndefined(fuzzyLink)) __obj.updateDynamic("fuzzyLink")(fuzzyLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(fuzzyEmail)) __obj.updateDynamic("fuzzyEmail")(fuzzyEmail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fuzzyIP)) __obj.updateDynamic("fuzzyIP")(fuzzyIP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fuzzyLink)) __obj.updateDynamic("fuzzyLink")(fuzzyLink.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

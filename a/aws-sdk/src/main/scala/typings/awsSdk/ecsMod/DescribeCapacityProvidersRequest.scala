@@ -29,13 +29,13 @@ object DescribeCapacityProvidersRequest {
   def apply(
     capacityProviders: StringList = null,
     include: CapacityProviderFieldList = null,
-    maxResults: Int | scala.Double = null,
+    maxResults: js.UndefOr[BoxedInteger] = js.undefined,
     nextToken: String = null
   ): DescribeCapacityProvidersRequest = {
     val __obj = js.Dynamic.literal()
     if (capacityProviders != null) __obj.updateDynamic("capacityProviders")(capacityProviders.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCapacityProvidersRequest]
   }

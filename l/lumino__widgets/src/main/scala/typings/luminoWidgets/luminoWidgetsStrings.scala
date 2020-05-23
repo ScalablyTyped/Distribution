@@ -18,9 +18,6 @@ import scala.scalajs.js.annotation._
 
 object luminoWidgetsStrings {
   @js.native
-  sealed trait `Dotlm-TabBar-tabCloseIcon` extends js.Object
-  
-  @js.native
   sealed trait bottom
     extends TabPlacement
        with VerticalAlignment
@@ -163,8 +160,6 @@ object luminoWidgetsStrings {
        with typings.luminoWidgets.splitlayoutMod.SplitLayout.Orientation
        with typings.luminoWidgets.tabbarMod.TabBar.Orientation
   
-  @scala.inline
-  def `Dotlm-TabBar-tabCloseIcon`: `Dotlm-TabBar-tabCloseIcon` = ".lm-TabBar-tabCloseIcon".asInstanceOf[`Dotlm-TabBar-tabCloseIcon`]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline

@@ -1,7 +1,7 @@
 package typings.officeJsPreview.Office
 
-import typings.officeJsPreview.AsyncContextOptionsisRest
 import typings.officeJsPreview.Office.MailboxEnums.RestVersion
+import typings.officeJsPreview.anon.AsyncContextOptionsisRest
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,38 +19,38 @@ import scala.scalajs.js.annotation._
   * - `userProfile`: Provides information about the user in an Outlook add-in.
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
 trait Mailbox extends js.Object {
   /**
     * Provides diagnostic information to an Outlook add-in.
-    * 
+    *
     * Contains the following members:
-    * 
-    *  - `hostName` (string): A string that represents the name of the host application. 
+    *
+    *  - `hostName` (string): A string that represents the name of the host application.
     * It should be one of the following values: `Outlook`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
     * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
-    * 
-    *  - `hostVersion` (string): A string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0"). 
-    * If the mail add-in is running in Outlook on desktop or mobile clients, the `hostVersion` property returns the version of the 
+    *
+    *  - `hostVersion` (string): A string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0").
+    * If the mail add-in is running in Outlook on desktop or mobile clients, the `hostVersion` property returns the version of the
     * host application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
-    * 
-    *  - `OWAView` (`MailboxEnums.OWAView` or string): An enum (or string literal) that represents the current view of Outlook on the web. 
-    * If the host application is not Outlook on the web, then accessing this property results in undefined. 
-    * Outlook on the web has three views (`OneColumn` - displayed when the screen is narrow, `TwoColumns` - displayed when the screen is wider, 
-    * and `ThreeColumns` - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns 
+    *
+    *  - `OWAView` (`MailboxEnums.OWAView` or string): An enum (or string literal) that represents the current view of Outlook on the web.
+    * If the host application is not Outlook on the web, then accessing this property results in undefined.
+    * Outlook on the web has three views (`OneColumn` - displayed when the screen is narrow, `TwoColumns` - displayed when the screen is wider,
+    * and `ThreeColumns` - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns
     * that can be displayed.
     *
-    *  More information is under {@link Office.Diagnostics}. 
+    *  More information is under {@link Office.Diagnostics}.
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var diagnostics: Diagnostics = js.native
@@ -59,7 +59,7 @@ trait Mailbox extends js.Object {
     *
     * Your app must have the `ReadItem` permission specified in its manifest to call the `ewsUrl` member in read mode.
     *
-    * In compose mode you must call the `saveAsync` method before you can use the `ewsUrl` member. 
+    * In compose mode you must call the `saveAsync` method before you can use the `ewsUrl` member.
     * Your app must have `ReadWriteItem` permissions to call the `saveAsync` method.
     *
     * **Note**: This member is not supported in Outlook on iOS or Android.
@@ -67,10 +67,10 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
-    * The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. 
+    * The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox.
     * For example, you can create a remote service to {@link https://docs.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
     */
   var ewsUrl: String = js.native
@@ -90,7 +90,7 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var masterCategories: MasterCategories = js.native
@@ -99,7 +99,7 @@ trait Mailbox extends js.Object {
     *
     * Your app must have the `ReadItem` permission specified in its manifest to call the `restUrl` member in read mode.
     *
-    * In compose mode you must call the `saveAsync` method before you can use the `restUrl` member. 
+    * In compose mode you must call the `saveAsync` method before you can use the `restUrl` member.
     * Your app must have `ReadWriteItem` permissions to call the `saveAsync` method.
     *
     * However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
@@ -111,7 +111,7 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * The `restUrl` value can be used to make {@link https://docs.microsoft.com/outlook/rest/ | REST API} calls to the user's mailbox.
@@ -119,7 +119,7 @@ trait Mailbox extends js.Object {
   var restUrl: String = js.native
   /**
     * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.
-    * 
+    *
     * More information is under {@link Office.UserProfile}
     */
   var userProfile: UserProfile = js.native
@@ -146,7 +146,7 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param eventType - The event that should invoke the handler.
@@ -187,7 +187,7 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param itemId - An item ID formatted for the Outlook REST APIs.
@@ -197,20 +197,20 @@ trait Mailbox extends js.Object {
   /**
     * Gets a dictionary containing time information in local client time.
     *
-    * The dates and times used by a mail app for Outlook on the web or desktop clients can use different time zones. 
-    * Outlook uses the client computer time zone; Outlook on the web uses the time zone set on the Exchange Admin Center (EAC). 
-    * You should handle date and time values so that the values you display on the user interface are always consistent with the time zone that 
+    * The dates and times used by a mail app for Outlook on the web or desktop clients can use different time zones.
+    * Outlook uses the client computer time zone; Outlook on the web uses the time zone set on the Exchange Admin Center (EAC).
+    * You should handle date and time values so that the values you display on the user interface are always consistent with the time zone that
     * the user expects.
     *
     * If the mail app is running in Outlook on desktop clients, the `convertToLocalClientTime` method will return a dictionary object
-    * with the values set to the client computer time zone. 
+    * with the values set to the client computer time zone.
     * If the mail app is running in Outlook on the web, the `convertToLocalClientTime` method will return a dictionary object
     * with the values set to the time zone specified in the EAC.
     *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param timeValue - A `Date` object.
@@ -225,9 +225,9 @@ trait Mailbox extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * Item IDs retrieved via EWS or via the `itemId` property use a different format than the format used by REST APIs (such as the
@@ -242,15 +242,15 @@ trait Mailbox extends js.Object {
   /**
     * Gets a `Date` object from a dictionary containing time information.
     *
-    * The `convertToUtcClientTime` method converts a dictionary containing a local date and time to a `Date` object with the correct values for the 
+    * The `convertToUtcClientTime` method converts a dictionary containing a local date and time to a `Date` object with the correct values for the
     * local date and time.
-    * 
+    *
     * @returns A Date object with the time expressed in UTC.
     *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param input - The local time value to convert.
@@ -259,16 +259,16 @@ trait Mailbox extends js.Object {
   /**
     * Displays an existing calendar appointment.
     *
-    * The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on 
+    * The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on
     * mobile devices.
     *
-    * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the 
-    * master appointment of a recurring series, but you cannot display an instance of the series. 
+    * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the
+    * master appointment of a recurring series, but you cannot display an instance of the series.
     * This is because in Outlook on Mac, you cannot access the properties (including the item ID) of instances of a recurring series.
     *
     * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32KB number of characters.
     *
-    * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and 
+    * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and
     * no error message will be returned.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
@@ -276,7 +276,7 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment.
@@ -300,7 +300,7 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.
@@ -327,7 +327,7 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
     *
     * @param parameters - An `AppointmentForm` describing the new appointment. All properties are optional.
@@ -336,7 +336,7 @@ trait Mailbox extends js.Object {
   /**
     * Displays a form for creating a new message.
     *
-    * The `displayNewMessageForm` method opens a form that enables the user to create a new message. If parameters are specified, the message form 
+    * The `displayNewMessageForm` method opens a form that enables the user to create a new message. If parameters are specified, the message form
     * fields are automatically populated with the contents of the parameters.
     *
     * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
@@ -346,43 +346,43 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
     *
     * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
-    * 
-    *        `toRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object 
+    *
+    *        `toRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
     *        for each of the recipients on the To line. The array is limited to a maximum of 100 entries.
-    * 
-    *        `ccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object 
+    *
+    *        `ccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
     *        for each of the recipients on the Cc line. The array is limited to a maximum of 100 entries.
-    * 
-    *        `bccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object 
+    *
+    *        `bccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
     *        for each of the recipients on the Bcc line. The array is limited to a maximum of 100 entries.
-    * 
+    *
     *        `subject`: A string containing the subject of the message. The string is limited to a maximum of 255 characters.
-    * 
+    *
     *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
-    * 
+    *
     *        `attachments`: An array of JSON objects that are either file or item attachments.
-    * 
+    *
     *        `attachments.type`: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
-    * 
+    *
     *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
-    * 
+    *
     *        `attachments.url`: Only used if type is set to file. The URI of the location for the file.
-    * 
-    *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the 
+    *
+    *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
     *        message body, and should not be displayed in the attachment list.
-    * 
-    *        `attachments.itemId`: Only used if type is set to item. The EWS item id of the existing e-mail you want to attach to the new message. 
+    *
+    *        `attachments.itemId`: Only used if type is set to item. The EWS item id of the existing e-mail you want to attach to the new message.
     *        This is a string up to 100 characters.
     */
   def displayNewMessageForm(parameters: js.Any): Unit = js.native
   /**
     * Gets a string that contains a token used to get an attachment or item from an Exchange Server.
     *
-    * The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. 
+    * The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox.
     * The lifetime of the callback token is 5 minutes.
     *
     * The token is returned as a string in the `asyncResult.value` property.
@@ -404,17 +404,17 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * **Errors**:
-    * 
+    *
     * - `HTTPRequestFailure`: The request has failed. Please look at the diagnostics object for the HTTP error code.
-    * 
+    *
     * - `InternalServerError`: The Exchange server returned an error. Please look at the diagnostics object for more information.
-    * 
+    *
     * - `NetworkError`: The user is no longer connected to the network. Please check your network connection and try again.
-    * 
+    *
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. The token is returned as a string in the `asyncResult.value` property.
     *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
@@ -425,7 +425,7 @@ trait Mailbox extends js.Object {
   /**
     * Gets a string that contains a token used to call REST APIs or Exchange Web Services.
     *
-    * The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. 
+    * The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox.
     * The lifetime of the callback token is 5 minutes.
     *
     * The token is returned as a string in the `asyncResult.value` property.
@@ -446,13 +446,13 @@ trait Mailbox extends js.Object {
     * The add-in should use the `restUrl` property to determine the correct URL to use when making REST API calls.
     *
     * This API works for the following scopes:
-    * 
+    *
     * - `Mail.ReadWrite`
-    * 
+    *
     * - `Mail.Send`
-    * 
+    *
     * - `Calendars.ReadWrite`
-    * 
+    *
     * - `Contacts.ReadWrite`
     *
     * *EWS Tokens*
@@ -476,17 +476,17 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `HTTPRequestFailure`: The request has failed. Please look at the diagnostics object for the HTTP error code.
-    * 
+    *
     * - `InternalServerError`: The Exchange server returned an error. Please look at the diagnostics object for more information.
-    * 
+    *
     * - `NetworkError`: The user is no longer connected to the network. Please check your network connection and try again.
-    * 
+    *
     * @param options - An object literal that contains one or more of the following properties.
     *        `isRest`: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is `false`.
     *        `asyncContext`: Any state data that is passed to the asynchronous method.
@@ -506,21 +506,21 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
-    * The `getUserIdentityTokenAsync` method returns a token that you can use to identify and 
+    * The `getUserIdentityTokenAsync` method returns a token that you can use to identify and
     * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/authentication | authenticate the add-in and user with a third-party system}.
     *
     * **Errors**:
-    * 
+    *
     * - `HTTPRequestFailure`: The request has failed. Please look at the diagnostics object for the HTTP error code.
-    * 
+    *
     * - `InternalServerError`: The Exchange server returned an error. Please look at the diagnostics object for more information.
-    * 
+    *
     * - `NetworkError`: The user is no longer connected to the network. Please check your network connection and try again.
-    * 
-    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     *                 The token is returned as a string in the `asyncResult.value` property.
     *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
@@ -543,21 +543,21 @@ trait Mailbox extends js.Object {
     * For information about using the `ReadWriteMailbox` permission and the EWS operations that you can call with the `makeEwsRequestAsync` method,
     * see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Specify permissions for mail add-in access to the user's mailbox}.
     *
-    * The XML result of the EWS call is provided as a string in the `asyncResult.value` property. 
+    * The XML result of the EWS call is provided as a string in the `asyncResult.value` property.
     * If the result exceeds 1 MB in size, an error message is returned instead.
     *
     * **Note**: This method is not supported in the following scenarios:
-    * 
+    *
     * - In Outlook on iOS or Android.
-    * 
+    *
     * - When the add-in is loaded in a Gmail mailbox.
     *
-    * **Note**: The server administrator must set `OAuthAuthentication` to `true` on the Client Access Server EWS directory to enable the 
+    * **Note**: The server administrator must set `OAuthAuthentication` to `true` on the Client Access Server EWS directory to enable the
     * `makeEwsRequestAsync` method to make EWS requests.
     *
     * *Version differences*
     *
-    * When you use the `makeEwsRequestAsync` method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set 
+    * When you use the `makeEwsRequestAsync` method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set
     * the encoding value to ISO-8859-1.
     *
     * `<?xml version="1.0" encoding="iso-8859-1"?>`
@@ -569,13 +569,13 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param data - The EWS request.
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter
     *                   of type `Office.AsyncResult`.
-    *                 The `value` property of the result is the XML of the EWS request provided as a string. 
+    *                 The `value` property of the result is the XML of the EWS request provided as a string.
     *                 If the result exceeds 1 MB in size, an error message is returned instead.
     * @param userContext - Optional. Any state data that is passed to the asynchronous method.
     */
@@ -603,7 +603,7 @@ trait Mailbox extends js.Object {
     * @remarks
     *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param eventType - The event that should revoke the handler.

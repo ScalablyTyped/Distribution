@@ -1,6 +1,5 @@
 package typings.firebaseAdmin.admin.auth
 
-import typings.firebaseAdmin.admin.FirebaseArrayIndexError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,9 @@ trait UserImportResult extends js.Object {
     * An array of errors corresponding to the provided users to import. The
     * length of this array is equal to [`failureCount`](#failureCount).
     */
-  var errors: js.Array[FirebaseArrayIndexError]
+  var errors: js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.FirebaseArrayIndexError */ _
+  ]
   /**
     * The number of user records that failed to import to Firebase Auth.
     */
@@ -28,7 +29,13 @@ trait UserImportResult extends js.Object {
 
 object UserImportResult {
   @scala.inline
-  def apply(errors: js.Array[FirebaseArrayIndexError], failureCount: Double, successCount: Double): UserImportResult = {
+  def apply(
+    errors: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.FirebaseArrayIndexError */ _
+    ],
+    failureCount: Double,
+    successCount: Double
+  ): UserImportResult = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], failureCount = failureCount.asInstanceOf[js.Any], successCount = successCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserImportResult]
   }

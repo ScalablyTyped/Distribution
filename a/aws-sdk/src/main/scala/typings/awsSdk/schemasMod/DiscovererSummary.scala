@@ -18,6 +18,9 @@ trait DiscovererSummary extends js.Object {
     * The ARN of the event bus.
     */
   var SourceArn: js.UndefOr[string] = js.native
+  /**
+    * The state of the discoverer.
+    */
   var State: js.UndefOr[DiscovererState] = js.native
   /**
     * Tags associated with the resource.

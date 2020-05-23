@@ -19,6 +19,7 @@ object Helpers extends js.Object {
   def isArrayContainsEqual(x: js.Any, y: js.Any): Boolean = js.native
   def isArraysEqual(x: js.Any, y: js.Any): Boolean = js.native
   def isArraysEqual(x: js.Any, y: js.Any, ignoreOrder: Boolean): Boolean = js.native
+  def isCharDigit(ch: String): Boolean = js.native
   def isCharNotLetterAndDigit(ch: String): Boolean = js.native
   def isConvertibleToNumber(value: js.Any): Boolean = js.native
   def isNumber(value: js.Any): Boolean = js.native

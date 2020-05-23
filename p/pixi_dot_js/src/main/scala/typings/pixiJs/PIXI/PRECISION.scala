@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,17 +30,6 @@ object PRECISION extends js.Object {
   
   @js.native
   sealed trait MEDIUM extends PRECISION
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PRECISION with Double] = js.native
-  /* 2 */ @js.native
-  object HIGH extends TopLevel[HIGH with Double]
-  
-  /* 0 */ @js.native
-  object LOW extends TopLevel[LOW with Double]
-  
-  /* 1 */ @js.native
-  object MEDIUM extends TopLevel[MEDIUM with Double]
   
 }
 

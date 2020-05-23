@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +33,7 @@ trait EventTarget extends js.Object {
   /**
     * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
     */
-  def dispatchEvent(event: Event_): scala.Boolean = js.native
+  def dispatchEvent(event: Event): scala.Boolean = js.native
   def removeEventListener(`type`: java.lang.String): Unit = js.native
   def removeEventListener(`type`: java.lang.String, callback: Null, options: scala.Boolean): Unit = js.native
   def removeEventListener(`type`: java.lang.String, callback: Null, options: EventListenerOptions): Unit = js.native
@@ -49,8 +48,4 @@ trait EventTarget extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("EventTarget")
-@js.native
-object EventTarget extends Instantiable0[EventTarget]
 

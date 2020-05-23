@@ -12,9 +12,9 @@ trait IClientEventsUnsubscribeResponse extends js.Object {
 
 object IClientEventsUnsubscribeResponse {
   @scala.inline
-  def apply(status: Status = null): IClientEventsUnsubscribeResponse = {
+  def apply(status: js.UndefOr[Null | Status] = js.undefined): IClientEventsUnsubscribeResponse = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientEventsUnsubscribeResponse]
   }
 }

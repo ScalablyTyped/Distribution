@@ -17,10 +17,10 @@ trait QuantitativeScaleSettingsComparativeMeasureSettings extends js.Object {
 
 object QuantitativeScaleSettingsComparativeMeasureSettings {
   @scala.inline
-  def apply(stroke: Int | Double = null, width: Int | Double = null): QuantitativeScaleSettingsComparativeMeasureSettings = {
+  def apply(stroke: js.UndefOr[Double] = js.undefined, width: js.UndefOr[Double] = js.undefined): QuantitativeScaleSettingsComparativeMeasureSettings = {
     val __obj = js.Dynamic.literal()
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantitativeScaleSettingsComparativeMeasureSettings]
   }
 }

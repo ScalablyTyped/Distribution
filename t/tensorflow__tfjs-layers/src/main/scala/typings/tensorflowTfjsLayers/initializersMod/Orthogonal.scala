@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.initializersMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Orthogonal () extends Initializer {
   def this(args: OrthogonalArgs) = this()
-  val DEFAULT_GAIN: `1` = js.native
+  val DEFAULT_GAIN: /* 1 */ Double = js.native
   val gain: Double = js.native
   val seed: Double = js.native
 }

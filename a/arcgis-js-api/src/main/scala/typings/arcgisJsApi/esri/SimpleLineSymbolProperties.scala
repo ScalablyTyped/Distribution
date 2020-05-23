@@ -99,7 +99,7 @@ object SimpleLineSymbolProperties {
     cap: butt | round | square = null,
     color: Color_ | js.Array[Double] | String = null,
     join: miter | round | bevel = null,
-    miterLimit: Int | Double = null,
+    miterLimit: js.UndefOr[Double] = js.undefined,
     style: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid = null,
     `type`: `simple-line` = null,
     width: Double | String = null
@@ -108,7 +108,7 @@ object SimpleLineSymbolProperties {
     if (cap != null) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (join != null) __obj.updateDynamic("join")(join.asInstanceOf[js.Any])
-    if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(miterLimit)) __obj.updateDynamic("miterLimit")(miterLimit.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

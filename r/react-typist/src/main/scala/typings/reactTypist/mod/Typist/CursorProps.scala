@@ -18,15 +18,15 @@ object CursorProps {
     blink: js.UndefOr[Boolean] = js.undefined,
     element: String = null,
     hideWhenDone: js.UndefOr[Boolean] = js.undefined,
-    hideWhenDoneDelay: Int | Double = null,
+    hideWhenDoneDelay: js.UndefOr[Double] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined
   ): CursorProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blink)) __obj.updateDynamic("blink")(blink.asInstanceOf[js.Any])
+    if (!js.isUndefined(blink)) __obj.updateDynamic("blink")(blink.get.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideWhenDone)) __obj.updateDynamic("hideWhenDone")(hideWhenDone.asInstanceOf[js.Any])
-    if (hideWhenDoneDelay != null) __obj.updateDynamic("hideWhenDoneDelay")(hideWhenDoneDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideWhenDone)) __obj.updateDynamic("hideWhenDone")(hideWhenDone.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideWhenDoneDelay)) __obj.updateDynamic("hideWhenDoneDelay")(hideWhenDoneDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorProps]
   }
 }

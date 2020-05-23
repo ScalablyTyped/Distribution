@@ -4,6 +4,8 @@ import typings.simonwepSelectionJs.simonwepSelectionJsStrings.`class`
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.beforestart
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.boundaries
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.disableTouch
+import typings.simonwepSelectionJs.simonwepSelectionJsStrings.frame
+import typings.simonwepSelectionJs.simonwepSelectionJsStrings.manualScrollSpeed
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.mode
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.move
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.scrollSpeedDivider
@@ -14,8 +16,11 @@ import typings.simonwepSelectionJs.simonwepSelectionJsStrings.start
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.startThreshold
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.startareas
 import typings.simonwepSelectionJs.simonwepSelectionJsStrings.stop
+import typings.simonwepSelectionJs.simonwepSelectionJsStrings.tapMode
 import typings.std.Element
 import typings.std.HTMLElement
+import typings.std.Node
+import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,11 +35,11 @@ trait Selection extends js.Object {
   def enable(): Unit = js.native
   def getSelection(): js.Array[Element] = js.native
   def keepSelection(): Unit = js.native
-  def off[E /* <: beforestart | start | move | stop */](
+  def off[E /* <: /* keyof @simonwep/selection-js.@simonwep/selection-js.SelectionEvents */ beforestart | start | move | stop */](
     ev: E,
     cb: /* import warning: importer.ImportType#apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
   ): this.type = js.native
-  def on[E /* <: beforestart | start | move | stop */](
+  def on[E /* <: /* keyof @simonwep/selection-js.@simonwep/selection-js.SelectionEvents */ beforestart | start | move | stop */](
     ev: E,
     cb: /* import warning: importer.ImportType#apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
   ): this.type = js.native
@@ -51,6 +56,14 @@ trait Selection extends js.Object {
   @JSName("option")
   def option_disableTouch(name: disableTouch, value: Boolean): Boolean = js.native
   @JSName("option")
+  def option_frame(name: frame): Node = js.native
+  @JSName("option")
+  def option_frame(name: frame, value: Node): Node = js.native
+  @JSName("option")
+  def option_manualScrollSpeed(name: manualScrollSpeed): Double = js.native
+  @JSName("option")
+  def option_manualScrollSpeed(name: manualScrollSpeed, value: Double): Double = js.native
+  @JSName("option")
   def option_mode(name: mode): Mode = js.native
   @JSName("option")
   def option_mode(name: mode, value: Mode): Mode = js.native
@@ -65,7 +78,11 @@ trait Selection extends js.Object {
   @JSName("option")
   def option_selectionAreaContainer(name: selectionAreaContainer): String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
   @JSName("option")
-  def option_selectionAreaContainer(name: selectionAreaContainer, value: String | HTMLElement | (js.Array[String | HTMLElement])): String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
+  def option_selectionAreaContainer(name: selectionAreaContainer, value: String): String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
+  @JSName("option")
+  def option_selectionAreaContainer(name: selectionAreaContainer, value: js.Array[String | HTMLElement]): String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
+  @JSName("option")
+  def option_selectionAreaContainer(name: selectionAreaContainer, value: HTMLElement): String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
   @JSName("option")
   def option_singleClick(name: singleClick): Boolean = js.native
   @JSName("option")
@@ -78,11 +95,17 @@ trait Selection extends js.Object {
   def option_startareas(name: startareas): js.Array[String] = js.native
   @JSName("option")
   def option_startareas(name: startareas, value: js.Array[String]): js.Array[String] = js.native
+  @JSName("option")
+  def option_tapMode(name: tapMode): TapMode = js.native
+  @JSName("option")
+  def option_tapMode(name: tapMode, value: TapMode): TapMode = js.native
   def removeFromSelection(el: Element): Unit = js.native
   def resolveSelectables(): Unit = js.native
   @JSName("select")
   def select_0(
     query: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(selector : string | std.HTMLElement | std.ReadonlyArray<string | std.HTMLElement>): std.Array<std.Element>>[0] */ js.Any
   ): this.type = js.native
+  def trigger(evt: UIEvent): Unit = js.native
+  def trigger(evt: UIEvent, silent: Boolean): Unit = js.native
 }
 

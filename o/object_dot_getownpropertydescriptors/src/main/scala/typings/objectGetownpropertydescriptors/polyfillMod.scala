@@ -1,5 +1,6 @@
 package typings.objectGetownpropertydescriptors
 
+import typings.objectGetownpropertydescriptors.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.dateIoDateFns
 
+import typings.dateIoDateFns.anon.Formats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ object mod extends js.Object {
   @js.native
   class default ()
     extends typings.dateIoDateFns.dateFnsUtilsMod.default {
-    def this(hasLocaleFormats: AnonFormats) = this()
+    def this(hasLocaleFormats: Formats) = this()
   }
   
 }

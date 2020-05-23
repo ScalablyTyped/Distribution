@@ -11,7 +11,7 @@ trait NotificationConfig extends js.Object {
     */
   var NotificationArn: js.UndefOr[typings.awsSdk.ssmMod.NotificationArn] = js.native
   /**
-    * The different events for which you can receive notifications. These events include the following: All (events), InProgress, Success, TimedOut, Cancelled, Failed. To learn more about these events, see Configuring Amazon SNS Notifications for AWS Systems Manager in the AWS Systems Manager User Guide.
+    * The different events for which you can receive notifications. These events include the following: All (events), InProgress, Success, TimedOut, Cancelled, Failed. To learn more about these events, see Monitoring Systems Manager status changes using Amazon SNS notifications in the AWS Systems Manager User Guide.
     */
   var NotificationEvents: js.UndefOr[NotificationEventList] = js.native
   /**

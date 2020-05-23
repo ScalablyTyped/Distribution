@@ -20,28 +20,28 @@ trait HistoryOptions extends js.Object {
 object HistoryOptions {
   @scala.inline
   def apply(
-    busyDelay: Int | Double = null,
+    busyDelay: js.UndefOr[Double] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
-    delayInit: Int | Double = null,
+    delayInit: js.UndefOr[Double] = js.undefined,
     disableSuid: js.UndefOr[Boolean] = js.undefined,
-    doubleCheckInterval: Int | Double = null,
-    hashChangeInterval: Int | Double = null,
+    doubleCheckInterval: js.UndefOr[Double] = js.undefined,
+    hashChangeInterval: js.UndefOr[Double] = js.undefined,
     html4Mode: js.UndefOr[Boolean] = js.undefined,
     initialTitle: String = null,
-    safariPollInterval: Int | Double = null,
-    storeInterval: Int | Double = null
+    safariPollInterval: js.UndefOr[Double] = js.undefined,
+    storeInterval: js.UndefOr[Double] = js.undefined
   ): HistoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (busyDelay != null) __obj.updateDynamic("busyDelay")(busyDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (delayInit != null) __obj.updateDynamic("delayInit")(delayInit.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSuid)) __obj.updateDynamic("disableSuid")(disableSuid.asInstanceOf[js.Any])
-    if (doubleCheckInterval != null) __obj.updateDynamic("doubleCheckInterval")(doubleCheckInterval.asInstanceOf[js.Any])
-    if (hashChangeInterval != null) __obj.updateDynamic("hashChangeInterval")(hashChangeInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(html4Mode)) __obj.updateDynamic("html4Mode")(html4Mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(busyDelay)) __obj.updateDynamic("busyDelay")(busyDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayInit)) __obj.updateDynamic("delayInit")(delayInit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSuid)) __obj.updateDynamic("disableSuid")(disableSuid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleCheckInterval)) __obj.updateDynamic("doubleCheckInterval")(doubleCheckInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashChangeInterval)) __obj.updateDynamic("hashChangeInterval")(hashChangeInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(html4Mode)) __obj.updateDynamic("html4Mode")(html4Mode.get.asInstanceOf[js.Any])
     if (initialTitle != null) __obj.updateDynamic("initialTitle")(initialTitle.asInstanceOf[js.Any])
-    if (safariPollInterval != null) __obj.updateDynamic("safariPollInterval")(safariPollInterval.asInstanceOf[js.Any])
-    if (storeInterval != null) __obj.updateDynamic("storeInterval")(storeInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(safariPollInterval)) __obj.updateDynamic("safariPollInterval")(safariPollInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeInterval)) __obj.updateDynamic("storeInterval")(storeInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryOptions]
   }
 }

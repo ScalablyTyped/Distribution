@@ -75,118 +75,184 @@ trait BoxKnownProps
 object BoxKnownProps {
   @scala.inline
   def apply(
-    alignSelf: ResponsiveValue[AlignSelfProperty, RequiredTheme] = null,
+    alignSelf: js.UndefOr[Null | (ResponsiveValue[AlignSelfProperty, RequiredTheme])] = js.undefined,
     as: ElementType[_] = null,
-    backgroundColor: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme] = null,
-    bg: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme] = null,
-    color: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme] = null,
+    backgroundColor: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    bg: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    color: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
     css: CSSObject | FlattenSimpleInterpolation | String = null,
-    display: ResponsiveValue[DisplayProperty, RequiredTheme] = null,
-    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem], RequiredTheme] = null,
-    fontSize: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme] = null,
-    height: ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme] = null,
+    display: js.UndefOr[Null | (ResponsiveValue[DisplayProperty, RequiredTheme])] = js.undefined,
+    flex: js.UndefOr[Null | (ResponsiveValue[FlexProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    fontSize: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    height: js.UndefOr[Null | (ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
     key: Key = null,
-    m: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    margin: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    marginBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    marginLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    marginRight: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    marginTop: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    marginX: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    marginY: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    maxHeight: ResponsiveValue[MaxHeightProperty[TLengthStyledSystem], RequiredTheme] = null,
-    maxWidth: ResponsiveValue[MaxWidthProperty[TLengthStyledSystem], RequiredTheme] = null,
-    mb: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    minHeight: ResponsiveValue[MinHeightProperty[TLengthStyledSystem], RequiredTheme] = null,
-    minWidth: ResponsiveValue[MinWidthProperty[TLengthStyledSystem], RequiredTheme] = null,
-    ml: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    mr: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    mt: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    mx: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    my: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
-    order: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
-    overflow: ResponsiveValue[OverflowProperty, RequiredTheme] = null,
-    overflowX: ResponsiveValue[OverflowXProperty, RequiredTheme] = null,
-    overflowY: ResponsiveValue[OverflowYProperty, RequiredTheme] = null,
-    p: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    padding: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    paddingBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    paddingLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    paddingRight: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    paddingTop: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    paddingX: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    paddingY: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    pb: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    pl: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    pr: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    pt: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    px: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    py: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    ref: Ref[js.Any] = null,
-    size: ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme] = null,
-    sx: SxStyleProp = null,
+    m: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    margin: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    marginBottom: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    marginLeft: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    marginRight: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    marginTop: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    marginX: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    marginY: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    maxHeight: js.UndefOr[Null | (ResponsiveValue[MaxHeightProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    maxWidth: js.UndefOr[Null | (ResponsiveValue[MaxWidthProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    mb: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    minHeight: js.UndefOr[Null | (ResponsiveValue[MinHeightProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    minWidth: js.UndefOr[Null | (ResponsiveValue[MinWidthProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    ml: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    mr: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    mt: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    mx: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    my: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    opacity: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, RequiredTheme])] = js.undefined,
+    order: js.UndefOr[Null | (ResponsiveValue[GlobalsNumber, RequiredTheme])] = js.undefined,
+    overflow: js.UndefOr[Null | (ResponsiveValue[OverflowProperty, RequiredTheme])] = js.undefined,
+    overflowX: js.UndefOr[Null | (ResponsiveValue[OverflowXProperty, RequiredTheme])] = js.undefined,
+    overflowY: js.UndefOr[Null | (ResponsiveValue[OverflowYProperty, RequiredTheme])] = js.undefined,
+    p: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    padding: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    paddingBottom: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    paddingLeft: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    paddingRight: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    paddingTop: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    paddingX: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    paddingY: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    pb: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    pl: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    pr: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    pt: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    px: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    py: js.UndefOr[
+      Null | (ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme])
+    ] = js.undefined,
+    ref: js.UndefOr[Null | Ref[js.Any]] = js.undefined,
+    size: js.UndefOr[Null | (ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined,
+    sx: js.UndefOr[Null | SxStyleProp] = js.undefined,
     tx: String = null,
-    variant: ResponsiveValue[String, RequiredTheme] = null,
-    verticalAlign: ResponsiveValue[VerticalAlignProperty[TLengthStyledSystem], RequiredTheme] = null,
-    width: ResponsiveValue[WidthProperty[TLengthStyledSystem], RequiredTheme] = null
+    variant: js.UndefOr[Null | (ResponsiveValue[String, RequiredTheme])] = js.undefined,
+    verticalAlign: js.UndefOr[
+      Null | (ResponsiveValue[VerticalAlignProperty[TLengthStyledSystem], RequiredTheme])
+    ] = js.undefined,
+    width: js.UndefOr[Null | (ResponsiveValue[WidthProperty[TLengthStyledSystem], RequiredTheme])] = js.undefined
   ): BoxKnownProps = {
     val __obj = js.Dynamic.literal()
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignSelf)) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(bg)) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
-    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
-    if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
-    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
-    if (mx != null) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
-    if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
-    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
-    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
-    if (pb != null) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
-    if (pl != null) __obj.updateDynamic("pl")(pl.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
-    if (pt != null) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
-    if (px != null) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
-    if (py != null) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sx != null) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginX)) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (!js.isUndefined(marginY)) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(mb)) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(ml)) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
+    if (!js.isUndefined(mr)) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])
+    if (!js.isUndefined(mt)) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
+    if (!js.isUndefined(mx)) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
+    if (!js.isUndefined(my)) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflowX)) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflowY)) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
+    if (!js.isUndefined(p)) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingBottom)) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingLeft)) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRight)) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingTop)) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingX)) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingY)) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
+    if (!js.isUndefined(pb)) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
+    if (!js.isUndefined(pl)) __obj.updateDynamic("pl")(pl.asInstanceOf[js.Any])
+    if (!js.isUndefined(pr)) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (!js.isUndefined(pt)) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
+    if (!js.isUndefined(px)) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
+    if (!js.isUndefined(py)) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(sx)) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
     if (tx != null) __obj.updateDynamic("tx")(tx.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(variant)) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalAlign)) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxKnownProps]
   }
 }

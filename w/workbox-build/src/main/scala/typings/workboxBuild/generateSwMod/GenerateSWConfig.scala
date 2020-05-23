@@ -248,7 +248,7 @@ object GenerateSWConfig {
     importScripts: js.Array[String] = null,
     inlineWorkboxRuntime: js.UndefOr[Boolean] = js.undefined,
     manifestTransforms: js.Array[ManifestTransform] = null,
-    maximumFileSizeToCacheInBytes: Int | Double = null,
+    maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.undefined,
     mode: String = null,
     modifyURLPrefix: StringDictionary[String] = null,
     navigateFallback: String = null,
@@ -265,29 +265,29 @@ object GenerateSWConfig {
     if (additionalManifestEntries != null) __obj.updateDynamic("additionalManifestEntries")(additionalManifestEntries.asInstanceOf[js.Any])
     if (babelPresetEnvTargets != null) __obj.updateDynamic("babelPresetEnvTargets")(babelPresetEnvTargets.asInstanceOf[js.Any])
     if (cacheId != null) __obj.updateDynamic("cacheId")(cacheId.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanupOutdatedCaches)) __obj.updateDynamic("cleanupOutdatedCaches")(cleanupOutdatedCaches.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientsClaim)) __obj.updateDynamic("clientsClaim")(clientsClaim.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanupOutdatedCaches)) __obj.updateDynamic("cleanupOutdatedCaches")(cleanupOutdatedCaches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientsClaim)) __obj.updateDynamic("clientsClaim")(clientsClaim.get.asInstanceOf[js.Any])
     if (directoryIndex != null) __obj.updateDynamic("directoryIndex")(directoryIndex.asInstanceOf[js.Any])
     if (dontCacheBustURLsMatching != null) __obj.updateDynamic("dontCacheBustURLsMatching")(dontCacheBustURLsMatching.asInstanceOf[js.Any])
-    if (!js.isUndefined(globFollow)) __obj.updateDynamic("globFollow")(globFollow.asInstanceOf[js.Any])
+    if (!js.isUndefined(globFollow)) __obj.updateDynamic("globFollow")(globFollow.get.asInstanceOf[js.Any])
     if (globIgnores != null) __obj.updateDynamic("globIgnores")(globIgnores.asInstanceOf[js.Any])
     if (globPatterns != null) __obj.updateDynamic("globPatterns")(globPatterns.asInstanceOf[js.Any])
-    if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict.asInstanceOf[js.Any])
+    if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict.get.asInstanceOf[js.Any])
     if (ignoreURLParametersMatching != null) __obj.updateDynamic("ignoreURLParametersMatching")(ignoreURLParametersMatching.asInstanceOf[js.Any])
     if (importScripts != null) __obj.updateDynamic("importScripts")(importScripts.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineWorkboxRuntime)) __obj.updateDynamic("inlineWorkboxRuntime")(inlineWorkboxRuntime.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineWorkboxRuntime)) __obj.updateDynamic("inlineWorkboxRuntime")(inlineWorkboxRuntime.get.asInstanceOf[js.Any])
     if (manifestTransforms != null) __obj.updateDynamic("manifestTransforms")(manifestTransforms.asInstanceOf[js.Any])
-    if (maximumFileSizeToCacheInBytes != null) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumFileSizeToCacheInBytes)) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (modifyURLPrefix != null) __obj.updateDynamic("modifyURLPrefix")(modifyURLPrefix.asInstanceOf[js.Any])
     if (navigateFallback != null) __obj.updateDynamic("navigateFallback")(navigateFallback.asInstanceOf[js.Any])
     if (navigateFallbackAllowlist != null) __obj.updateDynamic("navigateFallbackAllowlist")(navigateFallbackAllowlist.asInstanceOf[js.Any])
     if (navigateFallbackDenylist != null) __obj.updateDynamic("navigateFallbackDenylist")(navigateFallbackDenylist.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigationPreload)) __obj.updateDynamic("navigationPreload")(navigationPreload.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationPreload)) __obj.updateDynamic("navigationPreload")(navigationPreload.get.asInstanceOf[js.Any])
     if (offlineGoogleAnalytics != null) __obj.updateDynamic("offlineGoogleAnalytics")(offlineGoogleAnalytics.asInstanceOf[js.Any])
     if (runtimeCaching != null) __obj.updateDynamic("runtimeCaching")(runtimeCaching.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipWaiting)) __obj.updateDynamic("skipWaiting")(skipWaiting.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourcemap)) __obj.updateDynamic("sourcemap")(sourcemap.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipWaiting)) __obj.updateDynamic("skipWaiting")(skipWaiting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcemap)) __obj.updateDynamic("sourcemap")(sourcemap.get.asInstanceOf[js.Any])
     if (templatedURLs != null) __obj.updateDynamic("templatedURLs")(templatedURLs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateSWConfig]
   }

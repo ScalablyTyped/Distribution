@@ -13,7 +13,7 @@ trait baseComponentSettablePropertiesLenient
 
 object baseComponentSettablePropertiesLenient {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, translations: js.Object = null): baseComponentSettablePropertiesLenient = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, translations: js.Object = null): baseComponentSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])

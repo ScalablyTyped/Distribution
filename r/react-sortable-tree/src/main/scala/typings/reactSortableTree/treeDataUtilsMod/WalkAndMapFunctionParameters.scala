@@ -24,7 +24,7 @@ object WalkAndMapFunctionParameters {
     ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
   ): WalkAndMapFunctionParameters = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], getNodeKey = js.Any.fromFunction1(getNodeKey), treeData = treeData.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkAndMapFunctionParameters]
   }
 }

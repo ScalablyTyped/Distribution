@@ -36,7 +36,7 @@ object ExtendedDateTimeFormatOptions {
     if (era != null) __obj.updateDynamic("era")(era.asInstanceOf[js.Any])
     if (formatMatcher != null) __obj.updateDynamic("formatMatcher")(formatMatcher.asInstanceOf[js.Any])
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12.get.asInstanceOf[js.Any])
     if (hourCycle != null) __obj.updateDynamic("hourCycle")(hourCycle.asInstanceOf[js.Any])
     if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher.asInstanceOf[js.Any])
     if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])

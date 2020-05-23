@@ -14,9 +14,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SFURoom")
 @js.native
-class SFURoom () extends js.Object {
+trait SFURoom extends js.Object {
   def close(): js.UndefOr[scala.Nothing] = js.native
   def getLog(): js.UndefOr[scala.Nothing] = js.native
   def on(event: String, cb: js.Function0[Unit]): Unit = js.native

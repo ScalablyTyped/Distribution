@@ -1,9 +1,5 @@
 package typings.aceBuilds.mod.Ace
 
-import typings.aceBuilds.AnonDataString
-import typings.aceBuilds.AnonOldSession
-import typings.aceBuilds.AnonText
-import typings.aceBuilds.PartialSearchOptions
 import typings.aceBuilds.aceBuildsBooleans.`false`
 import typings.aceBuilds.aceBuildsBooleans.`true`
 import typings.aceBuilds.aceBuildsStrings.ace
@@ -80,7 +76,11 @@ import typings.aceBuilds.aceBuildsStrings.wide
 import typings.aceBuilds.aceBuildsStrings.wrap
 import typings.aceBuilds.aceBuildsStrings.wrapBehavioursEnabled
 import typings.aceBuilds.aceBuildsStrings.wrapMethod
-import typings.std.Event_
+import typings.aceBuilds.anon.DataString
+import typings.aceBuilds.anon.OldSession
+import typings.aceBuilds.anon.PartialSearchOptions
+import typings.aceBuilds.anon.Text
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -287,21 +287,21 @@ trait Editor
   def navigateWordLeft(): Unit = js.native
   def navigateWordRight(): Unit = js.native
   @JSName("on")
-  def on_blur(name: blur, callback: js.Function1[/* e */ Event_, Unit]): js.Function = js.native
+  def on_blur(name: blur, callback: js.Function1[/* e */ Event, Unit]): js.Function = js.native
   @JSName("on")
   def on_change(name: change, callback: js.Function1[/* delta */ Delta, Unit]): js.Function = js.native
   @JSName("on")
-  def on_changeSelectionStyle(name: changeSelectionStyle, callback: js.Function1[/* obj */ AnonDataString, Unit]): js.Function = js.native
+  def on_changeSelectionStyle(name: changeSelectionStyle, callback: js.Function1[/* obj */ DataString, Unit]): js.Function = js.native
   @JSName("on")
-  def on_changeSession(name: changeSession, callback: js.Function1[/* obj */ AnonOldSession, Unit]): js.Function = js.native
+  def on_changeSession(name: changeSession, callback: js.Function1[/* obj */ OldSession, Unit]): js.Function = js.native
   @JSName("on")
-  def on_copy(name: copy, callback: js.Function1[/* obj */ AnonText, Unit]): js.Function = js.native
+  def on_copy(name: copy, callback: js.Function1[/* obj */ Text, Unit]): js.Function = js.native
   @JSName("on")
-  def on_focus(name: focus, callback: js.Function1[/* e */ Event_, Unit]): js.Function = js.native
+  def on_focus(name: focus, callback: js.Function1[/* e */ Event, Unit]): js.Function = js.native
   @JSName("on")
   def on_input(name: input, callback: js.Function0[Unit]): js.Function = js.native
   @JSName("on")
-  def on_paste(name: paste, callback: js.Function1[/* obj */ AnonText, Unit]): js.Function = js.native
+  def on_paste(name: paste, callback: js.Function1[/* obj */ Text, Unit]): js.Function = js.native
   def redo(): Unit = js.native
   def remove(): Unit = js.native
   def removeLineToEnd(): Unit = js.native

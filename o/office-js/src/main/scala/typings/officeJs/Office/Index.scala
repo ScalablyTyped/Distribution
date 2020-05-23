@@ -1,6 +1,5 @@
 package typings.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,20 +36,6 @@ object Index extends js.Object {
     */
   @js.native
   sealed trait Previous extends Index
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Index with Double] = js.native
-  /* 0 */ @js.native
-  object First extends TopLevel[First with Double]
-  
-  /* 1 */ @js.native
-  object Last extends TopLevel[Last with Double]
-  
-  /* 2 */ @js.native
-  object Next extends TopLevel[Next with Double]
-  
-  /* 3 */ @js.native
-  object Previous extends TopLevel[Previous with Double]
   
 }
 

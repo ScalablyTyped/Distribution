@@ -4,17 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.FromRssFeedRuleCondition")
-@js.native
-class FromRssFeedRuleCondition protected () extends js.Object {
-  val Application: typings.activexOutlook.Outlook.Application = js.native
-  val Class: OlObjectClass = js.native
-  val ConditionType: OlRuleConditionType = js.native
-  var Enabled: Boolean = js.native
-  var FromRssFeed: js.Any = js.native
+trait FromRssFeedRuleCondition extends js.Object {
+  val Application: typings.activexOutlook.Outlook.Application
+  val Class: OlObjectClass
+  val ConditionType: OlRuleConditionType
+  var Enabled: Boolean
+  var FromRssFeed: js.Any
   @JSName("Outlook.FromRssFeedRuleCondition_typekey")
-  var OutlookDotFromRssFeedRuleCondition_typekey: FromRssFeedRuleCondition = js.native
-  val Parent: js.Any = js.native
-  val Session: NameSpace = js.native
+  var OutlookDotFromRssFeedRuleCondition_typekey: FromRssFeedRuleCondition
+  val Parent: js.Any
+  val Session: NameSpace
+}
+
+object FromRssFeedRuleCondition {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Class: OlObjectClass,
+    ConditionType: OlRuleConditionType,
+    Enabled: Boolean,
+    FromRssFeed: js.Any,
+    OutlookDotFromRssFeedRuleCondition_typekey: FromRssFeedRuleCondition,
+    Parent: js.Any,
+    Session: NameSpace
+  ): FromRssFeedRuleCondition = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], ConditionType = ConditionType.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], FromRssFeed = FromRssFeed.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.FromRssFeedRuleCondition_typekey")(OutlookDotFromRssFeedRuleCondition_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FromRssFeedRuleCondition]
+  }
 }
 

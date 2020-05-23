@@ -13,30 +13,30 @@ trait IWipeIn extends IAnimation {
   /** [Config Option] (String) */
   var easing: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of direction
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of easing
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getEasing: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of out
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (Boolean) */
   var out: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the value of direction
-  		* @param direction String The new value.
-  		*/
+    * @param direction String The new value.
+    */
   var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of easing
-  		* @param easing String The new value.
-  		*/
+    * @param easing String The new value.
+    */
   var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of out
-  		* @param out Boolean The new value.
-  		*/
+    * @param out Boolean The new value.
+    */
   var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 
@@ -89,13 +89,13 @@ object IWipeIn {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
+    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out.get.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1(setDirection))
     if (setEasing != null) __obj.updateDynamic("setEasing")(js.Any.fromFunction1(setEasing))
     if (setOut != null) __obj.updateDynamic("setOut")(js.Any.fromFunction1(setOut))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

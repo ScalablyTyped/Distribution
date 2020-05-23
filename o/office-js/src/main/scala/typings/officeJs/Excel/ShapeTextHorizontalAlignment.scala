@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,29 +36,6 @@ object ShapeTextHorizontalAlignment extends js.Object {
   
   @js.native
   sealed trait thaiDistributed extends ShapeTextHorizontalAlignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeTextHorizontalAlignment with String] = js.native
-  /* "Center" */ @js.native
-  object center extends TopLevel[center with String]
-  
-  /* "Distributed" */ @js.native
-  object distributed extends TopLevel[distributed with String]
-  
-  /* "Justify" */ @js.native
-  object justify extends TopLevel[justify with String]
-  
-  /* "JustifyLow" */ @js.native
-  object justifyLow extends TopLevel[justifyLow with String]
-  
-  /* "Left" */ @js.native
-  object left extends TopLevel[left with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
-  /* "ThaiDistributed" */ @js.native
-  object thaiDistributed extends TopLevel[thaiDistributed with String]
   
 }
 

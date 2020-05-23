@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxDockZone object.
   */
-@JSGlobal("ASPxClientDockZone")
 @js.native
-class ASPxClientDockZone () extends ASPxClientControl {
+trait ASPxClientDockZone extends ASPxClientControl {
   /**
     * Fires on the client side after a panel is docked in a zone.
     */
@@ -50,16 +49,5 @@ class ASPxClientDockZone () extends ASPxClientControl {
     * Returns a value that indicates the orientation in which panels are stacked in the current zone.
     */
   def IsVertical(): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientDockZone")
-@js.native
-object ASPxClientDockZone extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientDockZone type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientDockZone = js.native
 }
 

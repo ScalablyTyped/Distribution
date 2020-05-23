@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait IField
   extends typings.extjs.Ext.IBase {
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
-  		* @param fn Object A function containing the transaction code
-  		*/
+    * @param fn Object A function containing the transaction code
+    */
   var batchChanges: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Template method before a field is reset  */
   var beforeReset: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -23,59 +23,59 @@ trait IField
   /** [Config Option] (Boolean) */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /** [Method] Only relevant if the instance s isFileUpload method returns true
-  		* @returns any
-  		*/
+    * @returns any
+    */
   var extractFileInput: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Runs this field s validators and returns an array of error messages for any validation failures
-  		* @param value Object The value to get errors for (defaults to the current field value)
-  		* @returns any All error messages for this field; an empty Array if none.
-  		*/
+    * @param value Object The value to get errors for (defaults to the current field value)
+    * @returns any All error messages for this field; an empty Array if none.
+    */
   var getErrors: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns the value s that should be saved to the Ext data Model instance for this field when Ext form Basic updateRe
-  		* @returns any A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
-  		*/
+    * @returns any A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
+    */
   var getModelData: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the name attribute of the field
-  		* @returns string name The field name
-  		*/
+    * @returns string name The field name
+    */
   var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the parameter s that would be included in a standard form submit for this field
-  		* @returns any A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
-  		*/
+    * @returns any A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
+    */
   var getSubmitData: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the current data value of the field
-  		* @returns any value The field value
-  		*/
+    * @returns any value The field value
+    */
   var getValue: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Initializes this Field mixin on the current instance  */
   var initField: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Initializes the field s value based on the initial config  */
   var initValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
-  		* @returns any True if this field has been changed from its original value (and is not disabled), false otherwise.
-  		*/
+    * @returns any True if this field has been changed from its original value (and is not disabled), false otherwise.
+    */
   var isDirty: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns whether two field values are logically equal
-  		* @param value1 Object The first value to compare
-  		* @param value2 Object The second value to compare
-  		* @returns any True if the values are equal, false if inequal.
-  		*/
+    * @param value1 Object The first value to compare
+    * @param value2 Object The second value to compare
+    * @returns any True if the values are equal, false if inequal.
+    */
   var isEqual: js.UndefOr[
     js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], _]
   ] = js.undefined
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
-  		* @returns any
-  		*/
+    * @returns any
+    */
   var isFileUpload: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Property] (Boolean) */
   var isFormField: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value
-  		* @returns any True if the value is valid, else false
-  		*/
+    * @returns any True if the value is valid, else false
+    */
   var isValid: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Associate one or more error messages with this field
-  		* @param errors String/String[] The error message(s) for the field.
-  		*/
+    * @param errors String/String[] The error message(s) for the field.
+    */
   var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
   var name: js.UndefOr[String] = js.undefined
@@ -86,20 +86,20 @@ trait IField
   /** [Method] Resets the field s originalValue property so it matches the current value  */
   var resetOriginalValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Sets a data value into the field and runs the change detection and validation
-  		* @param value Object The value to set
-  		* @returns any this
-  		*/
+    * @param value Object The value to set
+    * @returns any this
+    */
   var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (Boolean) */
   var submitValue: js.UndefOr[Boolean] = js.undefined
   /** [Method] Allows for any necessary modifications before the original value is set
-  		* @param value Object The initial value
-  		* @returns any The modified initial value
-  		*/
+    * @param value Object The initial value
+    * @returns any The modified initial value
+    */
   var transformOriginalValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
-  		* @returns any True if the value is valid, else false
-  		*/
+    * @returns any True if the value is valid, else false
+    */
   var validate: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Boolean) */
   var validateOnChange: js.UndefOr[Boolean] = js.undefined
@@ -169,7 +169,7 @@ object IField {
     if (checkDirty != null) __obj.updateDynamic("checkDirty")(js.Any.fromFunction0(checkDirty))
     if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(js.Any.fromFunction0(clearInvalid))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (extractFileInput != null) __obj.updateDynamic("extractFileInput")(js.Any.fromFunction0(extractFileInput))
     if (getErrors != null) __obj.updateDynamic("getErrors")(js.Any.fromFunction1(getErrors))
@@ -185,7 +185,7 @@ object IField {
     if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
     if (isEqual != null) __obj.updateDynamic("isEqual")(js.Any.fromFunction2(isEqual))
     if (isFileUpload != null) __obj.updateDynamic("isFileUpload")(js.Any.fromFunction0(isFileUpload))
-    if (!js.isUndefined(isFormField)) __obj.updateDynamic("isFormField")(isFormField.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFormField)) __obj.updateDynamic("isFormField")(isFormField.get.asInstanceOf[js.Any])
     if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
     if (markInvalid != null) __obj.updateDynamic("markInvalid")(js.Any.fromFunction1(markInvalid))
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -196,13 +196,13 @@ object IField {
     if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(js.Any.fromFunction0(resetOriginalValue))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(submitValue)) __obj.updateDynamic("submitValue")(submitValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(submitValue)) __obj.updateDynamic("submitValue")(submitValue.get.asInstanceOf[js.Any])
     if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(js.Any.fromFunction1(transformOriginalValue))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }

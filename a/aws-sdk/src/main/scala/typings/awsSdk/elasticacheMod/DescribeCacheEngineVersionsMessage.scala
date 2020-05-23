@@ -36,19 +36,19 @@ object DescribeCacheEngineVersionsMessage {
   @scala.inline
   def apply(
     CacheParameterGroupFamily: String = null,
-    DefaultOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    DefaultOnly: js.UndefOr[Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   ): DescribeCacheEngineVersionsMessage = {
     val __obj = js.Dynamic.literal()
     if (CacheParameterGroupFamily != null) __obj.updateDynamic("CacheParameterGroupFamily")(CacheParameterGroupFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultOnly)) __obj.updateDynamic("DefaultOnly")(DefaultOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultOnly)) __obj.updateDynamic("DefaultOnly")(DefaultOnly.get.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCacheEngineVersionsMessage]
   }
 }

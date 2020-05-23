@@ -1,0 +1,50 @@
+package typings.babylonjs.global.BABYLON
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("BABYLON.Octree")
+@js.native
+class Octree[T] protected ()
+  extends typings.babylonjs.BABYLON.Octree[T] {
+  /**
+    * Creates a octree
+    * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+    * @param creationFunc function to be used to instatiate the octree
+    * @param maxBlockCapacity defines the maximum number of meshes you want on your octree's leaves (default: 64)
+    * @param maxDepth defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.)
+    */
+  def this(creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.BABYLON.OctreeBlock[T], Unit]) = this()
+  def this(
+    creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.BABYLON.OctreeBlock[T], Unit],
+    maxBlockCapacity: Double
+  ) = this()
+  def this(
+    creationFunc: js.Function2[/* entry */ T, /* block */ typings.babylonjs.BABYLON.OctreeBlock[T], Unit],
+    maxBlockCapacity: Double,
+    /** Defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.) */
+  maxDepth: Double
+  ) = this()
+}
+
+/* static members */
+@JSGlobal("BABYLON.Octree")
+@js.native
+object Octree extends js.Object {
+  /**
+    * Adds a mesh into the octree block if it intersects the block
+    */
+  def CreationFuncForMeshes(
+    entry: typings.babylonjs.BABYLON.AbstractMesh,
+    block: typings.babylonjs.BABYLON.OctreeBlock[typings.babylonjs.BABYLON.AbstractMesh]
+  ): Unit = js.native
+  /**
+    * Adds a submesh into the octree block if it intersects the block
+    */
+  def CreationFuncForSubMeshes(
+    entry: typings.babylonjs.BABYLON.SubMesh,
+    block: typings.babylonjs.BABYLON.OctreeBlock[typings.babylonjs.BABYLON.SubMesh]
+  ): Unit = js.native
+}
+

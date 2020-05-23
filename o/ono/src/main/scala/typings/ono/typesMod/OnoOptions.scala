@@ -26,7 +26,7 @@ object OnoOptions {
   @scala.inline
   def apply(concatMessages: js.UndefOr[Boolean] = js.undefined, format: MessageFormatter | `false` = null): OnoOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(concatMessages)) __obj.updateDynamic("concatMessages")(concatMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(concatMessages)) __obj.updateDynamic("concatMessages")(concatMessages.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnoOptions]
   }

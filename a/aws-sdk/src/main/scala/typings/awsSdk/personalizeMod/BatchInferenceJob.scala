@@ -62,7 +62,7 @@ object BatchInferenceJob {
     jobName: Name = null,
     jobOutput: BatchInferenceJobOutput = null,
     lastUpdatedDateTime: Date = null,
-    numResults: Int | Double = null,
+    numResults: js.UndefOr[NumBatchResults] = js.undefined,
     roleArn: RoleArn = null,
     solutionVersionArn: Arn = null,
     status: Status = null
@@ -75,7 +75,7 @@ object BatchInferenceJob {
     if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
     if (jobOutput != null) __obj.updateDynamic("jobOutput")(jobOutput.asInstanceOf[js.Any])
     if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (numResults != null) __obj.updateDynamic("numResults")(numResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

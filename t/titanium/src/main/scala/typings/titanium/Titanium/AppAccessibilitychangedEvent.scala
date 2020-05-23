@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired by the system when the device's accessibility service is turned on or off.
-	 */
+  * Fired by the system when the device's accessibility service is turned on or off.
+  */
 trait AppAccessibilitychangedEvent extends AppBaseEvent {
   /**
-  		 * Whether accessibility is now enabled or disabled.
-  		 */
+    * Whether accessibility is now enabled or disabled.
+    */
   var enabled: Boolean
 }
 

@@ -45,14 +45,8 @@ import scala.scalajs.js.annotation._
   * 
   * For more details follow the Quick Start guide here: https://developers.facebook.com/docs/games/instant-games
   */
-@JSGlobal("Phaser.FacebookInstantGamesPlugin")
 @js.native
-class FacebookInstantGamesPlugin protected () extends EventEmitter {
-  /**
-    * 
-    * @param game A reference to the Phaser.Game instance.
-    */
-  def this(game: Game) = this()
+trait FacebookInstantGamesPlugin extends EventEmitter {
   /**
     * Contains AdInstance objects, as created by the `preloadAds()` method.
     */

@@ -21,6 +21,7 @@ trait NoticeProps extends js.Object {
   var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   var prefixCls: String
+  var props: js.UndefOr[DivProps] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var update: js.UndefOr[Boolean] = js.undefined
 }
@@ -33,24 +34,26 @@ object NoticeProps {
     className: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
     closeIcon: ReactNode = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Null | Double] = js.undefined,
     holder: HTMLDivElement = null,
     onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onClose: () => Unit = null,
+    props: DivProps = null,
     style: CSSProperties = null,
     update: js.UndefOr[Boolean] = js.undefined
   ): NoticeProps = {
     val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (holder != null) __obj.updateDynamic("holder")(holder.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoticeProps]
   }
 }

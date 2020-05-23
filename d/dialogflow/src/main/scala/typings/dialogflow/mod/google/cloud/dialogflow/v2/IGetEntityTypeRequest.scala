@@ -14,10 +14,13 @@ trait IGetEntityTypeRequest extends js.Object {
 
 object IGetEntityTypeRequest {
   @scala.inline
-  def apply(languageCode: String = null, name: String = null): IGetEntityTypeRequest = {
+  def apply(
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
+  ): IGetEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetEntityTypeRequest]
   }
 }

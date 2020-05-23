@@ -12,14 +12,14 @@ trait ActiveXObject extends js.Object {
     obj: StdFont,
     event: FontChanged,
     argNames: js.Array[PropertyName],
-    handler: js.ThisFunction1[/* this */ StdFont, /* parameter */ AnonPropertyName, Unit]
+    handler: js.ThisFunction1[/* this */ StdFont, /* parameter */ typings.activexStdole.anon.PropertyName, Unit]
   ): Unit
 }
 
 object ActiveXObject {
   @scala.inline
   def apply(
-    on: (StdFont, FontChanged, js.Array[PropertyName], js.ThisFunction1[/* this */ StdFont, /* parameter */ AnonPropertyName, Unit]) => Unit
+    on: (StdFont, FontChanged, js.Array[PropertyName], js.ThisFunction1[/* this */ StdFont, /* parameter */ typings.activexStdole.anon.PropertyName, Unit]) => Unit
   ): ActiveXObject = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on))
     __obj.asInstanceOf[ActiveXObject]

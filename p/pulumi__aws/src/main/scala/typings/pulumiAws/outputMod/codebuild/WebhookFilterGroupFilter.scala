@@ -25,7 +25,7 @@ object WebhookFilterGroupFilter {
   def apply(pattern: String, `type`: String, excludeMatchedPattern: js.UndefOr[Boolean] = js.undefined): WebhookFilterGroupFilter = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeMatchedPattern)) __obj.updateDynamic("excludeMatchedPattern")(excludeMatchedPattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeMatchedPattern)) __obj.updateDynamic("excludeMatchedPattern")(excludeMatchedPattern.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookFilterGroupFilter]
   }
 }

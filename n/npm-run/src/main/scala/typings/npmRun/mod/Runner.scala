@@ -16,9 +16,9 @@ import typings.node.childProcessMod.SpawnSyncOptionsWithStringEncoding
 import typings.node.childProcessMod.SpawnSyncReturns
 import typings.node.childProcessMod.StdioNull
 import typings.node.childProcessMod.StdioPipe
-import typings.npmRun.Fn0
-import typings.npmRun.FnCall
-import typings.npmRun.FnCallCommandArgsOptions
+import typings.npmRun.anon.Fn0
+import typings.npmRun.anon.FnCall
+import typings.npmRun.anon.FnCallCommandArgsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

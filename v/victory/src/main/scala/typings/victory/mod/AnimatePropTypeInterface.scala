@@ -1,7 +1,7 @@
 package typings.victory.mod
 
-import typings.victory.AnonAfter
-import typings.victory.AnonBefore
+import typings.victory.anon.After
+import typings.victory.anon.Before
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,15 +23,15 @@ trait AnimatePropTypeInterface extends js.Object {
   /**
     * Animation enter transition configuration
     */
-  var onEnter: js.UndefOr[AnonAfter] = js.undefined
+  var onEnter: js.UndefOr[After] = js.undefined
   /**
     * Animation exit transition configuration
     */
-  var onExit: js.UndefOr[AnonBefore] = js.undefined
+  var onExit: js.UndefOr[Before] = js.undefined
   /**
     * Animation load transition configuration
     */
-  var onLoad: js.UndefOr[AnonAfter] = js.undefined
+  var onLoad: js.UndefOr[After] = js.undefined
 }
 
 object AnimatePropTypeInterface {
@@ -40,9 +40,9 @@ object AnimatePropTypeInterface {
     duration: Double,
     easing: AnimationEasing = null,
     onEnd: () => Unit = null,
-    onEnter: AnonAfter = null,
-    onExit: AnonBefore = null,
-    onLoad: AnonAfter = null
+    onEnter: After = null,
+    onExit: Before = null,
+    onLoad: After = null
   ): AnimatePropTypeInterface = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])

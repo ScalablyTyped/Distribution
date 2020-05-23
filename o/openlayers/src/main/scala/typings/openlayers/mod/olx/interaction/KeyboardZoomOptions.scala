@@ -16,13 +16,13 @@ object KeyboardZoomOptions {
   @scala.inline
   def apply(
     condition: /* event */ MapBrowserEvent => Boolean = null,
-    delta: Int | Double = null,
-    duration: Int | Double = null
+    delta: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Double] = js.undefined
   ): KeyboardZoomOptions = {
     val __obj = js.Dynamic.literal()
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardZoomOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.nextServer
 
+import typings.nextServer.anon.GenerateEtags
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
@@ -13,7 +14,7 @@ object sendHtmlMod extends js.Object {
     req: IncomingMessage,
     res: ServerResponse,
     html: String,
-    hasGenerateEtagsPoweredByHeader: AnonGenerateEtags
+    hasGenerateEtagsPoweredByHeader: GenerateEtags
   ): Unit = js.native
 }
 

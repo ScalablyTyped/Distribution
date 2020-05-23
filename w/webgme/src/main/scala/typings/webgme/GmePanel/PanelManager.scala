@@ -1,15 +1,19 @@
 package typings.webgme.GmePanel
 
-import typings.webgme.Gme.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("GmePanel.PanelManager")
-@js.native
-class PanelManager protected () extends js.Object {
-  def this(client: Client) = this()
-  def getActivePanel(): PanelBase = js.native
-  def setActivePanel(panel: PanelBase): Unit = js.native
+trait PanelManager extends js.Object {
+  def getActivePanel(): PanelBase
+  def setActivePanel(panel: PanelBase): Unit
+}
+
+object PanelManager {
+  @scala.inline
+  def apply(getActivePanel: () => PanelBase, setActivePanel: PanelBase => Unit): PanelManager = {
+    val __obj = js.Dynamic.literal(getActivePanel = js.Any.fromFunction0(getActivePanel), setActivePanel = js.Any.fromFunction1(setActivePanel))
+    __obj.asInstanceOf[PanelManager]
+  }
 }
 

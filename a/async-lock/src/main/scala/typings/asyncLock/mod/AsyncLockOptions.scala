@@ -17,16 +17,16 @@ object AsyncLockOptions {
   def apply(
     Promise: js.Any = null,
     domainReentrant: js.UndefOr[Boolean] = js.undefined,
-    maxPending: Int | Double = null,
+    maxPending: js.UndefOr[Double] = js.undefined,
     skipQueue: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): AsyncLockOptions = {
     val __obj = js.Dynamic.literal()
     if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
-    if (!js.isUndefined(domainReentrant)) __obj.updateDynamic("domainReentrant")(domainReentrant.asInstanceOf[js.Any])
-    if (maxPending != null) __obj.updateDynamic("maxPending")(maxPending.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipQueue)) __obj.updateDynamic("skipQueue")(skipQueue.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainReentrant)) __obj.updateDynamic("domainReentrant")(domainReentrant.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPending)) __obj.updateDynamic("maxPending")(maxPending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipQueue)) __obj.updateDynamic("skipQueue")(skipQueue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncLockOptions]
   }
 }

@@ -13,7 +13,7 @@ trait TaggedFlatObject[S /* <: Schema[_, _] */] extends js.Object {
 
 object TaggedFlatObject {
   @scala.inline
-  def apply[S /* <: Schema[_, _] */](flat: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]], tag: Record[String, Double]): TaggedFlatObject[S] = {
+  def apply[S](flat: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]], tag: Record[String, Double]): TaggedFlatObject[S] = {
     val __obj = js.Dynamic.literal(flat = flat.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaggedFlatObject[S]]
   }

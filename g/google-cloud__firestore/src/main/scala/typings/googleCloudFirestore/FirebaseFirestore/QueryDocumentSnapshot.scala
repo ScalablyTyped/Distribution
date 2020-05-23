@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FirebaseFirestore.QueryDocumentSnapshot")
 @js.native
-class QueryDocumentSnapshot[T] protected () extends DocumentSnapshot[T] {
+trait QueryDocumentSnapshot[T] extends DocumentSnapshot[T] {
   /**
     * The time the document was created.
     */

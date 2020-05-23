@@ -42,8 +42,8 @@ object Properties {
     fontDescent: Double,
     StringDictionary: /* key */ StringDictionary[js.UndefOr[String | Double]] = null,
     addStyleName: String = null,
-    averageWidth: Int | Double = null,
-    capHeight: Int | Double = null,
+    averageWidth: js.UndefOr[Double] = js.undefined,
+    capHeight: js.UndefOr[Double] = js.undefined,
     charsetEncoding: String = null,
     charsetRegistry: String = null,
     copyright: String = null,
@@ -54,21 +54,21 @@ object Properties {
     fontnameRegistry: String = null,
     foundry: String = null,
     notice: String = null,
-    pixelSize: Int | Double = null,
-    pointSize: Int | Double = null,
-    resolutionX: Int | Double = null,
-    resolutionY: Int | Double = null,
+    pixelSize: js.UndefOr[Double] = js.undefined,
+    pointSize: js.UndefOr[Double] = js.undefined,
+    resolutionX: js.UndefOr[Double] = js.undefined,
+    resolutionY: js.UndefOr[Double] = js.undefined,
     setwidthName: String = null,
     slant: String = null,
     spacing: String = null,
     weightName: String = null,
-    xHeight: Int | Double = null
+    xHeight: js.UndefOr[Double] = js.undefined
   ): Properties = {
     val __obj = js.Dynamic.literal(defaultChar = defaultChar.asInstanceOf[js.Any], fontAscent = fontAscent.asInstanceOf[js.Any], fontDescent = fontDescent.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (addStyleName != null) __obj.updateDynamic("addStyleName")(addStyleName.asInstanceOf[js.Any])
-    if (averageWidth != null) __obj.updateDynamic("averageWidth")(averageWidth.asInstanceOf[js.Any])
-    if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(averageWidth)) __obj.updateDynamic("averageWidth")(averageWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(capHeight)) __obj.updateDynamic("capHeight")(capHeight.get.asInstanceOf[js.Any])
     if (charsetEncoding != null) __obj.updateDynamic("charsetEncoding")(charsetEncoding.asInstanceOf[js.Any])
     if (charsetRegistry != null) __obj.updateDynamic("charsetRegistry")(charsetRegistry.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
@@ -79,15 +79,15 @@ object Properties {
     if (fontnameRegistry != null) __obj.updateDynamic("fontnameRegistry")(fontnameRegistry.asInstanceOf[js.Any])
     if (foundry != null) __obj.updateDynamic("foundry")(foundry.asInstanceOf[js.Any])
     if (notice != null) __obj.updateDynamic("notice")(notice.asInstanceOf[js.Any])
-    if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (resolutionX != null) __obj.updateDynamic("resolutionX")(resolutionX.asInstanceOf[js.Any])
-    if (resolutionY != null) __obj.updateDynamic("resolutionY")(resolutionY.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelSize)) __obj.updateDynamic("pixelSize")(pixelSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolutionX)) __obj.updateDynamic("resolutionX")(resolutionX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolutionY)) __obj.updateDynamic("resolutionY")(resolutionY.get.asInstanceOf[js.Any])
     if (setwidthName != null) __obj.updateDynamic("setwidthName")(setwidthName.asInstanceOf[js.Any])
     if (slant != null) __obj.updateDynamic("slant")(slant.asInstanceOf[js.Any])
     if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
     if (weightName != null) __obj.updateDynamic("weightName")(weightName.asInstanceOf[js.Any])
-    if (xHeight != null) __obj.updateDynamic("xHeight")(xHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(xHeight)) __obj.updateDynamic("xHeight")(xHeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }
 }

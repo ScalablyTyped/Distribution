@@ -10,9 +10,9 @@ trait GetAndLockOptions extends js.Object {
 
 object GetAndLockOptions {
   @scala.inline
-  def apply(lockTime: Int | Double = null): GetAndLockOptions = {
+  def apply(lockTime: js.UndefOr[Double] = js.undefined): GetAndLockOptions = {
     val __obj = js.Dynamic.literal()
-    if (lockTime != null) __obj.updateDynamic("lockTime")(lockTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockTime)) __obj.updateDynamic("lockTime")(lockTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAndLockOptions]
   }
 }

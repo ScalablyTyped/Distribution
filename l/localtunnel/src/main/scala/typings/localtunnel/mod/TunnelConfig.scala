@@ -28,12 +28,12 @@ object TunnelConfig {
     subdomain: String = null
   ): TunnelConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_invalid_cert)) __obj.updateDynamic("allow_invalid_cert")(allow_invalid_cert.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_invalid_cert)) __obj.updateDynamic("allow_invalid_cert")(allow_invalid_cert.get.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (local_ca != null) __obj.updateDynamic("local_ca")(local_ca.asInstanceOf[js.Any])
     if (local_cert != null) __obj.updateDynamic("local_cert")(local_cert.asInstanceOf[js.Any])
     if (local_host != null) __obj.updateDynamic("local_host")(local_host.asInstanceOf[js.Any])
-    if (!js.isUndefined(local_https)) __obj.updateDynamic("local_https")(local_https.asInstanceOf[js.Any])
+    if (!js.isUndefined(local_https)) __obj.updateDynamic("local_https")(local_https.get.asInstanceOf[js.Any])
     if (local_key != null) __obj.updateDynamic("local_key")(local_key.asInstanceOf[js.Any])
     if (subdomain != null) __obj.updateDynamic("subdomain")(subdomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[TunnelConfig]

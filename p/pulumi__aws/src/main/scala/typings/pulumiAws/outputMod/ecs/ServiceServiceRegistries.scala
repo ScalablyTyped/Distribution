@@ -17,13 +17,13 @@ object ServiceServiceRegistries {
   def apply(
     registryArn: String,
     containerName: String = null,
-    containerPort: Int | Double = null,
-    port: Int | Double = null
+    containerPort: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined
   ): ServiceServiceRegistries = {
     val __obj = js.Dynamic.literal(registryArn = registryArn.asInstanceOf[js.Any])
     if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    if (containerPort != null) __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerPort)) __obj.updateDynamic("containerPort")(containerPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceServiceRegistries]
   }
 }

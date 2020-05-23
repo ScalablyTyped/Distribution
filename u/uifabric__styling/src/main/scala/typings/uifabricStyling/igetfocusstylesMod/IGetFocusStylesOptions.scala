@@ -50,20 +50,20 @@ object IGetFocusStylesOptions {
   def apply(
     borderColor: String = null,
     highContrastStyle: IRawStyle = null,
-    inset: Int | Double = null,
+    inset: js.UndefOr[Double] = js.undefined,
     isFocusedOnly: js.UndefOr[Boolean] = js.undefined,
     outlineColor: String = null,
     position: relative | absolute = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): IGetFocusStylesOptions = {
     val __obj = js.Dynamic.literal()
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (highContrastStyle != null) __obj.updateDynamic("highContrastStyle")(highContrastStyle.asInstanceOf[js.Any])
-    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFocusedOnly)) __obj.updateDynamic("isFocusedOnly")(isFocusedOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFocusedOnly)) __obj.updateDynamic("isFocusedOnly")(isFocusedOnly.get.asInstanceOf[js.Any])
     if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetFocusStylesOptions]
   }
 }

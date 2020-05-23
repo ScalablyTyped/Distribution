@@ -36,13 +36,13 @@ object HeaderProps {
     val __obj = js.Dynamic.literal()
     if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(hideSpacer)) __obj.updateDynamic("hideSpacer")(hideSpacer.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTop)) __obj.updateDynamic("hideTop")(hideTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(seamed)) __obj.updateDynamic("seamed")(seamed.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideSpacer)) __obj.updateDynamic("hideSpacer")(hideSpacer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTop)) __obj.updateDynamic("hideTop")(hideTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seamed)) __obj.updateDynamic("seamed")(seamed.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (!js.isUndefined(waterfall)) __obj.updateDynamic("waterfall")(waterfall.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waterfall)) __obj.updateDynamic("waterfall")(waterfall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]
   }
 }

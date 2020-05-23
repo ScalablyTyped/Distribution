@@ -1,7 +1,7 @@
 package typings.formatjsIntlUtils.displaynamesTypesMod
 
-import typings.formatjsIntlUtils.AnonCurrency
-import typings.formatjsIntlUtils.AnonLocale
+import typings.formatjsIntlUtils.anon.Currency
+import typings.formatjsIntlUtils.anon.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,17 +12,17 @@ trait DisplayNamesData extends js.Object {
     * e.g. zh-Hans-SG + "{0}（{1}）" -> 简体中文（新加坡）
     * Here {0} is replaced by language display name and {1} is replaced by region display name.
     */
-  var patterns: AnonLocale
+  var patterns: Locale
   /**
     * Note that for style fields, `short` and `narrow` might not exist.
     * At runtime, the fallback order will be narrow -> short -> long.
     */
-  var types: AnonCurrency
+  var types: Currency
 }
 
 object DisplayNamesData {
   @scala.inline
-  def apply(patterns: AnonLocale, types: AnonCurrency): DisplayNamesData = {
+  def apply(patterns: Locale, types: Currency): DisplayNamesData = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayNamesData]
   }

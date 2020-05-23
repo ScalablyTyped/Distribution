@@ -17,7 +17,7 @@ object Bytewise {
   def apply(
     decode: Buffer => js.Any,
     encode: js.Any => Buffer,
-    StringDictionary: /* k */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Bytewise = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

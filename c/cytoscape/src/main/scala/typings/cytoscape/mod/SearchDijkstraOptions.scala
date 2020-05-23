@@ -32,7 +32,7 @@ object SearchDijkstraOptions {
     weight: /* edge */ EdgeCollection => Double = null
   ): SearchDijkstraOptions = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.get.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchDijkstraOptions]
   }

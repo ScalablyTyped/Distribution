@@ -50,7 +50,7 @@ object CustomFileProviderOptions {
     renameItem: js.Function = null,
     sizeExpr: String | js.Function = null,
     thumbnailExpr: String | js.Function = null,
-    uploadChunkSize: Int | Double = null,
+    uploadChunkSize: js.UndefOr[Double] = js.undefined,
     uploadFileChunk: js.Function = null
   ): CustomFileProviderOptions = {
     val __obj = js.Dynamic.literal()
@@ -70,7 +70,7 @@ object CustomFileProviderOptions {
     if (renameItem != null) __obj.updateDynamic("renameItem")(renameItem.asInstanceOf[js.Any])
     if (sizeExpr != null) __obj.updateDynamic("sizeExpr")(sizeExpr.asInstanceOf[js.Any])
     if (thumbnailExpr != null) __obj.updateDynamic("thumbnailExpr")(thumbnailExpr.asInstanceOf[js.Any])
-    if (uploadChunkSize != null) __obj.updateDynamic("uploadChunkSize")(uploadChunkSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(uploadChunkSize)) __obj.updateDynamic("uploadChunkSize")(uploadChunkSize.get.asInstanceOf[js.Any])
     if (uploadFileChunk != null) __obj.updateDynamic("uploadFileChunk")(uploadFileChunk.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomFileProviderOptions]
   }

@@ -10,10 +10,10 @@ trait RefAttributes[T] extends Attributes {
 
 object RefAttributes {
   @scala.inline
-  def apply[T](key: Key = null, ref: Ref[T] = null): RefAttributes[T] = {
+  def apply[T](key: Key = null, ref: js.UndefOr[Null | Ref[T]] = js.undefined): RefAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefAttributes[T]]
   }
 }

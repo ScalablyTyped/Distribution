@@ -20,8 +20,8 @@ object CreateParams {
     notes: String = null
   ): CreateParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
-    if (!js.isUndefined(hearted)) __obj.updateDynamic("hearted")(hearted.asInstanceOf[js.Any])
+    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hearted)) __obj.updateDynamic("hearted")(hearted.get.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateParams]
   }

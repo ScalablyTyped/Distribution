@@ -1,6 +1,6 @@
 package typings.hexoFs.mod
 
-import typings.hexoFs.AnonAutoClose
+import typings.hexoFs.anon.AutoClose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +19,10 @@ object ensureWriteStream extends js.Object {
     options: String,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[typings.gracefulFs.mod.WriteStream], Unit]
   ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
-  def apply(path: String, options: AnonAutoClose): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
+  def apply(path: String, options: AutoClose): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
   def apply(
     path: String,
-    options: AnonAutoClose,
+    options: AutoClose,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[typings.gracefulFs.mod.WriteStream], Unit]
   ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
 }

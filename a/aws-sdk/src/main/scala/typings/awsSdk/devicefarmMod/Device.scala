@@ -102,19 +102,19 @@ object Device {
     fleetName: String = null,
     fleetType: String = null,
     formFactor: DeviceFormFactor = null,
-    heapSize: Int | scala.Double = null,
+    heapSize: js.UndefOr[Long] = js.undefined,
     image: String = null,
     instances: DeviceInstances = null,
     manufacturer: String = null,
-    memory: Int | scala.Double = null,
+    memory: js.UndefOr[Long] = js.undefined,
     model: String = null,
     modelId: String = null,
     name: Name = null,
     os: String = null,
     platform: DevicePlatform = null,
     radio: String = null,
-    remoteAccessEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    remoteDebugEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteAccessEnabled: js.UndefOr[Boolean] = js.undefined,
+    remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined,
     resolution: Resolution = null
   ): Device = {
     val __obj = js.Dynamic.literal()
@@ -125,19 +125,19 @@ object Device {
     if (fleetName != null) __obj.updateDynamic("fleetName")(fleetName.asInstanceOf[js.Any])
     if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType.asInstanceOf[js.Any])
     if (formFactor != null) __obj.updateDynamic("formFactor")(formFactor.asInstanceOf[js.Any])
-    if (heapSize != null) __obj.updateDynamic("heapSize")(heapSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(heapSize)) __obj.updateDynamic("heapSize")(heapSize.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (modelId != null) __obj.updateDynamic("modelId")(modelId.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (radio != null) __obj.updateDynamic("radio")(radio.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteAccessEnabled)) __obj.updateDynamic("remoteAccessEnabled")(remoteAccessEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteAccessEnabled)) __obj.updateDynamic("remoteAccessEnabled")(remoteAccessEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.get.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }

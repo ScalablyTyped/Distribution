@@ -21,11 +21,15 @@ trait NodesShadow extends js.Object {
 
 object NodesShadow {
   @scala.inline
-  def apply(angle: Int | Double = null, distance: Int | Double = null, opacity: Int | Double = null): NodesShadow = {
+  def apply(
+    angle: js.UndefOr[Double] = js.undefined,
+    distance: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined
+  ): NodesShadow = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesShadow]
   }
 }

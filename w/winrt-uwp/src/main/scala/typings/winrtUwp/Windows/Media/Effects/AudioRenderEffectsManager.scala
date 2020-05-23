@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represent an audio render effects manager which can be used to discover the audio processing chain on a device for a specific media category and audio processing mode. */
-@JSGlobal("Windows.Media.Effects.AudioRenderEffectsManager")
 @js.native
-abstract class AudioRenderEffectsManager () extends js.Object {
+trait AudioRenderEffectsManager extends js.Object {
   /** Gets the label that is associated with this audio effects provider setting. */
   var effectsProviderSettingsLabel: String = js.native
   /** Gets the thumbnail image that is associated with this audio effects provider. */

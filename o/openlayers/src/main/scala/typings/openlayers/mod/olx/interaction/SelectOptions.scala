@@ -33,7 +33,7 @@ object SelectOptions {
     condition: /* event */ MapBrowserEvent => Boolean = null,
     features: Collection[Feature] = null,
     filter: (/* feature */ Feature | typings.openlayers.mod.render.Feature, /* layer */ Layer) => Boolean = null,
-    hitTolerance: Int | Double = null,
+    hitTolerance: js.UndefOr[Double] = js.undefined,
     layers: js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean]) = null,
     multi: js.UndefOr[Boolean] = js.undefined,
     removeCondition: /* event */ MapBrowserEvent => Boolean = null,
@@ -46,13 +46,13 @@ object SelectOptions {
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (hitTolerance != null) __obj.updateDynamic("hitTolerance")(hitTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitTolerance)) __obj.updateDynamic("hitTolerance")(hitTolerance.get.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
     if (removeCondition != null) __obj.updateDynamic("removeCondition")(js.Any.fromFunction1(removeCondition))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (toggleCondition != null) __obj.updateDynamic("toggleCondition")(js.Any.fromFunction1(toggleCondition))
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.rdfjsDataset
 
+import typings.rdfJs.mod.BaseQuad
 import typings.rdfJs.mod.BlankNode
 import typings.rdfJs.mod.DefaultGraph
 import typings.rdfJs.mod.Literal
@@ -33,22 +34,15 @@ object mod extends js.Object {
     /* object */ QuadObject, 
     Quad
   ] = js.native
-  @JSName("triple")
-  var triple_Original: js.Function3[
-    /* subject */ QuadSubject, 
-    /* predicate */ QuadPredicate, 
-    /* object */ QuadObject, 
-    Quad
-  ] = js.native
   @JSName("variable")
   var variable_Original: js.Function1[/* value */ String, Variable] = js.native
   def blankNode(): BlankNode = js.native
-  def dataset(): ^ = js.native
+  def dataset[InQuad /* <: BaseQuad */](): ^[InQuad] = js.native
+  def dataset[InQuad /* <: BaseQuad */](quads: js.Array[InQuad]): ^[InQuad] = js.native
   def defaultGraph(): DefaultGraph = js.native
   def literal(value: String): Literal = js.native
   def namedNode(value: String): NamedNode = js.native
   def quad(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): Quad = js.native
-  def triple(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): Quad = js.native
   def variable(value: String): Variable = js.native
 }
 

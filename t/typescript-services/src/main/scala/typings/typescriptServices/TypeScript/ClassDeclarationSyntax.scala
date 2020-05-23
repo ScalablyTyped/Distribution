@@ -4,20 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.ClassDeclarationSyntax")
 @js.native
-class ClassDeclarationSyntax protected () extends SyntaxNode {
-  def this(
-    modifiers: ISyntaxList,
-    classKeyword: ISyntaxToken,
-    identifier: ISyntaxToken,
-    typeParameterList: TypeParameterListSyntax,
-    heritageClauses: ISyntaxList,
-    openBraceToken: ISyntaxToken,
-    classElements: ISyntaxList,
-    closeBraceToken: ISyntaxToken,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait ClassDeclarationSyntax extends SyntaxNode {
   var classElements: ISyntaxList = js.native
   var classKeyword: ISyntaxToken = js.native
   var closeBraceToken: ISyntaxToken = js.native
@@ -47,18 +35,5 @@ class ClassDeclarationSyntax protected () extends SyntaxNode {
   def withModifiers(modifiers: ISyntaxList): ClassDeclarationSyntax = js.native
   def withOpenBraceToken(openBraceToken: ISyntaxToken): ClassDeclarationSyntax = js.native
   def withTypeParameterList(typeParameterList: TypeParameterListSyntax): ClassDeclarationSyntax = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.ClassDeclarationSyntax")
-@js.native
-object ClassDeclarationSyntax extends js.Object {
-  def create(
-    classKeyword: ISyntaxToken,
-    identifier: ISyntaxToken,
-    openBraceToken: ISyntaxToken,
-    closeBraceToken: ISyntaxToken
-  ): ClassDeclarationSyntax = js.native
-  def create1(identifier: ISyntaxToken): ClassDeclarationSyntax = js.native
 }
 

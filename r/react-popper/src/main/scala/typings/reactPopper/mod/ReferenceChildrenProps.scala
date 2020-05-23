@@ -15,8 +15,7 @@ trait ReferenceChildrenProps extends js.Object {
 object ReferenceChildrenProps {
   @scala.inline
   def apply(ref: Ref[_] = null): ReferenceChildrenProps = {
-    val __obj = js.Dynamic.literal()
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceChildrenProps]
   }
 }

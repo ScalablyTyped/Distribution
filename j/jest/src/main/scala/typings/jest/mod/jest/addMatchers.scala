@@ -1,6 +1,6 @@
 package typings.jest.mod.jest
 
-import typings.jest.Typeofjest
+import typings.jest.anon.Typeofjest
 import typings.jest.mod.jasmine.CustomMatcherFactories
 import scala.scalajs.js
 import scala.scalajs.js.`|`

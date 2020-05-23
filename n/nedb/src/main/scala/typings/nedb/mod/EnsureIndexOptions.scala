@@ -15,14 +15,14 @@ object EnsureIndexOptions {
   @scala.inline
   def apply(
     fieldName: String,
-    expireAfterSeconds: Int | Double = null,
+    expireAfterSeconds: js.UndefOr[Double] = js.undefined,
     sparse: js.UndefOr[Boolean] = js.undefined,
     unique: js.UndefOr[Boolean] = js.undefined
   ): EnsureIndexOptions = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any])
-    if (expireAfterSeconds != null) __obj.updateDynamic("expireAfterSeconds")(expireAfterSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (!js.isUndefined(expireAfterSeconds)) __obj.updateDynamic("expireAfterSeconds")(expireAfterSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnsureIndexOptions]
   }
 }

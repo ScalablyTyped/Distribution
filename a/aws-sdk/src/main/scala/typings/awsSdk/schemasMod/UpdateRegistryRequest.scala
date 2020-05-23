@@ -10,6 +10,9 @@ trait UpdateRegistryRequest extends js.Object {
     * The description of the registry to update.
     */
   var Description: js.UndefOr[stringMin0Max256] = js.native
+  /**
+    * The name of the registry.
+    */
   var RegistryName: string = js.native
 }
 

@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.1]
   */
-@JSGlobal("Word.ContentControlCollection")
 @js.native
-class ContentControlCollection () extends ClientObject {
+trait ContentControlCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ContentControlCollection: RequestContext = js.native

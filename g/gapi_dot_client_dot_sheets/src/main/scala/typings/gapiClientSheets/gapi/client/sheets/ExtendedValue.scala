@@ -35,14 +35,14 @@ object ExtendedValue {
     boolValue: js.UndefOr[Boolean] = js.undefined,
     errorValue: ErrorValue = null,
     formulaValue: String = null,
-    numberValue: Int | Double = null,
+    numberValue: js.UndefOr[Double] = js.undefined,
     stringValue: String = null
   ): ExtendedValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.get.asInstanceOf[js.Any])
     if (errorValue != null) __obj.updateDynamic("errorValue")(errorValue.asInstanceOf[js.Any])
     if (formulaValue != null) __obj.updateDynamic("formulaValue")(formulaValue.asInstanceOf[js.Any])
-    if (numberValue != null) __obj.updateDynamic("numberValue")(numberValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberValue)) __obj.updateDynamic("numberValue")(numberValue.get.asInstanceOf[js.Any])
     if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedValue]
   }

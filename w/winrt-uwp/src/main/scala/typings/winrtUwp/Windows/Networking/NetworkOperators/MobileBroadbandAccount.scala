@@ -7,37 +7,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a mobile broadband account and related information about the network provider for the account. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
-@js.native
-abstract class MobileBroadbandAccount () extends js.Object {
+trait MobileBroadbandAccount extends js.Object {
   /** Gets the mobile broadband device information associated with this account. */
-  var currentDeviceInformation: MobileBroadbandDeviceInformation = js.native
+  var currentDeviceInformation: MobileBroadbandDeviceInformation
   /** Gets the Mobile Broadband network object for this account. */
-  var currentNetwork: MobileBroadbandNetwork = js.native
+  var currentNetwork: MobileBroadbandNetwork
   /** Gets a unique identifier for the mobile broadband account. */
-  var networkAccountId: String = js.native
+  var networkAccountId: String
   /** A unique identifier for the network provider for the mobile broadband account. */
-  var serviceProviderGuid: String = js.native
+  var serviceProviderGuid: String
   /** The name of the network provider for the mobile broadband account. */
-  var serviceProviderName: String = js.native
+  var serviceProviderName: String
   /**
     * Retrieves an array of ConnectionProfile objects that represent connections associated with the Mobile Broadband account.
     * @return An array of ConnectionProfile objects.
     */
-  def getConnectionProfiles(): IVectorView[ConnectionProfile] = js.native
+  def getConnectionProfiles(): IVectorView[ConnectionProfile]
 }
 
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
-@js.native
-object MobileBroadbandAccount extends js.Object {
-  /** A list of all network account IDs for the network service provider. */
-  var availableNetworkAccountIds: IVectorView[String] = js.native
-  /**
-    * Creates a mobile broadband account for the mobile device associated with the supplied network account ID.
-    * @param networkAccountId The network account ID to use to select the corresponding mobile broadband device to use for the account.
-    * @return A mobile broadband account for the mobile device associated with the supplied network account ID.
-    */
-  def createFromNetworkAccountId(networkAccountId: String): MobileBroadbandAccount = js.native
+object MobileBroadbandAccount {
+  @scala.inline
+  def apply(
+    currentDeviceInformation: MobileBroadbandDeviceInformation,
+    currentNetwork: MobileBroadbandNetwork,
+    getConnectionProfiles: () => IVectorView[ConnectionProfile],
+    networkAccountId: String,
+    serviceProviderGuid: String,
+    serviceProviderName: String
+  ): MobileBroadbandAccount = {
+    val __obj = js.Dynamic.literal(currentDeviceInformation = currentDeviceInformation.asInstanceOf[js.Any], currentNetwork = currentNetwork.asInstanceOf[js.Any], getConnectionProfiles = js.Any.fromFunction0(getConnectionProfiles), networkAccountId = networkAccountId.asInstanceOf[js.Any], serviceProviderGuid = serviceProviderGuid.asInstanceOf[js.Any], serviceProviderName = serviceProviderName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MobileBroadbandAccount]
+  }
 }
 

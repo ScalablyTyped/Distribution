@@ -29,8 +29,8 @@ object UriOptions {
     scheme: String | RegExp | (js.Array[String | RegExp]) = null
   ): UriOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowRelative)) __obj.updateDynamic("allowRelative")(allowRelative.asInstanceOf[js.Any])
-    if (!js.isUndefined(relativeOnly)) __obj.updateDynamic("relativeOnly")(relativeOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRelative)) __obj.updateDynamic("allowRelative")(allowRelative.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeOnly)) __obj.updateDynamic("relativeOnly")(relativeOnly.get.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[UriOptions]
   }

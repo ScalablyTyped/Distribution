@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object CameraStreamState extends js.Object {
   /** The camera stream is currently streaming. */
   @js.native
   sealed trait streaming extends CameraStreamState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CameraStreamState with Double] = js.native
-  /* 2 */ @js.native
-  object blockedForPrivacy extends TopLevel[blockedForPrivacy with Double]
-  
-  /* 0 */ @js.native
-  object notStreaming extends TopLevel[notStreaming with Double]
-  
-  /* 3 */ @js.native
-  object shutdown extends TopLevel[shutdown with Double]
-  
-  /* 1 */ @js.native
-  object streaming extends TopLevel[streaming with Double]
   
 }
 

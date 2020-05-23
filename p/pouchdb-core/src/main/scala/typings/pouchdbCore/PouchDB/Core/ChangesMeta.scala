@@ -20,7 +20,7 @@ object ChangesMeta {
     val __obj = js.Dynamic.literal()
     if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
     if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts.asInstanceOf[js.Any])
-    if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangesMeta]
   }
 }

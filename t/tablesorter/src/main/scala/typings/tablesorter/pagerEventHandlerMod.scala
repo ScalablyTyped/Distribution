@@ -1,6 +1,6 @@
 package typings.tablesorter
 
-import typings.jquery.JQuery_.TriggeredEvent
+import typings.jquery.JQuery.TriggeredEvent
 import typings.tablesorter.pagerConfigurationStoreMod.PagerConfigurationStore
 import typings.tablesorter.tablesorterConfigurationStoreMod.TablesorterConfigurationStore
 import scala.scalajs.js

@@ -14,9 +14,9 @@ trait PromoteResourceShareCreatedFromPolicyResponse extends js.Object {
 
 object PromoteResourceShareCreatedFromPolicyResponse {
   @scala.inline
-  def apply(returnValue: js.UndefOr[scala.Boolean] = js.undefined): PromoteResourceShareCreatedFromPolicyResponse = {
+  def apply(returnValue: js.UndefOr[Boolean] = js.undefined): PromoteResourceShareCreatedFromPolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(returnValue)) __obj.updateDynamic("returnValue")(returnValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnValue)) __obj.updateDynamic("returnValue")(returnValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromoteResourceShareCreatedFromPolicyResponse]
   }
 }

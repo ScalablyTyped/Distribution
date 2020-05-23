@@ -24,7 +24,7 @@ object GoogleActionsTransactionsV3OrderOptions {
     userInfoOptions: GoogleActionsTransactionsV3UserInfoOptions = null
   ): GoogleActionsTransactionsV3OrderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(requestDeliveryAddress)) __obj.updateDynamic("requestDeliveryAddress")(requestDeliveryAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestDeliveryAddress)) __obj.updateDynamic("requestDeliveryAddress")(requestDeliveryAddress.get.asInstanceOf[js.Any])
     if (userInfoOptions != null) __obj.updateDynamic("userInfoOptions")(userInfoOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3OrderOptions]
   }

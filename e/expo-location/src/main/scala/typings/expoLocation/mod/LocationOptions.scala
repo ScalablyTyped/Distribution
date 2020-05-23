@@ -18,21 +18,21 @@ object LocationOptions {
   @scala.inline
   def apply(
     accuracy: LocationAccuracy = null,
-    distanceInterval: Int | Double = null,
+    distanceInterval: js.UndefOr[Double] = js.undefined,
     enableHighAccuracy: js.UndefOr[Boolean] = js.undefined,
-    maximumAge: Int | Double = null,
+    maximumAge: js.UndefOr[Double] = js.undefined,
     mayShowUserSettingsDialog: js.UndefOr[Boolean] = js.undefined,
-    timeInterval: Int | Double = null,
-    timeout: Int | Double = null
+    timeInterval: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): LocationOptions = {
     val __obj = js.Dynamic.literal()
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (distanceInterval != null) __obj.updateDynamic("distanceInterval")(distanceInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy.asInstanceOf[js.Any])
-    if (maximumAge != null) __obj.updateDynamic("maximumAge")(maximumAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(mayShowUserSettingsDialog)) __obj.updateDynamic("mayShowUserSettingsDialog")(mayShowUserSettingsDialog.asInstanceOf[js.Any])
-    if (timeInterval != null) __obj.updateDynamic("timeInterval")(timeInterval.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceInterval)) __obj.updateDynamic("distanceInterval")(distanceInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumAge)) __obj.updateDynamic("maximumAge")(maximumAge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mayShowUserSettingsDialog)) __obj.updateDynamic("mayShowUserSettingsDialog")(mayShowUserSettingsDialog.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeInterval)) __obj.updateDynamic("timeInterval")(timeInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationOptions]
   }
 }

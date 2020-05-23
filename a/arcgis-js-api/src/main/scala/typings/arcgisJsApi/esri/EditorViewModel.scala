@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -174,8 +173,4 @@ trait EditorViewModel extends Accessor {
     */
   def startUpdateWorkflowAtMultipleFeatureSelection(): js.Promise[Unit] = js.native
 }
-
-@JSGlobal("__esri.EditorViewModel")
-@js.native
-object EditorViewModel extends TopLevel[EditorViewModelConstructor]
 

@@ -46,16 +46,16 @@ object UseSelectProps {
   def apply[Item](
     items: js.Array[Item],
     circularNavigation: js.UndefOr[Boolean] = js.undefined,
-    defaultHighlightedIndex: Int | Double = null,
+    defaultHighlightedIndex: js.UndefOr[Double] = js.undefined,
     defaultIsOpen: js.UndefOr[Boolean] = js.undefined,
     defaultSelectedItem: Item = null,
     environment: Environment = null,
     getA11ySelectionMessage: /* options */ A11yStatusMessageOptions[Item] => String = null,
     getA11yStatusMessage: /* options */ A11yStatusMessageOptions[Item] => String = null,
     getItemId: /* index */ Double => String = null,
-    highlightedIndex: Int | Double = null,
+    highlightedIndex: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    initialHighlightedIndex: Int | Double = null,
+    initialHighlightedIndex: js.UndefOr[Double] = js.undefined,
     initialIsOpen: js.UndefOr[Boolean] = js.undefined,
     initialSelectedItem: Item = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
@@ -72,20 +72,20 @@ object UseSelectProps {
     toggleButtonId: String = null
   ): UseSelectProps[Item] = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (!js.isUndefined(circularNavigation)) __obj.updateDynamic("circularNavigation")(circularNavigation.asInstanceOf[js.Any])
-    if (defaultHighlightedIndex != null) __obj.updateDynamic("defaultHighlightedIndex")(defaultHighlightedIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultIsOpen)) __obj.updateDynamic("defaultIsOpen")(defaultIsOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(circularNavigation)) __obj.updateDynamic("circularNavigation")(circularNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultHighlightedIndex)) __obj.updateDynamic("defaultHighlightedIndex")(defaultHighlightedIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultIsOpen)) __obj.updateDynamic("defaultIsOpen")(defaultIsOpen.get.asInstanceOf[js.Any])
     if (defaultSelectedItem != null) __obj.updateDynamic("defaultSelectedItem")(defaultSelectedItem.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (getA11ySelectionMessage != null) __obj.updateDynamic("getA11ySelectionMessage")(js.Any.fromFunction1(getA11ySelectionMessage))
     if (getA11yStatusMessage != null) __obj.updateDynamic("getA11yStatusMessage")(js.Any.fromFunction1(getA11yStatusMessage))
     if (getItemId != null) __obj.updateDynamic("getItemId")(js.Any.fromFunction1(getItemId))
-    if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightedIndex)) __obj.updateDynamic("highlightedIndex")(highlightedIndex.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initialHighlightedIndex != null) __obj.updateDynamic("initialHighlightedIndex")(initialHighlightedIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialIsOpen)) __obj.updateDynamic("initialIsOpen")(initialIsOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialHighlightedIndex)) __obj.updateDynamic("initialHighlightedIndex")(initialHighlightedIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialIsOpen)) __obj.updateDynamic("initialIsOpen")(initialIsOpen.get.asInstanceOf[js.Any])
     if (initialSelectedItem != null) __obj.updateDynamic("initialSelectedItem")(initialSelectedItem.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
     if (itemToString != null) __obj.updateDynamic("itemToString")(js.Any.fromFunction1(itemToString))
     if (labelId != null) __obj.updateDynamic("labelId")(labelId.asInstanceOf[js.Any])
     if (menuId != null) __obj.updateDynamic("menuId")(menuId.asInstanceOf[js.Any])

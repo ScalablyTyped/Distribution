@@ -20,10 +20,10 @@ object IVendorSettings {
     isWebkit: js.UndefOr[Boolean] = js.undefined
   ): IVendorSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isMoz)) __obj.updateDynamic("isMoz")(isMoz.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMs)) __obj.updateDynamic("isMs")(isMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpera)) __obj.updateDynamic("isOpera")(isOpera.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWebkit)) __obj.updateDynamic("isWebkit")(isWebkit.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMoz)) __obj.updateDynamic("isMoz")(isMoz.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMs)) __obj.updateDynamic("isMs")(isMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpera)) __obj.updateDynamic("isOpera")(isOpera.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWebkit)) __obj.updateDynamic("isWebkit")(isWebkit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVendorSettings]
   }
 }

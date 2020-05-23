@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait WebviewPanelOnDidChangeViewStateEvent extends js.Object {
   /**
-  		 * Webview panel whose view state changed.
-  		 */
+    * Webview panel whose view state changed.
+    */
   val webviewPanel: WebviewPanel
 }
 

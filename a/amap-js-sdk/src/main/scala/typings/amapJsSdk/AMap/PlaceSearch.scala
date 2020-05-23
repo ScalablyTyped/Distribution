@@ -1,14 +1,11 @@
 package typings.amapJsSdk.AMap
 
-import typings.amapJsSdk.AnonAutoFitView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.PlaceSearch")
 @js.native
-class PlaceSearch protected () extends js.Object {
-  def this(opts: AnonAutoFitView) = this()
+trait PlaceSearch extends js.Object {
   def clear(): Unit = js.native
   def detailOnAMAP(obj: js.Any): Unit = js.native
   def getDetails(

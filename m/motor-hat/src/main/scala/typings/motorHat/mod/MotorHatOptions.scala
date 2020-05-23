@@ -1,6 +1,6 @@
 package typings.motorHat.mod
 
-import typings.motorHat.AnonW2
+import typings.motorHat.anon.W2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,21 +36,21 @@ trait MotorHatOptions extends js.Object {
     * { W1: winding, W2: winding }. Each winding should be one of following: 'M1', 'M2', 'M3',
     * 'M4' depending on the port the stepper is connected to. Correct example: { W1: 'M3', W2: 'M1' }
     */
-  var steppers: js.UndefOr[js.Array[AnonW2]] = js.undefined
+  var steppers: js.UndefOr[js.Array[W2]] = js.undefined
 }
 
 object MotorHatOptions {
   @scala.inline
   def apply(
-    address: Int | Double = null,
-    busnum: Int | Double = null,
+    address: js.UndefOr[Double] = js.undefined,
+    busnum: js.UndefOr[Double] = js.undefined,
     dcs: js.Array[Motor] = null,
     servos: js.Array[Double] = null,
-    steppers: js.Array[AnonW2] = null
+    steppers: js.Array[W2] = null
   ): MotorHatOptions = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (busnum != null) __obj.updateDynamic("busnum")(busnum.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(busnum)) __obj.updateDynamic("busnum")(busnum.get.asInstanceOf[js.Any])
     if (dcs != null) __obj.updateDynamic("dcs")(dcs.asInstanceOf[js.Any])
     if (servos != null) __obj.updateDynamic("servos")(servos.asInstanceOf[js.Any])
     if (steppers != null) __obj.updateDynamic("steppers")(steppers.asInstanceOf[js.Any])

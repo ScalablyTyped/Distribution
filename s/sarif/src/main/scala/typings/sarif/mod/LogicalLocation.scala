@@ -46,19 +46,19 @@ object LogicalLocation {
   def apply(
     decoratedName: String = null,
     fullyQualifiedName: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     kind: String = null,
     name: String = null,
-    parentIndex: Int | Double = null,
+    parentIndex: js.UndefOr[Double] = js.undefined,
     properties: PropertyBag = null
   ): LogicalLocation = {
     val __obj = js.Dynamic.literal()
     if (decoratedName != null) __obj.updateDynamic("decoratedName")(decoratedName.asInstanceOf[js.Any])
     if (fullyQualifiedName != null) __obj.updateDynamic("fullyQualifiedName")(fullyQualifiedName.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentIndex != null) __obj.updateDynamic("parentIndex")(parentIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentIndex)) __obj.updateDynamic("parentIndex")(parentIndex.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogicalLocation]
   }

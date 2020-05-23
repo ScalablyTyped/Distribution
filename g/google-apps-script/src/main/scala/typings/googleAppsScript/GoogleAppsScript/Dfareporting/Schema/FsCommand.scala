@@ -15,18 +15,18 @@ trait FsCommand extends js.Object {
 object FsCommand {
   @scala.inline
   def apply(
-    left: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
     positionOption: String = null,
-    top: Int | Double = null,
-    windowHeight: Int | Double = null,
-    windowWidth: Int | Double = null
+    top: js.UndefOr[Double] = js.undefined,
+    windowHeight: js.UndefOr[Double] = js.undefined,
+    windowWidth: js.UndefOr[Double] = js.undefined
   ): FsCommand = {
     val __obj = js.Dynamic.literal()
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (positionOption != null) __obj.updateDynamic("positionOption")(positionOption.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (windowHeight != null) __obj.updateDynamic("windowHeight")(windowHeight.asInstanceOf[js.Any])
-    if (windowWidth != null) __obj.updateDynamic("windowWidth")(windowWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowHeight)) __obj.updateDynamic("windowHeight")(windowHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowWidth)) __obj.updateDynamic("windowWidth")(windowWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FsCommand]
   }
 }

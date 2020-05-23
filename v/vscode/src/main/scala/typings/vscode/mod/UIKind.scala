@@ -12,14 +12,14 @@ sealed trait UIKind extends js.Object
 @js.native
 object UIKind extends js.Object {
   /**
-  		 * Extensions are accessed from a desktop application.
-  		 */
+    * Extensions are accessed from a desktop application.
+    */
   @js.native
   sealed trait Desktop extends UIKind
   
   /**
-  		 * Extensions are accessed from a web browser.
-  		 */
+    * Extensions are accessed from a web browser.
+    */
   @js.native
   sealed trait Web extends UIKind
   

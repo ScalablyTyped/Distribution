@@ -38,7 +38,7 @@ object DiffOptions {
     commonColor: /* arg */ String => String = null,
     commonIndicator: String = null,
     commonLineTrailingSpaceColor: /* arg */ String => String = null,
-    contextLines: Int | Double = null,
+    contextLines: js.UndefOr[Double] = js.undefined,
     emptyFirstOrLastLinePlaceholder: String = null,
     expand: js.UndefOr[Boolean] = js.undefined,
     includeChangeCounts: js.UndefOr[Boolean] = js.undefined,
@@ -57,11 +57,11 @@ object DiffOptions {
     if (commonColor != null) __obj.updateDynamic("commonColor")(js.Any.fromFunction1(commonColor))
     if (commonIndicator != null) __obj.updateDynamic("commonIndicator")(commonIndicator.asInstanceOf[js.Any])
     if (commonLineTrailingSpaceColor != null) __obj.updateDynamic("commonLineTrailingSpaceColor")(js.Any.fromFunction1(commonLineTrailingSpaceColor))
-    if (contextLines != null) __obj.updateDynamic("contextLines")(contextLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextLines)) __obj.updateDynamic("contextLines")(contextLines.get.asInstanceOf[js.Any])
     if (emptyFirstOrLastLinePlaceholder != null) __obj.updateDynamic("emptyFirstOrLastLinePlaceholder")(emptyFirstOrLastLinePlaceholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeChangeCounts)) __obj.updateDynamic("includeChangeCounts")(includeChangeCounts.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitAnnotationLines)) __obj.updateDynamic("omitAnnotationLines")(omitAnnotationLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeChangeCounts)) __obj.updateDynamic("includeChangeCounts")(includeChangeCounts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitAnnotationLines)) __obj.updateDynamic("omitAnnotationLines")(omitAnnotationLines.get.asInstanceOf[js.Any])
     if (patchColor != null) __obj.updateDynamic("patchColor")(js.Any.fromFunction1(patchColor))
     __obj.asInstanceOf[DiffOptions]
   }

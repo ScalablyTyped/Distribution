@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait baseSeriesObject extends js.Object {
   /** @name baseSeriesObject.fullState */
-  var fullState: Double = js.native
+  var fullState: js.UndefOr[Double] = js.native
   /** @name baseSeriesObject.name */
-  var name: js.Any = js.native
+  var name: js.UndefOr[js.Any] = js.native
   /** @name baseSeriesObject.tag */
-  var tag: js.Any = js.native
+  var tag: js.UndefOr[js.Any] = js.native
   /** @name baseSeriesObject.type */
-  var `type`: String = js.native
+  var `type`: js.UndefOr[String] = js.native
   /** @name baseSeriesObject.clearHover() */
   def clearHover(): Unit = js.native
   /** @name baseSeriesObject.clearSelection() */

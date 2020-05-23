@@ -22,13 +22,13 @@ object DescribeDataRepositoryTasksRequest {
   @scala.inline
   def apply(
     Filters: DataRepositoryTaskFilters = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null,
     TaskIds: TaskIds = null
   ): DescribeDataRepositoryTasksRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (TaskIds != null) __obj.updateDynamic("TaskIds")(TaskIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDataRepositoryTasksRequest]

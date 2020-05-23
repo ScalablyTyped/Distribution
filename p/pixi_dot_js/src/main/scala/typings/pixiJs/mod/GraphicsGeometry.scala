@@ -18,7 +18,24 @@ import scala.scalajs.js.annotation._
 @JSImport("pixi.js", "GraphicsGeometry")
 @js.native
 class GraphicsGeometry ()
-  extends typings.pixiJs.PIXI.GraphicsGeometry
+  extends typings.pixiJs.PIXI.GraphicsGeometry {
+  /**
+    * Buffer used for position, color, texture IDs
+    *
+    * @member {PIXI.Buffer} PIXI.BatchGeometry#_buffer
+    * @protected
+    */
+  /* CompleteClass */
+  override var _buffer: typings.pixiJs.PIXI.Buffer = js.native
+  /**
+    * Index buffer data
+    *
+    * @member {PIXI.Buffer} PIXI.BatchGeometry#_indexBuffer
+    * @protected
+    */
+  /* CompleteClass */
+  override var _indexBuffer: typings.pixiJs.PIXI.Buffer = js.native
+}
 
 /* static members */
 @JSImport("pixi.js", "GraphicsGeometry")

@@ -31,17 +31,17 @@ trait ConnectionPoolConfigurationInfo extends js.Object {
 object ConnectionPoolConfigurationInfo {
   @scala.inline
   def apply(
-    ConnectionBorrowTimeout: Int | scala.Double = null,
+    ConnectionBorrowTimeout: js.UndefOr[Integer] = js.undefined,
     InitQuery: String = null,
-    MaxConnectionsPercent: Int | scala.Double = null,
-    MaxIdleConnectionsPercent: Int | scala.Double = null,
+    MaxConnectionsPercent: js.UndefOr[Integer] = js.undefined,
+    MaxIdleConnectionsPercent: js.UndefOr[Integer] = js.undefined,
     SessionPinningFilters: StringList = null
   ): ConnectionPoolConfigurationInfo = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionBorrowTimeout != null) __obj.updateDynamic("ConnectionBorrowTimeout")(ConnectionBorrowTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConnectionBorrowTimeout)) __obj.updateDynamic("ConnectionBorrowTimeout")(ConnectionBorrowTimeout.get.asInstanceOf[js.Any])
     if (InitQuery != null) __obj.updateDynamic("InitQuery")(InitQuery.asInstanceOf[js.Any])
-    if (MaxConnectionsPercent != null) __obj.updateDynamic("MaxConnectionsPercent")(MaxConnectionsPercent.asInstanceOf[js.Any])
-    if (MaxIdleConnectionsPercent != null) __obj.updateDynamic("MaxIdleConnectionsPercent")(MaxIdleConnectionsPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxConnectionsPercent)) __obj.updateDynamic("MaxConnectionsPercent")(MaxConnectionsPercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxIdleConnectionsPercent)) __obj.updateDynamic("MaxIdleConnectionsPercent")(MaxIdleConnectionsPercent.get.asInstanceOf[js.Any])
     if (SessionPinningFilters != null) __obj.updateDynamic("SessionPinningFilters")(SessionPinningFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionPoolConfigurationInfo]
   }

@@ -14,16 +14,16 @@ trait Frames extends js.Object {
 object Frames {
   @scala.inline
   def apply(
-    slideMomentumCheck: Int | Double = null,
-    sliderMomentumFrame: Int | Double = null,
-    snapViewTimeout: Int | Double = null,
-    zoomFrame: Int | Double = null
+    slideMomentumCheck: js.UndefOr[Double] = js.undefined,
+    sliderMomentumFrame: js.UndefOr[Double] = js.undefined,
+    snapViewTimeout: js.UndefOr[Double] = js.undefined,
+    zoomFrame: js.UndefOr[Double] = js.undefined
   ): Frames = {
     val __obj = js.Dynamic.literal()
-    if (slideMomentumCheck != null) __obj.updateDynamic("slideMomentumCheck")(slideMomentumCheck.asInstanceOf[js.Any])
-    if (sliderMomentumFrame != null) __obj.updateDynamic("sliderMomentumFrame")(sliderMomentumFrame.asInstanceOf[js.Any])
-    if (snapViewTimeout != null) __obj.updateDynamic("snapViewTimeout")(snapViewTimeout.asInstanceOf[js.Any])
-    if (zoomFrame != null) __obj.updateDynamic("zoomFrame")(zoomFrame.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideMomentumCheck)) __obj.updateDynamic("slideMomentumCheck")(slideMomentumCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderMomentumFrame)) __obj.updateDynamic("sliderMomentumFrame")(sliderMomentumFrame.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapViewTimeout)) __obj.updateDynamic("snapViewTimeout")(snapViewTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomFrame)) __obj.updateDynamic("zoomFrame")(zoomFrame.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frames]
   }
 }

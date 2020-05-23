@@ -70,14 +70,14 @@ object Volume {
     AvailabilityZone: String = null,
     Device: String = null,
     Ec2VolumeId: String = null,
-    Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    Encrypted: js.UndefOr[Boolean] = js.undefined,
     InstanceId: String = null,
-    Iops: Int | scala.Double = null,
+    Iops: js.UndefOr[Integer] = js.undefined,
     MountPoint: String = null,
     Name: String = null,
     RaidArrayId: String = null,
     Region: String = null,
-    Size: Int | scala.Double = null,
+    Size: js.UndefOr[Integer] = js.undefined,
     Status: String = null,
     VolumeId: String = null,
     VolumeType: String = null
@@ -86,14 +86,14 @@ object Volume {
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (Device != null) __obj.updateDynamic("Device")(Device.asInstanceOf[js.Any])
     if (Ec2VolumeId != null) __obj.updateDynamic("Ec2VolumeId")(Ec2VolumeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
+    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
     if (MountPoint != null) __obj.updateDynamic("MountPoint")(MountPoint.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (RaidArrayId != null) __obj.updateDynamic("RaidArrayId")(RaidArrayId.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
+    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
     if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])

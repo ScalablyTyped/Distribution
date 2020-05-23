@@ -1,7 +1,7 @@
 package typings.antvG2.mod
 
-import typings.antvG2.AnonEndAngle
-import typings.antvG2.AnonX
+import typings.antvG2.anon.EndAngle
+import typings.antvG2.anon.X
 import typings.antvG2.antvG2Strings.helix
 import typings.antvG2.antvG2Strings.polar
 import typings.antvG2.antvG2Strings.rect
@@ -25,24 +25,24 @@ class BashView () extends js.Object {
   @JSName("coord")
   def coord_helix(`type`: helix): Coordinate = js.native
   @JSName("coord")
-  def coord_helix(`type`: helix, coordConfig: AnonEndAngle): Coordinate = js.native
+  def coord_helix(`type`: helix, coordConfig: EndAngle): Coordinate = js.native
   @JSName("coord")
   def coord_polar(`type`: polar): Coordinate = js.native
   @JSName("coord")
-  def coord_polar(`type`: polar, coordConfig: AnonEndAngle): Coordinate = js.native
+  def coord_polar(`type`: polar, coordConfig: EndAngle): Coordinate = js.native
   @JSName("coord")
   def coord_rect(`type`: rect): Coordinate = js.native
   @JSName("coord")
-  def coord_rect(`type`: rect, coordConfig: AnonEndAngle): Coordinate = js.native
+  def coord_rect(`type`: rect, coordConfig: EndAngle): Coordinate = js.native
   @JSName("coord")
   def coord_theta(`type`: theta): Coordinate = js.native
   @JSName("coord")
-  def coord_theta(`type`: theta, coordConfig: AnonEndAngle): Coordinate = js.native
+  def coord_theta(`type`: theta, coordConfig: EndAngle): Coordinate = js.native
   def destroy(): Unit = js.native
   def edge(): Geom = js.native
   def filter(field: String, callback: js.Function1[/* value */ String | Double, Boolean]): this.type = js.native
   def getXScale[T](): T = js.native
-  def getXY(): AnonX = js.native
+  def getXY(): X = js.native
   def getYScales[T](): js.Array[T] = js.native
   def guide(): ChartGuide = js.native
   def heatmap(): Geom = js.native

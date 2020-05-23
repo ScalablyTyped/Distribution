@@ -19,10 +19,10 @@ object IntrospectionDirective {
     args: js.Array[IntrospectionInputValue],
     locations: js.Array[DirectiveLocationEnum],
     name: String,
-    description: Maybe[String] = null
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined
   ): IntrospectionDirective = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionDirective]
   }
 }

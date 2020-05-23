@@ -17,7 +17,7 @@ trait WorksheetCalculatedEventArgs extends js.Object {
     * The address of the range that completed calculation.
     If multiple ranges completed calculation, the string is a comma-separated list of those range addresses.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.11]
     */
   var address: String
   /**

@@ -73,10 +73,10 @@ object PutBotRequest {
     abortStatement: Statement = null,
     checksum: String = null,
     clarificationPrompt: Prompt = null,
-    createVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    createVersion: js.UndefOr[Boolean] = js.undefined,
     description: Description = null,
-    detectSentiment: js.UndefOr[scala.Boolean] = js.undefined,
-    idleSessionTTLInSeconds: Int | Double = null,
+    detectSentiment: js.UndefOr[Boolean] = js.undefined,
+    idleSessionTTLInSeconds: js.UndefOr[SessionTTL] = js.undefined,
     intents: IntentList = null,
     processBehavior: ProcessBehavior = null,
     tags: TagList = null,
@@ -86,10 +86,10 @@ object PutBotRequest {
     if (abortStatement != null) __obj.updateDynamic("abortStatement")(abortStatement.asInstanceOf[js.Any])
     if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     if (clarificationPrompt != null) __obj.updateDynamic("clarificationPrompt")(clarificationPrompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectSentiment)) __obj.updateDynamic("detectSentiment")(detectSentiment.asInstanceOf[js.Any])
-    if (idleSessionTTLInSeconds != null) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectSentiment)) __obj.updateDynamic("detectSentiment")(detectSentiment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(idleSessionTTLInSeconds)) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds.get.asInstanceOf[js.Any])
     if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
     if (processBehavior != null) __obj.updateDynamic("processBehavior")(processBehavior.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

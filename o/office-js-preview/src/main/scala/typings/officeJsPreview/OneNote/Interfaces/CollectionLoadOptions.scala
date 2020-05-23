@@ -22,10 +22,10 @@ trait CollectionLoadOptions extends js.Object {
 
 object CollectionLoadOptions {
   @scala.inline
-  def apply($skip: Int | Double = null, $top: Int | Double = null): CollectionLoadOptions = {
+  def apply($skip: js.UndefOr[Double] = js.undefined, $top: js.UndefOr[Double] = js.undefined): CollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if ($skip != null) __obj.updateDynamic("$skip")($skip.asInstanceOf[js.Any])
-    if ($top != null) __obj.updateDynamic("$top")($top.asInstanceOf[js.Any])
+    if (!js.isUndefined($skip)) __obj.updateDynamic("$skip")($skip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($top)) __obj.updateDynamic("$top")($top.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionLoadOptions]
   }
 }

@@ -23,14 +23,14 @@ trait DeploymentCanarySettings extends js.Object {
 object DeploymentCanarySettings {
   @scala.inline
   def apply(
-    percentTraffic: Int | scala.Double = null,
+    percentTraffic: js.UndefOr[Double] = js.undefined,
     stageVariableOverrides: MapOfStringToString = null,
-    useStageCache: js.UndefOr[scala.Boolean] = js.undefined
+    useStageCache: js.UndefOr[Boolean] = js.undefined
   ): DeploymentCanarySettings = {
     val __obj = js.Dynamic.literal()
-    if (percentTraffic != null) __obj.updateDynamic("percentTraffic")(percentTraffic.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentTraffic)) __obj.updateDynamic("percentTraffic")(percentTraffic.get.asInstanceOf[js.Any])
     if (stageVariableOverrides != null) __obj.updateDynamic("stageVariableOverrides")(stageVariableOverrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStageCache)) __obj.updateDynamic("useStageCache")(useStageCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStageCache)) __obj.updateDynamic("useStageCache")(useStageCache.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentCanarySettings]
   }
 }

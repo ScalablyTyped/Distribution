@@ -21,12 +21,12 @@ object Options {
     node: HTMLElement,
     properties: AnimateProperties,
     callback: EventHandler[transitionend] = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

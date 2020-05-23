@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxTokenBox object.
   */
-@JSGlobal("ASPxClientTokenBox")
 @js.native
-class ASPxClientTokenBox () extends ASPxClientComboBox {
+trait ASPxClientTokenBox extends ASPxClientComboBox {
   /**
     * For internal use only.
     */
@@ -78,16 +77,5 @@ class ASPxClientTokenBox () extends ASPxClientComboBox {
     * @param value A string that is the editor value.
     */
   def SetValue(value: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientTokenBox")
-@js.native
-object ASPxClientTokenBox extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientTokenBox type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientTokenBox = js.native
 }
 

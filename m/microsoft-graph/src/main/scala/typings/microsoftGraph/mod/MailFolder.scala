@@ -30,7 +30,7 @@ trait MailFolder extends Entity {
 object MailFolder {
   @scala.inline
   def apply(
-    childFolderCount: Int | Double = null,
+    childFolderCount: js.UndefOr[Double] = js.undefined,
     childFolders: js.Array[MailFolder] = null,
     displayName: String = null,
     id: String = null,
@@ -39,11 +39,11 @@ object MailFolder {
     multiValueExtendedProperties: js.Array[MultiValueLegacyExtendedProperty] = null,
     parentFolderId: String = null,
     singleValueExtendedProperties: js.Array[SingleValueLegacyExtendedProperty] = null,
-    totalItemCount: Int | Double = null,
-    unreadItemCount: Int | Double = null
+    totalItemCount: js.UndefOr[Double] = js.undefined,
+    unreadItemCount: js.UndefOr[Double] = js.undefined
   ): MailFolder = {
     val __obj = js.Dynamic.literal()
-    if (childFolderCount != null) __obj.updateDynamic("childFolderCount")(childFolderCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(childFolderCount)) __obj.updateDynamic("childFolderCount")(childFolderCount.get.asInstanceOf[js.Any])
     if (childFolders != null) __obj.updateDynamic("childFolders")(childFolders.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -52,8 +52,8 @@ object MailFolder {
     if (multiValueExtendedProperties != null) __obj.updateDynamic("multiValueExtendedProperties")(multiValueExtendedProperties.asInstanceOf[js.Any])
     if (parentFolderId != null) __obj.updateDynamic("parentFolderId")(parentFolderId.asInstanceOf[js.Any])
     if (singleValueExtendedProperties != null) __obj.updateDynamic("singleValueExtendedProperties")(singleValueExtendedProperties.asInstanceOf[js.Any])
-    if (totalItemCount != null) __obj.updateDynamic("totalItemCount")(totalItemCount.asInstanceOf[js.Any])
-    if (unreadItemCount != null) __obj.updateDynamic("unreadItemCount")(unreadItemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItemCount)) __obj.updateDynamic("totalItemCount")(totalItemCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unreadItemCount)) __obj.updateDynamic("unreadItemCount")(unreadItemCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailFolder]
   }
 }

@@ -19,11 +19,8 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   *
   */
-@JSGlobal("PIXI.SimpleRope")
 @js.native
-class SimpleRope protected () extends Mesh {
-  def this(texture: Texture, points: js.Array[Point]) = this()
-  def this(texture: Texture, points: js.Array[Point], textureScale: Double) = this()
+trait SimpleRope extends Mesh {
   /**
     * re-calculate vertices by rope points each frame
     *

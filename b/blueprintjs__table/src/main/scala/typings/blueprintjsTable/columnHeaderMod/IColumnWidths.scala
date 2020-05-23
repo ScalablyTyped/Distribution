@@ -13,14 +13,14 @@ trait IColumnWidths extends js.Object {
 object IColumnWidths {
   @scala.inline
   def apply(
-    defaultColumnWidth: Int | Double = null,
-    maxColumnWidth: Int | Double = null,
-    minColumnWidth: Int | Double = null
+    defaultColumnWidth: js.UndefOr[Double] = js.undefined,
+    maxColumnWidth: js.UndefOr[Double] = js.undefined,
+    minColumnWidth: js.UndefOr[Double] = js.undefined
   ): IColumnWidths = {
     val __obj = js.Dynamic.literal()
-    if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
-    if (maxColumnWidth != null) __obj.updateDynamic("maxColumnWidth")(maxColumnWidth.asInstanceOf[js.Any])
-    if (minColumnWidth != null) __obj.updateDynamic("minColumnWidth")(minColumnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultColumnWidth)) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxColumnWidth)) __obj.updateDynamic("maxColumnWidth")(maxColumnWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minColumnWidth)) __obj.updateDynamic("minColumnWidth")(minColumnWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnWidths]
   }
 }

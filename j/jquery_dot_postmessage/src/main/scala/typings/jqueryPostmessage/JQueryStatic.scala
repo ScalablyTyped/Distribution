@@ -2,7 +2,7 @@ package typings.jqueryPostmessage
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.MessageEvent
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait JQueryStatic extends js.Object {
     * @param target A reference to the other frame this window is attempting to communicate with. If omitted, defaults to `parent`.
     */
   def postMessage(message: String, targetUrl: String): Unit = js.native
-  def postMessage(message: String, targetUrl: String, target: Window_): Unit = js.native
+  def postMessage(message: String, targetUrl: String, target: Window): Unit = js.native
   /**
     * This method will call window.postMessage if available, setting the targetOrigin parameter to the base of the targetUrl parameter for maximum security in browsers that support it. If window.postMessage is not available, the target window’s location.hash will be used to pass the message. If an object is passed as the message param, it will be serialized into a string using the jQuery.param method.
     *
@@ -26,7 +26,7 @@ trait JQueryStatic extends js.Object {
     * @param target A reference to the other frame this window is attempting to communicate with. If omitted, defaults to `parent`.
     */
   def postMessage(message: StringDictionary[js.Any], targetUrl: String): Unit = js.native
-  def postMessage(message: StringDictionary[js.Any], targetUrl: String, target: Window_): Unit = js.native
+  def postMessage(message: StringDictionary[js.Any], targetUrl: String, target: Window): Unit = js.native
   /**
     * Register a single callback for either a window.postMessage call, if supported, or if unsupported, for any change in the current window location.hash. If window.postMessage is supported and sourceOrigin is specified, the source window will be checked against this for maximum security. If window.postMessage is unsupported, a polling loop will be started to watch for changes to the location.hash.
     *

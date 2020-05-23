@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Events extends js.Object
 
 /**
-	*	VoxImplant.Client general events
-	*/
+  *    VoxImplant.Client general events
+  */
 @JSImport("voximplant-websdk", "Events")
 @js.native
 object Events extends js.Object {

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.tooltipHostBaseMod
 
-import typings.officeUiFabricReact.AnonDelay
+import typings.officeUiFabricReact.anon.Delay
 import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHost
 import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.react.mod.Component
@@ -48,6 +48,6 @@ class TooltipHostBase protected ()
 @js.native
 object TooltipHostBase extends js.Object {
   var _currentVisibleTooltip: js.Any = js.native
-  var defaultProps: AnonDelay = js.native
+  var defaultProps: Delay = js.native
 }
 

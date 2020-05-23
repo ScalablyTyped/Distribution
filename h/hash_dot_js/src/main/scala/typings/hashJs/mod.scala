@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("hash.js", JSImport.Namespace)
 @js.native
-object mod extends TopLevel[Hash_]
+object mod extends TopLevel[Hash]
 

@@ -23,12 +23,12 @@ trait PlayerLatency extends js.Object {
 object PlayerLatency {
   @scala.inline
   def apply(
-    LatencyInMilliseconds: Int | scala.Double = null,
+    LatencyInMilliseconds: js.UndefOr[Float] = js.undefined,
     PlayerId: NonZeroAndMaxString = null,
     RegionIdentifier: NonZeroAndMaxString = null
   ): PlayerLatency = {
     val __obj = js.Dynamic.literal()
-    if (LatencyInMilliseconds != null) __obj.updateDynamic("LatencyInMilliseconds")(LatencyInMilliseconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(LatencyInMilliseconds)) __obj.updateDynamic("LatencyInMilliseconds")(LatencyInMilliseconds.get.asInstanceOf[js.Any])
     if (PlayerId != null) __obj.updateDynamic("PlayerId")(PlayerId.asInstanceOf[js.Any])
     if (RegionIdentifier != null) __obj.updateDynamic("RegionIdentifier")(RegionIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerLatency]

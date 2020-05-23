@@ -1,6 +1,6 @@
 package typings.jsforce.connectionMod
 
-import typings.jsforce.PartialPartialOAuth2Optio
+import typings.jsforce.anon.PartialPartialOAuth2Optio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ object ConnectionOptions {
     instanceUrl: String = null,
     logLevel: String = null,
     loginUrl: String = null,
-    maxRequest: Int | Double = null,
+    maxRequest: js.UndefOr[Double] = js.undefined,
     oauth2: PartialPartialOAuth2Optio = null,
     proxyUrl: String = null,
     redirectUri: String = null,
@@ -55,7 +55,7 @@ object ConnectionOptions {
     if (instanceUrl != null) __obj.updateDynamic("instanceUrl")(instanceUrl.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (loginUrl != null) __obj.updateDynamic("loginUrl")(loginUrl.asInstanceOf[js.Any])
-    if (maxRequest != null) __obj.updateDynamic("maxRequest")(maxRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRequest)) __obj.updateDynamic("maxRequest")(maxRequest.get.asInstanceOf[js.Any])
     if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2.asInstanceOf[js.Any])
     if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl.asInstanceOf[js.Any])
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])

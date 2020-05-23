@@ -135,7 +135,6 @@ object default extends js.Object {
     * @throws Error if value is null
     */
   def of[T](value: T): Optional[T] = js.native
-  def ofNullable[T](): Optional[T] = js.native
   /**
     * Returns an Optional describing the given value, if non-null, otherwise returns an empty Optional.
     *
@@ -143,6 +142,7 @@ object default extends js.Object {
     * @param value the possibly-null value to describe
     * @return an Optional with a present value if the specified value is non-null, otherwise an empty Optional
     */
+  def ofNullable[T](): Optional[T] = js.native
   def ofNullable[T](value: T): Optional[T] = js.native
 }
 

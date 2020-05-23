@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 /** The version of the TypeScript compiler release */
 @JSImport("typedoc", "TypeScript.version")
 @js.native
-object version extends TopLevel[String]
+object version
+  extends TopLevel[/* "3.9" */ String]
 

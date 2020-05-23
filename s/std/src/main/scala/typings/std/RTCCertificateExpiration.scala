@@ -10,9 +10,9 @@ trait RTCCertificateExpiration extends js.Object {
 
 object RTCCertificateExpiration {
   @scala.inline
-  def apply(expires: Int | Double = null): RTCCertificateExpiration = {
+  def apply(expires: js.UndefOr[Double] = js.undefined): RTCCertificateExpiration = {
     val __obj = js.Dynamic.literal()
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCCertificateExpiration]
   }
 }

@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object GenericTileMode extends js.Object {
   
   @js.native
   sealed trait HeaderMode extends GenericTileMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GenericTileMode with Double] = js.native
-  /* 0 */ @js.native
-  object ContentMode extends TopLevel[ContentMode with Double]
-  
-  /* 1 */ @js.native
-  object HeaderMode extends TopLevel[HeaderMode with Double]
   
 }
 

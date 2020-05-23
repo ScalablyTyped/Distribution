@@ -21,7 +21,7 @@ trait ListJobsRequest extends js.Object {
   /**
     * A pagination token to request the next page of results. Use the token that Amazon S3 returned in the NextToken element of the ListJobsResult from the previous List Jobs request.
     */
-  var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var NextToken: js.UndefOr[StringForNextToken] = js.native
 }
 
 object ListJobsRequest {
@@ -29,12 +29,12 @@ object ListJobsRequest {
   def apply(
     AccountId: AccountId,
     JobStatuses: JobStatusList = null,
-    MaxResults: Int | Double = null,
-    NextToken: NonEmptyMaxLength1024String = null
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: StringForNextToken = null
   ): ListJobsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
     if (JobStatuses != null) __obj.updateDynamic("JobStatuses")(JobStatuses.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJobsRequest]
   }

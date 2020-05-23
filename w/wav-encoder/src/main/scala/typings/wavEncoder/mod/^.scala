@@ -1,7 +1,7 @@
 package typings.wavEncoder.mod
 
 import typings.std.ArrayBuffer
-import typings.wavEncoder.AnonCall
+import typings.wavEncoder.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("encode")
-  var encode_Original: AnonCall = js.native
+  var encode_Original: Call = js.native
   def encode(audioData: AudioData): js.Promise[ArrayBuffer] = js.native
   def encode(audioData: AudioData, opts: Options): js.Promise[ArrayBuffer] = js.native
 }

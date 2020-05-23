@@ -7,15 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the corresponding event.
   */
-@JSGlobal("ASPxClientCardViewFocusEventArgs")
-@js.native
-/**
-  * Initializes a new instance of the ASPxClientCardViewFocusEventArgs class.
-  */
-class ASPxClientCardViewFocusEventArgs () extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientCardViewFocusEventArgs extends ASPxClientProcessingModeEventArgs {
   /**
     * Gets whether card focusing has been changed on the server.
     */
-  var isChangedOnServer: Boolean = js.native
+  var isChangedOnServer: Boolean
+}
+
+object ASPxClientCardViewFocusEventArgs {
+  @scala.inline
+  def apply(isChangedOnServer: Boolean, processOnServer: Boolean): ASPxClientCardViewFocusEventArgs = {
+    val __obj = js.Dynamic.literal(isChangedOnServer = isChangedOnServer.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCardViewFocusEventArgs]
+  }
 }
 

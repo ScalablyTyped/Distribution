@@ -964,13 +964,11 @@ object googleMapsStrings {
   
   @js.native
   sealed trait street_address
-    extends AddressType
+    extends GeocodingAddressComponentType
        with PlaceType2
   
   @js.native
-  sealed trait street_number
-    extends GeocodingAddressComponentType
-       with PlaceType2
+  sealed trait street_number extends PlaceType2
   
   @js.native
   sealed trait sublocality

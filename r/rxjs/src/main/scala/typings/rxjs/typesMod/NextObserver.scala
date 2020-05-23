@@ -20,7 +20,7 @@ object NextObserver {
     error: /* err */ js.Any => Unit = null
   ): NextObserver[T] = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.get.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     __obj.asInstanceOf[NextObserver[T]]

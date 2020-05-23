@@ -33,7 +33,7 @@ object DropdownMenuProps {
     if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownMenuProps]
   }
 }

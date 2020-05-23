@@ -10,35 +10,41 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.PackerForm")
-@js.native
-/**
-  * Default Constructor.
-  */
-class PackerForm () extends js.Object {
-  /**
-    * Initializer Constructor.
-    *
-    * @param instanceFormArray Form of Instances to pack.
-    * @param wrapperArray Type of Wrappers to be used.
-    */
-  def this(instanceFormArray: InstanceFormArray, wrapperArray: WrapperArray) = this()
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ trait PackerForm extends js.Object {
   /**
     * Form of Instances to pack.
     */
-  var instanceFormArray: js.Any = js.native
+  var instanceFormArray: js.Any
   /**
     * Type of Wrappers to be used.
     */
-  var wrapperArray: js.Any = js.native
-  def TAG(): String = js.native
+  var wrapperArray: js.Any
+  def TAG(): String
   def construct(
     xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
-  ): Unit = js.native
-  def getInstanceFormArray(): InstanceFormArray = js.native
-  def getWrapperArray(): WrapperArray = js.native
-  def optimize(): WrapperArray = js.native
-  def toPacker(): Packer = js.native
-  def toXML(): js.Any = js.native
+  ): Unit
+  def getInstanceFormArray(): InstanceFormArray
+  def getWrapperArray(): WrapperArray
+  def optimize(): WrapperArray
+  def toPacker(): Packer
+  def toXML(): js.Any
+}
+
+object PackerForm {
+  @scala.inline
+  def apply(
+    TAG: () => String,
+    construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit,
+    getInstanceFormArray: () => InstanceFormArray,
+    getWrapperArray: () => WrapperArray,
+    instanceFormArray: js.Any,
+    optimize: () => WrapperArray,
+    toPacker: () => Packer,
+    toXML: () => js.Any,
+    wrapperArray: js.Any
+  ): PackerForm = {
+    val __obj = js.Dynamic.literal(TAG = js.Any.fromFunction0(TAG), construct = js.Any.fromFunction1(construct), getInstanceFormArray = js.Any.fromFunction0(getInstanceFormArray), getWrapperArray = js.Any.fromFunction0(getWrapperArray), instanceFormArray = instanceFormArray.asInstanceOf[js.Any], optimize = js.Any.fromFunction0(optimize), toPacker = js.Any.fromFunction0(toPacker), toXML = js.Any.fromFunction0(toXML), wrapperArray = wrapperArray.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PackerForm]
+  }
 }
 

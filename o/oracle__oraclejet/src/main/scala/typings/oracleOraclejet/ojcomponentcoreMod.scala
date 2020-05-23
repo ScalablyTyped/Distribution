@@ -1,5 +1,6 @@
 package typings.oracleOraclejet
 
+import typings.oracleOraclejet.anon.InitialRender
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +13,6 @@ object ojcomponentcoreMod extends js.Object {
   def subtreeDetached(node: Element): Unit = js.native
   def subtreeHidden(node: Element): Unit = js.native
   def subtreeShown(node: Element): Unit = js.native
-  def subtreeShown(node: Element, options: AnonInitialRender): Unit = js.native
+  def subtreeShown(node: Element, options: InitialRender): Unit = js.native
 }
 

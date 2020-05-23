@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System.RemoteSystems
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object RemoteSystemWatcherError extends js.Object {
   /** Discovery stopped for an unknown reason. */
   @js.native
   sealed trait unknown extends RemoteSystemWatcherError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RemoteSystemWatcherError with Double] = js.native
-  /* 2 */ @js.native
-  object authenticationError extends TopLevel[authenticationError with Double]
-  
-  /* 1 */ @js.native
-  object internetNotAvailable extends TopLevel[internetNotAvailable with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

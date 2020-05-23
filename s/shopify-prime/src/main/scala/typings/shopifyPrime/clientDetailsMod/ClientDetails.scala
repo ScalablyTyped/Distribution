@@ -40,7 +40,7 @@ object ClientDetails {
     browser_height: String = null,
     browser_ip: String = null,
     browser_width: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     session_height: String = null,
     user_agent: String = null
   ): ClientDetails = {
@@ -50,7 +50,7 @@ object ClientDetails {
     if (browser_height != null) __obj.updateDynamic("browser_height")(browser_height.asInstanceOf[js.Any])
     if (browser_ip != null) __obj.updateDynamic("browser_ip")(browser_ip.asInstanceOf[js.Any])
     if (browser_width != null) __obj.updateDynamic("browser_width")(browser_width.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (session_height != null) __obj.updateDynamic("session_height")(session_height.asInstanceOf[js.Any])
     if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientDetails]

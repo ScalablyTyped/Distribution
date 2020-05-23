@@ -99,7 +99,7 @@ object TableDescription {
     AttributeDefinitions: js.Array[AttributeDefinition] | Iterable[AttributeDefinition] = null,
     CreationDateTime: Date | String | Double = null,
     GlobalSecondaryIndexes: js.Array[GlobalSecondaryIndexDescription] | Iterable[GlobalSecondaryIndexDescription] = null,
-    ItemCount: Int | Double = null,
+    ItemCount: js.UndefOr[Double] = js.undefined,
     KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement] = null,
     LatestStreamArn: String = null,
     LatestStreamLabel: String = null,
@@ -111,14 +111,14 @@ object TableDescription {
     TableArn: String = null,
     TableId: String = null,
     TableName: String = null,
-    TableSizeBytes: Int | Double = null,
+    TableSizeBytes: js.UndefOr[Double] = js.undefined,
     TableStatus: CREATING | UPDATING | DELETING | ACTIVE | String = null
   ): TableDescription = {
     val __obj = js.Dynamic.literal()
     if (AttributeDefinitions != null) __obj.updateDynamic("AttributeDefinitions")(AttributeDefinitions.asInstanceOf[js.Any])
     if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime.asInstanceOf[js.Any])
     if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes.asInstanceOf[js.Any])
-    if (ItemCount != null) __obj.updateDynamic("ItemCount")(ItemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount.get.asInstanceOf[js.Any])
     if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema.asInstanceOf[js.Any])
     if (LatestStreamArn != null) __obj.updateDynamic("LatestStreamArn")(LatestStreamArn.asInstanceOf[js.Any])
     if (LatestStreamLabel != null) __obj.updateDynamic("LatestStreamLabel")(LatestStreamLabel.asInstanceOf[js.Any])
@@ -130,7 +130,7 @@ object TableDescription {
     if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn.asInstanceOf[js.Any])
     if (TableId != null) __obj.updateDynamic("TableId")(TableId.asInstanceOf[js.Any])
     if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
-    if (TableSizeBytes != null) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TableSizeBytes)) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes.get.asInstanceOf[js.Any])
     if (TableStatus != null) __obj.updateDynamic("TableStatus")(TableStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDescription]
   }

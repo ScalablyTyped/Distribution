@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.ColorScale")
 @js.native
-class ColorScale protected () extends js.Object {
+trait ColorScale extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("AppliesTo")
   val AppliesTo_Original: Range = js.native

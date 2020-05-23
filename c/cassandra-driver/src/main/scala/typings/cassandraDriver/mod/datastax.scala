@@ -25,6 +25,15 @@ object datastax extends js.Object {
     def asTimestamp(value: Date): js.Object = js.native
     def asUdt(value: js.Object): js.Object = js.native
     @js.native
+    object direction extends js.Object {
+      val both: EnumValue = js.native
+      // `in` is a reserved word
+      @JSName("in_")
+      val in: EnumValue = js.native
+      val out: EnumValue = js.native
+    }
+    
+    @js.native
     object t extends js.Object {
       val id: EnumValue = js.native
       val key: EnumValue = js.native

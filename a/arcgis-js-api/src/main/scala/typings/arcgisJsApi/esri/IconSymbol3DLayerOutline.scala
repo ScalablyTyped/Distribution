@@ -34,14 +34,14 @@ object IconSymbol3DLayerOutline {
     color: Color_ = null,
     get: /* propertyName */ String => _ = null,
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, IconSymbol3DLayerOutline]) with (js.Function1[/* props */ HashMap[_], IconSymbol3DLayerOutline]) = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): IconSymbol3DLayerOutline = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
     if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[IconSymbol3DLayerOutline]
   }

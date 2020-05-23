@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The Device object represents an active connection to an imaging device. */
-@JSGlobal("WIA.Device")
 @js.native
-class Device protected () extends js.Object {
+trait Device extends js.Object {
   /** A collection of all commands for this imaging device */
   @JSName("Commands")
   val Commands_Original: DeviceCommands = js.native

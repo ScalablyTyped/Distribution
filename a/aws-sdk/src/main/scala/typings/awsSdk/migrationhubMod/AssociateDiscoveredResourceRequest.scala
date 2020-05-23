@@ -30,10 +30,10 @@ object AssociateDiscoveredResourceRequest {
     DiscoveredResource: DiscoveredResource,
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream,
-    DryRun: js.UndefOr[Boolean] = js.undefined
+    DryRun: js.UndefOr[DryRun] = js.undefined
   ): AssociateDiscoveredResourceRequest = {
     val __obj = js.Dynamic.literal(DiscoveredResource = DiscoveredResource.asInstanceOf[js.Any], MigrationTaskName = MigrationTaskName.asInstanceOf[js.Any], ProgressUpdateStream = ProgressUpdateStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateDiscoveredResourceRequest]
   }
 }

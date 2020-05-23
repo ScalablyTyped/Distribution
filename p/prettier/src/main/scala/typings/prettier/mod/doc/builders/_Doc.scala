@@ -1,6 +1,6 @@
 package typings.prettier.mod.doc.builders
 
-import typings.prettier.AnonType
+import typings.prettier.anon.Type
 import typings.prettier.prettierStrings.`break-parent`
 import typings.prettier.prettierStrings.`if-break`
 import typings.prettier.prettierStrings.`line-suffix-boundary`
@@ -19,7 +19,7 @@ object _Doc {
     __obj.asInstanceOf[_Doc]
   }
   @scala.inline
-  def Align_(contents: Doc, n: Double | String | AnonType, `type`: typings.prettier.prettierStrings.align): _Doc = {
+  def Align_(contents: Doc, n: Double | String | Type, `type`: typings.prettier.prettierStrings.align): _Doc = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
@@ -80,9 +80,9 @@ object _Doc {
   ): _Doc = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard.asInstanceOf[js.Any])
-    if (!js.isUndefined(literal)) __obj.updateDynamic("literal")(literal.asInstanceOf[js.Any])
-    if (!js.isUndefined(soft)) __obj.updateDynamic("soft")(soft.asInstanceOf[js.Any])
+    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(literal)) __obj.updateDynamic("literal")(literal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(soft)) __obj.updateDynamic("soft")(soft.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
   }
 }

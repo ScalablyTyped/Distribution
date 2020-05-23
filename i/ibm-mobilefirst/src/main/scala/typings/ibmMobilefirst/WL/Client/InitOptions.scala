@@ -44,7 +44,7 @@ object InitOptions {
     autoHideSplash: js.UndefOr[Boolean] = js.undefined,
     connectOnStartup: js.UndefOr[Boolean] = js.undefined,
     enableLogger: js.UndefOr[Boolean] = js.undefined,
-    heartBeatIntervalInSecs: Int | Double = null,
+    heartBeatIntervalInSecs: js.UndefOr[Double] = js.undefined,
     invocationContext: js.Any = null,
     messages: String = null,
     onConnectionFailure: /* response */ FailureResponse => Unit = null,
@@ -57,15 +57,15 @@ object InitOptions {
     onUnsupportedBrowser: /* response */ FailureResponse => Unit = null,
     onUnsupportedVersion: /* response */ FailureResponse => Unit = null,
     onUserInstanceAccessViolation: /* response */ FailureResponse => Unit = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     validateArguments: js.UndefOr[Boolean] = js.undefined
   ): InitOptions = {
     val __obj = js.Dynamic.literal(onGetCustomDeviceProvisioningProperties = js.Any.fromFunction1(onGetCustomDeviceProvisioningProperties))
     if (authenticator != null) __obj.updateDynamic("authenticator")(authenticator.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHideSplash)) __obj.updateDynamic("autoHideSplash")(autoHideSplash.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectOnStartup)) __obj.updateDynamic("connectOnStartup")(connectOnStartup.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLogger)) __obj.updateDynamic("enableLogger")(enableLogger.asInstanceOf[js.Any])
-    if (heartBeatIntervalInSecs != null) __obj.updateDynamic("heartBeatIntervalInSecs")(heartBeatIntervalInSecs.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideSplash)) __obj.updateDynamic("autoHideSplash")(autoHideSplash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectOnStartup)) __obj.updateDynamic("connectOnStartup")(connectOnStartup.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLogger)) __obj.updateDynamic("enableLogger")(enableLogger.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartBeatIntervalInSecs)) __obj.updateDynamic("heartBeatIntervalInSecs")(heartBeatIntervalInSecs.get.asInstanceOf[js.Any])
     if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (onConnectionFailure != null) __obj.updateDynamic("onConnectionFailure")(js.Any.fromFunction1(onConnectionFailure))
@@ -78,8 +78,8 @@ object InitOptions {
     if (onUnsupportedBrowser != null) __obj.updateDynamic("onUnsupportedBrowser")(js.Any.fromFunction1(onUnsupportedBrowser))
     if (onUnsupportedVersion != null) __obj.updateDynamic("onUnsupportedVersion")(js.Any.fromFunction1(onUnsupportedVersion))
     if (onUserInstanceAccessViolation != null) __obj.updateDynamic("onUserInstanceAccessViolation")(js.Any.fromFunction1(onUserInstanceAccessViolation))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateArguments)) __obj.updateDynamic("validateArguments")(validateArguments.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateArguments)) __obj.updateDynamic("validateArguments")(validateArguments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

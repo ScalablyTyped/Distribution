@@ -16,9 +16,9 @@ trait BorderRightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exte
 
 object BorderRightProps {
   @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](borderRight: ResponsiveValue[TVal, ThemeType] = null): BorderRightProps[ThemeType, TVal] = {
+  def apply[ThemeType, TVal](borderRight: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined): BorderRightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRight)) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderRightProps[ThemeType, TVal]]
   }
 }

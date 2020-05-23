@@ -26,7 +26,7 @@ object PropsType {
     instanceId: Double,
     tabs: js.Array[TabData],
     onTabClick: (/* tab */ TabData, /* index */ Double) => Unit = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     prefixCls: String = null,
     renderTab: /* tab */ TabData => ReactNode = null,
     renderUnderline: /* style */ CSSProperties | js.Any => ReactNode = null,
@@ -39,7 +39,7 @@ object PropsType {
   ): PropsType = {
     val __obj = js.Dynamic.literal(activeTab = activeTab.asInstanceOf[js.Any], animated = animated.asInstanceOf[js.Any], goToTab = js.Any.fromFunction1(goToTab), instanceId = instanceId.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
     if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction2(onTabClick))
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (renderTab != null) __obj.updateDynamic("renderTab")(js.Any.fromFunction1(renderTab))
     if (renderUnderline != null) __obj.updateDynamic("renderUnderline")(js.Any.fromFunction1(renderUnderline))

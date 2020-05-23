@@ -1,8 +1,9 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonRefresherContentElement
+import typings.ionicCore.componentsMod.global.HTMLIonRefresherContentElement
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +29,7 @@ object refresherContentMod extends js.Object {
       *
       * For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
       */
-    var pullingText: js.UndefOr[String] = js.native
+    var pullingText: js.UndefOr[String | IonicSafeString] = js.native
     /**
       * An animated SVG spinner that shows when refreshing begins
       */
@@ -42,7 +43,7 @@ object refresherContentMod extends js.Object {
       *
       * For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
       */
-    var refreshingText: js.UndefOr[String] = js.native
+    var refreshingText: js.UndefOr[String | IonicSafeString] = js.native
     @JSName("componentWillLoad")
     def componentWillLoad_MRefresherContent(): Unit = js.native
     @JSName("render")

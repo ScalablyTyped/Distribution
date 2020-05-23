@@ -14,11 +14,10 @@ trait ClearableLabeledInput
   /** @private Do not use out of this class. We do not promise this is always keep. */
   var containerRef: js.Any = js.native
   var onInputMouseUp: MouseEventHandler[Element] = js.native
-  def renderClearIcon(prefixCls: String): typings.react.mod._Global_.JSX.Element | Null = js.native
-  def renderClearableLabeledInput(): typings.react.mod._Global_.JSX.Element = js.native
-  def renderInputWithLabel(prefixCls: String, labeledElement: ReactElement): typings.react.mod._Global_.JSX.Element = js.native
-  def renderLabeledIcon(prefixCls: String, element: ReactElement): typings.react.mod._Global_.JSX.Element = js.native
-  def renderSuffix(prefixCls: String): typings.react.mod._Global_.JSX.Element | Null = js.native
-  def renderTextAreaWithClearIcon(prefixCls: String, element: ReactElement): typings.react.mod._Global_.JSX.Element = js.native
+  def renderClearIcon(prefixCls: String): typings.react.mod.global.JSX.Element | Null = js.native
+  def renderInputWithLabel(prefixCls: String, labeledElement: ReactElement): typings.react.mod.global.JSX.Element = js.native
+  def renderLabeledIcon(prefixCls: String, element: ReactElement): typings.react.mod.global.JSX.Element = js.native
+  def renderSuffix(prefixCls: String): typings.react.mod.global.JSX.Element | Null = js.native
+  def renderTextAreaWithClearIcon(prefixCls: String, element: ReactElement): typings.react.mod.global.JSX.Element = js.native
 }
 

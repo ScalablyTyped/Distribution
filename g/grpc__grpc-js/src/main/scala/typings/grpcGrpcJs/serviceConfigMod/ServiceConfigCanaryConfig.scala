@@ -17,12 +17,12 @@ object ServiceConfigCanaryConfig {
     serviceConfig: ServiceConfig,
     clientHostname: js.Array[String] = null,
     clientLanguage: js.Array[String] = null,
-    percentage: Int | Double = null
+    percentage: js.UndefOr[Double] = js.undefined
   ): ServiceConfigCanaryConfig = {
     val __obj = js.Dynamic.literal(serviceConfig = serviceConfig.asInstanceOf[js.Any])
     if (clientHostname != null) __obj.updateDynamic("clientHostname")(clientHostname.asInstanceOf[js.Any])
     if (clientLanguage != null) __obj.updateDynamic("clientLanguage")(clientLanguage.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceConfigCanaryConfig]
   }
 }

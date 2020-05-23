@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,8 +44,4 @@ trait HTMLTableRowElement extends HTMLElement {
   def insertCell(): HTMLTableDataCellElement = js.native
   def insertCell(index: Double): HTMLTableDataCellElement = js.native
 }
-
-@JSGlobal("HTMLTableRowElement")
-@js.native
-object HTMLTableRowElement extends Instantiable0[HTMLTableRowElement]
 

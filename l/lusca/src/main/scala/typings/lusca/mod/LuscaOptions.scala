@@ -35,7 +35,7 @@ object LuscaOptions {
     if (csp != null) __obj.updateDynamic("csp")(csp.asInstanceOf[js.Any])
     if (csrf != null) __obj.updateDynamic("csrf")(csrf.asInstanceOf[js.Any])
     if (hsts != null) __obj.updateDynamic("hsts")(hsts.asInstanceOf[js.Any])
-    if (!js.isUndefined(nosniff)) __obj.updateDynamic("nosniff")(nosniff.asInstanceOf[js.Any])
+    if (!js.isUndefined(nosniff)) __obj.updateDynamic("nosniff")(nosniff.get.asInstanceOf[js.Any])
     if (p3p != null) __obj.updateDynamic("p3p")(p3p.asInstanceOf[js.Any])
     if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
     if (xframe != null) __obj.updateDynamic("xframe")(xframe.asInstanceOf[js.Any])

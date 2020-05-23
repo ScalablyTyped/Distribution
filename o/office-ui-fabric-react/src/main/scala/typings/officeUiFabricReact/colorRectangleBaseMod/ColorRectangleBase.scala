@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.colorRectangleBaseMod
 
-import typings.officeUiFabricReact.PartialIColorRectanglePro
-import typings.officeUiFabricReact.ReadonlyIColorRectanglePr
-import typings.officeUiFabricReact.ReadonlyIColorRectangleSt
+import typings.officeUiFabricReact.anon.PartialIColorRectanglePro
+import typings.officeUiFabricReact.anon.ReadonlyIColorRectanglePr
+import typings.officeUiFabricReact.anon.ReadonlyIColorRectangleSt
 import typings.officeUiFabricReact.colorRectangleTypesMod.IColorRectangle
 import typings.officeUiFabricReact.colorRectangleTypesMod.IColorRectangleProps
 import typings.officeUiFabricReact.interfacesMod.IColor

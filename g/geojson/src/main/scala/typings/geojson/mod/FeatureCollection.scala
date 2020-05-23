@@ -12,7 +12,7 @@ trait FeatureCollection[G /* <: Geometry | Null */, P] extends GeoJsonObject {
 
 object FeatureCollection {
   @scala.inline
-  def apply[G /* <: Geometry | Null */, P](
+  def apply[G, P](
     features: js.Array[Feature[G, P]],
     `type`: typings.geojson.geojsonStrings.FeatureCollection,
     bbox: BBox = null

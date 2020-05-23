@@ -15,8 +15,7 @@ trait NetworkInterfaceBase extends js.Object {
 object NetworkInterfaceBase {
   @scala.inline
   def apply(address: String, internal: Boolean, mac: String, netmask: String, cidr: String = null): NetworkInterfaceBase = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any])
-    if (cidr != null) __obj.updateDynamic("cidr")(cidr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], cidr = cidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfaceBase]
   }
 }

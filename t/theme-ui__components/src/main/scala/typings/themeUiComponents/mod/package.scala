@@ -32,7 +32,7 @@ package object mod {
   type FieldProps[T /* <: typings.react.mod.ElementType[_] */] = typings.themeUiComponents.mod.FieldOwnProps with (typings.themeUiComponents.mod.Omit[
     typings.react.mod.ComponentProps[T], 
     typings.themeUiComponents.themeUiComponentsStrings.as | typings.themeUiComponents.themeUiComponentsStrings.label | typings.themeUiComponents.themeUiComponentsStrings.name
-  ]) with typings.themeUiComponents.AnonAs[T]
+  ]) with typings.themeUiComponents.anon.As[T]
   type FlexProps = typings.themeUiComponents.mod.BoxProps
   type FlexStyleProps = typings.themeUiComponents.mod.BoxOwnProps
   type ForwardRef[T, P] = typings.react.mod.ForwardRefExoticComponent[typings.react.mod.PropsWithoutRef[P] with typings.react.mod.RefAttributes[T]]

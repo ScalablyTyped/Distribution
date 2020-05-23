@@ -32,16 +32,16 @@ object ClusterScalingConfiguration {
   @scala.inline
   def apply(
     autoPause: js.UndefOr[Boolean] = js.undefined,
-    maxCapacity: Int | Double = null,
-    minCapacity: Int | Double = null,
-    secondsUntilAutoPause: Int | Double = null,
+    maxCapacity: js.UndefOr[Double] = js.undefined,
+    minCapacity: js.UndefOr[Double] = js.undefined,
+    secondsUntilAutoPause: js.UndefOr[Double] = js.undefined,
     timeoutAction: String = null
   ): ClusterScalingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPause)) __obj.updateDynamic("autoPause")(autoPause.asInstanceOf[js.Any])
-    if (maxCapacity != null) __obj.updateDynamic("maxCapacity")(maxCapacity.asInstanceOf[js.Any])
-    if (minCapacity != null) __obj.updateDynamic("minCapacity")(minCapacity.asInstanceOf[js.Any])
-    if (secondsUntilAutoPause != null) __obj.updateDynamic("secondsUntilAutoPause")(secondsUntilAutoPause.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPause)) __obj.updateDynamic("autoPause")(autoPause.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCapacity)) __obj.updateDynamic("maxCapacity")(maxCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCapacity)) __obj.updateDynamic("minCapacity")(minCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondsUntilAutoPause)) __obj.updateDynamic("secondsUntilAutoPause")(secondsUntilAutoPause.get.asInstanceOf[js.Any])
     if (timeoutAction != null) __obj.updateDynamic("timeoutAction")(timeoutAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterScalingConfiguration]
   }

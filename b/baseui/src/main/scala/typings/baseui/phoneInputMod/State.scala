@@ -1,6 +1,6 @@
 package typings.baseui.phoneInputMod
 
-import typings.baseui.ReadonlyCountry
+import typings.baseui.anon.ReadonlyCountry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

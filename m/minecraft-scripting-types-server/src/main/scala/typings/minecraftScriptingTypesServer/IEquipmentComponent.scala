@@ -1,5 +1,6 @@
 package typings.minecraftScriptingTypesServer
 
+import typings.minecraftScriptingTypesServer.anon.Dropchance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait IEquipmentComponent extends js.Object {
   /**
     * A list of slots with the chance to drop an equipped item from that slot
     */
-  var slot_drop_chance: js.Array[AnonDropchance]
+  var slot_drop_chance: js.Array[Dropchance]
   /**
     * The file path to the equipment table, relative to the behavior pack's root
     */
@@ -20,7 +21,7 @@ trait IEquipmentComponent extends js.Object {
 
 object IEquipmentComponent {
   @scala.inline
-  def apply(slot_drop_chance: js.Array[AnonDropchance], table: String): IEquipmentComponent = {
+  def apply(slot_drop_chance: js.Array[Dropchance], table: String): IEquipmentComponent = {
     val __obj = js.Dynamic.literal(slot_drop_chance = slot_drop_chance.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEquipmentComponent]
   }

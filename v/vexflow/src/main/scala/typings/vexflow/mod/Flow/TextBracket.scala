@@ -1,6 +1,6 @@
 package typings.vexflow.mod.Flow
 
-import typings.vexflow.AnonPosition
+import typings.vexflow.anon.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextBracket protected ()
   extends typings.vexflow.Vex.Flow.TextBracket {
-  def this(bracket_data: AnonPosition) = this()
+  def this(bracket_data: Position) = this()
 }
 
 /* static members */
@@ -17,5 +17,13 @@ class TextBracket protected ()
 @js.native
 object TextBracket extends js.Object {
   var DEBUG: Boolean = js.native
+  @js.native
+  object Positions extends js.Object {
+    /* -1 */ val BOTTOM: typings.vexflow.Vex.Flow.TextBracket.Positions.BOTTOM with Double = js.native
+    /* 1 */ val TOP: typings.vexflow.Vex.Flow.TextBracket.Positions.TOP with Double = js.native
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.TextBracket.Positions with Double] = js.native
+  }
+  
 }
 

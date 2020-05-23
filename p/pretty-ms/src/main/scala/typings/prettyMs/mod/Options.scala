@@ -68,22 +68,22 @@ object Options {
     compact: js.UndefOr[Boolean] = js.undefined,
     formatSubMilliseconds: js.UndefOr[Boolean] = js.undefined,
     keepDecimalsOnWholeSeconds: js.UndefOr[Boolean] = js.undefined,
-    millisecondsDecimalDigits: Int | Double = null,
-    secondsDecimalDigits: Int | Double = null,
+    millisecondsDecimalDigits: js.UndefOr[Double] = js.undefined,
+    secondsDecimalDigits: js.UndefOr[Double] = js.undefined,
     separateMilliseconds: js.UndefOr[Boolean] = js.undefined,
-    unitCount: Int | Double = null,
+    unitCount: js.UndefOr[Double] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colonNotation)) __obj.updateDynamic("colonNotation")(colonNotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(formatSubMilliseconds)) __obj.updateDynamic("formatSubMilliseconds")(formatSubMilliseconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepDecimalsOnWholeSeconds)) __obj.updateDynamic("keepDecimalsOnWholeSeconds")(keepDecimalsOnWholeSeconds.asInstanceOf[js.Any])
-    if (millisecondsDecimalDigits != null) __obj.updateDynamic("millisecondsDecimalDigits")(millisecondsDecimalDigits.asInstanceOf[js.Any])
-    if (secondsDecimalDigits != null) __obj.updateDynamic("secondsDecimalDigits")(secondsDecimalDigits.asInstanceOf[js.Any])
-    if (!js.isUndefined(separateMilliseconds)) __obj.updateDynamic("separateMilliseconds")(separateMilliseconds.asInstanceOf[js.Any])
-    if (unitCount != null) __obj.updateDynamic("unitCount")(unitCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(colonNotation)) __obj.updateDynamic("colonNotation")(colonNotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatSubMilliseconds)) __obj.updateDynamic("formatSubMilliseconds")(formatSubMilliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepDecimalsOnWholeSeconds)) __obj.updateDynamic("keepDecimalsOnWholeSeconds")(keepDecimalsOnWholeSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(millisecondsDecimalDigits)) __obj.updateDynamic("millisecondsDecimalDigits")(millisecondsDecimalDigits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondsDecimalDigits)) __obj.updateDynamic("secondsDecimalDigits")(secondsDecimalDigits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(separateMilliseconds)) __obj.updateDynamic("separateMilliseconds")(separateMilliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unitCount)) __obj.updateDynamic("unitCount")(unitCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

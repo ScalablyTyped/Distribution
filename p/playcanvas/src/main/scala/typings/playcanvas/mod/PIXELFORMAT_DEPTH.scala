@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.PIXELFORMAT_DEPTH
-  * @type {number}
-  * @description A readable depth buffer format.
+  * A readable depth buffer format.
   */
 @JSImport("playcanvas", "PIXELFORMAT_DEPTH")
 @js.native

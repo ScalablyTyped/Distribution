@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.dynamodbMod.CreateTableOutput
 import typings.awsSdk.dynamodbMod.DescribeTableOutput
 import typings.awsSdk.dynamodbMod.UpdateTableOutput
-import typings.dynogels.AnonName
+import typings.dynogels.anon.Name
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ trait Model
       Unit
     ]
   ): Unit = js.native
-  def config(config: ModelConfig): AnonName = js.native
+  def config(config: ModelConfig): Name = js.native
   def create(item: js.Any, callback: DynogelsItemCallback): Unit = js.native
   def create(item: js.Any, options: CreateItemOptions, callback: DynogelsItemCallback): Unit = js.native
   def createTable(callback: js.Function2[/* err */ Error, /* data */ CreateTableOutput, Unit]): Unit = js.native

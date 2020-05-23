@@ -7,28 +7,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when roster item changed
-		*/
+  *    Event dispatched when roster item changed
+  */
 trait RosterItemChange extends VoxImplantIMEvent {
   /**
-  			*	User display name
-  			*/
+    *    User display name
+    */
   var displayName: String
   /**
-  			*	Roster item groups
-  			*/
+    *    Roster item groups
+    */
   var groups: js.Array[String]
   /**
-  			*	User id
-  			*/
+    *    User id
+    */
   var id: String
   /**
-  			*	Resource name
-  			*/
+    *    Resource name
+    */
   var resource: js.UndefOr[String] = js.undefined
   /**
-  			*	Roster item event type. See VoxImplant.RosterItemEvent enum
-  			*/
+    *    Roster item event type. See VoxImplant.RosterItemEvent enum
+    */
   var `type`: RosterItemEvent
 }
 

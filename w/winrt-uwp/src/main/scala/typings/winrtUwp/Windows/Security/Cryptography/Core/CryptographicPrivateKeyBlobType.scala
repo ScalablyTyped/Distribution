@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,23 +29,6 @@ object CryptographicPrivateKeyBlobType extends js.Object {
   /** This is the default value. The private key is encoded as an ASN.1 PrivateKeyInfo type defined in the PKCS#8 standard. The private key information syntax is defined as follows in RFC 5208. */
   @js.native
   sealed trait pkcs8RawPrivateKeyInfo extends CryptographicPrivateKeyBlobType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CryptographicPrivateKeyBlobType with Double] = js.native
-  /* 4 */ @js.native
-  object bcryptEccFullPrivateKey extends TopLevel[bcryptEccFullPrivateKey with Double]
-  
-  /* 2 */ @js.native
-  object bcryptPrivateKey extends TopLevel[bcryptPrivateKey with Double]
-  
-  /* 3 */ @js.native
-  object capi1PrivateKey extends TopLevel[capi1PrivateKey with Double]
-  
-  /* 1 */ @js.native
-  object pkcs1RsaPrivateKey extends TopLevel[pkcs1RsaPrivateKey with Double]
-  
-  /* 0 */ @js.native
-  object pkcs8RawPrivateKeyInfo extends TopLevel[pkcs8RawPrivateKeyInfo with Double]
   
 }
 

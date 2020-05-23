@@ -18,18 +18,18 @@ trait SubmoduleUpdateOptions
 object SubmoduleUpdateOptions {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     checkoutOpts: CheckoutOptions = null,
-    cloneCheckoutStrategy: Int | Double = null,
+    cloneCheckoutStrategy: js.UndefOr[Double] = js.undefined,
     fetchOpts: FetchOptions = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): SubmoduleUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (checkoutOpts != null) __obj.updateDynamic("checkoutOpts")(checkoutOpts.asInstanceOf[js.Any])
-    if (cloneCheckoutStrategy != null) __obj.updateDynamic("cloneCheckoutStrategy")(cloneCheckoutStrategy.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloneCheckoutStrategy)) __obj.updateDynamic("cloneCheckoutStrategy")(cloneCheckoutStrategy.get.asInstanceOf[js.Any])
     if (fetchOpts != null) __obj.updateDynamic("fetchOpts")(fetchOpts.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmoduleUpdateOptions]
   }
 }

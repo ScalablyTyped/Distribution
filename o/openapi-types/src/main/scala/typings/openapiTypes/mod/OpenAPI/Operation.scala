@@ -21,7 +21,7 @@ trait Operation extends js.Object
 
 object Operation {
   @scala.inline
-  def OperationObject(
+  def apply(
     callbacks: StringDictionary[ReferenceObject | CallbackObject] = null,
     deprecated: js.UndefOr[Boolean] = js.undefined,
     description: String = null,
@@ -37,7 +37,7 @@ object Operation {
   ): Operation = {
     val __obj = js.Dynamic.literal()
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs.asInstanceOf[js.Any])
     if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReservationPurchaseRecommendationMetadata extends js.Object {
   /**
-    * The time stamp for when AWS made this recommendation.
+    * The timestamp for when AWS made this recommendation.
     */
   var GenerationTimestamp: js.UndefOr[GenericString] = js.native
   /**

@@ -12,10 +12,10 @@ trait TokenOptions extends js.Object {
 
 object TokenOptions {
   @scala.inline
-  def apply(data: String = null, expireTime: Int | Double = null, role: Role = null): TokenOptions = {
+  def apply(data: String = null, expireTime: js.UndefOr[Double] = js.undefined, role: Role = null): TokenOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(expireTime)) __obj.updateDynamic("expireTime")(expireTime.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenOptions]
   }

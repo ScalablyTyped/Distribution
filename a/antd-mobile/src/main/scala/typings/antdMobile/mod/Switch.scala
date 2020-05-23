@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonName
+import typings.antdMobile.anon.Name
 import typings.antdMobile.switchMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Switch () extends default
 @JSImport("antd-mobile", "Switch")
 @js.native
 object Switch extends js.Object {
-  var defaultProps: AnonName = js.native
+  var defaultProps: Name = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LineInputProps
-  extends /* otherProp */ StringDictionary[js.Any] {
+  extends /* otherProps */ StringDictionary[js.Any] {
   var className: js.UndefOr[String] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
   var line: js.Array[Token]
@@ -18,7 +18,7 @@ object LineInputProps {
   @scala.inline
   def apply(
     line: js.Array[Token],
-    StringDictionary: /* otherProp */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
     key: Key = null,
     style: StyleObj = null

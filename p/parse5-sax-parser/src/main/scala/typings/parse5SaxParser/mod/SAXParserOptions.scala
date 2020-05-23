@@ -17,7 +17,7 @@ object SAXParserOptions {
   @scala.inline
   def apply(sourceCodeLocationInfo: js.UndefOr[Boolean] = js.undefined): SAXParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(sourceCodeLocationInfo)) __obj.updateDynamic("sourceCodeLocationInfo")(sourceCodeLocationInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceCodeLocationInfo)) __obj.updateDynamic("sourceCodeLocationInfo")(sourceCodeLocationInfo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAXParserOptions]
   }
 }

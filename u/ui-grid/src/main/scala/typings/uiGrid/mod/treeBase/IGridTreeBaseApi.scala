@@ -1,6 +1,6 @@
 package typings.uiGrid.mod.treeBase
 
-import typings.uiGrid.AnonRowCollapsed
+import typings.uiGrid.anon.RowCollapsed
 import typings.uiGrid.mod.IGridRowOf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IGridTreeBaseApi[TEntity] extends js.Object {
   // Events
-  var on: AnonRowCollapsed[TEntity]
+  var on: RowCollapsed[TEntity]
   // Methods
   /**
     * Collapse all tree rows
@@ -70,7 +70,7 @@ object IGridTreeBaseApi {
     expandRow: IGridRowOf[TEntity] => Unit,
     getRowChildren: IGridRowOf[TEntity] => js.Array[IGridRowOf[TEntity]],
     getTreeState: () => ITreeState,
-    on: AnonRowCollapsed[TEntity],
+    on: RowCollapsed[TEntity],
     setTreeState: ITreeState => Unit,
     toggleRowTreeState: IGridRowOf[TEntity] => Unit
   ): IGridTreeBaseApi[TEntity] = {

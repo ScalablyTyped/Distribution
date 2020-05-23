@@ -91,7 +91,7 @@ object Tag {
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     if (firingRuleId != null) __obj.updateDynamic("firingRuleId")(firingRuleId.asInstanceOf[js.Any])
     if (firingTriggerId != null) __obj.updateDynamic("firingTriggerId")(firingTriggerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveOnly)) __obj.updateDynamic("liveOnly")(liveOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveOnly)) __obj.updateDynamic("liveOnly")(liveOnly.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])

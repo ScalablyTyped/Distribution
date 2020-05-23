@@ -1,5 +1,7 @@
 package typings.shopifyPrime
 
+import typings.shopifyPrime.anon.Accept
+import typings.shopifyPrime.anon.Status
 import typings.shopifyPrime.shopifyErrorMod.ErrorType1
 import typings.shopifyPrime.shopifyErrorMod.ErrorType2
 import typings.shopifyPrime.shopifyErrorMod.ErrorType3
@@ -19,15 +21,15 @@ object infrastructureMod extends js.Object {
   @js.native
   class ShopifyError protected ()
     extends typings.shopifyPrime.shopifyErrorMod.ShopifyError {
-    def this(response: AnonStatus, body: ErrorType1) = this()
-    def this(response: AnonStatus, body: ErrorType2) = this()
-    def this(response: AnonStatus, body: ErrorType3) = this()
+    def this(response: Status, body: ErrorType1) = this()
+    def this(response: Status, body: ErrorType2) = this()
+    def this(response: Status, body: ErrorType3) = this()
   }
   
   /* static members */
   @js.native
   object BaseService extends js.Object {
-    def buildDefaultHeaders(): AnonAccept = js.native
+    def buildDefaultHeaders(): Accept = js.native
   }
   
 }

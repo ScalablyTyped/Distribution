@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** XML Schema */
-@JSGlobal("MSXML2.ISchema")
 @js.native
-class ISchema protected () extends js.Object {
+trait ISchema extends js.Object {
   @JSName("MSXML2.ISchema_typekey")
   var MSXML2DotISchema_typekey: ISchema = js.native
   @JSName("attributeGroups")

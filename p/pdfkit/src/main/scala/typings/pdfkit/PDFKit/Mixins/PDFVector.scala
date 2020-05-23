@@ -1,6 +1,6 @@
 package typings.pdfkit.PDFKit.Mixins
 
-import typings.pdfkit.AnonOrigin
+import typings.pdfkit.anon.Origin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,13 +37,13 @@ trait PDFVector extends js.Object {
   def rect(x: Double, y: Double, w: Double, h: Double): this.type = js.native
   def restore(): this.type = js.native
   def rotate(angle: Double): this.type = js.native
-  def rotate(angle: Double, options: AnonOrigin): this.type = js.native
+  def rotate(angle: Double, options: Origin): this.type = js.native
   def roundedRect(x: Double, y: Double, w: Double, h: Double): this.type = js.native
   def roundedRect(x: Double, y: Double, w: Double, h: Double, r: Double): this.type = js.native
   def save(): this.type = js.native
   def scale(xFactor: Double): this.type = js.native
   def scale(xFactor: Double, yFactor: Double): this.type = js.native
-  def scale(xFactor: Double, yFactor: Double, options: AnonOrigin): this.type = js.native
+  def scale(xFactor: Double, yFactor: Double, options: Origin): this.type = js.native
   def stroke(): this.type = js.native
   def stroke(color: ColorValue): this.type = js.native
   def transform(m11: Double, m12: Double, m21: Double, m22: Double, dx: Double, dy: Double): this.type = js.native

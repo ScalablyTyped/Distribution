@@ -20,8 +20,8 @@ trait GlobalConfiguration extends js.Object {
   var InputLossBehavior: js.UndefOr[typings.awsSdk.medialiveMod.InputLossBehavior] = js.native
   /**
     * Indicates how MediaLive pipelines are synchronized.
-  PIPELINELOCKING - MediaLive will attempt to synchronize the output of each pipeline to the other.
-  EPOCHLOCKING - MediaLive will attempt to synchronize the output of each pipeline to the Unix epoch.
+  PIPELINE_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the other.
+  EPOCH_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the Unix epoch.
     */
   var OutputLockingMode: js.UndefOr[GlobalConfigurationOutputLockingMode] = js.native
   /**
@@ -37,7 +37,7 @@ trait GlobalConfiguration extends js.Object {
 object GlobalConfiguration {
   @scala.inline
   def apply(
-    InitialAudioGain: Int | Double = null,
+    InitialAudioGain: js.UndefOr[integerMinNegative60Max60] = js.undefined,
     InputEndAction: GlobalConfigurationInputEndAction = null,
     InputLossBehavior: InputLossBehavior = null,
     OutputLockingMode: GlobalConfigurationOutputLockingMode = null,
@@ -45,7 +45,7 @@ object GlobalConfiguration {
     SupportLowFramerateInputs: GlobalConfigurationLowFramerateInputs = null
   ): GlobalConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (InitialAudioGain != null) __obj.updateDynamic("InitialAudioGain")(InitialAudioGain.asInstanceOf[js.Any])
+    if (!js.isUndefined(InitialAudioGain)) __obj.updateDynamic("InitialAudioGain")(InitialAudioGain.get.asInstanceOf[js.Any])
     if (InputEndAction != null) __obj.updateDynamic("InputEndAction")(InputEndAction.asInstanceOf[js.Any])
     if (InputLossBehavior != null) __obj.updateDynamic("InputLossBehavior")(InputLossBehavior.asInstanceOf[js.Any])
     if (OutputLockingMode != null) __obj.updateDynamic("OutputLockingMode")(OutputLockingMode.asInstanceOf[js.Any])

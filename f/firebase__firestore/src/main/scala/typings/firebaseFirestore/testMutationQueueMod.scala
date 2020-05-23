@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/unit/local/test_mutation_queue", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/local/test_mutation_queue", JSImport.Namespace)
 @js.native
 object testMutationQueueMod extends js.Object {
   @js.native

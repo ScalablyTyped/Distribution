@@ -19,11 +19,11 @@ object Options {
     color: String | (js.Array[js.Array[Double] | Double | String]),
     path: js.Array[(js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel],
     color2: String | (js.Array[js.Array[Double] | Double | String]) = null,
-    height: Int | Double = null
+    height: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (color2 != null) __obj.updateDynamic("color2")(color2.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

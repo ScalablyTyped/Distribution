@@ -1,6 +1,6 @@
 package typings.openidClient.mod
 
-import typings.openidClient.AnonIdtoken
+import typings.openidClient.anon.Idtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +19,14 @@ object RequestObjectPayload {
     acr_values: String = null,
     aud: String = null,
     audience: String = null,
-    claims: String | AnonIdtoken = null,
+    claims: String | Idtoken = null,
     claims_locales: String = null,
     client_id: String = null,
     code_challenge: String = null,
     code_challenge_method: String = null,
     display: String = null,
-    exp: Int | Double = null,
-    iat: Int | Double = null,
+    exp: js.UndefOr[Double] = js.undefined,
+    iat: js.UndefOr[Double] = js.undefined,
     id_token_hint: String = null,
     iss: String = null,
     jti: String = null,
@@ -54,8 +54,8 @@ object RequestObjectPayload {
     if (code_challenge != null) __obj.updateDynamic("code_challenge")(code_challenge.asInstanceOf[js.Any])
     if (code_challenge_method != null) __obj.updateDynamic("code_challenge_method")(code_challenge_method.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
-    if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
+    if (!js.isUndefined(exp)) __obj.updateDynamic("exp")(exp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.get.asInstanceOf[js.Any])
     if (id_token_hint != null) __obj.updateDynamic("id_token_hint")(id_token_hint.asInstanceOf[js.Any])
     if (iss != null) __obj.updateDynamic("iss")(iss.asInstanceOf[js.Any])
     if (jti != null) __obj.updateDynamic("jti")(jti.asInstanceOf[js.Any])

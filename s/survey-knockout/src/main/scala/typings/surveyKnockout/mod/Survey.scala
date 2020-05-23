@@ -10,11 +10,6 @@ class Survey () extends SurveyModel {
   def this(jsonObj: js.Any) = this()
   def this(jsonObj: js.Any, renderedElement: js.Any) = this()
   def this(jsonObj: js.Any, renderedElement: js.Any, css: js.Any) = this()
-  val completedCss: String = js.native
-  val cssNavigationComplete: String = js.native
-  val cssNavigationNext: String = js.native
-  val cssNavigationPrev: String = js.native
-  val cssNavigationStart: String = js.native
   var dummyObservable: js.Any = js.native
   var koAfterRenderHeader: js.Any = js.native
   var koAfterRenderPage: js.Any = js.native
@@ -35,6 +30,8 @@ class Survey () extends SurveyModel {
   def nextPageUIClick(): Unit = js.native
   def render(): Unit = js.native
   def render(element: js.Any): Unit = js.native
+  def updateSurvey(newProps: js.Any): Unit = js.native
+  def updateSurvey(newProps: js.Any, oldProps: js.Any): Unit = js.native
 }
 
 /* static members */

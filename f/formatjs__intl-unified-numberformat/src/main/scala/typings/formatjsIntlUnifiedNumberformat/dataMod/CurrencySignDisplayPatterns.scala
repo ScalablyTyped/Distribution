@@ -1,6 +1,6 @@
 package typings.formatjsIntlUnifiedNumberformat.dataMod
 
-import typings.formatjsIntlUnifiedNumberformat.RecordDecimalFormatNumSig
+import typings.formatjsIntlUnifiedNumberformat.anon.RecordDecimalFormatNumSig
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactLong
 import typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactShort
 import typings.formatjsIntlUtils.numberTypesMod.DecimalFormatNum
@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.formatjsIntlUtils.numberTypesMod.NotationPattern because var conflicts: compactLong, compactShort. Inlined scientific, standard */ trait CurrencySignDisplayPatterns
   extends NotationPatterns
      with SignDisplayPattern {

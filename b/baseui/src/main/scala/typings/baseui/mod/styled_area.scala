@@ -1,7 +1,7 @@
 package typings.baseui.mod
 
-import typings.baseui.AnonClassName
-import typings.baseui.AnonTheme
+import typings.baseui.anon.ClassName
+import typings.baseui.anon.Theme
 import typings.baseui.baseuiStrings.area
 import typings.react.mod.ComponentProps
 import typings.std.Exclude
@@ -15,16 +15,16 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_area extends js.Object {
-  def apply[P /* <: js.Object */, T](component: area, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+  def apply[P /* <: js.Object */, T](component: area, styledFn: js.Function1[/* props */ Theme[T] with P, StyleObject]): StyletronComponent[
     (Pick[
       ComponentProps[area], 
-      Exclude[/* keyof react.react.ComponentProps<'area'> */ String, AnonClassName]
+      Exclude[/* keyof react.react.ComponentProps<'area'> */ String, ClassName]
     ]) with P
   ] = js.native
   def apply[P /* <: js.Object */, T](component: area, styledFn: StyleObject): StyletronComponent[
     (Pick[
       ComponentProps[area], 
-      Exclude[/* keyof react.react.ComponentProps<'area'> */ String, AnonClassName]
+      Exclude[/* keyof react.react.ComponentProps<'area'> */ String, ClassName]
     ]) with P
   ] = js.native
 }

@@ -2,7 +2,7 @@ package typings.smoothScrollbar.smoothScrollbarMod
 
 import typings.smoothScrollbar.data2dMod.Data2d
 import typings.smoothScrollbar.smoothScrollbarScrollbarMod.Scrollbar
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ class ScrollbarPlugin protected ()
   override def onRender(remainMomentum: Data2d): Unit = js.native
   /* CompleteClass */
   override def onUpdate(): Unit = js.native
-  def transformDelta(delta: Data2d, _evt: Event_): Data2d = js.native
+  def transformDelta(delta: Data2d, _evt: Event): Data2d = js.native
   /* CompleteClass */
   override def transformDelta(delta: Data2d, fromEvent: js.Any): Data2d = js.native
 }

@@ -1,6 +1,6 @@
 package typings.forgeApis.mod
 
-import typings.forgeApis.AnonFilterExtensionTypeFilterId
+import typings.forgeApis.anon.FilterExtensionTypeFilterId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +13,7 @@ class ProjectsApi () extends js.Object {
     * is set up under an A360 hub or BIM 360 account, respectively. Within a hub or an account, multiple projects can be
     * created to be used.
     */
-  def getHubProjects(
-    hubId: String,
-    opts: AnonFilterExtensionTypeFilterId,
-    oauth2Client: AuthClient,
-    credentials: AuthToken
-  ): js.Promise[ApiResponse] = js.native
+  def getHubProjects(hubId: String, opts: FilterExtensionTypeFilterId, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns a project for a given `project_id`.
     */

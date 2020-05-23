@@ -29,8 +29,8 @@ object Role {
   ): Role = {
     val __obj = js.Dynamic.literal()
     if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSuperAdminRole)) __obj.updateDynamic("isSuperAdminRole")(isSuperAdminRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSystemRole)) __obj.updateDynamic("isSystemRole")(isSystemRole.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSuperAdminRole)) __obj.updateDynamic("isSuperAdminRole")(isSuperAdminRole.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSystemRole)) __obj.updateDynamic("isSystemRole")(isSystemRole.get.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (roleDescription != null) __obj.updateDynamic("roleDescription")(roleDescription.asInstanceOf[js.Any])
     if (roleId != null) __obj.updateDynamic("roleId")(roleId.asInstanceOf[js.Any])

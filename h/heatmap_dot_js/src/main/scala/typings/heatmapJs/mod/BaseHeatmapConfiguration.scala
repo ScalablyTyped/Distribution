@@ -66,30 +66,30 @@ trait BaseHeatmapConfiguration[V /* <: String */] extends js.Object {
 
 object BaseHeatmapConfiguration {
   @scala.inline
-  def apply[V /* <: String */](
+  def apply[V](
     backgroundColor: String = null,
-    blur: Int | Double = null,
+    blur: js.UndefOr[Double] = js.undefined,
     gradient: StringDictionary[String] = null,
-    maxOpacity: Int | Double = null,
-    minOpacity: Int | Double = null,
+    maxOpacity: js.UndefOr[Double] = js.undefined,
+    minOpacity: js.UndefOr[Double] = js.undefined,
     onExtremaChange: () => Unit = null,
-    opacity: Int | Double = null,
-    radius: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined,
     scaleRadius: js.UndefOr[Boolean] = js.undefined,
     useLocalExtrema: js.UndefOr[Boolean] = js.undefined,
     valueField: V = null
   ): BaseHeatmapConfiguration[V] = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
+    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur.get.asInstanceOf[js.Any])
     if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
-    if (maxOpacity != null) __obj.updateDynamic("maxOpacity")(maxOpacity.asInstanceOf[js.Any])
-    if (minOpacity != null) __obj.updateDynamic("minOpacity")(minOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxOpacity)) __obj.updateDynamic("maxOpacity")(maxOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minOpacity)) __obj.updateDynamic("minOpacity")(minOpacity.get.asInstanceOf[js.Any])
     if (onExtremaChange != null) __obj.updateDynamic("onExtremaChange")(js.Any.fromFunction0(onExtremaChange))
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleRadius)) __obj.updateDynamic("scaleRadius")(scaleRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLocalExtrema)) __obj.updateDynamic("useLocalExtrema")(useLocalExtrema.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleRadius)) __obj.updateDynamic("scaleRadius")(scaleRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLocalExtrema)) __obj.updateDynamic("useLocalExtrema")(useLocalExtrema.get.asInstanceOf[js.Any])
     if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseHeatmapConfiguration[V]]
   }

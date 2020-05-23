@@ -38,17 +38,17 @@ object SessionOptions {
   @scala.inline
   def apply(
     secret: String,
-    activeDuration: Int | Double = null,
+    activeDuration: js.UndefOr[Double] = js.undefined,
     cookie: IOptions = null,
     cookieName: String = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     requestKey: String = null
   ): SessionOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
-    if (activeDuration != null) __obj.updateDynamic("activeDuration")(activeDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeDuration)) __obj.updateDynamic("activeDuration")(activeDuration.get.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (requestKey != null) __obj.updateDynamic("requestKey")(requestKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }

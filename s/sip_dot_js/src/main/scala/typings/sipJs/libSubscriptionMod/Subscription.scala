@@ -1,6 +1,6 @@
 package typings.sipJs.libSubscriptionMod
 
-import typings.sipJs.AnonRequest
+import typings.sipJs.anon.Request
 import typings.sipJs.clientContextMod.ClientContext
 import typings.sipJs.coreMod.IncomingResponseMessage
 import typings.sipJs.coreMod.URI
@@ -8,7 +8,7 @@ import typings.sipJs.incomingResponseMod.IncomingResponse
 import typings.sipJs.notifyMod.IncomingNotifyRequest
 import typings.sipJs.sipJsStrings.accepted
 import typings.sipJs.sipJsStrings.failed
-import typings.sipJs.sipJsStrings.notify_
+import typings.sipJs.sipJsStrings.notify
 import typings.sipJs.sipJsStrings.rejected
 import typings.sipJs.sipJsStrings.terminated
 import typings.sipJs.subscribeMod.OutgoingSubscribeRequest
@@ -54,7 +54,7 @@ class Subscription protected () extends ClientContext {
   @JSName("emit")
   def emit_failed(event: failed, message: IncomingResponseMessage, cause: String): Boolean = js.native
   @JSName("emit")
-  def emit_notify(event: notify_, notification: AnonRequest): Boolean = js.native
+  def emit_notify(event: notify, notification: Request): Boolean = js.native
   @JSName("emit")
   def emit_rejected(event: rejected, message: IncomingResponseMessage, cause: String): Boolean = js.native
   @JSName("emit")
@@ -113,7 +113,7 @@ class Subscription protected () extends ClientContext {
     callback: js.Function2[/* message */ IncomingResponseMessage, /* cause */ String, Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_notify(name: notify_, callback: js.Function1[/* notification */ AnonRequest, Unit]): this.type = js.native
+  def on_notify(name: notify, callback: js.Function1[/* notification */ Request, Unit]): this.type = js.native
   @JSName("on")
   def on_rejected(
     name: rejected,

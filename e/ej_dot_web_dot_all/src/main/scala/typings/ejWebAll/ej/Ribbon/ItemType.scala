@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Ribbon
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,15 +17,6 @@ object ItemType extends js.Object {
   ///To render the tab for ribbon backstage pageâ€™s contents
   @js.native
   sealed trait Tab extends ItemType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ItemType with Double] = js.native
-  /* 0 */ @js.native
-  object Button extends TopLevel[Button with Double]
-  
-  /* 1 */ @js.native
-  object Tab
-    extends TopLevel[typings.ejWebAll.ej.Ribbon.ItemType.Tab with Double]
   
 }
 

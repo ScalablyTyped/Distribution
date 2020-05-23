@@ -27,13 +27,13 @@ trait UpdateServiceSettingsRequest extends js.Object {
 object UpdateServiceSettingsRequest {
   @scala.inline
   def apply(
-    EnableCrossAccountsDiscovery: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.undefined,
     OrganizationConfiguration: OrganizationConfiguration = null,
     S3BucketArn: String = null,
     SnsTopicArn: String = null
   ): UpdateServiceSettingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnableCrossAccountsDiscovery)) __obj.updateDynamic("EnableCrossAccountsDiscovery")(EnableCrossAccountsDiscovery.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableCrossAccountsDiscovery)) __obj.updateDynamic("EnableCrossAccountsDiscovery")(EnableCrossAccountsDiscovery.get.asInstanceOf[js.Any])
     if (OrganizationConfiguration != null) __obj.updateDynamic("OrganizationConfiguration")(OrganizationConfiguration.asInstanceOf[js.Any])
     if (S3BucketArn != null) __obj.updateDynamic("S3BucketArn")(S3BucketArn.asInstanceOf[js.Any])
     if (SnsTopicArn != null) __obj.updateDynamic("SnsTopicArn")(SnsTopicArn.asInstanceOf[js.Any])

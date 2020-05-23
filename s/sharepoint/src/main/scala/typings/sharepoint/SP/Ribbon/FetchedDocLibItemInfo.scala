@@ -4,7 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Ribbon.FetchedDocLibItemInfo")
-@js.native
-class FetchedDocLibItemInfo () extends js.Object
+trait FetchedDocLibItemInfo extends js.Object
 

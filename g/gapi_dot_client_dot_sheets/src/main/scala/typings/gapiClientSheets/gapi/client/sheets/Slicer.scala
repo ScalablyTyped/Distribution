@@ -19,10 +19,14 @@ trait Slicer extends js.Object {
 
 object Slicer {
   @scala.inline
-  def apply(position: EmbeddedObjectPosition = null, slicerId: Int | Double = null, spec: SlicerSpec = null): Slicer = {
+  def apply(
+    position: EmbeddedObjectPosition = null,
+    slicerId: js.UndefOr[Double] = js.undefined,
+    spec: SlicerSpec = null
+  ): Slicer = {
     val __obj = js.Dynamic.literal()
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (slicerId != null) __obj.updateDynamic("slicerId")(slicerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(slicerId)) __obj.updateDynamic("slicerId")(slicerId.get.asInstanceOf[js.Any])
     if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[Slicer]
   }

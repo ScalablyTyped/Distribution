@@ -78,7 +78,7 @@ object Integration {
     passthroughBehavior: String = null,
     requestParameters: MapOfStringToString = null,
     requestTemplates: MapOfStringToString = null,
-    timeoutInMillis: Int | scala.Double = null,
+    timeoutInMillis: js.UndefOr[Integer] = js.undefined,
     `type`: IntegrationType = null,
     uri: String = null
   ): Integration = {
@@ -94,7 +94,7 @@ object Integration {
     if (passthroughBehavior != null) __obj.updateDynamic("passthroughBehavior")(passthroughBehavior.asInstanceOf[js.Any])
     if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
     if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates.asInstanceOf[js.Any])
-    if (timeoutInMillis != null) __obj.updateDynamic("timeoutInMillis")(timeoutInMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutInMillis)) __obj.updateDynamic("timeoutInMillis")(timeoutInMillis.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Integration]

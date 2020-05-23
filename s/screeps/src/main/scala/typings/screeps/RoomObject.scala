@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,12 @@ trait RoomObject extends js.Object {
   var room: js.UndefOr[Room] = js.undefined
 }
 
-@JSGlobal("RoomObject")
-@js.native
-object RoomObject extends TopLevel[RoomObjectConstructor]
+object RoomObject {
+  @scala.inline
+  def apply(effects: js.Array[RoomObjectEffect], pos: RoomPosition, room: Room = null): RoomObject = {
+    val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
+    if (room != null) __obj.updateDynamic("room")(room.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoomObject]
+  }
+}
 

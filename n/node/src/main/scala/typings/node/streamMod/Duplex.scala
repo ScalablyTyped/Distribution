@@ -1,6 +1,7 @@
 package typings.node.streamMod
 
-import typings.node.AnonChunk
+import typings.node.BufferEncoding
+import typings.node.anon.Chunk
 import typings.node.nodeStrings.drain
 import typings.node.nodeStrings.finish
 import typings.node.nodeStrings.pipe
@@ -11,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Note: Duplex extends both Readable and Writable.
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.node.NodeJS.EventEmitter because Already inherited
 - typings.node.eventsMod.EventEmitter because Already inherited
 - typings.node.NodeJS.EventEmitter because Already inherited
@@ -25,7 +26,7 @@ class Duplex () extends Readable {
   def this(opts: DuplexOptions) = this()
   var _writev: js.UndefOr[
     js.Function2[
-      /* chunks */ js.Array[AnonChunk], 
+      /* chunks */ js.Array[Chunk], 
       /* callback */ js.Function1[js.UndefOr[Error | Null], Unit], 
       Unit
     ]
@@ -38,7 +39,7 @@ class Duplex () extends Readable {
   val writableLength: Double = js.native
   val writableObjectMode: Boolean = js.native
   def _final(callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
-  def _write(chunk: js.Any, encoding: String, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def _write(chunk: js.Any, encoding: BufferEncoding, callback: js.Function1[js.UndefOr[Error | Null], Unit]): Unit = js.native
   @JSName("addListener")
   def addListener_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
@@ -60,8 +61,8 @@ class Duplex () extends Readable {
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any): Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
-  def end(chunk: js.Any, encoding: String): Unit = js.native
-  def end(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
+  def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -102,11 +103,11 @@ class Duplex () extends Readable {
   def removeListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  def setDefaultEncoding(encoding: String): this.type = js.native
+  def setDefaultEncoding(encoding: BufferEncoding): this.type = js.native
   def uncork(): Unit = js.native
   def write(chunk: js.Any): Boolean = js.native
   def write(chunk: js.Any, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
-  def write(chunk: js.Any, encoding: String): Boolean = js.native
-  def write(chunk: js.Any, encoding: String, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
+  def write(chunk: js.Any, encoding: BufferEncoding, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }
 

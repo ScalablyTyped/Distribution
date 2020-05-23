@@ -22,15 +22,15 @@ object TextColumn {
   def apply(
     allowMultipleLines: js.UndefOr[Boolean] = js.undefined,
     appendChangesToExistingText: js.UndefOr[Boolean] = js.undefined,
-    linesForEditing: Int | Double = null,
-    maxLength: Int | Double = null,
+    linesForEditing: js.UndefOr[Double] = js.undefined,
+    maxLength: js.UndefOr[Double] = js.undefined,
     textType: String = null
   ): TextColumn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultipleLines)) __obj.updateDynamic("allowMultipleLines")(allowMultipleLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(appendChangesToExistingText)) __obj.updateDynamic("appendChangesToExistingText")(appendChangesToExistingText.asInstanceOf[js.Any])
-    if (linesForEditing != null) __obj.updateDynamic("linesForEditing")(linesForEditing.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultipleLines)) __obj.updateDynamic("allowMultipleLines")(allowMultipleLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendChangesToExistingText)) __obj.updateDynamic("appendChangesToExistingText")(appendChangesToExistingText.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linesForEditing)) __obj.updateDynamic("linesForEditing")(linesForEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
     if (textType != null) __obj.updateDynamic("textType")(textType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextColumn]
   }

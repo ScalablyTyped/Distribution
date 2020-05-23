@@ -1,6 +1,5 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreBooleans.`true`
 import typings.rxjs.mod.Observable_
 import typings.std.Iterable
 import scala.scalajs.js
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 class QueryList[T] () extends Iterable[T] {
   var _results: js.Any = js.native
   val changes: Observable_[_] = js.native
-  val dirty: `true` = js.native
+  val dirty: /* true */ Boolean = js.native
   val first: T = js.native
   val last: T = js.native
   val length: Double = js.native

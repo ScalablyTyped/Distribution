@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.IExtendedPersonaPropskeys
 import typings.officeUiFabricReact.selectedPeopleListMod.IExtendedPersonaProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

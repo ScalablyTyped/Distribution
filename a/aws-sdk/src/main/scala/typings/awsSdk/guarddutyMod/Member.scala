@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Member extends js.Object {
   /**
-    * Member account ID.
+    * The ID of the member account.
     */
   var AccountId: typings.awsSdk.guarddutyMod.AccountId = js.native
   /**
-    * Member account's detector ID.
+    * The detector ID of the member account.
     */
   var DetectorId: js.UndefOr[typings.awsSdk.guarddutyMod.DetectorId] = js.native
   /**
-    * Member account's email address.
+    * The email address of the member account.
     */
   var Email: typings.awsSdk.guarddutyMod.Email = js.native
   /**
-    * Timestamp at which the invitation was sent
+    * The timestamp when the invitation was sent.
     */
   var InvitedAt: js.UndefOr[String] = js.native
   /**
-    * Master account ID.
+    * The master account ID.
     */
   var MasterId: String = js.native
   /**
@@ -31,7 +31,7 @@ trait Member extends js.Object {
     */
   var RelationshipStatus: String = js.native
   /**
-    * Member last updated timestamp.
+    * The last-updated timestamp of the member.
     */
   var UpdatedAt: String = js.native
 }

@@ -19,16 +19,16 @@ trait ITransactionReceipt extends js.Object {
 object ITransactionReceipt {
   @scala.inline
   def apply(
-    data: js.Array[Uint8Array] = null,
-    events: js.Array[IEvent] = null,
-    stateChanges: js.Array[IStateChange] = null,
-    transactionId: String = null
+    data: js.UndefOr[Null | js.Array[Uint8Array]] = js.undefined,
+    events: js.UndefOr[Null | js.Array[IEvent]] = js.undefined,
+    stateChanges: js.UndefOr[Null | js.Array[IStateChange]] = js.undefined,
+    transactionId: js.UndefOr[Null | String] = js.undefined
   ): ITransactionReceipt = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (stateChanges != null) __obj.updateDynamic("stateChanges")(stateChanges.asInstanceOf[js.Any])
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateChanges)) __obj.updateDynamic("stateChanges")(stateChanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionId)) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransactionReceipt]
   }
 }

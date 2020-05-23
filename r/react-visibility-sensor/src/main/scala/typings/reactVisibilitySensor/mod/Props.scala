@@ -33,35 +33,35 @@ object Props {
     containment: HTMLElement = null,
     delayedCall: js.UndefOr[Boolean] = js.undefined,
     intervalCheck: js.UndefOr[Boolean] = js.undefined,
-    intervalDelay: Int | Double = null,
-    minTopValue: Int | Double = null,
+    intervalDelay: js.UndefOr[Double] = js.undefined,
+    minTopValue: js.UndefOr[Double] = js.undefined,
     offset: Shape = null,
     onChange: /* isVisible */ Boolean => Unit = null,
     partialVisibility: js.UndefOr[Boolean] = js.undefined,
     resizeCheck: js.UndefOr[Boolean] = js.undefined,
-    resizeDelay: Int | Double = null,
-    resizeThrottle: Int | Double = null,
+    resizeDelay: js.UndefOr[Double] = js.undefined,
+    resizeThrottle: js.UndefOr[Double] = js.undefined,
     scrollCheck: js.UndefOr[Boolean] = js.undefined,
-    scrollDelay: Int | Double = null,
-    scrollThrottle: Int | Double = null
+    scrollDelay: js.UndefOr[Double] = js.undefined,
+    scrollThrottle: js.UndefOr[Double] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayedCall)) __obj.updateDynamic("delayedCall")(delayedCall.asInstanceOf[js.Any])
-    if (!js.isUndefined(intervalCheck)) __obj.updateDynamic("intervalCheck")(intervalCheck.asInstanceOf[js.Any])
-    if (intervalDelay != null) __obj.updateDynamic("intervalDelay")(intervalDelay.asInstanceOf[js.Any])
-    if (minTopValue != null) __obj.updateDynamic("minTopValue")(minTopValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayedCall)) __obj.updateDynamic("delayedCall")(delayedCall.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intervalCheck)) __obj.updateDynamic("intervalCheck")(intervalCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intervalDelay)) __obj.updateDynamic("intervalDelay")(intervalDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTopValue)) __obj.updateDynamic("minTopValue")(minTopValue.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(partialVisibility)) __obj.updateDynamic("partialVisibility")(partialVisibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeCheck)) __obj.updateDynamic("resizeCheck")(resizeCheck.asInstanceOf[js.Any])
-    if (resizeDelay != null) __obj.updateDynamic("resizeDelay")(resizeDelay.asInstanceOf[js.Any])
-    if (resizeThrottle != null) __obj.updateDynamic("resizeThrottle")(resizeThrottle.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollCheck)) __obj.updateDynamic("scrollCheck")(scrollCheck.asInstanceOf[js.Any])
-    if (scrollDelay != null) __obj.updateDynamic("scrollDelay")(scrollDelay.asInstanceOf[js.Any])
-    if (scrollThrottle != null) __obj.updateDynamic("scrollThrottle")(scrollThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(partialVisibility)) __obj.updateDynamic("partialVisibility")(partialVisibility.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeCheck)) __obj.updateDynamic("resizeCheck")(resizeCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeDelay)) __obj.updateDynamic("resizeDelay")(resizeDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeThrottle)) __obj.updateDynamic("resizeThrottle")(resizeThrottle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollCheck)) __obj.updateDynamic("scrollCheck")(scrollCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollDelay)) __obj.updateDynamic("scrollDelay")(scrollDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollThrottle)) __obj.updateDynamic("scrollThrottle")(scrollThrottle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

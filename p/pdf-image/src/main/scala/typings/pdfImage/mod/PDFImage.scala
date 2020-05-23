@@ -1,7 +1,7 @@
 package typings.pdfImage.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pdfImage.ReadonlyConvertOptions
+import typings.pdfImage.anon.ReadonlyConvertOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

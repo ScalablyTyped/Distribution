@@ -4,32 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.AST")
-@js.native
-class AST () extends IASTSpan {
-  var _astID: js.Any = js.native
-  /* CompleteClass */
-  override var _end: Double = js.native
-  var _postComments: js.Any = js.native
-  var _preComments: js.Any = js.native
-  /* CompleteClass */
-  override var _start: Double = js.native
-  var _trailingTriviaWidth: Double = js.native
-  var parent: AST = js.native
-  /* CompleteClass */
-  override def end(): Double = js.native
-  def fileName(): String = js.native
-  def isExpression(): Boolean = js.native
-  def kind(): SyntaxKind = js.native
-  def postComments(): js.Array[Comment] = js.native
-  def preComments(): js.Array[Comment] = js.native
-  def setPostComments(comments: js.Array[Comment]): Unit = js.native
-  def setPreComments(comments: js.Array[Comment]): Unit = js.native
-  /* CompleteClass */
-  override def start(): Double = js.native
-  def structuralEquals(ast: AST, includingPosition: Boolean): Boolean = js.native
-  def syntaxID(): Double = js.native
-  def trailingTriviaWidth(): Double = js.native
-  def width(): Double = js.native
+trait AST extends IASTSpan {
+  var _astID: js.Any
+  var _postComments: js.Any
+  var _preComments: js.Any
+  var _trailingTriviaWidth: Double
+  var parent: AST
+  def fileName(): String
+  def isExpression(): Boolean
+  def kind(): SyntaxKind
+  def postComments(): js.Array[Comment]
+  def preComments(): js.Array[Comment]
+  def setPostComments(comments: js.Array[Comment]): Unit
+  def setPreComments(comments: js.Array[Comment]): Unit
+  def structuralEquals(ast: AST, includingPosition: Boolean): Boolean
+  def syntaxID(): Double
+  def trailingTriviaWidth(): Double
+  def width(): Double
+}
+
+object AST {
+  @scala.inline
+  def apply(
+    _astID: js.Any,
+    _end: Double,
+    _postComments: js.Any,
+    _preComments: js.Any,
+    _start: Double,
+    _trailingTriviaWidth: Double,
+    end: () => Double,
+    fileName: () => String,
+    isExpression: () => Boolean,
+    kind: () => SyntaxKind,
+    parent: AST,
+    postComments: () => js.Array[Comment],
+    preComments: () => js.Array[Comment],
+    setPostComments: js.Array[Comment] => Unit,
+    setPreComments: js.Array[Comment] => Unit,
+    start: () => Double,
+    structuralEquals: (AST, Boolean) => Boolean,
+    syntaxID: () => Double,
+    trailingTriviaWidth: () => Double,
+    width: () => Double
+  ): AST = {
+    val __obj = js.Dynamic.literal(_astID = _astID.asInstanceOf[js.Any], _end = _end.asInstanceOf[js.Any], _postComments = _postComments.asInstanceOf[js.Any], _preComments = _preComments.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], _trailingTriviaWidth = _trailingTriviaWidth.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), fileName = js.Any.fromFunction0(fileName), isExpression = js.Any.fromFunction0(isExpression), kind = js.Any.fromFunction0(kind), parent = parent.asInstanceOf[js.Any], postComments = js.Any.fromFunction0(postComments), preComments = js.Any.fromFunction0(preComments), setPostComments = js.Any.fromFunction1(setPostComments), setPreComments = js.Any.fromFunction1(setPreComments), start = js.Any.fromFunction0(start), structuralEquals = js.Any.fromFunction2(structuralEquals), syntaxID = js.Any.fromFunction0(syntaxID), trailingTriviaWidth = js.Any.fromFunction0(trailingTriviaWidth), width = js.Any.fromFunction0(width))
+    __obj.asInstanceOf[AST]
+  }
 }
 

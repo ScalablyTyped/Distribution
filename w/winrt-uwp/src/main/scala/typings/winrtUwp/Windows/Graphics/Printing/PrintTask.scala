@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a printing operation including the content to be printed, as well as providing access to information describing how the content is to be printed. */
-@JSGlobal("Windows.Graphics.Printing.PrintTask")
 @js.native
-abstract class PrintTask () extends js.Object {
+trait PrintTask extends js.Object {
   /** Gets or sets a value that indicates whether the PrintTask supports 3D manufacturing devices, like a 3D printer. */
   var is3DManufacturingTargetEnabled: Boolean = js.native
   /** Gets or sets a value indicating whether the PrintTask supports printer targets. */

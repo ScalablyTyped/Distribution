@@ -23,7 +23,7 @@ object LanguageDetectorOptions {
     cookieDomain: String = null,
     cookieExpirationDate: Date = null,
     lookupCookie: String = null,
-    lookupFromPathIndex: Int | Double = null,
+    lookupFromPathIndex: js.UndefOr[Double] = js.undefined,
     lookupQuerystring: String = null,
     lookupSession: String = null,
     order: LanguageDetectorOrder = null
@@ -33,7 +33,7 @@ object LanguageDetectorOptions {
     if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain.asInstanceOf[js.Any])
     if (cookieExpirationDate != null) __obj.updateDynamic("cookieExpirationDate")(cookieExpirationDate.asInstanceOf[js.Any])
     if (lookupCookie != null) __obj.updateDynamic("lookupCookie")(lookupCookie.asInstanceOf[js.Any])
-    if (lookupFromPathIndex != null) __obj.updateDynamic("lookupFromPathIndex")(lookupFromPathIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookupFromPathIndex)) __obj.updateDynamic("lookupFromPathIndex")(lookupFromPathIndex.get.asInstanceOf[js.Any])
     if (lookupQuerystring != null) __obj.updateDynamic("lookupQuerystring")(lookupQuerystring.asInstanceOf[js.Any])
     if (lookupSession != null) __obj.updateDynamic("lookupSession")(lookupSession.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])

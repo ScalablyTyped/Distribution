@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object pauseVoice extends js.Object {
   /**
-  	 * 暂停播放接口
-  	 */
+    * 暂停播放接口
+    */
   def apply(params: IplaypausestopVoice): Unit = js.native
 }
 

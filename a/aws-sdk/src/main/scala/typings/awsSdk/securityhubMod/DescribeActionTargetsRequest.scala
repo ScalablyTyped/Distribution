@@ -24,12 +24,12 @@ object DescribeActionTargetsRequest {
   @scala.inline
   def apply(
     ActionTargetArns: ArnList = null,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: NextToken = null
   ): DescribeActionTargetsRequest = {
     val __obj = js.Dynamic.literal()
     if (ActionTargetArns != null) __obj.updateDynamic("ActionTargetArns")(ActionTargetArns.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeActionTargetsRequest]
   }

@@ -12,8 +12,8 @@ package object mod {
     typings.sass.mod.ImporterReturnType | scala.Unit
   ]
   /* Rewritten from type alias, can be one of: 
-    - typings.sass.AnonFile
-    - typings.sass.AnonContents
+    - typings.sass.anon.File
+    - typings.sass.anon.Contents
     - typings.std.Error
     - scala.Null
   */

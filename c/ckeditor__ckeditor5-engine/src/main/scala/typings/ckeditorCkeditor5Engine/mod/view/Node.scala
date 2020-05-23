@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine.mod.view
 
-import typings.ckeditorCkeditor5Engine.Anon1
-import typings.ckeditorCkeditor5Engine.AnonIncludeSelfParentFirst
+import typings.ckeditorCkeditor5Engine.anon.IncludeSelfParentFirst
+import typings.ckeditorCkeditor5Engine.anon.`1`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.attributeElement
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.containerElement
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.documentFragment
@@ -27,8 +27,8 @@ class Node () extends Item {
   /* protected */ def _clone(): Node = js.native
   def _fireChange(`type`: ChangeType, node: Node): Unit = js.native
   /* protected */ def _remove(): Unit = js.native
-  def getAncestors(options: AnonIncludeSelfParentFirst): js.Array[Element | DocumentFragment] = js.native
-  def getCommonAncestor(node: Node, options: Anon1): Element | DocumentFragment | Null = js.native
+  def getAncestors(options: IncludeSelfParentFirst): js.Array[Element | DocumentFragment] = js.native
+  def getCommonAncestor(node: Node, options: `1`): Element | DocumentFragment | Null = js.native
   def getPath(): js.Array[Double] = js.native
   def is(`type`: String, name: String): Boolean = js.native
   def isAfter(node: Node): Boolean = js.native

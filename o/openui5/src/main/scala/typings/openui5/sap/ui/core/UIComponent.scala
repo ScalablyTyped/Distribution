@@ -8,23 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.UIComponent")
 @js.native
-abstract class UIComponent protected () extends Component {
-  /**
-    * Base Class for UIComponent.If you are extending an UIComponent make sure you read the {@link
-    * #.extend} documentation since the metadata is special.Accepts an object literal
-    * <code>mSettings</code> that defines initialproperty values, aggregated and associated objects as
-    * well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a general description
-    * of the syntax of the settings object.
-    * @param sId Optional ID for the new control; generated automatically if           no non-empty ID is
-    * given Note: this can be omitted, no matter           whether <code>mSettings</code> will be given or
-    * not!
-    * @param mSettings optional map/JSON-object with initial settings for the           new component
-    * instance
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait UIComponent extends Component {
   /**
     * Returns an element by its ID in the context of the component.
     * @param sId Component local ID of the element
@@ -75,8 +60,8 @@ abstract class UIComponent protected () extends Component {
     * Returns the reference to the router instance. The passed controller or viewhas to be created in the
     * context of a UIComponent to return the routerinstance. Otherwise this function will return
     * undefined.You may define the routerClass property in the config section of the routing to make the
-    * Component create your router extension.Example:routing: {	config: {		routerClass :
-    * myAppNamespace.MyRouterClass		...}...
+    * Component create your router extension.Example:routing: {    config: {        routerClass :
+    * myAppNamespace.MyRouterClass        ...}...
     * @since 1.16.1
     * @param oControllerOrView either a view or controller
     * @returns the router instance

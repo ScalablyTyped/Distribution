@@ -16,11 +16,15 @@ trait ApiKeyList extends js.Object {
 
 object ApiKeyList {
   @scala.inline
-  def apply(cldbid: Double | Asterisk = null, duration: Int | Double = null, start: Int | Double = null): ApiKeyList = {
+  def apply(
+    cldbid: Double | Asterisk = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined
+  ): ApiKeyList = {
     val __obj = js.Dynamic.literal()
     if (cldbid != null) __obj.updateDynamic("cldbid")(cldbid.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKeyList]
   }
 }

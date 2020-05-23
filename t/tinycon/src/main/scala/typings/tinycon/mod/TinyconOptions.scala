@@ -23,17 +23,17 @@ object TinyconOptions {
     color: String = null,
     fallback: Boolean | force = null,
     font: String = null,
-    height: Int | Double = null,
-    width: Int | Double = null
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): TinyconOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abbreviate)) __obj.updateDynamic("abbreviate")(abbreviate.asInstanceOf[js.Any])
+    if (!js.isUndefined(abbreviate)) __obj.updateDynamic("abbreviate")(abbreviate.get.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TinyconOptions]
   }
 }

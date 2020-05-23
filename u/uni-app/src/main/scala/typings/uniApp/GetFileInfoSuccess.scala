@@ -21,11 +21,11 @@ trait GetFileInfoSuccess extends js.Object {
 
 object GetFileInfoSuccess {
   @scala.inline
-  def apply(digest: String = null, errMsg: String = null, size: Int | Double = null): GetFileInfoSuccess = {
+  def apply(digest: String = null, errMsg: String = null, size: js.UndefOr[Double] = js.undefined): GetFileInfoSuccess = {
     val __obj = js.Dynamic.literal()
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
     if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileInfoSuccess]
   }
 }

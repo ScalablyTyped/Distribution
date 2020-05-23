@@ -25,12 +25,12 @@ object ConnectionLogOptions {
   def apply(
     CloudwatchLogGroup: String = null,
     CloudwatchLogStream: String = null,
-    Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    Enabled: js.UndefOr[Boolean] = js.undefined
   ): ConnectionLogOptions = {
     val __obj = js.Dynamic.literal()
     if (CloudwatchLogGroup != null) __obj.updateDynamic("CloudwatchLogGroup")(CloudwatchLogGroup.asInstanceOf[js.Any])
     if (CloudwatchLogStream != null) __obj.updateDynamic("CloudwatchLogStream")(CloudwatchLogStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionLogOptions]
   }
 }

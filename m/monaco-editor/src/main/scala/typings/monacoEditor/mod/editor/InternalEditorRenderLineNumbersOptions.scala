@@ -12,8 +12,7 @@ trait InternalEditorRenderLineNumbersOptions extends js.Object {
 object InternalEditorRenderLineNumbersOptions {
   @scala.inline
   def apply(renderType: RenderLineNumbersType, renderFn: /* lineNumber */ Double => String = null): InternalEditorRenderLineNumbersOptions = {
-    val __obj = js.Dynamic.literal(renderType = renderType.asInstanceOf[js.Any])
-    if (renderFn != null) __obj.updateDynamic("renderFn")(js.Any.fromFunction1(renderFn))
+    val __obj = js.Dynamic.literal(renderType = renderType.asInstanceOf[js.Any], renderFn = js.Any.fromFunction1(renderFn))
     __obj.asInstanceOf[InternalEditorRenderLineNumbersOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.phaser.phaserMod
 
-import typings.phaser.Phaser.Types.Core.GameConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +21,6 @@ import scala.scalajs.js.annotation._
   */
 class Game ()
   extends typings.phaser.Phaser.Game {
-  def this(GameConfig: GameConfig) = this()
+  def this(GameConfig: typings.phaser.Phaser.Types.Core.GameConfig) = this()
 }
 

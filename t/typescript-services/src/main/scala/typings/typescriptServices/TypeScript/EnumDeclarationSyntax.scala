@@ -4,18 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.EnumDeclarationSyntax")
 @js.native
-class EnumDeclarationSyntax protected () extends SyntaxNode {
-  def this(
-    modifiers: ISyntaxList,
-    enumKeyword: ISyntaxToken,
-    identifier: ISyntaxToken,
-    openBraceToken: ISyntaxToken,
-    enumElements: ISeparatedSyntaxList,
-    closeBraceToken: ISyntaxToken,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait EnumDeclarationSyntax extends SyntaxNode {
   var closeBraceToken: ISyntaxToken = js.native
   var enumElements: ISeparatedSyntaxList = js.native
   var enumKeyword: ISyntaxToken = js.native
@@ -38,18 +28,5 @@ class EnumDeclarationSyntax protected () extends SyntaxNode {
   def withModifier(modifier: ISyntaxToken): EnumDeclarationSyntax = js.native
   def withModifiers(modifiers: ISyntaxList): EnumDeclarationSyntax = js.native
   def withOpenBraceToken(openBraceToken: ISyntaxToken): EnumDeclarationSyntax = js.native
-}
-
-/* static members */
-@JSGlobal("TypeScript.EnumDeclarationSyntax")
-@js.native
-object EnumDeclarationSyntax extends js.Object {
-  def create(
-    enumKeyword: ISyntaxToken,
-    identifier: ISyntaxToken,
-    openBraceToken: ISyntaxToken,
-    closeBraceToken: ISyntaxToken
-  ): EnumDeclarationSyntax = js.native
-  def create1(identifier: ISyntaxToken): EnumDeclarationSyntax = js.native
 }
 

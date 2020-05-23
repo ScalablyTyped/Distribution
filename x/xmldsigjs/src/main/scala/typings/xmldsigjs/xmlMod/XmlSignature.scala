@@ -1,9 +1,8 @@
 package typings.xmldsigjs.xmlMod
 
-import typings.xmldsigjs.AnonAlgorithm
-import typings.xmldsigjs.AnonCanonicalizationMethod
-import typings.xmldsigjs.AnonManifest
-import typings.xmldsigjs.AnonXmlDecryptionTransform
+import typings.xmldsigjs.anon.Algorithm
+import typings.xmldsigjs.anon.Manifest
+import typings.xmldsigjs.anon.XmlDecryptionTransform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,15 +10,15 @@ import scala.scalajs.js.annotation._
 @JSImport("xmldsigjs/build/types/xml", "XmlSignature")
 @js.native
 object XmlSignature extends js.Object {
-  var AlgorithmNamespaces: AnonXmlDecryptionTransform = js.native
-  var AttributeNames: AnonAlgorithm = js.native
+  var AlgorithmNamespaces: XmlDecryptionTransform = js.native
+  var AttributeNames: Algorithm = js.native
   var DefaultCanonMethod: String = js.native
   var DefaultDigestMethod: String = js.native
   var DefaultPrefix: String = js.native
-  var ElementNames: AnonCanonicalizationMethod = js.native
+  var ElementNames: typings.xmldsigjs.anon.CanonicalizationMethod = js.native
   var NamespaceURI: String = js.native
   var NamespaceURIMore: String = js.native
   var NamespaceURIPss: String = js.native
-  var Uri: AnonManifest = js.native
+  var Uri: Manifest = js.native
 }
 

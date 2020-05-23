@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type {number}
-  * @name pc.CURVE_SMOOTHSTEP
-  * @description A smooth step interpolation scheme.
+  * A smooth step interpolation scheme.
   */
 @JSImport("playcanvas", "CURVE_SMOOTHSTEP")
 @js.native

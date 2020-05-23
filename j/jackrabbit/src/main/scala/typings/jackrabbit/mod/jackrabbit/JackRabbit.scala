@@ -1,6 +1,6 @@
 package typings.jackrabbit.mod.jackrabbit
 
-import typings.jackrabbit.AnonAmqp
+import typings.jackrabbit.anon.Amqp
 import typings.node.NodeJS.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait JackRabbit extends EventEmitter {
   def direct(name: String): Exchange = js.native
   def fanout(): Exchange = js.native
   def fanout(name: String): Exchange = js.native
-  def getInternals(): AnonAmqp = js.native
+  def getInternals(): Amqp = js.native
   def topic(): Exchange = js.native
   def topic(name: String): Exchange = js.native
 }

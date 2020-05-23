@@ -1,6 +1,6 @@
 package typings.rbacA.rbacMod
 
-import typings.rbacA.AnonAttributes
+import typings.rbacA.anon.Attributes
 import typings.rbacA.mod.AttributesManager
 import typings.rbacA.mod.Provider
 import typings.rbacA.mod.RBAC
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rbac-a/lib/rbac", JSImport.Namespace)
 @js.native
 class ^[P /* <: Provider */, AM /* <: AttributesManager */] protected () extends RBAC[P, AM] {
-  def this(opts: AnonAttributes[P, AM]) = this()
+  def this(opts: Attributes[P, AM]) = this()
 }
 

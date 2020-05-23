@@ -75,12 +75,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AddWorkingStorageOutput, Unit]
   ): Request[AddWorkingStorageOutput, AWSError] = js.native
   /**
-    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (Glacier or Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
     */
   def assignTapePool(): Request[AssignTapePoolOutput, AWSError] = js.native
   def assignTapePool(callback: js.Function2[/* err */ AWSError, /* data */ AssignTapePoolOutput, Unit]): Request[AssignTapePoolOutput, AWSError] = js.native
   /**
-    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (Glacier or Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
     */
   def assignTapePool(params: AssignTapePoolInput): Request[AssignTapePoolOutput, AWSError] = js.native
   def assignTapePool(
@@ -140,12 +140,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCachediSCSIVolumeOutput, Unit]
   ): Request[CreateCachediSCSIVolumeOutput, AWSError] = js.native
   /**
-    * Creates a Network File System (NFS) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using a NFS interface. This operation is only supported for file gateways.  File gateway requires AWS Security Token Service (AWS STS) to be activated to enable you create a file share. Make sure AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in the AWS Region, activate it. For information about how to activate AWS STS, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.  File gateway does not support creating hard or symbolic links on a file share. 
+    * Creates a Network File System (NFS) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an NFS interface. This operation is only supported for file gateways.  File gateway requires AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in the AWS Region, activate it. For information about how to activate AWS STS, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.  File gateway does not support creating hard or symbolic links on a file share. 
     */
   def createNFSFileShare(): Request[CreateNFSFileShareOutput, AWSError] = js.native
   def createNFSFileShare(callback: js.Function2[/* err */ AWSError, /* data */ CreateNFSFileShareOutput, Unit]): Request[CreateNFSFileShareOutput, AWSError] = js.native
   /**
-    * Creates a Network File System (NFS) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using a NFS interface. This operation is only supported for file gateways.  File gateway requires AWS Security Token Service (AWS STS) to be activated to enable you create a file share. Make sure AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in the AWS Region, activate it. For information about how to activate AWS STS, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.  File gateway does not support creating hard or symbolic links on a file share. 
+    * Creates a Network File System (NFS) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an NFS interface. This operation is only supported for file gateways.  File gateway requires AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in the AWS Region, activate it. For information about how to activate AWS STS, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.  File gateway does not support creating hard or symbolic links on a file share. 
     */
   def createNFSFileShare(params: CreateNFSFileShareInput): Request[CreateNFSFileShareOutput, AWSError] = js.native
   def createNFSFileShare(
@@ -153,12 +153,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNFSFileShareOutput, Unit]
   ): Request[CreateNFSFileShareOutput, AWSError] = js.native
   /**
-    * Creates a Server Message Block (SMB) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway expose file shares using a SMB interface. This operation is only supported for file gateways.  File gateways require AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure that AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in this AWS Region, activate it. For information about how to activate AWS STS, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.  File gateways don't support creating hard or symbolic links on a file share. 
+    * Creates a Server Message Block (SMB) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway expose file shares using an SMB interface. This operation is only supported for file gateways.  File gateways require AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure that AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in this AWS Region, activate it. For information about how to activate AWS STS, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.  File gateways don't support creating hard or symbolic links on a file share. 
     */
   def createSMBFileShare(): Request[CreateSMBFileShareOutput, AWSError] = js.native
   def createSMBFileShare(callback: js.Function2[/* err */ AWSError, /* data */ CreateSMBFileShareOutput, Unit]): Request[CreateSMBFileShareOutput, AWSError] = js.native
   /**
-    * Creates a Server Message Block (SMB) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway expose file shares using a SMB interface. This operation is only supported for file gateways.  File gateways require AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure that AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in this AWS Region, activate it. For information about how to activate AWS STS, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.  File gateways don't support creating hard or symbolic links on a file share. 
+    * Creates a Server Message Block (SMB) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway expose file shares using an SMB interface. This operation is only supported for file gateways.  File gateways require AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure that AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in this AWS Region, activate it. For information about how to activate AWS STS, see Activating and Deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide.  File gateways don't support creating hard or symbolic links on a file share. 
     */
   def createSMBFileShare(params: CreateSMBFileShareInput): Request[CreateSMBFileShareOutput, AWSError] = js.native
   def createSMBFileShare(
@@ -166,12 +166,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSMBFileShareOutput, Unit]
   ): Request[CreateSMBFileShareOutput, AWSError] = js.native
   /**
-    * Initiates a snapshot of a volume. AWS Storage Gateway provides the ability to back up point-in-time snapshots of your data to Amazon Simple Storage (S3) for durable off-site recovery, as well as import the data to an Amazon Elastic Block Store (EBS) volume in Amazon Elastic Compute Cloud (EC2). You can take snapshots of your gateway volume on a scheduled or ad hoc basis. This API enables you to take ad-hoc snapshot. For more information, see Editing a Snapshot Schedule. In the CreateSnapshot request you identify the volume by providing its Amazon Resource Name (ARN). You must also provide description for the snapshot. When AWS Storage Gateway takes the snapshot of specified volume, the snapshot and description appears in the AWS Storage Gateway Console. In response, AWS Storage Gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot. This operation is only supported in stored and cached volume gateway type.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the EC2 API reference.   Volume and snapshot IDs are changing to a longer length ID format. For more information, see the important note on the Welcome page. 
+    * Initiates a snapshot of a volume. AWS Storage Gateway provides the ability to back up point-in-time snapshots of your data to Amazon Simple Storage Service (Amazon S3) for durable off-site recovery, as well as import the data to an Amazon Elastic Block Store (EBS) volume in Amazon Elastic Compute Cloud (EC2). You can take snapshots of your gateway volume on a scheduled or ad hoc basis. This API enables you to take an ad hoc snapshot. For more information, see Editing a Snapshot Schedule. In the CreateSnapshot request you identify the volume by providing its Amazon Resource Name (ARN). You must also provide description for the snapshot. When AWS Storage Gateway takes the snapshot of specified volume, the snapshot and description appears in the AWS Storage Gateway Console. In response, AWS Storage Gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot. This operation is only supported in stored and cached volume gateway type.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the EC2 API reference.   Volume and snapshot IDs are changing to a longer length ID format. For more information, see the important note on the Welcome page. 
     */
   def createSnapshot(): Request[CreateSnapshotOutput, AWSError] = js.native
   def createSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotOutput, Unit]): Request[CreateSnapshotOutput, AWSError] = js.native
   /**
-    * Initiates a snapshot of a volume. AWS Storage Gateway provides the ability to back up point-in-time snapshots of your data to Amazon Simple Storage (S3) for durable off-site recovery, as well as import the data to an Amazon Elastic Block Store (EBS) volume in Amazon Elastic Compute Cloud (EC2). You can take snapshots of your gateway volume on a scheduled or ad hoc basis. This API enables you to take ad-hoc snapshot. For more information, see Editing a Snapshot Schedule. In the CreateSnapshot request you identify the volume by providing its Amazon Resource Name (ARN). You must also provide description for the snapshot. When AWS Storage Gateway takes the snapshot of specified volume, the snapshot and description appears in the AWS Storage Gateway Console. In response, AWS Storage Gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot. This operation is only supported in stored and cached volume gateway type.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the EC2 API reference.   Volume and snapshot IDs are changing to a longer length ID format. For more information, see the important note on the Welcome page. 
+    * Initiates a snapshot of a volume. AWS Storage Gateway provides the ability to back up point-in-time snapshots of your data to Amazon Simple Storage Service (Amazon S3) for durable off-site recovery, as well as import the data to an Amazon Elastic Block Store (EBS) volume in Amazon Elastic Compute Cloud (EC2). You can take snapshots of your gateway volume on a scheduled or ad hoc basis. This API enables you to take an ad hoc snapshot. For more information, see Editing a Snapshot Schedule. In the CreateSnapshot request you identify the volume by providing its Amazon Resource Name (ARN). You must also provide description for the snapshot. When AWS Storage Gateway takes the snapshot of specified volume, the snapshot and description appears in the AWS Storage Gateway Console. In response, AWS Storage Gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot. This operation is only supported in stored and cached volume gateway type.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the EC2 API reference.   Volume and snapshot IDs are changing to a longer length ID format. For more information, see the important note on the Welcome page. 
     */
   def createSnapshot(params: CreateSnapshotInput): Request[CreateSnapshotOutput, AWSError] = js.native
   def createSnapshot(
@@ -207,12 +207,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStorediSCSIVolumeOutput, Unit]
   ): Request[CreateStorediSCSIVolumeOutput, AWSError] = js.native
   /**
-    * Creates a virtual tape by using your own barcode. You write data to the virtual tape and then archive the tape. A barcode is unique and can not be reused if it has already been used on a tape . This applies to barcodes used on deleted tapes. This operation is only supported in the tape gateway type.  Cache storage must be allocated to the gateway before you can create a virtual tape. Use the AddCache operation to add cache storage to a gateway. 
+    * Creates a virtual tape by using your own barcode. You write data to the virtual tape and then archive the tape. A barcode is unique and cannot be reused if it has already been used on a tape. This applies to barcodes used on deleted tapes. This operation is only supported in the tape gateway type.  Cache storage must be allocated to the gateway before you can create a virtual tape. Use the AddCache operation to add cache storage to a gateway. 
     */
   def createTapeWithBarcode(): Request[CreateTapeWithBarcodeOutput, AWSError] = js.native
   def createTapeWithBarcode(callback: js.Function2[/* err */ AWSError, /* data */ CreateTapeWithBarcodeOutput, Unit]): Request[CreateTapeWithBarcodeOutput, AWSError] = js.native
   /**
-    * Creates a virtual tape by using your own barcode. You write data to the virtual tape and then archive the tape. A barcode is unique and can not be reused if it has already been used on a tape . This applies to barcodes used on deleted tapes. This operation is only supported in the tape gateway type.  Cache storage must be allocated to the gateway before you can create a virtual tape. Use the AddCache operation to add cache storage to a gateway. 
+    * Creates a virtual tape by using your own barcode. You write data to the virtual tape and then archive the tape. A barcode is unique and cannot be reused if it has already been used on a tape. This applies to barcodes used on deleted tapes. This operation is only supported in the tape gateway type.  Cache storage must be allocated to the gateway before you can create a virtual tape. Use the AddCache operation to add cache storage to a gateway. 
     */
   def createTapeWithBarcode(params: CreateTapeWithBarcodeInput): Request[CreateTapeWithBarcodeOutput, AWSError] = js.native
   def createTapeWithBarcode(
@@ -232,6 +232,21 @@ trait StorageGateway extends Service {
     params: CreateTapesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTapesOutput, Unit]
   ): Request[CreateTapesOutput, AWSError] = js.native
+  /**
+    * Deletes the automatic tape creation policy of a gateway. If you delete this policy, new virtual tapes must be created manually. Use the Amazon Resource Name (ARN) of the gateway in your request to remove the policy. 
+    */
+  def deleteAutomaticTapeCreationPolicy(): Request[DeleteAutomaticTapeCreationPolicyOutput, AWSError] = js.native
+  def deleteAutomaticTapeCreationPolicy(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAutomaticTapeCreationPolicyOutput, Unit]
+  ): Request[DeleteAutomaticTapeCreationPolicyOutput, AWSError] = js.native
+  /**
+    * Deletes the automatic tape creation policy of a gateway. If you delete this policy, new virtual tapes must be created manually. Use the Amazon Resource Name (ARN) of the gateway in your request to remove the policy. 
+    */
+  def deleteAutomaticTapeCreationPolicy(params: DeleteAutomaticTapeCreationPolicyInput): Request[DeleteAutomaticTapeCreationPolicyOutput, AWSError] = js.native
+  def deleteAutomaticTapeCreationPolicy(
+    params: DeleteAutomaticTapeCreationPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAutomaticTapeCreationPolicyOutput, Unit]
+  ): Request[DeleteAutomaticTapeCreationPolicyOutput, AWSError] = js.native
   /**
     * Deletes the bandwidth rate limits of a gateway. You can delete either the upload and download bandwidth rate limit, or you can delete both. If you delete only one of the limits, the other limit remains unchanged. To specify which gateway to work with, use the Amazon Resource Name (ARN) of the gateway in your request. This operation is supported for the stored volume, cached volume and tape gateway types.
     */
@@ -285,12 +300,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGatewayOutput, Unit]
   ): Request[DeleteGatewayOutput, AWSError] = js.native
   /**
-    * Deletes a snapshot of a volume. You can take snapshots of your gateway volumes on a scheduled or ad hoc basis. This API action enables you to delete a snapshot schedule for a volume. For more information, see Working with Snapshots. In the DeleteSnapshotSchedule request, you identify the volume by providing its Amazon Resource Name (ARN). This operation is only supported in stored and cached volume gateway types.  To list or delete a snapshot, you must use the Amazon EC2 API. in Amazon Elastic Compute Cloud API Reference. 
+    * Deletes a snapshot of a volume. You can take snapshots of your gateway volumes on a scheduled or ad hoc basis. This API action enables you to delete a snapshot schedule for a volume. For more information, see Working with Snapshots. In the DeleteSnapshotSchedule request, you identify the volume by providing its Amazon Resource Name (ARN). This operation is only supported in stored and cached volume gateway types.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, go to DescribeSnapshots in the Amazon Elastic Compute Cloud API Reference. 
     */
   def deleteSnapshotSchedule(): Request[DeleteSnapshotScheduleOutput, AWSError] = js.native
   def deleteSnapshotSchedule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteSnapshotScheduleOutput, Unit]): Request[DeleteSnapshotScheduleOutput, AWSError] = js.native
   /**
-    * Deletes a snapshot of a volume. You can take snapshots of your gateway volumes on a scheduled or ad hoc basis. This API action enables you to delete a snapshot schedule for a volume. For more information, see Working with Snapshots. In the DeleteSnapshotSchedule request, you identify the volume by providing its Amazon Resource Name (ARN). This operation is only supported in stored and cached volume gateway types.  To list or delete a snapshot, you must use the Amazon EC2 API. in Amazon Elastic Compute Cloud API Reference. 
+    * Deletes a snapshot of a volume. You can take snapshots of your gateway volumes on a scheduled or ad hoc basis. This API action enables you to delete a snapshot schedule for a volume. For more information, see Working with Snapshots. In the DeleteSnapshotSchedule request, you identify the volume by providing its Amazon Resource Name (ARN). This operation is only supported in stored and cached volume gateway types.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, go to DescribeSnapshots in the Amazon Elastic Compute Cloud API Reference. 
     */
   def deleteSnapshotSchedule(params: DeleteSnapshotScheduleInput): Request[DeleteSnapshotScheduleOutput, AWSError] = js.native
   def deleteSnapshotSchedule(
@@ -363,12 +378,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBandwidthRateLimitOutput, Unit]
   ): Request[DescribeBandwidthRateLimitOutput, AWSError] = js.native
   /**
-    * Returns information about the cache of a gateway. This operation is only supported in the cached volume, tape and file gateway types. The response includes disk IDs that are configured as cache, and it includes the amount of cache allocated and used.
+    * Returns information about the cache of a gateway. This operation is only supported in the cached volume, tape, and file gateway types. The response includes disk IDs that are configured as cache, and it includes the amount of cache allocated and used.
     */
   def describeCache(): Request[DescribeCacheOutput, AWSError] = js.native
   def describeCache(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCacheOutput, Unit]): Request[DescribeCacheOutput, AWSError] = js.native
   /**
-    * Returns information about the cache of a gateway. This operation is only supported in the cached volume, tape and file gateway types. The response includes disk IDs that are configured as cache, and it includes the amount of cache allocated and used.
+    * Returns information about the cache of a gateway. This operation is only supported in the cached volume, tape, and file gateway types. The response includes disk IDs that are configured as cache, and it includes the amount of cache allocated and used.
     */
   def describeCache(params: DescribeCacheInput): Request[DescribeCacheOutput, AWSError] = js.native
   def describeCache(
@@ -376,12 +391,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCacheOutput, Unit]
   ): Request[DescribeCacheOutput, AWSError] = js.native
   /**
-    * Returns a description of the gateway volumes specified in the request. This operation is only supported in the cached volume gateway types. The list of gateway volumes in the request must be from one gateway. In the response Amazon Storage Gateway returns volume information sorted by volume Amazon Resource Name (ARN).
+    * Returns a description of the gateway volumes specified in the request. This operation is only supported in the cached volume gateway types. The list of gateway volumes in the request must be from one gateway. In the response, AWS Storage Gateway returns volume information sorted by volume Amazon Resource Name (ARN).
     */
   def describeCachediSCSIVolumes(): Request[DescribeCachediSCSIVolumesOutput, AWSError] = js.native
   def describeCachediSCSIVolumes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCachediSCSIVolumesOutput, Unit]): Request[DescribeCachediSCSIVolumesOutput, AWSError] = js.native
   /**
-    * Returns a description of the gateway volumes specified in the request. This operation is only supported in the cached volume gateway types. The list of gateway volumes in the request must be from one gateway. In the response Amazon Storage Gateway returns volume information sorted by volume Amazon Resource Name (ARN).
+    * Returns a description of the gateway volumes specified in the request. This operation is only supported in the cached volume gateway types. The list of gateway volumes in the request must be from one gateway. In the response, AWS Storage Gateway returns volume information sorted by volume Amazon Resource Name (ARN).
     */
   def describeCachediSCSIVolumes(params: DescribeCachediSCSIVolumesInput): Request[DescribeCachediSCSIVolumesOutput, AWSError] = js.native
   def describeCachediSCSIVolumes(
@@ -480,12 +495,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotScheduleOutput, Unit]
   ): Request[DescribeSnapshotScheduleOutput, AWSError] = js.native
   /**
-    * Returns the description of the gateway volumes specified in the request. The list of gateway volumes in the request must be from one gateway. In the response Amazon Storage Gateway returns volume information sorted by volume ARNs. This operation is only supported in stored volume gateway type.
+    * Returns the description of the gateway volumes specified in the request. The list of gateway volumes in the request must be from one gateway. In the response AWS Storage Gateway returns volume information sorted by volume ARNs. This operation is only supported in stored volume gateway type.
     */
   def describeStorediSCSIVolumes(): Request[DescribeStorediSCSIVolumesOutput, AWSError] = js.native
   def describeStorediSCSIVolumes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorediSCSIVolumesOutput, Unit]): Request[DescribeStorediSCSIVolumesOutput, AWSError] = js.native
   /**
-    * Returns the description of the gateway volumes specified in the request. The list of gateway volumes in the request must be from one gateway. In the response Amazon Storage Gateway returns volume information sorted by volume ARNs. This operation is only supported in stored volume gateway type.
+    * Returns the description of the gateway volumes specified in the request. The list of gateway volumes in the request must be from one gateway. In the response AWS Storage Gateway returns volume information sorted by volume ARNs. This operation is only supported in stored volume gateway type.
     */
   def describeStorediSCSIVolumes(params: DescribeStorediSCSIVolumesInput): Request[DescribeStorediSCSIVolumesOutput, AWSError] = js.native
   def describeStorediSCSIVolumes(
@@ -584,12 +599,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DetachVolumeOutput, Unit]
   ): Request[DetachVolumeOutput, AWSError] = js.native
   /**
-    * Disables a tape gateway when the gateway is no longer functioning. For example, if your gateway VM is damaged, you can disable the gateway so you can recover virtual tapes. Use this operation for a tape gateway that is not reachable or not functioning. This operation is only supported in the tape gateway type.  Once a gateway is disabled it cannot be enabled. 
+    * Disables a tape gateway when the gateway is no longer functioning. For example, if your gateway VM is damaged, you can disable the gateway so you can recover virtual tapes. Use this operation for a tape gateway that is not reachable or not functioning. This operation is only supported in the tape gateway type.  After a gateway is disabled, it cannot be enabled. 
     */
   def disableGateway(): Request[DisableGatewayOutput, AWSError] = js.native
   def disableGateway(callback: js.Function2[/* err */ AWSError, /* data */ DisableGatewayOutput, Unit]): Request[DisableGatewayOutput, AWSError] = js.native
   /**
-    * Disables a tape gateway when the gateway is no longer functioning. For example, if your gateway VM is damaged, you can disable the gateway so you can recover virtual tapes. Use this operation for a tape gateway that is not reachable or not functioning. This operation is only supported in the tape gateway type.  Once a gateway is disabled it cannot be enabled. 
+    * Disables a tape gateway when the gateway is no longer functioning. For example, if your gateway VM is damaged, you can disable the gateway so you can recover virtual tapes. Use this operation for a tape gateway that is not reachable or not functioning. This operation is only supported in the tape gateway type.  After a gateway is disabled, it cannot be enabled. 
     */
   def disableGateway(params: DisableGatewayInput): Request[DisableGatewayOutput, AWSError] = js.native
   def disableGateway(
@@ -609,6 +624,21 @@ trait StorageGateway extends Service {
     params: JoinDomainInput,
     callback: js.Function2[/* err */ AWSError, /* data */ JoinDomainOutput, Unit]
   ): Request[JoinDomainOutput, AWSError] = js.native
+  /**
+    * Lists the automatic tape creation policies for a gateway. If there are no automatic tape creation policies for the gateway, it returns an empty list.  This operation is only supported for tape gateways.
+    */
+  def listAutomaticTapeCreationPolicies(): Request[ListAutomaticTapeCreationPoliciesOutput, AWSError] = js.native
+  def listAutomaticTapeCreationPolicies(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAutomaticTapeCreationPoliciesOutput, Unit]
+  ): Request[ListAutomaticTapeCreationPoliciesOutput, AWSError] = js.native
+  /**
+    * Lists the automatic tape creation policies for a gateway. If there are no automatic tape creation policies for the gateway, it returns an empty list.  This operation is only supported for tape gateways.
+    */
+  def listAutomaticTapeCreationPolicies(params: ListAutomaticTapeCreationPoliciesInput): Request[ListAutomaticTapeCreationPoliciesOutput, AWSError] = js.native
+  def listAutomaticTapeCreationPolicies(
+    params: ListAutomaticTapeCreationPoliciesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAutomaticTapeCreationPoliciesOutput, Unit]
+  ): Request[ListAutomaticTapeCreationPoliciesOutput, AWSError] = js.native
   /**
     * Gets a list of the file shares for a specific file gateway, or the list of file shares that belong to the calling user account. This operation is only supported for file gateways.
     */
@@ -753,12 +783,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveTagsFromResourceOutput, Unit]
   ): Request[RemoveTagsFromResourceOutput, AWSError] = js.native
   /**
-    * Resets all cache disks that have encountered a error and makes the disks available for reconfiguration as cache storage. If your cache disk encounters a error, the gateway prevents read and write operations on virtual tapes in the gateway. For example, an error can occur when a disk is corrupted or removed from the gateway. When a cache is reset, the gateway loses its cache storage. At this point you can reconfigure the disks as cache disks. This operation is only supported in the cached volume and tape types.  If the cache disk you are resetting contains data that has not been uploaded to Amazon S3 yet, that data can be lost. After you reset cache disks, there will be no configured cache disks left in the gateway, so you must configure at least one new cache disk for your gateway to function properly. 
+    * Resets all cache disks that have encountered an error and makes the disks available for reconfiguration as cache storage. If your cache disk encounters an error, the gateway prevents read and write operations on virtual tapes in the gateway. For example, an error can occur when a disk is corrupted or removed from the gateway. When a cache is reset, the gateway loses its cache storage. At this point, you can reconfigure the disks as cache disks. This operation is only supported in the cached volume and tape types.  If the cache disk you are resetting contains data that has not been uploaded to Amazon S3 yet, that data can be lost. After you reset cache disks, there will be no configured cache disks left in the gateway, so you must configure at least one new cache disk for your gateway to function properly. 
     */
   def resetCache(): Request[ResetCacheOutput, AWSError] = js.native
   def resetCache(callback: js.Function2[/* err */ AWSError, /* data */ ResetCacheOutput, Unit]): Request[ResetCacheOutput, AWSError] = js.native
   /**
-    * Resets all cache disks that have encountered a error and makes the disks available for reconfiguration as cache storage. If your cache disk encounters a error, the gateway prevents read and write operations on virtual tapes in the gateway. For example, an error can occur when a disk is corrupted or removed from the gateway. When a cache is reset, the gateway loses its cache storage. At this point you can reconfigure the disks as cache disks. This operation is only supported in the cached volume and tape types.  If the cache disk you are resetting contains data that has not been uploaded to Amazon S3 yet, that data can be lost. After you reset cache disks, there will be no configured cache disks left in the gateway, so you must configure at least one new cache disk for your gateway to function properly. 
+    * Resets all cache disks that have encountered an error and makes the disks available for reconfiguration as cache storage. If your cache disk encounters an error, the gateway prevents read and write operations on virtual tapes in the gateway. For example, an error can occur when a disk is corrupted or removed from the gateway. When a cache is reset, the gateway loses its cache storage. At this point, you can reconfigure the disks as cache disks. This operation is only supported in the cached volume and tape types.  If the cache disk you are resetting contains data that has not been uploaded to Amazon S3 yet, that data can be lost. After you reset cache disks, there will be no configured cache disks left in the gateway, so you must configure at least one new cache disk for your gateway to function properly. 
     */
   def resetCache(params: ResetCacheInput): Request[ResetCacheOutput, AWSError] = js.native
   def resetCache(
@@ -818,12 +848,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SetSMBGuestPasswordOutput, Unit]
   ): Request[SetSMBGuestPasswordOutput, AWSError] = js.native
   /**
-    * Shuts down a gateway. To specify which gateway to shut down, use the Amazon Resource Name (ARN) of the gateway in the body of your request. The operation shuts down the gateway service component running in the gateway's virtual machine (VM) and not the host VM.  If you want to shut down the VM, it is recommended that you first shut down the gateway component in the VM to avoid unpredictable conditions.  After the gateway is shutdown, you cannot call any other API except StartGateway, DescribeGatewayInformation, and ListGateways. For more information, see ActivateGateway. Your applications cannot read from or write to the gateway's storage volumes, and there are no snapshots taken.  When you make a shutdown request, you will get a 200 OK success response immediately. However, it might take some time for the gateway to shut down. You can call the DescribeGatewayInformation API to check the status. For more information, see ActivateGateway.  If do not intend to use the gateway again, you must delete the gateway (using DeleteGateway) to no longer pay software charges associated with the gateway.
+    * Shuts down a gateway. To specify which gateway to shut down, use the Amazon Resource Name (ARN) of the gateway in the body of your request. The operation shuts down the gateway service component running in the gateway's virtual machine (VM) and not the host VM.  If you want to shut down the VM, it is recommended that you first shut down the gateway component in the VM to avoid unpredictable conditions.  After the gateway is shutdown, you cannot call any other API except StartGateway, DescribeGatewayInformation and ListGateways. For more information, see ActivateGateway. Your applications cannot read from or write to the gateway's storage volumes, and there are no snapshots taken.  When you make a shutdown request, you will get a 200 OK success response immediately. However, it might take some time for the gateway to shut down. You can call the DescribeGatewayInformation API to check the status. For more information, see ActivateGateway.  If do not intend to use the gateway again, you must delete the gateway (using DeleteGateway) to no longer pay software charges associated with the gateway.
     */
   def shutdownGateway(): Request[ShutdownGatewayOutput, AWSError] = js.native
   def shutdownGateway(callback: js.Function2[/* err */ AWSError, /* data */ ShutdownGatewayOutput, Unit]): Request[ShutdownGatewayOutput, AWSError] = js.native
   /**
-    * Shuts down a gateway. To specify which gateway to shut down, use the Amazon Resource Name (ARN) of the gateway in the body of your request. The operation shuts down the gateway service component running in the gateway's virtual machine (VM) and not the host VM.  If you want to shut down the VM, it is recommended that you first shut down the gateway component in the VM to avoid unpredictable conditions.  After the gateway is shutdown, you cannot call any other API except StartGateway, DescribeGatewayInformation, and ListGateways. For more information, see ActivateGateway. Your applications cannot read from or write to the gateway's storage volumes, and there are no snapshots taken.  When you make a shutdown request, you will get a 200 OK success response immediately. However, it might take some time for the gateway to shut down. You can call the DescribeGatewayInformation API to check the status. For more information, see ActivateGateway.  If do not intend to use the gateway again, you must delete the gateway (using DeleteGateway) to no longer pay software charges associated with the gateway.
+    * Shuts down a gateway. To specify which gateway to shut down, use the Amazon Resource Name (ARN) of the gateway in the body of your request. The operation shuts down the gateway service component running in the gateway's virtual machine (VM) and not the host VM.  If you want to shut down the VM, it is recommended that you first shut down the gateway component in the VM to avoid unpredictable conditions.  After the gateway is shutdown, you cannot call any other API except StartGateway, DescribeGatewayInformation and ListGateways. For more information, see ActivateGateway. Your applications cannot read from or write to the gateway's storage volumes, and there are no snapshots taken.  When you make a shutdown request, you will get a 200 OK success response immediately. However, it might take some time for the gateway to shut down. You can call the DescribeGatewayInformation API to check the status. For more information, see ActivateGateway.  If do not intend to use the gateway again, you must delete the gateway (using DeleteGateway) to no longer pay software charges associated with the gateway.
     */
   def shutdownGateway(params: ShutdownGatewayInput): Request[ShutdownGatewayOutput, AWSError] = js.native
   def shutdownGateway(
@@ -856,6 +886,21 @@ trait StorageGateway extends Service {
     params: StartGatewayInput,
     callback: js.Function2[/* err */ AWSError, /* data */ StartGatewayOutput, Unit]
   ): Request[StartGatewayOutput, AWSError] = js.native
+  /**
+    * Updates the automatic tape creation policy of a gateway. Use this to update the policy with a new set of automatic tape creation rules. This is only supported for tape gateways. By default, there is no automatic tape creation policy.  A gateway can have only one automatic tape creation policy. 
+    */
+  def updateAutomaticTapeCreationPolicy(): Request[UpdateAutomaticTapeCreationPolicyOutput, AWSError] = js.native
+  def updateAutomaticTapeCreationPolicy(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAutomaticTapeCreationPolicyOutput, Unit]
+  ): Request[UpdateAutomaticTapeCreationPolicyOutput, AWSError] = js.native
+  /**
+    * Updates the automatic tape creation policy of a gateway. Use this to update the policy with a new set of automatic tape creation rules. This is only supported for tape gateways. By default, there is no automatic tape creation policy.  A gateway can have only one automatic tape creation policy. 
+    */
+  def updateAutomaticTapeCreationPolicy(params: UpdateAutomaticTapeCreationPolicyInput): Request[UpdateAutomaticTapeCreationPolicyOutput, AWSError] = js.native
+  def updateAutomaticTapeCreationPolicy(
+    params: UpdateAutomaticTapeCreationPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAutomaticTapeCreationPolicyOutput, Unit]
+  ): Request[UpdateAutomaticTapeCreationPolicyOutput, AWSError] = js.native
   /**
     * Updates the bandwidth rate limits of a gateway. You can update both the upload and download bandwidth rate limit or specify only one of the two. If you don't set a bandwidth rate limit, the existing rate limit remains. This operation is supported for the stored volume, cached volume and tape gateway types.' By default, a gateway's bandwidth rate limits are not set. If you don't set any limit, the gateway does not have any limitations on its bandwidth usage and could potentially use the maximum available bandwidth. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.
     */

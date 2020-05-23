@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ydn.db.Iterator")
 @js.native
-class Iterator () extends js.Object {
+trait Iterator extends js.Object {
   def getKey(): js.Any = js.native
   def getPrimaryKey(): js.Any = js.native
   def join(peer_store_name: String): js.Any = js.native

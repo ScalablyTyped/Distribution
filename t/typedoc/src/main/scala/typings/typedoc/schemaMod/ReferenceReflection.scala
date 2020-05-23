@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {-readonly [ K2 in 'type' | 'defaultValue' | 'overwrites' | 'inheritedFrom' | 'extendedTypes' | 'extendedBy' | 'implementedTypes' | 'implementedBy' | 'implementationOf' ]: typedoc.typedoc/dist/lib/models.DeclarationReflection[K2] extends typedoc.typedoc/dist/lib/serialization/schema.Primitive? typedoc.typedoc/dist/lib/models.DeclarationReflection[K2] : typedoc.typedoc/dist/lib/serialization/schema.ModelToObject<typedoc.typedoc/dist/lib/models.DeclarationReflection[K2]>}
-- Dropped {-readonly [ K2 in never ]: typedoc.typedoc/dist/lib/models.ReferenceReflection[K2] extends typedoc.typedoc/dist/lib/serialization/schema.Primitive? typedoc.typedoc/dist/lib/models.ReferenceReflection[K2] : typedoc.typedoc/dist/lib/serialization/schema.ModelToObject<typedoc.typedoc/dist/lib/models.ReferenceReflection[K2]>} */ /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- Dropped {-readonly [ K2 in never ]: typedoc.typedoc/dist/lib/models.ReferenceReflection[K2] extends typedoc.typedoc/dist/lib/serialization/schema.Primitive? typedoc.typedoc/dist/lib/models.ReferenceReflection[K2] : typedoc.typedoc/dist/lib/serialization/schema.ModelToObject<typedoc.typedoc/dist/lib/models.ReferenceReflection[K2]>} */ /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait ReferenceReflection extends ContainerReflection {
   var target: Double
 }

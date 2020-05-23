@@ -12,27 +12,27 @@ sealed trait DiagnosticSeverity extends js.Object
 @js.native
 object DiagnosticSeverity extends js.Object {
   /**
-  		 * Something not allowed by the rules of a language or other means.
-  		 */
+    * Something not allowed by the rules of a language or other means.
+    */
   @js.native
   sealed trait Error extends DiagnosticSeverity
   
   /**
-  		 * Something to hint to a better way of doing it, like proposing
-  		 * a refactoring.
-  		 */
+    * Something to hint to a better way of doing it, like proposing
+    * a refactoring.
+    */
   @js.native
   sealed trait Hint extends DiagnosticSeverity
   
   /**
-  		 * Something to inform about but not a problem.
-  		 */
+    * Something to inform about but not a problem.
+    */
   @js.native
   sealed trait Information extends DiagnosticSeverity
   
   /**
-  		 * Something suspicious but allowed.
-  		 */
+    * Something suspicious but allowed.
+    */
   @js.native
   sealed trait Warning extends DiagnosticSeverity
   

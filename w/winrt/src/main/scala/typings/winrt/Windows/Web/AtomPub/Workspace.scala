@@ -12,28 +12,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Web.AtomPub.Workspace")
-@js.native
-class Workspace () extends IWorkspace {
-  /* CompleteClass */
-  override var attributeExtensions: IVector[SyndicationAttribute] = js.native
-  /* CompleteClass */
-  override var baseUri: Uri = js.native
-  /* CompleteClass */
-  override var collections: IVectorView[ResourceCollection] = js.native
-  /* CompleteClass */
-  override var elementExtensions: IVector[ISyndicationNode] = js.native
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var nodeName: String = js.native
-  /* CompleteClass */
-  override var nodeNamespace: String = js.native
-  /* CompleteClass */
-  override var nodeValue: String = js.native
-  /* CompleteClass */
-  override var title: ISyndicationText = js.native
-  /* CompleteClass */
-  override def getXmlDocument(format: SyndicationFormat): XmlDocument = js.native
+trait Workspace extends IWorkspace
+
+object Workspace {
+  @scala.inline
+  def apply(
+    attributeExtensions: IVector[SyndicationAttribute],
+    baseUri: Uri,
+    collections: IVectorView[ResourceCollection],
+    elementExtensions: IVector[ISyndicationNode],
+    getXmlDocument: SyndicationFormat => XmlDocument,
+    language: String,
+    nodeName: String,
+    nodeNamespace: String,
+    nodeValue: String,
+    title: ISyndicationText
+  ): Workspace = {
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions.asInstanceOf[js.Any], baseUri = baseUri.asInstanceOf[js.Any], collections = collections.asInstanceOf[js.Any], elementExtensions = elementExtensions.asInstanceOf[js.Any], getXmlDocument = js.Any.fromFunction1(getXmlDocument), language = language.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeNamespace = nodeNamespace.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Workspace]
+  }
 }
 

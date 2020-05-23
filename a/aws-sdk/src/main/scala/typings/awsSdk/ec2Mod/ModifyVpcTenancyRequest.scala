@@ -22,9 +22,9 @@ trait ModifyVpcTenancyRequest extends js.Object {
 
 object ModifyVpcTenancyRequest {
   @scala.inline
-  def apply(InstanceTenancy: VpcTenancy, VpcId: VpcId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): ModifyVpcTenancyRequest = {
+  def apply(InstanceTenancy: VpcTenancy, VpcId: VpcId, DryRun: js.UndefOr[Boolean] = js.undefined): ModifyVpcTenancyRequest = {
     val __obj = js.Dynamic.literal(InstanceTenancy = InstanceTenancy.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcTenancyRequest]
   }
 }

@@ -1,13 +1,13 @@
 package typings.relayRuntime.readerNodeMod
 
-import typings.relayRuntime.AnonRefetch
+import typings.relayRuntime.anon.Refetch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReaderRefetchableFragment extends ReaderFragment {
   @JSName("metadata")
-  val metadata_ReaderRefetchableFragment: AnonRefetch
+  val metadata_ReaderRefetchableFragment: Refetch
 }
 
 object ReaderRefetchableFragment {
@@ -15,7 +15,7 @@ object ReaderRefetchableFragment {
   def apply(
     argumentDefinitions: js.Array[ReaderArgumentDefinition],
     kind: String,
-    metadata: AnonRefetch,
+    metadata: Refetch,
     name: String,
     selections: js.Array[ReaderSelection],
     `type`: String

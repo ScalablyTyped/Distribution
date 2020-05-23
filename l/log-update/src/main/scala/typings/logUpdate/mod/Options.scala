@@ -23,7 +23,7 @@ object Options {
   @scala.inline
   def apply(showCursor: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showCursor)) __obj.updateDynamic("showCursor")(showCursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCursor)) __obj.updateDynamic("showCursor")(showCursor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

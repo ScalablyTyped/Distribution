@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type Action[S, R] = (typings.vuex.mod.ActionHandler[S, R]) | (typings.vuex.mod.ActionObject[S, R])
+  type ActionErrorSubscriber[P, S] = js.Function3[/* action */ P, /* state */ S, /* error */ typings.std.Error, js.Any]
   type ActionHandler[S, R] = js.ThisFunction2[
     /* this */ typings.vuex.mod.Store[R], 
     /* injectee */ typings.vuex.mod.ActionContext[S, R], 

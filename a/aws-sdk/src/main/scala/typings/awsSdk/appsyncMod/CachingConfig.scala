@@ -18,10 +18,10 @@ trait CachingConfig extends js.Object {
 
 object CachingConfig {
   @scala.inline
-  def apply(cachingKeys: CachingKeys = null, ttl: Int | Double = null): CachingConfig = {
+  def apply(cachingKeys: CachingKeys = null, ttl: js.UndefOr[Long] = js.undefined): CachingConfig = {
     val __obj = js.Dynamic.literal()
     if (cachingKeys != null) __obj.updateDynamic("cachingKeys")(cachingKeys.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachingConfig]
   }
 }

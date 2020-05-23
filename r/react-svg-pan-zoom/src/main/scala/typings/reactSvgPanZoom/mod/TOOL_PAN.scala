@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-svg-pan-zoom", "TOOL_PAN")
 @js.native
-object TOOL_PAN
-  extends TopLevel[typings.reactSvgPanZoom.reactSvgPanZoomStrings.pan]
+object TOOL_PAN extends TopLevel[/* "bottom" */ String]
 

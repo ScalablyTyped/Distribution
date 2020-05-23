@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.PartialIHotkeysDialogProp
+import typings.blueprintjsCore.anon.PartialIHotkeysDialogProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

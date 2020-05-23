@@ -1,10 +1,10 @@
 package typings.apolloClient.queryManagerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.apolloClient.AnonAssumeImmutableResults
-import typings.apolloClient.AnonData
-import typings.apolloClient.AnonDocument
-import typings.apolloClient.ReadonlydocumentReadonlyD
+import typings.apolloClient.anon.AssumeImmutableResults
+import typings.apolloClient.anon.Data
+import typings.apolloClient.anon.Document
+import typings.apolloClient.anon.ReadonlydocumentReadonlyD
 import typings.apolloClient.localStateMod.LocalState
 import typings.apolloClient.mutationsMod.MutationStore
 import typings.apolloClient.observableMod.Observable
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-client/core/QueryManager", "QueryManager")
 @js.native
 class QueryManager[TStore] protected () extends js.Object {
-  def this(hasLinkQueryDeduplicationStoreOnBroadcastSsrModeClientAwarenessLocalStateAssumeImmutableResults: AnonAssumeImmutableResults[TStore]) = this()
+  def this(hasLinkQueryDeduplicationStoreOnBroadcastSsrModeClientAwarenessLocalStateAssumeImmutableResults: AssumeImmutableResults[TStore]) = this()
   val assumeImmutableResults: Boolean = js.native
   var clientAwareness: js.Any = js.native
   var dataStore: DataStore[TStore] = js.native
@@ -72,11 +72,11 @@ class QueryManager[TStore] protected () extends js.Object {
     fetchMoreForQueryId: String
   ): js.Promise[FetchResult[T, Record[String, _], Record[String, _]]] = js.native
   def generateQueryId(): String = js.native
-  def getCurrentQueryResult[T](observableQuery: ObservableQuery[T, OperationVariables]): AnonData[T] = js.native
-  def getCurrentQueryResult[T](observableQuery: ObservableQuery[T, OperationVariables], optimistic: Boolean): AnonData[T] = js.native
+  def getCurrentQueryResult[T](observableQuery: ObservableQuery[T, OperationVariables]): Data[T] = js.native
+  def getCurrentQueryResult[T](observableQuery: ObservableQuery[T, OperationVariables], optimistic: Boolean): Data[T] = js.native
   def getLocalState(): LocalState[TStore] = js.native
-  def getQueryWithPreviousResult[TData, TVariables](queryIdOrObservable: String): AnonDocument[TVariables] = js.native
-  def getQueryWithPreviousResult[TData, TVariables](queryIdOrObservable: ObservableQuery[TData, TVariables]): AnonDocument[TVariables] = js.native
+  def getQueryWithPreviousResult[TData, TVariables](queryIdOrObservable: String): Document[TVariables] = js.native
+  def getQueryWithPreviousResult[TData, TVariables](queryIdOrObservable: ObservableQuery[TData, TVariables]): Document[TVariables] = js.native
   def mutate[T](
     hasMutationVariablesOptimisticResponseUpdateQueriesRefetchQueriesAwaitRefetchQueriesUpdateErrorPolicyFetchPolicyContext: MutationOptions[StringDictionary[_], OperationVariables]
   ): js.Promise[FetchResult[T, Record[String, _], Record[String, _]]] = js.native

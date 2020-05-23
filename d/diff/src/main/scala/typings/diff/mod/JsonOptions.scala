@@ -27,9 +27,9 @@ object JsonOptions {
     undefinedReplacement: js.Any = null
   ): JsonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(newlineIsToken)) __obj.updateDynamic("newlineIsToken")(newlineIsToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newlineIsToken)) __obj.updateDynamic("newlineIsToken")(newlineIsToken.get.asInstanceOf[js.Any])
     if (stringifyReplacer != null) __obj.updateDynamic("stringifyReplacer")(js.Any.fromFunction2(stringifyReplacer))
     if (undefinedReplacement != null) __obj.updateDynamic("undefinedReplacement")(undefinedReplacement.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonOptions]

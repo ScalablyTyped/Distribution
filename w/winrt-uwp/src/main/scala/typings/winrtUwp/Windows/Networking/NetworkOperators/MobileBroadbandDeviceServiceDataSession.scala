@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a device service data session which allows the caller to write data to the modem on a mobile broadband device service. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceDataSession")
 @js.native
-abstract class MobileBroadbandDeviceServiceDataSession () extends js.Object {
+trait MobileBroadbandDeviceServiceDataSession extends js.Object {
   /** An event that indicates that data was received on the MobileBroadbandDeviceServiceDataSession object after the WriteDataAsync method was called. */
   @JSName("ondatareceived")
   var ondatareceived_Original: TypedEventHandler[

@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.std.Node
-import typings.xmlCrypto.AnonAttrs
-import typings.xmlCrypto.AnonCanonicalizationAlgorithm
+import typings.xmlCrypto.anon.Attrs
+import typings.xmlCrypto.anon.CanonicalizationAlgorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignedXml () extends js.Object {
   def this(idMode: String) = this()
-  def this(idMode: String, options: AnonCanonicalizationAlgorithm) = this()
-  def this(idMode: Null, options: AnonCanonicalizationAlgorithm) = this()
+  def this(idMode: String, options: CanonicalizationAlgorithm) = this()
+  def this(idMode: Null, options: CanonicalizationAlgorithm) = this()
   var canonicalizationAlgorithm: String = js.native
   var keyInfoProvider: FileKeyInfo = js.native
   var references: js.Array[Reference] = js.native
@@ -33,7 +33,7 @@ class SignedXml () extends js.Object {
   ): Unit = js.native
   def checkSignature(xml: String): Boolean = js.native
   def computeSignature(xml: String): Unit = js.native
-  def computeSignature(xml: String, opts: AnonAttrs): Unit = js.native
+  def computeSignature(xml: String, opts: Attrs): Unit = js.native
   def getOriginalXmlWithIds(): String = js.native
   def getSignatureXml(): String = js.native
   def getSignedXml(): String = js.native

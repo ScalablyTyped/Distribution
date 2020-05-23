@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Http.Filters
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object HttpCacheWriteBehavior extends js.Object {
   /** Never write the response to the local HTTP cache. */
   @js.native
   sealed trait noCache extends HttpCacheWriteBehavior
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HttpCacheWriteBehavior with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object noCache extends TopLevel[noCache with Double]
   
 }
 

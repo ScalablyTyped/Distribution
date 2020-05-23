@@ -1,6 +1,6 @@
 package typings.puppeteer.mod
 
-import typings.puppeteer.AnonBottom
+import typings.puppeteer.anon.Bottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +42,7 @@ trait PDFOptions extends js.Object {
     */
   var landscape: js.UndefOr[Boolean] = js.undefined
   /** Paper margins, defaults to none. */
-  var margin: js.UndefOr[AnonBottom] = js.undefined
+  var margin: js.UndefOr[Bottom] = js.undefined
   /**
     * Paper ranges to print, e.g., '1-5, 8, 11-13'.
     * @default '' which means print all pages.
@@ -83,27 +83,27 @@ object PDFOptions {
     headerTemplate: String = null,
     height: LayoutDimension = null,
     landscape: js.UndefOr[Boolean] = js.undefined,
-    margin: AnonBottom = null,
+    margin: Bottom = null,
     pageRanges: String = null,
     path: String = null,
     preferCSSPageSize: js.UndefOr[Boolean] = js.undefined,
     printBackground: js.UndefOr[Boolean] = js.undefined,
-    scale: Int | Double = null,
+    scale: js.UndefOr[Double] = js.undefined,
     width: LayoutDimension = null
   ): PDFOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(displayHeaderFooter)) __obj.updateDynamic("displayHeaderFooter")(displayHeaderFooter.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayHeaderFooter)) __obj.updateDynamic("displayHeaderFooter")(displayHeaderFooter.get.asInstanceOf[js.Any])
     if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.get.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (pageRanges != null) __obj.updateDynamic("pageRanges")(pageRanges.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferCSSPageSize)) __obj.updateDynamic("preferCSSPageSize")(preferCSSPageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferCSSPageSize)) __obj.updateDynamic("preferCSSPageSize")(preferCSSPageSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFOptions]
   }

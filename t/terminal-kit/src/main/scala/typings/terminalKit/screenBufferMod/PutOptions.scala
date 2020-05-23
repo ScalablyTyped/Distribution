@@ -27,10 +27,10 @@ object PutOptions {
     wrap: Boolean,
     x: Double,
     y: Double,
-    direction: right | left | up | down = null
+    direction: js.UndefOr[Null | right | left | up | down] = js.undefined
   ): PutOptions = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutOptions]
   }
 }

@@ -24,10 +24,10 @@ object YearHeaderProps {
     onPrevDecade: () => Unit,
     prefixCls: String,
     viewDate: DateType,
-    value: DateType = null
+    value: js.UndefOr[Null | DateType] = js.undefined
   ): YearHeaderProps[DateType] = {
     val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], onDecadeClick = js.Any.fromFunction0(onDecadeClick), onNextDecade = js.Any.fromFunction0(onNextDecade), onPrevDecade = js.Any.fromFunction0(onPrevDecade), prefixCls = prefixCls.asInstanceOf[js.Any], viewDate = viewDate.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[YearHeaderProps[DateType]]
   }
 }

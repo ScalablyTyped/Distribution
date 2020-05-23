@@ -47,18 +47,18 @@ object IonNav {
     animation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
     onIonNavDidChange: /* event */ CustomEvent[Unit] => Unit = null,
     onIonNavWillChange: /* event */ CustomEvent[Unit] => Unit = null,
-    root: NavComponent = null,
+    root: js.UndefOr[Null | NavComponent] = js.undefined,
     rootParams: ComponentProps[Null] = null,
     swipeGesture: js.UndefOr[Boolean] = js.undefined
   ): IonNav = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(js.Any.fromFunction2(animation))
     if (onIonNavDidChange != null) __obj.updateDynamic("onIonNavDidChange")(js.Any.fromFunction1(onIonNavDidChange))
     if (onIonNavWillChange != null) __obj.updateDynamic("onIonNavWillChange")(js.Any.fromFunction1(onIonNavWillChange))
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (rootParams != null) __obj.updateDynamic("rootParams")(rootParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeGesture)) __obj.updateDynamic("swipeGesture")(swipeGesture.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeGesture)) __obj.updateDynamic("swipeGesture")(swipeGesture.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonNav]
   }
 }

@@ -15,18 +15,18 @@ trait Option extends js.Object {
 object Option {
   @scala.inline
   def apply(
-    history: Int | Double = null,
-    interval: Int | Double = null,
+    history: js.UndefOr[Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
     play: js.UndefOr[Boolean] = js.undefined,
-    smoothing: Int | Double = null,
-    threshold: Int | Double = null
+    smoothing: js.UndefOr[Double] = js.undefined,
+    threshold: js.UndefOr[Double] = js.undefined
   ): Option = {
     val __obj = js.Dynamic.literal()
-    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
-    if (smoothing != null) __obj.updateDynamic("smoothing")(smoothing.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothing)) __obj.updateDynamic("smoothing")(smoothing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

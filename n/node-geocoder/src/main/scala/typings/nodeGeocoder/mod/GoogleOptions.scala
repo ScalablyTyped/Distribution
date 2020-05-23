@@ -30,7 +30,7 @@ object GoogleOptions {
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
     if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludePartialMatches)) __obj.updateDynamic("excludePartialMatches")(excludePartialMatches.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludePartialMatches)) __obj.updateDynamic("excludePartialMatches")(excludePartialMatches.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleOptions]

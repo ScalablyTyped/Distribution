@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsCore.backendMod
 
-import typings.tensorflowTfjsCore.AnonUnreliable
+import typings.tensorflowTfjsCore.anon.Unreliable
 import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import typings.tensorflowTfjsCore.convUtilMod.Conv3DInfo
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
@@ -177,7 +177,7 @@ class KernelBackend ()
   def maxPoolBackprop(dy: Tensor4D, x: Tensor4D, y: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   def maximum(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   /* CompleteClass */
-  override def memory(): AnonUnreliable = js.native
+  override def memory(): Unreliable = js.native
   def min(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
   def minimum(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def mod(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native

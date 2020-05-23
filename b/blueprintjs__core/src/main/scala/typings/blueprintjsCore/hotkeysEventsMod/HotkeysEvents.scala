@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.hotkeysEventsMod
 
-import typings.blueprintjsCore.IHotkeysPropschildrenReacChildren
+import typings.blueprintjsCore.anon.IHotkeysPropschildrenReacChildren
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

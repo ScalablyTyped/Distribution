@@ -21,5 +21,13 @@ object getParsedCommandLineOfConfigFile extends js.Object {
     extendedConfigCache: Map[ExtendedConfigCacheEntry],
     watchOptionsToExtend: WatchOptions
   ): js.UndefOr[ParsedCommandLine] = js.native
+  def apply(
+    configFileName: java.lang.String,
+    optionsToExtend: CompilerOptions,
+    host: ParseConfigFileHost,
+    extendedConfigCache: Map[ExtendedConfigCacheEntry],
+    watchOptionsToExtend: WatchOptions,
+    extraFileExtensions: js.Array[FileExtensionInfo]
+  ): js.UndefOr[ParsedCommandLine] = js.native
 }
 

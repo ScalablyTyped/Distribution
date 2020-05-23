@@ -1,6 +1,6 @@
 package typings.puppeteer.mod
 
-import typings.puppeteer.AnonSteps
+import typings.puppeteer.anon.Steps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait Mouse extends js.Object {
     * @param options The mouse move options.
     */
   def move(x: Double, y: Double): js.Promise[Unit] = js.native
-  def move(x: Double, y: Double, options: AnonSteps): js.Promise[Unit] = js.native
+  def move(x: Double, y: Double, options: Steps): js.Promise[Unit] = js.native
   /**
     * Dispatches a `mouseup` event.
     * @param options The mouse press options.

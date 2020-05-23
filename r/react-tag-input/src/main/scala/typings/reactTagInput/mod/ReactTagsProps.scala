@@ -2,8 +2,8 @@ package typings.reactTagInput.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ReactChild
-import typings.reactTagInput.AnonActiveSuggestion
-import typings.reactTagInput.AnonId
+import typings.reactTagInput.anon.ActiveSuggestion
+import typings.reactTagInput.anon.Id
 import typings.reactTagInput.reactTagInputNumbers.`1`
 import typings.reactTagInput.reactTagInputStrings.`inline`
 import typings.reactTagInput.reactTagInputStrings.bottom
@@ -19,9 +19,9 @@ trait ReactTagsProps extends js.Object {
   var allowUnique: js.UndefOr[Boolean] = js.undefined
   var autocomplete: js.UndefOr[Boolean | `1`] = js.undefined
   var autofocus: js.UndefOr[Boolean] = js.undefined
-  var classNames: js.UndefOr[AnonActiveSuggestion] = js.undefined
+  var classNames: js.UndefOr[ActiveSuggestion] = js.undefined
   var delimiters: js.UndefOr[js.Array[Double]] = js.undefined
-  var handleDrag: js.UndefOr[js.Function3[/* tag */ AnonId, /* currPos */ Double, /* newPos */ Double, Unit]] = js.undefined
+  var handleDrag: js.UndefOr[js.Function3[/* tag */ Id, /* currPos */ Double, /* newPos */ Double, Unit]] = js.undefined
   var handleFilterSuggestions: js.UndefOr[
     js.Function2[
       /* textInputValue */ String, 
@@ -49,14 +49,14 @@ trait ReactTagsProps extends js.Object {
   var shouldRenderSuggestions: js.UndefOr[js.Function1[/* query */ String, Boolean]] = js.undefined
   var suggestions: js.UndefOr[js.Array[Tag]] = js.undefined
   var tags: js.UndefOr[js.Array[Tag]] = js.undefined
-  def handleAddition(tag: AnonId): Unit
+  def handleAddition(tag: Id): Unit
   def handleDelete(i: Double): Unit
 }
 
 object ReactTagsProps {
   @scala.inline
   def apply(
-    handleAddition: AnonId => Unit,
+    handleAddition: Id => Unit,
     handleDelete: Double => Unit,
     allowAdditionFromPaste: js.UndefOr[Boolean] = js.undefined,
     allowDeleteFromEmptyInput: js.UndefOr[Boolean] = js.undefined,
@@ -64,9 +64,9 @@ object ReactTagsProps {
     allowUnique: js.UndefOr[Boolean] = js.undefined,
     autocomplete: Boolean | `1` = null,
     autofocus: js.UndefOr[Boolean] = js.undefined,
-    classNames: AnonActiveSuggestion = null,
+    classNames: ActiveSuggestion = null,
     delimiters: js.Array[Double] = null,
-    handleDrag: (/* tag */ AnonId, /* currPos */ Double, /* newPos */ Double) => Unit = null,
+    handleDrag: (/* tag */ Id, /* currPos */ Double, /* newPos */ Double) => Unit = null,
     handleFilterSuggestions: (/* textInputValue */ String, /* possibleSuggestionsArray */ js.Array[Tag]) => js.Array[Tag] = null,
     handleInputBlur: /* textInputValue */ String => Unit = null,
     handleInputChange: /* value */ String => Unit = null,
@@ -77,8 +77,8 @@ object ReactTagsProps {
     inputFieldPosition: top | bottom | `inline` = null,
     inputValue: String = null,
     labelField: String = null,
-    maxLength: Int | Double = null,
-    minQueryLength: Int | Double = null,
+    maxLength: js.UndefOr[Double] = js.undefined,
+    minQueryLength: js.UndefOr[Double] = js.undefined,
     name: String = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
@@ -90,12 +90,12 @@ object ReactTagsProps {
     tags: js.Array[Tag] = null
   ): ReactTagsProps = {
     val __obj = js.Dynamic.literal(handleAddition = js.Any.fromFunction1(handleAddition), handleDelete = js.Any.fromFunction1(handleDelete))
-    if (!js.isUndefined(allowAdditionFromPaste)) __obj.updateDynamic("allowAdditionFromPaste")(allowAdditionFromPaste.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDeleteFromEmptyInput)) __obj.updateDynamic("allowDeleteFromEmptyInput")(allowDeleteFromEmptyInput.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDragDrop)) __obj.updateDynamic("allowDragDrop")(allowDragDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowUnique)) __obj.updateDynamic("allowUnique")(allowUnique.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAdditionFromPaste)) __obj.updateDynamic("allowAdditionFromPaste")(allowAdditionFromPaste.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDeleteFromEmptyInput)) __obj.updateDynamic("allowDeleteFromEmptyInput")(allowDeleteFromEmptyInput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDragDrop)) __obj.updateDynamic("allowDragDrop")(allowDragDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnique)) __obj.updateDynamic("allowUnique")(allowUnique.get.asInstanceOf[js.Any])
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
     if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters.asInstanceOf[js.Any])
     if (handleDrag != null) __obj.updateDynamic("handleDrag")(js.Any.fromFunction3(handleDrag))
@@ -105,18 +105,18 @@ object ReactTagsProps {
     if (handleInputFocus != null) __obj.updateDynamic("handleInputFocus")(js.Any.fromFunction1(handleInputFocus))
     if (handleTagClick != null) __obj.updateDynamic("handleTagClick")(js.Any.fromFunction1(handleTagClick))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (inputFieldPosition != null) __obj.updateDynamic("inputFieldPosition")(inputFieldPosition.asInstanceOf[js.Any])
     if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (minQueryLength != null) __obj.updateDynamic("minQueryLength")(minQueryLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minQueryLength)) __obj.updateDynamic("minQueryLength")(minQueryLength.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (removeComponent != null) __obj.updateDynamic("removeComponent")(removeComponent.asInstanceOf[js.Any])
     if (renderSuggestion != null) __obj.updateDynamic("renderSuggestion")(js.Any.fromFunction2(renderSuggestion))
-    if (!js.isUndefined(resetInputOnDelete)) __obj.updateDynamic("resetInputOnDelete")(resetInputOnDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetInputOnDelete)) __obj.updateDynamic("resetInputOnDelete")(resetInputOnDelete.get.asInstanceOf[js.Any])
     if (shouldRenderSuggestions != null) __obj.updateDynamic("shouldRenderSuggestions")(js.Any.fromFunction1(shouldRenderSuggestions))
     if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

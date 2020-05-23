@@ -1,11 +1,11 @@
 package typings.officeJsPreview.OneNote
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.OneNote.Interfaces.PageContentData
 import typings.officeJsPreview.OneNote.Interfaces.PageContentLoadOptions
 import typings.officeJsPreview.OneNote.Interfaces.PageContentUpdateData
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Ink
 import typings.officeJsPreview.officeJsPreviewStrings.Other
 import scala.scalajs.js
@@ -18,9 +18,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.PageContent")
 @js.native
-class PageContent () extends ClientObject {
+trait PageContent extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PageContent: RequestContext = js.native
@@ -105,8 +104,8 @@ class PageContent () extends ClientObject {
   def load(): PageContent = js.native
   def load(option: String): PageContent = js.native
   def load(option: js.Array[String]): PageContent = js.native
-  def load(option: AnonExpand): PageContent = js.native
   def load(option: PageContentLoadOptions): PageContent = js.native
+  def load(option: Expand): PageContent = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

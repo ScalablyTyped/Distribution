@@ -1,6 +1,15 @@
 package typings.nodeVagrant
 
 import typings.node.eventsMod.EventEmitter
+import typings.nodeVagrant.anon.Cb
+import typings.nodeVagrant.anon.CurrentVersion
+import typings.nodeVagrant.anon.Cwd
+import typings.nodeVagrant.anon.Env
+import typings.nodeVagrant.anon.Host
+import typings.nodeVagrant.anon.Id
+import typings.nodeVagrant.anon.Major
+import typings.nodeVagrant.anon.Name
+import typings.nodeVagrant.anon.Provider
 import typings.nodeVagrant.nodeVagrantStrings.`up-progress`
 import typings.nodeVagrant.nodeVagrantStrings.progress
 import typings.nodeVagrant.nodeVagrantStrings.stderr
@@ -15,8 +24,8 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   trait Machine extends MachineEmitter {
-    var batch: js.Array[AnonCb] = js.native
-    var opts: AnonCwd = js.native
+    var batch: js.Array[Cb] = js.native
+    var opts: Cwd = js.native
     def boxRepackage(name: String, provider: String, version: String): Unit = js.native
     def boxRepackage(name: String, provider: String, version: String, cb: Callback): Unit = js.native
     def destroy(): Unit = js.native
@@ -51,8 +60,8 @@ object mod extends js.Object {
     def resume(): Unit = js.native
     def resume(cb: Callback): Unit = js.native
     def snapshots(): Snapshots = js.native
-    def sshConfig(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[AnonHost], Unit]): Unit = js.native
-    def status(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonProvider]], Unit]): Unit = js.native
+    def sshConfig(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[Host], Unit]): Unit = js.native
+    def status(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Provider]], Unit]): Unit = js.native
     def suspend(): Unit = js.native
     def suspend(cb: Callback): Unit = js.native
     def up(): Unit = js.native
@@ -163,21 +172,21 @@ object mod extends js.Object {
   def boxAdd(box: String, args: js.Array[String]): ProgressEmitter = js.native
   def boxAdd(box: String, args: js.Array[String], cb: Callback): ProgressEmitter = js.native
   def boxAdd(box: String, cb: Callback): ProgressEmitter = js.native
-  def boxList(args: String, cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonName]], Unit]): Unit = js.native
+  def boxList(args: String, cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Name]], Unit]): Unit = js.native
   def boxList(
     args: js.Array[String],
-    cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonName]], Unit]
+    cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Name]], Unit]
   ): Unit = js.native
-  def boxList(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonName]], Unit]): Unit = js.native
+  def boxList(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Name]], Unit]): Unit = js.native
   def boxOutdated(
     args: String,
-    cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonCurrentVersion]], Unit]
+    cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[CurrentVersion]], Unit]
   ): Unit = js.native
   def boxOutdated(
     args: js.Array[String],
-    cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonCurrentVersion]], Unit]
+    cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[CurrentVersion]], Unit]
   ): Unit = js.native
-  def boxOutdated(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonCurrentVersion]], Unit]): Unit = js.native
+  def boxOutdated(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[CurrentVersion]], Unit]): Unit = js.native
   def boxPrune(): Unit = js.native
   def boxPrune(args: String): Unit = js.native
   def boxPrune(args: String, cb: Callback): Unit = js.native
@@ -195,17 +204,17 @@ object mod extends js.Object {
   def boxUpdate(box: String, provider: String, cb: Callback): ProgressEmitter = js.native
   def boxUpdate(box: String, provider: Null, cb: Callback): ProgressEmitter = js.native
   def create(): Machine = js.native
-  def create(opts: AnonEnv): Machine = js.native
-  def globalStatus(args: String, cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonId]], Unit]): Unit = js.native
+  def create(opts: Env): Machine = js.native
+  def globalStatus(args: String, cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Id]], Unit]): Unit = js.native
   def globalStatus(
     args: js.Array[String],
-    cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonId]], Unit]
+    cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Id]], Unit]
   ): Unit = js.native
-  def globalStatus(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[AnonId]], Unit]): Unit = js.native
+  def globalStatus(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Id]], Unit]): Unit = js.native
   def promisify(): Unit = js.native
   def version(): Unit = js.native
   def version(cb: Callback): Unit = js.native
-  def versionStatus(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[AnonMajor], Unit]): Unit = js.native
+  def versionStatus(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[Major], Unit]): Unit = js.native
   type Callback = js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[String], Unit]
   type ErrorArg = Error | String | Null
 }

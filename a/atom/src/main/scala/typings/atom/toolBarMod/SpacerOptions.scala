@@ -11,9 +11,9 @@ trait SpacerOptions extends js.Object {
 
 object SpacerOptions {
   @scala.inline
-  def apply(priority: Int | Double = null): SpacerOptions = {
+  def apply(priority: js.UndefOr[Double] = js.undefined): SpacerOptions = {
     val __obj = js.Dynamic.literal()
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpacerOptions]
   }
 }

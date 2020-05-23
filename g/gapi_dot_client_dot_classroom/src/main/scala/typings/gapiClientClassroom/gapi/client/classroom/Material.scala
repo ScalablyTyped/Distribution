@@ -10,8 +10,8 @@ trait Material extends js.Object {
   /** Google Forms material. */
   var form: js.UndefOr[Form] = js.undefined
   /**
-    * Link material. On creation, will be upgraded to a more appropriate type
-    * if possible, and this will be reflected in the response.
+    * Link material. On creation, this is upgraded to a more appropriate type
+    * if possible, and this is reflected in the response.
     */
   var link: js.UndefOr[Link] = js.undefined
   /** YouTube video material. */

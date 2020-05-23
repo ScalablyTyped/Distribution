@@ -1,5 +1,6 @@
 package typings.leven
 
+import typings.leven.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object mod extends js.Object {
   // declare function leven(left: string, right: string): number;
   // export = leven;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Measure the difference between two strings.
   	@example

@@ -4,6 +4,8 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.PsbtGlobalUpdate
 import typings.bip174.interfacesMod.PsbtInputUpdate
 import typings.bip174.interfacesMod.PsbtOutputUpdate
+import typings.bip174.interfacesMod.TransactionInput
+import typings.bip174.interfacesMod.TransactionOutput
 import typings.bitcoinjsLib.ecpairMod.Signer
 import typings.bitcoinjsLib.ecpairMod.SignerAsync
 import typings.bitcoinjsLib.transactionMod.Transaction
@@ -20,7 +22,11 @@ class Psbt () extends js.Object {
   var __CACHE: js.Any = js.native
   val data: typings.bip174.mod.Psbt = js.native
   val inputCount: Double = js.native
+  var locktime: Double = js.native
   var opts: js.Any = js.native
+  val txInputs: js.Array[TransactionInput] = js.native
+  val txOutputs: js.Array[TransactionOutput] = js.native
+  var version: Double = js.native
   def addInput(inputData: PsbtInputExtended): this.type = js.native
   def addInputs(inputDatas: js.Array[PsbtInputExtended]): this.type = js.native
   def addOutput(outputData: PsbtOutputExtended): this.type = js.native

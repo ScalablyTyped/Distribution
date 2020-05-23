@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait Matchers[T] extends js.Object {
   /**
-  		 * Verifies that a value is a $q Promise.
-  		 */
+    * Verifies that a value is a $q Promise.
+    */
   def toBePromise(): Boolean
   /**
-  		 * Verifies that a Promise is (or has been) rejected.
-  		 */
+    * Verifies that a Promise is (or has been) rejected.
+    */
   def toBeRejected(): Boolean
   /**
-  		 * Verifies that a Promise is (or has been) rejected with the specified parameter.
-  		 */
+    * Verifies that a Promise is (or has been) rejected with the specified parameter.
+    */
   def toBeRejectedWith(value: js.Any): Boolean
   /**
-  		 * Verifies that a Promise is (or has been) resolved.
-  		 */
+    * Verifies that a Promise is (or has been) resolved.
+    */
   def toBeResolved(): Boolean
   /**
-  		 * Verifies that a Promise is (or has been) resolved with the specified parameter.
-  		 */
+    * Verifies that a Promise is (or has been) resolved with the specified parameter.
+    */
   def toBeResolvedWith(value: js.Any): Boolean
 }
 

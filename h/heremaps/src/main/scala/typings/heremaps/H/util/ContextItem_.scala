@@ -1,6 +1,5 @@
 package typings.heremaps.H.util
 
-import typings.heremaps.H.util.ContextItem.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,14 +8,8 @@ import scala.scalajs.js.annotation._
   * This class represents a contextual information/action.
   * @property SEPARATOR {H.util.ContextItem} - Separator for the context items
   */
-@JSGlobal("H.util.ContextItem")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.util.ContextItem.Options=} - The values to initialize this context item
-  */
-class ContextItem_ () extends EventTarget {
-  def this(opt_options: Options) = this()
+trait ContextItem_ extends EventTarget {
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
   /**
     * This method returns label of the context item

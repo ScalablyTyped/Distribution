@@ -11,14 +11,14 @@ sealed trait ColumnSizingMode extends js.Object
 @JSImport("azdata", "ColumnSizingMode")
 @js.native
 object ColumnSizingMode extends js.Object {
-  	// columns will be ForceFit up to a certain number; currently 3.  At 4 or more the behavior will switch to NO force fit
+      // columns will be ForceFit up to a certain number; currently 3.  At 4 or more the behavior will switch to NO force fit
   @js.native
   sealed trait AutoFit extends ColumnSizingMode
   
   @js.native
   sealed trait DataFit extends ColumnSizingMode
   
-  	// all columns will be sized to fit in viewable space, no horiz scroll bar
+      // all columns will be sized to fit in viewable space, no horiz scroll bar
   @js.native
   sealed trait ForceFit extends ColumnSizingMode
   

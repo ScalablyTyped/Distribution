@@ -1,20 +1,19 @@
 package typings.prosemirrorView.mod
 
 import typings.prosemirrorModel.mod.Schema
-import typings.prosemirrorView.AnonBottom
-import typings.prosemirrorView.AnonInside
-import typings.prosemirrorView.AnonLeft
-import typings.prosemirrorView.AnonMount
-import typings.prosemirrorView.AnonMove
-import typings.prosemirrorView.AnonNode
+import typings.prosemirrorView.anon.Bottom
+import typings.prosemirrorView.anon.Inside
+import typings.prosemirrorView.anon.Left
+import typings.prosemirrorView.anon.Mount
+import typings.prosemirrorView.anon.Move
 import typings.prosemirrorView.prosemirrorViewStrings.backward
 import typings.prosemirrorView.prosemirrorViewStrings.down
 import typings.prosemirrorView.prosemirrorViewStrings.forward
 import typings.prosemirrorView.prosemirrorViewStrings.left
 import typings.prosemirrorView.prosemirrorViewStrings.right
 import typings.prosemirrorView.prosemirrorViewStrings.up
+import typings.std.Document
 import typings.std.DocumentFragment
-import typings.std.Document_
 import typings.std.Element
 import typings.std.Node
 import scala.scalajs.js
@@ -24,9 +23,6 @@ import scala.scalajs.js.annotation._
 @JSImport("prosemirror-view", "EditorView")
 @js.native
 class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
-  def this(place: js.UndefOr[scala.Nothing], props: DirectEditorProps[S]) = this()
-  def this(place: js.Function1[/* p */ Node, Unit], props: DirectEditorProps[S]) = this()
-  def this(place: AnonMount, props: DirectEditorProps[S]) = this()
   /**
     * Create a view. `place` may be a DOM node that the editor should
     * be appended to, a function that will place it into the document,
@@ -34,7 +30,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     * document container. If it is `null`, the editor will not be added
     * to the document.
     */
-  def this(place: Node, props: DirectEditorProps[S]) = this()
+  def this(place: js.UndefOr[(js.Function1[/* p */ Node, Unit]) | Mount | Node], props: DirectEditorProps[S]) = this()
   /**
     * Holds true when a composition is active.
     */
@@ -49,7 +45,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     * information about the dragged slice and whether it is being
     * copied or moved. At any other time, it is null.
     */
-  var dragging: js.UndefOr[AnonMove[S] | Null] = js.native
+  var dragging: js.UndefOr[Move[S] | Null] = js.native
   /**
     * Indicates whether the editor is currently [editable](#view.EditorProps.editable).
     */
@@ -64,7 +60,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     * DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM)
     * root if the editor is inside one.
     */
-  var root: Document_ | DocumentFragment = js.native
+  var root: Document | DocumentFragment = js.native
   /**
     * The view's current [state](#state.EditorState).
     */
@@ -74,7 +70,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     * and `right` will be the same number, as this returns a flat
     * cursor-ish rectangle.
     */
-  def coordsAtPos(pos: Double): AnonBottom = js.native
+  def coordsAtPos(pos: Double): Bottom = js.native
   /**
     * Removes the editor from the DOM and destroys all [node
     * views](#view.NodeView).
@@ -98,7 +94,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     * internal DOM, only inspect it (and even that is usually not
     * necessary).
     */
-  def domAtPos(pos: Double): AnonNode = js.native
+  def domAtPos(pos: Double): typings.prosemirrorView.anon.Node = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_backward(dir: backward): Boolean = js.native
   @JSName("endOfTextblock")
@@ -177,7 +173,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     * inner node that the position falls inside of, or -1 if it is at
     * the top level, not in any node.
     */
-  def posAtCoords(coords: AnonLeft): js.UndefOr[AnonInside | Null] = js.native
+  def posAtCoords(coords: Left): js.UndefOr[Inside | Null] = js.native
   /**
     * Find the document position that corresponds to a given DOM position.
     * (Whenever possible, it is preferable to inspect the document structure

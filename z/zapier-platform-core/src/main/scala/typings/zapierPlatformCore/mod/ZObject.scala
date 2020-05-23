@@ -2,23 +2,23 @@ package typings.zapierPlatformCore.mod
 
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
-import typings.std.Console_
-import typings.zapierPlatformCore.AnonError
-import typings.zapierPlatformCore.AnonGet
-import typings.zapierPlatformCore.AnonParse
-import typings.zapierPlatformCore.HttpRequestOptionsrawtrue
-import typings.zapierPlatformCore.HttpRequestOptionsrawtrueAgent
-import typings.zapierPlatformCore.HttpRequestOptionsurlstri
+import typings.std.Console
+import typings.zapierPlatformCore.anon.Error
+import typings.zapierPlatformCore.anon.Get
+import typings.zapierPlatformCore.anon.HttpRequestOptionsrawtrue
+import typings.zapierPlatformCore.anon.HttpRequestOptionsrawtrueAgent
+import typings.zapierPlatformCore.anon.HttpRequestOptionsurlstri
+import typings.zapierPlatformCore.anon.Parse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait ZObject extends js.Object {
-  var JSON: AnonParse = js.native
-  var console: Console_ = js.native
-  var cursor: AnonGet = js.native
-  var errors: AnonError = js.native
+  var JSON: Parse = js.native
+  var console: Console = js.native
+  var cursor: Get = js.native
+  var errors: Error = js.native
   def dehydrate[T](func: js.Function2[/* z */ this.type, /* bundle */ Bundle[T], _], inputData: js.Object): String = js.native
   def generateCallbackUrl(): String = js.native
   /**

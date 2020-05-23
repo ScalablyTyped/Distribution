@@ -11,10 +11,10 @@ trait AboutFeatures extends js.Object {
 
 object AboutFeatures {
   @scala.inline
-  def apply(featureName: String = null, featureRate: Int | Double = null): AboutFeatures = {
+  def apply(featureName: String = null, featureRate: js.UndefOr[Double] = js.undefined): AboutFeatures = {
     val __obj = js.Dynamic.literal()
     if (featureName != null) __obj.updateDynamic("featureName")(featureName.asInstanceOf[js.Any])
-    if (featureRate != null) __obj.updateDynamic("featureRate")(featureRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(featureRate)) __obj.updateDynamic("featureRate")(featureRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AboutFeatures]
   }
 }

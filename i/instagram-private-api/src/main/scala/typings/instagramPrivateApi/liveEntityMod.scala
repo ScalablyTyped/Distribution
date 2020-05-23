@@ -1,5 +1,6 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.anon.Broadcastid
 import typings.instagramPrivateApi.liveObsSettingsMod.LiveRtmpSettings
 import typings.instagramPrivateApi.repositoryMod.Repository
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object liveEntityMod extends js.Object {
   /* static members */
   @js.native
   object LiveEntity extends js.Object {
-    def getUrlAndKey(info: AnonBroadcastid): LiveRtmpSettings = js.native
+    def getUrlAndKey(info: Broadcastid): LiveRtmpSettings = js.native
   }
   
 }

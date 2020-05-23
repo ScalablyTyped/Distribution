@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +14,4 @@ trait BiquadFilterNode extends AudioNode {
   var `type`: BiquadFilterType = js.native
   def getFrequencyResponse(frequencyHz: Float32Array, magResponse: Float32Array, phaseResponse: Float32Array): Unit = js.native
 }
-
-@JSGlobal("BiquadFilterNode")
-@js.native
-object BiquadFilterNode
-  extends Instantiable1[/* context */ BaseAudioContext, BiquadFilterNode]
-     with Instantiable2[/* context */ BaseAudioContext, /* options */ BiquadFilterOptions, BiquadFilterNode]
 

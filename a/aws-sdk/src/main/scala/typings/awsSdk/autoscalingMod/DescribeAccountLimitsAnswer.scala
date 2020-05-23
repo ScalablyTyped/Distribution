@@ -27,16 +27,16 @@ trait DescribeAccountLimitsAnswer extends js.Object {
 object DescribeAccountLimitsAnswer {
   @scala.inline
   def apply(
-    MaxNumberOfAutoScalingGroups: Int | Double = null,
-    MaxNumberOfLaunchConfigurations: Int | Double = null,
-    NumberOfAutoScalingGroups: Int | Double = null,
-    NumberOfLaunchConfigurations: Int | Double = null
+    MaxNumberOfAutoScalingGroups: js.UndefOr[MaxNumberOfAutoScalingGroups] = js.undefined,
+    MaxNumberOfLaunchConfigurations: js.UndefOr[MaxNumberOfLaunchConfigurations] = js.undefined,
+    NumberOfAutoScalingGroups: js.UndefOr[NumberOfAutoScalingGroups] = js.undefined,
+    NumberOfLaunchConfigurations: js.UndefOr[NumberOfLaunchConfigurations] = js.undefined
   ): DescribeAccountLimitsAnswer = {
     val __obj = js.Dynamic.literal()
-    if (MaxNumberOfAutoScalingGroups != null) __obj.updateDynamic("MaxNumberOfAutoScalingGroups")(MaxNumberOfAutoScalingGroups.asInstanceOf[js.Any])
-    if (MaxNumberOfLaunchConfigurations != null) __obj.updateDynamic("MaxNumberOfLaunchConfigurations")(MaxNumberOfLaunchConfigurations.asInstanceOf[js.Any])
-    if (NumberOfAutoScalingGroups != null) __obj.updateDynamic("NumberOfAutoScalingGroups")(NumberOfAutoScalingGroups.asInstanceOf[js.Any])
-    if (NumberOfLaunchConfigurations != null) __obj.updateDynamic("NumberOfLaunchConfigurations")(NumberOfLaunchConfigurations.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxNumberOfAutoScalingGroups)) __obj.updateDynamic("MaxNumberOfAutoScalingGroups")(MaxNumberOfAutoScalingGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxNumberOfLaunchConfigurations)) __obj.updateDynamic("MaxNumberOfLaunchConfigurations")(MaxNumberOfLaunchConfigurations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfAutoScalingGroups)) __obj.updateDynamic("NumberOfAutoScalingGroups")(NumberOfAutoScalingGroups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumberOfLaunchConfigurations)) __obj.updateDynamic("NumberOfLaunchConfigurations")(NumberOfLaunchConfigurations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccountLimitsAnswer]
   }
 }

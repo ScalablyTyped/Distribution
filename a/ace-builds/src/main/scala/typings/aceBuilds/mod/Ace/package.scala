@@ -20,5 +20,5 @@ package object Ace {
     /* config */ js.Any, 
     scala.Unit
   ]
-  type execEventHandler = js.Function1[/* obj */ typings.aceBuilds.AnonArgs, scala.Unit]
+  type execEventHandler = js.Function1[/* obj */ typings.aceBuilds.anon.Args, scala.Unit]
 }

@@ -24,12 +24,12 @@ object RefreshViewParams {
     suppressKeepFocus: js.UndefOr[Boolean] = js.undefined
   ): RefreshViewParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(newData)) __obj.updateDynamic("newData")(newData.asInstanceOf[js.Any])
-    if (!js.isUndefined(newPage)) __obj.updateDynamic("newPage")(newPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyBody)) __obj.updateDynamic("onlyBody")(onlyBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(recycleRows)) __obj.updateDynamic("recycleRows")(recycleRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressKeepFocus)) __obj.updateDynamic("suppressKeepFocus")(suppressKeepFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newData)) __obj.updateDynamic("newData")(newData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(newPage)) __obj.updateDynamic("newPage")(newPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyBody)) __obj.updateDynamic("onlyBody")(onlyBody.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(recycleRows)) __obj.updateDynamic("recycleRows")(recycleRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressKeepFocus)) __obj.updateDynamic("suppressKeepFocus")(suppressKeepFocus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshViewParams]
   }
 }

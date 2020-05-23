@@ -18,7 +18,6 @@ object SharedOnlineStateSchema {
   @scala.inline
   def apply(clientId: String, onlineState: String): SharedOnlineStateSchema = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], onlineState = onlineState.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SharedOnlineStateSchema]
   }
 }

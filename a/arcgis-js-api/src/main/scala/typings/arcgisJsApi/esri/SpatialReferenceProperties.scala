@@ -27,10 +27,10 @@ trait SpatialReferenceProperties extends js.Object {
 
 object SpatialReferenceProperties {
   @scala.inline
-  def apply(imageCoordinateSystem: js.Any = null, wkid: Int | Double = null, wkt: String = null): SpatialReferenceProperties = {
+  def apply(imageCoordinateSystem: js.Any = null, wkid: js.UndefOr[Double] = js.undefined, wkt: String = null): SpatialReferenceProperties = {
     val __obj = js.Dynamic.literal()
     if (imageCoordinateSystem != null) __obj.updateDynamic("imageCoordinateSystem")(imageCoordinateSystem.asInstanceOf[js.Any])
-    if (wkid != null) __obj.updateDynamic("wkid")(wkid.asInstanceOf[js.Any])
+    if (!js.isUndefined(wkid)) __obj.updateDynamic("wkid")(wkid.get.asInstanceOf[js.Any])
     if (wkt != null) __obj.updateDynamic("wkt")(wkt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialReferenceProperties]
   }

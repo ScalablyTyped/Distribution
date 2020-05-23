@@ -64,13 +64,13 @@ object Proposal {
     Description: DescriptionString = null,
     ExpirationDate: Timestamp = null,
     NetworkId: ResourceIdString = null,
-    NoVoteCount: Int | Double = null,
-    OutstandingVoteCount: Int | Double = null,
+    NoVoteCount: js.UndefOr[VoteCount] = js.undefined,
+    OutstandingVoteCount: js.UndefOr[VoteCount] = js.undefined,
     ProposalId: ResourceIdString = null,
     ProposedByMemberId: ResourceIdString = null,
     ProposedByMemberName: NetworkMemberNameString = null,
     Status: ProposalStatus = null,
-    YesVoteCount: Int | Double = null
+    YesVoteCount: js.UndefOr[VoteCount] = js.undefined
   ): Proposal = {
     val __obj = js.Dynamic.literal()
     if (Actions != null) __obj.updateDynamic("Actions")(Actions.asInstanceOf[js.Any])
@@ -78,13 +78,13 @@ object Proposal {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
     if (NetworkId != null) __obj.updateDynamic("NetworkId")(NetworkId.asInstanceOf[js.Any])
-    if (NoVoteCount != null) __obj.updateDynamic("NoVoteCount")(NoVoteCount.asInstanceOf[js.Any])
-    if (OutstandingVoteCount != null) __obj.updateDynamic("OutstandingVoteCount")(OutstandingVoteCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(NoVoteCount)) __obj.updateDynamic("NoVoteCount")(NoVoteCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OutstandingVoteCount)) __obj.updateDynamic("OutstandingVoteCount")(OutstandingVoteCount.get.asInstanceOf[js.Any])
     if (ProposalId != null) __obj.updateDynamic("ProposalId")(ProposalId.asInstanceOf[js.Any])
     if (ProposedByMemberId != null) __obj.updateDynamic("ProposedByMemberId")(ProposedByMemberId.asInstanceOf[js.Any])
     if (ProposedByMemberName != null) __obj.updateDynamic("ProposedByMemberName")(ProposedByMemberName.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (YesVoteCount != null) __obj.updateDynamic("YesVoteCount")(YesVoteCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(YesVoteCount)) __obj.updateDynamic("YesVoteCount")(YesVoteCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Proposal]
   }
 }

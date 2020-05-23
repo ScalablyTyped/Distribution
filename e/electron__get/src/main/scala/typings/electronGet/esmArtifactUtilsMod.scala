@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object esmArtifactUtilsMod extends js.Object {
   def getArtifactFileName(details: ElectronArtifactDetails): String = js.native
-  def getArtifactRemoteURL(details: ElectronArtifactDetails): String = js.native
+  def getArtifactRemoteURL(details: ElectronArtifactDetails): js.Promise[String] = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.awsSdkMiddlewareStack
 
+import typings.awsSdkMiddlewareStack.anon.HandlerOptionsstepinitial
 import typings.awsSdkTypes.middlewareMod.Middleware
 import scala.scalajs.js
 import scala.scalajs.js.`|`

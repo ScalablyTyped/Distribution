@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.RelatedFieldExtendedData")
 @js.native
-class RelatedFieldExtendedData () extends ClientObject {
+trait RelatedFieldExtendedData extends ClientObject {
   def get_fieldId(): Guid = js.native
   def get_listId(): Guid = js.native
   def get_listImageUrl(): String = js.native

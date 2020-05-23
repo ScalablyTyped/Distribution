@@ -22,11 +22,15 @@ trait CreateStorediSCSIVolumeOutput extends js.Object {
 
 object CreateStorediSCSIVolumeOutput {
   @scala.inline
-  def apply(TargetARN: TargetARN = null, VolumeARN: VolumeARN = null, VolumeSizeInBytes: Int | Double = null): CreateStorediSCSIVolumeOutput = {
+  def apply(
+    TargetARN: TargetARN = null,
+    VolumeARN: VolumeARN = null,
+    VolumeSizeInBytes: js.UndefOr[long] = js.undefined
+  ): CreateStorediSCSIVolumeOutput = {
     val __obj = js.Dynamic.literal()
     if (TargetARN != null) __obj.updateDynamic("TargetARN")(TargetARN.asInstanceOf[js.Any])
     if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN.asInstanceOf[js.Any])
-    if (VolumeSizeInBytes != null) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(VolumeSizeInBytes)) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStorediSCSIVolumeOutput]
   }
 }

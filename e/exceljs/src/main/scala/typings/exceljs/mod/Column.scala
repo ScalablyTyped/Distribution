@@ -1,11 +1,11 @@
 package typings.exceljs.mod
 
-import typings.exceljs.AnonIncludeEmpty
-import typings.exceljs.PartialAlignment
-import typings.exceljs.PartialBorders
-import typings.exceljs.PartialFont
-import typings.exceljs.PartialProtection
-import typings.exceljs.PartialStyle
+import typings.exceljs.anon.IncludeEmpty
+import typings.exceljs.anon.PartialAlignment
+import typings.exceljs.anon.PartialBorders
+import typings.exceljs.anon.PartialFont
+import typings.exceljs.anon.PartialProtection
+import typings.exceljs.anon.PartialStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,7 +68,7 @@ trait Column extends js.Object {
   /**
   	 * Iterate over all current cells in this column including empty cells
   	 */
-  def eachCell(opt: AnonIncludeEmpty, callback: js.Function2[/* cell */ Cell, /* rowNumber */ Double, Unit]): Unit = js.native
+  def eachCell(opt: IncludeEmpty, callback: js.Function2[/* cell */ Cell, /* rowNumber */ Double, Unit]): Unit = js.native
   def equivalentTo(other: Column): Boolean = js.native
 }
 

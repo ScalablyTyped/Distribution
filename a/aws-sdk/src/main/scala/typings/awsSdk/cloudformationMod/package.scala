@@ -139,6 +139,7 @@ package object cloudformationMod {
   type Imports = js.Array[typings.awsSdk.cloudformationMod.StackName]
   type InProgressStackInstancesCount = scala.Double
   type InSyncStackInstancesCount = scala.Double
+  type IsDefaultVersion = scala.Boolean
   type Key = java.lang.String
   type LastUpdatedTime = typings.std.Date
   type LimitName = java.lang.String

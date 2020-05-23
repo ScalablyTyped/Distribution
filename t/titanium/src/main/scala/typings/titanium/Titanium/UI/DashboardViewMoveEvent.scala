@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when an item is moved in edit mode.
-		 */
+  * Fired when an item is moved in edit mode.
+  */
 trait DashboardViewMoveEvent extends DashboardViewBaseEvent {
   /**
-  			 * Item that was moved.
-  			 */
+    * Item that was moved.
+    */
   var item: DashboardItem
   /**
-  			 * List of items to be committed, possibly in new order, when edit mode ends.
-  			 */
+    * List of items to be committed, possibly in new order, when edit mode ends.
+    */
   var items: js.Array[DashboardItem]
 }
 

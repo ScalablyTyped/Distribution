@@ -57,8 +57,8 @@ object WindowsFileSystemConfiguration {
   @scala.inline
   def apply(
     ActiveDirectoryId: DirectoryId = null,
-    AutomaticBackupRetentionDays: Int | Double = null,
-    CopyTagsToBackups: js.UndefOr[Boolean] = js.undefined,
+    AutomaticBackupRetentionDays: js.UndefOr[AutomaticBackupRetentionDays] = js.undefined,
+    CopyTagsToBackups: js.UndefOr[Flag] = js.undefined,
     DailyAutomaticBackupStartTime: DailyTime = null,
     DeploymentType: WindowsDeploymentType = null,
     MaintenanceOperationsInProgress: FileSystemMaintenanceOperations = null,
@@ -66,13 +66,13 @@ object WindowsFileSystemConfiguration {
     PreferredSubnetId: SubnetId = null,
     RemoteAdministrationEndpoint: DNSName = null,
     SelfManagedActiveDirectoryConfiguration: SelfManagedActiveDirectoryAttributes = null,
-    ThroughputCapacity: Int | Double = null,
+    ThroughputCapacity: js.UndefOr[MegabytesPerSecond] = js.undefined,
     WeeklyMaintenanceStartTime: WeeklyTime = null
   ): WindowsFileSystemConfiguration = {
     val __obj = js.Dynamic.literal()
     if (ActiveDirectoryId != null) __obj.updateDynamic("ActiveDirectoryId")(ActiveDirectoryId.asInstanceOf[js.Any])
-    if (AutomaticBackupRetentionDays != null) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTagsToBackups)) __obj.updateDynamic("CopyTagsToBackups")(CopyTagsToBackups.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutomaticBackupRetentionDays)) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(CopyTagsToBackups)) __obj.updateDynamic("CopyTagsToBackups")(CopyTagsToBackups.get.asInstanceOf[js.Any])
     if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime.asInstanceOf[js.Any])
     if (DeploymentType != null) __obj.updateDynamic("DeploymentType")(DeploymentType.asInstanceOf[js.Any])
     if (MaintenanceOperationsInProgress != null) __obj.updateDynamic("MaintenanceOperationsInProgress")(MaintenanceOperationsInProgress.asInstanceOf[js.Any])
@@ -80,7 +80,7 @@ object WindowsFileSystemConfiguration {
     if (PreferredSubnetId != null) __obj.updateDynamic("PreferredSubnetId")(PreferredSubnetId.asInstanceOf[js.Any])
     if (RemoteAdministrationEndpoint != null) __obj.updateDynamic("RemoteAdministrationEndpoint")(RemoteAdministrationEndpoint.asInstanceOf[js.Any])
     if (SelfManagedActiveDirectoryConfiguration != null) __obj.updateDynamic("SelfManagedActiveDirectoryConfiguration")(SelfManagedActiveDirectoryConfiguration.asInstanceOf[js.Any])
-    if (ThroughputCapacity != null) __obj.updateDynamic("ThroughputCapacity")(ThroughputCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(ThroughputCapacity)) __obj.updateDynamic("ThroughputCapacity")(ThroughputCapacity.get.asInstanceOf[js.Any])
     if (WeeklyMaintenanceStartTime != null) __obj.updateDynamic("WeeklyMaintenanceStartTime")(WeeklyMaintenanceStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsFileSystemConfiguration]
   }

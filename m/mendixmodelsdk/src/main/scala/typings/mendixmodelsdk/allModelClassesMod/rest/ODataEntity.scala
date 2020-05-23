@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
+  * In version 8.9.0: added public
   * In version 7.18.0: introduced
   */
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "rest.ODataEntity")

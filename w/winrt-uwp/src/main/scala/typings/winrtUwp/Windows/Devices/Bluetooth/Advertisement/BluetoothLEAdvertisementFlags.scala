@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object BluetoothLEAdvertisementFlags extends js.Object {
   /** None */
   @js.native
   sealed trait none extends BluetoothLEAdvertisementFlags
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BluetoothLEAdvertisementFlags with Double] = js.native
-  /* 3 */ @js.native
-  object classicNotSupported extends TopLevel[classicNotSupported with Double]
-  
-  /* 4 */ @js.native
-  object dualModeControllerCapable extends TopLevel[dualModeControllerCapable with Double]
-  
-  /* 5 */ @js.native
-  object dualModeHostCapable extends TopLevel[dualModeHostCapable with Double]
-  
-  /* 2 */ @js.native
-  object generalDiscoverableMode extends TopLevel[generalDiscoverableMode with Double]
-  
-  /* 1 */ @js.native
-  object limitedDiscoverableMode extends TopLevel[limitedDiscoverableMode with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

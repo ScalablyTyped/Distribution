@@ -4,11 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.drawing.Image")
 @js.native
-class Image protected ()
+trait Image
   extends typings.kendoUi.kendo.drawing.Element {
-  def this(src: String, rect: typings.kendoUi.kendo.geometry.Rect) = this()
   @JSName("options")
   var options_Image: ImageOptions = js.native
   def rect(): typings.kendoUi.kendo.geometry.Rect = js.native

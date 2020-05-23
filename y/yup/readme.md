@@ -1,7 +1,7 @@
 
 # Scala.js typings for yup
 
-Typings are for version 0.26
+Typings are for version 0.29
 
 ## Library description:
 Dead simple Object schema validation

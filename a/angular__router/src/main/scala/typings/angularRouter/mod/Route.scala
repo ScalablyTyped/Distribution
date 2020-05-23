@@ -84,7 +84,7 @@ trait Route extends js.Object {
     */
   var pathMatch: js.UndefOr[String] = js.undefined
   /**
-    * A URL to which to redirect when a the path matches.
+    * A URL to redirect to when the path matches.
     * Absolute if the URL begins with a slash (/), otherwise relative to the path URL.
     * When not present, router does not redirect.
     */

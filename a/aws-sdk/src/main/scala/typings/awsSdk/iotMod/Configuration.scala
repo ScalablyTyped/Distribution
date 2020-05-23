@@ -14,9 +14,9 @@ trait Configuration extends js.Object {
 
 object Configuration {
   @scala.inline
-  def apply(Enabled: js.UndefOr[scala.Boolean] = js.undefined): Configuration = {
+  def apply(Enabled: js.UndefOr[Enabled] = js.undefined): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

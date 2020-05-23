@@ -89,15 +89,15 @@ object PopupOpenOptions {
     updateLocationEnabled: js.UndefOr[Boolean] = js.undefined
   ): PopupOpenOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(featureMenuOpen)) __obj.updateDynamic("featureMenuOpen")(featureMenuOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(featureMenuOpen)) __obj.updateDynamic("featureMenuOpen")(featureMenuOpen.get.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchFeatures)) __obj.updateDynamic("fetchFeatures")(fetchFeatures.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchFeatures)) __obj.updateDynamic("fetchFeatures")(fetchFeatures.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (promises != null) __obj.updateDynamic("promises")(promises.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateLocationEnabled)) __obj.updateDynamic("updateLocationEnabled")(updateLocationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateLocationEnabled)) __obj.updateDynamic("updateLocationEnabled")(updateLocationEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupOpenOptions]
   }
 }

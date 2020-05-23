@@ -6,6 +6,7 @@ import typings.std.Exclude
 import typings.std.Extract
 import typings.std.Pick
 import typings.std.ReadonlyArray
+import typings.tsEssentials.anon.TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +43,7 @@ object mod extends js.Object {
   type Merge[M, N] = (Omit[M, Extract[/* keyof M */ String, /* keyof N */ String]]) with N
   type NonNullable[T] = T with js.Object
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
-  type Opaque[K, T] = T with AnonTYPE[K]
+  type Opaque[K, T] = T with TYPE[K]
   type Primitive = js.UndefOr[String | Double | Boolean | Null]
   type ValueOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 }

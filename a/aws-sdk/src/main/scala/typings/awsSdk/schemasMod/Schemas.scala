@@ -1,6 +1,6 @@
 package typings.awsSdk.schemasMod
 
-import typings.awsSdk.DescribeCodeBindingReques
+import typings.awsSdk.anon.DescribeCodeBindingReques
 import typings.awsSdk.awsSdkStrings.codeBindingExists
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
@@ -41,12 +41,12 @@ trait Schemas extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRegistryResponse, Unit]
   ): Request[CreateRegistryResponse, AWSError] = js.native
   /**
-    * Creates a schema definition.
+    * Creates a schema definition. Inactive schemas will be deleted after two years.
     */
   def createSchema(): Request[CreateSchemaResponse, AWSError] = js.native
   def createSchema(callback: js.Function2[/* err */ AWSError, /* data */ CreateSchemaResponse, Unit]): Request[CreateSchemaResponse, AWSError] = js.native
   /**
-    * Creates a schema definition.
+    * Creates a schema definition. Inactive schemas will be deleted after two years.
     */
   def createSchema(params: CreateSchemaRequest): Request[CreateSchemaResponse, AWSError] = js.native
   def createSchema(
@@ -77,6 +77,19 @@ trait Schemas extends Service {
   def deleteRegistry(params: DeleteRegistryRequest): Request[js.Object, AWSError] = js.native
   def deleteRegistry(
     params: DeleteRegistryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Delete the resource-based policy attached to the specified registry.
+    */
+  def deleteResourcePolicy(): Request[js.Object, AWSError] = js.native
+  def deleteResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Delete the resource-based policy attached to the specified registry.
+    */
+  def deleteResourcePolicy(params: DeleteResourcePolicyRequest): Request[js.Object, AWSError] = js.native
+  def deleteResourcePolicy(
+    params: DeleteResourcePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -184,6 +197,19 @@ trait Schemas extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDiscoveredSchemaResponse, Unit]
   ): Request[GetDiscoveredSchemaResponse, AWSError] = js.native
   /**
+    * Retrieves the resource-based policy attached to a given registry.
+    */
+  def getResourcePolicy(): Request[GetResourcePolicyResponse, AWSError] = js.native
+  def getResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyResponse, Unit]): Request[GetResourcePolicyResponse, AWSError] = js.native
+  /**
+    * Retrieves the resource-based policy attached to a given registry.
+    */
+  def getResourcePolicy(params: GetResourcePolicyRequest): Request[GetResourcePolicyResponse, AWSError] = js.native
+  def getResourcePolicy(
+    params: GetResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyResponse, Unit]
+  ): Request[GetResourcePolicyResponse, AWSError] = js.native
+  /**
     * List the discoverers.
     */
   def listDiscoverers(): Request[ListDiscoverersResponse, AWSError] = js.native
@@ -249,19 +275,6 @@ trait Schemas extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * 
-    */
-  def lockServiceLinkedRole(): Request[LockServiceLinkedRoleResponse, AWSError] = js.native
-  def lockServiceLinkedRole(callback: js.Function2[/* err */ AWSError, /* data */ LockServiceLinkedRoleResponse, Unit]): Request[LockServiceLinkedRoleResponse, AWSError] = js.native
-  /**
-    * 
-    */
-  def lockServiceLinkedRole(params: LockServiceLinkedRoleRequest): Request[LockServiceLinkedRoleResponse, AWSError] = js.native
-  def lockServiceLinkedRole(
-    params: LockServiceLinkedRoleRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ LockServiceLinkedRoleResponse, Unit]
-  ): Request[LockServiceLinkedRoleResponse, AWSError] = js.native
-  /**
     * Put code binding URI
     */
   def putCodeBinding(): Request[PutCodeBindingResponse, AWSError] = js.native
@@ -274,6 +287,19 @@ trait Schemas extends Service {
     params: PutCodeBindingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutCodeBindingResponse, Unit]
   ): Request[PutCodeBindingResponse, AWSError] = js.native
+  /**
+    * The name of the policy.
+    */
+  def putResourcePolicy(): Request[PutResourcePolicyResponse, AWSError] = js.native
+  def putResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]): Request[PutResourcePolicyResponse, AWSError] = js.native
+  /**
+    * The name of the policy.
+    */
+  def putResourcePolicy(params: PutResourcePolicyRequest): Request[PutResourcePolicyResponse, AWSError] = js.native
+  def putResourcePolicy(
+    params: PutResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]
+  ): Request[PutResourcePolicyResponse, AWSError] = js.native
   /**
     * Search the schemas
     */
@@ -324,19 +350,6 @@ trait Schemas extends Service {
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * 
-    */
-  def unlockServiceLinkedRole(): Request[UnlockServiceLinkedRoleResponse, AWSError] = js.native
-  def unlockServiceLinkedRole(callback: js.Function2[/* err */ AWSError, /* data */ UnlockServiceLinkedRoleResponse, Unit]): Request[UnlockServiceLinkedRoleResponse, AWSError] = js.native
-  /**
-    * 
-    */
-  def unlockServiceLinkedRole(params: UnlockServiceLinkedRoleRequest): Request[UnlockServiceLinkedRoleResponse, AWSError] = js.native
-  def unlockServiceLinkedRole(
-    params: UnlockServiceLinkedRoleRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ UnlockServiceLinkedRoleResponse, Unit]
-  ): Request[UnlockServiceLinkedRoleResponse, AWSError] = js.native
-  /**
     * Removes tags from a resource.
     */
   def untagResource(): Request[js.Object, AWSError] = js.native
@@ -376,12 +389,12 @@ trait Schemas extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRegistryResponse, Unit]
   ): Request[UpdateRegistryResponse, AWSError] = js.native
   /**
-    * Updates the schema definition
+    * Updates the schema definition Inactive schemas will be deleted after two years.
     */
   def updateSchema(): Request[UpdateSchemaResponse, AWSError] = js.native
   def updateSchema(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSchemaResponse, Unit]): Request[UpdateSchemaResponse, AWSError] = js.native
   /**
-    * Updates the schema definition
+    * Updates the schema definition Inactive schemas will be deleted after two years.
     */
   def updateSchema(params: UpdateSchemaRequest): Request[UpdateSchemaResponse, AWSError] = js.native
   def updateSchema(

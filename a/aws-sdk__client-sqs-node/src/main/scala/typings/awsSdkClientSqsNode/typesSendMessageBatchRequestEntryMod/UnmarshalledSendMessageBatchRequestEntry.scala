@@ -19,13 +19,13 @@ object UnmarshalledSendMessageBatchRequestEntry {
   def apply(
     Id: String,
     MessageBody: String,
-    DelaySeconds: Int | Double = null,
+    DelaySeconds: js.UndefOr[Double] = js.undefined,
     MessageAttributes: StringDictionary[UnmarshalledMessageAttributeValue] = null,
     MessageDeduplicationId: String = null,
     MessageGroupId: String = null
   ): UnmarshalledSendMessageBatchRequestEntry = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], MessageBody = MessageBody.asInstanceOf[js.Any])
-    if (DelaySeconds != null) __obj.updateDynamic("DelaySeconds")(DelaySeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DelaySeconds)) __obj.updateDynamic("DelaySeconds")(DelaySeconds.get.asInstanceOf[js.Any])
     if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes.asInstanceOf[js.Any])
     if (MessageDeduplicationId != null) __obj.updateDynamic("MessageDeduplicationId")(MessageDeduplicationId.asInstanceOf[js.Any])
     if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId.asInstanceOf[js.Any])

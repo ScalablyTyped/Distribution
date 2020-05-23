@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox 1.3]
   *
   * @remarks
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
@@ -25,9 +25,9 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param key - A developer-specified key used to reference this notification message.
@@ -58,11 +58,11 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -81,11 +81,11 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * @param key - The key for the notification message to remove.
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
@@ -108,13 +108,13 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
+    *
     * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
-    * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. 
+    * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message.
     *                    It contains a `NotificationMessageDetails` object.
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        `asyncContext`: Developers can provide any object they wish to access in the callback method.

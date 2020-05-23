@@ -1,6 +1,6 @@
 package typings.antd.mod
 
-import typings.antd.AnonHideAdd
+import typings.antd.anon.HideAdd
 import typings.antd.tabsMod.TabPaneProps
 import typings.antd.tabsMod.default
 import typings.react.mod.ClassicComponentClass
@@ -17,6 +17,6 @@ class Tabs () extends default
 @js.native
 object Tabs extends js.Object {
   var TabPane: ClassicComponentClass[TabPaneProps] = js.native
-  var defaultProps: AnonHideAdd = js.native
+  var defaultProps: HideAdd = js.native
 }
 

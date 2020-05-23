@@ -43,7 +43,7 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption {
     note: String = null,
     prices: js.Array[GoogleActionsOrdersV3PriceAttribute] = null,
     productId: String = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     subOptions: js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption] = null
   ): GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption = {
     val __obj = js.Dynamic.literal()
@@ -52,7 +52,7 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption {
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     if (prices != null) __obj.updateDynamic("prices")(prices.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (subOptions != null) __obj.updateDynamic("subOptions")(subOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption]
   }

@@ -1,7 +1,7 @@
 package typings.gapiClientCloudtrace.gapi.client.cloudtrace
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientCloudtrace.AnonAccesstoken
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientCloudtrace.anon.Accesstoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ trait TracesResource extends js.Object {
     * undefined behavior. If the name does not match, a new trace is created
     * with given set of spans.
     */
-  def batchWrite(request: AnonAccesstoken): Request_[js.Object]
+  def batchWrite(request: Accesstoken): Request[js.Object]
 }
 
 object TracesResource {
   @scala.inline
-  def apply(batchWrite: AnonAccesstoken => Request_[js.Object], spans: SpansResource): TracesResource = {
+  def apply(batchWrite: Accesstoken => Request[js.Object], spans: SpansResource): TracesResource = {
     val __obj = js.Dynamic.literal(batchWrite = js.Any.fromFunction1(batchWrite), spans = spans.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracesResource]
   }

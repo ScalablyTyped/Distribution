@@ -1,6 +1,6 @@
 package typings.reapop.mod
 
-import typings.reapop.AnonType
+import typings.reapop.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("reapop", "removeNotifications")
 @js.native
 object removeNotifications extends js.Object {
-  def apply(): AnonType = js.native
+  def apply(): Type = js.native
 }
 

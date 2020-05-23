@@ -26,10 +26,7 @@ object Audit {
     metadata: js.Any = null,
     via: Via = null
   ): Audit = {
-    val __obj = js.Dynamic.literal(author_id = author_id.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ticket_id = ticket_id.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(author_id = author_id.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ticket_id = ticket_id.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
     __obj.asInstanceOf[Audit]
   }
 }

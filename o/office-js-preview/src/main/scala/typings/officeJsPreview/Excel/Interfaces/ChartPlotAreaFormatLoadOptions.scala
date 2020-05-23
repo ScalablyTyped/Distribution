@@ -18,7 +18,7 @@ trait ChartPlotAreaFormatLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the border attributes of a chart plotArea.
+    * Specifies the border attributes of a chart plotArea.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -29,7 +29,7 @@ object ChartPlotAreaFormatLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, border: ChartBorderLoadOptions = null): ChartPlotAreaFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPlotAreaFormatLoadOptions]
   }

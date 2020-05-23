@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialFont
+import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.plotlyJsStrings.`bottom center`
 import typings.plotlyJs.plotlyJsStrings.`bottom left`
 import typings.plotlyJs.plotlyJsStrings.`bottom right`

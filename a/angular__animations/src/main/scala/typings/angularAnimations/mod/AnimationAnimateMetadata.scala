@@ -22,9 +22,8 @@ object AnimationAnimateMetadata {
     `type`: AnimationMetadataType,
     styles: AnimationStyleMetadata | AnimationKeyframesSequenceMetadata = null
   ): AnimationAnimateMetadata = {
-    val __obj = js.Dynamic.literal(timings = timings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(timings = timings.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationAnimateMetadata]
   }
 }

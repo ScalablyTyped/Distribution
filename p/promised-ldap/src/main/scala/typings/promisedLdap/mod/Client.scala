@@ -3,8 +3,8 @@ package typings.promisedLdap.mod
 import typings.ldapjs.mod.Change
 import typings.ldapjs.mod.Control
 import typings.node.eventsMod.EventEmitter
-import typings.promisedLdap.AnonEmail
-import typings.promisedLdap.AnonEntries
+import typings.promisedLdap.anon.Email
+import typings.promisedLdap.anon.Entries
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait Client extends EventEmitter {
   def add(name: String, entry: js.Object, controls: js.Array[Control]): js.Promise[_] = js.native
   def add(name: String, entry: js.Object, controls: Control): js.Promise[_] = js.native
   def authenticate(base: String, dn: String, password: String): js.Promise[_] = js.native
-  def authenticateUser(base: String, dn: String, password: String): js.Promise[AnonEmail | Null] = js.native
+  def authenticateUser(base: String, dn: String, password: String): js.Promise[Email | Null] = js.native
   def bind(dn: String, password: String): js.Promise[_] = js.native
   def bind(dn: String, password: String, controls: js.Array[Control]): js.Promise[_] = js.native
   def bind(dn: String, password: String, controls: Control): js.Promise[_] = js.native
@@ -50,9 +50,9 @@ trait Client extends EventEmitter {
   def modifyDN(name: String, newName: String): js.Promise[_] = js.native
   def modifyDN(name: String, newName: String, controls: js.Array[Control]): js.Promise[_] = js.native
   def modifyDN(name: String, newName: String, controls: Control): js.Promise[_] = js.native
-  def search(base: String, options: typings.ldapjs.mod.SearchOptions): js.Promise[AnonEntries] = js.native
-  def search(base: String, options: typings.ldapjs.mod.SearchOptions, controls: js.Array[Control]): js.Promise[AnonEntries] = js.native
-  def search(base: String, options: typings.ldapjs.mod.SearchOptions, controls: Control): js.Promise[AnonEntries] = js.native
+  def search(base: String, options: typings.ldapjs.mod.SearchOptions): js.Promise[Entries] = js.native
+  def search(base: String, options: typings.ldapjs.mod.SearchOptions, controls: js.Array[Control]): js.Promise[Entries] = js.native
+  def search(base: String, options: typings.ldapjs.mod.SearchOptions, controls: Control): js.Promise[Entries] = js.native
   def starttls(options: js.Object, controls: js.Array[Control]): js.Promise[_] = js.native
   def starttls(options: js.Object, controls: js.Array[Control], _bypass: Boolean): js.Promise[_] = js.native
   def starttls(options: js.Object, controls: Control): js.Promise[_] = js.native

@@ -1,6 +1,6 @@
 package typings.openid.mod
 
-import typings.openid.AnonAuthenticated
+import typings.openid.anon.Authenticated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,11 +17,11 @@ class RelyingParty protected () extends js.Object {
   ): Unit = js.native
   def verifyAssertion(
     requestOrUrl: String,
-    callback: js.Function2[/* err */ OpenIdError | Null, /* result */ js.UndefOr[AnonAuthenticated], Unit]
+    callback: js.Function2[/* err */ OpenIdError | Null, /* result */ js.UndefOr[Authenticated], Unit]
   ): Unit = js.native
   def verifyAssertion(
     requestOrUrl: js.Object,
-    callback: js.Function2[/* err */ OpenIdError | Null, /* result */ js.UndefOr[AnonAuthenticated], Unit]
+    callback: js.Function2[/* err */ OpenIdError | Null, /* result */ js.UndefOr[Authenticated], Unit]
   ): Unit = js.native
 }
 

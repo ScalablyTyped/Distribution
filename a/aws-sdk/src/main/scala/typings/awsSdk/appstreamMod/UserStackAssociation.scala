@@ -30,10 +30,10 @@ object UserStackAssociation {
     AuthenticationType: AuthenticationType,
     StackName: String,
     UserName: Username,
-    SendEmailNotification: js.UndefOr[scala.Boolean] = js.undefined
+    SendEmailNotification: js.UndefOr[Boolean] = js.undefined
   ): UserStackAssociation = {
     val __obj = js.Dynamic.literal(AuthenticationType = AuthenticationType.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SendEmailNotification)) __obj.updateDynamic("SendEmailNotification")(SendEmailNotification.asInstanceOf[js.Any])
+    if (!js.isUndefined(SendEmailNotification)) __obj.updateDynamic("SendEmailNotification")(SendEmailNotification.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserStackAssociation]
   }
 }

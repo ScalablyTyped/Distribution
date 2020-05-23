@@ -17,16 +17,16 @@ object PolicyStepScalingPolicyConfiguration {
   @scala.inline
   def apply(
     adjustmentType: String = null,
-    cooldown: Int | Double = null,
+    cooldown: js.UndefOr[Double] = js.undefined,
     metricAggregationType: String = null,
-    minAdjustmentMagnitude: Int | Double = null,
+    minAdjustmentMagnitude: js.UndefOr[Double] = js.undefined,
     stepAdjustments: js.Array[PolicyStepScalingPolicyConfigurationStepAdjustment] = null
   ): PolicyStepScalingPolicyConfiguration = {
     val __obj = js.Dynamic.literal()
     if (adjustmentType != null) __obj.updateDynamic("adjustmentType")(adjustmentType.asInstanceOf[js.Any])
-    if (cooldown != null) __obj.updateDynamic("cooldown")(cooldown.asInstanceOf[js.Any])
+    if (!js.isUndefined(cooldown)) __obj.updateDynamic("cooldown")(cooldown.get.asInstanceOf[js.Any])
     if (metricAggregationType != null) __obj.updateDynamic("metricAggregationType")(metricAggregationType.asInstanceOf[js.Any])
-    if (minAdjustmentMagnitude != null) __obj.updateDynamic("minAdjustmentMagnitude")(minAdjustmentMagnitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(minAdjustmentMagnitude)) __obj.updateDynamic("minAdjustmentMagnitude")(minAdjustmentMagnitude.get.asInstanceOf[js.Any])
     if (stepAdjustments != null) __obj.updateDynamic("stepAdjustments")(stepAdjustments.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyStepScalingPolicyConfiguration]
   }

@@ -27,17 +27,17 @@ object LoopableProps {
     key: Key = null,
     `last-child`: js.UndefOr[Boolean] = js.undefined,
     odd: js.UndefOr[Boolean] = js.undefined,
-    ref: LegacyRef[js.Any] = null
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined
   ): LoopableProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("nth-child")(`nth-child`.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(even)) __obj.updateDynamic("even")(even.asInstanceOf[js.Any])
-    if (!js.isUndefined(`first-child`)) __obj.updateDynamic("first-child")(`first-child`.asInstanceOf[js.Any])
+    if (!js.isUndefined(even)) __obj.updateDynamic("even")(even.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`first-child`)) __obj.updateDynamic("first-child")(`first-child`.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(`last-child`)) __obj.updateDynamic("last-child")(`last-child`.asInstanceOf[js.Any])
-    if (!js.isUndefined(odd)) __obj.updateDynamic("odd")(odd.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(`last-child`)) __obj.updateDynamic("last-child")(`last-child`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(odd)) __obj.updateDynamic("odd")(odd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoopableProps]
   }
 }

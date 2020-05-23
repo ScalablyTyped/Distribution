@@ -22,9 +22,9 @@ trait GetAuthorizersRequest extends js.Object {
 
 object GetAuthorizersRequest {
   @scala.inline
-  def apply(restApiId: String, limit: Int | scala.Double = null, position: String = null): GetAuthorizersRequest = {
+  def apply(restApiId: String, limit: js.UndefOr[NullableInteger] = js.undefined, position: String = null): GetAuthorizersRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAuthorizersRequest]
   }

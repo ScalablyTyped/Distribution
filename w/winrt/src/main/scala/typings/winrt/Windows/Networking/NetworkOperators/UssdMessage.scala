@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.NetworkOperators.UssdMessage")
-@js.native
-class UssdMessage protected () extends IUssdMessage {
-  def this(messageText: String) = this()
-  /* CompleteClass */
-  override var dataCodingScheme: Double = js.native
-  /* CompleteClass */
-  override var payloadAsText: String = js.native
-  /* CompleteClass */
-  override def getPayload(): Uint8Array = js.native
-  /* CompleteClass */
-  override def setPayload(value: Uint8Array): Unit = js.native
+trait UssdMessage extends IUssdMessage
+
+object UssdMessage {
+  @scala.inline
+  def apply(
+    dataCodingScheme: Double,
+    getPayload: () => Uint8Array,
+    payloadAsText: String,
+    setPayload: Uint8Array => Unit
+  ): UssdMessage = {
+    val __obj = js.Dynamic.literal(dataCodingScheme = dataCodingScheme.asInstanceOf[js.Any], getPayload = js.Any.fromFunction0(getPayload), payloadAsText = payloadAsText.asInstanceOf[js.Any], setPayload = js.Any.fromFunction1(setPayload))
+    __obj.asInstanceOf[UssdMessage]
+  }
 }
 

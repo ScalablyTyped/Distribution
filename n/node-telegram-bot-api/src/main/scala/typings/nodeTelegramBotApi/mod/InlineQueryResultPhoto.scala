@@ -29,8 +29,8 @@ object InlineQueryResultPhoto {
     caption: String = null,
     description: String = null,
     input_message_content: InputMessageContent = null,
-    photo_height: Int | Double = null,
-    photo_width: Int | Double = null,
+    photo_height: js.UndefOr[Double] = js.undefined,
+    photo_width: js.UndefOr[Double] = js.undefined,
     reply_markup: InlineKeyboardMarkup = null,
     title: String = null
   ): InlineQueryResultPhoto = {
@@ -39,8 +39,8 @@ object InlineQueryResultPhoto {
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
-    if (photo_height != null) __obj.updateDynamic("photo_height")(photo_height.asInstanceOf[js.Any])
-    if (photo_width != null) __obj.updateDynamic("photo_width")(photo_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(photo_height)) __obj.updateDynamic("photo_height")(photo_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(photo_width)) __obj.updateDynamic("photo_width")(photo_width.get.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultPhoto]

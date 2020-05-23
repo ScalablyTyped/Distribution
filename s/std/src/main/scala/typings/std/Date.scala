@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Intl.DateTimeFormatOptions
 import typings.std.stdStrings.default
 import typings.std.stdStrings.number
@@ -204,8 +203,4 @@ trait Date extends _IDBValidKey {
   /** Returns a date converted to a string using Universal Coordinated Time (UTC). */
   def toUTCString(): java.lang.String = js.native
 }
-
-@JSGlobal("Date")
-@js.native
-object Date extends TopLevel[DateConstructor]
 

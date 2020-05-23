@@ -19,8 +19,8 @@ object SwaggerRouter12Options {
   ): SwaggerRouter12Options = {
     val __obj = js.Dynamic.literal()
     if (controllers != null) __obj.updateDynamic("controllers")(controllers.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreMissingHandlers)) __obj.updateDynamic("ignoreMissingHandlers")(ignoreMissingHandlers.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStubs)) __obj.updateDynamic("useStubs")(useStubs.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreMissingHandlers)) __obj.updateDynamic("ignoreMissingHandlers")(ignoreMissingHandlers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStubs)) __obj.updateDynamic("useStubs")(useStubs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerRouter12Options]
   }
 }

@@ -21,7 +21,7 @@ object TimelineFeedsOptions {
   ): TimelineFeedsOptions = {
     val __obj = js.Dynamic.literal()
     if (latestStoryPk != null) __obj.updateDynamic("latestStoryPk")(latestStoryPk.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushDisabled)) __obj.updateDynamic("pushDisabled")(pushDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(pushDisabled)) __obj.updateDynamic("pushDisabled")(pushDisabled.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (recoveredFromCrash != null) __obj.updateDynamic("recoveredFromCrash")(recoveredFromCrash.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedsOptions]

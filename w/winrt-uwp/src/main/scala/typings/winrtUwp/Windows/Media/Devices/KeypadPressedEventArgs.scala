@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains information for the KeypadPressed event. */
-@JSGlobal("Windows.Media.Devices.KeypadPressedEventArgs")
-@js.native
-abstract class KeypadPressedEventArgs () extends js.Object {
+trait KeypadPressedEventArgs extends js.Object {
   /** Returns the value of the keypad button on the device that was pressed. */
-  var telephonyKey: TelephonyKey = js.native
+  var telephonyKey: TelephonyKey
+}
+
+object KeypadPressedEventArgs {
+  @scala.inline
+  def apply(telephonyKey: TelephonyKey): KeypadPressedEventArgs = {
+    val __obj = js.Dynamic.literal(telephonyKey = telephonyKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeypadPressedEventArgs]
+  }
 }
 

@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojdialogMod
 
-import typings.oracleOraclejet.AnonLabelCloseIcon
+import typings.oracleOraclejet.anon.LabelCloseIcon
 import typings.oracleOraclejet.mod.baseComponentSettableProperties
 import typings.oracleOraclejet.ojdialogMod.ojDialog.Position
 import typings.oracleOraclejet.oracleOraclejetStrings.`title-bar`
@@ -26,7 +26,7 @@ trait ojDialogSettableProperties extends baseComponentSettableProperties {
   var resizeBehavior: resizable | none
   var role: String
   @JSName("translations")
-  var translations_ojDialogSettableProperties: AnonLabelCloseIcon
+  var translations_ojDialogSettableProperties: LabelCloseIcon
 }
 
 object ojDialogSettableProperties {
@@ -39,11 +39,10 @@ object ojDialogSettableProperties {
     position: Position,
     resizeBehavior: resizable | none,
     role: String,
-    translations: AnonLabelCloseIcon,
+    translations: LabelCloseIcon,
     dialogTitle: String = null
   ): ojDialogSettableProperties = {
-    val __obj = js.Dynamic.literal(cancelBehavior = cancelBehavior.asInstanceOf[js.Any], dragAffordance = dragAffordance.asInstanceOf[js.Any], initialVisibility = initialVisibility.asInstanceOf[js.Any], modality = modality.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], resizeBehavior = resizeBehavior.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
-    if (dialogTitle != null) __obj.updateDynamic("dialogTitle")(dialogTitle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cancelBehavior = cancelBehavior.asInstanceOf[js.Any], dragAffordance = dragAffordance.asInstanceOf[js.Any], initialVisibility = initialVisibility.asInstanceOf[js.Any], modality = modality.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], resizeBehavior = resizeBehavior.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], dialogTitle = dialogTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojDialogSettableProperties]
   }
 }

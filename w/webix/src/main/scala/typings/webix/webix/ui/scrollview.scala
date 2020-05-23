@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.scrollview")
 @js.native
-class scrollview () extends baseview {
+trait scrollview extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

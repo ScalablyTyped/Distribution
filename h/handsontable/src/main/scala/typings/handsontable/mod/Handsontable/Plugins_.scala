@@ -1,6 +1,6 @@
 package typings.handsontable.mod.Handsontable
 
-import typings.handsontable.AnonInstantiable
+import typings.handsontable.anon.Instantiable
 import typings.handsontable.mod.Handsontable.plugins.AutoColumnSize
 import typings.handsontable.mod.Handsontable.plugins.AutoRowSize
 import typings.handsontable.mod.Handsontable.plugins.Autofill
@@ -74,7 +74,7 @@ trait Plugins_ extends js.Object {
   var Search: typings.handsontable.mod.Handsontable.plugins.Search
   var TouchScroll: typings.handsontable.mod.Handsontable.plugins.TouchScroll
   var TrimRows: typings.handsontable.mod.Handsontable.plugins.TrimRows
-  def registerPlugin(pluginName: String, pluginClass: AnonInstantiable): Unit
+  def registerPlugin(pluginName: String, pluginClass: Instantiable): Unit
 }
 
 object Plugins_ {
@@ -114,7 +114,7 @@ object Plugins_ {
     Search: Search,
     TouchScroll: TouchScroll,
     TrimRows: TrimRows,
-    registerPlugin: (String, AnonInstantiable) => Unit
+    registerPlugin: (String, Instantiable) => Unit
   ): Plugins_ = {
     val __obj = js.Dynamic.literal(AutoColumnSize = AutoColumnSize.asInstanceOf[js.Any], AutoRowSize = AutoRowSize.asInstanceOf[js.Any], Autofill = Autofill.asInstanceOf[js.Any], BasePlugin = BasePlugin.asInstanceOf[js.Any], BindRowsWithHeaders = BindRowsWithHeaders.asInstanceOf[js.Any], CollapsibleColumns = CollapsibleColumns.asInstanceOf[js.Any], ColumnSorting = ColumnSorting.asInstanceOf[js.Any], ColumnSummary = ColumnSummary.asInstanceOf[js.Any], Comments = Comments.asInstanceOf[js.Any], ContextMenu = ContextMenu.asInstanceOf[js.Any], CopyPaste = CopyPaste.asInstanceOf[js.Any], DragToScroll = DragToScroll.asInstanceOf[js.Any], DropdownMenu = DropdownMenu.asInstanceOf[js.Any], ExportFile = ExportFile.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], Formulas = Formulas.asInstanceOf[js.Any], GanttChart = GanttChart.asInstanceOf[js.Any], HeaderTooltips = HeaderTooltips.asInstanceOf[js.Any], HiddenColumns = HiddenColumns.asInstanceOf[js.Any], HiddenRows = HiddenRows.asInstanceOf[js.Any], ManualColumnFreeze = ManualColumnFreeze.asInstanceOf[js.Any], ManualColumnMove = ManualColumnMove.asInstanceOf[js.Any], ManualColumnResize = ManualColumnResize.asInstanceOf[js.Any], ManualRowMove = ManualRowMove.asInstanceOf[js.Any], ManualRowResize = ManualRowResize.asInstanceOf[js.Any], MergeCells = MergeCells.asInstanceOf[js.Any], MultiColumnSorting = MultiColumnSorting.asInstanceOf[js.Any], MultipleSelectionHandles = MultipleSelectionHandles.asInstanceOf[js.Any], NestedHeaders = NestedHeaders.asInstanceOf[js.Any], NestedRows = NestedRows.asInstanceOf[js.Any], ObserveChanges = ObserveChanges.asInstanceOf[js.Any], Search = Search.asInstanceOf[js.Any], TouchScroll = TouchScroll.asInstanceOf[js.Any], TrimRows = TrimRows.asInstanceOf[js.Any], registerPlugin = js.Any.fromFunction2(registerPlugin))
     __obj.asInstanceOf[Plugins_]

@@ -39,7 +39,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (basedir != null) __obj.updateDynamic("basedir")(basedir.asInstanceOf[js.Any])
     if (configdir != null) __obj.updateDynamic("configdir")(configdir.asInstanceOf[js.Any])
-    if (!js.isUndefined(inheritViews)) __obj.updateDynamic("inheritViews")(inheritViews.asInstanceOf[js.Any])
+    if (!js.isUndefined(inheritViews)) __obj.updateDynamic("inheritViews")(inheritViews.get.asInstanceOf[js.Any])
     if (mountpath != null) __obj.updateDynamic("mountpath")(mountpath.asInstanceOf[js.Any])
     if (onconfig != null) __obj.updateDynamic("onconfig")(js.Any.fromFunction2(onconfig))
     if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])

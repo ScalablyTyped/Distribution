@@ -1,13 +1,13 @@
 package typings.officeJsPreview.Word
 
-import typings.officeJsPreview.AnonExpand
-import typings.officeJsPreview.AnonIgnorePunct
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.Word.Interfaces.TableRowData
 import typings.officeJsPreview.Word.Interfaces.TableRowLoadOptions
 import typings.officeJsPreview.Word.Interfaces.TableRowUpdateData
+import typings.officeJsPreview.anon.Expand
+import typings.officeJsPreview.anon.IgnorePunct
 import typings.officeJsPreview.officeJsPreviewStrings.After
 import typings.officeJsPreview.officeJsPreviewStrings.All
 import typings.officeJsPreview.officeJsPreviewStrings.Before
@@ -38,9 +38,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.3]
   */
-@JSGlobal("Word.TableRow")
 @js.native
-class TableRow () extends ClientObject {
+trait TableRow extends ClientObject {
   /**
     *
     * Gets the number of cells in the row. Read-only.
@@ -277,8 +276,8 @@ class TableRow () extends ClientObject {
   def load(): TableRow = js.native
   def load(option: String): TableRow = js.native
   def load(option: js.Array[String]): TableRow = js.native
-  def load(option: AnonExpand): TableRow = js.native
   def load(option: TableRowLoadOptions): TableRow = js.native
+  def load(option: Expand): TableRow = js.native
   /**
     *
     * Merges the row into one cell.
@@ -297,8 +296,8 @@ class TableRow () extends ClientObject {
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: String): RangeCollection = js.native
-  def search(searchText: String, searchOptions: AnonIgnorePunct): RangeCollection = js.native
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
+  def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
   /**
     *
     * Selects the row and navigates the Word UI to it.

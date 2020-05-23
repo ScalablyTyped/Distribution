@@ -1,5 +1,11 @@
 package typings.jupyterlabServices
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import typings.jupyterlabServices.anon.CLOSED
+import typings.jupyterlabServices.anon.Instantiable
+import typings.jupyterlabServices.anon.InstantiableRequest
+import typings.jupyterlabServices.anon.PartialISettings
 import typings.std.Error
 import typings.std.RequestInfo
 import typings.std.RequestInit
@@ -24,15 +30,15 @@ object serverconnectionMod extends js.Object {
       /**
         * The `Headers` object constructor.
         */
-      val Headers: AnonInstantiable = js.native
+      val Headers: Instantiable with Instantiable0[typings.std.global.Headers] = js.native
       /**
         * The `Request` object constructor.
         */
-      val Request: AnonInstantiableRequest = js.native
+      val Request: InstantiableRequest with (Instantiable1[/* input */ RequestInfo, typings.std.global.Request]) = js.native
       /**
         * The `WebSocket` object constructor.
         */
-      val WebSocket: AnonCLOSED = js.native
+      val WebSocket: CLOSED with (Instantiable1[/* url */ String, typings.std.global.WebSocket]) = js.native
       /**
         * The app url of the JupyterLab application.
         */

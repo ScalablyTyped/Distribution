@@ -1,6 +1,6 @@
 package typings.jupyterlabExtensionmanager.npmMod
 
-import typings.jupyterlabExtensionmanager.AnonFlags
+import typings.jupyterlabExtensionmanager.anon.Flags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait ISearchResult extends js.Object {
   /**
     * A collection of search results.
     */
-  var objects: js.Array[AnonFlags]
+  var objects: js.Array[Flags]
   /**
     * Timestamp of the search result creation.
     */
@@ -25,7 +25,7 @@ trait ISearchResult extends js.Object {
 
 object ISearchResult {
   @scala.inline
-  def apply(objects: js.Array[AnonFlags], time: String, total: Double): ISearchResult = {
+  def apply(objects: js.Array[Flags], time: String, total: Double): ISearchResult = {
     val __obj = js.Dynamic.literal(objects = objects.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchResult]
   }

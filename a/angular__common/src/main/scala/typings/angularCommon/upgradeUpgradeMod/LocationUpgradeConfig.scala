@@ -43,7 +43,7 @@ object LocationUpgradeConfig {
     if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix.asInstanceOf[js.Any])
     if (serverBaseHref != null) __obj.updateDynamic("serverBaseHref")(serverBaseHref.asInstanceOf[js.Any])
     if (urlCodec != null) __obj.updateDynamic("urlCodec")(urlCodec.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationUpgradeConfig]
   }
 }

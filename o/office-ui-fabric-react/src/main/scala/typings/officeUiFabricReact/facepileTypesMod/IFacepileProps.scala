@@ -7,7 +7,7 @@ import typings.officeUiFabricReact.personaTypesMod.PersonaSize
 import typings.react.mod.ClassAttributes
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
@@ -86,14 +86,14 @@ object IFacepileProps {
     componentRef: IRefObject[IFacepile] = null,
     getPersonaProps: /* persona */ IFacepilePersona => IPersonaSharedProps = null,
     key: Key = null,
-    maxDisplayablePersonas: Int | Double = null,
+    maxDisplayablePersonas: js.UndefOr[Double] = js.undefined,
     onRenderPersona: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => Element | Null = null,
     onRenderPersonaCoin: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => Element | Null = null,
     overflowButtonProps: IButtonProps = null,
     overflowButtonType: OverflowButtonType = null,
     overflowPersonas: js.Array[IFacepilePersona] = null,
     personaSize: PersonaSize = null,
-    ref: LegacyRef[FacepileBase] = null,
+    ref: js.UndefOr[Null | LegacyRef[FacepileBase]] = js.undefined,
     showAddButton: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles] = null,
     theme: ITheme = null
@@ -107,15 +107,15 @@ object IFacepileProps {
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (getPersonaProps != null) __obj.updateDynamic("getPersonaProps")(js.Any.fromFunction1(getPersonaProps))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxDisplayablePersonas != null) __obj.updateDynamic("maxDisplayablePersonas")(maxDisplayablePersonas.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDisplayablePersonas)) __obj.updateDynamic("maxDisplayablePersonas")(maxDisplayablePersonas.get.asInstanceOf[js.Any])
     if (onRenderPersona != null) __obj.updateDynamic("onRenderPersona")(js.Any.fromFunction2(onRenderPersona))
     if (onRenderPersonaCoin != null) __obj.updateDynamic("onRenderPersonaCoin")(js.Any.fromFunction2(onRenderPersonaCoin))
     if (overflowButtonProps != null) __obj.updateDynamic("overflowButtonProps")(overflowButtonProps.asInstanceOf[js.Any])
     if (overflowButtonType != null) __obj.updateDynamic("overflowButtonType")(overflowButtonType.asInstanceOf[js.Any])
     if (overflowPersonas != null) __obj.updateDynamic("overflowPersonas")(overflowPersonas.asInstanceOf[js.Any])
     if (personaSize != null) __obj.updateDynamic("personaSize")(personaSize.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAddButton)) __obj.updateDynamic("showAddButton")(showAddButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAddButton)) __obj.updateDynamic("showAddButton")(showAddButton.get.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFacepileProps]

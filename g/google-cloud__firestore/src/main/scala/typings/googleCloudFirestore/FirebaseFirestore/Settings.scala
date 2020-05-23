@@ -1,7 +1,7 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleCloudFirestore.AnonClientemail
+import typings.googleCloudFirestore.anon.Clientemail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,17 @@ trait Settings
     * Default Credentials}. If your credentials are stored in a JSON file, you
     * can specify a `keyFilename` instead.
     */
-  var credentials: js.UndefOr[AnonClientemail] = js.undefined
+  var credentials: js.UndefOr[Clientemail] = js.undefined
   /** The hostname to connect to. */
   var host: js.UndefOr[String] = js.undefined
+  /**
+    * Whether to skip nested properties that are set to `undefined` during
+    * object serialization. If set to `true`, these properties will be skipped
+    * and are not be written to Firestore. If the setting is set `false` or
+    * omitted, the SDK will throw an exception when it encounters properties
+    * of type `undefined`.
+    */
+  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.undefined
   /**
     * Local file containing the Service Account credentials as downloaded from
     * the Google Developers Console. Can  be omitted in environments that
@@ -51,12 +59,13 @@ trait Settings
 object Settings {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    credentials: AnonClientemail = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    credentials: Clientemail = null,
     host: String = null,
+    ignoreUndefinedProperties: js.UndefOr[Boolean] = js.undefined,
     keyFilename: String = null,
-    maxIdleChannels: Int | Double = null,
-    port: Int | Double = null,
+    maxIdleChannels: js.UndefOr[Double] = js.undefined,
+    port: js.UndefOr[Double] = js.undefined,
     projectId: String = null,
     ssl: js.UndefOr[Boolean] = js.undefined
   ): Settings = {
@@ -64,11 +73,12 @@ object Settings {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUndefinedProperties)) __obj.updateDynamic("ignoreUndefinedProperties")(ignoreUndefinedProperties.get.asInstanceOf[js.Any])
     if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename.asInstanceOf[js.Any])
-    if (maxIdleChannels != null) __obj.updateDynamic("maxIdleChannels")(maxIdleChannels.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIdleChannels)) __obj.updateDynamic("maxIdleChannels")(maxIdleChannels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

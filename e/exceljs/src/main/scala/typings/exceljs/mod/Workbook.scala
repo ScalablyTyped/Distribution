@@ -1,6 +1,6 @@
 package typings.exceljs.mod
 
-import typings.exceljs.PartialAddWorksheetOption
+import typings.exceljs.anon.PartialAddWorksheetOption
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

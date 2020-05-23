@@ -1,6 +1,7 @@
 package typings.slugify
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.slugify.anon.Lower
 import typings.slugify.mod.slugify.ExtendArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ object mod extends js.Object {
   object default extends js.Object {
     def apply(string: String): String = js.native
     def apply(string: String, options: String): String = js.native
-    def apply(string: String, options: AnonLower): String = js.native
+    def apply(string: String, options: Lower): String = js.native
     def extend(args: ExtendArgs): Unit = js.native
   }
   

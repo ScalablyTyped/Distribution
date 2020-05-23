@@ -35,9 +35,9 @@ object Enrichment {
   ): Enrichment = {
     val __obj = js.Dynamic.literal(destination_field = destination_field.asInstanceOf[js.Any], enrichment_name = enrichment_name.asInstanceOf[js.Any], source_field = source_field.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore_downstream_errors)) __obj.updateDynamic("ignore_downstream_errors")(ignore_downstream_errors.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore_downstream_errors)) __obj.updateDynamic("ignore_downstream_errors")(ignore_downstream_errors.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enrichment]
   }
 }

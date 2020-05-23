@@ -19,13 +19,13 @@ object BrowserHistoryBuildOptions {
     basename: String = null,
     forceRefresh: js.UndefOr[Boolean] = js.undefined,
     getUserConfirmation: (/* message */ String, /* callback */ js.Function1[/* result */ Boolean, Unit]) => Unit = null,
-    keyLength: Int | Double = null
+    keyLength: js.UndefOr[Double] = js.undefined
   ): BrowserHistoryBuildOptions = {
     val __obj = js.Dynamic.literal()
     if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh.get.asInstanceOf[js.Any])
     if (getUserConfirmation != null) __obj.updateDynamic("getUserConfirmation")(js.Any.fromFunction2(getUserConfirmation))
-    if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyLength)) __obj.updateDynamic("keyLength")(keyLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserHistoryBuildOptions]
   }
 }

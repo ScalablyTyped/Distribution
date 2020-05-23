@@ -1,10 +1,10 @@
 package typings.officeJs.OneNote
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OneNote.Interfaces.OutlineData
 import typings.officeJs.OneNote.Interfaces.OutlineLoadOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.Outline")
 @js.native
-class Outline () extends ClientObject {
+trait Outline extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Outline: RequestContext = js.native
@@ -108,8 +107,8 @@ class Outline () extends ClientObject {
   def load(): Outline = js.native
   def load(option: String): Outline = js.native
   def load(option: js.Array[String]): Outline = js.native
-  def load(option: AnonExpand): Outline = js.native
   def load(option: OutlineLoadOptions): Outline = js.native
+  def load(option: Expand): Outline = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original OneNote.Outline object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.OutlineData`) that contains shallow copies of any loaded child properties from the original object.

@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonExtra
+import typings.reactWeui.anon.Extra
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class MediaBoxInfoMeta protected () extends js.Object {
 @JSImport("react-weui", "MediaBoxInfoMeta")
 @js.native
 object MediaBoxInfoMeta extends js.Object {
-  var defaultProps: AnonExtra = js.native
+  var defaultProps: Extra = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

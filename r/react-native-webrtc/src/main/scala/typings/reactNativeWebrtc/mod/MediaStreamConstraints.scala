@@ -13,7 +13,7 @@ object MediaStreamConstraints {
   @scala.inline
   def apply(audio: js.UndefOr[Boolean] = js.undefined, video: Boolean | MediaTrackConstraints = null): MediaStreamConstraints = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(audio)) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
+    if (!js.isUndefined(audio)) __obj.updateDynamic("audio")(audio.get.asInstanceOf[js.Any])
     if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamConstraints]
   }

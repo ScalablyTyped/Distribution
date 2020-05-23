@@ -6,11 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Physijs.Vehicle")
 @js.native
-class Vehicle protected () extends js.Object {
-  def this(mesh: Mesh) = this()
-  def this(mesh: Mesh, tuning: VehicleTuning) = this()
+trait Vehicle extends js.Object {
   var mesh: typings.three.mod.Mesh = js.native
   var wheels: js.Array[typings.three.mod.Mesh] = js.native
   def addWheel(

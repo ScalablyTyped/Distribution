@@ -1,7 +1,7 @@
 package typings.stormReactDiagrams.baseEntityMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.stormReactDiagrams.AnonId
+import typings.stormReactDiagrams.anon.Id
 import typings.stormReactDiagrams.diagramEngineMod.DiagramEngine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ class BaseEntity[T /* <: BaseListener[_] */] () extends js.Object {
   def isLocked(): Boolean = js.native
   def iterateListeners(cb: js.Function2[/* t */ T, /* event */ BaseEvent[_], _]): Unit = js.native
   def removeListener(listener: String): Boolean = js.native
-  def serialize(): AnonId = js.native
+  def serialize(): Id = js.native
   def setLocked(): Unit = js.native
   def setLocked(locked: Boolean): Unit = js.native
 }

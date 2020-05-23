@@ -1,5 +1,6 @@
 package typings.antdMobileRn
 
+import typings.antdMobileRn.anon.`0`
 import typings.antdMobileRn.checkboxPropsTypeMod.CheckboxPropsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +20,7 @@ object checkboxIndexNativeMod extends js.Object {
   object default extends js.Object {
     var AgreeItem: js.Any = js.native
     var CheckboxItem: js.Any = js.native
-    var defaultProps: Anon0 = js.native
+    var defaultProps: `0` = js.native
   }
   
 }

@@ -6,13 +6,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.CellEditCompleted")
-@js.native
-class CellEditCompleted protected () extends IEventArgs {
-  def this(recordKey: Double, fieldKey: String, changeKey: IChangeKey, bCancelled: Boolean) = this()
-  var bCancelled: Boolean = js.native
-  var changeKey: IChangeKey = js.native
-  var fieldKey: String = js.native
-  var recordKey: Double = js.native
+trait CellEditCompleted extends IEventArgs {
+  var bCancelled: Boolean
+  var changeKey: IChangeKey
+  var fieldKey: String
+  var recordKey: Double
+}
+
+object CellEditCompleted {
+  @scala.inline
+  def apply(bCancelled: Boolean, changeKey: IChangeKey, fieldKey: String, recordKey: Double): CellEditCompleted = {
+    val __obj = js.Dynamic.literal(bCancelled = bCancelled.asInstanceOf[js.Any], changeKey = changeKey.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CellEditCompleted]
+  }
 }
 

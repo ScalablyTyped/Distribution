@@ -1,6 +1,6 @@
 package typings.angularCommon.httpMod
 
-import typings.angularCommon.AnonBody
+import typings.angularCommon.anon.Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class HttpResponse[T] ()
   extends typings.angularCommon.httpHttpMod.HttpResponse[T] {
-  def this(init: AnonBody[T]) = this()
+  def this(init: Body[T]) = this()
 }
 

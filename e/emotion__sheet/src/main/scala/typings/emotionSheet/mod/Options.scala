@@ -22,7 +22,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy.asInstanceOf[js.Any])
+    if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

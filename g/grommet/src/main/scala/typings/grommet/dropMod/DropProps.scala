@@ -1,7 +1,7 @@
 package typings.grommet.dropMod
 
-import typings.grommet.AnonHorizontal
-import typings.grommet.AnonLeft
+import typings.grommet.anon.Horizontal
+import typings.grommet.anon.Left
 import typings.grommet.grommetStrings.auto
 import typings.grommet.grommetStrings.hidden
 import typings.grommet.grommetStrings.scroll
@@ -15,11 +15,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DropProps extends js.Object {
-  var align: js.UndefOr[AnonLeft] = js.undefined
+  var align: js.UndefOr[Left] = js.undefined
   var elevation: js.UndefOr[ElevationType] = js.undefined
   var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onEsc: js.UndefOr[KeyboardType] = js.undefined
-  var overflow: js.UndefOr[auto | hidden | scroll | visible | AnonHorizontal | String] = js.undefined
+  var overflow: js.UndefOr[auto | hidden | scroll | visible | Horizontal | String] = js.undefined
   var plain: js.UndefOr[Boolean] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
   var restrictFocus: js.UndefOr[Boolean] = js.undefined
@@ -30,11 +30,11 @@ trait DropProps extends js.Object {
 object DropProps {
   @scala.inline
   def apply(
-    align: AnonLeft = null,
+    align: Left = null,
     elevation: ElevationType = null,
     onClickOutside: /* repeated */ js.Any => _ = null,
     onEsc: /* event */ KeyboardEvent[HTMLElement] => Unit = null,
-    overflow: auto | hidden | scroll | visible | AnonHorizontal | String = null,
+    overflow: auto | hidden | scroll | visible | Horizontal | String = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     responsive: js.UndefOr[Boolean] = js.undefined,
     restrictFocus: js.UndefOr[Boolean] = js.undefined,
@@ -47,10 +47,10 @@ object DropProps {
     if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(js.Any.fromFunction1(onClickOutside))
     if (onEsc != null) __obj.updateDynamic("onEsc")(js.Any.fromFunction1(onEsc))
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictFocus)) __obj.updateDynamic("restrictFocus")(restrictFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretch)) __obj.updateDynamic("stretch")(stretch.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictFocus)) __obj.updateDynamic("restrictFocus")(restrictFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretch)) __obj.updateDynamic("stretch")(stretch.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropProps]
   }

@@ -22,11 +22,15 @@ trait MergeHunkDetail extends js.Object {
 
 object MergeHunkDetail {
   @scala.inline
-  def apply(endLine: Int | Double = null, hunkContent: HunkContent = null, startLine: Int | Double = null): MergeHunkDetail = {
+  def apply(
+    endLine: js.UndefOr[LineNumber] = js.undefined,
+    hunkContent: HunkContent = null,
+    startLine: js.UndefOr[LineNumber] = js.undefined
+  ): MergeHunkDetail = {
     val __obj = js.Dynamic.literal()
-    if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(endLine)) __obj.updateDynamic("endLine")(endLine.get.asInstanceOf[js.Any])
     if (hunkContent != null) __obj.updateDynamic("hunkContent")(hunkContent.asInstanceOf[js.Any])
-    if (startLine != null) __obj.updateDynamic("startLine")(startLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(startLine)) __obj.updateDynamic("startLine")(startLine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeHunkDetail]
   }
 }

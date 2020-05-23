@@ -10,10 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Supports managing a request for background execution. */
-@JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession")
 @js.native
-/** Creates an ExtendedExecutionSession object. */
-class ExtendedExecutionSession () extends js.Object {
+trait ExtendedExecutionSession extends js.Object {
   /** Gets or sets a string to display in the shell. */
   var description: String = js.native
   /** The Revoked event occurs when the system revokes background execution. */

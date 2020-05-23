@@ -37,11 +37,11 @@ object QueryOptions {
   def apply(
     autoPage: js.UndefOr[Boolean] = js.undefined,
     captureStackTrace: js.UndefOr[Boolean] = js.undefined,
-    consistency: Int | Double = null,
+    consistency: js.UndefOr[Double] = js.undefined,
     counter: js.UndefOr[Boolean] = js.undefined,
     customPayload: js.Any = null,
     executionProfile: String | ExecutionProfile = null,
-    fetchSize: Int | Double = null,
+    fetchSize: js.UndefOr[Double] = js.undefined,
     hints: js.Array[js.Array[String] | String] = null,
     host: Host = null,
     isIdempotent: js.UndefOr[Boolean] = js.undefined,
@@ -49,38 +49,38 @@ object QueryOptions {
     logged: js.UndefOr[Boolean] = js.undefined,
     pageState: Buffer | String = null,
     prepare: js.UndefOr[Boolean] = js.undefined,
-    readTimeout: Int | Double = null,
+    readTimeout: js.UndefOr[Double] = js.undefined,
     retry: RetryPolicy = null,
     routingIndexes: js.Array[Double] = null,
     routingKey: Buffer | js.Array[Buffer] = null,
     routingNames: js.Array[String] = null,
-    serialConsistency: Int | Double = null,
+    serialConsistency: js.UndefOr[Double] = js.undefined,
     timestamp: Double | Long = null,
     traceQuery: js.UndefOr[Boolean] = js.undefined
   ): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPage)) __obj.updateDynamic("autoPage")(autoPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureStackTrace)) __obj.updateDynamic("captureStackTrace")(captureStackTrace.asInstanceOf[js.Any])
-    if (consistency != null) __obj.updateDynamic("consistency")(consistency.asInstanceOf[js.Any])
-    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPage)) __obj.updateDynamic("autoPage")(autoPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureStackTrace)) __obj.updateDynamic("captureStackTrace")(captureStackTrace.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(consistency)) __obj.updateDynamic("consistency")(consistency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.get.asInstanceOf[js.Any])
     if (customPayload != null) __obj.updateDynamic("customPayload")(customPayload.asInstanceOf[js.Any])
     if (executionProfile != null) __obj.updateDynamic("executionProfile")(executionProfile.asInstanceOf[js.Any])
-    if (fetchSize != null) __obj.updateDynamic("fetchSize")(fetchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchSize)) __obj.updateDynamic("fetchSize")(fetchSize.get.asInstanceOf[js.Any])
     if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIdempotent)) __obj.updateDynamic("isIdempotent")(isIdempotent.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIdempotent)) __obj.updateDynamic("isIdempotent")(isIdempotent.get.asInstanceOf[js.Any])
     if (keyspace != null) __obj.updateDynamic("keyspace")(keyspace.asInstanceOf[js.Any])
-    if (!js.isUndefined(logged)) __obj.updateDynamic("logged")(logged.asInstanceOf[js.Any])
+    if (!js.isUndefined(logged)) __obj.updateDynamic("logged")(logged.get.asInstanceOf[js.Any])
     if (pageState != null) __obj.updateDynamic("pageState")(pageState.asInstanceOf[js.Any])
-    if (!js.isUndefined(prepare)) __obj.updateDynamic("prepare")(prepare.asInstanceOf[js.Any])
-    if (readTimeout != null) __obj.updateDynamic("readTimeout")(readTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepare)) __obj.updateDynamic("prepare")(prepare.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readTimeout)) __obj.updateDynamic("readTimeout")(readTimeout.get.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (routingIndexes != null) __obj.updateDynamic("routingIndexes")(routingIndexes.asInstanceOf[js.Any])
     if (routingKey != null) __obj.updateDynamic("routingKey")(routingKey.asInstanceOf[js.Any])
     if (routingNames != null) __obj.updateDynamic("routingNames")(routingNames.asInstanceOf[js.Any])
-    if (serialConsistency != null) __obj.updateDynamic("serialConsistency")(serialConsistency.asInstanceOf[js.Any])
+    if (!js.isUndefined(serialConsistency)) __obj.updateDynamic("serialConsistency")(serialConsistency.get.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceQuery)) __obj.updateDynamic("traceQuery")(traceQuery.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceQuery)) __obj.updateDynamic("traceQuery")(traceQuery.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

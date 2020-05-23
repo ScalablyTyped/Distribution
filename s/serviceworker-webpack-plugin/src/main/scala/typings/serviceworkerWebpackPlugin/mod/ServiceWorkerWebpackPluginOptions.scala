@@ -65,7 +65,7 @@ object ServiceWorkerWebpackPluginOptions {
     if (excludes != null) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (includes != null) __obj.updateDynamic("includes")(includes.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize.get.asInstanceOf[js.Any])
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(js.Any.fromFunction1(template))
     if (transformOptions != null) __obj.updateDynamic("transformOptions")(js.Any.fromFunction1(transformOptions))

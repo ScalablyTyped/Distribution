@@ -1,5 +1,6 @@
 package typings.materialUiCore
 
+import typings.materialUiCore.anon.PartialwithThemeboolean
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

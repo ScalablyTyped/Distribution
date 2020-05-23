@@ -1,5 +1,6 @@
 package typings.rcTreeSelect
 
+import typings.rcTreeSelect.anon.Selected
 import typings.rcTreeSelect.interfaceMod.DataNode
 import typings.rcTreeSelect.interfaceMod.FlattenDataNode
 import typings.rcTreeSelect.interfaceMod.RawValueType
@@ -36,7 +37,7 @@ object optionListMod extends js.Object {
     var virtual: js.UndefOr[Boolean] = js.native
     /** Tell Select that some value is now active to make accessibility work */
     def onActiveValue(value: RawValueType, index: Double): Unit = js.native
-    def onSelect(value: RawValueType, option: AnonSelected): Unit = js.native
+    def onSelect(value: RawValueType, option: Selected): Unit = js.native
     def onToggleOpen(): Unit = js.native
     def onToggleOpen(open: Boolean): Unit = js.native
   }

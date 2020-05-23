@@ -1,7 +1,7 @@
 package typings.jsDataAdapter.mod
 
 import typings.jsData.mod.Mapper
-import typings.jsDataAdapter.TypeofAdapter
+import typings.jsDataAdapter.anon.TypeofAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

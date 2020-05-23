@@ -44,16 +44,16 @@ object ManagedUploadOptions {
   def apply(
     leavePartsOnError: js.UndefOr[Boolean] = js.undefined,
     params: PutObjectRequest = null,
-    partSize: Int | Double = null,
-    queueSize: Int | Double = null,
+    partSize: js.UndefOr[Double] = js.undefined,
+    queueSize: js.UndefOr[Double] = js.undefined,
     service: typings.awsSdk.s3Mod.^ = null,
     tags: js.Array[Tag] = null
   ): ManagedUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leavePartsOnError)) __obj.updateDynamic("leavePartsOnError")(leavePartsOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(leavePartsOnError)) __obj.updateDynamic("leavePartsOnError")(leavePartsOnError.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
-    if (queueSize != null) __obj.updateDynamic("queueSize")(queueSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(partSize)) __obj.updateDynamic("partSize")(partSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(queueSize)) __obj.updateDynamic("queueSize")(queueSize.get.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedUploadOptions]

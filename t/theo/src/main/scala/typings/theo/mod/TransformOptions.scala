@@ -12,7 +12,7 @@ trait TransformOptions[T /* <: String */] extends js.Object {
 
 object TransformOptions {
   @scala.inline
-  def apply[T /* <: String */](file: String, data: String = null, `type`: Transform | T = null): TransformOptions[T] = {
+  def apply[T](file: String, data: String = null, `type`: Transform | T = null): TransformOptions[T] = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

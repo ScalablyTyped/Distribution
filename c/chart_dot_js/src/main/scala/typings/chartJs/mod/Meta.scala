@@ -35,7 +35,7 @@ object Meta {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if ($filler != null) __obj.updateDynamic("$filler")($filler.asInstanceOf[js.Any])
     if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     if (xAxisID != null) __obj.updateDynamic("xAxisID")(xAxisID.asInstanceOf[js.Any])
     if (yAxisID != null) __obj.updateDynamic("yAxisID")(yAxisID.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.vfileLocation.mod
 
-import typings.vfileLocation.AnonColumn
-import typings.vfileLocation.AnonLine
+import typings.vfileLocation.anon.Column
+import typings.vfileLocation.anon.Line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,16 +11,16 @@ trait Location extends js.Object {
     * Get the `offset` (`number`) for a line and column-based `position` in the bound file.
     * Returns `-1` when given invalid or out of bounds input.
     */
-  def toOffset(position: AnonColumn): Double
+  def toOffset(position: Column): Double
   /**
     * Get the line and column-based `position` for `offset` in the bound file.
     */
-  def toPosition(offset: Double): AnonLine
+  def toPosition(offset: Double): Line
 }
 
 object Location {
   @scala.inline
-  def apply(toOffset: AnonColumn => Double, toPosition: Double => AnonLine): Location = {
+  def apply(toOffset: Column => Double, toPosition: Double => Line): Location = {
     val __obj = js.Dynamic.literal(toOffset = js.Any.fromFunction1(toOffset), toPosition = js.Any.fromFunction1(toPosition))
     __obj.asInstanceOf[Location]
   }

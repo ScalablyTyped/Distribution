@@ -54,7 +54,7 @@ object GoogleActionsV2AppRequest {
     if (conversation != null) __obj.updateDynamic("conversation")(conversation.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInSandbox)) __obj.updateDynamic("isInSandbox")(isInSandbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInSandbox)) __obj.updateDynamic("isInSandbox")(isInSandbox.get.asInstanceOf[js.Any])
     if (surface != null) __obj.updateDynamic("surface")(surface.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2AppRequest]

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client ASPxTreeList.
   */
-@JSGlobal("ASPxClientTreeList")
 @js.native
-class ASPxClientTreeList () extends ASPxClientControl {
+trait ASPxClientTreeList extends ASPxClientControl {
   /**
     * Occurs on the client side before data changes are canceled in batch edit mode.
     */
@@ -481,16 +480,5 @@ class ASPxClientTreeList () extends ASPxClientControl {
     * Saves all the changes made and switches the ASPxTreeList to browse mode.
     */
   def UpdateEdit(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientTreeList")
-@js.native
-object ASPxClientTreeList extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientTreeList type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientTreeList = js.native
 }
 

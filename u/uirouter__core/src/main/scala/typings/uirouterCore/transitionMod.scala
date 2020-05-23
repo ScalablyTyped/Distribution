@@ -1,6 +1,7 @@
 package typings.uirouterCore
 
 import typings.std.Error
+import typings.uirouterCore.anon.TypeofTransition
 import typings.uirouterCore.pathNodeMod.PathNode
 import typings.uirouterCore.routerMod.UIRouter
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration

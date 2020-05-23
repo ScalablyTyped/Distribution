@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ADODB.Command")
 @js.native
-class Command protected () extends js.Object {
+trait Command extends js.Object {
   @JSName("ADODB.Command_typekey")
   var ADODBDotCommand_typekey: Command = js.native
   /**

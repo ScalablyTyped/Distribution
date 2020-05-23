@@ -1,6 +1,6 @@
 package typings.imap.mod
 
-import typings.imap.AnonOther
+import typings.imap.anon.Other
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait Connection
   /** The (top-level) mailbox hierarchy delimiter. If the server does not support mailbox hierarchies and only a flat list, this value will be falsey. */
   var delimiter: String = js.native
   /** Contains information about each namespace type (if supported by the server) with the following properties: */
-  var namespaces: AnonOther = js.native
+  var namespaces: Other = js.native
   /**
     seq exposes the search() ... serverSupports() set of commands, but returns sequence number(s) instead of UIDs.
     */

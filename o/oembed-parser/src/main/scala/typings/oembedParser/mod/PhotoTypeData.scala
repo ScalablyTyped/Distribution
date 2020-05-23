@@ -32,9 +32,9 @@ object PhotoTypeData {
     cache_age: String = null,
     provider_name: String = null,
     provider_url: String = null,
-    thumbnail_height: Int | Double = null,
+    thumbnail_height: js.UndefOr[Double] = js.undefined,
     thumbnail_url: String = null,
-    thumbnail_width: Int | Double = null,
+    thumbnail_width: js.UndefOr[Double] = js.undefined,
     title: String = null
   ): PhotoTypeData = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
@@ -44,9 +44,9 @@ object PhotoTypeData {
     if (cache_age != null) __obj.updateDynamic("cache_age")(cache_age.asInstanceOf[js.Any])
     if (provider_name != null) __obj.updateDynamic("provider_name")(provider_name.asInstanceOf[js.Any])
     if (provider_url != null) __obj.updateDynamic("provider_url")(provider_url.asInstanceOf[js.Any])
-    if (thumbnail_height != null) __obj.updateDynamic("thumbnail_height")(thumbnail_height.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbnail_height)) __obj.updateDynamic("thumbnail_height")(thumbnail_height.get.asInstanceOf[js.Any])
     if (thumbnail_url != null) __obj.updateDynamic("thumbnail_url")(thumbnail_url.asInstanceOf[js.Any])
-    if (thumbnail_width != null) __obj.updateDynamic("thumbnail_width")(thumbnail_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbnail_width)) __obj.updateDynamic("thumbnail_width")(thumbnail_width.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoTypeData]
   }

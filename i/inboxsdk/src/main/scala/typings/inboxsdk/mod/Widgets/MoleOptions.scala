@@ -27,7 +27,7 @@ object MoleOptions {
     titleEl: HTMLElement = null
   ): MoleOptions = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
-    if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome.asInstanceOf[js.Any])
+    if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (minimizedTitleEl != null) __obj.updateDynamic("minimizedTitleEl")(minimizedTitleEl.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

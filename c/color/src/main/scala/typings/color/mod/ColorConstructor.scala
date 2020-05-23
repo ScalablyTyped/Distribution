@@ -30,34 +30,34 @@ trait ColorConstructor
      with Instantiable1[/* obj */ ColorParam, Color[ColorParam]]
      with Instantiable2[
       /* obj */ ColorParam, 
-      /* model */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab, 
+      /* keyof color.anon.Typeofconvert */ /* model */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab, 
       Color[ColorParam]
     ] {
   def apply(): Color[Color[ColorParam]] = js.native
   def apply(obj: String): Color[String] = js.native
   def apply(
     obj: String,
-    model: rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
+    model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
   ): Color[String] = js.native
   def apply(obj: Double): Color[Double] = js.native
   def apply(
     obj: Double,
-    model: rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
+    model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
   ): Color[Double] = js.native
   def apply(obj: Color[ColorParam]): Color[Color[ColorParam]] = js.native
   def apply(
     obj: Color[ColorParam],
-    model: rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
+    model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
   ): Color[Color[ColorParam]] = js.native
   def apply(obj: ArrayLike[Double]): Color[ArrayLike[Double]] = js.native
   def apply(
     obj: ArrayLike[Double],
-    model: rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
+    model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
   ): Color[ArrayLike[Double]] = js.native
   def apply[T /* <: StringDictionary[js.Any] */](obj: T): Color[T] = js.native
   def apply[T /* <: StringDictionary[js.Any] */](
     obj: T,
-    model: rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
+    model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
   ): Color[T] = js.native
   def ansi16(color: ColorParam): Color[ColorParam] = js.native
   def ansi16(`val`: Double*): Color[ColorParam] = js.native

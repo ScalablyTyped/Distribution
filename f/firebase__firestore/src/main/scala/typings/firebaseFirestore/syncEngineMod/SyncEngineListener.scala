@@ -25,7 +25,6 @@ object SyncEngineListener {
     onWatchError: (Query, Error) => Unit
   ): SyncEngineListener = {
     val __obj = js.Dynamic.literal(onOnlineStateChange = js.Any.fromFunction1(onOnlineStateChange), onWatchChange = js.Any.fromFunction1(onWatchChange), onWatchError = js.Any.fromFunction2(onWatchError))
-  
     __obj.asInstanceOf[SyncEngineListener]
   }
 }

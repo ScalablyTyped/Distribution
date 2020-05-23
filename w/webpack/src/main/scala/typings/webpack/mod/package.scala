@@ -53,7 +53,7 @@ package object mod {
     - java.lang.String
     - js.Function1[/ * path * / java.lang.String, scala.Boolean]
     - typings.webpack.mod.RuleSetConditions
-    - typings.webpack.AnonAnd
+    - typings.webpack.anon.And
   */
   type RuleSetCondition = typings.webpack.mod._RuleSetCondition | (js.Function1[/* path */ java.lang.String, scala.Boolean]) | typings.std.RegExp | java.lang.String
   type RuleSetQuery = java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]

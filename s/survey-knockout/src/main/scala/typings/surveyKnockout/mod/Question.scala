@@ -1,15 +1,15 @@
 package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.surveyKnockout.AnonCalculations
-import typings.surveyKnockout.AnonIsNeedRender
+import typings.surveyKnockout.anon.IncludeEmpty
+import typings.surveyKnockout.anon.IsNeedRender
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
-- typings.surveyKnockout.mod.IElement because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name. Inlined visible, parent, renderWidth, width, rightIndent, startWithNewLine, getPanel, getLayoutType, isLayoutTypeSupported, removeElement, onAnyValueChanged, clearIncorrectValues, clearErrors
+- typings.surveyKnockout.mod.IElement because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name. Inlined visible, parent, renderWidth, width, rightIndent, startWithNewLine, getPanel, getLayoutType, isLayoutTypeSupported, removeElement, onAnyValueChanged, clearIncorrectValues, clearErrors, dispose
 - typings.surveyKnockout.mod.IQuestion because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
@@ -55,7 +55,7 @@ class Question protected ()
     * The link to the custom widget.
     */
   val customWidget: QuestionCustomWidget = js.native
-  var customWidgetData: AnonIsNeedRender = js.native
+  var customWidgetData: IsNeedRender = js.native
   /**
     * Set the default value to the question. It will be assign to the question on loading the survey from JSON or adding a question to the survey or on setting this property of the value is empty.
     */
@@ -270,8 +270,11 @@ class Question protected ()
     */
   def addError(error: SurveyError): Unit = js.native
   /* protected */ def addSupportedValidators(supportedValidators: js.Array[String]): Unit = js.native
+  def afterRender(el: js.Any): Unit = js.native
+  def afterRenderQuestionCallback(question: Question, element: js.Any): js.Any = js.native
   def afterRenderQuestionElement(el: js.Any): Unit = js.native
   def beforeDestoyQuestionElement(el: js.Any): Unit = js.native
+  /* protected */ def canRunValidators(isOnValueChanged: Boolean): Boolean = js.native
   /**
     * Get is question ready to use
     */
@@ -301,6 +304,7 @@ class Question protected ()
   def clearValue_Unit(): Unit = js.native
   def commentChangedCallback(): Unit = js.native
   def createValueCopy(): js.Any = js.native
+  def dispose(): Unit = js.native
   /* protected */ def fireCallback(callback: js.Function0[Unit]): Unit = js.native
   /**
     * Move the focus to the input of this question.
@@ -356,7 +360,7 @@ class Question protected ()
     * set options.includeEmpty to false if you want to skip empty answers
     */
   def getPlainData(): js.Any = js.native
-  def getPlainData(options: AnonCalculations): js.Any = js.native
+  def getPlainData(options: IncludeEmpty): js.Any = js.native
   /* CompleteClass */
   override def getProcessedText(text: String): String = js.native
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): Unit = js.native
@@ -416,7 +420,7 @@ class Question protected ()
   def onAnyValueChanged(name: String): js.Any = js.native
   @JSName("onAnyValueChanged")
   def onAnyValueChanged_Unit(name: String): Unit = js.native
-  /* protected */ def onCheckForErrors(errors: js.Array[SurveyError]): Unit = js.native
+  /* protected */ def onCheckForErrors(errors: js.Array[SurveyError], isOnValueChanged: Boolean): Unit = js.native
   def onCompletedAsyncValidators(hasErrors: Boolean): Unit = js.native
   /* protected */ def onCreating(): Unit = js.native
   /* protected */ def onParentChanged(): Unit = js.native

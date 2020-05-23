@@ -1,8 +1,8 @@
 package typings.hardSourceWebpackPlugin.mod
 
-import typings.hardSourceWebpackPlugin.AnonDirectories
-import typings.hardSourceWebpackPlugin.AnonLevel
-import typings.hardSourceWebpackPlugin.AnonMaxAge
+import typings.hardSourceWebpackPlugin.anon.Directories
+import typings.hardSourceWebpackPlugin.anon.Level
+import typings.hardSourceWebpackPlugin.anon.MaxAge
 import typings.webpack.mod.Configuration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,20 +10,20 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var cacheDirectory: js.UndefOr[String] = js.undefined
-  var cachePrune: js.UndefOr[AnonMaxAge] = js.undefined
+  var cachePrune: js.UndefOr[MaxAge] = js.undefined
   var configHash: js.UndefOr[String | (js.Function1[/* webpackConfig */ js.UndefOr[Configuration], String])] = js.undefined
-  var environmentHash: js.UndefOr[AnonDirectories] = js.undefined
-  var info: js.UndefOr[AnonLevel] = js.undefined
+  var environmentHash: js.UndefOr[Directories] = js.undefined
+  var info: js.UndefOr[Level] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
     cacheDirectory: String = null,
-    cachePrune: AnonMaxAge = null,
+    cachePrune: MaxAge = null,
     configHash: String | (js.Function1[/* webpackConfig */ js.UndefOr[Configuration], String]) = null,
-    environmentHash: AnonDirectories = null,
-    info: AnonLevel = null
+    environmentHash: Directories = null,
+    info: Level = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory.asInstanceOf[js.Any])

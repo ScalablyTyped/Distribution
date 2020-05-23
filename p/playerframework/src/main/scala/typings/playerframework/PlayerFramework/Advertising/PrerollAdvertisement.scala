@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PlayerFramework.Advertising.PrerollAdvertisement")
-@js.native
-class PrerollAdvertisement () extends AdvertisementBase {
-  /* CompleteClass */
-  override var source: js.Any = js.native
+trait PrerollAdvertisement extends AdvertisementBase
+
+object PrerollAdvertisement {
+  @scala.inline
+  def apply(source: js.Any): PrerollAdvertisement = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrerollAdvertisement]
+  }
 }
 

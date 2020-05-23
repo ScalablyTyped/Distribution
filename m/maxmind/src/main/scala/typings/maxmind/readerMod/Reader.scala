@@ -23,7 +23,7 @@ trait Reader[T /* <: Response */] extends js.Object {
 
 object Reader {
   @scala.inline
-  def apply[T /* <: Response */](
+  def apply[T](
     db: js.Any,
     decoder: js.Any,
     findAddressInTree: js.Any,

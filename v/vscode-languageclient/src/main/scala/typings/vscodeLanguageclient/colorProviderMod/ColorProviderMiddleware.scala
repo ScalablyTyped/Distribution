@@ -6,7 +6,7 @@ import typings.vscode.mod.ColorPresentation
 import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.TextDocument
 import typings.vscodeJsonrpc.cancellationMod.CancellationToken
-import typings.vscodeLanguageclient.AnonDocument
+import typings.vscodeLanguageclient.anon.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait ColorProviderMiddleware extends js.Object {
     js.ThisFunction4[
       /* this */ Unit, 
       /* color */ Color, 
-      /* context */ AnonDocument, 
+      /* context */ Document, 
       /* token */ CancellationToken, 
       /* next */ ProvideColorPresentationSignature, 
       ProviderResult[js.Array[ColorPresentation]]
@@ -39,7 +39,7 @@ object ColorProviderMiddleware {
     provideColorPresentations: js.ThisFunction4[
       /* this */ Unit, 
       /* color */ Color, 
-      /* context */ AnonDocument, 
+      /* context */ Document, 
       /* token */ CancellationToken, 
       /* next */ ProvideColorPresentationSignature, 
       ProviderResult[js.Array[ColorPresentation]]

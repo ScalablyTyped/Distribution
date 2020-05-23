@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,44 +51,6 @@ object ShapeLineDashStyle extends js.Object {
   
   @js.native
   sealed trait systemDot extends ShapeLineDashStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeLineDashStyle with String] = js.native
-  /* "Dash" */ @js.native
-  object dash extends TopLevel[dash with String]
-  
-  /* "DashDot" */ @js.native
-  object dashDot extends TopLevel[dashDot with String]
-  
-  /* "DashDotDot" */ @js.native
-  object dashDotDot extends TopLevel[dashDotDot with String]
-  
-  /* "LongDash" */ @js.native
-  object longDash extends TopLevel[longDash with String]
-  
-  /* "LongDashDot" */ @js.native
-  object longDashDot extends TopLevel[longDashDot with String]
-  
-  /* "LongDashDotDot" */ @js.native
-  object longDashDotDot extends TopLevel[longDashDotDot with String]
-  
-  /* "RoundDot" */ @js.native
-  object roundDot extends TopLevel[roundDot with String]
-  
-  /* "Solid" */ @js.native
-  object solid extends TopLevel[solid with String]
-  
-  /* "SquareDot" */ @js.native
-  object squareDot extends TopLevel[squareDot with String]
-  
-  /* "SystemDash" */ @js.native
-  object systemDash extends TopLevel[systemDash with String]
-  
-  /* "SystemDashDot" */ @js.native
-  object systemDashDot extends TopLevel[systemDashDot with String]
-  
-  /* "SystemDot" */ @js.native
-  object systemDot extends TopLevel[systemDot with String]
   
 }
 

@@ -1,6 +1,5 @@
 package typings.cordovaPluginStatusbar
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +61,22 @@ trait StatusBar extends js.Object {
   def styleLightContent(): Unit
 }
 
-@JSGlobal("StatusBar")
-@js.native
-object StatusBar extends TopLevel[StatusBar]
+object StatusBar {
+  @scala.inline
+  def apply(
+    backgroundColorByHexString: String => Unit,
+    backgroundColorByName: String => Unit,
+    hide: () => Unit,
+    isVisible: Boolean,
+    overlaysWebView: Boolean => Unit,
+    show: () => Unit,
+    styleBlackOpaque: () => Unit,
+    styleBlackTranslucent: () => Unit,
+    styleDefault: () => Unit,
+    styleLightContent: () => Unit
+  ): StatusBar = {
+    val __obj = js.Dynamic.literal(backgroundColorByHexString = js.Any.fromFunction1(backgroundColorByHexString), backgroundColorByName = js.Any.fromFunction1(backgroundColorByName), hide = js.Any.fromFunction0(hide), isVisible = isVisible.asInstanceOf[js.Any], overlaysWebView = js.Any.fromFunction1(overlaysWebView), show = js.Any.fromFunction0(show), styleBlackOpaque = js.Any.fromFunction0(styleBlackOpaque), styleBlackTranslucent = js.Any.fromFunction0(styleBlackTranslucent), styleDefault = js.Any.fromFunction0(styleDefault), styleLightContent = js.Any.fromFunction0(styleLightContent))
+    __obj.asInstanceOf[StatusBar]
+  }
+}
 

@@ -24,13 +24,13 @@ object DebounceSettings {
   @scala.inline
   def apply(
     leading: js.UndefOr[Boolean] = js.undefined,
-    maxWait: Int | Double = null,
+    maxWait: js.UndefOr[Double] = js.undefined,
     trailing: js.UndefOr[Boolean] = js.undefined
   ): DebounceSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
-    if (maxWait != null) __obj.updateDynamic("maxWait")(maxWait.asInstanceOf[js.Any])
-    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing.asInstanceOf[js.Any])
+    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWait)) __obj.updateDynamic("maxWait")(maxWait.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebounceSettings]
   }
 }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Relation")
 @js.native
-class Relation protected () extends js.Object {
+trait Relation extends js.Object {
   var Attributes: RelationAttributeEnum = js.native
   @JSName("DAO.Relation_typekey")
   var DAODotRelation_typekey: Relation = js.native

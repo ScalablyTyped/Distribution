@@ -12,9 +12,9 @@ trait ITextStyles extends js.Object {
 
 object ITextStyles {
   @scala.inline
-  def apply(root: IStyle = null): ITextStyles = {
+  def apply(root: js.UndefOr[Null | IStyle] = js.undefined): ITextStyles = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextStyles]
   }
 }

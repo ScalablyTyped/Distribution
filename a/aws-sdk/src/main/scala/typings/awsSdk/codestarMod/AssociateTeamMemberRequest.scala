@@ -35,11 +35,11 @@ object AssociateTeamMemberRequest {
     projectRole: Role,
     userArn: UserArn,
     clientRequestToken: ClientRequestToken = null,
-    remoteAccessAllowed: js.UndefOr[Boolean] = js.undefined
+    remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined
   ): AssociateTeamMemberRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], projectRole = projectRole.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteAccessAllowed)) __obj.updateDynamic("remoteAccessAllowed")(remoteAccessAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteAccessAllowed)) __obj.updateDynamic("remoteAccessAllowed")(remoteAccessAllowed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateTeamMemberRequest]
   }
 }

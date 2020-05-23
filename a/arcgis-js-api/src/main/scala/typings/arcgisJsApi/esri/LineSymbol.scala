@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-line`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,8 +23,4 @@ trait LineSymbol extends Symbol {
     */
   var width: Double = js.native
 }
-
-@JSGlobal("__esri.LineSymbol")
-@js.native
-object LineSymbol extends TopLevel[LineSymbolConstructor]
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import scala.scalajs.js
@@ -46,8 +45,4 @@ trait NavigationToggleViewModel extends Accessor {
     */
   def toggle(): Unit = js.native
 }
-
-@JSGlobal("__esri.NavigationToggleViewModel")
-@js.native
-object NavigationToggleViewModel extends TopLevel[NavigationToggleViewModelConstructor]
 

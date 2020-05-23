@@ -26,13 +26,13 @@ object Options {
     watchman: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
-    if (!js.isUndefined(fsevents)) __obj.updateDynamic("fsevents")(fsevents.asInstanceOf[js.Any])
+    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fsevents)) __obj.updateDynamic("fsevents")(fsevents.get.asInstanceOf[js.Any])
     if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
     if (ignored != null) __obj.updateDynamic("ignored")(ignored.asInstanceOf[js.Any])
-    if (!js.isUndefined(poll)) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])
+    if (!js.isUndefined(poll)) __obj.updateDynamic("poll")(poll.get.asInstanceOf[js.Any])
     if (watcher != null) __obj.updateDynamic("watcher")(watcher.asInstanceOf[js.Any])
-    if (!js.isUndefined(watchman)) __obj.updateDynamic("watchman")(watchman.asInstanceOf[js.Any])
+    if (!js.isUndefined(watchman)) __obj.updateDynamic("watchman")(watchman.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

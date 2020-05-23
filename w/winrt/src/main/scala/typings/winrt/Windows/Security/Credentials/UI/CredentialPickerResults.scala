@@ -5,22 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Security.Credentials.UI.CredentialPickerResults")
-@js.native
-class CredentialPickerResults () extends ICredentialPickerResults {
-  /* CompleteClass */
-  override var credential: IBuffer = js.native
-  /* CompleteClass */
-  override var credentialDomainName: String = js.native
-  /* CompleteClass */
-  override var credentialPassword: String = js.native
-  /* CompleteClass */
-  override var credentialSaveOption: CredentialSaveOption = js.native
-  /* CompleteClass */
-  override var credentialSaved: Boolean = js.native
-  /* CompleteClass */
-  override var credentialUserName: String = js.native
-  /* CompleteClass */
-  override var errorCode: Double = js.native
+trait CredentialPickerResults extends ICredentialPickerResults
+
+object CredentialPickerResults {
+  @scala.inline
+  def apply(
+    credential: IBuffer,
+    credentialDomainName: String,
+    credentialPassword: String,
+    credentialSaveOption: CredentialSaveOption,
+    credentialSaved: Boolean,
+    credentialUserName: String,
+    errorCode: Double
+  ): CredentialPickerResults = {
+    val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], credentialDomainName = credentialDomainName.asInstanceOf[js.Any], credentialPassword = credentialPassword.asInstanceOf[js.Any], credentialSaveOption = credentialSaveOption.asInstanceOf[js.Any], credentialSaved = credentialSaved.asInstanceOf[js.Any], credentialUserName = credentialUserName.asInstanceOf[js.Any], errorCode = errorCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CredentialPickerResults]
+  }
 }
 

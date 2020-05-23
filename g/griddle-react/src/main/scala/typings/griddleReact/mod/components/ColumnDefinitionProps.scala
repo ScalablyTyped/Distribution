@@ -7,8 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColumnDefinitionProps
-  extends // Allow custom plugin props
-/* x */ StringDictionary[js.Any] {
+  extends /* x */ StringDictionary[js.Any] {
   // TODO: Unused?
   //The number of cells this column should extend. Default is 1.
   var colSpan: js.UndefOr[Double] = js.undefined
@@ -59,9 +58,8 @@ object ColumnDefinitionProps {
   @scala.inline
   def apply(
     id: String,
-    StringDictionary: // Allow custom plugin props
-  /* x */ StringDictionary[js.Any] = null,
-    colSpan: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    colSpan: js.UndefOr[Double] = js.undefined,
     cssClassName: String | (js.Function1[/* props */ js.Any, String]) = null,
     customComponent: GriddleComponent[CellProps with js.Any] = null,
     customHeadingComponent: GriddleComponent[TableHeadingCellProps with js.Any] = null,
@@ -70,7 +68,7 @@ object ColumnDefinitionProps {
     headerCssClassName: String | (js.Function1[/* props */ js.Any, String]) = null,
     isMetadata: js.UndefOr[Boolean] = js.undefined,
     locked: js.UndefOr[Boolean] = js.undefined,
-    order: Int | Double = null,
+    order: js.UndefOr[Double] = js.undefined,
     sortMethod: (/* data */ js.Array[_], /* column */ String, /* sortAscending */ js.UndefOr[Boolean]) => Double = null,
     sortType: String = null,
     sortable: js.UndefOr[Boolean] = js.undefined,
@@ -80,21 +78,21 @@ object ColumnDefinitionProps {
   ): ColumnDefinitionProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
     if (cssClassName != null) __obj.updateDynamic("cssClassName")(cssClassName.asInstanceOf[js.Any])
     if (customComponent != null) __obj.updateDynamic("customComponent")(customComponent.asInstanceOf[js.Any])
     if (customHeadingComponent != null) __obj.updateDynamic("customHeadingComponent")(customHeadingComponent.asInstanceOf[js.Any])
     if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.get.asInstanceOf[js.Any])
     if (headerCssClassName != null) __obj.updateDynamic("headerCssClassName")(headerCssClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMetadata)) __obj.updateDynamic("isMetadata")(isMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMetadata)) __obj.updateDynamic("isMetadata")(isMetadata.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     if (sortMethod != null) __obj.updateDynamic("sortMethod")(js.Any.fromFunction3(sortMethod))
     if (sortType != null) __obj.updateDynamic("sortType")(sortType.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefinitionProps]
   }

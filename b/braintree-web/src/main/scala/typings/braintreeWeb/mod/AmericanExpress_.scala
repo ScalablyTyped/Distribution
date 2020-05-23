@@ -1,7 +1,7 @@
 package typings.braintreeWeb.mod
 
-import typings.braintreeWeb.AnonClient
-import typings.braintreeWeb.AnonNonce
+import typings.braintreeWeb.anon.Client
+import typings.braintreeWeb.anon.Nonce
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait AmericanExpress_ extends js.Object {
     * @param {callback} callback The second argument, `data`, is the {@link AmericanExpress} instance.
     * @returns {void}
     */
-  def create(options: AnonClient, callback: callback): Unit
+  def create(options: Client, callback: callback): Unit
   /**
     * Gets the Express Checkout nonce profile given a nonce from American Express.
     * @public
@@ -43,7 +43,7 @@ trait AmericanExpress_ extends js.Object {
     *   });
     * });
     */
-  def getExpressCheckoutProfile(options: AnonNonce, callback: callback): Unit
+  def getExpressCheckoutProfile(options: Nonce, callback: callback): Unit
   /**
     * Gets the rewards balance associated with a Braintree nonce.
     * @public
@@ -66,16 +66,16 @@ trait AmericanExpress_ extends js.Object {
     *   });
     * });
     */
-  def getRewardsBalance(options: AnonNonce, callback: callback): Unit
+  def getRewardsBalance(options: Nonce, callback: callback): Unit
 }
 
 object AmericanExpress_ {
   @scala.inline
   def apply(
     VERSION: String,
-    create: (AnonClient, callback) => Unit,
-    getExpressCheckoutProfile: (AnonNonce, callback) => Unit,
-    getRewardsBalance: (AnonNonce, callback) => Unit
+    create: (Client, callback) => Unit,
+    getExpressCheckoutProfile: (Nonce, callback) => Unit,
+    getRewardsBalance: (Nonce, callback) => Unit
   ): AmericanExpress_ = {
     val __obj = js.Dynamic.literal(VERSION = VERSION.asInstanceOf[js.Any], create = js.Any.fromFunction2(create), getExpressCheckoutProfile = js.Any.fromFunction2(getExpressCheckoutProfile), getRewardsBalance = js.Any.fromFunction2(getRewardsBalance))
     __obj.asInstanceOf[AmericanExpress_]

@@ -18,10 +18,10 @@ trait TrafficMirrorPortRange extends js.Object {
 
 object TrafficMirrorPortRange {
   @scala.inline
-  def apply(FromPort: Int | scala.Double = null, ToPort: Int | scala.Double = null): TrafficMirrorPortRange = {
+  def apply(FromPort: js.UndefOr[Integer] = js.undefined, ToPort: js.UndefOr[Integer] = js.undefined): TrafficMirrorPortRange = {
     val __obj = js.Dynamic.literal()
-    if (FromPort != null) __obj.updateDynamic("FromPort")(FromPort.asInstanceOf[js.Any])
-    if (ToPort != null) __obj.updateDynamic("ToPort")(ToPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficMirrorPortRange]
   }
 }

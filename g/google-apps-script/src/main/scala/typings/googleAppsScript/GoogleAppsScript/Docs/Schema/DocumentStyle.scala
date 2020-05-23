@@ -36,7 +36,7 @@ object DocumentStyle {
     marginLeft: Dimension = null,
     marginRight: Dimension = null,
     marginTop: Dimension = null,
-    pageNumberStart: Int | Double = null,
+    pageNumberStart: js.UndefOr[Double] = js.undefined,
     pageSize: Size = null,
     useEvenPageHeaderFooter: js.UndefOr[Boolean] = js.undefined,
     useFirstPageHeaderFooter: js.UndefOr[Boolean] = js.undefined
@@ -53,10 +53,10 @@ object DocumentStyle {
     if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
     if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
     if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (pageNumberStart != null) __obj.updateDynamic("pageNumberStart")(pageNumberStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageNumberStart)) __obj.updateDynamic("pageNumberStart")(pageNumberStart.get.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEvenPageHeaderFooter)) __obj.updateDynamic("useEvenPageHeaderFooter")(useEvenPageHeaderFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFirstPageHeaderFooter)) __obj.updateDynamic("useFirstPageHeaderFooter")(useFirstPageHeaderFooter.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEvenPageHeaderFooter)) __obj.updateDynamic("useEvenPageHeaderFooter")(useEvenPageHeaderFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFirstPageHeaderFooter)) __obj.updateDynamic("useFirstPageHeaderFooter")(useFirstPageHeaderFooter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentStyle]
   }
 }

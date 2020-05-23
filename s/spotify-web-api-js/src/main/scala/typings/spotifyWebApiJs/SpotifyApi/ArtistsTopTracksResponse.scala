@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Get an Artist’s Top Tracks
-  * 
+  *
   * GET /v1/artists/{id}/top-tracks
   * https://developer.spotify.com/web-api/get-artists-top-tracks/
   */

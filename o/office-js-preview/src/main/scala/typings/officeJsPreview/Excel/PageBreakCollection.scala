@@ -13,9 +13,8 @@ import scala.scalajs.js.annotation._
 /**
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.PageBreakCollection")
 @js.native
-class PageBreakCollection () extends ClientObject {
+trait PageBreakCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PageBreakCollection: RequestContext = js.native

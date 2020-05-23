@@ -5,16 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Proximity.ProximityMessage")
-@js.native
-class ProximityMessage () extends IProximityMessage {
-  /* CompleteClass */
-  override var data: IBuffer = js.native
-  /* CompleteClass */
-  override var dataAsString: String = js.native
-  /* CompleteClass */
-  override var messageType: String = js.native
-  /* CompleteClass */
-  override var subscriptionId: Double = js.native
+trait ProximityMessage extends IProximityMessage
+
+object ProximityMessage {
+  @scala.inline
+  def apply(data: IBuffer, dataAsString: String, messageType: String, subscriptionId: Double): ProximityMessage = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataAsString = dataAsString.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], subscriptionId = subscriptionId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProximityMessage]
+  }
 }
 

@@ -20,15 +20,15 @@ object LocationRecord {
     accuracy_radius: Double,
     latitude: Double,
     longitude: Double,
-    average_income: Int | Double = null,
-    metro_code: Int | Double = null,
-    population_density: Int | Double = null,
+    average_income: js.UndefOr[Double] = js.undefined,
+    metro_code: js.UndefOr[Double] = js.undefined,
+    population_density: js.UndefOr[Double] = js.undefined,
     time_zone: String = null
   ): LocationRecord = {
     val __obj = js.Dynamic.literal(accuracy_radius = accuracy_radius.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-    if (average_income != null) __obj.updateDynamic("average_income")(average_income.asInstanceOf[js.Any])
-    if (metro_code != null) __obj.updateDynamic("metro_code")(metro_code.asInstanceOf[js.Any])
-    if (population_density != null) __obj.updateDynamic("population_density")(population_density.asInstanceOf[js.Any])
+    if (!js.isUndefined(average_income)) __obj.updateDynamic("average_income")(average_income.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(metro_code)) __obj.updateDynamic("metro_code")(metro_code.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(population_density)) __obj.updateDynamic("population_density")(population_density.get.asInstanceOf[js.Any])
     if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRecord]
   }

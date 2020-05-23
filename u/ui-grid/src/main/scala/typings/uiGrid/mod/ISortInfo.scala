@@ -15,12 +15,12 @@ object ISortInfo {
   def apply(
     direction: String = null,
     ignoreSort: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null
+    priority: js.UndefOr[Double] = js.undefined
   ): ISortInfo = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSort)) __obj.updateDynamic("ignoreSort")(ignoreSort.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSort)) __obj.updateDynamic("ignoreSort")(ignoreSort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISortInfo]
   }
 }

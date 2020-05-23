@@ -2,64 +2,132 @@ package typings.firebaseAdmin
 
 import typings.firebaseAdmin.admin.auth.HashAlgorithmType
 import typings.firebaseAdmin.admin.database.EventType
+import typings.firebaseAdmin.admin.remoteConfig.TagColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object firebaseAdminStrings {
   @js.native
-  sealed trait BCRYPT extends HashAlgorithmType
+  sealed trait BCRYPT
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
   
   @js.native
-  sealed trait HMAC_MD5 extends HashAlgorithmType
+  sealed trait BLUE extends TagColor
   
   @js.native
-  sealed trait HMAC_SHA1 extends HashAlgorithmType
+  sealed trait BROWN extends TagColor
   
   @js.native
-  sealed trait HMAC_SHA256 extends HashAlgorithmType
+  sealed trait CYAN extends TagColor
   
   @js.native
-  sealed trait HMAC_SHA512 extends HashAlgorithmType
+  sealed trait DEEP_ORANGE extends TagColor
   
   @js.native
-  sealed trait MD5 extends HashAlgorithmType
+  sealed trait GREEN extends TagColor
   
   @js.native
-  sealed trait PBKDF2_SHA256 extends HashAlgorithmType
+  sealed trait HMAC_MD5
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
   
   @js.native
-  sealed trait PBKDF_SHA1 extends HashAlgorithmType
+  sealed trait HMAC_SHA1
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
   
   @js.native
-  sealed trait SCRYPT extends HashAlgorithmType
+  sealed trait HMAC_SHA256
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
   
   @js.native
-  sealed trait SHA1 extends HashAlgorithmType
+  sealed trait HMAC_SHA512
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
   
   @js.native
-  sealed trait SHA256 extends HashAlgorithmType
+  sealed trait INDIGO extends TagColor
   
   @js.native
-  sealed trait SHA512 extends HashAlgorithmType
+  sealed trait LIME extends TagColor
   
   @js.native
-  sealed trait STANDARD_SCRYPT extends HashAlgorithmType
+  sealed trait MD5
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
+  
+  @js.native
+  sealed trait ORANGE extends TagColor
+  
+  @js.native
+  sealed trait PBKDF2_SHA256
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
+  
+  @js.native
+  sealed trait PBKDF_SHA1
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
+  
+  @js.native
+  sealed trait PINK extends TagColor
+  
+  @js.native
+  sealed trait PURPLE extends TagColor
+  
+  @js.native
+  sealed trait SCRYPT
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
+  
+  @js.native
+  sealed trait SHA1
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
+  
+  @js.native
+  sealed trait SHA256
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
+  
+  @js.native
+  sealed trait SHA512
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
+  
+  @js.native
+  sealed trait STANDARD_SCRYPT
+    extends HashAlgorithmType
+       with typings.firebaseAdmin.authMod.admin.auth.HashAlgorithmType
+  
+  @js.native
+  sealed trait TEAL extends TagColor
   
   @js.native
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait child_added extends EventType
+  sealed trait child_added
+    extends EventType
+       with typings.firebaseAdmin.databaseMod.admin.database.EventType
   
   @js.native
-  sealed trait child_changed extends EventType
+  sealed trait child_changed
+    extends EventType
+       with typings.firebaseAdmin.databaseMod.admin.database.EventType
   
   @js.native
-  sealed trait child_moved extends EventType
+  sealed trait child_moved
+    extends EventType
+       with typings.firebaseAdmin.databaseMod.admin.database.EventType
   
   @js.native
-  sealed trait child_removed extends EventType
+  sealed trait child_removed
+    extends EventType
+       with typings.firebaseAdmin.databaseMod.admin.database.EventType
   
   @js.native
   sealed trait default extends js.Object
@@ -107,10 +175,22 @@ object firebaseAdminStrings {
   sealed trait sha256_ extends js.Object
   
   @js.native
-  sealed trait value extends EventType
+  sealed trait value
+    extends EventType
+       with typings.firebaseAdmin.databaseMod.admin.database.EventType
   
   @scala.inline
   def BCRYPT: BCRYPT = "BCRYPT".asInstanceOf[BCRYPT]
+  @scala.inline
+  def BLUE: BLUE = "BLUE".asInstanceOf[BLUE]
+  @scala.inline
+  def BROWN: BROWN = "BROWN".asInstanceOf[BROWN]
+  @scala.inline
+  def CYAN: CYAN = "CYAN".asInstanceOf[CYAN]
+  @scala.inline
+  def DEEP_ORANGE: DEEP_ORANGE = "DEEP_ORANGE".asInstanceOf[DEEP_ORANGE]
+  @scala.inline
+  def GREEN: GREEN = "GREEN".asInstanceOf[GREEN]
   @scala.inline
   def HMAC_MD5: HMAC_MD5 = "HMAC_MD5".asInstanceOf[HMAC_MD5]
   @scala.inline
@@ -120,11 +200,21 @@ object firebaseAdminStrings {
   @scala.inline
   def HMAC_SHA512: HMAC_SHA512 = "HMAC_SHA512".asInstanceOf[HMAC_SHA512]
   @scala.inline
+  def INDIGO: INDIGO = "INDIGO".asInstanceOf[INDIGO]
+  @scala.inline
+  def LIME: LIME = "LIME".asInstanceOf[LIME]
+  @scala.inline
   def MD5: MD5 = "MD5".asInstanceOf[MD5]
+  @scala.inline
+  def ORANGE: ORANGE = "ORANGE".asInstanceOf[ORANGE]
   @scala.inline
   def PBKDF2_SHA256: PBKDF2_SHA256 = "PBKDF2_SHA256".asInstanceOf[PBKDF2_SHA256]
   @scala.inline
   def PBKDF_SHA1: PBKDF_SHA1 = "PBKDF_SHA1".asInstanceOf[PBKDF_SHA1]
+  @scala.inline
+  def PINK: PINK = "PINK".asInstanceOf[PINK]
+  @scala.inline
+  def PURPLE: PURPLE = "PURPLE".asInstanceOf[PURPLE]
   @scala.inline
   def SCRYPT: SCRYPT = "SCRYPT".asInstanceOf[SCRYPT]
   @scala.inline
@@ -135,6 +225,8 @@ object firebaseAdminStrings {
   def SHA512: SHA512 = "SHA512".asInstanceOf[SHA512]
   @scala.inline
   def STANDARD_SCRYPT: STANDARD_SCRYPT = "STANDARD_SCRYPT".asInstanceOf[STANDARD_SCRYPT]
+  @scala.inline
+  def TEAL: TEAL = "TEAL".asInstanceOf[TEAL]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline

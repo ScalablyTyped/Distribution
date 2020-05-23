@@ -16,15 +16,15 @@ object DeltaOperation {
   @scala.inline
   def apply(
     attributes: StringMap = null,
-    delete: Int | Double = null,
+    delete: js.UndefOr[Double] = js.undefined,
     insert: js.Any = null,
-    retain: Int | Double = null
+    retain: js.UndefOr[Double] = js.undefined
   ): DeltaOperation = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete.get.asInstanceOf[js.Any])
     if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
-    if (retain != null) __obj.updateDynamic("retain")(retain.asInstanceOf[js.Any])
+    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeltaOperation]
   }
 }

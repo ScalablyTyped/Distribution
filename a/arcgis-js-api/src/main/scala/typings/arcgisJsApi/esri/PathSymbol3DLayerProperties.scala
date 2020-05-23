@@ -120,25 +120,25 @@ object PathSymbol3DLayerProperties {
     anchor: center | bottom | top = null,
     cap: none | butt | square | round = null,
     castShadows: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     join: miter | bevel | round = null,
     material: PathSymbol3DLayerMaterialProperties = null,
     profile: circle | quad = null,
     profileRotation: heading | all = null,
-    size: Int | Double = null,
-    width: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): PathSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (cap != null) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])
-    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (join != null) __obj.updateDynamic("join")(join.asInstanceOf[js.Any])
     if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     if (profileRotation != null) __obj.updateDynamic("profileRotation")(profileRotation.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathSymbol3DLayerProperties]
   }
 }

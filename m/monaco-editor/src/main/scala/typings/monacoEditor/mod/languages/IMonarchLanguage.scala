@@ -45,7 +45,7 @@ object IMonarchLanguage {
     val __obj = js.Dynamic.literal(tokenizer = tokenizer.asInstanceOf[js.Any])
     if (brackets != null) __obj.updateDynamic("brackets")(brackets.asInstanceOf[js.Any])
     if (defaultToken != null) __obj.updateDynamic("defaultToken")(defaultToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (tokenPostfix != null) __obj.updateDynamic("tokenPostfix")(tokenPostfix.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMonarchLanguage]

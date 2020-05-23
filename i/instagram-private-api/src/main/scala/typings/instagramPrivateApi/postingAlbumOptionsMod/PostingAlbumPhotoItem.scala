@@ -16,16 +16,16 @@ object PostingAlbumPhotoItem {
   @scala.inline
   def apply(
     file: Buffer,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     uploadId: String = null,
     usertags: PostingUsertags = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): PostingAlbumPhotoItem = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])
     if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostingAlbumPhotoItem]
   }
 }

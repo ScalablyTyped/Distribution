@@ -13,14 +13,14 @@ trait LazyLoadOptionsConfig extends js.Object {
 object LazyLoadOptionsConfig {
   @scala.inline
   def apply(
-    fetchMarginPercent: Int | Double = null,
-    mobileScaling: Int | Double = null,
-    renderMarginPercent: Int | Double = null
+    fetchMarginPercent: js.UndefOr[Double] = js.undefined,
+    mobileScaling: js.UndefOr[Double] = js.undefined,
+    renderMarginPercent: js.UndefOr[Double] = js.undefined
   ): LazyLoadOptionsConfig = {
     val __obj = js.Dynamic.literal()
-    if (fetchMarginPercent != null) __obj.updateDynamic("fetchMarginPercent")(fetchMarginPercent.asInstanceOf[js.Any])
-    if (mobileScaling != null) __obj.updateDynamic("mobileScaling")(mobileScaling.asInstanceOf[js.Any])
-    if (renderMarginPercent != null) __obj.updateDynamic("renderMarginPercent")(renderMarginPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchMarginPercent)) __obj.updateDynamic("fetchMarginPercent")(fetchMarginPercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mobileScaling)) __obj.updateDynamic("mobileScaling")(mobileScaling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderMarginPercent)) __obj.updateDynamic("renderMarginPercent")(renderMarginPercent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LazyLoadOptionsConfig]
   }
 }

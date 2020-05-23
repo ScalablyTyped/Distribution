@@ -12,9 +12,9 @@ trait IGetKnowledgeBaseRequest extends js.Object {
 
 object IGetKnowledgeBaseRequest {
   @scala.inline
-  def apply(name: String = null): IGetKnowledgeBaseRequest = {
+  def apply(name: js.UndefOr[Null | String] = js.undefined): IGetKnowledgeBaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetKnowledgeBaseRequest]
   }
 }

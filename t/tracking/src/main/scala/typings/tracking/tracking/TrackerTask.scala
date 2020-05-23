@@ -9,14 +9,8 @@ import scala.scalajs.js.annotation._
   * Note: Types do not provide `setTracker()` even though not marked as private.
   * A new tracker should be created instead.
   */
-@JSGlobal("tracking.TrackerTask")
 @js.native
-class TrackerTask protected () extends EventEmitter {
-  /**
-    * Create a new tracker task.
-    * @param tracker The tracker instance to manage.
-    */
-  def this(tracker: Tracker) = this()
+trait TrackerTask extends EventEmitter {
   /**
     * Gets the tracker instance managed by this task.
     */

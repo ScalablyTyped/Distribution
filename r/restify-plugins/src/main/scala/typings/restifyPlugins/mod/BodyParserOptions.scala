@@ -68,8 +68,8 @@ object BodyParserOptions {
     keepExtensions: js.UndefOr[Boolean] = js.undefined,
     mapFiles: js.UndefOr[Boolean] = js.undefined,
     mapParams: js.UndefOr[Boolean] = js.undefined,
-    maxBodySize: Int | Double = null,
-    maxFieldsSize: Int | Double = null,
+    maxBodySize: js.UndefOr[Double] = js.undefined,
+    maxFieldsSize: js.UndefOr[Double] = js.undefined,
     multipartFileHandler: () => Unit = null,
     multipartHandler: () => Unit = null,
     multiples: js.UndefOr[Boolean] = js.undefined,
@@ -80,16 +80,16 @@ object BodyParserOptions {
   ): BodyParserOptions = {
     val __obj = js.Dynamic.literal()
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepExtensions)) __obj.updateDynamic("keepExtensions")(keepExtensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapFiles)) __obj.updateDynamic("mapFiles")(mapFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.asInstanceOf[js.Any])
-    if (maxBodySize != null) __obj.updateDynamic("maxBodySize")(maxBodySize.asInstanceOf[js.Any])
-    if (maxFieldsSize != null) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepExtensions)) __obj.updateDynamic("keepExtensions")(keepExtensions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapFiles)) __obj.updateDynamic("mapFiles")(mapFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBodySize)) __obj.updateDynamic("maxBodySize")(maxBodySize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFieldsSize)) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.get.asInstanceOf[js.Any])
     if (multipartFileHandler != null) __obj.updateDynamic("multipartFileHandler")(js.Any.fromFunction0(multipartFileHandler))
     if (multipartHandler != null) __obj.updateDynamic("multipartHandler")(js.Any.fromFunction0(multipartHandler))
-    if (!js.isUndefined(multiples)) __obj.updateDynamic("multiples")(multiples.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnknown)) __obj.updateDynamic("rejectUnknown")(rejectUnknown.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiples)) __obj.updateDynamic("multiples")(multiples.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnknown)) __obj.updateDynamic("rejectUnknown")(rejectUnknown.get.asInstanceOf[js.Any])
     if (reviver != null) __obj.updateDynamic("reviver")(reviver.asInstanceOf[js.Any])
     if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyParserOptions]

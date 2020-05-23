@@ -1,6 +1,6 @@
 package typings.atom.mod
 
-import typings.atom.AnonHide
+import typings.atom.anon.Hide
 import typings.atom.atomBooleans.`false`
 import typings.atom.atomStrings.auto
 import typings.atom.atomStrings.bottom_
@@ -21,7 +21,7 @@ trait TooltipOptions extends js.Object {
     *  Delay showing and hiding the tooltip (ms) - does not apply to manual
     *  trigger type.
     */
-  var delay: js.UndefOr[Double | AnonHide] = js.undefined
+  var delay: js.UndefOr[Double | Hide] = js.undefined
   /** Allow HTML in the tooltip. */
   var html: js.UndefOr[Boolean] = js.undefined
   /** How to position the tooltip. */
@@ -51,7 +51,7 @@ object TooltipOptions {
   def apply(
     animation: js.UndefOr[Boolean] = js.undefined,
     container: String | HTMLElement | `false` = null,
-    delay: Double | AnonHide = null,
+    delay: Double | Hide = null,
     html: js.UndefOr[Boolean] = js.undefined,
     placement: top_ | bottom_ | left_ | right_ | auto = null,
     selector: String = null,
@@ -60,10 +60,10 @@ object TooltipOptions {
     trigger: String = null
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])

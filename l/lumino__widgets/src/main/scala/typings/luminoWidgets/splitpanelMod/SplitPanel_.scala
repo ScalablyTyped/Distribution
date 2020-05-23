@@ -5,7 +5,7 @@ import typings.luminoWidgets.splitpanelMod.SplitPanel.Alignment
 import typings.luminoWidgets.splitpanelMod.SplitPanel.IOptions
 import typings.luminoWidgets.splitpanelMod.SplitPanel.IRenderer
 import typings.luminoWidgets.splitpanelMod.SplitPanel.Orientation
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -92,7 +92,7 @@ class SplitPanel_ () extends Panel {
     * called in response to events on the panel's DOM node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Get the relative sizes of the widgets in the panel.
     *

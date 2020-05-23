@@ -3,7 +3,7 @@ package typings.libraCore.mempoolGrpcPbMod
 import typings.grpc.mod.ClientUnaryCall
 import typings.grpc.mod.Metadata
 import typings.grpc.mod.ServiceError
-import typings.libraCore.PartialCallOptions
+import typings.libraCore.anon.PartialCallOptions
 import typings.libraCore.mempoolPbMod.AddTransactionWithValidationRequest
 import typings.libraCore.mempoolPbMod.AddTransactionWithValidationResponse
 import typings.libraCore.mempoolPbMod.CommitTransactionsRequest

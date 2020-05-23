@@ -15,18 +15,18 @@ trait FrameBufferOptions extends js.Object {
 object FrameBufferOptions {
   @scala.inline
   def apply(
-    color: Int | Double = null,
+    color: js.UndefOr[Double] = js.undefined,
     depth: js.UndefOr[Boolean] = js.undefined,
     float: js.UndefOr[Boolean] = js.undefined,
     preferFloat: js.UndefOr[Boolean] = js.undefined,
     stencil: js.UndefOr[Boolean] = js.undefined
   ): FrameBufferOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferFloat)) __obj.updateDynamic("preferFloat")(preferFloat.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencil)) __obj.updateDynamic("stencil")(stencil.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferFloat)) __obj.updateDynamic("preferFloat")(preferFloat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencil)) __obj.updateDynamic("stencil")(stencil.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameBufferOptions]
   }
 }

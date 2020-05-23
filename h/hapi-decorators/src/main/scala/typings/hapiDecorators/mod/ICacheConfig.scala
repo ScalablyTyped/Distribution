@@ -12,10 +12,14 @@ trait ICacheConfig extends js.Object {
 
 object ICacheConfig {
   @scala.inline
-  def apply(expiresAt: Int | Double = null, expiresIn: Int | Double = null, privacy: String = null): ICacheConfig = {
+  def apply(
+    expiresAt: js.UndefOr[Double] = js.undefined,
+    expiresIn: js.UndefOr[Double] = js.undefined,
+    privacy: String = null
+  ): ICacheConfig = {
     val __obj = js.Dynamic.literal()
-    if (expiresAt != null) __obj.updateDynamic("expiresAt")(expiresAt.asInstanceOf[js.Any])
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiresAt)) __obj.updateDynamic("expiresAt")(expiresAt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiresIn)) __obj.updateDynamic("expiresIn")(expiresIn.get.asInstanceOf[js.Any])
     if (privacy != null) __obj.updateDynamic("privacy")(privacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICacheConfig]
   }

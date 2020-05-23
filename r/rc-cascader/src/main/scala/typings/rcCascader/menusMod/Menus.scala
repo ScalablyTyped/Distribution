@@ -2,7 +2,7 @@ package typings.rcCascader.menusMod
 
 import typings.rcCascader.cascaderMod.CascaderOption
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

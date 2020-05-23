@@ -15,18 +15,18 @@ trait ConstructorOptions extends js.Object {
 object ConstructorOptions {
   @scala.inline
   def apply(
-    datacenter: Int | Double = null,
-    epoch: Int | Double = null,
-    id: Int | Double = null,
-    seqMask: Int | Double = null,
-    worker: Int | Double = null
+    datacenter: js.UndefOr[Double] = js.undefined,
+    epoch: js.UndefOr[Double] = js.undefined,
+    id: js.UndefOr[Double] = js.undefined,
+    seqMask: js.UndefOr[Double] = js.undefined,
+    worker: js.UndefOr[Double] = js.undefined
   ): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (datacenter != null) __obj.updateDynamic("datacenter")(datacenter.asInstanceOf[js.Any])
-    if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (seqMask != null) __obj.updateDynamic("seqMask")(seqMask.asInstanceOf[js.Any])
-    if (worker != null) __obj.updateDynamic("worker")(worker.asInstanceOf[js.Any])
+    if (!js.isUndefined(datacenter)) __obj.updateDynamic("datacenter")(datacenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(epoch)) __obj.updateDynamic("epoch")(epoch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(seqMask)) __obj.updateDynamic("seqMask")(seqMask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorOptions]
   }
 }

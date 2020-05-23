@@ -21,18 +21,18 @@ trait INodeDef extends js.Object {
 object INodeDef {
   @scala.inline
   def apply(
-    attr: StringDictionary[IAttrValue] = null,
-    device: String = null,
-    input: js.Array[String] = null,
-    name: String = null,
-    op: String = null
+    attr: js.UndefOr[Null | StringDictionary[IAttrValue]] = js.undefined,
+    device: js.UndefOr[Null | String] = js.undefined,
+    input: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    op: js.UndefOr[Null | String] = js.undefined
   ): INodeDef = {
     val __obj = js.Dynamic.literal()
-    if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
+    if (!js.isUndefined(attr)) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
+    if (!js.isUndefined(device)) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(op)) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
     __obj.asInstanceOf[INodeDef]
   }
 }

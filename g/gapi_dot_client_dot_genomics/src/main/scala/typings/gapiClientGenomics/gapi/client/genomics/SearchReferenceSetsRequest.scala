@@ -41,14 +41,14 @@ object SearchReferenceSetsRequest {
     accessions: js.Array[String] = null,
     assemblyId: String = null,
     md5checksums: js.Array[String] = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[Double] = js.undefined,
     pageToken: String = null
   ): SearchReferenceSetsRequest = {
     val __obj = js.Dynamic.literal()
     if (accessions != null) __obj.updateDynamic("accessions")(accessions.asInstanceOf[js.Any])
     if (assemblyId != null) __obj.updateDynamic("assemblyId")(assemblyId.asInstanceOf[js.Any])
     if (md5checksums != null) __obj.updateDynamic("md5checksums")(md5checksums.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchReferenceSetsRequest]
   }

@@ -9,11 +9,11 @@ trait MultipleBatchResponse extends js.Object {
   /**
     * The list of object ids.
     */
-  val objectIDs: js.Array[String]
+  var objectIDs: js.Array[String]
   /**
     * The operation task id. May be used to perform a wait task.
     */
-  val taskID: Record[String, Double]
+  var taskID: Record[String, Double]
 }
 
 object MultipleBatchResponse {

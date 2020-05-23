@@ -16,10 +16,10 @@ object ReaderRefetchMetadata {
   def apply(
     fragmentPathInResult: js.Array[String],
     operation: String | ConcreteRequest,
-    connection: ReaderPaginationMetadata = null
+    connection: js.UndefOr[Null | ReaderPaginationMetadata] = js.undefined
   ): ReaderRefetchMetadata = {
     val __obj = js.Dynamic.literal(fragmentPathInResult = fragmentPathInResult.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (!js.isUndefined(connection)) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderRefetchMetadata]
   }
 }

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * The object returned when a save is successful for open form.
-		 */
+  * The object returned when a save is successful for open form.
+  */
 trait OpenFormSuccessResponse extends js.Object {
   var savedEntityReference: js.Array[EntityReference]
 }

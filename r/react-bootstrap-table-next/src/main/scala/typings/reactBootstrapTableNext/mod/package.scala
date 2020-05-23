@@ -20,7 +20,7 @@ package object mod {
     /* row */ R, 
     /* rowIndex */ scala.Double, 
     /* formatExtraData */ E, 
-    typings.react.mod._Global_.JSX.Element | java.lang.String | scala.Boolean | typings.react.mod.ReactText
+    typings.react.mod.global.JSX.Element | java.lang.String | scala.Boolean | typings.react.mod.ReactText
   ]
   type ColumnSortFunc[T, E /* <: /* keyof T */ java.lang.String */] = js.Function6[
     /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* a */ js.Any, 
@@ -31,21 +31,24 @@ package object mod {
     /* rowB */ T, 
     scala.Double
   ]
+  type FilterPosition = /* "inline" */ java.lang.String
   type HeaderFormatter[T /* <: js.Object */] = js.Function3[
     /* column */ typings.reactBootstrapTableNext.mod.ColumnDescription[T, js.Any], 
     /* colIndex */ scala.Double, 
-    /* components */ typings.reactBootstrapTableNext.AnonFilterElement, 
-    typings.react.mod._Global_.JSX.Element | java.lang.String | scala.Double | typings.react.mod.ReactText
+    /* components */ typings.reactBootstrapTableNext.anon.FilterElement, 
+    typings.react.mod.global.JSX.Element | java.lang.String | scala.Double | typings.react.mod.ReactText
   ]
   type RowEventHandler[T] = js.Function3[
-    /* e */ typings.react.mod.SyntheticEvent[typings.std.Element, typings.std.Event_], 
+    /* e */ typings.react.mod.SyntheticEvent[typings.std.Element, typings.std.Event], 
     /* row */ T, 
     /* rowIndex */ scala.Double, 
     scala.Unit
   ]
+  type RowSelectionType = /* "radio" */ java.lang.String
   type TableChangeHandler[T] = js.Function2[
     /* type */ typings.reactBootstrapTableNext.mod.TableChangeType, 
     /* newState */ typings.reactBootstrapTableNext.mod.TableChangeState[T], 
     scala.Unit
   ]
+  type TableCheckboxStatus = /* "indeterminate" */ java.lang.String
 }

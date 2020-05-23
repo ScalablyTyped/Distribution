@@ -12,8 +12,5 @@ sealed trait IconTabHeaderMode extends js.Object
   */
 @JSGlobal("sap.m.IconTabHeaderMode")
 @js.native
-object IconTabHeaderMode extends js.Object {
-  @JSBracketAccess
-  def apply(value: scala.Nothing): js.UndefOr[IconTabHeaderMode with scala.Nothing] = js.native
-}
+object IconTabHeaderMode extends js.Object
 

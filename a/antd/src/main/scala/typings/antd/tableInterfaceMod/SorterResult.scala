@@ -17,13 +17,13 @@ object SorterResult {
     column: ColumnType[RecordType] = null,
     columnKey: Key = null,
     field: Key | js.Array[Key] = null,
-    order: SortOrder = null
+    order: js.UndefOr[Null | SortOrder] = js.undefined
   ): SorterResult[RecordType] = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[SorterResult[RecordType]]
   }
 }

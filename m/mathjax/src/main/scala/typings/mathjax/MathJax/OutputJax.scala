@@ -1,6 +1,5 @@
 package typings.mathjax.MathJax
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,7 +73,25 @@ trait OutputJax extends js.Object {
   def preTranslate(state: js.Any): Unit
 }
 
-@JSGlobal("MathJax.OutputJax")
-@js.native
-object OutputJax extends TopLevel[OutputJax]
+object OutputJax {
+  @scala.inline
+  def apply(
+    Register: String => Unit,
+    Remove: js.Any => Unit,
+    Translate: (js.Any, js.Any) => ElementJax,
+    Zoom: (js.Any, js.Any, js.Any, Double, Double) => ZoomStruct,
+    directory: String,
+    fontDir: String,
+    getJaxFromMath: js.Any => ElementJax,
+    id: String,
+    imageDir: String,
+    postTranslate: js.Any => Unit,
+    preProcess: js.Any => Unit,
+    preTranslate: js.Any => Unit,
+    version: String
+  ): OutputJax = {
+    val __obj = js.Dynamic.literal(Register = js.Any.fromFunction1(Register), Remove = js.Any.fromFunction1(Remove), Translate = js.Any.fromFunction2(Translate), Zoom = js.Any.fromFunction5(Zoom), directory = directory.asInstanceOf[js.Any], fontDir = fontDir.asInstanceOf[js.Any], getJaxFromMath = js.Any.fromFunction1(getJaxFromMath), id = id.asInstanceOf[js.Any], imageDir = imageDir.asInstanceOf[js.Any], postTranslate = js.Any.fromFunction1(postTranslate), preProcess = js.Any.fromFunction1(preProcess), preTranslate = js.Any.fromFunction1(preTranslate), version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OutputJax]
+  }
+}
 

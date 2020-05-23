@@ -31,18 +31,18 @@ trait ParallelismConfigurationDescription extends js.Object {
 object ParallelismConfigurationDescription {
   @scala.inline
   def apply(
-    AutoScalingEnabled: js.UndefOr[Boolean] = js.undefined,
+    AutoScalingEnabled: js.UndefOr[BooleanObject] = js.undefined,
     ConfigurationType: ConfigurationType = null,
-    CurrentParallelism: Int | Double = null,
-    Parallelism: Int | Double = null,
-    ParallelismPerKPU: Int | Double = null
+    CurrentParallelism: js.UndefOr[Parallelism] = js.undefined,
+    Parallelism: js.UndefOr[Parallelism] = js.undefined,
+    ParallelismPerKPU: js.UndefOr[ParallelismPerKPU] = js.undefined
   ): ParallelismConfigurationDescription = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoScalingEnabled)) __obj.updateDynamic("AutoScalingEnabled")(AutoScalingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoScalingEnabled)) __obj.updateDynamic("AutoScalingEnabled")(AutoScalingEnabled.get.asInstanceOf[js.Any])
     if (ConfigurationType != null) __obj.updateDynamic("ConfigurationType")(ConfigurationType.asInstanceOf[js.Any])
-    if (CurrentParallelism != null) __obj.updateDynamic("CurrentParallelism")(CurrentParallelism.asInstanceOf[js.Any])
-    if (Parallelism != null) __obj.updateDynamic("Parallelism")(Parallelism.asInstanceOf[js.Any])
-    if (ParallelismPerKPU != null) __obj.updateDynamic("ParallelismPerKPU")(ParallelismPerKPU.asInstanceOf[js.Any])
+    if (!js.isUndefined(CurrentParallelism)) __obj.updateDynamic("CurrentParallelism")(CurrentParallelism.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Parallelism)) __obj.updateDynamic("Parallelism")(Parallelism.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ParallelismPerKPU)) __obj.updateDynamic("ParallelismPerKPU")(ParallelismPerKPU.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelismConfigurationDescription]
   }
 }

@@ -9,22 +9,7 @@ import scala.scalajs.js.annotation._
   * This reference describes the JavaScript client methods to use to
   * implement the Google Pay API in your web applications.
   */
-@JSGlobal("google.payments.api.PaymentsClient")
-@js.native
-class PaymentsClient protected () extends js.Object {
-  /**
-    * Initializes the [[PaymentsClient|`PaymentsClient`]] object. You must
-    * call this constructor before calling member methods.
-    *
-    * @param paymentOptions An object containing key-value pairs of Google
-    *     Pay API configuration data.
-    *
-    * Example: `{environment:'PRODUCTION'}`
-    *
-    * @throws `Error` The passed environment property value isn't
-    *     supported.
-    */
-  def this(paymentOptions: PaymentOptions) = this()
+trait PaymentsClient extends js.Object {
   /**
     * The convenience method is used to generate a Google Pay payment
     * button styled with the latest Google Pay branding for insertion into
@@ -49,7 +34,7 @@ class PaymentsClient protected () extends js.Object {
     *
     * @throws `Error` A required property isn't set.
     */
-  def createButton(options: ButtonOptions): HTMLElement = js.native
+  def createButton(options: ButtonOptions): HTMLElement
   /**
     * This method determines a shopper's ability to return a form of
     * payment from the Google Pay API.
@@ -73,7 +58,7 @@ class PaymentsClient protected () extends js.Object {
     *     [insecure browser
     *     context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
     */
-  def isReadyToPay(request: IsReadyToPayRequest): js.Promise[IsReadyToPayResponse] = js.native
+  def isReadyToPay(request: IsReadyToPayRequest): js.Promise[IsReadyToPayResponse]
   /**
     * This method presents a Google Pay payment sheet that allows selection
     * of a payment method and optionally configured parameters.
@@ -113,7 +98,7 @@ class PaymentsClient protected () extends js.Object {
     *     improperly formatted, missing the minimum required parameters, or
     *     contains an invalid parameter and/or value.
     */
-  def loadPaymentData(request: PaymentDataRequest): js.Promise[PaymentData] = js.native
+  def loadPaymentData(request: PaymentDataRequest): js.Promise[PaymentData]
   /**
     * Use this method to prefetch a
     * [[PaymentDataRequest|`PaymentDataRequest`]] configuration to improve
@@ -127,6 +112,19 @@ class PaymentsClient protected () extends js.Object {
     *     Pay API configuration. A change in the `transactionInfo` property
     *     doesn't affect the cached prefetch value.
     */
-  def prefetchPaymentData(request: PaymentDataRequest): Unit = js.native
+  def prefetchPaymentData(request: PaymentDataRequest): Unit
+}
+
+object PaymentsClient {
+  @scala.inline
+  def apply(
+    createButton: ButtonOptions => HTMLElement,
+    isReadyToPay: IsReadyToPayRequest => js.Promise[IsReadyToPayResponse],
+    loadPaymentData: PaymentDataRequest => js.Promise[PaymentData],
+    prefetchPaymentData: PaymentDataRequest => Unit
+  ): PaymentsClient = {
+    val __obj = js.Dynamic.literal(createButton = js.Any.fromFunction1(createButton), isReadyToPay = js.Any.fromFunction1(isReadyToPay), loadPaymentData = js.Any.fromFunction1(loadPaymentData), prefetchPaymentData = js.Any.fromFunction1(prefetchPaymentData))
+    __obj.asInstanceOf[PaymentsClient]
+  }
 }
 

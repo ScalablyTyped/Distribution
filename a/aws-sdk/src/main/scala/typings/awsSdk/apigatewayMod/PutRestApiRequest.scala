@@ -33,12 +33,12 @@ object PutRestApiRequest {
   def apply(
     body: _Blob,
     restApiId: String,
-    failOnWarnings: js.UndefOr[scala.Boolean] = js.undefined,
+    failOnWarnings: js.UndefOr[Boolean] = js.undefined,
     mode: PutMode = null,
     parameters: MapOfStringToString = null
   ): PutRestApiRequest = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnWarnings)) __obj.updateDynamic("failOnWarnings")(failOnWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnWarnings)) __obj.updateDynamic("failOnWarnings")(failOnWarnings.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRestApiRequest]

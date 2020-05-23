@@ -7,11 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Menu")
 @js.native
-class Menu protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: MenuOptions) = this()
+trait Menu extends Widget {
   var dataSource: DataSource = js.native
   @JSName("options")
   var options_Menu: MenuOptions = js.native
@@ -38,13 +35,5 @@ class Menu protected () extends Widget {
   def remove(element: String): Menu = js.native
   def remove(element: JQuery): Menu = js.native
   def remove(element: Element): Menu = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Menu")
-@js.native
-object Menu extends js.Object {
-  var fn: Menu = js.native
-  def extend(proto: js.Object): Menu = js.native
 }
 

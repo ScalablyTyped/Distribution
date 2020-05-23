@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -506,8 +505,4 @@ trait geometryEngine extends js.Object {
     */
   def within(innerGeometry: Geometry_, outerGeometry: Geometry_): Boolean = js.native
 }
-
-@JSGlobal("__esri.geometryEngine")
-@js.native
-object geometryEngine extends TopLevel[geometryEngine]
 

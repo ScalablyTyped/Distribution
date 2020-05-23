@@ -1,15 +1,14 @@
 package typings.ckeditor.CKEDITOR.htmlParser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ckeditor.AnonOption
+import typings.ckeditor.anon.Option
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CKEDITOR.htmlParser.filterRulesGroup")
 @js.native
-class filterRulesGroup () extends js.Object {
-  var rules: js.Array[AnonOption] = js.native
+trait filterRulesGroup extends js.Object {
+  var rules: js.Array[Option] = js.native
   def add(rule: rule, priority: Double, options: ruleOptions): Unit = js.native
   def addMany(rules: js.Array[StringDictionary[_]], priority: Double, options: ruleOptions): Unit = js.native
   def exec(currentValue: String): node | fragment | String = js.native

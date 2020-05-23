@@ -31,7 +31,7 @@ trait CreateReplicationTaskMessage extends js.Object {
     */
   var ReplicationTaskIdentifier: String = js.native
   /**
-    * Overall settings for the task, in JSON format. For more information, see Task Settings in the AWS Database Migration User Guide. 
+    * Overall settings for the task, in JSON format. For more information, see Specifying Task Settings for AWS Database Migration Service Tasks in the AWS Database Migration User Guide. 
     */
   var ReplicationTaskSettings: js.UndefOr[String] = js.native
   /**
@@ -39,7 +39,7 @@ trait CreateReplicationTaskMessage extends js.Object {
     */
   var SourceEndpointArn: String = js.native
   /**
-    * The table mappings for the task, in JSON format. For more information, see Table Mapping in the AWS Database Migration User Guide. 
+    * The table mappings for the task, in JSON format. For more information, see Using Table Mapping to Specify Task Settings in the AWS Database Migration User Guide. 
     */
   var TableMappings: String = js.native
   /**
@@ -50,6 +50,10 @@ trait CreateReplicationTaskMessage extends js.Object {
     * An Amazon Resource Name (ARN) that uniquely identifies the target endpoint.
     */
   var TargetEndpointArn: String = js.native
+  /**
+    * Supplemental information that the task requires to migrate the data for certain source and target endpoints. For more information, see Specifying Supplemental Data for Task Settings in the AWS Database Migration User Guide. 
+    */
+  var TaskData: js.UndefOr[String] = js.native
 }
 
 object CreateReplicationTaskMessage {
@@ -65,7 +69,8 @@ object CreateReplicationTaskMessage {
     CdcStartTime: TStamp = null,
     CdcStopPosition: String = null,
     ReplicationTaskSettings: String = null,
-    Tags: TagList = null
+    Tags: TagList = null,
+    TaskData: String = null
   ): CreateReplicationTaskMessage = {
     val __obj = js.Dynamic.literal(MigrationType = MigrationType.asInstanceOf[js.Any], ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any], ReplicationTaskIdentifier = ReplicationTaskIdentifier.asInstanceOf[js.Any], SourceEndpointArn = SourceEndpointArn.asInstanceOf[js.Any], TableMappings = TableMappings.asInstanceOf[js.Any], TargetEndpointArn = TargetEndpointArn.asInstanceOf[js.Any])
     if (CdcStartPosition != null) __obj.updateDynamic("CdcStartPosition")(CdcStartPosition.asInstanceOf[js.Any])
@@ -73,6 +78,7 @@ object CreateReplicationTaskMessage {
     if (CdcStopPosition != null) __obj.updateDynamic("CdcStopPosition")(CdcStopPosition.asInstanceOf[js.Any])
     if (ReplicationTaskSettings != null) __obj.updateDynamic("ReplicationTaskSettings")(ReplicationTaskSettings.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (TaskData != null) __obj.updateDynamic("TaskData")(TaskData.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReplicationTaskMessage]
   }
 }

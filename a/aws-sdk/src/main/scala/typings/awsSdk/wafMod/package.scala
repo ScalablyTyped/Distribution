@@ -312,6 +312,7 @@ package object wafMod {
   type IPSetSummaries = js.Array[typings.awsSdk.wafMod.IPSetSummary]
   type IPSetUpdates = js.Array[typings.awsSdk.wafMod.IPSetUpdate]
   type IPString = java.lang.String
+  type IgnoreUnsupportedType = scala.Boolean
   type LogDestinationConfigs = js.Array[typings.awsSdk.wafMod.ResourceArn]
   type LoggingConfigurations = js.Array[typings.awsSdk.wafMod.LoggingConfiguration]
   type ManagedKey = java.lang.String
@@ -373,6 +374,8 @@ package object wafMod {
   type RulePriority = scala.Double
   type RuleSummaries = js.Array[typings.awsSdk.wafMod.RuleSummary]
   type RuleUpdates = js.Array[typings.awsSdk.wafMod.RuleUpdate]
+  type S3BucketName = java.lang.String
+  type S3ObjectUrl = java.lang.String
   type SampleWeight = scala.Double
   type SampledHTTPRequests = js.Array[typings.awsSdk.wafMod.SampledHTTPRequest]
   type Size = scala.Double

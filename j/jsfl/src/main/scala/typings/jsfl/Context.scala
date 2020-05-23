@@ -4,23 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("_Context")
-@js.native
-class Context () extends js.Object {
-  var elements: js.Array[FlashElement] = js.native
-  var frame: FlashFrame = js.native
-  var keyframes: js.Array[FlashFrame] = js.native
-  var layer: FlashLayer = js.native
-  def goto(): js.Any = js.native
-  def setLayer(index: Double): js.Any = js.native
-  def update(): js.Any = js.native
+trait Context extends js.Object {
+  var elements: js.Array[FlashElement]
+  var frame: FlashFrame
+  var keyframes: js.Array[FlashFrame]
+  var layer: FlashLayer
+  def goto(): js.Any
+  def setLayer(index: Double): js.Any
+  def update(): js.Any
 }
 
-/* static members */
-@JSGlobal("_Context")
-@js.native
-object Context extends js.Object {
-  def create(): Context = js.native
-  def from(frame: FlashFrame): Context = js.native
+object Context {
+  @scala.inline
+  def apply(
+    elements: js.Array[FlashElement],
+    frame: FlashFrame,
+    goto: () => js.Any,
+    keyframes: js.Array[FlashFrame],
+    layer: FlashLayer,
+    setLayer: Double => js.Any,
+    update: () => js.Any
+  ): Context = {
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], goto = js.Any.fromFunction0(goto), keyframes = keyframes.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], setLayer = js.Any.fromFunction1(setLayer), update = js.Any.fromFunction0(update))
+    __obj.asInstanceOf[Context]
+  }
 }
 

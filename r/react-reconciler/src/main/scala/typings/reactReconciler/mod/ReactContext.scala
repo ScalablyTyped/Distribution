@@ -30,14 +30,13 @@ object ReactContext {
     _threadCount: Double,
     unstable_read: () => T,
     _calculateChangedBits: (/* a */ T, /* b */ T) => Double = null,
-    _currentRenderer: js.Object = null,
-    _currentRenderer2: js.Object = null
+    _currentRenderer: js.UndefOr[Null | js.Object] = js.undefined,
+    _currentRenderer2: js.UndefOr[Null | js.Object] = js.undefined
   ): ReactContext[T] = {
-    val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any], _currentValue = _currentValue.asInstanceOf[js.Any], _currentValue2 = _currentValue2.asInstanceOf[js.Any], _threadCount = _threadCount.asInstanceOf[js.Any], unstable_read = js.Any.fromFunction0(unstable_read))
+    val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any], _currentValue = _currentValue.asInstanceOf[js.Any], _currentValue2 = _currentValue2.asInstanceOf[js.Any], _threadCount = _threadCount.asInstanceOf[js.Any], unstable_read = js.Any.fromFunction0(unstable_read), _calculateChangedBits = js.Any.fromFunction2(_calculateChangedBits))
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
-    if (_calculateChangedBits != null) __obj.updateDynamic("_calculateChangedBits")(js.Any.fromFunction2(_calculateChangedBits))
-    if (_currentRenderer != null) __obj.updateDynamic("_currentRenderer")(_currentRenderer.asInstanceOf[js.Any])
-    if (_currentRenderer2 != null) __obj.updateDynamic("_currentRenderer2")(_currentRenderer2.asInstanceOf[js.Any])
+    if (!js.isUndefined(_currentRenderer)) __obj.updateDynamic("_currentRenderer")(_currentRenderer.asInstanceOf[js.Any])
+    if (!js.isUndefined(_currentRenderer2)) __obj.updateDynamic("_currentRenderer2")(_currentRenderer2.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactContext[T]]
   }
 }

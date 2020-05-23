@@ -28,16 +28,13 @@ object TransformModuleJSON {
     originalCode: String,
     sourcemapChain: js.Array[DecodedSourceMapOrMissing],
     transformDependencies: js.Array[String],
-    moduleSideEffects: js.UndefOr[Boolean] = js.undefined,
+    moduleSideEffects: Boolean = null.asInstanceOf[Boolean],
     originalSourcemap: ExistingDecodedSourceMap = null,
     resolvedIds: ResolvedIdMap = null,
-    syntheticNamedExports: js.UndefOr[Boolean] = js.undefined
+    syntheticNamedExports: Boolean = null.asInstanceOf[Boolean]
   ): TransformModuleJSON = {
-    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], customTransformCache = customTransformCache.asInstanceOf[js.Any], originalCode = originalCode.asInstanceOf[js.Any], sourcemapChain = sourcemapChain.asInstanceOf[js.Any], transformDependencies = transformDependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects.asInstanceOf[js.Any])
-    if (originalSourcemap != null) __obj.updateDynamic("originalSourcemap")(originalSourcemap.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], customTransformCache = customTransformCache.asInstanceOf[js.Any], originalCode = originalCode.asInstanceOf[js.Any], sourcemapChain = sourcemapChain.asInstanceOf[js.Any], transformDependencies = transformDependencies.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], originalSourcemap = originalSourcemap.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any])
     if (resolvedIds != null) __obj.updateDynamic("resolvedIds")(resolvedIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(syntheticNamedExports)) __obj.updateDynamic("syntheticNamedExports")(syntheticNamedExports.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformModuleJSON]
   }
 }

@@ -28,7 +28,7 @@ object Sod {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (depkeys != null) __obj.updateDynamic("depkeys")(depkeys.asInstanceOf[js.Any])
     if (qfn != null) __obj.updateDynamic("qfn")(qfn.asInstanceOf[js.Any])
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
+    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sod]
   }
 }

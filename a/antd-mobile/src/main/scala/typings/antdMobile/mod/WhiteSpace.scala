@@ -1,6 +1,6 @@
 package typings.antdMobile.mod
 
-import typings.antdMobile.AnonPrefixClsSize
+import typings.antdMobile.anon.PrefixClsSize
 import typings.antdMobile.whiteSpaceMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class WhiteSpace () extends default
 @JSImport("antd-mobile", "WhiteSpace")
 @js.native
 object WhiteSpace extends js.Object {
-  var defaultProps: AnonPrefixClsSize = js.native
+  var defaultProps: PrefixClsSize = js.native
 }
 

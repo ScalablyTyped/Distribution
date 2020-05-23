@@ -128,7 +128,7 @@ trait SinonSpy extends SinonSpyCallApi {
   /**
     * Returns the nth call.
     * Accessing individual calls helps with more detailed behavior verification when the spy is called more than once.
-    * @param n
+    * @param n Zero based index of the spy call.
     */
   def getCall(n: Double): SinonSpyCall = js.native
   /**
@@ -184,5 +184,9 @@ trait SinonSpy extends SinonSpyCallApi {
     * @param args Expected args
     */
   def withArgs(args: js.Any*): SinonSpy = js.native
+  /**
+    * Holds a reference to the original method/function this stub has wrapped.
+    */
+  def wrappedMethod(args: js.Any*): js.Any = js.native
 }
 

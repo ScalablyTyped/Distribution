@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A reply to an appointment request for a patient and/or practitioner(s), such as a confirmation or rejection
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait AppointmentResponse extends DomainResource {
   /**
     * Contains extended information for property 'comment'.

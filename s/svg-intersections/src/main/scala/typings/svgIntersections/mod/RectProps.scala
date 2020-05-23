@@ -21,12 +21,12 @@ object RectProps {
     width: Double,
     x: Double,
     y: Double,
-    rx: Int | Double = null,
-    ry: Int | Double = null
+    rx: js.UndefOr[Double] = js.undefined,
+    ry: js.UndefOr[Double] = js.undefined
   ): RectProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
-    if (ry != null) __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
+    if (!js.isUndefined(rx)) __obj.updateDynamic("rx")(rx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ry)) __obj.updateDynamic("ry")(ry.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RectProps]
   }
 }

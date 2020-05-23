@@ -1,6 +1,6 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.PickMemberExpressionobjec
+import typings.babelTypes.anon.PickMemberExpressionobjec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

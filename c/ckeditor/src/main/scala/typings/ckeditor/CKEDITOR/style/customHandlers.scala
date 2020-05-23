@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object customHandlers extends js.Object {
   @js.native
-  class widget ()
+  trait widget
     extends typings.ckeditor.CKEDITOR.style {
     var group: js.Array[_] = js.native
     var widget: String = js.native

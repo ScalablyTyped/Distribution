@@ -32,16 +32,16 @@ object FixedToolbarOptions {
     visibleOnPageShow: js.UndefOr[Boolean] = js.undefined
   ): FixedToolbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disablePageZoom)) __obj.updateDynamic("disablePageZoom")(disablePageZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePageZoom)) __obj.updateDynamic("disablePageZoom")(disablePageZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
     if (hideDuringFocus != null) __obj.updateDynamic("hideDuringFocus")(hideDuringFocus.asInstanceOf[js.Any])
     if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector.asInstanceOf[js.Any])
     if (supportBlacklist != null) __obj.updateDynamic("supportBlacklist")(supportBlacklist.asInstanceOf[js.Any])
-    if (!js.isUndefined(tapToggle)) __obj.updateDynamic("tapToggle")(tapToggle.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapToggle)) __obj.updateDynamic("tapToggle")(tapToggle.get.asInstanceOf[js.Any])
     if (tapToggleBlacklist != null) __obj.updateDynamic("tapToggleBlacklist")(tapToggleBlacklist.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatePagePadding)) __obj.updateDynamic("updatePagePadding")(updatePagePadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleOnPageShow)) __obj.updateDynamic("visibleOnPageShow")(visibleOnPageShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(updatePagePadding)) __obj.updateDynamic("updatePagePadding")(updatePagePadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleOnPageShow)) __obj.updateDynamic("visibleOnPageShow")(visibleOnPageShow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedToolbarOptions]
   }
 }

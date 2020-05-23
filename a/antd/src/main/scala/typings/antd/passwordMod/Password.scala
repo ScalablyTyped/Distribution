@@ -1,9 +1,9 @@
 package typings.antd.passwordMod
 
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

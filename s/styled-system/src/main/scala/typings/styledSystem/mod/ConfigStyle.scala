@@ -13,7 +13,7 @@ trait ConfigStyle extends js.Object {
     */
   var properties: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any
+      /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any
     ]
   ] = js.undefined
   /** The CSS property to use in the returned style object (overridden by `properties` if present). */
@@ -31,7 +31,7 @@ object ConfigStyle {
   def apply(
     defaultScale: Scale = null,
     properties: js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any
+      /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any
     ] = null,
     property: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 760 */ js.Any = null,
     scale: String = null,

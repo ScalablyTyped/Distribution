@@ -10,9 +10,9 @@ trait IdentityConfig extends js.Object {
 
 object IdentityConfig {
   @scala.inline
-  def apply(gain: Int | Double = null): IdentityConfig = {
+  def apply(gain: js.UndefOr[Double] = js.undefined): IdentityConfig = {
     val __obj = js.Dynamic.literal()
-    if (gain != null) __obj.updateDynamic("gain")(gain.asInstanceOf[js.Any])
+    if (!js.isUndefined(gain)) __obj.updateDynamic("gain")(gain.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityConfig]
   }
 }

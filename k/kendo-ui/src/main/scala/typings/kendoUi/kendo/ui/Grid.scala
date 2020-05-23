@@ -10,11 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.ui.Grid")
 @js.native
-class Grid protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: GridOptions) = this()
+trait Grid extends Widget {
   var columns: js.Array[GridColumn] = js.native
   var content: JQuery = js.native
   var dataSource: DataSource = js.native
@@ -90,13 +87,5 @@ class Grid protected () extends Widget {
   def showColumn(column: Double): Unit = js.native
   def unlockColumn(column: String): Unit = js.native
   def unlockColumn(column: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.ui.Grid")
-@js.native
-object Grid extends js.Object {
-  var fn: Grid = js.native
-  def extend(proto: js.Object): Grid = js.native
 }
 

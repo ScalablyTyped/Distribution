@@ -24,15 +24,15 @@ trait SheetsRowsCellsFormat extends js.Object {
 object SheetsRowsCellsFormat {
   @scala.inline
   def apply(
-    decimalPlaces: Int | Double = null,
+    decimalPlaces: js.UndefOr[Double] = js.undefined,
     formatStr: String = null,
     thousandSeparator: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): SheetsRowsCellsFormat = {
     val __obj = js.Dynamic.literal()
-    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimalPlaces)) __obj.updateDynamic("decimalPlaces")(decimalPlaces.get.asInstanceOf[js.Any])
     if (formatStr != null) __obj.updateDynamic("formatStr")(formatStr.asInstanceOf[js.Any])
-    if (!js.isUndefined(thousandSeparator)) __obj.updateDynamic("thousandSeparator")(thousandSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(thousandSeparator)) __obj.updateDynamic("thousandSeparator")(thousandSeparator.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsRowsCellsFormat]
   }

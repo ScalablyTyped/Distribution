@@ -12,10 +12,10 @@ trait PluginOptions extends js.Object {
 
 object PluginOptions {
   @scala.inline
-  def apply(loaders: js.Any, id: String = null, threads: Int | Double = null): PluginOptions = {
+  def apply(loaders: js.Any, id: String = null, threads: js.UndefOr[Double] = js.undefined): PluginOptions = {
     val __obj = js.Dynamic.literal(loaders = loaders.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
+    if (!js.isUndefined(threads)) __obj.updateDynamic("threads")(threads.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]
   }
 }

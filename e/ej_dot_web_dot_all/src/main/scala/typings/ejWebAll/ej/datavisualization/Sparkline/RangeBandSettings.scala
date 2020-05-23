@@ -27,15 +27,15 @@ object RangeBandSettings {
   @scala.inline
   def apply(
     color: String = null,
-    endRange: Int | Double = null,
-    opacity: Int | Double = null,
-    startRange: Int | Double = null
+    endRange: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
+    startRange: js.UndefOr[Double] = js.undefined
   ): RangeBandSettings = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (endRange != null) __obj.updateDynamic("endRange")(endRange.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (startRange != null) __obj.updateDynamic("startRange")(startRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(endRange)) __obj.updateDynamic("endRange")(endRange.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRange)) __obj.updateDynamic("startRange")(startRange.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeBandSettings]
   }
 }

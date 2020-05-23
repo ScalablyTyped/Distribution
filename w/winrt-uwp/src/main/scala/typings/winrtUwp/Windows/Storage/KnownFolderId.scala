@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,50 +66,6 @@ object KnownFolderId extends js.Object {
   /** Videos library folder. */
   @js.native
   sealed trait videosLibrary extends KnownFolderId
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KnownFolderId with Double] = js.native
-  /* 0 */ @js.native
-  object appCaptures extends TopLevel[appCaptures with Double]
-  
-  /* 1 */ @js.native
-  object cameraRoll extends TopLevel[cameraRoll with Double]
-  
-  /* 2 */ @js.native
-  object documentsLibrary extends TopLevel[documentsLibrary with Double]
-  
-  /* 3 */ @js.native
-  object homeGroup extends TopLevel[homeGroup with Double]
-  
-  /* 4 */ @js.native
-  object mediaServerDevices extends TopLevel[mediaServerDevices with Double]
-  
-  /* 5 */ @js.native
-  object musicLibrary extends TopLevel[musicLibrary with Double]
-  
-  /* 6 */ @js.native
-  object objects3D extends TopLevel[objects3D with Double]
-  
-  /* 7 */ @js.native
-  object picturesLibrary extends TopLevel[picturesLibrary with Double]
-  
-  /* 8 */ @js.native
-  object playlists extends TopLevel[playlists with Double]
-  
-  /* 9 */ @js.native
-  object recordedCalls extends TopLevel[recordedCalls with Double]
-  
-  /* 10 */ @js.native
-  object removableDevices extends TopLevel[removableDevices with Double]
-  
-  /* 11 */ @js.native
-  object savedPictures extends TopLevel[savedPictures with Double]
-  
-  /* 12 */ @js.native
-  object screenshots extends TopLevel[screenshots with Double]
-  
-  /* 13 */ @js.native
-  object videosLibrary extends TopLevel[videosLibrary with Double]
   
 }
 

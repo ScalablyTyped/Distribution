@@ -23,7 +23,7 @@ object HtmlTemplate {
     getCode: () => String,
     getCodeWithComments: () => String,
     getRawContent: () => String,
-    StringDictionary: /* propName */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): HtmlTemplate = {
     val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction0(evaluate), getCode = js.Any.fromFunction0(getCode), getCodeWithComments = js.Any.fromFunction0(getCodeWithComments), getRawContent = js.Any.fromFunction0(getRawContent))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

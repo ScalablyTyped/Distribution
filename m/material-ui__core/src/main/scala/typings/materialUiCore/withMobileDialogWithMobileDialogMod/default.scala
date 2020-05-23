@@ -1,6 +1,6 @@
 package typings.materialUiCore.withMobileDialogWithMobileDialogMod
 
-import typings.materialUiCore.PartialWithWidth
+import typings.materialUiCore.anon.PartialWithWidth
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

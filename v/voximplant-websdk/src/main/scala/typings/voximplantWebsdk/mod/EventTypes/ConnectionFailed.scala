@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched if connection to VoxImplant Cloud couldn't be established. See connect function
-		*/
+  *    Event dispatched if connection to VoxImplant Cloud couldn't be established. See connect function
+  */
 trait ConnectionFailed extends VoxImplantEvent {
   /**
-  			*	Failure reason description
-  			*/
+    *    Failure reason description
+    */
   var message: String
 }
 

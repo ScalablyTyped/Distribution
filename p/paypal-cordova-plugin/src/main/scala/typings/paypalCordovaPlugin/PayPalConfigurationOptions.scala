@@ -131,26 +131,26 @@ object PayPalConfigurationOptions {
     merchantName: String = null,
     merchantPrivacyPolicyURL: String = null,
     merchantUserAgreementURL: String = null,
-    payPalShippingAddressOption: Int | Double = null,
+    payPalShippingAddressOption: js.UndefOr[Double] = js.undefined,
     presentingInPopover: js.UndefOr[Boolean] = js.undefined,
     rememberUser: js.UndefOr[Boolean] = js.undefined,
     sandboxUserPassword: String = null,
     sandboxUserPin: String = null
   ): PayPalConfigurationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptCreditCards)) __obj.updateDynamic("acceptCreditCards")(acceptCreditCards.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptCreditCards)) __obj.updateDynamic("acceptCreditCards")(acceptCreditCards.get.asInstanceOf[js.Any])
     if (defaultUserEmail != null) __obj.updateDynamic("defaultUserEmail")(defaultUserEmail.asInstanceOf[js.Any])
     if (defaultUserPhoneCountryCode != null) __obj.updateDynamic("defaultUserPhoneCountryCode")(defaultUserPhoneCountryCode.asInstanceOf[js.Any])
     if (defaultUserPhoneNumber != null) __obj.updateDynamic("defaultUserPhoneNumber")(defaultUserPhoneNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableBlurWhenBackgrounding)) __obj.updateDynamic("disableBlurWhenBackgrounding")(disableBlurWhenBackgrounding.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceDefaultsInSandbox)) __obj.updateDynamic("forceDefaultsInSandbox")(forceDefaultsInSandbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableBlurWhenBackgrounding)) __obj.updateDynamic("disableBlurWhenBackgrounding")(disableBlurWhenBackgrounding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceDefaultsInSandbox)) __obj.updateDynamic("forceDefaultsInSandbox")(forceDefaultsInSandbox.get.asInstanceOf[js.Any])
     if (languageOrLocale != null) __obj.updateDynamic("languageOrLocale")(languageOrLocale.asInstanceOf[js.Any])
     if (merchantName != null) __obj.updateDynamic("merchantName")(merchantName.asInstanceOf[js.Any])
     if (merchantPrivacyPolicyURL != null) __obj.updateDynamic("merchantPrivacyPolicyURL")(merchantPrivacyPolicyURL.asInstanceOf[js.Any])
     if (merchantUserAgreementURL != null) __obj.updateDynamic("merchantUserAgreementURL")(merchantUserAgreementURL.asInstanceOf[js.Any])
-    if (payPalShippingAddressOption != null) __obj.updateDynamic("payPalShippingAddressOption")(payPalShippingAddressOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(presentingInPopover)) __obj.updateDynamic("presentingInPopover")(presentingInPopover.asInstanceOf[js.Any])
-    if (!js.isUndefined(rememberUser)) __obj.updateDynamic("rememberUser")(rememberUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(payPalShippingAddressOption)) __obj.updateDynamic("payPalShippingAddressOption")(payPalShippingAddressOption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(presentingInPopover)) __obj.updateDynamic("presentingInPopover")(presentingInPopover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rememberUser)) __obj.updateDynamic("rememberUser")(rememberUser.get.asInstanceOf[js.Any])
     if (sandboxUserPassword != null) __obj.updateDynamic("sandboxUserPassword")(sandboxUserPassword.asInstanceOf[js.Any])
     if (sandboxUserPin != null) __obj.updateDynamic("sandboxUserPin")(sandboxUserPin.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayPalConfigurationOptions]

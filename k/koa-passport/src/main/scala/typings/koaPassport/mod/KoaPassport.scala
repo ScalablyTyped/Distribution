@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
-import typings.koaPassport.AnonPauseStream
-import typings.koaPassport.AnonUserProperty
-import typings.koaPassport.FnCall
-import typings.koaPassport.FnCallFn
+import typings.koaPassport.anon.FnCall
+import typings.koaPassport.anon.FnCallFn
+import typings.koaPassport.anon.PauseStream
+import typings.koaPassport.anon.UserProperty
 import typings.node.httpMod.IncomingMessage
-import typings.passport.AnonInstantiable
+import typings.passport.anon.Instantiable
 import typings.passport.mod.AuthenticateOptions
 import typings.passport.mod.Framework
 import typings.passport.mod.Strategy
@@ -81,7 +81,7 @@ object KoaPassport extends js.Object {
     ): Unit = js.native
     def framework(fw: Framework[_, _, _]): this.type = js.native
     def initialize(): Middleware[DefaultState, DefaultContext] = js.native
-    def initialize(options: AnonUserProperty): Middleware[DefaultState, DefaultContext] = js.native
+    def initialize(options: UserProperty): Middleware[DefaultState, DefaultContext] = js.native
     def serializeUser[TUser, TID](
       fn: js.Function2[
           /* user */ TUser, 
@@ -98,7 +98,7 @@ object KoaPassport extends js.Object {
         ]
     ): Unit = js.native
     def session(): Middleware[DefaultState, DefaultContext] = js.native
-    def session(options: AnonPauseStream): Middleware[DefaultState, DefaultContext] = js.native
+    def session(options: PauseStream): Middleware[DefaultState, DefaultContext] = js.native
     def transformAuthInfo(
       fn: js.Function2[
           /* info */ js.Any, 
@@ -114,9 +114,9 @@ object KoaPassport extends js.Object {
   @js.native
   trait Static
     extends typings.koaPassport.mod.KoaPassport.KoaPassport {
-    var Authenticator: AnonInstantiable = js.native
+    var Authenticator: Instantiable = js.native
     var KoaPassport: Instantiable0[typings.koaPassport.mod.KoaPassport.KoaPassport] = js.native
-    var Passport: AnonInstantiable = js.native
+    var Passport: Instantiable = js.native
   }
   
 }

@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.PIXELFORMAT_SRGBA
-  * @type {number}
-  * @description Color sRGB format with additional alpha channel (WebGL2 only).
+  * Color sRGB format with additional alpha channel (WebGL2 only).
   */
 @JSImport("playcanvas", "PIXELFORMAT_SRGBA")
 @js.native

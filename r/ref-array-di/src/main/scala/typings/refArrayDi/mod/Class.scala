@@ -1,7 +1,7 @@
 package typings.refArrayDi.mod
 
-import typings.node.Buffer
 import typings.refNapi.mod.Type
+import typings.refNapi.mod.global.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

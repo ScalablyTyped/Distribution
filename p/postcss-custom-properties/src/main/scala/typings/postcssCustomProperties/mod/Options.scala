@@ -40,7 +40,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (exportTo != null) __obj.updateDynamic("exportTo")(exportTo.asInstanceOf[js.Any])
     if (importFrom != null) __obj.updateDynamic("importFrom")(importFrom.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

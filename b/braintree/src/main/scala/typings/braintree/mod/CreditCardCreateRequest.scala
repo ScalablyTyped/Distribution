@@ -1,13 +1,13 @@
 package typings.braintree.mod
 
-import typings.braintree.AnonCompany
-import typings.braintree.AnonMakeDefault
+import typings.braintree.anon.Company
+import typings.braintree.anon.MakeDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreditCardCreateRequest extends js.Object {
-  var billingAddress: js.UndefOr[AnonCompany] = js.undefined
+  var billingAddress: js.UndefOr[Company] = js.undefined
   var billingAddressId: js.UndefOr[String] = js.undefined
   var cardholderName: js.UndefOr[String] = js.undefined
   var customerId: String
@@ -16,7 +16,7 @@ trait CreditCardCreateRequest extends js.Object {
   var expirationMonth: js.UndefOr[String] = js.undefined
   var expirationYear: js.UndefOr[String] = js.undefined
   var number: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[AnonMakeDefault] = js.undefined
+  var options: js.UndefOr[MakeDefault] = js.undefined
   var paymentMethodNonce: js.UndefOr[String] = js.undefined
   var token: js.UndefOr[String] = js.undefined
 }
@@ -25,7 +25,7 @@ object CreditCardCreateRequest {
   @scala.inline
   def apply(
     customerId: String,
-    billingAddress: AnonCompany = null,
+    billingAddress: Company = null,
     billingAddressId: String = null,
     cardholderName: String = null,
     cvv: String = null,
@@ -33,7 +33,7 @@ object CreditCardCreateRequest {
     expirationMonth: String = null,
     expirationYear: String = null,
     number: String = null,
-    options: AnonMakeDefault = null,
+    options: MakeDefault = null,
     paymentMethodNonce: String = null,
     token: String = null
   ): CreditCardCreateRequest = {

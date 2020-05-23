@@ -20,71 +20,71 @@ import scala.scalajs.js.annotation._
   */
 trait TwitchExtContext extends js.Object {
   /**
-  	 * If true, player controls are visible (e.g., due to mouseover).
-  	 * Do not use this for mobile extensions; it is not sent for mobile.
-  	 */
+    * If true, player controls are visible (e.g., due to mouseover).
+    * Do not use this for mobile extensions; it is not sent for mobile.
+    */
   var arePlayerControlsVisible: Boolean
   /**
-  	 * Bitrate of the broadcast.
-  	 */
+    * Bitrate of the broadcast.
+    */
   var bitrate: Double
   /**
-  	 * Buffer size of the broadcast.
-  	 */
+    * Buffer size of the broadcast.
+    */
   var bufferSize: Double
   /**
-  	 * Display size of the player.
-  	 */
+    * Display size of the player.
+    */
   var displayResolution: String
   /**
-  	 * Game being broadcast.
-  	 */
+    * Game being broadcast.
+    */
   var game: String
   /**
-  	 * Number of seconds of latency between the broadcaster and viewer.
-  	 */
+    * Number of seconds of latency between the broadcaster and viewer.
+    */
   var hlsLatencyBroadcaster: Double
   /**
-  	 * If true, the viewer is watching in fullscreen mode.
-  	 * Do not use this for mobile extensions; it is not sent for mobile.
-  	 */
+    * If true, the viewer is watching in fullscreen mode.
+    * Do not use this for mobile extensions; it is not sent for mobile.
+    */
   var isFullScreen: Boolean
   /**
-  	 * If true, the viewer has muted the stream.
-  	 */
+    * If true, the viewer has muted the stream.
+    */
   var isMuted: Boolean
   /**
-  	 * If true, the viewer has paused the stream.
-  	 */
+    * If true, the viewer has paused the stream.
+    */
   var isPaused: Boolean
   /**
-  	 * If true, the viewer is watching in theater mode.
-  	 * Do not use this for mobile extensions; it is not sent for mobile.
-  	 */
+    * If true, the viewer is watching in theater mode.
+    * Do not use this for mobile extensions; it is not sent for mobile.
+    */
   var isTheatreMode: Boolean
   /**
-  	 * Language of the broadcast (e.g., "en").
-  	 */
+    * Language of the broadcast (e.g., "en").
+    */
   var language: String
   /**
-  	 * The mode the extension is currently run in.
-  	 */
+    * The mode the extension is currently run in.
+    */
   var mode: viewer | dashboard | config
   /**
-  	 * Indicates how the stream is being played.
-  	 */
+    * Indicates how the stream is being played.
+    */
   var playbackMode: video | audio | remote | `chat-only`
   /**
-  	 * The user’s theme setting on the Twitch website.
-  	 */
+    * The user’s theme setting on the Twitch website.
+    */
   var theme: light | dark
   /**
-  	 * Resolution of the broadcast.
-  	 */
+    * Resolution of the broadcast.
+    */
   var videoResolution: String
   /**
-  	 * Currently selected player volume. Valid values: between 0 and 1.
-  	 */
+    * Currently selected player volume. Valid values: between 0 and 1.
+    */
   var volume: Double
 }
 

@@ -1,19 +1,19 @@
 package typings.gapiClientBooks.gapi.client.books
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientBooks.AnonNotificationid
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientBooks.anon.Notificationid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NotificationResource extends js.Object {
   /** Returns notification details for a given notification id. */
-  def get(request: AnonNotificationid): Request_[Notification]
+  def get(request: Notificationid): Request[Notification]
 }
 
 object NotificationResource {
   @scala.inline
-  def apply(get: AnonNotificationid => Request_[Notification]): NotificationResource = {
+  def apply(get: Notificationid => Request[Notification]): NotificationResource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[NotificationResource]
   }

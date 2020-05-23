@@ -13,10 +13,10 @@ trait ModularScaleOptions extends js.Object {
 
 object ModularScaleOptions {
   @scala.inline
-  def apply(base: Double | String = null, ratio: Int | Double = null): ModularScaleOptions = {
+  def apply(base: Double | String = null, ratio: js.UndefOr[Double] = js.undefined): ModularScaleOptions = {
     val __obj = js.Dynamic.literal()
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModularScaleOptions]
   }
 }

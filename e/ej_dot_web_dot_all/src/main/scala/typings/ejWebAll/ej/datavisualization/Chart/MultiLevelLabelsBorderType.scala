@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.datavisualization.Chart
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,23 +29,6 @@ object MultiLevelLabelsBorderType extends js.Object {
   //string
   @js.native
   sealed trait WithoutTopAndBottom extends MultiLevelLabelsBorderType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MultiLevelLabelsBorderType with Double] = js.native
-  /* 3 */ @js.native
-  object Brace extends TopLevel[Brace with Double]
-  
-  /* 4 */ @js.native
-  object CurlyBrace extends TopLevel[CurlyBrace with Double]
-  
-  /* 1 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 0 */ @js.native
-  object Rectangle extends TopLevel[Rectangle with Double]
-  
-  /* 2 */ @js.native
-  object WithoutTopAndBottom extends TopLevel[WithoutTopAndBottom with Double]
   
 }
 

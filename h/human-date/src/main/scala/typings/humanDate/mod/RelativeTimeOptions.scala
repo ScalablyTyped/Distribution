@@ -22,11 +22,11 @@ object RelativeTimeOptions {
     returnObject: js.UndefOr[Boolean] = js.undefined
   ): RelativeTimeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allUnits)) __obj.updateDynamic("allUnits")(allUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(allUnits)) __obj.updateDynamic("allUnits")(allUnits.get.asInstanceOf[js.Any])
     if (futureSuffix != null) __obj.updateDynamic("futureSuffix")(futureSuffix.asInstanceOf[js.Any])
     if (pastSuffix != null) __obj.updateDynamic("pastSuffix")(pastSuffix.asInstanceOf[js.Any])
     if (presentText != null) __obj.updateDynamic("presentText")(presentText.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnObject)) __obj.updateDynamic("returnObject")(returnObject.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnObject)) __obj.updateDynamic("returnObject")(returnObject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeTimeOptions]
   }
 }

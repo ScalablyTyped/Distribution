@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`auto-complete-polygon`
 import typings.arcgisJsApi.arcgisJsApiStrings.`down-arrow`
 import typings.arcgisJsApi.arcgisJsApiStrings.`left-arrow`
@@ -49,8 +48,4 @@ trait FeatureTemplate
     */
   var thumbnail: FeatureTemplateThumbnail = js.native
 }
-
-@JSGlobal("__esri.FeatureTemplate")
-@js.native
-object FeatureTemplate extends TopLevel[FeatureTemplateConstructor]
 

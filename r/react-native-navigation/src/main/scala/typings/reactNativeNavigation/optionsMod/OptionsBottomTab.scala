@@ -41,7 +41,6 @@ trait OptionsBottomTab extends js.Object {
   var fontWeight: js.UndefOr[FontWeight] = js.undefined
   /**
     * Set the tab icon
-    * Note: On Android `icon` is required
     */
   var icon: js.UndefOr[ImageRequireSource | ImageResource] = js.undefined
   /**
@@ -99,14 +98,14 @@ object OptionsBottomTab {
     disableSelectedIconTint: js.UndefOr[Boolean] = js.undefined,
     dotIndicator: DotIndicatorOptions = null,
     fontFamily: FontFamily = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     fontWeight: FontWeight = null,
     icon: ImageRequireSource | ImageResource = null,
     iconColor: Color = null,
     iconInsets: Insets = null,
     selectTabOnPress: js.UndefOr[Boolean] = js.undefined,
-    selectedFontSize: Int | Double = null,
-    selectedIcon: Int | Double = null,
+    selectedFontSize: js.UndefOr[Double] = js.undefined,
+    selectedIcon: js.UndefOr[ImageRequireSource] = js.undefined,
     selectedIconColor: Color = null,
     selectedTextColor: Color = null,
     testID: String = null,
@@ -116,18 +115,18 @@ object OptionsBottomTab {
     val __obj = js.Dynamic.literal()
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
     if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSelectedIconTint)) __obj.updateDynamic("disableSelectedIconTint")(disableSelectedIconTint.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSelectedIconTint)) __obj.updateDynamic("disableSelectedIconTint")(disableSelectedIconTint.get.asInstanceOf[js.Any])
     if (dotIndicator != null) __obj.updateDynamic("dotIndicator")(dotIndicator.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
     if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectTabOnPress)) __obj.updateDynamic("selectTabOnPress")(selectTabOnPress.asInstanceOf[js.Any])
-    if (selectedFontSize != null) __obj.updateDynamic("selectedFontSize")(selectedFontSize.asInstanceOf[js.Any])
-    if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectTabOnPress)) __obj.updateDynamic("selectTabOnPress")(selectTabOnPress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedFontSize)) __obj.updateDynamic("selectedFontSize")(selectedFontSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIcon)) __obj.updateDynamic("selectedIcon")(selectedIcon.get.asInstanceOf[js.Any])
     if (selectedIconColor != null) __obj.updateDynamic("selectedIconColor")(selectedIconColor.asInstanceOf[js.Any])
     if (selectedTextColor != null) __obj.updateDynamic("selectedTextColor")(selectedTextColor.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])

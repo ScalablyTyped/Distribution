@@ -1,13 +1,13 @@
 package typings.sparkpost.mod
 
-import typings.sparkpost.AnonEmailrfc822
+import typings.sparkpost.anon.Emailrfc822
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Template extends js.Object {
   /** Content that will be used to construct a message  yes  For a full description, see the Content Attributes. Maximum length - 20 MBs */
-  var content: TemplateContent | AnonEmailrfc822
+  var content: TemplateContent | Emailrfc822
   /** Detailed description of the template  no  Maximum length - 1024 bytes */
   var description: String
   /**
@@ -33,7 +33,7 @@ trait Template extends js.Object {
 object Template {
   @scala.inline
   def apply(
-    content: TemplateContent | AnonEmailrfc822,
+    content: TemplateContent | Emailrfc822,
     description: String,
     id: String,
     last_update_time: String,

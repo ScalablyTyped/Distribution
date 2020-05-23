@@ -56,28 +56,28 @@ object Options {
     direction: horizontal | vertical = null,
     elementStyle: (/* dimension */ width | height, /* elementSize */ Double, /* gutterSize */ Double) => CSSStyleDeclarationPartial = null,
     gutter: (/* index */ Double, /* direction */ horizontal | vertical) => HTMLElement = null,
-    gutterSize: Int | Double = null,
+    gutterSize: js.UndefOr[Double] = js.undefined,
     gutterStyle: (/* dimension */ width | height, /* gutterSize */ Double) => CSSStyleDeclarationPartial = null,
     minSize: Double | js.Array[Double] = null,
     onDrag: /* sizes */ js.Array[Double] => Unit = null,
     onDragEnd: /* sizes */ js.Array[Double] => Unit = null,
     onDragStart: /* sizes */ js.Array[Double] => Unit = null,
     sizes: js.Array[Double] = null,
-    snapOffset: Int | Double = null
+    snapOffset: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (elementStyle != null) __obj.updateDynamic("elementStyle")(js.Any.fromFunction3(elementStyle))
     if (gutter != null) __obj.updateDynamic("gutter")(js.Any.fromFunction2(gutter))
-    if (gutterSize != null) __obj.updateDynamic("gutterSize")(gutterSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(gutterSize)) __obj.updateDynamic("gutterSize")(gutterSize.get.asInstanceOf[js.Any])
     if (gutterStyle != null) __obj.updateDynamic("gutterStyle")(js.Any.fromFunction2(gutterStyle))
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (snapOffset != null) __obj.updateDynamic("snapOffset")(snapOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapOffset)) __obj.updateDynamic("snapOffset")(snapOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

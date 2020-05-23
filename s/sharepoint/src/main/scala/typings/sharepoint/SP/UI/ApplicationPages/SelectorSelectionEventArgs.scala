@@ -5,10 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.UI.ApplicationPages.SelectorSelectionEventArgs")
-@js.native
-class SelectorSelectionEventArgs protected () extends EventArgs {
-  def this(entities: js.Any) = this()
-  def get_entities(): js.Any = js.native
+trait SelectorSelectionEventArgs extends EventArgs {
+  def get_entities(): js.Any
+}
+
+object SelectorSelectionEventArgs {
+  @scala.inline
+  def apply(Empty: EventArgs, get_entities: () => js.Any): SelectorSelectionEventArgs = {
+    val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_entities = js.Any.fromFunction0(get_entities))
+    __obj.asInstanceOf[SelectorSelectionEventArgs]
+  }
 }
 

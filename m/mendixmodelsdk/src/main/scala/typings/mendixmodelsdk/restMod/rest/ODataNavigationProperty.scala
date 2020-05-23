@@ -29,12 +29,18 @@ class ODataNavigationProperty protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FODataNavigationProperty: IModel = js.native
+  /**
+    * In version 8.10.0: deleted
+    */
   def association: IAssociationBase = js.native
   def association(newValue: IAssociationBase): js.Any = js.native
   def associationQualifiedName: String = js.native
   def containerAsODataEntity: ODataEntity = js.native
   def name: String = js.native
   def name(newValue: String): js.Any = js.native
+  /**
+    * In version 8.10.0: deleted
+    */
   def thisSideIsParent: Boolean = js.native
   def thisSideIsParent(newValue: Boolean): js.Any = js.native
 }

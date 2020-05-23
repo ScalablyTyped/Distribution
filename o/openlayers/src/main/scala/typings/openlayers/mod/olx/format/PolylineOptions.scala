@@ -12,9 +12,9 @@ trait PolylineOptions extends js.Object {
 
 object PolylineOptions {
   @scala.inline
-  def apply(factor: Int | Double = null, geometryLayout: GeometryLayout = null): PolylineOptions = {
+  def apply(factor: js.UndefOr[Double] = js.undefined, geometryLayout: GeometryLayout = null): PolylineOptions = {
     val __obj = js.Dynamic.literal()
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
     if (geometryLayout != null) __obj.updateDynamic("geometryLayout")(geometryLayout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineOptions]
   }

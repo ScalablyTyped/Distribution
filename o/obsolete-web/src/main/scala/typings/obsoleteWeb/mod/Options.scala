@@ -43,8 +43,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(promptOnNonTargetBrowser)) __obj.updateDynamic("promptOnNonTargetBrowser")(promptOnNonTargetBrowser.asInstanceOf[js.Any])
-    if (!js.isUndefined(promptOnUnknownBrowser)) __obj.updateDynamic("promptOnUnknownBrowser")(promptOnUnknownBrowser.asInstanceOf[js.Any])
+    if (!js.isUndefined(promptOnNonTargetBrowser)) __obj.updateDynamic("promptOnNonTargetBrowser")(promptOnNonTargetBrowser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(promptOnUnknownBrowser)) __obj.updateDynamic("promptOnUnknownBrowser")(promptOnUnknownBrowser.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

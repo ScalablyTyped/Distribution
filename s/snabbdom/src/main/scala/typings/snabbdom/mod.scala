@@ -1,6 +1,7 @@
 package typings.snabbdom
 
-import typings.snabbdom.attributesMod._Global_.Element
+import typings.snabbdom.anon.PartialModule
+import typings.snabbdom.attributesMod.global.Element
 import typings.snabbdom.hMod.VNodeChildren
 import typings.snabbdom.htmldomapiMod.DOMAPI
 import typings.snabbdom.thunkMod.ThunkFn

@@ -1,7 +1,7 @@
 package typings.mongooseDelete.mod
 
 import typings.mongoose.mod.Schema
-import typings.mongooseDelete.PartialOptions
+import typings.mongooseDelete.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

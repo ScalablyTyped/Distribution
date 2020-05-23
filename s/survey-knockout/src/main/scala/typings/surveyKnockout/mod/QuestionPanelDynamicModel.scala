@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import typings.surveyKnockout.anon.Calculations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -255,6 +256,7 @@ class QuestionPanelDynamicModel protected ()
   override def getItemIndex(item: ISurveyData): Double = js.native
   /* CompleteClass */
   override def getPanelItemData(item: ISurveyData): js.Any = js.native
+  def getPlainData(options: Calculations): js.Any = js.native
   /* CompleteClass */
   override def getRootData(): ISurveyData = js.native
   /* CompleteClass */

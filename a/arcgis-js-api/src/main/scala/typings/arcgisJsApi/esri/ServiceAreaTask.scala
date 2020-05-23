@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +18,4 @@ trait ServiceAreaTask extends Task {
   def solve(params: ServiceAreaParameters): js.Promise[ServiceAreaSolveResult] = js.native
   def solve(params: ServiceAreaParameters, requestOptions: js.Any): js.Promise[ServiceAreaSolveResult] = js.native
 }
-
-@JSGlobal("__esri.ServiceAreaTask")
-@js.native
-object ServiceAreaTask extends TopLevel[ServiceAreaTaskConstructor]
 

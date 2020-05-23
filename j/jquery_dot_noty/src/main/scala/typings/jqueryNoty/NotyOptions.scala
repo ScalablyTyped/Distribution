@@ -49,7 +49,7 @@ object NotyOptions {
     force: js.UndefOr[Boolean] = js.undefined,
     killer: js.UndefOr[Boolean] = js.undefined,
     layout: String = null,
-    maxVisible: Int | Double = null,
+    maxVisible: js.UndefOr[Double] = js.undefined,
     modal: js.UndefOr[Boolean] = js.undefined,
     progressBar: js.UndefOr[Boolean] = js.undefined,
     template: String = null,
@@ -63,13 +63,13 @@ object NotyOptions {
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (closeWith != null) __obj.updateDynamic("closeWith")(closeWith.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissQueue)) __obj.updateDynamic("dismissQueue")(dismissQueue.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(killer)) __obj.updateDynamic("killer")(killer.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissQueue)) __obj.updateDynamic("dismissQueue")(dismissQueue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(killer)) __obj.updateDynamic("killer")(killer.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (maxVisible != null) __obj.updateDynamic("maxVisible")(maxVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxVisible)) __obj.updateDynamic("maxVisible")(maxVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

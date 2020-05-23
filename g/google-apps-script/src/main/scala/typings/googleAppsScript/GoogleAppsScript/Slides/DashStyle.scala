@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,29 +36,6 @@ object DashStyle extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends DashStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DashStyle with Double] = js.native
-  /* 3 */ @js.native
-  object DASH extends TopLevel[DASH with Double]
-  
-  /* 4 */ @js.native
-  object DASH_DOT extends TopLevel[DASH_DOT with Double]
-  
-  /* 2 */ @js.native
-  object DOT extends TopLevel[DOT with Double]
-  
-  /* 5 */ @js.native
-  object LONG_DASH extends TopLevel[LONG_DASH with Double]
-  
-  /* 6 */ @js.native
-  object LONG_DASH_DOT extends TopLevel[LONG_DASH_DOT with Double]
-  
-  /* 1 */ @js.native
-  object SOLID extends TopLevel[SOLID with Double]
-  
-  /* 0 */ @js.native
-  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
   
 }
 

@@ -12,12 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object navLinkUtilsMod extends js.Object {
   def navLink(el: HTMLElement, routerDirection: RouterDirection): js.Promise[Boolean] = js.native
-  def navLink(
-    el: HTMLElement,
-    routerDirection: RouterDirection,
-    component: js.UndefOr[scala.Nothing],
-    componentProps: ComponentProps[Null]
-  ): js.Promise[Boolean] = js.native
   def navLink(el: HTMLElement, routerDirection: RouterDirection, component: String): js.Promise[Boolean] = js.native
   def navLink(
     el: HTMLElement,

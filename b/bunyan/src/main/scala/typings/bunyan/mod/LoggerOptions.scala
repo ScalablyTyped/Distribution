@@ -20,7 +20,7 @@ object LoggerOptions {
   @scala.inline
   def apply(
     name: String,
-    StringDictionary: /* custom */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     level: LogLevel = null,
     serializers: Serializers = null,
     src: js.UndefOr[Boolean] = js.undefined,
@@ -31,7 +31,7 @@ object LoggerOptions {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
-    if (!js.isUndefined(src)) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (!js.isUndefined(src)) __obj.updateDynamic("src")(src.get.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerOptions]

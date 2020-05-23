@@ -19,7 +19,7 @@ object DPlayerVideo {
   def apply(
     url: String,
     customType: js.Any = null,
-    defaultQuality: Int | Double = null,
+    defaultQuality: js.UndefOr[Double] = js.undefined,
     pic: String = null,
     quality: js.Array[DPlayerVideoQuality] = null,
     thumbnails: String = null,
@@ -27,7 +27,7 @@ object DPlayerVideo {
   ): DPlayerVideo = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (customType != null) __obj.updateDynamic("customType")(customType.asInstanceOf[js.Any])
-    if (defaultQuality != null) __obj.updateDynamic("defaultQuality")(defaultQuality.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultQuality)) __obj.updateDynamic("defaultQuality")(defaultQuality.get.asInstanceOf[js.Any])
     if (pic != null) __obj.updateDynamic("pic")(pic.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])

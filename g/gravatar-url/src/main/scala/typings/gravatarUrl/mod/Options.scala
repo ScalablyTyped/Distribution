@@ -41,12 +41,12 @@ object Options {
   def apply(
     default: LiteralUnion[`404` | mm | identicon | monsterid | wavatar | retro | blank, String] = null,
     rating: g | pg | r | x = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

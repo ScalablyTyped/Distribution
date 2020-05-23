@@ -44,8 +44,8 @@ object ServiceQuotaIncreaseRequestInTemplate {
   @scala.inline
   def apply(
     AwsRegion: AwsRegion = null,
-    DesiredValue: Int | Double = null,
-    GlobalQuota: js.UndefOr[Boolean] = js.undefined,
+    DesiredValue: js.UndefOr[QuotaValue] = js.undefined,
+    GlobalQuota: js.UndefOr[GlobalQuota] = js.undefined,
     QuotaCode: QuotaCode = null,
     QuotaName: QuotaName = null,
     ServiceCode: ServiceCode = null,
@@ -54,8 +54,8 @@ object ServiceQuotaIncreaseRequestInTemplate {
   ): ServiceQuotaIncreaseRequestInTemplate = {
     val __obj = js.Dynamic.literal()
     if (AwsRegion != null) __obj.updateDynamic("AwsRegion")(AwsRegion.asInstanceOf[js.Any])
-    if (DesiredValue != null) __obj.updateDynamic("DesiredValue")(DesiredValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(GlobalQuota)) __obj.updateDynamic("GlobalQuota")(GlobalQuota.asInstanceOf[js.Any])
+    if (!js.isUndefined(DesiredValue)) __obj.updateDynamic("DesiredValue")(DesiredValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GlobalQuota)) __obj.updateDynamic("GlobalQuota")(GlobalQuota.get.asInstanceOf[js.Any])
     if (QuotaCode != null) __obj.updateDynamic("QuotaCode")(QuotaCode.asInstanceOf[js.Any])
     if (QuotaName != null) __obj.updateDynamic("QuotaName")(QuotaName.asInstanceOf[js.Any])
     if (ServiceCode != null) __obj.updateDynamic("ServiceCode")(ServiceCode.asInstanceOf[js.Any])

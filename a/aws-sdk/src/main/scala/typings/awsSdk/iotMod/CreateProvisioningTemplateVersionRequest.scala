@@ -25,10 +25,10 @@ object CreateProvisioningTemplateVersionRequest {
   def apply(
     templateBody: TemplateBody,
     templateName: TemplateName,
-    setAsDefault: js.UndefOr[scala.Boolean] = js.undefined
+    setAsDefault: js.UndefOr[SetAsDefault] = js.undefined
   ): CreateProvisioningTemplateVersionRequest = {
     val __obj = js.Dynamic.literal(templateBody = templateBody.asInstanceOf[js.Any], templateName = templateName.asInstanceOf[js.Any])
-    if (!js.isUndefined(setAsDefault)) __obj.updateDynamic("setAsDefault")(setAsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(setAsDefault)) __obj.updateDynamic("setAsDefault")(setAsDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisioningTemplateVersionRequest]
   }
 }

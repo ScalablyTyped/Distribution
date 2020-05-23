@@ -12,9 +12,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Core.MediaBindingEventArgs")
 @js.native
-abstract class MediaBindingEventArgs () extends js.Object {
+trait MediaBindingEventArgs extends js.Object {
   /** Gets the MediaBinder associated with the binding event. */
   var mediaBinder: MediaBinder = js.native
   /** Occurs when the binding operation is cancelled. */

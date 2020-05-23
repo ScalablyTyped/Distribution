@@ -1,7 +1,7 @@
 package typings.antdMobileRn.listItemNativeMod
 
-import typings.antdMobileRn.PartialListItemProps
-import typings.antdMobileRn.TypeofBrief
+import typings.antdMobileRn.anon.PartialListItemProps
+import typings.antdMobileRn.anon.TypeofBrief
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

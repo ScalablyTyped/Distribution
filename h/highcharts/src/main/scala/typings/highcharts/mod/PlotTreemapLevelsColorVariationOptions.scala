@@ -20,10 +20,10 @@ trait PlotTreemapLevelsColorVariationOptions extends js.Object {
 
 object PlotTreemapLevelsColorVariationOptions {
   @scala.inline
-  def apply(key: brightness = null, to: Int | Double = null): PlotTreemapLevelsColorVariationOptions = {
+  def apply(key: brightness = null, to: js.UndefOr[Double] = js.undefined): PlotTreemapLevelsColorVariationOptions = {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTreemapLevelsColorVariationOptions]
   }
 }

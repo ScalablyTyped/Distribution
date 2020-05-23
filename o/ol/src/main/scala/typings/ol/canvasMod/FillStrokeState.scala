@@ -34,35 +34,35 @@ object FillStrokeState {
     lineDash: js.Array[Double],
     currentFillStyle: ColorLike = null,
     currentLineCap: CanvasLineCap = null,
-    currentLineDashOffset: Int | Double = null,
+    currentLineDashOffset: js.UndefOr[Double] = js.undefined,
     currentLineJoin: CanvasLineJoin = null,
-    currentLineWidth: Int | Double = null,
-    currentMiterLimit: Int | Double = null,
+    currentLineWidth: js.UndefOr[Double] = js.undefined,
+    currentMiterLimit: js.UndefOr[Double] = js.undefined,
     currentStrokeStyle: ColorLike = null,
     fillStyle: ColorLike = null,
-    lastStroke: Int | Double = null,
+    lastStroke: js.UndefOr[Double] = js.undefined,
     lineCap: CanvasLineCap = null,
-    lineDashOffset: Int | Double = null,
+    lineDashOffset: js.UndefOr[Double] = js.undefined,
     lineJoin: CanvasLineJoin = null,
-    lineWidth: Int | Double = null,
-    miterLimit: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    miterLimit: js.UndefOr[Double] = js.undefined,
     strokeStyle: ColorLike = null
   ): FillStrokeState = {
     val __obj = js.Dynamic.literal(currentLineDash = currentLineDash.asInstanceOf[js.Any], lineDash = lineDash.asInstanceOf[js.Any])
     if (currentFillStyle != null) __obj.updateDynamic("currentFillStyle")(currentFillStyle.asInstanceOf[js.Any])
     if (currentLineCap != null) __obj.updateDynamic("currentLineCap")(currentLineCap.asInstanceOf[js.Any])
-    if (currentLineDashOffset != null) __obj.updateDynamic("currentLineDashOffset")(currentLineDashOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentLineDashOffset)) __obj.updateDynamic("currentLineDashOffset")(currentLineDashOffset.get.asInstanceOf[js.Any])
     if (currentLineJoin != null) __obj.updateDynamic("currentLineJoin")(currentLineJoin.asInstanceOf[js.Any])
-    if (currentLineWidth != null) __obj.updateDynamic("currentLineWidth")(currentLineWidth.asInstanceOf[js.Any])
-    if (currentMiterLimit != null) __obj.updateDynamic("currentMiterLimit")(currentMiterLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentLineWidth)) __obj.updateDynamic("currentLineWidth")(currentLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentMiterLimit)) __obj.updateDynamic("currentMiterLimit")(currentMiterLimit.get.asInstanceOf[js.Any])
     if (currentStrokeStyle != null) __obj.updateDynamic("currentStrokeStyle")(currentStrokeStyle.asInstanceOf[js.Any])
     if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
-    if (lastStroke != null) __obj.updateDynamic("lastStroke")(lastStroke.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastStroke)) __obj.updateDynamic("lastStroke")(lastStroke.get.asInstanceOf[js.Any])
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineDashOffset != null) __obj.updateDynamic("lineDashOffset")(lineDashOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineDashOffset)) __obj.updateDynamic("lineDashOffset")(lineDashOffset.get.asInstanceOf[js.Any])
     if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(miterLimit)) __obj.updateDynamic("miterLimit")(miterLimit.get.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillStrokeState]
   }

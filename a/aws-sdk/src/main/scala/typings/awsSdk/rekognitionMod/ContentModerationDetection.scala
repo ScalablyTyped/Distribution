@@ -18,10 +18,10 @@ trait ContentModerationDetection extends js.Object {
 
 object ContentModerationDetection {
   @scala.inline
-  def apply(ModerationLabel: ModerationLabel = null, Timestamp: Int | Double = null): ContentModerationDetection = {
+  def apply(ModerationLabel: ModerationLabel = null, Timestamp: js.UndefOr[Timestamp] = js.undefined): ContentModerationDetection = {
     val __obj = js.Dynamic.literal()
     if (ModerationLabel != null) __obj.updateDynamic("ModerationLabel")(ModerationLabel.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentModerationDetection]
   }
 }

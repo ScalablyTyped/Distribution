@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,17 +37,6 @@ object TopBottomSelectionType extends js.Object {
     */
   @js.native
   sealed trait sum extends TopBottomSelectionType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TopBottomSelectionType with String] = js.native
-  /* "Items" */ @js.native
-  object items extends TopLevel[items with String]
-  
-  /* "Percent" */ @js.native
-  object percent extends TopLevel[percent with String]
-  
-  /* "Sum" */ @js.native
-  object sum extends TopLevel[sum with String]
   
 }
 

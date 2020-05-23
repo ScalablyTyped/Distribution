@@ -78,11 +78,11 @@ object Workspace {
     ErrorMessage: Description = null,
     IpAddress: IpAddress = null,
     ModificationStates: ModificationStateList = null,
-    RootVolumeEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
+    RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
     State: WorkspaceState = null,
     SubnetId: SubnetId = null,
     UserName: UserName = null,
-    UserVolumeEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
+    UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
     VolumeEncryptionKey: VolumeEncryptionKey = null,
     WorkspaceId: WorkspaceId = null,
     WorkspaceProperties: WorkspaceProperties = null
@@ -95,11 +95,11 @@ object Workspace {
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
     if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
     if (ModificationStates != null) __obj.updateDynamic("ModificationStates")(ModificationStates.asInstanceOf[js.Any])
-    if (!js.isUndefined(RootVolumeEncryptionEnabled)) __obj.updateDynamic("RootVolumeEncryptionEnabled")(RootVolumeEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(RootVolumeEncryptionEnabled)) __obj.updateDynamic("RootVolumeEncryptionEnabled")(RootVolumeEncryptionEnabled.get.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserVolumeEncryptionEnabled)) __obj.updateDynamic("UserVolumeEncryptionEnabled")(UserVolumeEncryptionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(UserVolumeEncryptionEnabled)) __obj.updateDynamic("UserVolumeEncryptionEnabled")(UserVolumeEncryptionEnabled.get.asInstanceOf[js.Any])
     if (VolumeEncryptionKey != null) __obj.updateDynamic("VolumeEncryptionKey")(VolumeEncryptionKey.asInstanceOf[js.Any])
     if (WorkspaceId != null) __obj.updateDynamic("WorkspaceId")(WorkspaceId.asInstanceOf[js.Any])
     if (WorkspaceProperties != null) __obj.updateDynamic("WorkspaceProperties")(WorkspaceProperties.asInstanceOf[js.Any])

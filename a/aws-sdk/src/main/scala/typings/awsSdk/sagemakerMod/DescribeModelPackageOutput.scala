@@ -56,14 +56,14 @@ object DescribeModelPackageOutput {
     ModelPackageName: EntityName,
     ModelPackageStatus: ModelPackageStatus,
     ModelPackageStatusDetails: ModelPackageStatusDetails,
-    CertifyForMarketplace: js.UndefOr[scala.Boolean] = js.undefined,
+    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
     InferenceSpecification: InferenceSpecification = null,
     ModelPackageDescription: EntityDescription = null,
     SourceAlgorithmSpecification: SourceAlgorithmSpecification = null,
     ValidationSpecification: ModelPackageValidationSpecification = null
   ): DescribeModelPackageOutput = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], ModelPackageArn = ModelPackageArn.asInstanceOf[js.Any], ModelPackageName = ModelPackageName.asInstanceOf[js.Any], ModelPackageStatus = ModelPackageStatus.asInstanceOf[js.Any], ModelPackageStatusDetails = ModelPackageStatusDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.asInstanceOf[js.Any])
+    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.get.asInstanceOf[js.Any])
     if (InferenceSpecification != null) __obj.updateDynamic("InferenceSpecification")(InferenceSpecification.asInstanceOf[js.Any])
     if (ModelPackageDescription != null) __obj.updateDynamic("ModelPackageDescription")(ModelPackageDescription.asInstanceOf[js.Any])
     if (SourceAlgorithmSpecification != null) __obj.updateDynamic("SourceAlgorithmSpecification")(SourceAlgorithmSpecification.asInstanceOf[js.Any])

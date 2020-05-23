@@ -21,7 +21,7 @@ object ResolveParams {
     context: TContext,
     info: GraphQLResolveInfo,
     source: TSource,
-    StringDictionary: /* opt */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): ResolveParams[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

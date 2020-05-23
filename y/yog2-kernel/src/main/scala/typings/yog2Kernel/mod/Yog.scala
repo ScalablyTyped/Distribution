@@ -2,15 +2,15 @@ package typings.yog2Kernel.mod
 
 import typings.express.mod.Express
 import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.lodash.mod.LoDashImplicitWrapper
 import typings.lodash.mod.LoDashStatic
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.yog2Kernel.AnonCleanCache
-import typings.yog2Kernel.TypeofRAL
-import typings.yog2Kernel.TypeofRALPromise
-import typings.yog2Kernel.Typeofexpress
+import typings.qs.mod.ParsedQs
+import typings.yog2Kernel.anon.CleanCache
+import typings.yog2Kernel.anon.TypeofRAL
+import typings.yog2Kernel.anon.TypeofRALPromise
+import typings.yog2Kernel.anon.Typeofexpress
 import typings.yogLog.mod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ trait Yog extends js.Object {
   var reloadIsomorphic: js.UndefOr[js.Function0[Unit]] = js.native
   // debug模式时存在
   var reloadView: js.UndefOr[js.Function0[Unit]] = js.native
-  var view: AnonCleanCache = js.native
+  var view: CleanCache = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.
@@ -115,11 +115,11 @@ trait Yog extends js.Object {
     * third argument.
     */
   def app(
-    req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query],
+    req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, ParsedQs],
     res: typings.expressServeStaticCore.mod.Response[_]
   ): js.Any = js.native
   def app(
-    req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, Query],
+    req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, _, _, ParsedQs],
     res: ServerResponse
   ): js.Any = js.native
   def app(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[_]): js.Any = js.native

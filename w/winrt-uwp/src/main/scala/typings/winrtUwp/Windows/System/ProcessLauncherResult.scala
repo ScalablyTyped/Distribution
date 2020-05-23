@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.System.ProcessLauncherResult")
-@js.native
-abstract class ProcessLauncherResult () extends js.Object {
-  var exitCode: js.Any = js.native
+trait ProcessLauncherResult extends js.Object {
+  var exitCode: js.Any
+}
+
+object ProcessLauncherResult {
+  @scala.inline
+  def apply(exitCode: js.Any): ProcessLauncherResult = {
+    val __obj = js.Dynamic.literal(exitCode = exitCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProcessLauncherResult]
+  }
 }
 

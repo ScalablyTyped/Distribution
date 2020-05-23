@@ -1,9 +1,9 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonName
-import typings.devextreme.AnonReachedRight
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.ReachedRight
 import typings.devextreme.devextremeStrings.always
 import typings.devextreme.devextremeStrings.both
 import typings.devextreme.devextremeStrings.horizontal
@@ -24,9 +24,9 @@ trait dxScrollableOptions[T] extends DOMComponentOptions[T] {
   /** @name dxScrollable.Options.disabled */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /** @name dxScrollable.Options.onScroll */
-  var onScroll: js.UndefOr[js.Function1[/* e */ AnonReachedRight[T], _]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* e */ ReachedRight[T], _]] = js.undefined
   /** @name dxScrollable.Options.onUpdated */
-  var onUpdated: js.UndefOr[js.Function1[/* e */ AnonReachedRight[T], _]] = js.undefined
+  var onUpdated: js.UndefOr[js.Function1[/* e */ ReachedRight[T], _]] = js.undefined
   /** @name dxScrollable.Options.scrollByContent */
   var scrollByContent: js.UndefOr[Boolean] = js.undefined
   /** @name dxScrollable.Options.scrollByThumb */
@@ -46,11 +46,11 @@ object dxScrollableOptions {
     disabled: js.UndefOr[Boolean] = js.undefined,
     elementAttr: js.Any = null,
     height: Double | String | (js.Function0[Double | String]) = null,
-    onDisposing: /* e */ AnonModel[T] => _ = null,
-    onInitialized: /* e */ AnonElement[T] => _ = null,
-    onOptionChanged: /* e */ AnonName[T] => _ = null,
-    onScroll: /* e */ AnonReachedRight[T] => _ = null,
-    onUpdated: /* e */ AnonReachedRight[T] => _ = null,
+    onDisposing: /* e */ Model[T] => _ = null,
+    onInitialized: /* e */ Element[T] => _ = null,
+    onOptionChanged: /* e */ Name[T] => _ = null,
+    onScroll: /* e */ ReachedRight[T] => _ = null,
+    onUpdated: /* e */ ReachedRight[T] => _ = null,
     rtlEnabled: js.UndefOr[Boolean] = js.undefined,
     scrollByContent: js.UndefOr[Boolean] = js.undefined,
     scrollByThumb: js.UndefOr[Boolean] = js.undefined,
@@ -60,9 +60,9 @@ object dxScrollableOptions {
   ): dxScrollableOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounceEnabled)) __obj.updateDynamic("bounceEnabled")(bounceEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(bounceEnabled)) __obj.updateDynamic("bounceEnabled")(bounceEnabled.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
@@ -70,11 +70,11 @@ object dxScrollableOptions {
     if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onUpdated != null) __obj.updateDynamic("onUpdated")(js.Any.fromFunction1(onUpdated))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollByContent)) __obj.updateDynamic("scrollByContent")(scrollByContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollByThumb)) __obj.updateDynamic("scrollByThumb")(scrollByThumb.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollByContent)) __obj.updateDynamic("scrollByContent")(scrollByContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollByThumb)) __obj.updateDynamic("scrollByThumb")(scrollByThumb.get.asInstanceOf[js.Any])
     if (showScrollbar != null) __obj.updateDynamic("showScrollbar")(showScrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxScrollableOptions[T]]
   }

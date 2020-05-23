@@ -1,6 +1,5 @@
 package typings.reactNavigationDrawer
 
-import typings.reactNavigationDrawer.drawerActionsMod.DrawerActionType
 import typings.reactNavigationDrawer.typesMod.DrawerLockMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,30 +8,6 @@ import scala.scalajs.js.annotation._
 object reactNavigationDrawerStrings {
   @js.native
   sealed trait CHILD_ACTION extends js.Object
-  
-  @js.native
-  sealed trait NavigationSlashCLOSE_DRAWER extends DrawerActionType
-  
-  @js.native
-  sealed trait NavigationSlashDRAWER_CLOSED extends js.Object
-  
-  @js.native
-  sealed trait NavigationSlashDRAWER_OPENED extends js.Object
-  
-  @js.native
-  sealed trait NavigationSlashMARK_DRAWER_ACTIVE extends js.Object
-  
-  @js.native
-  sealed trait NavigationSlashMARK_DRAWER_IDLE extends js.Object
-  
-  @js.native
-  sealed trait NavigationSlashMARK_DRAWER_SETTLING extends js.Object
-  
-  @js.native
-  sealed trait NavigationSlashOPEN_DRAWER extends DrawerActionType
-  
-  @js.native
-  sealed trait NavigationSlashTOGGLE_DRAWER extends DrawerActionType
   
   @js.native
   sealed trait back extends js.Object
@@ -78,22 +53,6 @@ object reactNavigationDrawerStrings {
   
   @scala.inline
   def CHILD_ACTION: CHILD_ACTION = "CHILD_ACTION".asInstanceOf[CHILD_ACTION]
-  @scala.inline
-  def NavigationSlashCLOSE_DRAWER: NavigationSlashCLOSE_DRAWER = "Navigation/CLOSE_DRAWER".asInstanceOf[NavigationSlashCLOSE_DRAWER]
-  @scala.inline
-  def NavigationSlashDRAWER_CLOSED: NavigationSlashDRAWER_CLOSED = "Navigation/DRAWER_CLOSED".asInstanceOf[NavigationSlashDRAWER_CLOSED]
-  @scala.inline
-  def NavigationSlashDRAWER_OPENED: NavigationSlashDRAWER_OPENED = "Navigation/DRAWER_OPENED".asInstanceOf[NavigationSlashDRAWER_OPENED]
-  @scala.inline
-  def NavigationSlashMARK_DRAWER_ACTIVE: NavigationSlashMARK_DRAWER_ACTIVE = "Navigation/MARK_DRAWER_ACTIVE".asInstanceOf[NavigationSlashMARK_DRAWER_ACTIVE]
-  @scala.inline
-  def NavigationSlashMARK_DRAWER_IDLE: NavigationSlashMARK_DRAWER_IDLE = "Navigation/MARK_DRAWER_IDLE".asInstanceOf[NavigationSlashMARK_DRAWER_IDLE]
-  @scala.inline
-  def NavigationSlashMARK_DRAWER_SETTLING: NavigationSlashMARK_DRAWER_SETTLING = "Navigation/MARK_DRAWER_SETTLING".asInstanceOf[NavigationSlashMARK_DRAWER_SETTLING]
-  @scala.inline
-  def NavigationSlashOPEN_DRAWER: NavigationSlashOPEN_DRAWER = "Navigation/OPEN_DRAWER".asInstanceOf[NavigationSlashOPEN_DRAWER]
-  @scala.inline
-  def NavigationSlashTOGGLE_DRAWER: NavigationSlashTOGGLE_DRAWER = "Navigation/TOGGLE_DRAWER".asInstanceOf[NavigationSlashTOGGLE_DRAWER]
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   @scala.inline

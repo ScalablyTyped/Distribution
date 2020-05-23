@@ -19,14 +19,14 @@ object ProduceRequest {
   def apply(
     messages: js.Any,
     topic: String,
-    attributes: Int | Double = null,
+    attributes: js.UndefOr[Double] = js.undefined,
     key: String | Buffer = null,
-    partition: Int | Double = null
+    partition: js.UndefOr[Double] = js.undefined
   ): ProduceRequest = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
+    if (!js.isUndefined(partition)) __obj.updateDynamic("partition")(partition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProduceRequest]
   }
 }

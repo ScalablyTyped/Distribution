@@ -16,8 +16,7 @@ trait MutationStoreValue extends js.Object {
 object MutationStoreValue {
   @scala.inline
   def apply(loading: Boolean, mutation: DocumentNode, variables: js.Object, error: Error = null): MutationStoreValue = {
-    val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any], mutation = mutation.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any], mutation = mutation.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationStoreValue]
   }
 }

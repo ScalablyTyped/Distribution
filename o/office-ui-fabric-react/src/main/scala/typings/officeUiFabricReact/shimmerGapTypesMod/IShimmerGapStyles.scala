@@ -14,9 +14,9 @@ trait IShimmerGapStyles extends js.Object {
 
 object IShimmerGapStyles {
   @scala.inline
-  def apply(root: IStyle = null): IShimmerGapStyles = {
+  def apply(root: js.UndefOr[Null | IStyle] = js.undefined): IShimmerGapStyles = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerGapStyles]
   }
 }

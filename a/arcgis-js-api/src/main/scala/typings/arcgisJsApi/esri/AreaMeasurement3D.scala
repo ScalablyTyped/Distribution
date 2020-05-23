@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-feet`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-inches`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-kilometers`
@@ -52,8 +51,4 @@ trait AreaMeasurement3D extends Widget_ {
     */
   var viewModel: AreaMeasurement3DViewModel = js.native
 }
-
-@JSGlobal("__esri.AreaMeasurement3D")
-@js.native
-object AreaMeasurement3D extends TopLevel[AreaMeasurement3DConstructor]
 

@@ -16,9 +16,9 @@ object stringwriterMod extends js.Object {
     var _newLine: js.Any = js.native
     var _text: js.Any = js.native
     var flushNewLine: js.Any = js.native
-    val size: Double = js.native
     def dedent(): Unit = js.native
     def indent(): Unit = js.native
+    def size: Double = js.native
     def write(): Unit = js.native
     def write(text: String): Unit = js.native
     def writeln(): Unit = js.native

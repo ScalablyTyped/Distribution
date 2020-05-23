@@ -15,7 +15,7 @@ trait DescribeThingResponse extends js.Object {
     */
   var billingGroupName: js.UndefOr[BillingGroupName] = js.native
   /**
-    * The default client ID.
+    * The default MQTT client ID. For a typical device, the thing name is also used as the default MQTT client ID. Although we don’t require a mapping between a thing's registry name and its use of MQTT client IDs, certificates, or shadow state, we recommend that you choose a thing name and use it as the MQTT client ID for the registry and the Device Shadow service. This lets you better organize your AWS IoT fleet without removing the flexibility of the underlying device certificate model or shadows.
     */
   var defaultClientId: js.UndefOr[ClientId] = js.native
   /**
@@ -50,7 +50,7 @@ object DescribeThingResponse {
     thingId: ThingId = null,
     thingName: ThingName = null,
     thingTypeName: ThingTypeName = null,
-    version: Int | Double = null
+    version: js.UndefOr[Version] = js.undefined
   ): DescribeThingResponse = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
@@ -60,7 +60,7 @@ object DescribeThingResponse {
     if (thingId != null) __obj.updateDynamic("thingId")(thingId.asInstanceOf[js.Any])
     if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])
     if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThingResponse]
   }
 }

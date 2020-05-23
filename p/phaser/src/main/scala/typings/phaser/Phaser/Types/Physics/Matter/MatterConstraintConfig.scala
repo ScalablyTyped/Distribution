@@ -64,34 +64,34 @@ trait MatterConstraintConfig extends js.Object {
 object MatterConstraintConfig {
   @scala.inline
   def apply(
-    angleA: Int | Double = null,
-    angleB: Int | Double = null,
-    angularStiffness: Int | Double = null,
+    angleA: js.UndefOr[Double] = js.undefined,
+    angleB: js.UndefOr[Double] = js.undefined,
+    angularStiffness: js.UndefOr[Double] = js.undefined,
     bodyA: BodyType = null,
     bodyB: BodyType = null,
-    damping: Int | Double = null,
+    damping: js.UndefOr[Double] = js.undefined,
     label: String = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     plugin: js.Any = null,
     pointA: Vector2Like = null,
     pointB: Vector2Like = null,
     render: MatterConstraintRenderConfig = null,
-    stiffness: Int | Double = null
+    stiffness: js.UndefOr[Double] = js.undefined
   ): MatterConstraintConfig = {
     val __obj = js.Dynamic.literal()
-    if (angleA != null) __obj.updateDynamic("angleA")(angleA.asInstanceOf[js.Any])
-    if (angleB != null) __obj.updateDynamic("angleB")(angleB.asInstanceOf[js.Any])
-    if (angularStiffness != null) __obj.updateDynamic("angularStiffness")(angularStiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(angleA)) __obj.updateDynamic("angleA")(angleA.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(angleB)) __obj.updateDynamic("angleB")(angleB.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(angularStiffness)) __obj.updateDynamic("angularStiffness")(angularStiffness.get.asInstanceOf[js.Any])
     if (bodyA != null) __obj.updateDynamic("bodyA")(bodyA.asInstanceOf[js.Any])
     if (bodyB != null) __obj.updateDynamic("bodyB")(bodyB.asInstanceOf[js.Any])
-    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
+    if (!js.isUndefined(damping)) __obj.updateDynamic("damping")(damping.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
     if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
     if (pointA != null) __obj.updateDynamic("pointA")(pointA.asInstanceOf[js.Any])
     if (pointB != null) __obj.updateDynamic("pointB")(pointB.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(stiffness)) __obj.updateDynamic("stiffness")(stiffness.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterConstraintConfig]
   }
 }

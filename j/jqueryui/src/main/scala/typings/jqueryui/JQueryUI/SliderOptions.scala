@@ -31,15 +31,15 @@ object SliderOptions {
     create: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     highlight: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     orientation: String = null,
     range: js.Any = null,
     slide: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
     start: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     stop: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     values: js.Array[Double] = null
   ): SliderOptions = {
     val __obj = js.Dynamic.literal()
@@ -47,17 +47,17 @@ object SliderOptions {
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction2(slide))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOptions]
   }

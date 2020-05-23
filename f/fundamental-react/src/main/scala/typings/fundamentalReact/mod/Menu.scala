@@ -1,10 +1,10 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.FunctionComponentMenuGrou
-import typings.fundamentalReact.FunctionComponentMenuItem
-import typings.fundamentalReact.FunctionComponentMenuList
-import typings.fundamentalReact.PartialMenuProps
-import typings.fundamentalReact.WeakValidationMapMenuProp
+import typings.fundamentalReact.anon.FunctionComponentMenuGrou
+import typings.fundamentalReact.anon.FunctionComponentMenuItem
+import typings.fundamentalReact.anon.FunctionComponentMenuList
+import typings.fundamentalReact.anon.PartialMenuProps
+import typings.fundamentalReact.anon.WeakValidationMapMenuProp
 import typings.fundamentalReact.menuMod.MenuProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement

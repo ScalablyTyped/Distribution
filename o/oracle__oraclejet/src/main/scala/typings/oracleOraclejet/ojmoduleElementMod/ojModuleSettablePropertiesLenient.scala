@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojmoduleElementMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonCleanupMode
+import typings.oracleOraclejet.anon.CleanupMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 trait ojModuleSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
   var animation: js.UndefOr[js.Object] = js.undefined
-  var config: js.UndefOr[AnonCleanupMode] = js.undefined
+  var config: js.UndefOr[CleanupMode] = js.undefined
 }
 
 object ojModuleSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     animation: js.Object = null,
-    config: AnonCleanupMode = null
+    config: CleanupMode = null
   ): ojModuleSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

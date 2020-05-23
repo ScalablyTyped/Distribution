@@ -24,18 +24,18 @@ trait IconComponentProps extends js.Object {
 object IconComponentProps {
   @scala.inline
   def apply(
-    borderRadius: Int | Double = null,
+    borderRadius: js.UndefOr[Double] = js.undefined,
     iconBgStyle: CSSProperties = null,
     logoFillColor: String = null,
     round: js.UndefOr[Boolean] = js.undefined,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): IconComponentProps = {
     val __obj = js.Dynamic.literal()
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
     if (iconBgStyle != null) __obj.updateDynamic("iconBgStyle")(iconBgStyle.asInstanceOf[js.Any])
     if (logoFillColor != null) __obj.updateDynamic("logoFillColor")(logoFillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconComponentProps]
   }
 }

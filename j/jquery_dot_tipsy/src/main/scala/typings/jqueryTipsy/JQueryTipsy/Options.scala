@@ -78,28 +78,28 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    delayIn: Int | Double = null,
-    delayOut: Int | Double = null,
+    delayIn: js.UndefOr[Double] = js.undefined,
+    delayOut: js.UndefOr[Double] = js.undefined,
     fade: js.UndefOr[Boolean] = js.undefined,
     fallback: String = null,
     gravity: js.Any = null,
     html: js.UndefOr[Boolean] = js.undefined,
     live: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
-    opacity: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
     title: js.Any = null,
     trigger: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (delayIn != null) __obj.updateDynamic("delayIn")(delayIn.asInstanceOf[js.Any])
-    if (delayOut != null) __obj.updateDynamic("delayOut")(delayOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayIn)) __obj.updateDynamic("delayIn")(delayIn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayOut)) __obj.updateDynamic("delayOut")(delayOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.get.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

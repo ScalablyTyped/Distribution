@@ -39,22 +39,22 @@ trait DomainMetadataResult extends js.Object {
 object DomainMetadataResult {
   @scala.inline
   def apply(
-    AttributeNameCount: Int | Double = null,
-    AttributeNamesSizeBytes: Int | Double = null,
-    AttributeValueCount: Int | Double = null,
-    AttributeValuesSizeBytes: Int | Double = null,
-    ItemCount: Int | Double = null,
-    ItemNamesSizeBytes: Int | Double = null,
-    Timestamp: Int | Double = null
+    AttributeNameCount: js.UndefOr[Integer] = js.undefined,
+    AttributeNamesSizeBytes: js.UndefOr[Long] = js.undefined,
+    AttributeValueCount: js.UndefOr[Integer] = js.undefined,
+    AttributeValuesSizeBytes: js.UndefOr[Long] = js.undefined,
+    ItemCount: js.UndefOr[Integer] = js.undefined,
+    ItemNamesSizeBytes: js.UndefOr[Long] = js.undefined,
+    Timestamp: js.UndefOr[Integer] = js.undefined
   ): DomainMetadataResult = {
     val __obj = js.Dynamic.literal()
-    if (AttributeNameCount != null) __obj.updateDynamic("AttributeNameCount")(AttributeNameCount.asInstanceOf[js.Any])
-    if (AttributeNamesSizeBytes != null) __obj.updateDynamic("AttributeNamesSizeBytes")(AttributeNamesSizeBytes.asInstanceOf[js.Any])
-    if (AttributeValueCount != null) __obj.updateDynamic("AttributeValueCount")(AttributeValueCount.asInstanceOf[js.Any])
-    if (AttributeValuesSizeBytes != null) __obj.updateDynamic("AttributeValuesSizeBytes")(AttributeValuesSizeBytes.asInstanceOf[js.Any])
-    if (ItemCount != null) __obj.updateDynamic("ItemCount")(ItemCount.asInstanceOf[js.Any])
-    if (ItemNamesSizeBytes != null) __obj.updateDynamic("ItemNamesSizeBytes")(ItemNamesSizeBytes.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(AttributeNameCount)) __obj.updateDynamic("AttributeNameCount")(AttributeNameCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AttributeNamesSizeBytes)) __obj.updateDynamic("AttributeNamesSizeBytes")(AttributeNamesSizeBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AttributeValueCount)) __obj.updateDynamic("AttributeValueCount")(AttributeValueCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AttributeValuesSizeBytes)) __obj.updateDynamic("AttributeValuesSizeBytes")(AttributeValuesSizeBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ItemNamesSizeBytes)) __obj.updateDynamic("ItemNamesSizeBytes")(ItemNamesSizeBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainMetadataResult]
   }
 }

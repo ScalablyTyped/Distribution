@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,35 +53,6 @@ object TARGETS extends js.Object {
   
   @js.native
   sealed trait TEXTURE_CUBE_MAP_POSITIVE_Z extends TARGETS
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TARGETS with Double] = js.native
-  /* 0 */ @js.native
-  object TEXTURE_2D extends TopLevel[TEXTURE_2D with Double]
-  
-  /* 2 */ @js.native
-  object TEXTURE_2D_ARRAY extends TopLevel[TEXTURE_2D_ARRAY with Double]
-  
-  /* 1 */ @js.native
-  object TEXTURE_CUBE_MAP extends TopLevel[TEXTURE_CUBE_MAP with Double]
-  
-  /* 4 */ @js.native
-  object TEXTURE_CUBE_MAP_NEGATIVE_X extends TopLevel[TEXTURE_CUBE_MAP_NEGATIVE_X with Double]
-  
-  /* 6 */ @js.native
-  object TEXTURE_CUBE_MAP_NEGATIVE_Y extends TopLevel[TEXTURE_CUBE_MAP_NEGATIVE_Y with Double]
-  
-  /* 8 */ @js.native
-  object TEXTURE_CUBE_MAP_NEGATIVE_Z extends TopLevel[TEXTURE_CUBE_MAP_NEGATIVE_Z with Double]
-  
-  /* 3 */ @js.native
-  object TEXTURE_CUBE_MAP_POSITIVE_X extends TopLevel[TEXTURE_CUBE_MAP_POSITIVE_X with Double]
-  
-  /* 5 */ @js.native
-  object TEXTURE_CUBE_MAP_POSITIVE_Y extends TopLevel[TEXTURE_CUBE_MAP_POSITIVE_Y with Double]
-  
-  /* 7 */ @js.native
-  object TEXTURE_CUBE_MAP_POSITIVE_Z extends TopLevel[TEXTURE_CUBE_MAP_POSITIVE_Z with Double]
   
 }
 

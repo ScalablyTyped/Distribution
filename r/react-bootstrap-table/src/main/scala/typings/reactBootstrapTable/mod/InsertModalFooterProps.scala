@@ -1,63 +1,63 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InsertModalFooterProps extends js.Object {
   /**
-  	 * Callback function to call prior to closing the Insert Modal window.
-  	 */
-  var beforeClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[_, Event_], Unit]] = js.undefined
+    * Callback function to call prior to closing the Insert Modal window.
+    */
+  var beforeClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[_, Event], Unit]] = js.undefined
   /**
-  	 * Callback function to be called prior to saving the new row.
-  	 */
-  var beforeSave: js.UndefOr[js.Function1[/* e */ SyntheticEvent[_, Event_], Unit]] = js.undefined
+    * Callback function to be called prior to saving the new row.
+    */
+  var beforeSave: js.UndefOr[js.Function1[/* e */ SyntheticEvent[_, Event], Unit]] = js.undefined
   /**
-  	 * Header class name.
-  	 */
+    * Header class name.
+    */
   var className: js.UndefOr[String] = js.undefined
   /**
-  	 * Custom class name for the close button.
-  	 */
+    * Custom class name for the close button.
+    */
   var closeBtnClass: js.UndefOr[String] = js.undefined
   /**
-  	 * Bootstrap css class name for the close button, example: 'btn-warning'
-  	 */
+    * Bootstrap css class name for the close button, example: 'btn-warning'
+    */
   var closeBtnContextual: js.UndefOr[String] = js.undefined
   /**
-  	 * Text to display on the Close button
-  	 */
+    * Text to display on the Close button
+    */
   var closeBtnText: js.UndefOr[String] = js.undefined
   /**
-  	 * Callback function to call to close the Insert Modal window.
-  	 */
+    * Callback function to call to close the Insert Modal window.
+    */
   var onModalClose: js.UndefOr[js.Function1[/* closeModal */ js.Function0[Unit], Unit]] = js.undefined
   /**
-  	 * Callback function to be called to save the new row.
-  	 */
+    * Callback function to be called to save the new row.
+    */
   var onSave: js.UndefOr[js.Function1[/* save */ js.Function0[Unit], Unit]] = js.undefined
   /**
-  	 * Custom class name for the save button.
-  	 */
+    * Custom class name for the save button.
+    */
   var saveBtnClass: js.UndefOr[String] = js.undefined
   /**
-  	 * Bootstrap css class name for the save button, example: 'btn-success'
-  	 */
+    * Bootstrap css class name for the save button, example: 'btn-success'
+    */
   var saveBtnContextual: js.UndefOr[String] = js.undefined
   /**
-  	 * Text to display on the Save button
-  	 */
+    * Text to display on the Save button
+    */
   var saveBtnText: js.UndefOr[String] = js.undefined
 }
 
 object InsertModalFooterProps {
   @scala.inline
   def apply(
-    beforeClose: /* e */ SyntheticEvent[_, Event_] => Unit = null,
-    beforeSave: /* e */ SyntheticEvent[_, Event_] => Unit = null,
+    beforeClose: /* e */ SyntheticEvent[_, Event] => Unit = null,
+    beforeSave: /* e */ SyntheticEvent[_, Event] => Unit = null,
     className: String = null,
     closeBtnClass: String = null,
     closeBtnContextual: String = null,

@@ -29,10 +29,7 @@ object Event {
     srcElement: EventTarget = null,
     target: EventTarget = null
   ): Event = {
-    val __obj = js.Dynamic.literal(composedPath = js.Any.fromFunction0(composedPath))
-    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
-    if (srcElement != null) __obj.updateDynamic("srcElement")(srcElement.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(composedPath = js.Any.fromFunction0(composedPath), currentTarget = currentTarget.asInstanceOf[js.Any], srcElement = srcElement.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

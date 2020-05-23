@@ -9,61 +9,16 @@ import scala.scalajs.js.annotation._
 object updateMethodSignature extends js.Object {
   def apply(
     node: MethodSignature,
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
     parameters: NodeArray[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[TypeNode],
     name: PropertyName
   ): MethodSignature = js.native
   def apply(
     node: MethodSignature,
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
     parameters: NodeArray[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    questionToken: QuestionToken
-  ): MethodSignature = js.native
-  def apply(
-    node: MethodSignature,
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: NodeArray[ParameterDeclaration],
-    `type`: TypeNode,
-    name: PropertyName
-  ): MethodSignature = js.native
-  def apply(
-    node: MethodSignature,
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: NodeArray[ParameterDeclaration],
-    `type`: TypeNode,
-    name: PropertyName,
-    questionToken: QuestionToken
-  ): MethodSignature = js.native
-  def apply(
-    node: MethodSignature,
-    typeParameters: NodeArray[TypeParameterDeclaration],
-    parameters: NodeArray[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: PropertyName
-  ): MethodSignature = js.native
-  def apply(
-    node: MethodSignature,
-    typeParameters: NodeArray[TypeParameterDeclaration],
-    parameters: NodeArray[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    questionToken: QuestionToken
-  ): MethodSignature = js.native
-  def apply(
-    node: MethodSignature,
-    typeParameters: NodeArray[TypeParameterDeclaration],
-    parameters: NodeArray[ParameterDeclaration],
-    `type`: TypeNode,
-    name: PropertyName
-  ): MethodSignature = js.native
-  def apply(
-    node: MethodSignature,
-    typeParameters: NodeArray[TypeParameterDeclaration],
-    parameters: NodeArray[ParameterDeclaration],
-    `type`: TypeNode,
+    `type`: js.UndefOr[TypeNode],
     name: PropertyName,
     questionToken: QuestionToken
   ): MethodSignature = js.native

@@ -18,10 +18,10 @@ trait PendingLogs extends js.Object {
 
 object PendingLogs {
   @scala.inline
-  def apply(Audit: js.UndefOr[Boolean] = js.undefined, General: js.UndefOr[Boolean] = js.undefined): PendingLogs = {
+  def apply(Audit: js.UndefOr[boolean] = js.undefined, General: js.UndefOr[boolean] = js.undefined): PendingLogs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Audit)) __obj.updateDynamic("Audit")(Audit.asInstanceOf[js.Any])
-    if (!js.isUndefined(General)) __obj.updateDynamic("General")(General.asInstanceOf[js.Any])
+    if (!js.isUndefined(Audit)) __obj.updateDynamic("Audit")(Audit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(General)) __obj.updateDynamic("General")(General.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingLogs]
   }
 }

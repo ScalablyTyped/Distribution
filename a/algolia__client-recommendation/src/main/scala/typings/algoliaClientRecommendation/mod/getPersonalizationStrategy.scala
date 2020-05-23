@@ -1,6 +1,6 @@
 package typings.algoliaClientRecommendation.mod
 
-import typings.algoliaClientRecommendation.ReadonlyPromiseGetPersona
+import typings.algoliaClientRecommendation.anon.ReadonlyPromiseGetPersona
 import typings.algoliaTransporter.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

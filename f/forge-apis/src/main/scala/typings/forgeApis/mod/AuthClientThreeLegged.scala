@@ -1,5 +1,6 @@
 package typings.forgeApis.mod
 
+import typings.forgeApis.anon.Refreshtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +15,9 @@ class AuthClientThreeLegged protected () extends AuthClient {
     scopes: js.Array[Scope],
     autoRefresh: Boolean
   ) = this()
-  def generateAuthUrl(): String = js.native
+  def generateAuthUrl(state: String): String = js.native
   def getToken(code: String): js.Promise[AuthToken] = js.native
-  def refreshToken(credentials: AuthToken): js.Promise[AuthToken] = js.native
+  def refreshToken(credentials: Refreshtoken): js.Promise[AuthToken] = js.native
+  def refreshToken(credentials: Refreshtoken, scope: js.Array[Scope]): js.Promise[AuthToken] = js.native
 }
 

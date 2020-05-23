@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "snyk-docker-plugin" : "3.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "snyk-docker-plugin" : "3.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -12,10 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object message extends js.Object {
   @js.native
-  /**
-    * Constructor for a new ControlMessageProcessor
-    */
-  class ControlMessageProcessor () extends MessageProcessor {
+  trait ControlMessageProcessor extends MessageProcessor {
     /**
       * Check Messages and update controls with messages
       */
@@ -23,19 +20,10 @@ object message extends js.Object {
   }
   
   @js.native
-  class Message protected () extends Object {
-    /**
-      * Constructor for a new Message.
-      * @param mParameters (optional) a map which contains the following parameter properties:
-      */
-    def this(mParameters: js.Any) = this()
-  }
+  trait Message extends Object
   
   @js.native
-  /**
-    * Constructor for a new MessageManager.
-    */
-  class MessageManager () extends EventProvider {
+  trait MessageManager extends EventProvider {
     def addMessages(vMessages: js.Array[Message]): Unit = js.native
     /**
       * Add messages to MessageManager
@@ -57,7 +45,7 @@ object message extends js.Object {
       * object
       * @param oObject The sap.ui.base.ManageObject
       * @param bHandleValidation Handle validation for this object. If set to true validation/parse events
-      * creates Messages and cancel event.					If set to false only the event will be canceled, but no
+      * creates Messages and cancel event.                    If set to false only the event will be canceled, but no
       * messages will be created
       */
     def registerObject(oObject: ManagedObject, bHandleValidation: Boolean): Unit = js.native
@@ -84,10 +72,7 @@ object message extends js.Object {
   }
   
   @js.native
-  /**
-    * Abstract MessageParser class to be inherited in back-end specific implementations.
-    */
-  abstract class MessageParser () extends Object {
+  trait MessageParser extends Object {
     /**
       * Returns the registered processor on which the events for message handling can be fired
       * @returns The currently set MessageProcessor or null if none is set
@@ -110,10 +95,7 @@ object message extends js.Object {
   }
   
   @js.native
-  /**
-    * Constructor for a new MessageProcessor
-    */
-  abstract class MessageProcessor () extends EventProvider {
+  trait MessageProcessor extends EventProvider {
     /**
       * Attach event-handler <code>fnFunction</code> to the 'messageChange' event of this
       * <code>sap.ui.core.message.MessageProcessor</code>.<br/>

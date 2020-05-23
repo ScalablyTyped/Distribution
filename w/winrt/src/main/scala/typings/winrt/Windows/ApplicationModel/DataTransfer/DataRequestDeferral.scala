@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequestDeferral")
-@js.native
-class DataRequestDeferral () extends IDataRequestDeferral {
-  /* CompleteClass */
-  override def complete(): Unit = js.native
+trait DataRequestDeferral extends IDataRequestDeferral
+
+object DataRequestDeferral {
+  @scala.inline
+  def apply(complete: () => Unit): DataRequestDeferral = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
+    __obj.asInstanceOf[DataRequestDeferral]
+  }
 }
 

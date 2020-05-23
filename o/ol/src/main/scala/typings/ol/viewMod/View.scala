@@ -61,15 +61,12 @@ trait View
   def getCenterInternal(): Coordinate = js.native
   def getConstrainResolution(): Boolean = js.native
   def getConstrainedCenter(): Coordinate = js.native
-  def getConstrainedCenter(targetCenter: js.UndefOr[scala.Nothing], opt_targetResolution: Double): Coordinate = js.native
   def getConstrainedCenter(targetCenter: Coordinate): Coordinate = js.native
   def getConstrainedCenter(targetCenter: Coordinate, opt_targetResolution: Double): Coordinate = js.native
   def getConstrainedResolution(): Double = js.native
-  def getConstrainedResolution(targetResolution: js.UndefOr[scala.Nothing], opt_direction: Double): Double = js.native
   def getConstrainedResolution(targetResolution: Double): Double = js.native
   def getConstrainedResolution(targetResolution: Double, opt_direction: Double): Double = js.native
   def getConstrainedZoom(): Double = js.native
-  def getConstrainedZoom(targetZoom: js.UndefOr[scala.Nothing], opt_direction: Double): Double = js.native
   def getConstrainedZoom(targetZoom: Double): Double = js.native
   def getConstrainedZoom(targetZoom: Double, opt_direction: Double): Double = js.native
   def getConstraints(): Constraints = js.native

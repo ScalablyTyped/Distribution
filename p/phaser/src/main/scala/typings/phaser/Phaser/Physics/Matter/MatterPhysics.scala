@@ -79,14 +79,8 @@ import scala.scalajs.js.annotation._
   * 
   * You can find details, documentation and examples on the Matter JS website: https://brm.io/matter-js/
   */
-@JSGlobal("Phaser.Physics.Matter.MatterPhysics")
 @js.native
-class MatterPhysics protected () extends js.Object {
-  /**
-    * 
-    * @param scene The Phaser Scene that owns this Matter Physics instance.
-    */
-  def this(scene: Scene) = this()
+trait MatterPhysics extends js.Object {
   /**
     * An instance of the Matter Factory. This class provides lots of functions for creating a
     * wide variety of physics objects and adds them automatically to the Matter World.

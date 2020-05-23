@@ -1,7 +1,7 @@
 package typings.dexie.mod.Dexie
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dexie.AnonKey
+import typings.dexie.anon.PrimaryKey
 import typings.dexie.dexieStrings.creating
 import typings.dexie.dexieStrings.deleting
 import typings.dexie.dexieStrings.reading
@@ -30,7 +30,7 @@ trait Table[T, Key] extends js.Object {
   def count(): Promise[Double] = js.native
   def count[R](thenShortcut: ThenShortcut[Double, R]): Promise[R] = js.native
   def delete(key: Key): Promise[Unit] = js.native
-  def each(callback: js.Function2[/* obj */ T, /* cursor */ AnonKey[Key], _]): Promise[Unit] = js.native
+  def each(callback: js.Function2[/* obj */ T, /* cursor */ PrimaryKey[Key], _]): Promise[Unit] = js.native
   def filter(fn: js.Function1[/* obj */ T, Boolean]): Collection[T, Key] = js.native
   def get(equalityCriterias: StringDictionary[IndexableType]): Promise[js.UndefOr[T]] = js.native
   def get(key: Key): Promise[js.UndefOr[T]] = js.native

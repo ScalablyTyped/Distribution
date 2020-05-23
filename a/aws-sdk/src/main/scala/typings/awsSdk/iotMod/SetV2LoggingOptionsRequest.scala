@@ -24,12 +24,12 @@ object SetV2LoggingOptionsRequest {
   @scala.inline
   def apply(
     defaultLogLevel: LogLevel = null,
-    disableAllLogs: js.UndefOr[scala.Boolean] = js.undefined,
+    disableAllLogs: js.UndefOr[DisableAllLogs] = js.undefined,
     roleArn: AwsArn = null
   ): SetV2LoggingOptionsRequest = {
     val __obj = js.Dynamic.literal()
     if (defaultLogLevel != null) __obj.updateDynamic("defaultLogLevel")(defaultLogLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAllLogs)) __obj.updateDynamic("disableAllLogs")(disableAllLogs.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAllLogs)) __obj.updateDynamic("disableAllLogs")(disableAllLogs.get.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetV2LoggingOptionsRequest]
   }

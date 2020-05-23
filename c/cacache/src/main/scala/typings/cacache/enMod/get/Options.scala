@@ -12,11 +12,15 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(integrity: String = null, memoize: js.UndefOr[Boolean] = js.undefined, size: Int | Double = null): Options = {
+  def apply(
+    integrity: String = null,
+    memoize: js.UndefOr[Boolean] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined
+  ): Options = {
     val __obj = js.Dynamic.literal()
     if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(memoize)) __obj.updateDynamic("memoize")(memoize.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoize)) __obj.updateDynamic("memoize")(memoize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

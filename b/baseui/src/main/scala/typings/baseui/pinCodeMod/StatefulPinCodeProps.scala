@@ -1,6 +1,6 @@
 package typings.baseui.pinCodeMod
 
-import typings.baseui.AnonValues
+import typings.baseui.anon.Values
 import typings.baseui.baseuiStrings.both
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.compact
@@ -46,7 +46,7 @@ trait StatefulPinCodeProps extends js.Object {
   var min: js.UndefOr[Double] = js.native
   var name: js.UndefOr[String] = js.native
   var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
-  var onChange: js.UndefOr[js.Function1[/* args */ AnonValues, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* args */ Values, Unit]] = js.native
   var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
   var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
   var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native

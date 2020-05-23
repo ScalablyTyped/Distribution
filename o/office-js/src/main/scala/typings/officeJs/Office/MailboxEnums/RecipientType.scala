@@ -1,6 +1,5 @@
 package typings.officeJs.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,20 +42,6 @@ object RecipientType extends js.Object {
     */
   @js.native
   sealed trait User extends RecipientType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RecipientType with String] = js.native
-  /* "distributionList" */ @js.native
-  object DistributionList extends TopLevel[DistributionList with String]
-  
-  /* "externalUser" */ @js.native
-  object ExternalUser extends TopLevel[ExternalUser with String]
-  
-  /* "other" */ @js.native
-  object Other extends TopLevel[Other with String]
-  
-  /* "user" */ @js.native
-  object User extends TopLevel[User with String]
   
 }
 

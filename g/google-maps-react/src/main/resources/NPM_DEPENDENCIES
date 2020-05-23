@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "google-maps-react" : "2.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "google-maps-react" : "2.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

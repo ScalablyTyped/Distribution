@@ -3,9 +3,9 @@ package typings.urijs.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
-import typings.urijs.AnonHostname
-import typings.urijs.AnonPassword
-import typings.urijs.AnonPort
+import typings.urijs.anon.Hostname
+import typings.urijs.anon.Password
+import typings.urijs.anon.Port
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,11 +30,11 @@ object ^ extends TopLevel[
   def addQuery(data: js.Object, prop: String, value: String): js.Object = js.native
   def addQuery(data: js.Object, qryObj: js.Object): js.Object = js.native
   def build(parts: URIOptions): String = js.native
-  def buildAuthority(parts: AnonHostname): String = js.native
-  def buildHost(parts: AnonPort): String = js.native
+  def buildAuthority(parts: Hostname): String = js.native
+  def buildHost(parts: Port): String = js.native
   def buildQuery(qry: js.Object): String = js.native
   def buildQuery(qry: js.Object, duplicates: Boolean): String = js.native
-  def buildUserinfo(parts: AnonPassword): String = js.native
+  def buildUserinfo(parts: Password): String = js.native
   def commonPath(path1: String, path2: String): String = js.native
   def decode(str: String): String = js.native
   def decodeQuery(qry: String): String = js.native
@@ -44,10 +44,10 @@ object ^ extends TopLevel[
   def iso8859(): Unit = js.native
   def joinPaths(paths: (String | URI)*): URI = js.native
   def parse(url: String): Parts = js.native
-  def parseAuthority(url: String, parts: AnonHostname): String = js.native
-  def parseHost(url: String, parts: AnonPort): String = js.native
+  def parseAuthority(url: String, parts: Hostname): String = js.native
+  def parseHost(url: String, parts: Port): String = js.native
   def parseQuery(url: String): js.Object = js.native
-  def parseUserinfo(url: String, parts: AnonPassword): String = js.native
+  def parseUserinfo(url: String, parts: Password): String = js.native
   def removeQuery(data: js.Object, prop: String, value: String): js.Object = js.native
   def removeQuery(data: js.Object, props: js.Array[String]): js.Object = js.native
   def removeQuery(data: js.Object, props: js.Object): js.Object = js.native

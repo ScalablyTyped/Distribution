@@ -22,9 +22,9 @@ trait ListMultiplexProgramsRequest extends js.Object {
 
 object ListMultiplexProgramsRequest {
   @scala.inline
-  def apply(MultiplexId: string, MaxResults: Int | Double = null, NextToken: string = null): ListMultiplexProgramsRequest = {
+  def apply(MultiplexId: string, MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: string = null): ListMultiplexProgramsRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMultiplexProgramsRequest]
   }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.ListBox")
 @js.native
-class ListBox protected () extends js.Object {
+trait ListBox extends js.Object {
   @JSName("Access.ListBox_typekey")
   var AccessDotListBox_typekey: ListBox = js.native
   var AddColon: Boolean = js.native

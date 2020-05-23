@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.SerialCommunication
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object SerialError extends js.Object {
   /** The application tried to transmit a character, but the output buffer was full. */
   @js.native
   sealed trait transmitFull extends SerialError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SerialError with Double] = js.native
-  /* 1 */ @js.native
-  object bufferOverrun extends TopLevel[bufferOverrun with Double]
-  
-  /* 0 */ @js.native
-  object frame extends TopLevel[frame with Double]
-  
-  /* 2 */ @js.native
-  object receiveFull extends TopLevel[receiveFull with Double]
-  
-  /* 3 */ @js.native
-  object receiveParity extends TopLevel[receiveParity with Double]
-  
-  /* 4 */ @js.native
-  object transmitFull extends TopLevel[transmitFull with Double]
   
 }
 

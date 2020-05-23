@@ -38,7 +38,7 @@ trait BaseLegendLayout extends js.Object {
 object BaseLegendLayout {
   @scala.inline
   def apply(
-    anchor: TitleAnchor | SignalRef = null,
+    anchor: js.UndefOr[Null | TitleAnchor | SignalRef] = js.undefined,
     bounds: LayoutBounds = null,
     center: Boolean | SignalRef = null,
     direction: Orientation | SignalRef = null,
@@ -46,7 +46,7 @@ object BaseLegendLayout {
     offset: Double | SignalRef = null
   ): BaseLegendLayout = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])

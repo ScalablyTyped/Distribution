@@ -24,7 +24,7 @@ object NetworksAddPeeringRequest {
     peerNetwork: String = null
   ): NetworksAddPeeringRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (peerNetwork != null) __obj.updateDynamic("peerNetwork")(peerNetwork.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworksAddPeeringRequest]

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object UiccAppRecordKind extends js.Object {
   /** An unknown app record kind. For example, a UICC app that is enumerable by the modem, but is not an app used for cellular registration, would be reported as Unknown. */
   @js.native
   sealed trait unknown extends UiccAppRecordKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UiccAppRecordKind with Double] = js.native
-  /* 2 */ @js.native
-  object recordOriented extends TopLevel[recordOriented with Double]
-  
-  /* 1 */ @js.native
-  object transparent extends TopLevel[transparent with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

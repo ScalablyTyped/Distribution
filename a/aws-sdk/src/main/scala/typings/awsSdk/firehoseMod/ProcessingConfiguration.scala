@@ -18,9 +18,9 @@ trait ProcessingConfiguration extends js.Object {
 
 object ProcessingConfiguration {
   @scala.inline
-  def apply(Enabled: js.UndefOr[Boolean] = js.undefined, Processors: ProcessorList = null): ProcessingConfiguration = {
+  def apply(Enabled: js.UndefOr[BooleanObject] = js.undefined, Processors: ProcessorList = null): ProcessingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (Processors != null) __obj.updateDynamic("Processors")(Processors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessingConfiguration]
   }

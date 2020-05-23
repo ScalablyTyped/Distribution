@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait FilterDropDownOpenedEventUIParam extends js.Object {
   /**
-  	 * A reference to the drop down.
-  	 */
+    * A reference to the drop down.
+    */
   var dropDownElement: js.UndefOr[String] = js.undefined
   /**
-  	 * A reference to the hierarchy.
-  	 */
+    * A reference to the hierarchy.
+    */
   var hierarchy: js.UndefOr[js.Any] = js.undefined
 }
 

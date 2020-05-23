@@ -1,37 +1,37 @@
 package typings.gapiClientAdsensehost.gapi.client.adsensehost
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAdsensehost.AnonAdClientId
-import typings.gapiClientAdsensehost.AnonCustomChannelId
-import typings.gapiClientAdsensehost.AnonMaxResults
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientAdsensehost.anon.AdClientId
+import typings.gapiClientAdsensehost.anon.CustomChannelId
+import typings.gapiClientAdsensehost.anon.MaxResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomchannelsResource extends js.Object {
   /** Delete a specific custom channel from the host AdSense account. */
-  def delete(request: AnonCustomChannelId): Request_[CustomChannel]
+  def delete(request: CustomChannelId): Request[CustomChannel]
   /** Get a specific custom channel from the host AdSense account. */
-  def get(request: AnonCustomChannelId): Request_[CustomChannel]
+  def get(request: CustomChannelId): Request[CustomChannel]
   /** Add a new custom channel to the host AdSense account. */
-  def insert(request: AnonAdClientId): Request_[CustomChannel]
+  def insert(request: AdClientId): Request[CustomChannel]
   /** List all host custom channels in this AdSense account. */
-  def list(request: AnonMaxResults): Request_[CustomChannels]
+  def list(request: MaxResults): Request[CustomChannels]
   /** Update a custom channel in the host AdSense account. This method supports patch semantics. */
-  def patch(request: AnonCustomChannelId): Request_[CustomChannel]
+  def patch(request: CustomChannelId): Request[CustomChannel]
   /** Update a custom channel in the host AdSense account. */
-  def update(request: AnonAdClientId): Request_[CustomChannel]
+  def update(request: AdClientId): Request[CustomChannel]
 }
 
 object CustomchannelsResource {
   @scala.inline
   def apply(
-    delete: AnonCustomChannelId => Request_[CustomChannel],
-    get: AnonCustomChannelId => Request_[CustomChannel],
-    insert: AnonAdClientId => Request_[CustomChannel],
-    list: AnonMaxResults => Request_[CustomChannels],
-    patch: AnonCustomChannelId => Request_[CustomChannel],
-    update: AnonAdClientId => Request_[CustomChannel]
+    delete: CustomChannelId => Request[CustomChannel],
+    get: CustomChannelId => Request[CustomChannel],
+    insert: AdClientId => Request[CustomChannel],
+    list: MaxResults => Request[CustomChannels],
+    patch: CustomChannelId => Request[CustomChannel],
+    update: AdClientId => Request[CustomChannel]
   ): CustomchannelsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[CustomchannelsResource]

@@ -13,9 +13,8 @@ trait EmptyLoginStatus extends js.Object {
 
 object EmptyLoginStatus {
   @scala.inline
-  def apply(session: Null, status: unknown, settings: js.UndefOr[scala.Nothing] = js.undefined): EmptyLoginStatus = {
+  def apply(session: Null, status: unknown): EmptyLoginStatus = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(settings)) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmptyLoginStatus]
   }
 }

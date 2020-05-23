@@ -1,6 +1,6 @@
 package typings.fundamentalReact.selectMod
 
-import typings.fundamentalReact.AnonState
+import typings.fundamentalReact.anon.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait SelectProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
-  var validationState: js.UndefOr[AnonState] = js.undefined
+  var validationState: js.UndefOr[State] = js.undefined
 }
 
 object SelectProps {
@@ -26,13 +26,13 @@ object SelectProps {
     id: String = null,
     onClick: /* repeated */ js.Any => _ = null,
     placeholder: String = null,
-    validationState: AnonState = null
+    validationState: State = null
   ): SelectProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])

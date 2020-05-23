@@ -18,6 +18,7 @@ trait CreatePackagingConfigurationRequest extends js.Object {
     * The ID of a PackagingGroup.
     */
   var PackagingGroupId: string = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.native
 }
 
 object CreatePackagingConfigurationRequest {
@@ -28,13 +29,15 @@ object CreatePackagingConfigurationRequest {
     CmafPackage: CmafPackage = null,
     DashPackage: DashPackage = null,
     HlsPackage: HlsPackage = null,
-    MssPackage: MssPackage = null
+    MssPackage: MssPackage = null,
+    Tags: Tags = null
   ): CreatePackagingConfigurationRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PackagingGroupId = PackagingGroupId.asInstanceOf[js.Any])
     if (CmafPackage != null) __obj.updateDynamic("CmafPackage")(CmafPackage.asInstanceOf[js.Any])
     if (DashPackage != null) __obj.updateDynamic("DashPackage")(DashPackage.asInstanceOf[js.Any])
     if (HlsPackage != null) __obj.updateDynamic("HlsPackage")(HlsPackage.asInstanceOf[js.Any])
     if (MssPackage != null) __obj.updateDynamic("MssPackage")(MssPackage.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePackagingConfigurationRequest]
   }
 }

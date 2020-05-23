@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.FormatProtectionData
 import typings.officeJsPreview.Excel.Interfaces.FormatProtectionLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.FormatProtectionUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,22 +16,21 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.2]
   */
-@JSGlobal("Excel.FormatProtection")
 @js.native
-class FormatProtection () extends ClientObject {
+trait FormatProtection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_FormatProtection: RequestContext = js.native
   /**
     *
-    * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
+    * Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
     *
     * [Api set: ExcelApi 1.2]
     */
   var formulaHidden: Boolean = js.native
   /**
     *
-    * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
+    * Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -43,7 +42,7 @@ class FormatProtection () extends ClientObject {
     */
   def load(): FormatProtection = js.native
   def load(options: FormatProtectionLoadOptions): FormatProtection = js.native
-  def load(propertyNamesAndPaths: AnonExpand): FormatProtection = js.native
+  def load(propertyNamesAndPaths: Expand): FormatProtection = js.native
   def load(propertyNames: String): FormatProtection = js.native
   def load(propertyNames: js.Array[String]): FormatProtection = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

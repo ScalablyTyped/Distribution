@@ -4,10 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Graphics.Printing.PrintTaskCompletedEventArgs")
-@js.native
-class PrintTaskCompletedEventArgs () extends IPrintTaskCompletedEventArgs {
-  /* CompleteClass */
-  override var completion: PrintTaskCompletion = js.native
+trait PrintTaskCompletedEventArgs extends IPrintTaskCompletedEventArgs
+
+object PrintTaskCompletedEventArgs {
+  @scala.inline
+  def apply(completion: PrintTaskCompletion): PrintTaskCompletedEventArgs = {
+    val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrintTaskCompletedEventArgs]
+  }
 }
 

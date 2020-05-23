@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath.ExternalApplication")
 @js.native
-class ExternalApplication protected () extends js.Object {
+trait ExternalApplication extends js.Object {
   @JSName("InfoPath.ExternalApplication_typekey")
   var InfoPathDotExternalApplication_typekey: ExternalApplication = js.native
   def CacheSolution(bstrSolutionURI: String): Unit = js.native

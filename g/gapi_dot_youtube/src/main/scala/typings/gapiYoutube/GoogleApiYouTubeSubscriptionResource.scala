@@ -1,5 +1,8 @@
 package typings.gapiYoutube
 
+import typings.gapiYoutube.anon.ChannelIdChannelTitle
+import typings.gapiYoutube.anon.ChannelIdDescription
+import typings.gapiYoutube.anon.NewItemCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +11,7 @@ trait GoogleApiYouTubeSubscriptionResource extends js.Object {
   /**
     *
     */
-  var contentDetails: AnonNewItemCount
+  var contentDetails: NewItemCount
   /**
     * The ETag of the subscription resource.
     */
@@ -24,22 +27,22 @@ trait GoogleApiYouTubeSubscriptionResource extends js.Object {
   /**
     * The snippet object contains basic details about the subscription, including its title and the channel that the user subscribed to.
     */
-  var snippet: AnonChannelIdChannelTitle
+  var snippet: ChannelIdChannelTitle
   /**
     *
     */
-  var subscriberSnippet: AnonChannelIdDescription
+  var subscriberSnippet: ChannelIdDescription
 }
 
 object GoogleApiYouTubeSubscriptionResource {
   @scala.inline
   def apply(
-    contentDetails: AnonNewItemCount,
+    contentDetails: NewItemCount,
     etag: String,
     id: String,
     kind: String,
-    snippet: AnonChannelIdChannelTitle,
-    subscriberSnippet: AnonChannelIdDescription
+    snippet: ChannelIdChannelTitle,
+    subscriberSnippet: ChannelIdDescription
   ): GoogleApiYouTubeSubscriptionResource = {
     val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any], subscriberSnippet = subscriberSnippet.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiYouTubeSubscriptionResource]

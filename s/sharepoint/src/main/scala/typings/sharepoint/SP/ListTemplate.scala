@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.ListTemplate")
 @js.native
-class ListTemplate () extends ClientObject {
+trait ListTemplate extends ClientObject {
   def get_allowsFolderCreation(): Boolean = js.native
   def get_baseType(): BaseType = js.native
   def get_description(): String = js.native

@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the ASPxCallbackPanel control.
   */
-@JSGlobal("ASPxClientCallbackPanel")
 @js.native
-class ASPxClientCallbackPanel () extends ASPxClientPanel {
+trait ASPxClientCallbackPanel extends ASPxClientPanel {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -38,16 +37,5 @@ class ASPxClientCallbackPanel () extends ASPxClientPanel {
     * @param loadingPanelText A string value specifying the text to be displayed within the loading panel.
     */
   def SetLoadingPanelText(loadingPanelText: String): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientCallbackPanel")
-@js.native
-object ASPxClientCallbackPanel extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientCallbackPanel type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientCallbackPanel = js.native
 }
 

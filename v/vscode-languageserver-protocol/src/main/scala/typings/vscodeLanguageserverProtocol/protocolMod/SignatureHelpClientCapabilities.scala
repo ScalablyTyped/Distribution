@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverProtocol.AnonDocumentationFormat
+import typings.vscodeLanguageserverProtocol.anon.DocumentationFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait SignatureHelpClientCapabilities extends js.Object {
     * The client supports the following `SignatureInformation`
     * specific properties.
     */
-  var signatureInformation: js.UndefOr[AnonDocumentationFormat] = js.undefined
+  var signatureInformation: js.UndefOr[DocumentationFormat] = js.undefined
 }
 
 object SignatureHelpClientCapabilities {
@@ -31,11 +31,11 @@ object SignatureHelpClientCapabilities {
   def apply(
     contextSupport: js.UndefOr[Boolean] = js.undefined,
     dynamicRegistration: js.UndefOr[Boolean] = js.undefined,
-    signatureInformation: AnonDocumentationFormat = null
+    signatureInformation: DocumentationFormat = null
   ): SignatureHelpClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contextSupport)) __obj.updateDynamic("contextSupport")(contextSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextSupport)) __obj.updateDynamic("contextSupport")(contextSupport.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.get.asInstanceOf[js.Any])
     if (signatureInformation != null) __obj.updateDynamic("signatureInformation")(signatureInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpClientCapabilities]
   }

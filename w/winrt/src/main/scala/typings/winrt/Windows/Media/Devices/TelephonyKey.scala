@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,56 +57,6 @@ object TelephonyKey extends js.Object {
   
   @js.native
   sealed trait star extends TelephonyKey
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TelephonyKey with Double] = js.native
-  /* 12 */ @js.native
-  object a extends TopLevel[a with Double]
-  
-  /* 13 */ @js.native
-  object b extends TopLevel[b with Double]
-  
-  /* 14 */ @js.native
-  object c extends TopLevel[c with Double]
-  
-  /* 15 */ @js.native
-  object d extends TopLevel[d with Double]
-  
-  /* 0 */ @js.native
-  object d0 extends TopLevel[d0 with Double]
-  
-  /* 1 */ @js.native
-  object d1 extends TopLevel[d1 with Double]
-  
-  /* 2 */ @js.native
-  object d2 extends TopLevel[d2 with Double]
-  
-  /* 3 */ @js.native
-  object d3 extends TopLevel[d3 with Double]
-  
-  /* 4 */ @js.native
-  object d4 extends TopLevel[d4 with Double]
-  
-  /* 5 */ @js.native
-  object d5 extends TopLevel[d5 with Double]
-  
-  /* 6 */ @js.native
-  object d6 extends TopLevel[d6 with Double]
-  
-  /* 7 */ @js.native
-  object d7 extends TopLevel[d7 with Double]
-  
-  /* 8 */ @js.native
-  object d8 extends TopLevel[d8 with Double]
-  
-  /* 9 */ @js.native
-  object d9 extends TopLevel[d9 with Double]
-  
-  /* 11 */ @js.native
-  object pound extends TopLevel[pound with Double]
-  
-  /* 10 */ @js.native
-  object star extends TopLevel[star with Double]
   
 }
 

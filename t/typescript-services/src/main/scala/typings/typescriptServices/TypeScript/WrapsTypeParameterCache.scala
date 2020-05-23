@@ -4,11 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.WrapsTypeParameterCache")
-@js.native
-class WrapsTypeParameterCache () extends js.Object {
-  var _wrapsTypeParameterCache: js.Any = js.native
-  def getWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap): Double = js.native
-  def setWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap, wrappingTypeParameterID: Double): Unit = js.native
+trait WrapsTypeParameterCache extends js.Object {
+  var _wrapsTypeParameterCache: js.Any
+  def getWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap): Double
+  def setWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap, wrappingTypeParameterID: Double): Unit
+}
+
+object WrapsTypeParameterCache {
+  @scala.inline
+  def apply(
+    _wrapsTypeParameterCache: js.Any,
+    getWrapsTypeParameter: TypeArgumentMap => Double,
+    setWrapsTypeParameter: (TypeArgumentMap, Double) => Unit
+  ): WrapsTypeParameterCache = {
+    val __obj = js.Dynamic.literal(_wrapsTypeParameterCache = _wrapsTypeParameterCache.asInstanceOf[js.Any], getWrapsTypeParameter = js.Any.fromFunction1(getWrapsTypeParameter), setWrapsTypeParameter = js.Any.fromFunction2(setWrapsTypeParameter))
+    __obj.asInstanceOf[WrapsTypeParameterCache]
+  }
 }
 

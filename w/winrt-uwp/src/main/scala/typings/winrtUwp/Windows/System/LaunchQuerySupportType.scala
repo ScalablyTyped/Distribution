@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object LaunchQuerySupportType extends js.Object {
   /** Activate by URI and return a result to the calling app. */
   @js.native
   sealed trait uriForResults extends LaunchQuerySupportType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LaunchQuerySupportType with Double] = js.native
-  /* 0 */ @js.native
-  object uri extends TopLevel[uri with Double]
-  
-  /* 1 */ @js.native
-  object uriForResults extends TopLevel[uriForResults with Double]
   
 }
 

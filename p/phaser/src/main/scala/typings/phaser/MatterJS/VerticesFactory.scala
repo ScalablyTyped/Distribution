@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.VerticesFactory")
 @js.native
-class VerticesFactory () extends js.Object {
+trait VerticesFactory extends js.Object {
   /**
     * Returns the area of the set of vertices.
     * @method area

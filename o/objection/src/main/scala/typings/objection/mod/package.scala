@@ -189,7 +189,10 @@ package object mod {
   type PartialModelObject[T /* <: typings.objection.mod.Model */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in objection.objection.NonFunctionPropertyNames<T> ]:? objection.objection.Defined<T[K]> extends objection.objection.Model? T[K] : objection.objection.Defined<T[K]> extends std.Array<infer I>? any extends objection.objection.Model? std.Array<any> : objection.objection.Expression<T[K]> : objection.objection.Expression<T[K]>}
     */ typings.objection.objectionStrings.PartialModelObject with org.scalablytyped.runtime.TopLevel[js.Any]
-  type Plugin = js.Function1[/* modelClass */ typings.objection.TypeofModel, typings.objection.TypeofModel]
+  type Plugin = js.Function1[
+    /* modelClass */ typings.objection.anon.TypeofModel, 
+    typings.objection.anon.TypeofModel
+  ]
   type Pojo = org.scalablytyped.runtime.StringDictionary[js.Any]
   type PrimitiveValue = java.lang.String | scala.Double | scala.Boolean | typings.std.Date | (js.Array[scala.Boolean | typings.std.Date | scala.Double | java.lang.String]) | scala.Null | typings.node.Buffer
   type PrimitiveValueObject = org.scalablytyped.runtime.StringDictionary[typings.objection.mod.PrimitiveValue]
@@ -251,7 +254,7 @@ package object mod {
   type StringOrReferenceBuilder = java.lang.String | typings.objection.mod.ReferenceBuilder
   type StringReturningMethod = js.Function0[java.lang.String]
   type TableRef = typings.objection.mod.ColumnRef | typings.objection.mod.AnyQueryBuilder
-  type TableRefForMethod = js.Function1[/* modelClass */ typings.objection.TypeofModel, java.lang.String]
+  type TableRefForMethod = js.Function1[/* modelClass */ typings.objection.anon.TypeofModel, java.lang.String]
   type TimeoutMethod[QB /* <: typings.objection.mod.AnyQueryBuilder */] = js.Function2[
     /* ms */ scala.Double, 
     /* options */ js.UndefOr[typings.objection.mod.TimeoutOptions], 

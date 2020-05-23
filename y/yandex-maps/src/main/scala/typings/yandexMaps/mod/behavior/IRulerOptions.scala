@@ -12,7 +12,7 @@ object IRulerOptions {
   @scala.inline
   def apply(balloonAutoPan: js.UndefOr[Boolean] = js.undefined): IRulerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(balloonAutoPan)) __obj.updateDynamic("balloonAutoPan")(balloonAutoPan.asInstanceOf[js.Any])
+    if (!js.isUndefined(balloonAutoPan)) __obj.updateDynamic("balloonAutoPan")(balloonAutoPan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRulerOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.stripe.mod.orders
 
-import typings.stripe.AnonFulfilled
+import typings.stripe.anon.Fulfilled
 import typings.stripe.mod.IDateFilter
 import typings.stripe.mod.IListOptionsCreated
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait IOrderListOptions extends IListOptionsCreated {
   /**
     * Filter orders based on when they were "paid", "fulfilled", "canceled", or "returned"
     */
-  var status_transitions: js.UndefOr[AnonFulfilled] = js.undefined
+  var status_transitions: js.UndefOr[Fulfilled] = js.undefined
 }
 
 object IOrderListOptions {
@@ -36,9 +36,9 @@ object IOrderListOptions {
     expand: js.Array[String] = null,
     ids: js.Array[String] = null,
     include: js.Array[String] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     starting_after: String = null,
-    status_transitions: AnonFulfilled = null
+    status_transitions: Fulfilled = null
   ): IOrderListOptions = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
@@ -47,7 +47,7 @@ object IOrderListOptions {
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     if (status_transitions != null) __obj.updateDynamic("status_transitions")(status_transitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrderListOptions]

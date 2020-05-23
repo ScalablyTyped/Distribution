@@ -26,12 +26,12 @@ object PatchProjectParams {
     textFormattingRule: TextFormattingRule = null
   ): PatchProjectParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
-    if (!js.isUndefined(chartEnabled)) __obj.updateDynamic("chartEnabled")(chartEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartEnabled)) __obj.updateDynamic("chartEnabled")(chartEnabled.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(projectLeaderCanEditProjectLeader)) __obj.updateDynamic("projectLeaderCanEditProjectLeader")(projectLeaderCanEditProjectLeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(subtaskingEnabled)) __obj.updateDynamic("subtaskingEnabled")(subtaskingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(projectLeaderCanEditProjectLeader)) __obj.updateDynamic("projectLeaderCanEditProjectLeader")(projectLeaderCanEditProjectLeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtaskingEnabled)) __obj.updateDynamic("subtaskingEnabled")(subtaskingEnabled.get.asInstanceOf[js.Any])
     if (textFormattingRule != null) __obj.updateDynamic("textFormattingRule")(textFormattingRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchProjectParams]
   }

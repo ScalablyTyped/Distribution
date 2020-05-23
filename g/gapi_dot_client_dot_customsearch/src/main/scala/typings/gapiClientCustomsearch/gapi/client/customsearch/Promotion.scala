@@ -1,16 +1,16 @@
 package typings.gapiClientCustomsearch.gapi.client.customsearch
 
-import typings.gapiClientCustomsearch.AnonHeight
-import typings.gapiClientCustomsearch.AnonHtmlTitle
+import typings.gapiClientCustomsearch.anon.Height
+import typings.gapiClientCustomsearch.anon.HtmlTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Promotion extends js.Object {
-  var bodyLines: js.UndefOr[js.Array[AnonHtmlTitle]] = js.undefined
+  var bodyLines: js.UndefOr[js.Array[HtmlTitle]] = js.undefined
   var displayLink: js.UndefOr[String] = js.undefined
   var htmlTitle: js.UndefOr[String] = js.undefined
-  var image: js.UndefOr[AnonHeight] = js.undefined
+  var image: js.UndefOr[Height] = js.undefined
   var link: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -18,10 +18,10 @@ trait Promotion extends js.Object {
 object Promotion {
   @scala.inline
   def apply(
-    bodyLines: js.Array[AnonHtmlTitle] = null,
+    bodyLines: js.Array[HtmlTitle] = null,
     displayLink: String = null,
     htmlTitle: String = null,
-    image: AnonHeight = null,
+    image: Height = null,
     link: String = null,
     title: String = null
   ): Promotion = {

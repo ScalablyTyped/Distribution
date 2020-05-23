@@ -8,7 +8,7 @@ trait GetObjectsResponse[TObject] extends js.Object {
   /**
     * The list of results.
     */
-  val results: js.Array[TObject with ObjectWithObjectID]
+  var results: js.Array[TObject with ObjectWithObjectID]
 }
 
 object GetObjectsResponse {

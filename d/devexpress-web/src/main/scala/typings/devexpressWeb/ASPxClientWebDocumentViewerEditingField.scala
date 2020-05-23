@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ASPxClientWebDocumentViewerEditingField")
 @js.native
-class ASPxClientWebDocumentViewerEditingField () extends js.Object {
+trait ASPxClientWebDocumentViewerEditingField extends js.Object {
   @JSName("editValue")
   var editValue_Original: KnockoutObservable[_] = js.native
   @JSName("readOnly")

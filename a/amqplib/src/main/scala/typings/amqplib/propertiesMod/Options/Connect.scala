@@ -65,23 +65,23 @@ trait Connect extends js.Object {
 object Connect {
   @scala.inline
   def apply(
-    frameMax: Int | Double = null,
-    heartbeat: Int | Double = null,
+    frameMax: js.UndefOr[Double] = js.undefined,
+    heartbeat: js.UndefOr[Double] = js.undefined,
     hostname: String = null,
     locale: String = null,
     password: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     username: String = null,
     vhost: String = null
   ): Connect = {
     val __obj = js.Dynamic.literal()
-    if (frameMax != null) __obj.updateDynamic("frameMax")(frameMax.asInstanceOf[js.Any])
-    if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameMax)) __obj.updateDynamic("frameMax")(frameMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heartbeat)) __obj.updateDynamic("heartbeat")(heartbeat.get.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,4 @@ trait SVGRadialGradientElement extends SVGGradientElement {
   val fy: SVGAnimatedLength = js.native
   val r: SVGAnimatedLength = js.native
 }
-
-@JSGlobal("SVGRadialGradientElement")
-@js.native
-object SVGRadialGradientElement extends Instantiable0[SVGRadialGradientElement]
 

@@ -1,12 +1,12 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.SlicerData
 import typings.officeJs.Excel.Interfaces.SlicerLoadOptions
 import typings.officeJs.Excel.Interfaces.SlicerUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Ascending
 import typings.officeJs.officeJsStrings.DataSourceOrder
 import typings.officeJs.officeJsStrings.Descending
@@ -20,9 +20,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.10]
   */
-@JSGlobal("Excel.Slicer")
 @js.native
-class Slicer () extends ClientObject {
+trait Slicer extends ClientObject {
   /**
     *
     * Represents the caption of slicer.
@@ -43,7 +42,7 @@ class Slicer () extends ClientObject {
   var height: Double = js.native
   /**
     *
-    * Represents the unique id of slicer. Read-only.
+    * Represents the unique id of slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -72,7 +71,7 @@ class Slicer () extends ClientObject {
   var name: String = js.native
   /**
     *
-    * Represents the collection of SlicerItems that are part of the slicer. Read-only.
+    * Represents the collection of SlicerItems that are part of the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -109,7 +108,7 @@ class Slicer () extends ClientObject {
   var width: Double = js.native
   /**
     *
-    * Represents the worksheet containing the slicer. Read-only.
+    * Represents the worksheet containing the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -127,7 +126,7 @@ class Slicer () extends ClientObject {
     */
   def delete(): Unit = js.native
   /**
-    * Returns an array of selected items' keys. Read-only.
+    * Returns an array of selected items' keys.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -139,7 +138,7 @@ class Slicer () extends ClientObject {
     */
   def load(): Slicer = js.native
   def load(options: SlicerLoadOptions): Slicer = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Slicer = js.native
+  def load(propertyNamesAndPaths: Expand): Slicer = js.native
   def load(propertyNames: String): Slicer = js.native
   def load(propertyNames: js.Array[String]): Slicer = js.native
   /**

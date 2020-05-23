@@ -121,7 +121,7 @@ object Order {
     orderId: String = null,
     orderedTime: String = null,
     pphName: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     receivedTime: String = null,
     rejectionNote: String = null,
     seasonName: String = null,
@@ -146,7 +146,7 @@ object Order {
     if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
     if (orderedTime != null) __obj.updateDynamic("orderedTime")(orderedTime.asInstanceOf[js.Any])
     if (pphName != null) __obj.updateDynamic("pphName")(pphName.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (receivedTime != null) __obj.updateDynamic("receivedTime")(receivedTime.asInstanceOf[js.Any])
     if (rejectionNote != null) __obj.updateDynamic("rejectionNote")(rejectionNote.asInstanceOf[js.Any])
     if (seasonName != null) __obj.updateDynamic("seasonName")(seasonName.asInstanceOf[js.Any])

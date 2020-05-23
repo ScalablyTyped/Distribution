@@ -1,10 +1,10 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialAnnotationsAlign
-import typings.plotlyJs.PartialCamera
-import typings.plotlyJs.PartialDomain
-import typings.plotlyJs.PartialPoint
-import typings.plotlyJs.PartialSceneAxisBackgroundcolor
+import typings.plotlyJs.anon.PartialAnnotationsAlign
+import typings.plotlyJs.anon.PartialCamera
+import typings.plotlyJs.anon.PartialDomain
+import typings.plotlyJs.anon.PartialPoint
+import typings.plotlyJs.anon.PartialSceneAxisBackgroundcolor
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.closest

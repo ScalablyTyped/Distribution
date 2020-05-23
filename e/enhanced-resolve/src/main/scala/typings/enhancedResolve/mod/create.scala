@@ -1,7 +1,7 @@
 package typings.enhancedResolve.mod
 
-import typings.enhancedResolve.FnCall
-import typings.enhancedResolve.FnCallContextPathRequestCallback
+import typings.enhancedResolve.anon.FnCall
+import typings.enhancedResolve.anon.FnCallContextPathRequestCallback
 import typings.enhancedResolve.mod.ResolverFactory.ResolverOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`

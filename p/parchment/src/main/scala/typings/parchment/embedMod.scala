@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parchment/dist/src/blot/embed", JSImport.Namespace)
 @js.native
 object embedMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.parchment.linkedNodeMod.LinkedNode because Already inherited
   - typings.parchment.blotMod.Blot because Already inherited
   - typings.parchment.blotMod.Formattable because var conflicts: domNode, next, parent, prev, scroll. Inlined format, formats */ @js.native

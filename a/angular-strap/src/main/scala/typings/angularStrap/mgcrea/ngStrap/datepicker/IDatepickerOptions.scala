@@ -1,6 +1,6 @@
 package typings.angularStrap.mgcrea.ngStrap.datepicker
 
-import typings.angularStrap.AnonHide
+import typings.angularStrap.anon.Hide
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait IDatepickerOptions extends js.Object {
   var dateFormat: js.UndefOr[String] = js.undefined
   var dateType: js.UndefOr[String] = js.undefined
   var daysOfWeekDisabled: js.UndefOr[String] = js.undefined
-  var delay: js.UndefOr[Double | AnonHide] = js.undefined
+  var delay: js.UndefOr[Double | Hide] = js.undefined
   var disabledDates: js.UndefOr[js.Array[IDatepickerDateRange]] = js.undefined
   var html: js.UndefOr[Boolean] = js.undefined
   var iconLeft: js.UndefOr[String] = js.undefined
@@ -45,14 +45,14 @@ object IDatepickerOptions {
     dateFormat: String = null,
     dateType: String = null,
     daysOfWeekDisabled: String = null,
-    delay: Double | AnonHide = null,
+    delay: Double | Hide = null,
     disabledDates: js.Array[IDatepickerDateRange] = null,
     html: js.UndefOr[Boolean] = js.undefined,
     iconLeft: String = null,
     iconRight: String = null,
     maxDate: Date = null,
     minDate: Date = null,
-    minView: Int | Double = null,
+    minView: js.UndefOr[Double] = js.undefined,
     modelDateFormat: String = null,
     onBeforeHide: /* datepicker */ IDatepicker => Unit = null,
     onBeforeShow: /* datepicker */ IDatepicker => Unit = null,
@@ -60,8 +60,8 @@ object IDatepickerOptions {
     onShow: /* datepicker */ IDatepicker => Unit = null,
     placement: String = null,
     startDate: Date = null,
-    startView: Int | Double = null,
-    startWeek: Int | Double = null,
+    startView: js.UndefOr[Double] = js.undefined,
+    startWeek: js.UndefOr[Double] = js.undefined,
     template: String = null,
     timezone: String = null,
     trigger: String = null,
@@ -69,19 +69,19 @@ object IDatepickerOptions {
   ): IDatepickerOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
     if (dateType != null) __obj.updateDynamic("dateType")(dateType.asInstanceOf[js.Any])
     if (daysOfWeekDisabled != null) __obj.updateDynamic("daysOfWeekDisabled")(daysOfWeekDisabled.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
     if (iconLeft != null) __obj.updateDynamic("iconLeft")(iconLeft.asInstanceOf[js.Any])
     if (iconRight != null) __obj.updateDynamic("iconRight")(iconRight.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minView != null) __obj.updateDynamic("minView")(minView.asInstanceOf[js.Any])
+    if (!js.isUndefined(minView)) __obj.updateDynamic("minView")(minView.get.asInstanceOf[js.Any])
     if (modelDateFormat != null) __obj.updateDynamic("modelDateFormat")(modelDateFormat.asInstanceOf[js.Any])
     if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
     if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(js.Any.fromFunction1(onBeforeShow))
@@ -89,12 +89,12 @@ object IDatepickerOptions {
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (startView != null) __obj.updateDynamic("startView")(startView.asInstanceOf[js.Any])
-    if (startWeek != null) __obj.updateDynamic("startWeek")(startWeek.asInstanceOf[js.Any])
+    if (!js.isUndefined(startView)) __obj.updateDynamic("startView")(startView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startWeek)) __obj.updateDynamic("startWeek")(startWeek.get.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatepickerOptions]
   }
 }

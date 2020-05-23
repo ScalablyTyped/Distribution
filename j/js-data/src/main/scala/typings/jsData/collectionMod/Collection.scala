@@ -1,7 +1,7 @@
 package typings.jsData.collectionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsData.AnonIndex
+import typings.jsData.anon.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -474,7 +474,7 @@ trait Collection
     * in the main index.
     */
   def updateIndex(record: js.Any): Unit = js.native
-  def updateIndex(record: js.Any, opts: AnonIndex): Unit = js.native
+  def updateIndex(record: js.Any, opts: Index): Unit = js.native
   /**
     * Updates all indexes in this collection for the provided record. Has no
     * effect if the record is not in the collection.

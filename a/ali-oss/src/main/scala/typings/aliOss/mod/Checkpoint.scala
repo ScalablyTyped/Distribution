@@ -1,12 +1,12 @@
 package typings.aliOss.mod
 
-import typings.aliOss.AnonEtag
+import typings.aliOss.anon.Etag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Checkpoint extends js.Object {
-  var doneParts: js.Array[AnonEtag]
+  var doneParts: js.Array[Etag]
   var file: js.Any
    //  object key
   var fileSize: Double
@@ -19,7 +19,7 @@ trait Checkpoint extends js.Object {
 object Checkpoint {
   @scala.inline
   def apply(
-    doneParts: js.Array[AnonEtag],
+    doneParts: js.Array[Etag],
     file: js.Any,
     fileSize: Double,
     name: String,

@@ -23,21 +23,21 @@ object IItemProps {
   @scala.inline
   def apply(
     `aria-roledescription`: String = null,
-    key: Int | Double = null,
+    key: js.UndefOr[Double] = js.undefined,
     onKeyDown: /* e */ KeyboardEvent[Element] => Unit = null,
     onWheel: /* e */ WheelEvent[Element] => Unit = null,
     ref: RefObject[_] = null,
     style: CSSProperties = null,
-    tabIndex: Int | Double = null
+    tabIndex: js.UndefOr[Double] = js.undefined
   ): IItemProps = {
     val __obj = js.Dynamic.literal()
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.get.asInstanceOf[js.Any])
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemProps]
   }
 }

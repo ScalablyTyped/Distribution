@@ -12,16 +12,16 @@ trait ComponentTransitionGroupProps[T /* <: ReactType[_] */] extends TransitionA
 
 object ComponentTransitionGroupProps {
   @scala.inline
-  def apply[T /* <: ReactType[_] */](
+  def apply[T](
     component: T,
     appear: js.UndefOr[Boolean] = js.undefined,
     enter: js.UndefOr[Boolean] = js.undefined,
     exit: js.UndefOr[Boolean] = js.undefined
   ): ComponentTransitionGroupProps[T] = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear.asInstanceOf[js.Any])
-    if (!js.isUndefined(enter)) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
-    if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
+    if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enter)) __obj.updateDynamic("enter")(enter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentTransitionGroupProps[T]]
   }
 }

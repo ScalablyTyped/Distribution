@@ -654,6 +654,9 @@ object SyntaxKind extends js.Object {
   sealed trait JSDocFunctionType extends SyntaxKind
   
   @js.native
+  sealed trait JSDocImplementsTag extends SyntaxKind
+  
+  @js.native
   sealed trait JSDocNamepathType extends SyntaxKind
   
   @js.native
@@ -1548,7 +1551,7 @@ object SyntaxKind extends js.Object {
   object ColonToken
     extends TopLevel[typings.typescript.mod.SyntaxKind.ColonToken with Double]
   
-  /* 326 */ @js.native
+  /* 327 */ @js.native
   object CommaListExpression
     extends TopLevel[typings.typescript.mod.SyntaxKind.CommaListExpression with Double]
   
@@ -1592,7 +1595,7 @@ object SyntaxKind extends js.Object {
   object ContinueStatement
     extends TopLevel[typings.typescript.mod.SyntaxKind.ContinueStatement with Double]
   
-  /* 330 */ @js.native
+  /* 331 */ @js.native
   object Count extends TopLevel[Count with Double]
   
   /* 83 */ @js.native
@@ -1649,7 +1652,7 @@ object SyntaxKind extends js.Object {
   object EmptyStatement
     extends TopLevel[typings.typescript.mod.SyntaxKind.EmptyStatement with Double]
   
-  /* 328 */ @js.native
+  /* 329 */ @js.native
   object EndOfDeclarationMarker extends TopLevel[EndOfDeclarationMarker with Double]
   
   /* 1 */ @js.native
@@ -1919,28 +1922,32 @@ object SyntaxKind extends js.Object {
   object JSDocAugmentsTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocAugmentsTag with Double]
   
-  /* 308 */ @js.native
+  /* 309 */ @js.native
   object JSDocAuthorTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocAuthorTag with Double]
   
-  /* 314 */ @js.native
+  /* 315 */ @js.native
   object JSDocCallbackTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocCallbackTag with Double]
   
-  /* 309 */ @js.native
+  /* 310 */ @js.native
   object JSDocClassTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocClassTag with Double]
   
   /* 303 */ @js.native
   object JSDocComment extends TopLevel[JSDocComment with Double]
   
-  /* 315 */ @js.native
+  /* 316 */ @js.native
   object JSDocEnumTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocEnumTag with Double]
   
   /* 300 */ @js.native
   object JSDocFunctionType
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocFunctionType with Double]
+  
+  /* 308 */ @js.native
+  object JSDocImplementsTag
+    extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocImplementsTag with Double]
   
   /* 302 */ @js.native
   object JSDocNamepathType
@@ -1958,31 +1965,31 @@ object SyntaxKind extends js.Object {
   object JSDocOptionalType
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocOptionalType with Double]
   
-  /* 316 */ @js.native
+  /* 317 */ @js.native
   object JSDocParameterTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocParameterTag with Double]
   
-  /* 311 */ @js.native
+  /* 312 */ @js.native
   object JSDocPrivateTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocPrivateTag with Double]
   
-  /* 322 */ @js.native
+  /* 323 */ @js.native
   object JSDocPropertyTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocPropertyTag with Double]
   
-  /* 312 */ @js.native
+  /* 313 */ @js.native
   object JSDocProtectedTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocProtectedTag with Double]
   
-  /* 310 */ @js.native
+  /* 311 */ @js.native
   object JSDocPublicTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocPublicTag with Double]
   
-  /* 313 */ @js.native
+  /* 314 */ @js.native
   object JSDocReadonlyTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocReadonlyTag with Double]
   
-  /* 317 */ @js.native
+  /* 318 */ @js.native
   object JSDocReturnTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocReturnTag with Double]
   
@@ -1994,11 +2001,11 @@ object SyntaxKind extends js.Object {
   object JSDocTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocTag with Double]
   
-  /* 320 */ @js.native
+  /* 321 */ @js.native
   object JSDocTemplateTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocTemplateTag with Double]
   
-  /* 318 */ @js.native
+  /* 319 */ @js.native
   object JSDocThisTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocThisTag with Double]
   
@@ -2010,11 +2017,11 @@ object SyntaxKind extends js.Object {
   object JSDocTypeLiteral
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocTypeLiteral with Double]
   
-  /* 319 */ @js.native
+  /* 320 */ @js.native
   object JSDocTypeTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocTypeTag with Double]
   
-  /* 321 */ @js.native
+  /* 322 */ @js.native
   object JSDocTypedefTag
     extends TopLevel[typings.typescript.mod.SyntaxKind.JSDocTypedefTag with Double]
   
@@ -2096,10 +2103,10 @@ object SyntaxKind extends js.Object {
   /* 121 */ @js.native
   object LastFutureReservedWord extends TopLevel[LastFutureReservedWord with Double]
   
-  /* 322 */ @js.native
+  /* 323 */ @js.native
   object LastJSDocNode extends TopLevel[LastJSDocNode with Double]
   
-  /* 322 */ @js.native
+  /* 323 */ @js.native
   object LastJSDocTagNode extends TopLevel[LastJSDocTagNode with Double]
   
   /* 152 */ @js.native
@@ -2154,7 +2161,7 @@ object SyntaxKind extends js.Object {
   /* 186 */ @js.native
   object MappedType extends TopLevel[MappedType with Double]
   
-  /* 327 */ @js.native
+  /* 328 */ @js.native
   object MergeDeclarationMarker extends TopLevel[MergeDeclarationMarker with Double]
   
   /* 219 */ @js.native
@@ -2241,7 +2248,7 @@ object SyntaxKind extends js.Object {
   object NonNullExpression
     extends TopLevel[typings.typescript.mod.SyntaxKind.NonNullExpression with Double]
   
-  /* 324 */ @js.native
+  /* 325 */ @js.native
   object NotEmittedStatement
     extends TopLevel[typings.typescript.mod.SyntaxKind.NotEmittedStatement with Double]
   
@@ -2298,7 +2305,7 @@ object SyntaxKind extends js.Object {
   /* 182 */ @js.native
   object ParenthesizedType extends TopLevel[ParenthesizedType with Double]
   
-  /* 325 */ @js.native
+  /* 326 */ @js.native
   object PartiallyEmittedExpression
     extends TopLevel[typings.typescript.mod.SyntaxKind.PartiallyEmittedExpression with Double]
   
@@ -2454,7 +2461,7 @@ object SyntaxKind extends js.Object {
   /* 144 */ @js.native
   object SymbolKeyword extends TopLevel[SymbolKeyword with Double]
   
-  /* 323 */ @js.native
+  /* 324 */ @js.native
   object SyntaxList
     extends TopLevel[typings.typescript.mod.SyntaxKind.SyntaxList with Double]
   
@@ -2462,7 +2469,7 @@ object SyntaxKind extends js.Object {
   object SyntheticExpression
     extends TopLevel[typings.typescript.mod.SyntaxKind.SyntheticExpression with Double]
   
-  /* 329 */ @js.native
+  /* 330 */ @js.native
   object SyntheticReferenceExpression extends TopLevel[SyntheticReferenceExpression with Double]
   
   /* 198 */ @js.native

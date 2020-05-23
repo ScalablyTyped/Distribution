@@ -54,7 +54,7 @@ object ModifyImageAttributeRequest {
     ImageId: ImageId,
     Attribute: String = null,
     Description: AttributeValue = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     LaunchPermission: LaunchPermissionModifications = null,
     OperationType: OperationType = null,
     ProductCodes: ProductCodeStringList = null,
@@ -65,7 +65,7 @@ object ModifyImageAttributeRequest {
     val __obj = js.Dynamic.literal(ImageId = ImageId.asInstanceOf[js.Any])
     if (Attribute != null) __obj.updateDynamic("Attribute")(Attribute.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (LaunchPermission != null) __obj.updateDynamic("LaunchPermission")(LaunchPermission.asInstanceOf[js.Any])
     if (OperationType != null) __obj.updateDynamic("OperationType")(OperationType.asInstanceOf[js.Any])
     if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])

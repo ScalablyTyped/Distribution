@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a choice-item separator.
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.inquirer.mod.SeparatorOptions because var conflicts: `type`. Inlined line */ trait Separator extends ChoiceBase {
   /**
     * @inheritdoc

@@ -27,7 +27,7 @@ object UserOrganization {
     department: String = null,
     description: String = null,
     domain: String = null,
-    fullTimeEquivalent: Int | Double = null,
+    fullTimeEquivalent: js.UndefOr[Double] = js.undefined,
     location: String = null,
     name: String = null,
     primary: js.UndefOr[Boolean] = js.undefined,
@@ -41,10 +41,10 @@ object UserOrganization {
     if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (fullTimeEquivalent != null) __obj.updateDynamic("fullTimeEquivalent")(fullTimeEquivalent.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullTimeEquivalent)) __obj.updateDynamic("fullTimeEquivalent")(fullTimeEquivalent.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

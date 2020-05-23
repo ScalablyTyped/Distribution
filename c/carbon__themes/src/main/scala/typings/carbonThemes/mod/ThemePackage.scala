@@ -1,6 +1,6 @@
 package typings.carbonThemes.mod
 
-import typings.carbonThemes.AnonG10
+import typings.carbonThemes.anon.G10
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +53,7 @@ trait ThemePackage extends js.Object {
   var text02: String
   var text03: String
   var text04: String
-  var themes: AnonG10
+  var themes: G10
   var ui01: String
   var ui02: String
   var ui03: String
@@ -112,7 +112,7 @@ object ThemePackage {
     text02: String,
     text03: String,
     text04: String,
-    themes: AnonG10,
+    themes: G10,
     ui01: String,
     ui02: String,
     ui03: String,

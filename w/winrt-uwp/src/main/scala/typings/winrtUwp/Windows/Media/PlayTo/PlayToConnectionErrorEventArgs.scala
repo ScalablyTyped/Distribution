@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about the Error event. */
-@JSGlobal("Windows.Media.PlayTo.PlayToConnectionErrorEventArgs")
-@js.native
-abstract class PlayToConnectionErrorEventArgs () extends js.Object {
+trait PlayToConnectionErrorEventArgs extends js.Object {
   /** Gets the error code for a Play To connection error. */
-  var code: PlayToConnectionError = js.native
+  var code: PlayToConnectionError
   /** Gets the error message for a Play To connection error. */
-  var message: String = js.native
+  var message: String
+}
+
+object PlayToConnectionErrorEventArgs {
+  @scala.inline
+  def apply(code: PlayToConnectionError, message: String): PlayToConnectionErrorEventArgs = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayToConnectionErrorEventArgs]
+  }
 }
 

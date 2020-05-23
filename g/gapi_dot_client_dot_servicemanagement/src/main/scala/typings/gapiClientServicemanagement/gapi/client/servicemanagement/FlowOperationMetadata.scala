@@ -44,7 +44,7 @@ object FlowOperationMetadata {
     cancelState: String = null,
     deadline: String = null,
     flowName: String = null,
-    operationType: Int | Double = null,
+    operationType: js.UndefOr[Double] = js.undefined,
     resourceNames: js.Array[String] = null,
     startTime: String = null,
     surface: String = null
@@ -53,7 +53,7 @@ object FlowOperationMetadata {
     if (cancelState != null) __obj.updateDynamic("cancelState")(cancelState.asInstanceOf[js.Any])
     if (deadline != null) __obj.updateDynamic("deadline")(deadline.asInstanceOf[js.Any])
     if (flowName != null) __obj.updateDynamic("flowName")(flowName.asInstanceOf[js.Any])
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (!js.isUndefined(operationType)) __obj.updateDynamic("operationType")(operationType.get.asInstanceOf[js.Any])
     if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (surface != null) __obj.updateDynamic("surface")(surface.asInstanceOf[js.Any])

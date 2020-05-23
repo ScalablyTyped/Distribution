@@ -30,12 +30,12 @@ object ListLayerVersionsRequest {
     LayerName: LayerName,
     CompatibleRuntime: Runtime = null,
     Marker: String = null,
-    MaxItems: Int | Double = null
+    MaxItems: js.UndefOr[MaxLayerListItems] = js.undefined
   ): ListLayerVersionsRequest = {
     val __obj = js.Dynamic.literal(LayerName = LayerName.asInstanceOf[js.Any])
     if (CompatibleRuntime != null) __obj.updateDynamic("CompatibleRuntime")(CompatibleRuntime.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLayerVersionsRequest]
   }
 }

@@ -23,7 +23,7 @@ trait JimpType[T /* <: Image */] extends js.Object {
 
 object JimpType {
   @scala.inline
-  def apply[T /* <: Image */](
+  def apply[T](
     `class`: js.Any = null,
     constants: // Contants to assign to the Jimp instance
   StringDictionary[js.Any] = null,

@@ -39,12 +39,12 @@ object ModuleSymbolDetails {
     name: String,
     `type`: ModuleSymbolType,
     section: ModuleSymbolSectionDetails = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): ModuleSymbolDetails = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], isGlobal = isGlobal.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleSymbolDetails]
   }
 }

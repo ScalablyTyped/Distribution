@@ -11,10 +11,10 @@ trait IFieldOptions extends js.Object {
 
 object IFieldOptions {
   @scala.inline
-  def apply(jstype: Int | Double = null, packed: js.UndefOr[Boolean] = js.undefined): IFieldOptions = {
+  def apply(jstype: js.UndefOr[IFieldOptionsJSType] = js.undefined, packed: js.UndefOr[Boolean] = js.undefined): IFieldOptions = {
     val __obj = js.Dynamic.literal()
-    if (jstype != null) __obj.updateDynamic("jstype")(jstype.asInstanceOf[js.Any])
-    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed.asInstanceOf[js.Any])
+    if (!js.isUndefined(jstype)) __obj.updateDynamic("jstype")(jstype.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldOptions]
   }
 }

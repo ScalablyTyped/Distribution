@@ -27,16 +27,16 @@ trait PublicAccessBlockConfiguration extends js.Object {
 object PublicAccessBlockConfiguration {
   @scala.inline
   def apply(
-    BlockPublicAcls: js.UndefOr[scala.Boolean] = js.undefined,
-    BlockPublicPolicy: js.UndefOr[scala.Boolean] = js.undefined,
-    IgnorePublicAcls: js.UndefOr[scala.Boolean] = js.undefined,
-    RestrictPublicBuckets: js.UndefOr[scala.Boolean] = js.undefined
+    BlockPublicAcls: js.UndefOr[Setting] = js.undefined,
+    BlockPublicPolicy: js.UndefOr[Setting] = js.undefined,
+    IgnorePublicAcls: js.UndefOr[Setting] = js.undefined,
+    RestrictPublicBuckets: js.UndefOr[Setting] = js.undefined
   ): PublicAccessBlockConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BlockPublicAcls)) __obj.updateDynamic("BlockPublicAcls")(BlockPublicAcls.asInstanceOf[js.Any])
-    if (!js.isUndefined(BlockPublicPolicy)) __obj.updateDynamic("BlockPublicPolicy")(BlockPublicPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(IgnorePublicAcls)) __obj.updateDynamic("IgnorePublicAcls")(IgnorePublicAcls.asInstanceOf[js.Any])
-    if (!js.isUndefined(RestrictPublicBuckets)) __obj.updateDynamic("RestrictPublicBuckets")(RestrictPublicBuckets.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockPublicAcls)) __obj.updateDynamic("BlockPublicAcls")(BlockPublicAcls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockPublicPolicy)) __obj.updateDynamic("BlockPublicPolicy")(BlockPublicPolicy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IgnorePublicAcls)) __obj.updateDynamic("IgnorePublicAcls")(IgnorePublicAcls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RestrictPublicBuckets)) __obj.updateDynamic("RestrictPublicBuckets")(RestrictPublicBuckets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicAccessBlockConfiguration]
   }
 }

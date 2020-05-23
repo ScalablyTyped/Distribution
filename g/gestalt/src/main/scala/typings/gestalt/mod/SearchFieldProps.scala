@@ -1,7 +1,7 @@
 package typings.gestalt.mod
 
-import typings.gestalt.Anon0
-import typings.gestalt.AnonSyntheticEvent
+import typings.gestalt.anon.SyntheticEvent
+import typings.gestalt.anon.`0`
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.name
@@ -16,12 +16,12 @@ trait SearchFieldProps extends js.Object {
   var accessibilityLabel: String
   var autoComplete: js.UndefOr[on | off | username | name] = js.undefined
   var id: String
-  var onBlur: js.UndefOr[js.Function1[/* args */ Anon0, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* args */ AnonSyntheticEvent, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* args */ `0`, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* args */ SyntheticEvent, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[md | lg] = js.undefined
   var value: js.UndefOr[String] = js.undefined
-  def onChange(args: AnonSyntheticEvent): Unit
+  def onChange(args: SyntheticEvent): Unit
 }
 
 object SearchFieldProps {
@@ -29,10 +29,10 @@ object SearchFieldProps {
   def apply(
     accessibilityLabel: String,
     id: String,
-    onChange: AnonSyntheticEvent => Unit,
+    onChange: SyntheticEvent => Unit,
     autoComplete: on | off | username | name = null,
-    onBlur: /* args */ Anon0 => Unit = null,
-    onFocus: /* args */ AnonSyntheticEvent => Unit = null,
+    onBlur: /* args */ `0` => Unit = null,
+    onFocus: /* args */ SyntheticEvent => Unit = null,
     placeholder: String = null,
     size: md | lg = null,
     value: String = null

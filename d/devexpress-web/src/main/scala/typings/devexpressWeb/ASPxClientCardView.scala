@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client ASPxCardView.
   */
-@JSGlobal("ASPxClientCardView")
 @js.native
-class ASPxClientCardView () extends ASPxClientGridBase {
+trait ASPxClientCardView extends ASPxClientGridBase {
   /**
     * Occurs on the client side before a card is deleted in batch edit mode.
     */
@@ -511,16 +510,5 @@ class ASPxClientCardView () extends ASPxClientGridBase {
     * Saves all the changes made and switches the grid to browse mode.
     */
   def UpdateEdit(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientCardView")
-@js.native
-object ASPxClientCardView extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientCardView type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientCardView = js.native
 }
 

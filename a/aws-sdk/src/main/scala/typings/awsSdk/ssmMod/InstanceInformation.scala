@@ -31,7 +31,7 @@ trait InstanceInformation extends js.Object {
     */
   var IPAddress: js.UndefOr[typings.awsSdk.ssmMod.IPAddress] = js.native
   /**
-    * The Amazon Identity and Access Management (IAM) role assigned to the on-premises Systems Manager managed instances. This call does not return the IAM role for Amazon EC2 instances. 
+    * The Amazon Identity and Access Management (IAM) role assigned to the on-premises Systems Manager managed instances. This call does not return the IAM role for EC2 instances. 
     */
   var IamRole: js.UndefOr[typings.awsSdk.ssmMod.IamRole] = js.native
   /**
@@ -95,7 +95,7 @@ object InstanceInformation {
     IPAddress: IPAddress = null,
     IamRole: IamRole = null,
     InstanceId: InstanceId = null,
-    IsLatestVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    IsLatestVersion: js.UndefOr[Boolean] = js.undefined,
     LastAssociationExecutionDate: DateTime = null,
     LastPingDateTime: DateTime = null,
     LastSuccessfulAssociationExecutionDate: DateTime = null,
@@ -116,7 +116,7 @@ object InstanceInformation {
     if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress.asInstanceOf[js.Any])
     if (IamRole != null) __obj.updateDynamic("IamRole")(IamRole.asInstanceOf[js.Any])
     if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsLatestVersion)) __obj.updateDynamic("IsLatestVersion")(IsLatestVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsLatestVersion)) __obj.updateDynamic("IsLatestVersion")(IsLatestVersion.get.asInstanceOf[js.Any])
     if (LastAssociationExecutionDate != null) __obj.updateDynamic("LastAssociationExecutionDate")(LastAssociationExecutionDate.asInstanceOf[js.Any])
     if (LastPingDateTime != null) __obj.updateDynamic("LastPingDateTime")(LastPingDateTime.asInstanceOf[js.Any])
     if (LastSuccessfulAssociationExecutionDate != null) __obj.updateDynamic("LastSuccessfulAssociationExecutionDate")(LastSuccessfulAssociationExecutionDate.asInstanceOf[js.Any])

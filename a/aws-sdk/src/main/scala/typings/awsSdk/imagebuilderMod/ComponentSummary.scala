@@ -35,6 +35,10 @@ trait ComponentSummary extends js.Object {
     */
   var platform: js.UndefOr[Platform] = js.native
   /**
+    * The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the parent image OS version during image recipe creation. 
+    */
+  var supportedOsVersions: js.UndefOr[OsVersionList] = js.native
+  /**
     * The tags associated with the component.
     */
   var tags: js.UndefOr[TagMap] = js.native
@@ -58,6 +62,7 @@ object ComponentSummary {
     name: ResourceName = null,
     owner: NonEmptyString = null,
     platform: Platform = null,
+    supportedOsVersions: OsVersionList = null,
     tags: TagMap = null,
     `type`: ComponentType = null,
     version: VersionNumber = null
@@ -70,6 +75,7 @@ object ComponentSummary {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (supportedOsVersions != null) __obj.updateDynamic("supportedOsVersions")(supportedOsVersions.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

@@ -24,7 +24,7 @@ object DomainLogPublishingOption {
   @scala.inline
   def apply(cloudwatchLogGroupArn: String, logType: String, enabled: js.UndefOr[Boolean] = js.undefined): DomainLogPublishingOption = {
     val __obj = js.Dynamic.literal(cloudwatchLogGroupArn = cloudwatchLogGroupArn.asInstanceOf[js.Any], logType = logType.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainLogPublishingOption]
   }
 }

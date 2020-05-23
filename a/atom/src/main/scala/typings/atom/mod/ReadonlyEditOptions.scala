@@ -13,7 +13,7 @@ object ReadonlyEditOptions {
   @scala.inline
   def apply(bypassReadOnly: js.UndefOr[Boolean] = js.undefined): ReadonlyEditOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bypassReadOnly)) __obj.updateDynamic("bypassReadOnly")(bypassReadOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassReadOnly)) __obj.updateDynamic("bypassReadOnly")(bypassReadOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyEditOptions]
   }
 }

@@ -19,21 +19,21 @@ object TaskQueryParam {
   @scala.inline
   def apply(
     from: Double,
-    completeAfterAfter: Int | Double = null,
-    completeBeforeBefore: Int | Double = null,
+    completeAfterAfter: js.UndefOr[Double] = js.undefined,
+    completeBeforeBefore: js.UndefOr[Double] = js.undefined,
     dependencies: String = null,
     lastId: String = null,
-    state: Int | Double = null,
-    to: Int | Double = null,
+    state: js.UndefOr[Double] = js.undefined,
+    to: js.UndefOr[Double] = js.undefined,
     worker: String = null
   ): TaskQueryParam = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
-    if (completeAfterAfter != null) __obj.updateDynamic("completeAfterAfter")(completeAfterAfter.asInstanceOf[js.Any])
-    if (completeBeforeBefore != null) __obj.updateDynamic("completeBeforeBefore")(completeBeforeBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(completeAfterAfter)) __obj.updateDynamic("completeAfterAfter")(completeAfterAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(completeBeforeBefore)) __obj.updateDynamic("completeBeforeBefore")(completeBeforeBefore.get.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (lastId != null) __obj.updateDynamic("lastId")(lastId.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     if (worker != null) __obj.updateDynamic("worker")(worker.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskQueryParam]
   }

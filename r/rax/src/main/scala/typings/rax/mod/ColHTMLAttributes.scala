@@ -11,10 +11,14 @@ trait ColHTMLAttributes[T] extends HTMLAttributes[T] {
 
 object ColHTMLAttributes {
   @scala.inline
-  def apply[T](HTMLAttributes: HTMLAttributes[T] = null, span: Int | Double = null, width: Double | String = null): ColHTMLAttributes[T] = {
+  def apply[T](
+    HTMLAttributes: HTMLAttributes[T] = null,
+    span: js.UndefOr[Double] = js.undefined,
+    width: Double | String = null
+  ): ColHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
+    if (!js.isUndefined(span)) __obj.updateDynamic("span")(span.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColHTMLAttributes[T]]
   }

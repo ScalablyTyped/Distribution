@@ -1,15 +1,15 @@
 package typings.oracleOraclejet.ojlegendMod.ojLegend
 
-import typings.oracleOraclejet.AnonSections
-import typings.oracleOraclejet.AnonTextString
+import typings.oracleOraclejet.anon.Sections
+import typings.oracleOraclejet.anon.TextString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-over-type-literal
 trait SectionContext extends js.Object {
-  var getItems: AnonTextString
-  var getSection: AnonSections
+  var getItems: TextString
+  var getSection: Sections
   var items: js.Array[js.Object]
   var sections: js.Array[js.Object]
   var title: String
@@ -18,8 +18,8 @@ trait SectionContext extends js.Object {
 object SectionContext {
   @scala.inline
   def apply(
-    getItems: AnonTextString,
-    getSection: AnonSections,
+    getItems: TextString,
+    getSection: Sections,
     items: js.Array[js.Object],
     sections: js.Array[js.Object],
     title: String

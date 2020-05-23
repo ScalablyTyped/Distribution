@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.FieldUser")
 @js.native
-class FieldUser () extends FieldLookup {
+trait FieldUser extends FieldLookup {
   def get_allowDisplay(): Boolean = js.native
   def get_presence(): Boolean = js.native
   def get_selectionGroup(): Double = js.native

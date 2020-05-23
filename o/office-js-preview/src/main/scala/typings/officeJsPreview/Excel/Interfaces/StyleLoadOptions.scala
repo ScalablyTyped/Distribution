@@ -18,7 +18,7 @@ trait StyleLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
+    * Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -32,7 +32,7 @@ trait StyleLoadOptions extends js.Object {
   var borders: js.UndefOr[RangeBorderCollectionLoadOptions] = js.undefined
   /**
     *
-    * Indicates if the style is a built-in style.
+    * Specifies if the style is a built-in style.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -53,7 +53,7 @@ trait StyleLoadOptions extends js.Object {
   var font: js.UndefOr[RangeFontLoadOptions] = js.undefined
   /**
     *
-    * Indicates if the formula will be hidden when the worksheet is protected.
+    * Specifies if the formula will be hidden when the worksheet is protected.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -67,42 +67,42 @@ trait StyleLoadOptions extends js.Object {
   var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+    * Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
     *
     * [Api set: ExcelApi 1.7]
     */
   var includeAlignment: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+    * Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
     *
     * [Api set: ExcelApi 1.7]
     */
   var includeBorder: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+    * Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
     *
     * [Api set: ExcelApi 1.7]
     */
   var includeFont: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if the style includes the NumberFormat property.
+    * Specifies if the style includes the NumberFormat property.
     *
     * [Api set: ExcelApi 1.7]
     */
   var includeNumber: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
+    * Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
     *
     * [Api set: ExcelApi 1.7]
     */
   var includePatterns: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if the style includes the FormulaHidden and Locked protection properties.
+    * Specifies if the style includes the FormulaHidden and Locked protection properties.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -116,7 +116,7 @@ trait StyleLoadOptions extends js.Object {
   var indentLevel: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if the object is locked when the worksheet is protected.
+    * Specifies if the object is locked when the worksheet is protected.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -151,7 +151,7 @@ trait StyleLoadOptions extends js.Object {
   var readingOrder: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if text automatically shrinks to fit in the available column width.
+    * Specifies if text automatically shrinks to fit in the available column width.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -165,14 +165,14 @@ trait StyleLoadOptions extends js.Object {
   var textOrientation: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+    * Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
     *
     * [Api set: ExcelApi 1.7]
     */
   var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates if Microsoft Excel wraps the text in the object.
+    * Specifies if Excel wraps the text in the object.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -208,30 +208,30 @@ object StyleLoadOptions {
     wrapText: js.UndefOr[Boolean] = js.undefined
   ): StyleLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.get.asInstanceOf[js.Any])
     if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
-    if (!js.isUndefined(builtIn)) __obj.updateDynamic("builtIn")(builtIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(builtIn)) __obj.updateDynamic("builtIn")(builtIn.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAlignment)) __obj.updateDynamic("includeAlignment")(includeAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeBorder)) __obj.updateDynamic("includeBorder")(includeBorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeFont)) __obj.updateDynamic("includeFont")(includeFont.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeNumber)) __obj.updateDynamic("includeNumber")(includeNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(includePatterns)) __obj.updateDynamic("includePatterns")(includePatterns.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeProtection)) __obj.updateDynamic("includeProtection")(includeProtection.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentLevel)) __obj.updateDynamic("indentLevel")(indentLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberFormatLocal)) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(readingOrder)) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.asInstanceOf[js.Any])
-    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAlignment)) __obj.updateDynamic("includeAlignment")(includeAlignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBorder)) __obj.updateDynamic("includeBorder")(includeBorder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeFont)) __obj.updateDynamic("includeFont")(includeFont.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNumber)) __obj.updateDynamic("includeNumber")(includeNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includePatterns)) __obj.updateDynamic("includePatterns")(includePatterns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeProtection)) __obj.updateDynamic("includeProtection")(includeProtection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentLevel)) __obj.updateDynamic("indentLevel")(indentLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberFormatLocal)) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readingOrder)) __obj.updateDynamic("readingOrder")(readingOrder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleLoadOptions]
   }
 }

@@ -15,9 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a Wi-Fi Direct Services (WFDS) session. */
-@JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSession")
 @js.native
-abstract class WiFiDirectServiceSession () extends js.Object {
+trait WiFiDirectServiceSession extends js.Object {
   /** Gets the advertisement ID for the session. */
   var advertisementId: Double = js.native
   /** Gets the error status of the session. */

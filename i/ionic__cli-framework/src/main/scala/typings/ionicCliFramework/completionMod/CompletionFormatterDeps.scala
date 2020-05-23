@@ -15,7 +15,7 @@ trait CompletionFormatterDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INames
 
 object CompletionFormatterDeps {
   @scala.inline
-  def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](namespace: N): CompletionFormatterDeps[C, N, M, I, O] = {
+  def apply[C, N, M, I, O](namespace: N): CompletionFormatterDeps[C, N, M, I, O] = {
     val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionFormatterDeps[C, N, M, I, O]]
   }

@@ -1,6 +1,5 @@
 package typings.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,26 +48,6 @@ object PlatformType extends js.Object {
     */
   @js.native
   sealed trait iOS extends PlatformType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PlatformType with Double] = js.native
-  /* 4 */ @js.native
-  object Android extends TopLevel[Android with Double]
-  
-  /* 2 */ @js.native
-  object Mac extends TopLevel[Mac with Double]
-  
-  /* 1 */ @js.native
-  object OfficeOnline extends TopLevel[OfficeOnline with Double]
-  
-  /* 0 */ @js.native
-  object PC extends TopLevel[PC with Double]
-  
-  /* 5 */ @js.native
-  object Universal extends TopLevel[Universal with Double]
-  
-  /* 3 */ @js.native
-  object iOS extends TopLevel[iOS with Double]
   
 }
 

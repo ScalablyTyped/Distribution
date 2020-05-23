@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientTreeList.BatchEditNodeInserting event.
   */
-@JSGlobal("ASPxClientTreeListBatchEditNodeInsertingEventArgs")
-@js.native
-class ASPxClientTreeListBatchEditNodeInsertingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientTreeListBatchEditNodeInsertingEventArgs class.
-    * @param nodeKey A String value that identifies the processed node.
-    * @param parentNodeKey A String value that identifies the processed node's parent node.
-    */
-  def this(nodeKey: String, parentNodeKey: String) = this()
+trait ASPxClientTreeListBatchEditNodeInsertingEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Gets the processed node's key value.
     */
-  var nodeKey: String = js.native
+  var nodeKey: String
   /**
     * Gets the parent node key.
     */
-  var parentNodeKey: String = js.native
+  var parentNodeKey: String
+}
+
+object ASPxClientTreeListBatchEditNodeInsertingEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, nodeKey: String, parentNodeKey: String): ASPxClientTreeListBatchEditNodeInsertingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], parentNodeKey = parentNodeKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeInsertingEventArgs]
+  }
 }
 

@@ -1,6 +1,8 @@
 package typings.electron.mod
 
+import typings.electron.Electron.AutoResizeOptions
 import typings.electron.Electron.BrowserViewConstructorOptions
+import typings.electron.Electron.Rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +16,40 @@ import scala.scalajs.js.annotation._
 class BrowserView ()
   extends typings.electron.Electron.BrowserView {
   def this(options: BrowserViewConstructorOptions) = this()
+  /* CompleteClass */
+  override var id: Double = js.native
+  /* CompleteClass */
+  override var webContents: typings.electron.Electron.WebContents_ = js.native
+  /**
+    * Force closing the view, the `unload` and `beforeunload` events won't be emitted
+    * for the web page. After you're done with a view, call this function in order to
+    * free memory and other resources as soon as possible.
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  /**
+    * The `bounds` of this BrowserView instance as `Object`.
+    *
+    * @experimental
+    */
+  /* CompleteClass */
+  override def getBounds(): Rectangle = js.native
+  /**
+    * Whether the view is destroyed.
+    */
+  /* CompleteClass */
+  override def isDestroyed(): Boolean = js.native
+  /* CompleteClass */
+  override def setAutoResize(options: AutoResizeOptions): Unit = js.native
+  /* CompleteClass */
+  override def setBackgroundColor(color: String): Unit = js.native
+  /**
+    * Resizes and moves the view to the supplied bounds relative to the window.
+    *
+    * @experimental
+    */
+  /* CompleteClass */
+  override def setBounds(bounds: Rectangle): Unit = js.native
 }
 
 /* static members */

@@ -13,9 +13,9 @@ trait ReaderFragmentSpread extends ReaderSelection {
 
 object ReaderFragmentSpread {
   @scala.inline
-  def apply(kind: String, name: String, args: js.Array[ReaderArgument] = null): ReaderFragmentSpread = {
+  def apply(kind: String, name: String, args: js.UndefOr[Null | js.Array[ReaderArgument]] = js.undefined): ReaderFragmentSpread = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(args)) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderFragmentSpread]
   }
 }

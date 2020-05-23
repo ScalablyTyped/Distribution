@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("breeze.EntityAspect")
 @js.native
-class EntityAspect () extends js.Object {
+trait EntityAspect extends js.Object {
   var entity: Entity = js.native
   var entityManager: EntityManager = js.native
   var entityState: EntityStateSymbol = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Request for a medication, substance or device
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait SupplyRequest extends DomainResource {
   /**
     * Contains extended information for property 'authoredOn'.

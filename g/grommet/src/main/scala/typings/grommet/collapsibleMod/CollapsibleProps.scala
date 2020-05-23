@@ -16,7 +16,7 @@ object CollapsibleProps {
   def apply(direction: horizontal | vertical = null, open: js.UndefOr[Boolean] = js.undefined): CollapsibleProps = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapsibleProps]
   }
 }

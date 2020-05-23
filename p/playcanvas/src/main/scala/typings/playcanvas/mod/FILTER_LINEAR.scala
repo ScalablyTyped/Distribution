@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.FILTER_LINEAR
-  * @type {number}
-  * @description Bilinear filtering.
+  * Bilinear filtering.
   */
 @JSImport("playcanvas", "FILTER_LINEAR")
 @js.native

@@ -9,36 +9,36 @@ import scala.scalajs.js.annotation._
   */
 trait Gradient extends js.Object {
   /**
-  	 * Set to `true` to continue filling with the final color beyond the `endPoint`.
-  	 */
+    * Set to `true` to continue filling with the final color beyond the `endPoint`.
+    */
   var backfillEnd: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * Set to `true` to continue filling with the starting color beyond the `startPoint`.
-  	 */
+    * Set to `true` to continue filling with the starting color beyond the `startPoint`.
+    */
   var backfillStart: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * An array of colors, as a color name or hex triplet.
-  	 */
+    * An array of colors, as a color name or hex triplet.
+    */
   var colors: js.UndefOr[js.Array[GradientColorRef | java.lang.String]] = js.undefined
   /**
-  	 * End point for the gradient.
-  	 */
+    * End point for the gradient.
+    */
   var endPoint: js.UndefOr[Point] = js.undefined
   /**
-  	 * For a radial gradient, the radius at the `endPoint`.
-  	 */
+    * For a radial gradient, the radius at the `endPoint`.
+    */
   var endRadius: js.UndefOr[Double] = js.undefined
   /**
-  	 * Start point for the gradient.
-  	 */
+    * Start point for the gradient.
+    */
   var startPoint: js.UndefOr[Point] = js.undefined
   /**
-  	 * For a radial gradient, the radius at the `startPoint`.
-  	 */
+    * For a radial gradient, the radius at the `startPoint`.
+    */
   var startRadius: js.UndefOr[Double] = js.undefined
   /**
-  	 * Type of gradient, either 'linear' or 'radial'.
-  	 */
+    * Type of gradient, either 'linear' or 'radial'.
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -49,19 +49,19 @@ object Gradient {
     backfillStart: js.UndefOr[Boolean] = js.undefined,
     colors: js.Array[GradientColorRef | java.lang.String] = null,
     endPoint: Point = null,
-    endRadius: Int | Double = null,
+    endRadius: js.UndefOr[Double] = js.undefined,
     startPoint: Point = null,
-    startRadius: Int | Double = null,
+    startRadius: js.UndefOr[Double] = js.undefined,
     `type`: java.lang.String = null
   ): Gradient = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backfillEnd)) __obj.updateDynamic("backfillEnd")(backfillEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(backfillStart)) __obj.updateDynamic("backfillStart")(backfillStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(backfillEnd)) __obj.updateDynamic("backfillEnd")(backfillEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backfillStart)) __obj.updateDynamic("backfillStart")(backfillStart.get.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint.asInstanceOf[js.Any])
-    if (endRadius != null) __obj.updateDynamic("endRadius")(endRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(endRadius)) __obj.updateDynamic("endRadius")(endRadius.get.asInstanceOf[js.Any])
     if (startPoint != null) __obj.updateDynamic("startPoint")(startPoint.asInstanceOf[js.Any])
-    if (startRadius != null) __obj.updateDynamic("startRadius")(startRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRadius)) __obj.updateDynamic("startRadius")(startRadius.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gradient]
   }

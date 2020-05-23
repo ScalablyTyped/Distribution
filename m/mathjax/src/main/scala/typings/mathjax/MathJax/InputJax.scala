@@ -1,6 +1,5 @@
 package typings.mathjax.MathJax
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +46,20 @@ trait InputJax extends js.Object {
   def needsUpdate(element: js.Any): Boolean
 }
 
-@JSGlobal("MathJax.InputJax")
-@js.native
-object InputJax extends TopLevel[InputJax]
+object InputJax {
+  @scala.inline
+  def apply(
+    Process: (js.Any, js.Any) => js.Any,
+    Register: String => Unit,
+    Translate: (js.Any, js.Any) => ElementJax,
+    directory: String,
+    elementJax: String,
+    id: String,
+    needsUpdate: js.Any => Boolean,
+    version: String
+  ): InputJax = {
+    val __obj = js.Dynamic.literal(Process = js.Any.fromFunction2(Process), Register = js.Any.fromFunction1(Register), Translate = js.Any.fromFunction2(Translate), directory = directory.asInstanceOf[js.Any], elementJax = elementJax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], needsUpdate = js.Any.fromFunction1(needsUpdate), version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InputJax]
+  }
+}
 

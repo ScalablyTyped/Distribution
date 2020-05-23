@@ -14,16 +14,16 @@ object IDAStarFinderOptions {
   def apply(
     diagonalMovement: DiagonalMovement = null,
     heuristic: (/* dx */ Double, /* dy */ Double) => Double = null,
-    timeLimit: Int | Double = null,
+    timeLimit: js.UndefOr[Double] = js.undefined,
     trackRecursion: js.UndefOr[Boolean] = js.undefined,
-    weight: Int | Double = null
+    weight: js.UndefOr[Double] = js.undefined
   ): IDAStarFinderOptions = {
     val __obj = js.Dynamic.literal()
     if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement.asInstanceOf[js.Any])
     if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2(heuristic))
-    if (timeLimit != null) __obj.updateDynamic("timeLimit")(timeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackRecursion)) __obj.updateDynamic("trackRecursion")(trackRecursion.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeLimit)) __obj.updateDynamic("timeLimit")(timeLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackRecursion)) __obj.updateDynamic("trackRecursion")(trackRecursion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDAStarFinderOptions]
   }
 }

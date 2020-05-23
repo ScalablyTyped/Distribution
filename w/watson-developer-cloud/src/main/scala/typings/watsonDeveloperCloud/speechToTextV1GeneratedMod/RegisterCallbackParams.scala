@@ -24,7 +24,7 @@ object RegisterCallbackParams {
   ): RegisterCallbackParams = {
     val __obj = js.Dynamic.literal(callback_url = callback_url.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (user_secret != null) __obj.updateDynamic("user_secret")(user_secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterCallbackParams]
   }

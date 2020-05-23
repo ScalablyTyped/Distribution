@@ -1,17 +1,17 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonCancelComponentData
-import typings.devextreme.AnonComponentTElementDxElement
-import typings.devextreme.AnonComponentTElementDxElementModelAny
-import typings.devextreme.AnonDuration
-import typings.devextreme.AnonElement
-import typings.devextreme.AnonElementModelTarget
-import typings.devextreme.AnonElementTarget
-import typings.devextreme.AnonFormatModel
-import typings.devextreme.AnonModel
-import typings.devextreme.AnonModelTarget
-import typings.devextreme.AnonName
-import typings.devextreme.AnonTargetAny
+import typings.devextreme.anon.CancelComponentData
+import typings.devextreme.anon.ComponentTElementDxElement
+import typings.devextreme.anon.ComponentTElementDxElementModelAny
+import typings.devextreme.anon.Duration
+import typings.devextreme.anon.Element
+import typings.devextreme.anon.ElementModelTarget
+import typings.devextreme.anon.ElementTarget
+import typings.devextreme.anon.FormatModel
+import typings.devextreme.anon.Model
+import typings.devextreme.anon.ModelTarget
+import typings.devextreme.anon.Name
+import typings.devextreme.anon.TargetAny
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -57,7 +57,7 @@ trait BaseChartOptions[T] extends BaseWidgetOptions[T] {
   /** @name BaseChart.Options.adaptiveLayout */
   var adaptiveLayout: js.UndefOr[BaseChartAdaptiveLayout] = js.undefined
   /** @name BaseChart.Options.animation */
-  var animation: js.UndefOr[AnonDuration | Boolean] = js.undefined
+  var animation: js.UndefOr[Duration | Boolean] = js.undefined
   /** @name BaseChart.Options.customizeLabel */
   var customizeLabel: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesLabel]] = js.undefined
   /** @name BaseChart.Options.customizePoint */
@@ -67,17 +67,17 @@ trait BaseChartOptions[T] extends BaseWidgetOptions[T] {
   /** @name BaseChart.Options.legend */
   var legend: js.UndefOr[BaseChartLegend] = js.undefined
   /** @name BaseChart.Options.onDone */
-  var onDone: js.UndefOr[js.Function1[/* e */ AnonComponentTElementDxElement[T], _]] = js.undefined
+  var onDone: js.UndefOr[js.Function1[/* e */ ComponentTElementDxElement[T], _]] = js.undefined
   /** @name BaseChart.Options.onPointClick */
-  var onPointClick: js.UndefOr[(js.Function1[/* e */ AnonModelTarget[T], _]) | String] = js.undefined
+  var onPointClick: js.UndefOr[(js.Function1[/* e */ ModelTarget[T], _]) | String] = js.undefined
   /** @name BaseChart.Options.onPointHoverChanged */
-  var onPointHoverChanged: js.UndefOr[js.Function1[/* e */ AnonElementTarget, _]] = js.undefined
+  var onPointHoverChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, _]] = js.undefined
   /** @name BaseChart.Options.onPointSelectionChanged */
-  var onPointSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonElementTarget, _]] = js.undefined
+  var onPointSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, _]] = js.undefined
   /** @name BaseChart.Options.onTooltipHidden */
-  var onTooltipHidden: js.UndefOr[js.Function1[/* e */ AnonElementModelTarget[T], _]] = js.undefined
+  var onTooltipHidden: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], _]] = js.undefined
   /** @name BaseChart.Options.onTooltipShown */
-  var onTooltipShown: js.UndefOr[js.Function1[/* e */ AnonElementModelTarget[T], _]] = js.undefined
+  var onTooltipShown: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], _]] = js.undefined
   /** @name BaseChart.Options.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
@@ -97,7 +97,7 @@ object BaseChartOptions {
   @scala.inline
   def apply[T](
     adaptiveLayout: BaseChartAdaptiveLayout = null,
-    animation: AnonDuration | Boolean = null,
+    animation: Duration | Boolean = null,
     bindingOptions: js.Any = null,
     customizeLabel: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesLabel = null,
     customizePoint: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesPoint = null,
@@ -109,20 +109,20 @@ object BaseChartOptions {
     legend: BaseChartLegend = null,
     loadingIndicator: BaseWidgetLoadingIndicator = null,
     margin: BaseWidgetMargin = null,
-    onDisposing: /* e */ AnonModel[T] => _ = null,
-    onDone: /* e */ AnonComponentTElementDxElement[T] => _ = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[T] => _ = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[T] => _ = null,
-    onExporting: /* e */ AnonFormatModel[T] => _ = null,
-    onFileSaving: /* e */ AnonCancelComponentData[T] => _ = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[T] => _ = null,
-    onInitialized: /* e */ AnonElement[T] => _ = null,
-    onOptionChanged: /* e */ AnonName[T] => _ = null,
-    onPointClick: (js.Function1[/* e */ AnonModelTarget[T], _]) | String = null,
-    onPointHoverChanged: /* e */ AnonElementTarget => _ = null,
-    onPointSelectionChanged: /* e */ AnonElementTarget => _ = null,
-    onTooltipHidden: /* e */ AnonElementModelTarget[T] => _ = null,
-    onTooltipShown: /* e */ AnonElementModelTarget[T] => _ = null,
+    onDisposing: /* e */ Model[T] => _ = null,
+    onDone: /* e */ ComponentTElementDxElement[T] => _ = null,
+    onDrawn: /* e */ ComponentTElementDxElementModelAny[T] => _ = null,
+    onExported: /* e */ ComponentTElementDxElementModelAny[T] => _ = null,
+    onExporting: /* e */ FormatModel[T] => _ = null,
+    onFileSaving: /* e */ CancelComponentData[T] => _ = null,
+    onIncidentOccurred: /* e */ TargetAny[T] => _ = null,
+    onInitialized: /* e */ Element[T] => _ = null,
+    onOptionChanged: /* e */ Name[T] => _ = null,
+    onPointClick: (js.Function1[/* e */ ModelTarget[T], _]) | String = null,
+    onPointHoverChanged: /* e */ ElementTarget => _ = null,
+    onPointSelectionChanged: /* e */ ElementTarget => _ = null,
+    onTooltipHidden: /* e */ ElementModelTarget[T] => _ = null,
+    onTooltipShown: /* e */ ElementModelTarget[T] => _ = null,
     palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
     paletteExtensionMode: alternate | blend | extrapolate = null,
     pathModified: js.UndefOr[Boolean] = js.undefined,
@@ -143,7 +143,7 @@ object BaseChartOptions {
     if (customizeLabel != null) __obj.updateDynamic("customizeLabel")(js.Any.fromFunction1(customizeLabel))
     if (customizePoint != null) __obj.updateDynamic("customizePoint")(js.Any.fromFunction1(customizePoint))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -166,10 +166,10 @@ object BaseChartOptions {
     if (onTooltipShown != null) __obj.updateDynamic("onTooltipShown")(js.Any.fromFunction1(onTooltipShown))
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
     if (pointSelectionMode != null) __obj.updateDynamic("pointSelectionMode")(pointSelectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

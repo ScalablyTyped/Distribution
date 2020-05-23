@@ -44,8 +44,9 @@ package object apitypesMod {
     /* callback */ js.UndefOr[typings.googleGax.apitypesMod.APICallback], 
     typings.googleGax.apitypesMod.CancellableStream
   ]
-  type NextPageRequestType = org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null
-  type RawResponseType = typings.googleGax.longrunningMod.Operation_ | js.Object
+  type NextPageRequestType = (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Object]) | scala.Null
+  type RawResponseType = typings.googleGax.longrunningMod.Operation_ | js.Object | scala.Null
+  type RequestType = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Object]
   type ResponseType = js.Object | scala.Null
   type ResultTuple = js.Tuple3[
     typings.googleGax.apitypesMod.ResponseType, 
@@ -59,7 +60,7 @@ package object apitypesMod {
     typings.node.streamMod.Duplex with typings.googleGax.apitypesMod.GRPCCallResult
   ]
   type SimpleCallbackFunction = js.Function2[
-    /* argument */ typings.googleGax.apitypesMod.RequestType, 
+    /* request */ typings.googleGax.apitypesMod.RequestType, 
     /* callback */ typings.googleGax.apitypesMod.APICallback, 
     typings.googleGax.apitypesMod.GRPCCallResult
   ]

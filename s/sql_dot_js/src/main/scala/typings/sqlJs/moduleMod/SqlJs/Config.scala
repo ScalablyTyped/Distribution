@@ -71,16 +71,13 @@ trait Config extends js.Object {
   var preloadedImages: js.UndefOr[js.Any] = js.undefined
   var print: js.UndefOr[js.Function1[/* str */ String, Unit]] = js.undefined
   var printErr: js.UndefOr[js.Function1[/* str */ String, Unit]] = js.undefined
-  var `then`: js.UndefOr[
-    js.Function1[/* callback */ js.Function1[/* module */ this.type, Unit], this.type]
-  ] = js.undefined
   var wasmBinary: js.UndefOr[ArrayBuffer] = js.undefined
 }
 
 object Config {
   @scala.inline
   def apply(
-    FAST_MEMORY: Int | Double = null,
+    FAST_MEMORY: js.UndefOr[Double] = js.undefined,
     FHEAP: Float64Array = null,
     HEAP: Int32Array = null,
     HEAP16: Int16Array = null,
@@ -92,8 +89,8 @@ object Config {
     HEAPU32: Uint32Array = null,
     HEAPU8: Uint8Array = null,
     IHEAP: Int32Array = null,
-    TOTAL_MEMORY: Int | Double = null,
-    TOTAL_STACK: Int | Double = null,
+    TOTAL_MEMORY: js.UndefOr[Double] = js.undefined,
+    TOTAL_STACK: js.UndefOr[Double] = js.undefined,
     _free: /* ptr */ Double => Unit = null,
     _malloc: /* size */ Double => Double = null,
     addOnExit: /* cb */ js.Function0[_] => Unit = null,
@@ -122,11 +119,10 @@ object Config {
     preloadedImages: js.Any = null,
     print: /* str */ String => Unit = null,
     printErr: /* str */ String => Unit = null,
-    `then`: /* callback */ js.Function1[Config, Unit] => Config = null,
     wasmBinary: ArrayBuffer = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (FAST_MEMORY != null) __obj.updateDynamic("FAST_MEMORY")(FAST_MEMORY.asInstanceOf[js.Any])
+    if (!js.isUndefined(FAST_MEMORY)) __obj.updateDynamic("FAST_MEMORY")(FAST_MEMORY.get.asInstanceOf[js.Any])
     if (FHEAP != null) __obj.updateDynamic("FHEAP")(FHEAP.asInstanceOf[js.Any])
     if (HEAP != null) __obj.updateDynamic("HEAP")(HEAP.asInstanceOf[js.Any])
     if (HEAP16 != null) __obj.updateDynamic("HEAP16")(HEAP16.asInstanceOf[js.Any])
@@ -138,8 +134,8 @@ object Config {
     if (HEAPU32 != null) __obj.updateDynamic("HEAPU32")(HEAPU32.asInstanceOf[js.Any])
     if (HEAPU8 != null) __obj.updateDynamic("HEAPU8")(HEAPU8.asInstanceOf[js.Any])
     if (IHEAP != null) __obj.updateDynamic("IHEAP")(IHEAP.asInstanceOf[js.Any])
-    if (TOTAL_MEMORY != null) __obj.updateDynamic("TOTAL_MEMORY")(TOTAL_MEMORY.asInstanceOf[js.Any])
-    if (TOTAL_STACK != null) __obj.updateDynamic("TOTAL_STACK")(TOTAL_STACK.asInstanceOf[js.Any])
+    if (!js.isUndefined(TOTAL_MEMORY)) __obj.updateDynamic("TOTAL_MEMORY")(TOTAL_MEMORY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TOTAL_STACK)) __obj.updateDynamic("TOTAL_STACK")(TOTAL_STACK.get.asInstanceOf[js.Any])
     if (_free != null) __obj.updateDynamic("_free")(js.Any.fromFunction1(_free))
     if (_malloc != null) __obj.updateDynamic("_malloc")(js.Any.fromFunction1(_malloc))
     if (addOnExit != null) __obj.updateDynamic("addOnExit")(js.Any.fromFunction1(addOnExit))
@@ -154,9 +150,9 @@ object Config {
     if (getPreloadedPackage != null) __obj.updateDynamic("getPreloadedPackage")(js.Any.fromFunction2(getPreloadedPackage))
     if (instantiateWasm != null) __obj.updateDynamic("instantiateWasm")(js.Any.fromFunction2(instantiateWasm))
     if (locateFile != null) __obj.updateDynamic("locateFile")(js.Any.fromFunction2(locateFile))
-    if (!js.isUndefined(logReadFiles)) __obj.updateDynamic("logReadFiles")(logReadFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(noExitRuntime)) __obj.updateDynamic("noExitRuntime")(noExitRuntime.asInstanceOf[js.Any])
-    if (!js.isUndefined(noInitialRun)) __obj.updateDynamic("noInitialRun")(noInitialRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(logReadFiles)) __obj.updateDynamic("logReadFiles")(logReadFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noExitRuntime)) __obj.updateDynamic("noExitRuntime")(noExitRuntime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noInitialRun)) __obj.updateDynamic("noInitialRun")(noInitialRun.get.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onCustomMessage != null) __obj.updateDynamic("onCustomMessage")(js.Any.fromFunction1(onCustomMessage))
     if (onRuntimeInitialized != null) __obj.updateDynamic("onRuntimeInitialized")(js.Any.fromFunction0(onRuntimeInitialized))
@@ -168,7 +164,6 @@ object Config {
     if (preloadedImages != null) __obj.updateDynamic("preloadedImages")(preloadedImages.asInstanceOf[js.Any])
     if (print != null) __obj.updateDynamic("print")(js.Any.fromFunction1(print))
     if (printErr != null) __obj.updateDynamic("printErr")(js.Any.fromFunction1(printErr))
-    if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
     if (wasmBinary != null) __obj.updateDynamic("wasmBinary")(wasmBinary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }

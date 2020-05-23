@@ -2,7 +2,7 @@ package typings.victory.mod
 
 import typings.react.mod.DOMAttributes
 import typings.react.mod.ReactElement
-import typings.victory.AnonY
+import typings.victory.anon.Y
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +71,7 @@ trait VictoryClipContainerProps extends js.Object {
     * Victory components will pass an `origin` prop is to define the center point in svg coordinates for polar charts.
     * **This prop should not be set manually.**
     */
-  var origin: js.UndefOr[AnonY] = js.undefined
+  var origin: js.UndefOr[Y] = js.undefined
   /**
     * Victory components can pass a boolean `polar` prop to specify whether a label is part of a polar chart.
     * **This prop should not be set manually.**
@@ -109,37 +109,37 @@ object VictoryClipContainerProps {
     children: ReactElement | js.Array[ReactElement] = null,
     circleComponent: ReactElement = null,
     className: String = null,
-    clipHeight: Int | Double = null,
+    clipHeight: js.UndefOr[Double] = js.undefined,
     clipId: Double | String = null,
     clipPadding: BlockProps = null,
     clipPathComponent: ReactElement = null,
-    clipWidth: Int | Double = null,
+    clipWidth: js.UndefOr[Double] = js.undefined,
     events: DOMAttributes[_] = null,
     groupComponent: ReactElement = null,
-    origin: AnonY = null,
+    origin: Y = null,
     polar: js.UndefOr[Boolean] = js.undefined,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     rectComponent: ReactElement = null,
-    translateX: Int | Double = null,
-    translateY: Int | Double = null
+    translateX: js.UndefOr[Double] = js.undefined,
+    translateY: js.UndefOr[Double] = js.undefined
   ): VictoryClipContainerProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (circleComponent != null) __obj.updateDynamic("circleComponent")(circleComponent.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clipHeight != null) __obj.updateDynamic("clipHeight")(clipHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipHeight)) __obj.updateDynamic("clipHeight")(clipHeight.get.asInstanceOf[js.Any])
     if (clipId != null) __obj.updateDynamic("clipId")(clipId.asInstanceOf[js.Any])
     if (clipPadding != null) __obj.updateDynamic("clipPadding")(clipPadding.asInstanceOf[js.Any])
     if (clipPathComponent != null) __obj.updateDynamic("clipPathComponent")(clipPathComponent.asInstanceOf[js.Any])
-    if (clipWidth != null) __obj.updateDynamic("clipWidth")(clipWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipWidth)) __obj.updateDynamic("clipWidth")(clipWidth.get.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (rectComponent != null) __obj.updateDynamic("rectComponent")(rectComponent.asInstanceOf[js.Any])
-    if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
-    if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
+    if (!js.isUndefined(translateX)) __obj.updateDynamic("translateX")(translateX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(translateY)) __obj.updateDynamic("translateY")(translateY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryClipContainerProps]
   }
 }

@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.devicesArrayBluetoothDevi
+import typings.baiduApp.anon.devicesArrayBluetoothDevi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

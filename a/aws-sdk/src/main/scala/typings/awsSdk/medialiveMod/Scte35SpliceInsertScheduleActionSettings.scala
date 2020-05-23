@@ -18,9 +18,9 @@ trait Scte35SpliceInsertScheduleActionSettings extends js.Object {
 
 object Scte35SpliceInsertScheduleActionSettings {
   @scala.inline
-  def apply(SpliceEventId: longMin0Max4294967295, Duration: Int | Double = null): Scte35SpliceInsertScheduleActionSettings = {
+  def apply(SpliceEventId: longMin0Max4294967295, Duration: js.UndefOr[longMin0Max8589934591] = js.undefined): Scte35SpliceInsertScheduleActionSettings = {
     val __obj = js.Dynamic.literal(SpliceEventId = SpliceEventId.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35SpliceInsertScheduleActionSettings]
   }
 }

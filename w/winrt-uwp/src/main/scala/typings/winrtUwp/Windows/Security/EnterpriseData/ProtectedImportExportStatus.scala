@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.EnterpriseData
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object ProtectedImportExportStatus extends js.Object {
   /** The file is not protected. */
   @js.native
   sealed trait unprotected extends ProtectedImportExportStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProtectedImportExportStatus with Double] = js.native
-  /* 7 */ @js.native
-  object accessSuspended extends TopLevel[accessSuspended with Double]
-  
-  /* 6 */ @js.native
-  object licenseExpired extends TopLevel[licenseExpired with Double]
-  
-  /* 4 */ @js.native
-  object notRoamable extends TopLevel[notRoamable with Double]
-  
-  /* 0 */ @js.native
-  object ok extends TopLevel[ok with Double]
-  
-  /* 5 */ @js.native
-  object protectedToOtherIdentity extends TopLevel[protectedToOtherIdentity with Double]
-  
-  /* 3 */ @js.native
-  object revoked extends TopLevel[revoked with Double]
-  
-  /* 1 */ @js.native
-  object undetermined extends TopLevel[undetermined with Double]
-  
-  /* 2 */ @js.native
-  object unprotected extends TopLevel[unprotected with Double]
   
 }
 

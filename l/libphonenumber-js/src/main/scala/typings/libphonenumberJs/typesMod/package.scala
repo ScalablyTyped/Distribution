@@ -18,7 +18,7 @@ package object typesMod {
   ]
   type NationalNumber = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
     - typings.libphonenumberJs.libphonenumberJsStrings.PREMIUM_RATE
     - typings.libphonenumberJs.libphonenumberJsStrings.TOLL_FREE
     - typings.libphonenumberJs.libphonenumberJsStrings.SHARED_COST

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Management.Deployment
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object PackageStatus extends js.Object {
   /** The package payload was tampered with intentionally. */
   @js.native
   sealed trait tampered extends PackageStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PackageStatus with Double] = js.native
-  /* 4 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
-  
-  /* 1 */ @js.native
-  object licenseIssue extends TopLevel[licenseIssue with Double]
-  
-  /* 2 */ @js.native
-  object modified extends TopLevel[modified with Double]
-  
-  /* 0 */ @js.native
-  object ok extends TopLevel[ok with Double]
-  
-  /* 3 */ @js.native
-  object tampered extends TopLevel[tampered with Double]
   
 }
 

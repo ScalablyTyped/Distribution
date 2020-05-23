@@ -7,9 +7,15 @@ import scala.scalajs.js.annotation._
 /**
   * Represents an Automation SAFEARRAY
   */
-@JSGlobal("SafeArray")
-@js.native
-class SafeArray[T] protected () extends js.Object {
-  var SafeArray_typekey: SafeArray[T] = js.native
+trait SafeArray[T] extends js.Object {
+  var SafeArray_typekey: SafeArray[T]
+}
+
+object SafeArray {
+  @scala.inline
+  def apply[T](SafeArray_typekey: SafeArray[T]): SafeArray[T] = {
+    val __obj = js.Dynamic.literal(SafeArray_typekey = SafeArray_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SafeArray[T]]
+  }
 }
 

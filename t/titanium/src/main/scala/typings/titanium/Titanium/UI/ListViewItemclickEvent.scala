@@ -5,35 +5,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a list row is clicked by the user.
-		 */
+  * Fired when a list row is clicked by the user.
+  */
 trait ListViewItemclickEvent extends ListViewBaseEvent {
   /**
-  			 * Returns `true` if the detail button is clicked else returns `false`.
-  			 * Only returns `true` if the `accessoryType` property is set to
-  			 * <Titanium.UI.LIST_ACCESSORY_TYPE_DETAIL>.  All other accessories return `false` if
-  			 * clicked.
-  			 */
+    * Returns `true` if the detail button is clicked else returns `false`.
+    * Only returns `true` if the `accessoryType` property is set to
+    * <Titanium.UI.LIST_ACCESSORY_TYPE_DETAIL>.  All other accessories return `false` if
+    * clicked.
+    */
   var accessoryClicked: Boolean
   /**
-  			 * The bind ID of the control that generated this event, if one exists.
-  			 */
+    * The bind ID of the control that generated this event, if one exists.
+    */
   var bindId: String
   /**
-  			 * The item ID bound to the list item that generated the event.
-  			 */
+    * The item ID bound to the list item that generated the event.
+    */
   var itemId: String
   /**
-  			 * Item index.
-  			 */
+    * Item index.
+    */
   var itemIndex: Double
   /**
-  			 * List section if the item is contained in a list section.
-  			 */
+    * List section if the item is contained in a list section.
+    */
   var section: ListSection
   /**
-  			 * Section index.
-  			 */
+    * Section index.
+    */
   var sectionIndex: Double
 }
 

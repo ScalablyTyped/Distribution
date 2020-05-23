@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when a hardware key is pressed in the view.
-			 */
+  * Fired when a hardware key is pressed in the view.
+  */
 trait CoverFlowViewKeypressedEvent extends CoverFlowViewBaseEvent {
   /**
-  				 * The code for the physical key that was pressed. For more details, see [KeyEvent](https://developer.android.com/reference/android/view/KeyEvent.html). This API is experimental and subject to change.
-  				 */
+    * The code for the physical key that was pressed. For more details, see [KeyEvent](https://developer.android.com/reference/android/view/KeyEvent.html). This API is experimental and subject to change.
+    */
   var keyCode: Double
 }
 

@@ -14,10 +14,10 @@ trait IAttribute extends js.Object {
 
 object IAttribute {
   @scala.inline
-  def apply(key: String = null, value: String = null): IAttribute = {
+  def apply(key: js.UndefOr[Null | String] = js.undefined, value: js.UndefOr[Null | String] = js.undefined): IAttribute = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttribute]
   }
 }

@@ -6,12 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-@JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult")
-@js.native
-abstract class GameSaveBlobInfoGetResult () extends js.Object {
+trait GameSaveBlobInfoGetResult extends js.Object {
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var status: GameSaveErrorStatus = js.native
+  var status: GameSaveErrorStatus
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var value: IVectorView[GameSaveBlobInfo] = js.native
+  var value: IVectorView[GameSaveBlobInfo]
+}
+
+object GameSaveBlobInfoGetResult {
+  @scala.inline
+  def apply(status: GameSaveErrorStatus, value: IVectorView[GameSaveBlobInfo]): GameSaveBlobInfoGetResult = {
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GameSaveBlobInfoGetResult]
+  }
 }
 

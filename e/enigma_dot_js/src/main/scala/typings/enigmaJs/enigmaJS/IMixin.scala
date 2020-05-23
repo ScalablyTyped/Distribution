@@ -1,6 +1,6 @@
 package typings.enigmaJs.enigmaJS
 
-import typings.enigmaJs.AnonApi
+import typings.enigmaJs.anon.Api
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +23,12 @@ trait IMixin extends js.Object {
     * An API will get both their generic type as well as custom type mixins applied.
     */
   var types: js.Array[MixinType]
-  def init(args: AnonApi): Unit
+  def init(args: Api): Unit
 }
 
 object IMixin {
   @scala.inline
-  def apply(
-    init: AnonApi => Unit,
-    types: js.Array[MixinType],
-    extend: js.Any = null,
-    `override`: js.Any = null
-  ): IMixin = {
+  def apply(init: Api => Unit, types: js.Array[MixinType], extend: js.Any = null, `override`: js.Any = null): IMixin = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), types = types.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (`override` != null) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])

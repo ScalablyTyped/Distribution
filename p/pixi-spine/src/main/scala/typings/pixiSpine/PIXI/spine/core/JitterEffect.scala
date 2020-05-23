@@ -4,17 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.JitterEffect")
-@js.native
-class JitterEffect protected () extends VertexEffect {
-  def this(jitterX: Double, jitterY: Double) = this()
-  var jitterX: Double = js.native
-  var jitterY: Double = js.native
-  /* CompleteClass */
-  override def begin(skeleton: Skeleton): Unit = js.native
-  /* CompleteClass */
-  override def end(): Unit = js.native
-  /* CompleteClass */
-  override def transform(position: Vector2, uv: Vector2, light: Color, dark: Color): Unit = js.native
+trait JitterEffect extends VertexEffect {
+  var jitterX: Double
+  var jitterY: Double
+}
+
+object JitterEffect {
+  @scala.inline
+  def apply(
+    begin: Skeleton => Unit,
+    end: () => Unit,
+    jitterX: Double,
+    jitterY: Double,
+    transform: (Vector2, Vector2, Color, Color) => Unit
+  ): JitterEffect = {
+    val __obj = js.Dynamic.literal(begin = js.Any.fromFunction1(begin), end = js.Any.fromFunction0(end), jitterX = jitterX.asInstanceOf[js.Any], jitterY = jitterY.asInstanceOf[js.Any], transform = js.Any.fromFunction4(transform))
+    __obj.asInstanceOf[JitterEffect]
+  }
 }
 

@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Slides
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,20 +24,6 @@ object TextBaselineOffset extends js.Object {
   
   @js.native
   sealed trait UNSUPPORTED extends TextBaselineOffset
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextBaselineOffset with Double] = js.native
-  /* 1 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 3 */ @js.native
-  object SUBSCRIPT extends TopLevel[SUBSCRIPT with Double]
-  
-  /* 2 */ @js.native
-  object SUPERSCRIPT extends TopLevel[SUPERSCRIPT with Double]
-  
-  /* 0 */ @js.native
-  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
   
 }
 

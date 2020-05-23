@@ -43,7 +43,7 @@ object PhysicsJointData {
     nativeParams: js.Any = null
   ): PhysicsJointData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collision)) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
+    if (!js.isUndefined(collision)) __obj.updateDynamic("collision")(collision.get.asInstanceOf[js.Any])
     if (connectedAxis != null) __obj.updateDynamic("connectedAxis")(connectedAxis.asInstanceOf[js.Any])
     if (connectedPivot != null) __obj.updateDynamic("connectedPivot")(connectedPivot.asInstanceOf[js.Any])
     if (mainAxis != null) __obj.updateDynamic("mainAxis")(mainAxis.asInstanceOf[js.Any])

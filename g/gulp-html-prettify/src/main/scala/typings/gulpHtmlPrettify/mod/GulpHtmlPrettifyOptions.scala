@@ -11,10 +11,10 @@ trait GulpHtmlPrettifyOptions extends js.Object {
 
 object GulpHtmlPrettifyOptions {
   @scala.inline
-  def apply(indent_char: String = null, indent_size: Int | Double = null): GulpHtmlPrettifyOptions = {
+  def apply(indent_char: String = null, indent_size: js.UndefOr[Double] = js.undefined): GulpHtmlPrettifyOptions = {
     val __obj = js.Dynamic.literal()
     if (indent_char != null) __obj.updateDynamic("indent_char")(indent_char.asInstanceOf[js.Any])
-    if (indent_size != null) __obj.updateDynamic("indent_size")(indent_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent_size)) __obj.updateDynamic("indent_size")(indent_size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GulpHtmlPrettifyOptions]
   }
 }

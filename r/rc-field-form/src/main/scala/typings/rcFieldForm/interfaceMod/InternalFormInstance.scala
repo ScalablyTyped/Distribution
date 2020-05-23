@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Omit<rc-field-form.rc-field-form/lib/interface.FormInstance, 'validateFields'> & {  validateFields  :rc-field-form.rc-field-form/lib/interface.InternalValidateFields,   prefixName ? :rc-field-form.rc-field-form/lib/interface.InternalNamePath, getInternalHooks (secret : string): rc-field-form.rc-field-form/lib/interface.InternalHooks | null} */
+/* Inlined std.Omit<rc-field-form.rc-field-form/es/interface.FormInstance, 'validateFields'> & {  validateFields  :rc-field-form.rc-field-form/es/interface.InternalValidateFields,   prefixName ? :rc-field-form.rc-field-form/es/interface.InternalNamePath, getInternalHooks (secret : string): rc-field-form.rc-field-form/es/interface.InternalHooks | null} */
 trait InternalFormInstance extends js.Object {
   var getFieldError: js.Function1[/* name */ NamePath, js.Array[String]]
   var getFieldValue: js.Function1[/* name */ NamePath, StoreValue]

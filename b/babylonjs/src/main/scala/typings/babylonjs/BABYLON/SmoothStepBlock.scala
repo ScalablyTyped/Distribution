@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.SmoothStepBlock")
 @js.native
-class SmoothStepBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new SmoothStepBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait SmoothStepBlock extends NodeMaterialBlock {
   /**
     * Gets the first edge operand input component
     */

@@ -12,8 +12,7 @@ trait ILockWorkingCopyResponse extends js.Object {
 object ILockWorkingCopyResponse {
   @scala.inline
   def apply(merge: ILockData, previousMerge: ILockData = null): ILockWorkingCopyResponse = {
-    val __obj = js.Dynamic.literal(merge = merge.asInstanceOf[js.Any])
-    if (previousMerge != null) __obj.updateDynamic("previousMerge")(previousMerge.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(merge = merge.asInstanceOf[js.Any], previousMerge = previousMerge.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILockWorkingCopyResponse]
   }
 }

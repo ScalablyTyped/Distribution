@@ -1,6 +1,6 @@
 package typings.awsSdk.kinesisMod
 
-import typings.awsSdk.DescribeStreamInputwaiter
+import typings.awsSdk.anon.DescribeStreamInputwaiter
 import typings.awsSdk.awsSdkStrings.streamExists
 import typings.awsSdk.awsSdkStrings.streamNotExists
 import typings.awsSdk.configMod.ConfigBase

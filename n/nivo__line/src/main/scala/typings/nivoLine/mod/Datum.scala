@@ -14,14 +14,14 @@ trait Datum
 object Datum {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    x: DatumValue = null,
-    y: DatumValue = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    x: js.UndefOr[Null | DatumValue] = js.undefined,
+    y: js.UndefOr[Null | DatumValue] = js.undefined
   ): Datum = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Datum]
   }
 }

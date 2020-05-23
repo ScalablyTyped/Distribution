@@ -1,12 +1,12 @@
 package typings.jestCore
 
+import typings.jestCore.anon.ArgumentsPartialallboolea
+import typings.jestCore.anon.IsWatchMode
 import typings.jestCore.searchSourceMod.default
 import typings.jestCore.testSchedulerMod.TestSchedulerContext
 import typings.jestCore.testSchedulerMod.TestSchedulerOptions
 import typings.jestRuntime.mod.Context
-import typings.jestTypes.configMod.Argv
 import typings.jestTypes.configMod.GlobalConfig
-import typings.jestTypes.configMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +28,10 @@ object mod extends js.Object {
   @js.native
   class TestWatcher protected ()
     extends typings.jestCore.testWatcherMod.default {
-    def this(hasIsWatchMode: AnonIsWatchMode) = this()
+    def this(hasIsWatchMode: IsWatchMode) = this()
   }
   
   def getVersion(): String = js.native
-  def runCLI(argv: Argv, projects: js.Array[Path]): js.Promise[AnonGlobalConfig] = js.native
+  def runCLI(argv: ArgumentsPartialallboolea, projects: js.Array[String]): js.Promise[typings.jestCore.anon.GlobalConfig] = js.native
 }
 

@@ -20,7 +20,7 @@ object Observer {
     closed: js.UndefOr[Boolean] = js.undefined
   ): Observer[T] = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Observer[T]]
   }
 }

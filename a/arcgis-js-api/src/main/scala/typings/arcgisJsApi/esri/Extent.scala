@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.esri.geometry.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -181,8 +180,4 @@ trait Extent
     */
   def union(extent: Extent): Extent = js.native
 }
-
-@JSGlobal("__esri.Extent")
-@js.native
-object Extent extends TopLevel[ExtentConstructor]
 

@@ -27,11 +27,15 @@ trait ColorStopProperties extends js.Object {
 
 object ColorStopProperties {
   @scala.inline
-  def apply(color: Color_ | js.Array[Double] | String = null, label: String = null, value: Int | Double = null): ColorStopProperties = {
+  def apply(
+    color: Color_ | js.Array[Double] | String = null,
+    label: String = null,
+    value: js.UndefOr[Double] = js.undefined
+  ): ColorStopProperties = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorStopProperties]
   }
 }

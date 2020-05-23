@@ -14,6 +14,8 @@ trait ExecutionContext[Context] extends Assertions {
   val passed: Boolean = js.native
   @JSName("plan")
   var plan_Original: PlanFn = js.native
+  @JSName("teardown")
+  var teardown_Original: TeardownFn = js.native
   @JSName("timeout")
   var timeout_Original: TimeoutFn = js.native
   /** Title of the test or hook. */
@@ -27,6 +29,7 @@ trait ExecutionContext[Context] extends Assertions {
   	 * number of planned assertions. See [assertion planning](https://github.com/avajs/ava#assertion-planning).
   	 */
   def plan(count: Double): Unit = js.native
+  def teardown(fn: js.Function0[Unit]): Unit = js.native
   def timeout(ms: Double): Unit = js.native
   /**
   	 * Attempt to run some assertions. The result must be explicitly committed or discarded or else

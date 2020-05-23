@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * A command to save the document to a file.
   */
-@JSGlobal("FileSaveCommand")
-@js.native
-class FileSaveCommand () extends CommandWithSimpleStateBase {
+trait FileSaveCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the FileSaveCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
+}
+
+object FileSaveCommand {
+  @scala.inline
+  def apply(execute: () => Boolean, getState: () => SimpleCommandState): FileSaveCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
+    __obj.asInstanceOf[FileSaveCommand]
+  }
 }
 

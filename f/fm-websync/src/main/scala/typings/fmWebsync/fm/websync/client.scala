@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("fm.websync.client")
 @js.native
-class client () extends js.Object {
+trait client extends js.Object {
   /**
     * Sets up and maintains a streaming connection to the server.
     * While this method will typically run asychronously, the WebSync client is designed to be used without (much) consideration for its asynchronous nature.
@@ -40,16 +39,5 @@ class client () extends js.Object {
     * including any modifications made on the server.
     */
   def unsubscribe(config: unsubscribeConfig): client = js.native
-}
-
-/* static members */
-@JSGlobal("fm.websync.client")
-@js.native
-object client extends js.Object {
-  /**
-    * Initializes the client according to the specified configuration.
-    * This method must always be called first. While is always executes synchronously, callbacks are allowed for the purposes of method chaining.
-    */
-  def initialize(config: initializeConfig): client = js.native
 }
 

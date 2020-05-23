@@ -1,5 +1,13 @@
 package typings.rbx
 
+import typings.rbx.anon.Active
+import typings.rbx.anon.AsElementType
+import typings.rbx.anon.NoneTAsComponentextendsElBody
+import typings.rbx.anon.PickModalContainerPropsac
+import typings.rbx.anon.PreferHelpersPropsOverridBackgroundColor
+import typings.rbx.anon.TypeofModalContainer
+import typings.rbx.anon.TypeofModalPortal
+import typings.rbx.anon.`7`
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.rbx.exoticMod.FromReactType
 import typings.rbx.modalBackgroundMod.ModalBackgroundProps
@@ -17,7 +25,7 @@ import typings.rbx.rbxStrings.onClose
 import typings.react.mod.ComponentProps
 import typings.react.mod.ElementType
 import typings.react.mod.RefAttributes
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.Exclude
 import typings.std.Partial
 import typings.std.Pick
@@ -39,11 +47,11 @@ object modalMod extends js.Object {
     @JSName("$$typeof")
     var DollarDollartypeof: js.Symbol = js.native
     var Portal: TypeofModalPortal = js.native
-    var defaultProps: AnonAsElementType with (Partial[PickModalContainerPropsac with (Pick[_, String | Double | js.Symbol])]) = js.native
+    var defaultProps: AsElementType with (Partial[PickModalContainerPropsac with (Pick[_, String | Double | js.Symbol])]) = js.native
     var displayName: js.UndefOr[String] = js.native
-    var propTypes: AnonActive = js.native
+    var propTypes: Active = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: Anon7[TAsComponent] with PickModalContainerPropsac with (Pick[
+      props: `7`[TAsComponent] with PickModalContainerPropsac with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 

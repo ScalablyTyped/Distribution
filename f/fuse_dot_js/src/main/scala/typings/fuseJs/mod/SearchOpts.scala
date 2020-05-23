@@ -10,9 +10,9 @@ trait SearchOpts extends js.Object {
 
 object SearchOpts {
   @scala.inline
-  def apply(limit: Int | Double = null): SearchOpts = {
+  def apply(limit: js.UndefOr[Double] = js.undefined): SearchOpts = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOpts]
   }
 }

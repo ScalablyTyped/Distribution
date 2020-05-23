@@ -17,6 +17,9 @@ trait ValidationError extends Error {
   var name_ValidationError: typings.hapiJoi.hapiJoiStrings.ValidationError = js.native
   /**
     * function that returns a string with an annotated version of the object pointing at the places where errors occurred.
+    *
+    * NOTE: This method does not exist in browser builds of Joi
+    *
     * @param stripColors - if truthy, will strip the colors out of the output.
     */
   def annotate(): String = js.native

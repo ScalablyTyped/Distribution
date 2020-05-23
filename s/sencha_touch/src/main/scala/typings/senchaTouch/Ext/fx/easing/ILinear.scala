@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 
 trait ILinear extends IAbstract {
   /** [Method] Returns the value of duration
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getDuration: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of endValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getEndValue: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Sets the value of duration
-  		* @param duration Number The new value.
-  		*/
+    * @param duration Number The new value.
+    */
   var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of endValue
-  		* @param endValue Number The new value.
-  		*/
+    * @param endValue Number The new value.
+    */
   var setEndValue: js.UndefOr[js.Function1[/* endValue */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -77,7 +77,7 @@ object ILinear {
     if (setEndValue != null) __obj.updateDynamic("setEndValue")(js.Any.fromFunction1(setEndValue))
     if (setStartTime != null) __obj.updateDynamic("setStartTime")(js.Any.fromFunction1(setStartTime))
     if (setStartValue != null) __obj.updateDynamic("setStartValue")(js.Any.fromFunction1(setStartValue))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinear]

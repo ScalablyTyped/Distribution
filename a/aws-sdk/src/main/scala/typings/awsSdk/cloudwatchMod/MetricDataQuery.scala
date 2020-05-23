@@ -39,15 +39,15 @@ object MetricDataQuery {
     Expression: MetricExpression = null,
     Label: MetricLabel = null,
     MetricStat: MetricStat = null,
-    Period: Int | Double = null,
-    ReturnData: js.UndefOr[Boolean] = js.undefined
+    Period: js.UndefOr[Period] = js.undefined,
+    ReturnData: js.UndefOr[ReturnData] = js.undefined
   ): MetricDataQuery = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     if (Expression != null) __obj.updateDynamic("Expression")(Expression.asInstanceOf[js.Any])
     if (Label != null) __obj.updateDynamic("Label")(Label.asInstanceOf[js.Any])
     if (MetricStat != null) __obj.updateDynamic("MetricStat")(MetricStat.asInstanceOf[js.Any])
-    if (Period != null) __obj.updateDynamic("Period")(Period.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReturnData)) __obj.updateDynamic("ReturnData")(ReturnData.asInstanceOf[js.Any])
+    if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReturnData)) __obj.updateDynamic("ReturnData")(ReturnData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDataQuery]
   }
 }

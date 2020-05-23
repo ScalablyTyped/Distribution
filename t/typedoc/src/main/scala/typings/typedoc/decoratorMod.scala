@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PartialDecorator
 import typings.typedoc.decoratorWrapperMod.DecoratorWrapper
 import typings.typedoc.schemaMod.Decorator
 import typings.typedoc.serializationComponentsMod.SerializerComponent

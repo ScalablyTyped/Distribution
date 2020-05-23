@@ -1,11 +1,11 @@
 package typings.mathjs.mod
 
 import typings.decimalJs.mod.Decimal
-import typings.mathjs.AnonCoefficients
-import typings.mathjs.AnonL
-import typings.mathjs.AnonQ
-import typings.mathjs.AnonR
-import typings.mathjs.AnonSimplify
+import typings.mathjs.anon.Coefficients
+import typings.mathjs.anon.L
+import typings.mathjs.anon.Q
+import typings.mathjs.anon.R
+import typings.mathjs.anon.Simplify
 import typings.mathjs.mathjsBooleans.`false`
 import typings.mathjs.mathjsBooleans.`true`
 import typings.mathjs.mathjsStrings.asc
@@ -712,11 +712,11 @@ trait MathJsStatic extends FactoryDependencies {
     */
   def deepEqual(x: MathType, y: MathType): Double | BigNumber | Fraction | Complex | Unit | MathArray | Matrix = js.native
   def derivative(expr: String, variable: String): MathNode = js.native
-  def derivative(expr: String, variable: String, options: AnonSimplify): MathNode = js.native
+  def derivative(expr: String, variable: String, options: Simplify): MathNode = js.native
   def derivative(expr: String, variable: MathNode): MathNode = js.native
-  def derivative(expr: String, variable: MathNode, options: AnonSimplify): MathNode = js.native
+  def derivative(expr: String, variable: MathNode, options: Simplify): MathNode = js.native
   def derivative(expr: MathNode, variable: String): MathNode = js.native
-  def derivative(expr: MathNode, variable: String, options: AnonSimplify): MathNode = js.native
+  def derivative(expr: MathNode, variable: String, options: Simplify): MathNode = js.native
   /*************************************************************************
     * Algebra functions
     ************************************************************************/
@@ -728,7 +728,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The derivative of expr
     */
   def derivative(expr: MathNode, variable: MathNode): MathNode = js.native
-  def derivative(expr: MathNode, variable: MathNode, options: AnonSimplify): MathNode = js.native
+  def derivative(expr: MathNode, variable: MathNode, options: Simplify): MathNode = js.native
   /**
     * Calculate the determinant of a matrix.
     * @param x A Matrix
@@ -1477,9 +1477,9 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The lower triangular matrix, the upper triangular matrix and
     * the permutation matrix.
     */
-  def lup(): AnonL = js.native
-  def lup(A: MathArray): AnonL = js.native
-  def lup(A: Matrix): AnonL = js.native
+  def lup(): L = js.native
+  def lup(A: MathArray): L = js.native
+  def lup(A: Matrix): L = js.native
   def lusolve(A: Double, b: MathArray): Matrix | MathArray = js.native
   def lusolve(A: Double, b: MathArray, order: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: MathArray, order: Double, threshold: Double): Matrix | MathArray = js.native
@@ -1932,7 +1932,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The product of all values
     */
   def prod(args: MathType*): js.Any = js.native
-  def qr(A: MathArray): AnonQ = js.native
+  def qr(A: MathArray): Q = js.native
   /**
     * Calculate the Matrix QR decomposition. Matrix A is decomposed in two
     * matrices (Q, R) where Q is an orthogonal matrix and R is an upper
@@ -1941,7 +1941,7 @@ trait MathJsStatic extends FactoryDependencies {
     * decomposition.
     * @returns Q: the orthogonal matrix and R: the upper triangular matrix
     */
-  def qr(A: Matrix): AnonQ = js.native
+  def qr(A: Matrix): Q = js.native
   /**
     * Compute the prob order quantile of a matrix or a list with values.
     * The sequence is sorted and the middle value is returned. Supported
@@ -2042,9 +2042,18 @@ trait MathJsStatic extends FactoryDependencies {
     */
   def range(str: String): Matrix = js.native
   def range(str: String, includeEnd: Boolean): Matrix = js.native
-  def rationalize(expr: String): AnonCoefficients = js.native
-  def rationalize(expr: String, optional: js.Object): AnonCoefficients = js.native
-  def rationalize(expr: String, optional: Boolean): AnonCoefficients = js.native
+  def rationalize(expr: String): MathNode = js.native
+  def rationalize(expr: String, optional: js.Object): MathNode = js.native
+  def rationalize(expr: String, optional: Boolean): MathNode = js.native
+  def rationalize(expr: MathNode): MathNode = js.native
+  def rationalize(expr: MathNode, optional: js.Object): MathNode = js.native
+  def rationalize(expr: MathNode, optional: Boolean): MathNode = js.native
+  @JSName("rationalize")
+  def rationalize_Coefficients(expr: String): Coefficients = js.native
+  @JSName("rationalize")
+  def rationalize_Coefficients(expr: String, optional: js.Object): Coefficients = js.native
+  @JSName("rationalize")
+  def rationalize_Coefficients(expr: String, optional: Boolean): Coefficients = js.native
   /**
     * Transform a rationalizable expression in a rational fraction. If
     * rational fraction is one variable polynomial then converts the
@@ -2057,21 +2066,12 @@ trait MathJsStatic extends FactoryDependencies {
     * expression node (default)
     * @returns The rational polynomial of expr
     */
-  def rationalize(expr: MathNode): AnonCoefficients = js.native
-  def rationalize(expr: MathNode, optional: js.Object): AnonCoefficients = js.native
-  def rationalize(expr: MathNode, optional: Boolean): AnonCoefficients = js.native
   @JSName("rationalize")
-  def rationalize_MathNode(expr: String): MathNode = js.native
+  def rationalize_Coefficients(expr: MathNode): Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_MathNode(expr: String, optional: js.Object): MathNode = js.native
+  def rationalize_Coefficients(expr: MathNode, optional: js.Object): Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_MathNode(expr: String, optional: Boolean): MathNode = js.native
-  @JSName("rationalize")
-  def rationalize_MathNode(expr: MathNode): MathNode = js.native
-  @JSName("rationalize")
-  def rationalize_MathNode(expr: MathNode, optional: js.Object): MathNode = js.native
-  @JSName("rationalize")
-  def rationalize_MathNode(expr: MathNode, optional: Boolean): MathNode = js.native
+  def rationalize_Coefficients(expr: MathNode, optional: Boolean): Coefficients = js.native
   @JSName("rationalize")
   def rationalize_false(expr: String, optional: js.Object, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
@@ -2081,13 +2081,13 @@ trait MathJsStatic extends FactoryDependencies {
   @JSName("rationalize")
   def rationalize_false(expr: MathNode, optional: Boolean, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
-  def rationalize_true(expr: String, optional: js.Object, detailed: `true`): AnonCoefficients = js.native
+  def rationalize_true(expr: String, optional: js.Object, detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_true(expr: String, optional: Boolean, detailed: `true`): AnonCoefficients = js.native
+  def rationalize_true(expr: String, optional: Boolean, detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_true(expr: MathNode, optional: js.Object, detailed: `true`): AnonCoefficients = js.native
+  def rationalize_true(expr: MathNode, optional: js.Object, detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_true(expr: MathNode, optional: Boolean, detailed: `true`): AnonCoefficients = js.native
+  def rationalize_true(expr: MathNode, optional: Boolean, detailed: `true`): Coefficients = js.native
   /**
     * Get the real part of a complex number. For a complex number a + bi,
     * the function returns a. For matrices, the function is evaluated
@@ -2340,10 +2340,10 @@ trait MathJsStatic extends FactoryDependencies {
   def sign(x: Matrix): Matrix = js.native
   def sign(x: Unit): Unit = js.native
   def simplify(expr: String): MathNode = js.native
-  def simplify(expr: String, rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
+  def simplify(expr: String, rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
   def simplify(
     expr: String,
-    rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])],
+    rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])],
     scope: js.Object
   ): MathNode = js.native
   /**
@@ -2357,10 +2357,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Returns the simplified form of expr
     */
   def simplify(expr: MathNode): MathNode = js.native
-  def simplify(expr: MathNode, rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
+  def simplify(expr: MathNode, rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
   def simplify(
     expr: MathNode,
-    rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])],
+    rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])],
     scope: js.Object
   ): MathNode = js.native
   /**

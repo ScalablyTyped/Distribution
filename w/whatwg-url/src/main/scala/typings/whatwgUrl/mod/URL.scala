@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class URL protected () extends js.Object {
   def this(url: String) = this()
   def this(url: String, base: String) = this()
+  def this(url: String, base: URL) = this()
   var hash: String = js.native
   var host: String = js.native
   var hostname: String = js.native

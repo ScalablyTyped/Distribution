@@ -1,5 +1,7 @@
 package typings.apolloClient
 
+import typings.apolloClient.anon.ErrorMessage
+import typings.apolloClient.anon.Options
 import typings.apolloClient.apolloClientMod.ApolloClientOptions
 import typings.std.Error
 import scala.scalajs.js
@@ -18,13 +20,13 @@ object mod extends js.Object {
   @js.native
   class ApolloError protected ()
     extends typings.apolloClient.apolloErrorMod.ApolloError {
-    def this(hasGraphQLErrorsNetworkErrorErrorMessageExtraInfo: AnonErrorMessage) = this()
+    def this(hasGraphQLErrorsNetworkErrorErrorMessageExtraInfo: ErrorMessage) = this()
   }
   
   @js.native
   class ObservableQuery[TData, TVariables] protected ()
     extends typings.apolloClient.observableQueryMod.ObservableQuery[TData, TVariables] {
-    def this(hasQueryManagerOptionsShouldSubscribe: AnonOptions[TVariables]) = this()
+    def this(hasQueryManagerOptionsShouldSubscribe: Options[TVariables]) = this()
   }
   
   @js.native

@@ -17,11 +17,15 @@ trait IGossipMessage extends js.Object {
 
 object IGossipMessage {
   @scala.inline
-  def apply(content: Uint8Array = null, contentType: ContentType = null, timeToLive: Int | Double = null): IGossipMessage = {
+  def apply(
+    content: js.UndefOr[Null | Uint8Array] = js.undefined,
+    contentType: js.UndefOr[Null | ContentType] = js.undefined,
+    timeToLive: js.UndefOr[Null | Double] = js.undefined
+  ): IGossipMessage = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (timeToLive != null) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentType)) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeToLive)) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGossipMessage]
   }
 }

@@ -1,9 +1,9 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.Anon1
-import typings.victory.AnonXBoolean
-import typings.victory.AnonY
+import typings.victory.anon.XBoolean
+import typings.victory.anon.Y
+import typings.victory.anon.`1`
 import typings.victory.victoryStrings.bottom
 import typings.victory.victoryStrings.left
 import typings.victory.victoryStrings.right
@@ -272,7 +272,7 @@ object VictoryBoxPlotProps {
   @scala.inline
   def apply(
     animate: Boolean | AnimatePropTypeInterface = null,
-    boxWidth: Int | Double = null,
+    boxWidth: js.UndefOr[Double] = js.undefined,
     categories: CategoryPropType = null,
     containerComponent: ReactElement = null,
     data: js.Array[_] = null,
@@ -282,20 +282,20 @@ object VictoryBoxPlotProps {
     eventKey: StringOrNumberOrCallback = null,
     events: js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]] = null,
     groupComponent: ReactElement = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     horizontal: js.UndefOr[Boolean] = js.undefined,
     labelOrientation: top | bottom | left | right = null,
     labels: js.UndefOr[Boolean] = js.undefined,
     max: StringOrNumberOrCallback | js.Array[String] = null,
     maxComponent: ReactElement = null,
-    maxDomain: Double | AnonY = null,
+    maxDomain: Double | Y = null,
     maxLabelComponent: ReactElement = null,
     median: StringOrNumberOrCallback | js.Array[String] = null,
     medianComponent: ReactElement = null,
     medianLabelComponent: ReactElement = null,
     min: StringOrNumberOrCallback | js.Array[String] = null,
     minComponent: ReactElement = null,
-    minDomain: Double | AnonY = null,
+    minDomain: Double | Y = null,
     minLabelComponent: ReactElement = null,
     name: String = null,
     padding: PaddingProps = null,
@@ -305,20 +305,20 @@ object VictoryBoxPlotProps {
     q3: StringOrNumberOrCallback | js.Array[String] = null,
     q3Component: ReactElement = null,
     q3LabelComponent: ReactElement = null,
-    scale: ScalePropType | D3Scale | Anon1 = null,
-    singleQuadrantDomainPadding: Boolean | AnonXBoolean = null,
+    scale: ScalePropType | D3Scale | `1` = null,
+    singleQuadrantDomainPadding: Boolean | XBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryBoxPlotStyleInterface = null,
     theme: VictoryThemeDefinition = null,
-    whiskerWidth: Int | Double = null,
-    width: Int | Double = null,
+    whiskerWidth: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
     x: DataGetterPropType = null,
     y: DataGetterPropType = null,
     y0: DataGetterPropType = null
   ): VictoryBoxPlotProps = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (boxWidth != null) __obj.updateDynamic("boxWidth")(boxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxWidth)) __obj.updateDynamic("boxWidth")(boxWidth.get.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -328,10 +328,10 @@ object VictoryBoxPlotProps {
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
     if (labelOrientation != null) __obj.updateDynamic("labelOrientation")(labelOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxComponent != null) __obj.updateDynamic("maxComponent")(maxComponent.asInstanceOf[js.Any])
     if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
@@ -353,11 +353,11 @@ object VictoryBoxPlotProps {
     if (q3LabelComponent != null) __obj.updateDynamic("q3LabelComponent")(q3LabelComponent.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (whiskerWidth != null) __obj.updateDynamic("whiskerWidth")(whiskerWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(whiskerWidth)) __obj.updateDynamic("whiskerWidth")(whiskerWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])

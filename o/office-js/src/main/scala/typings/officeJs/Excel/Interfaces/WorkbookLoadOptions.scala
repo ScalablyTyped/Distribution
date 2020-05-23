@@ -26,7 +26,7 @@ trait WorkbookLoadOptions extends js.Object {
   var application: js.UndefOr[ApplicationLoadOptions] = js.undefined
   /**
     *
-    * Specifies whether or not the workbook is in autosave mode. Read-Only.
+    * Specifies if the workbook is in autosave mode.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -40,7 +40,7 @@ trait WorkbookLoadOptions extends js.Object {
   var bindings: js.UndefOr[BindingCollectionLoadOptions] = js.undefined
   /**
     *
-    * Returns a number about the version of Excel Calculation Engine. Read-Only.
+    * Returns a number about the version of Excel Calculation Engine.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -55,7 +55,7 @@ trait WorkbookLoadOptions extends js.Object {
   var chartDataPointTrack: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not changes have been made since the workbook was last saved.
+    * Specifies if changes have been made since the workbook was last saved.
     You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
     * [Api set: ExcelApi 1.9]
@@ -63,14 +63,14 @@ trait WorkbookLoadOptions extends js.Object {
   var isDirty: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets the workbook name. Read-only.
+    * Gets the workbook name.
     *
     * [Api set: ExcelApi 1.7]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+    * Specifies if the workbook has ever been saved locally or online.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -84,14 +84,14 @@ trait WorkbookLoadOptions extends js.Object {
   var properties: js.UndefOr[DocumentPropertiesLoadOptions] = js.undefined
   /**
     *
-    * Returns workbook protection object for a workbook.
+    * Returns the protection object for a workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   var protection: js.UndefOr[WorkbookProtectionLoadOptions] = js.undefined
   /**
     *
-    * True if the workbook is open in Read-only mode. Read-only.
+    * True if the workbook is open in Read-only mode.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -132,20 +132,20 @@ object WorkbookLoadOptions {
     usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined
   ): WorkbookLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave.get.asInstanceOf[js.Any])
     if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(previouslySaved)) __obj.updateDynamic("previouslySaved")(previouslySaved.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(previouslySaved)) __obj.updateDynamic("previouslySaved")(previouslySaved.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookLoadOptions]
   }
 }

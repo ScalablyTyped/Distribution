@@ -11,20 +11,20 @@ trait IFlip extends IAbstract {
   /** [Config Option] (String) */
   var direction: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of half
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getHalf: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of out
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getOut: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of half
-  		* @param half Boolean The new value.
-  		*/
+    * @param half Boolean The new value.
+    */
   var setHalf: js.UndefOr[js.Function1[/* half */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of out
-  		* @param out Object The new value.
-  		*/
+    * @param out Object The new value.
+    */
   var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -202,7 +202,7 @@ object IFlip {
     if (setReplacePrevious != null) __obj.updateDynamic("setReplacePrevious")(js.Any.fromFunction1(setReplacePrevious))
     if (setReverse != null) __obj.updateDynamic("setReverse")(js.Any.fromFunction1(setReverse))
     if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

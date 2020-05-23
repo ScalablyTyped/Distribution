@@ -21,10 +21,10 @@ trait DeploymentConfigMinimumHealthyHosts extends js.Object {
 
 object DeploymentConfigMinimumHealthyHosts {
   @scala.inline
-  def apply(`type`: String = null, value: Int | Double = null): DeploymentConfigMinimumHealthyHosts = {
+  def apply(`type`: String = null, value: js.UndefOr[Double] = js.undefined): DeploymentConfigMinimumHealthyHosts = {
     val __obj = js.Dynamic.literal()
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentConfigMinimumHealthyHosts]
   }
 }

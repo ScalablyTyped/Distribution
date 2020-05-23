@@ -40,8 +40,8 @@ object SearchProperties {
     layers: CollectionProperties[SearchLayerProperties] = null
   ): SearchProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addressSearchEnabled)) __obj.updateDynamic("addressSearchEnabled")(addressSearchEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(addressSearchEnabled)) __obj.updateDynamic("addressSearchEnabled")(addressSearchEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (hintText != null) __obj.updateDynamic("hintText")(hintText.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchProperties]

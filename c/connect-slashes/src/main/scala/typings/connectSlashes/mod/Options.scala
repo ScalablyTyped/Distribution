@@ -17,10 +17,14 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(base: String = null, code: Int | Double = null, headers: StringDictionary[String] = null): Options = {
+  def apply(
+    base: String = null,
+    code: js.UndefOr[Double] = js.undefined,
+    headers: StringDictionary[String] = null
+  ): Options = {
     val __obj = js.Dynamic.literal()
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -13,7 +13,7 @@ object configurationMod extends js.Object {
     def this(token: String, options: js.Any) = this()
     var _token: js.Any = js.native
     val registrarUrl: String = js.native
-    val token: String = js.native
+    def token: String = js.native
     def updateToken(token: String): Unit = js.native
   }
   

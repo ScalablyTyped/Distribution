@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSForms.MultiPage")
 @js.native
-class MultiPage protected () extends js.Object {
+trait MultiPage extends js.Object {
   var BackColor: Double = js.native
   var Enabled: Boolean = js.native
   var Font: NewFont = js.native

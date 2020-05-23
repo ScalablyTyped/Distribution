@@ -1,7 +1,7 @@
 package typings.soupbintcp.mod
 
 import typings.node.eventsMod.EventEmitter
-import typings.soupbintcp.AnonHost
+import typings.soupbintcp.anon.Host
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("soupbintcp", "Client")
 @js.native
 class Client protected () extends EventEmitter {
-  def this(options: AnonHost) = this()
-  def this(options: AnonHost, callback: js.Function0[Unit]) = this()
+  def this(options: Host) = this()
+  def this(options: Host, callback: js.Function0[Unit]) = this()
   def end(): Unit = js.native
   def login(payload: LoginRequestPayload): Unit = js.native
   def login(payload: LoginRequestPayload, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native

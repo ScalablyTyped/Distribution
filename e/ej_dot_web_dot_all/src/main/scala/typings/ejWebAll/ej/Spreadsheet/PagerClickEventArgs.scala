@@ -32,20 +32,20 @@ trait PagerClickEventArgs extends js.Object {
 object PagerClickEventArgs {
   @scala.inline
   def apply(
-    activeSheet: Int | Double = null,
+    activeSheet: js.UndefOr[Double] = js.undefined,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    gotoSheet: Int | Double = null,
+    gotoSheet: js.UndefOr[Double] = js.undefined,
     model: Model = null,
     newSheet: js.UndefOr[Boolean] = js.undefined,
     target: HTMLElement = null,
     `type`: String = null
   ): PagerClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (activeSheet != null) __obj.updateDynamic("activeSheet")(activeSheet.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (gotoSheet != null) __obj.updateDynamic("gotoSheet")(gotoSheet.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeSheet)) __obj.updateDynamic("activeSheet")(activeSheet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gotoSheet)) __obj.updateDynamic("gotoSheet")(gotoSheet.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet.asInstanceOf[js.Any])
+    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet.get.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerClickEventArgs]

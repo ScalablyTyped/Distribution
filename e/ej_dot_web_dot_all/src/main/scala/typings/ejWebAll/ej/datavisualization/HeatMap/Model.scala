@@ -82,7 +82,7 @@ object Model {
     enableVirtualization: js.UndefOr[Boolean] = js.undefined,
     heatMapCell: HeatMapCell = null,
     height: js.Any = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     isResponsive: js.UndefOr[Boolean] = js.undefined,
     itemsMapping: ItemsMapping = null,
     itemsSource: js.Any = null,
@@ -98,15 +98,15 @@ object Model {
     if (cellSelected != null) __obj.updateDynamic("cellSelected")(js.Any.fromFunction1(cellSelected))
     if (colorMappingCollection != null) __obj.updateDynamic("colorMappingCollection")(colorMappingCollection.asInstanceOf[js.Any])
     if (defaultColumnStyle != null) __obj.updateDynamic("defaultColumnStyle")(defaultColumnStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization.get.asInstanceOf[js.Any])
     if (heatMapCell != null) __obj.updateDynamic("heatMapCell")(heatMapCell.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (itemsMapping != null) __obj.updateDynamic("itemsMapping")(itemsMapping.asInstanceOf[js.Any])
     if (itemsSource != null) __obj.updateDynamic("itemsSource")(itemsSource.asInstanceOf[js.Any])
     if (legendCollection != null) __obj.updateDynamic("legendCollection")(legendCollection.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.get.asInstanceOf[js.Any])
     if (tooltipSettings != null) __obj.updateDynamic("tooltipSettings")(tooltipSettings.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]

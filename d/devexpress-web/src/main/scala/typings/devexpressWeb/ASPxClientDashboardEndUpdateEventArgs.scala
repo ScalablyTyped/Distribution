@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientDashboard.DashboardEndUpdate event.
   */
-@JSGlobal("ASPxClientDashboardEndUpdateEventArgs")
-@js.native
-class ASPxClientDashboardEndUpdateEventArgs () extends ASPxClientEventArgs {
+trait ASPxClientDashboardEndUpdateEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the identifier of the dashboard for which the event was raised.
     */
-  var DashboardId: String = js.native
+  var DashboardId: String
+}
+
+object ASPxClientDashboardEndUpdateEventArgs {
+  @scala.inline
+  def apply(DashboardId: String): ASPxClientDashboardEndUpdateEventArgs = {
+    val __obj = js.Dynamic.literal(DashboardId = DashboardId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientDashboardEndUpdateEventArgs]
+  }
 }
 

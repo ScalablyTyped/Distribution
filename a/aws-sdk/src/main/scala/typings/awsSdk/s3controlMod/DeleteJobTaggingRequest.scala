@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteJobTaggingRequest extends js.Object {
   /**
-    * The account ID for the Amazon Web Services account associated with the Amazon S3 batch operations job you want to remove tags from.
+    * The AWS account ID associated with the Amazon S3 Batch Operations job.
     */
   var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
   /**
-    * The ID for the job whose tags you want to delete.
+    * The ID for the Amazon S3 Batch Operations job whose tags you want to delete.
     */
   var JobId: typings.awsSdk.s3controlMod.JobId = js.native
 }

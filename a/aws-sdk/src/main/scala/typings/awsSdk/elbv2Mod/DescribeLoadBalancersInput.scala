@@ -30,13 +30,13 @@ object DescribeLoadBalancersInput {
     LoadBalancerArns: LoadBalancerArns = null,
     Marker: Marker = null,
     Names: LoadBalancerNames = null,
-    PageSize: Int | Double = null
+    PageSize: js.UndefOr[PageSize] = js.undefined
   ): DescribeLoadBalancersInput = {
     val __obj = js.Dynamic.literal()
     if (LoadBalancerArns != null) __obj.updateDynamic("LoadBalancerArns")(LoadBalancerArns.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLoadBalancersInput]
   }
 }

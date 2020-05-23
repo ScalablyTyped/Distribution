@@ -16,10 +16,10 @@ trait IRowEditing extends IEditing {
   /** [Config Option] (Boolean) */
   var errorSummary: js.UndefOr[Boolean] = js.undefined
   /** [Method] Starts editing the specified record using the specified Column definition to define which field is being edited
-  		* @param record Ext.data.Model The Store data record which backs the row to be edited.
-  		* @param columnHeader Ext.data.Model The Column object defining the column to be edited.
-  		* @returns Boolean true if editing was started, false otherwise.
-  		*/
+    * @param record Ext.data.Model The Store data record which backs the row to be edited.
+    * @param columnHeader Ext.data.Model The Column object defining the column to be edited.
+    * @returns Boolean true if editing was started, false otherwise.
+    */
   @JSName("startEdit")
   var startEdit_IRowEditing: js.UndefOr[
     js.Function2[/* record */ js.UndefOr[IModel], /* columnHeader */ js.UndefOr[IModel], Boolean]
@@ -41,8 +41,8 @@ object IRowEditing {
     cancelEdit: () => Unit = null,
     clearListeners: () => Unit = null,
     clearManagedListeners: () => Unit = null,
-    clicksToEdit: Int | Double = null,
-    clicksToMoveEditor: Int | Double = null,
+    clicksToEdit: js.UndefOr[Double] = js.undefined,
+    clicksToMoveEditor: js.UndefOr[Double] = js.undefined,
     clonePlugin: /* overrideCfg */ js.UndefOr[js.Any] => Unit = null,
     completeEdit: () => Unit = null,
     config: js.Any = null,
@@ -93,24 +93,24 @@ object IRowEditing {
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCancel)) __obj.updateDynamic("autoCancel")(autoCancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCancel)) __obj.updateDynamic("autoCancel")(autoCancel.get.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (cancelEdit != null) __obj.updateDynamic("cancelEdit")(js.Any.fromFunction0(cancelEdit))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
-    if (clicksToEdit != null) __obj.updateDynamic("clicksToEdit")(clicksToEdit.asInstanceOf[js.Any])
-    if (clicksToMoveEditor != null) __obj.updateDynamic("clicksToMoveEditor")(clicksToMoveEditor.asInstanceOf[js.Any])
+    if (!js.isUndefined(clicksToEdit)) __obj.updateDynamic("clicksToEdit")(clicksToEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clicksToMoveEditor)) __obj.updateDynamic("clicksToMoveEditor")(clicksToMoveEditor.get.asInstanceOf[js.Any])
     if (clonePlugin != null) __obj.updateDynamic("clonePlugin")(js.Any.fromFunction1(clonePlugin))
     if (completeEdit != null) __obj.updateDynamic("completeEdit")(js.Any.fromFunction0(completeEdit))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing.asInstanceOf[js.Any])
+    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing.get.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (!js.isUndefined(errorSummary)) __obj.updateDynamic("errorSummary")(errorSummary.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorSummary)) __obj.updateDynamic("errorSummary")(errorSummary.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(js.Any.fromFunction2(fireEventArgs))
@@ -121,8 +121,8 @@ object IRowEditing {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -137,7 +137,7 @@ object IRowEditing {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setCmp != null) __obj.updateDynamic("setCmp")(js.Any.fromFunction1(setCmp))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (startEdit != null) __obj.updateDynamic("startEdit")(js.Any.fromFunction2(startEdit))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))

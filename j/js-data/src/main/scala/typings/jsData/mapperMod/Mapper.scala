@@ -1,7 +1,7 @@
 package typings.jsData.mapperMod
 
-import typings.jsData.AnonCount
-import typings.jsData.TypeofRecord
+import typings.jsData.anon.Count
+import typings.jsData.anon.TypeofRecord
 import typings.jsData.jsDataBooleans.`false`
 import typings.jsData.queryMod.QueryDefinition
 import scala.scalajs.js
@@ -32,7 +32,7 @@ trait Mapper
     * @since 3.0.0
     * @type {Object}
     */
-  var lifecycleMethods: AnonCount = js.native
+  var lifecycleMethods: Count = js.native
   var methods: js.Any = js.native
   var name: String = js.native
   /**

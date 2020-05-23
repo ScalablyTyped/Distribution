@@ -25,8 +25,8 @@ object SharedProps {
   ): SharedProps = {
     val __obj = js.Dynamic.literal()
     if ($color != null) __obj.updateDynamic("$color")($color.asInstanceOf[js.Any])
-    if (!js.isUndefined($disabled)) __obj.updateDynamic("$disabled")($disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined($expanded)) __obj.updateDynamic("$expanded")($expanded.asInstanceOf[js.Any])
+    if (!js.isUndefined($disabled)) __obj.updateDynamic("$disabled")($disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($expanded)) __obj.updateDynamic("$expanded")($expanded.get.asInstanceOf[js.Any])
     if ($size != null) __obj.updateDynamic("$size")($size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedProps]
   }

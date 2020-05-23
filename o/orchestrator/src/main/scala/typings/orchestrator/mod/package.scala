@@ -13,9 +13,9 @@ package object mod {
   ]
   /** The module export of the sequencify package: https://www.npmjs.com/package/sequencify */
   type Sequencify = js.Function2[
-    /* tasks */ js.Array[typings.orchestrator.AnonDep], 
+    /* tasks */ js.Array[typings.orchestrator.anon.Dep], 
     /* names */ js.Array[java.lang.String], 
-    typings.orchestrator.AnonMissingTasks
+    typings.orchestrator.anon.MissingTasks
   ]
   type Strings = java.lang.String | js.Array[java.lang.String]
   /** A task, can either call a callback to indicate task completion or return a promise or a stream: (task is marked complete when promise.then() resolves/fails or stream ends)

@@ -19,19 +19,19 @@ object QueryOptions {
   def apply(
     host: String,
     `type`: Type,
-    attemptTimeout: Int | Double = null,
-    maxAttempts: Int | Double = null,
+    attemptTimeout: js.UndefOr[Double] = js.undefined,
+    maxAttempts: js.UndefOr[Double] = js.undefined,
     notes: js.Object = null,
-    port: Int | Double = null,
-    socketTimeout: Int | Double = null
+    port: js.UndefOr[Double] = js.undefined,
+    socketTimeout: js.UndefOr[Double] = js.undefined
   ): QueryOptions = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attemptTimeout != null) __obj.updateDynamic("attemptTimeout")(attemptTimeout.asInstanceOf[js.Any])
-    if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(attemptTimeout)) __obj.updateDynamic("attemptTimeout")(attemptTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAttempts)) __obj.updateDynamic("maxAttempts")(maxAttempts.get.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

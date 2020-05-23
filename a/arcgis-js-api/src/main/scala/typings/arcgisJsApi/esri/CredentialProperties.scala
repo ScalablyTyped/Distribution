@@ -52,7 +52,7 @@ trait CredentialProperties extends js.Object {
 object CredentialProperties {
   @scala.inline
   def apply(
-    expires: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
     isAdmin: js.UndefOr[Boolean] = js.undefined,
     oAuthState: js.Any = null,
     server: String = null,
@@ -61,11 +61,11 @@ object CredentialProperties {
     userId: String = null
   ): CredentialProperties = {
     val __obj = js.Dynamic.literal()
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAdmin)) __obj.updateDynamic("isAdmin")(isAdmin.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAdmin)) __obj.updateDynamic("isAdmin")(isAdmin.get.asInstanceOf[js.Any])
     if (oAuthState != null) __obj.updateDynamic("oAuthState")(oAuthState.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialProperties]

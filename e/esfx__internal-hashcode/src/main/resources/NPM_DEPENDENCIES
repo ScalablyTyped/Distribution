@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@esfx/internal-hashcode" : "1.0.0-pre.9"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@esfx/internal-hashcode" : "1.0.0-pre.9"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

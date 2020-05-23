@@ -27,14 +27,8 @@ import scala.scalajs.js.annotation._
   * sprite.setPipeline('Light2D');
   * ```
   */
-@JSGlobal("Phaser.GameObjects.LightsPlugin")
 @js.native
-class LightsPlugin protected () extends LightsManager {
-  /**
-    * 
-    * @param scene The Scene that this Lights Plugin belongs to.
-    */
-  def this(scene: Scene) = this()
+trait LightsPlugin extends LightsManager {
   /**
     * A reference to the Scene that this Lights Plugin belongs to.
     */

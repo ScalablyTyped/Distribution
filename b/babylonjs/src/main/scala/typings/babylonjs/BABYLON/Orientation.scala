@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,14 +19,6 @@ object Orientation extends js.Object {
     */
   @js.native
   sealed trait CW extends Orientation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
-  /* 1 */ @js.native
-  object CCW extends TopLevel[CCW with Double]
-  
-  /* 0 */ @js.native
-  object CW extends TopLevel[CW with Double]
   
 }
 

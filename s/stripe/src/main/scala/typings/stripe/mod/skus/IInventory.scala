@@ -35,12 +35,12 @@ object IInventory {
   @scala.inline
   def apply(
     `type`: finite | bucket | infinite,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     value: in_stock | limited | out_of_stock = null
   ): IInventory = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInventory]
   }

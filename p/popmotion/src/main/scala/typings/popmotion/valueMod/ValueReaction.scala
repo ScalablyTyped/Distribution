@@ -1,8 +1,8 @@
 package typings.popmotion.valueMod
 
 import typings.framesync.typesMod.FrameData
-import typings.framesync.typesMod.Process
 import typings.popmotion.reactionsMod.BaseMulticast
+import typings.popmotion.typesMod.Process
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

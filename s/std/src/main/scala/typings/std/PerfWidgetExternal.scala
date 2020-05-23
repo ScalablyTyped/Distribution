@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,8 +32,4 @@ trait PerfWidgetExternal extends js.Object {
   def repositionWindow(x: Double, y: Double): Unit = js.native
   def resizeWindow(width: Double, height: Double): Unit = js.native
 }
-
-@JSGlobal("PerfWidgetExternal")
-@js.native
-object PerfWidgetExternal extends Instantiable0[PerfWidgetExternal]
 

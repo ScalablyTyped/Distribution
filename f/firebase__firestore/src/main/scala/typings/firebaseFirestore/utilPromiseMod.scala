@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/util/promise", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/util/promise", JSImport.Namespace)
 @js.native
 object utilPromiseMod extends js.Object {
   @js.native

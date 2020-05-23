@@ -69,26 +69,26 @@ object ResourceRecordSet {
     Failover: ResourceRecordSetFailover = null,
     GeoLocation: GeoLocation = null,
     HealthCheckId: HealthCheckId = null,
-    MultiValueAnswer: js.UndefOr[Boolean] = js.undefined,
+    MultiValueAnswer: js.UndefOr[ResourceRecordSetMultiValueAnswer] = js.undefined,
     Region: ResourceRecordSetRegion = null,
     ResourceRecords: ResourceRecords = null,
     SetIdentifier: ResourceRecordSetIdentifier = null,
-    TTL: Int | Double = null,
+    TTL: js.UndefOr[TTL] = js.undefined,
     TrafficPolicyInstanceId: TrafficPolicyInstanceId = null,
-    Weight: Int | Double = null
+    Weight: js.UndefOr[ResourceRecordSetWeight] = js.undefined
   ): ResourceRecordSet = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     if (AliasTarget != null) __obj.updateDynamic("AliasTarget")(AliasTarget.asInstanceOf[js.Any])
     if (Failover != null) __obj.updateDynamic("Failover")(Failover.asInstanceOf[js.Any])
     if (GeoLocation != null) __obj.updateDynamic("GeoLocation")(GeoLocation.asInstanceOf[js.Any])
     if (HealthCheckId != null) __obj.updateDynamic("HealthCheckId")(HealthCheckId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiValueAnswer)) __obj.updateDynamic("MultiValueAnswer")(MultiValueAnswer.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiValueAnswer)) __obj.updateDynamic("MultiValueAnswer")(MultiValueAnswer.get.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     if (ResourceRecords != null) __obj.updateDynamic("ResourceRecords")(ResourceRecords.asInstanceOf[js.Any])
     if (SetIdentifier != null) __obj.updateDynamic("SetIdentifier")(SetIdentifier.asInstanceOf[js.Any])
-    if (TTL != null) __obj.updateDynamic("TTL")(TTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(TTL)) __obj.updateDynamic("TTL")(TTL.get.asInstanceOf[js.Any])
     if (TrafficPolicyInstanceId != null) __obj.updateDynamic("TrafficPolicyInstanceId")(TrafficPolicyInstanceId.asInstanceOf[js.Any])
-    if (Weight != null) __obj.updateDynamic("Weight")(Weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(Weight)) __obj.updateDynamic("Weight")(Weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceRecordSet]
   }
 }

@@ -13,10 +13,9 @@ trait IChangeMutator extends Mutator {
 
 object IChangeMutator {
   @scala.inline
-  def apply(mutatorType: CHANGE, updateIndex: Int | Double = null, value: PrimitiveValue = null): IChangeMutator = {
-    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any])
-    if (updateIndex != null) __obj.updateDynamic("updateIndex")(updateIndex.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+  def apply(mutatorType: CHANGE, updateIndex: js.UndefOr[Double] = js.undefined, value: PrimitiveValue = null): IChangeMutator = {
+    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateIndex)) __obj.updateDynamic("updateIndex")(updateIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangeMutator]
   }
 }

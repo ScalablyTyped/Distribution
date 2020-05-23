@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.backward
 import typings.std.stdStrings.forward
 import typings.std.stdStrings.none
@@ -117,8 +116,4 @@ trait HTMLTextAreaElement extends HTMLElement {
   @JSName("setSelectionRange")
   def setSelectionRange_none(start: Double, end: Double, direction: none): Unit = js.native
 }
-
-@JSGlobal("HTMLTextAreaElement")
-@js.native
-object HTMLTextAreaElement extends Instantiable0[HTMLTextAreaElement]
 

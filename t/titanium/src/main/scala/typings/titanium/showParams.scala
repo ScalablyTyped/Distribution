@@ -10,32 +10,32 @@ import scala.scalajs.js.annotation._
   */
 trait showParams extends js.Object {
   /**
-  	 * Determines whether to animate the dialog as it is shown.
-  	 */
+    * Determines whether to animate the dialog as it is shown.
+    */
   var animated: js.UndefOr[Boolean] = js.undefined
   /**
-  	 * Array of String instances.
-  	 */
+    * Array of String instances.
+    */
   var buttonNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-  	 * String to be used as a message for the dialog.
-  	 */
+    * String to be used as a message for the dialog.
+    */
   var message: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Array of String instances.
-  	 */
+    * Array of String instances.
+    */
   var options: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-  	 * Positions the arrow of the option dialog relative to the attached view's dimensions.
-  	 */
+    * Positions the arrow of the option dialog relative to the attached view's dimensions.
+    */
   var rect: js.UndefOr[Dimension] = js.undefined
   /**
-  	 * String to be used as title for the dialog.
-  	 */
+    * String to be used as title for the dialog.
+    */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * View to which to attach the dialog.
-  	 */
+    * View to which to attach the dialog.
+    */
   var view: js.UndefOr[View] = js.undefined
 }
 
@@ -51,7 +51,7 @@ object showParams {
     view: View = null
   ): showParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
     if (buttonNames != null) __obj.updateDynamic("buttonNames")(buttonNames.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

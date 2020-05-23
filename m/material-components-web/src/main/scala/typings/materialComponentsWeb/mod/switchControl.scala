@@ -1,9 +1,9 @@
 package typings.materialComponentsWeb.mod
 
-import typings.materialSwitch.AnonARIACHECKEDATTR
-import typings.materialSwitch.AnonCHECKED
-import typings.materialSwitch.PartialMDCSwitchAdapter
 import typings.materialSwitch.adapterMod.MDCSwitchAdapter
+import typings.materialSwitch.anon.ARIACHECKEDATTR
+import typings.materialSwitch.anon.CHECKED
+import typings.materialSwitch.anon.PartialMDCSwitchAdapter
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,11 +32,11 @@ object switchControl extends js.Object {
   @js.native
   object MDCSwitchFoundation extends js.Object {
     /** The CSS classes used by the switch. */
-    val cssClasses: AnonCHECKED = js.native
+    val cssClasses: CHECKED = js.native
     /** The default Adapter for the switch. */
     val defaultAdapter: MDCSwitchAdapter = js.native
     /** The string constants used by the switch. */
-    val strings: AnonARIACHECKEDATTR = js.native
+    val strings: ARIACHECKEDATTR = js.native
   }
   
   /** CSS classes used by the switch. */

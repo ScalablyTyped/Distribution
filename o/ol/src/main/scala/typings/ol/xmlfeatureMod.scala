@@ -2,7 +2,7 @@ package typings.ol
 
 import typings.ol.featureMod.ReadOptions
 import typings.ol.featureMod.WriteOptions
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,19 +14,19 @@ object xmlfeatureMod extends js.Object {
   @js.native
   trait XMLFeature
     extends typings.ol.featureMod.default {
-    def readFeatureFromDocument(doc: Document_): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
-    def readFeatureFromDocument(doc: Document_, opt_options: ReadOptions): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
+    def readFeatureFromDocument(doc: Document): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
+    def readFeatureFromDocument(doc: Document, opt_options: ReadOptions): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
     def readFeatureFromNode(node: Node): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
     def readFeatureFromNode(node: Node, opt_options: ReadOptions): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
-    /* protected */ def readFeaturesFromDocument(doc: Document_): js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
-    /* protected */ def readFeaturesFromDocument(doc: Document_, opt_options: ReadOptions): js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
+    /* protected */ def readFeaturesFromDocument(doc: Document): js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
+    /* protected */ def readFeaturesFromDocument(doc: Document, opt_options: ReadOptions): js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
     /* protected */ def readFeaturesFromNode(node: Node): js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
     /* protected */ def readFeaturesFromNode(node: Node, opt_options: ReadOptions): js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
-    /* protected */ def readGeometryFromDocument(doc: Document_): typings.ol.geometryMod.default = js.native
-    /* protected */ def readGeometryFromDocument(doc: Document_, opt_options: ReadOptions): typings.ol.geometryMod.default = js.native
+    /* protected */ def readGeometryFromDocument(doc: Document): typings.ol.geometryMod.default = js.native
+    /* protected */ def readGeometryFromDocument(doc: Document, opt_options: ReadOptions): typings.ol.geometryMod.default = js.native
     /* protected */ def readGeometryFromNode(node: Node): typings.ol.geometryMod.default = js.native
     /* protected */ def readGeometryFromNode(node: Node, opt_options: ReadOptions): typings.ol.geometryMod.default = js.native
-    /* protected */ def readProjectionFromDocument(doc: Document_): typings.ol.projectionMod.default = js.native
+    /* protected */ def readProjectionFromDocument(doc: Document): typings.ol.projectionMod.default = js.native
     /* protected */ def readProjectionFromNode(node: Node): typings.ol.projectionMod.default = js.native
     /* protected */ def writeFeatureNode(feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]): Node = js.native
     /* protected */ def writeFeatureNode(

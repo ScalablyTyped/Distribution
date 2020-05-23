@@ -40,7 +40,7 @@ object LayerVersionsListItem {
     Description: Description = null,
     LayerVersionArn: LayerVersionArn = null,
     LicenseInfo: LicenseInfo = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[LayerVersionNumber] = js.undefined
   ): LayerVersionsListItem = {
     val __obj = js.Dynamic.literal()
     if (CompatibleRuntimes != null) __obj.updateDynamic("CompatibleRuntimes")(CompatibleRuntimes.asInstanceOf[js.Any])
@@ -48,7 +48,7 @@ object LayerVersionsListItem {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (LayerVersionArn != null) __obj.updateDynamic("LayerVersionArn")(LayerVersionArn.asInstanceOf[js.Any])
     if (LicenseInfo != null) __obj.updateDynamic("LicenseInfo")(LicenseInfo.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerVersionsListItem]
   }
 }

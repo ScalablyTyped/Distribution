@@ -20,11 +20,11 @@ object ProcessorInfo {
   @scala.inline
   def apply(
     SupportedArchitectures: ArchitectureTypeList = null,
-    SustainedClockSpeedInGhz: Int | scala.Double = null
+    SustainedClockSpeedInGhz: js.UndefOr[ProcessorSustainedClockSpeed] = js.undefined
   ): ProcessorInfo = {
     val __obj = js.Dynamic.literal()
     if (SupportedArchitectures != null) __obj.updateDynamic("SupportedArchitectures")(SupportedArchitectures.asInstanceOf[js.Any])
-    if (SustainedClockSpeedInGhz != null) __obj.updateDynamic("SustainedClockSpeedInGhz")(SustainedClockSpeedInGhz.asInstanceOf[js.Any])
+    if (!js.isUndefined(SustainedClockSpeedInGhz)) __obj.updateDynamic("SustainedClockSpeedInGhz")(SustainedClockSpeedInGhz.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessorInfo]
   }
 }

@@ -1,6 +1,5 @@
 package typings.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,6 @@ object EndpointType extends js.Object {
   
   @js.native
   sealed trait QUEUE extends EndpointType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EndpointType with String] = js.native
-  /* "agent" */ @js.native
-  object AGENT extends TopLevel[AGENT with String]
-  
-  /* "phone_number" */ @js.native
-  object PHONE_NUMBER extends TopLevel[PHONE_NUMBER with String]
-  
-  /* "queue" */ @js.native
-  object QUEUE extends TopLevel[QUEUE with String]
   
 }
 

@@ -1,7 +1,7 @@
 package typings.reactNotificationSystem.mod
 
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNotificationSystem.reactNotificationSystemStrings.bc
 import typings.reactNotificationSystem.reactNotificationSystemStrings.bl
 import typings.reactNotificationSystem.reactNotificationSystemStrings.br
@@ -34,7 +34,7 @@ object Notification {
   @scala.inline
   def apply(
     action: ActionObject = null,
-    autoDismiss: Int | Double = null,
+    autoDismiss: js.UndefOr[Double] = js.undefined,
     children: ReactNode = null,
     dismissible: js.UndefOr[Boolean] = js.undefined,
     level: error | warning | info | success = null,
@@ -47,9 +47,9 @@ object Notification {
   ): Notification = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (autoDismiss != null) __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDismiss)) __obj.updateDynamic("autoDismiss")(autoDismiss.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.get.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))

@@ -28,12 +28,12 @@ object ListDetectorsRequest {
   @scala.inline
   def apply(
     detectorModelName: DetectorModelName,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null,
     stateName: StateName = null
   ): ListDetectorsRequest = {
     val __obj = js.Dynamic.literal(detectorModelName = detectorModelName.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (stateName != null) __obj.updateDynamic("stateName")(stateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDetectorsRequest]

@@ -26,11 +26,15 @@ trait LengthOfTime extends js.Object {
 
 object LengthOfTime {
   @scala.inline
-  def apply(days: Int | Double = null, interval: Int | Double = null, months: Int | Double = null): LengthOfTime = {
+  def apply(
+    days: js.UndefOr[Null | Double] = js.undefined,
+    interval: js.UndefOr[Double] = js.undefined,
+    months: js.UndefOr[Null | Double] = js.undefined
+  ): LengthOfTime = {
     val __obj = js.Dynamic.literal()
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
+    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(months)) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
     __obj.asInstanceOf[LengthOfTime]
   }
 }

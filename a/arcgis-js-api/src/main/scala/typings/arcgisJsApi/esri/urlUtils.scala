@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +36,15 @@ trait urlUtils extends js.Object {
   def urlToObject(url: String): js.Any
 }
 
-@JSGlobal("__esri.urlUtils")
-@js.native
-object urlUtils extends TopLevel[urlUtils]
+object urlUtils {
+  @scala.inline
+  def apply(
+    addProxyRule: urlUtilsAddProxyRuleRule => Double,
+    getProxyRule: String => js.Any,
+    urlToObject: String => js.Any
+  ): urlUtils = {
+    val __obj = js.Dynamic.literal(addProxyRule = js.Any.fromFunction1(addProxyRule), getProxyRule = js.Any.fromFunction1(getProxyRule), urlToObject = js.Any.fromFunction1(urlToObject))
+    __obj.asInstanceOf[urlUtils]
+  }
+}
 

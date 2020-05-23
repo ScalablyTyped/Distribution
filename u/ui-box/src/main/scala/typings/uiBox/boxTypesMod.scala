@@ -7,6 +7,7 @@ import typings.react.mod.WeakValidationMap
 import typings.std.Exclude
 import typings.std.Partial
 import typings.std.Pick
+import typings.uiBox.anon.InnerRef
 import typings.uiBox.typesEnhancersMod.EnhancerProps
 import typings.uiBox.uiBoxStrings.innerRef
 import typings.uiBox.uiBoxStrings.is
@@ -25,7 +26,7 @@ object boxTypesMod extends js.Object {
     def apply[T /* <: Is[_] */](props: BoxProps[T]): ReactElement | Null = js.native
   }
   
-  type BoxProps[T /* <: Is[_] */] = InheritedProps[T] with EnhancerProps with AnonInnerRef[T]
+  type BoxProps[T /* <: Is[_] */] = InheritedProps[T] with EnhancerProps with InnerRef[T]
   /**
     * Grab components passed to the `is` prop and return their props
     * @template T Component type

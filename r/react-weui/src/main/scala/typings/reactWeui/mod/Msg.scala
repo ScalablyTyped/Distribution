@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonButtons
+import typings.reactWeui.anon.Buttons
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Msg protected () extends js.Object {
 @JSImport("react-weui", "Msg")
 @js.native
 object Msg extends js.Object {
-  var defaultProps: AnonButtons = js.native
+  var defaultProps: Buttons = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

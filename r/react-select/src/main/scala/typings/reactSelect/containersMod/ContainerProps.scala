@@ -1,7 +1,7 @@
 package typings.reactSelect.containersMod
 
 import typings.react.mod.ReactNode
-import typings.reactSelect.AnonOnKeyDown
+import typings.reactSelect.anon.OnKeyDown
 import typings.reactSelect.selectMod.Props
 import typings.reactSelect.typesMod.ActionTypes
 import typings.reactSelect.typesMod.ClassNamesState
@@ -20,7 +20,7 @@ trait ContainerProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   var className: js.UndefOr[String] = js.native
   var hasValue: Boolean = js.native
   /** Inner props to be passed down to the container. */
-  var innerProps: AnonOnKeyDown = js.native
+  var innerProps: OnKeyDown = js.native
   /** Whether the select is disabled. */
   var isDisabled: Boolean = js.native
   var isMulti: Boolean = js.native
@@ -31,10 +31,10 @@ trait ContainerProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   def clearValue(): Unit = js.native
   def cx(): String | Unit = js.native
   def cx(a: String): String | Unit = js.native
-  def cx(a: String, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
   def cx(a: String, b: ClassNamesState): String | Unit = js.native
-  def cx(a: Null, b: js.UndefOr[ClassNamesState], c: String): String | Unit = js.native
+  def cx(a: String, b: ClassNamesState, c: String): String | Unit = js.native
   def cx(a: Null, b: ClassNamesState): String | Unit = js.native
+  def cx(a: Null, b: ClassNamesState, c: String): String | Unit = js.native
   /*
     Get the styles of a particular part of the select. Pass in the name of the
     property as the first argument, and the current props as the second argument.

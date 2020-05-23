@@ -1,6 +1,5 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +32,19 @@ trait Source extends RoomObject {
   var ticksToRegeneration: Double
 }
 
-@JSGlobal("Source")
-@js.native
-object Source extends TopLevel[SourceConstructor]
+object Source {
+  @scala.inline
+  def apply(
+    effects: js.Array[RoomObjectEffect],
+    energy: Double,
+    energyCapacity: Double,
+    id: Id[Source],
+    pos: RoomPosition,
+    room: Room,
+    ticksToRegeneration: Double
+  ): Source = {
+    val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], energyCapacity = energyCapacity.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], ticksToRegeneration = ticksToRegeneration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Source]
+  }
+}
 

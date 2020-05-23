@@ -3,9 +3,9 @@ package typings.multerGridfsStorage.mod
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
-import typings.multer.PartialFile
-import typings.multer.mod._Global_.Express.Multer.File
-import typings.multerGridfsStorage.AnonFilename
+import typings.multer.anon.PartialFile
+import typings.multer.mod.global.Express.Multer.File
+import typings.multerGridfsStorage.anon.Filename
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,6 +56,6 @@ class ^ protected () extends MulterGridfsStorage {
 @js.native
 object ^ extends js.Object {
   var cache: Cache = js.native
-  def generateBytes(): js.Promise[AnonFilename] = js.native
+  def generateBytes(): js.Promise[Filename] = js.native
 }
 

@@ -3,8 +3,8 @@ package typings.restangular.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IDeferred
 import typings.angular.mod.IRequestShortcutConfig
-import typings.restangular.AnonElement
-import typings.restangular.AnonHeaders
+import typings.restangular.anon.Element
+import typings.restangular.anon.Headers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait IProvider extends js.Object {
       /* headers */ js.Any, 
       /* params */ js.Any, 
       /* httpConfig */ IRequestShortcutConfig, 
-      AnonHeaders
+      Headers
     ]
   ): IProvider = js.native
   def addRequestInterceptor(
@@ -66,7 +66,7 @@ trait IProvider extends js.Object {
       /* headers */ js.Any, 
       /* params */ js.Any, 
       /* httpConfig */ IRequestShortcutConfig, 
-      AnonElement
+      Element
     ]
   ): IProvider = js.native
   def setFullResponse(fullResponse: Boolean): IProvider = js.native

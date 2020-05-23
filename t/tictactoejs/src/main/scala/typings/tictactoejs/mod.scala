@@ -56,7 +56,7 @@ object mod extends js.Object {
       * Check the valid moves (all unoccupied coordinates)
       * @returns an array of objects with the x and y values
       */
-    def legalMoves(): js.Array[AnonX] = js.native
+    def legalMoves(): js.Array[typings.tictactoejs.anon.X] = js.native
     /**
       * Does a move (bottom left is 1|1, bottom right is 3|1)
       * @returns whether the move was successful
@@ -71,7 +71,7 @@ object mod extends js.Object {
       * Do a random move (no logic or AI involved, this is completely random)
       * @returns an object with the x and y value of the random move
       */
-    def randomMove(): AnonX = js.native
+    def randomMove(): typings.tictactoejs.anon.X = js.native
     /**
       * Restart the game
       */

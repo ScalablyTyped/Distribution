@@ -4,7 +4,7 @@ import typings.react.mod.ChangeEvent
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLFormElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ trait FormikHandlers extends js.Object {
   def handleChange[T](field: T): (js.Function1[/* e */ String | ChangeEvent[_], Unit]) | Unit = js.native
   /** Reset form event handler  */
   def handleReset(): Unit = js.native
-  def handleReset(e: SyntheticEvent[_, Event_]): Unit = js.native
+  def handleReset(e: SyntheticEvent[_, Event]): Unit = js.native
   /** Form submit handler */
   def handleSubmit(): Unit = js.native
   def handleSubmit(e: FormEvent[HTMLFormElement]): Unit = js.native

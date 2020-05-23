@@ -62,7 +62,7 @@ object GeocodeProperties {
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (!js.isUndefined(landmark)) __obj.updateDynamic("landmark")(landmark.asInstanceOf[js.Any])
+    if (!js.isUndefined(landmark)) __obj.updateDynamic("landmark")(landmark.get.asInstanceOf[js.Any])
     if (maki != null) __obj.updateDynamic("maki")(maki.asInstanceOf[js.Any])
     if (tel != null) __obj.updateDynamic("tel")(tel.asInstanceOf[js.Any])
     if (wikidata != null) __obj.updateDynamic("wikidata")(wikidata.asInstanceOf[js.Any])

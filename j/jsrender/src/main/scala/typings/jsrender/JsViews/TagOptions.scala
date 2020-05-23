@@ -31,14 +31,14 @@ object TagOptions {
     template: TemplateSetter = null
   ): TagOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(argDefault)) __obj.updateDynamic("argDefault")(argDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(argDefault)) __obj.updateDynamic("argDefault")(argDefault.get.asInstanceOf[js.Any])
     if (baseTag != null) __obj.updateDynamic("baseTag")(baseTag.asInstanceOf[js.Any])
     if (bindFrom != null) __obj.updateDynamic("bindFrom")(bindFrom.asInstanceOf[js.Any])
     if (bindTo != null) __obj.updateDynamic("bindTo")(bindTo.asInstanceOf[js.Any])
     if (contentCtx != null) __obj.updateDynamic("contentCtx")(contentCtx.asInstanceOf[js.Any])
     if (convert != null) __obj.updateDynamic("convert")(convert.asInstanceOf[js.Any])
     if (ctx != null) __obj.updateDynamic("ctx")(ctx.asInstanceOf[js.Any])
-    if (!js.isUndefined(flow)) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
+    if (!js.isUndefined(flow)) __obj.updateDynamic("flow")(flow.get.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])

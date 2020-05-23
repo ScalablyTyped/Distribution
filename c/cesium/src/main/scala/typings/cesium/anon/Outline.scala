@@ -1,0 +1,62 @@
+package typings.cesium.anon
+
+import typings.cesium.mod.MaterialProperty
+import typings.cesium.mod.Property
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Outline extends js.Object {
+  var extrudedHeight: js.UndefOr[Property] = js.undefined
+  var fill: js.UndefOr[Boolean] = js.undefined
+  var granularity: js.UndefOr[Property] = js.undefined
+  var height: js.UndefOr[Property] = js.undefined
+  var material: js.UndefOr[MaterialProperty | typings.cesium.mod.Color] = js.undefined
+  var numberOfVerticalLines: js.UndefOr[Property] = js.undefined
+  var outline: js.UndefOr[Boolean] = js.undefined
+  var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
+  var outlineWidth: js.UndefOr[Double] = js.undefined
+  var rotation: js.UndefOr[Property] = js.undefined
+  var semiMajorAxis: js.UndefOr[Property | Double] = js.undefined
+  var semiMinorAxis: js.UndefOr[Property | Double] = js.undefined
+  var show: js.UndefOr[Property] = js.undefined
+  var stRotation: js.UndefOr[Property] = js.undefined
+}
+
+object Outline {
+  @scala.inline
+  def apply(
+    extrudedHeight: Property = null,
+    fill: js.UndefOr[Boolean] = js.undefined,
+    granularity: Property = null,
+    height: Property = null,
+    material: MaterialProperty | typings.cesium.mod.Color = null,
+    numberOfVerticalLines: Property = null,
+    outline: js.UndefOr[Boolean] = js.undefined,
+    outlineColor: typings.cesium.mod.Color = null,
+    outlineWidth: js.UndefOr[Double] = js.undefined,
+    rotation: Property = null,
+    semiMajorAxis: Property | Double = null,
+    semiMinorAxis: Property | Double = null,
+    show: Property = null,
+    stRotation: Property = null
+  ): Outline = {
+    val __obj = js.Dynamic.literal()
+    if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (numberOfVerticalLines != null) __obj.updateDynamic("numberOfVerticalLines")(numberOfVerticalLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline.get.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineWidth)) __obj.updateDynamic("outlineWidth")(outlineWidth.get.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (semiMajorAxis != null) __obj.updateDynamic("semiMajorAxis")(semiMajorAxis.asInstanceOf[js.Any])
+    if (semiMinorAxis != null) __obj.updateDynamic("semiMinorAxis")(semiMinorAxis.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (stRotation != null) __obj.updateDynamic("stRotation")(stRotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Outline]
+  }
+}
+

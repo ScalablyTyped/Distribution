@@ -1,7 +1,6 @@
 package typings.jupyterlabJsonExtension
 
 import typings.jupyterlabApputils.printingMod.Printing.IPrintable
-import typings.jupyterlabJsonExtension.jupyterlabJsonExtensionStrings.applicationSlashjson
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtension
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererFactory
@@ -342,7 +341,7 @@ object mod extends js.Object {
     override def update(): Unit = js.native
   }
   
-  val MIME_TYPE: applicationSlashjson = js.native
+  val MIME_TYPE: /* "application/json" */ String = js.native
   val default: IExtension | js.Array[IExtension] = js.native
   val rendererFactory: IRendererFactory = js.native
 }

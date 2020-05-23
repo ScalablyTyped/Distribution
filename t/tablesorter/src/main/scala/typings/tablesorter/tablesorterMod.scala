@@ -1,10 +1,10 @@
 package typings.tablesorter
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jquery.JQuery.Selector
+import typings.jquery.JQuery.TypeOrArray
+import typings.jquery.JQuery.jqXHR
 import typings.jquery.JQueryAjaxSettings
-import typings.jquery.JQuery_.Selector
-import typings.jquery.JQuery_.TypeOrArray
-import typings.jquery.JQuery_.jqXHR
 import typings.std.Element
 import typings.tablesorter.columnFilterMod.ColumnFilter
 import typings.tablesorter.emptySortingMod.EmptySorting
@@ -13,8 +13,8 @@ import typings.tablesorter.filterStaticMod.FilterStatic
 import typings.tablesorter.headerResizeOptionsMod.HeaderResizeOptions
 import typings.tablesorter.localeMod.Locale
 import typings.tablesorter.mappedSettingsMod.MappedSettings
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.parsedCellMod.ParsedCell
 import typings.tablesorter.parsedDataMod.ParsedData
 import typings.tablesorter.parserMod.Parser

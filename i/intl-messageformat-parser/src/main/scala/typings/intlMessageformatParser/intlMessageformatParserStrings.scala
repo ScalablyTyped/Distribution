@@ -10,9 +10,6 @@ object intlMessageformatParserStrings {
   sealed trait any extends js.Object
   
   @js.native
-  sealed trait cardinal extends js.Object
-  
-  @js.native
   sealed trait `class` extends js.Object
   
   @js.native
@@ -49,9 +46,6 @@ object intlMessageformatParserStrings {
        with typings.intlMessageformatParser.typesMod._ValidPluralRule
   
   @js.native
-  sealed trait ordinal extends js.Object
-  
-  @js.native
   sealed trait other
     extends _ValidPluralRule
        with typings.intlMessageformatParser.typesMod._ValidPluralRule
@@ -68,8 +62,6 @@ object intlMessageformatParserStrings {
   
   @scala.inline
   def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
   @scala.inline
   def `class`: `class` = "class".asInstanceOf[`class`]
   @scala.inline
@@ -90,8 +82,6 @@ object intlMessageformatParserStrings {
   def many: many = "many".asInstanceOf[many]
   @scala.inline
   def one: one = "one".asInstanceOf[one]
-  @scala.inline
-  def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline

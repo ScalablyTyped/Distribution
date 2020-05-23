@@ -86,7 +86,7 @@ object Connection {
     connectionName: ConnectionName = null,
     connectionState: ConnectionState = null,
     hasLogicalRedundancy: HasLogicalRedundancy = null,
-    jumboFrameCapable: js.UndefOr[Boolean] = js.undefined,
+    jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined,
     lagId: LagId = null,
     loaIssueTime: LoaIssueTime = null,
     location: LocationCode = null,
@@ -95,7 +95,7 @@ object Connection {
     providerName: ProviderName = null,
     region: Region = null,
     tags: TagList = null,
-    vlan: Int | Double = null
+    vlan: js.UndefOr[VLAN] = js.undefined
   ): Connection = {
     val __obj = js.Dynamic.literal()
     if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice.asInstanceOf[js.Any])
@@ -105,7 +105,7 @@ object Connection {
     if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
     if (connectionState != null) __obj.updateDynamic("connectionState")(connectionState.asInstanceOf[js.Any])
     if (hasLogicalRedundancy != null) __obj.updateDynamic("hasLogicalRedundancy")(hasLogicalRedundancy.asInstanceOf[js.Any])
-    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.asInstanceOf[js.Any])
+    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.get.asInstanceOf[js.Any])
     if (lagId != null) __obj.updateDynamic("lagId")(lagId.asInstanceOf[js.Any])
     if (loaIssueTime != null) __obj.updateDynamic("loaIssueTime")(loaIssueTime.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
@@ -114,7 +114,7 @@ object Connection {
     if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vlan != null) __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])
+    if (!js.isUndefined(vlan)) __obj.updateDynamic("vlan")(vlan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]
   }
 }

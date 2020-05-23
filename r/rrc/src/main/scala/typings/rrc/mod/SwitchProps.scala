@@ -1,6 +1,6 @@
 package typings.rrc.mod
 
-import typings.rrc.LocationDescriptorObjectL
+import typings.rrc.anon.LocationDescriptorObjectL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

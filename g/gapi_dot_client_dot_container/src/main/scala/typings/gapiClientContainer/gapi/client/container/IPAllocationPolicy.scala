@@ -119,14 +119,14 @@ object IPAllocationPolicy {
     if (clusterIpv4Cidr != null) __obj.updateDynamic("clusterIpv4Cidr")(clusterIpv4Cidr.asInstanceOf[js.Any])
     if (clusterIpv4CidrBlock != null) __obj.updateDynamic("clusterIpv4CidrBlock")(clusterIpv4CidrBlock.asInstanceOf[js.Any])
     if (clusterSecondaryRangeName != null) __obj.updateDynamic("clusterSecondaryRangeName")(clusterSecondaryRangeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(createSubnetwork)) __obj.updateDynamic("createSubnetwork")(createSubnetwork.asInstanceOf[js.Any])
+    if (!js.isUndefined(createSubnetwork)) __obj.updateDynamic("createSubnetwork")(createSubnetwork.get.asInstanceOf[js.Any])
     if (nodeIpv4Cidr != null) __obj.updateDynamic("nodeIpv4Cidr")(nodeIpv4Cidr.asInstanceOf[js.Any])
     if (nodeIpv4CidrBlock != null) __obj.updateDynamic("nodeIpv4CidrBlock")(nodeIpv4CidrBlock.asInstanceOf[js.Any])
     if (servicesIpv4Cidr != null) __obj.updateDynamic("servicesIpv4Cidr")(servicesIpv4Cidr.asInstanceOf[js.Any])
     if (servicesIpv4CidrBlock != null) __obj.updateDynamic("servicesIpv4CidrBlock")(servicesIpv4CidrBlock.asInstanceOf[js.Any])
     if (servicesSecondaryRangeName != null) __obj.updateDynamic("servicesSecondaryRangeName")(servicesSecondaryRangeName.asInstanceOf[js.Any])
     if (subnetworkName != null) __obj.updateDynamic("subnetworkName")(subnetworkName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIpAliases)) __obj.updateDynamic("useIpAliases")(useIpAliases.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIpAliases)) __obj.updateDynamic("useIpAliases")(useIpAliases.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPAllocationPolicy]
   }
 }

@@ -1,6 +1,5 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.AnonIcon
 import typings.antdMobileRn.noticeBarIndexNativeMod.NoticeNativeProps
 import typings.antdMobileRn.noticeBarIndexNativeMod.default
 import scala.scalajs.js
@@ -17,6 +16,6 @@ class NoticeBar protected () extends default {
 @JSImport("antd-mobile-rn", "NoticeBar")
 @js.native
 object NoticeBar extends js.Object {
-  var defaultProps: AnonIcon = js.native
+  var defaultProps: typings.antdMobileRn.anon.Icon = js.native
 }
 

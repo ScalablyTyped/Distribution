@@ -18,9 +18,9 @@ trait DetachVolumeInput extends js.Object {
 
 object DetachVolumeInput {
   @scala.inline
-  def apply(VolumeARN: VolumeARN, ForceDetach: js.UndefOr[scala.Boolean] = js.undefined): DetachVolumeInput = {
+  def apply(VolumeARN: VolumeARN, ForceDetach: js.UndefOr[Boolean] = js.undefined): DetachVolumeInput = {
     val __obj = js.Dynamic.literal(VolumeARN = VolumeARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceDetach)) __obj.updateDynamic("ForceDetach")(ForceDetach.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceDetach)) __obj.updateDynamic("ForceDetach")(ForceDetach.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachVolumeInput]
   }
 }

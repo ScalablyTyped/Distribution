@@ -35,20 +35,20 @@ trait UserPoolPasswordPolicy extends js.Object {
 object UserPoolPasswordPolicy {
   @scala.inline
   def apply(
-    minimumLength: Int | Double = null,
+    minimumLength: js.UndefOr[Double] = js.undefined,
     requireLowercase: js.UndefOr[Boolean] = js.undefined,
     requireNumbers: js.UndefOr[Boolean] = js.undefined,
     requireSymbols: js.UndefOr[Boolean] = js.undefined,
     requireUppercase: js.UndefOr[Boolean] = js.undefined,
-    temporaryPasswordValidityDays: Int | Double = null
+    temporaryPasswordValidityDays: js.UndefOr[Double] = js.undefined
   ): UserPoolPasswordPolicy = {
     val __obj = js.Dynamic.literal()
-    if (minimumLength != null) __obj.updateDynamic("minimumLength")(minimumLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireLowercase)) __obj.updateDynamic("requireLowercase")(requireLowercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireNumbers)) __obj.updateDynamic("requireNumbers")(requireNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireSymbols)) __obj.updateDynamic("requireSymbols")(requireSymbols.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireUppercase)) __obj.updateDynamic("requireUppercase")(requireUppercase.asInstanceOf[js.Any])
-    if (temporaryPasswordValidityDays != null) __obj.updateDynamic("temporaryPasswordValidityDays")(temporaryPasswordValidityDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumLength)) __obj.updateDynamic("minimumLength")(minimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireLowercase)) __obj.updateDynamic("requireLowercase")(requireLowercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireNumbers)) __obj.updateDynamic("requireNumbers")(requireNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireSymbols)) __obj.updateDynamic("requireSymbols")(requireSymbols.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireUppercase)) __obj.updateDynamic("requireUppercase")(requireUppercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(temporaryPasswordValidityDays)) __obj.updateDynamic("temporaryPasswordValidityDays")(temporaryPasswordValidityDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolPasswordPolicy]
   }
 }

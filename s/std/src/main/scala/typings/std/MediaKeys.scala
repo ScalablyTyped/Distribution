@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +11,4 @@ trait MediaKeys extends js.Object {
   def createSession(sessionType: MediaKeySessionType): MediaKeySession = js.native
   def setServerCertificate(serverCertificate: BufferSource): js.Promise[scala.Boolean] = js.native
 }
-
-@JSGlobal("MediaKeys")
-@js.native
-object MediaKeys extends Instantiable0[MediaKeys]
 

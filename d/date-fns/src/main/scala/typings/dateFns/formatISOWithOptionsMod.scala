@@ -1,6 +1,7 @@
 package typings.dateFns
 
 import org.scalablytyped.runtime.TopLevel
+import typings.dateFns.anon.Representation
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatISOWithOptionsMod extends js.Object {
   @js.native
-  object default extends TopLevel[CurriedFn2[AnonRepresentation, Date | Double, String]]
+  object default extends TopLevel[CurriedFn2[Representation, Date | Double, String]]
   
 }
 

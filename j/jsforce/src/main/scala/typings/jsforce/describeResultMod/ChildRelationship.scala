@@ -25,10 +25,10 @@ object ChildRelationship {
     junctionIdListNames: js.Array[String],
     junctionReferenceTo: js.Array[String],
     restrictedDelete: Boolean,
-    relationshipName: maybe[String] = null
+    relationshipName: js.UndefOr[Null | maybe[String]] = js.undefined
   ): ChildRelationship = {
     val __obj = js.Dynamic.literal(cascadeDelete = cascadeDelete.asInstanceOf[js.Any], childSObject = childSObject.asInstanceOf[js.Any], deprecatedAndHidden = deprecatedAndHidden.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], junctionIdListNames = junctionIdListNames.asInstanceOf[js.Any], junctionReferenceTo = junctionReferenceTo.asInstanceOf[js.Any], restrictedDelete = restrictedDelete.asInstanceOf[js.Any])
-    if (relationshipName != null) __obj.updateDynamic("relationshipName")(relationshipName.asInstanceOf[js.Any])
+    if (!js.isUndefined(relationshipName)) __obj.updateDynamic("relationshipName")(relationshipName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildRelationship]
   }
 }

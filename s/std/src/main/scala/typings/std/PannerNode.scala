@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +26,4 @@ trait PannerNode extends AudioNode {
   /** @deprecated */
   def setPosition(x: Double, y: Double, z: Double): Unit = js.native
 }
-
-@JSGlobal("PannerNode")
-@js.native
-object PannerNode
-  extends Instantiable1[/* context */ BaseAudioContext, PannerNode]
-     with Instantiable2[/* context */ BaseAudioContext, /* options */ PannerOptions, PannerNode]
 

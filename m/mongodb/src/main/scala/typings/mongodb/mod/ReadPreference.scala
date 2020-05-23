@@ -1,6 +1,6 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonMaxStalenessSeconds
+import typings.mongodb.anon.MaxStalenessSeconds
 import typings.mongodb.mongodbStrings.nearest
 import typings.mongodb.mongodbStrings.primary
 import typings.mongodb.mongodbStrings.primaryPreferred
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 class ReadPreference protected () extends ReadPreferenceOrMode {
   def this(mode: ReadPreferenceMode, tags: js.Object) = this()
   var mode: ReadPreferenceMode = js.native
-  var options: AnonMaxStalenessSeconds = js.native
+  var options: MaxStalenessSeconds = js.native
   var tags: js.Any = js.native
   def isValid(mode: String): Boolean = js.native
 }

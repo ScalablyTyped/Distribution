@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/firestore-types" : "1.10.1"
+      "@firebase/firestore-types" : "1.10.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/firestore-types" : "1.10.1"
+      "@firebase/firestore-types" : "1.10.2"
     }
   ],
   "compile-devDependencies" : [

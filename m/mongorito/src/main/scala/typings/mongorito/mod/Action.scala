@@ -1,6 +1,6 @@
 package typings.mongorito.mod
 
-import typings.mongorito.AnonArgs
+import typings.mongorito.anon.Args
 import typings.mongorito.mod.ActionTypes.CALL
 import typings.mongorito.mod.ActionTypes.CREATE
 import typings.mongorito.mod.ActionTypes.CREATED
@@ -72,7 +72,7 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   @scala.inline
-  def QueryAction(method: String, query: js.Array[AnonArgs], `type`: QUERY): Action = {
+  def QueryAction(method: String, query: js.Array[Args], `type`: QUERY): Action = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
@@ -138,7 +138,7 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   @scala.inline
-  def CallAction(args: js.Array[AnonArgs], method: String, `type`: CALL): Action = {
+  def CallAction(args: js.Array[Args], method: String, `type`: CALL): Action = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]

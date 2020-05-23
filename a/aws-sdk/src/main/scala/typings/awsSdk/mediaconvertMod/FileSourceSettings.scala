@@ -32,13 +32,13 @@ object FileSourceSettings {
     Convert608To708: FileSourceConvert608To708 = null,
     Framerate: CaptionSourceFramerate = null,
     SourceFile: stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMIHttpsSccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI = null,
-    TimeDelta: Int | Double = null
+    TimeDelta: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined
   ): FileSourceSettings = {
     val __obj = js.Dynamic.literal()
     if (Convert608To708 != null) __obj.updateDynamic("Convert608To708")(Convert608To708.asInstanceOf[js.Any])
     if (Framerate != null) __obj.updateDynamic("Framerate")(Framerate.asInstanceOf[js.Any])
     if (SourceFile != null) __obj.updateDynamic("SourceFile")(SourceFile.asInstanceOf[js.Any])
-    if (TimeDelta != null) __obj.updateDynamic("TimeDelta")(TimeDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeDelta)) __obj.updateDynamic("TimeDelta")(TimeDelta.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSourceSettings]
   }
 }

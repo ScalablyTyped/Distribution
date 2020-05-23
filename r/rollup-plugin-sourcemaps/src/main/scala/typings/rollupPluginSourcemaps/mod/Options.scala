@@ -15,13 +15,13 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    exclude: (js.Array[String | RegExp]) | String | RegExp = null,
-    include: (js.Array[String | RegExp]) | String | RegExp = null,
+    exclude: js.UndefOr[Null | (js.Array[String | RegExp]) | String | RegExp] = js.undefined,
+    include: js.UndefOr[Null | (js.Array[String | RegExp]) | String | RegExp] = js.undefined,
     readFile: (/* file */ String | Buffer | Double, /* encoding */ String, /* callback */ ReadFileCallback) => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclude)) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (readFile != null) __obj.updateDynamic("readFile")(js.Any.fromFunction3(readFile))
     __obj.asInstanceOf[Options]
   }

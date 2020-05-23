@@ -283,7 +283,7 @@ trait SVGAttributes[Target /* <: EventTarget */]
 
 object SVGAttributes {
   @scala.inline
-  def apply[Target /* <: EventTarget */](
+  def apply[Target](
     HTMLAttributes: typings.preact.jsxMod.JSXInternal.HTMLAttributes[Target] = null,
     accentHeight: Double | String = null,
     accumulate: none | sum = null,

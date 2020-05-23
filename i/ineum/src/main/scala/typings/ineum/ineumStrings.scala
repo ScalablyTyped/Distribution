@@ -18,6 +18,9 @@ object ineumStrings {
   sealed trait ignoreUrls extends js.Object
   
   @js.native
+  sealed trait ignoreUserTimings extends js.Object
+  
+  @js.native
   sealed trait key extends js.Object
   
   @js.native
@@ -30,10 +33,19 @@ object ineumStrings {
   sealed trait reportError extends js.Object
   
   @js.native
+  sealed trait reportEvent extends js.Object
+  
+  @js.native
   sealed trait reportingUrl extends js.Object
   
   @js.native
+  sealed trait terminateSession extends js.Object
+  
+  @js.native
   sealed trait traceId extends js.Object
+  
+  @js.native
+  sealed trait trackSessions extends js.Object
   
   @js.native
   sealed trait user extends js.Object
@@ -56,6 +68,8 @@ object ineumStrings {
   @scala.inline
   def ignoreUrls: ignoreUrls = "ignoreUrls".asInstanceOf[ignoreUrls]
   @scala.inline
+  def ignoreUserTimings: ignoreUserTimings = "ignoreUserTimings".asInstanceOf[ignoreUserTimings]
+  @scala.inline
   def key: key = "key".asInstanceOf[key]
   @scala.inline
   def meta: meta = "meta".asInstanceOf[meta]
@@ -64,9 +78,15 @@ object ineumStrings {
   @scala.inline
   def reportError: reportError = "reportError".asInstanceOf[reportError]
   @scala.inline
+  def reportEvent: reportEvent = "reportEvent".asInstanceOf[reportEvent]
+  @scala.inline
   def reportingUrl: reportingUrl = "reportingUrl".asInstanceOf[reportingUrl]
   @scala.inline
+  def terminateSession: terminateSession = "terminateSession".asInstanceOf[terminateSession]
+  @scala.inline
   def traceId: traceId = "traceId".asInstanceOf[traceId]
+  @scala.inline
+  def trackSessions: trackSessions = "trackSessions".asInstanceOf[trackSessions]
   @scala.inline
   def user: user = "user".asInstanceOf[user]
   @scala.inline

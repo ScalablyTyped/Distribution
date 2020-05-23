@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,23 +30,6 @@ object PosPrinterMarkFeedCapabilities extends js.Object {
   /** The receipt printer station can feed the mark-sensed paper to the paper take-up position. */
   @js.native
   sealed trait toTakeUp extends PosPrinterMarkFeedCapabilities
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterMarkFeedCapabilities with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object toCurrentTopOfForm extends TopLevel[toCurrentTopOfForm with Double]
-  
-  /* 2 */ @js.native
-  object toCutter extends TopLevel[toCutter with Double]
-  
-  /* 4 */ @js.native
-  object toNextTopOfForm extends TopLevel[toNextTopOfForm with Double]
-  
-  /* 1 */ @js.native
-  object toTakeUp extends TopLevel[toTakeUp with Double]
   
 }
 

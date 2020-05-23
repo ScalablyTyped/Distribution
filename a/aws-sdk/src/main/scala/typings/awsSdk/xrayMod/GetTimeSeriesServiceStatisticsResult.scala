@@ -23,12 +23,12 @@ trait GetTimeSeriesServiceStatisticsResult extends js.Object {
 object GetTimeSeriesServiceStatisticsResult {
   @scala.inline
   def apply(
-    ContainsOldGroupVersions: js.UndefOr[scala.Boolean] = js.undefined,
+    ContainsOldGroupVersions: js.UndefOr[Boolean] = js.undefined,
     NextToken: String = null,
     TimeSeriesServiceStatistics: TimeSeriesServiceStatisticsList = null
   ): GetTimeSeriesServiceStatisticsResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ContainsOldGroupVersions)) __obj.updateDynamic("ContainsOldGroupVersions")(ContainsOldGroupVersions.asInstanceOf[js.Any])
+    if (!js.isUndefined(ContainsOldGroupVersions)) __obj.updateDynamic("ContainsOldGroupVersions")(ContainsOldGroupVersions.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (TimeSeriesServiceStatistics != null) __obj.updateDynamic("TimeSeriesServiceStatistics")(TimeSeriesServiceStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTimeSeriesServiceStatisticsResult]

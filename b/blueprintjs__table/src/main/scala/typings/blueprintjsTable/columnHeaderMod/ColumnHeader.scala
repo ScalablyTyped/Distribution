@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.columnHeaderMod
 
-import typings.blueprintjsTable.AnonIsReorderable
+import typings.blueprintjsTable.anon.IsReorderable
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,6 +29,6 @@ class ColumnHeader ()
 @JSImport("@blueprintjs/table/lib/esm/headers/columnHeader", "ColumnHeader")
 @js.native
 object ColumnHeader extends js.Object {
-  var defaultProps: AnonIsReorderable = js.native
+  var defaultProps: IsReorderable = js.native
 }
 

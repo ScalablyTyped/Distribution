@@ -25,17 +25,17 @@ trait WatermarkSettings extends js.Object {
 object WatermarkSettings {
   @scala.inline
   def apply(
-    margin_east: Int | Double = null,
-    margin_nord: Int | Double = null,
-    margin_sud: Int | Double = null,
-    margin_west: Int | Double = null,
+    margin_east: js.UndefOr[Double] = js.undefined,
+    margin_nord: js.UndefOr[Double] = js.undefined,
+    margin_sud: js.UndefOr[Double] = js.undefined,
+    margin_west: js.UndefOr[Double] = js.undefined,
     position: NE | NC | NW | SE | SC | SW | C | CE | CW = null
   ): WatermarkSettings = {
     val __obj = js.Dynamic.literal()
-    if (margin_east != null) __obj.updateDynamic("margin_east")(margin_east.asInstanceOf[js.Any])
-    if (margin_nord != null) __obj.updateDynamic("margin_nord")(margin_nord.asInstanceOf[js.Any])
-    if (margin_sud != null) __obj.updateDynamic("margin_sud")(margin_sud.asInstanceOf[js.Any])
-    if (margin_west != null) __obj.updateDynamic("margin_west")(margin_west.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin_east)) __obj.updateDynamic("margin_east")(margin_east.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin_nord)) __obj.updateDynamic("margin_nord")(margin_nord.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin_sud)) __obj.updateDynamic("margin_sud")(margin_sud.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin_west)) __obj.updateDynamic("margin_west")(margin_west.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatermarkSettings]
   }

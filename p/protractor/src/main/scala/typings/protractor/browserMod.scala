@@ -2,6 +2,7 @@ package typings.protractor
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.blockingProxy.mod.BPClient
+import typings.protractor.anon.Args
 import typings.protractor.debuggerMod.DebugHelper
 import typings.protractor.elementMod.ElementArrayFinder
 import typings.protractor.elementMod.ElementFinder
@@ -137,7 +138,7 @@ object browserMod extends js.Object {
       * @type {Array<{name: string, script: function|string, args:
       * Array.<string>}>}
       */
-    var mockModules_ : js.Array[AnonArgs] = js.native
+    var mockModules_ : js.Array[Args] = js.native
     /**
       * If true, Protractor will interpret any angular apps it comes across as
       * hybrid angular1/angular2 apps.

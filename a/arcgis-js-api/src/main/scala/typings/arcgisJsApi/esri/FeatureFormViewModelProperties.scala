@@ -44,7 +44,7 @@ object FeatureFormViewModelProperties {
     if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
     if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
     if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureFormViewModelProperties]
   }
 }

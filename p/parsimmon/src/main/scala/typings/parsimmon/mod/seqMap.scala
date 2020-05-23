@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object seqMap extends js.Object {
   /**
-  	 * Matches all parsers sequentially, and passes their results as the arguments to a function.
-  	 * Similar to calling Parsimmon.seq and then .map, but the values are not put in an array.
-  	 */
+    * Matches all parsers sequentially, and passes their results as the arguments to a function.
+    * Similar to calling Parsimmon.seq and then .map, but the values are not put in an array.
+    */
   def apply[T, U](p1: Parser[T], cb: js.Function1[/* a1 */ T, U]): Parser[U] = js.native
   def apply[T, U, V](p1: Parser[T], p2: Parser[U], cb: js.Function2[/* a1 */ T, /* a2 */ U, V]): Parser[V] = js.native
   def apply[T, U, V, W](

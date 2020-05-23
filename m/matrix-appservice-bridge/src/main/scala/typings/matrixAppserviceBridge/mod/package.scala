@@ -16,5 +16,5 @@ package object mod {
   type Datastore = js.Any
   type EntryDict = org.scalablytyped.runtime.StringDictionary[js.Array[typings.matrixAppserviceBridge.mod.Entry]]
   type RemoteRoomDict = org.scalablytyped.runtime.StringDictionary[typings.matrixAppserviceBridge.mod.RemoteRoom]
-  type RoomMemberDict = org.scalablytyped.runtime.StringDictionary[typings.matrixAppserviceBridge.AnonAvatarurl]
+  type RoomMemberDict = org.scalablytyped.runtime.StringDictionary[typings.matrixAppserviceBridge.anon.Avatarurl]
 }

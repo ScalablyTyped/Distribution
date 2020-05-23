@@ -21,10 +21,10 @@ trait Level extends js.Object {
 
 object Level {
   @scala.inline
-  def apply(name: String = null, number: Int | Double = null): Level = {
+  def apply(name: String = null, number: js.UndefOr[Double] = js.undefined): Level = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Level]
   }
 }

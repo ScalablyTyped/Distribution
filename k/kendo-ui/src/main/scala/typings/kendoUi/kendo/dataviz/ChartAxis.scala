@@ -1,6 +1,6 @@
 package typings.kendoUi.kendo.dataviz
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import typings.kendoUi.kendo.geometry.Point
 import typings.kendoUi.kendo.geometry.Rect
 import typings.std.Date
@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.ChartAxis")
 @js.native
-class ChartAxis () extends Observable_ {
+trait ChartAxis extends Observable {
   var options: ChartAxisOptions = js.native
   def range(): js.Any = js.native
   def slot(from: String): Rect = js.native

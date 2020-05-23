@@ -10,6 +10,9 @@ trait CreateRegistryRequest extends js.Object {
     * A description of the registry to be created.
     */
   var Description: js.UndefOr[stringMin0Max256] = js.native
+  /**
+    * The name of the registry.
+    */
   var RegistryName: string = js.native
   /**
     * Tags to associate with the registry.

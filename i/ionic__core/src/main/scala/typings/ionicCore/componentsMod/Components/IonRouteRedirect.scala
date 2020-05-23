@@ -17,9 +17,9 @@ trait IonRouteRedirect extends js.Object {
 
 object IonRouteRedirect {
   @scala.inline
-  def apply(from: String, to: String = null): IonRouteRedirect = {
+  def apply(from: String, to: js.UndefOr[Null | String] = js.undefined): IonRouteRedirect = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouteRedirect]
   }
 }

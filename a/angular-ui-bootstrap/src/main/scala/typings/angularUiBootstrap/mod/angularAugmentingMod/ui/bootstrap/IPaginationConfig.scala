@@ -97,31 +97,31 @@ object IPaginationConfig {
     directionLinks: js.UndefOr[Boolean] = js.undefined,
     firstText: String = null,
     forceEllipses: js.UndefOr[Boolean] = js.undefined,
-    itemsPerPage: Int | Double = null,
+    itemsPerPage: js.UndefOr[Double] = js.undefined,
     lastText: String = null,
-    maxSize: Int | Double = null,
+    maxSize: js.UndefOr[Double] = js.undefined,
     nextText: String = null,
-    numPages: Int | Double = null,
+    numPages: js.UndefOr[Double] = js.undefined,
     previousText: String = null,
     rotate: js.UndefOr[Boolean] = js.undefined,
     templateUrl: String = null,
-    totalItems: Int | Double = null
+    totalItems: js.UndefOr[Double] = js.undefined
   ): IPaginationConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boundaryLinkNumbers)) __obj.updateDynamic("boundaryLinkNumbers")(boundaryLinkNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(boundaryLinks)) __obj.updateDynamic("boundaryLinks")(boundaryLinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(directionLinks)) __obj.updateDynamic("directionLinks")(directionLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(boundaryLinkNumbers)) __obj.updateDynamic("boundaryLinkNumbers")(boundaryLinkNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boundaryLinks)) __obj.updateDynamic("boundaryLinks")(boundaryLinks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(directionLinks)) __obj.updateDynamic("directionLinks")(directionLinks.get.asInstanceOf[js.Any])
     if (firstText != null) __obj.updateDynamic("firstText")(firstText.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceEllipses)) __obj.updateDynamic("forceEllipses")(forceEllipses.asInstanceOf[js.Any])
-    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceEllipses)) __obj.updateDynamic("forceEllipses")(forceEllipses.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemsPerPage)) __obj.updateDynamic("itemsPerPage")(itemsPerPage.get.asInstanceOf[js.Any])
     if (lastText != null) __obj.updateDynamic("lastText")(lastText.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
     if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
-    if (numPages != null) __obj.updateDynamic("numPages")(numPages.asInstanceOf[js.Any])
+    if (!js.isUndefined(numPages)) __obj.updateDynamic("numPages")(numPages.get.asInstanceOf[js.Any])
     if (previousText != null) __obj.updateDynamic("previousText")(previousText.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaginationConfig]
   }
 }

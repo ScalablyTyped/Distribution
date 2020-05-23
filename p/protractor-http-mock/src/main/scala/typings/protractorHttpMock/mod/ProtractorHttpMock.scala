@@ -1,6 +1,6 @@
 package typings.protractorHttpMock.mod
 
-import typings.protractorHttpMock.AnonMocks
+import typings.protractorHttpMock.anon.Mocks
 import typings.protractorHttpMock.mod.requests.AllRequests
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait ProtractorHttpMock extends js.Object {
   /**
     * Module configuration to setup
     */
-  var config: AnonMocks = js.native
+  var config: Mocks = js.native
   /**
     * Instantiate mock module. This must be done before the browser connects.
     *

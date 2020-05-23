@@ -78,6 +78,7 @@ object publisherMessageQueuesMod extends js.Object {
       * @param {Error} err The publishing error.
       */
     def handlePublishFailure(err: ServiceError): Unit = js.native
+    def publish(callback: PublishDone): Unit = js.native
     /**
       * Tells the queue it is ok to continue publishing messages.
       */
@@ -88,6 +89,7 @@ object publisherMessageQueuesMod extends js.Object {
   class Queue protected () extends MessageQueue {
     def this(publisher: Publisher) = this()
     var batch: MessageBatch = js.native
+    def publish(callback: PublishDone): Unit = js.native
   }
   
   type PublishDone = js.Function1[/* err */ ServiceError | Null, Unit]

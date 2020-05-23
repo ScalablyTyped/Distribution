@@ -1,6 +1,7 @@
 package typings.wordpressData.mod
 
-import typings.wordpressData.AnonSelect
+import typings.react.mod.ComponentType
+import typings.wordpressData.anon.Select
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +13,9 @@ object withDispatch extends js.Object {
     mapDispatchToProps: js.Function3[
       /* disp */ js.Function1[/* key */ String, DispatcherMap], 
       /* ownProps */ P with IP, 
-      /* registry */ AnonSelect, 
+      /* registry */ Select, 
       DP
     ]
-  ): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<P & IP & DP> */ /* component */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<P> */ _
-  ] = js.native
+  ): js.Function1[/* component */ ComponentType[P with IP with DP], ComponentType[P]] = js.native
 }
 

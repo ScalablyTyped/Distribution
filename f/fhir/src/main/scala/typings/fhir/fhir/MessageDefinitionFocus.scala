@@ -51,7 +51,7 @@ object MessageDefinitionFocus {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     max: String = null,
-    min: Int | Double = null,
+    min: js.UndefOr[unsignedInt] = js.undefined,
     modifierExtension: js.Array[Extension] = null,
     profile: Reference = null
   ): MessageDefinitionFocus = {
@@ -65,7 +65,7 @@ object MessageDefinitionFocus {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageDefinitionFocus]

@@ -1,7 +1,7 @@
 package typings.readdirEnhanced
 
-import typings.jsdevtoolsReaddirEnhanced.Optionsstatsfalse
-import typings.jsdevtoolsReaddirEnhanced.Optionsstatstrue
+import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatsfalse
+import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatstrue
 import typings.jsdevtoolsReaddirEnhanced.mod.Readdir_
 import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.Callback
 import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.Stats

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.accordionitem")
 @js.native
-class accordionitem () extends baseview {
+trait accordionitem extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

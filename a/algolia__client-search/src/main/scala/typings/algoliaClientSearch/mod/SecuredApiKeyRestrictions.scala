@@ -1,6 +1,5 @@
 package typings.algoliaClientSearch.mod
 
-import typings.algoliaClientSearch.AnonFrom
 import typings.algoliaClientSearch.algoliaClientSearchStrings.all
 import typings.algoliaClientSearch.algoliaClientSearchStrings.allOptional
 import typings.algoliaClientSearch.algoliaClientSearchStrings.alpha
@@ -20,6 +19,7 @@ import typings.algoliaClientSearch.algoliaClientSearchStrings.prefixNone
 import typings.algoliaClientSearch.algoliaClientSearchStrings.singleWordSynonym
 import typings.algoliaClientSearch.algoliaClientSearchStrings.strict
 import typings.algoliaClientSearch.algoliaClientSearchStrings.word
+import typings.algoliaClientSearch.anon.From
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +65,7 @@ trait SecuredApiKeyRestrictions extends js.Object {
   /**
     * Precision of geo search (in meters), to add grouping by geo location to the ranking formula.
     */
-  val aroundPrecision: js.UndefOr[Double | js.Array[AnonFrom]] = js.undefined
+  val aroundPrecision: js.UndefOr[Double | js.Array[From]] = js.undefined
   /**
     * Search for entries around a given location automatically computed from the requester’s IP address.
     */
@@ -319,7 +319,7 @@ object SecuredApiKeyRestrictions {
     analyticsTags: js.Array[String] = null,
     aroundLatLng: String = null,
     aroundLatLngViaIP: js.UndefOr[Boolean] = js.undefined,
-    aroundPrecision: Double | js.Array[AnonFrom] = null,
+    aroundPrecision: Double | js.Array[From] = null,
     aroundRadius: Double | all = null,
     attributesToHighlight: js.Array[String] = null,
     attributesToRetrieve: js.Array[String] = null,
@@ -339,24 +339,24 @@ object SecuredApiKeyRestrictions {
     getRankingInfo: js.UndefOr[Boolean] = js.undefined,
     highlightPostTag: String = null,
     highlightPreTag: String = null,
-    hitsPerPage: Int | Double = null,
+    hitsPerPage: js.UndefOr[Double] = js.undefined,
     ignorePlurals: Boolean | js.Array[String] = null,
     insideBoundingBox: js.Array[js.Array[Double]] = null,
     insidePolygon: js.Array[js.Array[Double]] = null,
-    length: Int | Double = null,
-    maxFacetHits: Int | Double = null,
-    maxValuesPerFacet: Int | Double = null,
-    minProximity: Int | Double = null,
-    minWordSizefor1Typo: Int | Double = null,
-    minWordSizefor2Typos: Int | Double = null,
-    minimumAroundRadius: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
+    maxFacetHits: js.UndefOr[Double] = js.undefined,
+    maxValuesPerFacet: js.UndefOr[Double] = js.undefined,
+    minProximity: js.UndefOr[Double] = js.undefined,
+    minWordSizefor1Typo: js.UndefOr[Double] = js.undefined,
+    minWordSizefor2Typos: js.UndefOr[Double] = js.undefined,
+    minimumAroundRadius: js.UndefOr[Double] = js.undefined,
     numericFilters: String | (js.Array[js.Array[String] | String]) = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     optionalFilters: String | (js.Array[js.Array[String] | String]) = null,
     optionalWords: String | js.Array[String] = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     percentileComputation: js.UndefOr[Boolean] = js.undefined,
-    personalizationImpact: Int | Double = null,
+    personalizationImpact: js.UndefOr[Double] = js.undefined,
     query: String = null,
     queryType: prefixLast | prefixAll | prefixNone = null,
     removeStopWords: Boolean | js.Array[String] = null,
@@ -376,62 +376,62 @@ object SecuredApiKeyRestrictions {
     tagFilters: String | (js.Array[js.Array[String] | String]) = null,
     typoTolerance: Boolean | min | strict = null,
     userToken: String = null,
-    validUntil: Int | Double = null
+    validUntil: js.UndefOr[Double] = js.undefined
   ): SecuredApiKeyRestrictions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax.asInstanceOf[js.Any])
+    if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax.get.asInstanceOf[js.Any])
     if (advancedSyntaxFeatures != null) __obj.updateDynamic("advancedSyntaxFeatures")(advancedSyntaxFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTyposOnNumericTokens)) __obj.updateDynamic("allowTyposOnNumericTokens")(allowTyposOnNumericTokens.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTyposOnNumericTokens)) __obj.updateDynamic("allowTyposOnNumericTokens")(allowTyposOnNumericTokens.get.asInstanceOf[js.Any])
     if (alternativesAsExact != null) __obj.updateDynamic("alternativesAsExact")(alternativesAsExact.asInstanceOf[js.Any])
-    if (!js.isUndefined(analytics)) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
+    if (!js.isUndefined(analytics)) __obj.updateDynamic("analytics")(analytics.get.asInstanceOf[js.Any])
     if (analyticsTags != null) __obj.updateDynamic("analyticsTags")(analyticsTags.asInstanceOf[js.Any])
     if (aroundLatLng != null) __obj.updateDynamic("aroundLatLng")(aroundLatLng.asInstanceOf[js.Any])
-    if (!js.isUndefined(aroundLatLngViaIP)) __obj.updateDynamic("aroundLatLngViaIP")(aroundLatLngViaIP.asInstanceOf[js.Any])
+    if (!js.isUndefined(aroundLatLngViaIP)) __obj.updateDynamic("aroundLatLngViaIP")(aroundLatLngViaIP.get.asInstanceOf[js.Any])
     if (aroundPrecision != null) __obj.updateDynamic("aroundPrecision")(aroundPrecision.asInstanceOf[js.Any])
     if (aroundRadius != null) __obj.updateDynamic("aroundRadius")(aroundRadius.asInstanceOf[js.Any])
     if (attributesToHighlight != null) __obj.updateDynamic("attributesToHighlight")(attributesToHighlight.asInstanceOf[js.Any])
     if (attributesToRetrieve != null) __obj.updateDynamic("attributesToRetrieve")(attributesToRetrieve.asInstanceOf[js.Any])
     if (attributesToSnippet != null) __obj.updateDynamic("attributesToSnippet")(attributesToSnippet.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickAnalytics)) __obj.updateDynamic("clickAnalytics")(clickAnalytics.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickAnalytics)) __obj.updateDynamic("clickAnalytics")(clickAnalytics.get.asInstanceOf[js.Any])
     if (disableExactOnAttributes != null) __obj.updateDynamic("disableExactOnAttributes")(disableExactOnAttributes.asInstanceOf[js.Any])
     if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes.asInstanceOf[js.Any])
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableABTest)) __obj.updateDynamic("enableABTest")(enableABTest.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersonalization)) __obj.updateDynamic("enablePersonalization")(enablePersonalization.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRules)) __obj.updateDynamic("enableRules")(enableRules.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableABTest)) __obj.updateDynamic("enableABTest")(enableABTest.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersonalization)) __obj.updateDynamic("enablePersonalization")(enablePersonalization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRules)) __obj.updateDynamic("enableRules")(enableRules.get.asInstanceOf[js.Any])
     if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
     if (facetFilters != null) __obj.updateDynamic("facetFilters")(facetFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(facetingAfterDistinct)) __obj.updateDynamic("facetingAfterDistinct")(facetingAfterDistinct.asInstanceOf[js.Any])
+    if (!js.isUndefined(facetingAfterDistinct)) __obj.updateDynamic("facetingAfterDistinct")(facetingAfterDistinct.get.asInstanceOf[js.Any])
     if (facets != null) __obj.updateDynamic("facets")(facets.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(getRankingInfo)) __obj.updateDynamic("getRankingInfo")(getRankingInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(getRankingInfo)) __obj.updateDynamic("getRankingInfo")(getRankingInfo.get.asInstanceOf[js.Any])
     if (highlightPostTag != null) __obj.updateDynamic("highlightPostTag")(highlightPostTag.asInstanceOf[js.Any])
     if (highlightPreTag != null) __obj.updateDynamic("highlightPreTag")(highlightPreTag.asInstanceOf[js.Any])
-    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitsPerPage)) __obj.updateDynamic("hitsPerPage")(hitsPerPage.get.asInstanceOf[js.Any])
     if (ignorePlurals != null) __obj.updateDynamic("ignorePlurals")(ignorePlurals.asInstanceOf[js.Any])
     if (insideBoundingBox != null) __obj.updateDynamic("insideBoundingBox")(insideBoundingBox.asInstanceOf[js.Any])
     if (insidePolygon != null) __obj.updateDynamic("insidePolygon")(insidePolygon.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (maxFacetHits != null) __obj.updateDynamic("maxFacetHits")(maxFacetHits.asInstanceOf[js.Any])
-    if (maxValuesPerFacet != null) __obj.updateDynamic("maxValuesPerFacet")(maxValuesPerFacet.asInstanceOf[js.Any])
-    if (minProximity != null) __obj.updateDynamic("minProximity")(minProximity.asInstanceOf[js.Any])
-    if (minWordSizefor1Typo != null) __obj.updateDynamic("minWordSizefor1Typo")(minWordSizefor1Typo.asInstanceOf[js.Any])
-    if (minWordSizefor2Typos != null) __obj.updateDynamic("minWordSizefor2Typos")(minWordSizefor2Typos.asInstanceOf[js.Any])
-    if (minimumAroundRadius != null) __obj.updateDynamic("minimumAroundRadius")(minimumAroundRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFacetHits)) __obj.updateDynamic("maxFacetHits")(maxFacetHits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValuesPerFacet)) __obj.updateDynamic("maxValuesPerFacet")(maxValuesPerFacet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minProximity)) __obj.updateDynamic("minProximity")(minProximity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWordSizefor1Typo)) __obj.updateDynamic("minWordSizefor1Typo")(minWordSizefor1Typo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWordSizefor2Typos)) __obj.updateDynamic("minWordSizefor2Typos")(minWordSizefor2Typos.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumAroundRadius)) __obj.updateDynamic("minimumAroundRadius")(minimumAroundRadius.get.asInstanceOf[js.Any])
     if (numericFilters != null) __obj.updateDynamic("numericFilters")(numericFilters.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (optionalFilters != null) __obj.updateDynamic("optionalFilters")(optionalFilters.asInstanceOf[js.Any])
     if (optionalWords != null) __obj.updateDynamic("optionalWords")(optionalWords.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentileComputation)) __obj.updateDynamic("percentileComputation")(percentileComputation.asInstanceOf[js.Any])
-    if (personalizationImpact != null) __obj.updateDynamic("personalizationImpact")(personalizationImpact.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentileComputation)) __obj.updateDynamic("percentileComputation")(percentileComputation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(personalizationImpact)) __obj.updateDynamic("personalizationImpact")(personalizationImpact.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (queryType != null) __obj.updateDynamic("queryType")(queryType.asInstanceOf[js.Any])
     if (removeStopWords != null) __obj.updateDynamic("removeStopWords")(removeStopWords.asInstanceOf[js.Any])
     if (removeWordsIfNoResults != null) __obj.updateDynamic("removeWordsIfNoResults")(removeWordsIfNoResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceSynonymsInHighlight)) __obj.updateDynamic("replaceSynonymsInHighlight")(replaceSynonymsInHighlight.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceSynonymsInHighlight)) __obj.updateDynamic("replaceSynonymsInHighlight")(replaceSynonymsInHighlight.get.asInstanceOf[js.Any])
     if (responseFields != null) __obj.updateDynamic("responseFields")(responseFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictHighlightAndSnippetArrays)) __obj.updateDynamic("restrictHighlightAndSnippetArrays")(restrictHighlightAndSnippetArrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictHighlightAndSnippetArrays)) __obj.updateDynamic("restrictHighlightAndSnippetArrays")(restrictHighlightAndSnippetArrays.get.asInstanceOf[js.Any])
     if (restrictIndices != null) __obj.updateDynamic("restrictIndices")(restrictIndices.asInstanceOf[js.Any])
     if (restrictSearchableAttributes != null) __obj.updateDynamic("restrictSearchableAttributes")(restrictSearchableAttributes.asInstanceOf[js.Any])
     if (restrictSources != null) __obj.updateDynamic("restrictSources")(restrictSources.asInstanceOf[js.Any])
@@ -439,12 +439,12 @@ object SecuredApiKeyRestrictions {
     if (similarQuery != null) __obj.updateDynamic("similarQuery")(similarQuery.asInstanceOf[js.Any])
     if (snippetEllipsisText != null) __obj.updateDynamic("snippetEllipsisText")(snippetEllipsisText.asInstanceOf[js.Any])
     if (sortFacetValuesBy != null) __obj.updateDynamic("sortFacetValuesBy")(sortFacetValuesBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(sumOrFiltersScores)) __obj.updateDynamic("sumOrFiltersScores")(sumOrFiltersScores.asInstanceOf[js.Any])
-    if (!js.isUndefined(synonyms)) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
+    if (!js.isUndefined(sumOrFiltersScores)) __obj.updateDynamic("sumOrFiltersScores")(sumOrFiltersScores.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(synonyms)) __obj.updateDynamic("synonyms")(synonyms.get.asInstanceOf[js.Any])
     if (tagFilters != null) __obj.updateDynamic("tagFilters")(tagFilters.asInstanceOf[js.Any])
     if (typoTolerance != null) __obj.updateDynamic("typoTolerance")(typoTolerance.asInstanceOf[js.Any])
     if (userToken != null) __obj.updateDynamic("userToken")(userToken.asInstanceOf[js.Any])
-    if (validUntil != null) __obj.updateDynamic("validUntil")(validUntil.asInstanceOf[js.Any])
+    if (!js.isUndefined(validUntil)) __obj.updateDynamic("validUntil")(validUntil.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecuredApiKeyRestrictions]
   }
 }

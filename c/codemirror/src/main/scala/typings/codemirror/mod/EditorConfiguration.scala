@@ -1,6 +1,6 @@
 package typings.codemirror.mod
 
-import typings.codemirror.AnonDelay
+import typings.codemirror.anon.Delay
 import typings.std.DragEvent
 import typings.std.KeyboardEvent
 import scala.scalajs.js
@@ -27,7 +27,7 @@ trait EditorConfiguration extends js.Object {
   var autoCloseTags: js.UndefOr[AutoCloseTags | Boolean] = js.undefined
   // if true, it will be refreshed the first time the editor becomes visible.
   // you can pass delay (msec) time as polling duration
-  var autoRefresh: js.UndefOr[Boolean | AnonDelay] = js.undefined
+  var autoRefresh: js.UndefOr[Boolean | Delay] = js.undefined
   /** Specifies whether or not autocapitalization will be enabled on the input. */
   var autocapitalize: js.UndefOr[Boolean] = js.undefined
   /** Specifies whether or not autocorrect will be enabled on the input. */
@@ -139,6 +139,8 @@ trait EditorConfiguration extends js.Object {
     If you respond to an event, you should probably inspect its type property and only do something when it is keydown
     (or keypress for actions that need character data). */
   var onKeyEvent: js.UndefOr[js.Function2[/* instance */ Editor, /* event */ KeyboardEvent, Boolean]] = js.undefined
+  /** When pasting something from an external source (not from the editor itself), if the number of lines matches the number of selection, CodeMirror will by default insert one line per selection. You can set this to false to disable that behavior. */
+  var pasteLinesPerSelection: js.UndefOr[Boolean] = js.undefined
   /**
     * Adds a placeholder option that can be used to make content appear in the editor when it is empty and not focused.
     * It can hold either a string or a DOM node. Also gives the editor a CodeMirror-empty CSS class whenever it doesn't contain any text.
@@ -158,6 +160,8 @@ trait EditorConfiguration extends js.Object {
     or logical (pressing the left arrow moves to the next lower index in the string, which is visually right in right-to-left text).
     The default is false on Windows, and true on other platforms. */
   var rtlMoveVisually: js.UndefOr[Boolean] = js.undefined
+  /** This label is read by the screenreaders when CodeMirror text area is focused. This is helpful for accessibility. */
+  var screenReaderLabel: js.UndefOr[String] = js.undefined
   /**
     * When the end of the file is reached it allows you to keep scrolling so that your last few lines of code are not stuck at the bottom of the editor.
     */
@@ -167,6 +171,8 @@ trait EditorConfiguration extends js.Object {
     * provides the "null" style, which completely hides the scrollbars. Addons can implement additional scrollbar models.
     */
   var scrollbarStyle: js.UndefOr[String] = js.undefined
+  /** Determines whether multiple selections are joined as soon as they touch (the default) or only when they overlap (true). */
+  var selectionsMayTouch: js.UndefOr[Boolean] = js.undefined
   /**Whether the cursor should be drawn when a selection is active. Defaults to false. */
   var showCursorWhenSelecting: js.UndefOr[Boolean] = js.undefined
   var showHint: js.UndefOr[Boolean] = js.undefined
@@ -210,26 +216,26 @@ object EditorConfiguration {
     allowDropFileTypes: js.Array[String] = null,
     autoCloseBrackets: AutoCloseBrackets | Boolean | String = null,
     autoCloseTags: AutoCloseTags | Boolean = null,
-    autoRefresh: Boolean | AnonDelay = null,
+    autoRefresh: Boolean | Delay = null,
     autocapitalize: js.UndefOr[Boolean] = js.undefined,
     autocorrect: js.UndefOr[Boolean] = js.undefined,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     coverGutterNextToScrollbar: js.UndefOr[Boolean] = js.undefined,
-    cursorBlinkRate: Int | Double = null,
-    cursorHeight: Int | Double = null,
-    cursorScrollMargin: Int | Double = null,
+    cursorBlinkRate: js.UndefOr[Double] = js.undefined,
+    cursorHeight: js.UndefOr[Double] = js.undefined,
+    cursorScrollMargin: js.UndefOr[Double] = js.undefined,
     dragDrop: js.UndefOr[Boolean] = js.undefined,
     electricChars: js.UndefOr[Boolean] = js.undefined,
     extraKeys: String | KeyMap = null,
-    firstLineNumber: Int | Double = null,
+    firstLineNumber: js.UndefOr[Double] = js.undefined,
     fixedGutter: js.UndefOr[Boolean] = js.undefined,
     flattenSpans: js.UndefOr[Boolean] = js.undefined,
     foldGutter: js.UndefOr[Boolean] = js.undefined,
     gutters: js.Array[String] = null,
     highlightSelectionMatches: HighlightSelectionMatches | Boolean = null,
     hintOptions: ShowHintOptions = null,
-    historyEventDelay: Int | Double = null,
-    indentUnit: Int | Double = null,
+    historyEventDelay: js.UndefOr[Double] = js.undefined,
+    indentUnit: js.UndefOr[Double] = js.undefined,
     indentWithTabs: js.UndefOr[Boolean] = js.undefined,
     inputStyle: InputStyle = null,
     keyMap: String = null,
@@ -240,90 +246,96 @@ object EditorConfiguration {
     lint: Boolean | LintOptions = null,
     matchBrackets: MatchBrackets | Boolean = null,
     matchTags: MatchTags | Boolean = null,
-    maxHighlightLength: Int | Double = null,
+    maxHighlightLength: js.UndefOr[Double] = js.undefined,
     mode: js.Any = null,
     onDragEvent: (/* instance */ Editor, /* event */ DragEvent) => Boolean = null,
     onKeyEvent: (/* instance */ Editor, /* event */ KeyboardEvent) => Boolean = null,
+    pasteLinesPerSelection: js.UndefOr[Boolean] = js.undefined,
     placeholder: String = null,
-    pollInterval: Int | Double = null,
+    pollInterval: js.UndefOr[Double] = js.undefined,
     readOnly: js.Any = null,
     resetSelectionOnContextMenu: js.UndefOr[Boolean] = js.undefined,
     rtlMoveVisually: js.UndefOr[Boolean] = js.undefined,
+    screenReaderLabel: String = null,
     scrollPastEnd: js.UndefOr[Boolean] = js.undefined,
     scrollbarStyle: String = null,
+    selectionsMayTouch: js.UndefOr[Boolean] = js.undefined,
     showCursorWhenSelecting: js.UndefOr[Boolean] = js.undefined,
     showHint: js.UndefOr[Boolean] = js.undefined,
     smartIndent: js.UndefOr[Boolean] = js.undefined,
     spellcheck: js.UndefOr[Boolean] = js.undefined,
     styleActiveLine: StyleActiveLine | Boolean = null,
-    tabSize: Int | Double = null,
-    tabindex: Int | Double = null,
+    tabSize: js.UndefOr[Double] = js.undefined,
+    tabindex: js.UndefOr[Double] = js.undefined,
     theme: String = null,
-    undoDepth: Int | Double = null,
+    undoDepth: js.UndefOr[Double] = js.undefined,
     value: js.Any = null,
-    viewportMargin: Int | Double = null,
-    workDelay: Int | Double = null,
-    workTime: Int | Double = null
+    viewportMargin: js.UndefOr[Double] = js.undefined,
+    workDelay: js.UndefOr[Double] = js.undefined,
+    workTime: js.UndefOr[Double] = js.undefined
   ): EditorConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addModeClass)) __obj.updateDynamic("addModeClass")(addModeClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(addModeClass)) __obj.updateDynamic("addModeClass")(addModeClass.get.asInstanceOf[js.Any])
     if (allowDropFileTypes != null) __obj.updateDynamic("allowDropFileTypes")(allowDropFileTypes.asInstanceOf[js.Any])
     if (autoCloseBrackets != null) __obj.updateDynamic("autoCloseBrackets")(autoCloseBrackets.asInstanceOf[js.Any])
     if (autoCloseTags != null) __obj.updateDynamic("autoCloseTags")(autoCloseTags.asInstanceOf[js.Any])
     if (autoRefresh != null) __obj.updateDynamic("autoRefresh")(autoRefresh.asInstanceOf[js.Any])
-    if (!js.isUndefined(autocapitalize)) __obj.updateDynamic("autocapitalize")(autocapitalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autocorrect)) __obj.updateDynamic("autocorrect")(autocorrect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverGutterNextToScrollbar)) __obj.updateDynamic("coverGutterNextToScrollbar")(coverGutterNextToScrollbar.asInstanceOf[js.Any])
-    if (cursorBlinkRate != null) __obj.updateDynamic("cursorBlinkRate")(cursorBlinkRate.asInstanceOf[js.Any])
-    if (cursorHeight != null) __obj.updateDynamic("cursorHeight")(cursorHeight.asInstanceOf[js.Any])
-    if (cursorScrollMargin != null) __obj.updateDynamic("cursorScrollMargin")(cursorScrollMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragDrop)) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(electricChars)) __obj.updateDynamic("electricChars")(electricChars.asInstanceOf[js.Any])
+    if (!js.isUndefined(autocapitalize)) __obj.updateDynamic("autocapitalize")(autocapitalize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autocorrect)) __obj.updateDynamic("autocorrect")(autocorrect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverGutterNextToScrollbar)) __obj.updateDynamic("coverGutterNextToScrollbar")(coverGutterNextToScrollbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorBlinkRate)) __obj.updateDynamic("cursorBlinkRate")(cursorBlinkRate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorHeight)) __obj.updateDynamic("cursorHeight")(cursorHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorScrollMargin)) __obj.updateDynamic("cursorScrollMargin")(cursorScrollMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragDrop)) __obj.updateDynamic("dragDrop")(dragDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(electricChars)) __obj.updateDynamic("electricChars")(electricChars.get.asInstanceOf[js.Any])
     if (extraKeys != null) __obj.updateDynamic("extraKeys")(extraKeys.asInstanceOf[js.Any])
-    if (firstLineNumber != null) __obj.updateDynamic("firstLineNumber")(firstLineNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedGutter)) __obj.updateDynamic("fixedGutter")(fixedGutter.asInstanceOf[js.Any])
-    if (!js.isUndefined(flattenSpans)) __obj.updateDynamic("flattenSpans")(flattenSpans.asInstanceOf[js.Any])
-    if (!js.isUndefined(foldGutter)) __obj.updateDynamic("foldGutter")(foldGutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstLineNumber)) __obj.updateDynamic("firstLineNumber")(firstLineNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedGutter)) __obj.updateDynamic("fixedGutter")(fixedGutter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flattenSpans)) __obj.updateDynamic("flattenSpans")(flattenSpans.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(foldGutter)) __obj.updateDynamic("foldGutter")(foldGutter.get.asInstanceOf[js.Any])
     if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
     if (highlightSelectionMatches != null) __obj.updateDynamic("highlightSelectionMatches")(highlightSelectionMatches.asInstanceOf[js.Any])
     if (hintOptions != null) __obj.updateDynamic("hintOptions")(hintOptions.asInstanceOf[js.Any])
-    if (historyEventDelay != null) __obj.updateDynamic("historyEventDelay")(historyEventDelay.asInstanceOf[js.Any])
-    if (indentUnit != null) __obj.updateDynamic("indentUnit")(indentUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentWithTabs)) __obj.updateDynamic("indentWithTabs")(indentWithTabs.asInstanceOf[js.Any])
+    if (!js.isUndefined(historyEventDelay)) __obj.updateDynamic("historyEventDelay")(historyEventDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentUnit)) __obj.updateDynamic("indentUnit")(indentUnit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentWithTabs)) __obj.updateDynamic("indentWithTabs")(indentWithTabs.get.asInstanceOf[js.Any])
     if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
     if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap.asInstanceOf[js.Any])
     if (lineNumberFormatter != null) __obj.updateDynamic("lineNumberFormatter")(js.Any.fromFunction1(lineNumberFormatter))
-    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWiseCopyCut)) __obj.updateDynamic("lineWiseCopyCut")(lineWiseCopyCut.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWiseCopyCut)) __obj.updateDynamic("lineWiseCopyCut")(lineWiseCopyCut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping.get.asInstanceOf[js.Any])
     if (lint != null) __obj.updateDynamic("lint")(lint.asInstanceOf[js.Any])
     if (matchBrackets != null) __obj.updateDynamic("matchBrackets")(matchBrackets.asInstanceOf[js.Any])
     if (matchTags != null) __obj.updateDynamic("matchTags")(matchTags.asInstanceOf[js.Any])
-    if (maxHighlightLength != null) __obj.updateDynamic("maxHighlightLength")(maxHighlightLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHighlightLength)) __obj.updateDynamic("maxHighlightLength")(maxHighlightLength.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onDragEvent != null) __obj.updateDynamic("onDragEvent")(js.Any.fromFunction2(onDragEvent))
     if (onKeyEvent != null) __obj.updateDynamic("onKeyEvent")(js.Any.fromFunction2(onKeyEvent))
+    if (!js.isUndefined(pasteLinesPerSelection)) __obj.updateDynamic("pasteLinesPerSelection")(pasteLinesPerSelection.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(pollInterval)) __obj.updateDynamic("pollInterval")(pollInterval.get.asInstanceOf[js.Any])
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetSelectionOnContextMenu)) __obj.updateDynamic("resetSelectionOnContextMenu")(resetSelectionOnContextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlMoveVisually)) __obj.updateDynamic("rtlMoveVisually")(rtlMoveVisually.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetSelectionOnContextMenu)) __obj.updateDynamic("resetSelectionOnContextMenu")(resetSelectionOnContextMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlMoveVisually)) __obj.updateDynamic("rtlMoveVisually")(rtlMoveVisually.get.asInstanceOf[js.Any])
+    if (screenReaderLabel != null) __obj.updateDynamic("screenReaderLabel")(screenReaderLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd.get.asInstanceOf[js.Any])
     if (scrollbarStyle != null) __obj.updateDynamic("scrollbarStyle")(scrollbarStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCursorWhenSelecting)) __obj.updateDynamic("showCursorWhenSelecting")(showCursorWhenSelecting.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHint)) __obj.updateDynamic("showHint")(showHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartIndent)) __obj.updateDynamic("smartIndent")(smartIndent.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectionsMayTouch)) __obj.updateDynamic("selectionsMayTouch")(selectionsMayTouch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCursorWhenSelecting)) __obj.updateDynamic("showCursorWhenSelecting")(showCursorWhenSelecting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHint)) __obj.updateDynamic("showHint")(showHint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartIndent)) __obj.updateDynamic("smartIndent")(smartIndent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
     if (styleActiveLine != null) __obj.updateDynamic("styleActiveLine")(styleActiveLine.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
-    if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabindex)) __obj.updateDynamic("tabindex")(tabindex.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (undoDepth != null) __obj.updateDynamic("undoDepth")(undoDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(undoDepth)) __obj.updateDynamic("undoDepth")(undoDepth.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (viewportMargin != null) __obj.updateDynamic("viewportMargin")(viewportMargin.asInstanceOf[js.Any])
-    if (workDelay != null) __obj.updateDynamic("workDelay")(workDelay.asInstanceOf[js.Any])
-    if (workTime != null) __obj.updateDynamic("workTime")(workTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewportMargin)) __obj.updateDynamic("viewportMargin")(viewportMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDelay)) __obj.updateDynamic("workDelay")(workDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(workTime)) __obj.updateDynamic("workTime")(workTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorConfiguration]
   }
 }

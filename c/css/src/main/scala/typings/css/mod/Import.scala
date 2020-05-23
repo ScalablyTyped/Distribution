@@ -1,6 +1,6 @@
 package typings.css.mod
 
-import typings.css.AnonContent
+import typings.css.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Import
 
 object Import {
   @scala.inline
-  def apply(`import`: String = null, parent: Node = null, position: AnonContent = null, `type`: String = null): Import = {
+  def apply(`import`: String = null, parent: Node = null, position: Content = null, `type`: String = null): Import = {
     val __obj = js.Dynamic.literal()
     if (`import` != null) __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])

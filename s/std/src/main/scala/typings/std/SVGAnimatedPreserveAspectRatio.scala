@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ trait SVGAnimatedPreserveAspectRatio extends js.Object {
   val baseVal: SVGPreserveAspectRatio
 }
 
-@JSGlobal("SVGAnimatedPreserveAspectRatio")
-@js.native
-object SVGAnimatedPreserveAspectRatio extends Instantiable0[SVGAnimatedPreserveAspectRatio]
+object SVGAnimatedPreserveAspectRatio {
+  @scala.inline
+  def apply(animVal: SVGPreserveAspectRatio, baseVal: SVGPreserveAspectRatio): SVGAnimatedPreserveAspectRatio = {
+    val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGAnimatedPreserveAspectRatio]
+  }
+}
 

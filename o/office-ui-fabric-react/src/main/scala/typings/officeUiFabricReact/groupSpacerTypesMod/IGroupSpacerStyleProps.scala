@@ -13,9 +13,9 @@ trait IGroupSpacerStyleProps extends js.Object {
 
 object IGroupSpacerStyleProps {
   @scala.inline
-  def apply(theme: ITheme, width: Int | Double = null): IGroupSpacerStyleProps = {
+  def apply(theme: ITheme, width: js.UndefOr[Double] = js.undefined): IGroupSpacerStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupSpacerStyleProps]
   }
 }

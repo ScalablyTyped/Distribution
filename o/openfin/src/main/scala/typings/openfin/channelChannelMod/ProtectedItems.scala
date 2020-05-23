@@ -1,9 +1,10 @@
 package typings.openfin.channelChannelMod
 
-import typings.openfin.FnCall
+import typings.openfin.anon.FnCall
 import typings.openfin.identityMod.Identity
 import typings.openfin.openfinBooleans.`true`
 import typings.openfin.openfinStrings.`request-external-authorization`
+import typings.openfin.shapesMod.ProviderIdentity
 import typings.openfin.transportMod.AuthorizationPayload
 import typings.openfin.transportMod.Message
 import typings.openfin.transportMod.Payload

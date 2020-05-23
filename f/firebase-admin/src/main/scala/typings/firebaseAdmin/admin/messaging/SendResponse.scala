@@ -1,6 +1,5 @@
 package typings.firebaseAdmin.admin.messaging
 
-import typings.firebaseAdmin.admin.FirebaseError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,9 @@ trait SendResponse extends js.Object {
   /**
     * An error, if the message was not handed off to FCM successfully.
     */
-  var error: js.UndefOr[FirebaseError] = js.undefined
+  var error: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.FirebaseError */ js.Any
+  ] = js.undefined
   /**
     * A unique message ID string, if the message was handed off to FCM for
     * delivery.
@@ -30,7 +31,11 @@ trait SendResponse extends js.Object {
 
 object SendResponse {
   @scala.inline
-  def apply(success: Boolean, error: FirebaseError = null, messageId: String = null): SendResponse = {
+  def apply(
+    success: Boolean,
+    error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _admin.FirebaseError */ js.Any = null,
+    messageId: String = null
+  ): SendResponse = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])

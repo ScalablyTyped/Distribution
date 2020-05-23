@@ -18,9 +18,9 @@ trait DescribeTemplateResponse extends js.Object {
 
 object DescribeTemplateResponse {
   @scala.inline
-  def apply(Status: Int | scala.Double = null, Template: Template = null): DescribeTemplateResponse = {
+  def apply(Status: js.UndefOr[StatusCode] = js.undefined, Template: Template = null): DescribeTemplateResponse = {
     val __obj = js.Dynamic.literal()
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     if (Template != null) __obj.updateDynamic("Template")(Template.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTemplateResponse]
   }

@@ -11,9 +11,9 @@ trait IClientBlockGetByIdRequest extends js.Object {
 
 object IClientBlockGetByIdRequest {
   @scala.inline
-  def apply(blockId: String = null): IClientBlockGetByIdRequest = {
+  def apply(blockId: js.UndefOr[Null | String] = js.undefined): IClientBlockGetByIdRequest = {
     val __obj = js.Dynamic.literal()
-    if (blockId != null) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockId)) __obj.updateDynamic("blockId")(blockId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBlockGetByIdRequest]
   }
 }

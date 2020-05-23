@@ -9,7 +9,7 @@ package object mod {
   type Exif = org.scalablytyped.runtime.NumberDictionary[scala.Double | java.lang.String | js.Array[java.lang.String]]
   type Iptc = org.scalablytyped.runtime.NumberDictionary[scala.Double | java.lang.String | js.Array[java.lang.String]]
   type LoadImageCallback = js.Function2[
-    /* eventOrImage */ typings.std.Event_ | typings.std.HTMLCanvasElement | typings.std.HTMLImageElement, 
+    /* eventOrImage */ typings.std.Event | typings.std.HTMLCanvasElement | typings.std.HTMLImageElement, 
     /* data */ js.UndefOr[typings.blueimpLoadImage.mod.MetaData], 
     scala.Unit
   ]

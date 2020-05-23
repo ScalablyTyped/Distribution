@@ -1,7 +1,7 @@
 package typings.prex
 
+import typings.std.Generator
 import typings.std.Iterable
-import typings.std.IterableIterator
 import typings.std.Iterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,11 +17,8 @@ object listMod extends js.Object {
     var _head: js.Any = js.native
     var _insertNode: js.Any = js.native
     var _size: js.Any = js.native
-    val first: js.UndefOr[LinkedListNode[T]] = js.native
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[Iterator[T, _, js.UndefOr[scala.Nothing]]] = js.native
-    val last: js.UndefOr[LinkedListNode[T]] = js.native
-    val size: Double = js.native
     def clear(): Unit = js.native
     def delete(value: T): Boolean = js.native
     def deleteAll(
@@ -33,9 +30,10 @@ object listMod extends js.Object {
     ): Double = js.native
     def deleteNode(): Boolean = js.native
     def deleteNode(node: LinkedListNode[T]): Boolean = js.native
-    def drain(): IterableIterator[js.UndefOr[T]] = js.native
+    def drain(): Generator[js.UndefOr[T], Unit, _] = js.native
     def find(value: T): js.UndefOr[LinkedListNode[T]] = js.native
     def findLast(value: T): js.UndefOr[LinkedListNode[T]] = js.native
+    def first: js.UndefOr[LinkedListNode[T]] = js.native
     def forEach(
       callback: js.Function3[/* value */ T, /* node */ LinkedListNode[T], /* list */ LinkedList[T], Unit]
     ): Unit = js.native
@@ -48,7 +46,8 @@ object listMod extends js.Object {
     def insertBefore(node: LinkedListNode[T], value: T): LinkedListNode[T] = js.native
     def insertNodeAfter(node: LinkedListNode[T], newNode: LinkedListNode[T]): Unit = js.native
     def insertNodeBefore(node: LinkedListNode[T], newNode: LinkedListNode[T]): Unit = js.native
-    def nodes(): IterableIterator[LinkedListNode[T]] = js.native
+    def last: js.UndefOr[LinkedListNode[T]] = js.native
+    def nodes(): Generator[LinkedListNode[T], Unit, _] = js.native
     def pop(): js.UndefOr[T] = js.native
     def popNode(): js.UndefOr[LinkedListNode[T]] = js.native
     def push(): LinkedListNode[T] = js.native
@@ -56,19 +55,20 @@ object listMod extends js.Object {
     def pushNode(newNode: LinkedListNode[T]): Unit = js.native
     def shift(): js.UndefOr[T] = js.native
     def shiftNode(): js.UndefOr[LinkedListNode[T]] = js.native
+    def size: Double = js.native
     def unshift(): LinkedListNode[T] = js.native
     def unshift(value: T): LinkedListNode[T] = js.native
     def unshiftNode(newNode: LinkedListNode[T]): Unit = js.native
-    def values(): IterableIterator[js.UndefOr[T]] = js.native
+    def values(): Generator[js.UndefOr[T], Unit, _] = js.native
   }
   
   @js.native
   class LinkedListNode[T] () extends js.Object {
     def this(value: T) = this()
-    val list: js.UndefOr[LinkedList[T]] = js.native
-    val next: js.UndefOr[LinkedListNode[T]] = js.native
-    val previous: js.UndefOr[LinkedListNode[T]] = js.native
     var value: js.UndefOr[T] = js.native
+    def list: js.UndefOr[LinkedList[T]] = js.native
+    def next: js.UndefOr[LinkedListNode[T]] = js.native
+    def previous: js.UndefOr[LinkedListNode[T]] = js.native
   }
   
 }

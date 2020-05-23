@@ -1,8 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Blob
   extends ImageBitmapSource
+     with MediaProvider
      with _BlobPart
      with _BodyInit {
   val size: Double = js.native
@@ -23,11 +21,4 @@ trait Blob
   def stream(): ReadableStream[_] = js.native
   def text(): js.Promise[java.lang.String] = js.native
 }
-
-@JSGlobal("Blob")
-@js.native
-object Blob
-  extends Instantiable0[Blob]
-     with Instantiable1[/* blobParts */ js.Array[BlobPart], Blob]
-     with Instantiable2[/* blobParts */ js.Array[BlobPart], /* options */ BlobPropertyBag, Blob]
 

@@ -1,5 +1,6 @@
 package typings.awsCryptoSha256Browser
 
+import typings.awsCryptoSha256Browser.anon.Name
 import typings.awsCryptoSha256Browser.awsCryptoSha256BrowserStrings.HMAC
 import typings.awsCryptoSha256Browser.awsCryptoSha256BrowserStrings.`SHA-256`
 import typings.std.Uint8Array
@@ -18,7 +19,7 @@ object constantsMod extends js.Object {
   
   @js.native
   object SHA_256_HMAC_ALGO extends js.Object {
-    var hash: AnonName = js.native
+    var hash: Name = js.native
     var name: HMAC = js.native
   }
   

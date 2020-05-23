@@ -18,10 +18,10 @@ trait ListenerPortRange extends js.Object {
 
 object ListenerPortRange {
   @scala.inline
-  def apply(fromPort: Int | Double = null, toPort: Int | Double = null): ListenerPortRange = {
+  def apply(fromPort: js.UndefOr[Double] = js.undefined, toPort: js.UndefOr[Double] = js.undefined): ListenerPortRange = {
     val __obj = js.Dynamic.literal()
-    if (fromPort != null) __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
-    if (toPort != null) __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromPort)) __obj.updateDynamic("fromPort")(fromPort.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toPort)) __obj.updateDynamic("toPort")(toPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerPortRange]
   }
 }

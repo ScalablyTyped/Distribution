@@ -29,7 +29,7 @@ object TrailEventSelector {
   ): TrailEventSelector = {
     val __obj = js.Dynamic.literal()
     if (dataResources != null) __obj.updateDynamic("dataResources")(dataResources.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeManagementEvents)) __obj.updateDynamic("includeManagementEvents")(includeManagementEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeManagementEvents)) __obj.updateDynamic("includeManagementEvents")(includeManagementEvents.get.asInstanceOf[js.Any])
     if (readWriteType != null) __obj.updateDynamic("readWriteType")(readWriteType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrailEventSelector]
   }

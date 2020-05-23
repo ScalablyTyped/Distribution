@@ -19,10 +19,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides gesture and manipulation recognition, event listeners, and settings. */
-@JSGlobal("Windows.UI.Input.GestureRecognizer")
 @js.native
-/** Initializes a new instance of a GestureRecognizer object. */
-class GestureRecognizer () extends js.Object {
+trait GestureRecognizer extends js.Object {
   /** Gets or sets a value that indicates whether manipulations during inertia are generated automatically. */
   var autoProcessInertia: Boolean = js.native
   /** Gets or sets a value that indicates whether the exact distance from initial contact to end of the cross-slide interaction is reported. */

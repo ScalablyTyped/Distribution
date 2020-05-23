@@ -7,24 +7,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		*	Event dispatched when sent message status changed
-		*/
+  *    Event dispatched when sent message status changed
+  */
 trait MessageStatus extends VoxImplantIMEvent {
   /**
-  			*	User id
-  			*/
+    *    User id
+    */
   var id: String
   /**
-  			*	Message id
-  			*/
+    *    Message id
+    */
   var message_id: String
   /**
-  			*	Resource name
-  			*/
+    *    Resource name
+    */
   var resource: js.UndefOr[String] = js.undefined
   /**
-  			*	Message event type. See VoxImplant.MessageEventType enum
-  			*/
+    *    Message event type. See VoxImplant.MessageEventType enum
+    */
   var `type`: MessageEventType
 }
 

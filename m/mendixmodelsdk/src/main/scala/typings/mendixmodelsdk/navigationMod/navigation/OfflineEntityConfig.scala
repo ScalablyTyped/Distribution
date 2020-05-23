@@ -35,9 +35,17 @@ class OfflineEntityConfig protected () extends Element {
   def constraint: String = js.native
   def constraint(newValue: String): js.Any = js.native
   def containerAsNavigationProfileBase: NavigationProfileBase = js.native
+  /**
+    * In version 8.9.0: introduced
+    */
+  def downloadMode: OfflineEntitySyncDownloadMode = js.native
+  def downloadMode(newValue: OfflineEntitySyncDownloadMode): js.Any = js.native
   def entity: IEntity = js.native
   def entity(newValue: IEntity): js.Any = js.native
   def entityQualifiedName: String = js.native
+  /**
+    * In version 8.9.0: deleted
+    */
   def shouldDownload: Boolean = js.native
   def shouldDownload(newValue: Boolean): js.Any = js.native
 }

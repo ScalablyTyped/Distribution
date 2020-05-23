@@ -1,8 +1,8 @@
 package typings.node.NodeJS
 
-import typings.node.AnonDebug
-import typings.node.AnonSwallowErrors
-import typings.node.AnonTargetdefaults
+import typings.node.anon.Debug
+import typings.node.anon.SwallowErrors
+import typings.node.anon.Targetdefaults
 import typings.node.nodeStrings.beforeExit
 import typings.node.nodeStrings.disconnect
 import typings.node.nodeStrings.exit
@@ -15,8 +15,8 @@ import typings.node.nodeStrings.uncaughtException
 import typings.node.nodeStrings.uncaughtExceptionMonitor
 import typings.node.nodeStrings.unhandledRejection
 import typings.node.nodeStrings.warning
-import typings.node.processMod._Global_.NodeJS.ReadStream
-import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.node.processMod.global.NodeJS.ReadStream
+import typings.node.processMod.global.NodeJS.WriteStream
 import typings.std.Error
 import typings.std.ReadonlySet
 import scala.scalajs.js
@@ -34,18 +34,17 @@ trait Process extends EventEmitter {
   var arch: String = js.native
   var argv: js.Array[String] = js.native
   var argv0: String = js.native
-  var config: AnonTargetdefaults = js.native
+  var config: Targetdefaults = js.native
   var connected: Boolean = js.native
   var debugPort: Double = js.native
   var domain: Domain = js.native
-  var env: Dict[String] = js.native
+  var env: ProcessEnv = js.native
   var execArgv: js.Array[String] = js.native
   var execPath: String = js.native
   var exitCode: js.UndefOr[Double] = js.native
-  var features: AnonDebug = js.native
+  var features: Debug = js.native
   @JSName("hrtime")
   var hrtime_Original: HRTime = js.native
-  var mainModule: js.UndefOr[Module] = js.native
   var pid: Double = js.native
   var platform: Platform = js.native
   var ppid: Double = js.native
@@ -59,7 +58,7 @@ trait Process extends EventEmitter {
     js.Function4[
       /* message */ js.Any, 
       /* sendHandle */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[AnonSwallowErrors], 
+      /* options */ js.UndefOr[SwallowErrors], 
       /* callback */ js.UndefOr[js.Function1[/* error */ Error | Null, Unit]], 
       Boolean
     ]
@@ -297,7 +296,6 @@ trait Process extends EventEmitter {
   /**
     * Can only be set if not in worker thread.
     */
-  def umask(): Double = js.native
   def umask(mask: Double): Double = js.native
   def uptime(): Double = js.native
 }

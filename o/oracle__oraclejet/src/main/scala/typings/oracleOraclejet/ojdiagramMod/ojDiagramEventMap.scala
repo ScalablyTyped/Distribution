@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojdiagramMod
 
-import typings.oracleOraclejet.Anon5
-import typings.oracleOraclejet.AnonAnimationDuration
-import typings.oracleOraclejet.AnonDrop
-import typings.oracleOraclejet.AnonHalign
-import typings.oracleOraclejet.AnonInsertSVGElement
+import typings.oracleOraclejet.anon.AnimationDuration
+import typings.oracleOraclejet.anon.Drop
+import typings.oracleOraclejet.anon.Halign
+import typings.oracleOraclejet.anon.InsertSVGElement
+import typings.oracleOraclejet.anon.`5`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdiagramMod.ojDiagram.RendererContext
@@ -38,8 +38,8 @@ import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -58,17 +58,17 @@ trait ojDiagramEventMap[K1, K2, D1, D2] extends dvtBaseComponentEventMap[ojDiagr
   var animationOnDataChangeChanged: JetElementCustomEvent[auto | none]
   var animationOnDisplayChanged: JetElementCustomEvent[auto | none]
   var asChanged: JetElementCustomEvent[String]
-  var dndChanged: JetElementCustomEvent[AnonDrop]
+  var dndChanged: JetElementCustomEvent[Drop]
   var expandedChanged: JetElementCustomEvent[KeySet[K1]]
   var focusRendererChanged: JetElementCustomEvent[
-    (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+    (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
   ]
   var hiddenCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   var highlightMatchChanged: JetElementCustomEvent[any | all]
   var highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]]
   var hoverBehaviorChanged: JetElementCustomEvent[dim | none]
   var hoverRendererChanged: JetElementCustomEvent[
-    (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+    (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
   ]
   var layoutChanged: JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]]
   var linkDataChanged: JetElementCustomEvent[(DataProvider[K2, D2]) | Null]
@@ -81,21 +81,21 @@ trait ojDiagramEventMap[K1, K2, D1, D2] extends dvtBaseComponentEventMap[ojDiagr
   var ojBeforeExpand: typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand
   var ojCollapse: typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse
   var ojExpand: typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojExpand
-  var overviewChanged: JetElementCustomEvent[AnonHalign]
+  var overviewChanged: JetElementCustomEvent[Halign]
   var panDirectionChanged: JetElementCustomEvent[x | y | auto]
   var panningChanged: JetElementCustomEvent[auto | none]
   var promotedLinkBehaviorChanged: JetElementCustomEvent[none | full | `lazy`]
-  var rendererChanged: JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement]]
+  var rendererChanged: JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]]
   var selectionChanged: JetElementCustomEvent[js.Array[K1 | K2]]
   var selectionModeChanged: JetElementCustomEvent[single | multiple | none]
   var selectionRendererChanged: JetElementCustomEvent[
-    (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+    (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
   ]
-  var styleDefaultsChanged: JetElementCustomEvent[AnonAnimationDuration]
-  var tooltipChanged: JetElementCustomEvent[Anon5[K1, K2, D1, D2]]
+  var styleDefaultsChanged: JetElementCustomEvent[AnimationDuration]
+  var tooltipChanged: JetElementCustomEvent[`5`[K1, K2, D1, D2]]
   var touchResponseChanged: JetElementCustomEvent[touchStart | auto]
   var zoomRendererChanged: JetElementCustomEvent[
-    (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+    (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
   ]
   var zoomingChanged: JetElementCustomEvent[auto | none]
 }
@@ -113,59 +113,59 @@ object ojDiagramEventMap {
     asChanged: JetElementCustomEvent[String],
     auxclick: MouseEvent,
     blur: FocusEvent,
-    cancel: Event_,
-    canplay: Event_,
-    canplaythrough: Event_,
-    change: Event_,
+    cancel: Event,
+    canplay: Event,
+    canplaythrough: Event,
+    change: Event,
     click: MouseEvent,
-    close: Event_,
+    close: Event,
     contextmenu: MouseEvent,
     copy: ClipboardEvent,
-    cuechange: Event_,
+    cuechange: Event,
     cut: ClipboardEvent,
     dblclick: MouseEvent,
-    dndChanged: JetElementCustomEvent[AnonDrop],
+    dndChanged: JetElementCustomEvent[Drop],
     drag: DragEvent,
     dragend: DragEvent,
     dragenter: DragEvent,
-    dragexit: Event_,
+    dragexit: Event,
     dragleave: DragEvent,
     dragover: DragEvent,
     dragstart: DragEvent,
     drop: DragEvent,
-    durationchange: Event_,
-    emptied: Event_,
-    ended: Event_,
+    durationchange: Event,
+    emptied: Event,
+    ended: Event,
     error: ErrorEvent,
     expandedChanged: JetElementCustomEvent[KeySet[K1]],
     focus: FocusEvent,
     focusRendererChanged: JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ],
     focusin: FocusEvent,
     focusout: FocusEvent,
-    fullscreenchange: Event_,
-    fullscreenerror: Event_,
+    fullscreenchange: Event,
+    fullscreenerror: Event,
     gotpointercapture: PointerEvent,
     hiddenCategoriesChanged: JetElementCustomEvent[js.Array[String]],
     highlightMatchChanged: JetElementCustomEvent[any | all],
     highlightedCategoriesChanged: JetElementCustomEvent[js.Array[String]],
     hoverBehaviorChanged: JetElementCustomEvent[dim | none],
     hoverRendererChanged: JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ],
-    input: Event_,
-    invalid: Event_,
+    input: Event,
+    invalid: Event,
     keydown: KeyboardEvent,
     keypress: KeyboardEvent,
     keyup: KeyboardEvent,
     layoutChanged: JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]],
     linkDataChanged: JetElementCustomEvent[(DataProvider[K2, D2]) | Null],
     linkHighlightModeChanged: JetElementCustomEvent[linkAndNodes | link],
-    load: Event_,
-    loadeddata: Event_,
-    loadedmetadata: Event_,
-    loadstart: Event_,
+    load: Event,
+    loadeddata: Event,
+    loadedmetadata: Event,
+    loadstart: Event,
     lostpointercapture: PointerEvent,
     maxZoomChanged: JetElementCustomEvent[Double],
     minZoomChanged: JetElementCustomEvent[Double],
@@ -182,13 +182,13 @@ object ojDiagramEventMap {
     ojBeforeExpand: ojBeforeExpand,
     ojCollapse: ojCollapse,
     ojExpand: ojExpand,
-    overviewChanged: JetElementCustomEvent[AnonHalign],
+    overviewChanged: JetElementCustomEvent[Halign],
     panDirectionChanged: JetElementCustomEvent[x | y | auto],
     panningChanged: JetElementCustomEvent[auto | none],
     paste: ClipboardEvent,
-    pause: Event_,
-    play: Event_,
-    playing: Event_,
+    pause: Event,
+    play: Event,
+    playing: Event,
     pointercancel: PointerEvent,
     pointerdown: PointerEvent,
     pointerenter: PointerEvent,
@@ -199,29 +199,29 @@ object ojDiagramEventMap {
     pointerup: PointerEvent,
     progress: ProgressEvent[EventTarget],
     promotedLinkBehaviorChanged: JetElementCustomEvent[none | full | `lazy`],
-    ratechange: Event_,
-    rendererChanged: JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement]],
-    reset: Event_,
+    ratechange: Event,
+    rendererChanged: JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]],
+    reset: Event,
     resize: UIEvent,
-    scroll: Event_,
+    scroll: Event,
     securitypolicyviolation: SecurityPolicyViolationEvent,
-    seeked: Event_,
-    seeking: Event_,
-    select: Event_,
+    seeked: Event,
+    seeking: Event,
+    select: Event,
     selectionChanged: JetElementCustomEvent[js.Array[K1 | K2]],
     selectionModeChanged: JetElementCustomEvent[single | multiple | none],
     selectionRendererChanged: JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ],
-    selectionchange: Event_,
-    selectstart: Event_,
-    stalled: Event_,
-    styleDefaultsChanged: JetElementCustomEvent[AnonAnimationDuration],
-    submit: Event_,
-    suspend: Event_,
-    timeupdate: Event_,
-    toggle: Event_,
-    tooltipChanged: JetElementCustomEvent[Anon5[K1, K2, D1, D2]],
+    selectionchange: Event,
+    selectstart: Event,
+    stalled: Event,
+    styleDefaultsChanged: JetElementCustomEvent[AnimationDuration],
+    submit: Event,
+    suspend: Event,
+    timeupdate: Event,
+    toggle: Event,
+    tooltipChanged: JetElementCustomEvent[`5`[K1, K2, D1, D2]],
     touchResponseChanged: JetElementCustomEvent[touchStart | auto],
     touchcancel: TouchEvent,
     touchend: TouchEvent,
@@ -233,11 +233,11 @@ object ojDiagramEventMap {
     transitionrun: TransitionEvent,
     transitionstart: TransitionEvent,
     translationsChanged: JetElementCustomEvent[js.Object | Null],
-    volumechange: Event_,
-    waiting: Event_,
+    volumechange: Event,
+    waiting: Event,
     wheel: WheelEvent,
     zoomRendererChanged: JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ],
     zoomingChanged: JetElementCustomEvent[auto | none]
   ): ojDiagramEventMap[K1, K2, D1, D2] = {

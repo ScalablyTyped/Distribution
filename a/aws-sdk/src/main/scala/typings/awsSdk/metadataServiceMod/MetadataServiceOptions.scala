@@ -1,6 +1,6 @@
 package typings.awsSdk.metadataServiceMod
 
-import typings.awsSdk.AnonTimeout
+import typings.awsSdk.anon.Timeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait MetadataServiceOptions extends js.Object {
   /**
     * a map of options to pass to the underlying HTTP request.
     */
-  var httpOptions: js.UndefOr[AnonTimeout] = js.native
+  var httpOptions: js.UndefOr[Timeout] = js.native
   /**
     * the maximum number of retries to perform for timeout errors.
     */
@@ -29,14 +29,14 @@ object MetadataServiceOptions {
   @scala.inline
   def apply(
     host: String = null,
-    httpOptions: AnonTimeout = null,
-    maxRetries: Int | Double = null,
+    httpOptions: Timeout = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     retryDelayOptions: js.Any = null
   ): MetadataServiceOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (httpOptions != null) __obj.updateDynamic("httpOptions")(httpOptions.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (retryDelayOptions != null) __obj.updateDynamic("retryDelayOptions")(retryDelayOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataServiceOptions]
   }

@@ -25,10 +25,10 @@ object GetJobRunRequest {
   def apply(
     JobName: NameString,
     RunId: IdString,
-    PredecessorsIncluded: js.UndefOr[scala.Boolean] = js.undefined
+    PredecessorsIncluded: js.UndefOr[BooleanValue] = js.undefined
   ): GetJobRunRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any], RunId = RunId.asInstanceOf[js.Any])
-    if (!js.isUndefined(PredecessorsIncluded)) __obj.updateDynamic("PredecessorsIncluded")(PredecessorsIncluded.asInstanceOf[js.Any])
+    if (!js.isUndefined(PredecessorsIncluded)) __obj.updateDynamic("PredecessorsIncluded")(PredecessorsIncluded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobRunRequest]
   }
 }

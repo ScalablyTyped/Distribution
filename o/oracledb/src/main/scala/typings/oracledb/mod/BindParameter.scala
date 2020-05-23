@@ -43,16 +43,16 @@ trait BindParameter extends js.Object {
 object BindParameter {
   @scala.inline
   def apply(
-    dir: Int | Double = null,
-    maxArraySize: Int | Double = null,
-    maxSize: Int | Double = null,
+    dir: js.UndefOr[Double] = js.undefined,
+    maxArraySize: js.UndefOr[Double] = js.undefined,
+    maxSize: js.UndefOr[Double] = js.undefined,
     `type`: Double | String = null,
     `val`: js.Any = null
   ): BindParameter = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (maxArraySize != null) __obj.updateDynamic("maxArraySize")(maxArraySize.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxArraySize)) __obj.updateDynamic("maxArraySize")(maxArraySize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (`val` != null) __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindParameter]

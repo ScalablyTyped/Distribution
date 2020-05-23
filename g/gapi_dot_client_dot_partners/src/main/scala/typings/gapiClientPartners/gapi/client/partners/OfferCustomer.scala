@@ -31,7 +31,7 @@ object OfferCustomer {
     adwordsUrl: String = null,
     countryCode: String = null,
     creationTime: String = null,
-    eligibilityDaysLeft: Int | Double = null,
+    eligibilityDaysLeft: js.UndefOr[Double] = js.undefined,
     externalCid: String = null,
     getYAmount: String = null,
     name: String = null,
@@ -42,7 +42,7 @@ object OfferCustomer {
     if (adwordsUrl != null) __obj.updateDynamic("adwordsUrl")(adwordsUrl.asInstanceOf[js.Any])
     if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (eligibilityDaysLeft != null) __obj.updateDynamic("eligibilityDaysLeft")(eligibilityDaysLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(eligibilityDaysLeft)) __obj.updateDynamic("eligibilityDaysLeft")(eligibilityDaysLeft.get.asInstanceOf[js.Any])
     if (externalCid != null) __obj.updateDynamic("externalCid")(externalCid.asInstanceOf[js.Any])
     if (getYAmount != null) __obj.updateDynamic("getYAmount")(getYAmount.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

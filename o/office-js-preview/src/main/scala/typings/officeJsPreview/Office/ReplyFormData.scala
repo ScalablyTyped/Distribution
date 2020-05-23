@@ -13,7 +13,7 @@ trait ReplyFormData extends js.Object {
     */
   var attachments: js.UndefOr[js.Array[ReplyFormAttachment]] = js.undefined
   /**
-    * When the reply display call completes, the function passed in the callback parameter is called with a single parameter, 
+    * When the reply display call completes, the function passed in the callback parameter is called with a single parameter,
     * `asyncResult`, which is an `Office.AsyncResult` object.
     */
   var callback: js.UndefOr[js.Function1[/* asyncResult */ AsyncResult[_], Unit]] = js.undefined

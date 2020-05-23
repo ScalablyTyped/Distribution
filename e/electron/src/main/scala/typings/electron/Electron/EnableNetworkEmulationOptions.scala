@@ -26,16 +26,16 @@ trait EnableNetworkEmulationOptions extends js.Object {
 object EnableNetworkEmulationOptions {
   @scala.inline
   def apply(
-    downloadThroughput: Int | Double = null,
-    latency: Int | Double = null,
+    downloadThroughput: js.UndefOr[Double] = js.undefined,
+    latency: js.UndefOr[Double] = js.undefined,
     offline: js.UndefOr[Boolean] = js.undefined,
-    uploadThroughput: Int | Double = null
+    uploadThroughput: js.UndefOr[Double] = js.undefined
   ): EnableNetworkEmulationOptions = {
     val __obj = js.Dynamic.literal()
-    if (downloadThroughput != null) __obj.updateDynamic("downloadThroughput")(downloadThroughput.asInstanceOf[js.Any])
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
-    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.asInstanceOf[js.Any])
-    if (uploadThroughput != null) __obj.updateDynamic("uploadThroughput")(uploadThroughput.asInstanceOf[js.Any])
+    if (!js.isUndefined(downloadThroughput)) __obj.updateDynamic("downloadThroughput")(downloadThroughput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uploadThroughput)) __obj.updateDynamic("uploadThroughput")(uploadThroughput.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableNetworkEmulationOptions]
   }
 }

@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("@lumino/polling/lib/poll", "Poll.NEVER")
 @js.native
-object NEVER extends TopLevel[Double]
+object NEVER extends TopLevel[/* 0 */ Double]
 

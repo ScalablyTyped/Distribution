@@ -20,19 +20,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * A <Titanium.UI.iOS.BlurView> object gives you an easy way implement some complex visual effects.
-			 * The blur effect is applied to every view the blur view is added to by default. You can also place the
-			 * blur view above other views and all visible views layered under the blur view are blurred as well.
-			 * For more information on BlurView, please refer to the official [Apple documentation](https://developer.apple.com/documentation/uikit/uivisualeffectview).
-			 * Note: Apple introduced two new constants <Titanium.UI.iOS.BLUR_EFFECT_STYLE_REGULAR> and <Titanium.UI.iOS.BLUR_EFFECT_STYLE_PROMINENT> in
-			 * iOS 10. These are internally mapped to <Titanium.UI.iOS.BLUR_EFFECT_STYLE_LIGHT> and <Titanium.UI.iOS.BLUR_EFFECT_STYLE_EXTRA_LIGHT>.
-			 */
-@JSGlobal("Titanium.UI.iOS.BlurView")
+  * A <Titanium.UI.iOS.BlurView> object gives you an easy way implement some complex visual effects.
+  * The blur effect is applied to every view the blur view is added to by default. You can also place the
+  * blur view above other views and all visible views layered under the blur view are blurred as well.
+  * For more information on BlurView, please refer to the official [Apple documentation](https://developer.apple.com/documentation/uikit/uivisualeffectview).
+  * Note: Apple introduced two new constants <Titanium.UI.iOS.BLUR_EFFECT_STYLE_REGULAR> and <Titanium.UI.iOS.BLUR_EFFECT_STYLE_PROMINENT> in
+  * iOS 10. These are internally mapped to <Titanium.UI.iOS.BLUR_EFFECT_STYLE_LIGHT> and <Titanium.UI.iOS.BLUR_EFFECT_STYLE_EXTRA_LIGHT>.
+  */
 @js.native
-class BlurView () extends View {
+trait BlurView extends View {
   /**
-  				 * The effect you provide for the view.
-  				 */
+    * The effect you provide for the view.
+    */
   var effect: Double = js.native
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: BlurViewClickEvent): Unit = js.native
@@ -63,14 +62,14 @@ class BlurView () extends View {
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: BlurViewTwofingertapEvent): Unit = js.native
   /**
-  				 * Gets the value of the <Titanium.UI.iOS.BlurView.effect> property.
-  				 * @deprecated Access <Titanium.UI.iOS.BlurView.effect> instead.
-  				 */
+    * Gets the value of the <Titanium.UI.iOS.BlurView.effect> property.
+    * @deprecated Access <Titanium.UI.iOS.BlurView.effect> instead.
+    */
   def getEffect(): Double = js.native
   /**
-  				 * Sets the value of the <Titanium.UI.iOS.BlurView.effect> property.
-  				 * @deprecated Set the value using <Titanium.UI.iOS.BlurView.effect> instead.
-  				 */
+    * Sets the value of the <Titanium.UI.iOS.BlurView.effect> property.
+    * @deprecated Set the value using <Titanium.UI.iOS.BlurView.effect> instead.
+    */
   def setEffect(effect: Double): Unit = js.native
 }
 

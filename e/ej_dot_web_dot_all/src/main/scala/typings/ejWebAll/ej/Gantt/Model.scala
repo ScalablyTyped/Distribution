@@ -556,7 +556,7 @@ object Model {
     collapsing: /* e */ CollapsingEventArgs => Unit = null,
     columnDialogFields: js.Array[_] = null,
     connectorLineBackground: String = null,
-    connectorlineWidth: Int | Double = null,
+    connectorlineWidth: js.UndefOr[Double] = js.undefined,
     contextMenuOpen: /* e */ ContextMenuOpenEventArgs => Unit = null,
     create: /* e */ CreateEventArgs => Unit = null,
     cssClass: String = null,
@@ -611,7 +611,7 @@ object Model {
     predecessorTooltipTemplate: String = null,
     progressMapping: String = null,
     progressbarBackground: String = null,
-    progressbarHeight: Int | Double = null,
+    progressbarHeight: js.UndefOr[Double] = js.undefined,
     progressbarTooltipTemplate: String = null,
     progressbarTooltipTemplateId: String = null,
     query: js.Any = null,
@@ -632,14 +632,14 @@ object Model {
     rowDrag: /* e */ RowDragEventArgs => Unit = null,
     rowDragStart: /* e */ RowDragStartEventArgs => Unit = null,
     rowDragStop: /* e */ RowDragStopEventArgs => Unit = null,
-    rowHeight: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     rowSelected: /* e */ RowSelectedEventArgs => Unit = null,
     rowSelecting: /* e */ RowSelectingEventArgs => Unit = null,
     scheduleEndDate: String = null,
     scheduleHeaderSettings: ScheduleHeaderSettings = null,
     scheduleStartDate: String = null,
     selectedCellIndexes: js.Array[SelectedCellIndex] = null,
-    selectedRowIndex: Int | Double = null,
+    selectedRowIndex: js.UndefOr[Double] = js.undefined,
     selectionMode: SelectionMode | String = null,
     selectionType: SelectionType | String = null,
     showColumnChooser: js.UndefOr[Boolean] = js.undefined,
@@ -668,13 +668,13 @@ object Model {
     taskbarEditing: /* e */ TaskbarEditingEventArgs => Unit = null,
     taskbarEditingTooltipTemplate: String = null,
     taskbarEditingTooltipTemplateId: String = null,
-    taskbarHeight: Int | Double = null,
+    taskbarHeight: js.UndefOr[Double] = js.undefined,
     taskbarTemplate: String = null,
     taskbarTooltipTemplate: String = null,
     taskbarTooltipTemplateId: String = null,
     toolbarClick: /* e */ ToolbarClickEventArgs => Unit = null,
     toolbarSettings: ToolbarSettings = null,
-    treeColumnIndex: Int | Double = null,
+    treeColumnIndex: js.UndefOr[Double] = js.undefined,
     validateManualTasksOnLinking: js.UndefOr[Boolean] = js.undefined,
     viewType: ViewType | String = null,
     weekendBackground: String = null,
@@ -687,15 +687,15 @@ object Model {
     if (actionBegin != null) __obj.updateDynamic("actionBegin")(js.Any.fromFunction1(actionBegin))
     if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
     if (addDialogFields != null) __obj.updateDynamic("addDialogFields")(addDialogFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowColumnResize)) __obj.updateDynamic("allowColumnResize")(allowColumnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowGanttChartEditing)) __obj.updateDynamic("allowGanttChartEditing")(allowGanttChartEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultiSorting)) __obj.updateDynamic("allowMultiSorting")(allowMultiSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultipleExporting)) __obj.updateDynamic("allowMultipleExporting")(allowMultipleExporting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowUnscheduledTask)) __obj.updateDynamic("allowUnscheduledTask")(allowUnscheduledTask.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowColumnResize)) __obj.updateDynamic("allowColumnResize")(allowColumnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowGanttChartEditing)) __obj.updateDynamic("allowGanttChartEditing")(allowGanttChartEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiSorting)) __obj.updateDynamic("allowMultiSorting")(allowMultiSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultipleExporting)) __obj.updateDynamic("allowMultipleExporting")(allowMultipleExporting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnscheduledTask)) __obj.updateDynamic("allowUnscheduledTask")(allowUnscheduledTask.get.asInstanceOf[js.Any])
     if (baselineColor != null) __obj.updateDynamic("baselineColor")(baselineColor.asInstanceOf[js.Any])
     if (baselineEndDateMapping != null) __obj.updateDynamic("baselineEndDateMapping")(baselineEndDateMapping.asInstanceOf[js.Any])
     if (baselineStartDateMapping != null) __obj.updateDynamic("baselineStartDateMapping")(baselineStartDateMapping.asInstanceOf[js.Any])
@@ -708,7 +708,7 @@ object Model {
     if (collapsing != null) __obj.updateDynamic("collapsing")(js.Any.fromFunction1(collapsing))
     if (columnDialogFields != null) __obj.updateDynamic("columnDialogFields")(columnDialogFields.asInstanceOf[js.Any])
     if (connectorLineBackground != null) __obj.updateDynamic("connectorLineBackground")(connectorLineBackground.asInstanceOf[js.Any])
-    if (connectorlineWidth != null) __obj.updateDynamic("connectorlineWidth")(connectorlineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorlineWidth)) __obj.updateDynamic("connectorlineWidth")(connectorlineWidth.get.asInstanceOf[js.Any])
     if (contextMenuOpen != null) __obj.updateDynamic("contextMenuOpen")(js.Any.fromFunction1(contextMenuOpen))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
@@ -721,18 +721,18 @@ object Model {
     if (durationUnitMapping != null) __obj.updateDynamic("durationUnitMapping")(durationUnitMapping.asInstanceOf[js.Any])
     if (editDialogFields != null) __obj.updateDynamic("editDialogFields")(editDialogFields.asInstanceOf[js.Any])
     if (editSettings != null) __obj.updateDynamic("editSettings")(editSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAltRow)) __obj.updateDynamic("enableAltRow")(enableAltRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCollapseAll)) __obj.updateDynamic("enableCollapseAll")(enableCollapseAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePredecessorValidation)) __obj.updateDynamic("enablePredecessorValidation")(enablePredecessorValidation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableProgressBarResizing)) __obj.updateDynamic("enableProgressBarResizing")(enableProgressBarResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSerialNumber)) __obj.updateDynamic("enableSerialNumber")(enableSerialNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTaskbarDragTooltip)) __obj.updateDynamic("enableTaskbarDragTooltip")(enableTaskbarDragTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTaskbarTooltip)) __obj.updateDynamic("enableTaskbarTooltip")(enableTaskbarTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableWBS)) __obj.updateDynamic("enableWBS")(enableWBS.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableWBSPredecessor)) __obj.updateDynamic("enableWBSPredecessor")(enableWBSPredecessor.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAltRow)) __obj.updateDynamic("enableAltRow")(enableAltRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCollapseAll)) __obj.updateDynamic("enableCollapseAll")(enableCollapseAll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePredecessorValidation)) __obj.updateDynamic("enablePredecessorValidation")(enablePredecessorValidation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableProgressBarResizing)) __obj.updateDynamic("enableProgressBarResizing")(enableProgressBarResizing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSerialNumber)) __obj.updateDynamic("enableSerialNumber")(enableSerialNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTaskbarDragTooltip)) __obj.updateDynamic("enableTaskbarDragTooltip")(enableTaskbarDragTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTaskbarTooltip)) __obj.updateDynamic("enableTaskbarTooltip")(enableTaskbarTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableWBS)) __obj.updateDynamic("enableWBS")(enableWBS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableWBSPredecessor)) __obj.updateDynamic("enableWBSPredecessor")(enableWBSPredecessor.get.asInstanceOf[js.Any])
     if (endDateMapping != null) __obj.updateDynamic("endDateMapping")(endDateMapping.asInstanceOf[js.Any])
     if (endEdit != null) __obj.updateDynamic("endEdit")(js.Any.fromFunction1(endEdit))
     if (expandStateMapping != null) __obj.updateDynamic("expandStateMapping")(expandStateMapping.asInstanceOf[js.Any])
@@ -742,11 +742,11 @@ object Model {
     if (groupCollection != null) __obj.updateDynamic("groupCollection")(groupCollection.asInstanceOf[js.Any])
     if (groupIdMapping != null) __obj.updateDynamic("groupIdMapping")(groupIdMapping.asInstanceOf[js.Any])
     if (groupNameMapping != null) __obj.updateDynamic("groupNameMapping")(groupNameMapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightNonWorkingTime)) __obj.updateDynamic("highlightNonWorkingTime")(highlightNonWorkingTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightWeekends)) __obj.updateDynamic("highlightWeekends")(highlightWeekends.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightNonWorkingTime)) __obj.updateDynamic("highlightNonWorkingTime")(highlightNonWorkingTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightWeekends)) __obj.updateDynamic("highlightWeekends")(highlightWeekends.get.asInstanceOf[js.Any])
     if (holidays != null) __obj.updateDynamic("holidays")(holidays.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeWeekend)) __obj.updateDynamic("includeWeekend")(includeWeekend.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeWeekend)) __obj.updateDynamic("includeWeekend")(includeWeekend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
     if (leftTaskLabelMapping != null) __obj.updateDynamic("leftTaskLabelMapping")(leftTaskLabelMapping.asInstanceOf[js.Any])
     if (leftTaskLabelTemplate != null) __obj.updateDynamic("leftTaskLabelTemplate")(leftTaskLabelTemplate.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
@@ -763,14 +763,14 @@ object Model {
     if (predecessorTooltipTemplate != null) __obj.updateDynamic("predecessorTooltipTemplate")(predecessorTooltipTemplate.asInstanceOf[js.Any])
     if (progressMapping != null) __obj.updateDynamic("progressMapping")(progressMapping.asInstanceOf[js.Any])
     if (progressbarBackground != null) __obj.updateDynamic("progressbarBackground")(progressbarBackground.asInstanceOf[js.Any])
-    if (progressbarHeight != null) __obj.updateDynamic("progressbarHeight")(progressbarHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressbarHeight)) __obj.updateDynamic("progressbarHeight")(progressbarHeight.get.asInstanceOf[js.Any])
     if (progressbarTooltipTemplate != null) __obj.updateDynamic("progressbarTooltipTemplate")(progressbarTooltipTemplate.asInstanceOf[js.Any])
     if (progressbarTooltipTemplateId != null) __obj.updateDynamic("progressbarTooltipTemplateId")(progressbarTooltipTemplateId.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(js.Any.fromFunction1(queryCellInfo))
     if (queryTaskbarInfo != null) __obj.updateDynamic("queryTaskbarInfo")(js.Any.fromFunction1(queryTaskbarInfo))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderBaseline)) __obj.updateDynamic("renderBaseline")(renderBaseline.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderBaseline)) __obj.updateDynamic("renderBaseline")(renderBaseline.get.asInstanceOf[js.Any])
     if (resourceCollectionMapping != null) __obj.updateDynamic("resourceCollectionMapping")(resourceCollectionMapping.asInstanceOf[js.Any])
     if (resourceIdMapping != null) __obj.updateDynamic("resourceIdMapping")(resourceIdMapping.asInstanceOf[js.Any])
     if (resourceInfoMapping != null) __obj.updateDynamic("resourceInfoMapping")(resourceInfoMapping.asInstanceOf[js.Any])
@@ -779,28 +779,28 @@ object Model {
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     if (rightTaskLabelMapping != null) __obj.updateDynamic("rightTaskLabelMapping")(rightTaskLabelMapping.asInstanceOf[js.Any])
     if (rightTaskLabelTemplate != null) __obj.updateDynamic("rightTaskLabelTemplate")(rightTaskLabelTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundOffDayworkingTime)) __obj.updateDynamic("roundOffDayworkingTime")(roundOffDayworkingTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundOffDayworkingTime)) __obj.updateDynamic("roundOffDayworkingTime")(roundOffDayworkingTime.get.asInstanceOf[js.Any])
     if (rowDataBound != null) __obj.updateDynamic("rowDataBound")(js.Any.fromFunction1(rowDataBound))
     if (rowDrag != null) __obj.updateDynamic("rowDrag")(js.Any.fromFunction1(rowDrag))
     if (rowDragStart != null) __obj.updateDynamic("rowDragStart")(js.Any.fromFunction1(rowDragStart))
     if (rowDragStop != null) __obj.updateDynamic("rowDragStop")(js.Any.fromFunction1(rowDragStop))
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (rowSelected != null) __obj.updateDynamic("rowSelected")(js.Any.fromFunction1(rowSelected))
     if (rowSelecting != null) __obj.updateDynamic("rowSelecting")(js.Any.fromFunction1(rowSelecting))
     if (scheduleEndDate != null) __obj.updateDynamic("scheduleEndDate")(scheduleEndDate.asInstanceOf[js.Any])
     if (scheduleHeaderSettings != null) __obj.updateDynamic("scheduleHeaderSettings")(scheduleHeaderSettings.asInstanceOf[js.Any])
     if (scheduleStartDate != null) __obj.updateDynamic("scheduleStartDate")(scheduleStartDate.asInstanceOf[js.Any])
     if (selectedCellIndexes != null) __obj.updateDynamic("selectedCellIndexes")(selectedCellIndexes.asInstanceOf[js.Any])
-    if (selectedRowIndex != null) __obj.updateDynamic("selectedRowIndex")(selectedRowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedRowIndex)) __obj.updateDynamic("selectedRowIndex")(selectedRowIndex.get.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnChooser)) __obj.updateDynamic("showColumnChooser")(showColumnChooser.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnOptions)) __obj.updateDynamic("showColumnOptions")(showColumnOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridCellTooltip)) __obj.updateDynamic("showGridCellTooltip")(showGridCellTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridExpandCellTooltip)) __obj.updateDynamic("showGridExpandCellTooltip")(showGridExpandCellTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(showProgressStatus)) __obj.updateDynamic("showProgressStatus")(showProgressStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showResourceNames)) __obj.updateDynamic("showResourceNames")(showResourceNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTaskNames)) __obj.updateDynamic("showTaskNames")(showTaskNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnChooser)) __obj.updateDynamic("showColumnChooser")(showColumnChooser.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnOptions)) __obj.updateDynamic("showColumnOptions")(showColumnOptions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridCellTooltip)) __obj.updateDynamic("showGridCellTooltip")(showGridCellTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridExpandCellTooltip)) __obj.updateDynamic("showGridExpandCellTooltip")(showGridExpandCellTooltip.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showProgressStatus)) __obj.updateDynamic("showProgressStatus")(showProgressStatus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showResourceNames)) __obj.updateDynamic("showResourceNames")(showResourceNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTaskNames)) __obj.updateDynamic("showTaskNames")(showTaskNames.get.asInstanceOf[js.Any])
     if (sizeSettings != null) __obj.updateDynamic("sizeSettings")(sizeSettings.asInstanceOf[js.Any])
     if (sortSettings != null) __obj.updateDynamic("sortSettings")(sortSettings.asInstanceOf[js.Any])
     if (splitterPosition != null) __obj.updateDynamic("splitterPosition")(splitterPosition.asInstanceOf[js.Any])
@@ -820,14 +820,14 @@ object Model {
     if (taskbarEditing != null) __obj.updateDynamic("taskbarEditing")(js.Any.fromFunction1(taskbarEditing))
     if (taskbarEditingTooltipTemplate != null) __obj.updateDynamic("taskbarEditingTooltipTemplate")(taskbarEditingTooltipTemplate.asInstanceOf[js.Any])
     if (taskbarEditingTooltipTemplateId != null) __obj.updateDynamic("taskbarEditingTooltipTemplateId")(taskbarEditingTooltipTemplateId.asInstanceOf[js.Any])
-    if (taskbarHeight != null) __obj.updateDynamic("taskbarHeight")(taskbarHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(taskbarHeight)) __obj.updateDynamic("taskbarHeight")(taskbarHeight.get.asInstanceOf[js.Any])
     if (taskbarTemplate != null) __obj.updateDynamic("taskbarTemplate")(taskbarTemplate.asInstanceOf[js.Any])
     if (taskbarTooltipTemplate != null) __obj.updateDynamic("taskbarTooltipTemplate")(taskbarTooltipTemplate.asInstanceOf[js.Any])
     if (taskbarTooltipTemplateId != null) __obj.updateDynamic("taskbarTooltipTemplateId")(taskbarTooltipTemplateId.asInstanceOf[js.Any])
     if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(js.Any.fromFunction1(toolbarClick))
     if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings.asInstanceOf[js.Any])
-    if (treeColumnIndex != null) __obj.updateDynamic("treeColumnIndex")(treeColumnIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateManualTasksOnLinking)) __obj.updateDynamic("validateManualTasksOnLinking")(validateManualTasksOnLinking.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeColumnIndex)) __obj.updateDynamic("treeColumnIndex")(treeColumnIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateManualTasksOnLinking)) __obj.updateDynamic("validateManualTasksOnLinking")(validateManualTasksOnLinking.get.asInstanceOf[js.Any])
     if (viewType != null) __obj.updateDynamic("viewType")(viewType.asInstanceOf[js.Any])
     if (weekendBackground != null) __obj.updateDynamic("weekendBackground")(weekendBackground.asInstanceOf[js.Any])
     if (workMapping != null) __obj.updateDynamic("workMapping")(workMapping.asInstanceOf[js.Any])

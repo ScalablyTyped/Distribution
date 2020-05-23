@@ -69,7 +69,7 @@ object IStackItemProps {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableShrink)) __obj.updateDynamic("disableShrink")(disableShrink.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableShrink)) __obj.updateDynamic("disableShrink")(disableShrink.get.asInstanceOf[js.Any])
     if (grow != null) __obj.updateDynamic("grow")(grow.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
@@ -77,7 +77,7 @@ object IStackItemProps {
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalFill)) __obj.updateDynamic("verticalFill")(verticalFill.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalFill)) __obj.updateDynamic("verticalFill")(verticalFill.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStackItemProps]
   }
 }

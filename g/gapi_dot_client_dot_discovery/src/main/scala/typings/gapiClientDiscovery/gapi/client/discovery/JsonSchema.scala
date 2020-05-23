@@ -1,7 +1,7 @@
 package typings.gapiClientDiscovery.gapi.client.discovery
 
-import typings.gapiClientDiscovery.AnonDiscriminant
-import typings.gapiClientDiscovery.AnonRequired
+import typings.gapiClientDiscovery.anon.Discriminant
+import typings.gapiClientDiscovery.anon.Required
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait JsonSchema extends js.Object {
   /** If this is a schema for an object, this property is the schema for any additional properties with dynamic keys on this object. */
   var additionalProperties: js.UndefOr[JsonSchema] = js.undefined
   /** Additional information about this property. */
-  var annotations: js.UndefOr[AnonRequired] = js.undefined
+  var annotations: js.UndefOr[Required] = js.undefined
   /** The default value of this property (if one exists). */
   var default: js.UndefOr[String] = js.undefined
   /** A description of this object. */
@@ -57,7 +57,7 @@ trait JsonSchema extends js.Object {
     * In a variant data type, the value of one property is used to determine how to interpret the entire entity. Its value must exist in a map of
     * descriminant values to schema names.
     */
-  var variant: js.UndefOr[AnonDiscriminant] = js.undefined
+  var variant: js.UndefOr[Discriminant] = js.undefined
 }
 
 object JsonSchema {
@@ -65,7 +65,7 @@ object JsonSchema {
   def apply(
     $ref: String = null,
     additionalProperties: JsonSchema = null,
-    annotations: AnonRequired = null,
+    annotations: Required = null,
     default: String = null,
     description: String = null,
     enum: js.Array[String] = null,
@@ -82,7 +82,7 @@ object JsonSchema {
     repeated: js.UndefOr[Boolean] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null,
-    variant: AnonDiscriminant = null
+    variant: Discriminant = null
   ): JsonSchema = {
     val __obj = js.Dynamic.literal()
     if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
@@ -100,9 +100,9 @@ object JsonSchema {
     if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonSchema]

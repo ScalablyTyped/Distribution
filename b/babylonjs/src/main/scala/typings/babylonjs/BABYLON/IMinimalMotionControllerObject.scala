@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonPressed
+import typings.babylonjs.anon.Pressed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +13,12 @@ trait IMinimalMotionControllerObject extends js.Object {
   /**
     * An array of available buttons
     */
-  var buttons: js.Array[AnonPressed]
+  var buttons: js.Array[Pressed]
 }
 
 object IMinimalMotionControllerObject {
   @scala.inline
-  def apply(axes: js.Array[Double], buttons: js.Array[AnonPressed]): IMinimalMotionControllerObject = {
+  def apply(axes: js.Array[Double], buttons: js.Array[Pressed]): IMinimalMotionControllerObject = {
     val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMinimalMotionControllerObject]
   }

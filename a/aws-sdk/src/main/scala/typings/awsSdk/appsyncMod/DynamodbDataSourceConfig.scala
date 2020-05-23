@@ -34,13 +34,13 @@ object DynamodbDataSourceConfig {
     awsRegion: String,
     tableName: String,
     deltaSyncConfig: DeltaSyncConfig = null,
-    useCallerCredentials: js.UndefOr[scala.Boolean] = js.undefined,
-    versioned: js.UndefOr[scala.Boolean] = js.undefined
+    useCallerCredentials: js.UndefOr[Boolean] = js.undefined,
+    versioned: js.UndefOr[Boolean] = js.undefined
   ): DynamodbDataSourceConfig = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
     if (deltaSyncConfig != null) __obj.updateDynamic("deltaSyncConfig")(deltaSyncConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCallerCredentials)) __obj.updateDynamic("useCallerCredentials")(useCallerCredentials.asInstanceOf[js.Any])
-    if (!js.isUndefined(versioned)) __obj.updateDynamic("versioned")(versioned.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCallerCredentials)) __obj.updateDynamic("useCallerCredentials")(useCallerCredentials.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(versioned)) __obj.updateDynamic("versioned")(versioned.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamodbDataSourceConfig]
   }
 }

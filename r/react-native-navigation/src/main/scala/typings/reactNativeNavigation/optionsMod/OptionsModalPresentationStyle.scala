@@ -33,7 +33,7 @@ object OptionsModalPresentationStyle extends js.Object {
   sealed trait pageSheet extends OptionsModalPresentationStyle
   
   @js.native
-  sealed trait popOver extends OptionsModalPresentationStyle
+  sealed trait popover extends OptionsModalPresentationStyle
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OptionsModalPresentationStyle with String] = js.native
@@ -58,8 +58,8 @@ object OptionsModalPresentationStyle extends js.Object {
   /* "pageSheet" */ @js.native
   object pageSheet extends TopLevel[pageSheet with String]
   
-  /* "popOver" */ @js.native
-  object popOver extends TopLevel[popOver with String]
+  /* "popover" */ @js.native
+  object popover extends TopLevel[popover with String]
   
 }
 

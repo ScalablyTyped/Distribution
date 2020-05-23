@@ -3,7 +3,7 @@ package typings.reactVirtualized.esMasonryMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
-import typings.reactVirtualized.AnonClientHeight
+import typings.reactVirtualized.anon.ClientHeight
 import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCacheInterface
 import typings.reactVirtualized.esCellMeasurerMod.KeyMapper
 import typings.reactVirtualized.mod.IndexRange
@@ -49,24 +49,17 @@ object MasonryProps {
     cellRenderer: /* props */ MasonryCellProps => ReactNode,
     height: Double,
     width: Double,
-    StringDictionary: /**
-    * PLEASE NOTE
-    * The [key: string]: any; line is here on purpose
-    * This is due to the need of force re-render of PureComponent
-    * Check the following link if you want to know more
-    * https://github.com/bvaughn/react-virtualized#pass-thru-props
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
     id: String = null,
     keyMapper: (/* rowIndex */ Double, /* columnIndex */ Double) => js.Any = null,
     onCellsRendered: /* params */ IndexRange => Unit = null,
-    onScroll: /* params */ AnonClientHeight => Unit = null,
-    overscanByPixels: Int | Double = null,
+    onScroll: /* params */ ClientHeight => Unit = null,
+    overscanByPixels: js.UndefOr[Double] = js.undefined,
     role: String = null,
-    scrollingResetTimeInterval: Int | Double = null,
+    scrollingResetTimeInterval: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
-    tabIndex: Int | Double = null
+    tabIndex: js.UndefOr[Null | Double] = js.undefined
   ): MasonryProps = {
     val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], cellCount = cellCount.asInstanceOf[js.Any], cellMeasurerCache = cellMeasurerCache.asInstanceOf[js.Any], cellPositioner = cellPositioner.asInstanceOf[js.Any], cellRenderer = js.Any.fromFunction1(cellRenderer), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -75,11 +68,11 @@ object MasonryProps {
     if (keyMapper != null) __obj.updateDynamic("keyMapper")(js.Any.fromFunction2(keyMapper))
     if (onCellsRendered != null) __obj.updateDynamic("onCellsRendered")(js.Any.fromFunction1(onCellsRendered))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (overscanByPixels != null) __obj.updateDynamic("overscanByPixels")(overscanByPixels.asInstanceOf[js.Any])
+    if (!js.isUndefined(overscanByPixels)) __obj.updateDynamic("overscanByPixels")(overscanByPixels.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (scrollingResetTimeInterval != null) __obj.updateDynamic("scrollingResetTimeInterval")(scrollingResetTimeInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollingResetTimeInterval)) __obj.updateDynamic("scrollingResetTimeInterval")(scrollingResetTimeInterval.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasonryProps]
   }
 }

@@ -1,7 +1,7 @@
 package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.arangodb.AnonType
+import typings.arangodb.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait Manifest extends js.Object {
   var main: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var provides: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
-  var repository: js.UndefOr[AnonType] = js.undefined
+  var repository: js.UndefOr[Type] = js.undefined
   var scripts: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   var tests: js.UndefOr[js.Array[String]] = js.undefined
   var thumbnail: js.UndefOr[String] = js.undefined
@@ -45,7 +45,7 @@ object Manifest {
     main: String = null,
     name: String = null,
     provides: StringDictionary[js.UndefOr[String]] = null,
-    repository: AnonType = null,
+    repository: Type = null,
     scripts: StringDictionary[js.UndefOr[String]] = null,
     tests: js.Array[String] = null,
     thumbnail: String = null,

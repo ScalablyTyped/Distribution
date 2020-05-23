@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("google-maps-react", "GoogleApiWrapper")
 @js.native
 object GoogleApiWrapper extends js.Object {
-  def apply(opts: GoogleApiOptions): js.Function1[
-    /* ctor */ ComponentType[ProvidedProps], 
-    ComponentType[Omit[ProvidedProps, ProvidedProps]]
-  ] = js.native
   def apply(opts: GoogleApiOptionsFunc): js.Function1[
-    /* ctor */ ComponentType[ProvidedProps], 
-    ComponentType[Omit[ProvidedProps, ProvidedProps]]
+    /* ctor */ ComponentType[IProvidedProps], 
+    ComponentType[Omit[IProvidedProps, IProvidedProps]]
+  ] = js.native
+  def apply(opts: IGoogleApiOptions): js.Function1[
+    /* ctor */ ComponentType[IProvidedProps], 
+    ComponentType[Omit[IProvidedProps, IProvidedProps]]
   ] = js.native
 }
 

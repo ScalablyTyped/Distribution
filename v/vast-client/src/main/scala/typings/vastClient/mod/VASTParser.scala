@@ -1,9 +1,9 @@
 package typings.vastClient.mod
 
 import typings.node.eventsMod.EventEmitter
-import typings.std.Document_
-import typings.vastClient.PickVastErrorERRORCODE
-import typings.vastClient.PickVastErrorExcludekeyof
+import typings.std.Document
+import typings.vastClient.anon.PickVastErrorERRORCODE
+import typings.vastClient.anon.PickVastErrorExcludekeyof
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ class VASTParser () extends EventEmitter {
   def fetchVAST(/**
     * The url to request the VAST document.
     */
-  url: String): js.Promise[Document_] = js.native
+  url: String): js.Promise[Document] = js.native
   def fetchVAST(
     /**
     * The url to request the VAST document.
@@ -45,7 +45,7 @@ class VASTParser () extends EventEmitter {
     * how many times the current url has been wrapped
     */
   wrapperDepth: Double
-  ): js.Promise[Document_] = js.native
+  ): js.Promise[Document] = js.native
   def fetchVAST(
     /**
     * The url to request the VAST document.
@@ -59,7 +59,7 @@ class VASTParser () extends EventEmitter {
     * url of original wrapper
     */
   originalUrl: String
-  ): js.Promise[Document_] = js.native
+  ): js.Promise[Document] = js.native
   /**
     * Fetches and parses a VAST for the given url.
     * Returns a Promise which resolves with a fully parsed VASTResponse or rejects with an Error.
@@ -85,12 +85,12 @@ class VASTParser () extends EventEmitter {
   def parseVAST(/**
     * A VAST XML document
     */
-  vastXml: Document_): js.Promise[VastResponse] = js.native
+  vastXml: Document): js.Promise[VastResponse] = js.native
   def parseVAST(
     /**
     * A VAST XML document
     */
-  vastXml: Document_,
+  vastXml: Document,
     /**
     * An optional Object of parameters to be used in the parsing process.
     */

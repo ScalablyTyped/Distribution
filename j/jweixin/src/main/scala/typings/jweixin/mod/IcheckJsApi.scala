@@ -1,6 +1,6 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonCheckResult
+import typings.jweixin.anon.CheckResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +11,14 @@ trait IcheckJsApi extends BaseParams {
   // 以键值对的形式返回，可用的api值true，不可用为false
   // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
   @JSName("success")
-  def success_MIcheckJsApi(res: AnonCheckResult): Unit
+  def success_MIcheckJsApi(res: CheckResult): Unit
 }
 
 object IcheckJsApi {
   @scala.inline
   def apply(
     jsApiList: jsApiList,
-    success: AnonCheckResult => Unit,
+    success: CheckResult => Unit,
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IcheckJsApi = {

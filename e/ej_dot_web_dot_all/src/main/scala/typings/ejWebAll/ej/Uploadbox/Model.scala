@@ -177,7 +177,7 @@ object Model {
     extensionsAllow: String = null,
     extensionsDeny: String = null,
     fileSelect: /* e */ FileSelectEventArgs => Unit = null,
-    fileSize: Int | Double = null,
+    fileSize: js.UndefOr[Double] = js.undefined,
     height: String = null,
     htmlAttributes: js.Any = null,
     inProgress: /* e */ InProgressEventArgs => Unit = null,
@@ -195,9 +195,9 @@ object Model {
     width: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(asyncUpload)) __obj.updateDynamic("asyncUpload")(asyncUpload.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncUpload)) __obj.updateDynamic("asyncUpload")(asyncUpload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload.get.asInstanceOf[js.Any])
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
     if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
@@ -213,25 +213,25 @@ object Model {
     if (dropAreaHeight != null) __obj.updateDynamic("dropAreaHeight")(dropAreaHeight.asInstanceOf[js.Any])
     if (dropAreaText != null) __obj.updateDynamic("dropAreaText")(dropAreaText.asInstanceOf[js.Any])
     if (dropAreaWidth != null) __obj.updateDynamic("dropAreaWidth")(dropAreaWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (extensionsAllow != null) __obj.updateDynamic("extensionsAllow")(extensionsAllow.asInstanceOf[js.Any])
     if (extensionsDeny != null) __obj.updateDynamic("extensionsDeny")(extensionsDeny.asInstanceOf[js.Any])
     if (fileSelect != null) __obj.updateDynamic("fileSelect")(js.Any.fromFunction1(fileSelect))
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fileSize)) __obj.updateDynamic("fileSize")(fileSize.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
     if (inProgress != null) __obj.updateDynamic("inProgress")(js.Any.fromFunction1(inProgress))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleFilesSelection)) __obj.updateDynamic("multipleFilesSelection")(multipleFilesSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleFilesSelection)) __obj.updateDynamic("multipleFilesSelection")(multipleFilesSelection.get.asInstanceOf[js.Any])
     if (pushFile != null) __obj.updateDynamic("pushFile")(pushFile.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (removeUrl != null) __obj.updateDynamic("removeUrl")(removeUrl.asInstanceOf[js.Any])
     if (saveUrl != null) __obj.updateDynamic("saveUrl")(saveUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBrowseButton)) __obj.updateDynamic("showBrowseButton")(showBrowseButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFileDetails)) __obj.updateDynamic("showFileDetails")(showFileDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBrowseButton)) __obj.updateDynamic("showBrowseButton")(showBrowseButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFileDetails)) __obj.updateDynamic("showFileDetails")(showFileDetails.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (uploadName != null) __obj.updateDynamic("uploadName")(uploadName.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

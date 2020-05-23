@@ -98,9 +98,9 @@ object ListProps {
     width: Double | String,
     className: String = null,
     direction: CSSDirection | Direction = null,
-    initialScrollOffset: Int | Double = null,
+    initialScrollOffset: js.UndefOr[Double] = js.undefined,
     innerElementType: ReactElementType = null,
-    innerRef: Ref[_] = null,
+    innerRef: js.UndefOr[Null | Ref[_]] = js.undefined,
     innerTagName: String = null,
     itemData: js.Any = null,
     itemKey: (/* index */ Double, /* data */ js.Any) => Key = null,
@@ -108,18 +108,18 @@ object ListProps {
     onItemsRendered: /* props */ ListOnItemsRenderedProps => _ = null,
     onScroll: /* props */ ListOnScrollProps => _ = null,
     outerElementType: ReactElementType = null,
-    outerRef: Ref[_] = null,
+    outerRef: js.UndefOr[Null | Ref[_]] = js.undefined,
     outerTagName: String = null,
-    overscanCount: Int | Double = null,
+    overscanCount: js.UndefOr[Double] = js.undefined,
     style: CSSProperties = null,
     useIsScrolling: js.UndefOr[Boolean] = js.undefined
   ): ListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (initialScrollOffset != null) __obj.updateDynamic("initialScrollOffset")(initialScrollOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialScrollOffset)) __obj.updateDynamic("initialScrollOffset")(initialScrollOffset.get.asInstanceOf[js.Any])
     if (innerElementType != null) __obj.updateDynamic("innerElementType")(innerElementType.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName.asInstanceOf[js.Any])
     if (itemData != null) __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
     if (itemKey != null) __obj.updateDynamic("itemKey")(js.Any.fromFunction2(itemKey))
@@ -127,11 +127,11 @@ object ListProps {
     if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(js.Any.fromFunction1(onItemsRendered))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
-    if (outerRef != null) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(outerRef)) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
     if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName.asInstanceOf[js.Any])
-    if (overscanCount != null) __obj.updateDynamic("overscanCount")(overscanCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(overscanCount)) __obj.updateDynamic("overscanCount")(overscanCount.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIsScrolling)) __obj.updateDynamic("useIsScrolling")(useIsScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIsScrolling)) __obj.updateDynamic("useIsScrolling")(useIsScrolling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProps]
   }
 }

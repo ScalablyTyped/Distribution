@@ -11,10 +11,10 @@ trait TextEncoderEncodeIntoResult extends js.Object {
 
 object TextEncoderEncodeIntoResult {
   @scala.inline
-  def apply(read: Int | Double = null, written: Int | Double = null): TextEncoderEncodeIntoResult = {
+  def apply(read: js.UndefOr[Double] = js.undefined, written: js.UndefOr[Double] = js.undefined): TextEncoderEncodeIntoResult = {
     val __obj = js.Dynamic.literal()
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (written != null) __obj.updateDynamic("written")(written.asInstanceOf[js.Any])
+    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(written)) __obj.updateDynamic("written")(written.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEncoderEncodeIntoResult]
   }
 }

@@ -97,38 +97,39 @@ trait Animation extends js.Object {
     * elements before the animation begins.
     */
   def beforeStyles(styles: StringDictionary[js.Any]): Animation = js.native
-  def delay(): Animation = js.native
   /**
     * Sets when an animation starts (in milliseconds).
     */
+  def delay(): Animation = js.native
   def delay(delay: Double): Animation = js.native
   /**
     * Destroy the animation and all child animations.
     */
   def destroy(): Unit = js.native
-  def direction(): Animation = js.native
+  def destroy(clearStyleSheets: Boolean): Unit = js.native
   /**
     * Sets whether the animation should play forwards,
     * backwards, or alternating back and forth.
     */
+  def direction(): Animation = js.native
   def direction(direction: AnimationDirection): Animation = js.native
-  def duration(): Animation = js.native
   /**
     * Sets the length of time the animation takes
     * to complete one cycle.
     */
+  def duration(): Animation = js.native
   def duration(duration: Double): Animation = js.native
-  def easing(): Animation = js.native
   /**
     * Sets how the animation progresses through the
     * duration of each cycle.
     */
+  def easing(): Animation = js.native
   def easing(easing: String): Animation = js.native
-  def fill(): Animation = js.native
   /**
     * Sets how the animation applies styles to its
     * elements before and after the animation's execution.
     */
+  def fill(): Animation = js.native
   def fill(fill: AnimationFill): Animation = js.native
   def from(property: String, value: js.Any): Animation = js.native
   def fromTo(property: String, fromValue: js.Any, toValue: js.Any): Animation = js.native
@@ -196,16 +197,14 @@ trait Animation extends js.Object {
     */
   def play(): js.Promise[Unit] = js.native
   def play(opts: AnimationPlayOptions): js.Promise[Unit] = js.native
-  def progressEnd(playTo: js.UndefOr[scala.Nothing], step: Double): Unit = js.native
-  def progressEnd(playTo: js.UndefOr[scala.Nothing], step: Double, dur: Double): Unit = js.native
   @JSName("progressEnd")
-  def progressEnd_0(playTo: `0`, step: Double): Unit = js.native
+  def progressEnd_0(playTo: js.UndefOr[`0`], step: Double): Unit = js.native
   @JSName("progressEnd")
-  def progressEnd_0(playTo: `0`, step: Double, dur: Double): Unit = js.native
+  def progressEnd_0(playTo: js.UndefOr[`0`], step: Double, dur: Double): Unit = js.native
   @JSName("progressEnd")
-  def progressEnd_1(playTo: `1`, step: Double): Unit = js.native
+  def progressEnd_1(playTo: js.UndefOr[`1`], step: Double): Unit = js.native
   @JSName("progressEnd")
-  def progressEnd_1(playTo: `1`, step: Double, dur: Double): Unit = js.native
+  def progressEnd_1(playTo: js.UndefOr[`1`], step: Double, dur: Double): Unit = js.native
   def progressStart(forceLinearEasing: Boolean): Unit = js.native
   def progressStart(forceLinearEasing: Boolean, step: Double): Unit = js.native
   def progressStep(step: Double): Unit = js.native

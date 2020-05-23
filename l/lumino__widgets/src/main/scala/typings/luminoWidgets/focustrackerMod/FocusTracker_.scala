@@ -4,7 +4,7 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.focustrackerMod.FocusTracker.IChangedArgs
 import typings.luminoWidgets.widgetMod.Widget
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -141,7 +141,7 @@ class FocusTracker_[T /* <: Widget */] () extends IDisposable {
     * called in response to events on the tracked nodes. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Test whether the focus tracker contains a given widget.
     *

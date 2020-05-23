@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,14 +21,6 @@ object ChartGradientStyle extends js.Object {
   
   @js.native
   sealed trait twoPhaseColor extends ChartGradientStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartGradientStyle with String] = js.native
-  /* "ThreePhaseColor" */ @js.native
-  object threePhaseColor extends TopLevel[threePhaseColor with String]
-  
-  /* "TwoPhaseColor" */ @js.native
-  object twoPhaseColor extends TopLevel[twoPhaseColor with String]
   
 }
 

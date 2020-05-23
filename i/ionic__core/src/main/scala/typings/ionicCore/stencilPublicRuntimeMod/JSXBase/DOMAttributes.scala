@@ -4,7 +4,7 @@ import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
 import typings.std.DragEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -28,8 +28,8 @@ trait DOMAttributes[T] extends js.Object {
   var onAuxClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   var onBlurCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChangeCapture: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onChangeCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   var onClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   var onCompositionEnd: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
@@ -62,24 +62,24 @@ trait DOMAttributes[T] extends js.Object {
   var onDragStartCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   var onDrop: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   var onDropCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onErrorCapture: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onErrorCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   var onFocusCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
   var onGotPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   var onGotPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onInput: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onInputCapture: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onInvalid: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onInvalidCapture: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onInputCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onInvalid: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onInvalidCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   var onKeyDownCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   var onKeyPressCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   var onKeyUp: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
   var onKeyUpCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
-  var onLoad: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onLoadCapture: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onLoad: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onLoadCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onLostPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   var onLostPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
@@ -112,12 +112,12 @@ trait DOMAttributes[T] extends js.Object {
   var onPointerOverCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onReset: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onResetCapture: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onReset: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onResetCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onScroll: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.undefined
   var onScrollCapture: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.undefined
-  var onSubmit: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onSubmitCapture: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onSubmit: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onSubmitCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onTouchCancel: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   var onTouchCancelCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
   var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
@@ -130,6 +130,7 @@ trait DOMAttributes[T] extends js.Object {
   var onTransitionEndCapture: js.UndefOr[js.Function1[/* event */ TransitionEvent, Unit]] = js.undefined
   var onWheel: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.undefined
   var onWheelCapture: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.undefined
+  var part: js.UndefOr[String] = js.undefined
   var ref: js.UndefOr[js.Function1[/* elm */ js.UndefOr[T], Unit]] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
 }
@@ -147,8 +148,8 @@ object DOMAttributes {
     onAuxClick: /* event */ MouseEvent => Unit = null,
     onBlur: /* event */ FocusEvent => Unit = null,
     onBlurCapture: /* event */ FocusEvent => Unit = null,
-    onChange: /* event */ Event_ => Unit = null,
-    onChangeCapture: /* event */ Event_ => Unit = null,
+    onChange: /* event */ Event => Unit = null,
+    onChangeCapture: /* event */ Event => Unit = null,
     onClick: /* event */ MouseEvent => Unit = null,
     onClickCapture: /* event */ MouseEvent => Unit = null,
     onCompositionEnd: /* event */ CompositionEvent => Unit = null,
@@ -181,24 +182,24 @@ object DOMAttributes {
     onDragStartCapture: /* event */ DragEvent => Unit = null,
     onDrop: /* event */ DragEvent => Unit = null,
     onDropCapture: /* event */ DragEvent => Unit = null,
-    onError: /* event */ Event_ => Unit = null,
-    onErrorCapture: /* event */ Event_ => Unit = null,
+    onError: /* event */ Event => Unit = null,
+    onErrorCapture: /* event */ Event => Unit = null,
     onFocus: /* event */ FocusEvent => Unit = null,
     onFocusCapture: /* event */ FocusEvent => Unit = null,
     onGotPointerCapture: /* event */ PointerEvent => Unit = null,
     onGotPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
-    onInput: /* event */ Event_ => Unit = null,
-    onInputCapture: /* event */ Event_ => Unit = null,
-    onInvalid: /* event */ Event_ => Unit = null,
-    onInvalidCapture: /* event */ Event_ => Unit = null,
+    onInput: /* event */ Event => Unit = null,
+    onInputCapture: /* event */ Event => Unit = null,
+    onInvalid: /* event */ Event => Unit = null,
+    onInvalidCapture: /* event */ Event => Unit = null,
     onKeyDown: /* event */ KeyboardEvent => Unit = null,
     onKeyDownCapture: /* event */ KeyboardEvent => Unit = null,
     onKeyPress: /* event */ KeyboardEvent => Unit = null,
     onKeyPressCapture: /* event */ KeyboardEvent => Unit = null,
     onKeyUp: /* event */ KeyboardEvent => Unit = null,
     onKeyUpCapture: /* event */ KeyboardEvent => Unit = null,
-    onLoad: /* event */ Event_ => Unit = null,
-    onLoadCapture: /* event */ Event_ => Unit = null,
+    onLoad: /* event */ Event => Unit = null,
+    onLoadCapture: /* event */ Event => Unit = null,
     onLostPointerCapture: /* event */ PointerEvent => Unit = null,
     onLostPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
     onMouseDown: /* event */ MouseEvent => Unit = null,
@@ -231,12 +232,12 @@ object DOMAttributes {
     onPointerOverCapture: /* event */ PointerEvent => Unit = null,
     onPointerUp: /* event */ PointerEvent => Unit = null,
     onPointerUpCapture: /* event */ PointerEvent => Unit = null,
-    onReset: /* event */ Event_ => Unit = null,
-    onResetCapture: /* event */ Event_ => Unit = null,
+    onReset: /* event */ Event => Unit = null,
+    onResetCapture: /* event */ Event => Unit = null,
     onScroll: /* event */ UIEvent => Unit = null,
     onScrollCapture: /* event */ UIEvent => Unit = null,
-    onSubmit: /* event */ Event_ => Unit = null,
-    onSubmitCapture: /* event */ Event_ => Unit = null,
+    onSubmit: /* event */ Event => Unit = null,
+    onSubmitCapture: /* event */ Event => Unit = null,
     onTouchCancel: /* event */ TouchEvent => Unit = null,
     onTouchCancelCapture: /* event */ TouchEvent => Unit = null,
     onTouchEnd: /* event */ TouchEvent => Unit = null,
@@ -249,6 +250,7 @@ object DOMAttributes {
     onTransitionEndCapture: /* event */ TransitionEvent => Unit = null,
     onWheel: /* event */ WheelEvent => Unit = null,
     onWheelCapture: /* event */ WheelEvent => Unit = null,
+    part: String = null,
     ref: /* elm */ js.UndefOr[T] => Unit = null,
     slot: String = null
   ): DOMAttributes[T] = {
@@ -365,6 +367,7 @@ object DOMAttributes {
     if (onTransitionEndCapture != null) __obj.updateDynamic("onTransitionEndCapture")(js.Any.fromFunction1(onTransitionEndCapture))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(js.Any.fromFunction1(onWheelCapture))
+    if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMAttributes[T]]

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MetaDefinition extends /* prop */ StringDictionary[String] {
+trait MetaDefinition extends /* ns */ StringDictionary[String] {
   var charset: js.UndefOr[String] = js.undefined
   var content: js.UndefOr[String] = js.undefined
   var httpEquiv: js.UndefOr[String] = js.undefined
@@ -20,7 +20,7 @@ trait MetaDefinition extends /* prop */ StringDictionary[String] {
 object MetaDefinition {
   @scala.inline
   def apply(
-    StringDictionary: /* prop */ StringDictionary[String] = null,
+    StringDictionary: /* name */ StringDictionary[String] = null,
     charset: String = null,
     content: String = null,
     httpEquiv: String = null,

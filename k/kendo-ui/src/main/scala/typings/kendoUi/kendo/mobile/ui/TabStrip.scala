@@ -1,17 +1,13 @@
 package typings.kendoUi.kendo.mobile.ui
 
 import typings.kendoUi.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.mobile.ui.TabStrip")
 @js.native
-class TabStrip protected ()
+trait TabStrip
   extends typings.kendoUi.kendo.ui.Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: TabStripOptions) = this()
   @JSName("options")
   var options_TabStrip: TabStripOptions = js.native
   var wrapper: JQuery = js.native
@@ -24,13 +20,5 @@ class TabStrip protected ()
   def switchByFullUrl(url: String): Unit = js.native
   def switchTo(url: String): Unit = js.native
   def switchTo(url: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("kendo.mobile.ui.TabStrip")
-@js.native
-object TabStrip extends js.Object {
-  var fn: TabStrip = js.native
-  def extend(proto: js.Object): TabStrip = js.native
 }
 

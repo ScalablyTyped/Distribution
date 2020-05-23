@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(includeContainer: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeContainer)) __obj.updateDynamic("includeContainer")(includeContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeContainer)) __obj.updateDynamic("includeContainer")(includeContainer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

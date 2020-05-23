@@ -37,34 +37,34 @@ trait ITensor extends js.Object {
 object ITensor {
   @scala.inline
   def apply(
-    boolVal: js.Array[Boolean] = null,
-    doubleVal: js.Array[Double] = null,
-    dtype: DataType = null,
-    floatVal: js.Array[Double] = null,
-    int64Val: js.Array[Double | String] = null,
-    intVal: js.Array[Double] = null,
-    scomplexVal: js.Array[Double] = null,
-    stringVal: js.Array[Uint8Array] = null,
-    tensorContent: Uint8Array = null,
-    tensorShape: ITensorShape = null,
-    uint32Val: js.Array[Double] = null,
-    uint64Val: js.Array[Double | String] = null,
-    versionNumber: Int | Double = null
+    boolVal: js.UndefOr[Null | js.Array[Boolean]] = js.undefined,
+    doubleVal: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    dtype: js.UndefOr[Null | DataType] = js.undefined,
+    floatVal: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    int64Val: js.UndefOr[Null | (js.Array[Double | String])] = js.undefined,
+    intVal: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    scomplexVal: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    stringVal: js.UndefOr[Null | js.Array[Uint8Array]] = js.undefined,
+    tensorContent: js.UndefOr[Null | Uint8Array] = js.undefined,
+    tensorShape: js.UndefOr[Null | ITensorShape] = js.undefined,
+    uint32Val: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    uint64Val: js.UndefOr[Null | (js.Array[Double | String])] = js.undefined,
+    versionNumber: js.UndefOr[Null | Double] = js.undefined
   ): ITensor = {
     val __obj = js.Dynamic.literal()
-    if (boolVal != null) __obj.updateDynamic("boolVal")(boolVal.asInstanceOf[js.Any])
-    if (doubleVal != null) __obj.updateDynamic("doubleVal")(doubleVal.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (floatVal != null) __obj.updateDynamic("floatVal")(floatVal.asInstanceOf[js.Any])
-    if (int64Val != null) __obj.updateDynamic("int64Val")(int64Val.asInstanceOf[js.Any])
-    if (intVal != null) __obj.updateDynamic("intVal")(intVal.asInstanceOf[js.Any])
-    if (scomplexVal != null) __obj.updateDynamic("scomplexVal")(scomplexVal.asInstanceOf[js.Any])
-    if (stringVal != null) __obj.updateDynamic("stringVal")(stringVal.asInstanceOf[js.Any])
-    if (tensorContent != null) __obj.updateDynamic("tensorContent")(tensorContent.asInstanceOf[js.Any])
-    if (tensorShape != null) __obj.updateDynamic("tensorShape")(tensorShape.asInstanceOf[js.Any])
-    if (uint32Val != null) __obj.updateDynamic("uint32Val")(uint32Val.asInstanceOf[js.Any])
-    if (uint64Val != null) __obj.updateDynamic("uint64Val")(uint64Val.asInstanceOf[js.Any])
-    if (versionNumber != null) __obj.updateDynamic("versionNumber")(versionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolVal)) __obj.updateDynamic("boolVal")(boolVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleVal)) __obj.updateDynamic("doubleVal")(doubleVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(dtype)) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatVal)) __obj.updateDynamic("floatVal")(floatVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(int64Val)) __obj.updateDynamic("int64Val")(int64Val.asInstanceOf[js.Any])
+    if (!js.isUndefined(intVal)) __obj.updateDynamic("intVal")(intVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(scomplexVal)) __obj.updateDynamic("scomplexVal")(scomplexVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(stringVal)) __obj.updateDynamic("stringVal")(stringVal.asInstanceOf[js.Any])
+    if (!js.isUndefined(tensorContent)) __obj.updateDynamic("tensorContent")(tensorContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(tensorShape)) __obj.updateDynamic("tensorShape")(tensorShape.asInstanceOf[js.Any])
+    if (!js.isUndefined(uint32Val)) __obj.updateDynamic("uint32Val")(uint32Val.asInstanceOf[js.Any])
+    if (!js.isUndefined(uint64Val)) __obj.updateDynamic("uint64Val")(uint64Val.asInstanceOf[js.Any])
+    if (!js.isUndefined(versionNumber)) __obj.updateDynamic("versionNumber")(versionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITensor]
   }
 }

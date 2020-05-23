@@ -1,6 +1,6 @@
 package typings.hexoFs.mod
 
-import typings.hexoFs.AnonAutoClose
+import typings.hexoFs.anon.AutoClose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object ensureWriteStreamSync extends js.Object {
   def apply(path: String): typings.gracefulFs.mod.WriteStream = js.native
   def apply(path: String, options: String): typings.gracefulFs.mod.WriteStream = js.native
-  def apply(path: String, options: AnonAutoClose): typings.gracefulFs.mod.WriteStream = js.native
+  def apply(path: String, options: AutoClose): typings.gracefulFs.mod.WriteStream = js.native
 }
 

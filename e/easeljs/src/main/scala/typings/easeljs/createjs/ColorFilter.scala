@@ -4,19 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.ColorFilter")
 @js.native
-class ColorFilter protected () extends Filter {
-  def this(
-    redMultiplier: js.UndefOr[Double],
-    greenMultiplier: js.UndefOr[Double],
-    blueMultiplier: js.UndefOr[Double],
-    alphaMultiplier: js.UndefOr[Double],
-    redOffset: js.UndefOr[Double],
-    greenOffset: js.UndefOr[Double],
-    blueOffset: js.UndefOr[Double],
-    alphaOffset: js.UndefOr[Double]
-  ) = this()
+trait ColorFilter extends Filter {
   // properties
   var alphaMultiplier: Double = js.native
   var alphaOffset: Double = js.native

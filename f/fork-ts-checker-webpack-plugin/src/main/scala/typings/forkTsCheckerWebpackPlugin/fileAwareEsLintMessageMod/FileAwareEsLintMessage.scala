@@ -1,6 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin.fileAwareEsLintMessageMod
 
-import typings.forkTsCheckerWebpackPlugin.AnonRange
+import typings.forkTsCheckerWebpackPlugin.anon.Range
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginBooleans.`true`
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginNumbers.`0`
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginNumbers.`1`
@@ -26,22 +26,20 @@ object FileAwareEsLintMessage {
     message: String,
     nodeType: String,
     severity: `0` | `1` | `2`,
-    endColumn: Int | Double = null,
-    endLine: Int | Double = null,
+    endColumn: js.UndefOr[Double] = js.undefined,
+    endLine: js.UndefOr[Double] = js.undefined,
     fatal: `true` = null,
     filePath: String = null,
-    fix: AnonRange = null,
+    fix: Range = null,
     ruleId: String = null,
     source: String = null
   ): FileAwareEsLintMessage = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
-    if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
-    if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (!js.isUndefined(endColumn)) __obj.updateDynamic("endColumn")(endColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endLine)) __obj.updateDynamic("endLine")(endLine.get.asInstanceOf[js.Any])
     if (fatal != null) __obj.updateDynamic("fatal")(fatal.asInstanceOf[js.Any])
     if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
     if (fix != null) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
-    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileAwareEsLintMessage]
   }
 }

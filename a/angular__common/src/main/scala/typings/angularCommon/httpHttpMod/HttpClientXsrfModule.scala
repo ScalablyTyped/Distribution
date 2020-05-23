@@ -1,6 +1,6 @@
 package typings.angularCommon.httpHttpMod
 
-import typings.angularCommon.AnonCookieName
+import typings.angularCommon.anon.CookieName
 import typings.angularCore.mod.ModuleWithProviders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,6 +27,6 @@ object HttpClientXsrfModule extends js.Object {
     *
     */
   def withOptions(): ModuleWithProviders[HttpClientXsrfModule] = js.native
-  def withOptions(options: AnonCookieName): ModuleWithProviders[HttpClientXsrfModule] = js.native
+  def withOptions(options: CookieName): ModuleWithProviders[HttpClientXsrfModule] = js.native
 }
 

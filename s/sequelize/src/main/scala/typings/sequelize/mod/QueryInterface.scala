@@ -1,10 +1,10 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonLogging
-import typings.sequelize.AnonSchema
-import typings.sequelize.AnonSchemaTableName
-import typings.sequelize.AnonTableName
-import typings.sequelize.DefineIndexOptionsfieldsA
+import typings.sequelize.anon.DefineIndexOptionsfieldsA
+import typings.sequelize.anon.Logging
+import typings.sequelize.anon.Schema
+import typings.sequelize.anon.SchemaTableName
+import typings.sequelize.anon.TableName
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,11 +40,11 @@ trait QueryInterface extends js.Object {
     attribute: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
   ): typings.bluebird.mod.^[Unit] = js.native
-  def addColumn(tableName: AnonTableName, key: String, attribute: DataTypeAbstract): typings.bluebird.mod.^[Unit] = js.native
-  def addColumn(tableName: AnonTableName, key: String, attribute: DataTypeAbstract, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
-  def addColumn(tableName: AnonTableName, key: String, attribute: DefineAttributeColumnOptions): typings.bluebird.mod.^[Unit] = js.native
+  def addColumn(tableName: TableName, key: String, attribute: DataTypeAbstract): typings.bluebird.mod.^[Unit] = js.native
+  def addColumn(tableName: TableName, key: String, attribute: DataTypeAbstract, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
+  def addColumn(tableName: TableName, key: String, attribute: DefineAttributeColumnOptions): typings.bluebird.mod.^[Unit] = js.native
   def addColumn(
-    tableName: AnonTableName,
+    tableName: TableName,
     key: String,
     attribute: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
@@ -91,16 +91,16 @@ trait QueryInterface extends js.Object {
     options: QueryOptions,
     attributes: js.Array[String]
   ): typings.bluebird.mod.^[js.Object] = js.native
-  def bulkInsert(tableName: AnonSchemaTableName, records: js.Array[js.Object]): typings.bluebird.mod.^[js.Object] = js.native
-  def bulkInsert(tableName: AnonSchemaTableName, records: js.Array[js.Object], options: QueryOptions): typings.bluebird.mod.^[js.Object] = js.native
+  def bulkInsert(tableName: SchemaTableName, records: js.Array[js.Object]): typings.bluebird.mod.^[js.Object] = js.native
+  def bulkInsert(tableName: SchemaTableName, records: js.Array[js.Object], options: QueryOptions): typings.bluebird.mod.^[js.Object] = js.native
   def bulkInsert(
-    tableName: AnonSchemaTableName,
+    tableName: SchemaTableName,
     records: js.Array[js.Object],
     options: QueryOptions,
     attributes: String
   ): typings.bluebird.mod.^[js.Object] = js.native
   def bulkInsert(
-    tableName: AnonSchemaTableName,
+    tableName: SchemaTableName,
     records: js.Array[js.Object],
     options: QueryOptions,
     attributes: js.Array[String]
@@ -149,24 +149,24 @@ trait QueryInterface extends js.Object {
     dataTypeOrOptions: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
   ): typings.bluebird.mod.^[Unit] = js.native
-  def changeColumn(tableName: AnonSchema, attributeName: String): typings.bluebird.mod.^[Unit] = js.native
-  def changeColumn(tableName: AnonSchema, attributeName: String, dataTypeOrOptions: String): typings.bluebird.mod.^[Unit] = js.native
+  def changeColumn(tableName: Schema, attributeName: String): typings.bluebird.mod.^[Unit] = js.native
+  def changeColumn(tableName: Schema, attributeName: String, dataTypeOrOptions: String): typings.bluebird.mod.^[Unit] = js.native
   def changeColumn(
-    tableName: AnonSchema,
+    tableName: Schema,
     attributeName: String,
     dataTypeOrOptions: String,
     options: QueryInterfaceOptions
   ): typings.bluebird.mod.^[Unit] = js.native
-  def changeColumn(tableName: AnonSchema, attributeName: String, dataTypeOrOptions: DataTypeAbstract): typings.bluebird.mod.^[Unit] = js.native
+  def changeColumn(tableName: Schema, attributeName: String, dataTypeOrOptions: DataTypeAbstract): typings.bluebird.mod.^[Unit] = js.native
   def changeColumn(
-    tableName: AnonSchema,
+    tableName: Schema,
     attributeName: String,
     dataTypeOrOptions: DataTypeAbstract,
     options: QueryInterfaceOptions
   ): typings.bluebird.mod.^[Unit] = js.native
-  def changeColumn(tableName: AnonSchema, attributeName: String, dataTypeOrOptions: DefineAttributeColumnOptions): typings.bluebird.mod.^[Unit] = js.native
+  def changeColumn(tableName: Schema, attributeName: String, dataTypeOrOptions: DefineAttributeColumnOptions): typings.bluebird.mod.^[Unit] = js.native
   def changeColumn(
-    tableName: AnonSchema,
+    tableName: Schema,
     attributeName: String,
     dataTypeOrOptions: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
@@ -205,8 +205,8 @@ trait QueryInterface extends js.Object {
     */
   def createTable(tableName: String, attributes: DefineAttributes): typings.bluebird.mod.^[Unit] = js.native
   def createTable(tableName: String, attributes: DefineAttributes, options: QueryOptions): typings.bluebird.mod.^[Unit] = js.native
-  def createTable(tableName: AnonSchema, attributes: DefineAttributes): typings.bluebird.mod.^[Unit] = js.native
-  def createTable(tableName: AnonSchema, attributes: DefineAttributes, options: QueryOptions): typings.bluebird.mod.^[Unit] = js.native
+  def createTable(tableName: Schema, attributes: DefineAttributes): typings.bluebird.mod.^[Unit] = js.native
+  def createTable(tableName: Schema, attributes: DefineAttributes, options: QueryOptions): typings.bluebird.mod.^[Unit] = js.native
   /**
     * Postgres only. Creates a trigger on specified table to call the specified function with supplied
     * parameters.
@@ -250,10 +250,10 @@ trait QueryInterface extends js.Object {
     */
   def describeTable(tableName: String): typings.bluebird.mod.^[js.Object] = js.native
   def describeTable(tableName: String, options: String): typings.bluebird.mod.^[js.Object] = js.native
-  def describeTable(tableName: String, options: AnonLogging): typings.bluebird.mod.^[js.Object] = js.native
-  def describeTable(tableName: AnonSchema): typings.bluebird.mod.^[js.Object] = js.native
-  def describeTable(tableName: AnonSchema, options: String): typings.bluebird.mod.^[js.Object] = js.native
-  def describeTable(tableName: AnonSchema, options: AnonLogging): typings.bluebird.mod.^[js.Object] = js.native
+  def describeTable(tableName: String, options: Logging): typings.bluebird.mod.^[js.Object] = js.native
+  def describeTable(tableName: Schema): typings.bluebird.mod.^[js.Object] = js.native
+  def describeTable(tableName: Schema, options: String): typings.bluebird.mod.^[js.Object] = js.native
+  def describeTable(tableName: Schema, options: Logging): typings.bluebird.mod.^[js.Object] = js.native
   /**
     * Drops all defined enums
     *
@@ -362,8 +362,8 @@ trait QueryInterface extends js.Object {
     */
   def removeColumn(tableName: String, attribute: String): typings.bluebird.mod.^[Unit] = js.native
   def removeColumn(tableName: String, attribute: String, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
-  def removeColumn(tableName: AnonTableName, attribute: String): typings.bluebird.mod.^[Unit] = js.native
-  def removeColumn(tableName: AnonTableName, attribute: String, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
+  def removeColumn(tableName: TableName, attribute: String): typings.bluebird.mod.^[Unit] = js.native
+  def removeColumn(tableName: TableName, attribute: String, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
   /**
     * Removes constraints from a table
     */
@@ -381,13 +381,8 @@ trait QueryInterface extends js.Object {
     */
   def renameColumn(tableName: String, attrNameBefore: String, attrNameAfter: String): typings.bluebird.mod.^[Unit] = js.native
   def renameColumn(tableName: String, attrNameBefore: String, attrNameAfter: String, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
-  def renameColumn(tableName: AnonSchema, attrNameBefore: String, attrNameAfter: String): typings.bluebird.mod.^[Unit] = js.native
-  def renameColumn(
-    tableName: AnonSchema,
-    attrNameBefore: String,
-    attrNameAfter: String,
-    options: QueryInterfaceOptions
-  ): typings.bluebird.mod.^[Unit] = js.native
+  def renameColumn(tableName: Schema, attrNameBefore: String, attrNameAfter: String): typings.bluebird.mod.^[Unit] = js.native
+  def renameColumn(tableName: Schema, attrNameBefore: String, attrNameAfter: String, options: QueryInterfaceOptions): typings.bluebird.mod.^[Unit] = js.native
   /**
     * Postgres only. Rename a function
     */

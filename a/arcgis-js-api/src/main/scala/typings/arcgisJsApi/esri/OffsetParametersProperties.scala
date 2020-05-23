@@ -56,16 +56,16 @@ trait OffsetParametersProperties extends js.Object {
 object OffsetParametersProperties {
   @scala.inline
   def apply(
-    bevelRatio: Int | Double = null,
+    bevelRatio: js.UndefOr[Double] = js.undefined,
     geometries: js.Array[GeometryProperties] = null,
-    offsetDistance: Int | Double = null,
+    offsetDistance: js.UndefOr[Double] = js.undefined,
     offsetHow: bevelled | mitered | rounded = null,
     offsetUnit: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = null
   ): OffsetParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (bevelRatio != null) __obj.updateDynamic("bevelRatio")(bevelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelRatio)) __obj.updateDynamic("bevelRatio")(bevelRatio.get.asInstanceOf[js.Any])
     if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
-    if (offsetDistance != null) __obj.updateDynamic("offsetDistance")(offsetDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetDistance)) __obj.updateDynamic("offsetDistance")(offsetDistance.get.asInstanceOf[js.Any])
     if (offsetHow != null) __obj.updateDynamic("offsetHow")(offsetHow.asInstanceOf[js.Any])
     if (offsetUnit != null) __obj.updateDynamic("offsetUnit")(offsetUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetParametersProperties]

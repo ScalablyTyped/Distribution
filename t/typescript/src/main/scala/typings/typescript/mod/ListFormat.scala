@@ -180,6 +180,9 @@ object ListFormat extends js.Object {
   sealed trait SourceFileStatements extends ListFormat
   
   @js.native
+  sealed trait SpaceAfterList extends ListFormat
+  
+  @js.native
   sealed trait SpaceBetweenBraces extends ListFormat
   
   @js.native
@@ -256,7 +259,7 @@ object ListFormat extends js.Object {
   /* 528 */ @js.native
   object CommaListElements extends TopLevel[CommaListElements with Double]
   
-  /* 49153 */ @js.native
+  /* 2146305 */ @js.native
   object Decorators extends TopLevel[Decorators with Double]
   
   /* 60 */ @js.native
@@ -375,6 +378,9 @@ object ListFormat extends js.Object {
   
   /* 131073 */ @js.native
   object SourceFileStatements extends TopLevel[SourceFileStatements with Double]
+  
+  /* 2097152 */ @js.native
+  object SpaceAfterList extends TopLevel[SpaceAfterList with Double]
   
   /* 256 */ @js.native
   object SpaceBetweenBraces extends TopLevel[SpaceBetweenBraces with Double]

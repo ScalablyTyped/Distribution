@@ -56,7 +56,7 @@ object Vpc {
     DhcpOptionsId: String = null,
     InstanceTenancy: Tenancy = null,
     Ipv6CidrBlockAssociationSet: VpcIpv6CidrBlockAssociationSet = null,
-    IsDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    IsDefault: js.UndefOr[Boolean] = js.undefined,
     OwnerId: String = null,
     State: VpcState = null,
     Tags: TagList = null,
@@ -68,7 +68,7 @@ object Vpc {
     if (DhcpOptionsId != null) __obj.updateDynamic("DhcpOptionsId")(DhcpOptionsId.asInstanceOf[js.Any])
     if (InstanceTenancy != null) __obj.updateDynamic("InstanceTenancy")(InstanceTenancy.asInstanceOf[js.Any])
     if (Ipv6CidrBlockAssociationSet != null) __obj.updateDynamic("Ipv6CidrBlockAssociationSet")(Ipv6CidrBlockAssociationSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

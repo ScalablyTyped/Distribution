@@ -1,6 +1,6 @@
 package typings.azureSb.gcmserviceMod
 
-import typings.azureSb.AnonHeaders
+import typings.azureSb.anon.Headers
 import typings.azureSb.mod.Azure.ServiceBus.ListNotificationHubsOptions
 import typings.azureSb.mod.Azure.ServiceBus.ResponseCallback
 import scala.scalajs.js
@@ -85,7 +85,7 @@ trait GcmService extends js.Object {
     gcmRegistrationId: String,
     tags: String,
     template: String,
-    options: AnonHeaders,
+    options: Headers,
     callback: ResponseCallback
   ): Unit = js.native
   def updateTemplateRegistration(
@@ -100,7 +100,7 @@ trait GcmService extends js.Object {
     gcmRegistrationId: String,
     tags: String,
     template: Template,
-    options: AnonHeaders,
+    options: Headers,
     callback: ResponseCallback
   ): Unit = js.native
   def updateTemplateRegistration(
@@ -115,7 +115,7 @@ trait GcmService extends js.Object {
     gcmRegistrationId: String,
     tags: js.Array[String],
     template: String,
-    options: AnonHeaders,
+    options: Headers,
     callback: ResponseCallback
   ): Unit = js.native
   def updateTemplateRegistration(
@@ -130,7 +130,7 @@ trait GcmService extends js.Object {
     gcmRegistrationId: String,
     tags: js.Array[String],
     template: Template,
-    options: AnonHeaders,
+    options: Headers,
     callback: ResponseCallback
   ): Unit = js.native
 }

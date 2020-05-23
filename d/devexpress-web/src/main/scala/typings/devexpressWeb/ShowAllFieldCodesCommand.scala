@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A command to display all field codes in place of the fields in the document.
   */
-@JSGlobal("ShowAllFieldCodesCommand")
 @js.native
-class ShowAllFieldCodesCommand () extends CommandWithSimpleStateBase {
+trait ShowAllFieldCodesCommand extends CommandWithSimpleStateBase {
   /**
     * Executes the ShowAllFieldCodesCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param showFieldCodes true to display field codes, false to hide field codes.

@@ -1,7 +1,7 @@
 package typings.baseui.mod
 
-import typings.baseui.AnonClassName
-import typings.baseui.AnonTheme
+import typings.baseui.anon.ClassName
+import typings.baseui.anon.Theme
 import typings.baseui.baseuiStrings.header
 import typings.react.mod.ComponentProps
 import typings.std.Exclude
@@ -15,16 +15,16 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_header extends js.Object {
-  def apply[P /* <: js.Object */, T](component: header, styledFn: js.Function1[/* props */ AnonTheme[T] with P, StyleObject]): StyletronComponent[
+  def apply[P /* <: js.Object */, T](component: header, styledFn: js.Function1[/* props */ Theme[T] with P, StyleObject]): StyletronComponent[
     (Pick[
       ComponentProps[header], 
-      Exclude[/* keyof react.react.ComponentProps<'header'> */ String, AnonClassName]
+      Exclude[/* keyof react.react.ComponentProps<'header'> */ String, ClassName]
     ]) with P
   ] = js.native
   def apply[P /* <: js.Object */, T](component: header, styledFn: StyleObject): StyletronComponent[
     (Pick[
       ComponentProps[header], 
-      Exclude[/* keyof react.react.ComponentProps<'header'> */ String, AnonClassName]
+      Exclude[/* keyof react.react.ComponentProps<'header'> */ String, ClassName]
     ]) with P
   ] = js.native
 }

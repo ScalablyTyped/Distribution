@@ -74,7 +74,7 @@ object Interconnect {
     interconnectId: InterconnectId = null,
     interconnectName: InterconnectName = null,
     interconnectState: InterconnectState = null,
-    jumboFrameCapable: js.UndefOr[Boolean] = js.undefined,
+    jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined,
     lagId: LagId = null,
     loaIssueTime: LoaIssueTime = null,
     location: LocationCode = null,
@@ -90,7 +90,7 @@ object Interconnect {
     if (interconnectId != null) __obj.updateDynamic("interconnectId")(interconnectId.asInstanceOf[js.Any])
     if (interconnectName != null) __obj.updateDynamic("interconnectName")(interconnectName.asInstanceOf[js.Any])
     if (interconnectState != null) __obj.updateDynamic("interconnectState")(interconnectState.asInstanceOf[js.Any])
-    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.asInstanceOf[js.Any])
+    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.get.asInstanceOf[js.Any])
     if (lagId != null) __obj.updateDynamic("lagId")(lagId.asInstanceOf[js.Any])
     if (loaIssueTime != null) __obj.updateDynamic("loaIssueTime")(loaIssueTime.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])

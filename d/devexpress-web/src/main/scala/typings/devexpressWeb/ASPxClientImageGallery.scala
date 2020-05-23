@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the ASPxImageGallery control.
   */
-@JSGlobal("ASPxClientImageGallery")
 @js.native
-class ASPxClientImageGallery () extends ASPxClientDataView {
+trait ASPxClientImageGallery extends ASPxClientDataView {
   /**
     * Occurs on the client side after an active item has been changed within the fullscreen viewer.
     */
@@ -49,16 +48,5 @@ class ASPxClientImageGallery () extends ASPxClientDataView {
     * @param index An Int32 value that is an index of the active item.
     */
   def ShowFullscreenViewer(index: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientImageGallery")
-@js.native
-object ASPxClientImageGallery extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientImageGallery type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientImageGallery = js.native
 }
 

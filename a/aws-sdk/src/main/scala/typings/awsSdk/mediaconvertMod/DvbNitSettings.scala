@@ -23,14 +23,14 @@ trait DvbNitSettings extends js.Object {
 object DvbNitSettings {
   @scala.inline
   def apply(
-    NetworkId: Int | Double = null,
+    NetworkId: js.UndefOr[integerMin0Max65535] = js.undefined,
     NetworkName: stringMin1Max256 = null,
-    NitInterval: Int | Double = null
+    NitInterval: js.UndefOr[integerMin25Max10000] = js.undefined
   ): DvbNitSettings = {
     val __obj = js.Dynamic.literal()
-    if (NetworkId != null) __obj.updateDynamic("NetworkId")(NetworkId.asInstanceOf[js.Any])
+    if (!js.isUndefined(NetworkId)) __obj.updateDynamic("NetworkId")(NetworkId.get.asInstanceOf[js.Any])
     if (NetworkName != null) __obj.updateDynamic("NetworkName")(NetworkName.asInstanceOf[js.Any])
-    if (NitInterval != null) __obj.updateDynamic("NitInterval")(NitInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(NitInterval)) __obj.updateDynamic("NitInterval")(NitInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DvbNitSettings]
   }
 }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLXMLHttpRequest")
 @js.native
-class HTMLXMLHttpRequest protected () extends js.Object {
+trait HTMLXMLHttpRequest extends js.Object {
   @JSName("MSHTML.HTMLXMLHttpRequest_typekey")
   var MSHTMLDotHTMLXMLHttpRequest_typekey: HTMLXMLHttpRequest = js.native
   val constructor: js.Any = js.native

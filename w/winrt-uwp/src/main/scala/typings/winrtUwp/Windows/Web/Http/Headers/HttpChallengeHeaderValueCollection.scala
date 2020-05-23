@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsHttpChallengeHeaderValue
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsHttpChallengeHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the value of the Proxy-Authenticate or WWW-Authenticate HTTP header on an HTTP response. */
-@JSGlobal("Windows.Web.Http.Headers.HttpChallengeHeaderValueCollection")
 @js.native
-abstract class HttpChallengeHeaderValueCollection () extends Array[HttpChallengeHeaderValue] {
+trait HttpChallengeHeaderValueCollection extends Array[HttpChallengeHeaderValue] {
   /** Gets the number of HttpChallengeHeaderValue objects in the collection. */
   var size: Double = js.native
   /**
@@ -37,13 +36,13 @@ abstract class HttpChallengeHeaderValueCollection () extends Array[HttpChallenge
     * Retrieves the HttpChallengeHeaderValue items that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the HttpChallengeHeaderValue items in the HttpChallengeHeaderValueCollection .
     */
-  def getMany(startIndex: Double): AnonItemsHttpChallengeHeaderValue = js.native
+  def getMany(startIndex: Double): ItemsHttpChallengeHeaderValue = js.native
   /**
     * Returns an immutable view of the HttpChallengeHeaderValueCollection .
     * @return The view of the HttpChallengeHeaderValueCollection .
     */
   def getView(): IVectorView[HttpChallengeHeaderValue] = js.native
-  def indexOf(value: HttpChallengeHeaderValue, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: HttpChallengeHeaderValue, extra: js.Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

@@ -13,9 +13,9 @@ trait ReferenceProps extends js.Object {
 
 object ReferenceProps {
   @scala.inline
-  def apply(children: ReferenceChildrenProps => ReactNode, innerRef: Ref[_] = null): ReferenceProps = {
+  def apply(children: ReferenceChildrenProps => ReactNode, innerRef: js.UndefOr[Null | Ref[_]] = js.undefined): ReferenceProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceProps]
   }
 }

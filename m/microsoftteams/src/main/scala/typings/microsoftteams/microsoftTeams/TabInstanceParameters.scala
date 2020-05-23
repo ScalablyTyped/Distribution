@@ -22,8 +22,8 @@ object TabInstanceParameters {
     favoriteTeamsOnly: js.UndefOr[Boolean] = js.undefined
   ): TabInstanceParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(favoriteChannelsOnly)) __obj.updateDynamic("favoriteChannelsOnly")(favoriteChannelsOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(favoriteTeamsOnly)) __obj.updateDynamic("favoriteTeamsOnly")(favoriteTeamsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(favoriteChannelsOnly)) __obj.updateDynamic("favoriteChannelsOnly")(favoriteChannelsOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(favoriteTeamsOnly)) __obj.updateDynamic("favoriteTeamsOnly")(favoriteTeamsOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabInstanceParameters]
   }
 }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Comment")
 @js.native
-class Comment protected () extends js.Object {
+trait Comment extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Author: String = js.native
   val Creator: XlCreator = js.native

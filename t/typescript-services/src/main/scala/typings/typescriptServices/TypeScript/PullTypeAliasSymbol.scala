@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullTypeAliasSymbol")
 @js.native
-class PullTypeAliasSymbol protected () extends PullTypeSymbol {
-  def this(name: String) = this()
+trait PullTypeAliasSymbol extends PullTypeSymbol {
   var _assignedContainer: js.Any = js.native
   var _assignedType: js.Any = js.native
   var _assignedValue: js.Any = js.native

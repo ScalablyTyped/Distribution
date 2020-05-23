@@ -24,12 +24,12 @@ object ExtraState {
     isZooming: js.UndefOr[Boolean] = js.undefined
   ): ExtraState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inTransition)) __obj.updateDynamic("inTransition")(inTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDragging)) __obj.updateDynamic("isDragging")(isDragging.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHovering)) __obj.updateDynamic("isHovering")(isHovering.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPanning)) __obj.updateDynamic("isPanning")(isPanning.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRotating)) __obj.updateDynamic("isRotating")(isRotating.asInstanceOf[js.Any])
-    if (!js.isUndefined(isZooming)) __obj.updateDynamic("isZooming")(isZooming.asInstanceOf[js.Any])
+    if (!js.isUndefined(inTransition)) __obj.updateDynamic("inTransition")(inTransition.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDragging)) __obj.updateDynamic("isDragging")(isDragging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHovering)) __obj.updateDynamic("isHovering")(isHovering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPanning)) __obj.updateDynamic("isPanning")(isPanning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRotating)) __obj.updateDynamic("isRotating")(isRotating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isZooming)) __obj.updateDynamic("isZooming")(isZooming.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraState]
   }
 }

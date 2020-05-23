@@ -22,10 +22,14 @@ trait ListGroupsForUserRequest extends js.Object {
 
 object ListGroupsForUserRequest {
   @scala.inline
-  def apply(UserName: existingUserNameType, Marker: markerType = null, MaxItems: Int | Double = null): ListGroupsForUserRequest = {
+  def apply(
+    UserName: existingUserNameType,
+    Marker: markerType = null,
+    MaxItems: js.UndefOr[maxItemsType] = js.undefined
+  ): ListGroupsForUserRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupsForUserRequest]
   }
 }

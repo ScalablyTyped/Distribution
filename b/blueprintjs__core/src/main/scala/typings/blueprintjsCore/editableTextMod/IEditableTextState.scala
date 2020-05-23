@@ -20,16 +20,16 @@ trait IEditableTextState extends js.Object {
 object IEditableTextState {
   @scala.inline
   def apply(
-    inputHeight: Int | Double = null,
-    inputWidth: Int | Double = null,
+    inputHeight: js.UndefOr[Double] = js.undefined,
+    inputWidth: js.UndefOr[Double] = js.undefined,
     isEditing: js.UndefOr[Boolean] = js.undefined,
     lastValue: String = null,
     value: String = null
   ): IEditableTextState = {
     val __obj = js.Dynamic.literal()
-    if (inputHeight != null) __obj.updateDynamic("inputHeight")(inputHeight.asInstanceOf[js.Any])
-    if (inputWidth != null) __obj.updateDynamic("inputWidth")(inputWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEditing)) __obj.updateDynamic("isEditing")(isEditing.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputHeight)) __obj.updateDynamic("inputHeight")(inputHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputWidth)) __obj.updateDynamic("inputWidth")(inputWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEditing)) __obj.updateDynamic("isEditing")(isEditing.get.asInstanceOf[js.Any])
     if (lastValue != null) __obj.updateDynamic("lastValue")(lastValue.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditableTextState]

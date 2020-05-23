@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +19,4 @@ trait Edits extends Accessor {
     */
   val modified: Boolean = js.native
 }
-
-@JSGlobal("__esri.Edits")
-@js.native
-object Edits extends TopLevel[EditsConstructor]
 

@@ -1,13 +1,13 @@
 package typings.grommet.formMod
 
-import typings.grommet.AnonInvalid
+import typings.grommet.anon.Invalid
 import typings.grommet.grommetStrings.blur
 import typings.grommet.grommetStrings.submit
 import typings.react.mod.ChangeEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 trait FormProps extends js.Object {
   var errors: js.UndefOr[js.Object] = js.undefined
   var infos: js.UndefOr[js.Object] = js.undefined
-  var messages: js.UndefOr[AnonInvalid] = js.undefined
+  var messages: js.UndefOr[Invalid] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
-  var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event_], _]] = js.undefined
+  var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], _]] = js.undefined
   var onSubmit: js.UndefOr[js.Function1[/* event */ FormEvent[Element], Unit]] = js.undefined
   var validate: js.UndefOr[blur | submit] = js.undefined
   var value: js.UndefOr[js.Object] = js.undefined
@@ -28,9 +28,9 @@ object FormProps {
   def apply(
     errors: js.Object = null,
     infos: js.Object = null,
-    messages: AnonInvalid = null,
+    messages: Invalid = null,
     onChange: /* event */ ChangeEvent[Element] => Unit = null,
-    onReset: /* event */ SyntheticEvent[Element, Event_] => _ = null,
+    onReset: /* event */ SyntheticEvent[Element, Event] => _ = null,
     onSubmit: /* event */ FormEvent[Element] => Unit = null,
     validate: blur | submit = null,
     value: js.Object = null

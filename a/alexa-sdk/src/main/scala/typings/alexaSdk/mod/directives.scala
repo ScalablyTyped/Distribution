@@ -1,7 +1,7 @@
 package typings.alexaSdk.mod
 
-import typings.alexaSdk.AnonRequestId
-import typings.alexaSdk.AnonSpeech
+import typings.alexaSdk.anon.RequestId
+import typings.alexaSdk.anon.Speech
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +17,8 @@ object directives extends js.Object {
       * @param speechContent - Contents of the speech directive either in plain text or SSML.
       */
     def this(requestId: String, speechContent: String) = this()
-    var directive: AnonSpeech = js.native
-    var header: AnonRequestId = js.native
+    var directive: Speech = js.native
+    var header: RequestId = js.native
   }
   
 }

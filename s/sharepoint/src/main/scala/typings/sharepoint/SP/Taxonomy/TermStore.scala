@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.TermStore")
 @js.native
-class TermStore () extends ClientObject {
+trait TermStore extends ClientObject {
   def addLanguage(lcid: Double): Unit = js.native
   def commitAll(): Unit = js.native
   def createGroup(name: String): TermGroup = js.native

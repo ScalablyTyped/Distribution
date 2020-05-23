@@ -12,9 +12,9 @@ trait withI18nProps extends js.Object {
 
 object withI18nProps {
   @scala.inline
-  def apply(i18n: I18n_, i18nHash: String = null): withI18nProps = {
+  def apply(i18n: I18n_, i18nHash: js.UndefOr[Null | String] = js.undefined): withI18nProps = {
     val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
-    if (i18nHash != null) __obj.updateDynamic("i18nHash")(i18nHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(i18nHash)) __obj.updateDynamic("i18nHash")(i18nHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[withI18nProps]
   }
 }

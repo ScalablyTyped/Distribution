@@ -5,20 +5,20 @@ import typings.ember.mod.default.Application
 import typings.ember.mod.default.Container
 import typings.ember.mod.default.EventDispatcher
 import typings.ember.mod.default.Registry
-import typings.emberTestHelpers.AnonController
-import typings.emberTestHelpers.ApplicationInstancefactor
+import typings.emberTestHelpers.anon.ApplicationInstancefactor
+import typings.emberTestHelpers.anon.Controller
+import typings.jquery.JQuery
+import typings.jquery.JQuery.PlainObject
+import typings.jquery.JQuery.Selector
+import typings.jquery.JQuery.htmlString
 import typings.jquery.JQueryStatic
-import typings.jquery.JQuery_
-import typings.jquery.JQuery_.PlainObject
-import typings.jquery.JQuery_.Selector
-import typings.jquery.JQuery_.htmlString
 import typings.std.ArrayLike
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.HTMLSelectElement
 import typings.std.Pick
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait TestContext extends js.Object {
   var container: Container = js.native
   var dispatcher: EventDispatcher = js.native
   var element: Element = js.native
-  var inject: AnonController = js.native
+  var inject: Controller = js.native
   var owner: ApplicationInstancefactor = js.native
   var registry: Registry = js.native
   /**
@@ -46,11 +46,11 @@ trait TestContext extends js.Object {
     */
   // NOTE: `HTMLSelectElement` is both an Element and an Array-Like Object but jQuery treats it as an Element.
   @JSName("$")
-  def $(element: HTMLSelectElement): JQuery_[HTMLSelectElement] = js.native
+  def $(element: HTMLSelectElement): JQuery[HTMLSelectElement] = js.native
   // HACK: This is the factory function returned when importing jQuery without a DOM. Declaring it separately breaks using the type parameter on JQueryStatic.
   // HACK: The discriminator parameter handles the edge case of passing a Window object to JQueryStatic. It doesn't actually exist on the factory function.
   @JSName("$")
-  def $(window: Window_, discriminator: Boolean): JQueryStatic = js.native
+  def $(window: Window, discriminator: Boolean): JQueryStatic = js.native
   /**
     * Returns an empty jQuery set.
     * @see \`{@link https://api.jquery.com/jQuery/ }\`
@@ -58,7 +58,7 @@ trait TestContext extends js.Object {
     */
   // tslint:disable-next-line:no-unnecessary-generics
   @JSName("$")
-  def $[TElement](): JQuery_[TElement] = js.native
+  def $[TElement](): JQuery[TElement] = js.native
   /**
     * Binds a function to be executed when the DOM has finished loading.
     * @param callback The function to execute when the DOM is ready.
@@ -79,7 +79,7 @@ trait TestContext extends js.Object {
     */
   // tslint:disable-next-line:no-unnecessary-generics unified-signatures
   @JSName("$")
-  def $[TElement](callback: js.ThisFunction1[/* this */ Document_, /* $ */ this.type, Unit]): JQuery_[TElement] = js.native
+  def $[TElement](callback: js.ThisFunction1[/* this */ Document, /* $ */ this.type, Unit]): JQuery[TElement] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param element_elementArray _&#x40;param_ `element_elementArray`
@@ -98,9 +98,9 @@ trait TestContext extends js.Object {
   ```
     */
   @JSName("$")
-  def $[T /* <: Element */](element_elementArray: T): JQuery_[T] = js.native
+  def $[T /* <: Element */](element_elementArray: T): JQuery[T] = js.native
   @JSName("$")
-  def $[T /* <: Element */](element_elementArray: ArrayLike[T]): JQuery_[T] = js.native
+  def $[T /* <: Element */](element_elementArray: ArrayLike[T]): JQuery[T] = js.native
   /**
     * Creates DOM elements on the fly from the provided string of raw HTML.
     * @param html _&#x40;param_ `html`
@@ -132,11 +132,11 @@ trait TestContext extends js.Object {
     */
   // tslint:disable-next-line:no-unnecessary-generics
   @JSName("$")
-  def $[TElement /* <: HTMLElement */](html: htmlString): JQuery_[TElement] = js.native
+  def $[TElement /* <: HTMLElement */](html: htmlString): JQuery[TElement] = js.native
   @JSName("$")
-  def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[_]): JQuery_[TElement] = js.native
+  def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[_]): JQuery[TElement] = js.native
   @JSName("$")
-  def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document_): JQuery_[TElement] = js.native
+  def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param selection An existing jQuery object to clone.
@@ -144,13 +144,13 @@ trait TestContext extends js.Object {
     * @since 1.0
     */
   @JSName("$")
-  def $[T](selection: JQuery_[T]): JQuery_[T] = js.native
+  def $[T](selection: JQuery[T]): JQuery[T] = js.native
   @JSName("$")
-  def $[TElement /* <: Element */](selector: Selector, context: JQuery_[HTMLElement]): JQuery_[TElement] = js.native
+  def $[TElement /* <: Element */](selector: Selector, context: JQuery[HTMLElement]): JQuery[TElement] = js.native
   @JSName("$")
-  def $[TElement /* <: Element */](selector: Selector, context: Selector): JQuery_[TElement] = js.native
+  def $[TElement /* <: Element */](selector: Selector, context: Selector): JQuery[TElement] = js.native
   @JSName("$")
-  def $[TElement /* <: Element */](selector: Selector, context: Element): JQuery_[TElement] = js.native
+  def $[TElement /* <: Element */](selector: Selector, context: Element): JQuery[TElement] = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     * @param selector A string containing a selector expression
@@ -190,9 +190,9 @@ trait TestContext extends js.Object {
     */
   // tslint:disable-next-line:no-unnecessary-generics
   @JSName("$")
-  def $_TElement_Element[TElement /* <: Element */](selector: Selector): JQuery_[TElement] = js.native
+  def $_TElement_Element[TElement /* <: Element */](selector: Selector): JQuery[TElement] = js.native
   @JSName("$")
-  def $_TElement_Element[TElement /* <: Element */](selector: Selector, context: Document_): JQuery_[TElement] = js.native
+  def $_TElement_Element[TElement /* <: Element */](selector: Selector, context: Document): JQuery[TElement] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param object A plain object to wrap in a jQuery object.
@@ -200,7 +200,7 @@ trait TestContext extends js.Object {
     * @since 1.0
     */
   @JSName("$")
-  def $_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery_[T] = js.native
+  def $_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
   def clearRender(): Unit = js.native
   def factory(fullName: String): js.Any = js.native
   def get(key: String): js.Any = js.native

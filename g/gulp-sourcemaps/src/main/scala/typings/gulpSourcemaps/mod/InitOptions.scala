@@ -13,8 +13,8 @@ object InitOptions {
   @scala.inline
   def apply(debug: js.UndefOr[Boolean] = js.undefined, loadMaps: js.UndefOr[Boolean] = js.undefined): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadMaps)) __obj.updateDynamic("loadMaps")(loadMaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadMaps)) __obj.updateDynamic("loadMaps")(loadMaps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

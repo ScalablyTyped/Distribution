@@ -45,8 +45,8 @@ object InkAnalysisParagraphLoadOptions {
     lines: InkAnalysisLineCollectionLoadOptions = null
   ): InkAnalysisParagraphLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (inkAnalysis != null) __obj.updateDynamic("inkAnalysis")(inkAnalysis.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisParagraphLoadOptions]

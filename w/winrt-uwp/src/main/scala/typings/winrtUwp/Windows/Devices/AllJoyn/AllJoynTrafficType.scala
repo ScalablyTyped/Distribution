@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.AllJoyn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object AllJoynTrafficType extends js.Object {
   /** Traffic type currently unknown. */
   @js.native
   sealed trait unknown extends AllJoynTrafficType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AllJoynTrafficType with Double] = js.native
-  /* 1 */ @js.native
-  object messages extends TopLevel[messages with Double]
-  
-  /* 3 */ @js.native
-  object rawReliable extends TopLevel[rawReliable with Double]
-  
-  /* 2 */ @js.native
-  object rawUnreliable extends TopLevel[rawUnreliable with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
   
 }
 

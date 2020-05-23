@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonErrCode
+import typings.baiduApp.anon.ErrCode
 import typings.baiduApp.baiduAppStrings.DELETE
 import typings.baiduApp.baiduAppStrings.GET
 import typings.baiduApp.baiduAppStrings.HEAD
@@ -18,15 +18,15 @@ trait RequestOptions
   /** 如果设为json，会尝试对返回的数据做一次 JSON.parse  默认值为json */
   var dataType: js.UndefOr[String] = js.undefined
   @JSName("fail")
-  var fail_RequestOptions: js.UndefOr[js.Function1[/* err */ AnonErrCode, Unit]] = js.undefined
+  var fail_RequestOptions: js.UndefOr[js.Function1[/* err */ ErrCode, Unit]] = js.undefined
   /** 设置请求的 header , header 中不能设置 Referer */
   var header: js.UndefOr[RequestHeader] = js.undefined
   /** 默认为 GET，有效值：OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT */
   var method: js.UndefOr[GET | OPTIONS | HEAD | POST | PUT | DELETE] = js.undefined
   /**
-  		 * 设置响应的数据类型。合法值：text、arraybuffer  默认值为text
-  		 * @version 1.7.0
-  		 */
+    * 设置响应的数据类型。合法值：text、arraybuffer  默认值为text
+    * @version 1.7.0
+    */
   var responseType: js.UndefOr[String] = js.undefined
   /** 开发者服务器接口地址 */
   var url: String
@@ -39,7 +39,7 @@ object RequestOptions {
     complete: /* res */ js.Any => Unit = null,
     data: String | js.Object = null,
     dataType: String = null,
-    fail: /* err */ AnonErrCode => Unit = null,
+    fail: /* err */ ErrCode => Unit = null,
     header: RequestHeader = null,
     method: GET | OPTIONS | HEAD | POST | PUT | DELETE = null,
     responseType: String = null,

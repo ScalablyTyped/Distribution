@@ -1,7 +1,7 @@
 
 # Scala.js typings for material-ui__styles
 
-Typings are for version 4.9.10
+Typings are for version 4.9.14
 
 ## Library description:
 Material-UI Styles - The styling solution of Material-UI.

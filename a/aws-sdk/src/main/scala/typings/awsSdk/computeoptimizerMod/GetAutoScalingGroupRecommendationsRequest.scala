@@ -34,14 +34,14 @@ object GetAutoScalingGroupRecommendationsRequest {
     accountIds: AccountIds = null,
     autoScalingGroupArns: AutoScalingGroupArns = null,
     filters: Filters = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null
   ): GetAutoScalingGroupRecommendationsRequest = {
     val __obj = js.Dynamic.literal()
     if (accountIds != null) __obj.updateDynamic("accountIds")(accountIds.asInstanceOf[js.Any])
     if (autoScalingGroupArns != null) __obj.updateDynamic("autoScalingGroupArns")(autoScalingGroupArns.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAutoScalingGroupRecommendationsRequest]
   }

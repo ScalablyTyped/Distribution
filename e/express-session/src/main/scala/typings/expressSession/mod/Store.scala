@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
-import typings.expressSession.mod._Global_.Express.SessionData
+import typings.expressSession.mod.global.Express.SessionData
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

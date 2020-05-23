@@ -10,21 +10,26 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.BatchShaderGenerator")
-@js.native
-class BatchShaderGenerator protected () extends js.Object {
-  def this(vertexSrc: String, fragTemplate: String) = this()
+trait BatchShaderGenerator extends js.Object {
   /**
     * Reference to the fragement shader template. Must contain "%count%" and "%forloop%".
     *
     * @member {string} PIXI.BatchShaderGenerator#fragTemplate
     */
-  var fragTemplate: String = js.native
+  var fragTemplate: String
   /**
     * Reference to the vertex shader source.
     *
     * @member {string} PIXI.BatchShaderGenerator#vertexSrc
     */
-  var vertexSrc: String = js.native
+  var vertexSrc: String
+}
+
+object BatchShaderGenerator {
+  @scala.inline
+  def apply(fragTemplate: String, vertexSrc: String): BatchShaderGenerator = {
+    val __obj = js.Dynamic.literal(fragTemplate = fragTemplate.asInstanceOf[js.Any], vertexSrc = vertexSrc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BatchShaderGenerator]
+  }
 }
 

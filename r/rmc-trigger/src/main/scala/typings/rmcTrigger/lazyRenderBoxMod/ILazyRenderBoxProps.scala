@@ -23,7 +23,7 @@ object ILazyRenderBoxProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (hiddenClassName != null) __obj.updateDynamic("hiddenClassName")(hiddenClassName.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILazyRenderBoxProps]
   }
 }

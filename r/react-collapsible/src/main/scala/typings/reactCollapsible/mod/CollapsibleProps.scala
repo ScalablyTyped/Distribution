@@ -30,6 +30,8 @@ trait CollapsibleProps
   var onClosing: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onTriggerClosing: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onTriggerOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
   var openedClassName: js.UndefOr[String] = js.undefined
   var overflowWhenOpen: js.UndefOr[hidden | visible | auto | scroll | inherit | initial | unset] = js.undefined
   var transitionCloseTime: js.UndefOr[Double | Null] = js.undefined
@@ -62,15 +64,17 @@ object CollapsibleProps {
     onClosing: () => Unit = null,
     onOpen: () => Unit = null,
     onOpening: () => Unit = null,
+    onTriggerClosing: () => Unit = null,
+    onTriggerOpening: () => Unit = null,
     openedClassName: String = null,
     overflowWhenOpen: hidden | visible | auto | scroll | inherit | initial | unset = null,
-    transitionCloseTime: Int | Double = null,
-    transitionTime: Int | Double = null,
+    transitionCloseTime: js.UndefOr[Null | Double] = js.undefined,
+    transitionTime: js.UndefOr[Double] = js.undefined,
     triggerClassName: String = null,
     triggerDisabled: js.UndefOr[Boolean] = js.undefined,
     triggerOpenedClassName: String = null,
     triggerSibling: ReactElement = null,
-    triggerStyle: CSSProperties = null,
+    triggerStyle: js.UndefOr[Null | CSSProperties] = js.undefined,
     triggerTagName: String = null,
     triggerWhenOpen: String | ReactElement = null
   ): CollapsibleProps = {
@@ -84,20 +88,22 @@ object CollapsibleProps {
     if (contentOuterClassName != null) __obj.updateDynamic("contentOuterClassName")(contentOuterClassName.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (handleTriggerClick != null) __obj.updateDynamic("handleTriggerClick")(js.Any.fromFunction1(handleTriggerClick))
-    if (!js.isUndefined(lazyRender)) __obj.updateDynamic("lazyRender")(lazyRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyRender)) __obj.updateDynamic("lazyRender")(lazyRender.get.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction0(onClosing))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
     if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction0(onOpening))
+    if (onTriggerClosing != null) __obj.updateDynamic("onTriggerClosing")(js.Any.fromFunction0(onTriggerClosing))
+    if (onTriggerOpening != null) __obj.updateDynamic("onTriggerOpening")(js.Any.fromFunction0(onTriggerOpening))
     if (openedClassName != null) __obj.updateDynamic("openedClassName")(openedClassName.asInstanceOf[js.Any])
     if (overflowWhenOpen != null) __obj.updateDynamic("overflowWhenOpen")(overflowWhenOpen.asInstanceOf[js.Any])
-    if (transitionCloseTime != null) __obj.updateDynamic("transitionCloseTime")(transitionCloseTime.asInstanceOf[js.Any])
-    if (transitionTime != null) __obj.updateDynamic("transitionTime")(transitionTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionCloseTime)) __obj.updateDynamic("transitionCloseTime")(transitionCloseTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionTime)) __obj.updateDynamic("transitionTime")(transitionTime.get.asInstanceOf[js.Any])
     if (triggerClassName != null) __obj.updateDynamic("triggerClassName")(triggerClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerDisabled)) __obj.updateDynamic("triggerDisabled")(triggerDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(triggerDisabled)) __obj.updateDynamic("triggerDisabled")(triggerDisabled.get.asInstanceOf[js.Any])
     if (triggerOpenedClassName != null) __obj.updateDynamic("triggerOpenedClassName")(triggerOpenedClassName.asInstanceOf[js.Any])
     if (triggerSibling != null) __obj.updateDynamic("triggerSibling")(triggerSibling.asInstanceOf[js.Any])
-    if (triggerStyle != null) __obj.updateDynamic("triggerStyle")(triggerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(triggerStyle)) __obj.updateDynamic("triggerStyle")(triggerStyle.asInstanceOf[js.Any])
     if (triggerTagName != null) __obj.updateDynamic("triggerTagName")(triggerTagName.asInstanceOf[js.Any])
     if (triggerWhenOpen != null) __obj.updateDynamic("triggerWhenOpen")(triggerWhenOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapsibleProps]

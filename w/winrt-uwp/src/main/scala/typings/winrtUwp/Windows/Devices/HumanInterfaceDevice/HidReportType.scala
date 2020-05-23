@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object HidReportType extends js.Object {
   /** The report is an output report. */
   @js.native
   sealed trait output extends HidReportType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HidReportType with Double] = js.native
-  /* 2 */ @js.native
-  object feature extends TopLevel[feature with Double]
-  
-  /* 0 */ @js.native
-  object input extends TopLevel[input with Double]
-  
-  /* 1 */ @js.native
-  object output extends TopLevel[output with Double]
   
 }
 

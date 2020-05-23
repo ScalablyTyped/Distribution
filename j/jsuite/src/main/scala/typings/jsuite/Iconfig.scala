@@ -20,25 +20,25 @@ object Iconfig {
   @scala.inline
   def apply(
     columns: String = null,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     filterExpression: js.Any = null,
     logging: js.UndefOr[Boolean] = js.undefined,
-    maxUnitsUsage: Int | Double = null,
+    maxUnitsUsage: js.UndefOr[Double] = js.undefined,
     recordType: String = null,
     searchId: String = null,
     smartConvert: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): Iconfig = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (filterExpression != null) __obj.updateDynamic("filterExpression")(filterExpression.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (maxUnitsUsage != null) __obj.updateDynamic("maxUnitsUsage")(maxUnitsUsage.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxUnitsUsage)) __obj.updateDynamic("maxUnitsUsage")(maxUnitsUsage.get.asInstanceOf[js.Any])
     if (recordType != null) __obj.updateDynamic("recordType")(recordType.asInstanceOf[js.Any])
     if (searchId != null) __obj.updateDynamic("searchId")(searchId.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartConvert)) __obj.updateDynamic("smartConvert")(smartConvert.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartConvert)) __obj.updateDynamic("smartConvert")(smartConvert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Iconfig]
   }
 }

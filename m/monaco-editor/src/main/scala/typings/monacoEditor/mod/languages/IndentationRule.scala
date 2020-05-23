@@ -29,12 +29,12 @@ object IndentationRule {
   def apply(
     decreaseIndentPattern: RegExp,
     increaseIndentPattern: RegExp,
-    indentNextLinePattern: RegExp = null,
-    unIndentedLinePattern: RegExp = null
+    indentNextLinePattern: js.UndefOr[Null | RegExp] = js.undefined,
+    unIndentedLinePattern: js.UndefOr[Null | RegExp] = js.undefined
   ): IndentationRule = {
     val __obj = js.Dynamic.literal(decreaseIndentPattern = decreaseIndentPattern.asInstanceOf[js.Any], increaseIndentPattern = increaseIndentPattern.asInstanceOf[js.Any])
-    if (indentNextLinePattern != null) __obj.updateDynamic("indentNextLinePattern")(indentNextLinePattern.asInstanceOf[js.Any])
-    if (unIndentedLinePattern != null) __obj.updateDynamic("unIndentedLinePattern")(unIndentedLinePattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentNextLinePattern)) __obj.updateDynamic("indentNextLinePattern")(indentNextLinePattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(unIndentedLinePattern)) __obj.updateDynamic("unIndentedLinePattern")(unIndentedLinePattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndentationRule]
   }
 }

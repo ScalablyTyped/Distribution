@@ -4,12 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SPClientForms.ClientForm")
-@js.native
-class ClientForm protected () extends js.Object {
-  def this(qualifier: String) = this()
-  def NotifyControlEvent(eventName: FormManagerEvents, fldName: String, eventArg: js.Any): Unit = js.native
-  def RenderClientForm(): Unit = js.native
-  def SubmitClientForm(): Boolean = js.native
+trait ClientForm extends js.Object {
+  def NotifyControlEvent(eventName: FormManagerEvents, fldName: String, eventArg: js.Any): Unit
+  def RenderClientForm(): Unit
+  def SubmitClientForm(): Boolean
+}
+
+object ClientForm {
+  @scala.inline
+  def apply(
+    NotifyControlEvent: (FormManagerEvents, String, js.Any) => Unit,
+    RenderClientForm: () => Unit,
+    SubmitClientForm: () => Boolean
+  ): ClientForm = {
+    val __obj = js.Dynamic.literal(NotifyControlEvent = js.Any.fromFunction3(NotifyControlEvent), RenderClientForm = js.Any.fromFunction0(RenderClientForm), SubmitClientForm = js.Any.fromFunction0(SubmitClientForm))
+    __obj.asInstanceOf[ClientForm]
+  }
 }
 

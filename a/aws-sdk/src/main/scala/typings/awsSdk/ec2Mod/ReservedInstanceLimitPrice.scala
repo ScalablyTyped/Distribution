@@ -18,9 +18,9 @@ trait ReservedInstanceLimitPrice extends js.Object {
 
 object ReservedInstanceLimitPrice {
   @scala.inline
-  def apply(Amount: Int | scala.Double = null, CurrencyCode: CurrencyCodeValues = null): ReservedInstanceLimitPrice = {
+  def apply(Amount: js.UndefOr[Double] = js.undefined, CurrencyCode: CurrencyCodeValues = null): ReservedInstanceLimitPrice = {
     val __obj = js.Dynamic.literal()
-    if (Amount != null) __obj.updateDynamic("Amount")(Amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(Amount)) __obj.updateDynamic("Amount")(Amount.get.asInstanceOf[js.Any])
     if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedInstanceLimitPrice]
   }

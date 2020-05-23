@@ -12,9 +12,9 @@ trait WampyOpStatus extends js.Object {
 
 object WampyOpStatus {
   @scala.inline
-  def apply(code: Double, description: String, reqId: Int | Double = null): WampyOpStatus = {
+  def apply(code: Double, description: String, reqId: js.UndefOr[Double] = js.undefined): WampyOpStatus = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
-    if (reqId != null) __obj.updateDynamic("reqId")(reqId.asInstanceOf[js.Any])
+    if (!js.isUndefined(reqId)) __obj.updateDynamic("reqId")(reqId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WampyOpStatus]
   }
 }

@@ -7,12 +7,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains details about a tethering client. */
-@JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringClient")
-@js.native
-abstract class NetworkOperatorTetheringClient () extends js.Object {
+trait NetworkOperatorTetheringClient extends js.Object {
   /** Gets a list of hostnames used by this tethering client. */
-  var hostNames: IVectorView[HostName] = js.native
+  var hostNames: IVectorView[HostName]
   /** Gets the MAC address of this tethering client. */
-  var macAddress: String = js.native
+  var macAddress: String
+}
+
+object NetworkOperatorTetheringClient {
+  @scala.inline
+  def apply(hostNames: IVectorView[HostName], macAddress: String): NetworkOperatorTetheringClient = {
+    val __obj = js.Dynamic.literal(hostNames = hostNames.asInstanceOf[js.Any], macAddress = macAddress.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkOperatorTetheringClient]
+  }
 }
 

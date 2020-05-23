@@ -22,25 +22,25 @@ object DSROptions {
   def apply(
     cost: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double = null,
     distractors: js.Array[Double] = null,
-    iterations: Int | Double = null,
-    length: Int | Double = null,
-    log: Int | Double = null,
+    iterations: js.UndefOr[Double] = js.undefined,
+    length: js.UndefOr[Double] = js.undefined,
+    log: js.UndefOr[Double] = js.undefined,
     prompts: js.Array[Double] = null,
-    rate: Int | Double = null,
+    rate: js.UndefOr[Double] = js.undefined,
     schedule: TrainingScheduleOptions = null,
-    success: Int | Double = null,
+    success: js.UndefOr[Double] = js.undefined,
     targets: js.Array[Double] = null
   ): DSROptions = {
     val __obj = js.Dynamic.literal()
     if (cost != null) __obj.updateDynamic("cost")(js.Any.fromFunction2(cost))
     if (distractors != null) __obj.updateDynamic("distractors")(distractors.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
     if (prompts != null) __obj.updateDynamic("prompts")(prompts.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
     if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
     if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[DSROptions]
   }

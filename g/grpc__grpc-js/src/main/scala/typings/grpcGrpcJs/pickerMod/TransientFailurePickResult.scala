@@ -19,7 +19,6 @@ object TransientFailurePickResult {
   @scala.inline
   def apply(pickResultType: TRANSIENT_FAILURE, status: StatusObject, subchannel: Null): TransientFailurePickResult = {
     val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subchannel = subchannel.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TransientFailurePickResult]
   }
 }

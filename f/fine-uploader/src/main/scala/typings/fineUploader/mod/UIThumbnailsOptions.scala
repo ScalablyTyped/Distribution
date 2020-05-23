@@ -45,15 +45,15 @@ object UIThumbnailsOptions {
   @scala.inline
   def apply(
     customResizer: /* resizeInfo */ ResizeInfo => PromiseOptions = null,
-    maxCount: Int | Double = null,
+    maxCount: js.UndefOr[Double] = js.undefined,
     placeholders: UIThumbnailsPlaceholderOptions = null,
-    timeBetweenThumbs: Int | Double = null
+    timeBetweenThumbs: js.UndefOr[Double] = js.undefined
   ): UIThumbnailsOptions = {
     val __obj = js.Dynamic.literal()
     if (customResizer != null) __obj.updateDynamic("customResizer")(js.Any.fromFunction1(customResizer))
-    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCount)) __obj.updateDynamic("maxCount")(maxCount.get.asInstanceOf[js.Any])
     if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders.asInstanceOf[js.Any])
-    if (timeBetweenThumbs != null) __obj.updateDynamic("timeBetweenThumbs")(timeBetweenThumbs.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeBetweenThumbs)) __obj.updateDynamic("timeBetweenThumbs")(timeBetweenThumbs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIThumbnailsOptions]
   }
 }

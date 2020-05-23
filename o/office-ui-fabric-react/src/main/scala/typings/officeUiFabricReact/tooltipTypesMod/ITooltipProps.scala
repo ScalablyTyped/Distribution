@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.tooltipTypesMod
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.officeUiFabricReact.directionalHintMod.DirectionalHint
 import typings.officeUiFabricReact.tooltipBaseMod.TooltipBase
-import typings.react.AnonHtml
+import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
@@ -24,7 +24,7 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
 import typings.react.reactStrings.additions
@@ -70,7 +70,7 @@ import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
@@ -144,9 +144,9 @@ object ITooltipProps {
     `aria-autocomplete`: none | `inline` | list | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
+    `aria-colcount`: js.UndefOr[Double] = js.undefined,
+    `aria-colindex`: js.UndefOr[Double] = js.undefined,
+    `aria-colspan`: js.UndefOr[Double] = js.undefined,
     `aria-controls`: String = null,
     `aria-current`: Boolean | page | step | location | date | time = null,
     `aria-describedby`: String = null,
@@ -163,7 +163,7 @@ object ITooltipProps {
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
     `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
+    `aria-level`: js.UndefOr[Double] = js.undefined,
     `aria-live`: off | assertive | polite = null,
     `aria-modal`: js.UndefOr[Boolean] = js.undefined,
     `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
@@ -171,21 +171,21 @@ object ITooltipProps {
     `aria-orientation`: horizontal | vertical = null,
     `aria-owns`: String = null,
     `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
+    `aria-posinset`: js.UndefOr[Double] = js.undefined,
     `aria-pressed`: Boolean | mixed = null,
     `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
     `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
     `aria-required`: js.UndefOr[Boolean] = js.undefined,
     `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
+    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
+    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
+    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
     `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
+    `aria-setsize`: js.UndefOr[Double] = js.undefined,
     `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
+    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
+    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
+    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
     `aria-valuetext`: String = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
@@ -198,7 +198,7 @@ object ITooltipProps {
     content: String | Element | js.Array[Element] = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
+    dangerouslySetInnerHTML: Html = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -206,7 +206,7 @@ object ITooltipProps {
     dir: String = null,
     directionalHint: DirectionalHint = null,
     directionalHintForRTL: DirectionalHint = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
+    draggable: js.UndefOr[Booleanish] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -218,16 +218,16 @@ object ITooltipProps {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
-    maxWidth: String = null,
-    onAbort: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
+    maxWidth: js.UndefOr[Null | String] = js.undefined,
+    onAbort: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onAuxClick: MouseEvent[HTMLDivElement | TooltipBase, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onBlur: FocusEvent[HTMLDivElement | TooltipBase] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
     onChange: FormEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onClick: MouseEvent[HTMLDivElement | TooltipBase, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLDivElement | TooltipBase] => Unit = null,
@@ -245,21 +245,21 @@ object ITooltipProps {
     onDragOver: DragEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onDragStart: DragEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onDrop: DragEvent[HTMLDivElement | TooltipBase] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onEnded: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onError: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onEnded: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onError: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
     onFocus: FocusEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onInput: FormEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onInvalid: FormEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLDivElement | TooltipBase] => Unit = null,
-    onLoad: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
+    onLoad: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
     onMouseDown: MouseEvent[HTMLDivElement | TooltipBase, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLDivElement | TooltipBase, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLDivElement | TooltipBase, NativeMouseEvent] => Unit = null,
@@ -268,9 +268,9 @@ object ITooltipProps {
     onMouseOver: MouseEvent[HTMLDivElement | TooltipBase, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLDivElement | TooltipBase, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLDivElement | TooltipBase] => Unit = null,
-    onPause: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onPlay: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
+    onPause: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onPlay: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
     onPointerCancel: PointerEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onPointerDown: PointerEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onPointerEnter: PointerEvent[HTMLDivElement | TooltipBase] => Unit = null,
@@ -279,41 +279,41 @@ object ITooltipProps {
     onPointerOut: PointerEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onPointerOver: PointerEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onPointerUp: PointerEvent[HTMLDivElement | TooltipBase] => Unit = null,
-    onProgress: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
+    onProgress: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
     onRenderContent: (/* props */ js.UndefOr[ITooltipProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITooltipProps], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onScroll: UIEvent[HTMLDivElement | TooltipBase, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onSelect: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onStalled: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onSelect: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onStalled: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
     onSubmit: FormEvent[HTMLDivElement | TooltipBase] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
     onTouchCancel: TouchEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onTouchEnd: TouchEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onTouchMove: TouchEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onTouchStart: TouchEvent[HTMLDivElement | TooltipBase] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLDivElement | TooltipBase] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => Unit = null,
     onWheel: WheelEvent[HTMLDivElement | TooltipBase] => Unit = null,
     placeholder: String = null,
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
     resource: String = null,
-    results: Int | Double = null,
+    results: js.UndefOr[Double] = js.undefined,
     role: String = null,
     security: String = null,
     slot: String = null,
-    spellCheck: js.UndefOr[Boolean] = js.undefined,
+    spellCheck: js.UndefOr[Booleanish] = js.undefined,
     style: CSSProperties = null,
     styles: IStyleFunctionOrObject[ITooltipStyleProps, ITooltipStyles] = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     targetElement: HTMLElement = null,
     theme: ITheme = null,
     title: String = null,
@@ -326,52 +326,52 @@ object ITooltipProps {
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
     if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
@@ -386,14 +386,14 @@ object ITooltipProps {
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (directionalHint != null) __obj.updateDynamic("directionalHint")(directionalHint.asInstanceOf[js.Any])
     if (directionalHintForRTL != null) __obj.updateDynamic("directionalHintForRTL")(directionalHintForRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
@@ -401,10 +401,10 @@ object ITooltipProps {
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
@@ -490,16 +490,16 @@ object ITooltipProps {
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

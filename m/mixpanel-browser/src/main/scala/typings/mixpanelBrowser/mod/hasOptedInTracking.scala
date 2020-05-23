@@ -1,6 +1,6 @@
 package typings.mixpanelBrowser.mod
 
-import typings.mixpanelBrowser.PartialHasOptedInOutOptio
+import typings.mixpanelBrowser.anon.PartialHasOptedInOutOptio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

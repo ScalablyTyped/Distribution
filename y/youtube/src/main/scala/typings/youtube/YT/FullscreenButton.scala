@@ -14,13 +14,13 @@ trait FullscreenButton extends js.Object
 
 object FullscreenButton {
   /**
-  		 * The full screen button is hidden.
-  		 */
+    * The full screen button is hidden.
+    */
   @scala.inline
   def Hide: `0` = 0.asInstanceOf[`0`]
   /**
-  		 * The full screen button is visible.
-  		 */
+    * The full screen button is visible.
+    */
   @scala.inline
   def Show: `1` = 1.asInstanceOf[`1`]
 }

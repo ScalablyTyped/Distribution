@@ -11,9 +11,9 @@ trait TimelineMarginOption extends js.Object {
 
 object TimelineMarginOption {
   @scala.inline
-  def apply(axis: Int | Double = null, item: TimelineMarginItemType = null): TimelineMarginOption = {
+  def apply(axis: js.UndefOr[Double] = js.undefined, item: TimelineMarginItemType = null): TimelineMarginOption = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineMarginOption]
   }

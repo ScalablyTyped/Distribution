@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/log", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/log", JSImport.Namespace)
 @js.native
 object logMod extends js.Object {
   def getLogLevel(): LogLevel = js.native

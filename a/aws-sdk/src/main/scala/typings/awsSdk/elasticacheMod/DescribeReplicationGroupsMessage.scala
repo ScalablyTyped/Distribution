@@ -22,10 +22,14 @@ trait DescribeReplicationGroupsMessage extends js.Object {
 
 object DescribeReplicationGroupsMessage {
   @scala.inline
-  def apply(Marker: String = null, MaxRecords: Int | scala.Double = null, ReplicationGroupId: String = null): DescribeReplicationGroupsMessage = {
+  def apply(
+    Marker: String = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
+    ReplicationGroupId: String = null
+  ): DescribeReplicationGroupsMessage = {
     val __obj = js.Dynamic.literal()
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReplicationGroupsMessage]
   }

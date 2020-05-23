@@ -18,10 +18,10 @@ trait InstanceStorageInfo extends js.Object {
 
 object InstanceStorageInfo {
   @scala.inline
-  def apply(Disks: DiskInfoList = null, TotalSizeInGB: Int | scala.Double = null): InstanceStorageInfo = {
+  def apply(Disks: DiskInfoList = null, TotalSizeInGB: js.UndefOr[DiskSize] = js.undefined): InstanceStorageInfo = {
     val __obj = js.Dynamic.literal()
     if (Disks != null) __obj.updateDynamic("Disks")(Disks.asInstanceOf[js.Any])
-    if (TotalSizeInGB != null) __obj.updateDynamic("TotalSizeInGB")(TotalSizeInGB.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalSizeInGB)) __obj.updateDynamic("TotalSizeInGB")(TotalSizeInGB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceStorageInfo]
   }
 }

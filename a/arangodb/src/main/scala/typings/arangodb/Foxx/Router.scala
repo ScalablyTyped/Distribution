@@ -1,6 +1,6 @@
 package typings.arangodb.Foxx
 
-import typings.arangodb.FnCall
+import typings.arangodb.anon.FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Router extends js.Object {
   @JSName("all")
-  var all_Original: FnCall = js.native
+  var all_Original: FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName = js.native
   @JSName("delete")
-  var delete_Original: FnCall = js.native
+  var delete_Original: FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName = js.native
   @JSName("get")
-  var get_Original: FnCall = js.native
+  var get_Original: FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName = js.native
   @JSName("patch")
-  var patch_Original: FnCall = js.native
+  var patch_Original: FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName = js.native
   @JSName("post")
-  var post_Original: FnCall = js.native
+  var post_Original: FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName = js.native
   @JSName("put")
-  var put_Original: FnCall = js.native
+  var put_Original: FnCallPathOrMiddlewareMiddleware1Middleware2Middleware3Middleware4Middleware5Middleware6Middleware7Middleware8Middleware9HandlerName = js.native
   def all(handler: Handler): Endpoint = js.native
   def all(handler: Handler, name: String): Endpoint = js.native
   def all(pathOrMiddleware: String, handler: Handler): Endpoint = js.native

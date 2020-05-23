@@ -27,7 +27,7 @@ object Middleware {
   def apply(failCallback: js.Function = null, ignoreIP: js.UndefOr[Boolean] = js.undefined, key: js.Any = null): Middleware = {
     val __obj = js.Dynamic.literal()
     if (failCallback != null) __obj.updateDynamic("failCallback")(failCallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreIP)) __obj.updateDynamic("ignoreIP")(ignoreIP.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreIP)) __obj.updateDynamic("ignoreIP")(ignoreIP.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Middleware]
   }

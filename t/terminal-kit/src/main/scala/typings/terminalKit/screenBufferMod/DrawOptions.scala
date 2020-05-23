@@ -29,19 +29,19 @@ object DrawOptions {
     srcClipRect: typings.terminalKit.rectMod.^ = null,
     tile: js.UndefOr[Boolean] = js.undefined,
     wrap: Boolean | x | y = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): DrawOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blending)) __obj.updateDynamic("blending")(blending.asInstanceOf[js.Any])
-    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
+    if (!js.isUndefined(blending)) __obj.updateDynamic("blending")(blending.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
     if (dst != null) __obj.updateDynamic("dst")(dst.asInstanceOf[js.Any])
     if (dstClipRect != null) __obj.updateDynamic("dstClipRect")(dstClipRect.asInstanceOf[js.Any])
     if (srcClipRect != null) __obj.updateDynamic("srcClipRect")(srcClipRect.asInstanceOf[js.Any])
-    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile.asInstanceOf[js.Any])
+    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile.get.asInstanceOf[js.Any])
     if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawOptions]
   }
 }

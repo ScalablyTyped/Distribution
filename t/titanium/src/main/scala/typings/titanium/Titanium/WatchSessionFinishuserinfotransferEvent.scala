@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when the application completed user info transfer to the watch app.
-	 */
+  * Fired when the application completed user info transfer to the watch app.
+  */
 trait WatchSessionFinishuserinfotransferEvent extends WatchSessionBaseEvent {
   /**
-  		 * Error code if transfer failed.
-  		 */
+    * Error code if transfer failed.
+    */
   var errorCode: Double
   /**
-  		 * Error message if any.
-  		 */
+    * Error message if any.
+    */
   var message: String
   /**
-  		 * If the transfer was successful.
-  		 */
+    * If the transfer was successful.
+    */
   var success: Boolean
   /**
-  		 * The downloaded data as a Titanium.Blob object.
-  		 */
+    * The downloaded data as a Titanium.Blob object.
+    */
   var userInfo: js.Any
 }
 

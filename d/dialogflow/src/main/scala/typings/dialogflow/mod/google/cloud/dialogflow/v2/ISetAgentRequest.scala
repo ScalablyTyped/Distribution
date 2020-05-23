@@ -15,10 +15,13 @@ trait ISetAgentRequest extends js.Object {
 
 object ISetAgentRequest {
   @scala.inline
-  def apply(agent: IAgent = null, updateMask: IFieldMask = null): ISetAgentRequest = {
+  def apply(
+    agent: js.UndefOr[Null | IAgent] = js.undefined,
+    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
+  ): ISetAgentRequest = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(agent)) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetAgentRequest]
   }
 }

@@ -47,10 +47,10 @@ object Delta {
     parentId: String,
     parentPropertyName: String,
     unitId: String,
-    additionIndex: Int | Double = null
+    additionIndex: js.UndefOr[Double] = js.undefined
   ): Delta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementTree = elementTree.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], parentPropertyName = parentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-    if (additionIndex != null) __obj.updateDynamic("additionIndex")(additionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(additionIndex)) __obj.updateDynamic("additionIndex")(additionIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delta]
   }
   @scala.inline
@@ -81,10 +81,10 @@ object Delta {
     newParentId: String,
     newParentPropertyName: String,
     unitId: String,
-    newIndex: Int | Double = null
+    newIndex: js.UndefOr[Double] = js.undefined
   ): Delta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], newParentId = newParentId.asInstanceOf[js.Any], newParentPropertyName = newParentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(newIndex)) __obj.updateDynamic("newIndex")(newIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delta]
   }
 }

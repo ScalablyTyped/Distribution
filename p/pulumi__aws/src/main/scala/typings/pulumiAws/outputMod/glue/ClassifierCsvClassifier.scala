@@ -43,10 +43,10 @@ object ClassifierCsvClassifier {
     quoteSymbol: String = null
   ): ClassifierCsvClassifier = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSingleColumn)) __obj.updateDynamic("allowSingleColumn")(allowSingleColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSingleColumn)) __obj.updateDynamic("allowSingleColumn")(allowSingleColumn.get.asInstanceOf[js.Any])
     if (containsHeader != null) __obj.updateDynamic("containsHeader")(containsHeader.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableValueTrimming)) __obj.updateDynamic("disableValueTrimming")(disableValueTrimming.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableValueTrimming)) __obj.updateDynamic("disableValueTrimming")(disableValueTrimming.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (quoteSymbol != null) __obj.updateDynamic("quoteSymbol")(quoteSymbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierCsvClassifier]

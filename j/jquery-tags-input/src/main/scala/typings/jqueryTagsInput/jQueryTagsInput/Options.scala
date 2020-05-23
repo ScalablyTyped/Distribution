@@ -73,8 +73,8 @@ object Options {
     delimiter: js.Array[String] | String = null,
     height: String = null,
     interactive: js.UndefOr[Boolean] = js.undefined,
-    maxChars: Int | Double = null,
-    minChars: Int | Double = null,
+    maxChars: js.UndefOr[Double] = js.undefined,
+    minChars: js.UndefOr[Double] = js.undefined,
     onAddTag: /* addedValue */ String => Unit = null,
     onChange: (/* element */ JQuery, /* changedValue */ String) => Unit = null,
     onRemoveTag: /* removedValue */ String => Unit = null,
@@ -88,14 +88,14 @@ object Options {
     if (defaultText != null) __obj.updateDynamic("defaultText")(defaultText.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (maxChars != null) __obj.updateDynamic("maxChars")(maxChars.asInstanceOf[js.Any])
-    if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxChars)) __obj.updateDynamic("maxChars")(maxChars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minChars)) __obj.updateDynamic("minChars")(minChars.get.asInstanceOf[js.Any])
     if (onAddTag != null) __obj.updateDynamic("onAddTag")(js.Any.fromFunction1(onAddTag))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onRemoveTag != null) __obj.updateDynamic("onRemoveTag")(js.Any.fromFunction1(onRemoveTag))
     if (placeholderColor != null) __obj.updateDynamic("placeholderColor")(placeholderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeWithBackspace)) __obj.updateDynamic("removeWithBackspace")(removeWithBackspace.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeWithBackspace)) __obj.updateDynamic("removeWithBackspace")(removeWithBackspace.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

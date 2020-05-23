@@ -14,10 +14,8 @@ trait OnlineStateSource extends js.Object
 
 object OnlineStateSource {
   @scala.inline
-  def RemoteStore: `0` = this.cast(0)
+  def RemoteStore: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def SharedClientState: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def SharedClientState: `1` = 1.asInstanceOf[`1`]
 }
 

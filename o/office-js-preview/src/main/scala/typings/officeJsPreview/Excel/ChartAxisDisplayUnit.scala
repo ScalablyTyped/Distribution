@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,41 +89,6 @@ object ChartAxisDisplayUnit extends js.Object {
     */
   @js.native
   sealed trait trillions extends ChartAxisDisplayUnit
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartAxisDisplayUnit with String] = js.native
-  /* "Billions" */ @js.native
-  object billions extends TopLevel[billions with String]
-  
-  /* "Custom" */ @js.native
-  object custom extends TopLevel[custom with String]
-  
-  /* "HundredMillions" */ @js.native
-  object hundredMillions extends TopLevel[hundredMillions with String]
-  
-  /* "HundredThousands" */ @js.native
-  object hundredThousands extends TopLevel[hundredThousands with String]
-  
-  /* "Hundreds" */ @js.native
-  object hundreds extends TopLevel[hundreds with String]
-  
-  /* "Millions" */ @js.native
-  object millions extends TopLevel[millions with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "TenMillions" */ @js.native
-  object tenMillions extends TopLevel[tenMillions with String]
-  
-  /* "TenThousands" */ @js.native
-  object tenThousands extends TopLevel[tenThousands with String]
-  
-  /* "Thousands" */ @js.native
-  object thousands extends TopLevel[thousands with String]
-  
-  /* "Trillions" */ @js.native
-  object trillions extends TopLevel[trillions with String]
   
 }
 

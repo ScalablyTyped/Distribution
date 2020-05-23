@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object VpnPacketBufferStatus extends js.Object {
   /** OK */
   @js.native
   sealed trait ok extends VpnPacketBufferStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnPacketBufferStatus with Double] = js.native
-  /* 1 */ @js.native
-  object invalidBufferSize extends TopLevel[invalidBufferSize with Double]
-  
-  /* 0 */ @js.native
-  object ok extends TopLevel[ok with Double]
   
 }
 

@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to an instance of a background task. */
-@JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstanceRuntimeClass")
 @js.native
-abstract class WebUIBackgroundTaskInstanceRuntimeClass () extends js.Object {
+trait WebUIBackgroundTaskInstanceRuntimeClass extends js.Object {
   /** Gets the instance ID of the background task instance. */
   var instanceId: String = js.native
   /** Attaches a cancellation event handler to the background task instance. */

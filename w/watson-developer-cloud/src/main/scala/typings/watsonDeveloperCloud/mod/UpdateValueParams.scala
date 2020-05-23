@@ -48,7 +48,7 @@ object UpdateValueParams {
     if (new_synonyms != null) __obj.updateDynamic("new_synonyms")(new_synonyms.asInstanceOf[js.Any])
     if (new_value != null) __obj.updateDynamic("new_value")(new_value.asInstanceOf[js.Any])
     if (new_value_type != null) __obj.updateDynamic("new_value_type")(new_value_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateValueParams]
   }
 }

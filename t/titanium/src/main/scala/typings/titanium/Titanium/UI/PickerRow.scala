@@ -22,22 +22,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * A picker row, representing a selectable item in a <Titanium.UI.Picker>.
-		 */
-@JSGlobal("Titanium.UI.PickerRow")
+  * A picker row, representing a selectable item in a <Titanium.UI.Picker>.
+  */
 @js.native
-class PickerRow () extends View {
+trait PickerRow extends View {
   /**
-  			 * Color of the item text, as a color name or hex triplet.
-  			 */
+    * Color of the item text, as a color name or hex triplet.
+    */
   var color: String = js.native
   /**
-  			 * Font to use for the item text.
-  			 */
+    * Font to use for the item text.
+    */
   var font: Font = js.native
   /**
-  			 * Item text.
-  			 */
+    * Item text.
+    */
   var title: String = js.native
   @JSName("fireEvent")
   def fireEvent_click(name: click, event: PickerRowClickEvent): Unit = js.native
@@ -72,34 +71,34 @@ class PickerRow () extends View {
   @JSName("fireEvent")
   def fireEvent_twofingertap(name: twofingertap, event: PickerRowTwofingertapEvent): Unit = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.PickerRow.color> property.
-  			 * @deprecated Access <Titanium.UI.PickerRow.color> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.PickerRow.color> property.
+    * @deprecated Access <Titanium.UI.PickerRow.color> instead.
+    */
   def getColor(): String = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.PickerRow.font> property.
-  			 * @deprecated Access <Titanium.UI.PickerRow.font> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.PickerRow.font> property.
+    * @deprecated Access <Titanium.UI.PickerRow.font> instead.
+    */
   def getFont(): Font = js.native
   /**
-  			 * Gets the value of the <Titanium.UI.PickerRow.title> property.
-  			 * @deprecated Access <Titanium.UI.PickerRow.title> instead.
-  			 */
+    * Gets the value of the <Titanium.UI.PickerRow.title> property.
+    * @deprecated Access <Titanium.UI.PickerRow.title> instead.
+    */
   def getTitle(): String = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.PickerRow.color> property.
-  			 * @deprecated Set the value using <Titanium.UI.PickerRow.color> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.PickerRow.color> property.
+    * @deprecated Set the value using <Titanium.UI.PickerRow.color> instead.
+    */
   def setColor(color: String): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.PickerRow.font> property.
-  			 * @deprecated Set the value using <Titanium.UI.PickerRow.font> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.PickerRow.font> property.
+    * @deprecated Set the value using <Titanium.UI.PickerRow.font> instead.
+    */
   def setFont(font: Font): Unit = js.native
   /**
-  			 * Sets the value of the <Titanium.UI.PickerRow.title> property.
-  			 * @deprecated Set the value using <Titanium.UI.PickerRow.title> instead.
-  			 */
+    * Sets the value of the <Titanium.UI.PickerRow.title> property.
+    * @deprecated Set the value using <Titanium.UI.PickerRow.title> instead.
+    */
   def setTitle(title: String): Unit = js.native
 }
 

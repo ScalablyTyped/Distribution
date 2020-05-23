@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +12,4 @@ trait HTMLSlotElement extends HTMLElement {
   def assignedNodes(): js.Array[Node] = js.native
   def assignedNodes(options: AssignedNodesOptions): js.Array[Node] = js.native
 }
-
-@JSGlobal("HTMLSlotElement")
-@js.native
-object HTMLSlotElement extends Instantiable0[HTMLSlotElement]
 

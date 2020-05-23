@@ -1,5 +1,6 @@
 package typings.testingLibraryDom
 
+import typings.testingLibraryDom.anon.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object waitForElementToBeRemovedMod extends js.Object {
   def waitForElementToBeRemoved[T](callback: T): js.Promise[T] = js.native
-  def waitForElementToBeRemoved[T](callback: T, options: AnonMutationObserverOptions): js.Promise[T] = js.native
+  def waitForElementToBeRemoved[T](callback: T, options: Container): js.Promise[T] = js.native
   def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[T] = js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: AnonMutationObserverOptions): js.Promise[T] = js.native
+  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: Container): js.Promise[T] = js.native
 }
 

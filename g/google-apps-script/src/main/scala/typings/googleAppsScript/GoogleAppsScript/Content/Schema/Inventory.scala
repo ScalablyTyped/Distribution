@@ -38,10 +38,10 @@ object Inventory {
     loyaltyPoints: LoyaltyPoints = null,
     pickup: InventoryPickup = null,
     price: Price = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     salePrice: Price = null,
     salePriceEffectiveDate: String = null,
-    sellOnGoogleQuantity: Int | Double = null
+    sellOnGoogleQuantity: js.UndefOr[Double] = js.undefined
   ): Inventory = {
     val __obj = js.Dynamic.literal()
     if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
@@ -56,10 +56,10 @@ object Inventory {
     if (loyaltyPoints != null) __obj.updateDynamic("loyaltyPoints")(loyaltyPoints.asInstanceOf[js.Any])
     if (pickup != null) __obj.updateDynamic("pickup")(pickup.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice.asInstanceOf[js.Any])
     if (salePriceEffectiveDate != null) __obj.updateDynamic("salePriceEffectiveDate")(salePriceEffectiveDate.asInstanceOf[js.Any])
-    if (sellOnGoogleQuantity != null) __obj.updateDynamic("sellOnGoogleQuantity")(sellOnGoogleQuantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(sellOnGoogleQuantity)) __obj.updateDynamic("sellOnGoogleQuantity")(sellOnGoogleQuantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inventory]
   }
 }

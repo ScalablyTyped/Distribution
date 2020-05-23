@@ -1,5 +1,6 @@
 package typings.azureSb
 
+import typings.azureSb.anon._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +22,7 @@ object resourceresultMod extends js.Object {
             entry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<any> */ js.Any,
             nameProperty: String
           ): Unit = js.native
-          def setName(entry: Anon, nameProperty: String): Unit = js.native
+          def setName(entry: _empty, nameProperty: String): Unit = js.native
         }
         
       }

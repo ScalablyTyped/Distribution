@@ -135,10 +135,10 @@ trait StarRatingProps extends js.Object {
 object StarRatingProps {
   @scala.inline
   def apply(
-    activeOpacity: Int | Double = null,
+    activeOpacity: js.UndefOr[Double] = js.undefined,
     animation: bounce | flash | jello | pulse | rotate | rubberBand | shake | swing | tada | wobble = null,
-    buttonStyle: StyleProp[ViewStyle] = null,
-    containerStyle: StyleProp[ViewStyle] = null,
+    buttonStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     emptyStar: String | ImageURISource = null,
     emptyStarColor: String = null,
@@ -148,33 +148,33 @@ object StarRatingProps {
     halfStarColor: String = null,
     halfStarEnabled: js.UndefOr[Boolean] = js.undefined,
     iconSet: String = null,
-    maxStars: Int | Double = null,
-    rating: Int | Double = null,
+    maxStars: js.UndefOr[Double] = js.undefined,
+    rating: js.UndefOr[Double] = js.undefined,
     reversed: js.UndefOr[Boolean] = js.undefined,
     selectedStar: /* rating */ Double => Unit = null,
-    starSize: Int | Double = null,
-    starStyle: StyleProp[ViewStyle] = null
+    starSize: js.UndefOr[Double] = js.undefined,
+    starStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): StarRatingProps = {
     val __obj = js.Dynamic.literal()
-    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeOpacity)) __obj.updateDynamic("activeOpacity")(activeOpacity.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonStyle)) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (emptyStar != null) __obj.updateDynamic("emptyStar")(emptyStar.asInstanceOf[js.Any])
     if (emptyStarColor != null) __obj.updateDynamic("emptyStarColor")(emptyStarColor.asInstanceOf[js.Any])
     if (fullStar != null) __obj.updateDynamic("fullStar")(fullStar.asInstanceOf[js.Any])
     if (fullStarColor != null) __obj.updateDynamic("fullStarColor")(fullStarColor.asInstanceOf[js.Any])
     if (halfStar != null) __obj.updateDynamic("halfStar")(halfStar.asInstanceOf[js.Any])
     if (halfStarColor != null) __obj.updateDynamic("halfStarColor")(halfStarColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(halfStarEnabled)) __obj.updateDynamic("halfStarEnabled")(halfStarEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(halfStarEnabled)) __obj.updateDynamic("halfStarEnabled")(halfStarEnabled.get.asInstanceOf[js.Any])
     if (iconSet != null) __obj.updateDynamic("iconSet")(iconSet.asInstanceOf[js.Any])
-    if (maxStars != null) __obj.updateDynamic("maxStars")(maxStars.asInstanceOf[js.Any])
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxStars)) __obj.updateDynamic("maxStars")(maxStars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rating)) __obj.updateDynamic("rating")(rating.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
     if (selectedStar != null) __obj.updateDynamic("selectedStar")(js.Any.fromFunction1(selectedStar))
-    if (starSize != null) __obj.updateDynamic("starSize")(starSize.asInstanceOf[js.Any])
-    if (starStyle != null) __obj.updateDynamic("starStyle")(starStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(starSize)) __obj.updateDynamic("starSize")(starSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(starStyle)) __obj.updateDynamic("starStyle")(starStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[StarRatingProps]
   }
 }

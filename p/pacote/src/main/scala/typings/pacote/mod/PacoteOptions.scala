@@ -79,33 +79,33 @@ trait PacoteOptions extends js.Object {
 object PacoteOptions {
   @scala.inline
   def apply(
-    before: Date = null,
+    before: js.UndefOr[Null | Date] = js.undefined,
     cache: String = null,
     defaultTag: String = null,
-    dmode: Int | Double = null,
-    fmode: Int | Double = null,
+    dmode: js.UndefOr[Double] = js.undefined,
+    fmode: js.UndefOr[Double] = js.undefined,
     fullMetadata: js.UndefOr[Boolean] = js.undefined,
     integrity: String | Integrity = null,
     log: Logger = null,
     preferOnline: js.UndefOr[Boolean] = js.undefined,
     registry: String = null,
     resolved: String = null,
-    umask: Int | Double = null,
+    umask: js.UndefOr[Double] = js.undefined,
     where: String = null
   ): PacoteOptions = {
     val __obj = js.Dynamic.literal()
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (defaultTag != null) __obj.updateDynamic("defaultTag")(defaultTag.asInstanceOf[js.Any])
-    if (dmode != null) __obj.updateDynamic("dmode")(dmode.asInstanceOf[js.Any])
-    if (fmode != null) __obj.updateDynamic("fmode")(fmode.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullMetadata)) __obj.updateDynamic("fullMetadata")(fullMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(dmode)) __obj.updateDynamic("dmode")(dmode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fmode)) __obj.updateDynamic("fmode")(fmode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullMetadata)) __obj.updateDynamic("fullMetadata")(fullMetadata.get.asInstanceOf[js.Any])
     if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferOnline)) __obj.updateDynamic("preferOnline")(preferOnline.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferOnline)) __obj.updateDynamic("preferOnline")(preferOnline.get.asInstanceOf[js.Any])
     if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
     if (resolved != null) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
-    if (umask != null) __obj.updateDynamic("umask")(umask.asInstanceOf[js.Any])
+    if (!js.isUndefined(umask)) __obj.updateDynamic("umask")(umask.get.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[PacoteOptions]
   }

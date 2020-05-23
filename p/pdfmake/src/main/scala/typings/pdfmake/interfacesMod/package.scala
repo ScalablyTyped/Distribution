@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object interfacesMod {
-  type Column = typings.pdfmake.interfacesMod.Content with typings.pdfmake.AnonWidth
+  type Column = typings.pdfmake.interfacesMod.Content with typings.pdfmake.anon.Width
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.pdfmake.interfacesMod.ArrayOfContent
@@ -45,7 +45,7 @@ package object interfacesMod {
   ]
   type DynamicRowSize = js.Function1[/* row */ scala.Double, scala.Double | typings.pdfmake.pdfmakeStrings.auto]
   type Margins = scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
-  type OrderedListElement = typings.pdfmake.interfacesMod.Content with typings.pdfmake.AnonCounter
+  type OrderedListElement = typings.pdfmake.interfacesMod.Content with typings.pdfmake.anon.Counter
   /* Rewritten from type alias, can be one of: 
     - scala.Double
     - typings.pdfmake.pdfmakeStrings.auto
@@ -55,12 +55,12 @@ package object interfacesMod {
   type Size = typings.pdfmake.interfacesMod._Size | scala.Double | java.lang.String
   type StyleDictionary = org.scalablytyped.runtime.StringDictionary[typings.pdfmake.interfacesMod.Style]
   type TFontDictionary = org.scalablytyped.runtime.StringDictionary[typings.pdfmake.interfacesMod.TFontFamilyTypes]
-  type TableCell = js.Object | (typings.pdfmake.interfacesMod.Content with typings.pdfmake.AnonBorder)
+  type TableCell = js.Object | (typings.pdfmake.interfacesMod.Content with typings.pdfmake.anon.Border)
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.pdfmake.interfacesMod.PredefinedTableLayout
     - typings.pdfmake.interfacesMod.CustomTableLayout
   */
   type TableLayout = typings.pdfmake.interfacesMod._TableLayout | java.lang.String
-  type UnorderedListElement = typings.pdfmake.interfacesMod.Content with typings.pdfmake.AnonListType
+  type UnorderedListElement = typings.pdfmake.interfacesMod.Content with typings.pdfmake.anon.ListType
 }

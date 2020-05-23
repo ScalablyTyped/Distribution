@@ -13,7 +13,7 @@ object BarProps {
   @scala.inline
   def apply(border: js.UndefOr[Boolean] = js.undefined): BarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarProps]
   }
 }

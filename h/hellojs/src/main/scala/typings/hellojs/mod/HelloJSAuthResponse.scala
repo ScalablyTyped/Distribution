@@ -25,8 +25,8 @@ object HelloJSAuthResponse {
     access_token: String = null,
     client_id: String = null,
     display: HelloJSDisplayType = null,
-    expires: Int | Double = null,
-    expires_in: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
+    expires_in: js.UndefOr[Double] = js.undefined,
     id_token: String = null,
     network: String = null,
     redirect_uri: String = null,
@@ -39,8 +39,8 @@ object HelloJSAuthResponse {
     if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
     if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires_in)) __obj.updateDynamic("expires_in")(expires_in.get.asInstanceOf[js.Any])
     if (id_token != null) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])

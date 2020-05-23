@@ -20,14 +20,14 @@ object LoadOptions {
     async: js.UndefOr[Boolean] = js.undefined,
     before: (/* path */ String, /* scriptEl */ HTMLElement) => Unit = null,
     error: /* depsNotFound */ js.Array[String] => Unit = null,
-    numRetries: Int | Double = null,
+    numRetries: js.UndefOr[Double] = js.undefined,
     success: () => Unit = null
   ): LoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (numRetries != null) __obj.updateDynamic("numRetries")(numRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(numRetries)) __obj.updateDynamic("numRetries")(numRetries.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[LoadOptions]
   }

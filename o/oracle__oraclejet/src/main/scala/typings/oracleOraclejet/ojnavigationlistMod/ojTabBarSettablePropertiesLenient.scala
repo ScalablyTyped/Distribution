@@ -1,8 +1,8 @@
 package typings.oracleOraclejet.ojnavigationlistMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonAccessibleReorderAfterItem
-import typings.oracleOraclejet.AnonRendererSelectable
+import typings.oracleOraclejet.anon.AccessibleReorderAfterItem
+import typings.oracleOraclejet.anon.RendererSelectable
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.bottom
@@ -28,28 +28,28 @@ trait ojTabBarSettablePropertiesLenient[K, D]
   var data: js.UndefOr[DataProvider[K, D]] = js.undefined
   var display: js.UndefOr[all | icons] = js.undefined
   var edge: js.UndefOr[top | bottom | start | end] = js.undefined
-  var item: js.UndefOr[AnonRendererSelectable[K, D]] = js.undefined
+  var item: js.UndefOr[RendererSelectable[K, D]] = js.undefined
   var overflow: js.UndefOr[popup | hidden] = js.undefined
   var reorderable: js.UndefOr[enabled | disabled] = js.undefined
   var selection: js.UndefOr[js.Any] = js.undefined
-  var translations: js.UndefOr[AnonAccessibleReorderAfterItem] = js.undefined
+  var translations: js.UndefOr[AccessibleReorderAfterItem] = js.undefined
   var truncation: js.UndefOr[none | progressive] = js.undefined
 }
 
 object ojTabBarSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     as: String = null,
     currentItem: js.Any = null,
     data: DataProvider[K, D] = null,
     display: all | icons = null,
     edge: top | bottom | start | end = null,
-    item: AnonRendererSelectable[K, D] = null,
+    item: RendererSelectable[K, D] = null,
     overflow: popup | hidden = null,
     reorderable: enabled | disabled = null,
     selection: js.Any = null,
-    translations: AnonAccessibleReorderAfterItem = null,
+    translations: AccessibleReorderAfterItem = null,
     truncation: none | progressive = null
   ): ojTabBarSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()

@@ -1,6 +1,10 @@
 package typings.reactNativePermissions
 
 import typings.reactNative.mod.Rationale
+import typings.reactNativePermissions.anon.ReadonlyACCEPTHANDOVERand
+import typings.reactNativePermissions.anon.ReadonlyANDROIDReadonlyAC
+import typings.reactNativePermissions.anon.ReadonlyBLUETOOTHPERIPHER
+import typings.reactNativePermissions.anon.ReadonlyUNAVAILABLEunavai
 import typings.reactNativePermissions.reactNativePermissionsStrings.blocked
 import typings.reactNativePermissions.reactNativePermissionsStrings.denied
 import typings.reactNativePermissions.reactNativePermissionsStrings.granted

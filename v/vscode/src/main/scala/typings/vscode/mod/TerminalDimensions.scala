@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait TerminalDimensions extends js.Object {
   /**
-  		 * The number of columns in the terminal.
-  		 */
+    * The number of columns in the terminal.
+    */
   val columns: Double
   /**
-  		 * The number of rows in the terminal.
-  		 */
+    * The number of rows in the terminal.
+    */
   val rows: Double
 }
 

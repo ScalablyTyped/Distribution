@@ -1,7 +1,5 @@
 package typings.ace.AceAjax
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,12 +31,17 @@ trait ScrollBar extends js.Object {
   def setScrollTop(scrollTop: Double): Unit
 }
 
-@JSGlobal("AceAjax.ScrollBar")
-@js.native
-object ScrollBar
-  extends /**
-  * Creates a new `ScrollBar`. `parent` is the owner of the scroll bar.
-  * @param parent A DOM element
-  **/
-Instantiable1[/* parent */ HTMLElement, ScrollBar]
+object ScrollBar {
+  @scala.inline
+  def apply(
+    getWidth: () => Double,
+    onScroll: js.Any => Unit,
+    setHeight: Double => Unit,
+    setInnerHeight: Double => Unit,
+    setScrollTop: Double => Unit
+  ): ScrollBar = {
+    val __obj = js.Dynamic.literal(getWidth = js.Any.fromFunction0(getWidth), onScroll = js.Any.fromFunction1(onScroll), setHeight = js.Any.fromFunction1(setHeight), setInnerHeight = js.Any.fromFunction1(setInnerHeight), setScrollTop = js.Any.fromFunction1(setScrollTop))
+    __obj.asInstanceOf[ScrollBar]
+  }
+}
 

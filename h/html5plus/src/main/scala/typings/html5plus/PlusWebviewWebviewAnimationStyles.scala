@@ -21,7 +21,7 @@ trait PlusWebviewWebviewAnimationStyles extends js.Object {
   /**
     * 画窗口的目标左侧位置
     * 持百分比、像素值。
-    * 	注意：如果设置的位置与起始位置一直，则无动画效果。
+    *     注意：如果设置的位置与起始位置一直，则无动画效果。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */

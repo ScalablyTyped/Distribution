@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ihtmlslotsMod extends js.Object {
   type IHTMLElementSlot[TElement /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = ISlotProp[
-    /* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[TElement] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[TElement] */ js.Any, 
     scala.Nothing
   ]
   type IHTMLSlot = ISlotProp[DetailedHTMLProps[HTMLAttributes[js.Any], js.Any], scala.Nothing]

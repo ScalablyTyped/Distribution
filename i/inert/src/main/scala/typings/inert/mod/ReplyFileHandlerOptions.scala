@@ -56,23 +56,23 @@ object ReplyFileHandlerOptions {
   @scala.inline
   def apply(
     confine: js.UndefOr[Boolean] = js.undefined,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     etagMethod: hash | simple | `false` = null,
     filename: String = null,
     lookupCompressed: js.UndefOr[Boolean] = js.undefined,
     lookupMap: StringDictionary[String] = null,
     mode: `false` | attachment | `inline` = null,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): ReplyFileHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (etagMethod != null) __obj.updateDynamic("etagMethod")(etagMethod.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed.get.asInstanceOf[js.Any])
     if (lookupMap != null) __obj.updateDynamic("lookupMap")(lookupMap.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplyFileHandlerOptions]
   }
 }

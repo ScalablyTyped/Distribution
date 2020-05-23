@@ -10,9 +10,9 @@ trait DrawerMovementOptionType extends js.Object {
 
 object DrawerMovementOptionType {
   @scala.inline
-  def apply(velocity: Int | Double = null): DrawerMovementOptionType = {
+  def apply(velocity: js.UndefOr[Double] = js.undefined): DrawerMovementOptionType = {
     val __obj = js.Dynamic.literal()
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
+    if (!js.isUndefined(velocity)) __obj.updateDynamic("velocity")(velocity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerMovementOptionType]
   }
 }

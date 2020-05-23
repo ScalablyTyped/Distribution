@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object projectMod extends js.Object {
   def project(configFilePath: String): js.Array[SourceFile] = js.native
+  def projectFiles(configFilePath: String): js.Array[String] = js.native
 }
 

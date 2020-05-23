@@ -22,9 +22,13 @@ trait ListResourceSharePermissionsRequest extends js.Object {
 
 object ListResourceSharePermissionsRequest {
   @scala.inline
-  def apply(resourceShareArn: String, maxResults: Int | Double = null, nextToken: String = null): ListResourceSharePermissionsRequest = {
+  def apply(
+    resourceShareArn: String,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    nextToken: String = null
+  ): ListResourceSharePermissionsRequest = {
     val __obj = js.Dynamic.literal(resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceSharePermissionsRequest]
   }

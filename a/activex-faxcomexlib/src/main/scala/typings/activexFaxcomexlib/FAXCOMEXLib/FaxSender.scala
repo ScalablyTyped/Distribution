@@ -5,46 +5,73 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxSender Class */
-@JSGlobal("FAXCOMEXLib.FaxSender")
-@js.native
-class FaxSender protected () extends js.Object {
+trait FaxSender extends js.Object {
   /** Sender's billing code */
-  var BillingCode: String = js.native
+  var BillingCode: String
   /** City */
-  var City: String = js.native
+  var City: String
   /** Sender's company */
-  var Company: String = js.native
+  var Company: String
   /** Sender's country or region */
-  var Country: String = js.native
+  var Country: String
   /** Sender's department */
-  var Department: String = js.native
+  var Department: String
   /** Sender's e-mail address */
-  var Email: String = js.native
+  var Email: String
   @JSName("FAXCOMEXLib.FaxSender_typekey")
-  var FAXCOMEXLibDotFaxSender_typekey: FaxSender = js.native
+  var FAXCOMEXLibDotFaxSender_typekey: FaxSender
   /** Sender's fax number */
-  var FaxNumber: String = js.native
+  var FaxNumber: String
   /** Sender's home phone */
-  var HomePhone: String = js.native
+  var HomePhone: String
   /** Sender's name */
-  var Name: String = js.native
+  var Name: String
   /** Sender's office location */
-  var OfficeLocation: String = js.native
+  var OfficeLocation: String
   /** Sender's office phone */
-  var OfficePhone: String = js.native
+  var OfficePhone: String
   /** Sender's state */
-  var State: String = js.native
+  var State: String
   /** Sender's street address */
-  var StreetAddress: String = js.native
+  var StreetAddress: String
   /** Transmitting Station ID */
-  var TSID: String = js.native
+  var TSID: String
   /** Sender's title */
-  var Title: String = js.native
+  var Title: String
   /** Sender's zip code */
-  var ZipCode: String = js.native
+  var ZipCode: String
   /** Load default sender */
-  def LoadDefaultSender(): Unit = js.native
+  def LoadDefaultSender(): Unit
   /** Save default sender */
-  def SaveDefaultSender(): Unit = js.native
+  def SaveDefaultSender(): Unit
+}
+
+object FaxSender {
+  @scala.inline
+  def apply(
+    BillingCode: String,
+    City: String,
+    Company: String,
+    Country: String,
+    Department: String,
+    Email: String,
+    FAXCOMEXLibDotFaxSender_typekey: FaxSender,
+    FaxNumber: String,
+    HomePhone: String,
+    LoadDefaultSender: () => Unit,
+    Name: String,
+    OfficeLocation: String,
+    OfficePhone: String,
+    SaveDefaultSender: () => Unit,
+    State: String,
+    StreetAddress: String,
+    TSID: String,
+    Title: String,
+    ZipCode: String
+  ): FaxSender = {
+    val __obj = js.Dynamic.literal(BillingCode = BillingCode.asInstanceOf[js.Any], City = City.asInstanceOf[js.Any], Company = Company.asInstanceOf[js.Any], Country = Country.asInstanceOf[js.Any], Department = Department.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], FaxNumber = FaxNumber.asInstanceOf[js.Any], HomePhone = HomePhone.asInstanceOf[js.Any], LoadDefaultSender = js.Any.fromFunction0(LoadDefaultSender), Name = Name.asInstanceOf[js.Any], OfficeLocation = OfficeLocation.asInstanceOf[js.Any], OfficePhone = OfficePhone.asInstanceOf[js.Any], SaveDefaultSender = js.Any.fromFunction0(SaveDefaultSender), State = State.asInstanceOf[js.Any], StreetAddress = StreetAddress.asInstanceOf[js.Any], TSID = TSID.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], ZipCode = ZipCode.asInstanceOf[js.Any])
+    __obj.updateDynamic("FAXCOMEXLib.FaxSender_typekey")(FAXCOMEXLibDotFaxSender_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FaxSender]
+  }
 }
 

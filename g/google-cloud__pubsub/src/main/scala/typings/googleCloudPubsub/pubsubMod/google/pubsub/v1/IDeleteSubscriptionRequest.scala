@@ -12,9 +12,9 @@ trait IDeleteSubscriptionRequest extends js.Object {
 
 object IDeleteSubscriptionRequest {
   @scala.inline
-  def apply(subscription: String = null): IDeleteSubscriptionRequest = {
+  def apply(subscription: js.UndefOr[Null | String] = js.undefined): IDeleteSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteSubscriptionRequest]
   }
 }

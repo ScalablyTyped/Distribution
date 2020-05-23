@@ -51,20 +51,20 @@ object SearchAnalyticsQueryRequest {
     dimensionFilterGroups: js.Array[ApiDimensionFilterGroup] = null,
     dimensions: js.Array[String] = null,
     endDate: String = null,
-    rowLimit: Int | Double = null,
+    rowLimit: js.UndefOr[Double] = js.undefined,
     searchType: String = null,
     startDate: String = null,
-    startRow: Int | Double = null
+    startRow: js.UndefOr[Double] = js.undefined
   ): SearchAnalyticsQueryRequest = {
     val __obj = js.Dynamic.literal()
     if (aggregationType != null) __obj.updateDynamic("aggregationType")(aggregationType.asInstanceOf[js.Any])
     if (dimensionFilterGroups != null) __obj.updateDynamic("dimensionFilterGroups")(dimensionFilterGroups.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (rowLimit != null) __obj.updateDynamic("rowLimit")(rowLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowLimit)) __obj.updateDynamic("rowLimit")(rowLimit.get.asInstanceOf[js.Any])
     if (searchType != null) __obj.updateDynamic("searchType")(searchType.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchAnalyticsQueryRequest]
   }
 }

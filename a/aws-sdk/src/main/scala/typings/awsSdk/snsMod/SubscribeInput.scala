@@ -40,7 +40,7 @@ object SubscribeInput {
     val __obj = js.Dynamic.literal(Protocol = Protocol.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReturnSubscriptionArn)) __obj.updateDynamic("ReturnSubscriptionArn")(ReturnSubscriptionArn.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReturnSubscriptionArn)) __obj.updateDynamic("ReturnSubscriptionArn")(ReturnSubscriptionArn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeInput]
   }
 }

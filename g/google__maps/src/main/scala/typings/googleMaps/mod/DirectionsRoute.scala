@@ -1,6 +1,6 @@
 package typings.googleMaps.mod
 
-import typings.googleMaps.AnonPoints
+import typings.googleMaps.anon.Points
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait DirectionsRoute extends js.Object {
     * contains a single `points` object that holds an encoded polyline representation of the route.
     * This polyline is an approximate (smoothed) path of the resulting directions.
     */
-  var overview_polyline: AnonPoints
+  var overview_polyline: Points
   /** contains a short textual description for the route, suitable for naming and disambiguating the route from alternatives. */
   var summary: String
   /** contains an array of warnings to be displayed when showing these directions. You must handle and display these warnings yourself. */
@@ -54,7 +54,7 @@ object DirectionsRoute {
     fare: TransitFare,
     legs: js.Array[RouteLeg],
     overview_path: js.Array[LatLngLiteral],
-    overview_polyline: AnonPoints,
+    overview_polyline: Points,
     summary: String,
     warnings: js.Array[String],
     waypoint_order: js.Array[Double]

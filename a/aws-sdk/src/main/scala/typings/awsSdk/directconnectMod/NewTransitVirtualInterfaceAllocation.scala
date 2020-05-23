@@ -49,24 +49,24 @@ object NewTransitVirtualInterfaceAllocation {
   def apply(
     addressFamily: AddressFamily = null,
     amazonAddress: AmazonAddress = null,
-    asn: Int | Double = null,
+    asn: js.UndefOr[ASN] = js.undefined,
     authKey: BGPAuthKey = null,
     customerAddress: CustomerAddress = null,
-    mtu: Int | Double = null,
+    mtu: js.UndefOr[MTU] = js.undefined,
     tags: TagList = null,
     virtualInterfaceName: VirtualInterfaceName = null,
-    vlan: Int | Double = null
+    vlan: js.UndefOr[VLAN] = js.undefined
   ): NewTransitVirtualInterfaceAllocation = {
     val __obj = js.Dynamic.literal()
     if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
     if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
-    if (asn != null) __obj.updateDynamic("asn")(asn.asInstanceOf[js.Any])
+    if (!js.isUndefined(asn)) __obj.updateDynamic("asn")(asn.get.asInstanceOf[js.Any])
     if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
-    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (virtualInterfaceName != null) __obj.updateDynamic("virtualInterfaceName")(virtualInterfaceName.asInstanceOf[js.Any])
-    if (vlan != null) __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])
+    if (!js.isUndefined(vlan)) __obj.updateDynamic("vlan")(vlan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewTransitVirtualInterfaceAllocation]
   }
 }

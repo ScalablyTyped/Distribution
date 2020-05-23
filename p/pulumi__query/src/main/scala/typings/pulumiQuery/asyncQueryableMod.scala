@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/query/asyncQueryable", JSImport.Namespace)
 @js.native
 object asyncQueryableMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.pulumiQuery.interfacesMod.AsyncIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.AsyncIterableIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.AsyncQueryable because var conflicts: `return`, `throw`. Inlined filter, flatMap, flatMap, map, skip, skipWhile, take, takeWhile, join, groupJoin, concat, reverse, orderBy, orderByDescending, groupBy, groupBy, distinct, union, intersect, except, first, first, firstOrDefault, firstOrDefault, last, last, lastOrDefault, lastOrDefault, single, single, singleOrDefault, singleOrDefault, elementAt, elementAtOrDefault, elementAtOrDefault, defaultIfEmpty, any, any, all, contains, count, count, sum, sum, min, min, max, max, average, average, aggregate, toArray, toMap, toMap, ofType, forEach, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe */ @js.native
@@ -374,7 +374,7 @@ object asyncQueryableMod extends js.Object {
     def union(second: AsyncQuerySource[TSource]): AsyncQueryable[TSource] = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.pulumiQuery.interfacesMod.AsyncIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.AsyncIterableIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.GroupedAsyncIterableIterator because var conflicts: `return`, `throw`. Inlined key */ @js.native

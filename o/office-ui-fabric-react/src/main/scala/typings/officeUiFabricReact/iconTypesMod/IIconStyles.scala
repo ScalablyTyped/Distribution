@@ -16,10 +16,13 @@ trait IIconStyles extends js.Object {
 
 object IIconStyles {
   @scala.inline
-  def apply(imageContainer: IStyle = null, root: IStyle = null): IIconStyles = {
+  def apply(
+    imageContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
+  ): IIconStyles = {
     val __obj = js.Dynamic.literal()
-    if (imageContainer != null) __obj.updateDynamic("imageContainer")(imageContainer.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageContainer)) __obj.updateDynamic("imageContainer")(imageContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIconStyles]
   }
 }

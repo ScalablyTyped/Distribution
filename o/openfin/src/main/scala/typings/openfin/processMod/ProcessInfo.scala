@@ -23,34 +23,34 @@ trait ProcessInfo extends js.Object {
 object ProcessInfo {
   @scala.inline
   def apply(
-    cpuUsage: Int | Double = null,
+    cpuUsage: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    nonPagedPoolUsage: Int | Double = null,
-    pageFaultCount: Int | Double = null,
-    pagedPoolUsage: Int | Double = null,
-    pagefileUsage: Int | Double = null,
-    peakNonPagedPoolUsage: Int | Double = null,
-    peakPagedPoolUsage: Int | Double = null,
-    peakPagefileUsage: Int | Double = null,
-    peakWorkingSetSize: Int | Double = null,
-    processId: Int | Double = null,
+    nonPagedPoolUsage: js.UndefOr[Double] = js.undefined,
+    pageFaultCount: js.UndefOr[Double] = js.undefined,
+    pagedPoolUsage: js.UndefOr[Double] = js.undefined,
+    pagefileUsage: js.UndefOr[Double] = js.undefined,
+    peakNonPagedPoolUsage: js.UndefOr[Double] = js.undefined,
+    peakPagedPoolUsage: js.UndefOr[Double] = js.undefined,
+    peakPagefileUsage: js.UndefOr[Double] = js.undefined,
+    peakWorkingSetSize: js.UndefOr[Double] = js.undefined,
+    processId: js.UndefOr[Double] = js.undefined,
     uuid: String = null,
-    workingSetSize: Int | Double = null
+    workingSetSize: js.UndefOr[Double] = js.undefined
   ): ProcessInfo = {
     val __obj = js.Dynamic.literal()
-    if (cpuUsage != null) __obj.updateDynamic("cpuUsage")(cpuUsage.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpuUsage)) __obj.updateDynamic("cpuUsage")(cpuUsage.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nonPagedPoolUsage != null) __obj.updateDynamic("nonPagedPoolUsage")(nonPagedPoolUsage.asInstanceOf[js.Any])
-    if (pageFaultCount != null) __obj.updateDynamic("pageFaultCount")(pageFaultCount.asInstanceOf[js.Any])
-    if (pagedPoolUsage != null) __obj.updateDynamic("pagedPoolUsage")(pagedPoolUsage.asInstanceOf[js.Any])
-    if (pagefileUsage != null) __obj.updateDynamic("pagefileUsage")(pagefileUsage.asInstanceOf[js.Any])
-    if (peakNonPagedPoolUsage != null) __obj.updateDynamic("peakNonPagedPoolUsage")(peakNonPagedPoolUsage.asInstanceOf[js.Any])
-    if (peakPagedPoolUsage != null) __obj.updateDynamic("peakPagedPoolUsage")(peakPagedPoolUsage.asInstanceOf[js.Any])
-    if (peakPagefileUsage != null) __obj.updateDynamic("peakPagefileUsage")(peakPagefileUsage.asInstanceOf[js.Any])
-    if (peakWorkingSetSize != null) __obj.updateDynamic("peakWorkingSetSize")(peakWorkingSetSize.asInstanceOf[js.Any])
-    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonPagedPoolUsage)) __obj.updateDynamic("nonPagedPoolUsage")(nonPagedPoolUsage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageFaultCount)) __obj.updateDynamic("pageFaultCount")(pageFaultCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagedPoolUsage)) __obj.updateDynamic("pagedPoolUsage")(pagedPoolUsage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagefileUsage)) __obj.updateDynamic("pagefileUsage")(pagefileUsage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(peakNonPagedPoolUsage)) __obj.updateDynamic("peakNonPagedPoolUsage")(peakNonPagedPoolUsage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(peakPagedPoolUsage)) __obj.updateDynamic("peakPagedPoolUsage")(peakPagedPoolUsage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(peakPagefileUsage)) __obj.updateDynamic("peakPagefileUsage")(peakPagefileUsage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(peakWorkingSetSize)) __obj.updateDynamic("peakWorkingSetSize")(peakWorkingSetSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(processId)) __obj.updateDynamic("processId")(processId.get.asInstanceOf[js.Any])
     if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
-    if (workingSetSize != null) __obj.updateDynamic("workingSetSize")(workingSetSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(workingSetSize)) __obj.updateDynamic("workingSetSize")(workingSetSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessInfo]
   }
 }

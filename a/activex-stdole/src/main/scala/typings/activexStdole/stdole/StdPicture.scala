@@ -4,16 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("stdole.StdPicture")
-@js.native
-class StdPicture protected () extends js.Object {
-  val Handle: Double = js.native
-  val Height: Double = js.native
-  val Type: Double = js.native
-  val Width: Double = js.native
-  val hPal: Double = js.native
+trait StdPicture extends js.Object {
+  val Handle: Double
+  val Height: Double
+  val Type: Double
+  val Width: Double
+  val hPal: Double
   @JSName("stdole.StdPicture_typekey")
-  var stdoleDotStdPicture_typekey: StdPicture = js.native
+  var stdoleDotStdPicture_typekey: StdPicture
   def Render(
     hdc: Double,
     x: Double,
@@ -24,6 +22,23 @@ class StdPicture protected () extends js.Object {
     ySrc: Double,
     cxSrc: Double,
     cySrc: Double
-  ): Unit = js.native
+  ): Unit
+}
+
+object StdPicture {
+  @scala.inline
+  def apply(
+    Handle: Double,
+    Height: Double,
+    Render: (Double, Double, Double, Double, Double, Double, Double, Double, Double) => Unit,
+    Type: Double,
+    Width: Double,
+    hPal: Double,
+    stdoleDotStdPicture_typekey: StdPicture
+  ): StdPicture = {
+    val __obj = js.Dynamic.literal(Handle = Handle.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], Render = js.Any.fromFunction9(Render), Type = Type.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], hPal = hPal.asInstanceOf[js.Any])
+    __obj.updateDynamic("stdole.StdPicture_typekey")(stdoleDotStdPicture_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StdPicture]
+  }
 }
 

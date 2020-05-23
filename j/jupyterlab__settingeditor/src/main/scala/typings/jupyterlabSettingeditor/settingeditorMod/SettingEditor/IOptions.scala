@@ -3,7 +3,7 @@ package typings.jupyterlabSettingeditor.settingeditorMod.SettingEditor
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.Factory
 import typings.jupyterlabCodeeditor.editorMod.CodeEditor.IEditor
 import typings.jupyterlabRendermime.tokensMod.IRenderMimeRegistry
-import typings.jupyterlabSettingeditor.AnonRegistry
+import typings.jupyterlabSettingeditor.anon.Registry
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
 import typings.jupyterlabStatedb.tokensMod.IStateDB
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
@@ -18,7 +18,7 @@ trait IOptions extends js.Object {
   /**
     * The toolbar commands and registry for the setting editor toolbar.
     */
-  var commands: AnonRegistry
+  var commands: Registry
   /**
     * The editor factory used by the setting editor.
     */
@@ -48,7 +48,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(
-    commands: AnonRegistry,
+    commands: Registry,
     editorFactory: /* options */ typings.jupyterlabCodeeditor.editorMod.CodeEditor.IOptions => IEditor,
     key: String,
     registry: ISettingRegistry,

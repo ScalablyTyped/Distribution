@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.ViewManagement
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object ApplicationViewWindowingMode extends js.Object {
   /** The window is sized as specified by the ApplicationView.PreferredLaunchViewSize property. */
   @js.native
   sealed trait preferredLaunchViewSize extends ApplicationViewWindowingMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ApplicationViewWindowingMode with Double] = js.native
-  /* 0 */ @js.native
-  object auto extends TopLevel[auto with Double]
-  
-  /* 2 */ @js.native
-  object fullScreen extends TopLevel[fullScreen with Double]
-  
-  /* 1 */ @js.native
-  object preferredLaunchViewSize extends TopLevel[preferredLaunchViewSize with Double]
   
 }
 

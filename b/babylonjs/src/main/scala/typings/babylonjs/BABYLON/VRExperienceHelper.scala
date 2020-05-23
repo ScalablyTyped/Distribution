@@ -1,26 +1,12 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonMesh
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.VRExperienceHelper")
 @js.native
-class VRExperienceHelper protected () extends js.Object {
-  /**
-    * Instantiates a VRExperienceHelper.
-    * Helps to quickly add VR support to an existing scene.
-    * @param scene The scene the VRExperienceHelper belongs to.
-    * @param webVROptions Options to modify the vr experience helper's behavior.
-    */
-  def this(scene: Scene) = this()
-  def this(
-    scene: Scene,
-    /** Options to modify the vr experience helper's behavior. */
-  webVROptions: VRExperienceHelperOptions
-  ) = this()
+trait VRExperienceHelper extends js.Object {
   var _btnVR: js.Any = js.native
   var _btnVRDisplayed: js.Any = js.native
   var _cachedAngularSensibility: js.Any = js.native
@@ -141,7 +127,7 @@ class VRExperienceHelper protected () extends js.Object {
     * Observable raised when a new mesh is selected based on meshSelectionPredicate.
     * This observable will provide the mesh and the controller used to select the mesh
     */
-  var onMeshSelectedWithController: Observable[AnonMesh] = js.native
+  var onMeshSelectedWithController: Observable[typings.babylonjs.anon.Mesh] = js.native
   /**
     * Observable raised when a new mesh is picked based on meshSelectionPredicate
     */
@@ -355,19 +341,5 @@ class VRExperienceHelper protected () extends js.Object {
     * The webVRCamera which is used when in VR.
     */
   def webVRCamera: WebVRFreeCamera = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.VRExperienceHelper")
-@js.native
-object VRExperienceHelper extends js.Object {
-  /**
-    * Speed Constant Teleportation Mode
-    */
-  val TELEPORTATIONMODE_CONSTANTSPEED: Double = js.native
-  /**
-    * Time Constant Teleportation Mode
-    */
-  val TELEPORTATIONMODE_CONSTANTTIME: Double = js.native
 }
 

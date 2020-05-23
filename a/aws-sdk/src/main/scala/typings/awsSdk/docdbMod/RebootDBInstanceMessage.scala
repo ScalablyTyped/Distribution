@@ -18,9 +18,9 @@ trait RebootDBInstanceMessage extends js.Object {
 
 object RebootDBInstanceMessage {
   @scala.inline
-  def apply(DBInstanceIdentifier: String, ForceFailover: js.UndefOr[scala.Boolean] = js.undefined): RebootDBInstanceMessage = {
+  def apply(DBInstanceIdentifier: String, ForceFailover: js.UndefOr[BooleanOptional] = js.undefined): RebootDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceFailover)) __obj.updateDynamic("ForceFailover")(ForceFailover.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceFailover)) __obj.updateDynamic("ForceFailover")(ForceFailover.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebootDBInstanceMessage]
   }
 }

@@ -18,9 +18,9 @@ object CloneEntityObjectConfigData {
     shareGeometry: js.UndefOr[Boolean] = js.undefined
   ): CloneEntityObjectConfigData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cloneChildren)) __obj.updateDynamic("cloneChildren")(cloneChildren.asInstanceOf[js.Any])
-    if (!js.isUndefined(cloneGeometry)) __obj.updateDynamic("cloneGeometry")(cloneGeometry.asInstanceOf[js.Any])
-    if (!js.isUndefined(shareGeometry)) __obj.updateDynamic("shareGeometry")(shareGeometry.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloneChildren)) __obj.updateDynamic("cloneChildren")(cloneChildren.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloneGeometry)) __obj.updateDynamic("cloneGeometry")(cloneGeometry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shareGeometry)) __obj.updateDynamic("shareGeometry")(shareGeometry.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloneEntityObjectConfigData]
   }
 }

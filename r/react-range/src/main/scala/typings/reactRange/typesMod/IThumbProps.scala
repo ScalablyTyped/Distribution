@@ -35,13 +35,13 @@ object IThumbProps {
     ref: RefObject[_],
     role: String,
     style: CSSProperties,
-    tabIndex: Int | Double = null
+    tabIndex: js.UndefOr[Double] = js.undefined
   ): IThumbProps = {
     val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onKeyDown = js.Any.fromFunction1(onKeyDown), onKeyUp = js.Any.fromFunction1(onKeyUp), ref = ref.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThumbProps]
   }
 }

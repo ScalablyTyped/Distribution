@@ -50,33 +50,33 @@ object Options {
     fileLoggerParameters: String = null,
     logCommand: js.UndefOr[Boolean] = js.undefined,
     loggerParameters: String = null,
-    maxcpucount: Int | Double = null,
+    maxcpucount: js.UndefOr[Double] = js.undefined,
     nodeReuse: js.UndefOr[Boolean] = js.undefined,
     nologo: js.UndefOr[Boolean] = js.undefined,
     properties: js.Any = null,
     stderr: js.UndefOr[Boolean] = js.undefined,
     stdout: js.UndefOr[Boolean] = js.undefined,
     targets: js.Array[String] = null,
-    toolsVersion: Int | Double = null,
+    toolsVersion: js.UndefOr[Double] = js.undefined,
     verbosity: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (architecture != null) __obj.updateDynamic("architecture")(architecture.asInstanceOf[js.Any])
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     if (consoleLoggerParameters != null) __obj.updateDynamic("consoleLoggerParameters")(consoleLoggerParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitEndEvent)) __obj.updateDynamic("emitEndEvent")(emitEndEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorOnFail)) __obj.updateDynamic("errorOnFail")(errorOnFail.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitEndEvent)) __obj.updateDynamic("emitEndEvent")(emitEndEvent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorOnFail)) __obj.updateDynamic("errorOnFail")(errorOnFail.get.asInstanceOf[js.Any])
     if (fileLoggerParameters != null) __obj.updateDynamic("fileLoggerParameters")(fileLoggerParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(logCommand)) __obj.updateDynamic("logCommand")(logCommand.asInstanceOf[js.Any])
+    if (!js.isUndefined(logCommand)) __obj.updateDynamic("logCommand")(logCommand.get.asInstanceOf[js.Any])
     if (loggerParameters != null) __obj.updateDynamic("loggerParameters")(loggerParameters.asInstanceOf[js.Any])
-    if (maxcpucount != null) __obj.updateDynamic("maxcpucount")(maxcpucount.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeReuse)) __obj.updateDynamic("nodeReuse")(nodeReuse.asInstanceOf[js.Any])
-    if (!js.isUndefined(nologo)) __obj.updateDynamic("nologo")(nologo.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxcpucount)) __obj.updateDynamic("maxcpucount")(maxcpucount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeReuse)) __obj.updateDynamic("nodeReuse")(nodeReuse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nologo)) __obj.updateDynamic("nologo")(nologo.get.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
+    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.get.asInstanceOf[js.Any])
     if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
-    if (toolsVersion != null) __obj.updateDynamic("toolsVersion")(toolsVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolsVersion)) __obj.updateDynamic("toolsVersion")(toolsVersion.get.asInstanceOf[js.Any])
     if (verbosity != null) __obj.updateDynamic("verbosity")(verbosity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

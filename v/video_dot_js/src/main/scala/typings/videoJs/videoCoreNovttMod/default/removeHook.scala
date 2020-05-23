@@ -16,7 +16,7 @@ object removeHook extends js.Object {
     * @param fn
     *        The hooked function to remove
     *
-    * @return	The function that was removed or undef
+    * @return    The function that was removed or undef
     */
   def apply(`type`: String, fn: js.Function0[_]): Boolean = js.native
 }

@@ -36,13 +36,13 @@ object KeyboardNavigationFocusBorderOptionsObject {
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
     hideBrowserFocusOutline: js.UndefOr[Boolean] = js.undefined,
-    margin: Int | Double = null,
+    margin: js.UndefOr[Double] = js.undefined,
     style: CSSObject = null
   ): KeyboardNavigationFocusBorderOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideBrowserFocusOutline)) __obj.updateDynamic("hideBrowserFocusOutline")(hideBrowserFocusOutline.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideBrowserFocusOutline)) __obj.updateDynamic("hideBrowserFocusOutline")(hideBrowserFocusOutline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardNavigationFocusBorderOptionsObject]
   }

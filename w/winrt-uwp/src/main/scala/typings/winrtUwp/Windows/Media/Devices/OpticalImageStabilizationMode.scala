@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object OpticalImageStabilizationMode extends js.Object {
   /** Optical image stabilization is enabled. */
   @js.native
   sealed trait on extends OpticalImageStabilizationMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OpticalImageStabilizationMode with Double] = js.native
-  /* 2 */ @js.native
-  object auto extends TopLevel[auto with Double]
-  
-  /* 0 */ @js.native
-  object off extends TopLevel[off with Double]
-  
-  /* 1 */ @js.native
-  object on extends TopLevel[on with Double]
   
 }
 

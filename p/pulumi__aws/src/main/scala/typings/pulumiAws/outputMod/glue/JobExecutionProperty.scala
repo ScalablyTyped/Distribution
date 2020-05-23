@@ -14,9 +14,9 @@ trait JobExecutionProperty extends js.Object {
 
 object JobExecutionProperty {
   @scala.inline
-  def apply(maxConcurrentRuns: Int | Double = null): JobExecutionProperty = {
+  def apply(maxConcurrentRuns: js.UndefOr[Double] = js.undefined): JobExecutionProperty = {
     val __obj = js.Dynamic.literal()
-    if (maxConcurrentRuns != null) __obj.updateDynamic("maxConcurrentRuns")(maxConcurrentRuns.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentRuns)) __obj.updateDynamic("maxConcurrentRuns")(maxConcurrentRuns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionProperty]
   }
 }

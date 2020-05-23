@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,65 +86,6 @@ object EasRequireEncryptionResult extends js.Object {
   /** An unexpected failure occurred. */
   @js.native
   sealed trait unexpectedFailure extends EasRequireEncryptionResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EasRequireEncryptionResult with Double] = js.native
-  /* 2 */ @js.native
-  object canBeCompliant extends TopLevel[canBeCompliant with Double]
-  
-  /* 1 */ @js.native
-  object compliant extends TopLevel[compliant with Double]
-  
-  /* 4 */ @js.native
-  object deFixedDataNotSupported extends TopLevel[deFixedDataNotSupported with Double]
-  
-  /* 6 */ @js.native
-  object deHardwareNotCompliant extends TopLevel[deHardwareNotCompliant with Double]
-  
-  /* 12 */ @js.native
-  object deOsVolumeNotProtected extends TopLevel[deOsVolumeNotProtected with Double]
-  
-  /* 14 */ @js.native
-  object deProtectionNotYetEnabled extends TopLevel[deProtectionNotYetEnabled with Double]
-  
-  /* 10 */ @js.native
-  object deProtectionSuspended extends TopLevel[deProtectionSuspended with Double]
-  
-  /* 8 */ @js.native
-  object deWinReNotConfigured extends TopLevel[deWinReNotConfigured with Double]
-  
-  /* 5 */ @js.native
-  object fixedDataNotSupported extends TopLevel[fixedDataNotSupported with Double]
-  
-  /* 7 */ @js.native
-  object hardwareNotCompliant extends TopLevel[hardwareNotCompliant with Double]
-  
-  /* 9 */ @js.native
-  object lockNotConfigured extends TopLevel[lockNotConfigured with Double]
-  
-  /* 16 */ @js.native
-  object noFeatureLicense extends TopLevel[noFeatureLicense with Double]
-  
-  /* 0 */ @js.native
-  object notEvaluated extends TopLevel[notEvaluated with Double]
-  
-  /* 3 */ @js.native
-  object notProvisionedOnAllVolumes extends TopLevel[notProvisionedOnAllVolumes with Double]
-  
-  /* 17 */ @js.native
-  object osNotProtected extends TopLevel[osNotProtected with Double]
-  
-  /* 13 */ @js.native
-  object osVolumeNotProtected extends TopLevel[osVolumeNotProtected with Double]
-  
-  /* 15 */ @js.native
-  object protectionNotYetEnabled extends TopLevel[protectionNotYetEnabled with Double]
-  
-  /* 11 */ @js.native
-  object protectionSuspended extends TopLevel[protectionSuspended with Double]
-  
-  /* 18 */ @js.native
-  object unexpectedFailure extends TopLevel[unexpectedFailure with Double]
   
 }
 

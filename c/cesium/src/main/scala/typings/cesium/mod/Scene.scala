@@ -1,7 +1,7 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonContextOptions
-import typings.std.Element
+import typings.cesium.anon.ContextOptions
+import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "Scene")
 @js.native
 class Scene () extends js.Object {
-  def this(options: AnonContextOptions) = this()
+  def this(options: ContextOptions) = this()
   var backgroundColor: Color = js.native
   val camera: Camera = js.native
-  val canvas: Element = js.native
+  val canvas: HTMLCanvasElement = js.native
   var completeMorphOnUserInput: Boolean = js.native
   val debugFrustumStatistics: js.Any = js.native
   var debugShowCommands: Boolean = js.native

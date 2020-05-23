@@ -28,15 +28,15 @@ object InstanceRecommendationOption {
   @scala.inline
   def apply(
     instanceType: InstanceType = null,
-    performanceRisk: Int | Double = null,
+    performanceRisk: js.UndefOr[PerformanceRisk] = js.undefined,
     projectedUtilizationMetrics: ProjectedUtilizationMetrics = null,
-    rank: Int | Double = null
+    rank: js.UndefOr[Rank] = js.undefined
   ): InstanceRecommendationOption = {
     val __obj = js.Dynamic.literal()
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (performanceRisk != null) __obj.updateDynamic("performanceRisk")(performanceRisk.asInstanceOf[js.Any])
+    if (!js.isUndefined(performanceRisk)) __obj.updateDynamic("performanceRisk")(performanceRisk.get.asInstanceOf[js.Any])
     if (projectedUtilizationMetrics != null) __obj.updateDynamic("projectedUtilizationMetrics")(projectedUtilizationMetrics.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceRecommendationOption]
   }
 }

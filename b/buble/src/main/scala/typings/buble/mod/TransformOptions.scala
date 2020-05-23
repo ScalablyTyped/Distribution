@@ -1,7 +1,7 @@
 package typings.buble.mod
 
-import typings.buble.AnonArrow
-import typings.buble.AnonChrome
+import typings.buble.anon.Arrow
+import typings.buble.anon.Chrome
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +21,9 @@ trait TransformOptions extends js.Object {
   // used for sourcemaps
   var source: js.UndefOr[String] = js.undefined
   // source: https://github.com/Rich-Harris/buble/blob/master/src/support.js
-  var target: js.UndefOr[AnonChrome] = js.undefined
+  var target: js.UndefOr[Chrome] = js.undefined
   // transforms
-  var transforms: js.UndefOr[AnonArrow] = js.undefined
+  var transforms: js.UndefOr[Arrow] = js.undefined
 }
 
 object TransformOptions {
@@ -35,14 +35,14 @@ object TransformOptions {
     namedFunctionExpressions: js.UndefOr[Boolean] = js.undefined,
     objectAssign: String | Boolean = null,
     source: String = null,
-    target: AnonChrome = null,
-    transforms: AnonArrow = null
+    target: Chrome = null,
+    transforms: Arrow = null
   ): TransformOptions = {
     val __obj = js.Dynamic.literal()
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeContent)) __obj.updateDynamic("includeContent")(includeContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeContent)) __obj.updateDynamic("includeContent")(includeContent.get.asInstanceOf[js.Any])
     if (jsx != null) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
-    if (!js.isUndefined(namedFunctionExpressions)) __obj.updateDynamic("namedFunctionExpressions")(namedFunctionExpressions.asInstanceOf[js.Any])
+    if (!js.isUndefined(namedFunctionExpressions)) __obj.updateDynamic("namedFunctionExpressions")(namedFunctionExpressions.get.asInstanceOf[js.Any])
     if (objectAssign != null) __obj.updateDynamic("objectAssign")(objectAssign.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

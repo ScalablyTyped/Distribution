@@ -23,18 +23,18 @@ object LinuxUserView {
   @scala.inline
   def apply(
     gecos: String = null,
-    gid: Int | Double = null,
+    gid: js.UndefOr[Double] = js.undefined,
     homeDirectory: String = null,
     shell: String = null,
-    uid: Int | Double = null,
+    uid: js.UndefOr[Double] = js.undefined,
     username: String = null
   ): LinuxUserView = {
     val __obj = js.Dynamic.literal()
     if (gecos != null) __obj.updateDynamic("gecos")(gecos.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
     if (homeDirectory != null) __obj.updateDynamic("homeDirectory")(homeDirectory.asInstanceOf[js.Any])
     if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinuxUserView]
   }

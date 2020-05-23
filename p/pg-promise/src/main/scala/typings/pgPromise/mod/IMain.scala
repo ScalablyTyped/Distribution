@@ -3,9 +3,9 @@ package typings.pgPromise.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.pgMinify.mod.IMinifyOptions
-import typings.pgPromise.AnonCall
-import typings.pgPromise.Typeoferrors
-import typings.pgPromise.Typeofpg
+import typings.pgPromise.anon.Call
+import typings.pgPromise.anon.Typeoferrors
+import typings.pgPromise.anon.Typeofpg
 import typings.pgPromise.pgSubsetMod.IClient
 import typings.pgPromise.pgSubsetMod.IConnectionParameters
 import typings.spex.mod.ISpex
@@ -35,7 +35,7 @@ trait IMain[Ext, C /* <: IClient */] extends js.Object {
   val errors: Typeoferrors = js.native
   val helpers: IHelpers = js.native
   @JSName("minify")
-  val minify_Original: AnonCall = js.native
+  val minify_Original: Call = js.native
   val pg: Typeofpg = js.native
   val queryResult: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof queryResult */ js.Any = js.native
   val spex: ISpex = js.native

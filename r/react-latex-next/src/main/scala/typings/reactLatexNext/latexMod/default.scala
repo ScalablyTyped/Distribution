@@ -1,6 +1,6 @@
 package typings.reactLatexNext.latexMod
 
-import typings.reactLatexNext.PartialLatexProps
+import typings.reactLatexNext.anon.PartialLatexProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

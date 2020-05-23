@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.feet_
 import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
@@ -34,8 +33,4 @@ trait GeneralizeParameters
     */
   var maxDeviation: Double = js.native
 }
-
-@JSGlobal("__esri.GeneralizeParameters")
-@js.native
-object GeneralizeParameters extends TopLevel[GeneralizeParametersConstructor]
 

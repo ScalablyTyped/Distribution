@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.DisplayFormat")
 @js.native
-class DisplayFormat protected () extends js.Object {
+trait DisplayFormat extends js.Object {
   val AddIndent: Boolean | Null = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   @JSName("Borders")

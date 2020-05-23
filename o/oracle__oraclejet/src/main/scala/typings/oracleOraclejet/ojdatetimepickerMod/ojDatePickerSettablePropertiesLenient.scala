@@ -1,13 +1,13 @@
 package typings.oracleOraclejet.ojdatetimepickerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonChangeMonth
-import typings.oracleOraclejet.AnonClass
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonCurrentText
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonDisabled
-import typings.oracleOraclejet.AnonInstruction
+import typings.oracleOraclejet.anon.ChangeMonth
+import typings.oracleOraclejet.anon.Class
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.CurrentText
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.Disabled
+import typings.oracleOraclejet.anon.Instruction
 import typings.oracleOraclejet.ojdatetimepickerMod.ojInputDate.DayFormatterInput
 import typings.oracleOraclejet.ojdatetimepickerMod.ojInputDate.DayFormatterOutput
 import typings.oracleOraclejet.ojmessagingMod.^
@@ -36,26 +36,26 @@ trait ojDatePickerSettablePropertiesLenient
   var autocomplete: js.UndefOr[on | off | String] = js.undefined
   var autofocus: js.UndefOr[Boolean] = js.undefined
   var converter: js.UndefOr[Converter[String] | RegisteredConverter] = js.undefined
-  var datePicker: js.UndefOr[AnonChangeMonth] = js.undefined
+  var datePicker: js.UndefOr[ChangeMonth] = js.undefined
   var dayFormatter: js.UndefOr[js.Function1[/* param */ DayFormatterInput, Null | all | DayFormatterOutput]] = js.undefined
-  var dayMetaData: js.UndefOr[StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]]] = js.undefined
+  var dayMetaData: js.UndefOr[StringDictionary[StringDictionary[StringDictionary[Disabled]]]] = js.undefined
   var describedBy: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var displayOptions: js.UndefOr[AnonConverterHint] = js.undefined
-  var help: js.UndefOr[AnonInstruction] = js.undefined
-  var helpHints: js.UndefOr[AnonDefinition] = js.undefined
+  var displayOptions: js.UndefOr[ConverterHint] = js.undefined
+  var help: js.UndefOr[Instruction] = js.undefined
+  var helpHints: js.UndefOr[Definition] = js.undefined
   var keyboardEdit: js.UndefOr[disabled] = js.undefined
   var labelHint: js.UndefOr[String] = js.undefined
   var max: js.UndefOr[String] = js.undefined
   var messagesCustom: js.UndefOr[js.Array[^]] = js.undefined
   var min: js.UndefOr[String] = js.undefined
-  var pickerAttributes: js.UndefOr[AnonClass] = js.undefined
+  var pickerAttributes: js.UndefOr[Class] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var rawValue: js.UndefOr[String] = js.undefined
   var readonly: js.UndefOr[Boolean] = js.undefined
   var renderMode: js.UndefOr[jet] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
-  var translations: js.UndefOr[AnonCurrentText] = js.undefined
+  var translations: js.UndefOr[CurrentText] = js.undefined
   var valid: js.UndefOr[
     typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
   ] = js.undefined
@@ -66,31 +66,31 @@ trait ojDatePickerSettablePropertiesLenient
 object ojDatePickerSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     asyncValidators: js.Array[AsyncValidator[String]] = null,
     autocomplete: on | off | String = null,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     converter: Converter[String] | RegisteredConverter = null,
-    datePicker: AnonChangeMonth = null,
+    datePicker: ChangeMonth = null,
     dayFormatter: /* param */ DayFormatterInput => Null | all | DayFormatterOutput = null,
-    dayMetaData: StringDictionary[StringDictionary[StringDictionary[AnonDisabled]]] = null,
+    dayMetaData: StringDictionary[StringDictionary[StringDictionary[Disabled]]] = null,
     describedBy: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    displayOptions: AnonConverterHint = null,
-    help: AnonInstruction = null,
-    helpHints: AnonDefinition = null,
+    displayOptions: ConverterHint = null,
+    help: Instruction = null,
+    helpHints: Definition = null,
     keyboardEdit: disabled = null,
     labelHint: String = null,
     max: String = null,
     messagesCustom: js.Array[^] = null,
     min: String = null,
-    pickerAttributes: AnonClass = null,
+    pickerAttributes: Class = null,
     placeholder: String = null,
     rawValue: String = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
     renderMode: jet = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    translations: AnonCurrentText = null,
+    translations: CurrentText = null,
     valid: valid | pending | invalidHidden | invalidShown = null,
     validators: js.Array[Validator[String] | RegisteredValidator] = null,
     value: String = null
@@ -99,13 +99,13 @@ object ojDatePickerSettablePropertiesLenient {
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators.asInstanceOf[js.Any])
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
     if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
     if (datePicker != null) __obj.updateDynamic("datePicker")(datePicker.asInstanceOf[js.Any])
     if (dayFormatter != null) __obj.updateDynamic("dayFormatter")(js.Any.fromFunction1(dayFormatter))
     if (dayMetaData != null) __obj.updateDynamic("dayMetaData")(dayMetaData.asInstanceOf[js.Any])
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (helpHints != null) __obj.updateDynamic("helpHints")(helpHints.asInstanceOf[js.Any])
@@ -117,9 +117,9 @@ object ojDatePickerSettablePropertiesLenient {
     if (pickerAttributes != null) __obj.updateDynamic("pickerAttributes")(pickerAttributes.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     if (valid != null) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])

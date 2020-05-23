@@ -6,24 +6,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Search.SearchSuggestionCollection")
-@js.native
-class SearchSuggestionCollection () extends ISearchSuggestionCollection {
-  /* CompleteClass */
-  override var size: Double = js.native
-  /* CompleteClass */
-  override def appendQuerySuggestion(text: String): Unit = js.native
-  /* CompleteClass */
-  override def appendQuerySuggestions(suggestions: IIterable[String]): Unit = js.native
-  /* CompleteClass */
-  override def appendResultSuggestion(
-    text: String,
-    detailText: String,
-    tag: String,
-    image: IRandomAccessStreamReference,
-    imageAlternateText: String
-  ): Unit = js.native
-  /* CompleteClass */
-  override def appendSearchSeparator(label: String): Unit = js.native
+trait SearchSuggestionCollection extends ISearchSuggestionCollection
+
+object SearchSuggestionCollection {
+  @scala.inline
+  def apply(
+    appendQuerySuggestion: String => Unit,
+    appendQuerySuggestions: IIterable[String] => Unit,
+    appendResultSuggestion: (String, String, String, IRandomAccessStreamReference, String) => Unit,
+    appendSearchSeparator: String => Unit,
+    size: Double
+  ): SearchSuggestionCollection = {
+    val __obj = js.Dynamic.literal(appendQuerySuggestion = js.Any.fromFunction1(appendQuerySuggestion), appendQuerySuggestions = js.Any.fromFunction1(appendQuerySuggestions), appendResultSuggestion = js.Any.fromFunction5(appendResultSuggestion), appendSearchSeparator = js.Any.fromFunction1(appendSearchSeparator), size = size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchSuggestionCollection]
+  }
 }
 

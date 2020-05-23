@@ -21,21 +21,21 @@ object Options {
   def apply(
     uploadDir: String | StringDictionary[String],
     accepts: js.Array[String] = null,
-    chunkSize: Int | Double = null,
-    maxFileSize: Int | Double = null,
+    chunkSize: js.UndefOr[Double] = js.undefined,
+    maxFileSize: js.UndefOr[Double] = js.undefined,
     overwrite: js.UndefOr[Boolean] = js.undefined,
     rename: (/* fileName */ String, /* fileInfo */ FileInfo) => String = null,
     resume: js.UndefOr[Boolean] = js.undefined,
-    transmissionDelay: Int | Double = null
+    transmissionDelay: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(uploadDir = uploadDir.asInstanceOf[js.Any])
     if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
     if (rename != null) __obj.updateDynamic("rename")(js.Any.fromFunction2(rename))
-    if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume.asInstanceOf[js.Any])
-    if (transmissionDelay != null) __obj.updateDynamic("transmissionDelay")(transmissionDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transmissionDelay)) __obj.updateDynamic("transmissionDelay")(transmissionDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

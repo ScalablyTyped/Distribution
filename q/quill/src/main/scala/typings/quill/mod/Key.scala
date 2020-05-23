@@ -13,7 +13,7 @@ object Key {
   @scala.inline
   def apply(key: String | Double, shortKey: js.UndefOr[Boolean] = js.undefined): Key = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (!js.isUndefined(shortKey)) __obj.updateDynamic("shortKey")(shortKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortKey)) __obj.updateDynamic("shortKey")(shortKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
 }

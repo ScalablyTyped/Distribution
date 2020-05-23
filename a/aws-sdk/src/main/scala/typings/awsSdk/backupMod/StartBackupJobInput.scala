@@ -11,7 +11,7 @@ trait StartBackupJobInput extends js.Object {
     */
   var BackupVaultName: typings.awsSdk.backupMod.BackupVaultName = js.native
   /**
-    * The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
+    * A value in minutes after a backup job is successfully started before it must be completed or it will be canceled by AWS Backup. This value is optional.
     */
   var CompleteWindowMinutes: js.UndefOr[WindowMinutes] = js.native
   /**
@@ -35,7 +35,7 @@ trait StartBackupJobInput extends js.Object {
     */
   var ResourceArn: ARN = js.native
   /**
-    * The amount of time in minutes before beginning a backup.
+    * A value in minutes after a backup is scheduled before a job will be canceled if it doesn't start successfully. This value is optional.
     */
   var StartWindowMinutes: js.UndefOr[WindowMinutes] = js.native
 }
@@ -46,18 +46,18 @@ object StartBackupJobInput {
     BackupVaultName: BackupVaultName,
     IamRoleArn: IAMRoleArn,
     ResourceArn: ARN,
-    CompleteWindowMinutes: Int | Double = null,
+    CompleteWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined,
     IdempotencyToken: String = null,
     Lifecycle: Lifecycle = null,
     RecoveryPointTags: Tags = null,
-    StartWindowMinutes: Int | Double = null
+    StartWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined
   ): StartBackupJobInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any], IamRoleArn = IamRoleArn.asInstanceOf[js.Any], ResourceArn = ResourceArn.asInstanceOf[js.Any])
-    if (CompleteWindowMinutes != null) __obj.updateDynamic("CompleteWindowMinutes")(CompleteWindowMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(CompleteWindowMinutes)) __obj.updateDynamic("CompleteWindowMinutes")(CompleteWindowMinutes.get.asInstanceOf[js.Any])
     if (IdempotencyToken != null) __obj.updateDynamic("IdempotencyToken")(IdempotencyToken.asInstanceOf[js.Any])
     if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
     if (RecoveryPointTags != null) __obj.updateDynamic("RecoveryPointTags")(RecoveryPointTags.asInstanceOf[js.Any])
-    if (StartWindowMinutes != null) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(StartWindowMinutes)) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartBackupJobInput]
   }
 }

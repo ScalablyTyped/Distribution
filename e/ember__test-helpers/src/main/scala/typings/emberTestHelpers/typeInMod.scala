@@ -1,5 +1,6 @@
 package typings.emberTestHelpers
 
+import typings.emberTestHelpers.anon.Delay
 import typings.emberTestHelpers.mod.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object typeInMod extends js.Object {
   def default(target: Target, text: String): js.Promise[Unit] = js.native
-  def default(target: Target, text: String, options: AnonDelay): js.Promise[Unit] = js.native
+  def default(target: Target, text: String, options: Delay): js.Promise[Unit] = js.native
 }
 

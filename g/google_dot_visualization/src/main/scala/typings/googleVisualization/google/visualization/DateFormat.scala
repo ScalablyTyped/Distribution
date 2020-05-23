@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.visualization.DateFormat")
-@js.native
-class DateFormat protected () extends DefaultFormatter {
-  def this(options: DateFormatOptions) = this()
+trait DateFormat extends DefaultFormatter {
   /**
     * Returns the formatted value of a given value. This method does not require a DataTable.
     */
-  def formatValue(value: Date): String = js.native
+  def formatValue(value: Date): String
+}
+
+object DateFormat {
+  @scala.inline
+  def apply(format: (DataTable, Double) => Unit, formatValue: Date => String): DateFormat = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), formatValue = js.Any.fromFunction1(formatValue))
+    __obj.asInstanceOf[DateFormat]
+  }
 }
 

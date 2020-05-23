@@ -110,7 +110,7 @@ object Config_ {
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (issuePrefixes != null) __obj.updateDynamic("issuePrefixes")(issuePrefixes.asInstanceOf[js.Any])
     if (issueUrlFormat != null) __obj.updateDynamic("issueUrlFormat")(issueUrlFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(preMajor)) __obj.updateDynamic("preMajor")(preMajor.asInstanceOf[js.Any])
+    if (!js.isUndefined(preMajor)) __obj.updateDynamic("preMajor")(preMajor.get.asInstanceOf[js.Any])
     if (releaseCommitMessageFormat != null) __obj.updateDynamic("releaseCommitMessageFormat")(releaseCommitMessageFormat.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     if (userUrlFormat != null) __obj.updateDynamic("userUrlFormat")(userUrlFormat.asInstanceOf[js.Any])

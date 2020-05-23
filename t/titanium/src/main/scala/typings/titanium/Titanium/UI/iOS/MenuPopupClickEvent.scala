@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired when the user clicks at one of the menu popup items.
-			 */
+  * Fired when the user clicks at one of the menu popup items.
+  */
 trait MenuPopupClickEvent extends MenuPopupBaseEvent {
   /**
-  				 * The index of the clicked item.
-  				 */
+    * The index of the clicked item.
+    */
   var index: Double
   /**
-  				 * The title of the clicked item.
-  				 */
+    * The title of the clicked item.
+    */
   var title: String
 }
 

@@ -65,7 +65,7 @@ trait MapDataConfig extends js.Object {
     */
   var tileWidth: js.UndefOr[Double] = js.undefined
   /**
-    * [description]
+    * Array of Tile instances.
     */
   var tiles: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -90,45 +90,45 @@ object MapDataConfig {
   @scala.inline
   def apply(
     collision: js.Object = null,
-    format: Int | Double = null,
-    height: Int | Double = null,
-    heightInPixels: Int | Double = null,
+    format: js.UndefOr[integer] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
+    heightInPixels: js.UndefOr[Double] = js.undefined,
     imageCollections: js.Array[_] = null,
     images: js.Array[_] = null,
     layers: js.Array[LayerData] = null,
     name: String = null,
     objects: js.Object = null,
     orientation: String = null,
-    properties: Int | Double = null,
+    properties: js.UndefOr[Double] = js.undefined,
     renderOrder: String = null,
-    tileHeight: Int | Double = null,
-    tileWidth: Int | Double = null,
+    tileHeight: js.UndefOr[Double] = js.undefined,
+    tileWidth: js.UndefOr[Double] = js.undefined,
     tiles: js.Array[_] = null,
     tilesets: js.Array[Tileset] = null,
-    version: Int | Double = null,
-    width: Int | Double = null,
-    widthInPixels: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
+    widthInPixels: js.UndefOr[Double] = js.undefined
   ): MapDataConfig = {
     val __obj = js.Dynamic.literal()
     if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (heightInPixels != null) __obj.updateDynamic("heightInPixels")(heightInPixels.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightInPixels)) __obj.updateDynamic("heightInPixels")(heightInPixels.get.asInstanceOf[js.Any])
     if (imageCollections != null) __obj.updateDynamic("imageCollections")(imageCollections.asInstanceOf[js.Any])
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (objects != null) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(properties)) __obj.updateDynamic("properties")(properties.get.asInstanceOf[js.Any])
     if (renderOrder != null) __obj.updateDynamic("renderOrder")(renderOrder.asInstanceOf[js.Any])
-    if (tileHeight != null) __obj.updateDynamic("tileHeight")(tileHeight.asInstanceOf[js.Any])
-    if (tileWidth != null) __obj.updateDynamic("tileWidth")(tileWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileHeight)) __obj.updateDynamic("tileHeight")(tileHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileWidth)) __obj.updateDynamic("tileWidth")(tileWidth.get.asInstanceOf[js.Any])
     if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
     if (tilesets != null) __obj.updateDynamic("tilesets")(tilesets.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (widthInPixels != null) __obj.updateDynamic("widthInPixels")(widthInPixels.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthInPixels)) __obj.updateDynamic("widthInPixels")(widthInPixels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapDataConfig]
   }
 }

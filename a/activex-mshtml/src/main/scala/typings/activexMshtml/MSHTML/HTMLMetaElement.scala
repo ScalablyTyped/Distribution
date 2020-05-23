@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLMetaElement")
 @js.native
-class HTMLMetaElement protected () extends js.Object {
+trait HTMLMetaElement extends js.Object {
   @JSName("MSHTML.HTMLMetaElement_typekey")
   var MSHTMLDotHTMLMetaElement_typekey: HTMLMetaElement = js.native
   var accessKey: String = js.native

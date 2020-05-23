@@ -1,6 +1,6 @@
 package typings.otplibCore.totpMod
 
-import typings.otplibCore.AnonSecret
+import typings.otplibCore.anon.Secret
 import typings.otplibCore.hotpMod.HOTP
 import typings.otplibCore.utilsMod.SecretKey
 import scala.scalajs.js
@@ -43,6 +43,6 @@ class TOTP[T /* <: TOTPOptions_[String] */] () extends HOTP[T] {
   /**
     * Same as [[check]] but accepts a single object based argument.
     */
-  def verify(opts: AnonSecret): Boolean = js.native
+  def verify(opts: Secret): Boolean = js.native
 }
 

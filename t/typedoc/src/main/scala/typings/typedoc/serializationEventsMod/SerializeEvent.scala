@@ -1,6 +1,6 @@
 package typings.typedoc.serializationEventsMod
 
-import typings.typedoc.PartialProjectReflection
+import typings.typedoc.anon.PartialProjectReflection
 import typings.typedoc.modelsMod.ProjectReflection
 import typings.typedoc.utilsEventsMod.Event
 import scala.scalajs.js

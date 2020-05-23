@@ -19,7 +19,7 @@ trait Component[P /* <: ComponentProps */] extends js.Object {
 
 object Component {
   @scala.inline
-  def apply[P /* <: ComponentProps */](
+  def apply[P](
     mount: (P, js.Array[VNode]) => Element,
     patch: (Element, P, P, js.Array[VNode], js.Array[VNode]) => Element,
     unmount: Element => Unit

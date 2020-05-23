@@ -1,7 +1,7 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.AnonBottom
-import typings.devextreme.AnonFontOffset
+import typings.devextreme.anon.Bottom
+import typings.devextreme.anon.FontOffset
 import typings.devextreme.devextremeStrings.bottom
 import typings.devextreme.devextremeStrings.breakWord
 import typings.devextreme.devextremeStrings.center
@@ -23,11 +23,11 @@ trait BaseWidgetTitle extends js.Object {
   /** @name BaseWidget.Options.title.horizontalAlignment */
   var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
   /** @name BaseWidget.Options.title.margin */
-  var margin: js.UndefOr[Double | AnonBottom] = js.undefined
+  var margin: js.UndefOr[Double | Bottom] = js.undefined
   /** @name BaseWidget.Options.title.placeholderSize */
   var placeholderSize: js.UndefOr[Double] = js.undefined
   /** @name BaseWidget.Options.title.subtitle */
-  var subtitle: js.UndefOr[AnonFontOffset | String] = js.undefined
+  var subtitle: js.UndefOr[FontOffset | String] = js.undefined
   /** @name BaseWidget.Options.title.text */
   var text: js.UndefOr[String] = js.undefined
   /** @name BaseWidget.Options.title.textOverflow */
@@ -43,9 +43,9 @@ object BaseWidgetTitle {
   def apply(
     font: Font = null,
     horizontalAlignment: center | left | right = null,
-    margin: Double | AnonBottom = null,
-    placeholderSize: Int | Double = null,
-    subtitle: AnonFontOffset | String = null,
+    margin: Double | Bottom = null,
+    placeholderSize: js.UndefOr[Double] = js.undefined,
+    subtitle: FontOffset | String = null,
     text: String = null,
     textOverflow: ellipsis | hide | none = null,
     verticalAlignment: bottom | top = null,
@@ -55,7 +55,7 @@ object BaseWidgetTitle {
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (placeholderSize != null) __obj.updateDynamic("placeholderSize")(placeholderSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeholderSize)) __obj.updateDynamic("placeholderSize")(placeholderSize.get.asInstanceOf[js.Any])
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])

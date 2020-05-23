@@ -1,8 +1,8 @@
 package typings.reactFoundation.responsiveMod
 
 import typings.react.mod.Component
-import typings.reactFoundation.AnonAlignX
-import typings.reactFoundation.AnonBreakpoint
+import typings.reactFoundation.anon.AlignX
+import typings.reactFoundation.anon.Breakpoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +33,7 @@ class ResponsiveNavigation ()
 @JSImport("react-foundation/components/responsive", "ResponsiveNavigation")
 @js.native
 object ResponsiveNavigation extends js.Object {
-  var defaultProps: AnonBreakpoint = js.native
-  var propTypes: AnonAlignX = js.native
+  var defaultProps: Breakpoint = js.native
+  var propTypes: AlignX = js.native
 }
 

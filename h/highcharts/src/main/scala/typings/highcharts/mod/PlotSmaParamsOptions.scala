@@ -21,10 +21,10 @@ trait PlotSmaParamsOptions extends js.Object {
 
 object PlotSmaParamsOptions {
   @scala.inline
-  def apply(index: Int | Double = null, period: Int | Double = null): PlotSmaParamsOptions = {
+  def apply(index: js.UndefOr[Double] = js.undefined, period: js.UndefOr[Double] = js.undefined): PlotSmaParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSmaParamsOptions]
   }
 }

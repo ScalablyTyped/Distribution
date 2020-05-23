@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeCopyJobInput extends js.Object {
   /**
-    * Uniquely identifies a request to AWS Backup to copy a resource.
+    * Uniquely identifies a copy job.
     */
   var CopyJobId: String = js.native
 }

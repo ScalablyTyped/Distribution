@@ -64,16 +64,15 @@ object IOutcome {
     seller_message: String,
     `type`: authorized | manual_review | issuer_declined | blocked | invalid,
     reason: String = null,
-    risk_level: String = null,
-    risk_score: Int | Double = null,
-    rule: String | js.Array[String] = null
+    risk_level: js.UndefOr[Null | String] = js.undefined,
+    risk_score: js.UndefOr[Null | Double] = js.undefined,
+    rule: js.UndefOr[Null | String | js.Array[String]] = js.undefined
   ): IOutcome = {
-    val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], seller_message = seller_message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], seller_message = seller_message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (risk_level != null) __obj.updateDynamic("risk_level")(risk_level.asInstanceOf[js.Any])
-    if (risk_score != null) __obj.updateDynamic("risk_score")(risk_score.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    if (!js.isUndefined(risk_level)) __obj.updateDynamic("risk_level")(risk_level.asInstanceOf[js.Any])
+    if (!js.isUndefined(risk_score)) __obj.updateDynamic("risk_score")(risk_score.asInstanceOf[js.Any])
+    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOutcome]
   }
 }

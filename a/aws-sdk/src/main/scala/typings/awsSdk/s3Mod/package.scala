@@ -438,7 +438,7 @@ package object s3Mod {
   type SSECustomerKeyMD5 = java.lang.String
   type SSEKMSEncryptionContext = java.lang.String
   type SSEKMSKeyId = java.lang.String
-  type SelectObjectContentEventStream = typings.awsSdk.eventStreamMod.EventStream[typings.awsSdk.AnonCont]
+  type SelectObjectContentEventStream = typings.awsSdk.eventStreamMod.EventStream[typings.awsSdk.anon.Cont]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AES256
     - typings.awsSdk.awsSdkStrings.awsColonkms

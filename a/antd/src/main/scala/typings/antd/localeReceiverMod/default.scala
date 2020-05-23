@@ -1,7 +1,7 @@
 package typings.antd.localeReceiverMod
 
-import typings.antd.AnonComponentName
-import typings.antd.PartialLocaleexistboolean
+import typings.antd.anon.ComponentName
+import typings.antd.anon.PartialLocaleexistboolean
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,6 @@ class default () extends LocaleReceiver
 @js.native
 object default extends js.Object {
   var contextType: Context[js.UndefOr[PartialLocaleexistboolean]] = js.native
-  var defaultProps: AnonComponentName = js.native
+  var defaultProps: ComponentName = js.native
 }
 

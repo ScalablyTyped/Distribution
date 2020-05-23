@@ -480,9 +480,6 @@ object expressValidatorStrings {
   sealed trait exists extends js.Object
   
   @js.native
-  sealed trait `express-validatorNumbersigncontexts` extends js.Object
-  
-  @js.native
   sealed trait `fa-IR`
     extends AlphaLocale
        with AlphanumericLocale
@@ -580,6 +577,9 @@ object expressValidatorStrings {
   sealed trait isBoolean extends js.Object
   
   @js.native
+  sealed trait isBtcAddress extends js.Object
+  
+  @js.native
   sealed trait isByteLength extends js.Object
   
   @js.native
@@ -598,10 +598,16 @@ object expressValidatorStrings {
   sealed trait isDivisibleBy extends js.Object
   
   @js.native
+  sealed trait isEAN extends js.Object
+  
+  @js.native
   sealed trait isEmail extends js.Object
   
   @js.native
   sealed trait isEmpty extends js.Object
+  
+  @js.native
+  sealed trait isEthereumAddress extends js.Object
   
   @js.native
   sealed trait isFQDN extends js.Object
@@ -611,6 +617,9 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait isFullWidth extends js.Object
+  
+  @js.native
+  sealed trait isHSL extends js.Object
   
   @js.native
   sealed trait isHalfWidth extends js.Object
@@ -623,6 +632,9 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait isHexadecimal extends js.Object
+  
+  @js.native
+  sealed trait isIBAN extends js.Object
   
   @js.native
   sealed trait isIP extends js.Object
@@ -673,6 +685,9 @@ object expressValidatorStrings {
   sealed trait isLength extends js.Object
   
   @js.native
+  sealed trait isLocale extends js.Object
+  
+  @js.native
   sealed trait isLowercase extends js.Object
   
   @js.native
@@ -703,6 +718,9 @@ object expressValidatorStrings {
   sealed trait isOctal extends js.Object
   
   @js.native
+  sealed trait isPassportNumber extends js.Object
+  
+  @js.native
   sealed trait isPort extends js.Object
   
   @js.native
@@ -710,6 +728,12 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait isRFC3339 extends js.Object
+  
+  @js.native
+  sealed trait isRgbColor extends js.Object
+  
+  @js.native
+  sealed trait isSemVer extends js.Object
   
   @js.native
   sealed trait isSlug extends js.Object
@@ -1206,8 +1230,6 @@ object expressValidatorStrings {
   @scala.inline
   def exists: exists = "exists".asInstanceOf[exists]
   @scala.inline
-  def `express-validatorNumbersigncontexts`: `express-validatorNumbersigncontexts` = "express-validator#contexts".asInstanceOf[`express-validatorNumbersigncontexts`]
-  @scala.inline
   def `fa-IR`: `fa-IR` = "fa-IR".asInstanceOf[`fa-IR`]
   @scala.inline
   def `fi-FI`: `fi-FI` = "fi-FI".asInstanceOf[`fi-FI`]
@@ -1264,6 +1286,8 @@ object expressValidatorStrings {
   @scala.inline
   def isBoolean: isBoolean = "isBoolean".asInstanceOf[isBoolean]
   @scala.inline
+  def isBtcAddress: isBtcAddress = "isBtcAddress".asInstanceOf[isBtcAddress]
+  @scala.inline
   def isByteLength: isByteLength = "isByteLength".asInstanceOf[isByteLength]
   @scala.inline
   def isCreditCard: isCreditCard = "isCreditCard".asInstanceOf[isCreditCard]
@@ -1276,15 +1300,21 @@ object expressValidatorStrings {
   @scala.inline
   def isDivisibleBy: isDivisibleBy = "isDivisibleBy".asInstanceOf[isDivisibleBy]
   @scala.inline
+  def isEAN: isEAN = "isEAN".asInstanceOf[isEAN]
+  @scala.inline
   def isEmail: isEmail = "isEmail".asInstanceOf[isEmail]
   @scala.inline
   def isEmpty: isEmpty = "isEmpty".asInstanceOf[isEmpty]
+  @scala.inline
+  def isEthereumAddress: isEthereumAddress = "isEthereumAddress".asInstanceOf[isEthereumAddress]
   @scala.inline
   def isFQDN: isFQDN = "isFQDN".asInstanceOf[isFQDN]
   @scala.inline
   def isFloat: isFloat = "isFloat".asInstanceOf[isFloat]
   @scala.inline
   def isFullWidth: isFullWidth = "isFullWidth".asInstanceOf[isFullWidth]
+  @scala.inline
+  def isHSL: isHSL = "isHSL".asInstanceOf[isHSL]
   @scala.inline
   def isHalfWidth: isHalfWidth = "isHalfWidth".asInstanceOf[isHalfWidth]
   @scala.inline
@@ -1293,6 +1323,8 @@ object expressValidatorStrings {
   def isHexColor: isHexColor = "isHexColor".asInstanceOf[isHexColor]
   @scala.inline
   def isHexadecimal: isHexadecimal = "isHexadecimal".asInstanceOf[isHexadecimal]
+  @scala.inline
+  def isIBAN: isIBAN = "isIBAN".asInstanceOf[isIBAN]
   @scala.inline
   def isIP: isIP = "isIP".asInstanceOf[isIP]
   @scala.inline
@@ -1326,6 +1358,8 @@ object expressValidatorStrings {
   @scala.inline
   def isLength: isLength = "isLength".asInstanceOf[isLength]
   @scala.inline
+  def isLocale: isLocale = "isLocale".asInstanceOf[isLocale]
+  @scala.inline
   def isLowercase: isLowercase = "isLowercase".asInstanceOf[isLowercase]
   @scala.inline
   def isMACAddress: isMACAddress = "isMACAddress".asInstanceOf[isMACAddress]
@@ -1346,11 +1380,17 @@ object expressValidatorStrings {
   @scala.inline
   def isOctal: isOctal = "isOctal".asInstanceOf[isOctal]
   @scala.inline
+  def isPassportNumber: isPassportNumber = "isPassportNumber".asInstanceOf[isPassportNumber]
+  @scala.inline
   def isPort: isPort = "isPort".asInstanceOf[isPort]
   @scala.inline
   def isPostalCode: isPostalCode = "isPostalCode".asInstanceOf[isPostalCode]
   @scala.inline
   def isRFC3339: isRFC3339 = "isRFC3339".asInstanceOf[isRFC3339]
+  @scala.inline
+  def isRgbColor: isRgbColor = "isRgbColor".asInstanceOf[isRgbColor]
+  @scala.inline
+  def isSemVer: isSemVer = "isSemVer".asInstanceOf[isSemVer]
   @scala.inline
   def isSlug: isSlug = "isSlug".asInstanceOf[isSlug]
   @scala.inline

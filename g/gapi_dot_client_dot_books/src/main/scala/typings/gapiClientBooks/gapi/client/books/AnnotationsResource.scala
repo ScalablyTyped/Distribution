@@ -1,35 +1,35 @@
 package typings.gapiClientBooks.gapi.client.books
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientBooks.AnonAltAnnotationId
-import typings.gapiClientBooks.AnonFieldsKey
-import typings.gapiClientBooks.AnonLayerIds
-import typings.gapiClientBooks.AnonShowOnlySummaryInResponse
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientBooks.anon.AltAnnotationId
+import typings.gapiClientBooks.anon.FieldsKey
+import typings.gapiClientBooks.anon.LayerIds
+import typings.gapiClientBooks.anon.ShowOnlySummaryInResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnnotationsResource extends js.Object {
   /** Deletes an annotation. */
-  def delete(request: AnonAltAnnotationId): Request_[Unit]
+  def delete(request: AltAnnotationId): Request[Unit]
   /** Inserts a new annotation. */
-  def insert(request: AnonShowOnlySummaryInResponse): Request_[Annotation]
+  def insert(request: ShowOnlySummaryInResponse): Request[Annotation]
   /** Retrieves a list of annotations, possibly filtered. */
-  def list(request: AnonLayerIds): Request_[Annotations]
+  def list(request: LayerIds): Request[Annotations]
   /** Gets the summary of specified layers. */
-  def summary(request: AnonFieldsKey): Request_[AnnotationsSummary]
+  def summary(request: FieldsKey): Request[AnnotationsSummary]
   /** Updates an existing annotation. */
-  def update(request: AnonAltAnnotationId): Request_[Annotation]
+  def update(request: AltAnnotationId): Request[Annotation]
 }
 
 object AnnotationsResource {
   @scala.inline
   def apply(
-    delete: AnonAltAnnotationId => Request_[Unit],
-    insert: AnonShowOnlySummaryInResponse => Request_[Annotation],
-    list: AnonLayerIds => Request_[Annotations],
-    summary: AnonFieldsKey => Request_[AnnotationsSummary],
-    update: AnonAltAnnotationId => Request_[Annotation]
+    delete: AltAnnotationId => Request[Unit],
+    insert: ShowOnlySummaryInResponse => Request[Annotation],
+    list: LayerIds => Request[Annotations],
+    summary: FieldsKey => Request[AnnotationsSummary],
+    update: AltAnnotationId => Request[Annotation]
   ): AnnotationsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), summary = js.Any.fromFunction1(summary), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[AnnotationsResource]

@@ -1,6 +1,5 @@
 package typings.aceBuilds.mod.Ace
 
-import typings.aceBuilds.AnonPageX
 import typings.aceBuilds.aceBuildsStrings.animatedScroll
 import typings.aceBuilds.aceBuildsStrings.displayIndentGuides
 import typings.aceBuilds.aceBuildsStrings.fadeFoldWidgets
@@ -23,6 +22,7 @@ import typings.aceBuilds.aceBuildsStrings.showLineNumbers
 import typings.aceBuilds.aceBuildsStrings.showPrintMargin
 import typings.aceBuilds.aceBuildsStrings.theme
 import typings.aceBuilds.aceBuildsStrings.vScrollBarAlwaysVisible
+import typings.aceBuilds.anon.PageX
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -188,7 +188,7 @@ trait VirtualRenderer
   def setVScrollBarAlwaysVisible(alwaysVisible: Boolean): Unit = js.native
   def showComposition(position: Double): Unit = js.native
   def showCursor(): Unit = js.native
-  def textToScreenCoordinates(row: Double, column: Double): AnonPageX = js.native
+  def textToScreenCoordinates(row: Double, column: Double): PageX = js.native
   def unfreeze(): Unit = js.native
   def unsetStyle(style: String): Unit = js.native
   def updateBackMarkers(): Unit = js.native

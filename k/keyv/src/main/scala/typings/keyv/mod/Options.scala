@@ -33,13 +33,13 @@ trait Options[TValue]
 object Options {
   @scala.inline
   def apply[TValue](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     adapter: redis | mongodb | mongo | sqlite | postgresql | postgres | mysql = null,
     deserialize: /* data */ String => TValue = null,
     namespace: String = null,
     serialize: /* data */ TValue => String = null,
     store: Store[TValue] = null,
-    ttl: Int | Double = null,
+    ttl: js.UndefOr[Double] = js.undefined,
     uri: String = null
   ): Options[TValue] = {
     val __obj = js.Dynamic.literal()
@@ -49,7 +49,7 @@ object Options {
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[TValue]]
   }

@@ -1,6 +1,6 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.AnonSizeString
+import typings.antdMobileRn.anon.SizeString
 import typings.antdMobileRn.whiteSpaceIndexNativeMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class WhiteSpace () extends default
 @JSImport("antd-mobile-rn", "WhiteSpace")
 @js.native
 object WhiteSpace extends js.Object {
-  var defaultProps: AnonSizeString = js.native
+  var defaultProps: SizeString = js.native
 }
 

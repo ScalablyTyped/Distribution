@@ -45,21 +45,21 @@ object Options {
   def apply(
     align: AlignType = null,
     allow_dismiss: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     ele: String = null,
     offset: OffsetOption = null,
-    stackup_spacing: Int | Double = null,
-    `type`: AlertType = null,
+    stackup_spacing: js.UndefOr[Double] = js.undefined,
+    `type`: js.UndefOr[Null | AlertType] = js.undefined,
     width: Double | auto = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_dismiss)) __obj.updateDynamic("allow_dismiss")(allow_dismiss.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_dismiss)) __obj.updateDynamic("allow_dismiss")(allow_dismiss.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (ele != null) __obj.updateDynamic("ele")(ele.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (stackup_spacing != null) __obj.updateDynamic("stackup_spacing")(stackup_spacing.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(stackup_spacing)) __obj.updateDynamic("stackup_spacing")(stackup_spacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

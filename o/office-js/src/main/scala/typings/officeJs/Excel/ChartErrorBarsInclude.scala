@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,17 +24,6 @@ object ChartErrorBarsInclude extends js.Object {
   
   @js.native
   sealed trait plusValues extends ChartErrorBarsInclude
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartErrorBarsInclude with String] = js.native
-  /* "Both" */ @js.native
-  object both extends TopLevel[both with String]
-  
-  /* "MinusValues" */ @js.native
-  object minusValues extends TopLevel[minusValues with String]
-  
-  /* "PlusValues" */ @js.native
-  object plusValues extends TopLevel[plusValues with String]
   
 }
 

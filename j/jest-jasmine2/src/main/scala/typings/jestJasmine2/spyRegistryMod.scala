@@ -1,5 +1,6 @@
 package typings.jestJasmine2
 
+import typings.jestJasmine2.anon.CurrentSpies
 import typings.jestJasmine2.jestJasmine2Strings.configurable
 import typings.jestJasmine2.jestJasmine2Strings.enumerable
 import typings.jestJasmine2.jestJasmine2Strings.get
@@ -21,24 +22,24 @@ object spyRegistryMod extends js.Object {
     var respy: js.Any = js.native
     def allowRespy(allow: js.Any): Unit = js.native
     def clearSpies(): Unit = js.native
-    def spyOn(obj: Record[String, Spy], methodName: String): Spy = js.native
+    def spyOn(obj: Record[String, _], methodName: String): Spy = js.native
     @JSName("spyOn")
-    def spyOn_configurable(obj: Record[String, Spy], methodName: String, accessType: configurable): Spy = js.native
+    def spyOn_configurable(obj: Record[String, _], methodName: String, accessType: configurable): Spy = js.native
     @JSName("spyOn")
-    def spyOn_enumerable(obj: Record[String, Spy], methodName: String, accessType: enumerable): Spy = js.native
+    def spyOn_enumerable(obj: Record[String, _], methodName: String, accessType: enumerable): Spy = js.native
     @JSName("spyOn")
-    def spyOn_get(obj: Record[String, Spy], methodName: String, accessType: get): Spy = js.native
+    def spyOn_get(obj: Record[String, _], methodName: String, accessType: get): Spy = js.native
     @JSName("spyOn")
-    def spyOn_set(obj: Record[String, Spy], methodName: String, accessType: set): Spy = js.native
+    def spyOn_set(obj: Record[String, _], methodName: String, accessType: set): Spy = js.native
     @JSName("spyOn")
-    def spyOn_value(obj: Record[String, Spy], methodName: String, accessType: value): Spy = js.native
+    def spyOn_value(obj: Record[String, _], methodName: String, accessType: value): Spy = js.native
     @JSName("spyOn")
-    def spyOn_writable(obj: Record[String, Spy], methodName: String, accessType: writable): Spy = js.native
+    def spyOn_writable(obj: Record[String, _], methodName: String, accessType: writable): Spy = js.native
   }
   
   @js.native
   class default () extends SpyRegistry {
-    def this(hasCurrentSpies: AnonCurrentSpies) = this()
+    def this(hasCurrentSpies: CurrentSpies) = this()
   }
   
 }

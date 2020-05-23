@@ -38,10 +38,10 @@ object AppliedDiscount {
     title: String,
     value: String,
     value_type: percentage | fixed_amount,
-    amount: Int | Double = null
+    amount: js.UndefOr[Double] = js.undefined
   ): AppliedDiscount = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], value_type = value_type.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppliedDiscount]
   }
 }

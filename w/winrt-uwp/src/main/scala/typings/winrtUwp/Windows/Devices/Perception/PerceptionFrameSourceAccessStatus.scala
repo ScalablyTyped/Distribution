@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Perception
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object PerceptionFrameSourceAccessStatus extends js.Object {
   /** Access status is not specified. */
   @js.native
   sealed trait unspecified extends PerceptionFrameSourceAccessStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PerceptionFrameSourceAccessStatus with Double] = js.native
-  /* 1 */ @js.native
-  object allowed extends TopLevel[allowed with Double]
-  
-  /* 3 */ @js.native
-  object deniedBySystem extends TopLevel[deniedBySystem with Double]
-  
-  /* 2 */ @js.native
-  object deniedByUser extends TopLevel[deniedByUser with Double]
-  
-  /* 0 */ @js.native
-  object unspecified extends TopLevel[unspecified with Double]
   
 }
 

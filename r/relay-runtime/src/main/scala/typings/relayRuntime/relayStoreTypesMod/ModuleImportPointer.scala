@@ -13,9 +13,13 @@ trait ModuleImportPointer extends js.Object {
 
 object ModuleImportPointer {
   @scala.inline
-  def apply($fragmentRefs: js.Any, __module_component: js.Any, __fragmentPropName: String = null): ModuleImportPointer = {
+  def apply(
+    $fragmentRefs: js.Any,
+    __module_component: js.Any,
+    __fragmentPropName: js.UndefOr[Null | String] = js.undefined
+  ): ModuleImportPointer = {
     val __obj = js.Dynamic.literal($fragmentRefs = $fragmentRefs.asInstanceOf[js.Any], __module_component = __module_component.asInstanceOf[js.Any])
-    if (__fragmentPropName != null) __obj.updateDynamic("__fragmentPropName")(__fragmentPropName.asInstanceOf[js.Any])
+    if (!js.isUndefined(__fragmentPropName)) __obj.updateDynamic("__fragmentPropName")(__fragmentPropName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleImportPointer]
   }
 }

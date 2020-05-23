@@ -36,19 +36,19 @@ object QHeader {
     qSortIndicator: A | B,
     reverseOrder: () => Unit,
     selectRange: (Double, Double, Boolean, Boolean) => js.Promise[_],
-    errorCode: Int | Double = null,
-    errorMessage: Int | Double = null,
-    qCardinal: Int | Double = null,
-    qMax: Int | Double = null,
-    qMin: Int | Double = null,
+    errorCode: js.UndefOr[Double] = js.undefined,
+    errorMessage: js.UndefOr[Double] = js.undefined,
+    qCardinal: js.UndefOr[Double] = js.undefined,
+    qMax: js.UndefOr[Double] = js.undefined,
+    qMin: js.UndefOr[Double] = js.undefined,
     qStateCounts: StringDictionary[Double] = null
   ): QHeader = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], isOrderedBy = isOrderedBy.asInstanceOf[js.Any], orderBy = js.Any.fromFunction0(orderBy), qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qReverseSort = qReverseSort.asInstanceOf[js.Any], qSortIndicator = qSortIndicator.asInstanceOf[js.Any], reverseOrder = js.Any.fromFunction0(reverseOrder), selectRange = js.Any.fromFunction4(selectRange))
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (qCardinal != null) __obj.updateDynamic("qCardinal")(qCardinal.asInstanceOf[js.Any])
-    if (qMax != null) __obj.updateDynamic("qMax")(qMax.asInstanceOf[js.Any])
-    if (qMin != null) __obj.updateDynamic("qMin")(qMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorCode)) __obj.updateDynamic("errorCode")(errorCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorMessage)) __obj.updateDynamic("errorMessage")(errorMessage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qCardinal)) __obj.updateDynamic("qCardinal")(qCardinal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qMax)) __obj.updateDynamic("qMax")(qMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qMin)) __obj.updateDynamic("qMin")(qMin.get.asInstanceOf[js.Any])
     if (qStateCounts != null) __obj.updateDynamic("qStateCounts")(qStateCounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[QHeader]
   }

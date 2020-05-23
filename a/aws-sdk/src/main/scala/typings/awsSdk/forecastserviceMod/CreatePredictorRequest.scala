@@ -63,8 +63,8 @@ object CreatePredictorRequest {
     EncryptionConfig: EncryptionConfig = null,
     EvaluationParameters: EvaluationParameters = null,
     HPOConfig: HyperParameterTuningJobConfig = null,
-    PerformAutoML: js.UndefOr[scala.Boolean] = js.undefined,
-    PerformHPO: js.UndefOr[scala.Boolean] = js.undefined,
+    PerformAutoML: js.UndefOr[Boolean] = js.undefined,
+    PerformHPO: js.UndefOr[Boolean] = js.undefined,
     TrainingParameters: TrainingParameters = null
   ): CreatePredictorRequest = {
     val __obj = js.Dynamic.literal(FeaturizationConfig = FeaturizationConfig.asInstanceOf[js.Any], ForecastHorizon = ForecastHorizon.asInstanceOf[js.Any], InputDataConfig = InputDataConfig.asInstanceOf[js.Any], PredictorName = PredictorName.asInstanceOf[js.Any])
@@ -72,8 +72,8 @@ object CreatePredictorRequest {
     if (EncryptionConfig != null) __obj.updateDynamic("EncryptionConfig")(EncryptionConfig.asInstanceOf[js.Any])
     if (EvaluationParameters != null) __obj.updateDynamic("EvaluationParameters")(EvaluationParameters.asInstanceOf[js.Any])
     if (HPOConfig != null) __obj.updateDynamic("HPOConfig")(HPOConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformAutoML)) __obj.updateDynamic("PerformAutoML")(PerformAutoML.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformHPO)) __obj.updateDynamic("PerformHPO")(PerformHPO.asInstanceOf[js.Any])
+    if (!js.isUndefined(PerformAutoML)) __obj.updateDynamic("PerformAutoML")(PerformAutoML.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(PerformHPO)) __obj.updateDynamic("PerformHPO")(PerformHPO.get.asInstanceOf[js.Any])
     if (TrainingParameters != null) __obj.updateDynamic("TrainingParameters")(TrainingParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePredictorRequest]
   }

@@ -22,7 +22,7 @@ trait PivotItemUpdateData extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Determines whether the PivotItem is visible or not.
+    * Specifies if the PivotItem is visible.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -37,9 +37,9 @@ object PivotItemUpdateData {
     visible: js.UndefOr[Boolean] = js.undefined
   ): PivotItemUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotItemUpdateData]
   }
 }

@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   */
 trait Attribute extends js.Object {
   /**
-  	 * Attribute range.
-  	 */
+    * Attribute range.
+    */
   var range: js.Array[Double]
   /**
-  	 * Attribute to apply to the text.
-  	 */
+    * Attribute to apply to the text.
+    */
   var `type`: Double
   /**
-  	 * Attribute value.
-  	 */
+    * Attribute value.
+    */
   var value: Double
 }
 

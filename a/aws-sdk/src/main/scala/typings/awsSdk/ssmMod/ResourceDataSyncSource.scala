@@ -30,11 +30,11 @@ object ResourceDataSyncSource {
     SourceRegions: ResourceDataSyncSourceRegionList,
     SourceType: ResourceDataSyncSourceType,
     AwsOrganizationsSource: ResourceDataSyncAwsOrganizationsSource = null,
-    IncludeFutureRegions: js.UndefOr[scala.Boolean] = js.undefined
+    IncludeFutureRegions: js.UndefOr[ResourceDataSyncIncludeFutureRegions] = js.undefined
   ): ResourceDataSyncSource = {
     val __obj = js.Dynamic.literal(SourceRegions = SourceRegions.asInstanceOf[js.Any], SourceType = SourceType.asInstanceOf[js.Any])
     if (AwsOrganizationsSource != null) __obj.updateDynamic("AwsOrganizationsSource")(AwsOrganizationsSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeFutureRegions)) __obj.updateDynamic("IncludeFutureRegions")(IncludeFutureRegions.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeFutureRegions)) __obj.updateDynamic("IncludeFutureRegions")(IncludeFutureRegions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataSyncSource]
   }
 }

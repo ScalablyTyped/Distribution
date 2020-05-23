@@ -71,19 +71,19 @@ object TraceConfig {
     included_process_ids: js.Array[Double] = null,
     memory_dump_config: Record[String, _] = null,
     recording_mode: `record-until-full` | `record-continuously` | `record-as-much-as-possible` | `trace-to-console` = null,
-    trace_buffer_size_in_events: Int | Double = null,
-    trace_buffer_size_in_kb: Int | Double = null
+    trace_buffer_size_in_events: js.UndefOr[Double] = js.undefined,
+    trace_buffer_size_in_kb: js.UndefOr[Double] = js.undefined
   ): TraceConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable_argument_filter)) __obj.updateDynamic("enable_argument_filter")(enable_argument_filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable_argument_filter)) __obj.updateDynamic("enable_argument_filter")(enable_argument_filter.get.asInstanceOf[js.Any])
     if (excluded_categories != null) __obj.updateDynamic("excluded_categories")(excluded_categories.asInstanceOf[js.Any])
     if (histogram_names != null) __obj.updateDynamic("histogram_names")(histogram_names.asInstanceOf[js.Any])
     if (included_categories != null) __obj.updateDynamic("included_categories")(included_categories.asInstanceOf[js.Any])
     if (included_process_ids != null) __obj.updateDynamic("included_process_ids")(included_process_ids.asInstanceOf[js.Any])
     if (memory_dump_config != null) __obj.updateDynamic("memory_dump_config")(memory_dump_config.asInstanceOf[js.Any])
     if (recording_mode != null) __obj.updateDynamic("recording_mode")(recording_mode.asInstanceOf[js.Any])
-    if (trace_buffer_size_in_events != null) __obj.updateDynamic("trace_buffer_size_in_events")(trace_buffer_size_in_events.asInstanceOf[js.Any])
-    if (trace_buffer_size_in_kb != null) __obj.updateDynamic("trace_buffer_size_in_kb")(trace_buffer_size_in_kb.asInstanceOf[js.Any])
+    if (!js.isUndefined(trace_buffer_size_in_events)) __obj.updateDynamic("trace_buffer_size_in_events")(trace_buffer_size_in_events.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trace_buffer_size_in_kb)) __obj.updateDynamic("trace_buffer_size_in_kb")(trace_buffer_size_in_kb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceConfig]
   }
 }

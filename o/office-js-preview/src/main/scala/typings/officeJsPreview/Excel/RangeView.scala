@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.RangeViewData
 import typings.officeJsPreview.Excel.Interfaces.RangeViewLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.RangeViewUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,19 +16,18 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.3]
   */
-@JSGlobal("Excel.RangeView")
 @js.native
-class RangeView () extends ClientObject {
+trait RangeView extends ClientObject {
   /**
     *
-    * Represents the cell addresses of the RangeView. Read-only.
+    * Represents the cell addresses of the RangeView.
     *
     * [Api set: ExcelApi 1.3]
     */
   val cellAddresses: js.Array[js.Array[_]] = js.native
   /**
     *
-    * Returns the number of visible columns. Read-only.
+    * The number of visible columns.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -59,7 +58,7 @@ class RangeView () extends ClientObject {
   var formulasR1C1: js.Array[js.Array[_]] = js.native
   /**
     *
-    * Returns a value that represents the index of the RangeView. Read-only.
+    * Returns a value that represents the index of the RangeView.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -73,28 +72,28 @@ class RangeView () extends ClientObject {
   var numberFormat: js.Array[js.Array[_]] = js.native
   /**
     *
-    * Returns the number of visible rows. Read-only.
+    * The number of visible rows.
     *
     * [Api set: ExcelApi 1.3]
     */
   val rowCount: Double = js.native
   /**
     *
-    * Represents a collection of range views associated with the range. Read-only.
+    * Represents a collection of range views associated with the range.
     *
     * [Api set: ExcelApi 1.3]
     */
   val rows: RangeViewCollection = js.native
   /**
     *
-    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
     *
     * [Api set: ExcelApi 1.3]
     */
   val text: js.Array[js.Array[String]] = js.native
   /**
     *
-    * Represents the type of data of each cell. Read-only.
+    * Represents the type of data of each cell.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -119,7 +118,7 @@ class RangeView () extends ClientObject {
     */
   def load(): RangeView = js.native
   def load(options: RangeViewLoadOptions): RangeView = js.native
-  def load(propertyNamesAndPaths: AnonExpand): RangeView = js.native
+  def load(propertyNamesAndPaths: Expand): RangeView = js.native
   def load(propertyNames: String): RangeView = js.native
   def load(propertyNames: js.Array[String]): RangeView = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

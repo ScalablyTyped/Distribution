@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class CircleBrush () extends BaseBrush {
   /**
-  	 * @return Just added pointer point
-  	 */
+    * @return Just added pointer point
+    */
   def addPoint(pointer: js.Any): Point = js.native
   /**
-  	 * Invoked inside on mouse down and mouse move
-  	 */
+    * Invoked inside on mouse down and mouse move
+    */
   def drawDot(pointer: js.Any): Unit = js.native
 }
 

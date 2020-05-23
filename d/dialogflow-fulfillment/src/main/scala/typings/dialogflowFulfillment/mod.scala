@@ -5,6 +5,10 @@ import org.scalablytyped.runtime.TopLevel
 import typings.actionsOnGoogle.commonMod.JsonObject
 import typings.actionsOnGoogle.contextMod.Contexts
 import typings.actionsOnGoogle.mod.DialogflowConversation
+import typings.dialogflowFulfillment.anon.ImageUrl
+import typings.dialogflowFulfillment.anon.Lifespan
+import typings.dialogflowFulfillment.anon.RawPayload
+import typings.dialogflowFulfillment.anon.Request
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +23,7 @@ object mod extends js.Object {
     def this(card: js.Object) = this()
     /* private */ def getV1ResponseObject_(platform: Platforms): js.Object = js.native
     /* private */ def getV2ResponseObject_(platform: Platforms): js.Object = js.native
-    def setButton(button: AnonText): Card = js.native
+    def setButton(button: typings.dialogflowFulfillment.anon.Text): Card = js.native
     def setImage(imageUrl: String): Card = js.native
     def setText(text: String): Card = js.native
     def setTitle(title: String): Card = js.native
@@ -28,7 +32,7 @@ object mod extends js.Object {
   @js.native
   class Image protected () extends RichResponse {
     def this(image: String) = this()
-    def this(image: AnonImageUrl) = this()
+    def this(image: ImageUrl) = this()
     /* private */ def getV1ResponseObject_(platform: Platforms): js.Object = js.native
     /* private */ def getV2ResponseObject_(platform: Platforms): js.Object = js.native
     def setImage(imageUrl: String): Image = js.native
@@ -37,7 +41,7 @@ object mod extends js.Object {
   @js.native
   class Payload protected () extends RichResponse {
     def this(platform: Platforms, payload: js.Any) = this()
-    def this(platform: Platforms, payload: js.Any, options: AnonRawPayload) = this()
+    def this(platform: Platforms, payload: js.Any, options: RawPayload) = this()
     var payload: js.Any = js.native
     /* private */ def getPayload_(platform: Platforms): js.Object = js.native
     /* private */ def getV1ResponseObject_(platform: Platforms): js.Object = js.native
@@ -81,7 +85,7 @@ object mod extends js.Object {
       * Constructor for WebhookClient object To be used in the Dialogflow fulfillment webhook logic
       * @param options JSON configuration with { request: Express HTTP request object, response: Express HTTP response object }
       */
-    def this(options: AnonRequest) = this()
+    def this(options: Request) = this()
     /** Dialogflow action or null if no value */
     val action: String = js.native
     /** The agent version (v1 or v2) based on Dialogflow webhook request */
@@ -91,7 +95,7 @@ object mod extends js.Object {
     /** List of messages defined in Dialogflow's console for the matched intent */
     val consoleMessages: js.Array[RichResponse] = js.native
     /** Dialogflow contexts included in the request or null if no value */
-    val contexts: js.Array[AnonLifespan] = js.native
+    val contexts: js.Array[Lifespan] = js.native
     /** Dialogflow intent name or null if no value */
     val intent: String = js.native
     /** Original request language code or locale (i.e. "en" or "en-US") */
@@ -143,7 +147,7 @@ object mod extends js.Object {
       * Get an context from the Dialogflow webhook request
       * @param contextName name of an context present in the Dialogflow webhook request
       */
-    def getContext(contextName: String): AnonLifespan = js.native
+    def getContext(contextName: String): Lifespan = js.native
     def handleRequest(handler: js.Function1[/* agent */ this.type, Unit]): js.Promise[_] = js.native
     /**
       * Handles the incoming Dialogflow request using a handler or Map of handlers Each handler must be a function callback.

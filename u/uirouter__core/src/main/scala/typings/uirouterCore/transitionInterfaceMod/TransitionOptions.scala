@@ -110,15 +110,15 @@ object TransitionOptions {
     val __obj = js.Dynamic.literal()
     if (current != null) __obj.updateDynamic("current")(js.Any.fromFunction0(current))
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.get.asInstanceOf[js.Any])
     if (redirectedFrom != null) __obj.updateDynamic("redirectedFrom")(redirectedFrom.asInstanceOf[js.Any])
     if (relative != null) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
     if (reload != null) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
     if (reloadState != null) __obj.updateDynamic("reloadState")(reloadState.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(supercede)) __obj.updateDynamic("supercede")(supercede.asInstanceOf[js.Any])
+    if (!js.isUndefined(supercede)) __obj.updateDynamic("supercede")(supercede.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionOptions]
   }
 }

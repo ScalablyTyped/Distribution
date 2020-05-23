@@ -1,6 +1,6 @@
 package typings.nodegit.treeMod
 
-import typings.nodegit.EventEmitterstartvoid
+import typings.nodegit.anon.EventEmitterstartvoid
 import typings.nodegit.diffFileMod.DiffFile
 import typings.nodegit.objectMod.Object
 import typings.nodegit.oidMod.Oid

@@ -1,16 +1,17 @@
 package typings.readableStream.mod
 
-import typings.readableStream.AnonChunk
+import typings.node.BufferEncoding
+import typings.readableStream.anon.Chunk
 import typings.std.ArrayLike
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined readable-stream.readable-stream.WritableStateOptions & {  write ? :(this : readable-stream.readable-stream.Writable, chunk : any, encoding : string, callback : (error ? : std.Error | null): void): void,   writev ? :(this : readable-stream.readable-stream.Writable, chunk : std.ArrayLike<{  chunk  :any,   encoding  :string}>, callback : (error ? : std.Error | null): void): void,   destroy ? :(this : readable-stream.readable-stream.Writable, error : std.Error | null, callback : (error : std.Error | null): void): void,   final ? :(this : readable-stream.readable-stream.Writable, callback : (error ? : std.Error | null): void): void} */
+/* Inlined readable-stream.readable-stream.WritableStateOptions & {  write ? :(this : readable-stream.readable-stream.Writable, chunk : any, encoding : node.BufferEncoding, callback : (error ? : std.Error | null): void): void,   writev ? :(this : readable-stream.readable-stream.Writable, chunk : std.ArrayLike<{  chunk  :any,   encoding  :node.BufferEncoding}>, callback : (error ? : std.Error | null): void): void,   destroy ? :(this : readable-stream.readable-stream.Writable, error : std.Error | null, callback : (error : std.Error | null): void): void,   final ? :(this : readable-stream.readable-stream.Writable, callback : (error ? : std.Error | null): void): void} */
 trait WritableOptions extends js.Object {
   var decodeStrings: js.UndefOr[Boolean] = js.undefined
-  var defaultEncoding: js.UndefOr[String] = js.undefined
+  var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
   var destroy: js.UndefOr[
     js.ThisFunction2[
       /* this */ Writable, 
@@ -34,7 +35,7 @@ trait WritableOptions extends js.Object {
     js.ThisFunction3[
       /* this */ Writable, 
       /* chunk */ js.Any, 
-      /* encoding */ String, 
+      /* encoding */ BufferEncoding, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
@@ -42,7 +43,7 @@ trait WritableOptions extends js.Object {
   var writev: js.UndefOr[
     js.ThisFunction2[
       /* this */ Writable, 
-      /* chunk */ ArrayLike[AnonChunk], 
+      /* chunk */ ArrayLike[Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
@@ -53,7 +54,7 @@ object WritableOptions {
   @scala.inline
   def apply(
     decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultEncoding: String = null,
+    defaultEncoding: BufferEncoding = null,
     destroy: js.ThisFunction2[
       /* this */ Writable, 
       /* error */ Error | Null, 
@@ -65,33 +66,33 @@ object WritableOptions {
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ] = null,
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     objectMode: js.UndefOr[Boolean] = js.undefined,
-    writableHighWaterMark: Int | Double = null,
+    writableHighWaterMark: js.UndefOr[Double] = js.undefined,
     writableObjectMode: js.UndefOr[Boolean] = js.undefined,
     write: js.ThisFunction3[
       /* this */ Writable, 
       /* chunk */ js.Any, 
-      /* encoding */ String, 
+      /* encoding */ BufferEncoding, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ] = null,
     writev: js.ThisFunction2[
       /* this */ Writable, 
-      /* chunk */ ArrayLike[AnonChunk], 
+      /* chunk */ ArrayLike[Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ] = null
   ): WritableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.asInstanceOf[js.Any])
+    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.get.asInstanceOf[js.Any])
     if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (`final` != null) __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
-    if (writableHighWaterMark != null) __obj.updateDynamic("writableHighWaterMark")(writableHighWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(writableObjectMode)) __obj.updateDynamic("writableObjectMode")(writableObjectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writableHighWaterMark)) __obj.updateDynamic("writableHighWaterMark")(writableHighWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(writableObjectMode)) __obj.updateDynamic("writableObjectMode")(writableObjectMode.get.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     if (writev != null) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])
     __obj.asInstanceOf[WritableOptions]

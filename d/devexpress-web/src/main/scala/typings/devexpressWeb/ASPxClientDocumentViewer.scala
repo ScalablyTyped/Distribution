@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * The client-side equivalent of the ASPxDocumentViewer control.
   */
-@JSGlobal("ASPxClientDocumentViewer")
 @js.native
-class ASPxClientDocumentViewer () extends ASPxClientControl {
+trait ASPxClientDocumentViewer extends ASPxClientControl {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -98,16 +97,5 @@ class ASPxClientDocumentViewer () extends ASPxClientControl {
     * Invokes the Search dialog, which allows end-users to search for specific text in a report.
     */
   def Search(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("ASPxClientDocumentViewer")
-@js.native
-object ASPxClientDocumentViewer extends js.Object {
-  /**
-    * Converts the specified object to the current object's type. This method is effective when you utilize the Client API IntelliSense feature provided by DevExpress. An ASPxClientDocumentViewer object.
-    * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
-    */
-  def Cast(obj: js.Any): ASPxClientDocumentViewer = js.native
 }
 

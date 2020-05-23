@@ -49,30 +49,30 @@ object IMessage {
     defaultButton: `1` | `2` | `3` | `4` = null,
     icon: String = null,
     message: String = null,
-    timeOut: Int | Double = null,
+    timeOut: js.UndefOr[Double] = js.undefined,
     timeOutButton: `1` | `2` | `3` | `4` = null,
     timeout_deactivateOnFocusChange: js.UndefOr[Boolean] = js.undefined
   ): IMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(button1_enabled)) __obj.updateDynamic("button1_enabled")(button1_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(button1_enabled)) __obj.updateDynamic("button1_enabled")(button1_enabled.get.asInstanceOf[js.Any])
     if (button1_title != null) __obj.updateDynamic("button1_title")(button1_title.asInstanceOf[js.Any])
-    if (!js.isUndefined(button2_enabled)) __obj.updateDynamic("button2_enabled")(button2_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(button2_enabled)) __obj.updateDynamic("button2_enabled")(button2_enabled.get.asInstanceOf[js.Any])
     if (button2_title != null) __obj.updateDynamic("button2_title")(button2_title.asInstanceOf[js.Any])
-    if (!js.isUndefined(button3_enabled)) __obj.updateDynamic("button3_enabled")(button3_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(button3_enabled)) __obj.updateDynamic("button3_enabled")(button3_enabled.get.asInstanceOf[js.Any])
     if (button3_title != null) __obj.updateDynamic("button3_title")(button3_title.asInstanceOf[js.Any])
-    if (!js.isUndefined(button4_enabled)) __obj.updateDynamic("button4_enabled")(button4_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(button4_enabled)) __obj.updateDynamic("button4_enabled")(button4_enabled.get.asInstanceOf[js.Any])
     if (button4_title != null) __obj.updateDynamic("button4_title")(button4_title.asInstanceOf[js.Any])
     if (cancelButton != null) __obj.updateDynamic("cancelButton")(cancelButton.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkbox_checked)) __obj.updateDynamic("checkbox_checked")(checkbox_checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkbox_enabled)) __obj.updateDynamic("checkbox_enabled")(checkbox_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkbox_checked)) __obj.updateDynamic("checkbox_checked")(checkbox_checked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkbox_enabled)) __obj.updateDynamic("checkbox_enabled")(checkbox_enabled.get.asInstanceOf[js.Any])
     if (checkbox_title != null) __obj.updateDynamic("checkbox_title")(checkbox_title.asInstanceOf[js.Any])
     if (defaultButton != null) __obj.updateDynamic("defaultButton")(defaultButton.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (timeOut != null) __obj.updateDynamic("timeOut")(timeOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeOut)) __obj.updateDynamic("timeOut")(timeOut.get.asInstanceOf[js.Any])
     if (timeOutButton != null) __obj.updateDynamic("timeOutButton")(timeOutButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout_deactivateOnFocusChange)) __obj.updateDynamic("timeout_deactivateOnFocusChange")(timeout_deactivateOnFocusChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout_deactivateOnFocusChange)) __obj.updateDynamic("timeout_deactivateOnFocusChange")(timeout_deactivateOnFocusChange.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessage]
   }
 }

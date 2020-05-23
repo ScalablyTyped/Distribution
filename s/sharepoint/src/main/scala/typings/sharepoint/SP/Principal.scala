@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Principal")
 @js.native
-class Principal () extends ClientObject {
+trait Principal extends ClientObject {
   def get_id(): Double = js.native
   def get_isHiddenInUI(): Boolean = js.native
   def get_loginName(): String = js.native

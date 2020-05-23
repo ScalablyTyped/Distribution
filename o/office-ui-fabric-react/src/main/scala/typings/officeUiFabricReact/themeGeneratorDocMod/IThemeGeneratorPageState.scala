@@ -22,9 +22,7 @@ object IThemeGeneratorPageState {
     colorPickerElement: HTMLElement = null,
     colorPickerSlotRule: IThemeSlotRule = null
   ): IThemeGeneratorPageState = {
-    val __obj = js.Dynamic.literal(colorPickerVisible = colorPickerVisible.asInstanceOf[js.Any], themeRules = themeRules.asInstanceOf[js.Any])
-    if (colorPickerElement != null) __obj.updateDynamic("colorPickerElement")(colorPickerElement.asInstanceOf[js.Any])
-    if (colorPickerSlotRule != null) __obj.updateDynamic("colorPickerSlotRule")(colorPickerSlotRule.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colorPickerVisible = colorPickerVisible.asInstanceOf[js.Any], themeRules = themeRules.asInstanceOf[js.Any], colorPickerElement = colorPickerElement.asInstanceOf[js.Any], colorPickerSlotRule = colorPickerSlotRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemeGeneratorPageState]
   }
 }

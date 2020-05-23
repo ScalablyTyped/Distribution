@@ -11,9 +11,9 @@ trait SidebarDockDetail extends js.Object {
 
 object SidebarDockDetail {
   @scala.inline
-  def apply(targetWindowId: Int | Double = null): SidebarDockDetail = {
+  def apply(targetWindowId: js.UndefOr[Double] = js.undefined): SidebarDockDetail = {
     val __obj = js.Dynamic.literal()
-    if (targetWindowId != null) __obj.updateDynamic("targetWindowId")(targetWindowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetWindowId)) __obj.updateDynamic("targetWindowId")(targetWindowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidebarDockDetail]
   }
 }

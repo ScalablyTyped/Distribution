@@ -1,7 +1,7 @@
 package typings.gapiCalendar.gapi.client.calendar
 
-import typings.gapiCalendar.AnonBusy
-import typings.gapiCalendar.AnonCalendars
+import typings.gapiCalendar.anon.Busy
+import typings.gapiCalendar.anon.Calendars
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersignfreeBusy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,15 +11,15 @@ trait FreeBusy_ extends js.Object {
   var kind: calendarNumbersignfreeBusy
   var timeMax: datetime
   var timeMin: datetime
-  def calendars(key: String): AnonBusy
-  def groups(key: String): AnonCalendars
+  def calendars(key: String): Busy
+  def groups(key: String): Calendars
 }
 
 object FreeBusy_ {
   @scala.inline
   def apply(
-    calendars: String => AnonBusy,
-    groups: String => AnonCalendars,
+    calendars: String => Busy,
+    groups: String => Calendars,
     kind: calendarNumbersignfreeBusy,
     timeMax: datetime,
     timeMin: datetime

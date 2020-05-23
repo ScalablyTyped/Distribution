@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.Polygon")
 @js.native
-class Polygon () extends OverlayView {
-  def this(options: PolygonOptions) = this()
+trait Polygon extends OverlayView {
   def getAreaSize(): Double = js.native
   def getBounds(): Bounds = js.native
   def getClickable(): Boolean = js.native

@@ -19,8 +19,8 @@ object Options {
     ssrMatchMedia: /* query */ String => MuiMediaQueryList = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultMatches)) __obj.updateDynamic("defaultMatches")(defaultMatches.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSsr)) __obj.updateDynamic("noSsr")(noSsr.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultMatches)) __obj.updateDynamic("defaultMatches")(defaultMatches.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSsr)) __obj.updateDynamic("noSsr")(noSsr.get.asInstanceOf[js.Any])
     if (ssrMatchMedia != null) __obj.updateDynamic("ssrMatchMedia")(js.Any.fromFunction1(ssrMatchMedia))
     __obj.asInstanceOf[Options]
   }

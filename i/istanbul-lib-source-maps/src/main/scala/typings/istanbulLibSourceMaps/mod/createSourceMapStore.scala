@@ -1,6 +1,6 @@
 package typings.istanbulLibSourceMaps.mod
 
-import typings.istanbulLibSourceMaps.PartialMapStoreOptions
+import typings.istanbulLibSourceMaps.anon.PartialMapStoreOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

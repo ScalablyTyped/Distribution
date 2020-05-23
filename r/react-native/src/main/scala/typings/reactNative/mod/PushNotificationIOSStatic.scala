@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.AnonCode
+import typings.reactNative.anon.Code
 import typings.reactNative.reactNativeStrings.localNotification
 import typings.reactNative.reactNativeStrings.notification
 import typings.reactNative.reactNativeStrings.register
@@ -57,7 +57,7 @@ trait PushNotificationIOSStatic extends js.Object {
     * The type MUST be 'registrationError'
     */
   @JSName("addEventListener")
-  def addEventListener_registrationError(`type`: registrationError, handler: js.Function1[/* error */ AnonCode, Unit]): Unit = js.native
+  def addEventListener_registrationError(`type`: registrationError, handler: js.Function1[/* error */ Code, Unit]): Unit = js.native
   /**
     * Cancels all scheduled localNotifications
     */
@@ -107,7 +107,7 @@ trait PushNotificationIOSStatic extends js.Object {
   def removeEventListener(
     `type`: PushNotificationEventName,
     handler: js.Function1[
-      (/* error */ AnonCode) | (/* notification */ PushNotification) | (/* deviceToken */ String), 
+      (/* error */ Code) | (/* notification */ PushNotification) | (/* deviceToken */ String), 
       Unit
     ]
   ): Unit = js.native

@@ -1,26 +1,26 @@
 package typings.gapiClientBlogger.gapi.client.blogger
 
-import typings.gapiClientBlogger.AnonDisplayName
-import typings.gapiClientBlogger.AnonId
+import typings.gapiClientBlogger.anon.DisplayName
+import typings.gapiClientBlogger.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Comment extends js.Object {
   /** The author of this Comment. */
-  var author: js.UndefOr[AnonDisplayName] = js.undefined
+  var author: js.UndefOr[DisplayName] = js.undefined
   /** Data about the blog containing this comment. */
-  var blog: js.UndefOr[AnonId] = js.undefined
+  var blog: js.UndefOr[Id] = js.undefined
   /** The actual content of the comment. May include HTML markup. */
   var content: js.UndefOr[String] = js.undefined
   /** The identifier for this resource. */
   var id: js.UndefOr[String] = js.undefined
   /** Data about the comment this is in reply to. */
-  var inReplyTo: js.UndefOr[AnonId] = js.undefined
+  var inReplyTo: js.UndefOr[Id] = js.undefined
   /** The kind of this entry. Always blogger#comment */
   var kind: js.UndefOr[String] = js.undefined
   /** Data about the post containing this comment. */
-  var post: js.UndefOr[AnonId] = js.undefined
+  var post: js.UndefOr[Id] = js.undefined
   /** RFC 3339 date-time when this comment was published. */
   var published: js.UndefOr[String] = js.undefined
   /** The API REST URL to fetch this resource from. */
@@ -34,13 +34,13 @@ trait Comment extends js.Object {
 object Comment {
   @scala.inline
   def apply(
-    author: AnonDisplayName = null,
-    blog: AnonId = null,
+    author: DisplayName = null,
+    blog: Id = null,
     content: String = null,
     id: String = null,
-    inReplyTo: AnonId = null,
+    inReplyTo: Id = null,
     kind: String = null,
-    post: AnonId = null,
+    post: Id = null,
     published: String = null,
     selfLink: String = null,
     status: String = null,

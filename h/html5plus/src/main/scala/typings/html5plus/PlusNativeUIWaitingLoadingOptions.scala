@@ -16,18 +16,18 @@ trait PlusNativeUIWaitingLoadingOptions extends js.Object {
   /**
     * loading图标显示样式
     * 可取值：
-    * 	"block"表示图标与文字分开两行显示，上面显示loading图标，下面显示文字；
-    * 	"inline"表示loading图标与文字在同一行显示，左边显示loading图标，右边显示文字；
-    * 	"none"表示不显示loading图标；
+    *     "block"表示图标与文字分开两行显示，上面显示loading图标，下面显示文字；
+    *     "inline"表示loading图标与文字在同一行显示，左边显示loading图标，右边显示文字；
+    *     "none"表示不显示loading图标；
     * - block: 
-    * 	loading图标与文字分开两行显示，上面显示loading图标，下面显示文字。
-    * 								
+    *     loading图标与文字分开两行显示，上面显示loading图标，下面显示文字。
+    *                                 
     * - inline: 
-    * 	loading图标与文字在同一行显示，左边显示loading图标，右边显示文字。
-    * 								
+    *     loading图标与文字在同一行显示，左边显示loading图标，右边显示文字。
+    *                                 
     * - none: 
-    * 	不显示loading图标。
-    * 								
+    *     不显示loading图标。
+    *                                 
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -42,7 +42,7 @@ trait PlusNativeUIWaitingLoadingOptions extends js.Object {
   /**
     * loading图标路径
     * 自定义loading图标的路径，png格式，并且必须是本地资源地址；
-    * 	loading图要求宽是高的整数倍，显示等待框时按照图片的高横向截取每帧刷新。
+    *     loading图要求宽是高的整数倍，显示等待框时按照图片的高横向截取每帧刷新。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
@@ -62,13 +62,13 @@ object PlusNativeUIWaitingLoadingOptions {
     display: block | `inline` | none = null,
     height: String = null,
     icon: String = null,
-    interval: Int | Double = null
+    interval: js.UndefOr[Double] = js.undefined
   ): PlusNativeUIWaitingLoadingOptions = {
     val __obj = js.Dynamic.literal()
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIWaitingLoadingOptions]
   }
 }

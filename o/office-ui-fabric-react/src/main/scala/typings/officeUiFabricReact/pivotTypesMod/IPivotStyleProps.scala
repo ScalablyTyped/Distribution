@@ -31,9 +31,9 @@ object IPivotStyleProps {
   ): IPivotStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkIsSelected)) __obj.updateDynamic("linkIsSelected")(linkIsSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootIsLarge)) __obj.updateDynamic("rootIsLarge")(rootIsLarge.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootIsTabs)) __obj.updateDynamic("rootIsTabs")(rootIsTabs.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkIsSelected)) __obj.updateDynamic("linkIsSelected")(linkIsSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootIsLarge)) __obj.updateDynamic("rootIsLarge")(rootIsLarge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootIsTabs)) __obj.updateDynamic("rootIsTabs")(rootIsTabs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPivotStyleProps]
   }
 }

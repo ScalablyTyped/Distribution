@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.RuntimeData
 import typings.officeJsPreview.Excel.Interfaces.RuntimeLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.RuntimeUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.5]
   */
-@JSGlobal("Excel.Runtime")
 @js.native
-class Runtime () extends ClientObject {
+trait Runtime extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Runtime: RequestContext = js.native
@@ -36,7 +35,7 @@ class Runtime () extends ClientObject {
     */
   def load(): Runtime = js.native
   def load(options: RuntimeLoadOptions): Runtime = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Runtime = js.native
+  def load(propertyNamesAndPaths: Expand): Runtime = js.native
   def load(propertyNames: String): Runtime = js.native
   def load(propertyNames: js.Array[String]): Runtime = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

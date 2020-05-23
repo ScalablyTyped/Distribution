@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.Polygon")
 @js.native
-class Polygon () extends MVCObject {
-  def this(opts: PolygonOptions) = this()
+trait Polygon extends MVCObject {
   def getDraggable(): Boolean = js.native
   def getEditable(): Boolean = js.native
   def getMap(): Map[Element] = js.native

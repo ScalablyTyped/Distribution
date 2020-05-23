@@ -1,6 +1,6 @@
 package typings.foreverMonitor.mod
 
-import typings.foreverMonitor.AnonArgs
+import typings.foreverMonitor.anon.Args
 import typings.node.NodeJS.ProcessEnv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait Options extends js.Object {
   var max: js.UndefOr[Double] = js.undefined
   var minUptime: js.UndefOr[Double] = js.undefined
   var outFile: js.UndefOr[String] = js.undefined
-  var parser: js.UndefOr[js.Function2[/* command */ String, /* args */ js.Array[String], AnonArgs]] = js.undefined
+  var parser: js.UndefOr[js.Function2[/* command */ String, /* args */ js.Array[String], Args]] = js.undefined
   var pidFile: js.UndefOr[String] = js.undefined
   var silent: js.UndefOr[Boolean] = js.undefined
   var sourceDir: js.UndefOr[String] = js.undefined
@@ -40,15 +40,15 @@ object Options {
     errFile: String = null,
     killTree: js.UndefOr[Boolean] = js.undefined,
     logFile: String = null,
-    max: Int | Double = null,
-    minUptime: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
+    minUptime: js.UndefOr[Double] = js.undefined,
     outFile: String = null,
-    parser: (/* command */ String, /* args */ js.Array[String]) => AnonArgs = null,
+    parser: (/* command */ String, /* args */ js.Array[String]) => Args = null,
     pidFile: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
     sourceDir: String = null,
     spawnWith: SpawnWith = null,
-    spinSleepTime: Int | Double = null,
+    spinSleepTime: js.UndefOr[Double] = js.undefined,
     uid: String = null,
     watch: js.UndefOr[Boolean] = js.undefined,
     watchDirectory: String = null,
@@ -61,21 +61,21 @@ object Options {
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (errFile != null) __obj.updateDynamic("errFile")(errFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(killTree)) __obj.updateDynamic("killTree")(killTree.asInstanceOf[js.Any])
+    if (!js.isUndefined(killTree)) __obj.updateDynamic("killTree")(killTree.get.asInstanceOf[js.Any])
     if (logFile != null) __obj.updateDynamic("logFile")(logFile.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (minUptime != null) __obj.updateDynamic("minUptime")(minUptime.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minUptime)) __obj.updateDynamic("minUptime")(minUptime.get.asInstanceOf[js.Any])
     if (outFile != null) __obj.updateDynamic("outFile")(outFile.asInstanceOf[js.Any])
     if (parser != null) __obj.updateDynamic("parser")(js.Any.fromFunction2(parser))
     if (pidFile != null) __obj.updateDynamic("pidFile")(pidFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (sourceDir != null) __obj.updateDynamic("sourceDir")(sourceDir.asInstanceOf[js.Any])
     if (spawnWith != null) __obj.updateDynamic("spawnWith")(spawnWith.asInstanceOf[js.Any])
-    if (spinSleepTime != null) __obj.updateDynamic("spinSleepTime")(spinSleepTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinSleepTime)) __obj.updateDynamic("spinSleepTime")(spinSleepTime.get.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
     if (watchDirectory != null) __obj.updateDynamic("watchDirectory")(watchDirectory.asInstanceOf[js.Any])
-    if (!js.isUndefined(watchIgnoreDotFiles)) __obj.updateDynamic("watchIgnoreDotFiles")(watchIgnoreDotFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(watchIgnoreDotFiles)) __obj.updateDynamic("watchIgnoreDotFiles")(watchIgnoreDotFiles.get.asInstanceOf[js.Any])
     if (watchIgnorePatterns != null) __obj.updateDynamic("watchIgnorePatterns")(watchIgnorePatterns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

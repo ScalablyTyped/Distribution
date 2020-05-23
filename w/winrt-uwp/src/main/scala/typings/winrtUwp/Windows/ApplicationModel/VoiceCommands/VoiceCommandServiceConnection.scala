@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
-import typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceTriggerDetails
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -13,9 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The background app service connection to Cortana. */
-@JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection")
 @js.native
-abstract class VoiceCommandServiceConnection () extends js.Object {
+trait VoiceCommandServiceConnection extends js.Object {
   /** Gets the locale for the voice command. */
   var language: Language = js.native
   /** Event raised when the voice command is completed and the background app service is about to be terminated. */
@@ -76,17 +74,5 @@ abstract class VoiceCommandServiceConnection () extends js.Object {
     * @return The VoiceCommandDisambiguationResult object with the user's response.
     */
   def requestDisambiguationAsync(response: VoiceCommandResponse): IPromiseWithIAsyncOperation[VoiceCommandDisambiguationResult] = js.native
-}
-
-/* static members */
-@JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection")
-@js.native
-object VoiceCommandServiceConnection extends js.Object {
-  /**
-    * Retrieves a VoiceCommandServiceConnection object from the AppServiceTriggerDetails that contains info associated with the background task for the app service.
-    * @param triggerDetails Contains info associated with the background task for the app service.
-    * @return The background app service connection to Cortana.
-    */
-  def fromAppServiceTriggerDetails(triggerDetails: AppServiceTriggerDetails): VoiceCommandServiceConnection = js.native
 }
 

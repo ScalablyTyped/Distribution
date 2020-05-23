@@ -62,10 +62,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.activexExcel.Excel.AddSheetResult because Already inherited */ @JSGlobal("Excel.Chart")
-@js.native
-class Chart protected () extends Sheet {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.activexExcel.Excel.AddSheetResult because Already inherited */ @js.native
+trait Chart extends Sheet {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Area3DGroup: ChartGroup = js.native
   var AutoScaling: Boolean = js.native

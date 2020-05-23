@@ -18,10 +18,10 @@ trait DocumentClass extends js.Object {
 
 object DocumentClass {
   @scala.inline
-  def apply(Name: String = null, Score: Int | scala.Double = null): DocumentClass = {
+  def apply(Name: String = null, Score: js.UndefOr[Float] = js.undefined): DocumentClass = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentClass]
   }
 }

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,4 @@ trait LineOfSightTarget extends Accessor {
     */
   val visible: Boolean = js.native
 }
-
-@JSGlobal("__esri.LineOfSightTarget")
-@js.native
-object LineOfSightTarget extends TopLevel[LineOfSightTargetConstructor]
 

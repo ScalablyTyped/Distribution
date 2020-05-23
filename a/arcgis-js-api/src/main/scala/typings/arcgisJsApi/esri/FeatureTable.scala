@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`selection-change`
 import scala.scalajs.js
@@ -46,8 +45,4 @@ trait FeatureTable extends Widget_ {
   @JSName("on")
   def on_selectionchange(name: `selection-change`, eventHandler: FeatureTableSelectionChangeEventHandler): IHandle = js.native
 }
-
-@JSGlobal("__esri.FeatureTable")
-@js.native
-object FeatureTable extends TopLevel[FeatureTableConstructor]
 

@@ -66,7 +66,7 @@ object StackFrame {
     setLineNumber: () => Unit,
     setSource: () => Unit,
     args: js.Array[_] = null,
-    columnNumber: Int | Double = null,
+    columnNumber: js.UndefOr[Double] = js.undefined,
     evalOrigin: StackFrame = null,
     fileName: String = null,
     functionName: String = null,
@@ -74,20 +74,20 @@ object StackFrame {
     isEval: js.UndefOr[Boolean] = js.undefined,
     isNative: js.UndefOr[Boolean] = js.undefined,
     isTopLevel: js.UndefOr[Boolean] = js.undefined,
-    lineNumber: Int | Double = null,
+    lineNumber: js.UndefOr[Double] = js.undefined,
     source: String = null
   ): StackFrame = {
     val __obj = js.Dynamic.literal(getArgs = js.Any.fromFunction0(getArgs), getColumnNumber = js.Any.fromFunction0(getColumnNumber), getEvalOrigin = js.Any.fromFunction0(getEvalOrigin), getFileName = js.Any.fromFunction0(getFileName), getFunctionName = js.Any.fromFunction0(getFunctionName), getIsConstructor = js.Any.fromFunction0(getIsConstructor), getIsEval = js.Any.fromFunction0(getIsEval), getIsNative = js.Any.fromFunction0(getIsNative), getIsTopLevel = js.Any.fromFunction0(getIsTopLevel), getLineNumber = js.Any.fromFunction0(getLineNumber), getSource = js.Any.fromFunction0(getSource), setArgs = js.Any.fromFunction0(setArgs), setColumnNumber = js.Any.fromFunction0(setColumnNumber), setEvalOrigin = js.Any.fromFunction0(setEvalOrigin), setFileName = js.Any.fromFunction0(setFileName), setFunctionName = js.Any.fromFunction0(setFunctionName), setIsConstructor = js.Any.fromFunction0(setIsConstructor), setIsEval = js.Any.fromFunction0(setIsEval), setIsNative = js.Any.fromFunction0(setIsNative), setIsTopLevel = js.Any.fromFunction0(setIsTopLevel), setLineNumber = js.Any.fromFunction0(setLineNumber), setSource = js.Any.fromFunction0(setSource))
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnNumber)) __obj.updateDynamic("columnNumber")(columnNumber.get.asInstanceOf[js.Any])
     if (evalOrigin != null) __obj.updateDynamic("evalOrigin")(evalOrigin.asInstanceOf[js.Any])
     if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isConstructor)) __obj.updateDynamic("isConstructor")(isConstructor.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEval)) __obj.updateDynamic("isEval")(isEval.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNative)) __obj.updateDynamic("isNative")(isNative.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTopLevel)) __obj.updateDynamic("isTopLevel")(isTopLevel.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConstructor)) __obj.updateDynamic("isConstructor")(isConstructor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEval)) __obj.updateDynamic("isEval")(isEval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNative)) __obj.updateDynamic("isNative")(isNative.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTopLevel)) __obj.updateDynamic("isTopLevel")(isTopLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrame]
   }

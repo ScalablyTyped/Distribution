@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PBRBaseSimpleMaterial")
 @js.native
-abstract class PBRBaseSimpleMaterial protected () extends PBRBaseMaterial {
-  /**
-    * Instantiates a new PBRMaterial instance.
-    *
-    * @param name The material name
-    * @param scene The scene the material will be use in.
-    */
-  def this(name: String, scene: Scene) = this()
+trait PBRBaseSimpleMaterial extends PBRBaseMaterial {
   /**
     * Defines the alpha limits in alpha test mode.
     */

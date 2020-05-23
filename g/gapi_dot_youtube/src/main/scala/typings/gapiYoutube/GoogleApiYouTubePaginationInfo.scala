@@ -1,5 +1,6 @@
 package typings.gapiYoutube
 
+import typings.gapiYoutube.anon.ResultsPerPage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +25,7 @@ trait GoogleApiYouTubePaginationInfo[T] extends js.Object {
   /**
     * The pageInfo object encapsulates paging information for the result set.
     */
-  var pageInfo: AnonResultsPerPage
+  var pageInfo: ResultsPerPage
   /**
     * The token that can be used as the value of the pageToken parameter to retrieve the previous page in the result set.
     */
@@ -38,7 +39,7 @@ object GoogleApiYouTubePaginationInfo {
     items: js.Array[T],
     kind: String,
     nextPageToken: String,
-    pageInfo: AnonResultsPerPage,
+    pageInfo: ResultsPerPage,
     prevPageToken: String
   ): GoogleApiYouTubePaginationInfo[T] = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], nextPageToken = nextPageToken.asInstanceOf[js.Any], pageInfo = pageInfo.asInstanceOf[js.Any], prevPageToken = prevPageToken.asInstanceOf[js.Any])

@@ -35,7 +35,7 @@ trait PlusIoRelativeURL extends js.Object {
   /**
     * 应用资源目录
     * 保存应用的所有html、css、js等资源文件，与文件系统中根目录PRIVATE_WWW一致，后面加相对路径如“_www/res/icon.png”。
-    * 	注意：应用资源目录是只读目录，只能读取次目录下的文件，不能修改或新建。
+    *     注意：应用资源目录是只读目录，只能读取次目录下的文件，不能修改或新建。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */

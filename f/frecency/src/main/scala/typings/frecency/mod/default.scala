@@ -1,10 +1,10 @@
 package typings.frecency.mod
 
-import typings.frecency.AnonExactQueryMatchWeight
-import typings.frecency.AnonFrecencyScore
-import typings.frecency.AnonKeepScores
-import typings.frecency.AnonSearchQuery
-import typings.frecency.AnonSearchResults
+import typings.frecency.anon.ExactQueryMatchWeight
+import typings.frecency.anon.FrecencyScore
+import typings.frecency.anon.KeepScores
+import typings.frecency.anon.SearchQuery
+import typings.frecency.anon.SearchResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
 @JSImport("frecency", JSImport.Default)
 @js.native
 class default[T] protected () extends Frecency[T] {
-  def this(constructOpts: AnonExactQueryMatchWeight) = this()
+  def this(constructOpts: ExactQueryMatchWeight) = this()
   /* CompleteClass */
   override var sort: js.Function1[
-    (/* arg */ AnonKeepScores[T]) | (/* arg */ AnonSearchResults[T]), 
-    js.Array[(T with AnonFrecencyScore) | T]
+    (/* arg */ KeepScores[T]) | (/* arg */ SearchResults[T]), 
+    js.Array[(T with FrecencyScore) | T]
   ] = js.native
   /* CompleteClass */
-  override def save(arg: AnonSearchQuery[T]): Unit = js.native
+  override def save(arg: SearchQuery[T]): Unit = js.native
 }
 

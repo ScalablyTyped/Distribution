@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,23 +27,6 @@ object ListType extends js.Object {
   
   @js.native
   sealed trait Navigation extends ListType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ListType with Double] = js.native
-  /* 0 */ @js.native
-  object Active extends TopLevel[Active with Double]
-  
-  /* 1 */ @js.native
-  object Detail extends TopLevel[Detail with Double]
-  
-  /* 2 */ @js.native
-  object DetailAndActive extends TopLevel[DetailAndActive with Double]
-  
-  /* 3 */ @js.native
-  object Inactive extends TopLevel[Inactive with Double]
-  
-  /* 4 */ @js.native
-  object Navigation extends TopLevel[Navigation with Double]
   
 }
 

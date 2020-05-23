@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait Matchers
   extends Instantiable3[/* env */ Env, /* actual */ js.Any, /* spec */ Env, js.Any]
      with Instantiable4[/* env */ Env, /* actual */ js.Any, /* spec */ Env, /* isNot */ Boolean, js.Any] {
-  var Any: Any_ = js.native
+  var Any: typings.chunkedDc.jasmine.Any = js.native
   var actual: js.Any = js.native
   var env: Env = js.native
   var isNot: js.UndefOr[Boolean] = js.native

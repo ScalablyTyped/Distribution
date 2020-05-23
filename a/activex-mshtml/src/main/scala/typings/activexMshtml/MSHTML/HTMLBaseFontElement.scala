@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLBaseFontElement")
 @js.native
-class HTMLBaseFontElement protected () extends js.Object {
+trait HTMLBaseFontElement extends js.Object {
   @JSName("MSHTML.HTMLBaseFontElement_typekey")
   var MSHTMLDotHTMLBaseFontElement_typekey: HTMLBaseFontElement = js.native
   var accessKey: String = js.native

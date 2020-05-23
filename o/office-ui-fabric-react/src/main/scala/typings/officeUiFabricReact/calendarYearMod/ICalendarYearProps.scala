@@ -24,28 +24,28 @@ object ICalendarYearProps {
   @scala.inline
   def apply(
     className: String = null,
-    maxYear: Int | Double = null,
-    minYear: Int | Double = null,
-    navigatedYear: Int | Double = null,
+    maxYear: js.UndefOr[Double] = js.undefined,
+    minYear: js.UndefOr[Double] = js.undefined,
+    navigatedYear: js.UndefOr[Double] = js.undefined,
     navigationIcons: ICalendarIconStrings = null,
     onHeaderSelect: /* focus */ Boolean => Unit = null,
     onRenderTitle: /* props */ ICalendarYearHeaderProps => ReactNode = null,
     onRenderYear: /* year */ Double => ReactNode = null,
     onSelectYear: /* year */ Double => Unit = null,
-    selectedYear: Int | Double = null,
+    selectedYear: js.UndefOr[Double] = js.undefined,
     strings: ICalendarYearStrings = null
   ): ICalendarYearProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (maxYear != null) __obj.updateDynamic("maxYear")(maxYear.asInstanceOf[js.Any])
-    if (minYear != null) __obj.updateDynamic("minYear")(minYear.asInstanceOf[js.Any])
-    if (navigatedYear != null) __obj.updateDynamic("navigatedYear")(navigatedYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxYear)) __obj.updateDynamic("maxYear")(maxYear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minYear)) __obj.updateDynamic("minYear")(minYear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigatedYear)) __obj.updateDynamic("navigatedYear")(navigatedYear.get.asInstanceOf[js.Any])
     if (navigationIcons != null) __obj.updateDynamic("navigationIcons")(navigationIcons.asInstanceOf[js.Any])
     if (onHeaderSelect != null) __obj.updateDynamic("onHeaderSelect")(js.Any.fromFunction1(onHeaderSelect))
     if (onRenderTitle != null) __obj.updateDynamic("onRenderTitle")(js.Any.fromFunction1(onRenderTitle))
     if (onRenderYear != null) __obj.updateDynamic("onRenderYear")(js.Any.fromFunction1(onRenderYear))
     if (onSelectYear != null) __obj.updateDynamic("onSelectYear")(js.Any.fromFunction1(onSelectYear))
-    if (selectedYear != null) __obj.updateDynamic("selectedYear")(selectedYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedYear)) __obj.updateDynamic("selectedYear")(selectedYear.get.asInstanceOf[js.Any])
     if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalendarYearProps]
   }

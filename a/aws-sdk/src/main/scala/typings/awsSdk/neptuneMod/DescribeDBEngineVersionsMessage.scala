@@ -48,25 +48,25 @@ object DescribeDBEngineVersionsMessage {
   @scala.inline
   def apply(
     DBParameterGroupFamily: String = null,
-    DefaultOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    DefaultOnly: js.UndefOr[Boolean] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     Filters: FilterList = null,
-    ListSupportedCharacterSets: js.UndefOr[scala.Boolean] = js.undefined,
-    ListSupportedTimezones: js.UndefOr[scala.Boolean] = js.undefined,
+    ListSupportedCharacterSets: js.UndefOr[BooleanOptional] = js.undefined,
+    ListSupportedTimezones: js.UndefOr[BooleanOptional] = js.undefined,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   ): DescribeDBEngineVersionsMessage = {
     val __obj = js.Dynamic.literal()
     if (DBParameterGroupFamily != null) __obj.updateDynamic("DBParameterGroupFamily")(DBParameterGroupFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultOnly)) __obj.updateDynamic("DefaultOnly")(DefaultOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultOnly)) __obj.updateDynamic("DefaultOnly")(DefaultOnly.get.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(ListSupportedCharacterSets)) __obj.updateDynamic("ListSupportedCharacterSets")(ListSupportedCharacterSets.asInstanceOf[js.Any])
-    if (!js.isUndefined(ListSupportedTimezones)) __obj.updateDynamic("ListSupportedTimezones")(ListSupportedTimezones.asInstanceOf[js.Any])
+    if (!js.isUndefined(ListSupportedCharacterSets)) __obj.updateDynamic("ListSupportedCharacterSets")(ListSupportedCharacterSets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ListSupportedTimezones)) __obj.updateDynamic("ListSupportedTimezones")(ListSupportedTimezones.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBEngineVersionsMessage]
   }
 }

@@ -4,9 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.StringResult")
-@js.native
-class StringResult () extends js.Object {
-  def get_value(): String = js.native
+trait StringResult extends js.Object {
+  def get_value(): String
+}
+
+object StringResult {
+  @scala.inline
+  def apply(get_value: () => String): StringResult = {
+    val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value))
+    __obj.asInstanceOf[StringResult]
+  }
 }
 

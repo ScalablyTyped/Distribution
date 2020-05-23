@@ -9,14 +9,5 @@ import scala.scalajs.js.annotation._
   *
   * @class Sleeping
   */
-@JSGlobal("MatterJS.Sleeping")
-@js.native
-class Sleeping () extends js.Object
-
-/* static members */
-@JSGlobal("MatterJS.Sleeping")
-@js.native
-object Sleeping extends js.Object {
-  def set(body: BodyType, isSleeping: Boolean): Unit = js.native
-}
+trait Sleeping extends js.Object
 

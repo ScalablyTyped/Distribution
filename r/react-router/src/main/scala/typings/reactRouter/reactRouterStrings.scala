@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 object reactRouterStrings {
   @js.native
-  sealed trait AnonHistory extends js.Object
+  sealed trait History extends js.Object
   
   @js.native
-  sealed trait AnonLocation extends js.Object
+  sealed trait Location extends js.Object
   
   @js.native
   sealed trait PUSH extends js.Object
@@ -27,10 +27,10 @@ object reactRouterStrings {
   sealed trait RouterChildContext extends js.Object
   
   @js.native
-  sealed trait history extends js.Object
+  sealed trait history_ extends js.Object
   
   @js.native
-  sealed trait location extends js.Object
+  sealed trait location_ extends js.Object
   
   @js.native
   sealed trait `match` extends js.Object
@@ -48,9 +48,9 @@ object reactRouterStrings {
   sealed trait useRouteMatch extends js.Object
   
   @scala.inline
-  def AnonHistory: AnonHistory = "AnonHistory".asInstanceOf[AnonHistory]
+  def History: History = "History".asInstanceOf[History]
   @scala.inline
-  def AnonLocation: AnonLocation = "AnonLocation".asInstanceOf[AnonLocation]
+  def Location: Location = "Location".asInstanceOf[Location]
   @scala.inline
   def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
   @scala.inline
@@ -62,9 +62,9 @@ object reactRouterStrings {
   @scala.inline
   def RouterChildContext: RouterChildContext = "RouterChildContext".asInstanceOf[RouterChildContext]
   @scala.inline
-  def history: history = "history".asInstanceOf[history]
+  def history_ : history_ = "history".asInstanceOf[history_]
   @scala.inline
-  def location: location = "location".asInstanceOf[location]
+  def location_ : location_ = "location".asInstanceOf[location_]
   @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
   @scala.inline

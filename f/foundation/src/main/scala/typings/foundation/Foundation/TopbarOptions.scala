@@ -20,7 +20,7 @@ object TopbarOptions {
   def apply(
     back_text: String = null,
     custom_back_text: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     is_hover: js.UndefOr[Boolean] = js.undefined,
     mobile_show_parent_link: js.UndefOr[Boolean] = js.undefined,
     scrolltop: js.UndefOr[Boolean] = js.undefined,
@@ -29,11 +29,11 @@ object TopbarOptions {
   ): TopbarOptions = {
     val __obj = js.Dynamic.literal()
     if (back_text != null) __obj.updateDynamic("back_text")(back_text.asInstanceOf[js.Any])
-    if (!js.isUndefined(custom_back_text)) __obj.updateDynamic("custom_back_text")(custom_back_text.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover.asInstanceOf[js.Any])
-    if (!js.isUndefined(mobile_show_parent_link)) __obj.updateDynamic("mobile_show_parent_link")(mobile_show_parent_link.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrolltop)) __obj.updateDynamic("scrolltop")(scrolltop.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom_back_text)) __obj.updateDynamic("custom_back_text")(custom_back_text.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mobile_show_parent_link)) __obj.updateDynamic("mobile_show_parent_link")(mobile_show_parent_link.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrolltop)) __obj.updateDynamic("scrolltop")(scrolltop.get.asInstanceOf[js.Any])
     if (sticky_class != null) __obj.updateDynamic("sticky_class")(sticky_class.asInstanceOf[js.Any])
     if (sticky_on != null) __obj.updateDynamic("sticky_on")(sticky_on.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopbarOptions]

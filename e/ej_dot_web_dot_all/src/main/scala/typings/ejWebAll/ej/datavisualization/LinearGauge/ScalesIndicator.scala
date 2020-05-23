@@ -53,25 +53,25 @@ object ScalesIndicator {
     backgroundColor: String = null,
     border: ScalesIndicatorsBorder = null,
     font: ScalesIndicatorsFont = null,
-    height: Int | Double = null,
-    opacity: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    opacity: js.UndefOr[Double] = js.undefined,
     position: ScalesIndicatorsPosition = null,
     stateRanges: js.Array[ScalesIndicatorsStateRange] = null,
     textLocation: ScalesIndicatorsTextLocation = null,
     `type`: IndicatorTypes | String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): ScalesIndicator = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (stateRanges != null) __obj.updateDynamic("stateRanges")(stateRanges.asInstanceOf[js.Any])
     if (textLocation != null) __obj.updateDynamic("textLocation")(textLocation.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesIndicator]
   }
 }

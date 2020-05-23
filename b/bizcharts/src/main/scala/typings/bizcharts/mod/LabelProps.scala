@@ -61,21 +61,21 @@ object LabelProps {
     key: Key = null,
     labelEmit: js.UndefOr[Boolean] = js.undefined,
     labelLine: (js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], line]) | line | Boolean = null,
-    offset: Int | Double = null,
-    ref: LegacyRef[js.Any] = null,
+    offset: js.UndefOr[Double] = js.undefined,
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined,
     textStyle: text | (js.Function1[/* t */ js.UndefOr[js.Any], text]) = null
   ): LabelProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRotate)) __obj.updateDynamic("autoRotate")(autoRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRotate)) __obj.updateDynamic("autoRotate")(autoRotate.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (htmlTemplate != null) __obj.updateDynamic("htmlTemplate")(htmlTemplate.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelEmit)) __obj.updateDynamic("labelEmit")(labelEmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelEmit)) __obj.updateDynamic("labelEmit")(labelEmit.get.asInstanceOf[js.Any])
     if (labelLine != null) __obj.updateDynamic("labelLine")(labelLine.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelProps]
   }

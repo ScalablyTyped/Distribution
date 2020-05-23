@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonDestroyPrimitives
+import typings.cesium.anon.DestroyPrimitives
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PrimitiveCollection")
 @js.native
 class PrimitiveCollection () extends js.Object {
-  def this(options: AnonDestroyPrimitives) = this()
+  def this(options: DestroyPrimitives) = this()
   var destroyPrimitives: Boolean = js.native
   val length: Double = js.native
   var show: Boolean = js.native

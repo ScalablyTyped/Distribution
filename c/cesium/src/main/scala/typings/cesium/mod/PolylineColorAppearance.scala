@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonFragmentShaderSource
+import typings.cesium.anon.FragmentShaderSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PolylineColorAppearance")
 @js.native
 class PolylineColorAppearance () extends Appearance {
-  def this(options: AnonFragmentShaderSource) = this()
+  def this(options: FragmentShaderSource) = this()
   val vertexFormat: VertexFormat = js.native
 }
 

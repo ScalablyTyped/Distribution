@@ -15,13 +15,13 @@ object ControlParams {
   @scala.inline
   def apply(
     event_callback: () => Unit = null,
-    event_timeout: Int | Double = null,
+    event_timeout: js.UndefOr[Double] = js.undefined,
     groups: String | js.Array[String] = null,
     send_to: String | js.Array[String] = null
   ): ControlParams = {
     val __obj = js.Dynamic.literal()
     if (event_callback != null) __obj.updateDynamic("event_callback")(js.Any.fromFunction0(event_callback))
-    if (event_timeout != null) __obj.updateDynamic("event_timeout")(event_timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(event_timeout)) __obj.updateDynamic("event_timeout")(event_timeout.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (send_to != null) __obj.updateDynamic("send_to")(send_to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlParams]

@@ -54,10 +54,10 @@ object CreateWorkspaceParams {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(learning_opt_out)) __obj.updateDynamic("learning_opt_out")(learning_opt_out.asInstanceOf[js.Any])
+    if (!js.isUndefined(learning_opt_out)) __obj.updateDynamic("learning_opt_out")(learning_opt_out.get.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (system_settings != null) __obj.updateDynamic("system_settings")(system_settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkspaceParams]
   }

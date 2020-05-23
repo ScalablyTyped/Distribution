@@ -15,10 +15,8 @@ object RaxSVGElement {
     key: Key = null,
     ref: LegacyRef[SVGElement] = null
   ): RaxSVGElement = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaxSVGElement]
   }
 }

@@ -14,10 +14,13 @@ trait IGetIamPolicyRequest extends js.Object {
 
 object IGetIamPolicyRequest {
   @scala.inline
-  def apply(options: IGetPolicyOptions = null, resource: String = null): IGetIamPolicyRequest = {
+  def apply(
+    options: js.UndefOr[Null | IGetPolicyOptions] = js.undefined,
+    resource: js.UndefOr[Null | String] = js.undefined
+  ): IGetIamPolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(resource)) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetIamPolicyRequest]
   }
 }

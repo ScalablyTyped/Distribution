@@ -41,21 +41,21 @@ object TrainingOptions {
   @scala.inline
   def apply(
     cost: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double = null,
-    error: Int | Double = null,
-    iterations: Int | Double = null,
-    log: Int | Double = null,
+    error: js.UndefOr[Double] = js.undefined,
+    iterations: js.UndefOr[Double] = js.undefined,
+    log: js.UndefOr[Double] = js.undefined,
     rate: Double | js.Array[Double] | (js.Function2[/* iterations */ Double, /* error */ Double, Double]) = null,
     schedule: TrainingScheduleOptions = null,
     shuffle: js.UndefOr[Boolean] = js.undefined
   ): TrainingOptions = {
     val __obj = js.Dynamic.literal()
     if (cost != null) __obj.updateDynamic("cost")(js.Any.fromFunction2(cost))
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
     if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
+    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingOptions]
   }
 }

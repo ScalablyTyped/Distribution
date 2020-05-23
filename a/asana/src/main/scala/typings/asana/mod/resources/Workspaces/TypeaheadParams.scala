@@ -12,10 +12,10 @@ trait TypeaheadParams extends js.Object {
 
 object TypeaheadParams {
   @scala.inline
-  def apply(`type`: String, count: Int | Double = null, query: String = null): TypeaheadParams = {
+  def apply(`type`: String, count: js.UndefOr[Double] = js.undefined, query: String = null): TypeaheadParams = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeaheadParams]
   }

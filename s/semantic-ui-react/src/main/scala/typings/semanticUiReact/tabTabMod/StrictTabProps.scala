@@ -2,7 +2,7 @@ package typings.semanticUiReact.tabTabMod
 
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.semanticUiReact.AnonMenuItem
+import typings.semanticUiReact.anon.MenuItem
 import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
 import typings.std.HTMLDivElement
@@ -46,7 +46,7 @@ trait StrictTabProps extends js.Object {
     *   pane: 'Welcome',
     * }
     */
-  var panes: js.UndefOr[js.Array[AnonMenuItem]] = js.undefined
+  var panes: js.UndefOr[js.Array[MenuItem]] = js.undefined
   /** A Tab can render only active pane. */
   var renderActiveOnly: js.UndefOr[Boolean] = js.undefined
 }
@@ -61,7 +61,7 @@ object StrictTabProps {
     menu: js.Any = null,
     menuPosition: left | right = null,
     onTabChange: (/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* data */ TabProps) => Unit = null,
-    panes: js.Array[AnonMenuItem] = null,
+    panes: js.Array[MenuItem] = null,
     renderActiveOnly: js.UndefOr[Boolean] = js.undefined
   ): StrictTabProps = {
     val __obj = js.Dynamic.literal()
@@ -73,7 +73,7 @@ object StrictTabProps {
     if (menuPosition != null) __obj.updateDynamic("menuPosition")(menuPosition.asInstanceOf[js.Any])
     if (onTabChange != null) __obj.updateDynamic("onTabChange")(js.Any.fromFunction2(onTabChange))
     if (panes != null) __obj.updateDynamic("panes")(panes.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderActiveOnly)) __obj.updateDynamic("renderActiveOnly")(renderActiveOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderActiveOnly)) __obj.updateDynamic("renderActiveOnly")(renderActiveOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictTabProps]
   }
 }

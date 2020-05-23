@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ object AssignmentStatement {
     init: js.Array[Expression],
     `type`: typings.luaparse.luaparseStrings.AssignmentStatement,
     variables: js.Array[IndexExpression | MemberExpression | Identifier],
-    loc: AnonEnd = null
+    loc: End = null
   ): AssignmentStatement = {
     val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

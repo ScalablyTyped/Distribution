@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.DataTransfer
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object DataPackageOperation extends js.Object {
   /** No action. Typically used when the DataPackage object requires delayed rendering. */
   @js.native
   sealed trait none extends DataPackageOperation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DataPackageOperation with Double] = js.native
-  /* 1 */ @js.native
-  object copy extends TopLevel[copy with Double]
-  
-  /* 3 */ @js.native
-  object link extends TopLevel[link with Double]
-  
-  /* 2 */ @js.native
-  object move extends TopLevel[move with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

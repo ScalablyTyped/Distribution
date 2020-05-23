@@ -13,7 +13,7 @@ object Attributes {
   @scala.inline
   def apply(jsx: js.UndefOr[Boolean] = js.undefined, key: Key = null): Attributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }

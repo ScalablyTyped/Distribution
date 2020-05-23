@@ -1,7 +1,7 @@
 package typings.jcanvas
 
 import typings.jquery.JQueryStatic
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jcanvas", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def apply(jquery: JQueryStatic, window: Window_): Unit = js.native
+  def apply(jquery: JQueryStatic, window: Window): Unit = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,26 +30,6 @@ object BorderStyle extends js.Object {
   
   @js.native
   sealed trait SOLID_THICK extends BorderStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BorderStyle with Double] = js.native
-  /* 1 */ @js.native
-  object DASHED extends TopLevel[DASHED with Double]
-  
-  /* 0 */ @js.native
-  object DOTTED extends TopLevel[DOTTED with Double]
-  
-  /* 5 */ @js.native
-  object DOUBLE extends TopLevel[DOUBLE with Double]
-  
-  /* 2 */ @js.native
-  object SOLID extends TopLevel[SOLID with Double]
-  
-  /* 3 */ @js.native
-  object SOLID_MEDIUM extends TopLevel[SOLID_MEDIUM with Double]
-  
-  /* 4 */ @js.native
-  object SOLID_THICK extends TopLevel[SOLID_THICK with Double]
   
 }
 

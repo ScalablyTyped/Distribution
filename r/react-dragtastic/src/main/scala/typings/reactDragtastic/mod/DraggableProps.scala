@@ -1,7 +1,7 @@
 package typings.reactDragtastic.mod
 
 import typings.react.mod.ReactNode
-import typings.reactDragtastic.StateisActivebooleanevent
+import typings.reactDragtastic.anon.StateisActivebooleanevent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,22 +34,22 @@ object DraggableProps {
   def apply(
     children: StateisActivebooleanevent => ReactNode,
     data: js.Any = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     id: Id = null,
     onDrag: () => Unit = null,
     onDragEnd: /* data */ js.Any => Unit = null,
     onDragStart: /* data */ js.Any => Unit = null,
-    subscribeTo: js.Array[String] = null,
+    subscribeTo: js.UndefOr[Null | js.Array[String]] = js.undefined,
     `type`: Type = null
   ): DraggableProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction0(onDrag))
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscribeTo)) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableProps]
   }

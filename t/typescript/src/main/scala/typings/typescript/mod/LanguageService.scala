@@ -1,6 +1,6 @@
 package typings.typescript.mod
 
-import typings.typescript.WithMetadataCompletionInf
+import typings.typescript.anon.WithMetadataCompletionInf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,7 @@ trait LanguageService extends js.Object {
   def applyCodeActionCommand(fileName: java.lang.String, action: js.Array[CodeActionCommand]): js.Promise[js.Array[ApplyCodeActionCommandResult]] = js.native
   /** @deprecated `fileName` will be ignored */
   def applyCodeActionCommand(fileName: java.lang.String, action: CodeActionCommand): js.Promise[ApplyCodeActionCommandResult] = js.native
+  /** This is used as a part of restarting the language service. */
   def cleanupSemanticCache(): Unit = js.native
   def dispose(): Unit = js.native
   def findReferences(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[ReferencedSymbol]] = js.native
@@ -49,56 +50,38 @@ trait LanguageService extends js.Object {
     formatOptions: FormatCodeSettings,
     preferences: UserPreferences
   ): CombinedCodeActions = js.native
+  /**
+    * Gets global diagnostics related to the program configuration and compiler options.
+    */
   def getCompilerOptionsDiagnostics(): js.Array[Diagnostic] = js.native
-  def getCompletionEntryDetails(fileName: java.lang.String, position: Double, name: java.lang.String): js.UndefOr[CompletionEntryDetails] = js.native
+  /**
+    * Gets the extended details for a completion entry retrieved from `getCompletionsAtPosition`.
+    *
+    * @param fileName The path to the file
+    * @param position A zero based index of the character where you want the entries
+    * @param entryName The name from an existing completion which came from `getCompletionsAtPosition`
+    * @param formatOptions How should code samples in the completions be formatted, can be undefined for backwards compatibility
+    * @param source Source code for the current file, can be undefined for backwards compatibility
+    * @param preferences User settings, can be undefined for backwards compatibility
+    */
+  def getCompletionEntryDetails(fileName: java.lang.String, position: Double, entryName: java.lang.String): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
     position: Double,
-    name: java.lang.String,
-    formatOptions: js.UndefOr[scala.Nothing],
-    source: js.UndefOr[scala.Nothing],
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: Double,
-    name: java.lang.String,
-    formatOptions: js.UndefOr[scala.Nothing],
-    source: java.lang.String
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: Double,
-    name: java.lang.String,
-    formatOptions: js.UndefOr[scala.Nothing],
-    source: java.lang.String,
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: Double,
-    name: java.lang.String,
+    entryName: java.lang.String,
     formatOptions: FormatCodeOptions
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
     position: Double,
-    name: java.lang.String,
-    formatOptions: FormatCodeOptions,
-    source: js.UndefOr[scala.Nothing],
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: Double,
-    name: java.lang.String,
+    entryName: java.lang.String,
     formatOptions: FormatCodeOptions,
     source: java.lang.String
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
     position: Double,
-    name: java.lang.String,
+    entryName: java.lang.String,
     formatOptions: FormatCodeOptions,
     source: java.lang.String,
     preferences: UserPreferences
@@ -106,34 +89,34 @@ trait LanguageService extends js.Object {
   def getCompletionEntryDetails(
     fileName: java.lang.String,
     position: Double,
-    name: java.lang.String,
+    entryName: java.lang.String,
     formatOptions: FormatCodeSettings
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
     position: Double,
-    name: java.lang.String,
-    formatOptions: FormatCodeSettings,
-    source: js.UndefOr[scala.Nothing],
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: Double,
-    name: java.lang.String,
+    entryName: java.lang.String,
     formatOptions: FormatCodeSettings,
     source: java.lang.String
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
     position: Double,
-    name: java.lang.String,
+    entryName: java.lang.String,
     formatOptions: FormatCodeSettings,
     source: java.lang.String,
     preferences: UserPreferences
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntrySymbol(fileName: java.lang.String, position: Double, name: java.lang.String): js.UndefOr[Symbol] = js.native
   def getCompletionEntrySymbol(fileName: java.lang.String, position: Double, name: java.lang.String, source: java.lang.String): js.UndefOr[Symbol] = js.native
+  /**
+    * Gets completion entries at a particular position in a file.
+    *
+    * @param fileName The path to the file
+    * @param position A zero-based index of the character where you want the entries
+    * @param options An object describing how the request was triggered and what kinds
+    * of code actions can be returned with the completions.
+    */
   def getCompletionsAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[WithMetadataCompletionInf] = js.native
   def getCompletionsAtPosition(fileName: java.lang.String, position: Double, options: GetCompletionsAtPositionOptions): js.UndefOr[WithMetadataCompletionInf] = js.native
   def getDefinitionAndBoundSpan(fileName: java.lang.String, position: Double): js.UndefOr[DefinitionInfoAndBoundSpan] = js.native
@@ -212,25 +195,66 @@ trait LanguageService extends js.Object {
   def getOccurrencesAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[ReferenceEntry]] = js.native
   def getOutliningSpans(fileName: java.lang.String): js.Array[OutliningSpan] = js.native
   def getProgram(): js.UndefOr[Program] = js.native
+  /**
+    * Gets semantic information about the identifier at a particular position in a
+    * file. Quick info is what you typically see when you hover in an editor.
+    *
+    * @param fileName The path to the file
+    * @param position A zero-based index of the character where you want the quick info
+    */
   def getQuickInfoAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[QuickInfo] = js.native
   def getReferencesAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[ReferenceEntry]] = js.native
   def getRenameInfo(fileName: java.lang.String, position: Double): RenameInfo = js.native
   def getRenameInfo(fileName: java.lang.String, position: Double, options: RenameInfoOptions): RenameInfo = js.native
-  /**
-    * @deprecated Use getEncodedSemanticClassifications instead.
-    */
+  /** @deprecated Use getEncodedSemanticClassifications instead. */
   def getSemanticClassifications(fileName: java.lang.String, span: TextSpan): js.Array[ClassifiedSpan] = js.native
-  /** The first time this is called, it will return global diagnostics (no location). */
+  /**
+    * Gets warnings or errors indicating type system issues in a given file.
+    * Requesting semantic diagnostics may start up the type system and
+    * run deferred work, so the first call may take longer than subsequent calls.
+    *
+    * Unlike the other get*Diagnostics functions, these diagnostics can potentially not
+    * include a reference to a source file. Specifically, the first time this is called,
+    * it will return global diagnostics with no associated location.
+    *
+    * To contrast the differences between semantic and syntactic diagnostics, consider the
+    * sentence: "The sun is green." is syntactically correct; those are real English words with
+    * correct sentence structure. However, it is semantically invalid, because it is not true.
+    *
+    * @param fileName A path to the file you want semantic diagnostics for
+    */
   def getSemanticDiagnostics(fileName: java.lang.String): js.Array[Diagnostic] = js.native
   def getSignatureHelpItems(fileName: java.lang.String, position: Double): js.UndefOr[SignatureHelpItems] = js.native
   def getSignatureHelpItems(fileName: java.lang.String, position: Double, options: SignatureHelpItemsOptions): js.UndefOr[SignatureHelpItems] = js.native
   def getSmartSelectionRange(fileName: java.lang.String, position: Double): SelectionRange = js.native
   def getSpanOfEnclosingComment(fileName: java.lang.String, position: Double, onlyMultiLine: Boolean): js.UndefOr[TextSpan] = js.native
-  def getSuggestionDiagnostics(fileName: java.lang.String): js.Array[DiagnosticWithLocation] = js.native
   /**
-    * @deprecated Use getEncodedSyntacticClassifications instead.
+    * Gets suggestion diagnostics for a specific file. These diagnostics tend to
+    * proactively suggest refactors, as opposed to diagnostics that indicate
+    * potentially incorrect runtime behavior.
+    *
+    * @param fileName A path to the file you want semantic diagnostics for
     */
+  def getSuggestionDiagnostics(fileName: java.lang.String): js.Array[DiagnosticWithLocation] = js.native
+  /** @deprecated Use getEncodedSyntacticClassifications instead. */
   def getSyntacticClassifications(fileName: java.lang.String, span: TextSpan): js.Array[ClassifiedSpan] = js.native
+  /**
+    * Gets errors indicating invalid syntax in a file.
+    *
+    * In English, "this cdeo have, erorrs" is syntactically invalid because it has typos,
+    * grammatical errors, and misplaced punctuation. Likewise, examples of syntax
+    * errors in TypeScript are missing parentheses in an `if` statement, mismatched
+    * curly braces, and using a reserved keyword as a variable name.
+    *
+    * These diagnostics are inexpensive to compute and don't require knowledge of
+    * other files. Note that a non-empty result increases the likelihood of false positives
+    * from `getSemanticDiagnostics`.
+    *
+    * While these represent the majority of syntax-related diagnostics, there are some
+    * that require the type system, which will be present in `getSemanticDiagnostics`.
+    *
+    * @param fileName A path to the file you want syntactic diagnostics for
+    */
   def getSyntacticDiagnostics(fileName: java.lang.String): js.Array[DiagnosticWithLocation] = js.native
   def getTodoComments(fileName: java.lang.String, descriptors: js.Array[TodoCommentDescriptor]): js.Array[TodoComment] = js.native
   def getTypeDefinitionAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[DefinitionInfo]] = js.native

@@ -1,9 +1,9 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonColl
-import typings.mongodb.AnonIdExtractIdType
-import typings.mongodb.AnonRemovedFields
-import typings.mongodb.AnonUid
+import typings.mongodb.anon.Coll
+import typings.mongodb.anon.RemovedFields
+import typings.mongodb.anon.Uid
+import typings.mongodb.anon.`3`
 import typings.mongodb.mongodbStrings.delete
 import typings.mongodb.mongodbStrings.drop
 import typings.mongodb.mongodbStrings.dropDatabase
@@ -28,87 +28,87 @@ trait ChangeEvent[TSchema /* <: js.Object */] extends js.Object
 
 object ChangeEvent {
   @scala.inline
-  def ChangeEventOther[TSchema /* <: js.Object */](
+  def ChangeEventOther[TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
-    ns: AnonColl,
+    ns: Coll,
     operationType: drop | dropDatabase,
-    lsid: AnonUid = null,
-    txnNumber: Int | scala.Double = null
+    lsid: Uid = null,
+    txnNumber: js.UndefOr[scala.Double] = js.undefined
   ): ChangeEvent[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
     if (lsid != null) __obj.updateDynamic("lsid")(lsid.asInstanceOf[js.Any])
-    if (txnNumber != null) __obj.updateDynamic("txnNumber")(txnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(txnNumber)) __obj.updateDynamic("txnNumber")(txnNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventRename[TSchema /* <: js.Object */](
+  def ChangeEventRename[TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
-    ns: AnonColl,
+    ns: Coll,
     operationType: rename,
-    to: AnonColl,
-    lsid: AnonUid = null,
-    txnNumber: Int | scala.Double = null
+    to: Coll,
+    lsid: Uid = null,
+    txnNumber: js.UndefOr[scala.Double] = js.undefined
   ): ChangeEvent[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (lsid != null) __obj.updateDynamic("lsid")(lsid.asInstanceOf[js.Any])
-    if (txnNumber != null) __obj.updateDynamic("txnNumber")(txnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(txnNumber)) __obj.updateDynamic("txnNumber")(txnNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventInvalidate[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, operationType: invalidate): ChangeEvent[TSchema] = {
+  def ChangeEventInvalidate[TSchema](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, operationType: invalidate): ChangeEvent[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventUpdate[TSchema /* <: js.Object */](
+  def ChangeEventUpdate[TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
-    documentKey: AnonIdExtractIdType[TSchema],
-    ns: AnonColl,
+    documentKey: `3`[TSchema],
+    ns: Coll,
     operationType: update,
-    updateDescription: AnonRemovedFields[TSchema],
+    updateDescription: RemovedFields[TSchema],
     fullDocument: TSchema = null,
-    lsid: AnonUid = null,
-    txnNumber: Int | scala.Double = null
+    lsid: Uid = null,
+    txnNumber: js.UndefOr[scala.Double] = js.undefined
   ): ChangeEvent[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], updateDescription = updateDescription.asInstanceOf[js.Any])
     if (fullDocument != null) __obj.updateDynamic("fullDocument")(fullDocument.asInstanceOf[js.Any])
     if (lsid != null) __obj.updateDynamic("lsid")(lsid.asInstanceOf[js.Any])
-    if (txnNumber != null) __obj.updateDynamic("txnNumber")(txnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(txnNumber)) __obj.updateDynamic("txnNumber")(txnNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventCR[TSchema /* <: js.Object */](
+  def ChangeEventCR[TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
-    documentKey: AnonIdExtractIdType[TSchema],
-    ns: AnonColl,
+    documentKey: `3`[TSchema],
+    ns: Coll,
     operationType: insert | replace,
     fullDocument: TSchema = null,
-    lsid: AnonUid = null,
-    txnNumber: Int | scala.Double = null
+    lsid: Uid = null,
+    txnNumber: js.UndefOr[scala.Double] = js.undefined
   ): ChangeEvent[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
     if (fullDocument != null) __obj.updateDynamic("fullDocument")(fullDocument.asInstanceOf[js.Any])
     if (lsid != null) __obj.updateDynamic("lsid")(lsid.asInstanceOf[js.Any])
-    if (txnNumber != null) __obj.updateDynamic("txnNumber")(txnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(txnNumber)) __obj.updateDynamic("txnNumber")(txnNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
   @scala.inline
-  def ChangeEventDelete[TSchema /* <: js.Object */](
+  def ChangeEventDelete[TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
-    documentKey: AnonIdExtractIdType[TSchema],
-    ns: AnonColl,
+    documentKey: `3`[TSchema],
+    ns: Coll,
     operationType: delete,
-    lsid: AnonUid = null,
-    txnNumber: Int | scala.Double = null
+    lsid: Uid = null,
+    txnNumber: js.UndefOr[scala.Double] = js.undefined
   ): ChangeEvent[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
     if (lsid != null) __obj.updateDynamic("lsid")(lsid.asInstanceOf[js.Any])
-    if (txnNumber != null) __obj.updateDynamic("txnNumber")(txnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(txnNumber)) __obj.updateDynamic("txnNumber")(txnNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent[TSchema]]
   }
 }

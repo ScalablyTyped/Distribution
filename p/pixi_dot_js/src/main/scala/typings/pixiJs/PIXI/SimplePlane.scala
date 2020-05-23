@@ -19,10 +19,8 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   *
   */
-@JSGlobal("PIXI.SimplePlane")
 @js.native
-class SimplePlane protected () extends Mesh {
-  def this(texture: Texture, verticesX: Double, verticesY: Double) = this()
+trait SimplePlane extends Mesh {
   /**
     * Method used for overrides, to do something in case texture frame was changed.
     * Meshes based on plane can override it and change more details based on texture.

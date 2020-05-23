@@ -1,6 +1,6 @@
 package typings.pubnub.mod
 
-import typings.pubnub.AnonApns
+import typings.pubnub.anon.Apns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait NotificationsPayload extends js.Object {
   var debugging: Boolean
   var fcm: FCMNotificationPayload
   var mpns: MPNSNotificationPayload
-  var payload: AnonApns
+  var payload: Apns
   var sound: js.UndefOr[String] = js.undefined
   var subtitle: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -27,15 +27,15 @@ object NotificationsPayload {
     debugging: Boolean,
     fcm: FCMNotificationPayload,
     mpns: MPNSNotificationPayload,
-    payload: AnonApns,
-    badge: Int | Double = null,
+    payload: Apns,
+    badge: js.UndefOr[Double] = js.undefined,
     body: String = null,
     sound: String = null,
     subtitle: String = null,
     title: String = null
   ): NotificationsPayload = {
     val __obj = js.Dynamic.literal(apns = apns.asInstanceOf[js.Any], buildPayload = js.Any.fromFunction1(buildPayload), debugging = debugging.asInstanceOf[js.Any], fcm = fcm.asInstanceOf[js.Any], mpns = mpns.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])

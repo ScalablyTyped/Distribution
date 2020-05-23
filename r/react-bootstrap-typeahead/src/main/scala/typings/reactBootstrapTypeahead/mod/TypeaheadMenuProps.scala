@@ -33,12 +33,12 @@ trait TypeaheadMenuProps[T /* <: TypeaheadModel */] extends js.Object {
 
 object TypeaheadMenuProps {
   @scala.inline
-  def apply[T /* <: TypeaheadModel */](
+  def apply[T](
     id: String,
     options: js.Array[T],
     className: String = null,
     emptyLabel: String = null,
-    innerRef: LegacyRef[HTMLUListElement] = null,
+    innerRef: js.UndefOr[Null | LegacyRef[HTMLUListElement]] = js.undefined,
     labelKey: TypeaheadLabelKey[T] = null,
     maxHeight: String = null,
     newSelectionPrefix: String = null,
@@ -49,7 +49,7 @@ object TypeaheadMenuProps {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (emptyLabel != null) __obj.updateDynamic("emptyLabel")(emptyLabel.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (labelKey != null) __obj.updateDynamic("labelKey")(labelKey.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (newSelectionPrefix != null) __obj.updateDynamic("newSelectionPrefix")(newSelectionPrefix.asInstanceOf[js.Any])

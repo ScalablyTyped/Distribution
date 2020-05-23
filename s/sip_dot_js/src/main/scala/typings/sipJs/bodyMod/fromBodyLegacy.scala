@@ -1,6 +1,5 @@
 package typings.sipJs.bodyMod
 
-import typings.sipJs.AnonBody
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object fromBodyLegacy extends js.Object {
   def apply(bodyLegacy: String): Body = js.native
-  def apply(bodyLegacy: AnonBody): Body = js.native
+  def apply(bodyLegacy: typings.sipJs.anon.Body): Body = js.native
 }
 

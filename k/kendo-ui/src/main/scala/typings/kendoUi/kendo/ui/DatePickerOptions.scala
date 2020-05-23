@@ -58,7 +58,7 @@ object DatePickerOptions {
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (!js.isUndefined(dateInput)) __obj.updateDynamic("dateInput")(dateInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(dateInput)) __obj.updateDynamic("dateInput")(dateInput.get.asInstanceOf[js.Any])
     if (dates != null) __obj.updateDynamic("dates")(dates.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (disableDates != null) __obj.updateDynamic("disableDates")(disableDates.asInstanceOf[js.Any])
@@ -72,7 +72,7 @@ object DatePickerOptions {
     if (parseFormats != null) __obj.updateDynamic("parseFormats")(parseFormats.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerOptions]
   }
 }

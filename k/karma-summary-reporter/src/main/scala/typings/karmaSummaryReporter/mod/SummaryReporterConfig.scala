@@ -31,12 +31,12 @@ object SummaryReporterConfig {
   def apply(
     overviewColumn: js.UndefOr[Boolean] = js.undefined,
     show: failed | skipped | all = null,
-    specLength: Int | Double = null
+    specLength: js.UndefOr[Double] = js.undefined
   ): SummaryReporterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overviewColumn)) __obj.updateDynamic("overviewColumn")(overviewColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(overviewColumn)) __obj.updateDynamic("overviewColumn")(overviewColumn.get.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (specLength != null) __obj.updateDynamic("specLength")(specLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(specLength)) __obj.updateDynamic("specLength")(specLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummaryReporterConfig]
   }
 }

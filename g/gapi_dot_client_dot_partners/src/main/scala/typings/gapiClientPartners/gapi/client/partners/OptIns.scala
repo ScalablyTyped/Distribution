@@ -33,11 +33,11 @@ object OptIns {
     specialOffers: js.UndefOr[Boolean] = js.undefined
   ): OptIns = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(marketComm)) __obj.updateDynamic("marketComm")(marketComm.asInstanceOf[js.Any])
-    if (!js.isUndefined(performanceSuggestions)) __obj.updateDynamic("performanceSuggestions")(performanceSuggestions.asInstanceOf[js.Any])
-    if (!js.isUndefined(phoneContact)) __obj.updateDynamic("phoneContact")(phoneContact.asInstanceOf[js.Any])
-    if (!js.isUndefined(physicalMail)) __obj.updateDynamic("physicalMail")(physicalMail.asInstanceOf[js.Any])
-    if (!js.isUndefined(specialOffers)) __obj.updateDynamic("specialOffers")(specialOffers.asInstanceOf[js.Any])
+    if (!js.isUndefined(marketComm)) __obj.updateDynamic("marketComm")(marketComm.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(performanceSuggestions)) __obj.updateDynamic("performanceSuggestions")(performanceSuggestions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(phoneContact)) __obj.updateDynamic("phoneContact")(phoneContact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(physicalMail)) __obj.updateDynamic("physicalMail")(physicalMail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(specialOffers)) __obj.updateDynamic("specialOffers")(specialOffers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptIns]
   }
 }

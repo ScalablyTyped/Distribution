@@ -48,15 +48,15 @@ object IOptions {
     indent: String = null,
     newline: String = null,
     trim: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cut)) __obj.updateDynamic("cut")(cut.asInstanceOf[js.Any])
+    if (!js.isUndefined(cut)) __obj.updateDynamic("cut")(cut.get.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction1(escape))
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (newline != null) __obj.updateDynamic("newline")(newline.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

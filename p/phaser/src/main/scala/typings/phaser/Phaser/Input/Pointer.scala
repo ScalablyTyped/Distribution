@@ -23,15 +23,8 @@ import scala.scalajs.js.annotation._
   * input related events that the Input Plugin emits, so you can reference properties from it directly in your
   * callbacks.
   */
-@JSGlobal("Phaser.Input.Pointer")
 @js.native
-class Pointer protected () extends js.Object {
-  /**
-    * 
-    * @param manager A reference to the Input Manager.
-    * @param id The internal ID of this Pointer.
-    */
-  def this(manager: InputManager, id: integer) = this()
+trait Pointer extends js.Object {
   /**
     * An active Pointer is one that is currently pressed down on the display.
     * A Mouse is always considered as active.

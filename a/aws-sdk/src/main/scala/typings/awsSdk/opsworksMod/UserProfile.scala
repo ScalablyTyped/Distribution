@@ -31,14 +31,14 @@ trait UserProfile extends js.Object {
 object UserProfile {
   @scala.inline
   def apply(
-    AllowSelfManagement: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowSelfManagement: js.UndefOr[Boolean] = js.undefined,
     IamUserArn: String = null,
     Name: String = null,
     SshPublicKey: String = null,
     SshUsername: String = null
   ): UserProfile = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowSelfManagement)) __obj.updateDynamic("AllowSelfManagement")(AllowSelfManagement.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowSelfManagement)) __obj.updateDynamic("AllowSelfManagement")(AllowSelfManagement.get.asInstanceOf[js.Any])
     if (IamUserArn != null) __obj.updateDynamic("IamUserArn")(IamUserArn.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (SshPublicKey != null) __obj.updateDynamic("SshPublicKey")(SshPublicKey.asInstanceOf[js.Any])

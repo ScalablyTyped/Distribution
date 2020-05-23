@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
   * Classes
   */
 // KVO
-@JSGlobal("naver.maps.KVO")
 @js.native
-class KVO () extends js.Object {
+trait KVO extends js.Object {
   def addListener(eventName: js.Any, listener: js.Function0[_]): MapEventListener = js.native
   def addListenerOnce(eventName: js.Any, listener: js.Function0[_]): MapEventListener = js.native
   def bindTo(key: String, target: KVO): Unit = js.native

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,4 @@ trait workers extends js.Object {
   def open(modulePath: String): js.Promise[Connection] = js.native
   def open(modulePath: String, options: workersOpenOptions): js.Promise[Connection] = js.native
 }
-
-@JSGlobal("__esri.workers")
-@js.native
-object workers extends TopLevel[workers]
 

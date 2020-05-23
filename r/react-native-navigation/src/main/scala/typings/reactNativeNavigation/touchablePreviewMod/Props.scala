@@ -5,7 +5,7 @@ import typings.reactNative.mod.TouchableHighlight
 import typings.reactNative.mod.TouchableNativeFeedback
 import typings.reactNative.mod.TouchableOpacity
 import typings.reactNative.mod.TouchableWithoutFeedback
-import typings.reactNativeNavigation.AnonReactTag
+import typings.reactNativeNavigation.anon.ReactTag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait Props extends js.Object {
   var onPeekIn: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onPeekOut: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPressIn: js.UndefOr[js.Function1[/* payload */ AnonReactTag, Unit]] = js.undefined
+  var onPressIn: js.UndefOr[js.Function1[/* payload */ ReactTag, Unit]] = js.undefined
   var touchableComponent: js.UndefOr[
     TouchableHighlight | TouchableOpacity | TouchableNativeFeedback | TouchableWithoutFeedback | ReactNode
   ] = js.undefined
@@ -28,7 +28,7 @@ object Props {
     onPeekIn: () => Unit = null,
     onPeekOut: () => Unit = null,
     onPress: () => Unit = null,
-    onPressIn: /* payload */ AnonReactTag => Unit = null,
+    onPressIn: /* payload */ ReactTag => Unit = null,
     touchableComponent: TouchableHighlight | TouchableOpacity | TouchableNativeFeedback | TouchableWithoutFeedback | ReactNode = null
   ): Props = {
     val __obj = js.Dynamic.literal()

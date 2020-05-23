@@ -1,6 +1,6 @@
 package typings.serverless.mod
 
-import typings.serverless.AnonLog
+import typings.serverless.anon.Log
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ^ () extends Serverless {
   def this(config: js.Object) = this()
   /* CompleteClass */
-  override var cli: AnonLog = js.native
+  override var cli: Log = js.native
   /* CompleteClass */
   override var config: Config = js.native
   /* CompleteClass */

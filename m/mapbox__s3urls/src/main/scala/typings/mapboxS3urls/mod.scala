@@ -1,5 +1,7 @@
 package typings.mapboxS3urls
 
+import typings.mapboxS3urls.anon.Bucket
+import typings.mapboxS3urls.anon.Bucketinhost
 import typings.mapboxS3urls.mapboxS3urlsStrings.`bucket-in-host`
 import typings.mapboxS3urls.mapboxS3urlsStrings.`bucket-in-path`
 import typings.mapboxS3urls.mapboxS3urlsStrings.s3
@@ -17,13 +19,13 @@ object mod extends js.Object {
   def convert_bucketinpath(url: String, to: `bucket-in-path`): String = js.native
   @JSName("convert")
   def convert_s3(url: String, to: s3): String = js.native
-  def fromUrl(url: String): AnonBucket = js.native
+  def fromUrl(url: String): Bucket = js.native
   def signed(
     url: String,
     expires: Double,
     cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]
   ): Unit = js.native
-  def toUrl(bucket: String, key: String): AnonBucketinhost = js.native
+  def toUrl(bucket: String, key: String): Bucketinhost = js.native
   def valid(url: String): Boolean = js.native
 }
 

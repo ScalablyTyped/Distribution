@@ -1,18 +1,11 @@
 package typings.ejWebAll.ej
 
-import typings.ejWebAll.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ej.DatePicker")
 @js.native
-class DatePicker_ protected () extends Widget_ {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.DatePicker.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.DatePicker.Model) = this()
+trait DatePicker_ extends Widget_ {
   var defaults: typings.ejWebAll.ej.DatePicker.Model = js.native
   @JSName("model")
   var model_DatePicker_ : typings.ejWebAll.ej.DatePicker.Model = js.native

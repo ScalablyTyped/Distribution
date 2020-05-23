@@ -1,6 +1,6 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClientAnalytics.AnonHref
+import typings.gapiClientAnalytics.anon.Href
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CustomDataSource extends js.Object {
   /** Account ID to which this custom data source belongs. */
   var accountId: js.UndefOr[String] = js.undefined
-  var childLink: js.UndefOr[AnonHref] = js.undefined
+  var childLink: js.UndefOr[Href] = js.undefined
   /** Time this custom data source was created. */
   var created: js.UndefOr[String] = js.undefined
   /** Description of custom data source. */
@@ -21,7 +21,7 @@ trait CustomDataSource extends js.Object {
   /** Name of this custom data source. */
   var name: js.UndefOr[String] = js.undefined
   /** Parent link for this custom data source. Points to the web property to which this custom data source belongs. */
-  var parentLink: js.UndefOr[AnonHref] = js.undefined
+  var parentLink: js.UndefOr[Href] = js.undefined
   /** IDs of views (profiles) linked to the custom data source. */
   var profilesLinked: js.UndefOr[js.Array[String]] = js.undefined
   /** Collection of schema headers of the custom data source. */
@@ -42,14 +42,14 @@ object CustomDataSource {
   @scala.inline
   def apply(
     accountId: String = null,
-    childLink: AnonHref = null,
+    childLink: Href = null,
     created: String = null,
     description: String = null,
     id: String = null,
     importBehavior: String = null,
     kind: String = null,
     name: String = null,
-    parentLink: AnonHref = null,
+    parentLink: Href = null,
     profilesLinked: js.Array[String] = null,
     schema: js.Array[String] = null,
     selfLink: String = null,

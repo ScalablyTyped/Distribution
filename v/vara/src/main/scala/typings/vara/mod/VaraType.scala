@@ -3,9 +3,9 @@ package typings.vara.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.SVGElement
 import typings.std.SVGGElement
-import typings.vara.AnonBreakPoints
-import typings.vara.AnonXY
-import typings.vara.AnonY
+import typings.vara.anon.BreakPoints
+import typings.vara.anon.XY
+import typings.vara.anon.Y
 import typings.vara.varaBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait VaraType extends js.Object {
-  def analyseWidth(): AnonBreakPoints = js.native
+  def analyseWidth(): BreakPoints = js.native
   def animate(element: SVGElement, duration: Double, delay: Double, `final`: Double): Unit = js.native
   /**
     * Used to execute a function once animation ends, triggers every time a block of text is drawn.
@@ -59,7 +59,7 @@ trait VaraType extends js.Object {
     * @param onReady callback
     */
   def ready(onReady: js.Function0[Unit]): Unit = js.native
-  def setPosition(element: SVGGElement, obj: AnonY): Unit = js.native
-  def setPosition(element: SVGGElement, obj: AnonY, relative: AnonXY): Unit = js.native
+  def setPosition(element: SVGGElement, obj: Y): Unit = js.native
+  def setPosition(element: SVGGElement, obj: Y, relative: XY): Unit = js.native
 }
 

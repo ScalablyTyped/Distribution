@@ -1,7 +1,7 @@
 
 # Scala.js typings for underscore
 
-Typings are for version 1.9
+Typings are for version 1.10
 
 ## Library description:
 JavaScript's functional programming helper library.

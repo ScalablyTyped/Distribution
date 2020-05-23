@@ -2,21 +2,21 @@ package typings.reactBigCalendar.mod
 
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.reactBigCalendar.AnonDayProp
-import typings.reactBigCalendar.AnonEnd
-import typings.reactBigCalendar.CSSPropertiesxOffsetnumbe
+import typings.reactBigCalendar.anon.CSSPropertiesxOffsetnumbe
+import typings.reactBigCalendar.anon.DayProp
+import typings.reactBigCalendar.anon.End
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EventWrapperProps[TEvent /* <: js.Object */] extends js.Object {
-  var accessors: AnonEnd[TEvent]
+  var accessors: End[TEvent]
   var className: String
   var continuesEarlier: Boolean
   var continuesLater: Boolean
   var event: TEvent
-  var getters: AnonDayProp[TEvent]
+  var getters: DayProp[TEvent]
   var isRtl: Boolean
   var label: String
   var selected: Boolean
@@ -28,13 +28,13 @@ trait EventWrapperProps[TEvent /* <: js.Object */] extends js.Object {
 
 object EventWrapperProps {
   @scala.inline
-  def apply[TEvent /* <: js.Object */](
-    accessors: AnonEnd[TEvent],
+  def apply[TEvent](
+    accessors: End[TEvent],
     className: String,
     continuesEarlier: Boolean,
     continuesLater: Boolean,
     event: TEvent,
-    getters: AnonDayProp[TEvent],
+    getters: DayProp[TEvent],
     isRtl: Boolean,
     label: String,
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit,

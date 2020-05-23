@@ -26,28 +26,28 @@ object DomainDnsSrvRecord {
     isOptional: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     nameTarget: String = null,
-    port: Int | Double = null,
-    priority: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
+    priority: js.UndefOr[Double] = js.undefined,
     protocol: String = null,
     recordType: String = null,
     service: String = null,
     supportedService: String = null,
-    ttl: Int | Double = null,
-    weight: Int | Double = null
+    ttl: js.UndefOr[Double] = js.undefined,
+    weight: js.UndefOr[Double] = js.undefined
   ): DomainDnsSrvRecord = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (nameTarget != null) __obj.updateDynamic("nameTarget")(nameTarget.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (recordType != null) __obj.updateDynamic("recordType")(recordType.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     if (supportedService != null) __obj.updateDynamic("supportedService")(supportedService.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDnsSrvRecord]
   }
 }

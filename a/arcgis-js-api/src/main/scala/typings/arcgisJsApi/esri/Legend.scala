@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,8 +66,4 @@ trait Legend extends Widget_ {
     */
   var viewModel: LegendViewModel = js.native
 }
-
-@JSGlobal("__esri.Legend")
-@js.native
-object Legend extends TopLevel[LegendConstructor]
 

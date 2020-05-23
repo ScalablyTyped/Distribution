@@ -10,6 +10,7 @@ trait ImagePars extends js.Object {
   var data: ArrayBuffer | String
   var extension: js.UndefOr[String] = js.undefined
   var height: Double
+  var thumbnail: js.UndefOr[Image] = js.undefined
   var width: Double
 }
 
@@ -20,11 +21,13 @@ object ImagePars {
     height: Double,
     width: Double,
     alt: String = null,
-    extension: String = null
+    extension: String = null,
+    thumbnail: Image = null
   ): ImagePars = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePars]
   }
 }

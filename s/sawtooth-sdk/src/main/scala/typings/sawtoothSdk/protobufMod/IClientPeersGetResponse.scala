@@ -14,10 +14,13 @@ trait IClientPeersGetResponse extends js.Object {
 
 object IClientPeersGetResponse {
   @scala.inline
-  def apply(peers: js.Array[String] = null, status: Status = null): IClientPeersGetResponse = {
+  def apply(
+    peers: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    status: js.UndefOr[Null | Status] = js.undefined
+  ): IClientPeersGetResponse = {
     val __obj = js.Dynamic.literal()
-    if (peers != null) __obj.updateDynamic("peers")(peers.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(peers)) __obj.updateDynamic("peers")(peers.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientPeersGetResponse]
   }
 }

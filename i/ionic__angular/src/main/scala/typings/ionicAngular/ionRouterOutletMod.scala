@@ -18,7 +18,7 @@ import typings.ionicAngular.navControllerMod.NavController
 import typings.ionicAngular.stackUtilsMod.RouteView
 import typings.ionicCore.animationInterfaceMod.Animation
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
-import typings.ionicCore.componentsMod._Global_.HTMLIonRouterOutletElement
+import typings.ionicCore.componentsMod.global.HTMLIonRouterOutletElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

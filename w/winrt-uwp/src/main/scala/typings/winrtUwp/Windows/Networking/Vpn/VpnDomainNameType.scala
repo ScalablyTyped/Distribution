@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object VpnDomainNameType extends js.Object {
   /** Domain name suffix */
   @js.native
   sealed trait suffix extends VpnDomainNameType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnDomainNameType with Double] = js.native
-  /* 1 */ @js.native
-  object fullyQualified extends TopLevel[fullyQualified with Double]
-  
-  /* 2 */ @js.native
-  object reserved extends TopLevel[reserved with Double]
-  
-  /* 0 */ @js.native
-  object suffix extends TopLevel[suffix with Double]
   
 }
 

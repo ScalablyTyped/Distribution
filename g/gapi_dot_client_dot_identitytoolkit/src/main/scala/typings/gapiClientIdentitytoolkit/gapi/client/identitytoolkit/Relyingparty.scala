@@ -57,10 +57,10 @@ object Relyingparty {
     userIp: String = null
   ): Relyingparty = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(androidInstallApp)) __obj.updateDynamic("androidInstallApp")(androidInstallApp.asInstanceOf[js.Any])
+    if (!js.isUndefined(androidInstallApp)) __obj.updateDynamic("androidInstallApp")(androidInstallApp.get.asInstanceOf[js.Any])
     if (androidMinimumVersion != null) __obj.updateDynamic("androidMinimumVersion")(androidMinimumVersion.asInstanceOf[js.Any])
     if (androidPackageName != null) __obj.updateDynamic("androidPackageName")(androidPackageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(canHandleCodeInApp)) __obj.updateDynamic("canHandleCodeInApp")(canHandleCodeInApp.asInstanceOf[js.Any])
+    if (!js.isUndefined(canHandleCodeInApp)) __obj.updateDynamic("canHandleCodeInApp")(canHandleCodeInApp.get.asInstanceOf[js.Any])
     if (captchaResp != null) __obj.updateDynamic("captchaResp")(captchaResp.asInstanceOf[js.Any])
     if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
     if (continueUrl != null) __obj.updateDynamic("continueUrl")(continueUrl.asInstanceOf[js.Any])

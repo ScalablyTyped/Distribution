@@ -19,12 +19,12 @@ object ScrollViewChangeEvent {
     sender: ScrollView,
     data: js.Any = null,
     element: JQuery = null,
-    page: Int | Double = null
+    page: js.UndefOr[Double] = js.undefined
   ): ScrollViewChangeEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewChangeEvent]
   }
 }

@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PathCursor")
 @js.native
-class PathCursor protected () extends js.Object {
-  /**
-    * Initializes the path cursor
-    * @param path The path to track
-    */
-  def this(path: Path2) = this()
+trait PathCursor extends js.Object {
   /**
     * Stores path cursor callbacks for when an onchange event is triggered
     */

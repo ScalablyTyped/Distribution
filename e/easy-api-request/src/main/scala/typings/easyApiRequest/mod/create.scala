@@ -1,6 +1,6 @@
 package typings.easyApiRequest.mod
 
-import typings.easyApiRequest.AnonConfig
+import typings.easyApiRequest.anon.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("easy-api-request", "create")
 @js.native
 object create extends js.Object {
-  def apply(opts: AnonConfig): Unit = js.native
+  def apply(opts: Config): Unit = js.native
 }
 

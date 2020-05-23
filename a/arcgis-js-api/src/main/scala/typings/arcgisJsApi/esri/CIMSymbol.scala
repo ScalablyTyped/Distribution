@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.cim
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,8 +21,4 @@ trait CIMSymbol extends Symbol {
   @JSName("type")
   val type_CIMSymbol: cim = js.native
 }
-
-@JSGlobal("__esri.CIMSymbol")
-@js.native
-object CIMSymbol extends TopLevel[CIMSymbolConstructor]
 

@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides the data for the ChatMessageStoreChanged event. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageStoreChangedEventArgs")
-@js.native
-abstract class ChatMessageStoreChangedEventArgs () extends js.Object {
+trait ChatMessageStoreChangedEventArgs extends js.Object {
   /** Gets the ID of the object that changed. */
-  var id: String = js.native
+  var id: String
   /** Gets the type of change that happened. */
-  var kind: ChatStoreChangedEventKind = js.native
+  var kind: ChatStoreChangedEventKind
+}
+
+object ChatMessageStoreChangedEventArgs {
+  @scala.inline
+  def apply(id: String, kind: ChatStoreChangedEventKind): ChatMessageStoreChangedEventArgs = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChatMessageStoreChangedEventArgs]
+  }
 }
 

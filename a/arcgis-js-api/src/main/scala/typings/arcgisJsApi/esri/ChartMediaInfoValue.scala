@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,8 +35,4 @@ trait ChartMediaInfoValue
     */
   var tooltipField: String = js.native
 }
-
-@JSGlobal("__esri.ChartMediaInfoValue")
-@js.native
-object ChartMediaInfoValue extends TopLevel[ChartMediaInfoValueConstructor]
 

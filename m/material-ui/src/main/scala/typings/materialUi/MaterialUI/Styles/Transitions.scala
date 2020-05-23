@@ -1,6 +1,5 @@
 package typings.materialUi.MaterialUI.Styles
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,8 +22,4 @@ trait Transitions extends js.Object {
   def easeOut(duration: String, property: js.Array[String], delay: String): String = js.native
   def easeOut(duration: String, property: js.Array[String], delay: String, easeFunction: String): String = js.native
 }
-
-@JSGlobal("__MaterialUI.Styles.Transitions")
-@js.native
-object Transitions extends TopLevel[Transitions]
 

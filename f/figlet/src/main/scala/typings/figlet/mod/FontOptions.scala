@@ -28,12 +28,10 @@ object FontOptions {
     numCommentLines: Double,
     oldLayout: Double,
     printDirection: PrintDirection,
-    codeTagCount: Int | Double = null,
-    fullLayout: Int | Double = null
+    codeTagCount: Double = null.asInstanceOf[Double],
+    fullLayout: Double = null.asInstanceOf[Double]
   ): FontOptions = {
-    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], fittingRules = fittingRules.asInstanceOf[js.Any], hardBlank = hardBlank.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], numCommentLines = numCommentLines.asInstanceOf[js.Any], oldLayout = oldLayout.asInstanceOf[js.Any], printDirection = printDirection.asInstanceOf[js.Any])
-    if (codeTagCount != null) __obj.updateDynamic("codeTagCount")(codeTagCount.asInstanceOf[js.Any])
-    if (fullLayout != null) __obj.updateDynamic("fullLayout")(fullLayout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], fittingRules = fittingRules.asInstanceOf[js.Any], hardBlank = hardBlank.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], numCommentLines = numCommentLines.asInstanceOf[js.Any], oldLayout = oldLayout.asInstanceOf[js.Any], printDirection = printDirection.asInstanceOf[js.Any], codeTagCount = codeTagCount.asInstanceOf[js.Any], fullLayout = fullLayout.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontOptions]
   }
 }

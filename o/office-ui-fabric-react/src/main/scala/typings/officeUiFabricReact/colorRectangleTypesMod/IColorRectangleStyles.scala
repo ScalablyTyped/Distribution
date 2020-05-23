@@ -31,18 +31,18 @@ trait IColorRectangleStyles extends js.Object {
 object IColorRectangleStyles {
   @scala.inline
   def apply(
-    dark: IStyle = null,
-    description: IStyle = null,
-    light: IStyle = null,
-    root: IStyle = null,
-    thumb: IStyle = null
+    dark: js.UndefOr[Null | IStyle] = js.undefined,
+    description: js.UndefOr[Null | IStyle] = js.undefined,
+    light: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    thumb: js.UndefOr[Null | IStyle] = js.undefined
   ): IColorRectangleStyles = {
     val __obj = js.Dynamic.literal()
-    if (dark != null) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
+    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumb)) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorRectangleStyles]
   }
 }

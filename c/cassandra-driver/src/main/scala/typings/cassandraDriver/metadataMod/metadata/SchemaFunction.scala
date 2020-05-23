@@ -1,13 +1,13 @@
 package typings.cassandraDriver.metadataMod.metadata
 
-import typings.cassandraDriver.AnonCode
+import typings.cassandraDriver.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SchemaFunction extends js.Object {
   var argumentNames: js.Array[String]
-  var argumentTypes: js.Array[AnonCode]
+  var argumentTypes: js.Array[Code]
   var body: String
   var calledOnNullInput: Boolean
   var keyspaceName: String
@@ -21,7 +21,7 @@ object SchemaFunction {
   @scala.inline
   def apply(
     argumentNames: js.Array[String],
-    argumentTypes: js.Array[AnonCode],
+    argumentTypes: js.Array[Code],
     body: String,
     calledOnNullInput: Boolean,
     keyspaceName: String,

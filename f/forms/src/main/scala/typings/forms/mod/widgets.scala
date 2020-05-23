@@ -1,6 +1,6 @@
 package typings.forms.mod
 
-import typings.forms.WidgetParametersrowsnumbe
+import typings.forms.anon.WidgetParametersrowsnumbe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

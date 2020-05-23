@@ -1,5 +1,6 @@
 package typings.pMapSeries
 
+import typings.pMapSeries.anon.Call
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ object mod extends js.Object {
   // ): Promise<MappedValueType[]>;
   // export = pMapSeries;
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Map over promises serially.
   	@param input - Mapped over serially in the `mapper` function.

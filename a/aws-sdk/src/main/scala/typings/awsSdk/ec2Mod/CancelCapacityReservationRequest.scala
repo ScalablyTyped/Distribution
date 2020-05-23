@@ -18,9 +18,9 @@ trait CancelCapacityReservationRequest extends js.Object {
 
 object CancelCapacityReservationRequest {
   @scala.inline
-  def apply(CapacityReservationId: CapacityReservationId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): CancelCapacityReservationRequest = {
+  def apply(CapacityReservationId: CapacityReservationId, DryRun: js.UndefOr[Boolean] = js.undefined): CancelCapacityReservationRequest = {
     val __obj = js.Dynamic.literal(CapacityReservationId = CapacityReservationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelCapacityReservationRequest]
   }
 }

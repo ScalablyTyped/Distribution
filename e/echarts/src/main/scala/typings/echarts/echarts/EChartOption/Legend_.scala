@@ -399,26 +399,26 @@ object Legend_ {
   def apply(
     align: auto | left | right = null,
     animation: js.UndefOr[Boolean] = js.undefined,
-    animationDurationUpdate: Int | Double = null,
+    animationDurationUpdate: js.UndefOr[Double] = js.undefined,
     backgroundColor: String = null,
     borderColor: String = null,
     borderRadius: Double | js.Array[Double] = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     bottom: String | Double = null,
     data: js.Array[LegendDataObject | String] = null,
     formatter: String | Formatter = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     icon: String = null,
     id: String = null,
     inactiveColor: String = null,
-    itemGap: Int | Double = null,
-    itemHeight: Int | Double = null,
-    itemWidth: Int | Double = null,
+    itemGap: js.UndefOr[Double] = js.undefined,
+    itemHeight: js.UndefOr[Double] = js.undefined,
+    itemWidth: js.UndefOr[Double] = js.undefined,
     left: String | Double = null,
     orient: horizontal | vertical = null,
     padding: Double | js.Array[Double] = null,
-    pageButtonGap: Int | Double = null,
-    pageButtonItemGap: Int | Double = null,
+    pageButtonGap: js.UndefOr[Double] = js.undefined,
+    pageButtonItemGap: js.UndefOr[Double] = js.undefined,
     pageButtonPosition: start | end = null,
     pageFormatter: String | PageFormatter = null,
     pageIconColor: String = null,
@@ -427,46 +427,46 @@ object Legend_ {
     pageIcons: PageIcons = null,
     pageTextStyle: TextStyle = null,
     right: String | Double = null,
-    scrollDataIndex: Int | Double = null,
+    scrollDataIndex: js.UndefOr[Double] = js.undefined,
     selected: js.Object = null,
     selectedMode: Boolean | single | multiple = null,
-    shadowBlur: Int | Double = null,
+    shadowBlur: js.UndefOr[Double] = js.undefined,
     shadowColor: String = null,
-    shadowOffsetX: Int | Double = null,
-    shadowOffsetY: Int | Double = null,
+    shadowOffsetX: js.UndefOr[Double] = js.undefined,
+    shadowOffsetY: js.UndefOr[Double] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     textStyle: TextStyleWithRich = null,
     tooltip: Tooltip = null,
     top: String | Double = null,
     `type`: plain | scroll = null,
-    width: Int | Double = null,
-    z: Int | Double = null,
-    zlevel: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    z: js.UndefOr[Double] = js.undefined,
+    zlevel: js.UndefOr[Double] = js.undefined
   ): Legend_ = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDurationUpdate)) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inactiveColor != null) __obj.updateDynamic("inactiveColor")(inactiveColor.asInstanceOf[js.Any])
-    if (itemGap != null) __obj.updateDynamic("itemGap")(itemGap.asInstanceOf[js.Any])
-    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemGap)) __obj.updateDynamic("itemGap")(itemGap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemHeight)) __obj.updateDynamic("itemHeight")(itemHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemWidth)) __obj.updateDynamic("itemWidth")(itemWidth.get.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pageButtonGap != null) __obj.updateDynamic("pageButtonGap")(pageButtonGap.asInstanceOf[js.Any])
-    if (pageButtonItemGap != null) __obj.updateDynamic("pageButtonItemGap")(pageButtonItemGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageButtonGap)) __obj.updateDynamic("pageButtonGap")(pageButtonGap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageButtonItemGap)) __obj.updateDynamic("pageButtonItemGap")(pageButtonItemGap.get.asInstanceOf[js.Any])
     if (pageButtonPosition != null) __obj.updateDynamic("pageButtonPosition")(pageButtonPosition.asInstanceOf[js.Any])
     if (pageFormatter != null) __obj.updateDynamic("pageFormatter")(pageFormatter.asInstanceOf[js.Any])
     if (pageIconColor != null) __obj.updateDynamic("pageIconColor")(pageIconColor.asInstanceOf[js.Any])
@@ -475,22 +475,22 @@ object Legend_ {
     if (pageIcons != null) __obj.updateDynamic("pageIcons")(pageIcons.asInstanceOf[js.Any])
     if (pageTextStyle != null) __obj.updateDynamic("pageTextStyle")(pageTextStyle.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (scrollDataIndex != null) __obj.updateDynamic("scrollDataIndex")(scrollDataIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollDataIndex)) __obj.updateDynamic("scrollDataIndex")(scrollDataIndex.get.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (selectedMode != null) __obj.updateDynamic("selectedMode")(selectedMode.asInstanceOf[js.Any])
-    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowBlur)) __obj.updateDynamic("shadowBlur")(shadowBlur.get.asInstanceOf[js.Any])
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
-    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowOffsetX)) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowOffsetY)) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.get.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Legend_]
   }
 }

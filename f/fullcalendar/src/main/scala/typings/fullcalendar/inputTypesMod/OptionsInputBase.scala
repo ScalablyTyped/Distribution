@@ -12,11 +12,11 @@ import typings.fullcalendar.fullcalendarStrings.parent
 import typings.fullcalendar.fullcalendarStrings.popover
 import typings.fullcalendar.fullcalendarStrings.standard
 import typings.fullcalendar.fullcalendarStrings.week
-import typings.fullcalendar.jqueryHooksMod._Global_.JQuery
+import typings.fullcalendar.jqueryHooksMod.global.JQuery
 import typings.fullcalendar.viewMod.default
 import typings.moment.mod.Duration_
 import typings.moment.mod.Moment
-import typings.std.Event_
+import typings.std.Event
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -112,7 +112,7 @@ trait OptionsInputBase extends js.Object {
       /* event */ EventObjectInput, 
       /* delta */ Duration_, 
       /* revertFunc */ js.Function, 
-      /* jsEvent */ Event_, 
+      /* jsEvent */ Event, 
       /* ui */ js.Any, 
       /* view */ default, 
       Unit
@@ -121,7 +121,7 @@ trait OptionsInputBase extends js.Object {
   var eventDurationEditable: js.UndefOr[Boolean] = js.undefined
   var eventLimit: js.UndefOr[Boolean | Double] = js.undefined
   var eventLimitClick: js.UndefOr[
-    popover | week | day | String | (js.Function2[/* cellinfo */ CellInfo, /* jsevent */ Event_, Unit])
+    popover | week | day | String | (js.Function2[/* cellinfo */ CellInfo, /* jsevent */ Event, Unit])
   ] = js.undefined
   var eventLimitText: js.UndefOr[String | (js.Function1[/* eventCnt */ Double, String])] = js.undefined
   var eventLongPressDelay: js.UndefOr[Double] = js.undefined
@@ -149,7 +149,7 @@ trait OptionsInputBase extends js.Object {
       /* event */ EventObjectInput, 
       /* delta */ Duration_, 
       /* revertFunc */ js.Function, 
-      /* jsEvent */ Event_, 
+      /* jsEvent */ Event, 
       /* ui */ js.Any, 
       /* view */ default, 
       Unit
@@ -195,8 +195,8 @@ trait OptionsInputBase extends js.Object {
   var minTime: js.UndefOr[DurationInput] = js.undefined
   var monthNames: js.UndefOr[js.Array[String]] = js.undefined
   var monthNamesShort: js.UndefOr[js.Array[String]] = js.undefined
-  var navLinkDayClick: js.UndefOr[String | (js.Function2[/* date */ Moment, /* jsEvent */ Event_, Unit])] = js.undefined
-  var navLinkWeekClick: js.UndefOr[String | (js.Function2[/* weekStart */ js.Any, /* jsEvent */ Event_, Unit])] = js.undefined
+  var navLinkDayClick: js.UndefOr[String | (js.Function2[/* date */ Moment, /* jsEvent */ Event, Unit])] = js.undefined
+  var navLinkWeekClick: js.UndefOr[String | (js.Function2[/* weekStart */ js.Any, /* jsEvent */ Event, Unit])] = js.undefined
   var navLinks: js.UndefOr[Boolean] = js.undefined
   var nextDayThreshold: js.UndefOr[DurationInput] = js.undefined
   var noEventsMessage: js.UndefOr[String] = js.undefined
@@ -230,7 +230,7 @@ trait OptionsInputBase extends js.Object {
   var timeFormat: js.UndefOr[String] = js.undefined
   var timezone: js.UndefOr[String | Boolean] = js.undefined
   var titleFormat: js.UndefOr[String] = js.undefined
-  var unselect: js.UndefOr[js.Function2[/* view */ default, /* jsEvent */ Event_, Unit]] = js.undefined
+  var unselect: js.UndefOr[js.Function2[/* view */ default, /* jsEvent */ Event, Unit]] = js.undefined
   var unselectAuto: js.UndefOr[Boolean] = js.undefined
   var unselectCancel: js.UndefOr[String] = js.undefined
   var validRange: js.UndefOr[RangeInput] = js.undefined
@@ -252,7 +252,7 @@ object OptionsInputBase {
     allDayDefault: js.UndefOr[Boolean] = js.undefined,
     allDaySlot: js.UndefOr[Boolean] = js.undefined,
     allDayText: String = null,
-    aspectRatio: Int | Double = null,
+    aspectRatio: js.UndefOr[Double] = js.undefined,
     bootstrapFontAwesome: Boolean | ButtonIconsInput = null,
     bootstrapGlyphicons: Boolean | ButtonIconsInput = null,
     businessHours: Boolean | BusinessHoursInput | js.Array[BusinessHoursInput] = null,
@@ -266,7 +266,7 @@ object OptionsInputBase {
     dateAlignment: String = null,
     dateIncrement: DurationInput = null,
     dayClick: (/* date */ Moment, /* jsEvent */ MouseEvent, /* view */ default, /* resourceObj */ js.UndefOr[js.Any]) => Unit = null,
-    dayCount: Int | Double = null,
+    dayCount: js.UndefOr[Double] = js.undefined,
     dayNames: js.Array[String] = null,
     dayNamesShort: js.Array[String] = null,
     dayPopoverFormat: String = null,
@@ -275,8 +275,8 @@ object OptionsInputBase {
     defaultView: String = null,
     displayEventEnd: js.UndefOr[Boolean] = js.undefined,
     displayEventTime: js.UndefOr[Boolean] = js.undefined,
-    dragOpacity: Int | Double = null,
-    dragRevertDuration: Int | Double = null,
+    dragOpacity: js.UndefOr[Double] = js.undefined,
+    dragRevertDuration: js.UndefOr[Double] = js.undefined,
     dragScroll: js.UndefOr[Boolean] = js.undefined,
     drop: (/* date */ Moment, /* jsEvent */ MouseEvent, /* ui */ js.Any) => Unit = null,
     dropAccept: String | (js.Function1[/* draggable */ js.Any, Boolean]) = null,
@@ -296,12 +296,12 @@ object OptionsInputBase {
     eventDestroy: (/* event */ EventObjectInput, /* element */ JQuery, /* view */ default) => Unit = null,
     eventDragStart: (/* event */ EventObjectInput, /* jsEvent */ MouseEvent, /* ui */ js.Any, /* view */ default) => Unit = null,
     eventDragStop: (/* event */ EventObjectInput, /* jsEvent */ MouseEvent, /* ui */ js.Any, /* view */ default) => Unit = null,
-    eventDrop: (/* event */ EventObjectInput, /* delta */ Duration_, /* revertFunc */ js.Function, /* jsEvent */ Event_, /* ui */ js.Any, /* view */ default) => Unit = null,
+    eventDrop: (/* event */ EventObjectInput, /* delta */ Duration_, /* revertFunc */ js.Function, /* jsEvent */ Event, /* ui */ js.Any, /* view */ default) => Unit = null,
     eventDurationEditable: js.UndefOr[Boolean] = js.undefined,
     eventLimit: Boolean | Double = null,
-    eventLimitClick: popover | week | day | String | (js.Function2[/* cellinfo */ CellInfo, /* jsevent */ Event_, Unit]) = null,
+    eventLimitClick: popover | week | day | String | (js.Function2[/* cellinfo */ CellInfo, /* jsevent */ Event, Unit]) = null,
     eventLimitText: String | (js.Function1[/* eventCnt */ Double, String]) = null,
-    eventLongPressDelay: Int | Double = null,
+    eventLongPressDelay: js.UndefOr[Double] = js.undefined,
     eventMouseout: (/* event */ EventObjectInput, /* jsEvent */ MouseEvent, /* view */ default) => Unit = null,
     eventMouseover: (/* event */ EventObjectInput, /* jsEvent */ MouseEvent, /* view */ default) => Unit = null,
     eventOrder: String | (js.Array[
@@ -310,15 +310,15 @@ object OptionsInputBase {
     eventOverlap: Boolean | (js.Function2[/* stillEvent */ EventObjectInput, /* movingEvent */ EventObjectInput, Boolean]) = null,
     eventReceive: /* event */ EventObjectInput => Unit = null,
     eventRender: (/* event */ EventObjectInput, /* element */ JQuery, /* view */ default) => Unit = null,
-    eventRenderWait: Int | Double = null,
-    eventResize: (/* event */ EventObjectInput, /* delta */ Duration_, /* revertFunc */ js.Function, /* jsEvent */ Event_, /* ui */ js.Any, /* view */ default) => Unit = null,
+    eventRenderWait: js.UndefOr[Null | Double] = js.undefined,
+    eventResize: (/* event */ EventObjectInput, /* delta */ Duration_, /* revertFunc */ js.Function, /* jsEvent */ Event, /* ui */ js.Any, /* view */ default) => Unit = null,
     eventResizeStart: (/* event */ EventObjectInput, /* jsEvent */ MouseEvent, /* ui */ js.Any, /* view */ default) => Unit = null,
     eventResizeStop: (/* event */ EventObjectInput, /* jsEvent */ MouseEvent, /* ui */ js.Any, /* view */ default) => Unit = null,
     eventSources: js.Array[EventSourceInput] = null,
     eventStartEditable: js.UndefOr[Boolean] = js.undefined,
     eventTextColor: String = null,
     events: EventSourceInput = null,
-    firstDay: Int | Double = null,
+    firstDay: js.UndefOr[Double] = js.undefined,
     fixedWeekCount: js.UndefOr[Boolean] = js.undefined,
     footer: Boolean | ToolbarInput = null,
     handleWindowResize: js.UndefOr[Boolean] = js.undefined,
@@ -331,13 +331,13 @@ object OptionsInputBase {
     listDayFormat: String | Boolean = null,
     loading: (/* isLoading */ Boolean, /* view */ default) => Unit = null,
     locale: String = null,
-    longPressDelay: Int | Double = null,
+    longPressDelay: js.UndefOr[Double] = js.undefined,
     maxTime: DurationInput = null,
     minTime: DurationInput = null,
     monthNames: js.Array[String] = null,
     monthNamesShort: js.Array[String] = null,
-    navLinkDayClick: String | (js.Function2[/* date */ Moment, /* jsEvent */ Event_, Unit]) = null,
-    navLinkWeekClick: String | (js.Function2[/* weekStart */ js.Any, /* jsEvent */ Event_, Unit]) = null,
+    navLinkDayClick: String | (js.Function2[/* date */ Moment, /* jsEvent */ Event, Unit]) = null,
+    navLinkWeekClick: String | (js.Function2[/* weekStart */ js.Any, /* jsEvent */ Event, Unit]) = null,
     navLinks: js.UndefOr[Boolean] = js.undefined,
     nextDayThreshold: DurationInput = null,
     noEventsMessage: String = null,
@@ -362,7 +362,7 @@ object OptionsInputBase {
     timeFormat: String = null,
     timezone: String | Boolean = null,
     titleFormat: String = null,
-    unselect: (/* view */ default, /* jsEvent */ Event_) => Unit = null,
+    unselect: (/* view */ default, /* jsEvent */ Event) => Unit = null,
     unselectAuto: js.UndefOr[Boolean] = js.undefined,
     unselectCancel: String = null,
     validRange: RangeInput = null,
@@ -375,18 +375,18 @@ object OptionsInputBase {
     weekNumbersWithinDays: js.UndefOr[Boolean] = js.undefined,
     weekends: js.UndefOr[Boolean] = js.undefined,
     windowResize: /* view */ default => Unit = null,
-    windowResizeDelay: Int | Double = null
+    windowResizeDelay: js.UndefOr[Double] = js.undefined
   ): OptionsInputBase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allDayDefault)) __obj.updateDynamic("allDayDefault")(allDayDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(allDaySlot)) __obj.updateDynamic("allDaySlot")(allDaySlot.asInstanceOf[js.Any])
+    if (!js.isUndefined(allDayDefault)) __obj.updateDynamic("allDayDefault")(allDayDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allDaySlot)) __obj.updateDynamic("allDaySlot")(allDaySlot.get.asInstanceOf[js.Any])
     if (allDayText != null) __obj.updateDynamic("allDayText")(allDayText.asInstanceOf[js.Any])
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio.get.asInstanceOf[js.Any])
     if (bootstrapFontAwesome != null) __obj.updateDynamic("bootstrapFontAwesome")(bootstrapFontAwesome.asInstanceOf[js.Any])
     if (bootstrapGlyphicons != null) __obj.updateDynamic("bootstrapGlyphicons")(bootstrapGlyphicons.asInstanceOf[js.Any])
     if (businessHours != null) __obj.updateDynamic("businessHours")(businessHours.asInstanceOf[js.Any])
     if (buttonIcons != null) __obj.updateDynamic("buttonIcons")(buttonIcons.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnHeader)) __obj.updateDynamic("columnHeader")(columnHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHeader)) __obj.updateDynamic("columnHeader")(columnHeader.get.asInstanceOf[js.Any])
     if (columnHeaderFormat != null) __obj.updateDynamic("columnHeaderFormat")(columnHeaderFormat.asInstanceOf[js.Any])
     if (columnHeaderHtml != null) __obj.updateDynamic("columnHeaderHtml")(columnHeaderHtml.asInstanceOf[js.Any])
     if (columnHeaderText != null) __obj.updateDynamic("columnHeaderText")(columnHeaderText.asInstanceOf[js.Any])
@@ -395,23 +395,23 @@ object OptionsInputBase {
     if (dateAlignment != null) __obj.updateDynamic("dateAlignment")(dateAlignment.asInstanceOf[js.Any])
     if (dateIncrement != null) __obj.updateDynamic("dateIncrement")(dateIncrement.asInstanceOf[js.Any])
     if (dayClick != null) __obj.updateDynamic("dayClick")(js.Any.fromFunction4(dayClick))
-    if (dayCount != null) __obj.updateDynamic("dayCount")(dayCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayCount)) __obj.updateDynamic("dayCount")(dayCount.get.asInstanceOf[js.Any])
     if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
     if (dayNamesShort != null) __obj.updateDynamic("dayNamesShort")(dayNamesShort.asInstanceOf[js.Any])
     if (dayPopoverFormat != null) __obj.updateDynamic("dayPopoverFormat")(dayPopoverFormat.asInstanceOf[js.Any])
     if (dayRender != null) __obj.updateDynamic("dayRender")(js.Any.fromFunction2(dayRender))
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
     if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayEventEnd)) __obj.updateDynamic("displayEventEnd")(displayEventEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayEventTime)) __obj.updateDynamic("displayEventTime")(displayEventTime.asInstanceOf[js.Any])
-    if (dragOpacity != null) __obj.updateDynamic("dragOpacity")(dragOpacity.asInstanceOf[js.Any])
-    if (dragRevertDuration != null) __obj.updateDynamic("dragRevertDuration")(dragRevertDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragScroll)) __obj.updateDynamic("dragScroll")(dragScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayEventEnd)) __obj.updateDynamic("displayEventEnd")(displayEventEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayEventTime)) __obj.updateDynamic("displayEventTime")(displayEventTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragOpacity)) __obj.updateDynamic("dragOpacity")(dragOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragRevertDuration)) __obj.updateDynamic("dragRevertDuration")(dragRevertDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragScroll)) __obj.updateDynamic("dragScroll")(dragScroll.get.asInstanceOf[js.Any])
     if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction3(drop))
     if (dropAccept != null) __obj.updateDynamic("dropAccept")(dropAccept.asInstanceOf[js.Any])
-    if (!js.isUndefined(droppable)) __obj.updateDynamic("droppable")(droppable.asInstanceOf[js.Any])
+    if (!js.isUndefined(droppable)) __obj.updateDynamic("droppable")(droppable.get.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
     if (endParam != null) __obj.updateDynamic("endParam")(endParam.asInstanceOf[js.Any])
     if (eventAfterAllRender != null) __obj.updateDynamic("eventAfterAllRender")(js.Any.fromFunction1(eventAfterAllRender))
     if (eventAfterRender != null) __obj.updateDynamic("eventAfterRender")(js.Any.fromFunction3(eventAfterRender))
@@ -426,60 +426,60 @@ object OptionsInputBase {
     if (eventDragStart != null) __obj.updateDynamic("eventDragStart")(js.Any.fromFunction4(eventDragStart))
     if (eventDragStop != null) __obj.updateDynamic("eventDragStop")(js.Any.fromFunction4(eventDragStop))
     if (eventDrop != null) __obj.updateDynamic("eventDrop")(js.Any.fromFunction6(eventDrop))
-    if (!js.isUndefined(eventDurationEditable)) __obj.updateDynamic("eventDurationEditable")(eventDurationEditable.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventDurationEditable)) __obj.updateDynamic("eventDurationEditable")(eventDurationEditable.get.asInstanceOf[js.Any])
     if (eventLimit != null) __obj.updateDynamic("eventLimit")(eventLimit.asInstanceOf[js.Any])
     if (eventLimitClick != null) __obj.updateDynamic("eventLimitClick")(eventLimitClick.asInstanceOf[js.Any])
     if (eventLimitText != null) __obj.updateDynamic("eventLimitText")(eventLimitText.asInstanceOf[js.Any])
-    if (eventLongPressDelay != null) __obj.updateDynamic("eventLongPressDelay")(eventLongPressDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventLongPressDelay)) __obj.updateDynamic("eventLongPressDelay")(eventLongPressDelay.get.asInstanceOf[js.Any])
     if (eventMouseout != null) __obj.updateDynamic("eventMouseout")(js.Any.fromFunction3(eventMouseout))
     if (eventMouseover != null) __obj.updateDynamic("eventMouseover")(js.Any.fromFunction3(eventMouseover))
     if (eventOrder != null) __obj.updateDynamic("eventOrder")(eventOrder.asInstanceOf[js.Any])
     if (eventOverlap != null) __obj.updateDynamic("eventOverlap")(eventOverlap.asInstanceOf[js.Any])
     if (eventReceive != null) __obj.updateDynamic("eventReceive")(js.Any.fromFunction1(eventReceive))
     if (eventRender != null) __obj.updateDynamic("eventRender")(js.Any.fromFunction3(eventRender))
-    if (eventRenderWait != null) __obj.updateDynamic("eventRenderWait")(eventRenderWait.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventRenderWait)) __obj.updateDynamic("eventRenderWait")(eventRenderWait.asInstanceOf[js.Any])
     if (eventResize != null) __obj.updateDynamic("eventResize")(js.Any.fromFunction6(eventResize))
     if (eventResizeStart != null) __obj.updateDynamic("eventResizeStart")(js.Any.fromFunction4(eventResizeStart))
     if (eventResizeStop != null) __obj.updateDynamic("eventResizeStop")(js.Any.fromFunction4(eventResizeStop))
     if (eventSources != null) __obj.updateDynamic("eventSources")(eventSources.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventStartEditable)) __obj.updateDynamic("eventStartEditable")(eventStartEditable.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventStartEditable)) __obj.updateDynamic("eventStartEditable")(eventStartEditable.get.asInstanceOf[js.Any])
     if (eventTextColor != null) __obj.updateDynamic("eventTextColor")(eventTextColor.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedWeekCount)) __obj.updateDynamic("fixedWeekCount")(fixedWeekCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstDay)) __obj.updateDynamic("firstDay")(firstDay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedWeekCount)) __obj.updateDynamic("fixedWeekCount")(fixedWeekCount.get.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleWindowResize)) __obj.updateDynamic("handleWindowResize")(handleWindowResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleWindowResize)) __obj.updateDynamic("handleWindowResize")(handleWindowResize.get.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hiddenDays != null) __obj.updateDynamic("hiddenDays")(hiddenDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyFetching)) __obj.updateDynamic("lazyFetching")(lazyFetching.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyFetching)) __obj.updateDynamic("lazyFetching")(lazyFetching.get.asInstanceOf[js.Any])
     if (listDayAltFormat != null) __obj.updateDynamic("listDayAltFormat")(listDayAltFormat.asInstanceOf[js.Any])
     if (listDayFormat != null) __obj.updateDynamic("listDayFormat")(listDayFormat.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(js.Any.fromFunction2(loading))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (longPressDelay != null) __obj.updateDynamic("longPressDelay")(longPressDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(longPressDelay)) __obj.updateDynamic("longPressDelay")(longPressDelay.get.asInstanceOf[js.Any])
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
     if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
     if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
     if (monthNamesShort != null) __obj.updateDynamic("monthNamesShort")(monthNamesShort.asInstanceOf[js.Any])
     if (navLinkDayClick != null) __obj.updateDynamic("navLinkDayClick")(navLinkDayClick.asInstanceOf[js.Any])
     if (navLinkWeekClick != null) __obj.updateDynamic("navLinkWeekClick")(navLinkWeekClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(navLinks)) __obj.updateDynamic("navLinks")(navLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(navLinks)) __obj.updateDynamic("navLinks")(navLinks.get.asInstanceOf[js.Any])
     if (nextDayThreshold != null) __obj.updateDynamic("nextDayThreshold")(nextDayThreshold.asInstanceOf[js.Any])
     if (noEventsMessage != null) __obj.updateDynamic("noEventsMessage")(noEventsMessage.asInstanceOf[js.Any])
     if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
-    if (!js.isUndefined(nowIndicator)) __obj.updateDynamic("nowIndicator")(nowIndicator.asInstanceOf[js.Any])
+    if (!js.isUndefined(nowIndicator)) __obj.updateDynamic("nowIndicator")(nowIndicator.get.asInstanceOf[js.Any])
     if (scrollTime != null) __obj.updateDynamic("scrollTime")(scrollTime.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction5(select))
     if (selectAllow != null) __obj.updateDynamic("selectAllow")(js.Any.fromFunction1(selectAllow))
     if (selectConstraint != null) __obj.updateDynamic("selectConstraint")(selectConstraint.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectHelper)) __obj.updateDynamic("selectHelper")(selectHelper.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectHelper)) __obj.updateDynamic("selectHelper")(selectHelper.get.asInstanceOf[js.Any])
     if (selectOverlap != null) __obj.updateDynamic("selectOverlap")(selectOverlap.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNonCurrentDates)) __obj.updateDynamic("showNonCurrentDates")(showNonCurrentDates.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNonCurrentDates)) __obj.updateDynamic("showNonCurrentDates")(showNonCurrentDates.get.asInstanceOf[js.Any])
     if (slotDuration != null) __obj.updateDynamic("slotDuration")(slotDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(slotEventOverlap)) __obj.updateDynamic("slotEventOverlap")(slotEventOverlap.asInstanceOf[js.Any])
+    if (!js.isUndefined(slotEventOverlap)) __obj.updateDynamic("slotEventOverlap")(slotEventOverlap.get.asInstanceOf[js.Any])
     if (slotLabelFormat != null) __obj.updateDynamic("slotLabelFormat")(slotLabelFormat.asInstanceOf[js.Any])
     if (slotLabelInterval != null) __obj.updateDynamic("slotLabelInterval")(slotLabelInterval.asInstanceOf[js.Any])
     if (snapDuration != null) __obj.updateDynamic("snapDuration")(snapDuration.asInstanceOf[js.Any])
@@ -490,7 +490,7 @@ object OptionsInputBase {
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (titleFormat != null) __obj.updateDynamic("titleFormat")(titleFormat.asInstanceOf[js.Any])
     if (unselect != null) __obj.updateDynamic("unselect")(js.Any.fromFunction2(unselect))
-    if (!js.isUndefined(unselectAuto)) __obj.updateDynamic("unselectAuto")(unselectAuto.asInstanceOf[js.Any])
+    if (!js.isUndefined(unselectAuto)) __obj.updateDynamic("unselectAuto")(unselectAuto.get.asInstanceOf[js.Any])
     if (unselectCancel != null) __obj.updateDynamic("unselectCancel")(unselectCancel.asInstanceOf[js.Any])
     if (validRange != null) __obj.updateDynamic("validRange")(validRange.asInstanceOf[js.Any])
     if (viewDestroy != null) __obj.updateDynamic("viewDestroy")(js.Any.fromFunction2(viewDestroy))
@@ -498,11 +498,11 @@ object OptionsInputBase {
     if (visibleRange != null) __obj.updateDynamic("visibleRange")(visibleRange.asInstanceOf[js.Any])
     if (weekNumberCalculation != null) __obj.updateDynamic("weekNumberCalculation")(weekNumberCalculation.asInstanceOf[js.Any])
     if (weekNumberTitle != null) __obj.updateDynamic("weekNumberTitle")(weekNumberTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekNumbers)) __obj.updateDynamic("weekNumbers")(weekNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekNumbersWithinDays)) __obj.updateDynamic("weekNumbersWithinDays")(weekNumbersWithinDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekends)) __obj.updateDynamic("weekends")(weekends.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekNumbers)) __obj.updateDynamic("weekNumbers")(weekNumbers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekNumbersWithinDays)) __obj.updateDynamic("weekNumbersWithinDays")(weekNumbersWithinDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekends)) __obj.updateDynamic("weekends")(weekends.get.asInstanceOf[js.Any])
     if (windowResize != null) __obj.updateDynamic("windowResize")(js.Any.fromFunction1(windowResize))
-    if (windowResizeDelay != null) __obj.updateDynamic("windowResizeDelay")(windowResizeDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowResizeDelay)) __obj.updateDynamic("windowResizeDelay")(windowResizeDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsInputBase]
   }
 }

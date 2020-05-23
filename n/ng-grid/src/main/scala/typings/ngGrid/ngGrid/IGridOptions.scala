@@ -148,9 +148,9 @@ object IGridOptions {
     enableSorting: js.UndefOr[Boolean] = js.undefined,
     excludeProperties: js.Any = null,
     filterOptions: IFilterOptions = null,
-    footerRowHeight: Int | Double = null,
+    footerRowHeight: js.UndefOr[Double] = js.undefined,
     groups: js.Array[String] = null,
-    headerRowHeight: Int | Double = null,
+    headerRowHeight: js.UndefOr[Double] = js.undefined,
     headerRowTemplate: String = null,
     i18n: String = null,
     jqueryUIDraggable: js.UndefOr[Boolean] = js.undefined,
@@ -161,7 +161,7 @@ object IGridOptions {
     pagingOptions: IPagingOptions = null,
     pinSelectionCheckbox: js.UndefOr[Boolean] = js.undefined,
     plugins: js.Array[_] = null,
-    rowHeight: Int | Double = null,
+    rowHeight: js.UndefOr[Double] = js.undefined,
     rowTemplate: String = null,
     selectItem: (/* idx */ Double, /* state */ Boolean) => _ = null,
     selectWithCheckboxOnly: js.UndefOr[Boolean] = js.undefined,
@@ -172,9 +172,9 @@ object IGridOptions {
     showGroupPanel: js.UndefOr[Boolean] = js.undefined,
     showSelectionCheckbox: js.UndefOr[Boolean] = js.undefined,
     sortInfo: js.Any = null,
-    tabIndex: Int | Double = null,
+    tabIndex: js.UndefOr[Double] = js.undefined,
     useExternalSorting: js.UndefOr[Boolean] = js.undefined,
-    virtualizationThreshold: Int | Double = null
+    virtualizationThreshold: js.UndefOr[Double] = js.undefined
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
     if (afterSelectionChange != null) __obj.updateDynamic("afterSelectionChange")(js.Any.fromFunction2(afterSelectionChange))
@@ -185,46 +185,46 @@ object IGridOptions {
     if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataUpdated != null) __obj.updateDynamic("dataUpdated")(dataUpdated.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellSelection)) __obj.updateDynamic("enableCellSelection")(enableCellSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnHeavyVirt)) __obj.updateDynamic("enableColumnHeavyVirt")(enableColumnHeavyVirt.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnReordering)) __obj.updateDynamic("enableColumnReordering")(enableColumnReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnResize)) __obj.updateDynamic("enableColumnResize")(enableColumnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHighlighting)) __obj.updateDynamic("enableHighlighting")(enableHighlighting.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePaging)) __obj.updateDynamic("enablePaging")(enablePaging.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowReordering)) __obj.updateDynamic("enableRowReordering")(enableRowReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellSelection)) __obj.updateDynamic("enableCellSelection")(enableCellSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnHeavyVirt)) __obj.updateDynamic("enableColumnHeavyVirt")(enableColumnHeavyVirt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnReordering)) __obj.updateDynamic("enableColumnReordering")(enableColumnReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnResize)) __obj.updateDynamic("enableColumnResize")(enableColumnResize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHighlighting)) __obj.updateDynamic("enableHighlighting")(enableHighlighting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePaging)) __obj.updateDynamic("enablePaging")(enablePaging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowReordering)) __obj.updateDynamic("enableRowReordering")(enableRowReordering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.get.asInstanceOf[js.Any])
     if (excludeProperties != null) __obj.updateDynamic("excludeProperties")(excludeProperties.asInstanceOf[js.Any])
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions.asInstanceOf[js.Any])
-    if (footerRowHeight != null) __obj.updateDynamic("footerRowHeight")(footerRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(footerRowHeight)) __obj.updateDynamic("footerRowHeight")(footerRowHeight.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerRowHeight)) __obj.updateDynamic("headerRowHeight")(headerRowHeight.get.asInstanceOf[js.Any])
     if (headerRowTemplate != null) __obj.updateDynamic("headerRowTemplate")(headerRowTemplate.asInstanceOf[js.Any])
     if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (!js.isUndefined(jqueryUIDraggable)) __obj.updateDynamic("jqueryUIDraggable")(jqueryUIDraggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(jqueryUITheme)) __obj.updateDynamic("jqueryUITheme")(jqueryUITheme.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepLastSelected)) __obj.updateDynamic("keepLastSelected")(keepLastSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(maintainColumnRatios)) __obj.updateDynamic("maintainColumnRatios")(maintainColumnRatios.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(jqueryUIDraggable)) __obj.updateDynamic("jqueryUIDraggable")(jqueryUIDraggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jqueryUITheme)) __obj.updateDynamic("jqueryUITheme")(jqueryUITheme.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepLastSelected)) __obj.updateDynamic("keepLastSelected")(keepLastSelected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintainColumnRatios)) __obj.updateDynamic("maintainColumnRatios")(maintainColumnRatios.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.get.asInstanceOf[js.Any])
     if (pagingOptions != null) __obj.updateDynamic("pagingOptions")(pagingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinSelectionCheckbox)) __obj.updateDynamic("pinSelectionCheckbox")(pinSelectionCheckbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinSelectionCheckbox)) __obj.updateDynamic("pinSelectionCheckbox")(pinSelectionCheckbox.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate.asInstanceOf[js.Any])
     if (selectItem != null) __obj.updateDynamic("selectItem")(js.Any.fromFunction2(selectItem))
-    if (!js.isUndefined(selectWithCheckboxOnly)) __obj.updateDynamic("selectWithCheckboxOnly")(selectWithCheckboxOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectWithCheckboxOnly)) __obj.updateDynamic("selectWithCheckboxOnly")(selectWithCheckboxOnly.get.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnMenu)) __obj.updateDynamic("showColumnMenu")(showColumnMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGroupPanel)) __obj.updateDynamic("showGroupPanel")(showGroupPanel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSelectionCheckbox)) __obj.updateDynamic("showSelectionCheckbox")(showSelectionCheckbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnMenu)) __obj.updateDynamic("showColumnMenu")(showColumnMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGroupPanel)) __obj.updateDynamic("showGroupPanel")(showGroupPanel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSelectionCheckbox)) __obj.updateDynamic("showSelectionCheckbox")(showSelectionCheckbox.get.asInstanceOf[js.Any])
     if (sortInfo != null) __obj.updateDynamic("sortInfo")(sortInfo.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExternalSorting)) __obj.updateDynamic("useExternalSorting")(useExternalSorting.asInstanceOf[js.Any])
-    if (virtualizationThreshold != null) __obj.updateDynamic("virtualizationThreshold")(virtualizationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalSorting)) __obj.updateDynamic("useExternalSorting")(useExternalSorting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualizationThreshold)) __obj.updateDynamic("virtualizationThreshold")(virtualizationThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

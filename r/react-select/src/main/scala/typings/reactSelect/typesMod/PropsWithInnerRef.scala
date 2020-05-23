@@ -13,8 +13,7 @@ trait PropsWithInnerRef extends js.Object {
 object PropsWithInnerRef {
   @scala.inline
   def apply(innerRef: Ref[_] = null): PropsWithInnerRef = {
-    val __obj = js.Dynamic.literal()
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(innerRef = innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropsWithInnerRef]
   }
 }

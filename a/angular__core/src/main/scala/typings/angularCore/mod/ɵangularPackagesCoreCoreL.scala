@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.angularCore.mod.DebugNode because var conflicts: componentInstance, context, injector, providerTokens, references. Inlined 
 - typings.angularCore.mod.DebugElement because var conflicts: componentInstance, context, injector, providerTokens, references. Inlined name, properties, attributes, classes, styles, childNodes, nativeElement, children, query, queryAll, queryAllNodes, triggerEventHandler */ @JSImport("@angular/core", "\u0275angular_packages_core_core_l")
 @js.native

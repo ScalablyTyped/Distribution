@@ -1,5 +1,6 @@
 package typings.yogaLayout.mod
 
+import typings.yogaLayout.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,8 +83,15 @@ trait YogaNode extends js.Object {
   def setMaxWidth(maxWidth: String): Unit = js.native
   def setMaxWidth(maxWidth: Double): Unit = js.native
   def setMaxWidthPercent(maxWidth: Double): Unit = js.native
-  def setMeasureFunc(): Unit = js.native
-  def setMeasureFunc(measureFunc: js.Function0[_]): Unit = js.native
+  def setMeasureFunc(
+    measureFunc: js.Function4[
+      /* width */ Double, 
+      /* widthMeasureMode */ YogaMeasureMode, 
+      /* height */ Double, 
+      /* heightMeasureMode */ YogaMeasureMode, 
+      Height | Null
+    ]
+  ): Unit = js.native
   def setMinHeight(minHeight: String): Unit = js.native
   def setMinHeight(minHeight: Double): Unit = js.native
   def setMinHeightPercent(minHeight: Double): Unit = js.native
@@ -102,6 +110,6 @@ trait YogaNode extends js.Object {
   def setWidth(width: Double): Unit = js.native
   def setWidthAuto(): Unit = js.native
   def setWidthPercent(width: Double): Unit = js.native
-  def unsetMeasureFun(): Unit = js.native
+  def unsetMeasureFunc(): Unit = js.native
 }
 

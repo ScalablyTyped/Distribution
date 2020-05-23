@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.multiview")
 @js.native
-class multiview () extends baseview {
+trait multiview extends baseview {
   @JSName("config")
   var config_multiview: multiviewConfig = js.native
   def addView(view: js.Any): String | Double = js.native

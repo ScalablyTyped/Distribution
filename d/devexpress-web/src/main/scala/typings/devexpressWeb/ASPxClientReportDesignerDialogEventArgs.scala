@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the events related to opening and saving reports in the Web Report Designer.
   */
-@JSGlobal("ASPxClientReportDesignerDialogEventArgs")
-@js.native
-class ASPxClientReportDesignerDialogEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientReportDesignerDialogEventArgs class with the specified settings.
-    * @param url Specifies the URL of the report currently being processed. This value is assigned to the ASPxClientReportDesignerDialogEventArgs.Url property.
-    * @param report Specifies the report currently being processed. This value is assigned to the ASPxClientReportDesignerDialogEventArgs.Report property.
-    */
-  def this(url: String, report: js.Any) = this()
+trait ASPxClientReportDesignerDialogEventArgs extends ASPxClientEventArgs {
   /**
     * Specifies the report currently being processed.
     */
-  var Report: js.Any = js.native
+  var Report: js.Any
   /**
     * Specifies the URL of the report currently being processed.
     */
-  var Url: String = js.native
+  var Url: String
+}
+
+object ASPxClientReportDesignerDialogEventArgs {
+  @scala.inline
+  def apply(Report: js.Any, Url: String): ASPxClientReportDesignerDialogEventArgs = {
+    val __obj = js.Dynamic.literal(Report = Report.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientReportDesignerDialogEventArgs]
+  }
 }
 

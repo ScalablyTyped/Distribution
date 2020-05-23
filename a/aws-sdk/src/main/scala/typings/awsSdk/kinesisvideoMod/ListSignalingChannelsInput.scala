@@ -24,12 +24,12 @@ object ListSignalingChannelsInput {
   @scala.inline
   def apply(
     ChannelNameCondition: ChannelNameCondition = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[ListStreamsInputLimit] = js.undefined,
     NextToken: NextToken = null
   ): ListSignalingChannelsInput = {
     val __obj = js.Dynamic.literal()
     if (ChannelNameCondition != null) __obj.updateDynamic("ChannelNameCondition")(ChannelNameCondition.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSignalingChannelsInput]
   }

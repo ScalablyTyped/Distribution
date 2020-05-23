@@ -23,7 +23,7 @@ object ColumnSpec {
     autoIncrement: js.UndefOr[Boolean] = js.undefined,
     defaultValue: js.Any = null,
     foreignKey: ForeignKeySpec = null,
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     notNull: js.UndefOr[Boolean] = js.undefined,
     primaryKey: js.UndefOr[Boolean] = js.undefined,
     unique: js.UndefOr[Boolean] = js.undefined,
@@ -31,14 +31,14 @@ object ColumnSpec {
   ): ColumnSpec = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.get.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsigned)) __obj.updateDynamic("unsigned")(unsigned.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsigned)) __obj.updateDynamic("unsigned")(unsigned.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSpec]
   }
 }

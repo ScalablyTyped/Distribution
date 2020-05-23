@@ -1,54 +1,54 @@
 package typings.gapiClientBlogger.gapi.client.blogger
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientBlogger.AnonFetchBody
-import typings.gapiClientBlogger.AnonFetchImages
-import typings.gapiClientBlogger.AnonOrderBy
-import typings.gapiClientBlogger.AnonPath
-import typings.gapiClientBlogger.AnonPostId
-import typings.gapiClientBlogger.AnonPublishDate
-import typings.gapiClientBlogger.AnonQ
-import typings.gapiClientBlogger.AnonQuotaUser
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientBlogger.anon.FetchBody
+import typings.gapiClientBlogger.anon.FetchImages
+import typings.gapiClientBlogger.anon.OrderBy
+import typings.gapiClientBlogger.anon.Path
+import typings.gapiClientBlogger.anon.PostId
+import typings.gapiClientBlogger.anon.PublishDate
+import typings.gapiClientBlogger.anon.Q
+import typings.gapiClientBlogger.anon.QuotaUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PostsResource extends js.Object {
   /** Delete a post by ID. */
-  def delete(request: AnonPostId): Request_[Unit]
+  def delete(request: PostId): Request[Unit]
   /** Get a post by ID. */
-  def get(request: AnonFetchBody): Request_[Post]
+  def get(request: FetchBody): Request[Post]
   /** Retrieve a Post by Path. */
-  def getByPath(request: AnonPath): Request_[Post]
+  def getByPath(request: Path): Request[Post]
   /** Add a post. */
-  def insert(request: AnonFetchImages): Request_[Post]
+  def insert(request: FetchImages): Request[Post]
   /** Retrieves a list of posts, possibly filtered. */
-  def list(request: AnonOrderBy): Request_[PostList]
+  def list(request: OrderBy): Request[PostList]
   /** Update a post. This method supports patch semantics. */
-  def patch(request: AnonQuotaUser): Request_[Post]
+  def patch(request: QuotaUser): Request[Post]
   /** Publishes a draft post, optionally at the specific time of the given publishDate parameter. */
-  def publish(request: AnonPublishDate): Request_[Post]
+  def publish(request: PublishDate): Request[Post]
   /** Revert a published or scheduled post to draft state. */
-  def revert(request: AnonPostId): Request_[Post]
+  def revert(request: PostId): Request[Post]
   /** Search for a post. */
-  def search(request: AnonQ): Request_[PostList]
+  def search(request: Q): Request[PostList]
   /** Update a post. */
-  def update(request: AnonQuotaUser): Request_[Post]
+  def update(request: QuotaUser): Request[Post]
 }
 
 object PostsResource {
   @scala.inline
   def apply(
-    delete: AnonPostId => Request_[Unit],
-    get: AnonFetchBody => Request_[Post],
-    getByPath: AnonPath => Request_[Post],
-    insert: AnonFetchImages => Request_[Post],
-    list: AnonOrderBy => Request_[PostList],
-    patch: AnonQuotaUser => Request_[Post],
-    publish: AnonPublishDate => Request_[Post],
-    revert: AnonPostId => Request_[Post],
-    search: AnonQ => Request_[PostList],
-    update: AnonQuotaUser => Request_[Post]
+    delete: PostId => Request[Unit],
+    get: FetchBody => Request[Post],
+    getByPath: Path => Request[Post],
+    insert: FetchImages => Request[Post],
+    list: OrderBy => Request[PostList],
+    patch: QuotaUser => Request[Post],
+    publish: PublishDate => Request[Post],
+    revert: PostId => Request[Post],
+    search: Q => Request[PostList],
+    update: QuotaUser => Request[Post]
   ): PostsResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getByPath = js.Any.fromFunction1(getByPath), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), publish = js.Any.fromFunction1(publish), revert = js.Any.fromFunction1(revert), search = js.Any.fromFunction1(search), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[PostsResource]

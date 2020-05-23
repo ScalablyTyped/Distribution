@@ -10,9 +10,8 @@ trait DefaultMeta[MIdType] extends js.Object {
 
 object DefaultMeta {
   @scala.inline
-  def apply[MIdType](maxId: Int | Double = null): DefaultMeta[MIdType] = {
-    val __obj = js.Dynamic.literal()
-    if (maxId != null) __obj.updateDynamic("maxId")(maxId.asInstanceOf[js.Any])
+  def apply[MIdType](maxId: Double = null.asInstanceOf[Double]): DefaultMeta[MIdType] = {
+    val __obj = js.Dynamic.literal(maxId = maxId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultMeta[MIdType]]
   }
 }

@@ -109,6 +109,10 @@ trait WebPreferences extends js.Object {
     */
   var enableRemoteModule: js.UndefOr[Boolean] = js.undefined
   /**
+    * Whether to enable the WebSQL api. Default is `true`.
+    */
+  var enableWebSQL: js.UndefOr[Boolean] = js.undefined
+  /**
     * Enables Chromium's experimental features. Default is `false`.
     */
   var experimentalFeatures: js.UndefOr[Boolean] = js.undefined
@@ -250,18 +254,19 @@ object WebPreferences {
     contextIsolation: js.UndefOr[Boolean] = js.undefined,
     defaultEncoding: String = null,
     defaultFontFamily: DefaultFontFamily = null,
-    defaultFontSize: Int | Double = null,
-    defaultMonospaceFontSize: Int | Double = null,
+    defaultFontSize: js.UndefOr[Double] = js.undefined,
+    defaultMonospaceFontSize: js.UndefOr[Double] = js.undefined,
     devTools: js.UndefOr[Boolean] = js.undefined,
     disableBlinkFeatures: String = null,
     disableDialogs: js.UndefOr[Boolean] = js.undefined,
     disableHtmlFullscreenWindowResize: js.UndefOr[Boolean] = js.undefined,
     enableBlinkFeatures: String = null,
     enableRemoteModule: js.UndefOr[Boolean] = js.undefined,
+    enableWebSQL: js.UndefOr[Boolean] = js.undefined,
     experimentalFeatures: js.UndefOr[Boolean] = js.undefined,
     images: js.UndefOr[Boolean] = js.undefined,
     javascript: js.UndefOr[Boolean] = js.undefined,
-    minimumFontSize: Int | Double = null,
+    minimumFontSize: js.UndefOr[Double] = js.undefined,
     nativeWindowOpen: js.UndefOr[Boolean] = js.undefined,
     navigateOnDragDrop: js.UndefOr[Boolean] = js.undefined,
     nodeIntegration: js.UndefOr[Boolean] = js.undefined,
@@ -281,50 +286,51 @@ object WebPreferences {
     webSecurity: js.UndefOr[Boolean] = js.undefined,
     webgl: js.UndefOr[Boolean] = js.undefined,
     webviewTag: js.UndefOr[Boolean] = js.undefined,
-    zoomFactor: Int | Double = null
+    zoomFactor: js.UndefOr[Double] = js.undefined
   ): WebPreferences = {
     val __obj = js.Dynamic.literal()
     if (accessibleTitle != null) __obj.updateDynamic("accessibleTitle")(accessibleTitle.asInstanceOf[js.Any])
     if (additionalArguments != null) __obj.updateDynamic("additionalArguments")(additionalArguments.asInstanceOf[js.Any])
     if (affinity != null) __obj.updateDynamic("affinity")(affinity.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowRunningInsecureContent)) __obj.updateDynamic("allowRunningInsecureContent")(allowRunningInsecureContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRunningInsecureContent)) __obj.updateDynamic("allowRunningInsecureContent")(allowRunningInsecureContent.get.asInstanceOf[js.Any])
     if (autoplayPolicy != null) __obj.updateDynamic("autoplayPolicy")(autoplayPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundThrottling)) __obj.updateDynamic("backgroundThrottling")(backgroundThrottling.asInstanceOf[js.Any])
-    if (!js.isUndefined(contextIsolation)) __obj.updateDynamic("contextIsolation")(contextIsolation.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundThrottling)) __obj.updateDynamic("backgroundThrottling")(backgroundThrottling.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextIsolation)) __obj.updateDynamic("contextIsolation")(contextIsolation.get.asInstanceOf[js.Any])
     if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
     if (defaultFontFamily != null) __obj.updateDynamic("defaultFontFamily")(defaultFontFamily.asInstanceOf[js.Any])
-    if (defaultFontSize != null) __obj.updateDynamic("defaultFontSize")(defaultFontSize.asInstanceOf[js.Any])
-    if (defaultMonospaceFontSize != null) __obj.updateDynamic("defaultMonospaceFontSize")(defaultMonospaceFontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(devTools)) __obj.updateDynamic("devTools")(devTools.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultFontSize)) __obj.updateDynamic("defaultFontSize")(defaultFontSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultMonospaceFontSize)) __obj.updateDynamic("defaultMonospaceFontSize")(defaultMonospaceFontSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(devTools)) __obj.updateDynamic("devTools")(devTools.get.asInstanceOf[js.Any])
     if (disableBlinkFeatures != null) __obj.updateDynamic("disableBlinkFeatures")(disableBlinkFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDialogs)) __obj.updateDynamic("disableDialogs")(disableDialogs.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHtmlFullscreenWindowResize)) __obj.updateDynamic("disableHtmlFullscreenWindowResize")(disableHtmlFullscreenWindowResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDialogs)) __obj.updateDynamic("disableDialogs")(disableDialogs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHtmlFullscreenWindowResize)) __obj.updateDynamic("disableHtmlFullscreenWindowResize")(disableHtmlFullscreenWindowResize.get.asInstanceOf[js.Any])
     if (enableBlinkFeatures != null) __obj.updateDynamic("enableBlinkFeatures")(enableBlinkFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRemoteModule)) __obj.updateDynamic("enableRemoteModule")(enableRemoteModule.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimentalFeatures)) __obj.updateDynamic("experimentalFeatures")(experimentalFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(images)) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (!js.isUndefined(javascript)) __obj.updateDynamic("javascript")(javascript.asInstanceOf[js.Any])
-    if (minimumFontSize != null) __obj.updateDynamic("minimumFontSize")(minimumFontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(nativeWindowOpen)) __obj.updateDynamic("nativeWindowOpen")(nativeWindowOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigateOnDragDrop)) __obj.updateDynamic("navigateOnDragDrop")(navigateOnDragDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeIntegration)) __obj.updateDynamic("nodeIntegration")(nodeIntegration.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeIntegrationInSubFrames)) __obj.updateDynamic("nodeIntegrationInSubFrames")(nodeIntegrationInSubFrames.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeIntegrationInWorker)) __obj.updateDynamic("nodeIntegrationInWorker")(nodeIntegrationInWorker.asInstanceOf[js.Any])
-    if (!js.isUndefined(offscreen)) __obj.updateDynamic("offscreen")(offscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRemoteModule)) __obj.updateDynamic("enableRemoteModule")(enableRemoteModule.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableWebSQL)) __obj.updateDynamic("enableWebSQL")(enableWebSQL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentalFeatures)) __obj.updateDynamic("experimentalFeatures")(experimentalFeatures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(images)) __obj.updateDynamic("images")(images.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(javascript)) __obj.updateDynamic("javascript")(javascript.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimumFontSize)) __obj.updateDynamic("minimumFontSize")(minimumFontSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nativeWindowOpen)) __obj.updateDynamic("nativeWindowOpen")(nativeWindowOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigateOnDragDrop)) __obj.updateDynamic("navigateOnDragDrop")(navigateOnDragDrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeIntegration)) __obj.updateDynamic("nodeIntegration")(nodeIntegration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeIntegrationInSubFrames)) __obj.updateDynamic("nodeIntegrationInSubFrames")(nodeIntegrationInSubFrames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeIntegrationInWorker)) __obj.updateDynamic("nodeIntegrationInWorker")(nodeIntegrationInWorker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offscreen)) __obj.updateDynamic("offscreen")(offscreen.get.asInstanceOf[js.Any])
     if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
-    if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins.get.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (!js.isUndefined(safeDialogs)) __obj.updateDynamic("safeDialogs")(safeDialogs.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeDialogs)) __obj.updateDynamic("safeDialogs")(safeDialogs.get.asInstanceOf[js.Any])
     if (safeDialogsMessage != null) __obj.updateDynamic("safeDialogsMessage")(safeDialogsMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollBounce)) __obj.updateDynamic("scrollBounce")(scrollBounce.asInstanceOf[js.Any])
+    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollBounce)) __obj.updateDynamic("scrollBounce")(scrollBounce.get.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(textAreasAreResizable)) __obj.updateDynamic("textAreasAreResizable")(textAreasAreResizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(webSecurity)) __obj.updateDynamic("webSecurity")(webSecurity.asInstanceOf[js.Any])
-    if (!js.isUndefined(webgl)) __obj.updateDynamic("webgl")(webgl.asInstanceOf[js.Any])
-    if (!js.isUndefined(webviewTag)) __obj.updateDynamic("webviewTag")(webviewTag.asInstanceOf[js.Any])
-    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textAreasAreResizable)) __obj.updateDynamic("textAreasAreResizable")(textAreasAreResizable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webSecurity)) __obj.updateDynamic("webSecurity")(webSecurity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webgl)) __obj.updateDynamic("webgl")(webgl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webviewTag)) __obj.updateDynamic("webviewTag")(webviewTag.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomFactor)) __obj.updateDynamic("zoomFactor")(zoomFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebPreferences]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.DialProtocol
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object DialAppStopResult extends js.Object {
   /** The app is successfully stopped. */
   @js.native
   sealed trait stopped extends DialAppStopResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DialAppStopResult with Double] = js.native
-  /* 3 */ @js.native
-  object networkFailure extends TopLevel[networkFailure with Double]
-  
-  /* 2 */ @js.native
-  object operationNotSupported extends TopLevel[operationNotSupported with Double]
-  
-  /* 1 */ @js.native
-  object stopFailed extends TopLevel[stopFailed with Double]
-  
-  /* 0 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
   
 }
 

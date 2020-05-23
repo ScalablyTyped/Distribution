@@ -6,15 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * A local notification to alert the user of new or pending application information.
-			 */
-@JSGlobal("Titanium.App.iOS.LocalNotification")
+  * A local notification to alert the user of new or pending application information.
+  */
 @js.native
-class LocalNotification () extends Proxy {
+trait LocalNotification extends Proxy {
   /**
-  				 * Cancels the pending notification.
-  				 * @deprecated Use [Titanium.App.iOS.UserNotificationCenter.removePendingNotifications](Titanium.App.iOS.UserNotificationCenter.removePendingNotifications) instead.
-  				 */
+    * Cancels the pending notification.
+    * @deprecated Use [Titanium.App.iOS.UserNotificationCenter.removePendingNotifications](Titanium.App.iOS.UserNotificationCenter.removePendingNotifications) instead.
+    */
   def cancel(): Unit = js.native
 }
 

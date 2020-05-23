@@ -1,6 +1,6 @@
 package typings.oracleOraclejet.ojchartMod
 
-import typings.oracleOraclejet.AnonMedianSvgStyle
+import typings.oracleOraclejet.anon.MedianSvgStyle
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.oracleOraclejetStrings.aboveMarker
 import typings.oracleOraclejet.oracleOraclejetStrings.afterMarker
@@ -41,8 +41,8 @@ import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
 import typings.std.ElementEventMap
 import typings.std.ErrorEvent
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import typings.std.FocusEvent
 import typings.std.GlobalEventHandlersEventMap
 import typings.std.KeyboardEvent
@@ -64,7 +64,7 @@ trait ojChartItemEventMap
      with DocumentAndElementEventHandlersEventMap {
   var borderColorChanged: JetElementCustomEvent[js.UndefOr[String]]
   var borderWidthChanged: JetElementCustomEvent[js.UndefOr[Double]]
-  var boxPlotChanged: JetElementCustomEvent[js.UndefOr[AnonMedianSvgStyle]]
+  var boxPlotChanged: JetElementCustomEvent[js.UndefOr[MedianSvgStyle]]
   var categoriesChanged: JetElementCustomEvent[js.UndefOr[js.Array[String]]]
   var closeChanged: JetElementCustomEvent[js.UndefOr[Double]]
   var colorChanged: JetElementCustomEvent[js.UndefOr[String]]
@@ -124,44 +124,44 @@ object ojChartItemEventMap {
     blur: FocusEvent,
     borderColorChanged: JetElementCustomEvent[js.UndefOr[String]],
     borderWidthChanged: JetElementCustomEvent[js.UndefOr[Double]],
-    boxPlotChanged: JetElementCustomEvent[js.UndefOr[AnonMedianSvgStyle]],
-    cancel: Event_,
-    canplay: Event_,
-    canplaythrough: Event_,
+    boxPlotChanged: JetElementCustomEvent[js.UndefOr[MedianSvgStyle]],
+    cancel: Event,
+    canplay: Event,
+    canplaythrough: Event,
     categoriesChanged: JetElementCustomEvent[js.UndefOr[js.Array[String]]],
-    change: Event_,
+    change: Event,
     click: MouseEvent,
-    close: Event_,
+    close: Event,
     closeChanged: JetElementCustomEvent[js.UndefOr[Double]],
     colorChanged: JetElementCustomEvent[js.UndefOr[String]],
     contextmenu: MouseEvent,
     copy: ClipboardEvent,
-    cuechange: Event_,
+    cuechange: Event,
     cut: ClipboardEvent,
     dblclick: MouseEvent,
     drag: DragEvent,
     dragend: DragEvent,
     dragenter: DragEvent,
-    dragexit: Event_,
+    dragexit: Event,
     dragleave: DragEvent,
     dragover: DragEvent,
     dragstart: DragEvent,
     drillingChanged: JetElementCustomEvent[js.UndefOr[on | off | inherit]],
     drop: DragEvent,
-    durationchange: Event_,
-    emptied: Event_,
-    ended: Event_,
+    durationchange: Event,
+    emptied: Event,
+    ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
     focusin: FocusEvent,
     focusout: FocusEvent,
-    fullscreenchange: Event_,
-    fullscreenerror: Event_,
+    fullscreenchange: Event,
+    fullscreenerror: Event,
     gotpointercapture: PointerEvent,
     groupIdChanged: JetElementCustomEvent[js.Array[String | Double]],
     highChanged: JetElementCustomEvent[js.UndefOr[Double]],
-    input: Event_,
-    invalid: Event_,
+    input: Event,
+    invalid: Event,
     itemsChanged: JetElementCustomEvent[js.UndefOr[js.Array[Double | js.Object]]],
     keydown: KeyboardEvent,
     keypress: KeyboardEvent,
@@ -173,10 +173,10 @@ object ojChartItemEventMap {
       ]
     ],
     labelStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object | js.Array[js.Object]]],
-    load: Event_,
-    loadeddata: Event_,
-    loadedmetadata: Event_,
-    loadstart: Event_,
+    load: Event,
+    loadeddata: Event,
+    loadedmetadata: Event,
+    loadstart: Event,
     lostpointercapture: PointerEvent,
     lowChanged: JetElementCustomEvent[js.UndefOr[Double]],
     markerDisplayedChanged: JetElementCustomEvent[js.UndefOr[on | off | auto]],
@@ -200,9 +200,9 @@ object ojChartItemEventMap {
         smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto
       ]
     ],
-    pause: Event_,
-    play: Event_,
-    playing: Event_,
+    pause: Event,
+    play: Event,
+    playing: Event,
     pointercancel: PointerEvent,
     pointerdown: PointerEvent,
     pointerenter: PointerEvent,
@@ -215,30 +215,30 @@ object ojChartItemEventMap {
     q1Changed: JetElementCustomEvent[js.UndefOr[Double]],
     q2Changed: JetElementCustomEvent[js.UndefOr[Double]],
     q3Changed: JetElementCustomEvent[js.UndefOr[Double]],
-    ratechange: Event_,
-    reset: Event_,
+    ratechange: Event,
+    reset: Event,
     resize: UIEvent,
-    scroll: Event_,
+    scroll: Event,
     securitypolicyviolation: SecurityPolicyViolationEvent,
-    seeked: Event_,
-    seeking: Event_,
-    select: Event_,
-    selectionchange: Event_,
-    selectstart: Event_,
+    seeked: Event,
+    seeking: Event,
+    select: Event,
+    selectionchange: Event,
+    selectstart: Event,
     seriesIdChanged: JetElementCustomEvent[String | Double],
     shortDescChanged: JetElementCustomEvent[js.UndefOr[String]],
     sourceChanged: JetElementCustomEvent[js.UndefOr[String]],
     sourceHoverChanged: JetElementCustomEvent[js.UndefOr[String]],
     sourceHoverSelectedChanged: JetElementCustomEvent[js.UndefOr[String]],
     sourceSelectedChanged: JetElementCustomEvent[js.UndefOr[String]],
-    stalled: Event_,
-    submit: Event_,
-    suspend: Event_,
+    stalled: Event,
+    submit: Event,
+    suspend: Event,
     svgClassNameChanged: JetElementCustomEvent[js.UndefOr[String]],
     svgStyleChanged: JetElementCustomEvent[js.UndefOr[js.Object]],
     targetValueChanged: JetElementCustomEvent[js.UndefOr[Double]],
-    timeupdate: Event_,
-    toggle: Event_,
+    timeupdate: Event,
+    toggle: Event,
     touchcancel: TouchEvent,
     touchend: TouchEvent,
     touchmove: TouchEvent,
@@ -249,8 +249,8 @@ object ojChartItemEventMap {
     transitionstart: TransitionEvent,
     valueChanged: JetElementCustomEvent[js.UndefOr[Double]],
     volumeChanged: JetElementCustomEvent[js.UndefOr[Double]],
-    volumechange: Event_,
-    waiting: Event_,
+    volumechange: Event,
+    waiting: Event,
     wheel: WheelEvent,
     xChanged: JetElementCustomEvent[js.UndefOr[Double | String]],
     yChanged: JetElementCustomEvent[js.UndefOr[Double]],

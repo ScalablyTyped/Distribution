@@ -1,6 +1,7 @@
 package typings.sipJs
 
 import typings.events.mod.EventEmitter
+import typings.sipJs.anon.Once
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,7 @@ object emitterMod extends js.Object {
       *                  If once true, the listener would be automatically removed when invoked.
       */
     def addListener(listener: js.Function1[/* data */ T, Unit]): Unit = js.native
-    def addListener(listener: js.Function1[/* data */ T, Unit], options: AnonOnce): Unit = js.native
+    def addListener(listener: js.Function1[/* data */ T, Unit], options: Once): Unit = js.native
     /**
       * Unregisters a listener.
       * @param listener - Callback function.

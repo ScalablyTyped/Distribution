@@ -2,6 +2,7 @@ package typings.unzip
 
 import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Transform
+import typings.unzip.anon.Path
 import typings.unzip.unzipStrings.Directory
 import typings.unzip.unzipStrings.File
 import scala.scalajs.js
@@ -19,7 +20,7 @@ object mod extends js.Object {
     def autodrain(): Unit = js.native
   }
   
-  def Extract(options: AnonPath): WritableStream = js.native
+  def Extract(options: Path): WritableStream = js.native
   def Parse(): WritableStream = js.native
 }
 

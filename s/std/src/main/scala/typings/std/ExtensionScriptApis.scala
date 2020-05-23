@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +24,4 @@ trait ExtensionScriptApis extends js.Object {
   def registerGenericPersistentCallbackHandler(callbackHandler: js.Function): Unit = js.native
   def registerWebRuntimeCallbackHandler(handler: js.Function): js.Any = js.native
 }
-
-@JSGlobal("ExtensionScriptApis")
-@js.native
-object ExtensionScriptApis extends Instantiable0[ExtensionScriptApis]
 

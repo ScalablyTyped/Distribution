@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait KnockoutBindingHandlers extends /* bindingHandler */ StringDictionary[KnockoutBindingHandler] {
+trait KnockoutBindingHandlers extends // Ko specific
+/* key */ StringDictionary[KnockoutBindingHandler] {
   var attr: KnockoutBindingHandler
   var checked: KnockoutBindingHandler
   // Working with form fields
@@ -68,7 +69,8 @@ object KnockoutBindingHandlers {
     value: KnockoutBindingHandler,
     visible: KnockoutBindingHandler,
     `with`: KnockoutBindingHandler,
-    StringDictionary: /* bindingHandler */ StringDictionary[KnockoutBindingHandler] = null
+    StringDictionary: // Ko specific
+  /* key */ StringDictionary[KnockoutBindingHandler] = null
   ): KnockoutBindingHandlers = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], checked = checked.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], disable = disable.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], foreach = foreach.asInstanceOf[js.Any], foreachInit = foreachInit.asInstanceOf[js.Any], hasfocus = hasfocus.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], ifnot = ifnot.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], selectedOptions = selectedOptions.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textInput = textInput.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])

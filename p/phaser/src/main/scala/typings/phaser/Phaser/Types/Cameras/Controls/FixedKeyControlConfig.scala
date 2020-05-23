@@ -56,7 +56,7 @@ object FixedKeyControlConfig {
     up: Key = null,
     zoomIn: Key = null,
     zoomOut: Key = null,
-    zoomSpeed: Int | Double = null
+    zoomSpeed: js.UndefOr[Double] = js.undefined
   ): FixedKeyControlConfig = {
     val __obj = js.Dynamic.literal()
     if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
@@ -67,7 +67,7 @@ object FixedKeyControlConfig {
     if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
     if (zoomIn != null) __obj.updateDynamic("zoomIn")(zoomIn.asInstanceOf[js.Any])
     if (zoomOut != null) __obj.updateDynamic("zoomOut")(zoomOut.asInstanceOf[js.Any])
-    if (zoomSpeed != null) __obj.updateDynamic("zoomSpeed")(zoomSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomSpeed)) __obj.updateDynamic("zoomSpeed")(zoomSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedKeyControlConfig]
   }
 }

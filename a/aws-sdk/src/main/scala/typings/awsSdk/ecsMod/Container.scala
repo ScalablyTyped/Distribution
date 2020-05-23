@@ -77,7 +77,7 @@ object Container {
   def apply(
     containerArn: String = null,
     cpu: String = null,
-    exitCode: Int | scala.Double = null,
+    exitCode: js.UndefOr[BoxedInteger] = js.undefined,
     gpuIds: GpuIds = null,
     healthStatus: HealthStatus = null,
     image: String = null,
@@ -95,7 +95,7 @@ object Container {
     val __obj = js.Dynamic.literal()
     if (containerArn != null) __obj.updateDynamic("containerArn")(containerArn.asInstanceOf[js.Any])
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
     if (gpuIds != null) __obj.updateDynamic("gpuIds")(gpuIds.asInstanceOf[js.Any])
     if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])

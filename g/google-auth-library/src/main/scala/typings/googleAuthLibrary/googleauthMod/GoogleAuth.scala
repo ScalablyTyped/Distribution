@@ -2,16 +2,15 @@ package typings.googleAuthLibrary.googleauthMod
 
 import typings.gaxios.commonMod.GaxiosOptions
 import typings.gaxios.commonMod.GaxiosResponse
-import typings.googleAuthLibrary.AnonHeaders
-import typings.googleAuthLibrary.AnonUri
-import typings.googleAuthLibrary.TypeofDefaultTransporter
+import typings.googleAuthLibrary.anon.Headers
+import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
+import typings.googleAuthLibrary.anon.Uri
 import typings.googleAuthLibrary.computeclientMod.Compute
 import typings.googleAuthLibrary.credentialsMod.CredentialBody
 import typings.googleAuthLibrary.credentialsMod.JWTInput
 import typings.googleAuthLibrary.envDetectMod.GCPEnv
 import typings.googleAuthLibrary.idtokenclientMod.IdTokenClient
 import typings.googleAuthLibrary.jwtclientMod.JWT
-import typings.googleAuthLibrary.oauth2clientMod.Headers
 import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
 import typings.googleAuthLibrary.refreshclientMod.UserRefreshClient
 import typings.googleAuthLibrary.transportersMod.Transporter
@@ -108,7 +107,7 @@ class GoogleAuth () extends js.Object {
     * the request options.
     * @param opts Axios or Request options on which to attach the headers
     */
-  def authorizeRequest(opts: AnonHeaders): js.Promise[AnonUri] = js.native
+  def authorizeRequest(opts: Headers): js.Promise[Uri] = js.native
   /**
     * Create a credentials instance using the given API key string.
     * @param apiKey The API key string
@@ -194,8 +193,8 @@ class GoogleAuth () extends js.Object {
     * Obtain the HTTP headers that will provide authorization for a given
     * request.
     */
-  def getRequestHeaders(): js.Promise[Headers] = js.native
-  def getRequestHeaders(url: String): js.Promise[Headers] = js.native
+  def getRequestHeaders(): js.Promise[typings.googleAuthLibrary.oauth2clientMod.Headers] = js.native
+  def getRequestHeaders(url: String): js.Promise[typings.googleAuthLibrary.oauth2clientMod.Headers] = js.native
   /**
     * Automatically obtain application default credentials, and make an
     * HTTP request using the given options.

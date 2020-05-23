@@ -23,7 +23,7 @@ trait TableRowLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+    * Returns the index number of the row within the rows collection of the table. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -45,9 +45,9 @@ object TableRowLoadOptions {
     values: js.UndefOr[Boolean] = js.undefined
   ): TableRowLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowLoadOptions]
   }
 }

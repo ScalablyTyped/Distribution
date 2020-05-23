@@ -26,7 +26,6 @@ object Filter {
     sendMetadata: js.Promise[Metadata] => js.Promise[Metadata]
   ): Filter = {
     val __obj = js.Dynamic.literal(receiveMessage = js.Any.fromFunction1(receiveMessage), receiveMetadata = js.Any.fromFunction1(receiveMetadata), receiveTrailers = js.Any.fromFunction1(receiveTrailers), sendMessage = js.Any.fromFunction1(sendMessage), sendMetadata = js.Any.fromFunction1(sendMetadata))
-  
     __obj.asInstanceOf[Filter]
   }
 }

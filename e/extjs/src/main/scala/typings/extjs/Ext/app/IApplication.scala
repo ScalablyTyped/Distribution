@@ -21,20 +21,20 @@ trait IApplication extends IController {
   /** [Config Option] (Boolean) */
   var enableQuickTips: js.UndefOr[Boolean] = js.undefined
   /** [Method] Returns the base Ext app Application for this controller
-  		* @returns Ext.app.Application the application
-  		*/
+    * @returns Ext.app.Application the application
+    */
   @JSName("getApplication")
   var getApplication_IApplication: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Returns instance of a Controller with the given id
-  		* @param name Object
-  		* @returns Ext.app.Controller controller instance or undefined.
-  		*/
+    * @param name Object
+    * @returns Ext.app.Controller controller instance or undefined.
+    */
   @JSName("getController")
   var getController_IApplication: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], IController]] = js.undefined
   /** [Method] Called automatically when the page has completely loaded
-  		* @param profile String The detected application profile
-  		* @returns Boolean By default, the Application will dispatch to the configured startup controller and action immediately after running the launch function. Return false to prevent this behavior.
-  		*/
+    * @param profile String The detected application profile
+    * @returns Boolean By default, the Application will dispatch to the configured startup controller and action immediately after running the launch function. Return false to prevent this behavior.
+    */
   var launch: js.UndefOr[js.Function1[/* profile */ js.UndefOr[String], Boolean]] = js.undefined
   /** [Config Option] (String) */
   var name: js.UndefOr[String] = js.undefined
@@ -126,7 +126,7 @@ object IApplication {
     if (appFolder != null) __obj.updateDynamic("appFolder")(appFolder.asInstanceOf[js.Any])
     if (appProperty != null) __obj.updateDynamic("appProperty")(appProperty.asInstanceOf[js.Any])
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCreateViewport)) __obj.updateDynamic("autoCreateViewport")(autoCreateViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreateViewport)) __obj.updateDynamic("autoCreateViewport")(autoCreateViewport.get.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
@@ -136,7 +136,7 @@ object IApplication {
     if (control != null) __obj.updateDynamic("control")(js.Any.fromFunction2(control))
     if (controllers != null) __obj.updateDynamic("controllers")(controllers.asInstanceOf[js.Any])
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (!js.isUndefined(enableQuickTips)) __obj.updateDynamic("enableQuickTips")(enableQuickTips.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableQuickTips)) __obj.updateDynamic("enableQuickTips")(enableQuickTips.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(js.Any.fromFunction2(fireEventArgs))
@@ -153,7 +153,7 @@ object IApplication {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (launch != null) __obj.updateDynamic("launch")(js.Any.fromFunction1(launch))
     if (listen != null) __obj.updateDynamic("listen")(js.Any.fromFunction1(listen))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -175,7 +175,7 @@ object IApplication {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stores != null) __obj.updateDynamic("stores")(stores.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))

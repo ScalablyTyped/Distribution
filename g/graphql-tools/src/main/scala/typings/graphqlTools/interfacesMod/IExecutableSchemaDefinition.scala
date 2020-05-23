@@ -1,7 +1,7 @@
 package typings.graphqlTools.interfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphqlTools.TypeofSchemaDirectiveVisi
+import typings.graphqlTools.anon.TypeofSchemaDirectiveVisi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,10 +34,10 @@ object IExecutableSchemaDefinition {
     schemaDirectives: StringDictionary[TypeofSchemaDirectiveVisi] = null
   ): IExecutableSchemaDefinition[TContext] = {
     val __obj = js.Dynamic.literal(typeDefs = typeDefs.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowUndefinedInResolve)) __obj.updateDynamic("allowUndefinedInResolve")(allowUndefinedInResolve.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUndefinedInResolve)) __obj.updateDynamic("allowUndefinedInResolve")(allowUndefinedInResolve.get.asInstanceOf[js.Any])
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (directiveResolvers != null) __obj.updateDynamic("directiveResolvers")(directiveResolvers.asInstanceOf[js.Any])
-    if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions.asInstanceOf[js.Any])
     if (resolverValidationOptions != null) __obj.updateDynamic("resolverValidationOptions")(resolverValidationOptions.asInstanceOf[js.Any])

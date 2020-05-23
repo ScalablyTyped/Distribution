@@ -20,7 +20,7 @@ trait nlobjAssistantStep
   *
   * @return
   */
-Instantiable0[/* nlobjAssistantStep */ js.Any] {
+Instantiable0[js.Any] {
   /**
     * return an array of the names of all fields entered by the user during this step.
     * @return {string[]}

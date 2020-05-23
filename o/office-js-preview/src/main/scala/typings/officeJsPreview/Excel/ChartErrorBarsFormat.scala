@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.ChartErrorBarsFormatData
 import typings.officeJsPreview.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.ChartErrorBarsFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ChartErrorBarsFormat")
 @js.native
-class ChartErrorBarsFormat () extends ClientObject {
+trait ChartErrorBarsFormat extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartErrorBarsFormat: RequestContext = js.native
@@ -36,7 +35,7 @@ class ChartErrorBarsFormat () extends ClientObject {
     */
   def load(): ChartErrorBarsFormat = js.native
   def load(options: ChartErrorBarsFormatLoadOptions): ChartErrorBarsFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartErrorBarsFormat = js.native
+  def load(propertyNamesAndPaths: Expand): ChartErrorBarsFormat = js.native
   def load(propertyNames: String): ChartErrorBarsFormat = js.native
   def load(propertyNames: js.Array[String]): ChartErrorBarsFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

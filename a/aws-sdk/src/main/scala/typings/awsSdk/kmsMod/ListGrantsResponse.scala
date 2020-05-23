@@ -25,12 +25,12 @@ object ListGrantsResponse {
   def apply(
     Grants: GrantList = null,
     NextMarker: MarkerType = null,
-    Truncated: js.UndefOr[Boolean] = js.undefined
+    Truncated: js.UndefOr[BooleanType] = js.undefined
   ): ListGrantsResponse = {
     val __obj = js.Dynamic.literal()
     if (Grants != null) __obj.updateDynamic("Grants")(Grants.asInstanceOf[js.Any])
     if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.asInstanceOf[js.Any])
+    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGrantsResponse]
   }
 }

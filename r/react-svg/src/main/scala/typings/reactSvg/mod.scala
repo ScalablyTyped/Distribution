@@ -1,5 +1,7 @@
 package typings.reactSvg
 
+import typings.reactSvg.anon.AfterInjection
+import typings.reactSvg.anon.BeforeInjection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +16,8 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object ReactSVG extends js.Object {
-    var defaultProps: AnonAfterInjection = js.native
-    var propTypes: AnonBeforeInjection = js.native
+    var defaultProps: AfterInjection = js.native
+    var propTypes: BeforeInjection = js.native
   }
   
 }

@@ -18,14 +18,14 @@ trait FSOptions extends js.Object {
 object FSOptions {
   @scala.inline
   def apply(
-    bytes: Int | Double = null,
+    bytes: js.UndefOr[Double] = js.undefined,
     requestQuota: js.UndefOr[Boolean] = js.undefined,
-    `type`: Int | Double = null
+    `type`: js.UndefOr[Double] = js.undefined
   ): FSOptions = {
     val __obj = js.Dynamic.literal()
-    if (bytes != null) __obj.updateDynamic("bytes")(bytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestQuota)) __obj.updateDynamic("requestQuota")(requestQuota.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(bytes)) __obj.updateDynamic("bytes")(bytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestQuota)) __obj.updateDynamic("requestQuota")(requestQuota.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FSOptions]
   }
 }

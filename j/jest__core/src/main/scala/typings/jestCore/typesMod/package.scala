@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 package object typesMod {
   type Filter = js.Function1[
     /* testPaths */ js.Array[java.lang.String], 
-    js.Promise[typings.jestCore.AnonFiltered]
+    js.Promise[typings.jestCore.anon.Filtered]
   ]
-  type TestPathCases = js.Array[typings.jestCore.AnonIsMatch]
-  type TestRunData = js.Array[typings.jestCore.AnonMatches]
+  type TestPathCases = js.Array[typings.jestCore.anon.IsMatch]
+  type TestRunData = js.Array[typings.jestCore.anon.Matches]
 }

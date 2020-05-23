@@ -30,10 +30,10 @@ object AttachVolumeRequest {
     Device: String,
     InstanceId: InstanceId,
     VolumeId: VolumeId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): AttachVolumeRequest = {
     val __obj = js.Dynamic.literal(Device = Device.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], VolumeId = VolumeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachVolumeRequest]
   }
 }

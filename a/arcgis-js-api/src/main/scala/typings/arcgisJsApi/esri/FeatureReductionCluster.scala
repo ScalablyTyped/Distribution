@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.cluster
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -115,8 +114,4 @@ trait FeatureReductionCluster
     */
   var `type`: cluster = js.native
 }
-
-@JSGlobal("__esri.FeatureReductionCluster")
-@js.native
-object FeatureReductionCluster extends TopLevel[FeatureReductionClusterConstructor]
 

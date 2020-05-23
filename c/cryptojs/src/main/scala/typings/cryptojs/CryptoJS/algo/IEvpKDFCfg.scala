@@ -15,11 +15,15 @@ trait IEvpKDFCfg extends js.Object {
 
 object IEvpKDFCfg {
   @scala.inline
-  def apply(hasher: Hasher = null, iterations: Int | Double = null, keySize: Int | Double = null): IEvpKDFCfg = {
+  def apply(
+    hasher: Hasher = null,
+    iterations: js.UndefOr[Double] = js.undefined,
+    keySize: js.UndefOr[Double] = js.undefined
+  ): IEvpKDFCfg = {
     val __obj = js.Dynamic.literal()
     if (hasher != null) __obj.updateDynamic("hasher")(hasher.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (keySize != null) __obj.updateDynamic("keySize")(keySize.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keySize)) __obj.updateDynamic("keySize")(keySize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvpKDFCfg]
   }
 }

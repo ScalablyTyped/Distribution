@@ -6,7 +6,7 @@ import typings.ecol.collectionEventMod.CollectionEvent
 import typings.ecol.collectionEventMod.CollectionEvent.Listener
 import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.ecol.ieventdispatcherMod.IEventDispatcher
-import typings.tstl.Iteratoranyanyanyany
+import typings.tstl.anon.Iteratoranyanyanyany
 import typings.tstl.entryMod.Entry
 import typings.tstl.hashMultiMapMod.HashMultiMap
 import typings.tstl.hashMultiMapMod.HashMultiMap.Iterator
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ecol/lib/maps/HashMultiMapCollection", JSImport.Namespace)
 @js.native
 object hashMultiMapCollectionMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tstl.isizeMod.ISize because Already inherited
   - typings.tstl.iforwardcontainerMod.IForwardContainer because Already inherited
   - typings.tstl.ipushMod.IPush because Already inherited

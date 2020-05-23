@@ -22,8 +22,8 @@ object InstanceSetOptions {
   @scala.inline
   def apply(raw: js.UndefOr[Boolean] = js.undefined, reset: js.UndefOr[Boolean] = js.undefined): InstanceSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceSetOptions]
   }
 }

@@ -1,28 +1,28 @@
 package typings.amapJsApi.AMap
 
-import typings.amapJsApi.AnonX
+import typings.amapJsApi.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Size")
-@js.native
-class Size protected () extends js.Object {
-  /**
-    * 地物对象的像素尺寸
-    * @param width 宽度像素
-    * @param height 长度像素
-    */
-  def this(width: Double, height: Double) = this()
+trait Size extends js.Object {
   // internal
-  def contains(size: AnonX): Boolean = js.native
+  def contains(size: X): Boolean
   /**
     * 获得高度
     */
-  def getHeight(): Double = js.native
+  def getHeight(): Double
   /**
     * 获得宽度
     */
-  def getWidth(): Double = js.native
+  def getWidth(): Double
+}
+
+object Size {
+  @scala.inline
+  def apply(contains: X => Boolean, getHeight: () => Double, getWidth: () => Double): Size = {
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), getHeight = js.Any.fromFunction0(getHeight), getWidth = js.Any.fromFunction0(getWidth))
+    __obj.asInstanceOf[Size]
+  }
 }
 

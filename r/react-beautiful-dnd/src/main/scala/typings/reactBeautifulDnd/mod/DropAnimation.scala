@@ -18,12 +18,12 @@ object DropAnimation {
     curve: String,
     duration: Double,
     moveTo: Position,
-    opacity: Int | Double = null,
-    scale: Int | Double = null
+    opacity: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined
   ): DropAnimation = {
     val __obj = js.Dynamic.literal(curve = curve.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], moveTo = moveTo.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropAnimation]
   }
 }

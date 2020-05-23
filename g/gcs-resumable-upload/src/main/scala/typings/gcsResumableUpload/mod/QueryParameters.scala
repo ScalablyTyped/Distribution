@@ -22,10 +22,10 @@ object QueryParameters {
   @scala.inline
   def apply(
     contentEncoding: String = null,
-    ifGenerationMatch: Int | Double = null,
-    ifGenerationNotMatch: Int | Double = null,
-    ifMetagenerationMatch: Int | Double = null,
-    ifMetagenerationNotMatch: Int | Double = null,
+    ifGenerationMatch: js.UndefOr[Double] = js.undefined,
+    ifGenerationNotMatch: js.UndefOr[Double] = js.undefined,
+    ifMetagenerationMatch: js.UndefOr[Double] = js.undefined,
+    ifMetagenerationNotMatch: js.UndefOr[Double] = js.undefined,
     kmsKeyName: String = null,
     predefinedAcl: PredefinedAcl = null,
     projection: full | noAcl = null,
@@ -33,10 +33,10 @@ object QueryParameters {
   ): QueryParameters = {
     val __obj = js.Dynamic.literal()
     if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
-    if (ifGenerationMatch != null) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch.asInstanceOf[js.Any])
-    if (ifGenerationNotMatch != null) __obj.updateDynamic("ifGenerationNotMatch")(ifGenerationNotMatch.asInstanceOf[js.Any])
-    if (ifMetagenerationMatch != null) __obj.updateDynamic("ifMetagenerationMatch")(ifMetagenerationMatch.asInstanceOf[js.Any])
-    if (ifMetagenerationNotMatch != null) __obj.updateDynamic("ifMetagenerationNotMatch")(ifMetagenerationNotMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifGenerationMatch)) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifGenerationNotMatch)) __obj.updateDynamic("ifGenerationNotMatch")(ifGenerationNotMatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifMetagenerationMatch)) __obj.updateDynamic("ifMetagenerationMatch")(ifMetagenerationMatch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifMetagenerationNotMatch)) __obj.updateDynamic("ifMetagenerationNotMatch")(ifMetagenerationNotMatch.get.asInstanceOf[js.Any])
     if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
     if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.kuromoji.mod
 
 import typings.doublearray.doublearray.DoubleArray
-import typings.kuromoji.AnonTokeninfodictionary
+import typings.kuromoji.anon.Tokeninfodictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait DictionaryBuilder_ extends js.Object {
   def build(): DynamicDictionaries
   def buildConnectionCosts(): ConnectionCosts
   def buildDoubleArray(): DoubleArray
-  def buildTokenInfoDictionary(): AnonTokeninfodictionary
+  def buildTokenInfoDictionary(): Tokeninfodictionary
   def buildUnknownDictionary(): UnknownDictionary
   def charDef(char_text: String): DictionaryBuilder_
   def costMatrix(matrix_text: String): DictionaryBuilder_
@@ -27,7 +27,7 @@ object DictionaryBuilder_ {
     build: () => DynamicDictionaries,
     buildConnectionCosts: () => ConnectionCosts,
     buildDoubleArray: () => DoubleArray,
-    buildTokenInfoDictionary: () => AnonTokeninfodictionary,
+    buildTokenInfoDictionary: () => Tokeninfodictionary,
     buildUnknownDictionary: () => UnknownDictionary,
     charDef: String => DictionaryBuilder_,
     costMatrix: String => DictionaryBuilder_,

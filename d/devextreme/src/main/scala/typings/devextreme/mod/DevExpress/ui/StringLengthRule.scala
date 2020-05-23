@@ -34,18 +34,18 @@ object StringLengthRule {
   @scala.inline
   def apply(
     ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     message: String = null,
-    min: Int | Double = null,
+    min: js.UndefOr[Double] = js.undefined,
     trim: js.UndefOr[Boolean] = js.undefined,
     `type`: required | numeric | range | stringLength | custom | compare | pattern | email | async = null
   ): StringLengthRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreEmptyValue)) __obj.updateDynamic("ignoreEmptyValue")(ignoreEmptyValue.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEmptyValue)) __obj.updateDynamic("ignoreEmptyValue")(ignoreEmptyValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringLengthRule]
   }

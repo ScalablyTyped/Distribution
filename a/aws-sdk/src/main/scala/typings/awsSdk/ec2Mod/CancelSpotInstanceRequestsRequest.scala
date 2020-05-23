@@ -18,12 +18,9 @@ trait CancelSpotInstanceRequestsRequest extends js.Object {
 
 object CancelSpotInstanceRequestsRequest {
   @scala.inline
-  def apply(
-    SpotInstanceRequestIds: SpotInstanceRequestIdList,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  ): CancelSpotInstanceRequestsRequest = {
+  def apply(SpotInstanceRequestIds: SpotInstanceRequestIdList, DryRun: js.UndefOr[Boolean] = js.undefined): CancelSpotInstanceRequestsRequest = {
     val __obj = js.Dynamic.literal(SpotInstanceRequestIds = SpotInstanceRequestIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelSpotInstanceRequestsRequest]
   }
 }

@@ -1,55 +1,43 @@
 package typings.winrt.Windows.Media.Devices
 
-import typings.winrt.AnonValue
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Media.Capture.MediaStreamType
 import typings.winrt.Windows.Media.Capture.PowerlineFrequency
 import typings.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
+import typings.winrt.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Devices.VideoDeviceController")
-@js.native
-class VideoDeviceController ()
+trait VideoDeviceController
   extends IVideoDeviceController
-     with IAdvancedVideoCaptureDeviceController {
-  /* CompleteClass */
-  override var backlightCompensation: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var brightness: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var contrast: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var exposure: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var focus: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var hue: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var pan: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var roll: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var tilt: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var whiteBalance: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override var zoom: MediaDeviceControl = js.native
-  /* CompleteClass */
-  override def getAvailableMediaStreamProperties(mediaStreamType: MediaStreamType): IVectorView[IMediaEncodingProperties] = js.native
-  /* CompleteClass */
-  override def getDeviceProperty(propertyId: String): js.Any = js.native
-  /* CompleteClass */
-  override def getMediaStreamProperties(mediaStreamType: MediaStreamType): IMediaEncodingProperties = js.native
-  /* CompleteClass */
-  override def setDeviceProperty(propertyId: String, propertyValue: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def setMediaStreamPropertiesAsync(mediaStreamType: MediaStreamType, mediaEncodingProperties: IMediaEncodingProperties): IAsyncAction = js.native
-  /* CompleteClass */
-  override def tryGetPowerlineFrequency(): AnonValue = js.native
-  /* CompleteClass */
-  override def trySetPowerlineFrequency(value: PowerlineFrequency): Boolean = js.native
+     with IAdvancedVideoCaptureDeviceController
+
+object VideoDeviceController {
+  @scala.inline
+  def apply(
+    backlightCompensation: MediaDeviceControl,
+    brightness: MediaDeviceControl,
+    contrast: MediaDeviceControl,
+    exposure: MediaDeviceControl,
+    focus: MediaDeviceControl,
+    getAvailableMediaStreamProperties: MediaStreamType => IVectorView[IMediaEncodingProperties],
+    getDeviceProperty: String => js.Any,
+    getMediaStreamProperties: MediaStreamType => IMediaEncodingProperties,
+    hue: MediaDeviceControl,
+    pan: MediaDeviceControl,
+    roll: MediaDeviceControl,
+    setDeviceProperty: (String, js.Any) => Unit,
+    setMediaStreamPropertiesAsync: (MediaStreamType, IMediaEncodingProperties) => IAsyncAction,
+    tilt: MediaDeviceControl,
+    tryGetPowerlineFrequency: () => Value,
+    trySetPowerlineFrequency: PowerlineFrequency => Boolean,
+    whiteBalance: MediaDeviceControl,
+    zoom: MediaDeviceControl
+  ): VideoDeviceController = {
+    val __obj = js.Dynamic.literal(backlightCompensation = backlightCompensation.asInstanceOf[js.Any], brightness = brightness.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], exposure = exposure.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], getAvailableMediaStreamProperties = js.Any.fromFunction1(getAvailableMediaStreamProperties), getDeviceProperty = js.Any.fromFunction1(getDeviceProperty), getMediaStreamProperties = js.Any.fromFunction1(getMediaStreamProperties), hue = hue.asInstanceOf[js.Any], pan = pan.asInstanceOf[js.Any], roll = roll.asInstanceOf[js.Any], setDeviceProperty = js.Any.fromFunction2(setDeviceProperty), setMediaStreamPropertiesAsync = js.Any.fromFunction2(setMediaStreamPropertiesAsync), tilt = tilt.asInstanceOf[js.Any], tryGetPowerlineFrequency = js.Any.fromFunction0(tryGetPowerlineFrequency), trySetPowerlineFrequency = js.Any.fromFunction1(trySetPowerlineFrequency), whiteBalance = whiteBalance.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoDeviceController]
+  }
 }
 

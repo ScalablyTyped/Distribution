@@ -2,7 +2,6 @@ package typings.sammy.Sammy
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,4 @@ trait Store
   def load(key: String, path: String, callback: js.Function): Unit = js.native
   def set(key: String, value: js.Any): js.Any = js.native
 }
-
-@JSGlobal("Sammy.Store")
-@js.native
-object Store extends TopLevel[Store]
 

@@ -28,7 +28,7 @@ object LoginProfile {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (posixAccounts != null) __obj.updateDynamic("posixAccounts")(posixAccounts.asInstanceOf[js.Any])
     if (sshPublicKeys != null) __obj.updateDynamic("sshPublicKeys")(sshPublicKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended.asInstanceOf[js.Any])
+    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginProfile]
   }
 }

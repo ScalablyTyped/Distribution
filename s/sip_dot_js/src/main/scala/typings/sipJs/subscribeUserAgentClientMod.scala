@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/core/user-agents/subscribe-user-agent-client", JSImport.Namespace)
 @js.native
 object subscribeUserAgentClientMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sipJs.outgoingRequestMod.OutgoingRequest because Already inherited
   - typings.sipJs.subscribeMod.OutgoingSubscribeRequest because var conflicts: delegate, message. Inlined waitNotifyStop */ @js.native
   class SubscribeUserAgentClient protected () extends UserAgentClient {
@@ -45,7 +45,7 @@ object subscribeUserAgentClientMod extends js.Object {
       */
     var timer_N: js.Any = js.native
     /**
-      * Handle out of dialog NOTIFY assoicated with SUBSCRIBE request.
+      * Handle out of dialog NOTIFY associated with SUBSCRIBE request.
       * This is the first NOTIFY received after the SUBSCRIBE request.
       * @param uas - User agent server handling the subscription creating NOTIFY.
       */

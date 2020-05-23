@@ -1,6 +1,5 @@
 package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
-import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.JsonObjectResult
@@ -10,10 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**Executes queries against a search server.*/
-@JSGlobal("Microsoft.SharePoint.Client.Search.Query.SearchExecutor")
 @js.native
-class SearchExecutor protected () extends ClientObject {
-  def this(context: ClientContext) = this()
+trait SearchExecutor extends ClientObject {
   def executeQueries(
     queryIds: js.Array[String],
     queries: js.Array[typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.Query],

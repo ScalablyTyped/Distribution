@@ -13,10 +13,13 @@ trait IType extends js.Object {
 
 object IType {
   @scala.inline
-  def apply(field: js.Array[IField] = null, name: String = null): IType = {
+  def apply(
+    field: js.UndefOr[Null | js.Array[IField]] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined
+  ): IType = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(field)) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IType]
   }
 }

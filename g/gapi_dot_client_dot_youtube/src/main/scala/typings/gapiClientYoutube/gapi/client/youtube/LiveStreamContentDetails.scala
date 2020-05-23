@@ -26,7 +26,7 @@ object LiveStreamContentDetails {
   def apply(closedCaptionsIngestionUrl: String = null, isReusable: js.UndefOr[Boolean] = js.undefined): LiveStreamContentDetails = {
     val __obj = js.Dynamic.literal()
     if (closedCaptionsIngestionUrl != null) __obj.updateDynamic("closedCaptionsIngestionUrl")(closedCaptionsIngestionUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReusable)) __obj.updateDynamic("isReusable")(isReusable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReusable)) __obj.updateDynamic("isReusable")(isReusable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveStreamContentDetails]
   }
 }

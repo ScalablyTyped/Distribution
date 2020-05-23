@@ -51,7 +51,7 @@ object ItemActivityStat {
     if (endDateTime != null) __obj.updateDynamic("endDateTime")(endDateTime.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (incompleteData != null) __obj.updateDynamic("incompleteData")(incompleteData.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTrending)) __obj.updateDynamic("isTrending")(isTrending.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTrending)) __obj.updateDynamic("isTrending")(isTrending.get.asInstanceOf[js.Any])
     if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
     if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemActivityStat]

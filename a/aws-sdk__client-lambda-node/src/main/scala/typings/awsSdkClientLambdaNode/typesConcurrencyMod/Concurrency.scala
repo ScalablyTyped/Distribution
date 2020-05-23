@@ -13,9 +13,9 @@ trait Concurrency extends js.Object {
 
 object Concurrency {
   @scala.inline
-  def apply(ReservedConcurrentExecutions: Int | Double = null): Concurrency = {
+  def apply(ReservedConcurrentExecutions: js.UndefOr[Double] = js.undefined): Concurrency = {
     val __obj = js.Dynamic.literal()
-    if (ReservedConcurrentExecutions != null) __obj.updateDynamic("ReservedConcurrentExecutions")(ReservedConcurrentExecutions.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReservedConcurrentExecutions)) __obj.updateDynamic("ReservedConcurrentExecutions")(ReservedConcurrentExecutions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Concurrency]
   }
 }

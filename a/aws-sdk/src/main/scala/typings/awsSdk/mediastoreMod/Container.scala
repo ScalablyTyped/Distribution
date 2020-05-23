@@ -36,7 +36,7 @@ object Container {
   @scala.inline
   def apply(
     ARN: ContainerARN = null,
-    AccessLoggingEnabled: js.UndefOr[Boolean] = js.undefined,
+    AccessLoggingEnabled: js.UndefOr[ContainerAccessLoggingEnabled] = js.undefined,
     CreationTime: TimeStamp = null,
     Endpoint: Endpoint = null,
     Name: ContainerName = null,
@@ -44,7 +44,7 @@ object Container {
   ): Container = {
     val __obj = js.Dynamic.literal()
     if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(AccessLoggingEnabled)) __obj.updateDynamic("AccessLoggingEnabled")(AccessLoggingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(AccessLoggingEnabled)) __obj.updateDynamic("AccessLoggingEnabled")(AccessLoggingEnabled.get.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

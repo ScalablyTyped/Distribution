@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeUserResponse extends js.Object {
   /**
-    * A system-assigned unique identifier for an SFTP server that has this user assigned.
+    * A system-assigned unique identifier for a file transfer protocol-enabled server that has this user assigned.
     */
   var ServerId: typings.awsSdk.transferMod.ServerId = js.native
   /**

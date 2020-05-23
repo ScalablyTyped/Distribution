@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.searchBoxBaseMod
 
-import typings.officeUiFabricReact.PickISearchBoxPropsdisabl
+import typings.officeUiFabricReact.anon.PickISearchBoxPropsdisabl
 import typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
 import typings.react.mod.Component
 import scala.scalajs.js

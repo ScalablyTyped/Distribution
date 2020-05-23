@@ -20,7 +20,7 @@ object DeleteFileShareInput {
   @scala.inline
   def apply(FileShareARN: FileShareARN, ForceDelete: js.UndefOr[scala.Boolean] = js.undefined): DeleteFileShareInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceDelete)) __obj.updateDynamic("ForceDelete")(ForceDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceDelete)) __obj.updateDynamic("ForceDelete")(ForceDelete.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFileShareInput]
   }
 }

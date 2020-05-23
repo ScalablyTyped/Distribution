@@ -25,7 +25,7 @@ object GoogleActionsV2UiElementsTableCardRow {
   ): GoogleActionsV2UiElementsTableCardRow = {
     val __obj = js.Dynamic.literal()
     if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
-    if (!js.isUndefined(dividerAfter)) __obj.updateDynamic("dividerAfter")(dividerAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(dividerAfter)) __obj.updateDynamic("dividerAfter")(dividerAfter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCardRow]
   }
 }

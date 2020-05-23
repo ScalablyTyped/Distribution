@@ -1,7 +1,7 @@
 package typings.meteorAstronomy.MeteorAstronomy
 
 import typings.meteor.Mongo.Collection
-import typings.meteorAstronomy.AnonInsert
+import typings.meteorAstronomy.anon.Insert
 import typings.meteorAstronomy.meteorAstronomyStrings._id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait ClassModel[T] extends js.Object {
   var indexes: js.UndefOr[js.Object] = js.undefined
   var meteorMethods: js.UndefOr[js.Object] = js.undefined
   var name: String
-  var secured: js.UndefOr[AnonInsert | Boolean] = js.undefined
+  var secured: js.UndefOr[Insert | Boolean] = js.undefined
 }
 
 object ClassModel {
@@ -30,7 +30,7 @@ object ClassModel {
     helpers: Helpers[T] = null,
     indexes: js.Object = null,
     meteorMethods: js.Object = null,
-    secured: AnonInsert | Boolean = null
+    secured: Insert | Boolean = null
   ): ClassModel[T] = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])

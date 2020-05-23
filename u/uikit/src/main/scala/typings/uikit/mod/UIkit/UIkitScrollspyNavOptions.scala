@@ -17,16 +17,16 @@ object UIkitScrollspyNavOptions {
   def apply(
     closest: String = null,
     cls: String = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     overflow: js.UndefOr[Boolean] = js.undefined,
     scroll: js.UndefOr[Boolean] = js.undefined
   ): UIkitScrollspyNavOptions = {
     val __obj = js.Dynamic.literal()
     if (closest != null) __obj.updateDynamic("closest")(closest.asInstanceOf[js.Any])
     if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitScrollspyNavOptions]
   }
 }

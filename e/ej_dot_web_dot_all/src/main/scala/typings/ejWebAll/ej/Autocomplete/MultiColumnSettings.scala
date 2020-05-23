@@ -35,9 +35,9 @@ object MultiColumnSettings {
   ): MultiColumnSettings = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (searchColumnIndices != null) __obj.updateDynamic("searchColumnIndices")(searchColumnIndices.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.get.asInstanceOf[js.Any])
     if (stringFormat != null) __obj.updateDynamic("stringFormat")(stringFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiColumnSettings]
   }

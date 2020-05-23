@@ -63,16 +63,16 @@ object IDockMonitorProps {
     children: ReactNode = null,
     defaultIsVisible: js.UndefOr[Boolean] = js.undefined,
     defaultPosition: DockPosition = null,
-    defaultSize: Int | Double = null,
+    defaultSize: js.UndefOr[Double] = js.undefined,
     fluid: js.UndefOr[Boolean] = js.undefined
   ): IDockMonitorProps = {
     val __obj = js.Dynamic.literal(changePositionKey = changePositionKey.asInstanceOf[js.Any], toggleVisibilityKey = toggleVisibilityKey.asInstanceOf[js.Any])
     if (changeMonitorKey != null) __obj.updateDynamic("changeMonitorKey")(changeMonitorKey.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultIsVisible)) __obj.updateDynamic("defaultIsVisible")(defaultIsVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultIsVisible)) __obj.updateDynamic("defaultIsVisible")(defaultIsVisible.get.asInstanceOf[js.Any])
     if (defaultPosition != null) __obj.updateDynamic("defaultPosition")(defaultPosition.asInstanceOf[js.Any])
-    if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSize)) __obj.updateDynamic("defaultSize")(defaultSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDockMonitorProps]
   }
 }

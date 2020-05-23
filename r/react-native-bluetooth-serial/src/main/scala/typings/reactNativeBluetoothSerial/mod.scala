@@ -1,5 +1,6 @@
 package typings.reactNativeBluetoothSerial
 
+import typings.reactNativeBluetoothSerial.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ object mod extends js.Object {
     def disconnect(): js.Promise[Unit] = js.native
     def isConnected(): js.Promise[Boolean] = js.native
     def isEnabled(): js.Promise[Boolean] = js.native
-    def list(): js.Promise[js.Array[AnonId]] = js.native
+    def list(): js.Promise[js.Array[Id]] = js.native
     def on(eventName: String, handler: js.Function0[Unit]): Unit = js.native
     def removeListener(eventName: String, handler: js.Function0[Unit]): Unit = js.native
     def write(data: String): js.Promise[Boolean] = js.native

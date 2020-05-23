@@ -43,7 +43,7 @@ object DimensionalDefinitionProperties {
   ): DimensionalDefinitionProperties = {
     val __obj = js.Dynamic.literal()
     if (dimensionName != null) __obj.updateDynamic("dimensionName")(dimensionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSlice)) __obj.updateDynamic("isSlice")(isSlice.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSlice)) __obj.updateDynamic("isSlice")(isSlice.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (variableName != null) __obj.updateDynamic("variableName")(variableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionalDefinitionProperties]

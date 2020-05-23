@@ -1,6 +1,6 @@
 package typings.oauth2Server.mod
 
-import typings.oauth2Server.TypeofOAuth2Server
+import typings.oauth2Server.anon.TypeofOAuth2Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

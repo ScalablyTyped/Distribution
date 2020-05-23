@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ora" : "4.0.3"
+      "ora" : "4.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "ora" : "4.0.3"
+      "ora" : "4.0.4"
     }
   ],
   "compile-devDependencies" : [

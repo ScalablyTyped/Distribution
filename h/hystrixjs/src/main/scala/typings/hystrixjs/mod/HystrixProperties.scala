@@ -39,36 +39,36 @@ trait HystrixProperties extends js.Object {
 object HystrixProperties {
   @scala.inline
   def apply(
-    hystrixDotcircuitDoterrorThresholdPercentage: Int | Double = null,
-    hystrixDotcircuitDotsleepWindowInMilliseconds: Int | Double = null,
-    hystrixDotcircuitDotvolumeThreshold: Int | Double = null,
+    hystrixDotcircuitDoterrorThresholdPercentage: js.UndefOr[Double] = js.undefined,
+    hystrixDotcircuitDotsleepWindowInMilliseconds: js.UndefOr[Double] = js.undefined,
+    hystrixDotcircuitDotvolumeThreshold: js.UndefOr[Double] = js.undefined,
     hystrixDotcircuitDotvolumeThresholdDotforceOverride: js.UndefOr[Boolean] = js.undefined,
-    hystrixDotcircuitDotvolumeThresholdDotoverride: Int | Double = null,
-    hystrixDotexecutionDottimeoutInMilliseconds: Int | Double = null,
+    hystrixDotcircuitDotvolumeThresholdDotoverride: js.UndefOr[Double] = js.undefined,
+    hystrixDotexecutionDottimeoutInMilliseconds: js.UndefOr[Double] = js.undefined,
     hystrixDotforceDotcircuitDotclosed: js.UndefOr[Boolean] = js.undefined,
     hystrixDotforceDotcircuitDotopen: js.UndefOr[Boolean] = js.undefined,
-    hystrixDotmetricsDotpercentileDotwindowDotbucketsNumber: Int | Double = null,
-    hystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds: Int | Double = null,
-    hystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber: Int | Double = null,
-    hystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds: Int | Double = null,
+    hystrixDotmetricsDotpercentileDotwindowDotbucketsNumber: js.UndefOr[Double] = js.undefined,
+    hystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds: js.UndefOr[Double] = js.undefined,
+    hystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber: js.UndefOr[Double] = js.undefined,
+    hystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds: js.UndefOr[Double] = js.undefined,
     hystrixDotpromiseDotimplementation: PromiseConstructorLike = null,
-    hystrixDotrequestDotvolumeDotrejectionThreshold: Int | Double = null
+    hystrixDotrequestDotvolumeDotrejectionThreshold: js.UndefOr[Double] = js.undefined
   ): HystrixProperties = {
     val __obj = js.Dynamic.literal()
-    if (hystrixDotcircuitDoterrorThresholdPercentage != null) __obj.updateDynamic("hystrix.circuit.errorThresholdPercentage")(hystrixDotcircuitDoterrorThresholdPercentage.asInstanceOf[js.Any])
-    if (hystrixDotcircuitDotsleepWindowInMilliseconds != null) __obj.updateDynamic("hystrix.circuit.sleepWindowInMilliseconds")(hystrixDotcircuitDotsleepWindowInMilliseconds.asInstanceOf[js.Any])
-    if (hystrixDotcircuitDotvolumeThreshold != null) __obj.updateDynamic("hystrix.circuit.volumeThreshold")(hystrixDotcircuitDotvolumeThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(hystrixDotcircuitDotvolumeThresholdDotforceOverride)) __obj.updateDynamic("hystrix.circuit.volumeThreshold.forceOverride")(hystrixDotcircuitDotvolumeThresholdDotforceOverride.asInstanceOf[js.Any])
-    if (hystrixDotcircuitDotvolumeThresholdDotoverride != null) __obj.updateDynamic("hystrix.circuit.volumeThreshold.override")(hystrixDotcircuitDotvolumeThresholdDotoverride.asInstanceOf[js.Any])
-    if (hystrixDotexecutionDottimeoutInMilliseconds != null) __obj.updateDynamic("hystrix.execution.timeoutInMilliseconds")(hystrixDotexecutionDottimeoutInMilliseconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(hystrixDotforceDotcircuitDotclosed)) __obj.updateDynamic("hystrix.force.circuit.closed")(hystrixDotforceDotcircuitDotclosed.asInstanceOf[js.Any])
-    if (!js.isUndefined(hystrixDotforceDotcircuitDotopen)) __obj.updateDynamic("hystrix.force.circuit.open")(hystrixDotforceDotcircuitDotopen.asInstanceOf[js.Any])
-    if (hystrixDotmetricsDotpercentileDotwindowDotbucketsNumber != null) __obj.updateDynamic("hystrix.metrics.percentile.window.bucketsNumber")(hystrixDotmetricsDotpercentileDotwindowDotbucketsNumber.asInstanceOf[js.Any])
-    if (hystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds != null) __obj.updateDynamic("hystrix.metrics.percentile.window.timeInMilliseconds")(hystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds.asInstanceOf[js.Any])
-    if (hystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber != null) __obj.updateDynamic("hystrix.metrics.statistical.window.bucketsNumber")(hystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber.asInstanceOf[js.Any])
-    if (hystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds != null) __obj.updateDynamic("hystrix.metrics.statistical.window.timeInMilliseconds")(hystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotcircuitDoterrorThresholdPercentage)) __obj.updateDynamic("hystrix.circuit.errorThresholdPercentage")(hystrixDotcircuitDoterrorThresholdPercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotcircuitDotsleepWindowInMilliseconds)) __obj.updateDynamic("hystrix.circuit.sleepWindowInMilliseconds")(hystrixDotcircuitDotsleepWindowInMilliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotcircuitDotvolumeThreshold)) __obj.updateDynamic("hystrix.circuit.volumeThreshold")(hystrixDotcircuitDotvolumeThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotcircuitDotvolumeThresholdDotforceOverride)) __obj.updateDynamic("hystrix.circuit.volumeThreshold.forceOverride")(hystrixDotcircuitDotvolumeThresholdDotforceOverride.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotcircuitDotvolumeThresholdDotoverride)) __obj.updateDynamic("hystrix.circuit.volumeThreshold.override")(hystrixDotcircuitDotvolumeThresholdDotoverride.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotexecutionDottimeoutInMilliseconds)) __obj.updateDynamic("hystrix.execution.timeoutInMilliseconds")(hystrixDotexecutionDottimeoutInMilliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotforceDotcircuitDotclosed)) __obj.updateDynamic("hystrix.force.circuit.closed")(hystrixDotforceDotcircuitDotclosed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotforceDotcircuitDotopen)) __obj.updateDynamic("hystrix.force.circuit.open")(hystrixDotforceDotcircuitDotopen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotmetricsDotpercentileDotwindowDotbucketsNumber)) __obj.updateDynamic("hystrix.metrics.percentile.window.bucketsNumber")(hystrixDotmetricsDotpercentileDotwindowDotbucketsNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds)) __obj.updateDynamic("hystrix.metrics.percentile.window.timeInMilliseconds")(hystrixDotmetricsDotpercentileDotwindowDottimeInMilliseconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber)) __obj.updateDynamic("hystrix.metrics.statistical.window.bucketsNumber")(hystrixDotmetricsDotstatisticalDotwindowDotbucketsNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds)) __obj.updateDynamic("hystrix.metrics.statistical.window.timeInMilliseconds")(hystrixDotmetricsDotstatisticalDotwindowDottimeInMilliseconds.get.asInstanceOf[js.Any])
     if (hystrixDotpromiseDotimplementation != null) __obj.updateDynamic("hystrix.promise.implementation")(hystrixDotpromiseDotimplementation.asInstanceOf[js.Any])
-    if (hystrixDotrequestDotvolumeDotrejectionThreshold != null) __obj.updateDynamic("hystrix.request.volume.rejectionThreshold")(hystrixDotrequestDotvolumeDotrejectionThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(hystrixDotrequestDotvolumeDotrejectionThreshold)) __obj.updateDynamic("hystrix.request.volume.rejectionThreshold")(hystrixDotrequestDotvolumeDotrejectionThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HystrixProperties]
   }
 }

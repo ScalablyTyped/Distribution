@@ -19,6 +19,15 @@ trait PointStatesHoverOptionsObject extends js.Object {
     */
   var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
+    * (Highcharts, Highmaps) Set the marker's fixed height on hover state.
+    */
+  var height: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock) The number of pixels to increase the height of
+    * the hovered point.
+    */
+  var heightPlus: js.UndefOr[Double] = js.undefined
+  /**
     * (Highcharts, Highstock) The color of the point marker's outline. When
     * `undefined`, the series' or point's lineColor for normal state is used.
     */
@@ -43,6 +52,15 @@ trait PointStatesHoverOptionsObject extends js.Object {
     * the hovered point.
     */
   var radiusPlus: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highmaps) Set the marker's fixed width on hover state.
+    */
+  var width: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock) The number of pixels to increase the width of the
+    * hovered point.
+    */
+  var widthPlus: js.UndefOr[Double] = js.undefined
 }
 
 object PointStatesHoverOptionsObject {
@@ -51,21 +69,29 @@ object PointStatesHoverOptionsObject {
     animation: Boolean | AnimationOptionsObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     fillColor: ColorString | GradientColorObject | PatternObject = null,
+    height: js.UndefOr[Double] = js.undefined,
+    heightPlus: js.UndefOr[Double] = js.undefined,
     lineColor: ColorString | GradientColorObject | PatternObject = null,
-    lineWidth: Int | Double = null,
-    lineWidthPlus: Int | Double = null,
-    radius: Int | Double = null,
-    radiusPlus: Int | Double = null
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    lineWidthPlus: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined,
+    radiusPlus: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
+    widthPlus: js.UndefOr[Double] = js.undefined
   ): PointStatesHoverOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightPlus)) __obj.updateDynamic("heightPlus")(heightPlus.get.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (lineWidthPlus != null) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (radiusPlus != null) __obj.updateDynamic("radiusPlus")(radiusPlus.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidthPlus)) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radiusPlus)) __obj.updateDynamic("radiusPlus")(radiusPlus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthPlus)) __obj.updateDynamic("widthPlus")(widthPlus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointStatesHoverOptionsObject]
   }
 }

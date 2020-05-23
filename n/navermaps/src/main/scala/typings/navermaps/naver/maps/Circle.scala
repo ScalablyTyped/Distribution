@@ -5,10 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Naver Overlays
-@JSGlobal("naver.maps.Circle")
 @js.native
-class Circle () extends OverlayView {
-  def this(options: CircleOptions) = this()
+trait Circle extends OverlayView {
   def getAreaSize(): Double = js.native
   def getBounds(): Bounds = js.native
   def getCenter(): Coord = js.native

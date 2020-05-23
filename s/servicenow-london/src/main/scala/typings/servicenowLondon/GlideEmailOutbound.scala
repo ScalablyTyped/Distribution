@@ -4,12 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("GlideEmailOutbound")
 @js.native
-/**
-  * Instantiates a scoped GlideEmailOutbound object.
-  */
-class GlideEmailOutbound () extends js.Object {
+trait GlideEmailOutbound extends js.Object {
   /**
     * Adds the address to either the cc or bcc list.
     *

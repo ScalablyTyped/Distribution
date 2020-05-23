@@ -1,6 +1,5 @@
 package typings.behavior3.b3
 
-import typings.behavior3.AnonCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,21 +23,15 @@ import scala.scalajs.js.annotation._
   * `_execute` method, which is called in the tree traversal.
   *
   */
-@JSGlobal("b3.BaseNode")
-@js.native
-/**
-  * Initialization method.
-  */
-class BaseNode () extends js.Object {
-  def this(hasCategoryNameTitleDescriptionProperties: AnonCategory) = this()
+trait BaseNode extends js.Object {
   /**
     * Wrapper for close method.
     */
-  def _close(tick: Tick): Unit = js.native
+  def _close(tick: Tick): Unit
   /**
     * Wrapper for enter method.
     */
-  def _enter(tick: Tick): Unit = js.native
+  def _enter(tick: Tick): Unit
   /**
     * This is the main method to propagate the tick signal to this node. This
     * method calls all callbacks: `enter`, `open`, `tick`, `close`, and
@@ -47,37 +40,37 @@ class BaseNode () extends js.Object {
     * different of `RUNNING`.
     *
     */
-  def _execute(tick: Tick): Double = js.native
+  def _execute(tick: Tick): Double
   /**
     * Wrapper for exit method.
     */
-  def _exit(tick: Tick): Unit = js.native
+  def _exit(tick: Tick): Unit
   /**
     * Wrapper for open method.
     */
-  def _open(tick: Tick): Unit = js.native
+  def _open(tick: Tick): Unit
   /**
     * Wrapper for tick method.
     */
-  def _tick(tick: Tick): Double = js.native
+  def _tick(tick: Tick): Double
   /**
     * Close method, override this to use. This method is called after the tick
     * callback, and only if the tick return a state different from
     * `RUNNING`.
     *
     */
-  def close(tick: Tick): Unit = js.native
+  def close(tick: Tick): Unit
   /**
     * Enter method, override this to use. It is called every time a node is
     * asked to execute, before the tick itself.
     */
-  def enter(tick: Tick): Unit = js.native
+  def enter(tick: Tick): Unit
   /**
     * Exit method, override this to use. Called every time in the end of the
     * execution.
     *
     */
-  def exit(tick: Tick): Unit = js.native
+  def exit(tick: Tick): Unit
   /**
     * Open method, override this to use. It is called only before the tick
     * callback and only if the not isn't closed.
@@ -85,13 +78,33 @@ class BaseNode () extends js.Object {
     * Note: a node will be closed if it returned `RUNNING` in the tick.
     *
     */
-  def open(tick: Tick): Unit = js.native
+  def open(tick: Tick): Unit
   /**
     * Tick method, override this to use. This method must contain the real
     * execution of node (perform a task, call children, etc.). It is called
     * every time a node is asked to execute.
     *
     */
-  def tick(tick: Tick): Unit = js.native
+  def tick(tick: Tick): Unit
+}
+
+object BaseNode {
+  @scala.inline
+  def apply(
+    _close: Tick => Unit,
+    _enter: Tick => Unit,
+    _execute: Tick => Double,
+    _exit: Tick => Unit,
+    _open: Tick => Unit,
+    _tick: Tick => Double,
+    close: Tick => Unit,
+    enter: Tick => Unit,
+    exit: Tick => Unit,
+    open: Tick => Unit,
+    tick: Tick => Unit
+  ): BaseNode = {
+    val __obj = js.Dynamic.literal(_close = js.Any.fromFunction1(_close), _enter = js.Any.fromFunction1(_enter), _execute = js.Any.fromFunction1(_execute), _exit = js.Any.fromFunction1(_exit), _open = js.Any.fromFunction1(_open), _tick = js.Any.fromFunction1(_tick), close = js.Any.fromFunction1(close), enter = js.Any.fromFunction1(enter), exit = js.Any.fromFunction1(exit), open = js.Any.fromFunction1(open), tick = js.Any.fromFunction1(tick))
+    __obj.asInstanceOf[BaseNode]
+  }
 }
 

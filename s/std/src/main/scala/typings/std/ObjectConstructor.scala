@@ -108,9 +108,7 @@ trait ObjectConstructor
     * @param entries An iterable object that contains key-value entries for properties and methods.
     */
   @JSName("fromEntries")
-  def fromEntries_T_Intersection[T](entries: Iterable[js.Tuple2[PropertyKey, T]]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in std.PropertyKey ]: T}
-    */ typings.std.stdStrings.ObjectConstructor with TopLevel[js.Any] = js.native
+  def fromEntries_T_StringDictionary[T](entries: Iterable[js.Tuple2[PropertyKey, T]]): StringDictionary[T] = js.native
   /**
     * Gets the own property descriptor of the specified object.
     * An own property descriptor is one that is defined directly on the object and is not inherited from the object's prototype.

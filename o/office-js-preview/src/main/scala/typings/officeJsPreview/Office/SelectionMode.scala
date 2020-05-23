@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,17 +27,6 @@ object SelectionMode extends js.Object {
     */
   @js.native
   sealed trait Selected extends SelectionMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SelectionMode with Double] = js.native
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 1 */ @js.native
-  object Selected extends TopLevel[Selected with Double]
   
 }
 

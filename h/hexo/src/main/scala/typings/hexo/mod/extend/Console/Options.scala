@@ -1,6 +1,6 @@
 package typings.hexo.mod.extend.Console
 
-import typings.hexo.AnonDesc
+import typings.hexo.anon.Desc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait Options extends js.Object {
   /**
     * The description of each argument of a console command.
     */
-  var arguments: js.UndefOr[js.Array[AnonDesc]] = js.undefined
+  var arguments: js.UndefOr[js.Array[Desc]] = js.undefined
   /**
     * More detailed information about a console command.
     */
@@ -17,7 +17,7 @@ trait Options extends js.Object {
   /**
     * The description of each option of a console command.
     */
-  var options: js.UndefOr[js.Array[AnonDesc]] = js.undefined
+  var options: js.UndefOr[js.Array[Desc]] = js.undefined
   /**
     * The usage of a console command.
     */
@@ -27,9 +27,9 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    arguments: js.Array[AnonDesc] = null,
+    arguments: js.Array[Desc] = null,
     desc: String = null,
-    options: js.Array[AnonDesc] = null,
+    options: js.Array[Desc] = null,
     usage: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()

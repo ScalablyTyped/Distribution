@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation._
   *
   * GeneralNames ::= SEQUENCE SIZE (1..MAX) OF GeneralName
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.GeneralNames")
-@js.native
-class GeneralNames protected () extends js.Object {
-  def this(paramsArray: js.Array[UriParam]) = this()
-  def getEncodedHex(): String = js.native
+trait GeneralNames extends js.Object {
+  def getEncodedHex(): String
   /**
     * set a array of `KJUR.asn1.x509.GeneralName` parameters
     * @param paramsArray Array of `KJUR.asn1.x509.GeneralNames`
@@ -23,6 +20,14 @@ class GeneralNames protected () extends js.Object {
     * gns = new KJUR.asn1.x509.GeneralNames();
     * gns.setByParamArray([{uri: 'http://aaa.com/'}, {uri: 'http://bbb.com/'}]);
     */
-  def setByParamArray(paramsArray: js.Array[GeneralNameParam]): Unit = js.native
+  def setByParamArray(paramsArray: js.Array[GeneralNameParam]): Unit
+}
+
+object GeneralNames {
+  @scala.inline
+  def apply(getEncodedHex: () => String, setByParamArray: js.Array[GeneralNameParam] => Unit): GeneralNames = {
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), setByParamArray = js.Any.fromFunction1(setByParamArray))
+    __obj.asInstanceOf[GeneralNames]
+  }
 }
 

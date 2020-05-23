@@ -12,11 +12,15 @@ trait FileVideoMediaMetadata extends js.Object {
 
 object FileVideoMediaMetadata {
   @scala.inline
-  def apply(durationMillis: String = null, height: Int | Double = null, width: Int | Double = null): FileVideoMediaMetadata = {
+  def apply(
+    durationMillis: String = null,
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): FileVideoMediaMetadata = {
     val __obj = js.Dynamic.literal()
     if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileVideoMediaMetadata]
   }
 }

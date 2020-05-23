@@ -1,14 +1,12 @@
 package typings.kendoUi.kendo.dataviz.diagram
 
-import typings.kendoUi.kendo.Observable_
+import typings.kendoUi.kendo.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.dataviz.diagram.Line")
 @js.native
-class Line () extends Observable_ {
-  def this(options: LineOptions) = this()
+trait Line extends Observable {
   var drawingElement: typings.kendoUi.kendo.drawing.Path = js.native
   var options: LineOptions = js.native
   def position(): Unit = js.native

@@ -32,17 +32,17 @@ object DialogButton {
     autospin: js.UndefOr[Boolean] = js.undefined,
     cssClass: String = null,
     data: js.Any = null,
-    hotkey: Int | Double = null,
+    hotkey: js.UndefOr[Double] = js.undefined,
     icon: String = null,
     id: String = null,
     label: String = null
   ): DialogButton = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
-    if (!js.isUndefined(autospin)) __obj.updateDynamic("autospin")(autospin.asInstanceOf[js.Any])
+    if (!js.isUndefined(autospin)) __obj.updateDynamic("autospin")(autospin.get.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (hotkey != null) __obj.updateDynamic("hotkey")(hotkey.asInstanceOf[js.Any])
+    if (!js.isUndefined(hotkey)) __obj.updateDynamic("hotkey")(hotkey.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

@@ -2,8 +2,8 @@ package typings.dynamodb.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.bunyan.mod.^
-import typings.dynamodb.AnonDynamodb
-import typings.dynamodb.TypeofModel
+import typings.dynamodb.anon.Dynamodb
+import typings.dynamodb.anon.TypeofModel
 import typings.dynamodb.callbackMod.Callback
 import typings.dynamodb.modelMod.Model
 import typings.dynamodb.modelMod.Model.CreateOperation
@@ -38,7 +38,7 @@ object Model_ extends js.Object {
   val update: UpdateOperation = js.native
   def batchGetItems(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
   def batchGetItems(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
-  def config(config: AnonDynamodb): js.Any = js.native
+  def config(config: Dynamodb): js.Any = js.native
   def createTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[_] | Unit = js.native
   def createTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[_] | Unit = js.native
   def deleteTable(): js.Promise[_] = js.native

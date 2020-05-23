@@ -44,23 +44,23 @@ object EllipseCurveConfig {
   @scala.inline
   def apply(
     clockwise: js.UndefOr[Boolean] = js.undefined,
-    endAngle: Int | Double = null,
-    rotation: Int | Double = null,
-    startAngle: Int | Double = null,
-    x: Int | Double = null,
-    xRadius: Int | Double = null,
-    y: Int | Double = null,
-    yRadius: Int | Double = null
+    endAngle: js.UndefOr[integer] = js.undefined,
+    rotation: js.UndefOr[integer] = js.undefined,
+    startAngle: js.UndefOr[integer] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    xRadius: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined,
+    yRadius: js.UndefOr[Double] = js.undefined
   ): EllipseCurveConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (xRadius != null) __obj.updateDynamic("xRadius")(xRadius.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (yRadius != null) __obj.updateDynamic("yRadius")(yRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xRadius)) __obj.updateDynamic("xRadius")(xRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yRadius)) __obj.updateDynamic("yRadius")(yRadius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EllipseCurveConfig]
   }
 }

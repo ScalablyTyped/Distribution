@@ -11,48 +11,48 @@ trait ISlide extends IAbstract {
   /** [Config Option] (String) */
   var direction: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of isElementBoxFit
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getIsElementBoxFit: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of offset
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getOffset: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of out
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of useCssTransform
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getUseCssTransform: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Config Option] (Number) */
   var offset: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Boolean) */
   var out: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the value of containerBox
-  		* @param containerBox String The new value.
-  		*/
+    * @param containerBox String The new value.
+    */
   var setContainerBox: js.UndefOr[js.Function1[/* containerBox */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of elementBox
-  		* @param elementBox String The new value.
-  		*/
+    * @param elementBox String The new value.
+    */
   var setElementBox: js.UndefOr[js.Function1[/* elementBox */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of isElementBoxFit
-  		* @param isElementBoxFit Boolean The new value.
-  		*/
+    * @param isElementBoxFit Boolean The new value.
+    */
   var setIsElementBoxFit: js.UndefOr[js.Function1[/* isElementBoxFit */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of offset
-  		* @param offset Number The new value.
-  		*/
+    * @param offset Number The new value.
+    */
   var setOffset: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of out
-  		* @param out Boolean The new value.
-  		*/
+    * @param out Boolean The new value.
+    */
   var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of useCssTransform
-  		* @param useCssTransform Boolean The new value.
-  		*/
+    * @param useCssTransform Boolean The new value.
+    */
   var setUseCssTransform: js.UndefOr[js.Function1[/* useCssTransform */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 
@@ -111,7 +111,7 @@ object ISlide {
     mixins: js.Any = null,
     mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -209,11 +209,11 @@ object ISlide {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
+    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out.get.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
     if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
@@ -246,7 +246,7 @@ object ISlide {
     if (setReverse != null) __obj.updateDynamic("setReverse")(js.Any.fromFunction1(setReverse))
     if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
     if (setUseCssTransform != null) __obj.updateDynamic("setUseCssTransform")(js.Any.fromFunction1(setUseCssTransform))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

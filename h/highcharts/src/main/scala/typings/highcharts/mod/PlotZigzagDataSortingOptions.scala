@@ -30,8 +30,8 @@ object PlotZigzagDataSortingOptions {
     sortKey: String = null
   ): PlotZigzagDataSortingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchByName)) __obj.updateDynamic("matchByName")(matchByName.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchByName)) __obj.updateDynamic("matchByName")(matchByName.get.asInstanceOf[js.Any])
     if (sortKey != null) __obj.updateDynamic("sortKey")(sortKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotZigzagDataSortingOptions]
   }

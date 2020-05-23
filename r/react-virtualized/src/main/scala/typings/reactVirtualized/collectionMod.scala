@@ -1,5 +1,7 @@
 package typings.reactVirtualized
 
+import typings.reactVirtualized.anon.Arialabel
+import typings.reactVirtualized.anon.CellGroupRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +16,8 @@ object collectionMod extends js.Object {
   /* static members */
   @js.native
   object Collection extends js.Object {
-    var defaultProps: AnonCellGroupRenderer = js.native
-    var propTypes: AnonArialabel = js.native
+    var defaultProps: CellGroupRenderer = js.native
+    var propTypes: Arialabel = js.native
   }
   
 }

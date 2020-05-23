@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.gage")
 @js.native
-class gage () extends baseview {
+trait gage extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

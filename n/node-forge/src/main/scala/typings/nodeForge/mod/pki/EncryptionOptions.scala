@@ -25,17 +25,17 @@ object EncryptionOptions {
   @scala.inline
   def apply(
     algorithm: aes128 | aes192 | aes256 | `3des` = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     legacy: js.UndefOr[Boolean] = js.undefined,
     prfAlgorithm: sha1 | sha224 | sha256 | sha384 | sha512 = null,
-    saltSize: Int | Double = null
+    saltSize: js.UndefOr[Double] = js.undefined
   ): EncryptionOptions = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(legacy)) __obj.updateDynamic("legacy")(legacy.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(legacy)) __obj.updateDynamic("legacy")(legacy.get.asInstanceOf[js.Any])
     if (prfAlgorithm != null) __obj.updateDynamic("prfAlgorithm")(prfAlgorithm.asInstanceOf[js.Any])
-    if (saltSize != null) __obj.updateDynamic("saltSize")(saltSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(saltSize)) __obj.updateDynamic("saltSize")(saltSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionOptions]
   }
 }

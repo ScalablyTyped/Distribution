@@ -102,17 +102,17 @@ object NormalizeEmailOptions {
     yahoo_remove_subaddress: js.UndefOr[Boolean] = js.undefined
   ): NormalizeEmailOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all_lowercase)) __obj.updateDynamic("all_lowercase")(all_lowercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(gmail_convert_googlemaildotcom)) __obj.updateDynamic("gmail_convert_googlemaildotcom")(gmail_convert_googlemaildotcom.asInstanceOf[js.Any])
-    if (!js.isUndefined(gmail_lowercase)) __obj.updateDynamic("gmail_lowercase")(gmail_lowercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(gmail_remove_dots)) __obj.updateDynamic("gmail_remove_dots")(gmail_remove_dots.asInstanceOf[js.Any])
-    if (!js.isUndefined(gmail_remove_subaddress)) __obj.updateDynamic("gmail_remove_subaddress")(gmail_remove_subaddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(icloud_lowercase)) __obj.updateDynamic("icloud_lowercase")(icloud_lowercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(icloud_remove_subaddress)) __obj.updateDynamic("icloud_remove_subaddress")(icloud_remove_subaddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(outlookdotcom_lowercase)) __obj.updateDynamic("outlookdotcom_lowercase")(outlookdotcom_lowercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(outlookdotcom_remove_subaddress)) __obj.updateDynamic("outlookdotcom_remove_subaddress")(outlookdotcom_remove_subaddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(yahoo_lowercase)) __obj.updateDynamic("yahoo_lowercase")(yahoo_lowercase.asInstanceOf[js.Any])
-    if (!js.isUndefined(yahoo_remove_subaddress)) __obj.updateDynamic("yahoo_remove_subaddress")(yahoo_remove_subaddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(all_lowercase)) __obj.updateDynamic("all_lowercase")(all_lowercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gmail_convert_googlemaildotcom)) __obj.updateDynamic("gmail_convert_googlemaildotcom")(gmail_convert_googlemaildotcom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gmail_lowercase)) __obj.updateDynamic("gmail_lowercase")(gmail_lowercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gmail_remove_dots)) __obj.updateDynamic("gmail_remove_dots")(gmail_remove_dots.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gmail_remove_subaddress)) __obj.updateDynamic("gmail_remove_subaddress")(gmail_remove_subaddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icloud_lowercase)) __obj.updateDynamic("icloud_lowercase")(icloud_lowercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(icloud_remove_subaddress)) __obj.updateDynamic("icloud_remove_subaddress")(icloud_remove_subaddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlookdotcom_lowercase)) __obj.updateDynamic("outlookdotcom_lowercase")(outlookdotcom_lowercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlookdotcom_remove_subaddress)) __obj.updateDynamic("outlookdotcom_remove_subaddress")(outlookdotcom_remove_subaddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yahoo_lowercase)) __obj.updateDynamic("yahoo_lowercase")(yahoo_lowercase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yahoo_remove_subaddress)) __obj.updateDynamic("yahoo_remove_subaddress")(yahoo_remove_subaddress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizeEmailOptions]
   }
 }

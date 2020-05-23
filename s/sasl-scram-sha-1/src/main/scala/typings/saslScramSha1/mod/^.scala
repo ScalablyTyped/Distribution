@@ -1,7 +1,7 @@
 package typings.saslScramSha1.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saslScramSha1.TypeofScramSha1Mechanism
+import typings.saslScramSha1.anon.TypeofScramSha1Mechanism
 import typings.saslScramSha1.saslScramSha1Booleans.`true`
 import typings.saslScramSha1.saslScramSha1Strings.`SCRAM-SHA-1`
 import scala.scalajs.js

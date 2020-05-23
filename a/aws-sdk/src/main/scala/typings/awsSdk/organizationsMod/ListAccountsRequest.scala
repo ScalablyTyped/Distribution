@@ -18,9 +18,9 @@ trait ListAccountsRequest extends js.Object {
 
 object ListAccountsRequest {
   @scala.inline
-  def apply(MaxResults: Int | Double = null, NextToken: NextToken = null): ListAccountsRequest = {
+  def apply(MaxResults: js.UndefOr[MaxResults] = js.undefined, NextToken: NextToken = null): ListAccountsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccountsRequest]
   }

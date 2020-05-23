@@ -23,7 +23,7 @@ object RackspaceProviderOptions {
     useInternal: js.UndefOr[Boolean] = js.undefined
   ): RackspaceProviderOptions = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-    if (!js.isUndefined(useInternal)) __obj.updateDynamic("useInternal")(useInternal.asInstanceOf[js.Any])
+    if (!js.isUndefined(useInternal)) __obj.updateDynamic("useInternal")(useInternal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RackspaceProviderOptions]
   }
 }

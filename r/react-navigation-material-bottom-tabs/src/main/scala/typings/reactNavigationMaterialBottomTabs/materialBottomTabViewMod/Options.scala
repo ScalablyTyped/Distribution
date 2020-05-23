@@ -23,7 +23,7 @@ object Options {
     if (tabBarColor != null) __obj.updateDynamic("tabBarColor")(tabBarColor.asInstanceOf[js.Any])
     if (tabBarColorDark != null) __obj.updateDynamic("tabBarColorDark")(tabBarColorDark.asInstanceOf[js.Any])
     if (tabBarColorLight != null) __obj.updateDynamic("tabBarColorLight")(tabBarColorLight.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabBarVisible)) __obj.updateDynamic("tabBarVisible")(tabBarVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBarVisible)) __obj.updateDynamic("tabBarVisible")(tabBarVisible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -26,7 +26,7 @@ object CreateSendingDomain {
   def apply(
     domain: String,
     dkim: DKIM = null,
-    dkim_key_length: Int | Double = null,
+    dkim_key_length: js.UndefOr[Double] = js.undefined,
     generate_dkim: js.UndefOr[Boolean] = js.undefined,
     shared_with_subaccounts: js.UndefOr[Boolean] = js.undefined,
     status: Status = null,
@@ -34,9 +34,9 @@ object CreateSendingDomain {
   ): CreateSendingDomain = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     if (dkim != null) __obj.updateDynamic("dkim")(dkim.asInstanceOf[js.Any])
-    if (dkim_key_length != null) __obj.updateDynamic("dkim_key_length")(dkim_key_length.asInstanceOf[js.Any])
-    if (!js.isUndefined(generate_dkim)) __obj.updateDynamic("generate_dkim")(generate_dkim.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared_with_subaccounts)) __obj.updateDynamic("shared_with_subaccounts")(shared_with_subaccounts.asInstanceOf[js.Any])
+    if (!js.isUndefined(dkim_key_length)) __obj.updateDynamic("dkim_key_length")(dkim_key_length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(generate_dkim)) __obj.updateDynamic("generate_dkim")(generate_dkim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared_with_subaccounts)) __obj.updateDynamic("shared_with_subaccounts")(shared_with_subaccounts.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (tracking_domain != null) __obj.updateDynamic("tracking_domain")(tracking_domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSendingDomain]

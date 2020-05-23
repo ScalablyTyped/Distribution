@@ -1,12 +1,12 @@
 package typings.postmanCollection.mod
 
-import typings.postmanCollection.AnonEnabled
-import typings.postmanCollection.AnonIgnoreCase
+import typings.postmanCollection.anon.Enabled
+import typings.postmanCollection.anon.IgnoreCase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.RequestDefinition because var conflicts: description, disabled, id, name. Inlined url, method, header, body, auth, proxy, certificate */ @JSImport("postman-collection", "Request")
@@ -34,11 +34,11 @@ class Request protected () extends Property[RequestDefinition] {
   def authorizeUsing(`type`: RequestAuthDefinition, options: VariableList): Unit = js.native
   def forEachHeader(callback: js.Function2[/* header */ Header, /* context */ this.type, Unit]): Unit = js.native
   def getHeaders(): js.Any = js.native
-  def getHeaders(options: AnonEnabled): js.Any = js.native
+  def getHeaders(options: Enabled): js.Any = js.native
   def removeHeader(toRemove: String): Unit = js.native
-  def removeHeader(toRemove: String, options: AnonIgnoreCase): Unit = js.native
+  def removeHeader(toRemove: String, options: IgnoreCase): Unit = js.native
   def removeHeader(toRemove: Header): Unit = js.native
-  def removeHeader(toRemove: Header, options: AnonIgnoreCase): Unit = js.native
+  def removeHeader(toRemove: Header, options: IgnoreCase): Unit = js.native
   def removeQueryParams(params: String): Unit = js.native
   def removeQueryParams(params: js.Array[QueryParamDefinition | String]): Unit = js.native
   def removeQueryParams(params: QueryParamDefinition): Unit = js.native

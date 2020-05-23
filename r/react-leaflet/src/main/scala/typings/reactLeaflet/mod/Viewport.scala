@@ -11,10 +11,13 @@ trait Viewport extends js.Object {
 
 object Viewport {
   @scala.inline
-  def apply(center: js.Tuple2[Double, Double] = null, zoom: Int | Double = null): Viewport = {
+  def apply(
+    center: js.UndefOr[Null | (js.Tuple2[Double, Double])] = js.undefined,
+    zoom: js.UndefOr[Null | Double] = js.undefined
+  ): Viewport = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Viewport]
   }
 }

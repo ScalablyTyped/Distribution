@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Context
-  extends /* data */ StringDictionary[js.Any] {
+  extends /* key */ StringDictionary[js.Any] {
   var callback: js.UndefOr[SassRenderCallback] = js.undefined
   var options: Options
 }
@@ -15,7 +15,7 @@ object Context {
   @scala.inline
   def apply(
     options: Options,
-    StringDictionary: /* data */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     callback: (/* err */ SassError, /* result */ Result) => js.Any = null
   ): Context = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])

@@ -35,10 +35,10 @@ object UserAgentCallOptions {
     rtcAnswerConstraints: RTCAnswerOptions = null,
     rtcConstraints: js.Any = null,
     rtcOfferConstraints: RTCOfferOptions = null,
-    sessionTimersExpires: Int | Double = null
+    sessionTimersExpires: js.UndefOr[Double] = js.undefined
   ): UserAgentCallOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
+    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.get.asInstanceOf[js.Any])
     if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     if (mediaConstraints != null) __obj.updateDynamic("mediaConstraints")(mediaConstraints.asInstanceOf[js.Any])
@@ -47,7 +47,7 @@ object UserAgentCallOptions {
     if (rtcAnswerConstraints != null) __obj.updateDynamic("rtcAnswerConstraints")(rtcAnswerConstraints.asInstanceOf[js.Any])
     if (rtcConstraints != null) __obj.updateDynamic("rtcConstraints")(rtcConstraints.asInstanceOf[js.Any])
     if (rtcOfferConstraints != null) __obj.updateDynamic("rtcOfferConstraints")(rtcOfferConstraints.asInstanceOf[js.Any])
-    if (sessionTimersExpires != null) __obj.updateDynamic("sessionTimersExpires")(sessionTimersExpires.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionTimersExpires)) __obj.updateDynamic("sessionTimersExpires")(sessionTimersExpires.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentCallOptions]
   }
 }

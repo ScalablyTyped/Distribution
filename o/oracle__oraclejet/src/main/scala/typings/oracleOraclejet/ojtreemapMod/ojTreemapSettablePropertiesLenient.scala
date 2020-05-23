@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojtreemapMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon26
-import typings.oracleOraclejet.Anon27
-import typings.oracleOraclejet.AnonGroupLabelDisplay
-import typings.oracleOraclejet.AnonLabelDataVisualization
+import typings.oracleOraclejet.anon.GroupLabelDisplay
+import typings.oracleOraclejet.anon.LabelDataVisualization
+import typings.oracleOraclejet.anon.`26`
+import typings.oracleOraclejet.anon.`27`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.any
@@ -46,71 +46,71 @@ trait ojTreemapSettablePropertiesLenient[K, D]
   var hoverBehaviorDelay: js.UndefOr[Double] = js.undefined
   var isolatedNode: js.UndefOr[js.Any] = js.undefined
   var layout: js.UndefOr[sliceAndDiceHorizontal | sliceAndDiceVertical | squarified] = js.undefined
-  var nodeContent: js.UndefOr[Anon26[K, D]] = js.undefined
-  var nodeDefaults: js.UndefOr[AnonGroupLabelDisplay] = js.undefined
+  var nodeContent: js.UndefOr[`26`[K, D]] = js.undefined
+  var nodeDefaults: js.UndefOr[GroupLabelDisplay] = js.undefined
   var nodeSeparators: js.UndefOr[bevels | gaps] = js.undefined
   var rootNode: js.UndefOr[js.Any] = js.undefined
   var selection: js.UndefOr[js.Array[_]] = js.undefined
   var selectionMode: js.UndefOr[none | single | multiple] = js.undefined
   var sizeLabel: js.UndefOr[String] = js.undefined
   var sorting: js.UndefOr[on | off] = js.undefined
-  var tooltip: js.UndefOr[Anon27[K, D]] = js.undefined
+  var tooltip: js.UndefOr[`27`[K, D]] = js.undefined
   var touchResponse: js.UndefOr[touchStart | auto] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonLabelDataVisualization] = js.undefined
+  var translations: js.UndefOr[LabelDataVisualization] = js.undefined
 }
 
 object ojTreemapSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    animationDuration: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationOnDataChange: auto | none = null,
     animationOnDisplay: auto | none = null,
     animationUpdateColor: String = null,
     as: String = null,
     colorLabel: String = null,
     data: DataProvider[K, D] = null,
-    displayLevels: Int | Double = null,
+    displayLevels: js.UndefOr[Double] = js.undefined,
     drilling: on | off = null,
     groupGaps: all | none | outer = null,
     hiddenCategories: js.Array[String] = null,
     highlightMatch: any | all = null,
     highlightedCategories: js.Array[String] = null,
     hoverBehavior: dim | none = null,
-    hoverBehaviorDelay: Int | Double = null,
+    hoverBehaviorDelay: js.UndefOr[Double] = js.undefined,
     isolatedNode: js.Any = null,
     layout: sliceAndDiceHorizontal | sliceAndDiceVertical | squarified = null,
-    nodeContent: Anon26[K, D] = null,
-    nodeDefaults: AnonGroupLabelDisplay = null,
+    nodeContent: `26`[K, D] = null,
+    nodeDefaults: GroupLabelDisplay = null,
     nodeSeparators: bevels | gaps = null,
     rootNode: js.Any = null,
     selection: js.Array[_] = null,
     selectionMode: none | single | multiple = null,
     sizeLabel: String = null,
     sorting: on | off = null,
-    tooltip: Anon27[K, D] = null,
+    tooltip: `27`[K, D] = null,
     touchResponse: touchStart | auto = null,
     trackResize: on | off = null,
-    translations: AnonLabelDataVisualization = null
+    translations: LabelDataVisualization = null
   ): ojTreemapSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (animationOnDataChange != null) __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
     if (animationOnDisplay != null) __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
     if (animationUpdateColor != null) __obj.updateDynamic("animationUpdateColor")(animationUpdateColor.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (colorLabel != null) __obj.updateDynamic("colorLabel")(colorLabel.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (displayLevels != null) __obj.updateDynamic("displayLevels")(displayLevels.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayLevels)) __obj.updateDynamic("displayLevels")(displayLevels.get.asInstanceOf[js.Any])
     if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
     if (groupGaps != null) __obj.updateDynamic("groupGaps")(groupGaps.asInstanceOf[js.Any])
     if (hiddenCategories != null) __obj.updateDynamic("hiddenCategories")(hiddenCategories.asInstanceOf[js.Any])
     if (highlightMatch != null) __obj.updateDynamic("highlightMatch")(highlightMatch.asInstanceOf[js.Any])
     if (highlightedCategories != null) __obj.updateDynamic("highlightedCategories")(highlightedCategories.asInstanceOf[js.Any])
     if (hoverBehavior != null) __obj.updateDynamic("hoverBehavior")(hoverBehavior.asInstanceOf[js.Any])
-    if (hoverBehaviorDelay != null) __obj.updateDynamic("hoverBehaviorDelay")(hoverBehaviorDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverBehaviorDelay)) __obj.updateDynamic("hoverBehaviorDelay")(hoverBehaviorDelay.get.asInstanceOf[js.Any])
     if (isolatedNode != null) __obj.updateDynamic("isolatedNode")(isolatedNode.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (nodeContent != null) __obj.updateDynamic("nodeContent")(nodeContent.asInstanceOf[js.Any])

@@ -33,12 +33,12 @@ object IFieldOptions {
     `val`: IChain = null
   ): IFieldOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attribute)) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (!js.isUndefined(attribute)) __obj.updateDynamic("attribute")(attribute.get.asInstanceOf[js.Any])
     if (coerceTo != null) __obj.updateDynamic("coerceTo")(coerceTo.asInstanceOf[js.Any])
     if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (enumerated != null) __obj.updateDynamic("enumerated")(enumerated.asInstanceOf[js.Any])
     if (filterFrom != null) __obj.updateDynamic("filterFrom")(filterFrom.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePublic)) __obj.updateDynamic("ignorePublic")(ignorePublic.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePublic)) __obj.updateDynamic("ignorePublic")(ignorePublic.get.asInstanceOf[js.Any])
     if (plural != null) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
     if (singular != null) __obj.updateDynamic("singular")(singular.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])

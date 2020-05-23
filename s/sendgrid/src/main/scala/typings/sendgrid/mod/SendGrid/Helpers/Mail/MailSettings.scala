@@ -1,6 +1,5 @@
 package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
-import typings.sendgrid.AnonBcc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ trait MailSettings extends js.Object {
   def setFooter(footer: Footer): Unit
   def setSandBoxMode(sandBoxMode: SandBoxMode): Unit
   def setSpamCheck(spamCheck: SpamCheck): Unit
-  def toJSON(): AnonBcc
+  def toJSON(): typings.sendgrid.anon.Bcc
 }
 
 object MailSettings {
@@ -32,7 +31,7 @@ object MailSettings {
     setFooter: Footer => Unit,
     setSandBoxMode: SandBoxMode => Unit,
     setSpamCheck: SpamCheck => Unit,
-    toJSON: () => AnonBcc
+    toJSON: () => typings.sendgrid.anon.Bcc
   ): MailSettings = {
     val __obj = js.Dynamic.literal(getBcc = js.Any.fromFunction0(getBcc), getBypassListManagement = js.Any.fromFunction0(getBypassListManagement), getFooter = js.Any.fromFunction0(getFooter), getSandBoxMode = js.Any.fromFunction0(getSandBoxMode), getSpamCheck = js.Any.fromFunction0(getSpamCheck), setBcc = js.Any.fromFunction1(setBcc), setBypassListManagement = js.Any.fromFunction1(setBypassListManagement), setFooter = js.Any.fromFunction1(setFooter), setSandBoxMode = js.Any.fromFunction1(setSandBoxMode), setSpamCheck = js.Any.fromFunction1(setSpamCheck), toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[MailSettings]

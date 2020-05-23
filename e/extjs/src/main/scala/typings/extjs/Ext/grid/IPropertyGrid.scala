@@ -10,8 +10,8 @@ trait IPropertyGrid extends IPanel {
   /** [Config Option] (Object) */
   var customRenderers: js.UndefOr[js.Any] = js.undefined
   /** [Method] Gets the source data object containing the property data
-  		* @returns Object The data object.
-  		*/
+    * @returns Object The data object.
+    */
   var getSource: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Boolean) */
   var inferTypes: js.UndefOr[Boolean] = js.undefined
@@ -22,14 +22,14 @@ trait IPropertyGrid extends IPanel {
   /** [Config Option] (Object) */
   var propertyNames: js.UndefOr[js.Any] = js.undefined
   /** [Method] Removes a property from the grid
-  		* @param prop String The name of the property to remove.
-  		*/
+    * @param prop String The name of the property to remove.
+    */
   var removeProperty: js.UndefOr[js.Function1[/* prop */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of a property
-  		* @param prop String The name of the property to set.
-  		* @param value Object The value to test.
-  		* @param create Boolean true to create the property if it doesn't already exist.
-  		*/
+    * @param prop String The name of the property to set.
+    * @param value Object The value to test.
+    * @param create Boolean true to create the property if it doesn't already exist.
+    */
   var setProperty: js.UndefOr[
     js.Function3[
       /* prop */ js.UndefOr[String], 
@@ -39,9 +39,9 @@ trait IPropertyGrid extends IPanel {
     ]
   ] = js.undefined
   /** [Method] Sets the source data object containing the property data
-  		* @param source Object The data object.
-  		* @param sourceConfig Object A new object. If this argument is not passed the current configuration will be re-used. To reset the config, pass null or an empty object literal.
-  		*/
+    * @param source Object The data object.
+    * @param sourceConfig Object A new object. If this argument is not passed the current configuration will be re-used. To reset the config, pass null or an empty object literal.
+    */
   var setSource: js.UndefOr[
     js.Function2[/* source */ js.UndefOr[js.Any], /* sourceConfig */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
@@ -76,7 +76,7 @@ object IPropertyGrid {
     if (customEditors != null) __obj.updateDynamic("customEditors")(customEditors.asInstanceOf[js.Any])
     if (customRenderers != null) __obj.updateDynamic("customRenderers")(customRenderers.asInstanceOf[js.Any])
     if (getSource != null) __obj.updateDynamic("getSource")(js.Any.fromFunction0(getSource))
-    if (!js.isUndefined(inferTypes)) __obj.updateDynamic("inferTypes")(inferTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(inferTypes)) __obj.updateDynamic("inferTypes")(inferTypes.get.asInstanceOf[js.Any])
     if (nameColumnWidth != null) __obj.updateDynamic("nameColumnWidth")(nameColumnWidth.asInstanceOf[js.Any])
     if (nameField != null) __obj.updateDynamic("nameField")(nameField.asInstanceOf[js.Any])
     if (propertyNames != null) __obj.updateDynamic("propertyNames")(propertyNames.asInstanceOf[js.Any])

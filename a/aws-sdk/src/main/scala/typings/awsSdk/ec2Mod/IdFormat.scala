@@ -22,15 +22,11 @@ trait IdFormat extends js.Object {
 
 object IdFormat {
   @scala.inline
-  def apply(
-    Deadline: DateTime = null,
-    Resource: String = null,
-    UseLongIds: js.UndefOr[scala.Boolean] = js.undefined
-  ): IdFormat = {
+  def apply(Deadline: DateTime = null, Resource: String = null, UseLongIds: js.UndefOr[Boolean] = js.undefined): IdFormat = {
     val __obj = js.Dynamic.literal()
     if (Deadline != null) __obj.updateDynamic("Deadline")(Deadline.asInstanceOf[js.Any])
     if (Resource != null) __obj.updateDynamic("Resource")(Resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseLongIds)) __obj.updateDynamic("UseLongIds")(UseLongIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseLongIds)) __obj.updateDynamic("UseLongIds")(UseLongIds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdFormat]
   }
 }

@@ -1,14 +1,14 @@
 package typings.tablesorter.pagerConfigurationMod
 
+import typings.jquery.JQuery.AjaxSettings
+import typings.jquery.JQuery.Selector
+import typings.jquery.JQuery.jqXHR
 import typings.jquery.JQueryAjaxSettings
-import typings.jquery.JQuery_.AjaxSettings
-import typings.jquery.JQuery_.Selector
-import typings.jquery.JQuery_.jqXHR
 import typings.tablesorter.ajaxDataProcessorMod.AjaxDataProcessor
 import typings.tablesorter.ajaxErrorHandlerMod.AjaxErrorHandler
 import typings.tablesorter.ajaxUrlProcessorMod.AjaxUrlProcessor
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.pageSizeMod.PageSize
 import typings.tablesorter.pagerDataPartMod.PagerDataPart
 import typings.tablesorter.pagerInitialRowsMod.PagerInitialRows
@@ -192,7 +192,7 @@ object PagerConfiguration {
     fixedHeight: js.UndefOr[Boolean] = js.undefined,
     initialRows: PagerInitialRows = null,
     output: String | PagerOutputProcessor[TElement] = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     pageReset: Double | Boolean = null,
     processAjaxOnInit: js.UndefOr[Boolean] = js.undefined,
     removeRows: js.UndefOr[Boolean] = js.undefined,
@@ -207,7 +207,7 @@ object PagerConfiguration {
     if (ajaxProcessing != null) __obj.updateDynamic("ajaxProcessing")(js.Any.fromFunction3(ajaxProcessing))
     if (ajaxUrl != null) __obj.updateDynamic("ajaxUrl")(ajaxUrl.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(countChildRows)) __obj.updateDynamic("countChildRows")(countChildRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(countChildRows)) __obj.updateDynamic("countChildRows")(countChildRows.get.asInstanceOf[js.Any])
     if (cssDisabled != null) __obj.updateDynamic("cssDisabled")(cssDisabled.asInstanceOf[js.Any])
     if (cssErrorRow != null) __obj.updateDynamic("cssErrorRow")(cssErrorRow.asInstanceOf[js.Any])
     if (cssFirst != null) __obj.updateDynamic("cssFirst")(cssFirst.asInstanceOf[js.Any])
@@ -218,17 +218,17 @@ object PagerConfiguration {
     if (cssPageSize != null) __obj.updateDynamic("cssPageSize")(cssPageSize.asInstanceOf[js.Any])
     if (cssPrev != null) __obj.updateDynamic("cssPrev")(cssPrev.asInstanceOf[js.Any])
     if (customAjaxUrl != null) __obj.updateDynamic("customAjaxUrl")(js.Any.fromFunction2(customAjaxUrl))
-    if (!js.isUndefined(fixedHeight)) __obj.updateDynamic("fixedHeight")(fixedHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeight)) __obj.updateDynamic("fixedHeight")(fixedHeight.get.asInstanceOf[js.Any])
     if (initialRows != null) __obj.updateDynamic("initialRows")(initialRows.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (pageReset != null) __obj.updateDynamic("pageReset")(pageReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(processAjaxOnInit)) __obj.updateDynamic("processAjaxOnInit")(processAjaxOnInit.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeRows)) __obj.updateDynamic("removeRows")(removeRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(savePages)) __obj.updateDynamic("savePages")(savePages.asInstanceOf[js.Any])
+    if (!js.isUndefined(processAjaxOnInit)) __obj.updateDynamic("processAjaxOnInit")(processAjaxOnInit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeRows)) __obj.updateDynamic("removeRows")(removeRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(savePages)) __obj.updateDynamic("savePages")(savePages.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateArrows)) __obj.updateDynamic("updateArrows")(updateArrows.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateArrows)) __obj.updateDynamic("updateArrows")(updateArrows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerConfiguration[TElement]]
   }
 }

@@ -1,13 +1,12 @@
 package typings.reduxFirstRouter.mod
 
-import typings.reduxFirstRouter.AnonParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Router[TState] extends js.Object {
   def getActionForPathAndParams(path: String): Nullable[js.Object]
-  def getPathAndParamsForState(state: TState): AnonParams
+  def getPathAndParamsForState(state: TState): typings.reduxFirstRouter.anon.Params
   def getStateForAction(action: js.Object, state: Nullable[TState]): Nullable[TState]
   def getStateForActionOriginal(action: js.Object, state: Nullable[TState]): Nullable[TState]
 }
@@ -16,7 +15,7 @@ object Router {
   @scala.inline
   def apply[TState](
     getActionForPathAndParams: String => Nullable[js.Object],
-    getPathAndParamsForState: TState => AnonParams,
+    getPathAndParamsForState: TState => typings.reduxFirstRouter.anon.Params,
     getStateForAction: (js.Object, Nullable[TState]) => Nullable[TState],
     getStateForActionOriginal: (js.Object, Nullable[TState]) => Nullable[TState]
   ): Router[TState] = {

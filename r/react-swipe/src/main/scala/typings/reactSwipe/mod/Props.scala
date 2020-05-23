@@ -16,14 +16,14 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(
-    childCount: Int | Double = null,
+    childCount: js.UndefOr[Double] = js.undefined,
     className: String = null,
     id: String = null,
     style: Style = null,
     swipeOptions: SwipeOptions = null
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (childCount != null) __obj.updateDynamic("childCount")(childCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(childCount)) __obj.updateDynamic("childCount")(childCount.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

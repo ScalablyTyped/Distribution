@@ -27,15 +27,15 @@ object RowStatus {
     entityName: String = null,
     errors: js.Array[String] = null,
     persisted: js.UndefOr[Boolean] = js.undefined,
-    rowNumber: Int | Double = null
+    rowNumber: js.UndefOr[Double] = js.undefined
   ): RowStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(changed)) __obj.updateDynamic("changed")(changed.asInstanceOf[js.Any])
+    if (!js.isUndefined(changed)) __obj.updateDynamic("changed")(changed.get.asInstanceOf[js.Any])
     if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
     if (entityName != null) __obj.updateDynamic("entityName")(entityName.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (!js.isUndefined(persisted)) __obj.updateDynamic("persisted")(persisted.asInstanceOf[js.Any])
-    if (rowNumber != null) __obj.updateDynamic("rowNumber")(rowNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(persisted)) __obj.updateDynamic("persisted")(persisted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowNumber)) __obj.updateDynamic("rowNumber")(rowNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowStatus]
   }
 }

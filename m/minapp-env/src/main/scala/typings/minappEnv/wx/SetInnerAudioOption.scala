@@ -29,8 +29,8 @@ object SetInnerAudioOption {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(mixWithOther)) __obj.updateDynamic("mixWithOther")(mixWithOther.asInstanceOf[js.Any])
-    if (!js.isUndefined(obeyMuteSwitch)) __obj.updateDynamic("obeyMuteSwitch")(obeyMuteSwitch.asInstanceOf[js.Any])
+    if (!js.isUndefined(mixWithOther)) __obj.updateDynamic("mixWithOther")(mixWithOther.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(obeyMuteSwitch)) __obj.updateDynamic("obeyMuteSwitch")(obeyMuteSwitch.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[SetInnerAudioOption]
   }

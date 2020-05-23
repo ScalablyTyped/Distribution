@@ -29,12 +29,12 @@ object ListAssessmentRunAgentsRequest {
   def apply(
     assessmentRunArn: Arn,
     filter: AgentFilter = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[ListMaxResults] = js.undefined,
     nextToken: PaginationToken = null
   ): ListAssessmentRunAgentsRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArn = assessmentRunArn.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssessmentRunAgentsRequest]
   }

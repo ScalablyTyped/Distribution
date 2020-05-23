@@ -26,12 +26,12 @@ object P2POptions {
   @scala.inline
   def apply(
     autoUpgrade: js.UndefOr[Boolean] = js.undefined,
-    numClients: Int | Double = null,
+    numClients: js.UndefOr[Double] = js.undefined,
     peerOpts: PeerOpts = null
   ): P2POptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade.asInstanceOf[js.Any])
-    if (numClients != null) __obj.updateDynamic("numClients")(numClients.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numClients)) __obj.updateDynamic("numClients")(numClients.get.asInstanceOf[js.Any])
     if (peerOpts != null) __obj.updateDynamic("peerOpts")(peerOpts.asInstanceOf[js.Any])
     __obj.asInstanceOf[P2POptions]
   }

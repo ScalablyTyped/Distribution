@@ -27,14 +27,14 @@ object PublicKeyCredentialRequestOptions {
     allowCredentials: js.Array[PublicKeyCredentialDescriptor] = null,
     extensions: AuthenticationExtensionsClientInputs = null,
     rpId: String = null,
-    timeout: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
     userVerification: required | preferred | discouraged = null
   ): PublicKeyCredentialRequestOptions = {
     val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any])
     if (allowCredentials != null) __obj.updateDynamic("allowCredentials")(allowCredentials.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (rpId != null) __obj.updateDynamic("rpId")(rpId.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (userVerification != null) __obj.updateDynamic("userVerification")(userVerification.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialRequestOptions]
   }

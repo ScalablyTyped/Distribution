@@ -115,7 +115,7 @@ object AnnotationsOptions {
     tunnel: AnnotationsTunnelOptions = null,
     verticalLine: AnnotationsVerticalLineOptions = null,
     visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): AnnotationsOptions = {
     val __obj = js.Dynamic.literal()
     if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions.asInstanceOf[js.Any])
@@ -134,8 +134,8 @@ object AnnotationsOptions {
     if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
     if (tunnel != null) __obj.updateDynamic("tunnel")(tunnel.asInstanceOf[js.Any])
     if (verticalLine != null) __obj.updateDynamic("verticalLine")(verticalLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsOptions]
   }
 }

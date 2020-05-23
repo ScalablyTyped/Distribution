@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object CryptographicPadding extends js.Object {
   /** Use the Probabilistic Signature Scheme (PSS) scheme. */
   @js.native
   sealed trait rsaPss extends CryptographicPadding
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CryptographicPadding with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object rsaOaep extends TopLevel[rsaOaep with Double]
-  
-  /* 2 */ @js.native
-  object rsaPkcs1V15 extends TopLevel[rsaPkcs1V15 with Double]
-  
-  /* 3 */ @js.native
-  object rsaPss extends TopLevel[rsaPss with Double]
   
 }
 

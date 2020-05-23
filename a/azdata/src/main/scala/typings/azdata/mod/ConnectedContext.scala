@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait ConnectedContext extends js.Object {
   /**
-  		 * The connection information for the selected object.
-  		 * Note that the connection is not guaranteed to be in a connected
-  		 * state on click.
-  		 */
+    * The connection information for the selected object.
+    * Note that the connection is not guaranteed to be in a connected
+    * state on click.
+    */
   var connectionProfile: IConnectionProfile
 }
 

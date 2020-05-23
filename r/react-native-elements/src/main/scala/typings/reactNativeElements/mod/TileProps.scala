@@ -6,7 +6,7 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.PartialImageProps
+import typings.reactNativeElements.anon.PartialImageProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,41 +98,41 @@ object TileProps {
   def apply(
     imageSrc: ImageURISource | String | Double,
     ImageComponent: ComponentClass[js.Object, ComponentState] = null,
-    activeOpacity: Int | Double = null,
+    activeOpacity: js.UndefOr[Double] = js.undefined,
     caption: String = null,
-    captionStyle: StyleProp[TextStyle] = null,
-    containerStyle: StyleProp[ViewStyle] = null,
-    contentContainerStyle: StyleProp[ViewStyle] = null,
+    captionStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
+    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    contentContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     featured: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     icon: IconObject = null,
-    iconContainerStyle: StyleProp[ViewStyle] = null,
-    imageContainerStyle: StyleProp[ViewStyle] = null,
+    iconContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    imageContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     imageProps: PartialImageProps = null,
     onPress: () => Unit = null,
-    overlayContainerStyle: StyleProp[ViewStyle] = null,
+    overlayContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     title: String = null,
-    titleStyle: StyleProp[TextStyle] = null,
-    width: Int | Double = null
+    titleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
   ): TileProps = {
     val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
     if (ImageComponent != null) __obj.updateDynamic("ImageComponent")(ImageComponent.asInstanceOf[js.Any])
-    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeOpacity)) __obj.updateDynamic("activeOpacity")(activeOpacity.get.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (captionStyle != null) __obj.updateDynamic("captionStyle")(captionStyle.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(featured)) __obj.updateDynamic("featured")(featured.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(captionStyle)) __obj.updateDynamic("captionStyle")(captionStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentContainerStyle)) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(featured)) __obj.updateDynamic("featured")(featured.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconContainerStyle != null) __obj.updateDynamic("iconContainerStyle")(iconContainerStyle.asInstanceOf[js.Any])
-    if (imageContainerStyle != null) __obj.updateDynamic("imageContainerStyle")(imageContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconContainerStyle)) __obj.updateDynamic("iconContainerStyle")(iconContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageContainerStyle)) __obj.updateDynamic("imageContainerStyle")(imageContainerStyle.asInstanceOf[js.Any])
     if (imageProps != null) __obj.updateDynamic("imageProps")(imageProps.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (overlayContainerStyle != null) __obj.updateDynamic("overlayContainerStyle")(overlayContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayContainerStyle)) __obj.updateDynamic("overlayContainerStyle")(overlayContainerStyle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleStyle)) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileProps]
   }
 }

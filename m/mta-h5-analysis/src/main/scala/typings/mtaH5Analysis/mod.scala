@@ -1,6 +1,7 @@
 package typings.mtaH5Analysis
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mtaH5Analysis.anon.AutoReport
 import typings.mtaH5Analysis.mtaH5AnalysisNumbers.`0`
 import typings.mtaH5Analysis.mtaH5AnalysisNumbers.`1`
 import scala.scalajs.js
@@ -14,7 +15,7 @@ object mod extends js.Object {
   def clickShare(channelId: String): Unit = js.native
   def clickStat(`type`: String): Unit = js.native
   def clickStat(`type`: String, params: StringDictionary[js.Any]): Unit = js.native
-  def init(params: AnonAutoReport): Unit = js.native
+  def init(params: AutoReport): Unit = js.native
   def pgv(): Unit = js.native
   @js.native
   object conf extends js.Object {

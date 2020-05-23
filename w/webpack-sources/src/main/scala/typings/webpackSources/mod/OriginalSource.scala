@@ -2,8 +2,8 @@ package typings.webpackSources.mod
 
 import typings.sourceMap.mod.RawSourceMap
 import typings.sourceMap.mod.SourceNode
-import typings.webpackSources.AnonColumns
-import typings.webpackSources.AnonMap
+import typings.webpackSources.anon.Columns
+import typings.webpackSources.anon.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,9 @@ class OriginalSource protected ()
   var _name: String = js.native
   var _value: String = js.native
   /* CompleteClass */
-  override def map(options: AnonColumns): RawSourceMap = js.native
-  def node(options: AnonColumns): SourceNode = js.native
+  override def map(options: Columns): RawSourceMap = js.native
+  def node(options: Columns): SourceNode = js.native
   /* CompleteClass */
-  override def sourceAndMap(options: AnonColumns): AnonMap = js.native
+  override def sourceAndMap(options: Columns): Map = js.native
 }
 

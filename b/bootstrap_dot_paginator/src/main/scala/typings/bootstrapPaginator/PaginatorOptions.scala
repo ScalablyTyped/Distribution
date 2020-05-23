@@ -42,37 +42,37 @@ object PaginatorOptions {
   @scala.inline
   def apply(
     alignment: String = null,
-    bootstrapMajorVersion: Int | Double = null,
+    bootstrapMajorVersion: js.UndefOr[Double] = js.undefined,
     bootstrapTooltipOptions: js.Object = null,
-    currentPage: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
     itemContainerClass: (/* type */ String, /* page */ Double, /* current */ Double) => String = null,
     itemTexts: (/* type */ String, /* page */ Double, /* current */ Double) => String = null,
-    numberOfPages: Int | Double = null,
+    numberOfPages: js.UndefOr[Double] = js.undefined,
     onPageChanged: (/* event */ js.Any, /* originalEvent */ js.Any, /* type */ String, /* page */ Double) => Unit = null,
     onPageClicked: (/* event */ js.Any, /* originalEvent */ js.Any, /* type */ String, /* page */ Double) => Unit = null,
     pageUrl: (/* type */ String, /* page */ Double, /* current */ Double) => String = null,
     shouldShowPage: js.UndefOr[Boolean] = js.undefined,
     size: String = null,
     tooltipTitles: (/* type */ String, /* page */ Double, /* current */ Double) => String = null,
-    totalPages: Int | Double = null,
+    totalPages: js.UndefOr[Double] = js.undefined,
     useBootstrapTooltip: js.UndefOr[Boolean] = js.undefined
   ): PaginatorOptions = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (bootstrapMajorVersion != null) __obj.updateDynamic("bootstrapMajorVersion")(bootstrapMajorVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(bootstrapMajorVersion)) __obj.updateDynamic("bootstrapMajorVersion")(bootstrapMajorVersion.get.asInstanceOf[js.Any])
     if (bootstrapTooltipOptions != null) __obj.updateDynamic("bootstrapTooltipOptions")(bootstrapTooltipOptions.asInstanceOf[js.Any])
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
     if (itemContainerClass != null) __obj.updateDynamic("itemContainerClass")(js.Any.fromFunction3(itemContainerClass))
     if (itemTexts != null) __obj.updateDynamic("itemTexts")(js.Any.fromFunction3(itemTexts))
-    if (numberOfPages != null) __obj.updateDynamic("numberOfPages")(numberOfPages.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfPages)) __obj.updateDynamic("numberOfPages")(numberOfPages.get.asInstanceOf[js.Any])
     if (onPageChanged != null) __obj.updateDynamic("onPageChanged")(js.Any.fromFunction4(onPageChanged))
     if (onPageClicked != null) __obj.updateDynamic("onPageClicked")(js.Any.fromFunction4(onPageClicked))
     if (pageUrl != null) __obj.updateDynamic("pageUrl")(js.Any.fromFunction3(pageUrl))
-    if (!js.isUndefined(shouldShowPage)) __obj.updateDynamic("shouldShowPage")(shouldShowPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldShowPage)) __obj.updateDynamic("shouldShowPage")(shouldShowPage.get.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (tooltipTitles != null) __obj.updateDynamic("tooltipTitles")(js.Any.fromFunction3(tooltipTitles))
-    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBootstrapTooltip)) __obj.updateDynamic("useBootstrapTooltip")(useBootstrapTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalPages)) __obj.updateDynamic("totalPages")(totalPages.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBootstrapTooltip)) __obj.updateDynamic("useBootstrapTooltip")(useBootstrapTooltip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginatorOptions]
   }
 }

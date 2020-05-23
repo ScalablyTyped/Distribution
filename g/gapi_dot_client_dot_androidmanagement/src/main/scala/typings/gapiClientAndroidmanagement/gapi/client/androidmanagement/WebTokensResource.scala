@@ -1,19 +1,19 @@
 package typings.gapiClientAndroidmanagement.gapi.client.androidmanagement
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAndroidmanagement.AnonKey
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientAndroidmanagement.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WebTokensResource extends js.Object {
   /** Creates a web token to access an embeddable managed Google Play web UI for a given enterprise. */
-  def create(request: AnonKey): Request_[WebToken]
+  def create(request: Key): Request[WebToken]
 }
 
 object WebTokensResource {
   @scala.inline
-  def apply(create: AnonKey => Request_[WebToken]): WebTokensResource = {
+  def apply(create: Key => Request[WebToken]): WebTokensResource = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[WebTokensResource]
   }

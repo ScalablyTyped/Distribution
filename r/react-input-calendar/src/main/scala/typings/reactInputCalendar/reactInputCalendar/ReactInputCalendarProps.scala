@@ -2,7 +2,7 @@ package typings.reactInputCalendar.reactInputCalendar
 
 import typings.react.mod.SyntheticEvent
 import typings.std.Date
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +64,7 @@ trait ReactInputCalendarProps extends js.Object {
     */
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ SyntheticEvent[ReactInputCalendar, Event_], 
+      /* event */ SyntheticEvent[ReactInputCalendar, Event], 
       /* computableDate */ String, 
       Unit
     ]
@@ -76,7 +76,7 @@ trait ReactInputCalendarProps extends js.Object {
   /**
     * Set a function that will be triggered when the input field is focused.
     */
-  var onFocus: js.UndefOr[js.Function1[/* event */ SyntheticEvent[ReactInputCalendar, Event_], Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* event */ SyntheticEvent[ReactInputCalendar, Event], Unit]] = js.undefined
   /**
     * Setting this value to true makes the calendar widget open when the iput field is focused.
     */
@@ -99,28 +99,28 @@ object ReactInputCalendarProps {
     inputFieldId: String = null,
     maxDate: String | Date = null,
     minDate: String | Date = null,
-    minView: Int | Double = null,
-    onBlur: (/* event */ SyntheticEvent[ReactInputCalendar, Event_], /* computableDate */ String) => Unit = null,
+    minView: js.UndefOr[Double] = js.undefined,
+    onBlur: (/* event */ SyntheticEvent[ReactInputCalendar, Event], /* computableDate */ String) => Unit = null,
     onChange: /* computableDate */ String => Unit = null,
-    onFocus: /* event */ SyntheticEvent[ReactInputCalendar, Event_] => Unit = null,
+    onFocus: /* event */ SyntheticEvent[ReactInputCalendar, Event] => Unit = null,
     openOnInputFocus: js.UndefOr[Boolean] = js.undefined,
     placeholder: String = null
   ): ReactInputCalendarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.get.asInstanceOf[js.Any])
     if (computableFormat != null) __obj.updateDynamic("computableFormat")(computableFormat.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (inputFieldClass != null) __obj.updateDynamic("inputFieldClass")(inputFieldClass.asInstanceOf[js.Any])
     if (inputFieldId != null) __obj.updateDynamic("inputFieldId")(inputFieldId.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minView != null) __obj.updateDynamic("minView")(minView.asInstanceOf[js.Any])
+    if (!js.isUndefined(minView)) __obj.updateDynamic("minView")(minView.get.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (!js.isUndefined(openOnInputFocus)) __obj.updateDynamic("openOnInputFocus")(openOnInputFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(openOnInputFocus)) __obj.updateDynamic("openOnInputFocus")(openOnInputFocus.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactInputCalendarProps]
   }

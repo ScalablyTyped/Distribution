@@ -12,9 +12,9 @@ trait Data extends js.Object {
 
 object Data {
   @scala.inline
-  def apply(lnglat: LocationValue, style: Int | Double = null): Data = {
+  def apply(lnglat: LocationValue, style: js.UndefOr[Double] = js.undefined): Data = {
     val __obj = js.Dynamic.literal(lnglat = lnglat.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
 }

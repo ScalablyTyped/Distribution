@@ -1,6 +1,6 @@
 package typings.koaMulter.mod
 
-import typings.koaMulter.AnonFieldNameSize
+import typings.koaMulter.anon.FieldNameSize
 import typings.node.httpMod.IncomingMessage
 import typings.std.Error
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait Options extends js.Object {
     * An object specifying the size limits of the following optional properties. This object is passed to busboy
     * directly, and the details of properties can be found on https://github.com/mscdex/busboy#busboy-methods
     */
-  var limits: js.UndefOr[AnonFieldNameSize] = js.undefined
+  var limits: js.UndefOr[FieldNameSize] = js.undefined
   /** The storage engine to use for uploaded files. */
   var storage: js.UndefOr[StorageEngine] = js.undefined
 }
@@ -33,7 +33,7 @@ object Options {
   def apply(
     dest: String = null,
     fileFilter: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* acceptFile */ Boolean, Unit]) => Unit = null,
-    limits: AnonFieldNameSize = null,
+    limits: FieldNameSize = null,
     storage: StorageEngine = null
   ): Options = {
     val __obj = js.Dynamic.literal()

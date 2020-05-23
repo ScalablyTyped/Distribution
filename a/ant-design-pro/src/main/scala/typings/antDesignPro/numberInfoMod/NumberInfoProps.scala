@@ -23,22 +23,22 @@ trait NumberInfoProps extends js.Object {
 object NumberInfoProps {
   @scala.inline
   def apply(
-    gap: Int | Double = null,
+    gap: js.UndefOr[Double] = js.undefined,
     status: up | down = null,
     style: CSSProperties = null,
     subTitle: ReactNode | String = null,
-    subTotal: Int | Double = null,
+    subTotal: js.UndefOr[Double] = js.undefined,
     suffix: String = null,
     theme: String = null,
     title: ReactNode | String = null,
     total: ReactNode | String = null
   ): NumberInfoProps = {
     val __obj = js.Dynamic.literal()
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
-    if (subTotal != null) __obj.updateDynamic("subTotal")(subTotal.asInstanceOf[js.Any])
+    if (!js.isUndefined(subTotal)) __obj.updateDynamic("subTotal")(subTotal.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

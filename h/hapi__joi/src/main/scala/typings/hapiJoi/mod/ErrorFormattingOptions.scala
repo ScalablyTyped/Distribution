@@ -1,5 +1,6 @@
 package typings.hapiJoi.mod
 
+import typings.hapiJoi.anon.Array
 import typings.hapiJoi.hapiJoiBooleans.`false`
 import typings.hapiJoi.hapiJoiStrings.key
 import typings.hapiJoi.hapiJoiStrings.path
@@ -41,11 +42,11 @@ trait ErrorFormattingOptions extends js.Object {
     */
   var stack: js.UndefOr[Boolean] = js.undefined
   /**
-    * if true, array values in error messages are wrapped in [].
-    *
-    * @default true
+    * overrides the way values are wrapped (e.g. `[]` arround arrays, `""` around labels).
+    * Each key can be set to a string with one (same character before and after the value) or two characters (first character
+    * before and second character after), or `false` to disable wrapping.
     */
-  var wrapArrays: js.UndefOr[Boolean] = js.undefined
+  var wrap: js.UndefOr[Array] = js.undefined
 }
 
 object ErrorFormattingOptions {
@@ -56,15 +57,15 @@ object ErrorFormattingOptions {
     language: /* keyof @hapi/joi.@hapi/joi.LanguageMessages */ String = null,
     render: js.UndefOr[Boolean] = js.undefined,
     stack: js.UndefOr[Boolean] = js.undefined,
-    wrapArrays: js.UndefOr[Boolean] = js.undefined
+    wrap: Array = null
   ): ErrorFormattingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(escapeHtml)) __obj.updateDynamic("escapeHtml")(escapeHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeHtml)) __obj.updateDynamic("escapeHtml")(escapeHtml.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(render)) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapArrays)) __obj.updateDynamic("wrapArrays")(wrapArrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(render)) __obj.updateDynamic("render")(render.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.get.asInstanceOf[js.Any])
+    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorFormattingOptions]
   }
 }

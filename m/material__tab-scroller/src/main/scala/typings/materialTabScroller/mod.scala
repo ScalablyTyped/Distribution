@@ -1,7 +1,10 @@
 package typings.materialTabScroller
 
 import typings.materialTabScroller.adapterMod.MDCTabScrollerAdapter
-import typings.std.Document_
+import typings.materialTabScroller.anon.ANIMATING
+import typings.materialTabScroller.anon.AREASELECTOR
+import typings.materialTabScroller.anon.PartialMDCTabScrollerAdap
+import typings.std.Document
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,9 +32,9 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object MDCTabScrollerFoundation extends js.Object {
-    val cssClasses: AnonANIMATING = js.native
+    val cssClasses: ANIMATING = js.native
     val defaultAdapter: MDCTabScrollerAdapter = js.native
-    val strings: AnonAREASELECTOR = js.native
+    val strings: AREASELECTOR = js.native
   }
   
   /**
@@ -71,8 +74,8 @@ object mod extends js.Object {
   
   @js.native
   object util extends js.Object {
-    def computeHorizontalScrollbarHeight(documentObj: Document_): Double = js.native
-    def computeHorizontalScrollbarHeight(documentObj: Document_, shouldCacheResult: Boolean): Double = js.native
+    def computeHorizontalScrollbarHeight(documentObj: Document): Double = js.native
+    def computeHorizontalScrollbarHeight(documentObj: Document, shouldCacheResult: Boolean): Double = js.native
   }
   
 }

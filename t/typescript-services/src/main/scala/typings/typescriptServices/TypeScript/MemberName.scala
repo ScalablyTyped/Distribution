@@ -4,24 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.MemberName")
-@js.native
-class MemberName () extends js.Object {
-  var prefix: String = js.native
-  var suffix: String = js.native
-  def isArray(): Boolean = js.native
-  def isMarker(): Boolean = js.native
-  def isString(): Boolean = js.native
+trait MemberName extends js.Object {
+  var prefix: String
+  var suffix: String
+  def isArray(): Boolean
+  def isMarker(): Boolean
+  def isString(): Boolean
 }
 
-/* static members */
-@JSGlobal("TypeScript.MemberName")
-@js.native
-object MemberName extends js.Object {
-  def create(entry: MemberName, prefix: String, suffix: String): MemberName = js.native
-  def create(text: String): MemberName = js.native
-  def memberNameToString(memberName: MemberName): String = js.native
-  def memberNameToString(memberName: MemberName, markerInfo: js.Array[Double]): String = js.native
-  def memberNameToString(memberName: MemberName, markerInfo: js.Array[Double], markerBaseLength: Double): String = js.native
+object MemberName {
+  @scala.inline
+  def apply(
+    isArray: () => Boolean,
+    isMarker: () => Boolean,
+    isString: () => Boolean,
+    prefix: String,
+    suffix: String
+  ): MemberName = {
+    val __obj = js.Dynamic.literal(isArray = js.Any.fromFunction0(isArray), isMarker = js.Any.fromFunction0(isMarker), isString = js.Any.fromFunction0(isString), prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MemberName]
+  }
 }
 

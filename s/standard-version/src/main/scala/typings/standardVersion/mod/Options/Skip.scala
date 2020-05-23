@@ -21,10 +21,10 @@ object Skip {
     tag: js.UndefOr[Boolean] = js.undefined
   ): Skip = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bump)) __obj.updateDynamic("bump")(bump.asInstanceOf[js.Any])
-    if (!js.isUndefined(changelog)) __obj.updateDynamic("changelog")(changelog.asInstanceOf[js.Any])
-    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
-    if (!js.isUndefined(tag)) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (!js.isUndefined(bump)) __obj.updateDynamic("bump")(bump.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(changelog)) __obj.updateDynamic("changelog")(changelog.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tag)) __obj.updateDynamic("tag")(tag.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Skip]
   }
 }

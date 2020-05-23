@@ -1,9 +1,9 @@
 package typings.cleanCss.mod
 
-import typings.cleanCss.AnonAdjacentSpace
-import typings.cleanCss.AnonBackgroundClipMerging
-import typings.cleanCss.AnonCh
-import typings.cleanCss.AnonOpacity
+import typings.cleanCss.anon.AdjacentSpace
+import typings.cleanCss.anon.BackgroundClipMerging
+import typings.cleanCss.anon.Ch
+import typings.cleanCss.anon.Opacity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,28 +15,28 @@ trait CompatibilityOptions extends js.Object {
   /**
     * A hash of compatibility options related to color
     */
-  var colors: js.UndefOr[AnonOpacity] = js.undefined
+  var colors: js.UndefOr[Opacity] = js.undefined
   /**
     * A hash of properties that can be set with compatibility
     */
-  var properties: js.UndefOr[AnonBackgroundClipMerging] = js.undefined
+  var properties: js.UndefOr[BackgroundClipMerging] = js.undefined
   /**
     * A hash of options related to compatibility of selectors
     */
-  var selectors: js.UndefOr[AnonAdjacentSpace] = js.undefined
+  var selectors: js.UndefOr[AdjacentSpace] = js.undefined
   /**
     * A hash of options related to comparability of supported units
     */
-  var units: js.UndefOr[AnonCh] = js.undefined
+  var units: js.UndefOr[Ch] = js.undefined
 }
 
 object CompatibilityOptions {
   @scala.inline
   def apply(
-    colors: AnonOpacity = null,
-    properties: AnonBackgroundClipMerging = null,
-    selectors: AnonAdjacentSpace = null,
-    units: AnonCh = null
+    colors: Opacity = null,
+    properties: BackgroundClipMerging = null,
+    selectors: AdjacentSpace = null,
+    units: Ch = null
   ): CompatibilityOptions = {
     val __obj = js.Dynamic.literal()
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])

@@ -60,7 +60,7 @@ object Metadata {
     description: String = null,
     director: js.Array[String] = null,
     eidr: String = null,
-    endYear: Int | Double = null,
+    endYear: js.UndefOr[Double] = js.undefined,
     episodeNumber: String = null,
     episodesAreUntitled: js.UndefOr[Boolean] = js.undefined,
     genre: js.Array[String] = null,
@@ -81,11 +81,11 @@ object Metadata {
     showCustomId: String = null,
     showTitle: String = null,
     spokenLanguage: String = null,
-    startYear: Int | Double = null,
+    startYear: js.UndefOr[Double] = js.undefined,
     subtitledLanguage: js.Array[String] = null,
     title: String = null,
     tmsId: String = null,
-    totalEpisodesExpected: Int | Double = null,
+    totalEpisodesExpected: js.UndefOr[Double] = js.undefined,
     upc: String = null,
     writer: js.Array[String] = null
   ): Metadata = {
@@ -101,9 +101,9 @@ object Metadata {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (director != null) __obj.updateDynamic("director")(director.asInstanceOf[js.Any])
     if (eidr != null) __obj.updateDynamic("eidr")(eidr.asInstanceOf[js.Any])
-    if (endYear != null) __obj.updateDynamic("endYear")(endYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(endYear)) __obj.updateDynamic("endYear")(endYear.get.asInstanceOf[js.Any])
     if (episodeNumber != null) __obj.updateDynamic("episodeNumber")(episodeNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(episodesAreUntitled)) __obj.updateDynamic("episodesAreUntitled")(episodesAreUntitled.asInstanceOf[js.Any])
+    if (!js.isUndefined(episodesAreUntitled)) __obj.updateDynamic("episodesAreUntitled")(episodesAreUntitled.get.asInstanceOf[js.Any])
     if (genre != null) __obj.updateDynamic("genre")(genre.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (hfa != null) __obj.updateDynamic("hfa")(hfa.asInstanceOf[js.Any])
@@ -122,11 +122,11 @@ object Metadata {
     if (showCustomId != null) __obj.updateDynamic("showCustomId")(showCustomId.asInstanceOf[js.Any])
     if (showTitle != null) __obj.updateDynamic("showTitle")(showTitle.asInstanceOf[js.Any])
     if (spokenLanguage != null) __obj.updateDynamic("spokenLanguage")(spokenLanguage.asInstanceOf[js.Any])
-    if (startYear != null) __obj.updateDynamic("startYear")(startYear.asInstanceOf[js.Any])
+    if (!js.isUndefined(startYear)) __obj.updateDynamic("startYear")(startYear.get.asInstanceOf[js.Any])
     if (subtitledLanguage != null) __obj.updateDynamic("subtitledLanguage")(subtitledLanguage.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (tmsId != null) __obj.updateDynamic("tmsId")(tmsId.asInstanceOf[js.Any])
-    if (totalEpisodesExpected != null) __obj.updateDynamic("totalEpisodesExpected")(totalEpisodesExpected.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalEpisodesExpected)) __obj.updateDynamic("totalEpisodesExpected")(totalEpisodesExpected.get.asInstanceOf[js.Any])
     if (upc != null) __obj.updateDynamic("upc")(upc.asInstanceOf[js.Any])
     if (writer != null) __obj.updateDynamic("writer")(writer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]

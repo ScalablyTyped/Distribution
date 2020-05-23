@@ -30,44 +30,44 @@ trait PatchIssueParams
 object PatchIssueParams {
   @scala.inline
   def apply(
-    StringDictionary: /* customField_ */ StringDictionary[js.Any] = null,
-    actualHours: Int | Double = null,
-    assigneeId: Int | Double = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    actualHours: js.UndefOr[Double] = js.undefined,
+    assigneeId: js.UndefOr[Double] = js.undefined,
     attachmentId: js.Array[Double] = null,
     categoryId: js.Array[Double] = null,
     comment: String = null,
     description: String = null,
     dueDate: String = null,
-    estimatedHours: Int | Double = null,
-    issueTypeId: Int | Double = null,
+    estimatedHours: js.UndefOr[Double] = js.undefined,
+    issueTypeId: js.UndefOr[Double] = js.undefined,
     milestoneId: js.Array[Double] = null,
     notifiedUserId: js.Array[Double] = null,
-    parentIssueId: Int | Double = null,
-    priorityId: Int | Double = null,
-    resolutionId: Int | Double = null,
+    parentIssueId: js.UndefOr[Double] = js.undefined,
+    priorityId: js.UndefOr[Double] = js.undefined,
+    resolutionId: js.UndefOr[Double] = js.undefined,
     startDate: String = null,
-    statusId: Int | Double = null,
+    statusId: js.UndefOr[Double] = js.undefined,
     summary: String = null,
     versionId: js.Array[Double] = null
   ): PatchIssueParams = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (actualHours != null) __obj.updateDynamic("actualHours")(actualHours.asInstanceOf[js.Any])
-    if (assigneeId != null) __obj.updateDynamic("assigneeId")(assigneeId.asInstanceOf[js.Any])
+    if (!js.isUndefined(actualHours)) __obj.updateDynamic("actualHours")(actualHours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(assigneeId)) __obj.updateDynamic("assigneeId")(assigneeId.get.asInstanceOf[js.Any])
     if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
     if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dueDate != null) __obj.updateDynamic("dueDate")(dueDate.asInstanceOf[js.Any])
-    if (estimatedHours != null) __obj.updateDynamic("estimatedHours")(estimatedHours.asInstanceOf[js.Any])
-    if (issueTypeId != null) __obj.updateDynamic("issueTypeId")(issueTypeId.asInstanceOf[js.Any])
+    if (!js.isUndefined(estimatedHours)) __obj.updateDynamic("estimatedHours")(estimatedHours.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(issueTypeId)) __obj.updateDynamic("issueTypeId")(issueTypeId.get.asInstanceOf[js.Any])
     if (milestoneId != null) __obj.updateDynamic("milestoneId")(milestoneId.asInstanceOf[js.Any])
     if (notifiedUserId != null) __obj.updateDynamic("notifiedUserId")(notifiedUserId.asInstanceOf[js.Any])
-    if (parentIssueId != null) __obj.updateDynamic("parentIssueId")(parentIssueId.asInstanceOf[js.Any])
-    if (priorityId != null) __obj.updateDynamic("priorityId")(priorityId.asInstanceOf[js.Any])
-    if (resolutionId != null) __obj.updateDynamic("resolutionId")(resolutionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentIssueId)) __obj.updateDynamic("parentIssueId")(parentIssueId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(priorityId)) __obj.updateDynamic("priorityId")(priorityId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolutionId)) __obj.updateDynamic("resolutionId")(resolutionId.get.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (statusId != null) __obj.updateDynamic("statusId")(statusId.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusId)) __obj.updateDynamic("statusId")(statusId.get.asInstanceOf[js.Any])
     if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchIssueParams]

@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation._
 /** Manages the user layout configuration in {@link setLiveTranscoding}. */
 trait TranscodingUser extends js.Object {
   /**
-    * Transparency of the video frame.
+    * The transparency level of the video frame.
     *
     * The value ranges between 0.0 and 1.0:
     *
     * - 0.0: Completely transparent.
-    * - 1.0: (Default) Opaque.
+    * - 1.0: Opaque.
     */
-  var alpha: js.UndefOr[Double] = js.undefined
+  var alpha: Double
   /**
-    * Height of the video.
-    *
-    * Integer only. The value range is [0,10000], and the default value is 640.
-    */
-  var height: js.UndefOr[Double] = js.undefined
-  /** User ID of the CDN live host. */
-  var uid: js.UndefOr[Double | String] = js.undefined
-  /**
-    * Width of the video.
+    * The height of the video.
     *
     * Integer only. The value range is [0,10000], and the default value is 360.
+    */
+  var height: js.UndefOr[Double] = js.undefined
+  /** The user ID of the CDN live host. */
+  var uid: js.UndefOr[Double | String] = js.undefined
+  /**
+    * The width of the video.
+    *
+    * Integer only. The value range is [0,10000], and the default value is 640.
     */
   var width: js.UndefOr[Double] = js.undefined
   /**
@@ -42,14 +42,14 @@ trait TranscodingUser extends js.Object {
     */
   var y: js.UndefOr[Double] = js.undefined
   /**
-    * Layer position of the video frame.
+    * The layer index of the video frame.
     *
     * Integer only. The value range is [0,100].
     *
     * From v2.3.0, Agora SDK supports setting zOrder as 0.
     *
-    * - 0: (Default) Lowest.
-    * - 100: Highest.
+    * - 0: (Default) Bottom layer.
+    * - 100: Top layer.
     *
     */
   var zOrder: js.UndefOr[Double] = js.undefined
@@ -58,22 +58,21 @@ trait TranscodingUser extends js.Object {
 object TranscodingUser {
   @scala.inline
   def apply(
-    alpha: Int | Double = null,
-    height: Int | Double = null,
+    alpha: Double,
+    height: js.UndefOr[Double] = js.undefined,
     uid: Double | String = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null,
-    zOrder: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined,
+    zOrder: js.UndefOr[Double] = js.undefined
   ): TranscodingUser = {
-    val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (zOrder != null) __obj.updateDynamic("zOrder")(zOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zOrder)) __obj.updateDynamic("zOrder")(zOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranscodingUser]
   }
 }

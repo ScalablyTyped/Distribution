@@ -5,10 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.OnEntryRecordAdded")
-@js.native
-class OnEntryRecordAdded protected () extends IEventArgs {
-  def this(recordKey: Double) = this()
-  var recordKey: Double = js.native
+trait OnEntryRecordAdded extends IEventArgs {
+  var recordKey: Double
+}
+
+object OnEntryRecordAdded {
+  @scala.inline
+  def apply(recordKey: Double): OnEntryRecordAdded = {
+    val __obj = js.Dynamic.literal(recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnEntryRecordAdded]
+  }
 }
 

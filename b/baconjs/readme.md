@@ -1,7 +1,7 @@
 
 # Scala.js typings for baconjs
 
-Typings are for version 3.0.12
+Typings are for version 3.0.13
 
 ## Library description:
 A small functional reactive programming lib for JavaScript.

@@ -25,12 +25,12 @@ object SearchSkillGroupsResponse {
   def apply(
     NextToken: NextToken = null,
     SkillGroups: SkillGroupDataList = null,
-    TotalCount: Int | Double = null
+    TotalCount: js.UndefOr[TotalCount] = js.undefined
   ): SearchSkillGroupsResponse = {
     val __obj = js.Dynamic.literal()
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SkillGroups != null) __obj.updateDynamic("SkillGroups")(SkillGroups.asInstanceOf[js.Any])
-    if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchSkillGroupsResponse]
   }
 }

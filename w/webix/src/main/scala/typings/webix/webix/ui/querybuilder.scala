@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.querybuilder")
 @js.native
-class querybuilder () extends baseview {
+trait querybuilder extends baseview {
   @JSName("config")
   var config_querybuilder: querybuilderConfig = js.native
   var sqlOperators: js.Any = js.native

@@ -1,6 +1,6 @@
 package typings.jestConfig.utilsMod
 
-import typings.jestConfig.AnonFilePath
+import typings.jestConfig.anon.FilePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-config/build/utils", "resolveWithPrefix")
 @js.native
 object resolveWithPrefix extends js.Object {
-  def apply(
-    resolver: js.UndefOr[scala.Nothing],
-    hasFilePathHumanOptionNameOptionNamePrefixRootDir: AnonFilePath
-  ): String = js.native
-  def apply(resolver: String, hasFilePathHumanOptionNameOptionNamePrefixRootDir: AnonFilePath): String = js.native
-  def apply(resolver: Null, hasFilePathHumanOptionNameOptionNamePrefixRootDir: AnonFilePath): String = js.native
+  def apply(resolver: js.UndefOr[Null | String], hasFilePathHumanOptionNameOptionNamePrefixRootDir: FilePath): String = js.native
 }
 

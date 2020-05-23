@@ -17,17 +17,17 @@ trait MessageContextType
 object MessageContextType {
   @scala.inline
   def apply(
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     _package: String = null,
     application: String = null,
-    logLevel: Int | Double = null,
+    logLevel: js.UndefOr[Double] = js.undefined,
     namespace: String = null
   ): MessageContextType = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(logLevel)) __obj.updateDynamic("logLevel")(logLevel.get.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageContextType]
   }

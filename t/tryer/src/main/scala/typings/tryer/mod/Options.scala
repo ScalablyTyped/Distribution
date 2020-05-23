@@ -57,8 +57,8 @@ object Options {
   def apply(
     action: js.Function0[js.Promise[_]] | (js.Function1[/* done */ js.Function0[Unit], _]) = null,
     fail: /* err */ Error => Unit = null,
-    interval: Int | Double = null,
-    limit: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined,
     pass: () => Unit = null,
     until: () => Boolean = null,
     when: () => Boolean = null
@@ -66,8 +66,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (pass != null) __obj.updateDynamic("pass")(js.Any.fromFunction0(pass))
     if (until != null) __obj.updateDynamic("until")(js.Any.fromFunction0(until))
     if (when != null) __obj.updateDynamic("when")(js.Any.fromFunction0(when))

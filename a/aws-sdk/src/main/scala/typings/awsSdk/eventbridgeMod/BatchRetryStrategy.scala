@@ -14,9 +14,9 @@ trait BatchRetryStrategy extends js.Object {
 
 object BatchRetryStrategy {
   @scala.inline
-  def apply(Attempts: Int | Double = null): BatchRetryStrategy = {
+  def apply(Attempts: js.UndefOr[Integer] = js.undefined): BatchRetryStrategy = {
     val __obj = js.Dynamic.literal()
-    if (Attempts != null) __obj.updateDynamic("Attempts")(Attempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(Attempts)) __obj.updateDynamic("Attempts")(Attempts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchRetryStrategy]
   }
 }

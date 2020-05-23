@@ -1,8 +1,8 @@
 package typings.materialUiCore.createPaletteMod
 
-import typings.materialUiCore.PartialTypeAction
-import typings.materialUiCore.PartialTypeBackground
-import typings.materialUiCore.PartialTypeText
+import typings.materialUiCore.anon.PartialTypeAction
+import typings.materialUiCore.anon.PartialTypeBackground
+import typings.materialUiCore.anon.PartialTypeText
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

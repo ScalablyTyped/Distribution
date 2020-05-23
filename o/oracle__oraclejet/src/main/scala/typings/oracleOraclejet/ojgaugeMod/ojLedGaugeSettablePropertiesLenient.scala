@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojgaugeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon8
-import typings.oracleOraclejet.AnonLabelAndValue
-import typings.oracleOraclejet.AnonText
-import typings.oracleOraclejet.AnonTextType
+import typings.oracleOraclejet.anon.LabelAndValue
+import typings.oracleOraclejet.anon.Text
+import typings.oracleOraclejet.anon.TextType
+import typings.oracleOraclejet.anon.`8`
 import typings.oracleOraclejet.ojgaugeMod.ojLedGauge.Threshold
 import typings.oracleOraclejet.oracleOraclejetNumbers.`0`
 import typings.oracleOraclejet.oracleOraclejetNumbers.`180`
@@ -31,18 +31,18 @@ trait ojLedGaugeSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
   var borderColor: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[AnonText] = js.undefined
+  var label: js.UndefOr[Text] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
-  var metricLabel: js.UndefOr[AnonTextType] = js.undefined
+  var metricLabel: js.UndefOr[TextType] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
   var rotation: js.UndefOr[`90` | `180` | `270` | `0`] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
   var svgClassName: js.UndefOr[String] = js.undefined
   var svgStyle: js.UndefOr[js.Object] = js.undefined
   var thresholds: js.UndefOr[js.Array[Threshold]] = js.undefined
-  var tooltip: js.UndefOr[Anon8] = js.undefined
+  var tooltip: js.UndefOr[`8`] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonLabelAndValue] = js.undefined
+  var translations: js.UndefOr[LabelAndValue] = js.undefined
   var `type`: js.UndefOr[arrow | diamond | square | rectangle | triangle | star | human | circle] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
   var visualEffects: js.UndefOr[none | auto] = js.undefined
@@ -51,23 +51,23 @@ trait ojLedGaugeSettablePropertiesLenient
 object ojLedGaugeSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     borderColor: String = null,
     color: String = null,
-    label: AnonText = null,
-    max: Int | Double = null,
-    metricLabel: AnonTextType = null,
-    min: Int | Double = null,
+    label: Text = null,
+    max: js.UndefOr[Double] = js.undefined,
+    metricLabel: TextType = null,
+    min: js.UndefOr[Double] = js.undefined,
     rotation: `90` | `180` | `270` | `0` = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     svgClassName: String = null,
     svgStyle: js.Object = null,
     thresholds: js.Array[Threshold] = null,
-    tooltip: Anon8 = null,
+    tooltip: `8` = null,
     trackResize: on | off = null,
-    translations: AnonLabelAndValue = null,
+    translations: LabelAndValue = null,
     `type`: arrow | diamond | square | rectangle | triangle | star | human | circle = null,
-    value: Int | Double = null,
+    value: js.UndefOr[Double] = js.undefined,
     visualEffects: none | auto = null
   ): ojLedGaugeSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
@@ -75,11 +75,11 @@ object ojLedGaugeSettablePropertiesLenient {
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (metricLabel != null) __obj.updateDynamic("metricLabel")(metricLabel.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
     if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds.asInstanceOf[js.Any])
@@ -87,7 +87,7 @@ object ojLedGaugeSettablePropertiesLenient {
     if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     if (visualEffects != null) __obj.updateDynamic("visualEffects")(visualEffects.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojLedGaugeSettablePropertiesLenient]
   }

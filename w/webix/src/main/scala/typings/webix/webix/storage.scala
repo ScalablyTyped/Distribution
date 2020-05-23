@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ trait storage extends js.Object {
   var session: typings.webix.webix.session
 }
 
-@JSGlobal("webix.storage")
-@js.native
-object storage extends TopLevel[storage]
+object storage {
+  @scala.inline
+  def apply(cookie: cookie, local: local, session: session): storage = {
+    val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
+    __obj.asInstanceOf[storage]
+  }
+}
 

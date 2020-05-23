@@ -1,6 +1,6 @@
 package typings.ranjs.mod.dist
 
-import typings.ranjs.AnonRate
+import typings.ranjs.anon.Rate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Hyperexponential ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Hyperexponential] {
-  def this(parameters: js.Array[AnonRate]) = this()
+  def this(parameters: js.Array[Rate]) = this()
 }
 

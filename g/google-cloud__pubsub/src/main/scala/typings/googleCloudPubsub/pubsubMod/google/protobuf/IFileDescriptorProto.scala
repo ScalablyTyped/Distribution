@@ -36,32 +36,32 @@ trait IFileDescriptorProto extends js.Object {
 object IFileDescriptorProto {
   @scala.inline
   def apply(
-    _package: String = null,
-    dependency: js.Array[String] = null,
-    enumType: js.Array[IEnumDescriptorProto] = null,
-    extension: js.Array[IFieldDescriptorProto] = null,
-    messageType: js.Array[IDescriptorProto] = null,
-    name: String = null,
-    options: IFileOptions = null,
-    publicDependency: js.Array[Double] = null,
-    service: js.Array[IServiceDescriptorProto] = null,
-    sourceCodeInfo: ISourceCodeInfo = null,
-    syntax: String = null,
-    weakDependency: js.Array[Double] = null
+    _package: js.UndefOr[Null | String] = js.undefined,
+    dependency: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    enumType: js.UndefOr[Null | js.Array[IEnumDescriptorProto]] = js.undefined,
+    extension: js.UndefOr[Null | js.Array[IFieldDescriptorProto]] = js.undefined,
+    messageType: js.UndefOr[Null | js.Array[IDescriptorProto]] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    options: js.UndefOr[Null | IFileOptions] = js.undefined,
+    publicDependency: js.UndefOr[Null | js.Array[Double]] = js.undefined,
+    service: js.UndefOr[Null | js.Array[IServiceDescriptorProto]] = js.undefined,
+    sourceCodeInfo: js.UndefOr[Null | ISourceCodeInfo] = js.undefined,
+    syntax: js.UndefOr[Null | String] = js.undefined,
+    weakDependency: js.UndefOr[Null | js.Array[Double]] = js.undefined
   ): IFileDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (dependency != null) __obj.updateDynamic("dependency")(dependency.asInstanceOf[js.Any])
-    if (enumType != null) __obj.updateDynamic("enumType")(enumType.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (publicDependency != null) __obj.updateDynamic("publicDependency")(publicDependency.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (sourceCodeInfo != null) __obj.updateDynamic("sourceCodeInfo")(sourceCodeInfo.asInstanceOf[js.Any])
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
-    if (weakDependency != null) __obj.updateDynamic("weakDependency")(weakDependency.asInstanceOf[js.Any])
+    if (!js.isUndefined(_package)) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
+    if (!js.isUndefined(dependency)) __obj.updateDynamic("dependency")(dependency.asInstanceOf[js.Any])
+    if (!js.isUndefined(enumType)) __obj.updateDynamic("enumType")(enumType.asInstanceOf[js.Any])
+    if (!js.isUndefined(extension)) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageType)) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(publicDependency)) __obj.updateDynamic("publicDependency")(publicDependency.asInstanceOf[js.Any])
+    if (!js.isUndefined(service)) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceCodeInfo)) __obj.updateDynamic("sourceCodeInfo")(sourceCodeInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(syntax)) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
+    if (!js.isUndefined(weakDependency)) __obj.updateDynamic("weakDependency")(weakDependency.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileDescriptorProto]
   }
 }

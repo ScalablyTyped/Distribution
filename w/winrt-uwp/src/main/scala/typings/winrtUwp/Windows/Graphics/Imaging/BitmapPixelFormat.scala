@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,32 +42,6 @@ object BitmapPixelFormat extends js.Object {
   /** The pixel format is YUY2. */
   @js.native
   sealed trait yuy2 extends BitmapPixelFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BitmapPixelFormat with Double] = js.native
-  /* 5 */ @js.native
-  object bgra8 extends TopLevel[bgra8 with Double]
-  
-  /* 3 */ @js.native
-  object gray16 extends TopLevel[gray16 with Double]
-  
-  /* 4 */ @js.native
-  object gray8 extends TopLevel[gray8 with Double]
-  
-  /* 6 */ @js.native
-  object nv12 extends TopLevel[nv12 with Double]
-  
-  /* 1 */ @js.native
-  object rgba16 extends TopLevel[rgba16 with Double]
-  
-  /* 2 */ @js.native
-  object rgba8 extends TopLevel[rgba8 with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 7 */ @js.native
-  object yuy2 extends TopLevel[yuy2 with Double]
   
 }
 

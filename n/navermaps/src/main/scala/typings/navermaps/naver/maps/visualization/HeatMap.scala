@@ -7,10 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.visualization.HeatMap")
 @js.native
-class HeatMap () extends js.Object {
-  def this(heatMapOptions: HeatMapOptions) = this()
+trait HeatMap extends js.Object {
   def getColorMap(): SpectrumStyle = js.native
   def getData(): js.Array[LatLng | PointArrayLiteral] = js.native
   def getMap(): Map | Null = js.native

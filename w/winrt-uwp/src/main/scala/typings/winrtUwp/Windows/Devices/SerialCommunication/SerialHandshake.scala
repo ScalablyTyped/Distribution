@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.SerialCommunication
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object SerialHandshake extends js.Object {
   /** The serial port sends an Xoff control to inform the sender to stop sending data. When ready, the port sends an Xon control to inform the sender that the port is now ready to receive data. */
   @js.native
   sealed trait xonXOff extends SerialHandshake
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SerialHandshake with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object requestToSend extends TopLevel[requestToSend with Double]
-  
-  /* 3 */ @js.native
-  object requestToSendXOnXOff extends TopLevel[requestToSendXOnXOff with Double]
-  
-  /* 2 */ @js.native
-  object xonXOff extends TopLevel[xonXOff with Double]
   
 }
 

@@ -18,11 +18,11 @@ object UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate {
   def apply(
     IndexName: String,
     ProvisionedWriteCapacityAutoScalingSettingsUpdate: UnmarshalledAutoScalingSettingsUpdate = null,
-    ProvisionedWriteCapacityUnits: Int | Double = null
+    ProvisionedWriteCapacityUnits: js.UndefOr[Double] = js.undefined
   ): UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
     if (ProvisionedWriteCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ProvisionedWriteCapacityAutoScalingSettingsUpdate")(ProvisionedWriteCapacityAutoScalingSettingsUpdate.asInstanceOf[js.Any])
-    if (ProvisionedWriteCapacityUnits != null) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProvisionedWriteCapacityUnits)) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate]
   }
 }

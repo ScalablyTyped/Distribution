@@ -36,7 +36,7 @@ object PolicySummary {
   @scala.inline
   def apply(
     Arn: PolicyArn = null,
-    AwsManaged: js.UndefOr[Boolean] = js.undefined,
+    AwsManaged: js.UndefOr[AwsManagedPolicy] = js.undefined,
     Description: PolicyDescription = null,
     Id: PolicyId = null,
     Name: PolicyName = null,
@@ -44,7 +44,7 @@ object PolicySummary {
   ): PolicySummary = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(AwsManaged)) __obj.updateDynamic("AwsManaged")(AwsManaged.asInstanceOf[js.Any])
+    if (!js.isUndefined(AwsManaged)) __obj.updateDynamic("AwsManaged")(AwsManaged.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])

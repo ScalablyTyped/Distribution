@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.DOMKeyboardEvent")
 @js.native
-class DOMKeyboardEvent protected () extends js.Object {
+trait DOMKeyboardEvent extends js.Object {
   @JSName("MSHTML.DOMKeyboardEvent_typekey")
   var MSHTMLDotDOMKeyboardEvent_typekey: DOMKeyboardEvent = js.native
   val altKey: Boolean = js.native

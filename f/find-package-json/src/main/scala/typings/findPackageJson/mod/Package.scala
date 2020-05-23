@@ -1,9 +1,9 @@
 package typings.findPackageJson.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.findPackageJson.AnonEmail
-import typings.findPackageJson.AnonType
-import typings.findPackageJson.AnonUrl
+import typings.findPackageJson.anon.Email
+import typings.findPackageJson.anon.Type
+import typings.findPackageJson.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Package
   extends /* k */ StringDictionary[js.Any] {
   var author: js.UndefOr[Person] = js.undefined
   var bin: js.UndefOr[StringDictionary[String]] = js.undefined
-  var bugs: js.UndefOr[AnonEmail | AnonUrl] = js.undefined
+  var bugs: js.UndefOr[Email | Url] = js.undefined
   var bundleDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
   var contributors: js.UndefOr[js.Array[Person]] = js.undefined
   var dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -28,7 +28,7 @@ trait Package
   var name: js.UndefOr[String] = js.undefined
   var optionalDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
   var readme: js.UndefOr[String] = js.undefined
-  var repository: js.UndefOr[AnonType] = js.undefined
+  var repository: js.UndefOr[Type] = js.undefined
   var scripts: js.UndefOr[StringDictionary[String]] = js.undefined
   var version: js.UndefOr[String] = js.undefined
 }
@@ -36,10 +36,10 @@ trait Package
 object Package {
   @scala.inline
   def apply(
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     author: Person = null,
     bin: StringDictionary[String] = null,
-    bugs: AnonEmail | AnonUrl = null,
+    bugs: Email | Url = null,
     bundleDependencies: StringDictionary[String] = null,
     contributors: js.Array[Person] = null,
     dependencies: StringDictionary[String] = null,
@@ -55,7 +55,7 @@ object Package {
     name: String = null,
     optionalDependencies: StringDictionary[String] = null,
     readme: String = null,
-    repository: AnonType = null,
+    repository: Type = null,
     scripts: StringDictionary[String] = null,
     version: String = null
   ): Package = {

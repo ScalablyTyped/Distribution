@@ -14,10 +14,10 @@ trait Histogram extends js.Object {
 
 object Histogram {
   @scala.inline
-  def apply(field: String = null, interval: Int | Double = null): Histogram = {
+  def apply(field: String = null, interval: js.UndefOr[Double] = js.undefined): Histogram = {
     val __obj = js.Dynamic.literal()
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Histogram]
   }
 }

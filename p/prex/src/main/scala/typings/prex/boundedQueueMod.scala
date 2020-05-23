@@ -21,12 +21,6 @@ object boundedQueueMod extends js.Object {
     var _queue: js.Any = js.native
     var _state: js.Any = js.native
     /**
-      * Gets the number of entries in the queue.
-      * When positive, indicates the number of entries available to get.
-      * When negative, indicates the number of requests waiting to be fulfilled.
-      */
-    val size: Double = js.native
-    /**
       * Consumes all items in the queue until the queue ends.
       */
     def drain(): AsyncIterableIterator[T] = js.native
@@ -48,6 +42,12 @@ object boundedQueueMod extends js.Object {
       */
     def put(value: T): Unit = js.native
     def put(value: js.Thenable[T]): Unit = js.native
+    /**
+      * Gets the number of entries in the queue.
+      * When positive, indicates the number of entries available to get.
+      * When negative, indicates the number of requests waiting to be fulfilled.
+      */
+    def size: Double = js.native
   }
   
 }

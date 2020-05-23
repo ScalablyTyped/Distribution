@@ -1,5 +1,6 @@
 package typings.cookiejar
 
+import typings.cookiejar.anon.ReadonlyArrayCookietoValu
 import typings.cookiejar.cookiejarBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.mobileDetect.mod
 
-import typings.mobileDetect.AnonFullPattern
-import typings.mobileDetect.AnonOss
+import typings.mobileDetect.anon.FullPattern
+import typings.mobileDetect.anon.Oss
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +11,8 @@ trait MobileDetectImpl extends js.Object {
   var FALLBACK_MOBILE: String = js.native
   var FALLBACK_PHONE: String = js.native
   var FALLBACK_TABLET: String = js.native
-  var detectMobileBrowsers: AnonFullPattern = js.native
-  var mobileDetectRules: AnonOss = js.native
+  var detectMobileBrowsers: FullPattern = js.native
+  var mobileDetectRules: Oss = js.native
   def detectOS(userAgent: String): String = js.native
   def findMatch(rules: MobileDetectRules, userAgent: String): String = js.native
   def findMatches(rules: MobileDetectRules, userAgent: String): js.Array[String] = js.native

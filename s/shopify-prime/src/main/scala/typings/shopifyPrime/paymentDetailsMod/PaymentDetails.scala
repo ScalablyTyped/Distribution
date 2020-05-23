@@ -22,7 +22,7 @@ object PaymentDetails {
     credit_card_company: String = null,
     credit_card_number: String = null,
     cvv_result_code: String = null,
-    id: Int | Double = null
+    id: js.UndefOr[Double] = js.undefined
   ): PaymentDetails = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
@@ -31,7 +31,7 @@ object PaymentDetails {
     if (credit_card_company != null) __obj.updateDynamic("credit_card_company")(credit_card_company.asInstanceOf[js.Any])
     if (credit_card_number != null) __obj.updateDynamic("credit_card_number")(credit_card_number.asInstanceOf[js.Any])
     if (cvv_result_code != null) __obj.updateDynamic("cvv_result_code")(cvv_result_code.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetails]
   }
 }

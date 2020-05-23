@@ -31,9 +31,9 @@ object PickerColumn {
     optionsWidth: String = null,
     prefix: String = null,
     prefixWidth: String = null,
-    prevSelected: Int | Double = null,
+    prevSelected: js.UndefOr[Double] = js.undefined,
     refresh: () => Unit = null,
-    selectedIndex: Int | Double = null,
+    selectedIndex: js.UndefOr[Double] = js.undefined,
     suffix: String = null,
     suffixWidth: String = null
   ): PickerColumn = {
@@ -44,9 +44,9 @@ object PickerColumn {
     if (optionsWidth != null) __obj.updateDynamic("optionsWidth")(optionsWidth.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (prefixWidth != null) __obj.updateDynamic("prefixWidth")(prefixWidth.asInstanceOf[js.Any])
-    if (prevSelected != null) __obj.updateDynamic("prevSelected")(prevSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(prevSelected)) __obj.updateDynamic("prevSelected")(prevSelected.get.asInstanceOf[js.Any])
     if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction0(refresh))
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (suffixWidth != null) __obj.updateDynamic("suffixWidth")(suffixWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerColumn]

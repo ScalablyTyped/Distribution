@@ -1,8 +1,8 @@
 package typings.sequelize.mod
 
 import typings.lodash.mod.LoDashImplicitWrapper
-import typings.sequelize.AnonInstantiable
-import typings.sequelize.FnCall
+import typings.sequelize.anon.FnCall
+import typings.sequelize.anon.Instantiable
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Utils extends js.Object {
-  var Promise: AnonInstantiable = js.native
+  var Promise: Instantiable = js.native
   @JSName("_")
   var _underscore_Original: SequelizeLoDash = js.native
   var and: andStatic = js.native

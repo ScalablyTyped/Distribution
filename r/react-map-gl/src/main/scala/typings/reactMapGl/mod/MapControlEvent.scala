@@ -26,8 +26,8 @@ object MapControlEvent {
     srcEvent: js.Any,
     target: js.Any,
     `type`: String,
-    delta: Int | Double = null,
-    key: Int | Double = null,
+    delta: js.UndefOr[Double] = js.undefined,
+    key: js.UndefOr[Double] = js.undefined,
     leftButton: js.UndefOr[Boolean] = js.undefined,
     middleButton: js.UndefOr[Boolean] = js.undefined,
     pointerType: String = null,
@@ -35,12 +35,12 @@ object MapControlEvent {
   ): MapControlEvent = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], offsetCenter = offsetCenter.asInstanceOf[js.Any], srcEvent = srcEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftButton)) __obj.updateDynamic("leftButton")(leftButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(middleButton)) __obj.updateDynamic("middleButton")(middleButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftButton)) __obj.updateDynamic("leftButton")(leftButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(middleButton)) __obj.updateDynamic("middleButton")(middleButton.get.asInstanceOf[js.Any])
     if (pointerType != null) __obj.updateDynamic("pointerType")(pointerType.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightButton)) __obj.updateDynamic("rightButton")(rightButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightButton)) __obj.updateDynamic("rightButton")(rightButton.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapControlEvent]
   }
 }

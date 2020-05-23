@@ -18,13 +18,13 @@ object NoticeBarPropsType {
   @scala.inline
   def apply(
     action: ReactElement = null,
-    icon: ReactElement = null,
+    icon: js.UndefOr[Null | ReactElement] = js.undefined,
     mode: closable | link = null,
     onClick: () => Unit = null
   ): NoticeBarPropsType = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     __obj.asInstanceOf[NoticeBarPropsType]

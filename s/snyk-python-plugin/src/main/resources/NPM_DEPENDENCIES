@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "snyk-python-plugin" : "1.17.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "snyk-python-plugin" : "1.17.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

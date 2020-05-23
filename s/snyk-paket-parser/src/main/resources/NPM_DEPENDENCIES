@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "snyk-paket-parser" : "1.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "snyk-paket-parser" : "1.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

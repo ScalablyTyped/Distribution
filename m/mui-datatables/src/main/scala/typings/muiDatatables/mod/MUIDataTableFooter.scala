@@ -19,17 +19,17 @@ object MUIDataTableFooter {
     changePage: js.Any = null,
     changeRowsPerPage: /* args */ js.Any => _ = null,
     options: js.Object = null,
-    page: Int | Double = null,
-    rowCount: Int | Double = null,
-    rowsPerPage: Int | Double = null
+    page: js.UndefOr[Double] = js.undefined,
+    rowCount: js.UndefOr[Double] = js.undefined,
+    rowsPerPage: js.UndefOr[Double] = js.undefined
   ): MUIDataTableFooter = {
     val __obj = js.Dynamic.literal()
     if (changePage != null) __obj.updateDynamic("changePage")(changePage.asInstanceOf[js.Any])
     if (changeRowsPerPage != null) __obj.updateDynamic("changeRowsPerPage")(js.Any.fromFunction1(changeRowsPerPage))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (rowsPerPage != null) __obj.updateDynamic("rowsPerPage")(rowsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowsPerPage)) __obj.updateDynamic("rowsPerPage")(rowsPerPage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableFooter]
   }
 }

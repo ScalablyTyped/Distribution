@@ -6,18 +6,18 @@ import typings.firebaseFirestore.databaseInfoMod.DatabaseId
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
 import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
-import typings.std.Document_
+import typings.std.Document
 import typings.std.EventListener
 import typings.std.IDBFactory
 import typings.std.Storage
 import typings.std.Uint8Array
 import typings.std.VisibilityState
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/util/test_platform", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/util/test_platform", JSImport.Namespace)
 @js.native
 object testPlatformMod extends js.Object {
   @js.native
@@ -27,7 +27,7 @@ object testPlatformMod extends js.Object {
     def addEventListener(`type`: String, listener: EventListener): Unit = js.native
     def raiseVisibilityEvent(visibility: VisibilityState): Unit = js.native
     def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
-    def visibilityState(): VisibilityState = js.native
+    def visibilityState: VisibilityState = js.native
   }
   
   @js.native
@@ -38,8 +38,8 @@ object testPlatformMod extends js.Object {
     val fakeStorageArea: js.Any = js.native
     var storageListeners: js.Any = js.native
     def addEventListener(`type`: String, listener: EventListener): Unit = js.native
-    def indexedDB(): IDBFactory | Null = js.native
-    def localStorage(): Storage = js.native
+    def indexedDB: IDBFactory | Null = js.native
+    def localStorage: Storage = js.native
     def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
   }
   
@@ -54,7 +54,7 @@ object testPlatformMod extends js.Object {
     var removeItem: js.Any = js.native
     var setItem: js.Any = js.native
     def getStorageArea(storageListener: EventListener): Storage = js.native
-    /* private */ def length(): js.Any = js.native
+    /* private */ def length: js.Any = js.native
   }
   
   @js.native
@@ -66,29 +66,23 @@ object testPlatformMod extends js.Object {
     val basePlatform: js.Any = js.native
     /** The Platform's 'document' implementation or null if not available. */
     /* CompleteClass */
-    override val document: Document_ | Null = js.native
+    override val document: Document | Null = js.native
     val mockDocument: FakeDocument | Null = js.native
     val mockStorage: js.Any = js.native
     val mockWindow: FakeWindow | Null = js.native
-    /**
-      * True if timestamps, bytes and numbers are represented in Proto3 JSON
-      * format (in-memory and on the wire)
-      */
-    /* CompleteClass */
-    override val useProto3Json: Boolean = js.native
     /** The Platform's 'window' implementation or null if not available. */
     /* CompleteClass */
-    override val window: Window_ | Null = js.native
+    override val window: Window | Null = js.native
     /** Converts a Base64 encoded string to a binary string. */
     /* CompleteClass */
     override def atob(encoded: String): String = js.native
     @JSName("base64Available")
-    def base64Available_MTestPlatform(): Boolean = js.native
+    def base64Available_MTestPlatform: Boolean = js.native
     /** Converts a binary string to a Base64 encoded string. */
     /* CompleteClass */
     override def btoa(raw: String): String = js.native
     @JSName("document")
-    def document_MTestPlatform(): Document_ | Null = js.native
+    def document_MTestPlatform: Document | Null = js.native
     /** Formats an object as a JSON string, suitable for logging. */
     /* CompleteClass */
     override def formatJSON(value: js.Any): String = js.native
@@ -100,15 +94,14 @@ object testPlatformMod extends js.Object {
     override def newSerializer(databaseId: DatabaseId): JsonProtoSerializer = js.native
     def raiseVisibilityEvent(visibility: VisibilityState): Unit = js.native
     /**
-      * Generates `nBytes` of random bytes. If `nBytes` is negative, an empty array
-      * will be returned.
+      * Generates `nBytes` of random bytes.
+      *
+      * If `nBytes < 0` , an error will be thrown.
       */
     /* CompleteClass */
     override def randomBytes(nBytes: Double): Uint8Array = js.native
-    @JSName("useProto3Json")
-    def useProto3Json_MTestPlatform(): Boolean = js.native
     @JSName("window")
-    def window_MTestPlatform(): Window_ | Null = js.native
+    def window_MTestPlatform: Window | Null = js.native
   }
   
   def isNode(): Boolean = js.native

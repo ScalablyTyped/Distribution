@@ -82,8 +82,8 @@ object Domain {
     isInitial: js.UndefOr[Boolean] = js.undefined,
     isRoot: js.UndefOr[Boolean] = js.undefined,
     isVerified: js.UndefOr[Boolean] = js.undefined,
-    passwordNotificationWindowInDays: Int | Double = null,
-    passwordValidityPeriodInDays: Int | Double = null,
+    passwordNotificationWindowInDays: js.UndefOr[Double] = js.undefined,
+    passwordValidityPeriodInDays: js.UndefOr[Double] = js.undefined,
     serviceConfigurationRecords: js.Array[DomainDnsRecord] = null,
     state: DomainState = null,
     supportedServices: js.Array[String] = null,
@@ -94,13 +94,13 @@ object Domain {
     if (availabilityStatus != null) __obj.updateDynamic("availabilityStatus")(availabilityStatus.asInstanceOf[js.Any])
     if (domainNameReferences != null) __obj.updateDynamic("domainNameReferences")(domainNameReferences.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAdminManaged)) __obj.updateDynamic("isAdminManaged")(isAdminManaged.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInitial)) __obj.updateDynamic("isInitial")(isInitial.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRoot)) __obj.updateDynamic("isRoot")(isRoot.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVerified)) __obj.updateDynamic("isVerified")(isVerified.asInstanceOf[js.Any])
-    if (passwordNotificationWindowInDays != null) __obj.updateDynamic("passwordNotificationWindowInDays")(passwordNotificationWindowInDays.asInstanceOf[js.Any])
-    if (passwordValidityPeriodInDays != null) __obj.updateDynamic("passwordValidityPeriodInDays")(passwordValidityPeriodInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAdminManaged)) __obj.updateDynamic("isAdminManaged")(isAdminManaged.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInitial)) __obj.updateDynamic("isInitial")(isInitial.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRoot)) __obj.updateDynamic("isRoot")(isRoot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVerified)) __obj.updateDynamic("isVerified")(isVerified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordNotificationWindowInDays)) __obj.updateDynamic("passwordNotificationWindowInDays")(passwordNotificationWindowInDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordValidityPeriodInDays)) __obj.updateDynamic("passwordValidityPeriodInDays")(passwordValidityPeriodInDays.get.asInstanceOf[js.Any])
     if (serviceConfigurationRecords != null) __obj.updateDynamic("serviceConfigurationRecords")(serviceConfigurationRecords.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (supportedServices != null) __obj.updateDynamic("supportedServices")(supportedServices.asInstanceOf[js.Any])

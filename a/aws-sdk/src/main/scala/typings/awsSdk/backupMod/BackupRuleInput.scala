@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BackupRuleInput extends js.Object {
   /**
-    * The amount of time AWS Backup attempts a backup before canceling the job and returning an error.
+    * A value in minutes after a backup job is successfully started before it must be completed or it will be canceled by AWS Backup. This value is optional.
     */
   var CompletionWindowMinutes: js.UndefOr[WindowMinutes] = js.native
   /**
@@ -15,7 +15,7 @@ trait BackupRuleInput extends js.Object {
     */
   var CopyActions: js.UndefOr[typings.awsSdk.backupMod.CopyActions] = js.native
   /**
-    * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup will transition and expire backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days”. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
+    * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup will transition and expire backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
     */
   var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.native
   /**
@@ -23,7 +23,7 @@ trait BackupRuleInput extends js.Object {
     */
   var RecoveryPointTags: js.UndefOr[Tags] = js.native
   /**
-    * &gt;An optional display name for a backup rule.
+    * An optional display name for a backup rule.
     */
   var RuleName: BackupRuleName = js.native
   /**
@@ -31,7 +31,7 @@ trait BackupRuleInput extends js.Object {
     */
   var ScheduleExpression: js.UndefOr[CronExpression] = js.native
   /**
-    * The amount of time in minutes before beginning a backup.
+    * A value in minutes after a backup is scheduled before a job will be canceled if it doesn't start successfully. This value is optional.
     */
   var StartWindowMinutes: js.UndefOr[WindowMinutes] = js.native
   /**
@@ -45,20 +45,20 @@ object BackupRuleInput {
   def apply(
     RuleName: BackupRuleName,
     TargetBackupVaultName: BackupVaultName,
-    CompletionWindowMinutes: Int | Double = null,
+    CompletionWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined,
     CopyActions: CopyActions = null,
     Lifecycle: Lifecycle = null,
     RecoveryPointTags: Tags = null,
     ScheduleExpression: CronExpression = null,
-    StartWindowMinutes: Int | Double = null
+    StartWindowMinutes: js.UndefOr[WindowMinutes] = js.undefined
   ): BackupRuleInput = {
     val __obj = js.Dynamic.literal(RuleName = RuleName.asInstanceOf[js.Any], TargetBackupVaultName = TargetBackupVaultName.asInstanceOf[js.Any])
-    if (CompletionWindowMinutes != null) __obj.updateDynamic("CompletionWindowMinutes")(CompletionWindowMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(CompletionWindowMinutes)) __obj.updateDynamic("CompletionWindowMinutes")(CompletionWindowMinutes.get.asInstanceOf[js.Any])
     if (CopyActions != null) __obj.updateDynamic("CopyActions")(CopyActions.asInstanceOf[js.Any])
     if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
     if (RecoveryPointTags != null) __obj.updateDynamic("RecoveryPointTags")(RecoveryPointTags.asInstanceOf[js.Any])
     if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression.asInstanceOf[js.Any])
-    if (StartWindowMinutes != null) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(StartWindowMinutes)) __obj.updateDynamic("StartWindowMinutes")(StartWindowMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupRuleInput]
   }
 }

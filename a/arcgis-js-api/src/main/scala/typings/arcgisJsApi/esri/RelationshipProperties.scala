@@ -44,17 +44,17 @@ object RelationshipProperties {
   @scala.inline
   def apply(
     cardinality: `one-to-one` | `one-to-many` | `many-to-many` = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     keyField: String = null,
     name: String = null,
-    relatedTableId: Int | Double = null
+    relatedTableId: js.UndefOr[Double] = js.undefined
   ): RelationshipProperties = {
     val __obj = js.Dynamic.literal()
     if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (keyField != null) __obj.updateDynamic("keyField")(keyField.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (relatedTableId != null) __obj.updateDynamic("relatedTableId")(relatedTableId.asInstanceOf[js.Any])
+    if (!js.isUndefined(relatedTableId)) __obj.updateDynamic("relatedTableId")(relatedTableId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipProperties]
   }
 }

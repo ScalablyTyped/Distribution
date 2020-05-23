@@ -21,9 +21,9 @@ object MapStackTraceOptions {
     sync: js.UndefOr[Boolean] = js.undefined
   ): MapStackTraceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheGlobally)) __obj.updateDynamic("cacheGlobally")(cacheGlobally.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheGlobally)) __obj.updateDynamic("cacheGlobally")(cacheGlobally.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapStackTraceOptions]
   }
 }

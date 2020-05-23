@@ -13,9 +13,9 @@ trait OnCompassChangeSuccess extends js.Object {
 
 object OnCompassChangeSuccess {
   @scala.inline
-  def apply(direction: Int | Double = null): OnCompassChangeSuccess = {
+  def apply(direction: js.UndefOr[Double] = js.undefined): OnCompassChangeSuccess = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCompassChangeSuccess]
   }
 }

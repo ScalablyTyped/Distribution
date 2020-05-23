@@ -9,36 +9,36 @@ import scala.scalajs.js.annotation._
 
 trait IAbstract extends IBase {
   /** [Method] Returns the value of fileSystemSize
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getFileSystemSize: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of fileSystemType
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getFileSystemType: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of readerType
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getReaderType: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of stringEncoding
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getStringEncoding: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Sets the value of fileSystemSize
-  		* @param fileSystemSize Number The new value.
-  		*/
+    * @param fileSystemSize Number The new value.
+    */
   var setFileSystemSize: js.UndefOr[js.Function1[/* fileSystemSize */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of fileSystemType
-  		* @param fileSystemType Number The new value.
-  		*/
+    * @param fileSystemType Number The new value.
+    */
   var setFileSystemType: js.UndefOr[js.Function1[/* fileSystemType */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of readerType
-  		* @param readerType String The new value.
-  		*/
+    * @param readerType String The new value.
+    */
   var setReaderType: js.UndefOr[js.Function1[/* readerType */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of stringEncoding
-  		* @param stringEncoding String The new value.
-  		*/
+    * @param stringEncoding String The new value.
+    */
   var setStringEncoding: js.UndefOr[js.Function1[/* stringEncoding */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -94,7 +94,7 @@ object IAbstract {
     if (setFileSystemType != null) __obj.updateDynamic("setFileSystemType")(js.Any.fromFunction1(setFileSystemType))
     if (setReaderType != null) __obj.updateDynamic("setReaderType")(js.Any.fromFunction1(setReaderType))
     if (setStringEncoding != null) __obj.updateDynamic("setStringEncoding")(js.Any.fromFunction1(setStringEncoding))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstract]

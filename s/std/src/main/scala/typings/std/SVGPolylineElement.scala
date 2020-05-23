@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,8 +46,4 @@ trait SVGPolylineElement
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("SVGPolylineElement")
-@js.native
-object SVGPolylineElement extends Instantiable0[SVGPolylineElement]
 

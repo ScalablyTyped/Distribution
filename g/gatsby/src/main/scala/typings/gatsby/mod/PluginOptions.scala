@@ -12,7 +12,7 @@ trait PluginOptions
 
 object PluginOptions {
   @scala.inline
-  def apply(plugins: js.Array[_], StringDictionary: /* key */ StringDictionary[js.Any] = null): PluginOptions = {
+  def apply(plugins: js.Array[_], StringDictionary: /* name */ StringDictionary[js.Any] = null): PluginOptions = {
     val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[PluginOptions]

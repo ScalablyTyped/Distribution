@@ -14,7 +14,7 @@ trait DataItem
 object DataItem {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     icon: js.Any = null,
     text: js.Any = null
   ): DataItem = {

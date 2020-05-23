@@ -1,5 +1,7 @@
 package typings.losslessJson
 
+import typings.losslessJson.anon.CircularRefs
+import typings.losslessJson.anon.CircularRefsBoolean
 import typings.losslessJson.losslessJsonBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,8 +20,8 @@ object mod extends js.Object {
     var value: String = js.native
   }
   
-  def config(): AnonCircularRefsBoolean = js.native
-  def config(hasCircularRefs: AnonCircularRefs): AnonCircularRefsBoolean = js.native
+  def config(): CircularRefsBoolean = js.native
+  def config(hasCircularRefs: CircularRefs): CircularRefsBoolean = js.native
   def parse(text: String): js.Any = js.native
   def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, _]): js.Any = js.native
   def stringify(value: js.Any): String = js.native

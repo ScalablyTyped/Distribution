@@ -29,13 +29,13 @@ object SetScreenBrightnessOptions {
     complete: () => Unit = null,
     fail: () => Unit = null,
     success: () => Unit = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): SetScreenBrightnessOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScreenBrightnessOptions]
   }
 }

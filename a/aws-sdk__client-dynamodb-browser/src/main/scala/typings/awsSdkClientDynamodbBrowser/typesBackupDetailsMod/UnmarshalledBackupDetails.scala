@@ -32,11 +32,11 @@ object UnmarshalledBackupDetails {
     BackupStatus: CREATING | DELETED | AVAILABLE | String,
     BackupType: USER | SYSTEM | String,
     BackupExpiryDateTime: Date = null,
-    BackupSizeBytes: Int | Double = null
+    BackupSizeBytes: js.UndefOr[Double] = js.undefined
   ): UnmarshalledBackupDetails = {
     val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any], BackupCreationDateTime = BackupCreationDateTime.asInstanceOf[js.Any], BackupName = BackupName.asInstanceOf[js.Any], BackupStatus = BackupStatus.asInstanceOf[js.Any], BackupType = BackupType.asInstanceOf[js.Any])
     if (BackupExpiryDateTime != null) __obj.updateDynamic("BackupExpiryDateTime")(BackupExpiryDateTime.asInstanceOf[js.Any])
-    if (BackupSizeBytes != null) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupSizeBytes)) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledBackupDetails]
   }
 }

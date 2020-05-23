@@ -26,14 +26,14 @@ object UpdateServerRequest {
   @scala.inline
   def apply(
     ServerName: ServerName,
-    BackupRetentionCount: Int | Double = null,
-    DisableAutomatedBackup: js.UndefOr[scala.Boolean] = js.undefined,
+    BackupRetentionCount: js.UndefOr[Integer] = js.undefined,
+    DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined,
     PreferredBackupWindow: TimeWindowDefinition = null,
     PreferredMaintenanceWindow: TimeWindowDefinition = null
   ): UpdateServerRequest = {
     val __obj = js.Dynamic.literal(ServerName = ServerName.asInstanceOf[js.Any])
-    if (BackupRetentionCount != null) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupRetentionCount)) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup.get.asInstanceOf[js.Any])
     if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow.asInstanceOf[js.Any])
     if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServerRequest]

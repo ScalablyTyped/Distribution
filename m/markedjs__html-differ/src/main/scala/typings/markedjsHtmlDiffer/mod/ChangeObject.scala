@@ -21,8 +21,8 @@ object ChangeObject {
     value: String = null
   ): ChangeObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(added)) __obj.updateDynamic("added")(added.asInstanceOf[js.Any])
-    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
+    if (!js.isUndefined(added)) __obj.updateDynamic("added")(added.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeObject]
   }

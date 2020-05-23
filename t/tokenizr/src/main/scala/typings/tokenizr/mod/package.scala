@@ -9,7 +9,7 @@ package object mod {
     /* this */ typings.tokenizr.mod.ActionContext, 
     /* ctx */ typings.tokenizr.mod.ActionContext, 
     /* found */ typings.std.RegExpExecArray, 
-    /* rule */ typings.tokenizr.AnonAction, 
+    /* rule */ typings.tokenizr.anon.Action, 
     scala.Unit
   ]
   type IToken[T] = typings.tokenizr.mod.Token[T]

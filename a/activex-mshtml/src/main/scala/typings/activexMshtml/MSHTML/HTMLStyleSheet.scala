@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.HTMLStyleSheet")
 @js.native
-class HTMLStyleSheet protected () extends js.Object {
+trait HTMLStyleSheet extends js.Object {
   @JSName("MSHTML.HTMLStyleSheet_typekey")
   var MSHTMLDotHTMLStyleSheet_typekey: HTMLStyleSheet = js.native
   val constructor: js.Any = js.native

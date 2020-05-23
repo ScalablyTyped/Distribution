@@ -1,7 +1,7 @@
 package typings.angularForms.mod
 
-import typings.angularForms.AnonEmitEvent
-import typings.angularForms.AnonEmitModelToViewChange
+import typings.angularForms.anon.EmitEvent
+import typings.angularForms.anon.EmitModelToViewChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ class FormControl () extends AbstractControl {
   def this(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: js.Array[AsyncValidatorFn]) = this()
   def this(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn) = this()
   var _applyFormState: js.Any = js.native
-  def patchValue(value: js.Any, options: AnonEmitModelToViewChange): Unit = js.native
+  def patchValue(value: js.Any, options: EmitModelToViewChange): Unit = js.native
   /**
     * Register a listener for change events.
     *
@@ -56,7 +56,7 @@ class FormControl () extends AbstractControl {
     * @param fn The method that is called when the disabled status changes.
     */
   def registerOnDisabledChange(fn: js.Function1[/* isDisabled */ Boolean, Unit]): Unit = js.native
-  def reset(formState: js.Any, options: AnonEmitEvent): Unit = js.native
-  def setValue(value: js.Any, options: AnonEmitModelToViewChange): Unit = js.native
+  def reset(formState: js.Any, options: EmitEvent): Unit = js.native
+  def setValue(value: js.Any, options: EmitModelToViewChange): Unit = js.native
 }
 

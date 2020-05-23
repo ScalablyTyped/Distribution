@@ -8,51 +8,34 @@ import scala.scalajs.js.annotation._
 /**
   * An item within a Pivot control.
   **/
-@JSGlobal("WinJS.UI.PivotItem")
-@js.native
-//#region Constructors
-/**
-  * Creates a new PivotItem.
-  * @constructor
-  * @param element The DOM element hosts the new PivotItem.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-  **/
-class PivotItem () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait PivotItem extends js.Object {
   //#endregion Methods
   //#region Properties
   /**
     * Gets the DOM element that hosts the PivotItem control's content.
     **/
-  var contentElement: HTMLElement = js.native
+  var contentElement: HTMLElement
   /**
     * Gets the DOM element that hosts the PivotItem control.
     **/
-  var element: HTMLElement = js.native
+  var element: HTMLElement
   /**
     * Gets or sets the header for this PivotItem.
     **/
-  var header: String = js.native
+  var header: String
   //#endregion Constructors
   //#region Methods
   /**
     * Releases resources held by this PivotItem. Call this method when the PivotItem is no longer needed. After calling this method, the PivotItem becomes unusable.
     **/
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 
-/* static members */
-@JSGlobal("WinJS.UI.PivotItem")
-@js.native
-object PivotItem extends js.Object {
-  /**
-    * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
-    **/
-  var isDeclarativeControlContainer: js.Any = js.native
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
+object PivotItem {
+  @scala.inline
+  def apply(contentElement: HTMLElement, dispose: () => Unit, element: HTMLElement, header: String): PivotItem = {
+    val __obj = js.Dynamic.literal(contentElement = contentElement.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), element = element.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PivotItem]
+  }
 }
 

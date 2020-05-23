@@ -4,18 +4,16 @@ import typings.firebaseFirestore.connectionMod.Connection
 import typings.firebaseFirestore.connectivityMonitorMod.ConnectivityMonitor
 import typings.firebaseFirestore.databaseInfoMod.DatabaseId
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
-import typings.firebaseFirestore.firebaseFirestoreBooleans.`false`
-import typings.firebaseFirestore.firebaseFirestoreBooleans.`true`
 import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.serializerMod.JsonProtoSerializer
-import typings.std.Document_
+import typings.std.Document
 import typings.std.Uint8Array
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/platform_node/node_platform", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/platform_node/node_platform", JSImport.Namespace)
 @js.native
 object nodePlatformMod extends js.Object {
   @js.native
@@ -23,24 +21,14 @@ object nodePlatformMod extends js.Object {
     /** True if and only if the Base64 conversion functions are available. */
     /* CompleteClass */
     override val base64Available: Boolean = js.native
-    @JSName("base64Available")
-    val base64Available_NodePlatform: `true` = js.native
     /** The Platform's 'document' implementation or null if not available. */
     /* CompleteClass */
-    override val document: Document_ | Null = js.native
+    override val document: Document | Null = js.native
     @JSName("document")
     val document_NodePlatform: Null = js.native
-    /**
-      * True if timestamps, bytes and numbers are represented in Proto3 JSON
-      * format (in-memory and on the wire)
-      */
-    /* CompleteClass */
-    override val useProto3Json: Boolean = js.native
-    @JSName("useProto3Json")
-    val useProto3Json_NodePlatform: `false` = js.native
     /** The Platform's 'window' implementation or null if not available. */
     /* CompleteClass */
-    override val window: Window_ | Null = js.native
+    override val window: Window | Null = js.native
     /** Converts a Base64 encoded string to a binary string. */
     /* CompleteClass */
     override def atob(encoded: String): String = js.native
@@ -57,13 +45,14 @@ object nodePlatformMod extends js.Object {
     /* CompleteClass */
     override def newSerializer(databaseId: DatabaseId): JsonProtoSerializer = js.native
     /**
-      * Generates `nBytes` of random bytes. If `nBytes` is negative, an empty array
-      * will be returned.
+      * Generates `nBytes` of random bytes.
+      *
+      * If `nBytes < 0` , an error will be thrown.
       */
     /* CompleteClass */
     override def randomBytes(nBytes: Double): Uint8Array = js.native
     @JSName("window")
-    def window_MNodePlatform(): Window_ | Null = js.native
+    def window_MNodePlatform: Window | Null = js.native
   }
   
 }

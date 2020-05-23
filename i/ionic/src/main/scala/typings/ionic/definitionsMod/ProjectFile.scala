@@ -1,7 +1,7 @@
 package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ionic.RecordHookNamestringArray
+import typings.ionic.anon.RecordHookNamestringArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

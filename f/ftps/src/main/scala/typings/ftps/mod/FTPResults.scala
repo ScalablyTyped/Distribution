@@ -13,9 +13,7 @@ trait FTPResults extends js.Object {
 object FTPResults {
   @scala.inline
   def apply(data: String = null, error: Error = null): FTPResults = {
-    val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[FTPResults]
   }
 }

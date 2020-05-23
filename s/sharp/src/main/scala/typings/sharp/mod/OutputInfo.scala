@@ -27,12 +27,12 @@ object OutputInfo {
     premultiplied: Boolean,
     size: Double,
     width: Double,
-    cropOffsetLeft: Int | Double = null,
-    cropOffsetTop: Int | Double = null
+    cropOffsetLeft: js.UndefOr[Double] = js.undefined,
+    cropOffsetTop: js.UndefOr[Double] = js.undefined
   ): OutputInfo = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], premultiplied = premultiplied.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (cropOffsetLeft != null) __obj.updateDynamic("cropOffsetLeft")(cropOffsetLeft.asInstanceOf[js.Any])
-    if (cropOffsetTop != null) __obj.updateDynamic("cropOffsetTop")(cropOffsetTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(cropOffsetLeft)) __obj.updateDynamic("cropOffsetLeft")(cropOffsetLeft.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cropOffsetTop)) __obj.updateDynamic("cropOffsetTop")(cropOffsetTop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputInfo]
   }
 }

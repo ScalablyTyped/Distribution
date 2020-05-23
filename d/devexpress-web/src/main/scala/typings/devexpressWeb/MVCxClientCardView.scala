@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the CardView extension.
   */
-@JSGlobal("MVCxClientCardView")
 @js.native
-class MVCxClientCardView () extends ASPxClientCardView {
+trait MVCxClientCardView extends ASPxClientCardView {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -28,16 +27,5 @@ class MVCxClientCardView () extends ASPxClientCardView {
     */
   def PerformCallback(data: js.Any): Unit = js.native
   def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientCardView")
-@js.native
-object MVCxClientCardView extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientCardView type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientCardView = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import typings.googleAdwordsScripts.anon.Id
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +38,7 @@ trait Campaign
     longitude: Double,
     radius: Double,
     radiusUnits: RadiusUnits,
-    optArgs: AnonAddress
+    optArgs: typings.googleAdwordsScripts.anon.Address
   ): AdWordsOperation[TargetedProximity] = js.native
   def addProximity(proximity: ProximityObject): AdWordsOperation[TargetedProximity] = js.native
   def addProximity(proximity: TargetedProximity): AdWordsOperation[TargetedProximity] = js.native
@@ -49,8 +50,8 @@ trait Campaign
   def createNegativeKeyword(keywordText: String): Unit = js.native
   def display(): CampaignDisplay = js.native
   def excludeLocation(location: Double): AdWordsOperation[ExcludedLocation] = js.native
-  def excludeLocation(location: AnonId): AdWordsOperation[ExcludedLocation] = js.native
   def excludeLocation(location: ExcludedLocation): AdWordsOperation[ExcludedLocation] = js.native
+  def excludeLocation(location: Id): AdWordsOperation[ExcludedLocation] = js.native
   def excludedPlacementLists(): AdWordsSelector[ExcludedPlacementList] = js.native
   def extensions(): CampaignExtensions = js.native
   def getAdRotationType(): AdRotationType = js.native

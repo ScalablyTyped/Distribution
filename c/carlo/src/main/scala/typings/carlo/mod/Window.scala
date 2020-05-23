@@ -1,6 +1,6 @@
 package typings.carlo.mod
 
-import typings.carlo.AnonHeight
+import typings.carlo.anon.Height
 import typings.puppeteer.mod.Page
 import typings.puppeteer.mod.Serializable
 import scala.scalajs.js
@@ -89,6 +89,6 @@ trait Window extends js.Object {
     * Dimension or the offset is only applied when specified.
     * @param bounds Window bounds
     */
-  def setBounds(bounds: AnonHeight): js.Promise[Unit] = js.native
+  def setBounds(bounds: Height): js.Promise[Unit] = js.native
 }
 

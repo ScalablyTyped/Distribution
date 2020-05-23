@@ -1,5 +1,7 @@
 package typings.antd
 
+import typings.antd.anon.PartialTypographyProps
+import typings.antd.anon.WeakValidationMapTypograp
 import typings.antd.textMod.TextProps
 import typings.antd.typographyParagraphMod.ParagraphProps
 import typings.antd.typographyTitleMod.TitleProps

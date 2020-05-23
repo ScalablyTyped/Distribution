@@ -48,7 +48,7 @@ object DecryptEncryptOptions {
     iv: Buffer = null,
     kdata: Buffer = null,
     mac: Buffer = null,
-    p2c: Int | Double = null,
+    p2c: js.UndefOr[Double] = js.undefined,
     p2s: Buffer = null,
     tag: Buffer = null
   ): DecryptEncryptOptions = {
@@ -65,7 +65,7 @@ object DecryptEncryptOptions {
     if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
     if (kdata != null) __obj.updateDynamic("kdata")(kdata.asInstanceOf[js.Any])
     if (mac != null) __obj.updateDynamic("mac")(mac.asInstanceOf[js.Any])
-    if (p2c != null) __obj.updateDynamic("p2c")(p2c.asInstanceOf[js.Any])
+    if (!js.isUndefined(p2c)) __obj.updateDynamic("p2c")(p2c.get.asInstanceOf[js.Any])
     if (p2s != null) __obj.updateDynamic("p2s")(p2s.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptEncryptOptions]

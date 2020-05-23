@@ -13,12 +13,12 @@ trait InappproductsBatchResponseEntry extends js.Object {
 object InappproductsBatchResponseEntry {
   @scala.inline
   def apply(
-    batchId: Int | Double = null,
+    batchId: js.UndefOr[Double] = js.undefined,
     inappproductsinsertresponse: InappproductsInsertResponse = null,
     inappproductsupdateresponse: InappproductsUpdateResponse = null
   ): InappproductsBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
     if (inappproductsinsertresponse != null) __obj.updateDynamic("inappproductsinsertresponse")(inappproductsinsertresponse.asInstanceOf[js.Any])
     if (inappproductsupdateresponse != null) __obj.updateDynamic("inappproductsupdateresponse")(inappproductsupdateresponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[InappproductsBatchResponseEntry]

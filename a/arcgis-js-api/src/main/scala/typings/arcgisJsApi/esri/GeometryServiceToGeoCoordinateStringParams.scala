@@ -72,14 +72,14 @@ object GeometryServiceToGeoCoordinateStringParams {
     sr: SpatialReference | String | Double,
     addSpaces: js.UndefOr[Boolean] = js.undefined,
     conversionMode: String = null,
-    numOfDigits: Int | Double = null,
+    numOfDigits: js.UndefOr[Double] = js.undefined,
     rounding: js.UndefOr[Boolean] = js.undefined
   ): GeometryServiceToGeoCoordinateStringParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], conversionType = conversionType.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sr = sr.asInstanceOf[js.Any])
-    if (!js.isUndefined(addSpaces)) __obj.updateDynamic("addSpaces")(addSpaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(addSpaces)) __obj.updateDynamic("addSpaces")(addSpaces.get.asInstanceOf[js.Any])
     if (conversionMode != null) __obj.updateDynamic("conversionMode")(conversionMode.asInstanceOf[js.Any])
-    if (numOfDigits != null) __obj.updateDynamic("numOfDigits")(numOfDigits.asInstanceOf[js.Any])
-    if (!js.isUndefined(rounding)) __obj.updateDynamic("rounding")(rounding.asInstanceOf[js.Any])
+    if (!js.isUndefined(numOfDigits)) __obj.updateDynamic("numOfDigits")(numOfDigits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rounding)) __obj.updateDynamic("rounding")(rounding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometryServiceToGeoCoordinateStringParams]
   }
 }

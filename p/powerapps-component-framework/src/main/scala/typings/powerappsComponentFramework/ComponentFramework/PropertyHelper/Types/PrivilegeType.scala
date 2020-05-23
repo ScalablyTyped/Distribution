@@ -5,17 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Entity privilege types.
-			 * 0 - None
-			 * 1 - Create
-			 * 2 - Read
-			 * 3 - Write
-			 * 4 - Delete
-			 * 5 - Assign
-			 * 6 - Share
-			 * 7 - Append
-			 * 8 - AppendTo
-			 */
+  * Entity privilege types.
+  * 0 - None
+  * 1 - Create
+  * 2 - Read
+  * 3 - Write
+  * 4 - Delete
+  * 5 - Assign
+  * 6 - Share
+  * 7 - Append
+  * 8 - AppendTo
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
   - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`

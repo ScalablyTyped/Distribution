@@ -1,7 +1,7 @@
 
 # Scala.js typings for webidl2js
 
-Typings are for version 15.1
+Typings are for version 16.0
 
 ## Library description:
 Auto-generates class structures for WebIDL specifications

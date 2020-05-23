@@ -13,9 +13,9 @@ trait PlotWilliamsrParamsOptions extends js.Object {
 
 object PlotWilliamsrParamsOptions {
   @scala.inline
-  def apply(period: Int | Double = null): PlotWilliamsrParamsOptions = {
+  def apply(period: js.UndefOr[Double] = js.undefined): PlotWilliamsrParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotWilliamsrParamsOptions]
   }
 }

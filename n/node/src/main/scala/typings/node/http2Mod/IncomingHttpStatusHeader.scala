@@ -11,9 +11,9 @@ trait IncomingHttpStatusHeader extends js.Object {
 
 object IncomingHttpStatusHeader {
   @scala.inline
-  def apply(Colonstatus: Int | Double = null): IncomingHttpStatusHeader = {
+  def apply(Colonstatus: js.UndefOr[Double] = js.undefined): IncomingHttpStatusHeader = {
     val __obj = js.Dynamic.literal()
-    if (Colonstatus != null) __obj.updateDynamic(":status")(Colonstatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(Colonstatus)) __obj.updateDynamic(":status")(Colonstatus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingHttpStatusHeader]
   }
 }

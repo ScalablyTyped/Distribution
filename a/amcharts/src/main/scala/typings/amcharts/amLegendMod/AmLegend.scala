@@ -1,6 +1,6 @@
 package typings.amcharts.amLegendMod
 
-import typings.amcharts.AnonDataItem
+import typings.amcharts.anon.DataItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -226,7 +226,7 @@ trait AmLegend extends js.Object {
     * @param type Either "clickLabel" or "clickMarker" or "hideItem".
     * @param handler The event handler.
     */
-  def addListener(`type`: String, handler: js.Function1[/* e */ AnonDataItem, Unit]): Unit
+  def addListener(`type`: String, handler: js.Function1[/* e */ DataItem, Unit]): Unit
   /**
     * Removes event listener from chart object.
     */
@@ -236,7 +236,7 @@ trait AmLegend extends js.Object {
 object AmLegend {
   @scala.inline
   def apply(
-    addListener: (String, js.Function1[/* e */ AnonDataItem, Unit]) => Unit,
+    addListener: (String, js.Function1[/* e */ DataItem, Unit]) => Unit,
     align: String,
     autoMargins: Boolean,
     backgroundAlpha: Double,

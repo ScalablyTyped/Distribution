@@ -36,15 +36,15 @@ object RetryOptions {
   @scala.inline
   def apply(
     afterStatusCodes: js.Array[Double] = null,
-    limit: Int | Double = null,
-    maxRetryAfter: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    maxRetryAfter: js.UndefOr[Double] = js.undefined,
     methods: js.Array[String] = null,
     statusCodes: js.Array[Double] = null
   ): RetryOptions = {
     val __obj = js.Dynamic.literal()
     if (afterStatusCodes != null) __obj.updateDynamic("afterStatusCodes")(afterStatusCodes.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (maxRetryAfter != null) __obj.updateDynamic("maxRetryAfter")(maxRetryAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetryAfter)) __obj.updateDynamic("maxRetryAfter")(maxRetryAfter.get.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]

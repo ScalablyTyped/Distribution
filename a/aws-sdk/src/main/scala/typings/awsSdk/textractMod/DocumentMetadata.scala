@@ -14,9 +14,9 @@ trait DocumentMetadata extends js.Object {
 
 object DocumentMetadata {
   @scala.inline
-  def apply(Pages: Int | Double = null): DocumentMetadata = {
+  def apply(Pages: js.UndefOr[UInteger] = js.undefined): DocumentMetadata = {
     val __obj = js.Dynamic.literal()
-    if (Pages != null) __obj.updateDynamic("Pages")(Pages.asInstanceOf[js.Any])
+    if (!js.isUndefined(Pages)) __obj.updateDynamic("Pages")(Pages.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentMetadata]
   }
 }

@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,8 +56,4 @@ trait DataLoader extends js.Object {
   def updateItem(id: Double, data: js.Any): Unit = js.native
   def waitSave(handler: WebixCallback): js.Promise[_] = js.native
 }
-
-@JSGlobal("webix.DataLoader")
-@js.native
-object DataLoader extends TopLevel[DataLoader]
 

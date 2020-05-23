@@ -30,16 +30,16 @@ object dxPolarChartValueAxisConstantLines {
     extendAxis: js.UndefOr[Boolean] = js.undefined,
     label: dxPolarChartValueAxisConstantLinesLabel = null,
     value: Double | Date | String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): dxPolarChartValueAxisConstantLines = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayBehindSeries)) __obj.updateDynamic("displayBehindSeries")(displayBehindSeries.asInstanceOf[js.Any])
-    if (!js.isUndefined(extendAxis)) __obj.updateDynamic("extendAxis")(extendAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayBehindSeries)) __obj.updateDynamic("displayBehindSeries")(displayBehindSeries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendAxis)) __obj.updateDynamic("extendAxis")(extendAxis.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartValueAxisConstantLines]
   }
 }

@@ -18,14 +18,14 @@ object ErrnoException {
     message: String,
     name: String,
     code: String = null,
-    errno: Int | Double = null,
+    errno: js.UndefOr[Double] = js.undefined,
     path: String = null,
     stack: String = null,
     syscall: String = null
   ): ErrnoException = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (errno != null) __obj.updateDynamic("errno")(errno.asInstanceOf[js.Any])
+    if (!js.isUndefined(errno)) __obj.updateDynamic("errno")(errno.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (syscall != null) __obj.updateDynamic("syscall")(syscall.asInstanceOf[js.Any])

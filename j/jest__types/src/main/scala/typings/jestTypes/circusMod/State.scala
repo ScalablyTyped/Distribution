@@ -28,18 +28,17 @@ object State {
     rootDescribeBlock: DescribeBlock,
     testTimeout: Double,
     unhandledErrors: js.Array[Exception],
-    currentlyRunningTest: TestEntry = null,
+    currentlyRunningTest: js.UndefOr[Null | TestEntry] = js.undefined,
     expand: js.UndefOr[Boolean] = js.undefined,
     originalGlobalErrorHandlers: GlobalErrorHandlers = null,
     parentProcess: Process = null,
-    testNamePattern: RegExp = null
+    testNamePattern: js.UndefOr[Null | RegExp] = js.undefined
   ): State = {
-    val __obj = js.Dynamic.literal(currentDescribeBlock = currentDescribeBlock.asInstanceOf[js.Any], hasFocusedTests = hasFocusedTests.asInstanceOf[js.Any], includeTestLocationInResult = includeTestLocationInResult.asInstanceOf[js.Any], rootDescribeBlock = rootDescribeBlock.asInstanceOf[js.Any], testTimeout = testTimeout.asInstanceOf[js.Any], unhandledErrors = unhandledErrors.asInstanceOf[js.Any])
-    if (currentlyRunningTest != null) __obj.updateDynamic("currentlyRunningTest")(currentlyRunningTest.asInstanceOf[js.Any])
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currentDescribeBlock = currentDescribeBlock.asInstanceOf[js.Any], hasFocusedTests = hasFocusedTests.asInstanceOf[js.Any], includeTestLocationInResult = includeTestLocationInResult.asInstanceOf[js.Any], rootDescribeBlock = rootDescribeBlock.asInstanceOf[js.Any], testTimeout = testTimeout.asInstanceOf[js.Any], unhandledErrors = unhandledErrors.asInstanceOf[js.Any], parentProcess = parentProcess.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentlyRunningTest)) __obj.updateDynamic("currentlyRunningTest")(currentlyRunningTest.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.get.asInstanceOf[js.Any])
     if (originalGlobalErrorHandlers != null) __obj.updateDynamic("originalGlobalErrorHandlers")(originalGlobalErrorHandlers.asInstanceOf[js.Any])
-    if (parentProcess != null) __obj.updateDynamic("parentProcess")(parentProcess.asInstanceOf[js.Any])
-    if (testNamePattern != null) __obj.updateDynamic("testNamePattern")(testNamePattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(testNamePattern)) __obj.updateDynamic("testNamePattern")(testNamePattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SIPml.Session.Publish")
 @js.native
-class Publish ()
+trait Publish
   extends typings.sipml.SIPml.Session {
   def publish(): Double = js.native
   def publish(content: js.Any): Double = js.native

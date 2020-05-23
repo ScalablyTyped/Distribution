@@ -21,9 +21,9 @@ object StyleProps {
     $isCompleted: js.UndefOr[Boolean] = js.undefined
   ): StyleProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($disabled)) __obj.updateDynamic("$disabled")($disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined($isActive)) __obj.updateDynamic("$isActive")($isActive.asInstanceOf[js.Any])
-    if (!js.isUndefined($isCompleted)) __obj.updateDynamic("$isCompleted")($isCompleted.asInstanceOf[js.Any])
+    if (!js.isUndefined($disabled)) __obj.updateDynamic("$disabled")($disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($isActive)) __obj.updateDynamic("$isActive")($isActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined($isCompleted)) __obj.updateDynamic("$isCompleted")($isCompleted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleProps]
   }
 }

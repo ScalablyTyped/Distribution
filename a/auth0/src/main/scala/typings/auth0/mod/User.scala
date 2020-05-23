@@ -43,7 +43,7 @@ object User {
     last_ip: String = null,
     last_login: String = null,
     last_password_reset: String = null,
-    logins_count: Int | Double = null,
+    logins_count: js.UndefOr[Double] = js.undefined,
     multifactor: js.Array[String] = null,
     name: String = null,
     nickname: String = null,
@@ -57,22 +57,22 @@ object User {
   ): User[A, U] = {
     val __obj = js.Dynamic.literal()
     if (app_metadata != null) __obj.updateDynamic("app_metadata")(app_metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(blocked)) __obj.updateDynamic("blocked")(blocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(blocked)) __obj.updateDynamic("blocked")(blocked.get.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.asInstanceOf[js.Any])
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.get.asInstanceOf[js.Any])
     if (family_name != null) __obj.updateDynamic("family_name")(family_name.asInstanceOf[js.Any])
     if (given_name != null) __obj.updateDynamic("given_name")(given_name.asInstanceOf[js.Any])
     if (identities != null) __obj.updateDynamic("identities")(identities.asInstanceOf[js.Any])
     if (last_ip != null) __obj.updateDynamic("last_ip")(last_ip.asInstanceOf[js.Any])
     if (last_login != null) __obj.updateDynamic("last_login")(last_login.asInstanceOf[js.Any])
     if (last_password_reset != null) __obj.updateDynamic("last_password_reset")(last_password_reset.asInstanceOf[js.Any])
-    if (logins_count != null) __obj.updateDynamic("logins_count")(logins_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(logins_count)) __obj.updateDynamic("logins_count")(logins_count.get.asInstanceOf[js.Any])
     if (multifactor != null) __obj.updateDynamic("multifactor")(multifactor.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
     if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
-    if (!js.isUndefined(phone_verified)) __obj.updateDynamic("phone_verified")(phone_verified.asInstanceOf[js.Any])
+    if (!js.isUndefined(phone_verified)) __obj.updateDynamic("phone_verified")(phone_verified.get.asInstanceOf[js.Any])
     if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])

@@ -19,13 +19,10 @@ object Result {
     context: String,
     message: String,
     error: Error = null,
-    pass: js.UndefOr[Boolean] = js.undefined,
+    pass: Boolean = null.asInstanceOf[Boolean],
     testError: Error = null
   ): Result = {
-    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(pass)) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
-    if (testError != null) __obj.updateDynamic("testError")(testError.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any], testError = testError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

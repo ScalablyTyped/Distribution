@@ -38,9 +38,9 @@ object TriggerOptions {
   ): TriggerOptions = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (!js.isUndefined(constraint)) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(constraint)) __obj.updateDynamic("constraint")(constraint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.get.asInstanceOf[js.Any])
     if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
     if (functionParams != null) __obj.updateDynamic("functionParams")(functionParams.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

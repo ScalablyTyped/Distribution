@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Core
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object AppViewBackButtonVisibility extends js.Object {
   /** The back button is shown. */
   @js.native
   sealed trait visible extends AppViewBackButtonVisibility
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppViewBackButtonVisibility with Double] = js.native
-  /* 1 */ @js.native
-  object collapsed extends TopLevel[collapsed with Double]
-  
-  /* 0 */ @js.native
-  object visible extends TopLevel[visible with Double]
   
 }
 

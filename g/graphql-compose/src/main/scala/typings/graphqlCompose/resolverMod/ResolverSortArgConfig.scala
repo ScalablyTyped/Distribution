@@ -18,13 +18,13 @@ object ResolverSortArgConfig {
   def apply[TSource, TContext, TArgs](
     name: String,
     value: StringDictionary[js.Any] | (ResolverSortArgFn[TSource, TContext, TArgs]) | String | Double | Boolean | js.Array[_],
-    deprecationReason: String = null,
-    description: String = null,
+    deprecationReason: js.UndefOr[Null | String] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
     sortTypeNameFallback: String = null
   ): ResolverSortArgConfig[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecationReason)) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (sortTypeNameFallback != null) __obj.updateDynamic("sortTypeNameFallback")(sortTypeNameFallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverSortArgConfig[TSource, TContext, TArgs]]
   }

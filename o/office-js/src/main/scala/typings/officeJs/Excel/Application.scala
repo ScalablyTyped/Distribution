@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ApplicationData
 import typings.officeJs.Excel.Interfaces.ApplicationLoadOptions
 import typings.officeJs.Excel.Interfaces.ApplicationUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Automatic
 import typings.officeJs.officeJsStrings.AutomaticExceptTables
 import typings.officeJs.officeJsStrings.Calculating
@@ -25,12 +25,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.Application")
 @js.native
-class Application () extends ClientObject {
+trait Application extends ClientObject {
   /**
     *
-    * Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+    * Returns the Excel calculation engine version used for the last full recalculation.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -44,7 +43,7 @@ class Application () extends ClientObject {
   var calculationMode: CalculationMode | Automatic | AutomaticExceptTables | Manual = js.native
   /**
     *
-    * Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+    * Returns the calculation state of the application. See Excel.CalculationState for details.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -54,6 +53,20 @@ class Application () extends ClientObject {
   var context_Application: RequestContext = js.native
   /**
     *
+    * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  val cultureInfo: CultureInfo = js.native
+  /**
+    *
+    * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  val decimalSeparator: String = js.native
+  /**
+    *
     * Returns the Iterative Calculation settings.
     In Excel on Windows and Mac, the settings will apply to the Excel Application.
     In Excel on the web and other platforms, the settings will apply to the active workbook.
@@ -61,6 +74,21 @@ class Application () extends ClientObject {
     * [Api set: ExcelApi 1.9]
     */
   val iterativeCalculation: IterativeCalculation = js.native
+  /**
+    *
+    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  val thousandsSeparator: String = js.native
+  /**
+    *
+    * Specifies if the system separators of Excel are enabled.
+    System separators include the decimal separator and thousands separator.
+    *
+    * [Api set: ExcelApi 1.11]
+    */
+  val useSystemSeparators: Boolean = js.native
   /**
     * Recalculate all currently opened workbooks in Excel.
     *
@@ -89,7 +117,7 @@ class Application () extends ClientObject {
     */
   def load(): Application = js.native
   def load(options: ApplicationLoadOptions): Application = js.native
-  def load(propertyNamesAndPaths: AnonExpand): Application = js.native
+  def load(propertyNamesAndPaths: Expand): Application = js.native
   def load(propertyNames: String): Application = js.native
   def load(propertyNames: js.Array[String]): Application = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -114,10 +142,10 @@ class Application () extends ClientObject {
     */
   def suspendApiCalculationUntilNextSync(): Unit = js.native
   /**
-    * Suspends screen updating until the next `context.sync()`is called.
-    * 
-    * **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
-    * 
+    * Suspends screen updating until the next `context.sync()` is called.
+    
+    **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
+    *
     * [Api set: ExcelApi 1.9]
     */
   def suspendScreenUpdatingUntilNextSync(): Unit = js.native

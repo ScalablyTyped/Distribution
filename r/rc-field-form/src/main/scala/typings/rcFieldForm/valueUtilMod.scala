@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-field-form/lib/utils/valueUtil", JSImport.Namespace)
+@JSImport("rc-field-form/es/utils/valueUtil", JSImport.Namespace)
 @js.native
 object valueUtilMod extends js.Object {
   def cloneByNamePathList(store: Store, namePathList: js.Array[InternalNamePath]): Store = js.native

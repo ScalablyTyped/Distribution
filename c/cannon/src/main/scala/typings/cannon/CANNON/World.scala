@@ -1,13 +1,12 @@
 package typings.cannon.CANNON
 
-import typings.cannon.AnonBroadphaser
+import typings.cannon.anon.Broadphaser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CANNON.World")
 @js.native
-class World () extends EventTarget {
+trait World extends EventTarget {
   var addBodyEvent: IBodyEvent = js.native
   var allowSleep: Boolean = js.native
   var bodies: js.Array[Body] = js.native
@@ -29,7 +28,7 @@ class World () extends EventTarget {
   var materials: js.Array[Material] = js.native
   var narrowPhase: NarrowPhase = js.native
   var nextId: Double = js.native
-  var profile: AnonBroadphaser = js.native
+  var profile: Broadphaser = js.native
   var quatNormalizeFast: Boolean = js.native
   var quatNormalizeSkip: Double = js.native
   var removeBodyEvent: IBodyEvent = js.native

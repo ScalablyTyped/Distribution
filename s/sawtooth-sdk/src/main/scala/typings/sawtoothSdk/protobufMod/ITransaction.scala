@@ -16,11 +16,15 @@ trait ITransaction extends js.Object {
 
 object ITransaction {
   @scala.inline
-  def apply(header: Uint8Array = null, headerSignature: String = null, payload: Uint8Array = null): ITransaction = {
+  def apply(
+    header: js.UndefOr[Null | Uint8Array] = js.undefined,
+    headerSignature: js.UndefOr[Null | String] = js.undefined,
+    payload: js.UndefOr[Null | Uint8Array] = js.undefined
+  ): ITransaction = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (headerSignature != null) __obj.updateDynamic("headerSignature")(headerSignature.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerSignature)) __obj.updateDynamic("headerSignature")(headerSignature.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransaction]
   }
 }

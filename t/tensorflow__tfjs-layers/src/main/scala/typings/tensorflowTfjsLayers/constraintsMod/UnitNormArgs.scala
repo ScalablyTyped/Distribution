@@ -24,9 +24,9 @@ trait UnitNormArgs extends js.Object {
 
 object UnitNormArgs {
   @scala.inline
-  def apply(axis: Int | Double = null): UnitNormArgs = {
+  def apply(axis: js.UndefOr[Double] = js.undefined): UnitNormArgs = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitNormArgs]
   }
 }

@@ -50,7 +50,7 @@ object JQueryMaskedInputOptions {
     onincomplete: () => Unit = null,
     placeholder: String = null,
     radixPoint: String = null,
-    repeat: Int | Double = null,
+    repeat: js.UndefOr[Double] = js.undefined,
     rightAlignNumerics: js.UndefOr[Boolean] = js.undefined,
     showMaskOnFocus: js.UndefOr[Boolean] = js.undefined,
     showMaskOnHover: js.UndefOr[Boolean] = js.undefined,
@@ -59,13 +59,13 @@ object JQueryMaskedInputOptions {
   ): JQueryMaskedInputOptions = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUnmask)) __obj.updateDynamic("autoUnmask")(autoUnmask.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearIncomplete)) __obj.updateDynamic("clearIncomplete")(clearIncomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearMaskOnLostFocus)) __obj.updateDynamic("clearMaskOnLostFocus")(clearMaskOnLostFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUnmask)) __obj.updateDynamic("autoUnmask")(autoUnmask.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearIncomplete)) __obj.updateDynamic("clearIncomplete")(clearIncomplete.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearMaskOnLostFocus)) __obj.updateDynamic("clearMaskOnLostFocus")(clearMaskOnLostFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.get.asInstanceOf[js.Any])
     if (isComplete != null) __obj.updateDynamic("isComplete")(js.Any.fromFunction2(isComplete))
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
+    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.get.asInstanceOf[js.Any])
     if (onBeforeMask != null) __obj.updateDynamic("onBeforeMask")(js.Any.fromFunction1(onBeforeMask))
     if (onBeforePaste != null) __obj.updateDynamic("onBeforePaste")(js.Any.fromFunction1(onBeforePaste))
     if (onKeyValidation != null) __obj.updateDynamic("onKeyValidation")(js.Any.fromFunction1(onKeyValidation))
@@ -75,11 +75,11 @@ object JQueryMaskedInputOptions {
     if (onincomplete != null) __obj.updateDynamic("onincomplete")(js.Any.fromFunction0(onincomplete))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (radixPoint != null) __obj.updateDynamic("radixPoint")(radixPoint.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightAlignNumerics)) __obj.updateDynamic("rightAlignNumerics")(rightAlignNumerics.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnFocus)) __obj.updateDynamic("showMaskOnFocus")(showMaskOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnHover)) __obj.updateDynamic("showMaskOnHover")(showMaskOnHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolTip)) __obj.updateDynamic("showToolTip")(showToolTip.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightAlignNumerics)) __obj.updateDynamic("rightAlignNumerics")(rightAlignNumerics.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMaskOnFocus)) __obj.updateDynamic("showMaskOnFocus")(showMaskOnFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMaskOnHover)) __obj.updateDynamic("showMaskOnHover")(showMaskOnHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToolTip)) __obj.updateDynamic("showToolTip")(showToolTip.get.asInstanceOf[js.Any])
     if (skipOptionalPartCharacter != null) __obj.updateDynamic("skipOptionalPartCharacter")(skipOptionalPartCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryMaskedInputOptions]
   }

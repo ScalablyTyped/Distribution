@@ -1,7 +1,7 @@
 package typings.promisePg.mod
 
-import typings.pg.TypeofPg
-import typings.pg.TypeofarrayParser
+import typings.pg.anon.TypeofPg
+import typings.pg.anon.TypeofarrayParser
 import typings.pg.mod.ConnectionConfig
 import typings.pg.mod.Defaults_
 import typings.pg.mod.PoolConfig

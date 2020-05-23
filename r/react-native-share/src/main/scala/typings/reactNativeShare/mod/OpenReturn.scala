@@ -14,7 +14,7 @@ object OpenReturn {
   def apply(app: String = null, dismissedAction: js.UndefOr[Boolean] = js.undefined): OpenReturn = {
     val __obj = js.Dynamic.literal()
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissedAction)) __obj.updateDynamic("dismissedAction")(dismissedAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissedAction)) __obj.updateDynamic("dismissedAction")(dismissedAction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenReturn]
   }
 }

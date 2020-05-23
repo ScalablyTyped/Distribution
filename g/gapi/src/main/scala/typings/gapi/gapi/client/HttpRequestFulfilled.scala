@@ -18,12 +18,12 @@ object HttpRequestFulfilled {
     body: String,
     result: T,
     headers: js.Array[_] = null,
-    status: Int | Double = null,
+    status: js.UndefOr[Double] = js.undefined,
     statusText: String = null
   ): HttpRequestFulfilled[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpRequestFulfilled[T]]
   }

@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.baseCallbacksMod
 
-import typings.tensorflowTfjsLayers.AnonCallbackList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +17,6 @@ object configureCallbacks extends js.Object {
     batchSize: Double,
     doValidation: Boolean,
     callbackMetrics: js.Array[String]
-  ): AnonCallbackList = js.native
+  ): typings.tensorflowTfjsLayers.anon.CallbackList = js.native
 }
 

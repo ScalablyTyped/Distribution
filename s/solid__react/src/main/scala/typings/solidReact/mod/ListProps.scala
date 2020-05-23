@@ -1,6 +1,6 @@
 package typings.solidReact.mod
 
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,15 +31,15 @@ object ListProps {
     children: (/* listItem */ LDflexValue, /* index */ Double) => Element = null,
     container: /* items */ Element => Element = null,
     filter: (/* item */ LDflexValue, /* index */ Double, /* array */ js.Array[LDflexValue]) => /* is @solid/react.@solid/react.LDflexValue */ Boolean = null,
-    limit: Int | Double = null,
-    offset: Int | Double = null
+    limit: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined
   ): ListProps = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction2(children))
     if (container != null) __obj.updateDynamic("container")(js.Any.fromFunction1(container))
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction3(filter))
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProps]
   }
 }

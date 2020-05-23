@@ -1,7 +1,7 @@
 package typings.antdMobile.listItemMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antdMobile.PartialListItemProps
+import typings.antdMobile.anon.PartialListItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.uifabricUtilities.customizerTypesMod
 
-import typings.uifabricUtilities.ReadonlyICustomizerContex
+import typings.uifabricUtilities.anon.ReadonlyICustomizerContex
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.customizationsMod.ISettings
 import typings.uifabricUtilities.customizationsMod.ISettingsFunction

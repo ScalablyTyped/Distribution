@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("FirebaseFirestore.QuerySnapshot")
 @js.native
-class QuerySnapshot[T] protected () extends js.Object {
+trait QuerySnapshot[T] extends js.Object {
   /** An array of all the documents in the QuerySnapshot. */
   val docs: js.Array[QueryDocumentSnapshot[T]] = js.native
   /** True if there are no documents in the QuerySnapshot. */

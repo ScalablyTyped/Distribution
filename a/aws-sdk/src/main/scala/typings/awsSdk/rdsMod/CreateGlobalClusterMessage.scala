@@ -40,21 +40,21 @@ object CreateGlobalClusterMessage {
   @scala.inline
   def apply(
     DatabaseName: String = null,
-    DeletionProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
     Engine: String = null,
     EngineVersion: String = null,
     GlobalClusterIdentifier: String = null,
     SourceDBClusterIdentifier: String = null,
-    StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
   ): CreateGlobalClusterMessage = {
     val __obj = js.Dynamic.literal()
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (GlobalClusterIdentifier != null) __obj.updateDynamic("GlobalClusterIdentifier")(GlobalClusterIdentifier.asInstanceOf[js.Any])
     if (SourceDBClusterIdentifier != null) __obj.updateDynamic("SourceDBClusterIdentifier")(SourceDBClusterIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGlobalClusterMessage]
   }
 }

@@ -33,7 +33,7 @@ object AchievementResetResponse {
     if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
     if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementResetResponse]
   }
 }

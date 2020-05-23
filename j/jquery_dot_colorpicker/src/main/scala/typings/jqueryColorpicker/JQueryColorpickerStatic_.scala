@@ -2,12 +2,13 @@ package typings.jqueryColorpicker
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jqueryColorpicker.JQueryColorpickerStatic.RGB
+import typings.jqueryColorpicker.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JQueryColorpickerStatic_ extends js.Object {
-  var Color: AnonInstantiable
+  var Color: Instantiable
   var limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]]
   var parsers: StringDictionary[js.Function1[/* color */ js.Any, _]]
   var parts: StringDictionary[js.Function1[/* inst */ js.Any, _]]
@@ -20,7 +21,7 @@ trait JQueryColorpickerStatic_ extends js.Object {
 object JQueryColorpickerStatic_ {
   @scala.inline
   def apply(
-    Color: AnonInstantiable,
+    Color: Instantiable,
     limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]],
     parsers: StringDictionary[js.Function1[/* color */ js.Any, _]],
     parts: StringDictionary[js.Function1[/* inst */ js.Any, _]],

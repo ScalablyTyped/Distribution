@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.angularCore.mod.DebugNode because Already inherited
 - typings.angularCore.mod.DebugElement because var conflicts: componentInstance, context, injector, listeners, parent, providerTokens, references. Inlined name, properties, attributes, classes, styles, childNodes, nativeElement, children, query, queryAll, queryAllNodes, triggerEventHandler */ trait DebugElementPOSTR3 extends DebugNodePOSTR3 {
   @JSName("attributes")

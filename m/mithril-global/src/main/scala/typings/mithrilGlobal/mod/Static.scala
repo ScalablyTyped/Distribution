@@ -1,16 +1,15 @@
 package typings.mithrilGlobal.mod
 
-import typings.mithril.AnonKey
-import typings.mithril.AnonParams
-import typings.mithril.AnonUrl
-import typings.mithril.Fn0
-import typings.mithril.FnCallElementComponent
-import typings.mithril.FnCallUrlOptions
-import typings.mithril.JsonpOptionsurlstring
-import typings.mithril.Lifecycleanyanykeystringa
+import typings.mithril.anon.Fn0
+import typings.mithril.anon.FnCallElementComponent
+import typings.mithril.anon.FnCallUrlOptions
+import typings.mithril.anon.JsonpOptionsurlstring
+import typings.mithril.anon.Key
+import typings.mithril.anon.Lifecycleanyanykeystringa
+import typings.mithril.anon.Url
 import typings.mithril.mod.Params
 import typings.mithril.mod.Redraw
-import typings.mithrilGlobal.AnonCall
+import typings.mithrilGlobal.anon.Call
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +31,7 @@ trait Static extends js.Object {
   @JSName("route")
   var route_Original: typings.mithril.mod.Route = js.native
   @JSName("stream")
-  var stream_Original: AnonCall = js.native
+  var stream_Original: Call = js.native
   /** Creates a virtual element (Vnode). */
   def apply(
     selector: String,
@@ -46,7 +45,7 @@ trait Static extends js.Object {
   /** Creates a virtual element (Vnode). */
   def apply[Attrs, State](
     component: typings.mithril.mod.ComponentTypes[Attrs, State],
-    attributes: Attrs with (typings.mithril.mod.Lifecycle[Attrs, State]) with AnonKey,
+    attributes: Attrs with (typings.mithril.mod.Lifecycle[Attrs, State]) with Key,
     args: typings.mithril.mod.Children*
   ): typings.mithril.mod.Vnode[Attrs, State] = js.native
   /** Build path name */
@@ -62,13 +61,13 @@ trait Static extends js.Object {
   def mount(element: Element): Unit = js.native
   def mount(element: Element, component: typings.mithril.mod.ComponentTypes[_, _]): Unit = js.native
   /** Parse path name */
-  def parsePathname(url: String): AnonParams = js.native
+  def parsePathname(url: String): typings.mithril.anon.Params = js.native
   /** Returns an object with key/value pairs parsed from a string of the form: ?a=1&b=2 */
   def parseQueryString(queryString: String): Params = js.native
   /** Manually triggers an asynchronous redraw of mounted components. */
   def redraw(): Unit = js.native
   def render(el: Element, vnodes: typings.mithril.mod.Children): Unit = js.native
-  def request[T](options: typings.mithril.mod.RequestOptions[T] with AnonUrl): js.Promise[T] = js.native
+  def request[T](options: typings.mithril.mod.RequestOptions[T] with Url): js.Promise[T] = js.native
   def request[T](url: String): js.Promise[T] = js.native
   def request[T](url: String, options: typings.mithril.mod.RequestOptions[T]): js.Promise[T] = js.native
   /** Creates application routes and mounts Components and/or RouteResolvers to a DOM element. */

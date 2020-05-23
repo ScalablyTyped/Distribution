@@ -1,9 +1,13 @@
 package typings.ionicCore
 
-import typings.ionicCore.componentsMod._Global_.HTMLIonTabElement
-import typings.ionicCore.componentsMod._Global_.HTMLIonTabsElement
+import typings.ionicCore.anon.Tab
+import typings.ionicCore.componentsMod.global.HTMLIonTabElement
+import typings.ionicCore.componentsMod.global.HTMLIonTabsElement
 import typings.ionicCore.interfaceMod.NavOutlet
+import typings.ionicCore.interfaceMod.RouteID
 import typings.ionicCore.interfaceMod.RouteWrite
+import typings.ionicCore.interfaceMod.RouterDirection
+import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,11 +27,11 @@ object tabsMod extends js.Object {
     /**
       * Emitted when the navigation has finished transitioning to a new component.
       */
-    var ionTabsDidChange: EventEmitter[AnonTab] = js.native
+    var ionTabsDidChange: EventEmitter[Tab] = js.native
     /**
       * Emitted when the navigation is about to transition to a new component.
       */
-    var ionTabsWillChange: EventEmitter[AnonTab] = js.native
+    var ionTabsWillChange: EventEmitter[Tab] = js.native
     var leavingTab: js.UndefOr[js.Any] = js.native
     var notifyRouter: js.Any = js.native
     var onTabClicked: js.Any = js.native
@@ -40,6 +44,8 @@ object tabsMod extends js.Object {
     var useRouter: Boolean = js.native
     def componentWillLoad(): js.Promise[Unit] = js.native
     def componentWillRender(): Unit = js.native
+    /* CompleteClass */
+    override def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
     /**
       * Get the currently selected tab.
       */
@@ -61,6 +67,8 @@ object tabsMod extends js.Object {
     def select(tab: HTMLIonTabElement): js.Promise[Boolean] = js.native
     /** @internal */
     def setRouteId(id: String): js.Promise[RouteWrite] = js.native
+    /* CompleteClass */
+    override def setRouteId(id: String, params: js.UndefOr[ComponentProps[Null]], direction: RouterDirection): js.Promise[RouteWrite] = js.native
     /* private */ def tabs: js.Any = js.native
   }
   

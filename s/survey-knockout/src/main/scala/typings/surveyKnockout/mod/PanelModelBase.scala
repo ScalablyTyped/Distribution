@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.IParentElement because var conflicts: isReadOnly. Inlined addElement, removeElement
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
 - typings.surveyKnockout.mod.IPanel because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name. Inlined getChildrenLayoutType, getQuestionTitleLocation, getQuestionStartIndex, parent, elementWidthChanged, indexOf, elements */ @JSImport("survey-knockout", "PanelModelBase")
@@ -166,6 +166,7 @@ class PanelModelBase ()
   def containsElement(element: IElement): Boolean = js.native
   /* protected */ def createNewPanel(name: String): PanelModel = js.native
   /* protected */ def createRow(): QuestionRowModel = js.native
+  def dispose(): Unit = js.native
   /* protected */ def dragDropAddTarget(dragDropInfo: DragDropInfo): Unit = js.native
   /* protected */ def dragDropFindRow(findElement: ISurveyElement): QuestionRowModel = js.native
   def dragDropMoveElement(src: IElement, target: IElement, targetIndex: Double): Unit = js.native

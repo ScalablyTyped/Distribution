@@ -44,7 +44,7 @@ object ClassifyParams {
     images_filename: String = null,
     owners: js.Array[String] = null,
     return_response: js.UndefOr[Boolean] = js.undefined,
-    threshold: Int | Double = null,
+    threshold: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): ClassifyParams = {
     val __obj = js.Dynamic.literal()
@@ -55,8 +55,8 @@ object ClassifyParams {
     if (images_file_content_type != null) __obj.updateDynamic("images_file_content_type")(images_file_content_type.asInstanceOf[js.Any])
     if (images_filename != null) __obj.updateDynamic("images_filename")(images_filename.asInstanceOf[js.Any])
     if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifyParams]
   }

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 
 trait IGrouper extends ISorter {
   /** [Method] Returns the value for grouping to be used
-  		* @param instance Ext.data.Model The Model instance
-  		* @returns String The group string for this model
-  		*/
+    * @param instance Ext.data.Model The Model instance
+    * @returns String The group string for this model
+    */
   var getGroupString: js.UndefOr[js.Function1[/* instance */ js.UndefOr[IModel], String]] = js.undefined
 }
 
@@ -63,7 +63,7 @@ object IGrouper {
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1(setDirection))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sorterFn != null) __obj.updateDynamic("sorterFn")(sorterFn.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))

@@ -15,18 +15,18 @@ trait NavigationControlOptions extends js.Object {
 object NavigationControlOptions {
   @scala.inline
   def apply(
-    anchor: Int | Double = null,
+    anchor: js.UndefOr[ControlAnchor] = js.undefined,
     enableGeolocation: js.UndefOr[Boolean] = js.undefined,
     offset: Size = null,
     showZoomInfo: js.UndefOr[Boolean] = js.undefined,
-    `type`: Int | Double = null
+    `type`: js.UndefOr[NavigationControlType] = js.undefined
   ): NavigationControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGeolocation)) __obj.updateDynamic("enableGeolocation")(enableGeolocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGeolocation)) __obj.updateDynamic("enableGeolocation")(enableGeolocation.get.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(showZoomInfo)) __obj.updateDynamic("showZoomInfo")(showZoomInfo.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(showZoomInfo)) __obj.updateDynamic("showZoomInfo")(showZoomInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationControlOptions]
   }
 }

@@ -12,7 +12,7 @@ trait goAction[T /* <: Double */] extends Action[ROUTERSlashGO] {
 
 object goAction {
   @scala.inline
-  def apply[T /* <: Double */](payload: T, `type`: ROUTERSlashGO): goAction[T] = {
+  def apply[T](payload: T, `type`: ROUTERSlashGO): goAction[T] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[goAction[T]]

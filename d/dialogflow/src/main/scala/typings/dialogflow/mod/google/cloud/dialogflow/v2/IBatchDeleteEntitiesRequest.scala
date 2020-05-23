@@ -16,11 +16,15 @@ trait IBatchDeleteEntitiesRequest extends js.Object {
 
 object IBatchDeleteEntitiesRequest {
   @scala.inline
-  def apply(entityValues: js.Array[String] = null, languageCode: String = null, parent: String = null): IBatchDeleteEntitiesRequest = {
+  def apply(
+    entityValues: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    languageCode: js.UndefOr[Null | String] = js.undefined,
+    parent: js.UndefOr[Null | String] = js.undefined
+  ): IBatchDeleteEntitiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (entityValues != null) __obj.updateDynamic("entityValues")(entityValues.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityValues)) __obj.updateDynamic("entityValues")(entityValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageCode)) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchDeleteEntitiesRequest]
   }
 }

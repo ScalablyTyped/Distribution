@@ -13,30 +13,30 @@ trait IProvider extends IObservable {
   /** [Method] Abstract methods for subclasses to implement  */
   var disconnect: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the value of id
-  		* @returns String
-  		*/
+    * @returns String
+    */
   @JSName("getId")
   var getId_IProvider: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var id: js.UndefOr[String] = js.undefined
   /** [Method] Returns whether or not the server side is currently connected
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isConnected: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Property] (Boolean) */
   var isProvider: js.UndefOr[Boolean] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IProvider: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
   ] = js.undefined
   /** [Method] Sets the value of id
-  		* @param id String The new value.
-  		*/
+    * @param id String The new value.
+    */
   var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -129,7 +129,7 @@ object IProvider {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isConnected != null) __obj.updateDynamic("isConnected")(js.Any.fromFunction0(isConnected))
-    if (!js.isUndefined(isProvider)) __obj.updateDynamic("isProvider")(isProvider.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProvider)) __obj.updateDynamic("isProvider")(isProvider.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -148,7 +148,7 @@ object IProvider {
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setId != null) __obj.updateDynamic("setId")(js.Any.fromFunction1(setId))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

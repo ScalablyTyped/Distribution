@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.TreeGrid
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object ColumnResizeMode extends js.Object {
   ///In this mode columns are stretched with control width in load time and on resizing action current column width was adjusted with all columns.
   @js.native
   sealed trait Normal extends ColumnResizeMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ColumnResizeMode with Double] = js.native
-  /* 0 */ @js.native
-  object FixedColumns extends TopLevel[FixedColumns with Double]
-  
-  /* 1 */ @js.native
-  object NextColumn extends TopLevel[NextColumn with Double]
-  
-  /* 2 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
   
 }
 

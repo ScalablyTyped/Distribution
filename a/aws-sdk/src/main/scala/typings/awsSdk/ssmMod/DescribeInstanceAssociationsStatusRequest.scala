@@ -22,9 +22,13 @@ trait DescribeInstanceAssociationsStatusRequest extends js.Object {
 
 object DescribeInstanceAssociationsStatusRequest {
   @scala.inline
-  def apply(InstanceId: InstanceId, MaxResults: Int | Double = null, NextToken: NextToken = null): DescribeInstanceAssociationsStatusRequest = {
+  def apply(
+    InstanceId: InstanceId,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: NextToken = null
+  ): DescribeInstanceAssociationsStatusRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstanceAssociationsStatusRequest]
   }

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Outlook.Reminder")
 @js.native
-class Reminder protected () extends js.Object {
+trait Reminder extends js.Object {
   val Application: typings.activexOutlook.Outlook.Application = js.native
   val Caption: String = js.native
   val Class: OlObjectClass = js.native

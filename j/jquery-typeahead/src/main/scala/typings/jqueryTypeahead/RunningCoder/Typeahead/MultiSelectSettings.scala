@@ -27,16 +27,16 @@ object MultiSelectSettings {
     cancelOnBackspace: js.UndefOr[Boolean] = js.undefined,
     data: js.Array[_] | js.Function0[_] = null,
     href: String | (js.Function1[/* item */ js.UndefOr[js.Any], String]) = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     limitTemplate: String | (js.Function1[/* query */ js.UndefOr[String], String]) = null,
     matchOn: String | js.Array[_] = null
   ): MultiSelectSettings = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelOnBackspace)) __obj.updateDynamic("cancelOnBackspace")(cancelOnBackspace.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelOnBackspace)) __obj.updateDynamic("cancelOnBackspace")(cancelOnBackspace.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (limitTemplate != null) __obj.updateDynamic("limitTemplate")(limitTemplate.asInstanceOf[js.Any])
     if (matchOn != null) __obj.updateDynamic("matchOn")(matchOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelectSettings]

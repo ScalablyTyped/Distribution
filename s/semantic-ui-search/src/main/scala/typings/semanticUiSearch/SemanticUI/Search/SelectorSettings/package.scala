@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorSettings {
-  type Param = (typings.semanticUiSearch.PickImplprompt | typings.semanticUiSearch.PickImplsearchButton | typings.semanticUiSearch.PickImplresults | typings.semanticUiSearch.PickImplcategoryCategory | typings.semanticUiSearch.PickImplresult) with typings.semanticUiSearch.PartialPickImplkeyofImplPrompt
+  type Param = (typings.semanticUiSearch.anon.PickImplprompt | typings.semanticUiSearch.anon.PickImplsearchButton | typings.semanticUiSearch.anon.PickImplresults | typings.semanticUiSearch.anon.PickImplcategoryCategory | typings.semanticUiSearch.anon.PickImplresult) with typings.semanticUiSearch.anon.PartialPickImplkeyofImplPrompt
 }

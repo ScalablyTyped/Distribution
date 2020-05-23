@@ -18,7 +18,7 @@ object LevelDownClearOptions {
   def apply(
     gt: Bytes = null,
     gte: Bytes = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     lt: Bytes = null,
     lte: Bytes = null,
     reverse: js.UndefOr[Boolean] = js.undefined
@@ -26,10 +26,10 @@ object LevelDownClearOptions {
     val __obj = js.Dynamic.literal()
     if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
     if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
     if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LevelDownClearOptions]
   }
 }

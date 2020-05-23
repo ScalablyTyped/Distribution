@@ -30,21 +30,21 @@ object QueryEntitiesParams {
     collection_id: String,
     environment_id: String,
     context: QueryEntitiesContext = null,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     entity: QueryEntitiesEntity = null,
-    evidence_count: Int | Double = null,
+    evidence_count: js.UndefOr[Double] = js.undefined,
     feature: String = null,
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): QueryEntitiesParams = {
     val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
-    if (evidence_count != null) __obj.updateDynamic("evidence_count")(evidence_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(evidence_count)) __obj.updateDynamic("evidence_count")(evidence_count.get.asInstanceOf[js.Any])
     if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryEntitiesParams]
   }
 }

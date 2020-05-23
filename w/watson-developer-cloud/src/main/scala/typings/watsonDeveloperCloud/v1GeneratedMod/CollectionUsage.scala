@@ -14,10 +14,10 @@ trait CollectionUsage extends js.Object {
 
 object CollectionUsage {
   @scala.inline
-  def apply(available: Int | Double = null, maximum_allowed: Int | Double = null): CollectionUsage = {
+  def apply(available: js.UndefOr[Double] = js.undefined, maximum_allowed: js.UndefOr[Double] = js.undefined): CollectionUsage = {
     val __obj = js.Dynamic.literal()
-    if (available != null) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
-    if (maximum_allowed != null) __obj.updateDynamic("maximum_allowed")(maximum_allowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximum_allowed)) __obj.updateDynamic("maximum_allowed")(maximum_allowed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionUsage]
   }
 }

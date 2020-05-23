@@ -10,11 +10,11 @@ trait CreateLabelRenderParamsXmlParams extends js.Object {
   /** The color of the label. */
   var labelColor: js.UndefOr[Color] = js.undefined
   /**
-  		 * If true, the PNG will be generated using the display resolution.
-  		 * If false, the PNG will be generated using the printer resolution.
-  		 * If the display resolution is used, the resulting PNG will be smaller.
-  		 * Use the printer resolution if the resulting image will be zoomed. This will give the zoomed preview better quality.
-  		 */
+    * If true, the PNG will be generated using the display resolution.
+    * If false, the PNG will be generated using the printer resolution.
+    * If the display resolution is used, the resulting PNG will be smaller.
+    * Use the printer resolution if the resulting image will be zoomed. This will give the zoomed preview better quality.
+    */
   var pngUseDisplayResolution: js.UndefOr[Boolean] = js.undefined
   /** The color of label shadow. */
   var shadowColor: js.UndefOr[Color] = js.undefined
@@ -29,14 +29,14 @@ object CreateLabelRenderParamsXmlParams {
     labelColor: Color = null,
     pngUseDisplayResolution: js.UndefOr[Boolean] = js.undefined,
     shadowColor: Color = null,
-    shadowDepth: Int | Double = null
+    shadowDepth: js.UndefOr[Double] = js.undefined
   ): CreateLabelRenderParamsXmlParams = {
     val __obj = js.Dynamic.literal()
     if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection.asInstanceOf[js.Any])
     if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(pngUseDisplayResolution)) __obj.updateDynamic("pngUseDisplayResolution")(pngUseDisplayResolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(pngUseDisplayResolution)) __obj.updateDynamic("pngUseDisplayResolution")(pngUseDisplayResolution.get.asInstanceOf[js.Any])
     if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (shadowDepth != null) __obj.updateDynamic("shadowDepth")(shadowDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowDepth)) __obj.updateDynamic("shadowDepth")(shadowDepth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLabelRenderParamsXmlParams]
   }
 }

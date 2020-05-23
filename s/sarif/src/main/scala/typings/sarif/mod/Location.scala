@@ -39,7 +39,7 @@ object Location {
   @scala.inline
   def apply(
     annotations: js.Array[Region] = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     logicalLocations: js.Array[LogicalLocation] = null,
     message: Message = null,
     physicalLocation: PhysicalLocation = null,
@@ -48,7 +48,7 @@ object Location {
   ): Location = {
     val __obj = js.Dynamic.literal()
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (logicalLocations != null) __obj.updateDynamic("logicalLocations")(logicalLocations.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (physicalLocation != null) __obj.updateDynamic("physicalLocation")(physicalLocation.asInstanceOf[js.Any])

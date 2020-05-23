@@ -1,0 +1,19 @@
+package typings.baidumapWebSdk.global.BMap
+
+import typings.baidumapWebSdk.BMap.TransitRouteOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("BMap.TransitRoute")
+@js.native
+class TransitRoute protected ()
+  extends typings.baidumapWebSdk.BMap.TransitRoute {
+  def this(location: String) = this()
+  def this(location: typings.baidumapWebSdk.BMap.Map) = this()
+  def this(location: typings.baidumapWebSdk.BMap.Point) = this()
+  def this(location: String, opts: TransitRouteOptions) = this()
+  def this(location: typings.baidumapWebSdk.BMap.Map, opts: TransitRouteOptions) = this()
+  def this(location: typings.baidumapWebSdk.BMap.Point, opts: TransitRouteOptions) = this()
+}
+

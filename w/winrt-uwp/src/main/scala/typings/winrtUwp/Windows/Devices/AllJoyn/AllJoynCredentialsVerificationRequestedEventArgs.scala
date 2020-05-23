@@ -10,27 +10,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Used to allow the application to indicate whether the credentials provided by a peer are valid. */
-@JSGlobal("Windows.Devices.AllJoyn.AllJoynCredentialsVerificationRequestedEventArgs")
-@js.native
-abstract class AllJoynCredentialsVerificationRequestedEventArgs () extends js.Object {
+trait AllJoynCredentialsVerificationRequestedEventArgs extends js.Object {
   /** The mechanism used to authenticate credentials. */
-  var authenticationMechanism: AllJoynAuthenticationMechanism = js.native
+  var authenticationMechanism: AllJoynAuthenticationMechanism
   /** The cryptography certificate provided for authentication. */
-  var peerCertificate: Certificate = js.native
+  var peerCertificate: Certificate
   /** The category of an errors encountered authenticating the cryptography certificate. */
-  var peerCertificateErrorSeverity: SocketSslErrorSeverity = js.native
+  var peerCertificateErrorSeverity: SocketSslErrorSeverity
   /** A list of errors that occurred during authentication of the provided cryptography certificate. */
-  var peerCertificateErrors: IVectorView[ChainValidationResult] = js.native
+  var peerCertificateErrors: IVectorView[ChainValidationResult]
   /** Retrieves the intermediate certificates sent during authentication. */
-  var peerIntermediateCertificates: IVectorView[Certificate] = js.native
+  var peerIntermediateCertificates: IVectorView[Certificate]
   /** The unique bus name of the remote app being authenticated. */
-  var peerUniqueName: String = js.native
+  var peerUniqueName: String
   /** Calling this method indicates that the credentials provided for authentication are valid. */
-  def accept(): Unit = js.native
+  def accept(): Unit
   /**
     * Conducts verification of provided of credentials asynchronously.
     * @return The verification deferral.
     */
-  def getDeferral(): Deferral = js.native
+  def getDeferral(): Deferral
+}
+
+object AllJoynCredentialsVerificationRequestedEventArgs {
+  @scala.inline
+  def apply(
+    accept: () => Unit,
+    authenticationMechanism: AllJoynAuthenticationMechanism,
+    getDeferral: () => Deferral,
+    peerCertificate: Certificate,
+    peerCertificateErrorSeverity: SocketSslErrorSeverity,
+    peerCertificateErrors: IVectorView[ChainValidationResult],
+    peerIntermediateCertificates: IVectorView[Certificate],
+    peerUniqueName: String
+  ): AllJoynCredentialsVerificationRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept), authenticationMechanism = authenticationMechanism.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral), peerCertificate = peerCertificate.asInstanceOf[js.Any], peerCertificateErrorSeverity = peerCertificateErrorSeverity.asInstanceOf[js.Any], peerCertificateErrors = peerCertificateErrors.asInstanceOf[js.Any], peerIntermediateCertificates = peerIntermediateCertificates.asInstanceOf[js.Any], peerUniqueName = peerUniqueName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AllJoynCredentialsVerificationRequestedEventArgs]
+  }
 }
 

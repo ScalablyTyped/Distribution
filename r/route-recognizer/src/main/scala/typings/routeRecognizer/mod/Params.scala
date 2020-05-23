@@ -18,12 +18,12 @@ object Params {
   def apply(
     NumberDictionary: /* key */ NumberDictionary[Opaque] = null,
     StringDictionary: /* key */ StringDictionary[Opaque] = null,
-    queryParams: QueryParams = null
+    queryParams: js.UndefOr[Null | QueryParams] = js.undefined
   ): Params = {
     val __obj = js.Dynamic.literal()
     if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryParams)) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

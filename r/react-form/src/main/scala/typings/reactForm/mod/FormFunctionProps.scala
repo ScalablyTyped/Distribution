@@ -3,13 +3,12 @@ package typings.reactForm.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactType
 import typings.react.mod.SyntheticEvent
-import typings.reactForm.AnonFormApi
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactForm.mod.FormApi because var conflicts: errors, touched, values. Inlined warnings, successes, submits, submitted, asyncValidations, validating, validationFailures, validationFailed, submitForm, setValue, setAllValues, setError, setWarning, setSuccess, setTouched, setAllTouched, addValue, removeValue, swapValues, resetAll, getFormState, setFormState */ trait FormFunctionProps
   extends FormProps
      with FormState {
@@ -34,7 +33,7 @@ import scala.scalajs.js.annotation._
   def setValue(fieldName: String, value: js.Any): Unit
   def setWarning(field: String, warning: String): Unit
   // Methods
-  def submitForm(event: SyntheticEvent[_, Event_]): Unit
+  def submitForm(event: SyntheticEvent[_, Event]): Unit
   def swapValues(name: String, index1: Double, index2: Double): Unit
 }
 
@@ -56,7 +55,7 @@ object FormFunctionProps {
     setTouched: (String, Boolean) => Unit,
     setValue: (String, js.Any) => Unit,
     setWarning: (String, String) => Unit,
-    submitForm: SyntheticEvent[_, Event_] => Unit,
+    submitForm: SyntheticEvent[_, Event] => Unit,
     submits: Double,
     submitted: Boolean,
     successes: FormErrors,
@@ -68,14 +67,14 @@ object FormFunctionProps {
     values: FormValues,
     warnings: FormErrors,
     asyncValidators: StringDictionary[js.Function1[/* value */ FormValue, js.Promise[_]]] = null,
-    component: ReactType[AnonFormApi] = null,
+    component: ReactType[typings.reactForm.anon.FormApi] = null,
     defaultValues: FormValues = null,
     dirty: js.UndefOr[Boolean] = js.undefined,
     dontPreventDefault: js.UndefOr[Boolean] = js.undefined,
     dontValidateOnMount: js.UndefOr[Boolean] = js.undefined,
     formDidUpdate: /* formState */ FormState => Unit = null,
     getApi: /* formApi */ FormApi => Unit = null,
-    onSubmit: (/* values */ FormValues, /* submissionEvent */ SyntheticEvent[_, Event_], /* formApi */ FormApi) => Unit = null,
+    onSubmit: (/* values */ FormValues, /* submissionEvent */ SyntheticEvent[_, Event], /* formApi */ FormApi) => Unit = null,
     onSubmitFailure: (/* errors */ FormErrors, /* formApi */ FormApi) => Unit = null,
     preSubmit: (/* values */ FormValues, /* formApi */ FormApi) => FormValues = null,
     preValidate: /* values */ FormValues => FormValues = null,
@@ -89,9 +88,9 @@ object FormFunctionProps {
     if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (defaultValues != null) __obj.updateDynamic("defaultValues")(defaultValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.asInstanceOf[js.Any])
-    if (!js.isUndefined(dontPreventDefault)) __obj.updateDynamic("dontPreventDefault")(dontPreventDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(dontValidateOnMount)) __obj.updateDynamic("dontValidateOnMount")(dontValidateOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dontPreventDefault)) __obj.updateDynamic("dontPreventDefault")(dontPreventDefault.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dontValidateOnMount)) __obj.updateDynamic("dontValidateOnMount")(dontValidateOnMount.get.asInstanceOf[js.Any])
     if (formDidUpdate != null) __obj.updateDynamic("formDidUpdate")(js.Any.fromFunction1(formDidUpdate))
     if (getApi != null) __obj.updateDynamic("getApi")(js.Any.fromFunction1(getApi))
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction3(onSubmit))
@@ -100,7 +99,7 @@ object FormFunctionProps {
     if (preValidate != null) __obj.updateDynamic("preValidate")(js.Any.fromFunction1(preValidate))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (validateError != null) __obj.updateDynamic("validateError")(js.Any.fromFunction1(validateError))
-    if (!js.isUndefined(validateOnSubmit)) __obj.updateDynamic("validateOnSubmit")(validateOnSubmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnSubmit)) __obj.updateDynamic("validateOnSubmit")(validateOnSubmit.get.asInstanceOf[js.Any])
     if (validateSuccess != null) __obj.updateDynamic("validateSuccess")(js.Any.fromFunction2(validateSuccess))
     if (validateWarning != null) __obj.updateDynamic("validateWarning")(js.Any.fromFunction1(validateWarning))
     __obj.asInstanceOf[FormFunctionProps]

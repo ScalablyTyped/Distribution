@@ -141,12 +141,8 @@ import scala.scalajs.js.annotation._
   * @memberof PIXI
   * @extends PIXI.Shader
   */
-@JSGlobal("PIXI.Filter")
 @js.native
-class Filter () extends Shader {
-  def this(vertexSrc: String) = this()
-  def this(vertexSrc: String, fragmentSrc: String) = this()
-  def this(vertexSrc: String, fragmentSrc: String, uniforms: js.Any) = this()
+trait Filter extends Shader {
   /**
     * If enabled, PixiJS will fit the filter area into boundaries for better performance.
     * Switch it off if it does not work for specific shader.
@@ -214,35 +210,5 @@ class Filter () extends Shader {
     clear: Boolean,
     currentState: js.Any
   ): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.Filter")
-@js.native
-object Filter extends js.Object {
-  /**
-    * Used for caching shader IDs
-    *
-    * @static
-    * @type {object}
-    * @protected
-    */
-  var SOURCE_KEY_MAP: js.Any = js.native
-  /**
-    * The default fragment shader source
-    *
-    * @static
-    * @type {string}
-    * @constant
-    */
-  val defaultFragmentSrc: String = js.native
-  /**
-    * The default vertex shader source
-    *
-    * @static
-    * @type {string}
-    * @constant
-    */
-  val defaultVertexSrc: String = js.native
 }
 

@@ -39,7 +39,7 @@ object BeforeContextMenuOpenEventArgs {
   def apply(
     appointment: js.Any = null,
     cancel: js.UndefOr[Boolean] = js.undefined,
-    cellIndex: Int | Double = null,
+    cellIndex: js.UndefOr[Double] = js.undefined,
     currentDate: js.Any = null,
     events: js.Any = null,
     model: Model = null,
@@ -49,8 +49,8 @@ object BeforeContextMenuOpenEventArgs {
   ): BeforeContextMenuOpenEventArgs = {
     val __obj = js.Dynamic.literal()
     if (appointment != null) __obj.updateDynamic("appointment")(appointment.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex.get.asInstanceOf[js.Any])
     if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])

@@ -17,20 +17,20 @@ object TotpOptionsInterface {
     algorithm: String = null,
     createHmacSecret: (/* secret */ String, /* options */ HmacOptions) => Buffer = null,
     crypto: js.Any = null,
-    digits: Int | Double = null,
+    digits: js.UndefOr[Double] = js.undefined,
     encoding: String = null,
     epoch: js.Any = null,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     window: Double | js.Array[Double] = null
   ): TotpOptionsInterface = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (createHmacSecret != null) __obj.updateDynamic("createHmacSecret")(js.Any.fromFunction2(createHmacSecret))
     if (crypto != null) __obj.updateDynamic("crypto")(crypto.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[TotpOptionsInterface]
   }

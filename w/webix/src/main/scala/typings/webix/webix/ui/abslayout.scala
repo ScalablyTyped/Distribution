@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.abslayout")
 @js.native
-class abslayout () extends baseview {
+trait abslayout extends baseview {
   @JSName("config")
   var config_abslayout: abslayoutConfig = js.native
   def addView(view: js.Any): String | Double = js.native

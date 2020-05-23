@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.create
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,8 +15,4 @@ trait CreateWorkflow extends Workflow {
   @JSName("type")
   val type_CreateWorkflow: create = js.native
 }
-
-@JSGlobal("__esri.CreateWorkflow")
-@js.native
-object CreateWorkflow extends TopLevel[CreateWorkflowConstructor]
 

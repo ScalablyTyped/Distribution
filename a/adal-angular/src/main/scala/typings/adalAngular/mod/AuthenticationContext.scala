@@ -25,30 +25,6 @@ trait AuthenticationContext extends js.Object {
     * @param callback The callback provided by the caller. It will be called with token or error.
     */
   def acquireToken(resource: String, callback: TokenCallback): Unit = js.native
-  def acquireTokenPopup(
-    resource: String,
-    extraQueryParameters: js.UndefOr[scala.Nothing],
-    claims: js.UndefOr[scala.Nothing],
-    callback: TokenCallback
-  ): Unit = js.native
-  def acquireTokenPopup(
-    resource: String,
-    extraQueryParameters: js.UndefOr[scala.Nothing],
-    claims: String,
-    callback: TokenCallback
-  ): Unit = js.native
-  def acquireTokenPopup(
-    resource: String,
-    extraQueryParameters: js.UndefOr[scala.Nothing],
-    claims: Null,
-    callback: TokenCallback
-  ): Unit = js.native
-  def acquireTokenPopup(
-    resource: String,
-    extraQueryParameters: String,
-    claims: js.UndefOr[scala.Nothing],
-    callback: TokenCallback
-  ): Unit = js.native
   /**
     * Acquires token (interactive flow using a popup window) by sending request to AAD to obtain a new token.
     * @param resource Resource URI identifying the target resource.
@@ -56,16 +32,12 @@ trait AuthenticationContext extends js.Object {
     * @param claims Claims to add to the authentication request.
     * @param callback The callback provided by the caller. It will be called with token or error.
     */
-  def acquireTokenPopup(resource: String, extraQueryParameters: String, claims: String, callback: TokenCallback): Unit = js.native
-  def acquireTokenPopup(resource: String, extraQueryParameters: String, claims: Null, callback: TokenCallback): Unit = js.native
   def acquireTokenPopup(
     resource: String,
-    extraQueryParameters: Null,
-    claims: js.UndefOr[scala.Nothing],
+    extraQueryParameters: js.UndefOr[Null | String],
+    claims: js.UndefOr[Null | String],
     callback: TokenCallback
   ): Unit = js.native
-  def acquireTokenPopup(resource: String, extraQueryParameters: Null, claims: String, callback: TokenCallback): Unit = js.native
-  def acquireTokenPopup(resource: String, extraQueryParameters: Null, claims: Null, callback: TokenCallback): Unit = js.native
   /**
     * Acquires token (interactive flow using a redirect) by sending request to AAD to obtain a new token. In this case the callback passed in the authentication request constructor will be called.
     * @param resource Resource URI identifying the target resource.

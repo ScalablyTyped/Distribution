@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object transitionEndAsync extends js.Object {
   def apply(): js.Promise[_] = js.native
+  def apply(el: Null, expectedDuration: Double): js.Promise[_] = js.native
   def apply(el: HTMLElement): js.Promise[_] = js.native
+  def apply(el: HTMLElement, expectedDuration: Double): js.Promise[_] = js.native
 }
 

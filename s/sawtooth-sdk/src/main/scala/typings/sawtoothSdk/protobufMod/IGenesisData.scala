@@ -11,9 +11,9 @@ trait IGenesisData extends js.Object {
 
 object IGenesisData {
   @scala.inline
-  def apply(batches: js.Array[IBatch] = null): IGenesisData = {
+  def apply(batches: js.UndefOr[Null | js.Array[IBatch]] = js.undefined): IGenesisData = {
     val __obj = js.Dynamic.literal()
-    if (batches != null) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
+    if (!js.isUndefined(batches)) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenesisData]
   }
 }

@@ -21,7 +21,7 @@ object DatabaseUser {
     passwd: String = null
   ): DatabaseUser = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (passwd != null) __obj.updateDynamic("passwd")(passwd.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseUser]

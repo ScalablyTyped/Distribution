@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 
 trait IDrag extends IRecognizer {
   /** [Method] Returns the value of minDistance
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinDistance: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Config Option] (Number) */
   var minDistance: js.UndefOr[Double] = js.undefined
   /** [Method] Sets the value of minDistance
-  		* @param minDistance Number The new value.
-  		*/
+    * @param minDistance Number The new value.
+    */
   var setMinDistance: js.UndefOr[js.Function1[/* minDistance */ js.UndefOr[Double], Unit]] = js.undefined
 }
 
@@ -38,7 +38,7 @@ object IDrag {
     getOnRecognized: () => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    minDistance: Int | Double = null,
+    minDistance: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     self: IClass = null,
@@ -67,7 +67,7 @@ object IDrag {
     if (getOnRecognized != null) __obj.updateDynamic("getOnRecognized")(js.Any.fromFunction0(getOnRecognized))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (minDistance != null) __obj.updateDynamic("minDistance")(minDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(minDistance)) __obj.updateDynamic("minDistance")(minDistance.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
@@ -75,7 +75,7 @@ object IDrag {
     if (setMinDistance != null) __obj.updateDynamic("setMinDistance")(js.Any.fromFunction1(setMinDistance))
     if (setOnFailed != null) __obj.updateDynamic("setOnFailed")(js.Any.fromFunction1(setOnFailed))
     if (setOnRecognized != null) __obj.updateDynamic("setOnRecognized")(js.Any.fromFunction1(setOnRecognized))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDrag]

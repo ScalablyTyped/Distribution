@@ -19,7 +19,7 @@ trait PivotTableLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+    * Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -27,14 +27,14 @@ trait PivotTableLoadOptions extends js.Object {
   var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+    * Specifies if the PivotTable allows values in the data body to be edited by the user.
     *
     * [Api set: ExcelApi 1.9]
     */
   var enableDataValueEditing: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Id of the PivotTable. Read-only.
+    * Id of the PivotTable.
     *
     * [Api set: ExcelApi 1.5]
     */
@@ -55,7 +55,7 @@ trait PivotTableLoadOptions extends js.Object {
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether the PivotTable uses custom lists when sorting.
+    * Specifies if the PivotTable uses custom lists when sorting.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -82,13 +82,13 @@ object PivotTableLoadOptions {
     worksheet: WorksheetLoadOptions = null
   ): PivotTableLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultipleFiltersPerField)) __obj.updateDynamic("allowMultipleFiltersPerField")(allowMultipleFiltersPerField.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultipleFiltersPerField)) __obj.updateDynamic("allowMultipleFiltersPerField")(allowMultipleFiltersPerField.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists.get.asInstanceOf[js.Any])
     if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTableLoadOptions]
   }

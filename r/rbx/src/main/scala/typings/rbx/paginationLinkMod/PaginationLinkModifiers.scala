@@ -12,7 +12,7 @@ object PaginationLinkModifiers {
   @scala.inline
   def apply(current: js.UndefOr[Boolean] = js.undefined): PaginationLinkModifiers = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationLinkModifiers]
   }
 }

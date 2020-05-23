@@ -14,10 +14,13 @@ trait IListOperationsResponse extends js.Object {
 
 object IListOperationsResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, operations: js.Array[IOperation] = null): IListOperationsResponse = {
+  def apply(
+    nextPageToken: js.UndefOr[Null | String] = js.undefined,
+    operations: js.UndefOr[Null | js.Array[IOperation]] = js.undefined
+  ): IListOperationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(operations)) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListOperationsResponse]
   }
 }

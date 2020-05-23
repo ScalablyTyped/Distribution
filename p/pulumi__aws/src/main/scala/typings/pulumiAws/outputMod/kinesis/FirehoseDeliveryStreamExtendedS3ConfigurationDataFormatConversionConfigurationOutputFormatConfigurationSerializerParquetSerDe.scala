@@ -35,19 +35,19 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe {
   @scala.inline
   def apply(
-    blockSizeBytes: Int | Double = null,
+    blockSizeBytes: js.UndefOr[Double] = js.undefined,
     compression: String = null,
     enableDictionaryCompression: js.UndefOr[Boolean] = js.undefined,
-    maxPaddingBytes: Int | Double = null,
-    pageSizeBytes: Int | Double = null,
+    maxPaddingBytes: js.UndefOr[Double] = js.undefined,
+    pageSizeBytes: js.UndefOr[Double] = js.undefined,
     writerVersion: String = null
   ): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe = {
     val __obj = js.Dynamic.literal()
-    if (blockSizeBytes != null) __obj.updateDynamic("blockSizeBytes")(blockSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockSizeBytes)) __obj.updateDynamic("blockSizeBytes")(blockSizeBytes.get.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDictionaryCompression)) __obj.updateDynamic("enableDictionaryCompression")(enableDictionaryCompression.asInstanceOf[js.Any])
-    if (maxPaddingBytes != null) __obj.updateDynamic("maxPaddingBytes")(maxPaddingBytes.asInstanceOf[js.Any])
-    if (pageSizeBytes != null) __obj.updateDynamic("pageSizeBytes")(pageSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDictionaryCompression)) __obj.updateDynamic("enableDictionaryCompression")(enableDictionaryCompression.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPaddingBytes)) __obj.updateDynamic("maxPaddingBytes")(maxPaddingBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSizeBytes)) __obj.updateDynamic("pageSizeBytes")(pageSizeBytes.get.asInstanceOf[js.Any])
     if (writerVersion != null) __obj.updateDynamic("writerVersion")(writerVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe]
   }

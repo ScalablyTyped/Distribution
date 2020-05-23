@@ -14,13 +14,13 @@ trait GetTopOptions extends PaginationOptions {
 object GetTopOptions {
   @scala.inline
   def apply(
-    limit: Int | Double = null,
-    offset: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    offset: js.UndefOr[Double] = js.undefined,
     time_range: long_term | medium_term | short_term = null
   ): GetTopOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (time_range != null) __obj.updateDynamic("time_range")(time_range.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTopOptions]
   }

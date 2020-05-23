@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation._
 trait TableColumnData extends js.Object {
   /**
     *
-    * Retrieve the filter applied to the column. Read-only.
+    * Retrieve the filter applied to the column.
     *
     * [Api set: ExcelApi 1.2]
     */
   var filter: js.UndefOr[FilterData] = js.undefined
   /**
     *
-    * Returns a unique key that identifies the column within the table. Read-only.
+    * Returns a unique key that identifies the column within the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+    * Returns the index number of the column within the columns collection of the table. Zero-indexed.
     *
     * [Api set: ExcelApi 1.1]
     */
   var index: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the name of the table column.
+    * Specifies the name of the table column.
     *
     * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
     */
@@ -47,15 +47,15 @@ object TableColumnData {
   @scala.inline
   def apply(
     filter: FilterData = null,
-    id: Int | Double = null,
-    index: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
+    index: js.UndefOr[Double] = js.undefined,
     name: String = null,
     values: js.Array[js.Array[_]] = null
   ): TableColumnData = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumnData]

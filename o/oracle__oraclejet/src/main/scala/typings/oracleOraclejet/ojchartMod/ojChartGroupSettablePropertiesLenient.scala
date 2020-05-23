@@ -20,7 +20,7 @@ trait ojChartGroupSettablePropertiesLenient
 object ojChartGroupSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     drilling: on | off | inherit = null,
     labelStyle: js.Object = null,
     name: String = null,

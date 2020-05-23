@@ -17,13 +17,13 @@ object UnmarshalledLifecycleExpiration {
   @scala.inline
   def apply(
     Date: Date = null,
-    Days: Int | Double = null,
+    Days: js.UndefOr[Double] = js.undefined,
     ExpiredObjectDeleteMarker: js.UndefOr[Boolean] = js.undefined
   ): UnmarshalledLifecycleExpiration = {
     val __obj = js.Dynamic.literal()
     if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
-    if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExpiredObjectDeleteMarker)) __obj.updateDynamic("ExpiredObjectDeleteMarker")(ExpiredObjectDeleteMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ExpiredObjectDeleteMarker)) __obj.updateDynamic("ExpiredObjectDeleteMarker")(ExpiredObjectDeleteMarker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledLifecycleExpiration]
   }
 }

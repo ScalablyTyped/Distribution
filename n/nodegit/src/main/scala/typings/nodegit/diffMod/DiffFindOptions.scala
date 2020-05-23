@@ -17,22 +17,22 @@ trait DiffFindOptions extends js.Object {
 object DiffFindOptions {
   @scala.inline
   def apply(
-    breakRewriteThreshold: Int | Double = null,
-    copyThreshold: Int | Double = null,
-    flags: Int | Double = null,
-    renameFromRewriteThreshold: Int | Double = null,
-    renameLimit: Int | Double = null,
-    renameThreshold: Int | Double = null,
-    version: Int | Double = null
+    breakRewriteThreshold: js.UndefOr[Double] = js.undefined,
+    copyThreshold: js.UndefOr[Double] = js.undefined,
+    flags: js.UndefOr[Double] = js.undefined,
+    renameFromRewriteThreshold: js.UndefOr[Double] = js.undefined,
+    renameLimit: js.UndefOr[Double] = js.undefined,
+    renameThreshold: js.UndefOr[Double] = js.undefined,
+    version: js.UndefOr[Double] = js.undefined
   ): DiffFindOptions = {
     val __obj = js.Dynamic.literal()
-    if (breakRewriteThreshold != null) __obj.updateDynamic("breakRewriteThreshold")(breakRewriteThreshold.asInstanceOf[js.Any])
-    if (copyThreshold != null) __obj.updateDynamic("copyThreshold")(copyThreshold.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (renameFromRewriteThreshold != null) __obj.updateDynamic("renameFromRewriteThreshold")(renameFromRewriteThreshold.asInstanceOf[js.Any])
-    if (renameLimit != null) __obj.updateDynamic("renameLimit")(renameLimit.asInstanceOf[js.Any])
-    if (renameThreshold != null) __obj.updateDynamic("renameThreshold")(renameThreshold.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakRewriteThreshold)) __obj.updateDynamic("breakRewriteThreshold")(breakRewriteThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyThreshold)) __obj.updateDynamic("copyThreshold")(copyThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renameFromRewriteThreshold)) __obj.updateDynamic("renameFromRewriteThreshold")(renameFromRewriteThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renameLimit)) __obj.updateDynamic("renameLimit")(renameLimit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renameThreshold)) __obj.updateDynamic("renameThreshold")(renameThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffFindOptions]
   }
 }

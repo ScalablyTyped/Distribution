@@ -7,33 +7,30 @@ import scala.scalajs.js.annotation._
 
 trait OlapFlatDataSourceOptionsMetadataCubeMeasuresDimension
   extends /**
-	 * Option for OlapFlatDataSourceOptionsMetadataCubeMeasuresDimension
-	 */
+  * Option for JSONPDataSourceSettings
+  */
 /* optionName */ StringDictionary[js.Any] {
   /**
-  	 * A caption for the measures dimension.
-  	 *                             The default value is "Measures".
-  	 */
+    * A caption for the measures dimension.
+    *                             The default value is "Measures".
+    */
   var caption: js.UndefOr[String] = js.undefined
   /**
-  	 * An array of measure metadata objects.
-  	 */
+    * An array of measure metadata objects.
+    */
   var measures: js.UndefOr[js.Array[OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasure]] = js.undefined
   /**
-  	 * A unique name for the measures dimension.
-  	 *                             The default value is "Measures". This name is used to create the names of dimensions using the following pattern:
-  	 *                             [<measuresDimensionMetadata.name>].[<measureMetadata.name>]
-  	 */
+    * A unique name for the measures dimension.
+    *                             The default value is "Measures". This name is used to create the names of dimensions using the following pattern:
+    *                             [<measuresDimensionMetadata.name>].[<measureMetadata.name>]
+    */
   var name: js.UndefOr[String] = js.undefined
 }
 
 object OlapFlatDataSourceOptionsMetadataCubeMeasuresDimension {
   @scala.inline
   def apply(
-    StringDictionary: /**
-  	 * Option for OlapFlatDataSourceOptionsMetadataCubeMeasuresDimension
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     caption: String = null,
     measures: js.Array[OlapFlatDataSourceOptionsMetadataCubeMeasuresDimensionMeasure] = null,
     name: String = null

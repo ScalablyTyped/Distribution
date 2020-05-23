@@ -15,10 +15,13 @@ trait IExportAgentResponse extends js.Object {
 
 object IExportAgentResponse {
   @scala.inline
-  def apply(agentContent: Uint8Array | String = null, agentUri: String = null): IExportAgentResponse = {
+  def apply(
+    agentContent: js.UndefOr[Null | Uint8Array | String] = js.undefined,
+    agentUri: js.UndefOr[Null | String] = js.undefined
+  ): IExportAgentResponse = {
     val __obj = js.Dynamic.literal()
-    if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent.asInstanceOf[js.Any])
-    if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(agentContent)) __obj.updateDynamic("agentContent")(agentContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(agentUri)) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExportAgentResponse]
   }
 }

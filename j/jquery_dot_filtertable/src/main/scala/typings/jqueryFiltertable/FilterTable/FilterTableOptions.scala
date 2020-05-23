@@ -131,8 +131,8 @@ object FilterTableOptions {
     inputSelector: String = null,
     inputType: String = null,
     label: String = null,
-    minChars: Int | Double = null,
-    minRows: Int | Double = null,
+    minChars: js.UndefOr[Double] = js.undefined,
+    minRows: js.UndefOr[Double] = js.undefined,
     placeholder: String = null,
     preventReturnKey: js.UndefOr[Boolean] = js.undefined,
     quickList: js.Array[String] = null,
@@ -143,21 +143,21 @@ object FilterTableOptions {
     visibleClass: String = null
   ): FilterTableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass.asInstanceOf[js.Any])
     if (containerTag != null) __obj.updateDynamic("containerTag")(containerTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTFootOnFilter)) __obj.updateDynamic("hideTFootOnFilter")(hideTFootOnFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTFootOnFilter)) __obj.updateDynamic("hideTFootOnFilter")(hideTFootOnFilter.get.asInstanceOf[js.Any])
     if (highlightClass != null) __obj.updateDynamic("highlightClass")(highlightClass.asInstanceOf[js.Any])
     if (ignoreColumns != null) __obj.updateDynamic("ignoreColumns")(ignoreColumns.asInstanceOf[js.Any])
     if (inputName != null) __obj.updateDynamic("inputName")(inputName.asInstanceOf[js.Any])
     if (inputSelector != null) __obj.updateDynamic("inputSelector")(inputSelector.asInstanceOf[js.Any])
     if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
-    if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(minChars)) __obj.updateDynamic("minChars")(minChars.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minRows)) __obj.updateDynamic("minRows")(minRows.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventReturnKey)) __obj.updateDynamic("preventReturnKey")(preventReturnKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventReturnKey)) __obj.updateDynamic("preventReturnKey")(preventReturnKey.get.asInstanceOf[js.Any])
     if (quickList != null) __obj.updateDynamic("quickList")(quickList.asInstanceOf[js.Any])
     if (quickListClass != null) __obj.updateDynamic("quickListClass")(quickListClass.asInstanceOf[js.Any])
     if (quickListClear != null) __obj.updateDynamic("quickListClear")(quickListClear.asInstanceOf[js.Any])

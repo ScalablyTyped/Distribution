@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__docmanager-extension
 
-Typings are for version 2.1.0
+Typings are for version 2.1.2
 
 ## Library description:
 JupyterLab - Document Manager Extension

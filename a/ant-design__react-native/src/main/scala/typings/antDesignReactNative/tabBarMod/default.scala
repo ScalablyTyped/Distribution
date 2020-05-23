@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.tabBarMod
 
-import typings.antDesignReactNative.AnonBarTintColor
-import typings.antDesignReactNative.TypeofTabBarItem
+import typings.antDesignReactNative.anon.BarTintColor
+import typings.antDesignReactNative.anon.TypeofTabBarItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default () extends TabBar
 @js.native
 object default extends js.Object {
   var Item: TypeofTabBarItem = js.native
-  var defaultProps: AnonBarTintColor = js.native
+  var defaultProps: BarTintColor = js.native
 }
 

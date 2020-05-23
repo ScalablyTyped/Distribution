@@ -2,7 +2,7 @@ package typings.reactNativeDatepicker.mod
 
 import typings.moment.mod.Moment
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNativeDatepicker.reactNativeDatepickerStrings.calendar
@@ -66,10 +66,10 @@ object DatePickerProps {
     customStyles: DatePickerCustomStylesProps = null,
     date: String | Date | Moment = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     format: String = null,
     getDateStr: /* date */ Date => String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hideText: js.UndefOr[Boolean] = js.undefined,
     iconComponent: Element = null,
     iconSource: ImageURISource = null,
@@ -77,7 +77,7 @@ object DatePickerProps {
     locale: String = null,
     maxDate: String | Date = null,
     minDate: String | Date = null,
-    minuteInterval: Int | Double = null,
+    minuteInterval: js.UndefOr[Double] = js.undefined,
     modalOnResponderTerminationRequest: /* e */ js.Any => Boolean = null,
     mode: date | datetime | time = null,
     onCloseModal: () => Unit = null,
@@ -86,13 +86,13 @@ object DatePickerProps {
     onPressMask: () => Unit = null,
     placeholder: String = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[_] = null,
+    style: js.UndefOr[Null | StyleProp[_]] = js.undefined,
     testID: String = null,
-    timeZoneOffsetInMinutes: Int | Double = null
+    timeZoneOffsetInMinutes: js.UndefOr[Double] = js.undefined
   ): DatePickerProps = {
     val __obj = js.Dynamic.literal()
     if (TouchableComponent != null) __obj.updateDynamic("TouchableComponent")(TouchableComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.get.asInstanceOf[js.Any])
     if (androidMode != null) __obj.updateDynamic("androidMode")(androidMode.asInstanceOf[js.Any])
     if (cancelBtnTestID != null) __obj.updateDynamic("cancelBtnTestID")(cancelBtnTestID.asInstanceOf[js.Any])
     if (cancelBtnText != null) __obj.updateDynamic("cancelBtnText")(cancelBtnText.asInstanceOf[js.Any])
@@ -100,19 +100,19 @@ object DatePickerProps {
     if (confirmBtnText != null) __obj.updateDynamic("confirmBtnText")(confirmBtnText.asInstanceOf[js.Any])
     if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (getDateStr != null) __obj.updateDynamic("getDateStr")(js.Any.fromFunction1(getDateStr))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideText)) __obj.updateDynamic("hideText")(hideText.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideText)) __obj.updateDynamic("hideText")(hideText.get.asInstanceOf[js.Any])
     if (iconComponent != null) __obj.updateDynamic("iconComponent")(iconComponent.asInstanceOf[js.Any])
     if (iconSource != null) __obj.updateDynamic("iconSource")(iconSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.asInstanceOf[js.Any])
+    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minuteInterval != null) __obj.updateDynamic("minuteInterval")(minuteInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteInterval)) __obj.updateDynamic("minuteInterval")(minuteInterval.get.asInstanceOf[js.Any])
     if (modalOnResponderTerminationRequest != null) __obj.updateDynamic("modalOnResponderTerminationRequest")(js.Any.fromFunction1(modalOnResponderTerminationRequest))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onCloseModal != null) __obj.updateDynamic("onCloseModal")(js.Any.fromFunction0(onCloseModal))
@@ -120,10 +120,10 @@ object DatePickerProps {
     if (onOpenModal != null) __obj.updateDynamic("onOpenModal")(js.Any.fromFunction0(onOpenModal))
     if (onPressMask != null) __obj.updateDynamic("onPressMask")(js.Any.fromFunction0(onPressMask))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (timeZoneOffsetInMinutes != null) __obj.updateDynamic("timeZoneOffsetInMinutes")(timeZoneOffsetInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeZoneOffsetInMinutes)) __obj.updateDynamic("timeZoneOffsetInMinutes")(timeZoneOffsetInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerProps]
   }
 }

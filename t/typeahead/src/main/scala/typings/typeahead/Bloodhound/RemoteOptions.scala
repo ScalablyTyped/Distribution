@@ -66,7 +66,7 @@ object RemoteOptions {
     url: String,
     filter: /* response */ T => T = null,
     prepare: (/* query */ String, /* settings */ JQueryAjaxSettings) => JQueryAjaxSettings = null,
-    rateLimitWait: Int | Double = null,
+    rateLimitWait: js.UndefOr[Double] = js.undefined,
     rateLimitby: String = null,
     transform: /* response */ T => T = null,
     wildcard: String = null
@@ -74,7 +74,7 @@ object RemoteOptions {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (prepare != null) __obj.updateDynamic("prepare")(js.Any.fromFunction2(prepare))
-    if (rateLimitWait != null) __obj.updateDynamic("rateLimitWait")(rateLimitWait.asInstanceOf[js.Any])
+    if (!js.isUndefined(rateLimitWait)) __obj.updateDynamic("rateLimitWait")(rateLimitWait.get.asInstanceOf[js.Any])
     if (rateLimitby != null) __obj.updateDynamic("rateLimitby")(rateLimitby.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     if (wildcard != null) __obj.updateDynamic("wildcard")(wildcard.asInstanceOf[js.Any])

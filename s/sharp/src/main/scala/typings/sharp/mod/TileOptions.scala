@@ -13,7 +13,7 @@ trait TileOptions extends js.Object {
   var container: js.UndefOr[String] = js.undefined
   /** How deep to make the pyramid, possible values are "onepixel", "onetile" or "one" (default based on layout) */
   var depth: js.UndefOr[String] = js.undefined
-  /** Filesystem layout, possible values are dz, zoomify or google. (optional, default 'dz') */
+  /** Filesystem layout, possible values are dz, iiif, zoomify or google. (optional, default 'dz') */
   var layout: js.UndefOr[TileLayout] = js.undefined
   /** Tile overlap in pixels, a value between 0 and 8192. (optional, default 0) */
   var overlap: js.UndefOr[Double] = js.undefined
@@ -26,24 +26,24 @@ trait TileOptions extends js.Object {
 object TileOptions {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     background: String | RGBA = null,
     container: String = null,
     depth: String = null,
     layout: TileLayout = null,
-    overlap: Int | Double = null,
-    size: Int | Double = null,
-    skipBlanks: Int | Double = null
+    overlap: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
+    skipBlanks: js.UndefOr[Double] = js.undefined
   ): TileOptions = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (overlap != null) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (skipBlanks != null) __obj.updateDynamic("skipBlanks")(skipBlanks.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipBlanks)) __obj.updateDynamic("skipBlanks")(skipBlanks.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileOptions]
   }
 }

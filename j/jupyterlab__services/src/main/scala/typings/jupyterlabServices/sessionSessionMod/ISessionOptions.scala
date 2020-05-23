@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.sessionSessionMod
 
-import typings.jupyterlabServices.PartialPickIModelname
+import typings.jupyterlabServices.anon.PartialPickIModelname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

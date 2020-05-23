@@ -1,8 +1,8 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.AnonSelectedTabId
-import typings.blueprintjsCore.PartialITabsProps
-import typings.blueprintjsCore.TypeofTab
+import typings.blueprintjsCore.anon.PartialITabsProps
+import typings.blueprintjsCore.anon.SelectedTabId
+import typings.blueprintjsCore.anon.TypeofTab
 import typings.blueprintjsCore.tabsMod.ITabsProps
 import typings.react.mod.SFC
 import scala.scalajs.js
@@ -25,6 +25,6 @@ object Tabs extends js.Object {
   var Tab: TypeofTab = js.native
   var defaultProps: PartialITabsProps = js.native
   var displayName: String = js.native
-  def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): AnonSelectedTabId = js.native
+  def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): SelectedTabId = js.native
 }
 

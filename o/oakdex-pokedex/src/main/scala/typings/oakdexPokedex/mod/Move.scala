@@ -1,7 +1,7 @@
 package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oakdexPokedex.AnonIncreasedcriticalhitratio
+import typings.oakdexPokedex.anon.Increasedcriticalhitratio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait Move extends js.Object {
   var category: String
   var contests: js.Array[MoveContest]
   var critical_hit: Double
-  var in_battle_properties: js.UndefOr[AnonIncreasedcriticalhitratio] = js.undefined
+  var in_battle_properties: js.UndefOr[Increasedcriticalhitratio] = js.undefined
   var index_number: Double
   var makes_contact: Boolean
   var max_pp: Double
@@ -52,7 +52,7 @@ object Move {
     priority: Double,
     target: String,
     `type`: String,
-    in_battle_properties: AnonIncreasedcriticalhitratio = null,
+    in_battle_properties: Increasedcriticalhitratio = null,
     stat_modifiers: js.Array[MoveStatModifier] = null
   ): Move = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], affected_by_kings_rock = affected_by_kings_rock.asInstanceOf[js.Any], affected_by_magic_coat = affected_by_magic_coat.asInstanceOf[js.Any], affected_by_mirror_move = affected_by_mirror_move.asInstanceOf[js.Any], affected_by_protect = affected_by_protect.asInstanceOf[js.Any], affected_by_snatch = affected_by_snatch.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], contests = contests.asInstanceOf[js.Any], critical_hit = critical_hit.asInstanceOf[js.Any], index_number = index_number.asInstanceOf[js.Any], makes_contact = makes_contact.asInstanceOf[js.Any], max_pp = max_pp.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], pokedex_entries = pokedex_entries.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], pp = pp.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])

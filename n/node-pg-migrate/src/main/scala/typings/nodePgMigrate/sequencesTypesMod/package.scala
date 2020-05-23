@@ -10,7 +10,7 @@ package object sequencesTypesMod {
     /* sequenceOptions */ typings.nodePgMigrate.sequencesTypesMod.SequenceOptionsAlter, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type CreateSequence = typings.nodePgMigrate.sequencesTypesMod.CreateSequenceFn with typings.nodePgMigrate.AnonReverseCreateSequenceFn
+  type CreateSequence = typings.nodePgMigrate.sequencesTypesMod.CreateSequenceFn with typings.nodePgMigrate.anon.ReverseCreateSequenceFn
   type CreateSequenceFn = js.Function2[
     /* sequenceName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* sequenceOptions */ js.UndefOr[
@@ -23,7 +23,7 @@ package object sequencesTypesMod {
     /* dropOptions */ js.UndefOr[typings.nodePgMigrate.generalTypesMod.DropOptions], 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type RenameSequence = typings.nodePgMigrate.sequencesTypesMod.RenameSequenceFn with typings.nodePgMigrate.AnonReverseRenameSequenceFn
+  type RenameSequence = typings.nodePgMigrate.sequencesTypesMod.RenameSequenceFn with typings.nodePgMigrate.anon.ReverseRenameSequenceFn
   type RenameSequenceFn = js.Function2[
     /* oldSequenceName */ typings.nodePgMigrate.generalTypesMod.Name, 
     /* newSequenceName */ typings.nodePgMigrate.generalTypesMod.Name, 

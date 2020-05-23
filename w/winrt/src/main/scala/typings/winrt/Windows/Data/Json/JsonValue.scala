@@ -1,37 +1,24 @@
 package typings.winrt.Windows.Data.Json
 
-import typings.winrt.AnonResultSucceeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Data.Json.JsonValue")
-@js.native
-class JsonValue () extends IJsonValue {
-  /* CompleteClass */
-  override var valueType: JsonValueType = js.native
-  /* CompleteClass */
-  override def getArray(): JsonArray = js.native
-  /* CompleteClass */
-  override def getBoolean(): Boolean = js.native
-  /* CompleteClass */
-  override def getNumber(): Double = js.native
-  /* CompleteClass */
-  override def getObject(): JsonObject = js.native
-  /* CompleteClass */
-  override def getString(): String = js.native
-  /* CompleteClass */
-  override def stringify(): String = js.native
-}
+trait JsonValue extends IJsonValue
 
-/* static members */
-@JSGlobal("Windows.Data.Json.JsonValue")
-@js.native
-object JsonValue extends js.Object {
-  def createBooleanValue(input: Boolean): JsonValue = js.native
-  def createNumberValue(input: Double): JsonValue = js.native
-  def createStringValue(input: String): JsonValue = js.native
-  def parse(input: String): JsonValue = js.native
-  def tryParse(input: String): AnonResultSucceeded = js.native
+object JsonValue {
+  @scala.inline
+  def apply(
+    getArray: () => JsonArray,
+    getBoolean: () => Boolean,
+    getNumber: () => Double,
+    getObject: () => JsonObject,
+    getString: () => String,
+    stringify: () => String,
+    valueType: JsonValueType
+  ): JsonValue = {
+    val __obj = js.Dynamic.literal(getArray = js.Any.fromFunction0(getArray), getBoolean = js.Any.fromFunction0(getBoolean), getNumber = js.Any.fromFunction0(getNumber), getObject = js.Any.fromFunction0(getObject), getString = js.Any.fromFunction0(getString), stringify = js.Any.fromFunction0(stringify), valueType = valueType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JsonValue]
+  }
 }
 

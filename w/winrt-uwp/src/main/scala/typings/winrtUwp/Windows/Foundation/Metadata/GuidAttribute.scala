@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Indicates the GUID for the interface or delegate. */
-@JSGlobal("Windows.Foundation.Metadata.GuidAttribute")
-@js.native
-abstract class GuidAttribute () extends js.Object
+trait GuidAttribute extends js.Object
 

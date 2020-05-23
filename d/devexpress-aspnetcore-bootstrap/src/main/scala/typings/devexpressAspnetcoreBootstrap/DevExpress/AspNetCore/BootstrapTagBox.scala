@@ -20,9 +20,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapTagBox")
 @js.native
-class BootstrapTagBox () extends BootstrapClientEdit {
+trait BootstrapTagBox extends BootstrapClientEdit {
   def addItem(text: String): Double = js.native
    // tslint:disable-line:unified-signatures
   def addItem(text: String, value: js.Any): Double = js.native

@@ -24,23 +24,23 @@ object OptionsReceived {
     escapeRegex: js.UndefOr[Boolean] = js.undefined,
     escapeString: js.UndefOr[Boolean] = js.undefined,
     highlight: js.UndefOr[Boolean] = js.undefined,
-    indent: Int | Double = null,
-    maxDepth: Int | Double = null,
+    indent: js.UndefOr[Double] = js.undefined,
+    maxDepth: js.UndefOr[Double] = js.undefined,
     min: js.UndefOr[Boolean] = js.undefined,
     plugins: Plugins = null,
     printFunctionName: js.UndefOr[Boolean] = js.undefined,
     theme: ThemeReceived = null
   ): OptionsReceived = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(callToJSON)) __obj.updateDynamic("callToJSON")(callToJSON.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeRegex)) __obj.updateDynamic("escapeRegex")(escapeRegex.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeString)) __obj.updateDynamic("escapeString")(escapeString.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(callToJSON)) __obj.updateDynamic("callToJSON")(callToJSON.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeRegex)) __obj.updateDynamic("escapeRegex")(escapeRegex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeString)) __obj.updateDynamic("escapeString")(escapeString.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(printFunctionName)) __obj.updateDynamic("printFunctionName")(printFunctionName.asInstanceOf[js.Any])
+    if (!js.isUndefined(printFunctionName)) __obj.updateDynamic("printFunctionName")(printFunctionName.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsReceived]
   }

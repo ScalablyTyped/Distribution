@@ -18,7 +18,7 @@ trait FilterLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * The currently applied filter on the given column. Read-only.
+    * The currently applied filter on the given column.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -29,8 +29,8 @@ object FilterLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, criteria: js.UndefOr[Boolean] = js.undefined): FilterLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterLoadOptions]
   }
 }

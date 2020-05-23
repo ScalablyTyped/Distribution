@@ -1,6 +1,5 @@
 package typings.firefoxWebextBrowser.browser.privacy
 
-import typings.firefoxWebextBrowser.browser.types.Setting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,12 +13,5 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("browser.privacy.services")
 @js.native
-object services extends js.Object {
-  /* privacy.services properties */
-  /**
-    * If enabled, the password manager will ask if you want to save passwords. This preference's value is a boolean,
-    * defaulting to `true`.
-    */
-  val passwordSavingEnabled: Setting = js.native
-}
+object services extends js.Object
 

@@ -23,12 +23,12 @@ trait ChangedBlock extends js.Object {
 object ChangedBlock {
   @scala.inline
   def apply(
-    BlockIndex: Int | Double = null,
+    BlockIndex: js.UndefOr[BlockIndex] = js.undefined,
     FirstBlockToken: BlockToken = null,
     SecondBlockToken: BlockToken = null
   ): ChangedBlock = {
     val __obj = js.Dynamic.literal()
-    if (BlockIndex != null) __obj.updateDynamic("BlockIndex")(BlockIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(BlockIndex)) __obj.updateDynamic("BlockIndex")(BlockIndex.get.asInstanceOf[js.Any])
     if (FirstBlockToken != null) __obj.updateDynamic("FirstBlockToken")(FirstBlockToken.asInstanceOf[js.Any])
     if (SecondBlockToken != null) __obj.updateDynamic("SecondBlockToken")(SecondBlockToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangedBlock]

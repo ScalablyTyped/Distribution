@@ -49,16 +49,16 @@ trait CropperOptions extends js.Object {
 object CropperOptions {
   @scala.inline
   def apply(
-    aspectRatio: Int | Double = null,
+    aspectRatio: js.UndefOr[Double] = js.undefined,
     autoCrop: js.UndefOr[Boolean] = js.undefined,
-    autoCropArea: Int | Double = null,
+    autoCropArea: js.UndefOr[Double] = js.undefined,
     background: js.UndefOr[Boolean] = js.undefined,
     center: js.UndefOr[Boolean] = js.undefined,
     checkCrossOrigin: js.UndefOr[Boolean] = js.undefined,
     checkOrientation: String = null,
     crop: /* data */ js.UndefOr[js.Any] => Unit = null,
-    cropBoxMovable: Int | Double = null,
-    cropBoxResizable: Int | Double = null,
+    cropBoxMovable: js.UndefOr[Double] = js.undefined,
+    cropBoxResizable: js.UndefOr[Double] = js.undefined,
     cropend: () => _ = null,
     cropmove: () => _ = null,
     cropstart: () => _ = null,
@@ -66,13 +66,13 @@ object CropperOptions {
     dragMode: String = null,
     guides: js.UndefOr[Boolean] = js.undefined,
     highlight: js.UndefOr[Boolean] = js.undefined,
-    initialAspectRatio: Int | Double = null,
-    minCanvasHeight: Int | Double = null,
-    minCanvasWidth: Int | Double = null,
-    minContainerHeight: Int | Double = null,
-    minContainerWidth: Int | Double = null,
-    minCropBoxHeight: Int | Double = null,
-    minCropBoxWidth: Int | Double = null,
+    initialAspectRatio: js.UndefOr[Double] = js.undefined,
+    minCanvasHeight: js.UndefOr[Double] = js.undefined,
+    minCanvasWidth: js.UndefOr[Double] = js.undefined,
+    minContainerHeight: js.UndefOr[Double] = js.undefined,
+    minContainerWidth: js.UndefOr[Double] = js.undefined,
+    minCropBoxHeight: js.UndefOr[Double] = js.undefined,
+    minCropBoxWidth: js.UndefOr[Double] = js.undefined,
     modal: js.UndefOr[Boolean] = js.undefined,
     movable: js.UndefOr[Boolean] = js.undefined,
     preview: js.Any = null,
@@ -81,54 +81,54 @@ object CropperOptions {
     restore: js.UndefOr[Boolean] = js.undefined,
     rotatable: js.UndefOr[Boolean] = js.undefined,
     scalable: js.UndefOr[Boolean] = js.undefined,
-    toggleDragModeOnDblclick: Int | Double = null,
-    viewMode: Int | Double = null,
-    wheelZoomRatio: Int | Double = null,
+    toggleDragModeOnDblclick: js.UndefOr[Double] = js.undefined,
+    viewMode: js.UndefOr[Double] = js.undefined,
+    wheelZoomRatio: js.UndefOr[Double] = js.undefined,
     zoom: () => _ = null,
     zoomOnTouch: js.UndefOr[Boolean] = js.undefined,
     zoomOnWheel: js.UndefOr[Boolean] = js.undefined,
     zoomable: js.UndefOr[Boolean] = js.undefined
   ): CropperOptions = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCrop)) __obj.updateDynamic("autoCrop")(autoCrop.asInstanceOf[js.Any])
-    if (autoCropArea != null) __obj.updateDynamic("autoCropArea")(autoCropArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkCrossOrigin)) __obj.updateDynamic("checkCrossOrigin")(checkCrossOrigin.asInstanceOf[js.Any])
+    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCrop)) __obj.updateDynamic("autoCrop")(autoCrop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCropArea)) __obj.updateDynamic("autoCropArea")(autoCropArea.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkCrossOrigin)) __obj.updateDynamic("checkCrossOrigin")(checkCrossOrigin.get.asInstanceOf[js.Any])
     if (checkOrientation != null) __obj.updateDynamic("checkOrientation")(checkOrientation.asInstanceOf[js.Any])
     if (crop != null) __obj.updateDynamic("crop")(js.Any.fromFunction1(crop))
-    if (cropBoxMovable != null) __obj.updateDynamic("cropBoxMovable")(cropBoxMovable.asInstanceOf[js.Any])
-    if (cropBoxResizable != null) __obj.updateDynamic("cropBoxResizable")(cropBoxResizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(cropBoxMovable)) __obj.updateDynamic("cropBoxMovable")(cropBoxMovable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cropBoxResizable)) __obj.updateDynamic("cropBoxResizable")(cropBoxResizable.get.asInstanceOf[js.Any])
     if (cropend != null) __obj.updateDynamic("cropend")(js.Any.fromFunction0(cropend))
     if (cropmove != null) __obj.updateDynamic("cropmove")(js.Any.fromFunction0(cropmove))
     if (cropstart != null) __obj.updateDynamic("cropstart")(js.Any.fromFunction0(cropstart))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dragMode != null) __obj.updateDynamic("dragMode")(dragMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(guides)) __obj.updateDynamic("guides")(guides.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (initialAspectRatio != null) __obj.updateDynamic("initialAspectRatio")(initialAspectRatio.asInstanceOf[js.Any])
-    if (minCanvasHeight != null) __obj.updateDynamic("minCanvasHeight")(minCanvasHeight.asInstanceOf[js.Any])
-    if (minCanvasWidth != null) __obj.updateDynamic("minCanvasWidth")(minCanvasWidth.asInstanceOf[js.Any])
-    if (minContainerHeight != null) __obj.updateDynamic("minContainerHeight")(minContainerHeight.asInstanceOf[js.Any])
-    if (minContainerWidth != null) __obj.updateDynamic("minContainerWidth")(minContainerWidth.asInstanceOf[js.Any])
-    if (minCropBoxHeight != null) __obj.updateDynamic("minCropBoxHeight")(minCropBoxHeight.asInstanceOf[js.Any])
-    if (minCropBoxWidth != null) __obj.updateDynamic("minCropBoxWidth")(minCropBoxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.asInstanceOf[js.Any])
+    if (!js.isUndefined(guides)) __obj.updateDynamic("guides")(guides.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialAspectRatio)) __obj.updateDynamic("initialAspectRatio")(initialAspectRatio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCanvasHeight)) __obj.updateDynamic("minCanvasHeight")(minCanvasHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCanvasWidth)) __obj.updateDynamic("minCanvasWidth")(minCanvasWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minContainerHeight)) __obj.updateDynamic("minContainerHeight")(minContainerHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minContainerWidth)) __obj.updateDynamic("minContainerWidth")(minContainerWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCropBoxHeight)) __obj.updateDynamic("minCropBoxHeight")(minCropBoxHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCropBoxWidth)) __obj.updateDynamic("minCropBoxWidth")(minCropBoxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.get.asInstanceOf[js.Any])
     if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(restore)) __obj.updateDynamic("restore")(restore.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable.asInstanceOf[js.Any])
-    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable.asInstanceOf[js.Any])
-    if (toggleDragModeOnDblclick != null) __obj.updateDynamic("toggleDragModeOnDblclick")(toggleDragModeOnDblclick.asInstanceOf[js.Any])
-    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
-    if (wheelZoomRatio != null) __obj.updateDynamic("wheelZoomRatio")(wheelZoomRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restore)) __obj.updateDynamic("restore")(restore.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleDragModeOnDblclick)) __obj.updateDynamic("toggleDragModeOnDblclick")(toggleDragModeOnDblclick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewMode)) __obj.updateDynamic("viewMode")(viewMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelZoomRatio)) __obj.updateDynamic("wheelZoomRatio")(wheelZoomRatio.get.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(js.Any.fromFunction0(zoom))
-    if (!js.isUndefined(zoomOnTouch)) __obj.updateDynamic("zoomOnTouch")(zoomOnTouch.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomOnWheel)) __obj.updateDynamic("zoomOnWheel")(zoomOnWheel.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomOnTouch)) __obj.updateDynamic("zoomOnTouch")(zoomOnTouch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomOnWheel)) __obj.updateDynamic("zoomOnWheel")(zoomOnWheel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropperOptions]
   }
 }

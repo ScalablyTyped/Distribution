@@ -10,40 +10,9 @@ import scala.scalajs.js.annotation._
 class DeclareVarStmt protected () extends Statement {
   def this(name: String) = this()
   def this(name: String, value: Expression) = this()
-  def this(name: String, value: js.UndefOr[scala.Nothing], `type`: Type) = this()
   def this(name: String, value: Expression, `type`: Type) = this()
-  def this(name: String, value: js.UndefOr[scala.Nothing], `type`: Null, modifiers: js.Array[StmtModifier]) = this()
-  def this(name: String, value: js.UndefOr[scala.Nothing], `type`: Type, modifiers: js.Array[StmtModifier]) = this()
   def this(name: String, value: Expression, `type`: Null, modifiers: js.Array[StmtModifier]) = this()
   def this(name: String, value: Expression, `type`: Type, modifiers: js.Array[StmtModifier]) = this()
-  def this(
-    name: String,
-    value: js.UndefOr[scala.Nothing],
-    `type`: Null,
-    modifiers: js.Array[StmtModifier],
-    sourceSpan: ParseSourceSpan
-  ) = this()
-  def this(
-    name: String,
-    value: js.UndefOr[scala.Nothing],
-    `type`: Null,
-    modifiers: Null,
-    sourceSpan: ParseSourceSpan
-  ) = this()
-  def this(
-    name: String,
-    value: js.UndefOr[scala.Nothing],
-    `type`: Type,
-    modifiers: js.Array[StmtModifier],
-    sourceSpan: ParseSourceSpan
-  ) = this()
-  def this(
-    name: String,
-    value: js.UndefOr[scala.Nothing],
-    `type`: Type,
-    modifiers: Null,
-    sourceSpan: ParseSourceSpan
-  ) = this()
   def this(
     name: String,
     value: Expression,

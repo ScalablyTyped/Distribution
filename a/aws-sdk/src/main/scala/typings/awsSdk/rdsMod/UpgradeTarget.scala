@@ -31,18 +31,18 @@ trait UpgradeTarget extends js.Object {
 object UpgradeTarget {
   @scala.inline
   def apply(
-    AutoUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoUpgrade: js.UndefOr[Boolean] = js.undefined,
     Description: String = null,
     Engine: String = null,
     EngineVersion: String = null,
-    IsMajorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
+    IsMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   ): UpgradeTarget = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoUpgrade)) __obj.updateDynamic("AutoUpgrade")(AutoUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoUpgrade)) __obj.updateDynamic("AutoUpgrade")(AutoUpgrade.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsMajorVersionUpgrade)) __obj.updateDynamic("IsMajorVersionUpgrade")(IsMajorVersionUpgrade.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsMajorVersionUpgrade)) __obj.updateDynamic("IsMajorVersionUpgrade")(IsMajorVersionUpgrade.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeTarget]
   }
 }

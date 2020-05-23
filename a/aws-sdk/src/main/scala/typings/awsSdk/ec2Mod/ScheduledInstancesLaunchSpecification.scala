@@ -69,7 +69,7 @@ object ScheduledInstancesLaunchSpecification {
   def apply(
     ImageId: ImageId,
     BlockDeviceMappings: ScheduledInstancesBlockDeviceMappingSet = null,
-    EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
     IamInstanceProfile: ScheduledInstancesIamInstanceProfile = null,
     InstanceType: String = null,
     KernelId: KernelId = null,
@@ -84,7 +84,7 @@ object ScheduledInstancesLaunchSpecification {
   ): ScheduledInstancesLaunchSpecification = {
     val __obj = js.Dynamic.literal(ImageId = ImageId.asInstanceOf[js.Any])
     if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
+    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
     if (IamInstanceProfile != null) __obj.updateDynamic("IamInstanceProfile")(IamInstanceProfile.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (KernelId != null) __obj.updateDynamic("KernelId")(KernelId.asInstanceOf[js.Any])

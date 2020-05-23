@@ -1,42 +1,51 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.AnonBeammiddleonly
-import typings.vexflow.AnonEnd
-import typings.vexflow.AnonFillStyle_
 import typings.vexflow.Vex.IRenderContext
+import typings.vexflow.anon.End
+import typings.vexflow.anon.FillStyle_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.Beam")
-@js.native
-class Beam protected () extends js.Object {
-  def this(notes: js.Array[StemmableNote]) = this()
-  def this(notes: js.Array[StemmableNote], auto_stem: Boolean) = this()
-  def applyStemExtensions(): Unit = js.native
-  def breakSecondaryAt(indices: js.Array[Double]): Beam = js.native
-  def calculateSlope(): Unit = js.native
-  def calculateStemDirection(notes: Note): Double = js.native
-  def draw(): Boolean = js.native
-  def drawBeamLines(): Unit = js.native
-  def drawStems(): Unit = js.native
-  def getBeamCount(): Double = js.native
-  def getBeamLines(duration: String): js.Array[AnonEnd] = js.native
-  def getNotes(): js.Array[StemmableNote] = js.native
-  def getSlopeY(): Double = js.native
-  def postFormat(): Beam = js.native
-  def preFormat(): Beam = js.native
-  def setContext(context: IRenderContext): Beam = js.native
-  def setStyle(style: AnonFillStyle_): Beam = js.native
+trait Beam extends js.Object {
+  def applyStemExtensions(): Unit
+  def breakSecondaryAt(indices: js.Array[Double]): Beam
+  def calculateSlope(): Unit
+  def calculateStemDirection(notes: Note): Double
+  def draw(): Boolean
+  def drawBeamLines(): Unit
+  def drawStems(): Unit
+  def getBeamCount(): Double
+  def getBeamLines(duration: String): js.Array[End]
+  def getNotes(): js.Array[StemmableNote]
+  def getSlopeY(): Double
+  def postFormat(): Beam
+  def preFormat(): Beam
+  def setContext(context: IRenderContext): Beam
+  def setStyle(style: FillStyle_): Beam
 }
 
-/* static members */
-@JSGlobal("Vex.Flow.Beam")
-@js.native
-object Beam extends js.Object {
-  def applyAndGetBeams(voice: Voice, stem_direction: Double, groups: js.Array[Fraction]): js.Array[Beam] = js.native
-  def generateBeams(notes: js.Array[StemmableNote]): js.Array[Beam] = js.native
-  def generateBeams(notes: js.Array[StemmableNote], config: AnonBeammiddleonly): js.Array[Beam] = js.native
-  def getDefaultBeamGroups(time_sig: String): js.Array[Fraction] = js.native
+object Beam {
+  @scala.inline
+  def apply(
+    applyStemExtensions: () => Unit,
+    breakSecondaryAt: js.Array[Double] => Beam,
+    calculateSlope: () => Unit,
+    calculateStemDirection: Note => Double,
+    draw: () => Boolean,
+    drawBeamLines: () => Unit,
+    drawStems: () => Unit,
+    getBeamCount: () => Double,
+    getBeamLines: String => js.Array[End],
+    getNotes: () => js.Array[StemmableNote],
+    getSlopeY: () => Double,
+    postFormat: () => Beam,
+    preFormat: () => Beam,
+    setContext: IRenderContext => Beam,
+    setStyle: FillStyle_ => Beam
+  ): Beam = {
+    val __obj = js.Dynamic.literal(applyStemExtensions = js.Any.fromFunction0(applyStemExtensions), breakSecondaryAt = js.Any.fromFunction1(breakSecondaryAt), calculateSlope = js.Any.fromFunction0(calculateSlope), calculateStemDirection = js.Any.fromFunction1(calculateStemDirection), draw = js.Any.fromFunction0(draw), drawBeamLines = js.Any.fromFunction0(drawBeamLines), drawStems = js.Any.fromFunction0(drawStems), getBeamCount = js.Any.fromFunction0(getBeamCount), getBeamLines = js.Any.fromFunction1(getBeamLines), getNotes = js.Any.fromFunction0(getNotes), getSlopeY = js.Any.fromFunction0(getSlopeY), postFormat = js.Any.fromFunction0(postFormat), preFormat = js.Any.fromFunction0(preFormat), setContext = js.Any.fromFunction1(setContext), setStyle = js.Any.fromFunction1(setStyle))
+    __obj.asInstanceOf[Beam]
+  }
 }
 

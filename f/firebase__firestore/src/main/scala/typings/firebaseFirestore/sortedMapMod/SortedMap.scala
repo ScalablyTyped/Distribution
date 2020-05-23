@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/sorted_map", "SortedMap")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/sorted_map", "SortedMap")
 @js.native
 class SortedMap[K, V] protected () extends js.Object {
   def this(comparator: Comparator[K]) = this()
@@ -28,6 +28,6 @@ class SortedMap[K, V] protected () extends js.Object {
   def minKey(): K | Null = js.native
   def remove(key: K): SortedMap[K, V] = js.native
   def reverseTraversal[T](action: js.Function2[/* k */ K, /* v */ V, T]): T = js.native
-  def size(): Double = js.native
+  def size: Double = js.native
 }
 

@@ -34,11 +34,11 @@ object ConnectionProvider {
     registerOnConnectionComplete: js.Function1[/* connSummary */ ConnectionInfoSummary, _] => Unit,
     registerOnIntelliSenseCacheComplete: js.Function1[/* connectionUri */ String, _] => Unit,
     buildConnectionInfo: /* connectionString */ String => Thenable[ConnectionInfo] = null,
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): ConnectionProvider = {
     val __obj = js.Dynamic.literal(cancelConnect = js.Any.fromFunction1(cancelConnect), changeDatabase = js.Any.fromFunction2(changeDatabase), connect = js.Any.fromFunction2(connect), disconnect = js.Any.fromFunction1(disconnect), getConnectionString = js.Any.fromFunction2(getConnectionString), listDatabases = js.Any.fromFunction1(listDatabases), providerId = providerId.asInstanceOf[js.Any], rebuildIntelliSenseCache = js.Any.fromFunction1(rebuildIntelliSenseCache), registerOnConnectionChanged = js.Any.fromFunction1(registerOnConnectionChanged), registerOnConnectionComplete = js.Any.fromFunction1(registerOnConnectionComplete), registerOnIntelliSenseCacheComplete = js.Any.fromFunction1(registerOnIntelliSenseCacheComplete))
     if (buildConnectionInfo != null) __obj.updateDynamic("buildConnectionInfo")(js.Any.fromFunction1(buildConnectionInfo))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionProvider]
   }
 }

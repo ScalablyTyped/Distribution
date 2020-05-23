@@ -21,12 +21,12 @@ object StatementInfo {
   def apply(
     bindNames: js.Array[String] = null,
     metaData: js.Array[Metadata] = null,
-    statementType: Int | Double = null
+    statementType: js.UndefOr[Double] = js.undefined
   ): StatementInfo = {
     val __obj = js.Dynamic.literal()
     if (bindNames != null) __obj.updateDynamic("bindNames")(bindNames.asInstanceOf[js.Any])
     if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
-    if (statementType != null) __obj.updateDynamic("statementType")(statementType.asInstanceOf[js.Any])
+    if (!js.isUndefined(statementType)) __obj.updateDynamic("statementType")(statementType.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatementInfo]
   }
 }

@@ -12,7 +12,7 @@ object PluginOptions {
   @scala.inline
   def apply(basename_as_entry_name: js.UndefOr[Boolean] = js.undefined): PluginOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(basename_as_entry_name)) __obj.updateDynamic("basename_as_entry_name")(basename_as_entry_name.asInstanceOf[js.Any])
+    if (!js.isUndefined(basename_as_entry_name)) __obj.updateDynamic("basename_as_entry_name")(basename_as_entry_name.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]
   }
 }

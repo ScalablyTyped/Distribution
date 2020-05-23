@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object PhoneCallHistorySourceIdKind extends js.Object {
   /** The identifier is for a family package. */
   @js.native
   sealed trait packageFamilyName extends PhoneCallHistorySourceIdKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneCallHistorySourceIdKind with Double] = js.native
-  /* 0 */ @js.native
-  object cellularPhoneLineId extends TopLevel[cellularPhoneLineId with Double]
-  
-  /* 1 */ @js.native
-  object packageFamilyName extends TopLevel[packageFamilyName with Double]
   
 }
 

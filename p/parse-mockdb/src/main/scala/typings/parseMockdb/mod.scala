@@ -1,6 +1,6 @@
 package typings.parseMockdb
 
-import typings.parse.mod._Global_.Parse.Cloud.BeforeSaveRequest
+import typings.parse.mod.global.Parse.Cloud.BeforeSaveRequest
 import typings.parseMockdb.ParseMockDB.HookType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

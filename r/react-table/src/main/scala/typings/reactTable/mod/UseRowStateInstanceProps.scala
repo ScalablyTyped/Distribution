@@ -11,7 +11,7 @@ trait UseRowStateInstanceProps[D /* <: js.Object */] extends js.Object {
 
 object UseRowStateInstanceProps {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     setCellState: (js.Array[String], IdType[D], UseRowUpdater[_]) => Unit,
     setRowState: (js.Array[String], UseRowUpdater[_]) => Unit
   ): UseRowStateInstanceProps[D] = {

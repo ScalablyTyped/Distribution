@@ -29,6 +29,20 @@ trait SeriesLabelOptionsObject extends js.Object {
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highcharts, Highstock, Gantt) A format string for the label, with
+    * support for a subset of HTML. Variables are enclosed by curly brackets.
+    * Available variables are `name`, `options.xxx`, `color` and other members
+    * from the `series` object. Use this option also to set a static text for
+    * the label.
+    */
+  var format: js.UndefOr[String] = js.undefined
+  /**
+    * (Highcharts, Highstock, Gantt) Callback function to format each of the
+    * series' labels. The `this` keyword refers to the series object. By
+    * default the `formatter` is undefined and the `series.name` is rendered.
+    */
+  var formatter: js.UndefOr[FormatterCallbackFunction[Series]] = js.undefined
+  /**
     * (Highcharts, Highstock, Gantt) For area-like series, allow the font size
     * to vary so that small areas get a smaller font size. The default applies
     * this effect to area-like series but not line-like series.
@@ -58,20 +72,24 @@ object SeriesLabelOptionsObject {
   def apply(
     boxesToAvoid: js.Array[LabelIntersectBoxObject] = null,
     connectorAllowed: js.UndefOr[Boolean] = js.undefined,
-    connectorNeighbourDistance: Int | Double = null,
+    connectorNeighbourDistance: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    maxFontSize: Int | Double = null,
-    minFontSize: Int | Double = null,
-    onArea: js.UndefOr[Boolean] = js.undefined,
+    format: String = null,
+    formatter: FormatterCallbackFunction[Series] = null,
+    maxFontSize: js.UndefOr[Null | Double] = js.undefined,
+    minFontSize: js.UndefOr[Null | Double] = js.undefined,
+    onArea: js.UndefOr[Null | Boolean] = js.undefined,
     style: CSSObject = null
   ): SeriesLabelOptionsObject = {
     val __obj = js.Dynamic.literal()
     if (boxesToAvoid != null) __obj.updateDynamic("boxesToAvoid")(boxesToAvoid.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectorAllowed)) __obj.updateDynamic("connectorAllowed")(connectorAllowed.asInstanceOf[js.Any])
-    if (connectorNeighbourDistance != null) __obj.updateDynamic("connectorNeighbourDistance")(connectorNeighbourDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (maxFontSize != null) __obj.updateDynamic("maxFontSize")(maxFontSize.asInstanceOf[js.Any])
-    if (minFontSize != null) __obj.updateDynamic("minFontSize")(minFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorAllowed)) __obj.updateDynamic("connectorAllowed")(connectorAllowed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorNeighbourDistance)) __obj.updateDynamic("connectorNeighbourDistance")(connectorNeighbourDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFontSize)) __obj.updateDynamic("maxFontSize")(maxFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(minFontSize)) __obj.updateDynamic("minFontSize")(minFontSize.asInstanceOf[js.Any])
     if (!js.isUndefined(onArea)) __obj.updateDynamic("onArea")(onArea.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesLabelOptionsObject]

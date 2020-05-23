@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when a button is clicked.
-		 */
+  * Fired when a button is clicked.
+  */
 trait ButtonBarClickEvent extends ButtonBarBaseEvent {
   /**
-  			 * Index of the clicked button.
-  			 */
+    * Index of the clicked button.
+    */
   var index: Double
 }
 

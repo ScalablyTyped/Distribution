@@ -53,7 +53,7 @@ object SnapshotDetail {
   def apply(
     Description: String = null,
     DeviceName: String = null,
-    DiskImageSize: Int | scala.Double = null,
+    DiskImageSize: js.UndefOr[Double] = js.undefined,
     Format: String = null,
     Progress: String = null,
     SnapshotId: String = null,
@@ -65,7 +65,7 @@ object SnapshotDetail {
     val __obj = js.Dynamic.literal()
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
-    if (DiskImageSize != null) __obj.updateDynamic("DiskImageSize")(DiskImageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(DiskImageSize)) __obj.updateDynamic("DiskImageSize")(DiskImageSize.get.asInstanceOf[js.Any])
     if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
     if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])

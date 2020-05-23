@@ -33,13 +33,13 @@ object DescribeResourcePermissionsRequest {
   def apply(
     ResourceId: ResourceIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    Limit: Int | Double = null,
+    Limit: js.UndefOr[LimitType] = js.undefined,
     Marker: PageMarkerType = null,
     PrincipalId: IdType = null
   ): DescribeResourcePermissionsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (PrincipalId != null) __obj.updateDynamic("PrincipalId")(PrincipalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeResourcePermissionsRequest]

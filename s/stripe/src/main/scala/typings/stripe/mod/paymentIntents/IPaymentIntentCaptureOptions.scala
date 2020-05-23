@@ -27,14 +27,14 @@ trait IPaymentIntentCaptureOptions extends js.Object {
 object IPaymentIntentCaptureOptions {
   @scala.inline
   def apply(
-    amount_to_capture: Int | Double = null,
-    application_fee_amount: Int | Double = null,
+    amount_to_capture: js.UndefOr[Double] = js.undefined,
+    application_fee_amount: js.UndefOr[Double] = js.undefined,
     on_behalf_of: String = null,
     transfer_data: ISetupIntentTransferData = null
   ): IPaymentIntentCaptureOptions = {
     val __obj = js.Dynamic.literal()
-    if (amount_to_capture != null) __obj.updateDynamic("amount_to_capture")(amount_to_capture.asInstanceOf[js.Any])
-    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount_to_capture)) __obj.updateDynamic("amount_to_capture")(amount_to_capture.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee_amount)) __obj.updateDynamic("application_fee_amount")(application_fee_amount.get.asInstanceOf[js.Any])
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
     if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentCaptureOptions]

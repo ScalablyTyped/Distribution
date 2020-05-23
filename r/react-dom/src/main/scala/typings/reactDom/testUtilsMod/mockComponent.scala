@@ -1,6 +1,6 @@
 package typings.reactDom.testUtilsMod
 
-import typings.reactDom.TypeofReactTestUtils
+import typings.reactDom.anon.TypeofReactTestUtils
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

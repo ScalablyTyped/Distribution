@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ajv.mod.ErrorObject
 import typings.ajv.mod.FormatDefinition
 import typings.ajv.mod.FormatValidator
-import typings.openapiResponseValidator.AnonSchema
+import typings.openapiResponseValidator.anon.Schema
 import typings.openapiTypes.mod.IJsonSchema
 import typings.openapiTypes.mod.OpenAPIV3.ComponentsObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ trait OpenAPIResponseValidatorArgs extends js.Object {
   ] = js.undefined
   var externalSchemas: StringDictionary[IJsonSchema]
   var loggingKey: String
-  var responses: StringDictionary[AnonSchema]
+  var responses: StringDictionary[Schema]
 }
 
 object OpenAPIResponseValidatorArgs {
@@ -34,7 +34,7 @@ object OpenAPIResponseValidatorArgs {
     definitions: StringDictionary[IJsonSchema],
     externalSchemas: StringDictionary[IJsonSchema],
     loggingKey: String,
-    responses: StringDictionary[AnonSchema],
+    responses: StringDictionary[Schema],
     components: ComponentsObject = null,
     errorTransformer: (/* openAPIResponseValidatorValidationError */ OpenAPIResponseValidatorError, /* ajvError */ ErrorObject) => _ = null
   ): OpenAPIResponseValidatorArgs = {

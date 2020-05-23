@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Scanners
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object ImageScannerColorMode extends js.Object {
   /** 1 bit bi-tonal, also called monochrome or ‘black and white’ (1 channel at 1 bit per channel). */
   @js.native
   sealed trait monochrome extends ImageScannerColorMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImageScannerColorMode with Double] = js.native
-  /* 3 */ @js.native
-  object autoColor extends TopLevel[autoColor with Double]
-  
-  /* 0 */ @js.native
-  object color extends TopLevel[color with Double]
-  
-  /* 1 */ @js.native
-  object grayscale extends TopLevel[grayscale with Double]
-  
-  /* 2 */ @js.native
-  object monochrome extends TopLevel[monochrome with Double]
   
 }
 

@@ -16,13 +16,13 @@ object ReadingOptions {
   @scala.inline
   def apply(
     encoding: EncodingType | utf8 | base64 = null,
-    length: Int | Double = null,
-    position: Int | Double = null
+    length: js.UndefOr[Double] = js.undefined,
+    position: js.UndefOr[Double] = js.undefined
   ): ReadingOptions = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadingOptions]
   }
 }

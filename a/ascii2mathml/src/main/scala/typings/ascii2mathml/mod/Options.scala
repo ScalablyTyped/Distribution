@@ -32,14 +32,14 @@ object Options {
     standalone: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(annotate)) __obj.updateDynamic("annotate")(annotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(bare)) __obj.updateDynamic("bare")(bare.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotate)) __obj.updateDynamic("annotate")(annotate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bare)) __obj.updateDynamic("bare")(bare.get.asInstanceOf[js.Any])
     if (colSep != null) __obj.updateDynamic("colSep")(colSep.asInstanceOf[js.Any])
     if (decimalMark != null) __obj.updateDynamic("decimalMark")(decimalMark.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (rowSep != null) __obj.updateDynamic("rowSep")(rowSep.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

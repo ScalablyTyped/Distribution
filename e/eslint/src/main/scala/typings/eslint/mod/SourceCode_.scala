@@ -1,7 +1,7 @@
 package typings.eslint.mod
 
-import typings.eslint.AnonIncludeComments
-import typings.eslint.AnonLeading
+import typings.eslint.anon.IncludeComments
+import typings.eslint.anon.Leading
 import typings.eslint.mod.AST.Program
 import typings.eslint.mod.AST.Token
 import typings.eslint.mod.Scope.ScopeManager
@@ -35,7 +35,7 @@ class SourceCode_ protected () extends js.Object {
   def commentsExistBetween(left: Node, right: Token): Boolean = js.native
   def commentsExistBetween(left: Node, right: Node): Boolean = js.native
   def getAllComments(): js.Array[Comment] = js.native
-  def getComments(node: Node): AnonLeading = js.native
+  def getComments(node: Node): Leading = js.native
   def getCommentsAfter(nodeOrToken: Token): js.Array[Comment] = js.native
   def getCommentsAfter(nodeOrToken: Node): js.Array[Comment] = js.native
   def getCommentsBefore(nodeOrToken: Token): js.Array[Comment] = js.native
@@ -145,7 +145,7 @@ class SourceCode_ protected () extends js.Object {
   // Inherited methods from TokenStore
   // ---------------------------------
   def getTokenByRangeStart(offset: Double): Token | Null = js.native
-  def getTokenByRangeStart(offset: Double, options: AnonIncludeComments): Token | Null = js.native
+  def getTokenByRangeStart(offset: Double, options: IncludeComments): Token | Null = js.native
   def getTokens(node: Node): js.Array[Token] = js.native
   def getTokens(node: Node, beforeCount: Double): js.Array[Token] = js.native
   def getTokens(node: Node, beforeCount: Double, afterCount: Double): js.Array[Token] = js.native

@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonShow
+import typings.reactWeui.anon.Show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Toast protected () extends js.Object {
 @JSImport("react-weui", "Toast")
 @js.native
 object Toast extends js.Object {
-  var defaultProps: AnonShow = js.native
+  var defaultProps: Show = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

@@ -24,8 +24,8 @@ object AreaStyle {
   ): AreaStyle = {
     val __obj = js.Dynamic.literal(color1 = color1.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (color2 != null) __obj.updateDynamic("color2")(color2.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectTexture)) __obj.updateDynamic("rejectTexture")(rejectTexture.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectTexture)) __obj.updateDynamic("rejectTexture")(rejectTexture.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaStyle]
   }
 }

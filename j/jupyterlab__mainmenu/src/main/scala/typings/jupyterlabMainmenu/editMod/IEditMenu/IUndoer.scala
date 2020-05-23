@@ -23,7 +23,7 @@ trait IUndoer[T /* <: Widget */] extends IMenuExtender[T] {
 
 object IUndoer {
   @scala.inline
-  def apply[T /* <: Widget */](
+  def apply[T](
     tracker: IWidgetTracker[T],
     isEnabled: T => Boolean = null,
     redo: /* widget */ T => Unit = null,

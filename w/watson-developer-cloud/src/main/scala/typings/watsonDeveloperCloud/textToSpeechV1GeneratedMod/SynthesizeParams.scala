@@ -35,7 +35,7 @@ object SynthesizeParams {
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (customization_id != null) __obj.updateDynamic("customization_id")(customization_id.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (voice != null) __obj.updateDynamic("voice")(voice.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynthesizeParams]
   }

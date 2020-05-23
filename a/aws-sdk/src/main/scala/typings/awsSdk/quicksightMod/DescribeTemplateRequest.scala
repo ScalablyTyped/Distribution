@@ -30,11 +30,11 @@ object DescribeTemplateRequest {
     AwsAccountId: AwsAccountId,
     TemplateId: RestrictiveResourceId,
     AliasName: AliasName = null,
-    VersionNumber: Int | scala.Double = null
+    VersionNumber: js.UndefOr[VersionNumber] = js.undefined
   ): DescribeTemplateRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
     if (AliasName != null) __obj.updateDynamic("AliasName")(AliasName.asInstanceOf[js.Any])
-    if (VersionNumber != null) __obj.updateDynamic("VersionNumber")(VersionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTemplateRequest]
   }
 }

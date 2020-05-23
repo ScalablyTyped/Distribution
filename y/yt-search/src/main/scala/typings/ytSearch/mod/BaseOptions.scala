@@ -11,10 +11,10 @@ trait BaseOptions extends js.Object {
 
 object BaseOptions {
   @scala.inline
-  def apply(pageEnd: Int | Double = null, pageStart: Int | Double = null): BaseOptions = {
+  def apply(pageEnd: js.UndefOr[Double] = js.undefined, pageStart: js.UndefOr[Double] = js.undefined): BaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (pageEnd != null) __obj.updateDynamic("pageEnd")(pageEnd.asInstanceOf[js.Any])
-    if (pageStart != null) __obj.updateDynamic("pageStart")(pageStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageEnd)) __obj.updateDynamic("pageEnd")(pageEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageStart)) __obj.updateDynamic("pageStart")(pageStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]
   }
 }

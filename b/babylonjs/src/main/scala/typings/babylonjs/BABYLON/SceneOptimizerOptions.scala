@@ -4,28 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.SceneOptimizerOptions")
 @js.native
-/**
-  * Creates a new list of options used by SceneOptimizer
-  * @param targetFrameRate defines the target frame rate to reach (60 by default)
-  * @param trackerDuration defines the interval between two checkes (2000ms by default)
-  */
-class SceneOptimizerOptions () extends js.Object {
-  def this(/**
-    * Defines the target frame rate to reach (60 by default)
-    */
-  targetFrameRate: Double) = this()
-  def this(
-    /**
-    * Defines the target frame rate to reach (60 by default)
-    */
-  targetFrameRate: Double,
-    /**
-    * Defines the interval between two checkes (2000ms by default)
-    */
-  trackerDuration: Double
-  ) = this()
+trait SceneOptimizerOptions extends js.Object {
   /**
     * Gets the list of optimizations to apply
     */
@@ -57,32 +37,5 @@ class SceneOptimizerOptions () extends js.Object {
     * @returns the current SceneOptimizerOptions
     */
   def addOptimization(optimization: SceneOptimization): SceneOptimizerOptions = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.SceneOptimizerOptions")
-@js.native
-object SceneOptimizerOptions extends js.Object {
-  /**
-    * Creates a list of pre-defined optimizations aimed to have a big impact on the scene visual
-    * @param targetFrameRate defines the target frame rate (60 by default)
-    * @returns a SceneOptimizerOptions object
-    */
-  def HighDegradationAllowed(): SceneOptimizerOptions = js.native
-  def HighDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = js.native
-  /**
-    * Creates a list of pre-defined optimizations aimed to reduce the visual impact on the scene
-    * @param targetFrameRate defines the target frame rate (60 by default)
-    * @returns a SceneOptimizerOptions object
-    */
-  def LowDegradationAllowed(): SceneOptimizerOptions = js.native
-  def LowDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = js.native
-  /**
-    * Creates a list of pre-defined optimizations aimed to have a moderate impact on the scene visual
-    * @param targetFrameRate defines the target frame rate (60 by default)
-    * @returns a SceneOptimizerOptions object
-    */
-  def ModerateDegradationAllowed(): SceneOptimizerOptions = js.native
-  def ModerateDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = js.native
 }
 

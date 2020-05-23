@@ -14,9 +14,9 @@ trait PlusNativeObjRectStyles extends js.Object {
   /**
     * 矩形边框颜色
     * 绘制矩形边框的颜色，可取值：
-    * 	"#RRGGBB"格式字符串，如"#FF0000"表示绘制红色区域；
-    * 	"rgba(R,G,B,A)"，其中R/G/B分别代表红色值/绿色值/蓝色值，正整数类型，取值范围为0-255，A为透明度，浮点数类型，取值范围为0-1（0为全透明，1为不透明），如"rgba(255,0,0,0.5)"，表示红色半透明。
-    * 	默认值为矩形填充区域颜色（color属性值）。
+    *     "#RRGGBB"格式字符串，如"#FF0000"表示绘制红色区域；
+    *     "rgba(R,G,B,A)"，其中R/G/B分别代表红色值/绿色值/蓝色值，正整数类型，取值范围为0-255，A为透明度，浮点数类型，取值范围为0-1（0为全透明，1为不透明），如"rgba(255,0,0,0.5)"，表示红色半透明。
+    *     默认值为矩形填充区域颜色（color属性值）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -24,7 +24,7 @@ trait PlusNativeObjRectStyles extends js.Object {
   /**
     * 矩形边框宽度
     * 可取值：像素值，数字加"px"格式字符串，如"2px"。
-    * 	默认值为"0px"（无边框）。
+    *     默认值为"0px"（无边框）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -32,9 +32,9 @@ trait PlusNativeObjRectStyles extends js.Object {
   /**
     * 绘制颜色
     * 矩形填充区域的颜色，可取值：
-    * 	"#RRGGBB"格式字符串，如"#FF0000"表示绘制红色区域；
-    * 	"rgba(R,G,B,A)"，其中R/G/B分别代表红色值/绿色值/蓝色值，正整数类型，取值范围为0-255，A为透明度，浮点数类型，取值范围为0-1（0为全透明，1为不透明），如"rgba(255,0,0,0.5)"，表示红色半透明。
-    * 	默认值为"#FFFFFF"（白色）。
+    *     "#RRGGBB"格式字符串，如"#FF0000"表示绘制红色区域；
+    *     "rgba(R,G,B,A)"，其中R/G/B分别代表红色值/绿色值/蓝色值，正整数类型，取值范围为0-255，A为透明度，浮点数类型，取值范围为0-1（0为全透明，1为不透明），如"rgba(255,0,0,0.5)"，表示红色半透明。
+    *     默认值为"#FFFFFF"（白色）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -42,7 +42,7 @@ trait PlusNativeObjRectStyles extends js.Object {
   /**
     * 矩形区域的圆角半径
     * 可取值：圆角半径像素值，数字加"px"格式字符串，如"6px"。
-    * 	默认值为"0px"（矩形无圆角）。
+    *     默认值为"0px"（矩形无圆角）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */

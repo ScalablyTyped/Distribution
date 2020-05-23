@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +33,7 @@ trait MSGestureEvent extends UIEvent {
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
     cancelableArg: scala.Boolean,
-    viewArg: Window_,
+    viewArg: Window,
     detailArg: Double,
     screenXArg: Double,
     screenYArg: Double,
@@ -53,15 +52,5 @@ trait MSGestureEvent extends UIEvent {
     velocityAngularArg: Double,
     hwTimestampArg: Double
   ): Unit = js.native
-}
-
-@JSGlobal("MSGestureEvent")
-@js.native
-object MSGestureEvent extends Instantiable0[MSGestureEvent] {
-  val MSGESTURE_FLAG_BEGIN: Double = js.native
-  val MSGESTURE_FLAG_CANCEL: Double = js.native
-  val MSGESTURE_FLAG_END: Double = js.native
-  val MSGESTURE_FLAG_INERTIA: Double = js.native
-  val MSGESTURE_FLAG_NONE: Double = js.native
 }
 

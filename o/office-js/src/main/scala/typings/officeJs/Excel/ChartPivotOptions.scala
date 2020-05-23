@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartPivotOptionsData
 import typings.officeJs.Excel.Interfaces.ChartPivotOptionsLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartPivotOptionsUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,36 +16,35 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-@JSGlobal("Excel.ChartPivotOptions")
 @js.native
-class ChartPivotOptions () extends ClientObject {
+trait ChartPivotOptions extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartPivotOptions: RequestContext = js.native
   /**
     *
-    * Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
+    * Specifies whether to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showAxisFieldButtons: Boolean = js.native
   /**
     *
-    * Specifies whether or not to display the legend field buttons on a PivotChart.
+    * Specifies whether to display the legend field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showLegendFieldButtons: Boolean = js.native
   /**
     *
-    * Specifies whether or not to display the report filter field buttons on a PivotChart.
+    * Specifies whether to display the report filter field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showReportFilterFieldButtons: Boolean = js.native
   /**
     *
-    * Specifies whether or not to display the show value field buttons on a PivotChart.
+    * Specifies whether to display the show value field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -57,7 +56,7 @@ class ChartPivotOptions () extends ClientObject {
     */
   def load(): ChartPivotOptions = js.native
   def load(options: ChartPivotOptionsLoadOptions): ChartPivotOptions = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartPivotOptions = js.native
+  def load(propertyNamesAndPaths: Expand): ChartPivotOptions = js.native
   def load(propertyNames: String): ChartPivotOptions = js.native
   def load(propertyNames: js.Array[String]): ChartPivotOptions = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */

@@ -59,20 +59,20 @@ object Config {
     clientId: String,
     apiVersion: String = null,
     baseUrl: String = null,
-    connectionTimeout: Int | Double = null,
+    connectionTimeout: js.UndefOr[Double] = js.undefined,
     debugMode: js.UndefOr[Boolean] = js.undefined,
     errorHandler: (/* options */ js.Any, /* err */ js.Any) => Unit = null,
     logClass: /* repeated */ js.Any => Unit = null,
-    responseTimeout: Int | Double = null
+    responseTimeout: js.UndefOr[Double] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal(clientApiKey = clientApiKey.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any])
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.get.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction2(errorHandler))
     if (logClass != null) __obj.updateDynamic("logClass")(js.Any.fromFunction1(logClass))
-    if (responseTimeout != null) __obj.updateDynamic("responseTimeout")(responseTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseTimeout)) __obj.updateDynamic("responseTimeout")(responseTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

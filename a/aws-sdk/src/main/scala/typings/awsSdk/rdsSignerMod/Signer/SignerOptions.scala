@@ -20,14 +20,14 @@ object SignerOptions {
   def apply(
     credentials: Credentials | CredentialsOptions = null,
     hostname: String = null,
-    port: Int | Double = null,
+    port: js.UndefOr[Double] = js.undefined,
     region: String = null,
     username: String = null
   ): SignerOptions = {
     val __obj = js.Dynamic.literal()
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignerOptions]

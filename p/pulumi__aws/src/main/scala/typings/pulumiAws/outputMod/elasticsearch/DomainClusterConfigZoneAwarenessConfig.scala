@@ -14,9 +14,9 @@ trait DomainClusterConfigZoneAwarenessConfig extends js.Object {
 
 object DomainClusterConfigZoneAwarenessConfig {
   @scala.inline
-  def apply(availabilityZoneCount: Int | Double = null): DomainClusterConfigZoneAwarenessConfig = {
+  def apply(availabilityZoneCount: js.UndefOr[Double] = js.undefined): DomainClusterConfigZoneAwarenessConfig = {
     val __obj = js.Dynamic.literal()
-    if (availabilityZoneCount != null) __obj.updateDynamic("availabilityZoneCount")(availabilityZoneCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(availabilityZoneCount)) __obj.updateDynamic("availabilityZoneCount")(availabilityZoneCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainClusterConfigZoneAwarenessConfig]
   }
 }

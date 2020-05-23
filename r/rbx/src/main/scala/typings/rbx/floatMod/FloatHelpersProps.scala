@@ -15,7 +15,7 @@ object FloatHelpersProps {
   @scala.inline
   def apply(clearfix: js.UndefOr[Boolean] = js.undefined, pull: left | right = null): FloatHelpersProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clearfix)) __obj.updateDynamic("clearfix")(clearfix.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearfix)) __obj.updateDynamic("clearfix")(clearfix.get.asInstanceOf[js.Any])
     if (pull != null) __obj.updateDynamic("pull")(pull.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatHelpersProps]
   }

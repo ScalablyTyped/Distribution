@@ -29,13 +29,13 @@ object GMLOptions {
     surface: js.UndefOr[Boolean] = js.undefined
   ): GMLOptions = {
     val __obj = js.Dynamic.literal(srsName = srsName.asInstanceOf[js.Any])
-    if (!js.isUndefined(curve)) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
+    if (!js.isUndefined(curve)) __obj.updateDynamic("curve")(curve.get.asInstanceOf[js.Any])
     if (featureNS != null) __obj.updateDynamic("featureNS")(featureNS.asInstanceOf[js.Any])
     if (featureType != null) __obj.updateDynamic("featureType")(featureType.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiCurve)) __obj.updateDynamic("multiCurve")(multiCurve.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSurface)) __obj.updateDynamic("multiSurface")(multiSurface.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiCurve)) __obj.updateDynamic("multiCurve")(multiCurve.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSurface)) __obj.updateDynamic("multiSurface")(multiSurface.get.asInstanceOf[js.Any])
     if (schemaLocation != null) __obj.updateDynamic("schemaLocation")(schemaLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(surface)) __obj.updateDynamic("surface")(surface.asInstanceOf[js.Any])
+    if (!js.isUndefined(surface)) __obj.updateDynamic("surface")(surface.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GMLOptions]
   }
 }

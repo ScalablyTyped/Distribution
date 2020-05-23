@@ -1,6 +1,8 @@
 package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.Instantiable2
+import typings.firebaseDatabase.anon.FnCallOnfulfilledOnrejected
+import typings.firebaseDatabase.anon.FnCallOnrejected
 import typings.firebaseDatabase.dataSnapshotMod.DataSnapshot
 import typings.firebaseDatabase.databaseMod.Database
 import typings.firebaseDatabase.onDisconnectMod.OnDisconnect
@@ -103,10 +105,6 @@ object referenceMod extends js.Object {
     def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
     def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]],

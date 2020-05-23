@@ -16,18 +16,6 @@ import scala.scalajs.js.annotation._
 
 object blueprintjsCoreStrings {
   @js.native
-  sealed trait `360px` extends js.Object
-  
-  @js.native
-  sealed trait `50Percentsign` extends js.Object
-  
-  @js.native
-  sealed trait `90Percentsign` extends js.Object
-  
-  @js.native
-  sealed trait Blueprint3 extends js.Object
-  
-  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -818,14 +806,6 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait yes extends js.Object
   
-  @scala.inline
-  def `360px`: `360px` = "360px".asInstanceOf[`360px`]
-  @scala.inline
-  def `50Percentsign`: `50Percentsign` = "50%".asInstanceOf[`50Percentsign`]
-  @scala.inline
-  def `90Percentsign`: `90Percentsign` = "90%".asInstanceOf[`90Percentsign`]
-  @scala.inline
-  def Blueprint3: Blueprint3 = "Blueprint3".asInstanceOf[Blueprint3]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

@@ -1,19 +1,19 @@
 package typings.jweixin.mod
 
-import typings.jweixin.AnonNetworkType
+import typings.jweixin.anon.NetworkType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IgetNetworkType extends BaseParams {
   @JSName("success")
-  def success_MIgetNetworkType(res: AnonNetworkType): Unit
+  def success_MIgetNetworkType(res: NetworkType): Unit
 }
 
 object IgetNetworkType {
   @scala.inline
   def apply(
-    success: AnonNetworkType => Unit,
+    success: NetworkType => Unit,
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IgetNetworkType = {

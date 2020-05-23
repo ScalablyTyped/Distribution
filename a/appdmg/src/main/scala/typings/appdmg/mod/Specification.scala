@@ -32,7 +32,7 @@ object Specification {
     `background-color`: String = null,
     `code-sign`: SpecificationCodeSign = null,
     icon: String = null,
-    `icon-size`: Int | Double = null,
+    `icon-size`: js.UndefOr[Double] = js.undefined,
     window: SpecificationWindow = null
   ): Specification = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
@@ -40,7 +40,7 @@ object Specification {
     if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
     if (`code-sign` != null) __obj.updateDynamic("code-sign")(`code-sign`.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (`icon-size` != null) __obj.updateDynamic("icon-size")(`icon-size`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`icon-size`)) __obj.updateDynamic("icon-size")(`icon-size`.get.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Specification]
   }

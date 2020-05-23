@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -92,8 +91,4 @@ trait LayersMixin extends js.Object {
     */
   def reorder(layer: Layer, index: Double): Layer = js.native
 }
-
-@JSGlobal("__esri.LayersMixin")
-@js.native
-object LayersMixin extends TopLevel[LayersMixinConstructor]
 

@@ -12,20 +12,20 @@ trait ICandleStick extends ICartesian {
   /** [Config Option] (String) */
   var closeField: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of closeField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getCloseField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of highField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getHighField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of lowField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getLowField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of openField
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getOpenField: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var highField: js.UndefOr[String] = js.undefined
@@ -34,20 +34,20 @@ trait ICandleStick extends ICartesian {
   /** [Config Option] (String) */
   var openField: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of closeField
-  		* @param closeField String The new value.
-  		*/
+    * @param closeField String The new value.
+    */
   var setCloseField: js.UndefOr[js.Function1[/* closeField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of highField
-  		* @param highField String The new value.
-  		*/
+    * @param highField String The new value.
+    */
   var setHighField: js.UndefOr[js.Function1[/* highField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of lowField
-  		* @param lowField String The new value.
-  		*/
+    * @param lowField String The new value.
+    */
   var setLowField: js.UndefOr[js.Function1[/* lowField */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of openField
-  		* @param openField String The new value.
-  		*/
+    * @param openField String The new value.
+    */
   var setOpenField: js.UndefOr[js.Function1[/* openField */ js.UndefOr[String], Unit]] = js.undefined
 }
 
@@ -119,7 +119,7 @@ object ICandleStick {
     itemInstancing: js.Any = null,
     label: js.Any = null,
     labelField: js.Any = null,
-    labelOverflowPadding: Int | Double = null,
+    labelOverflowPadding: js.UndefOr[Double] = js.undefined,
     listeners: js.Any = null,
     lowField: String = null,
     marker: js.Any = null,
@@ -259,7 +259,7 @@ object ICandleStick {
     if (itemInstancing != null) __obj.updateDynamic("itemInstancing")(itemInstancing.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
-    if (labelOverflowPadding != null) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelOverflowPadding)) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (lowField != null) __obj.updateDynamic("lowField")(lowField.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
@@ -314,8 +314,8 @@ object ICandleStick {
     if (setXField != null) __obj.updateDynamic("setXField")(js.Any.fromFunction1(setXField))
     if (setYAxis != null) __obj.updateDynamic("setYAxis")(js.Any.fromFunction1(setYAxis))
     if (setYField != null) __obj.updateDynamic("setYField")(js.Any.fromFunction1(setYField))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

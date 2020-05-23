@@ -25,10 +25,10 @@ object DisassociateTransitGatewayRouteTableRequest {
   def apply(
     TransitGatewayAttachmentId: TransitGatewayAttachmentId,
     TransitGatewayRouteTableId: TransitGatewayRouteTableId,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): DisassociateTransitGatewayRouteTableRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any], TransitGatewayRouteTableId = TransitGatewayRouteTableId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateTransitGatewayRouteTableRequest]
   }
 }

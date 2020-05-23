@@ -1,7 +1,7 @@
 package typings.reactFns.geoPositionGeoPositionMod
 
 import typings.react.mod.Component
-import typings.reactFns.AnonIsLoading
+import typings.reactFns.anon.IsLoading
 import typings.reactFns.typesMod.SharedRenderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ class GeoPosition ()
   extends Component[SharedRenderProps[GeoPositionProps], GeoPositionProps, js.Any] {
   var geoId: js.Any = js.native
   @JSName("state")
-  var state_GeoPosition: AnonIsLoading = js.native
+  var state_GeoPosition: IsLoading = js.native
   @JSName("componentDidMount")
   def componentDidMount_MGeoPosition(): Unit = js.native
   @JSName("componentWillUnmount")

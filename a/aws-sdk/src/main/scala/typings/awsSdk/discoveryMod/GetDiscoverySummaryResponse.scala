@@ -36,19 +36,19 @@ object GetDiscoverySummaryResponse {
   @scala.inline
   def apply(
     agentSummary: CustomerAgentInfo = null,
-    applications: Int | Double = null,
+    applications: js.UndefOr[Long] = js.undefined,
     connectorSummary: CustomerConnectorInfo = null,
-    servers: Int | Double = null,
-    serversMappedToApplications: Int | Double = null,
-    serversMappedtoTags: Int | Double = null
+    servers: js.UndefOr[Long] = js.undefined,
+    serversMappedToApplications: js.UndefOr[Long] = js.undefined,
+    serversMappedtoTags: js.UndefOr[Long] = js.undefined
   ): GetDiscoverySummaryResponse = {
     val __obj = js.Dynamic.literal()
     if (agentSummary != null) __obj.updateDynamic("agentSummary")(agentSummary.asInstanceOf[js.Any])
-    if (applications != null) __obj.updateDynamic("applications")(applications.asInstanceOf[js.Any])
+    if (!js.isUndefined(applications)) __obj.updateDynamic("applications")(applications.get.asInstanceOf[js.Any])
     if (connectorSummary != null) __obj.updateDynamic("connectorSummary")(connectorSummary.asInstanceOf[js.Any])
-    if (servers != null) __obj.updateDynamic("servers")(servers.asInstanceOf[js.Any])
-    if (serversMappedToApplications != null) __obj.updateDynamic("serversMappedToApplications")(serversMappedToApplications.asInstanceOf[js.Any])
-    if (serversMappedtoTags != null) __obj.updateDynamic("serversMappedtoTags")(serversMappedtoTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(servers)) __obj.updateDynamic("servers")(servers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serversMappedToApplications)) __obj.updateDynamic("serversMappedToApplications")(serversMappedToApplications.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serversMappedtoTags)) __obj.updateDynamic("serversMappedtoTags")(serversMappedtoTags.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDiscoverySummaryResponse]
   }
 }

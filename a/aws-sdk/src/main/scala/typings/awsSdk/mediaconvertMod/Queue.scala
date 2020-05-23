@@ -61,10 +61,10 @@ object Queue {
     Description: string = null,
     LastUpdated: timestampUnix = null,
     PricingPlan: PricingPlan = null,
-    ProgressingJobsCount: Int | Double = null,
+    ProgressingJobsCount: js.UndefOr[integer] = js.undefined,
     ReservationPlan: ReservationPlan = null,
     Status: QueueStatus = null,
-    SubmittedJobsCount: Int | Double = null,
+    SubmittedJobsCount: js.UndefOr[integer] = js.undefined,
     Type: Type = null
   ): Queue = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
@@ -73,10 +73,10 @@ object Queue {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
     if (PricingPlan != null) __obj.updateDynamic("PricingPlan")(PricingPlan.asInstanceOf[js.Any])
-    if (ProgressingJobsCount != null) __obj.updateDynamic("ProgressingJobsCount")(ProgressingJobsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ProgressingJobsCount)) __obj.updateDynamic("ProgressingJobsCount")(ProgressingJobsCount.get.asInstanceOf[js.Any])
     if (ReservationPlan != null) __obj.updateDynamic("ReservationPlan")(ReservationPlan.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubmittedJobsCount != null) __obj.updateDynamic("SubmittedJobsCount")(SubmittedJobsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(SubmittedJobsCount)) __obj.updateDynamic("SubmittedJobsCount")(SubmittedJobsCount.get.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Queue]
   }

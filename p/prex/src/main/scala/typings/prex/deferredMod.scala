@@ -20,25 +20,23 @@ object deferredMod extends js.Object {
     /**
       * Gets a NodeJS-style callback that can be used to resolve or reject the promise.
       */
-    val callback: (js.Function2[/* err */ js.UndefOr[Error | Null], /* value */ T, Unit]) | (js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) = js.native
-    /**
-      * Gets the promise.
-      */
-    val promise: js.Promise[T] = js.native
+    def callback: (js.Function2[/* err */ js.UndefOr[Error | Null], /* value */ T, Unit]) | (js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) = js.native
     /**
       * Creates a NodeJS-style callback that can be used to resolve or reject the promise with multiple values.
       */
     def createCallback[A /* <: js.Array[_] */](selector: js.Function1[/* args */ A, T]): js.Function2[/* err */ js.UndefOr[Error | Null], /* args */ A, Unit] = js.native
     /**
+      * Gets the promise.
+      */
+    def promise: js.Promise[T] = js.native
+    /**
       * Gets the callback used to reject the promise.
       */
-    def reject(reason: js.Any): Unit = js.native
+    def reject: js.Function1[/* reason */ js.Any, Unit] = js.native
     /**
       * Gets the callback used to resolve the promise.
       */
-    def resolve(): Unit = js.native
-    def resolve(value: T): Unit = js.native
-    def resolve(value: js.Thenable[T]): Unit = js.native
+    def resolve: js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit] = js.native
   }
   
 }

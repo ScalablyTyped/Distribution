@@ -15,7 +15,7 @@ trait OperationMessagePayload
 object OperationMessagePayload {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     operationName: String = null,
     query: String = null,
     variables: StringDictionary[js.Any] = null

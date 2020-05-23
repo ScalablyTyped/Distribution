@@ -45,7 +45,7 @@ object SheetsRangeSetting {
     if (headerStyles != null) __obj.updateDynamic("headerStyles")(headerStyles.asInstanceOf[js.Any])
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.get.asInstanceOf[js.Any])
     if (startCell != null) __obj.updateDynamic("startCell")(startCell.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsRangeSetting]
   }

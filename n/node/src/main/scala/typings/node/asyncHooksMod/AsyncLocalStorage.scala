@@ -50,19 +50,6 @@ class AsyncLocalStorage[T] () extends js.Object {
     */
   def exit(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Unit = js.native
   /**
-    * This methods runs a function synchronously outside of a context and return its
-    * return value. The store is not accessible within the callback function or
-    * the asynchronous operations created within the callback.
-    *
-    * Optionally, arguments can be passed to the function. They will be passed to
-    * the callback function.
-    *
-    * If the callback function throws an error, it will be thrown by
-    * `exitSyncAndReturn` too. The stacktrace will not be impacted by this call and
-    * the context will be re-entered.
-    */
-  def exitSyncAndReturn[R](callback: js.Function1[/* repeated */ js.Any, R], args: js.Any*): R = js.native
-  /**
     * This method returns the current store.
     * If this method is called outside of an asynchronous context initialized by
     * calling `asyncLocalStorage.run` or `asyncLocalStorage.runAndReturn`, it will
@@ -86,18 +73,5 @@ class AsyncLocalStorage[T] () extends js.Object {
     */
   // TODO: Apply generic vararg once available
   def run(store: T, callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Unit = js.native
-  /**
-    * This methods runs a function synchronously within a context and return its
-    * return value. The store is not accessible outside of the callback function or
-    * the asynchronous operations created within the callback.
-    *
-    * Optionally, arguments can be passed to the function. They will be passed to
-    * the callback function.
-    *
-    * If the callback function throws an error, it will be thrown by
-    * `runSyncAndReturn` too. The stacktrace will not be impacted by this call and
-    * the context will be exited.
-    */
-  def runSyncAndReturn[R](store: T, callback: js.Function1[/* repeated */ js.Any, R], args: js.Any*): R = js.native
 }
 

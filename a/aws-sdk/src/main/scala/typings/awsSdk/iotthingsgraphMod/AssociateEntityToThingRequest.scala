@@ -22,9 +22,9 @@ trait AssociateEntityToThingRequest extends js.Object {
 
 object AssociateEntityToThingRequest {
   @scala.inline
-  def apply(entityId: Urn, thingName: ThingName, namespaceVersion: Int | Double = null): AssociateEntityToThingRequest = {
+  def apply(entityId: Urn, thingName: ThingName, namespaceVersion: js.UndefOr[Version] = js.undefined): AssociateEntityToThingRequest = {
     val __obj = js.Dynamic.literal(entityId = entityId.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
-    if (namespaceVersion != null) __obj.updateDynamic("namespaceVersion")(namespaceVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaceVersion)) __obj.updateDynamic("namespaceVersion")(namespaceVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateEntityToThingRequest]
   }
 }

@@ -13,11 +13,11 @@ trait ShowPanelOptions extends js.Object {
   var after: js.UndefOr[Panel] = js.undefined
   /**The new panel will be added before the given panel. */
   var before: js.UndefOr[Panel] = js.undefined
-  /**Controls the position of the newly added panel. The following values are recognized:  
-    * `top` (default): Adds the panel at the very top.  
-    *  `after-top`: Adds the panel at the bottom of the top panels.  
-    *  `bottom`: Adds the panel at the very bottom.  
-    *  `before-bottom`: Adds the panel at the top of the bottom panels.  
+  /**Controls the position of the newly added panel. The following values are recognized:
+    * `top` (default): Adds the panel at the very top.
+    *  `after-top`: Adds the panel at the bottom of the top panels.
+    *  `bottom`: Adds the panel at the very bottom.
+    *  `before-bottom`: Adds the panel at the top of the bottom panels.
     */
   var position: js.UndefOr[top | `after-top` | bottom | `before-bottom`] = js.undefined
   /**The new panel will replace the given panel. */
@@ -40,7 +40,7 @@ object ShowPanelOptions {
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable.asInstanceOf[js.Any])
+    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowPanelOptions]
   }
 }

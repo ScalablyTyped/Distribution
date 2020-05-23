@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.terminalTerminalMod
 
-import typings.jupyterlabServices.OmitIOptionsserverSettingModel
+import typings.jupyterlabServices.anon.OmitIOptionsserverSettingModel
 import typings.jupyterlabServices.terminalRestapiMod.IModel
 import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection.IOptions
 import typings.luminoAlgorithm.iterMod.IIterator

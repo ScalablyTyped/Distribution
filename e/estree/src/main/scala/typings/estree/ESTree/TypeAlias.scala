@@ -16,10 +16,10 @@ object TypeAlias {
   def apply(
     id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any,
     right: FlowTypeAnnotation,
-    typeParameters: TypeParameterDeclaration = null
+    typeParameters: js.UndefOr[Null | TypeParameterDeclaration] = js.undefined
   ): TypeAlias = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeParameters)) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeAlias]
   }
 }

@@ -1,6 +1,7 @@
 package typings.easyXHeaders
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NodeBuffer extends /* index */ NumberDictionary[Double] {
   var length: Double = js.native
-  def compare(otherBuffer: typings.node.Buffer): Double = js.native
-  def copy(targetBuffer: typings.node.Buffer): Double = js.native
-  def copy(targetBuffer: typings.node.Buffer, targetStart: Double): Double = js.native
-  def copy(targetBuffer: typings.node.Buffer, targetStart: Double, sourceStart: Double): Double = js.native
-  def copy(targetBuffer: typings.node.Buffer, targetStart: Double, sourceStart: Double, sourceEnd: Double): Double = js.native
-  def equals(otherBuffer: typings.node.Buffer): Boolean = js.native
+  def compare(otherBuffer: Buffer): Double = js.native
+  def copy(targetBuffer: Buffer): Double = js.native
+  def copy(targetBuffer: Buffer, targetStart: Double): Double = js.native
+  def copy(targetBuffer: Buffer, targetStart: Double, sourceStart: Double): Double = js.native
+  def copy(targetBuffer: Buffer, targetStart: Double, sourceStart: Double, sourceEnd: Double): Double = js.native
+  def equals(otherBuffer: Buffer): Boolean = js.native
   def fill(value: js.Any): Unit = js.native
   def fill(value: js.Any, offset: Double): Unit = js.native
   def fill(value: js.Any, offset: Double, end: Double): Unit = js.native
@@ -56,9 +57,9 @@ trait NodeBuffer extends /* index */ NumberDictionary[Double] {
   def readUIntBE(offset: Double, byteLength: Double, noAssert: Boolean): Double = js.native
   def readUIntLE(offset: Double, byteLength: Double): Double = js.native
   def readUIntLE(offset: Double, byteLength: Double, noAssert: Boolean): Double = js.native
-  def slice(): typings.node.Buffer = js.native
-  def slice(start: Double): typings.node.Buffer = js.native
-  def slice(start: Double, end: Double): typings.node.Buffer = js.native
+  def slice(): Buffer = js.native
+  def slice(start: Double): Buffer = js.native
+  def slice(start: Double, end: Double): Buffer = js.native
   def toJSON(): js.Any = js.native
   def toString(encoding: String): String = js.native
   def toString(encoding: String, start: Double): String = js.native

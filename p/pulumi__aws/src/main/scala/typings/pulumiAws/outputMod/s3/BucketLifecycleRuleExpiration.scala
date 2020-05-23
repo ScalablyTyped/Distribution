@@ -24,13 +24,13 @@ object BucketLifecycleRuleExpiration {
   @scala.inline
   def apply(
     date: String = null,
-    days: Int | Double = null,
+    days: js.UndefOr[Double] = js.undefined,
     expiredObjectDeleteMarker: js.UndefOr[Boolean] = js.undefined
   ): BucketLifecycleRuleExpiration = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (!js.isUndefined(expiredObjectDeleteMarker)) __obj.updateDynamic("expiredObjectDeleteMarker")(expiredObjectDeleteMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expiredObjectDeleteMarker)) __obj.updateDynamic("expiredObjectDeleteMarker")(expiredObjectDeleteMarker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLifecycleRuleExpiration]
   }
 }

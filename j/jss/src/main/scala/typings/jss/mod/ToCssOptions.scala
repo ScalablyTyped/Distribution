@@ -11,10 +11,10 @@ trait ToCssOptions extends js.Object {
 
 object ToCssOptions {
   @scala.inline
-  def apply(allowEmpty: js.UndefOr[Boolean] = js.undefined, indent: Int | Double = null): ToCssOptions = {
+  def apply(allowEmpty: js.UndefOr[Boolean] = js.undefined, indent: js.UndefOr[Double] = js.undefined): ToCssOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToCssOptions]
   }
 }

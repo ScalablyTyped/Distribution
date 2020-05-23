@@ -22,15 +22,15 @@ object GraphQLArgument {
     defaultValue: js.Any,
     name: String,
     `type`: GraphQLInputType,
-    astNode: Maybe[InputValueDefinitionNode] = null,
-    description: Maybe[String] = null,
-    extensions: Maybe[Record[String, _]] = null
+    astNode: js.UndefOr[Null | Maybe[InputValueDefinitionNode]] = js.undefined,
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined,
+    extensions: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined
   ): GraphQLArgument = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLArgument]
   }
 }

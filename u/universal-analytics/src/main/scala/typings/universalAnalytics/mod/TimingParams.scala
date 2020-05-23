@@ -56,7 +56,7 @@ trait TimingParams
 object TimingParams {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     utc: String = null,
     utl: String = null,
     utt: String | Double = null,

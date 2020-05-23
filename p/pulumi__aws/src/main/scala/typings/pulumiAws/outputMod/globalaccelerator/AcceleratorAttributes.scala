@@ -28,7 +28,7 @@ object AcceleratorAttributes {
     flowLogsS3Prefix: String = null
   ): AcceleratorAttributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flowLogsEnabled)) __obj.updateDynamic("flowLogsEnabled")(flowLogsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(flowLogsEnabled)) __obj.updateDynamic("flowLogsEnabled")(flowLogsEnabled.get.asInstanceOf[js.Any])
     if (flowLogsS3Bucket != null) __obj.updateDynamic("flowLogsS3Bucket")(flowLogsS3Bucket.asInstanceOf[js.Any])
     if (flowLogsS3Prefix != null) __obj.updateDynamic("flowLogsS3Prefix")(flowLogsS3Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceleratorAttributes]

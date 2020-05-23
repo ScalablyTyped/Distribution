@@ -20,7 +20,7 @@ trait ResultObject
 object ResultObject {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     bounds: LatLngBoundsExpression = null,
     geojson: GeoJSON_[_] = null,
     latlng: LatLngExpression = null,

@@ -1,6 +1,6 @@
 package typings.gapiClientAdsense.gapi.client.adsense
 
-import typings.gapiClientAdsense.AnonCurrency
+import typings.gapiClientAdsense.anon.Currency
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait AdsenseReportsGenerateResponse extends js.Object {
     * The header information of the columns requested in the report. This is a list of headers; one for each dimension in the request, followed by one for
     * each metric in the request.
     */
-  var headers: js.UndefOr[js.Array[AnonCurrency]] = js.undefined
+  var headers: js.UndefOr[js.Array[Currency]] = js.undefined
   /** Kind this is, in this case adsense#report. */
   var kind: js.UndefOr[String] = js.undefined
   /**
@@ -40,7 +40,7 @@ object AdsenseReportsGenerateResponse {
   def apply(
     averages: js.Array[String] = null,
     endDate: String = null,
-    headers: js.Array[AnonCurrency] = null,
+    headers: js.Array[Currency] = null,
     kind: String = null,
     rows: js.Array[js.Array[String]] = null,
     startDate: String = null,

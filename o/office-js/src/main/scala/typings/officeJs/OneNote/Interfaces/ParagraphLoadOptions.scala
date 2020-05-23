@@ -117,8 +117,8 @@ object ParagraphLoadOptions {
     `type`: js.UndefOr[Boolean] = js.undefined
   ): ParagraphLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (inkWords != null) __obj.updateDynamic("inkWords")(inkWords.asInstanceOf[js.Any])
     if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
@@ -129,7 +129,7 @@ object ParagraphLoadOptions {
     if (parentTableCellOrNull != null) __obj.updateDynamic("parentTableCellOrNull")(parentTableCellOrNull.asInstanceOf[js.Any])
     if (richText != null) __obj.updateDynamic("richText")(richText.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphLoadOptions]
   }
 }

@@ -34,17 +34,17 @@ object TextStyleSuggestionState {
     weightedFontFamilySuggested: js.UndefOr[Boolean] = js.undefined
   ): TextStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backgroundColorSuggested)) __obj.updateDynamic("backgroundColorSuggested")(backgroundColorSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(baselineOffsetSuggested)) __obj.updateDynamic("baselineOffsetSuggested")(baselineOffsetSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(boldSuggested)) __obj.updateDynamic("boldSuggested")(boldSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSizeSuggested)) __obj.updateDynamic("fontSizeSuggested")(fontSizeSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(foregroundColorSuggested)) __obj.updateDynamic("foregroundColorSuggested")(foregroundColorSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(italicSuggested)) __obj.updateDynamic("italicSuggested")(italicSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkSuggested)) __obj.updateDynamic("linkSuggested")(linkSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(smallCapsSuggested)) __obj.updateDynamic("smallCapsSuggested")(smallCapsSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikethroughSuggested)) __obj.updateDynamic("strikethroughSuggested")(strikethroughSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(underlineSuggested)) __obj.updateDynamic("underlineSuggested")(underlineSuggested.asInstanceOf[js.Any])
-    if (!js.isUndefined(weightedFontFamilySuggested)) __obj.updateDynamic("weightedFontFamilySuggested")(weightedFontFamilySuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundColorSuggested)) __obj.updateDynamic("backgroundColorSuggested")(backgroundColorSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(baselineOffsetSuggested)) __obj.updateDynamic("baselineOffsetSuggested")(baselineOffsetSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(boldSuggested)) __obj.updateDynamic("boldSuggested")(boldSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSizeSuggested)) __obj.updateDynamic("fontSizeSuggested")(fontSizeSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(foregroundColorSuggested)) __obj.updateDynamic("foregroundColorSuggested")(foregroundColorSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(italicSuggested)) __obj.updateDynamic("italicSuggested")(italicSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkSuggested)) __obj.updateDynamic("linkSuggested")(linkSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smallCapsSuggested)) __obj.updateDynamic("smallCapsSuggested")(smallCapsSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikethroughSuggested)) __obj.updateDynamic("strikethroughSuggested")(strikethroughSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(underlineSuggested)) __obj.updateDynamic("underlineSuggested")(underlineSuggested.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(weightedFontFamilySuggested)) __obj.updateDynamic("weightedFontFamilySuggested")(weightedFontFamilySuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextStyleSuggestionState]
   }
 }

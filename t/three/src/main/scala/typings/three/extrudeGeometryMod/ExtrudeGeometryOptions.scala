@@ -24,26 +24,26 @@ object ExtrudeGeometryOptions {
   def apply(
     UVGenerator: UVGenerator = null,
     bevelEnabled: js.UndefOr[Boolean] = js.undefined,
-    bevelOffset: Int | Double = null,
-    bevelSegments: Int | Double = null,
-    bevelSize: Int | Double = null,
-    bevelThickness: Int | Double = null,
-    curveSegments: Int | Double = null,
-    depth: Int | Double = null,
+    bevelOffset: js.UndefOr[Double] = js.undefined,
+    bevelSegments: js.UndefOr[Double] = js.undefined,
+    bevelSize: js.UndefOr[Double] = js.undefined,
+    bevelThickness: js.UndefOr[Double] = js.undefined,
+    curveSegments: js.UndefOr[Double] = js.undefined,
+    depth: js.UndefOr[Double] = js.undefined,
     extrudePath: Curve[Vector3] = null,
-    steps: Int | Double = null
+    steps: js.UndefOr[Double] = js.undefined
   ): ExtrudeGeometryOptions = {
     val __obj = js.Dynamic.literal()
     if (UVGenerator != null) __obj.updateDynamic("UVGenerator")(UVGenerator.asInstanceOf[js.Any])
-    if (!js.isUndefined(bevelEnabled)) __obj.updateDynamic("bevelEnabled")(bevelEnabled.asInstanceOf[js.Any])
-    if (bevelOffset != null) __obj.updateDynamic("bevelOffset")(bevelOffset.asInstanceOf[js.Any])
-    if (bevelSegments != null) __obj.updateDynamic("bevelSegments")(bevelSegments.asInstanceOf[js.Any])
-    if (bevelSize != null) __obj.updateDynamic("bevelSize")(bevelSize.asInstanceOf[js.Any])
-    if (bevelThickness != null) __obj.updateDynamic("bevelThickness")(bevelThickness.asInstanceOf[js.Any])
-    if (curveSegments != null) __obj.updateDynamic("curveSegments")(curveSegments.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelEnabled)) __obj.updateDynamic("bevelEnabled")(bevelEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelOffset)) __obj.updateDynamic("bevelOffset")(bevelOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelSegments)) __obj.updateDynamic("bevelSegments")(bevelSegments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelSize)) __obj.updateDynamic("bevelSize")(bevelSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bevelThickness)) __obj.updateDynamic("bevelThickness")(bevelThickness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(curveSegments)) __obj.updateDynamic("curveSegments")(curveSegments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
     if (extrudePath != null) __obj.updateDynamic("extrudePath")(extrudePath.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtrudeGeometryOptions]
   }
 }

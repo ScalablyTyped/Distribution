@@ -15,7 +15,7 @@ trait DomainSummary extends js.Object {
     */
   var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
   /**
-    * Expiration date of the domain in Coordinated Universal Time (UTC).
+    * Expiration date of the domain in Unix time format and Coordinated Universal Time (UTC).
     */
   var Expiry: js.UndefOr[Timestamp] = js.native
   /**
@@ -28,14 +28,14 @@ object DomainSummary {
   @scala.inline
   def apply(
     DomainName: DomainName,
-    AutoRenew: js.UndefOr[scala.Boolean] = js.undefined,
+    AutoRenew: js.UndefOr[Boolean] = js.undefined,
     Expiry: Timestamp = null,
-    TransferLock: js.UndefOr[scala.Boolean] = js.undefined
+    TransferLock: js.UndefOr[Boolean] = js.undefined
   ): DomainSummary = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoRenew)) __obj.updateDynamic("AutoRenew")(AutoRenew.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoRenew)) __obj.updateDynamic("AutoRenew")(AutoRenew.get.asInstanceOf[js.Any])
     if (Expiry != null) __obj.updateDynamic("Expiry")(Expiry.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransferLock)) __obj.updateDynamic("TransferLock")(TransferLock.asInstanceOf[js.Any])
+    if (!js.isUndefined(TransferLock)) __obj.updateDynamic("TransferLock")(TransferLock.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainSummary]
   }
 }

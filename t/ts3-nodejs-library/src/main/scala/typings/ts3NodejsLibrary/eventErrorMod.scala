@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary
 
 import typings.std.Error
+import typings.ts3NodejsLibrary.anon.EventName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +21,7 @@ object eventErrorMod extends js.Object {
     override var message: String = js.native
     /* CompleteClass */
     override var name: String = js.native
-    def toJSON(): AnonEventName = js.native
+    def toJSON(): EventName = js.native
   }
   
 }

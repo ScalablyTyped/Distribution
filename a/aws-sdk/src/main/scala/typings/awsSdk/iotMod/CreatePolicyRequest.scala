@@ -14,12 +14,17 @@ trait CreatePolicyRequest extends js.Object {
     * The policy name.
     */
   var policyName: PolicyName = js.native
+  /**
+    * Metadata which can be used to manage the policy.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
+    */
+  var tags: js.UndefOr[TagList] = js.native
 }
 
 object CreatePolicyRequest {
   @scala.inline
-  def apply(policyDocument: PolicyDocument, policyName: PolicyName): CreatePolicyRequest = {
+  def apply(policyDocument: PolicyDocument, policyName: PolicyName, tags: TagList = null): CreatePolicyRequest = {
     val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePolicyRequest]
   }
 }

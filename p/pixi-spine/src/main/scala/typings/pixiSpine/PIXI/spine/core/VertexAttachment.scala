@@ -4,15 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.VertexAttachment")
-@js.native
-abstract class VertexAttachment protected () extends Attachment {
-  def this(name: String) = this()
-  var bones: js.Array[Double] = js.native
-  var deformAttachment: VertexAttachment = js.native
-  var id: Double = js.native
-  var vertices: ArrayLike[Double] = js.native
-  var worldVerticesLength: Double = js.native
+trait VertexAttachment extends Attachment {
+  var bones: js.Array[Double]
+  var deformAttachment: VertexAttachment
+  var id: Double
+  var vertices: ArrayLike[Double]
+  var worldVerticesLength: Double
   def computeWorldVertices(
     slot: Slot,
     start: Double,
@@ -20,15 +17,27 @@ abstract class VertexAttachment protected () extends Attachment {
     worldVertices: ArrayLike[Double],
     offset: Double,
     stride: Double
-  ): Unit = js.native
-  def computeWorldVerticesOld(slot: Slot, worldVertices: ArrayLike[Double]): Unit = js.native
-  def copyTo(attachment: VertexAttachment): Unit = js.native
+  ): Unit
+  def computeWorldVerticesOld(slot: Slot, worldVertices: ArrayLike[Double]): Unit
+  def copyTo(attachment: VertexAttachment): Unit
 }
 
-/* static members */
-@JSGlobal("PIXI.spine.core.VertexAttachment")
-@js.native
-object VertexAttachment extends js.Object {
-  var nextID: js.Any = js.native
+object VertexAttachment {
+  @scala.inline
+  def apply(
+    bones: js.Array[Double],
+    computeWorldVertices: (Slot, Double, Double, ArrayLike[Double], Double, Double) => Unit,
+    computeWorldVerticesOld: (Slot, ArrayLike[Double]) => Unit,
+    copy: () => Attachment,
+    copyTo: VertexAttachment => Unit,
+    deformAttachment: VertexAttachment,
+    id: Double,
+    name: String,
+    vertices: ArrayLike[Double],
+    worldVerticesLength: Double
+  ): VertexAttachment = {
+    val __obj = js.Dynamic.literal(bones = bones.asInstanceOf[js.Any], computeWorldVertices = js.Any.fromFunction6(computeWorldVertices), computeWorldVerticesOld = js.Any.fromFunction2(computeWorldVerticesOld), copy = js.Any.fromFunction0(copy), copyTo = js.Any.fromFunction1(copyTo), deformAttachment = deformAttachment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any], worldVerticesLength = worldVerticesLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VertexAttachment]
+  }
 }
 

@@ -15,7 +15,7 @@ object TargetOptions {
   @scala.inline
   def apply(agent: String, host: String, username: String, failsafe: js.UndefOr[Boolean] = js.undefined): TargetOptions = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-    if (!js.isUndefined(failsafe)) __obj.updateDynamic("failsafe")(failsafe.asInstanceOf[js.Any])
+    if (!js.isUndefined(failsafe)) __obj.updateDynamic("failsafe")(failsafe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetOptions]
   }
 }

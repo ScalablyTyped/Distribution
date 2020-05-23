@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Key Object Selection
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ImagingManifest extends DomainResource {
   /**
     * Contains extended information for property 'authoringTime'.

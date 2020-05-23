@@ -33,12 +33,12 @@ object MarkerOptions {
   def apply(
     icon: Icon_[IconOptions] | DivIcon_ = null,
     repeatMode: js.UndefOr[Boolean] = js.undefined,
-    zIndexOffset: Int | Double = null
+    zIndexOffset: js.UndefOr[Double] = js.undefined
   ): MarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatMode)) __obj.updateDynamic("repeatMode")(repeatMode.asInstanceOf[js.Any])
-    if (zIndexOffset != null) __obj.updateDynamic("zIndexOffset")(zIndexOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatMode)) __obj.updateDynamic("repeatMode")(repeatMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndexOffset)) __obj.updateDynamic("zIndexOffset")(zIndexOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
 }

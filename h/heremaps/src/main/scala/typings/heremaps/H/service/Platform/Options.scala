@@ -29,8 +29,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal(apikey = apikey.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCIT)) __obj.updateDynamic("useCIT")(useCIT.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTTPS)) __obj.updateDynamic("useHTTPS")(useHTTPS.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCIT)) __obj.updateDynamic("useCIT")(useCIT.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHTTPS)) __obj.updateDynamic("useHTTPS")(useHTTPS.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

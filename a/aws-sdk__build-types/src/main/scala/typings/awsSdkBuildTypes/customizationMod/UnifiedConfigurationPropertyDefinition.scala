@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.awsSdkBuildTypes.customizationMod.ConfigurationPropertyDefinitionRuntimeAttributes because var conflicts: imports. Inlined required, default, normalize, apply */ trait UnifiedConfigurationPropertyDefinition
   extends ConfigurationPropertyDefinitionSharedAttributes
      with ConfigurationPropertyDefinition {
@@ -69,7 +69,7 @@ object UnifiedConfigurationPropertyDefinition {
     if (apply != null) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.get.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
     if (resolvedType != null) __obj.updateDynamic("resolvedType")(resolvedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnifiedConfigurationPropertyDefinition]

@@ -33,14 +33,14 @@ object PoolClusterConfig {
   def apply(
     canRetry: js.UndefOr[Boolean] = js.undefined,
     defaultSelector: String = null,
-    removeNodeErrorCount: Int | Double = null,
-    restoreNodeTimeout: Int | Double = null
+    removeNodeErrorCount: js.UndefOr[Double] = js.undefined,
+    restoreNodeTimeout: js.UndefOr[Double] = js.undefined
   ): PoolClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canRetry)) __obj.updateDynamic("canRetry")(canRetry.asInstanceOf[js.Any])
+    if (!js.isUndefined(canRetry)) __obj.updateDynamic("canRetry")(canRetry.get.asInstanceOf[js.Any])
     if (defaultSelector != null) __obj.updateDynamic("defaultSelector")(defaultSelector.asInstanceOf[js.Any])
-    if (removeNodeErrorCount != null) __obj.updateDynamic("removeNodeErrorCount")(removeNodeErrorCount.asInstanceOf[js.Any])
-    if (restoreNodeTimeout != null) __obj.updateDynamic("restoreNodeTimeout")(restoreNodeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeNodeErrorCount)) __obj.updateDynamic("removeNodeErrorCount")(removeNodeErrorCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restoreNodeTimeout)) __obj.updateDynamic("restoreNodeTimeout")(restoreNodeTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolClusterConfig]
   }
 }

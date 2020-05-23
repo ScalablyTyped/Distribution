@@ -27,16 +27,16 @@ object ChooseVideoOptions {
     complete: /* res */ js.Any => Unit = null,
     compressed: js.UndefOr[Boolean] = js.undefined,
     fail: js.Any => Unit = null,
-    maxDuration: Int | Double = null,
+    maxDuration: js.UndefOr[Double] = js.undefined,
     sourceType: js.Array[VideoSourceType] = null,
     success: /* res */ VideoData => Unit = null
   ): ChooseVideoOptions = {
     val __obj = js.Dynamic.literal()
     if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed.get.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDuration)) __obj.updateDynamic("maxDuration")(maxDuration.get.asInstanceOf[js.Any])
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseVideoOptions]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for looks-same
 
-Typings are for version 7.2.2
+Typings are for version 7.2.3
 
 ## Library description:
 Pure node.js library for comparing PNG-images, taking into account human color perception.

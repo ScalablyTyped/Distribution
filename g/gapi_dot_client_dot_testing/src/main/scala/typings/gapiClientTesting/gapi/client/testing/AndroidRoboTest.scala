@@ -48,16 +48,16 @@ object AndroidRoboTest {
     appApk: FileReference = null,
     appInitialActivity: String = null,
     appPackageId: String = null,
-    maxDepth: Int | Double = null,
-    maxSteps: Int | Double = null,
+    maxDepth: js.UndefOr[Double] = js.undefined,
+    maxSteps: js.UndefOr[Double] = js.undefined,
     roboDirectives: js.Array[RoboDirective] = null
   ): AndroidRoboTest = {
     val __obj = js.Dynamic.literal()
     if (appApk != null) __obj.updateDynamic("appApk")(appApk.asInstanceOf[js.Any])
     if (appInitialActivity != null) __obj.updateDynamic("appInitialActivity")(appInitialActivity.asInstanceOf[js.Any])
     if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId.asInstanceOf[js.Any])
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
-    if (maxSteps != null) __obj.updateDynamic("maxSteps")(maxSteps.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSteps)) __obj.updateDynamic("maxSteps")(maxSteps.get.asInstanceOf[js.Any])
     if (roboDirectives != null) __obj.updateDynamic("roboDirectives")(roboDirectives.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidRoboTest]
   }

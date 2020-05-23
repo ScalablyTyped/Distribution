@@ -11,5 +11,5 @@ package object ui {
     * @template T
     * The type of the answers.
     */
-  type FetchedQuestion[T /* <: typings.inquirer.mod.Answers */] = typings.inquirer.mod.DistinctQuestion[T] with typings.inquirer.AnonDefault[T]
+  type FetchedQuestion[T /* <: typings.inquirer.mod.Answers */] = typings.inquirer.mod.DistinctQuestion[T] with typings.inquirer.anon.Default[T]
 }

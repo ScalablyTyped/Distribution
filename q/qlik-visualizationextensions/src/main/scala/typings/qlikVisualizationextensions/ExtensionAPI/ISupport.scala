@@ -22,10 +22,10 @@ object ISupport {
     snapshot: js.UndefOr[Boolean] = js.undefined
   ): ISupport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canTakeSnapshot)) __obj.updateDynamic("canTakeSnapshot")(canTakeSnapshot.asInstanceOf[js.Any])
-    if (!js.isUndefined(export)) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
-    if (!js.isUndefined(exportData)) __obj.updateDynamic("exportData")(exportData.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(canTakeSnapshot)) __obj.updateDynamic("canTakeSnapshot")(canTakeSnapshot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(export)) __obj.updateDynamic("export")(export.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exportData)) __obj.updateDynamic("exportData")(exportData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISupport]
   }
 }

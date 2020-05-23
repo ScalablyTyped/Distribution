@@ -1,6 +1,6 @@
 package typings.testingLibraryDom.configMod
 
-import typings.testingLibraryDom.PartialConfig
+import typings.testingLibraryDom.anon.PartialConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

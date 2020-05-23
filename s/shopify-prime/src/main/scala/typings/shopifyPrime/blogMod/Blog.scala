@@ -58,7 +58,7 @@ object Blog {
     feedburner: js.Any = null,
     feedburner_url: String = null,
     handle: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     tags: String = null,
     template_suffix: String = null,
     title: String = null,
@@ -71,7 +71,7 @@ object Blog {
     if (feedburner != null) __obj.updateDynamic("feedburner")(feedburner.asInstanceOf[js.Any])
     if (feedburner_url != null) __obj.updateDynamic("feedburner_url")(feedburner_url.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

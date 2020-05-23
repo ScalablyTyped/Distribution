@@ -19,14 +19,14 @@ object WindowsInformationProtectionAppLockerFile {
   @scala.inline
   def apply(
     displayName: String = null,
-    file: Int | Double = null,
+    file: js.UndefOr[Double] = js.undefined,
     fileHash: String = null,
     id: String = null,
     version: String = null
   ): WindowsInformationProtectionAppLockerFile = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (!js.isUndefined(file)) __obj.updateDynamic("file")(file.get.asInstanceOf[js.Any])
     if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

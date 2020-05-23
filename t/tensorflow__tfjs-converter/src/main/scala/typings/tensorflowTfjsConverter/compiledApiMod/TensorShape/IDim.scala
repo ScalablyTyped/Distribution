@@ -14,10 +14,13 @@ trait IDim extends js.Object {
 
 object IDim {
   @scala.inline
-  def apply(name: String = null, size: Double | String = null): IDim = {
+  def apply(
+    name: js.UndefOr[Null | String] = js.undefined,
+    size: js.UndefOr[Null | Double | String] = js.undefined
+  ): IDim = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDim]
   }
 }

@@ -18,9 +18,9 @@ trait SourceFileSpecifier extends js.Object {
 
 object SourceFileSpecifier {
   @scala.inline
-  def apply(filePath: Path, isMove: js.UndefOr[Boolean] = js.undefined): SourceFileSpecifier = {
+  def apply(filePath: Path, isMove: js.UndefOr[IsMove] = js.undefined): SourceFileSpecifier = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMove)) __obj.updateDynamic("isMove")(isMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMove)) __obj.updateDynamic("isMove")(isMove.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceFileSpecifier]
   }
 }

@@ -43,7 +43,7 @@ object DialogNodeOutputGeneric {
     preference: String = null,
     selection_policy: String = null,
     source: String = null,
-    time: Int | Double = null,
+    time: js.UndefOr[Double] = js.undefined,
     title: String = null,
     typing: js.UndefOr[Boolean] = js.undefined,
     values: js.Array[DialogNodeOutputTextValuesElement] = null
@@ -56,9 +56,9 @@ object DialogNodeOutputGeneric {
     if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
     if (selection_policy != null) __obj.updateDynamic("selection_policy")(selection_policy.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(typing)) __obj.updateDynamic("typing")(typing.asInstanceOf[js.Any])
+    if (!js.isUndefined(typing)) __obj.updateDynamic("typing")(typing.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeOutputGeneric]
   }

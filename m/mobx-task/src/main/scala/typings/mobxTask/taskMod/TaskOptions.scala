@@ -14,7 +14,7 @@ trait TaskOptions[A /* <: js.Array[_] */, R] extends js.Object {
 
 object TaskOptions {
   @scala.inline
-  def apply[A /* <: js.Array[_] */, R](
+  def apply[A, R](
     args: A = null,
     error: js.Any = null,
     result: WithoutPromise[R] = null,
@@ -26,7 +26,7 @@ object TaskOptions {
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(swallow)) __obj.updateDynamic("swallow")(swallow.asInstanceOf[js.Any])
+    if (!js.isUndefined(swallow)) __obj.updateDynamic("swallow")(swallow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOptions[A, R]]
   }
 }

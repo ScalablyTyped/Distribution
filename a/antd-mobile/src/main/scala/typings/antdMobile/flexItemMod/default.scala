@@ -1,6 +1,6 @@
 package typings.antdMobile.flexItemMod
 
-import typings.antdMobile.AnonPrefixCls
+import typings.antdMobile.anon.PrefixCls
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends FlexItem
 @JSImport("antd-mobile/lib/flex/FlexItem", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonPrefixCls = js.native
+  var defaultProps: PrefixCls = js.native
 }
 

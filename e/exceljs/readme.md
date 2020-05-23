@@ -1,7 +1,7 @@
 
 # Scala.js typings for exceljs
 
-Typings are for version 3.8.2
+Typings are for version 3.9.0
 
 ## Library description:
 Excel Workbook Manager - Read and Write xlsx and csv Files.

@@ -7,30 +7,45 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an input report. */
-@JSGlobal("Windows.Devices.HumanInterfaceDevice.HidInputReport")
-@js.native
-abstract class HidInputReport () extends js.Object {
+trait HidInputReport extends js.Object {
   /** Retrieves the currently activated Boolean controls for the given HID device. */
-  var activatedBooleanControls: IVectorView[HidBooleanControl] = js.native
+  var activatedBooleanControls: IVectorView[HidBooleanControl]
   /** Retrieves the data associated with a given input report. */
-  var data: IBuffer = js.native
-  var getBooleanControl: js.Any = js.native
-  var getNumericControl: js.Any = js.native
+  var data: IBuffer
+  var getBooleanControl: js.Any
+  var getNumericControl: js.Any
   /** Retrieves the identifier associated with a given input report. */
-  var id: Double = js.native
+  var id: Double
   /** Retrieves the recently transitioned Boolean controls for the given HID device. */
-  var transitionedBooleanControls: IVectorView[HidBooleanControl] = js.native
+  var transitionedBooleanControls: IVectorView[HidBooleanControl]
    /* unmapped type */ /**
     * Retrieves the Boolean control described by the controlDescription parameter and found in the given input report.
     * @param controlDescription A HidBooleanControlDescription object.
     * @return A HidBooleanControl object.
     */
-  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl = js.native
+  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl
    /* unmapped type */ /**
     * Retrieves the numeric control described by the controlDescription parameter and found in the given input report.
     * @param controlDescription A HidNumericControlDescription object.
     * @return A HidNumericControl object.
     */
-  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl = js.native
+  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl
+}
+
+object HidInputReport {
+  @scala.inline
+  def apply(
+    activatedBooleanControls: IVectorView[HidBooleanControl],
+    data: IBuffer,
+    getBooleanControl: js.Any,
+    getBooleanControlByDescription: HidBooleanControlDescription => HidBooleanControl,
+    getNumericControl: js.Any,
+    getNumericControlByDescription: HidNumericControlDescription => HidNumericControl,
+    id: Double,
+    transitionedBooleanControls: IVectorView[HidBooleanControl]
+  ): HidInputReport = {
+    val __obj = js.Dynamic.literal(activatedBooleanControls = activatedBooleanControls.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getBooleanControl = getBooleanControl.asInstanceOf[js.Any], getBooleanControlByDescription = js.Any.fromFunction1(getBooleanControlByDescription), getNumericControl = getNumericControl.asInstanceOf[js.Any], getNumericControlByDescription = js.Any.fromFunction1(getNumericControlByDescription), id = id.asInstanceOf[js.Any], transitionedBooleanControls = transitionedBooleanControls.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HidInputReport]
+  }
 }
 

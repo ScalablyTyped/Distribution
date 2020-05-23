@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.PivotTableData
 import typings.officeJsPreview.Excel.Interfaces.PivotTableLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.PivotTableUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +17,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.3]
   */
-@JSGlobal("Excel.PivotTable")
 @js.native
-class PivotTable () extends ClientObject {
+trait PivotTable extends ClientObject {
   /**
     *
-    * Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+    * Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -47,7 +46,7 @@ class PivotTable () extends ClientObject {
   val dataHierarchies: DataPivotHierarchyCollection = js.native
   /**
     *
-    * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+    * Specifies if the PivotTable allows values in the data body to be edited by the user.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -68,7 +67,7 @@ class PivotTable () extends ClientObject {
   val hierarchies: PivotHierarchyCollection = js.native
   /**
     *
-    * Id of the PivotTable. Read-only.
+    * Id of the PivotTable.
     *
     * [Api set: ExcelApi 1.5]
     */
@@ -96,7 +95,7 @@ class PivotTable () extends ClientObject {
   val rowHierarchies: RowColumnPivotHierarchyCollection = js.native
   /**
     *
-    * Specifies whether the PivotTable uses custom lists when sorting.
+    * Specifies if the PivotTable uses custom lists when sorting.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -121,7 +120,7 @@ class PivotTable () extends ClientObject {
     */
   def load(): PivotTable = js.native
   def load(options: PivotTableLoadOptions): PivotTable = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PivotTable = js.native
+  def load(propertyNamesAndPaths: Expand): PivotTable = js.native
   def load(propertyNames: String): PivotTable = js.native
   def load(propertyNames: js.Array[String]): PivotTable = js.native
   /**

@@ -6,11 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @type string
-  * @name pc.XRTYPE_AR
-  * @description Immersive AR - session that provides exclusive access to VR/AR device that is intended to be blended
-  * with real-world environment.
+  * Immersive AR - session that provides exclusive access to VR/AR device that is intended to be blended
+  with real-world environment.
   */
 @JSImport("playcanvas", "XRTYPE_AR")
 @js.native

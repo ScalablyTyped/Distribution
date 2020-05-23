@@ -1,18 +1,17 @@
 package typings.winrtUwp.Windows.Storage.Search
 
 import typings.std.Array
-import typings.winrtUwp.AnonIndex
-import typings.winrtUwp.AnonItemsSortEntry
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.anon.Index
+import typings.winrtUwp.anon.ItemsSortEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the sorting criteria of the query results as a collection of SortEntry objects. */
-@JSGlobal("Windows.Storage.Search.SortEntryVector")
 @js.native
-abstract class SortEntryVector () extends Array[SortEntry] {
+trait SortEntryVector extends Array[SortEntry] {
   /** Gets the number of sort entries in the collection. */
   var size: Double = js.native
   /**
@@ -37,13 +36,13 @@ abstract class SortEntryVector () extends Array[SortEntry] {
     * Retrieves the sort entries that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the sort entries in the collection to retrieve.
     */
-  def getMany(startIndex: Double): AnonItemsSortEntry = js.native
+  def getMany(startIndex: Double): ItemsSortEntry = js.native
   /**
     * Retrieves an immutable view of the collection of sort entries.
     * @return The view of the collection.
     */
   def getView(): IVectorView[SortEntry] = js.native
-  def indexOf(value: SortEntry, extra: js.Any*): AnonIndex = js.native
+  def indexOf(value: SortEntry, extra: js.Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: SortEntry): Double = js.native

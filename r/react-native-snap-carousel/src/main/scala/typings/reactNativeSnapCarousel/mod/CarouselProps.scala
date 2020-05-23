@@ -12,8 +12,8 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.ScrollViewProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeSnapCarousel.AnonIndex
-import typings.reactNativeSnapCarousel.AnonInputRange
+import typings.reactNativeSnapCarousel.anon.Index
+import typings.reactNativeSnapCarousel.anon.InputRange
 import typings.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.center
 import typings.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.decay
 import typings.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.end
@@ -204,7 +204,7 @@ trait CarouselProps[T] extends Props[ScrollViewProps] {
     * Used to define custom interpolations
     */
   var scrollInterpolator: js.UndefOr[
-    js.Function2[/* index */ Double, /* carouselProps */ CarouselProps[_], AnonInputRange]
+    js.Function2[/* index */ Double, /* carouselProps */ CarouselProps[_], InputRange]
   ] = js.native
   /**
     * Whether to implement a shouldComponentUpdate strategy to minimize updates
@@ -253,7 +253,7 @@ trait CarouselProps[T] extends Props[ScrollViewProps] {
     * Function that takes an item from the `data` array and returns a React
     * Element. See `react-native`'s `FlatList`
     */
-  def renderItem(item: AnonIndex[T]): ReactNode = js.native
-  def renderItem(item: AnonIndex[T], parallaxProps: AdditionalParallaxProps): ReactNode = js.native
+  def renderItem(item: Index[T]): ReactNode = js.native
+  def renderItem(item: Index[T], parallaxProps: AdditionalParallaxProps): ReactNode = js.native
 }
 

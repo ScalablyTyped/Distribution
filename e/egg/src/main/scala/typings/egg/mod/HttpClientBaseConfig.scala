@@ -22,20 +22,20 @@ trait HttpClientBaseConfig extends js.Object {
 object HttpClientBaseConfig {
   @scala.inline
   def apply(
-    freeSocketKeepAliveTimeout: Int | Double = null,
-    freeSocketTimeout: Int | Double = null,
+    freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.undefined,
+    freeSocketTimeout: js.UndefOr[Double] = js.undefined,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
-    maxFreeSockets: Int | Double = null,
-    maxSockets: Int | Double = null,
-    timeout: Int | Double = null
+    maxFreeSockets: js.UndefOr[Double] = js.undefined,
+    maxSockets: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): HttpClientBaseConfig = {
     val __obj = js.Dynamic.literal()
-    if (freeSocketKeepAliveTimeout != null) __obj.updateDynamic("freeSocketKeepAliveTimeout")(freeSocketKeepAliveTimeout.asInstanceOf[js.Any])
-    if (freeSocketTimeout != null) __obj.updateDynamic("freeSocketTimeout")(freeSocketTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
-    if (maxFreeSockets != null) __obj.updateDynamic("maxFreeSockets")(maxFreeSockets.asInstanceOf[js.Any])
-    if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeSocketKeepAliveTimeout)) __obj.updateDynamic("freeSocketKeepAliveTimeout")(freeSocketKeepAliveTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeSocketTimeout)) __obj.updateDynamic("freeSocketTimeout")(freeSocketTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFreeSockets)) __obj.updateDynamic("maxFreeSockets")(maxFreeSockets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSockets)) __obj.updateDynamic("maxSockets")(maxSockets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpClientBaseConfig]
   }
 }

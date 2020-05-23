@@ -14,10 +14,8 @@ trait SyncState extends js.Object
 
 object SyncState {
   @scala.inline
-  def Local: `0` = this.cast(0)
+  def Local: `0` = 0.asInstanceOf[`0`]
   @scala.inline
-  def Synced: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def Synced: `1` = 1.asInstanceOf[`1`]
 }
 

@@ -1,6 +1,6 @@
 package typings.angularCore.ngComponentTemplateMod
 
-import typings.angularCore.AnonCharacter
+import typings.angularCore.anon.Character
 import typings.typescript.mod.ClassDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait ResolvedTemplate extends js.Object {
     * If the template is declared inline within a TypeScript source file, the line and
     * character are based on the full source file content.
     */
-  def getCharacterAndLineOfPosition(pos: Double): AnonCharacter
+  def getCharacterAndLineOfPosition(pos: Double): Character
 }
 
 object ResolvedTemplate {
@@ -31,7 +31,7 @@ object ResolvedTemplate {
     container: ClassDeclaration,
     content: String,
     filePath: String,
-    getCharacterAndLineOfPosition: Double => AnonCharacter,
+    getCharacterAndLineOfPosition: Double => Character,
     `inline`: Boolean,
     start: Double
   ): ResolvedTemplate = {

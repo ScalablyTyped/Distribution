@@ -44,13 +44,13 @@ object Instance {
   def apply(
     appEngineRelease: String = null,
     availability: String = null,
-    averageLatency: Int | Double = null,
-    errors: Int | Double = null,
+    averageLatency: js.UndefOr[Double] = js.undefined,
+    errors: js.UndefOr[Double] = js.undefined,
     id: String = null,
     memoryUsage: String = null,
     name: String = null,
-    qps: Int | Double = null,
-    requests: Int | Double = null,
+    qps: js.UndefOr[Double] = js.undefined,
+    requests: js.UndefOr[Double] = js.undefined,
     startTime: String = null,
     vmDebugEnabled: js.UndefOr[Boolean] = js.undefined,
     vmId: String = null,
@@ -62,15 +62,15 @@ object Instance {
     val __obj = js.Dynamic.literal()
     if (appEngineRelease != null) __obj.updateDynamic("appEngineRelease")(appEngineRelease.asInstanceOf[js.Any])
     if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
-    if (averageLatency != null) __obj.updateDynamic("averageLatency")(averageLatency.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (!js.isUndefined(averageLatency)) __obj.updateDynamic("averageLatency")(averageLatency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errors)) __obj.updateDynamic("errors")(errors.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (memoryUsage != null) __obj.updateDynamic("memoryUsage")(memoryUsage.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (qps != null) __obj.updateDynamic("qps")(qps.asInstanceOf[js.Any])
-    if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
+    if (!js.isUndefined(qps)) __obj.updateDynamic("qps")(qps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requests)) __obj.updateDynamic("requests")(requests.get.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(vmDebugEnabled)) __obj.updateDynamic("vmDebugEnabled")(vmDebugEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(vmDebugEnabled)) __obj.updateDynamic("vmDebugEnabled")(vmDebugEnabled.get.asInstanceOf[js.Any])
     if (vmId != null) __obj.updateDynamic("vmId")(vmId.asInstanceOf[js.Any])
     if (vmIp != null) __obj.updateDynamic("vmIp")(vmIp.asInstanceOf[js.Any])
     if (vmName != null) __obj.updateDynamic("vmName")(vmName.asInstanceOf[js.Any])

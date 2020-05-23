@@ -33,9 +33,9 @@ object SidebarProps {
   def apply(
     contentClassName: String = null,
     contentId: String = null,
-    defaultSidebarWidth: Int | Double = null,
+    defaultSidebarWidth: js.UndefOr[Double] = js.undefined,
     docked: js.UndefOr[Boolean] = js.undefined,
-    dragToggleDistance: Int | Double = null,
+    dragToggleDistance: js.UndefOr[Double] = js.undefined,
     onSetOpen: /* open */ Boolean => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     overlayClassName: String = null,
@@ -49,30 +49,30 @@ object SidebarProps {
     sidebarId: String = null,
     styles: SidebarStyles = null,
     touch: js.UndefOr[Boolean] = js.undefined,
-    touchHandleWidth: Int | Double = null,
+    touchHandleWidth: js.UndefOr[Double] = js.undefined,
     transitions: js.UndefOr[Boolean] = js.undefined
   ): SidebarProps = {
     val __obj = js.Dynamic.literal()
     if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
-    if (defaultSidebarWidth != null) __obj.updateDynamic("defaultSidebarWidth")(defaultSidebarWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(docked)) __obj.updateDynamic("docked")(docked.asInstanceOf[js.Any])
-    if (dragToggleDistance != null) __obj.updateDynamic("dragToggleDistance")(dragToggleDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSidebarWidth)) __obj.updateDynamic("defaultSidebarWidth")(defaultSidebarWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(docked)) __obj.updateDynamic("docked")(docked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragToggleDistance)) __obj.updateDynamic("dragToggleDistance")(dragToggleDistance.get.asInstanceOf[js.Any])
     if (onSetOpen != null) __obj.updateDynamic("onSetOpen")(js.Any.fromFunction1(onSetOpen))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName.asInstanceOf[js.Any])
     if (overlayId != null) __obj.updateDynamic("overlayId")(overlayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.get.asInstanceOf[js.Any])
     if (rootClassName != null) __obj.updateDynamic("rootClassName")(rootClassName.asInstanceOf[js.Any])
     if (rootId != null) __obj.updateDynamic("rootId")(rootId.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
     if (sidebar != null) __obj.updateDynamic("sidebar")(sidebar.asInstanceOf[js.Any])
     if (sidebarClassName != null) __obj.updateDynamic("sidebarClassName")(sidebarClassName.asInstanceOf[js.Any])
     if (sidebarId != null) __obj.updateDynamic("sidebarId")(sidebarId.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (touchHandleWidth != null) __obj.updateDynamic("touchHandleWidth")(touchHandleWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions.asInstanceOf[js.Any])
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchHandleWidth)) __obj.updateDynamic("touchHandleWidth")(touchHandleWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidebarProps]
   }
 }

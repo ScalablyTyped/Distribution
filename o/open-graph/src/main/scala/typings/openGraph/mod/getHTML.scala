@@ -1,6 +1,6 @@
 package typings.openGraph.mod
 
-import typings.cheerio.Cheerio_
+import typings.cheerio.Cheerio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object getHTML extends js.Object {
   def apply(url: String, callback: RequestCallback): Unit = js.native
-  def apply(url: Cheerio_, callback: RequestCallback): Unit = js.native
+  def apply(url: Cheerio, callback: RequestCallback): Unit = js.native
 }
 

@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   */
 trait Matrix3DCreationDict extends js.Object {
   /**
-  	 * Scale the matrix by the specified scaling factor.
-  	 */
+    * Scale the matrix by the specified scaling factor.
+    */
   var scale: js.UndefOr[Double] = js.undefined
 }
 
 object Matrix3DCreationDict {
   @scala.inline
-  def apply(scale: Int | Double = null): Matrix3DCreationDict = {
+  def apply(scale: js.UndefOr[Double] = js.undefined): Matrix3DCreationDict = {
     val __obj = js.Dynamic.literal()
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Matrix3DCreationDict]
   }
 }

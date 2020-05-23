@@ -8,7 +8,7 @@ trait KernelModuleDetails extends js.Object {
   /**
     * Base address.
     */
-  var base: UInt64_
+  var base: UInt64
   /**
     * Canonical module name.
     */
@@ -21,7 +21,7 @@ trait KernelModuleDetails extends js.Object {
 
 object KernelModuleDetails {
   @scala.inline
-  def apply(base: UInt64_, name: String, size: Double): KernelModuleDetails = {
+  def apply(base: UInt64, name: String, size: Double): KernelModuleDetails = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[KernelModuleDetails]
   }

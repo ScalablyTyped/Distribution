@@ -20,11 +20,15 @@ trait LegendItemStyle extends js.Object {
 
 object LegendItemStyle {
   @scala.inline
-  def apply(border: LegendItemStyleBorder = null, height: Int | Double = null, width: Int | Double = null): LegendItemStyle = {
+  def apply(
+    border: LegendItemStyleBorder = null,
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): LegendItemStyle = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendItemStyle]
   }
 }

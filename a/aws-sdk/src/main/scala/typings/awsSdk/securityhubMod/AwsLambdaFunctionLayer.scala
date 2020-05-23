@@ -18,10 +18,10 @@ trait AwsLambdaFunctionLayer extends js.Object {
 
 object AwsLambdaFunctionLayer {
   @scala.inline
-  def apply(Arn: NonEmptyString = null, CodeSize: Int | scala.Double = null): AwsLambdaFunctionLayer = {
+  def apply(Arn: NonEmptyString = null, CodeSize: js.UndefOr[Integer] = js.undefined): AwsLambdaFunctionLayer = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CodeSize != null) __obj.updateDynamic("CodeSize")(CodeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsLambdaFunctionLayer]
   }
 }

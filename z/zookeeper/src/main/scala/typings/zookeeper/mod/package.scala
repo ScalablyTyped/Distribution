@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type ACL = scala.Double | typings.zookeeper.AnonAuth
+  type ACL = scala.Double | typings.zookeeper.anon.Auth
   type Callback[T] = js.Function3[/* rc */ scala.Double, /* error */ java.lang.String, /* value */ T, scala.Unit]
   type aclCallback = js.Function4[
     /* rc */ scala.Double, 

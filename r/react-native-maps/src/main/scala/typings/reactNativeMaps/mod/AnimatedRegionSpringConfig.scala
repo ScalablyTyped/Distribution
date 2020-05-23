@@ -30,39 +30,39 @@ object AnimatedRegionSpringConfig {
   @scala.inline
   def apply(
     useNativeDriver: Boolean,
-    bounciness: Int | Double = null,
-    damping: Int | Double = null,
-    friction: Int | Double = null,
+    bounciness: js.UndefOr[Double] = js.undefined,
+    damping: js.UndefOr[Double] = js.undefined,
+    friction: js.UndefOr[Double] = js.undefined,
     isInteraction: js.UndefOr[Boolean] = js.undefined,
-    latitude: Int | Double = null,
-    latitudeDelta: Int | Double = null,
-    longitude: Int | Double = null,
-    longitudeDelta: Int | Double = null,
-    mass: Int | Double = null,
+    latitude: js.UndefOr[Double] = js.undefined,
+    latitudeDelta: js.UndefOr[Double] = js.undefined,
+    longitude: js.UndefOr[Double] = js.undefined,
+    longitudeDelta: js.UndefOr[Double] = js.undefined,
+    mass: js.UndefOr[Double] = js.undefined,
     overshootClamping: js.UndefOr[Boolean] = js.undefined,
-    restDisplacementThreshold: Int | Double = null,
-    restSpeedThreshold: Int | Double = null,
-    speed: Int | Double = null,
-    stiffness: Int | Double = null,
-    tension: Int | Double = null,
+    restDisplacementThreshold: js.UndefOr[Double] = js.undefined,
+    restSpeedThreshold: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined,
+    stiffness: js.UndefOr[Double] = js.undefined,
+    tension: js.UndefOr[Double] = js.undefined,
     velocity: Double | Point = null
   ): AnimatedRegionSpringConfig = {
     val __obj = js.Dynamic.literal(useNativeDriver = useNativeDriver.asInstanceOf[js.Any])
-    if (bounciness != null) __obj.updateDynamic("bounciness")(bounciness.asInstanceOf[js.Any])
-    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (latitudeDelta != null) __obj.updateDynamic("latitudeDelta")(latitudeDelta.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (longitudeDelta != null) __obj.updateDynamic("longitudeDelta")(longitudeDelta.asInstanceOf[js.Any])
-    if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
-    if (!js.isUndefined(overshootClamping)) __obj.updateDynamic("overshootClamping")(overshootClamping.asInstanceOf[js.Any])
-    if (restDisplacementThreshold != null) __obj.updateDynamic("restDisplacementThreshold")(restDisplacementThreshold.asInstanceOf[js.Any])
-    if (restSpeedThreshold != null) __obj.updateDynamic("restSpeedThreshold")(restSpeedThreshold.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
-    if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
+    if (!js.isUndefined(bounciness)) __obj.updateDynamic("bounciness")(bounciness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(damping)) __obj.updateDynamic("damping")(damping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitudeDelta)) __obj.updateDynamic("latitudeDelta")(latitudeDelta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitudeDelta)) __obj.updateDynamic("longitudeDelta")(longitudeDelta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mass)) __obj.updateDynamic("mass")(mass.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overshootClamping)) __obj.updateDynamic("overshootClamping")(overshootClamping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restDisplacementThreshold)) __obj.updateDynamic("restDisplacementThreshold")(restDisplacementThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(restSpeedThreshold)) __obj.updateDynamic("restSpeedThreshold")(restSpeedThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stiffness)) __obj.updateDynamic("stiffness")(stiffness.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tension)) __obj.updateDynamic("tension")(tension.get.asInstanceOf[js.Any])
     if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedRegionSpringConfig]
   }

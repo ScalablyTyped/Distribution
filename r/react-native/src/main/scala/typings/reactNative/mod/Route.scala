@@ -26,13 +26,12 @@ trait Route
 object Route {
   @scala.inline
   def apply(
-    StringDictionary: //anything else
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     backButtonTitle: String = null,
     component: ComponentType[_] = null,
     content: String = null,
     id: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     message: String = null,
     onRightButtonPress: () => Unit = null,
     passProps: js.Object = null,
@@ -46,7 +45,7 @@ object Route {
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onRightButtonPress != null) __obj.updateDynamic("onRightButtonPress")(js.Any.fromFunction0(onRightButtonPress))
     if (passProps != null) __obj.updateDynamic("passProps")(passProps.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.pizzip.mod
 
 import typings.node.Buffer
-import typings.pizzip.AnonBase64
+import typings.pizzip.anon.Base64
 import typings.std.ArrayBuffer
 import typings.std.Date
 import typings.std.Uint8Array
@@ -33,7 +33,7 @@ trait ZipObject extends js.Object {
   /**
     * the options of the file.
     */
-  var options: AnonBase64
+  var options: Base64
   /**
     * The UNIX permissions of the file, if any. Also accepts a string representing the octal value : "644", "755", etc. On nodejs you can use the mode attribute of nodejs' fs.Stats.
     */
@@ -73,7 +73,7 @@ object ZipObject {
     dir: Boolean,
     dosPermissions: Double,
     name: String,
-    options: AnonBase64,
+    options: Base64,
     unixPermissions: Double | String
   ): ZipObject = {
     val __obj = js.Dynamic.literal(asArrayBuffer = js.Any.fromFunction0(asArrayBuffer), asBinary = js.Any.fromFunction0(asBinary), asNodeBuffer = js.Any.fromFunction0(asNodeBuffer), asText = js.Any.fromFunction0(asText), asUint8Array = js.Any.fromFunction0(asUint8Array), comment = comment.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], dosPermissions = dosPermissions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], unixPermissions = unixPermissions.asInstanceOf[js.Any])

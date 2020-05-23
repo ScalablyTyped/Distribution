@@ -5,12 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.JsGrid.EventArgs.OnEndRenameColumn")
-@js.native
-class OnEndRenameColumn protected () extends IEventArgs {
-  def this(columnKey: String, originalColumnTitle: String, newColumnTitle: String) = this()
-  var columnKey: String = js.native
-  var newColumnTitle: String = js.native
-  var originalColumnTitle: String = js.native
+trait OnEndRenameColumn extends IEventArgs {
+  var columnKey: String
+  var newColumnTitle: String
+  var originalColumnTitle: String
+}
+
+object OnEndRenameColumn {
+  @scala.inline
+  def apply(columnKey: String, newColumnTitle: String, originalColumnTitle: String): OnEndRenameColumn = {
+    val __obj = js.Dynamic.literal(columnKey = columnKey.asInstanceOf[js.Any], newColumnTitle = newColumnTitle.asInstanceOf[js.Any], originalColumnTitle = originalColumnTitle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnEndRenameColumn]
+  }
 }
 

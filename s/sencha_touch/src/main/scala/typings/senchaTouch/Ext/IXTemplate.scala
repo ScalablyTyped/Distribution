@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait IXTemplate extends ITemplate {
   /** [Method] Appends the result of this template to the provided output array
-  		* @param values Object/Array The template values. See apply.
-  		* @param out Array The array to which output is pushed.
-  		* @param parent Object
-  		* @returns Array The given out array.
-  		*/
+    * @param values Object/Array The template values. See apply.
+    * @param out Array The array to which output is pushed.
+    * @param parent Object
+    * @returns Array The given out array.
+    */
   @JSName("applyOut")
   var applyOut_IXTemplate: js.UndefOr[
     js.Function3[
@@ -67,10 +67,10 @@ object IXTemplate {
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (compile != null) __obj.updateDynamic("compile")(js.Any.fromFunction0(compile))
-    if (!js.isUndefined(compiled)) __obj.updateDynamic("compiled")(compiled.asInstanceOf[js.Any])
+    if (!js.isUndefined(compiled)) __obj.updateDynamic("compiled")(compiled.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(disableFormats)) __obj.updateDynamic("disableFormats")(disableFormats.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFormats)) __obj.updateDynamic("disableFormats")(disableFormats.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
@@ -78,13 +78,13 @@ object IXTemplate {
     if (insertAfter != null) __obj.updateDynamic("insertAfter")(js.Any.fromFunction3(insertAfter))
     if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction3(insertBefore))
     if (insertFirst != null) __obj.updateDynamic("insertFirst")(js.Any.fromFunction3(insertFirst))
-    if (!js.isUndefined(isTemplate)) __obj.updateDynamic("isTemplate")(isTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTemplate)) __obj.updateDynamic("isTemplate")(isTemplate.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (overwrite != null) __obj.updateDynamic("overwrite")(js.Any.fromFunction3(overwrite))
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXTemplate]

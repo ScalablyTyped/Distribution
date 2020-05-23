@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +33,11 @@ trait TimeExtent extends JSONSupport {
   def intersection(timeExtent: TimeExtent): TimeExtent
 }
 
-@JSGlobal("__esri.TimeExtent")
-@js.native
-object TimeExtent extends TopLevel[TimeExtentConstructor]
+object TimeExtent {
+  @scala.inline
+  def apply(end: Date, intersection: TimeExtent => TimeExtent, start: Date, toJSON: () => js.Any): TimeExtent = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], intersection = js.Any.fromFunction1(intersection), start = start.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.asInstanceOf[TimeExtent]
+  }
+}
 

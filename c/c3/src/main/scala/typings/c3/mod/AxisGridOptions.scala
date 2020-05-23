@@ -27,7 +27,7 @@ object AxisGridOptions {
   ): AxisGridOptions = {
     val __obj = js.Dynamic.literal()
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisGridOptions]
   }

@@ -19,9 +19,9 @@ trait ActionSheetOptions extends js.Object {
 object ActionSheetOptions {
   @scala.inline
   def apply(
-    cancelButtonIndex: Int | Double = null,
+    cancelButtonIndex: js.UndefOr[Double] = js.undefined,
     className: String = null,
-    destructiveButtonIndex: Int | Double = null,
+    destructiveButtonIndex: js.UndefOr[Double] = js.undefined,
     maskClosable: js.UndefOr[Boolean] = js.undefined,
     maskTransitionName: String = null,
     message: ReactNode = null,
@@ -29,10 +29,10 @@ object ActionSheetOptions {
     transitionName: String = null
   ): ActionSheetOptions = {
     val __obj = js.Dynamic.literal()
-    if (cancelButtonIndex != null) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelButtonIndex)) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (destructiveButtonIndex != null) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
+    if (!js.isUndefined(destructiveButtonIndex)) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.get.asInstanceOf[js.Any])
     if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

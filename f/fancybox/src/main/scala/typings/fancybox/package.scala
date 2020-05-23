@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object fancybox {
   type FancyBoxInteractionMethod = js.Function2[
     /* slide */ js.UndefOr[typings.fancybox.FancyBoxSlide], 
-    /* event */ js.UndefOr[typings.jquery.JQuery_.Event], 
+    /* event */ js.UndefOr[typings.jquery.JQuery.Event], 
     typings.fancybox.FancyBoxInteractionTypes
   ]
   type FancyBoxInteractions = typings.fancybox.FancyBoxInteractionTypes | typings.fancybox.FancyBoxInteractionMethod

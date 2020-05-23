@@ -18,20 +18,20 @@ trait ZIndexOptions extends js.Object {
 object ZIndexOptions {
   @scala.inline
   def apply(
-    appBar: Int | Double = null,
-    drawer: Int | Double = null,
-    mobileStepper: Int | Double = null,
-    modal: Int | Double = null,
-    snackbar: Int | Double = null,
-    tooltip: Int | Double = null
+    appBar: js.UndefOr[Double] = js.undefined,
+    drawer: js.UndefOr[Double] = js.undefined,
+    mobileStepper: js.UndefOr[Double] = js.undefined,
+    modal: js.UndefOr[Double] = js.undefined,
+    snackbar: js.UndefOr[Double] = js.undefined,
+    tooltip: js.UndefOr[Double] = js.undefined
   ): ZIndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (appBar != null) __obj.updateDynamic("appBar")(appBar.asInstanceOf[js.Any])
-    if (drawer != null) __obj.updateDynamic("drawer")(drawer.asInstanceOf[js.Any])
-    if (mobileStepper != null) __obj.updateDynamic("mobileStepper")(mobileStepper.asInstanceOf[js.Any])
-    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (snackbar != null) __obj.updateDynamic("snackbar")(snackbar.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(appBar)) __obj.updateDynamic("appBar")(appBar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawer)) __obj.updateDynamic("drawer")(drawer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mobileStepper)) __obj.updateDynamic("mobileStepper")(mobileStepper.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snackbar)) __obj.updateDynamic("snackbar")(snackbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZIndexOptions]
   }
 }

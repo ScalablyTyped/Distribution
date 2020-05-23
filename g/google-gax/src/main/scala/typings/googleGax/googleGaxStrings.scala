@@ -12,7 +12,16 @@ object googleGaxStrings {
   sealed trait bytes extends js.Object
   
   @js.native
+  sealed trait custom extends js.Object
+  
+  @js.native
+  sealed trait delete extends js.Object
+  
+  @js.native
   sealed trait double extends js.Object
+  
+  @js.native
+  sealed trait error extends js.Object
   
   @js.native
   sealed trait fixed32 extends js.Object
@@ -24,22 +33,34 @@ object googleGaxStrings {
   sealed trait float extends js.Object
   
   @js.native
+  sealed trait get extends js.Object
+  
+  @js.native
   sealed trait int32 extends js.Object
   
   @js.native
   sealed trait int64 extends js.Object
   
   @js.native
-  sealed trait longrunningDotgoogleapisDotcom extends js.Object
+  sealed trait optional extends js.Object
   
   @js.native
-  sealed trait optional extends js.Object
+  sealed trait patch extends js.Object
+  
+  @js.native
+  sealed trait post extends js.Object
+  
+  @js.native
+  sealed trait put extends js.Object
   
   @js.native
   sealed trait repeated extends js.Object
   
   @js.native
   sealed trait required extends js.Object
+  
+  @js.native
+  sealed trait response extends js.Object
   
   @js.native
   sealed trait sfixed32 extends js.Object
@@ -67,7 +88,13 @@ object googleGaxStrings {
   @scala.inline
   def bytes: bytes = "bytes".asInstanceOf[bytes]
   @scala.inline
+  def custom: custom = "custom".asInstanceOf[custom]
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def double: double = "double".asInstanceOf[double]
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
   @scala.inline
   def fixed32: fixed32 = "fixed32".asInstanceOf[fixed32]
   @scala.inline
@@ -75,17 +102,25 @@ object googleGaxStrings {
   @scala.inline
   def float: float = "float".asInstanceOf[float]
   @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def int32: int32 = "int32".asInstanceOf[int32]
   @scala.inline
   def int64: int64 = "int64".asInstanceOf[int64]
   @scala.inline
-  def longrunningDotgoogleapisDotcom: longrunningDotgoogleapisDotcom = "longrunning.googleapis.com".asInstanceOf[longrunningDotgoogleapisDotcom]
-  @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
+  @scala.inline
+  def patch: patch = "patch".asInstanceOf[patch]
+  @scala.inline
+  def post: post = "post".asInstanceOf[post]
+  @scala.inline
+  def put: put = "put".asInstanceOf[put]
   @scala.inline
   def repeated: repeated = "repeated".asInstanceOf[repeated]
   @scala.inline
   def required: required = "required".asInstanceOf[required]
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
   @scala.inline
   def sfixed32: sfixed32 = "sfixed32".asInstanceOf[sfixed32]
   @scala.inline

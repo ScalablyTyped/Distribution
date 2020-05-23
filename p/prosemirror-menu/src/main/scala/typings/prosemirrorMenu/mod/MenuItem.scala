@@ -1,6 +1,6 @@
 package typings.prosemirrorMenu.mod
 
-import typings.prosemirrorMenu.AnonDom
+import typings.prosemirrorMenu.anon.Dom
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorView.mod.EditorView
 import scala.scalajs.js
@@ -20,6 +20,6 @@ class MenuItem[S /* <: Schema[_, _] */] protected () extends js.Object {
     * spec](#menu.MenuItemSpec.display), and adds an event handler which
     * executes the command when the representation is clicked.
     */
-  def render(view: EditorView[S]): AnonDom[S] = js.native
+  def render(view: EditorView[S]): Dom[S] = js.native
 }
 

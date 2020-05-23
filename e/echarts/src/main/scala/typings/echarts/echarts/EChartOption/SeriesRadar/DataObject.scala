@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption.SeriesRadar
 
-import typings.echarts.AnonAreaStyleItemStyle
-import typings.echarts.AnonBarBorderWidth
-import typings.echarts.AnonDistance
-import typings.echarts.AnonExtraCssText
-import typings.echarts.AnonOpacity
-import typings.echarts.AnonShadowBlur
+import typings.echarts.anon.AreaStyleItemStyle
+import typings.echarts.anon.BarBorderWidth
+import typings.echarts.anon.Distance
+import typings.echarts.anon.ExtraCssText
+import typings.echarts.anon.Opacity
+import typings.echarts.anon.ShadowBlur
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,32 +17,32 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.data.areaStyle
     */
-  var areaStyle: js.UndefOr[AnonOpacity] = js.undefined
+  var areaStyle: js.UndefOr[Opacity] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis
     */
-  var emphasis: js.UndefOr[AnonAreaStyleItemStyle] = js.undefined
+  var emphasis: js.UndefOr[AreaStyleItemStyle] = js.undefined
   /**
     * Style setting of the symbol on single inflection point.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.data.itemStyle
     */
-  var itemStyle: js.UndefOr[AnonBarBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[BarBorderWidth] = js.undefined
   /**
     * Style setting of the text on single inflection point.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.data.label
     */
-  var label: js.UndefOr[AnonDistance] = js.undefined
+  var label: js.UndefOr[Distance] = js.undefined
   /**
     * Line style of a single item.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.data.lineStyle
     */
-  var lineStyle: js.UndefOr[AnonShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
   /**
     * Data item name
     *
@@ -150,7 +150,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.data.tooltip
     */
-  var tooltip: js.UndefOr[AnonExtraCssText] = js.undefined
+  var tooltip: js.UndefOr[ExtraCssText] = js.undefined
   /**
     * Numerical value of a single data item.
     *
@@ -163,18 +163,18 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    areaStyle: AnonOpacity = null,
-    emphasis: AnonAreaStyleItemStyle = null,
-    itemStyle: AnonBarBorderWidth = null,
-    label: AnonDistance = null,
-    lineStyle: AnonShadowBlur = null,
+    areaStyle: Opacity = null,
+    emphasis: AreaStyleItemStyle = null,
+    itemStyle: BarBorderWidth = null,
+    label: Distance = null,
+    lineStyle: ShadowBlur = null,
     name: String = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
-    symbolRotate: Int | Double = null,
+    symbolRotate: js.UndefOr[Double] = js.undefined,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: AnonExtraCssText = null,
+    tooltip: ExtraCssText = null,
     value: Double | js.Array[Double] = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()
@@ -185,9 +185,9 @@ object DataObject {
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.get.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

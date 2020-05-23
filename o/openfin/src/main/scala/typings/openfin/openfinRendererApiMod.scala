@@ -1,6 +1,5 @@
 package typings.openfin
 
-import typings.openfin.openfinStrings.`of-window-message`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ object openfinRendererApiMod extends js.Object {
   val initialOptions: js.Any = js.native
   val ipc: js.Any = js.native
   val isPlatform: js.Any = js.native
-  val outboundTopic: `of-window-message` = js.native
+  val outboundTopic: /* "of-window-message" */ String = js.native
   val routingId: js.Any = js.native
 }
 

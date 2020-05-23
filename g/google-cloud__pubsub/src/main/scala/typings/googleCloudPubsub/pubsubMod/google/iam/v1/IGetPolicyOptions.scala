@@ -12,9 +12,9 @@ trait IGetPolicyOptions extends js.Object {
 
 object IGetPolicyOptions {
   @scala.inline
-  def apply(requestedPolicyVersion: Int | Double = null): IGetPolicyOptions = {
+  def apply(requestedPolicyVersion: js.UndefOr[Null | Double] = js.undefined): IGetPolicyOptions = {
     val __obj = js.Dynamic.literal()
-    if (requestedPolicyVersion != null) __obj.updateDynamic("requestedPolicyVersion")(requestedPolicyVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestedPolicyVersion)) __obj.updateDynamic("requestedPolicyVersion")(requestedPolicyVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetPolicyOptions]
   }
 }

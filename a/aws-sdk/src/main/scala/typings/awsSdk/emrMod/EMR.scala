@@ -1,7 +1,7 @@
 package typings.awsSdk.emrMod
 
-import typings.awsSdk.DescribeClusterInputwaite
-import typings.awsSdk.DescribeStepInputwaiterWa
+import typings.awsSdk.anon.DescribeClusterInputwaite
+import typings.awsSdk.anon.DescribeStepInputwaiterWa
 import typings.awsSdk.awsSdkStrings.clusterRunning
 import typings.awsSdk.awsSdkStrings.clusterTerminated
 import typings.awsSdk.awsSdkStrings.stepComplete
@@ -182,6 +182,19 @@ trait EMR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetBlockPublicAccessConfigurationOutput, scala.Unit]
   ): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
   /**
+    *  Fetches the attached managed scaling policy for an Amazon EMR cluster. 
+    */
+  def getManagedScalingPolicy(): Request[GetManagedScalingPolicyOutput, AWSError] = js.native
+  def getManagedScalingPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetManagedScalingPolicyOutput, scala.Unit]): Request[GetManagedScalingPolicyOutput, AWSError] = js.native
+  /**
+    *  Fetches the attached managed scaling policy for an Amazon EMR cluster. 
+    */
+  def getManagedScalingPolicy(params: GetManagedScalingPolicyInput): Request[GetManagedScalingPolicyOutput, AWSError] = js.native
+  def getManagedScalingPolicy(
+    params: GetManagedScalingPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetManagedScalingPolicyOutput, scala.Unit]
+  ): Request[GetManagedScalingPolicyOutput, AWSError] = js.native
+  /**
     * Provides information about the bootstrap actions associated with a cluster.
     */
   def listBootstrapActions(): Request[ListBootstrapActionsOutput, AWSError] = js.native
@@ -342,6 +355,19 @@ trait EMR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutBlockPublicAccessConfigurationOutput, scala.Unit]
   ): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
   /**
+    *  Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
+    */
+  def putManagedScalingPolicy(): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
+  def putManagedScalingPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutManagedScalingPolicyOutput, scala.Unit]): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
+  /**
+    *  Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
+    */
+  def putManagedScalingPolicy(params: PutManagedScalingPolicyInput): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
+  def putManagedScalingPolicy(
+    params: PutManagedScalingPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutManagedScalingPolicyOutput, scala.Unit]
+  ): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
+  /**
     * Removes an automatic scaling policy from a specified instance group within an EMR cluster.
     */
   def removeAutoScalingPolicy(): Request[RemoveAutoScalingPolicyOutput, AWSError] = js.native
@@ -354,6 +380,21 @@ trait EMR extends Service {
     params: RemoveAutoScalingPolicyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveAutoScalingPolicyOutput, scala.Unit]
   ): Request[RemoveAutoScalingPolicyOutput, AWSError] = js.native
+  /**
+    *  Removes a managed scaling policy from a specified EMR cluster. 
+    */
+  def removeManagedScalingPolicy(): Request[RemoveManagedScalingPolicyOutput, AWSError] = js.native
+  def removeManagedScalingPolicy(
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveManagedScalingPolicyOutput, scala.Unit]
+  ): Request[RemoveManagedScalingPolicyOutput, AWSError] = js.native
+  /**
+    *  Removes a managed scaling policy from a specified EMR cluster. 
+    */
+  def removeManagedScalingPolicy(params: RemoveManagedScalingPolicyInput): Request[RemoveManagedScalingPolicyOutput, AWSError] = js.native
+  def removeManagedScalingPolicy(
+    params: RemoveManagedScalingPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveManagedScalingPolicyOutput, scala.Unit]
+  ): Request[RemoveManagedScalingPolicyOutput, AWSError] = js.native
   /**
     * Removes tags from an Amazon EMR resource. Tags make it easier to associate clusters in various ways, such as grouping clusters to track your Amazon EMR resource allocation costs. For more information, see Tag Clusters.  The following example removes the stack tag with value Prod from a cluster:
     */

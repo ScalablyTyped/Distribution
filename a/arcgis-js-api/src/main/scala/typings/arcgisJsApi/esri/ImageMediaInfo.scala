@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +29,19 @@ trait ImageMediaInfo
   var value: ImageMediaInfoValue
 }
 
-@JSGlobal("__esri.ImageMediaInfo")
-@js.native
-object ImageMediaInfo extends TopLevel[ImageMediaInfoConstructor]
+object ImageMediaInfo {
+  @scala.inline
+  def apply(
+    caption: String,
+    refreshInterval: Double,
+    title: String,
+    toJSON: () => js.Any,
+    `type`: String,
+    value: ImageMediaInfoValue
+  ): ImageMediaInfo = {
+    val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], refreshInterval = refreshInterval.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageMediaInfo]
+  }
+}
 

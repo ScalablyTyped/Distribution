@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Proximity
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object PeerRole extends js.Object {
   /** The app is part of a two-peer connection. */
   @js.native
   sealed trait peer extends PeerRole
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PeerRole with Double] = js.native
-  /* 2 */ @js.native
-  object client extends TopLevel[client with Double]
-  
-  /* 1 */ @js.native
-  object host extends TopLevel[host with Double]
-  
-  /* 0 */ @js.native
-  object peer extends TopLevel[peer with Double]
   
 }
 

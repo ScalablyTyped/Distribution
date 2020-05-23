@@ -64,7 +64,7 @@ object ValidationOptions {
     if (deprecate != null) __obj.updateDynamic("deprecate")(js.Any.fromFunction4(deprecate))
     if (deprecatedConfig != null) __obj.updateDynamic("deprecatedConfig")(deprecatedConfig.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction5(error))
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.get.asInstanceOf[js.Any])
     if (recursiveBlacklist != null) __obj.updateDynamic("recursiveBlacklist")(recursiveBlacklist.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (unknown != null) __obj.updateDynamic("unknown")(js.Any.fromFunction5(unknown))

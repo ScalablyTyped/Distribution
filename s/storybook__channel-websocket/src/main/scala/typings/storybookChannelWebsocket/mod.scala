@@ -1,6 +1,6 @@
 package typings.storybookChannelWebsocket
 
-import typings.std.Event_
+import typings.std.Event
 import typings.storybookChannels.mod.Channel
 import typings.storybookChannels.mod.ChannelHandler
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object mod extends js.Object {
     @JSName("onError")
     var onError_Original: OnError = js.native
     var url: String = js.native
-    def onError(message: Event_): Unit = js.native
+    def onError(message: Event): Unit = js.native
   }
   
   @js.native
@@ -39,10 +39,10 @@ object mod extends js.Object {
     @JSName("onError")
     var onError_Original: OnError = js.native
     var url: String = js.native
-    def onError(message: Event_): Unit = js.native
+    def onError(message: Event): Unit = js.native
   }
   
   def default(hasUrlAsyncOnError: CreateChannelArgs): Channel = js.native
-  type OnError = js.Function1[/* message */ Event_, Unit]
+  type OnError = js.Function1[/* message */ Event, Unit]
 }
 

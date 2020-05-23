@@ -5,16 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.PushNotifications.PushNotificationChannel")
-@js.native
-class PushNotificationChannel () extends IPushNotificationChannel {
-  /* CompleteClass */
-  override var expirationTime: Date = js.native
-  /* CompleteClass */
-  override var onpushnotificationreceived: js.Any = js.native
-  /* CompleteClass */
-  override var uri: String = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
+trait PushNotificationChannel extends IPushNotificationChannel
+
+object PushNotificationChannel {
+  @scala.inline
+  def apply(close: () => Unit, expirationTime: Date, onpushnotificationreceived: js.Any, uri: String): PushNotificationChannel = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), expirationTime = expirationTime.asInstanceOf[js.Any], onpushnotificationreceived = onpushnotificationreceived.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PushNotificationChannel]
+  }
 }
 

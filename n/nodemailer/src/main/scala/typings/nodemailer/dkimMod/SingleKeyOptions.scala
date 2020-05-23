@@ -1,6 +1,6 @@
 package typings.nodemailer.dkimMod
 
-import typings.nodemailer.AnonKey
+import typings.nodemailer.anon.Key
 import typings.nodemailer.nodemailerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait SingleKeyOptions
   /** is the DKIM key selector */
   var keySelector: String
   /** is the private key for the selector in PEM format */
-  var privateKey: String | AnonKey
+  var privateKey: String | Key
 }
 
 object SingleKeyOptions {
@@ -22,16 +22,16 @@ object SingleKeyOptions {
   def apply(
     domainName: String,
     keySelector: String,
-    privateKey: String | AnonKey,
+    privateKey: String | Key,
     cacheDir: String | `false` = null,
-    cacheTreshold: Int | Double = null,
+    cacheTreshold: js.UndefOr[Double] = js.undefined,
     hashAlgo: String = null,
     headerFieldNames: String = null,
     skipFields: String = null
   ): SingleKeyOptions = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], keySelector = keySelector.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
     if (cacheDir != null) __obj.updateDynamic("cacheDir")(cacheDir.asInstanceOf[js.Any])
-    if (cacheTreshold != null) __obj.updateDynamic("cacheTreshold")(cacheTreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheTreshold)) __obj.updateDynamic("cacheTreshold")(cacheTreshold.get.asInstanceOf[js.Any])
     if (hashAlgo != null) __obj.updateDynamic("hashAlgo")(hashAlgo.asInstanceOf[js.Any])
     if (headerFieldNames != null) __obj.updateDynamic("headerFieldNames")(headerFieldNames.asInstanceOf[js.Any])
     if (skipFields != null) __obj.updateDynamic("skipFields")(skipFields.asInstanceOf[js.Any])

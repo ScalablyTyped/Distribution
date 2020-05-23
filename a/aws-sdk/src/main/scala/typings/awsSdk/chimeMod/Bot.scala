@@ -51,7 +51,7 @@ object Bot {
     BotId: String = null,
     BotType: BotType = null,
     CreatedTimestamp: Iso8601Timestamp = null,
-    Disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    Disabled: js.UndefOr[NullableBoolean] = js.undefined,
     DisplayName: SensitiveString = null,
     SecurityToken: SensitiveString = null,
     UpdatedTimestamp: Iso8601Timestamp = null,
@@ -62,7 +62,7 @@ object Bot {
     if (BotId != null) __obj.updateDynamic("BotId")(BotId.asInstanceOf[js.Any])
     if (BotType != null) __obj.updateDynamic("BotType")(BotType.asInstanceOf[js.Any])
     if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.get.asInstanceOf[js.Any])
     if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
     if (SecurityToken != null) __obj.updateDynamic("SecurityToken")(SecurityToken.asInstanceOf[js.Any])
     if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp.asInstanceOf[js.Any])

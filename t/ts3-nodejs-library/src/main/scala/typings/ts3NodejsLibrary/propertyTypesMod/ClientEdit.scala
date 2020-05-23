@@ -11,10 +11,10 @@ trait ClientEdit extends js.Object {
 
 object ClientEdit {
   @scala.inline
-  def apply(client_description: String = null, client_is_talker: Int | Double = null): ClientEdit = {
+  def apply(client_description: String = null, client_is_talker: js.UndefOr[Double] = js.undefined): ClientEdit = {
     val __obj = js.Dynamic.literal()
     if (client_description != null) __obj.updateDynamic("client_description")(client_description.asInstanceOf[js.Any])
-    if (client_is_talker != null) __obj.updateDynamic("client_is_talker")(client_is_talker.asInstanceOf[js.Any])
+    if (!js.isUndefined(client_is_talker)) __obj.updateDynamic("client_is_talker")(client_is_talker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientEdit]
   }
 }

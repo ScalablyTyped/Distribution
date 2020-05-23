@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`direct-line`
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-feet`
@@ -93,8 +92,4 @@ trait Measurement extends Widget_ {
     */
   def startMeasurement(): Unit = js.native
 }
-
-@JSGlobal("__esri.Measurement")
-@js.native
-object Measurement extends TopLevel[MeasurementConstructor]
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -103,8 +102,4 @@ trait Locator extends Task {
   def suggestLocations(params: LocatorSuggestLocationsParams): js.Promise[js.Array[SuggestionResult]] = js.native
   def suggestLocations(params: LocatorSuggestLocationsParams, requestOptions: js.Any): js.Promise[js.Array[SuggestionResult]] = js.native
 }
-
-@JSGlobal("__esri.Locator")
-@js.native
-object Locator extends TopLevel[LocatorConstructor]
 

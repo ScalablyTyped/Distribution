@@ -1,6 +1,6 @@
 package typings.rollup.mod
 
-import typings.rollup.AnonColumn
+import typings.rollup.anon.Column
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait RollupLogProps extends js.Object {
   var frame: js.UndefOr[String] = js.undefined
   var hook: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  var loc: js.UndefOr[AnonColumn] = js.undefined
+  var loc: js.UndefOr[Column] = js.undefined
   var message: String
   var name: js.UndefOr[String] = js.undefined
   var plugin: js.UndefOr[String] = js.undefined
@@ -27,11 +27,11 @@ object RollupLogProps {
     frame: String = null,
     hook: String = null,
     id: String = null,
-    loc: AnonColumn = null,
+    loc: Column = null,
     name: String = null,
     plugin: String = null,
     pluginCode: String = null,
-    pos: Int | Double = null,
+    pos: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): RollupLogProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
@@ -43,7 +43,7 @@ object RollupLogProps {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
     if (pluginCode != null) __obj.updateDynamic("pluginCode")(pluginCode.asInstanceOf[js.Any])
-    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
+    if (!js.isUndefined(pos)) __obj.updateDynamic("pos")(pos.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupLogProps]
   }

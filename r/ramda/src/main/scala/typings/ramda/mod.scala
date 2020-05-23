@@ -3,6 +3,23 @@ package typings.ramda
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
+import typings.ramda.anon.And
+import typings.ramda.anon.Call
+import typings.ramda.anon.Fn0
+import typings.ramda.anon.Fn1
+import typings.ramda.anon.Fn2
+import typings.ramda.anon.Fn3
+import typings.ramda.anon.Fn4
+import typings.ramda.anon.FnCall
+import typings.ramda.anon.FnCallBList
+import typings.ramda.anon.FnCallGV
+import typings.ramda.anon.FnCallList
+import typings.ramda.anon.FnCallNameObj
+import typings.ramda.anon.FnCallToList
+import typings.ramda.anon.FnCallValObj
+import typings.ramda.anon.FnCallXs
+import typings.ramda.anon.Instantiable
+import typings.ramda.anon.Or
 import typings.ramda.ramdaBooleans.`false`
 import typings.ramda.ramdaNumbers.`10`
 import typings.ramda.ramdaNumbers.`1`
@@ -90,8 +107,8 @@ object mod extends js.Object {
   def and(fn1: Double): js.Function1[/* val2 */ js.Any, Boolean] = js.native
   def and(fn1: Double, val2: js.Any): Boolean = js.native
   def and(fn1: Null, val2: js.Any): Boolean = js.native
-  def and[T /* <: AnonAnd */](fn1: T): js.Function1[/* val2 */ js.Any, Boolean] = js.native
-  def and[T /* <: AnonAnd */](fn1: T, val2: js.Any): Boolean = js.native
+  def and[T /* <: And */](fn1: T): js.Function1[/* val2 */ js.Any, Boolean] = js.native
+  def and[T /* <: And */](fn1: T, val2: js.Any): Boolean = js.native
   def andThen[A, B](onSuccess: js.Function1[/* a */ A, B | js.Promise[B]]): js.Function1[/* promise */ js.Promise[A], js.Promise[B]] = js.native
   def andThen[A, B](onSuccess: js.Function1[/* a */ A, B | js.Promise[B]], promise: js.Promise[A]): js.Promise[B] = js.native
   def any[T](fn: js.Function1[/* a */ T, Boolean]): js.Function1[/* list */ js.Array[T], Boolean] = js.native
@@ -342,9 +359,9 @@ object mod extends js.Object {
   @JSName("cond")
   def cond_AB[A, B](fns: js.Array[js.Tuple2[SafePred[A], js.Function1[/* repeated */ A, B]]]): js.Function1[/* repeated */ A, B] = js.native
   def construct[A /* <: js.Array[_] */, T](constructor: js.Function1[/* a */ A, T]): js.Function1[/* a */ A, T] = js.native
-  def construct[A /* <: js.Array[_] */, T](constructor: AnonInstantiable[A, T]): js.Function1[/* a */ A, T] = js.native
+  def construct[A /* <: js.Array[_] */, T](constructor: Instantiable[A, T]): js.Function1[/* a */ A, T] = js.native
   def constructN[A /* <: js.Array[_] */, T](n: Double, constructor: js.Function1[/* a */ A, T]): js.Function1[/* a */ Partial[A], T] = js.native
-  def constructN[A /* <: js.Array[_] */, T](n: Double, constructor: AnonInstantiable[A, T]): js.Function1[/* a */ Partial[A], T] = js.native
+  def constructN[A /* <: js.Array[_] */, T](n: Double, constructor: Instantiable[A, T]): js.Function1[/* a */ Partial[A], T] = js.native
   def contains(__ : Placeholder): js.Function2[/* list */ String, /* a */ String, Boolean] = js.native
   def contains(__ : Placeholder, list: String): js.Function1[/* a */ String, Boolean] = js.native
   def contains(a: String): js.Function1[/* list */ String, Boolean] = js.native
@@ -554,7 +571,7 @@ object mod extends js.Object {
   def lens[T, U, V](getter: js.Function1[/* s */ T, U], setter: js.Function2[/* a */ U, /* s */ T, V]): Lens = js.native
   def lensIndex(n: Double): Lens = js.native
   def lensPath(path: Path): Lens = js.native
-  def lensProp(str: String): AnonCall = js.native
+  def lensProp(str: String): Call = js.native
   def lift(fn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
   def liftN(n: Double, fn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
   def lt(__ : Placeholder): js.Function2[/* b */ Double, /* a */ Double, Boolean] = js.native
@@ -687,12 +704,12 @@ object mod extends js.Object {
   def once(fn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("once")
   def once_T[T](fn: js.Function1[/* repeated */ js.Any, T]): js.Function1[/* repeated */ js.Any, T] = js.native
-  def or[T /* <: AnonOr */](fn1: T): js.Function1[/* val2 */ js.Any, T | _] = js.native
+  def or[T /* <: Or */](fn1: T): js.Function1[/* val2 */ js.Any, T | _] = js.native
   def or[T, U](a: T, b: U): T | U = js.native
   @JSName("or")
   def or_T[T](a: T): js.Function1[/* b */ js.Any, T | _] = js.native
   @JSName("or")
-  def or_T_AnonOrU[T /* <: AnonOr */, U](fn1: T, val2: U): T | U = js.native
+  def or_T_OrU[T /* <: Or */, U](fn1: T, val2: U): T | U = js.native
   def otherwise[A, B](onError: js.Function1[/* error */ js.Any, B | js.Promise[B]]): js.Function1[/* promise */ js.Promise[A], js.Promise[B]] = js.native
   def otherwise[A, B](onError: js.Function1[/* error */ js.Any, B | js.Promise[B]], promise: js.Promise[A]): js.Promise[B] = js.native
   def over(lens: Lens): js.Function2[/* fn */ Arity1Fn, /* value */ js.Any, _] = js.native
@@ -737,11 +754,13 @@ object mod extends js.Object {
   def pathSatisfies[T, U](pred: js.Function1[/* val */ T, Boolean]): js.Any = js.native
   def pathSatisfies[T, U](pred: js.Function1[/* val */ T, Boolean], path: Path): js.Function1[/* obj */ U, Boolean] = js.native
   def pathSatisfies[T, U](pred: js.Function1[/* val */ T, Boolean], path: Path, obj: U): Boolean = js.native
-  def pick[K /* <: String */](names: js.Array[K]): js.Function1[
+  def paths[T](paths: js.Array[Path]): js.Function1[/* obj */ js.Any, js.UndefOr[js.Array[T]]] = js.native
+  def paths[T](paths: js.Array[Path], obj: js.Any): js.UndefOr[js.Array[T]] = js.native
+  def pick[K /* <: String | Double | js.Symbol */](names: js.Array[K]): js.Function1[
     /* obj */ js.Any, 
     Pick[_, Exclude[/* keyof any */ String, Exclude[/* keyof any */ String, K]]]
   ] = js.native
-  def pick[T, K /* <: String */](names: js.Array[K], obj: T): Pick[T, Exclude[/* keyof T */ String, Exclude[/* keyof T */ String, K]]] = js.native
+  def pick[T, K /* <: String | Double | js.Symbol */](names: js.Array[K], obj: T): Pick[T, Exclude[/* keyof T */ String, Exclude[/* keyof T */ String, K]]] = js.native
   def pickAll(names: js.Array[String]): js.Function1[/* obj */ js.Any, _] = js.native
   def pickAll[T, U](names: js.Array[String], obj: T): U = js.native
   def pickBy(pred: ObjPred): js.Function1[/* obj */ js.Any, _] = js.native

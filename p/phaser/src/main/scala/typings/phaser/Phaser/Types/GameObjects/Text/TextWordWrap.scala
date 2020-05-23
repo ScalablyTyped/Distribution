@@ -33,13 +33,13 @@ object TextWordWrap {
     callback: (/* text */ String, /* textObject */ typings.phaser.Phaser.GameObjects.Text) => Unit = null,
     callbackScope: js.Any = null,
     useAdvancedWrap: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): TextWordWrap = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (callbackScope != null) __obj.updateDynamic("callbackScope")(callbackScope.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAdvancedWrap)) __obj.updateDynamic("useAdvancedWrap")(useAdvancedWrap.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAdvancedWrap)) __obj.updateDynamic("useAdvancedWrap")(useAdvancedWrap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextWordWrap]
   }
 }

@@ -67,7 +67,7 @@ object DescribeSavingsPlansOfferingsRequest {
     descriptions: SavingsPlanDescriptionsList = null,
     durations: DurationsList = null,
     filters: SavingsPlanOfferingFiltersList = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[PageSize] = js.undefined,
     nextToken: PaginationToken = null,
     offeringIds: UUIDs = null,
     operations: SavingsPlanOperationList = null,
@@ -82,7 +82,7 @@ object DescribeSavingsPlansOfferingsRequest {
     if (descriptions != null) __obj.updateDynamic("descriptions")(descriptions.asInstanceOf[js.Any])
     if (durations != null) __obj.updateDynamic("durations")(durations.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (offeringIds != null) __obj.updateDynamic("offeringIds")(offeringIds.asInstanceOf[js.Any])
     if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])

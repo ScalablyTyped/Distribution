@@ -19,7 +19,7 @@ object TableUpdateData {
   @scala.inline
   def apply(borderVisible: js.UndefOr[Boolean] = js.undefined): TableUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableUpdateData]
   }
 }

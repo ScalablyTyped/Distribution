@@ -42,15 +42,15 @@ object ResultSet {
     fields: js.Array[Field],
     rowCount: Double,
     rows: js.Array[_],
-    affectedRows: Int | Double = null,
-    changedRows: Int | Double = null,
-    fieldCount: Int | Double = null,
+    affectedRows: js.UndefOr[Double] = js.undefined,
+    changedRows: js.UndefOr[Double] = js.undefined,
+    fieldCount: js.UndefOr[Double] = js.undefined,
     lastInsertId: js.Any = null
   ): ResultSet = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-    if (affectedRows != null) __obj.updateDynamic("affectedRows")(affectedRows.asInstanceOf[js.Any])
-    if (changedRows != null) __obj.updateDynamic("changedRows")(changedRows.asInstanceOf[js.Any])
-    if (fieldCount != null) __obj.updateDynamic("fieldCount")(fieldCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(affectedRows)) __obj.updateDynamic("affectedRows")(affectedRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(changedRows)) __obj.updateDynamic("changedRows")(changedRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldCount)) __obj.updateDynamic("fieldCount")(fieldCount.get.asInstanceOf[js.Any])
     if (lastInsertId != null) __obj.updateDynamic("lastInsertId")(lastInsertId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSet]
   }

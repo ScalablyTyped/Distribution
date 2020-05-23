@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.IPersonaPropskeystringnum
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

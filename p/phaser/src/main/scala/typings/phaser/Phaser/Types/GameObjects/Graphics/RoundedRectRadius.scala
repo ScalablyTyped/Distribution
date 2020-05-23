@@ -25,12 +25,17 @@ trait RoundedRectRadius extends js.Object {
 
 object RoundedRectRadius {
   @scala.inline
-  def apply(bl: Int | Double = null, br: Int | Double = null, tl: Int | Double = null, tr: Int | Double = null): RoundedRectRadius = {
+  def apply(
+    bl: js.UndefOr[Double] = js.undefined,
+    br: js.UndefOr[Double] = js.undefined,
+    tl: js.UndefOr[Double] = js.undefined,
+    tr: js.UndefOr[Double] = js.undefined
+  ): RoundedRectRadius = {
     val __obj = js.Dynamic.literal()
-    if (bl != null) __obj.updateDynamic("bl")(bl.asInstanceOf[js.Any])
-    if (br != null) __obj.updateDynamic("br")(br.asInstanceOf[js.Any])
-    if (tl != null) __obj.updateDynamic("tl")(tl.asInstanceOf[js.Any])
-    if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
+    if (!js.isUndefined(bl)) __obj.updateDynamic("bl")(bl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(br)) __obj.updateDynamic("br")(br.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tl)) __obj.updateDynamic("tl")(tl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tr)) __obj.updateDynamic("tr")(tr.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoundedRectRadius]
   }
 }

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-core/dist/kernel_names", "MaxPoolWithArgmax")
 @js.native
-object MaxPoolWithArgmax
-  extends TopLevel[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.MaxPoolWithArgmax]
+object MaxPoolWithArgmax extends TopLevel[/* "Identity" */ String]
 

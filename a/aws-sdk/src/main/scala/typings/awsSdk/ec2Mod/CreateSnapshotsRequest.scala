@@ -34,13 +34,13 @@ object CreateSnapshotsRequest {
     InstanceSpecification: InstanceSpecification,
     CopyTagsFromSource: CopyTagsFromSource = null,
     Description: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null
   ): CreateSnapshotsRequest = {
     val __obj = js.Dynamic.literal(InstanceSpecification = InstanceSpecification.asInstanceOf[js.Any])
     if (CopyTagsFromSource != null) __obj.updateDynamic("CopyTagsFromSource")(CopyTagsFromSource.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSnapshotsRequest]
   }

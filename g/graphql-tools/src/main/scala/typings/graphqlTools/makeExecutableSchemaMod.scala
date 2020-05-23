@@ -5,6 +5,7 @@ import typings.graphql.astMod.DocumentNode
 import typings.graphql.definitionMod.GraphQLFieldResolver
 import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphql.mod.GraphQLSchema
+import typings.graphqlTools.anon.DocumentNodedefinitionsAr
 import typings.graphqlTools.interfacesMod.GraphQLParseOptions
 import typings.graphqlTools.interfacesMod.IAddResolveFunctionsToSchemaOptions
 import typings.graphqlTools.interfacesMod.IDirectiveResolvers
@@ -62,8 +63,7 @@ object makeExecutableSchemaMod extends js.Object {
   def checkForResolveTypeResolver(schema: GraphQLSchema, requireResolversForResolveType: Boolean): Unit = js.native
   def concatenateTypeDefs(typeDefinitionsAry: js.Array[ITypedef]): String = js.native
   def concatenateTypeDefs(typeDefinitionsAry: js.Array[ITypedef], calledFunctionRefs: js.Any): String = js.native
-  def decorateWithLogger(fn: js.UndefOr[scala.Nothing], logger: ILogger, hint: String): GraphQLFieldResolver[_, _, StringDictionary[_]] = js.native
-  def decorateWithLogger(fn: GraphQLFieldResolver[_, _, StringDictionary[_]], logger: ILogger, hint: String): GraphQLFieldResolver[_, _, StringDictionary[_]] = js.native
+  def decorateWithLogger(fn: js.UndefOr[GraphQLFieldResolver[_, _, StringDictionary[_]]], logger: ILogger, hint: String): GraphQLFieldResolver[_, _, StringDictionary[_]] = js.native
   def extendResolversFromInterfaces(schema: GraphQLSchema, resolvers: IResolvers[_, _]): IResolvers[_, _] = js.native
   def extractExtensionDefinitions(ast: DocumentNode): DocumentNodedefinitionsAr = js.native
   def forEachField(schema: GraphQLSchema, fn: IFieldIteratorFn): Unit = js.native

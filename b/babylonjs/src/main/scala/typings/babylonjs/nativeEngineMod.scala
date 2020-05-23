@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Width
 import typings.babylonjs.dataBufferMod.DataBuffer
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.internalTextureMod.InternalTexture
@@ -11,6 +12,7 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
 import typings.std.Int32Array
+import typings.std.WebGLVertexArrayObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,7 +57,7 @@ object nativeEngineMod extends js.Object {
       requiredHeight: Double,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
-    def bindVertexArrayObject(vertexArray: typings.std.WebGLVertexArrayObject): Unit = js.native
+    def bindVertexArrayObject(vertexArray: WebGLVertexArrayObject): Unit = js.native
     /**
       * Creates a cube texture
       * @param rootUrl defines the url where the files to load is located
@@ -90,8 +92,8 @@ object nativeEngineMod extends js.Object {
       lodOffset: js.UndefOr[Double],
       fallback: js.UndefOr[Nullable[InternalTexture]]
     ): InternalTexture = js.native
-    def createRenderTargetTexture(size: AnonWidth, options: Boolean): NativeTexture = js.native
-    def createRenderTargetTexture(size: AnonWidth, options: RenderTargetCreationOptions): NativeTexture = js.native
+    def createRenderTargetTexture(size: Width, options: Boolean): NativeTexture = js.native
+    def createRenderTargetTexture(size: Width, options: RenderTargetCreationOptions): NativeTexture = js.native
     def setArray(uniform: WebGLUniformLocation, array: js.Array[Double]): Unit = js.native
     def setArray2(uniform: WebGLUniformLocation, array: js.Array[Double]): Unit = js.native
     def setArray3(uniform: WebGLUniformLocation, array: js.Array[Double]): Unit = js.native

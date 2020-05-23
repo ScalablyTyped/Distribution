@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +41,11 @@ trait dotDensity extends js.Object {
   def createRenderer(params: dotDensityCreateRendererParams): js.Promise[RendererResult]
 }
 
-@JSGlobal("__esri.dotDensity")
-@js.native
-object dotDensity extends TopLevel[dotDensity]
+object dotDensity {
+  @scala.inline
+  def apply(createRenderer: dotDensityCreateRendererParams => js.Promise[RendererResult]): dotDensity = {
+    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
+    __obj.asInstanceOf[dotDensity]
+  }
+}
 

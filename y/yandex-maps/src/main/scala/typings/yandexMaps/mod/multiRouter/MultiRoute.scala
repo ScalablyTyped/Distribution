@@ -1,6 +1,6 @@
 package typings.yandexMaps.mod.multiRouter
 
-import typings.yandexMaps.AnonDictindex
+import typings.yandexMaps.anon.Dictindex
 import typings.yandexMaps.mod.GeoObjectCollection
 import typings.yandexMaps.mod.IEventManager
 import typings.yandexMaps.mod.IGeoObject
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 class MultiRoute protected () extends IGeoObject {
   def this(model: IMultiRouteModelJson) = this()
   def this(model: MultiRouteModel) = this()
-  def this(model: IMultiRouteModelJson, options: AnonDictindex) = this()
-  def this(model: MultiRouteModel, options: AnonDictindex) = this()
+  def this(model: IMultiRouteModelJson, options: Dictindex) = this()
+  def this(model: MultiRouteModel, options: Dictindex) = this()
   var editor: EditorAddon = js.native
   /* CompleteClass */
   override var events: IEventManager = js.native

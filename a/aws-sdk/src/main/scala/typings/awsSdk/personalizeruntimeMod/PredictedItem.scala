@@ -18,10 +18,10 @@ trait PredictedItem extends js.Object {
 
 object PredictedItem {
   @scala.inline
-  def apply(itemId: ItemID = null, score: Int | Double = null): PredictedItem = {
+  def apply(itemId: ItemID = null, score: js.UndefOr[Score] = js.undefined): PredictedItem = {
     val __obj = js.Dynamic.literal()
     if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredictedItem]
   }
 }

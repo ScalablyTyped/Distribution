@@ -1,6 +1,7 @@
 package typings.rmcPullToRefresh
 
 import typings.react.mod.Component
+import typings.rmcPullToRefresh.anon.CurrSt
 import typings.rmcPullToRefresh.propsTypeMod.PropsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +23,7 @@ object pullToRefreshMod extends js.Object {
     var contentRef: js.Any = js.native
     var shouldUpdateChildren: Boolean = js.native
     @JSName("state")
-    var state_PullToRefresh: AnonCurrSt = js.native
+    var state_PullToRefresh: CurrSt = js.native
     @JSName("componentDidMount")
     def componentDidMount_MPullToRefresh(): Unit = js.native
     @JSName("componentDidUpdate")

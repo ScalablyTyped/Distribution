@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.sidemenu")
 @js.native
-class sidemenu () extends baseview {
+trait sidemenu extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

@@ -1,8 +1,5 @@
 package typings.cordovaPluginMedia
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable4
 import typings.std.MediaError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -65,30 +62,5 @@ trait Media extends js.Object {
   def stop(): Unit = js.native
   /** Stops recording an audio file. */
   def stopRecord(): Unit = js.native
-}
-
-@JSGlobal("Media")
-@js.native
-object Media
-  extends Instantiable2[/* src */ String, /* mediaSuccess */ js.Function0[Unit], Media]
-     with Instantiable3[
-      /* src */ String, 
-      /* mediaSuccess */ js.Function0[Unit], 
-      /* mediaError */ js.Function1[/* error */ MediaError, js.Any], 
-      Media
-    ]
-     with Instantiable4[
-      /* src */ String, 
-      /* mediaSuccess */ js.Function0[Unit], 
-      /* mediaError */ js.Function1[/* error */ MediaError, js.Any], 
-      /* mediaStatus */ js.Function1[/* status */ Double, Unit], 
-      Media
-    ] {
-  //Media statuses
-  var MEDIA_NONE: Double = js.native
-  var MEDIA_PAUSED: Double = js.native
-  var MEDIA_RUNNING: Double = js.native
-  var MEDIA_STARTING: Double = js.native
-  var MEDIA_STOPPED: Double = js.native
 }
 

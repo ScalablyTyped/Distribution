@@ -1,33 +1,33 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import typings.vsoNodeApi.AnonEnumValuesAnonAbusive
-import typings.vsoNodeApi.AnonEnumValuesAnonAcquisition
-import typings.vsoNodeApi.AnonEnumValuesAnonAdmin
-import typings.vsoNodeApi.AnonEnumValuesAnonAdminReply
-import typings.vsoNodeApi.AnonEnumValuesAnonAdminResponseForReview
-import typings.vsoNodeApi.AnonEnumValuesAnonAllAttributes
-import typings.vsoNodeApi.AnonEnumValuesAnonAllow
-import typings.vsoNodeApi.AnonEnumValuesAnonAscending
-import typings.vsoNodeApi.AnonEnumValuesAnonAuthor
-import typings.vsoNodeApi.AnonEnumValuesAnonBackward
-import typings.vsoNodeApi.AnonEnumValuesAnonBuy
-import typings.vsoNodeApi.AnonEnumValuesAnonCancel
-import typings.vsoNodeApi.AnonEnumValuesAnonCancelled
-import typings.vsoNodeApi.AnonEnumValuesAnonCategory
-import typings.vsoNodeApi.AnonEnumValuesAnonCustomerContactNotification
-import typings.vsoNodeApi.AnonEnumValuesAnonDaily
-import typings.vsoNodeApi.AnonEnumValuesAnonDecrement
-import typings.vsoNodeApi.AnonEnumValuesAnonDelete
-import typings.vsoNodeApi.AnonEnumValuesAnonExe
-import typings.vsoNodeApi.AnonEnumValuesAnonFilterEmptyReviews
-import typings.vsoNodeApi.AnonEnumValuesAnonFirstParty
-import typings.vsoNodeApi.AnonEnumValuesAnonIncludeEmailAddress
-import typings.vsoNodeApi.AnonEnumValuesAnonInprogress
-import typings.vsoNodeApi.AnonEnumValuesAnonLocked
-import typings.vsoNodeApi.AnonEnumValuesAnonMe
-import typings.vsoNodeApi.AnonEnumValuesAnonPublisherCreated
-import typings.vsoNodeApi.AnonEnumValuesAnonServiceFlags
-import typings.vsoNodeApi.AnonEnumValuesAnonValidated
+import typings.vsoNodeApi.anon.EnumValuesAbusive
+import typings.vsoNodeApi.anon.EnumValuesAcquisition
+import typings.vsoNodeApi.anon.EnumValuesAdmin
+import typings.vsoNodeApi.anon.EnumValuesAdminReply
+import typings.vsoNodeApi.anon.EnumValuesAdminResponseForReview
+import typings.vsoNodeApi.anon.EnumValuesAllAttributes
+import typings.vsoNodeApi.anon.EnumValuesAllow
+import typings.vsoNodeApi.anon.EnumValuesAscending
+import typings.vsoNodeApi.anon.EnumValuesAuthor
+import typings.vsoNodeApi.anon.EnumValuesBackward
+import typings.vsoNodeApi.anon.EnumValuesBuy
+import typings.vsoNodeApi.anon.EnumValuesCancel
+import typings.vsoNodeApi.anon.EnumValuesCancelled
+import typings.vsoNodeApi.anon.EnumValuesCategory
+import typings.vsoNodeApi.anon.EnumValuesCustomerContactNotification
+import typings.vsoNodeApi.anon.EnumValuesDaily
+import typings.vsoNodeApi.anon.EnumValuesDecrement
+import typings.vsoNodeApi.anon.EnumValuesDelete
+import typings.vsoNodeApi.anon.EnumValuesExe
+import typings.vsoNodeApi.anon.EnumValuesFilterEmptyReviews
+import typings.vsoNodeApi.anon.EnumValuesFirstParty
+import typings.vsoNodeApi.anon.EnumValuesIncludeEmailAddress
+import typings.vsoNodeApi.anon.EnumValuesInprogress
+import typings.vsoNodeApi.anon.EnumValuesLocked
+import typings.vsoNodeApi.anon.EnumValuesMe
+import typings.vsoNodeApi.anon.EnumValuesPublisherCreated
+import typings.vsoNodeApi.anon.EnumValuesServiceFlags
+import typings.vsoNodeApi.anon.EnumValuesValidated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,71 +35,71 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo")
 @js.native
 object TypeInfo extends js.Object {
-  var AcquisitionAssignmentType: AnonEnumValuesAnonMe = js.native
+  var AcquisitionAssignmentType: EnumValuesMe = js.native
   var AcquisitionOperation: js.Any = js.native
-  var AcquisitionOperationState: AnonEnumValuesAnonAllow = js.native
-  var AcquisitionOperationType: AnonEnumValuesAnonBuy = js.native
+  var AcquisitionOperationState: EnumValuesAllow = js.native
+  var AcquisitionOperationType: EnumValuesBuy = js.native
   var AcquisitionOptions: js.Any = js.native
   var AzureRestApiResponseModel: js.Any = js.native
   var Concern: js.Any = js.native
-  var ConcernCategory: AnonEnumValuesAnonAbusive = js.native
+  var ConcernCategory: EnumValuesAbusive = js.native
   var CustomerLastContact: js.Any = js.native
-  var DraftPatchOperation: AnonEnumValuesAnonCancel = js.native
-  var DraftStateType: AnonEnumValuesAnonCancelled = js.native
+  var DraftPatchOperation: EnumValuesCancel = js.native
+  var DraftStateType: EnumValuesCancelled = js.native
   var ExtensionAcquisitionRequest: js.Any = js.native
   var ExtensionDailyStat: js.Any = js.native
   var ExtensionDailyStats: js.Any = js.native
-  var ExtensionDeploymentTechnology: AnonEnumValuesAnonExe = js.native
+  var ExtensionDeploymentTechnology: EnumValuesExe = js.native
   var ExtensionDraft: js.Any = js.native
   var ExtensionDraftPatch: js.Any = js.native
   var ExtensionEvent: js.Any = js.native
   var ExtensionEvents: js.Any = js.native
   var ExtensionFilterResult: js.Any = js.native
-  var ExtensionLifecycleEventType: AnonEnumValuesAnonAcquisition = js.native
+  var ExtensionLifecycleEventType: EnumValuesAcquisition = js.native
   var ExtensionPayload: js.Any = js.native
   var ExtensionPolicy: js.Any = js.native
-  var ExtensionPolicyFlags: AnonEnumValuesAnonFirstParty = js.native
+  var ExtensionPolicyFlags: EnumValuesFirstParty = js.native
   var ExtensionQuery: js.Any = js.native
-  var ExtensionQueryFilterType: AnonEnumValuesAnonCategory = js.native
-  var ExtensionQueryFlags: AnonEnumValuesAnonAllAttributes = js.native
+  var ExtensionQueryFilterType: EnumValuesCategory = js.native
+  var ExtensionQueryFlags: EnumValuesAllAttributes = js.native
   var ExtensionQueryResult: js.Any = js.native
-  var ExtensionStatisticOperation: AnonEnumValuesAnonDecrement = js.native
+  var ExtensionStatisticOperation: EnumValuesDecrement = js.native
   var ExtensionStatisticUpdate: js.Any = js.native
-  var ExtensionStatsAggregateType: AnonEnumValuesAnonDaily = js.native
+  var ExtensionStatsAggregateType: EnumValuesDaily = js.native
   var ExtensionVersion: js.Any = js.native
-  var ExtensionVersionFlags: AnonEnumValuesAnonValidated = js.native
-  var NotificationTemplateType: AnonEnumValuesAnonCustomerContactNotification = js.native
+  var ExtensionVersionFlags: EnumValuesValidated = js.native
+  var NotificationTemplateType: EnumValuesCustomerContactNotification = js.native
   var NotificationsData: js.Any = js.native
-  var PagingDirection: AnonEnumValuesAnonBackward = js.native
+  var PagingDirection: EnumValuesBackward = js.native
   var PublishedExtension: js.Any = js.native
-  var PublishedExtensionFlags: AnonEnumValuesAnonLocked = js.native
+  var PublishedExtensionFlags: EnumValuesLocked = js.native
   var Publisher: js.Any = js.native
   var PublisherFacts: js.Any = js.native
   var PublisherFilterResult: js.Any = js.native
-  var PublisherFlags: AnonEnumValuesAnonServiceFlags = js.native
-  var PublisherPermissions: AnonEnumValuesAnonAdmin = js.native
+  var PublisherFlags: EnumValuesServiceFlags = js.native
+  var PublisherPermissions: EnumValuesAdmin = js.native
   var PublisherQuery: js.Any = js.native
-  var PublisherQueryFlags: AnonEnumValuesAnonIncludeEmailAddress = js.native
+  var PublisherQueryFlags: EnumValuesIncludeEmailAddress = js.native
   var PublisherQueryResult: js.Any = js.native
   var QnAItem: js.Any = js.native
-  var QnAItemStatus: AnonEnumValuesAnonPublisherCreated = js.native
+  var QnAItemStatus: EnumValuesPublisherCreated = js.native
   var QueryFilter: js.Any = js.native
   var Question: js.Any = js.native
   var QuestionsResult: js.Any = js.native
   var Response: js.Any = js.native
-  var RestApiResponseStatus: AnonEnumValuesAnonInprogress = js.native
+  var RestApiResponseStatus: EnumValuesInprogress = js.native
   var RestApiResponseStatusModel: js.Any = js.native
   var Review: js.Any = js.native
-  var ReviewEventOperation: AnonEnumValuesAnonDelete = js.native
+  var ReviewEventOperation: EnumValuesDelete = js.native
   var ReviewEventProperties: js.Any = js.native
-  var ReviewFilterOptions: AnonEnumValuesAnonFilterEmptyReviews = js.native
+  var ReviewFilterOptions: EnumValuesFilterEmptyReviews = js.native
   var ReviewPatch: js.Any = js.native
-  var ReviewPatchOperation: AnonEnumValuesAnonAdminResponseForReview = js.native
+  var ReviewPatchOperation: EnumValuesAdminResponseForReview = js.native
   var ReviewReply: js.Any = js.native
-  var ReviewResourceType: AnonEnumValuesAnonAdminReply = js.native
+  var ReviewResourceType: EnumValuesAdminReply = js.native
   var ReviewsResult: js.Any = js.native
-  var SortByType: AnonEnumValuesAnonAuthor = js.native
-  var SortOrderType: AnonEnumValuesAnonAscending = js.native
+  var SortByType: EnumValuesAuthor = js.native
+  var SortOrderType: EnumValuesAscending = js.native
   var UserExtensionPolicy: js.Any = js.native
   var UserReportedConcern: js.Any = js.native
 }

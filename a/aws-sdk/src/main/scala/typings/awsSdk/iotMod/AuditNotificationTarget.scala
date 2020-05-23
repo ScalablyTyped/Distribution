@@ -22,13 +22,9 @@ trait AuditNotificationTarget extends js.Object {
 
 object AuditNotificationTarget {
   @scala.inline
-  def apply(
-    enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    roleArn: RoleArn = null,
-    targetArn: TargetArn = null
-  ): AuditNotificationTarget = {
+  def apply(enabled: js.UndefOr[Enabled] = js.undefined, roleArn: RoleArn = null, targetArn: TargetArn = null): AuditNotificationTarget = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditNotificationTarget]

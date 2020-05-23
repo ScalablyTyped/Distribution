@@ -1,6 +1,6 @@
 package typings.karmaJasmine.mod
 
-import typings.karmaJasmine.EnvConfigurationtimeoutIn
+import typings.karmaJasmine.anon.EnvConfigurationtimeoutIn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +28,13 @@ object ClientOptions {
   @scala.inline
   def apply(
     jasmine: EnvConfigurationtimeoutIn = null,
-    shardIndex: Int | Double = null,
-    totalShards: Int | Double = null
+    shardIndex: js.UndefOr[Double] = js.undefined,
+    totalShards: js.UndefOr[Double] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
     if (jasmine != null) __obj.updateDynamic("jasmine")(jasmine.asInstanceOf[js.Any])
-    if (shardIndex != null) __obj.updateDynamic("shardIndex")(shardIndex.asInstanceOf[js.Any])
-    if (totalShards != null) __obj.updateDynamic("totalShards")(totalShards.asInstanceOf[js.Any])
+    if (!js.isUndefined(shardIndex)) __obj.updateDynamic("shardIndex")(shardIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalShards)) __obj.updateDynamic("totalShards")(totalShards.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

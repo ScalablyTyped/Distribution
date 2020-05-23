@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("common-errors", "NotFoundError")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify global.Error * / any */ @JSImport("common-errors", "NotFoundError")
 @js.native
-class NotFoundError protected () extends ErrorConstructor {
+class NotFoundError protected () extends js.Object {
   /**
     * @param entity_name a description for what was not found
     * @param inner_error the Error instance that caused the current error.

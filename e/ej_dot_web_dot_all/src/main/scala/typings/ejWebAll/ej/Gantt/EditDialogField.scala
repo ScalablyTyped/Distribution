@@ -25,7 +25,7 @@ object EditDialogField {
     field: String = null
   ): EditDialogField = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(displayInGeneralTab)) __obj.updateDynamic("displayInGeneralTab")(displayInGeneralTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayInGeneralTab)) __obj.updateDynamic("displayInGeneralTab")(displayInGeneralTab.get.asInstanceOf[js.Any])
     if (editType != null) __obj.updateDynamic("editType")(editType.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditDialogField]

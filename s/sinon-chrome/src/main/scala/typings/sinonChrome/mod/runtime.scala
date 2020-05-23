@@ -27,6 +27,7 @@ object runtime extends js.Object {
   var onSuspend: Event = js.native
   var onSuspendCanceled: Event = js.native
   var onUpdateAvailable: Event = js.native
+  var openOptionsPage: SinonChromeStub = js.native
   var reload: SinonChromeStub = js.native
   var requestUpdateCheck: SinonChromeStub = js.native
   var restart: SinonChromeStub = js.native

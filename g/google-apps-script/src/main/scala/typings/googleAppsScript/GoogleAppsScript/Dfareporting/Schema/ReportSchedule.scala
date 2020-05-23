@@ -18,7 +18,7 @@ object ReportSchedule {
   @scala.inline
   def apply(
     active: js.UndefOr[Boolean] = js.undefined,
-    every: Int | Double = null,
+    every: js.UndefOr[Double] = js.undefined,
     expirationDate: String = null,
     repeats: String = null,
     repeatsOnWeekDays: js.Array[String] = null,
@@ -26,8 +26,8 @@ object ReportSchedule {
     startDate: String = null
   ): ReportSchedule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (every != null) __obj.updateDynamic("every")(every.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(every)) __obj.updateDynamic("every")(every.get.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
     if (repeats != null) __obj.updateDynamic("repeats")(repeats.asInstanceOf[js.Any])
     if (repeatsOnWeekDays != null) __obj.updateDynamic("repeatsOnWeekDays")(repeatsOnWeekDays.asInstanceOf[js.Any])

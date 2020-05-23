@@ -72,27 +72,3 @@ trait Filters extends js.Object {
   var WalletId: String
 }
 
-object Filters {
-  @scala.inline
-  def apply(
-    AfterDate: Timestamp,
-    AuthorId: String,
-    BeforeDate: Timestamp,
-    MaxDebitedFundsAmount: Double,
-    MaxDebitedFundsCurrency: CurrencyISO,
-    MaxFeesAmount: Double,
-    MaxFeesCurrency: CurrencyISO,
-    MinDebitedFundsAmount: Double,
-    MinDebitedFundsCurrency: CurrencyISO,
-    MinFeesAmount: Double,
-    MinFeesCurrency: CurrencyISO,
-    Nature: js.Array[TransactionNature],
-    Status: js.Array[TransactionStatus],
-    Type: js.Array[TransactionType],
-    WalletId: String
-  ): Filters = {
-    val __obj = js.Dynamic.literal(AfterDate = AfterDate.asInstanceOf[js.Any], AuthorId = AuthorId.asInstanceOf[js.Any], BeforeDate = BeforeDate.asInstanceOf[js.Any], MaxDebitedFundsAmount = MaxDebitedFundsAmount.asInstanceOf[js.Any], MaxDebitedFundsCurrency = MaxDebitedFundsCurrency.asInstanceOf[js.Any], MaxFeesAmount = MaxFeesAmount.asInstanceOf[js.Any], MaxFeesCurrency = MaxFeesCurrency.asInstanceOf[js.Any], MinDebitedFundsAmount = MinDebitedFundsAmount.asInstanceOf[js.Any], MinDebitedFundsCurrency = MinDebitedFundsCurrency.asInstanceOf[js.Any], MinFeesAmount = MinFeesAmount.asInstanceOf[js.Any], MinFeesCurrency = MinFeesCurrency.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], WalletId = WalletId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Filters]
-  }
-}
-

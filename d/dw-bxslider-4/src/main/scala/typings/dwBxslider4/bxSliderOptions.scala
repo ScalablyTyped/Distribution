@@ -491,14 +491,14 @@ object bxSliderOptions {
   @scala.inline
   def apply(
     adaptiveHeight: js.UndefOr[Boolean] = js.undefined,
-    adaptiveHeightSpeed: Int | Double = null,
+    adaptiveHeightSpeed: js.UndefOr[Double] = js.undefined,
     ariaHidden: js.UndefOr[Boolean] = js.undefined,
     ariaLive: js.UndefOr[Boolean] = js.undefined,
     auto: js.UndefOr[Boolean] = js.undefined,
     autoControls: js.UndefOr[Boolean] = js.undefined,
     autoControlsCombine: js.UndefOr[Boolean] = js.undefined,
     autoControlsSelector: String = null,
-    autoDelay: Int | Double = null,
+    autoDelay: js.UndefOr[Double] = js.undefined,
     autoDirection: String = null,
     autoHover: js.UndefOr[Boolean] = js.undefined,
     autoStart: js.UndefOr[Boolean] = js.undefined,
@@ -509,10 +509,10 @@ object bxSliderOptions {
     hideControlOnEnd: js.UndefOr[Boolean] = js.undefined,
     infiniteLoop: js.UndefOr[Boolean] = js.undefined,
     keyboardEnabled: js.UndefOr[Boolean] = js.undefined,
-    maxSlides: Int | Double = null,
-    minSlides: Int | Double = null,
+    maxSlides: js.UndefOr[Double] = js.undefined,
+    minSlides: js.UndefOr[Double] = js.undefined,
     mode: String = null,
-    moveSlides: Int | Double = null,
+    moveSlides: js.UndefOr[Double] = js.undefined,
     nextSelector: String = null,
     nextText: String = null,
     onSlideAfter: (/* $slideElement */ js.UndefOr[JQuery], /* oldIndex */ js.UndefOr[Double], /* newIndex */ js.UndefOr[Double]) => Unit = null,
@@ -527,7 +527,7 @@ object bxSliderOptions {
     pagerSelector: String = null,
     pagerShortSeparator: String = null,
     pagerType: String = null,
-    pause: Int | Double = null,
+    pause: js.UndefOr[Double] = js.undefined,
     preloadImages: String = null,
     prevSelector: String = null,
     prevText: String = null,
@@ -536,15 +536,15 @@ object bxSliderOptions {
     randomStart: js.UndefOr[Boolean] = js.undefined,
     responsive: js.UndefOr[Boolean] = js.undefined,
     shrinkItems: js.UndefOr[Boolean] = js.undefined,
-    slideMargin: Int | Double = null,
+    slideMargin: js.UndefOr[Double] = js.undefined,
     slideSelector: String = null,
-    slideWidth: Int | Double = null,
-    speed: Int | Double = null,
-    startSlide: Int | Double = null,
+    slideWidth: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined,
+    startSlide: js.UndefOr[Double] = js.undefined,
     startText: String = null,
     stopAutoOnClick: js.UndefOr[Boolean] = js.undefined,
     stopText: String = null,
-    swipeThreshold: Int | Double = null,
+    swipeThreshold: js.UndefOr[Double] = js.undefined,
     ticker: js.UndefOr[Boolean] = js.undefined,
     tickerHover: js.UndefOr[Boolean] = js.undefined,
     touchEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -553,29 +553,29 @@ object bxSliderOptions {
     wrapperClass: String = null
   ): bxSliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adaptiveHeight)) __obj.updateDynamic("adaptiveHeight")(adaptiveHeight.asInstanceOf[js.Any])
-    if (adaptiveHeightSpeed != null) __obj.updateDynamic("adaptiveHeightSpeed")(adaptiveHeightSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaHidden)) __obj.updateDynamic("ariaHidden")(ariaHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaLive)) __obj.updateDynamic("ariaLive")(ariaLive.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoControls)) __obj.updateDynamic("autoControls")(autoControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoControlsCombine)) __obj.updateDynamic("autoControlsCombine")(autoControlsCombine.asInstanceOf[js.Any])
+    if (!js.isUndefined(adaptiveHeight)) __obj.updateDynamic("adaptiveHeight")(adaptiveHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(adaptiveHeightSpeed)) __obj.updateDynamic("adaptiveHeightSpeed")(adaptiveHeightSpeed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaHidden)) __obj.updateDynamic("ariaHidden")(ariaHidden.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaLive)) __obj.updateDynamic("ariaLive")(ariaLive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoControls)) __obj.updateDynamic("autoControls")(autoControls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoControlsCombine)) __obj.updateDynamic("autoControlsCombine")(autoControlsCombine.get.asInstanceOf[js.Any])
     if (autoControlsSelector != null) __obj.updateDynamic("autoControlsSelector")(autoControlsSelector.asInstanceOf[js.Any])
-    if (autoDelay != null) __obj.updateDynamic("autoDelay")(autoDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelay)) __obj.updateDynamic("autoDelay")(autoDelay.get.asInstanceOf[js.Any])
     if (autoDirection != null) __obj.updateDynamic("autoDirection")(autoDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHover)) __obj.updateDynamic("autoHover")(autoHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHover)) __obj.updateDynamic("autoHover")(autoHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
     if (buildPager != null) __obj.updateDynamic("buildPager")(js.Any.fromFunction1(buildPager))
-    if (!js.isUndefined(captions)) __obj.updateDynamic("captions")(captions.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(captions)) __obj.updateDynamic("captions")(captions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideControlOnEnd)) __obj.updateDynamic("hideControlOnEnd")(hideControlOnEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(infiniteLoop)) __obj.updateDynamic("infiniteLoop")(infiniteLoop.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardEnabled)) __obj.updateDynamic("keyboardEnabled")(keyboardEnabled.asInstanceOf[js.Any])
-    if (maxSlides != null) __obj.updateDynamic("maxSlides")(maxSlides.asInstanceOf[js.Any])
-    if (minSlides != null) __obj.updateDynamic("minSlides")(minSlides.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideControlOnEnd)) __obj.updateDynamic("hideControlOnEnd")(hideControlOnEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(infiniteLoop)) __obj.updateDynamic("infiniteLoop")(infiniteLoop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardEnabled)) __obj.updateDynamic("keyboardEnabled")(keyboardEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSlides)) __obj.updateDynamic("maxSlides")(maxSlides.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSlides)) __obj.updateDynamic("minSlides")(minSlides.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (moveSlides != null) __obj.updateDynamic("moveSlides")(moveSlides.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveSlides)) __obj.updateDynamic("moveSlides")(moveSlides.get.asInstanceOf[js.Any])
     if (nextSelector != null) __obj.updateDynamic("nextSelector")(nextSelector.asInstanceOf[js.Any])
     if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
     if (onSlideAfter != null) __obj.updateDynamic("onSlideAfter")(js.Any.fromFunction3(onSlideAfter))
@@ -584,35 +584,35 @@ object bxSliderOptions {
     if (onSlidePrev != null) __obj.updateDynamic("onSlidePrev")(js.Any.fromFunction3(onSlidePrev))
     if (onSliderLoad != null) __obj.updateDynamic("onSliderLoad")(js.Any.fromFunction1(onSliderLoad))
     if (onSliderResize != null) __obj.updateDynamic("onSliderResize")(js.Any.fromFunction1(onSliderResize))
-    if (!js.isUndefined(oneToOneTouch)) __obj.updateDynamic("oneToOneTouch")(oneToOneTouch.asInstanceOf[js.Any])
-    if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneToOneTouch)) __obj.updateDynamic("oneToOneTouch")(oneToOneTouch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager.get.asInstanceOf[js.Any])
     if (pagerCustom != null) __obj.updateDynamic("pagerCustom")(pagerCustom.asInstanceOf[js.Any])
     if (pagerSelector != null) __obj.updateDynamic("pagerSelector")(pagerSelector.asInstanceOf[js.Any])
     if (pagerShortSeparator != null) __obj.updateDynamic("pagerShortSeparator")(pagerShortSeparator.asInstanceOf[js.Any])
     if (pagerType != null) __obj.updateDynamic("pagerType")(pagerType.asInstanceOf[js.Any])
-    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.get.asInstanceOf[js.Any])
     if (preloadImages != null) __obj.updateDynamic("preloadImages")(preloadImages.asInstanceOf[js.Any])
     if (prevSelector != null) __obj.updateDynamic("prevSelector")(prevSelector.asInstanceOf[js.Any])
     if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDefaultSwipeX)) __obj.updateDynamic("preventDefaultSwipeX")(preventDefaultSwipeX.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDefaultSwipeY)) __obj.updateDynamic("preventDefaultSwipeY")(preventDefaultSwipeY.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomStart)) __obj.updateDynamic("randomStart")(randomStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrinkItems)) __obj.updateDynamic("shrinkItems")(shrinkItems.asInstanceOf[js.Any])
-    if (slideMargin != null) __obj.updateDynamic("slideMargin")(slideMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDefaultSwipeX)) __obj.updateDynamic("preventDefaultSwipeX")(preventDefaultSwipeX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDefaultSwipeY)) __obj.updateDynamic("preventDefaultSwipeY")(preventDefaultSwipeY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomStart)) __obj.updateDynamic("randomStart")(randomStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shrinkItems)) __obj.updateDynamic("shrinkItems")(shrinkItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideMargin)) __obj.updateDynamic("slideMargin")(slideMargin.get.asInstanceOf[js.Any])
     if (slideSelector != null) __obj.updateDynamic("slideSelector")(slideSelector.asInstanceOf[js.Any])
-    if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (startSlide != null) __obj.updateDynamic("startSlide")(startSlide.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideWidth)) __obj.updateDynamic("slideWidth")(slideWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startSlide)) __obj.updateDynamic("startSlide")(startSlide.get.asInstanceOf[js.Any])
     if (startText != null) __obj.updateDynamic("startText")(startText.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopAutoOnClick)) __obj.updateDynamic("stopAutoOnClick")(stopAutoOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopAutoOnClick)) __obj.updateDynamic("stopAutoOnClick")(stopAutoOnClick.get.asInstanceOf[js.Any])
     if (stopText != null) __obj.updateDynamic("stopText")(stopText.asInstanceOf[js.Any])
-    if (swipeThreshold != null) __obj.updateDynamic("swipeThreshold")(swipeThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(ticker)) __obj.updateDynamic("ticker")(ticker.asInstanceOf[js.Any])
-    if (!js.isUndefined(tickerHover)) __obj.updateDynamic("tickerHover")(tickerHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCSS)) __obj.updateDynamic("useCSS")(useCSS.asInstanceOf[js.Any])
-    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeThreshold)) __obj.updateDynamic("swipeThreshold")(swipeThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticker)) __obj.updateDynamic("ticker")(ticker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickerHover)) __obj.updateDynamic("tickerHover")(tickerHover.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCSS)) __obj.updateDynamic("useCSS")(useCSS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.get.asInstanceOf[js.Any])
     if (wrapperClass != null) __obj.updateDynamic("wrapperClass")(wrapperClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[bxSliderOptions]
   }

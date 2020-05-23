@@ -54,7 +54,7 @@ object CreditsOptions {
     text: String = null
   ): CreditsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (mapText != null) __obj.updateDynamic("mapText")(mapText.asInstanceOf[js.Any])
     if (mapTextFull != null) __obj.updateDynamic("mapTextFull")(mapTextFull.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.fundamentalReact.multiInputMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalReact.AnonText
+import typings.fundamentalReact.anon.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,14 +20,14 @@ trait MultiInputProps
   var placeholder: js.UndefOr[String] = js.undefined
   var popoverProps: js.UndefOr[js.Any] = js.undefined
   var tagProps: js.UndefOr[js.Any] = js.undefined
-  var validationState: js.UndefOr[AnonText] = js.undefined
+  var validationState: js.UndefOr[Text] = js.undefined
 }
 
 object MultiInputProps {
   @scala.inline
   def apply(
     data: js.Array[_],
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     buttonProps: js.Any = null,
     className: String = null,
     compact: js.UndefOr[Boolean] = js.undefined,
@@ -39,15 +39,15 @@ object MultiInputProps {
     placeholder: String = null,
     popoverProps: js.Any = null,
     tagProps: js.Any = null,
-    validationState: AnonText = null
+    validationState: Text = null
   ): MultiInputProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
     if (onTagsUpdate != null) __obj.updateDynamic("onTagsUpdate")(js.Any.fromFunction1(onTagsUpdate))

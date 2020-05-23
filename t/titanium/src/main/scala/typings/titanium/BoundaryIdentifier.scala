@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
   */
 trait BoundaryIdentifier extends js.Object {
   /**
-  	 * Arbitrary identifier for the boundary
-  	 */
+    * Arbitrary identifier for the boundary
+    */
   var identifier: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Start point for the boundary
-  	 */
+    * Start point for the boundary
+    */
   var point1: js.UndefOr[Point] = js.undefined
   /**
-  	 * End point for the boundary
-  	 */
+    * End point for the boundary
+    */
   var point2: js.UndefOr[Point] = js.undefined
 }
 

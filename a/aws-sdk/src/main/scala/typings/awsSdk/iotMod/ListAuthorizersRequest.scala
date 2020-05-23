@@ -27,15 +27,15 @@ trait ListAuthorizersRequest extends js.Object {
 object ListAuthorizersRequest {
   @scala.inline
   def apply(
-    ascendingOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined,
     marker: Marker = null,
-    pageSize: Int | Double = null,
+    pageSize: js.UndefOr[PageSize] = js.undefined,
     status: AuthorizerStatus = null
   ): ListAuthorizersRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascendingOrder)) __obj.updateDynamic("ascendingOrder")(ascendingOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(ascendingOrder)) __obj.updateDynamic("ascendingOrder")(ascendingOrder.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuthorizersRequest]
   }

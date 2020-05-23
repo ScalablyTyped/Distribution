@@ -19,7 +19,7 @@ object PreviewProps {
   @scala.inline
   def apply(
     className: String = null,
-    columns: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
     isColumn: js.UndefOr[Boolean] = js.undefined,
     isExpanded: js.UndefOr[Boolean] = js.undefined,
     withSource: SourceProps = null,
@@ -27,11 +27,11 @@ object PreviewProps {
   ): PreviewProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(isColumn)) __obj.updateDynamic("isColumn")(isColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isColumn)) __obj.updateDynamic("isColumn")(isColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
     if (withSource != null) __obj.updateDynamic("withSource")(withSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(withToolbar)) __obj.updateDynamic("withToolbar")(withToolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(withToolbar)) __obj.updateDynamic("withToolbar")(withToolbar.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewProps]
   }
 }

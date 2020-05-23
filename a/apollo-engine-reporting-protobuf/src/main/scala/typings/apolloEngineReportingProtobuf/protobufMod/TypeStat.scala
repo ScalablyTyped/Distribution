@@ -17,12 +17,6 @@ import scala.scalajs.js.annotation._
   */
 class TypeStat () extends ITypeStat {
   def this(properties: ITypeStat) = this()
-  /** TypeStat field. */
-  @JSName("field")
-  var field_TypeStat: js.Array[IFieldStat] = js.native
-  /** TypeStat name. */
-  @JSName("name")
-  var name_TypeStat: String = js.native
   /** TypeStat perFieldStat. */
   @JSName("perFieldStat")
   var perFieldStat_TypeStat: StringDictionary[IFieldStat] = js.native

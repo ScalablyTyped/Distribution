@@ -1,12 +1,12 @@
 package typings.officeUiFabricReact.baseFloatingPickerTypesMod
 
-import typings.officeUiFabricReact.AnonInput
+import typings.officeUiFabricReact.anon.Input
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionItemProps
 import typings.officeUiFabricReact.suggestionsStoreMod.SuggestionsStore
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import typings.react.mod.ClassAttributes
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import scala.scalajs.js
@@ -91,7 +91,7 @@ trait IBaseFloatingPickerProps[T]
   /**
     * The text to display while searching for more results in a limited suggestions list
     */
-  var searchingText: js.UndefOr[(js.Function1[/* props */ AnonInput, String]) | String] = js.native
+  var searchingText: js.UndefOr[(js.Function1[/* props */ Input, String]) | String] = js.native
   /**
     * The items that the base picker should currently display as selected.
     * If this is provided then the picker will act as a controlled component.

@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.TextRange")
 @js.native
-class TextRange protected () extends js.Object {
+trait TextRange extends js.Object {
   val ActionSettings: typings.activexPowerpoint.PowerPoint.ActionSettings = js.native
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   val BoundHeight: Double = js.native

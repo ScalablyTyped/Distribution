@@ -70,12 +70,12 @@ object DatetimeFormatInfoLoadOptions {
     timeSeparator: js.UndefOr[Boolean] = js.undefined
   ): DatetimeFormatInfoLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(dateSeparator)) __obj.updateDynamic("dateSeparator")(dateSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(longDatePattern)) __obj.updateDynamic("longDatePattern")(longDatePattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(longTimePattern)) __obj.updateDynamic("longTimePattern")(longTimePattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(shortDatePattern)) __obj.updateDynamic("shortDatePattern")(shortDatePattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeSeparator)) __obj.updateDynamic("timeSeparator")(timeSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dateSeparator)) __obj.updateDynamic("dateSeparator")(dateSeparator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longDatePattern)) __obj.updateDynamic("longDatePattern")(longDatePattern.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longTimePattern)) __obj.updateDynamic("longTimePattern")(longTimePattern.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortDatePattern)) __obj.updateDynamic("shortDatePattern")(shortDatePattern.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeSeparator)) __obj.updateDynamic("timeSeparator")(timeSeparator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatetimeFormatInfoLoadOptions]
   }
 }

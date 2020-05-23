@@ -11,11 +11,11 @@ trait CopyJob extends js.Object {
     */
   var BackupSizeInBytes: js.UndefOr[Long_] = js.native
   /**
-    * The date and time a job to create a copy job is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM. 
+    * The date and time a copy job is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM. 
     */
   var CompletionDate: js.UndefOr[timestamp] = js.native
   /**
-    * Uniquely identifies a request to AWS Backup to copy a resource.
+    * Uniquely identifies a copy job.
     */
   var CopyJobId: js.UndefOr[String] = js.native
   var CreatedBy: js.UndefOr[RecoveryPointCreator] = js.native
@@ -28,7 +28,7 @@ trait CopyJob extends js.Object {
     */
   var DestinationBackupVaultArn: js.UndefOr[ARN] = js.native
   /**
-    * An ARN that uniquely identifies a destination recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45. 
+    * An ARN that uniquely identifies a destination recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
     */
   var DestinationRecoveryPointArn: js.UndefOr[ARN] = js.native
   /**
@@ -36,11 +36,11 @@ trait CopyJob extends js.Object {
     */
   var IamRoleArn: js.UndefOr[IAMRoleArn] = js.native
   /**
-    * The type of AWS resource to be copied; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. 
+    * The AWS resource to be copied; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
     */
   var ResourceArn: js.UndefOr[ARN] = js.native
   /**
-    * The type of AWS resource to be copied; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. 
+    * The type of AWS resource to be copied; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.native
   /**
@@ -48,15 +48,15 @@ trait CopyJob extends js.Object {
     */
   var SourceBackupVaultArn: js.UndefOr[ARN] = js.native
   /**
-    * An ARN that uniquely identifies a source recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45. 
+    * An ARN that uniquely identifies a source recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
     */
   var SourceRecoveryPointArn: js.UndefOr[ARN] = js.native
   /**
-    * The current state of a resource recovery point.
+    * The current state of a copy job.
     */
   var State: js.UndefOr[CopyJobState] = js.native
   /**
-    * A detailed message explaining the status of the job that to copy a resource.
+    * A detailed message explaining the status of the job to copy a resource.
     */
   var StatusMessage: js.UndefOr[String] = js.native
 }
@@ -64,7 +64,7 @@ trait CopyJob extends js.Object {
 object CopyJob {
   @scala.inline
   def apply(
-    BackupSizeInBytes: Int | Double = null,
+    BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
     CompletionDate: timestamp = null,
     CopyJobId: String = null,
     CreatedBy: RecoveryPointCreator = null,
@@ -80,7 +80,7 @@ object CopyJob {
     StatusMessage: String = null
   ): CopyJob = {
     val __obj = js.Dynamic.literal()
-    if (BackupSizeInBytes != null) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
     if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
     if (CopyJobId != null) __obj.updateDynamic("CopyJobId")(CopyJobId.asInstanceOf[js.Any])
     if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])

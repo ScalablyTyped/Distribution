@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,53 +70,6 @@ object WalletDetailViewPosition extends js.Object {
   /** The fifth content slot in UI under Header2. */
   @js.native
   sealed trait secondaryField5 extends WalletDetailViewPosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WalletDetailViewPosition with Double] = js.native
-  /* 10 */ @js.native
-  object centerField1 extends TopLevel[centerField1 with Double]
-  
-  /* 11 */ @js.native
-  object footerField1 extends TopLevel[footerField1 with Double]
-  
-  /* 12 */ @js.native
-  object footerField2 extends TopLevel[footerField2 with Double]
-  
-  /* 13 */ @js.native
-  object footerField3 extends TopLevel[footerField3 with Double]
-  
-  /* 14 */ @js.native
-  object footerField4 extends TopLevel[footerField4 with Double]
-  
-  /* 1 */ @js.native
-  object headerField1 extends TopLevel[headerField1 with Double]
-  
-  /* 2 */ @js.native
-  object headerField2 extends TopLevel[headerField2 with Double]
-  
-  /* 0 */ @js.native
-  object hidden extends TopLevel[hidden with Double]
-  
-  /* 3 */ @js.native
-  object primaryField1 extends TopLevel[primaryField1 with Double]
-  
-  /* 4 */ @js.native
-  object primaryField2 extends TopLevel[primaryField2 with Double]
-  
-  /* 5 */ @js.native
-  object secondaryField1 extends TopLevel[secondaryField1 with Double]
-  
-  /* 6 */ @js.native
-  object secondaryField2 extends TopLevel[secondaryField2 with Double]
-  
-  /* 7 */ @js.native
-  object secondaryField3 extends TopLevel[secondaryField3 with Double]
-  
-  /* 8 */ @js.native
-  object secondaryField4 extends TopLevel[secondaryField4 with Double]
-  
-  /* 9 */ @js.native
-  object secondaryField5 extends TopLevel[secondaryField5 with Double]
   
 }
 

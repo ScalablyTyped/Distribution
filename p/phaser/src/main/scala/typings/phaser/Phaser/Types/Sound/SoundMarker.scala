@@ -31,13 +31,13 @@ object SoundMarker {
   def apply(
     name: String,
     config: SoundConfig = null,
-    duration: Int | Double = null,
-    start: Int | Double = null
+    duration: js.UndefOr[Double] = js.undefined,
+    start: js.UndefOr[Double] = js.undefined
   ): SoundMarker = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoundMarker]
   }
 }

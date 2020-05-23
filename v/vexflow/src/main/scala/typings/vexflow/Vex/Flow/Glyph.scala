@@ -1,37 +1,43 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.AnonCache
-import typings.vexflow.AnonHeight
-import typings.vexflow.AnonOutline
-import typings.vexflow.Vex.IFont
 import typings.vexflow.Vex.IRenderContext
+import typings.vexflow.anon.Cache
+import typings.vexflow.anon.Xmax
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Vex.Flow.Glyph")
-@js.native
-class Glyph protected () extends js.Object {
-  def this(code: String, point: Double) = this()
-  def this(code: String, point: Double, options: AnonCache) = this()
-  def getContext(): IRenderContext = js.native
-  def getMetrics(): AnonHeight = js.native
-  def render(ctx: IRenderContext, x_pos: Double, y_pos: Double): Unit = js.native
-  def renderToStave(x: Double): Unit = js.native
-  def reset(): Unit = js.native
-  def setContext(context: IRenderContext): Glyph = js.native
-  def setOptions(options: AnonCache): Unit = js.native
-  def setStave(stave: Stave): Glyph = js.native
-  def setWidth(width: Double): Glyph = js.native
-  def setXShift(x_shift: Double): Glyph = js.native
-  def setYShift(y_shift: Double): Glyph = js.native
+trait Glyph extends js.Object {
+  def getContext(): IRenderContext
+  def getMetrics(): Xmax
+  def render(ctx: IRenderContext, x_pos: Double, y_pos: Double): Unit
+  def renderToStave(x: Double): Unit
+  def reset(): Unit
+  def setContext(context: IRenderContext): Glyph
+  def setOptions(options: Cache): Unit
+  def setStave(stave: Stave): Glyph
+  def setWidth(width: Double): Glyph
+  def setXShift(x_shift: Double): Glyph
+  def setYShift(y_shift: Double): Glyph
 }
 
-/* static members */
-@JSGlobal("Vex.Flow.Glyph")
-@js.native
-object Glyph extends js.Object {
-  def loadMetrics(font: IFont, code: String, cache: Boolean): AnonOutline = js.native
-  def renderOutline(ctx: IRenderContext, outline: js.Array[Double], scale: Double, x_pos: Double, y_pos: Double): Unit = js.native
+object Glyph {
+  @scala.inline
+  def apply(
+    getContext: () => IRenderContext,
+    getMetrics: () => Xmax,
+    render: (IRenderContext, Double, Double) => Unit,
+    renderToStave: Double => Unit,
+    reset: () => Unit,
+    setContext: IRenderContext => Glyph,
+    setOptions: Cache => Unit,
+    setStave: Stave => Glyph,
+    setWidth: Double => Glyph,
+    setXShift: Double => Glyph,
+    setYShift: Double => Glyph
+  ): Glyph = {
+    val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getMetrics = js.Any.fromFunction0(getMetrics), render = js.Any.fromFunction3(render), renderToStave = js.Any.fromFunction1(renderToStave), reset = js.Any.fromFunction0(reset), setContext = js.Any.fromFunction1(setContext), setOptions = js.Any.fromFunction1(setOptions), setStave = js.Any.fromFunction1(setStave), setWidth = js.Any.fromFunction1(setWidth), setXShift = js.Any.fromFunction1(setXShift), setYShift = js.Any.fromFunction1(setYShift))
+    __obj.asInstanceOf[Glyph]
+  }
 }
 

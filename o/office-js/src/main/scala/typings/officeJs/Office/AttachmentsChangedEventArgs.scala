@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait AttachmentsChangedEventArgs extends js.Object {
   /** 
     * Represents the set of attachments that were added or removed. 
-    * For each such attachment, gets a subset of {@link Office.AttachmentDetails | AttachmentDetails} properties: `id`, `name`, `size`, and `attachmentType`.
+    * For each such attachment, gets `id`, `name`, `size`, and `attachmentType` properties.
     * 
     * [Api set: Mailbox 1.8]
     */

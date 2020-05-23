@@ -1,7 +1,7 @@
 package typings.materialUiCore.createShallowMod
 
 import typings.enzyme.mod.EnzymeSelector
-import typings.materialUiCore.Fn1
+import typings.materialUiCore.anon.Fn1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

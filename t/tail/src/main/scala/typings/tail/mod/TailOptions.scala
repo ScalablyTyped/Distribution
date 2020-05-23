@@ -26,18 +26,18 @@ object TailOptions {
     fromBeginning: js.UndefOr[Boolean] = js.undefined,
     fsWatchOptions: Record[String, _] = null,
     logger: js.Any = null,
-    separator: String | RegExp = null,
+    separator: js.UndefOr[Null | String | RegExp] = js.undefined,
     useWatchFile: js.UndefOr[Boolean] = js.undefined
   ): TailOptions = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(flushAtEOF)) __obj.updateDynamic("flushAtEOF")(flushAtEOF.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromBeginning)) __obj.updateDynamic("fromBeginning")(fromBeginning.asInstanceOf[js.Any])
+    if (!js.isUndefined(flushAtEOF)) __obj.updateDynamic("flushAtEOF")(flushAtEOF.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromBeginning)) __obj.updateDynamic("fromBeginning")(fromBeginning.get.asInstanceOf[js.Any])
     if (fsWatchOptions != null) __obj.updateDynamic("fsWatchOptions")(fsWatchOptions.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(useWatchFile)) __obj.updateDynamic("useWatchFile")(useWatchFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWatchFile)) __obj.updateDynamic("useWatchFile")(useWatchFile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TailOptions]
   }
 }

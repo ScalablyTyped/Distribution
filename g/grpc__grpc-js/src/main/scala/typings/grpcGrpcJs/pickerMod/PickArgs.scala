@@ -13,7 +13,6 @@ object PickArgs {
   @scala.inline
   def apply(metadata: Metadata): PickArgs = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[PickArgs]
   }
 }

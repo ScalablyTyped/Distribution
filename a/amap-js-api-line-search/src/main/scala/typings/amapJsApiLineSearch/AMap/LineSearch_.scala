@@ -1,21 +1,14 @@
 package typings.amapJsApiLineSearch.AMap
 
 import typings.amapJsApi.AMap.EventEmitter
-import typings.amapJsApiLineSearch.AMap.LineSearch.Options
 import typings.amapJsApiLineSearch.AMap.LineSearch.SearchResult
 import typings.amapJsApiLineSearch.AMap.LineSearch.SearchStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.LineSearch")
 @js.native
-/**
-  * 公交路线查询
-  * @param options 选项
-  */
-class LineSearch_ () extends EventEmitter {
-  def this(options: Options) = this()
+trait LineSearch_ extends EventEmitter {
   /**
     * 根据给定公交线路名称进行公交线路详情查询
     * @param keyword 名称

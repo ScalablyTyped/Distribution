@@ -40,7 +40,7 @@ object MutateOptions {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction3(onError))
     if (onSettled != null) __obj.updateDynamic("onSettled")(js.Any.fromFunction4(onSettled))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction2(onSuccess))
-    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutateOptions[TResult, TVariables]]
   }
 }

@@ -33,7 +33,7 @@ object BrokerUser {
     groups: js.Array[String] = null
   ): BrokerUser = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-    if (!js.isUndefined(consoleAccess)) __obj.updateDynamic("consoleAccess")(consoleAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(consoleAccess)) __obj.updateDynamic("consoleAccess")(consoleAccess.get.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerUser]
   }

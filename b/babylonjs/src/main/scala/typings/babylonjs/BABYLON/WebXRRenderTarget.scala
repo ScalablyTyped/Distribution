@@ -32,8 +32,7 @@ object WebXRRenderTarget {
     initializeXRLayerAsync: XRSession => js.Promise[XRWebGLLayer],
     xrLayer: Nullable[XRWebGLLayer] = null
   ): WebXRRenderTarget = {
-    val __obj = js.Dynamic.literal(canvasContext = canvasContext.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), initializeXRLayerAsync = js.Any.fromFunction1(initializeXRLayerAsync))
-    if (xrLayer != null) __obj.updateDynamic("xrLayer")(xrLayer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(canvasContext = canvasContext.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), initializeXRLayerAsync = js.Any.fromFunction1(initializeXRLayerAsync), xrLayer = xrLayer.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebXRRenderTarget]
   }
 }

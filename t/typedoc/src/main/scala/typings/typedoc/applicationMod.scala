@@ -1,6 +1,7 @@
 package typings.typedoc
 
 import typings.std.Partial
+import typings.typedoc.anon.HasErrors
 import typings.typedoc.componentMod.AbstractComponent
 import typings.typedoc.componentMod.ChildableComponent
 import typings.typedoc.converterMod.Converter
@@ -34,8 +35,8 @@ object applicationMod extends js.Object {
     var serializer: Serializer = js.native
     @JSName("application")
     def application_MApplication: Application = js.native
-    def bootstrap(): AnonHasErrors = js.native
-    def bootstrap(options: Partial[TypeDocAndTSOptions]): AnonHasErrors = js.native
+    def bootstrap(): HasErrors = js.native
+    def bootstrap(options: Partial[TypeDocAndTSOptions]): HasErrors = js.native
     def convert(src: js.Array[String]): js.UndefOr[ProjectReflection] = js.native
     def expandInputFiles(): js.Array[String] = js.native
     def expandInputFiles(inputFiles: js.Array[String]): js.Array[String] = js.native

@@ -1,6 +1,8 @@
 package typings.sqlite
 
 import typings.sqlTemplateStrings.mod.SQLStatement
+import typings.sqlite.anon.Cached
+import typings.sqlite.anon.Force
 import typings.sqlite.sqliteStrings.busyTimeout
 import typings.sqlite.sqliteStrings.close
 import typings.sqlite.sqliteStrings.error
@@ -52,7 +54,7 @@ object mod extends js.Object {
     def get_T[T](sql: SQLStatement): js.Promise[T] = js.native
     @JSName("get")
     def get_T[T](sql: SQLStatement, params: js.Any*): js.Promise[T] = js.native
-    def migrate(options: AnonForce): js.Promise[Database] = js.native
+    def migrate(options: Force): js.Promise[Database] = js.native
     def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): Unit = js.native
@@ -102,6 +104,6 @@ object mod extends js.Object {
   }
   
   def open(filename: String): js.Promise[Database] = js.native
-  def open(filename: String, options: AnonCached): js.Promise[Database] = js.native
+  def open(filename: String, options: Cached): js.Promise[Database] = js.native
 }
 

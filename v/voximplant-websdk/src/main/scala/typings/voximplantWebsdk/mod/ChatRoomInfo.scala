@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	*	Chat room info
-	*/
+  *    Chat room info
+  */
 trait ChatRoomInfo extends js.Object {
   /**
-  		* Creation date
-  		*/
+    * Creation date
+    */
   var creationdate: String
   /**
-  		* Room description
-  		*/
+    * Room description
+    */
   var description: String
   /**
-  		* Number of chat room participants
-  		*/
+    * Number of chat room participants
+    */
   var occupants: Double
   /**
-  		* Room's name / subject
-  		*/
+    * Room's name / subject
+    */
   var subject: String
 }
 

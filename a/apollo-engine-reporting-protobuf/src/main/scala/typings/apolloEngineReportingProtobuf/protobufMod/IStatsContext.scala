@@ -15,11 +15,15 @@ trait IStatsContext extends js.Object {
 
 object IStatsContext {
   @scala.inline
-  def apply(clientName: String = null, clientReferenceId: String = null, clientVersion: String = null): IStatsContext = {
+  def apply(
+    clientName: js.UndefOr[Null | String] = js.undefined,
+    clientReferenceId: js.UndefOr[Null | String] = js.undefined,
+    clientVersion: js.UndefOr[Null | String] = js.undefined
+  ): IStatsContext = {
     val __obj = js.Dynamic.literal()
-    if (clientName != null) __obj.updateDynamic("clientName")(clientName.asInstanceOf[js.Any])
-    if (clientReferenceId != null) __obj.updateDynamic("clientReferenceId")(clientReferenceId.asInstanceOf[js.Any])
-    if (clientVersion != null) __obj.updateDynamic("clientVersion")(clientVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientName)) __obj.updateDynamic("clientName")(clientName.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientReferenceId)) __obj.updateDynamic("clientReferenceId")(clientReferenceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientVersion)) __obj.updateDynamic("clientVersion")(clientVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStatsContext]
   }
 }

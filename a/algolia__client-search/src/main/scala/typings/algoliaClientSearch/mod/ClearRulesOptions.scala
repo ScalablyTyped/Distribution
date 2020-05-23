@@ -15,7 +15,7 @@ object ClearRulesOptions {
   @scala.inline
   def apply(forwardToReplicas: js.UndefOr[Boolean] = js.undefined): ClearRulesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forwardToReplicas)) __obj.updateDynamic("forwardToReplicas")(forwardToReplicas.asInstanceOf[js.Any])
+    if (!js.isUndefined(forwardToReplicas)) __obj.updateDynamic("forwardToReplicas")(forwardToReplicas.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearRulesOptions]
   }
 }

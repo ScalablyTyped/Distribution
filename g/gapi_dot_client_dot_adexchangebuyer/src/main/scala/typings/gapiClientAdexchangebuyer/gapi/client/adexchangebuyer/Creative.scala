@@ -1,9 +1,9 @@
 package typings.gapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
-import typings.gapiClientAdexchangebuyer.AnonAdvertiser
-import typings.gapiClientAdexchangebuyer.AnonContexts
-import typings.gapiClientAdexchangebuyer.AnonDate
-import typings.gapiClientAdexchangebuyer.AnonDisapprovalReasons
+import typings.gapiClientAdexchangebuyer.anon.Advertiser
+import typings.gapiClientAdexchangebuyer.anon.Contexts
+import typings.gapiClientAdexchangebuyer.anon.Date
+import typings.gapiClientAdexchangebuyer.anon.DisapprovalReasons
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ trait Creative extends js.Object {
   /** The set of destination urls for the snippet. */
   var clickThroughUrl: js.UndefOr[js.Array[String]] = js.undefined
   /** Shows any corrections that were applied to this creative. Read-only. This field should not be set in requests. */
-  var corrections: js.UndefOr[js.Array[AnonContexts]] = js.undefined
+  var corrections: js.UndefOr[js.Array[Contexts]] = js.undefined
   /**
     * Top-level deals status. Read-only. This field should not be set in requests. If disapproved, an entry for auctionType=DIRECT_DEALS (or ALL) in
     * servingRestrictions will also exist. Note that this may be nuanced with other contextual restrictions, in which case it may be preferable to read from
@@ -46,7 +46,7 @@ trait Creative extends js.Object {
   /** Detected domains for this creative. Read-only. This field should not be set in requests. */
   var detectedDomains: js.UndefOr[js.Array[String]] = js.undefined
   /** The filtering reasons for the creative. Read-only. This field should not be set in requests. */
-  var filteringReasons: js.UndefOr[AnonDate] = js.undefined
+  var filteringReasons: js.UndefOr[Date] = js.undefined
   /** Ad height. */
   var height: js.UndefOr[Double] = js.undefined
   /** The set of urls to be called to record an impression. */
@@ -56,7 +56,7 @@ trait Creative extends js.Object {
   /** Detected languages for this creative. Read-only. This field should not be set in requests. */
   var languages: js.UndefOr[js.Array[String]] = js.undefined
   /** If nativeAd is set, HTMLSnippet and the videoURL outside of nativeAd should not be set. (The videoURL inside nativeAd can be set.) */
-  var nativeAd: js.UndefOr[AnonAdvertiser] = js.undefined
+  var nativeAd: js.UndefOr[Advertiser] = js.undefined
   /**
     * Top-level open auction status. Read-only. This field should not be set in requests. If disapproved, an entry for auctionType=OPEN_AUCTION (or ALL) in
     * servingRestrictions will also exist. Note that this may be nuanced with other contextual restrictions, in which case it may be preferable to read from
@@ -83,7 +83,7 @@ trait Creative extends js.Object {
     * platform, an HTTPS vs HTTP request, or the type of auction). Read-only. This field should not be set in requests. See the examples in the Creatives
     * guide for more details.
     */
-  var servingRestrictions: js.UndefOr[js.Array[AnonDisapprovalReasons]] = js.undefined
+  var servingRestrictions: js.UndefOr[js.Array[DisapprovalReasons]] = js.undefined
   /** List of vendor types for the ads that may be shown from this snippet. Each vendor type is represented by an integer as defined in vendors.txt. */
   var vendorType: js.UndefOr[js.Array[Double]] = js.undefined
   /** The version for this creative. Read-only. This field should not be set in requests. */
@@ -98,7 +98,7 @@ object Creative {
   @scala.inline
   def apply(
     HTMLSnippet: String = null,
-    accountId: Int | Double = null,
+    accountId: js.UndefOr[Double] = js.undefined,
     adChoicesDestinationUrl: String = null,
     advertiserId: js.Array[String] = null,
     advertiserName: String = null,
@@ -107,28 +107,28 @@ object Creative {
     attribute: js.Array[Double] = null,
     buyerCreativeId: String = null,
     clickThroughUrl: js.Array[String] = null,
-    corrections: js.Array[AnonContexts] = null,
+    corrections: js.Array[Contexts] = null,
     dealsStatus: String = null,
     detectedDomains: js.Array[String] = null,
-    filteringReasons: AnonDate = null,
-    height: Int | Double = null,
+    filteringReasons: Date = null,
+    height: js.UndefOr[Double] = js.undefined,
     impressionTrackingUrl: js.Array[String] = null,
     kind: String = null,
     languages: js.Array[String] = null,
-    nativeAd: AnonAdvertiser = null,
+    nativeAd: Advertiser = null,
     openAuctionStatus: String = null,
     productCategories: js.Array[Double] = null,
     restrictedCategories: js.Array[Double] = null,
     sensitiveCategories: js.Array[Double] = null,
-    servingRestrictions: js.Array[AnonDisapprovalReasons] = null,
+    servingRestrictions: js.Array[DisapprovalReasons] = null,
     vendorType: js.Array[Double] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     videoURL: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): Creative = {
     val __obj = js.Dynamic.literal()
     if (HTMLSnippet != null) __obj.updateDynamic("HTMLSnippet")(HTMLSnippet.asInstanceOf[js.Any])
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountId)) __obj.updateDynamic("accountId")(accountId.get.asInstanceOf[js.Any])
     if (adChoicesDestinationUrl != null) __obj.updateDynamic("adChoicesDestinationUrl")(adChoicesDestinationUrl.asInstanceOf[js.Any])
     if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
     if (advertiserName != null) __obj.updateDynamic("advertiserName")(advertiserName.asInstanceOf[js.Any])
@@ -141,7 +141,7 @@ object Creative {
     if (dealsStatus != null) __obj.updateDynamic("dealsStatus")(dealsStatus.asInstanceOf[js.Any])
     if (detectedDomains != null) __obj.updateDynamic("detectedDomains")(detectedDomains.asInstanceOf[js.Any])
     if (filteringReasons != null) __obj.updateDynamic("filteringReasons")(filteringReasons.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (impressionTrackingUrl != null) __obj.updateDynamic("impressionTrackingUrl")(impressionTrackingUrl.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
@@ -152,9 +152,9 @@ object Creative {
     if (sensitiveCategories != null) __obj.updateDynamic("sensitiveCategories")(sensitiveCategories.asInstanceOf[js.Any])
     if (servingRestrictions != null) __obj.updateDynamic("servingRestrictions")(servingRestrictions.asInstanceOf[js.Any])
     if (vendorType != null) __obj.updateDynamic("vendorType")(vendorType.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     if (videoURL != null) __obj.updateDynamic("videoURL")(videoURL.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Creative]
   }
 }

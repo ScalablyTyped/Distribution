@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * 系统等待对话框对象
   * 从NativeUIObj对象继承而来，通过plus.nativeUI.showWaiting方法创建时返回。
-  * 	用于控制系统样式等待对话框的操作，如关闭、设置标题内容等。
+  *     用于控制系统样式等待对话框的操作，如关闭、设置标题内容等。
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
@@ -23,7 +23,7 @@ trait PlusNativeUIWaitingObj extends js.Object {
   /**
     * 关闭显示的系统等待对话框
     * 调用plus.nativeUI.showWaiting方法创建并显示系统等待界后，可通过其close方法将原生等待控件关闭。
-    * 	一个系统等待对话框只能关闭一次，多次调用将无任何作用。
+    *     一个系统等待对话框只能关闭一次，多次调用将无任何作用。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */

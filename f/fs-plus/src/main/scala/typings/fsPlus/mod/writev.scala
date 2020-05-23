@@ -10,13 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("fs-plus", "writev")
 @js.native
 object writev extends js.Object {
-  /**
-    * Write an array of ArrayBufferViews to the file specified by fd using writev().
-    * position is the offset from the beginning of the file where this data should be written.
-    * It is unsafe to use fs.writev() multiple times on the same file without waiting for the callback. For this scenario, use fs.createWriteStream().
-    * On Linux, positional writes don't work when the file is opened in append mode.
-    * The kernel ignores the position argument and always appends the data to the end of the file.
-    */
   def apply(
     fd: Double,
     buffers: js.Array[ArrayBufferView],

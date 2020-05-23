@@ -1,13 +1,13 @@
 package typings.primereact.menuItemMod
 
-import typings.primereact.AnonItem
+import typings.primereact.anon.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MenuItem extends js.Object {
   var className: js.UndefOr[String] = js.undefined
-  var command: js.UndefOr[js.Function1[/* e */ AnonItem, Unit]] = js.undefined
+  var command: js.UndefOr[js.Function1[/* e */ Item, Unit]] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var icon: js.UndefOr[String] = js.undefined
   var items: js.UndefOr[js.Array[js.Array[MenuItem] | MenuItem]] = js.undefined
@@ -22,7 +22,7 @@ object MenuItem {
   @scala.inline
   def apply(
     className: String = null,
-    command: /* e */ AnonItem => Unit = null,
+    command: /* e */ Item => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     icon: String = null,
     items: js.Array[js.Array[MenuItem] | MenuItem] = null,
@@ -35,11 +35,11 @@ object MenuItem {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (command != null) __obj.updateDynamic("command")(js.Any.fromFunction1(command))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

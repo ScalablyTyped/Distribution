@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.FillFormat")
 @js.native
-class FillFormat protected () extends js.Object {
+trait FillFormat extends js.Object {
   val Application: js.Any = js.native
   var BackColor: ColorFormat = js.native
   val Creator: Double = js.native

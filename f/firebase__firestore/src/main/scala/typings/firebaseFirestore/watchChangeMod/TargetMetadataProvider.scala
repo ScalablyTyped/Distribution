@@ -27,7 +27,6 @@ object TargetMetadataProvider {
     getTargetDataForTarget: TargetId => TargetData | Null
   ): TargetMetadataProvider = {
     val __obj = js.Dynamic.literal(getRemoteKeysForTarget = js.Any.fromFunction1(getRemoteKeysForTarget), getTargetDataForTarget = js.Any.fromFunction1(getTargetDataForTarget))
-  
     __obj.asInstanceOf[TargetMetadataProvider]
   }
 }

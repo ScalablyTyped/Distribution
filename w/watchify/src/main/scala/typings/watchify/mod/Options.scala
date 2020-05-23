@@ -32,12 +32,12 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     ignoreWatch: Boolean | String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* repeated */ _, Boolean])]) = null,
     poll: Boolean | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (ignoreWatch != null) __obj.updateDynamic("ignoreWatch")(ignoreWatch.asInstanceOf[js.Any])
     if (poll != null) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

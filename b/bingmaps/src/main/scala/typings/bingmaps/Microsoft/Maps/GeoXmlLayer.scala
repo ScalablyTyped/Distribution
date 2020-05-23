@@ -5,21 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Microsoft.Maps.GeoXmlLayer")
 @js.native
-/**
-  * @constructor
-  * @param dataSource The XML as a string, URL or ArrayBuffer to read.
-  * @param isUrl Whether the dataSource provided is an URL. Default = true
-  * @param options The options used to render the layer.
-  */
-class GeoXmlLayer () extends CustomOverlay {
-  def this(dataSource: String) = this()
-  def this(dataSource: ArrayBuffer) = this()
-  def this(dataSource: String, isUrl: Boolean) = this()
-  def this(dataSource: ArrayBuffer, isUrl: Boolean) = this()
-  def this(dataSource: String, isUrl: Boolean, options: IGeoXmlLayerOptions) = this()
-  def this(dataSource: ArrayBuffer, isUrl: Boolean, options: IGeoXmlLayerOptions) = this()
+trait GeoXmlLayer extends CustomOverlay {
   /** Optional property to store any additional metadata for this layer. */
   var metadata: js.Any = js.native
   /**

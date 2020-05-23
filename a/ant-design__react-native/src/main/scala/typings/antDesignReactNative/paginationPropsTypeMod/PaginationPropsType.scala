@@ -39,7 +39,7 @@ object PaginationPropsType {
     if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction0(onNext))
     if (onPrev != null) __obj.updateDynamic("onPrev")(js.Any.fromFunction0(onPrev))
     if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.asInstanceOf[js.Any])
+    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationPropsType]
   }
 }

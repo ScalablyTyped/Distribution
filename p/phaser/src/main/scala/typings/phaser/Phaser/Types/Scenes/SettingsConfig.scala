@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.phaser.Phaser.Types.Cameras.Scene2D.JSONCamera
 import typings.phaser.Phaser.Types.Core.LoaderConfig
 import typings.phaser.Phaser.Types.Core.PhysicsConfig
-import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileConfig
+import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileSection
 import typings.phaser.phaserBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,9 +36,9 @@ trait SettingsConfig extends js.Object {
     */
   var mapAdd: js.UndefOr[StringDictionary[String]] = js.undefined
   /**
-    * An optional Loader Packfile to be loaded before the Scene begins.
+    * Files to be loaded before the Scene begins.
     */
-  var pack: js.UndefOr[`false` | PackFileConfig] = js.undefined
+  var pack: js.UndefOr[`false` | PackFileSection] = js.undefined
   /**
     * The physics configuration object for the Scene.
     */
@@ -62,13 +62,13 @@ object SettingsConfig {
     loader: LoaderConfig = null,
     map: StringDictionary[String] = null,
     mapAdd: StringDictionary[String] = null,
-    pack: `false` | PackFileConfig = null,
+    pack: `false` | PackFileSection = null,
     physics: PhysicsConfig = null,
     plugins: `false` | js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): SettingsConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
     if (cameras != null) __obj.updateDynamic("cameras")(cameras.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
@@ -77,7 +77,7 @@ object SettingsConfig {
     if (pack != null) __obj.updateDynamic("pack")(pack.asInstanceOf[js.Any])
     if (physics != null) __obj.updateDynamic("physics")(physics.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsConfig]
   }
 }

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,8 +21,4 @@ trait NamedNodeMap extends /* index */ NumberDictionary[Attr] {
   def setNamedItem(attr: Attr): Attr | Null = js.native
   def setNamedItemNS(attr: Attr): Attr | Null = js.native
 }
-
-@JSGlobal("NamedNodeMap")
-@js.native
-object NamedNodeMap extends Instantiable0[NamedNodeMap]
 

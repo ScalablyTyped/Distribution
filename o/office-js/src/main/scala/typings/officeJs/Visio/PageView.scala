@@ -1,12 +1,12 @@
 package typings.officeJs.Visio
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.Visio.Interfaces.PageViewData
 import typings.officeJs.Visio.Interfaces.PageViewLoadOptions
 import typings.officeJs.Visio.Interfaces.PageViewUpdateData
+import typings.officeJs.anon.Expand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.PageView")
 @js.native
-class PageView () extends ClientObject {
+trait PageView extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PageView: RequestContext = js.native
@@ -87,8 +86,8 @@ class PageView () extends ClientObject {
   def load(): PageView = js.native
   def load(option: String): PageView = js.native
   def load(option: js.Array[String]): PageView = js.native
-  def load(option: AnonExpand): PageView = js.native
   def load(option: PageViewLoadOptions): PageView = js.native
+  def load(option: Expand): PageView = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

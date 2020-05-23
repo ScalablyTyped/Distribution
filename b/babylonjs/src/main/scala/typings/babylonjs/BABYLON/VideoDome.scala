@@ -1,23 +1,11 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.AnonAutoPlay
-import typings.babylonjs.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.VideoDome")
 @js.native
-class VideoDome protected () extends TransformNode {
-  /**
-    * Create an instance of this class and pass through the parameters to the relevant classes, VideoTexture, StandardMaterial, and Mesh.
-    * @param name Element's name, child elements will append suffixes for their own names.
-    * @param urlsOrVideo defines the url(s) or the video element to use
-    * @param options An object containing optional or exposed sub element properties
-    */
-  def this(name: String, urlsOrVideo: String, options: AnonAutoPlay, scene: Scene) = this()
-  def this(name: String, urlsOrVideo: js.Array[String], options: AnonAutoPlay, scene: Scene) = this()
-  def this(name: String, urlsOrVideo: HTMLVideoElement, options: AnonAutoPlay, scene: Scene) = this()
+trait VideoDome extends TransformNode {
   var _changeVideoMode: js.Any = js.native
   var _halfDome: js.Any = js.native
   /**
@@ -69,23 +57,5 @@ class VideoDome protected () extends TransformNode {
     * Gets the video texture being displayed on the sphere
     */
   def videoTexture: VideoTexture = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.VideoDome")
-@js.native
-object VideoDome extends js.Object {
-  /**
-    * Define the video source as a Monoscopic panoramic 360 video.
-    */
-  val MODE_MONOSCOPIC: Double = js.native
-  /**
-    * Define the video source as a Stereoscopic Side by Side panoramic 360 video.
-    */
-  val MODE_SIDEBYSIDE: Double = js.native
-  /**
-    * Define the video source as a Stereoscopic TopBottom/OverUnder panoramic 360 video.
-    */
-  val MODE_TOPBOTTOM: Double = js.native
 }
 

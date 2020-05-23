@@ -28,14 +28,14 @@ object ListSnapshotBlocksRequest {
   @scala.inline
   def apply(
     SnapshotId: SnapshotId,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: PageToken = null,
-    StartingBlockIndex: Int | Double = null
+    StartingBlockIndex: js.UndefOr[BlockIndex] = js.undefined
   ): ListSnapshotBlocksRequest = {
     val __obj = js.Dynamic.literal(SnapshotId = SnapshotId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StartingBlockIndex != null) __obj.updateDynamic("StartingBlockIndex")(StartingBlockIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(StartingBlockIndex)) __obj.updateDynamic("StartingBlockIndex")(StartingBlockIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSnapshotBlocksRequest]
   }
 }

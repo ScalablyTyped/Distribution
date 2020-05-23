@@ -1,6 +1,6 @@
 package typings.ionicCliFramework.loggerMod
 
-import typings.ionicCliFramework.PartialStreamHandlerOptio
+import typings.ionicCliFramework.anon.PartialStreamHandlerOptio
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

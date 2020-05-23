@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait SafariValidateEvent extends SafariEvent {
   /**
-  		* The command identifier of the target being validated.
-  		*/
+    * The command identifier of the target being validated.
+    */
   var command: String
 }
 

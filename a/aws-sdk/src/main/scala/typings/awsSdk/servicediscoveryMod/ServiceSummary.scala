@@ -26,7 +26,7 @@ trait ServiceSummary extends js.Object {
     */
   var Id: js.UndefOr[ResourceId] = js.native
   /**
-    * The number of instances that are currently associated with the service. Instances that were previously associated with the service but that have been deleted are not included in the count.
+    * The number of instances that are currently associated with the service. Instances that were previously associated with the service but that have been deleted are not included in the count. The count might not reflect pending registrations and deregistrations.
     */
   var InstanceCount: js.UndefOr[ResourceCount] = js.native
   /**
@@ -45,7 +45,7 @@ object ServiceSummary {
     HealthCheckConfig: HealthCheckConfig = null,
     HealthCheckCustomConfig: HealthCheckCustomConfig = null,
     Id: ResourceId = null,
-    InstanceCount: Int | Double = null,
+    InstanceCount: js.UndefOr[ResourceCount] = js.undefined,
     Name: ServiceName = null
   ): ServiceSummary = {
     val __obj = js.Dynamic.literal()
@@ -56,7 +56,7 @@ object ServiceSummary {
     if (HealthCheckConfig != null) __obj.updateDynamic("HealthCheckConfig")(HealthCheckConfig.asInstanceOf[js.Any])
     if (HealthCheckCustomConfig != null) __obj.updateDynamic("HealthCheckCustomConfig")(HealthCheckCustomConfig.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (InstanceCount != null) __obj.updateDynamic("InstanceCount")(InstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceSummary]
   }

@@ -59,32 +59,32 @@ trait IColorPickerStyles extends js.Object {
 object IColorPickerStyles {
   @scala.inline
   def apply(
-    colorRectangle: IStyle = null,
-    colorSquare: IStyle = null,
-    flexContainer: IStyle = null,
-    flexPreviewBox: IStyle = null,
-    flexSlider: IStyle = null,
-    input: IStyle = null,
-    panel: IStyle = null,
-    root: IStyle = null,
-    table: IStyle = null,
-    tableAlphaCell: IStyle = null,
-    tableHeader: IStyle = null,
-    tableHexCell: IStyle = null
+    colorRectangle: js.UndefOr[Null | IStyle] = js.undefined,
+    colorSquare: js.UndefOr[Null | IStyle] = js.undefined,
+    flexContainer: js.UndefOr[Null | IStyle] = js.undefined,
+    flexPreviewBox: js.UndefOr[Null | IStyle] = js.undefined,
+    flexSlider: js.UndefOr[Null | IStyle] = js.undefined,
+    input: js.UndefOr[Null | IStyle] = js.undefined,
+    panel: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    table: js.UndefOr[Null | IStyle] = js.undefined,
+    tableAlphaCell: js.UndefOr[Null | IStyle] = js.undefined,
+    tableHeader: js.UndefOr[Null | IStyle] = js.undefined,
+    tableHexCell: js.UndefOr[Null | IStyle] = js.undefined
   ): IColorPickerStyles = {
     val __obj = js.Dynamic.literal()
-    if (colorRectangle != null) __obj.updateDynamic("colorRectangle")(colorRectangle.asInstanceOf[js.Any])
-    if (colorSquare != null) __obj.updateDynamic("colorSquare")(colorSquare.asInstanceOf[js.Any])
-    if (flexContainer != null) __obj.updateDynamic("flexContainer")(flexContainer.asInstanceOf[js.Any])
-    if (flexPreviewBox != null) __obj.updateDynamic("flexPreviewBox")(flexPreviewBox.asInstanceOf[js.Any])
-    if (flexSlider != null) __obj.updateDynamic("flexSlider")(flexSlider.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (tableAlphaCell != null) __obj.updateDynamic("tableAlphaCell")(tableAlphaCell.asInstanceOf[js.Any])
-    if (tableHeader != null) __obj.updateDynamic("tableHeader")(tableHeader.asInstanceOf[js.Any])
-    if (tableHexCell != null) __obj.updateDynamic("tableHexCell")(tableHexCell.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorRectangle)) __obj.updateDynamic("colorRectangle")(colorRectangle.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorSquare)) __obj.updateDynamic("colorSquare")(colorSquare.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexContainer)) __obj.updateDynamic("flexContainer")(flexContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexPreviewBox)) __obj.updateDynamic("flexPreviewBox")(flexPreviewBox.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexSlider)) __obj.updateDynamic("flexSlider")(flexSlider.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(panel)) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(table)) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableAlphaCell)) __obj.updateDynamic("tableAlphaCell")(tableAlphaCell.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableHeader)) __obj.updateDynamic("tableHeader")(tableHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableHexCell)) __obj.updateDynamic("tableHexCell")(tableHexCell.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPickerStyles]
   }
 }

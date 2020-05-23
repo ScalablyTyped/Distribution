@@ -37,14 +37,14 @@ trait IRunnerOptions extends js.Object {
 object IRunnerOptions {
   @scala.inline
   def apply(
-    delta: Int | Double = null,
+    delta: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     isFixed: js.UndefOr[Boolean] = js.undefined
   ): IRunnerOptions = {
     val __obj = js.Dynamic.literal()
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRunnerOptions]
   }
 }

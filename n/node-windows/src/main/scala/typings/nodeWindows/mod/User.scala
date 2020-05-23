@@ -20,7 +20,7 @@ object User {
     mungeCredentialsAfterInstall: js.UndefOr[Boolean] = js.undefined
   ): User = {
     val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
-    if (!js.isUndefined(mungeCredentialsAfterInstall)) __obj.updateDynamic("mungeCredentialsAfterInstall")(mungeCredentialsAfterInstall.asInstanceOf[js.Any])
+    if (!js.isUndefined(mungeCredentialsAfterInstall)) __obj.updateDynamic("mungeCredentialsAfterInstall")(mungeCredentialsAfterInstall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

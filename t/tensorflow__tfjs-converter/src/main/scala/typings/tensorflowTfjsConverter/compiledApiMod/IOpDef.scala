@@ -35,30 +35,30 @@ trait IOpDef extends js.Object {
 object IOpDef {
   @scala.inline
   def apply(
-    allowsUninitializedInput: js.UndefOr[Boolean] = js.undefined,
-    attr: js.Array[IAttrDef] = null,
-    deprecation: IOpDeprecation = null,
-    description: String = null,
-    inputArg: js.Array[IArgDef] = null,
-    isAggregate: js.UndefOr[Boolean] = js.undefined,
-    isCommutative: js.UndefOr[Boolean] = js.undefined,
-    isStateful: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    outputArg: js.Array[IArgDef] = null,
-    summary: String = null
+    allowsUninitializedInput: js.UndefOr[Null | Boolean] = js.undefined,
+    attr: js.UndefOr[Null | js.Array[IAttrDef]] = js.undefined,
+    deprecation: js.UndefOr[Null | IOpDeprecation] = js.undefined,
+    description: js.UndefOr[Null | String] = js.undefined,
+    inputArg: js.UndefOr[Null | js.Array[IArgDef]] = js.undefined,
+    isAggregate: js.UndefOr[Null | Boolean] = js.undefined,
+    isCommutative: js.UndefOr[Null | Boolean] = js.undefined,
+    isStateful: js.UndefOr[Null | Boolean] = js.undefined,
+    name: js.UndefOr[Null | String] = js.undefined,
+    outputArg: js.UndefOr[Null | js.Array[IArgDef]] = js.undefined,
+    summary: js.UndefOr[Null | String] = js.undefined
   ): IOpDef = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowsUninitializedInput)) __obj.updateDynamic("allowsUninitializedInput")(allowsUninitializedInput.asInstanceOf[js.Any])
-    if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    if (deprecation != null) __obj.updateDynamic("deprecation")(deprecation.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (inputArg != null) __obj.updateDynamic("inputArg")(inputArg.asInstanceOf[js.Any])
+    if (!js.isUndefined(attr)) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecation)) __obj.updateDynamic("deprecation")(deprecation.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputArg)) __obj.updateDynamic("inputArg")(inputArg.asInstanceOf[js.Any])
     if (!js.isUndefined(isAggregate)) __obj.updateDynamic("isAggregate")(isAggregate.asInstanceOf[js.Any])
     if (!js.isUndefined(isCommutative)) __obj.updateDynamic("isCommutative")(isCommutative.asInstanceOf[js.Any])
     if (!js.isUndefined(isStateful)) __obj.updateDynamic("isStateful")(isStateful.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outputArg != null) __obj.updateDynamic("outputArg")(outputArg.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputArg)) __obj.updateDynamic("outputArg")(outputArg.asInstanceOf[js.Any])
+    if (!js.isUndefined(summary)) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpDef]
   }
 }

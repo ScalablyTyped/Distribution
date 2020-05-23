@@ -1,30 +1,22 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
-import typings.winrt.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
-@js.native
-class MobileBroadbandAccount () extends IMobileBroadbandAccount {
-  /* CompleteClass */
-  override var currentDeviceInformation: MobileBroadbandDeviceInformation = js.native
-  /* CompleteClass */
-  override var currentNetwork: MobileBroadbandNetwork = js.native
-  /* CompleteClass */
-  override var networkAccountId: String = js.native
-  /* CompleteClass */
-  override var serviceProviderGuid: String = js.native
-  /* CompleteClass */
-  override var serviceProviderName: String = js.native
-}
+trait MobileBroadbandAccount extends IMobileBroadbandAccount
 
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
-@js.native
-object MobileBroadbandAccount extends js.Object {
-  var availableNetworkAccountIds: IVectorView[String] = js.native
-  def createFromNetworkAccountId(networkAccountId: String): MobileBroadbandAccount = js.native
+object MobileBroadbandAccount {
+  @scala.inline
+  def apply(
+    currentDeviceInformation: MobileBroadbandDeviceInformation,
+    currentNetwork: MobileBroadbandNetwork,
+    networkAccountId: String,
+    serviceProviderGuid: String,
+    serviceProviderName: String
+  ): MobileBroadbandAccount = {
+    val __obj = js.Dynamic.literal(currentDeviceInformation = currentDeviceInformation.asInstanceOf[js.Any], currentNetwork = currentNetwork.asInstanceOf[js.Any], networkAccountId = networkAccountId.asInstanceOf[js.Any], serviceProviderGuid = serviceProviderGuid.asInstanceOf[js.Any], serviceProviderName = serviceProviderName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MobileBroadbandAccount]
+  }
 }
 

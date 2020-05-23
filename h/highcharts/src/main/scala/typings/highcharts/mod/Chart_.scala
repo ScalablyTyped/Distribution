@@ -1,7 +1,7 @@
 package typings.highcharts.mod
 
 import typings.highcharts.boostMod.highchartsAugmentingMod.Chart
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -322,6 +322,21 @@ class Chart_ protected () extends js.Object {
     */
   def dismissPopupContent(): Unit = js.native
   /**
+    * Generates a data URL of CSV for local download in the browser. This
+    * is the default action for a click on the 'Download CSV' button.
+    *
+    * See Highcharts.Chart#getCSV to get the CSV data itself.
+    */
+  def downloadCSV(): Unit = js.native
+  /**
+    * Generates a data URL of an XLS document for local download in the
+    * browser. This is the default action for a click on the 'Download XLS'
+    * button.
+    *
+    * See Highcharts.Chart#getTable to get the table data itself.
+    */
+  def downloadXLS(): Unit = js.native
+  /**
     * When the chart is drilled down to a child series, calling
     * `chart.drillUp()` will drill up to the parent series.
     */
@@ -631,7 +646,7 @@ class Chart_ protected () extends js.Object {
     *        internally as a response to window resize.
     */
   def reflow(): Unit = js.native
-  def reflow(e: Event_): Unit = js.native
+  def reflow(e: Event): Unit = js.native
   def removeAnnotation(idOrAnnotation: String): Unit = js.native
   /**
     * Remove an annotation from the chart.

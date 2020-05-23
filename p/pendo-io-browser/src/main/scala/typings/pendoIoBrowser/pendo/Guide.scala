@@ -1,7 +1,7 @@
 package typings.pendoIoBrowser.pendo
 
-import typings.pendoIoBrowser.AnonBadge
-import typings.pendoIoBrowser.AnonFilters
+import typings.pendoIoBrowser.anon.Badge
+import typings.pendoIoBrowser.anon.Filters
 import typings.pendoIoBrowser.pendoIoBrowserStrings.api
 import typings.pendoIoBrowser.pendoIoBrowserStrings.automatic
 import typings.pendoIoBrowser.pendoIoBrowserStrings.badge
@@ -16,10 +16,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Guide extends js.Object {
-  var attributes: AnonBadge
+  var attributes: Badge
   var audience: js.Array[_]
    // TODO
-  var audienceUiHint: AnonFilters
+  var audienceUiHint: Filters
   var createdAt: Double
   var createdByUser: User
   var id: String
@@ -41,9 +41,9 @@ trait Guide extends js.Object {
 object Guide {
   @scala.inline
   def apply(
-    attributes: AnonBadge,
+    attributes: Badge,
     audience: js.Array[_],
-    audienceUiHint: AnonFilters,
+    audienceUiHint: Filters,
     createdAt: Double,
     createdByUser: User,
     id: String,

@@ -35,6 +35,7 @@ package object coreMod {
   type ClassPrivateProperty = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.ClassPrivateProperty */ js.Any
   type ClassProperty = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.ClassProperty */ js.Any
   type ClassPropertyDefinition = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.ClassPropertyDefinition */ js.Any
+  type Collection = typings.jscodeshift.collectionMod.Collection[js.Any]
   type Comment = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.Comment */ js.Any
   type CommentBlock = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.CommentBlock */ js.Any
   type CommentLine = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.CommentLine */ js.Any

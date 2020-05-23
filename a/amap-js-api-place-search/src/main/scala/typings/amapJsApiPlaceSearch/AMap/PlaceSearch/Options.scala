@@ -75,14 +75,14 @@ object Options {
   @scala.inline
   def apply(
     autoFitView: js.UndefOr[Boolean] = js.undefined,
-    children: Int | Double = null,
+    children: js.UndefOr[Double] = js.undefined,
     city: String = null,
     citylimit: js.UndefOr[Boolean] = js.undefined,
     extensions: base | all = null,
     lang: Lang = null,
     map: Map = null,
-    pageIndex: Int | Double = null,
-    pageSize: Int | Double = null,
+    pageIndex: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined,
     panel: String | HTMLElement = null,
     rankBy: String = null,
     renderEngine: String = null,
@@ -91,20 +91,20 @@ object Options {
     `type`: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFitView)) __obj.updateDynamic("autoFitView")(autoFitView.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFitView)) __obj.updateDynamic("autoFitView")(autoFitView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.get.asInstanceOf[js.Any])
     if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (!js.isUndefined(citylimit)) __obj.updateDynamic("citylimit")(citylimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(citylimit)) __obj.updateDynamic("citylimit")(citylimit.get.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageIndex)) __obj.updateDynamic("pageIndex")(pageIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
     if (rankBy != null) __obj.updateDynamic("rankBy")(rankBy.asInstanceOf[js.Any])
     if (renderEngine != null) __obj.updateDynamic("renderEngine")(renderEngine.asInstanceOf[js.Any])
     if (renderStyle != null) __obj.updateDynamic("renderStyle")(renderStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCover)) __obj.updateDynamic("showCover")(showCover.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCover)) __obj.updateDynamic("showCover")(showCover.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

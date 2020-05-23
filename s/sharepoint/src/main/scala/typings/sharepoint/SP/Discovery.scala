@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,14 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object Discovery extends js.Object {
   @js.native
-  class Case protected () extends ClientObject {
-    def this(context: ClientRuntimeContext, web: Web) = this()
+  trait Case extends ClientObject {
     def getExportContent(sourceIds: js.Array[Double]): StringResult = js.native
   }
   
   @js.native
-  class Export protected () extends ClientObject {
-    def this(context: ClientRuntimeContext, item: ListItem[_]) = this()
+  trait Export extends ClientObject {
     def getExportContent(): StringResult = js.native
     def get_status(): ExportStatus = js.native
     def set_status(value: ExportStatus): ExportStatus = js.native
@@ -42,20 +39,6 @@ object Discovery extends js.Object {
      // : 1,
     @js.native
     sealed trait started extends ExportStatus
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ExportStatus with Double] = js.native
-    /* 2 */ @js.native
-    object complete extends TopLevel[complete with Double]
-    
-    /* 3 */ @js.native
-    object failed extends TopLevel[failed with Double]
-    
-    /* 0 */ @js.native
-    object notStarted extends TopLevel[notStarted with Double]
-    
-    /* 1 */ @js.native
-    object started extends TopLevel[started with Double]
     
   }
   

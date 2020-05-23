@@ -20,10 +20,10 @@ object UnparseArgsOptions {
     useEquals: js.UndefOr[Boolean] = js.undefined
   ): UnparseArgsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCamelCase)) __obj.updateDynamic("allowCamelCase")(allowCamelCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreFalse)) __obj.updateDynamic("ignoreFalse")(ignoreFalse.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDoubleQuotes)) __obj.updateDynamic("useDoubleQuotes")(useDoubleQuotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEquals)) __obj.updateDynamic("useEquals")(useEquals.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCamelCase)) __obj.updateDynamic("allowCamelCase")(allowCamelCase.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreFalse)) __obj.updateDynamic("ignoreFalse")(ignoreFalse.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDoubleQuotes)) __obj.updateDynamic("useDoubleQuotes")(useDoubleQuotes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEquals)) __obj.updateDynamic("useEquals")(useEquals.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnparseArgsOptions]
   }
 }

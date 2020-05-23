@@ -32,14 +32,14 @@ object ListSkillsRequest {
   @scala.inline
   def apply(
     EnablementType: EnablementTypeFilter = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[SkillListMaxResults] = js.undefined,
     NextToken: NextToken = null,
     SkillGroupArn: Arn = null,
     SkillType: SkillTypeFilter = null
   ): ListSkillsRequest = {
     val __obj = js.Dynamic.literal()
     if (EnablementType != null) __obj.updateDynamic("EnablementType")(EnablementType.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SkillGroupArn != null) __obj.updateDynamic("SkillGroupArn")(SkillGroupArn.asInstanceOf[js.Any])
     if (SkillType != null) __obj.updateDynamic("SkillType")(SkillType.asInstanceOf[js.Any])

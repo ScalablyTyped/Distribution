@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TlsValidationContextTrust extends js.Object {
   /**
-    * A reference to an object that represents a TLS validation context trust for an AWS Certicate Manager (ACM) certificate.
+    * A reference to an object that represents a TLS validation context trust for an AWS Certicate Manager (ACM)
+    certificate.
     */
   var acm: js.UndefOr[TlsValidationContextAcmTrust] = js.native
   /**

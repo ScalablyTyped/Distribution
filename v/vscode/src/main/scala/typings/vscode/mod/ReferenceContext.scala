@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait ReferenceContext extends js.Object {
   /**
-  		 * Include the declaration of the current symbol.
-  		 */
+    * Include the declaration of the current symbol.
+    */
   var includeDeclaration: Boolean
 }
 

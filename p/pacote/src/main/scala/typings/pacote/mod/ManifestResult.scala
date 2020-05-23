@@ -1,7 +1,7 @@
 package typings.pacote.mod
 
-import typings.pacote.AnonDirectory
-import typings.pacote.AnonEmail
+import typings.pacote.anon.Directory
+import typings.pacote.anon.Email
 import typings.pacote.pacoteBooleans.`false`
 import typings.std.Record
 import scala.scalajs.js
@@ -39,7 +39,7 @@ object ManifestResult {
     author: Person = null,
     bin: Record[String, String] = null,
     browser: String = null,
-    bugs: AnonEmail = null,
+    bugs: Email = null,
     bundledDependencies: `false` | js.Array[String] = null,
     config: Record[String, _] = null,
     contributors: js.Array[Person] = null,
@@ -62,7 +62,7 @@ object ManifestResult {
     publishConfig: Record[String, _] = null,
     readme: String = null,
     readmeFilename: String = null,
-    repository: AnonDirectory = null,
+    repository: Directory = null,
     scripts: Record[String, String] = null,
     users: Record[String, Boolean] = null
   ): ManifestResult = {

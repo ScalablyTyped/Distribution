@@ -78,7 +78,7 @@ object IDocumentCardPreviewImage {
     accentColor: String = null,
     componentRef: IRefObject[js.Object] = null,
     errorImageSrc: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     iconSrc: String = null,
     imageFit: ImageFit = null,
     linkProps: ILinkProps = null,
@@ -87,13 +87,13 @@ object IDocumentCardPreviewImage {
     previewIconProps: IIconProps = null,
     previewImageSrc: String = null,
     url: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): IDocumentCardPreviewImage = {
     val __obj = js.Dynamic.literal()
     if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (errorImageSrc != null) __obj.updateDynamic("errorImageSrc")(errorImageSrc.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (iconSrc != null) __obj.updateDynamic("iconSrc")(iconSrc.asInstanceOf[js.Any])
     if (imageFit != null) __obj.updateDynamic("imageFit")(imageFit.asInstanceOf[js.Any])
     if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps.asInstanceOf[js.Any])
@@ -102,7 +102,7 @@ object IDocumentCardPreviewImage {
     if (previewIconProps != null) __obj.updateDynamic("previewIconProps")(previewIconProps.asInstanceOf[js.Any])
     if (previewImageSrc != null) __obj.updateDynamic("previewImageSrc")(previewImageSrc.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardPreviewImage]
   }
 }

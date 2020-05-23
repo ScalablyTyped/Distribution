@@ -22,7 +22,7 @@ object NoticeWebProps {
   def apply(
     action: ReactElement = null,
     className: String = null,
-    icon: ReactElement = null,
+    icon: js.UndefOr[Null | ReactElement] = js.undefined,
     marqueeProps: MarqueeProps = null,
     mode: closable | link = null,
     onClick: () => Unit = null,
@@ -32,7 +32,7 @@ object NoticeWebProps {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (marqueeProps != null) __obj.updateDynamic("marqueeProps")(marqueeProps.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))

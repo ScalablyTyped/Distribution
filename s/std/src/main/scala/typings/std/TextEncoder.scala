@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +17,4 @@ trait TextEncoder extends TextEncoderCommon {
     */
   def encodeInto(source: java.lang.String, destination: Uint8Array): TextEncoderEncodeIntoResult = js.native
 }
-
-@JSGlobal("TextEncoder")
-@js.native
-object TextEncoder extends Instantiable0[TextEncoder]
 

@@ -27,12 +27,12 @@ object MaterialReporterOptions {
   def apply(
     autoOpen: js.UndefOr[Boolean] = js.undefined,
     expandSuites: js.UndefOr[Boolean] = js.undefined,
-    serverPort: Int | Double = null
+    serverPort: js.UndefOr[Double] = js.undefined
   ): MaterialReporterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandSuites)) __obj.updateDynamic("expandSuites")(expandSuites.asInstanceOf[js.Any])
-    if (serverPort != null) __obj.updateDynamic("serverPort")(serverPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandSuites)) __obj.updateDynamic("expandSuites")(expandSuites.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverPort)) __obj.updateDynamic("serverPort")(serverPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterialReporterOptions]
   }
 }

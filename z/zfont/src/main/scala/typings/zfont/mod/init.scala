@@ -1,6 +1,6 @@
 package typings.zfont.mod
 
-import typings.zfont.Typeofzdog
+import typings.zfont.anon.Typeofzdog
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

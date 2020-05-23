@@ -15,11 +15,15 @@ trait LicenseUnitsDetail extends js.Object {
 
 object LicenseUnitsDetail {
   @scala.inline
-  def apply(enabled: Int | Double = null, suspended: Int | Double = null, warning: Int | Double = null): LicenseUnitsDetail = {
+  def apply(
+    enabled: js.UndefOr[Double] = js.undefined,
+    suspended: js.UndefOr[Double] = js.undefined,
+    warning: js.UndefOr[Double] = js.undefined
+  ): LicenseUnitsDetail = {
     val __obj = js.Dynamic.literal()
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (suspended != null) __obj.updateDynamic("suspended")(suspended.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicenseUnitsDetail]
   }
 }

@@ -6,13 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a line of text that is displayed with a TimedTextCue . */
-@JSGlobal("Windows.Media.Core.TimedTextLine")
-@js.native
-/** Initializes a new instance of the TimedTextLine class. */
-class TimedTextLine () extends js.Object {
+trait TimedTextLine extends js.Object {
   /** Gets a list of TimedTextSubformat objects that provide formatting for substrings within the TimedTextLine . */
-  var subformats: IVector[TimedTextSubformat] = js.native
+  var subformats: IVector[TimedTextSubformat]
   /** Gets or sets the text content of the TimedTextLine . */
-  var text: String = js.native
+  var text: String
+}
+
+object TimedTextLine {
+  @scala.inline
+  def apply(subformats: IVector[TimedTextSubformat], text: String): TimedTextLine = {
+    val __obj = js.Dynamic.literal(subformats = subformats.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimedTextLine]
+  }
 }
 

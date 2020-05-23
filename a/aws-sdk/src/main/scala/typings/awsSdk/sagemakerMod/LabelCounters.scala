@@ -31,18 +31,18 @@ trait LabelCounters extends js.Object {
 object LabelCounters {
   @scala.inline
   def apply(
-    FailedNonRetryableError: Int | Double = null,
-    HumanLabeled: Int | Double = null,
-    MachineLabeled: Int | Double = null,
-    TotalLabeled: Int | Double = null,
-    Unlabeled: Int | Double = null
+    FailedNonRetryableError: js.UndefOr[LabelCounter] = js.undefined,
+    HumanLabeled: js.UndefOr[LabelCounter] = js.undefined,
+    MachineLabeled: js.UndefOr[LabelCounter] = js.undefined,
+    TotalLabeled: js.UndefOr[LabelCounter] = js.undefined,
+    Unlabeled: js.UndefOr[LabelCounter] = js.undefined
   ): LabelCounters = {
     val __obj = js.Dynamic.literal()
-    if (FailedNonRetryableError != null) __obj.updateDynamic("FailedNonRetryableError")(FailedNonRetryableError.asInstanceOf[js.Any])
-    if (HumanLabeled != null) __obj.updateDynamic("HumanLabeled")(HumanLabeled.asInstanceOf[js.Any])
-    if (MachineLabeled != null) __obj.updateDynamic("MachineLabeled")(MachineLabeled.asInstanceOf[js.Any])
-    if (TotalLabeled != null) __obj.updateDynamic("TotalLabeled")(TotalLabeled.asInstanceOf[js.Any])
-    if (Unlabeled != null) __obj.updateDynamic("Unlabeled")(Unlabeled.asInstanceOf[js.Any])
+    if (!js.isUndefined(FailedNonRetryableError)) __obj.updateDynamic("FailedNonRetryableError")(FailedNonRetryableError.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(HumanLabeled)) __obj.updateDynamic("HumanLabeled")(HumanLabeled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MachineLabeled)) __obj.updateDynamic("MachineLabeled")(MachineLabeled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalLabeled)) __obj.updateDynamic("TotalLabeled")(TotalLabeled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Unlabeled)) __obj.updateDynamic("Unlabeled")(Unlabeled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelCounters]
   }
 }

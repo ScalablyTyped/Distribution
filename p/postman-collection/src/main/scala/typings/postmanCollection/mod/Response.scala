@@ -1,15 +1,15 @@
 package typings.postmanCollection.mod
 
 import typings.node.Buffer
-import typings.postmanCollection.AnonBody
-import typings.postmanCollection.AnonCode
-import typings.postmanCollection.AnonFormat
+import typings.postmanCollection.anon.Body
+import typings.postmanCollection.anon.Code
+import typings.postmanCollection.anon.Format
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.ResponseDefinition because var conflicts: description, disabled, id, name. Inlined code, header, cookie, body, stream, responseTime, originalRequest */ @JSImport("postman-collection", "Response")
@@ -28,8 +28,8 @@ class Response protected () extends Property[ResponseDefinition] {
   var status: String = js.native
   var stream: js.UndefOr[Buffer | Uint8Array] = js.native
   def dataURI(): String = js.native
-  def details(): js.UndefOr[AnonCode] = js.native
-  def encoding(): AnonFormat = js.native
+  def details(): js.UndefOr[Code] = js.native
+  def encoding(): Format = js.native
   def json(): js.Any = js.native
   def json(reviver: js.Any): js.Any = js.native
   def json(reviver: js.Any, strict: Boolean): js.Any = js.native
@@ -43,7 +43,7 @@ class Response protected () extends Property[ResponseDefinition] {
 @JSImport("postman-collection", "Response")
 @js.native
 object Response extends js.Object {
-  def createFromNode(response: AnonBody, cookies: js.Array[CookieDefinition]): Response = js.native
+  def createFromNode(response: Body, cookies: js.Array[CookieDefinition]): Response = js.native
   def isResponse(obj: js.Any): Boolean = js.native
 }
 

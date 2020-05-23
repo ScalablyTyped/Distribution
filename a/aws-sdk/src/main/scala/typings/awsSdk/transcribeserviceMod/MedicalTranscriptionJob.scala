@@ -70,7 +70,7 @@ object MedicalTranscriptionJob {
     LanguageCode: LanguageCode = null,
     Media: Media = null,
     MediaFormat: MediaFormat = null,
-    MediaSampleRateHertz: Int | Double = null,
+    MediaSampleRateHertz: js.UndefOr[MediaSampleRateHertz] = js.undefined,
     MedicalTranscriptionJobName: TranscriptionJobName = null,
     Settings: MedicalTranscriptionSetting = null,
     Specialty: Specialty = null,
@@ -86,7 +86,7 @@ object MedicalTranscriptionJob {
     if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
     if (Media != null) __obj.updateDynamic("Media")(Media.asInstanceOf[js.Any])
     if (MediaFormat != null) __obj.updateDynamic("MediaFormat")(MediaFormat.asInstanceOf[js.Any])
-    if (MediaSampleRateHertz != null) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.asInstanceOf[js.Any])
+    if (!js.isUndefined(MediaSampleRateHertz)) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.get.asInstanceOf[js.Any])
     if (MedicalTranscriptionJobName != null) __obj.updateDynamic("MedicalTranscriptionJobName")(MedicalTranscriptionJobName.asInstanceOf[js.Any])
     if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
     if (Specialty != null) __obj.updateDynamic("Specialty")(Specialty.asInstanceOf[js.Any])

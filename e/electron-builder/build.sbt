@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "electron-builder"
-version := "22.5.1-ee875c"
-scalaVersion := "2.13.1"
+version := "22.6.1-583ab2"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "app-builder-lib" % "22.5.1-d53301",
-  "org.scalablytyped" %%% "builder-util" % "22.5.1-61e1f5",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.7.0-9bf6a1",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-202838",
-  "org.scalablytyped" %%% "electron-publish" % "22.5.1-16339f",
-  "org.scalablytyped" %%% "fs-extra" % "8.1-dt-20200218Z-851188",
-  "org.scalablytyped" %%% "lazy-val" % "1.0.4-7f9846",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470",
-  "org.scalablytyped" %%% "temp-file" % "3.3.7-f04091",
-  "org.scalablytyped" %%% "yargs" % "15.0-dt-20200225Z-5b0019",
-  "org.scalablytyped" %%% "yargs-parser" % "15.0-dt-20200113Z-06e513")
+  "org.scalablytyped" %%% "app-builder-lib" % "22.6.1-5cfa99",
+  "org.scalablytyped" %%% "builder-util" % "22.6.1-35892a",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.7.0-fce4a6",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-b4ce56",
+  "org.scalablytyped" %%% "electron-publish" % "22.6.1-fdb26a",
+  "org.scalablytyped" %%% "fs-extra" % "9.0-dt-20200519Z-ccebd9",
+  "org.scalablytyped" %%% "lazy-val" % "1.0.4-067d8b",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
+  "org.scalablytyped" %%% "temp-file" % "3.3.7-116d48",
+  "org.scalablytyped" %%% "yargs" % "15.0-dt-20200515Z-fe917d",
+  "org.scalablytyped" %%% "yargs-parser" % "15.0-dt-20200113Z-2f9616")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

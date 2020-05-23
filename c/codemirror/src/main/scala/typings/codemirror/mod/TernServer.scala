@@ -2,8 +2,7 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.codemirror.AnonChanged
-import typings.codemirror.AnonDoc
+import typings.codemirror.anon.Changed
 import typings.codemirror.codemirrorStrings.`type`
 import typings.codemirror.codemirrorStrings.completions
 import typings.codemirror.codemirrorStrings.definition
@@ -36,10 +35,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TernServer extends js.Object {
-  val docs: StringDictionary[AnonChanged] = js.native
+  val docs: StringDictionary[Changed] = js.native
   val options: TernOptions = js.native
   val server: Server = js.native
-  def addDoc(name: String, doc: Doc): AnonDoc = js.native
+  def addDoc(name: String, doc: Doc): typings.codemirror.anon.Doc = js.native
   def complete(cm: Doc): Unit = js.native
   def delDoc(id: String): Unit = js.native
   def delDoc(id: Doc): Unit = js.native

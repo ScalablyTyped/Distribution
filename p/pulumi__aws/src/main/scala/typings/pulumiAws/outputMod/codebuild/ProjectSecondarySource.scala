@@ -51,7 +51,7 @@ object ProjectSecondarySource {
     `type`: String,
     auths: js.Array[ProjectSecondarySourceAuth] = null,
     buildspec: String = null,
-    gitCloneDepth: Int | Double = null,
+    gitCloneDepth: js.UndefOr[Double] = js.undefined,
     gitSubmodulesConfig: ProjectSecondarySourceGitSubmodulesConfig = null,
     insecureSsl: js.UndefOr[Boolean] = js.undefined,
     location: String = null,
@@ -61,11 +61,11 @@ object ProjectSecondarySource {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (auths != null) __obj.updateDynamic("auths")(auths.asInstanceOf[js.Any])
     if (buildspec != null) __obj.updateDynamic("buildspec")(buildspec.asInstanceOf[js.Any])
-    if (gitCloneDepth != null) __obj.updateDynamic("gitCloneDepth")(gitCloneDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(gitCloneDepth)) __obj.updateDynamic("gitCloneDepth")(gitCloneDepth.get.asInstanceOf[js.Any])
     if (gitSubmodulesConfig != null) __obj.updateDynamic("gitSubmodulesConfig")(gitSubmodulesConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(insecureSsl)) __obj.updateDynamic("insecureSsl")(insecureSsl.asInstanceOf[js.Any])
+    if (!js.isUndefined(insecureSsl)) __obj.updateDynamic("insecureSsl")(insecureSsl.get.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportBuildStatus)) __obj.updateDynamic("reportBuildStatus")(reportBuildStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportBuildStatus)) __obj.updateDynamic("reportBuildStatus")(reportBuildStatus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSecondarySource]
   }
 }

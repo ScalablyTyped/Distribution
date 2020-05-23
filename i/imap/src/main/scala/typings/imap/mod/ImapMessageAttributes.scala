@@ -24,11 +24,11 @@ object ImapMessageAttributes {
     date: Date,
     flags: js.Array[String],
     uid: Double,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     struct: js.Array[_] = null
   ): ImapMessageAttributes = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (struct != null) __obj.updateDynamic("struct")(struct.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImapMessageAttributes]
   }

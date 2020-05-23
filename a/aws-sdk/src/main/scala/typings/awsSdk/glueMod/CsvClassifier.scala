@@ -52,26 +52,26 @@ object CsvClassifier {
   @scala.inline
   def apply(
     Name: NameString,
-    AllowSingleColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined,
     ContainsHeader: CsvHeaderOption = null,
     CreationTime: Timestamp = null,
     Delimiter: CsvColumnDelimiter = null,
-    DisableValueTrimming: js.UndefOr[scala.Boolean] = js.undefined,
+    DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined,
     Header: CsvHeader = null,
     LastUpdated: Timestamp = null,
     QuoteSymbol: CsvQuoteSymbol = null,
-    Version: Int | Double = null
+    Version: js.UndefOr[VersionId] = js.undefined
   ): CsvClassifier = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowSingleColumn)) __obj.updateDynamic("AllowSingleColumn")(AllowSingleColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowSingleColumn)) __obj.updateDynamic("AllowSingleColumn")(AllowSingleColumn.get.asInstanceOf[js.Any])
     if (ContainsHeader != null) __obj.updateDynamic("ContainsHeader")(ContainsHeader.asInstanceOf[js.Any])
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
     if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableValueTrimming)) __obj.updateDynamic("DisableValueTrimming")(DisableValueTrimming.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableValueTrimming)) __obj.updateDynamic("DisableValueTrimming")(DisableValueTrimming.get.asInstanceOf[js.Any])
     if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
     if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
     if (QuoteSymbol != null) __obj.updateDynamic("QuoteSymbol")(QuoteSymbol.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CsvClassifier]
   }
 }

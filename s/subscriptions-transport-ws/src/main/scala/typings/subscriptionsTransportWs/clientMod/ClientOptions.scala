@@ -20,20 +20,20 @@ object ClientOptions {
   def apply(
     connectionCallback: (/* error */ js.Array[Error], /* result */ js.UndefOr[js.Any]) => Unit = null,
     connectionParams: ConnectionParamsOptions = null,
-    inactivityTimeout: Int | Double = null,
+    inactivityTimeout: js.UndefOr[Double] = js.undefined,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
     reconnect: js.UndefOr[Boolean] = js.undefined,
-    reconnectionAttempts: Int | Double = null,
-    timeout: Int | Double = null
+    reconnectionAttempts: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
     if (connectionCallback != null) __obj.updateDynamic("connectionCallback")(js.Any.fromFunction2(connectionCallback))
     if (connectionParams != null) __obj.updateDynamic("connectionParams")(connectionParams.asInstanceOf[js.Any])
-    if (inactivityTimeout != null) __obj.updateDynamic("inactivityTimeout")(inactivityTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect.asInstanceOf[js.Any])
-    if (reconnectionAttempts != null) __obj.updateDynamic("reconnectionAttempts")(reconnectionAttempts.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(inactivityTimeout)) __obj.updateDynamic("inactivityTimeout")(inactivityTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectionAttempts)) __obj.updateDynamic("reconnectionAttempts")(reconnectionAttempts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

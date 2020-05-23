@@ -4,18 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Url")
-@js.native
-class Url[T] () extends js.Object {
-  def this(url: String) = this()
-  var hash: String = js.native
-  var host: String = js.native
-  var href: String = js.native
-  var pass: String = js.native
-  var path: String = js.native
-  var port: String = js.native
-  var protocol: String = js.native
-  var query: T = js.native
-  var user: String = js.native
+trait Url[T] extends js.Object {
+  var hash: String
+  var host: String
+  var href: String
+  var pass: String
+  var path: String
+  var port: String
+  var protocol: String
+  var query: T
+  var user: String
+}
+
+object Url {
+  @scala.inline
+  def apply[T](
+    hash: String,
+    host: String,
+    href: String,
+    pass: String,
+    path: String,
+    port: String,
+    protocol: String,
+    query: T,
+    user: String
+  ): Url[T] = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Url[T]]
+  }
 }
 

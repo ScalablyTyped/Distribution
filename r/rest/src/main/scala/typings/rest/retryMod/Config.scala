@@ -12,11 +12,15 @@ trait Config extends js.Object {
 
 object Config {
   @scala.inline
-  def apply(initial: Int | Double = null, max: Int | Double = null, multiplier: Int | Double = null): Config = {
+  def apply(
+    initial: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    multiplier: js.UndefOr[Double] = js.undefined
+  ): Config = {
     val __obj = js.Dynamic.literal()
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (multiplier != null) __obj.updateDynamic("multiplier")(multiplier.asInstanceOf[js.Any])
+    if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplier)) __obj.updateDynamic("multiplier")(multiplier.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

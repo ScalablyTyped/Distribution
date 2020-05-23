@@ -42,7 +42,7 @@ object TooltipSettings {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (associate != null) __obj.updateDynamic("associate")(associate.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBalloon)) __obj.updateDynamic("isBalloon")(isBalloon.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBalloon)) __obj.updateDynamic("isBalloon")(isBalloon.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])

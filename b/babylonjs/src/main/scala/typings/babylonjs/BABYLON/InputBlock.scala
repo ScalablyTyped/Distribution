@@ -4,18 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.InputBlock")
 @js.native
-class InputBlock protected () extends NodeMaterialBlock {
-  /**
-    * Creates a new InputBlock
-    * @param name defines the block name
-    * @param target defines the target of that block (Vertex by default)
-    * @param type defines the type of the input (can be set to NodeMaterialBlockConnectionPointTypes.AutoDetect)
-    */
-  def this(name: String) = this()
-  def this(name: String, target: NodeMaterialBlockTargets) = this()
-  def this(name: String, target: NodeMaterialBlockTargets, `type`: NodeMaterialBlockConnectionPointTypes) = this()
+trait InputBlock extends NodeMaterialBlock {
   var _animationType: js.Any = js.native
   var _associatedVariableName: js.Any = js.native
   var _emit: js.Any = js.native

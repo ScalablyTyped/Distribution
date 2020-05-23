@@ -1,7 +1,7 @@
 package typings.azdata.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.azdata.AnonDark
+import typings.azdata.anon.Dark
 import typings.vscode.mod.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ object ImageComponentProperties {
     enabled: js.UndefOr[Boolean] = js.undefined,
     height: Double | String = null,
     iconHeight: Double | String = null,
-    iconPath: String | Uri | AnonDark = null,
+    iconPath: String | Uri | Dark = null,
     iconWidth: Double | String = null,
     position: PositionType = null,
     width: Double | String = null
@@ -31,9 +31,9 @@ object ImageComponentProperties {
     if (CSSStyles != null) __obj.updateDynamic("CSSStyles")(CSSStyles.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.get.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (iconHeight != null) __obj.updateDynamic("iconHeight")(iconHeight.asInstanceOf[js.Any])
     if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])

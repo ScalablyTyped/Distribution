@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 trait IFlip extends IStyle {
   /** [Method] Returns the value of duration
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   @JSName("getDuration")
   var getDuration_IFlip: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Sets the value of duration
-  		* @param duration Number The new value.
-  		*/
+    * @param duration Number The new value.
+    */
   @JSName("setDuration")
   var setDuration_IFlip: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.undefined
 }
@@ -140,7 +140,7 @@ object IFlip {
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
     if (setOutAnimation != null) __obj.updateDynamic("setOutAnimation")(js.Any.fromFunction1(setOutAnimation))
     if (setReverse != null) __obj.updateDynamic("setReverse")(js.Any.fromFunction1(setReverse))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

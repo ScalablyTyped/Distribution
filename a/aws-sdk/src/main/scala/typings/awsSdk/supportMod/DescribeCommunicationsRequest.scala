@@ -34,13 +34,13 @@ object DescribeCommunicationsRequest {
     caseId: CaseId,
     afterTime: AfterTime = null,
     beforeTime: BeforeTime = null,
-    maxResults: Int | scala.Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: NextToken = null
   ): DescribeCommunicationsRequest = {
     val __obj = js.Dynamic.literal(caseId = caseId.asInstanceOf[js.Any])
     if (afterTime != null) __obj.updateDynamic("afterTime")(afterTime.asInstanceOf[js.Any])
     if (beforeTime != null) __obj.updateDynamic("beforeTime")(beforeTime.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCommunicationsRequest]
   }

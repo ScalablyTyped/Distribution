@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.Size")
 @js.native
-class Size protected () extends js.Object {
-  def this(width: Double, height: Double) = this()
+trait Size extends js.Object {
   var height: Double = js.native
   var width: Double = js.native
   def add(size: Size): Size = js.native

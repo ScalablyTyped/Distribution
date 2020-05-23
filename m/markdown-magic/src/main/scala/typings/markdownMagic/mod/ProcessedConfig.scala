@@ -25,7 +25,7 @@ object ProcessedConfig {
     transforms: StringDictionary[TransformFunction] = null
   ): ProcessedConfig = {
     val __obj = js.Dynamic.literal(originalPath = originalPath.asInstanceOf[js.Any], outputContent = outputContent.asInstanceOf[js.Any], outputDir = outputDir.asInstanceOf[js.Any], outputFilePath = outputFilePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(DEBUG)) __obj.updateDynamic("DEBUG")(DEBUG.asInstanceOf[js.Any])
+    if (!js.isUndefined(DEBUG)) __obj.updateDynamic("DEBUG")(DEBUG.get.asInstanceOf[js.Any])
     if (matchWord != null) __obj.updateDynamic("matchWord")(matchWord.asInstanceOf[js.Any])
     if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessedConfig]

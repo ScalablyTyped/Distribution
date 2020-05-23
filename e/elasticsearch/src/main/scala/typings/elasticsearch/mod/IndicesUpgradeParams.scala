@@ -21,10 +21,10 @@ object IndicesUpgradeParams {
     filterPath: String | js.Array[String] = null,
     ignore: Double | js.Array[Double] = null,
     ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
-    maxRetries: Int | Double = null,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     method: String = null,
     onlyAncientSegments: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: Int | Double = null,
+    requestTimeout: js.UndefOr[Double] = js.undefined,
     waitForCompletion: js.UndefOr[Boolean] = js.undefined
   ): IndicesUpgradeParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
@@ -32,12 +32,12 @@ object IndicesUpgradeParams {
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyAncientSegments)) __obj.updateDynamic("onlyAncientSegments")(onlyAncientSegments.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForCompletion)) __obj.updateDynamic("waitForCompletion")(waitForCompletion.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyAncientSegments)) __obj.updateDynamic("onlyAncientSegments")(onlyAncientSegments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForCompletion)) __obj.updateDynamic("waitForCompletion")(waitForCompletion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesUpgradeParams]
   }
 }

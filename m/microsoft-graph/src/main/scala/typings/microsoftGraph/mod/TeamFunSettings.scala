@@ -24,9 +24,9 @@ object TeamFunSettings {
     giphyContentRating: GiphyRatingType = null
   ): TeamFunSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCustomMemes)) __obj.updateDynamic("allowCustomMemes")(allowCustomMemes.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowGiphy)) __obj.updateDynamic("allowGiphy")(allowGiphy.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowStickersAndMemes)) __obj.updateDynamic("allowStickersAndMemes")(allowStickersAndMemes.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCustomMemes)) __obj.updateDynamic("allowCustomMemes")(allowCustomMemes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowGiphy)) __obj.updateDynamic("allowGiphy")(allowGiphy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowStickersAndMemes)) __obj.updateDynamic("allowStickersAndMemes")(allowStickersAndMemes.get.asInstanceOf[js.Any])
     if (giphyContentRating != null) __obj.updateDynamic("giphyContentRating")(giphyContentRating.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamFunSettings]
   }

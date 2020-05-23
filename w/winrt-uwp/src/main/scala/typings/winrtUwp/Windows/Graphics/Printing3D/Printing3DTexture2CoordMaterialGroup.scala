@@ -6,19 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a group of 2D texture materials used in the 3D model. */
-@JSGlobal("Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterialGroup")
-@js.native
-class Printing3DTexture2CoordMaterialGroup protected () extends js.Object {
-  /**
-    * Creates a instance of the Printing3DTexture2CoordMaterialGroup class.
-    * @param MaterialGroupId The identifier for a group of 2D texture materials used in the 3D model; a value greater than zero.
-    */
-  def this(MaterialGroupId: Double) = this()
+trait Printing3DTexture2CoordMaterialGroup extends js.Object {
   /** Gets the identifier (ID) of the 2D texture material group. */
-  var materialGroupId: Double = js.native
+  var materialGroupId: Double
   /** Gets or sets the texture of the material group. */
-  var texture: Printing3DModelTexture = js.native
+  var texture: Printing3DModelTexture
   /** Gets a group of 2D texture materials used in the 3D model. */
-  var texture2Coords: IVector[Printing3DTexture2CoordMaterial] = js.native
+  var texture2Coords: IVector[Printing3DTexture2CoordMaterial]
+}
+
+object Printing3DTexture2CoordMaterialGroup {
+  @scala.inline
+  def apply(
+    materialGroupId: Double,
+    texture: Printing3DModelTexture,
+    texture2Coords: IVector[Printing3DTexture2CoordMaterial]
+  ): Printing3DTexture2CoordMaterialGroup = {
+    val __obj = js.Dynamic.literal(materialGroupId = materialGroupId.asInstanceOf[js.Any], texture = texture.asInstanceOf[js.Any], texture2Coords = texture2Coords.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Printing3DTexture2CoordMaterialGroup]
+  }
 }
 

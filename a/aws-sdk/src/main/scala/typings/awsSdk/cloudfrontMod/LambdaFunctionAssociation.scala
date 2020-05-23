@@ -28,7 +28,7 @@ object LambdaFunctionAssociation {
     IncludeBody: js.UndefOr[Boolean] = js.undefined
   ): LambdaFunctionAssociation = {
     val __obj = js.Dynamic.literal(EventType = EventType.asInstanceOf[js.Any], LambdaFunctionARN = LambdaFunctionARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeBody)) __obj.updateDynamic("IncludeBody")(IncludeBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(IncludeBody)) __obj.updateDynamic("IncludeBody")(IncludeBody.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaFunctionAssociation]
   }
 }

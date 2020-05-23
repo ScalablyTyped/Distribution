@@ -12,9 +12,9 @@ trait ConsumerStats extends js.Object {
 
 object ConsumerStats {
   @scala.inline
-  def apply(backpressure: Double, id: Double, timeout: Int | Double = null): ConsumerStats = {
+  def apply(backpressure: Double, id: Double, timeout: js.UndefOr[Double] = js.undefined): ConsumerStats = {
     val __obj = js.Dynamic.literal(backpressure = backpressure.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumerStats]
   }
 }

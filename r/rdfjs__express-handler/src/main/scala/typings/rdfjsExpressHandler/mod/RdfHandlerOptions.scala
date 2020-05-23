@@ -3,7 +3,7 @@ package typings.rdfjsExpressHandler.mod
 import typings.rdfJs.mod.DatasetCore
 import typings.rdfJs.mod.DatasetCoreFactory
 import typings.rdfJs.mod.Quad
-import typings.rdfjsExpressHandler.AnonParsers
+import typings.rdfjsExpressHandler.anon.Parsers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait RdfHandlerOptions extends js.Object {
   var baseIriFromRequest: js.UndefOr[Boolean | BaseIriFromRequest] = js.undefined
   var defaultMediaType: js.UndefOr[String] = js.undefined
   var factory: js.UndefOr[DatasetCoreFactory[Quad, Quad, DatasetCore[Quad, Quad]]] = js.undefined
-  var formats: js.UndefOr[AnonParsers] = js.undefined
+  var formats: js.UndefOr[Parsers] = js.undefined
 }
 
 object RdfHandlerOptions {
@@ -21,7 +21,7 @@ object RdfHandlerOptions {
     baseIriFromRequest: Boolean | BaseIriFromRequest = null,
     defaultMediaType: String = null,
     factory: DatasetCoreFactory[Quad, Quad, DatasetCore[Quad, Quad]] = null,
-    formats: AnonParsers = null
+    formats: Parsers = null
   ): RdfHandlerOptions = {
     val __obj = js.Dynamic.literal()
     if (baseIriFromRequest != null) __obj.updateDynamic("baseIriFromRequest")(baseIriFromRequest.asInstanceOf[js.Any])

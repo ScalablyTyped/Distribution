@@ -32,18 +32,18 @@ object DefaultLayersOptions {
     lg: String = null,
     lg2: String = null,
     pois: js.UndefOr[Boolean] = js.undefined,
-    ppi: Int | Double = null,
+    ppi: js.UndefOr[Double] = js.undefined,
     style: String = null,
-    tileSize: Int | Double = null
+    tileSize: js.UndefOr[Double] = js.undefined
   ): DefaultLayersOptions = {
     val __obj = js.Dynamic.literal()
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
     if (lg2 != null) __obj.updateDynamic("lg2")(lg2.asInstanceOf[js.Any])
-    if (!js.isUndefined(pois)) __obj.updateDynamic("pois")(pois.asInstanceOf[js.Any])
-    if (ppi != null) __obj.updateDynamic("ppi")(ppi.asInstanceOf[js.Any])
+    if (!js.isUndefined(pois)) __obj.updateDynamic("pois")(pois.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ppi)) __obj.updateDynamic("ppi")(ppi.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultLayersOptions]
   }
 }

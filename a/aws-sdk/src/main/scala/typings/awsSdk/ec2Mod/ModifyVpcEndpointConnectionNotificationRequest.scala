@@ -30,12 +30,12 @@ object ModifyVpcEndpointConnectionNotificationRequest {
     ConnectionNotificationId: ConnectionNotificationId,
     ConnectionEvents: ValueStringList = null,
     ConnectionNotificationArn: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined
   ): ModifyVpcEndpointConnectionNotificationRequest = {
     val __obj = js.Dynamic.literal(ConnectionNotificationId = ConnectionNotificationId.asInstanceOf[js.Any])
     if (ConnectionEvents != null) __obj.updateDynamic("ConnectionEvents")(ConnectionEvents.asInstanceOf[js.Any])
     if (ConnectionNotificationArn != null) __obj.updateDynamic("ConnectionNotificationArn")(ConnectionNotificationArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcEndpointConnectionNotificationRequest]
   }
 }

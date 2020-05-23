@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type BaseType = typings.std.Element | typings.d3Selection.mod.EnterElement | typings.std.Document_ | typings.std.Window_ | scala.Null
+  type BaseType = typings.std.Element | typings.d3Selection.mod.EnterElement | typings.std.Document | typings.std.Window | scala.Null
   type ContainerElement = typings.std.HTMLElement | typings.std.SVGSVGElement | typings.std.SVGGElement
   type NamespaceMap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type SelectionFn = js.Function0[

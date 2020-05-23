@@ -23,7 +23,7 @@ object SaveSettingsOptions {
   def apply(asyncContext: js.Any = null, overwriteIfStale: js.UndefOr[Boolean] = js.undefined): SaveSettingsOptions = {
     val __obj = js.Dynamic.literal()
     if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteIfStale)) __obj.updateDynamic("overwriteIfStale")(overwriteIfStale.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwriteIfStale)) __obj.updateDynamic("overwriteIfStale")(overwriteIfStale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveSettingsOptions]
   }
 }

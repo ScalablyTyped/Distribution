@@ -19,7 +19,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object esfxTypeModelBooleans {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.esfxTypeModel.distMod.SameType because Already inherited
   - typings.esfxTypeModel.distMod.IsSubtypeOf because Already inherited */ @js.native
   sealed trait `false`
@@ -38,7 +38,7 @@ object esfxTypeModelBooleans {
        with _IsSubsetOf[js.Any, js.Any]
        with _OneRest[js.Any]
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.esfxTypeModel.distMod.SameType because Already inherited
   - typings.esfxTypeModel.distMod.IsSubtypeOf because Already inherited */ @js.native
   sealed trait `true`

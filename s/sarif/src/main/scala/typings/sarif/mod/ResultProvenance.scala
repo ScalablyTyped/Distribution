@@ -47,7 +47,7 @@ object ResultProvenance {
     conversionSources: js.Array[PhysicalLocation] = null,
     firstDetectionRunGuid: String = null,
     firstDetectionTimeUtc: String = null,
-    invocationIndex: Int | Double = null,
+    invocationIndex: js.UndefOr[Double] = js.undefined,
     lastDetectionRunGuid: String = null,
     lastDetectionTimeUtc: String = null,
     properties: PropertyBag = null
@@ -56,7 +56,7 @@ object ResultProvenance {
     if (conversionSources != null) __obj.updateDynamic("conversionSources")(conversionSources.asInstanceOf[js.Any])
     if (firstDetectionRunGuid != null) __obj.updateDynamic("firstDetectionRunGuid")(firstDetectionRunGuid.asInstanceOf[js.Any])
     if (firstDetectionTimeUtc != null) __obj.updateDynamic("firstDetectionTimeUtc")(firstDetectionTimeUtc.asInstanceOf[js.Any])
-    if (invocationIndex != null) __obj.updateDynamic("invocationIndex")(invocationIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(invocationIndex)) __obj.updateDynamic("invocationIndex")(invocationIndex.get.asInstanceOf[js.Any])
     if (lastDetectionRunGuid != null) __obj.updateDynamic("lastDetectionRunGuid")(lastDetectionRunGuid.asInstanceOf[js.Any])
     if (lastDetectionTimeUtc != null) __obj.updateDynamic("lastDetectionTimeUtc")(lastDetectionTimeUtc.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])

@@ -39,14 +39,14 @@ trait IWriteOptions extends js.Object {
 object IWriteOptions {
   @scala.inline
   def apply(
-    textRotation: Int | Double = null,
-    textShear: Int | Double = null,
+    textRotation: js.UndefOr[Double] = js.undefined,
+    textShear: js.UndefOr[Double] = js.undefined,
     xAlign: IXAlign = null,
     yAlign: IYAlign = null
   ): IWriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (textRotation != null) __obj.updateDynamic("textRotation")(textRotation.asInstanceOf[js.Any])
-    if (textShear != null) __obj.updateDynamic("textShear")(textShear.asInstanceOf[js.Any])
+    if (!js.isUndefined(textRotation)) __obj.updateDynamic("textRotation")(textRotation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textShear)) __obj.updateDynamic("textShear")(textShear.get.asInstanceOf[js.Any])
     if (xAlign != null) __obj.updateDynamic("xAlign")(xAlign.asInstanceOf[js.Any])
     if (yAlign != null) __obj.updateDynamic("yAlign")(yAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWriteOptions]

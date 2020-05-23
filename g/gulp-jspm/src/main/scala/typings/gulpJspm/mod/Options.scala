@@ -23,10 +23,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (arithmetic != null) __obj.updateDynamic("arithmetic")(arithmetic.asInstanceOf[js.Any])
-    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
+    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.get.asInstanceOf[js.Any])
     if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfExecutingBundle)) __obj.updateDynamic("selfExecutingBundle")(selfExecutingBundle.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfExecutingBundle)) __obj.updateDynamic("selfExecutingBundle")(selfExecutingBundle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

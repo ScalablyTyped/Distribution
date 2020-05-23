@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,26 +33,6 @@ object CFormatRule extends js.Object {
   ///To identify the specified text in the range of cells.
   @js.native
   sealed trait TextContains extends CFormatRule
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CFormatRule with Double] = js.native
-  /* 2 */ @js.native
-  object Between extends TopLevel[Between with Double]
-  
-  /* 5 */ @js.native
-  object DateOccurs extends TopLevel[DateOccurs with Double]
-  
-  /* 3 */ @js.native
-  object EqualTo extends TopLevel[EqualTo with Double]
-  
-  /* 0 */ @js.native
-  object GreaterThan extends TopLevel[GreaterThan with Double]
-  
-  /* 1 */ @js.native
-  object LessThan extends TopLevel[LessThan with Double]
-  
-  /* 4 */ @js.native
-  object TextContains extends TopLevel[TextContains with Double]
   
 }
 

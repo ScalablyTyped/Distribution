@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 
-import typings.instagramPrivateApi.AnonCount
+import typings.instagramPrivateApi.anon.Count
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait StoryQuiz extends StorySticker {
   var correct_answer: String
   var end_background_color: String
-  var options: js.Array[AnonCount]
+  var options: js.Array[Count]
   var question: String
   var start_background_color: String
   var text_color: String
@@ -22,7 +22,7 @@ object StoryQuiz {
     correct_answer: String,
     end_background_color: String,
     height: Double,
-    options: js.Array[AnonCount],
+    options: js.Array[Count],
     question: String,
     rotation: Double,
     start_background_color: String,

@@ -17,56 +17,56 @@ trait IField extends IBase {
   /** [Config Option] (Object) */
   var defaultValue: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of allowNull
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAllowNull: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of bubbleEvents
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getBubbleEvents: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of convert
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getConvert: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of dateFormat
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of decode
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getDecode: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of defaultValue
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getDefaultValue: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of encode
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getEncode: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of mapping
-  		* @returns String/Number
-  		*/
+    * @returns String/Number
+    */
   var getMapping: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of name
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of persist
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getPersist: js.UndefOr[js.Function0[Boolean]] = js.undefined
   /** [Method] Returns the value of sortDir
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getSortDir: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of sortType
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getSortType: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of type
-  		* @returns String/Object
-  		*/
+    * @returns String/Object
+    */
   var getType: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String/Number) */
   var mapping: js.UndefOr[js.Any] = js.undefined
@@ -75,56 +75,56 @@ trait IField extends IBase {
   /** [Config Option] (Boolean) */
   var persist: js.UndefOr[Boolean] = js.undefined
   /** [Method] Sets the value of allowNull
-  		* @param allowNull Boolean The new value.
-  		*/
+    * @param allowNull Boolean The new value.
+    */
   var setAllowNull: js.UndefOr[js.Function1[/* allowNull */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of bubbleEvents
-  		* @param bubbleEvents String The new value.
-  		*/
+    * @param bubbleEvents String The new value.
+    */
   var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of convert
-  		* @param convert Function The new value.
-  		*/
+    * @param convert Function The new value.
+    */
   var setConvert: js.UndefOr[js.Function1[/* convert */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of dateFormat
-  		* @param dateFormat String The new value.
-  		*/
+    * @param dateFormat String The new value.
+    */
   var setDateFormat: js.UndefOr[js.Function1[/* dateFormat */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of decode
-  		* @param decode Object The new value.
-  		*/
+    * @param decode Object The new value.
+    */
   var setDecode: js.UndefOr[js.Function1[/* decode */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of defaultValue
-  		* @param defaultValue Object The new value.
-  		*/
+    * @param defaultValue Object The new value.
+    */
   var setDefaultValue: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of encode
-  		* @param encode Object The new value.
-  		*/
+    * @param encode Object The new value.
+    */
   var setEncode: js.UndefOr[js.Function1[/* encode */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of mapping
-  		* @param mapping String/Number The new value.
-  		*/
+    * @param mapping String/Number The new value.
+    */
   var setMapping: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of name
-  		* @param name String The new value.
-  		*/
+    * @param name String The new value.
+    */
   var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of persist
-  		* @param persist Boolean The new value.
-  		*/
+    * @param persist Boolean The new value.
+    */
   var setPersist: js.UndefOr[js.Function1[/* persist */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the value of sortDir
-  		* @param sortDir String The new value.
-  		*/
+    * @param sortDir String The new value.
+    */
   var setSortDir: js.UndefOr[js.Function1[/* sortDir */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of sortType
-  		* @param sortType Function The new value.
-  		*/
+    * @param sortType Function The new value.
+    */
   var setSortType: js.UndefOr[js.Function1[/* sortType */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of type
-  		* @param type String/Object The new value.
-  		*/
+    * @param type String/Object The new value.
+    */
   var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
   var sortDir: js.UndefOr[String] = js.undefined
@@ -196,7 +196,7 @@ object IField {
   ): IField = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull.get.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
@@ -226,7 +226,7 @@ object IField {
     if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.get.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAllowNull != null) __obj.updateDynamic("setAllowNull")(js.Any.fromFunction1(setAllowNull))
@@ -242,12 +242,12 @@ object IField {
     if (setSortDir != null) __obj.updateDynamic("setSortDir")(js.Any.fromFunction1(setSortDir))
     if (setSortType != null) __obj.updateDynamic("setSortType")(js.Any.fromFunction1(setSortType))
     if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (sortDir != null) __obj.updateDynamic("sortDir")(sortDir.asInstanceOf[js.Any])
     if (sortType != null) __obj.updateDynamic("sortType")(sortType.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNull)) __obj.updateDynamic("useNull")(useNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNull)) __obj.updateDynamic("useNull")(useNull.get.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }

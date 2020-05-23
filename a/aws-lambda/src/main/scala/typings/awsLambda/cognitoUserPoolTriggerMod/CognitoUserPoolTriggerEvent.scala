@@ -1,8 +1,8 @@
 package typings.awsLambda.cognitoUserPoolTriggerMod
 
-import typings.awsLambda.AnonAnswerCorrect
-import typings.awsLambda.AnonAwsSdkVersion
-import typings.awsLambda.AnonChallengeAnswer
+import typings.awsLambda.anon.AnswerCorrect
+import typings.awsLambda.anon.AwsSdkVersion
+import typings.awsLambda.anon.ChallengeAnswer
 import typings.awsLambda.awsLambdaStrings.CreateAuthChallenge_Authentication
 import typings.awsLambda.awsLambdaStrings.CustomMessage_AdminCreateUser
 import typings.awsLambda.awsLambdaStrings.CustomMessage_Authentication
@@ -32,10 +32,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CognitoUserPoolTriggerEvent extends js.Object {
-  var callerContext: AnonAwsSdkVersion
+  var callerContext: AwsSdkVersion
   var region: String
-  var request: AnonChallengeAnswer
-  var response: AnonAnswerCorrect
+  var request: ChallengeAnswer
+  var response: AnswerCorrect
   var triggerSource: PreSignUp_SignUp | PreSignUp_ExternalProvider | PostConfirmation_ConfirmSignUp | PreAuthentication_Authentication | PostAuthentication_Authentication | CustomMessage_SignUp | CustomMessage_AdminCreateUser | CustomMessage_ResendCode | CustomMessage_ForgotPassword | CustomMessage_UpdateUserAttribute | CustomMessage_VerifyUserAttribute | CustomMessage_Authentication | DefineAuthChallenge_Authentication | CreateAuthChallenge_Authentication | VerifyAuthChallengeResponse_Authentication | PreSignUp_AdminCreateUser | PostConfirmation_ConfirmForgotPassword | TokenGeneration_HostedAuth | TokenGeneration_Authentication | TokenGeneration_NewPasswordChallenge | TokenGeneration_AuthenticateDevice | TokenGeneration_RefreshTokens | UserMigration_Authentication | UserMigration_ForgotPassword
   var userName: js.UndefOr[String] = js.undefined
   var userPoolId: String
@@ -45,10 +45,10 @@ trait CognitoUserPoolTriggerEvent extends js.Object {
 object CognitoUserPoolTriggerEvent {
   @scala.inline
   def apply(
-    callerContext: AnonAwsSdkVersion,
+    callerContext: AwsSdkVersion,
     region: String,
-    request: AnonChallengeAnswer,
-    response: AnonAnswerCorrect,
+    request: ChallengeAnswer,
+    response: AnswerCorrect,
     triggerSource: PreSignUp_SignUp | PreSignUp_ExternalProvider | PostConfirmation_ConfirmSignUp | PreAuthentication_Authentication | PostAuthentication_Authentication | CustomMessage_SignUp | CustomMessage_AdminCreateUser | CustomMessage_ResendCode | CustomMessage_ForgotPassword | CustomMessage_UpdateUserAttribute | CustomMessage_VerifyUserAttribute | CustomMessage_Authentication | DefineAuthChallenge_Authentication | CreateAuthChallenge_Authentication | VerifyAuthChallengeResponse_Authentication | PreSignUp_AdminCreateUser | PostConfirmation_ConfirmForgotPassword | TokenGeneration_HostedAuth | TokenGeneration_Authentication | TokenGeneration_NewPasswordChallenge | TokenGeneration_AuthenticateDevice | TokenGeneration_RefreshTokens | UserMigration_Authentication | UserMigration_ForgotPassword,
     userPoolId: String,
     version: Double,

@@ -30,10 +30,10 @@ object StartActivityStreamRequest {
     KmsKeyId: String,
     Mode: ActivityStreamMode,
     ResourceArn: String,
-    ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined
+    ApplyImmediately: js.UndefOr[BooleanOptional] = js.undefined
   ): StartActivityStreamRequest = {
     val __obj = js.Dynamic.literal(KmsKeyId = KmsKeyId.asInstanceOf[js.Any], Mode = Mode.asInstanceOf[js.Any], ResourceArn = ResourceArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.asInstanceOf[js.Any])
+    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartActivityStreamRequest]
   }
 }

@@ -12,10 +12,14 @@ trait JQueryRowGridJSOptions extends js.Object {
 
 object JQueryRowGridJSOptions {
   @scala.inline
-  def apply(itemSelector: String, maxMargin: Int | Double = null, minMargin: Int | Double = null): JQueryRowGridJSOptions = {
+  def apply(
+    itemSelector: String,
+    maxMargin: js.UndefOr[Double] = js.undefined,
+    minMargin: js.UndefOr[Double] = js.undefined
+  ): JQueryRowGridJSOptions = {
     val __obj = js.Dynamic.literal(itemSelector = itemSelector.asInstanceOf[js.Any])
-    if (maxMargin != null) __obj.updateDynamic("maxMargin")(maxMargin.asInstanceOf[js.Any])
-    if (minMargin != null) __obj.updateDynamic("minMargin")(minMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMargin)) __obj.updateDynamic("maxMargin")(maxMargin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minMargin)) __obj.updateDynamic("minMargin")(minMargin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryRowGridJSOptions]
   }
 }

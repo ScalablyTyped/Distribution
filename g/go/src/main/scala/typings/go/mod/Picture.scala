@@ -1,6 +1,6 @@
 package typings.go.mod
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ class Picture () extends GraphObject {
   /**Gets or sets the rectangular area of the source image that this picture should display.*/
   var sourceRect: Rect = js.native
   /**Gets or sets the function to call if an image fails to load.*/
-  def errorFunction(pic: Picture, e: Event_): Unit = js.native
+  def errorFunction(pic: Picture, e: Event): Unit = js.native
   /**Gets or sets a function that returns a value for image.crossOrigin, which is null by default.*/
   def sourceCrossOrigin(pic: Picture): String = js.native
 }

@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ sealed trait ProjectProjectFields extends js.Object
   * Specifies the project fields that are available as a parameter for the {@link Office.Document | Document}.getProjectFieldAsync method.
   *
   * @remarks
-  * 
+  *
   * A ProjectProjectFields constant can be used as a parameter of the {@link Office.Document | Document}.getProjectFieldAsync method.
   */
 @JSGlobal("Office.ProjectProjectFields")
@@ -31,7 +30,7 @@ object ProjectProjectFields extends js.Object {
   sealed trait CurrencySymbol extends ProjectProjectFields
   
   /**
-    * The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value with no space (0$) = 1; 
+    * The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value with no space (0$) = 1;
     * Before the value with a space ($ 0) = 2; After the value with a space (0 $) = 3.
     */
   @js.native
@@ -93,47 +92,6 @@ object ProjectProjectFields extends js.Object {
     */
   @js.native
   sealed trait WorkUnits extends ProjectProjectFields
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProjectProjectFields with Double] = js.native
-  /* 0 */ @js.native
-  object CurrencyDigits extends TopLevel[CurrencyDigits with Double]
-  
-  /* 1 */ @js.native
-  object CurrencySymbol extends TopLevel[CurrencySymbol with Double]
-  
-  /* 2 */ @js.native
-  object CurrencySymbolPosition extends TopLevel[CurrencySymbolPosition with Double]
-  
-  /* 3 */ @js.native
-  object DurationUnits extends TopLevel[DurationUnits with Double]
-  
-  /* 5 */ @js.native
-  object Finish extends TopLevel[Finish with Double]
-  
-  /* 4 */ @js.native
-  object GUID extends TopLevel[GUID with Double]
-  
-  /* 10 */ @js.native
-  object ProjectServerUrl extends TopLevel[ProjectServerUrl with Double]
-  
-  /* 7 */ @js.native
-  object ReadOnly extends TopLevel[ReadOnly with Double]
-  
-  /* 6 */ @js.native
-  object Start extends TopLevel[Start with Double]
-  
-  /* 8 */ @js.native
-  object VERSION extends TopLevel[VERSION with Double]
-  
-  /* 12 */ @js.native
-  object WSSList extends TopLevel[WSSList with Double]
-  
-  /* 11 */ @js.native
-  object WSSUrl extends TopLevel[WSSUrl with Double]
-  
-  /* 9 */ @js.native
-  object WorkUnits extends TopLevel[WorkUnits with Double]
   
 }
 

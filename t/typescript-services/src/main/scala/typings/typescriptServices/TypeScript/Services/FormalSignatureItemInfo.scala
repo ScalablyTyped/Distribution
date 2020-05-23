@@ -4,12 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.FormalSignatureItemInfo")
-@js.native
-class FormalSignatureItemInfo () extends js.Object {
-  var docComment: String = js.native
-  var parameters: js.Array[FormalParameterInfo] = js.native
-  var signatureInfo: String = js.native
-  var typeParameters: js.Array[FormalTypeParameterInfo] = js.native
+trait FormalSignatureItemInfo extends js.Object {
+  var docComment: String
+  var parameters: js.Array[FormalParameterInfo]
+  var signatureInfo: String
+  var typeParameters: js.Array[FormalTypeParameterInfo]
+}
+
+object FormalSignatureItemInfo {
+  @scala.inline
+  def apply(
+    docComment: String,
+    parameters: js.Array[FormalParameterInfo],
+    signatureInfo: String,
+    typeParameters: js.Array[FormalTypeParameterInfo]
+  ): FormalSignatureItemInfo = {
+    val __obj = js.Dynamic.literal(docComment = docComment.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], signatureInfo = signatureInfo.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormalSignatureItemInfo]
+  }
 }
 

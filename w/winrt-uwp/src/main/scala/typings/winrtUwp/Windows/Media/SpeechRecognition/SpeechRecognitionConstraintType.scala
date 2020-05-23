@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object SpeechRecognitionConstraintType extends js.Object {
   /** A constraint based on a VCD file. See SpeechRecognitionVoiceCommandDefinitionConstraint . */
   @js.native
   sealed trait voiceCommandDefinition extends SpeechRecognitionConstraintType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SpeechRecognitionConstraintType with Double] = js.native
-  /* 2 */ @js.native
-  object grammar extends TopLevel[grammar with Double]
-  
-  /* 1 */ @js.native
-  object list extends TopLevel[list with Double]
-  
-  /* 0 */ @js.native
-  object topic extends TopLevel[topic with Double]
-  
-  /* 3 */ @js.native
-  object voiceCommandDefinition extends TopLevel[voiceCommandDefinition with Double]
   
 }
 

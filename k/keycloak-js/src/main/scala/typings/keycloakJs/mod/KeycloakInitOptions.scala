@@ -93,7 +93,7 @@ object KeycloakInitOptions {
   def apply(
     adapter: KeycloakAdapterName = null,
     checkLoginIframe: js.UndefOr[Boolean] = js.undefined,
-    checkLoginIframeInterval: Int | Double = null,
+    checkLoginIframeInterval: js.UndefOr[Double] = js.undefined,
     enableLogging: js.UndefOr[Boolean] = js.undefined,
     flow: KeycloakFlow = null,
     idToken: String = null,
@@ -103,15 +103,15 @@ object KeycloakInitOptions {
     refreshToken: String = null,
     responseMode: KeycloakResponseMode = null,
     silentCheckSsoRedirectUri: String = null,
-    timeSkew: Int | Double = null,
+    timeSkew: js.UndefOr[Double] = js.undefined,
     token: String = null,
     useNonce: js.UndefOr[Boolean] = js.undefined
   ): KeycloakInitOptions = {
     val __obj = js.Dynamic.literal()
     if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkLoginIframe)) __obj.updateDynamic("checkLoginIframe")(checkLoginIframe.asInstanceOf[js.Any])
-    if (checkLoginIframeInterval != null) __obj.updateDynamic("checkLoginIframeInterval")(checkLoginIframeInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkLoginIframe)) __obj.updateDynamic("checkLoginIframe")(checkLoginIframe.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkLoginIframeInterval)) __obj.updateDynamic("checkLoginIframeInterval")(checkLoginIframeInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.get.asInstanceOf[js.Any])
     if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
     if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
     if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
@@ -120,9 +120,9 @@ object KeycloakInitOptions {
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
     if (silentCheckSsoRedirectUri != null) __obj.updateDynamic("silentCheckSsoRedirectUri")(silentCheckSsoRedirectUri.asInstanceOf[js.Any])
-    if (timeSkew != null) __obj.updateDynamic("timeSkew")(timeSkew.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeSkew)) __obj.updateDynamic("timeSkew")(timeSkew.get.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNonce)) __obj.updateDynamic("useNonce")(useNonce.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNonce)) __obj.updateDynamic("useNonce")(useNonce.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeycloakInitOptions]
   }
 }

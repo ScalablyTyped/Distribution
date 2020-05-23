@@ -1,6 +1,6 @@
 package typings.hapiJoi.mod
 
-import typings.hapiJoi.AnonGlobal
+import typings.hapiJoi.anon.Global
 import typings.hapiJoi.hapiJoiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,25 +38,25 @@ trait ReferenceOptions extends HierarchySeparatorOptions {
   /**
     * overrides default prefix characters.
     */
-  var prefix: js.UndefOr[AnonGlobal] = js.undefined
+  var prefix: js.UndefOr[Global] = js.undefined
 }
 
 object ReferenceOptions {
   @scala.inline
   def apply(
     adjust: /* value */ js.Any => _ = null,
-    ancestor: Int | Double = null,
+    ancestor: js.UndefOr[Double] = js.undefined,
     in: js.UndefOr[Boolean] = js.undefined,
     iterables: js.UndefOr[Boolean] = js.undefined,
     map: js.Array[js.Tuple2[_, _]] = null,
-    prefix: AnonGlobal = null,
+    prefix: Global = null,
     separator: String | `false` = null
   ): ReferenceOptions = {
     val __obj = js.Dynamic.literal()
     if (adjust != null) __obj.updateDynamic("adjust")(js.Any.fromFunction1(adjust))
-    if (ancestor != null) __obj.updateDynamic("ancestor")(ancestor.asInstanceOf[js.Any])
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (!js.isUndefined(iterables)) __obj.updateDynamic("iterables")(iterables.asInstanceOf[js.Any])
+    if (!js.isUndefined(ancestor)) __obj.updateDynamic("ancestor")(ancestor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterables)) __obj.updateDynamic("iterables")(iterables.get.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])

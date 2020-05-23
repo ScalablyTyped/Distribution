@@ -26,24 +26,24 @@ trait DeviceGeoLocation extends js.Object {
 object DeviceGeoLocation {
   @scala.inline
   def apply(
-    altitude: Int | Double = null,
-    heading: Int | Double = null,
-    horizontalAccuracy: Int | Double = null,
+    altitude: js.UndefOr[Double] = js.undefined,
+    heading: js.UndefOr[Double] = js.undefined,
+    horizontalAccuracy: js.UndefOr[Double] = js.undefined,
     lastCollectedDateTime: String = null,
-    latitude: Int | Double = null,
-    longitude: Int | Double = null,
-    speed: Int | Double = null,
-    verticalAccuracy: Int | Double = null
+    latitude: js.UndefOr[Double] = js.undefined,
+    longitude: js.UndefOr[Double] = js.undefined,
+    speed: js.UndefOr[Double] = js.undefined,
+    verticalAccuracy: js.UndefOr[Double] = js.undefined
   ): DeviceGeoLocation = {
     val __obj = js.Dynamic.literal()
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (horizontalAccuracy != null) __obj.updateDynamic("horizontalAccuracy")(horizontalAccuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalAccuracy)) __obj.updateDynamic("horizontalAccuracy")(horizontalAccuracy.get.asInstanceOf[js.Any])
     if (lastCollectedDateTime != null) __obj.updateDynamic("lastCollectedDateTime")(lastCollectedDateTime.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (verticalAccuracy != null) __obj.updateDynamic("verticalAccuracy")(verticalAccuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalAccuracy)) __obj.updateDynamic("verticalAccuracy")(verticalAccuracy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceGeoLocation]
   }
 }

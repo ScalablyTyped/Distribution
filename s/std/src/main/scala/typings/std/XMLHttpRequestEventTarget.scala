@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.abort
 import typings.std.stdStrings.error
 import typings.std.stdStrings.load
@@ -260,8 +259,4 @@ trait XMLHttpRequestEventTarget extends EventTarget {
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("XMLHttpRequestEventTarget")
-@js.native
-object XMLHttpRequestEventTarget extends Instantiable0[XMLHttpRequestEventTarget]
 

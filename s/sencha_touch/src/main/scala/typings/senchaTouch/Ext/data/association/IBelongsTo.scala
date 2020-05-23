@@ -11,38 +11,38 @@ trait IBelongsTo extends IAssociation {
   /** [Config Option] (String) */
   var foreignKey: js.UndefOr[String] = js.undefined
   /** [Method] Returns the value of foreignKey
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getForeignKey: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of getterName
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getGetterName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Returns the value of instanceName
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getInstanceName: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of setterName
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getSetterName: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Config Option] (String) */
   var getterName: js.UndefOr[String] = js.undefined
   /** [Method] Sets the value of foreignKey
-  		* @param foreignKey String The new value.
-  		*/
+    * @param foreignKey String The new value.
+    */
   var setForeignKey: js.UndefOr[js.Function1[/* foreignKey */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of getterName
-  		* @param getterName String The new value.
-  		*/
+    * @param getterName String The new value.
+    */
   var setGetterName: js.UndefOr[js.Function1[/* getterName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Sets the value of instanceName
-  		* @param instanceName Object The new value.
-  		*/
+    * @param instanceName Object The new value.
+    */
   var setInstanceName: js.UndefOr[js.Function1[/* instanceName */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the value of setterName
-  		* @param setterName String The new value.
-  		*/
+    * @param setterName String The new value.
+    */
   var setSetterName: js.UndefOr[js.Function1[/* setterName */ js.UndefOr[String], Unit]] = js.undefined
   /** [Config Option] (String) */
   var setterName: js.UndefOr[String] = js.undefined
@@ -155,7 +155,7 @@ object IBelongsTo {
     if (setSetterName != null) __obj.updateDynamic("setSetterName")(js.Any.fromFunction1(setSetterName))
     if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
     if (setterName != null) __obj.updateDynamic("setterName")(setterName.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

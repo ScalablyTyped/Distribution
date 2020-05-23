@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Shell Folder Item */
-@JSGlobal("Shell32.ShellFolderItem")
 @js.native
-class ShellFolderItem protected () extends js.Object {
+trait ShellFolderItem extends js.Object {
   /** Get Application object */
   val Application: js.Any = js.native
   /** If item is a folder return folder object */

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`class-breaks`
 import typings.arcgisJsApi.arcgisJsApiStrings.`dot-density`
 import typings.arcgisJsApi.arcgisJsApiStrings.`unique-value`
@@ -27,8 +26,4 @@ trait Renderer
     */
   val `type`: `class-breaks` | dictionary | `dot-density` | typings.arcgisJsApi.arcgisJsApiStrings.heatmap | simple | `unique-value` = js.native
 }
-
-@JSGlobal("__esri.Renderer")
-@js.native
-object Renderer extends TopLevel[RendererConstructor]
 

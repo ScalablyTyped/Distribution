@@ -18,9 +18,9 @@ object ValidationOptions {
     `no-root-files-node-modules-nameclash`: js.UndefOr[Boolean] = js.undefined
   ): ValidationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`loader-enforce-include-or-exclude`)) __obj.updateDynamic("loader-enforce-include-or-exclude")(`loader-enforce-include-or-exclude`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`loader-prefer-include`)) __obj.updateDynamic("loader-prefer-include")(`loader-prefer-include`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`no-root-files-node-modules-nameclash`)) __obj.updateDynamic("no-root-files-node-modules-nameclash")(`no-root-files-node-modules-nameclash`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`loader-enforce-include-or-exclude`)) __obj.updateDynamic("loader-enforce-include-or-exclude")(`loader-enforce-include-or-exclude`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`loader-prefer-include`)) __obj.updateDynamic("loader-prefer-include")(`loader-prefer-include`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`no-root-files-node-modules-nameclash`)) __obj.updateDynamic("no-root-files-node-modules-nameclash")(`no-root-files-node-modules-nameclash`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptions]
   }
 }

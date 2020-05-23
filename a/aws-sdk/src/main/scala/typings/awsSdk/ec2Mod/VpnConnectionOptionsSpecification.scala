@@ -23,13 +23,13 @@ trait VpnConnectionOptionsSpecification extends js.Object {
 object VpnConnectionOptionsSpecification {
   @scala.inline
   def apply(
-    EnableAcceleration: js.UndefOr[scala.Boolean] = js.undefined,
-    StaticRoutesOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableAcceleration: js.UndefOr[Boolean] = js.undefined,
+    StaticRoutesOnly: js.UndefOr[Boolean] = js.undefined,
     TunnelOptions: VpnTunnelOptionsSpecificationsList = null
   ): VpnConnectionOptionsSpecification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnableAcceleration)) __obj.updateDynamic("EnableAcceleration")(EnableAcceleration.asInstanceOf[js.Any])
-    if (!js.isUndefined(StaticRoutesOnly)) __obj.updateDynamic("StaticRoutesOnly")(StaticRoutesOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableAcceleration)) __obj.updateDynamic("EnableAcceleration")(EnableAcceleration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(StaticRoutesOnly)) __obj.updateDynamic("StaticRoutesOnly")(StaticRoutesOnly.get.asInstanceOf[js.Any])
     if (TunnelOptions != null) __obj.updateDynamic("TunnelOptions")(TunnelOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpnConnectionOptionsSpecification]
   }

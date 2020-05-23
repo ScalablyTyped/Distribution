@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 trait IPath extends IBase {
   /** [Method] Create an circular arc
-  		* @param x Number
-  		* @param y Number
-  		* @param radius Number
-  		* @param startAngle Number
-  		* @param endAngle Number
-  		* @param anticlockwise Number
-  		*/
+    * @param x Number
+    * @param y Number
+    * @param radius Number
+    * @param startAngle Number
+    * @param endAngle Number
+    * @param anticlockwise Number
+    */
   var arc: js.UndefOr[
     js.Function6[
       /* x */ js.UndefOr[Double], 
@@ -28,14 +28,14 @@ trait IPath extends IBase {
     ]
   ] = js.undefined
   /** [Method] http  www w3 org TR SVG implnote html ArcImplementationNotes
-  		* @param rx Number
-  		* @param ry Number
-  		* @param rotation Number Differ from svg spec, this is radian.
-  		* @param fA Number
-  		* @param fS Number
-  		* @param x2 Number
-  		* @param y2 Number
-  		*/
+    * @param rx Number
+    * @param ry Number
+    * @param rotation Number Differ from svg spec, this is radian.
+    * @param fA Number
+    * @param fS Number
+    * @param x2 Number
+    * @param y2 Number
+    */
   var arcSvg: js.UndefOr[
     js.Function7[
       /* rx */ js.UndefOr[Double], 
@@ -49,14 +49,14 @@ trait IPath extends IBase {
     ]
   ] = js.undefined
   /** [Method] Create a elliptic arc curve compatible with SVG s arc to instruction
-  		* @param x1 Number
-  		* @param y1 Number
-  		* @param x2 Number
-  		* @param y2 Number
-  		* @param rx Number
-  		* @param ry Number
-  		* @param rotation Number
-  		*/
+    * @param x1 Number
+    * @param y1 Number
+    * @param x2 Number
+    * @param y2 Number
+    * @param rx Number
+    * @param ry Number
+    * @param rotation Number
+    */
   var arcTo: js.UndefOr[
     js.Function7[
       /* x1 */ js.UndefOr[Double], 
@@ -70,13 +70,13 @@ trait IPath extends IBase {
     ]
   ] = js.undefined
   /** [Method] A cubic bezier curve to a position
-  		* @param cx1 Number
-  		* @param cy1 Number
-  		* @param cx2 Number
-  		* @param cy2 Number
-  		* @param x Number
-  		* @param y Number
-  		*/
+    * @param cx1 Number
+    * @param cy1 Number
+    * @param cx2 Number
+    * @param cy2 Number
+    * @param x Number
+    * @param y Number
+    */
   var bezierCurveTo: js.UndefOr[
     js.Function6[
       /* cx1 */ js.UndefOr[Double], 
@@ -91,22 +91,22 @@ trait IPath extends IBase {
   /** [Method] Clear the path  */
   var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Clone this path
-  		* @returns Ext.draw.Path
-  		*/
+    * @returns Ext.draw.Path
+    */
   @JSName("clone")
   var clone_FIPath: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Method] Close this path with a straight line  */
   var closePath: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Create an elliptic arc
-  		* @param cx Number
-  		* @param cy Number
-  		* @param radiusX Number
-  		* @param radiusY Number
-  		* @param rotation Number
-  		* @param startAngle Number
-  		* @param endAngle Number
-  		* @param anticlockwise Number
-  		*/
+    * @param cx Number
+    * @param cy Number
+    * @param radiusX Number
+    * @param radiusY Number
+    * @param rotation Number
+    * @param startAngle Number
+    * @param endAngle Number
+    * @param anticlockwise Number
+    */
   var ellipse: js.UndefOr[
     js.Function8[
       /* cx */ js.UndefOr[Double], 
@@ -121,48 +121,48 @@ trait IPath extends IBase {
     ]
   ] = js.undefined
   /** [Method] Reconstruct path from cubic bezier curve stripes
-  		* @param stripes Array
-  		*/
+    * @param stripes Array
+    */
   var fromStripes: js.UndefOr[js.Function1[/* stripes */ js.UndefOr[Array], Unit]] = js.undefined
   /** [Method] Feed the path from svg path string
-  		* @param pathString String
-  		*/
+    * @param pathString String
+    */
   var fromSvgString: js.UndefOr[js.Function1[/* pathString */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Get the bounding box of this matrix
-  		* @param target Object Optional object to receive the result.
-  		* @returns Object Object with x, y, width and height
-  		*/
+    * @param target Object Optional object to receive the result.
+    * @returns Object Object with x, y, width and height
+    */
   var getDimension: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Get the bounding box as if the path is transformed by a matrix
-  		* @param matrix Ext.draw.Matrix
-  		* @param target Object Optional object to receive the result.
-  		* @returns Object An object with x, y, width and height.
-  		*/
+    * @param matrix Ext.draw.Matrix
+    * @param target Object Optional object to receive the result.
+    * @returns Object An object with x, y, width and height.
+    */
   var getDimensionWithTransform: js.UndefOr[
     js.Function2[/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any], _]
   ] = js.undefined
   /** [Method] Test whether the given point is on or inside the path
-  		* @param x Number
-  		* @param y Number
-  		* @returns Boolean
-  		*/
+    * @param x Number
+    * @param y Number
+    * @returns Boolean
+    */
   var isPointInPath: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Boolean]] = js.undefined
   /** [Method] A straight line to a position
-  		* @param x Number
-  		* @param y Number
-  		*/
+    * @param x Number
+    * @param y Number
+    */
   var lineTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Move to a position
-  		* @param x Number
-  		* @param y Number
-  		*/
+    * @param x Number
+    * @param y Number
+    */
   var moveTo: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] A quadratic bezier curve to a position
-  		* @param cx Number
-  		* @param cy Number
-  		* @param x Number
-  		* @param y Number
-  		*/
+    * @param cx Number
+    * @param cy Number
+    * @param x Number
+    * @param y Number
+    */
   var quadraticCurveTo: js.UndefOr[
     js.Function4[
       /* cx */ js.UndefOr[Double], 
@@ -173,11 +173,11 @@ trait IPath extends IBase {
     ]
   ] = js.undefined
   /** [Method] Draw a rectangle and close it
-  		* @param x Number
-  		* @param y Number
-  		* @param width Number
-  		* @param height Number
-  		*/
+    * @param x Number
+    * @param y Number
+    * @param width Number
+    * @param height Number
+    */
   var rect: js.UndefOr[
     js.Function4[
       /* x */ js.UndefOr[Double], 
@@ -188,18 +188,18 @@ trait IPath extends IBase {
     ]
   ] = js.undefined
   /** [Method] Return an svg path string for this path
-  		* @returns String
-  		*/
+    * @returns String
+    */
   @JSName("toString")
   var toString_FIPath: js.UndefOr[js.Function0[String]] = js.undefined
   /** [Method] Convert path to bezier curve stripes
-  		* @param target Array The optional array to receive the result.
-  		* @returns Array
-  		*/
+    * @param target Array The optional array to receive the result.
+    * @returns Array
+    */
   var toStripes: js.UndefOr[js.Function1[/* target */ js.UndefOr[Array], Array]] = js.undefined
   /** [Method] Transform the current path by a matrix
-  		* @param matrix Ext.draw.Matrix
-  		*/
+    * @param matrix Ext.draw.Matrix
+    */
   var transform: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[IMatrix], Unit]] = js.undefined
 }
 
@@ -276,7 +276,7 @@ object IPath {
     if (quadraticCurveTo != null) __obj.updateDynamic("quadraticCurveTo")(js.Any.fromFunction4(quadraticCurveTo))
     if (rect != null) __obj.updateDynamic("rect")(js.Any.fromFunction4(rect))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
     if (toStripes != null) __obj.updateDynamic("toStripes")(js.Any.fromFunction1(toStripes))

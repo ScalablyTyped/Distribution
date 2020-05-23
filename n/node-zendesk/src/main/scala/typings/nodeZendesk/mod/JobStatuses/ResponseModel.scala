@@ -19,20 +19,20 @@ object ResponseModel {
   @scala.inline
   def apply(
     id: ZendeskID,
-    message: String = null,
-    progress: Int | Double = null,
+    message: js.UndefOr[Null | String] = js.undefined,
+    progress: js.UndefOr[Double] = js.undefined,
     results: js.Array[Result] = null,
     status: Status = null,
-    total: Int | Double = null,
-    url: String = null
+    total: js.UndefOr[Double] = js.undefined,
+    url: js.UndefOr[Null | String] = js.undefined
   ): ResponseModel = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseModel]
   }
 }

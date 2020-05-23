@@ -1,10 +1,10 @@
 package typings.oracleOraclejet.ojsliderMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.AnonConverterHint
-import typings.oracleOraclejet.AnonDefinition
-import typings.oracleOraclejet.AnonInstruction
-import typings.oracleOraclejet.AnonInvalidStep
+import typings.oracleOraclejet.anon.ConverterHint
+import typings.oracleOraclejet.anon.Definition
+import typings.oracleOraclejet.anon.Instruction
+import typings.oracleOraclejet.anon.InvalidStep
 import typings.oracleOraclejet.ojmessagingMod.^
 import typings.oracleOraclejet.oracleOraclejetStrings.fromMax
 import typings.oracleOraclejet.oracleOraclejetStrings.fromMin
@@ -24,9 +24,9 @@ trait ojSliderSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
   var describedBy: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var displayOptions: js.UndefOr[AnonConverterHint] = js.undefined
-  var help: js.UndefOr[AnonInstruction] = js.undefined
-  var helpHints: js.UndefOr[AnonDefinition] = js.undefined
+  var displayOptions: js.UndefOr[ConverterHint] = js.undefined
+  var help: js.UndefOr[Instruction] = js.undefined
+  var helpHints: js.UndefOr[Definition] = js.undefined
   var labelHint: js.UndefOr[String] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var messagesCustom: js.UndefOr[js.Array[^]] = js.undefined
@@ -34,7 +34,7 @@ trait ojSliderSettablePropertiesLenient
   var orientation: js.UndefOr[horizontal | vertical] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
   var transientValue: js.UndefOr[Double] = js.undefined
-  var translations: js.UndefOr[AnonInvalidStep] = js.undefined
+  var translations: js.UndefOr[InvalidStep] = js.undefined
   var `type`: js.UndefOr[fromMin | fromMax | single] = js.undefined
   var valid: js.UndefOr[
     typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
@@ -45,42 +45,42 @@ trait ojSliderSettablePropertiesLenient
 object ojSliderSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     describedBy: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    displayOptions: AnonConverterHint = null,
-    help: AnonInstruction = null,
-    helpHints: AnonDefinition = null,
+    displayOptions: ConverterHint = null,
+    help: Instruction = null,
+    helpHints: Definition = null,
     labelHint: String = null,
-    max: Int | Double = null,
+    max: js.UndefOr[Double] = js.undefined,
     messagesCustom: js.Array[^] = null,
-    min: Int | Double = null,
+    min: js.UndefOr[Double] = js.undefined,
     orientation: horizontal | vertical = null,
-    step: Int | Double = null,
-    transientValue: Int | Double = null,
-    translations: AnonInvalidStep = null,
+    step: js.UndefOr[Double] = js.undefined,
+    transientValue: js.UndefOr[Double] = js.undefined,
+    translations: InvalidStep = null,
     `type`: fromMin | fromMax | single = null,
     valid: valid | pending | invalidHidden | invalidShown = null,
-    value: Int | Double = null
+    value: js.UndefOr[Double] = js.undefined
   ): ojSliderSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (helpHints != null) __obj.updateDynamic("helpHints")(helpHints.asInstanceOf[js.Any])
     if (labelHint != null) __obj.updateDynamic("labelHint")(labelHint.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
     if (messagesCustom != null) __obj.updateDynamic("messagesCustom")(messagesCustom.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (transientValue != null) __obj.updateDynamic("transientValue")(transientValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(transientValue)) __obj.updateDynamic("transientValue")(transientValue.get.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (valid != null) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojSliderSettablePropertiesLenient]
   }
 }

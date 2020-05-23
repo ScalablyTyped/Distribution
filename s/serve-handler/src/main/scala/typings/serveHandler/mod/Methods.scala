@@ -1,10 +1,10 @@
 package typings.serveHandler.mod
 
 import typings.node.httpMod.ServerResponse
-import typings.serveHandler.FnCall
-import typings.serveHandler.Typeoflstat
-import typings.serveHandler.Typeofreaddir
-import typings.serveHandler.Typeofrealpath
+import typings.serveHandler.anon.FnCall
+import typings.serveHandler.anon.Typeoflstat
+import typings.serveHandler.anon.Typeofreaddir
+import typings.serveHandler.anon.Typeofrealpath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

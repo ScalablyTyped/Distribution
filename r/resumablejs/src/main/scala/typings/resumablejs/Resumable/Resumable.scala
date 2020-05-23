@@ -24,10 +24,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Resumable.Resumable")
 @js.native
-class Resumable protected () extends js.Object {
-  def this(options: ConfigurationHash) = this()
+trait Resumable extends js.Object {
   var events: js.Array[_] = js.native
   /**
     * An array of ResumableFile file objects added by the user (see full docs for this object type below).

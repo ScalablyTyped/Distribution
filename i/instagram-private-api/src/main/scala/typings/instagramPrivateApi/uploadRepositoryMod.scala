@@ -1,5 +1,9 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.anon.Offset
+import typings.instagramPrivateApi.anon.RuploadParams
+import typings.instagramPrivateApi.anon.StreamId_
+import typings.instagramPrivateApi.anon.Streamid
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.uploadPhotoOptionsMod.UploadPhotoOptions
 import typings.instagramPrivateApi.uploadRepositoryPhotoResponseMod.UploadRepositoryPhotoResponseRootObject
@@ -18,12 +22,12 @@ object uploadRepositoryMod extends js.Object {
   class UploadRepository () extends Repository {
     var chance: js.Any = js.native
     var getBaseHeaders: js.Any = js.native
-    def endSegmentedVideo(hasRuploadParamsStreamId: AnonStreamId_): js.Promise[_] = js.native
-    def initVideo(hasNameRuploadParamsWaterfallId: AnonRuploadParams): js.Promise[AnonOffset] = js.native
+    def endSegmentedVideo(hasRuploadParamsStreamId: StreamId_): js.Promise[_] = js.native
+    def initVideo(hasNameRuploadParamsWaterfallId: RuploadParams): js.Promise[Offset] = js.native
     def photo(options: UploadPhotoOptions): js.Promise[UploadRepositoryPhotoResponseRootObject] = js.native
-    def startSegmentedVideo(ruploadParams: js.Any): js.Promise[AnonStreamid] = js.native
+    def startSegmentedVideo(ruploadParams: js.Any): js.Promise[Streamid] = js.native
     def video(options: UploadVideoOptions): js.Promise[_] = js.native
-    def videoSegmentInit(options: UploadVideoSegmentInitOptions): js.Promise[AnonOffset] = js.native
+    def videoSegmentInit(options: UploadVideoSegmentInitOptions): js.Promise[Offset] = js.native
     def videoSegmentTransfer(options: UploadVideoSegmentTransferOptions): js.Promise[_] = js.native
   }
   

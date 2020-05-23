@@ -1,6 +1,5 @@
 package typings.dwt
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object EnumDWTCapPrinterMode extends js.Object {
   /** Specifies that the printed text will consist of a single string. */
   @js.native
   sealed trait TWPM_SINGLESTRING extends EnumDWTCapPrinterMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTCapPrinterMode with Double] = js.native
-  /* 2 */ @js.native
-  object TWPM_COMPOUNDSTRING extends TopLevel[TWPM_COMPOUNDSTRING with Double]
-  
-  /* 1 */ @js.native
-  object TWPM_MULTISTRING extends TopLevel[TWPM_MULTISTRING with Double]
-  
-  /* 0 */ @js.native
-  object TWPM_SINGLESTRING extends TopLevel[TWPM_SINGLESTRING with Double]
   
 }
 

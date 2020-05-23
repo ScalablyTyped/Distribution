@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.changed
 import scala.scalajs.js
@@ -54,8 +53,4 @@ trait ElevationSampler extends js.Object {
   def queryElevation(geometry: Point): Point | Multipoint | Polyline = js.native
   def queryElevation(geometry: Polyline): Point | Multipoint | Polyline = js.native
 }
-
-@JSGlobal("__esri.ElevationSampler")
-@js.native
-object ElevationSampler extends TopLevel[ElevationSamplerConstructor]
 

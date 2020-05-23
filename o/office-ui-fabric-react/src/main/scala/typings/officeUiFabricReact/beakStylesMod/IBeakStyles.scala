@@ -15,10 +15,10 @@ trait IBeakStyles extends js.Object {
 
 object IBeakStyles {
   @scala.inline
-  def apply(beak: IStyle = null, root: IStyle = null): IBeakStyles = {
+  def apply(beak: js.UndefOr[Null | IStyle] = js.undefined, root: js.UndefOr[Null | IStyle] = js.undefined): IBeakStyles = {
     val __obj = js.Dynamic.literal()
-    if (beak != null) __obj.updateDynamic("beak")(beak.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(beak)) __obj.updateDynamic("beak")(beak.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBeakStyles]
   }
 }

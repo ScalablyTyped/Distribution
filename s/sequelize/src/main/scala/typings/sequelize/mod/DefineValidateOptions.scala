@@ -1,14 +1,14 @@
 package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sequelize.Anon0
-import typings.sequelize.AnonArgs
-import typings.sequelize.AnonArgsBoolean
-import typings.sequelize.AnonArgsMsg
-import typings.sequelize.AnonArgsMsgString
-import typings.sequelize.AnonArgsNumber
-import typings.sequelize.AnonArgsString
-import typings.sequelize.AnonMsgString
+import typings.sequelize.anon.Args
+import typings.sequelize.anon.ArgsBoolean
+import typings.sequelize.anon.ArgsMsg
+import typings.sequelize.anon.ArgsMsgString
+import typings.sequelize.anon.ArgsNumber
+import typings.sequelize.anon.ArgsString
+import typings.sequelize.anon.MsgString
+import typings.sequelize.anon.`0`
 import typings.sequelize.sequelizeNumbers.`3`
 import typings.sequelize.sequelizeNumbers.`4`
 import typings.sequelize.sequelizeNumbers.`5`
@@ -47,188 +47,173 @@ trait DefineValidateOptions
   /**
     * force specific substrings
     */
-  var contains: js.UndefOr[String | AnonMsgString] = js.undefined
+  var contains: js.UndefOr[String | MsgString] = js.undefined
   /**
     * only allow a specific value
     */
   @JSName("equals")
-  var equals_FDefineValidateOptions: js.UndefOr[String | AnonMsgString] = js.undefined
+  var equals_FDefineValidateOptions: js.UndefOr[String | MsgString] = js.undefined
   /**
     * is: ["^[a-z]+$",'i'] // will only allow letters
     * is: /^[a-z]+$/i      // same as the previous example using real RegExp
     */
-  var is: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | AnonArgs] = js.undefined
+  var is: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.undefined
   /**
     * only allow date strings after a specific date
     */
-  var isAfter: js.UndefOr[String | AnonArgsString] = js.undefined
+  var isAfter: js.UndefOr[String | ArgsString] = js.undefined
   /**
     * will only allow letters
     */
-  var isAlpha: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isAlpha: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * will only allow alphanumeric characters, so "_abc" will fail
     */
-  var isAlphanumeric: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isAlphanumeric: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * only allow arrays
     */
-  var isArray: js.UndefOr[Boolean | AnonArgsBoolean] = js.undefined
+  var isArray: js.UndefOr[Boolean | ArgsBoolean] = js.undefined
   /**
     * only allow date strings before a specific date
     */
-  var isBefore: js.UndefOr[String | AnonArgsString] = js.undefined
+  var isBefore: js.UndefOr[String | ArgsString] = js.undefined
   /**
     * check for valid credit card numbers
     */
-  var isCreditCard: js.UndefOr[Boolean | AnonArgsBoolean] = js.undefined
+  var isCreditCard: js.UndefOr[Boolean | ArgsBoolean] = js.undefined
   /**
     * only allow date strings
     */
-  var isDate: js.UndefOr[Boolean | AnonArgsBoolean] = js.undefined
+  var isDate: js.UndefOr[Boolean | ArgsBoolean] = js.undefined
   /**
     * checks for any numbers
     */
-  var isDecimal: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isDecimal: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * checks for email format (foo@bar.com)
     */
-  var isEmail: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isEmail: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * checks for valid floating point numbers
     */
-  var isFloat: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isFloat: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * checks for IPv4 (129.89.23.1) or IPv6 format
     */
-  var isIP: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isIP: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * checks for IPv4 (129.89.23.1)
     */
-  var isIPv4: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isIPv4: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * checks for IPv6 format
     */
-  var isIPv6: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isIPv6: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * check the value is one of these
     */
-  var isIn: js.UndefOr[js.Array[js.Array[String]] | AnonArgsMsg] = js.undefined
+  var isIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.undefined
   /**
     * checks for valid integers
     */
-  var isInt: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isInt: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * checks for lowercase
     */
-  var isLowercase: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isLowercase: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * only allows null
     */
-  var isNull: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isNull: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * will only allow numbers
     */
-  var isNumeric: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isNumeric: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * only allow uuids
     */
   var isUUID: js.UndefOr[
-    `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | AnonArgsNumber
+    `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | ArgsNumber
   ] = js.undefined
   /**
     * checks for uppercase
     */
-  var isUppercase: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isUppercase: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * checks for url format (http://foo.com)
     */
-  var isUrl: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var isUrl: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * only allow values with length between 2 and 10
     */
-  var len: js.UndefOr[(js.Tuple2[Double, Double]) | Anon0] = js.undefined
+  var len: js.UndefOr[(js.Tuple2[Double, Double]) | `0`] = js.undefined
   /**
     * only allow values
     */
-  var max: js.UndefOr[Double | AnonArgsNumber] = js.undefined
+  var max: js.UndefOr[Double | ArgsNumber] = js.undefined
   /**
     * only allow values >= 23
     */
-  var min: js.UndefOr[Double | AnonArgsNumber] = js.undefined
+  var min: js.UndefOr[Double | ArgsNumber] = js.undefined
   /**
     * not: ["[a-z]",'i']  // will not allow letters
     */
-  var not: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | AnonArgs] = js.undefined
+  var not: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.undefined
   /**
     * don't allow specific substrings
     */
-  var notContains: js.UndefOr[js.Array[String] | String | AnonArgsMsgString] = js.undefined
+  var notContains: js.UndefOr[js.Array[String] | String | ArgsMsgString] = js.undefined
   /**
     * don't allow empty strings
     */
-  var notEmpty: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var notEmpty: js.UndefOr[Boolean | MsgString] = js.undefined
   /**
     * check the value is not one of these
     */
-  var notIn: js.UndefOr[js.Array[js.Array[String]] | AnonArgsMsg] = js.undefined
+  var notIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.undefined
   /**
     * won't allow null
     */
-  var notNull: js.UndefOr[Boolean | AnonMsgString] = js.undefined
+  var notNull: js.UndefOr[Boolean | MsgString] = js.undefined
 }
 
 object DefineValidateOptions {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * custom validations are also possible
-    *
-    * Implementation notes :
-    *
-    * We can't enforce any other method to be a function, so :
-    *
-    * ```typescript
-    * [name: string] : ( value : any ) => boolean;
-    * ```
-    *
-    * doesn't work in combination with the properties above
-    *
-    * @see https://github.com/Microsoft/TypeScript/issues/1889
-    */
-  /* name */ StringDictionary[js.Any] = null,
-    contains: String | AnonMsgString = null,
-    equals: String | AnonMsgString = null,
-    is: String | (js.Array[String | RegExp]) | RegExp | AnonArgs = null,
-    isAfter: String | AnonArgsString = null,
-    isAlpha: Boolean | AnonMsgString = null,
-    isAlphanumeric: Boolean | AnonMsgString = null,
-    isArray: Boolean | AnonArgsBoolean = null,
-    isBefore: String | AnonArgsString = null,
-    isCreditCard: Boolean | AnonArgsBoolean = null,
-    isDate: Boolean | AnonArgsBoolean = null,
-    isDecimal: Boolean | AnonMsgString = null,
-    isEmail: Boolean | AnonMsgString = null,
-    isFloat: Boolean | AnonMsgString = null,
-    isIP: Boolean | AnonMsgString = null,
-    isIPv4: Boolean | AnonMsgString = null,
-    isIPv6: Boolean | AnonMsgString = null,
-    isIn: js.Array[js.Array[String]] | AnonArgsMsg = null,
-    isInt: Boolean | AnonMsgString = null,
-    isLowercase: Boolean | AnonMsgString = null,
-    isNull: Boolean | AnonMsgString = null,
-    isNumeric: Boolean | AnonMsgString = null,
-    isUUID: `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | AnonArgsNumber = null,
-    isUppercase: Boolean | AnonMsgString = null,
-    isUrl: Boolean | AnonMsgString = null,
-    len: (js.Tuple2[Double, Double]) | Anon0 = null,
-    max: Double | AnonArgsNumber = null,
-    min: Double | AnonArgsNumber = null,
-    not: String | (js.Array[String | RegExp]) | RegExp | AnonArgs = null,
-    notContains: js.Array[String] | String | AnonArgsMsgString = null,
-    notEmpty: Boolean | AnonMsgString = null,
-    notIn: js.Array[js.Array[String]] | AnonArgsMsg = null,
-    notNull: Boolean | AnonMsgString = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    contains: String | MsgString = null,
+    equals: String | MsgString = null,
+    is: String | (js.Array[String | RegExp]) | RegExp | Args = null,
+    isAfter: String | ArgsString = null,
+    isAlpha: Boolean | MsgString = null,
+    isAlphanumeric: Boolean | MsgString = null,
+    isArray: Boolean | ArgsBoolean = null,
+    isBefore: String | ArgsString = null,
+    isCreditCard: Boolean | ArgsBoolean = null,
+    isDate: Boolean | ArgsBoolean = null,
+    isDecimal: Boolean | MsgString = null,
+    isEmail: Boolean | MsgString = null,
+    isFloat: Boolean | MsgString = null,
+    isIP: Boolean | MsgString = null,
+    isIPv4: Boolean | MsgString = null,
+    isIPv6: Boolean | MsgString = null,
+    isIn: js.Array[js.Array[String]] | ArgsMsg = null,
+    isInt: Boolean | MsgString = null,
+    isLowercase: Boolean | MsgString = null,
+    isNull: Boolean | MsgString = null,
+    isNumeric: Boolean | MsgString = null,
+    isUUID: `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | ArgsNumber = null,
+    isUppercase: Boolean | MsgString = null,
+    isUrl: Boolean | MsgString = null,
+    len: (js.Tuple2[Double, Double]) | `0` = null,
+    max: Double | ArgsNumber = null,
+    min: Double | ArgsNumber = null,
+    not: String | (js.Array[String | RegExp]) | RegExp | Args = null,
+    notContains: js.Array[String] | String | ArgsMsgString = null,
+    notEmpty: Boolean | MsgString = null,
+    notIn: js.Array[js.Array[String]] | ArgsMsg = null,
+    notNull: Boolean | MsgString = null
   ): DefineValidateOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

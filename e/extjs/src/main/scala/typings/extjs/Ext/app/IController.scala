@@ -12,62 +12,62 @@ import scala.scalajs.js.annotation._
 
 trait IController extends IObservable {
   /** [Method] Registers one or more references
-  		* @param refs Object/Object[]
-  		*/
+    * @param refs Object/Object[]
+    */
   var addRef: js.UndefOr[js.Function1[/* refs */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Property] (Ext.app.Application) */
   var application: js.UndefOr[IApplication] = js.undefined
   /** [Method] Adds listeners to components selected via Ext ComponentQuery
-  		* @param selectors String/Object If a String, the second argument is used as the listeners, otherwise an object of selectors -> listeners is assumed
-  		* @param listeners Object Config for listeners.
-  		*/
+    * @param selectors String/Object If a String, the second argument is used as the listeners, otherwise an object of selectors -> listeners is assumed
+    * @param listeners Object Config for listeners.
+    */
   var control: js.UndefOr[
     js.Function2[/* selectors */ js.UndefOr[js.Any], /* listeners */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Returns the base Ext app Application for this controller
-  		* @returns Ext.app.Application the application
-  		*/
+    * @returns Ext.app.Application the application
+    */
   var getApplication: js.UndefOr[js.Function0[IApplication]] = js.undefined
   /** [Method] Returns instance of a Controller with the given id
-  		* @param id String
-  		* @returns Ext.app.Controller controller instance or undefined.
-  		*/
+    * @param id String
+    * @returns Ext.app.Controller controller instance or undefined.
+    */
   var getController: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], this.type]] = js.undefined
   /** [Method] Returns a Model class with the given name
-  		* @param name String
-  		* @returns Ext.data.Model a model class.
-  		*/
+    * @param name String
+    * @returns Ext.data.Model a model class.
+    */
   var getModel: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], IModel]] = js.undefined
   /** [Method] Returns instance of a Store with the given name
-  		* @param name String
-  		* @returns Ext.data.Store a store instance.
-  		*/
+    * @param name String
+    * @returns Ext.data.Store a store instance.
+    */
   var getStore: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], IStore]] = js.undefined
   /** [Method] Returns a View class with the given name
-  		* @param name String
-  		* @returns Ext.Base a view class.
-  		*/
+    * @param name String
+    * @returns Ext.Base a view class.
+    */
   var getView: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], IBase]] = js.undefined
   /** [Method] Returns true if a reference is registered
-  		* @param ref Object
-  		* @returns Boolean
-  		*/
+    * @param ref Object
+    * @returns Boolean
+    */
   var hasRef: js.UndefOr[js.Function1[/* ref */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /** [Config Option] (String) */
   var id: js.UndefOr[String] = js.undefined
   /** [Method] A template method that is called when your application boots
-  		* @param application Ext.app.Application
-  		*/
+    * @param application Ext.app.Application
+    */
   var init: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.undefined
   /** [Method] Adds listeners to different event sources also called event domains
-  		* @param to Object Config object containing domains, selectors and listeners.
-  		*/
+    * @param to Object Config object containing domains, selectors and listeners.
+    */
   var listen: js.UndefOr[js.Function1[/* to */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String/String[]) */
   var models: js.UndefOr[js.Any] = js.undefined
   /** [Method] A template method like init but called after the viewport is created
-  		* @param application Ext.app.Application
-  		*/
+    * @param application Ext.app.Application
+    */
   var onLaunch: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.undefined
   /** [Config Option] (Object[]) */
   var refs: js.UndefOr[Array] = js.undefined
@@ -169,7 +169,7 @@ object IController {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listen != null) __obj.updateDynamic("listen")(js.Any.fromFunction1(listen))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -186,7 +186,7 @@ object IController {
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stores != null) __obj.updateDynamic("stores")(stores.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))

@@ -19,6 +19,9 @@ object sortablejsStrings {
   sealed trait alignmentBaseline extends js.Object
   
   @js.native
+  sealed trait all extends js.Object
+  
+  @js.native
   sealed trait animation extends js.Object
   
   @js.native
@@ -382,9 +385,6 @@ object sortablejsStrings {
   sealed trait emptyInsertThreshold extends js.Object
   
   @js.native
-  sealed trait enableBackground extends js.Object
-  
-  @js.native
   sealed trait fallbackClass extends js.Object
   
   @js.native
@@ -496,9 +496,6 @@ object sortablejsStrings {
   sealed trait ghostClass extends js.Object
   
   @js.native
-  sealed trait glyphOrientationHorizontal extends js.Object
-  
-  @js.native
   sealed trait glyphOrientationVertical extends js.Object
   
   @js.native
@@ -580,9 +577,6 @@ object sortablejsStrings {
   sealed trait imageRendering extends js.Object
   
   @js.native
-  sealed trait imeMode extends js.Object
-  
-  @js.native
   sealed trait inlineSize extends js.Object
   
   @js.native
@@ -599,24 +593,6 @@ object sortablejsStrings {
   
   @js.native
   sealed trait justifySelf extends js.Object
-  
-  @js.native
-  sealed trait kerning extends js.Object
-  
-  @js.native
-  sealed trait layoutGrid extends js.Object
-  
-  @js.native
-  sealed trait layoutGridChar extends js.Object
-  
-  @js.native
-  sealed trait layoutGridLine extends js.Object
-  
-  @js.native
-  sealed trait layoutGridMode extends js.Object
-  
-  @js.native
-  sealed trait layoutGridType extends js.Object
   
   @js.native
   sealed trait left extends js.Object
@@ -733,147 +709,6 @@ object sortablejsStrings {
   sealed trait minWidth extends js.Object
   
   @js.native
-  sealed trait msContentZoomChaining extends js.Object
-  
-  @js.native
-  sealed trait msContentZoomLimit extends js.Object
-  
-  @js.native
-  sealed trait msContentZoomLimitMax extends js.Object
-  
-  @js.native
-  sealed trait msContentZoomLimitMin extends js.Object
-  
-  @js.native
-  sealed trait msContentZoomSnap extends js.Object
-  
-  @js.native
-  sealed trait msContentZoomSnapPoints extends js.Object
-  
-  @js.native
-  sealed trait msContentZoomSnapType extends js.Object
-  
-  @js.native
-  sealed trait msContentZooming extends js.Object
-  
-  @js.native
-  sealed trait msFlowFrom extends js.Object
-  
-  @js.native
-  sealed trait msFlowInto extends js.Object
-  
-  @js.native
-  sealed trait msFontFeatureSettings extends js.Object
-  
-  @js.native
-  sealed trait msGridColumn extends js.Object
-  
-  @js.native
-  sealed trait msGridColumnAlign extends js.Object
-  
-  @js.native
-  sealed trait msGridColumnSpan extends js.Object
-  
-  @js.native
-  sealed trait msGridColumns extends js.Object
-  
-  @js.native
-  sealed trait msGridRow extends js.Object
-  
-  @js.native
-  sealed trait msGridRowAlign extends js.Object
-  
-  @js.native
-  sealed trait msGridRowSpan extends js.Object
-  
-  @js.native
-  sealed trait msGridRows extends js.Object
-  
-  @js.native
-  sealed trait msHighContrastAdjust extends js.Object
-  
-  @js.native
-  sealed trait msHyphenateLimitChars extends js.Object
-  
-  @js.native
-  sealed trait msHyphenateLimitLines extends js.Object
-  
-  @js.native
-  sealed trait msHyphenateLimitZone extends js.Object
-  
-  @js.native
-  sealed trait msHyphens extends js.Object
-  
-  @js.native
-  sealed trait msImeAlign extends js.Object
-  
-  @js.native
-  sealed trait msOverflowStyle extends js.Object
-  
-  @js.native
-  sealed trait msScrollChaining extends js.Object
-  
-  @js.native
-  sealed trait msScrollLimit extends js.Object
-  
-  @js.native
-  sealed trait msScrollLimitXMax extends js.Object
-  
-  @js.native
-  sealed trait msScrollLimitXMin extends js.Object
-  
-  @js.native
-  sealed trait msScrollLimitYMax extends js.Object
-  
-  @js.native
-  sealed trait msScrollLimitYMin extends js.Object
-  
-  @js.native
-  sealed trait msScrollRails extends js.Object
-  
-  @js.native
-  sealed trait msScrollSnapPointsX extends js.Object
-  
-  @js.native
-  sealed trait msScrollSnapPointsY extends js.Object
-  
-  @js.native
-  sealed trait msScrollSnapType extends js.Object
-  
-  @js.native
-  sealed trait msScrollSnapX extends js.Object
-  
-  @js.native
-  sealed trait msScrollSnapY extends js.Object
-  
-  @js.native
-  sealed trait msScrollTranslation extends js.Object
-  
-  @js.native
-  sealed trait msTextCombineHorizontal extends js.Object
-  
-  @js.native
-  sealed trait msTextSizeAdjust extends js.Object
-  
-  @js.native
-  sealed trait msTouchAction extends js.Object
-  
-  @js.native
-  sealed trait msTouchSelect extends js.Object
-  
-  @js.native
-  sealed trait msUserSelect extends js.Object
-  
-  @js.native
-  sealed trait msWrapFlow extends js.Object
-  
-  @js.native
-  sealed trait msWrapMargin extends js.Object
-  
-  @js.native
-  sealed trait msWrapThrough extends js.Object
-  
-  @js.native
   sealed trait multiDrag extends js.Object
   
   @js.native
@@ -967,9 +802,6 @@ object sortablejsStrings {
   sealed trait parentRule extends js.Object
   
   @js.native
-  sealed trait penAction extends js.Object
-  
-  @js.native
   sealed trait perspective extends js.Object
   
   @js.native
@@ -1019,9 +851,6 @@ object sortablejsStrings {
   
   @js.native
   sealed trait rubyAlign extends js.Object
-  
-  @js.native
-  sealed trait rubyOverhang extends js.Object
   
   @js.native
   sealed trait rubyPosition extends js.Object
@@ -1139,12 +968,6 @@ object sortablejsStrings {
   
   @js.native
   sealed trait textJustify extends js.Object
-  
-  @js.native
-  sealed trait textKashida extends js.Object
-  
-  @js.native
-  sealed trait textKashidaSpace extends js.Object
   
   @js.native
   sealed trait textOrientation extends js.Object
@@ -1276,9 +1099,6 @@ object sortablejsStrings {
   sealed trait webkitBorderBottomRightRadius extends js.Object
   
   @js.native
-  sealed trait webkitBorderImage extends js.Object
-  
-  @js.native
   sealed trait webkitBorderRadius extends js.Object
   
   @js.native
@@ -1289,9 +1109,6 @@ object sortablejsStrings {
   
   @js.native
   sealed trait webkitBoxAlign extends js.Object
-  
-  @js.native
-  sealed trait webkitBoxDirection extends js.Object
   
   @js.native
   sealed trait webkitBoxFlex extends js.Object
@@ -1310,42 +1127,6 @@ object sortablejsStrings {
   
   @js.native
   sealed trait webkitBoxSizing extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnBreakAfter extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnBreakBefore extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnBreakInside extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnCount extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnGap extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnRule extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnRuleColor extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnRuleStyle extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnRuleWidth extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnSpan extends js.Object
-  
-  @js.native
-  sealed trait webkitColumnWidth extends js.Object
-  
-  @js.native
-  sealed trait webkitColumns extends js.Object
   
   @js.native
   sealed trait webkitFilter extends js.Object
@@ -1471,13 +1252,7 @@ object sortablejsStrings {
   sealed trait webkitTransitionTimingFunction extends js.Object
   
   @js.native
-  sealed trait webkitUserModify extends js.Object
-  
-  @js.native
   sealed trait webkitUserSelect extends js.Object
-  
-  @js.native
-  sealed trait webkitWritingMode extends js.Object
   
   @js.native
   sealed trait whiteSpace extends js.Object
@@ -1517,6 +1292,8 @@ object sortablejsStrings {
   def alignSelf: alignSelf = "alignSelf".asInstanceOf[alignSelf]
   @scala.inline
   def alignmentBaseline: alignmentBaseline = "alignmentBaseline".asInstanceOf[alignmentBaseline]
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
   @scala.inline
   def animation: animation = "animation".asInstanceOf[animation]
   @scala.inline
@@ -1758,8 +1535,6 @@ object sortablejsStrings {
   @scala.inline
   def emptyInsertThreshold: emptyInsertThreshold = "emptyInsertThreshold".asInstanceOf[emptyInsertThreshold]
   @scala.inline
-  def enableBackground: enableBackground = "enableBackground".asInstanceOf[enableBackground]
-  @scala.inline
   def fallbackClass: fallbackClass = "fallbackClass".asInstanceOf[fallbackClass]
   @scala.inline
   def fallbackOffset: fallbackOffset = "fallbackOffset".asInstanceOf[fallbackOffset]
@@ -1834,8 +1609,6 @@ object sortablejsStrings {
   @scala.inline
   def ghostClass: ghostClass = "ghostClass".asInstanceOf[ghostClass]
   @scala.inline
-  def glyphOrientationHorizontal: glyphOrientationHorizontal = "glyphOrientationHorizontal".asInstanceOf[glyphOrientationHorizontal]
-  @scala.inline
   def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
@@ -1890,8 +1663,6 @@ object sortablejsStrings {
   @scala.inline
   def imageRendering: imageRendering = "imageRendering".asInstanceOf[imageRendering]
   @scala.inline
-  def imeMode: imeMode = "imeMode".asInstanceOf[imeMode]
-  @scala.inline
   def inlineSize: inlineSize = "inlineSize".asInstanceOf[inlineSize]
   @scala.inline
   def invertSwap: invertSwap = "invertSwap".asInstanceOf[invertSwap]
@@ -1903,18 +1674,6 @@ object sortablejsStrings {
   def justifyItems: justifyItems = "justifyItems".asInstanceOf[justifyItems]
   @scala.inline
   def justifySelf: justifySelf = "justifySelf".asInstanceOf[justifySelf]
-  @scala.inline
-  def kerning: kerning = "kerning".asInstanceOf[kerning]
-  @scala.inline
-  def layoutGrid: layoutGrid = "layoutGrid".asInstanceOf[layoutGrid]
-  @scala.inline
-  def layoutGridChar: layoutGridChar = "layoutGridChar".asInstanceOf[layoutGridChar]
-  @scala.inline
-  def layoutGridLine: layoutGridLine = "layoutGridLine".asInstanceOf[layoutGridLine]
-  @scala.inline
-  def layoutGridMode: layoutGridMode = "layoutGridMode".asInstanceOf[layoutGridMode]
-  @scala.inline
-  def layoutGridType: layoutGridType = "layoutGridType".asInstanceOf[layoutGridType]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -1992,100 +1751,6 @@ object sortablejsStrings {
   @scala.inline
   def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
   @scala.inline
-  def msContentZoomChaining: msContentZoomChaining = "msContentZoomChaining".asInstanceOf[msContentZoomChaining]
-  @scala.inline
-  def msContentZoomLimit: msContentZoomLimit = "msContentZoomLimit".asInstanceOf[msContentZoomLimit]
-  @scala.inline
-  def msContentZoomLimitMax: msContentZoomLimitMax = "msContentZoomLimitMax".asInstanceOf[msContentZoomLimitMax]
-  @scala.inline
-  def msContentZoomLimitMin: msContentZoomLimitMin = "msContentZoomLimitMin".asInstanceOf[msContentZoomLimitMin]
-  @scala.inline
-  def msContentZoomSnap: msContentZoomSnap = "msContentZoomSnap".asInstanceOf[msContentZoomSnap]
-  @scala.inline
-  def msContentZoomSnapPoints: msContentZoomSnapPoints = "msContentZoomSnapPoints".asInstanceOf[msContentZoomSnapPoints]
-  @scala.inline
-  def msContentZoomSnapType: msContentZoomSnapType = "msContentZoomSnapType".asInstanceOf[msContentZoomSnapType]
-  @scala.inline
-  def msContentZooming: msContentZooming = "msContentZooming".asInstanceOf[msContentZooming]
-  @scala.inline
-  def msFlowFrom: msFlowFrom = "msFlowFrom".asInstanceOf[msFlowFrom]
-  @scala.inline
-  def msFlowInto: msFlowInto = "msFlowInto".asInstanceOf[msFlowInto]
-  @scala.inline
-  def msFontFeatureSettings: msFontFeatureSettings = "msFontFeatureSettings".asInstanceOf[msFontFeatureSettings]
-  @scala.inline
-  def msGridColumn: msGridColumn = "msGridColumn".asInstanceOf[msGridColumn]
-  @scala.inline
-  def msGridColumnAlign: msGridColumnAlign = "msGridColumnAlign".asInstanceOf[msGridColumnAlign]
-  @scala.inline
-  def msGridColumnSpan: msGridColumnSpan = "msGridColumnSpan".asInstanceOf[msGridColumnSpan]
-  @scala.inline
-  def msGridColumns: msGridColumns = "msGridColumns".asInstanceOf[msGridColumns]
-  @scala.inline
-  def msGridRow: msGridRow = "msGridRow".asInstanceOf[msGridRow]
-  @scala.inline
-  def msGridRowAlign: msGridRowAlign = "msGridRowAlign".asInstanceOf[msGridRowAlign]
-  @scala.inline
-  def msGridRowSpan: msGridRowSpan = "msGridRowSpan".asInstanceOf[msGridRowSpan]
-  @scala.inline
-  def msGridRows: msGridRows = "msGridRows".asInstanceOf[msGridRows]
-  @scala.inline
-  def msHighContrastAdjust: msHighContrastAdjust = "msHighContrastAdjust".asInstanceOf[msHighContrastAdjust]
-  @scala.inline
-  def msHyphenateLimitChars: msHyphenateLimitChars = "msHyphenateLimitChars".asInstanceOf[msHyphenateLimitChars]
-  @scala.inline
-  def msHyphenateLimitLines: msHyphenateLimitLines = "msHyphenateLimitLines".asInstanceOf[msHyphenateLimitLines]
-  @scala.inline
-  def msHyphenateLimitZone: msHyphenateLimitZone = "msHyphenateLimitZone".asInstanceOf[msHyphenateLimitZone]
-  @scala.inline
-  def msHyphens: msHyphens = "msHyphens".asInstanceOf[msHyphens]
-  @scala.inline
-  def msImeAlign: msImeAlign = "msImeAlign".asInstanceOf[msImeAlign]
-  @scala.inline
-  def msOverflowStyle: msOverflowStyle = "msOverflowStyle".asInstanceOf[msOverflowStyle]
-  @scala.inline
-  def msScrollChaining: msScrollChaining = "msScrollChaining".asInstanceOf[msScrollChaining]
-  @scala.inline
-  def msScrollLimit: msScrollLimit = "msScrollLimit".asInstanceOf[msScrollLimit]
-  @scala.inline
-  def msScrollLimitXMax: msScrollLimitXMax = "msScrollLimitXMax".asInstanceOf[msScrollLimitXMax]
-  @scala.inline
-  def msScrollLimitXMin: msScrollLimitXMin = "msScrollLimitXMin".asInstanceOf[msScrollLimitXMin]
-  @scala.inline
-  def msScrollLimitYMax: msScrollLimitYMax = "msScrollLimitYMax".asInstanceOf[msScrollLimitYMax]
-  @scala.inline
-  def msScrollLimitYMin: msScrollLimitYMin = "msScrollLimitYMin".asInstanceOf[msScrollLimitYMin]
-  @scala.inline
-  def msScrollRails: msScrollRails = "msScrollRails".asInstanceOf[msScrollRails]
-  @scala.inline
-  def msScrollSnapPointsX: msScrollSnapPointsX = "msScrollSnapPointsX".asInstanceOf[msScrollSnapPointsX]
-  @scala.inline
-  def msScrollSnapPointsY: msScrollSnapPointsY = "msScrollSnapPointsY".asInstanceOf[msScrollSnapPointsY]
-  @scala.inline
-  def msScrollSnapType: msScrollSnapType = "msScrollSnapType".asInstanceOf[msScrollSnapType]
-  @scala.inline
-  def msScrollSnapX: msScrollSnapX = "msScrollSnapX".asInstanceOf[msScrollSnapX]
-  @scala.inline
-  def msScrollSnapY: msScrollSnapY = "msScrollSnapY".asInstanceOf[msScrollSnapY]
-  @scala.inline
-  def msScrollTranslation: msScrollTranslation = "msScrollTranslation".asInstanceOf[msScrollTranslation]
-  @scala.inline
-  def msTextCombineHorizontal: msTextCombineHorizontal = "msTextCombineHorizontal".asInstanceOf[msTextCombineHorizontal]
-  @scala.inline
-  def msTextSizeAdjust: msTextSizeAdjust = "msTextSizeAdjust".asInstanceOf[msTextSizeAdjust]
-  @scala.inline
-  def msTouchAction: msTouchAction = "msTouchAction".asInstanceOf[msTouchAction]
-  @scala.inline
-  def msTouchSelect: msTouchSelect = "msTouchSelect".asInstanceOf[msTouchSelect]
-  @scala.inline
-  def msUserSelect: msUserSelect = "msUserSelect".asInstanceOf[msUserSelect]
-  @scala.inline
-  def msWrapFlow: msWrapFlow = "msWrapFlow".asInstanceOf[msWrapFlow]
-  @scala.inline
-  def msWrapMargin: msWrapMargin = "msWrapMargin".asInstanceOf[msWrapMargin]
-  @scala.inline
-  def msWrapThrough: msWrapThrough = "msWrapThrough".asInstanceOf[msWrapThrough]
-  @scala.inline
   def multiDrag: multiDrag = "multiDrag".asInstanceOf[multiDrag]
   @scala.inline
   def multiDragKey: multiDragKey = "multiDragKey".asInstanceOf[multiDragKey]
@@ -2148,8 +1813,6 @@ object sortablejsStrings {
   @scala.inline
   def parentRule: parentRule = "parentRule".asInstanceOf[parentRule]
   @scala.inline
-  def penAction: penAction = "penAction".asInstanceOf[penAction]
-  @scala.inline
   def perspective: perspective = "perspective".asInstanceOf[perspective]
   @scala.inline
   def perspectiveOrigin: perspectiveOrigin = "perspectiveOrigin".asInstanceOf[perspectiveOrigin]
@@ -2183,8 +1846,6 @@ object sortablejsStrings {
   def rowGap: rowGap = "rowGap".asInstanceOf[rowGap]
   @scala.inline
   def rubyAlign: rubyAlign = "rubyAlign".asInstanceOf[rubyAlign]
-  @scala.inline
-  def rubyOverhang: rubyOverhang = "rubyOverhang".asInstanceOf[rubyOverhang]
   @scala.inline
   def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
   @scala.inline
@@ -2263,10 +1924,6 @@ object sortablejsStrings {
   def textIndent: textIndent = "textIndent".asInstanceOf[textIndent]
   @scala.inline
   def textJustify: textJustify = "textJustify".asInstanceOf[textJustify]
-  @scala.inline
-  def textKashida: textKashida = "textKashida".asInstanceOf[textKashida]
-  @scala.inline
-  def textKashidaSpace: textKashidaSpace = "textKashidaSpace".asInstanceOf[textKashidaSpace]
   @scala.inline
   def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
   @scala.inline
@@ -2354,8 +2011,6 @@ object sortablejsStrings {
   @scala.inline
   def webkitBorderBottomRightRadius: webkitBorderBottomRightRadius = "webkitBorderBottomRightRadius".asInstanceOf[webkitBorderBottomRightRadius]
   @scala.inline
-  def webkitBorderImage: webkitBorderImage = "webkitBorderImage".asInstanceOf[webkitBorderImage]
-  @scala.inline
   def webkitBorderRadius: webkitBorderRadius = "webkitBorderRadius".asInstanceOf[webkitBorderRadius]
   @scala.inline
   def webkitBorderTopLeftRadius: webkitBorderTopLeftRadius = "webkitBorderTopLeftRadius".asInstanceOf[webkitBorderTopLeftRadius]
@@ -2363,8 +2018,6 @@ object sortablejsStrings {
   def webkitBorderTopRightRadius: webkitBorderTopRightRadius = "webkitBorderTopRightRadius".asInstanceOf[webkitBorderTopRightRadius]
   @scala.inline
   def webkitBoxAlign: webkitBoxAlign = "webkitBoxAlign".asInstanceOf[webkitBoxAlign]
-  @scala.inline
-  def webkitBoxDirection: webkitBoxDirection = "webkitBoxDirection".asInstanceOf[webkitBoxDirection]
   @scala.inline
   def webkitBoxFlex: webkitBoxFlex = "webkitBoxFlex".asInstanceOf[webkitBoxFlex]
   @scala.inline
@@ -2377,30 +2030,6 @@ object sortablejsStrings {
   def webkitBoxShadow: webkitBoxShadow = "webkitBoxShadow".asInstanceOf[webkitBoxShadow]
   @scala.inline
   def webkitBoxSizing: webkitBoxSizing = "webkitBoxSizing".asInstanceOf[webkitBoxSizing]
-  @scala.inline
-  def webkitColumnBreakAfter: webkitColumnBreakAfter = "webkitColumnBreakAfter".asInstanceOf[webkitColumnBreakAfter]
-  @scala.inline
-  def webkitColumnBreakBefore: webkitColumnBreakBefore = "webkitColumnBreakBefore".asInstanceOf[webkitColumnBreakBefore]
-  @scala.inline
-  def webkitColumnBreakInside: webkitColumnBreakInside = "webkitColumnBreakInside".asInstanceOf[webkitColumnBreakInside]
-  @scala.inline
-  def webkitColumnCount: webkitColumnCount = "webkitColumnCount".asInstanceOf[webkitColumnCount]
-  @scala.inline
-  def webkitColumnGap: webkitColumnGap = "webkitColumnGap".asInstanceOf[webkitColumnGap]
-  @scala.inline
-  def webkitColumnRule: webkitColumnRule = "webkitColumnRule".asInstanceOf[webkitColumnRule]
-  @scala.inline
-  def webkitColumnRuleColor: webkitColumnRuleColor = "webkitColumnRuleColor".asInstanceOf[webkitColumnRuleColor]
-  @scala.inline
-  def webkitColumnRuleStyle: webkitColumnRuleStyle = "webkitColumnRuleStyle".asInstanceOf[webkitColumnRuleStyle]
-  @scala.inline
-  def webkitColumnRuleWidth: webkitColumnRuleWidth = "webkitColumnRuleWidth".asInstanceOf[webkitColumnRuleWidth]
-  @scala.inline
-  def webkitColumnSpan: webkitColumnSpan = "webkitColumnSpan".asInstanceOf[webkitColumnSpan]
-  @scala.inline
-  def webkitColumnWidth: webkitColumnWidth = "webkitColumnWidth".asInstanceOf[webkitColumnWidth]
-  @scala.inline
-  def webkitColumns: webkitColumns = "webkitColumns".asInstanceOf[webkitColumns]
   @scala.inline
   def webkitFilter: webkitFilter = "webkitFilter".asInstanceOf[webkitFilter]
   @scala.inline
@@ -2484,11 +2113,7 @@ object sortablejsStrings {
   @scala.inline
   def webkitTransitionTimingFunction: webkitTransitionTimingFunction = "webkitTransitionTimingFunction".asInstanceOf[webkitTransitionTimingFunction]
   @scala.inline
-  def webkitUserModify: webkitUserModify = "webkitUserModify".asInstanceOf[webkitUserModify]
-  @scala.inline
   def webkitUserSelect: webkitUserSelect = "webkitUserSelect".asInstanceOf[webkitUserSelect]
-  @scala.inline
-  def webkitWritingMode: webkitWritingMode = "webkitWritingMode".asInstanceOf[webkitWritingMode]
   @scala.inline
   def whiteSpace: whiteSpace = "whiteSpace".asInstanceOf[whiteSpace]
   @scala.inline

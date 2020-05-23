@@ -159,26 +159,26 @@ object TerminalModes {
     PENDIN: `0` | `1` = null,
     StringDictionary: /* mode */ StringDictionary[js.UndefOr[Double]] = null,
     TOSTOP: `0` | `1` = null,
-    TTY_OP_ISPEED: Int | Double = null,
-    TTY_OP_OSPEED: Int | Double = null,
-    VDISCARD: Int | Double = null,
-    VDSUSP: Int | Double = null,
-    VEOF: Int | Double = null,
-    VEOL: Int | Double = null,
-    VEOL2: Int | Double = null,
-    VERASE: Int | Double = null,
-    VFLUSH: Int | Double = null,
-    VINTR: Int | Double = null,
-    VKILL: Int | Double = null,
-    VLNEXT: Int | Double = null,
-    VQUIT: Int | Double = null,
-    VREPRINT: Int | Double = null,
-    VSTART: Int | Double = null,
-    VSTATUS: Int | Double = null,
-    VSTOP: Int | Double = null,
-    VSUSP: Int | Double = null,
-    VSWTCH: Int | Double = null,
-    VWERASE: Int | Double = null,
+    TTY_OP_ISPEED: js.UndefOr[Double] = js.undefined,
+    TTY_OP_OSPEED: js.UndefOr[Double] = js.undefined,
+    VDISCARD: js.UndefOr[Double] = js.undefined,
+    VDSUSP: js.UndefOr[Double] = js.undefined,
+    VEOF: js.UndefOr[Double] = js.undefined,
+    VEOL: js.UndefOr[Double] = js.undefined,
+    VEOL2: js.UndefOr[Double] = js.undefined,
+    VERASE: js.UndefOr[Double] = js.undefined,
+    VFLUSH: js.UndefOr[Double] = js.undefined,
+    VINTR: js.UndefOr[Double] = js.undefined,
+    VKILL: js.UndefOr[Double] = js.undefined,
+    VLNEXT: js.UndefOr[Double] = js.undefined,
+    VQUIT: js.UndefOr[Double] = js.undefined,
+    VREPRINT: js.UndefOr[Double] = js.undefined,
+    VSTART: js.UndefOr[Double] = js.undefined,
+    VSTATUS: js.UndefOr[Double] = js.undefined,
+    VSTOP: js.UndefOr[Double] = js.undefined,
+    VSUSP: js.UndefOr[Double] = js.undefined,
+    VSWTCH: js.UndefOr[Double] = js.undefined,
+    VWERASE: js.UndefOr[Double] = js.undefined,
     XCASE: `0` | `1` = null
   ): TerminalModes = {
     val __obj = js.Dynamic.literal()
@@ -217,26 +217,26 @@ object TerminalModes {
     if (PENDIN != null) __obj.updateDynamic("PENDIN")(PENDIN.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (TOSTOP != null) __obj.updateDynamic("TOSTOP")(TOSTOP.asInstanceOf[js.Any])
-    if (TTY_OP_ISPEED != null) __obj.updateDynamic("TTY_OP_ISPEED")(TTY_OP_ISPEED.asInstanceOf[js.Any])
-    if (TTY_OP_OSPEED != null) __obj.updateDynamic("TTY_OP_OSPEED")(TTY_OP_OSPEED.asInstanceOf[js.Any])
-    if (VDISCARD != null) __obj.updateDynamic("VDISCARD")(VDISCARD.asInstanceOf[js.Any])
-    if (VDSUSP != null) __obj.updateDynamic("VDSUSP")(VDSUSP.asInstanceOf[js.Any])
-    if (VEOF != null) __obj.updateDynamic("VEOF")(VEOF.asInstanceOf[js.Any])
-    if (VEOL != null) __obj.updateDynamic("VEOL")(VEOL.asInstanceOf[js.Any])
-    if (VEOL2 != null) __obj.updateDynamic("VEOL2")(VEOL2.asInstanceOf[js.Any])
-    if (VERASE != null) __obj.updateDynamic("VERASE")(VERASE.asInstanceOf[js.Any])
-    if (VFLUSH != null) __obj.updateDynamic("VFLUSH")(VFLUSH.asInstanceOf[js.Any])
-    if (VINTR != null) __obj.updateDynamic("VINTR")(VINTR.asInstanceOf[js.Any])
-    if (VKILL != null) __obj.updateDynamic("VKILL")(VKILL.asInstanceOf[js.Any])
-    if (VLNEXT != null) __obj.updateDynamic("VLNEXT")(VLNEXT.asInstanceOf[js.Any])
-    if (VQUIT != null) __obj.updateDynamic("VQUIT")(VQUIT.asInstanceOf[js.Any])
-    if (VREPRINT != null) __obj.updateDynamic("VREPRINT")(VREPRINT.asInstanceOf[js.Any])
-    if (VSTART != null) __obj.updateDynamic("VSTART")(VSTART.asInstanceOf[js.Any])
-    if (VSTATUS != null) __obj.updateDynamic("VSTATUS")(VSTATUS.asInstanceOf[js.Any])
-    if (VSTOP != null) __obj.updateDynamic("VSTOP")(VSTOP.asInstanceOf[js.Any])
-    if (VSUSP != null) __obj.updateDynamic("VSUSP")(VSUSP.asInstanceOf[js.Any])
-    if (VSWTCH != null) __obj.updateDynamic("VSWTCH")(VSWTCH.asInstanceOf[js.Any])
-    if (VWERASE != null) __obj.updateDynamic("VWERASE")(VWERASE.asInstanceOf[js.Any])
+    if (!js.isUndefined(TTY_OP_ISPEED)) __obj.updateDynamic("TTY_OP_ISPEED")(TTY_OP_ISPEED.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TTY_OP_OSPEED)) __obj.updateDynamic("TTY_OP_OSPEED")(TTY_OP_OSPEED.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VDISCARD)) __obj.updateDynamic("VDISCARD")(VDISCARD.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VDSUSP)) __obj.updateDynamic("VDSUSP")(VDSUSP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VEOF)) __obj.updateDynamic("VEOF")(VEOF.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VEOL)) __obj.updateDynamic("VEOL")(VEOL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VEOL2)) __obj.updateDynamic("VEOL2")(VEOL2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VERASE)) __obj.updateDynamic("VERASE")(VERASE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VFLUSH)) __obj.updateDynamic("VFLUSH")(VFLUSH.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VINTR)) __obj.updateDynamic("VINTR")(VINTR.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VKILL)) __obj.updateDynamic("VKILL")(VKILL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VLNEXT)) __obj.updateDynamic("VLNEXT")(VLNEXT.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VQUIT)) __obj.updateDynamic("VQUIT")(VQUIT.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VREPRINT)) __obj.updateDynamic("VREPRINT")(VREPRINT.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VSTART)) __obj.updateDynamic("VSTART")(VSTART.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VSTATUS)) __obj.updateDynamic("VSTATUS")(VSTATUS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VSTOP)) __obj.updateDynamic("VSTOP")(VSTOP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VSUSP)) __obj.updateDynamic("VSUSP")(VSUSP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VSWTCH)) __obj.updateDynamic("VSWTCH")(VSWTCH.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VWERASE)) __obj.updateDynamic("VWERASE")(VWERASE.get.asInstanceOf[js.Any])
     if (XCASE != null) __obj.updateDynamic("XCASE")(XCASE.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalModes]
   }

@@ -1,6 +1,6 @@
 package typings.promiseAllsettled.mod
 
-import typings.promiseAllsettled.FnCall
+import typings.promiseAllsettled.anon.FnCall
 import typings.promiseAllsettled.implementationMod.PromiseTuple
 import typings.std.Iterable
 import scala.scalajs.js

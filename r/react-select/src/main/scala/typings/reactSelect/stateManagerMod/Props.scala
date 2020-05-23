@@ -14,30 +14,30 @@ trait Props[OptionType /* <: OptionTypeBase */] extends js.Object {
   var inputValue: js.UndefOr[String] = js.undefined
   var menuIsOpen: js.UndefOr[Boolean] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[/* value */ ValueType[OptionType], /* actionMeta */ ActionMeta, Unit]
+    js.Function2[/* value */ ValueType[OptionType], /* actionMeta */ ActionMeta[OptionType], Unit]
   ] = js.undefined
   var value: js.UndefOr[ValueType[OptionType]] = js.undefined
 }
 
 object Props {
   @scala.inline
-  def apply[OptionType /* <: OptionTypeBase */](
+  def apply[OptionType](
     defaultInputValue: String = null,
     defaultMenuIsOpen: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: ValueType[OptionType] = null,
+    defaultValue: js.UndefOr[Null | ValueType[OptionType]] = js.undefined,
     inputValue: String = null,
     menuIsOpen: js.UndefOr[Boolean] = js.undefined,
-    onChange: (/* value */ ValueType[OptionType], /* actionMeta */ ActionMeta) => Unit = null,
-    value: ValueType[OptionType] = null
+    onChange: (/* value */ ValueType[OptionType], /* actionMeta */ ActionMeta[OptionType]) => Unit = null,
+    value: js.UndefOr[Null | ValueType[OptionType]] = js.undefined
   ): Props[OptionType] = {
     val __obj = js.Dynamic.literal()
     if (defaultInputValue != null) __obj.updateDynamic("defaultInputValue")(defaultInputValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultMenuIsOpen)) __obj.updateDynamic("defaultMenuIsOpen")(defaultMenuIsOpen.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultMenuIsOpen)) __obj.updateDynamic("defaultMenuIsOpen")(defaultMenuIsOpen.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuIsOpen)) __obj.updateDynamic("menuIsOpen")(menuIsOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuIsOpen)) __obj.updateDynamic("menuIsOpen")(menuIsOpen.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[OptionType]]
   }
 }

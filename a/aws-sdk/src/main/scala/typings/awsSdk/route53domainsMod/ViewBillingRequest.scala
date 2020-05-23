@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ViewBillingRequest extends js.Object {
   /**
-    * The end date and time for the time period for which you want a list of billing records. Specify the date and time in Coordinated Universal time (UTC).
+    * The end date and time for the time period for which you want a list of billing records. Specify the date and time in Unix time format and Coordinated Universal time (UTC).
     */
   var End: js.UndefOr[Timestamp] = js.native
   /**
@@ -19,7 +19,7 @@ trait ViewBillingRequest extends js.Object {
     */
   var MaxItems: js.UndefOr[PageMaxItems] = js.native
   /**
-    * The beginning date and time for the time period for which you want a list of billing records. Specify the date and time in Coordinated Universal time (UTC).
+    * The beginning date and time for the time period for which you want a list of billing records. Specify the date and time in Unix time format and Coordinated Universal time (UTC).
     */
   var Start: js.UndefOr[Timestamp] = js.native
 }
@@ -29,13 +29,13 @@ object ViewBillingRequest {
   def apply(
     End: Timestamp = null,
     Marker: PageMarker = null,
-    MaxItems: Int | Double = null,
+    MaxItems: js.UndefOr[PageMaxItems] = js.undefined,
     Start: Timestamp = null
   ): ViewBillingRequest = {
     val __obj = js.Dynamic.literal()
     if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewBillingRequest]
   }

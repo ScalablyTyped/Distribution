@@ -16,10 +16,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container * / any */ @JSGlobal("PIXI.spine.Spine")
-@js.native
-class Spine protected () extends js.Object {
-  def this(spineData: SkeletonData) = this()
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container * / any */ @js.native
+trait Spine extends js.Object {
   var _autoUpdate: js.Any = js.native
   var _visible: js.Any = js.native
   var autoUpdate: Boolean = js.native
@@ -101,14 +99,5 @@ class Spine protected () extends js.Object {
   def transformHack(): Double = js.native
   def update(dt: Double): Unit = js.native
   def updateGraphics(slot: Slot, clip: ClippingAttachment): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.spine.Spine")
-@js.native
-object Spine extends js.Object {
-  var clippingPolygon: js.Array[Double] = js.native
-  var globalAutoUpdate: Boolean = js.native
-  var globalDelayLimit: Double = js.native
 }
 

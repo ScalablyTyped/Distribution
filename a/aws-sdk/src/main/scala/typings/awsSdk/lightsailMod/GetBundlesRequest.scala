@@ -20,7 +20,7 @@ object GetBundlesRequest {
   @scala.inline
   def apply(includeInactive: js.UndefOr[Boolean] = js.undefined, pageToken: String = null): GetBundlesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBundlesRequest]
   }

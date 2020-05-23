@@ -21,10 +21,10 @@ object ObjectData {
     eTag: String,
     id: String,
     updated: String,
-    custom: StringDictionary[String] = null
+    custom: js.UndefOr[Null | StringDictionary[String]] = js.undefined
   ): ObjectData = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], eTag = eTag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectData]
   }
 }

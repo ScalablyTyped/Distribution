@@ -1,12 +1,12 @@
 package typings.primereact.treeTableMod
 
-import typings.primereact.AnonDelta
-import typings.primereact.AnonDropIndex
-import typings.primereact.AnonFirst
-import typings.primereact.AnonMultiSortMeta
-import typings.primereact.AnonNode
-import typings.primereact.AnonNodeOriginalEvent
-import typings.primereact.AnonValue
+import typings.primereact.anon.Delta
+import typings.primereact.anon.DropIndex
+import typings.primereact.anon.First
+import typings.primereact.anon.MultiSortMeta
+import typings.primereact.anon.Node
+import typings.primereact.anon.NodeOriginalEvent
+import typings.primereact.anon.Value
 import typings.primereact.treeNodeMod.TreeNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,20 +40,20 @@ trait TreeTableProps extends js.Object {
   var loadingIcon: js.UndefOr[String] = js.undefined
   var metaKeySelection: js.UndefOr[Boolean] = js.undefined
   var multiSortMeta: js.UndefOr[js.Array[_]] = js.undefined
-  var onColReorder: js.UndefOr[js.Function1[/* e */ AnonDropIndex, Unit]] = js.undefined
-  var onCollapse: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
-  var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ AnonDelta, Unit]] = js.undefined
-  var onContextMenu: js.UndefOr[js.Function1[/* e */ AnonNode, Unit]] = js.undefined
-  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
-  var onExpand: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
+  var onColReorder: js.UndefOr[js.Function1[/* e */ DropIndex, Unit]] = js.undefined
+  var onCollapse: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
+  var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ Delta, Unit]] = js.undefined
+  var onContextMenu: js.UndefOr[js.Function1[/* e */ Node, Unit]] = js.undefined
+  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
+  var onExpand: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
   var onFilter: js.UndefOr[js.Function1[/* filters */ js.Array[_], Unit]] = js.undefined
-  var onPage: js.UndefOr[js.Function1[/* e */ AnonFirst, Unit]] = js.undefined
-  var onRowClick: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
-  var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
-  var onSort: js.UndefOr[js.Function1[/* e */ AnonMultiSortMeta, Unit]] = js.undefined
-  var onToggle: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
-  var onUnselect: js.UndefOr[js.Function1[/* e */ AnonNodeOriginalEvent, Unit]] = js.undefined
+  var onPage: js.UndefOr[js.Function1[/* e */ First, Unit]] = js.undefined
+  var onRowClick: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
+  var onSelectionChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
+  var onSort: js.UndefOr[js.Function1[/* e */ MultiSortMeta, Unit]] = js.undefined
+  var onToggle: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
+  var onUnselect: js.UndefOr[js.Function1[/* e */ NodeOriginalEvent, Unit]] = js.undefined
   var pageLinkSize: js.UndefOr[Double] = js.undefined
   var paginator: js.UndefOr[Boolean] = js.undefined
   var paginatorLeft: js.UndefOr[js.Any] = js.undefined
@@ -91,13 +91,13 @@ object TreeTableProps {
     columnResizeMode: String = null,
     contextMenuSelectionKey: js.Any = null,
     currentPageReportTemplate: String = null,
-    defaultSortOrder: Int | Double = null,
+    defaultSortOrder: js.UndefOr[Double] = js.undefined,
     emptyMessage: String = null,
     expandedKeys: js.Any = null,
     filterLocale: String = null,
     filterMode: String = null,
     filters: js.Object = null,
-    first: Int | Double = null,
+    first: js.UndefOr[Double] = js.undefined,
     footer: js.Any = null,
     footerColumnGroup: js.Any = null,
     frozenFooterColumnGroup: js.Any = null,
@@ -112,21 +112,21 @@ object TreeTableProps {
     loadingIcon: String = null,
     metaKeySelection: js.UndefOr[Boolean] = js.undefined,
     multiSortMeta: js.Array[_] = null,
-    onColReorder: /* e */ AnonDropIndex => Unit = null,
-    onCollapse: /* e */ AnonNodeOriginalEvent => Unit = null,
-    onColumnResizeEnd: /* e */ AnonDelta => Unit = null,
-    onContextMenu: /* e */ AnonNode => Unit = null,
-    onContextMenuSelectionChange: /* e */ AnonValue => Unit = null,
-    onExpand: /* e */ AnonNodeOriginalEvent => Unit = null,
+    onColReorder: /* e */ DropIndex => Unit = null,
+    onCollapse: /* e */ NodeOriginalEvent => Unit = null,
+    onColumnResizeEnd: /* e */ Delta => Unit = null,
+    onContextMenu: /* e */ Node => Unit = null,
+    onContextMenuSelectionChange: /* e */ Value => Unit = null,
+    onExpand: /* e */ NodeOriginalEvent => Unit = null,
     onFilter: /* filters */ js.Array[_] => Unit = null,
-    onPage: /* e */ AnonFirst => Unit = null,
-    onRowClick: /* e */ AnonNodeOriginalEvent => Unit = null,
-    onSelect: /* e */ AnonNodeOriginalEvent => Unit = null,
-    onSelectionChange: /* e */ AnonValue => Unit = null,
-    onSort: /* e */ AnonMultiSortMeta => Unit = null,
-    onToggle: /* e */ AnonValue => Unit = null,
-    onUnselect: /* e */ AnonNodeOriginalEvent => Unit = null,
-    pageLinkSize: Int | Double = null,
+    onPage: /* e */ First => Unit = null,
+    onRowClick: /* e */ NodeOriginalEvent => Unit = null,
+    onSelect: /* e */ NodeOriginalEvent => Unit = null,
+    onSelectionChange: /* e */ Value => Unit = null,
+    onSort: /* e */ MultiSortMeta => Unit = null,
+    onToggle: /* e */ Value => Unit = null,
+    onUnselect: /* e */ NodeOriginalEvent => Unit = null,
+    pageLinkSize: js.UndefOr[Double] = js.undefined,
     paginator: js.UndefOr[Boolean] = js.undefined,
     paginatorLeft: js.Any = null,
     paginatorPosition: String = null,
@@ -137,7 +137,7 @@ object TreeTableProps {
     reorderableColumns: js.UndefOr[Boolean] = js.undefined,
     resizableColumns: js.UndefOr[Boolean] = js.undefined,
     rowClassName: /* rowData */ js.Any => js.Object = null,
-    rows: Int | Double = null,
+    rows: js.UndefOr[Double] = js.undefined,
     rowsPerPageOptions: js.Array[Double] = null,
     scrollHeight: String = null,
     scrollable: js.UndefOr[Boolean] = js.undefined,
@@ -145,28 +145,28 @@ object TreeTableProps {
     selectionMode: String = null,
     sortField: String = null,
     sortMode: String = null,
-    sortOrder: Int | Double = null,
+    sortOrder: js.UndefOr[Double] = js.undefined,
     style: js.Object = null,
     tabIndex: String = null,
     tableClassName: String = null,
     tableStyle: js.Object = null,
-    totalRecords: Int | Double = null,
+    totalRecords: js.UndefOr[Double] = js.undefined,
     value: js.Array[TreeNode] = null
   ): TreeTableProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysShowPaginator)) __obj.updateDynamic("alwaysShowPaginator")(alwaysShowPaginator.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLayout)) __obj.updateDynamic("autoLayout")(autoLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysShowPaginator)) __obj.updateDynamic("alwaysShowPaginator")(alwaysShowPaginator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLayout)) __obj.updateDynamic("autoLayout")(autoLayout.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (columnResizeMode != null) __obj.updateDynamic("columnResizeMode")(columnResizeMode.asInstanceOf[js.Any])
     if (contextMenuSelectionKey != null) __obj.updateDynamic("contextMenuSelectionKey")(contextMenuSelectionKey.asInstanceOf[js.Any])
     if (currentPageReportTemplate != null) __obj.updateDynamic("currentPageReportTemplate")(currentPageReportTemplate.asInstanceOf[js.Any])
-    if (defaultSortOrder != null) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSortOrder)) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.get.asInstanceOf[js.Any])
     if (emptyMessage != null) __obj.updateDynamic("emptyMessage")(emptyMessage.asInstanceOf[js.Any])
     if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys.asInstanceOf[js.Any])
     if (filterLocale != null) __obj.updateDynamic("filterLocale")(filterLocale.asInstanceOf[js.Any])
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.get.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (footerColumnGroup != null) __obj.updateDynamic("footerColumnGroup")(footerColumnGroup.asInstanceOf[js.Any])
     if (frozenFooterColumnGroup != null) __obj.updateDynamic("frozenFooterColumnGroup")(frozenFooterColumnGroup.asInstanceOf[js.Any])
@@ -176,10 +176,10 @@ object TreeTableProps {
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (headerColumnGroup != null) __obj.updateDynamic("headerColumnGroup")(headerColumnGroup.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
     if (loadingIcon != null) __obj.updateDynamic("loadingIcon")(loadingIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaKeySelection)) __obj.updateDynamic("metaKeySelection")(metaKeySelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(metaKeySelection)) __obj.updateDynamic("metaKeySelection")(metaKeySelection.get.asInstanceOf[js.Any])
     if (multiSortMeta != null) __obj.updateDynamic("multiSortMeta")(multiSortMeta.asInstanceOf[js.Any])
     if (onColReorder != null) __obj.updateDynamic("onColReorder")(js.Any.fromFunction1(onColReorder))
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
@@ -195,31 +195,31 @@ object TreeTableProps {
     if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
     if (onUnselect != null) __obj.updateDynamic("onUnselect")(js.Any.fromFunction1(onUnselect))
-    if (pageLinkSize != null) __obj.updateDynamic("pageLinkSize")(pageLinkSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginator)) __obj.updateDynamic("paginator")(paginator.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageLinkSize)) __obj.updateDynamic("pageLinkSize")(pageLinkSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paginator)) __obj.updateDynamic("paginator")(paginator.get.asInstanceOf[js.Any])
     if (paginatorLeft != null) __obj.updateDynamic("paginatorLeft")(paginatorLeft.asInstanceOf[js.Any])
     if (paginatorPosition != null) __obj.updateDynamic("paginatorPosition")(paginatorPosition.asInstanceOf[js.Any])
     if (paginatorRight != null) __obj.updateDynamic("paginatorRight")(paginatorRight.asInstanceOf[js.Any])
     if (paginatorTemplate != null) __obj.updateDynamic("paginatorTemplate")(paginatorTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(propagateSelectionDown)) __obj.updateDynamic("propagateSelectionDown")(propagateSelectionDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(propagateSelectionUp)) __obj.updateDynamic("propagateSelectionUp")(propagateSelectionUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(reorderableColumns)) __obj.updateDynamic("reorderableColumns")(reorderableColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(propagateSelectionDown)) __obj.updateDynamic("propagateSelectionDown")(propagateSelectionDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(propagateSelectionUp)) __obj.updateDynamic("propagateSelectionUp")(propagateSelectionUp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reorderableColumns)) __obj.updateDynamic("reorderableColumns")(reorderableColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.get.asInstanceOf[js.Any])
     if (rowClassName != null) __obj.updateDynamic("rowClassName")(js.Any.fromFunction1(rowClassName))
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (rowsPerPageOptions != null) __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions.asInstanceOf[js.Any])
     if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.get.asInstanceOf[js.Any])
     if (selectionKeys != null) __obj.updateDynamic("selectionKeys")(selectionKeys.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
     if (sortMode != null) __obj.updateDynamic("sortMode")(sortMode.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortOrder)) __obj.updateDynamic("sortOrder")(sortOrder.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tableClassName != null) __obj.updateDynamic("tableClassName")(tableClassName.asInstanceOf[js.Any])
     if (tableStyle != null) __obj.updateDynamic("tableStyle")(tableStyle.asInstanceOf[js.Any])
-    if (totalRecords != null) __obj.updateDynamic("totalRecords")(totalRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalRecords)) __obj.updateDynamic("totalRecords")(totalRecords.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeTableProps]
   }

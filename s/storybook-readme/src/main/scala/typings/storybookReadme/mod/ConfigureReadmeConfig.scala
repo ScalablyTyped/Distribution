@@ -1,16 +1,16 @@
 package typings.storybookReadme.mod
 
 import typings.react.mod.ReactNode
-import typings.storybookReadme.AnonChildren
+import typings.storybookReadme.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConfigureReadmeConfig extends js.Object {
-  var DocPreview: js.UndefOr[js.Function1[/* props */ AnonChildren, ReactNode]] = js.undefined
-  var FooterPreview: js.UndefOr[js.Function1[/* props */ AnonChildren, ReactNode]] = js.undefined
-  var HeaderPreview: js.UndefOr[js.Function1[/* props */ AnonChildren, ReactNode]] = js.undefined
-  var StoryPreview: js.UndefOr[js.Function1[/* props */ AnonChildren, ReactNode]] = js.undefined
+  var DocPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.undefined
+  var FooterPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.undefined
+  var HeaderPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.undefined
+  var StoryPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.undefined
   var footer: js.UndefOr[String] = js.undefined
   var header: js.UndefOr[String] = js.undefined
 }
@@ -18,10 +18,10 @@ trait ConfigureReadmeConfig extends js.Object {
 object ConfigureReadmeConfig {
   @scala.inline
   def apply(
-    DocPreview: /* props */ AnonChildren => ReactNode = null,
-    FooterPreview: /* props */ AnonChildren => ReactNode = null,
-    HeaderPreview: /* props */ AnonChildren => ReactNode = null,
-    StoryPreview: /* props */ AnonChildren => ReactNode = null,
+    DocPreview: /* props */ Children => ReactNode = null,
+    FooterPreview: /* props */ Children => ReactNode = null,
+    HeaderPreview: /* props */ Children => ReactNode = null,
+    StoryPreview: /* props */ Children => ReactNode = null,
     footer: String = null,
     header: String = null
   ): ConfigureReadmeConfig = {

@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.audioprocess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,8 +47,4 @@ trait ScriptProcessorNode extends AudioNode {
     options: EventListenerOptions
   ): Unit = js.native
 }
-
-@JSGlobal("ScriptProcessorNode")
-@js.native
-object ScriptProcessorNode extends Instantiable0[ScriptProcessorNode]
 

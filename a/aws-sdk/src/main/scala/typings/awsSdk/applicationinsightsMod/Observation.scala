@@ -173,14 +173,14 @@ object Observation {
     SourceType: SourceType = null,
     StartTime: StartTime = null,
     Unit: Unit = null,
-    Value: Int | Double = null,
-    XRayErrorPercent: Int | Double = null,
-    XRayFaultPercent: Int | Double = null,
+    Value: js.UndefOr[Value] = js.undefined,
+    XRayErrorPercent: js.UndefOr[XRayErrorPercent] = js.undefined,
+    XRayFaultPercent: js.UndefOr[XRayFaultPercent] = js.undefined,
     XRayNodeName: XRayNodeName = null,
     XRayNodeType: XRayNodeType = null,
-    XRayRequestAverageLatency: Int | Double = null,
-    XRayRequestCount: Int | Double = null,
-    XRayThrottlePercent: Int | Double = null
+    XRayRequestAverageLatency: js.UndefOr[XRayRequestAverageLatency] = js.undefined,
+    XRayRequestCount: js.UndefOr[XRayRequestCount] = js.undefined,
+    XRayThrottlePercent: js.UndefOr[XRayThrottlePercent] = js.undefined
   ): Observation = {
     val __obj = js.Dynamic.literal()
     if (CloudWatchEventDetailType != null) __obj.updateDynamic("CloudWatchEventDetailType")(CloudWatchEventDetailType.asInstanceOf[js.Any])
@@ -209,14 +209,14 @@ object Observation {
     if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
-    if (XRayErrorPercent != null) __obj.updateDynamic("XRayErrorPercent")(XRayErrorPercent.asInstanceOf[js.Any])
-    if (XRayFaultPercent != null) __obj.updateDynamic("XRayFaultPercent")(XRayFaultPercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(XRayErrorPercent)) __obj.updateDynamic("XRayErrorPercent")(XRayErrorPercent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(XRayFaultPercent)) __obj.updateDynamic("XRayFaultPercent")(XRayFaultPercent.get.asInstanceOf[js.Any])
     if (XRayNodeName != null) __obj.updateDynamic("XRayNodeName")(XRayNodeName.asInstanceOf[js.Any])
     if (XRayNodeType != null) __obj.updateDynamic("XRayNodeType")(XRayNodeType.asInstanceOf[js.Any])
-    if (XRayRequestAverageLatency != null) __obj.updateDynamic("XRayRequestAverageLatency")(XRayRequestAverageLatency.asInstanceOf[js.Any])
-    if (XRayRequestCount != null) __obj.updateDynamic("XRayRequestCount")(XRayRequestCount.asInstanceOf[js.Any])
-    if (XRayThrottlePercent != null) __obj.updateDynamic("XRayThrottlePercent")(XRayThrottlePercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(XRayRequestAverageLatency)) __obj.updateDynamic("XRayRequestAverageLatency")(XRayRequestAverageLatency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(XRayRequestCount)) __obj.updateDynamic("XRayRequestCount")(XRayRequestCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(XRayThrottlePercent)) __obj.updateDynamic("XRayThrottlePercent")(XRayThrottlePercent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Observation]
   }
 }

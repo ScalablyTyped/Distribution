@@ -13,9 +13,9 @@ trait PlotAbandsBottomLineStylesOptions extends js.Object {
 
 object PlotAbandsBottomLineStylesOptions {
   @scala.inline
-  def apply(lineWidth: Int | Double = null): PlotAbandsBottomLineStylesOptions = {
+  def apply(lineWidth: js.UndefOr[Double] = js.undefined): PlotAbandsBottomLineStylesOptions = {
     val __obj = js.Dynamic.literal()
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAbandsBottomLineStylesOptions]
   }
 }

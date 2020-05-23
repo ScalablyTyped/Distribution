@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,7 +79,14 @@ trait `type` extends js.Object {
   def createRenderer(params: typeCreateRendererParams): js.Promise[typeRendererResult]
 }
 
-@JSGlobal("__esri.type")
-@js.native
-object `type` extends TopLevel[`type`]
+object `type` {
+  @scala.inline
+  def apply(
+    createPCClassRenderer: typeCreatePCClassRendererParams => js.Promise[PCClassRendererResult],
+    createRenderer: typeCreateRendererParams => js.Promise[typeRendererResult]
+  ): `type` = {
+    val __obj = js.Dynamic.literal(createPCClassRenderer = js.Any.fromFunction1(createPCClassRenderer), createRenderer = js.Any.fromFunction1(createRenderer))
+    __obj.asInstanceOf[`type`]
+  }
+}
 

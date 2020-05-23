@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when new list items are prefetched. The items are ordered ascending by geometric distance
-		 * from the list view. Note that this event is only available on iOS 10 and later.
-		 */
+  * Fired when new list items are prefetched. The items are ordered ascending by geometric distance
+  * from the list view. Note that this event is only available on iOS 10 and later.
+  */
 trait ListViewPrefetchEvent extends ListViewBaseEvent {
   /**
-  			 * An array of prefetched items.
-  			 */
+    * An array of prefetched items.
+    */
   var prefetchedItems: js.Array[ListItemEventType]
 }
 

@@ -20,7 +20,7 @@ trait PlusKeyKeyType extends js.Object {
   /**
     * 键按下事件
     * 如果需要改变默认键按下的处理逻辑，则可通过plus.key.addEventListener来注册监听"keydown"事件。
-    * 	可通过回调函数中KeyEvent对象的keyCode来获取按下的键值。
+    *     可通过回调函数中KeyEvent对象的keyCode来获取按下的键值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
@@ -28,7 +28,7 @@ trait PlusKeyKeyType extends js.Object {
   /**
     * 键松开事件
     * 如果需要改变默认键松开的处理逻辑，则可通过plus.key.addEventListener来注册监听"keyup"事件。
-    * 	可通过回调函数中KeyEvent对象的keyCode来获取松开的键值。
+    *     可通过回调函数中KeyEvent对象的keyCode来获取松开的键值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
@@ -36,7 +36,7 @@ trait PlusKeyKeyType extends js.Object {
   /**
     * 长按键事件
     * 如果需要改变默认长按键的处理逻辑，则可通过plus.key.addEventListener来注册监听"longpressed"事件。
-    * 	长按键时会多次触发回调函数，通过回调函数中KeyEvent对象的keyCode来获取长按的键值。
+    *     长按键时会多次触发回调函数，通过回调函数中KeyEvent对象的keyCode来获取长按的键值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */

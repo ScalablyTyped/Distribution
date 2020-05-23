@@ -27,22 +27,22 @@ trait IQueryParameters extends js.Object {
 object IQueryParameters {
   @scala.inline
   def apply(
-    contexts: js.Array[IContext] = null,
-    geoLocation: ILatLng = null,
-    payload: IStruct = null,
-    resetContexts: js.UndefOr[Boolean] = js.undefined,
-    sentimentAnalysisRequestConfig: ISentimentAnalysisRequestConfig = null,
-    sessionEntityTypes: js.Array[ISessionEntityType] = null,
-    timeZone: String = null
+    contexts: js.UndefOr[Null | js.Array[IContext]] = js.undefined,
+    geoLocation: js.UndefOr[Null | ILatLng] = js.undefined,
+    payload: js.UndefOr[Null | IStruct] = js.undefined,
+    resetContexts: js.UndefOr[Null | Boolean] = js.undefined,
+    sentimentAnalysisRequestConfig: js.UndefOr[Null | ISentimentAnalysisRequestConfig] = js.undefined,
+    sessionEntityTypes: js.UndefOr[Null | js.Array[ISessionEntityType]] = js.undefined,
+    timeZone: js.UndefOr[Null | String] = js.undefined
   ): IQueryParameters = {
     val __obj = js.Dynamic.literal()
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
-    if (geoLocation != null) __obj.updateDynamic("geoLocation")(geoLocation.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(contexts)) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
+    if (!js.isUndefined(geoLocation)) __obj.updateDynamic("geoLocation")(geoLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (!js.isUndefined(resetContexts)) __obj.updateDynamic("resetContexts")(resetContexts.asInstanceOf[js.Any])
-    if (sentimentAnalysisRequestConfig != null) __obj.updateDynamic("sentimentAnalysisRequestConfig")(sentimentAnalysisRequestConfig.asInstanceOf[js.Any])
-    if (sessionEntityTypes != null) __obj.updateDynamic("sessionEntityTypes")(sessionEntityTypes.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentimentAnalysisRequestConfig)) __obj.updateDynamic("sentimentAnalysisRequestConfig")(sentimentAnalysisRequestConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionEntityTypes)) __obj.updateDynamic("sessionEntityTypes")(sessionEntityTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeZone)) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryParameters]
   }
 }

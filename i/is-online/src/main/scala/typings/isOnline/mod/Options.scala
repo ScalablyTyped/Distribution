@@ -21,9 +21,9 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(timeout: Int | Double = null, version: v4 | v6 = null): Options = {
+  def apply(timeout: js.UndefOr[Double] = js.undefined, version: v4 | v6 = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

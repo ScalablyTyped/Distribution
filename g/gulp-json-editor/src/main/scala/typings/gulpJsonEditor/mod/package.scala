@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object mod {
   type JEditor = js.Function2[
     /* mergeWith */ js.Any | (js.Function1[/* json */ js.Any, js.Any]), 
-    /* jsBeautifyOptions */ js.UndefOr[typings.jsBeautify.JsBeautifyOptions], 
+    /* jsBeautifyOptions */ js.UndefOr[typings.jsBeautify.JSBeautifyOptions], 
     typings.node.NodeJS.ReadWriteStream
   ]
 }

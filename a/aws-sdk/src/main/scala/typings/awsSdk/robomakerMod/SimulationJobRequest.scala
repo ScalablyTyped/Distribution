@@ -60,7 +60,7 @@ object SimulationJobRequest {
     robotApplications: RobotApplicationConfigs = null,
     simulationApplications: SimulationApplicationConfigs = null,
     tags: TagMap = null,
-    useDefaultApplications: js.UndefOr[scala.Boolean] = js.undefined,
+    useDefaultApplications: js.UndefOr[BoxedBoolean] = js.undefined,
     vpcConfig: VPCConfig = null
   ): SimulationJobRequest = {
     val __obj = js.Dynamic.literal(maxJobDurationInSeconds = maxJobDurationInSeconds.asInstanceOf[js.Any])
@@ -73,7 +73,7 @@ object SimulationJobRequest {
     if (robotApplications != null) __obj.updateDynamic("robotApplications")(robotApplications.asInstanceOf[js.Any])
     if (simulationApplications != null) __obj.updateDynamic("simulationApplications")(simulationApplications.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDefaultApplications)) __obj.updateDynamic("useDefaultApplications")(useDefaultApplications.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDefaultApplications)) __obj.updateDynamic("useDefaultApplications")(useDefaultApplications.get.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimulationJobRequest]
   }

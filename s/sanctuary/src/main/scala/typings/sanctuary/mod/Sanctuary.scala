@@ -1,17 +1,17 @@
 package typings.sanctuary.mod
 
-import typings.sanctuary.AnonCheckTypes
-import typings.sanctuary.AnonName
-import typings.sanctuary.Fn0
-import typings.sanctuary.FnCall
-import typings.sanctuary.FnCallContravariant
-import typings.sanctuary.FnCallF
-import typings.sanctuary.FnCallFoldable
-import typings.sanctuary.FnCallM
-import typings.sanctuary.FnCallQ
-import typings.sanctuary.FnCallR
-import typings.sanctuary.FnCallX
-import typings.sanctuary.FnCallXs
+import typings.sanctuary.anon.CheckTypes
+import typings.sanctuary.anon.Fn0
+import typings.sanctuary.anon.FnCall
+import typings.sanctuary.anon.FnCallContravariant
+import typings.sanctuary.anon.FnCallF
+import typings.sanctuary.anon.FnCallFoldable
+import typings.sanctuary.anon.FnCallM
+import typings.sanctuary.anon.FnCallQ
+import typings.sanctuary.anon.FnCallR
+import typings.sanctuary.anon.FnCallX
+import typings.sanctuary.anon.FnCallXs
+import typings.sanctuary.anon.Name
 import typings.std.Date
 import typings.std.Error
 import typings.std.RegExp
@@ -25,7 +25,7 @@ object Sanctuary extends js.Object {
   @js.native
   trait Environment extends Static {
     var env: js.Array[_] = js.native
-    def create(opts: AnonCheckTypes): Static = js.native
+    def create(opts: CheckTypes): Static = js.native
   }
   
   @js.native
@@ -220,7 +220,7 @@ object Sanctuary extends js.Object {
       ] = js.native
     def trim(s: String): String = js.native
     //  Classify
-    def `type`(x: js.Any): AnonName = js.native
+    def `type`(x: js.Any): Name = js.native
     def unfoldr[A, B](f: Fn[B, Maybe[Pair[A, B]]]): js.Function1[/* x */ B, js.Array[A]] = js.native
     def unless[A](p: Predicate[A]): js.Function1[/* q */ Fn[A, A], Fn[A, A]] = js.native
     def unlines(xs: js.Array[String]): String = js.native

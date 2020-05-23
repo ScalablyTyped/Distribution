@@ -11,7 +11,7 @@ import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import typings.react.mod.ComponentType
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import scala.scalajs.js
@@ -48,7 +48,7 @@ object ISelectedPeopleProps {
     onItemsDeleted: /* deletedItems */ js.Array[IExtendedPersonaProps] => Unit = null,
     onRenderFloatingPicker: ComponentType[IBaseFloatingPickerProps[IPersonaProps]] = null,
     onRenderItem: /* props */ ISelectedItemProps[IExtendedPersonaProps] => Element = null,
-    ref: LegacyRef[js.Any] = null,
+    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined,
     removeButtonAriaLabel: String = null,
     removeMenuItemText: String = null,
     selectedItems: js.Array[IExtendedPersonaProps] = null,
@@ -72,7 +72,7 @@ object ISelectedPeopleProps {
     if (onItemsDeleted != null) __obj.updateDynamic("onItemsDeleted")(js.Any.fromFunction1(onItemsDeleted))
     if (onRenderFloatingPicker != null) __obj.updateDynamic("onRenderFloatingPicker")(onRenderFloatingPicker.asInstanceOf[js.Any])
     if (onRenderItem != null) __obj.updateDynamic("onRenderItem")(js.Any.fromFunction1(onRenderItem))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (removeButtonAriaLabel != null) __obj.updateDynamic("removeButtonAriaLabel")(removeButtonAriaLabel.asInstanceOf[js.Any])
     if (removeMenuItemText != null) __obj.updateDynamic("removeMenuItemText")(removeMenuItemText.asInstanceOf[js.Any])
     if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])

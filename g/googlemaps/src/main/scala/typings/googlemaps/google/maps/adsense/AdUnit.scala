@@ -8,10 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.adsense.AdUnit")
 @js.native
-class AdUnit protected () extends MVCObject {
-  def this(container: Element, opts: AdUnitOptions) = this()
+trait AdUnit extends MVCObject {
   def getBackgroundColor(): String = js.native
   def getBorderColor(): String = js.native
   def getChannelNumber(): String = js.native

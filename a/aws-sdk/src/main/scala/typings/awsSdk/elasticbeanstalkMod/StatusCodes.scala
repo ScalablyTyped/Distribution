@@ -27,16 +27,16 @@ trait StatusCodes extends js.Object {
 object StatusCodes {
   @scala.inline
   def apply(
-    Status2xx: Int | Double = null,
-    Status3xx: Int | Double = null,
-    Status4xx: Int | Double = null,
-    Status5xx: Int | Double = null
+    Status2xx: js.UndefOr[NullableInteger] = js.undefined,
+    Status3xx: js.UndefOr[NullableInteger] = js.undefined,
+    Status4xx: js.UndefOr[NullableInteger] = js.undefined,
+    Status5xx: js.UndefOr[NullableInteger] = js.undefined
   ): StatusCodes = {
     val __obj = js.Dynamic.literal()
-    if (Status2xx != null) __obj.updateDynamic("Status2xx")(Status2xx.asInstanceOf[js.Any])
-    if (Status3xx != null) __obj.updateDynamic("Status3xx")(Status3xx.asInstanceOf[js.Any])
-    if (Status4xx != null) __obj.updateDynamic("Status4xx")(Status4xx.asInstanceOf[js.Any])
-    if (Status5xx != null) __obj.updateDynamic("Status5xx")(Status5xx.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status2xx)) __obj.updateDynamic("Status2xx")(Status2xx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status3xx)) __obj.updateDynamic("Status3xx")(Status3xx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status4xx)) __obj.updateDynamic("Status4xx")(Status4xx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Status5xx)) __obj.updateDynamic("Status5xx")(Status5xx.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusCodes]
   }
 }

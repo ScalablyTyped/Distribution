@@ -1,6 +1,6 @@
 package typings.jsend.jsend
 
-import typings.jsend.AnonStrict
+import typings.jsend.anon.Strict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait jsendExport
   extends typings.jsend.jsend.jsend {
   def apply(): typings.jsend.jsend.jsend = js.native
-  def apply(config: AnonStrict): typings.jsend.jsend.jsend = js.native
-  def apply(config: AnonStrict, host: js.Object): typings.jsend.jsend.jsend = js.native
+  def apply(config: Strict): typings.jsend.jsend.jsend = js.native
+  def apply(config: Strict, host: js.Object): typings.jsend.jsend.jsend = js.native
 }
 

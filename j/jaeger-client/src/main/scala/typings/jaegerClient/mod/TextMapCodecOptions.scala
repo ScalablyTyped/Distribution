@@ -23,7 +23,7 @@ object TextMapCodecOptions {
     if (baggagePrefix != null) __obj.updateDynamic("baggagePrefix")(baggagePrefix.asInstanceOf[js.Any])
     if (contextKey != null) __obj.updateDynamic("contextKey")(contextKey.asInstanceOf[js.Any])
     if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(urlEncoding)) __obj.updateDynamic("urlEncoding")(urlEncoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(urlEncoding)) __obj.updateDynamic("urlEncoding")(urlEncoding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextMapCodecOptions]
   }
 }

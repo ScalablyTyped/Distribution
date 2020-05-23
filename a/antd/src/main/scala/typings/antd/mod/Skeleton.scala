@@ -1,11 +1,10 @@
 package typings.antd.mod
 
-import typings.antd.AnonAvatar
-import typings.antd.AnonCall
-import typings.antd.AnonCallDefaultProps
-import typings.antd.AnonDefaultProps
+import typings.antd.anon.Call
+import typings.antd.anon.CallDefaultProps
+import typings.antd.anon.DefaultProps
 import typings.antd.skeletonSkeletonMod.SkeletonProps
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,10 +12,10 @@ import scala.scalajs.js.annotation._
 @JSImport("antd", "Skeleton")
 @js.native
 object Skeleton extends js.Object {
-  var Avatar: AnonDefaultProps = js.native
-  var Button: AnonCall = js.native
-  var Input: AnonCallDefaultProps = js.native
-  var defaultProps: AnonAvatar = js.native
+  var Avatar: DefaultProps = js.native
+  var Button: Call = js.native
+  var Input: CallDefaultProps = js.native
+  var defaultProps: typings.antd.anon.Avatar = js.native
   def apply(props: SkeletonProps): Element = js.native
 }
 

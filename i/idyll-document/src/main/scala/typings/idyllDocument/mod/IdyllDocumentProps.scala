@@ -2,7 +2,7 @@ package typings.idyllDocument.mod
 
 import typings.idyllCompiler.mod.AST
 import typings.idyllCompiler.mod.Options
-import typings.idyllDocument.AnonChildren
+import typings.idyllDocument.anon.Children
 import typings.react.mod.ReactType
 import typings.std.Error
 import scala.scalajs.js
@@ -32,7 +32,7 @@ trait IdyllDocumentProps extends js.Object {
   /**
     * The React component rendered when an error occurs
     */
-  var errorComponent: js.UndefOr[ReactType[AnonChildren]] = js.undefined
+  var errorComponent: js.UndefOr[ReactType[Children]] = js.undefined
   var initialState: js.UndefOr[js.Any] = js.undefined
   /**
     * The layout for idyll document
@@ -62,7 +62,7 @@ object IdyllDocumentProps {
     compilerOptions: Options = null,
     context: /* context */ js.Any => Unit = null,
     datasets: js.Object = null,
-    errorComponent: ReactType[AnonChildren] = null,
+    errorComponent: ReactType[Children] = null,
     initialState: js.Any = null,
     layout: String = null,
     markup: String = null,

@@ -62,14 +62,14 @@ object IonContent {
   ): IonContent = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceOverscroll)) __obj.updateDynamic("forceOverscroll")(forceOverscroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceOverscroll)) __obj.updateDynamic("forceOverscroll")(forceOverscroll.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
     if (onIonScroll != null) __obj.updateDynamic("onIonScroll")(js.Any.fromFunction1(onIonScroll))
     if (onIonScrollEnd != null) __obj.updateDynamic("onIonScrollEnd")(js.Any.fromFunction1(onIonScrollEnd))
     if (onIonScrollStart != null) __obj.updateDynamic("onIonScrollStart")(js.Any.fromFunction1(onIonScrollStart))
-    if (!js.isUndefined(scrollEvents)) __obj.updateDynamic("scrollEvents")(scrollEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollX)) __obj.updateDynamic("scrollX")(scrollX.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollY)) __obj.updateDynamic("scrollY")(scrollY.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollEvents)) __obj.updateDynamic("scrollEvents")(scrollEvents.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollX)) __obj.updateDynamic("scrollX")(scrollX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollY)) __obj.updateDynamic("scrollY")(scrollY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonContent]
   }
 }

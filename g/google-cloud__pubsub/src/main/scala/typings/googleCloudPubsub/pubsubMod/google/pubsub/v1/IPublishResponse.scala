@@ -12,9 +12,9 @@ trait IPublishResponse extends js.Object {
 
 object IPublishResponse {
   @scala.inline
-  def apply(messageIds: js.Array[String] = null): IPublishResponse = {
+  def apply(messageIds: js.UndefOr[Null | js.Array[String]] = js.undefined): IPublishResponse = {
     val __obj = js.Dynamic.literal()
-    if (messageIds != null) __obj.updateDynamic("messageIds")(messageIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageIds)) __obj.updateDynamic("messageIds")(messageIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPublishResponse]
   }
 }

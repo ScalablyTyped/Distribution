@@ -1,21 +1,21 @@
 package typings.vueResource.optionsMod
 
 import typings.vue.vueMod.Vue
-import typings.vueResource.AnonDictkey
+import typings.vueResource.anon.Dictkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ComponentOptions[V /* <: Vue */] extends js.Object {
   var http: js.UndefOr[
-    AnonDictkey with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpOptions */ js.Any)
+    Dictkey with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpOptions */ js.Any)
   ] = js.undefined
 }
 
 object ComponentOptions {
   @scala.inline
-  def apply[V /* <: Vue */](
-    http: AnonDictkey with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpOptions */ js.Any) = null
+  def apply[V](
+    http: Dictkey with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpOptions */ js.Any) = null
   ): ComponentOptions[V] = {
     val __obj = js.Dynamic.literal()
     if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])

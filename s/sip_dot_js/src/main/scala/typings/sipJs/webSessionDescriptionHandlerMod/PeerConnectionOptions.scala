@@ -12,9 +12,9 @@ trait PeerConnectionOptions extends js.Object {
 
 object PeerConnectionOptions {
   @scala.inline
-  def apply(iceCheckingTimeout: Int | Double = null, rtcConfiguration: RTCConfiguration = null): PeerConnectionOptions = {
+  def apply(iceCheckingTimeout: js.UndefOr[Double] = js.undefined, rtcConfiguration: RTCConfiguration = null): PeerConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (iceCheckingTimeout != null) __obj.updateDynamic("iceCheckingTimeout")(iceCheckingTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(iceCheckingTimeout)) __obj.updateDynamic("iceCheckingTimeout")(iceCheckingTimeout.get.asInstanceOf[js.Any])
     if (rtcConfiguration != null) __obj.updateDynamic("rtcConfiguration")(rtcConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerConnectionOptions]
   }

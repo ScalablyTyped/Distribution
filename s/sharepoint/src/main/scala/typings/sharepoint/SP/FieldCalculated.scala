@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.FieldCalculated")
 @js.native
-class FieldCalculated () extends Field {
+trait FieldCalculated extends Field {
   def get_dateFormat(): DateTimeFieldFormatType = js.native
   def get_formula(): String = js.native
   def get_outputType(): FieldType = js.native

@@ -14,16 +14,16 @@ trait SessionOptions extends js.Object {
 object SessionOptions {
   @scala.inline
   def apply(
-    freshTimeout: Int | Double = null,
+    freshTimeout: js.UndefOr[Double] = js.undefined,
     ipCheck: js.UndefOr[Boolean] = js.undefined,
-    maxFreshTimeout: Int | Double = null,
+    maxFreshTimeout: js.UndefOr[Double] = js.undefined,
     uaCheck: js.UndefOr[Boolean] = js.undefined
   ): SessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (freshTimeout != null) __obj.updateDynamic("freshTimeout")(freshTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(ipCheck)) __obj.updateDynamic("ipCheck")(ipCheck.asInstanceOf[js.Any])
-    if (maxFreshTimeout != null) __obj.updateDynamic("maxFreshTimeout")(maxFreshTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(uaCheck)) __obj.updateDynamic("uaCheck")(uaCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(freshTimeout)) __obj.updateDynamic("freshTimeout")(freshTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipCheck)) __obj.updateDynamic("ipCheck")(ipCheck.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFreshTimeout)) __obj.updateDynamic("maxFreshTimeout")(maxFreshTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uaCheck)) __obj.updateDynamic("uaCheck")(uaCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
 }

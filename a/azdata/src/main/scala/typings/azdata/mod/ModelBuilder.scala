@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 trait ModelBuilder extends js.Object {
   def button(): ComponentBuilder[ButtonComponent]
   /**
-  		 * @deprecated please use radioCardGroup component.
-  		 */
+    * @deprecated please use radioCardGroup component.
+    */
   def card(): ComponentBuilder[CardComponent]
   def checkBox(): ComponentBuilder[CheckBoxComponent]
   def dashboardWebview(webviewId: String): ComponentBuilder[DashboardWebviewComponent]

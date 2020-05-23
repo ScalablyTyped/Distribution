@@ -1,37 +1,37 @@
 package typings.gapiClientAnalytics.gapi.client.analytics
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientAnalytics.AnonPrettyPrint
-import typings.gapiClientAnalytics.AnonProfileId
-import typings.gapiClientAnalytics.AnonQuotaUser
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientAnalytics.anon.PrettyPrint
+import typings.gapiClientAnalytics.anon.ProfileId
+import typings.gapiClientAnalytics.anon.QuotaUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProfilesResource extends js.Object {
   /** Deletes a view (profile). */
-  def delete(request: AnonProfileId): Request_[Unit]
+  def delete(request: ProfileId): Request[Unit]
   /** Gets a view (profile) to which the user has access. */
-  def get(request: AnonProfileId): Request_[Profile]
+  def get(request: ProfileId): Request[Profile]
   /** Create a new view (profile). */
-  def insert(request: AnonQuotaUser): Request_[Profile]
+  def insert(request: QuotaUser): Request[Profile]
   /** Lists views (profiles) to which the user has access. */
-  def list(request: AnonPrettyPrint): Request_[Profiles]
+  def list(request: PrettyPrint): Request[Profiles]
   /** Updates an existing view (profile). This method supports patch semantics. */
-  def patch(request: AnonProfileId): Request_[Profile]
+  def patch(request: ProfileId): Request[Profile]
   /** Updates an existing view (profile). */
-  def update(request: AnonProfileId): Request_[Profile]
+  def update(request: ProfileId): Request[Profile]
 }
 
 object ProfilesResource {
   @scala.inline
   def apply(
-    delete: AnonProfileId => Request_[Unit],
-    get: AnonProfileId => Request_[Profile],
-    insert: AnonQuotaUser => Request_[Profile],
-    list: AnonPrettyPrint => Request_[Profiles],
-    patch: AnonProfileId => Request_[Profile],
-    update: AnonProfileId => Request_[Profile]
+    delete: ProfileId => Request[Unit],
+    get: ProfileId => Request[Profile],
+    insert: QuotaUser => Request[Profile],
+    list: PrettyPrint => Request[Profiles],
+    patch: ProfileId => Request[Profile],
+    update: ProfileId => Request[Profile]
   ): ProfilesResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[ProfilesResource]

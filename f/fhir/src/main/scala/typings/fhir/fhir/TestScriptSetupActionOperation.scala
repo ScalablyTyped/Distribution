@@ -152,14 +152,14 @@ object TestScriptSetupActionOperation {
     accept: code = null,
     contentType: code = null,
     description: String = null,
-    destination: Int | Double = null,
+    destination: js.UndefOr[integer] = js.undefined,
     encodeRequestUrl: js.UndefOr[Boolean] = js.undefined,
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
     id: String = null,
     label: String = null,
     modifierExtension: js.Array[Extension] = null,
-    origin: Int | Double = null,
+    origin: js.UndefOr[integer] = js.undefined,
     params: String = null,
     requestHeader: js.Array[TestScriptSetupActionOperationRequestHeader] = null,
     requestId: id = null,
@@ -190,14 +190,14 @@ object TestScriptSetupActionOperation {
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (!js.isUndefined(encodeRequestUrl)) __obj.updateDynamic("encodeRequestUrl")(encodeRequestUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(destination)) __obj.updateDynamic("destination")(destination.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeRequestUrl)) __obj.updateDynamic("encodeRequestUrl")(encodeRequestUrl.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (!js.isUndefined(origin)) __obj.updateDynamic("origin")(origin.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (requestHeader != null) __obj.updateDynamic("requestHeader")(requestHeader.asInstanceOf[js.Any])
     if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])

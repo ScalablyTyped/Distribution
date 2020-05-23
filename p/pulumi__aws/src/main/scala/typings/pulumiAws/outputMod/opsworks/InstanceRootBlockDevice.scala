@@ -21,7 +21,7 @@ object InstanceRootBlockDevice {
     deleteOnTermination: js.UndefOr[Boolean] = js.undefined
   ): InstanceRootBlockDevice = {
     val __obj = js.Dynamic.literal(iops = iops.asInstanceOf[js.Any], volumeSize = volumeSize.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceRootBlockDevice]
   }
 }

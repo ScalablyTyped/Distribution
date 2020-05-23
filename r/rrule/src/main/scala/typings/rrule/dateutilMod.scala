@@ -1,7 +1,7 @@
 package typings.rrule
 
+import typings.rrule.anon.PickDategetTime
 import typings.rrule.datetimeMod.Time
-import typings.rrule.rruleNumbers.`9999`
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ object dateutilMod extends js.Object {
     /**
       * @see: <http://docs.python.org/library/datetime.html#datetime.MAXYEAR>
       */
-    val MAXYEAR: `9999` = js.native
+    val MAXYEAR: /* 9999 */ Double = js.native
     val MONTH_DAYS: js.Array[Double] = js.native
     /**
       * Number of milliseconds of one day
@@ -86,7 +86,7 @@ object dateutilMod extends js.Object {
     /**
       * @see: <http://docs.python.org/library/datetime.html#datetime.MAXYEAR>
       */
-    val MAXYEAR: `9999` = js.native
+    val MAXYEAR: /* 9999 */ Double = js.native
     val MONTH_DAYS: js.Array[Double] = js.native
     /**
       * Number of milliseconds of one day

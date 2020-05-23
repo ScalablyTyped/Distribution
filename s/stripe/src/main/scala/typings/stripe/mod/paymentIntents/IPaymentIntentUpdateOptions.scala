@@ -1,6 +1,6 @@
 package typings.stripe.mod.paymentIntents
 
-import typings.stripe.AnonAmountNumber
+import typings.stripe.anon.AmountNumber
 import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.mod.IShippingInformation
 import scala.scalajs.js
@@ -70,7 +70,7 @@ trait IPaymentIntentUpdateOptions extends js.Object {
   /**
     * The parameters used to automatically create a Transfer when the payment succeeds.
     */
-  var transfer_data: js.UndefOr[AnonAmountNumber] = js.undefined
+  var transfer_data: js.UndefOr[AmountNumber] = js.undefined
   /**
     * A string that identifies the resulting payment as part of a group.
     */
@@ -80,11 +80,11 @@ trait IPaymentIntentUpdateOptions extends js.Object {
 object IPaymentIntentUpdateOptions {
   @scala.inline
   def apply(
-    amount: Int | Double = null,
-    application_fee_amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
+    application_fee_amount: js.UndefOr[Double] = js.undefined,
     currency: String = null,
     customer: String = null,
-    description: String = null,
+    description: js.UndefOr[Null | String] = js.undefined,
     metadata: IOptionsMetadata = null,
     payment_method: String = null,
     payment_method_types: js.Array[PaymentIntentPaymentMethodType] = null,
@@ -94,20 +94,20 @@ object IPaymentIntentUpdateOptions {
     shipping: IShippingInformation = null,
     statement_descriptor: String = null,
     statement_descriptor_suffix: String = null,
-    transfer_data: AnonAmountNumber = null,
+    transfer_data: AmountNumber = null,
     transfer_group: String = null
   ): IPaymentIntentUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(application_fee_amount)) __obj.updateDynamic("application_fee_amount")(application_fee_amount.get.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types.asInstanceOf[js.Any])
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
-    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
+    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.get.asInstanceOf[js.Any])
     if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])

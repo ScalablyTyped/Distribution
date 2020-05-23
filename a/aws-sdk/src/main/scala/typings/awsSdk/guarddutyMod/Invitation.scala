@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Invitation extends js.Object {
   /**
-    * The ID of the account from which the invitations was sent.
+    * The ID of the account that the invitation was sent from.
     */
   var AccountId: js.UndefOr[typings.awsSdk.guarddutyMod.AccountId] = js.native
   /**
@@ -15,7 +15,7 @@ trait Invitation extends js.Object {
     */
   var InvitationId: js.UndefOr[String] = js.native
   /**
-    * Timestamp at which the invitation was sent.
+    * The timestamp when the invitation was sent.
     */
   var InvitedAt: js.UndefOr[String] = js.native
   /**

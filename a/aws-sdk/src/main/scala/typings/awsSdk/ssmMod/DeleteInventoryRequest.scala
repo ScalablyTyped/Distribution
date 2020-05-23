@@ -29,12 +29,12 @@ object DeleteInventoryRequest {
   def apply(
     TypeName: InventoryItemTypeName,
     ClientToken: ClientToken = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[DryRun] = js.undefined,
     SchemaDeleteOption: InventorySchemaDeleteOption = null
   ): DeleteInventoryRequest = {
     val __obj = js.Dynamic.literal(TypeName = TypeName.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (SchemaDeleteOption != null) __obj.updateDynamic("SchemaDeleteOption")(SchemaDeleteOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInventoryRequest]
   }

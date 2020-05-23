@@ -61,25 +61,25 @@ object PricingCardProps {
     button: ButtonInformation,
     price: String,
     color: String = null,
-    containerStyle: StyleProp[ViewStyle] = null,
+    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     info: js.Array[String] = null,
-    infoStyle: StyleProp[TextStyle] = null,
+    infoStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     onButtonPress: () => Unit = null,
-    pricingStyle: StyleProp[TextStyle] = null,
+    pricingStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     title: String = null,
-    titleStyle: StyleProp[TextStyle] = null,
-    wrapperStyle: StyleProp[ViewStyle] = null
+    titleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
+    wrapperStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): PricingCardProps = {
     val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (infoStyle != null) __obj.updateDynamic("infoStyle")(infoStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(infoStyle)) __obj.updateDynamic("infoStyle")(infoStyle.asInstanceOf[js.Any])
     if (onButtonPress != null) __obj.updateDynamic("onButtonPress")(js.Any.fromFunction0(onButtonPress))
-    if (pricingStyle != null) __obj.updateDynamic("pricingStyle")(pricingStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(pricingStyle)) __obj.updateDynamic("pricingStyle")(pricingStyle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
-    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleStyle)) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapperStyle)) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PricingCardProps]
   }
 }

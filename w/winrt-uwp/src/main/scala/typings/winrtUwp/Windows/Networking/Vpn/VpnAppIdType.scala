@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object VpnAppIdType extends js.Object {
   /** Package family name. */
   @js.native
   sealed trait packageFamilyName extends VpnAppIdType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnAppIdType with Double] = js.native
-  /* 2 */ @js.native
-  object filePath extends TopLevel[filePath with Double]
-  
-  /* 1 */ @js.native
-  object fullyQualifiedBinaryName extends TopLevel[fullyQualifiedBinaryName with Double]
-  
-  /* 0 */ @js.native
-  object packageFamilyName extends TopLevel[packageFamilyName with Double]
   
 }
 

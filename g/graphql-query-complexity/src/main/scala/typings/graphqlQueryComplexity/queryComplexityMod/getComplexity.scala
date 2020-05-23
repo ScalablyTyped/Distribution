@@ -1,6 +1,6 @@
 package typings.graphqlQueryComplexity.queryComplexityMod
 
-import typings.graphqlQueryComplexity.AnonEstimators
+import typings.graphqlQueryComplexity.anon.Estimators
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-query-complexity/dist/QueryComplexity", "getComplexity")
 @js.native
 object getComplexity extends js.Object {
-  def apply(options: AnonEstimators): Double = js.native
+  def apply(options: Estimators): Double = js.native
 }
 

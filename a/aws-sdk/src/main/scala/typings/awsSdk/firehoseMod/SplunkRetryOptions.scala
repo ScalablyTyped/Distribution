@@ -14,9 +14,9 @@ trait SplunkRetryOptions extends js.Object {
 
 object SplunkRetryOptions {
   @scala.inline
-  def apply(DurationInSeconds: Int | Double = null): SplunkRetryOptions = {
+  def apply(DurationInSeconds: js.UndefOr[SplunkRetryDurationInSeconds] = js.undefined): SplunkRetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (DurationInSeconds != null) __obj.updateDynamic("DurationInSeconds")(DurationInSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(DurationInSeconds)) __obj.updateDynamic("DurationInSeconds")(DurationInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplunkRetryOptions]
   }
 }

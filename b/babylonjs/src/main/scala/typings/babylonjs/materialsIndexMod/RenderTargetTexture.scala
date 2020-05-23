@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.AnonHeight
-import typings.babylonjs.AnonRatio
+import typings.babylonjs.anon.Height
+import typings.babylonjs.anon.Ratio
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import scala.scalajs.js
@@ -46,7 +46,7 @@ class RenderTargetTexture protected ()
   ) = this()
   def this(
     name: String,
-    size: AnonHeight,
+    size: Height,
     scene: Nullable[Scene],
     generateMipMaps: js.UndefOr[Boolean],
     doNotChangeAspectRatio: js.UndefOr[Boolean],
@@ -61,7 +61,7 @@ class RenderTargetTexture protected ()
   ) = this()
   def this(
     name: String,
-    size: AnonRatio,
+    size: Ratio,
     scene: Nullable[Scene],
     generateMipMaps: js.UndefOr[Boolean],
     doNotChangeAspectRatio: js.UndefOr[Boolean],

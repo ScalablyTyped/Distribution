@@ -15,7 +15,7 @@ object IChartOptions {
   @scala.inline
   def apply(element: js.Any, resize: js.UndefOr[Boolean] = js.undefined): IChartOptions = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChartOptions]
   }
 }

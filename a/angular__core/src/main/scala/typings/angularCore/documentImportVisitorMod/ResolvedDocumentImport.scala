@@ -19,10 +19,7 @@ object ResolvedDocumentImport {
     documentElement: ImportSpecifier = null,
     platformBrowserImport: NamedImports = null
   ): ResolvedDocumentImport = {
-    val __obj = js.Dynamic.literal()
-    if (commonImport != null) __obj.updateDynamic("commonImport")(commonImport.asInstanceOf[js.Any])
-    if (documentElement != null) __obj.updateDynamic("documentElement")(documentElement.asInstanceOf[js.Any])
-    if (platformBrowserImport != null) __obj.updateDynamic("platformBrowserImport")(platformBrowserImport.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(commonImport = commonImport.asInstanceOf[js.Any], documentElement = documentElement.asInstanceOf[js.Any], platformBrowserImport = platformBrowserImport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedDocumentImport]
   }
 }

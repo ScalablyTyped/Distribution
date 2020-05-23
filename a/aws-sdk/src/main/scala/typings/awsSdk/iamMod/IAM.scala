@@ -1,8 +1,8 @@
 package typings.awsSdk.iamMod
 
-import typings.awsSdk.GetPolicyRequestwaiterWai
-import typings.awsSdk.GetRoleRequestwaiterWaite
-import typings.awsSdk.GetUserRequestwaiterWaite
+import typings.awsSdk.anon.GetPolicyRequestwaiterWai
+import typings.awsSdk.anon.GetRoleRequestwaiterWaite
+import typings.awsSdk.anon.GetUserRequestwaiterWaite
 import typings.awsSdk.awsSdkStrings.instanceProfileExists
 import typings.awsSdk.awsSdkStrings.policyExists
 import typings.awsSdk.awsSdkStrings.roleExists
@@ -1812,11 +1812,11 @@ trait IAM extends Service {
     * Waits for the instanceProfileExists state by periodically calling the underlying IAM.getInstanceProfileoperation every 1 seconds (at most 40 times).
     */
   @JSName("waitFor")
-  def waitFor_instanceProfileExists(state: instanceProfileExists, params: typings.awsSdk.GetInstanceProfileRequest): Request[GetInstanceProfileResponse, AWSError] = js.native
+  def waitFor_instanceProfileExists(state: instanceProfileExists, params: typings.awsSdk.anon.GetInstanceProfileRequest): Request[GetInstanceProfileResponse, AWSError] = js.native
   @JSName("waitFor")
   def waitFor_instanceProfileExists(
     state: instanceProfileExists,
-    params: typings.awsSdk.GetInstanceProfileRequest,
+    params: typings.awsSdk.anon.GetInstanceProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetInstanceProfileResponse, Unit]
   ): Request[GetInstanceProfileResponse, AWSError] = js.native
   /**

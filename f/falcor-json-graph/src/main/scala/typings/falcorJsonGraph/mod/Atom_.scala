@@ -19,10 +19,10 @@ object Atom_ {
   def apply(
     $type: typings.falcorJsonGraph.falcorJsonGraphStrings.atom,
     value: js.Any,
-    $expires: Int | Double = null
+    $expires: js.UndefOr[Double] = js.undefined
   ): Atom_ = {
     val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if ($expires != null) __obj.updateDynamic("$expires")($expires.asInstanceOf[js.Any])
+    if (!js.isUndefined($expires)) __obj.updateDynamic("$expires")($expires.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Atom_]
   }
 }

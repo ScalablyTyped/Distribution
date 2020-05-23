@@ -4,7 +4,7 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.ScrollViewProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
@@ -60,7 +60,7 @@ trait ScrollableTabViewProperties extends Props[ScrollableTabView] {
     * You can manually pass the props to the TabBar component.
     */
   var renderTabBar: js.UndefOr[
-    (js.Function1[/* props */ typings.reactNativeScrollableTabView.TabBarProps, Element]) | `false`
+    (js.Function1[/* props */ typings.reactNativeScrollableTabView.anon.TabBarProps, Element]) | `false`
   ] = js.undefined
   /**
     * on tab press change tab without animation.
@@ -104,44 +104,44 @@ object ScrollableTabViewProperties {
   def apply(
     children: ReactNode = null,
     contentProps: ScrollViewProps = null,
-    initialPage: Int | Double = null,
+    initialPage: js.UndefOr[Double] = js.undefined,
     key: Key = null,
     locked: js.UndefOr[Boolean] = js.undefined,
     onChangeTab: /* value */ ChangeTabProperties => Unit = null,
     onScroll: /* value */ Double => Unit = null,
-    page: Int | Double = null,
-    prerenderingSiblingsNumber: Int | Double = null,
-    ref: LegacyRef[ScrollableTabView] = null,
-    renderTabBar: (js.Function1[/* props */ typings.reactNativeScrollableTabView.TabBarProps, Element]) | `false` = null,
+    page: js.UndefOr[Double] = js.undefined,
+    prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined,
+    ref: js.UndefOr[Null | LegacyRef[ScrollableTabView]] = js.undefined,
+    renderTabBar: (js.Function1[/* props */ typings.reactNativeScrollableTabView.anon.TabBarProps, Element]) | `false` = null,
     scrollWithoutAnimation: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     tabBarActiveTextColor: String = null,
     tabBarBackgroundColor: String = null,
     tabBarInactiveTextColor: String = null,
     tabBarPosition: top | bottom | overlayTop | overlayBottom = null,
-    tabBarTextStyle: StyleProp[TextStyle] = null,
-    tabBarUnderlineStyle: StyleProp[ViewStyle] = null
+    tabBarTextStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
+    tabBarUnderlineStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): ScrollableTabViewProperties = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (contentProps != null) __obj.updateDynamic("contentProps")(contentProps.asInstanceOf[js.Any])
-    if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialPage)) __obj.updateDynamic("initialPage")(initialPage.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
     if (onChangeTab != null) __obj.updateDynamic("onChangeTab")(js.Any.fromFunction1(onChangeTab))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (prerenderingSiblingsNumber != null) __obj.updateDynamic("prerenderingSiblingsNumber")(prerenderingSiblingsNumber.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prerenderingSiblingsNumber)) __obj.updateDynamic("prerenderingSiblingsNumber")(prerenderingSiblingsNumber.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(renderTabBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollWithoutAnimation)) __obj.updateDynamic("scrollWithoutAnimation")(scrollWithoutAnimation.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollWithoutAnimation)) __obj.updateDynamic("scrollWithoutAnimation")(scrollWithoutAnimation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabBarActiveTextColor != null) __obj.updateDynamic("tabBarActiveTextColor")(tabBarActiveTextColor.asInstanceOf[js.Any])
     if (tabBarBackgroundColor != null) __obj.updateDynamic("tabBarBackgroundColor")(tabBarBackgroundColor.asInstanceOf[js.Any])
     if (tabBarInactiveTextColor != null) __obj.updateDynamic("tabBarInactiveTextColor")(tabBarInactiveTextColor.asInstanceOf[js.Any])
     if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
-    if (tabBarTextStyle != null) __obj.updateDynamic("tabBarTextStyle")(tabBarTextStyle.asInstanceOf[js.Any])
-    if (tabBarUnderlineStyle != null) __obj.updateDynamic("tabBarUnderlineStyle")(tabBarUnderlineStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBarTextStyle)) __obj.updateDynamic("tabBarTextStyle")(tabBarTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBarUnderlineStyle)) __obj.updateDynamic("tabBarUnderlineStyle")(tabBarUnderlineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollableTabViewProperties]
   }
 }

@@ -54,13 +54,13 @@ object Inside {
   def apply(
     angleAxisIndex: Double | js.Array[Double] = null,
     disable: js.UndefOr[Boolean] = js.undefined,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     endValue: Double | String | Date = null,
     filterMode: filter | weakFilter | empty | none = null,
     id: String = null,
-    maxSpan: Int | Double = null,
+    maxSpan: js.UndefOr[Double] = js.undefined,
     maxValueSpan: Double | String | Date = null,
-    minSpan: Int | Double = null,
+    minSpan: js.UndefOr[Double] = js.undefined,
     minValueSpan: Double | String | Date = null,
     moveOnMouseMove: js.UndefOr[Boolean] = js.undefined,
     moveOnMouseWheel: js.UndefOr[Boolean] = js.undefined,
@@ -69,9 +69,9 @@ object Inside {
     radiusAxisIndex: Double | js.Array[Double] = null,
     rangeMode: js.Array[String] = null,
     singleAxisIndex: Double | js.Array[Double] = null,
-    start: Int | Double = null,
+    start: js.UndefOr[Double] = js.undefined,
     startValue: Double | String | Date = null,
-    throttle: Int | Double = null,
+    throttle: js.UndefOr[Double] = js.undefined,
     `type`: String = null,
     xAxisIndex: Double | js.Array[Double] = null,
     yAxisIndex: Double | js.Array[Double] = null,
@@ -80,30 +80,30 @@ object Inside {
   ): Inside = {
     val __obj = js.Dynamic.literal()
     if (angleAxisIndex != null) __obj.updateDynamic("angleAxisIndex")(angleAxisIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxSpan != null) __obj.updateDynamic("maxSpan")(maxSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSpan)) __obj.updateDynamic("maxSpan")(maxSpan.get.asInstanceOf[js.Any])
     if (maxValueSpan != null) __obj.updateDynamic("maxValueSpan")(maxValueSpan.asInstanceOf[js.Any])
-    if (minSpan != null) __obj.updateDynamic("minSpan")(minSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(minSpan)) __obj.updateDynamic("minSpan")(minSpan.get.asInstanceOf[js.Any])
     if (minValueSpan != null) __obj.updateDynamic("minValueSpan")(minValueSpan.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveOnMouseMove)) __obj.updateDynamic("moveOnMouseMove")(moveOnMouseMove.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveOnMouseWheel)) __obj.updateDynamic("moveOnMouseWheel")(moveOnMouseWheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveOnMouseMove)) __obj.updateDynamic("moveOnMouseMove")(moveOnMouseMove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveOnMouseWheel)) __obj.updateDynamic("moveOnMouseWheel")(moveOnMouseWheel.get.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDefaultMouseMove)) __obj.updateDynamic("preventDefaultMouseMove")(preventDefaultMouseMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDefaultMouseMove)) __obj.updateDynamic("preventDefaultMouseMove")(preventDefaultMouseMove.get.asInstanceOf[js.Any])
     if (radiusAxisIndex != null) __obj.updateDynamic("radiusAxisIndex")(radiusAxisIndex.asInstanceOf[js.Any])
     if (rangeMode != null) __obj.updateDynamic("rangeMode")(rangeMode.asInstanceOf[js.Any])
     if (singleAxisIndex != null) __obj.updateDynamic("singleAxisIndex")(singleAxisIndex.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttle)) __obj.updateDynamic("throttle")(throttle.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
     if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomLock)) __obj.updateDynamic("zoomLock")(zoomLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomOnMouseWheel)) __obj.updateDynamic("zoomOnMouseWheel")(zoomOnMouseWheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomLock)) __obj.updateDynamic("zoomLock")(zoomLock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomOnMouseWheel)) __obj.updateDynamic("zoomOnMouseWheel")(zoomOnMouseWheel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inside]
   }
 }

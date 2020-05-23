@@ -1,17 +1,20 @@
 package typings.jupyterlabUiComponents
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jupyterlabUiComponents.anon.IOptionsloadingboolean
+import typings.jupyterlabUiComponents.anon.Icon
+import typings.jupyterlabUiComponents.anon.Ignore
+import typings.jupyterlabUiComponents.anon.PartialIResolverPropsIPro
+import typings.jupyterlabUiComponents.anon.PartialIResolverPropsIRea
 import typings.jupyterlabUiComponents.blueprintMod.CommonProps
 import typings.jupyterlabUiComponents.blueprintMod.IButtonProps
 import typings.jupyterlabUiComponents.blueprintMod.IInputGroupProps
 import typings.jupyterlabUiComponents.jupyterlabUiComponentsBooleans.`false`
-import typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`jp-DefaultStyle`
-import typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`jp-HTMLSelect`
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IIcon
 import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
 import typings.luminoWidgets.mod.Menu
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -77,8 +80,8 @@ object mod extends js.Object {
     def this(options: typings.luminoWidgets.tabbarMod.TabBar.IOptions[T]) = this()
   }
   
-  val DEFAULT_STYLE_CLASS: `jp-DefaultStyle` = js.native
-  val HTML_SELECT_CLASS: `jp-HTMLSelect` = js.native
+  val DEFAULT_STYLE_CLASS: /* "jp-DefaultStyle" */ String = js.native
+  val HTML_SELECT_CLASS: /* "jp-HTMLSelect" */ String = js.native
   val ILabIconManager: Token[typings.jupyterlabUiComponents.tokensMod.ILabIconManager] = js.native
   val addIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val badIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
@@ -165,7 +168,7 @@ object mod extends js.Object {
   @JSName("classes")
   def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = js.native
   def getReactAttrs(elem: typings.std.Element): js.Any = js.native
-  def getReactAttrs(elem: typings.std.Element, hasIgnore: AnonIgnore): js.Any = js.native
+  def getReactAttrs(elem: typings.std.Element, hasIgnore: Ignore): js.Any = js.native
   @js.native
   object CommandPaletteSvg extends js.Object {
     /**
@@ -216,7 +219,7 @@ object mod extends js.Object {
       *
       * @returns a LabIcon instance
       */
-    def resolve(hasIcon: AnonIcon): typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+    def resolve(hasIcon: Icon): typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
     /**
       * Resolve an icon name or a {name, svgstr} pair into a DOM element.
       * If icon arg is undefined, the function will fall back to trying to render

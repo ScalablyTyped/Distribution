@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
-import typings.jupyterlabServices.AnonWait
+import typings.jupyterlabServices.anon.Wait
 import typings.jupyterlabServices.jupyterlabServicesStrings.clear_output
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.luminoCoreutils.jsonMod.JSONObject
@@ -14,14 +14,14 @@ trait IClearOutputMsg
   extends IIOPubMessage[clear_output]
      with _Message {
   @JSName("content")
-  var content_IClearOutputMsg: AnonWait
+  var content_IClearOutputMsg: Wait
 }
 
 object IClearOutputMsg {
   @scala.inline
   def apply(
     channel: iopub,
-    content: AnonWait,
+    content: Wait,
     header: IHeader[clear_output],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object,

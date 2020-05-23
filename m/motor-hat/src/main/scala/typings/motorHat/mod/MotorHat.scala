@@ -1,6 +1,6 @@
 package typings.motorHat.mod
 
-import typings.motorHat.AnonM1
+import typings.motorHat.anon.M1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait MotorHat extends js.Object {
     * Array of initialized DC controllers
     */
   val dcs: js.Array[DC] = js.native
-  val pins: AnonM1 = js.native
+  val pins: M1 = js.native
   /**
     * Array of initialized Servo controllers
     */

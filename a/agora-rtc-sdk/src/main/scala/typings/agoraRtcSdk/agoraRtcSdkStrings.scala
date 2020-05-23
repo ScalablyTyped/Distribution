@@ -75,6 +75,9 @@ object agoraRtcSdkStrings {
   sealed trait `client-role-changed` extends js.Object
   
   @js.native
+  sealed trait connected extends js.Object
+  
+  @js.native
   sealed trait `connection-state-change` extends js.Object
   
   @js.native
@@ -174,6 +177,12 @@ object agoraRtcSdkStrings {
   sealed trait `playout-device-changed` extends js.Object
   
   @js.native
+  sealed trait `receive-metadata` extends js.Object
+  
+  @js.native
+  sealed trait reconnect extends js.Object
+  
+  @js.native
   sealed trait `recording-device-changed` extends js.Object
   
   @js.native
@@ -217,6 +226,9 @@ object agoraRtcSdkStrings {
   
   @js.native
   sealed trait `stream-type-changed` extends js.Object
+  
+  @js.native
+  sealed trait `stream-unpublished` extends js.Object
   
   @js.native
   sealed trait `stream-updated` extends js.Object
@@ -307,6 +319,8 @@ object agoraRtcSdkStrings {
   @scala.inline
   def `client-role-changed`: `client-role-changed` = "client-role-changed".asInstanceOf[`client-role-changed`]
   @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  @scala.inline
   def `connection-state-change`: `connection-state-change` = "connection-state-change".asInstanceOf[`connection-state-change`]
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
@@ -373,6 +387,10 @@ object agoraRtcSdkStrings {
   @scala.inline
   def `playout-device-changed`: `playout-device-changed` = "playout-device-changed".asInstanceOf[`playout-device-changed`]
   @scala.inline
+  def `receive-metadata`: `receive-metadata` = "receive-metadata".asInstanceOf[`receive-metadata`]
+  @scala.inline
+  def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
+  @scala.inline
   def `recording-device-changed`: `recording-device-changed` = "recording-device-changed".asInstanceOf[`recording-device-changed`]
   @scala.inline
   def rtc: rtc = "rtc".asInstanceOf[rtc]
@@ -402,6 +420,8 @@ object agoraRtcSdkStrings {
   def `stream-subscribed`: `stream-subscribed` = "stream-subscribed".asInstanceOf[`stream-subscribed`]
   @scala.inline
   def `stream-type-changed`: `stream-type-changed` = "stream-type-changed".asInstanceOf[`stream-type-changed`]
+  @scala.inline
+  def `stream-unpublished`: `stream-unpublished` = "stream-unpublished".asInstanceOf[`stream-unpublished`]
   @scala.inline
   def `stream-updated`: `stream-updated` = "stream-updated".asInstanceOf[`stream-updated`]
   @scala.inline

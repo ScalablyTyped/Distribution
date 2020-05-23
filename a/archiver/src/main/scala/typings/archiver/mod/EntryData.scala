@@ -30,13 +30,13 @@ object EntryData {
   def apply(
     name: String,
     date: Date | String = null,
-    mode: Int | Double = null,
+    mode: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
     stats: Stats = null
   ): EntryData = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryData]

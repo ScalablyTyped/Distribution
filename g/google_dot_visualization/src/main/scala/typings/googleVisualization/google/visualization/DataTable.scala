@@ -1,15 +1,12 @@
 package typings.googleVisualization.google.visualization
 
-import typings.googleVisualization.AnonMax
+import typings.googleVisualization.anon.Max
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.visualization.DataTable")
 @js.native
-class DataTable () extends js.Object {
-  def this(data: js.Any) = this()
-  def this(data: js.Any, version: js.Any) = this()
+trait DataTable extends js.Object {
   def addColumn(descriptionObject: DataTableColumnDescription): Double = js.native
   def addColumn(`type`: String): Double = js.native
   def addColumn(`type`: String, label: String): Double = js.native
@@ -24,7 +21,7 @@ class DataTable () extends js.Object {
   def getColumnPattern(columnIndex: Double): String = js.native
   def getColumnProperties(columnIndex: Double): Properties = js.native
   def getColumnProperty(columnIndex: Double, name: String): js.Any = js.native
-  def getColumnRange(columnIndex: Double): AnonMax = js.native
+  def getColumnRange(columnIndex: Double): Max = js.native
   def getColumnRole(columnIndex: Double): String = js.native
   def getColumnType(columnIndex: Double): String = js.native
   def getDistinctValues(columnIndex: Double): js.Array[_] = js.native

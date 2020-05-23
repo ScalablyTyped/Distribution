@@ -30,7 +30,7 @@ trait CallInformation[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends
 
 object CallInformation {
   @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](
+  def apply[T](
     calls: js.Array[Call[T]],
     reset: () => Unit,
     returnedCalls: js.Array[ReturnedCall[T]],
@@ -42,13 +42,7 @@ object CallInformation {
     lastReturnedCall: ReturnedCall[T] = null,
     lastThrownCall: ThrownCall[T] = null
   ): CallInformation[T] = {
-    val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), returnedCalls = returnedCalls.asInstanceOf[js.Any], thrownCalls = thrownCalls.asInstanceOf[js.Any])
-    if (firstCall != null) __obj.updateDynamic("firstCall")(firstCall.asInstanceOf[js.Any])
-    if (firstReturnedCall != null) __obj.updateDynamic("firstReturnedCall")(firstReturnedCall.asInstanceOf[js.Any])
-    if (firstThrownCall != null) __obj.updateDynamic("firstThrownCall")(firstThrownCall.asInstanceOf[js.Any])
-    if (lastCall != null) __obj.updateDynamic("lastCall")(lastCall.asInstanceOf[js.Any])
-    if (lastReturnedCall != null) __obj.updateDynamic("lastReturnedCall")(lastReturnedCall.asInstanceOf[js.Any])
-    if (lastThrownCall != null) __obj.updateDynamic("lastThrownCall")(lastThrownCall.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), returnedCalls = returnedCalls.asInstanceOf[js.Any], thrownCalls = thrownCalls.asInstanceOf[js.Any], firstCall = firstCall.asInstanceOf[js.Any], firstReturnedCall = firstReturnedCall.asInstanceOf[js.Any], firstThrownCall = firstThrownCall.asInstanceOf[js.Any], lastCall = lastCall.asInstanceOf[js.Any], lastReturnedCall = lastReturnedCall.asInstanceOf[js.Any], lastThrownCall = lastThrownCall.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallInformation[T]]
   }
 }

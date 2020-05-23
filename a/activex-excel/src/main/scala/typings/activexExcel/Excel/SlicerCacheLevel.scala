@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.SlicerCacheLevel")
 @js.native
-class SlicerCacheLevel protected () extends js.Object {
+trait SlicerCacheLevel extends js.Object {
   val Application: typings.activexExcel.Excel.Application = js.native
   val Count: Double = js.native
   val Creator: XlCreator = js.native

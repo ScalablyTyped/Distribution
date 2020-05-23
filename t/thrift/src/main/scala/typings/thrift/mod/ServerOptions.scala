@@ -1,7 +1,7 @@
 package typings.thrift.mod
 
 import typings.node.tlsMod.TlsOptions
-import typings.thrift.AnonInstantiable
+import typings.thrift.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ object ServerOptions {
     files: String = null,
     handler: THandler = null,
     headers: HttpHeaders = null,
-    processor: AnonInstantiable[THandler, TProcessor] = null,
+    processor: Instantiable[THandler, TProcessor] = null,
     protocol: TProtocolConstructor = null,
     services: ServiceMap[TProcessor, THandler] = null,
     tls: TlsOptions = null,

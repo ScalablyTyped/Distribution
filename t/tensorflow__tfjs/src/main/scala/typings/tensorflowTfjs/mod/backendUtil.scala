@@ -1,6 +1,5 @@
 package typings.tensorflowTfjs.mod
 
-import typings.tensorflowTfjs.tensorflowTfjsNumbers.`30`
 import typings.tensorflowTfjs.tensorflowTfjsStrings.NCDHW
 import typings.tensorflowTfjs.tensorflowTfjsStrings.NCHW
 import typings.tensorflowTfjs.tensorflowTfjsStrings.NDHWC
@@ -21,7 +20,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs", "backend_util")
 @js.native
 object backendUtil extends js.Object {
-  val PARALLELIZE_THRESHOLD: `30` = js.native
+  val PARALLELIZE_THRESHOLD: /* 30 */ Double = js.native
   def assertAndGetBroadcastShape(shapeA: js.Array[Double], shapeB: js.Array[Double]): js.Array[Double] = js.native
   def assertAxesAreInnerMostDims(msg: String, axes: js.Array[Double], rank: Double): Unit = js.native
   def assertParamsConsistent(shapes: js.Array[js.Array[Double]], axis: Double): Unit = js.native

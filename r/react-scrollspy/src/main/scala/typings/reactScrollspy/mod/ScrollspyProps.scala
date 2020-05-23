@@ -34,7 +34,7 @@ object ScrollspyProps {
     items: js.Array[String],
     className: String = null,
     componentTag: String | ComponentType[js.Object] = null,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     onUpdate: /* item */ String => Unit = null,
     rootEl: String = null,
     scrolledPastClassName: String = null,
@@ -43,7 +43,7 @@ object ScrollspyProps {
     val __obj = js.Dynamic.literal(currentClassName = currentClassName.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentTag != null) __obj.updateDynamic("componentTag")(componentTag.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (rootEl != null) __obj.updateDynamic("rootEl")(rootEl.asInstanceOf[js.Any])
     if (scrolledPastClassName != null) __obj.updateDynamic("scrolledPastClassName")(scrolledPastClassName.asInstanceOf[js.Any])

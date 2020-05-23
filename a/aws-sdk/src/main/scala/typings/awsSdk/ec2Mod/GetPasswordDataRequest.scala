@@ -18,9 +18,9 @@ trait GetPasswordDataRequest extends js.Object {
 
 object GetPasswordDataRequest {
   @scala.inline
-  def apply(InstanceId: InstanceId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): GetPasswordDataRequest = {
+  def apply(InstanceId: InstanceId, DryRun: js.UndefOr[Boolean] = js.undefined): GetPasswordDataRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPasswordDataRequest]
   }
 }

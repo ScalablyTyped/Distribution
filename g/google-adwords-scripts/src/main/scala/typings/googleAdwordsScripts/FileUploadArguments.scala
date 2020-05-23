@@ -19,7 +19,7 @@ object FileUploadArguments {
   ): FileUploadArguments = {
     val __obj = js.Dynamic.literal()
     if (fileLocale != null) __obj.updateDynamic("fileLocale")(fileLocale.asInstanceOf[js.Any])
-    if (!js.isUndefined(moneyInMicros)) __obj.updateDynamic("moneyInMicros")(moneyInMicros.asInstanceOf[js.Any])
+    if (!js.isUndefined(moneyInMicros)) __obj.updateDynamic("moneyInMicros")(moneyInMicros.get.asInstanceOf[js.Any])
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUploadArguments]
   }

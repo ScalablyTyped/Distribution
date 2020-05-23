@@ -15,7 +15,7 @@ object DeactivateOptions {
   def apply(onDeactivate: () => Unit = null, returnFocus: js.UndefOr[Boolean] = js.undefined): DeactivateOptions = {
     val __obj = js.Dynamic.literal()
     if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(js.Any.fromFunction0(onDeactivate))
-    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeactivateOptions]
   }
 }

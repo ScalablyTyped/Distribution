@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Gpio
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object GpioPinEdge extends js.Object {
   /** The value of the GPIO pin changed from low to high. */
   @js.native
   sealed trait risingEdge extends GpioPinEdge
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GpioPinEdge with Double] = js.native
-  /* 0 */ @js.native
-  object fallingEdge extends TopLevel[fallingEdge with Double]
-  
-  /* 1 */ @js.native
-  object risingEdge extends TopLevel[risingEdge with Double]
   
 }
 

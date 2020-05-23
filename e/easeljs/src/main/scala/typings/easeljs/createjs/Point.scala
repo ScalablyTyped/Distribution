@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.Point")
 @js.native
-class Point () extends js.Object {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
+trait Point extends js.Object {
   // properties
   var x: Double = js.native
   var y: Double = js.native

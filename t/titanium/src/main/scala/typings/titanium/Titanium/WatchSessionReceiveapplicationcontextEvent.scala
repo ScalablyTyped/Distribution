@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * App received app context from apple watch. Will be called on startup if an applicationContext is available.
-	 */
+  * App received app context from apple watch. Will be called on startup if an applicationContext is available.
+  */
 trait WatchSessionReceiveapplicationcontextEvent extends WatchSessionBaseEvent {
   /**
-  		 * The application Context
-  		 */
+    * The application Context
+    */
   var applicationContext: js.Any
 }
 

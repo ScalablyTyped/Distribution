@@ -1,5 +1,8 @@
 package typings.popmotion
 
+import typings.popmotion.actionMod.Action
+import typings.popmotion.actionTypesMod.ColdSubscription
+import typings.popmotion.springTypesMod.SpringProps
 import typings.popmotion.vectorMod.ActionFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,5 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object springMod extends js.Object {
   val default: ActionFactory = js.native
+  def springSole(): Action[ColdSubscription] = js.native
+  def springSole(props: SpringProps): Action[ColdSubscription] = js.native
 }
 

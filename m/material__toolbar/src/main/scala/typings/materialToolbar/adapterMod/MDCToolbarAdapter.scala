@@ -1,6 +1,6 @@
 package typings.materialToolbar.adapterMod
 
-import typings.materialToolbar.AnonFlexibleExpansionRatio
+import typings.materialToolbar.anon.FlexibleExpansionRatio
 import typings.std.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait MDCToolbarAdapter extends js.Object {
   def getViewportScrollY(): Double
   def getViewportWidth(): Double
   def hasClass(className: String): Boolean
-  def notifyChange(evtData: AnonFlexibleExpansionRatio): Unit
+  def notifyChange(evtData: FlexibleExpansionRatio): Unit
   def registerResizeHandler(handler: EventListener): Unit
   def registerScrollHandler(handler: EventListener): Unit
   def removeClass(className: String): Unit
@@ -36,7 +36,7 @@ object MDCToolbarAdapter {
     getViewportScrollY: () => Double,
     getViewportWidth: () => Double,
     hasClass: String => Boolean,
-    notifyChange: AnonFlexibleExpansionRatio => Unit,
+    notifyChange: FlexibleExpansionRatio => Unit,
     registerResizeHandler: EventListener => Unit,
     registerScrollHandler: EventListener => Unit,
     removeClass: String => Unit,

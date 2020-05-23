@@ -12,33 +12,33 @@ trait TestContextBase extends js.Object {
   var isSuite: `false` = js.native
   var isTest: `true` = js.native
   /**
-  		 * Get whether timeouts are enabled.
-  		 */
+    * Get whether timeouts are enabled.
+    */
   def enableTimeouts(): Boolean = js.native
   /**
-  		 * Set whether timeouts are enabled.
-  		 */
+    * Set whether timeouts are enabled.
+    */
   def enableTimeouts(enabled: Boolean): this.type = js.native
   /**
-  		 * Mark a test as skipped.
-  		 */
+    * Mark a test as skipped.
+    */
   def skip(): scala.Nothing = js.native
   /**
-  		 * Get test slowness threshold.
-  		 */
+    * Get test slowness threshold.
+    */
   def slow(): Double = js.native
   /**
-  		 * Set test slowness threshold.
-  		 */
+    * Set test slowness threshold.
+    */
   def slow(ms: String): this.type = js.native
   def slow(ms: Double): this.type = js.native
   /**
-  		 * Get test timeout.
-  		 */
+    * Get test timeout.
+    */
   def timeout(): Double = js.native
   /**
-  		 * Set test timeout.
-  		 */
+    * Set test timeout.
+    */
   def timeout(ms: String): this.type = js.native
   def timeout(ms: Double): this.type = js.native
 }

@@ -8,6 +8,23 @@ import typings.react.mod.PropsWithoutRef
 import typings.react.mod.Provider
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
+import typings.reactIntl.anon.Children
+import typings.reactIntl.anon.DateTimeFormatOptionsCust
+import typings.reactIntl.anon.DateTimeFormatOptionsCustChildren
+import typings.reactIntl.anon.DisplayNamesOptionsvalues
+import typings.reactIntl.anon.IntlListFormatOptionsvalu
+import typings.reactIntl.anon.PartialPickPropschildreno
+import typings.reactIntl.anon.PartialState
+import typings.reactIntl.anon.PartialStateCurrentValueInSeconds
+import typings.reactIntl.anon.PickIntlConfigformatsmess
+import typings.reactIntl.anon.PickPropschildrenotherzer
+import typings.reactIntl.anon.PickPropsunitvalue
+import typings.reactIntl.anon.TagName
+import typings.reactIntl.anon.UnifiedNumberFormatOption
+import typings.reactIntl.anon.Values
+import typings.reactIntl.anon.WeakValidationMapPickProp
+import typings.reactIntl.anon.WrappedComponent
+import typings.reactIntl.anon.WrappedComponentComponentType
 import typings.reactIntl.htmlMessageMod.default
 import typings.reactIntl.injectIntlMod.Opts
 import typings.reactIntl.injectIntlMod.WithIntlProps
@@ -50,7 +67,7 @@ object libMod extends js.Object {
   val FormattedDisplayName: FC[DisplayNamesOptionsvalues] = js.native
   val FormattedList: FC[IntlListFormatOptionsvalu] = js.native
   val FormattedNumber: FC[UnifiedNumberFormatOption] = js.native
-  val FormattedNumberParts: FC[FormatNumberOptions with AnonChildren] = js.native
+  val FormattedNumberParts: FC[FormatNumberOptions with Children] = js.native
   val FormattedTime: FC[DateTimeFormatOptionsCust] = js.native
   val FormattedTimeParts: FC[DateTimeFormatOptionsCustChildren] = js.native
   val IntlContext: Context[IntlShape] = js.native
@@ -59,25 +76,25 @@ object libMod extends js.Object {
   def createIntl(config: OptionalIntlConfig, cache: IntlCache): IntlShape = js.native
   def createIntlCache(): IntlCache = js.native
   def defineMessages[T, U /* <: Record[String, T] */](msgs: U): U = js.native
-  def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] with (AnonWrappedComponent[P, IntlPropName]) = js.native
+  def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] with (WrappedComponent[P, IntlPropName]) = js.native
   @JSName("injectIntl")
-  def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[P]] with RefAttributes[T]]) with (AnonWrappedComponentComponentType[P, IntlPropName]) = js.native
+  def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[P]] with RefAttributes[T]]) with (WrappedComponentComponentType[P, IntlPropName]) = js.native
   @JSName("injectIntl")
-  def injectIntl_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] with (AnonWrappedComponent[P, IntlPropName]) = js.native
+  def injectIntl_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] with (WrappedComponent[P, IntlPropName]) = js.native
   @JSName("injectIntl")
-  def injectIntl_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[P]] with RefAttributes[T]]) with (AnonWrappedComponentComponentType[P, IntlPropName]) = js.native
+  def injectIntl_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[P]] with RefAttributes[T]]) with (WrappedComponentComponentType[P, IntlPropName]) = js.native
   def useIntl(): IntlShape = js.native
   /* static members */
   @js.native
   object FormattedHTMLMessage extends js.Object {
-    var defaultProps: AnonTagName = js.native
+    var defaultProps: TagName = js.native
     var displayName: String = js.native
   }
   
   /* static members */
   @js.native
   object FormattedMessage extends js.Object {
-    var defaultProps: AnonValues = js.native
+    var defaultProps: Values = js.native
     var displayName: String = js.native
   }
   

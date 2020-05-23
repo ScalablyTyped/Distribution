@@ -1,6 +1,6 @@
 package typings.sequelize.mod
 
-import typings.sequelize.AnonMsg
+import typings.sequelize.anon.Msg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +56,7 @@ trait DefineAttributeColumnOptions extends ColumnOptions {
     * composite unique index. If multiple columns have the same string, they will be part of the same unique
     * index
     */
-  var unique: js.UndefOr[Boolean | String | AnonMsg] = js.undefined
+  var unique: js.UndefOr[Boolean | String | Msg] = js.undefined
   /**
     * An object of validations to execute for this column every time the model is saved. Can be either the
     * name of a validation provided by validator.js, a validation function provided by extending validator.js
@@ -97,21 +97,21 @@ object DefineAttributeColumnOptions {
     primaryKey: js.UndefOr[Boolean] = js.undefined,
     references: DefineAttributeColumnReferencesOptions = null,
     set: /* val */ js.Any => Unit = null,
-    unique: Boolean | String | AnonMsg = null,
+    unique: Boolean | String | Msg = null,
     validate: DefineValidateOptions = null,
     values: js.Array[String] = null
   ): DefineAttributeColumnOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.get.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.get.asInstanceOf[js.Any])
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
     if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])

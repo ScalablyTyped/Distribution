@@ -1,10 +1,10 @@
 package typings.packageJson.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.packageJson.AnonDictversion
-import typings.packageJson.AnonEmail
-import typings.packageJson.AnonType
-import typings.packageJson.AnonUrl
+import typings.packageJson.anon.Dictversion
+import typings.packageJson.anon.Email
+import typings.packageJson.anon.Type
+import typings.packageJson.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait FullMetadata
      with HoistedData {
   val _id: String
   val _rev: String
-  val time: AnonDictversion
+  val time: Dictversion
   val users: js.UndefOr[StringDictionary[Boolean]] = js.undefined
   @JSName("versions")
   val versions_FullMetadata: StringDictionary[FullVersion]
@@ -28,10 +28,10 @@ object FullMetadata {
     `dist-tags`: DistTags,
     modified: String,
     name: String,
-    time: AnonDictversion,
+    time: Dictversion,
     versions: StringDictionary[FullVersion],
     author: Person = null,
-    bugs: AnonEmail | AnonUrl = null,
+    bugs: Email | Url = null,
     contributors: js.Array[Person] = null,
     description: String = null,
     homepage: String = null,
@@ -40,7 +40,7 @@ object FullMetadata {
     maintainers: js.Array[Person] = null,
     readme: String = null,
     readmeFilename: String = null,
-    repository: AnonType = null,
+    repository: Type = null,
     users: StringDictionary[Boolean] = null
   ): FullMetadata = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])

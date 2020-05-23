@@ -1,8 +1,8 @@
 package typings.reactIntl.mod
 
 import typings.react.mod.Component
-import typings.reactIntl.PartialState2
-import typings.reactIntl.PickPropsunitvalue
+import typings.reactIntl.anon.PartialState2
+import typings.reactIntl.anon.PickPropsunitvalue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

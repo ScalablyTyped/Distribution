@@ -10,7 +10,7 @@ trait ResourceClientCreate[T /* <: js.Object */, U /* <: js.Object */] extends j
 
 object ResourceClientCreate {
   @scala.inline
-  def apply[T /* <: js.Object */, U /* <: js.Object */](create: U => js.Promise[T]): ResourceClientCreate[T, U] = {
+  def apply[T, U](create: U => js.Promise[T]): ResourceClientCreate[T, U] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[ResourceClientCreate[T, U]]
   }

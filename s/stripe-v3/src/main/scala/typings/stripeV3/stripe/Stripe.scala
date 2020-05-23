@@ -1,6 +1,6 @@
 package typings.stripeV3.stripe
 
-import typings.stripeV3.AnonOwner
+import typings.stripeV3.anon.Owner
 import typings.stripeV3.stripe.elements.Element
 import typings.stripeV3.stripe.elements.Elements
 import typings.stripeV3.stripe.elements.ElementsCreateOptions
@@ -39,7 +39,7 @@ trait Stripe extends js.Object {
   def createPaymentMethod(`type`: paymentMethodType, element: Element): js.Promise[PaymentMethodResponse] = js.native
   def createPaymentMethod(`type`: paymentMethodType, element: Element, options: CreatePaymentMethodOptions): js.Promise[PaymentMethodResponse] = js.native
   def createSource(element: Element): js.Promise[SourceResponse] = js.native
-  def createSource(element: Element, options: AnonOwner): js.Promise[SourceResponse] = js.native
+  def createSource(element: Element, options: Owner): js.Promise[SourceResponse] = js.native
   def createSource(options: SourceOptions): js.Promise[SourceResponse] = js.native
   def createToken(element: Element): js.Promise[TokenResponse] = js.native
   def createToken(element: Element, options: BankAccountTokenOptions): js.Promise[TokenResponse] = js.native

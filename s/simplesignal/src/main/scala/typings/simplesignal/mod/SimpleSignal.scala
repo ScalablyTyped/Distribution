@@ -15,7 +15,7 @@ trait SimpleSignal[F /* <: js.Function */] extends js.Object {
 
 object SimpleSignal {
   @scala.inline
-  def apply[F /* <: js.Function */](
+  def apply[F](
     add: F => Boolean,
     dispatch: /* repeated */ js.Any => Unit,
     functions: js.Any,

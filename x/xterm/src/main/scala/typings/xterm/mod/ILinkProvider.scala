@@ -10,17 +10,18 @@ import scala.scalajs.js.annotation._
 trait ILinkProvider extends js.Object {
   /**
     * Provides a link a buffer position
-    * @param position The position of the buffer that is currently active.
-    * @param callback The callback to be fired with the resulting link or
-    * `undefined` when ready.
+    * @param bufferLineNumber The y position of the buffer to check for links
+    * within.
+    * @param callback The callback to be fired when ready with the resulting
+    * link(s) for the line or `undefined`.
     */
-  def provideLink(position: IBufferCellPosition, callback: js.Function1[/* link */ js.UndefOr[ILink], Unit]): Unit
+  def provideLinks(bufferLineNumber: Double, callback: js.Function1[/* links */ js.UndefOr[js.Array[ILink]], Unit]): Unit
 }
 
 object ILinkProvider {
   @scala.inline
-  def apply(provideLink: (IBufferCellPosition, js.Function1[/* link */ js.UndefOr[ILink], Unit]) => Unit): ILinkProvider = {
-    val __obj = js.Dynamic.literal(provideLink = js.Any.fromFunction2(provideLink))
+  def apply(provideLinks: (Double, js.Function1[/* links */ js.UndefOr[js.Array[ILink]], Unit]) => Unit): ILinkProvider = {
+    val __obj = js.Dynamic.literal(provideLinks = js.Any.fromFunction2(provideLinks))
     __obj.asInstanceOf[ILinkProvider]
   }
 }

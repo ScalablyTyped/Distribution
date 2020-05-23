@@ -7,27 +7,26 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientVerticalGrid.BatchEditChangesSaving event.
   */
-@JSGlobal("ASPxClientVerticalGridBatchEditChangesSavingEventArgs")
-@js.native
-class ASPxClientVerticalGridBatchEditChangesSavingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientVerticalGridBatchEditChangesSavingEventArgs class.
-    * @param insertedValues A hashtable that stores information about inserted cells.
-    * @param deletedValues A hashtable that stores information about deleted cells.
-    * @param updatedValues A hashtable that stores information about updated cells.
-    */
-  def this(insertedValues: js.Any, deletedValues: js.Any, updatedValues: js.Any) = this()
+trait ASPxClientVerticalGridBatchEditChangesSavingEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Gets a hashtable that maintains information about deleted cells.
     */
-  var deletedValues: js.Any = js.native
+  var deletedValues: js.Any
   /**
     * Gets a hashtable that maintains information about inserted cells.
     */
-  var insertedValues: js.Any = js.native
+  var insertedValues: js.Any
   /**
     * Gets a hashtable that maintains information about updated cells.
     */
-  var updatedValues: js.Any = js.native
+  var updatedValues: js.Any
+}
+
+object ASPxClientVerticalGridBatchEditChangesSavingEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, deletedValues: js.Any, insertedValues: js.Any, updatedValues: js.Any): ASPxClientVerticalGridBatchEditChangesSavingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], deletedValues = deletedValues.asInstanceOf[js.Any], insertedValues = insertedValues.asInstanceOf[js.Any], updatedValues = updatedValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditChangesSavingEventArgs]
+  }
 }
 

@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("wonder-frp/dist/commonjs", "root")
 @js.native
 object root
-  extends TopLevel[js.Any]
+  extends TopLevel[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Operator.fromArray */ js.Any
+    ]
 

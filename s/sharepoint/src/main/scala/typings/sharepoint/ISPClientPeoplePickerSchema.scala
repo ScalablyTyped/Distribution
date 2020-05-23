@@ -72,54 +72,54 @@ object ISPClientPeoplePickerSchema {
     InitialHelpText: String = null,
     InitialHelpTextElementId: String = null,
     InitialSuggestions: js.Array[ISPClientPeoplePickerEntity] = null,
-    MaximumEntitySuggestions: Int | Double = null,
+    MaximumEntitySuggestions: js.UndefOr[Double] = js.undefined,
     OnUserResolvedClientScript: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Unit = null,
     OnValueChangedClientScript: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Unit = null,
     PrincipalAccountType: String = null,
     Required: js.UndefOr[Boolean] = js.undefined,
     ResolvePrincipalSource: PrincipalSource = null,
     ResolvedListElementId: String = null,
-    Rows: Int | Double = null,
+    Rows: js.UndefOr[Double] = js.undefined,
     SearchPrincipalSource: PrincipalSource = null,
-    SharePointGroupID: Int | Double = null,
+    SharePointGroupID: js.UndefOr[Double] = js.undefined,
     TopLevelElementId: String = null,
     UrlZone: UrlZone = null,
     UseLocalSuggestionCache: js.UndefOr[Boolean] = js.undefined,
     UserNoQueryPermission: js.UndefOr[Boolean] = js.undefined,
-    VisibleSuggestions: Int | Double = null,
+    VisibleSuggestions: js.UndefOr[Double] = js.undefined,
     WaitImageId: String = null,
     WebApplicationID: Guid = null,
     Width: js.Any = null
   ): ISPClientPeoplePickerSchema = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllUrlZones)) __obj.updateDynamic("AllUrlZones")(AllUrlZones.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowEmailAddresses)) __obj.updateDynamic("AllowEmailAddresses")(AllowEmailAddresses.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowMultipleValues)) __obj.updateDynamic("AllowMultipleValues")(AllowMultipleValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllUrlZones)) __obj.updateDynamic("AllUrlZones")(AllUrlZones.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowEmailAddresses)) __obj.updateDynamic("AllowEmailAddresses")(AllowEmailAddresses.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowMultipleValues)) __obj.updateDynamic("AllowMultipleValues")(AllowMultipleValues.get.asInstanceOf[js.Any])
     if (AutoFillElementId != null) __obj.updateDynamic("AutoFillElementId")(AutoFillElementId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoFillEnabled)) __obj.updateDynamic("AutoFillEnabled")(AutoFillEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoFillEnabled)) __obj.updateDynamic("AutoFillEnabled")(AutoFillEnabled.get.asInstanceOf[js.Any])
     if (EditorElementId != null) __obj.updateDynamic("EditorElementId")(EditorElementId.asInstanceOf[js.Any])
     if (EnabledClaimProvider != null) __obj.updateDynamic("EnabledClaimProvider")(EnabledClaimProvider.asInstanceOf[js.Any])
     if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceClaims)) __obj.updateDynamic("ForceClaims")(ForceClaims.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceClaims)) __obj.updateDynamic("ForceClaims")(ForceClaims.get.asInstanceOf[js.Any])
     if (HiddenInputId != null) __obj.updateDynamic("HiddenInputId")(HiddenInputId.asInstanceOf[js.Any])
     if (InitialHelpText != null) __obj.updateDynamic("InitialHelpText")(InitialHelpText.asInstanceOf[js.Any])
     if (InitialHelpTextElementId != null) __obj.updateDynamic("InitialHelpTextElementId")(InitialHelpTextElementId.asInstanceOf[js.Any])
     if (InitialSuggestions != null) __obj.updateDynamic("InitialSuggestions")(InitialSuggestions.asInstanceOf[js.Any])
-    if (MaximumEntitySuggestions != null) __obj.updateDynamic("MaximumEntitySuggestions")(MaximumEntitySuggestions.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaximumEntitySuggestions)) __obj.updateDynamic("MaximumEntitySuggestions")(MaximumEntitySuggestions.get.asInstanceOf[js.Any])
     if (OnUserResolvedClientScript != null) __obj.updateDynamic("OnUserResolvedClientScript")(js.Any.fromFunction2(OnUserResolvedClientScript))
     if (OnValueChangedClientScript != null) __obj.updateDynamic("OnValueChangedClientScript")(js.Any.fromFunction2(OnValueChangedClientScript))
     if (PrincipalAccountType != null) __obj.updateDynamic("PrincipalAccountType")(PrincipalAccountType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Required)) __obj.updateDynamic("Required")(Required.asInstanceOf[js.Any])
+    if (!js.isUndefined(Required)) __obj.updateDynamic("Required")(Required.get.asInstanceOf[js.Any])
     if (ResolvePrincipalSource != null) __obj.updateDynamic("ResolvePrincipalSource")(ResolvePrincipalSource.asInstanceOf[js.Any])
     if (ResolvedListElementId != null) __obj.updateDynamic("ResolvedListElementId")(ResolvedListElementId.asInstanceOf[js.Any])
-    if (Rows != null) __obj.updateDynamic("Rows")(Rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(Rows)) __obj.updateDynamic("Rows")(Rows.get.asInstanceOf[js.Any])
     if (SearchPrincipalSource != null) __obj.updateDynamic("SearchPrincipalSource")(SearchPrincipalSource.asInstanceOf[js.Any])
-    if (SharePointGroupID != null) __obj.updateDynamic("SharePointGroupID")(SharePointGroupID.asInstanceOf[js.Any])
+    if (!js.isUndefined(SharePointGroupID)) __obj.updateDynamic("SharePointGroupID")(SharePointGroupID.get.asInstanceOf[js.Any])
     if (TopLevelElementId != null) __obj.updateDynamic("TopLevelElementId")(TopLevelElementId.asInstanceOf[js.Any])
     if (UrlZone != null) __obj.updateDynamic("UrlZone")(UrlZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseLocalSuggestionCache)) __obj.updateDynamic("UseLocalSuggestionCache")(UseLocalSuggestionCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserNoQueryPermission)) __obj.updateDynamic("UserNoQueryPermission")(UserNoQueryPermission.asInstanceOf[js.Any])
-    if (VisibleSuggestions != null) __obj.updateDynamic("VisibleSuggestions")(VisibleSuggestions.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseLocalSuggestionCache)) __obj.updateDynamic("UseLocalSuggestionCache")(UseLocalSuggestionCache.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UserNoQueryPermission)) __obj.updateDynamic("UserNoQueryPermission")(UserNoQueryPermission.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(VisibleSuggestions)) __obj.updateDynamic("VisibleSuggestions")(VisibleSuggestions.get.asInstanceOf[js.Any])
     if (WaitImageId != null) __obj.updateDynamic("WaitImageId")(WaitImageId.asInstanceOf[js.Any])
     if (WebApplicationID != null) __obj.updateDynamic("WebApplicationID")(WebApplicationID.asInstanceOf[js.Any])
     if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])

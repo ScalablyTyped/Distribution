@@ -20,7 +20,7 @@ object GCMChannelRequest {
   def apply(ApiKey: String = null, Enabled: js.UndefOr[Boolean] = js.undefined): GCMChannelRequest = {
     val __obj = js.Dynamic.literal()
     if (ApiKey != null) __obj.updateDynamic("ApiKey")(ApiKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GCMChannelRequest]
   }
 }

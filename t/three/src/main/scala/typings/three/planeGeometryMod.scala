@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.Width
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object planeGeometryMod extends js.Object {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, widthSegments: Double) = this()
     def this(width: Double, height: Double, widthSegments: Double, heightSegments: Double) = this()
-    var parameters: AnonWidth = js.native
+    var parameters: Width = js.native
   }
   
   @js.native
@@ -24,7 +25,7 @@ object planeGeometryMod extends js.Object {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, widthSegments: Double) = this()
     def this(width: Double, height: Double, widthSegments: Double, heightSegments: Double) = this()
-    var parameters: AnonWidth = js.native
+    var parameters: Width = js.native
   }
   
 }

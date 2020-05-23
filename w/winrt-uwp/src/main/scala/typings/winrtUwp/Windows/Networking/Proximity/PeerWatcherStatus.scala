@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Proximity
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object PeerWatcherStatus extends js.Object {
   /** The peer watcher is stopping. */
   @js.native
   sealed trait stopping extends PeerWatcherStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PeerWatcherStatus with Double] = js.native
-  /* 5 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 0 */ @js.native
-  object created extends TopLevel[created with Double]
-  
-  /* 2 */ @js.native
-  object enumerationCompleted extends TopLevel[enumerationCompleted with Double]
-  
-  /* 1 */ @js.native
-  object started extends TopLevel[started with Double]
-  
-  /* 4 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
-  
-  /* 3 */ @js.native
-  object stopping extends TopLevel[stopping with Double]
   
 }
 

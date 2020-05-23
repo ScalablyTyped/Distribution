@@ -16,9 +16,13 @@ trait ReactourStep extends js.Object {
     */
   var content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode])
   /**
+    * Text read to screen reader software for this step's navigation dot
+    */
+  var navDotAriaLabel: js.UndefOr[String] = js.undefined
+  /**
     * Position of step content
     */
-  var position: js.UndefOr[ReactourStepPosition] = js.undefined
+  var position: js.UndefOr[ReactourStepPosition | (js.Tuple2[Double, Double])] = js.undefined
   /**
     * DOM selector to find the target element
     */
@@ -40,7 +44,8 @@ object ReactourStep {
   def apply(
     action: /* domNode */ js.Any => Unit = null,
     content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode]) = null,
-    position: ReactourStepPosition = null,
+    navDotAriaLabel: String = null,
+    position: ReactourStepPosition | (js.Tuple2[Double, Double]) = null,
     selector: String = null,
     stepInteraction: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
@@ -48,9 +53,10 @@ object ReactourStep {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (navDotAriaLabel != null) __obj.updateDynamic("navDotAriaLabel")(navDotAriaLabel.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepInteraction)) __obj.updateDynamic("stepInteraction")(stepInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepInteraction)) __obj.updateDynamic("stepInteraction")(stepInteraction.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactourStep]
   }

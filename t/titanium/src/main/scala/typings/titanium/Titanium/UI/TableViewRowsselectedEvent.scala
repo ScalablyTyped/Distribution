@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when user stops two-pan gesture interaction for selecting multiple rows.
-		 * It is used in conjunction with <Titanium.UI.TableView.allowsMultipleSelectionInteraction>.
-		 */
+  * Fired when user stops two-pan gesture interaction for selecting multiple rows.
+  * It is used in conjunction with <Titanium.UI.TableView.allowsMultipleSelectionInteraction>.
+  */
 trait TableViewRowsselectedEvent extends TableViewBaseEvent {
   /**
-  			 * List of rows selected by user.
-  			 */
+    * List of rows selected by user.
+    */
   var selectedRows: js.Array[SelectedRowObject]
   /**
-  			 * First row selected when user started interaction.
-  			 */
+    * First row selected when user started interaction.
+    */
   var startingRow: SelectedRowObject
 }
 

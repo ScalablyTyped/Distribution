@@ -14,10 +14,13 @@ trait IOneofDescriptorProto extends js.Object {
 
 object IOneofDescriptorProto {
   @scala.inline
-  def apply(name: String = null, options: IOneofOptions = null): IOneofDescriptorProto = {
+  def apply(
+    name: js.UndefOr[Null | String] = js.undefined,
+    options: js.UndefOr[Null | IOneofOptions] = js.undefined
+  ): IOneofDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOneofDescriptorProto]
   }
 }

@@ -8,7 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSXExpressionContainer extends BaseNode {
+trait JSXExpressionContainer
+  extends BaseNode
+     with _Node {
   var expression: Expression | JSXEmptyExpression
   @JSName("type")
   var type_JSXExpressionContainer: typings.estreeJsx.estreeJsxStrings.JSXExpressionContainer
@@ -20,14 +22,14 @@ object JSXExpressionContainer {
     expression: Expression | JSXEmptyExpression,
     `type`: typings.estreeJsx.estreeJsxStrings.JSXExpressionContainer,
     leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
+    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): JSXExpressionContainer = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSXExpressionContainer]

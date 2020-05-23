@@ -1,7 +1,7 @@
 package typings.jupyterlabApplication.frontendMod.JupyterFrontEnd
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jupyterlabApplication.AnonBrowser
+import typings.jupyterlabApplication.anon.Browser
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.ITreeResolver.Paths
 import typings.luminoCoreutils.mod.Token
 import scala.scalajs.js
@@ -28,6 +28,6 @@ object ITreeResolver extends TopLevel[Token[ITreeResolver]] {
     * The browser and file paths if the tree resolver encountered and handled
     * a tree URL or `null` if not. Empty string paths should be ignored.
     */
-  type Paths = AnonBrowser | Null
+  type Paths = Browser | Null
 }
 

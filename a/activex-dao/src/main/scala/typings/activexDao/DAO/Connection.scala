@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DAO.Connection")
 @js.native
-class Connection protected () extends js.Object {
+trait Connection extends js.Object {
   val Connect: String = js.native
   @JSName("DAO.Connection_typekey")
   var DAODotConnection_typekey: Connection = js.native

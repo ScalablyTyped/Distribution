@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
+  type BasicType = scala.Boolean | scala.Double | java.lang.String | js.Array[js.Any] | js.Object | scala.Null
   type CoerceFunction = js.Function2[
     /* value */ js.Any, 
     /* helpers */ typings.hapiJoi.mod.CustomHelpers[js.Any], 

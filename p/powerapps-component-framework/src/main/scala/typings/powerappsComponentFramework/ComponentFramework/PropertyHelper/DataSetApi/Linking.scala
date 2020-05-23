@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Dataset entity linking.
-			 */
+  * Dataset entity linking.
+  */
 trait Linking extends js.Object {
   /**
-  				 * Add a new linked entity relationship with the existed query primary entity
-  				 */
+    * Add a new linked entity relationship with the existed query primary entity
+    */
   def addLinkedEntity(expression: LinkEntityExposedExpression): Unit
   /**
-  				 * Returns all the linked entities information
-  				 */
+    * Returns all the linked entities information
+    */
   def getLinkedEntities(): js.Array[LinkEntityExposedExpression]
 }
 

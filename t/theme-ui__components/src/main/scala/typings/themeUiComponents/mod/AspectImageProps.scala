@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 
 object AspectImageProps {
   @scala.inline
-  def apply(ratio: Int | Double = null): AspectImageProps = {
+  def apply(ratio: js.UndefOr[Double] = js.undefined): AspectImageProps = {
     val __obj = js.Dynamic.literal()
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AspectImageProps]
   }
 }

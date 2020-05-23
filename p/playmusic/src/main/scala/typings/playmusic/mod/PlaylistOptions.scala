@@ -11,9 +11,9 @@ trait PlaylistOptions extends js.Object {
 
 object PlaylistOptions {
   @scala.inline
-  def apply(limit: Int | Double = null, nextPageToken: String = null): PlaylistOptions = {
+  def apply(limit: js.UndefOr[Double] = js.undefined, nextPageToken: String = null): PlaylistOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistOptions]
   }

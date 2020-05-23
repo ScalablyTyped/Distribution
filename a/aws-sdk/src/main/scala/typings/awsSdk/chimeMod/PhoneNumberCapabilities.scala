@@ -35,20 +35,20 @@ trait PhoneNumberCapabilities extends js.Object {
 object PhoneNumberCapabilities {
   @scala.inline
   def apply(
-    InboundCall: js.UndefOr[scala.Boolean] = js.undefined,
-    InboundMMS: js.UndefOr[scala.Boolean] = js.undefined,
-    InboundSMS: js.UndefOr[scala.Boolean] = js.undefined,
-    OutboundCall: js.UndefOr[scala.Boolean] = js.undefined,
-    OutboundMMS: js.UndefOr[scala.Boolean] = js.undefined,
-    OutboundSMS: js.UndefOr[scala.Boolean] = js.undefined
+    InboundCall: js.UndefOr[NullableBoolean] = js.undefined,
+    InboundMMS: js.UndefOr[NullableBoolean] = js.undefined,
+    InboundSMS: js.UndefOr[NullableBoolean] = js.undefined,
+    OutboundCall: js.UndefOr[NullableBoolean] = js.undefined,
+    OutboundMMS: js.UndefOr[NullableBoolean] = js.undefined,
+    OutboundSMS: js.UndefOr[NullableBoolean] = js.undefined
   ): PhoneNumberCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(InboundCall)) __obj.updateDynamic("InboundCall")(InboundCall.asInstanceOf[js.Any])
-    if (!js.isUndefined(InboundMMS)) __obj.updateDynamic("InboundMMS")(InboundMMS.asInstanceOf[js.Any])
-    if (!js.isUndefined(InboundSMS)) __obj.updateDynamic("InboundSMS")(InboundSMS.asInstanceOf[js.Any])
-    if (!js.isUndefined(OutboundCall)) __obj.updateDynamic("OutboundCall")(OutboundCall.asInstanceOf[js.Any])
-    if (!js.isUndefined(OutboundMMS)) __obj.updateDynamic("OutboundMMS")(OutboundMMS.asInstanceOf[js.Any])
-    if (!js.isUndefined(OutboundSMS)) __obj.updateDynamic("OutboundSMS")(OutboundSMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(InboundCall)) __obj.updateDynamic("InboundCall")(InboundCall.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InboundMMS)) __obj.updateDynamic("InboundMMS")(InboundMMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(InboundSMS)) __obj.updateDynamic("InboundSMS")(InboundSMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OutboundCall)) __obj.updateDynamic("OutboundCall")(OutboundCall.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OutboundMMS)) __obj.updateDynamic("OutboundMMS")(OutboundMMS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(OutboundSMS)) __obj.updateDynamic("OutboundSMS")(OutboundSMS.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneNumberCapabilities]
   }
 }

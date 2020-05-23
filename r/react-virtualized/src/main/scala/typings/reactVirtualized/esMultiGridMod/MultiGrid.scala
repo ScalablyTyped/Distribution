@@ -1,10 +1,10 @@
 package typings.reactVirtualized.esMultiGridMod
 
 import typings.react.mod.Component
-import typings.reactVirtualized.AnonClassNameBottomLeftGrid
-import typings.reactVirtualized.AnonClassNameBottomRightGrid
-import typings.reactVirtualized.AnonRowIndex
-import typings.reactVirtualized.PartialCellPosition
+import typings.reactVirtualized.anon.ClassNameBottomLeftGrid
+import typings.reactVirtualized.anon.ClassNameBottomRightGrid
+import typings.reactVirtualized.anon.PartialCellPosition
+import typings.reactVirtualized.anon.RowIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,15 +21,15 @@ class MultiGrid ()
   def measureAllCells(): Unit = js.native
   /** See Grid#recomputeGridSize */
   def recomputeGridSize(): Unit = js.native
-  def recomputeGridSize(params: AnonRowIndex): Unit = js.native
+  def recomputeGridSize(params: RowIndex): Unit = js.native
 }
 
 /* static members */
 @JSImport("react-virtualized/dist/es/MultiGrid", "MultiGrid")
 @js.native
 object MultiGrid extends js.Object {
-  var defaultProps: AnonClassNameBottomRightGrid = js.native
-  var propTypes: AnonClassNameBottomLeftGrid = js.native
+  var defaultProps: ClassNameBottomRightGrid = js.native
+  var propTypes: ClassNameBottomLeftGrid = js.native
   def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = js.native
 }
 

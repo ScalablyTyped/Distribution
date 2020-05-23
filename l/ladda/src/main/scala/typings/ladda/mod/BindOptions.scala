@@ -17,10 +17,10 @@ trait BindOptions extends js.Object {
 
 object BindOptions {
   @scala.inline
-  def apply(callback: /* instance */ LaddaButton => Unit = null, timeout: Int | Double = null): BindOptions = {
+  def apply(callback: /* instance */ LaddaButton => Unit = null, timeout: js.UndefOr[Double] = js.undefined): BindOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindOptions]
   }
 }

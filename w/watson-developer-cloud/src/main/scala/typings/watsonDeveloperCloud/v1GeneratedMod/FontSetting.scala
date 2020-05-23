@@ -25,17 +25,17 @@ object FontSetting {
   def apply(
     bold: js.UndefOr[Boolean] = js.undefined,
     italic: js.UndefOr[Boolean] = js.undefined,
-    level: Int | Double = null,
-    max_size: Int | Double = null,
-    min_size: Int | Double = null,
+    level: js.UndefOr[Double] = js.undefined,
+    max_size: js.UndefOr[Double] = js.undefined,
+    min_size: js.UndefOr[Double] = js.undefined,
     name: String = null
   ): FontSetting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (max_size != null) __obj.updateDynamic("max_size")(max_size.asInstanceOf[js.Any])
-    if (min_size != null) __obj.updateDynamic("min_size")(min_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_size)) __obj.updateDynamic("max_size")(max_size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min_size)) __obj.updateDynamic("min_size")(min_size.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSetting]
   }

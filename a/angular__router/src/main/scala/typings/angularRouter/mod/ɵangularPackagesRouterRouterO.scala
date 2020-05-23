@@ -2,7 +2,7 @@ package typings.angularRouter.mod
 
 import typings.angularCommon.mod.ViewportScroller
 import typings.angularCore.mod.OnDestroy
-import typings.angularRouter.AnonAnchorScrolling
+import typings.angularRouter.anon.AnchorScrolling
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class ɵangularPackagesRouterRouterO protected () extends OnDestroy {
   def this(
     router: Router,
     /** @docsNotRequired */ viewportScroller: ViewportScroller,
-    options: AnonAnchorScrolling
+    options: AnchorScrolling
   ) = this()
   var consumeScrollEvents: js.Any = js.native
   var createScrollEvents: js.Any = js.native

@@ -18,17 +18,17 @@ object ActionSheetIOSOptions {
   @scala.inline
   def apply(
     options: js.Array[String],
-    anchor: Int | Double = null,
-    cancelButtonIndex: Int | Double = null,
-    destructiveButtonIndex: Int | Double = null,
+    anchor: js.UndefOr[Double] = js.undefined,
+    cancelButtonIndex: js.UndefOr[Double] = js.undefined,
+    destructiveButtonIndex: js.UndefOr[Double] = js.undefined,
     message: String = null,
     tintColor: String = null,
     title: String = null
   ): ActionSheetIOSOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (cancelButtonIndex != null) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.asInstanceOf[js.Any])
-    if (destructiveButtonIndex != null) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelButtonIndex)) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(destructiveButtonIndex)) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

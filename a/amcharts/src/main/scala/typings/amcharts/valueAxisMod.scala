@@ -1,5 +1,7 @@
 package typings.amcharts
 
+import typings.amcharts.anon.DD
+import typings.amcharts.anon.EndValue
 import typings.amcharts.axisBaseMod.AxisBase
 import typings.std.Date
 import scala.scalajs.js
@@ -33,7 +35,7 @@ object valueAxisMod extends js.Object {
       * hour, minute and second.
       * {DD:"d. ", hh:":", mm:":",ss:""}
       */
-    var durationUnits: AnonDD = js.native
+    var durationUnits: DD = js.native
     /**
       * Radar chart only. Possible values are: "polygons" and "circles". Set "circles" for polar charts.
       * @default "polygons"
@@ -191,7 +193,7 @@ object valueAxisMod extends js.Object {
       * @param type One of "axisChanged", "axisZoomed", "logarithmicAxisFailed".
       * @param handler The event handler.
       */
-    def addListener(`type`: String, handler: js.Function1[/* e */ AnonEndValue, Unit]): Unit = js.native
+    def addListener(`type`: String, handler: js.Function1[/* e */ EndValue, Unit]): Unit = js.native
     /**
       * Number, - value of coordinate. Returns value of the coordinate.  coordinate - y or x coordinate, in pixels.
       */

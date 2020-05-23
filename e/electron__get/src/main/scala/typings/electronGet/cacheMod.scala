@@ -11,7 +11,7 @@ object cacheMod extends js.Object {
   class Cache () extends js.Object {
     def this(cacheRoot: String) = this()
     var cacheRoot: js.Any = js.native
-    var getCachePath: js.Any = js.native
+    def getCachePath(downloadUrl: String, fileName: String): String = js.native
     def getPathForFileInCache(url: String, fileName: String): js.Promise[String | Null] = js.native
     def putFileInCache(url: String, currentPath: String, fileName: String): js.Promise[String] = js.native
   }

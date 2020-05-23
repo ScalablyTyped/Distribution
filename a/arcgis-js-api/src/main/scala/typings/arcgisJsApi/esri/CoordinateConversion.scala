@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -84,8 +83,4 @@ trait CoordinateConversion
     */
   def reverseConvert(coordinate: String, format: Format): js.Promise[Point] = js.native
 }
-
-@JSGlobal("__esri.CoordinateConversion")
-@js.native
-object CoordinateConversion extends TopLevel[CoordinateConversionConstructor]
 

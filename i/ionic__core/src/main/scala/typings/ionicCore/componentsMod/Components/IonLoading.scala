@@ -5,6 +5,7 @@ import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
+import typings.ionicCore.typesMod.IonicSafeString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +43,7 @@ trait IonLoading extends js.Object {
   /**
     * Optional text content to display in the loading indicator.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String | IonicSafeString] = js.native
   /**
     * The mode determines which platform styles to use.
     */

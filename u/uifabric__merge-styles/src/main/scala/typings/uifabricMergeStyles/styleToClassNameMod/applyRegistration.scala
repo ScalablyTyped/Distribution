@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object applyRegistration extends js.Object {
   def apply(registration: IRegistration): Unit = js.native
+  def apply(registration: IRegistration, specificityMultiplier: Double): Unit = js.native
 }
 

@@ -18,13 +18,13 @@ object MockedResponse {
   @scala.inline
   def apply(
     request: ParsedRequest,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     error: Error = null,
     newData: () => _ = null,
     result: GraphQLResult = null
   ): MockedResponse = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (newData != null) __obj.updateDynamic("newData")(js.Any.fromFunction0(newData))
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])

@@ -19,22 +19,10 @@ object firebaseAnalyticsStrings {
   sealed trait event extends js.Object
   
   @js.native
-  sealed trait firebase_id extends js.Object
-  
-  @js.native
-  sealed trait httpsColonSlashSlashwwwDotgoogletagmanagerDotcomSlashgtagSlashjs extends js.Object
-  
-  @js.native
   sealed trait `interop-component-reg-failed` extends AnalyticsError
   
   @js.native
-  sealed trait measurementId extends js.Object
-  
-  @js.native
   sealed trait `no-ga-id` extends AnalyticsError
-  
-  @js.native
-  sealed trait origin extends js.Object
   
   @js.native
   sealed trait set extends js.Object
@@ -48,17 +36,9 @@ object firebaseAnalyticsStrings {
   @scala.inline
   def event: event = "event".asInstanceOf[event]
   @scala.inline
-  def firebase_id: firebase_id = "firebase_id".asInstanceOf[firebase_id]
-  @scala.inline
-  def httpsColonSlashSlashwwwDotgoogletagmanagerDotcomSlashgtagSlashjs: httpsColonSlashSlashwwwDotgoogletagmanagerDotcomSlashgtagSlashjs = "https://www.googletagmanager.com/gtag/js".asInstanceOf[httpsColonSlashSlashwwwDotgoogletagmanagerDotcomSlashgtagSlashjs]
-  @scala.inline
   def `interop-component-reg-failed`: `interop-component-reg-failed` = "interop-component-reg-failed".asInstanceOf[`interop-component-reg-failed`]
   @scala.inline
-  def measurementId: measurementId = "measurementId".asInstanceOf[measurementId]
-  @scala.inline
   def `no-ga-id`: `no-ga-id` = "no-ga-id".asInstanceOf[`no-ga-id`]
-  @scala.inline
-  def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
   def set: set = "set".asInstanceOf[set]
 }

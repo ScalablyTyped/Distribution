@@ -36,26 +36,3 @@ trait keyword extends js.Object {
   def xyz(from: KEYWORD_): XYZ_
 }
 
-object keyword {
-  @scala.inline
-  def apply(
-    ansi16: KEYWORD_ => ANSI16_,
-    ansi256: KEYWORD_ => ANSI256_,
-    apple: KEYWORD_ => APPLE_,
-    cmyk: KEYWORD_ => CMYK_,
-    gray: KEYWORD_ => GRAY_,
-    hcg: KEYWORD_ => HCG_,
-    hex: KEYWORD_ => HEX_,
-    hsl: KEYWORD_ => HSL_,
-    hsv: KEYWORD_ => HSV_,
-    hwb: KEYWORD_ => HWB_,
-    lab: KEYWORD_ => LAB_,
-    lch: KEYWORD_ => LCH_,
-    rgb: KEYWORD_ => RGB_,
-    xyz: KEYWORD_ => XYZ_
-  ): keyword = {
-    val __obj = js.Dynamic.literal(ansi16 = js.Any.fromFunction1(ansi16), ansi256 = js.Any.fromFunction1(ansi256), apple = js.Any.fromFunction1(apple), cmyk = js.Any.fromFunction1(cmyk), gray = js.Any.fromFunction1(gray), hcg = js.Any.fromFunction1(hcg), hex = js.Any.fromFunction1(hex), hsl = js.Any.fromFunction1(hsl), hsv = js.Any.fromFunction1(hsv), hwb = js.Any.fromFunction1(hwb), lab = js.Any.fromFunction1(lab), lch = js.Any.fromFunction1(lch), rgb = js.Any.fromFunction1(rgb), xyz = js.Any.fromFunction1(xyz))
-    __obj.asInstanceOf[keyword]
-  }
-}
-

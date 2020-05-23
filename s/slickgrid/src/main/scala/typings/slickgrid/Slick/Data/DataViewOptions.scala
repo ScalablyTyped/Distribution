@@ -12,13 +12,13 @@ trait DataViewOptions[T /* <: SlickData */] extends js.Object {
 
 object DataViewOptions {
   @scala.inline
-  def apply[T /* <: SlickData */](
+  def apply[T](
     groupItemMetadataProvider: GroupItemMetadataProvider[T] = null,
     inlineFilters: js.UndefOr[Boolean] = js.undefined
   ): DataViewOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (groupItemMetadataProvider != null) __obj.updateDynamic("groupItemMetadataProvider")(groupItemMetadataProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineFilters)) __obj.updateDynamic("inlineFilters")(inlineFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineFilters)) __obj.updateDynamic("inlineFilters")(inlineFilters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataViewOptions[T]]
   }
 }

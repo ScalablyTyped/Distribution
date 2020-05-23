@@ -20,7 +20,7 @@ object ViewportAddonParameter {
   ): ViewportAddonParameter = {
     val __obj = js.Dynamic.literal()
     if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.get.asInstanceOf[js.Any])
     if (viewports != null) __obj.updateDynamic("viewports")(viewports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportAddonParameter]
   }

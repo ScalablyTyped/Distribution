@@ -24,7 +24,7 @@ object S3RequestOptions {
   @scala.inline
   def apply(
     accessKey: String = null,
-    clockDrift: Int | Double = null,
+    clockDrift: js.UndefOr[Double] = js.undefined,
     customHeaders: js.Any = null,
     endpoint: String = null,
     filenameParam: String = null,
@@ -40,17 +40,17 @@ object S3RequestOptions {
   ): S3RequestOptions = {
     val __obj = js.Dynamic.literal()
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (clockDrift != null) __obj.updateDynamic("clockDrift")(clockDrift.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockDrift)) __obj.updateDynamic("clockDrift")(clockDrift.get.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (filenameParam != null) __obj.updateDynamic("filenameParam")(filenameParam.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceMultipart)) __obj.updateDynamic("forceMultipart")(forceMultipart.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceMultipart)) __obj.updateDynamic("forceMultipart")(forceMultipart.get.asInstanceOf[js.Any])
     if (inputName != null) __obj.updateDynamic("inputName")(inputName.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitDefaultParams)) __obj.updateDynamic("omitDefaultParams")(omitDefaultParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitDefaultParams)) __obj.updateDynamic("omitDefaultParams")(omitDefaultParams.get.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(paramsInBody)) __obj.updateDynamic("paramsInBody")(paramsInBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireSuccessJson)) __obj.updateDynamic("requireSuccessJson")(requireSuccessJson.asInstanceOf[js.Any])
+    if (!js.isUndefined(paramsInBody)) __obj.updateDynamic("paramsInBody")(paramsInBody.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireSuccessJson)) __obj.updateDynamic("requireSuccessJson")(requireSuccessJson.get.asInstanceOf[js.Any])
     if (totalFileSizeName != null) __obj.updateDynamic("totalFileSizeName")(totalFileSizeName.asInstanceOf[js.Any])
     if (uuidName != null) __obj.updateDynamic("uuidName")(uuidName.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3RequestOptions]

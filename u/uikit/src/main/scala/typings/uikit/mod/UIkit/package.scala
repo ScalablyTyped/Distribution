@@ -58,7 +58,7 @@ package object UIkit {
   type Icon_ = js.Function2[
     /* element */ typings.uikit.mod.UIkitElement, 
     /* options */ js.UndefOr[typings.uikit.mod.UIkit.UIkitIconOptions], 
-    typings.uikit.AnonSvg
+    typings.uikit.anon.Svg
   ]
   type Img = js.Function2[
     /* element */ typings.uikit.mod.UIkitElement, 
@@ -142,7 +142,7 @@ package object UIkit {
   type Svg_ = js.Function2[
     /* element */ typings.uikit.mod.UIkitElement, 
     /* options */ js.UndefOr[typings.uikit.mod.UIkit.UIkitSvgOptions], 
-    typings.uikit.AnonSvg
+    typings.uikit.anon.Svg
   ]
   type Switcher_ = js.Function2[
     /* element */ typings.uikit.mod.UIkitElement, 

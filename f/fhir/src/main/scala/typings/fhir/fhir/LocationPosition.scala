@@ -44,7 +44,7 @@ object LocationPosition {
     _id: Element = null,
     _latitude: Element = null,
     _longitude: Element = null,
-    altitude: Int | Double = null,
+    altitude: js.UndefOr[decimal] = js.undefined,
     extension: js.Array[Extension] = null,
     fhir_comments: js.Array[String] = null,
     id: String = null,
@@ -56,7 +56,7 @@ object LocationPosition {
     if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     if (_latitude != null) __obj.updateDynamic("_latitude")(_latitude.asInstanceOf[js.Any])
     if (_longitude != null) __obj.updateDynamic("_longitude")(_longitude.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

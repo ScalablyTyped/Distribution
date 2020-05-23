@@ -19,7 +19,7 @@ trait KeycloakProfile extends js.Object {
 object KeycloakProfile {
   @scala.inline
   def apply(
-    createdTimestamp: Int | Double = null,
+    createdTimestamp: js.UndefOr[Double] = js.undefined,
     email: String = null,
     emailVerified: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -30,14 +30,14 @@ object KeycloakProfile {
     username: String = null
   ): KeycloakProfile = {
     val __obj = js.Dynamic.literal()
-    if (createdTimestamp != null) __obj.updateDynamic("createdTimestamp")(createdTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(createdTimestamp)) __obj.updateDynamic("createdTimestamp")(createdTimestamp.get.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
-    if (!js.isUndefined(totp)) __obj.updateDynamic("totp")(totp.asInstanceOf[js.Any])
+    if (!js.isUndefined(totp)) __obj.updateDynamic("totp")(totp.get.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeycloakProfile]
   }

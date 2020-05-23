@@ -14,16 +14,16 @@ trait MovieStarOptions extends js.Object {
 object MovieStarOptions {
   @scala.inline
   def apply(
-    bufferTime: Int | Double = null,
-    duration: Int | Double = null,
-    onconnect: () => Unit = null,
-    serverURL: String = null
+    bufferTime: js.UndefOr[Double] = js.undefined,
+    duration: js.UndefOr[Null | Double] = js.undefined,
+    onconnect: js.UndefOr[Null | (() => Unit)] = js.undefined,
+    serverURL: js.UndefOr[Null | String] = js.undefined
   ): MovieStarOptions = {
     val __obj = js.Dynamic.literal()
-    if (bufferTime != null) __obj.updateDynamic("bufferTime")(bufferTime.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (onconnect != null) __obj.updateDynamic("onconnect")(js.Any.fromFunction0(onconnect))
-    if (serverURL != null) __obj.updateDynamic("serverURL")(serverURL.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferTime)) __obj.updateDynamic("bufferTime")(bufferTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(onconnect)) __obj.updateDynamic("onconnect")(if (onconnect != null) js.Any.fromFunction0(onconnect.asInstanceOf[() => Unit]) else null)
+    if (!js.isUndefined(serverURL)) __obj.updateDynamic("serverURL")(serverURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[MovieStarOptions]
   }
 }

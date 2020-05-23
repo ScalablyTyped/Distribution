@@ -55,7 +55,7 @@ object CreateBucketRequest {
     GrantReadACP: GrantReadACP = null,
     GrantWrite: GrantWrite = null,
     GrantWriteACP: GrantWriteACP = null,
-    ObjectLockEnabledForBucket: js.UndefOr[Boolean] = js.undefined
+    ObjectLockEnabledForBucket: js.UndefOr[ObjectLockEnabledForBucket] = js.undefined
   ): CreateBucketRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     if (ACL != null) __obj.updateDynamic("ACL")(ACL.asInstanceOf[js.Any])
@@ -65,7 +65,7 @@ object CreateBucketRequest {
     if (GrantReadACP != null) __obj.updateDynamic("GrantReadACP")(GrantReadACP.asInstanceOf[js.Any])
     if (GrantWrite != null) __obj.updateDynamic("GrantWrite")(GrantWrite.asInstanceOf[js.Any])
     if (GrantWriteACP != null) __obj.updateDynamic("GrantWriteACP")(GrantWriteACP.asInstanceOf[js.Any])
-    if (!js.isUndefined(ObjectLockEnabledForBucket)) __obj.updateDynamic("ObjectLockEnabledForBucket")(ObjectLockEnabledForBucket.asInstanceOf[js.Any])
+    if (!js.isUndefined(ObjectLockEnabledForBucket)) __obj.updateDynamic("ObjectLockEnabledForBucket")(ObjectLockEnabledForBucket.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketRequest]
   }
 }

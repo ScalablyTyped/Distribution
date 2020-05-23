@@ -11,10 +11,13 @@ trait PreferredQuoteMarkOptions extends js.Object {
 
 object PreferredQuoteMarkOptions {
   @scala.inline
-  def apply(preferCurrentQuoteMark: js.UndefOr[Boolean] = js.undefined, quoteMark: QuoteMark = null): PreferredQuoteMarkOptions = {
+  def apply(
+    preferCurrentQuoteMark: js.UndefOr[Boolean] = js.undefined,
+    quoteMark: js.UndefOr[Null | QuoteMark] = js.undefined
+  ): PreferredQuoteMarkOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preferCurrentQuoteMark)) __obj.updateDynamic("preferCurrentQuoteMark")(preferCurrentQuoteMark.asInstanceOf[js.Any])
-    if (quoteMark != null) __obj.updateDynamic("quoteMark")(quoteMark.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferCurrentQuoteMark)) __obj.updateDynamic("preferCurrentQuoteMark")(preferCurrentQuoteMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoteMark)) __obj.updateDynamic("quoteMark")(quoteMark.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreferredQuoteMarkOptions]
   }
 }

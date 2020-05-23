@@ -1,8 +1,8 @@
 package typings.angularCompiler.apiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompiler.AnonUsesOnChanges
 import typings.angularCompiler.angularCompilerStrings.invalid
+import typings.angularCompiler.anon.UsesOnChanges
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.r3FactoryMod.R3DependencyMetadata
 import typings.angularCompiler.render3UtilMod.R3Reference
@@ -46,7 +46,7 @@ trait R3DirectiveMetadata extends js.Object {
     * Information about usage of specific lifecycle events which require special treatment in the
     * code generator.
     */
-  var lifecycle: AnonUsesOnChanges
+  var lifecycle: UsesOnChanges
   /**
     * Name of the directive type.
     */
@@ -96,7 +96,7 @@ object R3DirectiveMetadata {
     host: R3HostMetadata,
     inputs: StringDictionary[String | (js.Tuple2[String, String])],
     internalType: Expression,
-    lifecycle: AnonUsesOnChanges,
+    lifecycle: UsesOnChanges,
     name: String,
     outputs: StringDictionary[String],
     queries: js.Array[R3QueryMetadata],
@@ -110,12 +110,8 @@ object R3DirectiveMetadata {
     providers: Expression = null,
     selector: String = null
   ): R3DirectiveMetadata = {
-    val __obj = js.Dynamic.literal(fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], deps = deps.asInstanceOf[js.Any], exportAs = exportAs.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
-    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs.asInstanceOf[js.Any])
-    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3DirectiveMetadata]
   }
 }

@@ -60,7 +60,7 @@ object IDialogStyleProps {
     if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
     if (dialogDefaultMaxWidth != null) __obj.updateDynamic("dialogDefaultMaxWidth")(dialogDefaultMaxWidth.asInstanceOf[js.Any])
     if (dialogDefaultMinWidth != null) __obj.updateDynamic("dialogDefaultMinWidth")(dialogDefaultMinWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogStyleProps]
   }
 }

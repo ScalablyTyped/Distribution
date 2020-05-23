@@ -17,17 +17,17 @@ object BaseHttpsProxyAgentOptions {
   @scala.inline
   def apply(
     headers: OutgoingHttpHeaders = null,
-    host: String = null,
-    path: String = null,
-    port: String | Double = null,
+    host: js.UndefOr[Null | String] = js.undefined,
+    path: js.UndefOr[Null | String] = js.undefined,
+    port: js.UndefOr[Null | String | Double] = js.undefined,
     secureProxy: js.UndefOr[Boolean] = js.undefined
   ): BaseHttpsProxyAgentOptions = {
     val __obj = js.Dynamic.literal()
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureProxy)) __obj.updateDynamic("secureProxy")(secureProxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(host)) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(secureProxy)) __obj.updateDynamic("secureProxy")(secureProxy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseHttpsProxyAgentOptions]
   }
 }

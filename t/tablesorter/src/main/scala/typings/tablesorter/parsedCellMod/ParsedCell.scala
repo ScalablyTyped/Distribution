@@ -1,7 +1,7 @@
 package typings.tablesorter.parsedCellMod
 
-import typings.tablesorter.mod._Global_.HTMLElement
-import typings.tablesorter.mod._Global_.JQuery
+import typings.tablesorter.mod.global.HTMLElement
+import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.parsedOptionMod.ParsedOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`

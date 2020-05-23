@@ -1,5 +1,6 @@
 package typings.plottable
 
+import typings.plottable.anon.Y
 import typings.plottable.commonsMod.ITransformableAccessorScaleBinding
 import typings.plottable.datasetMod.Dataset
 import typings.plottable.drawersMod.ProxyDrawer
@@ -77,7 +78,7 @@ object barPlotMod extends js.Object {
       * same as the "pixel point" because they are always at the top/left of the
       * bar.
       */
-    /* protected */ def _pixelBounds(datum: js.Any, index: Double, dataset: Dataset): AnonY = js.native
+    /* protected */ def _pixelBounds(datum: js.Any, index: Double, dataset: Dataset): Y = js.native
     /* private */ def _pixelPointBar(originalPosition: js.Any, scaledBaseline: js.Any, rect: js.Any): js.Any = js.native
     /**
       * Labels are "on-bar" by default, but if the bar is not long enough to fit the text,
@@ -192,20 +193,20 @@ object barPlotMod extends js.Object {
     /* protected */ def position(): ITransformableAccessorScaleBinding[_, Double] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Middle */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.start
     - typings.plottable.plottableStrings.end
     - typings.plottable.plottableStrings.middle
   */
   trait BarAlignment extends js.Object
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.Horizontal */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.vertical
     - typings.plottable.plottableStrings.horizontal
   */
   trait BarOrientation extends js.Object
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof plottable.anon.End */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.start
     - typings.plottable.plottableStrings.end
     - typings.plottable.plottableStrings.middle

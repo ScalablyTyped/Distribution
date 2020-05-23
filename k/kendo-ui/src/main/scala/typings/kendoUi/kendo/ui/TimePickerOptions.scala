@@ -32,7 +32,7 @@ object TimePickerOptions {
     dateInput: js.UndefOr[Boolean] = js.undefined,
     dates: js.Any = null,
     format: String = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     max: Date = null,
     min: Date = null,
     name: String = null,
@@ -45,10 +45,10 @@ object TimePickerOptions {
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (!js.isUndefined(dateInput)) __obj.updateDynamic("dateInput")(dateInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(dateInput)) __obj.updateDynamic("dateInput")(dateInput.get.asInstanceOf[js.Any])
     if (dates != null) __obj.updateDynamic("dates")(dates.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

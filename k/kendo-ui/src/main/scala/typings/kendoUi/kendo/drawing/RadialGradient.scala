@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.drawing.RadialGradient")
 @js.native
-class RadialGradient () extends Gradient {
-  def this(options: RadialGradientOptions) = this()
+trait RadialGradient extends Gradient {
   @JSName("options")
   var options_RadialGradient: RadialGradientOptions = js.native
   def center(): Point = js.native

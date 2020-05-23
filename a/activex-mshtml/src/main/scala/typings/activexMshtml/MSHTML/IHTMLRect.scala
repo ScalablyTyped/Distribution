@@ -4,14 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.IHTMLRect")
-@js.native
-class IHTMLRect protected () extends js.Object {
+trait IHTMLRect extends js.Object {
   @JSName("MSHTML.IHTMLRect_typekey")
-  var MSHTMLDotIHTMLRect_typekey: IHTMLRect = js.native
-  var bottom: Double = js.native
-  var left: Double = js.native
-  var right: Double = js.native
-  var top: Double = js.native
+  var MSHTMLDotIHTMLRect_typekey: IHTMLRect
+  var bottom: Double
+  var left: Double
+  var right: Double
+  var top: Double
+}
+
+object IHTMLRect {
+  @scala.inline
+  def apply(MSHTMLDotIHTMLRect_typekey: IHTMLRect, bottom: Double, left: Double, right: Double, top: Double): IHTMLRect = {
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.IHTMLRect_typekey")(MSHTMLDotIHTMLRect_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IHTMLRect]
+  }
 }
 

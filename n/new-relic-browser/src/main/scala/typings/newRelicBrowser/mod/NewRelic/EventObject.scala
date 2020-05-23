@@ -22,12 +22,12 @@ object EventObject {
   def apply(
     name: String,
     start: Double,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     origin: String = null,
     `type`: String = null
   ): EventObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventObject]

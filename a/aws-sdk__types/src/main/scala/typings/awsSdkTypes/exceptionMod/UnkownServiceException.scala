@@ -14,15 +14,8 @@ trait UnkownServiceException
 
 object UnkownServiceException {
   @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    message: String,
-    name: Error,
-    details: js.UndefOr[scala.Nothing] = js.undefined,
-    stack: String = null
-  ): UnkownServiceException = {
+  def apply($metadata: ResponseMetadata, message: String, name: Error, stack: String = null): UnkownServiceException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(details)) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnkownServiceException]
   }

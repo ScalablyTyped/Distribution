@@ -5,22 +5,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapTimeInterval")
-@js.native
-class BootstrapTimeInterval protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
-  val instance: js.Any = js.native
-  def contains(interval: BootstrapTimeInterval): Boolean = js.native
-  def equals(interval: BootstrapTimeInterval): Boolean = js.native
-  def getAllDay(): Boolean = js.native
-  def getDuration(): Double = js.native
-  def getEnd(): Date = js.native
-  def getStart(): Date = js.native
-  def intersectsWith(interval: BootstrapTimeInterval): Boolean = js.native
-  def intersectsWithExcludingBounds(interval: BootstrapTimeInterval): Boolean = js.native
-  def setAllDay(allDayValue: Boolean): Unit = js.native
-  def setDuration(value: Double): Unit = js.native
-  def setEnd(value: Date): Unit = js.native
-  def setStart(value: Date): Unit = js.native
+trait BootstrapTimeInterval extends js.Object {
+  val instance: js.Any
+  def contains(interval: BootstrapTimeInterval): Boolean
+  def equals(interval: BootstrapTimeInterval): Boolean
+  def getAllDay(): Boolean
+  def getDuration(): Double
+  def getEnd(): Date
+  def getStart(): Date
+  def intersectsWith(interval: BootstrapTimeInterval): Boolean
+  def intersectsWithExcludingBounds(interval: BootstrapTimeInterval): Boolean
+  def setAllDay(allDayValue: Boolean): Unit
+  def setDuration(value: Double): Unit
+  def setEnd(value: Date): Unit
+  def setStart(value: Date): Unit
+}
+
+object BootstrapTimeInterval {
+  @scala.inline
+  def apply(
+    contains: BootstrapTimeInterval => Boolean,
+    equals: BootstrapTimeInterval => Boolean,
+    getAllDay: () => Boolean,
+    getDuration: () => Double,
+    getEnd: () => Date,
+    getStart: () => Date,
+    instance: js.Any,
+    intersectsWith: BootstrapTimeInterval => Boolean,
+    intersectsWithExcludingBounds: BootstrapTimeInterval => Boolean,
+    setAllDay: Boolean => Unit,
+    setDuration: Double => Unit,
+    setEnd: Date => Unit,
+    setStart: Date => Unit
+  ): BootstrapTimeInterval = {
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), equals = js.Any.fromFunction1(equals), getAllDay = js.Any.fromFunction0(getAllDay), getDuration = js.Any.fromFunction0(getDuration), getEnd = js.Any.fromFunction0(getEnd), getStart = js.Any.fromFunction0(getStart), instance = instance.asInstanceOf[js.Any], intersectsWith = js.Any.fromFunction1(intersectsWith), intersectsWithExcludingBounds = js.Any.fromFunction1(intersectsWithExcludingBounds), setAllDay = js.Any.fromFunction1(setAllDay), setDuration = js.Any.fromFunction1(setDuration), setEnd = js.Any.fromFunction1(setEnd), setStart = js.Any.fromFunction1(setStart))
+    __obj.asInstanceOf[BootstrapTimeInterval]
+  }
 }
 

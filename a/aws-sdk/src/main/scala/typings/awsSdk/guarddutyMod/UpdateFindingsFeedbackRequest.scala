@@ -19,7 +19,7 @@ trait UpdateFindingsFeedbackRequest extends js.Object {
     */
   var Feedback: typings.awsSdk.guarddutyMod.Feedback = js.native
   /**
-    * IDs of the findings that you want to mark as useful or not useful.
+    * The IDs of the findings that you want to mark as useful or not useful.
     */
   var FindingIds: typings.awsSdk.guarddutyMod.FindingIds = js.native
 }

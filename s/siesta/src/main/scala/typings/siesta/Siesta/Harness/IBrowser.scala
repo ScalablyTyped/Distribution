@@ -3,7 +3,7 @@ package typings.siesta.Siesta.Harness
 import org.scalablytyped.runtime.StringDictionary
 import typings.siesta.Siesta.IHarness
 import typings.siesta.Siesta.ITest
-import typings.std.Event_
+import typings.std.Event
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,7 +54,7 @@ object IBrowser {
     isReadyTimeout: Double,
     keepNLastResults: Double,
     keepResults: Boolean,
-    listenters: StringDictionary[js.Function2[/* event */ Event_, /* repeated */ js.Any, Unit]],
+    listenters: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]],
     maintainViewportSize: Boolean,
     maxThreads: Double,
     needDone: Boolean,

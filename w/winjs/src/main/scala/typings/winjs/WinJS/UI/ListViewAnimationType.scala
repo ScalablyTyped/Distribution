@@ -1,6 +1,5 @@
 package typings.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,14 +24,6 @@ object ListViewAnimationType extends js.Object {
     **/
   @js.native
   sealed trait entrance extends ListViewAnimationType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ListViewAnimationType with Double] = js.native
-  /* 1 */ @js.native
-  object contentTransition extends TopLevel[contentTransition with Double]
-  
-  /* 0 */ @js.native
-  object entrance extends TopLevel[entrance with Double]
   
 }
 

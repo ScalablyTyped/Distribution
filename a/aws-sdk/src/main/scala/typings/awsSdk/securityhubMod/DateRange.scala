@@ -18,10 +18,10 @@ trait DateRange extends js.Object {
 
 object DateRange {
   @scala.inline
-  def apply(Unit: DateRangeUnit = null, Value: Int | scala.Double = null): DateRange = {
+  def apply(Unit: DateRangeUnit = null, Value: js.UndefOr[Integer] = js.undefined): DateRange = {
     val __obj = js.Dynamic.literal()
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateRange]
   }
 }

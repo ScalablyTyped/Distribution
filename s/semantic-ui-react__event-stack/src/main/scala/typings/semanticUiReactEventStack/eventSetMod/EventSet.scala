@@ -1,7 +1,7 @@
 package typings.semanticUiReactEventStack.eventSetMod
 
 import typings.semanticUiReactEventStack.typesMod.EventListeners
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait EventSet extends js.Object {
     * @see https://jsperf.com/suir-eventset-dispatchsingle
     * @see https://jsperf.com/suir-eventset-dispatchmultiple2
     */
-  def dispatchEvent(event: Event_, dispatchAll: Boolean): Unit
+  def dispatchEvent(event: Event, dispatchAll: Boolean): Unit
   def hasHandlers(): Boolean
   /**
     * @see https://jsperf.com/suir-eventset-removehandlers
@@ -28,7 +28,7 @@ object EventSet {
   @scala.inline
   def apply(
     addHandlers: EventListeners => EventSet,
-    dispatchEvent: (Event_, Boolean) => Unit,
+    dispatchEvent: (Event, Boolean) => Unit,
     handlers: js.Any,
     hasHandlers: () => Boolean,
     removeHandlers: EventListeners => EventSet

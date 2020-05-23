@@ -1,6 +1,5 @@
 package typings.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,33 +81,6 @@ object CoercionType extends js.Object {
     */
   @js.native
   sealed trait XmlSvg extends CoercionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CoercionType with Double] = js.native
-  /* 3 */ @js.native
-  object Html extends TopLevel[Html with Double]
-  
-  /* 6 */ @js.native
-  object Image extends TopLevel[Image with Double]
-  
-  /* 1 */ @js.native
-  object Matrix extends TopLevel[Matrix with Double]
-  
-  /* 4 */ @js.native
-  object Ooxml extends TopLevel[Ooxml with Double]
-  
-  /* 5 */ @js.native
-  object SlideRange extends TopLevel[SlideRange with Double]
-  
-  /* 2 */ @js.native
-  object Table
-    extends TopLevel[typings.officeJs.Office.CoercionType.Table with Double]
-  
-  /* 0 */ @js.native
-  object Text extends TopLevel[Text with Double]
-  
-  /* 7 */ @js.native
-  object XmlSvg extends TopLevel[XmlSvg with Double]
   
 }
 

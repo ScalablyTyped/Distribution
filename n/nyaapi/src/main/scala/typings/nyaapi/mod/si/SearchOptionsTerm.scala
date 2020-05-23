@@ -18,16 +18,16 @@ object SearchOptionsTerm {
     category: Category = null,
     direction: asc | desc = null,
     filter: Filter = null,
-    n: Int | Double = null,
-    p: Int | Double = null,
+    n: js.UndefOr[Double] = js.undefined,
+    p: js.UndefOr[Double] = js.undefined,
     sort: String = null
   ): SearchOptionsTerm = {
     val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
+    if (!js.isUndefined(n)) __obj.updateDynamic("n")(n.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(p)) __obj.updateDynamic("p")(p.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptionsTerm]
   }

@@ -1,6 +1,6 @@
 package typings.eventTargetShim.mod
 
-import typings.eventTargetShim.EventTargetstandard
+import typings.eventTargetShim.anon.EventTargetstandard
 import typings.eventTargetShim.mod.EventTarget._EventData
 import scala.scalajs.js
 import scala.scalajs.js.`|`

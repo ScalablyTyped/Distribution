@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,8 +51,4 @@ trait SVGFEDropShadowElement
   ): Unit = js.native
   def setStdDeviation(stdDeviationX: Double, stdDeviationY: Double): Unit = js.native
 }
-
-@JSGlobal("SVGFEDropShadowElement")
-@js.native
-object SVGFEDropShadowElement extends Instantiable0[SVGFEDropShadowElement]
 

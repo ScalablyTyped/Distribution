@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -126,8 +125,4 @@ trait Editor extends Widget_ {
     */
   def startUpdateWorkflowAtMultipleFeatureSelection(candidates: js.Array[Graphic]): js.Promise[Unit] = js.native
 }
-
-@JSGlobal("__esri.Editor")
-@js.native
-object Editor extends TopLevel[EditorConstructor]
 

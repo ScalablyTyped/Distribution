@@ -13,7 +13,7 @@ object Options {
   @scala.inline
   def apply(disk: js.UndefOr[Boolean] = js.undefined, filter: /* dir */ String => Boolean = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disk)) __obj.updateDynamic("disk")(disk.asInstanceOf[js.Any])
+    if (!js.isUndefined(disk)) __obj.updateDynamic("disk")(disk.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     __obj.asInstanceOf[Options]
   }

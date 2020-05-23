@@ -22,9 +22,13 @@ trait ListProvisioningTemplateVersionsRequest extends js.Object {
 
 object ListProvisioningTemplateVersionsRequest {
   @scala.inline
-  def apply(templateName: TemplateName, maxResults: Int | Double = null, nextToken: NextToken = null): ListProvisioningTemplateVersionsRequest = {
+  def apply(
+    templateName: TemplateName,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    nextToken: NextToken = null
+  ): ListProvisioningTemplateVersionsRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisioningTemplateVersionsRequest]
   }

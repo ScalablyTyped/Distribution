@@ -18,9 +18,9 @@ trait ScheduledInstancesPrivateIpAddressConfig extends js.Object {
 
 object ScheduledInstancesPrivateIpAddressConfig {
   @scala.inline
-  def apply(Primary: js.UndefOr[scala.Boolean] = js.undefined, PrivateIpAddress: String = null): ScheduledInstancesPrivateIpAddressConfig = {
+  def apply(Primary: js.UndefOr[Boolean] = js.undefined, PrivateIpAddress: String = null): ScheduledInstancesPrivateIpAddressConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Primary)) __obj.updateDynamic("Primary")(Primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(Primary)) __obj.updateDynamic("Primary")(Primary.get.asInstanceOf[js.Any])
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledInstancesPrivateIpAddressConfig]
   }

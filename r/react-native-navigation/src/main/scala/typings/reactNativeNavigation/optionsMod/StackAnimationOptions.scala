@@ -51,10 +51,10 @@ object StackAnimationOptions {
     if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (elementTransitions != null) __obj.updateDynamic("elementTransitions")(elementTransitions.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (sharedElementTransitions != null) __obj.updateDynamic("sharedElementTransitions")(sharedElementTransitions.asInstanceOf[js.Any])
     if (topBar != null) __obj.updateDynamic("topBar")(topBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackAnimationOptions]
   }
 }

@@ -19,9 +19,9 @@ object SerializeOptions {
     visibility: js.UndefOr[Boolean] = js.undefined
   ): SerializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(omitPivot)) __obj.updateDynamic("omitPivot")(omitPivot.asInstanceOf[js.Any])
-    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitPivot)) __obj.updateDynamic("omitPivot")(omitPivot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializeOptions]
   }
 }

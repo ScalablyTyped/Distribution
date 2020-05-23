@@ -15,12 +15,12 @@ object IFileDownloadOptions {
   def apply(
     encodeURI: js.UndefOr[Boolean] = js.undefined,
     headers: js.Object = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): IFileDownloadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encodeURI)) __obj.updateDynamic("encodeURI")(encodeURI.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeURI)) __obj.updateDynamic("encodeURI")(encodeURI.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileDownloadOptions]
   }
 }

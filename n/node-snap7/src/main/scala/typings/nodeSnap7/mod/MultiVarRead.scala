@@ -14,9 +14,15 @@ trait MultiVarRead extends js.Object {
 
 object MultiVarRead {
   @scala.inline
-  def apply(Amount: Double, Area: Area, Start: Double, WordLen: WordLen, DBNumber: Int | Double = null): MultiVarRead = {
+  def apply(
+    Amount: Double,
+    Area: Area,
+    Start: Double,
+    WordLen: WordLen,
+    DBNumber: js.UndefOr[Double] = js.undefined
+  ): MultiVarRead = {
     val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Area = Area.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any], WordLen = WordLen.asInstanceOf[js.Any])
-    if (DBNumber != null) __obj.updateDynamic("DBNumber")(DBNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(DBNumber)) __obj.updateDynamic("DBNumber")(DBNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiVarRead]
   }
 }

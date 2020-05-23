@@ -18,7 +18,7 @@ trait DataBarConditionalFormatLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     "" (empty string) if no axis is present or set.
     *
     * [Api set: ExcelApi 1.6]
@@ -33,7 +33,7 @@ trait DataBarConditionalFormatLoadOptions extends js.Object {
   var axisFormat: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the direction that the data bar graphic should be based on.
+    * Specifies the direction that the data bar graphic should be based on.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -91,15 +91,15 @@ object DataBarConditionalFormatLoadOptions {
     upperBoundRule: js.UndefOr[Boolean] = js.undefined
   ): DataBarConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(axisColor)) __obj.updateDynamic("axisColor")(axisColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(axisFormat)) __obj.updateDynamic("axisFormat")(axisFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(barDirection)) __obj.updateDynamic("barDirection")(barDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerBoundRule)) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisColor)) __obj.updateDynamic("axisColor")(axisColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisFormat)) __obj.updateDynamic("axisFormat")(axisFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barDirection)) __obj.updateDynamic("barDirection")(barDirection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerBoundRule)) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule.get.asInstanceOf[js.Any])
     if (negativeFormat != null) __obj.updateDynamic("negativeFormat")(negativeFormat.asInstanceOf[js.Any])
     if (positiveFormat != null) __obj.updateDynamic("positiveFormat")(positiveFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(upperBoundRule)) __obj.updateDynamic("upperBoundRule")(upperBoundRule.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperBoundRule)) __obj.updateDynamic("upperBoundRule")(upperBoundRule.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataBarConditionalFormatLoadOptions]
   }
 }

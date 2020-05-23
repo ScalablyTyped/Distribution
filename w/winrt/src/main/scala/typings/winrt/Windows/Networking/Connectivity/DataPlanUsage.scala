@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Networking.Connectivity.DataPlanUsage")
-@js.native
-class DataPlanUsage () extends IDataPlanUsage {
-  /* CompleteClass */
-  override var lastSyncTime: Date = js.native
-  /* CompleteClass */
-  override var megabytesUsed: Double = js.native
+trait DataPlanUsage extends IDataPlanUsage
+
+object DataPlanUsage {
+  @scala.inline
+  def apply(lastSyncTime: Date, megabytesUsed: Double): DataPlanUsage = {
+    val __obj = js.Dynamic.literal(lastSyncTime = lastSyncTime.asInstanceOf[js.Any], megabytesUsed = megabytesUsed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataPlanUsage]
+  }
 }
 

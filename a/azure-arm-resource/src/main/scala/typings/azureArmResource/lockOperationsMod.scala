@@ -1,5 +1,7 @@
 package typings.azureArmResource
 
+import typings.azureArmResource.anon.CustomHeaders
+import typings.azureArmResource.anon.Filter
 import typings.azureArmResource.lockModelsMod.ManagementLockListResult
 import typings.azureArmResource.lockModelsMod.ManagementLockObject
 import typings.azureArmResource.lockModelsMod.OperationListResult
@@ -46,8 +48,8 @@ object lockOperationsMod extends js.Object {
       */
     def list(): js.Promise[OperationListResult] = js.native
     def list(callback: ServiceCallback[OperationListResult]): Unit = js.native
-    def list(options: AnonCustomHeaders): js.Promise[OperationListResult] = js.native
-    def list(options: AnonCustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    def list(options: CustomHeaders): js.Promise[OperationListResult] = js.native
+    def list(options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
     /**
       * Lists all of the available Microsoft.Authorization REST API operations.
       *
@@ -83,8 +85,8 @@ object lockOperationsMod extends js.Object {
       */
     def listNext(nextPageLink: String): js.Promise[OperationListResult] = js.native
     def listNext(nextPageLink: String, callback: ServiceCallback[OperationListResult]): Unit = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[OperationListResult] = js.native
-    def listNext(nextPageLink: String, options: AnonCustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders): js.Promise[OperationListResult] = js.native
+    def listNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[OperationListResult]): Unit = js.native
     /**
       * Lists all of the available Microsoft.Authorization REST API operations.
       *
@@ -103,7 +105,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
-    def listNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    def listNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
     /**
       * Lists all of the available Microsoft.Authorization REST API operations.
       *
@@ -119,7 +121,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listWithHttpOperationResponse(): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
-    def listWithHttpOperationResponse(options: AnonCustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
+    def listWithHttpOperationResponse(options: CustomHeaders): js.Promise[HttpOperationResponse[OperationListResult]] = js.native
   }
   
   @js.native
@@ -191,13 +193,13 @@ object lockOperationsMod extends js.Object {
       resourceGroupName: String,
       lockName: String,
       parameters: ManagementLockObject,
-      options: AnonCustomHeaders
+      options: CustomHeaders
     ): js.Promise[ManagementLockObject] = js.native
     def createOrUpdateAtResourceGroupLevel(
       resourceGroupName: String,
       lockName: String,
       parameters: ManagementLockObject,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[ManagementLockObject]
     ): Unit = js.native
     /**
@@ -245,7 +247,7 @@ object lockOperationsMod extends js.Object {
       resourceGroupName: String,
       lockName: String,
       parameters: ManagementLockObject,
-      options: AnonCustomHeaders
+      options: CustomHeaders
     ): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
     /**
       * @summary Creates or updates a management lock at the resource level or any
@@ -342,7 +344,7 @@ object lockOperationsMod extends js.Object {
       resourceName: String,
       lockName: String,
       parameters: ManagementLockObject,
-      options: AnonCustomHeaders
+      options: CustomHeaders
     ): js.Promise[ManagementLockObject] = js.native
     def createOrUpdateAtResourceLevel(
       resourceGroupName: String,
@@ -352,7 +354,7 @@ object lockOperationsMod extends js.Object {
       resourceName: String,
       lockName: String,
       parameters: ManagementLockObject,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[ManagementLockObject]
     ): Unit = js.native
     /**
@@ -424,7 +426,7 @@ object lockOperationsMod extends js.Object {
       resourceName: String,
       lockName: String,
       parameters: ManagementLockObject,
-      options: AnonCustomHeaders
+      options: CustomHeaders
     ): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
     /**
       * @summary Creates or updates a management lock at the subscription level.
@@ -486,11 +488,11 @@ object lockOperationsMod extends js.Object {
       parameters: ManagementLockObject,
       callback: ServiceCallback[ManagementLockObject]
     ): Unit = js.native
-    def createOrUpdateAtSubscriptionLevel(lockName: String, parameters: ManagementLockObject, options: AnonCustomHeaders): js.Promise[ManagementLockObject] = js.native
+    def createOrUpdateAtSubscriptionLevel(lockName: String, parameters: ManagementLockObject, options: CustomHeaders): js.Promise[ManagementLockObject] = js.native
     def createOrUpdateAtSubscriptionLevel(
       lockName: String,
       parameters: ManagementLockObject,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[ManagementLockObject]
     ): Unit = js.native
     /**
@@ -532,7 +534,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def createOrUpdateAtSubscriptionLevelWithHttpOperationResponse(lockName: String, parameters: ManagementLockObject): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
-    def createOrUpdateAtSubscriptionLevelWithHttpOperationResponse(lockName: String, parameters: ManagementLockObject, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
+    def createOrUpdateAtSubscriptionLevelWithHttpOperationResponse(lockName: String, parameters: ManagementLockObject, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
     /**
       * Create or update a management lock by scope.
       *
@@ -593,12 +595,12 @@ object lockOperationsMod extends js.Object {
       parameters: ManagementLockObject,
       callback: ServiceCallback[ManagementLockObject]
     ): Unit = js.native
-    def createOrUpdateByScope(scope: String, lockName: String, parameters: ManagementLockObject, options: AnonCustomHeaders): js.Promise[ManagementLockObject] = js.native
+    def createOrUpdateByScope(scope: String, lockName: String, parameters: ManagementLockObject, options: CustomHeaders): js.Promise[ManagementLockObject] = js.native
     def createOrUpdateByScope(
       scope: String,
       lockName: String,
       parameters: ManagementLockObject,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[ManagementLockObject]
     ): Unit = js.native
     /**
@@ -639,7 +641,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def createOrUpdateByScopeWithHttpOperationResponse(scope: String, lockName: String, parameters: ManagementLockObject): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
-    def createOrUpdateByScopeWithHttpOperationResponse(scope: String, lockName: String, parameters: ManagementLockObject, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
+    def createOrUpdateByScopeWithHttpOperationResponse(scope: String, lockName: String, parameters: ManagementLockObject, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
     /**
       * @summary Deletes a management lock at the resource group level.
       *
@@ -681,11 +683,11 @@ object lockOperationsMod extends js.Object {
       */
     def deleteAtResourceGroupLevel(resourceGroupName: String, lockName: String): js.Promise[Unit] = js.native
     def deleteAtResourceGroupLevel(resourceGroupName: String, lockName: String, callback: ServiceCallback[Unit]): Unit = js.native
-    def deleteAtResourceGroupLevel(resourceGroupName: String, lockName: String, options: AnonCustomHeaders): js.Promise[Unit] = js.native
+    def deleteAtResourceGroupLevel(resourceGroupName: String, lockName: String, options: CustomHeaders): js.Promise[Unit] = js.native
     def deleteAtResourceGroupLevel(
       resourceGroupName: String,
       lockName: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[Unit]
     ): Unit = js.native
     /**
@@ -713,7 +715,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def deleteAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, lockName: String): js.Promise[HttpOperationResponse[Unit]] = js.native
-    def deleteAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, lockName: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    def deleteAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, lockName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
     /**
       * @summary Deletes the management lock of a resource or any level below the
       * resource.
@@ -789,7 +791,7 @@ object lockOperationsMod extends js.Object {
       resourceType: String,
       resourceName: String,
       lockName: String,
-      options: AnonCustomHeaders
+      options: CustomHeaders
     ): js.Promise[Unit] = js.native
     def deleteAtResourceLevel(
       resourceGroupName: String,
@@ -798,7 +800,7 @@ object lockOperationsMod extends js.Object {
       resourceType: String,
       resourceName: String,
       lockName: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[Unit]
     ): Unit = js.native
     /**
@@ -852,7 +854,7 @@ object lockOperationsMod extends js.Object {
       resourceType: String,
       resourceName: String,
       lockName: String,
-      options: AnonCustomHeaders
+      options: CustomHeaders
     ): js.Promise[HttpOperationResponse[Unit]] = js.native
     /**
       * @summary Deletes the management lock at the subscription level.
@@ -892,8 +894,8 @@ object lockOperationsMod extends js.Object {
       */
     def deleteAtSubscriptionLevel(lockName: String): js.Promise[Unit] = js.native
     def deleteAtSubscriptionLevel(lockName: String, callback: ServiceCallback[Unit]): Unit = js.native
-    def deleteAtSubscriptionLevel(lockName: String, options: AnonCustomHeaders): js.Promise[Unit] = js.native
-    def deleteAtSubscriptionLevel(lockName: String, options: AnonCustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
+    def deleteAtSubscriptionLevel(lockName: String, options: CustomHeaders): js.Promise[Unit] = js.native
+    def deleteAtSubscriptionLevel(lockName: String, options: CustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
     /**
       * @summary Deletes the management lock at the subscription level.
       *
@@ -916,7 +918,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def deleteAtSubscriptionLevelWithHttpOperationResponse(lockName: String): js.Promise[HttpOperationResponse[Unit]] = js.native
-    def deleteAtSubscriptionLevelWithHttpOperationResponse(lockName: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    def deleteAtSubscriptionLevelWithHttpOperationResponse(lockName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
     /**
       * Delete a management lock by scope.
       *
@@ -952,8 +954,8 @@ object lockOperationsMod extends js.Object {
       */
     def deleteByScope(scope: String, lockName: String): js.Promise[Unit] = js.native
     def deleteByScope(scope: String, lockName: String, callback: ServiceCallback[Unit]): Unit = js.native
-    def deleteByScope(scope: String, lockName: String, options: AnonCustomHeaders): js.Promise[Unit] = js.native
-    def deleteByScope(scope: String, lockName: String, options: AnonCustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
+    def deleteByScope(scope: String, lockName: String, options: CustomHeaders): js.Promise[Unit] = js.native
+    def deleteByScope(scope: String, lockName: String, options: CustomHeaders, callback: ServiceCallback[Unit]): Unit = js.native
     /**
       * Delete a management lock by scope.
       *
@@ -973,7 +975,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def deleteByScopeWithHttpOperationResponse(scope: String, lockName: String): js.Promise[HttpOperationResponse[Unit]] = js.native
-    def deleteByScopeWithHttpOperationResponse(scope: String, lockName: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
+    def deleteByScopeWithHttpOperationResponse(scope: String, lockName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[Unit]] = js.native
     /**
       * Gets a management lock at the resource group level.
       *
@@ -1010,11 +1012,11 @@ object lockOperationsMod extends js.Object {
       */
     def getAtResourceGroupLevel(resourceGroupName: String, lockName: String): js.Promise[ManagementLockObject] = js.native
     def getAtResourceGroupLevel(resourceGroupName: String, lockName: String, callback: ServiceCallback[ManagementLockObject]): Unit = js.native
-    def getAtResourceGroupLevel(resourceGroupName: String, lockName: String, options: AnonCustomHeaders): js.Promise[ManagementLockObject] = js.native
+    def getAtResourceGroupLevel(resourceGroupName: String, lockName: String, options: CustomHeaders): js.Promise[ManagementLockObject] = js.native
     def getAtResourceGroupLevel(
       resourceGroupName: String,
       lockName: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[ManagementLockObject]
     ): Unit = js.native
     /**
@@ -1036,7 +1038,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def getAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, lockName: String): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
-    def getAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, lockName: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
+    def getAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, lockName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
     /**
       * Get the management lock of a resource or any level below resource.
       *
@@ -1105,7 +1107,7 @@ object lockOperationsMod extends js.Object {
       resourceType: String,
       resourceName: String,
       lockName: String,
-      options: AnonCustomHeaders
+      options: CustomHeaders
     ): js.Promise[ManagementLockObject] = js.native
     def getAtResourceLevel(
       resourceGroupName: String,
@@ -1114,7 +1116,7 @@ object lockOperationsMod extends js.Object {
       resourceType: String,
       resourceName: String,
       lockName: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[ManagementLockObject]
     ): Unit = js.native
     /**
@@ -1160,7 +1162,7 @@ object lockOperationsMod extends js.Object {
       resourceType: String,
       resourceName: String,
       lockName: String,
-      options: AnonCustomHeaders
+      options: CustomHeaders
     ): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
     /**
       * Gets a management lock at the subscription level.
@@ -1196,8 +1198,8 @@ object lockOperationsMod extends js.Object {
       */
     def getAtSubscriptionLevel(lockName: String): js.Promise[ManagementLockObject] = js.native
     def getAtSubscriptionLevel(lockName: String, callback: ServiceCallback[ManagementLockObject]): Unit = js.native
-    def getAtSubscriptionLevel(lockName: String, options: AnonCustomHeaders): js.Promise[ManagementLockObject] = js.native
-    def getAtSubscriptionLevel(lockName: String, options: AnonCustomHeaders, callback: ServiceCallback[ManagementLockObject]): Unit = js.native
+    def getAtSubscriptionLevel(lockName: String, options: CustomHeaders): js.Promise[ManagementLockObject] = js.native
+    def getAtSubscriptionLevel(lockName: String, options: CustomHeaders, callback: ServiceCallback[ManagementLockObject]): Unit = js.native
     /**
       * Gets a management lock at the subscription level.
       *
@@ -1215,7 +1217,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def getAtSubscriptionLevelWithHttpOperationResponse(lockName: String): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
-    def getAtSubscriptionLevelWithHttpOperationResponse(lockName: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
+    def getAtSubscriptionLevelWithHttpOperationResponse(lockName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
     /**
       * Get a management lock by scope.
       *
@@ -1252,11 +1254,11 @@ object lockOperationsMod extends js.Object {
       */
     def getByScope(scope: String, lockName: String): js.Promise[ManagementLockObject] = js.native
     def getByScope(scope: String, lockName: String, callback: ServiceCallback[ManagementLockObject]): Unit = js.native
-    def getByScope(scope: String, lockName: String, options: AnonCustomHeaders): js.Promise[ManagementLockObject] = js.native
+    def getByScope(scope: String, lockName: String, options: CustomHeaders): js.Promise[ManagementLockObject] = js.native
     def getByScope(
       scope: String,
       lockName: String,
-      options: AnonCustomHeaders,
+      options: CustomHeaders,
       callback: ServiceCallback[ManagementLockObject]
     ): Unit = js.native
     /**
@@ -1278,7 +1280,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def getByScopeWithHttpOperationResponse(scope: String, lockName: String): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
-    def getByScopeWithHttpOperationResponse(scope: String, lockName: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
+    def getByScopeWithHttpOperationResponse(scope: String, lockName: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementLockObject]] = js.native
     /**
       * Gets all the management locks for a resource group.
       *
@@ -1317,12 +1319,8 @@ object lockOperationsMod extends js.Object {
       */
     def listAtResourceGroupLevel(resourceGroupName: String): js.Promise[ManagementLockListResult] = js.native
     def listAtResourceGroupLevel(resourceGroupName: String, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
-    def listAtResourceGroupLevel(resourceGroupName: String, options: AnonFilter): js.Promise[ManagementLockListResult] = js.native
-    def listAtResourceGroupLevel(
-      resourceGroupName: String,
-      options: AnonFilter,
-      callback: ServiceCallback[ManagementLockListResult]
-    ): Unit = js.native
+    def listAtResourceGroupLevel(resourceGroupName: String, options: Filter): js.Promise[ManagementLockListResult] = js.native
+    def listAtResourceGroupLevel(resourceGroupName: String, options: Filter, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
     /**
       * Gets all the management locks for a resource group.
       *
@@ -1359,12 +1357,8 @@ object lockOperationsMod extends js.Object {
       */
     def listAtResourceGroupLevelNext(nextPageLink: String): js.Promise[ManagementLockListResult] = js.native
     def listAtResourceGroupLevelNext(nextPageLink: String, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
-    def listAtResourceGroupLevelNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[ManagementLockListResult] = js.native
-    def listAtResourceGroupLevelNext(
-      nextPageLink: String,
-      options: AnonCustomHeaders,
-      callback: ServiceCallback[ManagementLockListResult]
-    ): Unit = js.native
+    def listAtResourceGroupLevelNext(nextPageLink: String, options: CustomHeaders): js.Promise[ManagementLockListResult] = js.native
+    def listAtResourceGroupLevelNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
     /**
       * Gets all the management locks for a resource group.
       *
@@ -1383,7 +1377,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtResourceGroupLevelNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
-    def listAtResourceGroupLevelNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
+    def listAtResourceGroupLevelNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
     /**
       * Gets all the management locks for a resource group.
       *
@@ -1404,7 +1398,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
-    def listAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, options: AnonFilter): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
+    def listAtResourceGroupLevelWithHttpOperationResponse(resourceGroupName: String, options: Filter): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
     /**
       * Gets all the management locks for a resource or any level below resource.
       *
@@ -1471,7 +1465,7 @@ object lockOperationsMod extends js.Object {
       parentResourcePath: String,
       resourceType: String,
       resourceName: String,
-      options: AnonFilter
+      options: Filter
     ): js.Promise[ManagementLockListResult] = js.native
     def listAtResourceLevel(
       resourceGroupName: String,
@@ -1479,7 +1473,7 @@ object lockOperationsMod extends js.Object {
       parentResourcePath: String,
       resourceType: String,
       resourceName: String,
-      options: AnonFilter,
+      options: Filter,
       callback: ServiceCallback[ManagementLockListResult]
     ): Unit = js.native
     /**
@@ -1518,12 +1512,8 @@ object lockOperationsMod extends js.Object {
       */
     def listAtResourceLevelNext(nextPageLink: String): js.Promise[ManagementLockListResult] = js.native
     def listAtResourceLevelNext(nextPageLink: String, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
-    def listAtResourceLevelNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[ManagementLockListResult] = js.native
-    def listAtResourceLevelNext(
-      nextPageLink: String,
-      options: AnonCustomHeaders,
-      callback: ServiceCallback[ManagementLockListResult]
-    ): Unit = js.native
+    def listAtResourceLevelNext(nextPageLink: String, options: CustomHeaders): js.Promise[ManagementLockListResult] = js.native
+    def listAtResourceLevelNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
     /**
       * Gets all the management locks for a resource or any level below resource.
       *
@@ -1542,7 +1532,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtResourceLevelNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
-    def listAtResourceLevelNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
+    def listAtResourceLevelNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
     /**
       * Gets all the management locks for a resource or any level below resource.
       *
@@ -1584,7 +1574,7 @@ object lockOperationsMod extends js.Object {
       parentResourcePath: String,
       resourceType: String,
       resourceName: String,
-      options: AnonFilter
+      options: Filter
     ): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
     /**
       * Gets all the management locks for a subscription.
@@ -1621,8 +1611,8 @@ object lockOperationsMod extends js.Object {
       */
     def listAtSubscriptionLevel(): js.Promise[ManagementLockListResult] = js.native
     def listAtSubscriptionLevel(callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
-    def listAtSubscriptionLevel(options: AnonFilter): js.Promise[ManagementLockListResult] = js.native
-    def listAtSubscriptionLevel(options: AnonFilter, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
+    def listAtSubscriptionLevel(options: Filter): js.Promise[ManagementLockListResult] = js.native
+    def listAtSubscriptionLevel(options: Filter, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
     /**
       * Gets all the management locks for a subscription.
       *
@@ -1659,12 +1649,8 @@ object lockOperationsMod extends js.Object {
       */
     def listAtSubscriptionLevelNext(nextPageLink: String): js.Promise[ManagementLockListResult] = js.native
     def listAtSubscriptionLevelNext(nextPageLink: String, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
-    def listAtSubscriptionLevelNext(nextPageLink: String, options: AnonCustomHeaders): js.Promise[ManagementLockListResult] = js.native
-    def listAtSubscriptionLevelNext(
-      nextPageLink: String,
-      options: AnonCustomHeaders,
-      callback: ServiceCallback[ManagementLockListResult]
-    ): Unit = js.native
+    def listAtSubscriptionLevelNext(nextPageLink: String, options: CustomHeaders): js.Promise[ManagementLockListResult] = js.native
+    def listAtSubscriptionLevelNext(nextPageLink: String, options: CustomHeaders, callback: ServiceCallback[ManagementLockListResult]): Unit = js.native
     /**
       * Gets all the management locks for a subscription.
       *
@@ -1683,7 +1669,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSubscriptionLevelNextWithHttpOperationResponse(nextPageLink: String): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
-    def listAtSubscriptionLevelNextWithHttpOperationResponse(nextPageLink: String, options: AnonCustomHeaders): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
+    def listAtSubscriptionLevelNextWithHttpOperationResponse(nextPageLink: String, options: CustomHeaders): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
     /**
       * Gets all the management locks for a subscription.
       *
@@ -1701,7 +1687,7 @@ object lockOperationsMod extends js.Object {
       * @reject {Error|ServiceError} - The error object.
       */
     def listAtSubscriptionLevelWithHttpOperationResponse(): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
-    def listAtSubscriptionLevelWithHttpOperationResponse(options: AnonFilter): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
+    def listAtSubscriptionLevelWithHttpOperationResponse(options: Filter): js.Promise[HttpOperationResponse[ManagementLockListResult]] = js.native
   }
   
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,50 +66,6 @@ object AppInstallState extends js.Object {
   /** The app install is starting. */
   @js.native
   sealed trait starting extends AppInstallState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppInstallState with Double] = js.native
-  /* 2 */ @js.native
-  object acquiringLicense extends TopLevel[acquiringLicense with Double]
-  
-  /* 7 */ @js.native
-  object canceled extends TopLevel[canceled with Double]
-  
-  /* 6 */ @js.native
-  object completed extends TopLevel[completed with Double]
-  
-  /* 3 */ @js.native
-  object downloading extends TopLevel[downloading with Double]
-  
-  /* 9 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 5 */ @js.native
-  object installing extends TopLevel[installing with Double]
-  
-  /* 8 */ @js.native
-  object paused extends TopLevel[paused with Double]
-  
-  /* 10 */ @js.native
-  object pausedLowBattery extends TopLevel[pausedLowBattery with Double]
-  
-  /* 11 */ @js.native
-  object pausedWiFiRecommended extends TopLevel[pausedWiFiRecommended with Double]
-  
-  /* 12 */ @js.native
-  object pausedWiFiRequired extends TopLevel[pausedWiFiRequired with Double]
-  
-  /* 0 */ @js.native
-  object pending extends TopLevel[pending with Double]
-  
-  /* 13 */ @js.native
-  object readyToDownload extends TopLevel[readyToDownload with Double]
-  
-  /* 4 */ @js.native
-  object restoringData extends TopLevel[restoringData with Double]
-  
-  /* 1 */ @js.native
-  object starting extends TopLevel[starting with Double]
   
 }
 

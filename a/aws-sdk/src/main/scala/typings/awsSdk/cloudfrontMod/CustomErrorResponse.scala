@@ -28,12 +28,12 @@ object CustomErrorResponse {
   @scala.inline
   def apply(
     ErrorCode: integer,
-    ErrorCachingMinTTL: Int | Double = null,
+    ErrorCachingMinTTL: js.UndefOr[long] = js.undefined,
     ResponseCode: String = null,
     ResponsePagePath: String = null
   ): CustomErrorResponse = {
     val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any])
-    if (ErrorCachingMinTTL != null) __obj.updateDynamic("ErrorCachingMinTTL")(ErrorCachingMinTTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(ErrorCachingMinTTL)) __obj.updateDynamic("ErrorCachingMinTTL")(ErrorCachingMinTTL.get.asInstanceOf[js.Any])
     if (ResponseCode != null) __obj.updateDynamic("ResponseCode")(ResponseCode.asInstanceOf[js.Any])
     if (ResponsePagePath != null) __obj.updateDynamic("ResponsePagePath")(ResponsePagePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomErrorResponse]

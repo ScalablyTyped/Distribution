@@ -1,6 +1,7 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.TopLevel
+import typings.materialUiCore.anon.PartialIconButtonProps
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType

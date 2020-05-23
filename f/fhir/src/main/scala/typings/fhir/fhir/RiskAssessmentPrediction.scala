@@ -67,11 +67,11 @@ object RiskAssessmentPrediction {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     modifierExtension: js.Array[Extension] = null,
-    probabilityDecimal: Int | Double = null,
+    probabilityDecimal: js.UndefOr[decimal] = js.undefined,
     probabilityRange: Range = null,
     qualitativeRisk: CodeableConcept = null,
     rationale: String = null,
-    relativeRisk: Int | Double = null,
+    relativeRisk: js.UndefOr[decimal] = js.undefined,
     whenPeriod: Period = null,
     whenRange: Range = null
   ): RiskAssessmentPrediction = {
@@ -85,11 +85,11 @@ object RiskAssessmentPrediction {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (probabilityDecimal != null) __obj.updateDynamic("probabilityDecimal")(probabilityDecimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(probabilityDecimal)) __obj.updateDynamic("probabilityDecimal")(probabilityDecimal.get.asInstanceOf[js.Any])
     if (probabilityRange != null) __obj.updateDynamic("probabilityRange")(probabilityRange.asInstanceOf[js.Any])
     if (qualitativeRisk != null) __obj.updateDynamic("qualitativeRisk")(qualitativeRisk.asInstanceOf[js.Any])
     if (rationale != null) __obj.updateDynamic("rationale")(rationale.asInstanceOf[js.Any])
-    if (relativeRisk != null) __obj.updateDynamic("relativeRisk")(relativeRisk.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeRisk)) __obj.updateDynamic("relativeRisk")(relativeRisk.get.asInstanceOf[js.Any])
     if (whenPeriod != null) __obj.updateDynamic("whenPeriod")(whenPeriod.asInstanceOf[js.Any])
     if (whenRange != null) __obj.updateDynamic("whenRange")(whenRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[RiskAssessmentPrediction]

@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ sealed trait AppointmentSensitivityType extends js.Object
   * @remarks
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-  * 
+  *
   * @beta
   */
 @JSGlobal("Office.MailboxEnums.AppointmentSensitivityType")
@@ -53,20 +52,6 @@ object AppointmentSensitivityType extends js.Object {
     */
   @js.native
   sealed trait Private extends AppointmentSensitivityType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AppointmentSensitivityType with String] = js.native
-  /* "confidential" */ @js.native
-  object Confidential extends TopLevel[Confidential with String]
-  
-  /* "normal" */ @js.native
-  object Normal extends TopLevel[Normal with String]
-  
-  /* "personal" */ @js.native
-  object Personal extends TopLevel[Personal with String]
-  
-  /* "private" */ @js.native
-  object Private extends TopLevel[Private with String]
   
 }
 

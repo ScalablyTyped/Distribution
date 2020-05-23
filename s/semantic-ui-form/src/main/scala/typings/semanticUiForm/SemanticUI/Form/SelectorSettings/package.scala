@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorSettings {
-  type Param = (typings.semanticUiForm.PickImplmessage | typings.semanticUiForm.PickImplfield | typings.semanticUiForm.PickImplgroup | typings.semanticUiForm.PickImplinput | typings.semanticUiForm.PickImplpromptPromptString | typings.semanticUiForm.PickImplsubmit) with typings.semanticUiForm.PartialPickImplkeyofImplField
+  type Param = (typings.semanticUiForm.anon.PickImplmessage | typings.semanticUiForm.anon.PickImplfield | typings.semanticUiForm.anon.PickImplgroup | typings.semanticUiForm.anon.PickImplinput | typings.semanticUiForm.anon.PickImplpromptPromptString | typings.semanticUiForm.anon.PickImplsubmit) with typings.semanticUiForm.anon.PartialPickImplkeyofImplField
 }

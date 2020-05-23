@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.anon.MaterialIndexStart
 import typings.three.box3Mod.Box3
 import typings.three.colorMod.Color
 import typings.three.geometryMod.Geometry
@@ -21,7 +22,7 @@ object directGeometryMod extends js.Object {
     var boundingSphere: Sphere = js.native
     var colors: js.Array[Color] = js.native
     var colorsNeedUpdate: Boolean = js.native
-    var groups: js.Array[AnonMaterialIndexStart] = js.native
+    var groups: js.Array[MaterialIndexStart] = js.native
     var groupsNeedUpdate: Boolean = js.native
     var id: Double = js.native
     var indices: js.Array[Double] = js.native

@@ -45,10 +45,10 @@ object ListLoadOptions {
     levelTypes: js.UndefOr[Boolean] = js.undefined
   ): ListLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(levelExistences)) __obj.updateDynamic("levelExistences")(levelExistences.asInstanceOf[js.Any])
-    if (!js.isUndefined(levelTypes)) __obj.updateDynamic("levelTypes")(levelTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(levelExistences)) __obj.updateDynamic("levelExistences")(levelExistences.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(levelTypes)) __obj.updateDynamic("levelTypes")(levelTypes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLoadOptions]
   }
 }

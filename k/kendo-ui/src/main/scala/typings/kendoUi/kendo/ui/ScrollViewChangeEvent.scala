@@ -18,16 +18,16 @@ object ScrollViewChangeEvent {
     isDefaultPrevented: () => Boolean,
     preventDefault: js.Function,
     sender: ScrollView,
-    currentPage: Int | Double = null,
+    currentPage: js.UndefOr[Double] = js.undefined,
     data: js.Any = null,
     element: JQuery = null,
-    nextPage: Int | Double = null
+    nextPage: js.UndefOr[Double] = js.undefined
   ): ScrollViewChangeEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (nextPage != null) __obj.updateDynamic("nextPage")(nextPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPage)) __obj.updateDynamic("nextPage")(nextPage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewChangeEvent]
   }
 }

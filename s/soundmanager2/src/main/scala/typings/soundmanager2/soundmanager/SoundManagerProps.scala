@@ -61,8 +61,8 @@ object SoundManagerProps {
     defaultOptions: DefaultOptions = null,
     features: js.Object = null,
     flash9Options: Flash9Options = null,
-    flashLoadTimeout: Int | Double = null,
-    flashVersion: Int | Double = null,
+    flashLoadTimeout: js.UndefOr[Double] = js.undefined,
+    flashVersion: js.UndefOr[Double] = js.undefined,
     forceUseGlobalHTML5Audio: js.UndefOr[Boolean] = js.undefined,
     html5Only: js.UndefOr[Boolean] = js.undefined,
     idPrefix: String = null,
@@ -79,37 +79,37 @@ object SoundManagerProps {
     useHTML5Audio: js.UndefOr[Boolean] = js.undefined,
     useHighPerformance: js.UndefOr[Boolean] = js.undefined,
     waitForWindowLoad: `false` = null,
-    wmode: String = null
+    wmode: js.UndefOr[Null | String] = js.undefined
   ): SoundManagerProps = {
     val __obj = js.Dynamic.literal()
     if (allowScriptAccess != null) __obj.updateDynamic("allowScriptAccess")(allowScriptAccess.asInstanceOf[js.Any])
     if (altURL != null) __obj.updateDynamic("altURL")(altURL.asInstanceOf[js.Any])
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(consoleOnly)) __obj.updateDynamic("consoleOnly")(consoleOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugFlash)) __obj.updateDynamic("debugFlash")(debugFlash.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(consoleOnly)) __obj.updateDynamic("consoleOnly")(consoleOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugFlash)) __obj.updateDynamic("debugFlash")(debugFlash.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.get.asInstanceOf[js.Any])
     if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (flash9Options != null) __obj.updateDynamic("flash9Options")(flash9Options.asInstanceOf[js.Any])
-    if (flashLoadTimeout != null) __obj.updateDynamic("flashLoadTimeout")(flashLoadTimeout.asInstanceOf[js.Any])
-    if (flashVersion != null) __obj.updateDynamic("flashVersion")(flashVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceUseGlobalHTML5Audio)) __obj.updateDynamic("forceUseGlobalHTML5Audio")(forceUseGlobalHTML5Audio.asInstanceOf[js.Any])
-    if (!js.isUndefined(html5Only)) __obj.updateDynamic("html5Only")(html5Only.asInstanceOf[js.Any])
+    if (!js.isUndefined(flashLoadTimeout)) __obj.updateDynamic("flashLoadTimeout")(flashLoadTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(flashVersion)) __obj.updateDynamic("flashVersion")(flashVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceUseGlobalHTML5Audio)) __obj.updateDynamic("forceUseGlobalHTML5Audio")(forceUseGlobalHTML5Audio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(html5Only)) __obj.updateDynamic("html5Only")(html5Only.get.asInstanceOf[js.Any])
     if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreMobileRestrications)) __obj.updateDynamic("ignoreMobileRestrications")(ignoreMobileRestrications.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreMobileRestrications)) __obj.updateDynamic("ignoreMobileRestrications")(ignoreMobileRestrications.get.asInstanceOf[js.Any])
     if (movieStarOptions != null) __obj.updateDynamic("movieStarOptions")(movieStarOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSWFCache)) __obj.updateDynamic("noSWFCache")(noSWFCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSWFCache)) __obj.updateDynamic("noSWFCache")(noSWFCache.get.asInstanceOf[js.Any])
     if (onready != null) __obj.updateDynamic("onready")(js.Any.fromFunction0(onready))
     if (ontimeout != null) __obj.updateDynamic("ontimeout")(js.Any.fromFunction0(ontimeout))
-    if (!js.isUndefined(preferFlash)) __obj.updateDynamic("preferFlash")(preferFlash.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferFlash)) __obj.updateDynamic("preferFlash")(preferFlash.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAltURL)) __obj.updateDynamic("useAltURL")(useAltURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(useConsole)) __obj.updateDynamic("useConsole")(useConsole.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFlashBlock)) __obj.updateDynamic("useFlashBlock")(useFlashBlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML5Audio)) __obj.updateDynamic("useHTML5Audio")(useHTML5Audio.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHighPerformance)) __obj.updateDynamic("useHighPerformance")(useHighPerformance.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAltURL)) __obj.updateDynamic("useAltURL")(useAltURL.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useConsole)) __obj.updateDynamic("useConsole")(useConsole.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFlashBlock)) __obj.updateDynamic("useFlashBlock")(useFlashBlock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHTML5Audio)) __obj.updateDynamic("useHTML5Audio")(useHTML5Audio.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHighPerformance)) __obj.updateDynamic("useHighPerformance")(useHighPerformance.get.asInstanceOf[js.Any])
     if (waitForWindowLoad != null) __obj.updateDynamic("waitForWindowLoad")(waitForWindowLoad.asInstanceOf[js.Any])
-    if (wmode != null) __obj.updateDynamic("wmode")(wmode.asInstanceOf[js.Any])
+    if (!js.isUndefined(wmode)) __obj.updateDynamic("wmode")(wmode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoundManagerProps]
   }
 }

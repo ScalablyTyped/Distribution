@@ -106,9 +106,9 @@ object Stack {
     ChangeSetId: ChangeSetId = null,
     DeletionTime: DeletionTime = null,
     Description: Description = null,
-    DisableRollback: js.UndefOr[Boolean] = js.undefined,
+    DisableRollback: js.UndefOr[DisableRollback] = js.undefined,
     DriftInformation: StackDriftInformation = null,
-    EnableTerminationProtection: js.UndefOr[Boolean] = js.undefined,
+    EnableTerminationProtection: js.UndefOr[EnableTerminationProtection] = js.undefined,
     LastUpdatedTime: LastUpdatedTime = null,
     NotificationARNs: NotificationARNs = null,
     Outputs: Outputs = null,
@@ -120,16 +120,16 @@ object Stack {
     StackId: StackId = null,
     StackStatusReason: StackStatusReason = null,
     Tags: Tags = null,
-    TimeoutInMinutes: Int | Double = null
+    TimeoutInMinutes: js.UndefOr[TimeoutMinutes] = js.undefined
   ): Stack = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], StackStatus = StackStatus.asInstanceOf[js.Any])
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
     if (ChangeSetId != null) __obj.updateDynamic("ChangeSetId")(ChangeSetId.asInstanceOf[js.Any])
     if (DeletionTime != null) __obj.updateDynamic("DeletionTime")(DeletionTime.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableRollback)) __obj.updateDynamic("DisableRollback")(DisableRollback.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableRollback)) __obj.updateDynamic("DisableRollback")(DisableRollback.get.asInstanceOf[js.Any])
     if (DriftInformation != null) __obj.updateDynamic("DriftInformation")(DriftInformation.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableTerminationProtection)) __obj.updateDynamic("EnableTerminationProtection")(EnableTerminationProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableTerminationProtection)) __obj.updateDynamic("EnableTerminationProtection")(EnableTerminationProtection.get.asInstanceOf[js.Any])
     if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
     if (NotificationARNs != null) __obj.updateDynamic("NotificationARNs")(NotificationARNs.asInstanceOf[js.Any])
     if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs.asInstanceOf[js.Any])
@@ -141,7 +141,7 @@ object Stack {
     if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     if (StackStatusReason != null) __obj.updateDynamic("StackStatusReason")(StackStatusReason.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TimeoutInMinutes != null) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TimeoutInMinutes)) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stack]
   }
 }

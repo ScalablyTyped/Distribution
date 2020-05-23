@@ -47,23 +47,23 @@ object Theme {
   def apply(
     admin_graphql_api_id: String = null,
     created_at: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     name: String = null,
     previewable: js.UndefOr[Boolean] = js.undefined,
     processing: js.UndefOr[Boolean] = js.undefined,
     role: main | unpublished | demo = null,
-    theme_store_id: Int | Double = null,
+    theme_store_id: js.UndefOr[Null | Double] = js.undefined,
     updated_at: String = null
   ): Theme = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(previewable)) __obj.updateDynamic("previewable")(previewable.asInstanceOf[js.Any])
-    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing.asInstanceOf[js.Any])
+    if (!js.isUndefined(previewable)) __obj.updateDynamic("previewable")(previewable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing.get.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (theme_store_id != null) __obj.updateDynamic("theme_store_id")(theme_store_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(theme_store_id)) __obj.updateDynamic("theme_store_id")(theme_store_id.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }

@@ -5,7 +5,7 @@ import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
-import typings.googleGax.AnonAuth
+import typings.googleGax.anon.Auth
 import typings.googleGax.gaxMod.ClientConfig
 import typings.googleGax.grpcMod.ClientStubOptions
 import typings.googleGax.grpcMod.GrpcClientOptions
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
   * @constructor
   */
 class GrpcClient () extends js.Object {
-  def this(options: AnonAuth) = this()
+  def this(options: Auth) = this()
   def this(options: GrpcClientOptions) = this()
   var auth: js.UndefOr[OAuth2Client | GoogleAuth] = js.native
   var authClient: js.UndefOr[OAuth2Client | Compute | JWT | UserRefreshClient] = js.native
@@ -67,13 +67,13 @@ class GrpcClient () extends js.Object {
     * @param {number} opts.port - The port of the service.
     * @return {Promise} A promise which resolves to a gRPC-fallback service stub, which is a protobuf.js service stub instance modified to match the gRPC stub API
     */
-  def createStub(service: Service, opts: ClientStubOptions): js.Promise[typings.protobufjs.mod.rpc.Service] = js.native
+  def createStub(service: Service, opts: ClientStubOptions): js.Promise[FallbackServiceStub] = js.native
   /**
     * gRPC-fallback version of loadProto
     * Loads the protobuf root object from a JSON object created from a proto file
     * @param {Object} jsonObject - A JSON version of a protofile created usin protobuf.js
     * @returns {Object} Root namespace of proto JSON
     */
-  def loadProto(jsonObject: js.Any): Root = js.native
+  def loadProto(jsonObject: js.Object): Root = js.native
 }
 

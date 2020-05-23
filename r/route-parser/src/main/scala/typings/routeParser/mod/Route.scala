@@ -32,7 +32,7 @@ trait Route[TParams /* <: js.Object */] extends js.Object {
 
 object Route {
   @scala.inline
-  def apply[TParams /* <: js.Object */](
+  def apply[TParams](
     `match`: String => (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof TParams ]: string}
     */ typings.routeParser.routeParserStrings.Route with TopLevel[js.Any]) | `false`,

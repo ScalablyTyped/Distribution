@@ -4,12 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.Pixel")
-@js.native
-class Pixel protected () extends js.Object {
-  def this(x: Double, y: Double) = this()
-  var x: Double = js.native
-  var y: Double = js.native
-  def equals(other: Pixel): Boolean = js.native
+trait Pixel extends js.Object {
+  var x: Double
+  var y: Double
+  def equals(other: Pixel): Boolean
+}
+
+object Pixel {
+  @scala.inline
+  def apply(equals: Pixel => Boolean, x: Double, y: Double): Pixel = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pixel]
+  }
 }
 

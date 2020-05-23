@@ -20,7 +20,7 @@ trait Invoker_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ex
 
 object Invoker_ {
   @scala.inline
-  def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
+  def apply[TBase, TImpl, TArgs](
     invoke: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl],
     invokeWithDynamicDependencies: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any

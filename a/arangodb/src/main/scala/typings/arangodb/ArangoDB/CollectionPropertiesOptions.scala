@@ -14,16 +14,16 @@ trait CollectionPropertiesOptions extends js.Object {
 object CollectionPropertiesOptions {
   @scala.inline
   def apply(
-    indexBuckets: Int | Double = null,
-    journalSize: Int | Double = null,
-    replicationFactor: Int | Double = null,
+    indexBuckets: js.UndefOr[Double] = js.undefined,
+    journalSize: js.UndefOr[Double] = js.undefined,
+    replicationFactor: js.UndefOr[Double] = js.undefined,
     waitForSync: js.UndefOr[Boolean] = js.undefined
   ): CollectionPropertiesOptions = {
     val __obj = js.Dynamic.literal()
-    if (indexBuckets != null) __obj.updateDynamic("indexBuckets")(indexBuckets.asInstanceOf[js.Any])
-    if (journalSize != null) __obj.updateDynamic("journalSize")(journalSize.asInstanceOf[js.Any])
-    if (replicationFactor != null) __obj.updateDynamic("replicationFactor")(replicationFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexBuckets)) __obj.updateDynamic("indexBuckets")(indexBuckets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(journalSize)) __obj.updateDynamic("journalSize")(journalSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(replicationFactor)) __obj.updateDynamic("replicationFactor")(replicationFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionPropertiesOptions]
   }
 }

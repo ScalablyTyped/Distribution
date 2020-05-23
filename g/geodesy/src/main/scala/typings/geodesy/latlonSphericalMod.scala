@@ -1,5 +1,6 @@
 package typings.geodesy
 
+import typings.geodesy.anon.Lon1
 import typings.geodesy.dmsMod.Precision
 import typings.geodesy.mod.Dp
 import typings.geodesy.mod.Format
@@ -91,7 +92,7 @@ object latlonSphericalMod extends js.Object {
   object default extends js.Object {
     def areaOf(polygon: Polygon[LatLonSpherical]): Double = js.native
     def areaOf(polygon: Polygon[LatLonSpherical], radius: Double): Double = js.native
-    def crossingParallels(point1: LatLonSpherical, point2: LatLonSpherical, latitude: Double): AnonLon1 | Null = js.native
+    def crossingParallels(point1: LatLonSpherical, point2: LatLonSpherical, latitude: Double): Lon1 | Null = js.native
     def intersection(p1: LatLonSpherical, brng1: Double, p2: LatLonSpherical, brng2: Double): LatLonSpherical | Null = js.native
     def metresToKm: Double = js.native
     def metresToMiles: Double = js.native

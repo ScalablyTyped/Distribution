@@ -41,22 +41,22 @@ object ProxyOptions {
     recorder: ProxyRecorder = null,
     rule: String | RuleModule = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    throttle: Int | Double = null,
+    throttle: js.UndefOr[Double] = js.undefined,
     `type`: http | https = null,
     webInterface: WebInterfaceOptions = null,
     wsIntercept: js.UndefOr[Boolean] = js.undefined
   ): ProxyOptions = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
-    if (!js.isUndefined(dangerouslyIgnoreUnauthorized)) __obj.updateDynamic("dangerouslyIgnoreUnauthorized")(dangerouslyIgnoreUnauthorized.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceProxyHttps)) __obj.updateDynamic("forceProxyHttps")(forceProxyHttps.asInstanceOf[js.Any])
+    if (!js.isUndefined(dangerouslyIgnoreUnauthorized)) __obj.updateDynamic("dangerouslyIgnoreUnauthorized")(dangerouslyIgnoreUnauthorized.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceProxyHttps)) __obj.updateDynamic("forceProxyHttps")(forceProxyHttps.get.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (recorder != null) __obj.updateDynamic("recorder")(recorder.asInstanceOf[js.Any])
     if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttle)) __obj.updateDynamic("throttle")(throttle.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (webInterface != null) __obj.updateDynamic("webInterface")(webInterface.asInstanceOf[js.Any])
-    if (!js.isUndefined(wsIntercept)) __obj.updateDynamic("wsIntercept")(wsIntercept.asInstanceOf[js.Any])
+    if (!js.isUndefined(wsIntercept)) __obj.updateDynamic("wsIntercept")(wsIntercept.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyOptions]
   }
 }

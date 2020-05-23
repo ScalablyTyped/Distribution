@@ -49,7 +49,7 @@ object IDocumentCardActionsProps {
     className: String = null,
     componentRef: IRefObject[IDocumentCardActions] = null,
     key: Key = null,
-    ref: LegacyRef[DocumentCardActionsBase] = null,
+    ref: js.UndefOr[Null | LegacyRef[DocumentCardActionsBase]] = js.undefined,
     styles: IStyleFunctionOrObject[IDocumentCardActionsStyleProps, IDocumentCardActionsStyles] = null,
     theme: ITheme = null,
     views: Number = null
@@ -58,7 +58,7 @@ object IDocumentCardActionsProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])

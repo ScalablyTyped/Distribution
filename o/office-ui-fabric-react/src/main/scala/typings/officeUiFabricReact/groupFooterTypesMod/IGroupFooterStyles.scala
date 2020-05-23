@@ -11,9 +11,9 @@ trait IGroupFooterStyles extends js.Object {
 
 object IGroupFooterStyles {
   @scala.inline
-  def apply(root: IStyle = null): IGroupFooterStyles = {
+  def apply(root: js.UndefOr[Null | IStyle] = js.undefined): IGroupFooterStyles = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupFooterStyles]
   }
 }

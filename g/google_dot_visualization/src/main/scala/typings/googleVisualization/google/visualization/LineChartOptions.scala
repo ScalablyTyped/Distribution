@@ -1,8 +1,8 @@
 package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.googleVisualization.AnonStyle
-import typings.googleVisualization.AnonType
+import typings.googleVisualization.anon.Style
+import typings.googleVisualization.anon.Type
 import typings.googleVisualization.googleVisualizationStrings.function
 import typings.googleVisualization.googleVisualizationStrings.none
 import scala.scalajs.js
@@ -20,7 +20,7 @@ trait LineChartOptions extends js.Object {
   var crosshair: js.UndefOr[ChartCrosshair] = js.undefined
   var curveType: js.UndefOr[none | function] = js.undefined
   var dataOpacity: js.UndefOr[Double] = js.undefined
-  var domainAxis: js.UndefOr[AnonType] = js.undefined
+  var domainAxis: js.UndefOr[Type] = js.undefined
   var enableInteractivity: js.UndefOr[Boolean] = js.undefined
   var explorer: js.UndefOr[ChartExplorer] = js.undefined
   var focusTarget: js.UndefOr[String] = js.undefined
@@ -30,7 +30,7 @@ trait LineChartOptions extends js.Object {
   var height: js.UndefOr[Double] = js.undefined
   var interpolateNulls: js.UndefOr[Boolean] = js.undefined
   var interval: js.UndefOr[js.Any] = js.undefined
-  var intervals: js.UndefOr[AnonStyle] = js.undefined
+  var intervals: js.UndefOr[Style] = js.undefined
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
   var lineWidth: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
@@ -64,24 +64,24 @@ object LineChartOptions {
     colors: js.Array[String] = null,
     crosshair: ChartCrosshair = null,
     curveType: none | function = null,
-    dataOpacity: Int | Double = null,
-    domainAxis: AnonType = null,
+    dataOpacity: js.UndefOr[Double] = js.undefined,
+    domainAxis: Type = null,
     enableInteractivity: js.UndefOr[Boolean] = js.undefined,
     explorer: ChartExplorer = null,
     focusTarget: String = null,
     fontName: String = null,
-    fontSize: Int | Double = null,
+    fontSize: js.UndefOr[Double] = js.undefined,
     hAxis: ChartAxis = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     interpolateNulls: js.UndefOr[Boolean] = js.undefined,
     interval: js.Any = null,
-    intervals: AnonStyle = null,
+    intervals: Style = null,
     legend: ChartLegend | none = null,
-    lineWidth: Int | Double = null,
-    min: Int | Double = null,
+    lineWidth: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     orientation: ChartOrientation = null,
     pointShape: ChartPointShape = null,
-    pointSize: Int | Double = null,
+    pointSize: js.UndefOr[Double] = js.undefined,
     pointsVisible: js.UndefOr[Boolean] = js.undefined,
     reverseCategories: js.UndefOr[Boolean] = js.undefined,
     selectionMode: ChartSelectionMode = null,
@@ -94,7 +94,7 @@ object LineChartOptions {
     trendlines: NumberDictionary[ChartTrendlineOptions] = null,
     vAxes: js.Any = null,
     vAxis: ChartAxis = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): LineChartOptions = {
     val __obj = js.Dynamic.literal()
     if (aggregationTarget != null) __obj.updateDynamic("aggregationTarget")(aggregationTarget.asInstanceOf[js.Any])
@@ -106,26 +106,26 @@ object LineChartOptions {
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair.asInstanceOf[js.Any])
     if (curveType != null) __obj.updateDynamic("curveType")(curveType.asInstanceOf[js.Any])
-    if (dataOpacity != null) __obj.updateDynamic("dataOpacity")(dataOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataOpacity)) __obj.updateDynamic("dataOpacity")(dataOpacity.get.asInstanceOf[js.Any])
     if (domainAxis != null) __obj.updateDynamic("domainAxis")(domainAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.get.asInstanceOf[js.Any])
     if (explorer != null) __obj.updateDynamic("explorer")(explorer.asInstanceOf[js.Any])
     if (focusTarget != null) __obj.updateDynamic("focusTarget")(focusTarget.asInstanceOf[js.Any])
     if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     if (hAxis != null) __obj.updateDynamic("hAxis")(hAxis.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls.get.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (intervals != null) __obj.updateDynamic("intervals")(intervals.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseCategories)) __obj.updateDynamic("reverseCategories")(reverseCategories.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseCategories)) __obj.updateDynamic("reverseCategories")(reverseCategories.get.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
@@ -136,7 +136,7 @@ object LineChartOptions {
     if (trendlines != null) __obj.updateDynamic("trendlines")(trendlines.asInstanceOf[js.Any])
     if (vAxes != null) __obj.updateDynamic("vAxes")(vAxes.asInstanceOf[js.Any])
     if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineChartOptions]
   }
 }

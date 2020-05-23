@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,18 @@ trait PushSubscription extends js.Object {
   def unsubscribe(): js.Promise[scala.Boolean]
 }
 
-@JSGlobal("PushSubscription")
-@js.native
-object PushSubscription extends Instantiable0[PushSubscription]
+object PushSubscription {
+  @scala.inline
+  def apply(
+    endpoint: java.lang.String,
+    getKey: PushEncryptionKeyName => ArrayBuffer | Null,
+    options: PushSubscriptionOptions,
+    toJSON: () => PushSubscriptionJSON,
+    unsubscribe: () => js.Promise[scala.Boolean],
+    expirationTime: Double = null.asInstanceOf[Double]
+  ): PushSubscription = {
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], getKey = js.Any.fromFunction1(getKey), options = options.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), unsubscribe = js.Any.fromFunction0(unsubscribe), expirationTime = expirationTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PushSubscription]
+  }
+}
 

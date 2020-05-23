@@ -1,26 +1,26 @@
 package typings.antDesignProLayout.themeColorMod
 
-import typings.antDesignProLayout.AnonColor
-import typings.antDesignProLayout.AnonDefaultMessage
+import typings.antDesignProLayout.anon.Color
+import typings.antDesignProLayout.anon.DefaultMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ThemeColorProps extends js.Object {
-  var colors: js.UndefOr[js.Array[AnonColor]] = js.undefined
+  var colors: js.UndefOr[js.Array[Color]] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var value: String
-  def formatMessage(data: AnonDefaultMessage): String
+  def formatMessage(data: DefaultMessage): String
   def onChange(color: String): Unit
 }
 
 object ThemeColorProps {
   @scala.inline
   def apply(
-    formatMessage: AnonDefaultMessage => String,
+    formatMessage: DefaultMessage => String,
     onChange: String => Unit,
     value: String,
-    colors: js.Array[AnonColor] = null,
+    colors: js.Array[Color] = null,
     title: String = null
   ): ThemeColorProps = {
     val __obj = js.Dynamic.literal(formatMessage = js.Any.fromFunction1(formatMessage), onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])

@@ -19,12 +19,12 @@ trait CustomerStorageMessage extends js.Object {
 object CustomerStorageMessage {
   @scala.inline
   def apply(
-    TotalBackupSizeInMegaBytes: Int | scala.Double = null,
-    TotalProvisionedStorageInMegaBytes: Int | scala.Double = null
+    TotalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined,
+    TotalProvisionedStorageInMegaBytes: js.UndefOr[Double] = js.undefined
   ): CustomerStorageMessage = {
     val __obj = js.Dynamic.literal()
-    if (TotalBackupSizeInMegaBytes != null) __obj.updateDynamic("TotalBackupSizeInMegaBytes")(TotalBackupSizeInMegaBytes.asInstanceOf[js.Any])
-    if (TotalProvisionedStorageInMegaBytes != null) __obj.updateDynamic("TotalProvisionedStorageInMegaBytes")(TotalProvisionedStorageInMegaBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalBackupSizeInMegaBytes)) __obj.updateDynamic("TotalBackupSizeInMegaBytes")(TotalBackupSizeInMegaBytes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalProvisionedStorageInMegaBytes)) __obj.updateDynamic("TotalProvisionedStorageInMegaBytes")(TotalProvisionedStorageInMegaBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerStorageMessage]
   }
 }

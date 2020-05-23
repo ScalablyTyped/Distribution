@@ -63,21 +63,21 @@ object FindParametersProperties {
   @scala.inline
   def apply(
     contains: js.UndefOr[Boolean] = js.undefined,
-    geometryPrecision: Int | Double = null,
+    geometryPrecision: js.UndefOr[Double] = js.undefined,
     layerIds: js.Array[Double] = null,
-    maxAllowableOffset: Int | Double = null,
+    maxAllowableOffset: js.UndefOr[Double] = js.undefined,
     outSpatialReference: SpatialReferenceProperties = null,
     returnGeometry: js.UndefOr[Boolean] = js.undefined,
     searchFields: js.Array[String] = null,
     searchText: String = null
   ): FindParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contains)) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
-    if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(contains)) __obj.updateDynamic("contains")(contains.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(geometryPrecision)) __obj.updateDynamic("geometryPrecision")(geometryPrecision.get.asInstanceOf[js.Any])
     if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds.asInstanceOf[js.Any])
-    if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxAllowableOffset)) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.get.asInstanceOf[js.Any])
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.get.asInstanceOf[js.Any])
     if (searchFields != null) __obj.updateDynamic("searchFields")(searchFields.asInstanceOf[js.Any])
     if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindParametersProperties]

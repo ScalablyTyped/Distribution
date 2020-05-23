@@ -14,10 +14,10 @@ object IconProvider {
   def apply(
     getConnectionIconId: (IConnectionProfile, ServerInfo) => Thenable[String],
     providerId: String,
-    handle: Int | Double = null
+    handle: js.UndefOr[Double] = js.undefined
   ): IconProvider = {
     val __obj = js.Dynamic.literal(getConnectionIconId = js.Any.fromFunction2(getConnectionIconId), providerId = providerId.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProvider]
   }
 }

@@ -26,12 +26,12 @@ object TextInputOptions {
     theme: String = null
   ): TextInputOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clearBtn)) __obj.updateDynamic("clearBtn")(clearBtn.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearBtn)) __obj.updateDynamic("clearBtn")(clearBtn.get.asInstanceOf[js.Any])
     if (clearBtnText != null) __obj.updateDynamic("clearBtnText")(clearBtnText.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventFocusZoom)) __obj.updateDynamic("preventFocusZoom")(preventFocusZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventFocusZoom)) __obj.updateDynamic("preventFocusZoom")(preventFocusZoom.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputOptions]
   }

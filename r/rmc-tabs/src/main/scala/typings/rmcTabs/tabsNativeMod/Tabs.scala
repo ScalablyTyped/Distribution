@@ -2,10 +2,10 @@ package typings.rmcTabs.tabsNativeMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.ScrollView
-import typings.rmcTabs.AnonComponent
-import typings.rmcTabs.TypeofDefaultTabBar
+import typings.rmcTabs.anon.Component
+import typings.rmcTabs.anon.TypeofDefaultTabBar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Tabs protected ()
   extends typings.rmcTabs.tabsBaseMod.Tabs[PropsType, StateType] {
   def this(props: PropsType) = this()
   var AnimatedScrollView: ScrollView = js.native
-  var scrollView: AnonComponent = js.native
+  var scrollView: Component = js.native
   def goToTab(index: Double, force: Boolean, animated: Boolean): Boolean = js.native
   def handleLayout(
     e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.LayoutChangeEvent */ js.Any

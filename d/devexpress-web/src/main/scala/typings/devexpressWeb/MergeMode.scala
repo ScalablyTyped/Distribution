@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,17 +30,6 @@ object MergeMode extends js.Object {
     */
   @js.native
   sealed trait NewSection extends MergeMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MergeMode with Double] = js.native
-  /* 2 */ @js.native
-  object JoinTables extends TopLevel[JoinTables with Double]
-  
-  /* 0 */ @js.native
-  object NewParagraph extends TopLevel[NewParagraph with Double]
-  
-  /* 1 */ @js.native
-  object NewSection extends TopLevel[NewSection with Double]
   
 }
 

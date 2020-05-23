@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonMaximumClock
+import typings.cesium.anon.MaximumClock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "EllipsoidOutlineGeometry")
 @js.native
 class EllipsoidOutlineGeometry () extends Packable {
-  def this(options: AnonMaximumClock) = this()
+  def this(options: MaximumClock) = this()
 }
 
 /* static members */

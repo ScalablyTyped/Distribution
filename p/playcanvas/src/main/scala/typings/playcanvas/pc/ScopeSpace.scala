@@ -5,35 +5,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @class
-  * @name pc.ScopeSpace
-  * @classdesc The scope for variables and subspaces.
-  * @param {string} name - The scope name.
-  * @property {string} name The scope name.
+  * The scope for variables and subspaces.
+  * @property name - The scope name.
+  * @param name - The scope name.
   */
-@JSGlobal("pc.ScopeSpace")
-@js.native
-class ScopeSpace protected () extends js.Object {
-  def this(name: String) = this()
+trait ScopeSpace extends js.Object {
   /**
     * The scope name.
     */
-  var name: String = js.native
+  var name: String
   /**
-    * @function
-    * @name pc.ScopeSpace#getSubSpace
-    * @description Get (or create, if it doesn't already exist) a subspace in the scope.
-    * @param {string} name - The subspace name.
-    * @returns {pc.ScopeSpace} The subspace instance.
+    * Get (or create, if it doesn't already exist) a subspace in the scope.
+    * @param name - The subspace name.
+    * @returns The subspace instance.
     */
-  def getSubSpace(name: String): ScopeSpace = js.native
+  def getSubSpace(name: String): ScopeSpace
   /**
-    * @function
-    * @name pc.ScopeSpace#resolve
-    * @description Get (or create, if it doesn't already exist) a variable in the scope.
-    * @param {string} name - The variable name.
-    * @returns {pc.ScopeId} The variable instance.
+    * Get (or create, if it doesn't already exist) a variable in the scope.
+    * @param name - The variable name.
+    * @returns The variable instance.
     */
-  def resolve(name: String): ScopeId = js.native
+  def resolve(name: String): ScopeId
+}
+
+object ScopeSpace {
+  @scala.inline
+  def apply(getSubSpace: String => ScopeSpace, name: String, resolve: String => ScopeId): ScopeSpace = {
+    val __obj = js.Dynamic.literal(getSubSpace = js.Any.fromFunction1(getSubSpace), name = name.asInstanceOf[js.Any], resolve = js.Any.fromFunction1(resolve))
+    __obj.asInstanceOf[ScopeSpace]
+  }
 }
 

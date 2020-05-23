@@ -40,8 +40,8 @@ object VpcConfigResponse {
   @scala.inline
   def apply(
     clusterSecurityGroupId: String = null,
-    endpointPrivateAccess: js.UndefOr[scala.Boolean] = js.undefined,
-    endpointPublicAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    endpointPrivateAccess: js.UndefOr[Boolean] = js.undefined,
+    endpointPublicAccess: js.UndefOr[Boolean] = js.undefined,
     publicAccessCidrs: StringList = null,
     securityGroupIds: StringList = null,
     subnetIds: StringList = null,
@@ -49,8 +49,8 @@ object VpcConfigResponse {
   ): VpcConfigResponse = {
     val __obj = js.Dynamic.literal()
     if (clusterSecurityGroupId != null) __obj.updateDynamic("clusterSecurityGroupId")(clusterSecurityGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(endpointPrivateAccess)) __obj.updateDynamic("endpointPrivateAccess")(endpointPrivateAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(endpointPublicAccess)) __obj.updateDynamic("endpointPublicAccess")(endpointPublicAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(endpointPrivateAccess)) __obj.updateDynamic("endpointPrivateAccess")(endpointPrivateAccess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endpointPublicAccess)) __obj.updateDynamic("endpointPublicAccess")(endpointPublicAccess.get.asInstanceOf[js.Any])
     if (publicAccessCidrs != null) __obj.updateDynamic("publicAccessCidrs")(publicAccessCidrs.asInstanceOf[js.Any])
     if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
     if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])

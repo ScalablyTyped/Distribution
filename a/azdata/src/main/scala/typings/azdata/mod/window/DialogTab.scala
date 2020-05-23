@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DialogTab extends ModelViewPanel {
   /**
-  			 * A string giving the ID of the tab's model view content
-  			 */
+    * A string giving the ID of the tab's model view content
+    */
   var content: String = js.native
   /**
-  			 * The title of the tab
-  			 */
+    * The title of the tab
+    */
   var title: String = js.native
 }
 

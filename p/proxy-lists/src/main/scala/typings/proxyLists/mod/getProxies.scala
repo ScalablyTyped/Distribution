@@ -1,6 +1,6 @@
 package typings.proxyLists.mod
 
-import typings.proxyLists.PartialOptions
+import typings.proxyLists.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

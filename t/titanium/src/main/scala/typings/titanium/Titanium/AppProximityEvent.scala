@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Fired when the proximity sensor changes state.
-	 */
+  * Fired when the proximity sensor changes state.
+  */
 trait AppProximityEvent extends AppBaseEvent {
   /**
-  		 * Proximity state value.
-  		 */
+    * Proximity state value.
+    */
   var state: Boolean
 }
 

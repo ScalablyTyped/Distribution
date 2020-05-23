@@ -47,7 +47,7 @@ object NodePool {
   def apply(
     autoscaling: NodePoolAutoscaling = null,
     config: NodeConfig = null,
-    initialNodeCount: Int | Double = null,
+    initialNodeCount: js.UndefOr[Double] = js.undefined,
     instanceGroupUrls: js.Array[String] = null,
     management: NodeManagement = null,
     name: String = null,
@@ -59,7 +59,7 @@ object NodePool {
     val __obj = js.Dynamic.literal()
     if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (initialNodeCount != null) __obj.updateDynamic("initialNodeCount")(initialNodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialNodeCount)) __obj.updateDynamic("initialNodeCount")(initialNodeCount.get.asInstanceOf[js.Any])
     if (instanceGroupUrls != null) __obj.updateDynamic("instanceGroupUrls")(instanceGroupUrls.asInstanceOf[js.Any])
     if (management != null) __obj.updateDynamic("management")(management.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

@@ -22,9 +22,9 @@ trait UpgradeAppliedSchemaRequest extends js.Object {
 
 object UpgradeAppliedSchemaRequest {
   @scala.inline
-  def apply(DirectoryArn: Arn, PublishedSchemaArn: Arn, DryRun: js.UndefOr[Boolean] = js.undefined): UpgradeAppliedSchemaRequest = {
+  def apply(DirectoryArn: Arn, PublishedSchemaArn: Arn, DryRun: js.UndefOr[Bool] = js.undefined): UpgradeAppliedSchemaRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], PublishedSchemaArn = PublishedSchemaArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeAppliedSchemaRequest]
   }
 }

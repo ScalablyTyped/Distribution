@@ -1,8 +1,5 @@
 package typings.aceBuilds.mod.Ace
 
-import typings.aceBuilds.AnonAction
-import typings.aceBuilds.AnonData
-import typings.aceBuilds.AnonMax
 import typings.aceBuilds.aceBuildsStrings.auto
 import typings.aceBuilds.aceBuildsStrings.changeFold
 import typings.aceBuilds.aceBuildsStrings.changeScrollLeft
@@ -27,6 +24,9 @@ import typings.aceBuilds.aceBuildsStrings.useSoftTabs
 import typings.aceBuilds.aceBuildsStrings.useWorker
 import typings.aceBuilds.aceBuildsStrings.wrap
 import typings.aceBuilds.aceBuildsStrings.wrapMethod
+import typings.aceBuilds.anon.Action
+import typings.aceBuilds.anon.Data
+import typings.aceBuilds.anon.Max
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -126,7 +126,7 @@ trait EditSession
   def getValue(): String = js.native
   def getWordRange(row: Double, column: Double): Range = js.native
   def getWrapLimit(): Double = js.native
-  def getWrapLimitRange(): AnonMax = js.native
+  def getWrapLimitRange(): Max = js.native
   def getdocumentLastRowColumnPosition(docRow: Double, docColumn: Double): Point = js.native
   def highlight(re: RegExp): Unit = js.native
   def highlightLines(startRow: Double, endRow: Double, className: String): Range = js.native
@@ -140,13 +140,13 @@ trait EditSession
   def moveText(fromRange: Range, toPosition: Point): Unit = js.native
   def moveText(fromRange: Range, toPosition: Point, copy: Boolean): Unit = js.native
   @JSName("on")
-  def on_changeFold(name: changeFold, callback: js.Function1[/* obj */ AnonAction, Unit]): js.Function = js.native
+  def on_changeFold(name: changeFold, callback: js.Function1[/* obj */ Action, Unit]): js.Function = js.native
   @JSName("on")
   def on_changeScrollLeft(name: changeScrollLeft, callback: js.Function1[/* scrollLeft */ Double, Unit]): js.Function = js.native
   @JSName("on")
   def on_changeScrollTop(name: changeScrollTop, callback: js.Function1[/* scrollTop */ Double, Unit]): js.Function = js.native
   @JSName("on")
-  def on_tokenizerUpdate(name: tokenizerUpdate, callback: js.Function1[/* obj */ AnonData, Unit]): js.Function = js.native
+  def on_tokenizerUpdate(name: tokenizerUpdate, callback: js.Function1[/* obj */ Data, Unit]): js.Function = js.native
   def outdentRows(range: Range): Unit = js.native
   def redoChanges(deltas: js.Array[Delta]): Unit = js.native
   def redoChanges(deltas: js.Array[Delta], dontSelect: Boolean): Unit = js.native

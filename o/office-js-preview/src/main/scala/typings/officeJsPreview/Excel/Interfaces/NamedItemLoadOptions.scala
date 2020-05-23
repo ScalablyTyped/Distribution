@@ -25,49 +25,49 @@ trait NamedItemLoadOptions extends js.Object {
   var arrayValues: js.UndefOr[NamedItemArrayValuesLoadOptions] = js.undefined
   /**
     *
-    * Represents the comment associated with this name.
+    * Specifies the comment associated with this name.
     *
     * [Api set: ExcelApi 1.4]
     */
   var comment: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+    * The formula of the named item. Formula always starts with a '=' sign.
     *
     * [Api set: ExcelApi 1.7]
     */
   var formula: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * The name of the object. Read-only.
+    * The name of the object.
     *
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only.
+    * Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook.
     *
     * [Api set: ExcelApi 1.4]
     */
   var scope: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+    * Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
     *
     * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+    * Represents the value computed by the name's formula. For a named range, will return the range address.
     *
     * [Api set: ExcelApi 1.1]
     */
   var value: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether the object is visible or not.
+    * Specifies if the object is visible.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -104,15 +104,15 @@ object NamedItemLoadOptions {
     worksheetOrNullObject: WorksheetLoadOptions = null
   ): NamedItemLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(formula)) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(scope)) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formula)) __obj.updateDynamic("formula")(formula.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scope)) __obj.updateDynamic("scope")(scope.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     if (worksheetOrNullObject != null) __obj.updateDynamic("worksheetOrNullObject")(worksheetOrNullObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemLoadOptions]

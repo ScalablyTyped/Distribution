@@ -21,18 +21,13 @@ trait IPie extends ISeries {
   var field: js.UndefOr[String] = js.undefined
   /** [Config Option] (Number) */
   var highlightDuration: js.UndefOr[Double] = js.undefined
-  /** [Method] Highlight the specified item
-  		* @param item Object {Object} Info about the item; same format as returned by getItemForPoint
-  		*/
-  @JSName("highlightItem")
-  var highlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
   var lengthField: js.UndefOr[String] = js.undefined
   /** [Config Option] (Object) */
   var style: js.UndefOr[js.Any] = js.undefined
   /** [Method] Un highlights the specified item
-  		* @param item Object {Object} Info about the item; same format as returned by getItemForPoint
-  		*/
+    * @param item Object {Object} Info about the item; same format as returned by getItemForPoint
+    */
   @JSName("unHighlightItem")
   var unHighlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String) */
@@ -72,8 +67,8 @@ object IPie {
     hideAll: () => Unit = null,
     highlight: js.Any = null,
     highlightCfg: js.Any = null,
-    highlightDuration: Int | Double = null,
-    highlightItem: /* item */ js.UndefOr[js.Any] => Unit = null,
+    highlightDuration: js.UndefOr[Double] = js.undefined,
+    highlightItem: js.UndefOr[js.Any] => Unit = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IPie = null,
     isExcluded: /* index */ js.UndefOr[js.Any] => Unit = null,
@@ -143,12 +138,12 @@ object IPie {
     if (hideAll != null) __obj.updateDynamic("hideAll")(js.Any.fromFunction0(hideAll))
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (highlightCfg != null) __obj.updateDynamic("highlightCfg")(highlightCfg.asInstanceOf[js.Any])
-    if (highlightDuration != null) __obj.updateDynamic("highlightDuration")(highlightDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightDuration)) __obj.updateDynamic("highlightDuration")(highlightDuration.get.asInstanceOf[js.Any])
     if (highlightItem != null) __obj.updateDynamic("highlightItem")(js.Any.fromFunction1(highlightItem))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isExcluded != null) __obj.updateDynamic("isExcluded")(js.Any.fromFunction1(isExcluded))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (lengthField != null) __obj.updateDynamic("lengthField")(lengthField.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -169,8 +164,8 @@ object IPie {
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction2(setTitle))
     if (shadowAttributes != null) __obj.updateDynamic("shadowAttributes")(shadowAttributes.asInstanceOf[js.Any])
     if (showAll != null) __obj.updateDynamic("showAll")(js.Any.fromFunction0(showAll))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))

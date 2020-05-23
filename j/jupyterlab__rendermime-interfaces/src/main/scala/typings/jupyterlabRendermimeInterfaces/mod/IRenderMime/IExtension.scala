@@ -54,15 +54,15 @@ object IExtension {
     dataType: string | json = null,
     documentWidgetFactoryOptions: IDocumentWidgetFactoryOptions | js.Array[IDocumentWidgetFactoryOptions] = null,
     fileTypes: js.Array[IFileType] = null,
-    rank: Int | Double = null,
-    renderTimeout: Int | Double = null
+    rank: js.UndefOr[Double] = js.undefined,
+    renderTimeout: js.UndefOr[Double] = js.undefined
   ): IExtension = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], rendererFactory = rendererFactory.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (documentWidgetFactoryOptions != null) __obj.updateDynamic("documentWidgetFactoryOptions")(documentWidgetFactoryOptions.asInstanceOf[js.Any])
     if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (renderTimeout != null) __obj.updateDynamic("renderTimeout")(renderTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderTimeout)) __obj.updateDynamic("renderTimeout")(renderTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExtension]
   }
 }

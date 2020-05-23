@@ -59,17 +59,17 @@ object PipsOptions {
   @scala.inline
   def apply(
     mode: range | steps | positions | count | values,
-    density: Int | Double = null,
+    density: js.UndefOr[Double] = js.undefined,
     filter: /* repeated */ js.Any => PipFilterResult = null,
     format: js.Object | (js.Function1[/* repeated */ js.Any, _]) = null,
     stepped: js.UndefOr[Boolean] = js.undefined,
     values: Double | js.Array[Double] = null
   ): PipsOptions = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (!js.isUndefined(density)) __obj.updateDynamic("density")(density.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepped)) __obj.updateDynamic("stepped")(stepped.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepped)) __obj.updateDynamic("stepped")(stepped.get.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipsOptions]
   }

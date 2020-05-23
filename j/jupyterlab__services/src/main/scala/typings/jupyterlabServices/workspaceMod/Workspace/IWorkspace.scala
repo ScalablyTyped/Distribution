@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.workspaceMod.Workspace
 
-import typings.jupyterlabServices.AnonId
+import typings.jupyterlabServices.anon.Id
 import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,12 +17,12 @@ trait IWorkspace extends js.Object {
   /**
     * The metadata for a workspace.
     */
-  var metadata: AnonId
+  var metadata: Id
 }
 
 object IWorkspace {
   @scala.inline
-  def apply(data: ReadonlyPartialJSONObject, metadata: AnonId): IWorkspace = {
+  def apply(data: ReadonlyPartialJSONObject, metadata: Id): IWorkspace = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWorkspace]
   }

@@ -20,7 +20,7 @@ object DeleteDiskRequest {
   @scala.inline
   def apply(diskName: ResourceName, forceDeleteAddOns: js.UndefOr[Boolean] = js.undefined): DeleteDiskRequest = {
     val __obj = js.Dynamic.literal(diskName = diskName.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceDeleteAddOns)) __obj.updateDynamic("forceDeleteAddOns")(forceDeleteAddOns.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceDeleteAddOns)) __obj.updateDynamic("forceDeleteAddOns")(forceDeleteAddOns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDiskRequest]
   }
 }

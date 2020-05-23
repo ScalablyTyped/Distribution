@@ -9,15 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An object to send Bluetooth Low Energy (LE) advertisements. */
-@JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisher")
 @js.native
-/** Creates a new BluetoothLEAdvertisementPublisher object. */
-class BluetoothLEAdvertisementPublisher () extends js.Object {
-  /**
-    * Creates a new BluetoothLEAdvertisementPublisher object with the Bluetooth LE advertisement to publish.
-    * @param advertisement The Bluetooth LE advertisement to publish.
-    */
-  def this(advertisement: BluetoothLEAdvertisement) = this()
+trait BluetoothLEAdvertisementPublisher extends js.Object {
   /** Gets a copy of the Bluetooth LE advertisement to publish. */
   var advertisement: BluetoothLEAdvertisement = js.native
   /** Notification that the status of the BluetoothLEAdvertisementPublisher has changed. */

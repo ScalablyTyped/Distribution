@@ -1,8 +1,8 @@
 package typings.rmcTabs.tabPaneMod
 
 import typings.react.mod.Component
-import typings.rmcTabs.AnonFixX
-import typings.rmcTabs.PropsTypechildrenReactNod
+import typings.rmcTabs.anon.FixX
+import typings.rmcTabs.anon.PropsTypechildrenReactNod
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +24,6 @@ class TabPane ()
 @JSImport("rmc-tabs/lib/TabPane", "TabPane")
 @js.native
 object TabPane extends js.Object {
-  var defaultProps: AnonFixX = js.native
+  var defaultProps: FixX = js.native
 }
 

@@ -38,12 +38,12 @@ object FileOptions {
   ): FileOptions = {
     val __obj = js.Dynamic.literal()
     if (basedir != null) __obj.updateDynamic("basedir")(basedir.asInstanceOf[js.Any])
-    if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry.get.asInstanceOf[js.Any])
     if (expose != null) __obj.updateDynamic("expose")(expose.asInstanceOf[js.Any])
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.get.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(transform)) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (!js.isUndefined(transform)) __obj.updateDynamic("transform")(transform.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }
 }

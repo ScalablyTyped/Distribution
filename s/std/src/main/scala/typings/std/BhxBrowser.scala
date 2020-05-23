@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,4 @@ trait BhxBrowser extends js.Object {
   def webPlatformGenericFunction(destination: js.Any, parameters: java.lang.String): Unit = js.native
   def webPlatformGenericFunction(destination: js.Any, parameters: java.lang.String, callbackId: Double): Unit = js.native
 }
-
-@JSGlobal("BhxBrowser")
-@js.native
-object BhxBrowser extends Instantiable0[BhxBrowser]
 

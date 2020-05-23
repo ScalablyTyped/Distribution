@@ -1,13 +1,13 @@
 package typings.chartmogulNode.mod.Customer
 
-import typings.chartmogulNode.AnonAddresszip
+import typings.chartmogulNode.anon.Addresszip
 import typings.chartmogulNode.commonMod.Strings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Customer extends js.Object {
-  var address: js.UndefOr[AnonAddresszip] = js.undefined
+  var address: js.UndefOr[Addresszip] = js.undefined
   var arr: js.UndefOr[Double] = js.undefined
   var attributes: js.UndefOr[Attributes_] = js.undefined
   var `billing-system-type`: js.UndefOr[String] = js.undefined
@@ -38,8 +38,8 @@ trait Customer extends js.Object {
 object Customer {
   @scala.inline
   def apply(
-    address: AnonAddresszip = null,
-    arr: Int | Double = null,
+    address: Addresszip = null,
+    arr: js.UndefOr[Double] = js.undefined,
     attributes: Attributes_ = null,
     `billing-system-type`: String = null,
     `billing-system-url`: String = null,
@@ -56,9 +56,9 @@ object Customer {
     external_id: String = null,
     external_ids: Strings = null,
     free_trial_started_at: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     lead_created_at: String = null,
-    mrr: Int | Double = null,
+    mrr: js.UndefOr[Double] = js.undefined,
     name: String = null,
     state: String = null,
     status: String = null,
@@ -67,7 +67,7 @@ object Customer {
   ): Customer = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (arr != null) __obj.updateDynamic("arr")(arr.asInstanceOf[js.Any])
+    if (!js.isUndefined(arr)) __obj.updateDynamic("arr")(arr.get.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (`billing-system-type` != null) __obj.updateDynamic("billing-system-type")(`billing-system-type`.asInstanceOf[js.Any])
     if (`billing-system-url` != null) __obj.updateDynamic("billing-system-url")(`billing-system-url`.asInstanceOf[js.Any])
@@ -84,9 +84,9 @@ object Customer {
     if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
     if (external_ids != null) __obj.updateDynamic("external_ids")(external_ids.asInstanceOf[js.Any])
     if (free_trial_started_at != null) __obj.updateDynamic("free_trial_started_at")(free_trial_started_at.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (lead_created_at != null) __obj.updateDynamic("lead_created_at")(lead_created_at.asInstanceOf[js.Any])
-    if (mrr != null) __obj.updateDynamic("mrr")(mrr.asInstanceOf[js.Any])
+    if (!js.isUndefined(mrr)) __obj.updateDynamic("mrr")(mrr.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

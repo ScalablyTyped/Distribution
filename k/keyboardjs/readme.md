@@ -1,7 +1,7 @@
 
 # Scala.js typings for keyboardjs
 
-Typings are for version v2.4.2
+Typings are for version 2.5
 
 ## Library description:
 A library for binding to keys and key combos without the pain of key codes and key combo conflicts.

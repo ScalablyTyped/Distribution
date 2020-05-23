@@ -11,9 +11,8 @@ trait IExecuteCount extends js.Object {
 
 object IExecuteCount {
   @scala.inline
-  def apply(execution_count: Int | Double = null): IExecuteCount = {
-    val __obj = js.Dynamic.literal()
-    if (execution_count != null) __obj.updateDynamic("execution_count")(execution_count.asInstanceOf[js.Any])
+  def apply(execution_count: ExecutionCount = null.asInstanceOf[ExecutionCount]): IExecuteCount = {
+    val __obj = js.Dynamic.literal(execution_count = execution_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteCount]
   }
 }

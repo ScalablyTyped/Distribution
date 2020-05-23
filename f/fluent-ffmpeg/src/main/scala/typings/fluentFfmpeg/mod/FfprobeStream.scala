@@ -58,13 +58,13 @@ object FfprobeStream {
   @scala.inline
   def apply(
     index: Double,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     avg_frame_rate: String = null,
     bit_rate: String = null,
     bits_per_raw_sample: String = null,
-    bits_per_sample: Int | Double = null,
+    bits_per_sample: js.UndefOr[Double] = js.undefined,
     channel_layout: String = null,
-    channels: Int | Double = null,
+    channels: js.UndefOr[Double] = js.undefined,
     chroma_location: String = null,
     codec_long_name: String = null,
     codec_name: String = null,
@@ -72,8 +72,8 @@ object FfprobeStream {
     codec_tag_string: String = null,
     codec_time_base: String = null,
     codec_type: String = null,
-    coded_height: Int | Double = null,
-    coded_width: Int | Double = null,
+    coded_height: js.UndefOr[Double] = js.undefined,
+    coded_width: js.UndefOr[Double] = js.undefined,
     color_primaries: String = null,
     color_range: String = null,
     color_space: String = null,
@@ -83,8 +83,8 @@ object FfprobeStream {
     duration: String = null,
     duration_ts: String = null,
     field_order: String = null,
-    has_b_frames: Int | Double = null,
-    height: Int | Double = null,
+    has_b_frames: js.UndefOr[Double] = js.undefined,
+    height: js.UndefOr[Double] = js.undefined,
     id: String = null,
     level: String = null,
     max_bit_rate: String = null,
@@ -92,26 +92,26 @@ object FfprobeStream {
     nb_read_frames: String = null,
     nb_read_packets: String = null,
     pix_fmt: String = null,
-    profile: Int | Double = null,
+    profile: js.UndefOr[Double] = js.undefined,
     r_frame_rate: String = null,
-    refs: Int | Double = null,
+    refs: js.UndefOr[Double] = js.undefined,
     sample_aspect_ratio: String = null,
     sample_fmt: String = null,
-    sample_rate: Int | Double = null,
-    start_pts: Int | Double = null,
-    start_time: Int | Double = null,
+    sample_rate: js.UndefOr[Double] = js.undefined,
+    start_pts: js.UndefOr[Double] = js.undefined,
+    start_time: js.UndefOr[Double] = js.undefined,
     time_base: String = null,
     timecode: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): FfprobeStream = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (avg_frame_rate != null) __obj.updateDynamic("avg_frame_rate")(avg_frame_rate.asInstanceOf[js.Any])
     if (bit_rate != null) __obj.updateDynamic("bit_rate")(bit_rate.asInstanceOf[js.Any])
     if (bits_per_raw_sample != null) __obj.updateDynamic("bits_per_raw_sample")(bits_per_raw_sample.asInstanceOf[js.Any])
-    if (bits_per_sample != null) __obj.updateDynamic("bits_per_sample")(bits_per_sample.asInstanceOf[js.Any])
+    if (!js.isUndefined(bits_per_sample)) __obj.updateDynamic("bits_per_sample")(bits_per_sample.get.asInstanceOf[js.Any])
     if (channel_layout != null) __obj.updateDynamic("channel_layout")(channel_layout.asInstanceOf[js.Any])
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (!js.isUndefined(channels)) __obj.updateDynamic("channels")(channels.get.asInstanceOf[js.Any])
     if (chroma_location != null) __obj.updateDynamic("chroma_location")(chroma_location.asInstanceOf[js.Any])
     if (codec_long_name != null) __obj.updateDynamic("codec_long_name")(codec_long_name.asInstanceOf[js.Any])
     if (codec_name != null) __obj.updateDynamic("codec_name")(codec_name.asInstanceOf[js.Any])
@@ -119,8 +119,8 @@ object FfprobeStream {
     if (codec_tag_string != null) __obj.updateDynamic("codec_tag_string")(codec_tag_string.asInstanceOf[js.Any])
     if (codec_time_base != null) __obj.updateDynamic("codec_time_base")(codec_time_base.asInstanceOf[js.Any])
     if (codec_type != null) __obj.updateDynamic("codec_type")(codec_type.asInstanceOf[js.Any])
-    if (coded_height != null) __obj.updateDynamic("coded_height")(coded_height.asInstanceOf[js.Any])
-    if (coded_width != null) __obj.updateDynamic("coded_width")(coded_width.asInstanceOf[js.Any])
+    if (!js.isUndefined(coded_height)) __obj.updateDynamic("coded_height")(coded_height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(coded_width)) __obj.updateDynamic("coded_width")(coded_width.get.asInstanceOf[js.Any])
     if (color_primaries != null) __obj.updateDynamic("color_primaries")(color_primaries.asInstanceOf[js.Any])
     if (color_range != null) __obj.updateDynamic("color_range")(color_range.asInstanceOf[js.Any])
     if (color_space != null) __obj.updateDynamic("color_space")(color_space.asInstanceOf[js.Any])
@@ -130,8 +130,8 @@ object FfprobeStream {
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (duration_ts != null) __obj.updateDynamic("duration_ts")(duration_ts.asInstanceOf[js.Any])
     if (field_order != null) __obj.updateDynamic("field_order")(field_order.asInstanceOf[js.Any])
-    if (has_b_frames != null) __obj.updateDynamic("has_b_frames")(has_b_frames.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_b_frames)) __obj.updateDynamic("has_b_frames")(has_b_frames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (max_bit_rate != null) __obj.updateDynamic("max_bit_rate")(max_bit_rate.asInstanceOf[js.Any])
@@ -139,17 +139,17 @@ object FfprobeStream {
     if (nb_read_frames != null) __obj.updateDynamic("nb_read_frames")(nb_read_frames.asInstanceOf[js.Any])
     if (nb_read_packets != null) __obj.updateDynamic("nb_read_packets")(nb_read_packets.asInstanceOf[js.Any])
     if (pix_fmt != null) __obj.updateDynamic("pix_fmt")(pix_fmt.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.get.asInstanceOf[js.Any])
     if (r_frame_rate != null) __obj.updateDynamic("r_frame_rate")(r_frame_rate.asInstanceOf[js.Any])
-    if (refs != null) __obj.updateDynamic("refs")(refs.asInstanceOf[js.Any])
+    if (!js.isUndefined(refs)) __obj.updateDynamic("refs")(refs.get.asInstanceOf[js.Any])
     if (sample_aspect_ratio != null) __obj.updateDynamic("sample_aspect_ratio")(sample_aspect_ratio.asInstanceOf[js.Any])
     if (sample_fmt != null) __obj.updateDynamic("sample_fmt")(sample_fmt.asInstanceOf[js.Any])
-    if (sample_rate != null) __obj.updateDynamic("sample_rate")(sample_rate.asInstanceOf[js.Any])
-    if (start_pts != null) __obj.updateDynamic("start_pts")(start_pts.asInstanceOf[js.Any])
-    if (start_time != null) __obj.updateDynamic("start_time")(start_time.asInstanceOf[js.Any])
+    if (!js.isUndefined(sample_rate)) __obj.updateDynamic("sample_rate")(sample_rate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start_pts)) __obj.updateDynamic("start_pts")(start_pts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start_time)) __obj.updateDynamic("start_time")(start_time.get.asInstanceOf[js.Any])
     if (time_base != null) __obj.updateDynamic("time_base")(time_base.asInstanceOf[js.Any])
     if (timecode != null) __obj.updateDynamic("timecode")(timecode.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FfprobeStream]
   }
 }

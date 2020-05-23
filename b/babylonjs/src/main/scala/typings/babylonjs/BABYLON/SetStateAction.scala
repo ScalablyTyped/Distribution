@@ -4,18 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.SetStateAction")
 @js.native
-class SetStateAction protected () extends Action {
-  /**
-    * Instantiate the action
-    * @param triggerOptions defines the trigger options
-    * @param target defines the object containing the state property
-    * @param value defines the value to store in the state field
-    * @param condition defines the trigger related conditions
-    */
-  def this(triggerOptions: js.Any, target: js.Any, value: String) = this()
-  def this(triggerOptions: js.Any, target: js.Any, value: String, condition: Condition) = this()
+trait SetStateAction extends Action {
   var _target: js.Any = js.native
   /**
     * The value to store in the state field.

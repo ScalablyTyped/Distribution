@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import scala.scalajs.js
@@ -81,8 +80,4 @@ trait Swipe extends Widget_ {
     */
   var visibleElements: widgetsSwipeVisibleElements = js.native
 }
-
-@JSGlobal("__esri.Swipe")
-@js.native
-object Swipe extends TopLevel[SwipeConstructor]
 

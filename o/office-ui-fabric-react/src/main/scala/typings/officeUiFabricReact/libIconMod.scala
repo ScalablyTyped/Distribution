@@ -23,7 +23,6 @@ object libIconMod extends js.Object {
   val Icon: FunctionComponent[IIconProps] = js.native
   val ImageIcon: FunctionComponent[IImageIconProps] = js.native
   def getFontIcon(iconName: String): ReactElement | Null = js.native
-  def getFontIcon(iconName: String, className: js.UndefOr[scala.Nothing], ariaLabel: String): ReactElement | Null = js.native
   def getFontIcon(iconName: String, className: String): ReactElement | Null = js.native
   def getFontIcon(iconName: String, className: String, ariaLabel: String): ReactElement | Null = js.native
   def getIconContent(): IIconContent | Null = js.native

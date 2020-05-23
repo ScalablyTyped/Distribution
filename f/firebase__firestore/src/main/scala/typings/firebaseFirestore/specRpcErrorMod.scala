@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/unit/specs/spec_rpc_error", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/specs/spec_rpc_error", JSImport.Namespace)
 @js.native
 object specRpcErrorMod extends js.Object {
   @js.native

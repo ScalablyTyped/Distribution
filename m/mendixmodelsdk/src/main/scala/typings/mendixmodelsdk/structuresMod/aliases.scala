@@ -1,7 +1,5 @@
 package typings.mendixmodelsdk.structuresMod
 
-import typings.mendixmodelsdk.elementsMod.IAbstractElement
-import typings.mendixmodelsdk.unitsMod.IStructuralUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +13,11 @@ object aliases extends js.Object {
   */
   trait Container extends js.Object
   
-  type IContainer = IStructuralUnit | IAbstractElement
+  /* Rewritten from type alias, can be one of: 
+    - typings.mendixmodelsdk.unitsMod.IStructuralUnit
+    - typings.mendixmodelsdk.elementsMod.IAbstractElement
+  */
+  trait IContainer extends js.Object
+  
 }
 

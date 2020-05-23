@@ -48,13 +48,13 @@ object ISession {
   def apply(
     access_token: String,
     authentication_token: String,
-    expires: Int | Double = null,
-    expires_in: Int | Double = null,
+    expires: js.UndefOr[Double] = js.undefined,
+    expires_in: js.UndefOr[Double] = js.undefined,
     scope: js.Array[String] = null
   ): ISession = {
     val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], authentication_token = authentication_token.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(expires_in)) __obj.updateDynamic("expires_in")(expires_in.get.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISession]
   }

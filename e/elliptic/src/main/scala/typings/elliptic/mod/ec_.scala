@@ -1,6 +1,6 @@
 package typings.elliptic.mod
 
-import typings.elliptic.AnonX
+import typings.elliptic.anon.X
 import typings.elliptic.mod.curves.PresetCurve
 import typings.elliptic.mod.ec.GenKeyPairOptions
 import typings.elliptic.mod.ec.KeyPair
@@ -29,23 +29,12 @@ class ec_ protected () extends js.Object {
   def genKeyPair(): KeyPair = js.native
   def genKeyPair(options: GenKeyPairOptions): KeyPair = js.native
   def getKeyRecoveryParam(
-    e: js.UndefOr[scala.Nothing],
+    e: js.UndefOr[Error],
     signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Double = js.native
   def getKeyRecoveryParam(
-    e: js.UndefOr[scala.Nothing],
-    signature: SignatureInput,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-    enc: String
-  ): Double = js.native
-  def getKeyRecoveryParam(
-    e: Error,
-    signature: SignatureInput,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-  ): Double = js.native
-  def getKeyRecoveryParam(
-    e: Error,
+    e: js.UndefOr[Error],
     signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: String
@@ -64,8 +53,8 @@ class ec_ protected () extends js.Object {
   def keyFromPublic(pub: String, enc: String): KeyPair = js.native
   def keyFromPublic(pub: js.Array[Double]): KeyPair = js.native
   def keyFromPublic(pub: js.Array[Double], enc: String): KeyPair = js.native
-  def keyFromPublic(pub: AnonX): KeyPair = js.native
-  def keyFromPublic(pub: AnonX, enc: String): KeyPair = js.native
+  def keyFromPublic(pub: X): KeyPair = js.native
+  def keyFromPublic(pub: X, enc: String): KeyPair = js.native
   def keyFromPublic(pub: KeyPair): KeyPair = js.native
   def keyFromPublic(pub: KeyPair, enc: String): KeyPair = js.native
   def keyFromPublic(pub: Buffer): KeyPair = js.native

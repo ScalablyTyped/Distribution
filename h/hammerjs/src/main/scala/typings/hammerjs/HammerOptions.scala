@@ -30,7 +30,7 @@ object HammerOptions {
   ): HammerOptions = {
     val __obj = js.Dynamic.literal()
     if (cssProps != null) __obj.updateDynamic("cssProps")(cssProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(domEvents)) __obj.updateDynamic("domEvents")(domEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(domEvents)) __obj.updateDynamic("domEvents")(domEvents.get.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (inputClass != null) __obj.updateDynamic("inputClass")(inputClass.asInstanceOf[js.Any])
     if (inputTarget != null) __obj.updateDynamic("inputTarget")(inputTarget.asInstanceOf[js.Any])

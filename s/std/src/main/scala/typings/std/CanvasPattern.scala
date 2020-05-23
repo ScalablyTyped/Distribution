@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,4 @@ trait CanvasPattern extends js.Object {
   def setTransform(): Unit = js.native
   def setTransform(transform: DOMMatrix2DInit): Unit = js.native
 }
-
-@JSGlobal("CanvasPattern")
-@js.native
-object CanvasPattern extends Instantiable0[CanvasPattern]
 

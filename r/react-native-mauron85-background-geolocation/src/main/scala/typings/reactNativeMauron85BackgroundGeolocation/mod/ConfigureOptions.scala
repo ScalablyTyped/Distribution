@@ -260,16 +260,16 @@ trait ConfigureOptions extends js.Object {
 object ConfigureOptions {
   @scala.inline
   def apply(
-    activitiesInterval: Int | Double = null,
+    activitiesInterval: js.UndefOr[Double] = js.undefined,
     activityType: iOSActivityType = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     desiredAccuracy: AccuracyLevel = null,
-    distanceFilter: Int | Double = null,
-    fastestInterval: Int | Double = null,
+    distanceFilter: js.UndefOr[Double] = js.undefined,
+    fastestInterval: js.UndefOr[Double] = js.undefined,
     httpHeaders: js.Any = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     locationProvider: LocationProvider = null,
-    maxLocations: Int | Double = null,
+    maxLocations: js.UndefOr[Double] = js.undefined,
     notificationIconColor: String = null,
     notificationIconLarge: String = null,
     notificationIconSmall: String = null,
@@ -281,7 +281,7 @@ object ConfigureOptions {
     saveBatteryOnBackground: js.UndefOr[Boolean] = js.undefined,
     startForeground: js.UndefOr[Boolean] = js.undefined,
     startOnBoot: js.UndefOr[Boolean] = js.undefined,
-    stationaryRadius: Int | Double = null,
+    stationaryRadius: js.UndefOr[Double] = js.undefined,
     stopOnStillActivity: js.UndefOr[Boolean] = js.undefined,
     stopOnTerminate: js.UndefOr[Boolean] = js.undefined,
     syncThreshold: String = null,
@@ -289,30 +289,30 @@ object ConfigureOptions {
     url: String = null
   ): ConfigureOptions = {
     val __obj = js.Dynamic.literal()
-    if (activitiesInterval != null) __obj.updateDynamic("activitiesInterval")(activitiesInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(activitiesInterval)) __obj.updateDynamic("activitiesInterval")(activitiesInterval.get.asInstanceOf[js.Any])
     if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (desiredAccuracy != null) __obj.updateDynamic("desiredAccuracy")(desiredAccuracy.asInstanceOf[js.Any])
-    if (distanceFilter != null) __obj.updateDynamic("distanceFilter")(distanceFilter.asInstanceOf[js.Any])
-    if (fastestInterval != null) __obj.updateDynamic("fastestInterval")(fastestInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceFilter)) __obj.updateDynamic("distanceFilter")(distanceFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastestInterval)) __obj.updateDynamic("fastestInterval")(fastestInterval.get.asInstanceOf[js.Any])
     if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     if (locationProvider != null) __obj.updateDynamic("locationProvider")(locationProvider.asInstanceOf[js.Any])
-    if (maxLocations != null) __obj.updateDynamic("maxLocations")(maxLocations.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxLocations)) __obj.updateDynamic("maxLocations")(maxLocations.get.asInstanceOf[js.Any])
     if (notificationIconColor != null) __obj.updateDynamic("notificationIconColor")(notificationIconColor.asInstanceOf[js.Any])
     if (notificationIconLarge != null) __obj.updateDynamic("notificationIconLarge")(notificationIconLarge.asInstanceOf[js.Any])
     if (notificationIconSmall != null) __obj.updateDynamic("notificationIconSmall")(notificationIconSmall.asInstanceOf[js.Any])
     if (notificationText != null) __obj.updateDynamic("notificationText")(notificationText.asInstanceOf[js.Any])
     if (notificationTitle != null) __obj.updateDynamic("notificationTitle")(notificationTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(notificationsEnabled)) __obj.updateDynamic("notificationsEnabled")(notificationsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseLocationUpdates)) __obj.updateDynamic("pauseLocationUpdates")(pauseLocationUpdates.asInstanceOf[js.Any])
+    if (!js.isUndefined(notificationsEnabled)) __obj.updateDynamic("notificationsEnabled")(notificationsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseLocationUpdates)) __obj.updateDynamic("pauseLocationUpdates")(pauseLocationUpdates.get.asInstanceOf[js.Any])
     if (postTemplate != null) __obj.updateDynamic("postTemplate")(postTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveBatteryOnBackground)) __obj.updateDynamic("saveBatteryOnBackground")(saveBatteryOnBackground.asInstanceOf[js.Any])
-    if (!js.isUndefined(startForeground)) __obj.updateDynamic("startForeground")(startForeground.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOnBoot)) __obj.updateDynamic("startOnBoot")(startOnBoot.asInstanceOf[js.Any])
-    if (stationaryRadius != null) __obj.updateDynamic("stationaryRadius")(stationaryRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopOnStillActivity)) __obj.updateDynamic("stopOnStillActivity")(stopOnStillActivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopOnTerminate)) __obj.updateDynamic("stopOnTerminate")(stopOnTerminate.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveBatteryOnBackground)) __obj.updateDynamic("saveBatteryOnBackground")(saveBatteryOnBackground.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startForeground)) __obj.updateDynamic("startForeground")(startForeground.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOnBoot)) __obj.updateDynamic("startOnBoot")(startOnBoot.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stationaryRadius)) __obj.updateDynamic("stationaryRadius")(stationaryRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnStillActivity)) __obj.updateDynamic("stopOnStillActivity")(stopOnStillActivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnTerminate)) __obj.updateDynamic("stopOnTerminate")(stopOnTerminate.get.asInstanceOf[js.Any])
     if (syncThreshold != null) __obj.updateDynamic("syncThreshold")(syncThreshold.asInstanceOf[js.Any])
     if (syncUrl != null) __obj.updateDynamic("syncUrl")(syncUrl.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

@@ -29,21 +29,21 @@ object Format {
   def apply(
     decimalSeparator: String = null,
     fractionGroupSeparator: String = null,
-    fractionGroupSize: Int | Double = null,
+    fractionGroupSize: js.UndefOr[Double] = js.undefined,
     groupSeparator: String = null,
-    groupSize: Int | Double = null,
+    groupSize: js.UndefOr[Double] = js.undefined,
     prefix: String = null,
-    secondaryGroupSize: Int | Double = null,
+    secondaryGroupSize: js.UndefOr[Double] = js.undefined,
     suffix: String = null
   ): Format = {
     val __obj = js.Dynamic.literal()
     if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
     if (fractionGroupSeparator != null) __obj.updateDynamic("fractionGroupSeparator")(fractionGroupSeparator.asInstanceOf[js.Any])
-    if (fractionGroupSize != null) __obj.updateDynamic("fractionGroupSize")(fractionGroupSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fractionGroupSize)) __obj.updateDynamic("fractionGroupSize")(fractionGroupSize.get.asInstanceOf[js.Any])
     if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
-    if (groupSize != null) __obj.updateDynamic("groupSize")(groupSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupSize)) __obj.updateDynamic("groupSize")(groupSize.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (secondaryGroupSize != null) __obj.updateDynamic("secondaryGroupSize")(secondaryGroupSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondaryGroupSize)) __obj.updateDynamic("secondaryGroupSize")(secondaryGroupSize.get.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }

@@ -13,6 +13,19 @@ trait QLDB extends Service {
   @JSName("config")
   var config_QLDB: ConfigBase with ClientConfiguration = js.native
   /**
+    * Ends a given Amazon QLDB journal stream. Before a stream can be canceled, its current status must be ACTIVE. You can't restart a stream after you cancel it. Canceled QLDB stream resources are subject to a 7-day retention period, so they are automatically deleted after this limit expires.
+    */
+  def cancelJournalKinesisStream(): Request[CancelJournalKinesisStreamResponse, AWSError] = js.native
+  def cancelJournalKinesisStream(callback: js.Function2[/* err */ AWSError, /* data */ CancelJournalKinesisStreamResponse, Unit]): Request[CancelJournalKinesisStreamResponse, AWSError] = js.native
+  /**
+    * Ends a given Amazon QLDB journal stream. Before a stream can be canceled, its current status must be ACTIVE. You can't restart a stream after you cancel it. Canceled QLDB stream resources are subject to a 7-day retention period, so they are automatically deleted after this limit expires.
+    */
+  def cancelJournalKinesisStream(params: CancelJournalKinesisStreamRequest): Request[CancelJournalKinesisStreamResponse, AWSError] = js.native
+  def cancelJournalKinesisStream(
+    params: CancelJournalKinesisStreamRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelJournalKinesisStreamResponse, Unit]
+  ): Request[CancelJournalKinesisStreamResponse, AWSError] = js.native
+  /**
     * Creates a new ledger in your AWS account.
     */
   def createLedger(): Request[CreateLedgerResponse, AWSError] = js.native
@@ -39,12 +52,25 @@ trait QLDB extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Returns information about a journal export job, including the ledger name, export ID, when it was created, current status, and its start and end time export parameters. If the export job with the given ExportId doesn't exist, then throws ResourceNotFoundException. If the ledger with the given Name doesn't exist, then throws ResourceNotFoundException.
+    * Returns detailed information about a given Amazon QLDB journal stream. The output includes the Amazon Resource Name (ARN), stream name, current status, creation time, and the parameters of your original stream creation request.
+    */
+  def describeJournalKinesisStream(): Request[DescribeJournalKinesisStreamResponse, AWSError] = js.native
+  def describeJournalKinesisStream(callback: js.Function2[/* err */ AWSError, /* data */ DescribeJournalKinesisStreamResponse, Unit]): Request[DescribeJournalKinesisStreamResponse, AWSError] = js.native
+  /**
+    * Returns detailed information about a given Amazon QLDB journal stream. The output includes the Amazon Resource Name (ARN), stream name, current status, creation time, and the parameters of your original stream creation request.
+    */
+  def describeJournalKinesisStream(params: DescribeJournalKinesisStreamRequest): Request[DescribeJournalKinesisStreamResponse, AWSError] = js.native
+  def describeJournalKinesisStream(
+    params: DescribeJournalKinesisStreamRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeJournalKinesisStreamResponse, Unit]
+  ): Request[DescribeJournalKinesisStreamResponse, AWSError] = js.native
+  /**
+    * Returns information about a journal export job, including the ledger name, export ID, when it was created, current status, and its start and end time export parameters. This action does not return any expired export jobs. For more information, see Export Job Expiration in the Amazon QLDB Developer Guide. If the export job with the given ExportId doesn't exist, then throws ResourceNotFoundException. If the ledger with the given Name doesn't exist, then throws ResourceNotFoundException.
     */
   def describeJournalS3Export(): Request[DescribeJournalS3ExportResponse, AWSError] = js.native
   def describeJournalS3Export(callback: js.Function2[/* err */ AWSError, /* data */ DescribeJournalS3ExportResponse, Unit]): Request[DescribeJournalS3ExportResponse, AWSError] = js.native
   /**
-    * Returns information about a journal export job, including the ledger name, export ID, when it was created, current status, and its start and end time export parameters. If the export job with the given ExportId doesn't exist, then throws ResourceNotFoundException. If the ledger with the given Name doesn't exist, then throws ResourceNotFoundException.
+    * Returns information about a journal export job, including the ledger name, export ID, when it was created, current status, and its start and end time export parameters. This action does not return any expired export jobs. For more information, see Export Job Expiration in the Amazon QLDB Developer Guide. If the export job with the given ExportId doesn't exist, then throws ResourceNotFoundException. If the ledger with the given Name doesn't exist, then throws ResourceNotFoundException.
     */
   def describeJournalS3Export(params: DescribeJournalS3ExportRequest): Request[DescribeJournalS3ExportResponse, AWSError] = js.native
   def describeJournalS3Export(
@@ -117,12 +143,27 @@ trait QLDB extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetRevisionResponse, Unit]
   ): Request[GetRevisionResponse, AWSError] = js.native
   /**
-    * Returns an array of journal export job descriptions for all ledgers that are associated with the current AWS account and Region. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3Exports multiple times.
+    * Returns an array of all Amazon QLDB journal stream descriptors for a given ledger. The output of each stream descriptor includes the same details that are returned by DescribeJournalKinesisStream. This action returns a maximum of MaxResults items. It is paginated so that you can retrieve all the items by calling ListJournalKinesisStreamsForLedger multiple times.
+    */
+  def listJournalKinesisStreamsForLedger(): Request[ListJournalKinesisStreamsForLedgerResponse, AWSError] = js.native
+  def listJournalKinesisStreamsForLedger(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListJournalKinesisStreamsForLedgerResponse, Unit]
+  ): Request[ListJournalKinesisStreamsForLedgerResponse, AWSError] = js.native
+  /**
+    * Returns an array of all Amazon QLDB journal stream descriptors for a given ledger. The output of each stream descriptor includes the same details that are returned by DescribeJournalKinesisStream. This action returns a maximum of MaxResults items. It is paginated so that you can retrieve all the items by calling ListJournalKinesisStreamsForLedger multiple times.
+    */
+  def listJournalKinesisStreamsForLedger(params: ListJournalKinesisStreamsForLedgerRequest): Request[ListJournalKinesisStreamsForLedgerResponse, AWSError] = js.native
+  def listJournalKinesisStreamsForLedger(
+    params: ListJournalKinesisStreamsForLedgerRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListJournalKinesisStreamsForLedgerResponse, Unit]
+  ): Request[ListJournalKinesisStreamsForLedgerResponse, AWSError] = js.native
+  /**
+    * Returns an array of journal export job descriptions for all ledgers that are associated with the current AWS account and Region. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3Exports multiple times. This action does not return any expired export jobs. For more information, see Export Job Expiration in the Amazon QLDB Developer Guide.
     */
   def listJournalS3Exports(): Request[ListJournalS3ExportsResponse, AWSError] = js.native
   def listJournalS3Exports(callback: js.Function2[/* err */ AWSError, /* data */ ListJournalS3ExportsResponse, Unit]): Request[ListJournalS3ExportsResponse, AWSError] = js.native
   /**
-    * Returns an array of journal export job descriptions for all ledgers that are associated with the current AWS account and Region. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3Exports multiple times.
+    * Returns an array of journal export job descriptions for all ledgers that are associated with the current AWS account and Region. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3Exports multiple times. This action does not return any expired export jobs. For more information, see Export Job Expiration in the Amazon QLDB Developer Guide.
     */
   def listJournalS3Exports(params: ListJournalS3ExportsRequest): Request[ListJournalS3ExportsResponse, AWSError] = js.native
   def listJournalS3Exports(
@@ -130,12 +171,12 @@ trait QLDB extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListJournalS3ExportsResponse, Unit]
   ): Request[ListJournalS3ExportsResponse, AWSError] = js.native
   /**
-    * Returns an array of journal export job descriptions for a specified ledger. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3ExportsForLedger multiple times.
+    * Returns an array of journal export job descriptions for a specified ledger. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3ExportsForLedger multiple times. This action does not return any expired export jobs. For more information, see Export Job Expiration in the Amazon QLDB Developer Guide.
     */
   def listJournalS3ExportsForLedger(): Request[ListJournalS3ExportsForLedgerResponse, AWSError] = js.native
   def listJournalS3ExportsForLedger(callback: js.Function2[/* err */ AWSError, /* data */ ListJournalS3ExportsForLedgerResponse, Unit]): Request[ListJournalS3ExportsForLedgerResponse, AWSError] = js.native
   /**
-    * Returns an array of journal export job descriptions for a specified ledger. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3ExportsForLedger multiple times.
+    * Returns an array of journal export job descriptions for a specified ledger. This action returns a maximum of MaxResults items, and is paginated so that you can retrieve all the items by calling ListJournalS3ExportsForLedger multiple times. This action does not return any expired export jobs. For more information, see Export Job Expiration in the Amazon QLDB Developer Guide.
     */
   def listJournalS3ExportsForLedger(params: ListJournalS3ExportsForLedgerRequest): Request[ListJournalS3ExportsForLedgerResponse, AWSError] = js.native
   def listJournalS3ExportsForLedger(
@@ -168,6 +209,19 @@ trait QLDB extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Creates a stream for a given Amazon QLDB ledger that delivers the journal data to a specified Amazon Kinesis Data Streams resource. The stream captures every document revision that is committed to your journal and sends it to the Kinesis data stream.
+    */
+  def streamJournalToKinesis(): Request[StreamJournalToKinesisResponse, AWSError] = js.native
+  def streamJournalToKinesis(callback: js.Function2[/* err */ AWSError, /* data */ StreamJournalToKinesisResponse, Unit]): Request[StreamJournalToKinesisResponse, AWSError] = js.native
+  /**
+    * Creates a stream for a given Amazon QLDB ledger that delivers the journal data to a specified Amazon Kinesis Data Streams resource. The stream captures every document revision that is committed to your journal and sends it to the Kinesis data stream.
+    */
+  def streamJournalToKinesis(params: StreamJournalToKinesisRequest): Request[StreamJournalToKinesisResponse, AWSError] = js.native
+  def streamJournalToKinesis(
+    params: StreamJournalToKinesisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StreamJournalToKinesisResponse, Unit]
+  ): Request[StreamJournalToKinesisResponse, AWSError] = js.native
   /**
     * Adds one or more tags to a specified Amazon QLDB resource. A resource can have up to 50 tags. If you try to create more than 50 tags for a resource, your request fails and returns an error.
     */

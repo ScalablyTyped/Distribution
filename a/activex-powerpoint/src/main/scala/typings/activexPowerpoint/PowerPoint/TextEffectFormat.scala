@@ -8,26 +8,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PowerPoint.TextEffectFormat")
-@js.native
-class TextEffectFormat protected () extends js.Object {
-  var Alignment: MsoTextEffectAlignment = js.native
-  val Application: js.Any = js.native
-  val Creator: Double = js.native
-  var FontBold: MsoTriState = js.native
-  var FontItalic: MsoTriState = js.native
-  var FontName: String = js.native
-  var FontSize: Double = js.native
-  var KernedPairs: MsoTriState = js.native
-  var NormalizedHeight: MsoTriState = js.native
-  val Parent: js.Any = js.native
+trait TextEffectFormat extends js.Object {
+  var Alignment: MsoTextEffectAlignment
+  val Application: js.Any
+  val Creator: Double
+  var FontBold: MsoTriState
+  var FontItalic: MsoTriState
+  var FontName: String
+  var FontSize: Double
+  var KernedPairs: MsoTriState
+  var NormalizedHeight: MsoTriState
+  val Parent: js.Any
   @JSName("PowerPoint.TextEffectFormat_typekey")
-  var PowerPointDotTextEffectFormat_typekey: TextEffectFormat = js.native
-  var PresetShape: MsoPresetTextEffectShape = js.native
-  var PresetTextEffect: MsoPresetTextEffect = js.native
-  var RotatedChars: MsoTriState = js.native
-  var Text: String = js.native
-  var Tracking: Double = js.native
-  def ToggleVerticalText(): Unit = js.native
+  var PowerPointDotTextEffectFormat_typekey: TextEffectFormat
+  var PresetShape: MsoPresetTextEffectShape
+  var PresetTextEffect: MsoPresetTextEffect
+  var RotatedChars: MsoTriState
+  var Text: String
+  var Tracking: Double
+  def ToggleVerticalText(): Unit
+}
+
+object TextEffectFormat {
+  @scala.inline
+  def apply(
+    Alignment: MsoTextEffectAlignment,
+    Application: js.Any,
+    Creator: Double,
+    FontBold: MsoTriState,
+    FontItalic: MsoTriState,
+    FontName: String,
+    FontSize: Double,
+    KernedPairs: MsoTriState,
+    NormalizedHeight: MsoTriState,
+    Parent: js.Any,
+    PowerPointDotTextEffectFormat_typekey: TextEffectFormat,
+    PresetShape: MsoPresetTextEffectShape,
+    PresetTextEffect: MsoPresetTextEffect,
+    RotatedChars: MsoTriState,
+    Text: String,
+    ToggleVerticalText: () => Unit,
+    Tracking: Double
+  ): TextEffectFormat = {
+    val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], FontBold = FontBold.asInstanceOf[js.Any], FontItalic = FontItalic.asInstanceOf[js.Any], FontName = FontName.asInstanceOf[js.Any], FontSize = FontSize.asInstanceOf[js.Any], KernedPairs = KernedPairs.asInstanceOf[js.Any], NormalizedHeight = NormalizedHeight.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PresetShape = PresetShape.asInstanceOf[js.Any], PresetTextEffect = PresetTextEffect.asInstanceOf[js.Any], RotatedChars = RotatedChars.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], ToggleVerticalText = js.Any.fromFunction0(ToggleVerticalText), Tracking = Tracking.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.TextEffectFormat_typekey")(PowerPointDotTextEffectFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextEffectFormat]
+  }
 }
 

@@ -23,7 +23,7 @@ object TableColumn {
     options: CheckboxColumnOption | TextColumnOption = null,
     toolTip: String = null,
     `type`: ColumnType = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): TableColumn = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
@@ -31,7 +31,7 @@ object TableColumn {
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumn]
   }
 }

@@ -11,9 +11,9 @@ trait PollStickerTallie extends js.Object {
 
 object PollStickerTallie {
   @scala.inline
-  def apply(text: String, fontSize: Int | Double = null): PollStickerTallie = {
+  def apply(text: String, fontSize: js.UndefOr[Double] = js.undefined): PollStickerTallie = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollStickerTallie]
   }
 }

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 编码与解码模块，用于处理不同的数据编码格式与二进制之间的转换
-	* @detail 引用方式：,```JavaScript,var encoding = require('encoding');,```
-	*/
+  * @brief 编码与解码模块，用于处理不同的数据编码格式与二进制之间的转换
+  * @detail 引用方式：,```JavaScript,var encoding = require('encoding');,```
+  */
 @JSImport("encoding", JSImport.Namespace)
 @js.native
 object encodingMod extends js.Object {

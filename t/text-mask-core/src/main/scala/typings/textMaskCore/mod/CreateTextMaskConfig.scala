@@ -28,10 +28,10 @@ object CreateTextMaskConfig {
   ): CreateTextMaskConfig = {
     val __obj = js.Dynamic.literal(inputElement = inputElement.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any])
     if (guide != null) __obj.updateDynamic("guide")(guide.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepCharPositions)) __obj.updateDynamic("keepCharPositions")(keepCharPositions.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepCharPositions)) __obj.updateDynamic("keepCharPositions")(keepCharPositions.get.asInstanceOf[js.Any])
     if (pipe != null) __obj.updateDynamic("pipe")(js.Any.fromFunction2(pipe))
     if (placeholderChar != null) __obj.updateDynamic("placeholderChar")(placeholderChar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMask)) __obj.updateDynamic("showMask")(showMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMask)) __obj.updateDynamic("showMask")(showMask.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTextMaskConfig]
   }
 }

@@ -13,9 +13,13 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(logLevel: LogLevel = null, region: String = null, transport: Transport = null): Options = {
+  def apply(
+    logLevel: js.UndefOr[Null | LogLevel] = js.undefined,
+    region: String = null,
+    transport: Transport = null
+  ): Options = {
     val __obj = js.Dynamic.literal()
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(logLevel)) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

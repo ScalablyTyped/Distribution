@@ -47,7 +47,7 @@ object LegendLayerInfos {
     title: String = null
   ): LegendLayerInfos = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), hideLayers = hideLayers.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(defaultSymbol)) __obj.updateDynamic("defaultSymbol")(defaultSymbol.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultSymbol)) __obj.updateDynamic("defaultSymbol")(defaultSymbol.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendLayerInfos]
   }

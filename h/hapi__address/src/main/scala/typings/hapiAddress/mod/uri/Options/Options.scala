@@ -32,9 +32,9 @@ object Options {
     scheme: Scheme | js.Array[Scheme] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowQuerySquareBrackets)) __obj.updateDynamic("allowQuerySquareBrackets")(allowQuerySquareBrackets.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowRelative)) __obj.updateDynamic("allowRelative")(allowRelative.asInstanceOf[js.Any])
-    if (!js.isUndefined(domain)) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowQuerySquareBrackets)) __obj.updateDynamic("allowQuerySquareBrackets")(allowQuerySquareBrackets.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRelative)) __obj.updateDynamic("allowRelative")(allowRelative.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(domain)) __obj.updateDynamic("domain")(domain.get.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

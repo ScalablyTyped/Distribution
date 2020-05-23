@@ -1,5 +1,6 @@
 package typings.sapXsenv
 
+import typings.sapXsenv.anon.Label
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,6 @@ object mod extends js.Object {
   def loadEnv(): Unit = js.native
   def loadEnv(jsonFile: String): Unit = js.native
   def readCFServices(): js.Any = js.native
-  type ServiceFilter = String | AnonLabel | (js.Function1[/* service */ js.Any, Boolean])
+  type ServiceFilter = String | Label | (js.Function1[/* service */ js.Any, Boolean])
 }
 

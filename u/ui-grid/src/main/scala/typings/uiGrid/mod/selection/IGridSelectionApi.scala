@@ -1,7 +1,7 @@
 package typings.uiGrid.mod.selection
 
 import typings.angular.mod.IAngularEvent
-import typings.uiGrid.AnonRowSelectionChanged
+import typings.uiGrid.anon.RowSelectionChanged
 import typings.uiGrid.mod.IGridRowOf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IGridSelectionApi[TEntity] extends js.Object {
   // Events
-  var on: AnonRowSelectionChanged[TEntity] = js.native
+  var on: RowSelectionChanged[TEntity] = js.native
   // Methods
   /**
     * Unselects All Rows

@@ -24,7 +24,7 @@ object IonReorderGroup {
     onIonItemReorder: /* event */ CustomEvent[ItemReorderEventDetail] => Unit = null
   ): IonReorderGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (onIonItemReorder != null) __obj.updateDynamic("onIonItemReorder")(js.Any.fromFunction1(onIonItemReorder))
     __obj.asInstanceOf[IonReorderGroup]
   }

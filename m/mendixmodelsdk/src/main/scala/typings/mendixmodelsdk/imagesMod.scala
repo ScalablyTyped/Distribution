@@ -50,7 +50,8 @@ object imagesMod extends js.Object {
       val images: IList[IImage] = js.native
     }
     
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
@@ -94,7 +95,8 @@ object imagesMod extends js.Object {
     /**
       * See: {@link https://docs.mendix.com/refguide7/images relevant section in reference guide}
       */
-    /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.unitsMod.IAbstractUnit because Already inherited

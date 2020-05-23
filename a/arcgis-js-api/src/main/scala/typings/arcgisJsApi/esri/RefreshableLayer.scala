@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +23,11 @@ trait RefreshableLayer extends js.Object {
   def refresh(): Unit
 }
 
-@JSGlobal("__esri.RefreshableLayer")
-@js.native
-object RefreshableLayer extends TopLevel[RefreshableLayerConstructor]
+object RefreshableLayer {
+  @scala.inline
+  def apply(refresh: () => Unit, refreshInterval: Double): RefreshableLayer = {
+    val __obj = js.Dynamic.literal(refresh = js.Any.fromFunction0(refresh), refreshInterval = refreshInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RefreshableLayer]
+  }
+}
 

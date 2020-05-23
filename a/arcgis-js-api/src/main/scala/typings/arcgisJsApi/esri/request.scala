@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,15 +18,4 @@ trait request extends js.Object {
   def esriRequest(url: String): js.Promise[RequestResponse] = js.native
   def esriRequest(url: String, options: RequestOptions): js.Promise[RequestResponse] = js.native
 }
-
-@JSGlobal("__esri.request")
-@js.native
-object request
-  extends TopLevel[
-      js.Function2[
-        /* url */ String, 
-        /* options */ js.UndefOr[RequestOptions], 
-        js.Promise[RequestResponse]
-      ]
-    ]
 

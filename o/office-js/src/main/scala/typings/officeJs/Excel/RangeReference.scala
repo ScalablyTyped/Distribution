@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait RangeReference extends js.Object {
   /**
     *
-    * Gets or sets the address of the range; for example 'SheetName!A1:B5'.
+    * The address of the range; for example 'SheetName!A1:B5'.
     *
     * [Api set: ExcelApi 1.2]
     */

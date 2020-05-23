@@ -1,6 +1,5 @@
 package typings.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object SheetVisibility extends js.Object {
   
   @js.native
   sealed trait visible extends SheetVisibility
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SheetVisibility with String] = js.native
-  /* "Hidden" */ @js.native
-  object hidden extends TopLevel[hidden with String]
-  
-  /* "VeryHidden" */ @js.native
-  object veryHidden extends TopLevel[veryHidden with String]
-  
-  /* "Visible" */ @js.native
-  object visible extends TopLevel[visible with String]
   
 }
 

@@ -1,6 +1,6 @@
 package typings.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typings.screeps.anon.StoreRESOURCEENERGYfalse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -131,8 +131,4 @@ trait StructureSpawn
   def spawnCreep(body: js.Array[BodyPartConstant], name: String): ScreepsReturnCode = js.native
   def spawnCreep(body: js.Array[BodyPartConstant], name: String, opts: SpawnOptions): ScreepsReturnCode = js.native
 }
-
-@JSGlobal("StructureSpawn")
-@js.native
-object StructureSpawn extends TopLevel[StructureSpawnConstructor]
 

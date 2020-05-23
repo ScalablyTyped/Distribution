@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`trigger-action`
 import scala.scalajs.js
@@ -107,8 +106,4 @@ trait BasemapLayerList extends Widget_ {
   def triggerAction(action: ActionButton, item: ListItem): Unit = js.native
   def triggerAction(action: ActionToggle, item: ListItem): Unit = js.native
 }
-
-@JSGlobal("__esri.BasemapLayerList")
-@js.native
-object BasemapLayerList extends TopLevel[BasemapLayerListConstructor]
 

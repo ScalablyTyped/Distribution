@@ -46,9 +46,6 @@ class Vector () extends Layer {
     * @api stable
     */
   def getStyleFunction(): js.UndefOr[StyleFunction] = js.native
-  def setStyle(): Unit = js.native
-  def setStyle(style: js.Array[Style]): Unit = js.native
-  def setStyle(style: StyleFunction): Unit = js.native
   /**
     * Set the style for features.  This can be a single style object, an array
     * of styles, or a function that takes a feature and resolution and returns
@@ -59,6 +56,9 @@ class Vector () extends Layer {
     * @param style Layer style.
     * @api stable
     */
+  def setStyle(): Unit = js.native
+  def setStyle(style: js.Array[Style]): Unit = js.native
+  def setStyle(style: StyleFunction): Unit = js.native
   def setStyle(style: Style): Unit = js.native
 }
 

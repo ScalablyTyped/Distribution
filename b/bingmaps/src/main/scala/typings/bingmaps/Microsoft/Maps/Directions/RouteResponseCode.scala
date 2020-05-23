@@ -1,6 +1,5 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,62 +93,6 @@ object RouteResponseCode extends js.Object {
     */
   @js.native
   sealed trait waypointDisambiguation extends RouteResponseCode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RouteResponseCode with Double] = js.native
-  /* 15 */ @js.native
-  object atleastTwoWaypointRequired extends TopLevel[atleastTwoWaypointRequired with Double]
-  
-  /* 2 */ @js.native
-  object cannotFindNearbyRoad extends TopLevel[cannotFindNearbyRoad with Double]
-  
-  /* 5 */ @js.native
-  object dataSourceNotFound extends TopLevel[dataSourceNotFound with Double]
-  
-  /* 14 */ @js.native
-  object exceedMaxWaypointLimit extends TopLevel[exceedMaxWaypointLimit with Double]
-  
-  /* 16 */ @js.native
-  object firstOrLastStoppointIsVia extends TopLevel[firstOrLastStoppointIsVia with Double]
-  
-  /* 13 */ @js.native
-  object hasEmptyWaypoint extends TopLevel[hasEmptyWaypoint with Double]
-  
-  /* 18 */ @js.native
-  object invalidCredentials extends TopLevel[invalidCredentials with Double]
-  
-  /* 7 */ @js.native
-  object noAvailableTransitTrip extends TopLevel[noAvailableTransitTrip with Double]
-  
-  /* 4 */ @js.native
-  object noSolution extends TopLevel[noSolution with Double]
-  
-  /* 10 */ @js.native
-  object outOfTransitBounds extends TopLevel[outOfTransitBounds with Double]
-  
-  /* 17 */ @js.native
-  object searchServiceFailed extends TopLevel[searchServiceFailed with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 11 */ @js.native
-  object timeOut extends TopLevel[timeOut with Double]
-  
-  /* 3 */ @js.native
-  object tooFar extends TopLevel[tooFar with Double]
-  
-  /* 8 */ @js.native
-  object transitStopsTooClose extends TopLevel[transitStopsTooClose with Double]
-  
-  /* 1 */ @js.native
-  object unknownError extends TopLevel[unknownError with Double]
-  
-  /* 9 */ @js.native
-  object walkingBestAlternative extends TopLevel[walkingBestAlternative with Double]
-  
-  /* 12 */ @js.native
-  object waypointDisambiguation extends TopLevel[waypointDisambiguation with Double]
   
 }
 

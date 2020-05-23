@@ -1,6 +1,6 @@
 package typings.apolloEnv.fetchFetchMod
 
-import typings.nodeFetch.AnonSize
+import typings.nodeFetch.anon.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class Body ()
   extends typings.nodeFetch.mod.Body {
   def this(body: js.Any) = this()
-  def this(body: js.Any, opts: AnonSize) = this()
+  def this(body: js.Any, opts: Size) = this()
 }
 

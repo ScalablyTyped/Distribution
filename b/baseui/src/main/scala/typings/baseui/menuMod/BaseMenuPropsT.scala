@@ -12,7 +12,7 @@ object BaseMenuPropsT {
   @scala.inline
   def apply(renderAll: js.UndefOr[Boolean] = js.undefined): BaseMenuPropsT = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMenuPropsT]
   }
 }

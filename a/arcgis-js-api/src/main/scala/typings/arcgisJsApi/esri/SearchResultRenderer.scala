@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,4 @@ trait SearchResultRenderer extends Widget_ {
     */
   var viewModel: SearchViewModel = js.native
 }
-
-@JSGlobal("__esri.SearchResultRenderer")
-@js.native
-object SearchResultRenderer extends TopLevel[SearchResultRendererConstructor]
 

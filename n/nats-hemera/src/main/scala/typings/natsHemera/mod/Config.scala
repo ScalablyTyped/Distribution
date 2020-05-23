@@ -31,9 +31,9 @@ object Config {
     load: LoadConfig = null,
     logLevel: LogLevel = null,
     logger: Logger | Stream = null,
-    maxRecursion: Int | Double = null,
+    maxRecursion: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    pluginTimeout: Int | Double = null,
+    pluginTimeout: js.UndefOr[Double] = js.undefined,
     prettyLog: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
     timeout: Double | `2000` = null,
@@ -41,18 +41,18 @@ object Config {
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (bloomrun != null) __obj.updateDynamic("bloomrun")(bloomrun.asInstanceOf[js.Any])
-    if (!js.isUndefined(childLogger)) __obj.updateDynamic("childLogger")(childLogger.asInstanceOf[js.Any])
+    if (!js.isUndefined(childLogger)) __obj.updateDynamic("childLogger")(childLogger.get.asInstanceOf[js.Any])
     if (errio != null) __obj.updateDynamic("errio")(errio.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (maxRecursion != null) __obj.updateDynamic("maxRecursion")(maxRecursion.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRecursion)) __obj.updateDynamic("maxRecursion")(maxRecursion.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pluginTimeout != null) __obj.updateDynamic("pluginTimeout")(pluginTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyLog)) __obj.updateDynamic("prettyLog")(prettyLog.asInstanceOf[js.Any])
+    if (!js.isUndefined(pluginTimeout)) __obj.updateDynamic("pluginTimeout")(pluginTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyLog)) __obj.updateDynamic("prettyLog")(prettyLog.get.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceLog)) __obj.updateDynamic("traceLog")(traceLog.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceLog)) __obj.updateDynamic("traceLog")(traceLog.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

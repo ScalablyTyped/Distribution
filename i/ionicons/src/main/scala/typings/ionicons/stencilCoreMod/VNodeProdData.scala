@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VNodeProdData
-  extends /* key */ StringDictionary[js.Any] {
+  extends /* memberName */ StringDictionary[js.Any] {
   var `class`: js.UndefOr[StringDictionary[Boolean] | String] = js.undefined
   var className: js.UndefOr[StringDictionary[Boolean] | String] = js.undefined
   var key: js.UndefOr[String | Double] = js.undefined
@@ -16,7 +16,7 @@ trait VNodeProdData
 object VNodeProdData {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     `class`: StringDictionary[Boolean] | String = null,
     className: StringDictionary[Boolean] | String = null,
     key: String | Double = null,

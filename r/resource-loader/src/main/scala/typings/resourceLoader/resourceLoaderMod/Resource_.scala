@@ -1,6 +1,6 @@
 package typings.resourceLoader.resourceLoaderMod
 
-import typings.resourceLoader.AnonCrossOrigin
+import typings.resourceLoader.anon.CrossOrigin
 import typings.resourceLoader.mod.default
 import typings.resourceLoader.resourceLoaderMod.Resource.IMetadata
 import typings.resourceLoader.resourceLoaderMod.Resource.LOAD_TYPE
@@ -35,8 +35,8 @@ import scala.scalajs.js.annotation._
 class Resource_ protected () extends js.Object {
   def this(name: String, url: String) = this()
   def this(name: String, url: js.Array[String]) = this()
-  def this(name: String, url: String, options: AnonCrossOrigin) = this()
-  def this(name: String, url: js.Array[String], options: AnonCrossOrigin) = this()
+  def this(name: String, url: String, options: CrossOrigin) = this()
+  def this(name: String, url: js.Array[String], options: CrossOrigin) = this()
   /**
     * The child resources this resource owns.
     *

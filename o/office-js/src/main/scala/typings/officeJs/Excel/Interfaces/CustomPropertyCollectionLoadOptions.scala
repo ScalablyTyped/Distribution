@@ -18,21 +18,21 @@ trait CustomPropertyCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+    * For EACH ITEM in the collection: The key of the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */
   var key: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets the value type of the custom property. Read only.
+    * For EACH ITEM in the collection: The type of the value used for the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Gets or sets the value of the custom property.
+    * For EACH ITEM in the collection: The value of the custom property.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -48,10 +48,10 @@ object CustomPropertyCollectionLoadOptions {
     value: js.UndefOr[Boolean] = js.undefined
   ): CustomPropertyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyCollectionLoadOptions]
   }
 }

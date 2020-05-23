@@ -7,38 +7,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains the XML that defines the toast notification that will display at the scheduled time. */
-@JSGlobal("Windows.UI.Notifications.ScheduledToastNotification")
-@js.native
-class ScheduledToastNotification protected () extends js.Object {
-  /**
-    * Creates and initializes a new instance of a ScheduledToastNotification that will be displayed only once.
-    * @param content The XML that defines the toast notification content.
-    * @param deliveryTime The date and time that Windows should display the toast notification. You must call AddToSchedule before this time.
-    */
-  def this(content: XmlDocument, deliveryTime: Date) = this()
-  /**
-    * Creates and initializes a new instance of a recurring ScheduledToastNotification .
-    * @param content The XML that defines the toast notification content.
-    * @param deliveryTime The date and time that Windows should first display the toast notification. You must call AddToSchedule before this time.
-    * @param snoozeInterval The amount of time between occurrences of the notification. To be valid, this value must be no less than 60 seconds and no more than 60 minutes.
-    * @param maximumSnoozeCount The maximum number of times to display this notification. Valid values range from 1 to 5.
-    */
-  def this(content: XmlDocument, deliveryTime: Date, snoozeInterval: Double, maximumSnoozeCount: Double) = this()
+trait ScheduledToastNotification extends js.Object {
   /** Gets the XML that defines this scheduled toast notification. */
-  var content: XmlDocument = js.native
+  var content: XmlDocument
   /** Gets the time that this toast notification is scheduled to be displayed. */
-  var deliveryTime: Date = js.native
+  var deliveryTime: Date
   /** Gets or sets the group identifier for the notification. */
-  var group: String = js.native
+  var group: String
   /** Gets a developer-specified value used to identify a specific scheduled toast. */
-  var id: String = js.native
+  var id: String
   /** Gets the maximum number of times to display this notification. */
-  var maximumSnoozeCount: Double = js.native
+  var maximumSnoozeCount: Double
   /** Gets the amount of time between occurrences of the notification. */
-  var snoozeInterval: Double = js.native
+  var snoozeInterval: Double
   /** Gets or sets whether a toast's pop-up UI is displayed on the Windows Phone 8.1 screen. */
-  var suppressPopup: Boolean = js.native
+  var suppressPopup: Boolean
   /** Gets or sets a string that uniquely identifies a toast notification inside a Group . */
-  var tag: String = js.native
+  var tag: String
+}
+
+object ScheduledToastNotification {
+  @scala.inline
+  def apply(
+    content: XmlDocument,
+    deliveryTime: Date,
+    group: String,
+    id: String,
+    maximumSnoozeCount: Double,
+    snoozeInterval: Double,
+    suppressPopup: Boolean,
+    tag: String
+  ): ScheduledToastNotification = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], deliveryTime = deliveryTime.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maximumSnoozeCount = maximumSnoozeCount.asInstanceOf[js.Any], snoozeInterval = snoozeInterval.asInstanceOf[js.Any], suppressPopup = suppressPopup.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScheduledToastNotification]
+  }
 }
 

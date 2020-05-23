@@ -11,10 +11,10 @@ trait SpreadsheetSheetColumn extends js.Object {
 
 object SpreadsheetSheetColumn {
   @scala.inline
-  def apply(index: Int | Double = null, width: Int | Double = null): SpreadsheetSheetColumn = {
+  def apply(index: js.UndefOr[Double] = js.undefined, width: js.UndefOr[Double] = js.undefined): SpreadsheetSheetColumn = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheetColumn]
   }
 }

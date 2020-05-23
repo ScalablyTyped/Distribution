@@ -1,39 +1,39 @@
 package typings.wordpressApiFetch.mod.Schema
 
 import typings.std.Record
-import typings.wordpressApiFetch.AnonAddnew
-import typings.wordpressApiFetch.AnonAuthor
-import typings.wordpressApiFetch.AnonCreateposts
-import typings.wordpressApiFetch.AnonDictk
+import typings.wordpressApiFetch.anon.Addnew
+import typings.wordpressApiFetch.anon.Author
+import typings.wordpressApiFetch.anon.Createposts
+import typings.wordpressApiFetch.anon.Dictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseType[T /* <: Context */] extends BaseResponse {
-  var capabilities: AnonCreateposts
+  var capabilities: Createposts
   var description: String
   var hierarchical: Boolean
-  var labels: AnonAddnew
+  var labels: Addnew
   var name: String
   var rest_base: String
   var slug: String
-  var supports: AnonAuthor
+  var supports: Author
   var taxonomies: js.Array[TaxonomyKind]
   var viewable: Boolean
 }
 
 object BaseType {
   @scala.inline
-  def apply[T /* <: Context */](
-    _links: Record[String, js.Array[AnonDictk]],
-    capabilities: AnonCreateposts,
+  def apply[T](
+    _links: Record[String, js.Array[Dictk]],
+    capabilities: Createposts,
     description: String,
     hierarchical: Boolean,
-    labels: AnonAddnew,
+    labels: Addnew,
     name: String,
     rest_base: String,
     slug: String,
-    supports: AnonAuthor,
+    supports: Author,
     taxonomies: js.Array[TaxonomyKind],
     viewable: Boolean,
     _embedded: Record[String, js.Array[_]] = null

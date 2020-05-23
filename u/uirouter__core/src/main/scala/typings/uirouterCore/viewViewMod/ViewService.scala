@@ -1,6 +1,6 @@
 package typings.uirouterCore.viewViewMod
 
-import typings.uirouterCore.AnonUiViewContextAnchor
+import typings.uirouterCore.anon.UiViewContextAnchor
 import typings.uirouterCore.commonCommonMod.TypedMap
 import typings.uirouterCore.pathNodeMod.PathNode
 import typings.uirouterCore.routerMod.UIRouter
@@ -144,7 +144,7 @@ object ViewService extends js.Object {
     *
     * @returns the normalized uiViewName and uiViewContextAnchor that the view targets
     */
-  def normalizeUIViewTarget(context: ViewContext): AnonUiViewContextAnchor = js.native
-  def normalizeUIViewTarget(context: ViewContext, rawViewName: String): AnonUiViewContextAnchor = js.native
+  def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = js.native
+  def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = js.native
 }
 

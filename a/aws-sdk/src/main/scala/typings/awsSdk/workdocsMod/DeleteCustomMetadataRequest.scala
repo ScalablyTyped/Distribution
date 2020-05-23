@@ -33,13 +33,13 @@ object DeleteCustomMetadataRequest {
   def apply(
     ResourceId: ResourceIdType,
     AuthenticationToken: AuthenticationHeaderType = null,
-    DeleteAll: js.UndefOr[Boolean] = js.undefined,
+    DeleteAll: js.UndefOr[BooleanType] = js.undefined,
     Keys: CustomMetadataKeyList = null,
     VersionId: DocumentVersionIdType = null
   ): DeleteCustomMetadataRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
     if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteAll)) __obj.updateDynamic("DeleteAll")(DeleteAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteAll)) __obj.updateDynamic("DeleteAll")(DeleteAll.get.asInstanceOf[js.Any])
     if (Keys != null) __obj.updateDynamic("Keys")(Keys.asInstanceOf[js.Any])
     if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomMetadataRequest]

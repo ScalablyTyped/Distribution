@@ -12,12 +12,12 @@ trait IMemoryProxy extends IClient {
   /** [Config Option] (Object) */
   var data: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the value of data
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getData: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Sets the value of data
-  		* @param data Object The new value.
-  		*/
+    * @param data Object The new value.
+    */
   var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -106,7 +106,7 @@ object IMemoryProxy {
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(js.Any.fromFunction1(batch))
-    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(batchActions)) __obj.updateDynamic("batchActions")(batchActions.get.asInstanceOf[js.Any])
     if (batchOrder != null) __obj.updateDynamic("batchOrder")(batchOrder.asInstanceOf[js.Any])
     if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
@@ -161,7 +161,7 @@ object IMemoryProxy {
     if (setModel != null) __obj.updateDynamic("setModel")(js.Any.fromFunction1(setModel))
     if (setReader != null) __obj.updateDynamic("setReader")(js.Any.fromFunction1(setReader))
     if (setWriter != null) __obj.updateDynamic("setWriter")(js.Any.fromFunction1(setWriter))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

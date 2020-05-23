@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object BitmapRotation extends js.Object {
   /** No rotation operation is performed. */
   @js.native
   sealed trait none extends BitmapRotation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BitmapRotation with Double] = js.native
-  /* 2 */ @js.native
-  object clockwise180Degrees extends TopLevel[clockwise180Degrees with Double]
-  
-  /* 3 */ @js.native
-  object clockwise270Degrees extends TopLevel[clockwise270Degrees with Double]
-  
-  /* 1 */ @js.native
-  object clockwise90Degrees extends TopLevel[clockwise90Degrees with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

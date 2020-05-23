@@ -10,9 +10,9 @@ trait ITextAreaState extends js.Object {
 
 object ITextAreaState {
   @scala.inline
-  def apply(height: Int | Double = null): ITextAreaState = {
+  def apply(height: js.UndefOr[Double] = js.undefined): ITextAreaState = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextAreaState]
   }
 }

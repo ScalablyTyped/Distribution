@@ -14,7 +14,7 @@ trait Bindings
 object Bindings {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     level: Level | String = null,
     serializers: StringDictionary[SerializerFn] = null
   ): Bindings = {

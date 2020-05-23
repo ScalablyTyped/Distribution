@@ -21,10 +21,8 @@ trait IChangedArgs[T /* <: Widget */] extends js.Object {
 
 object IChangedArgs {
   @scala.inline
-  def apply[T /* <: Widget */](newValue: T = null, oldValue: T = null): IChangedArgs[T] = {
-    val __obj = js.Dynamic.literal()
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+  def apply[T](newValue: T = null, oldValue: T = null): IChangedArgs[T] = {
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangedArgs[T]]
   }
 }

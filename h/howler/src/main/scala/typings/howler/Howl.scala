@@ -1,6 +1,6 @@
 package typings.howler
 
-import org.scalablytyped.runtime.TopLevel
+import typings.howler.anon.ConeInnerAngle
 import typings.howler.howlerStrings.end
 import typings.howler.howlerStrings.fade
 import typings.howler.howlerStrings.load
@@ -164,8 +164,8 @@ trait Howl extends js.Object {
   @JSName("once")
   def once_volume(event: volume, callback: js.Function1[/* soundId */ Double, Unit], id: Double): this.type = js.native
   def orientation(x: Double, y: Double, z: Double, xUp: Double, yUp: Double, zUp: Double): this.type | Unit = js.native
-  def pannerAttr(o: AnonConeInnerAngle): this.type = js.native
-  def pannerAttr(o: AnonConeInnerAngle, id: Double): this.type = js.native
+  def pannerAttr(o: ConeInnerAngle): this.type = js.native
+  def pannerAttr(o: ConeInnerAngle, id: Double): this.type = js.native
    // .play() is not chainable; the other methods are
   def pause(): this.type = js.native
   def pause(id: Double): this.type = js.native
@@ -192,8 +192,4 @@ trait Howl extends js.Object {
   def volume(idOrSetVolume: Double): this.type | Double = js.native
   def volume(volume: Double, id: Double): this.type = js.native
 }
-
-@JSGlobal("Howl")
-@js.native
-object Howl extends TopLevel[HowlStatic]
 

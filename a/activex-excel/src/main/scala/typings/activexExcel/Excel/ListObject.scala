@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.ListObject")
 @js.native
-class ListObject protected () extends js.Object {
+trait ListObject extends js.Object {
   val Active: Boolean = js.native
   var AlternativeText: String = js.native
   val Application: typings.activexExcel.Excel.Application = js.native

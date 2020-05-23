@@ -29,12 +29,12 @@ object DescribeAggregateComplianceByConfigRulesRequest {
   def apply(
     ConfigurationAggregatorName: ConfigurationAggregatorName,
     Filters: ConfigRuleComplianceFilters = null,
-    Limit: Int | Double = null,
+    Limit: js.UndefOr[GroupByAPILimit] = js.undefined,
     NextToken: NextToken = null
   ): DescribeAggregateComplianceByConfigRulesRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAggregateComplianceByConfigRulesRequest]
   }

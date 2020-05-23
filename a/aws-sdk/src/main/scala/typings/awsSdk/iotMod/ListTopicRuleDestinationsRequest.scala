@@ -18,9 +18,9 @@ trait ListTopicRuleDestinationsRequest extends js.Object {
 
 object ListTopicRuleDestinationsRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, nextToken: NextToken = null): ListTopicRuleDestinationsRequest = {
+  def apply(maxResults: js.UndefOr[TopicRuleDestinationMaxResults] = js.undefined, nextToken: NextToken = null): ListTopicRuleDestinationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTopicRuleDestinationsRequest]
   }

@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides a collection of the HTTP headers associated with an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpRequestHeaderCollection")
 @js.native
-abstract class HttpRequestHeaderCollection () extends js.Object {
+trait HttpRequestHeaderCollection extends js.Object {
   /** Gets the HttpMediaTypeWithQualityHeaderValueCollection of HttpMediaTypeWithQualityHeaderValue objects that represent the value of an Accept HTTP header on an HTTP request. */
   var accept: HttpMediaTypeWithQualityHeaderValueCollection = js.native
   /** Gets the HttpContentCodingWithQualityHeaderValueCollection of HttpContentCodingWithQualityHeaderValue objects that represent the value of an Accept-Encoding HTTP header on an HTTP request. */

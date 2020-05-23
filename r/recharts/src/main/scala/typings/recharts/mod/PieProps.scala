@@ -1,7 +1,7 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactElement
-import typings.recharts.AnonOffsetRadius
+import typings.recharts.anon.OffsetRadius
 import typings.recharts.rechartsNumbers.`100`
 import typings.recharts.rechartsNumbers.`200`
 import typings.recharts.rechartsNumbers.`300`
@@ -86,7 +86,7 @@ trait PieProps extends js.Object {
   var isAnimationActive: js.UndefOr[Boolean] = js.undefined
   var isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined
   var kerning: js.UndefOr[Double | String] = js.undefined
-  var label: js.UndefOr[AnonOffsetRadius | ReactElement | ContentRenderer[PieLabelRenderProps] | Boolean] = js.undefined
+  var label: js.UndefOr[OffsetRadius | ReactElement | ContentRenderer[PieLabelRenderProps] | Boolean] = js.undefined
   var labelLine: js.UndefOr[js.Object | (ContentRenderer[LineProps with js.Any]) | ReactElement | Boolean] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
   var letterSpacing: js.UndefOr[String] = js.undefined
@@ -154,11 +154,11 @@ object PieProps {
     activeIndex: Double | js.Array[Double] = null,
     activeShape: js.Object | ContentRenderer[_] | ReactElement = null,
     alignmentBaseline: String = null,
-    angle: Int | Double = null,
-    animationBegin: Int | Double = null,
-    animationDuration: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
+    animationBegin: js.UndefOr[Double] = js.undefined,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     animationEasing: AnimationEasingType = null,
-    animationId: Int | Double = null,
+    animationId: js.UndefOr[Double] = js.undefined,
     baselineShift: String = null,
     blendStroke: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -178,9 +178,9 @@ object PieProps {
     direction: String = null,
     display: String = null,
     dominantBaseline: String = null,
-    dx: Int | Double = null,
-    dy: Int | Double = null,
-    endAngle: Int | Double = null,
+    dx: js.UndefOr[Double] = js.undefined,
+    dy: js.UndefOr[Double] = js.undefined,
+    endAngle: js.UndefOr[Double] = js.undefined,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: String = null,
@@ -196,14 +196,14 @@ object PieProps {
     fontVariant: String = null,
     fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit = null,
     glyphOrientationVertical: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hide: js.UndefOr[Boolean] = js.undefined,
     imageRendering: auto | optimizeSpeed | optimizeQuality | inherit = null,
     innerRadius: Double | String = null,
     isAnimationActive: js.UndefOr[Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined,
     kerning: Double | String = null,
-    label: AnonOffsetRadius | ReactElement | ContentRenderer[PieLabelRenderProps] | Boolean = null,
+    label: OffsetRadius | ReactElement | ContentRenderer[PieLabelRenderProps] | Boolean = null,
     labelLine: js.Object | (ContentRenderer[LineProps with js.Any]) | ReactElement | Boolean = null,
     legendType: LegendType = null,
     letterSpacing: String = null,
@@ -212,9 +212,9 @@ object PieProps {
     markerMid: String = null,
     markerStart: String = null,
     mask: String = null,
-    maxRadius: Int | Double = null,
-    midAngle: Int | Double = null,
-    minAngle: Int | Double = null,
+    maxRadius: js.UndefOr[Double] = js.undefined,
+    midAngle: js.UndefOr[Double] = js.undefined,
+    minAngle: js.UndefOr[Double] = js.undefined,
     nameKey: String | Double | (js.Function1[/* dataObject */ js.Any, Double]) = null,
     onAnimationEnd: /* repeated */ js.Any => Unit = null,
     onAnimationStart: /* repeated */ js.Any => Unit = null,
@@ -233,12 +233,12 @@ object PieProps {
     opacity: Double | String = null,
     outerRadius: Double | String = null,
     overflow: String = null,
-    paddingAngle: Int | Double = null,
+    paddingAngle: js.UndefOr[Double] = js.undefined,
     pointerEvents: String = null,
-    r: Int | Double = null,
+    r: js.UndefOr[Double] = js.undefined,
     sectors: js.Array[js.Object] = null,
     shapeRendering: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit = null,
-    startAngle: Int | Double = null,
+    startAngle: js.UndefOr[Double] = js.undefined,
     stopColor: String = null,
     stopOpacity: Double | String = null,
     stroke: Double | String = null,
@@ -257,23 +257,23 @@ object PieProps {
     unicodeBidi: String = null,
     valueKey: String | Double | (js.Function1[/* dataObject */ js.Any, Double]) = null,
     visibility: String = null,
-    width: Int | Double = null,
+    width: js.UndefOr[Double] = js.undefined,
     wordSpacing: Double | String = null,
     writingMode: String = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): PieProps = {
     val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (activeShape != null) __obj.updateDynamic("activeShape")(activeShape.asInstanceOf[js.Any])
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (animationBegin != null) __obj.updateDynamic("animationBegin")(animationBegin.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationBegin)) __obj.updateDynamic("animationBegin")(animationBegin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationId != null) __obj.updateDynamic("animationId")(animationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationId)) __obj.updateDynamic("animationId")(animationId.get.asInstanceOf[js.Any])
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
-    if (!js.isUndefined(blendStroke)) __obj.updateDynamic("blendStroke")(blendStroke.asInstanceOf[js.Any])
+    if (!js.isUndefined(blendStroke)) __obj.updateDynamic("blendStroke")(blendStroke.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
@@ -291,9 +291,9 @@ object PieProps {
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(dx)) __obj.updateDynamic("dx")(dx.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dy)) __obj.updateDynamic("dy")(dy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -309,12 +309,12 @@ object PieProps {
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.get.asInstanceOf[js.Any])
     if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
     if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive.get.asInstanceOf[js.Any])
     if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelLine != null) __obj.updateDynamic("labelLine")(labelLine.asInstanceOf[js.Any])
@@ -325,9 +325,9 @@ object PieProps {
     if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
     if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (maxRadius != null) __obj.updateDynamic("maxRadius")(maxRadius.asInstanceOf[js.Any])
-    if (midAngle != null) __obj.updateDynamic("midAngle")(midAngle.asInstanceOf[js.Any])
-    if (minAngle != null) __obj.updateDynamic("minAngle")(minAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRadius)) __obj.updateDynamic("maxRadius")(maxRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(midAngle)) __obj.updateDynamic("midAngle")(midAngle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minAngle)) __obj.updateDynamic("minAngle")(minAngle.get.asInstanceOf[js.Any])
     if (nameKey != null) __obj.updateDynamic("nameKey")(nameKey.asInstanceOf[js.Any])
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
@@ -346,12 +346,12 @@ object PieProps {
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (paddingAngle != null) __obj.updateDynamic("paddingAngle")(paddingAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingAngle)) __obj.updateDynamic("paddingAngle")(paddingAngle.get.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
     if (sectors != null) __obj.updateDynamic("sectors")(sectors.asInstanceOf[js.Any])
     if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
     if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
     if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
@@ -370,11 +370,11 @@ object PieProps {
     if (unicodeBidi != null) __obj.updateDynamic("unicodeBidi")(unicodeBidi.asInstanceOf[js.Any])
     if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
     if (writingMode != null) __obj.updateDynamic("writingMode")(writingMode.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieProps]
   }
 }

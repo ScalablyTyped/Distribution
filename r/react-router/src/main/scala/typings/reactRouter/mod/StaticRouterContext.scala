@@ -17,13 +17,13 @@ object StaticRouterContext {
   def apply(
     action: PUSH | REPLACE = null,
     location: js.Object = null,
-    statusCode: Int | Double = null,
+    statusCode: js.UndefOr[Double] = js.undefined,
     url: String = null
   ): StaticRouterContext = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticRouterContext]
   }

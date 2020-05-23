@@ -18,13 +18,13 @@ object KeywordsOptions {
   @scala.inline
   def apply(
     emotion: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     sentiment: js.UndefOr[Boolean] = js.undefined
   ): KeywordsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emotion)) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(sentiment)) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
+    if (!js.isUndefined(emotion)) __obj.updateDynamic("emotion")(emotion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sentiment)) __obj.updateDynamic("sentiment")(sentiment.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeywordsOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.sharedb
 
+import typings.sharedb.anon.ResultsArray
 import typings.std.WebSocket
 import typings.ws.mod.^
 import scala.scalajs.js
@@ -20,13 +21,13 @@ object clientMod extends js.Object {
     def createFetchQuery(
       collectionName: String,
       query: js.Any,
-      options: AnonResultsArray,
+      options: ResultsArray,
       callback: js.Function2[/* err */ Error, /* results */ js.Array[_], Unit]
     ): Query = js.native
     def createSubscribeQuery(
       collectionName: String,
       query: js.Any,
-      options: AnonResultsArray,
+      options: ResultsArray,
       callback: js.Function2[/* err */ Error, /* results */ js.Array[_], Unit]
     ): Query = js.native
     def get(collectionName: String, documentID: String): Doc = js.native

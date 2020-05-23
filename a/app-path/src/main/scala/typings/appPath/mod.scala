@@ -1,5 +1,6 @@
 package typings.appPath
 
+import typings.appPath.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   // TODO: remove this in the next major version
   @JSName("default")
-  var default_Original: AnonCall = js.native
+  var default_Original: Call = js.native
   /**
   	Get the path to an app on macOS.
   	@param appName - An app name or bundle identifier.

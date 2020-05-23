@@ -56,29 +56,29 @@ object Bundle {
   @scala.inline
   def apply(
     bundleId: NonEmptyString = null,
-    cpuCount: Int | Double = null,
-    diskSizeInGb: Int | Double = null,
+    cpuCount: js.UndefOr[integer] = js.undefined,
+    diskSizeInGb: js.UndefOr[integer] = js.undefined,
     instanceType: String = null,
     isActive: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    power: Int | Double = null,
-    price: Int | Double = null,
-    ramSizeInGb: Int | Double = null,
+    power: js.UndefOr[integer] = js.undefined,
+    price: js.UndefOr[float] = js.undefined,
+    ramSizeInGb: js.UndefOr[float] = js.undefined,
     supportedPlatforms: InstancePlatformList = null,
-    transferPerMonthInGb: Int | Double = null
+    transferPerMonthInGb: js.UndefOr[integer] = js.undefined
   ): Bundle = {
     val __obj = js.Dynamic.literal()
     if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (cpuCount != null) __obj.updateDynamic("cpuCount")(cpuCount.asInstanceOf[js.Any])
-    if (diskSizeInGb != null) __obj.updateDynamic("diskSizeInGb")(diskSizeInGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(cpuCount)) __obj.updateDynamic("cpuCount")(cpuCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(diskSizeInGb)) __obj.updateDynamic("diskSizeInGb")(diskSizeInGb.get.asInstanceOf[js.Any])
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (power != null) __obj.updateDynamic("power")(power.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (ramSizeInGb != null) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(power)) __obj.updateDynamic("power")(power.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(price)) __obj.updateDynamic("price")(price.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ramSizeInGb)) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb.get.asInstanceOf[js.Any])
     if (supportedPlatforms != null) __obj.updateDynamic("supportedPlatforms")(supportedPlatforms.asInstanceOf[js.Any])
-    if (transferPerMonthInGb != null) __obj.updateDynamic("transferPerMonthInGb")(transferPerMonthInGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(transferPerMonthInGb)) __obj.updateDynamic("transferPerMonthInGb")(transferPerMonthInGb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundle]
   }
 }

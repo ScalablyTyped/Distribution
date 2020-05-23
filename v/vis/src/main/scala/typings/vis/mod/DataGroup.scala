@@ -37,12 +37,12 @@ object DataGroup {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (nestedGroups != null) __obj.updateDynamic("nestedGroups")(nestedGroups.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNested)) __obj.updateDynamic("showNested")(showNested.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNested)) __obj.updateDynamic("showNested")(showNested.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subgroupOrder != null) __obj.updateDynamic("subgroupOrder")(subgroupOrder.asInstanceOf[js.Any])
     if (subgroupStack != null) __obj.updateDynamic("subgroupStack")(subgroupStack.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataGroup]
   }
 }

@@ -20,7 +20,7 @@ object AccountUpdateRequest {
     val __obj = js.Dynamic.literal()
     if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed.asInstanceOf[js.Any])
+    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountUpdateRequest]
   }
 }

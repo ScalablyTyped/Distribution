@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,26 +34,6 @@ object VpnManagementErrorStatus extends js.Object {
   /** The profile name is too long. */
   @js.native
   sealed trait profileNameTooLong extends VpnManagementErrorStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnManagementErrorStatus with Double] = js.native
-  /* 5 */ @js.native
-  object accessDenied extends TopLevel[accessDenied with Double]
-  
-  /* 2 */ @js.native
-  object invalidXmlSyntax extends TopLevel[invalidXmlSyntax with Double]
-  
-  /* 0 */ @js.native
-  object ok extends TopLevel[ok with Double]
-  
-  /* 1 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 4 */ @js.native
-  object profileInvalidAppId extends TopLevel[profileInvalidAppId with Double]
-  
-  /* 3 */ @js.native
-  object profileNameTooLong extends TopLevel[profileNameTooLong with Double]
   
 }
 

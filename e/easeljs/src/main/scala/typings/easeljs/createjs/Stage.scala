@@ -5,12 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.Stage")
 @js.native
-class Stage protected () extends Container {
-  def this(canvas: String) = this()
-  def this(canvas: js.Object) = this()
-  def this(canvas: HTMLCanvasElement) = this()
+trait Stage extends Container {
   // properties
   var autoClear: Boolean = js.native
   var canvas: HTMLCanvasElement | js.Object = js.native

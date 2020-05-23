@@ -6,11 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("createjs.AlphaMaskFilter")
 @js.native
-class AlphaMaskFilter protected () extends Filter {
-  def this(mask: HTMLCanvasElement) = this()
-  def this(mask: HTMLImageElement) = this()
+trait AlphaMaskFilter extends Filter {
   // properties
   var mask: HTMLImageElement | HTMLCanvasElement = js.native
 }

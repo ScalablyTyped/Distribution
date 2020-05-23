@@ -15,7 +15,7 @@ trait ojGanttRowSettablePropertiesLenient
 object ojGanttRowSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     label: String = null,
     labelStyle: js.Object = null
   ): ojGanttRowSettablePropertiesLenient = {

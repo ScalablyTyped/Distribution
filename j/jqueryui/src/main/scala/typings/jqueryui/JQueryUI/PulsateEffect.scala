@@ -10,9 +10,9 @@ trait PulsateEffect extends js.Object {
 
 object PulsateEffect {
   @scala.inline
-  def apply(times: Int | Double = null): PulsateEffect = {
+  def apply(times: js.UndefOr[Double] = js.undefined): PulsateEffect = {
     val __obj = js.Dynamic.literal()
-    if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
+    if (!js.isUndefined(times)) __obj.updateDynamic("times")(times.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PulsateEffect]
   }
 }

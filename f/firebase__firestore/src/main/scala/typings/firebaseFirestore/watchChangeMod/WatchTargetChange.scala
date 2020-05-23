@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/remote/watch_change", "WatchTargetChange")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/watch_change", "WatchTargetChange")
 @js.native
 class WatchTargetChange protected () extends WatchChange {
   def this(

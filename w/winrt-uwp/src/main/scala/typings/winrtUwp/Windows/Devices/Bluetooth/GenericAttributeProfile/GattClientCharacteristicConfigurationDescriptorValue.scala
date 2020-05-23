@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,16 +22,6 @@ object GattClientCharacteristicConfigurationDescriptorValue extends js.Object {
   /** Characteristic notifications are enabled. */
   @js.native
   sealed trait notify extends GattClientCharacteristicConfigurationDescriptorValue
-  
-  /* 1 */ @JSName("notify")
-  val notify_ : notify with Double = js.native
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GattClientCharacteristicConfigurationDescriptorValue with Double] = js.native
-  /* 2 */ @js.native
-  object indicate extends TopLevel[indicate with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

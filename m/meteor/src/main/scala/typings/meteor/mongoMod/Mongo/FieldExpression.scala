@@ -1,6 +1,6 @@
 package typings.meteor.mongoMod.Mongo
 
-import typings.meteor.AnonCaseSensitive
+import typings.meteor.anon.CaseSensitive
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,7 +62,7 @@ trait FieldExpression[T] extends js.Object {
   @JSName("$size")
   var $size: js.UndefOr[Double] = js.undefined
   @JSName("$text")
-  var $text: js.UndefOr[AnonCaseSensitive] = js.undefined
+  var $text: js.UndefOr[CaseSensitive] = js.undefined
   @JSName("$type")
   var $type: js.UndefOr[js.Array[BsonType] | BsonType] = js.undefined
   @JSName("$where")
@@ -98,8 +98,8 @@ object FieldExpression {
     $not: FieldExpression[T] = null,
     $options: String = null,
     $regex: RegExp | String = null,
-    $size: Int | Double = null,
-    $text: AnonCaseSensitive = null,
+    $size: js.UndefOr[Double] = js.undefined,
+    $text: CaseSensitive = null,
     $type: js.Array[BsonType] | BsonType = null,
     $where: String | js.Function = null
   ): FieldExpression[T] = {
@@ -112,7 +112,7 @@ object FieldExpression {
     if ($comment != null) __obj.updateDynamic("$comment")($comment.asInstanceOf[js.Any])
     if ($elemMatch != null) __obj.updateDynamic("$elemMatch")($elemMatch.asInstanceOf[js.Any])
     if ($eq != null) __obj.updateDynamic("$eq")($eq.asInstanceOf[js.Any])
-    if (!js.isUndefined($exists)) __obj.updateDynamic("$exists")($exists.asInstanceOf[js.Any])
+    if (!js.isUndefined($exists)) __obj.updateDynamic("$exists")($exists.get.asInstanceOf[js.Any])
     if ($expr != null) __obj.updateDynamic("$expr")($expr.asInstanceOf[js.Any])
     if ($geoIntersects != null) __obj.updateDynamic("$geoIntersects")($geoIntersects.asInstanceOf[js.Any])
     if ($geoWithin != null) __obj.updateDynamic("$geoWithin")($geoWithin.asInstanceOf[js.Any])
@@ -130,7 +130,7 @@ object FieldExpression {
     if ($not != null) __obj.updateDynamic("$not")($not.asInstanceOf[js.Any])
     if ($options != null) __obj.updateDynamic("$options")($options.asInstanceOf[js.Any])
     if ($regex != null) __obj.updateDynamic("$regex")($regex.asInstanceOf[js.Any])
-    if ($size != null) __obj.updateDynamic("$size")($size.asInstanceOf[js.Any])
+    if (!js.isUndefined($size)) __obj.updateDynamic("$size")($size.get.asInstanceOf[js.Any])
     if ($text != null) __obj.updateDynamic("$text")($text.asInstanceOf[js.Any])
     if ($type != null) __obj.updateDynamic("$type")($type.asInstanceOf[js.Any])
     if ($where != null) __obj.updateDynamic("$where")($where.asInstanceOf[js.Any])

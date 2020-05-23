@@ -16,11 +16,10 @@ object SignatureHelpRegistrationOptions {
     triggerCharacters: js.Array[String] = null,
     workDoneProgress: js.UndefOr[Boolean] = js.undefined
   ): SignatureHelpRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
-    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(documentSelector = documentSelector.asInstanceOf[js.Any])
     if (retriggerCharacters != null) __obj.updateDynamic("retriggerCharacters")(retriggerCharacters.asInstanceOf[js.Any])
     if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.asInstanceOf[js.Any])
+    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpRegistrationOptions]
   }
 }

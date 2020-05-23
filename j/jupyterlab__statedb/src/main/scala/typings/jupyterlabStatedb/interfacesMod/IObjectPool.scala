@@ -65,7 +65,7 @@ trait IObjectPool[T /* <: IObservableDisposable */] extends IDisposable {
 
 object IObjectPool {
   @scala.inline
-  def apply[T /* <: IObservableDisposable */](
+  def apply[T](
     added: ISignal[IObjectPool[T], T],
     currentChanged: ISignal[IObjectPool[T], T | Null],
     dispose: () => Unit,
@@ -78,8 +78,7 @@ object IObjectPool {
     updated: ISignal[IObjectPool[T], T],
     current: T = null
   ): IObjectPool[T] = {
-    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], currentChanged = currentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), isDisposed = isDisposed.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], currentChanged = currentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), isDisposed = isDisposed.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObjectPool[T]]
   }
 }

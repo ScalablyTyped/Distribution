@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`coded-value`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,8 +26,4 @@ trait CodedValueDomain extends Domain {
   def getName(code: String): String = js.native
   def getName(code: Double): String = js.native
 }
-
-@JSGlobal("__esri.CodedValueDomain")
-@js.native
-object CodedValueDomain extends TopLevel[CodedValueDomainConstructor]
 

@@ -57,7 +57,7 @@ object MemberDetail {
     GraphArn: GraphArn = null,
     InvitedTime: Timestamp = null,
     MasterId: AccountId = null,
-    PercentOfGraphUtilization: Int | Double = null,
+    PercentOfGraphUtilization: js.UndefOr[Percentage] = js.undefined,
     PercentOfGraphUtilizationUpdatedTime: Timestamp = null,
     Status: MemberStatus = null,
     UpdatedTime: Timestamp = null
@@ -69,7 +69,7 @@ object MemberDetail {
     if (GraphArn != null) __obj.updateDynamic("GraphArn")(GraphArn.asInstanceOf[js.Any])
     if (InvitedTime != null) __obj.updateDynamic("InvitedTime")(InvitedTime.asInstanceOf[js.Any])
     if (MasterId != null) __obj.updateDynamic("MasterId")(MasterId.asInstanceOf[js.Any])
-    if (PercentOfGraphUtilization != null) __obj.updateDynamic("PercentOfGraphUtilization")(PercentOfGraphUtilization.asInstanceOf[js.Any])
+    if (!js.isUndefined(PercentOfGraphUtilization)) __obj.updateDynamic("PercentOfGraphUtilization")(PercentOfGraphUtilization.get.asInstanceOf[js.Any])
     if (PercentOfGraphUtilizationUpdatedTime != null) __obj.updateDynamic("PercentOfGraphUtilizationUpdatedTime")(PercentOfGraphUtilizationUpdatedTime.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (UpdatedTime != null) __obj.updateDynamic("UpdatedTime")(UpdatedTime.asInstanceOf[js.Any])

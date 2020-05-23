@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloCacheControl.mod.CacheControlExtensionOptions
 import typings.apolloEngineReporting.agentMod.EngineReportingOptions
 import typings.apolloServerCaching.keyValueCacheMod.KeyValueCache
-import typings.apolloServerCore.PartialSubscriptionServer
-import typings.apolloServerCore.TypeofSchemaDirectiveVisi
+import typings.apolloServerCore.anon.PartialSubscriptionServer
+import typings.apolloServerCore.anon.TypeofSchemaDirectiveVisi
 import typings.apolloServerCore.apolloServerCoreBooleans.`false`
 import typings.apolloServerCore.graphqlOptionsMod.DataSources
 import typings.apolloServerCore.graphqlOptionsMod.PersistedQueryOptions
@@ -64,7 +64,7 @@ object Config {
     debug: js.UndefOr[Boolean] = js.undefined,
     engine: Boolean | EngineReportingOptions[Context[js.Object]] = null,
     executor: /* requestContext */ GraphQLRequestContextExecutionDidStart[Record[String, _]] => ValueOrPromise[GraphQLExecutionResult] = null,
-    experimental_approximateDocumentStoreMiB: Int | Double = null,
+    experimental_approximateDocumentStoreMiB: js.UndefOr[Double] = js.undefined,
     extensions: js.Array[js.Function0[typings.graphqlExtensions.mod.GraphQLExtension[_]]] = null,
     fieldResolver: (_, StringDictionary[_], Context[js.Object], /* info */ GraphQLResolveInfo) => js.Any = null,
     formatError: /* error */ GraphQLError => GraphQLFormattedError[Record[String, _]] = null,
@@ -94,18 +94,18 @@ object Config {
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (dataSources != null) __obj.updateDynamic("dataSources")(js.Any.fromFunction0(dataSources))
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
     if (executor != null) __obj.updateDynamic("executor")(js.Any.fromFunction1(executor))
-    if (experimental_approximateDocumentStoreMiB != null) __obj.updateDynamic("experimental_approximateDocumentStoreMiB")(experimental_approximateDocumentStoreMiB.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimental_approximateDocumentStoreMiB)) __obj.updateDynamic("experimental_approximateDocumentStoreMiB")(experimental_approximateDocumentStoreMiB.get.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (formatResponse != null) __obj.updateDynamic("formatResponse")(js.Any.fromFunction2(formatResponse))
     if (gateway != null) __obj.updateDynamic("gateway")(gateway.asInstanceOf[js.Any])
-    if (!js.isUndefined(introspection)) __obj.updateDynamic("introspection")(introspection.asInstanceOf[js.Any])
+    if (!js.isUndefined(introspection)) __obj.updateDynamic("introspection")(introspection.get.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (!js.isUndefined(mockEntireSchema)) __obj.updateDynamic("mockEntireSchema")(mockEntireSchema.asInstanceOf[js.Any])
+    if (!js.isUndefined(mockEntireSchema)) __obj.updateDynamic("mockEntireSchema")(mockEntireSchema.get.asInstanceOf[js.Any])
     if (mocks != null) __obj.updateDynamic("mocks")(mocks.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
     if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions.asInstanceOf[js.Any])
@@ -117,7 +117,7 @@ object Config {
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (schemaDirectives != null) __obj.updateDynamic("schemaDirectives")(schemaDirectives.asInstanceOf[js.Any])
     if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracing)) __obj.updateDynamic("tracing")(tracing.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracing)) __obj.updateDynamic("tracing")(tracing.get.asInstanceOf[js.Any])
     if (typeDefs != null) __obj.updateDynamic("typeDefs")(typeDefs.asInstanceOf[js.Any])
     if (uploads != null) __obj.updateDynamic("uploads")(uploads.asInstanceOf[js.Any])
     if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])

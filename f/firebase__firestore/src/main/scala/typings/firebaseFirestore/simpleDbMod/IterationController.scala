@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/local/simple_db", "IterationController")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/local/simple_db", "IterationController")
 @js.native
 class IterationController protected () extends js.Object {
   def this(dbCursor: IDBCursorWithValue) = this()
@@ -25,12 +25,12 @@ class IterationController protected () extends js.Object {
     * This function can be called to stop iteration at any point.
     */
   def done(): Unit = js.native
-  def isDone(): Boolean = js.native
+  def isDone: Boolean = js.native
   /**
     * This function can be called to skip to that next key, which could be
     * an index or a primary key.
     */
   def skip(key: IDBValidKey): Unit = js.native
-  def skipToKey(): IDBValidKey | Null = js.native
+  def skipToKey: IDBValidKey | Null = js.native
 }
 

@@ -4,13 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSHTML.CanvasImageData")
-@js.native
-class CanvasImageData protected () extends js.Object {
+trait CanvasImageData extends js.Object {
   @JSName("MSHTML.CanvasImageData_typekey")
-  var MSHTMLDotCanvasImageData_typekey: CanvasImageData = js.native
-  val data: js.Any = js.native
-  val height: Double = js.native
-  val width: Double = js.native
+  var MSHTMLDotCanvasImageData_typekey: CanvasImageData
+  val data: js.Any
+  val height: Double
+  val width: Double
+}
+
+object CanvasImageData {
+  @scala.inline
+  def apply(MSHTMLDotCanvasImageData_typekey: CanvasImageData, data: js.Any, height: Double, width: Double): CanvasImageData = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.CanvasImageData_typekey")(MSHTMLDotCanvasImageData_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CanvasImageData]
+  }
 }
 

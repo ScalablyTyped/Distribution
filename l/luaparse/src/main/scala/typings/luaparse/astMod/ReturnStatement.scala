@@ -1,6 +1,6 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.AnonEnd
+import typings.luaparse.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object ReturnStatement {
   def apply(
     arguments: js.Array[Expression],
     `type`: typings.luaparse.luaparseStrings.ReturnStatement,
-    loc: AnonEnd = null
+    loc: End = null
   ): ReturnStatement = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

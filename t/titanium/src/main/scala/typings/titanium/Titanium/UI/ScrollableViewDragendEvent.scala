@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired when the scrolling drag gesture on the view has been completed.
-		 */
+  * Fired when the scrolling drag gesture on the view has been completed.
+  */
 trait ScrollableViewDragendEvent extends ScrollableViewBaseEvent {
   /**
-  			 * Index of the currently visible view of <Titanium.UI.ScrollableView.views>.
-  			 */
+    * Index of the currently visible view of <Titanium.UI.ScrollableView.views>.
+    */
   var currentPage: Double
   /**
-  			 * The currently visible view.
-  			 */
+    * The currently visible view.
+    */
   var view: View
 }
 

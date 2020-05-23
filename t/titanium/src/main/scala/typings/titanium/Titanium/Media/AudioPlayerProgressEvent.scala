@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired once per second with the current progress during playback.
-		 */
+  * Fired once per second with the current progress during playback.
+  */
 trait AudioPlayerProgressEvent extends AudioPlayerBaseEvent {
   /**
-  			 * Current progress, in milliseconds.
-  			 */
+    * Current progress, in milliseconds.
+    */
   var progress: Double
 }
 

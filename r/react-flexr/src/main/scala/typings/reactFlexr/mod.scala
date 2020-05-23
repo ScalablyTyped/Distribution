@@ -4,7 +4,7 @@ import typings.react.mod.Component
 import typings.reactFlexr.ReactFlexr.CellProps
 import typings.reactFlexr.ReactFlexr.ErgonomicType
 import typings.reactFlexr.ReactFlexr.GridProps
-import typings.reactFlexr.ReactFlexr.OptimizedResize_
+import typings.reactFlexr.ReactFlexr.OptimizedResize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ object mod extends js.Object {
   
   val desk: String = js.native
   val lap: String = js.native
-  val optimizedResize: OptimizedResize_ = js.native
+  val optimizedResize: OptimizedResize = js.native
   val palm: String = js.native
   val portable: String = js.native
   def findBreakpoints(): js.Array[ErgonomicType] | Boolean = js.native

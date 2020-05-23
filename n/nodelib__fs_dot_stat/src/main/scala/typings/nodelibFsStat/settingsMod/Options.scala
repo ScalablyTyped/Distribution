@@ -1,6 +1,6 @@
 package typings.nodelibFsStat.settingsMod
 
-import typings.nodelibFsStat.PartialFileSystemAdapter
+import typings.nodelibFsStat.anon.PartialFileSystemAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +21,10 @@ object Options {
     throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(followSymbolicLink)) __obj.updateDynamic("followSymbolicLink")(followSymbolicLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(followSymbolicLink)) __obj.updateDynamic("followSymbolicLink")(followSymbolicLink.get.asInstanceOf[js.Any])
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
-    if (!js.isUndefined(markSymbolicLink)) __obj.updateDynamic("markSymbolicLink")(markSymbolicLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwErrorOnBrokenSymbolicLink)) __obj.updateDynamic("throwErrorOnBrokenSymbolicLink")(throwErrorOnBrokenSymbolicLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(markSymbolicLink)) __obj.updateDynamic("markSymbolicLink")(markSymbolicLink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwErrorOnBrokenSymbolicLink)) __obj.updateDynamic("throwErrorOnBrokenSymbolicLink")(throwErrorOnBrokenSymbolicLink.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

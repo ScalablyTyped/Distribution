@@ -1,7 +1,7 @@
 package typings.objection.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.objection.AnonAs
+import typings.objection.anon.As
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ trait CountMethod[QB /* <: AnyQueryBuilder */] extends js.Object {
   def apply(aliasToColumnDict: StringDictionary[String | js.Array[String]]): QB = js.native
   def apply(columns: ColumnRef*): QB = js.native
   def apply(column: ColumnRef): QB = js.native
-  def apply(column: ColumnRef, options: AnonAs): QB = js.native
+  def apply(column: ColumnRef, options: As): QB = js.native
 }
 

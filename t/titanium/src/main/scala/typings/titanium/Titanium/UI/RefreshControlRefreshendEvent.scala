@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * Fired in response to a user finished action to refresh the contents of the
-		 * table view, list view or scroll view.
-		 */
+  * Fired in response to a user finished action to refresh the contents of the
+  * table view, list view or scroll view.
+  */
 trait RefreshControlRefreshendEvent extends RefreshControlBaseEvent {
   /**
-  			 * This is false. This event does not bubble
-  			 */
+    * This is false. This event does not bubble
+    */
   var bubbles: Boolean
 }
 

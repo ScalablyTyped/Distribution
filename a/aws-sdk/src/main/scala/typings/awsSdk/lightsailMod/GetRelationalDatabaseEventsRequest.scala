@@ -24,11 +24,11 @@ object GetRelationalDatabaseEventsRequest {
   @scala.inline
   def apply(
     relationalDatabaseName: ResourceName,
-    durationInMinutes: Int | Double = null,
+    durationInMinutes: js.UndefOr[integer] = js.undefined,
     pageToken: String = null
   ): GetRelationalDatabaseEventsRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-    if (durationInMinutes != null) __obj.updateDynamic("durationInMinutes")(durationInMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationInMinutes)) __obj.updateDynamic("durationInMinutes")(durationInMinutes.get.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseEventsRequest]
   }

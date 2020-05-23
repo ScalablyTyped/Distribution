@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetDetectorResponse extends js.Object {
   /**
-    * Detector creation timestamp.
+    * The timestamp of when the detector was created.
     */
   var CreatedAt: js.UndefOr[String] = js.native
   /**
-    * Finding publishing frequency.
+    * The publishing frequency of the finding.
     */
   var FindingPublishingFrequency: js.UndefOr[typings.awsSdk.guarddutyMod.FindingPublishingFrequency] = js.native
   /**
@@ -27,7 +27,7 @@ trait GetDetectorResponse extends js.Object {
     */
   var Tags: js.UndefOr[TagMap] = js.native
   /**
-    * Detector last update timestamp.
+    * The last-updated timestamp for the detector.
     */
   var UpdatedAt: js.UndefOr[String] = js.native
 }

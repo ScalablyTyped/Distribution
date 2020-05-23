@@ -1,13 +1,13 @@
 package typings.jqueryCleditor
 
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JQueryCLEditorButtonDefinition extends js.Object {
   var buttonClick: js.UndefOr[
-    js.Function2[/* event */ Event_, /* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]
+    js.Function2[/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]
   ] = js.undefined
   var command: js.UndefOr[String] = js.undefined
   var css: js.UndefOr[js.Any] = js.undefined
@@ -16,7 +16,7 @@ trait JQueryCLEditorButtonDefinition extends js.Object {
   var image: js.UndefOr[String] = js.undefined
   var name: String
   var popupClick: js.UndefOr[
-    js.Function2[/* event */ Event_, /* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]
+    js.Function2[/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]
   ] = js.undefined
   var popupContent: js.UndefOr[String] = js.undefined
   var popupName: js.UndefOr[String] = js.undefined
@@ -29,16 +29,16 @@ object JQueryCLEditorButtonDefinition {
   def apply(
     name: String,
     title: String,
-    buttonClick: (/* event */ Event_, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean = null,
+    buttonClick: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean = null,
     command: String = null,
     css: js.Any = null,
     getEnabled: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean = null,
     getPressed: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean = null,
     image: String = null,
-    popupClick: (/* event */ Event_, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean = null,
+    popupClick: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean = null,
     popupContent: String = null,
     popupName: String = null,
-    stripIndex: Int | Double = null
+    stripIndex: js.UndefOr[Double] = js.undefined
   ): JQueryCLEditorButtonDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (buttonClick != null) __obj.updateDynamic("buttonClick")(js.Any.fromFunction2(buttonClick))
@@ -50,7 +50,7 @@ object JQueryCLEditorButtonDefinition {
     if (popupClick != null) __obj.updateDynamic("popupClick")(js.Any.fromFunction2(popupClick))
     if (popupContent != null) __obj.updateDynamic("popupContent")(popupContent.asInstanceOf[js.Any])
     if (popupName != null) __obj.updateDynamic("popupName")(popupName.asInstanceOf[js.Any])
-    if (stripIndex != null) __obj.updateDynamic("stripIndex")(stripIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripIndex)) __obj.updateDynamic("stripIndex")(stripIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryCLEditorButtonDefinition]
   }
 }

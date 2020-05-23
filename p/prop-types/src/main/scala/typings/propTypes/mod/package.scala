@@ -22,7 +22,7 @@ package object mod {
     - scala.Double
     - scala.Boolean
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type ReactNodeLike = js.UndefOr[
     typings.propTypes.mod._ReactNodeLike | js.Object | java.lang.String | scala.Double | scala.Boolean | scala.Null

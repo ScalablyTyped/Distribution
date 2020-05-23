@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.EmptyCell")
 @js.native
-class EmptyCell protected () extends js.Object {
+trait EmptyCell extends js.Object {
   @JSName("Access.EmptyCell_typekey")
   var AccessDotEmptyCell_typekey: EmptyCell = js.native
   val Application: typings.activexAccess.Access.Application = js.native

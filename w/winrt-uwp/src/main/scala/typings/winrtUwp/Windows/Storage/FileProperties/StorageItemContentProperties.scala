@@ -10,9 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to the content-related properties of an item (like a file or folder). */
-@JSGlobal("Windows.Storage.FileProperties.StorageItemContentProperties")
 @js.native
-abstract class StorageItemContentProperties () extends js.Object {
+trait StorageItemContentProperties extends js.Object {
   /**
     * Retrieves the document properties of the item (like a file of folder).
     * @return When this method completes successfully, it returns a documentProperties object.

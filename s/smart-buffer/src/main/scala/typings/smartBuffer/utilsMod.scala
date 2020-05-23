@@ -42,7 +42,7 @@ object utilsMod extends js.Object {
     * Throws if Node.js version is too low to support bigint
     */
   def bigIntAndBufferInt64Check(
-    bufferMethod: readBigInt64BE | readBigInt64LE | readBigUInt64BE | readBigUInt64LE | writeBigInt64BE | writeBigInt64LE | writeBigUInt64BE | writeBigUInt64LE
+    bufferMethod: /* keyof smart-buffer.smart-buffer/typings/utils.Buffer */ readBigInt64BE | readBigInt64LE | readBigUInt64BE | readBigUInt64LE | writeBigInt64BE | writeBigInt64LE | writeBigUInt64BE | writeBigUInt64LE
   ): Unit = js.native
   /**
     * Checks if a given encoding is a valid Buffer encoding. (Throws an exception if check fails)

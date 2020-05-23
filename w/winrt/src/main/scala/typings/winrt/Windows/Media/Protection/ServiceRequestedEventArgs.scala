@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Media.Protection.ServiceRequestedEventArgs")
-@js.native
-class ServiceRequestedEventArgs () extends IServiceRequestedEventArgs {
-  /* CompleteClass */
-  override var completion: MediaProtectionServiceCompletion = js.native
-  /* CompleteClass */
-  override var request: IMediaProtectionServiceRequest = js.native
+trait ServiceRequestedEventArgs extends IServiceRequestedEventArgs
+
+object ServiceRequestedEventArgs {
+  @scala.inline
+  def apply(completion: MediaProtectionServiceCompletion, request: IMediaProtectionServiceRequest): ServiceRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServiceRequestedEventArgs]
+  }
 }
 

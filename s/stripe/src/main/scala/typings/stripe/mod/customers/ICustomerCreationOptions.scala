@@ -1,6 +1,6 @@
 package typings.stripe.mod.customers
 
-import typings.stripe.AnonType
+import typings.stripe.anon.Type
 import typings.stripe.mod.IAddress
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IOptionsMetadata
@@ -91,7 +91,7 @@ trait ICustomerCreationOptions extends IDataOptionsWithMetadata {
   /**
     * The customer’s tax IDs.
     */
-  var tax_id_data: js.UndefOr[js.Array[AnonType]] = js.undefined
+  var tax_id_data: js.UndefOr[js.Array[Type]] = js.undefined
   /**
     * @deprecated
     */
@@ -115,55 +115,55 @@ trait ICustomerCreationOptions extends IDataOptionsWithMetadata {
 object ICustomerCreationOptions {
   @scala.inline
   def apply(
-    account_balance: Int | Double = null,
+    account_balance: js.UndefOr[Double] = js.undefined,
     address: IAddress = null,
-    balance: Int | Double = null,
+    balance: js.UndefOr[Double] = js.undefined,
     coupon: String = null,
     description: String = null,
     email: String = null,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     invoice_prefix: String = null,
-    invoice_settings: ICustomerInvoiceSettings = null,
+    invoice_settings: js.UndefOr[Null | ICustomerInvoiceSettings] = js.undefined,
     metadata: IOptionsMetadata = null,
     name: String = null,
     payment_method: String = null,
     phone: String = null,
     plan: String = null,
     preferred_locales: js.Array[String] = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     shipping: IShippingInformation = null,
     source: String | ICardSourceCreationOptionsExtended = null,
     tax_exempt: none | exempt | reverse = null,
-    tax_id_data: js.Array[AnonType] = null,
+    tax_id_data: js.Array[Type] = null,
     tax_info: js.Any = null,
-    tax_percent: Int | Double = null,
+    tax_percent: js.UndefOr[Double] = js.undefined,
     trial_end: Double | now = null
   ): ICustomerCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
+    if (!js.isUndefined(account_balance)) __obj.updateDynamic("account_balance")(account_balance.get.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
+    if (!js.isUndefined(balance)) __obj.updateDynamic("balance")(balance.get.asInstanceOf[js.Any])
     if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (invoice_prefix != null) __obj.updateDynamic("invoice_prefix")(invoice_prefix.asInstanceOf[js.Any])
-    if (invoice_settings != null) __obj.updateDynamic("invoice_settings")(invoice_settings.asInstanceOf[js.Any])
+    if (!js.isUndefined(invoice_settings)) __obj.updateDynamic("invoice_settings")(invoice_settings.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
     if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
     if (preferred_locales != null) __obj.updateDynamic("preferred_locales")(preferred_locales.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (tax_exempt != null) __obj.updateDynamic("tax_exempt")(tax_exempt.asInstanceOf[js.Any])
     if (tax_id_data != null) __obj.updateDynamic("tax_id_data")(tax_id_data.asInstanceOf[js.Any])
     if (tax_info != null) __obj.updateDynamic("tax_info")(tax_info.asInstanceOf[js.Any])
-    if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax_percent)) __obj.updateDynamic("tax_percent")(tax_percent.get.asInstanceOf[js.Any])
     if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomerCreationOptions]
   }

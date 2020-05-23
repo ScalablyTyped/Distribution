@@ -30,8 +30,8 @@ object EventData {
     record_on_release: js.UndefOr[Boolean] = js.undefined
   ): EventData = {
     val __obj = js.Dynamic.literal(extra_keys = extra_keys.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
-    if (!js.isUndefined(expired)) __obj.updateDynamic("expired")(expired.asInstanceOf[js.Any])
-    if (!js.isUndefined(record_on_release)) __obj.updateDynamic("record_on_release")(record_on_release.asInstanceOf[js.Any])
+    if (!js.isUndefined(expired)) __obj.updateDynamic("expired")(expired.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(record_on_release)) __obj.updateDynamic("record_on_release")(record_on_release.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventData]
   }
 }

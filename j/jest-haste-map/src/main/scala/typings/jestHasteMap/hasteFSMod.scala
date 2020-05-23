@@ -1,5 +1,6 @@
 package typings.jestHasteMap
 
+import typings.jestHasteMap.anon.Files
 import typings.jestTypes.configMod.Glob
 import typings.jestTypes.configMod.Path
 import typings.std.Iterable
@@ -33,7 +34,7 @@ object hasteFSMod extends js.Object {
   
   @js.native
   class default protected () extends HasteFS {
-    def this(hasRootDirFiles: AnonFiles) = this()
+    def this(hasRootDirFiles: Files) = this()
   }
   
 }

@@ -14,7 +14,7 @@ object BlockerConfig {
   def apply(disable: js.Array[String] = null, disableScroll: js.UndefOr[Boolean] = js.undefined): BlockerConfig = {
     val __obj = js.Dynamic.literal()
     if (disable != null) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockerConfig]
   }
 }

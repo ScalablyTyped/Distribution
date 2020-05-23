@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +24,4 @@ trait DataValue extends js.Object {
   def unbind(): Unit = js.native
   def unblockEvent(): Unit = js.native
 }
-
-@JSGlobal("webix.DataValue")
-@js.native
-object DataValue extends TopLevel[DataValueFactory]
 

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`geo-rss`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,8 +36,4 @@ trait GeoRSSLayer
     */
   var url: String = js.native
 }
-
-@JSGlobal("__esri.GeoRSSLayer")
-@js.native
-object GeoRSSLayer extends TopLevel[GeoRSSLayerConstructor]
 

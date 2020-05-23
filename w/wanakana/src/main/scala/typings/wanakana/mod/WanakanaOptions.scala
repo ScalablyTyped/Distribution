@@ -31,10 +31,10 @@ object WanakanaOptions {
     if (IMEMode != null) __obj.updateDynamic("IMEMode")(IMEMode.asInstanceOf[js.Any])
     if (customKanaMapping != null) __obj.updateDynamic("customKanaMapping")(customKanaMapping.asInstanceOf[js.Any])
     if (customRomajiMapping != null) __obj.updateDynamic("customRomajiMapping")(customRomajiMapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(passRomaji)) __obj.updateDynamic("passRomaji")(passRomaji.asInstanceOf[js.Any])
+    if (!js.isUndefined(passRomaji)) __obj.updateDynamic("passRomaji")(passRomaji.get.asInstanceOf[js.Any])
     if (romanization != null) __obj.updateDynamic("romanization")(romanization.asInstanceOf[js.Any])
-    if (!js.isUndefined(upcaseKatakana)) __obj.updateDynamic("upcaseKatakana")(upcaseKatakana.asInstanceOf[js.Any])
-    if (!js.isUndefined(useObsoleteKana)) __obj.updateDynamic("useObsoleteKana")(useObsoleteKana.asInstanceOf[js.Any])
+    if (!js.isUndefined(upcaseKatakana)) __obj.updateDynamic("upcaseKatakana")(upcaseKatakana.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useObsoleteKana)) __obj.updateDynamic("useObsoleteKana")(useObsoleteKana.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WanakanaOptions]
   }
 }

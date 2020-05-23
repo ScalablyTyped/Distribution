@@ -1,10 +1,10 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.AnonBranding
-import typings.stripe.AnonCardpayments
-import typings.stripe.AnonDate
-import typings.stripe.AnonDisabledreason
-import typings.stripe.AnonMcc
+import typings.stripe.anon.Branding
+import typings.stripe.anon.Cardpayments
+import typings.stripe.anon.Date
+import typings.stripe.anon.Disabledreason
+import typings.stripe.anon.Mcc
 import typings.stripe.mod.IList
 import typings.stripe.mod.IMetadata
 import typings.stripe.mod.IResourceObject
@@ -26,7 +26,7 @@ trait IAccount
     * account and their associatedstates. Keys are names of capabilities.
     * You can see the full list here. Values may be active, inactive, or pending.
     */
-  var capabilities: js.UndefOr[AnonCardpayments] = js.undefined
+  var capabilities: js.UndefOr[Cardpayments] = js.undefined
   /**
     * Whether or not the account can create live charges
     */
@@ -94,7 +94,7 @@ trait IAccount
     * information is needed and by when it must be provided.
     * @deprecated
     */
-  var verification: js.UndefOr[AnonDisabledreason] = js.undefined
+  var verification: js.UndefOr[Disabledreason] = js.undefined
 }
 
 object IAccount {
@@ -108,11 +108,11 @@ object IAccount {
     `object`: account,
     payouts_enabled: Boolean,
     `type`: standard | express | custom,
-    business_profile: AnonMcc = null,
+    business_profile: Mcc = null,
     business_type: individual | company = null,
-    capabilities: AnonCardpayments = null,
+    capabilities: Cardpayments = null,
     company: ICompany = null,
-    created: Int | Double = null,
+    created: js.UndefOr[Double] = js.undefined,
     default_currency: String = null,
     email: String = null,
     external_accounts: IList[IExternalAccount] = null,
@@ -121,9 +121,9 @@ object IAccount {
     product_description: String = null,
     requested_capabilities: js.Array[String] = null,
     requirements: IAccountRequirements = null,
-    settings: AnonBranding = null,
-    tos_acceptance: AnonDate = null,
-    verification: AnonDisabledreason = null
+    settings: Branding = null,
+    tos_acceptance: Date = null,
+    verification: Disabledreason = null
   ): IAccount = {
     val __obj = js.Dynamic.literal(charges_enabled = charges_enabled.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], details_submitted = details_submitted.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], payouts_enabled = payouts_enabled.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
@@ -132,7 +132,7 @@ object IAccount {
     if (business_type != null) __obj.updateDynamic("business_type")(business_type.asInstanceOf[js.Any])
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
     if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (!js.isUndefined(created)) __obj.updateDynamic("created")(created.get.asInstanceOf[js.Any])
     if (default_currency != null) __obj.updateDynamic("default_currency")(default_currency.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (external_accounts != null) __obj.updateDynamic("external_accounts")(external_accounts.asInstanceOf[js.Any])

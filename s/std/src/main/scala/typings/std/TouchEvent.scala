@@ -1,7 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,10 +15,4 @@ trait TouchEvent extends UIEvent {
   val targetTouches: TouchList = js.native
   val touches: TouchList = js.native
 }
-
-@JSGlobal("TouchEvent")
-@js.native
-object TouchEvent
-  extends Instantiable1[/* type */ java.lang.String, TouchEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ TouchEventInit, TouchEvent]
 

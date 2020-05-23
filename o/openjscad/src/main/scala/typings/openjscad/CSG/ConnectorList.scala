@@ -4,25 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CSG.ConnectorList")
-@js.native
-class ConnectorList protected () extends js.Object {
-  def this(connectors: js.Array[Connector]) = this()
-  var closed: Boolean = js.native
-  var connectors_ : js.Array[Connector] = js.native
-  def appendConnector(conn: Connector): Unit = js.native
-  def followWith(cagish: js.Any): typings.openjscad.CSG = js.native
-  def setClosed(bool: Boolean): Unit = js.native
-  def verify(): Unit = js.native
+trait ConnectorList extends js.Object {
+  var closed: Boolean
+  var connectors_ : js.Array[Connector]
+  def appendConnector(conn: Connector): Unit
+  def followWith(cagish: js.Any): typings.openjscad.CSG
+  def setClosed(bool: Boolean): Unit
+  def verify(): Unit
 }
 
-/* static members */
-@JSGlobal("CSG.ConnectorList")
-@js.native
-object ConnectorList extends js.Object {
-  var defaultNormal: js.Array[Double] = js.native
-  def _fromPath2DExplicit(path2D: js.Any, angleIsh: js.Any): ConnectorList = js.native
-  def _fromPath2DTangents(path2D: js.Any, start: js.Any, end: js.Any): ConnectorList = js.native
-  def fromPath2D(path2D: Path2D, arg1: js.Any, arg2: js.Any): ConnectorList = js.native
+object ConnectorList {
+  @scala.inline
+  def apply(
+    appendConnector: Connector => Unit,
+    closed: Boolean,
+    connectors_ : js.Array[Connector],
+    followWith: js.Any => typings.openjscad.CSG,
+    setClosed: Boolean => Unit,
+    verify: () => Unit
+  ): ConnectorList = {
+    val __obj = js.Dynamic.literal(appendConnector = js.Any.fromFunction1(appendConnector), closed = closed.asInstanceOf[js.Any], connectors_ = connectors_.asInstanceOf[js.Any], followWith = js.Any.fromFunction1(followWith), setClosed = js.Any.fromFunction1(setClosed), verify = js.Any.fromFunction0(verify))
+    __obj.asInstanceOf[ConnectorList]
+  }
 }
 

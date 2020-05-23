@@ -1,10 +1,10 @@
 package typings.officeJs.Word
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.Word.Interfaces.ListData
 import typings.officeJs.Word.Interfaces.ListLoadOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.After
 import typings.officeJs.officeJsStrings.Arabic
 import typings.officeJs.officeJsStrings.Arrow
@@ -39,9 +39,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.3]
   */
-@JSGlobal("Word.List")
 @js.native
-class List () extends ClientObject {
+trait List extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_List: RequestContext = js.native
@@ -138,8 +137,8 @@ class List () extends ClientObject {
   def load(): List = js.native
   def load(option: String): List = js.native
   def load(option: js.Array[String]): List = js.native
-  def load(option: AnonExpand): List = js.native
   def load(option: ListLoadOptions): List = js.native
+  def load(option: Expand): List = js.native
   /**
     *
     * Sets the alignment of the bullet, number, or picture at the specified level in the list.

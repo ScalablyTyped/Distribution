@@ -17,10 +17,10 @@ trait IndicatorsUpperLine extends js.Object {
 
 object IndicatorsUpperLine {
   @scala.inline
-  def apply(fill: String = null, width: Int | Double = null): IndicatorsUpperLine = {
+  def apply(fill: String = null, width: js.UndefOr[Double] = js.undefined): IndicatorsUpperLine = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicatorsUpperLine]
   }
 }

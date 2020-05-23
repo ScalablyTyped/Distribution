@@ -1,11 +1,11 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.RangeFormatData
 import typings.officeJsPreview.Excel.Interfaces.RangeFormatLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.RangeFormatUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Bottom
 import typings.officeJsPreview.officeJsPreviewStrings.Center
 import typings.officeJsPreview.officeJsPreviewStrings.CenterAcrossSelection
@@ -29,26 +29,25 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.RangeFormat")
 @js.native
-class RangeFormat () extends ClientObject {
+trait RangeFormat extends ClientObject {
   /**
     *
-    * Indicates if text is automatically indented when text alignment is set to equal distribution.
+    * Specifies if text is automatically indented when text alignment is set to equal distribution.
     *
     * [Api set: ExcelApi 1.9]
     */
   var autoIndent: Boolean = js.native
   /**
     *
-    * Collection of border objects that apply to the overall range. Read-only.
+    * Collection of border objects that apply to the overall range.
     *
     * [Api set: ExcelApi 1.1]
     */
   val borders: RangeBorderCollection = js.native
   /**
     *
-    * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
+    * Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -58,14 +57,14 @@ class RangeFormat () extends ClientObject {
   var context_RangeFormat: RequestContext = js.native
   /**
     *
-    * Returns the fill object defined on the overall range. Read-only.
+    * Returns the fill object defined on the overall range.
     *
     * [Api set: ExcelApi 1.1]
     */
   val fill: RangeFill = js.native
   /**
     *
-    * Returns the font object defined on the overall range. Read-only.
+    * Returns the font object defined on the overall range.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -86,7 +85,7 @@ class RangeFormat () extends ClientObject {
   var indentLevel: Double = js.native
   /**
     *
-    * Returns the format protection object for a range. Read-only.
+    * Returns the format protection object for a range.
     *
     * [Api set: ExcelApi 1.2]
     */
@@ -100,21 +99,21 @@ class RangeFormat () extends ClientObject {
   var readingOrder: ReadingOrder | Context | LeftToRight | RightToLeft = js.native
   /**
     *
-    * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+    * The height of all rows in the range. If the row heights are not uniform, null will be returned.
     *
     * [Api set: ExcelApi 1.2]
     */
   var rowHeight: Double = js.native
   /**
     *
-    * Indicates if text automatically shrinks to fit in the available column width.
+    * Specifies if text automatically shrinks to fit in the available column width.
     *
     * [Api set: ExcelApi 1.9]
     */
   var shrinkToFit: Boolean = js.native
   /**
     *
-    * Gets or sets the text orientation of all the cells within the range.
+    * The text orientation of all the cells within the range.
     The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
     If the orientation within a range are not uniform, then null will be returned.
     *
@@ -133,7 +132,7 @@ class RangeFormat () extends ClientObject {
   var useStandardHeight: Boolean = js.native
   /**
     *
-    * Indicates whether the column width of the Range object equals the standard width of the sheet.
+    * Specifies if the column width of the Range object equals the standard width of the sheet.
     Returns True if the column width of the Range object equals the standard width of the sheet.
     Returns Null if the range contains more than one column and the columns aren't all the same height.
     Returns False otherwise.
@@ -150,7 +149,7 @@ class RangeFormat () extends ClientObject {
   var verticalAlignment: VerticalAlignment | Top | Center | Bottom | Justify | Distributed = js.native
   /**
     *
-    * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
+    * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -158,7 +157,7 @@ class RangeFormat () extends ClientObject {
   /**
     * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.11]
     *
     * @param amount The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250.
     **Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
@@ -184,7 +183,7 @@ class RangeFormat () extends ClientObject {
     */
   def load(): RangeFormat = js.native
   def load(options: RangeFormatLoadOptions): RangeFormat = js.native
-  def load(propertyNamesAndPaths: AnonExpand): RangeFormat = js.native
+  def load(propertyNamesAndPaths: Expand): RangeFormat = js.native
   def load(propertyNames: String): RangeFormat = js.native
   def load(propertyNames: js.Array[String]): RangeFormat = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.

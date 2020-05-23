@@ -33,7 +33,7 @@ object SpinnerOptions {
     max: js.Any = null,
     min: js.Any = null,
     numberFormat: String = null,
-    page: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
     spin: (/* event */ JQueryEventObject, SpinnerUIParam) => Unit = null,
     start: (/* event */ JQueryEventObject, js.Object) => Unit = null,
     step: js.Any = null,
@@ -43,13 +43,13 @@ object SpinnerOptions {
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (incremental != null) __obj.updateDynamic("incremental")(incremental.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
     if (spin != null) __obj.updateDynamic("spin")(js.Any.fromFunction2(spin))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])

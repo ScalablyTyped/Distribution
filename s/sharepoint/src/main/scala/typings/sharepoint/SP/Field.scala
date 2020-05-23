@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Field")
 @js.native
-class Field () extends ClientObject {
+trait Field extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_canBeDeleted(): Boolean = js.native
   def get_defaultValue(): String = js.native

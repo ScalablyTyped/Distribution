@@ -1,6 +1,7 @@
 package typings.authmosphere
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.authmosphere.anon.Token
 import typings.authmosphere.getTokenInfoMod.GetTokenInfo
 import typings.authmosphere.loggerMod.Logger
 import typings.authmosphere.oauthconfigMod.OAuthConfig

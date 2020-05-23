@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the TokenBox and TokenBoxFor extensions.
   */
-@JSGlobal("MVCxClientTokenBox")
 @js.native
-class MVCxClientTokenBox () extends ASPxClientTokenBox {
+trait MVCxClientTokenBox extends ASPxClientTokenBox {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -22,16 +21,5 @@ class MVCxClientTokenBox () extends ASPxClientTokenBox {
     */
   def PerformCallback(data: js.Any): Unit = js.native
   def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientTokenBox")
-@js.native
-object MVCxClientTokenBox extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientTokenBox type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientTokenBox = js.native
 }
 

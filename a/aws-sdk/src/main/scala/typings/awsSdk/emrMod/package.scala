@@ -86,6 +86,13 @@ package object emrMod {
     - java.lang.String
   */
   type ComparisonOperator = typings.awsSdk.emrMod._ComparisonOperator | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.InstanceFleetUnits
+    - typings.awsSdk.awsSdkStrings.Instances
+    - typings.awsSdk.awsSdkStrings.VCPU
+    - java.lang.String
+  */
+  type ComputeLimitsUnitType = typings.awsSdk.emrMod._ComputeLimitsUnitType | java.lang.String
   type ConfigurationList = js.Array[typings.awsSdk.emrMod.Configuration]
   type Date = typings.std.Date
   type EC2InstanceIdsList = js.Array[typings.awsSdk.emrMod.InstanceId]

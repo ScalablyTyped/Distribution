@@ -28,7 +28,7 @@ object CallFunctionParam {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(slow)) __obj.updateDynamic("slow")(slow.asInstanceOf[js.Any])
+    if (!js.isUndefined(slow)) __obj.updateDynamic("slow")(slow.get.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[CallFunctionParam]
   }

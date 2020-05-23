@@ -1,6 +1,5 @@
 package typings.twemojiParser.mod
 
-import typings.twemojiParser.twemojiParserStrings.emoji
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ trait EmojiEntity extends js.Object {
   /**
     * @default 'emoji'
     */
-  var `type`: emoji
+  var `type`: /* "emoji" */ String
   /**
     * @default ''
     */
@@ -23,7 +22,7 @@ trait EmojiEntity extends js.Object {
 
 object EmojiEntity {
   @scala.inline
-  def apply(indices: js.Tuple2[Double, Double], text: String, `type`: emoji, url: String): EmojiEntity = {
+  def apply(indices: js.Tuple2[Double, Double], text: String, `type`: /* "emoji" */ String, url: String): EmojiEntity = {
     val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmojiEntity]

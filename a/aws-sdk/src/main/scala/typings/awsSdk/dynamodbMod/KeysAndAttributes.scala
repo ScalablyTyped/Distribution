@@ -33,13 +33,13 @@ object KeysAndAttributes {
   def apply(
     Keys: KeyList,
     AttributesToGet: AttributeNameList = null,
-    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
+    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
     ExpressionAttributeNames: ExpressionAttributeNameMap = null,
     ProjectionExpression: ProjectionExpression = null
   ): KeysAndAttributes = {
     val __obj = js.Dynamic.literal(Keys = Keys.asInstanceOf[js.Any])
     if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.get.asInstanceOf[js.Any])
     if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
     if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeysAndAttributes]

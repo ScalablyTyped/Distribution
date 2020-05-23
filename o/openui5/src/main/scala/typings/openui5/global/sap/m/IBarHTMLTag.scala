@@ -1,0 +1,19 @@
+package typings.openui5.global.sap.m
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Allowed tags for the implementation of the IBar interface.
+  */
+@JSGlobal("sap.m.IBarHTMLTag")
+@js.native
+object IBarHTMLTag extends js.Object {
+  /* 0 */ val Div: typings.openui5.sap.m.IBarHTMLTag.Div with Double = js.native
+  /* 1 */ val Footer: typings.openui5.sap.m.IBarHTMLTag.Footer with Double = js.native
+  /* 2 */ val Header: typings.openui5.sap.m.IBarHTMLTag.Header with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.IBarHTMLTag with Double] = js.native
+}
+

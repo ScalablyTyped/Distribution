@@ -21,6 +21,35 @@ class HubSection ()
   extends typings.winjs.WinJS.UI.HubSection {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: js.Any) = this()
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets the DOM element that hosts the HubSection control's content.
+    **/
+  /* CompleteClass */
+  override var contentElement: HTMLElement = js.native
+  /**
+    * Gets the DOM element that hosts this HubSection.
+    **/
+  /* CompleteClass */
+  override var element: HTMLElement = js.native
+  /**
+    * Gets or sets the header for this HubSection.
+    **/
+  /* CompleteClass */
+  override var header: String = js.native
+  /**
+    * Gets a value that specifies whether the header is static.
+    **/
+  /* CompleteClass */
+  override var isHeaderStatic: Boolean = js.native
+  //#endregion Constructors
+  //#region Methods
+  /**
+    * Releases resources held by this HubSection. Call this method when the HubSection is no longer needed. After calling this method, the HubSection becomes unusable.
+    **/
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
 }
 
 /* static members */

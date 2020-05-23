@@ -17,14 +17,14 @@ object SpinnerConfig {
   def apply(
     dur: Double,
     fn: (Double, Double, Double) => SpinnerData,
-    circles: Int | Double = null,
+    circles: js.UndefOr[Double] = js.undefined,
     elmDuration: js.UndefOr[Boolean] = js.undefined,
-    lines: Int | Double = null
+    lines: js.UndefOr[Double] = js.undefined
   ): SpinnerConfig = {
     val __obj = js.Dynamic.literal(dur = dur.asInstanceOf[js.Any], fn = js.Any.fromFunction3(fn))
-    if (circles != null) __obj.updateDynamic("circles")(circles.asInstanceOf[js.Any])
-    if (!js.isUndefined(elmDuration)) __obj.updateDynamic("elmDuration")(elmDuration.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (!js.isUndefined(circles)) __obj.updateDynamic("circles")(circles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(elmDuration)) __obj.updateDynamic("elmDuration")(elmDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lines)) __obj.updateDynamic("lines")(lines.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerConfig]
   }
 }

@@ -21,7 +21,7 @@ object DownloadButtonDescriptor {
   ): DownloadButtonDescriptor = {
     val __obj = js.Dynamic.literal(downloadUrl = downloadUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
     if (downloadFilename != null) __obj.updateDynamic("downloadFilename")(downloadFilename.asInstanceOf[js.Any])
-    if (!js.isUndefined(openInNewTab)) __obj.updateDynamic("openInNewTab")(openInNewTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(openInNewTab)) __obj.updateDynamic("openInNewTab")(openInNewTab.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadButtonDescriptor]
   }
 }

@@ -19,13 +19,13 @@ object WorkerOptions {
     connection: ConnectionOptions = null,
     looping: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): WorkerOptions = {
     val __obj = js.Dynamic.literal(queues = queues.asInstanceOf[js.Any])
     if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (!js.isUndefined(looping)) __obj.updateDynamic("looping")(looping.asInstanceOf[js.Any])
+    if (!js.isUndefined(looping)) __obj.updateDynamic("looping")(looping.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerOptions]
   }
 }

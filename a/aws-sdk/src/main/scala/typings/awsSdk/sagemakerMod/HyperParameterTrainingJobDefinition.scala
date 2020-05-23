@@ -69,9 +69,9 @@ object HyperParameterTrainingJobDefinition {
     StoppingCondition: StoppingCondition,
     CheckpointConfig: CheckpointConfig = null,
     DefinitionName: HyperParameterTrainingJobDefinitionName = null,
-    EnableInterContainerTrafficEncryption: js.UndefOr[scala.Boolean] = js.undefined,
-    EnableManagedSpotTraining: js.UndefOr[scala.Boolean] = js.undefined,
-    EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined,
+    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
+    EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined,
+    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
     HyperParameterRanges: ParameterRanges = null,
     InputDataConfig: InputDataConfig = null,
     StaticHyperParameters: HyperParameters = null,
@@ -81,9 +81,9 @@ object HyperParameterTrainingJobDefinition {
     val __obj = js.Dynamic.literal(AlgorithmSpecification = AlgorithmSpecification.asInstanceOf[js.Any], OutputDataConfig = OutputDataConfig.asInstanceOf[js.Any], ResourceConfig = ResourceConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any])
     if (CheckpointConfig != null) __obj.updateDynamic("CheckpointConfig")(CheckpointConfig.asInstanceOf[js.Any])
     if (DefinitionName != null) __obj.updateDynamic("DefinitionName")(DefinitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.get.asInstanceOf[js.Any])
     if (HyperParameterRanges != null) __obj.updateDynamic("HyperParameterRanges")(HyperParameterRanges.asInstanceOf[js.Any])
     if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])
     if (StaticHyperParameters != null) __obj.updateDynamic("StaticHyperParameters")(StaticHyperParameters.asInstanceOf[js.Any])

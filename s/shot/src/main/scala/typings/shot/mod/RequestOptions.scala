@@ -2,7 +2,7 @@ package typings.shot.mod
 
 import typings.node.Buffer
 import typings.node.streamMod.Stream
-import typings.shot.AnonClose
+import typings.shot.anon.Close
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait RequestOptions extends js.Object {
   /** an optional string specifying the client remote address. Defaults to '127.0.0.1'. */
   var remoteAddress: js.UndefOr[String] = js.undefined
   /** an object containing flags to simulate various conditions: */
-  var simulate: js.UndefOr[AnonClose] = js.undefined
+  var simulate: js.UndefOr[Close] = js.undefined
   /** a string specifying the request URL. */
   var url: String
   /** Optional flag to validate this options object. Defaults to true. */
@@ -35,7 +35,7 @@ object RequestOptions {
     method: String = null,
     payload: String | Buffer | Stream | js.Object = null,
     remoteAddress: String = null,
-    simulate: AnonClose = null,
+    simulate: Close = null,
     validate: js.UndefOr[Boolean] = js.undefined
   ): RequestOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object RequestOptions {
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress.asInstanceOf[js.Any])
     if (simulate != null) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

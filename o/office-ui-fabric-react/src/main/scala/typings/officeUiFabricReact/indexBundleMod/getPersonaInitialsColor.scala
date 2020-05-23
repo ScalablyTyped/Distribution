@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.PickIPersonaPropsprimaryT
+import typings.officeUiFabricReact.anon.PickIPersonaPropsprimaryT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

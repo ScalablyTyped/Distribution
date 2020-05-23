@@ -16,16 +16,15 @@ object ContentRangeFormatOptions {
   @scala.inline
   def apply(
     unit: String,
-    first: Int | Double = null,
-    last: Int | Double = null,
-    length: Int | Double = null,
-    limit: Int | Double = null
+    first: js.UndefOr[Double] = js.undefined,
+    last: js.UndefOr[Double] = js.undefined,
+    length: Double = null.asInstanceOf[Double],
+    limit: js.UndefOr[Double] = js.undefined
   ): ContentRangeFormatOptions = {
-    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
-    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
-    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentRangeFormatOptions]
   }
 }

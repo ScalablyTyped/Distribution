@@ -22,10 +22,14 @@ trait ListNamespacesRequest extends js.Object {
 
 object ListNamespacesRequest {
   @scala.inline
-  def apply(Filters: NamespaceFilters = null, MaxResults: Int | Double = null, NextToken: NextToken = null): ListNamespacesRequest = {
+  def apply(
+    Filters: NamespaceFilters = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: NextToken = null
+  ): ListNamespacesRequest = {
     val __obj = js.Dynamic.literal()
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNamespacesRequest]
   }

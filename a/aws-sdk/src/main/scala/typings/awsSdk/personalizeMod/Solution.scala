@@ -70,8 +70,8 @@ object Solution {
     lastUpdatedDateTime: Date = null,
     latestSolutionVersion: SolutionVersionSummary = null,
     name: Name = null,
-    performAutoML: js.UndefOr[scala.Boolean] = js.undefined,
-    performHPO: js.UndefOr[scala.Boolean] = js.undefined,
+    performAutoML: js.UndefOr[PerformAutoML] = js.undefined,
+    performHPO: js.UndefOr[PerformHPO] = js.undefined,
     recipeArn: Arn = null,
     solutionArn: Arn = null,
     solutionConfig: SolutionConfig = null,
@@ -85,8 +85,8 @@ object Solution {
     if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
     if (latestSolutionVersion != null) __obj.updateDynamic("latestSolutionVersion")(latestSolutionVersion.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(performAutoML)) __obj.updateDynamic("performAutoML")(performAutoML.asInstanceOf[js.Any])
-    if (!js.isUndefined(performHPO)) __obj.updateDynamic("performHPO")(performHPO.asInstanceOf[js.Any])
+    if (!js.isUndefined(performAutoML)) __obj.updateDynamic("performAutoML")(performAutoML.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(performHPO)) __obj.updateDynamic("performHPO")(performHPO.get.asInstanceOf[js.Any])
     if (recipeArn != null) __obj.updateDynamic("recipeArn")(recipeArn.asInstanceOf[js.Any])
     if (solutionArn != null) __obj.updateDynamic("solutionArn")(solutionArn.asInstanceOf[js.Any])
     if (solutionConfig != null) __obj.updateDynamic("solutionConfig")(solutionConfig.asInstanceOf[js.Any])

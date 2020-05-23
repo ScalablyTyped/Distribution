@@ -19,7 +19,7 @@ object TreeNode {
   @scala.inline
   def apply[T](
     label: (js.Function1[/* node */ TreeNode[_], ReactNode]) | String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     children: js.Array[TreeNode[_]] = null,
     id: Double | String = null,
     info: T = null,
@@ -30,7 +30,7 @@ object TreeNode {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeNode[T]]
   }
 }

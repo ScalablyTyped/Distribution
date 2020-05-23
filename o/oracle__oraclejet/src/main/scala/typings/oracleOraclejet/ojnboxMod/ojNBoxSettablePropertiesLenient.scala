@@ -1,9 +1,9 @@
 package typings.oracleOraclejet.ojnboxMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.oracleOraclejet.Anon13
-import typings.oracleOraclejet.AnonCellDefaults
-import typings.oracleOraclejet.AnonHighlightedCount
+import typings.oracleOraclejet.anon.CellDefaults
+import typings.oracleOraclejet.anon.HighlightedCount
+import typings.oracleOraclejet.anon.`13`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojnboxMod.ojNBox.Cell
 import typings.oracleOraclejet.ojnboxMod.ojNBox.Column
@@ -62,17 +62,17 @@ trait ojNBoxSettablePropertiesLenient[K, D]
   var rowsTitle: js.UndefOr[String] = js.undefined
   var selection: js.UndefOr[js.Array[K]] = js.undefined
   var selectionMode: js.UndefOr[none | single | multiple] = js.undefined
-  var styleDefaults: js.UndefOr[AnonCellDefaults] = js.undefined
-  var tooltip: js.UndefOr[Anon13[K]] = js.undefined
+  var styleDefaults: js.UndefOr[CellDefaults] = js.undefined
+  var tooltip: js.UndefOr[`13`[K]] = js.undefined
   var touchResponse: js.UndefOr[touchStart | auto] = js.undefined
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonHighlightedCount] = js.undefined
+  var translations: js.UndefOr[HighlightedCount] = js.undefined
 }
 
 object ojNBoxSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     animationOnDataChange: auto | none = null,
     animationOnDisplay: auto | none = null,
     as: String = null,
@@ -93,16 +93,16 @@ object ojNBoxSettablePropertiesLenient {
     maximizedColumn: String = null,
     maximizedRow: String = null,
     otherColor: String = null,
-    otherThreshold: Int | Double = null,
+    otherThreshold: js.UndefOr[Double] = js.undefined,
     rows: js.Array[Row] | js.Promise[js.Array[Row]] = null,
     rowsTitle: String = null,
     selection: js.Array[K] = null,
     selectionMode: none | single | multiple = null,
-    styleDefaults: AnonCellDefaults = null,
-    tooltip: Anon13[K] = null,
+    styleDefaults: CellDefaults = null,
+    tooltip: `13`[K] = null,
     touchResponse: touchStart | auto = null,
     trackResize: on | off = null,
-    translations: AnonHighlightedCount = null
+    translations: HighlightedCount = null
   ): ojNBoxSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -126,7 +126,7 @@ object ojNBoxSettablePropertiesLenient {
     if (maximizedColumn != null) __obj.updateDynamic("maximizedColumn")(maximizedColumn.asInstanceOf[js.Any])
     if (maximizedRow != null) __obj.updateDynamic("maximizedRow")(maximizedRow.asInstanceOf[js.Any])
     if (otherColor != null) __obj.updateDynamic("otherColor")(otherColor.asInstanceOf[js.Any])
-    if (otherThreshold != null) __obj.updateDynamic("otherThreshold")(otherThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(otherThreshold)) __obj.updateDynamic("otherThreshold")(otherThreshold.get.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (rowsTitle != null) __obj.updateDynamic("rowsTitle")(rowsTitle.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])

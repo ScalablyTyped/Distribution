@@ -55,7 +55,7 @@ object FillExtrusionPaint {
     if (`fill-extrusion-translate` != null) __obj.updateDynamic("fill-extrusion-translate")(`fill-extrusion-translate`.asInstanceOf[js.Any])
     if (`fill-extrusion-translate-anchor` != null) __obj.updateDynamic("fill-extrusion-translate-anchor")(`fill-extrusion-translate-anchor`.asInstanceOf[js.Any])
     if (`fill-extrusion-translate-transition` != null) __obj.updateDynamic("fill-extrusion-translate-transition")(`fill-extrusion-translate-transition`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`fill-extrusion-vertical-gradient`)) __obj.updateDynamic("fill-extrusion-vertical-gradient")(`fill-extrusion-vertical-gradient`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`fill-extrusion-vertical-gradient`)) __obj.updateDynamic("fill-extrusion-vertical-gradient")(`fill-extrusion-vertical-gradient`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillExtrusionPaint]
   }
 }

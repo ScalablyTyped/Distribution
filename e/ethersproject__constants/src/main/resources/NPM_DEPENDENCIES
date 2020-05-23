@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/constants" : "5.0.0-beta.134"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/constants" : "5.0.0-beta.134"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

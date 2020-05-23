@@ -19,10 +19,10 @@ object ActionOverride {
     isAvailableInTouch: Boolean,
     name: String,
     pageId: String,
-    url: maybe[String] = null
+    url: js.UndefOr[Null | maybe[String]] = js.undefined
   ): ActionOverride = {
     val __obj = js.Dynamic.literal(formFactor = formFactor.asInstanceOf[js.Any], isAvailableInTouch = isAvailableInTouch.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pageId = pageId.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionOverride]
   }
 }

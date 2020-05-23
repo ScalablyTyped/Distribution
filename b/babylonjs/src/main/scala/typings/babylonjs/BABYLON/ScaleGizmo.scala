@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.ScaleGizmo")
 @js.native
-/**
-  * Creates a ScaleGizmo
-  * @param gizmoLayer The utility layer the gizmo will be added to
-  */
-class ScaleGizmo () extends Gizmo {
-  def this(gizmoLayer: UtilityLayerRenderer) = this()
+trait ScaleGizmo extends Gizmo {
   var _meshAttached: js.Any = js.native
   var _octahedron: js.Any = js.native
   var _scaleRatio: js.Any = js.native

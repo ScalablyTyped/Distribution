@@ -1,6 +1,6 @@
 package typings.inquirer.mod
 
-import typings.inquirer.AnonIsFinal
+import typings.inquirer.anon.IsFinal
 import typings.inquirer.inquirerStrings.input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,14 +22,14 @@ trait InputQuestion[T /* <: Answers */] extends InputQuestionOptions[T] {
 
 object InputQuestion {
   @scala.inline
-  def apply[T /* <: Answers */](
+  def apply[T](
     default: AsyncDynamicQuestionProperty[_, T] = null,
     filter: /* input */ js.Any => _ = null,
     message: AsyncDynamicQuestionProperty[String, T] = null,
     name: KeyUnion[T] = null,
     prefix: String = null,
     suffix: String = null,
-    transformer: (/* input */ js.Any, T, /* flags */ AnonIsFinal) => String | js.Promise[String] = null,
+    transformer: (/* input */ js.Any, T, /* flags */ IsFinal) => String | js.Promise[String] = null,
     `type`: input = null,
     validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String]) = null,
     when: AsyncDynamicQuestionProperty[Boolean, T] = null

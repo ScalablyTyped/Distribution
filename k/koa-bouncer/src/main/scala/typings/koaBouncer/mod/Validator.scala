@@ -1,6 +1,6 @@
 package typings.koaBouncer.mod
 
-import typings.koaBouncer.AnonCtx
+import typings.koaBouncer.anon.Ctx
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("koa-bouncer", "Validator")
 @js.native
 class Validator protected () extends js.Object {
-  def this(props: AnonCtx) = this()
+  def this(props: Ctx) = this()
   def check(result: js.Any): Validator = js.native
   def check(result: js.Any, tip: String): Validator = js.native
   def checkNot(result: js.Any): Validator = js.native

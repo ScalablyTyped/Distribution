@@ -12,7 +12,7 @@ object IBuildColumnsOptions {
   @scala.inline
   def apply(orderByColumnDefs: js.UndefOr[Boolean] = js.undefined): IBuildColumnsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(orderByColumnDefs)) __obj.updateDynamic("orderByColumnDefs")(orderByColumnDefs.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderByColumnDefs)) __obj.updateDynamic("orderByColumnDefs")(orderByColumnDefs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBuildColumnsOptions]
   }
 }

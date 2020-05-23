@@ -33,7 +33,7 @@ object Configuration {
     transforms: StringDictionary[TransformFunction] = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DEBUG)) __obj.updateDynamic("DEBUG")(DEBUG.asInstanceOf[js.Any])
+    if (!js.isUndefined(DEBUG)) __obj.updateDynamic("DEBUG")(DEBUG.get.asInstanceOf[js.Any])
     if (matchWord != null) __obj.updateDynamic("matchWord")(matchWord.asInstanceOf[js.Any])
     if (outputDir != null) __obj.updateDynamic("outputDir")(outputDir.asInstanceOf[js.Any])
     if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])

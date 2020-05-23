@@ -30,22 +30,22 @@ object SharedStatelessProps {
     activedescendantId: String = null,
     focusMenu: /* event */ FocusEvent | MouseEvent | KeyboardEvent => _ = null,
     getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => RenderItemProps = null,
-    highlightedIndex: Int | Double = null,
+    highlightedIndex: js.UndefOr[Double] = js.undefined,
     noResultsMsg: ReactNode = null,
     onBlur: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _ = null,
     onFocus: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _ = null,
-    rootRef: Ref[_] = null,
+    rootRef: js.UndefOr[Null | Ref[_]] = js.undefined,
     unfocusMenu: () => _ = null
   ): SharedStatelessProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     if (activedescendantId != null) __obj.updateDynamic("activedescendantId")(activedescendantId.asInstanceOf[js.Any])
     if (focusMenu != null) __obj.updateDynamic("focusMenu")(js.Any.fromFunction1(focusMenu))
     if (getRequiredItemProps != null) __obj.updateDynamic("getRequiredItemProps")(js.Any.fromFunction2(getRequiredItemProps))
-    if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightedIndex)) __obj.updateDynamic("highlightedIndex")(highlightedIndex.get.asInstanceOf[js.Any])
     if (noResultsMsg != null) __obj.updateDynamic("noResultsMsg")(noResultsMsg.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (rootRef != null) __obj.updateDynamic("rootRef")(rootRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootRef)) __obj.updateDynamic("rootRef")(rootRef.asInstanceOf[js.Any])
     if (unfocusMenu != null) __obj.updateDynamic("unfocusMenu")(js.Any.fromFunction0(unfocusMenu))
     __obj.asInstanceOf[SharedStatelessProps]
   }

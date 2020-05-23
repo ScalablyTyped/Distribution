@@ -50,7 +50,7 @@ object Account {
     youtubeChannelLinks: js.Array[AccountYouTubeChannelLink] = null
   ): Account = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adultContent)) __obj.updateDynamic("adultContent")(adultContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(adultContent)) __obj.updateDynamic("adultContent")(adultContent.get.asInstanceOf[js.Any])
     if (adwordsLinks != null) __obj.updateDynamic("adwordsLinks")(adwordsLinks.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

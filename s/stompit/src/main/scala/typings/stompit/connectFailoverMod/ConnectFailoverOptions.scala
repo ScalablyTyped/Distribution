@@ -37,21 +37,21 @@ object ConnectFailoverOptions {
     connectFunction: (/* options */ ConnectOptions, /* connectionListener */ js.UndefOr[
       js.Function2[/* err */ Error | Null, /* client */ typings.stompit.clientMod.^, Unit]
     ]) => typings.stompit.clientMod.^ = null,
-    initialReconnectDelay: Int | Double = null,
-    maxReconnectDelay: Int | Double = null,
-    maxReconnects: Int | Double = null,
+    initialReconnectDelay: js.UndefOr[Double] = js.undefined,
+    maxReconnectDelay: js.UndefOr[Double] = js.undefined,
+    maxReconnects: js.UndefOr[Double] = js.undefined,
     randomize: js.UndefOr[Boolean] = js.undefined,
-    reconnectDelayExponent: Int | Double = null,
+    reconnectDelayExponent: js.UndefOr[Double] = js.undefined,
     useExponentialBackOff: js.UndefOr[Boolean] = js.undefined
   ): ConnectFailoverOptions = {
     val __obj = js.Dynamic.literal()
     if (connectFunction != null) __obj.updateDynamic("connectFunction")(js.Any.fromFunction2(connectFunction))
-    if (initialReconnectDelay != null) __obj.updateDynamic("initialReconnectDelay")(initialReconnectDelay.asInstanceOf[js.Any])
-    if (maxReconnectDelay != null) __obj.updateDynamic("maxReconnectDelay")(maxReconnectDelay.asInstanceOf[js.Any])
-    if (maxReconnects != null) __obj.updateDynamic("maxReconnects")(maxReconnects.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.asInstanceOf[js.Any])
-    if (reconnectDelayExponent != null) __obj.updateDynamic("reconnectDelayExponent")(reconnectDelayExponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExponentialBackOff)) __obj.updateDynamic("useExponentialBackOff")(useExponentialBackOff.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialReconnectDelay)) __obj.updateDynamic("initialReconnectDelay")(initialReconnectDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReconnectDelay)) __obj.updateDynamic("maxReconnectDelay")(maxReconnectDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxReconnects)) __obj.updateDynamic("maxReconnects")(maxReconnects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectDelayExponent)) __obj.updateDynamic("reconnectDelayExponent")(reconnectDelayExponent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExponentialBackOff)) __obj.updateDynamic("useExponentialBackOff")(useExponentialBackOff.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectFailoverOptions]
   }
 }

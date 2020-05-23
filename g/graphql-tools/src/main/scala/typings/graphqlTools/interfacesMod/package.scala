@@ -28,7 +28,7 @@ package object interfacesMod {
     /* source */ TSource, 
     /* args */ TArgs, 
     /* context */ TContext, 
-    /* info */ typings.graphqlTools.GraphQLResolveInfomergeIn, 
+    /* info */ typings.graphqlTools.anon.GraphQLResolveInfomergeIn, 
     js.Any
   ]
   type IMockFn = typings.graphql.definitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]

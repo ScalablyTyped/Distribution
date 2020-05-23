@@ -55,24 +55,24 @@ object Metadata {
   @scala.inline
   def apply(
     name: String,
-    byteSize: Int | Double = null,
-    dbType: Int | Double = null,
+    byteSize: js.UndefOr[Double] = js.undefined,
+    dbType: js.UndefOr[Double] = js.undefined,
     dbTypeClass: DBObjectClass = null,
     dbTypeName: String = null,
-    fetchType: Int | Double = null,
+    fetchType: js.UndefOr[Double] = js.undefined,
     nullable: js.UndefOr[Boolean] = js.undefined,
-    precision: Int | Double = null,
-    scale: Int | Double = null
+    precision: js.UndefOr[Double] = js.undefined,
+    scale: js.UndefOr[Double] = js.undefined
   ): Metadata = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (byteSize != null) __obj.updateDynamic("byteSize")(byteSize.asInstanceOf[js.Any])
-    if (dbType != null) __obj.updateDynamic("dbType")(dbType.asInstanceOf[js.Any])
+    if (!js.isUndefined(byteSize)) __obj.updateDynamic("byteSize")(byteSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dbType)) __obj.updateDynamic("dbType")(dbType.get.asInstanceOf[js.Any])
     if (dbTypeClass != null) __obj.updateDynamic("dbTypeClass")(dbTypeClass.asInstanceOf[js.Any])
     if (dbTypeName != null) __obj.updateDynamic("dbTypeName")(dbTypeName.asInstanceOf[js.Any])
-    if (fetchType != null) __obj.updateDynamic("fetchType")(fetchType.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchType)) __obj.updateDynamic("fetchType")(fetchType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
 }

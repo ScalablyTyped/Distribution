@@ -4,7 +4,6 @@ import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityStates
 import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -25,12 +24,11 @@ import typings.reactNative.reactNativeStrings.polite
 import typings.reactNative.reactNativeStrings.radiobutton_checked
 import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
-import typings.reactNativeChartsWrapper.AnonAxisDependency
-import typings.reactNativeChartsWrapper.AnonDataIndex
-import typings.reactNativeChartsWrapper.AnonDigits
-import typings.reactNativeChartsWrapper.AnonDurationX
-import typings.reactNativeChartsWrapper.AnonRight
-import typings.reactNativeChartsWrapper.AnonX
+import typings.reactNativeChartsWrapper.anon.DataIndex
+import typings.reactNativeChartsWrapper.anon.Digits
+import typings.reactNativeChartsWrapper.anon.DurationX
+import typings.reactNativeChartsWrapper.anon.Right
+import typings.reactNativeChartsWrapper.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,32 +49,31 @@ object ScatterChartProps {
     accessibilityLiveRegion: none | polite | assertive = null,
     accessibilityRole: AccessibilityRole = null,
     accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     accessibilityValue: AccessibilityValue = null,
     accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     accessible: js.UndefOr[Boolean] = js.undefined,
-    animation: AnonDurationX = null,
+    animation: DurationX = null,
     autoScaleMinMaxEnabled: js.UndefOr[Boolean] = js.undefined,
-    borderColor: Int | Double = null,
-    borderWidth: Int | Double = null,
-    chartBackgroundColor: Int | Double = null,
+    borderColor: js.UndefOr[Color] = js.undefined,
+    borderWidth: js.UndefOr[Double] = js.undefined,
+    chartBackgroundColor: js.UndefOr[Color] = js.undefined,
     chartDescription: ChartDescription = null,
     collapsable: js.UndefOr[Boolean] = js.undefined,
     data: ScatterData = null,
     doubleTapToZoomEnabled: js.UndefOr[Boolean] = js.undefined,
     dragDecelerationEnabled: js.UndefOr[Boolean] = js.undefined,
-    dragDecelerationFrictionCoef: Int | Double = null,
+    dragDecelerationFrictionCoef: js.UndefOr[Double] = js.undefined,
     dragEnabled: js.UndefOr[Boolean] = js.undefined,
     drawBorders: js.UndefOr[Boolean] = js.undefined,
     drawGridBackground: js.UndefOr[Boolean] = js.undefined,
     extraOffsets: Offsets = null,
-    gridBackgroundColor: Int | Double = null,
+    gridBackgroundColor: js.UndefOr[Double] = js.undefined,
     group: String = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     highlightPerDragEnabled: js.UndefOr[Boolean] = js.undefined,
     highlightPerTapEnabled: js.UndefOr[Boolean] = js.undefined,
-    highlights: js.Array[AnonDataIndex] = null,
+    highlights: js.Array[DataIndex] = null,
     hitSlop: Insets = null,
     identifier: String = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
@@ -84,10 +81,10 @@ object ScatterChartProps {
     keepPositionOnRotation: js.UndefOr[Boolean] = js.undefined,
     legend: ChartLegend = null,
     logEnabled: js.UndefOr[Boolean] = js.undefined,
-    marker: AnonDigits = null,
-    maxHighlightDistance: Int | Double = null,
-    maxVisibleValueCount: Int | Double = null,
-    minOffset: Int | Double = null,
+    marker: Digits = null,
+    maxHighlightDistance: js.UndefOr[Double] = js.undefined,
+    maxVisibleValueCount: js.UndefOr[Double] = js.undefined,
+    minOffset: js.UndefOr[Double] = js.undefined,
     nativeID: String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     noDataText: String = null,
@@ -123,71 +120,70 @@ object ScatterChartProps {
     scaleXEnabled: js.UndefOr[Boolean] = js.undefined,
     scaleYEnabled: js.UndefOr[Boolean] = js.undefined,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     syncX: js.UndefOr[Boolean] = js.undefined,
     syncY: js.UndefOr[Boolean] = js.undefined,
     testID: String = null,
     touchEnabled: js.UndefOr[Boolean] = js.undefined,
-    tvParallaxMagnification: Int | Double = null,
+    tvParallaxMagnification: js.UndefOr[Double] = js.undefined,
     tvParallaxProperties: TVParallaxProperties = null,
-    tvParallaxShiftDistanceX: Int | Double = null,
-    tvParallaxShiftDistanceY: Int | Double = null,
-    tvParallaxTiltAngle: Int | Double = null,
+    tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined,
+    tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined,
+    tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined,
     viewPortOffsets: Offsets = null,
-    visibleRange: AnonX = null,
+    visibleRange: X = null,
     xAxis: xAxis = null,
-    yAxis: AnonRight = null,
-    zoom: AnonAxisDependency = null
+    yAxis: Right = null,
+    zoom: typings.reactNativeChartsWrapper.anon.AxisDependency = null
   ): ScatterChartProps = {
     val __obj = js.Dynamic.literal()
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.get.asInstanceOf[js.Any])
     if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.get.asInstanceOf[js.Any])
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
     if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
     if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScaleMinMaxEnabled)) __obj.updateDynamic("autoScaleMinMaxEnabled")(autoScaleMinMaxEnabled.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (chartBackgroundColor != null) __obj.updateDynamic("chartBackgroundColor")(chartBackgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoScaleMinMaxEnabled)) __obj.updateDynamic("autoScaleMinMaxEnabled")(autoScaleMinMaxEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderColor)) __obj.updateDynamic("borderColor")(borderColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartBackgroundColor)) __obj.updateDynamic("chartBackgroundColor")(chartBackgroundColor.get.asInstanceOf[js.Any])
     if (chartDescription != null) __obj.updateDynamic("chartDescription")(chartDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.get.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleTapToZoomEnabled)) __obj.updateDynamic("doubleTapToZoomEnabled")(doubleTapToZoomEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragDecelerationEnabled)) __obj.updateDynamic("dragDecelerationEnabled")(dragDecelerationEnabled.asInstanceOf[js.Any])
-    if (dragDecelerationFrictionCoef != null) __obj.updateDynamic("dragDecelerationFrictionCoef")(dragDecelerationFrictionCoef.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragEnabled)) __obj.updateDynamic("dragEnabled")(dragEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawBorders)) __obj.updateDynamic("drawBorders")(drawBorders.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawGridBackground)) __obj.updateDynamic("drawGridBackground")(drawGridBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleTapToZoomEnabled)) __obj.updateDynamic("doubleTapToZoomEnabled")(doubleTapToZoomEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragDecelerationEnabled)) __obj.updateDynamic("dragDecelerationEnabled")(dragDecelerationEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragDecelerationFrictionCoef)) __obj.updateDynamic("dragDecelerationFrictionCoef")(dragDecelerationFrictionCoef.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragEnabled)) __obj.updateDynamic("dragEnabled")(dragEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawBorders)) __obj.updateDynamic("drawBorders")(drawBorders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawGridBackground)) __obj.updateDynamic("drawGridBackground")(drawGridBackground.get.asInstanceOf[js.Any])
     if (extraOffsets != null) __obj.updateDynamic("extraOffsets")(extraOffsets.asInstanceOf[js.Any])
-    if (gridBackgroundColor != null) __obj.updateDynamic("gridBackgroundColor")(gridBackgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridBackgroundColor)) __obj.updateDynamic("gridBackgroundColor")(gridBackgroundColor.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightPerDragEnabled)) __obj.updateDynamic("highlightPerDragEnabled")(highlightPerDragEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightPerTapEnabled)) __obj.updateDynamic("highlightPerTapEnabled")(highlightPerTapEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightPerDragEnabled)) __obj.updateDynamic("highlightPerDragEnabled")(highlightPerDragEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightPerTapEnabled)) __obj.updateDynamic("highlightPerTapEnabled")(highlightPerTapEnabled.get.asInstanceOf[js.Any])
     if (highlights != null) __obj.updateDynamic("highlights")(highlights.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepPositionOnRotation)) __obj.updateDynamic("keepPositionOnRotation")(keepPositionOnRotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepPositionOnRotation)) __obj.updateDynamic("keepPositionOnRotation")(keepPositionOnRotation.get.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (!js.isUndefined(logEnabled)) __obj.updateDynamic("logEnabled")(logEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(logEnabled)) __obj.updateDynamic("logEnabled")(logEnabled.get.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (maxHighlightDistance != null) __obj.updateDynamic("maxHighlightDistance")(maxHighlightDistance.asInstanceOf[js.Any])
-    if (maxVisibleValueCount != null) __obj.updateDynamic("maxVisibleValueCount")(maxVisibleValueCount.asInstanceOf[js.Any])
-    if (minOffset != null) __obj.updateDynamic("minOffset")(minOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHighlightDistance)) __obj.updateDynamic("maxHighlightDistance")(maxHighlightDistance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxVisibleValueCount)) __obj.updateDynamic("maxVisibleValueCount")(maxVisibleValueCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minOffset)) __obj.updateDynamic("minOffset")(minOffset.get.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
+    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.get.asInstanceOf[js.Any])
     if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
@@ -213,24 +209,24 @@ object ScatterChartProps {
     if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (!js.isUndefined(pinchZoom)) __obj.updateDynamic("pinchZoom")(pinchZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinchZoom)) __obj.updateDynamic("pinchZoom")(pinchZoom.get.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleXEnabled)) __obj.updateDynamic("scaleXEnabled")(scaleXEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleYEnabled)) __obj.updateDynamic("scaleYEnabled")(scaleYEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(syncX)) __obj.updateDynamic("syncX")(syncX.asInstanceOf[js.Any])
-    if (!js.isUndefined(syncY)) __obj.updateDynamic("syncY")(syncY.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleXEnabled)) __obj.updateDynamic("scaleXEnabled")(scaleXEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleYEnabled)) __obj.updateDynamic("scaleYEnabled")(scaleYEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(syncX)) __obj.updateDynamic("syncX")(syncX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(syncY)) __obj.updateDynamic("syncY")(syncY.get.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.asInstanceOf[js.Any])
-    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tvParallaxMagnification)) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.get.asInstanceOf[js.Any])
     if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
-    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(tvParallaxShiftDistanceX)) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tvParallaxShiftDistanceY)) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tvParallaxTiltAngle)) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.get.asInstanceOf[js.Any])
     if (viewPortOffsets != null) __obj.updateDynamic("viewPortOffsets")(viewPortOffsets.asInstanceOf[js.Any])
     if (visibleRange != null) __obj.updateDynamic("visibleRange")(visibleRange.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

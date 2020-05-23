@@ -1,27 +1,26 @@
 package typings.flexmonster.mod
 
-import typings.flexmonster.AnonBlocking
-import typings.flexmonster.AnonGetAxisFormat
-import typings.flexmonster.AnonGetData
-import typings.flexmonster.AnonGetNumberFormat
-import typings.flexmonster.AnonIgnoreScroll
-import typings.flexmonster.AnonIsRemoved
-import typings.flexmonster.AnonSlice
+import typings.flexmonster.anon.Blocking
+import typings.flexmonster.anon.GetAxisFormat
+import typings.flexmonster.anon.GetData
+import typings.flexmonster.anon.GetNumberFormat
+import typings.flexmonster.anon.IgnoreScroll
+import typings.flexmonster.anon.IsRemoved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Pivot extends js.Object {
-  var fusioncharts: js.UndefOr[AnonGetData] = js.native
-  var googlecharts: js.UndefOr[AnonGetNumberFormat] = js.native
-  var highcharts: js.UndefOr[AnonGetAxisFormat] = js.native
+  var fusioncharts: js.UndefOr[GetData] = js.native
+  var googlecharts: js.UndefOr[GetNumberFormat] = js.native
+  var highcharts: js.UndefOr[GetAxisFormat] = js.native
   var toolbar: Toolbar = js.native
   var version: String = js.native
   def addCalculatedMeasure(measure: Measure): Unit = js.native
   def addCondition(condition: ConditionalFormat): Unit = js.native
   def addJSON(json: js.Array[js.Object]): Unit = js.native
-  def alert(options: AnonBlocking): Unit = js.native
+  def alert(options: Blocking): Unit = js.native
   def clear(): Unit = js.native
   def clearFilter(hierarchyName: String): Unit = js.native
   def clearXMLACache(
@@ -103,24 +102,24 @@ trait Pivot extends js.Object {
   def getCell(rowIdx: Double, colIdx: Double): CellData = js.native
   def getColumns(): js.Array[Hierarchy] = js.native
   def getCondition(id: String): ConditionalFormat = js.native
-  def getData(options: AnonSlice, callbackHandler: String): Unit = js.native
-  def getData(options: AnonSlice, callbackHandler: String, updateHandler: String): Unit = js.native
+  def getData(options: typings.flexmonster.anon.Slice, callbackHandler: String): Unit = js.native
+  def getData(options: typings.flexmonster.anon.Slice, callbackHandler: String, updateHandler: String): Unit = js.native
   def getData(
-    options: AnonSlice,
+    options: typings.flexmonster.anon.Slice,
     callbackHandler: String,
     updateHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit]
   ): Unit = js.native
   def getData(
-    options: AnonSlice,
+    options: typings.flexmonster.anon.Slice,
     callbackHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit]
   ): Unit = js.native
   def getData(
-    options: AnonSlice,
+    options: typings.flexmonster.anon.Slice,
     callbackHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit],
     updateHandler: String
   ): Unit = js.native
   def getData(
-    options: AnonSlice,
+    options: typings.flexmonster.anon.Slice,
     callbackHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit],
     updateHandler: js.Function2[/* rawData */ GetDataValueObject, /* error */ js.UndefOr[GetDataErrorObject], Unit]
   ): Unit = js.native
@@ -221,7 +220,7 @@ trait Pivot extends js.Object {
   def openCalculatedValueEditor(): Unit = js.native
   def openCalculatedValueEditor(uniqueName: String): Unit = js.native
   def openCalculatedValueEditor(uniqueName: String, callbackHandler: String): Unit = js.native
-  def openCalculatedValueEditor(uniqueName: String, callbackHandler: js.Function1[/* response */ AnonIsRemoved, Unit]): Unit = js.native
+  def openCalculatedValueEditor(uniqueName: String, callbackHandler: js.Function1[/* response */ IsRemoved, Unit]): Unit = js.native
   def openFieldsList(): Unit = js.native
   def openFilter(hierarchyName: String): Unit = js.native
   def print(): Unit = js.native
@@ -263,8 +262,8 @@ trait Pivot extends js.Object {
   def sortValues(axisName: String, `type`: String, tuple: js.Array[Double], measure: MeasureObject): Unit = js.native
   def sortingMethod(hierarchyName: String, compareFunction: js.Function2[/* a */ String, /* b */ String, Double]): Unit = js.native
   def updateData(`object`: js.Array[js.Object]): Unit = js.native
-  def updateData(`object`: js.Array[js.Object], options: AnonIgnoreScroll): Unit = js.native
+  def updateData(`object`: js.Array[js.Object], options: IgnoreScroll): Unit = js.native
   def updateData(`object`: DataSource): Unit = js.native
-  def updateData(`object`: DataSource, options: AnonIgnoreScroll): Unit = js.native
+  def updateData(`object`: DataSource, options: IgnoreScroll): Unit = js.native
 }
 

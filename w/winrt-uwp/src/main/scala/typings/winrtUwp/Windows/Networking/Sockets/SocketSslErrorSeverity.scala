@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object SocketSslErrorSeverity extends js.Object {
   /** No error occurs on the SSL connection. */
   @js.native
   sealed trait none extends SocketSslErrorSeverity
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocketSslErrorSeverity with Double] = js.native
-  /* 2 */ @js.native
-  object fatal extends TopLevel[fatal with Double]
-  
-  /* 1 */ @js.native
-  object ignorable extends TopLevel[ignorable with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
   
 }
 

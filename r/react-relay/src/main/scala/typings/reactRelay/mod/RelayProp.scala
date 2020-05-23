@@ -13,14 +13,8 @@ trait RelayProp extends js.Object {
 
 object RelayProp {
   @scala.inline
-  def apply(
-    environment: typings.relayRuntime.mod.Environment,
-    hasMore: js.UndefOr[scala.Nothing] = js.undefined,
-    refetch: js.UndefOr[scala.Nothing] = js.undefined
-  ): RelayProp = {
+  def apply(environment: typings.relayRuntime.mod.Environment): RelayProp = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore.asInstanceOf[js.Any])
-    if (!js.isUndefined(refetch)) __obj.updateDynamic("refetch")(refetch.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayProp]
   }
 }

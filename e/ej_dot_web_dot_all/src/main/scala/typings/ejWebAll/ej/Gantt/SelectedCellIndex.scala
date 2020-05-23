@@ -17,10 +17,10 @@ trait SelectedCellIndex extends js.Object {
 
 object SelectedCellIndex {
   @scala.inline
-  def apply(cellIndex: Int | Double = null, rowIndex: Int | Double = null): SelectedCellIndex = {
+  def apply(cellIndex: js.UndefOr[Double] = js.undefined, rowIndex: js.UndefOr[Double] = js.undefined): SelectedCellIndex = {
     val __obj = js.Dynamic.literal()
-    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedCellIndex]
   }
 }

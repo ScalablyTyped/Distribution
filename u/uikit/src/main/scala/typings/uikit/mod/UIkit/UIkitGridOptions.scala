@@ -17,13 +17,13 @@ object UIkitGridOptions {
     `first-column`: String = null,
     margin: String = null,
     masonry: js.UndefOr[Boolean] = js.undefined,
-    parallax: Int | Double = null
+    parallax: js.UndefOr[Double] = js.undefined
   ): UIkitGridOptions = {
     val __obj = js.Dynamic.literal()
     if (`first-column` != null) __obj.updateDynamic("first-column")(`first-column`.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(masonry)) __obj.updateDynamic("masonry")(masonry.asInstanceOf[js.Any])
-    if (parallax != null) __obj.updateDynamic("parallax")(parallax.asInstanceOf[js.Any])
+    if (!js.isUndefined(masonry)) __obj.updateDynamic("masonry")(masonry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallax)) __obj.updateDynamic("parallax")(parallax.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitGridOptions]
   }
 }

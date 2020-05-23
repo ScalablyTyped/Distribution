@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/platform_browser/webchannel_connection", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/platform_browser/webchannel_connection", JSImport.Namespace)
 @js.native
 object webchannelConnectionMod extends js.Object {
   @js.native

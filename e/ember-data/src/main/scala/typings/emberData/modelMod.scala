@@ -3,6 +3,7 @@ package typings.emberData
 import typings.ember.mod.Ember.NativeArray
 import typings.ember.mod.default.ComputedProperty
 import typings.ember.mod.default.Map
+import typings.emberData.anon.TypeofModelInstantiable
 import typings.emberData.mod.AttributeMeta
 import typings.emberData.mod.DS.Store
 import typings.emberData.mod.ModelKeys

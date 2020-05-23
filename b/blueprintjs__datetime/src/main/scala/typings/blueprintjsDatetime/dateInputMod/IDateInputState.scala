@@ -20,10 +20,10 @@ object IDateInputState {
     isOpen: Boolean,
     value: Date,
     valueString: String,
-    selectedShortcutIndex: Int | Double = null
+    selectedShortcutIndex: js.UndefOr[Double] = js.undefined
   ): IDateInputState = {
     val __obj = js.Dynamic.literal(isInputFocused = isInputFocused.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueString = valueString.asInstanceOf[js.Any])
-    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedShortcutIndex)) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDateInputState]
   }
 }

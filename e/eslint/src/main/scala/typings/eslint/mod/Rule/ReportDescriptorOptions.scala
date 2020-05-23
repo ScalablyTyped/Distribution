@@ -14,13 +14,15 @@ object ReportDescriptorOptions {
   @scala.inline
   def apply(
     data: StringDictionary[String] = null,
-    fix: /* fixer */ RuleFixer => Null | Fix | IterableIterator[Fix] | js.Array[Fix] = null,
-    suggest: js.Array[SuggestionReportDescriptor] = null
+    fix: js.UndefOr[
+      Null | (/* fixer */ RuleFixer => Null | Fix | IterableIterator[Fix] | js.Array[Fix])
+    ] = js.undefined,
+    suggest: js.UndefOr[Null | js.Array[SuggestionReportDescriptor]] = js.undefined
   ): ReportDescriptorOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (fix != null) __obj.updateDynamic("fix")(js.Any.fromFunction1(fix))
-    if (suggest != null) __obj.updateDynamic("suggest")(suggest.asInstanceOf[js.Any])
+    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(if (fix != null) js.Any.fromFunction1(fix.asInstanceOf[/* fixer */ RuleFixer => Null | Fix | IterableIterator[Fix] | js.Array[Fix]]) else null)
+    if (!js.isUndefined(suggest)) __obj.updateDynamic("suggest")(suggest.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportDescriptorOptions]
   }
 }

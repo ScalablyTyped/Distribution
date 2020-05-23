@@ -13,39 +13,39 @@ trait ILimitedCache extends IBase {
   /** [Config Option] (Function) */
   var feeder: js.UndefOr[js.Any] = js.undefined
   /** [Method] Get a cached object
-  		* @param id String
-  		* @param args Mixed... Arguments appended to feeder.
-  		* @returns Object
-  		*/
+    * @param id String
+    * @param args Mixed... Arguments appended to feeder.
+    * @returns Object
+    */
   var get: js.UndefOr[js.Function2[/* id */ String, /* repeated */ js.Any, _]] = js.undefined
   /** [Method] Returns the value of feeder
-  		* @returns Function
-  		*/
+    * @returns Function
+    */
   var getFeeder: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the value of limit
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getLimit: js.UndefOr[js.Function0[Double]] = js.undefined
   /** [Method] Returns the value of scope
-  		* @returns Object
-  		*/
+    * @returns Object
+    */
   var getScope: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Number) */
   var limit: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the value of feeder
-  		* @param feeder Function The new value.
-  		* @returns Number
-  		*/
+    * @param feeder Function The new value.
+    * @returns Number
+    */
   var setFeeder: js.UndefOr[js.Function1[/* feeder */ js.UndefOr[js.Any], Double]] = js.undefined
   /** [Method] Sets the value of limit
-  		* @param limit Number The new value.
-  		*/
+    * @param limit Number The new value.
+    */
   var setLimit: js.UndefOr[js.Function1[/* limit */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Method] Sets the value of scope
-  		* @param scope Object The new value.
-  		*/
+    * @param scope Object The new value.
+    */
   var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -69,7 +69,7 @@ object ILimitedCache {
     getScope: () => _ = null,
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     platformConfig: js.Any = null,
     scope: js.Any = null,
@@ -99,7 +99,7 @@ object ILimitedCache {
     if (getScope != null) __obj.updateDynamic("getScope")(js.Any.fromFunction0(getScope))
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
@@ -107,7 +107,7 @@ object ILimitedCache {
     if (setFeeder != null) __obj.updateDynamic("setFeeder")(js.Any.fromFunction1(setFeeder))
     if (setLimit != null) __obj.updateDynamic("setLimit")(js.Any.fromFunction1(setLimit))
     if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILimitedCache]

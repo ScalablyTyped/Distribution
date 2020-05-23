@@ -20,7 +20,7 @@ package object mod {
   /**
     * Pre-defined shape transformation with custom configuration
     */
-  type CustomConfigurationTransform = org.scalablytyped.runtime.StringDictionary[typings.svgSprite.AnonPlugins]
+  type CustomConfigurationTransform = org.scalablytyped.runtime.StringDictionary[typings.svgSprite.anon.Plugins]
   type GetShapesCallback = js.Function2[/* error */ typings.std.Error, /* result */ js.Array[typings.vinyl.mod.File], js.Any]
   type SvgTransformer = js.Function1[/* svg */ java.lang.String, java.lang.String]
 }

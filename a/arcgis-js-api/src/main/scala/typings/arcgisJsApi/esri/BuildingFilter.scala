@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +31,17 @@ trait BuildingFilter extends JSONSupport {
   var name: String
 }
 
-@JSGlobal("__esri.BuildingFilter")
-@js.native
-object BuildingFilter extends TopLevel[BuildingFilterConstructor]
+object BuildingFilter {
+  @scala.inline
+  def apply(
+    description: String,
+    filterBlocks: Collection[BuildingFilterBlock],
+    id: String,
+    name: String,
+    toJSON: () => js.Any
+  ): BuildingFilter = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], filterBlocks = filterBlocks.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.asInstanceOf[BuildingFilter]
+  }
+}
 

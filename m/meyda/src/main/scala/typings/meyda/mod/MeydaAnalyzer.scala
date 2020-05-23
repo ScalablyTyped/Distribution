@@ -1,6 +1,6 @@
 package typings.meyda.mod
 
-import typings.meyda.PartialMeydaFeaturesObjec
+import typings.meyda.anon.PartialMeydaFeaturesObjec
 import typings.std.AudioNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

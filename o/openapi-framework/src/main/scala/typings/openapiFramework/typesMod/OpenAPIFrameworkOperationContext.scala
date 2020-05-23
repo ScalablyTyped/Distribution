@@ -1,6 +1,6 @@
 package typings.openapiFramework.typesMod
 
-import typings.openapiFramework.AnonCoercer
+import typings.openapiFramework.anon.Coercer
 import typings.openapiFramework.basePathMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait OpenAPIFrameworkOperationContext extends js.Object {
   var apiDoc: js.Any
   var basePaths: js.Array[default]
   var consumes: js.Array[String]
-  var features: AnonCoercer
+  var features: Coercer
   var methodName: String
   var methodParameters: js.Array[_]
   var operationDoc: js.Any
@@ -28,7 +28,7 @@ object OpenAPIFrameworkOperationContext {
     apiDoc: js.Any,
     basePaths: js.Array[default],
     consumes: js.Array[String],
-    features: AnonCoercer,
+    features: Coercer,
     methodName: String,
     methodParameters: js.Array[_],
     operationDoc: js.Any,

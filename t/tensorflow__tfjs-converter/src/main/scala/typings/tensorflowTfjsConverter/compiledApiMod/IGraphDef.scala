@@ -15,11 +15,15 @@ trait IGraphDef extends js.Object {
 
 object IGraphDef {
   @scala.inline
-  def apply(library: IFunctionDefLibrary = null, node: js.Array[INodeDef] = null, versions: IVersionDef = null): IGraphDef = {
+  def apply(
+    library: js.UndefOr[Null | IFunctionDefLibrary] = js.undefined,
+    node: js.UndefOr[Null | js.Array[INodeDef]] = js.undefined,
+    versions: js.UndefOr[Null | IVersionDef] = js.undefined
+  ): IGraphDef = {
     val __obj = js.Dynamic.literal()
-    if (library != null) __obj.updateDynamic("library")(library.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
+    if (!js.isUndefined(library)) __obj.updateDynamic("library")(library.asInstanceOf[js.Any])
+    if (!js.isUndefined(node)) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (!js.isUndefined(versions)) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGraphDef]
   }
 }

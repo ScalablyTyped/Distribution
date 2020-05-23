@@ -47,7 +47,7 @@ object Chart3dFrameOptions {
     front: Chart3dFrameFrontOptions = null,
     left: Chart3dFrameLeftOptions = null,
     right: Chart3dFrameRightOptions = null,
-    size: Int | Double = null,
+    size: js.UndefOr[Double] = js.undefined,
     top: Chart3dFrameTopOptions = null,
     visible: String = null
   ): Chart3dFrameOptions = {
@@ -57,7 +57,7 @@ object Chart3dFrameOptions {
     if (front != null) __obj.updateDynamic("front")(front.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chart3dFrameOptions]

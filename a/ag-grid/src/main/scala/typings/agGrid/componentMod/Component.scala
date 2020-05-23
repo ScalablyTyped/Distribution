@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.agGrid.iComponentMod.IComponent because var conflicts: destroy. Inlined getGui, afterGuiAttached, init */ @JSImport("ag-grid/dist/lib/widgets/component", "Component")
 @js.native
 class Component () extends BeanStub {

@@ -16,20 +16,20 @@ trait HeatMapOptions extends js.Object {
 object HeatMapOptions {
   @scala.inline
   def apply(
-    blur: Int | Double = null,
+    blur: js.UndefOr[Double] = js.undefined,
     gradient: ColorGradientConfig = null,
-    max: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minOpacity: Int | Double = null,
-    radius: Int | Double = null
+    max: js.UndefOr[Double] = js.undefined,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minOpacity: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined
   ): HeatMapOptions = {
     val __obj = js.Dynamic.literal()
-    if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
+    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur.get.asInstanceOf[js.Any])
     if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minOpacity != null) __obj.updateDynamic("minOpacity")(minOpacity.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minOpacity)) __obj.updateDynamic("minOpacity")(minOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatMapOptions]
   }
 }

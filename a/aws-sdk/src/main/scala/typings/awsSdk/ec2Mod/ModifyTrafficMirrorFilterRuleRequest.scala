@@ -63,11 +63,11 @@ object ModifyTrafficMirrorFilterRuleRequest {
     Description: String = null,
     DestinationCidrBlock: String = null,
     DestinationPortRange: TrafficMirrorPortRangeRequest = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    Protocol: Int | scala.Double = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    Protocol: js.UndefOr[Integer] = js.undefined,
     RemoveFields: TrafficMirrorFilterRuleFieldList = null,
     RuleAction: TrafficMirrorRuleAction = null,
-    RuleNumber: Int | scala.Double = null,
+    RuleNumber: js.UndefOr[Integer] = js.undefined,
     SourceCidrBlock: String = null,
     SourcePortRange: TrafficMirrorPortRangeRequest = null,
     TrafficDirection: TrafficDirection = null
@@ -76,11 +76,11 @@ object ModifyTrafficMirrorFilterRuleRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DestinationCidrBlock != null) __obj.updateDynamic("DestinationCidrBlock")(DestinationCidrBlock.asInstanceOf[js.Any])
     if (DestinationPortRange != null) __obj.updateDynamic("DestinationPortRange")(DestinationPortRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Protocol)) __obj.updateDynamic("Protocol")(Protocol.get.asInstanceOf[js.Any])
     if (RemoveFields != null) __obj.updateDynamic("RemoveFields")(RemoveFields.asInstanceOf[js.Any])
     if (RuleAction != null) __obj.updateDynamic("RuleAction")(RuleAction.asInstanceOf[js.Any])
-    if (RuleNumber != null) __obj.updateDynamic("RuleNumber")(RuleNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(RuleNumber)) __obj.updateDynamic("RuleNumber")(RuleNumber.get.asInstanceOf[js.Any])
     if (SourceCidrBlock != null) __obj.updateDynamic("SourceCidrBlock")(SourceCidrBlock.asInstanceOf[js.Any])
     if (SourcePortRange != null) __obj.updateDynamic("SourcePortRange")(SourcePortRange.asInstanceOf[js.Any])
     if (TrafficDirection != null) __obj.updateDynamic("TrafficDirection")(TrafficDirection.asInstanceOf[js.Any])

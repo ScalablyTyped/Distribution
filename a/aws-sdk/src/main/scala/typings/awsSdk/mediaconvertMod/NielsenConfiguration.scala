@@ -18,9 +18,9 @@ trait NielsenConfiguration extends js.Object {
 
 object NielsenConfiguration {
   @scala.inline
-  def apply(BreakoutCode: Int | Double = null, DistributorId: string = null): NielsenConfiguration = {
+  def apply(BreakoutCode: js.UndefOr[integerMin0Max0] = js.undefined, DistributorId: string = null): NielsenConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (BreakoutCode != null) __obj.updateDynamic("BreakoutCode")(BreakoutCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(BreakoutCode)) __obj.updateDynamic("BreakoutCode")(BreakoutCode.get.asInstanceOf[js.Any])
     if (DistributorId != null) __obj.updateDynamic("DistributorId")(DistributorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NielsenConfiguration]
   }

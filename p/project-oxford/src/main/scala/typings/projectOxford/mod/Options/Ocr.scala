@@ -23,7 +23,7 @@ object Ocr {
     url: String = null
   ): Ocr = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detectOrientation)) __obj.updateDynamic("detectOrientation")(detectOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectOrientation)) __obj.updateDynamic("detectOrientation")(detectOrientation.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

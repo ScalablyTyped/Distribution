@@ -1,6 +1,5 @@
 package typings.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,11 +40,4 @@ trait JSON extends js.Object {
   def stringify(value: js.Any, replacer: Array[Double | java.lang.String], space: java.lang.String): java.lang.String = js.native
   def stringify(value: js.Any, replacer: Array[Double | java.lang.String], space: Double): java.lang.String = js.native
 }
-
-/**
-  * An intrinsic object that provides functions to convert JavaScript values to and from the JavaScript Object Notation (JSON) format.
-  */
-@JSGlobal("JSON")
-@js.native
-object JSON extends TopLevel[JSON]
 

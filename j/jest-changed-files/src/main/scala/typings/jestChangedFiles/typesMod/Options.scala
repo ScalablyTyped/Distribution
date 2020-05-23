@@ -23,8 +23,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (changedSince != null) __obj.updateDynamic("changedSince")(changedSince.asInstanceOf[js.Any])
     if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastCommit)) __obj.updateDynamic("lastCommit")(lastCommit.asInstanceOf[js.Any])
-    if (!js.isUndefined(withAncestor)) __obj.updateDynamic("withAncestor")(withAncestor.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastCommit)) __obj.updateDynamic("lastCommit")(lastCommit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withAncestor)) __obj.updateDynamic("withAncestor")(withAncestor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

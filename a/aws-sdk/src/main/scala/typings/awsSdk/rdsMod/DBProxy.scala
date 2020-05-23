@@ -71,11 +71,11 @@ object DBProxy {
     CreatedDate: TStamp = null,
     DBProxyArn: String = null,
     DBProxyName: String = null,
-    DebugLogging: js.UndefOr[scala.Boolean] = js.undefined,
+    DebugLogging: js.UndefOr[Boolean] = js.undefined,
     Endpoint: String = null,
     EngineFamily: String = null,
-    IdleClientTimeout: Int | scala.Double = null,
-    RequireTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    IdleClientTimeout: js.UndefOr[Integer] = js.undefined,
+    RequireTLS: js.UndefOr[Boolean] = js.undefined,
     RoleArn: String = null,
     Status: DBProxyStatus = null,
     UpdatedDate: TStamp = null,
@@ -87,11 +87,11 @@ object DBProxy {
     if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
     if (DBProxyArn != null) __obj.updateDynamic("DBProxyArn")(DBProxyArn.asInstanceOf[js.Any])
     if (DBProxyName != null) __obj.updateDynamic("DBProxyName")(DBProxyName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DebugLogging)) __obj.updateDynamic("DebugLogging")(DebugLogging.asInstanceOf[js.Any])
+    if (!js.isUndefined(DebugLogging)) __obj.updateDynamic("DebugLogging")(DebugLogging.get.asInstanceOf[js.Any])
     if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
     if (EngineFamily != null) __obj.updateDynamic("EngineFamily")(EngineFamily.asInstanceOf[js.Any])
-    if (IdleClientTimeout != null) __obj.updateDynamic("IdleClientTimeout")(IdleClientTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireTLS)) __obj.updateDynamic("RequireTLS")(RequireTLS.asInstanceOf[js.Any])
+    if (!js.isUndefined(IdleClientTimeout)) __obj.updateDynamic("IdleClientTimeout")(IdleClientTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequireTLS)) __obj.updateDynamic("RequireTLS")(RequireTLS.get.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (UpdatedDate != null) __obj.updateDynamic("UpdatedDate")(UpdatedDate.asInstanceOf[js.Any])

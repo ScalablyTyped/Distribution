@@ -18,10 +18,10 @@ trait CurrentMetricData extends js.Object {
 
 object CurrentMetricData {
   @scala.inline
-  def apply(Metric: CurrentMetric = null, Value: Int | Double = null): CurrentMetricData = {
+  def apply(Metric: CurrentMetric = null, Value: js.UndefOr[Value] = js.undefined): CurrentMetricData = {
     val __obj = js.Dynamic.literal()
     if (Metric != null) __obj.updateDynamic("Metric")(Metric.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentMetricData]
   }
 }

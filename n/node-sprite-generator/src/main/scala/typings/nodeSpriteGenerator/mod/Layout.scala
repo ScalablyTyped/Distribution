@@ -1,6 +1,6 @@
 package typings.nodeSpriteGenerator.mod
 
-import typings.nodeSpriteGenerator.xnumberynumberImage
+import typings.nodeSpriteGenerator.anon.xnumberynumberImage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

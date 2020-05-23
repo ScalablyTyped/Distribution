@@ -1,5 +1,7 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.anon.ChangedDocs
+import typings.firebaseFirestore.anon.TrackRemovals
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.collectionsMod.DocumentMap_
 import typings.firebaseFirestore.collectionsMod.NullableMaybeDocumentMap_
@@ -13,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/unit/local/test_remote_document_cache", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/local/test_remote_document_cache", JSImport.Namespace)
 @js.native
 object testRemoteDocumentCacheMod extends js.Object {
   @js.native
@@ -34,10 +36,10 @@ object testRemoteDocumentCacheMod extends js.Object {
     def getDocumentsMatchingQuery(query: Query, sinceReadTime: SnapshotVersion): js.Promise[DocumentMap_] = js.native
     def getEntries(documentKeys: DocumentKeySet_): js.Promise[NullableMaybeDocumentMap_] = js.native
     def getEntry(documentKey: DocumentKey): js.Promise[MaybeDocument | Null] = js.native
-    def getNewDocumentChanges(sinceReadTime: SnapshotVersion): js.Promise[AnonChangedDocs] = js.native
+    def getNewDocumentChanges(sinceReadTime: SnapshotVersion): js.Promise[ChangedDocs] = js.native
     def getSize(): js.Promise[Double] = js.native
     def newChangeBuffer(): RemoteDocumentChangeBuffer = js.native
-    def newChangeBuffer(options: AnonTrackRemovals): RemoteDocumentChangeBuffer = js.native
+    def newChangeBuffer(options: TrackRemovals): RemoteDocumentChangeBuffer = js.native
     def removeEntry(documentKey: DocumentKey): js.Promise[Unit] = js.native
     def removeEntry(documentKey: DocumentKey, version: SnapshotVersion): js.Promise[Unit] = js.native
   }

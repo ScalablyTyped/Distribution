@@ -1,10 +1,10 @@
 package typings.mcustomscrollbar.MCustomScrollbar
 
-import typings.mcustomscrollbar.AnonAlwaysTriggerOffsets
-import typings.mcustomscrollbar.AnonAutoExpandHorizontalScroll
-import typings.mcustomscrollbar.AnonAxis
-import typings.mcustomscrollbar.AnonEnable
-import typings.mcustomscrollbar.AnonScrollAmount
+import typings.mcustomscrollbar.anon.AlwaysTriggerOffsets
+import typings.mcustomscrollbar.anon.AutoExpandHorizontalScroll
+import typings.mcustomscrollbar.anon.Axis
+import typings.mcustomscrollbar.anon.Enable
+import typings.mcustomscrollbar.anon.ScrollAmount
 import typings.mcustomscrollbar.mcustomscrollbarStrings.inside
 import typings.mcustomscrollbar.mcustomscrollbarStrings.outside
 import typings.mcustomscrollbar.mcustomscrollbarStrings.x
@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomScrollbarOptions extends js.Object {
-  var advanced: js.UndefOr[AnonAutoExpandHorizontalScroll] = js.undefined
+  var advanced: js.UndefOr[AutoExpandHorizontalScroll] = js.undefined
   /**
     * Always keep scrollbar(s) visible, even when there’s nothing to scroll.
     * 0 – disable (default)
@@ -43,7 +43,7 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * All of the following callbacks option have examples in the callback demo - http://manos.malihu.gr/tuts/custom-scrollbar-plugin/callbacks_example.html
     */
-  var callbacks: js.UndefOr[AnonAlwaysTriggerOffsets] = js.undefined
+  var callbacks: js.UndefOr[AlwaysTriggerOffsets] = js.undefined
   /**
     * Enable or disable content touch-swipe scrolling for touch-enabled devices.
     * To completely disable, set contentTouchScroll: false.
@@ -57,7 +57,7 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * Keyboard support 
     */
-  var keyboard: js.UndefOr[AnonEnable] = js.undefined
+  var keyboard: js.UndefOr[Enable] = js.undefined
   /**
     * Enable or disable applying scrollbar(s) on all elements matching the current selector, now and in the future.
     * Set live: true when you need to add scrollbar(s) on elements that do not yet exist in the page. 
@@ -73,12 +73,12 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * Mouse wheel support
     */
-  var mouseWheel: js.UndefOr[AnonAxis] = js.undefined
+  var mouseWheel: js.UndefOr[Axis] = js.undefined
   /**
     * Mouse wheel scrolling pixels amount, value in pixels (integer) or "auto" (script calculates and sets pixels amount according to content length)
     */
   var mouseWheelPixels: js.UndefOr[js.Any] = js.undefined
-  var scrollButtons: js.UndefOr[AnonScrollAmount] = js.undefined
+  var scrollButtons: js.UndefOr[ScrollAmount] = js.undefined
   /**
     * Scrolling inertia (easing), value in milliseconds (0 for no scrolling inertia)
     */
@@ -131,55 +131,55 @@ trait CustomScrollbarOptions extends js.Object {
 object CustomScrollbarOptions {
   @scala.inline
   def apply(
-    advanced: AnonAutoExpandHorizontalScroll = null,
-    alwaysShowScrollbar: Int | Double = null,
+    advanced: AutoExpandHorizontalScroll = null,
+    alwaysShowScrollbar: js.UndefOr[Double] = js.undefined,
     autoDraggerLength: js.UndefOr[Boolean] = js.undefined,
     autoExpandScrollbar: js.UndefOr[Boolean] = js.undefined,
     autoHideScrollbar: js.UndefOr[Boolean] = js.undefined,
     axis: x | y | yx = null,
-    callbacks: AnonAlwaysTriggerOffsets = null,
+    callbacks: AlwaysTriggerOffsets = null,
     contentTouchScroll: Boolean | Double = null,
     documentTouchScroll: js.UndefOr[Boolean] = js.undefined,
-    keyboard: AnonEnable = null,
+    keyboard: Enable = null,
     live: String | Boolean = null,
     liveSelector: String = null,
-    mouseWheel: AnonAxis = null,
+    mouseWheel: Axis = null,
     mouseWheelPixels: js.Any = null,
-    scrollButtons: AnonScrollAmount = null,
-    scrollInertia: Int | Double = null,
+    scrollButtons: ScrollAmount = null,
+    scrollInertia: js.UndefOr[Double] = js.undefined,
     scrollbarPosition: inside | outside = null,
     setHeight: Boolean | Double | String = null,
     setLeft: Double | String = null,
     setTop: Double | String = null,
     setWidth: Boolean | Double | String = null,
     snapAmount: Double | (js.Tuple2[Double, Double]) = null,
-    snapOffset: Int | Double = null,
+    snapOffset: js.UndefOr[Double] = js.undefined,
     theme: String = null
   ): CustomScrollbarOptions = {
     val __obj = js.Dynamic.literal()
     if (advanced != null) __obj.updateDynamic("advanced")(advanced.asInstanceOf[js.Any])
-    if (alwaysShowScrollbar != null) __obj.updateDynamic("alwaysShowScrollbar")(alwaysShowScrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDraggerLength)) __obj.updateDynamic("autoDraggerLength")(autoDraggerLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoExpandScrollbar)) __obj.updateDynamic("autoExpandScrollbar")(autoExpandScrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHideScrollbar)) __obj.updateDynamic("autoHideScrollbar")(autoHideScrollbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysShowScrollbar)) __obj.updateDynamic("alwaysShowScrollbar")(alwaysShowScrollbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDraggerLength)) __obj.updateDynamic("autoDraggerLength")(autoDraggerLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoExpandScrollbar)) __obj.updateDynamic("autoExpandScrollbar")(autoExpandScrollbar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideScrollbar)) __obj.updateDynamic("autoHideScrollbar")(autoHideScrollbar.get.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (contentTouchScroll != null) __obj.updateDynamic("contentTouchScroll")(contentTouchScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(documentTouchScroll)) __obj.updateDynamic("documentTouchScroll")(documentTouchScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentTouchScroll)) __obj.updateDynamic("documentTouchScroll")(documentTouchScroll.get.asInstanceOf[js.Any])
     if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     if (live != null) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
     if (liveSelector != null) __obj.updateDynamic("liveSelector")(liveSelector.asInstanceOf[js.Any])
     if (mouseWheel != null) __obj.updateDynamic("mouseWheel")(mouseWheel.asInstanceOf[js.Any])
     if (mouseWheelPixels != null) __obj.updateDynamic("mouseWheelPixels")(mouseWheelPixels.asInstanceOf[js.Any])
     if (scrollButtons != null) __obj.updateDynamic("scrollButtons")(scrollButtons.asInstanceOf[js.Any])
-    if (scrollInertia != null) __obj.updateDynamic("scrollInertia")(scrollInertia.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollInertia)) __obj.updateDynamic("scrollInertia")(scrollInertia.get.asInstanceOf[js.Any])
     if (scrollbarPosition != null) __obj.updateDynamic("scrollbarPosition")(scrollbarPosition.asInstanceOf[js.Any])
     if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight.asInstanceOf[js.Any])
     if (setLeft != null) __obj.updateDynamic("setLeft")(setLeft.asInstanceOf[js.Any])
     if (setTop != null) __obj.updateDynamic("setTop")(setTop.asInstanceOf[js.Any])
     if (setWidth != null) __obj.updateDynamic("setWidth")(setWidth.asInstanceOf[js.Any])
     if (snapAmount != null) __obj.updateDynamic("snapAmount")(snapAmount.asInstanceOf[js.Any])
-    if (snapOffset != null) __obj.updateDynamic("snapOffset")(snapOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapOffset)) __obj.updateDynamic("snapOffset")(snapOffset.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomScrollbarOptions]
   }

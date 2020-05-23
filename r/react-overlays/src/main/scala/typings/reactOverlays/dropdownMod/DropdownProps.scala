@@ -2,7 +2,7 @@ package typings.reactOverlays.dropdownMod
 
 import typings.react.mod.ReactElement
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ trait DropdownProps extends js.Object {
     * A callback fired when the Dropdown wishes to change visibility. Called with the requested
     * `show` value, the DOM event, and the source that fired it: `'click'`,`'keydown'`,`'rootClose'`, or `'select'`.
     */
-  var onToggle: js.UndefOr[js.Function2[/* isOpen */ Boolean, /* event */ SyntheticEvent[_, Event_], Unit]] = js.undefined
+  var onToggle: js.UndefOr[js.Function2[/* isOpen */ Boolean, /* event */ SyntheticEvent[_, Event], Unit]] = js.undefined
   /**
     * Whether or not the Dropdown is visible
     */
@@ -46,15 +46,15 @@ object DropdownProps {
     alignEnd: js.UndefOr[Boolean] = js.undefined,
     drop: Directions = null,
     itemSelector: String = null,
-    onToggle: (/* isOpen */ Boolean, /* event */ SyntheticEvent[_, Event_]) => Unit = null,
+    onToggle: (/* isOpen */ Boolean, /* event */ SyntheticEvent[_, Event]) => Unit = null,
     show: js.UndefOr[Boolean] = js.undefined
   ): DropdownProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd.get.asInstanceOf[js.Any])
     if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
     if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector.asInstanceOf[js.Any])
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction2(onToggle))
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownProps]
   }
 }

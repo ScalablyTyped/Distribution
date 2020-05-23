@@ -26,7 +26,7 @@ object ComplianceRule {
   ): ComplianceRule = {
     val __obj = js.Dynamic.literal()
     if (apiLevelCondition != null) __obj.updateDynamic("apiLevelCondition")(apiLevelCondition.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableApps)) __obj.updateDynamic("disableApps")(disableApps.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableApps)) __obj.updateDynamic("disableApps")(disableApps.get.asInstanceOf[js.Any])
     if (nonComplianceDetailCondition != null) __obj.updateDynamic("nonComplianceDetailCondition")(nonComplianceDetailCondition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceRule]
   }

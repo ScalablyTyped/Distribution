@@ -22,13 +22,13 @@ object BaseOptions {
     formatter: js.Any = null,
     formatterPattern: String = null,
     httpAdapter: https | http | request = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): BaseOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (formatterPattern != null) __obj.updateDynamic("formatterPattern")(formatterPattern.asInstanceOf[js.Any])
     if (httpAdapter != null) __obj.updateDynamic("httpAdapter")(httpAdapter.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]
   }
 }

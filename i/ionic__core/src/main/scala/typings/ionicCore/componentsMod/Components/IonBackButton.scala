@@ -48,17 +48,17 @@ object IonBackButton {
     `type`: submit | reset | button,
     color: Color = null,
     defaultHref: String = null,
-    icon: String = null,
+    icon: js.UndefOr[Null | String] = js.undefined,
     mode: ios | md = null,
-    text: String = null
+    text: js.UndefOr[Null | String] = js.undefined
   ): IonBackButton = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (defaultHref != null) __obj.updateDynamic("defaultHref")(defaultHref.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonBackButton]
   }
 }

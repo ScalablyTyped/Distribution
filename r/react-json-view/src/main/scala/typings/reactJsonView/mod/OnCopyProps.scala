@@ -22,8 +22,7 @@ trait OnCopyProps extends js.Object {
 object OnCopyProps {
   @scala.inline
   def apply(namespace: js.Array[String | Null], src: js.Object, name: String = null): OnCopyProps = {
-    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCopyProps]
   }
 }

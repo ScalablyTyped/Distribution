@@ -1,7 +1,7 @@
 package typings.fibers.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.fibers.futureMod._Global_.Function
+import typings.fibers.futureMod.global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

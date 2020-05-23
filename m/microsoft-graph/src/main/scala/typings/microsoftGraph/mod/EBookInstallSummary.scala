@@ -22,22 +22,22 @@ trait EBookInstallSummary extends Entity {
 object EBookInstallSummary {
   @scala.inline
   def apply(
-    failedDeviceCount: Int | Double = null,
-    failedUserCount: Int | Double = null,
+    failedDeviceCount: js.UndefOr[Double] = js.undefined,
+    failedUserCount: js.UndefOr[Double] = js.undefined,
     id: String = null,
-    installedDeviceCount: Int | Double = null,
-    installedUserCount: Int | Double = null,
-    notInstalledDeviceCount: Int | Double = null,
-    notInstalledUserCount: Int | Double = null
+    installedDeviceCount: js.UndefOr[Double] = js.undefined,
+    installedUserCount: js.UndefOr[Double] = js.undefined,
+    notInstalledDeviceCount: js.UndefOr[Double] = js.undefined,
+    notInstalledUserCount: js.UndefOr[Double] = js.undefined
   ): EBookInstallSummary = {
     val __obj = js.Dynamic.literal()
-    if (failedDeviceCount != null) __obj.updateDynamic("failedDeviceCount")(failedDeviceCount.asInstanceOf[js.Any])
-    if (failedUserCount != null) __obj.updateDynamic("failedUserCount")(failedUserCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(failedDeviceCount)) __obj.updateDynamic("failedDeviceCount")(failedDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(failedUserCount)) __obj.updateDynamic("failedUserCount")(failedUserCount.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (installedDeviceCount != null) __obj.updateDynamic("installedDeviceCount")(installedDeviceCount.asInstanceOf[js.Any])
-    if (installedUserCount != null) __obj.updateDynamic("installedUserCount")(installedUserCount.asInstanceOf[js.Any])
-    if (notInstalledDeviceCount != null) __obj.updateDynamic("notInstalledDeviceCount")(notInstalledDeviceCount.asInstanceOf[js.Any])
-    if (notInstalledUserCount != null) __obj.updateDynamic("notInstalledUserCount")(notInstalledUserCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(installedDeviceCount)) __obj.updateDynamic("installedDeviceCount")(installedDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(installedUserCount)) __obj.updateDynamic("installedUserCount")(installedUserCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notInstalledDeviceCount)) __obj.updateDynamic("notInstalledDeviceCount")(notInstalledDeviceCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(notInstalledUserCount)) __obj.updateDynamic("notInstalledUserCount")(notInstalledUserCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBookInstallSummary]
   }
 }

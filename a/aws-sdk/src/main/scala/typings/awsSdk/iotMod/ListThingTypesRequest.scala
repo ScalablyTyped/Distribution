@@ -22,9 +22,13 @@ trait ListThingTypesRequest extends js.Object {
 
 object ListThingTypesRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, nextToken: NextToken = null, thingTypeName: ThingTypeName = null): ListThingTypesRequest = {
+  def apply(
+    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
+    nextToken: NextToken = null,
+    thingTypeName: ThingTypeName = null
+  ): ListThingTypesRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThingTypesRequest]

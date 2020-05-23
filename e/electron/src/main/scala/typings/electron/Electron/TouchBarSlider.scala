@@ -5,14 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Electron.TouchBarSlider")
 @js.native
-class TouchBarSlider protected () extends EventEmitter {
-  // Docs: http://electronjs.org/docs/api/touch-bar-slider
-  /**
-    * TouchBarSlider
-    */
-  def this(options: TouchBarSliderConstructorOptions) = this()
+trait TouchBarSlider extends EventEmitter {
   var label: String = js.native
   var maxValue: Double = js.native
   var minValue: Double = js.native

@@ -11,10 +11,7 @@ import scala.scalajs.js.annotation._
   * Define filter-extension options
   */
 trait Filter
-  extends /**
-  * Support misc options
-  */
-/* key */ StringDictionary[js.Any] {
+  extends /* extension */ StringDictionary[js.Any] {
   /**
     * Re-apply last filter if lazy data is loaded
     */
@@ -60,10 +57,7 @@ trait Filter
 object Filter {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Support misc options
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     autoApply: js.UndefOr[Boolean] = js.undefined,
     autoExpand: js.UndefOr[Boolean] = js.undefined,
     counter: js.UndefOr[Boolean] = js.undefined,
@@ -77,16 +71,16 @@ object Filter {
   ): Filter = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoExpand)) __obj.updateDynamic("autoExpand")(autoExpand.asInstanceOf[js.Any])
-    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
-    if (!js.isUndefined(fuzzy)) __obj.updateDynamic("fuzzy")(fuzzy.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideExpandedCounter)) __obj.updateDynamic("hideExpandedCounter")(hideExpandedCounter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideExpanders)) __obj.updateDynamic("hideExpanders")(hideExpanders.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(leavesOnly)) __obj.updateDynamic("leavesOnly")(leavesOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoExpand)) __obj.updateDynamic("autoExpand")(autoExpand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fuzzy)) __obj.updateDynamic("fuzzy")(fuzzy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideExpandedCounter)) __obj.updateDynamic("hideExpandedCounter")(hideExpandedCounter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideExpanders)) __obj.updateDynamic("hideExpanders")(hideExpanders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leavesOnly)) __obj.updateDynamic("leavesOnly")(leavesOnly.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodata)) __obj.updateDynamic("nodata")(nodata.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodata)) __obj.updateDynamic("nodata")(nodata.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
 }

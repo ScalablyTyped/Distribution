@@ -1,12 +1,12 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.AnonExpand
 import typings.officeJsPreview.Excel.Interfaces.PivotFieldData
 import typings.officeJsPreview.Excel.Interfaces.PivotFieldLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.PivotFieldUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.anon.Expand
 import typings.officeJsPreview.officeJsPreviewStrings.Ascending
 import typings.officeJsPreview.officeJsPreviewStrings.Date
 import typings.officeJsPreview.officeJsPreviewStrings.Descending
@@ -24,9 +24,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.PivotField")
 @js.native
-class PivotField () extends ClientObject {
+trait PivotField extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PivotField: RequestContext = js.native
@@ -65,20 +64,16 @@ class PivotField () extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   var subtotals: Subtotals = js.native
-  def applyFilter(filter: PivotDateFilter): Unit = js.native
-  def applyFilter(filter: PivotFilters): Unit = js.native
-  def applyFilter(filter: PivotLabelFilter): Unit = js.native
-  def applyFilter(filter: PivotManualFilter): Unit = js.native
   /**
     * Sets one or multiple of the field's current PivotFilters and applies them to the field.
-    If the provided filter(s) are invalid or cannot be applied, an exception is thrown.
+    If the provided filters are invalid or cannot be applied, an exception is thrown.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
     * @param filter A configured specific PivotFilter or a PivotFilters interface containing multiple configured filters.
     */
-  def applyFilter(filter: PivotValueFilter): Unit = js.native
+  def applyFilter(filter: PivotFilters): Unit = js.native
   /**
     * Clears all criteria from all of the field's filters. This removes any active filtering on the field.
     *
@@ -148,7 +143,7 @@ class PivotField () extends ClientObject {
     */
   def load(): PivotField = js.native
   def load(options: PivotFieldLoadOptions): PivotField = js.native
-  def load(propertyNamesAndPaths: AnonExpand): PivotField = js.native
+  def load(propertyNamesAndPaths: Expand): PivotField = js.native
   def load(propertyNames: String): PivotField = js.native
   def load(propertyNames: js.Array[String]): PivotField = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -171,7 +166,7 @@ class PivotField () extends ClientObject {
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param sortBy Specifies if the sorting is done in ascending or descending order.
     */
   def sortByLabels(sortBy: SortBy): Unit = js.native
   /**
@@ -180,7 +175,7 @@ class PivotField () extends ClientObject {
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param sortBy Specifies if the sorting is done in ascending or descending order.
     * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
     * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
@@ -195,7 +190,7 @@ class PivotField () extends ClientObject {
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param sortBy Specifies if the sorting is done in ascending or descending order.
     * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
     * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,

@@ -1,6 +1,6 @@
 package typings.hexoUtil.mod
 
-import typings.hexoUtil.AnonLength
+import typings.hexoUtil.anon.Length
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object truncate extends js.Object {
   def apply(str: String): String = js.native
-  def apply(str: String, options: AnonLength): String = js.native
+  def apply(str: String, options: Length): String = js.native
 }
 

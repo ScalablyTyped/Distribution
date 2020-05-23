@@ -32,14 +32,14 @@ object ListSigningPlatformsRequest {
   @scala.inline
   def apply(
     category: String = null,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
     nextToken: String = null,
     partner: String = null,
     target: String = null
   ): ListSigningPlatformsRequest = {
     val __obj = js.Dynamic.literal()
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (partner != null) __obj.updateDynamic("partner")(partner.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

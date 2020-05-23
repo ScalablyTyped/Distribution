@@ -12,9 +12,9 @@ trait IFloatList extends js.Object {
 
 object IFloatList {
   @scala.inline
-  def apply(value: js.Array[Double] = null): IFloatList = {
+  def apply(value: js.UndefOr[Null | js.Array[Double]] = js.undefined): IFloatList = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFloatList]
   }
 }

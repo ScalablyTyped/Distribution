@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,11 @@ trait SVGElementInstanceList extends js.Object {
   def item(index: Double): SVGElementInstance
 }
 
-@JSGlobal("SVGElementInstanceList")
-@js.native
-object SVGElementInstanceList extends Instantiable0[SVGElementInstanceList]
+object SVGElementInstanceList {
+  @scala.inline
+  def apply(item: Double => SVGElementInstance, length: Double): SVGElementInstanceList = {
+    val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGElementInstanceList]
+  }
+}
 

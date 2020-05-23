@@ -168,6 +168,9 @@ import typings.activexMshtml.activexMshtmlStrings.ontimeout
 import typings.activexMshtml.activexMshtmlStrings.onunload
 import typings.activexMshtml.activexMshtmlStrings.pEvtObj
 import typings.activexMshtml.activexMshtmlStrings.url
+import typings.activexMshtml.anon.Description
+import typings.activexMshtml.anon.EventData
+import typings.activexMshtml.anon.PEvtObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -408,7 +411,7 @@ trait ActiveXObject extends js.Object {
     obj: HTMLNamespace,
     event: onreadystatechange,
     argNames: js.Array[pEvtObj],
-    handler: js.ThisFunction1[/* this */ HTMLNamespace, /* parameter */ AnonPEvtObj, Unit]
+    handler: js.ThisFunction1[/* this */ HTMLNamespace, /* parameter */ PEvtObj, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLNextIdElement,
@@ -569,7 +572,7 @@ trait ActiveXObject extends js.Object {
     obj: HTMLWindow2,
     event: onerror,
     argNames: js.Tuple3[description, url, line],
-    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ AnonDescription, Unit]
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ Description, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLWindowProxy,
@@ -580,7 +583,7 @@ trait ActiveXObject extends js.Object {
     obj: HTMLWindowProxy,
     event: onerror,
     argNames: js.Tuple3[description, url, line],
-    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ AnonDescription, Unit]
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ Description, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLWndOptionElement,
@@ -736,7 +739,7 @@ trait ActiveXObject extends js.Object {
     obj: Scriptlet,
     event: onscriptletevent,
     argNames: js.Tuple2[name, eventData],
-    handler: js.ThisFunction1[/* this */ Scriptlet, /* parameter */ AnonEventData, Unit]
+    handler: js.ThisFunction1[/* this */ Scriptlet, /* parameter */ EventData, Unit]
   ): Unit = js.native
   def on(
     obj: htmlInputImage,

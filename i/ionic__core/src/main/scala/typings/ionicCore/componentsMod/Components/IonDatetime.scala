@@ -130,8 +130,8 @@ object IonDatetime {
     monthValues: js.Array[Double] | Double | String = null,
     pickerFormat: String = null,
     pickerOptions: DatetimeOptions = null,
-    placeholder: String = null,
-    value: String = null,
+    placeholder: js.UndefOr[Null | String] = js.undefined,
+    value: js.UndefOr[Null | String] = js.undefined,
     yearValues: js.Array[Double] | Double | String = null
   ): IonDatetime = {
     val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayFormat = displayFormat.asInstanceOf[js.Any], doneText = doneText.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), readonly = readonly.asInstanceOf[js.Any])
@@ -149,8 +149,8 @@ object IonDatetime {
     if (monthValues != null) __obj.updateDynamic("monthValues")(monthValues.asInstanceOf[js.Any])
     if (pickerFormat != null) __obj.updateDynamic("pickerFormat")(pickerFormat.asInstanceOf[js.Any])
     if (pickerOptions != null) __obj.updateDynamic("pickerOptions")(pickerOptions.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeholder)) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (yearValues != null) __obj.updateDynamic("yearValues")(yearValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonDatetime]
   }

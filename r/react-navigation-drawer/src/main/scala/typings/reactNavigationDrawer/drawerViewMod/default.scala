@@ -2,8 +2,8 @@ package typings.reactNavigationDrawer.drawerViewMod
 
 import typings.react.mod.Context
 import typings.reactNavigation.mod.SupportedThemes
-import typings.reactNavigationDrawer.AnonLazy
-import typings.reactNavigationDrawer.AnonLoaded
+import typings.reactNavigationDrawer.anon.Lazy
+import typings.reactNavigationDrawer.anon.Loaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ class default () extends DrawerView
 @js.native
 object default extends js.Object {
   var contextType: Context[SupportedThemes] = js.native
-  var defaultProps: AnonLazy = js.native
-  def getDerivedStateFromProps(nextProps: Props, prevState: State): AnonLoaded = js.native
+  var defaultProps: Lazy = js.native
+  def getDerivedStateFromProps(nextProps: Props, prevState: State): Loaded = js.native
 }
 

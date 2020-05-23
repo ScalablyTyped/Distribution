@@ -10,7 +10,3 @@ trait Symbol extends js.Object {
   val toStringTag: typings.minappEnv.minappEnvStrings.Symbol = js.native
 }
 
-@JSGlobal("Symbol")
-@js.native
-object Symbol extends SymbolConstructor
-

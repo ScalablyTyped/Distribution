@@ -85,7 +85,7 @@ object IPlugin {
     requires: js.Array[Token[_]] = null
   ): IPlugin[T, U] = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction2(activate), id = id.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
     if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (provides != null) __obj.updateDynamic("provides")(provides.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])

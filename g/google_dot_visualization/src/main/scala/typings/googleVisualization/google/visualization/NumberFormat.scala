@@ -4,13 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.visualization.NumberFormat")
-@js.native
-class NumberFormat () extends DefaultFormatter {
-  def this(options: NumberFormatOptions) = this()
+trait NumberFormat extends DefaultFormatter {
   /**
     * Returns the formatted value of a given value. This method does not require a DataTable.
     */
-  def formatValue(value: Double): String = js.native
+  def formatValue(value: Double): String
+}
+
+object NumberFormat {
+  @scala.inline
+  def apply(format: (DataTable, Double) => Unit, formatValue: Double => String): NumberFormat = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), formatValue = js.Any.fromFunction1(formatValue))
+    __obj.asInstanceOf[NumberFormat]
+  }
 }
 

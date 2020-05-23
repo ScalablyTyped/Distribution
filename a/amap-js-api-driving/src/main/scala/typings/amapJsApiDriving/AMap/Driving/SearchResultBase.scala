@@ -1,7 +1,7 @@
 package typings.amapJsApiDriving.AMap.Driving
 
 import typings.amapJsApi.AMap.LngLat
-import typings.amapJsApiDriving.PoiisWaypointboolean
+import typings.amapJsApiDriving.anon.PoiisWaypointboolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,10 +33,10 @@ object SearchResultBase {
     routes: js.Array[DriveRoute],
     start: Poi,
     waypoints: js.Array[PoiisWaypointboolean],
-    taxi_cost: Int | Double = null
+    taxi_cost: js.UndefOr[Double] = js.undefined
   ): SearchResultBase = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
-    if (taxi_cost != null) __obj.updateDynamic("taxi_cost")(taxi_cost.asInstanceOf[js.Any])
+    if (!js.isUndefined(taxi_cost)) __obj.updateDynamic("taxi_cost")(taxi_cost.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResultBase]
   }
 }

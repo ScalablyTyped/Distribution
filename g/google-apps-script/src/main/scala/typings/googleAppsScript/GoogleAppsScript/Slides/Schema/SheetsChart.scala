@@ -14,13 +14,13 @@ trait SheetsChart extends js.Object {
 object SheetsChart {
   @scala.inline
   def apply(
-    chartId: Int | Double = null,
+    chartId: js.UndefOr[Double] = js.undefined,
     contentUrl: String = null,
     sheetsChartProperties: SheetsChartProperties = null,
     spreadsheetId: String = null
   ): SheetsChart = {
     val __obj = js.Dynamic.literal()
-    if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartId)) __obj.updateDynamic("chartId")(chartId.get.asInstanceOf[js.Any])
     if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
     if (sheetsChartProperties != null) __obj.updateDynamic("sheetsChartProperties")(sheetsChartProperties.asInstanceOf[js.Any])
     if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])

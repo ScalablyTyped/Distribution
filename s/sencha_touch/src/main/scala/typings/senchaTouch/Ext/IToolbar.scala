@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait IToolbar extends IContainer {
   /** [Method] Returns the value of layout
-  		* @returns Object/String
-  		*/
+    * @returns Object/String
+    */
   var getLayout: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns an Ext Title component
-  		* @returns Ext.Title
-  		*/
+    * @returns Ext.Title
+    */
   var getTitle: js.UndefOr[js.Function0[ITitle]] = js.undefined
   /** [Method] Hides the title if it exists  */
   var hideTitle: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -19,13 +19,13 @@ trait IToolbar extends IContainer {
   @JSName("minHeight")
   var minHeight_IToolbar: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Sets the value of minHeight
-  		* @param minHeight String The new value.
-  		*/
+    * @param minHeight String The new value.
+    */
   @JSName("setMinHeight")
   var setMinHeight_IToolbar: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Use this to update the title configuration
-  		* @param title String/Ext.Title You can either pass a String, or a config/instance of Ext.Title.
-  		*/
+    * @param title String/Ext.Title You can either pass a String, or a config/instance of Ext.Title.
+    */
   var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Shows the title if it exists  */
   var showTitle: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -59,7 +59,7 @@ object IToolbar {
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
     if (showTitle != null) __obj.updateDynamic("showTitle")(js.Any.fromFunction0(showTitle))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleCls)) __obj.updateDynamic("titleCls")(titleCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleCls)) __obj.updateDynamic("titleCls")(titleCls.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToolbar]
   }
 }

@@ -45,25 +45,25 @@ object ParseConfig {
     fastMode: js.UndefOr[Boolean] = js.undefined,
     header: js.UndefOr[Boolean] = js.undefined,
     newline: String = null,
-    preview: Int | Double = null,
+    preview: js.UndefOr[Double] = js.undefined,
     skipEmptyLines: js.UndefOr[Boolean] = js.undefined,
     step: (/* results */ ParseResult, /* parser */ Parser) => Unit = null,
     worker: js.UndefOr[Boolean] = js.undefined
   ): ParseConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.get.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicTyping)) __obj.updateDynamic("dynamicTyping")(dynamicTyping.asInstanceOf[js.Any])
+    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicTyping)) __obj.updateDynamic("dynamicTyping")(dynamicTyping.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastMode)) __obj.updateDynamic("fastMode")(fastMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastMode)) __obj.updateDynamic("fastMode")(fastMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
     if (newline != null) __obj.updateDynamic("newline")(newline.asInstanceOf[js.Any])
-    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipEmptyLines)) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipEmptyLines)) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.get.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction2(step))
-    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker.asInstanceOf[js.Any])
+    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseConfig]
   }
 }

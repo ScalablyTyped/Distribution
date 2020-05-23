@@ -1,6 +1,6 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.AnonBootstrapComponents
+import typings.angularCompiler.anon.BootstrapComponents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompileNgModuleMetadata protected ()
   extends typings.angularCompiler.publicApiMod.CompileNgModuleMetadata {
-  def this(hasTypeProvidersDeclaredDirectivesExportedDirectivesDeclaredPipesExportedPipesEntryComponentsBootstrapComponentsImportedModulesExportedModulesSchemasTransitiveModuleId: AnonBootstrapComponents) = this()
+  def this(hasTypeProvidersDeclaredDirectivesExportedDirectivesDeclaredPipesExportedPipesEntryComponentsBootstrapComponentsImportedModulesExportedModulesSchemasTransitiveModuleId: BootstrapComponents) = this()
 }
 

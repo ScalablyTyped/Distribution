@@ -10,9 +10,9 @@ trait ExtraPoolOptions extends PoolOptions {
 
 object ExtraPoolOptions {
   @scala.inline
-  def apply(maxSockets: Int | Double = null): ExtraPoolOptions = {
+  def apply(maxSockets: js.UndefOr[Double] = js.undefined): ExtraPoolOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSockets)) __obj.updateDynamic("maxSockets")(maxSockets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraPoolOptions]
   }
 }

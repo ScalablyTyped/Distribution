@@ -1,7 +1,7 @@
 package typings.datatablesNetButtons.DataTables
 
 import typings.datatablesNet.JQuery
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -118,7 +118,7 @@ object ButtonSettings {
     className: String = null,
     columnText: (/* dt */ Api, /* i */ Double, /* title */ String) => String = null,
     columns: js.Any = null,
-    customize: /* win */ Window_ | String => Unit = null,
+    customize: /* win */ Window | String => Unit = null,
     customizeData: /* content */ js.Any => Unit = null,
     destroy: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -147,9 +147,9 @@ object ButtonSettings {
   ): ButtonSettings = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction4(action))
-    if (!js.isUndefined(autoPrint)) __obj.updateDynamic("autoPrint")(autoPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPrint)) __obj.updateDynamic("autoPrint")(autoPrint.get.asInstanceOf[js.Any])
     if (available != null) __obj.updateDynamic("available")(js.Any.fromFunction2(available))
-    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.asInstanceOf[js.Any])
+    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.get.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (columnText != null) __obj.updateDynamic("columnText")(js.Any.fromFunction3(columnText))
@@ -157,7 +157,7 @@ object ButtonSettings {
     if (customize != null) __obj.updateDynamic("customize")(js.Any.fromFunction1(customize))
     if (customizeData != null) __obj.updateDynamic("customizeData")(js.Any.fromFunction1(customizeData))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction3(destroy))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar.asInstanceOf[js.Any])
     if (exportOptions != null) __obj.updateDynamic("exportOptions")(exportOptions.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
@@ -165,8 +165,8 @@ object ButtonSettings {
     if (fieldBoundary != null) __obj.updateDynamic("fieldBoundary")(fieldBoundary.asInstanceOf[js.Any])
     if (fieldSeparator != null) __obj.updateDynamic("fieldSeparator")(fieldSeparator.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction3(init))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])

@@ -158,8 +158,8 @@ object IMapOptions {
     enableInertia: js.UndefOr[Boolean] = js.undefined,
     liteMode: js.UndefOr[Boolean] = js.undefined,
     maxBounds: LocationRect = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
+    maxZoom: js.UndefOr[Double] = js.undefined,
+    minZoom: js.UndefOr[Double] = js.undefined,
     navigationBarMode: NavigationBarMode = null,
     navigationBarOrientation: NavigationBarOrientation = null,
     showBreadcrumb: js.UndefOr[Boolean] = js.undefined,
@@ -175,37 +175,37 @@ object IMapOptions {
     supportedMapTypes: js.Array[MapTypeId] = null
   ): IMapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHidingLabelsOfRoad)) __obj.updateDynamic("allowHidingLabelsOfRoad")(allowHidingLabelsOfRoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInfoboxOverflow)) __obj.updateDynamic("allowInfoboxOverflow")(allowInfoboxOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHidingLabelsOfRoad)) __obj.updateDynamic("allowHidingLabelsOfRoad")(allowHidingLabelsOfRoad.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInfoboxOverflow)) __obj.updateDynamic("allowInfoboxOverflow")(allowInfoboxOverflow.get.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (customMapStyle != null) __obj.updateDynamic("customMapStyle")(customMapStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableBirdseye)) __obj.updateDynamic("disableBirdseye")(disableBirdseye.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableKeyboardInput)) __obj.updateDynamic("disableKeyboardInput")(disableKeyboardInput.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMapTypeSelectorMouseOver)) __obj.updateDynamic("disableMapTypeSelectorMouseOver")(disableMapTypeSelectorMouseOver.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePanning)) __obj.updateDynamic("disablePanning")(disablePanning.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrollWheelZoom)) __obj.updateDynamic("disableScrollWheelZoom")(disableScrollWheelZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStreetside)) __obj.updateDynamic("disableStreetside")(disableStreetside.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStreetsideAutoCoverage)) __obj.updateDynamic("disableStreetsideAutoCoverage")(disableStreetsideAutoCoverage.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableZooming)) __obj.updateDynamic("disableZooming")(disableZooming.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCORS)) __obj.updateDynamic("enableCORS")(enableCORS.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableClickableLogo)) __obj.updateDynamic("enableClickableLogo")(enableClickableLogo.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHighDpi)) __obj.updateDynamic("enableHighDpi")(enableHighDpi.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInertia)) __obj.updateDynamic("enableInertia")(enableInertia.asInstanceOf[js.Any])
-    if (!js.isUndefined(liteMode)) __obj.updateDynamic("liteMode")(liteMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableBirdseye)) __obj.updateDynamic("disableBirdseye")(disableBirdseye.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableKeyboardInput)) __obj.updateDynamic("disableKeyboardInput")(disableKeyboardInput.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMapTypeSelectorMouseOver)) __obj.updateDynamic("disableMapTypeSelectorMouseOver")(disableMapTypeSelectorMouseOver.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePanning)) __obj.updateDynamic("disablePanning")(disablePanning.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScrollWheelZoom)) __obj.updateDynamic("disableScrollWheelZoom")(disableScrollWheelZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStreetside)) __obj.updateDynamic("disableStreetside")(disableStreetside.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStreetsideAutoCoverage)) __obj.updateDynamic("disableStreetsideAutoCoverage")(disableStreetsideAutoCoverage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableZooming)) __obj.updateDynamic("disableZooming")(disableZooming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCORS)) __obj.updateDynamic("enableCORS")(enableCORS.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableClickableLogo)) __obj.updateDynamic("enableClickableLogo")(enableClickableLogo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHighDpi)) __obj.updateDynamic("enableHighDpi")(enableHighDpi.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableInertia)) __obj.updateDynamic("enableInertia")(enableInertia.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(liteMode)) __obj.updateDynamic("liteMode")(liteMode.get.asInstanceOf[js.Any])
     if (maxBounds != null) __obj.updateDynamic("maxBounds")(maxBounds.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
     if (navigationBarMode != null) __obj.updateDynamic("navigationBarMode")(navigationBarMode.asInstanceOf[js.Any])
     if (navigationBarOrientation != null) __obj.updateDynamic("navigationBarOrientation")(navigationBarOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBreadcrumb)) __obj.updateDynamic("showBreadcrumb")(showBreadcrumb.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDashboard)) __obj.updateDynamic("showDashboard")(showDashboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLocateMeButton)) __obj.updateDynamic("showLocateMeButton")(showLocateMeButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLogo)) __obj.updateDynamic("showLogo")(showLogo.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMapTypeSelector)) __obj.updateDynamic("showMapTypeSelector")(showMapTypeSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(showScalebar)) __obj.updateDynamic("showScalebar")(showScalebar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTermsLink)) __obj.updateDynamic("showTermsLink")(showTermsLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTrafficButton)) __obj.updateDynamic("showTrafficButton")(showTrafficButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showZoomButtons)) __obj.updateDynamic("showZoomButtons")(showZoomButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBreadcrumb)) __obj.updateDynamic("showBreadcrumb")(showBreadcrumb.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDashboard)) __obj.updateDynamic("showDashboard")(showDashboard.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLocateMeButton)) __obj.updateDynamic("showLocateMeButton")(showLocateMeButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLogo)) __obj.updateDynamic("showLogo")(showLogo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMapTypeSelector)) __obj.updateDynamic("showMapTypeSelector")(showMapTypeSelector.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showScalebar)) __obj.updateDynamic("showScalebar")(showScalebar.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTermsLink)) __obj.updateDynamic("showTermsLink")(showTermsLink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTrafficButton)) __obj.updateDynamic("showTrafficButton")(showTrafficButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showZoomButtons)) __obj.updateDynamic("showZoomButtons")(showZoomButtons.get.asInstanceOf[js.Any])
     if (streetsideOptions != null) __obj.updateDynamic("streetsideOptions")(streetsideOptions.asInstanceOf[js.Any])
     if (supportedMapTypes != null) __obj.updateDynamic("supportedMapTypes")(supportedMapTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapOptions]

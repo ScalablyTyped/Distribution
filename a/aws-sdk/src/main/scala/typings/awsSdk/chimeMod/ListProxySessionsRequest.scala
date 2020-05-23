@@ -28,12 +28,12 @@ object ListProxySessionsRequest {
   @scala.inline
   def apply(
     VoiceConnectorId: NonEmptyString128,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[ResultMax] = js.undefined,
     NextToken: NextTokenString = null,
     Status: ProxySessionStatus = null
   ): ListProxySessionsRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProxySessionsRequest]

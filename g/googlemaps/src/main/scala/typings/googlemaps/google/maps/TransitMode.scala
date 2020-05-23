@@ -1,6 +1,5 @@
 package typings.googlemaps.google.maps
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,23 +24,6 @@ object TransitMode extends js.Object {
   
   @js.native
   sealed trait TRAM extends TransitMode
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TransitMode with String] = js.native
-  /* "BUS" */ @js.native
-  object BUS extends TopLevel[BUS with String]
-  
-  /* "RAIL" */ @js.native
-  object RAIL extends TopLevel[RAIL with String]
-  
-  /* "SUBWAY" */ @js.native
-  object SUBWAY extends TopLevel[SUBWAY with String]
-  
-  /* "TRAIN" */ @js.native
-  object TRAIN extends TopLevel[TRAIN with String]
-  
-  /* "TRAM" */ @js.native
-  object TRAM extends TopLevel[TRAM with String]
   
 }
 

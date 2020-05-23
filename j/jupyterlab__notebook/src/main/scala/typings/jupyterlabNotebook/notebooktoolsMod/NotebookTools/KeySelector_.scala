@@ -1,6 +1,6 @@
 package typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLSelectElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,7 +43,7 @@ class KeySelector_ protected () extends Tool {
     * called in response to events on the notebook panel's node. It should
     * not be called directly by user code.
     */
-  def handleEvent(event: Event_): Unit = js.native
+  def handleEvent(event: Event): Unit = js.native
   /**
     * Handle a change to the value.
     */

@@ -1,6 +1,6 @@
 package typings.rotJs.dijkstraMod
 
-import typings.rotJs.PartialOptions
+import typings.rotJs.anon.PartialOptions
 import typings.rotJs.pathPathMod.PassableCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`

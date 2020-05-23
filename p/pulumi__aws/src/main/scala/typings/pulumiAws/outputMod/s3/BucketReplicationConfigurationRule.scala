@@ -44,14 +44,14 @@ object BucketReplicationConfigurationRule {
     filter: BucketReplicationConfigurationRuleFilter = null,
     id: String = null,
     prefix: String = null,
-    priority: Int | Double = null,
+    priority: js.UndefOr[Double] = js.undefined,
     sourceSelectionCriteria: BucketReplicationConfigurationRuleSourceSelectionCriteria = null
   ): BucketReplicationConfigurationRule = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     if (sourceSelectionCriteria != null) __obj.updateDynamic("sourceSelectionCriteria")(sourceSelectionCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRule]
   }

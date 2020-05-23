@@ -38,8 +38,8 @@ object TestInvokeAuthorizerResponse {
   def apply(
     authorization: MapOfStringToList = null,
     claims: MapOfStringToString = null,
-    clientStatus: Int | scala.Double = null,
-    latency: Int | scala.Double = null,
+    clientStatus: js.UndefOr[Integer] = js.undefined,
+    latency: js.UndefOr[Long] = js.undefined,
     log: String = null,
     policy: String = null,
     principalId: String = null
@@ -47,8 +47,8 @@ object TestInvokeAuthorizerResponse {
     val __obj = js.Dynamic.literal()
     if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
     if (claims != null) __obj.updateDynamic("claims")(claims.asInstanceOf[js.Any])
-    if (clientStatus != null) __obj.updateDynamic("clientStatus")(clientStatus.asInstanceOf[js.Any])
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientStatus)) __obj.updateDynamic("clientStatus")(clientStatus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency.get.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     if (principalId != null) __obj.updateDynamic("principalId")(principalId.asInstanceOf[js.Any])

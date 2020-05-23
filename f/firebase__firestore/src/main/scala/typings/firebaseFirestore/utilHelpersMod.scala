@@ -1,10 +1,14 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.anon.AddedRemoved
+import typings.firebaseFirestore.anon.Key
+import typings.firebaseFirestore.anon.Removed
 import typings.firebaseFirestore.blobMod.Blob
 import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.collectionsMod.MaybeDocumentMap_
 import typings.firebaseFirestore.databaseInfoMod.DatabaseId
+import typings.firebaseFirestore.databaseMod.DocumentReference
 import typings.firebaseFirestore.documentComparatorMod.DocumentComparator
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.Document
@@ -13,10 +17,8 @@ import typings.firebaseFirestore.documentMod.MaybeDocument
 import typings.firebaseFirestore.documentMod.NoDocument
 import typings.firebaseFirestore.documentMod.UnknownDocument
 import typings.firebaseFirestore.documentSetMod.DocumentSet
-import typings.firebaseFirestore.firebaseFirestoreStrings.LessthansignDELETEGreaterthansign
+import typings.firebaseFirestore.errorMod.Code
 import typings.firebaseFirestore.localViewChangesMod.LocalViewChanges
-import typings.firebaseFirestore.modelFieldValueMod.JsonObject
-import typings.firebaseFirestore.modelFieldValueMod.ObjectValue
 import typings.firebaseFirestore.mutationMod.DeleteMutation
 import typings.firebaseFirestore.mutationMod.FieldMask
 import typings.firebaseFirestore.mutationMod.MutationResult
@@ -25,6 +27,8 @@ import typings.firebaseFirestore.mutationMod.Precondition
 import typings.firebaseFirestore.mutationMod.SetMutation
 import typings.firebaseFirestore.mutationMod.TransformMutation
 import typings.firebaseFirestore.objMod.Dict
+import typings.firebaseFirestore.objectValueMod.JsonObject
+import typings.firebaseFirestore.objectValueMod.ObjectValue
 import typings.firebaseFirestore.pathMod.FieldPath
 import typings.firebaseFirestore.pathMod.ResourcePath
 import typings.firebaseFirestore.queryMod.Bound
@@ -38,7 +42,6 @@ import typings.firebaseFirestore.sortedSetMod.SortedSet
 import typings.firebaseFirestore.targetDataMod.TargetData
 import typings.firebaseFirestore.targetDataMod.TargetPurpose
 import typings.firebaseFirestore.typesMod.TargetId
-import typings.firebaseFirestore.userDataReaderMod.DocumentKeyReference
 import typings.firebaseFirestore.userDataReaderMod.UserDataReader
 import typings.firebaseFirestore.userDataWriterMod.UserDataWriter
 import typings.firebaseFirestore.viewMod.LimboDocumentChange
@@ -52,13 +55,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/util/helpers", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/test/util/helpers", JSImport.Namespace)
 @js.native
 object utilHelpersMod extends js.Object {
   @js.native
   class DocComparator () extends js.Object
   
-  val DELETE_SENTINEL: LessthansignDELETEGreaterthansign = js.native
   def ackTarget(docsOrKeys: (Document | String)*): TargetChange = js.native
   def addTargetMapping(docsOrKeys: (Document | String)*): TargetChange = js.native
   def applyDocChanges(view: View, docsOrKeys: (Document | DocumentKey)*): ViewChange = js.native
@@ -118,7 +120,6 @@ object utilHelpersMod extends js.Object {
   def expectEqualArrays(left: js.Array[_], right: js.Array[_]): Unit = js.native
   def expectEqualArrays(left: js.Array[_], right: js.Array[_], message: String): Unit = js.native
   def expectEqualitySets[T](elems: js.Array[js.Array[T]], equalityFn: js.Function2[/* v1 */ T, /* v2 */ T, Boolean]): Unit = js.native
-  def expectFirestoreError(err: Error): Unit = js.native
   def expectNotEqual(left: js.Any, right: js.Any): Unit = js.native
   def expectNotEqual(left: js.Any, right: js.Any, message: String): Unit = js.native
   def expectSetToEqual[T](set: SortedSet[T], arr: js.Array[T]): Unit = js.native
@@ -128,9 +129,9 @@ object utilHelpersMod extends js.Object {
   def key(path: String): DocumentKey = js.native
   def keySet(keys: DocumentKey*): DocumentKeySet_ = js.native
   def keys(documents: (MaybeDocument | String)*): DocumentKeySet_ = js.native
-  def limboChanges(changes: AnonRemoved): js.Array[LimboDocumentChange] = js.native
-  def localViewChanges(targetId: TargetId, fromCache: Boolean, changes: AnonAddedRemoved): LocalViewChanges = js.native
-  def mapAsArray[K, V](sortedMap: SortedMap[K, V]): js.Array[AnonKey[K, V]] = js.native
+  def limboChanges(changes: Removed): js.Array[LimboDocumentChange] = js.native
+  def localViewChanges(targetId: TargetId, fromCache: Boolean, changes: AddedRemoved): LocalViewChanges = js.native
+  def mapAsArray[K, V](sortedMap: SortedMap[K, V]): js.Array[Key[K, V]] = js.native
   def mask(paths: String*): FieldMask = js.native
   def mutationResult(testVersion: TestSnapshotVersion): MutationResult = js.native
   def noChangeEvent(targetId: Double, snapshotVersion: Double): RemoteEvent = js.native
@@ -141,14 +142,14 @@ object utilHelpersMod extends js.Object {
   def patchMutation(keyStr: String, json: JsonObject[_], precondition: Precondition): PatchMutation = js.native
   def path(path: String): ResourcePath = js.native
   def path(path: String, offset: Double): ResourcePath = js.native
-  def ref(dbIdStr: String, keyStr: String): DocumentKeyReference = js.native
-  def ref(dbIdStr: String, keyStr: String, offset: Double): DocumentKeyReference = js.native
+  def ref(key: String): DocumentReference[DocumentData] = js.native
+  def ref(key: String, offset: Double): DocumentReference[DocumentData] = js.native
   def removedDoc(keyStr: String): NoDocument = js.native
   def resumeTokenForSnapshot(snapshotVersion: SnapshotVersion): ByteString = js.native
   def setMutation(keyStr: String, json: JsonObject[_]): SetMutation = js.native
-  def stringFromBase64String(): ByteString = js.native
-  def stringFromBase64String(value: String): ByteString = js.native
-  def stringFromBase64String(value: Uint8Array): ByteString = js.native
+  def stringFromBase64String(): String = js.native
+  def stringFromBase64String(value: String): String = js.native
+  def stringFromBase64String(value: Uint8Array): String = js.native
   def targetData(targetId: TargetId, queryPurpose: TargetPurpose, path: String): TargetData = js.native
   def testUserDataReader(): UserDataReader = js.native
   def testUserDataReader(useProto3Json: Boolean): UserDataReader = js.native
@@ -168,6 +169,7 @@ object utilHelpersMod extends js.Object {
     removed: js.Array[MaybeDocument | String],
     current: Boolean
   ): TargetChange = js.native
+  def validateFirestoreError(expectedCode: Code, actualError: Error): Unit = js.native
   def version(v: TestSnapshotVersion): SnapshotVersion = js.native
   def wrap(value: js.Any): js.Any = js.native
   def wrapObject(obj: JsonObject[_]): ObjectValue = js.native

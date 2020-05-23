@@ -21,7 +21,7 @@ object Options {
   @scala.inline
   def apply(includeEmptyLines: js.UndefOr[Boolean] = js.undefined, indent: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeEmptyLines)) __obj.updateDynamic("includeEmptyLines")(includeEmptyLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeEmptyLines)) __obj.updateDynamic("includeEmptyLines")(includeEmptyLines.get.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

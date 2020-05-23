@@ -27,17 +27,17 @@ object InputSpecArgs {
   def apply(
     axes: NumberDictionary[Double] = null,
     dtype: DataType = null,
-    maxNDim: Int | Double = null,
-    minNDim: Int | Double = null,
-    ndim: Int | Double = null,
+    maxNDim: js.UndefOr[Double] = js.undefined,
+    minNDim: js.UndefOr[Double] = js.undefined,
+    ndim: js.UndefOr[Double] = js.undefined,
     shape: Shape = null
   ): InputSpecArgs = {
     val __obj = js.Dynamic.literal()
     if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
     if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (maxNDim != null) __obj.updateDynamic("maxNDim")(maxNDim.asInstanceOf[js.Any])
-    if (minNDim != null) __obj.updateDynamic("minNDim")(minNDim.asInstanceOf[js.Any])
-    if (ndim != null) __obj.updateDynamic("ndim")(ndim.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNDim)) __obj.updateDynamic("maxNDim")(maxNDim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minNDim)) __obj.updateDynamic("minNDim")(minNDim.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ndim)) __obj.updateDynamic("ndim")(ndim.get.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSpecArgs]
   }

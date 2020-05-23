@@ -67,35 +67,35 @@ trait ColumnMetadata extends js.Object {
 object ColumnMetadata {
   @scala.inline
   def apply(
-    arrayBaseColumnType: Int | Double = null,
-    isAutoIncrement: js.UndefOr[scala.Boolean] = js.undefined,
-    isCaseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
-    isCurrency: js.UndefOr[scala.Boolean] = js.undefined,
-    isSigned: js.UndefOr[scala.Boolean] = js.undefined,
+    arrayBaseColumnType: js.UndefOr[Integer] = js.undefined,
+    isAutoIncrement: js.UndefOr[Boolean] = js.undefined,
+    isCaseSensitive: js.UndefOr[Boolean] = js.undefined,
+    isCurrency: js.UndefOr[Boolean] = js.undefined,
+    isSigned: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     name: String = null,
-    nullable: Int | Double = null,
-    precision: Int | Double = null,
-    scale: Int | Double = null,
+    nullable: js.UndefOr[Integer] = js.undefined,
+    precision: js.UndefOr[Integer] = js.undefined,
+    scale: js.UndefOr[Integer] = js.undefined,
     schemaName: String = null,
     tableName: String = null,
-    `type`: Int | Double = null,
+    `type`: js.UndefOr[Integer] = js.undefined,
     typeName: String = null
   ): ColumnMetadata = {
     val __obj = js.Dynamic.literal()
-    if (arrayBaseColumnType != null) __obj.updateDynamic("arrayBaseColumnType")(arrayBaseColumnType.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAutoIncrement)) __obj.updateDynamic("isAutoIncrement")(isAutoIncrement.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCaseSensitive)) __obj.updateDynamic("isCaseSensitive")(isCaseSensitive.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCurrency)) __obj.updateDynamic("isCurrency")(isCurrency.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSigned)) __obj.updateDynamic("isSigned")(isSigned.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrayBaseColumnType)) __obj.updateDynamic("arrayBaseColumnType")(arrayBaseColumnType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAutoIncrement)) __obj.updateDynamic("isAutoIncrement")(isAutoIncrement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCaseSensitive)) __obj.updateDynamic("isCaseSensitive")(isCaseSensitive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCurrency)) __obj.updateDynamic("isCurrency")(isCurrency.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSigned)) __obj.updateDynamic("isSigned")(isSigned.get.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nullable != null) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
     if (typeName != null) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnMetadata]
   }

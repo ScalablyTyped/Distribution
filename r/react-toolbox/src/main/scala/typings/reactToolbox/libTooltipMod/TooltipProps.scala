@@ -66,17 +66,14 @@ trait TooltipProps
 object TooltipProps {
   @scala.inline
   def apply(
-    StringDictionary: /**
-    * Additional attributes passed to composed component.
-    */
-  /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
     onClick: js.Function = null,
     onMouseEnter: js.Function = null,
     onMouseLeave: js.Function = null,
     theme: TooltipTheme = null,
     tooltip: ReactNode = null,
-    tooltipDelay: Int | Double = null,
+    tooltipDelay: js.UndefOr[Double] = js.undefined,
     tooltipHideOnClick: js.UndefOr[Boolean] = js.undefined,
     tooltipPosition: bottom | top | left | right | horizontal | vertical = null,
     tooltipShowOnClick: js.UndefOr[Boolean] = js.undefined
@@ -89,10 +86,10 @@ object TooltipProps {
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (tooltipDelay != null) __obj.updateDynamic("tooltipDelay")(tooltipDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipHideOnClick)) __obj.updateDynamic("tooltipHideOnClick")(tooltipHideOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipDelay)) __obj.updateDynamic("tooltipDelay")(tooltipDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipHideOnClick)) __obj.updateDynamic("tooltipHideOnClick")(tooltipHideOnClick.get.asInstanceOf[js.Any])
     if (tooltipPosition != null) __obj.updateDynamic("tooltipPosition")(tooltipPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipShowOnClick)) __obj.updateDynamic("tooltipShowOnClick")(tooltipShowOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipShowOnClick)) __obj.updateDynamic("tooltipShowOnClick")(tooltipShowOnClick.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }
 }

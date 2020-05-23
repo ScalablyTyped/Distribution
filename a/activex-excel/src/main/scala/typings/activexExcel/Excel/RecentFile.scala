@@ -4,18 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.RecentFile")
-@js.native
-class RecentFile protected () extends js.Object {
-  val Application: typings.activexExcel.Excel.Application = js.native
-  val Creator: XlCreator = js.native
+trait RecentFile extends js.Object {
+  val Application: typings.activexExcel.Excel.Application
+  val Creator: XlCreator
   @JSName("Excel.RecentFile_typekey")
-  var ExcelDotRecentFile_typekey: RecentFile = js.native
-  val Index: Double = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
-  val Path: String = js.native
-  def Delete(): Unit = js.native
-  def Open(): Workbook = js.native
+  var ExcelDotRecentFile_typekey: RecentFile
+  val Index: Double
+  val Name: String
+  val Parent: js.Any
+  val Path: String
+  def Delete(): Unit
+  def Open(): Workbook
+}
+
+object RecentFile {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Creator: XlCreator,
+    Delete: () => Unit,
+    ExcelDotRecentFile_typekey: RecentFile,
+    Index: Double,
+    Name: String,
+    Open: () => Workbook,
+    Parent: js.Any,
+    Path: String
+  ): RecentFile = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Open = js.Any.fromFunction0(Open), Parent = Parent.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.RecentFile_typekey")(ExcelDotRecentFile_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecentFile]
+  }
 }
 

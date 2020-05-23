@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.core.Skeleton")
 @js.native
-class Skeleton protected () extends js.Object {
-  def this(data: SkeletonData) = this()
+trait Skeleton extends js.Object {
   var _updateCache: js.Array[Updatable] = js.native
   var bones: js.Array[Bone] = js.native
   var color: Color = js.native
@@ -54,12 +52,5 @@ class Skeleton protected () extends js.Object {
   def update(delta: Double): Unit = js.native
   def updateCache(): Unit = js.native
   def updateWorldTransform(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.spine.core.Skeleton")
-@js.native
-object Skeleton extends js.Object {
-  var deprecatedWarning1: js.Any = js.native
 }
 

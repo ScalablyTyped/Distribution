@@ -23,7 +23,7 @@ object FancyBoxGroupItemWithFilledProps {
     src: String,
     $thumb: JQuery = null,
     contentType: String = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     opts: FancyBoxOptions = null,
     thumb: js.Any = null,
     `type`: image | `inline` | ajax | iframe | html = null
@@ -31,7 +31,7 @@ object FancyBoxGroupItemWithFilledProps {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if ($thumb != null) __obj.updateDynamic("$thumb")($thumb.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
     if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

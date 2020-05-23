@@ -29,12 +29,12 @@ object CancelJobRequest {
   def apply(
     jobId: JobId,
     comment: Comment = null,
-    force: js.UndefOr[scala.Boolean] = js.undefined,
+    force: js.UndefOr[ForceFlag] = js.undefined,
     reasonCode: ReasonCode = null
   ): CancelJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelJobRequest]
   }

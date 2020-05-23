@@ -1,5 +1,7 @@
 package typings.rmcTabs
 
+import typings.rmcTabs.anon.ActiveTextColor
+import typings.rmcTabs.anon.BottomTabBarSplitLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +11,8 @@ import scala.scalajs.js.annotation._
 object stylesNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var TabBar: AnonActiveTextColor = js.native
-    var Tabs: AnonBottomTabBarSplitLine = js.native
+    var TabBar: ActiveTextColor = js.native
+    var Tabs: BottomTabBarSplitLine = js.native
   }
   
 }

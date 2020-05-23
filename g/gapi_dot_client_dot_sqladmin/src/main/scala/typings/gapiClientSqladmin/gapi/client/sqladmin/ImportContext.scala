@@ -1,13 +1,13 @@
 package typings.gapiClientSqladmin.gapi.client.sqladmin
 
-import typings.gapiClientSqladmin.AnonColumns
+import typings.gapiClientSqladmin.anon.Columns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImportContext extends js.Object {
   /** Options for importing data as CSV. */
-  var csvImportOptions: js.UndefOr[AnonColumns] = js.undefined
+  var csvImportOptions: js.UndefOr[Columns] = js.undefined
   /**
     * The database (for example, guestbook) to which the import is made. If fileType is SQL and no database is specified, it is assumed that the database is
     * specified in the file to be imported. If fileType is CSV, it must be specified.
@@ -33,7 +33,7 @@ trait ImportContext extends js.Object {
 object ImportContext {
   @scala.inline
   def apply(
-    csvImportOptions: AnonColumns = null,
+    csvImportOptions: Columns = null,
     database: String = null,
     fileType: String = null,
     importUser: String = null,

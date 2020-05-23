@@ -34,14 +34,8 @@ import scala.scalajs.js.annotation._
   * unexpected behavior. It's recommended that WebGL interaction is done through
   * WebGLRenderer and/or WebGLPipeline.
   */
-@JSGlobal("Phaser.Renderer.WebGL.WebGLRenderer")
 @js.native
-class WebGLRenderer protected () extends js.Object {
-  /**
-    * 
-    * @param game The Game instance which owns this WebGL Renderer.
-    */
-  def this(game: Game) = this()
+trait WebGLRenderer extends js.Object {
   /**
     * A blank 32x32 transparent texture, as used by the Graphics system where needed.
     * This is set in the `boot` method.
@@ -560,62 +554,78 @@ class WebGLRenderer protected () extends js.Object {
   def setBlendMode(blendModeId: integer): Boolean = js.native
   def setBlendMode(blendModeId: integer, force: Boolean): Boolean = js.native
   /**
-    * [description]
+    * Sets a 1f uniform value on the given shader.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param x [description]
+    * @param x The 1f value to set on the named uniform.
     */
   def setFloat1(program: WebGLProgram, name: String, x: Double): this.type = js.native
   /**
-    * Sets the value of a uniform variable in the given WebGLProgram.
+    * Sets the value of a 1fv uniform variable in the given WebGLProgram.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
     * @param arr The new value to be used for the uniform variable.
     */
   def setFloat1v(program: WebGLProgram, name: String, arr: Float32Array): this.type = js.native
   /**
-    * [description]
+    * Sets the 2f uniform values on the given shader.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param x [description]
-    * @param y [description]
+    * @param x The 2f x value to set on the named uniform.
+    * @param y The 2f y value to set on the named uniform.
     */
   def setFloat2(program: WebGLProgram, name: String, x: Double, y: Double): this.type = js.native
   /**
-    * Sets the value of a uniform variable in the given WebGLProgram.
+    * Sets the value of a 2fv uniform variable in the given WebGLProgram.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
     * @param arr The new value to be used for the uniform variable.
     */
   def setFloat2v(program: WebGLProgram, name: String, arr: Float32Array): this.type = js.native
   /**
-    * [description]
+    * Sets the 3f uniform values on the given shader.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param x [description]
-    * @param y [description]
-    * @param z [description]
+    * @param x The 3f x value to set on the named uniform.
+    * @param y The 3f y value to set on the named uniform.
+    * @param z The 3f z value to set on the named uniform.
     */
   def setFloat3(program: WebGLProgram, name: String, x: Double, y: Double, z: Double): this.type = js.native
   /**
-    * Sets the value of a uniform variable in the given WebGLProgram.
+    * Sets the value of a 3fv uniform variable in the given WebGLProgram.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
     * @param arr The new value to be used for the uniform variable.
     */
   def setFloat3v(program: WebGLProgram, name: String, arr: Float32Array): this.type = js.native
   /**
-    * Sets uniform of a WebGLProgram
+    * Sets the 4f uniform values on the given shader.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param x X component
-    * @param y Y component
-    * @param z Z component
-    * @param w W component
+    * @param x The 4f x value to set on the named uniform.
+    * @param y The 4f y value to set on the named uniform.
+    * @param z The 4f z value to set on the named uniform.
+    * @param w The 4f w value to set on the named uniform.
     */
   def setFloat4(program: WebGLProgram, name: String, x: Double, y: Double, z: Double, w: Double): this.type = js.native
   /**
-    * Sets the value of a uniform variable in the given WebGLProgram.
+    * Sets the value of a 4fv uniform variable in the given WebGLProgram.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
     * @param arr The new value to be used for the uniform variable.
@@ -634,61 +644,75 @@ class WebGLRenderer protected () extends js.Object {
     */
   def setIndexBuffer(indexBuffer: WebGLBuffer): this.type = js.native
   /**
-    * Sets the value of a uniform variable in the given WebGLProgram.
+    * Sets a 1i uniform value on the given shader.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param x [description]
+    * @param x The 1i value to set on the named uniform.
     */
   def setInt1(program: WebGLProgram, name: String, x: integer): this.type = js.native
   /**
-    * Sets the value of a uniform variable in the given WebGLProgram.
+    * Sets the 2i uniform values on the given shader.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param x The new X component
-    * @param y The new Y component
+    * @param x The 2i x value to set on the named uniform.
+    * @param y The 2i y value to set on the named uniform.
     */
   def setInt2(program: WebGLProgram, name: String, x: integer, y: integer): this.type = js.native
   /**
-    * Sets the value of a uniform variable in the given WebGLProgram.
+    * Sets the 3i uniform values on the given shader.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param x The new X component
-    * @param y The new Y component
-    * @param z The new Z component
+    * @param x The 3i x value to set on the named uniform.
+    * @param y The 3i y value to set on the named uniform.
+    * @param z The 3i z value to set on the named uniform.
     */
   def setInt3(program: WebGLProgram, name: String, x: integer, y: integer, z: integer): this.type = js.native
   /**
-    * Sets the value of a uniform variable in the given WebGLProgram.
+    * Sets the 4i uniform values on the given shader.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param x X component
-    * @param y Y component
-    * @param z Z component
-    * @param w W component
+    * @param x The 4i x value to set on the named uniform.
+    * @param y The 4i y value to set on the named uniform.
+    * @param z The 4i z value to set on the named uniform.
+    * @param w The 4i w value to set on the named uniform.
     */
   def setInt4(program: WebGLProgram, name: String, x: integer, y: integer, z: integer, w: integer): this.type = js.native
   /**
-    * Sets the value of a 2x2 matrix uniform variable in the given WebGLProgram.
+    * Sets the value of a matrix 2fv uniform variable in the given WebGLProgram.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
     * @param transpose The value indicating whether to transpose the matrix. Must be false.
-    * @param matrix The new matrix value.
+    * @param matrix A Float32Array or sequence of 4 float values.
     */
   def setMatrix2(program: WebGLProgram, name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
   /**
-    * [description]
+    * Sets the value of a matrix 3fv uniform variable in the given WebGLProgram.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param transpose [description]
-    * @param matrix [description]
+    * @param transpose The value indicating whether to transpose the matrix. Must be false.
+    * @param matrix A Float32Array or sequence of 9 float values.
     */
   def setMatrix3(program: WebGLProgram, name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
   /**
-    * Sets uniform of a WebGLProgram
+    * Sets the value of a matrix 4fv uniform variable in the given WebGLProgram.
+    * 
+    * If the shader is not currently active, it is made active first.
     * @param program The target WebGLProgram from which the uniform location will be looked-up.
     * @param name The name of the uniform to look-up and modify.
-    * @param transpose Is the matrix transposed
-    * @param matrix Matrix data
+    * @param transpose The value indicating whether to transpose the matrix. Must be false.
+    * @param matrix A Float32Array or sequence of 16 float values.
     */
   def setMatrix4(program: WebGLProgram, name: String, transpose: Boolean, matrix: Float32Array): this.type = js.native
   /**

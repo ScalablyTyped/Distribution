@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	*	Message received from history
-	*/
+  *    Message received from history
+  */
 trait IMHistoryMessage extends js.Object {
   /**
-  		* Message body
-  		*/
+    * Message body
+    */
   var body: String
   /**
-  		* User id - author of the message
-  		*/
+    * User id - author of the message
+    */
   var from: String
   /**
-  		* Message id
-  		*/
+    * Message id
+    */
   var id: String
   /**
-  		* Message creation time
-  		*/
+    * Message creation time
+    */
   var time: String
 }
 

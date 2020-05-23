@@ -31,8 +31,8 @@ object Payment {
     data: js.Array[Buffer] = null,
     hash: Buffer = null,
     input: Buffer = null,
-    m: Int | Double = null,
-    n: Int | Double = null,
+    m: js.UndefOr[Double] = js.undefined,
+    n: js.UndefOr[Double] = js.undefined,
     name: String = null,
     network: Network = null,
     output: Buffer = null,
@@ -48,8 +48,8 @@ object Payment {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(n)) __obj.updateDynamic("n")(n.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])

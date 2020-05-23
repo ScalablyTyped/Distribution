@@ -47,25 +47,25 @@ object PlanOptions {
     geocoderClass: (/* waypointIndex */ Double, /* numberWaypoints */ Double) => Unit = null,
     geocoderPlaceholder: (/* waypointIndex */ Double, /* numberWaypoints */ Double) => String = null,
     geocodersClassName: String = null,
-    maxGeocoderTolerance: Int | Double = null,
+    maxGeocoderTolerance: js.UndefOr[Double] = js.undefined,
     reverseWaypoints: js.UndefOr[Boolean] = js.undefined,
     routeWhileDragging: js.UndefOr[Boolean] = js.undefined,
     waypointNameFallback: /* latLng */ LatLng_ => String = null
   ): PlanOptions = {
     val __obj = js.Dynamic.literal()
     if (addButtonClassName != null) __obj.updateDynamic("addButtonClassName")(addButtonClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(addWaypoints)) __obj.updateDynamic("addWaypoints")(addWaypoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(addWaypoints)) __obj.updateDynamic("addWaypoints")(addWaypoints.get.asInstanceOf[js.Any])
     if (createGeocoder != null) __obj.updateDynamic("createGeocoder")(js.Any.fromFunction3(createGeocoder))
     if (createMarker != null) __obj.updateDynamic("createMarker")(js.Any.fromFunction3(createMarker))
     if (dragStyles != null) __obj.updateDynamic("dragStyles")(dragStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableWaypoints)) __obj.updateDynamic("draggableWaypoints")(draggableWaypoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableWaypoints)) __obj.updateDynamic("draggableWaypoints")(draggableWaypoints.get.asInstanceOf[js.Any])
     if (geocoder != null) __obj.updateDynamic("geocoder")(geocoder.asInstanceOf[js.Any])
     if (geocoderClass != null) __obj.updateDynamic("geocoderClass")(js.Any.fromFunction2(geocoderClass))
     if (geocoderPlaceholder != null) __obj.updateDynamic("geocoderPlaceholder")(js.Any.fromFunction2(geocoderPlaceholder))
     if (geocodersClassName != null) __obj.updateDynamic("geocodersClassName")(geocodersClassName.asInstanceOf[js.Any])
-    if (maxGeocoderTolerance != null) __obj.updateDynamic("maxGeocoderTolerance")(maxGeocoderTolerance.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseWaypoints)) __obj.updateDynamic("reverseWaypoints")(reverseWaypoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(routeWhileDragging)) __obj.updateDynamic("routeWhileDragging")(routeWhileDragging.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxGeocoderTolerance)) __obj.updateDynamic("maxGeocoderTolerance")(maxGeocoderTolerance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseWaypoints)) __obj.updateDynamic("reverseWaypoints")(reverseWaypoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(routeWhileDragging)) __obj.updateDynamic("routeWhileDragging")(routeWhileDragging.get.asInstanceOf[js.Any])
     if (waypointNameFallback != null) __obj.updateDynamic("waypointNameFallback")(js.Any.fromFunction1(waypointNameFallback))
     __obj.asInstanceOf[PlanOptions]
   }

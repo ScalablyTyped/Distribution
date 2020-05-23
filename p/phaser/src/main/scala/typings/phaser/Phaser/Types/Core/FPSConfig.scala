@@ -35,20 +35,20 @@ trait FPSConfig extends js.Object {
 object FPSConfig {
   @scala.inline
   def apply(
-    deltaHistory: Int | Double = null,
+    deltaHistory: js.UndefOr[integer] = js.undefined,
     forceSetTimeOut: js.UndefOr[Boolean] = js.undefined,
-    min: Int | Double = null,
-    panicMax: Int | Double = null,
+    min: js.UndefOr[integer] = js.undefined,
+    panicMax: js.UndefOr[integer] = js.undefined,
     smoothStep: js.UndefOr[Boolean] = js.undefined,
-    target: Int | Double = null
+    target: js.UndefOr[integer] = js.undefined
   ): FPSConfig = {
     val __obj = js.Dynamic.literal()
-    if (deltaHistory != null) __obj.updateDynamic("deltaHistory")(deltaHistory.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSetTimeOut)) __obj.updateDynamic("forceSetTimeOut")(forceSetTimeOut.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (panicMax != null) __obj.updateDynamic("panicMax")(panicMax.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothStep)) __obj.updateDynamic("smoothStep")(smoothStep.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(deltaHistory)) __obj.updateDynamic("deltaHistory")(deltaHistory.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSetTimeOut)) __obj.updateDynamic("forceSetTimeOut")(forceSetTimeOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(panicMax)) __obj.updateDynamic("panicMax")(panicMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothStep)) __obj.updateDynamic("smoothStep")(smoothStep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FPSConfig]
   }
 }

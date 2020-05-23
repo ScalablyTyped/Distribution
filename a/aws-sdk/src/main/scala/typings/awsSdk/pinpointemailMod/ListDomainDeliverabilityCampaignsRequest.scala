@@ -35,11 +35,11 @@ object ListDomainDeliverabilityCampaignsRequest {
     StartDate: Timestamp,
     SubscribedDomain: Domain,
     NextToken: NextToken = null,
-    PageSize: Int | Double = null
+    PageSize: js.UndefOr[MaxItems] = js.undefined
   ): ListDomainDeliverabilityCampaignsRequest = {
     val __obj = js.Dynamic.literal(EndDate = EndDate.asInstanceOf[js.Any], StartDate = StartDate.asInstanceOf[js.Any], SubscribedDomain = SubscribedDomain.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDomainDeliverabilityCampaignsRequest]
   }
 }

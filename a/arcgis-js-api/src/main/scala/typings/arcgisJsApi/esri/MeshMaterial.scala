@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.arcgisJsApi.arcgisJsApiStrings.blend
 import typings.arcgisJsApi.arcgisJsApiStrings.mask
@@ -62,8 +61,4 @@ trait MeshMaterial extends Accessor {
     */
   var normalTexture: MeshTexture = js.native
 }
-
-@JSGlobal("__esri.MeshMaterial")
-@js.native
-object MeshMaterial extends TopLevel[MeshMaterialConstructor]
 

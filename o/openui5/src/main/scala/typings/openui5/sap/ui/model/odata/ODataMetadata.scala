@@ -6,16 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.odata.ODataMetadata")
 @js.native
-class ODataMetadata protected () extends EventProvider {
-  /**
-    * Constructor for a new ODataMetadata.
-    * @param sMetadataURI needs the correct metadata uri including $metadata
-    * @param mParams optional map of parameters.
-    */
-  def this(sMetadataURI: String) = this()
-  def this(sMetadataURI: String, mParams: js.Any) = this()
+trait ODataMetadata extends EventProvider {
   /**
     * Attach event-handler <code>fnFunction</code> to the 'failed' event of this
     * <code>sap.ui.model.odata.ODataMetadata</code>.

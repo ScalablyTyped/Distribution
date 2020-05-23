@@ -25,10 +25,10 @@ object DeregisterTargetFromMaintenanceWindowRequest {
   def apply(
     WindowId: MaintenanceWindowId,
     WindowTargetId: MaintenanceWindowTargetId,
-    Safe: js.UndefOr[scala.Boolean] = js.undefined
+    Safe: js.UndefOr[Boolean] = js.undefined
   ): DeregisterTargetFromMaintenanceWindowRequest = {
     val __obj = js.Dynamic.literal(WindowId = WindowId.asInstanceOf[js.Any], WindowTargetId = WindowTargetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Safe)) __obj.updateDynamic("Safe")(Safe.asInstanceOf[js.Any])
+    if (!js.isUndefined(Safe)) __obj.updateDynamic("Safe")(Safe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterTargetFromMaintenanceWindowRequest]
   }
 }

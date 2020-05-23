@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Detailed information about conditions, problems or diagnoses
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Condition extends DomainResource {
   /**
     * Contains extended information for property 'abatementBoolean'.
@@ -207,7 +207,7 @@ object Condition {
     if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
     if (_verificationStatus != null) __obj.updateDynamic("_verificationStatus")(_verificationStatus.asInstanceOf[js.Any])
     if (abatementAge != null) __obj.updateDynamic("abatementAge")(abatementAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(abatementBoolean)) __obj.updateDynamic("abatementBoolean")(abatementBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(abatementBoolean)) __obj.updateDynamic("abatementBoolean")(abatementBoolean.get.asInstanceOf[js.Any])
     if (abatementDateTime != null) __obj.updateDynamic("abatementDateTime")(abatementDateTime.asInstanceOf[js.Any])
     if (abatementPeriod != null) __obj.updateDynamic("abatementPeriod")(abatementPeriod.asInstanceOf[js.Any])
     if (abatementRange != null) __obj.updateDynamic("abatementRange")(abatementRange.asInstanceOf[js.Any])

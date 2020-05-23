@@ -1,6 +1,6 @@
 package typings.antd.breadcrumbBreadcrumbMod
 
-import typings.antd.OmitRoutechildren
+import typings.antd.anon.OmitRoutechildren
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,14 +12,14 @@ trait ComponentDescriptor[T /* <: Component[_, System[_]] */] extends js.Object 
 
 object ComponentDescriptor {
   @scala.inline
-  def apply[T /* <: Component[_, System[_]] */](
+  def apply[T](
     Component: ComponentConstructor[T],
     dependencies: js.Array[String] = null,
     multiple: js.UndefOr[Boolean] = js.undefined
   ): ComponentDescriptor[T] = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentDescriptor[T]]
   }
 }

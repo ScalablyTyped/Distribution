@@ -45,7 +45,7 @@ trait IPoll_[T, U, V /* <: String */] extends js.Object {
 
 object IPoll_ {
   @scala.inline
-  def apply[T, U, V /* <: String */](
+  def apply[T, U, V](
     disposed: ISignal[IPoll_[T, U, V], Unit],
     frequency: Frequency,
     isDisposed: Boolean,

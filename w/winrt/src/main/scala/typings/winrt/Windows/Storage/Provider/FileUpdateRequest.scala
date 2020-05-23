@@ -6,18 +6,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Provider.FileUpdateRequest")
-@js.native
-class FileUpdateRequest () extends IFileUpdateRequest {
-  /* CompleteClass */
-  override var contentId: String = js.native
-  /* CompleteClass */
-  override var file: StorageFile = js.native
-  /* CompleteClass */
-  override var status: FileUpdateStatus = js.native
-  /* CompleteClass */
-  override def getDeferral(): FileUpdateRequestDeferral = js.native
-  /* CompleteClass */
-  override def updateLocalFile(value: IStorageFile): Unit = js.native
+trait FileUpdateRequest extends IFileUpdateRequest
+
+object FileUpdateRequest {
+  @scala.inline
+  def apply(
+    contentId: String,
+    file: StorageFile,
+    getDeferral: () => FileUpdateRequestDeferral,
+    status: FileUpdateStatus,
+    updateLocalFile: IStorageFile => Unit
+  ): FileUpdateRequest = {
+    val __obj = js.Dynamic.literal(contentId = contentId.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral), status = status.asInstanceOf[js.Any], updateLocalFile = js.Any.fromFunction1(updateLocalFile))
+    __obj.asInstanceOf[FileUpdateRequest]
+  }
 }
 

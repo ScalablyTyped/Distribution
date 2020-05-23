@@ -62,7 +62,7 @@ object FeatureFormProperties {
   ): FeatureFormProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
     if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
     if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
     if (groupDisplay != null) __obj.updateDynamic("groupDisplay")(groupDisplay.asInstanceOf[js.Any])

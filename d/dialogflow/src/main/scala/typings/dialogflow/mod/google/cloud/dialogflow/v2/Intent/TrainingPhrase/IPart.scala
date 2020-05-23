@@ -19,15 +19,15 @@ trait IPart extends js.Object {
 object IPart {
   @scala.inline
   def apply(
-    alias: String = null,
-    entityType: String = null,
-    text: String = null,
-    userDefined: js.UndefOr[Boolean] = js.undefined
+    alias: js.UndefOr[Null | String] = js.undefined,
+    entityType: js.UndefOr[Null | String] = js.undefined,
+    text: js.UndefOr[Null | String] = js.undefined,
+    userDefined: js.UndefOr[Null | Boolean] = js.undefined
   ): IPart = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(entityType)) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (!js.isUndefined(userDefined)) __obj.updateDynamic("userDefined")(userDefined.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPart]
   }

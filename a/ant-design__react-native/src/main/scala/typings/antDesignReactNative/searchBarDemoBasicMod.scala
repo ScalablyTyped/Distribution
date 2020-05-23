@@ -1,5 +1,6 @@
 package typings.antDesignReactNative
 
+import typings.antDesignReactNative.anon.ValueString
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ object searchBarDemoBasicMod extends js.Object {
   trait SearchBarDemo
     extends Component[js.Any, js.Any, js.Any] {
     @JSName("state")
-    var state_SearchBarDemo: AnonValueString = js.native
+    var state_SearchBarDemo: ValueString = js.native
     def clear(): Unit = js.native
     def onChange(value: js.Any): Unit = js.native
   }

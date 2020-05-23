@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON._DDSTextureLoader")
 @js.native
-class DDSTextureLoader () extends IInternalTextureLoader {
+trait DDSTextureLoader extends IInternalTextureLoader {
   /**
     * Uploads the 2D texture data to the WebGL texture. It has already been bound once in the callback.
     * @param data contains the texture data

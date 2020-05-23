@@ -1,5 +1,7 @@
 package typings.ramda
 
+import typings.ramda.anon.Fn0
+import typings.ramda.anon.FnCallValObj
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

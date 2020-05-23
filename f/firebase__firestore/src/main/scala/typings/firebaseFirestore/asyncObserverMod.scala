@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/async_observer", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/async_observer", JSImport.Namespace)
 @js.native
 object asyncObserverMod extends js.Object {
   @js.native

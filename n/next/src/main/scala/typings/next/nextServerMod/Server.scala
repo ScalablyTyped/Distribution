@@ -1,13 +1,13 @@
 package typings.next.nextServerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.next.AnonAmpOptimizerConfig
-import typings.next.AnonCatchAllRoute
-import typings.next.AnonHeaders
-import typings.next.AnonMatch
+import typings.next.anon.AmpOptimizerConfig
+import typings.next.anon.CatchAllRoute
+import typings.next.anon.Headers
+import typings.next.anon.Match
+import typings.next.anon.defaultloadStaticPathsdis
 import typings.next.apiUtilsMod.ApiPreviewProps
 import typings.next.buildMod.PrerenderManifest
-import typings.next.defaultloadStaticPathsdis
 import typings.next.serverRouterMod.DynamicRoutes
 import typings.next.serverRouterMod.Params
 import typings.next.serverRouterMod.Route_
@@ -27,7 +27,7 @@ trait Server extends js.Object {
   var buildId: String = js.native
   var compression: js.UndefOr[js.Any] = js.native
   var customErrorNo404Warn: js.Any = js.native
-  var customRoutes: js.UndefOr[AnonHeaders] = js.native
+  var customRoutes: js.UndefOr[Headers] = js.native
   var dir: String = js.native
   var distDir: String = js.native
   var dynamicRoutes: js.UndefOr[DynamicRoutes] = js.native
@@ -52,7 +52,7 @@ trait Server extends js.Object {
   var pagesManifest: js.UndefOr[StringDictionary[String]] = js.native
   var publicDir: String = js.native
   var quiet: Boolean = js.native
-  var renderOpts: AnonAmpOptimizerConfig = js.native
+  var renderOpts: AmpOptimizerConfig = js.native
   var renderToHTMLWithComponents: js.Any = js.native
   var router: typings.next.serverRouterMod.default = js.native
   var serverBuildDir: String = js.native
@@ -63,9 +63,9 @@ trait Server extends js.Object {
   /* protected */ def currentPhase(): String = js.native
   /* protected */ def ensureApiPage(pathname: String): js.Promise[Unit] = js.native
   /* protected */ def generatePublicRoutes(): js.Array[Route_] = js.native
-  /* protected */ def generateRoutes(): AnonCatchAllRoute = js.native
+  /* protected */ def generateRoutes(): CatchAllRoute = js.native
   /* protected */ def getCustomRoutes(): js.Any = js.native
-  /* protected */ def getDynamicRoutes(): js.Array[AnonMatch] = js.native
+  /* protected */ def getDynamicRoutes(): js.Array[Match] = js.native
   /* protected */ def getPrerenderManifest(): PrerenderManifest = js.native
   /* protected */ def getPreviewProps(): ApiPreviewProps = js.native
   def getRequestHandler(): js.Function3[

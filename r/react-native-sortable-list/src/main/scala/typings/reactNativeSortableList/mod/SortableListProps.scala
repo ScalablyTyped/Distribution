@@ -3,6 +3,9 @@ package typings.reactNativeSortableList.mod
 import typings.react.mod.ReactElement
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativeSortableList.reactNativeSortableListStrings.always
+import typings.reactNativeSortableList.reactNativeSortableListStrings.handled
+import typings.reactNativeSortableList.reactNativeSortableListStrings.never
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,6 +33,16 @@ trait SortableListProps[T, K] extends js.Object {
     * these styles will be applied to the inner scroll view content container, excluding the header and footer
     */
   var innerContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  /**
+    * Determines when the keyboard should stay visible after a tap.
+    *  - 'never' (the default), tapping outside of the focused text input when the keyboard is up dismisses
+    *    the keyboard. When this happens, children won't receive the tap.
+    *  - 'always', the keyboard will not dismiss automatically, and the scroll view will not catch taps, but
+    *    children of the scroll view can catch taps.
+    *  - 'handled', the keyboard will not dismiss automatically when the tap was handled by a children,
+    *    (or captured by an ancestor).
+    */
+  var keyboardShouldPersistTaps: js.UndefOr[never | always | handled] = js.undefined
   /**
     * whether you intend to use the toggleRowActive method to activate a row or use the out of box solution.
     */
@@ -104,10 +117,11 @@ object SortableListProps {
   def apply[T, K](
     data: DataByNumber[T] | DataByString[T],
     renderRow: RowProps[T, K] => ReactElement | Null,
-    autoscrollAreaSize: Int | Double = null,
-    contentContainerStyle: StyleProp[ViewStyle] = null,
+    autoscrollAreaSize: js.UndefOr[Double] = js.undefined,
+    contentContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     horizontal: js.UndefOr[Boolean] = js.undefined,
-    innerContainerStyle: StyleProp[ViewStyle] = null,
+    innerContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
+    keyboardShouldPersistTaps: never | always | handled = null,
     manuallyActivateRows: js.UndefOr[Boolean] = js.undefined,
     onActivateRow: /* key */ K => Unit = null,
     onChangeOrder: /* nextOrder */ js.Array[K] => Unit = null,
@@ -117,19 +131,20 @@ object SortableListProps {
     refreshControl: ReactElement = null,
     renderFooter: () => ReactElement = null,
     renderHeader: () => ReactElement = null,
-    rowActivationTime: Int | Double = null,
+    rowActivationTime: js.UndefOr[Double] = js.undefined,
     scrollEnabled: js.UndefOr[Boolean] = js.undefined,
     showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
     showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
     sortingEnabled: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): SortableListProps[T, K] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], renderRow = js.Any.fromFunction1(renderRow))
-    if (autoscrollAreaSize != null) __obj.updateDynamic("autoscrollAreaSize")(autoscrollAreaSize.asInstanceOf[js.Any])
-    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (innerContainerStyle != null) __obj.updateDynamic("innerContainerStyle")(innerContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(manuallyActivateRows)) __obj.updateDynamic("manuallyActivateRows")(manuallyActivateRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoscrollAreaSize)) __obj.updateDynamic("autoscrollAreaSize")(autoscrollAreaSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentContainerStyle)) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerContainerStyle)) __obj.updateDynamic("innerContainerStyle")(innerContainerStyle.asInstanceOf[js.Any])
+    if (keyboardShouldPersistTaps != null) __obj.updateDynamic("keyboardShouldPersistTaps")(keyboardShouldPersistTaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(manuallyActivateRows)) __obj.updateDynamic("manuallyActivateRows")(manuallyActivateRows.get.asInstanceOf[js.Any])
     if (onActivateRow != null) __obj.updateDynamic("onActivateRow")(js.Any.fromFunction1(onActivateRow))
     if (onChangeOrder != null) __obj.updateDynamic("onChangeOrder")(js.Any.fromFunction1(onChangeOrder))
     if (onPressRow != null) __obj.updateDynamic("onPressRow")(js.Any.fromFunction1(onPressRow))
@@ -138,12 +153,12 @@ object SortableListProps {
     if (refreshControl != null) __obj.updateDynamic("refreshControl")(refreshControl.asInstanceOf[js.Any])
     if (renderFooter != null) __obj.updateDynamic("renderFooter")(js.Any.fromFunction0(renderFooter))
     if (renderHeader != null) __obj.updateDynamic("renderHeader")(js.Any.fromFunction0(renderHeader))
-    if (rowActivationTime != null) __obj.updateDynamic("rowActivationTime")(rowActivationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsVerticalScrollIndicator)) __obj.updateDynamic("showsVerticalScrollIndicator")(showsVerticalScrollIndicator.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortingEnabled)) __obj.updateDynamic("sortingEnabled")(sortingEnabled.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowActivationTime)) __obj.updateDynamic("rowActivationTime")(rowActivationTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showsVerticalScrollIndicator)) __obj.updateDynamic("showsVerticalScrollIndicator")(showsVerticalScrollIndicator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortingEnabled)) __obj.updateDynamic("sortingEnabled")(sortingEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableListProps[T, K]]
   }
 }

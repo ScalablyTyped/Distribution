@@ -1,5 +1,6 @@
 package typings.grammarkdown
 
+import typings.esfxCancelable.distMod.Cancelable
 import typings.grammarkdown.diagnosticsMod.DiagnosticMessages
 import typings.grammarkdown.nodesMod.CommentTrivia
 import typings.grammarkdown.nodesMod.HtmlCloseTagTrivia
@@ -17,13 +18,9 @@ object scannerMod extends js.Object {
   @js.native
   class Scanner protected () extends js.Object {
     def this(filename: String, text: String, diagnostics: DiagnosticMessages) = this()
-    def this(
-      filename: String,
-      text: String,
-      diagnostics: DiagnosticMessages,
-      cancellationToken: CancellationToken
-    ) = this()
-    val cancellationToken: js.Any = js.native
+    def this(filename: String, text: String, diagnostics: DiagnosticMessages, cancelable: Cancelable) = this()
+    def this(filename: String, text: String, diagnostics: DiagnosticMessages, cancelable: CancellationToken) = this()
+    val cancelToken: js.UndefOr[js.Any] = js.native
     var currentIndentLength: js.Any = js.native
     var decimalDigitAt: js.Any = js.native
     var diagnostics: js.Any = js.native
@@ -45,7 +42,6 @@ object scannerMod extends js.Object {
     var scanHexDigits: js.Any = js.native
     var scanHtmlTrivia: js.Any = js.native
     var scanLine: js.Any = js.native
-    var scanNumber: js.Any = js.native
     var scanProse: js.Any = js.native
     var scanString: js.Any = js.native
     var setHasPrecedingBlankLine: js.Any = js.native

@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable7
 import org.scalablytyped.runtime.TopLevel
-import typings.highcharts.TypeofColor
+import typings.highcharts.anon.TypeofColor
 import typings.highcharts.mod.AnimationOptionsObject
 import typings.highcharts.mod.AnnotationControlPointOptionsObject
 import typings.highcharts.mod.AnnotationControllable
@@ -40,7 +40,7 @@ import typings.highcharts.mod.TimeOptions
 import typings.highcharts.mod.Time_
 import typings.highcharts.mod.TooltipOptions
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -123,10 +123,10 @@ object Highcharts extends js.Object {
       * @param chart
       *        The Chart instance to apply the axis on.
       *
-      * @param options
+      * @param userOptions
       *        Axis options.
       */
-    def this(chart: Chart_, options: AxisOptions) = this()
+    def this(chart: Chart_, userOptions: AxisOptions) = this()
   }
   
   @js.native
@@ -476,17 +476,16 @@ object Highcharts extends js.Object {
   def error(code: Double, stop: Boolean): Unit = js.native
   def error(code: Double, stop: Boolean, chart: Chart_): Unit = js.native
   def error(code: Double, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
-  def extend[T](a: T, b: js.Object): T = js.native
-  def extend[T](a: js.UndefOr[scala.Nothing], b: js.Object): T = js.native
+  def extend[T](a: js.UndefOr[T], b: js.Object): T = js.native
   def extendClass[T](parent: Class[T], members: Dictionary[_]): Class[T] = js.native
   def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = js.native
   def fireEvent[T](el: T, `type`: String): Unit = js.native
   def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_]): Unit = js.native
   def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: js.Function): Unit = js.native
   def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: EventCallbackFunction[T]): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: Event_): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: Event_, defaultFunction: js.Function): Unit = js.native
-  def fireEvent[T](el: T, `type`: String, eventArguments: Event_, defaultFunction: EventCallbackFunction[T]): Unit = js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: Event): Unit = js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = js.native
+  def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = js.native
   def format(str: String, ctx: Record[String, _]): String = js.native
   def format(str: String, ctx: Record[String, _], chart: Chart_): String = js.native
   def getMagnitude(num: Double): Double = js.native
@@ -506,10 +505,10 @@ object Highcharts extends js.Object {
   def isString(s: js.Any): Boolean = js.native
   def keys(obj: js.Any): js.Array[String] = js.native
   def map(arr: js.Array[_], fn: js.Function): js.Array[_] = js.native
+  def merge[T](): T = js.native
   def merge[T](a: T, n: js.UndefOr[js.Object]*): T = js.native
+  def merge[T](extend: Boolean): T = js.native
   def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = js.native
-  def merge[T](extend: Boolean, n: js.UndefOr[js.Object]*): T = js.native
-  def merge[T](n: js.UndefOr[js.Object]*): T = js.native
   def normalizeTickInterval(interval: Double): Double = js.native
   def normalizeTickInterval(interval: Double, multiples: js.Array[_]): Double = js.native
   def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double): Double = js.native
@@ -558,9 +557,7 @@ object Highcharts extends js.Object {
     props: Dictionary[_],
     pointProps: Dictionary[_]
   ): typings.highcharts.mod.Series = js.native
-  def setAnimation(animation: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-  def setAnimation(animation: Boolean, chart: Chart_): Unit = js.native
-  def setAnimation(animation: AnimationOptionsObject, chart: Chart_): Unit = js.native
+  def setAnimation(animation: js.UndefOr[AnimationOptionsObject | Boolean], chart: Chart_): Unit = js.native
   def setOptions(options: Options): Options = js.native
   def some(arr: js.Array[_], fn: js.Function, ctx: js.Any): Boolean = js.native
   def splat(obj: js.Any): js.Array[_] = js.native
@@ -595,7 +592,7 @@ object Highcharts extends js.Object {
   @js.native
   object Axis
     extends TopLevel[
-          Instantiable2[/* chart */ Chart_, /* options */ AxisOptions, typings.highcharts.mod.Axis]
+          Instantiable2[/* chart */ Chart_, /* userOptions */ AxisOptions, typings.highcharts.mod.Axis]
         ]
   
   @js.native

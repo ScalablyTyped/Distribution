@@ -28,13 +28,13 @@ object EbsInstanceBlockDevice {
   @scala.inline
   def apply(
     AttachTime: DateTime = null,
-    DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
+    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
     Status: AttachmentStatus = null,
     VolumeId: String = null
   ): EbsInstanceBlockDevice = {
     val __obj = js.Dynamic.literal()
     if (AttachTime != null) __obj.updateDynamic("AttachTime")(AttachTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsInstanceBlockDevice]

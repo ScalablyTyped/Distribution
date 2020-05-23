@@ -16,7 +16,7 @@ object ScriptOptions {
   def apply(cli: js.Any = null, schedule: js.UndefOr[Boolean] = js.undefined): ScriptOptions = {
     val __obj = js.Dynamic.literal()
     if (cli != null) __obj.updateDynamic("cli")(cli.asInstanceOf[js.Any])
-    if (!js.isUndefined(schedule)) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (!js.isUndefined(schedule)) __obj.updateDynamic("schedule")(schedule.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptOptions]
   }
 }

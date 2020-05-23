@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 object implementationMod extends js.Object {
   val custom: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof util.promisify.custom */ js.Any = js.native
   /**
-  	 * @deprecated
-  	 * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
-  	 *
-  	 * Use `util.promisify.custom` instead.
-  	 */
+    * @deprecated
+    * Not exposed by native `util.promisify` or supported by browserify's `util.promisify`.
+    *
+    * Use `util.promisify.custom` instead.
+    */
   val customPromisifyArgs: js.Symbol = js.native
   // tslint:disable-next-line: ban-types
   def apply(fn: js.Function): js.Function = js.native

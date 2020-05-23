@@ -57,11 +57,11 @@ object BasemapToggleProperties {
   ): BasemapToggleProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (nextBasemap != null) __obj.updateDynamic("nextBasemap")(nextBasemap.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleVisible)) __obj.updateDynamic("titleVisible")(titleVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleVisible)) __obj.updateDynamic("titleVisible")(titleVisible.get.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements.asInstanceOf[js.Any])

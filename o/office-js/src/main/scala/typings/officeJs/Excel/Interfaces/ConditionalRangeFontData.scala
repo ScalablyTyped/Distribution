@@ -12,35 +12,35 @@ import scala.scalajs.js.annotation._
 trait ConditionalRangeFontData extends js.Object {
   /**
     *
-    * Represents the bold status of font.
+    * Specifies if the font is bold.
     *
     * [Api set: ExcelApi 1.6]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.6]
     */
   var color: js.UndefOr[String] = js.undefined
   /**
     *
-    * Represents the italic status of the font.
+    * Specifies if the font is italic.
     *
     * [Api set: ExcelApi 1.6]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the strikethrough status of the font.
+    * Specifies the strikethrough status of the font.
     *
     * [Api set: ExcelApi 1.6]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+    * The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -57,10 +57,10 @@ object ConditionalRangeFontData {
     underline: ConditionalRangeFontUnderlineStyle | None | Single | Double = null
   ): ConditionalRangeFontData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.get.asInstanceOf[js.Any])
     if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalRangeFontData]
   }

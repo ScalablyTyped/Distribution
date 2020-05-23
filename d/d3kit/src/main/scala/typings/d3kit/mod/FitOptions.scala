@@ -20,7 +20,7 @@ object FitOptions {
     maxHeight: String | Double = null,
     maxWidth: String | Double = null,
     mode: String = null,
-    ratio: Int | Double = null,
+    ratio: js.UndefOr[Double] = js.undefined,
     width: String | Double = null
   ): FitOptions = {
     val __obj = js.Dynamic.literal()
@@ -28,7 +28,7 @@ object FitOptions {
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FitOptions]
   }

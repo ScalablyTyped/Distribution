@@ -32,6 +32,15 @@ object wicgMediasessionStrings {
   @js.native
   sealed trait seekforward extends MediaSessionAction
   
+  @js.native
+  sealed trait seekto extends MediaSessionAction
+  
+  @js.native
+  sealed trait skipad extends MediaSessionAction
+  
+  @js.native
+  sealed trait stop extends MediaSessionAction
+  
   @scala.inline
   def nexttrack: nexttrack = "nexttrack".asInstanceOf[nexttrack]
   @scala.inline
@@ -50,5 +59,11 @@ object wicgMediasessionStrings {
   def seekbackward: seekbackward = "seekbackward".asInstanceOf[seekbackward]
   @scala.inline
   def seekforward: seekforward = "seekforward".asInstanceOf[seekforward]
+  @scala.inline
+  def seekto: seekto = "seekto".asInstanceOf[seekto]
+  @scala.inline
+  def skipad: skipad = "skipad".asInstanceOf[skipad]
+  @scala.inline
+  def stop: stop = "stop".asInstanceOf[stop]
 }
 

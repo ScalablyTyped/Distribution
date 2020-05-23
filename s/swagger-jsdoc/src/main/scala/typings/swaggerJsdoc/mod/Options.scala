@@ -15,7 +15,7 @@ trait Options
 object Options {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     apis: js.Array[String] = null,
     definition: SwaggerDefinition = null,
     swaggerDefinition: SwaggerDefinition = null

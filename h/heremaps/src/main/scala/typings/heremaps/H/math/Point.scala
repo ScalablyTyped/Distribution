@@ -9,19 +9,8 @@ import scala.scalajs.js.annotation._
   * @property x {number} - The point's coordinate on X-axis.
   * @property y {number} - The point's coordinate on Y-axis.
   */
-@JSGlobal("H.math.Point")
 @js.native
-class Point protected () extends IPoint {
-  /**
-    * Constructor
-    * @param x {number} - The point's coordinate on X-axis.
-    * @param y {number} - The point's coordinate on Y-axis.
-    */
-  def this(x: Double, y: Double) = this()
-  /* CompleteClass */
-  override var x: Double = js.native
-  /* CompleteClass */
-  override var y: Double = js.native
+trait Point extends IPoint {
   /**
     * This method adds given point coordinates to the current one.
     * @param other {H.math.IPoint} - The point to add
@@ -83,17 +72,5 @@ class Point protected () extends IPoint {
     * @returns {H.math.Point} - the point itself after subtracting
     */
   def sub(other: IPoint): Point = js.native
-}
-
-/* static members */
-@JSGlobal("H.math.Point")
-@js.native
-object Point extends js.Object {
-  /**
-    * This method creates a Point instance from a given IPoint object.
-    * @param iPoint {H.math.IPoint} - The IPoint object to use
-    * @returns {H.math.Point} - the created Point instance
-    */
-  def fromIPoint(iPoint: IPoint): Point = js.native
 }
 

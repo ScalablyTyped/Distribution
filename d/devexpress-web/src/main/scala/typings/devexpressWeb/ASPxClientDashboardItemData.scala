@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents multidimensional data visualized in the dashboard item.
   */
-@JSGlobal("ASPxClientDashboardItemData")
 @js.native
-class ASPxClientDashboardItemData () extends js.Object {
+trait ASPxClientDashboardItemData extends js.Object {
   /**
     * Creates a tuple based on the specified axes names and corresponding values. An ASPxClientDashboardItemDataAxisPointTuple object representing an axis point tuple.
     * @param values An array of name-value pairs containing the axis name and corresponding values.

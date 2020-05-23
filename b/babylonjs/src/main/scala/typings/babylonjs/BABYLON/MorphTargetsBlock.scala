@@ -4,14 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.MorphTargetsBlock")
 @js.native
-class MorphTargetsBlock protected () extends NodeMaterialBlock {
-  /**
-    * Create a new MorphTargetsBlock
-    * @param name defines the block name
-    */
-  def this(name: String) = this()
+trait MorphTargetsBlock extends NodeMaterialBlock {
   var _repeatableContentAnchor: js.Any = js.native
   /**
     * Gets the normal input component

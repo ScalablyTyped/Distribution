@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the BootstrapListEditItem object.
   */
-@JSGlobal("BootstrapClientListBoxItem")
 @js.native
-class BootstrapClientListBoxItem () extends ASPxClientListEditItem {
+trait BootstrapClientListBoxItem extends ASPxClientListEditItem {
   /**
     * Gets the CSS class of the icon displayed by the list box item.
     */

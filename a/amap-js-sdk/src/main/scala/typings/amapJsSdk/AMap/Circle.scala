@@ -4,22 +4,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Circle")
-@js.native
-class Circle () extends js.Object {
-  def this(options: CircleOptions) = this()
-  def contains(point: LngLat): Boolean = js.native
-  def getBounds(): Bounds = js.native
-  def getCenter(): LngLat = js.native
-  def getExtData(): js.Any = js.native
-  def getOptions(): CircleOptions = js.native
-  def getRadius(): Double = js.native
-  def hide(): Unit = js.native
-  def setCenter(lnglat: LngLat): Unit = js.native
-  def setExtData(ext: js.Any): Unit = js.native
-  def setMap(map: Map): Unit = js.native
-  def setOptions(circleopt: CircleOptions): Unit = js.native
-  def setRadius(radius: Double): Unit = js.native
-  def show(): Unit = js.native
+trait Circle extends js.Object {
+  def contains(point: LngLat): Boolean
+  def getBounds(): Bounds
+  def getCenter(): LngLat
+  def getExtData(): js.Any
+  def getOptions(): CircleOptions
+  def getRadius(): Double
+  def hide(): Unit
+  def setCenter(lnglat: LngLat): Unit
+  def setExtData(ext: js.Any): Unit
+  def setMap(map: Map): Unit
+  def setOptions(circleopt: CircleOptions): Unit
+  def setRadius(radius: Double): Unit
+  def show(): Unit
+}
+
+object Circle {
+  @scala.inline
+  def apply(
+    contains: LngLat => Boolean,
+    getBounds: () => Bounds,
+    getCenter: () => LngLat,
+    getExtData: () => js.Any,
+    getOptions: () => CircleOptions,
+    getRadius: () => Double,
+    hide: () => Unit,
+    setCenter: LngLat => Unit,
+    setExtData: js.Any => Unit,
+    setMap: Map => Unit,
+    setOptions: CircleOptions => Unit,
+    setRadius: Double => Unit,
+    show: () => Unit
+  ): Circle = {
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), getBounds = js.Any.fromFunction0(getBounds), getCenter = js.Any.fromFunction0(getCenter), getExtData = js.Any.fromFunction0(getExtData), getOptions = js.Any.fromFunction0(getOptions), getRadius = js.Any.fromFunction0(getRadius), hide = js.Any.fromFunction0(hide), setCenter = js.Any.fromFunction1(setCenter), setExtData = js.Any.fromFunction1(setExtData), setMap = js.Any.fromFunction1(setMap), setOptions = js.Any.fromFunction1(setOptions), setRadius = js.Any.fromFunction1(setRadius), show = js.Any.fromFunction0(show))
+    __obj.asInstanceOf[Circle]
+  }
 }
 

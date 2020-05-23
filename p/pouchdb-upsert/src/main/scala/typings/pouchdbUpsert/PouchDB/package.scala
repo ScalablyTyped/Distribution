@@ -10,7 +10,7 @@ package object PouchDB {
     - typings.pouchdbUpsert.pouchdbUpsertNumbers.`0`
     - typings.pouchdbUpsert.pouchdbUpsertBooleans.`false`
     - scala.Null
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type CancelUpsert = js.UndefOr[typings.pouchdbUpsert.PouchDB._CancelUpsert | scala.Null]
   // `Partial<Core.Document<Content>>` seems more useful than
@@ -18,6 +18,6 @@ package object PouchDB {
   // `{} | Core.Document<Content>` to `Core.Document<Content>`.
   type UpsertDiffCallback[Content /* <: js.Object */] = js.Function1[
     /* doc */ typings.std.Partial[typings.pouchdbCore.PouchDB.Core.Document[Content]], 
-    (Content with typings.pouchdbUpsert.PartialIdMeta) | typings.pouchdbUpsert.PouchDB.CancelUpsert
+    (Content with typings.pouchdbUpsert.anon.PartialIdMeta) | typings.pouchdbUpsert.PouchDB.CancelUpsert
   ]
 }

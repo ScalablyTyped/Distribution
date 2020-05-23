@@ -20,7 +20,7 @@ object TableTtl {
   @scala.inline
   def apply(attributeName: String, enabled: js.UndefOr[Boolean] = js.undefined): TableTtl = {
     val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableTtl]
   }
 }

@@ -32,7 +32,7 @@ object Profile {
     getAssertionXml: () => String,
     getSamlResponseXml: () => String,
     ID: String = null,
-    StringDictionary: /* attributeName */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     email: String = null,
     issuer: String = null,
     mail: String = null,

@@ -1,5 +1,6 @@
 package typings.tabulatorTables.Tabulator
 
+import typings.std.UIEvent
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesStrings.arrow
 import typings.tabulatorTables.tabulatorTablesStrings.header
@@ -12,11 +13,11 @@ trait OptionsRowGrouping extends js.Object {
   var dataGrouped: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** The dataGrouping callback is triggered whenever a data grouping event occurs, before grouping happens. */
   var dataGrouping: js.UndefOr[js.Function0[Unit]] = js.undefined
-  /** String/function to select field to group rows by	 */
+  /** String/function to select field to group rows by     */
   var groupBy: js.UndefOr[String | (js.Function1[/* data */ js.Any, _])] = js.undefined
   /** The groupClick callback is triggered when a user clicks on a group header. */
   var groupClick: js.UndefOr[GroupEventCallback] = js.undefined
-  /** show/hide column calculations when group is closed	 */
+  /** show/hide column calculations when group is closed     */
   var groupClosedShowCalcs: js.UndefOr[Boolean] = js.undefined
   /** The groupContext callback is triggered when a user right clicks on a group header.
     If you want to prevent the browsers context menu being triggered in this event you will need to include the preventDefault() function in your callback. */
@@ -25,7 +26,7 @@ trait OptionsRowGrouping extends js.Object {
   var groupDblClick: js.UndefOr[GroupEventCallback] = js.undefined
   /** The groupDblTap callback is triggered when a user taps on a group header on a touch display twice in under 300ms. */
   var groupDblTap: js.UndefOr[GroupEventCallback] = js.undefined
-  /** You can use the setGroupHeader function to change the header generation function for each group. This function has one argument and takes the same values as passed to the groupHeader setup option.	 */
+  /** You can use the setGroupHeader function to change the header generation function for each group. This function has one argument and takes the same values as passed to the groupHeader setup option.     */
   var groupHeader: js.UndefOr[
     (js.Function4[
       /* value */ js.Any, 
@@ -62,7 +63,7 @@ trait OptionsRowGrouping extends js.Object {
     */
   var groupToggleElement: js.UndefOr[arrow | header | `false`] = js.undefined
   /** By default Tabulator will create groups for rows based on the values contained in the row data. if you want to explicitly define which field values groups should be created for at each level, you can use the groupValues option.
-    This option takes an array of value arrays, each item in the first array should be a list of acceptable field values for groups at that level	 */
+    This option takes an array of value arrays, each item in the first array should be a list of acceptable field values for groups at that level     */
   var groupValues: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
   /** The groupVisibilityChanged callback is triggered whenever a group changes between hidden and visible states. */
   var groupVisibilityChanged: js.UndefOr[js.Function2[/* group */ GroupComponent, /* visible */ Boolean, Unit]] = js.undefined
@@ -74,11 +75,11 @@ object OptionsRowGrouping {
     dataGrouped: () => Unit = null,
     dataGrouping: () => Unit = null,
     groupBy: String | (js.Function1[/* data */ js.Any, _]) = null,
-    groupClick: (/* e */ js.Any, /* group */ GroupComponent) => Unit = null,
+    groupClick: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
     groupClosedShowCalcs: js.UndefOr[Boolean] = js.undefined,
-    groupContext: (/* e */ js.Any, /* group */ GroupComponent) => Unit = null,
-    groupDblClick: (/* e */ js.Any, /* group */ GroupComponent) => Unit = null,
-    groupDblTap: (/* e */ js.Any, /* group */ GroupComponent) => Unit = null,
+    groupContext: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
+    groupDblClick: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
+    groupDblTap: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
     groupHeader: (js.Function4[
       /* value */ js.Any, 
       /* count */ Double, 
@@ -93,8 +94,8 @@ object OptionsRowGrouping {
       /* group */ GroupComponent, 
       Boolean
     ]) = null,
-    groupTap: (/* e */ js.Any, /* group */ GroupComponent) => Unit = null,
-    groupTapHold: (/* e */ js.Any, /* group */ GroupComponent) => Unit = null,
+    groupTap: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
+    groupTapHold: (/* e */ UIEvent, /* group */ GroupComponent) => Unit = null,
     groupToggleElement: arrow | header | `false` = null,
     groupValues: js.Array[js.Array[_]] = null,
     groupVisibilityChanged: (/* group */ GroupComponent, /* visible */ Boolean) => Unit = null
@@ -104,7 +105,7 @@ object OptionsRowGrouping {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(js.Any.fromFunction0(dataGrouping))
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (groupClick != null) __obj.updateDynamic("groupClick")(js.Any.fromFunction2(groupClick))
-    if (!js.isUndefined(groupClosedShowCalcs)) __obj.updateDynamic("groupClosedShowCalcs")(groupClosedShowCalcs.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupClosedShowCalcs)) __obj.updateDynamic("groupClosedShowCalcs")(groupClosedShowCalcs.get.asInstanceOf[js.Any])
     if (groupContext != null) __obj.updateDynamic("groupContext")(js.Any.fromFunction2(groupContext))
     if (groupDblClick != null) __obj.updateDynamic("groupDblClick")(js.Any.fromFunction2(groupDblClick))
     if (groupDblTap != null) __obj.updateDynamic("groupDblTap")(js.Any.fromFunction2(groupDblTap))

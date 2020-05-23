@@ -1,5 +1,6 @@
 package typings.diagnosticChannelPublishers.redisPubMod
 
+import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,12 +12,13 @@ trait IRedisData extends js.Object {
   var duration: Double
   var err: Error
   var result: js.Any
+  var time: Date
 }
 
 object IRedisData {
   @scala.inline
-  def apply(address: String, commandObj: js.Any, duration: Double, err: Error, result: js.Any): IRedisData = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], commandObj = commandObj.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+  def apply(address: String, commandObj: js.Any, duration: Double, err: Error, result: js.Any, time: Date): IRedisData = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], commandObj = commandObj.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRedisData]
   }
 }

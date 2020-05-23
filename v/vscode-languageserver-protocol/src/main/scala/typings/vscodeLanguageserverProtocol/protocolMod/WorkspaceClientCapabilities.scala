@@ -44,7 +44,7 @@ object WorkspaceClientCapabilities {
     workspaceEdit: WorkspaceEditClientCapabilities = null
   ): WorkspaceClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyEdit)) __obj.updateDynamic("applyEdit")(applyEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyEdit)) __obj.updateDynamic("applyEdit")(applyEdit.get.asInstanceOf[js.Any])
     if (didChangeConfiguration != null) __obj.updateDynamic("didChangeConfiguration")(didChangeConfiguration.asInstanceOf[js.Any])
     if (didChangeWatchedFiles != null) __obj.updateDynamic("didChangeWatchedFiles")(didChangeWatchedFiles.asInstanceOf[js.Any])
     if (executeCommand != null) __obj.updateDynamic("executeCommand")(executeCommand.asInstanceOf[js.Any])

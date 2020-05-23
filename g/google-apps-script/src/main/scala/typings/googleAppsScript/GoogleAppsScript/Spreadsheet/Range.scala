@@ -1,9 +1,9 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import typings.googleAppsScript.AnonCommentsOnly
-import typings.googleAppsScript.AnonContentsOnly
 import typings.googleAppsScript.GoogleAppsScript.Charts.DataTable
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import typings.googleAppsScript.anon.CommentsOnly
+import typings.googleAppsScript.anon.ContentsOnly
 import typings.googleAppsScript.googleAppsScriptStrings.`line-through`
 import typings.googleAppsScript.googleAppsScriptStrings.bold
 import typings.googleAppsScript.googleAppsScriptStrings.bottom
@@ -43,7 +43,7 @@ trait Range extends js.Object {
   def canEdit(): Boolean = js.native
   def check(): Range = js.native
   def clear(): Range = js.native
-  def clear(options: AnonCommentsOnly): Range = js.native
+  def clear(options: CommentsOnly): Range = js.native
   def clearContent(): Range = js.native
   def clearDataValidations(): Range = js.native
   def clearFormat(): Range = js.native
@@ -53,7 +53,7 @@ trait Range extends js.Object {
   def copyFormatToRange(sheet: Sheet, column: Integer, columnEnd: Integer, row: Integer, rowEnd: Integer): Unit = js.native
   def copyTo(destination: Range): Unit = js.native
   def copyTo(destination: Range, copyPasteType: CopyPasteType, transposed: Boolean): Unit = js.native
-  def copyTo(destination: Range, options: AnonContentsOnly): Unit = js.native
+  def copyTo(destination: Range, options: ContentsOnly): Unit = js.native
   def copyValuesToRange(gridId: Integer, column: Integer, columnEnd: Integer, row: Integer, rowEnd: Integer): Unit = js.native
   def copyValuesToRange(sheet: Sheet, column: Integer, columnEnd: Integer, row: Integer, rowEnd: Integer): Unit = js.native
   def createDeveloperMetadataFinder(): DeveloperMetadataFinder = js.native

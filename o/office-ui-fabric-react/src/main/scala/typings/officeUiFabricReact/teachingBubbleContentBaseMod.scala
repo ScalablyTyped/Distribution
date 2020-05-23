@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.anon.HasCondensedHeadline
 import typings.officeUiFabricReact.teachingBubbleBaseMod.ITeachingBubbleState
 import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
 import typings.react.mod.Component
@@ -28,7 +29,7 @@ object teachingBubbleContentBaseMod extends js.Object {
   /* static members */
   @js.native
   object TeachingBubbleContentBase extends js.Object {
-    var defaultProps: AnonHasCondensedHeadline = js.native
+    var defaultProps: HasCondensedHeadline = js.native
   }
   
 }

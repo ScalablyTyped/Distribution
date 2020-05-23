@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Credentials
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object KeyCredentialStatus extends js.Object {
   /** The user prefers to enter a password. */
   @js.native
   sealed trait userPrefersPassword extends KeyCredentialStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KeyCredentialStatus with Double] = js.native
-  /* 5 */ @js.native
-  object credentialAlreadyExists extends TopLevel[credentialAlreadyExists with Double]
-  
-  /* 2 */ @js.native
-  object notFound extends TopLevel[notFound with Double]
-  
-  /* 6 */ @js.native
-  object securityDeviceLocked extends TopLevel[securityDeviceLocked with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 1 */ @js.native
-  object unknownError extends TopLevel[unknownError with Double]
-  
-  /* 3 */ @js.native
-  object userCanceled extends TopLevel[userCanceled with Double]
-  
-  /* 4 */ @js.native
-  object userPrefersPassword extends TopLevel[userPrefersPassword with Double]
   
 }
 

@@ -4,21 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("chrome.cast.Error")
-@js.native
-class Error protected () extends js.Object {
-  /**
-    * @param {!chrome.cast.ErrorCode} code
-    * @param {string=} opt_description
-    * @param {Object=} opt_details
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Error
-    */
-  def this(code: ErrorCode) = this()
-  def this(code: ErrorCode, description: String) = this()
-  def this(code: ErrorCode, description: String, details: js.Object) = this()
-  var code: ErrorCode = js.native
-  var description: js.UndefOr[String] = js.native
-  var details: js.UndefOr[String] = js.native
+trait Error extends js.Object {
+  var code: ErrorCode
+  var description: js.UndefOr[String] = js.undefined
+  var details: js.UndefOr[String] = js.undefined
+}
+
+object Error {
+  @scala.inline
+  def apply(code: ErrorCode, description: String = null, details: String = null): Error = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Error]
+  }
 }
 

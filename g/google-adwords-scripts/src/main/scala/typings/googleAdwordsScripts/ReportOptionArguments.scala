@@ -21,9 +21,9 @@ object ReportOptionArguments {
   ): ReportOptionArguments = {
     val __obj = js.Dynamic.literal()
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeZeroImpressions)) __obj.updateDynamic("includeZeroImpressions")(includeZeroImpressions.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolveGeoNames)) __obj.updateDynamic("resolveGeoNames")(resolveGeoNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnMoneyInMicros)) __obj.updateDynamic("returnMoneyInMicros")(returnMoneyInMicros.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeZeroImpressions)) __obj.updateDynamic("includeZeroImpressions")(includeZeroImpressions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveGeoNames)) __obj.updateDynamic("resolveGeoNames")(resolveGeoNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnMoneyInMicros)) __obj.updateDynamic("returnMoneyInMicros")(returnMoneyInMicros.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportOptionArguments]
   }
 }

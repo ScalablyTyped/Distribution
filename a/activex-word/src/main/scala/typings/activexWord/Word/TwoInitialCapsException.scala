@@ -4,16 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.TwoInitialCapsException")
-@js.native
-class TwoInitialCapsException protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  val Index: Double = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
+trait TwoInitialCapsException extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  val Creator: Double
+  val Index: Double
+  val Name: String
+  val Parent: js.Any
   @JSName("Word.TwoInitialCapsException_typekey")
-  var WordDotTwoInitialCapsException_typekey: TwoInitialCapsException = js.native
-  def Delete(): Unit = js.native
+  var WordDotTwoInitialCapsException_typekey: TwoInitialCapsException
+  def Delete(): Unit
+}
+
+object TwoInitialCapsException {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Creator: Double,
+    Delete: () => Unit,
+    Index: Double,
+    Name: String,
+    Parent: js.Any,
+    WordDotTwoInitialCapsException_typekey: TwoInitialCapsException
+  ): TwoInitialCapsException = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.TwoInitialCapsException_typekey")(WordDotTwoInitialCapsException_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TwoInitialCapsException]
+  }
 }
 

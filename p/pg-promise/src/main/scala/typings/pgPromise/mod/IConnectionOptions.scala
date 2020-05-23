@@ -12,12 +12,12 @@ trait IConnectionOptions[C /* <: IClient */] extends js.Object {
 
 object IConnectionOptions {
   @scala.inline
-  def apply[C /* <: IClient */](
+  def apply[C](
     direct: js.UndefOr[Boolean] = js.undefined,
     onLost: (/* err */ js.Any, /* e */ ILostContext[C]) => Unit = null
   ): IConnectionOptions[C] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(direct)) __obj.updateDynamic("direct")(direct.asInstanceOf[js.Any])
+    if (!js.isUndefined(direct)) __obj.updateDynamic("direct")(direct.get.asInstanceOf[js.Any])
     if (onLost != null) __obj.updateDynamic("onLost")(js.Any.fromFunction2(onLost))
     __obj.asInstanceOf[IConnectionOptions[C]]
   }

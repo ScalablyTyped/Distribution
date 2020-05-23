@@ -12,8 +12,8 @@ trait IClickRepeater extends IObservable {
   /** [Config Option] (Number) */
   var delay: js.UndefOr[Double] = js.undefined
   /** [Method] Disables the repeater and stops events from firing
-  		* @param force Object
-  		*/
+    * @param force Object
+    */
   var disable: js.UndefOr[js.Function1[/* force */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Config Option] (String/HTMLElement/Ext.Element) */
   var el: js.UndefOr[js.Any] = js.undefined
@@ -26,8 +26,8 @@ trait IClickRepeater extends IObservable {
   /** [Config Option] (Boolean) */
   var preventDefault: js.UndefOr[Boolean] = js.undefined
   /** [Method] Convenience function for setting disabled enabled by boolean
-  		* @param disabled Boolean
-  		*/
+    * @param disabled Boolean
+    */
   var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var stopDefault: js.UndefOr[Boolean] = js.undefined
@@ -48,7 +48,7 @@ object IClickRepeater {
     clearListeners: () => Unit = null,
     clearManagedListeners: () => Unit = null,
     config: js.Any = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     disable: /* force */ js.UndefOr[js.Any] => Unit = null,
     el: js.Any = null,
     enable: () => Unit = null,
@@ -61,7 +61,7 @@ object IClickRepeater {
     hasListeners: js.Any = null,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IClickRepeater = null,
-    interval: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
     isObservable: js.UndefOr[Boolean] = js.undefined,
     listeners: js.Any = null,
     mixins: js.Any = null,
@@ -87,7 +87,7 @@ object IClickRepeater {
     uses: Array = null
   ): IClickRepeater = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accelerate)) __obj.updateDynamic("accelerate")(accelerate.asInstanceOf[js.Any])
+    if (!js.isUndefined(accelerate)) __obj.updateDynamic("accelerate")(accelerate.get.asInstanceOf[js.Any])
     if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
     if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
@@ -99,7 +99,7 @@ object IClickRepeater {
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction1(disable))
     if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
@@ -112,15 +112,15 @@ object IClickRepeater {
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
     if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.get.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
     if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
     if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
@@ -129,9 +129,9 @@ object IClickRepeater {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopDefault)) __obj.updateDynamic("stopDefault")(stopDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopDefault)) __obj.updateDynamic("stopDefault")(stopDefault.get.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))

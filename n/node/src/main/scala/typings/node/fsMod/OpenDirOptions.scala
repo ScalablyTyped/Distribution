@@ -18,9 +18,9 @@ trait OpenDirOptions extends js.Object {
 
 object OpenDirOptions {
   @scala.inline
-  def apply(bufferSize: Int | Double = null, encoding: BufferEncoding = null): OpenDirOptions = {
+  def apply(bufferSize: js.UndefOr[Double] = js.undefined, encoding: BufferEncoding = null): OpenDirOptions = {
     val __obj = js.Dynamic.literal()
-    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDirOptions]
   }

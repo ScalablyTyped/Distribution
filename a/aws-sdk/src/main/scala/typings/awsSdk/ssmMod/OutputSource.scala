@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait OutputSource extends js.Object {
   /**
-    * The ID of the output source, for example the URL of an Amazon S3 bucket.
+    * The ID of the output source, for example the URL of an S3 bucket.
     */
   var OutputSourceId: js.UndefOr[typings.awsSdk.ssmMod.OutputSourceId] = js.native
   /**

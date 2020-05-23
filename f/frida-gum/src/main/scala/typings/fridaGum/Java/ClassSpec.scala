@@ -13,7 +13,7 @@ trait ClassSpec extends js.Object {
   /**
     * Interfaces implemented by this class.
     */
-  var implements: js.UndefOr[js.Array[typings.fridaGum.Wrapper]] = js.undefined
+  var implements: js.UndefOr[js.Array[typings.fridaGum.anon.Wrapper]] = js.undefined
   /**
     * Methods to implement. Use the special name `$init` to define one or more constructors.
     */
@@ -27,7 +27,7 @@ trait ClassSpec extends js.Object {
   /**
     * Super-class. Omit to inherit from `java.lang.Object`.
     */
-  var superClass: js.UndefOr[typings.fridaGum.Wrapper] = js.undefined
+  var superClass: js.UndefOr[typings.fridaGum.anon.Wrapper] = js.undefined
 }
 
 object ClassSpec {
@@ -35,9 +35,9 @@ object ClassSpec {
   def apply(
     name: String,
     fields: StringDictionary[String] = null,
-    implements: js.Array[typings.fridaGum.Wrapper] = null,
+    implements: js.Array[typings.fridaGum.anon.Wrapper] = null,
     methods: StringDictionary[MethodImplementation[js.Object] | MethodSpec | js.Array[MethodSpec]] = null,
-    superClass: typings.fridaGum.Wrapper = null
+    superClass: typings.fridaGum.anon.Wrapper = null
   ): ClassSpec = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])

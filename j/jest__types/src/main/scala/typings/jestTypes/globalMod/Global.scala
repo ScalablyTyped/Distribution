@@ -2,7 +2,7 @@ package typings.jestTypes.globalMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.istanbulLibCoverage.mod.CoverageMapData
-import typings.jestTypes.ItBaseconcurrentItConcurr
+import typings.jestTypes.anon.ItBaseconcurrentItConcurr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

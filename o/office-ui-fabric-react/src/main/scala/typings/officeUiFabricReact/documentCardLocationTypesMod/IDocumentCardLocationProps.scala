@@ -63,7 +63,7 @@ object IDocumentCardLocationProps {
     key: Key = null,
     locationHref: String = null,
     onClick: /* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit = null,
-    ref: LegacyRef[DocumentCardLocationBase] = null,
+    ref: js.UndefOr[Null | LegacyRef[DocumentCardLocationBase]] = js.undefined,
     styles: IStyleFunctionOrObject[IDocumentCardLocationStyleProps, IDocumentCardLocationStyles] = null,
     theme: ITheme = null
   ): IDocumentCardLocationProps = {
@@ -74,7 +74,7 @@ object IDocumentCardLocationProps {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (locationHref != null) __obj.updateDynamic("locationHref")(locationHref.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardLocationProps]

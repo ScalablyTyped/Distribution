@@ -38,7 +38,7 @@ object TemplateSummary {
     Arn: Arn = null,
     CreatedTime: Timestamp_ = null,
     LastUpdatedTime: Timestamp_ = null,
-    LatestVersionNumber: Int | scala.Double = null,
+    LatestVersionNumber: js.UndefOr[VersionNumber] = js.undefined,
     Name: TemplateName = null,
     TemplateId: RestrictiveResourceId = null
   ): TemplateSummary = {
@@ -46,7 +46,7 @@ object TemplateSummary {
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
     if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (LatestVersionNumber != null) __obj.updateDynamic("LatestVersionNumber")(LatestVersionNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(LatestVersionNumber)) __obj.updateDynamic("LatestVersionNumber")(LatestVersionNumber.get.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (TemplateId != null) __obj.updateDynamic("TemplateId")(TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateSummary]

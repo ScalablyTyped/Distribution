@@ -1,7 +1,7 @@
 package typings.yup.mod
 
 import typings.std.Record
-import typings.yup.AnonName
+import typings.yup.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object SchemaFieldDescription {
     fields: Record[String, SchemaFieldDescription],
     label: String,
     meta: js.Object,
-    tests: js.Array[AnonName],
+    tests: js.Array[Name],
     `type`: String
   ): SchemaFieldDescription = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object SchemaFieldDescription {
   def SchemaFieldInnerTypeDescription(
     label: String,
     meta: js.Object,
-    tests: js.Array[AnonName],
+    tests: js.Array[Name],
     `type`: String,
     innerType: SchemaFieldDescription = null
   ): SchemaFieldDescription = {

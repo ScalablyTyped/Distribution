@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,11 @@ trait ByteLengthQueuingStrategy extends QueuingStrategy[ArrayBufferView] {
   def size_MByteLengthQueuingStrategy(chunk: ArrayBufferView): Double
 }
 
-@JSGlobal("ByteLengthQueuingStrategy")
-@js.native
-object ByteLengthQueuingStrategy extends Instantiable1[/* options */ AnonHighWaterMark, ByteLengthQueuingStrategy]
+object ByteLengthQueuingStrategy {
+  @scala.inline
+  def apply(highWaterMark: Double, size: ArrayBufferView => Double): ByteLengthQueuingStrategy = {
+    val __obj = js.Dynamic.literal(highWaterMark = highWaterMark.asInstanceOf[js.Any], size = js.Any.fromFunction1(size))
+    __obj.asInstanceOf[ByteLengthQueuingStrategy]
+  }
+}
 

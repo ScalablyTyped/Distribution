@@ -23,15 +23,15 @@ object LineByLineReaderFileOptions {
   @scala.inline
   def apply(
     encoding: ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex = null,
-    end: Int | Double = null,
+    end: js.UndefOr[Double] = js.undefined,
     skipEmptyLines: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null
+    start: js.UndefOr[Double] = js.undefined
   ): LineByLineReaderFileOptions = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipEmptyLines)) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipEmptyLines)) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineByLineReaderFileOptions]
   }
 }

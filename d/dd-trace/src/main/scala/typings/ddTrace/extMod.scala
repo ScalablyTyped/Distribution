@@ -6,7 +6,6 @@ import typings.ddTrace.ddTraceNumbers.`1`
 import typings.ddTrace.ddTraceNumbers.`2`
 import typings.ddTrace.ddTraceStrings._dd1DotsrDoteausr
 import typings.ddTrace.ddTraceStrings.agent
-import typings.ddTrace.ddTraceStrings.binary
 import typings.ddTrace.ddTraceStrings.browser
 import typings.ddTrace.ddTraceStrings.client
 import typings.ddTrace.ddTraceStrings.consumer
@@ -18,7 +17,6 @@ import typings.ddTrace.ddTraceStrings.httpDotresponseDotheaders
 import typings.ddTrace.ddTraceStrings.httpDotroute
 import typings.ddTrace.ddTraceStrings.httpDotstatus_code
 import typings.ddTrace.ddTraceStrings.httpDoturl
-import typings.ddTrace.ddTraceStrings.http_headers
 import typings.ddTrace.ddTraceStrings.log
 import typings.ddTrace.ddTraceStrings.manualDotdrop
 import typings.ddTrace.ddTraceStrings.manualDotkeep
@@ -29,7 +27,6 @@ import typings.ddTrace.ddTraceStrings.server
 import typings.ddTrace.ddTraceStrings.serviceDotname
 import typings.ddTrace.ddTraceStrings.spanDotkind
 import typings.ddTrace.ddTraceStrings.spanDottype
-import typings.ddTrace.ddTraceStrings.text_map
 import typings.ddTrace.ddTraceStrings.web
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,10 +44,10 @@ object extMod extends js.Object {
   
   @js.native
   object formats extends js.Object {
-    var BINARY: binary = js.native
-    var HTTP_HEADERS: http_headers = js.native
+    var BINARY: /* "binary" */ String = js.native
+    var HTTP_HEADERS: /* "http_headers" */ String = js.native
     var LOG: log = js.native
-    var TEXT_MAP: text_map = js.native
+    var TEXT_MAP: /* "text_map" */ String = js.native
   }
   
   @js.native

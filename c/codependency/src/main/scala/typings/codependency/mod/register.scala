@@ -1,6 +1,6 @@
 package typings.codependency.mod
 
-import typings.codependency.AnonIndex
+import typings.codependency.anon.Index
 import typings.node.NodeModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object register extends js.Object {
   def apply(baseModule: NodeModule): RequirePeerFunction = js.native
-  def apply(baseModule: NodeModule, options: AnonIndex): RequirePeerFunction = js.native
+  def apply(baseModule: NodeModule, options: Index): RequirePeerFunction = js.native
 }
 

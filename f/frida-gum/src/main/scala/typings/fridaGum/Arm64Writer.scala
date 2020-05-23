@@ -7,18 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * Generates machine code for arm64.
   */
-@JSGlobal("Arm64Writer")
 @js.native
-class Arm64Writer protected () extends js.Object {
-  /**
-    * Creates a new code writer for generating AArch64 machine code
-    * written directly to memory at `codeAddress`.
-    *
-    * @param codeAddress Memory address to write generated code to.
-    * @param options Options for customizing code generation.
-    */
-  def this(codeAddress: NativePointerValue) = this()
-  def this(codeAddress: NativePointerValue, options: Arm64WriterOptions) = this()
+trait Arm64Writer extends js.Object {
   /**
     * Memory location of the first byte of output.
     */
@@ -36,6 +26,11 @@ class Arm64Writer protected () extends js.Object {
     */
   var pc: NativePointer = js.native
   /**
+    * Determines whether a direct branch is possible between the two
+    * given memory locations.
+    */
+  def canBranchDirectlyBetween(from: NativePointerValue, to: NativePointerValue): Boolean = js.native
+  /**
     * Eagerly cleans up memory.
     */
   def dispose(): Unit = js.native
@@ -50,8 +45,8 @@ class Arm64Writer protected () extends js.Object {
     * Puts an ADD instruction.
     */
   def putAddRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Double): Unit = js.native
-  def putAddRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Int64_): Unit = js.native
-  def putAddRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: UInt64_): Unit = js.native
+  def putAddRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Int64): Unit = js.native
+  def putAddRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: UInt64): Unit = js.native
   /**
     * Puts an ADD instruction.
     */
@@ -64,8 +59,8 @@ class Arm64Writer protected () extends js.Object {
     * Puts an AND instruction.
     */
   def putAndRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Double): Unit = js.native
-  def putAndRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Int64_): Unit = js.native
-  def putAndRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: UInt64_): Unit = js.native
+  def putAndRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Int64): Unit = js.native
+  def putAndRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: UInt64): Unit = js.native
   /**
     * Puts a B COND instruction referencing `labelId`, defined by a past
     * or future `putLabel()`.
@@ -94,11 +89,21 @@ class Arm64Writer protected () extends js.Object {
     */
   def putBlrReg(reg: Arm64Register): Unit = js.native
   /**
+    * Puts a BLR instruction expecting a raw pointer without
+    * any authentication bits.
+    */
+  def putBlrRegNoAuth(reg: Arm64Register): Unit = js.native
+  /**
     * Puts a BR instruction.
     */
   def putBrReg(reg: Arm64Register): Unit = js.native
   /**
-    * Puts a BRANCH instruction.
+    * Puts a BR instruction expecting a raw pointer without
+    * any authentication bits.
+    */
+  def putBrRegNoAuth(reg: Arm64Register): Unit = js.native
+  /**
+    * Puts code needed for branching/jumping to the given address.
     */
   def putBranchAddress(address: NativePointerValue): Unit = js.native
   /**
@@ -156,14 +161,14 @@ class Arm64Writer protected () extends js.Object {
     regA: Arm64Register,
     regB: Arm64Register,
     regSrc: Arm64Register,
-    srcOffset: Int64_,
+    srcOffset: Int64,
     mode: Arm64IndexMode
   ): Unit = js.native
   def putLdpRegRegRegOffset(
     regA: Arm64Register,
     regB: Arm64Register,
     regSrc: Arm64Register,
-    srcOffset: UInt64_,
+    srcOffset: UInt64,
     mode: Arm64IndexMode
   ): Unit = js.native
   /**
@@ -180,13 +185,13 @@ class Arm64Writer protected () extends js.Object {
     * Puts an LDR instruction.
     */
   def putLdrRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Double): Unit = js.native
-  def putLdrRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Int64_): Unit = js.native
-  def putLdrRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: UInt64_): Unit = js.native
+  def putLdrRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Int64): Unit = js.native
+  def putLdrRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: UInt64): Unit = js.native
   /**
     * Puts an LDR instruction.
     */
   def putLdrRegU64(reg: Arm64Register, `val`: Double): Unit = js.native
-  def putLdrRegU64(reg: Arm64Register, `val`: UInt64_): Unit = js.native
+  def putLdrRegU64(reg: Arm64Register, `val`: UInt64): Unit = js.native
   /**
     * Puts the value and updates the LDR instruction
     * from a previous `putLdrRegRef()`.
@@ -196,8 +201,8 @@ class Arm64Writer protected () extends js.Object {
     * Puts an LDRSW instruction.
     */
   def putLdrswRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Double): Unit = js.native
-  def putLdrswRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Int64_): Unit = js.native
-  def putLdrswRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: UInt64_): Unit = js.native
+  def putLdrswRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: Int64): Unit = js.native
+  def putLdrswRegRegOffset(dstReg: Arm64Register, srcReg: Arm64Register, srcOffset: UInt64): Unit = js.native
   /**
     * Puts a MOV instruction.
     */
@@ -248,28 +253,28 @@ class Arm64Writer protected () extends js.Object {
     regA: Arm64Register,
     regB: Arm64Register,
     regDst: Arm64Register,
-    dstOffset: Int64_,
+    dstOffset: Int64,
     mode: Arm64IndexMode
   ): Unit = js.native
   def putStpRegRegRegOffset(
     regA: Arm64Register,
     regB: Arm64Register,
     regDst: Arm64Register,
-    dstOffset: UInt64_,
+    dstOffset: UInt64,
     mode: Arm64IndexMode
   ): Unit = js.native
   /**
     * Puts a STR instruction.
     */
   def putStrRegRegOffset(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: Double): Unit = js.native
-  def putStrRegRegOffset(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: Int64_): Unit = js.native
-  def putStrRegRegOffset(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: UInt64_): Unit = js.native
+  def putStrRegRegOffset(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: Int64): Unit = js.native
+  def putStrRegRegOffset(srcReg: Arm64Register, dstReg: Arm64Register, dstOffset: UInt64): Unit = js.native
   /**
     * Puts a SUB instruction.
     */
   def putSubRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Double): Unit = js.native
-  def putSubRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Int64_): Unit = js.native
-  def putSubRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: UInt64_): Unit = js.native
+  def putSubRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: Int64): Unit = js.native
+  def putSubRegRegImm(dstReg: Arm64Register, leftReg: Arm64Register, rightValue: UInt64): Unit = js.native
   /**
     * Puts a SUB instruction.
     */
@@ -288,16 +293,24 @@ class Arm64Writer protected () extends js.Object {
     * Puts a TST instruction.
     */
   def putTstRegImm(reg: Arm64Register, immValue: Double): Unit = js.native
-  def putTstRegImm(reg: Arm64Register, immValue: UInt64_): Unit = js.native
+  def putTstRegImm(reg: Arm64Register, immValue: UInt64): Unit = js.native
   /**
     * Puts an UXTW instruction.
     */
   def putUxtwRegReg(dstReg: Arm64Register, srcReg: Arm64Register): Unit = js.native
   /**
+    * Puts an XPACI instruction.
+    */
+  def putXpaciReg(reg: Arm64Register): Unit = js.native
+  /**
     * Recycles instance.
     */
   def reset(codeAddress: NativePointerValue): Unit = js.native
   def reset(codeAddress: NativePointerValue, options: Arm64WriterOptions): Unit = js.native
+  /**
+    * Signs the given pointer value.
+    */
+  def sign(value: NativePointerValue): NativePointer = js.native
   /**
     * Skips `nBytes`.
     */

@@ -18,9 +18,9 @@ trait DeprovisionByoipCidrRequest extends js.Object {
 
 object DeprovisionByoipCidrRequest {
   @scala.inline
-  def apply(Cidr: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DeprovisionByoipCidrRequest = {
+  def apply(Cidr: String, DryRun: js.UndefOr[Boolean] = js.undefined): DeprovisionByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprovisionByoipCidrRequest]
   }
 }

@@ -34,12 +34,12 @@ object IComponent {
   ): IComponent = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize.get.asInstanceOf[js.Any])
     if (enginePriority != null) __obj.updateDynamic("enginePriority")(enginePriority.asInstanceOf[js.Any])
     if (gradients != null) __obj.updateDynamic("gradients")(gradients.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (surface != null) __obj.updateDynamic("surface")(surface.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponent]
   }
 }

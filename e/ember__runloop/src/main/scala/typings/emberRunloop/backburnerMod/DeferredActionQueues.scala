@@ -18,7 +18,7 @@ object DeferredActionQueues {
     flush: Boolean => js.Any,
     queues: js.Object,
     schedule: (String, js.Any, js.Any, js.Any, Boolean, js.Any) => js.Any,
-    StringDictionary: /* index */ StringDictionary[js.Any] = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): DeferredActionQueues = {
     val __obj = js.Dynamic.literal(flush = js.Any.fromFunction1(flush), queues = queues.asInstanceOf[js.Any], schedule = js.Any.fromFunction6(schedule))
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)

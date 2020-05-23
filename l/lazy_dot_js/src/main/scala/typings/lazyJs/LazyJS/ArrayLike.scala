@@ -11,7 +11,7 @@ trait ArrayLike[T] extends /* index */ NumberDictionary[T] {
 
 object ArrayLike {
   @scala.inline
-  def apply[T](length: Double, NumberDictionary: /* index */ NumberDictionary[T] = null): ArrayLike[T] = {
+  def apply[T](length: Double, NumberDictionary: /* n */ NumberDictionary[T] = null): ArrayLike[T] = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ArrayLike[T]]

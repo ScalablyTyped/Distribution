@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object WriteActivationMode extends js.Object {
   /** Other apps can't write to the local file. */
   @js.native
   sealed trait readOnly extends WriteActivationMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WriteActivationMode with Double] = js.native
-  /* 2 */ @js.native
-  object afterWrite extends TopLevel[afterWrite with Double]
-  
-  /* 1 */ @js.native
-  object notNeeded extends TopLevel[notNeeded with Double]
-  
-  /* 0 */ @js.native
-  object readOnly extends TopLevel[readOnly with Double]
   
 }
 

@@ -50,7 +50,7 @@ object MysqlError {
     fatal: Boolean,
     message: String,
     name: String,
-    fieldCount: Int | Double = null,
+    fieldCount: js.UndefOr[Double] = js.undefined,
     sql: String = null,
     sqlMessage: String = null,
     sqlState: String = null,
@@ -58,7 +58,7 @@ object MysqlError {
     stack: String = null
   ): MysqlError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (fieldCount != null) __obj.updateDynamic("fieldCount")(fieldCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldCount)) __obj.updateDynamic("fieldCount")(fieldCount.get.asInstanceOf[js.Any])
     if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
     if (sqlMessage != null) __obj.updateDynamic("sqlMessage")(sqlMessage.asInstanceOf[js.Any])
     if (sqlState != null) __obj.updateDynamic("sqlState")(sqlState.asInstanceOf[js.Any])

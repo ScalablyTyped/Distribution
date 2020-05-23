@@ -1,11 +1,11 @@
 package typings.oracleOraclejet.ojdiagramMod
 
-import typings.oracleOraclejet.Anon5
-import typings.oracleOraclejet.AnonAnimationDuration
-import typings.oracleOraclejet.AnonDrop
-import typings.oracleOraclejet.AnonHalign
-import typings.oracleOraclejet.AnonInsertSVGElement
-import typings.oracleOraclejet.AnonLabelClearSelection
+import typings.oracleOraclejet.anon.AnimationDuration
+import typings.oracleOraclejet.anon.Drop
+import typings.oracleOraclejet.anon.Halign
+import typings.oracleOraclejet.anon.InsertSVGElement
+import typings.oracleOraclejet.anon.LabelClearSelection
+import typings.oracleOraclejet.anon.`5`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdiagramMod.ojDiagram.RendererContext
@@ -105,14 +105,14 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   var animationOnDataChange: auto | none = js.native
   var animationOnDisplay: auto | none = js.native
   var as: String = js.native
-  var dnd: AnonDrop = js.native
+  var dnd: Drop = js.native
   var expanded: KeySet[K1] = js.native
-  var focusRenderer: (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null = js.native
+  var focusRenderer: (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null = js.native
   var hiddenCategories: js.Array[String] = js.native
   var highlightMatch: any | all = js.native
   var highlightedCategories: js.Array[String] = js.native
   var hoverBehavior: dim | none = js.native
-  var hoverRenderer: (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null = js.native
+  var hoverRenderer: (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null = js.native
   var linkData: (DataProvider[K2, D2]) | Null = js.native
   var linkHighlightMode: linkAndNodes | link = js.native
   var maxZoom: Double = js.native
@@ -122,11 +122,11 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
   var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
   var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonDrop], _]) | Null = js.native
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Drop], _]) | Null = js.native
   var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K1]], _]) | Null = js.native
   var onFocusRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
     _
   ]) | Null = js.native
@@ -136,7 +136,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], _]) | Null = js.native
   var onHoverRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
     _
   ]) | Null = js.native
@@ -157,45 +157,45 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   var onOjBeforeExpand: (js.Function1[/* event */ ojBeforeExpand, _]) | Null = js.native
   var onOjCollapse: (js.Function1[/* event */ ojCollapse, _]) | Null = js.native
   var onOjExpand: (js.Function1[/* event */ ojExpand, _]) | Null = js.native
-  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonHalign], _]) | Null = js.native
+  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[Halign], _]) | Null = js.native
   var onPanDirectionChanged: (js.Function1[/* event */ JetElementCustomEvent[x | y | auto], _]) | Null = js.native
   var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
   var onPromotedLinkBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[none | full | `lazy`], _]) | Null = js.native
   var onRendererChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement]], 
+    /* event */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]], 
     _
   ]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K1 | K2]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
   var onSelectionRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
     _
   ]) | Null = js.native
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnonAnimationDuration], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Anon5[K1, K2, D1, D2]], _]) | Null = js.native
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnimationDuration], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], _]) | Null = js.native
   var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
   var onZoomRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+      (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
     _
   ]) | Null = js.native
   var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
-  var overview: AnonHalign = js.native
+  var overview: Halign = js.native
   var panDirection: x | y | auto = js.native
   var panning: auto | none = js.native
   var promotedLinkBehavior: none | full | `lazy` = js.native
   var selection: js.Array[K1 | K2] = js.native
   var selectionMode: single | multiple | none = js.native
-  var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null = js.native
-  var styleDefaults: AnonAnimationDuration = js.native
-  var tooltip: Anon5[K1, K2, D1, D2] = js.native
+  var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null = js.native
+  var styleDefaults: AnimationDuration = js.native
+  var tooltip: `5`[K1, K2, D1, D2] = js.native
   var touchResponse: touchStart | auto = js.native
   @JSName("translations")
-  var translations_ojDiagram_ : AnonLabelClearSelection = js.native
-  var zoomRenderer: (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null = js.native
+  var translations_ojDiagram_ : LabelClearSelection = js.native
+  var zoomRenderer: (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null = js.native
   var zooming: auto | none = js.native
   def addEventListener(
     `type`: animationOnDataChangeChanged,
@@ -327,12 +327,12 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDrop], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonDrop], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -352,7 +352,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
       _
     ]
@@ -363,7 +363,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
       _
     ],
@@ -397,7 +397,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
       _
     ]
@@ -408,7 +408,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
       _
     ],
@@ -540,12 +540,12 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonHalign], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonHalign], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -553,7 +553,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     `type`: rendererChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement]], 
+      /* ev */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]], 
       _
     ]
   ): Unit = js.native
@@ -562,7 +562,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     `type`: rendererChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement]], 
+      /* ev */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]], 
       _
     ],
     useCapture: Boolean
@@ -584,7 +584,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
       _
     ]
@@ -595,7 +595,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
       _
     ],
@@ -604,23 +604,23 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAnimationDuration], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnonAnimationDuration], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon5[K1, K2, D1, D2]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Anon5[K1, K2, D1, D2]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -629,7 +629,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
       _
     ]
@@ -640,7 +640,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null
+        (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
       _
     ],
@@ -659,11 +659,11 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("getProperty")
   def getProperty_as(property: as): String = js.native
   @JSName("getProperty")
-  def getProperty_dnd(property: dnd): AnonDrop = js.native
+  def getProperty_dnd(property: dnd): Drop = js.native
   @JSName("getProperty")
   def getProperty_expanded(property: expanded): KeySet[K1] = js.native
   @JSName("getProperty")
-  def getProperty_focusRenderer(property: focusRenderer): (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null = js.native
+  def getProperty_focusRenderer(property: focusRenderer): (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null = js.native
   @JSName("getProperty")
   def getProperty_hiddenCategories(property: hiddenCategories): js.Array[String] = js.native
   @JSName("getProperty")
@@ -673,7 +673,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("getProperty")
   def getProperty_hoverBehavior(property: hoverBehavior): dim | none = js.native
   @JSName("getProperty")
-  def getProperty_hoverRenderer(property: hoverRenderer): (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null = js.native
+  def getProperty_hoverRenderer(property: hoverRenderer): (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null = js.native
   @JSName("getProperty")
   def getProperty_linkData(property: linkData): (DataProvider[K2, D2]) | Null = js.native
   @JSName("getProperty")
@@ -687,7 +687,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("getProperty")
   def getProperty_nodeHighlightMode(property: nodeHighlightMode): nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node = js.native
   @JSName("getProperty")
-  def getProperty_overview(property: overview): AnonHalign = js.native
+  def getProperty_overview(property: overview): Halign = js.native
   @JSName("getProperty")
   def getProperty_panDirection(property: panDirection): x | y | auto = js.native
   @JSName("getProperty")
@@ -699,19 +699,19 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("getProperty")
   def getProperty_selectionMode(property: selectionMode): single | multiple | none = js.native
   @JSName("getProperty")
-  def getProperty_selectionRenderer(property: selectionRenderer): (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null = js.native
+  def getProperty_selectionRenderer(property: selectionRenderer): (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null = js.native
   @JSName("getProperty")
-  def getProperty_styleDefaults(property: styleDefaults): AnonAnimationDuration = js.native
+  def getProperty_styleDefaults(property: styleDefaults): AnimationDuration = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): Anon5[K1, K2, D1, D2] = js.native
+  def getProperty_tooltip(property: tooltip): `5`[K1, K2, D1, D2] = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
   @JSName("getProperty")
-  def getProperty_zoomRenderer(property: zoomRenderer): (js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]) | Null = js.native
+  def getProperty_zoomRenderer(property: zoomRenderer): (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null = js.native
   @JSName("getProperty")
   def getProperty_zooming(property: zooming): auto | none = js.native
   def layout(param0: DvtDiagramLayoutContext): Unit = js.native
-  def renderer(context: RendererContext[K1, D1]): AnonInsertSVGElement = js.native
+  def renderer(context: RendererContext[K1, D1]): InsertSVGElement = js.native
   def setProperties(properties: ojDiagramSettablePropertiesLenient[K1, K2, D1, D2]): Unit = js.native
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
@@ -745,7 +745,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("setProperty")
   def setProperty_as(property: as, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_dnd(property: dnd, value: AnonDrop): Unit = js.native
+  def setProperty_dnd(property: dnd, value: Drop): Unit = js.native
   @JSName("setProperty")
   def setProperty_expanded(property: expanded, value: KeySet[K1]): Unit = js.native
   @JSName("setProperty")
@@ -753,7 +753,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("setProperty")
   def setProperty_focusRenderer(
     property: focusRenderer,
-    value: js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]
+    value: js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]
   ): Unit = js.native
   @JSName("setProperty")
   def setProperty_hiddenCategories(property: hiddenCategories, value: js.Array[String]): Unit = js.native
@@ -764,7 +764,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("setProperty")
   def setProperty_hoverRenderer(
     property: hoverRenderer,
-    value: js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]
+    value: js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]
   ): Unit = js.native
   @JSName("setProperty")
   def setProperty_linkData(property: linkData): Unit = js.native
@@ -779,7 +779,7 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("setProperty")
   def setProperty_nodeData(property: nodeData, value: DataProvider[K1, D1]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_overview(property: overview, value: AnonHalign): Unit = js.native
+  def setProperty_overview(property: overview, value: Halign): Unit = js.native
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Array[K1 | K2]): Unit = js.native
   @JSName("setProperty")
@@ -787,20 +787,20 @@ trait ojDiagram_[K1, K2, D1, D2] extends dvtBaseComponent[ojDiagramSettablePrope
   @JSName("setProperty")
   def setProperty_selectionRenderer(
     property: selectionRenderer,
-    value: js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]
+    value: js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]
   ): Unit = js.native
   @JSName("setProperty")
-  def setProperty_styleDefaults(property: styleDefaults, value: AnonAnimationDuration): Unit = js.native
+  def setProperty_styleDefaults(property: styleDefaults, value: AnimationDuration): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: Anon5[K1, K2, D1, D2]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: `5`[K1, K2, D1, D2]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_translations(property: translations, value: AnonLabelClearSelection): Unit = js.native
+  def setProperty_translations(property: translations, value: LabelClearSelection): Unit = js.native
   @JSName("setProperty")
   def setProperty_zoomRenderer(property: zoomRenderer): Unit = js.native
   @JSName("setProperty")
   def setProperty_zoomRenderer(
     property: zoomRenderer,
-    value: js.Function1[/* context */ RendererContext[K1, D1], AnonInsertSVGElement | Unit]
+    value: js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]
   ): Unit = js.native
 }
 

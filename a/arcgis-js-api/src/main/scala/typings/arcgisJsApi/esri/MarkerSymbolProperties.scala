@@ -43,14 +43,14 @@ trait MarkerSymbolProperties extends SymbolProperties {
 object MarkerSymbolProperties {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     color: Color_ | js.Array[Double] | String = null,
     `type`: `simple-marker` | `picture-marker` = null,
     xoffset: Double | String = null,
     yoffset: Double | String = null
   ): MarkerSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])

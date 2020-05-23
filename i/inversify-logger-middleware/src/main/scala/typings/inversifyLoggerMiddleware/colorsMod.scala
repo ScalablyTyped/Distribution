@@ -1,6 +1,6 @@
 package typings.inversifyLoggerMiddleware
 
-import typings.chalk.ChalksupportsColorColorSu
+import typings.chalk.anon.ChalksupportsColorColorSu
 import typings.chalk.mod.Chalk
 import typings.chalk.mod.ColorSupport
 import typings.chalk.mod.Level

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Input
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object DraggingState extends js.Object {
   /** A dragging interaction has been detected. */
   @js.native
   sealed trait started extends DraggingState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DraggingState with Double] = js.native
-  /* 2 */ @js.native
-  object completed extends TopLevel[completed with Double]
-  
-  /* 1 */ @js.native
-  object continuing extends TopLevel[continuing with Double]
-  
-  /* 0 */ @js.native
-  object started extends TopLevel[started with Double]
   
 }
 

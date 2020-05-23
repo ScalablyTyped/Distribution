@@ -27,7 +27,7 @@ object MUIDataTableToolbarSelect {
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (displayData != null) __obj.updateDynamic("displayData")(displayData.asInstanceOf[js.Any])
     if (onRowsDelete != null) __obj.updateDynamic("onRowsDelete")(js.Any.fromFunction1(onRowsDelete))
-    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected.get.asInstanceOf[js.Any])
     if (selectRowUpdate != null) __obj.updateDynamic("selectRowUpdate")(js.Any.fromFunction1(selectRowUpdate))
     __obj.asInstanceOf[MUIDataTableToolbarSelect]
   }

@@ -1,6 +1,7 @@
 package typings.reactFns
 
 import typings.react.mod.ComponentType
+import typings.reactFns.anon.PartialScrollConfig
 import typings.reactFns.scrollScrollMod.ScrollProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

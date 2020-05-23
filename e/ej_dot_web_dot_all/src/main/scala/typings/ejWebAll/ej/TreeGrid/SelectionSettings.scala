@@ -32,8 +32,8 @@ object SelectionSettings {
     selectionType: SelectionType | String = null
   ): SelectionSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableHierarchySelection)) __obj.updateDynamic("enableHierarchySelection")(enableHierarchySelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHierarchySelection)) __obj.updateDynamic("enableHierarchySelection")(enableHierarchySelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll.get.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionSettings]

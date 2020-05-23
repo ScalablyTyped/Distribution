@@ -11,7 +11,7 @@ package object mod {
     /* options */ typings.turndown.mod.Options, 
     scala.Boolean
   ]
-  type Node = typings.std.HTMLElement | typings.std.Document_ | typings.std.DocumentFragment
+  type Node = typings.std.HTMLElement | typings.std.Document | typings.std.DocumentFragment
   type Plugin = js.Function1[/* service */ typings.turndown.mod.TurndownService, scala.Unit]
   type ReplacementFunction = js.Function3[
     /* content */ java.lang.String, 

@@ -12,9 +12,9 @@ trait ProviderProps[T] extends js.Object {
 
 object ProviderProps {
   @scala.inline
-  def apply[T](value: T, children: RaxNode = null): ProviderProps[T] = {
+  def apply[T](value: T, children: js.UndefOr[Null | RaxNode] = js.undefined): ProviderProps[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderProps[T]]
   }
 }

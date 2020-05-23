@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Definition of a Medication
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait Medication extends DomainResource {
   /**
     * Contains extended information for property 'isBrand'.
@@ -106,8 +106,8 @@ object Medication {
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
     if (ingredient != null) __obj.updateDynamic("ingredient")(ingredient.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBrand)) __obj.updateDynamic("isBrand")(isBrand.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOverTheCounter)) __obj.updateDynamic("isOverTheCounter")(isOverTheCounter.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBrand)) __obj.updateDynamic("isBrand")(isBrand.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOverTheCounter)) __obj.updateDynamic("isOverTheCounter")(isOverTheCounter.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])

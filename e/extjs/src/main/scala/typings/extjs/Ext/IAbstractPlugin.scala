@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait IAbstractPlugin extends IBase {
   /** [Method] Creates clone of the plugin
-  		* @param overrideCfg Object Additional config for the derived plugin.
-  		*/
+    * @param overrideCfg Object Additional config for the derived plugin.
+    */
   var clonePlugin: js.UndefOr[js.Function1[/* overrideCfg */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] The destroy method is invoked by the owning Component at the time the Component is being destroyed  */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -16,20 +16,20 @@ trait IAbstractPlugin extends IBase {
   /** [Method] The base implementation just sets the plugin s disabled flag to false Plugin subclasses which need more complex proc  */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Returns the component to which this plugin is attached
-  		* @returns Ext.Component Owner component.
-  		*/
+    * @returns Ext.Component Owner component.
+    */
   var getCmp: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] The init method is invoked after initComponent method has been run for the client Component
-  		* @param client Ext.Component The client Component which owns this plugin.
-  		*/
+    * @param client Ext.Component The client Component which owns this plugin.
+    */
   var init: js.UndefOr[js.Function1[/* client */ js.UndefOr[IComponent], Unit]] = js.undefined
   /** [Property] (Boolean) */
   var isPlugin: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (String) */
   var pluginId: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Sets the component to which this plugin is attached
-  		* @param cmp Ext.Component Owner component.
-  		*/
+    * @param cmp Ext.Component Owner component.
+    */
   var setCmp: js.UndefOr[js.Function1[/* cmp */ js.UndefOr[IComponent], Unit]] = js.undefined
 }
 
@@ -79,13 +79,13 @@ object IAbstractPlugin {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlugin)) __obj.updateDynamic("isPlugin")(isPlugin.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (pluginId != null) __obj.updateDynamic("pluginId")(pluginId.asInstanceOf[js.Any])
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setCmp != null) __obj.updateDynamic("setCmp")(js.Any.fromFunction1(setCmp))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstractPlugin]

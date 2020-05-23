@@ -19,16 +19,16 @@ trait IError extends js.Object {
 object IError {
   @scala.inline
   def apply(
-    json: String = null,
-    location: js.Array[ILocation] = null,
-    message: String = null,
-    timeNs: Int | Double = null
+    json: js.UndefOr[Null | String] = js.undefined,
+    location: js.UndefOr[Null | js.Array[ILocation]] = js.undefined,
+    message: js.UndefOr[Null | String] = js.undefined,
+    timeNs: js.UndefOr[Null | Double] = js.undefined
   ): IError = {
     val __obj = js.Dynamic.literal()
-    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (timeNs != null) __obj.updateDynamic("timeNs")(timeNs.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeNs)) __obj.updateDynamic("timeNs")(timeNs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IError]
   }
 }

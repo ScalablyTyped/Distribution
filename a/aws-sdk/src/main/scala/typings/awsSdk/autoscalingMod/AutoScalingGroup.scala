@@ -125,14 +125,14 @@ object AutoScalingGroup {
     MinSize: AutoScalingGroupMinSize,
     AutoScalingGroupARN: ResourceName = null,
     EnabledMetrics: EnabledMetrics = null,
-    HealthCheckGracePeriod: Int | Double = null,
+    HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined,
     Instances: Instances = null,
     LaunchConfigurationName: XmlStringMaxLen255 = null,
     LaunchTemplate: LaunchTemplateSpecification = null,
     LoadBalancerNames: LoadBalancerNames = null,
-    MaxInstanceLifetime: Int | Double = null,
+    MaxInstanceLifetime: js.UndefOr[MaxInstanceLifetime] = js.undefined,
     MixedInstancesPolicy: MixedInstancesPolicy = null,
-    NewInstancesProtectedFromScaleIn: js.UndefOr[Boolean] = js.undefined,
+    NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined,
     PlacementGroup: XmlStringMaxLen255 = null,
     ServiceLinkedRoleARN: ResourceName = null,
     Status: XmlStringMaxLen255 = null,
@@ -145,14 +145,14 @@ object AutoScalingGroup {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], AvailabilityZones = AvailabilityZones.asInstanceOf[js.Any], CreatedTime = CreatedTime.asInstanceOf[js.Any], DefaultCooldown = DefaultCooldown.asInstanceOf[js.Any], DesiredCapacity = DesiredCapacity.asInstanceOf[js.Any], HealthCheckType = HealthCheckType.asInstanceOf[js.Any], MaxSize = MaxSize.asInstanceOf[js.Any], MinSize = MinSize.asInstanceOf[js.Any])
     if (AutoScalingGroupARN != null) __obj.updateDynamic("AutoScalingGroupARN")(AutoScalingGroupARN.asInstanceOf[js.Any])
     if (EnabledMetrics != null) __obj.updateDynamic("EnabledMetrics")(EnabledMetrics.asInstanceOf[js.Any])
-    if (HealthCheckGracePeriod != null) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(HealthCheckGracePeriod)) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod.get.asInstanceOf[js.Any])
     if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
     if (LaunchConfigurationName != null) __obj.updateDynamic("LaunchConfigurationName")(LaunchConfigurationName.asInstanceOf[js.Any])
     if (LaunchTemplate != null) __obj.updateDynamic("LaunchTemplate")(LaunchTemplate.asInstanceOf[js.Any])
     if (LoadBalancerNames != null) __obj.updateDynamic("LoadBalancerNames")(LoadBalancerNames.asInstanceOf[js.Any])
-    if (MaxInstanceLifetime != null) __obj.updateDynamic("MaxInstanceLifetime")(MaxInstanceLifetime.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxInstanceLifetime)) __obj.updateDynamic("MaxInstanceLifetime")(MaxInstanceLifetime.get.asInstanceOf[js.Any])
     if (MixedInstancesPolicy != null) __obj.updateDynamic("MixedInstancesPolicy")(MixedInstancesPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(NewInstancesProtectedFromScaleIn)) __obj.updateDynamic("NewInstancesProtectedFromScaleIn")(NewInstancesProtectedFromScaleIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(NewInstancesProtectedFromScaleIn)) __obj.updateDynamic("NewInstancesProtectedFromScaleIn")(NewInstancesProtectedFromScaleIn.get.asInstanceOf[js.Any])
     if (PlacementGroup != null) __obj.updateDynamic("PlacementGroup")(PlacementGroup.asInstanceOf[js.Any])
     if (ServiceLinkedRoleARN != null) __obj.updateDynamic("ServiceLinkedRoleARN")(ServiceLinkedRoleARN.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

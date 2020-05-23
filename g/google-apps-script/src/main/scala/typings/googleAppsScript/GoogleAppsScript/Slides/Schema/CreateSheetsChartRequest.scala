@@ -15,14 +15,14 @@ trait CreateSheetsChartRequest extends js.Object {
 object CreateSheetsChartRequest {
   @scala.inline
   def apply(
-    chartId: Int | Double = null,
+    chartId: js.UndefOr[Double] = js.undefined,
     elementProperties: PageElementProperties = null,
     linkingMode: String = null,
     objectId: String = null,
     spreadsheetId: String = null
   ): CreateSheetsChartRequest = {
     val __obj = js.Dynamic.literal()
-    if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartId)) __obj.updateDynamic("chartId")(chartId.get.asInstanceOf[js.Any])
     if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties.asInstanceOf[js.Any])
     if (linkingMode != null) __obj.updateDynamic("linkingMode")(linkingMode.asInstanceOf[js.Any])
     if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])

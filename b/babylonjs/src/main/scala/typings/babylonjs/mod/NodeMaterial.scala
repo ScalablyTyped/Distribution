@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.PartialINodeMaterialOptio
+import typings.babylonjs.anon.PartialINodeMaterialOptio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

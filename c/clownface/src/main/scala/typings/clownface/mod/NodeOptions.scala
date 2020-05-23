@@ -1,6 +1,6 @@
 package typings.clownface.mod
 
-import typings.clownface.AnonToString
+import typings.clownface.anon.ToString
 import typings.clownface.clownfaceStrings.BlankNode
 import typings.clownface.clownfaceStrings.Literal
 import typings.clownface.clownfaceStrings.NamedNode
@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NodeOptions extends js.Object {
-  var datatype: js.UndefOr[Term | AnonToString] = js.undefined
+  var datatype: js.UndefOr[Term | ToString] = js.undefined
   var language: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[BlankNode | Literal | NamedNode] = js.undefined
 }
@@ -18,7 +18,7 @@ trait NodeOptions extends js.Object {
 object NodeOptions {
   @scala.inline
   def apply(
-    datatype: Term | AnonToString = null,
+    datatype: Term | ToString = null,
     language: String = null,
     `type`: BlankNode | Literal | NamedNode = null
   ): NodeOptions = {

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.autosizeMod.AutoSizeType
-  - typings.vegaTypings.AnonContains
+  - typings.vegaTypings.anon.Contains
 */
 trait AutoSize extends js.Object
 

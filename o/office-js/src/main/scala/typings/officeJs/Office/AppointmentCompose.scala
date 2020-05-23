@@ -1,7 +1,7 @@
 package typings.officeJs.Office
 
-import typings.officeJs.AsyncContextOptionsisInli
 import typings.officeJs.Office.MailboxEnums.ItemType
+import typings.officeJs.anon.AsyncContextOptionsisInli
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -509,11 +509,11 @@ trait AppointmentCompose extends Item {
     *                 the failure.
     */
   def getAttachmentsAsync(): Unit = js.native
-  def getAttachmentsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetails]], Unit]): Unit = js.native
+  def getAttachmentsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]): Unit = js.native
   def getAttachmentsAsync(options: AsyncContextOptions): Unit = js.native
   def getAttachmentsAsync(
     options: AsyncContextOptions,
-    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetails]], Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]
   ): Unit = js.native
   /**
     * Asynchronously gets the ID of a saved item.
@@ -783,7 +783,7 @@ trait AppointmentCompose extends Item {
     *
     * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:
     *
-    * - In Outlook on Mac, only preview build 16.35.205.0 or later with an Office 365 subscription supports saving a meeting.
+    * - In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
     * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
     * For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
     *
@@ -822,7 +822,7 @@ trait AppointmentCompose extends Item {
     *
     * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:
     *
-    * - In Outlook on Mac, only preview build 16.35.205.0 or later with an Office 365 subscription supports saving a meeting.
+    * - In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
     * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
     * For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
     *

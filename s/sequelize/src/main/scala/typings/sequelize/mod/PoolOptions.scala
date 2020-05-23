@@ -40,19 +40,19 @@ trait PoolOptions extends js.Object {
 object PoolOptions {
   @scala.inline
   def apply(
-    acquire: Int | Double = null,
-    evict: Int | Double = null,
-    idle: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
+    acquire: js.UndefOr[Double] = js.undefined,
+    evict: js.UndefOr[Double] = js.undefined,
+    idle: js.UndefOr[Double] = js.undefined,
+    max: js.UndefOr[Double] = js.undefined,
+    min: js.UndefOr[Double] = js.undefined,
     validate: /* client */ js.UndefOr[js.Any] => Boolean = null
   ): PoolOptions = {
     val __obj = js.Dynamic.literal()
-    if (acquire != null) __obj.updateDynamic("acquire")(acquire.asInstanceOf[js.Any])
-    if (evict != null) __obj.updateDynamic("evict")(evict.asInstanceOf[js.Any])
-    if (idle != null) __obj.updateDynamic("idle")(idle.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(acquire)) __obj.updateDynamic("acquire")(acquire.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(evict)) __obj.updateDynamic("evict")(evict.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(idle)) __obj.updateDynamic("idle")(idle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     __obj.asInstanceOf[PoolOptions]
   }

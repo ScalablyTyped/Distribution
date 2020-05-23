@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.CULLFACE_NONE
-  * @type {number}
-  * @description No triangles are culled.
+  * No triangles are culled.
   */
 @JSImport("playcanvas", "CULLFACE_NONE")
 @js.native

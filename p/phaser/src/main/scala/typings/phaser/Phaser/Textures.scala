@@ -1,6 +1,5 @@
 package typings.phaser.Phaser
 
-import org.scalablytyped.runtime.TopLevel
 import typings.phaser.EachTextureCallback
 import typings.phaser.Phaser.Display.Color
 import typings.phaser.Phaser.Events.EventEmitter
@@ -8,6 +7,7 @@ import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.RenderTexture
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
+import typings.phaser.Phaser.Types.Create.GenerateTextureConfig
 import typings.phaser.Phaser.Types.Textures.PixelConfig
 import typings.phaser.Phaser.Types.Textures.SpriteSheetConfig
 import typings.phaser.Phaser.Types.Textures.SpriteSheetFromAtlasConfig
@@ -48,16 +48,7 @@ object Textures extends js.Object {
     * graphical errors.
     */
   @js.native
-  class CanvasTexture protected () extends Texture {
-    /**
-      * 
-      * @param manager A reference to the Texture Manager this Texture belongs to.
-      * @param key The unique string-based key of this Texture.
-      * @param source The canvas element that is used as the base of this texture.
-      * @param width The width of the canvas.
-      * @param height The height of the canvas.
-      */
-    def this(manager: TextureManager, key: String, source: HTMLCanvasElement, width: integer, height: integer) = this()
+  trait CanvasTexture extends Texture {
     /**
       * An ArrayBuffer the same size as the context ImageData.
       */
@@ -184,11 +175,11 @@ object Textures extends js.Object {
       * @param width The width of the region to get. Must be an integer. Defaults to the canvas width if not given.
       * @param height The height of the region to get. Must be an integer. If not given will be set to the `width`.
       */
-    def getPixels(): js.Array[PixelConfig] = js.native
-    def getPixels(x: integer): js.Array[PixelConfig] = js.native
-    def getPixels(x: integer, y: integer): js.Array[PixelConfig] = js.native
-    def getPixels(x: integer, y: integer, width: integer): js.Array[PixelConfig] = js.native
-    def getPixels(x: integer, y: integer, width: integer, height: integer): js.Array[PixelConfig] = js.native
+    def getPixels(): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: integer, y: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: integer, y: integer, width: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: integer, y: integer, width: integer, height: integer): js.Array[js.Array[PixelConfig]] = js.native
     /**
       * Puts the ImageData into the context of this CanvasTexture at the given coordinates.
       * @param imageData The ImageData to put at the given location.
@@ -261,35 +252,7 @@ object Textures extends js.Object {
     * A Frame is a section of a Texture.
     */
   @js.native
-  class Frame protected () extends js.Object {
-    def this(
-      texture: Texture,
-      name: String,
-      sourceIndex: integer,
-      x: Double,
-      y: Double,
-      width: Double,
-      height: Double
-    ) = this()
-    /**
-      * 
-      * @param texture The Texture this Frame is a part of.
-      * @param name The name of this Frame. The name is unique within the Texture.
-      * @param sourceIndex The index of the TextureSource that this Frame is a part of.
-      * @param x The x coordinate of the top-left of this Frame.
-      * @param y The y coordinate of the top-left of this Frame.
-      * @param width The width of this Frame.
-      * @param height The height of this Frame.
-      */
-    def this(
-      texture: Texture,
-      name: integer,
-      sourceIndex: integer,
-      x: Double,
-      y: Double,
-      width: Double,
-      height: Double
-    ) = this()
+  trait Frame extends js.Object {
     /**
       * Over-rides the Renderer setting.
       * -1 = use Renderer Setting
@@ -520,35 +483,7 @@ object Textures extends js.Object {
     * Sprites and other Game Objects get the texture data they need from the TextureManager.
     */
   @js.native
-  class Texture protected () extends js.Object {
-    def this(manager: TextureManager, key: String, source: js.Array[HTMLCanvasElement | HTMLImageElement]) = this()
-    def this(manager: TextureManager, key: String, source: HTMLCanvasElement) = this()
-    /**
-      * 
-      * @param manager A reference to the Texture Manager this Texture belongs to.
-      * @param key The unique string-based key of this Texture.
-      * @param source An array of sources that are used to create the texture. Usually Images, but can also be a Canvas.
-      * @param width The width of the Texture. This is optional and automatically derived from the source images.
-      * @param height The height of the Texture. This is optional and automatically derived from the source images.
-      */
-    def this(manager: TextureManager, key: String, source: HTMLImageElement) = this()
-    def this(
-      manager: TextureManager,
-      key: String,
-      source: js.Array[HTMLCanvasElement | HTMLImageElement],
-      width: Double
-    ) = this()
-    def this(manager: TextureManager, key: String, source: HTMLCanvasElement, width: Double) = this()
-    def this(manager: TextureManager, key: String, source: HTMLImageElement, width: Double) = this()
-    def this(
-      manager: TextureManager,
-      key: String,
-      source: js.Array[HTMLCanvasElement | HTMLImageElement],
-      width: Double,
-      height: Double
-    ) = this()
-    def this(manager: TextureManager, key: String, source: HTMLCanvasElement, width: Double, height: Double) = this()
-    def this(manager: TextureManager, key: String, source: HTMLImageElement, width: Double, height: Double) = this()
+  trait Texture extends js.Object {
     /**
       * Any additional data that was set in the source JSON (if any),
       * or any extra data you'd like to store relating to this texture
@@ -705,12 +640,7 @@ object Textures extends js.Object {
     * Access it via `scene.textures`.
     */
   @js.native
-  class TextureManager protected () extends EventEmitter {
-    /**
-      * 
-      * @param game The Phaser.Game instance this Texture Manager belongs to.
-      */
-    def this(game: Game) = this()
+  trait TextureManager extends EventEmitter {
     /**
       * The Game that this TextureManager belongs to.
       */
@@ -957,12 +887,42 @@ object Textures extends js.Object {
     def exists(key: String): Boolean = js.native
     /**
       * Creates a new Texture using the given config values.
+      * 
       * Generated textures consist of a Canvas element to which the texture data is drawn.
-      * See the Phaser.Create function for the more direct way to create textures.
+      * 
+      * Generates a texture based on the given Create configuration object.
+      * 
+      * The texture is drawn using a fixed-size indexed palette of 16 colors, where the hex value in the
+      * data cells map to a single color. For example, if the texture config looked like this:
+      * 
+      * ```javascript
+      * var star = [
+      *   '.....828.....',
+      *   '....72227....',
+      *   '....82228....',
+      *   '...7222227...',
+      *   '2222222222222',
+      *   '8222222222228',
+      *   '.72222222227.',
+      *   '..787777787..',
+      *   '..877777778..',
+      *   '.78778887787.',
+      *   '.27887.78872.',
+      *   '.787.....787.'
+      * ];
+      * 
+      * this.textures.generate('star', { data: star, pixelWidth: 4 });
+      * ```
+      * 
+      * Then it would generate a texture that is 52 x 48 pixels in size, because each cell of the data array
+      * represents 1 pixel multiplied by the `pixelWidth` value. The cell values, such as `8`, maps to color
+      * number 8 in the palette. If a cell contains a period character `.` then it is transparent.
+      * 
+      * The default palette is Arne16, but you can specify your own using the `palette` property.
       * @param key The unique string-based key of the Texture.
       * @param config The configuration object needed to generate the texture.
       */
-    def generate(key: String, config: js.Object): Texture = js.native
+    def generate(key: String, config: GenerateTextureConfig): Texture = js.native
     /**
       * Returns a Texture from the Texture Manager that matches the given key.
       * 
@@ -985,8 +945,8 @@ object Textures extends js.Object {
       * see the WebGL Snapshot function instead.
       * @param key The unique string-based key of the Texture.
       * @param frame The string-based name, or integer based index, of the Frame to get from the Texture.
-      * @param type [description] Default 'image/png'.
-      * @param encoderOptions [description] Default 0.92.
+      * @param type A DOMString indicating the image format. The default format type is image/png. Default 'image/png'.
+      * @param encoderOptions A Number between 0 and 1 indicating the image quality to use for image formats that use lossy compression such as image/jpeg and image/webp. If this argument is anything else, the default value for image quality is used. The default value is 0.92. Other arguments are ignored. Default 0.92.
       */
     def getBase64(key: String): String = js.native
     def getBase64(key: String, frame: String): String = js.native
@@ -1080,35 +1040,7 @@ object Textures extends js.Object {
     * A Texture can contain multiple Texture Sources, which only happens when a multi-atlas is loaded.
     */
   @js.native
-  class TextureSource protected () extends js.Object {
-    def this(texture: Texture, source: RenderTexture) = this()
-    def this(texture: Texture, source: HTMLCanvasElement) = this()
-    /**
-      * 
-      * @param texture The Texture this TextureSource belongs to.
-      * @param source The source image data.
-      * @param width Optional width of the source image. If not given it's derived from the source itself.
-      * @param height Optional height of the source image. If not given it's derived from the source itself.
-      * @param flipY Sets the `UNPACK_FLIP_Y_WEBGL` flag the WebGL Texture uses during upload. Default false.
-      */
-    def this(texture: Texture, source: HTMLImageElement) = this()
-    def this(texture: Texture, source: HTMLVideoElement) = this()
-    def this(texture: Texture, source: WebGLTexture) = this()
-    def this(texture: Texture, source: RenderTexture, width: integer) = this()
-    def this(texture: Texture, source: HTMLCanvasElement, width: integer) = this()
-    def this(texture: Texture, source: HTMLImageElement, width: integer) = this()
-    def this(texture: Texture, source: HTMLVideoElement, width: integer) = this()
-    def this(texture: Texture, source: WebGLTexture, width: integer) = this()
-    def this(texture: Texture, source: RenderTexture, width: integer, height: integer) = this()
-    def this(texture: Texture, source: HTMLCanvasElement, width: integer, height: integer) = this()
-    def this(texture: Texture, source: HTMLImageElement, width: integer, height: integer) = this()
-    def this(texture: Texture, source: HTMLVideoElement, width: integer, height: integer) = this()
-    def this(texture: Texture, source: WebGLTexture, width: integer, height: integer) = this()
-    def this(texture: Texture, source: RenderTexture, width: integer, height: integer, flipY: Boolean) = this()
-    def this(texture: Texture, source: HTMLCanvasElement, width: integer, height: integer, flipY: Boolean) = this()
-    def this(texture: Texture, source: HTMLImageElement, width: integer, height: integer, flipY: Boolean) = this()
-    def this(texture: Texture, source: HTMLVideoElement, width: integer, height: integer, flipY: Boolean) = this()
-    def this(texture: Texture, source: WebGLTexture, width: integer, height: integer, flipY: Boolean) = this()
+  trait TextureSource extends js.Object {
     /**
       * Currently un-used.
       */
@@ -1213,65 +1145,6 @@ object Textures extends js.Object {
   }
   
   /**
-    * Linear filter type.
-    */
-  val LINEAR: integer = js.native
-  /**
-    * Nearest Neighbor filter type.
-    */
-  val NEAREST: integer = js.native
-  @js.native
-  object Events extends js.Object {
-    /**
-      * The Texture Add Event.
-      * 
-      * This event is dispatched by the Texture Manager when a texture is added to it.
-      * 
-      * Listen to this event from within a Scene using: `this.textures.on('addtexture', listener)`.
-      */
-    val ADD: js.Any = js.native
-    /**
-      * The Texture Load Error Event.
-      * 
-      * This event is dispatched by the Texture Manager when a texture it requested to load failed.
-      * This only happens when base64 encoded textures fail. All other texture types are loaded via the Loader Plugin.
-      * 
-      * Listen to this event from within a Scene using: `this.textures.on('onerror', listener)`.
-      */
-    val ERROR: js.Any = js.native
-    /**
-      * The Texture Load Event.
-      * 
-      * This event is dispatched by the Texture Manager when a texture has finished loading on it.
-      * This only happens for base64 encoded textures. All other texture types are loaded via the Loader Plugin.
-      * 
-      * Listen to this event from within a Scene using: `this.textures.on('onload', listener)`.
-      * 
-      * This event is dispatched after the [ADD]{@linkcode Phaser.Textures.Events#event:ADD} event.
-      */
-    val LOAD: js.Any = js.native
-    /**
-      * This internal event signifies that the Texture Manager is now ready and the Game can continue booting.
-      * 
-      * When a Phaser Game instance is booting for the first time, the Texture Manager has to wait on a couple of non-blocking
-      * async events before it's fully ready to carry on. When those complete the Texture Manager emits this event via the Game
-      * instance, which tells the Game to carry on booting.
-      */
-    val READY: js.Any = js.native
-    /**
-      * The Texture Remove Event.
-      * 
-      * This event is dispatched by the Texture Manager when a texture is removed from it.
-      * 
-      * Listen to this event from within a Scene using: `this.textures.on('removetexture', listener)`.
-      * 
-      * If you have any Game Objects still using the removed texture, they will start throwing
-      * errors the next time they try to render. Be sure to clear all use of the texture in this event handler.
-      */
-    val REMOVE: js.Any = js.native
-  }
-  
-  /**
     * Filter Types.
     */
   @js.native
@@ -1287,16 +1160,6 @@ object Textures extends js.Object {
       */
     @js.native
     sealed trait NEAREST extends FilterMode
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FilterMode with Double] = js.native
-    /* 0 */ @js.native
-    object LINEAR
-      extends TopLevel[typings.phaser.Phaser.Textures.FilterMode.LINEAR with Double]
-    
-    /* 1 */ @js.native
-    object NEAREST
-      extends TopLevel[typings.phaser.Phaser.Textures.FilterMode.NEAREST with Double]
     
   }
   

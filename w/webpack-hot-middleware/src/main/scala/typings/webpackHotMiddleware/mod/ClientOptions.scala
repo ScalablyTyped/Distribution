@@ -34,21 +34,21 @@ object ClientOptions {
     path: String = null,
     quiet: js.UndefOr[Boolean] = js.undefined,
     reload: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
     if (ansiColors != null) __obj.updateDynamic("ansiColors")(ansiColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicPublicPath)) __obj.updateDynamic("dynamicPublicPath")(dynamicPublicPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicPublicPath)) __obj.updateDynamic("dynamicPublicPath")(dynamicPublicPath.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noInfo)) __obj.updateDynamic("noInfo")(noInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(noInfo)) __obj.updateDynamic("noInfo")(noInfo.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.get.asInstanceOf[js.Any])
     if (overlayStyles != null) __obj.updateDynamic("overlayStyles")(overlayStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlayWarnings)) __obj.updateDynamic("overlayWarnings")(overlayWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayWarnings)) __obj.updateDynamic("overlayWarnings")(overlayWarnings.get.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

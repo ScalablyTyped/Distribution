@@ -105,8 +105,8 @@ object ImagingStudySeries {
     instance: js.Array[ImagingStudySeriesInstance] = null,
     laterality: Coding = null,
     modifierExtension: js.Array[Extension] = null,
-    number: Int | Double = null,
-    numberOfInstances: Int | Double = null,
+    number: js.UndefOr[unsignedInt] = js.undefined,
+    numberOfInstances: js.UndefOr[unsignedInt] = js.undefined,
     performer: js.Array[Reference] = null,
     started: dateTime = null
   ): ImagingStudySeries = {
@@ -129,8 +129,8 @@ object ImagingStudySeries {
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     if (laterality != null) __obj.updateDynamic("laterality")(laterality.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (numberOfInstances != null) __obj.updateDynamic("numberOfInstances")(numberOfInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfInstances)) __obj.updateDynamic("numberOfInstances")(numberOfInstances.get.asInstanceOf[js.Any])
     if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])
     if (started != null) __obj.updateDynamic("started")(started.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagingStudySeries]

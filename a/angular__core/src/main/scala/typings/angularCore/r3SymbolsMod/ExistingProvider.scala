@@ -37,7 +37,7 @@ object ExistingProvider {
   @scala.inline
   def apply(provide: js.Any, useExisting: js.Any, multi: js.UndefOr[Boolean] = js.undefined): ExistingProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useExisting = useExisting.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistingProvider]
   }
 }

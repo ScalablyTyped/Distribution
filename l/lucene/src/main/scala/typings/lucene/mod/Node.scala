@@ -1,6 +1,6 @@
 package typings.lucene.mod
 
-import typings.lucene.AnonEnd
+import typings.lucene.anon.End
 import typings.lucene.luceneStrings.LessthansignimplicitGreaterthansign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait Node extends js.Object {
   var regex: Boolean
   var similarity: Null
   var term: String
-  var termLocation: AnonEnd
+  var termLocation: End
 }
 
 object Node {
@@ -27,13 +27,11 @@ object Node {
     regex: Boolean,
     similarity: Null,
     term: String,
-    termLocation: AnonEnd,
-    boost: Int | Double = null,
+    termLocation: End,
+    boost: Double = null.asInstanceOf[Double],
     prefix: String = null
   ): Node = {
-    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], fieldLocation = fieldLocation.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any], similarity = similarity.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], termLocation = termLocation.asInstanceOf[js.Any])
-    if (boost != null) __obj.updateDynamic("boost")(boost.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], fieldLocation = fieldLocation.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any], similarity = similarity.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], termLocation = termLocation.asInstanceOf[js.Any], boost = boost.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

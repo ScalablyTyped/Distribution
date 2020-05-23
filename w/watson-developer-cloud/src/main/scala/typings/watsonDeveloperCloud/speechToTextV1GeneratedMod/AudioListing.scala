@@ -26,7 +26,7 @@ object AudioListing {
     audio: js.Array[AudioResource] = null,
     container: AudioResource = null,
     details: AudioDetails = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     name: String = null,
     status: String = null
   ): AudioListing = {
@@ -34,7 +34,7 @@ object AudioListing {
     if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioListing]

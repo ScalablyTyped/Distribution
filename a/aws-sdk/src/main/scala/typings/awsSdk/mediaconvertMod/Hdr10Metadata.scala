@@ -59,32 +59,32 @@ trait Hdr10Metadata extends js.Object {
 object Hdr10Metadata {
   @scala.inline
   def apply(
-    BluePrimaryX: Int | Double = null,
-    BluePrimaryY: Int | Double = null,
-    GreenPrimaryX: Int | Double = null,
-    GreenPrimaryY: Int | Double = null,
-    MaxContentLightLevel: Int | Double = null,
-    MaxFrameAverageLightLevel: Int | Double = null,
-    MaxLuminance: Int | Double = null,
-    MinLuminance: Int | Double = null,
-    RedPrimaryX: Int | Double = null,
-    RedPrimaryY: Int | Double = null,
-    WhitePointX: Int | Double = null,
-    WhitePointY: Int | Double = null
+    BluePrimaryX: js.UndefOr[integerMin0Max50000] = js.undefined,
+    BluePrimaryY: js.UndefOr[integerMin0Max50000] = js.undefined,
+    GreenPrimaryX: js.UndefOr[integerMin0Max50000] = js.undefined,
+    GreenPrimaryY: js.UndefOr[integerMin0Max50000] = js.undefined,
+    MaxContentLightLevel: js.UndefOr[integerMin0Max65535] = js.undefined,
+    MaxFrameAverageLightLevel: js.UndefOr[integerMin0Max65535] = js.undefined,
+    MaxLuminance: js.UndefOr[integerMin0Max2147483647] = js.undefined,
+    MinLuminance: js.UndefOr[integerMin0Max2147483647] = js.undefined,
+    RedPrimaryX: js.UndefOr[integerMin0Max50000] = js.undefined,
+    RedPrimaryY: js.UndefOr[integerMin0Max50000] = js.undefined,
+    WhitePointX: js.UndefOr[integerMin0Max50000] = js.undefined,
+    WhitePointY: js.UndefOr[integerMin0Max50000] = js.undefined
   ): Hdr10Metadata = {
     val __obj = js.Dynamic.literal()
-    if (BluePrimaryX != null) __obj.updateDynamic("BluePrimaryX")(BluePrimaryX.asInstanceOf[js.Any])
-    if (BluePrimaryY != null) __obj.updateDynamic("BluePrimaryY")(BluePrimaryY.asInstanceOf[js.Any])
-    if (GreenPrimaryX != null) __obj.updateDynamic("GreenPrimaryX")(GreenPrimaryX.asInstanceOf[js.Any])
-    if (GreenPrimaryY != null) __obj.updateDynamic("GreenPrimaryY")(GreenPrimaryY.asInstanceOf[js.Any])
-    if (MaxContentLightLevel != null) __obj.updateDynamic("MaxContentLightLevel")(MaxContentLightLevel.asInstanceOf[js.Any])
-    if (MaxFrameAverageLightLevel != null) __obj.updateDynamic("MaxFrameAverageLightLevel")(MaxFrameAverageLightLevel.asInstanceOf[js.Any])
-    if (MaxLuminance != null) __obj.updateDynamic("MaxLuminance")(MaxLuminance.asInstanceOf[js.Any])
-    if (MinLuminance != null) __obj.updateDynamic("MinLuminance")(MinLuminance.asInstanceOf[js.Any])
-    if (RedPrimaryX != null) __obj.updateDynamic("RedPrimaryX")(RedPrimaryX.asInstanceOf[js.Any])
-    if (RedPrimaryY != null) __obj.updateDynamic("RedPrimaryY")(RedPrimaryY.asInstanceOf[js.Any])
-    if (WhitePointX != null) __obj.updateDynamic("WhitePointX")(WhitePointX.asInstanceOf[js.Any])
-    if (WhitePointY != null) __obj.updateDynamic("WhitePointY")(WhitePointY.asInstanceOf[js.Any])
+    if (!js.isUndefined(BluePrimaryX)) __obj.updateDynamic("BluePrimaryX")(BluePrimaryX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BluePrimaryY)) __obj.updateDynamic("BluePrimaryY")(BluePrimaryY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GreenPrimaryX)) __obj.updateDynamic("GreenPrimaryX")(GreenPrimaryX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GreenPrimaryY)) __obj.updateDynamic("GreenPrimaryY")(GreenPrimaryY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxContentLightLevel)) __obj.updateDynamic("MaxContentLightLevel")(MaxContentLightLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxFrameAverageLightLevel)) __obj.updateDynamic("MaxFrameAverageLightLevel")(MaxFrameAverageLightLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxLuminance)) __obj.updateDynamic("MaxLuminance")(MaxLuminance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinLuminance)) __obj.updateDynamic("MinLuminance")(MinLuminance.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RedPrimaryX)) __obj.updateDynamic("RedPrimaryX")(RedPrimaryX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RedPrimaryY)) __obj.updateDynamic("RedPrimaryY")(RedPrimaryY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(WhitePointX)) __obj.updateDynamic("WhitePointX")(WhitePointX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(WhitePointY)) __obj.updateDynamic("WhitePointY")(WhitePointY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hdr10Metadata]
   }
 }

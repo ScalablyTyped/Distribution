@@ -1,6 +1,6 @@
 package typings.devextreme.mod.default.ui
 
-import typings.devextreme.AnonCompile
+import typings.devextreme.anon.Compile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +22,6 @@ object ^ extends js.Object {
   /** @name ui.setTemplateEngine(name) */
   def setTemplateEngine(templateEngineName: String): Unit = js.native
   /** @name ui.setTemplateEngine(options) */
-  def setTemplateEngine(templateEngineOptions: AnonCompile): Unit = js.native
+  def setTemplateEngine(templateEngineOptions: Compile): Unit = js.native
 }
 

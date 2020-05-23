@@ -68,7 +68,7 @@ trait TileInfoProperties extends js.Object {
 object TileInfoProperties {
   @scala.inline
   def apply(
-    dpi: Int | Double = null,
+    dpi: js.UndefOr[Double] = js.undefined,
     format: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc = null,
     isWrappable: js.UndefOr[Boolean] = js.undefined,
     lods: js.Array[LODProperties] = null,
@@ -77,9 +77,9 @@ object TileInfoProperties {
     spatialReference: SpatialReferenceProperties = null
   ): TileInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (!js.isUndefined(dpi)) __obj.updateDynamic("dpi")(dpi.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWrappable)) __obj.updateDynamic("isWrappable")(isWrappable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWrappable)) __obj.updateDynamic("isWrappable")(isWrappable.get.asInstanceOf[js.Any])
     if (lods != null) __obj.updateDynamic("lods")(lods.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

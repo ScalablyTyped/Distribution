@@ -25,10 +25,10 @@ trait NotificationOptions extends js.Object {
 object NotificationOptions {
   @scala.inline
   def apply(
-    allowHideAfter: Int | Double = null,
+    allowHideAfter: js.UndefOr[Double] = js.undefined,
     animation: js.Any | Boolean = null,
     appendTo: String | JQuery = null,
-    autoHideAfter: Int | Double = null,
+    autoHideAfter: js.UndefOr[Double] = js.undefined,
     button: js.UndefOr[Boolean] = js.undefined,
     height: Double | String = null,
     hide: /* e */ NotificationHideEvent => Unit = null,
@@ -41,14 +41,14 @@ object NotificationOptions {
     width: Double | String = null
   ): NotificationOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowHideAfter != null) __obj.updateDynamic("allowHideAfter")(allowHideAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHideAfter)) __obj.updateDynamic("allowHideAfter")(allowHideAfter.get.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (autoHideAfter != null) __obj.updateDynamic("autoHideAfter")(autoHideAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideAfter)) __obj.updateDynamic("autoHideAfter")(autoHideAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.get.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))

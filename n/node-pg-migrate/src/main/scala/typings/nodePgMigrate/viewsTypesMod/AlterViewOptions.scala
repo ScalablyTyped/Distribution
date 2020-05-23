@@ -13,9 +13,9 @@ trait AlterViewOptions extends js.Object {
 
 object AlterViewOptions {
   @scala.inline
-  def apply(checkOption: `false` | CASCADED | LOCAL = null): AlterViewOptions = {
+  def apply(checkOption: js.UndefOr[Null | `false` | CASCADED | LOCAL] = js.undefined): AlterViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (checkOption != null) __obj.updateDynamic("checkOption")(checkOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkOption)) __obj.updateDynamic("checkOption")(checkOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlterViewOptions]
   }
 }

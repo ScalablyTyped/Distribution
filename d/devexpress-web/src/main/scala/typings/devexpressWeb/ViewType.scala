@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,14 +24,6 @@ object ViewType extends js.Object {
     */
   @js.native
   sealed trait Simple extends ViewType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ViewType with Double] = js.native
-  /* 1 */ @js.native
-  object PrintLayout extends TopLevel[PrintLayout with Double]
-  
-  /* 0 */ @js.native
-  object Simple extends TopLevel[Simple with Double]
   
 }
 

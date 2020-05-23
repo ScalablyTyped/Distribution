@@ -10,9 +10,9 @@ trait ClearBasicFilterRequest extends js.Object {
 
 object ClearBasicFilterRequest {
   @scala.inline
-  def apply(sheetId: Int | Double = null): ClearBasicFilterRequest = {
+  def apply(sheetId: js.UndefOr[Double] = js.undefined): ClearBasicFilterRequest = {
     val __obj = js.Dynamic.literal()
-    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearBasicFilterRequest]
   }
 }

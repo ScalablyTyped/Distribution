@@ -16,11 +16,11 @@ object LayoutParameter {
   @scala.inline
   def apply(
     lossFunction: (/* sets */ StringDictionary[Circle], /* overlaps */ js.Array[Overlap]) => Double = null,
-    restarts: Int | Double = null
+    restarts: js.UndefOr[Double] = js.undefined
   ): LayoutParameter = {
     val __obj = js.Dynamic.literal()
     if (lossFunction != null) __obj.updateDynamic("lossFunction")(js.Any.fromFunction2(lossFunction))
-    if (restarts != null) __obj.updateDynamic("restarts")(restarts.asInstanceOf[js.Any])
+    if (!js.isUndefined(restarts)) __obj.updateDynamic("restarts")(restarts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutParameter]
   }
 }

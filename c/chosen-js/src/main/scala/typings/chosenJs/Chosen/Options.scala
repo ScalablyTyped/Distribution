@@ -116,7 +116,7 @@ object Options {
     allow_single_deselect: js.UndefOr[Boolean] = js.undefined,
     case_sensitive_search: js.UndefOr[Boolean] = js.undefined,
     disable_search: js.UndefOr[Boolean] = js.undefined,
-    disable_search_threshold: Int | Double = null,
+    disable_search_threshold: js.UndefOr[Double] = js.undefined,
     display_disabled_options: js.UndefOr[Boolean] = js.undefined,
     display_selected_options: js.UndefOr[Boolean] = js.undefined,
     enable_split_word_search: js.UndefOr[Boolean] = js.undefined,
@@ -124,8 +124,8 @@ object Options {
     hide_results_on_select: js.UndefOr[Boolean] = js.undefined,
     include_group_label_in_selected: js.UndefOr[Boolean] = js.undefined,
     inherit_select_classes: js.UndefOr[Boolean] = js.undefined,
-    max_selected_options: Int | Double = null,
-    max_shown_results: Int | Double = null,
+    max_selected_options: js.UndefOr[Double] = js.undefined,
+    max_shown_results: js.UndefOr[Double] = js.undefined,
     no_results_text: String = null,
     placeholder_text_multiple: String = null,
     placeholder_text_single: String = null,
@@ -135,25 +135,25 @@ object Options {
     width: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_single_deselect)) __obj.updateDynamic("allow_single_deselect")(allow_single_deselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(case_sensitive_search)) __obj.updateDynamic("case_sensitive_search")(case_sensitive_search.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_search)) __obj.updateDynamic("disable_search")(disable_search.asInstanceOf[js.Any])
-    if (disable_search_threshold != null) __obj.updateDynamic("disable_search_threshold")(disable_search_threshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(display_disabled_options)) __obj.updateDynamic("display_disabled_options")(display_disabled_options.asInstanceOf[js.Any])
-    if (!js.isUndefined(display_selected_options)) __obj.updateDynamic("display_selected_options")(display_selected_options.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_split_word_search)) __obj.updateDynamic("enable_split_word_search")(enable_split_word_search.asInstanceOf[js.Any])
-    if (!js.isUndefined(group_search)) __obj.updateDynamic("group_search")(group_search.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide_results_on_select)) __obj.updateDynamic("hide_results_on_select")(hide_results_on_select.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_group_label_in_selected)) __obj.updateDynamic("include_group_label_in_selected")(include_group_label_in_selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit_select_classes)) __obj.updateDynamic("inherit_select_classes")(inherit_select_classes.asInstanceOf[js.Any])
-    if (max_selected_options != null) __obj.updateDynamic("max_selected_options")(max_selected_options.asInstanceOf[js.Any])
-    if (max_shown_results != null) __obj.updateDynamic("max_shown_results")(max_shown_results.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_single_deselect)) __obj.updateDynamic("allow_single_deselect")(allow_single_deselect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(case_sensitive_search)) __obj.updateDynamic("case_sensitive_search")(case_sensitive_search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_search)) __obj.updateDynamic("disable_search")(disable_search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_search_threshold)) __obj.updateDynamic("disable_search_threshold")(disable_search_threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(display_disabled_options)) __obj.updateDynamic("display_disabled_options")(display_disabled_options.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(display_selected_options)) __obj.updateDynamic("display_selected_options")(display_selected_options.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable_split_word_search)) __obj.updateDynamic("enable_split_word_search")(enable_split_word_search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(group_search)) __obj.updateDynamic("group_search")(group_search.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide_results_on_select)) __obj.updateDynamic("hide_results_on_select")(hide_results_on_select.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_group_label_in_selected)) __obj.updateDynamic("include_group_label_in_selected")(include_group_label_in_selected.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit_select_classes)) __obj.updateDynamic("inherit_select_classes")(inherit_select_classes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_selected_options)) __obj.updateDynamic("max_selected_options")(max_selected_options.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_shown_results)) __obj.updateDynamic("max_shown_results")(max_shown_results.get.asInstanceOf[js.Any])
     if (no_results_text != null) __obj.updateDynamic("no_results_text")(no_results_text.asInstanceOf[js.Any])
     if (placeholder_text_multiple != null) __obj.updateDynamic("placeholder_text_multiple")(placeholder_text_multiple.asInstanceOf[js.Any])
     if (placeholder_text_single != null) __obj.updateDynamic("placeholder_text_single")(placeholder_text_single.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(search_contains)) __obj.updateDynamic("search_contains")(search_contains.asInstanceOf[js.Any])
-    if (!js.isUndefined(single_backstroke_delete)) __obj.updateDynamic("single_backstroke_delete")(single_backstroke_delete.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(search_contains)) __obj.updateDynamic("search_contains")(search_contains.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(single_backstroke_delete)) __obj.updateDynamic("single_backstroke_delete")(single_backstroke_delete.get.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

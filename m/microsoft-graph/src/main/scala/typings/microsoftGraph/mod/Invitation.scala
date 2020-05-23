@@ -54,7 +54,7 @@ object Invitation {
     if (invitedUserEmailAddress != null) __obj.updateDynamic("invitedUserEmailAddress")(invitedUserEmailAddress.asInstanceOf[js.Any])
     if (invitedUserMessageInfo != null) __obj.updateDynamic("invitedUserMessageInfo")(invitedUserMessageInfo.asInstanceOf[js.Any])
     if (invitedUserType != null) __obj.updateDynamic("invitedUserType")(invitedUserType.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendInvitationMessage)) __obj.updateDynamic("sendInvitationMessage")(sendInvitationMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendInvitationMessage)) __obj.updateDynamic("sendInvitationMessage")(sendInvitationMessage.get.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invitation]
   }

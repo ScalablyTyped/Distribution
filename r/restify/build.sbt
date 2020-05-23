@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "restify"
-version := "8.4-dt-20200225Z-34ccd1"
-scalaVersion := "2.13.1"
+version := "8.4-dt-20200515Z-ec2a00"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20200226Z-2bfcf6",
-  "org.scalablytyped" %%% "formidable" % "1.0.16-dt-20200225Z-8a5756",
-  "org.scalablytyped" %%% "node" % "13.13-dt-20200417Z-f3d81d",
-  "org.scalablytyped" %%% "spdy" % "3.4-dt-20200227Z-03d70f",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20200515Z-0d29cd",
+  "org.scalablytyped" %%% "formidable" % "1.0.16-dt-20200515Z-e84748",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
+  "org.scalablytyped" %%% "spdy" % "3.4-dt-20200227Z-3b1b1c",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

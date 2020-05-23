@@ -1,6 +1,6 @@
 package typings.qiniu.mod.rs
 
-import typings.qiniu.AnonForce
+import typings.qiniu.anon.Force
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ object copyOp extends js.Object {
     * @param options
     */
   def apply(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = js.native
-  def apply(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: AnonForce): String = js.native
+  def apply(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = js.native
 }
 

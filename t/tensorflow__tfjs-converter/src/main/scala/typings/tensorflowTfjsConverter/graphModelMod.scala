@@ -1,7 +1,5 @@
 package typings.tensorflowTfjsConverter
 
-import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`Questionmarktfjs-formatEqualssignfile`
-import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.modelDotjson
 import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
 import typings.tensorflowTfjsConverter.typesMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.Rank
@@ -195,8 +193,8 @@ object graphModelMod extends js.Object {
     def save(handlerOrURL: IOHandler, config: SaveConfig): js.Promise[SaveResult] = js.native
   }
   
-  val DEFAULT_MODEL_NAME: modelDotjson = js.native
-  val TFHUB_SEARCH_PARAM: `Questionmarktfjs-formatEqualssignfile` = js.native
+  val DEFAULT_MODEL_NAME: /* "model.json" */ String = js.native
+  val TFHUB_SEARCH_PARAM: /* "?tfjs-format=file" */ String = js.native
   def loadGraphModel(modelUrl: String): js.Promise[GraphModel] = js.native
   def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[GraphModel] = js.native
   def loadGraphModel(modelUrl: IOHandler): js.Promise[GraphModel] = js.native

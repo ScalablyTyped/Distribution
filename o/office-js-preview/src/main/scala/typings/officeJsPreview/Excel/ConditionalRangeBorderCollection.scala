@@ -19,12 +19,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
-@JSGlobal("Excel.ConditionalRangeBorderCollection")
 @js.native
-class ConditionalRangeBorderCollection () extends ClientObject {
+trait ConditionalRangeBorderCollection extends ClientObject {
   /**
     *
-    * Gets the bottom border. Read-only.
+    * Gets the bottom border.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -34,7 +33,7 @@ class ConditionalRangeBorderCollection () extends ClientObject {
   var context_ConditionalRangeBorderCollection: RequestContext = js.native
   /**
     *
-    * Number of border objects in the collection. Read-only.
+    * Number of border objects in the collection.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -43,21 +42,21 @@ class ConditionalRangeBorderCollection () extends ClientObject {
   val items: js.Array[ConditionalRangeBorder] = js.native
   /**
     *
-    * Gets the left border. Read-only.
+    * Gets the left border.
     *
     * [Api set: ExcelApi 1.6]
     */
   val left: ConditionalRangeBorder = js.native
   /**
     *
-    * Gets the right border. Read-only.
+    * Gets the right border.
     *
     * [Api set: ExcelApi 1.6]
     */
   val right: ConditionalRangeBorder = js.native
   /**
     *
-    * Gets the top border. Read-only.
+    * Gets the top border.
     *
     * [Api set: ExcelApi 1.6]
     */

@@ -1,6 +1,6 @@
 package typings.asyncblockGenerators.ab.ab
 
-import typings.asyncblockGenerators.AnonKey
+import typings.asyncblockGenerators.anon.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait Flow extends js.Object {
   def forceWait(): js.Any = js.native
   def get(key: js.Any): js.Any = js.native
   //task timeout (event = taskTimeout)
-  def on(event: String, handler: js.Function1[/* info */ AnonKey, Unit]): Unit = js.native
+  def on(event: String, handler: js.Function1[/* info */ Key, Unit]): Unit = js.native
   def queue(exec: js.Function): Unit = js.native
   def queue(key: js.Any, exec: js.Function): Unit = js.native
   def queue(options: TaskOptions, exec: js.Function): Unit = js.native

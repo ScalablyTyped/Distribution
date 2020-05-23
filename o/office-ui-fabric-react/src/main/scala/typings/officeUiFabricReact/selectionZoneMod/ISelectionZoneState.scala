@@ -12,7 +12,7 @@ object ISelectionZoneState {
   @scala.inline
   def apply(isModal: js.UndefOr[Boolean] = js.undefined): ISelectionZoneState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isModal)) __obj.updateDynamic("isModal")(isModal.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModal)) __obj.updateDynamic("isModal")(isModal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISelectionZoneState]
   }
 }

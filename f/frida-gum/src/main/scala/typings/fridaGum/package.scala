@@ -9,16 +9,16 @@ package object fridaGum {
   /* Rewritten from type alias, can be one of: 
     - typings.fridaGum.Arm64Register
     - scala.Double
-    - typings.fridaGum.UInt64_
-    - typings.fridaGum.Int64_
+    - typings.fridaGum.UInt64
+    - typings.fridaGum.Int64
     - typings.fridaGum.NativePointerValue
   */
   type Arm64CallArgument = typings.fridaGum._Arm64CallArgument | scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.fridaGum.ArmRegister
     - scala.Double
-    - typings.fridaGum.UInt64_
-    - typings.fridaGum.Int64_
+    - typings.fridaGum.UInt64
+    - typings.fridaGum.Int64
     - typings.fridaGum.NativePointerValue
   */
   type ArmCallArgument = typings.fridaGum._ArmCallArgument | scala.Double
@@ -55,21 +55,22 @@ package object fridaGum {
   /* Rewritten from type alias, can be one of: 
     - typings.fridaGum.MipsRegister
     - scala.Double
-    - typings.fridaGum.UInt64_
-    - typings.fridaGum.Int64_
+    - typings.fridaGum.UInt64
+    - typings.fridaGum.Int64
     - typings.fridaGum.NativePointerValue
   */
   type MipsCallArgument = typings.fridaGum._MipsCallArgument | scala.Double
   type ModuleMapFilter = js.Function1[/* m */ typings.fridaGum.Module, scala.Boolean]
   /* Rewritten from type alias, can be one of: 
     - typings.fridaGum.NativePointerValue
-    - typings.fridaGum.UInt64_
-    - typings.fridaGum.Int64_
+    - typings.fridaGum.UInt64
+    - typings.fridaGum.Int64
     - scala.Double
     - scala.Boolean
     - js.Array[js.Any]
   */
   type NativeArgumentValue = typings.fridaGum._NativeArgumentValue | js.Array[js.Any] | scala.Double | scala.Boolean
+  type NativeCallback = typings.fridaGum.NativePointer
   type NativeCallbackImplementation = js.ThisFunction1[
     /* this */ js.UndefOr[typings.fridaGum.InvocationContext], 
     /* repeated */ js.Any, 
@@ -77,8 +78,8 @@ package object fridaGum {
   ]
   /* Rewritten from type alias, can be one of: 
     - typings.fridaGum.NativePointer
-    - typings.fridaGum.UInt64_
-    - typings.fridaGum.Int64_
+    - typings.fridaGum.UInt64
+    - typings.fridaGum.Int64
     - scala.Double
     - scala.Boolean
     - js.Array[js.Any]
@@ -91,6 +92,10 @@ package object fridaGum {
   type PageProtection = java.lang.String
   type RpcExports = org.scalablytyped.runtime.StringDictionary[typings.fridaGum.AnyFunction]
   type ScheduledCallback = js.Function1[/* repeated */ js.Any, scala.Unit]
+  type StalkerArm32TransformCallback = js.Function1[
+    /* iterator */ typings.fridaGum.StalkerArmIterator | typings.fridaGum.StalkerThumbIterator, 
+    scala.Unit
+  ]
   type StalkerArm64TransformCallback = js.Function1[/* iterator */ typings.fridaGum.StalkerArm64Iterator, scala.Unit]
   type StalkerBlockEventBare = js.Tuple2[
     typings.fridaGum.NativePointer | java.lang.String, 
@@ -143,7 +148,7 @@ package object fridaGum {
     */
   type StalkerNativeCallout = typings.fridaGum.NativePointer
   /**
-    * Signature: `void transform (GumStalkerIterator * iterator, GumStalkerWriter * output, gpointer user_data)`
+    * Signature: `void transform (GumStalkerIterator * iterator, GumStalkerOutput * output, gpointer user_data)`
     */
   type StalkerNativeTransformCallback = typings.fridaGum.NativePointer
   type StalkerRetEventBare = js.Tuple3[
@@ -162,24 +167,48 @@ package object fridaGum {
     */
   type StalkerScriptCallProbeCallback = js.Function1[/* args */ typings.fridaGum.InvocationArguments, scala.Unit]
   type StalkerScriptCallout = js.Function1[/* context */ typings.fridaGum.CpuContext, scala.Unit]
-  type StalkerTransformCallback = typings.fridaGum.StalkerX86TransformCallback | typings.fridaGum.StalkerArm64TransformCallback | typings.fridaGum.StalkerNativeTransformCallback
+  type StalkerTransformCallback = typings.fridaGum.StalkerX86TransformCallback | typings.fridaGum.StalkerArm32TransformCallback | typings.fridaGum.StalkerArm64TransformCallback | typings.fridaGum.StalkerNativeTransformCallback
   type StalkerX86TransformCallback = js.Function1[/* iterator */ typings.fridaGum.StalkerX86Iterator, scala.Unit]
   type ThreadId = scala.Double
   /**
     * Opaque ID returned by `setTimeout()`. Pass it to `clearTimeout()` to cancel a pending `setTimeout()`.
     */
   type TimeoutId = scala.Double
+  /**
+    * Input stream backed by a file descriptor.
+    *
+    * Only available on UNIX-like OSes.
+    */
+  type UnixInputStream = typings.fridaGum.InputStream
+  /**
+    * Output stream backed by a file descriptor.
+    *
+    * Only available on UNIX-like OSes.
+    */
+  type UnixOutputStream = typings.fridaGum.OutputStream
   type WeakRefCallback = js.Function0[scala.Unit]
   /**
     * Opaque ID returned by `WeakRef.bind()`. Pass it to `WeakRef.unbind()` to
     * stop monitoring the target value.
     */
   type WeakRefId = scala.Double
+  /**
+    * Input stream backed by a Windows file handle.
+    *
+    * Only available on Windows.
+    */
+  type Win32InputStream = typings.fridaGum.InputStream
+  /**
+    * Output stream backed by a Windows file handle.
+    *
+    * Only available on Windows.
+    */
+  type Win32OutputStream = typings.fridaGum.OutputStream
   /* Rewritten from type alias, can be one of: 
     - typings.fridaGum.X86Register
     - scala.Double
-    - typings.fridaGum.UInt64_
-    - typings.fridaGum.Int64_
+    - typings.fridaGum.UInt64
+    - typings.fridaGum.Int64
     - typings.fridaGum.NativePointerValue
   */
   type X86CallArgument = typings.fridaGum._X86CallArgument | scala.Double

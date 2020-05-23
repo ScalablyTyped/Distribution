@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +42,16 @@ trait FieldsIndex extends js.Object {
   def isDateField(fieldName: String): Boolean
 }
 
-@JSGlobal("__esri.FieldsIndex")
-@js.native
-object FieldsIndex extends TopLevel[FieldsIndexConstructor]
+object FieldsIndex {
+  @scala.inline
+  def apply(
+    dateFields: js.Array[_ | Field],
+    get: String => Field,
+    has: String => Boolean,
+    isDateField: String => Boolean
+  ): FieldsIndex = {
+    val __obj = js.Dynamic.literal(dateFields = dateFields.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), isDateField = js.Any.fromFunction1(isDateField))
+    __obj.asInstanceOf[FieldsIndex]
+  }
+}
 

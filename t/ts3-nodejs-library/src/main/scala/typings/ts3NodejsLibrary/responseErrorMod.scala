@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary
 
 import typings.std.Error
+import typings.ts3NodejsLibrary.anon.Extramsg
 import typings.ts3NodejsLibrary.commandMod.Command
 import typings.ts3NodejsLibrary.responseTypesMod.QueryErrorMessage
 import scala.scalajs.js
@@ -27,7 +28,7 @@ object responseErrorMod extends js.Object {
     /**
       * returns a json encodeable object for this error
       */
-    def toJSON(): AnonExtramsg = js.native
+    def toJSON(): Extramsg = js.native
   }
   
 }

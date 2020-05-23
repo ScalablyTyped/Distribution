@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,6 @@ object RecurrenceType extends js.Object {
   /** The appointment is the master appointment for a recurring appointment. */
   @js.native
   sealed trait master extends RecurrenceType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RecurrenceType with Double] = js.native
-  /* 2 */ @js.native
-  object exceptionInstance extends TopLevel[exceptionInstance with Double]
-  
-  /* 1 */ @js.native
-  object instance extends TopLevel[instance with Double]
-  
-  /* 0 */ @js.native
-  object master extends TopLevel[master with Double]
   
 }
 

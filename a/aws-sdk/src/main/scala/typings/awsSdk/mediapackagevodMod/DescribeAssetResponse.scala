@@ -38,6 +38,7 @@ trait DescribeAssetResponse extends js.Object {
     * The IAM role_arn used to access the source S3 bucket.
     */
   var SourceRoleArn: js.UndefOr[string] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.native
 }
 
 object DescribeAssetResponse {
@@ -50,7 +51,8 @@ object DescribeAssetResponse {
     PackagingGroupId: string = null,
     ResourceId: string = null,
     SourceArn: string = null,
-    SourceRoleArn: string = null
+    SourceRoleArn: string = null,
+    Tags: Tags = null
   ): DescribeAssetResponse = {
     val __obj = js.Dynamic.literal()
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
@@ -61,6 +63,7 @@ object DescribeAssetResponse {
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
     if (SourceArn != null) __obj.updateDynamic("SourceArn")(SourceArn.asInstanceOf[js.Any])
     if (SourceRoleArn != null) __obj.updateDynamic("SourceRoleArn")(SourceRoleArn.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAssetResponse]
   }
 }

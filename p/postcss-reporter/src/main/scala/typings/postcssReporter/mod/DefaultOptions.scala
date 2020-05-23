@@ -33,9 +33,9 @@ object DefaultOptions {
     sortByPosition: js.UndefOr[Boolean] = js.undefined
   ): DefaultOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noIcon)) __obj.updateDynamic("noIcon")(noIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(noPlugin)) __obj.updateDynamic("noPlugin")(noPlugin.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortByPosition)) __obj.updateDynamic("sortByPosition")(sortByPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(noIcon)) __obj.updateDynamic("noIcon")(noIcon.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(noPlugin)) __obj.updateDynamic("noPlugin")(noPlugin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortByPosition)) __obj.updateDynamic("sortByPosition")(sortByPosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultOptions]
   }
 }

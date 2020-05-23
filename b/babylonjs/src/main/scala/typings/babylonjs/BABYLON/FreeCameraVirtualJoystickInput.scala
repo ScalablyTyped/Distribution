@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.FreeCameraVirtualJoystickInput")
 @js.native
-class FreeCameraVirtualJoystickInput () extends ICameraInput[FreeCamera] {
+trait FreeCameraVirtualJoystickInput extends ICameraInput[FreeCamera] {
   var _leftjoystick: js.Any = js.native
   var _rightjoystick: js.Any = js.native
   /**

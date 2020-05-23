@@ -1,44 +1,35 @@
 package typings.fibjs
 
-import typings.fibjs.fibjsNumbers.`1`
-import typings.fibjs.fibjsNumbers.`2`
-import typings.fibjs.fibjsNumbers.`3`
-import typings.fibjs.fibjsNumbers.`4`
-import typings.fibjs.fibjsNumbers.`5`
-import typings.fibjs.fibjsNumbers.`6`
-import typings.fibjs.fibjsNumbers.`7`
-import typings.fibjs.fibjsNumbers.`8`
-import typings.fibjs.fibjsNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 信息摘要计算模块，可用于计算信息摘要和摘要签名
-	* @detail 
-	*/
+  * @brief 信息摘要计算模块，可用于计算信息摘要和摘要签名
+  * @detail 
+  */
 @JSImport("hash", JSImport.Namespace)
 @js.native
 object hashMod extends js.Object {
   @JSName("MD2")
-  val MD2_ : `1` = js.native
+  val MD2_ : /* 1 */ Double = js.native
   @JSName("MD4")
-  val MD4_ : `2` = js.native
+  val MD4_ : /* 2 */ Double = js.native
   @JSName("MD5")
-  val MD5_ : `3` = js.native
+  val MD5_ : /* 3 */ Double = js.native
   @JSName("RIPEMD160")
-  val RIPEMD160_ : `9` = js.native
+  val RIPEMD160_ : /* 9 */ Double = js.native
   @JSName("SHA1")
-  val SHA1_ : `4` = js.native
+  val SHA1_ : /* 4 */ Double = js.native
   @JSName("SHA224")
-  val SHA224_ : `5` = js.native
+  val SHA224_ : /* 5 */ Double = js.native
   @JSName("SHA256")
-  val SHA256_ : `6` = js.native
+  val SHA256_ : /* 6 */ Double = js.native
   @JSName("SHA384")
-  val SHA384_ : `7` = js.native
+  val SHA384_ : /* 7 */ Double = js.native
   @JSName("SHA512")
-  val SHA512_ : `8` = js.native
+  val SHA512_ : /* 8 */ Double = js.native
   def digest(algo: Double): ClassDigest = js.native
   def digest(algo: Double, data: ClassBuffer): ClassDigest = js.native
   def hmac(algo: Double, key: ClassBuffer): ClassDigest = js.native

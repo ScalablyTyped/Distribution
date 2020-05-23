@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -108,8 +107,4 @@ trait WMSSublayer extends Accessor {
     */
   var visible: Boolean = js.native
 }
-
-@JSGlobal("__esri.WMSSublayer")
-@js.native
-object WMSSublayer extends TopLevel[WMSSublayerConstructor]
 

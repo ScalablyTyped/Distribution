@@ -13,9 +13,9 @@ trait IManagerOptions extends js.Object {
 
 object IManagerOptions {
   @scala.inline
-  def apply(margin: Int | Double = null, pane: IPane = null, states: js.Array[String] = null): IManagerOptions = {
+  def apply(margin: js.UndefOr[Double] = js.undefined, pane: IPane = null, states: js.Array[String] = null): IManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     __obj.asInstanceOf[IManagerOptions]

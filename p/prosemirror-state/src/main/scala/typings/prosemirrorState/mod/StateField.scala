@@ -43,15 +43,17 @@ trait StateField[T, S /* <: Schema[_, _] */] extends js.Object {
 
 object StateField {
   @scala.inline
-  def apply[T, S /* <: Schema[_, _] */](
+  def apply[T, S](
     apply: (Transaction[S], T, EditorState[S], EditorState[S]) => T,
     init: (StringDictionary[js.Any], EditorState[S]) => T,
-    fromJSON: (/* config */ StringDictionary[js.Any], /* value */ js.Any, /* state */ EditorState[S]) => T = null,
-    toJSON: /* value */ T => _ = null
+    fromJSON: js.UndefOr[
+      Null | ((/* config */ StringDictionary[js.Any], /* value */ js.Any, /* state */ EditorState[S]) => T)
+    ] = js.undefined,
+    toJSON: js.UndefOr[Null | (/* value */ T => _)] = js.undefined
   ): StateField[T, S] = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction4(apply), init = js.Any.fromFunction2(init))
-    if (fromJSON != null) __obj.updateDynamic("fromJSON")(js.Any.fromFunction3(fromJSON))
-    if (toJSON != null) __obj.updateDynamic("toJSON")(js.Any.fromFunction1(toJSON))
+    if (!js.isUndefined(fromJSON)) __obj.updateDynamic("fromJSON")(if (fromJSON != null) js.Any.fromFunction3(fromJSON.asInstanceOf[(/* config */ StringDictionary[js.Any], /* value */ js.Any, /* state */ EditorState[S]) => T]) else null)
+    if (!js.isUndefined(toJSON)) __obj.updateDynamic("toJSON")(if (toJSON != null) js.Any.fromFunction1(toJSON.asInstanceOf[/* value */ T => _]) else null)
     __obj.asInstanceOf[StateField[T, S]]
   }
 }

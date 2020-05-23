@@ -42,13 +42,13 @@ object OptionsHTML {
   ): OptionsHTML = {
     val __obj = js.Dynamic.literal()
     if (htmlOutputConfig != null) __obj.updateDynamic("htmlOutputConfig")(htmlOutputConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(printAsHtml)) __obj.updateDynamic("printAsHtml")(printAsHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(printAsHtml)) __obj.updateDynamic("printAsHtml")(printAsHtml.get.asInstanceOf[js.Any])
     if (printConfig != null) __obj.updateDynamic("printConfig")(printConfig.asInstanceOf[js.Any])
     if (printFooter != null) __obj.updateDynamic("printFooter")(printFooter.asInstanceOf[js.Any])
     if (printFormatter != null) __obj.updateDynamic("printFormatter")(js.Any.fromFunction2(printFormatter))
     if (printHeader != null) __obj.updateDynamic("printHeader")(printHeader.asInstanceOf[js.Any])
     if (printRowRange != null) __obj.updateDynamic("printRowRange")(printRowRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(printStyled)) __obj.updateDynamic("printStyled")(printStyled.asInstanceOf[js.Any])
+    if (!js.isUndefined(printStyled)) __obj.updateDynamic("printStyled")(printStyled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsHTML]
   }
 }

@@ -13,8 +13,7 @@ trait SetList extends js.Object {
 object SetList {
   @scala.inline
   def apply(column: String, value: js.Any, table: String = null): SetList = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetList]
   }
 }

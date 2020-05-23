@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ trait IFieldSet extends IContainer {
@@ -18,28 +18,28 @@ import scala.scalajs.js.annotation._
   /** [Config Option] (Boolean) */
   var checkboxToggle: js.UndefOr[Boolean] = js.undefined
   /** [Method] Collapses the fieldset
-  		* @returns Ext.form.FieldSet this
-  		*/
+    * @returns Ext.form.FieldSet this
+    */
   var collapse: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (Boolean) */
   var collapsed: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
   var collapsible: js.UndefOr[Boolean] = js.undefined
   /** [Method] Creates the checkbox component
-  		* @returns Ext.Component
-  		*/
+    * @returns Ext.Component
+    */
   var createCheckboxCmp: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Creates the legend title component
-  		* @returns Ext.Component
-  		*/
+    * @returns Ext.Component
+    */
   var createTitleCmp: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Creates the toggle button component
-  		* @returns Ext.Component
-  		*/
+    * @returns Ext.Component
+    */
   var createToggleCmp: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Method] Expands the fieldset
-  		* @returns Ext.form.FieldSet this
-  		*/
+    * @returns Ext.form.FieldSet this
+    */
   var expand: js.UndefOr[js.Function0[this.type]] = js.undefined
   /** [Config Option] (Object) */
   var fieldDefaults: js.UndefOr[js.Any] = js.undefined
@@ -48,21 +48,21 @@ import scala.scalajs.js.annotation._
   /** [Property] (Ext.Component) */
   var legend: js.UndefOr[IComponent] = js.undefined
   /** [Method] Fired when the error message of any field within the container changes
-  		* @param field Ext.form.Labelable The sub-field whose active error changed
-  		* @param error String The new active error message
-  		*/
+    * @param field Ext.form.Labelable The sub-field whose active error changed
+    * @param error String The new active error message
+    */
   var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[String], Unit]] = js.undefined
   /** [Method] Fired when the validity of any field within the container changes
-  		* @param field Ext.form.field.Field The sub-field whose validity changed
-  		* @param valid Boolean The new validity state
-  		*/
+    * @param field Ext.form.field.Field The sub-field whose validity changed
+    * @param valid Boolean The new validity state
+    */
   var onFieldValidityChange: js.UndefOr[
     js.Function2[js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /** [Method] Sets the title of this fieldset
-  		* @param title String The new title.
-  		* @returns Ext.form.FieldSet this
-  		*/
+    * @param title String The new title.
+    * @returns Ext.form.FieldSet this
+    */
   var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], this.type]] = js.undefined
   /** [Config Option] (String) */
   var title: js.UndefOr[String] = js.undefined
@@ -103,10 +103,10 @@ object IFieldSet {
     if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     if (checkboxCmp != null) __obj.updateDynamic("checkboxCmp")(checkboxCmp.asInstanceOf[js.Any])
     if (checkboxName != null) __obj.updateDynamic("checkboxName")(checkboxName.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkboxToggle)) __obj.updateDynamic("checkboxToggle")(checkboxToggle.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkboxToggle)) __obj.updateDynamic("checkboxToggle")(checkboxToggle.get.asInstanceOf[js.Any])
     if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction0(collapse))
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
     if (createCheckboxCmp != null) __obj.updateDynamic("createCheckboxCmp")(js.Any.fromFunction0(createCheckboxCmp))
     if (createTitleCmp != null) __obj.updateDynamic("createTitleCmp")(js.Any.fromFunction0(createTitleCmp))
     if (createToggleCmp != null) __obj.updateDynamic("createToggleCmp")(js.Any.fromFunction0(createToggleCmp))
@@ -120,7 +120,7 @@ object IFieldSet {
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
     if (toggleCmp != null) __obj.updateDynamic("toggleCmp")(toggleCmp.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleOnTitleClick)) __obj.updateDynamic("toggleOnTitleClick")(toggleOnTitleClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleOnTitleClick)) __obj.updateDynamic("toggleOnTitleClick")(toggleOnTitleClick.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldSet]
   }
 }

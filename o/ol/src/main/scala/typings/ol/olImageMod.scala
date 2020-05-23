@@ -23,15 +23,7 @@ object olImageMod extends js.Object {
   class default protected () extends ImageWrapper {
     def this(
       extent: Extent,
-      resolution: js.UndefOr[scala.Nothing],
-      pixelRatio: Double,
-      src: String,
-      crossOrigin: String,
-      imageLoadFunction: LoadFunction
-    ) = this()
-    def this(
-      extent: Extent,
-      resolution: Double,
+      resolution: js.UndefOr[Double],
       pixelRatio: Double,
       src: String,
       crossOrigin: String,

@@ -19,7 +19,7 @@ object SwimlaneSettingsUnassignedGroup {
   @scala.inline
   def apply(enable: js.UndefOr[Boolean] = js.undefined, keys: js.Array[_] = null): SwimlaneSettingsUnassignedGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwimlaneSettingsUnassignedGroup]
   }

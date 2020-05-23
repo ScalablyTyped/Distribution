@@ -25,10 +25,10 @@ object AcceptMergeRequestOptions {
   ): AcceptMergeRequestOptions = {
     val __obj = js.Dynamic.literal()
     if (merge_commit_message != null) __obj.updateDynamic("merge_commit_message")(merge_commit_message.asInstanceOf[js.Any])
-    if (!js.isUndefined(merge_when_pipeline_succeeds)) __obj.updateDynamic("merge_when_pipeline_succeeds")(merge_when_pipeline_succeeds.asInstanceOf[js.Any])
+    if (!js.isUndefined(merge_when_pipeline_succeeds)) __obj.updateDynamic("merge_when_pipeline_succeeds")(merge_when_pipeline_succeeds.get.asInstanceOf[js.Any])
     if (sha != null) __obj.updateDynamic("sha")(sha.asInstanceOf[js.Any])
-    if (!js.isUndefined(should_remove_source_branch)) __obj.updateDynamic("should_remove_source_branch")(should_remove_source_branch.asInstanceOf[js.Any])
-    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
+    if (!js.isUndefined(should_remove_source_branch)) __obj.updateDynamic("should_remove_source_branch")(should_remove_source_branch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash.get.asInstanceOf[js.Any])
     if (squash_commit_message != null) __obj.updateDynamic("squash_commit_message")(squash_commit_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptMergeRequestOptions]
   }

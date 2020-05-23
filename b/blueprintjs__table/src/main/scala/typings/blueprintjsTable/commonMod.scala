@@ -155,7 +155,7 @@ object commonMod extends js.Object {
       * @param length - the target length of the array
       * @param fillValue - the value to add to the array if it is too short
       */
-    def arrayOfLength[T](array: js.Array[T], length: Double, fillValue: T): js.Array[T] = js.native
+    def arrayOfLength[T_1](array: js.Array[T_1], length: Double, fillValue: T_1): js.Array[T_1] = js.native
     /**
       * Takes in one full array of values and one sparse array of the same
       * length and type. Returns a copy of the `defaults` array, where each
@@ -165,7 +165,7 @@ object commonMod extends js.Object {
       * @param defaults - the full array of default values
       * @param sparseOverrides - the sparse array of override values
       */
-    def assignSparseValues[T](defaults: js.Array[T], sparseOverrides: js.Array[T]): js.Array[T] = js.native
+    def assignSparseValues[T_2](defaults: js.Array[T_2], sparseOverrides: js.Array[T_2]): js.Array[T_2] = js.native
     /**
       * Performs the binary search algorithm to find the index of the `value`
       * parameter in a sorted list of numbers. If `value` is not in the list, the
@@ -252,8 +252,8 @@ object commonMod extends js.Object {
       * For example, given the array [A,B,C,D,E,F], reordering the 3 contiguous elements starting at
       * index 1 (B, C, and D) to start at index 2 would yield [A,E,B,C,D,F].
       */
-    def reorderArray[T](array: js.Array[T], from: Double, to: Double): js.Array[T] = js.native
-    def reorderArray[T](array: js.Array[T], from: Double, to: Double, length: Double): js.Array[T] = js.native
+    def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double): js.Array[T_3] = js.native
+    def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double, length: Double): js.Array[T_3] = js.native
     /**
       * When reordering a contiguous block of rows or columns to a new index, we show a preview guide
       * at the absolute index in the original ordering but emit the new index in the reordered list.

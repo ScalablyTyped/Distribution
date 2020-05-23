@@ -28,7 +28,7 @@ object DataSourceColumn {
     val __obj = js.Dynamic.literal()
     if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
     if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceColumn]
   }
 }

@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DocumentSchema extends /**
-		 * Index signature
-		 */
+  * Index signature
+  */
 /* property */ StringDictionary[SchemaType] {
   /**
-  		 * Document id
-  		 */
+    * Document id
+    */
   var _id: js.UndefOr[String] = js.undefined
 }
 
@@ -19,8 +19,8 @@ object DocumentSchema {
   @scala.inline
   def apply(
     StringDictionary: /**
-  		 * Index signature
-  		 */
+    * Index signature
+    */
   /* property */ StringDictionary[SchemaType] = null,
     _id: String = null
   ): DocumentSchema = {

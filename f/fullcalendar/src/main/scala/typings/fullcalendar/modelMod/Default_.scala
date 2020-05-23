@@ -1,6 +1,6 @@
 package typings.fullcalendar.modelMod
 
-import typings.fullcalendar.AnonFlash
+import typings.fullcalendar.anon.Flash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ class Default_ ()
   var triggerWith_Original: js.Function3[/* types */ js.Any, /* context */ js.Any, /* args */ js.Any, _] = js.native
   @JSName("trigger")
   var trigger_Original: js.Function2[/* types */ js.Any, /* repeated */ js.Any, _] = js.native
-  def _watchDeps(depList: js.Any, startFunc: js.Any, stopFunc: js.Any): AnonFlash = js.native
+  def _watchDeps(depList: js.Any, startFunc: js.Any, stopFunc: js.Any): Flash = js.native
   def applyGlobalWatchers(): Unit = js.native
   def constructed(): Unit = js.native
   def flash(name: js.Any): Unit = js.native

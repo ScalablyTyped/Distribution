@@ -27,7 +27,7 @@ object Options {
     limiter: HTMLElement | Range | ClientRect | Rect | (js.Function0[HTMLElement | Range | ClientRect | Rect]) = null
   ): Options = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], positions = positions.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitInViewport)) __obj.updateDynamic("fitInViewport")(fitInViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitInViewport)) __obj.updateDynamic("fitInViewport")(fitInViewport.get.asInstanceOf[js.Any])
     if (limiter != null) __obj.updateDynamic("limiter")(limiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

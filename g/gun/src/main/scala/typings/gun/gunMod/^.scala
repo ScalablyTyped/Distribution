@@ -3,8 +3,8 @@ package typings.gun.gunMod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
-import typings.gun.AnonDecrypt
-import typings.gun.AnonIfy
+import typings.gun.anon.Decrypt
+import typings.gun.anon.Ify
 import typings.gun.gunStrings.pre_root
 import typings.gun.mod.Gun.ChainReference
 import typings.gun.mod.Gun.ConstructorOptions
@@ -29,8 +29,8 @@ object ^
     ] {
   val Gun: js.Any = js.native
   /** @see https://gun.eco/docs/SEA */
-  var SEA: AnonDecrypt = js.native
-  var node: AnonIfy = js.native
+  var SEA: Decrypt = js.native
+  var node: Ify = js.native
   /**
     * @description
     * no parameters creates a local datastore using the default persistence layer, either localStorage or Radisk.

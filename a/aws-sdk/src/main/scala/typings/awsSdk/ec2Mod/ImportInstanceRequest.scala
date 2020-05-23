@@ -34,13 +34,13 @@ object ImportInstanceRequest {
     Platform: PlatformValues,
     Description: String = null,
     DiskImages: DiskImageList = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    DryRun: js.UndefOr[Boolean] = js.undefined,
     LaunchSpecification: ImportInstanceLaunchSpecification = null
   ): ImportInstanceRequest = {
     val __obj = js.Dynamic.literal(Platform = Platform.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DiskImages != null) __obj.updateDynamic("DiskImages")(DiskImages.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     if (LaunchSpecification != null) __obj.updateDynamic("LaunchSpecification")(LaunchSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportInstanceRequest]
   }

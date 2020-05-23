@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,17 +30,6 @@ object ENV extends js.Object {
   
   @js.native
   sealed trait WEBGL_LEGACY extends ENV
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ENV with Double] = js.native
-  /* 1 */ @js.native
-  object WEBGL extends TopLevel[WEBGL with Double]
-  
-  /* 2 */ @js.native
-  object WEBGL2 extends TopLevel[WEBGL2 with Double]
-  
-  /* 0 */ @js.native
-  object WEBGL_LEGACY extends TopLevel[WEBGL_LEGACY with Double]
   
 }
 

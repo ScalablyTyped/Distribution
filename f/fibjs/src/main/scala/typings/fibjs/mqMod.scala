@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 消息队列模块
-	* @detail 
-	*/
+  * @brief 消息队列模块
+  * @detail 
+  */
 @JSImport("mq", JSImport.Namespace)
 @js.native
 object mqMod extends js.Object {

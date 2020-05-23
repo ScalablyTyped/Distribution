@@ -11,9 +11,9 @@ trait TabDetails extends js.Object {
 
 object TabDetails {
   @scala.inline
-  def apply(tabId: Int | Double = null): TabDetails = {
+  def apply(tabId: js.UndefOr[Double] = js.undefined): TabDetails = {
     val __obj = js.Dynamic.literal()
-    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabDetails]
   }
 }

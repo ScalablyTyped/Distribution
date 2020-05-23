@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MatterJS.ConstraintFactory")
-@js.native
-class ConstraintFactory () extends js.Object {
+trait ConstraintFactory extends js.Object {
   /**
     * Creates a new constraint.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -15,6 +13,14 @@ class ConstraintFactory () extends js.Object {
     * @param {} options
     * @return {constraint} constraint
     */
-  def create(options: IConstraintDefinition): ConstraintType = js.native
+  def create(options: IConstraintDefinition): ConstraintType
+}
+
+object ConstraintFactory {
+  @scala.inline
+  def apply(create: IConstraintDefinition => ConstraintType): ConstraintFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
+    __obj.asInstanceOf[ConstraintFactory]
+  }
 }
 

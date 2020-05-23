@@ -18,9 +18,9 @@ trait DocumentAttributeValueCountPair extends js.Object {
 
 object DocumentAttributeValueCountPair {
   @scala.inline
-  def apply(Count: Int | Double = null, DocumentAttributeValue: DocumentAttributeValue = null): DocumentAttributeValueCountPair = {
+  def apply(Count: js.UndefOr[Integer] = js.undefined, DocumentAttributeValue: DocumentAttributeValue = null): DocumentAttributeValueCountPair = {
     val __obj = js.Dynamic.literal()
-    if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
     if (DocumentAttributeValue != null) __obj.updateDynamic("DocumentAttributeValue")(DocumentAttributeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentAttributeValueCountPair]
   }

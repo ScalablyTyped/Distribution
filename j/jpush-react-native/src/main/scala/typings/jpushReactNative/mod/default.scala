@@ -1,23 +1,23 @@
 package typings.jpushReactNative.mod
 
-import typings.jpushReactNative.AnonAppBadge
-import typings.jpushReactNative.AnonBadge
-import typings.jpushReactNative.AnonChannel
-import typings.jpushReactNative.AnonCode
-import typings.jpushReactNative.AnonConnectEnable
-import typings.jpushReactNative.AnonContent
-import typings.jpushReactNative.AnonContentExtras
-import typings.jpushReactNative.AnonExtras
-import typings.jpushReactNative.AnonGeoFenceID
-import typings.jpushReactNative.AnonGeoFenceMaxNumber
-import typings.jpushReactNative.AnonMessageID
-import typings.jpushReactNative.AnonNotificationMaxNumber
-import typings.jpushReactNative.AnonPushTimeDays
-import typings.jpushReactNative.AnonRegisterID
-import typings.jpushReactNative.AnonSilenceTimeEndHour
-import typings.jpushReactNative.TagtagEnableboolean
-import typings.jpushReactNative.codenumberSequence
-import typings.jpushReactNative.mobileNumberstringSequenc
+import typings.jpushReactNative.anon.AppBadge
+import typings.jpushReactNative.anon.Badge
+import typings.jpushReactNative.anon.Channel
+import typings.jpushReactNative.anon.Code
+import typings.jpushReactNative.anon.ConnectEnable
+import typings.jpushReactNative.anon.Content
+import typings.jpushReactNative.anon.ContentExtras
+import typings.jpushReactNative.anon.Extras
+import typings.jpushReactNative.anon.GeoFenceID
+import typings.jpushReactNative.anon.GeoFenceMaxNumber
+import typings.jpushReactNative.anon.MessageID
+import typings.jpushReactNative.anon.NotificationMaxNumber
+import typings.jpushReactNative.anon.PushTimeDays
+import typings.jpushReactNative.anon.RegisterID
+import typings.jpushReactNative.anon.SilenceTimeEndHour
+import typings.jpushReactNative.anon.TagtagEnableboolean
+import typings.jpushReactNative.anon.codenumberSequence
+import typings.jpushReactNative.anon.mobileNumberstringSequenc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,11 +32,11 @@ class default () extends JPush
 object default extends js.Object {
   //***************************************接口回调***************************************
   //连接状态
-  def addConnectEventListener(callback: Callback[AnonConnectEnable]): Unit = js.native
+  def addConnectEventListener(callback: Callback[ConnectEnable]): Unit = js.native
   /**
     * 自定义消息事件
     */
-  def addCustomMessagegListener(callback: Callback[AnonContentExtras]): Unit = js.native
+  def addCustomMessagegListener(callback: Callback[ContentExtras]): Unit = js.native
   //***************************************本地通知***************************************
   /**
     * 添加一个本地通知
@@ -50,13 +50,13 @@ object default extends js.Object {
     * extras:对应“附加内容”字段
     *
     */
-  def addLocalNotification(params: AnonContent): Unit = js.native
+  def addLocalNotification(params: Content): Unit = js.native
   /**
     * 本地通知事件
     *
     * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
     */
-  def addLocalNotificationListener(callback: Callback[AnonExtras]): Unit = js.native
+  def addLocalNotificationListener(callback: Callback[Extras]): Unit = js.native
   /**
     * 手机号码事件
     */
@@ -66,11 +66,11 @@ object default extends js.Object {
     *
     * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
     */
-  def addNotificationListener(callback: Callback[AnonBadge]): Unit = js.native
+  def addNotificationListener(callback: Callback[Badge]): Unit = js.native
   /**
     * tag alias事件
     */
-  def addTagAliasListener(callback: Callback[AnonCode with Sequence with (Tags | Alias | TagtagEnableboolean)]): Unit = js.native
+  def addTagAliasListener(callback: Callback[Code with Sequence with (Tags | Alias | TagtagEnableboolean)]): Unit = js.native
   /**
     * 新增标签
     *
@@ -99,7 +99,7 @@ object default extends js.Object {
     * 删除指定id的地理围栏
     *
     */
-  def deleteGeofence(params: AnonGeoFenceID): Unit = js.native
+  def deleteGeofence(params: GeoFenceID): Unit = js.native
   /**
     * 删除指定标签
     *
@@ -116,7 +116,7 @@ object default extends js.Object {
     * 只有当应用程序成功注册到 JPush 的服务器时才返回对应的值,否则返回空字符串
     *
     */
-  def getRegistrationID(callback: Callback[AnonRegisterID]): Unit = js.native
+  def getRegistrationID(callback: Callback[RegisterID]): Unit = js.native
   /**
     * 初始化推送服务
     *
@@ -158,7 +158,7 @@ object default extends js.Object {
     *
     * messageID:唯一标识通知消息的ID,可用于移除消息
     */
-  def removeLocalNotification(params: AnonMessageID): Unit = js.native
+  def removeLocalNotification(params: MessageID): Unit = js.native
   //***************************************Android Only***************************************
   /**
     * 在 Android 6.0 及以上的系统上,需要去请求一些用到的权限.
@@ -188,13 +188,13 @@ object default extends js.Object {
     *
     * @platform iOS
     */
-  def setBadge(params: AnonAppBadge): Unit = js.native
+  def setBadge(params: AppBadge): Unit = js.native
   /**
     * 动态配置 channel,优先级比 AndroidManifest 里配置的高
     *
     * @platform Android
     */
-  def setChannel(params: AnonChannel): Unit = js.native
+  def setChannel(params: Channel): Unit = js.native
   /**
     * 设置保留最近通知条数
     *
@@ -206,7 +206,7 @@ object default extends js.Object {
     *
     * @platform Android
     */
-  def setLatestNotificationNumber(params: AnonNotificationMaxNumber): Unit = js.native
+  def setLatestNotificationNumber(params: NotificationMaxNumber): Unit = js.native
   /**
     * 设置调试模式,默认关闭状态
     *
@@ -221,7 +221,7 @@ object default extends js.Object {
     * 默认数量为10个,允许设置最小1个,最大100个。
     *
     */
-  def setMaxGeofenceNumber(params: AnonGeoFenceMaxNumber): Unit = js.native
+  def setMaxGeofenceNumber(params: GeoFenceMaxNumber): Unit = js.native
   //***************************************统计***************************************
   /**
     * 设置手机号码。该接口会控制调用频率,频率为 10s 之内最多 3 次
@@ -243,7 +243,7 @@ object default extends js.Object {
     *
     * @platform Android
     */
-  def setPushTime(params: AnonPushTimeDays): Unit = js.native
+  def setPushTime(params: PushTimeDays): Unit = js.native
   /**
     * 设置通知静默时间
     *
@@ -253,7 +253,7 @@ object default extends js.Object {
     *
     * @platform Android
     */
-  def setSilenceTime(params: AnonSilenceTimeEndHour): Unit = js.native
+  def setSilenceTime(params: SilenceTimeEndHour): Unit = js.native
   /**
     * 停止推送服务
     *

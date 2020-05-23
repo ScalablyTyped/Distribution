@@ -14,9 +14,9 @@ trait DescribeSpotDatafeedSubscriptionRequest extends js.Object {
 
 object DescribeSpotDatafeedSubscriptionRequest {
   @scala.inline
-  def apply(DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeSpotDatafeedSubscriptionRequest = {
+  def apply(DryRun: js.UndefOr[Boolean] = js.undefined): DescribeSpotDatafeedSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSpotDatafeedSubscriptionRequest]
   }
 }

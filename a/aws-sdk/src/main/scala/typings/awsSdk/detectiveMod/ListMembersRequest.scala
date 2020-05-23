@@ -22,9 +22,13 @@ trait ListMembersRequest extends js.Object {
 
 object ListMembersRequest {
   @scala.inline
-  def apply(GraphArn: GraphArn, MaxResults: Int | Double = null, NextToken: PaginationToken = null): ListMembersRequest = {
+  def apply(
+    GraphArn: GraphArn,
+    MaxResults: js.UndefOr[MemberResultsLimit] = js.undefined,
+    NextToken: PaginationToken = null
+  ): ListMembersRequest = {
     val __obj = js.Dynamic.literal(GraphArn = GraphArn.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMembersRequest]
   }

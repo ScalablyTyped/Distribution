@@ -12,7 +12,7 @@ trait IErrorsObject
 
 object IErrorsObject {
   @scala.inline
-  def apply(StringDictionary: /* field */ StringDictionary[js.Array[String]] = null, _query: js.Any = null): IErrorsObject = {
+  def apply(StringDictionary: /* key */ StringDictionary[js.Array[String]] = null, _query: js.Any = null): IErrorsObject = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_query != null) __obj.updateDynamic("_query")(_query.asInstanceOf[js.Any])

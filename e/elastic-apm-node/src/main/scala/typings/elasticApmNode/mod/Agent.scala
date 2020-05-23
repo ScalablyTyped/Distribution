@@ -1,7 +1,6 @@
 package typings.elasticApmNode.mod
 
-import typings.elasticApmNode.AnonConnect
-import typings.elasticApmNode.AnonName
+import typings.elasticApmNode.anon.Name
 import typings.elasticApmNode.mod.AwsLambda.Handler
 import typings.std.Error
 import scala.scalajs.js
@@ -19,7 +18,7 @@ trait Agent
   // Utils
   var logger: Logger = js.native
   // Data collection hooks
-  var middleware: AnonConnect = js.native
+  var middleware: typings.elasticApmNode.anon.Connect = js.native
   def addErrorFilter(fn: FilterFn): Unit = js.native
   // Transport
   def addFilter(fn: FilterFn): Unit = js.native
@@ -65,7 +64,7 @@ trait Agent
   def removePatch(modules: js.Array[String], handler: String): Unit = js.native
   def removePatch(modules: js.Array[String], handler: PatchHandler): Unit = js.native
   def setCustomContext(custom: js.Object): Unit = js.native
-  def setFramework(options: AnonName): Unit = js.native
+  def setFramework(options: Name): Unit = js.native
   def setTransactionName(name: String): Unit = js.native
   def setUserContext(user: UserObject): Unit = js.native
   // Configuration

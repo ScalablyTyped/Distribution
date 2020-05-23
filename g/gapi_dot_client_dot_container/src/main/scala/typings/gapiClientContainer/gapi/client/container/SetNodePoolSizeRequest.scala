@@ -11,9 +11,9 @@ trait SetNodePoolSizeRequest extends js.Object {
 
 object SetNodePoolSizeRequest {
   @scala.inline
-  def apply(nodeCount: Int | Double = null): SetNodePoolSizeRequest = {
+  def apply(nodeCount: js.UndefOr[Double] = js.undefined): SetNodePoolSizeRequest = {
     val __obj = js.Dynamic.literal()
-    if (nodeCount != null) __obj.updateDynamic("nodeCount")(nodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeCount)) __obj.updateDynamic("nodeCount")(nodeCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetNodePoolSizeRequest]
   }
 }

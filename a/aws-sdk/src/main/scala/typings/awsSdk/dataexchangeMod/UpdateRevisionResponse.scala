@@ -47,7 +47,7 @@ object UpdateRevisionResponse {
     Comment: stringMin0Max16384 = null,
     CreatedAt: Timestamp = null,
     DataSetId: Id = null,
-    Finalized: js.UndefOr[Boolean] = js.undefined,
+    Finalized: js.UndefOr[boolean] = js.undefined,
     Id: Id = null,
     SourceId: Id = null,
     UpdatedAt: Timestamp = null
@@ -57,7 +57,7 @@ object UpdateRevisionResponse {
     if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
     if (DataSetId != null) __obj.updateDynamic("DataSetId")(DataSetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Finalized)) __obj.updateDynamic("Finalized")(Finalized.asInstanceOf[js.Any])
+    if (!js.isUndefined(Finalized)) __obj.updateDynamic("Finalized")(Finalized.get.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (SourceId != null) __obj.updateDynamic("SourceId")(SourceId.asInstanceOf[js.Any])
     if (UpdatedAt != null) __obj.updateDynamic("UpdatedAt")(UpdatedAt.asInstanceOf[js.Any])

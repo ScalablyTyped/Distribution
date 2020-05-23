@@ -2,7 +2,7 @@ package typings.reactShare.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.StatelessComponent
-import typings.reactShare.CommonShareButtonPropstitAdditionalProps
+import typings.reactShare.anon.CommonShareButtonPropstitAdditionalProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

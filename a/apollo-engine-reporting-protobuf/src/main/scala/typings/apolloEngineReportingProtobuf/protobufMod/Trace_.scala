@@ -37,9 +37,6 @@ class Trace_ () extends ITrace {
   /** Trace legacySignatureNeedsResigning. */
   @JSName("legacySignatureNeedsResigning")
   var legacySignatureNeedsResigning_Trace_ : String = js.native
-  /** Trace originReportedDurationNs. */
-  @JSName("originReportedDurationNs")
-  var originReportedDurationNs_Trace_ : Double = js.native
   /** Trace persistedQueryHit. */
   @JSName("persistedQueryHit")
   var persistedQueryHit_Trace_ : Boolean = js.native

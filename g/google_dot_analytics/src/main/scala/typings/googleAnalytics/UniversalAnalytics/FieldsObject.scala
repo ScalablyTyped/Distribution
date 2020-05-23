@@ -533,7 +533,7 @@ object FieldsObject {
     contentGroup8: String = null,
     contentGroup9: String = null,
     cookieDomain: String = null,
-    cookieExpires: Int | Double = null,
+    cookieExpires: js.UndefOr[Double] = js.undefined,
     cookieName: String = null,
     cookiePath: String = null,
     coupon: String = null,
@@ -744,7 +744,7 @@ object FieldsObject {
     eventAction: String = null,
     eventCategory: String = null,
     eventLabel: String = null,
-    eventValue: Int | Double = null,
+    eventValue: js.UndefOr[Double] = js.undefined,
     exDescription: String = null,
     exFatal: js.UndefOr[Boolean] = js.undefined,
     expId: String = null,
@@ -761,10 +761,10 @@ object FieldsObject {
   ): FieldsObject = {
     val __obj = js.Dynamic.literal()
     if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAnchor)) __obj.updateDynamic("allowAnchor")(allowAnchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowLinker)) __obj.updateDynamic("allowLinker")(allowLinker.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysSendReferrer)) __obj.updateDynamic("alwaysSendReferrer")(alwaysSendReferrer.asInstanceOf[js.Any])
-    if (!js.isUndefined(anonymizeIp)) __obj.updateDynamic("anonymizeIp")(anonymizeIp.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAnchor)) __obj.updateDynamic("allowAnchor")(allowAnchor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLinker)) __obj.updateDynamic("allowLinker")(allowLinker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysSendReferrer)) __obj.updateDynamic("alwaysSendReferrer")(alwaysSendReferrer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(anonymizeIp)) __obj.updateDynamic("anonymizeIp")(anonymizeIp.get.asInstanceOf[js.Any])
     if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
     if (appInstallerId != null) __obj.updateDynamic("appInstallerId")(appInstallerId.asInstanceOf[js.Any])
     if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
@@ -789,7 +789,7 @@ object FieldsObject {
     if (contentGroup8 != null) __obj.updateDynamic("contentGroup8")(contentGroup8.asInstanceOf[js.Any])
     if (contentGroup9 != null) __obj.updateDynamic("contentGroup9")(contentGroup9.asInstanceOf[js.Any])
     if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain.asInstanceOf[js.Any])
-    if (cookieExpires != null) __obj.updateDynamic("cookieExpires")(cookieExpires.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookieExpires)) __obj.updateDynamic("cookieExpires")(cookieExpires.get.asInstanceOf[js.Any])
     if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName.asInstanceOf[js.Any])
     if (cookiePath != null) __obj.updateDynamic("cookiePath")(cookiePath.asInstanceOf[js.Any])
     if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
@@ -1000,18 +1000,18 @@ object FieldsObject {
     if (eventAction != null) __obj.updateDynamic("eventAction")(eventAction.asInstanceOf[js.Any])
     if (eventCategory != null) __obj.updateDynamic("eventCategory")(eventCategory.asInstanceOf[js.Any])
     if (eventLabel != null) __obj.updateDynamic("eventLabel")(eventLabel.asInstanceOf[js.Any])
-    if (eventValue != null) __obj.updateDynamic("eventValue")(eventValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventValue)) __obj.updateDynamic("eventValue")(eventValue.get.asInstanceOf[js.Any])
     if (exDescription != null) __obj.updateDynamic("exDescription")(exDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(exFatal)) __obj.updateDynamic("exFatal")(exFatal.asInstanceOf[js.Any])
+    if (!js.isUndefined(exFatal)) __obj.updateDynamic("exFatal")(exFatal.get.asInstanceOf[js.Any])
     if (expId != null) __obj.updateDynamic("expId")(expId.asInstanceOf[js.Any])
     if (expVar != null) __obj.updateDynamic("expVar")(expVar.asInstanceOf[js.Any])
     if (flashVersion != null) __obj.updateDynamic("flashVersion")(flashVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSSL)) __obj.updateDynamic("forceSSL")(forceSSL.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSSL)) __obj.updateDynamic("forceSSL")(forceSSL.get.asInstanceOf[js.Any])
     if (hitCallback != null) __obj.updateDynamic("hitCallback")(js.Any.fromFunction0(hitCallback))
     if (hitType != null) __obj.updateDynamic("hitType")(hitType.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaEnabled)) __obj.updateDynamic("javaEnabled")(javaEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(javaEnabled)) __obj.updateDynamic("javaEnabled")(javaEnabled.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (legacyCookieDomain != null) __obj.updateDynamic("legacyCookieDomain")(legacyCookieDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsObject]

@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object json extends js.Object {
   @js.native
-  class JSONModel protected () extends ClientModel {
-    /**
-      * Constructor for a new JSONModel.
-      * @param oData either the URL where to load the JSON from or a JS object
-      * @param bObserve whether to observe the JSON data for property changes (experimental)
-      */
-    def this(oData: js.Any) = this()
-    def this(oData: js.Any, bObserve: Boolean) = this()
+  trait JSONModel extends ClientModel {
     /**
       * Serializes the current JSON data of the model into a string.Note: May not work in Internet Explorer
       * 8 because of lacking JSON support (works only if IE 8 mode is enabled)

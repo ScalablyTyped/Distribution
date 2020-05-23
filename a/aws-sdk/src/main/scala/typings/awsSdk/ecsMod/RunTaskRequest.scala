@@ -78,8 +78,8 @@ object RunTaskRequest {
     taskDefinition: String,
     capacityProviderStrategy: CapacityProviderStrategy = null,
     cluster: String = null,
-    count: Int | scala.Double = null,
-    enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined,
+    count: js.UndefOr[BoxedInteger] = js.undefined,
+    enableECSManagedTags: js.UndefOr[Boolean] = js.undefined,
     group: String = null,
     launchType: LaunchType = null,
     networkConfiguration: NetworkConfiguration = null,
@@ -95,8 +95,8 @@ object RunTaskRequest {
     val __obj = js.Dynamic.literal(taskDefinition = taskDefinition.asInstanceOf[js.Any])
     if (capacityProviderStrategy != null) __obj.updateDynamic("capacityProviderStrategy")(capacityProviderStrategy.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags.get.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])

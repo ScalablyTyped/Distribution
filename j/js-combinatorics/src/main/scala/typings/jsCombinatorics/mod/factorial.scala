@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object factorial extends js.Object {
   /**
-  	 * Calculates n!
-  	 */
+    * Calculates n!
+    */
   def apply(n: Double): Double = js.native
 }
 

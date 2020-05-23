@@ -26,7 +26,7 @@ object ServerSubscriptionOptionsAuthOptions {
   ): ServerSubscriptionOptionsAuthOptions = {
     val __obj = js.Dynamic.literal()
     if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerSubscriptionOptionsAuthOptions]

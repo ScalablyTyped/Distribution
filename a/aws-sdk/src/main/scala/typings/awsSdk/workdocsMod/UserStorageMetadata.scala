@@ -18,10 +18,10 @@ trait UserStorageMetadata extends js.Object {
 
 object UserStorageMetadata {
   @scala.inline
-  def apply(StorageRule: StorageRuleType = null, StorageUtilizedInBytes: Int | Double = null): UserStorageMetadata = {
+  def apply(StorageRule: StorageRuleType = null, StorageUtilizedInBytes: js.UndefOr[SizeType] = js.undefined): UserStorageMetadata = {
     val __obj = js.Dynamic.literal()
     if (StorageRule != null) __obj.updateDynamic("StorageRule")(StorageRule.asInstanceOf[js.Any])
-    if (StorageUtilizedInBytes != null) __obj.updateDynamic("StorageUtilizedInBytes")(StorageUtilizedInBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(StorageUtilizedInBytes)) __obj.updateDynamic("StorageUtilizedInBytes")(StorageUtilizedInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserStorageMetadata]
   }
 }

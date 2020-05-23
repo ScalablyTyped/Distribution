@@ -70,10 +70,10 @@ object HeatMapSvgProps {
     axisRight: Axis = null,
     axisTop: Axis = null,
     cellBorderColor: InheritedColorProp[HeatMapDatumWithColor] = null,
-    cellBorderWidth: Int | Double = null,
-    cellHoverOpacity: Int | Double = null,
-    cellHoverOthersOpacity: Int | Double = null,
-    cellOpacity: Int | Double = null,
+    cellBorderWidth: js.UndefOr[Double] = js.undefined,
+    cellHoverOpacity: js.UndefOr[Double] = js.undefined,
+    cellHoverOthersOpacity: js.UndefOr[Double] = js.undefined,
+    cellOpacity: js.UndefOr[Double] = js.undefined,
     cellShape: rect | circle | StatelessComponent[_] = null,
     colorBy: String | GetColor[HeatMapDatum] = null,
     colors: Colors = null,
@@ -89,45 +89,45 @@ object HeatMapSvgProps {
     margin: Box = null,
     maxValue: Double | auto = null,
     minValue: Double | auto = null,
-    motionDamping: Int | Double = null,
-    motionStiffness: Int | Double = null,
+    motionDamping: js.UndefOr[Double] = js.undefined,
+    motionStiffness: js.UndefOr[Double] = js.undefined,
     onClick: (/* datum */ NodeData, /* event */ MouseEvent[SVGGElement, NativeMouseEvent]) => Unit = null,
-    padding: Int | Double = null,
-    sizeVariation: Int | Double = null,
+    padding: js.UndefOr[Double] = js.undefined,
+    sizeVariation: js.UndefOr[Double] = js.undefined,
     theme: Theme = null,
     tooltipFormat: String | ValueFormatter = null
   ): HeatMapSvgProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
     if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
     if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft.asInstanceOf[js.Any])
     if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
     if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
     if (cellBorderColor != null) __obj.updateDynamic("cellBorderColor")(cellBorderColor.asInstanceOf[js.Any])
-    if (cellBorderWidth != null) __obj.updateDynamic("cellBorderWidth")(cellBorderWidth.asInstanceOf[js.Any])
-    if (cellHoverOpacity != null) __obj.updateDynamic("cellHoverOpacity")(cellHoverOpacity.asInstanceOf[js.Any])
-    if (cellHoverOthersOpacity != null) __obj.updateDynamic("cellHoverOthersOpacity")(cellHoverOthersOpacity.asInstanceOf[js.Any])
-    if (cellOpacity != null) __obj.updateDynamic("cellOpacity")(cellOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellBorderWidth)) __obj.updateDynamic("cellBorderWidth")(cellBorderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellHoverOpacity)) __obj.updateDynamic("cellHoverOpacity")(cellHoverOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellHoverOthersOpacity)) __obj.updateDynamic("cellHoverOthersOpacity")(cellHoverOthersOpacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellOpacity)) __obj.updateDynamic("cellOpacity")(cellOpacity.get.asInstanceOf[js.Any])
     if (cellShape != null) __obj.updateDynamic("cellShape")(cellShape.asInstanceOf[js.Any])
     if (colorBy != null) __obj.updateDynamic("colorBy")(colorBy.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLabels)) __obj.updateDynamic("enableLabels")(enableLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSquare)) __obj.updateDynamic("forceSquare")(forceSquare.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLabels)) __obj.updateDynamic("enableLabels")(enableLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSquare)) __obj.updateDynamic("forceSquare")(forceSquare.get.asInstanceOf[js.Any])
     if (hoverTarget != null) __obj.updateDynamic("hoverTarget")(hoverTarget.asInstanceOf[js.Any])
     if (indexBy != null) __obj.updateDynamic("indexBy")(indexBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.get.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
-    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionDamping)) __obj.updateDynamic("motionDamping")(motionDamping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionStiffness)) __obj.updateDynamic("motionStiffness")(motionStiffness.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (sizeVariation != null) __obj.updateDynamic("sizeVariation")(sizeVariation.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeVariation)) __obj.updateDynamic("sizeVariation")(sizeVariation.get.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatMapSvgProps]

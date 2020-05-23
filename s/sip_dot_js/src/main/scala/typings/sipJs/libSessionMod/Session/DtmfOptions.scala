@@ -13,14 +13,14 @@ trait DtmfOptions extends js.Object {
 object DtmfOptions {
   @scala.inline
   def apply(
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     extraHeaders: js.Array[String] = null,
-    interToneGap: Int | Double = null
+    interToneGap: js.UndefOr[Double] = js.undefined
   ): DtmfOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
-    if (interToneGap != null) __obj.updateDynamic("interToneGap")(interToneGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(interToneGap)) __obj.updateDynamic("interToneGap")(interToneGap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DtmfOptions]
   }
 }

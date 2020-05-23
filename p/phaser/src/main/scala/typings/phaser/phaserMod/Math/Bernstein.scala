@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object Bernstein extends js.Object {
   /**
-    * [description]
-    * @param n [description]
-    * @param i [description]
+    * Calculates the Bernstein basis from the three factorial coefficients.
+    * @param n The first value.
+    * @param i The second value.
     */
   def apply(n: Double, i: Double): Double = js.native
 }

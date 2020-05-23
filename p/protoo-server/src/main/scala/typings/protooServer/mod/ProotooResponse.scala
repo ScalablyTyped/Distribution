@@ -21,12 +21,12 @@ object ProotooResponse {
     ok: Boolean,
     response: `true`,
     data: js.Any = null,
-    errorCode: Int | Double = null,
+    errorCode: js.UndefOr[Double] = js.undefined,
     errorReason: String = null
   ): ProotooResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorCode)) __obj.updateDynamic("errorCode")(errorCode.get.asInstanceOf[js.Any])
     if (errorReason != null) __obj.updateDynamic("errorReason")(errorReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProotooResponse]
   }

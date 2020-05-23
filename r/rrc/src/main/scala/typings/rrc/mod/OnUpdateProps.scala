@@ -18,7 +18,7 @@ object OnUpdateProps {
     immediate: js.UndefOr[Boolean] = js.undefined
   ): OnUpdateProps = {
     val __obj = js.Dynamic.literal(call = js.Any.fromFunction1(call))
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnUpdateProps]
   }
 }

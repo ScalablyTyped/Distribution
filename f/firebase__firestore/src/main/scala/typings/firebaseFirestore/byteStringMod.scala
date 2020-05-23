@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/util/byte_string", JSImport.Namespace)
+@JSImport("@firebase/firestore/dist/packages/firestore/src/util/byte_string", JSImport.Namespace)
 @js.native
 object byteStringMod extends js.Object {
   @js.native

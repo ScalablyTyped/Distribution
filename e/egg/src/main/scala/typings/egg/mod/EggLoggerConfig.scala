@@ -1,6 +1,6 @@
 package typings.egg.mod
 
-import typings.egg.PartialEggLoggerOptions
+import typings.egg.anon.PartialEggLoggerOptions
 import typings.egg.eggStrings.duplicate
 import typings.egg.eggStrings.ignore
 import typings.egg.eggStrings.redirect
@@ -52,17 +52,17 @@ object EggLoggerConfig {
     outputJSON: js.UndefOr[Boolean] = js.undefined
   ): EggLoggerConfig = {
     val __obj = js.Dynamic.literal(agentLogName = agentLogName.asInstanceOf[js.Any], appLogName = appLogName.asInstanceOf[js.Any], coreLogName = coreLogName.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], errorLogName = errorLogName.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDebugAtProd)) __obj.updateDynamic("allowDebugAtProd")(allowDebugAtProd.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDebugAtProd)) __obj.updateDynamic("allowDebugAtProd")(allowDebugAtProd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
     if (concentrateError != null) __obj.updateDynamic("concentrateError")(concentrateError.asInstanceOf[js.Any])
     if (consoleLevel != null) __obj.updateDynamic("consoleLevel")(consoleLevel.asInstanceOf[js.Any])
     if (coreLogger != null) __obj.updateDynamic("coreLogger")(coreLogger.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableConsoleAfterReady)) __obj.updateDynamic("disableConsoleAfterReady")(disableConsoleAfterReady.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableConsoleAfterReady)) __obj.updateDynamic("disableConsoleAfterReady")(disableConsoleAfterReady.get.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputJSON)) __obj.updateDynamic("outputJSON")(outputJSON.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputJSON)) __obj.updateDynamic("outputJSON")(outputJSON.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggLoggerConfig]
   }
 }

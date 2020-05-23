@@ -1,11 +1,14 @@
 package typings.blueprintjsDatetime
 
-import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.`DayPicker-Day`
+import typings.blueprintjsDatetime.anon.PartialIDateInputProps
+import typings.blueprintjsDatetime.anon.PartialIDateRangeInputPro
+import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
 import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.millisecond
 import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.minute
 import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.second
 import typings.blueprintjsDatetime.datePickerMod.IDatePickerProps
 import typings.blueprintjsDatetime.dateRangeInputMod.IDateRangeInputProps
+import typings.blueprintjsDatetime.dateRangeMod.DateRange
 import typings.blueprintjsDatetime.dateRangePickerMod.IDateRangePickerProps
 import typings.blueprintjsDatetime.dateTimePickerMod.IDateTimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
@@ -89,7 +92,7 @@ object mod extends js.Object {
     val DATEPICKER_CAPTION_CARET: String = js.native
     val DATEPICKER_CAPTION_MEASURE: String = js.native
     val DATEPICKER_CAPTION_SELECT: String = js.native
-    val DATEPICKER_DAY: `DayPicker-Day` = js.native
+    val DATEPICKER_DAY: /* "DayPicker-Day" */ String = js.native
     val DATEPICKER_DAY_DISABLED: String = js.native
     val DATEPICKER_DAY_IS_TODAY: String = js.native
     val DATEPICKER_DAY_OUTSIDE: String = js.native
@@ -98,6 +101,7 @@ object mod extends js.Object {
     val DATEPICKER_FOOTER: String = js.native
     val DATEPICKER_MONTH_SELECT: String = js.native
     val DATEPICKER_NAVBAR: String = js.native
+    val DATEPICKER_TIMEPICKER_WRAPPER: String = js.native
     val DATEPICKER_YEAR_SELECT: String = js.native
     val DATERANGEPICKER: String = js.native
     val DATERANGEPICKER_CONTIGUOUS: String = js.native
@@ -156,6 +160,41 @@ object mod extends js.Object {
   }
   
   @js.native
+  object DateUtils extends js.Object {
+    def areEqual(date1: Date, date2: Date): Boolean = js.native
+    def areRangesEqual(dateRange1: DateRange, dateRange2: DateRange): Boolean = js.native
+    def areSameDay(date1: Date, date2: Date): Boolean = js.native
+    def areSameMonth(date1: Date, date2: Date): Boolean = js.native
+    def areSameTime(date1: Date, date2: Date): Boolean = js.native
+    def clone(d: Date): Date = js.native
+    def convert24HourMeridiem(hour: Double, toPm: Boolean): Double = js.native
+    def get12HourFrom24Hour(hour: Double): Double = js.native
+    def get24HourFrom12Hour(hour: Double, isPm: Boolean): Double = js.native
+    def getDateBetween(dateRange: DateRange): Date = js.native
+    def getDateNextMonth(date: Date): Date = js.native
+    def getDateOnlyWithTime(date: Date): Date = js.native
+    def getDatePreviousMonth(date: Date): Date = js.native
+    def getDateTime(): Date = js.native
+    def getDateTime(date: Null, time: Date): Date = js.native
+    def getDateTime(date: Date): Date = js.native
+    def getDateTime(date: Date, time: Date): Date = js.native
+    def getIsPmFrom24Hour(hour: Double): Boolean = js.native
+    def getTimeInRange(time: Date, minTime: Date, maxTime: Date): Date = js.native
+    def isDateValid(): /* is std.Date */ Boolean = js.native
+    def isDateValid(date: Date): /* is std.Date */ Boolean = js.native
+    @JSName("isDateValid")
+    def isDateValid_false(date: `false`): /* is std.Date */ Boolean = js.native
+    def isDayInRange(date: Date, dateRange: DateRange): Boolean = js.native
+    def isDayInRange(date: Date, dateRange: DateRange, exclusive: Boolean): Boolean = js.native
+    def isDayRangeInRange(innerRange: DateRange, outerRange: DateRange): Boolean = js.native
+    def isMonthInRange(date: Date, dateRange: DateRange): Boolean = js.native
+    def isTimeEqualOrGreaterThan(time: Date, timeToCompare: Date): Boolean = js.native
+    def isTimeEqualOrSmallerThan(time: Date, timeToCompare: Date): Boolean = js.native
+    def isTimeInRange(date: Date, minDate: Date, maxDate: Date): Boolean = js.native
+    def isTimeSameOrAfter(date: Date, dateToCompare: Date): Boolean = js.native
+  }
+  
+  @js.native
   object Months extends js.Object {
     /* 3 */ val APRIL: typings.blueprintjsDatetime.monthsMod.Months.APRIL with Double = js.native
     /* 7 */ val AUGUST: typings.blueprintjsDatetime.monthsMod.Months.AUGUST with Double = js.native
@@ -185,6 +224,17 @@ object mod extends js.Object {
     var MILLISECOND: millisecond = js.native
     var MINUTE: minute = js.native
     var SECOND: second = js.native
+  }
+  
+  @js.native
+  object TimeUnit extends js.Object {
+    /* "hour12" */ val HOUR_12: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.HOUR_12 with String = js.native
+    /* "hour24" */ val HOUR_24: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.HOUR_24 with String = js.native
+    /* "minute" */ val MINUTE: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.MINUTE with String = js.native
+    /* "ms" */ val MS: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.MS with String = js.native
+    /* "second" */ val SECOND: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.SECOND with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.blueprintjsDatetime.timeUnitMod.TimeUnit with String] = js.native
   }
   
 }

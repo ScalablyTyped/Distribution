@@ -101,22 +101,22 @@ object Options {
     mainFields: js.Array[String] = null,
     module: js.UndefOr[Boolean] = js.undefined,
     modulesOnly: js.UndefOr[Boolean] = js.undefined,
-    only: js.Array[String | RegExp] = null,
+    only: js.UndefOr[Null | (js.Array[String | RegExp])] = js.undefined,
     preferBuiltins: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser.get.asInstanceOf[js.Any])
     if (customResolveOptions != null) __obj.updateDynamic("customResolveOptions")(customResolveOptions.asInstanceOf[js.Any])
     if (dedupe != null) __obj.updateDynamic("dedupe")(dedupe.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (jail != null) __obj.updateDynamic("jail")(jail.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsnext)) __obj.updateDynamic("jsnext")(jsnext.asInstanceOf[js.Any])
-    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsnext)) __obj.updateDynamic("jsnext")(jsnext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main.get.asInstanceOf[js.Any])
     if (mainFields != null) __obj.updateDynamic("mainFields")(mainFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
-    if (!js.isUndefined(modulesOnly)) __obj.updateDynamic("modulesOnly")(modulesOnly.asInstanceOf[js.Any])
-    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferBuiltins)) __obj.updateDynamic("preferBuiltins")(preferBuiltins.asInstanceOf[js.Any])
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(modulesOnly)) __obj.updateDynamic("modulesOnly")(modulesOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferBuiltins)) __obj.updateDynamic("preferBuiltins")(preferBuiltins.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

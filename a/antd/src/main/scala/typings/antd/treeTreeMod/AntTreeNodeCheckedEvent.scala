@@ -22,7 +22,7 @@ object AntTreeNodeCheckedEvent {
     checkedNodes: js.Array[AntTreeNode] = null
   ): AntTreeNodeCheckedEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
     if (checkedNodes != null) __obj.updateDynamic("checkedNodes")(checkedNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntTreeNodeCheckedEvent]
   }

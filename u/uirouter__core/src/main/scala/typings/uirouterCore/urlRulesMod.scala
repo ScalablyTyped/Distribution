@@ -1,6 +1,7 @@
 package typings.uirouterCore
 
 import typings.std.RegExp
+import typings.uirouterCore.anon.Priority
 import typings.uirouterCore.interfaceMod.Disposable
 import typings.uirouterCore.routerMod.UIRouter
 import typings.uirouterCore.stateInterfaceMod.TargetStateDef
@@ -188,9 +189,9 @@ object urlRulesMod extends js.Object {
     def sort(): Unit = js.native
     def sort(compareFn: js.Function2[/* a */ UrlRule, /* b */ UrlRule, Double]): Unit = js.native
     def when(matcher: String, handler: String): UrlRule = js.native
-    def when(matcher: String, handler: String, options: AnonPriority): UrlRule = js.native
+    def when(matcher: String, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: String, handler: UrlRuleHandlerFn): UrlRule = js.native
-    def when(matcher: String, handler: UrlRuleHandlerFn, options: AnonPriority): UrlRule = js.native
+    def when(matcher: String, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
     /**
       * Registers a `matcher` and `handler` for custom URLs handling.
       *
@@ -251,13 +252,13 @@ object urlRulesMod extends js.Object {
       * @return the registered [[UrlRule]]
       */
     def when(matcher: RegExp, handler: String): UrlRule = js.native
-    def when(matcher: RegExp, handler: String, options: AnonPriority): UrlRule = js.native
+    def when(matcher: RegExp, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: RegExp, handler: UrlRuleHandlerFn): UrlRule = js.native
-    def when(matcher: RegExp, handler: UrlRuleHandlerFn, options: AnonPriority): UrlRule = js.native
+    def when(matcher: RegExp, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: String): UrlRule = js.native
-    def when(matcher: UrlMatcher, handler: String, options: AnonPriority): UrlRule = js.native
+    def when(matcher: UrlMatcher, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn): UrlRule = js.native
-    def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn, options: AnonPriority): UrlRule = js.native
+    def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
   }
   
 }

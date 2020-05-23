@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait ProfilerSessionTemplate extends js.Object {
   /**
-  		 * TSQL for creating a session
-  		 */
+    * TSQL for creating a session
+    */
   var createStatement: String
   /**
-  		 * Default view for template
-  		 */
+    * Default view for template
+    */
   var defaultView: String
   /**
-  		 * Template name
-  		 */
+    * Template name
+    */
   var name: String
 }
 

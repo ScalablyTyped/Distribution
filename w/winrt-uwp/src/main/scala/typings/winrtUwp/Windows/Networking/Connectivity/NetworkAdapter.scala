@@ -6,23 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a network adapter. */
-@JSGlobal("Windows.Networking.Connectivity.NetworkAdapter")
-@js.native
-abstract class NetworkAdapter () extends js.Object {
+trait NetworkAdapter extends js.Object {
   /** Gets a value indicating the network interface type as defined by the Internet Assigned Names Authority (IANA) for the NetworkAdapter . */
-  var ianaInterfaceType: Double = js.native
+  var ianaInterfaceType: Double
   /** Gets a value indicating the maximum inbound data transfer rate in bits per second. */
-  var inboundMaxBitsPerSecond: Double = js.native
+  var inboundMaxBitsPerSecond: Double
   /** Gets the network adapter ID. */
-  var networkAdapterId: String = js.native
+  var networkAdapterId: String
   /** Gets the NetworkItem object that represents the connected network. */
-  var networkItem: NetworkItem = js.native
+  var networkItem: NetworkItem
   /** Gets a value indicating the maximum outbound speed in bits per second. */
-  var outboundMaxBitsPerSecond: Double = js.native
+  var outboundMaxBitsPerSecond: Double
   /**
     * Gets the connection profile currently associated with the network adapter.
     * @return The connection profile associated with this network adapter.
     */
-  def getConnectedProfileAsync(): IPromiseWithIAsyncOperation[ConnectionProfile] = js.native
+  def getConnectedProfileAsync(): IPromiseWithIAsyncOperation[ConnectionProfile]
+}
+
+object NetworkAdapter {
+  @scala.inline
+  def apply(
+    getConnectedProfileAsync: () => IPromiseWithIAsyncOperation[ConnectionProfile],
+    ianaInterfaceType: Double,
+    inboundMaxBitsPerSecond: Double,
+    networkAdapterId: String,
+    networkItem: NetworkItem,
+    outboundMaxBitsPerSecond: Double
+  ): NetworkAdapter = {
+    val __obj = js.Dynamic.literal(getConnectedProfileAsync = js.Any.fromFunction0(getConnectedProfileAsync), ianaInterfaceType = ianaInterfaceType.asInstanceOf[js.Any], inboundMaxBitsPerSecond = inboundMaxBitsPerSecond.asInstanceOf[js.Any], networkAdapterId = networkAdapterId.asInstanceOf[js.Any], networkItem = networkItem.asInstanceOf[js.Any], outboundMaxBitsPerSecond = outboundMaxBitsPerSecond.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkAdapter]
+  }
 }
 

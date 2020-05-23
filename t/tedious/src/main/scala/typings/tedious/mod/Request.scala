@@ -21,10 +21,10 @@ class Request protected () extends EventEmitter {
   /**
     * Constructor
     * @param sql The SQL statement to be executed (or a procedure name, if the request is to be used with connection.callProcedure).
-    * @param callback	The callback is called when the request has completed, either successfully or with an error. If an error occurs during execution of the statement(s), then err will describe the error.
-    * 					As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
-    * 					rowCount: The number of rows emitted as result of executing the SQL statement.
-    * 					rows: Rows as a result of executing the SQL statement. Will only be avaiable if Connection's config.options.rowCollectionOnRequestCompletion is true.
+    * @param callback    The callback is called when the request has completed, either successfully or with an error. If an error occurs during execution of the statement(s), then err will describe the error.
+    *                     As only one request at a time may be executed on a connection, another request should not be initiated until this callback is called.
+    *                     rowCount: The number of rows emitted as result of executing the SQL statement.
+    *                     rows: Rows as a result of executing the SQL statement. Will only be avaiable if Connection's config.options.rowCollectionOnRequestCompletion is true.
     */
   def this(
     sql: String,

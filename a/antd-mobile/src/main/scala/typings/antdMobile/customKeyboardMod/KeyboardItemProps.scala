@@ -22,13 +22,13 @@ object KeyboardItemProps {
     HTMLTableDataProps: HTMLTableDataProps = null,
     iconOnly: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
-    tdRef: Ref[HTMLTableDataCellElement] = null
+    tdRef: js.UndefOr[Null | Ref[HTMLTableDataCellElement]] = js.undefined
   ): KeyboardItemProps = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction2(onClick))
     if (HTMLTableDataProps != null) js.Dynamic.global.Object.assign(__obj, HTMLTableDataProps)
-    if (!js.isUndefined(iconOnly)) __obj.updateDynamic("iconOnly")(iconOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconOnly)) __obj.updateDynamic("iconOnly")(iconOnly.get.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (tdRef != null) __obj.updateDynamic("tdRef")(tdRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(tdRef)) __obj.updateDynamic("tdRef")(tdRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardItemProps]
   }
 }

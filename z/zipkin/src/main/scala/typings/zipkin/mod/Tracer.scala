@@ -1,6 +1,6 @@
 package typings.zipkin.mod
 
-import typings.zipkin.AnonCtxImpl
+import typings.zipkin.anon.CtxImpl
 import typings.zipkin.mod.option.IOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("zipkin", "Tracer")
 @js.native
 class Tracer protected () extends js.Object {
-  def this(args: AnonCtxImpl) = this()
+  def this(args: CtxImpl) = this()
   /** Returns the current trace ID or a sentinel value indicating its absence. */
   var id: TraceId = js.native
   /** Creates a child of the current trace ID or a new root span. */

@@ -12,9 +12,9 @@ trait ITelephonyPlayAudio extends js.Object {
 
 object ITelephonyPlayAudio {
   @scala.inline
-  def apply(audioUri: String = null): ITelephonyPlayAudio = {
+  def apply(audioUri: js.UndefOr[Null | String] = js.undefined): ITelephonyPlayAudio = {
     val __obj = js.Dynamic.literal()
-    if (audioUri != null) __obj.updateDynamic("audioUri")(audioUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioUri)) __obj.updateDynamic("audioUri")(audioUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITelephonyPlayAudio]
   }
 }

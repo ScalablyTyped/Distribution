@@ -22,6 +22,7 @@ trait IEntity
     */
   val generalization: IGeneralizationBase = js.native
   /**
+    * In version 8.10.0: deleted
     * In version 8.2.0: added public
     * In version 7.17.0: introduced
     */
@@ -32,9 +33,14 @@ trait IEntity
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.10.0: deleted
     * In version 8.2.0: introduced
     */
   val remoteSourceDocument: IRemoteEntitySourceDocument | Null = js.native
   val remoteSourceDocumentQualifiedName: String | Null = js.native
+  /**
+    * In version 8.10.0: introduced
+    */
+  val source: IEntitySource | Null = js.native
 }
 

@@ -32,9 +32,9 @@ trait ArchiveOptions extends js.Object {
 object ArchiveOptions {
   @scala.inline
   def apply(
-    compression: CompressionLevel = null,
-    dictSize: Int | Double = null,
-    excluded: js.Array[String] = null,
+    compression: js.UndefOr[Null | CompressionLevel] = js.undefined,
+    dictSize: js.UndefOr[Double] = js.undefined,
+    excluded: js.UndefOr[Null | js.Array[String]] = js.undefined,
     isArchiveHeaderCompressed: js.UndefOr[Boolean] = js.undefined,
     isRegularFile: js.UndefOr[Boolean] = js.undefined,
     method: Copy | LZMA | Deflate | DEFAULT = null,
@@ -42,14 +42,14 @@ object ArchiveOptions {
     withoutDir: js.UndefOr[Boolean] = js.undefined
   ): ArchiveOptions = {
     val __obj = js.Dynamic.literal()
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (dictSize != null) __obj.updateDynamic("dictSize")(dictSize.asInstanceOf[js.Any])
-    if (excluded != null) __obj.updateDynamic("excluded")(excluded.asInstanceOf[js.Any])
-    if (!js.isUndefined(isArchiveHeaderCompressed)) __obj.updateDynamic("isArchiveHeaderCompressed")(isArchiveHeaderCompressed.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRegularFile)) __obj.updateDynamic("isRegularFile")(isRegularFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(dictSize)) __obj.updateDynamic("dictSize")(dictSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(excluded)) __obj.updateDynamic("excluded")(excluded.asInstanceOf[js.Any])
+    if (!js.isUndefined(isArchiveHeaderCompressed)) __obj.updateDynamic("isArchiveHeaderCompressed")(isArchiveHeaderCompressed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRegularFile)) __obj.updateDynamic("isRegularFile")(isRegularFile.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(solid)) __obj.updateDynamic("solid")(solid.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutDir)) __obj.updateDynamic("withoutDir")(withoutDir.asInstanceOf[js.Any])
+    if (!js.isUndefined(solid)) __obj.updateDynamic("solid")(solid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutDir)) __obj.updateDynamic("withoutDir")(withoutDir.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveOptions]
   }
 }

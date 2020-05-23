@@ -56,16 +56,16 @@ object CreateDBProxyRequest {
     EngineFamily: EngineFamily,
     RoleArn: String,
     VpcSubnetIds: StringList,
-    DebugLogging: js.UndefOr[scala.Boolean] = js.undefined,
-    IdleClientTimeout: Int | scala.Double = null,
-    RequireTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    DebugLogging: js.UndefOr[Boolean] = js.undefined,
+    IdleClientTimeout: js.UndefOr[IntegerOptional] = js.undefined,
+    RequireTLS: js.UndefOr[Boolean] = js.undefined,
     Tags: TagList = null,
     VpcSecurityGroupIds: StringList = null
   ): CreateDBProxyRequest = {
     val __obj = js.Dynamic.literal(Auth = Auth.asInstanceOf[js.Any], DBProxyName = DBProxyName.asInstanceOf[js.Any], EngineFamily = EngineFamily.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], VpcSubnetIds = VpcSubnetIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DebugLogging)) __obj.updateDynamic("DebugLogging")(DebugLogging.asInstanceOf[js.Any])
-    if (IdleClientTimeout != null) __obj.updateDynamic("IdleClientTimeout")(IdleClientTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireTLS)) __obj.updateDynamic("RequireTLS")(RequireTLS.asInstanceOf[js.Any])
+    if (!js.isUndefined(DebugLogging)) __obj.updateDynamic("DebugLogging")(DebugLogging.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(IdleClientTimeout)) __obj.updateDynamic("IdleClientTimeout")(IdleClientTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequireTLS)) __obj.updateDynamic("RequireTLS")(RequireTLS.get.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDBProxyRequest]

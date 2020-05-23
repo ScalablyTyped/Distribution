@@ -1,6 +1,6 @@
 package typings.luminoDatagrid.datagridMod.DataGrid
 
-import typings.luminoDatagrid.AnonColor1
+import typings.luminoDatagrid.anon.Color1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,7 +87,7 @@ trait Style extends js.Object {
   /**
     * The drop shadow effect when the grid is scrolled.
     */
-  val scrollShadow: js.UndefOr[AnonColor1] = js.undefined
+  val scrollShadow: js.UndefOr[Color1] = js.undefined
   /**
     * The border color for a selection.
     */
@@ -126,7 +126,7 @@ object Style {
     headerVerticalGridLineColor: String = null,
     horizontalGridLineColor: String = null,
     rowBackgroundColor: /* index */ Double => String = null,
-    scrollShadow: AnonColor1 = null,
+    scrollShadow: Color1 = null,
     selectionBorderColor: String = null,
     selectionFillColor: String = null,
     verticalGridLineColor: String = null,

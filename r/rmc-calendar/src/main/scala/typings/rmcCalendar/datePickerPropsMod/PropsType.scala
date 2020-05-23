@@ -50,7 +50,7 @@ object PropsType {
     endDate: Date = null,
     getDateExtra: /* date */ Date => ExtraData = null,
     infiniteOpt: js.UndefOr[Boolean] = js.undefined,
-    initalMonths: Int | Double = null,
+    initalMonths: js.UndefOr[Double] = js.undefined,
     locale: Locale = null,
     maxDate: Date = null,
     minDate: Date = null,
@@ -66,8 +66,8 @@ object PropsType {
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (getDateExtra != null) __obj.updateDynamic("getDateExtra")(js.Any.fromFunction1(getDateExtra))
-    if (!js.isUndefined(infiniteOpt)) __obj.updateDynamic("infiniteOpt")(infiniteOpt.asInstanceOf[js.Any])
-    if (initalMonths != null) __obj.updateDynamic("initalMonths")(initalMonths.asInstanceOf[js.Any])
+    if (!js.isUndefined(infiniteOpt)) __obj.updateDynamic("infiniteOpt")(infiniteOpt.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initalMonths)) __obj.updateDynamic("initalMonths")(initalMonths.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])

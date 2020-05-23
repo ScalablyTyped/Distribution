@@ -4,18 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.WebXREnterExitUI")
-@js.native
-/**
-  *
-  * @param scene babylon scene object to use
-  * @param options (read-only) version of the options passed to this UI
-  */
-class WebXREnterExitUI protected () extends IDisposable {
-  var _activeButton: js.Any = js.native
-  var _buttons: js.Any = js.native
-  var _overlay: js.Any = js.native
-  var _updateButtons: js.Any = js.native
+trait WebXREnterExitUI extends IDisposable {
+  var _activeButton: js.Any
+  var _buttons: js.Any
+  var _overlay: js.Any
+  var _updateButtons: js.Any
   /**
     * Fired every time the active button is changed.
     *
@@ -23,28 +16,26 @@ class WebXREnterExitUI protected () extends IDisposable {
     *
     * When exiting xr the callback parameter will be null)
     */
-  var activeButtonChangedObservable: Observable[Nullable[WebXREnterExitUIButton]] = js.native
+  var activeButtonChangedObservable: Observable[Nullable[WebXREnterExitUIButton]]
   /** version of the options passed to this UI */
-  var options: WebXREnterExitUIOptions = js.native
-  var scene: js.Any = js.native
-  /**
-    * Releases all held resources
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
+  var options: WebXREnterExitUIOptions
+  var scene: js.Any
 }
 
-/* static members */
-@JSGlobal("BABYLON.WebXREnterExitUI")
-@js.native
-object WebXREnterExitUI extends js.Object {
-  /**
-    * Creates UI to allow the user to enter/exit XR mode
-    * @param scene the scene to add the ui to
-    * @param helper the xr experience helper to enter/exit xr with
-    * @param options options to configure the UI
-    * @returns the created ui
-    */
-  def CreateAsync(scene: Scene, helper: WebXRExperienceHelper, options: WebXREnterExitUIOptions): js.Promise[WebXREnterExitUI] = js.native
+object WebXREnterExitUI {
+  @scala.inline
+  def apply(
+    _activeButton: js.Any,
+    _buttons: js.Any,
+    _overlay: js.Any,
+    _updateButtons: js.Any,
+    activeButtonChangedObservable: Observable[Nullable[WebXREnterExitUIButton]],
+    dispose: () => Unit,
+    options: WebXREnterExitUIOptions,
+    scene: js.Any
+  ): WebXREnterExitUI = {
+    val __obj = js.Dynamic.literal(_activeButton = _activeButton.asInstanceOf[js.Any], _buttons = _buttons.asInstanceOf[js.Any], _overlay = _overlay.asInstanceOf[js.Any], _updateButtons = _updateButtons.asInstanceOf[js.Any], activeButtonChangedObservable = activeButtonChangedObservable.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), options = options.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebXREnterExitUI]
+  }
 }
 

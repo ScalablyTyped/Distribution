@@ -1,13 +1,13 @@
 package typings.officeUiFabricReact.panelBaseMod
 
-import typings.officeUiFabricReact.PartialIPanelState
-import typings.officeUiFabricReact.ReadonlyIPanelProps
-import typings.officeUiFabricReact.ReadonlyIPanelState
+import typings.officeUiFabricReact.anon.PartialIPanelState
+import typings.officeUiFabricReact.anon.ReadonlyIPanelProps
+import typings.officeUiFabricReact.anon.ReadonlyIPanelState
 import typings.officeUiFabricReact.panelTypesMod.IPanel
 import typings.officeUiFabricReact.panelTypesMod.IPanelProps
 import typings.react.mod.Component
 import typings.react.mod.SyntheticEvent
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,7 +50,7 @@ class PanelBase protected ()
   def componentDidUpdate_MPanelBase(previousProps: IPanelProps, previousState: IPanelState): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MPanelBase(): Unit = js.native
-  def dismiss(ev: SyntheticEvent[HTMLElement, Event_]): Unit = js.native
+  def dismiss(ev: SyntheticEvent[HTMLElement, Event]): Unit = js.native
 }
 
 /* static members */

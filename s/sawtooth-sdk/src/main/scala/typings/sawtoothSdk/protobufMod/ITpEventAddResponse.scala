@@ -12,9 +12,9 @@ trait ITpEventAddResponse extends js.Object {
 
 object ITpEventAddResponse {
   @scala.inline
-  def apply(status: Status = null): ITpEventAddResponse = {
+  def apply(status: js.UndefOr[Null | Status] = js.undefined): ITpEventAddResponse = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpEventAddResponse]
   }
 }

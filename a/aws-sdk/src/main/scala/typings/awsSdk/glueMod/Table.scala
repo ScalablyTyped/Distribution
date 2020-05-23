@@ -84,13 +84,13 @@ object Table {
     CreatedBy: NameString = null,
     DatabaseName: NameString = null,
     Description: DescriptionString = null,
-    IsRegisteredWithLakeFormation: js.UndefOr[scala.Boolean] = js.undefined,
+    IsRegisteredWithLakeFormation: js.UndefOr[Boolean] = js.undefined,
     LastAccessTime: Timestamp = null,
     LastAnalyzedTime: Timestamp = null,
     Owner: NameString = null,
     Parameters: ParametersMap = null,
     PartitionKeys: ColumnList = null,
-    Retention: Int | Double = null,
+    Retention: js.UndefOr[NonNegativeInteger] = js.undefined,
     StorageDescriptor: StorageDescriptor = null,
     TableType: TableTypeString = null,
     UpdateTime: Timestamp = null,
@@ -102,13 +102,13 @@ object Table {
     if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsRegisteredWithLakeFormation)) __obj.updateDynamic("IsRegisteredWithLakeFormation")(IsRegisteredWithLakeFormation.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsRegisteredWithLakeFormation)) __obj.updateDynamic("IsRegisteredWithLakeFormation")(IsRegisteredWithLakeFormation.get.asInstanceOf[js.Any])
     if (LastAccessTime != null) __obj.updateDynamic("LastAccessTime")(LastAccessTime.asInstanceOf[js.Any])
     if (LastAnalyzedTime != null) __obj.updateDynamic("LastAnalyzedTime")(LastAnalyzedTime.asInstanceOf[js.Any])
     if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     if (PartitionKeys != null) __obj.updateDynamic("PartitionKeys")(PartitionKeys.asInstanceOf[js.Any])
-    if (Retention != null) __obj.updateDynamic("Retention")(Retention.asInstanceOf[js.Any])
+    if (!js.isUndefined(Retention)) __obj.updateDynamic("Retention")(Retention.get.asInstanceOf[js.Any])
     if (StorageDescriptor != null) __obj.updateDynamic("StorageDescriptor")(StorageDescriptor.asInstanceOf[js.Any])
     if (TableType != null) __obj.updateDynamic("TableType")(TableType.asInstanceOf[js.Any])
     if (UpdateTime != null) __obj.updateDynamic("UpdateTime")(UpdateTime.asInstanceOf[js.Any])

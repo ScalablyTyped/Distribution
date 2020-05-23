@@ -40,13 +40,13 @@ object AccessDetail {
     EntityPath: organizationsEntityPathType = null,
     LastAuthenticatedTime: dateType = null,
     Region: stringType = null,
-    TotalAuthenticatedEntities: Int | Double = null
+    TotalAuthenticatedEntities: js.UndefOr[integerType] = js.undefined
   ): AccessDetail = {
     val __obj = js.Dynamic.literal(ServiceName = ServiceName.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
     if (EntityPath != null) __obj.updateDynamic("EntityPath")(EntityPath.asInstanceOf[js.Any])
     if (LastAuthenticatedTime != null) __obj.updateDynamic("LastAuthenticatedTime")(LastAuthenticatedTime.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (TotalAuthenticatedEntities != null) __obj.updateDynamic("TotalAuthenticatedEntities")(TotalAuthenticatedEntities.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalAuthenticatedEntities)) __obj.updateDynamic("TotalAuthenticatedEntities")(TotalAuthenticatedEntities.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessDetail]
   }
 }

@@ -27,14 +27,14 @@ object IPageSpecification {
   @scala.inline
   def apply(
     data: js.Any = null,
-    height: Int | Double = null,
-    itemCount: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    itemCount: js.UndefOr[Double] = js.undefined,
     key: String = null
   ): IPageSpecification = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemCount)) __obj.updateDynamic("itemCount")(itemCount.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPageSpecification]
   }

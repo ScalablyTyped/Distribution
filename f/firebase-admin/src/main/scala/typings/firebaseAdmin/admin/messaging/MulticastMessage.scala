@@ -1,7 +1,7 @@
 package typings.firebaseAdmin.admin.messaging
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAdmin.BaseMessage
+import typings.firebaseAdmin.messagingMod.BaseMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,12 +14,12 @@ object MulticastMessage {
   @scala.inline
   def apply(
     tokens: js.Array[String],
-    android: AndroidConfig = null,
-    apns: ApnsConfig = null,
+    android: typings.firebaseAdmin.messagingMod.admin.messaging.AndroidConfig = null,
+    apns: typings.firebaseAdmin.messagingMod.admin.messaging.ApnsConfig = null,
     data: StringDictionary[String] = null,
-    fcmOptions: FcmOptions = null,
-    notification: Notification = null,
-    webpush: WebpushConfig = null
+    fcmOptions: typings.firebaseAdmin.messagingMod.admin.messaging.FcmOptions = null,
+    notification: typings.firebaseAdmin.messagingMod.admin.messaging.Notification = null,
+    webpush: typings.firebaseAdmin.messagingMod.admin.messaging.WebpushConfig = null
   ): MulticastMessage = {
     val __obj = js.Dynamic.literal(tokens = tokens.asInstanceOf[js.Any])
     if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])

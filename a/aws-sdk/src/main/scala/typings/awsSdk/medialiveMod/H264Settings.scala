@@ -39,6 +39,10 @@ trait H264Settings extends js.Object {
     */
   var EntropyEncoding: js.UndefOr[H264EntropyEncoding] = js.native
   /**
+    * Optional filters that you can apply to an encode.
+    */
+  var FilterSettings: js.UndefOr[H264FilterSettings] = js.native
+  /**
     * Four bit AFD value to write on all frames of video in the output stream. Only valid when afdSignaling is set to 'Fixed'.
     */
   var FixedAfd: js.UndefOr[typings.awsSdk.medialiveMod.FixedAfd] = js.native
@@ -47,9 +51,9 @@ trait H264Settings extends js.Object {
     */
   var FlickerAq: js.UndefOr[H264FlickerAq] = js.native
   /**
-    * This setting applies only when scan type is "interlaced." It controls whether coding is on a field basis or a frame basis. (When the video is progressive, the coding is always on a frame basis.)
-  enabled: Always code on a field basis, so that odd and even sets of fields are coded separately.
-  disabled: Code the two sets of fields separately (on a field basis) or together (on a frame basis, using PAFF or MBAFF), depending on what is most appropriate for the content.
+    * This setting applies only when scan type is "interlaced." It controls whether coding is performed on a field basis or on a frame basis. (When the video is progressive, the coding is always performed on a frame basis.)
+  enabled: Force MediaLive to code on a field basis, so that odd and even sets of fields are coded separately.
+  disabled: Code the two sets of fields separately (on a field basis) or together (on a frame basis using PAFF), depending on what is most appropriate for the content.
     */
   var ForceFieldPictures: js.UndefOr[H264ForceFieldPictures] = js.native
   /**
@@ -124,6 +128,12 @@ trait H264Settings extends js.Object {
     */
   var Profile: js.UndefOr[H264Profile] = js.native
   /**
+    * Leave as STANDARD_QUALITY or choose a different value (which might result in additional costs to run the channel).
+  - ENHANCED_QUALITY: Produces a slightly better video quality without an increase in the bitrate. Has an effect only when the Rate control mode is QVBR or CBR. If this channel is in a MediaLive multiplex, the value must be ENHANCED_QUALITY.
+  - STANDARD_QUALITY: Valid for any Rate control mode.
+    */
+  var QualityLevel: js.UndefOr[H264QualityLevel] = js.native
+  /**
     * Controls the target quality for the video encode. Applies only when the rate control mode is QVBR. Set values for the QVBR quality level field and Max bitrate field that suit your most important viewing devices. Recommended values are:
   - Primary screen: Quality level: 8 to 10. Max bitrate: 4M
   - PC or tablet: Quality level: 7. Max bitrate: 1.5M to 3M
@@ -191,38 +201,40 @@ object H264Settings {
   def apply(
     AdaptiveQuantization: H264AdaptiveQuantization = null,
     AfdSignaling: AfdSignaling = null,
-    Bitrate: Int | Double = null,
-    BufFillPct: Int | Double = null,
-    BufSize: Int | Double = null,
+    Bitrate: js.UndefOr[integerMin1000] = js.undefined,
+    BufFillPct: js.UndefOr[integerMin0Max100] = js.undefined,
+    BufSize: js.UndefOr[integerMin0] = js.undefined,
     ColorMetadata: H264ColorMetadata = null,
     ColorSpaceSettings: H264ColorSpaceSettings = null,
     EntropyEncoding: H264EntropyEncoding = null,
+    FilterSettings: H264FilterSettings = null,
     FixedAfd: FixedAfd = null,
     FlickerAq: H264FlickerAq = null,
     ForceFieldPictures: H264ForceFieldPictures = null,
     FramerateControl: H264FramerateControl = null,
-    FramerateDenominator: Int | Double = null,
-    FramerateNumerator: Int | Double = null,
+    FramerateDenominator: js.UndefOr[integerMin1] = js.undefined,
+    FramerateNumerator: js.UndefOr[integerMin1] = js.undefined,
     GopBReference: H264GopBReference = null,
-    GopClosedCadence: Int | Double = null,
-    GopNumBFrames: Int | Double = null,
-    GopSize: Int | Double = null,
+    GopClosedCadence: js.UndefOr[integerMin0] = js.undefined,
+    GopNumBFrames: js.UndefOr[integerMin0Max7] = js.undefined,
+    GopSize: js.UndefOr[double] = js.undefined,
     GopSizeUnits: H264GopSizeUnits = null,
     Level: H264Level = null,
     LookAheadRateControl: H264LookAheadRateControl = null,
-    MaxBitrate: Int | Double = null,
-    MinIInterval: Int | Double = null,
-    NumRefFrames: Int | Double = null,
+    MaxBitrate: js.UndefOr[integerMin1000] = js.undefined,
+    MinIInterval: js.UndefOr[integerMin0Max30] = js.undefined,
+    NumRefFrames: js.UndefOr[integerMin1Max6] = js.undefined,
     ParControl: H264ParControl = null,
-    ParDenominator: Int | Double = null,
-    ParNumerator: Int | Double = null,
+    ParDenominator: js.UndefOr[integerMin1] = js.undefined,
+    ParNumerator: js.UndefOr[integer] = js.undefined,
     Profile: H264Profile = null,
-    QvbrQualityLevel: Int | Double = null,
+    QualityLevel: H264QualityLevel = null,
+    QvbrQualityLevel: js.UndefOr[integerMin1Max10] = js.undefined,
     RateControlMode: H264RateControlMode = null,
     ScanType: H264ScanType = null,
     SceneChangeDetect: H264SceneChangeDetect = null,
-    Slices: Int | Double = null,
-    Softness: Int | Double = null,
+    Slices: js.UndefOr[integerMin1Max32] = js.undefined,
+    Softness: js.UndefOr[integerMin0Max128] = js.undefined,
     SpatialAq: H264SpatialAq = null,
     SubgopLength: H264SubGopLength = null,
     Syntax: H264Syntax = null,
@@ -232,38 +244,40 @@ object H264Settings {
     val __obj = js.Dynamic.literal()
     if (AdaptiveQuantization != null) __obj.updateDynamic("AdaptiveQuantization")(AdaptiveQuantization.asInstanceOf[js.Any])
     if (AfdSignaling != null) __obj.updateDynamic("AfdSignaling")(AfdSignaling.asInstanceOf[js.Any])
-    if (Bitrate != null) __obj.updateDynamic("Bitrate")(Bitrate.asInstanceOf[js.Any])
-    if (BufFillPct != null) __obj.updateDynamic("BufFillPct")(BufFillPct.asInstanceOf[js.Any])
-    if (BufSize != null) __obj.updateDynamic("BufSize")(BufSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BufFillPct)) __obj.updateDynamic("BufFillPct")(BufFillPct.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(BufSize)) __obj.updateDynamic("BufSize")(BufSize.get.asInstanceOf[js.Any])
     if (ColorMetadata != null) __obj.updateDynamic("ColorMetadata")(ColorMetadata.asInstanceOf[js.Any])
     if (ColorSpaceSettings != null) __obj.updateDynamic("ColorSpaceSettings")(ColorSpaceSettings.asInstanceOf[js.Any])
     if (EntropyEncoding != null) __obj.updateDynamic("EntropyEncoding")(EntropyEncoding.asInstanceOf[js.Any])
+    if (FilterSettings != null) __obj.updateDynamic("FilterSettings")(FilterSettings.asInstanceOf[js.Any])
     if (FixedAfd != null) __obj.updateDynamic("FixedAfd")(FixedAfd.asInstanceOf[js.Any])
     if (FlickerAq != null) __obj.updateDynamic("FlickerAq")(FlickerAq.asInstanceOf[js.Any])
     if (ForceFieldPictures != null) __obj.updateDynamic("ForceFieldPictures")(ForceFieldPictures.asInstanceOf[js.Any])
     if (FramerateControl != null) __obj.updateDynamic("FramerateControl")(FramerateControl.asInstanceOf[js.Any])
-    if (FramerateDenominator != null) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.asInstanceOf[js.Any])
-    if (FramerateNumerator != null) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.asInstanceOf[js.Any])
+    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.get.asInstanceOf[js.Any])
     if (GopBReference != null) __obj.updateDynamic("GopBReference")(GopBReference.asInstanceOf[js.Any])
-    if (GopClosedCadence != null) __obj.updateDynamic("GopClosedCadence")(GopClosedCadence.asInstanceOf[js.Any])
-    if (GopNumBFrames != null) __obj.updateDynamic("GopNumBFrames")(GopNumBFrames.asInstanceOf[js.Any])
-    if (GopSize != null) __obj.updateDynamic("GopSize")(GopSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(GopClosedCadence)) __obj.updateDynamic("GopClosedCadence")(GopClosedCadence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GopNumBFrames)) __obj.updateDynamic("GopNumBFrames")(GopNumBFrames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(GopSize)) __obj.updateDynamic("GopSize")(GopSize.get.asInstanceOf[js.Any])
     if (GopSizeUnits != null) __obj.updateDynamic("GopSizeUnits")(GopSizeUnits.asInstanceOf[js.Any])
     if (Level != null) __obj.updateDynamic("Level")(Level.asInstanceOf[js.Any])
     if (LookAheadRateControl != null) __obj.updateDynamic("LookAheadRateControl")(LookAheadRateControl.asInstanceOf[js.Any])
-    if (MaxBitrate != null) __obj.updateDynamic("MaxBitrate")(MaxBitrate.asInstanceOf[js.Any])
-    if (MinIInterval != null) __obj.updateDynamic("MinIInterval")(MinIInterval.asInstanceOf[js.Any])
-    if (NumRefFrames != null) __obj.updateDynamic("NumRefFrames")(NumRefFrames.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(MinIInterval)) __obj.updateDynamic("MinIInterval")(MinIInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(NumRefFrames)) __obj.updateDynamic("NumRefFrames")(NumRefFrames.get.asInstanceOf[js.Any])
     if (ParControl != null) __obj.updateDynamic("ParControl")(ParControl.asInstanceOf[js.Any])
-    if (ParDenominator != null) __obj.updateDynamic("ParDenominator")(ParDenominator.asInstanceOf[js.Any])
-    if (ParNumerator != null) __obj.updateDynamic("ParNumerator")(ParNumerator.asInstanceOf[js.Any])
+    if (!js.isUndefined(ParDenominator)) __obj.updateDynamic("ParDenominator")(ParDenominator.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ParNumerator)) __obj.updateDynamic("ParNumerator")(ParNumerator.get.asInstanceOf[js.Any])
     if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])
-    if (QvbrQualityLevel != null) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.asInstanceOf[js.Any])
+    if (QualityLevel != null) __obj.updateDynamic("QualityLevel")(QualityLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(QvbrQualityLevel)) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.get.asInstanceOf[js.Any])
     if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
     if (ScanType != null) __obj.updateDynamic("ScanType")(ScanType.asInstanceOf[js.Any])
     if (SceneChangeDetect != null) __obj.updateDynamic("SceneChangeDetect")(SceneChangeDetect.asInstanceOf[js.Any])
-    if (Slices != null) __obj.updateDynamic("Slices")(Slices.asInstanceOf[js.Any])
-    if (Softness != null) __obj.updateDynamic("Softness")(Softness.asInstanceOf[js.Any])
+    if (!js.isUndefined(Slices)) __obj.updateDynamic("Slices")(Slices.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Softness)) __obj.updateDynamic("Softness")(Softness.get.asInstanceOf[js.Any])
     if (SpatialAq != null) __obj.updateDynamic("SpatialAq")(SpatialAq.asInstanceOf[js.Any])
     if (SubgopLength != null) __obj.updateDynamic("SubgopLength")(SubgopLength.asInstanceOf[js.Any])
     if (Syntax != null) __obj.updateDynamic("Syntax")(Syntax.asInstanceOf[js.Any])

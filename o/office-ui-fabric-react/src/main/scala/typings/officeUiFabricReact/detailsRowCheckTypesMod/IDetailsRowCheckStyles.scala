@@ -14,11 +14,15 @@ trait IDetailsRowCheckStyles extends js.Object {
 
 object IDetailsRowCheckStyles {
   @scala.inline
-  def apply(check: IStyle = null, isDisabled: IStyle = null, root: IStyle = null): IDetailsRowCheckStyles = {
+  def apply(
+    check: js.UndefOr[Null | IStyle] = js.undefined,
+    isDisabled: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined
+  ): IDetailsRowCheckStyles = {
     val __obj = js.Dynamic.literal()
-    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
-    if (isDisabled != null) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsRowCheckStyles]
   }
 }

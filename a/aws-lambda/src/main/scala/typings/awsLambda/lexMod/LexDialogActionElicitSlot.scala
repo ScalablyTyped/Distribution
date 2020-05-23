@@ -1,8 +1,8 @@
 package typings.awsLambda.lexMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsLambda.AnonContent
-import typings.awsLambda.AnonContentType
+import typings.awsLambda.anon.Content
+import typings.awsLambda.anon.ContentType
 import typings.awsLambda.awsLambdaStrings.ElicitSlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,8 +25,8 @@ object LexDialogActionElicitSlot {
     slotToElicit: String,
     slots: StringDictionary[String | Null],
     `type`: ElicitSlot,
-    message: AnonContent = null,
-    responseCard: AnonContentType = null
+    message: Content = null,
+    responseCard: ContentType = null
   ): LexDialogActionElicitSlot = {
     val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], slotToElicit = slotToElicit.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

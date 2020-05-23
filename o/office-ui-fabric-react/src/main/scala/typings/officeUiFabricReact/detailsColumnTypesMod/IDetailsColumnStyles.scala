@@ -67,36 +67,36 @@ trait IDetailsColumnStyles extends js.Object {
 object IDetailsColumnStyles {
   @scala.inline
   def apply(
-    accessibleLabel: IStyle = null,
-    borderAfterDropping: IStyle = null,
-    borderWhileDragging: IStyle = null,
-    cellName: IStyle = null,
-    cellTitle: IStyle = null,
-    cellTooltip: IStyle = null,
-    filterChevron: IStyle = null,
-    gripperBarVerticalStyle: IStyle = null,
-    iconClassName: IStyle = null,
-    nearIcon: IStyle = null,
-    noBorderAfterDropping: IStyle = null,
-    noBorderWhileDragging: IStyle = null,
-    root: IStyle = null,
-    sortIcon: IStyle = null
+    accessibleLabel: js.UndefOr[Null | IStyle] = js.undefined,
+    borderAfterDropping: js.UndefOr[Null | IStyle] = js.undefined,
+    borderWhileDragging: js.UndefOr[Null | IStyle] = js.undefined,
+    cellName: js.UndefOr[Null | IStyle] = js.undefined,
+    cellTitle: js.UndefOr[Null | IStyle] = js.undefined,
+    cellTooltip: js.UndefOr[Null | IStyle] = js.undefined,
+    filterChevron: js.UndefOr[Null | IStyle] = js.undefined,
+    gripperBarVerticalStyle: js.UndefOr[Null | IStyle] = js.undefined,
+    iconClassName: js.UndefOr[Null | IStyle] = js.undefined,
+    nearIcon: js.UndefOr[Null | IStyle] = js.undefined,
+    noBorderAfterDropping: js.UndefOr[Null | IStyle] = js.undefined,
+    noBorderWhileDragging: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    sortIcon: js.UndefOr[Null | IStyle] = js.undefined
   ): IDetailsColumnStyles = {
     val __obj = js.Dynamic.literal()
-    if (accessibleLabel != null) __obj.updateDynamic("accessibleLabel")(accessibleLabel.asInstanceOf[js.Any])
-    if (borderAfterDropping != null) __obj.updateDynamic("borderAfterDropping")(borderAfterDropping.asInstanceOf[js.Any])
-    if (borderWhileDragging != null) __obj.updateDynamic("borderWhileDragging")(borderWhileDragging.asInstanceOf[js.Any])
-    if (cellName != null) __obj.updateDynamic("cellName")(cellName.asInstanceOf[js.Any])
-    if (cellTitle != null) __obj.updateDynamic("cellTitle")(cellTitle.asInstanceOf[js.Any])
-    if (cellTooltip != null) __obj.updateDynamic("cellTooltip")(cellTooltip.asInstanceOf[js.Any])
-    if (filterChevron != null) __obj.updateDynamic("filterChevron")(filterChevron.asInstanceOf[js.Any])
-    if (gripperBarVerticalStyle != null) __obj.updateDynamic("gripperBarVerticalStyle")(gripperBarVerticalStyle.asInstanceOf[js.Any])
-    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
-    if (nearIcon != null) __obj.updateDynamic("nearIcon")(nearIcon.asInstanceOf[js.Any])
-    if (noBorderAfterDropping != null) __obj.updateDynamic("noBorderAfterDropping")(noBorderAfterDropping.asInstanceOf[js.Any])
-    if (noBorderWhileDragging != null) __obj.updateDynamic("noBorderWhileDragging")(noBorderWhileDragging.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (sortIcon != null) __obj.updateDynamic("sortIcon")(sortIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibleLabel)) __obj.updateDynamic("accessibleLabel")(accessibleLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderAfterDropping)) __obj.updateDynamic("borderAfterDropping")(borderAfterDropping.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWhileDragging)) __obj.updateDynamic("borderWhileDragging")(borderWhileDragging.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellName)) __obj.updateDynamic("cellName")(cellName.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellTitle)) __obj.updateDynamic("cellTitle")(cellTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellTooltip)) __obj.updateDynamic("cellTooltip")(cellTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterChevron)) __obj.updateDynamic("filterChevron")(filterChevron.asInstanceOf[js.Any])
+    if (!js.isUndefined(gripperBarVerticalStyle)) __obj.updateDynamic("gripperBarVerticalStyle")(gripperBarVerticalStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconClassName)) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(nearIcon)) __obj.updateDynamic("nearIcon")(nearIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(noBorderAfterDropping)) __obj.updateDynamic("noBorderAfterDropping")(noBorderAfterDropping.asInstanceOf[js.Any])
+    if (!js.isUndefined(noBorderWhileDragging)) __obj.updateDynamic("noBorderWhileDragging")(noBorderWhileDragging.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortIcon)) __obj.updateDynamic("sortIcon")(sortIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsColumnStyles]
   }
 }

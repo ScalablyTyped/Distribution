@@ -1,7 +1,7 @@
 package typings.fundamentalReact.formInputMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalReact.AnonState
+import typings.fundamentalReact.anon.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,14 +17,14 @@ trait FormInputProps
   var placeholder: js.UndefOr[String] = js.undefined
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
-  var validationState: js.UndefOr[AnonState] = js.undefined
+  var validationState: js.UndefOr[State] = js.undefined
   var value: js.UndefOr[String | Double] = js.undefined
 }
 
 object FormInputProps {
   @scala.inline
   def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     className: String = null,
     compact: js.UndefOr[Boolean] = js.undefined,
     disableStyles: js.UndefOr[Boolean] = js.undefined,
@@ -34,19 +34,19 @@ object FormInputProps {
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null,
-    validationState: AnonState = null,
+    validationState: State = null,
     value: String | Double = null
   ): FormInputProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validationState != null) __obj.updateDynamic("validationState")(validationState.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

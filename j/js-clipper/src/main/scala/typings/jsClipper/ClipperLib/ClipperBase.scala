@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("ClipperLib.ClipperBase")
 @js.native
-class ClipperBase () extends js.Object {
+trait ClipperBase extends js.Object {
   var hiRange: Double = js.native
   var horizontal: Double = js.native
   var loRange: Double = js.native

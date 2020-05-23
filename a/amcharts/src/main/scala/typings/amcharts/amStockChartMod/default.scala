@@ -1,6 +1,5 @@
 package typings.amcharts.amStockChartMod
 
-import typings.amcharts.AnonDate
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -149,7 +148,7 @@ class default () extends AmStockChart {
     * @param handler - The event handler.
     */
   /* CompleteClass */
-  override def addListener(`type`: String, handler: js.Function1[/* e */ AnonDate, Unit]): Unit = js.native
+  override def addListener(`type`: String, handler: js.Function1[/* e */ typings.amcharts.anon.Date, Unit]): Unit = js.native
   /**
     * Adds panel to the stock chart. Requires stockChart.validateNow() method to be called after this action.
     */

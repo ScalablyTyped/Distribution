@@ -142,16 +142,16 @@ object TimeSliderViewModelProperties {
     fullTimeExtent: TimeExtentProperties = null,
     loop: js.UndefOr[Boolean] = js.undefined,
     mode: instant | `time-window` | `cumulative-from-start` | `cumulative-from-end` = null,
-    playRate: Int | Double = null,
+    playRate: js.UndefOr[Double] = js.undefined,
     stops: StopsByDates | StopsByCount | StopsByInterval = null,
     values: js.Array[DateProperties] = null,
     view: MapViewProperties | SceneViewProperties = null
   ): TimeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (fullTimeExtent != null) __obj.updateDynamic("fullTimeExtent")(fullTimeExtent.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (playRate != null) __obj.updateDynamic("playRate")(playRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(playRate)) __obj.updateDynamic("playRate")(playRate.get.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])

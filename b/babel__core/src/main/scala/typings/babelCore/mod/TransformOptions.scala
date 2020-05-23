@@ -292,48 +292,102 @@ trait TransformOptions extends js.Object {
 object TransformOptions {
   @scala.inline
   def apply(
-    ast: js.UndefOr[Boolean] = js.undefined,
-    auxiliaryCommentAfter: String = null,
-    auxiliaryCommentBefore: String = null,
-    babelrc: js.UndefOr[Boolean] = js.undefined,
-    babelrcRoots: Boolean | MatchPattern | js.Array[MatchPattern] = null,
+    ast: js.UndefOr[Null | Boolean] = js.undefined,
+    auxiliaryCommentAfter: js.UndefOr[Null | String] = js.undefined,
+    auxiliaryCommentBefore: js.UndefOr[Null | String] = js.undefined,
+    babelrc: js.UndefOr[Null | Boolean] = js.undefined,
+    babelrcRoots: js.UndefOr[Null | Boolean | MatchPattern | js.Array[MatchPattern]] = js.undefined,
     caller: TransformCaller = null,
-    code: js.UndefOr[Boolean] = js.undefined,
-    comments: js.UndefOr[Boolean] = js.undefined,
-    compact: Boolean | auto = null,
-    configFile: String | Boolean = null,
-    cwd: String = null,
-    env: StringDictionary[js.UndefOr[TransformOptions | Null]] = null,
+    code: js.UndefOr[Null | Boolean] = js.undefined,
+    comments: js.UndefOr[Null | Boolean] = js.undefined,
+    compact: js.UndefOr[Null | Boolean | auto] = js.undefined,
+    configFile: js.UndefOr[Null | String | Boolean] = js.undefined,
+    cwd: js.UndefOr[Null | String] = js.undefined,
+    env: js.UndefOr[Null | (StringDictionary[js.UndefOr[TransformOptions | Null]])] = js.undefined,
     envName: String = null,
     exclude: MatchPattern | js.Array[MatchPattern] = null,
-    `extends`: String = null,
-    filename: String = null,
-    filenameRelative: String = null,
-    generatorOpts: GeneratorOptions = null,
-    getModuleId: /* moduleName */ String => js.UndefOr[String | Null] = null,
-    highlightCode: js.UndefOr[Boolean] = js.undefined,
-    ignore: js.Array[MatchPattern] = null,
+    `extends`: js.UndefOr[Null | String] = js.undefined,
+    filename: js.UndefOr[Null | String] = js.undefined,
+    filenameRelative: js.UndefOr[Null | String] = js.undefined,
+    generatorOpts: js.UndefOr[Null | GeneratorOptions] = js.undefined,
+    getModuleId: js.UndefOr[Null | (/* moduleName */ String => js.UndefOr[String | Null])] = js.undefined,
+    highlightCode: js.UndefOr[Null | Boolean] = js.undefined,
+    ignore: js.UndefOr[Null | js.Array[MatchPattern]] = js.undefined,
     include: MatchPattern | js.Array[MatchPattern] = null,
-    inputSourceMap: js.Object = null,
-    minified: js.UndefOr[Boolean] = js.undefined,
-    moduleId: String = null,
-    moduleIds: js.UndefOr[Boolean] = js.undefined,
-    moduleRoot: String = null,
-    only: js.Array[MatchPattern] = null,
+    inputSourceMap: js.UndefOr[Null | js.Object] = js.undefined,
+    minified: js.UndefOr[Null | Boolean] = js.undefined,
+    moduleId: js.UndefOr[Null | String] = js.undefined,
+    moduleIds: js.UndefOr[Null | Boolean] = js.undefined,
+    moduleRoot: js.UndefOr[Null | String] = js.undefined,
+    only: js.UndefOr[Null | js.Array[MatchPattern]] = js.undefined,
     overrides: js.Array[TransformOptions] = null,
-    parserOpts: ParserOptions = null,
-    plugins: js.Array[PluginItem] = null,
-    presets: js.Array[PluginItem] = null,
-    retainLines: js.UndefOr[Boolean] = js.undefined,
-    root: String = null,
+    parserOpts: js.UndefOr[Null | ParserOptions] = js.undefined,
+    plugins: js.UndefOr[Null | js.Array[PluginItem]] = js.undefined,
+    presets: js.UndefOr[Null | js.Array[PluginItem]] = js.undefined,
+    retainLines: js.UndefOr[Null | Boolean] = js.undefined,
+    root: js.UndefOr[Null | String] = js.undefined,
     rootMode: root | upward | `upward-optional` = null,
-    shouldPrintComment: /* commentContents */ String => Boolean = null,
-    sourceFileName: String = null,
-    sourceMaps: Boolean | `inline` | both = null,
-    sourceRoot: String = null,
-    sourceType: script | module | unambiguous = null,
+    shouldPrintComment: js.UndefOr[Null | (/* commentContents */ String => Boolean)] = js.undefined,
+    sourceFileName: js.UndefOr[Null | String] = js.undefined,
+    sourceMaps: js.UndefOr[Null | Boolean | `inline` | both] = js.undefined,
+    sourceRoot: js.UndefOr[Null | String] = js.undefined,
+    sourceType: js.UndefOr[Null | script | module | unambiguous] = js.undefined,
     test: MatchPattern | js.Array[MatchPattern] = null,
-    wrapPluginVisitorMethod: (/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[
+    wrapPluginVisitorMethod: js.UndefOr[
+      Null | ((/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[
+        /* path */ typings.babelTraverse.mod.NodePath[typings.babelTraverse.mod.Node], 
+        /* state */ js.Any, 
+        Unit
+      ]) => js.Function2[
+        /* path */ typings.babelTraverse.mod.NodePath[typings.babelTraverse.mod.Node], 
+        /* state */ _, 
+        Unit
+      ])
+    ] = js.undefined
+  ): TransformOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ast)) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
+    if (!js.isUndefined(auxiliaryCommentAfter)) __obj.updateDynamic("auxiliaryCommentAfter")(auxiliaryCommentAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(auxiliaryCommentBefore)) __obj.updateDynamic("auxiliaryCommentBefore")(auxiliaryCommentBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(babelrc)) __obj.updateDynamic("babelrc")(babelrc.asInstanceOf[js.Any])
+    if (!js.isUndefined(babelrcRoots)) __obj.updateDynamic("babelrcRoots")(babelrcRoots.asInstanceOf[js.Any])
+    if (caller != null) __obj.updateDynamic("caller")(caller.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(configFile)) __obj.updateDynamic("configFile")(configFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(cwd)) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (!js.isUndefined(env)) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (envName != null) __obj.updateDynamic("envName")(envName.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(`extends`)) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+    if (!js.isUndefined(filename)) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(filenameRelative)) __obj.updateDynamic("filenameRelative")(filenameRelative.asInstanceOf[js.Any])
+    if (!js.isUndefined(generatorOpts)) __obj.updateDynamic("generatorOpts")(generatorOpts.asInstanceOf[js.Any])
+    if (!js.isUndefined(getModuleId)) __obj.updateDynamic("getModuleId")(if (getModuleId != null) js.Any.fromFunction1(getModuleId.asInstanceOf[/* moduleName */ String => js.UndefOr[String | Null]]) else null)
+    if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputSourceMap)) __obj.updateDynamic("inputSourceMap")(inputSourceMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(minified)) __obj.updateDynamic("minified")(minified.asInstanceOf[js.Any])
+    if (!js.isUndefined(moduleId)) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])
+    if (!js.isUndefined(moduleIds)) __obj.updateDynamic("moduleIds")(moduleIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(moduleRoot)) __obj.updateDynamic("moduleRoot")(moduleRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (!js.isUndefined(parserOpts)) __obj.updateDynamic("parserOpts")(parserOpts.asInstanceOf[js.Any])
+    if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(presets)) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
+    if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (rootMode != null) __obj.updateDynamic("rootMode")(rootMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldPrintComment)) __obj.updateDynamic("shouldPrintComment")(if (shouldPrintComment != null) js.Any.fromFunction1(shouldPrintComment.asInstanceOf[/* commentContents */ String => Boolean]) else null)
+    if (!js.isUndefined(sourceFileName)) __obj.updateDynamic("sourceFileName")(sourceFileName.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMaps)) __obj.updateDynamic("sourceMaps")(sourceMaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceRoot)) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceType)) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapPluginVisitorMethod)) __obj.updateDynamic("wrapPluginVisitorMethod")(if (wrapPluginVisitorMethod != null) js.Any.fromFunction3(wrapPluginVisitorMethod.asInstanceOf[(/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[
       /* path */ typings.babelTraverse.mod.NodePath[typings.babelTraverse.mod.Node], 
       /* state */ js.Any, 
       Unit
@@ -341,51 +395,7 @@ object TransformOptions {
       /* path */ typings.babelTraverse.mod.NodePath[typings.babelTraverse.mod.Node], 
       /* state */ _, 
       Unit
-    ] = null
-  ): TransformOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ast)) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
-    if (auxiliaryCommentAfter != null) __obj.updateDynamic("auxiliaryCommentAfter")(auxiliaryCommentAfter.asInstanceOf[js.Any])
-    if (auxiliaryCommentBefore != null) __obj.updateDynamic("auxiliaryCommentBefore")(auxiliaryCommentBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(babelrc)) __obj.updateDynamic("babelrc")(babelrc.asInstanceOf[js.Any])
-    if (babelrcRoots != null) __obj.updateDynamic("babelrcRoots")(babelrcRoots.asInstanceOf[js.Any])
-    if (caller != null) __obj.updateDynamic("caller")(caller.asInstanceOf[js.Any])
-    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (configFile != null) __obj.updateDynamic("configFile")(configFile.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (envName != null) __obj.updateDynamic("envName")(envName.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (filenameRelative != null) __obj.updateDynamic("filenameRelative")(filenameRelative.asInstanceOf[js.Any])
-    if (generatorOpts != null) __obj.updateDynamic("generatorOpts")(generatorOpts.asInstanceOf[js.Any])
-    if (getModuleId != null) __obj.updateDynamic("getModuleId")(js.Any.fromFunction1(getModuleId))
-    if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (inputSourceMap != null) __obj.updateDynamic("inputSourceMap")(inputSourceMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(minified)) __obj.updateDynamic("minified")(minified.asInstanceOf[js.Any])
-    if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])
-    if (!js.isUndefined(moduleIds)) __obj.updateDynamic("moduleIds")(moduleIds.asInstanceOf[js.Any])
-    if (moduleRoot != null) __obj.updateDynamic("moduleRoot")(moduleRoot.asInstanceOf[js.Any])
-    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (parserOpts != null) __obj.updateDynamic("parserOpts")(parserOpts.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (rootMode != null) __obj.updateDynamic("rootMode")(rootMode.asInstanceOf[js.Any])
-    if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(js.Any.fromFunction1(shouldPrintComment))
-    if (sourceFileName != null) __obj.updateDynamic("sourceFileName")(sourceFileName.asInstanceOf[js.Any])
-    if (sourceMaps != null) __obj.updateDynamic("sourceMaps")(sourceMaps.asInstanceOf[js.Any])
-    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
-    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (wrapPluginVisitorMethod != null) __obj.updateDynamic("wrapPluginVisitorMethod")(js.Any.fromFunction3(wrapPluginVisitorMethod))
+    ]]) else null)
     __obj.asInstanceOf[TransformOptions]
   }
 }

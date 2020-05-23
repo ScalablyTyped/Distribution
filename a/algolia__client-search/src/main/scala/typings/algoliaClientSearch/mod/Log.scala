@@ -12,7 +12,7 @@ trait Log extends js.Object {
   /**
     * Http response code.
     */
-  val answerCode: String
+  val answer_code: String
   /**
     * Exhaustive flags used during the query.
     */
@@ -20,7 +20,7 @@ trait Log extends js.Object {
   /**
     * Index name of the log
     */
-  val index: String
+  val index: js.UndefOr[String] = js.undefined
   /**
     * Client ip of the call.
     */
@@ -32,23 +32,23 @@ trait Log extends js.Object {
   /**
     * Number Of Api Calls
     */
-  val numberOfApiCalls: String
-  /**
-    * Number of hits returned for the query.
-    */
-  val numberOfQueryHits: String
+  val nb_api_calls: js.UndefOr[String] = js.undefined
   /**
     * Processing time for the query. This does not include network time.
     */
-  val processingTimeMS: String
+  val processing_time_ms: String
   /**
     * Request body. It’s truncated after 1000 characters.
     */
-  val queryBody: String
+  val query_body: String
   /**
     * Request Headers (API Key is obfuscated).
     */
-  val queryHeaders: String
+  val query_headers: String
+  /**
+    * Number of hits returned for the query.
+    */
+  val query_nb_hits: js.UndefOr[String] = js.undefined
   /**
     * SHA1 ID of entry.
     */
@@ -56,7 +56,7 @@ trait Log extends js.Object {
   /**
     * Timestamp in ISO-8601 format.
     */
-  val timeStamp: String
+  val timestamp: String
   /**
     * Request URL.
     */
@@ -67,22 +67,25 @@ object Log {
   @scala.inline
   def apply(
     answer: String,
-    answerCode: String,
-    index: String,
+    answer_code: String,
     ip: String,
     method: String,
-    numberOfApiCalls: String,
-    numberOfQueryHits: String,
-    processingTimeMS: String,
-    queryBody: String,
-    queryHeaders: String,
+    processing_time_ms: String,
+    query_body: String,
+    query_headers: String,
     sha1: String,
-    timeStamp: String,
+    timestamp: String,
     url: String,
-    exhaustive: js.UndefOr[Boolean] = js.undefined
+    exhaustive: js.UndefOr[Boolean] = js.undefined,
+    index: String = null,
+    nb_api_calls: String = null,
+    query_nb_hits: String = null
   ): Log = {
-    val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any], answerCode = answerCode.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], numberOfApiCalls = numberOfApiCalls.asInstanceOf[js.Any], numberOfQueryHits = numberOfQueryHits.asInstanceOf[js.Any], processingTimeMS = processingTimeMS.asInstanceOf[js.Any], queryBody = queryBody.asInstanceOf[js.Any], queryHeaders = queryHeaders.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(exhaustive)) __obj.updateDynamic("exhaustive")(exhaustive.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any], answer_code = answer_code.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], processing_time_ms = processing_time_ms.asInstanceOf[js.Any], query_body = query_body.asInstanceOf[js.Any], query_headers = query_headers.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(exhaustive)) __obj.updateDynamic("exhaustive")(exhaustive.get.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (nb_api_calls != null) __obj.updateDynamic("nb_api_calls")(nb_api_calls.asInstanceOf[js.Any])
+    if (query_nb_hits != null) __obj.updateDynamic("query_nb_hits")(query_nb_hits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Log]
   }
 }

@@ -150,16 +150,5 @@ object Record extends js.Object {
     def apply(values: Partial[TProps]): Record[TProps] with TProps = js.native
   }
   
-  def apply[TProps](defaultValues: TProps): Factory[TProps] = js.native
-  def apply[TProps](defaultValues: TProps, name: String): Factory[TProps] = js.native
-  def getDescriptiveName(record: Record[_]): String = js.native
-  def isRecord(maybeRecord: js.Any): /* is immutable.Immutable.Record<any> */ Boolean = js.native
-  @js.native
-  object Factory extends js.Object {
-    def apply[TProps /* <: js.Object */](): Record[TProps] with TProps = js.native
-    def apply[TProps /* <: js.Object */](values: Iterable[js.Tuple2[String, _]]): Record[TProps] with TProps = js.native
-    def apply[TProps /* <: js.Object */](values: Partial[TProps]): Record[TProps] with TProps = js.native
-  }
-  
 }
 

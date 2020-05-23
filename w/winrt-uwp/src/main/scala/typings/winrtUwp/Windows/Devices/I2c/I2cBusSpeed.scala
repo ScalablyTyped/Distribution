@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.I2c
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object I2cBusSpeed extends js.Object {
   /** The standard speed of 100 kilohertz (kHz). This speed is the default. */
   @js.native
   sealed trait standardMode extends I2cBusSpeed
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[I2cBusSpeed with Double] = js.native
-  /* 1 */ @js.native
-  object fastMode extends TopLevel[fastMode with Double]
-  
-  /* 0 */ @js.native
-  object standardMode extends TopLevel[standardMode with Double]
   
 }
 

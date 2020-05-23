@@ -40,7 +40,7 @@ object SortSpec {
   def apply(
     backgroundColor: Color = null,
     backgroundColorStyle: ColorStyle = null,
-    dimensionIndex: Int | Double = null,
+    dimensionIndex: js.UndefOr[Double] = js.undefined,
     foregroundColor: Color = null,
     foregroundColorStyle: ColorStyle = null,
     sortOrder: String = null
@@ -48,7 +48,7 @@ object SortSpec {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (backgroundColorStyle != null) __obj.updateDynamic("backgroundColorStyle")(backgroundColorStyle.asInstanceOf[js.Any])
-    if (dimensionIndex != null) __obj.updateDynamic("dimensionIndex")(dimensionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(dimensionIndex)) __obj.updateDynamic("dimensionIndex")(dimensionIndex.get.asInstanceOf[js.Any])
     if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
     if (foregroundColorStyle != null) __obj.updateDynamic("foregroundColorStyle")(foregroundColorStyle.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])

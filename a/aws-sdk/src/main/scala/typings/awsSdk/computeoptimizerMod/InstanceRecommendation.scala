@@ -57,7 +57,7 @@ object InstanceRecommendation {
     instanceArn: InstanceArn = null,
     instanceName: InstanceName = null,
     lastRefreshTimestamp: LastRefreshTimestamp = null,
-    lookBackPeriodInDays: Int | Double = null,
+    lookBackPeriodInDays: js.UndefOr[LookBackPeriodInDays] = js.undefined,
     recommendationOptions: RecommendationOptions = null,
     recommendationSources: RecommendationSources = null,
     utilizationMetrics: UtilizationMetrics = null
@@ -69,7 +69,7 @@ object InstanceRecommendation {
     if (instanceArn != null) __obj.updateDynamic("instanceArn")(instanceArn.asInstanceOf[js.Any])
     if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
     if (lastRefreshTimestamp != null) __obj.updateDynamic("lastRefreshTimestamp")(lastRefreshTimestamp.asInstanceOf[js.Any])
-    if (lookBackPeriodInDays != null) __obj.updateDynamic("lookBackPeriodInDays")(lookBackPeriodInDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookBackPeriodInDays)) __obj.updateDynamic("lookBackPeriodInDays")(lookBackPeriodInDays.get.asInstanceOf[js.Any])
     if (recommendationOptions != null) __obj.updateDynamic("recommendationOptions")(recommendationOptions.asInstanceOf[js.Any])
     if (recommendationSources != null) __obj.updateDynamic("recommendationSources")(recommendationSources.asInstanceOf[js.Any])
     if (utilizationMetrics != null) __obj.updateDynamic("utilizationMetrics")(utilizationMetrics.asInstanceOf[js.Any])

@@ -23,9 +23,9 @@ object UrlMapValidationResult {
   ): UrlMapValidationResult = {
     val __obj = js.Dynamic.literal()
     if (loadErrors != null) __obj.updateDynamic("loadErrors")(loadErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadSucceeded)) __obj.updateDynamic("loadSucceeded")(loadSucceeded.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadSucceeded)) __obj.updateDynamic("loadSucceeded")(loadSucceeded.get.asInstanceOf[js.Any])
     if (testFailures != null) __obj.updateDynamic("testFailures")(testFailures.asInstanceOf[js.Any])
-    if (!js.isUndefined(testPassed)) __obj.updateDynamic("testPassed")(testPassed.asInstanceOf[js.Any])
+    if (!js.isUndefined(testPassed)) __obj.updateDynamic("testPassed")(testPassed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlMapValidationResult]
   }
 }

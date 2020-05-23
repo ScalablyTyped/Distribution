@@ -17,7 +17,7 @@ trait ShortestPathOptions extends js.Object {
 object ShortestPathOptions {
   @scala.inline
   def apply(
-    defaultWeight: Int | Double = null,
+    defaultWeight: js.UndefOr[Double] = js.undefined,
     direction: EdgeDirection = null,
     edgeCollectionRestriction: js.Array[String] | String = null,
     endVertexCollectionRestriction: js.Array[String] | String = null,
@@ -25,7 +25,7 @@ object ShortestPathOptions {
     weight: String = null
   ): ShortestPathOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultWeight != null) __obj.updateDynamic("defaultWeight")(defaultWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultWeight)) __obj.updateDynamic("defaultWeight")(defaultWeight.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (edgeCollectionRestriction != null) __obj.updateDynamic("edgeCollectionRestriction")(edgeCollectionRestriction.asInstanceOf[js.Any])
     if (endVertexCollectionRestriction != null) __obj.updateDynamic("endVertexCollectionRestriction")(endVertexCollectionRestriction.asInstanceOf[js.Any])

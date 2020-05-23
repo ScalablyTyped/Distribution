@@ -1,7 +1,7 @@
 package typings.samlp.mod
 
 import typings.node.Buffer
-import typings.samlp.AnonPost
+import typings.samlp.anon.Post
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait IdPMetadataOptions extends js.Object {
   var cert: String | Buffer
   var issuer: String
-  var logoutEndpointPaths: js.UndefOr[AnonPost] = js.undefined
+  var logoutEndpointPaths: js.UndefOr[Post] = js.undefined
   var postEndpointPath: js.UndefOr[String] = js.undefined
   var profileMapper: js.UndefOr[ProfileMapperConstructor] = js.undefined
   var redirectEndpointPath: js.UndefOr[String] = js.undefined
@@ -20,7 +20,7 @@ object IdPMetadataOptions {
   def apply(
     cert: String | Buffer,
     issuer: String,
-    logoutEndpointPaths: AnonPost = null,
+    logoutEndpointPaths: Post = null,
     postEndpointPath: String = null,
     profileMapper: ProfileMapperConstructor = null,
     redirectEndpointPath: String = null

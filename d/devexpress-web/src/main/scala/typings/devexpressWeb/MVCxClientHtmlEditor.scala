@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side counterpart of the HtmlEditor extension.
   */
-@JSGlobal("MVCxClientHtmlEditor")
 @js.native
-class MVCxClientHtmlEditor () extends ASPxClientHtmlEditor {
+trait MVCxClientHtmlEditor extends ASPxClientHtmlEditor {
   /**
     * Occurs when a callback for server-side processing is initiated.
     */
@@ -22,16 +21,5 @@ class MVCxClientHtmlEditor () extends ASPxClientHtmlEditor {
     */
   def PerformDataCallback(data: js.Any): Unit = js.native
   def PerformDataCallback(data: js.Any, onCallback: ASPxClientDataCallback): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("MVCxClientHtmlEditor")
-@js.native
-object MVCxClientHtmlEditor extends js.Object {
-  /**
-    * Converts the specified object to the MVCxClientHtmlEditor type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): MVCxClientHtmlEditor = js.native
 }
 

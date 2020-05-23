@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends Cryptr {
   /**
-  	 * Cryptr provides a mechanism for aes-256-ctr encryption/decryption.
-  	 * @param secret key used for encryption/decryption
-  	 */
+    * Cryptr provides a mechanism for aes-256-ctr encryption/decryption.
+    * @param secret key used for encryption/decryption
+    */
   def this(secret: String) = this()
   /** Decrypt a string. */
   /* CompleteClass */

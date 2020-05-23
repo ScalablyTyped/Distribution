@@ -21,7 +21,7 @@ object MapOptions {
   def apply(editOptions: EditOptions = null, editable: js.UndefOr[Boolean] = js.undefined): MapOptions = {
     val __obj = js.Dynamic.literal()
     if (editOptions != null) __obj.updateDynamic("editOptions")(editOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
 }

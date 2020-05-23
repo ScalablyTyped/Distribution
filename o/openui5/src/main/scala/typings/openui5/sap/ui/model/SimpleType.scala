@@ -4,16 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.SimpleType")
 @js.native
-abstract class SimpleType protected () extends Type_ {
-  /**
-    * Constructor for a new SimpleType.
-    * @param oFormatOptions options as provided by concrete subclasses
-    * @param oConstraints constraints as supported by concrete subclasses
-    */
-  def this(oFormatOptions: js.Any) = this()
-  def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
+trait SimpleType extends Type_ {
   /**
     * Format the given value in model representation to an output value in the giveninternal type. This
     * happens according to the format options, if target type is 'string'.If oValue is not defined or

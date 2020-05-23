@@ -18,9 +18,9 @@ object KeyOptions {
     reset: js.UndefOr[Boolean] = js.undefined
   ): KeyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepFocus)) __obj.updateDynamic("keepFocus")(keepFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepFocus)) __obj.updateDynamic("keepFocus")(keepFocus.get.asInstanceOf[js.Any])
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
+    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOptions]
   }
 }

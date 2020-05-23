@@ -51,7 +51,7 @@ object SeriesMapbubbleDataOptions {
     events: PointEventsOptionsObject = null,
     id: String = null,
     name: String = null,
-    z: Int | Double = null
+    z: js.UndefOr[Null | Double] = js.undefined
   ): SeriesMapbubbleDataOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -60,7 +60,7 @@ object SeriesMapbubbleDataOptions {
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesMapbubbleDataOptions]
   }
 }

@@ -14,14 +14,14 @@ object EventTypesResponse {
   def apply(
     event_types: js.Array[NotificationEventType],
     httpStatusCode: Double,
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     create_time: String = null,
-    total_count: Int | Double = null
+    total_count: js.UndefOr[Double] = js.undefined
   ): EventTypesResponse = {
     val __obj = js.Dynamic.literal(event_types = event_types.asInstanceOf[js.Any], httpStatusCode = httpStatusCode.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
-    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_count)) __obj.updateDynamic("total_count")(total_count.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTypesResponse]
   }
 }

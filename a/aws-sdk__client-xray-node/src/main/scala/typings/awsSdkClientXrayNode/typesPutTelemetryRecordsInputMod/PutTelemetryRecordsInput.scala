@@ -51,7 +51,7 @@ object PutTelemetryRecordsInput {
     TelemetryRecords: js.Array[TelemetryRecord] | Iterable[TelemetryRecord],
     $abortSignal: AbortSignal = null,
     $httpOptions: NodeHttpOptions = null,
-    $maxRetries: Int | Double = null,
+    $maxRetries: js.UndefOr[Double] = js.undefined,
     EC2InstanceId: String = null,
     Hostname: String = null,
     ResourceARN: String = null
@@ -59,7 +59,7 @@ object PutTelemetryRecordsInput {
     val __obj = js.Dynamic.literal(TelemetryRecords = TelemetryRecords.asInstanceOf[js.Any])
     if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
     if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
     if (EC2InstanceId != null) __obj.updateDynamic("EC2InstanceId")(EC2InstanceId.asInstanceOf[js.Any])
     if (Hostname != null) __obj.updateDynamic("Hostname")(Hostname.asInstanceOf[js.Any])
     if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN.asInstanceOf[js.Any])

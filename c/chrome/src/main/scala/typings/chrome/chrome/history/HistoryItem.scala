@@ -23,18 +23,18 @@ object HistoryItem {
   @scala.inline
   def apply(
     id: String,
-    lastVisitTime: Int | Double = null,
+    lastVisitTime: js.UndefOr[Double] = js.undefined,
     title: String = null,
-    typedCount: Int | Double = null,
+    typedCount: js.UndefOr[Double] = js.undefined,
     url: String = null,
-    visitCount: Int | Double = null
+    visitCount: js.UndefOr[Double] = js.undefined
   ): HistoryItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (lastVisitTime != null) __obj.updateDynamic("lastVisitTime")(lastVisitTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastVisitTime)) __obj.updateDynamic("lastVisitTime")(lastVisitTime.get.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (typedCount != null) __obj.updateDynamic("typedCount")(typedCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(typedCount)) __obj.updateDynamic("typedCount")(typedCount.get.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (visitCount != null) __obj.updateDynamic("visitCount")(visitCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(visitCount)) __obj.updateDynamic("visitCount")(visitCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryItem]
   }
 }

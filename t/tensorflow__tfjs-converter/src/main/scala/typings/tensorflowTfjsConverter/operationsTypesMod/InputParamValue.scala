@@ -13,14 +13,14 @@ object InputParamValue {
   @scala.inline
   def apply(
     `type`: ParamType,
-    inputIndexEnd: Int | Double = null,
-    inputIndexStart: Int | Double = null,
+    inputIndexEnd: js.UndefOr[Double] = js.undefined,
+    inputIndexStart: js.UndefOr[Double] = js.undefined,
     value: ValueType = null
   ): InputParamValue = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (inputIndexEnd != null) __obj.updateDynamic("inputIndexEnd")(inputIndexEnd.asInstanceOf[js.Any])
-    if (inputIndexStart != null) __obj.updateDynamic("inputIndexStart")(inputIndexStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputIndexEnd)) __obj.updateDynamic("inputIndexEnd")(inputIndexEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputIndexStart)) __obj.updateDynamic("inputIndexStart")(inputIndexStart.get.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputParamValue]
   }

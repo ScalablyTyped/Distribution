@@ -33,7 +33,7 @@ object Qualification {
   @scala.inline
   def apply(
     GrantTime: Timestamp = null,
-    IntegerValue: Int | Double = null,
+    IntegerValue: js.UndefOr[Integer] = js.undefined,
     LocaleValue: Locale = null,
     QualificationTypeId: EntityId = null,
     Status: QualificationStatus = null,
@@ -41,7 +41,7 @@ object Qualification {
   ): Qualification = {
     val __obj = js.Dynamic.literal()
     if (GrantTime != null) __obj.updateDynamic("GrantTime")(GrantTime.asInstanceOf[js.Any])
-    if (IntegerValue != null) __obj.updateDynamic("IntegerValue")(IntegerValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(IntegerValue)) __obj.updateDynamic("IntegerValue")(IntegerValue.get.asInstanceOf[js.Any])
     if (LocaleValue != null) __obj.updateDynamic("LocaleValue")(LocaleValue.asInstanceOf[js.Any])
     if (QualificationTypeId != null) __obj.updateDynamic("QualificationTypeId")(QualificationTypeId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

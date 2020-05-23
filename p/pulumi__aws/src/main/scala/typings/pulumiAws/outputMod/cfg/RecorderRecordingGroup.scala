@@ -33,8 +33,8 @@ object RecorderRecordingGroup {
     resourceTypes: js.Array[String] = null
   ): RecorderRecordingGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allSupported)) __obj.updateDynamic("allSupported")(allSupported.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeGlobalResourceTypes)) __obj.updateDynamic("includeGlobalResourceTypes")(includeGlobalResourceTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(allSupported)) __obj.updateDynamic("allSupported")(allSupported.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeGlobalResourceTypes)) __obj.updateDynamic("includeGlobalResourceTypes")(includeGlobalResourceTypes.get.asInstanceOf[js.Any])
     if (resourceTypes != null) __obj.updateDynamic("resourceTypes")(resourceTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecorderRecordingGroup]
   }

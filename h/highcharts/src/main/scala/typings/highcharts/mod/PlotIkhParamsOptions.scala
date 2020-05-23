@@ -30,16 +30,16 @@ trait PlotIkhParamsOptions extends js.Object {
 object PlotIkhParamsOptions {
   @scala.inline
   def apply(
-    index: Int | Double = null,
-    period: Int | Double = null,
-    periodSenkouSpanB: Int | Double = null,
-    periodTenkan: Int | Double = null
+    index: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    periodSenkouSpanB: js.UndefOr[Double] = js.undefined,
+    periodTenkan: js.UndefOr[Double] = js.undefined
   ): PlotIkhParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (periodSenkouSpanB != null) __obj.updateDynamic("periodSenkouSpanB")(periodSenkouSpanB.asInstanceOf[js.Any])
-    if (periodTenkan != null) __obj.updateDynamic("periodTenkan")(periodTenkan.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(periodSenkouSpanB)) __obj.updateDynamic("periodSenkouSpanB")(periodSenkouSpanB.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(periodTenkan)) __obj.updateDynamic("periodTenkan")(periodTenkan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotIkhParamsOptions]
   }
 }

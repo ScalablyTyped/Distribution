@@ -1,6 +1,6 @@
 package typings.ionicReact.ionTabsMod
 
-import typings.ionicCore.AnonTab
+import typings.ionicCore.anon.Tab
 import typings.react.mod.ReactNode
 import typings.std.CustomEvent
 import scala.scalajs.js
@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 trait Props
   extends typings.ionicCore.componentsMod.LocalJSX.IonTabs {
-  var children: ReactNode
+  var children: ChildFunction | ReactNode
 }
 
 object Props {
   @scala.inline
   def apply(
-    children: ReactNode = null,
-    onIonTabsDidChange: /* event */ CustomEvent[AnonTab] => Unit = null,
-    onIonTabsWillChange: /* event */ CustomEvent[AnonTab] => Unit = null
+    children: ChildFunction | ReactNode = null,
+    onIonTabsDidChange: /* event */ CustomEvent[Tab] => Unit = null,
+    onIonTabsWillChange: /* event */ CustomEvent[Tab] => Unit = null
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

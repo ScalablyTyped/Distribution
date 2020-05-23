@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /** module Or Internal Object */
 /**
-	* @brief 断言测试模块，如果测试值为假，则报错，报错行为可设定继续运行或者错误抛出
-	* @detail 引用方法：,```JavaScript,var assert = require('assert');,```,或者通过 test 模块引用：,```JavaScript,var test = require('test');,var assert = test.assert;,```,或者通过 test.setup 配置：,```JavaScript,require("test").setup();,```
-	*/
+  * @brief 断言测试模块，如果测试值为假，则报错，报错行为可设定继续运行或者错误抛出
+  * @detail 引用方法：,```JavaScript,var assert = require('assert');,```,或者通过 test 模块引用：,```JavaScript,var test = require('test');,var assert = test.assert;,```,或者通过 test.setup 配置：,```JavaScript,require("test").setup();,```
+  */
 @JSImport("assert", JSImport.Namespace)
 @js.native
 object mod extends js.Object {

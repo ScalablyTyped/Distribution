@@ -1,13 +1,13 @@
 package typings.wegameApi.wx.types
 
-import typings.wegameApi.AnonErrMsg
+import typings.wegameApi.anon.ErrMsg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UnlinkParams extends js.Object {
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var fail: js.UndefOr[js.Function1[/* res */ AnonErrMsg, Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
   var filePath: String
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -17,7 +17,7 @@ object UnlinkParams {
   def apply(
     filePath: String,
     complete: () => Unit = null,
-    fail: /* res */ AnonErrMsg => Unit = null,
+    fail: /* res */ ErrMsg => Unit = null,
     success: () => Unit = null
   ): UnlinkParams = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])

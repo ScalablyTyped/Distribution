@@ -3,7 +3,7 @@ package typings.koaJoiRouter.mod
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
-import typings.koaJoiRouter.FnCall
+import typings.koaJoiRouter.anon.FnCall
 import typings.koaRouter.mod.IMiddleware
 import typings.koaRouter.mod.IParamMiddleware
 import typings.std.RegExp
@@ -24,7 +24,7 @@ trait Router extends js.Object {
   @JSName("param")
   var param_Original: js.Function2[
     /* param */ String, 
-    /* middleware */ IParamMiddleware, 
+    /* middleware */ IParamMiddleware[_, js.Object], 
     typings.koaRouter.mod.Router[_, js.Object]
   ] = js.native
   @JSName("patch")
@@ -55,7 +55,7 @@ trait Router extends js.Object {
   def options(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def options(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
   def options(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-  def param(param: String, middleware: IParamMiddleware): typings.koaRouter.mod.Router[_, js.Object] = js.native
+  def param(param: String, middleware: IParamMiddleware[_, js.Object]): typings.koaRouter.mod.Router[_, js.Object] = js.native
   def patch(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
   def patch(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def patch(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native

@@ -13,11 +13,15 @@ trait TransitionAnimation extends js.Object {
 
 object TransitionAnimation {
   @scala.inline
-  def apply(duration: Int | Double = null, easing: String = null, startup: js.UndefOr[Boolean] = js.undefined): TransitionAnimation = {
+  def apply(
+    duration: js.UndefOr[Double] = js.undefined,
+    easing: String = null,
+    startup: js.UndefOr[Boolean] = js.undefined
+  ): TransitionAnimation = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(startup)) __obj.updateDynamic("startup")(startup.asInstanceOf[js.Any])
+    if (!js.isUndefined(startup)) __obj.updateDynamic("startup")(startup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionAnimation]
   }
 }

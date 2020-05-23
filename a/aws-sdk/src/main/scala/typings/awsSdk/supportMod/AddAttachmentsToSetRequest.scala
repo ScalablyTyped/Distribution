@@ -11,7 +11,7 @@ trait AddAttachmentsToSetRequest extends js.Object {
     */
   var attachmentSetId: js.UndefOr[AttachmentSetId] = js.native
   /**
-    * One or more attachments to add to the set. The limit is 3 attachments per set, and the size limit is 5 MB per attachment.
+    * One or more attachments to add to the set. You can add up to three attachments per set. The size limit is 5 MB per attachment. In the Attachment object, use the data parameter to specify the contents of the attachment file. In the previous request syntax, the value for data appear as blob, which is represented as a base64-encoded string. The value for fileName is the name of the attachment, such as troubleshoot-screenshot.png.
     */
   var attachments: Attachments = js.native
 }

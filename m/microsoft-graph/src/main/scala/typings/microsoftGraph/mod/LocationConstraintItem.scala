@@ -33,7 +33,7 @@ object LocationConstraintItem {
     if (locationEmailAddress != null) __obj.updateDynamic("locationEmailAddress")(locationEmailAddress.asInstanceOf[js.Any])
     if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
     if (locationUri != null) __obj.updateDynamic("locationUri")(locationUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolveAvailability)) __obj.updateDynamic("resolveAvailability")(resolveAvailability.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveAvailability)) __obj.updateDynamic("resolveAvailability")(resolveAvailability.get.asInstanceOf[js.Any])
     if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId.asInstanceOf[js.Any])
     if (uniqueIdType != null) __obj.updateDynamic("uniqueIdType")(uniqueIdType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationConstraintItem]

@@ -5,20 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * Fired every time the stepper value changes.
-			 */
+  * Fired every time the stepper value changes.
+  */
 trait StepperChangeEvent extends StepperBaseEvent {
   /**
-  				 * The maximum value of the stepper.
-  				 */
+    * The maximum value of the stepper.
+    */
   var maximum: Double
   /**
-  				 * The minimum value of the stepper.
-  				 */
+    * The minimum value of the stepper.
+    */
   var minimum: Double
   /**
-  				 * The current value of the stepper.
-  				 */
+    * The current value of the stepper.
+    */
   var value: Double
 }
 

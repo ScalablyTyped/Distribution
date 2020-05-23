@@ -11,10 +11,10 @@ trait IterateOptions extends js.Object {
 
 object IterateOptions {
   @scala.inline
-  def apply(gcollections: Int | Double = null, iterations: Int | Double = null): IterateOptions = {
+  def apply(gcollections: js.UndefOr[Double] = js.undefined, iterations: js.UndefOr[Double] = js.undefined): IterateOptions = {
     val __obj = js.Dynamic.literal()
-    if (gcollections != null) __obj.updateDynamic("gcollections")(gcollections.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(gcollections)) __obj.updateDynamic("gcollections")(gcollections.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterateOptions]
   }
 }

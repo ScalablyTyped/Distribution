@@ -90,7 +90,7 @@ trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMe
 
 object IFuture {
   @scala.inline
-  def apply[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */](
+  def apply[REQUEST, REPLY](
     dispose: () => Unit,
     done: js.Promise[REPLY],
     isDisposed: Boolean,

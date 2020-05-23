@@ -543,6 +543,9 @@ object plotlyJsStrings {
   sealed trait gaugePlussignnumberPlussigndelta extends js.Object
   
   @js.native
+  sealed trait geojson extends js.Object
+  
+  @js.native
   sealed trait gregorian extends Calendar
   
   @js.native
@@ -727,6 +730,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait line extends js.Object
+  
+  @js.native
+  sealed trait `line-center` extends js.Object
   
   @js.native
   sealed trait linear extends AxisType
@@ -1062,6 +1068,9 @@ object plotlyJsStrings {
   sealed trait png extends js.Object
   
   @js.native
+  sealed trait point extends js.Object
+  
+  @js.native
   sealed trait pointcloud extends PlotType
   
   @js.native
@@ -1110,6 +1119,9 @@ object plotlyJsStrings {
   sealed trait range extends js.Object
   
   @js.native
+  sealed trait raster extends js.Object
+  
+  @js.native
   sealed trait rect extends js.Object
   
   @js.native
@@ -1117,6 +1129,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait relayout extends js.Object
+  
+  @js.native
+  sealed trait remainder extends js.Object
   
   @js.native
   sealed trait reset extends js.Object
@@ -1186,6 +1201,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait scattergl extends PlotType
+  
+  @js.native
+  sealed trait scattermapbox extends PlotType
   
   @js.native
   sealed trait scatterpolar extends PlotType
@@ -1413,6 +1431,9 @@ object plotlyJsStrings {
   sealed trait toself extends js.Object
   
   @js.native
+  sealed trait total extends js.Object
+  
+  @js.native
   sealed trait `total ascending` extends js.Object
   
   @js.native
@@ -1479,6 +1500,9 @@ object plotlyJsStrings {
   sealed trait `var` extends js.Object
   
   @js.native
+  sealed trait vecotr extends js.Object
+  
+  @js.native
   sealed trait vertical extends js.Object
   
   @js.native
@@ -1504,6 +1528,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait x extends AxisName
+  
+  @js.native
+  sealed trait `x unified` extends js.Object
   
   @js.native
   sealed trait x2 extends AxisName
@@ -1555,6 +1582,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait y extends AxisName
+  
+  @js.native
+  sealed trait `y unified` extends js.Object
   
   @js.native
   sealed trait y2 extends AxisName
@@ -2019,6 +2049,8 @@ object plotlyJsStrings {
   @scala.inline
   def gaugePlussignnumberPlussigndelta: gaugePlussignnumberPlussigndelta = "gauge+number+delta".asInstanceOf[gaugePlussignnumberPlussigndelta]
   @scala.inline
+  def geojson: geojson = "geojson".asInstanceOf[geojson]
+  @scala.inline
   def gregorian: gregorian = "gregorian".asInstanceOf[gregorian]
   @scala.inline
   def group: group = "group".asInstanceOf[group]
@@ -2142,6 +2174,8 @@ object plotlyJsStrings {
   def li: li = "li".asInstanceOf[li]
   @scala.inline
   def line: line = "line".asInstanceOf[line]
+  @scala.inline
+  def `line-center`: `line-center` = "line-center".asInstanceOf[`line-center`]
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
@@ -2365,6 +2399,8 @@ object plotlyJsStrings {
   @scala.inline
   def png: png = "png".asInstanceOf[png]
   @scala.inline
+  def point: point = "point".asInstanceOf[point]
+  @scala.inline
   def pointcloud: pointcloud = "pointcloud".asInstanceOf[pointcloud]
   @scala.inline
   def points: points = "points".asInstanceOf[points]
@@ -2397,11 +2433,15 @@ object plotlyJsStrings {
   @scala.inline
   def range: range = "range".asInstanceOf[range]
   @scala.inline
+  def raster: raster = "raster".asInstanceOf[raster]
+  @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
   def relayout: relayout = "relayout".asInstanceOf[relayout]
+  @scala.inline
+  def remainder: remainder = "remainder".asInstanceOf[remainder]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
@@ -2448,6 +2488,8 @@ object plotlyJsStrings {
   def scattergeo: scattergeo = "scattergeo".asInstanceOf[scattergeo]
   @scala.inline
   def scattergl: scattergl = "scattergl".asInstanceOf[scattergl]
+  @scala.inline
+  def scattermapbox: scattermapbox = "scattermapbox".asInstanceOf[scattermapbox]
   @scala.inline
   def scatterpolar: scatterpolar = "scatterpolar".asInstanceOf[scatterpolar]
   @scala.inline
@@ -2599,6 +2641,8 @@ object plotlyJsStrings {
   @scala.inline
   def toself: toself = "toself".asInstanceOf[toself]
   @scala.inline
+  def total: total = "total".asInstanceOf[total]
+  @scala.inline
   def `total ascending`: `total ascending` = ("total ascending").asInstanceOf[`total ascending`]
   @scala.inline
   def `total descending`: `total descending` = ("total descending").asInstanceOf[`total descending`]
@@ -2643,6 +2687,8 @@ object plotlyJsStrings {
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
+  def vecotr: vecotr = "vecotr".asInstanceOf[vecotr]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
   def vh: vh = "vh".asInstanceOf[vh]
@@ -2660,6 +2706,8 @@ object plotlyJsStrings {
   def webp: webp = "webp".asInstanceOf[webp]
   @scala.inline
   def x: x = "x".asInstanceOf[x]
+  @scala.inline
+  def `x unified`: `x unified` = ("x unified").asInstanceOf[`x unified`]
   @scala.inline
   def x2: x2 = "x2".asInstanceOf[x2]
   @scala.inline
@@ -2694,6 +2742,8 @@ object plotlyJsStrings {
   def xPlussignyPlussignzPlussigntext: xPlussignyPlussignzPlussigntext = "x+y+z+text".asInstanceOf[xPlussignyPlussignzPlussigntext]
   @scala.inline
   def y: y = "y".asInstanceOf[y]
+  @scala.inline
+  def `y unified`: `y unified` = ("y unified").asInstanceOf[`y unified`]
   @scala.inline
   def y2: y2 = "y2".asInstanceOf[y2]
   @scala.inline

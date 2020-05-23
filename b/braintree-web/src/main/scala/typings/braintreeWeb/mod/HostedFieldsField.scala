@@ -1,6 +1,6 @@
 package typings.braintreeWeb.mod
 
-import typings.braintreeWeb.AnonOptions
+import typings.braintreeWeb.anon.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait HostedFieldsField extends js.Object {
   var placeholder: js.UndefOr[String] = js.undefined
   var prefill: js.UndefOr[String] = js.undefined
   var rejectUnsupportedCards: js.UndefOr[Boolean] = js.undefined
-  var select: js.UndefOr[Boolean | AnonOptions] = js.undefined
+  var select: js.UndefOr[Boolean | Options] = js.undefined
   var selector: String
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -36,24 +36,24 @@ object HostedFieldsField {
     selector: String,
     formatInput: js.UndefOr[Boolean] = js.undefined,
     maskInput: Boolean | HostedFieldsFieldMaskInput = null,
-    maxCardLength: Int | Double = null,
-    maxlength: Int | Double = null,
-    minlength: Int | Double = null,
+    maxCardLength: js.UndefOr[Double] = js.undefined,
+    maxlength: js.UndefOr[Double] = js.undefined,
+    minlength: js.UndefOr[Double] = js.undefined,
     placeholder: String = null,
     prefill: String = null,
     rejectUnsupportedCards: js.UndefOr[Boolean] = js.undefined,
-    select: Boolean | AnonOptions = null,
+    select: Boolean | Options = null,
     `type`: String = null
   ): HostedFieldsField = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(formatInput)) __obj.updateDynamic("formatInput")(formatInput.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatInput)) __obj.updateDynamic("formatInput")(formatInput.get.asInstanceOf[js.Any])
     if (maskInput != null) __obj.updateDynamic("maskInput")(maskInput.asInstanceOf[js.Any])
-    if (maxCardLength != null) __obj.updateDynamic("maxCardLength")(maxCardLength.asInstanceOf[js.Any])
-    if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
-    if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCardLength)) __obj.updateDynamic("maxCardLength")(maxCardLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxlength)) __obj.updateDynamic("maxlength")(maxlength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minlength)) __obj.updateDynamic("minlength")(minlength.get.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefill != null) __obj.updateDynamic("prefill")(prefill.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnsupportedCards)) __obj.updateDynamic("rejectUnsupportedCards")(rejectUnsupportedCards.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnsupportedCards)) __obj.updateDynamic("rejectUnsupportedCards")(rejectUnsupportedCards.get.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedFieldsField]

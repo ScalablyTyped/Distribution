@@ -14,8 +14,8 @@ trait IColorPalette extends IComponent {
   /** [Property] (String[]) */
   var colors: js.UndefOr[Array] = js.undefined
   /** [Method] Get the currently selected color value
-  		* @returns String value The selected value. Null if nothing is selected.
-  		*/
+    * @returns String value The selected value. Null if nothing is selected.
+    */
   var getValue: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   /** [Config Option] (Function) */
   var handler: js.UndefOr[js.Any] = js.undefined
@@ -27,9 +27,9 @@ trait IColorPalette extends IComponent {
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Selects the specified color in the picker fires the select event
-  		* @param color String A valid 6-digit color hex code (# will be stripped if included)
-  		* @param suppressEvent Boolean True to stop the select event from firing.
-  		*/
+    * @param color String A valid 6-digit color hex code (# will be stripped if included)
+    * @param suppressEvent Boolean True to stop the select event from firing.
+    */
   var select: js.UndefOr[
     js.Function2[
       /* color */ js.UndefOr[java.lang.String], 
@@ -62,7 +62,7 @@ object IColorPalette {
   ): IColorPalette = {
     val __obj = js.Dynamic.literal()
     if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(allowReselect)) __obj.updateDynamic("allowReselect")(allowReselect.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowReselect)) __obj.updateDynamic("allowReselect")(allowReselect.get.asInstanceOf[js.Any])
     if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
     if (clickEvent != null) __obj.updateDynamic("clickEvent")(clickEvent.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])

@@ -12,9 +12,9 @@ trait IDetailsListNavigatingFocusExampleState extends js.Object {
 
 object IDetailsListNavigatingFocusExampleState {
   @scala.inline
-  def apply(items: js.Array[String], key: Double, initialFocusedIndex: Int | Double = null): IDetailsListNavigatingFocusExampleState = {
+  def apply(items: js.Array[String], key: Double, initialFocusedIndex: js.UndefOr[Double] = js.undefined): IDetailsListNavigatingFocusExampleState = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    if (initialFocusedIndex != null) __obj.updateDynamic("initialFocusedIndex")(initialFocusedIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialFocusedIndex)) __obj.updateDynamic("initialFocusedIndex")(initialFocusedIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsListNavigatingFocusExampleState]
   }
 }

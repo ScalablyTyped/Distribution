@@ -22,11 +22,11 @@ trait RxNormConcept extends js.Object {
 
 object RxNormConcept {
   @scala.inline
-  def apply(Code: String = null, Description: String = null, Score: Int | Double = null): RxNormConcept = {
+  def apply(Code: String = null, Description: String = null, Score: js.UndefOr[Float] = js.undefined): RxNormConcept = {
     val __obj = js.Dynamic.literal()
     if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Score != null) __obj.updateDynamic("Score")(Score.asInstanceOf[js.Any])
+    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RxNormConcept]
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,29 +38,6 @@ object EmailMailboxCreateFolderStatus extends js.Object {
   /** Folder creation failed for an unknown reason. */
   @js.native
   sealed trait unknownFailure extends EmailMailboxCreateFolderStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMailboxCreateFolderStatus with Double] = js.native
-  /* 5 */ @js.native
-  object nameCollision extends TopLevel[nameCollision with Double]
-  
-  /* 1 */ @js.native
-  object networkError extends TopLevel[networkError with Double]
-  
-  /* 2 */ @js.native
-  object permissionsError extends TopLevel[permissionsError with Double]
-  
-  /* 3 */ @js.native
-  object serverError extends TopLevel[serverError with Double]
-  
-  /* 6 */ @js.native
-  object serverRejected extends TopLevel[serverRejected with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 4 */ @js.native
-  object unknownFailure extends TopLevel[unknownFailure with Double]
   
 }
 

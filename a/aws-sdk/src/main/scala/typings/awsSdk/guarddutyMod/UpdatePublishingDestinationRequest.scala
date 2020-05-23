@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdatePublishingDestinationRequest extends js.Object {
   /**
-    * The ID of the detector associated with the publishing destinations to update.
+    * The ID of the publishing destination to update.
     */
   var DestinationId: String = js.native
   /**
@@ -15,7 +15,7 @@ trait UpdatePublishingDestinationRequest extends js.Object {
     */
   var DestinationProperties: js.UndefOr[typings.awsSdk.guarddutyMod.DestinationProperties] = js.native
   /**
-    * The ID of the 
+    * The ID of the detector associated with the publishing destinations to update.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
 }

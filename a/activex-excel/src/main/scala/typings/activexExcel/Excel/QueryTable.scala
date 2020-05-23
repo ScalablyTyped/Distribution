@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.QueryTable")
 @js.native
-class QueryTable protected () extends js.Object {
+trait QueryTable extends js.Object {
   var AdjustColumnWidth: Boolean = js.native
   val Application: typings.activexExcel.Excel.Application = js.native
   var BackgroundQuery: Boolean = js.native

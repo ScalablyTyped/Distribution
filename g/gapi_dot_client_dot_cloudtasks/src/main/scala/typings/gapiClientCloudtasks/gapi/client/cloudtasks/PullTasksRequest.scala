@@ -77,13 +77,13 @@ object PullTasksRequest {
   def apply(
     filter: String = null,
     leaseDuration: String = null,
-    maxTasks: Int | Double = null,
+    maxTasks: js.UndefOr[Double] = js.undefined,
     responseView: String = null
   ): PullTasksRequest = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (leaseDuration != null) __obj.updateDynamic("leaseDuration")(leaseDuration.asInstanceOf[js.Any])
-    if (maxTasks != null) __obj.updateDynamic("maxTasks")(maxTasks.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTasks)) __obj.updateDynamic("maxTasks")(maxTasks.get.asInstanceOf[js.Any])
     if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullTasksRequest]
   }

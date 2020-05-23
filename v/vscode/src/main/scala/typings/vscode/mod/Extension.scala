@@ -7,39 +7,44 @@ import scala.scalajs.js.annotation._
 
 trait Extension[T] extends js.Object {
   /**
-  		 * The public API exported by this extension. It is an invalid action
-  		 * to access this field before this extension has been activated.
-  		 */
+    * The public API exported by this extension. It is an invalid action
+    * to access this field before this extension has been activated.
+    */
   val exports: T
   /**
-  		 * The extension kind describes if an extension runs where the UI runs
-  		 * or if an extension runs where the remote extension host runs. The extension kind
-  		 * is defined in the `package.json`-file of extensions but can also be refined
-  		 * via the `remote.extensionKind`-setting. When no remote extension host exists,
-  		 * the value is [`ExtensionKind.UI`](#ExtensionKind.UI).
-  		 */
+    * The extension kind describes if an extension runs where the UI runs
+    * or if an extension runs where the remote extension host runs. The extension kind
+    * is defined in the `package.json`-file of extensions but can also be refined
+    * via the `remote.extensionKind`-setting. When no remote extension host exists,
+    * the value is [`ExtensionKind.UI`](#ExtensionKind.UI).
+    */
   var extensionKind: ExtensionKind
   /**
-  		 * The absolute file path of the directory containing this extension.
-  		 */
+    * The absolute file path of the directory containing this extension. Shorthand
+    * notation for [Extension.extensionUri.fsPath](#Extension.extensionUri) (independent of the uri scheme).
+    */
   val extensionPath: String
   /**
-  		 * The canonical extension identifier in the form of: `publisher.name`.
-  		 */
+    * The uri of the directory containing the extension.
+    */
+  val extensionUri: Uri
+  /**
+    * The canonical extension identifier in the form of: `publisher.name`.
+    */
   val id: String
   /**
-  		 * `true` if the extension has been activated.
-  		 */
+    * `true` if the extension has been activated.
+    */
   val isActive: Boolean
   /**
-  		 * The parsed contents of the extension's package.json.
-  		 */
+    * The parsed contents of the extension's package.json.
+    */
   val packageJSON: js.Any
   /**
-  		 * Activates this extension and returns its public API.
-  		 *
-  		 * @return A promise that will resolve when this extension has been activated.
-  		 */
+    * Activates this extension and returns its public API.
+    *
+    * @return A promise that will resolve when this extension has been activated.
+    */
   def activate(): Thenable[T]
 }
 
@@ -50,11 +55,12 @@ object Extension {
     exports: T,
     extensionKind: ExtensionKind,
     extensionPath: String,
+    extensionUri: Uri,
     id: String,
     isActive: Boolean,
     packageJSON: js.Any
   ): Extension[T] = {
-    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), exports = exports.asInstanceOf[js.Any], extensionKind = extensionKind.asInstanceOf[js.Any], extensionPath = extensionPath.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], packageJSON = packageJSON.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), exports = exports.asInstanceOf[js.Any], extensionKind = extensionKind.asInstanceOf[js.Any], extensionPath = extensionPath.asInstanceOf[js.Any], extensionUri = extensionUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], packageJSON = packageJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension[T]]
   }
 }

@@ -38,9 +38,9 @@ object BookmarkCreationOptions {
     takeScreenshot: js.UndefOr[Boolean] = js.undefined
   ): BookmarkCreationOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(captureExtent)) __obj.updateDynamic("captureExtent")(captureExtent.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureExtent)) __obj.updateDynamic("captureExtent")(captureExtent.get.asInstanceOf[js.Any])
     if (screenshotSettings != null) __obj.updateDynamic("screenshotSettings")(screenshotSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(takeScreenshot)) __obj.updateDynamic("takeScreenshot")(takeScreenshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(takeScreenshot)) __obj.updateDynamic("takeScreenshot")(takeScreenshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookmarkCreationOptions]
   }
 }

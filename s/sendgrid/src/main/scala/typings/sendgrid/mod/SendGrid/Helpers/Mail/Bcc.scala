@@ -1,6 +1,5 @@
 package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
-import typings.sendgrid.AnonEmail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ trait Bcc extends js.Object {
   def getEnable(): Boolean
   def setEmail(value: Email): Unit
   def setEnable(enabled: Boolean): Unit
-  def toJSON(): AnonEmail
+  def toJSON(): typings.sendgrid.anon.Email
 }
 
 object Bcc {
@@ -20,7 +19,7 @@ object Bcc {
     getEnable: () => Boolean,
     setEmail: Email => Unit,
     setEnable: Boolean => Unit,
-    toJSON: () => AnonEmail
+    toJSON: () => typings.sendgrid.anon.Email
   ): Bcc = {
     val __obj = js.Dynamic.literal(getEmail = js.Any.fromFunction0(getEmail), getEnable = js.Any.fromFunction0(getEnable), setEmail = js.Any.fromFunction1(setEmail), setEnable = js.Any.fromFunction1(setEnable), toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[Bcc]

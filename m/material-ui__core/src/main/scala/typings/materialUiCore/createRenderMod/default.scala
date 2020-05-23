@@ -1,7 +1,7 @@
 package typings.materialUiCore.createRenderMod
 
-import typings.materialUiCore.Fn0
-import typings.materialUiCore.PartialRenderOptions
+import typings.materialUiCore.anon.Fn0
+import typings.materialUiCore.anon.PartialRenderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

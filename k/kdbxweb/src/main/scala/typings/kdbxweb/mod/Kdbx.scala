@@ -2,7 +2,7 @@ package typings.kdbxweb.mod
 
 import typings.std.ArrayBuffer
 import typings.std.Date
-import typings.std.Document_
+import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Kdbx () extends js.Object {
   var groups: js.Array[Group] = js.native
   var header: Header = js.native
   var meta: Meta = js.native
-  var xml: Document_ = js.native
+  var xml: Document = js.native
   def addDeletedObject(uuid: KdbxUuid, dt: Date): Unit = js.native
   def cleanup(settings: Settings): Unit = js.native
   def createBinary(value: ProtectedValue): js.Promise[ProtectedValue | ArrayBuffer] = js.native

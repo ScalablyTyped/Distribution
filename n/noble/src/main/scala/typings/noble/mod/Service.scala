@@ -36,5 +36,16 @@ class Service () extends EventEmitter {
     event: includedServicesDiscover,
     listener: js.Function1[/* includedServiceUuids */ js.Array[String], Unit]
   ): this.type = js.native
+  def once(event: String, listener: js.Function): this.type = js.native
+  @JSName("once")
+  def once_characteristicsDiscover(
+    event: characteristicsDiscover,
+    listener: js.Function1[/* characteristics */ js.Array[Characteristic], Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_includedServicesDiscover(
+    event: includedServicesDiscover,
+    listener: js.Function1[/* includedServiceUuids */ js.Array[String], Unit]
+  ): this.type = js.native
 }
 

@@ -17,26 +17,26 @@ trait RestifyHttpErrorOptions extends Options {
 object RestifyHttpErrorOptions {
   @scala.inline
   def apply(
-    cause: Error = null,
+    cause: js.UndefOr[Null | Error] = js.undefined,
     code: String = null,
     constructorOpt: /* repeated */ js.Any => Unit = null,
     context: js.Any = null,
     info: Info = null,
     message: String = null,
     name: String = null,
-    statusCode: Int | Double = null,
+    statusCode: js.UndefOr[Double] = js.undefined,
     strict: js.UndefOr[Boolean] = js.undefined
   ): RestifyHttpErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (!js.isUndefined(cause)) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (constructorOpt != null) __obj.updateDynamic("constructorOpt")(js.Any.fromFunction1(constructorOpt))
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestifyHttpErrorOptions]
   }
 }

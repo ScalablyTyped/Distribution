@@ -10,12 +10,12 @@ class SemanticTokensLegend protected () extends js.Object {
   def this(tokenTypes: js.Array[String]) = this()
   def this(tokenTypes: js.Array[String], tokenModifiers: js.Array[String]) = this()
   /**
-  		 * The possible token modifiers.
-  		 */
+    * The possible token modifiers.
+    */
   val tokenModifiers: js.Array[String] = js.native
   /**
-  		 * The possible token types.
-  		 */
+    * The possible token types.
+    */
   val tokenTypes: js.Array[String] = js.native
 }
 

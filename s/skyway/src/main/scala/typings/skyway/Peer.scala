@@ -11,11 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Peer")
 @js.native
-class Peer protected () extends js.Object {
-  def this(options: Options) = this()
-  def this(id: String, options: Options) = this()
+trait Peer extends js.Object {
   var connections: js.Any = js.native
   var id: String = js.native
   var open: Boolean = js.native

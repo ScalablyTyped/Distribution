@@ -22,9 +22,13 @@ trait ListTunnelsRequest extends js.Object {
 
 object ListTunnelsRequest {
   @scala.inline
-  def apply(maxResults: Int | Double = null, nextToken: NextToken = null, thingName: ThingName = null): ListTunnelsRequest = {
+  def apply(
+    maxResults: js.UndefOr[MaxResults] = js.undefined,
+    nextToken: NextToken = null,
+    thingName: ThingName = null
+  ): ListTunnelsRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTunnelsRequest]

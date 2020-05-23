@@ -22,23 +22,23 @@ object InfoWindowOptions {
     enableAutoPan: js.UndefOr[Boolean] = js.undefined,
     enableCloseOnClick: js.UndefOr[Boolean] = js.undefined,
     enableMessage: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    maxWidth: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    maxWidth: js.UndefOr[Double] = js.undefined,
     message: String = null,
     offset: Size = null,
     title: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): InfoWindowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableAutoPan)) __obj.updateDynamic("enableAutoPan")(enableAutoPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCloseOnClick)) __obj.updateDynamic("enableCloseOnClick")(enableCloseOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMessage)) __obj.updateDynamic("enableMessage")(enableMessage.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoPan)) __obj.updateDynamic("enableAutoPan")(enableAutoPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCloseOnClick)) __obj.updateDynamic("enableCloseOnClick")(enableCloseOnClick.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMessage)) __obj.updateDynamic("enableMessage")(enableMessage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoWindowOptions]
   }
 }

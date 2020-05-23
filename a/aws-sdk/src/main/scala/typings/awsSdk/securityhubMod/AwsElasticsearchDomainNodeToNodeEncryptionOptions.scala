@@ -14,9 +14,9 @@ trait AwsElasticsearchDomainNodeToNodeEncryptionOptions extends js.Object {
 
 object AwsElasticsearchDomainNodeToNodeEncryptionOptions {
   @scala.inline
-  def apply(Enabled: js.UndefOr[scala.Boolean] = js.undefined): AwsElasticsearchDomainNodeToNodeEncryptionOptions = {
+  def apply(Enabled: js.UndefOr[Boolean] = js.undefined): AwsElasticsearchDomainNodeToNodeEncryptionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsElasticsearchDomainNodeToNodeEncryptionOptions]
   }
 }

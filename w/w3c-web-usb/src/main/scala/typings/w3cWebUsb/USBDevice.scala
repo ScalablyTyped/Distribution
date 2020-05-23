@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("USBDevice")
 @js.native
-class USBDevice () extends js.Object {
+trait USBDevice extends js.Object {
   val configuration: js.UndefOr[USBConfiguration] = js.native
   val configurations: js.Array[USBConfiguration] = js.native
   val deviceClass: Double = js.native

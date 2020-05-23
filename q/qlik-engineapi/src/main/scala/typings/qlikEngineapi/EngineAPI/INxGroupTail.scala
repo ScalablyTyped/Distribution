@@ -24,10 +24,10 @@ trait INxGroupTail extends js.Object {
 
 object INxGroupTail {
   @scala.inline
-  def apply(qDown: Int | Double = null, qUp: Int | Double = null): INxGroupTail = {
+  def apply(qDown: js.UndefOr[Double] = js.undefined, qUp: js.UndefOr[Double] = js.undefined): INxGroupTail = {
     val __obj = js.Dynamic.literal()
-    if (qDown != null) __obj.updateDynamic("qDown")(qDown.asInstanceOf[js.Any])
-    if (qUp != null) __obj.updateDynamic("qUp")(qUp.asInstanceOf[js.Any])
+    if (!js.isUndefined(qDown)) __obj.updateDynamic("qDown")(qDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(qUp)) __obj.updateDynamic("qUp")(qUp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxGroupTail]
   }
 }

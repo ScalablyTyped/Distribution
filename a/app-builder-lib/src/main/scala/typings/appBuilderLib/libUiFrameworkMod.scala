@@ -1,6 +1,5 @@
 package typings.appBuilderLib
 
-import typings.appBuilderLib.appBuilderLibBooleans.`false`
 import typings.appBuilderLib.configurationMod.AfterPackContext
 import typings.appBuilderLib.coreMod.Platform
 import typings.appBuilderLib.frameworkMod.Framework
@@ -21,12 +20,8 @@ object libUiFrameworkMod extends js.Object {
     override val distMacOsAppName: String = js.native
     /* CompleteClass */
     override val isCopyElevateHelper: Boolean = js.native
-    @JSName("isCopyElevateHelper")
-    val isCopyElevateHelper_LibUiFramework: `false` = js.native
     /* CompleteClass */
     override val isNpmRebuildRequired: Boolean = js.native
-    @JSName("isNpmRebuildRequired")
-    val isNpmRebuildRequired_LibUiFramework: `false` = js.native
     val isUseLaunchUi: Boolean = js.native
     var isUseLaunchUiForPlatform: js.Any = js.native
     /* CompleteClass */

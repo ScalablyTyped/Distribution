@@ -85,8 +85,8 @@ object ValueSetExpansionParameter {
     modifierExtension: js.Array[Extension] = null,
     valueBoolean: js.UndefOr[Boolean] = js.undefined,
     valueCode: code = null,
-    valueDecimal: Int | Double = null,
-    valueInteger: Int | Double = null,
+    valueDecimal: js.UndefOr[decimal] = js.undefined,
+    valueInteger: js.UndefOr[integer] = js.undefined,
     valueString: String = null,
     valueUri: uri = null
   ): ValueSetExpansionParameter = {
@@ -104,10 +104,10 @@ object ValueSetExpansionParameter {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.get.asInstanceOf[js.Any])
     if (valueCode != null) __obj.updateDynamic("valueCode")(valueCode.asInstanceOf[js.Any])
-    if (valueDecimal != null) __obj.updateDynamic("valueDecimal")(valueDecimal.asInstanceOf[js.Any])
-    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueDecimal)) __obj.updateDynamic("valueDecimal")(valueDecimal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
     if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
     if (valueUri != null) __obj.updateDynamic("valueUri")(valueUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSetExpansionParameter]

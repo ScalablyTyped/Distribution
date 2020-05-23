@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,15 @@ trait DeviceRotationRate extends js.Object {
   val gamma: Double | Null
 }
 
-@JSGlobal("DeviceRotationRate")
-@js.native
-object DeviceRotationRate extends Instantiable0[DeviceRotationRate]
+object DeviceRotationRate {
+  @scala.inline
+  def apply(
+    alpha: Double = null.asInstanceOf[Double],
+    beta: Double = null.asInstanceOf[Double],
+    gamma: Double = null.asInstanceOf[Double]
+  ): DeviceRotationRate = {
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], gamma = gamma.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeviceRotationRate]
+  }
+}
 

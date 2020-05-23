@@ -4,13 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.Storage.Streams.Buffer")
-@js.native
-class Buffer protected () extends IBuffer {
-  def this(capacity: Double) = this()
-  /* CompleteClass */
-  override var capacity: Double = js.native
-  /* CompleteClass */
-  override var length: Double = js.native
+trait Buffer extends IBuffer
+
+object Buffer {
+  @scala.inline
+  def apply(capacity: Double, length: Double): Buffer = {
+    val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Buffer]
+  }
 }
 

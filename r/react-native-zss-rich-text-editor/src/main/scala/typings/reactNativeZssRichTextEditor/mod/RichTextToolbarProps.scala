@@ -30,9 +30,9 @@ object RichTextToolbarProps {
     onPressAddImage: () => Unit = null,
     onPressAddLink: () => Unit = null,
     renderAction: () => ReactNode = null,
-    selectedButtonStyle: ElementStyles = null,
+    selectedButtonStyle: js.UndefOr[Null | ElementStyles] = js.undefined,
     selectedIconTint: String = null,
-    unselectedButtonStyle: ElementStyles = null
+    unselectedButtonStyle: js.UndefOr[Null | ElementStyles] = js.undefined
   ): RichTextToolbarProps = {
     val __obj = js.Dynamic.literal(getEditor = js.Any.fromFunction0(getEditor))
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
@@ -41,9 +41,9 @@ object RichTextToolbarProps {
     if (onPressAddImage != null) __obj.updateDynamic("onPressAddImage")(js.Any.fromFunction0(onPressAddImage))
     if (onPressAddLink != null) __obj.updateDynamic("onPressAddLink")(js.Any.fromFunction0(onPressAddLink))
     if (renderAction != null) __obj.updateDynamic("renderAction")(js.Any.fromFunction0(renderAction))
-    if (selectedButtonStyle != null) __obj.updateDynamic("selectedButtonStyle")(selectedButtonStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedButtonStyle)) __obj.updateDynamic("selectedButtonStyle")(selectedButtonStyle.asInstanceOf[js.Any])
     if (selectedIconTint != null) __obj.updateDynamic("selectedIconTint")(selectedIconTint.asInstanceOf[js.Any])
-    if (unselectedButtonStyle != null) __obj.updateDynamic("unselectedButtonStyle")(unselectedButtonStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(unselectedButtonStyle)) __obj.updateDynamic("unselectedButtonStyle")(unselectedButtonStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[RichTextToolbarProps]
   }
 }

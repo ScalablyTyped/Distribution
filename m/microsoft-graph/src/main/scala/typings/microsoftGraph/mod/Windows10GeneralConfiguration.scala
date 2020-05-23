@@ -579,7 +579,7 @@ object Windows10GeneralConfiguration {
     createdDateTime: String = null,
     defenderBlockEndUserAccess: js.UndefOr[Boolean] = js.undefined,
     defenderCloudBlockLevel: DefenderCloudBlockLevelType = null,
-    defenderDaysBeforeDeletingQuarantinedMalware: Int | Double = null,
+    defenderDaysBeforeDeletingQuarantinedMalware: js.UndefOr[Double] = js.undefined,
     defenderDetectedMalwareActions: DefenderDetectedMalwareActions = null,
     defenderFileExtensionsToExclude: js.Array[String] = null,
     defenderFilesAndFoldersToExclude: js.Array[String] = null,
@@ -594,14 +594,14 @@ object Windows10GeneralConfiguration {
     defenderScanDownloads: js.UndefOr[Boolean] = js.undefined,
     defenderScanIncomingMail: js.UndefOr[Boolean] = js.undefined,
     defenderScanMappedNetworkDrivesDuringFullScan: js.UndefOr[Boolean] = js.undefined,
-    defenderScanMaxCpu: Int | Double = null,
+    defenderScanMaxCpu: js.UndefOr[Double] = js.undefined,
     defenderScanNetworkFiles: js.UndefOr[Boolean] = js.undefined,
     defenderScanRemovableDrivesDuringFullScan: js.UndefOr[Boolean] = js.undefined,
     defenderScanScriptsLoadedInInternetExplorer: js.UndefOr[Boolean] = js.undefined,
     defenderScanType: DefenderScanType = null,
     defenderScheduledQuickScanTime: String = null,
     defenderScheduledScanTime: String = null,
-    defenderSignatureUpdateIntervalInHours: Int | Double = null,
+    defenderSignatureUpdateIntervalInHours: js.UndefOr[Double] = js.undefined,
     defenderSystemScanSchedule: WeeklySchedule = null,
     description: String = null,
     developerUnlockSetting: StateManagementSetting = null,
@@ -639,7 +639,7 @@ object Windows10GeneralConfiguration {
     edgeSendIntranetTrafficToInternetExplorer: js.UndefOr[Boolean] = js.undefined,
     edgeSyncFavoritesWithInternetExplorer: js.UndefOr[Boolean] = js.undefined,
     enterpriseCloudPrintDiscoveryEndPoint: String = null,
-    enterpriseCloudPrintDiscoveryMaxLimit: Int | Double = null,
+    enterpriseCloudPrintDiscoveryMaxLimit: js.UndefOr[Double] = js.undefined,
     enterpriseCloudPrintMopriaDiscoveryResourceIdentifier: String = null,
     enterpriseCloudPrintOAuthAuthority: String = null,
     enterpriseCloudPrintOAuthClientIdentifier: String = null,
@@ -656,7 +656,7 @@ object Windows10GeneralConfiguration {
     lockScreenBlockActionCenterNotifications: js.UndefOr[Boolean] = js.undefined,
     lockScreenBlockCortana: js.UndefOr[Boolean] = js.undefined,
     lockScreenBlockToastNotifications: js.UndefOr[Boolean] = js.undefined,
-    lockScreenTimeoutInSeconds: Int | Double = null,
+    lockScreenTimeoutInSeconds: js.UndefOr[Double] = js.undefined,
     logonBlockFastUserSwitching: js.UndefOr[Boolean] = js.undefined,
     microsoftAccountBlockSettingsSync: js.UndefOr[Boolean] = js.undefined,
     microsoftAccountBlocked: js.UndefOr[Boolean] = js.undefined,
@@ -667,15 +667,15 @@ object Windows10GeneralConfiguration {
     nfcBlocked: js.UndefOr[Boolean] = js.undefined,
     oneDriveDisableFileSync: js.UndefOr[Boolean] = js.undefined,
     passwordBlockSimple: js.UndefOr[Boolean] = js.undefined,
-    passwordExpirationDays: Int | Double = null,
-    passwordMinimumCharacterSetCount: Int | Double = null,
-    passwordMinimumLength: Int | Double = null,
-    passwordMinutesOfInactivityBeforeScreenTimeout: Int | Double = null,
-    passwordPreviousPasswordBlockCount: Int | Double = null,
+    passwordExpirationDays: js.UndefOr[Double] = js.undefined,
+    passwordMinimumCharacterSetCount: js.UndefOr[Double] = js.undefined,
+    passwordMinimumLength: js.UndefOr[Double] = js.undefined,
+    passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[Double] = js.undefined,
+    passwordPreviousPasswordBlockCount: js.UndefOr[Double] = js.undefined,
     passwordRequireWhenResumeFromIdleState: js.UndefOr[Boolean] = js.undefined,
     passwordRequired: js.UndefOr[Boolean] = js.undefined,
     passwordRequiredType: RequiredPasswordType = null,
-    passwordSignInFailureCountBeforeFactoryReset: Int | Double = null,
+    passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[Double] = js.undefined,
     personalizationDesktopImageUrl: String = null,
     personalizationLockScreenImageUrl: String = null,
     privacyAdvertisingId: StateManagementSetting = null,
@@ -729,8 +729,8 @@ object Windows10GeneralConfiguration {
     startMenuHideSleep: js.UndefOr[Boolean] = js.undefined,
     startMenuHideSwitchAccount: js.UndefOr[Boolean] = js.undefined,
     startMenuHideUserTile: js.UndefOr[Boolean] = js.undefined,
-    startMenuLayoutEdgeAssetsXml: Int | Double = null,
-    startMenuLayoutXml: Int | Double = null,
+    startMenuLayoutEdgeAssetsXml: js.UndefOr[Double] = js.undefined,
+    startMenuLayoutXml: js.UndefOr[Double] = js.undefined,
     startMenuMode: WindowsStartMenuModeType = null,
     startMenuPinnedFolderDocuments: VisibilitySetting = null,
     startMenuPinnedFolderDownloads: VisibilitySetting = null,
@@ -750,13 +750,13 @@ object Windows10GeneralConfiguration {
     usbBlocked: js.UndefOr[Boolean] = js.undefined,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null,
+    version: js.UndefOr[Double] = js.undefined,
     voiceRecordingBlocked: js.UndefOr[Boolean] = js.undefined,
     webRtcBlockLocalhostIpAddress: js.UndefOr[Boolean] = js.undefined,
     wiFiBlockAutomaticConnectHotspots: js.UndefOr[Boolean] = js.undefined,
     wiFiBlockManualConfiguration: js.UndefOr[Boolean] = js.undefined,
     wiFiBlocked: js.UndefOr[Boolean] = js.undefined,
-    wiFiScanInterval: Int | Double = null,
+    wiFiScanInterval: js.UndefOr[Double] = js.undefined,
     windowsSpotlightBlockConsumerSpecificFeatures: js.UndefOr[Boolean] = js.undefined,
     windowsSpotlightBlockOnActionCenter: js.UndefOr[Boolean] = js.undefined,
     windowsSpotlightBlockTailoredExperiences: js.UndefOr[Boolean] = js.undefined,
@@ -773,179 +773,179 @@ object Windows10GeneralConfiguration {
     wirelessDisplayRequirePinForPairing: js.UndefOr[Boolean] = js.undefined
   ): Windows10GeneralConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accountsBlockAddingNonMicrosoftAccountEmail)) __obj.updateDynamic("accountsBlockAddingNonMicrosoftAccountEmail")(accountsBlockAddingNonMicrosoftAccountEmail.asInstanceOf[js.Any])
-    if (!js.isUndefined(antiTheftModeBlocked)) __obj.updateDynamic("antiTheftModeBlocked")(antiTheftModeBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(accountsBlockAddingNonMicrosoftAccountEmail)) __obj.updateDynamic("accountsBlockAddingNonMicrosoftAccountEmail")(accountsBlockAddingNonMicrosoftAccountEmail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(antiTheftModeBlocked)) __obj.updateDynamic("antiTheftModeBlocked")(antiTheftModeBlocked.get.asInstanceOf[js.Any])
     if (appsAllowTrustedAppsSideloading != null) __obj.updateDynamic("appsAllowTrustedAppsSideloading")(appsAllowTrustedAppsSideloading.asInstanceOf[js.Any])
-    if (!js.isUndefined(appsBlockWindowsStoreOriginatedApps)) __obj.updateDynamic("appsBlockWindowsStoreOriginatedApps")(appsBlockWindowsStoreOriginatedApps.asInstanceOf[js.Any])
+    if (!js.isUndefined(appsBlockWindowsStoreOriginatedApps)) __obj.updateDynamic("appsBlockWindowsStoreOriginatedApps")(appsBlockWindowsStoreOriginatedApps.get.asInstanceOf[js.Any])
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
     if (bluetoothAllowedServices != null) __obj.updateDynamic("bluetoothAllowedServices")(bluetoothAllowedServices.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothBlockAdvertising)) __obj.updateDynamic("bluetoothBlockAdvertising")(bluetoothBlockAdvertising.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothBlockDiscoverableMode)) __obj.updateDynamic("bluetoothBlockDiscoverableMode")(bluetoothBlockDiscoverableMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothBlockPrePairing)) __obj.updateDynamic("bluetoothBlockPrePairing")(bluetoothBlockPrePairing.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothBlocked)) __obj.updateDynamic("bluetoothBlocked")(bluetoothBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(cameraBlocked)) __obj.updateDynamic("cameraBlocked")(cameraBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularBlockDataWhenRoaming)) __obj.updateDynamic("cellularBlockDataWhenRoaming")(cellularBlockDataWhenRoaming.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularBlockVpn)) __obj.updateDynamic("cellularBlockVpn")(cellularBlockVpn.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularBlockVpnWhenRoaming)) __obj.updateDynamic("cellularBlockVpnWhenRoaming")(cellularBlockVpnWhenRoaming.asInstanceOf[js.Any])
-    if (!js.isUndefined(certificatesBlockManualRootCertificateInstallation)) __obj.updateDynamic("certificatesBlockManualRootCertificateInstallation")(certificatesBlockManualRootCertificateInstallation.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectedDevicesServiceBlocked)) __obj.updateDynamic("connectedDevicesServiceBlocked")(connectedDevicesServiceBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyPasteBlocked)) __obj.updateDynamic("copyPasteBlocked")(copyPasteBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(cortanaBlocked)) __obj.updateDynamic("cortanaBlocked")(cortanaBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(bluetoothBlockAdvertising)) __obj.updateDynamic("bluetoothBlockAdvertising")(bluetoothBlockAdvertising.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bluetoothBlockDiscoverableMode)) __obj.updateDynamic("bluetoothBlockDiscoverableMode")(bluetoothBlockDiscoverableMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bluetoothBlockPrePairing)) __obj.updateDynamic("bluetoothBlockPrePairing")(bluetoothBlockPrePairing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bluetoothBlocked)) __obj.updateDynamic("bluetoothBlocked")(bluetoothBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cameraBlocked)) __obj.updateDynamic("cameraBlocked")(cameraBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularBlockDataWhenRoaming)) __obj.updateDynamic("cellularBlockDataWhenRoaming")(cellularBlockDataWhenRoaming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularBlockVpn)) __obj.updateDynamic("cellularBlockVpn")(cellularBlockVpn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularBlockVpnWhenRoaming)) __obj.updateDynamic("cellularBlockVpnWhenRoaming")(cellularBlockVpnWhenRoaming.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(certificatesBlockManualRootCertificateInstallation)) __obj.updateDynamic("certificatesBlockManualRootCertificateInstallation")(certificatesBlockManualRootCertificateInstallation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectedDevicesServiceBlocked)) __obj.updateDynamic("connectedDevicesServiceBlocked")(connectedDevicesServiceBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyPasteBlocked)) __obj.updateDynamic("copyPasteBlocked")(copyPasteBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cortanaBlocked)) __obj.updateDynamic("cortanaBlocked")(cortanaBlocked.get.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderBlockEndUserAccess)) __obj.updateDynamic("defenderBlockEndUserAccess")(defenderBlockEndUserAccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderBlockEndUserAccess)) __obj.updateDynamic("defenderBlockEndUserAccess")(defenderBlockEndUserAccess.get.asInstanceOf[js.Any])
     if (defenderCloudBlockLevel != null) __obj.updateDynamic("defenderCloudBlockLevel")(defenderCloudBlockLevel.asInstanceOf[js.Any])
-    if (defenderDaysBeforeDeletingQuarantinedMalware != null) __obj.updateDynamic("defenderDaysBeforeDeletingQuarantinedMalware")(defenderDaysBeforeDeletingQuarantinedMalware.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderDaysBeforeDeletingQuarantinedMalware)) __obj.updateDynamic("defenderDaysBeforeDeletingQuarantinedMalware")(defenderDaysBeforeDeletingQuarantinedMalware.get.asInstanceOf[js.Any])
     if (defenderDetectedMalwareActions != null) __obj.updateDynamic("defenderDetectedMalwareActions")(defenderDetectedMalwareActions.asInstanceOf[js.Any])
     if (defenderFileExtensionsToExclude != null) __obj.updateDynamic("defenderFileExtensionsToExclude")(defenderFileExtensionsToExclude.asInstanceOf[js.Any])
     if (defenderFilesAndFoldersToExclude != null) __obj.updateDynamic("defenderFilesAndFoldersToExclude")(defenderFilesAndFoldersToExclude.asInstanceOf[js.Any])
     if (defenderMonitorFileActivity != null) __obj.updateDynamic("defenderMonitorFileActivity")(defenderMonitorFileActivity.asInstanceOf[js.Any])
     if (defenderProcessesToExclude != null) __obj.updateDynamic("defenderProcessesToExclude")(defenderProcessesToExclude.asInstanceOf[js.Any])
     if (defenderPromptForSampleSubmission != null) __obj.updateDynamic("defenderPromptForSampleSubmission")(defenderPromptForSampleSubmission.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderRequireBehaviorMonitoring)) __obj.updateDynamic("defenderRequireBehaviorMonitoring")(defenderRequireBehaviorMonitoring.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderRequireCloudProtection)) __obj.updateDynamic("defenderRequireCloudProtection")(defenderRequireCloudProtection.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderRequireNetworkInspectionSystem)) __obj.updateDynamic("defenderRequireNetworkInspectionSystem")(defenderRequireNetworkInspectionSystem.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderRequireRealTimeMonitoring)) __obj.updateDynamic("defenderRequireRealTimeMonitoring")(defenderRequireRealTimeMonitoring.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderScanArchiveFiles)) __obj.updateDynamic("defenderScanArchiveFiles")(defenderScanArchiveFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderScanDownloads)) __obj.updateDynamic("defenderScanDownloads")(defenderScanDownloads.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderScanIncomingMail)) __obj.updateDynamic("defenderScanIncomingMail")(defenderScanIncomingMail.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderScanMappedNetworkDrivesDuringFullScan)) __obj.updateDynamic("defenderScanMappedNetworkDrivesDuringFullScan")(defenderScanMappedNetworkDrivesDuringFullScan.asInstanceOf[js.Any])
-    if (defenderScanMaxCpu != null) __obj.updateDynamic("defenderScanMaxCpu")(defenderScanMaxCpu.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderScanNetworkFiles)) __obj.updateDynamic("defenderScanNetworkFiles")(defenderScanNetworkFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderScanRemovableDrivesDuringFullScan)) __obj.updateDynamic("defenderScanRemovableDrivesDuringFullScan")(defenderScanRemovableDrivesDuringFullScan.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderScanScriptsLoadedInInternetExplorer)) __obj.updateDynamic("defenderScanScriptsLoadedInInternetExplorer")(defenderScanScriptsLoadedInInternetExplorer.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderRequireBehaviorMonitoring)) __obj.updateDynamic("defenderRequireBehaviorMonitoring")(defenderRequireBehaviorMonitoring.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderRequireCloudProtection)) __obj.updateDynamic("defenderRequireCloudProtection")(defenderRequireCloudProtection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderRequireNetworkInspectionSystem)) __obj.updateDynamic("defenderRequireNetworkInspectionSystem")(defenderRequireNetworkInspectionSystem.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderRequireRealTimeMonitoring)) __obj.updateDynamic("defenderRequireRealTimeMonitoring")(defenderRequireRealTimeMonitoring.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderScanArchiveFiles)) __obj.updateDynamic("defenderScanArchiveFiles")(defenderScanArchiveFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderScanDownloads)) __obj.updateDynamic("defenderScanDownloads")(defenderScanDownloads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderScanIncomingMail)) __obj.updateDynamic("defenderScanIncomingMail")(defenderScanIncomingMail.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderScanMappedNetworkDrivesDuringFullScan)) __obj.updateDynamic("defenderScanMappedNetworkDrivesDuringFullScan")(defenderScanMappedNetworkDrivesDuringFullScan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderScanMaxCpu)) __obj.updateDynamic("defenderScanMaxCpu")(defenderScanMaxCpu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderScanNetworkFiles)) __obj.updateDynamic("defenderScanNetworkFiles")(defenderScanNetworkFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderScanRemovableDrivesDuringFullScan)) __obj.updateDynamic("defenderScanRemovableDrivesDuringFullScan")(defenderScanRemovableDrivesDuringFullScan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderScanScriptsLoadedInInternetExplorer)) __obj.updateDynamic("defenderScanScriptsLoadedInInternetExplorer")(defenderScanScriptsLoadedInInternetExplorer.get.asInstanceOf[js.Any])
     if (defenderScanType != null) __obj.updateDynamic("defenderScanType")(defenderScanType.asInstanceOf[js.Any])
     if (defenderScheduledQuickScanTime != null) __obj.updateDynamic("defenderScheduledQuickScanTime")(defenderScheduledQuickScanTime.asInstanceOf[js.Any])
     if (defenderScheduledScanTime != null) __obj.updateDynamic("defenderScheduledScanTime")(defenderScheduledScanTime.asInstanceOf[js.Any])
-    if (defenderSignatureUpdateIntervalInHours != null) __obj.updateDynamic("defenderSignatureUpdateIntervalInHours")(defenderSignatureUpdateIntervalInHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderSignatureUpdateIntervalInHours)) __obj.updateDynamic("defenderSignatureUpdateIntervalInHours")(defenderSignatureUpdateIntervalInHours.get.asInstanceOf[js.Any])
     if (defenderSystemScanSchedule != null) __obj.updateDynamic("defenderSystemScanSchedule")(defenderSystemScanSchedule.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (developerUnlockSetting != null) __obj.updateDynamic("developerUnlockSetting")(developerUnlockSetting.asInstanceOf[js.Any])
-    if (!js.isUndefined(deviceManagementBlockFactoryResetOnMobile)) __obj.updateDynamic("deviceManagementBlockFactoryResetOnMobile")(deviceManagementBlockFactoryResetOnMobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(deviceManagementBlockManualUnenroll)) __obj.updateDynamic("deviceManagementBlockManualUnenroll")(deviceManagementBlockManualUnenroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceManagementBlockFactoryResetOnMobile)) __obj.updateDynamic("deviceManagementBlockFactoryResetOnMobile")(deviceManagementBlockFactoryResetOnMobile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceManagementBlockManualUnenroll)) __obj.updateDynamic("deviceManagementBlockManualUnenroll")(deviceManagementBlockManualUnenroll.get.asInstanceOf[js.Any])
     if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
     if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
     if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
     if (diagnosticsDataSubmissionMode != null) __obj.updateDynamic("diagnosticsDataSubmissionMode")(diagnosticsDataSubmissionMode.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeAllowStartPagesModification)) __obj.updateDynamic("edgeAllowStartPagesModification")(edgeAllowStartPagesModification.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockAccessToAboutFlags)) __obj.updateDynamic("edgeBlockAccessToAboutFlags")(edgeBlockAccessToAboutFlags.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockAddressBarDropdown)) __obj.updateDynamic("edgeBlockAddressBarDropdown")(edgeBlockAddressBarDropdown.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockAutofill)) __obj.updateDynamic("edgeBlockAutofill")(edgeBlockAutofill.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockCompatibilityList)) __obj.updateDynamic("edgeBlockCompatibilityList")(edgeBlockCompatibilityList.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockDeveloperTools)) __obj.updateDynamic("edgeBlockDeveloperTools")(edgeBlockDeveloperTools.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockExtensions)) __obj.updateDynamic("edgeBlockExtensions")(edgeBlockExtensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockInPrivateBrowsing)) __obj.updateDynamic("edgeBlockInPrivateBrowsing")(edgeBlockInPrivateBrowsing.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockJavaScript)) __obj.updateDynamic("edgeBlockJavaScript")(edgeBlockJavaScript.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockLiveTileDataCollection)) __obj.updateDynamic("edgeBlockLiveTileDataCollection")(edgeBlockLiveTileDataCollection.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockPasswordManager)) __obj.updateDynamic("edgeBlockPasswordManager")(edgeBlockPasswordManager.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockPopups)) __obj.updateDynamic("edgeBlockPopups")(edgeBlockPopups.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockSearchSuggestions)) __obj.updateDynamic("edgeBlockSearchSuggestions")(edgeBlockSearchSuggestions.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockSendingDoNotTrackHeader)) __obj.updateDynamic("edgeBlockSendingDoNotTrackHeader")(edgeBlockSendingDoNotTrackHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlockSendingIntranetTrafficToInternetExplorer)) __obj.updateDynamic("edgeBlockSendingIntranetTrafficToInternetExplorer")(edgeBlockSendingIntranetTrafficToInternetExplorer.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeBlocked)) __obj.updateDynamic("edgeBlocked")(edgeBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeClearBrowsingDataOnExit)) __obj.updateDynamic("edgeClearBrowsingDataOnExit")(edgeClearBrowsingDataOnExit.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeAllowStartPagesModification)) __obj.updateDynamic("edgeAllowStartPagesModification")(edgeAllowStartPagesModification.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockAccessToAboutFlags)) __obj.updateDynamic("edgeBlockAccessToAboutFlags")(edgeBlockAccessToAboutFlags.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockAddressBarDropdown)) __obj.updateDynamic("edgeBlockAddressBarDropdown")(edgeBlockAddressBarDropdown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockAutofill)) __obj.updateDynamic("edgeBlockAutofill")(edgeBlockAutofill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockCompatibilityList)) __obj.updateDynamic("edgeBlockCompatibilityList")(edgeBlockCompatibilityList.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockDeveloperTools)) __obj.updateDynamic("edgeBlockDeveloperTools")(edgeBlockDeveloperTools.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockExtensions)) __obj.updateDynamic("edgeBlockExtensions")(edgeBlockExtensions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockInPrivateBrowsing)) __obj.updateDynamic("edgeBlockInPrivateBrowsing")(edgeBlockInPrivateBrowsing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockJavaScript)) __obj.updateDynamic("edgeBlockJavaScript")(edgeBlockJavaScript.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockLiveTileDataCollection)) __obj.updateDynamic("edgeBlockLiveTileDataCollection")(edgeBlockLiveTileDataCollection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockPasswordManager)) __obj.updateDynamic("edgeBlockPasswordManager")(edgeBlockPasswordManager.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockPopups)) __obj.updateDynamic("edgeBlockPopups")(edgeBlockPopups.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockSearchSuggestions)) __obj.updateDynamic("edgeBlockSearchSuggestions")(edgeBlockSearchSuggestions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockSendingDoNotTrackHeader)) __obj.updateDynamic("edgeBlockSendingDoNotTrackHeader")(edgeBlockSendingDoNotTrackHeader.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlockSendingIntranetTrafficToInternetExplorer)) __obj.updateDynamic("edgeBlockSendingIntranetTrafficToInternetExplorer")(edgeBlockSendingIntranetTrafficToInternetExplorer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeBlocked)) __obj.updateDynamic("edgeBlocked")(edgeBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeClearBrowsingDataOnExit)) __obj.updateDynamic("edgeClearBrowsingDataOnExit")(edgeClearBrowsingDataOnExit.get.asInstanceOf[js.Any])
     if (edgeCookiePolicy != null) __obj.updateDynamic("edgeCookiePolicy")(edgeCookiePolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeDisableFirstRunPage)) __obj.updateDynamic("edgeDisableFirstRunPage")(edgeDisableFirstRunPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeDisableFirstRunPage)) __obj.updateDynamic("edgeDisableFirstRunPage")(edgeDisableFirstRunPage.get.asInstanceOf[js.Any])
     if (edgeEnterpriseModeSiteListLocation != null) __obj.updateDynamic("edgeEnterpriseModeSiteListLocation")(edgeEnterpriseModeSiteListLocation.asInstanceOf[js.Any])
     if (edgeFirstRunUrl != null) __obj.updateDynamic("edgeFirstRunUrl")(edgeFirstRunUrl.asInstanceOf[js.Any])
     if (edgeHomepageUrls != null) __obj.updateDynamic("edgeHomepageUrls")(edgeHomepageUrls.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeRequireSmartScreen)) __obj.updateDynamic("edgeRequireSmartScreen")(edgeRequireSmartScreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeRequireSmartScreen)) __obj.updateDynamic("edgeRequireSmartScreen")(edgeRequireSmartScreen.get.asInstanceOf[js.Any])
     if (edgeSearchEngine != null) __obj.updateDynamic("edgeSearchEngine")(edgeSearchEngine.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeSendIntranetTrafficToInternetExplorer)) __obj.updateDynamic("edgeSendIntranetTrafficToInternetExplorer")(edgeSendIntranetTrafficToInternetExplorer.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeSyncFavoritesWithInternetExplorer)) __obj.updateDynamic("edgeSyncFavoritesWithInternetExplorer")(edgeSyncFavoritesWithInternetExplorer.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeSendIntranetTrafficToInternetExplorer)) __obj.updateDynamic("edgeSendIntranetTrafficToInternetExplorer")(edgeSendIntranetTrafficToInternetExplorer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(edgeSyncFavoritesWithInternetExplorer)) __obj.updateDynamic("edgeSyncFavoritesWithInternetExplorer")(edgeSyncFavoritesWithInternetExplorer.get.asInstanceOf[js.Any])
     if (enterpriseCloudPrintDiscoveryEndPoint != null) __obj.updateDynamic("enterpriseCloudPrintDiscoveryEndPoint")(enterpriseCloudPrintDiscoveryEndPoint.asInstanceOf[js.Any])
-    if (enterpriseCloudPrintDiscoveryMaxLimit != null) __obj.updateDynamic("enterpriseCloudPrintDiscoveryMaxLimit")(enterpriseCloudPrintDiscoveryMaxLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterpriseCloudPrintDiscoveryMaxLimit)) __obj.updateDynamic("enterpriseCloudPrintDiscoveryMaxLimit")(enterpriseCloudPrintDiscoveryMaxLimit.get.asInstanceOf[js.Any])
     if (enterpriseCloudPrintMopriaDiscoveryResourceIdentifier != null) __obj.updateDynamic("enterpriseCloudPrintMopriaDiscoveryResourceIdentifier")(enterpriseCloudPrintMopriaDiscoveryResourceIdentifier.asInstanceOf[js.Any])
     if (enterpriseCloudPrintOAuthAuthority != null) __obj.updateDynamic("enterpriseCloudPrintOAuthAuthority")(enterpriseCloudPrintOAuthAuthority.asInstanceOf[js.Any])
     if (enterpriseCloudPrintOAuthClientIdentifier != null) __obj.updateDynamic("enterpriseCloudPrintOAuthClientIdentifier")(enterpriseCloudPrintOAuthClientIdentifier.asInstanceOf[js.Any])
     if (enterpriseCloudPrintResourceIdentifier != null) __obj.updateDynamic("enterpriseCloudPrintResourceIdentifier")(enterpriseCloudPrintResourceIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(experienceBlockDeviceDiscovery)) __obj.updateDynamic("experienceBlockDeviceDiscovery")(experienceBlockDeviceDiscovery.asInstanceOf[js.Any])
-    if (!js.isUndefined(experienceBlockErrorDialogWhenNoSIM)) __obj.updateDynamic("experienceBlockErrorDialogWhenNoSIM")(experienceBlockErrorDialogWhenNoSIM.asInstanceOf[js.Any])
-    if (!js.isUndefined(experienceBlockTaskSwitcher)) __obj.updateDynamic("experienceBlockTaskSwitcher")(experienceBlockTaskSwitcher.asInstanceOf[js.Any])
-    if (!js.isUndefined(gameDvrBlocked)) __obj.updateDynamic("gameDvrBlocked")(gameDvrBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(experienceBlockDeviceDiscovery)) __obj.updateDynamic("experienceBlockDeviceDiscovery")(experienceBlockDeviceDiscovery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(experienceBlockErrorDialogWhenNoSIM)) __obj.updateDynamic("experienceBlockErrorDialogWhenNoSIM")(experienceBlockErrorDialogWhenNoSIM.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(experienceBlockTaskSwitcher)) __obj.updateDynamic("experienceBlockTaskSwitcher")(experienceBlockTaskSwitcher.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gameDvrBlocked)) __obj.updateDynamic("gameDvrBlocked")(gameDvrBlocked.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(internetSharingBlocked)) __obj.updateDynamic("internetSharingBlocked")(internetSharingBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(internetSharingBlocked)) __obj.updateDynamic("internetSharingBlocked")(internetSharingBlocked.get.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(locationServicesBlocked)) __obj.updateDynamic("locationServicesBlocked")(locationServicesBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockScreenAllowTimeoutConfiguration)) __obj.updateDynamic("lockScreenAllowTimeoutConfiguration")(lockScreenAllowTimeoutConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockScreenBlockActionCenterNotifications)) __obj.updateDynamic("lockScreenBlockActionCenterNotifications")(lockScreenBlockActionCenterNotifications.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockScreenBlockCortana)) __obj.updateDynamic("lockScreenBlockCortana")(lockScreenBlockCortana.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockScreenBlockToastNotifications)) __obj.updateDynamic("lockScreenBlockToastNotifications")(lockScreenBlockToastNotifications.asInstanceOf[js.Any])
-    if (lockScreenTimeoutInSeconds != null) __obj.updateDynamic("lockScreenTimeoutInSeconds")(lockScreenTimeoutInSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(logonBlockFastUserSwitching)) __obj.updateDynamic("logonBlockFastUserSwitching")(logonBlockFastUserSwitching.asInstanceOf[js.Any])
-    if (!js.isUndefined(microsoftAccountBlockSettingsSync)) __obj.updateDynamic("microsoftAccountBlockSettingsSync")(microsoftAccountBlockSettingsSync.asInstanceOf[js.Any])
-    if (!js.isUndefined(microsoftAccountBlocked)) __obj.updateDynamic("microsoftAccountBlocked")(microsoftAccountBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkProxyApplySettingsDeviceWide)) __obj.updateDynamic("networkProxyApplySettingsDeviceWide")(networkProxyApplySettingsDeviceWide.asInstanceOf[js.Any])
+    if (!js.isUndefined(locationServicesBlocked)) __obj.updateDynamic("locationServicesBlocked")(locationServicesBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockScreenAllowTimeoutConfiguration)) __obj.updateDynamic("lockScreenAllowTimeoutConfiguration")(lockScreenAllowTimeoutConfiguration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockScreenBlockActionCenterNotifications)) __obj.updateDynamic("lockScreenBlockActionCenterNotifications")(lockScreenBlockActionCenterNotifications.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockScreenBlockCortana)) __obj.updateDynamic("lockScreenBlockCortana")(lockScreenBlockCortana.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockScreenBlockToastNotifications)) __obj.updateDynamic("lockScreenBlockToastNotifications")(lockScreenBlockToastNotifications.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockScreenTimeoutInSeconds)) __obj.updateDynamic("lockScreenTimeoutInSeconds")(lockScreenTimeoutInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logonBlockFastUserSwitching)) __obj.updateDynamic("logonBlockFastUserSwitching")(logonBlockFastUserSwitching.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(microsoftAccountBlockSettingsSync)) __obj.updateDynamic("microsoftAccountBlockSettingsSync")(microsoftAccountBlockSettingsSync.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(microsoftAccountBlocked)) __obj.updateDynamic("microsoftAccountBlocked")(microsoftAccountBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkProxyApplySettingsDeviceWide)) __obj.updateDynamic("networkProxyApplySettingsDeviceWide")(networkProxyApplySettingsDeviceWide.get.asInstanceOf[js.Any])
     if (networkProxyAutomaticConfigurationUrl != null) __obj.updateDynamic("networkProxyAutomaticConfigurationUrl")(networkProxyAutomaticConfigurationUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkProxyDisableAutoDetect)) __obj.updateDynamic("networkProxyDisableAutoDetect")(networkProxyDisableAutoDetect.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkProxyDisableAutoDetect)) __obj.updateDynamic("networkProxyDisableAutoDetect")(networkProxyDisableAutoDetect.get.asInstanceOf[js.Any])
     if (networkProxyServer != null) __obj.updateDynamic("networkProxyServer")(networkProxyServer.asInstanceOf[js.Any])
-    if (!js.isUndefined(nfcBlocked)) __obj.updateDynamic("nfcBlocked")(nfcBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneDriveDisableFileSync)) __obj.updateDynamic("oneDriveDisableFileSync")(oneDriveDisableFileSync.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordBlockSimple)) __obj.updateDynamic("passwordBlockSimple")(passwordBlockSimple.asInstanceOf[js.Any])
-    if (passwordExpirationDays != null) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.asInstanceOf[js.Any])
-    if (passwordMinimumCharacterSetCount != null) __obj.updateDynamic("passwordMinimumCharacterSetCount")(passwordMinimumCharacterSetCount.asInstanceOf[js.Any])
-    if (passwordMinimumLength != null) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.asInstanceOf[js.Any])
-    if (passwordMinutesOfInactivityBeforeScreenTimeout != null) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.asInstanceOf[js.Any])
-    if (passwordPreviousPasswordBlockCount != null) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordRequireWhenResumeFromIdleState)) __obj.updateDynamic("passwordRequireWhenResumeFromIdleState")(passwordRequireWhenResumeFromIdleState.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(nfcBlocked)) __obj.updateDynamic("nfcBlocked")(nfcBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneDriveDisableFileSync)) __obj.updateDynamic("oneDriveDisableFileSync")(oneDriveDisableFileSync.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordBlockSimple)) __obj.updateDynamic("passwordBlockSimple")(passwordBlockSimple.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordExpirationDays)) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumCharacterSetCount)) __obj.updateDynamic("passwordMinimumCharacterSetCount")(passwordMinimumCharacterSetCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinimumLength)) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordMinutesOfInactivityBeforeScreenTimeout)) __obj.updateDynamic("passwordMinutesOfInactivityBeforeScreenTimeout")(passwordMinutesOfInactivityBeforeScreenTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordPreviousPasswordBlockCount)) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordRequireWhenResumeFromIdleState)) __obj.updateDynamic("passwordRequireWhenResumeFromIdleState")(passwordRequireWhenResumeFromIdleState.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.get.asInstanceOf[js.Any])
     if (passwordRequiredType != null) __obj.updateDynamic("passwordRequiredType")(passwordRequiredType.asInstanceOf[js.Any])
-    if (passwordSignInFailureCountBeforeFactoryReset != null) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordSignInFailureCountBeforeFactoryReset)) __obj.updateDynamic("passwordSignInFailureCountBeforeFactoryReset")(passwordSignInFailureCountBeforeFactoryReset.get.asInstanceOf[js.Any])
     if (personalizationDesktopImageUrl != null) __obj.updateDynamic("personalizationDesktopImageUrl")(personalizationDesktopImageUrl.asInstanceOf[js.Any])
     if (personalizationLockScreenImageUrl != null) __obj.updateDynamic("personalizationLockScreenImageUrl")(personalizationLockScreenImageUrl.asInstanceOf[js.Any])
     if (privacyAdvertisingId != null) __obj.updateDynamic("privacyAdvertisingId")(privacyAdvertisingId.asInstanceOf[js.Any])
-    if (!js.isUndefined(privacyAutoAcceptPairingAndConsentPrompts)) __obj.updateDynamic("privacyAutoAcceptPairingAndConsentPrompts")(privacyAutoAcceptPairingAndConsentPrompts.asInstanceOf[js.Any])
-    if (!js.isUndefined(privacyBlockInputPersonalization)) __obj.updateDynamic("privacyBlockInputPersonalization")(privacyBlockInputPersonalization.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetProtectionModeBlocked)) __obj.updateDynamic("resetProtectionModeBlocked")(resetProtectionModeBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(privacyAutoAcceptPairingAndConsentPrompts)) __obj.updateDynamic("privacyAutoAcceptPairingAndConsentPrompts")(privacyAutoAcceptPairingAndConsentPrompts.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(privacyBlockInputPersonalization)) __obj.updateDynamic("privacyBlockInputPersonalization")(privacyBlockInputPersonalization.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetProtectionModeBlocked)) __obj.updateDynamic("resetProtectionModeBlocked")(resetProtectionModeBlocked.get.asInstanceOf[js.Any])
     if (safeSearchFilter != null) __obj.updateDynamic("safeSearchFilter")(safeSearchFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenCaptureBlocked)) __obj.updateDynamic("screenCaptureBlocked")(screenCaptureBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchBlockDiacritics)) __obj.updateDynamic("searchBlockDiacritics")(searchBlockDiacritics.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchDisableAutoLanguageDetection)) __obj.updateDynamic("searchDisableAutoLanguageDetection")(searchDisableAutoLanguageDetection.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchDisableIndexerBackoff)) __obj.updateDynamic("searchDisableIndexerBackoff")(searchDisableIndexerBackoff.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchDisableIndexingEncryptedItems)) __obj.updateDynamic("searchDisableIndexingEncryptedItems")(searchDisableIndexingEncryptedItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchDisableIndexingRemovableDrive)) __obj.updateDynamic("searchDisableIndexingRemovableDrive")(searchDisableIndexingRemovableDrive.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchEnableAutomaticIndexSizeManangement)) __obj.updateDynamic("searchEnableAutomaticIndexSizeManangement")(searchEnableAutomaticIndexSizeManangement.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchEnableRemoteQueries)) __obj.updateDynamic("searchEnableRemoteQueries")(searchEnableRemoteQueries.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockAccountsPage)) __obj.updateDynamic("settingsBlockAccountsPage")(settingsBlockAccountsPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockAddProvisioningPackage)) __obj.updateDynamic("settingsBlockAddProvisioningPackage")(settingsBlockAddProvisioningPackage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockAppsPage)) __obj.updateDynamic("settingsBlockAppsPage")(settingsBlockAppsPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockChangeLanguage)) __obj.updateDynamic("settingsBlockChangeLanguage")(settingsBlockChangeLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockChangePowerSleep)) __obj.updateDynamic("settingsBlockChangePowerSleep")(settingsBlockChangePowerSleep.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockChangeRegion)) __obj.updateDynamic("settingsBlockChangeRegion")(settingsBlockChangeRegion.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockChangeSystemTime)) __obj.updateDynamic("settingsBlockChangeSystemTime")(settingsBlockChangeSystemTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockDevicesPage)) __obj.updateDynamic("settingsBlockDevicesPage")(settingsBlockDevicesPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockEaseOfAccessPage)) __obj.updateDynamic("settingsBlockEaseOfAccessPage")(settingsBlockEaseOfAccessPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockEditDeviceName)) __obj.updateDynamic("settingsBlockEditDeviceName")(settingsBlockEditDeviceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockGamingPage)) __obj.updateDynamic("settingsBlockGamingPage")(settingsBlockGamingPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockNetworkInternetPage)) __obj.updateDynamic("settingsBlockNetworkInternetPage")(settingsBlockNetworkInternetPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockPersonalizationPage)) __obj.updateDynamic("settingsBlockPersonalizationPage")(settingsBlockPersonalizationPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockPrivacyPage)) __obj.updateDynamic("settingsBlockPrivacyPage")(settingsBlockPrivacyPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockRemoveProvisioningPackage)) __obj.updateDynamic("settingsBlockRemoveProvisioningPackage")(settingsBlockRemoveProvisioningPackage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockSettingsApp)) __obj.updateDynamic("settingsBlockSettingsApp")(settingsBlockSettingsApp.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockSystemPage)) __obj.updateDynamic("settingsBlockSystemPage")(settingsBlockSystemPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockTimeLanguagePage)) __obj.updateDynamic("settingsBlockTimeLanguagePage")(settingsBlockTimeLanguagePage.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockUpdateSecurityPage)) __obj.updateDynamic("settingsBlockUpdateSecurityPage")(settingsBlockUpdateSecurityPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharedUserAppDataAllowed)) __obj.updateDynamic("sharedUserAppDataAllowed")(sharedUserAppDataAllowed.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartScreenBlockPromptOverride)) __obj.updateDynamic("smartScreenBlockPromptOverride")(smartScreenBlockPromptOverride.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartScreenBlockPromptOverrideForFiles)) __obj.updateDynamic("smartScreenBlockPromptOverrideForFiles")(smartScreenBlockPromptOverrideForFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartScreenEnableAppInstallControl)) __obj.updateDynamic("smartScreenEnableAppInstallControl")(smartScreenEnableAppInstallControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(startBlockUnpinningAppsFromTaskbar)) __obj.updateDynamic("startBlockUnpinningAppsFromTaskbar")(startBlockUnpinningAppsFromTaskbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenCaptureBlocked)) __obj.updateDynamic("screenCaptureBlocked")(screenCaptureBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchBlockDiacritics)) __obj.updateDynamic("searchBlockDiacritics")(searchBlockDiacritics.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchDisableAutoLanguageDetection)) __obj.updateDynamic("searchDisableAutoLanguageDetection")(searchDisableAutoLanguageDetection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchDisableIndexerBackoff)) __obj.updateDynamic("searchDisableIndexerBackoff")(searchDisableIndexerBackoff.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchDisableIndexingEncryptedItems)) __obj.updateDynamic("searchDisableIndexingEncryptedItems")(searchDisableIndexingEncryptedItems.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchDisableIndexingRemovableDrive)) __obj.updateDynamic("searchDisableIndexingRemovableDrive")(searchDisableIndexingRemovableDrive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchEnableAutomaticIndexSizeManangement)) __obj.updateDynamic("searchEnableAutomaticIndexSizeManangement")(searchEnableAutomaticIndexSizeManangement.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchEnableRemoteQueries)) __obj.updateDynamic("searchEnableRemoteQueries")(searchEnableRemoteQueries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockAccountsPage)) __obj.updateDynamic("settingsBlockAccountsPage")(settingsBlockAccountsPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockAddProvisioningPackage)) __obj.updateDynamic("settingsBlockAddProvisioningPackage")(settingsBlockAddProvisioningPackage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockAppsPage)) __obj.updateDynamic("settingsBlockAppsPage")(settingsBlockAppsPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockChangeLanguage)) __obj.updateDynamic("settingsBlockChangeLanguage")(settingsBlockChangeLanguage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockChangePowerSleep)) __obj.updateDynamic("settingsBlockChangePowerSleep")(settingsBlockChangePowerSleep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockChangeRegion)) __obj.updateDynamic("settingsBlockChangeRegion")(settingsBlockChangeRegion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockChangeSystemTime)) __obj.updateDynamic("settingsBlockChangeSystemTime")(settingsBlockChangeSystemTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockDevicesPage)) __obj.updateDynamic("settingsBlockDevicesPage")(settingsBlockDevicesPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockEaseOfAccessPage)) __obj.updateDynamic("settingsBlockEaseOfAccessPage")(settingsBlockEaseOfAccessPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockEditDeviceName)) __obj.updateDynamic("settingsBlockEditDeviceName")(settingsBlockEditDeviceName.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockGamingPage)) __obj.updateDynamic("settingsBlockGamingPage")(settingsBlockGamingPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockNetworkInternetPage)) __obj.updateDynamic("settingsBlockNetworkInternetPage")(settingsBlockNetworkInternetPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockPersonalizationPage)) __obj.updateDynamic("settingsBlockPersonalizationPage")(settingsBlockPersonalizationPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockPrivacyPage)) __obj.updateDynamic("settingsBlockPrivacyPage")(settingsBlockPrivacyPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockRemoveProvisioningPackage)) __obj.updateDynamic("settingsBlockRemoveProvisioningPackage")(settingsBlockRemoveProvisioningPackage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockSettingsApp)) __obj.updateDynamic("settingsBlockSettingsApp")(settingsBlockSettingsApp.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockSystemPage)) __obj.updateDynamic("settingsBlockSystemPage")(settingsBlockSystemPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockTimeLanguagePage)) __obj.updateDynamic("settingsBlockTimeLanguagePage")(settingsBlockTimeLanguagePage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(settingsBlockUpdateSecurityPage)) __obj.updateDynamic("settingsBlockUpdateSecurityPage")(settingsBlockUpdateSecurityPage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sharedUserAppDataAllowed)) __obj.updateDynamic("sharedUserAppDataAllowed")(sharedUserAppDataAllowed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartScreenBlockPromptOverride)) __obj.updateDynamic("smartScreenBlockPromptOverride")(smartScreenBlockPromptOverride.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartScreenBlockPromptOverrideForFiles)) __obj.updateDynamic("smartScreenBlockPromptOverrideForFiles")(smartScreenBlockPromptOverrideForFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartScreenEnableAppInstallControl)) __obj.updateDynamic("smartScreenEnableAppInstallControl")(smartScreenEnableAppInstallControl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startBlockUnpinningAppsFromTaskbar)) __obj.updateDynamic("startBlockUnpinningAppsFromTaskbar")(startBlockUnpinningAppsFromTaskbar.get.asInstanceOf[js.Any])
     if (startMenuAppListVisibility != null) __obj.updateDynamic("startMenuAppListVisibility")(startMenuAppListVisibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideChangeAccountSettings)) __obj.updateDynamic("startMenuHideChangeAccountSettings")(startMenuHideChangeAccountSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideFrequentlyUsedApps)) __obj.updateDynamic("startMenuHideFrequentlyUsedApps")(startMenuHideFrequentlyUsedApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideHibernate)) __obj.updateDynamic("startMenuHideHibernate")(startMenuHideHibernate.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideLock)) __obj.updateDynamic("startMenuHideLock")(startMenuHideLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHidePowerButton)) __obj.updateDynamic("startMenuHidePowerButton")(startMenuHidePowerButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideRecentJumpLists)) __obj.updateDynamic("startMenuHideRecentJumpLists")(startMenuHideRecentJumpLists.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideRecentlyAddedApps)) __obj.updateDynamic("startMenuHideRecentlyAddedApps")(startMenuHideRecentlyAddedApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideRestartOptions)) __obj.updateDynamic("startMenuHideRestartOptions")(startMenuHideRestartOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideShutDown)) __obj.updateDynamic("startMenuHideShutDown")(startMenuHideShutDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideSignOut)) __obj.updateDynamic("startMenuHideSignOut")(startMenuHideSignOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideSleep)) __obj.updateDynamic("startMenuHideSleep")(startMenuHideSleep.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideSwitchAccount)) __obj.updateDynamic("startMenuHideSwitchAccount")(startMenuHideSwitchAccount.asInstanceOf[js.Any])
-    if (!js.isUndefined(startMenuHideUserTile)) __obj.updateDynamic("startMenuHideUserTile")(startMenuHideUserTile.asInstanceOf[js.Any])
-    if (startMenuLayoutEdgeAssetsXml != null) __obj.updateDynamic("startMenuLayoutEdgeAssetsXml")(startMenuLayoutEdgeAssetsXml.asInstanceOf[js.Any])
-    if (startMenuLayoutXml != null) __obj.updateDynamic("startMenuLayoutXml")(startMenuLayoutXml.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideChangeAccountSettings)) __obj.updateDynamic("startMenuHideChangeAccountSettings")(startMenuHideChangeAccountSettings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideFrequentlyUsedApps)) __obj.updateDynamic("startMenuHideFrequentlyUsedApps")(startMenuHideFrequentlyUsedApps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideHibernate)) __obj.updateDynamic("startMenuHideHibernate")(startMenuHideHibernate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideLock)) __obj.updateDynamic("startMenuHideLock")(startMenuHideLock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHidePowerButton)) __obj.updateDynamic("startMenuHidePowerButton")(startMenuHidePowerButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideRecentJumpLists)) __obj.updateDynamic("startMenuHideRecentJumpLists")(startMenuHideRecentJumpLists.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideRecentlyAddedApps)) __obj.updateDynamic("startMenuHideRecentlyAddedApps")(startMenuHideRecentlyAddedApps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideRestartOptions)) __obj.updateDynamic("startMenuHideRestartOptions")(startMenuHideRestartOptions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideShutDown)) __obj.updateDynamic("startMenuHideShutDown")(startMenuHideShutDown.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideSignOut)) __obj.updateDynamic("startMenuHideSignOut")(startMenuHideSignOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideSleep)) __obj.updateDynamic("startMenuHideSleep")(startMenuHideSleep.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideSwitchAccount)) __obj.updateDynamic("startMenuHideSwitchAccount")(startMenuHideSwitchAccount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuHideUserTile)) __obj.updateDynamic("startMenuHideUserTile")(startMenuHideUserTile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuLayoutEdgeAssetsXml)) __obj.updateDynamic("startMenuLayoutEdgeAssetsXml")(startMenuLayoutEdgeAssetsXml.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startMenuLayoutXml)) __obj.updateDynamic("startMenuLayoutXml")(startMenuLayoutXml.get.asInstanceOf[js.Any])
     if (startMenuMode != null) __obj.updateDynamic("startMenuMode")(startMenuMode.asInstanceOf[js.Any])
     if (startMenuPinnedFolderDocuments != null) __obj.updateDynamic("startMenuPinnedFolderDocuments")(startMenuPinnedFolderDocuments.asInstanceOf[js.Any])
     if (startMenuPinnedFolderDownloads != null) __obj.updateDynamic("startMenuPinnedFolderDownloads")(startMenuPinnedFolderDownloads.asInstanceOf[js.Any])
@@ -957,35 +957,35 @@ object Windows10GeneralConfiguration {
     if (startMenuPinnedFolderPictures != null) __obj.updateDynamic("startMenuPinnedFolderPictures")(startMenuPinnedFolderPictures.asInstanceOf[js.Any])
     if (startMenuPinnedFolderSettings != null) __obj.updateDynamic("startMenuPinnedFolderSettings")(startMenuPinnedFolderSettings.asInstanceOf[js.Any])
     if (startMenuPinnedFolderVideos != null) __obj.updateDynamic("startMenuPinnedFolderVideos")(startMenuPinnedFolderVideos.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageBlockRemovableStorage)) __obj.updateDynamic("storageBlockRemovableStorage")(storageBlockRemovableStorage.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageRequireMobileDeviceEncryption)) __obj.updateDynamic("storageRequireMobileDeviceEncryption")(storageRequireMobileDeviceEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageRestrictAppDataToSystemVolume)) __obj.updateDynamic("storageRestrictAppDataToSystemVolume")(storageRestrictAppDataToSystemVolume.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageRestrictAppInstallToSystemVolume)) __obj.updateDynamic("storageRestrictAppInstallToSystemVolume")(storageRestrictAppInstallToSystemVolume.asInstanceOf[js.Any])
-    if (!js.isUndefined(tenantLockdownRequireNetworkDuringOutOfBoxExperience)) __obj.updateDynamic("tenantLockdownRequireNetworkDuringOutOfBoxExperience")(tenantLockdownRequireNetworkDuringOutOfBoxExperience.asInstanceOf[js.Any])
-    if (!js.isUndefined(usbBlocked)) __obj.updateDynamic("usbBlocked")(usbBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageBlockRemovableStorage)) __obj.updateDynamic("storageBlockRemovableStorage")(storageBlockRemovableStorage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageRequireMobileDeviceEncryption)) __obj.updateDynamic("storageRequireMobileDeviceEncryption")(storageRequireMobileDeviceEncryption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageRestrictAppDataToSystemVolume)) __obj.updateDynamic("storageRestrictAppDataToSystemVolume")(storageRestrictAppDataToSystemVolume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(storageRestrictAppInstallToSystemVolume)) __obj.updateDynamic("storageRestrictAppInstallToSystemVolume")(storageRestrictAppInstallToSystemVolume.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tenantLockdownRequireNetworkDuringOutOfBoxExperience)) __obj.updateDynamic("tenantLockdownRequireNetworkDuringOutOfBoxExperience")(tenantLockdownRequireNetworkDuringOutOfBoxExperience.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usbBlocked)) __obj.updateDynamic("usbBlocked")(usbBlocked.get.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(voiceRecordingBlocked)) __obj.updateDynamic("voiceRecordingBlocked")(voiceRecordingBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(webRtcBlockLocalhostIpAddress)) __obj.updateDynamic("webRtcBlockLocalhostIpAddress")(webRtcBlockLocalhostIpAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(wiFiBlockAutomaticConnectHotspots)) __obj.updateDynamic("wiFiBlockAutomaticConnectHotspots")(wiFiBlockAutomaticConnectHotspots.asInstanceOf[js.Any])
-    if (!js.isUndefined(wiFiBlockManualConfiguration)) __obj.updateDynamic("wiFiBlockManualConfiguration")(wiFiBlockManualConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(wiFiBlocked)) __obj.updateDynamic("wiFiBlocked")(wiFiBlocked.asInstanceOf[js.Any])
-    if (wiFiScanInterval != null) __obj.updateDynamic("wiFiScanInterval")(wiFiScanInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsSpotlightBlockConsumerSpecificFeatures)) __obj.updateDynamic("windowsSpotlightBlockConsumerSpecificFeatures")(windowsSpotlightBlockConsumerSpecificFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsSpotlightBlockOnActionCenter)) __obj.updateDynamic("windowsSpotlightBlockOnActionCenter")(windowsSpotlightBlockOnActionCenter.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsSpotlightBlockTailoredExperiences)) __obj.updateDynamic("windowsSpotlightBlockTailoredExperiences")(windowsSpotlightBlockTailoredExperiences.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsSpotlightBlockThirdPartyNotifications)) __obj.updateDynamic("windowsSpotlightBlockThirdPartyNotifications")(windowsSpotlightBlockThirdPartyNotifications.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsSpotlightBlockWelcomeExperience)) __obj.updateDynamic("windowsSpotlightBlockWelcomeExperience")(windowsSpotlightBlockWelcomeExperience.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsSpotlightBlockWindowsTips)) __obj.updateDynamic("windowsSpotlightBlockWindowsTips")(windowsSpotlightBlockWindowsTips.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsSpotlightBlocked)) __obj.updateDynamic("windowsSpotlightBlocked")(windowsSpotlightBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(voiceRecordingBlocked)) __obj.updateDynamic("voiceRecordingBlocked")(voiceRecordingBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(webRtcBlockLocalhostIpAddress)) __obj.updateDynamic("webRtcBlockLocalhostIpAddress")(webRtcBlockLocalhostIpAddress.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wiFiBlockAutomaticConnectHotspots)) __obj.updateDynamic("wiFiBlockAutomaticConnectHotspots")(wiFiBlockAutomaticConnectHotspots.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wiFiBlockManualConfiguration)) __obj.updateDynamic("wiFiBlockManualConfiguration")(wiFiBlockManualConfiguration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wiFiBlocked)) __obj.updateDynamic("wiFiBlocked")(wiFiBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wiFiScanInterval)) __obj.updateDynamic("wiFiScanInterval")(wiFiScanInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsSpotlightBlockConsumerSpecificFeatures)) __obj.updateDynamic("windowsSpotlightBlockConsumerSpecificFeatures")(windowsSpotlightBlockConsumerSpecificFeatures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsSpotlightBlockOnActionCenter)) __obj.updateDynamic("windowsSpotlightBlockOnActionCenter")(windowsSpotlightBlockOnActionCenter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsSpotlightBlockTailoredExperiences)) __obj.updateDynamic("windowsSpotlightBlockTailoredExperiences")(windowsSpotlightBlockTailoredExperiences.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsSpotlightBlockThirdPartyNotifications)) __obj.updateDynamic("windowsSpotlightBlockThirdPartyNotifications")(windowsSpotlightBlockThirdPartyNotifications.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsSpotlightBlockWelcomeExperience)) __obj.updateDynamic("windowsSpotlightBlockWelcomeExperience")(windowsSpotlightBlockWelcomeExperience.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsSpotlightBlockWindowsTips)) __obj.updateDynamic("windowsSpotlightBlockWindowsTips")(windowsSpotlightBlockWindowsTips.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsSpotlightBlocked)) __obj.updateDynamic("windowsSpotlightBlocked")(windowsSpotlightBlocked.get.asInstanceOf[js.Any])
     if (windowsSpotlightConfigureOnLockScreen != null) __obj.updateDynamic("windowsSpotlightConfigureOnLockScreen")(windowsSpotlightConfigureOnLockScreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsStoreBlockAutoUpdate)) __obj.updateDynamic("windowsStoreBlockAutoUpdate")(windowsStoreBlockAutoUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsStoreBlocked)) __obj.updateDynamic("windowsStoreBlocked")(windowsStoreBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsStoreEnablePrivateStoreOnly)) __obj.updateDynamic("windowsStoreEnablePrivateStoreOnly")(windowsStoreEnablePrivateStoreOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(wirelessDisplayBlockProjectionToThisDevice)) __obj.updateDynamic("wirelessDisplayBlockProjectionToThisDevice")(wirelessDisplayBlockProjectionToThisDevice.asInstanceOf[js.Any])
-    if (!js.isUndefined(wirelessDisplayBlockUserInputFromReceiver)) __obj.updateDynamic("wirelessDisplayBlockUserInputFromReceiver")(wirelessDisplayBlockUserInputFromReceiver.asInstanceOf[js.Any])
-    if (!js.isUndefined(wirelessDisplayRequirePinForPairing)) __obj.updateDynamic("wirelessDisplayRequirePinForPairing")(wirelessDisplayRequirePinForPairing.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsStoreBlockAutoUpdate)) __obj.updateDynamic("windowsStoreBlockAutoUpdate")(windowsStoreBlockAutoUpdate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsStoreBlocked)) __obj.updateDynamic("windowsStoreBlocked")(windowsStoreBlocked.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsStoreEnablePrivateStoreOnly)) __obj.updateDynamic("windowsStoreEnablePrivateStoreOnly")(windowsStoreEnablePrivateStoreOnly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wirelessDisplayBlockProjectionToThisDevice)) __obj.updateDynamic("wirelessDisplayBlockProjectionToThisDevice")(wirelessDisplayBlockProjectionToThisDevice.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wirelessDisplayBlockUserInputFromReceiver)) __obj.updateDynamic("wirelessDisplayBlockUserInputFromReceiver")(wirelessDisplayBlockUserInputFromReceiver.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wirelessDisplayRequirePinForPairing)) __obj.updateDynamic("wirelessDisplayRequirePinForPairing")(wirelessDisplayRequirePinForPairing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Windows10GeneralConfiguration]
   }
 }

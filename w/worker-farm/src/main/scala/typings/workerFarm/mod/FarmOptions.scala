@@ -20,22 +20,22 @@ object FarmOptions {
   @scala.inline
   def apply(
     autoStart: js.UndefOr[Boolean] = js.undefined,
-    maxCallTime: Int | Double = null,
-    maxCallsPerWorker: Int | Double = null,
-    maxConcurrentCalls: Int | Double = null,
-    maxConcurrentCallsPerWorker: Int | Double = null,
-    maxConcurrentWorkers: Int | Double = null,
-    maxRetries: Int | Double = null,
+    maxCallTime: js.UndefOr[Double] = js.undefined,
+    maxCallsPerWorker: js.UndefOr[Double] = js.undefined,
+    maxConcurrentCalls: js.UndefOr[Double] = js.undefined,
+    maxConcurrentCallsPerWorker: js.UndefOr[Double] = js.undefined,
+    maxConcurrentWorkers: js.UndefOr[Double] = js.undefined,
+    maxRetries: js.UndefOr[Double] = js.undefined,
     workerOptions: ForkOptions = null
   ): FarmOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
-    if (maxCallTime != null) __obj.updateDynamic("maxCallTime")(maxCallTime.asInstanceOf[js.Any])
-    if (maxCallsPerWorker != null) __obj.updateDynamic("maxCallsPerWorker")(maxCallsPerWorker.asInstanceOf[js.Any])
-    if (maxConcurrentCalls != null) __obj.updateDynamic("maxConcurrentCalls")(maxConcurrentCalls.asInstanceOf[js.Any])
-    if (maxConcurrentCallsPerWorker != null) __obj.updateDynamic("maxConcurrentCallsPerWorker")(maxConcurrentCallsPerWorker.asInstanceOf[js.Any])
-    if (maxConcurrentWorkers != null) __obj.updateDynamic("maxConcurrentWorkers")(maxConcurrentWorkers.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCallTime)) __obj.updateDynamic("maxCallTime")(maxCallTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCallsPerWorker)) __obj.updateDynamic("maxCallsPerWorker")(maxCallsPerWorker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentCalls)) __obj.updateDynamic("maxConcurrentCalls")(maxConcurrentCalls.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentCallsPerWorker)) __obj.updateDynamic("maxConcurrentCallsPerWorker")(maxConcurrentCallsPerWorker.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxConcurrentWorkers)) __obj.updateDynamic("maxConcurrentWorkers")(maxConcurrentWorkers.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     if (workerOptions != null) __obj.updateDynamic("workerOptions")(workerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FarmOptions]
   }

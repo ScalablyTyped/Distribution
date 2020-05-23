@@ -32,12 +32,12 @@ object S3SignatureOptions {
   def apply(
     customHeaders: js.Any | S3CustomHeaderFunction = null,
     endpoint: String = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): S3SignatureOptions = {
     val __obj = js.Dynamic.literal()
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3SignatureOptions]
   }
 }

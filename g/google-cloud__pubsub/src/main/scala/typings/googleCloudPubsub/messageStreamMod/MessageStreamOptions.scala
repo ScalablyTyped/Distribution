@@ -12,11 +12,15 @@ trait MessageStreamOptions extends js.Object {
 
 object MessageStreamOptions {
   @scala.inline
-  def apply(highWaterMark: Int | Double = null, maxStreams: Int | Double = null, timeout: Int | Double = null): MessageStreamOptions = {
+  def apply(
+    highWaterMark: js.UndefOr[Double] = js.undefined,
+    maxStreams: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
+  ): MessageStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (maxStreams != null) __obj.updateDynamic("maxStreams")(maxStreams.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxStreams)) __obj.updateDynamic("maxStreams")(maxStreams.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageStreamOptions]
   }
 }

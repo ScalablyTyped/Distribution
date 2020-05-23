@@ -35,9 +35,9 @@ class Axis protected ()
     * @param chart
     *        The Chart instance to apply the axis on.
     *
-    * @param options
+    * @param userOptions
     *        Axis options.
     */
-  def this(chart: typings.highcharts.mod.Chart_, options: AxisOptions) = this()
+  def this(chart: typings.highcharts.mod.Chart_, userOptions: AxisOptions) = this()
 }
 

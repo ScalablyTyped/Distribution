@@ -18,9 +18,9 @@ trait Origination extends js.Object {
 
 object Origination {
   @scala.inline
-  def apply(Disabled: js.UndefOr[scala.Boolean] = js.undefined, Routes: OriginationRouteList = null): Origination = {
+  def apply(Disabled: js.UndefOr[Boolean] = js.undefined, Routes: OriginationRouteList = null): Origination = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.get.asInstanceOf[js.Any])
     if (Routes != null) __obj.updateDynamic("Routes")(Routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Origination]
   }

@@ -6,10 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the LogFileGenerated event. */
-@JSGlobal("Windows.Foundation.Diagnostics.LogFileGeneratedEventArgs")
-@js.native
-abstract class LogFileGeneratedEventArgs () extends js.Object {
+trait LogFileGeneratedEventArgs extends js.Object {
   /** Gets the log file. */
-  var file: StorageFile = js.native
+  var file: StorageFile
+}
+
+object LogFileGeneratedEventArgs {
+  @scala.inline
+  def apply(file: StorageFile): LogFileGeneratedEventArgs = {
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogFileGeneratedEventArgs]
+  }
 }
 

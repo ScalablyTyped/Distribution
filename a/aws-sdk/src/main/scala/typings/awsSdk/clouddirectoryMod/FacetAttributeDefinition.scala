@@ -29,12 +29,12 @@ object FacetAttributeDefinition {
   def apply(
     Type: FacetAttributeType,
     DefaultValue: TypedAttributeValue = null,
-    IsImmutable: js.UndefOr[Boolean] = js.undefined,
+    IsImmutable: js.UndefOr[Bool] = js.undefined,
     Rules: RuleMap = null
   ): FacetAttributeDefinition = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsImmutable)) __obj.updateDynamic("IsImmutable")(IsImmutable.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsImmutable)) __obj.updateDynamic("IsImmutable")(IsImmutable.get.asInstanceOf[js.Any])
     if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetAttributeDefinition]
   }

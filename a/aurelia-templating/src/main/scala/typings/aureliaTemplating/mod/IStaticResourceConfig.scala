@@ -104,16 +104,16 @@ object IStaticResourceConfig {
   ): IStaticResourceConfig = {
     val __obj = js.Dynamic.literal()
     if (bindables != null) __obj.updateDynamic("bindables")(bindables.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerless)) __obj.updateDynamic("containerless")(containerless.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerless)) __obj.updateDynamic("containerless")(containerless.get.asInstanceOf[js.Any])
     if (defaultBindingMode != null) __obj.updateDynamic("defaultBindingMode")(defaultBindingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDynamicOptions)) __obj.updateDynamic("hasDynamicOptions")(hasDynamicOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDynamicOptions)) __obj.updateDynamic("hasDynamicOptions")(hasDynamicOptions.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (processAttributes != null) __obj.updateDynamic("processAttributes")(js.Any.fromFunction5(processAttributes))
     if (processContent != null) __obj.updateDynamic("processContent")(js.Any.fromFunction4(processContent))
     if (shadowDOMOptions != null) __obj.updateDynamic("shadowDOMOptions")(shadowDOMOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(templateController)) __obj.updateDynamic("templateController")(templateController.asInstanceOf[js.Any])
+    if (!js.isUndefined(templateController)) __obj.updateDynamic("templateController")(templateController.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(usesShadowDOM)) __obj.updateDynamic("usesShadowDOM")(usesShadowDOM.asInstanceOf[js.Any])
+    if (!js.isUndefined(usesShadowDOM)) __obj.updateDynamic("usesShadowDOM")(usesShadowDOM.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStaticResourceConfig]
   }
 }

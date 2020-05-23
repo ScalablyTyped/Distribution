@@ -63,14 +63,14 @@ object RecognizeParams {
     base_model_version: String = null,
     content_type: ContentType | String = null,
     customization_id: String = null,
-    customization_weight: Int | Double = null,
+    customization_weight: js.UndefOr[Double] = js.undefined,
     grammar_name: String = null,
     headers: js.Object = null,
-    inactivity_timeout: Int | Double = null,
+    inactivity_timeout: js.UndefOr[Double] = js.undefined,
     keywords: js.Array[String] = null,
-    keywords_threshold: Int | Double = null,
+    keywords_threshold: js.UndefOr[Double] = js.undefined,
     language_customization_id: String = null,
-    max_alternatives: Int | Double = null,
+    max_alternatives: js.UndefOr[Double] = js.undefined,
     model: Model | String = null,
     profanity_filter: js.UndefOr[Boolean] = js.undefined,
     redaction: js.UndefOr[Boolean] = js.undefined,
@@ -78,7 +78,7 @@ object RecognizeParams {
     smart_formatting: js.UndefOr[Boolean] = js.undefined,
     speaker_labels: js.UndefOr[Boolean] = js.undefined,
     timestamps: js.UndefOr[Boolean] = js.undefined,
-    word_alternatives_threshold: Int | Double = null,
+    word_alternatives_threshold: js.UndefOr[Double] = js.undefined,
     word_confidence: js.UndefOr[Boolean] = js.undefined
   ): RecognizeParams = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any])
@@ -86,23 +86,23 @@ object RecognizeParams {
     if (base_model_version != null) __obj.updateDynamic("base_model_version")(base_model_version.asInstanceOf[js.Any])
     if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
     if (customization_id != null) __obj.updateDynamic("customization_id")(customization_id.asInstanceOf[js.Any])
-    if (customization_weight != null) __obj.updateDynamic("customization_weight")(customization_weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(customization_weight)) __obj.updateDynamic("customization_weight")(customization_weight.get.asInstanceOf[js.Any])
     if (grammar_name != null) __obj.updateDynamic("grammar_name")(grammar_name.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (inactivity_timeout != null) __obj.updateDynamic("inactivity_timeout")(inactivity_timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(inactivity_timeout)) __obj.updateDynamic("inactivity_timeout")(inactivity_timeout.get.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (keywords_threshold != null) __obj.updateDynamic("keywords_threshold")(keywords_threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(keywords_threshold)) __obj.updateDynamic("keywords_threshold")(keywords_threshold.get.asInstanceOf[js.Any])
     if (language_customization_id != null) __obj.updateDynamic("language_customization_id")(language_customization_id.asInstanceOf[js.Any])
-    if (max_alternatives != null) __obj.updateDynamic("max_alternatives")(max_alternatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_alternatives)) __obj.updateDynamic("max_alternatives")(max_alternatives.get.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(profanity_filter)) __obj.updateDynamic("profanity_filter")(profanity_filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(redaction)) __obj.updateDynamic("redaction")(redaction.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
-    if (!js.isUndefined(smart_formatting)) __obj.updateDynamic("smart_formatting")(smart_formatting.asInstanceOf[js.Any])
-    if (!js.isUndefined(speaker_labels)) __obj.updateDynamic("speaker_labels")(speaker_labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
-    if (word_alternatives_threshold != null) __obj.updateDynamic("word_alternatives_threshold")(word_alternatives_threshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(word_confidence)) __obj.updateDynamic("word_confidence")(word_confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(profanity_filter)) __obj.updateDynamic("profanity_filter")(profanity_filter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(redaction)) __obj.updateDynamic("redaction")(redaction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smart_formatting)) __obj.updateDynamic("smart_formatting")(smart_formatting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(speaker_labels)) __obj.updateDynamic("speaker_labels")(speaker_labels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(word_alternatives_threshold)) __obj.updateDynamic("word_alternatives_threshold")(word_alternatives_threshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(word_confidence)) __obj.updateDynamic("word_confidence")(word_confidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognizeParams]
   }
 }

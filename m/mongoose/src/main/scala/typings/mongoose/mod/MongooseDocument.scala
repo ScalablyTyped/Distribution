@@ -1,7 +1,7 @@
 package typings.mongoose.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mongoose.AnonGetters
+import typings.mongoose.anon.Getters
 import typings.mongoose.mod.Error.ValidationError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,7 +62,7 @@ trait MongooseDocument extends MongooseDocumentOptionals {
     */
   def get(path: String): js.Any = js.native
   def get(path: String, `type`: js.Any): js.Any = js.native
-  def get(path: String, `type`: js.Any, options: AnonGetters): js.Any = js.native
+  def get(path: String, `type`: js.Any, options: Getters): js.Any = js.native
   /**
     * Initializes the document without setters or marking anything modified.
     * Called internally after a document is returned from mongodb.

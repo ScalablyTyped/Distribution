@@ -1,6 +1,6 @@
 package typings.gregorianCalendar.gregorianCalendarFormatMod
 
-import typings.gregorianCalendar.AnonLocale
+import typings.gregorianCalendar.anon.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +21,6 @@ trait DateTimeFormat extends js.Object {
     * parse a dateString to an instance of GregorianCalendar according to pattern, it's better to specify calendarLocale, such as
     *  `df.parse('2013-11-12', {locale: require('gregorian-calendar/lib/locale/zh_CN'}));`
     */
-  def parse(dateString: String, hasLocale: AnonLocale): typings.gregorianCalendar.mod.^ = js.native
+  def parse(dateString: String, hasLocale: Locale): typings.gregorianCalendar.mod.^ = js.native
 }
 

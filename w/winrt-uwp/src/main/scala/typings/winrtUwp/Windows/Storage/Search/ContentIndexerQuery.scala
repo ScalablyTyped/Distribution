@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a query for content properties in the ContentIndexer . */
-@JSGlobal("Windows.Storage.Search.ContentIndexerQuery")
 @js.native
-abstract class ContentIndexerQuery () extends js.Object {
+trait ContentIndexerQuery extends js.Object {
   /** Gets the StorageFolder representation of the app-provided items in the ContentIndexer query. */
   var queryFolder: StorageFolder = js.native
   /**

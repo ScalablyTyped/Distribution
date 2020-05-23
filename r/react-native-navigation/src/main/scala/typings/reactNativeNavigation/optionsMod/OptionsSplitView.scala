@@ -35,14 +35,14 @@ object OptionsSplitView {
   @scala.inline
   def apply(
     displayMode: auto | visible | hidden | overlay = null,
-    maxWidth: Int | Double = null,
-    minWidth: Int | Double = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     primaryEdge: leading | trailing = null
   ): OptionsSplitView = {
     val __obj = js.Dynamic.literal()
     if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (primaryEdge != null) __obj.updateDynamic("primaryEdge")(primaryEdge.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsSplitView]
   }

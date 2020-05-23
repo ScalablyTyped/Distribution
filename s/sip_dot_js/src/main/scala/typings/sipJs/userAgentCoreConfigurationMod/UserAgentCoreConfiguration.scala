@@ -42,12 +42,12 @@ trait UserAgentCoreConfiguration extends js.Object {
     */
   var sipjsId: String
   /**
-    * Option tags of supported SIP extenstions.
+    * Option tags of supported SIP extensions.
     */
   var supportedOptionTags: js.Array[String]
   /**
-    * Option tags of supported SIP extenstions.
-    * Used in resposnes.
+    * Option tags of supported SIP extensions.
+    * Used in responses.
     * @remarks
     * FIXME: Make this go away.
     */

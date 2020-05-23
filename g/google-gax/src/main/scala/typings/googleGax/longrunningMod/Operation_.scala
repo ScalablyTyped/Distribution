@@ -76,8 +76,8 @@ class Operation_ protected () extends EventEmitter {
   def cancel(): CancellablePromise[
     js.Tuple3[
       ResponseType, 
-      js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[js.Object | Operation_]
+      js.UndefOr[(StringDictionary[String | Double | js.Object]) | Null], 
+      js.UndefOr[js.Object | Operation_ | Null]
     ]
   ] = js.native
   /**

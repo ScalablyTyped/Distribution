@@ -51,7 +51,7 @@ object confirmOptions {
     content: js.Any = null,
     contentLoaded: () => Unit = null,
     dragWindowBorder: js.UndefOr[Boolean] = js.undefined,
-    dragWindowGap: Int | Double = null,
+    dragWindowGap: js.UndefOr[Double] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     escapeKey: String | Boolean = null,
     icon: String = null,
@@ -77,15 +77,15 @@ object confirmOptions {
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (closeIconClass != null) __obj.updateDynamic("closeIconClass")(closeIconClass.asInstanceOf[js.Any])
     if (columnClass != null) __obj.updateDynamic("columnClass")(columnClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerFluid)) __obj.updateDynamic("containerFluid")(containerFluid.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerFluid)) __obj.updateDynamic("containerFluid")(containerFluid.get.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (contentLoaded != null) __obj.updateDynamic("contentLoaded")(js.Any.fromFunction0(contentLoaded))
-    if (!js.isUndefined(dragWindowBorder)) __obj.updateDynamic("dragWindowBorder")(dragWindowBorder.asInstanceOf[js.Any])
-    if (dragWindowGap != null) __obj.updateDynamic("dragWindowGap")(dragWindowGap.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragWindowBorder)) __obj.updateDynamic("dragWindowBorder")(dragWindowBorder.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragWindowGap)) __obj.updateDynamic("dragWindowGap")(dragWindowGap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
     if (escapeKey != null) __obj.updateDynamic("escapeKey")(escapeKey.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyOpen)) __obj.updateDynamic("lazyOpen")(lazyOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyOpen)) __obj.updateDynamic("lazyOpen")(lazyOpen.get.asInstanceOf[js.Any])
     if (onAction != null) __obj.updateDynamic("onAction")(js.Any.fromFunction0(onAction))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onContentReady != null) __obj.updateDynamic("onContentReady")(onContentReady.asInstanceOf[js.Any])
@@ -94,8 +94,8 @@ object confirmOptions {
     if (onOpenBefore != null) __obj.updateDynamic("onOpenBefore")(js.Any.fromFunction0(onOpenBefore))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeAnimated)) __obj.updateDynamic("typeAnimated")(typeAnimated.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBootstrap)) __obj.updateDynamic("useBootstrap")(useBootstrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeAnimated)) __obj.updateDynamic("typeAnimated")(typeAnimated.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBootstrap)) __obj.updateDynamic("useBootstrap")(useBootstrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[confirmOptions]
   }
 }

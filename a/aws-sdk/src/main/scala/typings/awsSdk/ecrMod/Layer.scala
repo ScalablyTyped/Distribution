@@ -29,13 +29,13 @@ object Layer {
   def apply(
     layerAvailability: LayerAvailability = null,
     layerDigest: LayerDigest = null,
-    layerSize: Int | Double = null,
+    layerSize: js.UndefOr[LayerSizeInBytes] = js.undefined,
     mediaType: MediaType = null
   ): Layer = {
     val __obj = js.Dynamic.literal()
     if (layerAvailability != null) __obj.updateDynamic("layerAvailability")(layerAvailability.asInstanceOf[js.Any])
     if (layerDigest != null) __obj.updateDynamic("layerDigest")(layerDigest.asInstanceOf[js.Any])
-    if (layerSize != null) __obj.updateDynamic("layerSize")(layerSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(layerSize)) __obj.updateDynamic("layerSize")(layerSize.get.asInstanceOf[js.Any])
     if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }

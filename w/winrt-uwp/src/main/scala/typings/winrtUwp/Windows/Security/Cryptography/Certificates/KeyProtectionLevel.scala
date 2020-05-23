@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,6 @@ object KeyProtectionLevel extends js.Object {
   /** No strong key protection. */
   @js.native
   sealed trait noConsent extends KeyProtectionLevel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KeyProtectionLevel with Double] = js.native
-  /* 1 */ @js.native
-  object consentOnly extends TopLevel[consentOnly with Double]
-  
-  /* 3 */ @js.native
-  object consentWithFingerprint extends TopLevel[consentWithFingerprint with Double]
-  
-  /* 2 */ @js.native
-  object consentWithPassword extends TopLevel[consentWithPassword with Double]
-  
-  /* 0 */ @js.native
-  object noConsent extends TopLevel[noConsent with Double]
   
 }
 

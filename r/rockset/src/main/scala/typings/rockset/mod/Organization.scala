@@ -36,7 +36,7 @@ object Organization {
     created_at: String = null,
     display_name: String = null,
     id: String = null,
-    qcu: Int | Double = null,
+    qcu: js.UndefOr[Double] = js.undefined,
     state: ACTIVE | TRIAL | TRIAL_EXPIRED | DELETED = null,
     tier: FREE | BASIC | PRO | ENTERPRISE = null
   ): Organization = {
@@ -45,7 +45,7 @@ object Organization {
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (display_name != null) __obj.updateDynamic("display_name")(display_name.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (qcu != null) __obj.updateDynamic("qcu")(qcu.asInstanceOf[js.Any])
+    if (!js.isUndefined(qcu)) __obj.updateDynamic("qcu")(qcu.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Organization]

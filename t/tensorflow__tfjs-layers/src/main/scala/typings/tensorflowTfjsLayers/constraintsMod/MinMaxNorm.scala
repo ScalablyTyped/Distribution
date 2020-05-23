@@ -23,6 +23,6 @@ class MinMaxNorm protected () extends Constraint {
 @js.native
 object MinMaxNorm extends js.Object {
   /** @nocollapse */
-  val className: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MinMaxNorm = js.native
+  val className: /* "MinMaxNorm" */ String = js.native
 }
 

@@ -161,46 +161,46 @@ object ParagraphData {
   @scala.inline
   def apply(
     alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
-    firstLineIndent: Int | Double = null,
+    firstLineIndent: js.UndefOr[Double] = js.undefined,
     font: FontData = null,
     inlinePictures: js.Array[InlinePictureData] = null,
     isLastParagraph: js.UndefOr[Boolean] = js.undefined,
     isListItem: js.UndefOr[Boolean] = js.undefined,
-    leftIndent: Int | Double = null,
-    lineSpacing: Int | Double = null,
-    lineUnitAfter: Int | Double = null,
-    lineUnitBefore: Int | Double = null,
+    leftIndent: js.UndefOr[Double] = js.undefined,
+    lineSpacing: js.UndefOr[Double] = js.undefined,
+    lineUnitAfter: js.UndefOr[Double] = js.undefined,
+    lineUnitBefore: js.UndefOr[Double] = js.undefined,
     listItem: ListItemData = null,
     listItemOrNullObject: ListItemData = null,
-    outlineLevel: Int | Double = null,
-    rightIndent: Int | Double = null,
-    spaceAfter: Int | Double = null,
-    spaceBefore: Int | Double = null,
+    outlineLevel: js.UndefOr[Double] = js.undefined,
+    rightIndent: js.UndefOr[Double] = js.undefined,
+    spaceAfter: js.UndefOr[Double] = js.undefined,
+    spaceBefore: js.UndefOr[Double] = js.undefined,
     style: String = null,
     styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any = null,
-    tableNestingLevel: Int | Double = null,
+    tableNestingLevel: js.UndefOr[Double] = js.undefined,
     text: String = null
   ): ParagraphData = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (firstLineIndent != null) __obj.updateDynamic("firstLineIndent")(firstLineIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstLineIndent)) __obj.updateDynamic("firstLineIndent")(firstLineIndent.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLastParagraph)) __obj.updateDynamic("isLastParagraph")(isLastParagraph.asInstanceOf[js.Any])
-    if (!js.isUndefined(isListItem)) __obj.updateDynamic("isListItem")(isListItem.asInstanceOf[js.Any])
-    if (leftIndent != null) __obj.updateDynamic("leftIndent")(leftIndent.asInstanceOf[js.Any])
-    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
-    if (lineUnitAfter != null) __obj.updateDynamic("lineUnitAfter")(lineUnitAfter.asInstanceOf[js.Any])
-    if (lineUnitBefore != null) __obj.updateDynamic("lineUnitBefore")(lineUnitBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLastParagraph)) __obj.updateDynamic("isLastParagraph")(isLastParagraph.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isListItem)) __obj.updateDynamic("isListItem")(isListItem.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftIndent)) __obj.updateDynamic("leftIndent")(leftIndent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineSpacing)) __obj.updateDynamic("lineSpacing")(lineSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineUnitAfter)) __obj.updateDynamic("lineUnitAfter")(lineUnitAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineUnitBefore)) __obj.updateDynamic("lineUnitBefore")(lineUnitBefore.get.asInstanceOf[js.Any])
     if (listItem != null) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
     if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject.asInstanceOf[js.Any])
-    if (outlineLevel != null) __obj.updateDynamic("outlineLevel")(outlineLevel.asInstanceOf[js.Any])
-    if (rightIndent != null) __obj.updateDynamic("rightIndent")(rightIndent.asInstanceOf[js.Any])
-    if (spaceAfter != null) __obj.updateDynamic("spaceAfter")(spaceAfter.asInstanceOf[js.Any])
-    if (spaceBefore != null) __obj.updateDynamic("spaceBefore")(spaceBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineLevel)) __obj.updateDynamic("outlineLevel")(outlineLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightIndent)) __obj.updateDynamic("rightIndent")(rightIndent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaceAfter)) __obj.updateDynamic("spaceAfter")(spaceAfter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaceBefore)) __obj.updateDynamic("spaceBefore")(spaceBefore.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn.asInstanceOf[js.Any])
-    if (tableNestingLevel != null) __obj.updateDynamic("tableNestingLevel")(tableNestingLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableNestingLevel)) __obj.updateDynamic("tableNestingLevel")(tableNestingLevel.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphData]
   }

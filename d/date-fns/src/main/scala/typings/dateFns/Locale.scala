@@ -1,5 +1,8 @@
 package typings.dateFns
 
+import typings.dateFns.anon.DateTime
+import typings.dateFns.anon.Day
+import typings.dateFns.anon.FirstWeekContainsDateWeekStartsOn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,11 +10,11 @@ import scala.scalajs.js.annotation._
 trait Locale extends js.Object {
   var code: js.UndefOr[String] = js.undefined
   var formatDistance: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var formatLong: js.UndefOr[AnonDateTime] = js.undefined
+  var formatLong: js.UndefOr[DateTime] = js.undefined
   var formatRelative: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var localize: js.UndefOr[AnonDay] = js.undefined
-  var `match`: js.UndefOr[AnonDay] = js.undefined
-  var options: js.UndefOr[AnonFirstWeekContainsDateWeekStartsOn] = js.undefined
+  var localize: js.UndefOr[Day] = js.undefined
+  var `match`: js.UndefOr[Day] = js.undefined
+  var options: js.UndefOr[FirstWeekContainsDateWeekStartsOn] = js.undefined
 }
 
 object Locale {
@@ -19,11 +22,11 @@ object Locale {
   def apply(
     code: String = null,
     formatDistance: /* repeated */ js.Any => _ = null,
-    formatLong: AnonDateTime = null,
+    formatLong: DateTime = null,
     formatRelative: /* repeated */ js.Any => _ = null,
-    localize: AnonDay = null,
-    `match`: AnonDay = null,
-    options: AnonFirstWeekContainsDateWeekStartsOn = null
+    localize: Day = null,
+    `match`: Day = null,
+    options: FirstWeekContainsDateWeekStartsOn = null
   ): Locale = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])

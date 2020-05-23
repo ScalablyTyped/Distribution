@@ -14,7 +14,7 @@ object OpenUrlOptions {
   def apply(app: String | js.Array[String] = null, encode: js.UndefOr[Boolean] = js.undefined): OpenUrlOptions = {
     val __obj = js.Dynamic.literal()
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
-    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
+    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenUrlOptions]
   }
 }

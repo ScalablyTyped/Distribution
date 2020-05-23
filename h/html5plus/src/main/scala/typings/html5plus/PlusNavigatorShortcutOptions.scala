@@ -27,7 +27,7 @@ trait PlusNavigatorShortcutOptions extends js.Object {
   /**
     * 是否需要强制创建快捷方式
     * true表示强制创建，false表示不强制创建，默认值为true。
-    * 	强制创建可能会导致在无法判断快捷方式是否存在的设备上重复创建，如果需要尽可能避免出现重复创建桌面快捷方式则应该设置force属性值为false。
+    *     强制创建可能会导致在无法判断快捷方式是否存在的设备上重复创建，如果需要尽可能避免出现重复创建桌面快捷方式则应该设置force属性值为false。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
@@ -68,7 +68,7 @@ object PlusNavigatorShortcutOptions {
     val __obj = js.Dynamic.literal()
     if (classname != null) __obj.updateDynamic("classname")(classname.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (toast != null) __obj.updateDynamic("toast")(toast.asInstanceOf[js.Any])

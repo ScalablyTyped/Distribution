@@ -24,16 +24,16 @@ object VerifyParams {
     data: ArrayBuffer = null,
     extendedMode: js.UndefOr[Boolean] = js.undefined,
     includeSignerCertificate: js.UndefOr[Boolean] = js.undefined,
-    signer: Int | Double = null,
+    signer: js.UndefOr[Double] = js.undefined,
     trustedCerts: js.Array[typings.pkijs.certificateMod.default] = null
   ): VerifyParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkChain)) __obj.updateDynamic("checkChain")(checkChain.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkChain)) __obj.updateDynamic("checkChain")(checkChain.get.asInstanceOf[js.Any])
     if (checkDate != null) __obj.updateDynamic("checkDate")(checkDate.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(extendedMode)) __obj.updateDynamic("extendedMode")(extendedMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSignerCertificate)) __obj.updateDynamic("includeSignerCertificate")(includeSignerCertificate.asInstanceOf[js.Any])
-    if (signer != null) __obj.updateDynamic("signer")(signer.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendedMode)) __obj.updateDynamic("extendedMode")(extendedMode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSignerCertificate)) __obj.updateDynamic("includeSignerCertificate")(includeSignerCertificate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(signer)) __obj.updateDynamic("signer")(signer.get.asInstanceOf[js.Any])
     if (trustedCerts != null) __obj.updateDynamic("trustedCerts")(trustedCerts.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyParams]
   }

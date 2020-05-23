@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the client-side equivalent of the SeparatePaneIndicator class.
   */
-@JSGlobal("ASPxSeparatePaneIndicator")
-@js.native
-class ASPxSeparatePaneIndicator () extends ASPxClientIndicator {
+trait ASPxSeparatePaneIndicator extends ASPxClientIndicator {
   /**
     * Returns the name of the Y-axis that is used to plot the current indicator on a ASPxClientXYDiagram.
     */
-  var axisY: String = js.native
+  var axisY: String
   /**
     * Returns the name of a pane, used to plot the separate pane indicator on an XYDiagram.
     */
-  var pane: String = js.native
+  var pane: String
+}
+
+object ASPxSeparatePaneIndicator {
+  @scala.inline
+  def apply(axisY: String, chart: ASPxClientWebChart, name: String, pane: String, series: ASPxClientSeries): ASPxSeparatePaneIndicator = {
+    val __obj = js.Dynamic.literal(axisY = axisY.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pane = pane.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxSeparatePaneIndicator]
+  }
 }
 

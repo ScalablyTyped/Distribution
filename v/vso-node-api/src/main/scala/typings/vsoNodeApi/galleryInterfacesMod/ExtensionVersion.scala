@@ -1,7 +1,7 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
 import typings.std.Date
-import typings.vsoNodeApi.AnonKeyValue
+import typings.vsoNodeApi.anon.KeyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait ExtensionVersion extends js.Object {
   var files: js.Array[ExtensionFile]
   var flags: ExtensionVersionFlags
   var lastUpdated: Date
-  var properties: js.Array[AnonKeyValue]
+  var properties: js.Array[KeyValue]
   var validationResultMessage: String
   var version: String
   var versionDescription: String
@@ -28,7 +28,7 @@ object ExtensionVersion {
     files: js.Array[ExtensionFile],
     flags: ExtensionVersionFlags,
     lastUpdated: Date,
-    properties: js.Array[AnonKeyValue],
+    properties: js.Array[KeyValue],
     validationResultMessage: String,
     version: String,
     versionDescription: String

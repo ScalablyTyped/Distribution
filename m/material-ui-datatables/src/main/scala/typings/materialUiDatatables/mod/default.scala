@@ -1,6 +1,6 @@
 package typings.materialUiDatatables.mod
 
-import typings.materialUiDatatables.PartialDataTableProps
+import typings.materialUiDatatables.anon.PartialDataTableProps
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

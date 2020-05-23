@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object VpnChannelActivityEventType extends js.Object {
   /** Mode in which no traffic is being sent over the VPN channel. */
   @js.native
   sealed trait idle extends VpnChannelActivityEventType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnChannelActivityEventType with Double] = js.native
-  /* 1 */ @js.native
-  object active extends TopLevel[active with Double]
-  
-  /* 0 */ @js.native
-  object idle extends TopLevel[idle with Double]
   
 }
 

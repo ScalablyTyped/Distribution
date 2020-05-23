@@ -1,9 +1,9 @@
 package typings.memjs.mod
 
-import typings.memjs.AnonExpires
-import typings.memjs.AnonFlags
-import typings.memjs.AnonInitial
-import typings.memjs.AnonSuccess
+import typings.memjs.anon.Expires
+import typings.memjs.anon.Flags
+import typings.memjs.anon.Initial
+import typings.memjs.anon.Success
 import typings.node.Buffer
 import typings.std.Error
 import typings.std.Record
@@ -40,18 +40,18 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
-  def add(key: String, value: String, options: AnonExpires): js.Promise[Boolean] = js.native
+  def add(key: String, value: String, options: Expires): js.Promise[Boolean] = js.native
   def add(
     key: String,
     value: String,
-    options: AnonExpires,
+    options: Expires,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
-  def add(key: String, value: Buffer, options: AnonExpires): js.Promise[Boolean] = js.native
+  def add(key: String, value: Buffer, options: Expires): js.Promise[Boolean] = js.native
   def add(
     key: String,
     value: Buffer,
-    options: AnonExpires,
+    options: Expires,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
   /**
@@ -102,11 +102,11 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
-  def decrement(key: String, amount: Double, options: AnonInitial): js.Promise[AnonSuccess] = js.native
+  def decrement(key: String, amount: Double, options: Initial): js.Promise[Success] = js.native
   def decrement(
     key: String,
     amount: Double,
-    options: AnonInitial,
+    options: Initial,
     callback: js.Function3[
       /* err */ Error | Null, 
       /* success */ Boolean | Null, 
@@ -156,7 +156,7 @@ class Client protected () extends js.Object {
     * @param key
     * @param callback
     */
-  def get(key: String): js.Promise[AnonFlags] = js.native
+  def get(key: String): js.Promise[Flags] = js.native
   def get(
     key: String,
     callback: js.Function3[/* err */ Error | Null, /* value */ Buffer | Null, /* flags */ Buffer | Null, Unit]
@@ -179,11 +179,11 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
-  def increment(key: String, amount: Double, options: AnonInitial): js.Promise[AnonSuccess] = js.native
+  def increment(key: String, amount: Double, options: Initial): js.Promise[Success] = js.native
   def increment(
     key: String,
     amount: Double,
-    options: AnonInitial,
+    options: Initial,
     callback: js.Function3[
       /* err */ Error | Null, 
       /* success */ Boolean | Null, 
@@ -271,18 +271,18 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
-  def replace(key: String, value: String, options: AnonExpires): js.Promise[Boolean] = js.native
+  def replace(key: String, value: String, options: Expires): js.Promise[Boolean] = js.native
   def replace(
     key: String,
     value: String,
-    options: AnonExpires,
+    options: Expires,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
-  def replace(key: String, value: Buffer, options: AnonExpires): js.Promise[Boolean] = js.native
+  def replace(key: String, value: Buffer, options: Expires): js.Promise[Boolean] = js.native
   def replace(
     key: String,
     value: Buffer,
-    options: AnonExpires,
+    options: Expires,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
   /**
@@ -330,18 +330,18 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
-  def set(key: String, value: String, options: AnonExpires): js.Promise[Boolean] = js.native
+  def set(key: String, value: String, options: Expires): js.Promise[Boolean] = js.native
   def set(
     key: String,
     value: String,
-    options: AnonExpires,
+    options: Expires,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
-  def set(key: String, value: Buffer, options: AnonExpires): js.Promise[Boolean] = js.native
+  def set(key: String, value: Buffer, options: Expires): js.Promise[Boolean] = js.native
   def set(
     key: String,
     value: Buffer,
-    options: AnonExpires,
+    options: Expires,
     callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
   ): Unit = js.native
   /**

@@ -14,9 +14,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
-@JSGlobal("PIXI.Bounds")
 @js.native
-class Bounds () extends js.Object {
+trait Bounds extends js.Object {
   /**
     * @member {number} PIXI.Bounds#maxX
     * @default 0

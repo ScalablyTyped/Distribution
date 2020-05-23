@@ -39,12 +39,12 @@ object LambdaLogOptions {
     tags: js.Array[String] = null
   ): LambdaLogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.get.asInstanceOf[js.Any])
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(js.Any.fromFunction1(dynamicMeta))
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (replacer != null) __obj.updateDynamic("replacer")(js.Any.fromFunction2(replacer))
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     if (stderrStream != null) __obj.updateDynamic("stderrStream")(stderrStream.asInstanceOf[js.Any])
     if (stdoutStream != null) __obj.updateDynamic("stdoutStream")(stdoutStream.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

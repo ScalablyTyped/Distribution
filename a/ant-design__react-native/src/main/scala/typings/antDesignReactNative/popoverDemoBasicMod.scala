@@ -1,7 +1,5 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.antDesignReactNativeStrings.Popover
-import typings.antDesignReactNative.antDesignReactNativeStrings.`Popover example`
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +20,7 @@ object popoverDemoBasicMod extends js.Object {
     def this(props: js.Any) = this()
   }
   
-  val description: `Popover example` = js.native
-  val title: Popover = js.native
+  val description: /* "Popover example" */ String = js.native
+  val title: /* "Popover" */ String = js.native
 }
 

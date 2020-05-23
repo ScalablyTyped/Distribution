@@ -22,7 +22,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (dataProjection != null) __obj.updateDynamic("dataProjection")(dataProjection.asInstanceOf[js.Any])
-    if (!js.isUndefined(extractGeometryName)) __obj.updateDynamic("extractGeometryName")(extractGeometryName.asInstanceOf[js.Any])
+    if (!js.isUndefined(extractGeometryName)) __obj.updateDynamic("extractGeometryName")(extractGeometryName.get.asInstanceOf[js.Any])
     if (featureProjection != null) __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
     if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

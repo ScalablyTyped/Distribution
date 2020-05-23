@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-			 * It represents the decision handler to tell to webview, whether allow or cancel the navigation.
-			 */
-@JSGlobal("Titanium.UI.iOS.WebViewDecisionHandler")
+  * It represents the decision handler to tell to webview, whether allow or cancel the navigation.
+  */
 @js.native
-class WebViewDecisionHandler () extends Proxy {
+trait WebViewDecisionHandler extends Proxy {
   /**
-  				 * It calls the decision handler with given action policy.
-  				 */
+    * It calls the decision handler with given action policy.
+    */
   def invoke(value: Double): Unit = js.native
 }
 

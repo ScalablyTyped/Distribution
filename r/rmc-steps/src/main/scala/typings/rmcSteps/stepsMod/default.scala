@@ -1,6 +1,6 @@
 package typings.rmcSteps.stepsMod
 
-import typings.rmcSteps.AnonCurrent
+import typings.rmcSteps.anon.Current
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Steps
 @JSImport("rmc-steps/lib/Steps", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonCurrent = js.native
+  var defaultProps: Current = js.native
 }
 

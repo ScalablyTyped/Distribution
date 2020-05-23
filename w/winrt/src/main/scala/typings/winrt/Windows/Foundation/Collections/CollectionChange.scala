@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Foundation.Collections
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,20 +21,6 @@ object CollectionChange extends js.Object {
   
   @js.native
   sealed trait reset extends CollectionChange
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CollectionChange with Double] = js.native
-  /* 3 */ @js.native
-  object itemChanged extends TopLevel[itemChanged with Double]
-  
-  /* 1 */ @js.native
-  object itemInserted extends TopLevel[itemInserted with Double]
-  
-  /* 2 */ @js.native
-  object itemRemoved extends TopLevel[itemRemoved with Double]
-  
-  /* 0 */ @js.native
-  object reset extends TopLevel[reset with Double]
   
 }
 

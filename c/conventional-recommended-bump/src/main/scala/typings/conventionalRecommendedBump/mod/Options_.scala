@@ -91,7 +91,7 @@ object Options_ {
   ): Options_ = {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreReverted)) __obj.updateDynamic("ignoreReverted")(ignoreReverted.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreReverted)) __obj.updateDynamic("ignoreReverted")(ignoreReverted.get.asInstanceOf[js.Any])
     if (lernaPackage != null) __obj.updateDynamic("lernaPackage")(lernaPackage.asInstanceOf[js.Any])
     if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
     if (tagPrefix != null) __obj.updateDynamic("tagPrefix")(tagPrefix.asInstanceOf[js.Any])

@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("InfoPath._XDocument")
 @js.native
-class _XDocument protected () extends js.Object {
+trait _XDocument extends js.Object {
   val DOM: IXMLDOMDocument = js.native
   val DataObjects: DataObjectsCollection = js.native
   @JSName("Errors")

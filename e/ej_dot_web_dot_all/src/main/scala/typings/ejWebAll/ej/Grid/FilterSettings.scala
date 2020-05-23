@@ -51,21 +51,21 @@ object FilterSettings {
     filterBarMode: FilterBarMode | String = null,
     filterType: FilterType | String = null,
     filteredColumns: js.Array[FilterSettingsFilteredColumn] = null,
-    immediateModeDelay: Int | Double = null,
-    maxFilterChoices: Int | Double = null,
+    immediateModeDelay: js.UndefOr[Double] = js.undefined,
+    maxFilterChoices: js.UndefOr[Double] = js.undefined,
     showFilterBarStatus: js.UndefOr[Boolean] = js.undefined,
     showPredicate: js.UndefOr[Boolean] = js.undefined
   ): FilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableCaseSensitivity)) __obj.updateDynamic("enableCaseSensitivity")(enableCaseSensitivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInterDeterminateState)) __obj.updateDynamic("enableInterDeterminateState")(enableInterDeterminateState.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCaseSensitivity)) __obj.updateDynamic("enableCaseSensitivity")(enableCaseSensitivity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableInterDeterminateState)) __obj.updateDynamic("enableInterDeterminateState")(enableInterDeterminateState.get.asInstanceOf[js.Any])
     if (filterBarMode != null) __obj.updateDynamic("filterBarMode")(filterBarMode.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (filteredColumns != null) __obj.updateDynamic("filteredColumns")(filteredColumns.asInstanceOf[js.Any])
-    if (immediateModeDelay != null) __obj.updateDynamic("immediateModeDelay")(immediateModeDelay.asInstanceOf[js.Any])
-    if (maxFilterChoices != null) __obj.updateDynamic("maxFilterChoices")(maxFilterChoices.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFilterBarStatus)) __obj.updateDynamic("showFilterBarStatus")(showFilterBarStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPredicate)) __obj.updateDynamic("showPredicate")(showPredicate.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediateModeDelay)) __obj.updateDynamic("immediateModeDelay")(immediateModeDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxFilterChoices)) __obj.updateDynamic("maxFilterChoices")(maxFilterChoices.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFilterBarStatus)) __obj.updateDynamic("showFilterBarStatus")(showFilterBarStatus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPredicate)) __obj.updateDynamic("showPredicate")(showPredicate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterSettings]
   }
 }

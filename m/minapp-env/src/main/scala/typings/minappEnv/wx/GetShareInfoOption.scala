@@ -26,13 +26,13 @@ object GetShareInfoOption {
     complete: /* res */ GeneralCallbackResult => Unit = null,
     fail: /* res */ GeneralCallbackResult => Unit = null,
     success: /* result */ GetShareInfoSuccessCallbackResult => Unit = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): GetShareInfoOption = {
     val __obj = js.Dynamic.literal(shareTicket = shareTicket.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetShareInfoOption]
   }
 }

@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Base class representing subscriptions for the external workflow host. */
-@JSGlobal("SP.WorkflowServices.WorkflowSubscription")
 @js.native
-class WorkflowSubscription () extends ClientObject {
+trait WorkflowSubscription extends ClientObject {
   /** Gets the unique ID of the workflow definition to activate. */
   def get_definitionId(): Guid = js.native
   /** Gets a boolean value that specifies if the workflow subscription is enabled.

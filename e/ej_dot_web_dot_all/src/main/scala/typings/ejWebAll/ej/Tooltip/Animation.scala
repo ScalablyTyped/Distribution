@@ -17,10 +17,10 @@ trait Animation extends js.Object {
 
 object Animation {
   @scala.inline
-  def apply(effect: effect | String = null, speed: Int | Double = null): Animation = {
+  def apply(effect: effect | String = null, speed: js.UndefOr[Double] = js.undefined): Animation = {
     val __obj = js.Dynamic.literal()
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animation]
   }
 }

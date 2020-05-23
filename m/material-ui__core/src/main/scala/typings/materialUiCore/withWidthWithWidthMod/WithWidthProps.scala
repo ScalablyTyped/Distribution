@@ -16,9 +16,9 @@ trait WithWidthProps extends js.Object {
 
 object WithWidthProps {
   @scala.inline
-  def apply(innerRef: Ref[_] | RefObject[_] = null, width: Breakpoint = null): WithWidthProps = {
+  def apply(innerRef: js.UndefOr[Null | Ref[_] | RefObject[_]] = js.undefined, width: Breakpoint = null): WithWidthProps = {
     val __obj = js.Dynamic.literal()
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithWidthProps]
   }

@@ -5,9 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** XML HTTP Request class 6.0 */
-@JSGlobal("MSXML2.XMLHTTP60")
 @js.native
-class XMLHTTP60 protected () extends js.Object {
+trait XMLHTTP60 extends js.Object {
   @JSName("MSXML2.XMLHTTP60_typekey")
   var MSXML2DotXMLHTTP60_typekey: XMLHTTP60 = js.native
   /** Register a complete event handler */

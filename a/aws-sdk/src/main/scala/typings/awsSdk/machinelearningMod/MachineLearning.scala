@@ -1,9 +1,9 @@
 package typings.awsSdk.machinelearningMod
 
-import typings.awsSdk.DescribeBatchPredictionsI
-import typings.awsSdk.DescribeDataSourcesInputw
-import typings.awsSdk.DescribeEvaluationsInputw
-import typings.awsSdk.DescribeMLModelsInputwait
+import typings.awsSdk.anon.DescribeBatchPredictionsI
+import typings.awsSdk.anon.DescribeDataSourcesInputw
+import typings.awsSdk.anon.DescribeEvaluationsInputw
+import typings.awsSdk.anon.DescribeMLModelsInputwait
 import typings.awsSdk.awsSdkStrings.batchPredictionAvailable
 import typings.awsSdk.awsSdkStrings.dataSourceAvailable
 import typings.awsSdk.awsSdkStrings.evaluationAvailable

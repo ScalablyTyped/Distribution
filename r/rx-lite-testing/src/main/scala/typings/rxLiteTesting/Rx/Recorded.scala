@@ -4,17 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Rx.Recorded")
-@js.native
-class Recorded protected () extends js.Object {
-  def this(time: Double, value: js.Any) = this()
-  def this(
-    time: Double,
-    value: js.Any,
-    equalityComparer: js.Function2[/* x */ js.Any, /* y */ js.Any, Boolean]
-  ) = this()
-  var time: Double = js.native
-  var value: js.Any = js.native
-  def equals(other: Recorded): Boolean = js.native
+trait Recorded extends js.Object {
+  var time: Double
+  var value: js.Any
+  def equals(other: Recorded): Boolean
+}
+
+object Recorded {
+  @scala.inline
+  def apply(equals: Recorded => Boolean, time: Double, value: js.Any): Recorded = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Recorded]
+  }
 }
 

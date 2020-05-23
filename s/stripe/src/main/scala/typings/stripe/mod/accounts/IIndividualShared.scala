@@ -1,8 +1,8 @@
 package typings.stripe.mod.accounts
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.stripe.AnonDay
-import typings.stripe.AnonDetails
+import typings.stripe.anon.Day
+import typings.stripe.anon.Details
 import typings.stripe.mod.IAddress
 import typings.stripe.mod.IAddressKana
 import typings.stripe.mod.IAddressKanji
@@ -28,7 +28,7 @@ trait IIndividualShared extends js.Object {
   /**
     * The individual’s date of birth.
     */
-  var dob: js.UndefOr[AnonDay] = js.undefined
+  var dob: js.UndefOr[Day] = js.undefined
   /**
     * The individual's email address.
     */
@@ -87,7 +87,7 @@ trait IIndividualShared extends js.Object {
   /**
     * The individual’s verification document information.
     */
-  var verification: js.UndefOr[AnonDetails] = js.undefined
+  var verification: js.UndefOr[Details] = js.undefined
 }
 
 object IIndividualShared {
@@ -96,7 +96,7 @@ object IIndividualShared {
     address: IAddress = null,
     address_kana: IAddressKana = null,
     address_kanji: IAddressKanji = null,
-    dob: AnonDay = null,
+    dob: Day = null,
     email: String = null,
     first_name: String = null,
     first_name_kana: String = null,
@@ -108,7 +108,7 @@ object IIndividualShared {
     maiden_name: String = null,
     metadata: StringDictionary[String] = null,
     phone: String = null,
-    verification: AnonDetails = null
+    verification: Details = null
   ): IIndividualShared = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])

@@ -33,8 +33,8 @@ import scala.scalajs.js.annotation._
 object DynamicNumberProps {
   @scala.inline
   def apply(
-    fraction: Int | Double = null,
-    integer: Int | Double = null,
+    fraction: js.UndefOr[Double] = js.undefined,
+    integer: js.UndefOr[Double] = js.undefined,
     negative: js.UndefOr[Boolean] = js.undefined,
     onChange: (/* event */ ChangeEvent[HTMLInputElement], /* modelValue */ Double, /* viewValue */ String) => Unit = null,
     placeholder: String = null,
@@ -44,12 +44,12 @@ object DynamicNumberProps {
     value: Double | _empty = null
   ): DynamicNumberProps = {
     val __obj = js.Dynamic.literal()
-    if (fraction != null) __obj.updateDynamic("fraction")(fraction.asInstanceOf[js.Any])
-    if (integer != null) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])
-    if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative.asInstanceOf[js.Any])
+    if (!js.isUndefined(fraction)) __obj.updateDynamic("fraction")(fraction.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(integer)) __obj.updateDynamic("integer")(integer.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
+    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (thousand != null) __obj.updateDynamic("thousand")(thousand.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

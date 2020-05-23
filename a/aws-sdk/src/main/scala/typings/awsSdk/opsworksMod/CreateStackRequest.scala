@@ -103,8 +103,8 @@ object CreateStackRequest {
     DefaultSshKeyName: String = null,
     DefaultSubnetId: String = null,
     HostnameTheme: String = null,
-    UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined,
-    UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined,
+    UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined,
+    UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined,
     VpcId: String = null
   ): CreateStackRequest = {
     val __obj = js.Dynamic.literal(DefaultInstanceProfileArn = DefaultInstanceProfileArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Region = Region.asInstanceOf[js.Any], ServiceRoleArn = ServiceRoleArn.asInstanceOf[js.Any])
@@ -120,8 +120,8 @@ object CreateStackRequest {
     if (DefaultSshKeyName != null) __obj.updateDynamic("DefaultSshKeyName")(DefaultSshKeyName.asInstanceOf[js.Any])
     if (DefaultSubnetId != null) __obj.updateDynamic("DefaultSubnetId")(DefaultSubnetId.asInstanceOf[js.Any])
     if (HostnameTheme != null) __obj.updateDynamic("HostnameTheme")(HostnameTheme.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseCustomCookbooks)) __obj.updateDynamic("UseCustomCookbooks")(UseCustomCookbooks.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseOpsworksSecurityGroups)) __obj.updateDynamic("UseOpsworksSecurityGroups")(UseOpsworksSecurityGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseCustomCookbooks)) __obj.updateDynamic("UseCustomCookbooks")(UseCustomCookbooks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UseOpsworksSecurityGroups)) __obj.updateDynamic("UseOpsworksSecurityGroups")(UseOpsworksSecurityGroups.get.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStackRequest]
   }

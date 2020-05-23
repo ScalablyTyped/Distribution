@@ -13,9 +13,9 @@ trait ShowActionSheetRes extends js.Object {
 
 object ShowActionSheetRes {
   @scala.inline
-  def apply(tapIndex: Int | Double = null): ShowActionSheetRes = {
+  def apply(tapIndex: js.UndefOr[Double] = js.undefined): ShowActionSheetRes = {
     val __obj = js.Dynamic.literal()
-    if (tapIndex != null) __obj.updateDynamic("tapIndex")(tapIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapIndex)) __obj.updateDynamic("tapIndex")(tapIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowActionSheetRes]
   }
 }

@@ -31,19 +31,19 @@ object MeetingTimeSuggestion {
   @scala.inline
   def apply(
     attendeeAvailability: js.Array[AttendeeAvailability] = null,
-    confidence: Int | Double = null,
+    confidence: js.UndefOr[Double] = js.undefined,
     locations: js.Array[Location] = null,
     meetingTimeSlot: TimeSlot = null,
-    order: Int | Double = null,
+    order: js.UndefOr[Double] = js.undefined,
     organizerAvailability: FreeBusyStatus = null,
     suggestionReason: String = null
   ): MeetingTimeSuggestion = {
     val __obj = js.Dynamic.literal()
     if (attendeeAvailability != null) __obj.updateDynamic("attendeeAvailability")(attendeeAvailability.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
     if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
     if (meetingTimeSlot != null) __obj.updateDynamic("meetingTimeSlot")(meetingTimeSlot.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     if (organizerAvailability != null) __obj.updateDynamic("organizerAvailability")(organizerAvailability.asInstanceOf[js.Any])
     if (suggestionReason != null) __obj.updateDynamic("suggestionReason")(suggestionReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeetingTimeSuggestion]

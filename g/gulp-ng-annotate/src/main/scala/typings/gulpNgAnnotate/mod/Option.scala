@@ -53,14 +53,14 @@ object Option {
     single_quotes: js.UndefOr[Boolean] = js.undefined
   ): Option = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list.get.asInstanceOf[js.Any])
     if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
     if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.get.asInstanceOf[js.Any])
     if (rename != null) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
-    if (!js.isUndefined(single_quotes)) __obj.updateDynamic("single_quotes")(single_quotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(single_quotes)) __obj.updateDynamic("single_quotes")(single_quotes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

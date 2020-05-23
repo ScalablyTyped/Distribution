@@ -13,7 +13,6 @@ object ParseResult {
   @scala.inline
   def apply(segments: js.Array[Segment], size: Double): ParseResult = {
     val __obj = js.Dynamic.literal(segments = segments.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ParseResult]
   }
 }

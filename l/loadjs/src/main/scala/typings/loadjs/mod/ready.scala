@@ -1,6 +1,6 @@
 package typings.loadjs.mod
 
-import typings.loadjs.Typeofloadjs
+import typings.loadjs.anon.Typeofloadjs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

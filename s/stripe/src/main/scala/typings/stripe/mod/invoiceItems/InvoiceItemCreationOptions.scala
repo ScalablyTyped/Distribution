@@ -58,28 +58,28 @@ object InvoiceItemCreationOptions {
   def apply(
     currency: String,
     customer: String,
-    amount: Int | Double = null,
+    amount: js.UndefOr[Double] = js.undefined,
     description: String = null,
     discountable: js.UndefOr[Boolean] = js.undefined,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     invoice: String = null,
     metadata: IOptionsMetadata = null,
-    quantity: Int | Double = null,
+    quantity: js.UndefOr[Double] = js.undefined,
     subscription: String = null,
-    unit_amount: Int | Double = null
+    unit_amount: js.UndefOr[Double] = js.undefined
   ): InvoiceItemCreationOptions = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(discountable)) __obj.updateDynamic("discountable")(discountable.asInstanceOf[js.Any])
+    if (!js.isUndefined(discountable)) __obj.updateDynamic("discountable")(discountable.get.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (unit_amount != null) __obj.updateDynamic("unit_amount")(unit_amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(unit_amount)) __obj.updateDynamic("unit_amount")(unit_amount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceItemCreationOptions]
   }
 }

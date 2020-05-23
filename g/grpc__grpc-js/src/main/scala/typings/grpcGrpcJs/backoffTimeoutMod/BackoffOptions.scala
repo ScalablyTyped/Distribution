@@ -14,16 +14,16 @@ trait BackoffOptions extends js.Object {
 object BackoffOptions {
   @scala.inline
   def apply(
-    initialDelay: Int | Double = null,
-    jitter: Int | Double = null,
-    maxDelay: Int | Double = null,
-    multiplier: Int | Double = null
+    initialDelay: js.UndefOr[Double] = js.undefined,
+    jitter: js.UndefOr[Double] = js.undefined,
+    maxDelay: js.UndefOr[Double] = js.undefined,
+    multiplier: js.UndefOr[Double] = js.undefined
   ): BackoffOptions = {
     val __obj = js.Dynamic.literal()
-    if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay.asInstanceOf[js.Any])
-    if (jitter != null) __obj.updateDynamic("jitter")(jitter.asInstanceOf[js.Any])
-    if (maxDelay != null) __obj.updateDynamic("maxDelay")(maxDelay.asInstanceOf[js.Any])
-    if (multiplier != null) __obj.updateDynamic("multiplier")(multiplier.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialDelay)) __obj.updateDynamic("initialDelay")(initialDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(jitter)) __obj.updateDynamic("jitter")(jitter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDelay)) __obj.updateDynamic("maxDelay")(maxDelay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplier)) __obj.updateDynamic("multiplier")(multiplier.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackoffOptions]
   }
 }

@@ -1,0 +1,18 @@
+package typings.elasticElasticsearch.anon
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IdAny extends js.Object {
+  var id: js.Any
+}
+
+object IdAny {
+  @scala.inline
+  def apply(id: js.Any): IdAny = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IdAny]
+  }
+}
+

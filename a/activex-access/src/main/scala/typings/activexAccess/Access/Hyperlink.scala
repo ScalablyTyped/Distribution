@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Access.Hyperlink")
 @js.native
-class Hyperlink protected () extends js.Object {
+trait Hyperlink extends js.Object {
   @JSName("Access.Hyperlink_typekey")
   var AccessDotHyperlink_typekey: Hyperlink = js.native
   var Address: String = js.native

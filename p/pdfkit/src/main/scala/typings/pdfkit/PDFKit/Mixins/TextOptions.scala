@@ -70,48 +70,48 @@ object TextOptions {
   def apply(
     align: center | justify | left | right | String = null,
     baseline: Double | `svg-middle` | middle | `svg-central` | bottom | ideographic | alphabetic | mathematical | hanging | top = null,
-    characterSpacing: Int | Double = null,
-    columnGap: Int | Double = null,
-    columns: Int | Double = null,
+    characterSpacing: js.UndefOr[Double] = js.undefined,
+    columnGap: js.UndefOr[Double] = js.undefined,
+    columns: js.UndefOr[Double] = js.undefined,
     continued: js.UndefOr[Boolean] = js.undefined,
     ellipsis: Boolean | String = null,
     features: js.Array[OpenTypeFeatures] = null,
     fill: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    indent: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    indent: js.UndefOr[Double] = js.undefined,
     lineBreak: js.UndefOr[Boolean] = js.undefined,
-    lineGap: Int | Double = null,
+    lineGap: js.UndefOr[Double] = js.undefined,
     link: String = null,
     oblique: Boolean | Double = null,
-    paragraphGap: Int | Double = null,
+    paragraphGap: js.UndefOr[Double] = js.undefined,
     strike: js.UndefOr[Boolean] = js.undefined,
     stroke: js.UndefOr[Boolean] = js.undefined,
     underline: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
-    wordSpacing: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined,
+    wordSpacing: js.UndefOr[Double] = js.undefined
   ): TextOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
-    if (characterSpacing != null) __obj.updateDynamic("characterSpacing")(characterSpacing.asInstanceOf[js.Any])
-    if (columnGap != null) __obj.updateDynamic("columnGap")(columnGap.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(continued)) __obj.updateDynamic("continued")(continued.asInstanceOf[js.Any])
+    if (!js.isUndefined(characterSpacing)) __obj.updateDynamic("characterSpacing")(characterSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnGap)) __obj.updateDynamic("columnGap")(columnGap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(continued)) __obj.updateDynamic("continued")(continued.get.asInstanceOf[js.Any])
     if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineBreak)) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
-    if (lineGap != null) __obj.updateDynamic("lineGap")(lineGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineBreak)) __obj.updateDynamic("lineBreak")(lineBreak.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineGap)) __obj.updateDynamic("lineGap")(lineGap.get.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (oblique != null) __obj.updateDynamic("oblique")(oblique.asInstanceOf[js.Any])
-    if (paragraphGap != null) __obj.updateDynamic("paragraphGap")(paragraphGap.asInstanceOf[js.Any])
-    if (!js.isUndefined(strike)) __obj.updateDynamic("strike")(strike.asInstanceOf[js.Any])
-    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(paragraphGap)) __obj.updateDynamic("paragraphGap")(paragraphGap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(strike)) __obj.updateDynamic("strike")(strike.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordSpacing)) __obj.updateDynamic("wordSpacing")(wordSpacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextOptions]
   }
 }

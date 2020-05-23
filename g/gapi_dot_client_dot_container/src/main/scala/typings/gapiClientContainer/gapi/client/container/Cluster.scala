@@ -204,14 +204,14 @@ object Cluster {
     clusterIpv4Cidr: String = null,
     createTime: String = null,
     currentMasterVersion: String = null,
-    currentNodeCount: Int | Double = null,
+    currentNodeCount: js.UndefOr[Double] = js.undefined,
     currentNodeVersion: String = null,
     description: String = null,
     enableKubernetesAlpha: js.UndefOr[Boolean] = js.undefined,
     endpoint: String = null,
     expireTime: String = null,
     initialClusterVersion: String = null,
-    initialNodeCount: Int | Double = null,
+    initialNodeCount: js.UndefOr[Double] = js.undefined,
     instanceGroupUrls: js.Array[String] = null,
     ipAllocationPolicy: IPAllocationPolicy = null,
     labelFingerprint: String = null,
@@ -226,7 +226,7 @@ object Cluster {
     network: String = null,
     networkPolicy: NetworkPolicy = null,
     nodeConfig: NodeConfig = null,
-    nodeIpv4CidrSize: Int | Double = null,
+    nodeIpv4CidrSize: js.UndefOr[Double] = js.undefined,
     nodePools: js.Array[NodePool] = null,
     resourceLabels: Record[String, String] = null,
     selfLink: String = null,
@@ -241,14 +241,14 @@ object Cluster {
     if (clusterIpv4Cidr != null) __obj.updateDynamic("clusterIpv4Cidr")(clusterIpv4Cidr.asInstanceOf[js.Any])
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
     if (currentMasterVersion != null) __obj.updateDynamic("currentMasterVersion")(currentMasterVersion.asInstanceOf[js.Any])
-    if (currentNodeCount != null) __obj.updateDynamic("currentNodeCount")(currentNodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(currentNodeCount)) __obj.updateDynamic("currentNodeCount")(currentNodeCount.get.asInstanceOf[js.Any])
     if (currentNodeVersion != null) __obj.updateDynamic("currentNodeVersion")(currentNodeVersion.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableKubernetesAlpha)) __obj.updateDynamic("enableKubernetesAlpha")(enableKubernetesAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKubernetesAlpha)) __obj.updateDynamic("enableKubernetesAlpha")(enableKubernetesAlpha.get.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
     if (initialClusterVersion != null) __obj.updateDynamic("initialClusterVersion")(initialClusterVersion.asInstanceOf[js.Any])
-    if (initialNodeCount != null) __obj.updateDynamic("initialNodeCount")(initialNodeCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialNodeCount)) __obj.updateDynamic("initialNodeCount")(initialNodeCount.get.asInstanceOf[js.Any])
     if (instanceGroupUrls != null) __obj.updateDynamic("instanceGroupUrls")(instanceGroupUrls.asInstanceOf[js.Any])
     if (ipAllocationPolicy != null) __obj.updateDynamic("ipAllocationPolicy")(ipAllocationPolicy.asInstanceOf[js.Any])
     if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
@@ -263,7 +263,7 @@ object Cluster {
     if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (networkPolicy != null) __obj.updateDynamic("networkPolicy")(networkPolicy.asInstanceOf[js.Any])
     if (nodeConfig != null) __obj.updateDynamic("nodeConfig")(nodeConfig.asInstanceOf[js.Any])
-    if (nodeIpv4CidrSize != null) __obj.updateDynamic("nodeIpv4CidrSize")(nodeIpv4CidrSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeIpv4CidrSize)) __obj.updateDynamic("nodeIpv4CidrSize")(nodeIpv4CidrSize.get.asInstanceOf[js.Any])
     if (nodePools != null) __obj.updateDynamic("nodePools")(nodePools.asInstanceOf[js.Any])
     if (resourceLabels != null) __obj.updateDynamic("resourceLabels")(resourceLabels.asInstanceOf[js.Any])
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])

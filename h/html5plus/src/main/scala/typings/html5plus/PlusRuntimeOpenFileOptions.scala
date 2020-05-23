@@ -13,7 +13,7 @@ trait PlusRuntimeOpenFileOptions extends js.Object {
   /**
     * 优先使用的程序包名
     * 如果指定包名的程序已经安装，则调用其打开文件，若程序不支持打开文件则触发错误回调。
-    * 	如果指定包名的程序未安装，则弹出系统支持打开此文件的列表，由用户选择程序打开。
+    *     如果指定包名的程序未安装，则弹出系统支持打开此文件的列表，由用户选择程序打开。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */

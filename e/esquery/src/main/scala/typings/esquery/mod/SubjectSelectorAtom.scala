@@ -13,7 +13,7 @@ object SubjectSelectorAtom {
   def apply(`type`: String, subject: js.UndefOr[Boolean] = js.undefined): SubjectSelectorAtom = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubjectSelectorAtom]
   }
 }

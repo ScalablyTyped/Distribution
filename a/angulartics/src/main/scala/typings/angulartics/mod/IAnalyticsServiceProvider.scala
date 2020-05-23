@@ -2,13 +2,13 @@ package typings.angulartics.mod
 
 import typings.angular.mod.ILocationService
 import typings.angular.mod.IServiceProvider
-import typings.angulartics.AnonBufferFlushDelay
+import typings.angulartics.anon.BufferFlushDelay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IAnalyticsServiceProvider extends IServiceProvider {
-  var settings: AnonBufferFlushDelay
+  var settings: BufferFlushDelay
   def developerMode(value: Boolean): Unit
   def excludeRoutes(value: js.Array[String]): Unit
   def firstPageview(value: Boolean): Unit
@@ -55,7 +55,7 @@ object IAnalyticsServiceProvider {
     registerSetUsername: js.Function1[/* username */ String, _] => Unit,
     registerTransactionTrack: js.Any => Unit,
     registerUserTimings: js.Function1[/* properties */ js.Any, _] => Unit,
-    settings: AnonBufferFlushDelay,
+    settings: BufferFlushDelay,
     trackExceptions: Boolean => Unit,
     trackRoutes: Boolean => Unit,
     trackStates: Boolean => Unit,

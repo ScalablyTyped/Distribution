@@ -10,15 +10,15 @@ trait IAction extends IBase {
   /** [Config Option] (Boolean) */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /** [Method] Executes the specified function once for each Component currently tied to this Action
-  		* @param fn Function The function to execute for each component
-  		* @param scope Object The scope (this reference) in which the function is executed. Defaults to the Component.
-  		*/
+    * @param fn Function The function to execute for each component
+    * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Component.
+    */
   var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Enables all components configured by this Action  */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Executes this Action manually using the handler function specified in the original config object or the handler funct
-  		* @param args Object... Variable number of arguments passed to the handler function
-  		*/
+    * @param args Object... Variable number of arguments passed to the handler function
+    */
   var execute: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   /** [Method] Gets the icon CSS class currently used by all components configured by this Action  */
   var getIconCls: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -41,25 +41,25 @@ trait IAction extends IBase {
   /** [Config Option] (Object) */
   var scope: js.UndefOr[js.Any] = js.undefined
   /** [Method] Sets the disabled state of all components configured by this Action
-  		* @param disabled Boolean True to disable the component, false to enable it
-  		*/
+    * @param disabled Boolean True to disable the component, false to enable it
+    */
   var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the function that will be called by each Component using this action when its primary event is triggered
-  		* @param fn Function The function that will be invoked by the action's components. The function will be called with no arguments.
-  		* @param scope Object The scope (this reference) in which the function is executed. Defaults to the Component firing the event.
-  		*/
+    * @param fn Function The function that will be invoked by the action's components. The function will be called with no arguments.
+    * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Component firing the event.
+    */
   var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Sets the hidden state of all components configured by this Action
-  		* @param hidden Boolean True to hide the component, false to show it.
-  		*/
+    * @param hidden Boolean True to hide the component, false to show it.
+    */
   var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Boolean], Unit]] = js.undefined
   /** [Method] Sets the icon CSS class for all components configured by this Action
-  		* @param cls String The CSS class supplying the icon image
-  		*/
+    * @param cls String The CSS class supplying the icon image
+    */
   var setIconCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Sets the text to be displayed by all components configured by this Action
-  		* @param text String The text to display
-  		*/
+    * @param text String The text to display
+    */
   var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   /** [Method] Shows all components configured by this Action  */
   var show: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -117,7 +117,7 @@ object IAction {
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
     if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction1(execute))
@@ -126,7 +126,7 @@ object IAction {
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (getText != null) __obj.updateDynamic("getText")(js.Any.fromFunction0(getText))
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
     if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
@@ -144,7 +144,7 @@ object IAction {
     if (setIconCls != null) __obj.updateDynamic("setIconCls")(js.Any.fromFunction1(setIconCls))
     if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction1(setText))
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])

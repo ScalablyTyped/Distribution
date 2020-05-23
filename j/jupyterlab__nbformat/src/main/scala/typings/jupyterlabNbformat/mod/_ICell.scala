@@ -1,7 +1,7 @@
 package typings.jupyterlabNbformat.mod
 
-import typings.jupyterlabNbformat.PartialICodeCellMetadata
-import typings.jupyterlabNbformat.PartialIRawCellMetadata
+import typings.jupyterlabNbformat.anon.PartialICodeCellMetadata
+import typings.jupyterlabNbformat.anon.PartialIRawCellMetadata
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.code
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw
@@ -41,10 +41,9 @@ object _ICell {
     metadata: PartialICodeCellMetadata,
     outputs: js.Array[IOutput],
     source: MultilineString,
-    execution_count: Int | Double = null
+    execution_count: ExecutionCount = null.asInstanceOf[ExecutionCount]
   ): _ICell = {
-    val __obj = js.Dynamic.literal(cell_type = cell_type.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    if (execution_count != null) __obj.updateDynamic("execution_count")(execution_count.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cell_type = cell_type.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], execution_count = execution_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ICell]
   }
 }

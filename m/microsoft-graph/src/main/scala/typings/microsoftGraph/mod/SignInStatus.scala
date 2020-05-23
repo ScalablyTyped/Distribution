@@ -21,10 +21,14 @@ trait SignInStatus extends js.Object {
 
 object SignInStatus {
   @scala.inline
-  def apply(additionalDetails: String = null, errorCode: Int | Double = null, failureReason: String = null): SignInStatus = {
+  def apply(
+    additionalDetails: String = null,
+    errorCode: js.UndefOr[Double] = js.undefined,
+    failureReason: String = null
+  ): SignInStatus = {
     val __obj = js.Dynamic.literal()
     if (additionalDetails != null) __obj.updateDynamic("additionalDetails")(additionalDetails.asInstanceOf[js.Any])
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorCode)) __obj.updateDynamic("errorCode")(errorCode.get.asInstanceOf[js.Any])
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignInStatus]
   }

@@ -4,10 +4,13 @@ import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.RefObject
 import typings.react.mod.WheelEvent
+import typings.reactMovable.anon.InitialX
+import typings.reactMovable.anon.LockVertically
+import typings.reactMovable.anon.ScrollingSpeed
 import typings.reactMovable.typesMod.IProps
 import typings.reactMovable.typesMod.TEvent
 import typings.std.Element
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.TouchEvent
@@ -32,7 +35,7 @@ object listMod extends js.Object {
     var listRef: RefObject[HTMLElement] = js.native
     var needle: Double = js.native
     @JSName("state")
-    var state_List: AnonInitialX = js.native
+    var state_List: InitialX = js.native
     var topOffsets: js.Array[Double] = js.native
     def animateItems(needle: Double, movedItem: Double, offset: Double): Unit = js.native
     def animateItems(needle: Double, movedItem: Double, offset: Double, animateMovedItem: Boolean): Unit = js.native
@@ -41,7 +44,7 @@ object listMod extends js.Object {
     @JSName("componentDidMount")
     def componentDidMount_MList(): Unit = js.native
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MList(_prevProps: js.Any, prevState: AnonScrollingSpeed): Unit = js.native
+    def componentDidUpdate_MList(_prevProps: js.Any, prevState: ScrollingSpeed): Unit = js.native
     @JSName("componentWillUnmount")
     def componentWillUnmount_MList(): Unit = js.native
     def doScrolling(): Unit = js.native
@@ -59,7 +62,7 @@ object listMod extends js.Object {
     def onStart(target: HTMLElement, clientX: Double, clientY: Double, index: Double): Unit = js.native
     def onTouchMove(e: TouchEvent): Unit = js.native
     def onWheel(e: WheelEvent[Element]): Unit = js.native
-    def schdOnEnd(e: Event_): Unit = js.native
+    def schdOnEnd(e: Event): Unit = js.native
     def schdOnMouseMove(e: MouseEvent): Unit = js.native
     def schdOnTouchMove(e: TouchEvent): Unit = js.native
   }
@@ -72,7 +75,7 @@ object listMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonLockVertically = js.native
+    var defaultProps: LockVertically = js.native
   }
   
 }

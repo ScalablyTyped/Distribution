@@ -1,6 +1,6 @@
 package typings.cradle.mod
 
-import typings.cradle.AnonCancel
+import typings.cradle.anon.Cancel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Connection () extends js.Object {
   def database(name: String): Database = js.native
   def databases(Callback: Callback): Unit = js.native
   def info(callback: Callback): Unit = js.native
-  def replicate(options: AnonCancel, callback: Callback): Unit = js.native
+  def replicate(options: Cancel, callback: Callback): Unit = js.native
   def stats(callback: Callback): Unit = js.native
   def uuids(callback: Callback): Unit = js.native
   def uuids(count: Double, callback: Callback): Unit = js.native

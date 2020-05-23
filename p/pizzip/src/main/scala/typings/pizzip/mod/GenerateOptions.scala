@@ -2,7 +2,7 @@ package typings.pizzip.mod
 
 import typings.node.Buffer
 import typings.node.NodeJS.Platform
-import typings.pizzip.AnonLevel
+import typings.pizzip.anon.Level
 import typings.pizzip.pizzipStrings.DOS
 import typings.pizzip.pizzipStrings.UNIX
 import typings.pizzip.pizzipStrings.arraybuffer
@@ -39,7 +39,7 @@ trait GenerateOptions extends js.Object {
     * calling `generate()` with a different compression level won't update the entry.
     * The reason is simple : PizZip doesn't know how compressed the content was and how to match the compression level with the implementation we use.
     */
-  var compressionOptions: js.UndefOr[AnonLevel | Null] = js.undefined
+  var compressionOptions: js.UndefOr[Level | Null] = js.undefined
   /**
     * the function to encode the file name / comment.
     * By default, PizZip uses UTF-8 to encode the file names / comments. You can use this method to force an other encoding.
@@ -89,17 +89,17 @@ object GenerateOptions {
     base64: js.UndefOr[Boolean] = js.undefined,
     comment: String = null,
     compression: Compression = null,
-    compressionOptions: AnonLevel = null,
+    compressionOptions: js.UndefOr[Null | Level] = js.undefined,
     encodeFileName: /* name */ String => Buffer = null,
     mimeType: String = null,
     platform: DOS | UNIX | Platform = null,
     `type`: base64 | string | uint8array | arraybuffer | blob | nodebuffer = null
   ): GenerateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.asInstanceOf[js.Any])
+    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.get.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressionOptions)) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
     if (encodeFileName != null) __obj.updateDynamic("encodeFileName")(js.Any.fromFunction1(encodeFileName))
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])

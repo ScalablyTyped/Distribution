@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,23 +28,6 @@ object InterpolationType extends js.Object {
   
   @js.native
   sealed trait PERCENTILE extends InterpolationType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InterpolationType with Double] = js.native
-  /* 4 */ @js.native
-  object MAX extends TopLevel[MAX with Double]
-  
-  /* 3 */ @js.native
-  object MIN extends TopLevel[MIN with Double]
-  
-  /* 0 */ @js.native
-  object NUMBER extends TopLevel[NUMBER with Double]
-  
-  /* 1 */ @js.native
-  object PERCENT extends TopLevel[PERCENT with Double]
-  
-  /* 2 */ @js.native
-  object PERCENTILE extends TopLevel[PERCENTILE with Double]
   
 }
 

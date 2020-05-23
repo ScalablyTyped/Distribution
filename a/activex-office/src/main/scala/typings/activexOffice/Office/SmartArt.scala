@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.SmartArt")
 @js.native
-class SmartArt protected () extends js.Object {
+trait SmartArt extends js.Object {
   @JSName("AllNodes")
   val AllNodes_Original: SmartArtNodes = js.native
   val Application: js.Any = js.native

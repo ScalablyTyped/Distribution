@@ -79,19 +79,19 @@ object RecorderManagerStartOption {
   @scala.inline
   def apply(
     audioSource: auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition = null,
-    duration: Int | Double = null,
-    encodeBitRate: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
+    encodeBitRate: js.UndefOr[Double] = js.undefined,
     format: mp3 | aac = null,
-    frameSize: Int | Double = null,
+    frameSize: js.UndefOr[Double] = js.undefined,
     numberOfChannels: `1` | `2` = null,
     sampleRate: `8000` | `11025` | `12000` | `16000` | `22050` | `24000` | `32000` | `44100` | `48000` = null
   ): RecorderManagerStartOption = {
     val __obj = js.Dynamic.literal()
     if (audioSource != null) __obj.updateDynamic("audioSource")(audioSource.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (encodeBitRate != null) __obj.updateDynamic("encodeBitRate")(encodeBitRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeBitRate)) __obj.updateDynamic("encodeBitRate")(encodeBitRate.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (frameSize != null) __obj.updateDynamic("frameSize")(frameSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameSize)) __obj.updateDynamic("frameSize")(frameSize.get.asInstanceOf[js.Any])
     if (numberOfChannels != null) __obj.updateDynamic("numberOfChannels")(numberOfChannels.asInstanceOf[js.Any])
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecorderManagerStartOption]

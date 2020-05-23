@@ -1,34 +1,12 @@
 package typings.openui5.sap.ui.model
 
-import typings.openui5.TypeofFilterType
+import typings.openui5.anon.TypeofFilterType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.model.TreeBinding")
 @js.native
-class TreeBinding protected () extends Binding {
-  /**
-    * Constructor for TreeBinding
-    * @param oModel undefined
-    * @param sPath the path pointing to the tree / array that should be bound
-    * @param oContext the context object for this databinding (optional)
-    * @param aFilters predefined filter/s contained in an array (optional)
-    * @param mParameters additional model specific parameters (optional)
-    * @param aSorters predefined sap.ui.model.sorter/s contained in an array (optional)
-    */
-  def this(oModel: Model, sPath: String) = this()
-  def this(oModel: Model, sPath: String, oContext: js.Any) = this()
-  def this(oModel: Model, sPath: String, oContext: js.Any, aFilters: js.Array[_]) = this()
-  def this(oModel: Model, sPath: String, oContext: js.Any, aFilters: js.Array[_], mParameters: js.Any) = this()
-  def this(
-    oModel: Model,
-    sPath: String,
-    oContext: js.Any,
-    aFilters: js.Array[_],
-    mParameters: js.Any,
-    aSorters: js.Array[_]
-  ) = this()
+trait TreeBinding extends Binding {
   /**
     * Attach event-handler <code>fnFunction</code> to the '_filter' event of this
     * <code>sap.ui.model.TreeBinding</code>.<br/>

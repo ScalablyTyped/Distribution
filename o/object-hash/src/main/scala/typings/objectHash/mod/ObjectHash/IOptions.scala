@@ -39,15 +39,15 @@ object IOptions {
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (excludeKeys != null) __obj.updateDynamic("excludeKeys")(js.Any.fromFunction1(excludeKeys))
-    if (!js.isUndefined(excludeValues)) __obj.updateDynamic("excludeValues")(excludeValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnknown)) __obj.updateDynamic("ignoreUnknown")(ignoreUnknown.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeValues)) __obj.updateDynamic("excludeValues")(excludeValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnknown)) __obj.updateDynamic("ignoreUnknown")(ignoreUnknown.get.asInstanceOf[js.Any])
     if (replacer != null) __obj.updateDynamic("replacer")(js.Any.fromFunction1(replacer))
-    if (!js.isUndefined(respectFunctionNames)) __obj.updateDynamic("respectFunctionNames")(respectFunctionNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(respectFunctionProperties)) __obj.updateDynamic("respectFunctionProperties")(respectFunctionProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(respectType)) __obj.updateDynamic("respectType")(respectType.asInstanceOf[js.Any])
-    if (!js.isUndefined(unorderedArrays)) __obj.updateDynamic("unorderedArrays")(unorderedArrays.asInstanceOf[js.Any])
-    if (!js.isUndefined(unorderedObjects)) __obj.updateDynamic("unorderedObjects")(unorderedObjects.asInstanceOf[js.Any])
-    if (!js.isUndefined(unorderedSets)) __obj.updateDynamic("unorderedSets")(unorderedSets.asInstanceOf[js.Any])
+    if (!js.isUndefined(respectFunctionNames)) __obj.updateDynamic("respectFunctionNames")(respectFunctionNames.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(respectFunctionProperties)) __obj.updateDynamic("respectFunctionProperties")(respectFunctionProperties.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(respectType)) __obj.updateDynamic("respectType")(respectType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unorderedArrays)) __obj.updateDynamic("unorderedArrays")(unorderedArrays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unorderedObjects)) __obj.updateDynamic("unorderedObjects")(unorderedObjects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(unorderedSets)) __obj.updateDynamic("unorderedSets")(unorderedSets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

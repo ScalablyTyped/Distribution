@@ -1,6 +1,6 @@
 package typings.next.utilsMod
 
-import typings.next.ErrorstatusCodenumber
+import typings.next.anon.ErrorstatusCodenumber
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.querystringMod.ParsedUrlQuery
@@ -46,13 +46,13 @@ object NextPageContext {
     pathname: String,
     query: ParsedUrlQuery,
     asPath: String = null,
-    err: ErrorstatusCodenumber = null,
+    err: js.UndefOr[Null | ErrorstatusCodenumber] = js.undefined,
     req: IncomingMessage = null,
     res: ServerResponse = null
   ): NextPageContext = {
     val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     if (asPath != null) __obj.updateDynamic("asPath")(asPath.asInstanceOf[js.Any])
-    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    if (!js.isUndefined(err)) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
     if (req != null) __obj.updateDynamic("req")(req.asInstanceOf[js.Any])
     if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextPageContext]

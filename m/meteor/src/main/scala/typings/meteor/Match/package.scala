@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object Match {
   type Pattern = js.UndefOr[
-    typings.std.StringConstructor | typings.std.NumberConstructor | typings.std.BooleanConstructor | typings.std.ObjectConstructor | typings.std.FunctionConstructor | (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any]) | scala.Null | java.lang.String | scala.Double | scala.Boolean | (js.Array[
+    (typings.std.StringConstructor with org.scalablytyped.runtime.Instantiable0[typings.std.global.String]) | (typings.std.NumberConstructor with org.scalablytyped.runtime.Instantiable0[typings.std.global.Number]) | (typings.std.BooleanConstructor with org.scalablytyped.runtime.Instantiable0[typings.std.global.Boolean]) | (typings.std.ObjectConstructor with org.scalablytyped.runtime.Instantiable0[typings.std.global.Object]) | (typings.std.FunctionConstructor with (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ java.lang.String, typings.std.global.Function])) | (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any]) | scala.Null | java.lang.String | scala.Double | scala.Boolean | (js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Match.Pattern */ js.Object
     ]) | (org.scalablytyped.runtime.StringDictionary[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Match.Pattern */ js.Object

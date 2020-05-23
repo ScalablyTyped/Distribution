@@ -41,14 +41,14 @@ object Options {
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (escapedQuote != null) __obj.updateDynamic("escapedQuote")(escapedQuote.asInstanceOf[js.Any])
-    if (!js.isUndefined(excelStrings)) __obj.updateDynamic("excelStrings")(excelStrings.asInstanceOf[js.Any])
+    if (!js.isUndefined(excelStrings)) __obj.updateDynamic("excelStrings")(excelStrings.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeEmptyRows)) __obj.updateDynamic("includeEmptyRows")(includeEmptyRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(ndjson)) __obj.updateDynamic("ndjson")(ndjson.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeEmptyRows)) __obj.updateDynamic("includeEmptyRows")(includeEmptyRows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ndjson)) __obj.updateDynamic("ndjson")(ndjson.get.asInstanceOf[js.Any])
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
     if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
-    if (!js.isUndefined(withBOM)) __obj.updateDynamic("withBOM")(withBOM.asInstanceOf[js.Any])
+    if (!js.isUndefined(withBOM)) __obj.updateDynamic("withBOM")(withBOM.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[T]]
   }
 }

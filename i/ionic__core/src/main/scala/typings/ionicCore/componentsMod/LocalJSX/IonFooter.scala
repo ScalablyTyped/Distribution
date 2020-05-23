@@ -22,7 +22,7 @@ object IonFooter {
   def apply(mode: ios | md = null, translucent: js.UndefOr[Boolean] = js.undefined): IonFooter = {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonFooter]
   }
 }

@@ -21,9 +21,9 @@ object SkippedDetail {
     incompatibleDevice: js.UndefOr[Boolean] = js.undefined
   ): SkippedDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(incompatibleAppVersion)) __obj.updateDynamic("incompatibleAppVersion")(incompatibleAppVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(incompatibleArchitecture)) __obj.updateDynamic("incompatibleArchitecture")(incompatibleArchitecture.asInstanceOf[js.Any])
-    if (!js.isUndefined(incompatibleDevice)) __obj.updateDynamic("incompatibleDevice")(incompatibleDevice.asInstanceOf[js.Any])
+    if (!js.isUndefined(incompatibleAppVersion)) __obj.updateDynamic("incompatibleAppVersion")(incompatibleAppVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(incompatibleArchitecture)) __obj.updateDynamic("incompatibleArchitecture")(incompatibleArchitecture.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(incompatibleDevice)) __obj.updateDynamic("incompatibleDevice")(incompatibleDevice.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkippedDetail]
   }
 }

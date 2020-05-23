@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonFirstTangent
+import typings.cesium.anon.FirstTangent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "CatmullRomSpline")
 @js.native
 class CatmullRomSpline protected () extends js.Object {
-  def this(options: AnonFirstTangent) = this()
+  def this(options: FirstTangent) = this()
   var firstTangent: Cartesian3 = js.native
   var lastTangent: Cartesian3 = js.native
   var points: js.Array[Cartesian3] = js.native

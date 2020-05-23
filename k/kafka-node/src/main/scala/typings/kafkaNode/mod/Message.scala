@@ -19,16 +19,16 @@ object Message {
   def apply(
     topic: String,
     value: String | Buffer,
-    highWaterOffset: Int | Double = null,
+    highWaterOffset: js.UndefOr[Double] = js.undefined,
     key: String | Buffer = null,
-    offset: Int | Double = null,
-    partition: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined,
+    partition: js.UndefOr[Double] = js.undefined
   ): Message = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (highWaterOffset != null) __obj.updateDynamic("highWaterOffset")(highWaterOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterOffset)) __obj.updateDynamic("highWaterOffset")(highWaterOffset.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(partition)) __obj.updateDynamic("partition")(partition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

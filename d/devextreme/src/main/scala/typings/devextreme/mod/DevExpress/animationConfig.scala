@@ -44,24 +44,24 @@ object animationConfig {
   @scala.inline
   def apply(
     complete: (/* $element */ dxElement, /* config */ js.Any) => _ = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     direction: bottom | left | right | top = null,
-    duration: Int | Double = null,
+    duration: js.UndefOr[Double] = js.undefined,
     easing: String = null,
     from: Double | String | js.Any = null,
-    staggerDelay: Int | Double = null,
+    staggerDelay: js.UndefOr[Double] = js.undefined,
     start: (/* $element */ dxElement, /* config */ js.Any) => _ = null,
     to: Double | String | js.Any = null,
     `type`: css | fade | fadeIn | fadeOut | pop | slide | slideIn | slideOut = null
   ): animationConfig = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (staggerDelay != null) __obj.updateDynamic("staggerDelay")(staggerDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(staggerDelay)) __obj.updateDynamic("staggerDelay")(staggerDelay.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

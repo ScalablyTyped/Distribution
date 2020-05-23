@@ -16,10 +16,13 @@ trait StyledComponentProps[ClassKey /* <: String */] extends js.Object {
 
 object StyledComponentProps {
   @scala.inline
-  def apply[ClassKey /* <: String */](classes: Partial[ClassNameMap[ClassKey]] = null, innerRef: Ref[_] = null): StyledComponentProps[ClassKey] = {
+  def apply[ClassKey](
+    classes: Partial[ClassNameMap[ClassKey]] = null,
+    innerRef: js.UndefOr[Null | Ref[_]] = js.undefined
+  ): StyledComponentProps[ClassKey] = {
     val __obj = js.Dynamic.literal()
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyledComponentProps[ClassKey]]
   }
 }

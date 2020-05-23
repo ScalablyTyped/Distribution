@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("__MaterialUI.FlatButton")
 @js.native
-class FlatButton ()
+trait FlatButton
   extends Component[FlatButtonProps, js.Object, js.Any]
 

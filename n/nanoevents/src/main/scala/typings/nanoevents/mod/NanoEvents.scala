@@ -20,7 +20,7 @@ trait NanoEvents[T /* <: js.Object */] extends js.Object {
 
 object NanoEvents {
   @scala.inline
-  def apply[T /* <: js.Object */](
+  def apply[T](
     emit: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any) => Unit,
     on: (js.Any, js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 

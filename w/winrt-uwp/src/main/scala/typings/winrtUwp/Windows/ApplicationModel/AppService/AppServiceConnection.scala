@@ -12,10 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a connection to the endpoint for an app service. */
-@JSGlobal("Windows.ApplicationModel.AppService.AppServiceConnection")
 @js.native
-/** Creates and initializes a new instance of the AppServiceConnection class. */
-class AppServiceConnection () extends js.Object {
+trait AppServiceConnection extends js.Object {
   /** Gets or sets the name of the app service to which you want to connect. */
   var appServiceName: String = js.native
   /** Occurs when a message arrives from the other endpoint of the app service connection. */

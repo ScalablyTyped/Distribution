@@ -11,10 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides a collection of the HTTP headers associated with content on an HTTP request or response. */
-@JSGlobal("Windows.Web.Http.Headers.HttpContentHeaderCollection")
 @js.native
-/** Initializes a new instance of the HttpContentHeaderCollection class. */
-class HttpContentHeaderCollection () extends js.Object {
+trait HttpContentHeaderCollection extends js.Object {
   /** Gets or sets the HttpContentDispositionHeaderValue object that represents the value of an HTTP Content-Disposition header on the HTTP content. */
   var contentDisposition: HttpContentDispositionHeaderValue = js.native
   /** Gets the HttpContentCodingHeaderValueCollection of HttpContentCodingHeaderValue objects that represent the value of an HTTP Content-Encoding header on the HTTP content. */

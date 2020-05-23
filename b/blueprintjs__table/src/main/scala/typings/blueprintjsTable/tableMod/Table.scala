@@ -1,15 +1,15 @@
 package typings.blueprintjsTable.tableMod
 
 import typings.blueprintjsCore.mod.AbstractComponent2
-import typings.blueprintjsTable.AnonChildrenArray
-import typings.blueprintjsTable.AnonNextScrollLeft
-import typings.blueprintjsTable.ValidationMapIColumnInter
+import typings.blueprintjsTable.anon.ChildrenArray
+import typings.blueprintjsTable.anon.NextScrollLeft
+import typings.blueprintjsTable.anon.ValidationMapIColumnInter
 import typings.blueprintjsTable.contextMod.IColumnInteractionBarContextTypes
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.blueprintjsTable.gridMod.Grid
 import typings.blueprintjsTable.gridMod.ICellMapper
 import typings.blueprintjsTable.locatorMod.Locator
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -132,7 +132,7 @@ class Table protected () extends AbstractComponent2[ITableProps, ITableState, IT
   def componentWillUnmount_MTable(): Unit = js.native
   def getChildContext(): IColumnInteractionBarContextTypes = js.native
   @JSName("getSnapshotBeforeUpdate")
-  def getSnapshotBeforeUpdate_MTable(): AnonNextScrollLeft = js.native
+  def getSnapshotBeforeUpdate_MTable(): NextScrollLeft = js.native
   def renderHotkeys(): Element = js.native
   /**
     * __Experimental!__ Resizes all rows in the table to the approximate
@@ -188,6 +188,6 @@ object Table extends js.Object {
   var displayName: String = js.native
   var isSelectionModeEnabled: js.Any = js.native
   var resizeRowsByApproximateHeightDefaults: js.Any = js.native
-  def getDerivedStateFromProps(props: ITableProps, state: ITableState): AnonChildrenArray = js.native
+  def getDerivedStateFromProps(props: ITableProps, state: ITableState): ChildrenArray = js.native
 }
 

@@ -15,16 +15,14 @@ trait TargetChangeTargetChangeType extends js.Object
 
 object TargetChangeTargetChangeType {
   @scala.inline
-  def ADD: typings.firebaseFirestore.firebaseFirestoreStrings.ADD = this.cast("ADD")
+  def ADD: typings.firebaseFirestore.firebaseFirestoreStrings.ADD = "ADD".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.ADD]
   @scala.inline
-  def CURRENT: typings.firebaseFirestore.firebaseFirestoreStrings.CURRENT = this.cast("CURRENT")
+  def CURRENT: typings.firebaseFirestore.firebaseFirestoreStrings.CURRENT = "CURRENT".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.CURRENT]
   @scala.inline
-  def NO_CHANGE: typings.firebaseFirestore.firebaseFirestoreStrings.NO_CHANGE = this.cast("NO_CHANGE")
+  def NO_CHANGE: typings.firebaseFirestore.firebaseFirestoreStrings.NO_CHANGE = "NO_CHANGE".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.NO_CHANGE]
   @scala.inline
-  def REMOVE: typings.firebaseFirestore.firebaseFirestoreStrings.REMOVE = this.cast("REMOVE")
+  def REMOVE: typings.firebaseFirestore.firebaseFirestoreStrings.REMOVE = "REMOVE".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.REMOVE]
   @scala.inline
-  def RESET: typings.firebaseFirestore.firebaseFirestoreStrings.RESET = this.cast("RESET")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def RESET: typings.firebaseFirestore.firebaseFirestoreStrings.RESET = "RESET".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.RESET]
 }
 

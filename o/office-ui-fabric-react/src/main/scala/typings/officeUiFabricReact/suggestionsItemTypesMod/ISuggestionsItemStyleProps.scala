@@ -18,7 +18,7 @@ object ISuggestionsItemStyleProps {
   def apply(theme: ITheme, className: String = null, suggested: js.UndefOr[Boolean] = js.undefined): ISuggestionsItemStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(suggested)) __obj.updateDynamic("suggested")(suggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggested)) __obj.updateDynamic("suggested")(suggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuggestionsItemStyleProps]
   }
 }

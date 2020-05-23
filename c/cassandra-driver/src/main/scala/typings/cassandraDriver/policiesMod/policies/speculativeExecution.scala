@@ -1,6 +1,6 @@
 package typings.cassandraDriver.policiesMod.policies
 
-import typings.cassandraDriver.AnonNextExecution
+import typings.cassandraDriver.anon.NextExecution
 import typings.cassandraDriver.mod.Client
 import typings.std.Map
 import scala.scalajs.js
@@ -22,8 +22,8 @@ object speculativeExecution extends js.Object {
   trait SpeculativeExecutionPolicy extends js.Object {
     def getOptions(): Map[String, js.Object] = js.native
     def init(client: Client): Unit = js.native
-    def newPlan(keyspace: String, queryInfo: String): AnonNextExecution = js.native
-    def newPlan(keyspace: String, queryInfo: js.Array[js.Object]): AnonNextExecution = js.native
+    def newPlan(keyspace: String, queryInfo: String): NextExecution = js.native
+    def newPlan(keyspace: String, queryInfo: js.Array[js.Object]): NextExecution = js.native
     def shutdown(): Unit = js.native
   }
   

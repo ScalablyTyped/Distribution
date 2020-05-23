@@ -18,9 +18,9 @@ trait UpdateEnrollmentStatusRequest extends js.Object {
 
 object UpdateEnrollmentStatusRequest {
   @scala.inline
-  def apply(status: Status, includeMemberAccounts: js.UndefOr[Boolean] = js.undefined): UpdateEnrollmentStatusRequest = {
+  def apply(status: Status, includeMemberAccounts: js.UndefOr[IncludeMemberAccounts] = js.undefined): UpdateEnrollmentStatusRequest = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeMemberAccounts)) __obj.updateDynamic("includeMemberAccounts")(includeMemberAccounts.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeMemberAccounts)) __obj.updateDynamic("includeMemberAccounts")(includeMemberAccounts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEnrollmentStatusRequest]
   }
 }

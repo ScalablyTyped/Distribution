@@ -28,14 +28,14 @@ object CleanOption {
     trimStrings: js.UndefOr[Boolean] = js.undefined
   ): CleanOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoConvert)) __obj.updateDynamic("autoConvert")(autoConvert.asInstanceOf[js.Any])
-    if (!js.isUndefined(extendAutoValueContext)) __obj.updateDynamic("extendAutoValueContext")(extendAutoValueContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(getAutoValues)) __obj.updateDynamic("getAutoValues")(getAutoValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(isModifier)) __obj.updateDynamic("isModifier")(isModifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeEmptyStrings)) __obj.updateDynamic("removeEmptyStrings")(removeEmptyStrings.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeNullsFromArrays)) __obj.updateDynamic("removeNullsFromArrays")(removeNullsFromArrays.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimStrings)) __obj.updateDynamic("trimStrings")(trimStrings.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoConvert)) __obj.updateDynamic("autoConvert")(autoConvert.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendAutoValueContext)) __obj.updateDynamic("extendAutoValueContext")(extendAutoValueContext.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(getAutoValues)) __obj.updateDynamic("getAutoValues")(getAutoValues.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModifier)) __obj.updateDynamic("isModifier")(isModifier.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeEmptyStrings)) __obj.updateDynamic("removeEmptyStrings")(removeEmptyStrings.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeNullsFromArrays)) __obj.updateDynamic("removeNullsFromArrays")(removeNullsFromArrays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimStrings)) __obj.updateDynamic("trimStrings")(trimStrings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CleanOption]
   }
 }

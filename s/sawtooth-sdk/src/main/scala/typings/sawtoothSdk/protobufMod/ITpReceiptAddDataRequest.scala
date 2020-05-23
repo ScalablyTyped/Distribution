@@ -14,10 +14,13 @@ trait ITpReceiptAddDataRequest extends js.Object {
 
 object ITpReceiptAddDataRequest {
   @scala.inline
-  def apply(contextId: String = null, data: Uint8Array = null): ITpReceiptAddDataRequest = {
+  def apply(
+    contextId: js.UndefOr[Null | String] = js.undefined,
+    data: js.UndefOr[Null | Uint8Array] = js.undefined
+  ): ITpReceiptAddDataRequest = {
     val __obj = js.Dynamic.literal()
-    if (contextId != null) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpReceiptAddDataRequest]
   }
 }

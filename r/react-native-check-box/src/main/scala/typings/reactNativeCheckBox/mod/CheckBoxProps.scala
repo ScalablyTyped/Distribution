@@ -37,12 +37,12 @@ object CheckBoxProps {
     checkedImage: ReactElement = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     leftText: String = null,
-    leftTextStyle: StyleProp[TextStyle] = null,
+    leftTextStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     leftTextView: ReactNode = null,
     rightText: String = null,
-    rightTextStyle: StyleProp[TextStyle] = null,
+    rightTextStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
     rightTextView: ReactNode = null,
-    style: StyleProp[ViewStyle] = null,
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
     unCheckedImage: ReactElement = null,
     uncheckedCheckBoxColor: String = null
   ): CheckBoxProps = {
@@ -50,14 +50,14 @@ object CheckBoxProps {
     if (checkBoxColor != null) __obj.updateDynamic("checkBoxColor")(checkBoxColor.asInstanceOf[js.Any])
     if (checkedCheckBoxColor != null) __obj.updateDynamic("checkedCheckBoxColor")(checkedCheckBoxColor.asInstanceOf[js.Any])
     if (checkedImage != null) __obj.updateDynamic("checkedImage")(checkedImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (leftText != null) __obj.updateDynamic("leftText")(leftText.asInstanceOf[js.Any])
-    if (leftTextStyle != null) __obj.updateDynamic("leftTextStyle")(leftTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftTextStyle)) __obj.updateDynamic("leftTextStyle")(leftTextStyle.asInstanceOf[js.Any])
     if (leftTextView != null) __obj.updateDynamic("leftTextView")(leftTextView.asInstanceOf[js.Any])
     if (rightText != null) __obj.updateDynamic("rightText")(rightText.asInstanceOf[js.Any])
-    if (rightTextStyle != null) __obj.updateDynamic("rightTextStyle")(rightTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightTextStyle)) __obj.updateDynamic("rightTextStyle")(rightTextStyle.asInstanceOf[js.Any])
     if (rightTextView != null) __obj.updateDynamic("rightTextView")(rightTextView.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (unCheckedImage != null) __obj.updateDynamic("unCheckedImage")(unCheckedImage.asInstanceOf[js.Any])
     if (uncheckedCheckBoxColor != null) __obj.updateDynamic("uncheckedCheckBoxColor")(uncheckedCheckBoxColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckBoxProps]

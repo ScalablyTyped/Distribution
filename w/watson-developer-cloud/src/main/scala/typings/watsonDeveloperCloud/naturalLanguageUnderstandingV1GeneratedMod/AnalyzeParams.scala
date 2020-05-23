@@ -42,7 +42,7 @@ object AnalyzeParams {
     headers: js.Object = null,
     html: String = null,
     language: String = null,
-    limit_text_characters: Int | Double = null,
+    limit_text_characters: js.UndefOr[Double] = js.undefined,
     return_analyzed_text: js.UndefOr[Boolean] = js.undefined,
     return_response: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
@@ -50,14 +50,14 @@ object AnalyzeParams {
     xpath: String = null
   ): AnalyzeParams = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallback_to_raw)) __obj.updateDynamic("fallback_to_raw")(fallback_to_raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback_to_raw)) __obj.updateDynamic("fallback_to_raw")(fallback_to_raw.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (limit_text_characters != null) __obj.updateDynamic("limit_text_characters")(limit_text_characters.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_analyzed_text)) __obj.updateDynamic("return_analyzed_text")(return_analyzed_text.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit_text_characters)) __obj.updateDynamic("limit_text_characters")(limit_text_characters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_analyzed_text)) __obj.updateDynamic("return_analyzed_text")(return_analyzed_text.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (xpath != null) __obj.updateDynamic("xpath")(xpath.asInstanceOf[js.Any])

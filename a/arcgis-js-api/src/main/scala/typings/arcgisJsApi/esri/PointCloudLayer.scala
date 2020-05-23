@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`point-cloud`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -108,8 +107,4 @@ trait PointCloudLayer
   def queryCachedStatistics(fieldName: String): js.Any = js.native
   def queryCachedStatistics(fieldName: String, options: PointCloudLayerQueryCachedStatisticsOptions): js.Any = js.native
 }
-
-@JSGlobal("__esri.PointCloudLayer")
-@js.native
-object PointCloudLayer extends TopLevel[PointCloudLayerConstructor]
 

@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for the ASPxClientVerticalGrid.BatchEditRecordDeleting event.
   */
-@JSGlobal("ASPxClientVerticalGridBatchEditRecordDeletingEventArgs")
-@js.native
-class ASPxClientVerticalGridBatchEditRecordDeletingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientVerticalGridBatchEditRecordDeletingEventArgs class.
-    * @param visibleIndex An integer value that specifies the processed record's visible index.
-    * @param recordValues A hashtable that stores information about the processed record's cells.
-    */
-  def this(visibleIndex: Double, recordValues: js.Any) = this()
+trait ASPxClientVerticalGridBatchEditRecordDeletingEventArgs extends ASPxClientCancelEventArgs {
   /**
     * Gets a hashtable that maintains information about deleted cells.
     */
-  var recordValues: js.Any = js.native
+  var recordValues: js.Any
   /**
     * Gets the processed record's visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
+}
+
+object ASPxClientVerticalGridBatchEditRecordDeletingEventArgs {
+  @scala.inline
+  def apply(cancel: Boolean, recordValues: js.Any, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordDeletingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], recordValues = recordValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordDeletingEventArgs]
+  }
 }
 

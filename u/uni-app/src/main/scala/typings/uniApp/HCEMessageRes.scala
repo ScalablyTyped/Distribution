@@ -21,11 +21,15 @@ trait HCEMessageRes extends js.Object {
 
 object HCEMessageRes {
   @scala.inline
-  def apply(data: js.Array[_] = null, messageType: Int | Double = null, reason: Int | Double = null): HCEMessageRes = {
+  def apply(
+    data: js.Array[_] = null,
+    messageType: js.UndefOr[Double] = js.undefined,
+    reason: js.UndefOr[Double] = js.undefined
+  ): HCEMessageRes = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageType)) __obj.updateDynamic("messageType")(messageType.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reason)) __obj.updateDynamic("reason")(reason.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HCEMessageRes]
   }
 }

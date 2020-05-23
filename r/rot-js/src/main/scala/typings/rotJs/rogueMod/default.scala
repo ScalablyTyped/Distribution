@@ -1,6 +1,6 @@
 package typings.rotJs.rogueMod
 
-import typings.rotJs.PartialOptionsCellHeight
+import typings.rotJs.anon.PartialOptionsCellHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

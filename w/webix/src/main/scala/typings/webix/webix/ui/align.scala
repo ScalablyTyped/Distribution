@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.align")
 @js.native
-class align () extends baseview {
+trait align extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
   @JSName("config")

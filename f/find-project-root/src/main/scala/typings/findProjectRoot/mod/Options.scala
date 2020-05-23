@@ -17,10 +17,10 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(markers: js.Array[String] = null, maxDepth: Int | Double = null): Options = {
+  def apply(markers: js.Array[String] = null, maxDepth: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

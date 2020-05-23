@@ -1,10 +1,9 @@
 package typings.reactNative
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.reactNative.reactNativeStrings.readystatechange
-import typings.std.Document_
+import typings.std.Document
+import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,13 +18,13 @@ trait XMLHttpRequest
   val OPENED: Double = js.native
   val UNSENT: Double = js.native
   //  msCaching: string;
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val readyState: Double = js.native
   val response: js.Any = js.native
   val responseText: String = js.native
   var responseType: XMLHttpRequestResponseType = js.native
   val responseURL: String = js.native
-  val responseXML: Document_ | Null = js.native
+  val responseXML: Document | Null = js.native
   val status: Double = js.native
   val statusText: String = js.native
   var timeout: Double = js.native
@@ -33,7 +32,7 @@ trait XMLHttpRequest
   var withCredentials: Boolean = js.native
   def abort(): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   def getAllResponseHeaders(): String = js.native
   def getResponseHeader(header: String): String | Null = js.native
   //  msCachingEnabled(): boolean;
@@ -45,19 +44,9 @@ trait XMLHttpRequest
   def overrideMimeType(mime: String): Unit = js.native
   //  addEventListener(type: string, listener: EventListenerOrEventListenerObject): void;
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   def send(): Unit = js.native
   def send(data: js.Any): Unit = js.native
   def setRequestHeader(header: String, value: String): Unit = js.native
-}
-
-@JSGlobal("XMLHttpRequest")
-@js.native
-object XMLHttpRequest extends Instantiable0[XMLHttpRequest] {
-  val DONE: Double = js.native
-  val HEADERS_RECEIVED: Double = js.native
-  val LOADING: Double = js.native
-  val OPENED: Double = js.native
-  val UNSENT: Double = js.native
 }
 

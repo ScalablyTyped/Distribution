@@ -19,7 +19,7 @@ object RealtimeDataQuery {
     dimensions: String = null,
     filters: String = null,
     ids: String = null,
-    max_results: Int | Double = null,
+    max_results: js.UndefOr[Double] = js.undefined,
     metrics: js.Array[String] = null,
     sort: js.Array[String] = null
   ): RealtimeDataQuery = {
@@ -27,7 +27,7 @@ object RealtimeDataQuery {
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (max_results != null) __obj.updateDynamic("max_results")(max_results.asInstanceOf[js.Any])
+    if (!js.isUndefined(max_results)) __obj.updateDynamic("max_results")(max_results.get.asInstanceOf[js.Any])
     if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealtimeDataQuery]

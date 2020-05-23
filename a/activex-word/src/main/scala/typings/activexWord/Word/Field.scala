@@ -4,34 +4,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Word.Field")
-@js.native
-class Field protected () extends js.Object {
-  val Application: typings.activexWord.Word.Application = js.native
-  var Code: Range = js.native
-  val Creator: Double = js.native
-  var Data: String = js.native
-  val Index: Double = js.native
-  val InlineShape: typings.activexWord.Word.InlineShape = js.native
-  val Kind: WdFieldKind = js.native
-  val LinkFormat: typings.activexWord.Word.LinkFormat = js.native
-  var Locked: Boolean = js.native
-  val Next: Field = js.native
-  val OLEFormat: typings.activexWord.Word.OLEFormat = js.native
-  val Parent: js.Any = js.native
-  val Previous: Field = js.native
-  var Result: Range = js.native
-  var ShowCodes: Boolean = js.native
-  val Type: WdFieldType = js.native
+trait Field extends js.Object {
+  val Application: typings.activexWord.Word.Application
+  var Code: Range
+  val Creator: Double
+  var Data: String
+  val Index: Double
+  val InlineShape: typings.activexWord.Word.InlineShape
+  val Kind: WdFieldKind
+  val LinkFormat: typings.activexWord.Word.LinkFormat
+  var Locked: Boolean
+  val Next: Field
+  val OLEFormat: typings.activexWord.Word.OLEFormat
+  val Parent: js.Any
+  val Previous: Field
+  var Result: Range
+  var ShowCodes: Boolean
+  val Type: WdFieldType
   @JSName("Word.Field_typekey")
-  var WordDotField_typekey: Field = js.native
-  def Copy(): Unit = js.native
-  def Cut(): Unit = js.native
-  def Delete(): Unit = js.native
-  def DoClick(): Unit = js.native
-  def Select(): Unit = js.native
-  def Unlink(): Unit = js.native
-  def Update(): Boolean = js.native
-  def UpdateSource(): Unit = js.native
+  var WordDotField_typekey: Field
+  def Copy(): Unit
+  def Cut(): Unit
+  def Delete(): Unit
+  def DoClick(): Unit
+  def Select(): Unit
+  def Unlink(): Unit
+  def Update(): Boolean
+  def UpdateSource(): Unit
+}
+
+object Field {
+  @scala.inline
+  def apply(
+    Application: Application,
+    Code: Range,
+    Copy: () => Unit,
+    Creator: Double,
+    Cut: () => Unit,
+    Data: String,
+    Delete: () => Unit,
+    DoClick: () => Unit,
+    Index: Double,
+    InlineShape: InlineShape,
+    Kind: WdFieldKind,
+    LinkFormat: LinkFormat,
+    Locked: Boolean,
+    Next: Field,
+    OLEFormat: OLEFormat,
+    Parent: js.Any,
+    Previous: Field,
+    Result: Range,
+    Select: () => Unit,
+    ShowCodes: Boolean,
+    Type: WdFieldType,
+    Unlink: () => Unit,
+    Update: () => Boolean,
+    UpdateSource: () => Unit,
+    WordDotField_typekey: Field
+  ): Field = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Code = Code.asInstanceOf[js.Any], Copy = js.Any.fromFunction0(Copy), Creator = Creator.asInstanceOf[js.Any], Cut = js.Any.fromFunction0(Cut), Data = Data.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), DoClick = js.Any.fromFunction0(DoClick), Index = Index.asInstanceOf[js.Any], InlineShape = InlineShape.asInstanceOf[js.Any], Kind = Kind.asInstanceOf[js.Any], LinkFormat = LinkFormat.asInstanceOf[js.Any], Locked = Locked.asInstanceOf[js.Any], Next = Next.asInstanceOf[js.Any], OLEFormat = OLEFormat.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Previous = Previous.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select), ShowCodes = ShowCodes.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Unlink = js.Any.fromFunction0(Unlink), Update = js.Any.fromFunction0(Update), UpdateSource = js.Any.fromFunction0(UpdateSource))
+    __obj.updateDynamic("Word.Field_typekey")(WordDotField_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Field]
+  }
 }
 

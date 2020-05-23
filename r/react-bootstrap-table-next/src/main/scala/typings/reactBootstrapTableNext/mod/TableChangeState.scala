@@ -1,8 +1,8 @@
 package typings.reactBootstrapTableNext.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactBootstrapTableNext.AnonComparator
-import typings.reactBootstrapTableNext.AnonDataField
+import typings.reactBootstrapTableNext.anon.Comparator
+import typings.reactBootstrapTableNext.anon.DataField
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc
 import scala.scalajs.js
@@ -10,9 +10,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableChangeState[T] extends js.Object {
-  var cellEdit: AnonDataField
+  var cellEdit: DataField
   var data: js.Array[T]
-  var filters: StringDictionary[AnonComparator]
+  var filters: StringDictionary[Comparator]
   var page: Double
   var sizePerPage: Double
   var sortField: String
@@ -22,9 +22,9 @@ trait TableChangeState[T] extends js.Object {
 object TableChangeState {
   @scala.inline
   def apply[T](
-    cellEdit: AnonDataField,
+    cellEdit: DataField,
     data: js.Array[T],
-    filters: StringDictionary[AnonComparator],
+    filters: StringDictionary[Comparator],
     page: Double,
     sizePerPage: Double,
     sortField: String,

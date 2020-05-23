@@ -2,7 +2,7 @@ package typings.reactNativeSortableGrid.mod
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeSortableGrid.AnonTransform
+import typings.reactNativeSortableGrid.anon.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait SortableGridProps extends js.Object {
     * Custom animation to override the default wiggle. Must be an object
     * containing a key transform, which is an array of transformations.
     */
-  var dragStartAnimation: js.UndefOr[AnonTransform] = js.undefined
+  var dragStartAnimation: js.UndefOr[Transform] = js.undefined
   /**
     * When used together with itemsPerRow, sets the size of a block to
     * something other than the default square
@@ -77,34 +77,34 @@ trait SortableGridProps extends js.Object {
 object SortableGridProps {
   @scala.inline
   def apply(
-    activeBlockCenteringDuration: Int | Double = null,
-    blockTransitionDuration: Int | Double = null,
+    activeBlockCenteringDuration: js.UndefOr[Double] = js.undefined,
+    blockTransitionDuration: js.UndefOr[Double] = js.undefined,
     children: js.Array[SortableGridItem] = null,
-    doubleTapTreshold: Int | Double = null,
-    dragActivationThreshold: Int | Double = null,
-    dragStartAnimation: AnonTransform = null,
-    itemHeight: Int | Double = null,
-    itemWidth: Int | Double = null,
-    itemsPerRow: Int | Double = null,
+    doubleTapTreshold: js.UndefOr[Double] = js.undefined,
+    dragActivationThreshold: js.UndefOr[Double] = js.undefined,
+    dragStartAnimation: Transform = null,
+    itemHeight: js.UndefOr[Double] = js.undefined,
+    itemWidth: js.UndefOr[Double] = js.undefined,
+    itemsPerRow: js.UndefOr[Double] = js.undefined,
     onDeleteItem: /* deletedItem */ OrderedItem => Unit = null,
     onDragRelease: /* itemOrder */ ItemOrder => Unit = null,
     onDragStart: /* item */ OrderedItem => Unit = null,
-    style: StyleProp[ViewStyle] = null
+    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
   ): SortableGridProps = {
     val __obj = js.Dynamic.literal()
-    if (activeBlockCenteringDuration != null) __obj.updateDynamic("activeBlockCenteringDuration")(activeBlockCenteringDuration.asInstanceOf[js.Any])
-    if (blockTransitionDuration != null) __obj.updateDynamic("blockTransitionDuration")(blockTransitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeBlockCenteringDuration)) __obj.updateDynamic("activeBlockCenteringDuration")(activeBlockCenteringDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockTransitionDuration)) __obj.updateDynamic("blockTransitionDuration")(blockTransitionDuration.get.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (doubleTapTreshold != null) __obj.updateDynamic("doubleTapTreshold")(doubleTapTreshold.asInstanceOf[js.Any])
-    if (dragActivationThreshold != null) __obj.updateDynamic("dragActivationThreshold")(dragActivationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleTapTreshold)) __obj.updateDynamic("doubleTapTreshold")(doubleTapTreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragActivationThreshold)) __obj.updateDynamic("dragActivationThreshold")(dragActivationThreshold.get.asInstanceOf[js.Any])
     if (dragStartAnimation != null) __obj.updateDynamic("dragStartAnimation")(dragStartAnimation.asInstanceOf[js.Any])
-    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
-    if (itemsPerRow != null) __obj.updateDynamic("itemsPerRow")(itemsPerRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemHeight)) __obj.updateDynamic("itemHeight")(itemHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemWidth)) __obj.updateDynamic("itemWidth")(itemWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemsPerRow)) __obj.updateDynamic("itemsPerRow")(itemsPerRow.get.asInstanceOf[js.Any])
     if (onDeleteItem != null) __obj.updateDynamic("onDeleteItem")(js.Any.fromFunction1(onDeleteItem))
     if (onDragRelease != null) __obj.updateDynamic("onDragRelease")(js.Any.fromFunction1(onDragRelease))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableGridProps]
   }
 }

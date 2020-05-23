@@ -22,7 +22,6 @@ object IIndexStateEnum {
     values: () => js.Array[IndexState]
   ): IIndexStateEnum = {
     val __obj = js.Dynamic.literal(CREATING = CREATING.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], READY = READY.asInstanceOf[js.Any], STATE_UNSPECIFIED = STATE_UNSPECIFIED.asInstanceOf[js.Any], values = js.Any.fromFunction0(values))
-  
     __obj.asInstanceOf[IIndexStateEnum]
   }
 }

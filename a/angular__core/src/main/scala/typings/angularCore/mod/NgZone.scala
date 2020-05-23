@@ -1,6 +1,6 @@
 package typings.angularCore.mod
 
-import typings.angularCore.AnonEnableLongStackTrace
+import typings.angularCore.anon.EnableLongStackTrace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "NgZone")
 @js.native
 class NgZone protected () extends js.Object {
-  def this(hasEnableLongStackTraceShouldCoalesceEventChangeDetection: AnonEnableLongStackTrace) = this()
+  def this(hasEnableLongStackTraceShouldCoalesceEventChangeDetection: EnableLongStackTrace) = this()
   val hasPendingMacrotasks: Boolean = js.native
   val hasPendingMicrotasks: Boolean = js.native
   /**

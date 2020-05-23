@@ -1,6 +1,6 @@
 package typings.meyda.mod
 
-import typings.meyda.PartialMeydaFeaturesObjec
+import typings.meyda.anon.PartialMeydaFeaturesObjec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

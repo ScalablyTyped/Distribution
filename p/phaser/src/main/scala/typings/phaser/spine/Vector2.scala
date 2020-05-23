@@ -4,15 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("spine.Vector2")
-@js.native
-class Vector2 () extends js.Object {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  var x: Double = js.native
-  var y: Double = js.native
-  def length(): Double = js.native
-  def normalize(): this.type = js.native
-  def set(x: Double, y: Double): Vector2 = js.native
+trait Vector2 extends js.Object {
+  var x: Double
+  var y: Double
+  def length(): Double
+  def normalize(): this.type
+  def set(x: Double, y: Double): Vector2
+}
+
+object Vector2 {
+  @scala.inline
+  def apply(
+    length: () => Double,
+    normalize: () => Vector2,
+    set: (Double, Double) => Vector2,
+    x: Double,
+    y: Double
+  ): Vector2 = {
+    val __obj = js.Dynamic.literal(length = js.Any.fromFunction0(length), normalize = js.Any.fromFunction0(normalize), set = js.Any.fromFunction2(set), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Vector2]
+  }
 }
 

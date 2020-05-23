@@ -34,10 +34,10 @@ trait TextRotation extends js.Object {
 
 object TextRotation {
   @scala.inline
-  def apply(angle: Int | Double = null, vertical: js.UndefOr[Boolean] = js.undefined): TextRotation = {
+  def apply(angle: js.UndefOr[Double] = js.undefined, vertical: js.UndefOr[Boolean] = js.undefined): TextRotation = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextRotation]
   }
 }

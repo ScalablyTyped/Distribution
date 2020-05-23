@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.select
 import scala.scalajs.js
@@ -74,8 +73,4 @@ trait FeatureTemplates extends Widget_ {
   @JSName("on")
   def on_select(name: select, eventHandler: FeatureTemplatesSelectEventHandler): IHandle = js.native
 }
-
-@JSGlobal("__esri.FeatureTemplates")
-@js.native
-object FeatureTemplates extends TopLevel[FeatureTemplatesConstructor]
 

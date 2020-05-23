@@ -1,7 +1,7 @@
 package typings.mathjs.mod
 
-import typings.mathjs.AnonR
-import typings.mathjs.AnonSimplify
+import typings.mathjs.anon.R
+import typings.mathjs.anon.Simplify
 import typings.mathjs.mathjsStrings.asc
 import typings.mathjs.mathjsStrings.biased
 import typings.mathjs.mathjsStrings.dense
@@ -362,7 +362,7 @@ trait MathJsChain extends js.Object {
     */
   def deepEqual(y: MathType): MathJsChain = js.native
   def derivative(variable: String): MathJsChain = js.native
-  def derivative(variable: String, options: AnonSimplify): MathJsChain = js.native
+  def derivative(variable: String, options: Simplify): MathJsChain = js.native
   /*************************************************************************
     * Algebra functions
     ************************************************************************/
@@ -372,7 +372,7 @@ trait MathJsChain extends js.Object {
     * by default. When false, output will not be simplified.
     */
   def derivative(variable: MathNode): MathJsChain = js.native
-  def derivative(variable: MathNode, options: AnonSimplify): MathJsChain = js.native
+  def derivative(variable: MathNode, options: Simplify): MathJsChain = js.native
   /**
     * Calculate the determinant of a matrix.
     */
@@ -1257,8 +1257,8 @@ trait MathJsChain extends js.Object {
     * @param scope Scope to variables
     */
   def simplify(): MathJsChain = js.native
-  def simplify(rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])]): MathJsChain = js.native
-  def simplify(rules: js.Array[AnonR | String | (js.Function1[/* node */ MathNode, MathNode])], scope: js.Object): MathJsChain = js.native
+  def simplify(rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])]): MathJsChain = js.native
+  def simplify(rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])], scope: js.Object): MathJsChain = js.native
   /**
     * Calculate the sine of a value. For matrices, the function is
     * evaluated element wise.

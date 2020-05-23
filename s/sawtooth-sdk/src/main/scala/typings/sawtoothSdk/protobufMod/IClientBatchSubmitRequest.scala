@@ -11,9 +11,9 @@ trait IClientBatchSubmitRequest extends js.Object {
 
 object IClientBatchSubmitRequest {
   @scala.inline
-  def apply(batches: js.Array[IBatch] = null): IClientBatchSubmitRequest = {
+  def apply(batches: js.UndefOr[Null | js.Array[IBatch]] = js.undefined): IClientBatchSubmitRequest = {
     val __obj = js.Dynamic.literal()
-    if (batches != null) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
+    if (!js.isUndefined(batches)) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBatchSubmitRequest]
   }
 }

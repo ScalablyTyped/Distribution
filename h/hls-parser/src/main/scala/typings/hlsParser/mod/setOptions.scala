@@ -1,6 +1,6 @@
 package typings.hlsParser.mod
 
-import typings.hlsParser.PartialOptions
+import typings.hlsParser.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

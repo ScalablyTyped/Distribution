@@ -2,7 +2,7 @@ package typings.scBrokerCluster.mod
 
 import typings.async.mod.AsyncResultArrayCallback
 import typings.fleximap.mod.KeyChain
-import typings.scBrokerCluster.AnonTargets
+import typings.scBrokerCluster.anon.Targets
 import typings.scBrokerCluster.clientclusterMod.ClientCluster
 import typings.scChannel.mod.SCChannel
 import typings.std.Error
@@ -22,7 +22,7 @@ class SCExchange protected () extends AbstractDataClient {
   def getMapper(): mapperFunction = js.native
   def isSubscribed(channelName: String): Boolean = js.native
   def isSubscribed(channelName: String, includePending: Boolean): Boolean = js.native
-  def map(keyChain: KeyChain, method: String): AnonTargets = js.native
+  def map(keyChain: KeyChain, method: String): Targets = js.native
   def publish(channelName: String, data: js.Any): Unit = js.native
   def publish(channelName: String, data: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   def send(data: js.Any): Unit = js.native

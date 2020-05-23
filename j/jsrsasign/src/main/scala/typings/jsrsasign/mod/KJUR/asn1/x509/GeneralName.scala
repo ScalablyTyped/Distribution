@@ -51,5 +51,9 @@ import scala.scalajs.js.annotation._
 class GeneralName ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralName {
   def this(params: GeneralNameParam) = this()
+  /* CompleteClass */
+  override def getEncodedHex(): String = js.native
+  /* CompleteClass */
+  override def setByParam(params: js.Array[String]): Unit = js.native
 }
 

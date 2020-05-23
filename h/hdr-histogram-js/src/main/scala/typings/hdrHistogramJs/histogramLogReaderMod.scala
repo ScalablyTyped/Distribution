@@ -2,6 +2,7 @@ package typings.hdrHistogramJs
 
 import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import typings.hdrHistogramJs.abstractHistogramMod.HistogramConstructor
+import typings.hdrHistogramJs.anon.HistogramConstr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -115,7 +116,7 @@ object histogramLogReaderMod extends js.Object {
   @js.native
   class default protected () extends HistogramLogReader {
     def this(logContent: String) = this()
-    def this(logContent: String, options: AnonHistogramConstr) = this()
+    def this(logContent: String, options: HistogramConstr) = this()
   }
   
   def listTags(content: String): js.Array[String] = js.native

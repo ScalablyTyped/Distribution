@@ -22,24 +22,22 @@ object Elements {
   def apply(
     container: Element = null,
     domElement: Element = null,
-    image: Element = null,
-    imageWrap: Element = null,
-    snapHandle: Element = null,
-    snapImage: Element = null,
-    snapImageWrap: Element = null,
-    snapView: Element = null,
-    zoomHandle: Element = null
+    image: js.UndefOr[Null | Element] = js.undefined,
+    imageWrap: js.UndefOr[Null | Element] = js.undefined,
+    snapHandle: js.UndefOr[Null | Element] = js.undefined,
+    snapImage: js.UndefOr[Null | Element] = js.undefined,
+    snapImageWrap: js.UndefOr[Null | Element] = js.undefined,
+    snapView: js.UndefOr[Null | Element] = js.undefined,
+    zoomHandle: js.UndefOr[Null | Element] = js.undefined
   ): Elements = {
-    val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (domElement != null) __obj.updateDynamic("domElement")(domElement.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (imageWrap != null) __obj.updateDynamic("imageWrap")(imageWrap.asInstanceOf[js.Any])
-    if (snapHandle != null) __obj.updateDynamic("snapHandle")(snapHandle.asInstanceOf[js.Any])
-    if (snapImage != null) __obj.updateDynamic("snapImage")(snapImage.asInstanceOf[js.Any])
-    if (snapImageWrap != null) __obj.updateDynamic("snapImageWrap")(snapImageWrap.asInstanceOf[js.Any])
-    if (snapView != null) __obj.updateDynamic("snapView")(snapView.asInstanceOf[js.Any])
-    if (zoomHandle != null) __obj.updateDynamic("zoomHandle")(zoomHandle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], domElement = domElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(image)) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageWrap)) __obj.updateDynamic("imageWrap")(imageWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapHandle)) __obj.updateDynamic("snapHandle")(snapHandle.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapImage)) __obj.updateDynamic("snapImage")(snapImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapImageWrap)) __obj.updateDynamic("snapImageWrap")(snapImageWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapView)) __obj.updateDynamic("snapView")(snapView.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomHandle)) __obj.updateDynamic("zoomHandle")(zoomHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Elements]
   }
 }

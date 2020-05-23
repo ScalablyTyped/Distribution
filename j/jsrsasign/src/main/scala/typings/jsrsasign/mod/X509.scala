@@ -2,6 +2,7 @@ package typings.jsrsasign.mod
 
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
+import typings.jsrsasign.jsrsasign.PublicKeyInfoPropOfCertPEMResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +44,7 @@ object X509 extends js.Object {
     *
     * NOTE: X509v1 certificate is also supported since x509.js 1.1.9.
     */
-  def getPublicKeyInfoPropOfCertPEM(sCertPEM: String): String = js.native
+  def getPublicKeyInfoPropOfCertPEM(sCertPEM: String): PublicKeyInfoPropOfCertPEMResult = js.native
   /**
     * get string from hexadecimal string of ASN.1 DER AttributeTypeAndValue
     * @param hex hexadecimal string of ASN.1 DER concludes AttributeTypeAndValue

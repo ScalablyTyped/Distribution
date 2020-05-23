@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 
 trait ILruCache extends IHashMap {
   /** [Method] Removes all items from the hash
-  		* @param initial Object
-  		* @returns Ext.util.HashMap this
-  		*/
+    * @param initial Object
+    * @returns Ext.util.HashMap this
+    */
   @JSName("clear")
   var clear_ILruCache: js.UndefOr[js.Function1[/* initial */ js.UndefOr[js.Any], IHashMap]] = js.undefined
   /** [Method] Performs a shallow copy on this haLruCachesh
-  		* @returns Ext.util.HashMap The new hash object.
-  		*/
+    * @returns Ext.util.HashMap The new hash object.
+    */
   @JSName("clone")
   var clone_FILruCache: js.UndefOr[js.Function0[IHashMap]] = js.undefined
   /** [Method] Executes the specified function once for each item in the cache
-  		* @param fn Function The function to execute.
-  		* @param scope Object The scope (this reference) to execute in. Defaults to this LruCache.
-  		* @param reverse Boolean Pass true to iterate the list in reverse (most recent first) order.
-  		* @returns Ext.util.LruCache this
-  		*/
+    * @param fn Function The function to execute.
+    * @param scope Object The scope (this reference) to execute in. Defaults to this LruCache.
+    * @param reverse Boolean Pass true to iterate the list in reverse (most recent first) order.
+    * @returns Ext.util.LruCache this
+    */
   @JSName("each")
   var each_ILruCache: js.UndefOr[
     js.Function3[
@@ -34,9 +34,9 @@ trait ILruCache extends IHashMap {
     ]
   ] = js.undefined
   /** [Method] Retrieves an item with a particular key
-  		* @param key Object
-  		* @returns Object The value at that key. If it doesn't exist, undefined is returned.
-  		*/
+    * @param key Object
+    * @returns Object The value at that key. If it doesn't exist, undefined is returned.
+    */
   @JSName("get")
   var get_ILruCache: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (Number) */
@@ -82,7 +82,7 @@ object ILruCache {
     isObservable: js.UndefOr[Boolean] = js.undefined,
     keyFn: js.Any = null,
     listeners: js.Any = null,
-    maxSize: Int | Double = null,
+    maxSize: js.UndefOr[Double] = js.undefined,
     mixins: js.Any = null,
     mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
@@ -137,10 +137,10 @@ object ILruCache {
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (keyFn != null) __obj.updateDynamic("keyFn")(keyFn.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
@@ -156,7 +156,7 @@ object ILruCache {
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

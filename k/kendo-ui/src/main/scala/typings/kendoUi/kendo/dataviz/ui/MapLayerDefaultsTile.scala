@@ -15,13 +15,13 @@ object MapLayerDefaultsTile {
   @scala.inline
   def apply(
     attribution: String = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     subdomains: js.Any = null,
     urlTemplate: String = null
   ): MapLayerDefaultsTile = {
     val __obj = js.Dynamic.literal()
     if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
     if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains.asInstanceOf[js.Any])
     if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsTile]

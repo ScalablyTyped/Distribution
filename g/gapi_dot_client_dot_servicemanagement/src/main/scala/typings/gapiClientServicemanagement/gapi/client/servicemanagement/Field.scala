@@ -41,8 +41,8 @@ object Field {
     jsonName: String = null,
     kind: String = null,
     name: String = null,
-    number: Int | Double = null,
-    oneofIndex: Int | Double = null,
+    number: js.UndefOr[Double] = js.undefined,
+    oneofIndex: js.UndefOr[Double] = js.undefined,
     options: js.Array[Option] = null,
     packed: js.UndefOr[Boolean] = js.undefined,
     typeUrl: String = null
@@ -53,10 +53,10 @@ object Field {
     if (jsonName != null) __obj.updateDynamic("jsonName")(jsonName.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (oneofIndex != null) __obj.updateDynamic("oneofIndex")(oneofIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneofIndex)) __obj.updateDynamic("oneofIndex")(oneofIndex.get.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed.asInstanceOf[js.Any])
+    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed.get.asInstanceOf[js.Any])
     if (typeUrl != null) __obj.updateDynamic("typeUrl")(typeUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }

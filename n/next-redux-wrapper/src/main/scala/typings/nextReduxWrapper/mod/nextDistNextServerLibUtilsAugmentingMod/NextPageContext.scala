@@ -19,7 +19,7 @@ trait NextPageContext[S, A /* <: Action[_] */] extends js.Object {
 
 object NextPageContext {
   @scala.inline
-  def apply[S, A /* <: Action[_] */](isServer: Boolean, store: Store[S, A]): NextPageContext[S, A] = {
+  def apply[S, A](isServer: Boolean, store: Store[S, A]): NextPageContext[S, A] = {
     val __obj = js.Dynamic.literal(isServer = isServer.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextPageContext[S, A]]
   }

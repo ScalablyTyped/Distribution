@@ -13,9 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Monitors changes to the list of infrared frame sources, and provides notifications when the list changes. */
-@JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrameSourceWatcher")
 @js.native
-abstract class PerceptionInfraredFrameSourceWatcher () extends js.Object {
+trait PerceptionInfraredFrameSourceWatcher extends js.Object {
   /** Subscribes to the EnumerationCompleted event. This event is fired after the initial enumeration of known infrared frame sources is complete. */
   @JSName("onenumerationcompleted")
   var onenumerationcompleted_Original: TypedEventHandler[PerceptionInfraredFrameSourceWatcher, _] = js.native

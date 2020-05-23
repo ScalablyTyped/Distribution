@@ -36,7 +36,7 @@ object UpdateIntentParams {
     if (new_description != null) __obj.updateDynamic("new_description")(new_description.asInstanceOf[js.Any])
     if (new_examples != null) __obj.updateDynamic("new_examples")(new_examples.asInstanceOf[js.Any])
     if (new_intent != null) __obj.updateDynamic("new_intent")(new_intent.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateIntentParams]
   }
 }

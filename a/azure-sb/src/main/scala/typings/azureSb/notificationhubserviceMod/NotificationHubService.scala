@@ -1,7 +1,7 @@
 package typings.azureSb.notificationhubserviceMod
 
-import typings.azureSb.AnonEtag
-import typings.azureSb.AnonHeadersObject
+import typings.azureSb.anon.Etag
+import typings.azureSb.anon.HeadersObject
 import typings.azureSb.mod.Azure.ServiceBus.ListNotificationHubsOptions
 import typings.azureSb.mod.Azure.ServiceBus.NotificationHubInstallation
 import typings.azureSb.mod.Azure.ServiceBus.NotificationHubRegistration
@@ -27,7 +27,7 @@ trait NotificationHubService extends js.Object {
   ): Unit = js.native
   def createOrUpdateRegistration(
     registration: NotificationHubRegistration,
-    options: AnonEtag,
+    options: Etag,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
   def createRegistrationId(
@@ -48,7 +48,7 @@ trait NotificationHubService extends js.Object {
   ): Unit = js.native
   def deleteRegistration(
     registrationId: String,
-    options: AnonEtag,
+    options: Etag,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
   def getInstallation(
@@ -104,7 +104,7 @@ trait NotificationHubService extends js.Object {
   def send(
     tags: String,
     payload: String,
-    options: AnonHeadersObject,
+    options: HeadersObject,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
   def send(
@@ -115,7 +115,7 @@ trait NotificationHubService extends js.Object {
   def send(
     tags: String,
     payload: js.Object,
-    options: AnonHeadersObject,
+    options: HeadersObject,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
   def updateRegistration(
@@ -124,7 +124,7 @@ trait NotificationHubService extends js.Object {
   ): Unit = js.native
   def updateRegistration(
     registration: NotificationHubRegistration,
-    options: AnonEtag,
+    options: Etag,
     callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): Unit = js.native
 }

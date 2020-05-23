@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`credential-create`
 import typings.arcgisJsApi.arcgisJsApiStrings.`dialog-create`
@@ -225,8 +224,4 @@ trait IdentityManager extends Evented {
     */
   def toJSON(): js.Any = js.native
 }
-
-@JSGlobal("__esri.IdentityManager")
-@js.native
-object IdentityManager extends TopLevel[IdentityManagerConstructor]
 

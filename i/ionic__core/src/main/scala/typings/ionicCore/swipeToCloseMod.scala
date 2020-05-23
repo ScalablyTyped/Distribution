@@ -1,7 +1,7 @@
 package typings.ionicCore
 
 import typings.ionicCore.animationInterfaceMod.Animation
-import typings.ionicCore.componentsMod._Global_.HTMLIonModalElement
+import typings.ionicCore.componentsMod.global.HTMLIonModalElement
 import typings.ionicCore.gestureMod.Gesture
 import scala.scalajs.js
 import scala.scalajs.js.`|`

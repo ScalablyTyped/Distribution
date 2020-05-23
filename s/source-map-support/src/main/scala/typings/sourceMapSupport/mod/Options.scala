@@ -31,12 +31,12 @@ object Options {
     retrieveSourceMap: /* source */ String => UrlAndMap | Null = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emptyCacheBetweenOperations)) __obj.updateDynamic("emptyCacheBetweenOperations")(emptyCacheBetweenOperations.asInstanceOf[js.Any])
+    if (!js.isUndefined(emptyCacheBetweenOperations)) __obj.updateDynamic("emptyCacheBetweenOperations")(emptyCacheBetweenOperations.get.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleUncaughtExceptions)) __obj.updateDynamic("handleUncaughtExceptions")(handleUncaughtExceptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(hookRequire)) __obj.updateDynamic("hookRequire")(hookRequire.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideRetrieveFile)) __obj.updateDynamic("overrideRetrieveFile")(overrideRetrieveFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideRetrieveSourceMap)) __obj.updateDynamic("overrideRetrieveSourceMap")(overrideRetrieveSourceMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleUncaughtExceptions)) __obj.updateDynamic("handleUncaughtExceptions")(handleUncaughtExceptions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hookRequire)) __obj.updateDynamic("hookRequire")(hookRequire.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideRetrieveFile)) __obj.updateDynamic("overrideRetrieveFile")(overrideRetrieveFile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideRetrieveSourceMap)) __obj.updateDynamic("overrideRetrieveSourceMap")(overrideRetrieveSourceMap.get.asInstanceOf[js.Any])
     if (retrieveFile != null) __obj.updateDynamic("retrieveFile")(js.Any.fromFunction1(retrieveFile))
     if (retrieveSourceMap != null) __obj.updateDynamic("retrieveSourceMap")(js.Any.fromFunction1(retrieveSourceMap))
     __obj.asInstanceOf[Options]

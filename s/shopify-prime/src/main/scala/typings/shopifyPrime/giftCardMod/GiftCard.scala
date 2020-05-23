@@ -77,43 +77,43 @@ object GiftCard {
   @scala.inline
   def apply(
     admin_graphql_api_id: String = null,
-    api_client_id: Int | Double = null,
-    balance: Int | Double = null,
+    api_client_id: js.UndefOr[Double] = js.undefined,
+    balance: js.UndefOr[Double] = js.undefined,
     code: String = null,
     created_at: Date = null,
     currency: String = null,
     disabled_at: Date = null,
     expires_on: Date = null,
-    id: Int | Double = null,
-    initial_value: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
+    initial_value: js.UndefOr[Double] = js.undefined,
     last_characters: String = null,
-    line_item_id: Int | Double = null,
+    line_item_id: js.UndefOr[Double] = js.undefined,
     masked_code: String = null,
     note: String = null,
-    order_id: Int | Double = null,
+    order_id: js.UndefOr[Double] = js.undefined,
     template_suffix: String = null,
     updated_at: Date = null,
-    user_id: Int | Double = null
+    user_id: js.UndefOr[Double] = js.undefined
   ): GiftCard = {
     val __obj = js.Dynamic.literal()
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (api_client_id != null) __obj.updateDynamic("api_client_id")(api_client_id.asInstanceOf[js.Any])
-    if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
+    if (!js.isUndefined(api_client_id)) __obj.updateDynamic("api_client_id")(api_client_id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(balance)) __obj.updateDynamic("balance")(balance.get.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (disabled_at != null) __obj.updateDynamic("disabled_at")(disabled_at.asInstanceOf[js.Any])
     if (expires_on != null) __obj.updateDynamic("expires_on")(expires_on.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initial_value != null) __obj.updateDynamic("initial_value")(initial_value.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(initial_value)) __obj.updateDynamic("initial_value")(initial_value.get.asInstanceOf[js.Any])
     if (last_characters != null) __obj.updateDynamic("last_characters")(last_characters.asInstanceOf[js.Any])
-    if (line_item_id != null) __obj.updateDynamic("line_item_id")(line_item_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(line_item_id)) __obj.updateDynamic("line_item_id")(line_item_id.get.asInstanceOf[js.Any])
     if (masked_code != null) __obj.updateDynamic("masked_code")(masked_code.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(order_id)) __obj.updateDynamic("order_id")(order_id.get.asInstanceOf[js.Any])
     if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(user_id)) __obj.updateDynamic("user_id")(user_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GiftCard]
   }
 }

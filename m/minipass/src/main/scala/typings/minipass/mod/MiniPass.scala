@@ -1,6 +1,6 @@
 package typings.minipass.mod
 
-import typings.minipass.AnonEnd
+import typings.minipass.anon.End
 import typings.minipass.minipassStrings.close
 import typings.minipass.minipassStrings.data
 import typings.minipass.minipassStrings.drain
@@ -98,7 +98,7 @@ trait MiniPass
   def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def pause(): Unit = js.native
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")

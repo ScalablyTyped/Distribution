@@ -1,32 +1,32 @@
 package typings.jqueryui.JQueryUI
 
 import typings.jquery.JQueryEventObject
-import typings.jqueryui.AnonSelected
-import typings.jqueryui.AnonSelecting
-import typings.jqueryui.AnonUnselected
-import typings.jqueryui.AnonUnselecting
+import typings.jqueryui.anon.Selected
+import typings.jqueryui.anon.Selecting
+import typings.jqueryui.anon.Unselected
+import typings.jqueryui.anon.Unselecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectableEvents extends js.Object {
-  var selected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ AnonSelected, Unit]] = js.undefined
-  var selecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ AnonSelecting, Unit]] = js.undefined
+  var selected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selected, Unit]] = js.undefined
+  var selecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selecting, Unit]] = js.undefined
   var start: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.undefined
   var stop: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.undefined
-  var unselected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ AnonUnselected, Unit]] = js.undefined
-  var unselecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ AnonUnselecting, Unit]] = js.undefined
+  var unselected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Unselected, Unit]] = js.undefined
+  var unselecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Unselecting, Unit]] = js.undefined
 }
 
 object SelectableEvents {
   @scala.inline
   def apply(
-    selected: (/* event */ JQueryEventObject, /* ui */ AnonSelected) => Unit = null,
-    selecting: (/* event */ JQueryEventObject, /* ui */ AnonSelecting) => Unit = null,
+    selected: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit = null,
+    selecting: (/* event */ JQueryEventObject, /* ui */ Selecting) => Unit = null,
     start: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
     stop: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
-    unselected: (/* event */ JQueryEventObject, /* ui */ AnonUnselected) => Unit = null,
-    unselecting: (/* event */ JQueryEventObject, /* ui */ AnonUnselecting) => Unit = null
+    unselected: (/* event */ JQueryEventObject, /* ui */ Unselected) => Unit = null,
+    unselecting: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Unit = null
   ): SelectableEvents = {
     val __obj = js.Dynamic.literal()
     if (selected != null) __obj.updateDynamic("selected")(js.Any.fromFunction2(selected))

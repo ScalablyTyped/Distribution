@@ -24,10 +24,10 @@ object ISizePolicy {
     setsWidth: js.UndefOr[Boolean] = js.undefined
   ): ISizePolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(readsHeight)) __obj.updateDynamic("readsHeight")(readsHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(readsWidth)) __obj.updateDynamic("readsWidth")(readsWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(setsHeight)) __obj.updateDynamic("setsHeight")(setsHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(setsWidth)) __obj.updateDynamic("setsWidth")(setsWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(readsHeight)) __obj.updateDynamic("readsHeight")(readsHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readsWidth)) __obj.updateDynamic("readsWidth")(readsWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setsHeight)) __obj.updateDynamic("setsHeight")(setsHeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(setsWidth)) __obj.updateDynamic("setsWidth")(setsWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISizePolicy]
   }
 }

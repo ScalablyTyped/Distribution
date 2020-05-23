@@ -1,5 +1,6 @@
 package typings.klaw.mod
 
+import typings.node.BufferEncoding
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import typings.std.Error
@@ -21,17 +22,17 @@ object Options {
   @scala.inline
   def apply(
     autoDestroy: js.UndefOr[Boolean] = js.undefined,
-    depthLimit: Int | Double = null,
+    depthLimit: js.UndefOr[Double] = js.undefined,
     destroy: js.ThisFunction2[
       /* this */ Readable, 
       /* error */ Error | Null, 
       /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ] = null,
-    encoding: String = null,
+    encoding: BufferEncoding = null,
     filter: /* path */ String => Boolean = null,
     fs: js.Any = null,
-    highWaterMark: Int | Double = null,
+    highWaterMark: js.UndefOr[Double] = js.undefined,
     objectMode: js.UndefOr[Boolean] = js.undefined,
     pathSorter: (/* pathA */ String, /* pathB */ String) => Double = null,
     preserveSymlinks: js.UndefOr[Boolean] = js.undefined,
@@ -39,16 +40,16 @@ object Options {
     read: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.asInstanceOf[js.Any])
-    if (depthLimit != null) __obj.updateDynamic("depthLimit")(depthLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(depthLimit)) __obj.updateDynamic("depthLimit")(depthLimit.get.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
     if (pathSorter != null) __obj.updateDynamic("pathSorter")(js.Any.fromFunction2(pathSorter))
-    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.get.asInstanceOf[js.Any])
     if (queueMethod != null) __obj.updateDynamic("queueMethod")(queueMethod.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

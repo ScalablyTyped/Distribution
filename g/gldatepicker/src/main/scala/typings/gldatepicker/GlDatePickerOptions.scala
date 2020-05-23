@@ -42,11 +42,11 @@ object GlDatePickerOptions {
   def apply(
     allowMonthSelect: js.UndefOr[Boolean] = js.undefined,
     allowYearSelect: js.UndefOr[Boolean] = js.undefined,
-    borderSize: Int | Double = null,
+    borderSize: js.UndefOr[Double] = js.undefined,
     calendarOffset: GlDatePickerOffset = null,
     cssName: String = null,
     dowNames: js.Array[String] = null,
-    dowOffset: Int | Double = null,
+    dowOffset: js.UndefOr[Double] = js.undefined,
     hideOnClick: js.UndefOr[Boolean] = js.undefined,
     monthNames: js.Array[String] = null,
     nextArrow: String = null,
@@ -64,17 +64,17 @@ object GlDatePickerOptions {
     showAlways: js.UndefOr[Boolean] = js.undefined,
     specialDates: js.Array[GlDatePickerSpecialDate] = null,
     todayDate: Date = null,
-    zIndex: Int | Double = null
+    zIndex: js.UndefOr[Double] = js.undefined
   ): GlDatePickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMonthSelect)) __obj.updateDynamic("allowMonthSelect")(allowMonthSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowYearSelect)) __obj.updateDynamic("allowYearSelect")(allowYearSelect.asInstanceOf[js.Any])
-    if (borderSize != null) __obj.updateDynamic("borderSize")(borderSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMonthSelect)) __obj.updateDynamic("allowMonthSelect")(allowMonthSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowYearSelect)) __obj.updateDynamic("allowYearSelect")(allowYearSelect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderSize)) __obj.updateDynamic("borderSize")(borderSize.get.asInstanceOf[js.Any])
     if (calendarOffset != null) __obj.updateDynamic("calendarOffset")(calendarOffset.asInstanceOf[js.Any])
     if (cssName != null) __obj.updateDynamic("cssName")(cssName.asInstanceOf[js.Any])
     if (dowNames != null) __obj.updateDynamic("dowNames")(dowNames.asInstanceOf[js.Any])
-    if (dowOffset != null) __obj.updateDynamic("dowOffset")(dowOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(dowOffset)) __obj.updateDynamic("dowOffset")(dowOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.get.asInstanceOf[js.Any])
     if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
     if (nextArrow != null) __obj.updateDynamic("nextArrow")(nextArrow.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction4(onClick))
@@ -88,10 +88,10 @@ object GlDatePickerOptions {
     if (selectableMonths != null) __obj.updateDynamic("selectableMonths")(selectableMonths.asInstanceOf[js.Any])
     if (selectableYears != null) __obj.updateDynamic("selectableYears")(selectableYears.asInstanceOf[js.Any])
     if (selectedDate != null) __obj.updateDynamic("selectedDate")(selectedDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAlways)) __obj.updateDynamic("showAlways")(showAlways.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAlways)) __obj.updateDynamic("showAlways")(showAlways.get.asInstanceOf[js.Any])
     if (specialDates != null) __obj.updateDynamic("specialDates")(specialDates.asInstanceOf[js.Any])
     if (todayDate != null) __obj.updateDynamic("todayDate")(todayDate.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlDatePickerOptions]
   }
 }

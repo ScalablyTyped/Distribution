@@ -6,19 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.m.Tokenizer")
 @js.native
-class Tokenizer protected () extends Control {
-  /**
-    * Constructor for a new Tokenizer.Accepts an object literal <code>mSettings</code> that defines
-    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-    * object.
-    * @param sId id for the new control, generated automatically if no id is given
-    * @param mSettings initial settings for the new control
-    */
-  def this(sId: String) = this()
-  def this(sId: String, mSettings: js.Any) = this()
+trait Tokenizer extends Control {
   /**
     * Adds some ariaDescribedBy into the association <code>ariaDescribedBy</code>.
     * @param vAriaDescribedBy the ariaDescribedBy to add; if empty, nothing is inserted
@@ -85,7 +74,7 @@ class Tokenizer protected () extends Control {
     * Fires event <code>tokenChange</code> to attached listeners.Expects the following event
     * parameters:<ul><li><code>type</code> of type <code>string</code>type of tokenChange event.There are
     * four TokenChange types: "added", "removed", "removedAll", "tokensChanged".Use
-    * Tokenizer.TokenChangeType.Added for "added",	Tokenizer.TokenChangeType.Removed for "removed",
+    * Tokenizer.TokenChangeType.Added for "added",    Tokenizer.TokenChangeType.Removed for "removed",
     * Tokenizer.TokenChangeType.RemovedAll for "removedAll" and Tokenizer.TokenChangeType.TokensChanged
     * for "tokensChanged".</li><li><code>token</code> of type <code>sap.m.Token</code>the added token or
     * removed token.This parameter is used when tokenChange type is "added" or

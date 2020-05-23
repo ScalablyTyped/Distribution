@@ -14,16 +14,12 @@ trait ZipFileOptions extends js.Object {
 object ZipFileOptions {
   @scala.inline
   def apply(
-    decompress: js.UndefOr[Boolean] = js.undefined,
-    decrypt: js.UndefOr[Boolean] = js.undefined,
-    end: Int | Double = null,
-    start: Int | Double = null
+    decompress: Boolean = null.asInstanceOf[Boolean],
+    decrypt: Boolean = null.asInstanceOf[Boolean],
+    end: Double = null.asInstanceOf[Double],
+    start: Double = null.asInstanceOf[Double]
   ): ZipFileOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decompress)) __obj.updateDynamic("decompress")(decompress.asInstanceOf[js.Any])
-    if (!js.isUndefined(decrypt)) __obj.updateDynamic("decrypt")(decrypt.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(decompress = decompress.asInstanceOf[js.Any], decrypt = decrypt.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipFileOptions]
   }
 }

@@ -7,10 +7,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/test/unit/specs/spec_builder", "ClientMemoryState")
+@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/specs/spec_builder", "ClientMemoryState")
 @js.native
 class ClientMemoryState () extends js.Object {
   var activeTargets: ActiveTargetMap = js.native
+  var injectFailures: Boolean = js.native
   var limboIdGenerator: TargetIdGenerator = js.native
   var limboMapping: LimboMap = js.native
   var queryMapping: ObjectMap[Target, Double] = js.native

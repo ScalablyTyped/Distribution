@@ -1,6 +1,6 @@
 package typings.luxon.mod
 
-import typings.luxon.AnonIncludeConfig
+import typings.luxon.anon.IncludeConfig
 import typings.std.Date
 import typings.std.Intl.ResolvedDateTimeFormatOptions
 import scala.scalajs.js
@@ -55,7 +55,9 @@ class DateTime () extends js.Object {
   def diffNow(unit: DurationUnit, options: DiffOptions): Duration = js.native
   def endOf(unit: DurationUnit): DateTime = js.native
   def equals(other: DateTime): Boolean = js.native
-  def get(unit: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 110 */ js.Any): Double = js.native
+  def get(
+    unit: /* keyof luxon.luxon.DateTime */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 110 */ js.Any
+  ): Double = js.native
   def hasSame(other: DateTime, unit: DurationUnit): Boolean = js.native
   def minus(duration: Double): DateTime = js.native
   def minus(duration: Duration): DateTime = js.native
@@ -79,7 +81,9 @@ class DateTime () extends js.Object {
   def toHTTP(): String = js.native
   def toISO(): String = js.native
   def toISO(options: ToISOTimeOptions): String = js.native
+  /** Returns an ISO 8601-compliant string representation of this DateTime's date component */
   def toISODate(): String = js.native
+  def toISODate(options: ToISODateOptions): String = js.native
   def toISOTime(): String = js.native
   def toISOTime(options: ToISOTimeOptions): String = js.native
   def toISOWeekDate(): String = js.native
@@ -91,7 +95,7 @@ class DateTime () extends js.Object {
   def toLocaleString(options: LocaleOptions with DateTimeFormatOptions): String = js.native
   def toMillis(): Double = js.native
   def toObject(): DateObject = js.native
-  def toObject(options: AnonIncludeConfig): DateObject = js.native
+  def toObject(options: IncludeConfig): DateObject = js.native
   def toRFC2822(): String = js.native
   def toRelative(): String | Null = js.native
   def toRelative(options: ToRelativeOptions): String | Null = js.native

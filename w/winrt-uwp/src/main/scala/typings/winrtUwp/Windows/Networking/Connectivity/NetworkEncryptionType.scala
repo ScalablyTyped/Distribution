@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,38 +50,6 @@ object NetworkEncryptionType extends js.Object {
   /** Specifies a Wifi Protected Access (WPA) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard. */
   @js.native
   sealed trait wpaUseGroup extends NetworkEncryptionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NetworkEncryptionType with Double] = js.native
-  /* 6 */ @js.native
-  object ccmp extends TopLevel[ccmp with Double]
-  
-  /* 9 */ @js.native
-  object ihv extends TopLevel[ihv with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 8 */ @js.native
-  object rsnUseGroup extends TopLevel[rsnUseGroup with Double]
-  
-  /* 5 */ @js.native
-  object tkip extends TopLevel[tkip with Double]
-  
-  /* 1 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 2 */ @js.native
-  object wep extends TopLevel[wep with Double]
-  
-  /* 4 */ @js.native
-  object wep104 extends TopLevel[wep104 with Double]
-  
-  /* 3 */ @js.native
-  object wep40 extends TopLevel[wep40 with Double]
-  
-  /* 7 */ @js.native
-  object wpaUseGroup extends TopLevel[wpaUseGroup with Double]
   
 }
 

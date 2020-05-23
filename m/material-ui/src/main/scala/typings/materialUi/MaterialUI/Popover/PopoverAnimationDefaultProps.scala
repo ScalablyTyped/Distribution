@@ -19,13 +19,13 @@ object PopoverAnimationDefaultProps {
     className: String = null,
     style: CSSProperties = null,
     targetOrigin: origin = null,
-    zDepth: Int | Double = null
+    zDepth: js.UndefOr[Double] = js.undefined
   ): PopoverAnimationDefaultProps = {
     val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin.asInstanceOf[js.Any])
-    if (zDepth != null) __obj.updateDynamic("zDepth")(zDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(zDepth)) __obj.updateDynamic("zDepth")(zDepth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverAnimationDefaultProps]
   }
 }

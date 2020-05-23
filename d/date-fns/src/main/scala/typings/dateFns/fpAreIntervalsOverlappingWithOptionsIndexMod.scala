@@ -1,6 +1,7 @@
 package typings.dateFns
 
 import org.scalablytyped.runtime.TopLevel
+import typings.dateFns.anon.Inclusive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fpAreIntervalsOverlappingWithOptionsIndexMod extends js.Object {
   @js.native
-  object default extends TopLevel[CurriedFn3[AnonInclusive, Interval, Interval, Boolean]]
+  object default extends TopLevel[CurriedFn3[Inclusive, Interval, Interval, Boolean]]
   
 }
 

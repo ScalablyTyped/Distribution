@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about a Play To connection. */
-@JSGlobal("Windows.Media.PlayTo.PlayToConnection")
 @js.native
-abstract class PlayToConnection () extends js.Object {
+trait PlayToConnection extends js.Object {
   /** Occurs when an error is encountered for the Play To connection. */
   @JSName("onerror")
   var onerror_Original: TypedEventHandler[PlayToConnection, PlayToConnectionErrorEventArgs] = js.native

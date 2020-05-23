@@ -1,7 +1,7 @@
 package typings.reactResponsive.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactResponsive.PartialMediaQueryAllQuery
+import typings.reactResponsive.anon.PartialMediaQueryAllQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

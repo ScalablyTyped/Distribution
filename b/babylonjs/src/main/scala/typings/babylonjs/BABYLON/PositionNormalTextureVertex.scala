@@ -4,36 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.PositionNormalTextureVertex")
-@js.native
-/**
-  * Creates a PositionNormalTextureVertex
-  * @param position the position of the vertex (defaut: 0,0,0)
-  * @param normal the normal of the vertex (defaut: 0,1,0)
-  * @param uv the uv of the vertex (default: 0,0)
-  */
-class PositionNormalTextureVertex () extends js.Object {
-  def this(/** the position of the vertex (defaut: 0,0,0) */
-  position: Vector3) = this()
-  def this(
-    /** the position of the vertex (defaut: 0,0,0) */
-  position: Vector3,
-    /** the normal of the vertex (defaut: 0,1,0) */
-  normal: Vector3
-  ) = this()
-  def this(
-    /** the position of the vertex (defaut: 0,0,0) */
-  position: Vector3,
-    /** the normal of the vertex (defaut: 0,1,0) */
-  normal: Vector3,
-    /** the uv of the vertex (default: 0,0) */
-  uv: Vector2
-  ) = this()
+trait PositionNormalTextureVertex extends js.Object {
   /** the normal of the vertex (defaut: 0,1,0) */
-  var normal: Vector3 = js.native
+  var normal: Vector3
   /** the position of the vertex (defaut: 0,0,0) */
-  var position: Vector3 = js.native
+  var position: Vector3
   /** the uv of the vertex (default: 0,0) */
-  var uv: Vector2 = js.native
+  var uv: Vector2
+}
+
+object PositionNormalTextureVertex {
+  @scala.inline
+  def apply(normal: Vector3, position: Vector3, uv: Vector2): PositionNormalTextureVertex = {
+    val __obj = js.Dynamic.literal(normal = normal.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], uv = uv.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PositionNormalTextureVertex]
+  }
 }
 

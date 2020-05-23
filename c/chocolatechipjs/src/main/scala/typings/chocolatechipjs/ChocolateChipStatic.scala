@@ -1,6 +1,10 @@
 package typings.chocolatechipjs
 
-import typings.std.Document_
+import typings.chocolatechipjs.anon.Call
+import typings.chocolatechipjs.anon.CallbackName
+import typings.chocolatechipjs.anon.Data
+import typings.chocolatechipjs.anon.Extend
+import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.HTMLFormElement
 import typings.std.JSON
@@ -26,11 +30,11 @@ trait ChocolateChipStatic extends js.Object {
     * data: this is used by $(element).data() to store data.
     * events: this is used by the event system.
     */
-  var chch_cache: AnonData = js.native
+  var chch_cache: Data = js.native
   /**
     * The base for extending ChocolateChipJS collections, which are arrays of elements.
     */
-  var fn: AnonExtend = js.native
+  var fn: Extend = js.native
   /**
     * Whether OS is Android
     */
@@ -128,7 +132,7 @@ trait ChocolateChipStatic extends js.Object {
     *
     */
   @JSName("template")
-  var template_Original: AnonCall = js.native
+  var template_Original: Call = js.native
   /**
     * Object used to store string templates and parsed templates.
     *
@@ -148,7 +152,7 @@ trait ChocolateChipStatic extends js.Object {
   /**
     * If no argument is provided, return the document as a ChocolateChipElementArray.
     */
-  def apply(): js.Array[Document_] = js.native
+  def apply(): js.Array[Document] = js.native
   /**
     * Binds a function to be executed when the DOM has finished loading.
     *
@@ -170,9 +174,9 @@ trait ChocolateChipStatic extends js.Object {
   def apply(selector: String): ChocolateChipElementArray = js.native
   def apply(selector: String, context: ChocolateChipElementArray): ChocolateChipElementArray = js.native
   def apply(selector: String, context: HTMLElement): ChocolateChipElementArray = js.native
-  def apply(selector: Document_): ChocolateChipElementArray = js.native
-  def apply(selector: Document_, context: ChocolateChipElementArray): ChocolateChipElementArray = js.native
-  def apply(selector: Document_, context: HTMLElement): ChocolateChipElementArray = js.native
+  def apply(selector: Document): ChocolateChipElementArray = js.native
+  def apply(selector: Document, context: ChocolateChipElementArray): ChocolateChipElementArray = js.native
+  def apply(selector: Document, context: HTMLElement): ChocolateChipElementArray = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
@@ -315,7 +319,7 @@ trait ChocolateChipStatic extends js.Object {
     * @param options And object literal of properties: {timeout? number, callbackName?: string, clear?: boolean}
     */
   def jsonp(url: String): js.Any = js.native
-  def jsonp(url: String, options: AnonCallbackName): js.Any = js.native
+  def jsonp(url: String, options: CallbackName): js.Any = js.native
   /**
     * Create a ChocolateChip collection object by creating elements from an HTML string.
     */

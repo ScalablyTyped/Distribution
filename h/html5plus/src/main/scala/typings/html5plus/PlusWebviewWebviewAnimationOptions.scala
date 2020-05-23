@@ -17,10 +17,10 @@ trait PlusWebviewWebviewAnimationOptions extends js.Object {
   /**
     * 窗口动画完成后的行为
     * 可取值：
-    * 	"none" - 动画完成后不做任何操作；
-    * 	"hide" - 动画完成后隐藏窗口；
-    * 	"close" - 动画完成后关闭窗口。
-    * 	默认值为"none"。
+    *     "none" - 动画完成后不做任何操作；
+    *     "hide" - 动画完成后隐藏窗口；
+    *     "close" - 动画完成后关闭窗口。
+    *     默认值为"none"。
     * - none: 动画完成后不做任何操作
     * - hide: 动画完成后隐藏窗口
     * - close: 动画完成后关闭窗口

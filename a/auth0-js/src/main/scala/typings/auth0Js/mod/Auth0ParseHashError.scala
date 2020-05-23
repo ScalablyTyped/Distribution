@@ -33,7 +33,7 @@ object Auth0ParseHashError {
     original: js.Any = null,
     policy: String = null,
     state: String = null,
-    statusCode: Int | Double = null,
+    statusCode: js.UndefOr[Double] = js.undefined,
     statusText: String = null
   ): Auth0ParseHashError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object Auth0ParseHashError {
     if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
     if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0ParseHashError]
   }

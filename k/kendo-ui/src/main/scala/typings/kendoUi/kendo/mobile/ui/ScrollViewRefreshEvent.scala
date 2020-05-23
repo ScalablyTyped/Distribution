@@ -15,12 +15,12 @@ object ScrollViewRefreshEvent {
     isDefaultPrevented: () => Boolean,
     preventDefault: js.Function,
     sender: ScrollView,
-    page: Int | Double = null,
-    pageCount: Int | Double = null
+    page: js.UndefOr[Double] = js.undefined,
+    pageCount: js.UndefOr[Double] = js.undefined
   ): ScrollViewRefreshEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageCount)) __obj.updateDynamic("pageCount")(pageCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewRefreshEvent]
   }
 }

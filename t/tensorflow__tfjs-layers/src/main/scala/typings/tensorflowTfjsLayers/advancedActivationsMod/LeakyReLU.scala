@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsLayers.advancedActivationsMod
 
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`0.3`
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LeakyReLU () extends Layer {
   def this(args: LeakyReLULayerArgs) = this()
-  val DEFAULT_ALPHA: `0.3` = js.native
+  val DEFAULT_ALPHA: /* 0.3 */ Double = js.native
   val alpha: Double = js.native
 }
 

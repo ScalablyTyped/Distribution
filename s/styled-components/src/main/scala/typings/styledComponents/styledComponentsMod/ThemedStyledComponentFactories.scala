@@ -179,7 +179,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {[ TTag in keyof react.react._Global_.JSX.IntrinsicElements ]: styled-components.styled-components.ThemedStyledFunction<TTag, T, {}, never>} */
+/* Inlined {[ TTag in keyof react.react.<global>.JSX.IntrinsicElements ]: styled-components.styled-components.ThemedStyledFunction<TTag, T, {}, never>} */
 trait ThemedStyledComponentFactories[T /* <: js.Object */] extends js.Object {
   var a: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.a, T, js.Object, scala.Nothing]
   var abbr: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.abbr, T, js.Object, scala.Nothing]
@@ -470,7 +470,7 @@ trait ThemedStyledComponentFactories[T /* <: js.Object */] extends js.Object {
 
 object ThemedStyledComponentFactories {
   @scala.inline
-  def apply[T /* <: js.Object */](
+  def apply[T](
     a: ThemedStyledFunction[a, T, js.Object, scala.Nothing],
     abbr: ThemedStyledFunction[abbr, T, js.Object, scala.Nothing],
     address: ThemedStyledFunction[address, T, js.Object, scala.Nothing],

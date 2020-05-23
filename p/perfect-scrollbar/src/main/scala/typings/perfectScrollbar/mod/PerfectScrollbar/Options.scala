@@ -23,31 +23,31 @@ object Options {
   @scala.inline
   def apply(
     handlers: js.Array[String] = null,
-    maxScrollbarLength: Int | Double = null,
-    minScrollbarLength: Int | Double = null,
-    scrollXMarginOffset: Int | Double = null,
-    scrollYMarginOffset: Int | Double = null,
-    scrollingThreshold: Int | Double = null,
+    maxScrollbarLength: js.UndefOr[Double] = js.undefined,
+    minScrollbarLength: js.UndefOr[Double] = js.undefined,
+    scrollXMarginOffset: js.UndefOr[Double] = js.undefined,
+    scrollYMarginOffset: js.UndefOr[Double] = js.undefined,
+    scrollingThreshold: js.UndefOr[Double] = js.undefined,
     suppressScrollX: js.UndefOr[Boolean] = js.undefined,
     suppressScrollY: js.UndefOr[Boolean] = js.undefined,
     swipeEasing: js.UndefOr[Boolean] = js.undefined,
     useBothWheelAxes: js.UndefOr[Boolean] = js.undefined,
     wheelPropagation: js.UndefOr[Boolean] = js.undefined,
-    wheelSpeed: Int | Double = null
+    wheelSpeed: js.UndefOr[Double] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (handlers != null) __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
-    if (maxScrollbarLength != null) __obj.updateDynamic("maxScrollbarLength")(maxScrollbarLength.asInstanceOf[js.Any])
-    if (minScrollbarLength != null) __obj.updateDynamic("minScrollbarLength")(minScrollbarLength.asInstanceOf[js.Any])
-    if (scrollXMarginOffset != null) __obj.updateDynamic("scrollXMarginOffset")(scrollXMarginOffset.asInstanceOf[js.Any])
-    if (scrollYMarginOffset != null) __obj.updateDynamic("scrollYMarginOffset")(scrollYMarginOffset.asInstanceOf[js.Any])
-    if (scrollingThreshold != null) __obj.updateDynamic("scrollingThreshold")(scrollingThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressScrollX)) __obj.updateDynamic("suppressScrollX")(suppressScrollX.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressScrollY)) __obj.updateDynamic("suppressScrollY")(suppressScrollY.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeEasing)) __obj.updateDynamic("swipeEasing")(swipeEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBothWheelAxes)) __obj.updateDynamic("useBothWheelAxes")(useBothWheelAxes.asInstanceOf[js.Any])
-    if (!js.isUndefined(wheelPropagation)) __obj.updateDynamic("wheelPropagation")(wheelPropagation.asInstanceOf[js.Any])
-    if (wheelSpeed != null) __obj.updateDynamic("wheelSpeed")(wheelSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxScrollbarLength)) __obj.updateDynamic("maxScrollbarLength")(maxScrollbarLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minScrollbarLength)) __obj.updateDynamic("minScrollbarLength")(minScrollbarLength.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollXMarginOffset)) __obj.updateDynamic("scrollXMarginOffset")(scrollXMarginOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollYMarginOffset)) __obj.updateDynamic("scrollYMarginOffset")(scrollYMarginOffset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollingThreshold)) __obj.updateDynamic("scrollingThreshold")(scrollingThreshold.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressScrollX)) __obj.updateDynamic("suppressScrollX")(suppressScrollX.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressScrollY)) __obj.updateDynamic("suppressScrollY")(suppressScrollY.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeEasing)) __obj.updateDynamic("swipeEasing")(swipeEasing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBothWheelAxes)) __obj.updateDynamic("useBothWheelAxes")(useBothWheelAxes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelPropagation)) __obj.updateDynamic("wheelPropagation")(wheelPropagation.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelSpeed)) __obj.updateDynamic("wheelSpeed")(wheelSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

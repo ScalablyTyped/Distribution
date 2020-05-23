@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 trait IgTreeGridTooltipsMethods extends js.Object {
   def destroy(): Unit
   /**
-  	 * Returns the ID of the parent div element bounding the ruler and the tooltip container
-  	 */
+    * Returns the ID of the parent div element bounding the ruler and the tooltip container
+    */
   def id(): String
 }
 

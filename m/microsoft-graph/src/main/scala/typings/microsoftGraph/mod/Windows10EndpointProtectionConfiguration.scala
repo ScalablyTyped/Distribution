@@ -126,7 +126,7 @@ object Windows10EndpointProtectionConfiguration {
     createdDateTime: String = null,
     defenderAdditionalGuardedFolders: js.Array[String] = null,
     defenderAttackSurfaceReductionExcludedPaths: js.Array[String] = null,
-    defenderExploitProtectionXml: Int | Double = null,
+    defenderExploitProtectionXml: js.UndefOr[Double] = js.undefined,
     defenderExploitProtectionXmlFileName: String = null,
     defenderGuardedFoldersAllowedAppPaths: js.Array[String] = null,
     defenderSecurityCenterBlockExploitProtectionOverride: js.UndefOr[Boolean] = js.undefined,
@@ -141,7 +141,7 @@ object Windows10EndpointProtectionConfiguration {
     firewallIPSecExemptionsAllowICMP: js.UndefOr[Boolean] = js.undefined,
     firewallIPSecExemptionsAllowNeighborDiscovery: js.UndefOr[Boolean] = js.undefined,
     firewallIPSecExemptionsAllowRouterDiscovery: js.UndefOr[Boolean] = js.undefined,
-    firewallIdleTimeoutForSecurityAssociationInSeconds: Int | Double = null,
+    firewallIdleTimeoutForSecurityAssociationInSeconds: js.UndefOr[Double] = js.undefined,
     firewallMergeKeyingModuleSettings: js.UndefOr[Boolean] = js.undefined,
     firewallPacketQueueingMethod: FirewallPacketQueueingMethodType = null,
     firewallPreSharedKeyEncodingMethod: FirewallPreSharedKeyEncodingMethodType = null,
@@ -154,45 +154,45 @@ object Windows10EndpointProtectionConfiguration {
     smartScreenEnableInShell: js.UndefOr[Boolean] = js.undefined,
     userStatusOverview: DeviceConfigurationUserOverview = null,
     userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
+    version: js.UndefOr[Double] = js.undefined
   ): Windows10EndpointProtectionConfiguration = {
     val __obj = js.Dynamic.literal()
     if (appLockerApplicationControl != null) __obj.updateDynamic("appLockerApplicationControl")(appLockerApplicationControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationGuardAllowPersistence)) __obj.updateDynamic("applicationGuardAllowPersistence")(applicationGuardAllowPersistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationGuardAllowPrintToLocalPrinters)) __obj.updateDynamic("applicationGuardAllowPrintToLocalPrinters")(applicationGuardAllowPrintToLocalPrinters.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationGuardAllowPrintToNetworkPrinters)) __obj.updateDynamic("applicationGuardAllowPrintToNetworkPrinters")(applicationGuardAllowPrintToNetworkPrinters.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationGuardAllowPrintToPDF)) __obj.updateDynamic("applicationGuardAllowPrintToPDF")(applicationGuardAllowPrintToPDF.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationGuardAllowPrintToXPS)) __obj.updateDynamic("applicationGuardAllowPrintToXPS")(applicationGuardAllowPrintToXPS.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationGuardAllowPersistence)) __obj.updateDynamic("applicationGuardAllowPersistence")(applicationGuardAllowPersistence.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationGuardAllowPrintToLocalPrinters)) __obj.updateDynamic("applicationGuardAllowPrintToLocalPrinters")(applicationGuardAllowPrintToLocalPrinters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationGuardAllowPrintToNetworkPrinters)) __obj.updateDynamic("applicationGuardAllowPrintToNetworkPrinters")(applicationGuardAllowPrintToNetworkPrinters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationGuardAllowPrintToPDF)) __obj.updateDynamic("applicationGuardAllowPrintToPDF")(applicationGuardAllowPrintToPDF.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationGuardAllowPrintToXPS)) __obj.updateDynamic("applicationGuardAllowPrintToXPS")(applicationGuardAllowPrintToXPS.get.asInstanceOf[js.Any])
     if (applicationGuardBlockClipboardSharing != null) __obj.updateDynamic("applicationGuardBlockClipboardSharing")(applicationGuardBlockClipboardSharing.asInstanceOf[js.Any])
     if (applicationGuardBlockFileTransfer != null) __obj.updateDynamic("applicationGuardBlockFileTransfer")(applicationGuardBlockFileTransfer.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationGuardBlockNonEnterpriseContent)) __obj.updateDynamic("applicationGuardBlockNonEnterpriseContent")(applicationGuardBlockNonEnterpriseContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationGuardEnabled)) __obj.updateDynamic("applicationGuardEnabled")(applicationGuardEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationGuardForceAuditing)) __obj.updateDynamic("applicationGuardForceAuditing")(applicationGuardForceAuditing.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationGuardBlockNonEnterpriseContent)) __obj.updateDynamic("applicationGuardBlockNonEnterpriseContent")(applicationGuardBlockNonEnterpriseContent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationGuardEnabled)) __obj.updateDynamic("applicationGuardEnabled")(applicationGuardEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(applicationGuardForceAuditing)) __obj.updateDynamic("applicationGuardForceAuditing")(applicationGuardForceAuditing.get.asInstanceOf[js.Any])
     if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(bitLockerDisableWarningForOtherDiskEncryption)) __obj.updateDynamic("bitLockerDisableWarningForOtherDiskEncryption")(bitLockerDisableWarningForOtherDiskEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(bitLockerEnableStorageCardEncryptionOnMobile)) __obj.updateDynamic("bitLockerEnableStorageCardEncryptionOnMobile")(bitLockerEnableStorageCardEncryptionOnMobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(bitLockerEncryptDevice)) __obj.updateDynamic("bitLockerEncryptDevice")(bitLockerEncryptDevice.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitLockerDisableWarningForOtherDiskEncryption)) __obj.updateDynamic("bitLockerDisableWarningForOtherDiskEncryption")(bitLockerDisableWarningForOtherDiskEncryption.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitLockerEnableStorageCardEncryptionOnMobile)) __obj.updateDynamic("bitLockerEnableStorageCardEncryptionOnMobile")(bitLockerEnableStorageCardEncryptionOnMobile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bitLockerEncryptDevice)) __obj.updateDynamic("bitLockerEncryptDevice")(bitLockerEncryptDevice.get.asInstanceOf[js.Any])
     if (bitLockerRemovableDrivePolicy != null) __obj.updateDynamic("bitLockerRemovableDrivePolicy")(bitLockerRemovableDrivePolicy.asInstanceOf[js.Any])
     if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (defenderAdditionalGuardedFolders != null) __obj.updateDynamic("defenderAdditionalGuardedFolders")(defenderAdditionalGuardedFolders.asInstanceOf[js.Any])
     if (defenderAttackSurfaceReductionExcludedPaths != null) __obj.updateDynamic("defenderAttackSurfaceReductionExcludedPaths")(defenderAttackSurfaceReductionExcludedPaths.asInstanceOf[js.Any])
-    if (defenderExploitProtectionXml != null) __obj.updateDynamic("defenderExploitProtectionXml")(defenderExploitProtectionXml.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderExploitProtectionXml)) __obj.updateDynamic("defenderExploitProtectionXml")(defenderExploitProtectionXml.get.asInstanceOf[js.Any])
     if (defenderExploitProtectionXmlFileName != null) __obj.updateDynamic("defenderExploitProtectionXmlFileName")(defenderExploitProtectionXmlFileName.asInstanceOf[js.Any])
     if (defenderGuardedFoldersAllowedAppPaths != null) __obj.updateDynamic("defenderGuardedFoldersAllowedAppPaths")(defenderGuardedFoldersAllowedAppPaths.asInstanceOf[js.Any])
-    if (!js.isUndefined(defenderSecurityCenterBlockExploitProtectionOverride)) __obj.updateDynamic("defenderSecurityCenterBlockExploitProtectionOverride")(defenderSecurityCenterBlockExploitProtectionOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(defenderSecurityCenterBlockExploitProtectionOverride)) __obj.updateDynamic("defenderSecurityCenterBlockExploitProtectionOverride")(defenderSecurityCenterBlockExploitProtectionOverride.get.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
     if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
     if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(firewallBlockStatefulFTP)) __obj.updateDynamic("firewallBlockStatefulFTP")(firewallBlockStatefulFTP.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallBlockStatefulFTP)) __obj.updateDynamic("firewallBlockStatefulFTP")(firewallBlockStatefulFTP.get.asInstanceOf[js.Any])
     if (firewallCertificateRevocationListCheckMethod != null) __obj.updateDynamic("firewallCertificateRevocationListCheckMethod")(firewallCertificateRevocationListCheckMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(firewallIPSecExemptionsAllowDHCP)) __obj.updateDynamic("firewallIPSecExemptionsAllowDHCP")(firewallIPSecExemptionsAllowDHCP.asInstanceOf[js.Any])
-    if (!js.isUndefined(firewallIPSecExemptionsAllowICMP)) __obj.updateDynamic("firewallIPSecExemptionsAllowICMP")(firewallIPSecExemptionsAllowICMP.asInstanceOf[js.Any])
-    if (!js.isUndefined(firewallIPSecExemptionsAllowNeighborDiscovery)) __obj.updateDynamic("firewallIPSecExemptionsAllowNeighborDiscovery")(firewallIPSecExemptionsAllowNeighborDiscovery.asInstanceOf[js.Any])
-    if (!js.isUndefined(firewallIPSecExemptionsAllowRouterDiscovery)) __obj.updateDynamic("firewallIPSecExemptionsAllowRouterDiscovery")(firewallIPSecExemptionsAllowRouterDiscovery.asInstanceOf[js.Any])
-    if (firewallIdleTimeoutForSecurityAssociationInSeconds != null) __obj.updateDynamic("firewallIdleTimeoutForSecurityAssociationInSeconds")(firewallIdleTimeoutForSecurityAssociationInSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(firewallMergeKeyingModuleSettings)) __obj.updateDynamic("firewallMergeKeyingModuleSettings")(firewallMergeKeyingModuleSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallIPSecExemptionsAllowDHCP)) __obj.updateDynamic("firewallIPSecExemptionsAllowDHCP")(firewallIPSecExemptionsAllowDHCP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallIPSecExemptionsAllowICMP)) __obj.updateDynamic("firewallIPSecExemptionsAllowICMP")(firewallIPSecExemptionsAllowICMP.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallIPSecExemptionsAllowNeighborDiscovery)) __obj.updateDynamic("firewallIPSecExemptionsAllowNeighborDiscovery")(firewallIPSecExemptionsAllowNeighborDiscovery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallIPSecExemptionsAllowRouterDiscovery)) __obj.updateDynamic("firewallIPSecExemptionsAllowRouterDiscovery")(firewallIPSecExemptionsAllowRouterDiscovery.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallIdleTimeoutForSecurityAssociationInSeconds)) __obj.updateDynamic("firewallIdleTimeoutForSecurityAssociationInSeconds")(firewallIdleTimeoutForSecurityAssociationInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(firewallMergeKeyingModuleSettings)) __obj.updateDynamic("firewallMergeKeyingModuleSettings")(firewallMergeKeyingModuleSettings.get.asInstanceOf[js.Any])
     if (firewallPacketQueueingMethod != null) __obj.updateDynamic("firewallPacketQueueingMethod")(firewallPacketQueueingMethod.asInstanceOf[js.Any])
     if (firewallPreSharedKeyEncodingMethod != null) __obj.updateDynamic("firewallPreSharedKeyEncodingMethod")(firewallPreSharedKeyEncodingMethod.asInstanceOf[js.Any])
     if (firewallProfileDomain != null) __obj.updateDynamic("firewallProfileDomain")(firewallProfileDomain.asInstanceOf[js.Any])
@@ -200,11 +200,11 @@ object Windows10EndpointProtectionConfiguration {
     if (firewallProfilePublic != null) __obj.updateDynamic("firewallProfilePublic")(firewallProfilePublic.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartScreenBlockOverrideForFiles)) __obj.updateDynamic("smartScreenBlockOverrideForFiles")(smartScreenBlockOverrideForFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartScreenEnableInShell)) __obj.updateDynamic("smartScreenEnableInShell")(smartScreenEnableInShell.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartScreenBlockOverrideForFiles)) __obj.updateDynamic("smartScreenBlockOverrideForFiles")(smartScreenBlockOverrideForFiles.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartScreenEnableInShell)) __obj.updateDynamic("smartScreenEnableInShell")(smartScreenEnableInShell.get.asInstanceOf[js.Any])
     if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
     if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Windows10EndpointProtectionConfiguration]
   }
 }

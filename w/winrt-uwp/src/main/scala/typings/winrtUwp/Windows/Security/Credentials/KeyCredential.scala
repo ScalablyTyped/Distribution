@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a key credential, an RSA, 2048-bit, asymmetric key that represents a user's identity for an application. */
-@JSGlobal("Windows.Security.Credentials.KeyCredential")
 @js.native
-abstract class KeyCredential () extends js.Object {
+trait KeyCredential extends js.Object {
   /** Gets the name of the key credential. */
   var name: String = js.native
   /**

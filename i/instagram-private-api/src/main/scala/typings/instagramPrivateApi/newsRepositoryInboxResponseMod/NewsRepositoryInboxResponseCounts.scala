@@ -18,24 +18,24 @@ trait NewsRepositoryInboxResponseCounts extends js.Object {
 object NewsRepositoryInboxResponseCounts {
   @scala.inline
   def apply(
-    campaign_notification: Int | Double = null,
-    comment_likes: Int | Double = null,
-    comments: Int | Double = null,
-    likes: Int | Double = null,
-    photos_of_you: Int | Double = null,
-    relationships: Int | Double = null,
-    requests: Int | Double = null,
-    usertags: Int | Double = null
+    campaign_notification: js.UndefOr[Double] = js.undefined,
+    comment_likes: js.UndefOr[Double] = js.undefined,
+    comments: js.UndefOr[Double] = js.undefined,
+    likes: js.UndefOr[Double] = js.undefined,
+    photos_of_you: js.UndefOr[Double] = js.undefined,
+    relationships: js.UndefOr[Double] = js.undefined,
+    requests: js.UndefOr[Double] = js.undefined,
+    usertags: js.UndefOr[Double] = js.undefined
   ): NewsRepositoryInboxResponseCounts = {
     val __obj = js.Dynamic.literal()
-    if (campaign_notification != null) __obj.updateDynamic("campaign_notification")(campaign_notification.asInstanceOf[js.Any])
-    if (comment_likes != null) __obj.updateDynamic("comment_likes")(comment_likes.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (likes != null) __obj.updateDynamic("likes")(likes.asInstanceOf[js.Any])
-    if (photos_of_you != null) __obj.updateDynamic("photos_of_you")(photos_of_you.asInstanceOf[js.Any])
-    if (relationships != null) __obj.updateDynamic("relationships")(relationships.asInstanceOf[js.Any])
-    if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
-    if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
+    if (!js.isUndefined(campaign_notification)) __obj.updateDynamic("campaign_notification")(campaign_notification.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment_likes)) __obj.updateDynamic("comment_likes")(comment_likes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(likes)) __obj.updateDynamic("likes")(likes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(photos_of_you)) __obj.updateDynamic("photos_of_you")(photos_of_you.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(relationships)) __obj.updateDynamic("relationships")(relationships.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(requests)) __obj.updateDynamic("requests")(requests.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(usertags)) __obj.updateDynamic("usertags")(usertags.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseCounts]
   }
 }

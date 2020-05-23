@@ -24,6 +24,9 @@ object rebassFormsStrings {
   sealed trait both extends js.Object
   
   @js.native
+  sealed trait button extends js.Object
+  
+  @js.native
   sealed trait colors extends js.Object
   
   @js.native
@@ -117,6 +120,9 @@ object rebassFormsStrings {
   sealed trait removals extends js.Object
   
   @js.native
+  sealed trait reset extends js.Object
+  
+  @js.native
   sealed trait search extends js.Object
   
   @js.native
@@ -127,6 +133,9 @@ object rebassFormsStrings {
   
   @js.native
   sealed trait step extends js.Object
+  
+  @js.native
+  sealed trait submit extends js.Object
   
   @js.native
   sealed trait tel extends js.Object
@@ -161,6 +170,8 @@ object rebassFormsStrings {
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
   def both: both = "both".asInstanceOf[both]
+  @scala.inline
+  def button: button = "button".asInstanceOf[button]
   @scala.inline
   def colors: colors = "colors".asInstanceOf[colors]
   @scala.inline
@@ -224,6 +235,8 @@ object rebassFormsStrings {
   @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
   def search: search = "search".asInstanceOf[search]
   @scala.inline
   def space: space = "space".asInstanceOf[space]
@@ -231,6 +244,8 @@ object rebassFormsStrings {
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   @scala.inline
   def step: step = "step".asInstanceOf[step]
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def tel: tel = "tel".asInstanceOf[tel]
   @scala.inline

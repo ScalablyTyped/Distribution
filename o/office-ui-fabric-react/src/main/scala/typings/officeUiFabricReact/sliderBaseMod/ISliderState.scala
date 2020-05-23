@@ -11,10 +11,10 @@ trait ISliderState extends js.Object {
 
 object ISliderState {
   @scala.inline
-  def apply(renderedValue: Int | Double = null, value: Int | Double = null): ISliderState = {
+  def apply(renderedValue: js.UndefOr[Double] = js.undefined, value: js.UndefOr[Double] = js.undefined): ISliderState = {
     val __obj = js.Dynamic.literal()
-    if (renderedValue != null) __obj.updateDynamic("renderedValue")(renderedValue.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderedValue)) __obj.updateDynamic("renderedValue")(renderedValue.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISliderState]
   }
 }

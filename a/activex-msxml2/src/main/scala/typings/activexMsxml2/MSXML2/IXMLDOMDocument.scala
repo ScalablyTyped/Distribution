@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MSXML2.IXMLDOMDocument")
 @js.native
-class IXMLDOMDocument protected () extends js.Object {
+trait IXMLDOMDocument extends js.Object {
   @JSName("MSXML2.IXMLDOMDocument_typekey")
   var MSXML2DotIXMLDOMDocument_typekey: IXMLDOMDocument = js.native
   /** flag for asynchronous download */

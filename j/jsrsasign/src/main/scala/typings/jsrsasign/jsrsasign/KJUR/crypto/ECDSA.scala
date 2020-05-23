@@ -1,10 +1,9 @@
 package typings.jsrsasign.jsrsasign.KJUR.crypto
 
-import typings.jsrsasign.AnonCurve
-import typings.jsrsasign.AnonEcprvhex
-import typings.jsrsasign.AnonI
-import typings.jsrsasign.AnonR
-import typings.jsrsasign.AnonX
+import typings.jsrsasign.anon.Ecprvhex
+import typings.jsrsasign.anon.I
+import typings.jsrsasign.anon.R
+import typings.jsrsasign.anon.X
 import typings.jsrsasign.jsrsasign.BigInteger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,10 +23,8 @@ import scala.scalajs.js.annotation._
   * - secp256k1 (*)
   * - secp384r1, NIST P-384, P-384 (*)
   */
-@JSGlobal("jsrsasign.KJUR.crypto.ECDSA")
 @js.native
-class ECDSA () extends js.Object {
-  def this(publicKey: AnonCurve) = this()
+trait ECDSA extends js.Object {
   /**
     * generate a EC key pair
     * @return associative array of hexadecimal string of private and public key
@@ -37,7 +34,7 @@ class ECDSA () extends js.Object {
     * var pubhex = keypair.ecpubhex; // hexadecimal string of EC public key
     * var prvhex = keypair.ecprvhex; // hexadecimal string of EC private key (=d)
     */
-  def generateKeyPairHex(): AnonEcprvhex = js.native
+  def generateKeyPairHex(): Ecprvhex = js.native
   def getBigRandom(limit: Double): BigInteger = js.native
   /**
     * get X and Y hexadecimal string value of public key
@@ -46,7 +43,7 @@ class ECDSA () extends js.Object {
     * ec = new KJUR.crypto.ECDSA({'curve': 'secp256r1', 'pub': pubHex});
     * ec.getPublicKeyXYHex() → { x: '01bacf...', y: 'c3bc22...' }
     */
-  def getPublicKeyXYHex(): AnonX = js.native
+  def getPublicKeyXYHex(): X = js.native
   /**
     * get NIST curve short name such as "P-256" or "P-384"
     * @return short NIST P curve name such as "P-256" or "P-384" if it's NIST P curve otherwise null;
@@ -66,8 +63,8 @@ class ECDSA () extends js.Object {
     * }
     * ```
     */
-  def parseSig(sig: String): AnonR = js.native
-  def parseSigCompact(sig: String): AnonI = js.native
+  def parseSig(sig: String): R = js.native
+  def parseSigCompact(sig: String): I = js.native
   /**
     * parse ASN.1 DER encoded ECDSA signature
     * @param sigHex hexadecimal string of ECDSA signature value
@@ -78,7 +75,7 @@ class ECDSA () extends js.Object {
     * var biR = sig.r; // BigInteger object for 'r' field of signature.
     * var biS = sig.s; // BigInteger object for 's' field of signature.
     */
-  def parseSigHex(sigHex: String): AnonR = js.native
+  def parseSigHex(sigHex: String): R = js.native
   /**
     * parse ASN.1 DER encoded ECDSA signature
     * @param sigHex hexadecimal string of ECDSA signature value
@@ -89,7 +86,7 @@ class ECDSA () extends js.Object {
     * var hR = sig.r; // hexadecimal string for 'r' field of signature.
     * var hS = sig.s; // hexadecimal string for 's' field of signature.
     */
-  def parseSigHexInHexRS(sigHex: String): AnonR = js.native
+  def parseSigHexInHexRS(sigHex: String): R = js.native
   /**
     * read an ASN.1 hexadecimal string of X.509 ECC public key certificate
     * @param h hexadecimal string of X.509 ECC public key certificate
@@ -161,53 +158,5 @@ class ECDSA () extends js.Object {
   def verifyRaw(e: BigInteger, r: BigInteger, s: BigInteger, Q: String): Boolean = js.native
   def verifyRaw(e: BigInteger, r: BigInteger, s: BigInteger, Q: BigInteger): Boolean = js.native
   def verifyWithMessageHash(hashHex: String, sigHex: String): Boolean = js.native
-}
-
-/* static members */
-@JSGlobal("jsrsasign.KJUR.crypto.ECDSA")
-@js.native
-object ECDSA extends js.Object {
-  /**
-    * convert hexadecimal ASN.1 encoded signature to concatinated signature
-    * @param asn1Hex hexadecimal string of ASN.1 encoded ECDSA signature value
-    * @return r-s concatinated format of ECDSA signature value
-    */
-  def asn1SigToConcatSig(asn1Sig: String): String = js.native
-  /**
-    * convert R and S BigInteger object of signature to ASN.1 encoded signature
-    * @param biR BigInteger object of R field of ECDSA signature value
-    * @param biS BIgInteger object of S field of ECDSA signature value
-    * @return hexadecimal string of ASN.1 encoded ECDSA signature value
-    */
-  def biRSSigToASN1Sig(biR: BigInteger, biS: BigInteger): String = js.native
-  /**
-    * convert hexadecimal concatinated signature to ASN.1 encoded signature
-    * @param concatSig r-s concatinated format of ECDSA signature value
-    * @return hexadecimal string of ASN.1 encoded ECDSA signature value
-    */
-  def concatSigToASN1Sig(concatSig: String): String = js.native
-  /**
-    * static method to get normalized EC curve name from curve name or hexadecimal OID value
-    * @param s curve name (ex. P-256) or hexadecimal OID value (ex. 2a86...)
-    * @return normalized EC curve name (ex. secp256r1)
-    * @description
-    * This static method returns normalized EC curve name
-    * which is supported in jsrsasign
-    * from curve name or hexadecimal OID value.
-    * When curve is not supported in jsrsasign, this method returns null.
-    * Normalized name will be "secp*" in jsrsasign.
-    * @example
-    * KJUR.crypto.ECDSA.getName("2b8104000a") → "secp256k1"
-    * KJUR.crypto.ECDSA.getName("NIST P-256") → "secp256r1"
-    * KJUR.crypto.ECDSA.getName("P-521") → undefined // not supported
-    */
-  def getName(s: String): String = js.native
-  /**
-    * convert hexadecimal R and S value of signature to ASN.1 encoded signature
-    * @param hR hexadecimal string of R field of ECDSA signature value
-    * @param hS hexadecimal string of S field of ECDSA signature value
-    * @return hexadecimal string of ASN.1 encoded ECDSA signature value
-    */
-  def hexRSSigToASN1Sig(hR: String, hS: String): String = js.native
 }
 

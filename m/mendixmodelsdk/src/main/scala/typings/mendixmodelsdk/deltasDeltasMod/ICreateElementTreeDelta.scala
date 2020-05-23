@@ -36,10 +36,10 @@ object ICreateElementTreeDelta {
     parentId: String,
     parentPropertyName: String,
     unitId: String,
-    additionIndex: Int | Double = null
+    additionIndex: js.UndefOr[Double] = js.undefined
   ): ICreateElementTreeDelta = {
     val __obj = js.Dynamic.literal(deltaType = deltaType.asInstanceOf[js.Any], elementTree = elementTree.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], parentPropertyName = parentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
-    if (additionIndex != null) __obj.updateDynamic("additionIndex")(additionIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(additionIndex)) __obj.updateDynamic("additionIndex")(additionIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateElementTreeDelta]
   }
 }

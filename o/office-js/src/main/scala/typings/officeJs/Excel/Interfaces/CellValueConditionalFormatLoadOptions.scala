@@ -25,7 +25,7 @@ trait CellValueConditionalFormatLoadOptions extends js.Object {
   var format: js.UndefOr[ConditionalRangeFormatLoadOptions] = js.undefined
   /**
     *
-    * Represents the Rule object on this conditional format.
+    * Specifies the Rule object on this conditional format.
     *
     * [Api set: ExcelApi 1.6]
     */
@@ -40,9 +40,9 @@ object CellValueConditionalFormatLoadOptions {
     rule: js.UndefOr[Boolean] = js.undefined
   ): CellValueConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellValueConditionalFormatLoadOptions]
   }
 }

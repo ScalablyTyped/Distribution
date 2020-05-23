@@ -6,12 +6,11 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.reactBigCalendar.AnonAction
-import typings.reactBigCalendar.AnonStart
-import typings.reactBigCalendar.AnonX
+import typings.reactBigCalendar.anon.Action
+import typings.reactBigCalendar.anon.Start
+import typings.reactBigCalendar.anon.X
 import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.Date
-import typings.std.Event_
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -24,7 +23,7 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var components: js.UndefOr[Components_[TEvent]] = js.undefined
   var culture: js.UndefOr[String] = js.undefined
   var date: js.UndefOr[stringOrDate] = js.undefined
-  var dayLayoutAlgorithm: js.UndefOr[DayLayoutAlgorithm] = js.undefined
+  var dayLayoutAlgorithm: js.UndefOr[DayLayoutAlgorithm | DayLayoutFunction[TEvent]] = js.undefined
   var dayPropGetter: js.UndefOr[DayPropGetter] = js.undefined
   var defaultDate: js.UndefOr[Date] = js.undefined
   var defaultView: js.UndefOr[View] = js.undefined
@@ -50,22 +49,22 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var messages: js.UndefOr[Messages] = js.undefined
   var min: js.UndefOr[stringOrDate] = js.undefined
   var onDoubleClickEvent: js.UndefOr[
-    js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, Event_], Unit]
+    js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
   ] = js.undefined
   var onDrillDown: js.UndefOr[js.Function2[/* date */ Date, /* view */ View, Unit]] = js.undefined
   var onNavigate: js.UndefOr[
     js.Function3[/* newDate */ Date, /* view */ View, /* action */ NavigateAction, Unit]
   ] = js.undefined
-  var onRangeChange: js.UndefOr[js.Function1[/* range */ js.Array[Date] | AnonStart, Unit]] = js.undefined
+  var onRangeChange: js.UndefOr[js.Function1[/* range */ js.Array[Date] | Start, Unit]] = js.undefined
   var onSelectEvent: js.UndefOr[
-    js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, Event_], Unit]
+    js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
   ] = js.undefined
-  var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ AnonAction, Unit]] = js.undefined
-  var onSelecting: js.UndefOr[js.Function1[/* range */ AnonStart, js.UndefOr[Boolean | Null]]] = js.undefined
+  var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ Action, Unit]] = js.undefined
+  var onSelecting: js.UndefOr[js.Function1[/* range */ Start, js.UndefOr[Boolean | Null]]] = js.undefined
   var onShowMore: js.UndefOr[js.Function2[/* events */ js.Array[TEvent], /* date */ Date, Unit]] = js.undefined
   var onView: js.UndefOr[js.Function1[/* view */ View, Unit]] = js.undefined
   var popup: js.UndefOr[Boolean] = js.undefined
-  var popupOffset: js.UndefOr[Double | AnonX] = js.undefined
+  var popupOffset: js.UndefOr[Double | X] = js.undefined
   var resourceAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, _])] = js.undefined
   var resourceIdAccessor: js.UndefOr[(/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _])] = js.undefined
   var resourceTitleAccessor: js.UndefOr[(/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _])] = js.undefined
@@ -89,7 +88,7 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
 
 object CalendarProps {
   @scala.inline
-  def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](
+  def apply[TEvent, TResource](
     localizer: DateLocalizer,
     allDayAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean]) = null,
     children: ReactNode = null,
@@ -97,36 +96,38 @@ object CalendarProps {
     components: Components_[TEvent] = null,
     culture: String = null,
     date: stringOrDate = null,
-    dayLayoutAlgorithm: DayLayoutAlgorithm = null,
+    dayLayoutAlgorithm: DayLayoutAlgorithm | DayLayoutFunction[TEvent] = null,
     dayPropGetter: (/* date */ Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement] = null,
     defaultDate: Date = null,
     defaultView: View = null,
-    drilldownView: View = null,
+    drilldownView: js.UndefOr[Null | View] = js.undefined,
     elementProps: HTMLAttributes[HTMLElement] = null,
     endAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date]) = null,
     eventPropGetter: (TEvent, /* start */ stringOrDate, /* end */ stringOrDate, /* isSelected */ Boolean) => HTMLAttributes[HTMLDivElement] = null,
     events: js.Array[TEvent] = null,
     formats: Formats = null,
-    getDrilldownView: (/* targetDate */ Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => Unit = null,
+    getDrilldownView: js.UndefOr[
+      Null | ((/* targetDate */ Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => Unit)
+    ] = js.undefined,
     getNow: () => Date = null,
     key: Key = null,
-    length: Int | Double = null,
-    longPressThreshold: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
+    longPressThreshold: js.UndefOr[Double] = js.undefined,
     max: stringOrDate = null,
     messages: Messages = null,
     min: stringOrDate = null,
-    onDoubleClickEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, Event_]) => Unit = null,
+    onDoubleClickEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit = null,
     onDrillDown: (/* date */ Date, /* view */ View) => Unit = null,
     onNavigate: (/* newDate */ Date, /* view */ View, /* action */ NavigateAction) => Unit = null,
-    onRangeChange: /* range */ js.Array[Date] | AnonStart => Unit = null,
-    onSelectEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, Event_]) => Unit = null,
-    onSelectSlot: /* slotInfo */ AnonAction => Unit = null,
-    onSelecting: /* range */ AnonStart => js.UndefOr[Boolean | Null] = null,
+    onRangeChange: /* range */ js.Array[Date] | Start => Unit = null,
+    onSelectEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit = null,
+    onSelectSlot: /* slotInfo */ Action => Unit = null,
+    onSelecting: /* range */ Start => js.UndefOr[Boolean | Null] = null,
     onShowMore: (/* events */ js.Array[TEvent], /* date */ Date) => Unit = null,
     onView: /* view */ View => Unit = null,
     popup: js.UndefOr[Boolean] = js.undefined,
-    popupOffset: Double | AnonX = null,
-    ref: LegacyRef[Calendar[TEvent, TResource]] = null,
+    popupOffset: Double | X = null,
+    ref: js.UndefOr[Null | (LegacyRef[Calendar[TEvent, TResource]])] = js.undefined,
     resourceAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, _]) = null,
     resourceIdAccessor: (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _]) = null,
     resourceTitleAccessor: (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _]) = null,
@@ -139,8 +140,8 @@ object CalendarProps {
     slotGroupPropGetter: () => HTMLAttributes[HTMLDivElement] = null,
     slotPropGetter: (/* date */ Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement] = null,
     startAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date]) = null,
-    step: Int | Double = null,
-    timeslots: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
+    timeslots: js.UndefOr[Double] = js.undefined,
     titleAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String]) = null,
     toolbar: js.UndefOr[Boolean] = js.undefined,
     tooltipAccessor: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String]) = null,
@@ -158,17 +159,17 @@ object CalendarProps {
     if (dayPropGetter != null) __obj.updateDynamic("dayPropGetter")(js.Any.fromFunction2(dayPropGetter))
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
     if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView.asInstanceOf[js.Any])
-    if (drilldownView != null) __obj.updateDynamic("drilldownView")(drilldownView.asInstanceOf[js.Any])
+    if (!js.isUndefined(drilldownView)) __obj.updateDynamic("drilldownView")(drilldownView.asInstanceOf[js.Any])
     if (elementProps != null) __obj.updateDynamic("elementProps")(elementProps.asInstanceOf[js.Any])
     if (endAccessor != null) __obj.updateDynamic("endAccessor")(endAccessor.asInstanceOf[js.Any])
     if (eventPropGetter != null) __obj.updateDynamic("eventPropGetter")(js.Any.fromFunction4(eventPropGetter))
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (getDrilldownView != null) __obj.updateDynamic("getDrilldownView")(js.Any.fromFunction3(getDrilldownView))
+    if (!js.isUndefined(getDrilldownView)) __obj.updateDynamic("getDrilldownView")(if (getDrilldownView != null) js.Any.fromFunction3(getDrilldownView.asInstanceOf[(/* targetDate */ Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => Unit]) else null)
     if (getNow != null) __obj.updateDynamic("getNow")(js.Any.fromFunction0(getNow))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (longPressThreshold != null) __obj.updateDynamic("longPressThreshold")(longPressThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(longPressThreshold)) __obj.updateDynamic("longPressThreshold")(longPressThreshold.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
@@ -181,25 +182,25 @@ object CalendarProps {
     if (onSelecting != null) __obj.updateDynamic("onSelecting")(js.Any.fromFunction1(onSelecting))
     if (onShowMore != null) __obj.updateDynamic("onShowMore")(js.Any.fromFunction2(onShowMore))
     if (onView != null) __obj.updateDynamic("onView")(js.Any.fromFunction1(onView))
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.get.asInstanceOf[js.Any])
     if (popupOffset != null) __obj.updateDynamic("popupOffset")(popupOffset.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (resourceAccessor != null) __obj.updateDynamic("resourceAccessor")(resourceAccessor.asInstanceOf[js.Any])
     if (resourceIdAccessor != null) __obj.updateDynamic("resourceIdAccessor")(resourceIdAccessor.asInstanceOf[js.Any])
     if (resourceTitleAccessor != null) __obj.updateDynamic("resourceTitleAccessor")(resourceTitleAccessor.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
     if (scrollToTime != null) __obj.updateDynamic("scrollToTime")(scrollToTime.asInstanceOf[js.Any])
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMultiDayTimes)) __obj.updateDynamic("showMultiDayTimes")(showMultiDayTimes.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMultiDayTimes)) __obj.updateDynamic("showMultiDayTimes")(showMultiDayTimes.get.asInstanceOf[js.Any])
     if (slotGroupPropGetter != null) __obj.updateDynamic("slotGroupPropGetter")(js.Any.fromFunction0(slotGroupPropGetter))
     if (slotPropGetter != null) __obj.updateDynamic("slotPropGetter")(js.Any.fromFunction2(slotPropGetter))
     if (startAccessor != null) __obj.updateDynamic("startAccessor")(startAccessor.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (timeslots != null) __obj.updateDynamic("timeslots")(timeslots.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeslots)) __obj.updateDynamic("timeslots")(timeslots.get.asInstanceOf[js.Any])
     if (titleAccessor != null) __obj.updateDynamic("titleAccessor")(titleAccessor.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar.get.asInstanceOf[js.Any])
     if (tooltipAccessor != null) __obj.updateDynamic("tooltipAccessor")(tooltipAccessor.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])

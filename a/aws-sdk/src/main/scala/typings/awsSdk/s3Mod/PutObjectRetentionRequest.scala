@@ -38,14 +38,14 @@ object PutObjectRetentionRequest {
   def apply(
     Bucket: BucketName,
     Key: ObjectKey,
-    BypassGovernanceRetention: js.UndefOr[Boolean] = js.undefined,
+    BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined,
     ContentMD5: ContentMD5 = null,
     RequestPayer: RequestPayer = null,
     Retention: ObjectLockRetention = null,
     VersionId: ObjectVersionId = null
   ): PutObjectRetentionRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-    if (!js.isUndefined(BypassGovernanceRetention)) __obj.updateDynamic("BypassGovernanceRetention")(BypassGovernanceRetention.asInstanceOf[js.Any])
+    if (!js.isUndefined(BypassGovernanceRetention)) __obj.updateDynamic("BypassGovernanceRetention")(BypassGovernanceRetention.get.asInstanceOf[js.Any])
     if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     if (Retention != null) __obj.updateDynamic("Retention")(Retention.asInstanceOf[js.Any])

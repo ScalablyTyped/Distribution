@@ -39,22 +39,22 @@ trait GetCapacityReservationUsageResult extends js.Object {
 object GetCapacityReservationUsageResult {
   @scala.inline
   def apply(
-    AvailableInstanceCount: Int | scala.Double = null,
+    AvailableInstanceCount: js.UndefOr[Integer] = js.undefined,
     CapacityReservationId: String = null,
     InstanceType: String = null,
     InstanceUsages: InstanceUsageSet = null,
     NextToken: String = null,
     State: CapacityReservationState = null,
-    TotalInstanceCount: Int | scala.Double = null
+    TotalInstanceCount: js.UndefOr[Integer] = js.undefined
   ): GetCapacityReservationUsageResult = {
     val __obj = js.Dynamic.literal()
-    if (AvailableInstanceCount != null) __obj.updateDynamic("AvailableInstanceCount")(AvailableInstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(AvailableInstanceCount)) __obj.updateDynamic("AvailableInstanceCount")(AvailableInstanceCount.get.asInstanceOf[js.Any])
     if (CapacityReservationId != null) __obj.updateDynamic("CapacityReservationId")(CapacityReservationId.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (InstanceUsages != null) __obj.updateDynamic("InstanceUsages")(InstanceUsages.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (TotalInstanceCount != null) __obj.updateDynamic("TotalInstanceCount")(TotalInstanceCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalInstanceCount)) __obj.updateDynamic("TotalInstanceCount")(TotalInstanceCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCapacityReservationUsageResult]
   }
 }

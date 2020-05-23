@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object fieldMod {
   type ChildProps = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type ShouldUpdate = typings.rcFieldForm.rcFieldFormBooleans.`true` | (js.Function3[
+  type ShouldUpdate = scala.Boolean | (js.Function3[
     /* prevValues */ typings.rcFieldForm.interfaceMod.Store, 
     /* nextValues */ typings.rcFieldForm.interfaceMod.Store, 
-    /* info */ typings.rcFieldForm.AnonSource, 
+    /* info */ typings.rcFieldForm.anon.Source, 
     scala.Boolean
   ])
 }

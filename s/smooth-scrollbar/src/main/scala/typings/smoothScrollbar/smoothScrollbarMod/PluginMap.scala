@@ -1,7 +1,7 @@
 package typings.smoothScrollbar.smoothScrollbarMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.smoothScrollbar.TypeofScrollbarPlugin
+import typings.smoothScrollbar.anon.TypeofScrollbarPlugin
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`

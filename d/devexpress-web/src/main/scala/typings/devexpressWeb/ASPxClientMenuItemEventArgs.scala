@@ -7,17 +7,18 @@ import scala.scalajs.js.annotation._
 /**
   * Provides data for events which concern manipulations on menu items.
   */
-@JSGlobal("ASPxClientMenuItemEventArgs")
-@js.native
-class ASPxClientMenuItemEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientMenuItemEventArgs type with the specified value.
-    * @param item An ASPxClientMenuItem object representing the group related to the event.
-    */
-  def this(item: ASPxClientMenuItem) = this()
+trait ASPxClientMenuItemEventArgs extends ASPxClientEventArgs {
   /**
     * Gets the menu item object related to the event.
     */
-  var item: ASPxClientMenuItem = js.native
+  var item: ASPxClientMenuItem
+}
+
+object ASPxClientMenuItemEventArgs {
+  @scala.inline
+  def apply(item: ASPxClientMenuItem): ASPxClientMenuItemEventArgs = {
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientMenuItemEventArgs]
+  }
 }
 

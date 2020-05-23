@@ -7,10 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("google.maps.drawing.DrawingManager")
 @js.native
-class DrawingManager () extends MVCObject {
-  def this(options: DrawingManagerOptions) = this()
+trait DrawingManager extends MVCObject {
   def getDrawingMode(): OverlayType = js.native
   def getMap(): Map[Element] = js.native
   def setDrawingMode(): Unit = js.native

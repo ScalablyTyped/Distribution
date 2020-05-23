@@ -1,5 +1,6 @@
 package typings.expoFont
 
+import typings.expoFont.anon.PickFontResourcedisplay
 import typings.expoFont.fontTypesMod.FontResource
 import scala.scalajs.js
 import scala.scalajs.js.`|`

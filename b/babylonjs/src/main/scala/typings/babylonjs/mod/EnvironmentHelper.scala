@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.PartialIEnvironmentHelper
+import typings.babylonjs.anon.PartialIEnvironmentHelper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

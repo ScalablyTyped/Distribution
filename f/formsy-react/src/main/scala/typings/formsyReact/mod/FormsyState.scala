@@ -25,8 +25,8 @@ object FormsyState {
     isPristine: js.UndefOr[Boolean] = js.undefined
   ): FormsyState = {
     val __obj = js.Dynamic.literal(canChange = canChange.asInstanceOf[js.Any], contextValue = contextValue.asInstanceOf[js.Any], isSubmitting = isSubmitting.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any])
-    if (!js.isUndefined(formSubmitted)) __obj.updateDynamic("formSubmitted")(formSubmitted.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPristine)) __obj.updateDynamic("isPristine")(isPristine.asInstanceOf[js.Any])
+    if (!js.isUndefined(formSubmitted)) __obj.updateDynamic("formSubmitted")(formSubmitted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPristine)) __obj.updateDynamic("isPristine")(isPristine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormsyState]
   }
 }

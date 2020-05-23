@@ -14,14 +14,14 @@ object WebhookListResponse {
   def apply(
     httpStatusCode: Double,
     webhooks: js.Array[Webhook],
-    count: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
     create_time: String = null,
-    total_count: Int | Double = null
+    total_count: js.UndefOr[Double] = js.undefined
   ): WebhookListResponse = {
     val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode.asInstanceOf[js.Any], webhooks = webhooks.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
-    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(total_count)) __obj.updateDynamic("total_count")(total_count.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookListResponse]
   }
 }

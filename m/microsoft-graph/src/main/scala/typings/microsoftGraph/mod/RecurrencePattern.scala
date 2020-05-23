@@ -39,21 +39,21 @@ trait RecurrencePattern extends js.Object {
 object RecurrencePattern {
   @scala.inline
   def apply(
-    dayOfMonth: Int | Double = null,
+    dayOfMonth: js.UndefOr[Double] = js.undefined,
     daysOfWeek: js.Array[DayOfWeek] = null,
     firstDayOfWeek: DayOfWeek = null,
     index: WeekIndex = null,
-    interval: Int | Double = null,
-    month: Int | Double = null,
+    interval: js.UndefOr[Double] = js.undefined,
+    month: js.UndefOr[Double] = js.undefined,
     `type`: RecurrencePatternType = null
   ): RecurrencePattern = {
     val __obj = js.Dynamic.literal()
-    if (dayOfMonth != null) __obj.updateDynamic("dayOfMonth")(dayOfMonth.asInstanceOf[js.Any])
+    if (!js.isUndefined(dayOfMonth)) __obj.updateDynamic("dayOfMonth")(dayOfMonth.get.asInstanceOf[js.Any])
     if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurrencePattern]
   }

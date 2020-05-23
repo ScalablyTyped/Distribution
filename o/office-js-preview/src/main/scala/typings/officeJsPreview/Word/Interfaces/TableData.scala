@@ -166,11 +166,11 @@ object TableData {
   def apply(
     alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     font: FontData = null,
-    headerRowCount: Int | Double = null,
+    headerRowCount: js.UndefOr[Double] = js.undefined,
     horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     isUniform: js.UndefOr[Boolean] = js.undefined,
-    nestingLevel: Int | Double = null,
-    rowCount: Int | Double = null,
+    nestingLevel: js.UndefOr[Double] = js.undefined,
+    rowCount: js.UndefOr[Double] = js.undefined,
     rows: js.Array[TableRowData] = null,
     shadingColor: String = null,
     style: String = null,
@@ -183,29 +183,29 @@ object TableData {
     tables: js.Array[TableData] = null,
     values: js.Array[js.Array[String]] = null,
     verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): TableData = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (headerRowCount != null) __obj.updateDynamic("headerRowCount")(headerRowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerRowCount)) __obj.updateDynamic("headerRowCount")(headerRowCount.get.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUniform)) __obj.updateDynamic("isUniform")(isUniform.asInstanceOf[js.Any])
-    if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUniform)) __obj.updateDynamic("isUniform")(isUniform.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nestingLevel)) __obj.updateDynamic("nestingLevel")(nestingLevel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleBandedColumns)) __obj.updateDynamic("styleBandedColumns")(styleBandedColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleBandedRows)) __obj.updateDynamic("styleBandedRows")(styleBandedRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleBandedColumns)) __obj.updateDynamic("styleBandedColumns")(styleBandedColumns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleBandedRows)) __obj.updateDynamic("styleBandedRows")(styleBandedRows.get.asInstanceOf[js.Any])
     if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleFirstColumn)) __obj.updateDynamic("styleFirstColumn")(styleFirstColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleLastColumn)) __obj.updateDynamic("styleLastColumn")(styleLastColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleTotalRow)) __obj.updateDynamic("styleTotalRow")(styleTotalRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleFirstColumn)) __obj.updateDynamic("styleFirstColumn")(styleFirstColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleLastColumn)) __obj.updateDynamic("styleLastColumn")(styleLastColumn.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleTotalRow)) __obj.updateDynamic("styleTotalRow")(styleTotalRow.get.asInstanceOf[js.Any])
     if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableData]
   }
 }

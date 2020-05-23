@@ -3,7 +3,7 @@ package typings.tusJsClient.mod
 import typings.std.Blob
 import typings.std.Error
 import typings.std.File
-import typings.tusJsClient.PickReadableStreamDefault
+import typings.tusJsClient.anon.PickReadableStreamDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

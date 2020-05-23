@@ -27,16 +27,16 @@ trait WavSettings extends js.Object {
 object WavSettings {
   @scala.inline
   def apply(
-    BitDepth: Int | Double = null,
-    Channels: Int | Double = null,
+    BitDepth: js.UndefOr[integerMin16Max24] = js.undefined,
+    Channels: js.UndefOr[integerMin1Max64] = js.undefined,
     Format: WavFormat = null,
-    SampleRate: Int | Double = null
+    SampleRate: js.UndefOr[integerMin8000Max192000] = js.undefined
   ): WavSettings = {
     val __obj = js.Dynamic.literal()
-    if (BitDepth != null) __obj.updateDynamic("BitDepth")(BitDepth.asInstanceOf[js.Any])
-    if (Channels != null) __obj.updateDynamic("Channels")(Channels.asInstanceOf[js.Any])
+    if (!js.isUndefined(BitDepth)) __obj.updateDynamic("BitDepth")(BitDepth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(Channels)) __obj.updateDynamic("Channels")(Channels.get.asInstanceOf[js.Any])
     if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WavSettings]
   }
 }

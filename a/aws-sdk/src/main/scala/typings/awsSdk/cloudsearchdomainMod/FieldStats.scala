@@ -43,24 +43,24 @@ trait FieldStats extends js.Object {
 object FieldStats {
   @scala.inline
   def apply(
-    count: Int | scala.Double = null,
+    count: js.UndefOr[Long] = js.undefined,
     max: String = null,
     mean: String = null,
     min: String = null,
-    missing: Int | scala.Double = null,
-    stddev: Int | scala.Double = null,
-    sum: Int | scala.Double = null,
-    sumOfSquares: Int | scala.Double = null
+    missing: js.UndefOr[Long] = js.undefined,
+    stddev: js.UndefOr[Double] = js.undefined,
+    sum: js.UndefOr[Double] = js.undefined,
+    sumOfSquares: js.UndefOr[Double] = js.undefined
   ): FieldStats = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
-    if (stddev != null) __obj.updateDynamic("stddev")(stddev.asInstanceOf[js.Any])
-    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
-    if (sumOfSquares != null) __obj.updateDynamic("sumOfSquares")(sumOfSquares.asInstanceOf[js.Any])
+    if (!js.isUndefined(missing)) __obj.updateDynamic("missing")(missing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stddev)) __obj.updateDynamic("stddev")(stddev.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sumOfSquares)) __obj.updateDynamic("sumOfSquares")(sumOfSquares.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldStats]
   }
 }

@@ -18,11 +18,15 @@ trait AntennaCharacteristics extends js.Object {
 
 object AntennaCharacteristics {
   @scala.inline
-  def apply(height: Int | Double = null, heightType: String = null, heightUncertainty: Int | Double = null): AntennaCharacteristics = {
+  def apply(
+    height: js.UndefOr[Double] = js.undefined,
+    heightType: String = null,
+    heightUncertainty: js.UndefOr[Double] = js.undefined
+  ): AntennaCharacteristics = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (heightType != null) __obj.updateDynamic("heightType")(heightType.asInstanceOf[js.Any])
-    if (heightUncertainty != null) __obj.updateDynamic("heightUncertainty")(heightUncertainty.asInstanceOf[js.Any])
+    if (!js.isUndefined(heightUncertainty)) __obj.updateDynamic("heightUncertainty")(heightUncertainty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntennaCharacteristics]
   }
 }

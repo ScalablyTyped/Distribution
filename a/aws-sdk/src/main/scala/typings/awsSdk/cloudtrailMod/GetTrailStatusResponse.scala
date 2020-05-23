@@ -79,7 +79,7 @@ trait GetTrailStatusResponse extends js.Object {
 object GetTrailStatusResponse {
   @scala.inline
   def apply(
-    IsLogging: js.UndefOr[scala.Boolean] = js.undefined,
+    IsLogging: js.UndefOr[Boolean] = js.undefined,
     LatestCloudWatchLogsDeliveryError: String = null,
     LatestCloudWatchLogsDeliveryTime: Date = null,
     LatestDeliveryAttemptSucceeded: String = null,
@@ -98,7 +98,7 @@ object GetTrailStatusResponse {
     TimeLoggingStopped: String = null
   ): GetTrailStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsLogging)) __obj.updateDynamic("IsLogging")(IsLogging.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsLogging)) __obj.updateDynamic("IsLogging")(IsLogging.get.asInstanceOf[js.Any])
     if (LatestCloudWatchLogsDeliveryError != null) __obj.updateDynamic("LatestCloudWatchLogsDeliveryError")(LatestCloudWatchLogsDeliveryError.asInstanceOf[js.Any])
     if (LatestCloudWatchLogsDeliveryTime != null) __obj.updateDynamic("LatestCloudWatchLogsDeliveryTime")(LatestCloudWatchLogsDeliveryTime.asInstanceOf[js.Any])
     if (LatestDeliveryAttemptSucceeded != null) __obj.updateDynamic("LatestDeliveryAttemptSucceeded")(LatestDeliveryAttemptSucceeded.asInstanceOf[js.Any])

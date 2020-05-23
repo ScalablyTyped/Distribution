@@ -11,9 +11,9 @@ trait SeedOnlyInitializerArgs extends js.Object {
 
 object SeedOnlyInitializerArgs {
   @scala.inline
-  def apply(seed: Int | Double = null): SeedOnlyInitializerArgs = {
+  def apply(seed: js.UndefOr[Double] = js.undefined): SeedOnlyInitializerArgs = {
     val __obj = js.Dynamic.literal()
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeedOnlyInitializerArgs]
   }
 }

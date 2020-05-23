@@ -73,15 +73,15 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    base: Int | Double = null,
+    base: js.UndefOr[Double] = js.undefined,
     bits: js.UndefOr[Boolean] = js.undefined,
-    exponent: Int | Double = null,
+    exponent: js.UndefOr[Double] = js.undefined,
     fullform: js.UndefOr[Boolean] = js.undefined,
     fullforms: js.Array[String] = null,
     locale: String | Boolean = null,
     localeOptions: NumberFormatOptions = null,
     output: array | exponent | `object` | string = null,
-    round: Int | Double = null,
+    round: js.UndefOr[Double] = js.undefined,
     separator: String = null,
     spacer: String = null,
     standard: iec | jedec = null,
@@ -89,20 +89,20 @@ object Options {
     unix: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (!js.isUndefined(bits)) __obj.updateDynamic("bits")(bits.asInstanceOf[js.Any])
-    if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullform)) __obj.updateDynamic("fullform")(fullform.asInstanceOf[js.Any])
+    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(bits)) __obj.updateDynamic("bits")(bits.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exponent)) __obj.updateDynamic("exponent")(exponent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullform)) __obj.updateDynamic("fullform")(fullform.get.asInstanceOf[js.Any])
     if (fullforms != null) __obj.updateDynamic("fullforms")(fullforms.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (localeOptions != null) __obj.updateDynamic("localeOptions")(localeOptions.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (spacer != null) __obj.updateDynamic("spacer")(spacer.asInstanceOf[js.Any])
     if (standard != null) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
     if (symbols != null) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
-    if (!js.isUndefined(unix)) __obj.updateDynamic("unix")(unix.asInstanceOf[js.Any])
+    if (!js.isUndefined(unix)) __obj.updateDynamic("unix")(unix.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

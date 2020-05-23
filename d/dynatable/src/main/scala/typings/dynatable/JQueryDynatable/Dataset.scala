@@ -121,8 +121,8 @@ object Dataset {
     ajaxMethod: String = null,
     ajaxOnLoad: js.UndefOr[Boolean] = js.undefined,
     ajaxUrl: String = null,
-    page: Int | Double = null,
-    perPageDefault: Int | Double = null,
+    page: js.UndefOr[Double] = js.undefined,
+    perPageDefault: js.UndefOr[Double] = js.undefined,
     perPageOptions: js.Array[Double] = null,
     queries: js.Object = null,
     queryRecordCount: String = null,
@@ -133,14 +133,14 @@ object Dataset {
     totalRecordCount: String = null
   ): Dataset = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ajax)) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
-    if (!js.isUndefined(ajaxCache)) __obj.updateDynamic("ajaxCache")(ajaxCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(ajax)) __obj.updateDynamic("ajax")(ajax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ajaxCache)) __obj.updateDynamic("ajaxCache")(ajaxCache.get.asInstanceOf[js.Any])
     if (ajaxDataType != null) __obj.updateDynamic("ajaxDataType")(ajaxDataType.asInstanceOf[js.Any])
     if (ajaxMethod != null) __obj.updateDynamic("ajaxMethod")(ajaxMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(ajaxOnLoad)) __obj.updateDynamic("ajaxOnLoad")(ajaxOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(ajaxOnLoad)) __obj.updateDynamic("ajaxOnLoad")(ajaxOnLoad.get.asInstanceOf[js.Any])
     if (ajaxUrl != null) __obj.updateDynamic("ajaxUrl")(ajaxUrl.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (perPageDefault != null) __obj.updateDynamic("perPageDefault")(perPageDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(perPageDefault)) __obj.updateDynamic("perPageDefault")(perPageDefault.get.asInstanceOf[js.Any])
     if (perPageOptions != null) __obj.updateDynamic("perPageOptions")(perPageOptions.asInstanceOf[js.Any])
     if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     if (queryRecordCount != null) __obj.updateDynamic("queryRecordCount")(queryRecordCount.asInstanceOf[js.Any])

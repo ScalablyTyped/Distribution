@@ -60,17 +60,17 @@ object WebACL {
     Id: EntityId,
     Name: EntityName,
     VisibilityConfig: VisibilityConfig,
-    Capacity: Int | Double = null,
+    Capacity: js.UndefOr[ConsumedCapacity] = js.undefined,
     Description: EntityDescription = null,
-    ManagedByFirewallManager: js.UndefOr[scala.Boolean] = js.undefined,
+    ManagedByFirewallManager: js.UndefOr[Boolean] = js.undefined,
     PostProcessFirewallManagerRuleGroups: FirewallManagerRuleGroups = null,
     PreProcessFirewallManagerRuleGroups: FirewallManagerRuleGroups = null,
     Rules: Rules = null
   ): WebACL = {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], DefaultAction = DefaultAction.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], VisibilityConfig = VisibilityConfig.asInstanceOf[js.Any])
-    if (Capacity != null) __obj.updateDynamic("Capacity")(Capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(Capacity)) __obj.updateDynamic("Capacity")(Capacity.get.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManagedByFirewallManager)) __obj.updateDynamic("ManagedByFirewallManager")(ManagedByFirewallManager.asInstanceOf[js.Any])
+    if (!js.isUndefined(ManagedByFirewallManager)) __obj.updateDynamic("ManagedByFirewallManager")(ManagedByFirewallManager.get.asInstanceOf[js.Any])
     if (PostProcessFirewallManagerRuleGroups != null) __obj.updateDynamic("PostProcessFirewallManagerRuleGroups")(PostProcessFirewallManagerRuleGroups.asInstanceOf[js.Any])
     if (PreProcessFirewallManagerRuleGroups != null) __obj.updateDynamic("PreProcessFirewallManagerRuleGroups")(PreProcessFirewallManagerRuleGroups.asInstanceOf[js.Any])
     if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])

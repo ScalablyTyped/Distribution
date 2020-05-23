@@ -1,7 +1,6 @@
 package typings.sammy.Sammy
 
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +20,4 @@ trait FormBuilder
   def text(keypath: String, attributes: js.Any*): String = js.native
   def textarea(keypath: String, attributes: js.Any*): String = js.native
 }
-
-@JSGlobal("Sammy.FormBuilder")
-@js.native
-object FormBuilder extends TopLevel[FormBuilder]
 

@@ -31,16 +31,16 @@ trait LogsSummary extends js.Object {
 object LogsSummary {
   @scala.inline
   def apply(
-    Audit: js.UndefOr[Boolean] = js.undefined,
+    Audit: js.UndefOr[boolean] = js.undefined,
     AuditLogGroup: string = null,
-    General: js.UndefOr[Boolean] = js.undefined,
+    General: js.UndefOr[boolean] = js.undefined,
     GeneralLogGroup: string = null,
     Pending: PendingLogs = null
   ): LogsSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Audit)) __obj.updateDynamic("Audit")(Audit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Audit)) __obj.updateDynamic("Audit")(Audit.get.asInstanceOf[js.Any])
     if (AuditLogGroup != null) __obj.updateDynamic("AuditLogGroup")(AuditLogGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(General)) __obj.updateDynamic("General")(General.asInstanceOf[js.Any])
+    if (!js.isUndefined(General)) __obj.updateDynamic("General")(General.get.asInstanceOf[js.Any])
     if (GeneralLogGroup != null) __obj.updateDynamic("GeneralLogGroup")(GeneralLogGroup.asInstanceOf[js.Any])
     if (Pending != null) __obj.updateDynamic("Pending")(Pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogsSummary]

@@ -20,19 +20,19 @@ trait RequestDef[Content /* <: js.Object */] extends js.Object {
 
 object RequestDef {
   @scala.inline
-  def apply[Content /* <: js.Object */](
+  def apply[Content](
     selector: Selector,
     aggregate: js.UndefOr[Boolean] = js.undefined,
     fields: js.Array[String] = null,
-    limit: Int | Double = null,
-    skip: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
+    skip: js.UndefOr[Double] = js.undefined,
     sort: js.Array[String | (StringDictionary[asc | desc])] = null
   ): RequestDef[Content] = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(aggregate)) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
+    if (!js.isUndefined(aggregate)) __obj.updateDynamic("aggregate")(aggregate.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDef[Content]]
   }

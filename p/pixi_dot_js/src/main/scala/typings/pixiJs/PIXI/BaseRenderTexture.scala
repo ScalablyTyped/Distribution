@@ -1,6 +1,5 @@
 package typings.pixiJs.PIXI
 
-import typings.pixiJs.AnonHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,10 +44,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.BaseTexture
   * @memberof PIXI
   */
-@JSGlobal("PIXI.BaseRenderTexture")
 @js.native
-class BaseRenderTexture () extends BaseTexture {
-  def this(options: AnonHeight) = this()
+trait BaseRenderTexture extends BaseTexture {
   /**
     * A reference to the canvas render target (we only need one as this can be shared across renderers)
     *

@@ -22,7 +22,7 @@ trait ojButtonSettablePropertiesLenient
 object ojButtonSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     chroming: full | half | outlined = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     display: all | icons = null,
@@ -31,7 +31,7 @@ object ojButtonSettablePropertiesLenient {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (chroming != null) __obj.updateDynamic("chroming")(chroming.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojButtonSettablePropertiesLenient]

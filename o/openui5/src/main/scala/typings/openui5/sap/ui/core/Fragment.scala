@@ -5,14 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.Fragment")
 @js.native
-/**
-  * Accepts an object literal <code>mSettings</code> that defines initialproperty values, aggregated and
-  * associated objects as well as event handlers.See {@link sap.ui.base.ManagedObject#constructor} for a
-  * general description of the syntax of the settings object.
-  */
-class Fragment () extends ManagedObject {
+trait Fragment extends ManagedObject {
   /**
     * Returns an Element/Control by its ID in the context of the Fragment with the given ID
     * @param sFragmentId undefined

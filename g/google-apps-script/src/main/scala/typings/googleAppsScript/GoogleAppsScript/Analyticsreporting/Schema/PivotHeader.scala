@@ -11,10 +11,13 @@ trait PivotHeader extends js.Object {
 
 object PivotHeader {
   @scala.inline
-  def apply(pivotHeaderEntries: js.Array[PivotHeaderEntry] = null, totalPivotGroupsCount: Int | Double = null): PivotHeader = {
+  def apply(
+    pivotHeaderEntries: js.Array[PivotHeaderEntry] = null,
+    totalPivotGroupsCount: js.UndefOr[Double] = js.undefined
+  ): PivotHeader = {
     val __obj = js.Dynamic.literal()
     if (pivotHeaderEntries != null) __obj.updateDynamic("pivotHeaderEntries")(pivotHeaderEntries.asInstanceOf[js.Any])
-    if (totalPivotGroupsCount != null) __obj.updateDynamic("totalPivotGroupsCount")(totalPivotGroupsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalPivotGroupsCount)) __obj.updateDynamic("totalPivotGroupsCount")(totalPivotGroupsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotHeader]
   }
 }

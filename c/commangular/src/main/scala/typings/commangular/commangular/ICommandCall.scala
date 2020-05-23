@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait ICommandCall extends js.Object {
   /**
-  		 * Name of the command that needs to
-  		 * execute
-  		 */
+    * Name of the command that needs to
+    * execute
+    */
   var command: String
   /**
-  		 * Data that needs to be passed to the command
-  		 */
+    * Data that needs to be passed to the command
+    */
   var data: js.UndefOr[js.Any] = js.undefined
 }
 

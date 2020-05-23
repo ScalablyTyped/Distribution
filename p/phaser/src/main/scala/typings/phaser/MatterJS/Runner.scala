@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation._
   *
   * @class Runner
   */
-@JSGlobal("MatterJS.Runner")
-@js.native
-class Runner () extends js.Object {
+trait Runner extends js.Object {
   /**
     * A `Number` that specifies the time step between updates in milliseconds.
     * If `engine.timing.isFixed` is set to `true`, then `delta` is fixed.
@@ -28,7 +26,7 @@ class Runner () extends js.Object {
     * @type number
     * @default 1000 / 60
     */
-  var delta: Double = js.native
+  var delta: Double
   /**
     * A flag that specifies whether the runner is running or not.
     *
@@ -36,7 +34,7 @@ class Runner () extends js.Object {
     * @type boolean
     * @default true
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   /**
     * A `Boolean` that specifies if the runner should use a fixed timestep (otherwise it is variable).
     * If timing is fixed, then the apparent simulation speed will change depending on the frame rate (but behaviour will be deterministic).
@@ -46,55 +44,14 @@ class Runner () extends js.Object {
     * @type boolean
     * @default false
     */
-  var isFixed: Boolean = js.native
+  var isFixed: Boolean
 }
 
-/* static members */
-@JSGlobal("MatterJS.Runner")
-@js.native
-object Runner extends js.Object {
-  /**
-    * Creates a new Runner. The options parameter is an object that specifies any properties you wish to override the defaults.
-    * @method create
-    * @param {} options
-    */
-  def create(options: IRunnerOptions): Runner = js.native
-  /**
-    * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
-    * @method run
-    * @param {engine} engine
-    */
-  def run(engine: Engine): Runner = js.native
-  /**
-    * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
-    * @method run
-    * @param {engine} engine
-    */
-  def run(runner: Runner, engine: Engine): Runner = js.native
-  /**
-    * Alias for `Runner.run`.
-    * @method start
-    * @param {runner} runner
-    * @param {engine} engine
-    */
-  def start(runner: Runner, engine: Engine): Unit = js.native
-  /**
-    * Ends execution of `Runner.run` on the given `runner`, by canceling the animation frame request event loop.
-    * If you wish to only temporarily pause the engine, see `engine.enabled` instead.
-    * @method stop
-    * @param {runner} runner
-    */
-  def stop(runner: Runner): Unit = js.native
-  /**
-    * A game loop utility that updates the engine and renderer by one step (a 'tick').
-    * Features delta smoothing, time correction and fixed or dynamic timing.
-    * Triggers `beforeTick`, `tick` and `afterTick` events on the engine.
-    * Consider just `Engine.update(engine, delta)` if you're using your own loop.
-    * @method tick
-    * @param {runner} runner
-    * @param {engine} engine
-    * @param {number} time
-    */
-  def tick(runner: Runner, engine: Engine, time: Double): Unit = js.native
+object Runner {
+  @scala.inline
+  def apply(delta: Double, enabled: Boolean, isFixed: Boolean): Runner = {
+    val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], isFixed = isFixed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Runner]
+  }
 }
 

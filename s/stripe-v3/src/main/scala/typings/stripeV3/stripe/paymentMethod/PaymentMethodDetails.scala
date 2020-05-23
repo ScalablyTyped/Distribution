@@ -46,37 +46,37 @@ object PaymentMethodDetails {
   @scala.inline
   def apply(
     `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | stripe_account | wechat,
-    ach_credit_transfer: AchCreditTransferDetails = null,
-    ach_debit: AchDebitDetails = null,
-    alipay: js.Any = null,
-    bancontact: BanContactDetails = null,
-    card: PaymentMethodCard = null,
-    eps: EpsDetails = null,
-    giropay: GiropayDetails = null,
-    ideal: IdealDetails = null,
-    multibanco: MultibancoDetails = null,
-    p24: P24Details = null,
-    sepa_debit: SepaDebitDetails = null,
-    sofort: SofortDetails = null,
-    stripe_account: js.Any = null,
-    wechat: js.Any = null
+    ach_credit_transfer: js.UndefOr[Null | AchCreditTransferDetails] = js.undefined,
+    ach_debit: js.UndefOr[Null | AchDebitDetails] = js.undefined,
+    alipay: js.UndefOr[Null | js.Any] = js.undefined,
+    bancontact: js.UndefOr[Null | BanContactDetails] = js.undefined,
+    card: js.UndefOr[Null | PaymentMethodCard] = js.undefined,
+    eps: js.UndefOr[Null | EpsDetails] = js.undefined,
+    giropay: js.UndefOr[Null | GiropayDetails] = js.undefined,
+    ideal: js.UndefOr[Null | IdealDetails] = js.undefined,
+    multibanco: js.UndefOr[Null | MultibancoDetails] = js.undefined,
+    p24: js.UndefOr[Null | P24Details] = js.undefined,
+    sepa_debit: js.UndefOr[Null | SepaDebitDetails] = js.undefined,
+    sofort: js.UndefOr[Null | SofortDetails] = js.undefined,
+    stripe_account: js.UndefOr[Null | js.Any] = js.undefined,
+    wechat: js.UndefOr[Null | js.Any] = js.undefined
   ): PaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ach_credit_transfer != null) __obj.updateDynamic("ach_credit_transfer")(ach_credit_transfer.asInstanceOf[js.Any])
-    if (ach_debit != null) __obj.updateDynamic("ach_debit")(ach_debit.asInstanceOf[js.Any])
-    if (alipay != null) __obj.updateDynamic("alipay")(alipay.asInstanceOf[js.Any])
-    if (bancontact != null) __obj.updateDynamic("bancontact")(bancontact.asInstanceOf[js.Any])
-    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (eps != null) __obj.updateDynamic("eps")(eps.asInstanceOf[js.Any])
-    if (giropay != null) __obj.updateDynamic("giropay")(giropay.asInstanceOf[js.Any])
-    if (ideal != null) __obj.updateDynamic("ideal")(ideal.asInstanceOf[js.Any])
-    if (multibanco != null) __obj.updateDynamic("multibanco")(multibanco.asInstanceOf[js.Any])
-    if (p24 != null) __obj.updateDynamic("p24")(p24.asInstanceOf[js.Any])
-    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit.asInstanceOf[js.Any])
-    if (sofort != null) __obj.updateDynamic("sofort")(sofort.asInstanceOf[js.Any])
-    if (stripe_account != null) __obj.updateDynamic("stripe_account")(stripe_account.asInstanceOf[js.Any])
-    if (wechat != null) __obj.updateDynamic("wechat")(wechat.asInstanceOf[js.Any])
+    if (!js.isUndefined(ach_credit_transfer)) __obj.updateDynamic("ach_credit_transfer")(ach_credit_transfer.asInstanceOf[js.Any])
+    if (!js.isUndefined(ach_debit)) __obj.updateDynamic("ach_debit")(ach_debit.asInstanceOf[js.Any])
+    if (!js.isUndefined(alipay)) __obj.updateDynamic("alipay")(alipay.asInstanceOf[js.Any])
+    if (!js.isUndefined(bancontact)) __obj.updateDynamic("bancontact")(bancontact.asInstanceOf[js.Any])
+    if (!js.isUndefined(card)) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (!js.isUndefined(eps)) __obj.updateDynamic("eps")(eps.asInstanceOf[js.Any])
+    if (!js.isUndefined(giropay)) __obj.updateDynamic("giropay")(giropay.asInstanceOf[js.Any])
+    if (!js.isUndefined(ideal)) __obj.updateDynamic("ideal")(ideal.asInstanceOf[js.Any])
+    if (!js.isUndefined(multibanco)) __obj.updateDynamic("multibanco")(multibanco.asInstanceOf[js.Any])
+    if (!js.isUndefined(p24)) __obj.updateDynamic("p24")(p24.asInstanceOf[js.Any])
+    if (!js.isUndefined(sepa_debit)) __obj.updateDynamic("sepa_debit")(sepa_debit.asInstanceOf[js.Any])
+    if (!js.isUndefined(sofort)) __obj.updateDynamic("sofort")(sofort.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripe_account)) __obj.updateDynamic("stripe_account")(stripe_account.asInstanceOf[js.Any])
+    if (!js.isUndefined(wechat)) __obj.updateDynamic("wechat")(wechat.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodDetails]
   }
 }

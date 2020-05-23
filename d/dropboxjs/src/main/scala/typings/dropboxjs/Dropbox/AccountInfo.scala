@@ -4,26 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Dropbox.AccountInfo")
-@js.native
-class AccountInfo () extends js.Object {
-  var countryCode: String = js.native
-  var email: String = js.native
-  var name: String = js.native
-  var privateBytes: Double = js.native
-  var publicAppUrl: String = js.native
-  var quota: Double = js.native
-  var referralUrl: String = js.native
-  var sharedBytes: Double = js.native
-  var uid: String = js.native
-  var usedQuota: Double = js.native
-  def json(): js.Object = js.native
+trait AccountInfo extends js.Object {
+  var countryCode: String
+  var email: String
+  var name: String
+  var privateBytes: Double
+  var publicAppUrl: String
+  var quota: Double
+  var referralUrl: String
+  var sharedBytes: Double
+  var uid: String
+  var usedQuota: Double
+  def json(): js.Object
 }
 
-/* static members */
-@JSGlobal("Dropbox.AccountInfo")
-@js.native
-object AccountInfo extends js.Object {
-  def parse(acountInfo: js.Object): AccountInfo = js.native
+object AccountInfo {
+  @scala.inline
+  def apply(
+    countryCode: String,
+    email: String,
+    json: () => js.Object,
+    name: String,
+    privateBytes: Double,
+    publicAppUrl: String,
+    quota: Double,
+    referralUrl: String,
+    sharedBytes: Double,
+    uid: String,
+    usedQuota: Double
+  ): AccountInfo = {
+    val __obj = js.Dynamic.literal(countryCode = countryCode.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), name = name.asInstanceOf[js.Any], privateBytes = privateBytes.asInstanceOf[js.Any], publicAppUrl = publicAppUrl.asInstanceOf[js.Any], quota = quota.asInstanceOf[js.Any], referralUrl = referralUrl.asInstanceOf[js.Any], sharedBytes = sharedBytes.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], usedQuota = usedQuota.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccountInfo]
+  }
 }
 

@@ -30,16 +30,16 @@ trait PlotKeltnerchannelsParamsOptions extends js.Object {
 object PlotKeltnerchannelsParamsOptions {
   @scala.inline
   def apply(
-    index: Int | Double = null,
-    multiplierATR: Int | Double = null,
-    period: Int | Double = null,
-    periodATR: Int | Double = null
+    index: js.UndefOr[Double] = js.undefined,
+    multiplierATR: js.UndefOr[Double] = js.undefined,
+    period: js.UndefOr[Double] = js.undefined,
+    periodATR: js.UndefOr[Double] = js.undefined
   ): PlotKeltnerchannelsParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (multiplierATR != null) __obj.updateDynamic("multiplierATR")(multiplierATR.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (periodATR != null) __obj.updateDynamic("periodATR")(periodATR.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplierATR)) __obj.updateDynamic("multiplierATR")(multiplierATR.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(periodATR)) __obj.updateDynamic("periodATR")(periodATR.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotKeltnerchannelsParamsOptions]
   }
 }

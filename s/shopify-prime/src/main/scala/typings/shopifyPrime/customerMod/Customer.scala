@@ -91,13 +91,13 @@ object Customer {
     default_address: Address = null,
     email: String = null,
     first_name: String = null,
-    id: Int | Double = null,
+    id: js.UndefOr[Double] = js.undefined,
     last_name: String = null,
-    last_order_id: Int | Double = null,
+    last_order_id: js.UndefOr[Double] = js.undefined,
     last_order_name: String = null,
     multipass_identifier: String = null,
     note: String = null,
-    orders_count: Int | Double = null,
+    orders_count: js.UndefOr[Double] = js.undefined,
     state: String = null,
     tags: String = null,
     tax_exempt: js.UndefOr[Boolean] = js.undefined,
@@ -106,26 +106,26 @@ object Customer {
     verified_email: js.UndefOr[Boolean] = js.undefined
   ): Customer = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accepts_marketing)) __obj.updateDynamic("accepts_marketing")(accepts_marketing.asInstanceOf[js.Any])
+    if (!js.isUndefined(accepts_marketing)) __obj.updateDynamic("accepts_marketing")(accepts_marketing.get.asInstanceOf[js.Any])
     if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (default_address != null) __obj.updateDynamic("default_address")(default_address.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
-    if (last_order_id != null) __obj.updateDynamic("last_order_id")(last_order_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(last_order_id)) __obj.updateDynamic("last_order_id")(last_order_id.get.asInstanceOf[js.Any])
     if (last_order_name != null) __obj.updateDynamic("last_order_name")(last_order_name.asInstanceOf[js.Any])
     if (multipass_identifier != null) __obj.updateDynamic("multipass_identifier")(multipass_identifier.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (orders_count != null) __obj.updateDynamic("orders_count")(orders_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(orders_count)) __obj.updateDynamic("orders_count")(orders_count.get.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(tax_exempt)) __obj.updateDynamic("tax_exempt")(tax_exempt.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax_exempt)) __obj.updateDynamic("tax_exempt")(tax_exempt.get.asInstanceOf[js.Any])
     if (total_spent != null) __obj.updateDynamic("total_spent")(total_spent.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Customer]
   }
 }

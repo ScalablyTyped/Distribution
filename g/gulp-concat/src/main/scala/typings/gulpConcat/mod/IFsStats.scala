@@ -25,33 +25,33 @@ object IFsStats {
   @scala.inline
   def apply(
     atime: Date = null,
-    blksize: Int | Double = null,
-    blocks: Int | Double = null,
+    blksize: js.UndefOr[Double] = js.undefined,
+    blocks: js.UndefOr[Double] = js.undefined,
     ctime: Date = null,
-    dev: Int | Double = null,
-    gid: Int | Double = null,
-    ino: Int | Double = null,
-    mode: Int | Double = null,
+    dev: js.UndefOr[Double] = js.undefined,
+    gid: js.UndefOr[Double] = js.undefined,
+    ino: js.UndefOr[Double] = js.undefined,
+    mode: js.UndefOr[Double] = js.undefined,
     mtime: Date = null,
-    nlink: Int | Double = null,
-    rdev: Int | Double = null,
-    size: Int | Double = null,
-    uid: Int | Double = null
+    nlink: js.UndefOr[Double] = js.undefined,
+    rdev: js.UndefOr[Double] = js.undefined,
+    size: js.UndefOr[Double] = js.undefined,
+    uid: js.UndefOr[Double] = js.undefined
   ): IFsStats = {
     val __obj = js.Dynamic.literal()
     if (atime != null) __obj.updateDynamic("atime")(atime.asInstanceOf[js.Any])
-    if (blksize != null) __obj.updateDynamic("blksize")(blksize.asInstanceOf[js.Any])
-    if (blocks != null) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
+    if (!js.isUndefined(blksize)) __obj.updateDynamic("blksize")(blksize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(blocks)) __obj.updateDynamic("blocks")(blocks.get.asInstanceOf[js.Any])
     if (ctime != null) __obj.updateDynamic("ctime")(ctime.asInstanceOf[js.Any])
-    if (dev != null) __obj.updateDynamic("dev")(dev.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (ino != null) __obj.updateDynamic("ino")(ino.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ino)) __obj.updateDynamic("ino")(ino.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
     if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
-    if (nlink != null) __obj.updateDynamic("nlink")(nlink.asInstanceOf[js.Any])
-    if (rdev != null) __obj.updateDynamic("rdev")(rdev.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(nlink)) __obj.updateDynamic("nlink")(nlink.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rdev)) __obj.updateDynamic("rdev")(rdev.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFsStats]
   }
 }

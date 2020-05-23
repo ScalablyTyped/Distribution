@@ -44,7 +44,7 @@ object SegmentImportResource {
     Format: CSV | JSON | String = null,
     RoleArn: String = null,
     S3Url: String = null,
-    Size: Int | Double = null
+    Size: js.UndefOr[Double] = js.undefined
   ): SegmentImportResource = {
     val __obj = js.Dynamic.literal()
     if (ChannelCounts != null) __obj.updateDynamic("ChannelCounts")(ChannelCounts.asInstanceOf[js.Any])
@@ -52,7 +52,7 @@ object SegmentImportResource {
     if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
     if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     if (S3Url != null) __obj.updateDynamic("S3Url")(S3Url.asInstanceOf[js.Any])
-    if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
+    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentImportResource]
   }
 }

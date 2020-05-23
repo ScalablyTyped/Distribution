@@ -18,14 +18,14 @@ trait RangeViewLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the cell addresses of the RangeView. Read-only.
+    * Represents the cell addresses of the RangeView.
     *
     * [Api set: ExcelApi 1.3]
     */
   var cellAddresses: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the number of visible columns. Read-only.
+    * The number of visible columns.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -53,7 +53,7 @@ trait RangeViewLoadOptions extends js.Object {
   var formulasR1C1: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns a value that represents the index of the RangeView. Read-only.
+    * Returns a value that represents the index of the RangeView.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -67,21 +67,21 @@ trait RangeViewLoadOptions extends js.Object {
   var numberFormat: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns the number of visible rows. Read-only.
+    * The number of visible rows.
     *
     * [Api set: ExcelApi 1.3]
     */
   var rowCount: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
     *
     * [Api set: ExcelApi 1.3]
     */
   var text: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Represents the type of data of each cell. Read-only.
+    * Represents the type of data of each cell.
     *
     * [Api set: ExcelApi 1.3]
     */
@@ -112,18 +112,18 @@ object RangeViewLoadOptions {
     values: js.UndefOr[Boolean] = js.undefined
   ): RangeViewLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellAddresses)) __obj.updateDynamic("cellAddresses")(cellAddresses.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(formulas)) __obj.updateDynamic("formulas")(formulas.asInstanceOf[js.Any])
-    if (!js.isUndefined(formulasLocal)) __obj.updateDynamic("formulasLocal")(formulasLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(formulasR1C1)) __obj.updateDynamic("formulasR1C1")(formulasR1C1.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueTypes)) __obj.updateDynamic("valueTypes")(valueTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellAddresses)) __obj.updateDynamic("cellAddresses")(cellAddresses.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulas)) __obj.updateDynamic("formulas")(formulas.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulasLocal)) __obj.updateDynamic("formulasLocal")(formulasLocal.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulasR1C1)) __obj.updateDynamic("formulasR1C1")(formulasR1C1.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueTypes)) __obj.updateDynamic("valueTypes")(valueTypes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeViewLoadOptions]
   }
 }

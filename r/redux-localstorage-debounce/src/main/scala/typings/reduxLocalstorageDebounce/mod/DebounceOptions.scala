@@ -12,10 +12,13 @@ trait DebounceOptions
 
 object DebounceOptions {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, maxWait: Int | Double = null): DebounceOptions = {
+  def apply(
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    maxWait: js.UndefOr[Double] = js.undefined
+  ): DebounceOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (maxWait != null) __obj.updateDynamic("maxWait")(maxWait.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWait)) __obj.updateDynamic("maxWait")(maxWait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebounceOptions]
   }
 }

@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
-@JSGlobal("OneNote.TableCellCollection")
 @js.native
-class TableCellCollection () extends ClientObject {
+trait TableCellCollection extends ClientObject {
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableCellCollection: RequestContext = js.native

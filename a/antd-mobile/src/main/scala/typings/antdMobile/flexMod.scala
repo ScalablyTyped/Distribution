@@ -1,5 +1,6 @@
 package typings.antdMobile
 
+import typings.antdMobile.anon.Align
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ object flexMod extends js.Object {
   @js.native
   object default extends js.Object {
     var Item: js.Any = js.native
-    var defaultProps: AnonAlign = js.native
+    var defaultProps: Align = js.native
   }
   
 }

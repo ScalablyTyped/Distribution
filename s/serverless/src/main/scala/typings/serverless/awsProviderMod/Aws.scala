@@ -1,7 +1,7 @@
 package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.serverless.AnonRegion
+import typings.serverless.anon.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,6 @@ trait Aws extends js.Object {
   def getStage(): String = js.native
   def request(service: String, method: String): js.Promise[_] = js.native
   def request(service: String, method: String, params: js.Object): js.Promise[_] = js.native
-  def request(service: String, method: String, params: js.Object, options: AnonRegion): js.Promise[_] = js.native
+  def request(service: String, method: String, params: js.Object, options: Region): js.Promise[_] = js.native
 }
 

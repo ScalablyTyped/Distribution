@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Office
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,29 +54,6 @@ object CustomXMLNodeType extends js.Object {
     */
   @js.native
   sealed trait Text extends CustomXMLNodeType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CustomXMLNodeType with Double] = js.native
-  /* 0 */ @js.native
-  object Attribute extends TopLevel[Attribute with Double]
-  
-  /* 1 */ @js.native
-  object CData extends TopLevel[CData with Double]
-  
-  /* 3 */ @js.native
-  object Element extends TopLevel[Element with Double]
-  
-  /* 2 */ @js.native
-  object NodeComment extends TopLevel[NodeComment with Double]
-  
-  /* 4 */ @js.native
-  object NodeDocument extends TopLevel[NodeDocument with Double]
-  
-  /* 5 */ @js.native
-  object ProcessingInstruction extends TopLevel[ProcessingInstruction with Double]
-  
-  /* 6 */ @js.native
-  object Text extends TopLevel[Text with Double]
   
 }
 

@@ -4,12 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.Services.Formatting.TextEditInfo")
-@js.native
-class TextEditInfo protected () extends js.Object {
-  def this(position: Double, length: Double, replaceWith: String) = this()
-  var length: Double = js.native
-  var position: Double = js.native
-  var replaceWith: String = js.native
+trait TextEditInfo extends js.Object {
+  var length: Double
+  var position: Double
+  var replaceWith: String
+}
+
+object TextEditInfo {
+  @scala.inline
+  def apply(length: Double, position: Double, replaceWith: String): TextEditInfo = {
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], replaceWith = replaceWith.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextEditInfo]
+  }
 }
 

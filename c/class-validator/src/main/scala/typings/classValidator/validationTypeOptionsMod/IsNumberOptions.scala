@@ -15,12 +15,12 @@ object IsNumberOptions {
   def apply(
     allowInfinity: js.UndefOr[Boolean] = js.undefined,
     allowNaN: js.UndefOr[Boolean] = js.undefined,
-    maxDecimalPlaces: Int | Double = null
+    maxDecimalPlaces: js.UndefOr[Double] = js.undefined
   ): IsNumberOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowInfinity)) __obj.updateDynamic("allowInfinity")(allowInfinity.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNaN)) __obj.updateDynamic("allowNaN")(allowNaN.asInstanceOf[js.Any])
-    if (maxDecimalPlaces != null) __obj.updateDynamic("maxDecimalPlaces")(maxDecimalPlaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInfinity)) __obj.updateDynamic("allowInfinity")(allowInfinity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNaN)) __obj.updateDynamic("allowNaN")(allowNaN.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxDecimalPlaces)) __obj.updateDynamic("maxDecimalPlaces")(maxDecimalPlaces.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsNumberOptions]
   }
 }

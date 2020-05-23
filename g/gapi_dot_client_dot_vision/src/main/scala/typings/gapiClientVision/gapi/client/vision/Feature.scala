@@ -13,9 +13,9 @@ trait Feature extends js.Object {
 
 object Feature {
   @scala.inline
-  def apply(maxResults: Int | Double = null, `type`: String = null): Feature = {
+  def apply(maxResults: js.UndefOr[Double] = js.undefined, `type`: String = null): Feature = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feature]
   }

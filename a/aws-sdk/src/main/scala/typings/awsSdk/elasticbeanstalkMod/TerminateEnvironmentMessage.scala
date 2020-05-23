@@ -29,14 +29,14 @@ object TerminateEnvironmentMessage {
   def apply(
     EnvironmentId: EnvironmentId = null,
     EnvironmentName: EnvironmentName = null,
-    ForceTerminate: js.UndefOr[Boolean] = js.undefined,
-    TerminateResources: js.UndefOr[Boolean] = js.undefined
+    ForceTerminate: js.UndefOr[ForceTerminate] = js.undefined,
+    TerminateResources: js.UndefOr[TerminateEnvironmentResources] = js.undefined
   ): TerminateEnvironmentMessage = {
     val __obj = js.Dynamic.literal()
     if (EnvironmentId != null) __obj.updateDynamic("EnvironmentId")(EnvironmentId.asInstanceOf[js.Any])
     if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceTerminate)) __obj.updateDynamic("ForceTerminate")(ForceTerminate.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminateResources)) __obj.updateDynamic("TerminateResources")(TerminateResources.asInstanceOf[js.Any])
+    if (!js.isUndefined(ForceTerminate)) __obj.updateDynamic("ForceTerminate")(ForceTerminate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TerminateResources)) __obj.updateDynamic("TerminateResources")(TerminateResources.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateEnvironmentMessage]
   }
 }

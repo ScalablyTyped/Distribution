@@ -19,8 +19,8 @@ object ModelOptions {
   ): ModelOptions = {
     val __obj = js.Dynamic.literal()
     if (old != null) __obj.updateDynamic("old")(old.asInstanceOf[js.Any])
-    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelOptions]
   }
 }

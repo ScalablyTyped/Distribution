@@ -8,70 +8,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
 - typings.extjs.Ext.util.IElementContainer because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined addChildEls, removeChildEls */ trait IContainerLayout extends ILayout {
   /** [Method] Adds each argument passed to this method to the childEls array  */
   var addChildEls: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
-  		* @param ownerContext Object
-  		* @param firstCycle Object
-  		*/
+    * @param ownerContext Object
+    * @param firstCycle Object
+    */
   @JSName("beginLayoutCycle")
   var beginLayoutCycle_IContainerLayout: js.UndefOr[
     js.Function2[/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] In addition to work done by our base classes containers benefit from some extra cached data
-  		* @param ownerContext Object
-  		*/
+    * @param ownerContext Object
+    */
   @JSName("beginLayout")
   var beginLayout_IContainerLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Adds layout s itemCls and owning Container s itemCls
-  		* @param item Object
-  		*/
+    * @param item Object
+    */
   @JSName("configureItem")
   var configureItem_IContainerLayout: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Returns the container size that of the target
-  		* @param ownerContext Ext.layout.ContextItem The owner's context item.
-  		* @param inDom Boolean True if the container size must be in the DOM.
-  		* @returns Object The size
-  		*/
+    * @param ownerContext Ext.layout.ContextItem The owner's context item.
+    * @param inDom Boolean True if the container size must be in the DOM.
+    * @returns Object The size
+    */
   var getContainerSize: js.UndefOr[
     js.Function2[/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], _]
   ] = js.undefined
   /** [Method] Returns the element into which extra functional DOM elements can be inserted
-  		* @returns Ext.Element
-  		*/
+    * @returns Ext.Element
+    */
   var getElementTarget: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Returns an array of child components either for a render phase Performed in the beforeLayout method of the layout s
-  		* @returns Ext.Component[] of child components
-  		*/
+    * @returns Ext.Component[] of child components
+    */
   @JSName("getLayoutItems")
   var getLayoutItems_IContainerLayout: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the element into which rendering must take place
-  		* @returns Ext.Element
-  		*/
+    * @returns Ext.Element
+    */
   var getRenderTarget: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Returns all items that are rendered
-  		* @returns Array All matching items
-  		*/
+    * @returns Array All matching items
+    */
   var getRenderedItems: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Method] Returns the owner component s resize element
-  		* @returns Ext.Element
-  		*/
+    * @returns Ext.Element
+    */
   var getTarget: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Returns all items that are both rendered and visible
-  		* @returns Array All matching items
-  		*/
+    * @returns Array All matching items
+    */
   var getVisibleItems: js.UndefOr[js.Function0[Array]] = js.undefined
   /** [Config Option] (String) */
   var itemCls: js.UndefOr[String] = js.undefined
   /** [Property] (Ext.Element) */
   var overflowPadderEl: js.UndefOr[IElement] = js.undefined
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
-  		* @param testFn Function The test function.
-  		*/
+    * @param testFn Function The test function.
+    */
   var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
 }
 
@@ -138,7 +138,7 @@ object IContainerLayout {
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (configureItem != null) __obj.updateDynamic("configureItem")(js.Any.fromFunction1(configureItem))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (finalizeLayout != null) __obj.updateDynamic("finalizeLayout")(js.Any.fromFunction1(finalizeLayout))
     if (finishedLayout != null) __obj.updateDynamic("finishedLayout")(js.Any.fromFunction1(finishedLayout))
@@ -154,7 +154,7 @@ object IContainerLayout {
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initLayout != null) __obj.updateDynamic("initLayout")(js.Any.fromFunction0(initLayout))
-    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.get.asInstanceOf[js.Any])
     if (isValidParent != null) __obj.updateDynamic("isValidParent")(js.Any.fromFunction3(isValidParent))
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -165,7 +165,7 @@ object IContainerLayout {
     if (renderItems != null) __obj.updateDynamic("renderItems")(js.Any.fromFunction2(renderItems))
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContainerLayout]

@@ -1,16 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
-import typings.baidumapWebSdk.AnonPixel
-import typings.baidumapWebSdk.AnonTarget
+import typings.baidumapWebSdk.anon.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BMap.Marker")
 @js.native
-class Marker protected () extends Overlay {
-  def this(point: Point) = this()
-  def this(point: Point, opts: MarkerOptions) = this()
+trait Marker extends Overlay {
   def addContextMenu(menu: ContextMenu): Unit = js.native
   def addEventListener(event: String, handler: Callback): Unit = js.native
   def closeInfoWindow(): Unit = js.native
@@ -26,19 +22,19 @@ class Marker protected () extends Overlay {
   def getRotation(): Double = js.native
   def getShadow(): Unit = js.native
   def getTitle(): String = js.native
-  def onclick(event: AnonTarget): Unit = js.native
-  def ondblclick(event: AnonPixel): Unit = js.native
-  def ondragend(event: AnonPixel): Unit = js.native
-  def ondragging(event: AnonPixel): Unit = js.native
-  def ondragstart(event: AnonTarget): Unit = js.native
-  def oninfowindowclose(event: AnonTarget): Unit = js.native
-  def oninfowindowopen(event: AnonTarget): Unit = js.native
-  def onmousedown(event: AnonPixel): Unit = js.native
-  def onmouseout(event: AnonPixel): Unit = js.native
-  def onmouseover(event: AnonPixel): Unit = js.native
-  def onmouseup(event: AnonPixel): Unit = js.native
-  def onremove(event: AnonTarget): Unit = js.native
-  def onrightclick(event: AnonTarget): Unit = js.native
+  def onclick(event: Target): Unit = js.native
+  def ondblclick(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def ondragend(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def ondragging(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def ondragstart(event: Target): Unit = js.native
+  def oninfowindowclose(event: Target): Unit = js.native
+  def oninfowindowopen(event: Target): Unit = js.native
+  def onmousedown(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onmouseout(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onmouseover(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onmouseup(event: typings.baidumapWebSdk.anon.Pixel): Unit = js.native
+  def onremove(event: Target): Unit = js.native
+  def onrightclick(event: Target): Unit = js.native
   def openInfoWindow(infoWnd: InfoWindow): Unit = js.native
   def removeContextMenu(menu: ContextMenu): Unit = js.native
   def removeEventListener(event: String, handler: Callback): Unit = js.native

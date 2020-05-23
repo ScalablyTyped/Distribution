@@ -16,9 +16,8 @@ import scala.scalajs.js.annotation._
   * @extends PIXI.utils.EventEmitter
   * @memberof PIXI
   */
-@JSGlobal("PIXI.DisplayObject")
 @js.native
-class DisplayObject () extends EventEmitter {
+trait DisplayObject extends EventEmitter {
   /**
     * @member {boolean}
     * @memberof PIXI.DisplayObject#
@@ -537,17 +536,5 @@ class DisplayObject () extends EventEmitter {
     * TODO - Optimization pass!
     */
   def updateTransform(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("PIXI.DisplayObject")
-@js.native
-object DisplayObject extends js.Object {
-  /**
-    * Mixes all enumerable properties and methods from a source object to DisplayObject.
-    *
-    * @param {object} source The source of properties and methods to mix in.
-    */
-  def mixin(source: js.Any): Unit = js.native
 }
 

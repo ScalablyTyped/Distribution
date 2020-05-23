@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InventoryS3BucketDestination extends js.Object {
   /**
-    * The ID of the account that owns the destination bucket.
+    * The account ID that owns the destination S3 bucket. If no account ID is provided, the owner is not validated before exporting data.    Although this value is optional, we strongly recommend that you set it to help prevent problems if the destination bucket ownership changes.  
     */
   var AccountId: js.UndefOr[typings.awsSdk.s3Mod.AccountId] = js.native
   /**

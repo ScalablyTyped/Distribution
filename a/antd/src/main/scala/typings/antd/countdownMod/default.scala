@@ -1,6 +1,6 @@
 package typings.antd.countdownMod
 
-import typings.antd.PartialCountdownProps
+import typings.antd.anon.PartialCountdownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,5 +1,6 @@
 package typings.uiBox
 
+import typings.uiBox.anon.Cache
 import typings.uiBox.boxTypesMod.BoxComponent
 import typings.uiBox.cacheMod.CacheEntry
 import typings.uiBox.splitBoxPropsMod.SplitBoxProps
@@ -24,7 +25,7 @@ object mod extends js.Object {
   val propNames: js.Array[String] = js.native
   val propTypes: PropTypesMapping = js.native
   def clearStyles(): Unit = js.native
-  def extractStyles(): AnonCache = js.native
+  def extractStyles(): Cache = js.native
   def splitBoxProps[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = js.native
   def splitProps[P /* <: Dictionary[_] */, K /* <: /* keyof P */ String */](props: P, keys: js.Array[K]): SplitProps[P, K] = js.native
   @js.native

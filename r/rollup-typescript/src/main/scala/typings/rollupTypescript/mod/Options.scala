@@ -1,6 +1,6 @@
 package typings.rollupTypescript.mod
 
-import typings.rollupTypescript.Typeofts
+import typings.rollupTypescript.anon.Typeofts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object Options {
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
-    if (!js.isUndefined(tsconfig)) __obj.updateDynamic("tsconfig")(tsconfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(tsconfig)) __obj.updateDynamic("tsconfig")(tsconfig.get.asInstanceOf[js.Any])
     if (typescript != null) __obj.updateDynamic("typescript")(typescript.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

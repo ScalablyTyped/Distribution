@@ -19,8 +19,8 @@ object Olap {
   @scala.inline
   def apply(showKPI: js.UndefOr[Boolean] = js.undefined, showNamedSets: js.UndefOr[Boolean] = js.undefined): Olap = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showKPI)) __obj.updateDynamic("showKPI")(showKPI.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNamedSets)) __obj.updateDynamic("showNamedSets")(showNamedSets.asInstanceOf[js.Any])
+    if (!js.isUndefined(showKPI)) __obj.updateDynamic("showKPI")(showKPI.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNamedSets)) __obj.updateDynamic("showNamedSets")(showNamedSets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Olap]
   }
 }

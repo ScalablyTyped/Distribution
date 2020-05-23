@@ -1,10 +1,9 @@
 package typings.gapiClientSpanner.gapi.client.spanner
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientSpanner.AnonAccesstoken
-import typings.gapiClientSpanner.AnonCallback
-import typings.gapiClientSpanner.AnonDatabase
-import typings.gapiClientSpanner.AnonFields
+import typings.gapiClient.gapi.client.Request
+import typings.gapiClientSpanner.anon.Accesstoken
+import typings.gapiClientSpanner.anon.Callback
+import typings.gapiClientSpanner.anon.Fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ trait SessionsResource extends js.Object {
     * Commit can begin a new transaction as a
     * side-effect.
     */
-  def beginTransaction(request: AnonCallback): Request_[Transaction]
+  def beginTransaction(request: Callback): Request[Transaction]
   /**
     * Commits a transaction. The request includes the mutations to be
     * applied to rows in the database.
@@ -27,7 +26,7 @@ trait SessionsResource extends js.Object {
     * reasons. If `Commit` returns `ABORTED`, the caller should re-attempt
     * the transaction from the beginning, re-using the same session.
     */
-  def commit(request: AnonCallback): Request_[CommitResponse]
+  def commit(request: Callback): Request[CommitResponse]
   /**
     * Creates a new session. A session can be used to perform
     * transactions that read and/or modify data in a Cloud Spanner database.
@@ -49,9 +48,9 @@ trait SessionsResource extends js.Object {
     * Idle sessions can be kept alive by sending a trivial SQL query
     * periodically, e.g., `"SELECT 1"`.
     */
-  def create(request: AnonDatabase): Request_[Session]
+  def create(request: typings.gapiClientSpanner.anon.Database): Request[Session]
   /** Ends a session, releasing server resources associated with it. */
-  def delete(request: AnonAccesstoken): Request_[js.Object]
+  def delete(request: Accesstoken): Request[js.Object]
   /**
     * Executes an SQL query, returning all rows in a single reply. This
     * method cannot be used to return a result set larger than 10 MiB;
@@ -65,7 +64,7 @@ trait SessionsResource extends js.Object {
     * Larger result sets can be fetched in streaming fashion by calling
     * ExecuteStreamingSql instead.
     */
-  def executeSql(request: AnonCallback): Request_[ResultSet]
+  def executeSql(request: Callback): Request[ResultSet]
   /**
     * Like ExecuteSql, except returns the result
     * set as a stream. Unlike ExecuteSql, there
@@ -73,15 +72,15 @@ trait SessionsResource extends js.Object {
     * individual row in the result set can exceed 100 MiB, and no
     * column value can exceed 10 MiB.
     */
-  def executeStreamingSql(request: AnonCallback): Request_[PartialResultSet]
+  def executeStreamingSql(request: Callback): Request[PartialResultSet]
   /**
     * Gets a session. Returns `NOT_FOUND` if the session does not exist.
     * This is mainly useful for determining whether a session is still
     * alive.
     */
-  def get(request: AnonAccesstoken): Request_[Session]
+  def get(request: Accesstoken): Request[Session]
   /** Lists all sessions in a given database. */
-  def list(request: AnonFields): Request_[ListSessionsResponse]
+  def list(request: Fields): Request[ListSessionsResponse]
   /**
     * Reads rows from the database using key lookups and scans, as a
     * simple key/value style alternative to
@@ -97,7 +96,7 @@ trait SessionsResource extends js.Object {
     * Larger result sets can be yielded in streaming fashion by calling
     * StreamingRead instead.
     */
-  def read(request: AnonCallback): Request_[ResultSet]
+  def read(request: Callback): Request[ResultSet]
   /**
     * Rolls back a transaction, releasing any locks it holds. It is a good
     * idea to call this for any transaction that includes one or more
@@ -108,7 +107,7 @@ trait SessionsResource extends js.Object {
     * transaction was already aborted, or the transaction is not
     * found. `Rollback` never returns `ABORTED`.
     */
-  def rollback(request: AnonCallback): Request_[js.Object]
+  def rollback(request: Callback): Request[js.Object]
   /**
     * Like Read, except returns the result set as a
     * stream. Unlike Read, there is no limit on the
@@ -116,23 +115,23 @@ trait SessionsResource extends js.Object {
     * the result set can exceed 100 MiB, and no column value can exceed
     * 10 MiB.
     */
-  def streamingRead(request: AnonCallback): Request_[PartialResultSet]
+  def streamingRead(request: Callback): Request[PartialResultSet]
 }
 
 object SessionsResource {
   @scala.inline
   def apply(
-    beginTransaction: AnonCallback => Request_[Transaction],
-    commit: AnonCallback => Request_[CommitResponse],
-    create: AnonDatabase => Request_[Session],
-    delete: AnonAccesstoken => Request_[js.Object],
-    executeSql: AnonCallback => Request_[ResultSet],
-    executeStreamingSql: AnonCallback => Request_[PartialResultSet],
-    get: AnonAccesstoken => Request_[Session],
-    list: AnonFields => Request_[ListSessionsResponse],
-    read: AnonCallback => Request_[ResultSet],
-    rollback: AnonCallback => Request_[js.Object],
-    streamingRead: AnonCallback => Request_[PartialResultSet]
+    beginTransaction: Callback => Request[Transaction],
+    commit: Callback => Request[CommitResponse],
+    create: typings.gapiClientSpanner.anon.Database => Request[Session],
+    delete: Accesstoken => Request[js.Object],
+    executeSql: Callback => Request[ResultSet],
+    executeStreamingSql: Callback => Request[PartialResultSet],
+    get: Accesstoken => Request[Session],
+    list: Fields => Request[ListSessionsResponse],
+    read: Callback => Request[ResultSet],
+    rollback: Callback => Request[js.Object],
+    streamingRead: Callback => Request[PartialResultSet]
   ): SessionsResource = {
     val __obj = js.Dynamic.literal(beginTransaction = js.Any.fromFunction1(beginTransaction), commit = js.Any.fromFunction1(commit), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), executeSql = js.Any.fromFunction1(executeSql), executeStreamingSql = js.Any.fromFunction1(executeStreamingSql), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), read = js.Any.fromFunction1(read), rollback = js.Any.fromFunction1(rollback), streamingRead = js.Any.fromFunction1(streamingRead))
     __obj.asInstanceOf[SessionsResource]

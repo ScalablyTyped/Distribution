@@ -18,10 +18,10 @@ trait HostedZoneConfig extends js.Object {
 
 object HostedZoneConfig {
   @scala.inline
-  def apply(Comment: ResourceDescription = null, PrivateZone: js.UndefOr[Boolean] = js.undefined): HostedZoneConfig = {
+  def apply(Comment: ResourceDescription = null, PrivateZone: js.UndefOr[IsPrivateZone] = js.undefined): HostedZoneConfig = {
     val __obj = js.Dynamic.literal()
     if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrivateZone)) __obj.updateDynamic("PrivateZone")(PrivateZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(PrivateZone)) __obj.updateDynamic("PrivateZone")(PrivateZone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedZoneConfig]
   }
 }

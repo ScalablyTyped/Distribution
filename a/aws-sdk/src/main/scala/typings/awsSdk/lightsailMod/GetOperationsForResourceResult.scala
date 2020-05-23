@@ -15,7 +15,7 @@ trait GetOperationsForResourceResult extends js.Object {
     */
   var nextPageToken: js.UndefOr[String] = js.native
   /**
-    * An array of objects that describe the result of the action, such as the status of the request, the time stamp of the request, and the resources affected by the request.
+    * An array of objects that describe the result of the action, such as the status of the request, the timestamp of the request, and the resources affected by the request.
     */
   var operations: js.UndefOr[OperationList] = js.native
 }

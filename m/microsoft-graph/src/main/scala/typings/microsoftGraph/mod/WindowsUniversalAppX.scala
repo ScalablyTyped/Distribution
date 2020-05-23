@@ -56,7 +56,7 @@ object WindowsUniversalAppX {
     privacyInformationUrl: String = null,
     publisher: String = null,
     publishingState: MobileAppPublishingState = null,
-    size: Int | Double = null
+    size: js.UndefOr[Double] = js.undefined
   ): WindowsUniversalAppX = {
     val __obj = js.Dynamic.literal()
     if (applicableArchitectures != null) __obj.updateDynamic("applicableArchitectures")(applicableArchitectures.asInstanceOf[js.Any])
@@ -76,8 +76,8 @@ object WindowsUniversalAppX {
     if (identityResourceIdentifier != null) __obj.updateDynamic("identityResourceIdentifier")(identityResourceIdentifier.asInstanceOf[js.Any])
     if (identityVersion != null) __obj.updateDynamic("identityVersion")(identityVersion.asInstanceOf[js.Any])
     if (informationUrl != null) __obj.updateDynamic("informationUrl")(informationUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBundle)) __obj.updateDynamic("isBundle")(isBundle.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBundle)) __obj.updateDynamic("isBundle")(isBundle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.get.asInstanceOf[js.Any])
     if (largeIcon != null) __obj.updateDynamic("largeIcon")(largeIcon.asInstanceOf[js.Any])
     if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (minimumSupportedOperatingSystem != null) __obj.updateDynamic("minimumSupportedOperatingSystem")(minimumSupportedOperatingSystem.asInstanceOf[js.Any])
@@ -86,7 +86,7 @@ object WindowsUniversalAppX {
     if (privacyInformationUrl != null) __obj.updateDynamic("privacyInformationUrl")(privacyInformationUrl.asInstanceOf[js.Any])
     if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
     if (publishingState != null) __obj.updateDynamic("publishingState")(publishingState.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsUniversalAppX]
   }
 }

@@ -15,7 +15,7 @@ trait UseFiltersOptions[D /* <: js.Object */] extends js.Object {
 
 object UseFiltersOptions {
   @scala.inline
-  def apply[D /* <: js.Object */](
+  def apply[D](
     autoResetFilters: js.UndefOr[Boolean] = js.undefined,
     defaultCanFilter: js.UndefOr[Boolean] = js.undefined,
     disableFilters: js.UndefOr[Boolean] = js.undefined,
@@ -23,11 +23,11 @@ object UseFiltersOptions {
     manualFilters: js.UndefOr[Boolean] = js.undefined
   ): UseFiltersOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetFilters)) __obj.updateDynamic("autoResetFilters")(autoResetFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultCanFilter)) __obj.updateDynamic("defaultCanFilter")(defaultCanFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFilters)) __obj.updateDynamic("disableFilters")(disableFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResetFilters)) __obj.updateDynamic("autoResetFilters")(autoResetFilters.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultCanFilter)) __obj.updateDynamic("defaultCanFilter")(defaultCanFilter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFilters)) __obj.updateDynamic("disableFilters")(disableFilters.get.asInstanceOf[js.Any])
     if (filterTypes != null) __obj.updateDynamic("filterTypes")(filterTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(manualFilters)) __obj.updateDynamic("manualFilters")(manualFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(manualFilters)) __obj.updateDynamic("manualFilters")(manualFilters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseFiltersOptions[D]]
   }
 }

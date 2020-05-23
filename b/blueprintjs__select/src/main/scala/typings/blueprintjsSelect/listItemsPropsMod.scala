@@ -10,8 +10,8 @@ import typings.react.mod.ChangeEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.react.mod._Global_.JSX.Element
-import typings.std.Event_
+import typings.react.mod.global.JSX.Element
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -188,15 +188,14 @@ object listItemsPropsMod extends js.Object {
       * typically by clicking or pressing `enter` key.
       */
     def onItemSelect(item: T): Unit = js.native
-    def onItemSelect(item: T, event: SyntheticEvent[HTMLElement, Event_]): Unit = js.native
+    def onItemSelect(item: T, event: SyntheticEvent[HTMLElement, Event]): Unit = js.native
   }
   
   def executeItemsEqual[T](): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T, itemB: T): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: js.UndefOr[scala.Nothing], itemB: T): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: Null, itemB: T): Boolean = js.native
   def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T]): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: T): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: T, itemB: T): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: Null, itemB: T): Boolean = js.native
   type ItemsEqualComparator[T] = js.Function2[/* itemA */ T, /* itemB */ T, Boolean]
   type ItemsEqualProp[T] = ItemsEqualComparator[T] | (/* keyof T */ String)
 }

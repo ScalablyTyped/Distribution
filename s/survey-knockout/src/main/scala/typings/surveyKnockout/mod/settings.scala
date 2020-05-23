@@ -25,6 +25,10 @@ object settings extends js.Object {
     */
   var disableOnGettingChoicesFromWeb: Boolean = js.native
   /**
+    * Set this property to true to execute the complete trigger on value change instead of on next page.
+    */
+  var executeCompleteTriggerOnValueChanged: Boolean = js.native
+  /**
     * separator that can allow to set value and text of ItemValue object in one string as: "value|text"
     */
   var itemValueSeparator: String = js.native

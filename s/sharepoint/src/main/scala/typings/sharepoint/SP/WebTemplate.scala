@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.WebTemplate")
 @js.native
-class WebTemplate () extends ClientObject {
+trait WebTemplate extends ClientObject {
   def get_description(): String = js.native
   def get_displayCategory(): String = js.native
   def get_id(): Double = js.native

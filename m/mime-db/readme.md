@@ -1,7 +1,7 @@
 
 # Scala.js typings for mime-db
 
-Typings are for version 1.27
+Typings are for version 1.43
 
 ## Library description:
 Media Type Database

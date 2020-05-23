@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,17 +33,6 @@ object MatchType extends js.Object {
   
   @js.native
   sealed trait PREFIX extends MatchType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MatchType with Double] = js.native
-  /* 2 */ @js.native
-  object ANY extends TopLevel[ANY with Double]
-  
-  /* 0 */ @js.native
-  object EXACT extends TopLevel[EXACT with Double]
-  
-  /* 1 */ @js.native
-  object PREFIX extends TopLevel[PREFIX with Double]
   
 }
 

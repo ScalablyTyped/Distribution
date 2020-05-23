@@ -25,30 +25,30 @@ object TweenProps {
   def apply(
     bounce: js.UndefOr[Boolean] = js.undefined,
     ignoreGlobalPause: js.UndefOr[Boolean] = js.undefined,
-    loop: Int | Double = null,
+    loop: js.UndefOr[Double] = js.undefined,
     onChange: /* e */ Event => Unit = null,
     onComplete: /* e */ Event => Unit = null,
     `override`: js.UndefOr[Boolean] = js.undefined,
     paused: js.UndefOr[Boolean] = js.undefined,
     pluginData: js.Any = null,
-    position: Int | Double = null,
+    position: js.UndefOr[Double] = js.undefined,
     reversed: js.UndefOr[Boolean] = js.undefined,
-    timeScale: Int | Double = null,
+    timeScale: js.UndefOr[Double] = js.undefined,
     useTicks: js.UndefOr[Boolean] = js.undefined
   ): TweenProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bounce)) __obj.updateDynamic("bounce")(bounce.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreGlobalPause)) __obj.updateDynamic("ignoreGlobalPause")(ignoreGlobalPause.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(bounce)) __obj.updateDynamic("bounce")(bounce.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreGlobalPause)) __obj.updateDynamic("ignoreGlobalPause")(ignoreGlobalPause.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.get.asInstanceOf[js.Any])
     if (pluginData != null) __obj.updateDynamic("pluginData")(pluginData.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
-    if (timeScale != null) __obj.updateDynamic("timeScale")(timeScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTicks)) __obj.updateDynamic("useTicks")(useTicks.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeScale)) __obj.updateDynamic("timeScale")(timeScale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTicks)) __obj.updateDynamic("useTicks")(useTicks.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TweenProps]
   }
 }

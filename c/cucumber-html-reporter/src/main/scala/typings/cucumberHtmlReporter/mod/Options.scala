@@ -29,7 +29,7 @@ object Options {
     output: String,
     reportSuiteAsScenarios: Boolean,
     theme: String,
-    columnLayout: Int | Double = null,
+    columnLayout: js.UndefOr[Double] = js.undefined,
     ignoreBadJsonFile: js.UndefOr[Boolean] = js.undefined,
     jsonDir: String = null,
     metadata: StringDictionary[String] = null,
@@ -39,14 +39,14 @@ object Options {
     storeScreenshots: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(jsonFile = jsonFile.asInstanceOf[js.Any], launchReport = launchReport.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], reportSuiteAsScenarios = reportSuiteAsScenarios.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
-    if (columnLayout != null) __obj.updateDynamic("columnLayout")(columnLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBadJsonFile)) __obj.updateDynamic("ignoreBadJsonFile")(ignoreBadJsonFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnLayout)) __obj.updateDynamic("columnLayout")(columnLayout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBadJsonFile)) __obj.updateDynamic("ignoreBadJsonFile")(ignoreBadJsonFile.get.asInstanceOf[js.Any])
     if (jsonDir != null) __obj.updateDynamic("jsonDir")(jsonDir.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noInlineScreenshots)) __obj.updateDynamic("noInlineScreenshots")(noInlineScreenshots.asInstanceOf[js.Any])
+    if (!js.isUndefined(noInlineScreenshots)) __obj.updateDynamic("noInlineScreenshots")(noInlineScreenshots.get.asInstanceOf[js.Any])
     if (screenshotsDirectory != null) __obj.updateDynamic("screenshotsDirectory")(screenshotsDirectory.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeScreenshots)) __obj.updateDynamic("storeScreenshots")(storeScreenshots.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeScreenshots)) __obj.updateDynamic("storeScreenshots")(storeScreenshots.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

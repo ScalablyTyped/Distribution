@@ -14,9 +14,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("MeshRoom")
 @js.native
-class MeshRoom () extends js.Object {
+trait MeshRoom extends js.Object {
   def close(): js.UndefOr[scala.Nothing] = js.native
   def getLog(): js.UndefOr[scala.Nothing] = js.native
   def on(event: String, cb: js.Function0[Unit]): Unit = js.native

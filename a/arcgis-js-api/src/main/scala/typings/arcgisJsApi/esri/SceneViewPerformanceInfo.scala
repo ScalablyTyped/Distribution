@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,7 +48,18 @@ trait SceneViewPerformanceInfo extends js.Object {
   var usedMemory: Double
 }
 
-@JSGlobal("__esri.SceneViewPerformanceInfo")
-@js.native
-object SceneViewPerformanceInfo extends TopLevel[SceneViewPerformanceInfo]
+object SceneViewPerformanceInfo {
+  @scala.inline
+  def apply(
+    edgesMemory: Double,
+    layerPerformanceInfos: js.Array[LayerPerformanceInfo],
+    quality: Double,
+    terrainMemory: Double,
+    totalMemory: Double,
+    usedMemory: Double
+  ): SceneViewPerformanceInfo = {
+    val __obj = js.Dynamic.literal(edgesMemory = edgesMemory.asInstanceOf[js.Any], layerPerformanceInfos = layerPerformanceInfos.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], terrainMemory = terrainMemory.asInstanceOf[js.Any], totalMemory = totalMemory.asInstanceOf[js.Any], usedMemory = usedMemory.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SceneViewPerformanceInfo]
+  }
+}
 

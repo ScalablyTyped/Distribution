@@ -17,10 +17,7 @@ import scala.scalajs.js.annotation._
 
 object DefaultContext {
   @scala.inline
-  def apply(StringDictionary: /**
-    * Custom properties.
-    */
-  /* key */ StringDictionary[js.Any] = null): DefaultContext = {
+  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null): DefaultContext = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DefaultContext]

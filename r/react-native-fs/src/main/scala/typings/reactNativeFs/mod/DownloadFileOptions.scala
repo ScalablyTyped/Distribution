@@ -36,30 +36,30 @@ object DownloadFileOptions {
     fromUrl: String,
     toFile: String,
     background: js.UndefOr[Boolean] = js.undefined,
-    backgroundTimeout: Int | Double = null,
+    backgroundTimeout: js.UndefOr[Double] = js.undefined,
     begin: /* res */ DownloadBeginCallbackResult => Unit = null,
     cacheable: js.UndefOr[Boolean] = js.undefined,
-    connectionTimeout: Int | Double = null,
+    connectionTimeout: js.UndefOr[Double] = js.undefined,
     discretionary: js.UndefOr[Boolean] = js.undefined,
     headers: Headers = null,
     progress: /* res */ DownloadProgressCallbackResult => Unit = null,
-    progressDivider: Int | Double = null,
-    progressInterval: Int | Double = null,
-    readTimeout: Int | Double = null,
+    progressDivider: js.UndefOr[Double] = js.undefined,
+    progressInterval: js.UndefOr[Double] = js.undefined,
+    readTimeout: js.UndefOr[Double] = js.undefined,
     resumable: () => Unit = null
   ): DownloadFileOptions = {
     val __obj = js.Dynamic.literal(fromUrl = fromUrl.asInstanceOf[js.Any], toFile = toFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (backgroundTimeout != null) __obj.updateDynamic("backgroundTimeout")(backgroundTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundTimeout)) __obj.updateDynamic("backgroundTimeout")(backgroundTimeout.get.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
-    if (!js.isUndefined(cacheable)) __obj.updateDynamic("cacheable")(cacheable.asInstanceOf[js.Any])
-    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(discretionary)) __obj.updateDynamic("discretionary")(discretionary.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheable)) __obj.updateDynamic("cacheable")(cacheable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(discretionary)) __obj.updateDynamic("discretionary")(discretionary.get.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
-    if (progressDivider != null) __obj.updateDynamic("progressDivider")(progressDivider.asInstanceOf[js.Any])
-    if (progressInterval != null) __obj.updateDynamic("progressInterval")(progressInterval.asInstanceOf[js.Any])
-    if (readTimeout != null) __obj.updateDynamic("readTimeout")(readTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressDivider)) __obj.updateDynamic("progressDivider")(progressDivider.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressInterval)) __obj.updateDynamic("progressInterval")(progressInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(readTimeout)) __obj.updateDynamic("readTimeout")(readTimeout.get.asInstanceOf[js.Any])
     if (resumable != null) __obj.updateDynamic("resumable")(js.Any.fromFunction0(resumable))
     __obj.asInstanceOf[DownloadFileOptions]
   }

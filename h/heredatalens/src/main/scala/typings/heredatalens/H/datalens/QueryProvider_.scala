@@ -1,7 +1,5 @@
 package typings.heredatalens.H.datalens
 
-import typings.heredatalens.H.datalens.QueryProvider.Options
-import typings.heredatalens.H.datalens.Service.Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,16 +10,8 @@ import scala.scalajs.js.annotation._
   * Data can be loaded by tiles or in one chunk. This provider loads query data with the Data Lens REST API.
   * Note that this provider must be used only for non-tiled queries.
   */
-@JSGlobal("H.datalens.QueryProvider")
 @js.native
-class QueryProvider_ protected () extends Provider {
-  /**
-    * Constructor
-    * @param service - Data Lens REST API service
-    * @param options - Configures source query and data accessibility parameters
-    */
-  def this(data: Data) = this()
-  def this(data: Data, options: Options) = this()
+trait QueryProvider_ extends Provider {
   /**
     * Fetches new data from the Data Lens REST API.
     * When data is fetched, the update event is triggered so that the consuming layers are redrawn.

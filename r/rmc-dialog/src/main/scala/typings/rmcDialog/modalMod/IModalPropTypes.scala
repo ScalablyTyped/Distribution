@@ -28,7 +28,7 @@ object IModalPropTypes {
     animationType: none | fade | `slide-up` | `slide-down`,
     visible: Boolean,
     animateAppear: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
+    animationDuration: js.UndefOr[Double] = js.undefined,
     maskClosable: js.UndefOr[Boolean] = js.undefined,
     maskStyle: ViewStyle = null,
     onAnimationEnd: /* visible */ Boolean => Unit = null,
@@ -37,9 +37,9 @@ object IModalPropTypes {
     wrapStyle: ViewStyle = null
   ): IModalPropTypes = {
     val __obj = js.Dynamic.literal(animationType = animationType.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.get.asInstanceOf[js.Any])
     if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle.asInstanceOf[js.Any])
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))

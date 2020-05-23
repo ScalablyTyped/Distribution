@@ -25,8 +25,7 @@ object MentionsState {
     value: String,
     measureText: String = null
   ): MentionsState = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], isFocus = isFocus.asInstanceOf[js.Any], measureLocation = measureLocation.asInstanceOf[js.Any], measurePrefix = measurePrefix.asInstanceOf[js.Any], measuring = measuring.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (measureText != null) __obj.updateDynamic("measureText")(measureText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], isFocus = isFocus.asInstanceOf[js.Any], measureLocation = measureLocation.asInstanceOf[js.Any], measurePrefix = measurePrefix.asInstanceOf[js.Any], measuring = measuring.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], measureText = measureText.asInstanceOf[js.Any])
     __obj.asInstanceOf[MentionsState]
   }
 }

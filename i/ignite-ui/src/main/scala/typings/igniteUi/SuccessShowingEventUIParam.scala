@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait SuccessShowingEventUIParam extends js.Object {
   /**
-  	 * Populated with options for the specific field in the collection or null.
-  	 */
+    * Populated with options for the specific field in the collection or null.
+    */
   var fieldOptions: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets the text of message.
-  	 */
+    * Gets the text of message.
+    */
   var message: js.UndefOr[String] = js.undefined
   /**
-  	 * Gets reference to the igValidator widget.
-  	 */
+    * Gets reference to the igValidator widget.
+    */
   var owner: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Gets reference to the target of the message.
-  	 */
+    * Gets reference to the target of the message.
+    */
   var target: js.UndefOr[String] = js.undefined
 }
 

@@ -22,7 +22,7 @@ trait ojFilePickerSettablePropertiesLenient
 object ojFilePickerSettablePropertiesLenient {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     accept: js.Array[String] = null,
     selectOn: auto | click | drop | clickAndDrop = null,
     selectionMode: multiple | single = null

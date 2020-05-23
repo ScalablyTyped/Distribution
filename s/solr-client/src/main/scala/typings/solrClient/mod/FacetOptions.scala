@@ -24,22 +24,22 @@ object FacetOptions {
     on: Boolean,
     prefix: String,
     field: String | js.Array[String] = null,
-    limit: Int | Double = null,
+    limit: js.UndefOr[Double] = js.undefined,
     method: String = null,
-    mincout: Int | Double = null,
+    mincout: js.UndefOr[Double] = js.undefined,
     missing: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
+    offset: js.UndefOr[Double] = js.undefined,
     pivot: String | js.Array[String] = null,
     query: String = null,
     sort: String = null
   ): FacetOptions = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mincout != null) __obj.updateDynamic("mincout")(mincout.asInstanceOf[js.Any])
-    if (!js.isUndefined(missing)) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(mincout)) __obj.updateDynamic("mincout")(mincout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(missing)) __obj.updateDynamic("missing")(missing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
     if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

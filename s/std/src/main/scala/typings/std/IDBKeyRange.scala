@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,28 +28,17 @@ trait IDBKeyRange extends js.Object {
   def includes(key: js.Any): scala.Boolean
 }
 
-@JSGlobal("IDBKeyRange")
-@js.native
-object IDBKeyRange extends Instantiable0[IDBKeyRange] {
-  /**
-    * Returns a new IDBKeyRange spanning from lower to upper. If lowerOpen is true, lower is not included in the range. If upperOpen is true, upper is not included in the range.
-    */
-  def bound(lower: js.Any, upper: js.Any): IDBKeyRange = js.native
-  def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean): IDBKeyRange = js.native
-  def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean, upperOpen: scala.Boolean): IDBKeyRange = js.native
-  /**
-    * Returns a new IDBKeyRange starting at key with no upper bound. If open is true, key is not included in the range.
-    */
-  def lowerBound(lower: js.Any): IDBKeyRange = js.native
-  def lowerBound(lower: js.Any, open: scala.Boolean): IDBKeyRange = js.native
-  /**
-    * Returns a new IDBKeyRange spanning only key.
-    */
-  def only(value: js.Any): IDBKeyRange = js.native
-  /**
-    * Returns a new IDBKeyRange with no lower bound and ending at key. If open is true, key is not included in the range.
-    */
-  def upperBound(upper: js.Any): IDBKeyRange = js.native
-  def upperBound(upper: js.Any, open: scala.Boolean): IDBKeyRange = js.native
+object IDBKeyRange {
+  @scala.inline
+  def apply(
+    includes: js.Any => scala.Boolean,
+    lower: js.Any,
+    lowerOpen: scala.Boolean,
+    upper: js.Any,
+    upperOpen: scala.Boolean
+  ): IDBKeyRange = {
+    val __obj = js.Dynamic.literal(includes = js.Any.fromFunction1(includes), lower = lower.asInstanceOf[js.Any], lowerOpen = lowerOpen.asInstanceOf[js.Any], upper = upper.asInstanceOf[js.Any], upperOpen = upperOpen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDBKeyRange]
+  }
 }
 

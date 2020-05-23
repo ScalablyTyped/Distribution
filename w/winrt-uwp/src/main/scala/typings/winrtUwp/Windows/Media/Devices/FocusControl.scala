@@ -7,9 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides functionality for controlling the focus settings on a capture device. */
-@JSGlobal("Windows.Media.Devices.FocusControl")
 @js.native
-abstract class FocusControl () extends js.Object {
+trait FocusControl extends js.Object {
   /** Gets a value that specifics if the capture device supports the FocusChanged event. */
   var focusChangedSupported: Boolean = js.native
   /** Gets a MediaCaptureFocusState value indicating the current focus state of the capture device. */

@@ -11,9 +11,9 @@ trait Result extends js.Object {
 
 object Result {
   @scala.inline
-  def apply(level: Int | Double = null, reason: String = null): Result = {
+  def apply(level: js.UndefOr[Double] = js.undefined, reason: String = null): Result = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }

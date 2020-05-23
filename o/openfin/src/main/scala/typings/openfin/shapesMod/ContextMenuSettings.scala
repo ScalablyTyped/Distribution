@@ -18,8 +18,8 @@ object ContextMenuSettings {
     reload: js.UndefOr[Boolean] = js.undefined
   ): ContextMenuSettings = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any])
-    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools.asInstanceOf[js.Any])
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
+    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuSettings]
   }
 }

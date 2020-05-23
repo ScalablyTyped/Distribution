@@ -27,7 +27,7 @@ trait SlicerData extends js.Object {
   var height: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the unique id of slicer. Read-only.
+    * Represents the unique id of slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -56,7 +56,7 @@ trait SlicerData extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     *
-    * Represents the collection of SlicerItems that are part of the slicer. Read-only.
+    * Represents the collection of SlicerItems that are part of the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -93,7 +93,7 @@ trait SlicerData extends js.Object {
   var width: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the worksheet containing the slicer. Read-only.
+    * Represents the worksheet containing the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
@@ -104,30 +104,30 @@ object SlicerData {
   @scala.inline
   def apply(
     caption: String = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     id: String = null,
     isFilterCleared: js.UndefOr[Boolean] = js.undefined,
-    left: Int | Double = null,
+    left: js.UndefOr[Double] = js.undefined,
     name: String = null,
     slicerItems: js.Array[SlicerItemData] = null,
     sortBy: SlicerSortType | DataSourceOrder | Ascending | Descending = null,
     style: String = null,
-    top: Int | Double = null,
-    width: Int | Double = null,
+    top: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
     worksheet: WorksheetData = null
   ): SlicerData = {
     val __obj = js.Dynamic.literal()
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFilterCleared)) __obj.updateDynamic("isFilterCleared")(isFilterCleared.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFilterCleared)) __obj.updateDynamic("isFilterCleared")(isFilterCleared.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (slicerItems != null) __obj.updateDynamic("slicerItems")(slicerItems.asInstanceOf[js.Any])
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlicerData]
   }

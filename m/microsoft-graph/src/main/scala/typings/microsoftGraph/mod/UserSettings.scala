@@ -17,8 +17,8 @@ object UserSettings {
     id: String = null
   ): UserSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contributionToContentDiscoveryAsOrganizationDisabled)) __obj.updateDynamic("contributionToContentDiscoveryAsOrganizationDisabled")(contributionToContentDiscoveryAsOrganizationDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(contributionToContentDiscoveryDisabled)) __obj.updateDynamic("contributionToContentDiscoveryDisabled")(contributionToContentDiscoveryDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(contributionToContentDiscoveryAsOrganizationDisabled)) __obj.updateDynamic("contributionToContentDiscoveryAsOrganizationDisabled")(contributionToContentDiscoveryAsOrganizationDisabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(contributionToContentDiscoveryDisabled)) __obj.updateDynamic("contributionToContentDiscoveryDisabled")(contributionToContentDiscoveryDisabled.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserSettings]
   }

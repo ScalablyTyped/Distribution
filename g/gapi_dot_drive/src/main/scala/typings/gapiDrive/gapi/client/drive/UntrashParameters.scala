@@ -13,7 +13,7 @@ object UntrashParameters {
   @scala.inline
   def apply(fileId: String, supportsTeamDrives: js.UndefOr[Boolean] = js.undefined): UntrashParameters = {
     val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntrashParameters]
   }
 }

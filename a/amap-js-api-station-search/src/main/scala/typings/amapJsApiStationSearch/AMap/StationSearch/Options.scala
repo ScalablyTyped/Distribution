@@ -25,11 +25,15 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(city: String = null, pageIndex: Int | Double = null, pageSize: Int | Double = null): Options = {
+  def apply(
+    city: String = null,
+    pageIndex: js.UndefOr[Double] = js.undefined,
+    pageSize: js.UndefOr[Double] = js.undefined
+  ): Options = {
     val __obj = js.Dynamic.literal()
     if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageIndex)) __obj.updateDynamic("pageIndex")(pageIndex.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

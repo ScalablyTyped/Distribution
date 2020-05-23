@@ -36,7 +36,7 @@ object mod extends js.Object {
     def this(loader: Loader) = this()
   }
   
-  def configure(frameworkConfig: AnonContainer): Unit = js.native
+  def configure(frameworkConfig: typings.aureliaKnockout.anon.Container): Unit = js.native
   /* static members */
   @js.native
   object KnockoutCustomAttribute extends js.Object {

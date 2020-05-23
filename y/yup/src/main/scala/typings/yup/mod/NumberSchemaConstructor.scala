@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NumberSchemaConstructor
   extends AnySchemaConstructor
-     with Instantiable0[NumberSchema[Double]] {
-  def apply(): NumberSchema[Double] = js.native
+     with Instantiable0[NumberSchema[js.UndefOr[Double]]] {
+  def apply(): NumberSchema[js.UndefOr[Double]] = js.native
 }
 

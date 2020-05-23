@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,17 +24,6 @@ object ChartGradientStyleType extends js.Object {
   
   @js.native
   sealed trait percent extends ChartGradientStyleType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartGradientStyleType with String] = js.native
-  /* "ExtremeValue" */ @js.native
-  object extremeValue extends TopLevel[extremeValue with String]
-  
-  /* "Number" */ @js.native
-  object number extends TopLevel[number with String]
-  
-  /* "Percent" */ @js.native
-  object percent extends TopLevel[percent with String]
   
 }
 

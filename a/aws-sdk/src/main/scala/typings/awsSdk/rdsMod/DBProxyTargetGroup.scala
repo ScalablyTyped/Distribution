@@ -46,7 +46,7 @@ object DBProxyTargetGroup {
     ConnectionPoolConfig: ConnectionPoolConfigurationInfo = null,
     CreatedDate: TStamp = null,
     DBProxyName: String = null,
-    IsDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    IsDefault: js.UndefOr[Boolean] = js.undefined,
     Status: String = null,
     TargetGroupArn: String = null,
     TargetGroupName: String = null,
@@ -56,7 +56,7 @@ object DBProxyTargetGroup {
     if (ConnectionPoolConfig != null) __obj.updateDynamic("ConnectionPoolConfig")(ConnectionPoolConfig.asInstanceOf[js.Any])
     if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
     if (DBProxyName != null) __obj.updateDynamic("DBProxyName")(DBProxyName.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (TargetGroupArn != null) __obj.updateDynamic("TargetGroupArn")(TargetGroupArn.asInstanceOf[js.Any])
     if (TargetGroupName != null) __obj.updateDynamic("TargetGroupName")(TargetGroupName.asInstanceOf[js.Any])

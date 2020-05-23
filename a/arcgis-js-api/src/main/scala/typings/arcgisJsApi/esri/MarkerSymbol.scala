@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`picture-marker`
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-marker`
 import scala.scalajs.js
@@ -42,8 +41,4 @@ trait MarkerSymbol extends Symbol {
     */
   var yoffset: Double = js.native
 }
-
-@JSGlobal("__esri.MarkerSymbol")
-@js.native
-object MarkerSymbol extends TopLevel[MarkerSymbolConstructor]
 

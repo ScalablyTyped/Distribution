@@ -1,9 +1,9 @@
 package typings.instagramPrivateApi.mediaConfigureSidecarOptionsMod
 
-import typings.instagramPrivateApi.AnonAndroidversion
-import typings.instagramPrivateApi.AnonCropcenter
-import typings.instagramPrivateApi.AnonLength
-import typings.instagramPrivateApi.AnonSourceheight
+import typings.instagramPrivateApi.anon.Androidversion
+import typings.instagramPrivateApi.anon.Cropcenter
+import typings.instagramPrivateApi.anon.Length
+import typings.instagramPrivateApi.anon.Sourceheight
 import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait MediaConfigureSidecarVideoItem extends MediaConfigureSidecarItem {
   var audio_muted: js.UndefOr[String] = js.undefined
-  var clips: js.UndefOr[js.Array[AnonLength] | String] = js.undefined
+  var clips: js.UndefOr[js.Array[Length] | String] = js.undefined
   var date_time_original: js.UndefOr[String] = js.undefined
   var filter_type: js.UndefOr[String] = js.undefined
   var length: String
@@ -27,12 +27,11 @@ object MediaConfigureSidecarVideoItem {
     upload_id: String,
     width: Double,
     audio_muted: String = null,
-    caption: js.UndefOr[scala.Nothing] = js.undefined,
-    clips: js.Array[AnonLength] | String = null,
+    clips: js.Array[Length] | String = null,
     date_time_original: String = null,
-    device: AnonAndroidversion | String = null,
-    edits: AnonCropcenter | String = null,
-    extra: AnonSourceheight | String = null,
+    device: Androidversion | String = null,
+    edits: Cropcenter | String = null,
+    extra: Sourceheight | String = null,
     filter_type: String = null,
     poster_frame_index: String = null,
     source_type: String = null,
@@ -42,7 +41,6 @@ object MediaConfigureSidecarVideoItem {
   ): MediaConfigureSidecarVideoItem = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (audio_muted != null) __obj.updateDynamic("audio_muted")(audio_muted.asInstanceOf[js.Any])
-    if (!js.isUndefined(caption)) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (clips != null) __obj.updateDynamic("clips")(clips.asInstanceOf[js.Any])
     if (date_time_original != null) __obj.updateDynamic("date_time_original")(date_time_original.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])

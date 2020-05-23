@@ -103,50 +103,50 @@ object ColorAxisScrollbarOptions {
   def apply(
     barBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
     barBorderColor: ColorString | GradientColorObject | PatternObject = null,
-    barBorderRadius: Int | Double = null,
-    barBorderWidth: Int | Double = null,
+    barBorderRadius: js.UndefOr[Double] = js.undefined,
+    barBorderWidth: js.UndefOr[Double] = js.undefined,
     buttonArrowColor: ColorString | GradientColorObject | PatternObject = null,
     buttonBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
     buttonBorderColor: ColorString | GradientColorObject | PatternObject = null,
-    buttonBorderRadius: Int | Double = null,
-    buttonBorderWidth: Int | Double = null,
+    buttonBorderRadius: js.UndefOr[Double] = js.undefined,
+    buttonBorderWidth: js.UndefOr[Double] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     liveRedraw: js.UndefOr[Boolean] = js.undefined,
-    margin: Int | Double = null,
-    minWidth: Int | Double = null,
+    margin: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     rifleColor: ColorString | GradientColorObject | PatternObject = null,
     showFull: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
+    step: js.UndefOr[Double] = js.undefined,
     trackBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
     trackBorderColor: ColorString | GradientColorObject | PatternObject = null,
-    trackBorderRadius: Int | Double = null,
-    trackBorderWidth: Int | Double = null,
-    zIndex: Int | Double = null
+    trackBorderRadius: js.UndefOr[Double] = js.undefined,
+    trackBorderWidth: js.UndefOr[Double] = js.undefined,
+    zIndex: js.UndefOr[Double] = js.undefined
   ): ColorAxisScrollbarOptions = {
     val __obj = js.Dynamic.literal()
     if (barBackgroundColor != null) __obj.updateDynamic("barBackgroundColor")(barBackgroundColor.asInstanceOf[js.Any])
     if (barBorderColor != null) __obj.updateDynamic("barBorderColor")(barBorderColor.asInstanceOf[js.Any])
-    if (barBorderRadius != null) __obj.updateDynamic("barBorderRadius")(barBorderRadius.asInstanceOf[js.Any])
-    if (barBorderWidth != null) __obj.updateDynamic("barBorderWidth")(barBorderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(barBorderRadius)) __obj.updateDynamic("barBorderRadius")(barBorderRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(barBorderWidth)) __obj.updateDynamic("barBorderWidth")(barBorderWidth.get.asInstanceOf[js.Any])
     if (buttonArrowColor != null) __obj.updateDynamic("buttonArrowColor")(buttonArrowColor.asInstanceOf[js.Any])
     if (buttonBackgroundColor != null) __obj.updateDynamic("buttonBackgroundColor")(buttonBackgroundColor.asInstanceOf[js.Any])
     if (buttonBorderColor != null) __obj.updateDynamic("buttonBorderColor")(buttonBorderColor.asInstanceOf[js.Any])
-    if (buttonBorderRadius != null) __obj.updateDynamic("buttonBorderRadius")(buttonBorderRadius.asInstanceOf[js.Any])
-    if (buttonBorderWidth != null) __obj.updateDynamic("buttonBorderWidth")(buttonBorderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveRedraw)) __obj.updateDynamic("liveRedraw")(liveRedraw.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonBorderRadius)) __obj.updateDynamic("buttonBorderRadius")(buttonBorderRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonBorderWidth)) __obj.updateDynamic("buttonBorderWidth")(buttonBorderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveRedraw)) __obj.updateDynamic("liveRedraw")(liveRedraw.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (rifleColor != null) __obj.updateDynamic("rifleColor")(rifleColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFull)) __obj.updateDynamic("showFull")(showFull.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFull)) __obj.updateDynamic("showFull")(showFull.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     if (trackBackgroundColor != null) __obj.updateDynamic("trackBackgroundColor")(trackBackgroundColor.asInstanceOf[js.Any])
     if (trackBorderColor != null) __obj.updateDynamic("trackBorderColor")(trackBorderColor.asInstanceOf[js.Any])
-    if (trackBorderRadius != null) __obj.updateDynamic("trackBorderRadius")(trackBorderRadius.asInstanceOf[js.Any])
-    if (trackBorderWidth != null) __obj.updateDynamic("trackBorderWidth")(trackBorderWidth.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackBorderRadius)) __obj.updateDynamic("trackBorderRadius")(trackBorderRadius.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackBorderWidth)) __obj.updateDynamic("trackBorderWidth")(trackBorderWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorAxisScrollbarOptions]
   }
 }

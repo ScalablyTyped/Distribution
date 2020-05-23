@@ -1,8 +1,8 @@
 package typings.reactNativeChartsWrapper.mod
 
-import typings.reactNativeChartsWrapper.AnonEnabled
-import typings.reactNativeChartsWrapper.AnonLabel
-import typings.reactNativeChartsWrapper.AnonLineLength
+import typings.reactNativeChartsWrapper.anon.Enabled
+import typings.reactNativeChartsWrapper.anon.Label
+import typings.reactNativeChartsWrapper.anon.LineLength
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.DAYS
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.HOURS
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_CHART
@@ -21,16 +21,16 @@ trait yAxis extends Axis {
   var position: js.UndefOr[OUTSIDE_CHART | INSIDE_CHART] = js.undefined
   var spaceBottom: js.UndefOr[Double] = js.undefined
   var spaceTop: js.UndefOr[Double] = js.undefined
-  var zeroLine: js.UndefOr[AnonEnabled] = js.undefined
+  var zeroLine: js.UndefOr[Enabled] = js.undefined
 }
 
 object yAxis {
   @scala.inline
   def apply(
-    axisLineColor: Int | Double = null,
-    axisLineWidth: Int | Double = null,
-    axisMaximum: Int | Double = null,
-    axisMinimum: Int | Double = null,
+    axisLineColor: js.UndefOr[Color] = js.undefined,
+    axisLineWidth: js.UndefOr[Double] = js.undefined,
+    axisMaximum: js.UndefOr[Double] = js.undefined,
+    axisMinimum: js.UndefOr[Double] = js.undefined,
     centerAxisLabels: js.UndefOr[Boolean] = js.undefined,
     drawAxisLines: js.UndefOr[Boolean] = js.undefined,
     drawGridLines: js.UndefOr[Boolean] = js.undefined,
@@ -39,60 +39,60 @@ object yAxis {
     enabled: js.UndefOr[Boolean] = js.undefined,
     fontFamily: String = null,
     fontStyle: String = null,
-    fontWeight: Int | Double = null,
-    granularity: Int | Double = null,
+    fontWeight: js.UndefOr[Double] = js.undefined,
+    granularity: js.UndefOr[Double] = js.undefined,
     granularityEnabled: js.UndefOr[Boolean] = js.undefined,
-    gridColor: Int | Double = null,
-    gridDashedLine: AnonLineLength = null,
-    gridLineWidth: Int | Double = null,
+    gridColor: js.UndefOr[Color] = js.undefined,
+    gridDashedLine: LineLength = null,
+    gridLineWidth: js.UndefOr[Double] = js.undefined,
     inverted: js.UndefOr[Boolean] = js.undefined,
-    labelCount: Int | Double = null,
+    labelCount: js.UndefOr[Double] = js.undefined,
     labelCountForce: js.UndefOr[Boolean] = js.undefined,
-    limitLines: js.Array[AnonLabel] = null,
-    maxWidth: Int | Double = null,
-    minWidth: Int | Double = null,
+    limitLines: js.Array[Label] = null,
+    maxWidth: js.UndefOr[Double] = js.undefined,
+    minWidth: js.UndefOr[Double] = js.undefined,
     position: OUTSIDE_CHART | INSIDE_CHART = null,
-    since: Int | Double = null,
-    spaceBottom: Int | Double = null,
-    spaceTop: Int | Double = null,
-    textColor: Int | Double = null,
-    textSize: Int | Double = null,
+    since: js.UndefOr[Double] = js.undefined,
+    spaceBottom: js.UndefOr[Double] = js.undefined,
+    spaceTop: js.UndefOr[Double] = js.undefined,
+    textColor: js.UndefOr[Color] = js.undefined,
+    textSize: js.UndefOr[Double] = js.undefined,
     timeUnit: MILLISECONDS | SECONDS | MINUTES | HOURS | DAYS = null,
     valueFormatter: ValueFormatter = null,
     valueFormatterPattern: String = null,
-    zeroLine: AnonEnabled = null
+    zeroLine: Enabled = null
   ): yAxis = {
     val __obj = js.Dynamic.literal()
-    if (axisLineColor != null) __obj.updateDynamic("axisLineColor")(axisLineColor.asInstanceOf[js.Any])
-    if (axisLineWidth != null) __obj.updateDynamic("axisLineWidth")(axisLineWidth.asInstanceOf[js.Any])
-    if (axisMaximum != null) __obj.updateDynamic("axisMaximum")(axisMaximum.asInstanceOf[js.Any])
-    if (axisMinimum != null) __obj.updateDynamic("axisMinimum")(axisMinimum.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerAxisLabels)) __obj.updateDynamic("centerAxisLabels")(centerAxisLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawAxisLines)) __obj.updateDynamic("drawAxisLines")(drawAxisLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawGridLines)) __obj.updateDynamic("drawGridLines")(drawGridLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawLabels)) __obj.updateDynamic("drawLabels")(drawLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawLimitLinesBehindData)) __obj.updateDynamic("drawLimitLinesBehindData")(drawLimitLinesBehindData.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisLineColor)) __obj.updateDynamic("axisLineColor")(axisLineColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisLineWidth)) __obj.updateDynamic("axisLineWidth")(axisLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisMaximum)) __obj.updateDynamic("axisMaximum")(axisMaximum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisMinimum)) __obj.updateDynamic("axisMinimum")(axisMinimum.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerAxisLabels)) __obj.updateDynamic("centerAxisLabels")(centerAxisLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawAxisLines)) __obj.updateDynamic("drawAxisLines")(drawAxisLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawGridLines)) __obj.updateDynamic("drawGridLines")(drawGridLines.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawLabels)) __obj.updateDynamic("drawLabels")(drawLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawLimitLinesBehindData)) __obj.updateDynamic("drawLimitLinesBehindData")(drawLimitLinesBehindData.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
-    if (!js.isUndefined(granularityEnabled)) __obj.updateDynamic("granularityEnabled")(granularityEnabled.asInstanceOf[js.Any])
-    if (gridColor != null) __obj.updateDynamic("gridColor")(gridColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontWeight)) __obj.updateDynamic("fontWeight")(fontWeight.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(granularity)) __obj.updateDynamic("granularity")(granularity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(granularityEnabled)) __obj.updateDynamic("granularityEnabled")(granularityEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridColor)) __obj.updateDynamic("gridColor")(gridColor.get.asInstanceOf[js.Any])
     if (gridDashedLine != null) __obj.updateDynamic("gridDashedLine")(gridDashedLine.asInstanceOf[js.Any])
-    if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (labelCount != null) __obj.updateDynamic("labelCount")(labelCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelCountForce)) __obj.updateDynamic("labelCountForce")(labelCountForce.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridLineWidth)) __obj.updateDynamic("gridLineWidth")(gridLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelCount)) __obj.updateDynamic("labelCount")(labelCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelCountForce)) __obj.updateDynamic("labelCountForce")(labelCountForce.get.asInstanceOf[js.Any])
     if (limitLines != null) __obj.updateDynamic("limitLines")(limitLines.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
-    if (spaceBottom != null) __obj.updateDynamic("spaceBottom")(spaceBottom.asInstanceOf[js.Any])
-    if (spaceTop != null) __obj.updateDynamic("spaceTop")(spaceTop.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(since)) __obj.updateDynamic("since")(since.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaceBottom)) __obj.updateDynamic("spaceBottom")(spaceBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaceTop)) __obj.updateDynamic("spaceTop")(spaceTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textColor)) __obj.updateDynamic("textColor")(textColor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(textSize)) __obj.updateDynamic("textSize")(textSize.get.asInstanceOf[js.Any])
     if (timeUnit != null) __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
     if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(valueFormatter.asInstanceOf[js.Any])
     if (valueFormatterPattern != null) __obj.updateDynamic("valueFormatterPattern")(valueFormatterPattern.asInstanceOf[js.Any])

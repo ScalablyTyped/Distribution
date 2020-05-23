@@ -1,6 +1,6 @@
 package typings.hapiHapi.mod
 
-import typings.hapiHapi.AnonPayload
+import typings.hapiHapi.anon.Payload
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait ServerAuthSchemeObject extends js.Object {
     * An object with the following keys:
     * * payload
     */
-  var options: js.UndefOr[AnonPayload] = js.undefined
+  var options: js.UndefOr[Payload] = js.undefined
   /**
     * A lifecycle method to authenticate the request payload.
     * When the scheme payload() method returns an error with a message, it means payload validation failed due to bad
@@ -58,7 +58,7 @@ object ServerAuthSchemeObject {
   def apply(
     authenticate: (Request, ResponseToolkit) => ReturnValue,
     api: ServerAuthSchemeObjectApi = null,
-    options: AnonPayload = null,
+    options: Payload = null,
     payload: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue = null,
     response: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue = null,
     verify: /* auth */ RequestAuth => js.Promise[Unit] = null

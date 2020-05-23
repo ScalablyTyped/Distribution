@@ -21,18 +21,18 @@ trait IShimmerStyles extends js.Object {
 object IShimmerStyles {
   @scala.inline
   def apply(
-    dataWrapper: IStyle = null,
-    root: IStyle = null,
-    screenReaderText: IStyle = null,
-    shimmerGradient: IStyle = null,
-    shimmerWrapper: IStyle = null
+    dataWrapper: js.UndefOr[Null | IStyle] = js.undefined,
+    root: js.UndefOr[Null | IStyle] = js.undefined,
+    screenReaderText: js.UndefOr[Null | IStyle] = js.undefined,
+    shimmerGradient: js.UndefOr[Null | IStyle] = js.undefined,
+    shimmerWrapper: js.UndefOr[Null | IStyle] = js.undefined
   ): IShimmerStyles = {
     val __obj = js.Dynamic.literal()
-    if (dataWrapper != null) __obj.updateDynamic("dataWrapper")(dataWrapper.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (screenReaderText != null) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
-    if (shimmerGradient != null) __obj.updateDynamic("shimmerGradient")(shimmerGradient.asInstanceOf[js.Any])
-    if (shimmerWrapper != null) __obj.updateDynamic("shimmerWrapper")(shimmerWrapper.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataWrapper)) __obj.updateDynamic("dataWrapper")(dataWrapper.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenReaderText)) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
+    if (!js.isUndefined(shimmerGradient)) __obj.updateDynamic("shimmerGradient")(shimmerGradient.asInstanceOf[js.Any])
+    if (!js.isUndefined(shimmerWrapper)) __obj.updateDynamic("shimmerWrapper")(shimmerWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerStyles]
   }
 }

@@ -1,6 +1,6 @@
 package typings.luminoAlgorithm.arrayMod.ArrayExt
 
-import typings.luminoAlgorithm.AnonIndex
+import typings.luminoAlgorithm.anon.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +46,13 @@ object removeFirstWhere extends js.Object {
     * ArrayExt.removeFirstWhere(data, isEven, 4);  // { index: -1, value: undefined }
     * ```
     */
-  def apply[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): AnonIndex[T] = js.native
-  def apply[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): AnonIndex[T] = js.native
+  def apply[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
+  def apply[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
   def apply[T](
     array: js.Array[T],
     fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
     start: Double,
     stop: Double
-  ): AnonIndex[T] = js.native
+  ): Index[T] = js.native
 }
 

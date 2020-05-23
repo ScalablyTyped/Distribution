@@ -1,10 +1,10 @@
 package typings.croppie.mod
 
-import typings.croppie.AnonOrientation
-import typings.croppie.ResultOptionstypebase64ca
-import typings.croppie.ResultOptionstypeblob
-import typings.croppie.ResultOptionstypehtml
-import typings.croppie.ResultOptionstyperawcanva
+import typings.croppie.anon.Orientation
+import typings.croppie.anon.ResultOptionstypebase64ca
+import typings.croppie.anon.ResultOptionstypeblob
+import typings.croppie.anon.ResultOptionstypehtml
+import typings.croppie.anon.ResultOptionstyperawcanva
 import typings.croppie.croppieNumbers.`-180`
 import typings.croppie.croppieNumbers.`-270`
 import typings.croppie.croppieNumbers.`-90`
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Croppie extends js.Object {
-  def bind(options: AnonOrientation): js.Promise[Unit] = js.native
+  def bind(options: Orientation): js.Promise[Unit] = js.native
   def destroy(): Unit = js.native
   def get(): CropData = js.native
   def result(): js.Promise[HTMLCanvasElement] = js.native

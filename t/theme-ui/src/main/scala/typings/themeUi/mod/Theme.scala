@@ -16,8 +16,8 @@ import typings.csstype.mod.StandardProperties
 import typings.csstype.mod.WidthProperty
 import typings.csstype.mod.ZIndexProperty
 import typings.styledSystem.mod.TLengthStyledSystem
-import typings.themeUi.ColorModemodeskstringColo
-import typings.themeUi.PinStyledTagsSystemStyleO
+import typings.themeUi.anon.ColorModemodeskstringColo
+import typings.themeUi.anon.PinStyledTagsSystemStyleO
 import typings.themeUi.themeUiNumbers.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -147,7 +147,7 @@ object Theme {
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomProperties)) __obj.updateDynamic("useCustomProperties")(useCustomProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomProperties)) __obj.updateDynamic("useCustomProperties")(useCustomProperties.get.asInstanceOf[js.Any])
     if (zIndices != null) __obj.updateDynamic("zIndices")(zIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }

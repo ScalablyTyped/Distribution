@@ -1,15 +1,16 @@
 package typings.next.utilsMod
 
-import typings.next.AnonMaxAge
+import typings.next.anon.MaxAge
 import typings.next.nextStrings.close
 import typings.next.nextStrings.drain
 import typings.next.nextStrings.error
 import typings.next.nextStrings.finish
 import typings.next.nextStrings.pipe
 import typings.next.nextStrings.unpipe
-import typings.node.AnonChunk
-import typings.node.AnonEnd
+import typings.node.BufferEncoding
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.Chunk
+import typings.node.anon.End
 import typings.node.eventsMod.EventEmitterOptions
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation._
 trait NextApiResponse[T] extends js.Object {
   var _writev: js.UndefOr[
     js.Function2[
-      /* chunks */ js.Array[AnonChunk], 
+      /* chunks */ js.Array[Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
@@ -71,7 +72,7 @@ trait NextApiResponse[T] extends js.Object {
   def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _write(
     chunk: js.Any,
-    encoding: String,
+    encoding: BufferEncoding,
     callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
   ): Unit = js.native
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -124,14 +125,14 @@ trait NextApiResponse[T] extends js.Object {
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any): Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
-  def end(chunk: js.Any, encoding: String): Unit = js.native
-  def end(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
+  def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   def end(data: String): Unit = js.native
   def end(data: String, cb: js.Function0[Unit]): Unit = js.native
   def end(data: Uint8Array): Unit = js.native
   def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
-  def end(str: String, encoding: String): Unit = js.native
-  def end(str: String, encoding: String, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: BufferEncoding): Unit = js.native
+  def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   def eventNames(): js.Array[String | js.Symbol] = js.native
   def flushHeaders(): Unit = js.native
   def getHeader(name: String): js.UndefOr[Double | String | js.Array[String]] = js.native
@@ -174,7 +175,7 @@ trait NextApiResponse[T] extends js.Object {
   @JSName("once")
   def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -223,18 +224,18 @@ trait NextApiResponse[T] extends js.Object {
   def removeListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
-  def setDefaultEncoding(encoding: String): this.type = js.native
+  def setDefaultEncoding(encoding: BufferEncoding): this.type = js.native
   def setHeader(name: String, value: String): Unit = js.native
   def setHeader(name: String, value: js.Array[String]): Unit = js.native
   def setHeader(name: String, value: Double): Unit = js.native
   def setMaxListeners(n: Double): this.type = js.native
   def setPreviewData(data: String): NextApiResponse[T] = js.native
-  def setPreviewData(data: String, options: AnonMaxAge): NextApiResponse[T] = js.native
+  def setPreviewData(data: String, options: MaxAge): NextApiResponse[T] = js.native
   /**
     * Set preview data for Next.js' prerender mode
     */
   def setPreviewData(data: js.Object): NextApiResponse[T] = js.native
-  def setPreviewData(data: js.Object, options: AnonMaxAge): NextApiResponse[T] = js.native
+  def setPreviewData(data: js.Object, options: MaxAge): NextApiResponse[T] = js.native
   def setTimeout(msecs: Double): this.type = js.native
   def setTimeout(msecs: Double, callback: js.Function0[Unit]): this.type = js.native
   def status(statusCode: Double): NextApiResponse[T] = js.native
@@ -245,10 +246,14 @@ trait NextApiResponse[T] extends js.Object {
   def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(chunk: js.Any): Boolean = js.native
   def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-  def write(chunk: js.Any, encoding: String): Boolean = js.native
-  def write(chunk: js.Any, encoding: String, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-  def write(str: String, encoding: String): Boolean = js.native
-  def write(str: String, encoding: String, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
+  def write(
+    chunk: js.Any,
+    encoding: BufferEncoding,
+    cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
+  def write(str: String, encoding: BufferEncoding): Boolean = js.native
+  def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   // https://github.com/nodejs/node/blob/master/test/parallel/test-http-write-callbacks.js#L53
   // no args in writeContinue callback
   def writeContinue(): Unit = js.native

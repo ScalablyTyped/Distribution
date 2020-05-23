@@ -26,7 +26,7 @@ object Response {
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (outputSpeech != null) __obj.updateDynamic("outputSpeech")(outputSpeech.asInstanceOf[js.Any])
     if (reprompt != null) __obj.updateDynamic("reprompt")(reprompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldEndSession)) __obj.updateDynamic("shouldEndSession")(shouldEndSession.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldEndSession)) __obj.updateDynamic("shouldEndSession")(shouldEndSession.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

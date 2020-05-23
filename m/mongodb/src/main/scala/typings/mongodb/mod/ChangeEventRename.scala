@@ -1,8 +1,8 @@
 package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mongodb.AnonColl
-import typings.mongodb.AnonUid
+import typings.mongodb.anon.Coll
+import typings.mongodb.anon.Uid
 import typings.mongodb.mongodbStrings.rename
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,23 +12,23 @@ trait ChangeEventRename[TSchema /* <: StringDictionary[js.Any] */]
   extends ChangeEventBase[TSchema]
      with ChangeEvent[TSchema] {
   var operationType: rename
-  var to: AnonColl
+  var to: Coll
 }
 
 object ChangeEventRename {
   @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](
+  def apply[TSchema](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
-    ns: AnonColl,
+    ns: Coll,
     operationType: rename,
-    to: AnonColl,
-    lsid: AnonUid = null,
-    txnNumber: Int | scala.Double = null
+    to: Coll,
+    lsid: Uid = null,
+    txnNumber: js.UndefOr[scala.Double] = js.undefined
   ): ChangeEventRename[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (lsid != null) __obj.updateDynamic("lsid")(lsid.asInstanceOf[js.Any])
-    if (txnNumber != null) __obj.updateDynamic("txnNumber")(txnNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(txnNumber)) __obj.updateDynamic("txnNumber")(txnNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEventRename[TSchema]]
   }
 }

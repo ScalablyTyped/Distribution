@@ -1,7 +1,7 @@
 package typings.styletronReact.mod
 
-import typings.react.mod._Global_.JSX.Element
-import typings.styletronReact.AnonChildren
+import typings.react.mod.global.JSX.Element
+import typings.styletronReact.anon.Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("styletron-react", "DevConsumer")
 @js.native
 object DevConsumer extends js.Object {
-  def apply(props: AnonChildren): Element = js.native
+  def apply(props: Children): Element = js.native
 }
 

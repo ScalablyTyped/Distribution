@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,11 @@ trait BarProp extends js.Object {
   val visible: scala.Boolean
 }
 
-@JSGlobal("BarProp")
-@js.native
-object BarProp extends Instantiable0[BarProp]
+object BarProp {
+  @scala.inline
+  def apply(visible: scala.Boolean): BarProp = {
+    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BarProp]
+  }
+}
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object downloadVoice extends js.Object {
   /**
-  	 * 下载语音接口
-  	 */
+    * 下载语音接口
+    */
   def apply(params: IupdownloadVoice): Unit = js.native
 }
 

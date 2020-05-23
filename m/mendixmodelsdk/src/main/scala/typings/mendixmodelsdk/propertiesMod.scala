@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk
 
 import org.scalablytyped.runtime.Instantiable2
+import typings.mendixmodelsdk.anon.ToRawChangeValue
 import typings.mendixmodelsdk.elementsMod.AbstractElement
 import typings.mendixmodelsdk.elementsMod.Element
 import typings.mendixmodelsdk.elementsMod.IAbstractElement
@@ -164,11 +165,11 @@ object propertiesMod extends js.Object {
   def instantiateChildElement(parent: AbstractElement, value: IAbstractElementJson): Element | Null = js.native
   def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = js.native
   def sendListChangeDeltas[T, P](
-    property: (typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with AnonToRawChangeValue[P],
+    property: (typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with ToRawChangeValue[P],
     change: IArrayWillChange[P]
   ): Unit = js.native
   def sendListChangeDeltas[T, P](
-    property: (typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with AnonToRawChangeValue[P],
+    property: (typings.mendixmodelsdk.abstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with ToRawChangeValue[P],
     change: IArrayWillSplice[P]
   ): Unit = js.native
   @js.native

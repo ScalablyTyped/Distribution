@@ -1,14 +1,12 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A message received by a target object. */
 @js.native
-trait MessageEvent extends Event_ {
+trait MessageEvent extends Event {
   /**
     * Returns the data of the message.
     */
@@ -30,10 +28,4 @@ trait MessageEvent extends Event_ {
     */
   val source: MessageEventSource | Null = js.native
 }
-
-@JSGlobal("MessageEvent")
-@js.native
-object MessageEvent
-  extends Instantiable1[/* type */ java.lang.String, MessageEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ MessageEventInit, MessageEvent]
 

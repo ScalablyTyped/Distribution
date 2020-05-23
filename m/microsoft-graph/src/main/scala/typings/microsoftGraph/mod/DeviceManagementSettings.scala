@@ -16,14 +16,14 @@ trait DeviceManagementSettings extends js.Object {
 object DeviceManagementSettings {
   @scala.inline
   def apply(
-    deviceComplianceCheckinThresholdDays: Int | Double = null,
+    deviceComplianceCheckinThresholdDays: js.UndefOr[Double] = js.undefined,
     isScheduledActionEnabled: js.UndefOr[Boolean] = js.undefined,
     secureByDefault: js.UndefOr[Boolean] = js.undefined
   ): DeviceManagementSettings = {
     val __obj = js.Dynamic.literal()
-    if (deviceComplianceCheckinThresholdDays != null) __obj.updateDynamic("deviceComplianceCheckinThresholdDays")(deviceComplianceCheckinThresholdDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScheduledActionEnabled)) __obj.updateDynamic("isScheduledActionEnabled")(isScheduledActionEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureByDefault)) __obj.updateDynamic("secureByDefault")(secureByDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceComplianceCheckinThresholdDays)) __obj.updateDynamic("deviceComplianceCheckinThresholdDays")(deviceComplianceCheckinThresholdDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScheduledActionEnabled)) __obj.updateDynamic("isScheduledActionEnabled")(isScheduledActionEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(secureByDefault)) __obj.updateDynamic("secureByDefault")(secureByDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceManagementSettings]
   }
 }

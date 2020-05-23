@@ -20,20 +20,20 @@ object CommentsOptions {
   def apply(
     attach: String = null,
     autoPublish: NumericBoolean = null,
-    height: Int | Double = null,
-    limit: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
+    limit: js.UndefOr[Double] = js.undefined,
     norealtime: NumericBoolean = null,
     pageUrl: String = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): CommentsOptions = {
     val __obj = js.Dynamic.literal()
     if (attach != null) __obj.updateDynamic("attach")(attach.asInstanceOf[js.Any])
     if (autoPublish != null) __obj.updateDynamic("autoPublish")(autoPublish.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (norealtime != null) __obj.updateDynamic("norealtime")(norealtime.asInstanceOf[js.Any])
     if (pageUrl != null) __obj.updateDynamic("pageUrl")(pageUrl.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentsOptions]
   }
 }

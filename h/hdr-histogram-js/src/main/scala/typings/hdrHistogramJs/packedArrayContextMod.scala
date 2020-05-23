@@ -1,6 +1,5 @@
 package typings.hdrHistogramJs
 
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`16`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,6 +100,6 @@ object packedArrayContextMod extends js.Object {
     def setVirtualLength(virtualLength: Double): Unit = js.native
   }
   
-  val MINIMUM_INITIAL_PACKED_ARRAY_CAPACITY: `16` = js.native
+  val MINIMUM_INITIAL_PACKED_ARRAY_CAPACITY: /* 16 */ Double = js.native
 }
 

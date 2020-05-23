@@ -13,7 +13,11 @@ import scala.scalajs.js.annotation._
 
 /* Inlined openfin.openfin/_v2/api/events/base.BaseEventMap & std.Pick<openfin.openfin/_v2/api/events/window.WindowEventMapping<string, string>, 'begin-user-bounds-changing' | 'blurred' | 'bounds-changed' | 'bounds-changing' | 'closed' | 'closing' | 'disabled-movement-bounds-changed' | 'disabled-movement-bounds-changing' | 'end-user-bounds-changing' | 'focused' | 'group-changed' | 'hidden' | 'maximized' | 'minimized' | 'restored' | 'shown' | 'user-movement-disabled' | 'user-movement-enabled'> */
 trait ExternalWindowEventMapping[Topic, Type]
-  extends /* name */ StringDictionary[js.Any] {
+  extends /**
+  * @hidden
+  * Custom properties and metadata. This can be extended in specific context object.
+  */
+/* key */ StringDictionary[js.Any] {
   var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[String, String]
   var blurred: WindowEvent[String, String]
   var `bounds-changed`: WindowBoundsChange[String, String]

@@ -3,13 +3,13 @@ package typings.pdfkit.PDFKit
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.node.NodeJS.ReadableStream
-import typings.pdfkit.AnonCount
 import typings.pdfkit.PDFKit.Mixins.PDFAnnotation
 import typings.pdfkit.PDFKit.Mixins.PDFColor
 import typings.pdfkit.PDFKit.Mixins.PDFFont
 import typings.pdfkit.PDFKit.Mixins.PDFImage
 import typings.pdfkit.PDFKit.Mixins.PDFText
 import typings.pdfkit.PDFKit.Mixins.PDFVector
+import typings.pdfkit.anon.Count
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +50,7 @@ trait PDFDocument
   def addContent(data: js.Any): PDFDocument = js.native
   def addPage(): PDFDocument = js.native
   def addPage(options: PDFDocumentOptions): PDFDocument = js.native
-  def bufferedPageRange(): AnonCount = js.native
+  def bufferedPageRange(): Count = js.native
   def end(): Unit = js.native
   def flushPages(): Unit = js.native
   /**

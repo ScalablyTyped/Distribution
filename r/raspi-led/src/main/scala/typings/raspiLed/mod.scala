@@ -20,7 +20,7 @@ object mod extends js.Object {
     def write_1(value: `1`): Unit = js.native
   }
   
-  val OFF: `0` = js.native
-  val ON: `1` = js.native
+  val OFF: /* 0 */ Double = js.native
+  val ON: /* 1 */ Double = js.native
 }
 

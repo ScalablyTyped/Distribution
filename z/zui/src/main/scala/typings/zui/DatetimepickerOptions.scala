@@ -64,10 +64,10 @@ object DatetimepickerOptions {
     language: String = null,
     locale: String = null,
     maxDate: Date | String | js.Any = null,
-    maxView: Int | Double = null,
+    maxView: js.UndefOr[Double] = js.undefined,
     minDate: Date | String | js.Any = null,
-    minView: Int | Double = null,
-    minuteStepping: Int | Double = null,
+    minView: js.UndefOr[Double] = js.undefined,
+    minuteStepping: js.UndefOr[Double] = js.undefined,
     pickDate: js.UndefOr[Boolean] = js.undefined,
     pickTime: js.UndefOr[Boolean] = js.undefined,
     showClear: js.UndefOr[Boolean] = js.undefined,
@@ -75,7 +75,7 @@ object DatetimepickerOptions {
     showToday: js.UndefOr[Boolean] = js.undefined,
     showTodayButton: js.UndefOr[Boolean] = js.undefined,
     sideBySide: js.UndefOr[Boolean] = js.undefined,
-    startView: Int | Double = null,
+    startView: js.UndefOr[Double] = js.undefined,
     todayBtn: Double | Boolean = null,
     todayHighlight: Double | Boolean = null,
     toolbarPlacement: String = null,
@@ -84,12 +84,12 @@ object DatetimepickerOptions {
     useSeconds: js.UndefOr[Boolean] = js.undefined,
     useStrict: js.UndefOr[Boolean] = js.undefined,
     viewMode: String = null,
-    weekStart: Int | Double = null
+    weekStart: js.UndefOr[Double] = js.undefined
   ): DatetimepickerOptions = {
     val __obj = js.Dynamic.literal()
     if (autoclose != null) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
-    if (!js.isUndefined(calendarWeeks)) __obj.updateDynamic("calendarWeeks")(calendarWeeks.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
+    if (!js.isUndefined(calendarWeeks)) __obj.updateDynamic("calendarWeeks")(calendarWeeks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.get.asInstanceOf[js.Any])
     if (daysOfWeekDisabled != null) __obj.updateDynamic("daysOfWeekDisabled")(daysOfWeekDisabled.asInstanceOf[js.Any])
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
@@ -98,32 +98,32 @@ object DatetimepickerOptions {
     if (forceParse != null) __obj.updateDynamic("forceParse")(forceParse.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreReadonly)) __obj.updateDynamic("ignoreReadonly")(ignoreReadonly.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreReadonly)) __obj.updateDynamic("ignoreReadonly")(ignoreReadonly.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (maxView != null) __obj.updateDynamic("maxView")(maxView.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxView)) __obj.updateDynamic("maxView")(maxView.get.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minView != null) __obj.updateDynamic("minView")(minView.asInstanceOf[js.Any])
-    if (minuteStepping != null) __obj.updateDynamic("minuteStepping")(minuteStepping.asInstanceOf[js.Any])
-    if (!js.isUndefined(pickDate)) __obj.updateDynamic("pickDate")(pickDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(pickTime)) __obj.updateDynamic("pickTime")(pickTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear.asInstanceOf[js.Any])
+    if (!js.isUndefined(minView)) __obj.updateDynamic("minView")(minView.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minuteStepping)) __obj.updateDynamic("minuteStepping")(minuteStepping.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pickDate)) __obj.updateDynamic("pickDate")(pickDate.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pickTime)) __obj.updateDynamic("pickTime")(pickTime.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear.get.asInstanceOf[js.Any])
     if (showMeridian != null) __obj.updateDynamic("showMeridian")(showMeridian.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTodayButton)) __obj.updateDynamic("showTodayButton")(showTodayButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(sideBySide)) __obj.updateDynamic("sideBySide")(sideBySide.asInstanceOf[js.Any])
-    if (startView != null) __obj.updateDynamic("startView")(startView.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTodayButton)) __obj.updateDynamic("showTodayButton")(showTodayButton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sideBySide)) __obj.updateDynamic("sideBySide")(sideBySide.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startView)) __obj.updateDynamic("startView")(startView.get.asInstanceOf[js.Any])
     if (todayBtn != null) __obj.updateDynamic("todayBtn")(todayBtn.asInstanceOf[js.Any])
     if (todayHighlight != null) __obj.updateDynamic("todayHighlight")(todayHighlight.asInstanceOf[js.Any])
     if (toolbarPlacement != null) __obj.updateDynamic("toolbarPlacement")(toolbarPlacement.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCurrent)) __obj.updateDynamic("useCurrent")(useCurrent.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMinutes)) __obj.updateDynamic("useMinutes")(useMinutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSeconds)) __obj.updateDynamic("useSeconds")(useSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStrict)) __obj.updateDynamic("useStrict")(useStrict.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCurrent)) __obj.updateDynamic("useCurrent")(useCurrent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMinutes)) __obj.updateDynamic("useMinutes")(useMinutes.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSeconds)) __obj.updateDynamic("useSeconds")(useSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStrict)) __obj.updateDynamic("useStrict")(useStrict.get.asInstanceOf[js.Any])
     if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
-    if (weekStart != null) __obj.updateDynamic("weekStart")(weekStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(weekStart)) __obj.updateDynamic("weekStart")(weekStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatetimepickerOptions]
   }
 }

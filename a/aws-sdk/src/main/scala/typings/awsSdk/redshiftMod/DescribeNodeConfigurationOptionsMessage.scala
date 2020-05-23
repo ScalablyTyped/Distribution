@@ -43,7 +43,7 @@ object DescribeNodeConfigurationOptionsMessage {
     ClusterIdentifier: String = null,
     Filters: NodeConfigurationOptionsFilterList = null,
     Marker: String = null,
-    MaxRecords: Int | scala.Double = null,
+    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
     OwnerAccount: String = null,
     SnapshotIdentifier: String = null
   ): DescribeNodeConfigurationOptionsMessage = {
@@ -51,7 +51,7 @@ object DescribeNodeConfigurationOptionsMessage {
     if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
     if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount.asInstanceOf[js.Any])
     if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNodeConfigurationOptionsMessage]

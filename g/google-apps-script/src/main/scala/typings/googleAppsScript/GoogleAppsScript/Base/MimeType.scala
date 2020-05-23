@@ -1,6 +1,5 @@
 package typings.googleAppsScript.GoogleAppsScript.Base
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -123,101 +122,6 @@ object MimeType extends js.Object {
   
   @js.native
   sealed trait ZIP extends MimeType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MimeType with Double] = js.native
-  /* 8 */ @js.native
-  object BMP extends TopLevel[BMP with Double]
-  
-  /* 14 */ @js.native
-  object CSS extends TopLevel[CSS with Double]
-  
-  /* 15 */ @js.native
-  object CSV extends TopLevel[CSV with Double]
-  
-  /* 7 */ @js.native
-  object FOLDER extends TopLevel[FOLDER with Double]
-  
-  /* 9 */ @js.native
-  object GIF extends TopLevel[GIF with Double]
-  
-  /* 0 */ @js.native
-  object GOOGLE_APPS_SCRIPT extends TopLevel[GOOGLE_APPS_SCRIPT with Double]
-  
-  /* 2 */ @js.native
-  object GOOGLE_DOCS extends TopLevel[GOOGLE_DOCS with Double]
-  
-  /* 1 */ @js.native
-  object GOOGLE_DRAWINGS extends TopLevel[GOOGLE_DRAWINGS with Double]
-  
-  /* 3 */ @js.native
-  object GOOGLE_FORMS extends TopLevel[GOOGLE_FORMS with Double]
-  
-  /* 4 */ @js.native
-  object GOOGLE_SHEETS extends TopLevel[GOOGLE_SHEETS with Double]
-  
-  /* 5 */ @js.native
-  object GOOGLE_SITES extends TopLevel[GOOGLE_SITES with Double]
-  
-  /* 6 */ @js.native
-  object GOOGLE_SLIDES extends TopLevel[GOOGLE_SLIDES with Double]
-  
-  /* 16 */ @js.native
-  object HTML extends TopLevel[HTML with Double]
-  
-  /* 17 */ @js.native
-  object JAVASCRIPT extends TopLevel[JAVASCRIPT with Double]
-  
-  /* 10 */ @js.native
-  object JPEG extends TopLevel[JPEG with Double]
-  
-  /* 24 */ @js.native
-  object MICROSOFT_EXCEL extends TopLevel[MICROSOFT_EXCEL with Double]
-  
-  /* 25 */ @js.native
-  object MICROSOFT_EXCEL_LEGACY extends TopLevel[MICROSOFT_EXCEL_LEGACY with Double]
-  
-  /* 26 */ @js.native
-  object MICROSOFT_POWERPOINT extends TopLevel[MICROSOFT_POWERPOINT with Double]
-  
-  /* 27 */ @js.native
-  object MICROSOFT_POWERPOINT_LEGACY extends TopLevel[MICROSOFT_POWERPOINT_LEGACY with Double]
-  
-  /* 28 */ @js.native
-  object MICROSOFT_WORD extends TopLevel[MICROSOFT_WORD with Double]
-  
-  /* 29 */ @js.native
-  object MICROSOFT_WORD_LEGACY extends TopLevel[MICROSOFT_WORD_LEGACY with Double]
-  
-  /* 20 */ @js.native
-  object OPENDOCUMENT_GRAPHICS extends TopLevel[OPENDOCUMENT_GRAPHICS with Double]
-  
-  /* 21 */ @js.native
-  object OPENDOCUMENT_PRESENTATION extends TopLevel[OPENDOCUMENT_PRESENTATION with Double]
-  
-  /* 22 */ @js.native
-  object OPENDOCUMENT_SPREADSHEET extends TopLevel[OPENDOCUMENT_SPREADSHEET with Double]
-  
-  /* 23 */ @js.native
-  object OPENDOCUMENT_TEXT extends TopLevel[OPENDOCUMENT_TEXT with Double]
-  
-  /* 13 */ @js.native
-  object PDF extends TopLevel[PDF with Double]
-  
-  /* 18 */ @js.native
-  object PLAIN_TEXT extends TopLevel[PLAIN_TEXT with Double]
-  
-  /* 11 */ @js.native
-  object PNG extends TopLevel[PNG with Double]
-  
-  /* 19 */ @js.native
-  object RTF extends TopLevel[RTF with Double]
-  
-  /* 12 */ @js.native
-  object SVG extends TopLevel[SVG with Double]
-  
-  /* 30 */ @js.native
-  object ZIP extends TopLevel[ZIP with Double]
   
 }
 

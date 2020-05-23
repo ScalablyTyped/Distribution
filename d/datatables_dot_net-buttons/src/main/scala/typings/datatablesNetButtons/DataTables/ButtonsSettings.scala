@@ -18,12 +18,12 @@ object ButtonsSettings {
     buttons: js.Array[String | FunctionButtom | ButtonSettings],
     dom: ButtonDomSettings = null,
     name: String = null,
-    tabIndex: Int | Double = null
+    tabIndex: js.UndefOr[Double] = js.undefined
   ): ButtonsSettings = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any])
     if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonsSettings]
   }
 }

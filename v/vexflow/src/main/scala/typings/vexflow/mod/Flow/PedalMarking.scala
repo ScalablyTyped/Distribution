@@ -1,7 +1,7 @@
 package typings.vexflow.mod.Flow
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vexflow.AnonXshift
+import typings.vexflow.anon.Xshift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,16 @@ object PedalMarking extends js.Object {
   def createSustain(notes: js.Array[typings.vexflow.Vex.Flow.Note]): typings.vexflow.Vex.Flow.PedalMarking = js.native
   def createUnaCorda(notes: js.Array[typings.vexflow.Vex.Flow.Note]): typings.vexflow.Vex.Flow.PedalMarking = js.native
   @js.native
-  object GLYPHS extends /* name */ StringDictionary[AnonXshift]
+  object GLYPHS extends /* name */ StringDictionary[Xshift]
+  
+  @js.native
+  object Styles extends js.Object {
+    /* 0 */ val BRACKET: typings.vexflow.Vex.Flow.PedalMarking.Styles.BRACKET with Double = js.native
+    /* 1 */ val MIXED: typings.vexflow.Vex.Flow.PedalMarking.Styles.MIXED with Double = js.native
+    /* 1 */ val TEXT: typings.vexflow.Vex.Flow.PedalMarking.Styles.TEXT with Double = js.native
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.PedalMarking.Styles with Double] = js.native
+  }
   
 }
 

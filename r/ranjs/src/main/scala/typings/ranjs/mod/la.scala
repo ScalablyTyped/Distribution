@@ -1,6 +1,6 @@
 package typings.ranjs.mod
 
-import typings.ranjs.AnonD
+import typings.ranjs.anon.D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ object la extends js.Object {
     def f(func: js.Function1[/* d */ Double, Double]): Matrix = js.native
     def ij(i: Double, j: Double): Double = js.native
     def ij(i: Double, j: Double, value: Double): Unit = js.native
-    def ldl(): AnonD = js.native
+    def ldl(): D = js.native
     def m(): js.Array[js.Array[Double]] = js.native
     def mult(max: Matrix): Matrix = js.native
     def scale(s: Double): Matrix = js.native

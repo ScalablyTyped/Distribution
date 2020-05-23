@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.CadastralLayer")
 @js.native
-class CadastralLayer () extends LabelLayer {
-  def this(option: CadastralLayerOptions) = this()
+trait CadastralLayer extends Layer {
   var name: String = js.native
 }
 

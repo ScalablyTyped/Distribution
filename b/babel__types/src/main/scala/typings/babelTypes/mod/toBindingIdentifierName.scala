@@ -1,6 +1,6 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.AnonToString
+import typings.babelTypes.anon.ToString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object toBindingIdentifierName extends js.Object {
   def apply(): String = js.native
-  def apply(name: AnonToString): String = js.native
+  def apply(name: ToString): String = js.native
 }
 

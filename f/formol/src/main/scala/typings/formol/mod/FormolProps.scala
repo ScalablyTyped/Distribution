@@ -2,7 +2,7 @@ package typings.formol.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ReactNode
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait FormolProps[V] extends js.Object {
   var i18n: js.UndefOr[js.Any] = js.undefined
   var item: js.UndefOr[V] = js.undefined
   var noCancel: js.UndefOr[js.Any] = js.undefined
-  var onSubmit: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  var onSubmit: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var submitText: js.UndefOr[js.Any] = js.undefined
   var types: js.UndefOr[js.Array[String]] = js.undefined
@@ -41,7 +41,7 @@ object FormolProps {
     i18n: js.Any = null,
     item: V = null,
     noCancel: js.Any = null,
-    onSubmit: /* e */ Event_ => Unit = null,
+    onSubmit: /* e */ Event => Unit = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     submitText: js.Any = null,
     types: js.Array[String] = null,
@@ -59,7 +59,7 @@ object FormolProps {
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (noCancel != null) __obj.updateDynamic("noCancel")(noCancel.asInstanceOf[js.Any])
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
     if (submitText != null) __obj.updateDynamic("submitText")(submitText.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction1(validator))

@@ -19,8 +19,8 @@ object AbstractOpenOptions {
   ): AbstractOpenOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(createIfMissing)) __obj.updateDynamic("createIfMissing")(createIfMissing.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorIfExists)) __obj.updateDynamic("errorIfExists")(errorIfExists.asInstanceOf[js.Any])
+    if (!js.isUndefined(createIfMissing)) __obj.updateDynamic("createIfMissing")(createIfMissing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorIfExists)) __obj.updateDynamic("errorIfExists")(errorIfExists.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractOpenOptions]
   }
 }

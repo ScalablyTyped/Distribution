@@ -1,8 +1,5 @@
 package typings.suitescript
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,22 +16,7 @@ import scala.scalajs.js.annotation._
   *
   * @since 2007.0
   */
-@JSGlobal("nlobjSearchColumn")
-@js.native
-class nlobjSearchColumn protected ()
-  extends /**
-  *
-  * @param name
-  * @param join
-  * @param summary
-  * @return
-  */
-Instantiable1[/* name */ String, nlobjSearchColumn]
-     with Instantiable2[/* name */ String, /* join */ String, nlobjSearchColumn]
-     with Instantiable3[/* name */ String, /* join */ String, /* summary */ String, nlobjSearchColumn] {
-  def this(name: String) = this()
-  def this(name: String, join: String) = this()
-  def this(name: String, join: String, summary: String) = this()
+trait nlobjSearchColumn extends js.Object {
   /**
     * return formula for this search column.
     * @return {string}
@@ -45,7 +27,7 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2009.2
     * @return
     */
-  def getFormula(): String = js.native
+  def getFormula(): String
   /**
     * return the join id for this search column.
     * @return {string}
@@ -55,7 +37,7 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2008.1
     * @return
     */
-  def getJoin(): String = js.native
+  def getJoin(): String
   /**
     * return the label of this search column.
     * @return {string}
@@ -66,7 +48,7 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2009.1
     * @return
     */
-  def getLabel(): String = js.native
+  def getLabel(): String
   /**
     * return the name of this search column.
     * @return {string}
@@ -76,7 +58,7 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2008.1
     * @return
     */
-  def getName(): String = js.native
+  def getName(): String
   /**
     * return the summary type (avg,group,sum,count) of this search column.
     * @return {string}
@@ -86,8 +68,8 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2008.1
     * @return
     */
-  def getSummary(): String = js.native
-  def setLabel(label: String): nlobjSearchColumn = js.native
+  def getSummary(): String
+  def setLabel(label: String): nlobjSearchColumn
   /**
     * return nlobjSearchColumn sorted in either ascending or descending order.
     * @return {nlobjSearchColumn}
@@ -100,6 +82,22 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @param order
     * @return
     */
-  def setSort(order: js.Any): js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit] = js.native
+  def setSort(order: js.Any): js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]
+}
+
+object nlobjSearchColumn {
+  @scala.inline
+  def apply(
+    getFormula: () => String,
+    getJoin: () => String,
+    getLabel: () => String,
+    getName: () => String,
+    getSummary: () => String,
+    setLabel: String => nlobjSearchColumn,
+    setSort: js.Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]
+  ): nlobjSearchColumn = {
+    val __obj = js.Dynamic.literal(getFormula = js.Any.fromFunction0(getFormula), getJoin = js.Any.fromFunction0(getJoin), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getSummary = js.Any.fromFunction0(getSummary), setLabel = js.Any.fromFunction1(setLabel), setSort = js.Any.fromFunction1(setSort))
+    __obj.asInstanceOf[nlobjSearchColumn]
+  }
 }
 

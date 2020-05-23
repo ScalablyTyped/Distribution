@@ -12,27 +12,27 @@ sealed trait TextEditorRevealType extends js.Object
 @js.native
 object TextEditorRevealType extends js.Object {
   /**
-  		 * The range will always be revealed at the top of the viewport.
-  		 */
+    * The range will always be revealed at the top of the viewport.
+    */
   @js.native
   sealed trait AtTop extends TextEditorRevealType
   
   /**
-  		 * The range will be revealed with as little scrolling as possible.
-  		 */
+    * The range will be revealed with as little scrolling as possible.
+    */
   @js.native
   sealed trait Default extends TextEditorRevealType
   
   /**
-  		 * The range will always be revealed in the center of the viewport.
-  		 */
+    * The range will always be revealed in the center of the viewport.
+    */
   @js.native
   sealed trait InCenter extends TextEditorRevealType
   
   /**
-  		 * If the range is outside the viewport, it will be revealed in the center of the viewport.
-  		 * Otherwise, it will be revealed with as little scrolling as possible.
-  		 */
+    * If the range is outside the viewport, it will be revealed in the center of the viewport.
+    * Otherwise, it will be revealed with as little scrolling as possible.
+    */
   @js.native
   sealed trait InCenterIfOutsideViewport extends TextEditorRevealType
   

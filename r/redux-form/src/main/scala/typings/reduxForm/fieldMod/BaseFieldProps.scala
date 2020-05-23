@@ -35,7 +35,7 @@ object BaseFieldProps {
   def apply[P](
     name: String,
     component: (ComponentType[WrappedFieldProps with P]) | input | select | textarea = null,
-    format: (/* value */ js.Any, /* name */ String) => js.Any = null,
+    format: js.UndefOr[Null | ((/* value */ js.Any, /* name */ String) => js.Any)] = js.undefined,
     forwardRef: js.UndefOr[Boolean] = js.undefined,
     immutableProps: js.Array[String] = null,
     normalize: (/* value */ js.Any, /* previousValue */ js.UndefOr[js.Any], /* allValues */ js.UndefOr[js.Any], /* previousAllValues */ js.UndefOr[js.Any]) => js.Any = null,
@@ -51,8 +51,8 @@ object BaseFieldProps {
   ): BaseFieldProps[P] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
-    if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(if (format != null) js.Any.fromFunction2(format.asInstanceOf[(/* value */ js.Any, /* name */ String) => js.Any]) else null)
+    if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef.get.asInstanceOf[js.Any])
     if (immutableProps != null) __obj.updateDynamic("immutableProps")(immutableProps.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction4(normalize))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction4(onBlur))

@@ -761,6 +761,56 @@ object Geom extends js.Object {
     def Extend(line: typings.phaser.Phaser.Geom.Line, left: Double): typings.phaser.Phaser.Geom.Line = js.native
     def Extend(line: typings.phaser.Phaser.Geom.Line, left: Double, right: Double): typings.phaser.Phaser.Geom.Line = js.native
     /**
+      * Returns an array of `quantity` Points where each point is taken from the given Line,
+      * spaced out according to the ease function specified.
+      * 
+      * ```javascript
+      * const line = new Phaser.Geom.Line(100, 300, 700, 300);
+      * const points = Phaser.Geom.Line.GetEasedPoints(line, 'sine.out', 32)
+      * ```
+      * 
+      * In the above example, the `points` array will contain 32 points spread-out across
+      * the length of `line`, where the position of each point is determined by the `Sine.out`
+      * ease function.
+      * 
+      * You can optionally provide a collinear threshold. In this case, the resulting points
+      * are checked against each other, and if they are `< collinearThreshold` distance apart,
+      * they are dropped from the results. This can help avoid lots of clustered points at
+      * far ends of the line with tightly-packed eases such as Quartic. Leave the value set
+      * to zero to skip this check.
+      * 
+      * Note that if you provide a collinear threshold, the resulting array may not always
+      * contain `quantity` points.
+      * @param line The Line object.
+      * @param ease The ease to use. This can be either a string from the EaseMap, or a custom function.
+      * @param quantity The number of points to return. Note that if you provide a `collinearThreshold`, the resulting array may not always contain this number of points.
+      * @param collinearThreshold An optional threshold. The final array is reduced so that each point is spaced out at least this distance apart. This helps reduce clustering in noisey eases. Default 0.
+      * @param easeParams An optional array of ease parameters to go with the ease.
+      */
+    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer): O = js.native
+    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer, collinearThreshold: Double): O = js.native
+    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      line: typings.phaser.Phaser.Geom.Line,
+      ease: String,
+      quantity: integer,
+      collinearThreshold: Double,
+      easeParams: js.Array[Double]
+    ): O = js.native
+    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: js.Function, quantity: integer): O = js.native
+    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      line: typings.phaser.Phaser.Geom.Line,
+      ease: js.Function,
+      quantity: integer,
+      collinearThreshold: Double
+    ): O = js.native
+    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      line: typings.phaser.Phaser.Geom.Line,
+      ease: js.Function,
+      quantity: integer,
+      collinearThreshold: Double,
+      easeParams: js.Array[Double]
+    ): O = js.native
+    /**
       * Get the midpoint of the given line.
       * @param line The line to get the midpoint of.
       * @param out An optional point object to store the midpoint in.
@@ -832,7 +882,7 @@ object Geom extends js.Object {
       */
     def NormalAngle(line: typings.phaser.Phaser.Geom.Line): Double = js.native
     /**
-      * [description]
+      * Returns the x component of the normal vector of the given line.
       * @param line The Line object to get the normal value from.
       */
     def NormalX(line: typings.phaser.Phaser.Geom.Line): Double = js.native
@@ -945,11 +995,11 @@ object Geom extends js.Object {
     /**
       * Get the centroid or geometric center of a plane figure (the arithmetic mean position of all the points in the figure).
       * Informally, it is the point at which a cutout of the shape could be perfectly balanced on the tip of a pin.
-      * @param points [description]
-      * @param out [description]
+      * @param points An array of Vector2Like objects to get the geometric center of.
+      * @param out A Point object to store the output coordinates in. If not given, a new Point instance is created.
       */
-    def GetCentroid[O /* <: typings.phaser.Phaser.Geom.Point */](points: js.Array[typings.phaser.Phaser.Geom.Point]): O = js.native
-    def GetCentroid[O /* <: typings.phaser.Phaser.Geom.Point */](points: js.Array[typings.phaser.Phaser.Geom.Point], out: O): O = js.native
+    def GetCentroid[O /* <: typings.phaser.Phaser.Geom.Point */](points: js.Array[Vector2Like]): O = js.native
+    def GetCentroid[O /* <: typings.phaser.Phaser.Geom.Point */](points: js.Array[Vector2Like], out: O): O = js.native
     /**
       * Calculate the magnitude of the point, which equivalent to the length of the line from the origin to this point.
       * @param point The point to calculate the magnitude for
@@ -962,13 +1012,13 @@ object Geom extends js.Object {
     def GetMagnitudeSq(point: typings.phaser.Phaser.Geom.Point): Double = js.native
     /**
       * Calculates the Axis Aligned Bounding Box (or aabb) from an array of points.
-      * @param points [description]
-      * @param out [description]
+      * @param points An array of Vector2Like objects to get the AABB from.
+      * @param out A Rectangle object to store the results in. If not given, a new Rectangle instance is created.
       */
-    def GetRectangleFromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[typings.phaser.Phaser.Geom.Point]): O = js.native
-    def GetRectangleFromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[typings.phaser.Phaser.Geom.Point], out: O): O = js.native
+    def GetRectangleFromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[Vector2Like]): O = js.native
+    def GetRectangleFromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[Vector2Like], out: O): O = js.native
     /**
-      * [description]
+      * Returns the linear interpolation point between the two given points, based on `t`.
       * @param pointA The starting `Point` for the interpolation.
       * @param pointB The target `Point` for the interpolation.
       * @param t The amount to interpolate between the two points. Generally, a value between 0 (returns the starting `Point`) and 1 (returns the target `Point`). If omitted, 0 is used. Default 0.
@@ -995,18 +1045,20 @@ object Geom extends js.Object {
     def Negative[O /* <: typings.phaser.Phaser.Geom.Point */](point: typings.phaser.Phaser.Geom.Point): O = js.native
     def Negative[O /* <: typings.phaser.Phaser.Geom.Point */](point: typings.phaser.Phaser.Geom.Point, out: O): O = js.native
     /**
-      * [description]
-      * @param pointA [description]
-      * @param pointB [description]
-      * @param out [description]
+      * Calculates the vector projection of `pointA` onto the nonzero `pointB`. This is the
+      * orthogonal projection of `pointA` onto a straight line paralle to `pointB`.
+      * @param pointA Point A, to be projected onto Point B.
+      * @param pointB Point B, to have Point A projected upon it.
+      * @param out The Point object to store the position in. If not given, a new Point instance is created.
       */
     def Project[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point): O = js.native
     def Project[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point, out: O): O = js.native
     /**
-      * [description]
-      * @param pointA [description]
-      * @param pointB [description]
-      * @param out [description]
+      * Calculates the vector projection of `pointA` onto the nonzero `pointB`. This is the
+      * orthogonal projection of `pointA` onto a straight line paralle to `pointB`.
+      * @param pointA Point A, to be projected onto Point B. Must be a normalized point with a magnitude of 1.
+      * @param pointB Point B, to have Point A projected upon it.
+      * @param out The Point object to store the position in. If not given, a new Point instance is created.
       */
     def ProjectUnit[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point): O = js.native
     def ProjectUnit[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point, out: O): O = js.native
@@ -1034,9 +1086,9 @@ object Geom extends js.Object {
       */
     def Contains(polygon: typings.phaser.Phaser.Geom.Polygon, x: Double, y: Double): Boolean = js.native
     /**
-      * [description]
-      * @param polygon [description]
-      * @param point [description]
+      * Checks the given Point again the Polygon to see if the Point lays within its vertices.
+      * @param polygon The Polygon to check.
+      * @param point The Point to check if it's within the Polygon.
       */
     def ContainsPoint(polygon: typings.phaser.Phaser.Geom.Polygon, point: typings.phaser.Phaser.Geom.Point): Boolean = js.native
     /**
@@ -1195,6 +1247,16 @@ object Geom extends js.Object {
     def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[_]): O = js.native
     def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[_], out: O): O = js.native
     /**
+      * Create the smallest Rectangle containing two coordinate pairs.
+      * @param x1 The X coordinate of the first point.
+      * @param y1 The Y coordinate of the first point.
+      * @param x2 The X coordinate of the second point.
+      * @param y2 The Y coordinate of the second point.
+      * @param out Optional Rectangle to adjust.
+      */
+    def FromXY[O /* <: typings.phaser.Phaser.Geom.Rectangle */](x1: Double, y1: Double, x2: Double, y2: Double): O = js.native
+    def FromXY[O /* <: typings.phaser.Phaser.Geom.Rectangle */](x1: Double, y1: Double, x2: Double, y2: Double, out: O): O = js.native
+    /**
       * Calculates the width/height ratio of a rectangle.
       * @param rect The rectangle.
       */
@@ -1207,10 +1269,14 @@ object Geom extends js.Object {
     def GetCenter[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle): O = js.native
     def GetCenter[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle, out: O): O = js.native
     /**
-      * Position is a value between 0 and 1 where 0 = the top-left of the rectangle and 0.5 = the bottom right.
-      * @param rectangle [description]
-      * @param position [description]
-      * @param out [description]
+      * Calculates the coordinates of a point at a certain `position` on the Rectangle's perimeter.
+      * 
+      * The `position` is a fraction between 0 and 1 which defines how far into the perimeter the point is.
+      * 
+      * A value of 0 or 1 returns the point at the top left corner of the rectangle, while a value of 0.5 returns the point at the bottom right corner of the rectangle. Values between 0 and 0.5 are on the top or the right side and values between 0.5 and 1 are on the bottom or the left side.
+      * @param rectangle The Rectangle to get the perimeter point from.
+      * @param position The normalized distance into the Rectangle's perimeter to return.
+      * @param out An object to update with the `x` and `y` coordinates of the point.
       */
     def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, position: Double): O = js.native
     def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, position: Double, out: O): O = js.native
@@ -1224,10 +1290,10 @@ object Geom extends js.Object {
     def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer): O = js.native
     def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer, out: O): O = js.native
     /**
-      * The size of the Rectangle object, expressed as a Point object
-      *  with the values of the width and height properties.
-      * @param rect [description]
-      * @param out [description]
+      * Returns the size of the Rectangle, expressed as a Point object.
+      * With the value of the `width` as the `x` property and the `height` as the `y` property.
+      * @param rect The Rectangle to get the size from.
+      * @param out The Point object to store the size in. If not given, a new Point instance is created.
       */
     def GetSize[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle): O = js.native
     def GetSize[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle, out: O): O = js.native
@@ -1255,13 +1321,15 @@ object Geom extends js.Object {
       out: typings.phaser.Phaser.Geom.Rectangle
     ): O = js.native
     /**
-      * Return an array of points from the perimeter of the rectangle
-      *  each spaced out based on the quantity or step required
-      * @param rect [description]
-      * @param step [description]
-      * @param quantity [description]
-      * @param out [description]
+      * Returns an array of points from the perimeter of the Rectangle, where each point is spaced out based
+      * on either the `step` value, or the `quantity`.
+      * @param rect The Rectangle to get the perimeter points from.
+      * @param step The distance between each point of the perimeter. Set to `null` if you wish to use the `quantity` parameter instead.
+      * @param quantity The total number of points to return. The step is then calculated based on the length of the Rectangle, divided by this value.
+      * @param out An array in which the perimeter points will be stored. If not given, a new array instance is created.
       */
+    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle): O = js.native
+    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double): O = js.native
     def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer): O = js.native
     def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer, out: O): O = js.native
     /**
@@ -1310,10 +1378,10 @@ object Geom extends js.Object {
       */
     def Perimeter(rect: typings.phaser.Phaser.Geom.Rectangle): Double = js.native
     /**
-      * [description]
-      * @param rectangle [description]
-      * @param angle [description]
-      * @param out [description]
+      * Returns a Point from the perimeter of a Rectangle based on the given angle.
+      * @param rectangle The Rectangle to get the perimeter point from.
+      * @param angle The angle of the point, in degrees.
+      * @param out The Point object to store the position in. If not given, a new Point instance is created.
       */
     def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: integer): O = js.native
     def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: integer, out: O): O = js.native
@@ -1372,12 +1440,13 @@ object Geom extends js.Object {
       */
     def BuildEquilateral(x: Double, y: Double, length: Double): typings.phaser.Phaser.Geom.Triangle = js.native
     /**
-      * [description]
+      * Takes an array of vertex coordinates, and optionally an array of hole indices, then returns an array
+      * of Triangle instances, where the given vertices have been decomposed into a series of triangles.
       * @param data A flat array of vertex coordinates like [x0,y0, x1,y1, x2,y2, ...]
       * @param holes An array of hole indices if any (e.g. [5, 8] for a 12-vertex input would mean one hole with vertices 5–7 and another with 8–11). Default null.
-      * @param scaleX [description] Default 1.
-      * @param scaleY [description] Default 1.
-      * @param out [description]
+      * @param scaleX Horizontal scale factor to multiply the resulting points by. Default 1.
+      * @param scaleY Vertical scale factor to multiply the resulting points by. Default 1.
+      * @param out An array to store the resulting Triangle instances in. If not provided, a new array is created.
       */
     def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_]): O = js.native
     def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.Array[_]): O = js.native
@@ -1416,8 +1485,8 @@ object Geom extends js.Object {
       * the common intersection point of the perpendicular bisectors of the sides of
       * the triangle, and is the only point which has equal distance to all three
       * vertices of the triangle.
-      * @param triangle [description]
-      * @param out [description]
+      * @param triangle The Triangle to get the circumcenter of.
+      * @param out The Vector2 object to store the position in. If not given, a new Vector2 instance is created.
       */
     def CircumCenter[O /* <: Vector2 */](triangle: typings.phaser.Phaser.Geom.Triangle): O = js.native
     def CircumCenter[O /* <: Vector2 */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = js.native
@@ -1520,13 +1589,14 @@ object Geom extends js.Object {
     def Offset[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, x: Double, y: Double): O = js.native
     /**
       * Gets the length of the perimeter of the given triangle.
-      * @param triangle [description]
+      * Calculated by adding together the length of each of the three sides.
+      * @param triangle The Triangle to get the length from.
       */
     def Perimeter(triangle: typings.phaser.Phaser.Geom.Triangle): Double = js.native
     /**
-      * [description]
-      * @param triangle [description]
-      * @param out [description]
+      * Returns a random Point from within the area of the given Triangle.
+      * @param triangle The Triangle to get a random point from.
+      * @param out The Point object to store the position in. If not given, a new Point instance is created.
       */
     def Random[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle): O = js.native
     def Random[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = js.native

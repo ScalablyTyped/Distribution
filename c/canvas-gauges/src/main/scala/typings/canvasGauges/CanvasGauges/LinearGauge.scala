@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("CanvasGauges.LinearGauge")
 @js.native
-class LinearGauge protected () extends BaseGauge {
-  def this(options: LinearGaugeOptions) = this()
+trait LinearGauge extends BaseGauge {
   @JSName("options")
   var options_LinearGauge: LinearGaugeOptions = js.native
   @JSName("type")

@@ -71,7 +71,7 @@ object GraphDefinitionLink {
     fhir_comments: js.Array[String] = null,
     id: String = null,
     max: String = null,
-    min: Int | Double = null,
+    min: js.UndefOr[integer] = js.undefined,
     modifierExtension: js.Array[Extension] = null,
     sliceName: String = null
   ): GraphDefinitionLink = {
@@ -88,7 +88,7 @@ object GraphDefinitionLink {
     if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (sliceName != null) __obj.updateDynamic("sliceName")(sliceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphDefinitionLink]

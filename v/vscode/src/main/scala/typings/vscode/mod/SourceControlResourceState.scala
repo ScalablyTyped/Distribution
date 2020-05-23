@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation._
 
 trait SourceControlResourceState extends js.Object {
   /**
-  		 * The [command](#Command) which should be run when the resource
-  		 * state is open in the Source Control viewlet.
-  		 */
+    * The [command](#Command) which should be run when the resource
+    * state is open in the Source Control viewlet.
+    */
   val command: js.UndefOr[Command] = js.undefined
   /**
-  		 * The [decorations](#SourceControlResourceDecorations) for this source control
-  		 * resource state.
-  		 */
+    * The [decorations](#SourceControlResourceDecorations) for this source control
+    * resource state.
+    */
   val decorations: js.UndefOr[SourceControlResourceDecorations] = js.undefined
   /**
-  		 * The [uri](#Uri) of the underlying resource inside the workspace.
-  		 */
+    * The [uri](#Uri) of the underlying resource inside the workspace.
+    */
   val resourceUri: Uri
 }
 

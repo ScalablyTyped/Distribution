@@ -8,9 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a set of printing instructions that you want to run on the slip printer station. */
-@JSGlobal("Windows.Devices.PointOfService.SlipPrintJob")
 @js.native
-abstract class SlipPrintJob () extends js.Object {
+trait SlipPrintJob extends js.Object {
   /**
     * Adds an instruction to the print job to print a drawn, ruled line on the paper of the slip printer station.
     * @param positionList The position parameters for the ruled line. The character string for positionList differs depending on whether lineDirection specifies a horizontal ruled line or a vertical ruled line.

@@ -4,10 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("VBIDE.CommandBarEvents")
-@js.native
-class CommandBarEvents protected () extends js.Object {
+trait CommandBarEvents extends js.Object {
   @JSName("VBIDE.CommandBarEvents_typekey")
-  var VBIDEDotCommandBarEvents_typekey: CommandBarEvents = js.native
+  var VBIDEDotCommandBarEvents_typekey: CommandBarEvents
+}
+
+object CommandBarEvents {
+  @scala.inline
+  def apply(VBIDEDotCommandBarEvents_typekey: CommandBarEvents): CommandBarEvents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("VBIDE.CommandBarEvents_typekey")(VBIDEDotCommandBarEvents_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommandBarEvents]
+  }
 }
 

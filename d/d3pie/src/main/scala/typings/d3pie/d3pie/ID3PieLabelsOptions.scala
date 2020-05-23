@@ -22,11 +22,11 @@ object ID3PieLabelsOptions {
   @scala.inline
   def apply(
     format: label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2` = null,
-    hideWhenLessThanPercentage: Int | Double = null
+    hideWhenLessThanPercentage: js.UndefOr[Double] = js.undefined
   ): ID3PieLabelsOptions = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hideWhenLessThanPercentage != null) __obj.updateDynamic("hideWhenLessThanPercentage")(hideWhenLessThanPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideWhenLessThanPercentage)) __obj.updateDynamic("hideWhenLessThanPercentage")(hideWhenLessThanPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ID3PieLabelsOptions]
   }
 }

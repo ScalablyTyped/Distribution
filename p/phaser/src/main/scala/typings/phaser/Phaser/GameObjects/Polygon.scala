@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.Phaser.Scene
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,24 +25,8 @@ import scala.scalajs.js.annotation._
   * By default the `x` and `y` coordinates of this Shape refer to the center of it. However, depending
   * on the coordinates of the points provided, the final shape may be rendered offset from its origin.
   */
-@JSGlobal("Phaser.GameObjects.Polygon")
 @js.native
-class Polygon protected () extends Shape {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this Game Object in the world. Default 0.
-    * @param y The vertical position of this Game Object in the world. Default 0.
-    * @param points The points that make up the polygon.
-    * @param fillColor The color the polygon will be filled with, i.e. 0xff0000 for red.
-    * @param fillAlpha The alpha the polygon will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
-    */
-  def this(scene: Scene) = this()
-  def this(scene: Scene, x: Double) = this()
-  def this(scene: Scene, x: Double, y: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, points: js.Any) = this()
-  def this(scene: Scene, x: Double, y: Double, points: js.Any, fillColor: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, points: js.Any, fillColor: Double, fillAlpha: Double) = this()
+trait Polygon extends Shape {
   /**
     * Smooths the polygon over the number of iterations specified.
     * The base polygon data will be updated and replaced with the smoothed values.

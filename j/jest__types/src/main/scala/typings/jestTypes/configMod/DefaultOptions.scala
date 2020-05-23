@@ -1,7 +1,7 @@
 package typings.jestTypes.configMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jestTypes.AnonGlobal
+import typings.jestTypes.anon.Global
 import typings.jestTypes.jestTypesStrings.fake
 import typings.jestTypes.jestTypesStrings.real
 import typings.std.Record
@@ -22,7 +22,7 @@ trait DefaultOptions extends js.Object {
   var coverageDirectory: js.UndefOr[String | Null] = js.undefined
   var coveragePathIgnorePatterns: js.Array[String]
   var coverageReporters: js.Array[String]
-  var coverageThreshold: js.UndefOr[AnonGlobal | Null] = js.undefined
+  var coverageThreshold: js.UndefOr[Global | Null] = js.undefined
   var dependencyExtractor: js.UndefOr[String | Null] = js.undefined
   var errorOnDeprecated: Boolean
   var expand: Boolean
@@ -129,41 +129,41 @@ object DefaultOptions {
     watch: Boolean,
     watchPathIgnorePatterns: js.Array[String],
     watchman: Boolean,
-    collectCoverageFrom: js.Array[String] = null,
-    coverageDirectory: String = null,
-    coverageThreshold: AnonGlobal = null,
-    dependencyExtractor: String = null,
-    filter: Path = null,
-    globalSetup: String = null,
-    globalTeardown: String = null,
-    preset: String = null,
-    prettierPath: String = null,
-    projects: js.Array[String | ProjectConfig] = null,
-    resolver: Path = null,
-    rootDir: Path = null,
-    roots: js.Array[Path] = null,
-    testResultsProcessor: String = null,
-    testRunner: String = null,
-    transform: StringDictionary[Path | TransformerConfig] = null,
-    verbose: js.UndefOr[Boolean] = js.undefined
+    collectCoverageFrom: js.UndefOr[Null | js.Array[String]] = js.undefined,
+    coverageDirectory: js.UndefOr[Null | String] = js.undefined,
+    coverageThreshold: js.UndefOr[Null | Global] = js.undefined,
+    dependencyExtractor: js.UndefOr[Null | String] = js.undefined,
+    filter: js.UndefOr[Null | Path] = js.undefined,
+    globalSetup: js.UndefOr[Null | String] = js.undefined,
+    globalTeardown: js.UndefOr[Null | String] = js.undefined,
+    preset: js.UndefOr[Null | String] = js.undefined,
+    prettierPath: js.UndefOr[Null | String] = js.undefined,
+    projects: js.UndefOr[Null | (js.Array[String | ProjectConfig])] = js.undefined,
+    resolver: js.UndefOr[Null | Path] = js.undefined,
+    rootDir: js.UndefOr[Null | Path] = js.undefined,
+    roots: js.UndefOr[Null | js.Array[Path]] = js.undefined,
+    testResultsProcessor: js.UndefOr[Null | String] = js.undefined,
+    testRunner: js.UndefOr[Null | String] = js.undefined,
+    transform: js.UndefOr[Null | (StringDictionary[Path | TransformerConfig])] = js.undefined,
+    verbose: js.UndefOr[Null | Boolean] = js.undefined
   ): DefaultOptions = {
     val __obj = js.Dynamic.literal(automock = automock.asInstanceOf[js.Any], bail = bail.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cacheDirectory = cacheDirectory.asInstanceOf[js.Any], changedFilesWithAncestor = changedFilesWithAncestor.asInstanceOf[js.Any], clearMocks = clearMocks.asInstanceOf[js.Any], collectCoverage = collectCoverage.asInstanceOf[js.Any], coveragePathIgnorePatterns = coveragePathIgnorePatterns.asInstanceOf[js.Any], coverageReporters = coverageReporters.asInstanceOf[js.Any], errorOnDeprecated = errorOnDeprecated.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], forceCoverageMatch = forceCoverageMatch.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], haste = haste.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], maxWorkers = maxWorkers.asInstanceOf[js.Any], moduleDirectories = moduleDirectories.asInstanceOf[js.Any], moduleFileExtensions = moduleFileExtensions.asInstanceOf[js.Any], moduleNameMapper = moduleNameMapper.asInstanceOf[js.Any], modulePathIgnorePatterns = modulePathIgnorePatterns.asInstanceOf[js.Any], noStackTrace = noStackTrace.asInstanceOf[js.Any], notify = notify.asInstanceOf[js.Any], notifyMode = notifyMode.asInstanceOf[js.Any], resetMocks = resetMocks.asInstanceOf[js.Any], resetModules = resetModules.asInstanceOf[js.Any], restoreMocks = restoreMocks.asInstanceOf[js.Any], runTestsByPath = runTestsByPath.asInstanceOf[js.Any], runner = runner.asInstanceOf[js.Any], setupFiles = setupFiles.asInstanceOf[js.Any], setupFilesAfterEnv = setupFilesAfterEnv.asInstanceOf[js.Any], skipFilter = skipFilter.asInstanceOf[js.Any], snapshotSerializers = snapshotSerializers.asInstanceOf[js.Any], testEnvironment = testEnvironment.asInstanceOf[js.Any], testEnvironmentOptions = testEnvironmentOptions.asInstanceOf[js.Any], testFailureExitCode = testFailureExitCode.asInstanceOf[js.Any], testLocationInResults = testLocationInResults.asInstanceOf[js.Any], testMatch = testMatch.asInstanceOf[js.Any], testPathIgnorePatterns = testPathIgnorePatterns.asInstanceOf[js.Any], testRegex = testRegex.asInstanceOf[js.Any], testSequencer = testSequencer.asInstanceOf[js.Any], testURL = testURL.asInstanceOf[js.Any], timers = timers.asInstanceOf[js.Any], transformIgnorePatterns = transformIgnorePatterns.asInstanceOf[js.Any], useStderr = useStderr.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], watchPathIgnorePatterns = watchPathIgnorePatterns.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
-    if (collectCoverageFrom != null) __obj.updateDynamic("collectCoverageFrom")(collectCoverageFrom.asInstanceOf[js.Any])
-    if (coverageDirectory != null) __obj.updateDynamic("coverageDirectory")(coverageDirectory.asInstanceOf[js.Any])
-    if (coverageThreshold != null) __obj.updateDynamic("coverageThreshold")(coverageThreshold.asInstanceOf[js.Any])
-    if (dependencyExtractor != null) __obj.updateDynamic("dependencyExtractor")(dependencyExtractor.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (globalSetup != null) __obj.updateDynamic("globalSetup")(globalSetup.asInstanceOf[js.Any])
-    if (globalTeardown != null) __obj.updateDynamic("globalTeardown")(globalTeardown.asInstanceOf[js.Any])
-    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
-    if (prettierPath != null) __obj.updateDynamic("prettierPath")(prettierPath.asInstanceOf[js.Any])
-    if (projects != null) __obj.updateDynamic("projects")(projects.asInstanceOf[js.Any])
-    if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
-    if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir.asInstanceOf[js.Any])
-    if (roots != null) __obj.updateDynamic("roots")(roots.asInstanceOf[js.Any])
-    if (testResultsProcessor != null) __obj.updateDynamic("testResultsProcessor")(testResultsProcessor.asInstanceOf[js.Any])
-    if (testRunner != null) __obj.updateDynamic("testRunner")(testRunner.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (!js.isUndefined(collectCoverageFrom)) __obj.updateDynamic("collectCoverageFrom")(collectCoverageFrom.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverageDirectory)) __obj.updateDynamic("coverageDirectory")(coverageDirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverageThreshold)) __obj.updateDynamic("coverageThreshold")(coverageThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(dependencyExtractor)) __obj.updateDynamic("dependencyExtractor")(dependencyExtractor.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalSetup)) __obj.updateDynamic("globalSetup")(globalSetup.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalTeardown)) __obj.updateDynamic("globalTeardown")(globalTeardown.asInstanceOf[js.Any])
+    if (!js.isUndefined(preset)) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettierPath)) __obj.updateDynamic("prettierPath")(prettierPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(projects)) __obj.updateDynamic("projects")(projects.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolver)) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootDir)) __obj.updateDynamic("rootDir")(rootDir.asInstanceOf[js.Any])
+    if (!js.isUndefined(roots)) __obj.updateDynamic("roots")(roots.asInstanceOf[js.Any])
+    if (!js.isUndefined(testResultsProcessor)) __obj.updateDynamic("testResultsProcessor")(testResultsProcessor.asInstanceOf[js.Any])
+    if (!js.isUndefined(testRunner)) __obj.updateDynamic("testRunner")(testRunner.asInstanceOf[js.Any])
+    if (!js.isUndefined(transform)) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultOptions]
   }

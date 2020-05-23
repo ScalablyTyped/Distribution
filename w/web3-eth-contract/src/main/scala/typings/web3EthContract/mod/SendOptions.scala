@@ -16,12 +16,12 @@ object SendOptions {
   @scala.inline
   def apply(
     from: String,
-    gas: Int | Double = null,
+    gas: js.UndefOr[Double] = js.undefined,
     gasPrice: String = null,
     value: Double | String | ^  = null
   ): SendOptions = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
-    if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
+    if (!js.isUndefined(gas)) __obj.updateDynamic("gas")(gas.get.asInstanceOf[js.Any])
     if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendOptions]

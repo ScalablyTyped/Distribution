@@ -1,15 +1,19 @@
 package typings.amapJsSdk.AMap
 
-import typings.amapJsSdk.AnonImage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("AMap.Icon")
-@js.native
-class Icon () extends js.Object {
-  def this(options: AnonImage) = this()
-  def getImageSize(): Size = js.native
-  def setImageSize(size: Size): Unit = js.native
+trait Icon extends js.Object {
+  def getImageSize(): Size
+  def setImageSize(size: Size): Unit
+}
+
+object Icon {
+  @scala.inline
+  def apply(getImageSize: () => Size, setImageSize: Size => Unit): Icon = {
+    val __obj = js.Dynamic.literal(getImageSize = js.Any.fromFunction0(getImageSize), setImageSize = js.Any.fromFunction1(setImageSize))
+    __obj.asInstanceOf[Icon]
+  }
 }
 

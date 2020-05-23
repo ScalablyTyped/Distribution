@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait TreeViewSelectionChangeEvent[T] extends js.Object {
   /**
-  		 * Selected elements.
-  		 */
+    * Selected elements.
+    */
   val selection: js.Array[T]
 }
 

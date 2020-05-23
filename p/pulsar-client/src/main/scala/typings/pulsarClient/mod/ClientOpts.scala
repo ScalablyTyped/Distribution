@@ -9,7 +9,7 @@ trait ClientOpts extends js.Object {
     * Configure the authentication provider.
     * Default: No Authentication
     */
-  var authentication: js.UndefOr[AuthenticationTls] = js.undefined
+  var authentication: js.UndefOr[AuthenticationTls | AuthenticationToken] = js.undefined
   /**
     * The number of concurrent lookup requests that can be sent on each broker connection.
     * Setting a maximum helps to keep from overloading brokers.
@@ -62,26 +62,26 @@ object ClientOpts {
   @scala.inline
   def apply(
     serviceUrl: String,
-    authentication: AuthenticationTls = null,
-    concurrentLookupRequest: Int | Double = null,
-    ioThreads: Int | Double = null,
-    messageListenerThreads: Int | Double = null,
-    operationTimeoutSeconds: Int | Double = null,
-    statsIntervalInSeconds: Int | Double = null,
+    authentication: AuthenticationTls | AuthenticationToken = null,
+    concurrentLookupRequest: js.UndefOr[Double] = js.undefined,
+    ioThreads: js.UndefOr[Double] = js.undefined,
+    messageListenerThreads: js.UndefOr[Double] = js.undefined,
+    operationTimeoutSeconds: js.UndefOr[Double] = js.undefined,
+    statsIntervalInSeconds: js.UndefOr[Double] = js.undefined,
     tlsAllowInsecureConnection: js.UndefOr[Boolean] = js.undefined,
     tlsTrustCertsFilePath: String = null,
     tlsValidateHostname: js.UndefOr[Boolean] = js.undefined
   ): ClientOpts = {
     val __obj = js.Dynamic.literal(serviceUrl = serviceUrl.asInstanceOf[js.Any])
     if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
-    if (concurrentLookupRequest != null) __obj.updateDynamic("concurrentLookupRequest")(concurrentLookupRequest.asInstanceOf[js.Any])
-    if (ioThreads != null) __obj.updateDynamic("ioThreads")(ioThreads.asInstanceOf[js.Any])
-    if (messageListenerThreads != null) __obj.updateDynamic("messageListenerThreads")(messageListenerThreads.asInstanceOf[js.Any])
-    if (operationTimeoutSeconds != null) __obj.updateDynamic("operationTimeoutSeconds")(operationTimeoutSeconds.asInstanceOf[js.Any])
-    if (statsIntervalInSeconds != null) __obj.updateDynamic("statsIntervalInSeconds")(statsIntervalInSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(tlsAllowInsecureConnection)) __obj.updateDynamic("tlsAllowInsecureConnection")(tlsAllowInsecureConnection.asInstanceOf[js.Any])
+    if (!js.isUndefined(concurrentLookupRequest)) __obj.updateDynamic("concurrentLookupRequest")(concurrentLookupRequest.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ioThreads)) __obj.updateDynamic("ioThreads")(ioThreads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageListenerThreads)) __obj.updateDynamic("messageListenerThreads")(messageListenerThreads.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(operationTimeoutSeconds)) __obj.updateDynamic("operationTimeoutSeconds")(operationTimeoutSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(statsIntervalInSeconds)) __obj.updateDynamic("statsIntervalInSeconds")(statsIntervalInSeconds.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsAllowInsecureConnection)) __obj.updateDynamic("tlsAllowInsecureConnection")(tlsAllowInsecureConnection.get.asInstanceOf[js.Any])
     if (tlsTrustCertsFilePath != null) __obj.updateDynamic("tlsTrustCertsFilePath")(tlsTrustCertsFilePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(tlsValidateHostname)) __obj.updateDynamic("tlsValidateHostname")(tlsValidateHostname.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsValidateHostname)) __obj.updateDynamic("tlsValidateHostname")(tlsValidateHostname.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOpts]
   }
 }

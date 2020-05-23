@@ -1,11 +1,11 @@
 package typings.officeJs.Excel
 
-import typings.officeJs.AnonExpand
 import typings.officeJs.Excel.Interfaces.ChartAxisData
 import typings.officeJs.Excel.Interfaces.ChartAxisLoadOptions
 import typings.officeJs.Excel.Interfaces.ChartAxisUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Automatic
 import typings.officeJs.officeJsStrings.Billions
 import typings.officeJs.officeJsStrings.Category
@@ -52,33 +52,32 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartAxis")
 @js.native
-class ChartAxis () extends ClientObject {
+trait ChartAxis extends ClientObject {
   /**
     *
-    * Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
+    * Specifies the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
     *
     * [Api set: ExcelApi 1.8]
     */
   var alignment: ChartTickLabelAlignment | Center | Left | Right = js.native
   /**
     *
-    * Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only.
+    * Specifies the group for the specified axis. See Excel.ChartAxisGroup for details.
     *
     * [Api set: ExcelApi 1.7]
     */
   val axisGroup: ChartAxisGroup | Primary | Secondary = js.native
   /**
     *
-    * Returns or sets the base unit for the specified category axis.
+    * Specifies the base unit for the specified category axis.
     *
     * [Api set: ExcelApi 1.7]
     */
   var baseTimeUnit: ChartAxisTimeUnit | Days | Months | Years = js.native
   /**
     *
-    * Returns or sets the category axis type.
+    * Specifies the category axis type.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -88,7 +87,7 @@ class ChartAxis () extends ClientObject {
   var context_ChartAxis: RequestContext = js.native
   /**
     *
-    * Represents the custom axis display unit value. Read-only. To set this property, please use the SetCustomDisplayUnit(double) method.
+    * Specifies the custom axis display unit value. To set this property, please use the SetCustomDisplayUnit(double) method.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -102,63 +101,63 @@ class ChartAxis () extends ClientObject {
   var displayUnit: ChartAxisDisplayUnit | None | Hundreds | Thousands | TenThousands | HundredThousands | Millions | TenMillions | HundredMillions | Billions | Trillions | Custom = js.native
   /**
     *
-    * Represents the formatting of a chart object, which includes line and font formatting. Read-only.
+    * Represents the formatting of a chart object, which includes line and font formatting.
     *
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartAxisFormat = js.native
   /**
     *
-    * Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
+    * Specifies the height, in points, of the chart axis. Null if the axis is not visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   val height: Double = js.native
   /**
     *
-    * Represents whether value axis crosses the category axis between categories.
+    * Specifies if the value axis crosses the category axis between categories.
     *
     * [Api set: ExcelApi 1.8]
     */
   var isBetweenCategories: Boolean = js.native
   /**
     *
-    * Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible. Read-only.
+    * Specifies the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   val left: Double = js.native
   /**
     *
-    * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
+    * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
     *
     * [Api set: ExcelApi 1.9]
     */
   var linkNumberFormat: Boolean = js.native
   /**
     *
-    * Represents the base of the logarithm when using logarithmic scales.
+    * Specifies the base of the logarithm when using logarithmic scales.
     *
     * [Api set: ExcelApi 1.7]
     */
   var logBase: Double = js.native
   /**
     *
-    * Returns a Gridlines object that represents the major gridlines for the specified axis. Read-only.
+    * Returns a Gridlines object that represents the major gridlines for the specified axis.
     *
     * [Api set: ExcelApi 1.1]
     */
   val majorGridlines: ChartGridlines = js.native
   /**
     *
-    * Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+    * Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
     *
     * [Api set: ExcelApi 1.7]
     */
   var majorTickMark: ChartAxisTickMark | None | Cross | Inside | Outside = js.native
   /**
     *
-    * Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
+    * Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -186,21 +185,21 @@ class ChartAxis () extends ClientObject {
   var minimum: js.Any = js.native
   /**
     *
-    * Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
+    * Returns a Gridlines object that represents the minor gridlines for the specified axis.
     *
     * [Api set: ExcelApi 1.1]
     */
   val minorGridlines: ChartGridlines = js.native
   /**
     *
-    * Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+    * Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
     *
     * [Api set: ExcelApi 1.7]
     */
   var minorTickMark: ChartAxisTickMark | None | Cross | Inside | Outside = js.native
   /**
     *
-    * Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
+    * Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -214,119 +213,119 @@ class ChartAxis () extends ClientObject {
   var minorUnit: js.Any = js.native
   /**
     *
-    * Represents whether an axis is multilevel or not.
+    * Specifies if an axis is multilevel.
     *
     * [Api set: ExcelApi 1.8]
     */
   var multiLevel: Boolean = js.native
   /**
     *
-    * Represents the format code for the axis tick label.
+    * Specifies the format code for the axis tick label.
     *
     * [Api set: ExcelApi 1.8]
     */
   var numberFormat: String = js.native
   /**
     *
-    * Represents the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
+    * Specifies the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
     *
     * [Api set: ExcelApi 1.8]
     */
   var offset: Double = js.native
   /**
     *
-    * Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
+    * Specifies the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
     *
     * [Api set: ExcelApi 1.8]
     */
   var position: ChartAxisPosition | Automatic | Maximum | Minimum | Custom = js.native
   /**
     *
-    * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
+    * Specifies the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
     *
     * [Api set: ExcelApi 1.8]
     */
   val positionAt: Double = js.native
   /**
     *
-    * Represents whether Microsoft Excel plots data points from last to first.
+    * Specifies if Excel plots data points from last to first.
     *
     * [Api set: ExcelApi 1.7]
     */
   var reversePlotOrder: Boolean = js.native
   /**
     *
-    * Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+    * Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
     *
     * [Api set: ExcelApi 1.7]
     */
   var scaleType: ChartAxisScaleType | Linear | Logarithmic = js.native
   /**
     *
-    * Represents whether the axis display unit label is visible.
+    * Specifies if the axis display unit label is visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var showDisplayUnitLabel: Boolean = js.native
   /**
     *
-    * Represents the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+    * Specifies the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
     * [Api set: ExcelApi 1.8]
     */
   var textOrientation: js.Any = js.native
   /**
     *
-    * Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
+    * Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
     *
     * [Api set: ExcelApi 1.7]
     */
   var tickLabelPosition: ChartAxisTickLabelPosition | NextToAxis | High | Low | None = js.native
   /**
     *
-    * Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
+    * Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
     *
     * [Api set: ExcelApi 1.7]
     */
   var tickLabelSpacing: js.Any = js.native
   /**
     *
-    * Represents the number of categories or series between tick marks.
+    * Specifies the number of categories or series between tick marks.
     *
     * [Api set: ExcelApi 1.7]
     */
   var tickMarkSpacing: Double = js.native
   /**
     *
-    * Represents the axis title. Read-only.
+    * Represents the axis title.
     *
     * [Api set: ExcelApi 1.1]
     */
   val title: ChartAxisTitle = js.native
   /**
     *
-    * Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible. Read-only.
+    * Specifies the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   val top: Double = js.native
   /**
     *
-    * Represents the axis type. See Excel.ChartAxisType for details.
+    * Specifies the axis type. See Excel.ChartAxisType for details.
     *
     * [Api set: ExcelApi 1.7]
     */
   val `type`: ChartAxisType | Invalid | Category | Value | Series = js.native
   /**
     *
-    * A boolean value represents the visibility of the axis.
+    * Specifies if the axis is visible.
     *
     * [Api set: ExcelApi 1.7]
     */
   var visible: Boolean = js.native
   /**
     *
-    * Represents the width, in points, of the chart axis. Null if the axis is not visible. Read-only.
+    * Specifies the width, in points, of the chart axis. Null if the axis is not visible.
     *
     * [Api set: ExcelApi 1.7]
     */
@@ -338,7 +337,7 @@ class ChartAxis () extends ClientObject {
     */
   def load(): ChartAxis = js.native
   def load(options: ChartAxisLoadOptions): ChartAxis = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartAxis = js.native
+  def load(propertyNamesAndPaths: Expand): ChartAxis = js.native
   def load(propertyNames: String): ChartAxis = js.native
   def load(propertyNames: js.Array[String]): ChartAxis = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -373,7 +372,7 @@ class ChartAxis () extends ClientObject {
     */
   def setCustomDisplayUnit(value: Double): Unit = js.native
   /**
-    * Set the specified axis position where the other axis crosses at.
+    * Sets the specified axis position where the other axis crosses at.
     *
     * [Api set: ExcelApi 1.8]
     *

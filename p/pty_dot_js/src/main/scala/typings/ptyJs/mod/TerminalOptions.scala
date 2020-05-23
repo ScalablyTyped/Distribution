@@ -18,22 +18,22 @@ trait TerminalOptions extends js.Object {
 object TerminalOptions {
   @scala.inline
   def apply(
-    cols: Int | Double = null,
+    cols: js.UndefOr[Double] = js.undefined,
     cwd: String = null,
     env: js.Any = null,
-    gid: Int | Double = null,
+    gid: js.UndefOr[Double] = js.undefined,
     name: String = null,
-    rows: Int | Double = null,
-    uid: Int | Double = null
+    rows: js.UndefOr[Double] = js.undefined,
+    uid: js.UndefOr[Double] = js.undefined
   ): TerminalOptions = {
     val __obj = js.Dynamic.literal()
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalOptions]
   }
 }

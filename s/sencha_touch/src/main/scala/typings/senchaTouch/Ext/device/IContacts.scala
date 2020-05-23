@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.senchaTouch.Ext.IClass because Already inherited
 - typings.senchaTouch.Ext.IBase because Already inherited
 - typings.senchaTouch.Ext.mixin.IIdentifiable because Already inherited
@@ -103,7 +103,7 @@ object IContacts {
     if (getLocalizedLabel != null) __obj.updateDynamic("getLocalizedLabel")(js.Any.fromFunction1(getLocalizedLabel))
     if (getThumbnail != null) __obj.updateDynamic("getThumbnail")(js.Any.fromFunction1(getThumbnail))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (!js.isUndefined(includeImages)) __obj.updateDynamic("includeImages")(includeImages.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeImages)) __obj.updateDynamic("includeImages")(includeImages.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
@@ -124,7 +124,7 @@ object IContacts {
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setIncludeImages != null) __obj.updateDynamic("setIncludeImages")(js.Any.fromFunction1(setIncludeImages))
     if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))

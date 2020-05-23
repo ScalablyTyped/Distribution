@@ -55,10 +55,10 @@ object AuditLoggerOptions {
     server: Server = null
   ): AuditLoggerOptions = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
-    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.get.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(js.Any.fromFunction4(context))
     if (logBuffer != null) __obj.updateDynamic("logBuffer")(logBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(printLog)) __obj.updateDynamic("printLog")(printLog.asInstanceOf[js.Any])
+    if (!js.isUndefined(printLog)) __obj.updateDynamic("printLog")(printLog.get.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditLoggerOptions]
   }

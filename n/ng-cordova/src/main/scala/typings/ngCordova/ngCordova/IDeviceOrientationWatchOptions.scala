@@ -11,10 +11,10 @@ trait IDeviceOrientationWatchOptions extends js.Object {
 
 object IDeviceOrientationWatchOptions {
   @scala.inline
-  def apply(filter: Int | Double = null, frequency: Int | Double = null): IDeviceOrientationWatchOptions = {
+  def apply(filter: js.UndefOr[Double] = js.undefined, frequency: js.UndefOr[Double] = js.undefined): IDeviceOrientationWatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeviceOrientationWatchOptions]
   }
 }

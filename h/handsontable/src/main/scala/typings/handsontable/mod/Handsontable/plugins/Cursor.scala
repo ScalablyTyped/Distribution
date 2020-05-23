@@ -1,7 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.std.HTMLElement
-import typings.std.Window_
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Cursor extends js.Object {
   var cellWidth: Double = js.native
   var left: Double = js.native
   var leftRelative: Double = js.native
-  var rootWindow: Window_ = js.native
+  var rootWindow: Window = js.native
   var scrollLeft: Double = js.native
   var scrollTop: Double = js.native
   var top: Double = js.native

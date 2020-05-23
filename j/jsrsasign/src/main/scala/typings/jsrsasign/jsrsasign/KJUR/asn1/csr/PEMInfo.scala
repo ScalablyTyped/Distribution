@@ -1,19 +1,19 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.csr
 
-import typings.jsrsasign.AnonHexName
-import typings.jsrsasign.AnonObj
+import typings.jsrsasign.anon.HexName
+import typings.jsrsasign.anon.Obj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PEMInfo extends js.Object {
-  var pubkey: AnonObj
-  var subject: AnonHexName
+  var pubkey: Obj
+  var subject: HexName
 }
 
 object PEMInfo {
   @scala.inline
-  def apply(pubkey: AnonObj, subject: AnonHexName): PEMInfo = {
+  def apply(pubkey: Obj, subject: HexName): PEMInfo = {
     val __obj = js.Dynamic.literal(pubkey = pubkey.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[PEMInfo]
   }

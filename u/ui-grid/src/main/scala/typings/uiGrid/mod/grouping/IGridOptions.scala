@@ -43,10 +43,10 @@ object IGridOptions {
     groupingShowCounts: js.UndefOr[Boolean] = js.undefined
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableGroupHeaderSelection)) __obj.updateDynamic("enableGroupHeaderSelection")(enableGroupHeaderSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupHeaderSelection)) __obj.updateDynamic("enableGroupHeaderSelection")(enableGroupHeaderSelection.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping.get.asInstanceOf[js.Any])
     if (groupingNullLabel != null) __obj.updateDynamic("groupingNullLabel")(groupingNullLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupingShowCounts)) __obj.updateDynamic("groupingShowCounts")(groupingShowCounts.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingShowCounts)) __obj.updateDynamic("groupingShowCounts")(groupingShowCounts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

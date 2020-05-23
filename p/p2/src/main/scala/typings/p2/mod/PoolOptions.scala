@@ -10,9 +10,9 @@ trait PoolOptions extends js.Object {
 
 object PoolOptions {
   @scala.inline
-  def apply(size: Int | Double = null): PoolOptions = {
+  def apply(size: js.UndefOr[Double] = js.undefined): PoolOptions = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolOptions]
   }
 }

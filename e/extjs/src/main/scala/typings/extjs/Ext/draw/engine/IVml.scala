@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 
 trait IVml extends ISurface {
   /** [Method] Sets the size of the surface
-  		* @param width Object
-  		* @param height Object
-  		*/
+    * @param width Object
+    * @param height Object
+    */
   @JSName("setSize")
   var setSize_IVml: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], Unit]
   ] = js.undefined
   /** [Method] Changes the text in the sprite element
-  		* @param sprite Object
-  		* @param text Object
-  		*/
+    * @param sprite Object
+    * @param text Object
+    */
   @JSName("setText")
   var setText_IVml: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[js.Any], Unit]
@@ -54,7 +54,7 @@ object IVml {
     getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
     hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
     hasListeners: js.Any = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     inheritableStatics: js.Any = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IVml = null,
     isObservable: js.UndefOr[Boolean] = js.undefined,
@@ -83,7 +83,7 @@ object IVml {
     suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     uses: Array = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): IVml = {
     val __obj = js.Dynamic.literal()
     if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
@@ -110,10 +110,10 @@ object IVml {
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
@@ -133,13 +133,13 @@ object IVml {
     if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2(setSize))
     if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
     if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction2(setText))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVml]
   }
 }

@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,8 +14,4 @@ trait VirtualRenderStack extends js.Object {
   def showItem(id: String): Unit = js.native
   def showItem(id: Double): Unit = js.native
 }
-
-@JSGlobal("webix.VirtualRenderStack")
-@js.native
-object VirtualRenderStack extends TopLevel[VirtualRenderStack]
 

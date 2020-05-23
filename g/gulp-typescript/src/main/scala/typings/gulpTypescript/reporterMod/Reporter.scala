@@ -1,6 +1,6 @@
 package typings.gulpTypescript.reporterMod
 
-import typings.gulpTypescript.Typeofts
+import typings.gulpTypescript.anon.Typeofts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

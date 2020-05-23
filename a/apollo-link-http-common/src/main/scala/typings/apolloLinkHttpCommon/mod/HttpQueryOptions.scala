@@ -16,8 +16,8 @@ object HttpQueryOptions {
     includeQuery: js.UndefOr[Boolean] = js.undefined
   ): HttpQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeExtensions)) __obj.updateDynamic("includeExtensions")(includeExtensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeQuery)) __obj.updateDynamic("includeQuery")(includeQuery.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeExtensions)) __obj.updateDynamic("includeExtensions")(includeExtensions.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeQuery)) __obj.updateDynamic("includeQuery")(includeQuery.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpQueryOptions]
   }
 }

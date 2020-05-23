@@ -18,9 +18,9 @@ trait PollForThirdPartyJobsInput extends js.Object {
 
 object PollForThirdPartyJobsInput {
   @scala.inline
-  def apply(actionTypeId: ActionTypeId, maxBatchSize: Int | Double = null): PollForThirdPartyJobsInput = {
+  def apply(actionTypeId: ActionTypeId, maxBatchSize: js.UndefOr[MaxBatchSize] = js.undefined): PollForThirdPartyJobsInput = {
     val __obj = js.Dynamic.literal(actionTypeId = actionTypeId.asInstanceOf[js.Any])
-    if (maxBatchSize != null) __obj.updateDynamic("maxBatchSize")(maxBatchSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxBatchSize)) __obj.updateDynamic("maxBatchSize")(maxBatchSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollForThirdPartyJobsInput]
   }
 }

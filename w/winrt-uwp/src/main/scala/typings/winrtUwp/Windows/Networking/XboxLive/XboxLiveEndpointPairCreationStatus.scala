@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.XboxLive
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,35 +46,6 @@ object XboxLiveEndpointPairCreationStatus extends js.Object {
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
   sealed trait unexpectedInternalError extends XboxLiveEndpointPairCreationStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[XboxLiveEndpointPairCreationStatus with Double] = js.native
-  /* 4 */ @js.native
-  object canceled extends TopLevel[canceled with Double]
-  
-  /* 3 */ @js.native
-  object localSystemNotAuthorized extends TopLevel[localSystemNotAuthorized with Double]
-  
-  /* 2 */ @js.native
-  object noCompatibleNetworkPaths extends TopLevel[noCompatibleNetworkPaths with Double]
-  
-  /* 1 */ @js.native
-  object noLocalNetworks extends TopLevel[noLocalNetworks with Double]
-  
-  /* 7 */ @js.native
-  object refusedDueToConfiguration extends TopLevel[refusedDueToConfiguration with Double]
-  
-  /* 6 */ @js.native
-  object remoteSystemNotAuthorized extends TopLevel[remoteSystemNotAuthorized with Double]
-  
-  /* 0 */ @js.native
-  object succeeded extends TopLevel[succeeded with Double]
-  
-  /* 5 */ @js.native
-  object timedOut extends TopLevel[timedOut with Double]
-  
-  /* 8 */ @js.native
-  object unexpectedInternalError extends TopLevel[unexpectedInternalError with Double]
   
 }
 

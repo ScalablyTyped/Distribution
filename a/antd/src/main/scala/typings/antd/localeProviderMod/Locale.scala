@@ -1,7 +1,7 @@
 package typings.antd.localeProviderMod
 
-import typings.antd.AnonDefaultValidateMessages
-import typings.antd.PartialTransferLocale
+import typings.antd.anon.DefaultValidateMessages
+import typings.antd.anon.PartialTransferLocale
 import typings.antd.emptyMod.TransferLocale
 import typings.antd.generatePickerMod.PickerLocale
 import typings.antd.localeMod.ModalLocale
@@ -17,7 +17,7 @@ trait Locale extends js.Object {
   var Calendar: js.UndefOr[js.Object] = js.undefined
   var DatePicker: js.UndefOr[PickerLocale] = js.undefined
   var Empty: js.UndefOr[TransferLocale] = js.undefined
-  var Form: js.UndefOr[AnonDefaultValidateMessages] = js.undefined
+  var Form: js.UndefOr[DefaultValidateMessages] = js.undefined
   var Icon: js.UndefOr[js.Object] = js.undefined
   var Modal: js.UndefOr[ModalLocale] = js.undefined
   var PageHeader: js.UndefOr[js.Object] = js.undefined
@@ -40,7 +40,7 @@ object Locale {
     Calendar: js.Object = null,
     DatePicker: PickerLocale = null,
     Empty: TransferLocale = null,
-    Form: AnonDefaultValidateMessages = null,
+    Form: DefaultValidateMessages = null,
     Icon: js.Object = null,
     Modal: ModalLocale = null,
     PageHeader: js.Object = null,

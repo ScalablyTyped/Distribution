@@ -1,7 +1,7 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.AnonAuthenticationData
-import typings.mqttPacket.AnonPayload
+import typings.mqttPacket.anon.AuthenticationData
+import typings.mqttPacket.anon.Payload
 import typings.mqttPacket.mqttPacketNumbers.`3`
 import typings.mqttPacket.mqttPacketNumbers.`4`
 import typings.mqttPacket.mqttPacketNumbers.`5`
@@ -22,11 +22,11 @@ trait IConnectPacket
   var cmd_IConnectPacket: connect
   var keepalive: js.UndefOr[Double] = js.undefined
   var password: js.UndefOr[Buffer] = js.undefined
-  var properties: js.UndefOr[AnonAuthenticationData] = js.undefined
+  var properties: js.UndefOr[AuthenticationData] = js.undefined
   var protocolId: js.UndefOr[MQTT | MQIsdp] = js.undefined
   var protocolVersion: js.UndefOr[`4` | `5` | `3`] = js.undefined
   var username: js.UndefOr[String] = js.undefined
-  var will: js.UndefOr[AnonPayload] = js.undefined
+  var will: js.UndefOr[Payload] = js.undefined
 }
 
 object IConnectPacket {
@@ -35,21 +35,21 @@ object IConnectPacket {
     clientId: String,
     cmd: connect,
     clean: js.UndefOr[Boolean] = js.undefined,
-    keepalive: Int | Double = null,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
+    keepalive: js.UndefOr[Double] = js.undefined,
+    length: js.UndefOr[Double] = js.undefined,
+    messageId: js.UndefOr[Double] = js.undefined,
     password: Buffer = null,
-    properties: AnonAuthenticationData = null,
+    properties: AuthenticationData = null,
     protocolId: MQTT | MQIsdp = null,
     protocolVersion: `4` | `5` | `3` = null,
     username: String = null,
-    will: AnonPayload = null
+    will: Payload = null
   ): IConnectPacket = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any])
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
-    if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageId)) __obj.updateDynamic("messageId")(messageId.get.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (protocolId != null) __obj.updateDynamic("protocolId")(protocolId.asInstanceOf[js.Any])

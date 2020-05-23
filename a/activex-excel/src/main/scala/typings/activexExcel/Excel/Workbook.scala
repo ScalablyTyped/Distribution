@@ -33,9 +33,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Workbook")
 @js.native
-class Workbook protected () extends js.Object {
+trait Workbook extends js.Object {
   var AcceptLabelsInFormulas: Boolean = js.native
   var AccuracyVersion: Double = js.native
   val ActiveChart: Chart = js.native

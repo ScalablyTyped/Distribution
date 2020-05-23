@@ -10,9 +10,9 @@ trait ILockConstraintOptions extends js.Object {
 
 object ILockConstraintOptions {
   @scala.inline
-  def apply(maxForce: Int | Double = null): ILockConstraintOptions = {
+  def apply(maxForce: js.UndefOr[Double] = js.undefined): ILockConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxForce)) __obj.updateDynamic("maxForce")(maxForce.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILockConstraintOptions]
   }
 }

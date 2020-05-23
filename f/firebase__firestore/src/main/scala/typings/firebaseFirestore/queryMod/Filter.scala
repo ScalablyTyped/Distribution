@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@firebase/firestore/dist/lib/src/core/query", "Filter")
+@JSImport("@firebase/firestore/dist/packages/firestore/src/core/query", "Filter")
 @js.native
 abstract class Filter () extends js.Object {
   def canonicalId(): String = js.native

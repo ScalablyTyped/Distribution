@@ -9,83 +9,83 @@ import scala.scalajs.js.annotation._
   */
 trait MediaQueryType extends js.Object {
   /**
-  	 * The album artist to filter on. Value should be a String.
-  	 */
+    * The album artist to filter on. Value should be a String.
+    */
   var albumArtist: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
-  	 * The album artist persistent ID to filter on. Value should be a Number.
-  	 */
+    * The album artist persistent ID to filter on. Value should be a Number.
+    */
   var albumArtistPersistentID: js.UndefOr[MediaQueryInfoType | Double] = js.undefined
   /**
-  	 * The album persistent ID to filter on. Value should be a Number.
-  	 */
+    * The album persistent ID to filter on. Value should be a Number.
+    */
   var albumPersistentID: js.UndefOr[MediaQueryInfoType | Double] = js.undefined
   /**
-  	 * The album title to filter on. Value should be a String.
-  	 */
+    * The album title to filter on. Value should be a String.
+    */
   var albumTitle: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
-  	 * The artist to filter on. Value should be a String.
-  	 */
+    * The artist to filter on. Value should be a String.
+    */
   var artist: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
-  	 * The composer to filter on. Value should be a String.
-  	 */
+    * The composer to filter on. Value should be a String.
+    */
   var composer: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
-  	 * The composer persistent ID to filter on. Value should be a Number.
-  	 */
+    * The composer persistent ID to filter on. Value should be a Number.
+    */
   var composerPersistentID: js.UndefOr[MediaQueryInfoType | Double] = js.undefined
   /**
-  	 * The genre to filter on. Value should be a String.
-  	 */
+    * The genre to filter on. Value should be a String.
+    */
   var genre: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
-  	 * The genre persistent ID to filter on. Value should be a Number.
-  	 */
+    * The genre persistent ID to filter on. Value should be a Number.
+    */
   var genrePersistentID: js.UndefOr[MediaQueryInfoType | Double] = js.undefined
   /**
-  	 * A constant that specifies the ordering of the result array.
-  	 */
+    * A constant that specifies the ordering of the result array.
+    */
   var grouping: js.UndefOr[Double] = js.undefined
   /**
-  	 * Filter by whether or not the item is a protected asset.
-  	 * Value should be a Boolean.
-  	 */
+    * Filter by whether or not the item is a protected asset.
+    * Value should be a Boolean.
+    */
   var hasProtectedAsset: js.UndefOr[MediaQueryInfoType | Boolean] = js.undefined
   /**
-  	 * Filter by whether or not the item is a cloud item.
-  	 * Value should be a Boolean.
-  	 */
+    * Filter by whether or not the item is a cloud item.
+    * Value should be a Boolean.
+    */
   var isCloudItem: js.UndefOr[MediaQueryInfoType | Boolean] = js.undefined
   /**
-  	 * Filter by whether or not the item is a compilation.
-  	 * The value should be a Boolean.
-  	 */
+    * Filter by whether or not the item is a compilation.
+    * The value should be a Boolean.
+    */
   var isCompilation: js.UndefOr[MediaQueryInfoType | Boolean] = js.undefined
   /**
-  	 * The media type to filter on.
-  	 */
+    * The media type to filter on.
+    */
   var mediaType: js.UndefOr[MediaQueryInfoType | Double] = js.undefined
   /**
-  	 * The persistent ID to filter on. Value should be a Number.
-  	 */
+    * The persistent ID to filter on. Value should be a Number.
+    */
   var persistentID: js.UndefOr[MediaQueryInfoType | Double] = js.undefined
   /**
-  	 * The play count to filter on. Value should be a Number.
-  	 */
+    * The play count to filter on. Value should be a Number.
+    */
   var playCount: js.UndefOr[MediaQueryInfoType | Double] = js.undefined
   /**
-  	 * The podcast persistent ID to filter on. Value should be a Number.
-  	 */
+    * The podcast persistent ID to filter on. Value should be a Number.
+    */
   var podcastPersistentID: js.UndefOr[MediaQueryInfoType | Double] = js.undefined
   /**
-  	 * The podcast title to filter on. Value should be a String.
-  	 */
+    * The podcast title to filter on. Value should be a String.
+    */
   var podcastTitle: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
   /**
-  	 * The title to filter on. Value should be a String.
-  	 */
+    * The title to filter on. Value should be a String.
+    */
   var title: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
 }
 
@@ -101,7 +101,7 @@ object MediaQueryType {
     composerPersistentID: MediaQueryInfoType | Double = null,
     genre: MediaQueryInfoType | java.lang.String = null,
     genrePersistentID: MediaQueryInfoType | Double = null,
-    grouping: Int | Double = null,
+    grouping: js.UndefOr[Double] = js.undefined,
     hasProtectedAsset: MediaQueryInfoType | Boolean = null,
     isCloudItem: MediaQueryInfoType | Boolean = null,
     isCompilation: MediaQueryInfoType | Boolean = null,
@@ -122,7 +122,7 @@ object MediaQueryType {
     if (composerPersistentID != null) __obj.updateDynamic("composerPersistentID")(composerPersistentID.asInstanceOf[js.Any])
     if (genre != null) __obj.updateDynamic("genre")(genre.asInstanceOf[js.Any])
     if (genrePersistentID != null) __obj.updateDynamic("genrePersistentID")(genrePersistentID.asInstanceOf[js.Any])
-    if (grouping != null) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
+    if (!js.isUndefined(grouping)) __obj.updateDynamic("grouping")(grouping.get.asInstanceOf[js.Any])
     if (hasProtectedAsset != null) __obj.updateDynamic("hasProtectedAsset")(hasProtectedAsset.asInstanceOf[js.Any])
     if (isCloudItem != null) __obj.updateDynamic("isCloudItem")(isCloudItem.asInstanceOf[js.Any])
     if (isCompilation != null) __obj.updateDynamic("isCompilation")(isCompilation.asInstanceOf[js.Any])

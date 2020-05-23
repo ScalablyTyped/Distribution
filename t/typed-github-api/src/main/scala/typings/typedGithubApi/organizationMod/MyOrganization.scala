@@ -1,6 +1,6 @@
 package typings.typedGithubApi.organizationMod
 
-import typings.typedGithubApi.AnonName
+import typings.typedGithubApi.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait MyOrganization extends js.Object {
   var defaultRepositorySettings: String
   var diskUsage: Double
   var membersCanCreateRepositories: Boolean
-  var plan: AnonName
+  var plan: Name
   var privateGists: Double
   var privateReposOwned: Double
   var privateReposTotal: Double
@@ -25,7 +25,7 @@ object MyOrganization {
     defaultRepositorySettings: String,
     diskUsage: Double,
     membersCanCreateRepositories: Boolean,
-    plan: AnonName,
+    plan: Name,
     privateGists: Double,
     privateReposOwned: Double,
     privateReposTotal: Double

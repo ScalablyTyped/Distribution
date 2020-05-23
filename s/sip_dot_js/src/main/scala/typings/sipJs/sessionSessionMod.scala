@@ -2,11 +2,12 @@ package typings.sipJs
 
 import org.scalablytyped.runtime.TopLevel
 import typings.sipJs.bodyMod.Body
-import typings.sipJs.byeMod.OutgoingByeRequest
 import typings.sipJs.inviteMod.OutgoingInviteRequest
 import typings.sipJs.inviteMod.OutgoingInviteRequestDelegate
 import typings.sipJs.messagesMod.URI
+import typings.sipJs.methodsByeMod.OutgoingByeRequest
 import typings.sipJs.methodsInfoMod.OutgoingInfoRequest
+import typings.sipJs.methodsMessageMod.OutgoingMessageRequest
 import typings.sipJs.notifyMod.OutgoingNotifyRequest
 import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.outgoingRequestMod.RequestOptions
@@ -80,6 +81,16 @@ object sessionSessionMod extends js.Object {
     def invite(): OutgoingInviteRequest = js.native
     def invite(delegate: OutgoingInviteRequestDelegate): OutgoingInviteRequest = js.native
     def invite(delegate: OutgoingInviteRequestDelegate, options: RequestOptions): OutgoingInviteRequest = js.native
+    /**
+      * Send MESSAGE request.
+      * Deliver a message during a session.
+      * https://tools.ietf.org/html/rfc3428#section-4
+      * @param delegate - Request delegate.
+      * @param options - Options bucket.
+      */
+    def message(): OutgoingMessageRequest = js.native
+    def message(delegate: OutgoingRequestDelegate): OutgoingMessageRequest = js.native
+    def message(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingMessageRequest = js.native
     def notify(delegate: OutgoingRequestDelegate): OutgoingNotifyRequest = js.native
     def notify(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingNotifyRequest = js.native
     /**
@@ -93,7 +104,7 @@ object sessionSessionMod extends js.Object {
     def prack(delegate: OutgoingRequestDelegate): OutgoingPrackRequest = js.native
     def prack(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingPrackRequest = js.native
     /**
-      * Send REFER request (in dialog).
+      * Send REFER request.
       * Transfer a session.
       * https://tools.ietf.org/html/rfc3515#section-2.4.1
       * @param delegate - Request delegate.

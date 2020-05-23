@@ -1,6 +1,6 @@
 package typings.seen.mod
 
-import typings.seen.PartialCSSStyleDeclaratio
+import typings.seen.anon.PartialCSSStyleDeclaratio
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

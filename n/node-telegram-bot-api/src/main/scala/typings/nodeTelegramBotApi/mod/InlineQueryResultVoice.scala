@@ -26,14 +26,14 @@ object InlineQueryResultVoice {
     caption: String = null,
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null,
-    voice_duration: Int | Double = null
+    voice_duration: js.UndefOr[Double] = js.undefined
   ): InlineQueryResultVoice = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], voice_url = voice_url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (voice_duration != null) __obj.updateDynamic("voice_duration")(voice_duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(voice_duration)) __obj.updateDynamic("voice_duration")(voice_duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultVoice]
   }
 }

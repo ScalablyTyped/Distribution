@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.`class-breaks`
 import typings.arcgisJsApi.arcgisJsApiStrings.`percent-of-total`
 import typings.arcgisJsApi.arcgisJsApiStrings.field
@@ -133,8 +132,4 @@ trait ClassBreaksRenderer
     */
   def removeClassBreakInfo(min: Double, max: Double): Unit = js.native
 }
-
-@JSGlobal("__esri.ClassBreaksRenderer")
-@js.native
-object ClassBreaksRenderer extends TopLevel[ClassBreaksRendererConstructor]
 

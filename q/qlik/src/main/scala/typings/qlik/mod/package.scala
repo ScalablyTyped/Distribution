@@ -11,7 +11,7 @@ package object mod {
   type NxMeasureInfo = typings.qlik.mod.ColumnInfo
   type Paint = js.ThisFunction10[
     /* this */ typings.qlik.mod.ExtensionContext, 
-    /* $element */ js.UndefOr[typings.jquery.JQuery_[typings.std.HTMLElement]], 
+    /* $element */ js.UndefOr[typings.jquery.JQuery[typings.std.HTMLElement]], 
     /* layout */ js.UndefOr[typings.qlik.mod.Layout], 
     /* qDimensionInfo */ js.UndefOr[typings.qlik.mod.NxDimensionInfo], 
     /* qMeasureInfo */ js.UndefOr[typings.qlik.mod.NxDimensionInfo], 

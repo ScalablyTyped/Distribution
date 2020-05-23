@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,4 @@ trait FeatureType
     */
   var templates: js.Array[FeatureTemplate] = js.native
 }
-
-@JSGlobal("__esri.FeatureType")
-@js.native
-object FeatureType extends TopLevel[FeatureTypeConstructor]
 

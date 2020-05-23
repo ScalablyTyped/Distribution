@@ -31,7 +31,7 @@ package object DataTables {
     /* title */ java.lang.String, 
     java.lang.String
   ]
-  type FunctionButtonCustomize = js.Function1[/* win */ typings.std.Window_ | java.lang.String, scala.Unit]
+  type FunctionButtonCustomize = js.Function1[/* win */ typings.std.Window | java.lang.String, scala.Unit]
   type FunctionButtonCustomizeData = js.Function1[/* content */ js.Any, scala.Unit]
   type FunctionButtonInit = js.Function3[
     /* dt */ typings.datatablesNetButtons.DataTables.Api, 

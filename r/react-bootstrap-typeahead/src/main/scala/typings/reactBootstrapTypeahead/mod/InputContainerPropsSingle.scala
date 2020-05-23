@@ -5,7 +5,7 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.both
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.combobox
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.list
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.listbox
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,16 +23,16 @@ trait InputContainerPropsSingle[T /* <: TypeaheadModel */] extends js.Object {
   var placeholder: String | Null
   var role: combobox
   var value: String
-  def onBlur(e: Event_): Unit
+  def onBlur(e: Event): Unit
   def onChange(selected: js.Array[T]): Unit
-  def onClick(e: Event_): Unit
-  def onFocus(e: Event_): Unit
-  def onKeyDown(e: Event_): Unit
+  def onClick(e: Event): Unit
+  def onFocus(e: Event): Unit
+  def onKeyDown(e: Event): Unit
 }
 
 object InputContainerPropsSingle {
   @scala.inline
-  def apply[T /* <: TypeaheadModel */](
+  def apply[T](
     `aria-activedescendant`: String,
     `aria-autocomplete`: list | both,
     `aria-expanded`: Boolean,
@@ -40,24 +40,22 @@ object InputContainerPropsSingle {
     `aria-owns`: String,
     autoComplete: String,
     disabled: Boolean,
-    onBlur: Event_ => Unit,
+    onBlur: Event => Unit,
     onChange: js.Array[T] => Unit,
-    onClick: Event_ => Unit,
-    onFocus: Event_ => Unit,
-    onKeyDown: Event_ => Unit,
+    onClick: Event => Unit,
+    onFocus: Event => Unit,
+    onKeyDown: Event => Unit,
     role: combobox,
     value: String,
     inputRef: LegacyRef[HTMLInputElement] = null,
     placeholder: String = null
   ): InputContainerPropsSingle[T] = {
-    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], inputRef = inputRef.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputContainerPropsSingle[T]]
   }
 }

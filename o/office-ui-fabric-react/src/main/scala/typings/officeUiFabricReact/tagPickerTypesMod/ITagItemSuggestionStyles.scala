@@ -12,9 +12,9 @@ trait ITagItemSuggestionStyles extends js.Object {
 
 object ITagItemSuggestionStyles {
   @scala.inline
-  def apply(suggestionTextOverflow: IStyle = null): ITagItemSuggestionStyles = {
+  def apply(suggestionTextOverflow: js.UndefOr[Null | IStyle] = js.undefined): ITagItemSuggestionStyles = {
     val __obj = js.Dynamic.literal()
-    if (suggestionTextOverflow != null) __obj.updateDynamic("suggestionTextOverflow")(suggestionTextOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestionTextOverflow)) __obj.updateDynamic("suggestionTextOverflow")(suggestionTextOverflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITagItemSuggestionStyles]
   }
 }

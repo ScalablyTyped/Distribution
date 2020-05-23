@@ -23,18 +23,18 @@ trait IBrowseCarouselCardItem extends js.Object {
 object IBrowseCarouselCardItem {
   @scala.inline
   def apply(
-    description: String = null,
-    footer: String = null,
-    image: IImage = null,
-    openUriAction: IOpenUrlAction = null,
-    title: String = null
+    description: js.UndefOr[Null | String] = js.undefined,
+    footer: js.UndefOr[Null | String] = js.undefined,
+    image: js.UndefOr[Null | IImage] = js.undefined,
+    openUriAction: js.UndefOr[Null | IOpenUrlAction] = js.undefined,
+    title: js.UndefOr[Null | String] = js.undefined
   ): IBrowseCarouselCardItem = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (openUriAction != null) __obj.updateDynamic("openUriAction")(openUriAction.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (!js.isUndefined(image)) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(openUriAction)) __obj.updateDynamic("openUriAction")(openUriAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBrowseCarouselCardItem]
   }
 }

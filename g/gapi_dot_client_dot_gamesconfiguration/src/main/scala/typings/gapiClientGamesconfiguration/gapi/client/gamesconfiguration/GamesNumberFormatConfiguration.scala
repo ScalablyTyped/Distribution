@@ -26,13 +26,13 @@ object GamesNumberFormatConfiguration {
   @scala.inline
   def apply(
     currencyCode: String = null,
-    numDecimalPlaces: Int | Double = null,
+    numDecimalPlaces: js.UndefOr[Double] = js.undefined,
     numberFormatType: String = null,
     suffix: GamesNumberAffixConfiguration = null
   ): GamesNumberFormatConfiguration = {
     val __obj = js.Dynamic.literal()
     if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (numDecimalPlaces != null) __obj.updateDynamic("numDecimalPlaces")(numDecimalPlaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(numDecimalPlaces)) __obj.updateDynamic("numDecimalPlaces")(numDecimalPlaces.get.asInstanceOf[js.Any])
     if (numberFormatType != null) __obj.updateDynamic("numberFormatType")(numberFormatType.asInstanceOf[js.Any])
     if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamesNumberFormatConfiguration]

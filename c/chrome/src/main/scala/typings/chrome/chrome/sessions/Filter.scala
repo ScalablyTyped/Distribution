@@ -14,9 +14,9 @@ trait Filter extends js.Object {
 
 object Filter {
   @scala.inline
-  def apply(maxResults: Int | Double = null): Filter = {
+  def apply(maxResults: js.UndefOr[Double] = js.undefined): Filter = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
 }

@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej.ComboBox
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +21,6 @@ object SortOrder extends js.Object {
   ///The data source is not sorting.
   @js.native
   sealed trait None extends SortOrder
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SortOrder with Double] = js.native
-  /* 1 */ @js.native
-  object Ascending extends TopLevel[Ascending with Double]
-  
-  /* 2 */ @js.native
-  object Descending extends TopLevel[Descending with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
   
 }
 

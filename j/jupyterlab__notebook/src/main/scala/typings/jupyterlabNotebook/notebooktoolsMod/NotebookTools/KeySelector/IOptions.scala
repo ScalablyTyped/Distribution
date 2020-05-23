@@ -65,14 +65,14 @@ object IOptions {
   def apply(
     key: String,
     optionsMap: ReadonlyPartialJSONObject,
-    default: ReadonlyPartialJSONValue = null,
+    default: js.UndefOr[Null | ReadonlyPartialJSONValue] = js.undefined,
     getter: /* cell */ Cell => js.UndefOr[ReadonlyPartialJSONValue] = null,
     setter: (/* cell */ Cell, /* value */ js.UndefOr[ReadonlyPartialJSONValue]) => Unit = null,
     title: String = null,
     validCellTypes: js.Array[CellType] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], optionsMap = optionsMap.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (getter != null) __obj.updateDynamic("getter")(js.Any.fromFunction1(getter))
     if (setter != null) __obj.updateDynamic("setter")(js.Any.fromFunction2(setter))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

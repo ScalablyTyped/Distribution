@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Adds a watermark image to the CDN (Content Delivery Network) live stream in {@link setLiveTranscoding}.
+  * Configurations for the watermark image to put on top of the video in {@link setLiveTranscoding}.
   *
   * **Since**
   * <br>&emsp;&emsp;&emsp;*3.0.0*
   */
 trait TranscodingWatermark extends js.Object {
   /**
-    * The height of the watermark image.
+    * The height (pixel) of the watermark image.
     *
     * Integer only. The value range is [0,10000]. The default value is 160.
     */
@@ -20,23 +20,23 @@ trait TranscodingWatermark extends js.Object {
   /**
     * The HTTP/HTTPS URL address of the image on the broadcasting video.
     *
-    * ASCII characters only. The maximum length of this parameter is 1024 bytes. Only supports online PNG files.
+    * ASCII characters only. The maximum length of this parameter is 1024 bytes. Supports online PNG only.
     */
   var url: String
   /**
-    * The width of the watermark image.
+    * The width (pixel) of the watermark image.
     *
     * Integer only. The value range is [0,10000]. The default value is 160.
     */
   var width: js.UndefOr[Double] = js.undefined
   /**
-    * The position of the image on the upper left of the broadcasting video on the horizontal axis.
+    * The horizontal distance (pixel) between the watermark image's top-left corner and the video's top-left corner.
     *
     * Integer only. The value range is [0,10000]. The default value is 0.
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
-    * The position of the image on the upper left of the broadcasting video on the vertical axis.
+    * The vertical distance (pixel) between the watermark image's top-left corner and the video's top-left corner.
     *
     * Integer only. The value range is [0,10000]. The default value is 0.
     */
@@ -47,16 +47,16 @@ object TranscodingWatermark {
   @scala.inline
   def apply(
     url: String,
-    height: Int | Double = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    height: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined,
+    x: js.UndefOr[Double] = js.undefined,
+    y: js.UndefOr[Double] = js.undefined
   ): TranscodingWatermark = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranscodingWatermark]
   }
 }

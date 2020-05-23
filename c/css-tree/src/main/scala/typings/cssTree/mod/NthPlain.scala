@@ -21,10 +21,9 @@ object NthPlain {
     loc: CssLocation = null,
     selector: SelectorListPlain = null
   ): NthPlain = {
-    val __obj = js.Dynamic.literal(nth = nth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(nth = nth.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[NthPlain]
   }
 }

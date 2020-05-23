@@ -1,6 +1,6 @@
 package typings.workboxWindow.workboxEventMapMod
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.ServiceWorker
 import typings.workboxWindow.workboxMod.Workbox
 import scala.scalajs.js
@@ -14,7 +14,7 @@ trait WorkboxUpdatableEvent extends WorkboxExtendableEvent {
 object WorkboxUpdatableEvent {
   @scala.inline
   def apply(
-    originalEvent: Event_,
+    originalEvent: Event,
     sw: ServiceWorker,
     target: Workbox,
     `type`: String,
@@ -22,7 +22,7 @@ object WorkboxUpdatableEvent {
   ): WorkboxUpdatableEvent = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUpdate)) __obj.updateDynamic("isUpdate")(isUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUpdate)) __obj.updateDynamic("isUpdate")(isUpdate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkboxUpdatableEvent]
   }
 }

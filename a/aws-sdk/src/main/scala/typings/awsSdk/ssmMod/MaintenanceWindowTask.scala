@@ -11,7 +11,7 @@ trait MaintenanceWindowTask extends js.Object {
     */
   var Description: js.UndefOr[MaintenanceWindowDescription] = js.native
   /**
-    * Information about an Amazon S3 bucket to write task-level logs to.   LoggingInfo has been deprecated. To specify an S3 bucket to contain logs, instead use the OutputS3BucketName and OutputS3KeyPrefix options in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters. 
+    * Information about an S3 bucket to write task-level logs to.   LoggingInfo has been deprecated. To specify an S3 bucket to contain logs, instead use the OutputS3BucketName and OutputS3KeyPrefix options in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters. 
     */
   var LoggingInfo: js.UndefOr[typings.awsSdk.ssmMod.LoggingInfo] = js.native
   /**
@@ -68,7 +68,7 @@ object MaintenanceWindowTask {
     MaxConcurrency: MaxConcurrency = null,
     MaxErrors: MaxErrors = null,
     Name: MaintenanceWindowName = null,
-    Priority: Int | Double = null,
+    Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined,
     ServiceRoleArn: ServiceRole = null,
     Targets: Targets = null,
     TaskArn: MaintenanceWindowTaskArn = null,
@@ -83,7 +83,7 @@ object MaintenanceWindowTask {
     if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency.asInstanceOf[js.Any])
     if (MaxErrors != null) __obj.updateDynamic("MaxErrors")(MaxErrors.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     if (TaskArn != null) __obj.updateDynamic("TaskArn")(TaskArn.asInstanceOf[js.Any])

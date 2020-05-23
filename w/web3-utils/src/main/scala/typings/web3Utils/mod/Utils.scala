@@ -2,7 +2,7 @@ package typings.web3Utils.mod
 
 import typings.bnJs.mod.^
 import typings.std.Uint8Array
-import typings.web3Utils.AnonR
+import typings.web3Utils.anon.R
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait Utils extends js.Object {
   def fromWei(value: String, unit: Unit): String = js.native
   def fromWei(value: ^): String = js.native
   def fromWei(value: ^, unit: Unit): String = js.native
-  def getSignatureParameters(signature: String): AnonR = js.native
+  def getSignatureParameters(signature: String): R = js.native
   def getUnitValue(unit: Unit): String = js.native
   def hexToAscii(string: String): String = js.native
   def hexToBytes(hex: Hex): js.Array[Double] = js.native

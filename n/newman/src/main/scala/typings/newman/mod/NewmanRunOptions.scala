@@ -138,14 +138,14 @@ object NewmanRunOptions {
     collection: Collection | CollectionDefinition | String,
     bail: Boolean | (js.Array[folder | failure]) = null,
     color: on | off | auto = null,
-    delayRequest: Int | Double = null,
+    delayRequest: js.UndefOr[Double] = js.undefined,
     environment: VariableScope | VariableScopeDefinition | String = null,
     folder: String | js.Array[String] = null,
     globals: VariableScope | VariableScopeDefinition | String = null,
     ignoreRedirects: js.UndefOr[Boolean] = js.undefined,
     insecure: js.UndefOr[Boolean] = js.undefined,
     insecureFileRead: js.UndefOr[Boolean] = js.undefined,
-    iterationCount: Int | Double = null,
+    iterationCount: js.UndefOr[Double] = js.undefined,
     iterationData: js.Any = null,
     reporter: js.Any = null,
     reporters: String | js.Array[String] = null,
@@ -153,32 +153,32 @@ object NewmanRunOptions {
     sslClientKey: String = null,
     sslClientPassphrase: String = null,
     suppressExitCode: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    timeoutRequest: Int | Double = null,
-    timeoutScript: Int | Double = null,
+    timeout: js.UndefOr[Double] = js.undefined,
+    timeoutRequest: js.UndefOr[Double] = js.undefined,
+    timeoutScript: js.UndefOr[Double] = js.undefined,
     workingDir: String = null
   ): NewmanRunOptions = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
     if (bail != null) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (delayRequest != null) __obj.updateDynamic("delayRequest")(delayRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayRequest)) __obj.updateDynamic("delayRequest")(delayRequest.get.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreRedirects)) __obj.updateDynamic("ignoreRedirects")(ignoreRedirects.asInstanceOf[js.Any])
-    if (!js.isUndefined(insecure)) __obj.updateDynamic("insecure")(insecure.asInstanceOf[js.Any])
-    if (!js.isUndefined(insecureFileRead)) __obj.updateDynamic("insecureFileRead")(insecureFileRead.asInstanceOf[js.Any])
-    if (iterationCount != null) __obj.updateDynamic("iterationCount")(iterationCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreRedirects)) __obj.updateDynamic("ignoreRedirects")(ignoreRedirects.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insecure)) __obj.updateDynamic("insecure")(insecure.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(insecureFileRead)) __obj.updateDynamic("insecureFileRead")(insecureFileRead.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterationCount)) __obj.updateDynamic("iterationCount")(iterationCount.get.asInstanceOf[js.Any])
     if (iterationData != null) __obj.updateDynamic("iterationData")(iterationData.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     if (sslClientCert != null) __obj.updateDynamic("sslClientCert")(sslClientCert.asInstanceOf[js.Any])
     if (sslClientKey != null) __obj.updateDynamic("sslClientKey")(sslClientKey.asInstanceOf[js.Any])
     if (sslClientPassphrase != null) __obj.updateDynamic("sslClientPassphrase")(sslClientPassphrase.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressExitCode)) __obj.updateDynamic("suppressExitCode")(suppressExitCode.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timeoutRequest != null) __obj.updateDynamic("timeoutRequest")(timeoutRequest.asInstanceOf[js.Any])
-    if (timeoutScript != null) __obj.updateDynamic("timeoutScript")(timeoutScript.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressExitCode)) __obj.updateDynamic("suppressExitCode")(suppressExitCode.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutRequest)) __obj.updateDynamic("timeoutRequest")(timeoutRequest.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutScript)) __obj.updateDynamic("timeoutScript")(timeoutScript.get.asInstanceOf[js.Any])
     if (workingDir != null) __obj.updateDynamic("workingDir")(workingDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewmanRunOptions]
   }

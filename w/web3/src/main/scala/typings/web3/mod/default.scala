@@ -5,7 +5,6 @@ import typings.node.netMod.Socket
 import typings.web3Bzz.mod.Bzz
 import typings.web3Core.mod.Extension
 import typings.web3Core.mod.Providers
-import typings.web3Core.mod.provider
 import typings.web3Eth.mod.Eth
 import typings.web3Shh.mod.Shh
 import typings.web3Utils.mod.Utils
@@ -16,14 +15,14 @@ import scala.scalajs.js.annotation._
 @JSImport("web3", JSImport.Default)
 @js.native
 class default () extends Web3 {
-  def this(provider: provider) = this()
-  def this(provider: provider, net: Socket) = this()
+  def this(provider: typings.web3Core.mod.provider) = this()
+  def this(provider: typings.web3Core.mod.provider, net: Socket) = this()
   /* CompleteClass */
   override var BatchRequest: Instantiable0[typings.web3Core.mod.BatchRequest] = js.native
   /* CompleteClass */
   override var bzz: Bzz = js.native
   /* CompleteClass */
-  override val currentProvider: provider = js.native
+  override val currentProvider: typings.web3Core.mod.provider = js.native
   /* CompleteClass */
   override var defaultAccount: String | Null = js.native
   /* CompleteClass */
@@ -41,7 +40,7 @@ class default () extends Web3 {
   /* CompleteClass */
   override def extend(extension: Extension): js.Any = js.native
   /* CompleteClass */
-  override def setProvider(provider: provider): Boolean = js.native
+  override def setProvider(provider: typings.web3Core.mod.provider): Boolean = js.native
 }
 
 /* static members */

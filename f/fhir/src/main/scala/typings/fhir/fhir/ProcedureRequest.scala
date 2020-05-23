@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A request for a procedure or diagnostic to be performed
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fhir.fhir.Resource because Already inherited */ trait ProcedureRequest extends DomainResource {
   /**
     * Contains extended information for property 'asNeededBoolean'.
@@ -220,7 +220,7 @@ object ProcedureRequest {
     if (_priority != null) __obj.updateDynamic("_priority")(_priority.asInstanceOf[js.Any])
     if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
     if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (!js.isUndefined(asNeededBoolean)) __obj.updateDynamic("asNeededBoolean")(asNeededBoolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(asNeededBoolean)) __obj.updateDynamic("asNeededBoolean")(asNeededBoolean.get.asInstanceOf[js.Any])
     if (asNeededCodeableConcept != null) __obj.updateDynamic("asNeededCodeableConcept")(asNeededCodeableConcept.asInstanceOf[js.Any])
     if (authoredOn != null) __obj.updateDynamic("authoredOn")(authoredOn.asInstanceOf[js.Any])
     if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn.asInstanceOf[js.Any])
@@ -229,7 +229,7 @@ object ProcedureRequest {
     if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotPerform)) __obj.updateDynamic("doNotPerform")(doNotPerform.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotPerform)) __obj.updateDynamic("doNotPerform")(doNotPerform.get.asInstanceOf[js.Any])
     if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])

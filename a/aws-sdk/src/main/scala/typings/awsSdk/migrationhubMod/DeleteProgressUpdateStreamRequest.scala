@@ -18,9 +18,9 @@ trait DeleteProgressUpdateStreamRequest extends js.Object {
 
 object DeleteProgressUpdateStreamRequest {
   @scala.inline
-  def apply(ProgressUpdateStreamName: ProgressUpdateStream, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteProgressUpdateStreamRequest = {
+  def apply(ProgressUpdateStreamName: ProgressUpdateStream, DryRun: js.UndefOr[DryRun] = js.undefined): DeleteProgressUpdateStreamRequest = {
     val __obj = js.Dynamic.literal(ProgressUpdateStreamName = ProgressUpdateStreamName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProgressUpdateStreamRequest]
   }
 }

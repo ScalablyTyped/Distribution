@@ -57,19 +57,19 @@ trait PlusGeolocationGeolocationError extends js.Object {
 object PlusGeolocationGeolocationError {
   @scala.inline
   def apply(
-    PERMISSION_DENIED: Int | Double = null,
-    POSITION_UNAVAILABLE: Int | Double = null,
-    TIMEOUT: Int | Double = null,
-    UNKNOWN_ERROR: Int | Double = null,
-    code: Int | Double = null,
+    PERMISSION_DENIED: js.UndefOr[Double] = js.undefined,
+    POSITION_UNAVAILABLE: js.UndefOr[Double] = js.undefined,
+    TIMEOUT: js.UndefOr[Double] = js.undefined,
+    UNKNOWN_ERROR: js.UndefOr[Double] = js.undefined,
+    code: js.UndefOr[Double] = js.undefined,
     message: String = null
   ): PlusGeolocationGeolocationError = {
     val __obj = js.Dynamic.literal()
-    if (PERMISSION_DENIED != null) __obj.updateDynamic("PERMISSION_DENIED")(PERMISSION_DENIED.asInstanceOf[js.Any])
-    if (POSITION_UNAVAILABLE != null) __obj.updateDynamic("POSITION_UNAVAILABLE")(POSITION_UNAVAILABLE.asInstanceOf[js.Any])
-    if (TIMEOUT != null) __obj.updateDynamic("TIMEOUT")(TIMEOUT.asInstanceOf[js.Any])
-    if (UNKNOWN_ERROR != null) __obj.updateDynamic("UNKNOWN_ERROR")(UNKNOWN_ERROR.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(PERMISSION_DENIED)) __obj.updateDynamic("PERMISSION_DENIED")(PERMISSION_DENIED.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(POSITION_UNAVAILABLE)) __obj.updateDynamic("POSITION_UNAVAILABLE")(POSITION_UNAVAILABLE.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(TIMEOUT)) __obj.updateDynamic("TIMEOUT")(TIMEOUT.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(UNKNOWN_ERROR)) __obj.updateDynamic("UNKNOWN_ERROR")(UNKNOWN_ERROR.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGeolocationGeolocationError]
   }

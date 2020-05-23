@@ -28,9 +28,9 @@ object NumberedStepProps {
   ): NumberedStepProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCompleted)) __obj.updateDynamic("isCompleted")(isCompleted.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLast)) __obj.updateDynamic("isLast")(isLast.asInstanceOf[js.Any])
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompleted)) __obj.updateDynamic("isCompleted")(isCompleted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLast)) __obj.updateDynamic("isLast")(isLast.get.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

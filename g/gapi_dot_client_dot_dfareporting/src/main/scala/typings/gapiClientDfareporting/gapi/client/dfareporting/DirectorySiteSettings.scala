@@ -33,13 +33,13 @@ object DirectorySiteSettings {
     videoActiveViewOptOut: js.UndefOr[Boolean] = js.undefined
   ): DirectorySiteSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeViewOptOut)) __obj.updateDynamic("activeViewOptOut")(activeViewOptOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(activeViewOptOut)) __obj.updateDynamic("activeViewOptOut")(activeViewOptOut.get.asInstanceOf[js.Any])
     if (dfpSettings != null) __obj.updateDynamic("dfpSettings")(dfpSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(instreamVideoPlacementAccepted)) __obj.updateDynamic("instreamVideoPlacementAccepted")(instreamVideoPlacementAccepted.asInstanceOf[js.Any])
-    if (!js.isUndefined(interstitialPlacementAccepted)) __obj.updateDynamic("interstitialPlacementAccepted")(interstitialPlacementAccepted.asInstanceOf[js.Any])
-    if (!js.isUndefined(nielsenOcrOptOut)) __obj.updateDynamic("nielsenOcrOptOut")(nielsenOcrOptOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(verificationTagOptOut)) __obj.updateDynamic("verificationTagOptOut")(verificationTagOptOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoActiveViewOptOut)) __obj.updateDynamic("videoActiveViewOptOut")(videoActiveViewOptOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(instreamVideoPlacementAccepted)) __obj.updateDynamic("instreamVideoPlacementAccepted")(instreamVideoPlacementAccepted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(interstitialPlacementAccepted)) __obj.updateDynamic("interstitialPlacementAccepted")(interstitialPlacementAccepted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nielsenOcrOptOut)) __obj.updateDynamic("nielsenOcrOptOut")(nielsenOcrOptOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(verificationTagOptOut)) __obj.updateDynamic("verificationTagOptOut")(verificationTagOptOut.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoActiveViewOptOut)) __obj.updateDynamic("videoActiveViewOptOut")(videoActiveViewOptOut.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectorySiteSettings]
   }
 }

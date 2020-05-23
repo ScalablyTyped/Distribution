@@ -72,7 +72,7 @@ object GetMaintenanceWindowTaskResult {
     MaxConcurrency: MaxConcurrency = null,
     MaxErrors: MaxErrors = null,
     Name: MaintenanceWindowName = null,
-    Priority: Int | Double = null,
+    Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined,
     ServiceRoleArn: ServiceRole = null,
     Targets: Targets = null,
     TaskArn: MaintenanceWindowTaskArn = null,
@@ -88,7 +88,7 @@ object GetMaintenanceWindowTaskResult {
     if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency.asInstanceOf[js.Any])
     if (MaxErrors != null) __obj.updateDynamic("MaxErrors")(MaxErrors.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
     if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn.asInstanceOf[js.Any])
     if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     if (TaskArn != null) __obj.updateDynamic("TaskArn")(TaskArn.asInstanceOf[js.Any])

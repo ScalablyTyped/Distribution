@@ -1,5 +1,6 @@
 package typings.typedoc
 
+import typings.typedoc.anon.PickTypeParameterTypetype
 import typings.typedoc.modelsMod.TypeParameterType
 import typings.typedoc.serializationComponentsMod.TypeSerializerComponent
 import scala.scalajs.js

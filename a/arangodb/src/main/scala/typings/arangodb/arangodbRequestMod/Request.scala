@@ -1,8 +1,8 @@
 package typings.arangodb.arangodbRequestMod
 
-import typings.arangodb.FnCallUrlOptions
-import typings.arangodb.urlstringRequestOptions
-import typings.arangodb.urlstringmethodHttpMethod
+import typings.arangodb.anon.FnCall
+import typings.arangodb.anon.urlstringRequestOptions
+import typings.arangodb.anon.urlstringmethodHttpMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Request extends js.Object {
   @JSName("delete")
-  var delete_Original: FnCallUrlOptions = js.native
+  var delete_Original: FnCall = js.native
   @JSName("get")
-  var get_Original: FnCallUrlOptions = js.native
+  var get_Original: FnCall = js.native
   @JSName("head")
-  var head_Original: FnCallUrlOptions = js.native
+  var head_Original: FnCall = js.native
   @JSName("patch")
-  var patch_Original: FnCallUrlOptions = js.native
+  var patch_Original: FnCall = js.native
   @JSName("post")
-  var post_Original: FnCallUrlOptions = js.native
+  var post_Original: FnCall = js.native
   @JSName("put")
-  var put_Original: FnCallUrlOptions = js.native
+  var put_Original: FnCall = js.native
   def apply(options: urlstringmethodHttpMethod): Response = js.native
   def delete(options: urlstringRequestOptions): Response = js.native
   def delete(url: String): Response = js.native

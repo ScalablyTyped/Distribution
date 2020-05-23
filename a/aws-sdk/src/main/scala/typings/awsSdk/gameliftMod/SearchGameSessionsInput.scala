@@ -38,7 +38,7 @@ object SearchGameSessionsInput {
     AliasId: AliasIdOrArn = null,
     FilterExpression: NonZeroAndMaxString = null,
     FleetId: FleetIdOrArn = null,
-    Limit: Int | scala.Double = null,
+    Limit: js.UndefOr[PositiveInteger] = js.undefined,
     NextToken: NonZeroAndMaxString = null,
     SortExpression: NonZeroAndMaxString = null
   ): SearchGameSessionsInput = {
@@ -46,7 +46,7 @@ object SearchGameSessionsInput {
     if (AliasId != null) __obj.updateDynamic("AliasId")(AliasId.asInstanceOf[js.Any])
     if (FilterExpression != null) __obj.updateDynamic("FilterExpression")(FilterExpression.asInstanceOf[js.Any])
     if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SortExpression != null) __obj.updateDynamic("SortExpression")(SortExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchGameSessionsInput]

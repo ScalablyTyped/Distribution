@@ -17,13 +17,13 @@ object IntrospectionInputValue {
   def apply(
     name: String,
     `type`: IntrospectionInputTypeRef,
-    defaultValue: Maybe[String] = null,
-    description: Maybe[String] = null
+    defaultValue: js.UndefOr[Null | Maybe[String]] = js.undefined,
+    description: js.UndefOr[Null | Maybe[String]] = js.undefined
   ): IntrospectionInputValue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionInputValue]
   }
 }

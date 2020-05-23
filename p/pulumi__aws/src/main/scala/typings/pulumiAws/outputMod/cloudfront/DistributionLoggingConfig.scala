@@ -27,7 +27,7 @@ object DistributionLoggingConfig {
   @scala.inline
   def apply(bucket: String, includeCookies: js.UndefOr[Boolean] = js.undefined, prefix: String = null): DistributionLoggingConfig = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeCookies)) __obj.updateDynamic("includeCookies")(includeCookies.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeCookies)) __obj.updateDynamic("includeCookies")(includeCookies.get.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionLoggingConfig]
   }

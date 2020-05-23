@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * 将文本转换为可以播放的mp3文件。
-		 */
+  * 将文本转换为可以播放的mp3文件。
+  */
 trait textToAudioOptions
   extends BaseOptions[js.Any, js.Any] {
    // 合成的文本，使用UTF-8编码，小于512个中文字或者英文数字（文本在百度服务器内转换为GBK后，长度必须小于1024字节）。

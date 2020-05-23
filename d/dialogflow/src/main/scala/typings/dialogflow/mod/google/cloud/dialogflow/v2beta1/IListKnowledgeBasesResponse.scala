@@ -14,10 +14,13 @@ trait IListKnowledgeBasesResponse extends js.Object {
 
 object IListKnowledgeBasesResponse {
   @scala.inline
-  def apply(knowledgeBases: js.Array[IKnowledgeBase] = null, nextPageToken: String = null): IListKnowledgeBasesResponse = {
+  def apply(
+    knowledgeBases: js.UndefOr[Null | js.Array[IKnowledgeBase]] = js.undefined,
+    nextPageToken: js.UndefOr[Null | String] = js.undefined
+  ): IListKnowledgeBasesResponse = {
     val __obj = js.Dynamic.literal()
-    if (knowledgeBases != null) __obj.updateDynamic("knowledgeBases")(knowledgeBases.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(knowledgeBases)) __obj.updateDynamic("knowledgeBases")(knowledgeBases.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListKnowledgeBasesResponse]
   }
 }

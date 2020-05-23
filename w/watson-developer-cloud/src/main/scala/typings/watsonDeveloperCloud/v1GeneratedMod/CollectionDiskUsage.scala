@@ -12,9 +12,9 @@ trait CollectionDiskUsage extends js.Object {
 
 object CollectionDiskUsage {
   @scala.inline
-  def apply(used_bytes: Int | Double = null): CollectionDiskUsage = {
+  def apply(used_bytes: js.UndefOr[Double] = js.undefined): CollectionDiskUsage = {
     val __obj = js.Dynamic.literal()
-    if (used_bytes != null) __obj.updateDynamic("used_bytes")(used_bytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(used_bytes)) __obj.updateDynamic("used_bytes")(used_bytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionDiskUsage]
   }
 }

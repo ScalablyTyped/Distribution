@@ -11,9 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a 3D print job. */
-@JSGlobal("Windows.Graphics.Printing3D.Print3DTask")
 @js.native
-abstract class Print3DTask () extends js.Object {
+trait Print3DTask extends js.Object {
   /** Occurs when the print request has been sent to the 3D printer and the 3D print job has been created. */
   @JSName("oncompleted")
   var oncompleted_Original: TypedEventHandler[Print3DTask, Print3DTaskCompletedEventArgs] = js.native

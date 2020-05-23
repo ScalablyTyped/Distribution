@@ -12,6 +12,7 @@ import typings.redis.redisStrings.psubscribe
 import typings.redis.redisStrings.punsubscribe
 import typings.redis.redisStrings.subscribe
 import typings.redis.redisStrings.unsubscribe
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +28,7 @@ trait RedisClient
   var offline_queue: js.Array[_] = js.native
   var offline_queue_length: Double = js.native
   var retry_backoff: Double = js.native
-  var retry_delay: Double = js.native
+  var retry_delay: Double | Error = js.native
   var server_info: ServerInfo = js.native
   var stream: Duplex = js.native
   def BATCH(): Multi = js.native

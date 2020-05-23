@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc", "TypeScript.createSemanticDiagnosticsBuilderProgram")
 @js.native
 object createSemanticDiagnosticsBuilderProgram extends js.Object {
-  def apply(): SemanticDiagnosticsBuilderProgram = js.native
   /**
     * Create the builder to manage semantic diagnostics and cache them
     */
@@ -26,96 +25,13 @@ object createSemanticDiagnosticsBuilderProgram extends js.Object {
     oldProgram: SemanticDiagnosticsBuilderProgram,
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): SemanticDiagnosticsBuilderProgram = js.native
   def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(rootNames: js.Array[String]): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(rootNames: js.Array[String], options: js.UndefOr[scala.Nothing], host: CompilerHost): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(rootNames: js.Array[String], options: CompilerOptions): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(rootNames: js.Array[String], options: CompilerOptions, host: CompilerHost): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def apply(
-    rootNames: js.Array[String],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
+    rootNames: js.UndefOr[js.Array[String]],
+    options: js.UndefOr[CompilerOptions],
+    host: js.UndefOr[CompilerHost],
+    oldProgram: js.UndefOr[SemanticDiagnosticsBuilderProgram],
+    configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]],
+    projectReferences: js.UndefOr[js.Array[ProjectReference]]
   ): SemanticDiagnosticsBuilderProgram = js.native
 }
 

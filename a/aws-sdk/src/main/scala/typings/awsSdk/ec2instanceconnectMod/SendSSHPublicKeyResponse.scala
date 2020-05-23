@@ -18,10 +18,10 @@ trait SendSSHPublicKeyResponse extends js.Object {
 
 object SendSSHPublicKeyResponse {
   @scala.inline
-  def apply(RequestId: RequestId = null, Success: js.UndefOr[Boolean] = js.undefined): SendSSHPublicKeyResponse = {
+  def apply(RequestId: RequestId = null, Success: js.UndefOr[Success] = js.undefined): SendSSHPublicKeyResponse = {
     val __obj = js.Dynamic.literal()
     if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success.asInstanceOf[js.Any])
+    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendSSHPublicKeyResponse]
   }
 }

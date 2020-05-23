@@ -28,7 +28,7 @@ object IGroupingSummary {
     collapseAll: () => Unit = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
     config: js.Any = null,
-    depthToIndent: Int | Double = null,
+    depthToIndent: js.UndefOr[Double] = js.undefined,
     disable: () => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     enable: () => Unit = null,
@@ -94,15 +94,15 @@ object IGroupingSummary {
     if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
     if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction2(collapse))
     if (collapseAll != null) __obj.updateDynamic("collapseAll")(js.Any.fromFunction0(collapseAll))
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (depthToIndent != null) __obj.updateDynamic("depthToIndent")(depthToIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(depthToIndent)) __obj.updateDynamic("depthToIndent")(depthToIndent.get.asInstanceOf[js.Any])
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (!js.isUndefined(enableGroupingMenu)) __obj.updateDynamic("enableGroupingMenu")(enableGroupingMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableNoGroups)) __obj.updateDynamic("enableNoGroups")(enableNoGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupingMenu)) __obj.updateDynamic("enableGroupingMenu")(enableGroupingMenu.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNoGroups)) __obj.updateDynamic("enableNoGroups")(enableNoGroups.get.asInstanceOf[js.Any])
     if (eventPrefix != null) __obj.updateDynamic("eventPrefix")(eventPrefix.asInstanceOf[js.Any])
     if (eventSelector != null) __obj.updateDynamic("eventSelector")(eventSelector.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction2(expand))
@@ -116,14 +116,14 @@ object IGroupingSummary {
     if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (groupByText != null) __obj.updateDynamic("groupByText")(groupByText.asInstanceOf[js.Any])
     if (groupHeaderTpl != null) __obj.updateDynamic("groupHeaderTpl")(groupHeaderTpl.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasFeatureEvent)) __obj.updateDynamic("hasFeatureEvent")(hasFeatureEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasFeatureEvent)) __obj.updateDynamic("hasFeatureEvent")(hasFeatureEvent.get.asInstanceOf[js.Any])
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideGroupedHeader)) __obj.updateDynamic("hideGroupedHeader")(hideGroupedHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideGroupedHeader)) __obj.updateDynamic("hideGroupedHeader")(hideGroupedHeader.get.asInstanceOf[js.Any])
     if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (isExpanded != null) __obj.updateDynamic("isExpanded")(js.Any.fromFunction1(isExpanded))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
@@ -138,9 +138,9 @@ object IGroupingSummary {
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (showGroupsText != null) __obj.updateDynamic("showGroupsText")(showGroupsText.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSummaryRow)) __obj.updateDynamic("showSummaryRow")(showSummaryRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (!js.isUndefined(startCollapsed)) __obj.updateDynamic("startCollapsed")(startCollapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSummaryRow)) __obj.updateDynamic("showSummaryRow")(showSummaryRow.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(startCollapsed)) __obj.updateDynamic("startCollapsed")(startCollapsed.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))

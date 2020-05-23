@@ -29,38 +29,38 @@ object ScaleConfig {
   @scala.inline
   def apply(
     alias: String = null,
-    base: Int | Double = null,
-    exponent: Int | Double = null,
+    base: js.UndefOr[Double] = js.undefined,
+    exponent: js.UndefOr[Double] = js.undefined,
     field: String = null,
     formatter: (/* v */ js.Any, /* k */ js.UndefOr[Double]) => _ = null,
     mask: String = null,
     max: js.Any = null,
-    maxTickCount: Int | Double = null,
+    maxTickCount: js.UndefOr[Double] = js.undefined,
     min: js.Any = null,
-    minTickInterval: Int | Double = null,
+    minTickInterval: js.UndefOr[Double] = js.undefined,
     nice: js.UndefOr[Boolean] = js.undefined,
     range: js.Array[Double] = null,
-    tickCount: Int | Double = null,
-    tickInterval: Int | Double = null,
+    tickCount: js.UndefOr[Double] = js.undefined,
+    tickInterval: js.UndefOr[Double] = js.undefined,
     tickMethod: String | TickMethod = null,
     ticks: js.Array[_] = null,
     values: js.Array[_] = null
   ): ScaleConfig = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(exponent)) __obj.updateDynamic("exponent")(exponent.get.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction2(formatter))
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxTickCount != null) __obj.updateDynamic("maxTickCount")(maxTickCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxTickCount)) __obj.updateDynamic("maxTickCount")(maxTickCount.get.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minTickInterval != null) __obj.updateDynamic("minTickInterval")(minTickInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(nice)) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
+    if (!js.isUndefined(minTickInterval)) __obj.updateDynamic("minTickInterval")(minTickInterval.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nice)) __obj.updateDynamic("nice")(nice.get.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
-    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickCount)) __obj.updateDynamic("tickCount")(tickCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(tickInterval)) __obj.updateDynamic("tickInterval")(tickInterval.get.asInstanceOf[js.Any])
     if (tickMethod != null) __obj.updateDynamic("tickMethod")(tickMethod.asInstanceOf[js.Any])
     if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])

@@ -18,10 +18,13 @@ trait SsmControls extends js.Object {
 
 object SsmControls {
   @scala.inline
-  def apply(ConcurrentExecutionRatePercentage: Int | Double = null, ErrorPercentage: Int | Double = null): SsmControls = {
+  def apply(
+    ConcurrentExecutionRatePercentage: js.UndefOr[Percentage] = js.undefined,
+    ErrorPercentage: js.UndefOr[Percentage] = js.undefined
+  ): SsmControls = {
     val __obj = js.Dynamic.literal()
-    if (ConcurrentExecutionRatePercentage != null) __obj.updateDynamic("ConcurrentExecutionRatePercentage")(ConcurrentExecutionRatePercentage.asInstanceOf[js.Any])
-    if (ErrorPercentage != null) __obj.updateDynamic("ErrorPercentage")(ErrorPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConcurrentExecutionRatePercentage)) __obj.updateDynamic("ConcurrentExecutionRatePercentage")(ConcurrentExecutionRatePercentage.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(ErrorPercentage)) __obj.updateDynamic("ErrorPercentage")(ErrorPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SsmControls]
   }
 }

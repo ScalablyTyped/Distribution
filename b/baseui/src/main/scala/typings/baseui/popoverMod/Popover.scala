@@ -1,12 +1,12 @@
 package typings.baseui.popoverMod
 
-import typings.baseui.AnonArrowOffset
-import typings.baseui.SharedStylePropsArgchildrArrowOffset
+import typings.baseui.anon.ArrowOffset
+import typings.baseui.anon.SharedStylePropsArgchildrArrowOffset
 import typings.baseui.layerMod.NormalizedOffsets
 import typings.baseui.layerMod.PopperDataObject
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.std.Event_
+import typings.std.Event
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -24,7 +24,7 @@ class Popover ()
   def getAnchorFromChildren(): ReactNode = js.native
   def getAnchorIdAttr(): String | Null = js.native
   def getAnchorProps(): js.Object = js.native
-  def getDefaultState(props: PopoverProps): AnonArrowOffset = js.native
+  def getDefaultState(props: PopoverProps): ArrowOffset = js.native
   def getPopoverBodyProps(): js.Object = js.native
   def getPopoverIdAttr(): String | Null = js.native
   def getSharedProps(): SharedStylePropsArgchildrArrowOffset = js.native
@@ -33,7 +33,7 @@ class Popover ()
   def isAccessibilityTypeTooltip(): Boolean = js.native
   def isClickTrigger(): Boolean = js.native
   def isHoverTrigger(): Boolean = js.native
-  def onAnchorClick(e: Event_): Unit = js.native
+  def onAnchorClick(e: Event): Unit = js.native
   def onAnchorMouseEnter(): Unit = js.native
   def onAnchorMouseLeave(): Unit = js.native
   def onDocumentClick(evt: MouseEvent): Unit = js.native

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 trait GetBeaconsSuccess extends js.Object {
   var beacons: js.Array[Beacon]
   /**
-  		 * errorCode=0 ,接口调用成功
-  		 */
+    * errorCode=0 ,接口调用成功
+    */
   var errCode: String
   /**
-  		 * ok
-  		 */
+    * ok
+    */
   var errMsg: String
 }
 

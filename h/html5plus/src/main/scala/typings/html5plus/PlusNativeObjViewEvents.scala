@@ -13,7 +13,7 @@ trait PlusNativeObjViewEvents extends js.Object {
   /**
     * 点击事件
     * 当手指点击屏幕时触发。
-    * 	注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
+    *     注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -21,7 +21,7 @@ trait PlusNativeObjViewEvents extends js.Object {
   /**
     * 双击事件
     * 双击屏幕时触发。
-    * 	注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
+    *     注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -29,7 +29,7 @@ trait PlusNativeObjViewEvents extends js.Object {
   /**
     * 结束触屏事件
     * 当手指从屏幕上离开的时候触发。
-    * 	注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
+    *     注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -37,7 +37,7 @@ trait PlusNativeObjViewEvents extends js.Object {
   /**
     * 触摸滑屏事件
     * 当手指在屏幕上滑动的时候连续地触发。
-    * 	注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
+    *     注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -45,7 +45,7 @@ trait PlusNativeObjViewEvents extends js.Object {
   /**
     * 开始触屏事件
     * 当手指触摸屏幕时候触发。
-    * 	注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
+    *     注意：如果将View控件设置为不拦截触屏事件（view.interceptTouchEvent(false)）则不会触发此事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */

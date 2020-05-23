@@ -1,6 +1,6 @@
 package typings.googleProtobuf.mod
 
-import typings.googleProtobuf.AnonInstantiableV
+import typings.googleProtobuf.anon.InstantiableV
 import typings.googleProtobuf.mod.Map.Iterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Map_[K, V] protected () extends js.Object {
   def this(arr: js.Array[js.Tuple2[K, V]]) = this()
-  def this(arr: js.Array[js.Tuple2[K, V]], valueCtor: AnonInstantiableV[V]) = this()
+  def this(arr: js.Array[js.Tuple2[K, V]], valueCtor: InstantiableV[V]) = this()
   def clear(): Unit = js.native
   def del(key: K): Boolean = js.native
   def entries(): Iterator[js.Tuple2[K, V]] = js.native

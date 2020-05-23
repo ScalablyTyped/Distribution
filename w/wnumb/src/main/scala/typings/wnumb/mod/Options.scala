@@ -62,7 +62,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    decimals: Int | Double = null,
+    decimals: js.UndefOr[Double] = js.undefined,
     decoder: /* value */ Double => Double = null,
     edit: /* value */ Double => Double = null,
     encoder: /* value */ Double => Double = null,
@@ -75,7 +75,7 @@ object Options {
     undo: /* value */ Double => Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
     if (decoder != null) __obj.updateDynamic("decoder")(js.Any.fromFunction1(decoder))
     if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
     if (encoder != null) __obj.updateDynamic("encoder")(js.Any.fromFunction1(encoder))

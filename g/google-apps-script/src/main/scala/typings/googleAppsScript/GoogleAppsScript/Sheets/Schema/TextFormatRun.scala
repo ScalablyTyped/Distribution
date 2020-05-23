@@ -11,10 +11,10 @@ trait TextFormatRun extends js.Object {
 
 object TextFormatRun {
   @scala.inline
-  def apply(format: TextFormat = null, startIndex: Int | Double = null): TextFormatRun = {
+  def apply(format: TextFormat = null, startIndex: js.UndefOr[Double] = js.undefined): TextFormatRun = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFormatRun]
   }
 }

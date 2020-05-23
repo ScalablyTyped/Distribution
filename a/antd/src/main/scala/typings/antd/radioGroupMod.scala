@@ -1,11 +1,13 @@
 package typings.antd
 
-import typings.antd.contextMod.ConfigConsumerProps
+import typings.antd.anon.ButtonStyle
+import typings.antd.anon.PartialRadioGroupState
+import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.antd.radioInterfaceMod.RadioChangeEvent
 import typings.antd.radioInterfaceMod.RadioGroupProps
 import typings.antd.radioInterfaceMod.RadioGroupState
 import typings.react.mod.Component
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +30,7 @@ object radioGroupMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: AnonButtonStyle = js.native
+    var defaultProps: ButtonStyle = js.native
     def getDerivedStateFromProps(nextProps: RadioGroupProps, prevState: RadioGroupState): PartialRadioGroupState = js.native
   }
   

@@ -26,11 +26,16 @@ trait GraphQLApiOpenidConnectConfig extends js.Object {
 
 object GraphQLApiOpenidConnectConfig {
   @scala.inline
-  def apply(issuer: String, authTtl: Int | Double = null, clientId: String = null, iatTtl: Int | Double = null): GraphQLApiOpenidConnectConfig = {
+  def apply(
+    issuer: String,
+    authTtl: js.UndefOr[Double] = js.undefined,
+    clientId: String = null,
+    iatTtl: js.UndefOr[Double] = js.undefined
+  ): GraphQLApiOpenidConnectConfig = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
-    if (authTtl != null) __obj.updateDynamic("authTtl")(authTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(authTtl)) __obj.updateDynamic("authTtl")(authTtl.get.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (iatTtl != null) __obj.updateDynamic("iatTtl")(iatTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(iatTtl)) __obj.updateDynamic("iatTtl")(iatTtl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLApiOpenidConnectConfig]
   }
 }

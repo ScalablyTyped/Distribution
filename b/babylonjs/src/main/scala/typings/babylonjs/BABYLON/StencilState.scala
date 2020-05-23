@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("BABYLON.StencilState")
 @js.native
-class StencilState () extends js.Object {
+trait StencilState extends js.Object {
   var _isStencilFuncDirty: js.Any = js.native
   var _isStencilMaskDirty: js.Any = js.native
   var _isStencilOpDirty: js.Any = js.native
@@ -40,17 +39,5 @@ class StencilState () extends js.Object {
   def stencilOpStencilFail(value: Double): js.Any = js.native
   def stencilTest: Boolean = js.native
   def stencilTest(value: Boolean): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("BABYLON.StencilState")
-@js.native
-object StencilState extends js.Object {
-  /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will always pass. i.e. Pixels will be drawn in the order they are drawn */
-  val ALWAYS: Double = js.native
-  /** Passed to stencilOperation to specify that stencil value must be kept */
-  val KEEP: Double = js.native
-  /** Passed to stencilOperation to specify that stencil value must be replaced */
-  val REPLACE: Double = js.native
 }
 

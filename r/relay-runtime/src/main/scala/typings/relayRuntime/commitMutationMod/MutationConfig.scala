@@ -41,29 +41,39 @@ trait MutationConfig[TOperation /* <: MutationParameters */] extends js.Object {
 
 object MutationConfig {
   @scala.inline
-  def apply[TOperation /* <: MutationParameters */](
+  def apply[TOperation](
     mutation: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any,
     configs: js.Array[DeclarativeMutationConfig] = null,
-    onCompleted: (/* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ /* response */ js.Any, /* errors */ js.UndefOr[js.Array[PayloadError] | Null]) => Unit = null,
-    onError: /* error */ Error => Unit = null,
+    onCompleted: js.UndefOr[
+      Null | ((/* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ /* response */ js.Any, /* errors */ js.UndefOr[js.Array[PayloadError] | Null]) => Unit)
+    ] = js.undefined,
+    onError: js.UndefOr[Null | (/* error */ Error => Unit)] = js.undefined,
     optimisticResponse: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any = null,
-    optimisticUpdater: (/* store */ RecordSourceSelectorProxy[
-      /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
-    ], /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any) => Unit = null,
-    updater: (/* store */ RecordSourceSelectorProxy[
-      /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
-    ], /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any) => Unit = null,
-    uploadables: UploadableMap = null
+    optimisticUpdater: js.UndefOr[
+      Null | ((/* store */ RecordSourceSelectorProxy[
+        /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
+      ], /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any) => Unit)
+    ] = js.undefined,
+    updater: js.UndefOr[
+      Null | ((/* store */ RecordSourceSelectorProxy[
+        /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
+      ], /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any) => Unit)
+    ] = js.undefined,
+    uploadables: js.UndefOr[Null | UploadableMap] = js.undefined
   ): MutationConfig[TOperation] = {
     val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     if (configs != null) __obj.updateDynamic("configs")(configs.asInstanceOf[js.Any])
-    if (onCompleted != null) __obj.updateDynamic("onCompleted")(js.Any.fromFunction2(onCompleted))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (!js.isUndefined(onCompleted)) __obj.updateDynamic("onCompleted")(if (onCompleted != null) js.Any.fromFunction2(onCompleted.asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ /* response */ js.Any, /* errors */ js.UndefOr[js.Array[PayloadError] | Null]) => Unit]) else null)
+    if (!js.isUndefined(onError)) __obj.updateDynamic("onError")(if (onError != null) js.Any.fromFunction1(onError.asInstanceOf[/* error */ Error => Unit]) else null)
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
-    if (optimisticUpdater != null) __obj.updateDynamic("optimisticUpdater")(js.Any.fromFunction2(optimisticUpdater))
-    if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))
-    if (uploadables != null) __obj.updateDynamic("uploadables")(uploadables.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimisticUpdater)) __obj.updateDynamic("optimisticUpdater")(if (optimisticUpdater != null) js.Any.fromFunction2(optimisticUpdater.asInstanceOf[(/* store */ RecordSourceSelectorProxy[
+      /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
+    ], /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any) => Unit]) else null)
+    if (!js.isUndefined(updater)) __obj.updateDynamic("updater")(if (updater != null) js.Any.fromFunction2(updater.asInstanceOf[(/* store */ RecordSourceSelectorProxy[
+      /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
+    ], /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any) => Unit]) else null)
+    if (!js.isUndefined(uploadables)) __obj.updateDynamic("uploadables")(uploadables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationConfig[TOperation]]
   }
 }

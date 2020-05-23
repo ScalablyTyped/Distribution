@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/Constants", "C.BYE")
 @js.native
 object BYE
-  extends TopLevel[typings.sipJs.sipJsStrings.BYE]
+  extends TopLevel[/* "0.15.11" */ String]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.zdog.mod.Dragger because Inheritance from two classes. Inlined onDragStart, onDragStart_Original, onDragMove, onDragMove_Original, onDragEnd, onDragEnd_Original */ @JSImport("zdog", "Illustration")
 @js.native
 class Illustration protected () extends Anchor {

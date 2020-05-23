@@ -5,15 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("sap.ui.core.IntervalTrigger")
 @js.native
-class IntervalTrigger protected () extends Object {
-  /**
-    * Creates an instance of EventBus.
-    * @param iInterval is the interval the trigger should be used. If the           trigger is >0
-    * triggering starts/runs and if the interval is           set to <=0 triggering stops.
-    */
-  def this(iInterval: Double) = this()
+trait IntervalTrigger extends Object {
   /**
     * Adds a listener to the list that should be triggered.
     * @param fnFunction is the called function that should be called when           the trigger want to

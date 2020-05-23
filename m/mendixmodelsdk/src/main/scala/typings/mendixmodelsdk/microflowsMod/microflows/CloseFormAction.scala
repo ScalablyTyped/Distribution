@@ -25,6 +25,11 @@ class CloseFormAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FCloseFormAction: IModel = js.native
+  /**
+    * In version 8.9.0: introduced
+    */
+  def numberOfPages: Double = js.native
+  def numberOfPages(newValue: Double): js.Any = js.native
 }
 
 /* static members */

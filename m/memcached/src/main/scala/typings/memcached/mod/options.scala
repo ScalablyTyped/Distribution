@@ -72,36 +72,36 @@ object options {
   def apply(
     algorithm: String = null,
     failOverServers: String | js.Array[String] = null,
-    failures: Int | Double = null,
-    idle: Int | Double = null,
+    failures: js.UndefOr[Double] = js.undefined,
+    idle: js.UndefOr[Double] = js.undefined,
     keyCompression: js.UndefOr[Boolean] = js.undefined,
-    maxExpiration: Int | Double = null,
-    maxKeySize: Int | Double = null,
-    maxValue: Int | Double = null,
+    maxExpiration: js.UndefOr[Double] = js.undefined,
+    maxKeySize: js.UndefOr[Double] = js.undefined,
+    maxValue: js.UndefOr[Double] = js.undefined,
     namespace: String = null,
-    poolSize: Int | Double = null,
-    reconnect: Int | Double = null,
+    poolSize: js.UndefOr[Double] = js.undefined,
+    reconnect: js.UndefOr[Double] = js.undefined,
     remove: js.UndefOr[Boolean] = js.undefined,
-    retries: Int | Double = null,
-    retry: Int | Double = null,
-    timeout: Int | Double = null
+    retries: js.UndefOr[Double] = js.undefined,
+    retry: js.UndefOr[Double] = js.undefined,
+    timeout: js.UndefOr[Double] = js.undefined
   ): options = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (failOverServers != null) __obj.updateDynamic("failOverServers")(failOverServers.asInstanceOf[js.Any])
-    if (failures != null) __obj.updateDynamic("failures")(failures.asInstanceOf[js.Any])
-    if (idle != null) __obj.updateDynamic("idle")(idle.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyCompression)) __obj.updateDynamic("keyCompression")(keyCompression.asInstanceOf[js.Any])
-    if (maxExpiration != null) __obj.updateDynamic("maxExpiration")(maxExpiration.asInstanceOf[js.Any])
-    if (maxKeySize != null) __obj.updateDynamic("maxKeySize")(maxKeySize.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(failures)) __obj.updateDynamic("failures")(failures.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(idle)) __obj.updateDynamic("idle")(idle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyCompression)) __obj.updateDynamic("keyCompression")(keyCompression.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxExpiration)) __obj.updateDynamic("maxExpiration")(maxExpiration.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxKeySize)) __obj.updateDynamic("maxKeySize")(maxKeySize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
-    if (reconnect != null) __obj.updateDynamic("reconnect")(reconnect.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(poolSize)) __obj.updateDynamic("poolSize")(poolSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[options]
   }
 }

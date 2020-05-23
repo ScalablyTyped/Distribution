@@ -10,10 +10,10 @@ trait Options extends EncodingOptions {
 
 object Options {
   @scala.inline
-  def apply(encoding: String = null, numRounds: Int | Double = null): Options = {
+  def apply(encoding: String = null, numRounds: js.UndefOr[Double] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (numRounds != null) __obj.updateDynamic("numRounds")(numRounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(numRounds)) __obj.updateDynamic("numRounds")(numRounds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

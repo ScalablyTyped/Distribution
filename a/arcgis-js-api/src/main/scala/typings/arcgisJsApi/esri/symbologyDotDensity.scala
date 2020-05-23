@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,7 +55,16 @@ trait symbologyDotDensity extends js.Object {
   def getSchemesByTag(params: dotDensityGetSchemesByTagParams): js.Array[DotDensityScheme]
 }
 
-@JSGlobal("__esri.symbologyDotDensity")
-@js.native
-object symbologyDotDensity extends TopLevel[symbologyDotDensity]
+object symbologyDotDensity {
+  @scala.inline
+  def apply(
+    cloneScheme: DotDensityScheme => DotDensityScheme,
+    getSchemeByName: dotDensityGetSchemeByNameParams => DotDensityScheme,
+    getSchemes: dotDensityGetSchemesParams => DotDensitySchemes,
+    getSchemesByTag: dotDensityGetSchemesByTagParams => js.Array[DotDensityScheme]
+  ): symbologyDotDensity = {
+    val __obj = js.Dynamic.literal(cloneScheme = js.Any.fromFunction1(cloneScheme), getSchemeByName = js.Any.fromFunction1(getSchemeByName), getSchemes = js.Any.fromFunction1(getSchemes), getSchemesByTag = js.Any.fromFunction1(getSchemesByTag))
+    __obj.asInstanceOf[symbologyDotDensity]
+  }
+}
 

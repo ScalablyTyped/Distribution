@@ -12,9 +12,9 @@ trait IGetTopicRequest extends js.Object {
 
 object IGetTopicRequest {
   @scala.inline
-  def apply(topic: String = null): IGetTopicRequest = {
+  def apply(topic: js.UndefOr[Null | String] = js.undefined): IGetTopicRequest = {
     val __obj = js.Dynamic.literal()
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    if (!js.isUndefined(topic)) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetTopicRequest]
   }
 }

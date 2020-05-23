@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("webix.ui.panel")
 @js.native
-class panel () extends baseview {
+trait panel extends baseview {
   @JSName("config")
   var config_panel: panelConfig = js.native
   @JSName("$resizeEnd")

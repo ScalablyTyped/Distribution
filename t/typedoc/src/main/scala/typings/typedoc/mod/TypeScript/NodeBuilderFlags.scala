@@ -24,6 +24,7 @@ object NodeBuilderFlags extends js.Object {
   /* 8388608 */ val InTypeAlias: typings.typescript.mod.NodeBuilderFlags.InTypeAlias with Double = js.native
   /* 1024 */ val MultilineObjectLiterals: typings.typescript.mod.NodeBuilderFlags.MultilineObjectLiterals with Double = js.native
   /* 1 */ val NoTruncation: typings.typescript.mod.NodeBuilderFlags.NoTruncation with Double = js.native
+  /* 536870912 */ val NoTypeReduction: typings.typescript.mod.NodeBuilderFlags.NoTypeReduction with Double = js.native
   /* 0 */ val None: typings.typescript.mod.NodeBuilderFlags.None with Double = js.native
   /* 8192 */ val OmitParameterModifiers: typings.typescript.mod.NodeBuilderFlags.OmitParameterModifiers with Double = js.native
   /* 256 */ val SuppressAnyReturnType: typings.typescript.mod.NodeBuilderFlags.SuppressAnyReturnType with Double = js.native

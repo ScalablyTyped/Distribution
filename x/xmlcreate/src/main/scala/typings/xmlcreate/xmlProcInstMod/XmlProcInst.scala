@@ -10,10 +10,10 @@ trait XmlProcInst[Parent] extends js.Object {
   val _parent: js.Any = js.native
   var _target: js.Any = js.native
   val _validation: js.Any = js.native
-  def content(): js.Any = js.native
   /**
     * Sets the content of this processing instruction.
     */
+  def content(): js.Any = js.native
   def content(content: String): js.Any = js.native
   /**
     * Gets the content of this processing instruction.

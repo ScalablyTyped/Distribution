@@ -31,7 +31,7 @@ object NewSignal {
     if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (!js.isUndefined(react)) __obj.updateDynamic("react")(react.asInstanceOf[js.Any])
+    if (!js.isUndefined(react)) __obj.updateDynamic("react")(react.get.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewSignal]

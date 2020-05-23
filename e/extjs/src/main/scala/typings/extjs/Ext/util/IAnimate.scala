@@ -12,28 +12,28 @@ trait IAnimate extends IBase {
   /** [Method] Performs custom animation on this object. ... */
   var animate: js.UndefOr[js.Any] = js.undefined
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
-  		* @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
-  		*/
+    * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
+    */
   var getActiveAnimation: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
-  		* @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
-  		*/
+    * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
+    */
   var hasActiveFx: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Ensures that all effects queued after sequenceFx is called on this object are run in sequence
-  		* @returns Object this
-  		*/
+    * @returns Object this
+    */
   var sequenceFx: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
-  		* @returns Ext.Element The Element
-  		*/
+    * @returns Ext.Element The Element
+    */
   var stopAnimation: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
-  		* @returns Ext.Element The Element
-  		*/
+    * @returns Ext.Element The Element
+    */
   var stopFx: js.UndefOr[js.Function0[IElement]] = js.undefined
   /** [Method] Ensures that all effects queued after syncFx is called on this object are run concurrently
-  		* @returns Object this
-  		*/
+    * @returns Object this
+    */
   var syncFx: js.UndefOr[js.Function0[_]] = js.undefined
 }
 
@@ -82,7 +82,7 @@ object IAnimate {
     if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (sequenceFx != null) __obj.updateDynamic("sequenceFx")(js.Any.fromFunction0(sequenceFx))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stopAnimation != null) __obj.updateDynamic("stopAnimation")(js.Any.fromFunction0(stopAnimation))
     if (stopFx != null) __obj.updateDynamic("stopFx")(js.Any.fromFunction0(stopFx))

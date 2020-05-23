@@ -1,6 +1,6 @@
 package typings.baiduApp.swan
 
-import typings.baiduApp.AnonCityName
+import typings.baiduApp.anon.CityName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ChooseAddressOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_ChooseAddressOptions: js.UndefOr[js.Function1[/* res */ AnonCityName, Unit]] = js.undefined
+  var success_ChooseAddressOptions: js.UndefOr[js.Function1[/* res */ CityName, Unit]] = js.undefined
 }
 
 object ChooseAddressOptions {
@@ -17,7 +17,7 @@ object ChooseAddressOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ AnonCityName => Unit = null
+    success: /* res */ CityName => Unit = null
   ): ChooseAddressOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

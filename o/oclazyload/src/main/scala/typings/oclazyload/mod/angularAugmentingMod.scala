@@ -1,12 +1,10 @@
 package typings.oclazyload.mod
 
-import typings.angular.mod.IModule
-import typings.angular.mod._Global_.Function
+import typings.oclazyload.oc.IModuleConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* augmented module */
 @JSImport("angular", JSImport.Namespace)
 @js.native
 object angularAugmentingMod extends js.Object {
@@ -21,9 +19,9 @@ object angularAugmentingMod extends js.Object {
       * @param requires The names of modules this module depends on, and/or ocLazyLoad module configurations. If specified then new module is being created. If unspecified then the module is being retrieved for further configuration.
       * @param configFn Optional configuration function for the module.
       */
-    def module(name: String): IModule = js.native
-    def module(name: String, requires: js.Array[String | IModuleConfig]): IModule = js.native
-    def module(name: String, requires: js.Array[String | IModuleConfig], configFn: Function): IModule = js.native
+    def module(name: String): js.Any = js.native
+    def module(name: String, requires: js.Array[String | IModuleConfig]): js.Any = js.native
+    def module(name: String, requires: js.Array[String | IModuleConfig], configFn: js.Function): js.Any = js.native
   }
   
 }

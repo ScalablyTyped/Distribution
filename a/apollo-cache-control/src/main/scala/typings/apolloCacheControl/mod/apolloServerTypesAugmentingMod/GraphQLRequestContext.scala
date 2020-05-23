@@ -1,6 +1,6 @@
 package typings.apolloCacheControl.mod.apolloServerTypesAugmentingMod
 
-import typings.apolloCacheControl.RequiredCacheHint
+import typings.apolloCacheControl.anon.RequiredCacheHint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

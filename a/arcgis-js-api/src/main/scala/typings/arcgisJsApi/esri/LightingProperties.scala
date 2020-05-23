@@ -36,12 +36,12 @@ object LightingProperties {
   def apply(
     date: DateProperties = null,
     directShadowsEnabled: js.UndefOr[Boolean] = js.undefined,
-    displayUTCOffset: Int | Double = null
+    displayUTCOffset: js.UndefOr[Double] = js.undefined
   ): LightingProperties = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(directShadowsEnabled)) __obj.updateDynamic("directShadowsEnabled")(directShadowsEnabled.asInstanceOf[js.Any])
-    if (displayUTCOffset != null) __obj.updateDynamic("displayUTCOffset")(displayUTCOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(directShadowsEnabled)) __obj.updateDynamic("directShadowsEnabled")(directShadowsEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayUTCOffset)) __obj.updateDynamic("displayUTCOffset")(displayUTCOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightingProperties]
   }
 }

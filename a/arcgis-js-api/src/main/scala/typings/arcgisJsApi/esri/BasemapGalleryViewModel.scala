@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,8 +49,4 @@ trait BasemapGalleryViewModel extends Accessor {
     */
   def basemapEquals(basemap1: Basemap, basemap2: Basemap): Boolean = js.native
 }
-
-@JSGlobal("__esri.BasemapGalleryViewModel")
-@js.native
-object BasemapGalleryViewModel extends TopLevel[BasemapGalleryViewModelConstructor]
 

@@ -22,7 +22,7 @@ object PeerConnectOption {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(reliable)) __obj.updateDynamic("reliable")(reliable.asInstanceOf[js.Any])
+    if (!js.isUndefined(reliable)) __obj.updateDynamic("reliable")(reliable.get.asInstanceOf[js.Any])
     if (serialization != null) __obj.updateDynamic("serialization")(serialization.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerConnectOption]
   }

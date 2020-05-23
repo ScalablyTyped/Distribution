@@ -15,11 +15,15 @@ trait Quota extends js.Object {
 
 object Quota {
   @scala.inline
-  def apply(limit: Int | Double = null, metric: String = null, usage: Int | Double = null): Quota = {
+  def apply(
+    limit: js.UndefOr[Double] = js.undefined,
+    metric: String = null,
+    usage: js.UndefOr[Double] = js.undefined
+  ): Quota = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
+    if (!js.isUndefined(usage)) __obj.updateDynamic("usage")(usage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Quota]
   }
 }

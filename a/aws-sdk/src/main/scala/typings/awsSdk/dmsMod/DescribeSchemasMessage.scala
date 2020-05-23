@@ -22,10 +22,10 @@ trait DescribeSchemasMessage extends js.Object {
 
 object DescribeSchemasMessage {
   @scala.inline
-  def apply(EndpointArn: String, Marker: String = null, MaxRecords: Int | Double = null): DescribeSchemasMessage = {
+  def apply(EndpointArn: String, Marker: String = null, MaxRecords: js.UndefOr[IntegerOptional] = js.undefined): DescribeSchemasMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSchemasMessage]
   }
 }

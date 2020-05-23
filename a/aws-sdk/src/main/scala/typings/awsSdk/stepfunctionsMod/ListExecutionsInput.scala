@@ -28,12 +28,12 @@ object ListExecutionsInput {
   @scala.inline
   def apply(
     stateMachineArn: Arn,
-    maxResults: Int | Double = null,
+    maxResults: js.UndefOr[PageSize] = js.undefined,
     nextToken: ListExecutionsPageToken = null,
     statusFilter: ExecutionStatus = null
   ): ListExecutionsInput = {
     val __obj = js.Dynamic.literal(stateMachineArn = stateMachineArn.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (statusFilter != null) __obj.updateDynamic("statusFilter")(statusFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListExecutionsInput]

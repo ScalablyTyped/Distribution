@@ -40,7 +40,7 @@ object ItemSelectedEventArgs {
     `type`: String = null
   ): ItemSelectedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (menuId != null) __obj.updateDynamic("menuId")(menuId.asInstanceOf[js.Any])
     if (menuText != null) __obj.updateDynamic("menuText")(menuText.asInstanceOf[js.Any])

@@ -40,23 +40,16 @@ object ColumnSizerProps {
   def apply(
     children: SizedColumnProps => ReactNode,
     width: Double,
-    StringDictionary: /**
-    * PLEASE NOTE
-    * The [key: string]: any; line is here on purpose
-    * This is due to the need of force re-render of PureComponent
-    * Check the following link if you want to know more
-    * https://github.com/bvaughn/react-virtualized#pass-thru-props
-    */
-  /* key */ StringDictionary[js.Any] = null,
-    columnCount: Int | Double = null,
-    columnMaxWidth: Int | Double = null,
-    columnMinWidth: Int | Double = null
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
+    columnCount: js.UndefOr[Double] = js.undefined,
+    columnMaxWidth: js.UndefOr[Double] = js.undefined,
+    columnMinWidth: js.UndefOr[Double] = js.undefined
   ): ColumnSizerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), width = width.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (columnMaxWidth != null) __obj.updateDynamic("columnMaxWidth")(columnMaxWidth.asInstanceOf[js.Any])
-    if (columnMinWidth != null) __obj.updateDynamic("columnMinWidth")(columnMinWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnMaxWidth)) __obj.updateDynamic("columnMaxWidth")(columnMaxWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnMinWidth)) __obj.updateDynamic("columnMinWidth")(columnMinWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSizerProps]
   }
 }

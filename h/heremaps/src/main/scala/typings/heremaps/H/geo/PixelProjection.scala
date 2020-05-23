@@ -13,16 +13,8 @@ import scala.scalajs.js.annotation._
   * @property w {number} - This property holds a value indicating the width of the world in pixels.
   * @property h {number} - This property holds a value indicating the height of the world in pixels.
   */
-@JSGlobal("H.geo.PixelProjection")
 @js.native
-/**
-  * Constructor
-  * @param opt_projection {H.geo.IProjection=} - An object representing the projection to use, the default is spherical Mercator H.geo.mercator
-  * @param opt_sizeAtLevelZero {number=} A value indicating the size of a tile representation of the world in pixels at zoom level 0, the default is 256
-  */
-class PixelProjection () extends js.Object {
-  def this(opt_projection: IProjection) = this()
-  def this(opt_projection: IProjection, opt_sizeAtLevelZero: Double) = this()
+trait PixelProjection extends js.Object {
   var h: Double = js.native
   var projection: IProjection = js.native
   var w: Double = js.native

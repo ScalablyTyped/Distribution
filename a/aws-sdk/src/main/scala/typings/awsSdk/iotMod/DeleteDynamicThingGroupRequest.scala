@@ -18,9 +18,9 @@ trait DeleteDynamicThingGroupRequest extends js.Object {
 
 object DeleteDynamicThingGroupRequest {
   @scala.inline
-  def apply(thingGroupName: ThingGroupName, expectedVersion: Int | Double = null): DeleteDynamicThingGroupRequest = {
+  def apply(thingGroupName: ThingGroupName, expectedVersion: js.UndefOr[OptionalVersion] = js.undefined): DeleteDynamicThingGroupRequest = {
     val __obj = js.Dynamic.literal(thingGroupName = thingGroupName.asInstanceOf[js.Any])
-    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDynamicThingGroupRequest]
   }
 }

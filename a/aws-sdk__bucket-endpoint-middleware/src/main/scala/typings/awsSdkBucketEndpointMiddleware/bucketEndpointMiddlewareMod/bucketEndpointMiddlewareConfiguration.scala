@@ -20,10 +20,10 @@ object bucketEndpointMiddlewareConfiguration {
     useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined
   ): bucketEndpointMiddlewareConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forcePathStyle)) __obj.updateDynamic("forcePathStyle")(forcePathStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(preformedBucketEndpoint)) __obj.updateDynamic("preformedBucketEndpoint")(preformedBucketEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAccelerateEndpoint)) __obj.updateDynamic("useAccelerateEndpoint")(useAccelerateEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDualstackEndpoint)) __obj.updateDynamic("useDualstackEndpoint")(useDualstackEndpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePathStyle)) __obj.updateDynamic("forcePathStyle")(forcePathStyle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(preformedBucketEndpoint)) __obj.updateDynamic("preformedBucketEndpoint")(preformedBucketEndpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAccelerateEndpoint)) __obj.updateDynamic("useAccelerateEndpoint")(useAccelerateEndpoint.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDualstackEndpoint)) __obj.updateDynamic("useDualstackEndpoint")(useDualstackEndpoint.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[bucketEndpointMiddlewareConfiguration]
   }
 }

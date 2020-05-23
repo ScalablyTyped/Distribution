@@ -8,26 +8,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierObservableMap")
-@js.native
-class ResourceQualifierObservableMap () extends IObservableMap[String, String] {
-  /* CompleteClass */
-  override var onmapchanged: js.Any = js.native
-  /* CompleteClass */
-  override var size: Double = js.native
-  /* CompleteClass */
-  override def clear(): Unit = js.native
-  /* CompleteClass */
-  override def first(): IIterator[IKeyValuePair[String, String]] = js.native
-  /* CompleteClass */
-  override def getView(): IMapView[String, String] = js.native
-  /* CompleteClass */
-  override def hasKey(key: String): Boolean = js.native
-  /* CompleteClass */
-  override def insert(key: String, value: String): Boolean = js.native
-  /* CompleteClass */
-  override def lookup(key: String): String = js.native
-  /* CompleteClass */
-  override def remove(key: String): Unit = js.native
+trait ResourceQualifierObservableMap extends IObservableMap[String, String]
+
+object ResourceQualifierObservableMap {
+  @scala.inline
+  def apply(
+    clear: () => Unit,
+    first: () => IIterator[IKeyValuePair[String, String]],
+    getView: () => IMapView[String, String],
+    hasKey: String => Boolean,
+    insert: (String, String) => Boolean,
+    lookup: String => String,
+    onmapchanged: js.Any,
+    remove: String => Unit,
+    size: Double
+  ): ResourceQualifierObservableMap = {
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), first = js.Any.fromFunction0(first), getView = js.Any.fromFunction0(getView), hasKey = js.Any.fromFunction1(hasKey), insert = js.Any.fromFunction2(insert), lookup = js.Any.fromFunction1(lookup), onmapchanged = onmapchanged.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), size = size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceQualifierObservableMap]
+  }
 }
 

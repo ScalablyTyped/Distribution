@@ -47,7 +47,7 @@ object DistanceParametersProperties {
   ): DistanceParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (distanceUnit != null) __obj.updateDynamic("distanceUnit")(distanceUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.get.asInstanceOf[js.Any])
     if (geometry1 != null) __obj.updateDynamic("geometry1")(geometry1.asInstanceOf[js.Any])
     if (geometry2 != null) __obj.updateDynamic("geometry2")(geometry2.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceParametersProperties]

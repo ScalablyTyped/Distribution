@@ -29,10 +29,10 @@ object AutocompleteOptions {
     classes: AutocompleteClasses = null,
     close: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
     create: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
-    delay: Int | Double = null,
+    delay: js.UndefOr[Double] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     focus: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
-    minLength: Int | Double = null,
+    minLength: js.UndefOr[Double] = js.undefined,
     open: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
     position: js.Any = null,
     response: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
@@ -42,15 +42,15 @@ object AutocompleteOptions {
   ): AutocompleteOptions = {
     val __obj = js.Dynamic.literal()
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2(close))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2(open))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction2(response))

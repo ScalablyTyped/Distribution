@@ -21,35 +21,8 @@ class NoSymbolHereAssertion protected ()
   def this(
     openBracketToken: Token[OpenBracketToken],
     noKeyword: Token[NoKeyword],
-    symbols: js.UndefOr[scala.Nothing],
-    hereKeyword: Token[HereKeyword]
-  ) = this()
-  def this(
-    openBracketToken: Token[OpenBracketToken],
-    noKeyword: Token[NoKeyword],
     symbols: js.Array[PrimarySymbol],
     hereKeyword: Token[HereKeyword]
-  ) = this()
-  def this(
-    openBracketToken: Token[OpenBracketToken],
-    noKeyword: Token[NoKeyword],
-    symbols: js.UndefOr[scala.Nothing],
-    hereKeyword: js.UndefOr[scala.Nothing],
-    closeBracketToken: Token[CloseBracketToken]
-  ) = this()
-  def this(
-    openBracketToken: Token[OpenBracketToken],
-    noKeyword: Token[NoKeyword],
-    symbols: js.UndefOr[scala.Nothing],
-    hereKeyword: Token[HereKeyword],
-    closeBracketToken: Token[CloseBracketToken]
-  ) = this()
-  def this(
-    openBracketToken: Token[OpenBracketToken],
-    noKeyword: Token[NoKeyword],
-    symbols: js.Array[PrimarySymbol],
-    hereKeyword: js.UndefOr[scala.Nothing],
-    closeBracketToken: Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],

@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonNumberOfVerticalLines
+import typings.cesium.anon.NumberOfVerticalLines
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "EllipseOutlineGeometry")
 @js.native
 class EllipseOutlineGeometry protected () extends Packable {
-  def this(options: AnonNumberOfVerticalLines) = this()
+  def this(options: NumberOfVerticalLines) = this()
 }
 
 /* static members */

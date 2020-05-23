@@ -11,10 +11,10 @@ trait StreetLayerOptions extends js.Object {
 
 object StreetLayerOptions {
   @scala.inline
-  def apply(overlayMap: js.UndefOr[Boolean] = js.undefined, zIndex: Int | Double = null): StreetLayerOptions = {
+  def apply(overlayMap: js.UndefOr[Boolean] = js.undefined, zIndex: js.UndefOr[Double] = js.undefined): StreetLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overlayMap)) __obj.updateDynamic("overlayMap")(overlayMap.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayMap)) __obj.updateDynamic("overlayMap")(overlayMap.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreetLayerOptions]
   }
 }

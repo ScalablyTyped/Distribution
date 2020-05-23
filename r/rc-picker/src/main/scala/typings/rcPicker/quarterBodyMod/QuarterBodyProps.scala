@@ -25,11 +25,11 @@ object QuarterBodyProps {
     prefixCls: String,
     viewDate: DateType,
     disabledDate: /* date */ DateType => Boolean = null,
-    value: DateType = null
+    value: js.UndefOr[Null | DateType] = js.undefined
   ): QuarterBodyProps[DateType] = {
     val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], onSelect = js.Any.fromFunction1(onSelect), prefixCls = prefixCls.asInstanceOf[js.Any], viewDate = viewDate.asInstanceOf[js.Any])
     if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1(disabledDate))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuarterBodyProps[DateType]]
   }
 }

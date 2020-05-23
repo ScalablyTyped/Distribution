@@ -15,20 +15,20 @@ object PageRangeOptions {
   def apply(
     leaseId: String = null,
     locationMode: String = null,
-    maximumExecutionTimeInMs: Int | Double = null,
-    rangeEnd: Int | Double = null,
-    rangeStart: Int | Double = null,
+    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
+    rangeEnd: js.UndefOr[Double] = js.undefined,
+    rangeStart: js.UndefOr[Double] = js.undefined,
     snapshotId: String = null,
-    timeoutIntervalInMs: Int | Double = null
+    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
   ): PageRangeOptions = {
     val __obj = js.Dynamic.literal()
     if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
     if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
-    if (rangeEnd != null) __obj.updateDynamic("rangeEnd")(rangeEnd.asInstanceOf[js.Any])
-    if (rangeStart != null) __obj.updateDynamic("rangeStart")(rangeStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeEnd)) __obj.updateDynamic("rangeEnd")(rangeEnd.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeStart)) __obj.updateDynamic("rangeStart")(rangeStart.get.asInstanceOf[js.Any])
     if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
-    if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageRangeOptions]
   }
 }

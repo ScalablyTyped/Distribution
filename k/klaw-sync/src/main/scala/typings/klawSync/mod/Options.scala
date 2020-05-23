@@ -1,6 +1,6 @@
 package typings.klawSync.mod
 
-import typings.klawSync.AnonReaddirSync
+import typings.klawSync.anon.ReaddirSync
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait Options extends js.Object {
     * @default graceful-fs
     * @since v4.0.0
     */
-  var fs: js.UndefOr[AnonReaddirSync] = js.undefined
+  var fs: js.UndefOr[ReaddirSync] = js.undefined
   /**
     * @description True to only return files (ignore directories).
     *              Defaults to false if not specified.
@@ -52,20 +52,20 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    depthLimit: Int | Double = null,
+    depthLimit: js.UndefOr[Double] = js.undefined,
     filter: /* item */ Item => Boolean = null,
-    fs: AnonReaddirSync = null,
+    fs: ReaddirSync = null,
     nodir: js.UndefOr[Boolean] = js.undefined,
     nofile: js.UndefOr[Boolean] = js.undefined,
     traverseAll: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (depthLimit != null) __obj.updateDynamic("depthLimit")(depthLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(depthLimit)) __obj.updateDynamic("depthLimit")(depthLimit.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodir)) __obj.updateDynamic("nodir")(nodir.asInstanceOf[js.Any])
-    if (!js.isUndefined(nofile)) __obj.updateDynamic("nofile")(nofile.asInstanceOf[js.Any])
-    if (!js.isUndefined(traverseAll)) __obj.updateDynamic("traverseAll")(traverseAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodir)) __obj.updateDynamic("nodir")(nodir.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(nofile)) __obj.updateDynamic("nofile")(nofile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(traverseAll)) __obj.updateDynamic("traverseAll")(traverseAll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

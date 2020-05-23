@@ -12,19 +12,20 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
+import typings.qs.mod.ParsedQs
 import typings.std.Error
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - js.Function because Inheritance from two classes. Inlined length, call, bind
 - typings.expressServeStaticCore.mod.RequestHandler because Inheritance from two classes. Inlined `<apply>`
 - typings.expressServeStaticCore.mod.IRouter because Inheritance from two classes. Inlined param, param, all, all, all, all_Original, get, get, get, get_Original, post, post, post, post_Original, put, put, put, put_Original, delete, delete, delete, delete_Original, patch, patch, patch, patch_Original, options, options, options, options_Original, head, head, head, head_Original, checkout, checkout, checkout, checkout_Original, connect, connect, connect, connect_Original, copy, copy, copy, copy_Original, lock, lock, lock, lock_Original, merge, merge, merge, merge_Original, mkactivity, mkactivity, mkactivity, mkactivity_Original, mkcol, mkcol, mkcol, mkcol_Original, move, move, move, move_Original, `m-search`, `m-search`, `m-search`, `m-search_Original`, notify, notify, notify, notify_Original, propfind, propfind, propfind, propfind_Original, proppatch, proppatch, proppatch, proppatch_Original, purge, purge, purge, purge_Original, report, report, report, report_Original, search, search, search, search_Original, subscribe, subscribe, subscribe, subscribe_Original, trace, trace, trace, trace_Original, unlock, unlock, unlock, unlock_Original, unsubscribe, unsubscribe, unsubscribe, unsubscribe_Original, use, use, use, use, use, use_Original, route, stack */ @js.native
 trait Application
   extends EventEmitter
-     with typings.expressServeStaticCore.mod._Global_.Express.Application {
+     with typings.expressServeStaticCore.mod.global.Express.Application {
   /**
     * Used to get all registered routes in Express Application
     */
@@ -113,7 +114,7 @@ trait Application
   @JSName("use")
   var use_Original: (IRouterHandler[this.type] with (IRouterMatcher[this.type, _])) | ApplicationRequestHandler[this.type] = js.native
   def apply(
-    T0: /* req */ Request[ParamsDictionary, js.Any, js.Any, Query],
+    T0: /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs],
     T1: /* res */ Response[js.Any],
     T2: /* next */ NextFunction
   ): js.Any = js.native
@@ -121,8 +122,8 @@ trait Application
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def apply(req: Request[ParamsDictionary, _, _, Query], res: Response[_]): js.Any = js.native
-  def apply(req: Request[ParamsDictionary, _, _, Query], res: ServerResponse): js.Any = js.native
+  def apply(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_]): js.Any = js.native
+  def apply(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
   def apply(req: IncomingMessage, res: Response[_]): js.Any = js.native
   def apply(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   /**
@@ -482,7 +483,7 @@ trait Application
     handlers: ((RequestHandler[P, ResBody, ReqBody, ReqQuery]) | (RequestHandlerParams[P, ResBody, ReqBody, ReqQuery]))*
   ): this.type = js.native
   def use(
-    handlers: ((RequestHandler[ParamsDictionary, _, _, Query]) | (RequestHandlerParams[ParamsDictionary, _, _, Query]))*
+    handlers: ((RequestHandler[ParamsDictionary, _, _, ParsedQs]) | (RequestHandlerParams[ParamsDictionary, _, _, ParsedQs]))*
   ): this.type = js.native
   def use(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)

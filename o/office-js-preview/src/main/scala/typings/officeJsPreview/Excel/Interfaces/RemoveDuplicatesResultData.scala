@@ -24,10 +24,10 @@ trait RemoveDuplicatesResultData extends js.Object {
 
 object RemoveDuplicatesResultData {
   @scala.inline
-  def apply(removed: Int | Double = null, uniqueRemaining: Int | Double = null): RemoveDuplicatesResultData = {
+  def apply(removed: js.UndefOr[Double] = js.undefined, uniqueRemaining: js.UndefOr[Double] = js.undefined): RemoveDuplicatesResultData = {
     val __obj = js.Dynamic.literal()
-    if (removed != null) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
-    if (uniqueRemaining != null) __obj.updateDynamic("uniqueRemaining")(uniqueRemaining.asInstanceOf[js.Any])
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(uniqueRemaining)) __obj.updateDynamic("uniqueRemaining")(uniqueRemaining.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveDuplicatesResultData]
   }
 }

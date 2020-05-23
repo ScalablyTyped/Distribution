@@ -49,25 +49,25 @@ object IFindNearRouteOptions {
   def apply(
     spatialFilterType: String,
     avoid: js.Array[String] = null,
-    distanceBeforeFirstTurn: Int | Double = null,
+    distanceBeforeFirstTurn: js.UndefOr[Double] = js.undefined,
     end: String | Location = null,
-    heading: Int | Double = null,
+    heading: js.UndefOr[Double] = js.undefined,
     intersects: String | LocationRect | IPrimitive = null,
     location: String | Location = null,
     optimize: String = null,
-    radius: Int | Double = null,
+    radius: js.UndefOr[Double] = js.undefined,
     start: String | Location = null,
     travelMode: String = null
   ): IFindNearRouteOptions = {
     val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType.asInstanceOf[js.Any])
     if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
-    if (distanceBeforeFirstTurn != null) __obj.updateDynamic("distanceBeforeFirstTurn")(distanceBeforeFirstTurn.asInstanceOf[js.Any])
+    if (!js.isUndefined(distanceBeforeFirstTurn)) __obj.updateDynamic("distanceBeforeFirstTurn")(distanceBeforeFirstTurn.get.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
     if (intersects != null) __obj.updateDynamic("intersects")(intersects.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (optimize != null) __obj.updateDynamic("optimize")(optimize.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFindNearRouteOptions]

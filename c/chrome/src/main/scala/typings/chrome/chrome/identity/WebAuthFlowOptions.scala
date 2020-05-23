@@ -20,7 +20,7 @@ object WebAuthFlowOptions {
   @scala.inline
   def apply(url: String, interactive: js.UndefOr[Boolean] = js.undefined): WebAuthFlowOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAuthFlowOptions]
   }
 }

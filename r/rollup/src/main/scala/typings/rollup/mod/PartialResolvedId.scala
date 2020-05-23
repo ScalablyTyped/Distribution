@@ -16,13 +16,13 @@ object PartialResolvedId {
   def apply(
     id: String,
     external: js.UndefOr[Boolean] = js.undefined,
-    moduleSideEffects: js.UndefOr[Boolean] = js.undefined,
+    moduleSideEffects: js.UndefOr[Null | Boolean] = js.undefined,
     syntheticNamedExports: js.UndefOr[Boolean] = js.undefined
   ): PartialResolvedId = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.get.asInstanceOf[js.Any])
     if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects.asInstanceOf[js.Any])
-    if (!js.isUndefined(syntheticNamedExports)) __obj.updateDynamic("syntheticNamedExports")(syntheticNamedExports.asInstanceOf[js.Any])
+    if (!js.isUndefined(syntheticNamedExports)) __obj.updateDynamic("syntheticNamedExports")(syntheticNamedExports.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialResolvedId]
   }
 }

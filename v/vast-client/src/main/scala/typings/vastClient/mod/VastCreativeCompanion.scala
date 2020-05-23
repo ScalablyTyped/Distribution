@@ -19,12 +19,8 @@ object VastCreativeCompanion {
     id: String = null,
     sequence: String | Double = null
   ): VastCreativeCompanion = {
-    val __obj = js.Dynamic.literal(trackingEvents = trackingEvents.asInstanceOf[js.Any], variations = variations.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(trackingEvents = trackingEvents.asInstanceOf[js.Any], variations = variations.asInstanceOf[js.Any], adId = adId.asInstanceOf[js.Any], apiFramework = apiFramework.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (adId != null) __obj.updateDynamic("adId")(adId.asInstanceOf[js.Any])
-    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCreativeCompanion]
   }
 }

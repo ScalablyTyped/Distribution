@@ -174,7 +174,7 @@ object Model {
     groupTemplate: String = null,
     headerTemplate: String = null,
     htmlAttributes: js.Any = null,
-    index: Int | Double = null,
+    index: js.UndefOr[Double] = js.undefined,
     itemTemplate: String = null,
     locale: String = null,
     noRecordsTemplate: String = null,
@@ -196,17 +196,17 @@ object Model {
     if (actionComplete != null) __obj.updateDynamic("actionComplete")(js.Any.fromFunction1(actionComplete))
     if (actionFailure != null) __obj.updateDynamic("actionFailure")(js.Any.fromFunction1(actionFailure))
     if (actionFailureTemplate != null) __obj.updateDynamic("actionFailureTemplate")(actionFailureTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCustom)) __obj.updateDynamic("allowCustom")(allowCustom.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofill)) __obj.updateDynamic("autofill")(autofill.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCustom)) __obj.updateDynamic("allowCustom")(allowCustom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofill)) __obj.updateDynamic("autofill")(autofill.get.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (customValueSpecifier != null) __obj.updateDynamic("customValueSpecifier")(js.Any.fromFunction1(customValueSpecifier))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRtl)) __obj.updateDynamic("enableRtl")(enableRtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRtl)) __obj.updateDynamic("enableRtl")(enableRtl.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (filtering != null) __obj.updateDynamic("filtering")(js.Any.fromFunction1(filtering))
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction1(focus))
@@ -214,7 +214,7 @@ object Model {
     if (groupTemplate != null) __obj.updateDynamic("groupTemplate")(groupTemplate.asInstanceOf[js.Any])
     if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
     if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (noRecordsTemplate != null) __obj.updateDynamic("noRecordsTemplate")(noRecordsTemplate.asInstanceOf[js.Any])
@@ -223,9 +223,9 @@ object Model {
     if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight.asInstanceOf[js.Any])
     if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.get.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

@@ -21,6 +21,7 @@ object errorsMod extends js.Object {
   val HOTKEYS_HOTKEY_CHILDREN: String = js.native
   val HOTKEYS_WARN_DECORATOR_NEEDS_REACT_ELEMENT: String = js.native
   val HOTKEYS_WARN_DECORATOR_NO_METHOD: String = js.native
+  val INPUT_WARN_LEFT_ELEMENT_LEFT_ICON_MUTEX: String = js.native
   val MULTISLIDER_INVALID_CHILD: String = js.native
   val NUMERIC_INPUT_MAJOR_STEP_SIZE_BOUND: String = js.native
   val NUMERIC_INPUT_MAJOR_STEP_SIZE_NON_POSITIVE: String = js.native

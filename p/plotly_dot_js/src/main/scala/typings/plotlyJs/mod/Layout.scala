@@ -1,23 +1,26 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialAnnotationsAlign
-import typings.plotlyJs.PartialAxis
-import typings.plotlyJs.PartialFont
-import typings.plotlyJs.PartialHoverLabel
-import typings.plotlyJs.PartialImage
-import typings.plotlyJs.PartialLayoutAxis
-import typings.plotlyJs.PartialLegend
-import typings.plotlyJs.PartialMargin
-import typings.plotlyJs.PartialPolarLayout
-import typings.plotlyJs.PartialScene
-import typings.plotlyJs.PartialShape
-import typings.plotlyJs.PartialSlider
-import typings.plotlyJs.Partialrowsnumberroworder
-import typings.plotlyJs.PartialtextstringfontPart
+import typings.plotlyJs.anon.PartialAnnotationsAlign
+import typings.plotlyJs.anon.PartialAxis
+import typings.plotlyJs.anon.PartialFont
+import typings.plotlyJs.anon.PartialHoverLabel
+import typings.plotlyJs.anon.PartialImage
+import typings.plotlyJs.anon.PartialLayoutAxis
+import typings.plotlyJs.anon.PartialLegend
+import typings.plotlyJs.anon.PartialMapbox
+import typings.plotlyJs.anon.PartialMargin
+import typings.plotlyJs.anon.PartialPolarLayout
+import typings.plotlyJs.anon.PartialScene
+import typings.plotlyJs.anon.PartialShape
+import typings.plotlyJs.anon.PartialSlider
+import typings.plotlyJs.anon.Partialrowsnumberroworder
+import typings.plotlyJs.anon.PartialtextstringfontPart
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsNumbers.`0`
 import typings.plotlyJs.plotlyJsNumbers.`1`
 import typings.plotlyJs.plotlyJsStrings._empty
+import typings.plotlyJs.plotlyJsStrings.`x unified`
+import typings.plotlyJs.plotlyJsStrings.`y unified`
 import typings.plotlyJs.plotlyJsStrings.any
 import typings.plotlyJs.plotlyJsStrings.closest
 import typings.plotlyJs.plotlyJsStrings.d
@@ -57,10 +60,13 @@ trait Layout extends js.Object {
   var height: Double
   var hiddenlabels: js.Array[String]
   var hidesources: Boolean
+  var hoverdistance: Double
   var hoverlabel: PartialHoverLabel
-  var hovermode: closest | x | y | `false`
+  var hovermode: closest | x | y | (`x unified`) | (`y unified`) | `false`
   var images: js.Array[PartialImage]
   var legend: PartialLegend
+   // TODO
+  var mapbox: PartialMapbox
   var margin: PartialMargin
   var orientation: Double
   var paper_bgcolor: Color
@@ -74,7 +80,6 @@ trait Layout extends js.Object {
   var polar7: PartialPolarLayout
   var polar8: PartialPolarLayout
   var polar9: PartialPolarLayout
-   // TODO
   var radialaxis: PartialAxis
   var scene: PartialScene
   var selectdirection: h | v | d | any
@@ -83,6 +88,7 @@ trait Layout extends js.Object {
   var showlegend: Boolean
    // TODO
   var sliders: js.Array[PartialSlider]
+  var subplot: String
   var title: String | PartialtextstringfontPart
   var titlefont: PartialFont
   var transition: Transition
@@ -148,10 +154,12 @@ object Layout {
     height: Double,
     hiddenlabels: js.Array[String],
     hidesources: Boolean,
+    hoverdistance: Double,
     hoverlabel: PartialHoverLabel,
-    hovermode: closest | x | y | `false`,
+    hovermode: closest | x | y | (`x unified`) | (`y unified`) | `false`,
     images: js.Array[PartialImage],
     legend: PartialLegend,
+    mapbox: PartialMapbox,
     margin: PartialMargin,
     orientation: Double,
     paper_bgcolor: Color,
@@ -172,6 +180,7 @@ object Layout {
     shapes: js.Array[PartialShape],
     showlegend: Boolean,
     sliders: js.Array[PartialSlider],
+    subplot: String,
     title: String | PartialtextstringfontPart,
     titlefont: PartialFont,
     transition: Transition,
@@ -207,7 +216,7 @@ object Layout {
     `yaxisDotrange[0]`: Datum = null,
     `yaxisDotrange[1]`: Datum = null
   ): Layout = {
-    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], autosize = autosize.asInstanceOf[js.Any], bargap = bargap.asInstanceOf[js.Any], bargroupgap = bargroupgap.asInstanceOf[js.Any], barmode = barmode.asInstanceOf[js.Any], barnorm = barnorm.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], colorway = colorway.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hiddenlabels = hiddenlabels.asInstanceOf[js.Any], hidesources = hidesources.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], polar = polar.asInstanceOf[js.Any], polar2 = polar2.asInstanceOf[js.Any], polar3 = polar3.asInstanceOf[js.Any], polar4 = polar4.asInstanceOf[js.Any], polar5 = polar5.asInstanceOf[js.Any], polar6 = polar6.asInstanceOf[js.Any], polar7 = polar7.asInstanceOf[js.Any], polar8 = polar8.asInstanceOf[js.Any], polar9 = polar9.asInstanceOf[js.Any], radialaxis = radialaxis.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], selectdirection = selectdirection.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any], shapes = shapes.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], sliders = sliders.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titlefont = titlefont.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xaxis2 = xaxis2.asInstanceOf[js.Any], xaxis3 = xaxis3.asInstanceOf[js.Any], xaxis4 = xaxis4.asInstanceOf[js.Any], xaxis5 = xaxis5.asInstanceOf[js.Any], xaxis6 = xaxis6.asInstanceOf[js.Any], xaxis7 = xaxis7.asInstanceOf[js.Any], xaxis8 = xaxis8.asInstanceOf[js.Any], xaxis9 = xaxis9.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], yaxis2 = yaxis2.asInstanceOf[js.Any], yaxis3 = yaxis3.asInstanceOf[js.Any], yaxis4 = yaxis4.asInstanceOf[js.Any], yaxis5 = yaxis5.asInstanceOf[js.Any], yaxis6 = yaxis6.asInstanceOf[js.Any], yaxis7 = yaxis7.asInstanceOf[js.Any], yaxis8 = yaxis8.asInstanceOf[js.Any], yaxis9 = yaxis9.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], autosize = autosize.asInstanceOf[js.Any], bargap = bargap.asInstanceOf[js.Any], bargroupgap = bargroupgap.asInstanceOf[js.Any], barmode = barmode.asInstanceOf[js.Any], barnorm = barnorm.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], colorway = colorway.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hiddenlabels = hiddenlabels.asInstanceOf[js.Any], hidesources = hidesources.asInstanceOf[js.Any], hoverdistance = hoverdistance.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], mapbox = mapbox.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], polar = polar.asInstanceOf[js.Any], polar2 = polar2.asInstanceOf[js.Any], polar3 = polar3.asInstanceOf[js.Any], polar4 = polar4.asInstanceOf[js.Any], polar5 = polar5.asInstanceOf[js.Any], polar6 = polar6.asInstanceOf[js.Any], polar7 = polar7.asInstanceOf[js.Any], polar8 = polar8.asInstanceOf[js.Any], polar9 = polar9.asInstanceOf[js.Any], radialaxis = radialaxis.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], selectdirection = selectdirection.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any], shapes = shapes.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], sliders = sliders.asInstanceOf[js.Any], subplot = subplot.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titlefont = titlefont.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xaxis2 = xaxis2.asInstanceOf[js.Any], xaxis3 = xaxis3.asInstanceOf[js.Any], xaxis4 = xaxis4.asInstanceOf[js.Any], xaxis5 = xaxis5.asInstanceOf[js.Any], xaxis6 = xaxis6.asInstanceOf[js.Any], xaxis7 = xaxis7.asInstanceOf[js.Any], xaxis8 = xaxis8.asInstanceOf[js.Any], xaxis9 = xaxis9.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], yaxis2 = yaxis2.asInstanceOf[js.Any], yaxis3 = yaxis3.asInstanceOf[js.Any], yaxis4 = yaxis4.asInstanceOf[js.Any], yaxis5 = yaxis5.asInstanceOf[js.Any], yaxis6 = yaxis6.asInstanceOf[js.Any], yaxis7 = yaxis7.asInstanceOf[js.Any], yaxis8 = yaxis8.asInstanceOf[js.Any], yaxis9 = yaxis9.asInstanceOf[js.Any])
     __obj.updateDynamic("xaxis.autorange")(xaxisDotautorange.asInstanceOf[js.Any])
     __obj.updateDynamic("xaxis.range")(xaxisDotrange.asInstanceOf[js.Any])
     __obj.updateDynamic("xaxis.title")(xaxisDottitle.asInstanceOf[js.Any])
@@ -216,10 +225,10 @@ object Layout {
     __obj.updateDynamic("yaxis.range")(yaxisDotrange.asInstanceOf[js.Any])
     __obj.updateDynamic("yaxis.title")(yaxisDottitle.asInstanceOf[js.Any])
     __obj.updateDynamic("yaxis.type")(yaxisDottype.asInstanceOf[js.Any])
-    if (`xaxisDotrange[0]` != null) __obj.updateDynamic("xaxis.range[0]")(`xaxisDotrange[0]`.asInstanceOf[js.Any])
-    if (`xaxisDotrange[1]` != null) __obj.updateDynamic("xaxis.range[1]")(`xaxisDotrange[1]`.asInstanceOf[js.Any])
-    if (`yaxisDotrange[0]` != null) __obj.updateDynamic("yaxis.range[0]")(`yaxisDotrange[0]`.asInstanceOf[js.Any])
-    if (`yaxisDotrange[1]` != null) __obj.updateDynamic("yaxis.range[1]")(`yaxisDotrange[1]`.asInstanceOf[js.Any])
+    __obj.updateDynamic("xaxis.range[0]")(`xaxisDotrange[0]`.asInstanceOf[js.Any])
+    __obj.updateDynamic("xaxis.range[1]")(`xaxisDotrange[1]`.asInstanceOf[js.Any])
+    __obj.updateDynamic("yaxis.range[0]")(`yaxisDotrange[0]`.asInstanceOf[js.Any])
+    __obj.updateDynamic("yaxis.range[1]")(`yaxisDotrange[1]`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
 }

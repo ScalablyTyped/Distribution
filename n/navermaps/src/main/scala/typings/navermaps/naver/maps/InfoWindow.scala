@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("naver.maps.InfoWindow")
 @js.native
-class InfoWindow protected () extends OverlayView {
-  def this(options: InfoWindowOptions) = this()
+trait InfoWindow extends OverlayView {
   def close(): Unit = js.native
   def getContent(): HTMLElement = js.native
   def getOptions(): InfoWindowOptions = js.native

@@ -17,16 +17,16 @@ object TooltipOptions {
   def apply(
     className: String = null,
     event: String = null,
-    hideDelay: Int | Double = null,
+    hideDelay: js.UndefOr[Double] = js.undefined,
     position: String = null,
-    showDelay: Int | Double = null
+    showDelay: js.UndefOr[Double] = js.undefined
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDelay)) __obj.updateDynamic("hideDelay")(hideDelay.get.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDelay)) __obj.updateDynamic("showDelay")(showDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
 }

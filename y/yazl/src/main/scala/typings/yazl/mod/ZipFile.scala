@@ -3,9 +3,9 @@ package typings.yazl.mod
 import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.Buffer
 import typings.std.Date
-import typings.yazl.PartialDirectoryOptions
-import typings.yazl.PartialOptions
-import typings.yazl.PartialReadStreamOptions
+import typings.yazl.anon.PartialDirectoryOptions
+import typings.yazl.anon.PartialOptions
+import typings.yazl.anon.PartialReadStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

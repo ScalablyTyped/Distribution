@@ -18,9 +18,8 @@ trait SwitchCases extends js.Object {
 object SwitchCases {
   @scala.inline
   def apply(is: SchemaLike = null, `then`: SchemaLike = null): SwitchCases = {
-    val __obj = js.Dynamic.literal()
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(is = is.asInstanceOf[js.Any])
+    __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchCases]
   }
 }

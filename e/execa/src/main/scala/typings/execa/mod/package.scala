@@ -14,7 +14,7 @@ package object mod {
     - typings.execa.execaStrings.inherit
     - typings.node.streamMod.Stream
     - scala.Double
-    - `js.undefined`
+    - js.UndefOr[scala.Nothing]
   */
   type StdioOption = js.UndefOr[typings.execa.mod._StdioOption | typings.node.streamMod.Stream | scala.Double]
 }

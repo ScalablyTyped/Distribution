@@ -1,6 +1,5 @@
 package typings.openui5.sap.m
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,15 +18,6 @@ object ImageMode extends js.Object {
   
   @js.native
   sealed trait Image extends ImageMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImageMode with Double] = js.native
-  /* 0 */ @js.native
-  object Background extends TopLevel[Background with Double]
-  
-  /* 1 */ @js.native
-  object Image
-    extends TopLevel[typings.openui5.sap.m.ImageMode.Image with Double]
   
 }
 

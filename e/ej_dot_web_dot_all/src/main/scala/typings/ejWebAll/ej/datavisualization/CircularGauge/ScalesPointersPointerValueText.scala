@@ -38,22 +38,22 @@ trait ScalesPointersPointerValueText extends js.Object {
 object ScalesPointersPointerValueText {
   @scala.inline
   def apply(
-    angle: Int | Double = null,
+    angle: js.UndefOr[Double] = js.undefined,
     autoAngle: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
-    distance: Int | Double = null,
+    distance: js.UndefOr[Double] = js.undefined,
     font: ScalesPointersPointerValueTextFont = null,
-    opacity: Int | Double = null,
+    opacity: js.UndefOr[Double] = js.undefined,
     showValue: js.UndefOr[Boolean] = js.undefined
   ): ScalesPointersPointerValueText = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAngle)) __obj.updateDynamic("autoAngle")(autoAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAngle)) __obj.updateDynamic("autoAngle")(autoAngle.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesPointersPointerValueText]
   }
 }

@@ -15,15 +15,15 @@ trait GetUserStarsParams extends js.Object {
 object GetUserStarsParams {
   @scala.inline
   def apply(
-    count: Int | Double = null,
-    maxId: Int | Double = null,
-    minId: Int | Double = null,
+    count: js.UndefOr[Double] = js.undefined,
+    maxId: js.UndefOr[Double] = js.undefined,
+    minId: js.UndefOr[Double] = js.undefined,
     order: Order = null
   ): GetUserStarsParams = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (maxId != null) __obj.updateDynamic("maxId")(maxId.asInstanceOf[js.Any])
-    if (minId != null) __obj.updateDynamic("minId")(minId.asInstanceOf[js.Any])
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxId)) __obj.updateDynamic("maxId")(maxId.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minId)) __obj.updateDynamic("minId")(minId.get.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserStarsParams]
   }

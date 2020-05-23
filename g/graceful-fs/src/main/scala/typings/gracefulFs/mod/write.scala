@@ -1,17 +1,18 @@
 package typings.gracefulFs.mod
 
-import typings.node.AnonBuffer
-import typings.node.AnonBufferBytesWritten
-import typings.node.AnonBufferDataView
-import typings.node.AnonBufferFloat32Array
-import typings.node.AnonBufferFloat64Array
-import typings.node.AnonBufferInt16Array
-import typings.node.AnonBufferInt32Array
-import typings.node.AnonBufferInt8Array
-import typings.node.AnonBufferString
-import typings.node.AnonBufferUint32Array
-import typings.node.AnonBytesWritten
+import typings.node.BufferEncoding
 import typings.node.NodeJS.ErrnoException
+import typings.node.anon.BufferBytesWritten
+import typings.node.anon.BufferDataView
+import typings.node.anon.BufferFloat32Array
+import typings.node.anon.BufferFloat64Array
+import typings.node.anon.BufferInt16Array
+import typings.node.anon.BufferInt32Array
+import typings.node.anon.BufferInt8Array
+import typings.node.anon.BufferUint16Array
+import typings.node.anon.BufferUint32Array
+import typings.node.anon.BufferUint8Array
+import typings.node.anon.BufferUint8ClampedArray
 import typings.std.DataView
 import typings.std.Float32Array
 import typings.std.Float64Array
@@ -26,7 +27,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
 @JSImport("graceful-fs", "write")
 @js.native
 object write extends js.Object {
@@ -38,15 +38,15 @@ object write extends js.Object {
   def apply(
     fd: Double,
     buffer: DataView,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
+    offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: DataView,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -54,75 +54,7 @@ object write extends js.Object {
     offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: DataView,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ DataView, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -132,15 +64,15 @@ object write extends js.Object {
   def apply(
     fd: Double,
     buffer: Float32Array,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: Float32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -148,75 +80,7 @@ object write extends js.Object {
     offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float32Array,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Float32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -226,15 +90,15 @@ object write extends js.Object {
   def apply(
     fd: Double,
     buffer: Float64Array,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: Float64Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -242,75 +106,7 @@ object write extends js.Object {
     offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Float64Array,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Float64Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -320,15 +116,15 @@ object write extends js.Object {
   def apply(
     fd: Double,
     buffer: Int16Array,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: Int16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -336,75 +132,7 @@ object write extends js.Object {
     offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int16Array,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Int16Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -414,15 +142,15 @@ object write extends js.Object {
   def apply(
     fd: Double,
     buffer: Int32Array,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: Int32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -430,75 +158,7 @@ object write extends js.Object {
     offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int32Array,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Int32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -508,15 +168,15 @@ object write extends js.Object {
   def apply(
     fd: Double,
     buffer: Int8Array,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: Int8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -524,75 +184,7 @@ object write extends js.Object {
     offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Int8Array,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Int8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -602,15 +194,15 @@ object write extends js.Object {
   def apply(
     fd: Double,
     buffer: Uint16Array,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: Uint16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -618,75 +210,7 @@ object write extends js.Object {
     offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint16Array,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint16Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -696,15 +220,15 @@ object write extends js.Object {
   def apply(
     fd: Double,
     buffer: Uint32Array,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: Uint32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
@@ -712,80 +236,8 @@ object write extends js.Object {
     offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
   ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint32Array,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint32Array, Unit]
-  ): Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    */
   def apply(
     fd: Double,
     buffer: Uint8Array,
@@ -794,136 +246,27 @@ object write extends js.Object {
   def apply(
     fd: Double,
     buffer: Uint8Array,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: Uint8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    */
   def apply(
     fd: Double,
     buffer: Uint8Array,
     offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    */
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
-    */
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint8Array, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
     buffer: Uint8ClampedArray,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* err */ ErrnoException | Null, 
       /* written */ Double, 
@@ -935,236 +278,40 @@ object write extends js.Object {
     fd: Double,
     buffer: Uint8ClampedArray,
     offset: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint8ClampedArray, Unit]
+  ): Unit = js.native
+  def apply(
+    fd: Double,
+    buffer: Uint8ClampedArray,
+    offset: js.UndefOr[Double | Null],
+    length: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint8ClampedArray, Unit]
+  ): Unit = js.native
+  def apply(
+    fd: Double,
+    buffer: Uint8ClampedArray,
+    offset: js.UndefOr[Double | Null],
     length: js.UndefOr[Double | Null],
     position: js.UndefOr[Double | Null],
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* buffer */ Uint8ClampedArray, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: Double,
-    length: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: Null,
-    length: Double,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    buffer: Uint8ClampedArray,
-    offset: Null,
-    length: Null,
-    callback: js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* written */ Double, 
-      /* buffer */ Uint8ClampedArray, 
-      Unit
-    ]
-  ): Unit = js.native
-  /**
-    * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param string A string to write. If something other than a string is supplied it will be coerced to a string.
-    */
-  def apply(
-    fd: Double,
-    string: js.Any,
+    string: String,
     callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
-    string: js.Any,
-    position: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
+    string: String,
+    position: js.UndefOr[Double | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   def apply(
     fd: Double,
-    string: js.Any,
-    position: js.UndefOr[scala.Nothing],
-    encoding: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: js.UndefOr[scala.Nothing],
-    encoding: String,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: js.UndefOr[scala.Nothing],
-    encoding: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  /**
-    * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param string A string to write. If something other than a string is supplied it will be coerced to a string.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    */
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: Double,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: Double,
-    encoding: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  /**
-    * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param string A string to write. If something other than a string is supplied it will be coerced to a string.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    * @param encoding The expected string encoding.
-    */
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: Double,
-    encoding: String,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: Double,
-    encoding: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: Null,
-    encoding: js.UndefOr[scala.Nothing],
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: Null,
-    encoding: String,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    string: js.Any,
-    position: Null,
-    encoding: Null,
-    callback: js.Function3[/* err */ ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
+    string: String,
+    position: js.UndefOr[Double | Null],
+    encoding: js.UndefOr[BufferEncoding | Null],
+    callback: js.Function3[ErrnoException | Null, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
   /**
     * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
@@ -1174,101 +321,101 @@ object write extends js.Object {
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
   @JSName("__promisify__")
-  def promisify(fd: Double): js.Promise[AnonBuffer] = js.native
+  def promisify(fd: Double): js.Promise[BufferUint8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: DataView): js.Promise[AnonBufferDataView] = js.native
+  def promisify(fd: Double, buffer: DataView): js.Promise[BufferDataView] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: DataView, offset: Double): js.Promise[AnonBufferDataView] = js.native
+  def promisify(fd: Double, buffer: DataView, offset: Double): js.Promise[BufferDataView] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[AnonBufferDataView] = js.native
+  def promisify(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[BufferDataView] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[AnonBufferDataView] = js.native
+  def promisify(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[BufferDataView] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float32Array): js.Promise[AnonBufferFloat32Array] = js.native
+  def promisify(fd: Double, buffer: Float32Array): js.Promise[BufferFloat32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float32Array, offset: Double): js.Promise[AnonBufferFloat32Array] = js.native
+  def promisify(fd: Double, buffer: Float32Array, offset: Double): js.Promise[BufferFloat32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[AnonBufferFloat32Array] = js.native
+  def promisify(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[BufferFloat32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferFloat32Array] = js.native
+  def promisify(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float64Array): js.Promise[AnonBufferFloat64Array] = js.native
+  def promisify(fd: Double, buffer: Float64Array): js.Promise[BufferFloat64Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float64Array, offset: Double): js.Promise[AnonBufferFloat64Array] = js.native
+  def promisify(fd: Double, buffer: Float64Array, offset: Double): js.Promise[BufferFloat64Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[AnonBufferFloat64Array] = js.native
+  def promisify(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[BufferFloat64Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferFloat64Array] = js.native
+  def promisify(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat64Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int16Array): js.Promise[AnonBufferInt16Array] = js.native
+  def promisify(fd: Double, buffer: Int16Array): js.Promise[BufferInt16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int16Array, offset: Double): js.Promise[AnonBufferInt16Array] = js.native
+  def promisify(fd: Double, buffer: Int16Array, offset: Double): js.Promise[BufferInt16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[AnonBufferInt16Array] = js.native
+  def promisify(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[BufferInt16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferInt16Array] = js.native
+  def promisify(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int32Array): js.Promise[AnonBufferInt32Array] = js.native
+  def promisify(fd: Double, buffer: Int32Array): js.Promise[BufferInt32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int32Array, offset: Double): js.Promise[AnonBufferInt32Array] = js.native
+  def promisify(fd: Double, buffer: Int32Array, offset: Double): js.Promise[BufferInt32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[AnonBufferInt32Array] = js.native
+  def promisify(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[BufferInt32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferInt32Array] = js.native
+  def promisify(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int8Array): js.Promise[AnonBufferInt8Array] = js.native
+  def promisify(fd: Double, buffer: Int8Array): js.Promise[BufferInt8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int8Array, offset: Double): js.Promise[AnonBufferInt8Array] = js.native
+  def promisify(fd: Double, buffer: Int8Array, offset: Double): js.Promise[BufferInt8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[AnonBufferInt8Array] = js.native
+  def promisify(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[BufferInt8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferInt8Array] = js.native
+  def promisify(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint16Array): js.Promise[AnonBufferBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint16Array): js.Promise[BufferUint16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint16Array, offset: Double): js.Promise[AnonBufferBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint16Array, offset: Double): js.Promise[BufferUint16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[AnonBufferBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[BufferUint16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint16Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint32Array): js.Promise[AnonBufferUint32Array] = js.native
+  def promisify(fd: Double, buffer: Uint32Array): js.Promise[BufferUint32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint32Array, offset: Double): js.Promise[AnonBufferUint32Array] = js.native
+  def promisify(fd: Double, buffer: Uint32Array, offset: Double): js.Promise[BufferUint32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[AnonBufferUint32Array] = js.native
+  def promisify(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[BufferUint32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[AnonBufferUint32Array] = js.native
+  def promisify(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint32Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8Array): js.Promise[AnonBuffer] = js.native
+  def promisify(fd: Double, buffer: Uint8Array): js.Promise[BufferUint8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8Array, offset: Double): js.Promise[AnonBuffer] = js.native
+  def promisify(fd: Double, buffer: Uint8Array, offset: Double): js.Promise[BufferUint8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[AnonBuffer] = js.native
+  def promisify(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[BufferUint8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[AnonBuffer] = js.native
+  def promisify(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint8Array] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8ClampedArray): js.Promise[AnonBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint8ClampedArray): js.Promise[BufferUint8ClampedArray] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double): js.Promise[AnonBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double): js.Promise[BufferUint8ClampedArray] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[AnonBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[BufferUint8ClampedArray] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[AnonBytesWritten] = js.native
+  def promisify(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[BufferUint8ClampedArray] = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
-    * @param string A string to write. If something other than a string is supplied it will be coerced to a string.
+    * @param string A string to write.
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     * @param encoding The expected string encoding.
     */
   @JSName("__promisify__")
-  def promisify(fd: Double, string: js.Any): js.Promise[AnonBufferString] = js.native
+  def promisify(fd: Double, string: String): js.Promise[BufferBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, string: js.Any, position: Double): js.Promise[AnonBufferString] = js.native
+  def promisify(fd: Double, string: String, position: Double): js.Promise[BufferBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, string: js.Any, position: Double, encoding: String): js.Promise[AnonBufferString] = js.native
+  def promisify(fd: Double, string: String, position: Double, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
   @JSName("__promisify__")
-  def promisify(fd: Double, string: js.Any, position: Null, encoding: String): js.Promise[AnonBufferString] = js.native
+  def promisify(fd: Double, string: String, position: Null, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
 }
 

@@ -22,7 +22,7 @@ object geoObject extends js.Object {
     override var events: IEventManager = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.yandexMaps.mod.IEventEmitter because Already inherited
   - typings.yandexMaps.mod.IParentOnMap because Already inherited
   - typings.yandexMaps.mod.ICustomizable because Already inherited

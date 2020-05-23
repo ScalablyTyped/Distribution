@@ -10,20 +10,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides information about an activated event that fires after the app was suspended for a folder picker operation. */
-@JSGlobal("Windows.UI.WebUI.WebUIFolderPickerContinuationEventArgs")
-@js.native
-abstract class WebUIFolderPickerContinuationEventArgs () extends js.Object {
+trait WebUIFolderPickerContinuationEventArgs extends js.Object {
   /** Gets the app activation operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   /** Gets a set of values populated by the app before a FolderPicker operation that deactivates the app in order to provide context when the app is activated. */
-  var continuationData: ValueSet = js.native
+  var continuationData: ValueSet
   /** Gets the folder selected by the user during the folder picker operation. */
-  var folder: StorageFolder = js.native
+  var folder: StorageFolder
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
+}
+
+object WebUIFolderPickerContinuationEventArgs {
+  @scala.inline
+  def apply(
+    activatedOperation: ActivatedOperation,
+    continuationData: ValueSet,
+    folder: StorageFolder,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen
+  ): WebUIFolderPickerContinuationEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], continuationData = continuationData.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUIFolderPickerContinuationEventArgs]
+  }
 }
 

@@ -4,8 +4,8 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.react.mod.StatelessComponent
-import typings.reactSvgPanZoom.AnonBackground
-import typings.reactSvgPanZoom.AnonPosition
+import typings.reactSvgPanZoom.anon.Background
+import typings.reactSvgPanZoom.anon.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait Props extends js.Object {
   var disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.undefined
   // height of the viewer displayed on screen
   var height: Double
-  var miniatureProps: js.UndefOr[AnonBackground] = js.undefined
+  var miniatureProps: js.UndefOr[Background] = js.undefined
   var modifierKeys: js.UndefOr[js.Array[String]] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.undefined
   var onDoubleClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.undefined
@@ -40,7 +40,7 @@ trait Props extends js.Object {
   var style: js.UndefOr[js.Object] = js.undefined
   // current active tool (TOOL_NONE, TOOL_PAN, TOOL_ZOOM_IN, TOOL_ZOOM_OUT)
   var tool: Tool
-  var toolbarProps: js.UndefOr[AnonPosition] = js.undefined
+  var toolbarProps: js.UndefOr[Position] = js.undefined
   // value of the viewer (current point of view)
   var value: Value | Null
   // width of the viewer displayed on screen
@@ -68,7 +68,7 @@ object Props {
     detectPinchGesture: js.UndefOr[Boolean] = js.undefined,
     detectWheel: js.UndefOr[Boolean] = js.undefined,
     disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.undefined,
-    miniatureProps: AnonBackground = null,
+    miniatureProps: Background = null,
     modifierKeys: js.Array[String] = null,
     onClick: /* event */ ViewerMouseEvent[_] => Unit = null,
     onDoubleClick: /* event */ ViewerMouseEvent[_] => Unit = null,
@@ -78,24 +78,24 @@ object Props {
     onPan: /* event */ ViewerMouseEvent[_] => Unit = null,
     onZoom: /* event */ ViewerMouseEvent[_] => Unit = null,
     preventPanOutside: js.UndefOr[Boolean] = js.undefined,
-    scaleFactor: Int | Double = null,
-    scaleFactorMax: Int | Double = null,
-    scaleFactorMin: Int | Double = null,
-    scaleFactorOnWheel: Int | Double = null,
+    scaleFactor: js.UndefOr[Double] = js.undefined,
+    scaleFactorMax: js.UndefOr[Double] = js.undefined,
+    scaleFactorMin: js.UndefOr[Double] = js.undefined,
+    scaleFactorOnWheel: js.UndefOr[Double] = js.undefined,
     style: js.Object = null,
-    toolbarProps: AnonPosition = null,
+    toolbarProps: Position = null,
     value: Value = null
   ): Props = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (SVGBackground != null) __obj.updateDynamic("SVGBackground")(SVGBackground.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (customMiniature != null) __obj.updateDynamic("customMiniature")(customMiniature.asInstanceOf[js.Any])
     if (customToolbar != null) __obj.updateDynamic("customToolbar")(customToolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectAutoPan)) __obj.updateDynamic("detectAutoPan")(detectAutoPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectPinchGesture)) __obj.updateDynamic("detectPinchGesture")(detectPinchGesture.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectWheel)) __obj.updateDynamic("detectWheel")(detectWheel.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDoubleClickZoomWithToolAuto)) __obj.updateDynamic("disableDoubleClickZoomWithToolAuto")(disableDoubleClickZoomWithToolAuto.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectAutoPan)) __obj.updateDynamic("detectAutoPan")(detectAutoPan.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectPinchGesture)) __obj.updateDynamic("detectPinchGesture")(detectPinchGesture.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectWheel)) __obj.updateDynamic("detectWheel")(detectWheel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDoubleClickZoomWithToolAuto)) __obj.updateDynamic("disableDoubleClickZoomWithToolAuto")(disableDoubleClickZoomWithToolAuto.get.asInstanceOf[js.Any])
     if (miniatureProps != null) __obj.updateDynamic("miniatureProps")(miniatureProps.asInstanceOf[js.Any])
     if (modifierKeys != null) __obj.updateDynamic("modifierKeys")(modifierKeys.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
@@ -105,14 +105,13 @@ object Props {
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
     if (onPan != null) __obj.updateDynamic("onPan")(js.Any.fromFunction1(onPan))
     if (onZoom != null) __obj.updateDynamic("onZoom")(js.Any.fromFunction1(onZoom))
-    if (!js.isUndefined(preventPanOutside)) __obj.updateDynamic("preventPanOutside")(preventPanOutside.asInstanceOf[js.Any])
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
-    if (scaleFactorMax != null) __obj.updateDynamic("scaleFactorMax")(scaleFactorMax.asInstanceOf[js.Any])
-    if (scaleFactorMin != null) __obj.updateDynamic("scaleFactorMin")(scaleFactorMin.asInstanceOf[js.Any])
-    if (scaleFactorOnWheel != null) __obj.updateDynamic("scaleFactorOnWheel")(scaleFactorOnWheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventPanOutside)) __obj.updateDynamic("preventPanOutside")(preventPanOutside.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactor)) __obj.updateDynamic("scaleFactor")(scaleFactor.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactorMax)) __obj.updateDynamic("scaleFactorMax")(scaleFactorMax.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactorMin)) __obj.updateDynamic("scaleFactorMin")(scaleFactorMin.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleFactorOnWheel)) __obj.updateDynamic("scaleFactorOnWheel")(scaleFactorOnWheel.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (toolbarProps != null) __obj.updateDynamic("toolbarProps")(toolbarProps.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -1,6 +1,6 @@
 package typings.reactWeui.mod
 
-import typings.reactWeui.AnonType
+import typings.reactWeui.anon.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class MediaBox protected () extends js.Object {
 @JSImport("react-weui", "MediaBox")
 @js.native
 object MediaBox extends js.Object {
-  var defaultProps: AnonType = js.native
+  var defaultProps: Type = js.native
   @js.native
   object propTypes extends js.Object {
     @js.native

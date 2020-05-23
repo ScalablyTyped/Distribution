@@ -1,18 +1,17 @@
 package typings.aliOss.mod
 
-import typings.aliOss.AnonAcl
-import typings.aliOss.AnonAllowEmpty
-import typings.aliOss.AnonBucket
-import typings.aliOss.AnonDataPutChannelConf
-import typings.aliOss.AnonEnable
-import typings.aliOss.AnonEndTime
-import typings.aliOss.AnonError
-import typings.aliOss.AnonEtag
-import typings.aliOss.AnonName
-import typings.aliOss.AnonResRules
-import typings.aliOss.AnonRules
-import typings.aliOss.AnonSourceBucketName
-import typings.aliOss.AnonTimeout
+import typings.aliOss.anon.Acl
+import typings.aliOss.anon.AllowEmpty
+import typings.aliOss.anon.DataPutChannelConf
+import typings.aliOss.anon.Enable
+import typings.aliOss.anon.EndTime
+import typings.aliOss.anon.Error
+import typings.aliOss.anon.Etag
+import typings.aliOss.anon.Name
+import typings.aliOss.anon.ResRules
+import typings.aliOss.anon.Rules
+import typings.aliOss.anon.SourceBucketName
+import typings.aliOss.anon.Timeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,8 @@ trait OSS extends js.Object {
   /**
     * After uploading all data parts, you must call the Complete Multipart Upload API to complete Multipart Upload for the entire file.
     */
-  def completeMultipartUpload(name: String, uploadId: String, parts: js.Array[AnonEtag]): js.Promise[CompleteMultipartUploadResult] = js.native
-  def completeMultipartUpload(name: String, uploadId: String, parts: js.Array[AnonEtag], options: CompleteMultipartUploadOptions): js.Promise[CompleteMultipartUploadResult] = js.native
+  def completeMultipartUpload(name: String, uploadId: String, parts: js.Array[Etag]): js.Promise[CompleteMultipartUploadResult] = js.native
+  def completeMultipartUpload(name: String, uploadId: String, parts: js.Array[Etag], options: CompleteMultipartUploadOptions): js.Promise[CompleteMultipartUploadResult] = js.native
   /**
     * Copy an object from sourceName to name.
     */
@@ -42,8 +41,8 @@ trait OSS extends js.Object {
   /**
     * Create a VOD playlist for the channel.
     */
-  def createVod(id: String, name: String, time: AnonEndTime): js.Promise[NormalSuccessResponse] = js.native
-  def createVod(id: String, name: String, time: AnonEndTime, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
+  def createVod(id: String, name: String, time: EndTime): js.Promise[NormalSuccessResponse] = js.native
+  def createVod(id: String, name: String, time: EndTime, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   /**
     * Delete an object from the bucket.
     */
@@ -108,12 +107,12 @@ trait OSS extends js.Object {
     * Get the bucket ACL.
     *   acl - acl settings string
     */
-  def getBucketACL(name: String): js.Promise[AnonAcl] = js.native
-  def getBucketACL(name: String, options: RequestOptions): js.Promise[AnonAcl] = js.native
+  def getBucketACL(name: String): js.Promise[Acl] = js.native
+  def getBucketACL(name: String, options: RequestOptions): js.Promise[Acl] = js.native
   /**
     * Get CORS rules of the bucket object.
     */
-  def getBucketCORS(name: String): js.Promise[AnonResRules] = js.native
+  def getBucketCORS(name: String): js.Promise[ResRules] = js.native
   /**
     * Get bucket information,include CreationDate、ExtranetEndpoint、IntranetEndpoint、Location、Name、StorageClass、 Owner、AccessControlList
     */
@@ -121,8 +120,8 @@ trait OSS extends js.Object {
   /**
     * Get the bucket object lifecycle.
     */
-  def getBucketLifecycle(name: String): js.Promise[AnonRules] = js.native
-  def getBucketLifecycle(name: String, options: RequestOptions): js.Promise[AnonRules] = js.native
+  def getBucketLifecycle(name: String): js.Promise[Rules] = js.native
+  def getBucketLifecycle(name: String, options: RequestOptions): js.Promise[Rules] = js.native
   /**
     * Get bucket location
     */
@@ -130,23 +129,23 @@ trait OSS extends js.Object {
   /**
     * Get the bucket logging settings.
     */
-  def getBucketLogging(name: String): js.Promise[AnonEnable] = js.native
-  def getBucketLogging(name: String, options: RequestOptions): js.Promise[AnonEnable] = js.native
+  def getBucketLogging(name: String): js.Promise[Enable] = js.native
+  def getBucketLogging(name: String, options: RequestOptions): js.Promise[Enable] = js.native
   /**
     * Get the bucket request Referer white list.
     */
-  def getBucketReferer(name: String): js.Promise[AnonAllowEmpty] = js.native
-  def getBucketReferer(name: String, options: RequestOptions): js.Promise[AnonAllowEmpty] = js.native
+  def getBucketReferer(name: String): js.Promise[AllowEmpty] = js.native
+  def getBucketReferer(name: String, options: RequestOptions): js.Promise[AllowEmpty] = js.native
   /**
     * Get the bucket website config.
     */
-  def getBucketWebsite(name: String): js.Promise[AnonError] = js.native
-  def getBucketWebsite(name: String, options: RequestOptions): js.Promise[AnonError] = js.native
+  def getBucketWebsite(name: String): js.Promise[Error] = js.native
+  def getBucketWebsite(name: String, options: RequestOptions): js.Promise[Error] = js.native
   /**
     * Get live channel info.
     */
-  def getChannel(id: String): js.Promise[AnonDataPutChannelConf] = js.native
-  def getChannel(id: String, options: RequestOptions): js.Promise[AnonDataPutChannelConf] = js.native
+  def getChannel(id: String): js.Promise[DataPutChannelConf] = js.native
+  def getChannel(id: String, options: RequestOptions): js.Promise[DataPutChannelConf] = js.native
   /**
     * Get the live channel history.
     */
@@ -239,8 +238,8 @@ trait OSS extends js.Object {
   /**
     * Create a new bucket.
     */
-  def putBucket(name: String): js.Promise[AnonBucket] = js.native
-  def putBucket(name: String, options: PutBucketOptions): js.Promise[AnonBucket] = js.native
+  def putBucket(name: String): js.Promise[typings.aliOss.anon.Bucket] = js.native
+  def putBucket(name: String, options: PutBucketOptions): js.Promise[typings.aliOss.anon.Bucket] = js.native
   // ACL operations
   /**
     * Update the bucket ACL.
@@ -296,8 +295,8 @@ trait OSS extends js.Object {
   /**
     * Add a stream object to the bucket.
     */
-  def putStream(name: String, stream: js.Any): js.Promise[AnonName] = js.native
-  def putStream(name: String, stream: js.Any, options: PutStreamOptions): js.Promise[AnonName] = js.native
+  def putStream(name: String, stream: js.Any): js.Promise[Name] = js.native
+  def putStream(name: String, stream: js.Any, options: PutStreamOptions): js.Promise[Name] = js.native
   /**
     * Restore Object.
     */
@@ -330,8 +329,8 @@ trait OSS extends js.Object {
     uploadId: String,
     partNo: Double,
     range: String,
-    sourceData: AnonSourceBucketName,
-    options: AnonTimeout
+    sourceData: SourceBucketName,
+    options: Timeout
   ): js.Promise[UploadPartResult] = js.native
   /**
     * Use the bucket.

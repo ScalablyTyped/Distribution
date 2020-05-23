@@ -38,7 +38,7 @@ trait PlusIo extends js.Object {
   /**
     * 文件或目录操作事件对象
     * 所有文件或目录操作事件回调函数中都创建该对象的实例。
-    * 	该对象从DOMEvent继承而来，可通过该其target属性获取事件触发的文件或目录操作对象。
+    *     该对象从DOMEvent继承而来，可通过该其target属性获取事件触发的文件或目录操作对象。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -46,7 +46,7 @@ trait PlusIo extends js.Object {
   /**
     * 文件系统中的读取文件对象，用于获取文件的内容
     * FileReader对象是从设备文件系统读取文件FileReader对象是从设备文件系统读取文件的一种方式，文件以文本或者Base64编码的字符串形式读出来。
-    * 	用户注册自己的事件监听器来接收loadstart、progress、load、loadend、error和abort事件。
+    *     用户注册自己的事件监听器来接收loadstart、progress、load、loadend、error和abort事件。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -61,8 +61,8 @@ trait PlusIo extends js.Object {
   /**
     * 文件系统中的写文件对象，用于写入文件内容
     * FileWriter对象是从设备文件系统写入文件FileWriter对象是从设备文件系统写入文件的一种方式，用户注册自己的事件监听器来接收writestart、progress、write、writeend、error和abort事件。
-    * 	一个FileWriter对象是为单个文件的操作而创建。你可以使用该对象多次对相应文件进行写入操作。FileWriter维护该文件的指针位置及长度属性，这样你就可以寻找和写入文件的任何地方。
-    * 	默认情况下，FileWriter从文件的开头开始写入（将覆盖现有数据）。FileWriter对象的seek方法可设置文件操作指定位置，如fw.seek(fw.length-1)写入操作就会从文件的末尾开始。
+    *     一个FileWriter对象是为单个文件的操作而创建。你可以使用该对象多次对相应文件进行写入操作。FileWriter维护该文件的指针位置及长度属性，这样你就可以寻找和写入文件的任何地方。
+    *     默认情况下，FileWriter从文件的开头开始写入（将覆盖现有数据）。FileWriter对象的seek方法可设置文件操作指定位置，如fw.seek(fw.length-1)写入操作就会从文件的末尾开始。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -76,7 +76,7 @@ trait PlusIo extends js.Object {
   /**
     * 本地路径URL
     * 可在html页面中直接访问本地资源，以“file:///”开头，后面跟随系统的绝对路径。
-    * 	如示例：“file:///D:/res/hello.html”。
+    *     如示例：“file:///D:/res/hello.html”。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -98,7 +98,7 @@ trait PlusIo extends js.Object {
   /**
     * 应用运行资源目录常量
     * 本地文件系统常量，Number类型，固定值1。应用运行资源目录，仅本应用可访问。
-    * 	为了确保应用资源的安全性，此目录只可读。
+    *     为了确保应用资源的安全性，此目录只可读。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -127,7 +127,7 @@ trait PlusIo extends js.Object {
   /**
     * 网络路径URL
     * 可在html页面中以网络资源模式访问本地资源，以“http://”开头，后面跟随相对路径。
-    * 	如示例：“http://localhost:13131/_www/res/icon.png”，其中“_www”字段可支持类型与相对路径URL一致。
+    *     如示例：“http://localhost:13131/_www/res/icon.png”，其中“_www”字段可支持类型与相对路径URL一致。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -142,7 +142,7 @@ trait PlusIo extends js.Object {
   /**
     * 将平台绝对路径转换成本地URL路径
     * 绝对路径符合各平台文件路径格式，转换后变成RelativeURL类型格式。
-    * 	功能与convertLocalFileSystemURL方法相反，将绝对路径转换成相对路径。
+    *     功能与convertLocalFileSystemURL方法相反，将绝对路径转换成相对路径。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -159,7 +159,7 @@ trait PlusIo extends js.Object {
   /**
     * 请求本地文件系统对象
     * 获取指定的文件系统，可通过type指定获取文件系统的类型。
-    * 	获取指定的文件系统对象成功通过succesCB回调返回，失败则通过errorCB返回。
+    *     获取指定的文件系统对象成功通过succesCB回调返回，失败则通过errorCB返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
@@ -174,8 +174,8 @@ trait PlusIo extends js.Object {
   /**
     * 通过URL参数获取目录对象或文件对象
     * 快速获取指定的目录或文件操作对象，如通过URL值“_www/test.html”可直接获取文件操作对象。
-    * 	url值可支持相对路径URL、本地路径URL。
-    * 	获取指定的文件或目录操作对象成功通过succesCB回调返回，如果指定URL路径或文件不存在则失败通过errorCB回调返回。
+    *     url值可支持相对路径URL、本地路径URL。
+    *     获取指定的文件或目录操作对象成功通过succesCB回调返回，如果指定URL路径或文件不存在则失败通过errorCB回调返回。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */

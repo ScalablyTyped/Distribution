@@ -14,7 +14,7 @@ trait UniqueOptions[T]
 object UniqueOptions {
   @scala.inline
   def apply[T](
-    StringDictionary: /* id */ StringDictionary[js.Any] = null,
+    StringDictionary: /* name */ StringDictionary[js.Any] = null,
     comparator: (/* array */ js.Array[T], /* value */ T) => Boolean = null
   ): UniqueOptions[T] = {
     val __obj = js.Dynamic.literal()

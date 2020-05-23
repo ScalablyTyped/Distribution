@@ -32,10 +32,10 @@ object Props {
     values: js.Array[_],
     classForValue: /* value */ js.Any => _ = null,
     endDate: String | Double | Date = null,
-    gutterSize: Int | Double = null,
+    gutterSize: js.UndefOr[Double] = js.undefined,
     horizontal: js.UndefOr[Boolean] = js.undefined,
     monthLabels: js.Array[String] = null,
-    numDays: Int | Double = null,
+    numDays: js.UndefOr[Double] = js.undefined,
     onClick: /* value */ js.Any => Unit = null,
     onMouseLeave: (/* e */ js.Any, /* value */ js.Any) => Unit = null,
     onMouseOver: (/* e */ js.Any, /* value */ js.Any) => Unit = null,
@@ -51,16 +51,16 @@ object Props {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     if (classForValue != null) __obj.updateDynamic("classForValue")(js.Any.fromFunction1(classForValue))
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (gutterSize != null) __obj.updateDynamic("gutterSize")(gutterSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(gutterSize)) __obj.updateDynamic("gutterSize")(gutterSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
     if (monthLabels != null) __obj.updateDynamic("monthLabels")(monthLabels.asInstanceOf[js.Any])
-    if (numDays != null) __obj.updateDynamic("numDays")(numDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(numDays)) __obj.updateDynamic("numDays")(numDays.get.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
     if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction2(onMouseOver))
-    if (!js.isUndefined(showMonthLabels)) __obj.updateDynamic("showMonthLabels")(showMonthLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOutOfRangeDays)) __obj.updateDynamic("showOutOfRangeDays")(showOutOfRangeDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekdayLabels)) __obj.updateDynamic("showWeekdayLabels")(showWeekdayLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMonthLabels)) __obj.updateDynamic("showMonthLabels")(showMonthLabels.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOutOfRangeDays)) __obj.updateDynamic("showOutOfRangeDays")(showOutOfRangeDays.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekdayLabels)) __obj.updateDynamic("showWeekdayLabels")(showWeekdayLabels.get.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     if (titleForValue != null) __obj.updateDynamic("titleForValue")(js.Any.fromFunction1(titleForValue))
     if (tooltipDataAttrs != null) __obj.updateDynamic("tooltipDataAttrs")(tooltipDataAttrs.asInstanceOf[js.Any])

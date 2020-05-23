@@ -1,14 +1,14 @@
 package typings.winjs.mod
 
-import typings.std.Event_
+import typings.std.Event
 import typings.std.HTMLElement
-import typings.winjs.AnonScrollLeft
 import typings.winjs.WinJS.Utilities.ILogOptions
 import typings.winjs.WinJS.Utilities.IPosition
 import typings.winjs.WinJS.Utilities.Scheduler.IJob
 import typings.winjs.WinJS.Utilities.Scheduler.IJobInfo
 import typings.winjs.WinJS.Utilities.Scheduler.IOwnerToken
 import typings.winjs.WinJS.Utilities.Scheduler.Priority
+import typings.winjs.anon.ScrollLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,7 +87,7 @@ object Utilities extends js.Object {
     * @param event The event.
     * @returns true if the event occurred within the element; otherwise, false.
     **/
-  def eventWithinElement(element: HTMLElement, event: Event_): Boolean = js.native
+  def eventWithinElement(element: HTMLElement, event: Event): Boolean = js.native
   /**
     * Adds tags and type to a logging message.
     * @param message The message to be formatted.
@@ -145,7 +145,7 @@ object Utilities extends js.Object {
     * @param element The element.
     * @returns An object with two properties: scrollLeft and scrollTop
     **/
-  def getScrollPosition(element: HTMLElement): AnonScrollLeft = js.native
+  def getScrollPosition(element: HTMLElement): ScrollLeft = js.native
   /**
     * Gets the tab index of the specified element.
     * @param element The element
@@ -263,7 +263,7 @@ object Utilities extends js.Object {
     * @param element The element.
     * @param position An object describing the position to set.
     **/
-  def setScrollPosition(element: HTMLElement, position: AnonScrollLeft): Unit = js.native
+  def setScrollPosition(element: HTMLElement, position: ScrollLeft): Unit = js.native
   /**
     * Configures a logger that writes messages containing the specified tags to the JavaScript console.
     * @param options The tags for messages to log. Multiple tags should be separated by spaces. May contain type, tags, excludeTags and action properties.

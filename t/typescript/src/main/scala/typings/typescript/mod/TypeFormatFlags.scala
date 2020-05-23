@@ -36,6 +36,9 @@ object TypeFormatFlags extends js.Object {
   sealed trait NoTruncation extends TypeFormatFlags
   
   @js.native
+  sealed trait NoTypeReduction extends TypeFormatFlags
+  
+  @js.native
   sealed trait NodeBuilderFlagsMask extends TypeFormatFlags
   
   @js.native
@@ -103,7 +106,10 @@ object TypeFormatFlags extends js.Object {
   /* 1 */ @js.native
   object NoTruncation extends TopLevel[NoTruncation with Double]
   
-  /* 277904747 */ @js.native
+  /* 536870912 */ @js.native
+  object NoTypeReduction extends TopLevel[NoTypeReduction with Double]
+  
+  /* 814775659 */ @js.native
   object NodeBuilderFlagsMask extends TopLevel[NodeBuilderFlagsMask with Double]
   
   /* 0 */ @js.native

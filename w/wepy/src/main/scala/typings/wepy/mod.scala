@@ -2,6 +2,7 @@ package typings.wepy
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
+import typings.wepy.anon.FnCall
 import typings.wepy.appMod.AppConfig
 import typings.wepy.appMod.AppConstructor
 import typings.wepy.pageMod.PageConstructor

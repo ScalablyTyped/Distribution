@@ -1,6 +1,6 @@
 package typings.pdf2image.mod
 
-import typings.pdf2image.PartialOptions
+import typings.pdf2image.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

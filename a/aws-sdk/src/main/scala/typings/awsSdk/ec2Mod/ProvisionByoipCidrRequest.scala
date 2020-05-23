@@ -23,6 +23,10 @@ trait ProvisionByoipCidrRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.native
   /**
+    * The tags to apply to the address pool.
+    */
+  var PoolTagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * (IPv6 only) Indicate whether the address range will be publicly advertised to the internet. Default: true
     */
   var PubliclyAdvertisable: js.UndefOr[Boolean] = js.native
@@ -34,14 +38,16 @@ object ProvisionByoipCidrRequest {
     Cidr: String,
     CidrAuthorizationContext: CidrAuthorizationContext = null,
     Description: String = null,
-    DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    PubliclyAdvertisable: js.UndefOr[scala.Boolean] = js.undefined
+    DryRun: js.UndefOr[Boolean] = js.undefined,
+    PoolTagSpecifications: TagSpecificationList = null,
+    PubliclyAdvertisable: js.UndefOr[Boolean] = js.undefined
   ): ProvisionByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
     if (CidrAuthorizationContext != null) __obj.updateDynamic("CidrAuthorizationContext")(CidrAuthorizationContext.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAdvertisable)) __obj.updateDynamic("PubliclyAdvertisable")(PubliclyAdvertisable.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
+    if (PoolTagSpecifications != null) __obj.updateDynamic("PoolTagSpecifications")(PoolTagSpecifications.asInstanceOf[js.Any])
+    if (!js.isUndefined(PubliclyAdvertisable)) __obj.updateDynamic("PubliclyAdvertisable")(PubliclyAdvertisable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionByoipCidrRequest]
   }
 }

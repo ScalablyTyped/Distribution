@@ -6,10 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constant
-  * @name pc.TEXTURELOCK_WRITE
-  * @type {number}
-  * @description Write only. The contents of the specified mip level will be entirely replaced.
+  * Write only. The contents of the specified mip level will be entirely replaced.
   */
 @JSImport("playcanvas", "TEXTURELOCK_WRITE")
 @js.native

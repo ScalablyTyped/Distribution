@@ -23,7 +23,7 @@ object SMSChannelRequest {
   @scala.inline
   def apply(Enabled: js.UndefOr[Boolean] = js.undefined, SenderId: String = null, ShortCode: String = null): SMSChannelRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     if (SenderId != null) __obj.updateDynamic("SenderId")(SenderId.asInstanceOf[js.Any])
     if (ShortCode != null) __obj.updateDynamic("ShortCode")(ShortCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SMSChannelRequest]

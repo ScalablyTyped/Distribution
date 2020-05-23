@@ -30,13 +30,13 @@ object Trait {
     percentile: Double,
     trait_id: String,
     children: js.Array[Trait] = null,
-    raw_score: Int | Double = null,
+    raw_score: js.UndefOr[Double] = js.undefined,
     significant: js.UndefOr[Boolean] = js.undefined
   ): Trait = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], percentile = percentile.asInstanceOf[js.Any], trait_id = trait_id.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (raw_score != null) __obj.updateDynamic("raw_score")(raw_score.asInstanceOf[js.Any])
-    if (!js.isUndefined(significant)) __obj.updateDynamic("significant")(significant.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw_score)) __obj.updateDynamic("raw_score")(raw_score.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(significant)) __obj.updateDynamic("significant")(significant.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trait]
   }
 }

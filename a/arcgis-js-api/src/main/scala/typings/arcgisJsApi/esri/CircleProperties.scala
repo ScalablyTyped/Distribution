@@ -60,8 +60,8 @@ object CircleProperties {
     hasM: js.UndefOr[Boolean] = js.undefined,
     hasZ: js.UndefOr[Boolean] = js.undefined,
     isSelfIntersecting: js.UndefOr[Boolean] = js.undefined,
-    numberOfPoints: Int | Double = null,
-    radius: Int | Double = null,
+    numberOfPoints: js.UndefOr[Double] = js.undefined,
+    radius: js.UndefOr[Double] = js.undefined,
     radiusUnit: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = null,
     rings: js.Array[js.Array[js.Array[Double]]] = null,
     spatialReference: SpatialReferenceProperties = null
@@ -69,12 +69,12 @@ object CircleProperties {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (centroid != null) __obj.updateDynamic("centroid")(centroid.asInstanceOf[js.Any])
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelfIntersecting)) __obj.updateDynamic("isSelfIntersecting")(isSelfIntersecting.asInstanceOf[js.Any])
-    if (numberOfPoints != null) __obj.updateDynamic("numberOfPoints")(numberOfPoints.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelfIntersecting)) __obj.updateDynamic("isSelfIntersecting")(isSelfIntersecting.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberOfPoints)) __obj.updateDynamic("numberOfPoints")(numberOfPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
     if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit.asInstanceOf[js.Any])
     if (rings != null) __obj.updateDynamic("rings")(rings.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])

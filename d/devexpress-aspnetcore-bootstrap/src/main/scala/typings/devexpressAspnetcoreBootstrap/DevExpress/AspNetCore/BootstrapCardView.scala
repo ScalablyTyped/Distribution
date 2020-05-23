@@ -25,9 +25,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapCardView")
 @js.native
-class BootstrapCardView () extends BootstrapGridBase {
+trait BootstrapCardView extends BootstrapGridBase {
   val batchEditApi: BootstrapCardViewBatchEditApi | Null = js.native
   def addNewCard(): Unit = js.native
   def applyFilter(filterExpression: String): Unit = js.native

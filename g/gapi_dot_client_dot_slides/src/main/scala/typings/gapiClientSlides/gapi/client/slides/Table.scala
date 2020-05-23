@@ -24,14 +24,14 @@ trait Table extends js.Object {
 object Table {
   @scala.inline
   def apply(
-    columns: Int | Double = null,
-    rows: Int | Double = null,
+    columns: js.UndefOr[Double] = js.undefined,
+    rows: js.UndefOr[Double] = js.undefined,
     tableColumns: js.Array[TableColumnProperties] = null,
     tableRows: js.Array[TableRow] = null
   ): Table = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     if (tableColumns != null) __obj.updateDynamic("tableColumns")(tableColumns.asInstanceOf[js.Any])
     if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table]

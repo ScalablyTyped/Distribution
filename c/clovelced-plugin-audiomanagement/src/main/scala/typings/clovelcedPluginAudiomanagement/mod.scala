@@ -1,6 +1,8 @@
 package typings.clovelcedPluginAudiomanagement
 
 import org.scalablytyped.runtime.TopLevel
+import typings.clovelcedPluginAudiomanagement.anon.MaxVolume
+import typings.clovelcedPluginAudiomanagement.anon.Volume
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,17 +17,17 @@ object mod extends js.Object {
   sealed trait VolumeType extends js.Object
   
   def getAudioMode(
-    onSuccess: js.Function1[/* results */ AnonAudioMode, Unit],
+    onSuccess: js.Function1[/* results */ typings.clovelcedPluginAudiomanagement.anon.AudioMode, Unit],
     onError: js.Function1[/* error */ js.Any, Unit]
   ): Unit = js.native
   def getMaxVolume(
     `type`: VolumeType,
-    onSuccess: js.Function1[/* results */ AnonMaxVolume, Unit],
+    onSuccess: js.Function1[/* results */ MaxVolume, Unit],
     onError: js.Function1[/* error */ js.Any, Unit]
   ): Unit = js.native
   def getVolume(
     `type`: VolumeType,
-    onSuccess: js.Function1[/* results */ AnonVolume, Unit],
+    onSuccess: js.Function1[/* results */ Volume, Unit],
     onError: js.Function1[/* error */ js.Any, Unit]
   ): Unit = js.native
   def setAudioMode(mode: AudioMode, onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ js.Any, Unit]): Unit = js.native

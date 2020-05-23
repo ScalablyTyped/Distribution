@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Office.Signature")
 @js.native
-class Signature protected () extends js.Object {
+trait Signature extends js.Object {
   val Application: js.Any = js.native
   var AttachCertificate: Boolean = js.native
   val CanSetup: Boolean = js.native

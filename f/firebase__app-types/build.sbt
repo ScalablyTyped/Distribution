@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "firebase__app-types"
-version := "0.6.0-eb87b7"
-scalaVersion := "2.13.1"
+version := "0.6.1-0036be"
+scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "firebase__logger" % "0.2.0-6c4dc1",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.43-3981df",
-  "org.scalablytyped" %%% "std" % "3.8-9b2470")
+  "org.scalablytyped" %%% "firebase__logger" % "0.2.4-cf862b",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.47-004b7a",
+  "org.scalablytyped" %%% "std" % "3.9-18cbeb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

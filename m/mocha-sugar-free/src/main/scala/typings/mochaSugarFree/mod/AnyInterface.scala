@@ -2,11 +2,11 @@ package typings.mochaSugarFree.mod
 
 import typings.mocha.mod.Suite_
 import typings.mocha.mod.Test_
-import typings.mochaSugarFree.OptionsasyncfalsefnTestCa
-import typings.mochaSugarFree.OptionsasynctruefnTestCas
-import typings.mochaSugarFree.OptionsfnHookFunc
-import typings.mochaSugarFree.OptionsfnSuiteFunc
-import typings.mochaSugarFree.OptionstitlestringfnSuite
+import typings.mochaSugarFree.anon.OptionsasyncfalsefnTestCa
+import typings.mochaSugarFree.anon.OptionsasynctruefnTestCas
+import typings.mochaSugarFree.anon.OptionsfnHookFunc
+import typings.mochaSugarFree.anon.OptionsfnSuiteFunc
+import typings.mochaSugarFree.anon.OptionstitlestringfnSuite
 import typings.mochaSugarFree.mochaSugarFreeStrings.bdd
 import typings.mochaSugarFree.mochaSugarFreeStrings.qunit
 import typings.mochaSugarFree.mochaSugarFreeStrings.tdd
@@ -30,10 +30,10 @@ trait AnyInterface extends js.Object {
   @JSName("describe")
   var describe_Original: SuiteFunction = js.native
   /**
-  		 * The detected Mocha interface.
-  		 *
-  		 * @default "bdd"
-  		 */
+    * The detected Mocha interface.
+    *
+    * @default "bdd"
+    */
   var detectedInterface: bdd | tdd | qunit = js.native
   @JSName("it")
   var it_Original: TestFunction = js.native

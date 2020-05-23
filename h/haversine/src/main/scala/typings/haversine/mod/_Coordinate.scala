@@ -1,6 +1,6 @@
 package typings.haversine.mod
 
-import typings.haversine.AnonCoordinates
+import typings.haversine.anon.Coordinates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object _Coordinate {
     __obj.asInstanceOf[_Coordinate]
   }
   @scala.inline
-  def GeoJSON(geometry: AnonCoordinates): _Coordinate = {
+  def GeoJSON(geometry: Coordinates): _Coordinate = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Coordinate]
   }

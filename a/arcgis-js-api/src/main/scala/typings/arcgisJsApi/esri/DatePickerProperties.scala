@@ -40,9 +40,9 @@ object DatePickerProperties {
     viewModel: DatePickerViewModel = null
   ): DatePickerProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(commitOnMonthChange)) __obj.updateDynamic("commitOnMonthChange")(commitOnMonthChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(commitOnMonthChange)) __obj.updateDynamic("commitOnMonthChange")(commitOnMonthChange.get.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

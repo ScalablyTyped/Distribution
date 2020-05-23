@@ -53,14 +53,14 @@ object SwipeViewModelProperties {
   def apply(
     direction: horizontal | vertical = null,
     leadingLayers: CollectionProperties[LayerProperties] = null,
-    position: Int | Double = null,
+    position: js.UndefOr[Double] = js.undefined,
     trailingLayers: CollectionProperties[LayerProperties] = null,
     view: MapViewProperties = null
   ): SwipeViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (leadingLayers != null) __obj.updateDynamic("leadingLayers")(leadingLayers.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     if (trailingLayers != null) __obj.updateDynamic("trailingLayers")(trailingLayers.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeViewModelProperties]

@@ -1,6 +1,6 @@
 package typings.q.mod
 
-import typings.q.Typeofq
+import typings.q.anon.Typeofq
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

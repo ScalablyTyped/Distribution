@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.any
 import typings.arcgisJsApi.arcgisJsApiStrings.bilinear
@@ -260,8 +259,4 @@ trait ArcGISImageService extends js.Object {
   def getCatalogItemRasterInfo(rasterId: Double): js.Promise[RasterInfo] = js.native
   def getCatalogItemRasterInfo(rasterId: Double, abortOptions: AbortSignal): js.Promise[RasterInfo] = js.native
 }
-
-@JSGlobal("__esri.ArcGISImageService")
-@js.native
-object ArcGISImageService extends TopLevel[ArcGISImageServiceConstructor]
 

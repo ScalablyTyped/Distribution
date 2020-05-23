@@ -2,18 +2,38 @@ package typings.sharepoint.SP.Taxonomy
 
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.Guid
+import typings.sharepoint.SP.SerializationContext
+import typings.sharepoint.SP.XmlWriter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.Taxonomy.TaxonomyFieldValue")
-@js.native
-class TaxonomyFieldValue () extends ClientValueObject {
-  def get_label(): String = js.native
-  def get_termGuid(): Guid = js.native
-  def get_wssId(): Double = js.native
-  def set_label(value: String): Unit = js.native
-  def set_termGuid(value: Guid): Unit = js.native
-  def set_wssId(value: Double): Unit = js.native
+trait TaxonomyFieldValue extends ClientValueObject {
+  def get_label(): String
+  def get_termGuid(): Guid
+  def get_wssId(): Double
+  def set_label(value: String): Unit
+  def set_termGuid(value: Guid): Unit
+  def set_wssId(value: Double): Unit
+}
+
+object TaxonomyFieldValue {
+  @scala.inline
+  def apply(
+    customFromJson: js.Any => Boolean,
+    customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
+    fromJson: js.Any => Unit,
+    get_label: () => String,
+    get_termGuid: () => Guid,
+    get_typeId: () => String,
+    get_wssId: () => Double,
+    set_label: String => Unit,
+    set_termGuid: Guid => Unit,
+    set_wssId: Double => Unit,
+    writeToXml: (XmlWriter, SerializationContext) => Unit
+  ): TaxonomyFieldValue = {
+    val __obj = js.Dynamic.literal(customFromJson = js.Any.fromFunction1(customFromJson), customWriteToXml = js.Any.fromFunction2(customWriteToXml), fromJson = js.Any.fromFunction1(fromJson), get_label = js.Any.fromFunction0(get_label), get_termGuid = js.Any.fromFunction0(get_termGuid), get_typeId = js.Any.fromFunction0(get_typeId), get_wssId = js.Any.fromFunction0(get_wssId), set_label = js.Any.fromFunction1(set_label), set_termGuid = js.Any.fromFunction1(set_termGuid), set_wssId = js.Any.fromFunction1(set_wssId), writeToXml = js.Any.fromFunction2(writeToXml))
+    __obj.asInstanceOf[TaxonomyFieldValue]
+  }
 }
 

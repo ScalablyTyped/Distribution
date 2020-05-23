@@ -12,7 +12,7 @@ object DocumentCopyOptions {
   @scala.inline
   def apply(overwrite: js.UndefOr[Boolean] = js.undefined): DocumentCopyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentCopyOptions]
   }
 }

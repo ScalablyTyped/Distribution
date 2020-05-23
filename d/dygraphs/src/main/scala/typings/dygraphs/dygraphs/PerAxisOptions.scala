@@ -1,7 +1,7 @@
 package typings.dygraphs.dygraphs
 
-import typings.dygraphs.AnonLabel
 import typings.dygraphs.Dygraph
+import typings.dygraphs.anon.Label
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -142,7 +142,7 @@ trait PerAxisOptions extends js.Object {
       /* opts */ js.Function1[/* name */ String, _], 
       /* dygraph */ Dygraph, 
       /* vals */ js.Array[Double], 
-      js.Array[AnonLabel]
+      js.Array[Label]
     ]
   ] = js.undefined
   /**
@@ -175,48 +175,48 @@ object PerAxisOptions {
   @scala.inline
   def apply(
     axisLabelColor: String = null,
-    axisLabelFontSize: Int | Double = null,
+    axisLabelFontSize: js.UndefOr[Double] = js.undefined,
     axisLabelFormatter: (/* v */ Double | Date, /* granularity */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph) => _ = null,
-    axisLabelWidth: Int | Double = null,
+    axisLabelWidth: js.UndefOr[Double] = js.undefined,
     axisLineColor: String = null,
-    axisLineWidth: Int | Double = null,
-    axisTickSize: Int | Double = null,
+    axisLineWidth: js.UndefOr[Double] = js.undefined,
+    axisTickSize: js.UndefOr[Double] = js.undefined,
     drawAxis: js.UndefOr[Boolean] = js.undefined,
     drawGrid: js.UndefOr[Boolean] = js.undefined,
     gridLineColor: String = null,
     gridLinePattern: js.Array[Double] = null,
-    gridLineWidth: Int | Double = null,
+    gridLineWidth: js.UndefOr[Double] = js.undefined,
     independentTicks: js.UndefOr[Boolean] = js.undefined,
     labelsKMB: js.UndefOr[Boolean] = js.undefined,
     labelsKMG2: js.UndefOr[Boolean] = js.undefined,
     logscale: js.UndefOr[Boolean] = js.undefined,
-    maxNumberWidth: Int | Double = null,
-    pixelsPerLabel: Int | Double = null,
-    sigFigs: Int | Double = null,
-    ticker: (/* min */ Double, /* max */ Double, /* pixels */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph, /* vals */ js.Array[Double]) => js.Array[AnonLabel] = null,
+    maxNumberWidth: js.UndefOr[Double] = js.undefined,
+    pixelsPerLabel: js.UndefOr[Double] = js.undefined,
+    sigFigs: js.UndefOr[Double] = js.undefined,
+    ticker: (/* min */ Double, /* max */ Double, /* pixels */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph, /* vals */ js.Array[Double]) => js.Array[Label] = null,
     valueFormatter: (/* v */ Double, /* opts */ js.Function1[/* name */ String, _], /* seriesName */ String, /* dygraph */ Dygraph, /* row */ Double, /* col */ Double) => _ = null,
     valueRange: js.Array[Double] = null
   ): PerAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (axisLabelColor != null) __obj.updateDynamic("axisLabelColor")(axisLabelColor.asInstanceOf[js.Any])
-    if (axisLabelFontSize != null) __obj.updateDynamic("axisLabelFontSize")(axisLabelFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisLabelFontSize)) __obj.updateDynamic("axisLabelFontSize")(axisLabelFontSize.get.asInstanceOf[js.Any])
     if (axisLabelFormatter != null) __obj.updateDynamic("axisLabelFormatter")(js.Any.fromFunction4(axisLabelFormatter))
-    if (axisLabelWidth != null) __obj.updateDynamic("axisLabelWidth")(axisLabelWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisLabelWidth)) __obj.updateDynamic("axisLabelWidth")(axisLabelWidth.get.asInstanceOf[js.Any])
     if (axisLineColor != null) __obj.updateDynamic("axisLineColor")(axisLineColor.asInstanceOf[js.Any])
-    if (axisLineWidth != null) __obj.updateDynamic("axisLineWidth")(axisLineWidth.asInstanceOf[js.Any])
-    if (axisTickSize != null) __obj.updateDynamic("axisTickSize")(axisTickSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawAxis)) __obj.updateDynamic("drawAxis")(drawAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawGrid)) __obj.updateDynamic("drawGrid")(drawGrid.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisLineWidth)) __obj.updateDynamic("axisLineWidth")(axisLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisTickSize)) __obj.updateDynamic("axisTickSize")(axisTickSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawAxis)) __obj.updateDynamic("drawAxis")(drawAxis.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawGrid)) __obj.updateDynamic("drawGrid")(drawGrid.get.asInstanceOf[js.Any])
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridLinePattern != null) __obj.updateDynamic("gridLinePattern")(gridLinePattern.asInstanceOf[js.Any])
-    if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(independentTicks)) __obj.updateDynamic("independentTicks")(independentTicks.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsKMB)) __obj.updateDynamic("labelsKMB")(labelsKMB.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsKMG2)) __obj.updateDynamic("labelsKMG2")(labelsKMG2.asInstanceOf[js.Any])
-    if (!js.isUndefined(logscale)) __obj.updateDynamic("logscale")(logscale.asInstanceOf[js.Any])
-    if (maxNumberWidth != null) __obj.updateDynamic("maxNumberWidth")(maxNumberWidth.asInstanceOf[js.Any])
-    if (pixelsPerLabel != null) __obj.updateDynamic("pixelsPerLabel")(pixelsPerLabel.asInstanceOf[js.Any])
-    if (sigFigs != null) __obj.updateDynamic("sigFigs")(sigFigs.asInstanceOf[js.Any])
+    if (!js.isUndefined(gridLineWidth)) __obj.updateDynamic("gridLineWidth")(gridLineWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(independentTicks)) __obj.updateDynamic("independentTicks")(independentTicks.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsKMB)) __obj.updateDynamic("labelsKMB")(labelsKMB.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsKMG2)) __obj.updateDynamic("labelsKMG2")(labelsKMG2.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(logscale)) __obj.updateDynamic("logscale")(logscale.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxNumberWidth)) __obj.updateDynamic("maxNumberWidth")(maxNumberWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelsPerLabel)) __obj.updateDynamic("pixelsPerLabel")(pixelsPerLabel.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(sigFigs)) __obj.updateDynamic("sigFigs")(sigFigs.get.asInstanceOf[js.Any])
     if (ticker != null) __obj.updateDynamic("ticker")(js.Any.fromFunction6(ticker))
     if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(js.Any.fromFunction6(valueFormatter))
     if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])

@@ -12,9 +12,9 @@ trait IDeleteTopicRequest extends js.Object {
 
 object IDeleteTopicRequest {
   @scala.inline
-  def apply(topic: String = null): IDeleteTopicRequest = {
+  def apply(topic: js.UndefOr[Null | String] = js.undefined): IDeleteTopicRequest = {
     val __obj = js.Dynamic.literal()
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    if (!js.isUndefined(topic)) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteTopicRequest]
   }
 }

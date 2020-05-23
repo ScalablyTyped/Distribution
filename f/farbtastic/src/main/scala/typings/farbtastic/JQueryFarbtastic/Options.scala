@@ -12,11 +12,15 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(callback: Callback = null, wheelWidth: Int | Double = null, width: Int | Double = null): Options = {
+  def apply(
+    callback: Callback = null,
+    wheelWidth: js.UndefOr[Double] = js.undefined,
+    width: js.UndefOr[Double] = js.undefined
+  ): Options = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (wheelWidth != null) __obj.updateDynamic("wheelWidth")(wheelWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelWidth)) __obj.updateDynamic("wheelWidth")(wheelWidth.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

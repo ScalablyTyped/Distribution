@@ -22,8 +22,8 @@ object SaveRulesOptions {
     forwardToReplicas: js.UndefOr[Boolean] = js.undefined
   ): SaveRulesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clearExistingRules)) __obj.updateDynamic("clearExistingRules")(clearExistingRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(forwardToReplicas)) __obj.updateDynamic("forwardToReplicas")(forwardToReplicas.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearExistingRules)) __obj.updateDynamic("clearExistingRules")(clearExistingRules.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(forwardToReplicas)) __obj.updateDynamic("forwardToReplicas")(forwardToReplicas.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveRulesOptions]
   }
 }

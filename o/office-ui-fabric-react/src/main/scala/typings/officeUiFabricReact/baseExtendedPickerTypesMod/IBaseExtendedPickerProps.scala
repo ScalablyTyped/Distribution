@@ -8,7 +8,7 @@ import typings.officeUiFabricReact.libAutofillMod.Autofill
 import typings.react.mod.ComponentType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import scala.scalajs.js
@@ -125,7 +125,7 @@ object IBaseExtendedPickerProps {
     focusZoneProps: IFocusZoneProps = null,
     headerComponent: Element = null,
     inputProps: IInputProps = null,
-    itemLimit: Int | Double = null,
+    itemLimit: js.UndefOr[Double] = js.undefined,
     onBlur: FocusEvent[HTMLInputElement | Autofill] => Unit = null,
     onChange: /* items */ js.UndefOr[js.Array[T]] => Unit = null,
     onFocus: FocusEvent[HTMLInputElement | Autofill] => Unit = null,
@@ -141,11 +141,11 @@ object IBaseExtendedPickerProps {
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (currentRenderedQueryString != null) __obj.updateDynamic("currentRenderedQueryString")(currentRenderedQueryString.asInstanceOf[js.Any])
     if (defaultSelectedItems != null) __obj.updateDynamic("defaultSelectedItems")(defaultSelectedItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     if (focusZoneProps != null) __obj.updateDynamic("focusZoneProps")(focusZoneProps.asInstanceOf[js.Any])
     if (headerComponent != null) __obj.updateDynamic("headerComponent")(headerComponent.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (itemLimit != null) __obj.updateDynamic("itemLimit")(itemLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemLimit)) __obj.updateDynamic("itemLimit")(itemLimit.get.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))

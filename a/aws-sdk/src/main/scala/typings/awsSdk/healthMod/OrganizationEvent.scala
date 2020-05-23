@@ -14,6 +14,7 @@ trait OrganizationEvent extends js.Object {
     * The date and time that the event ended.
     */
   var endTime: js.UndefOr[timestamp] = js.native
+  var eventScopeCode: js.UndefOr[typings.awsSdk.healthMod.eventScopeCode] = js.native
   /**
     * The category of the event type.
     */
@@ -49,6 +50,7 @@ object OrganizationEvent {
   def apply(
     arn: eventArn = null,
     endTime: timestamp = null,
+    eventScopeCode: eventScopeCode = null,
     eventTypeCategory: eventTypeCategory = null,
     eventTypeCode: eventTypeCode = null,
     lastUpdatedTime: timestamp = null,
@@ -60,6 +62,7 @@ object OrganizationEvent {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (eventScopeCode != null) __obj.updateDynamic("eventScopeCode")(eventScopeCode.asInstanceOf[js.Any])
     if (eventTypeCategory != null) __obj.updateDynamic("eventTypeCategory")(eventTypeCategory.asInstanceOf[js.Any])
     if (eventTypeCode != null) __obj.updateDynamic("eventTypeCode")(eventTypeCode.asInstanceOf[js.Any])
     if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])

@@ -14,16 +14,16 @@ trait IAffixOptions extends js.Object {
 object IAffixOptions {
   @scala.inline
   def apply(
-    offsetBottom: Int | Double = null,
-    offsetParent: Int | Double = null,
-    offsetTop: Int | Double = null,
-    offsetUnpin: Int | Double = null
+    offsetBottom: js.UndefOr[Double] = js.undefined,
+    offsetParent: js.UndefOr[Double] = js.undefined,
+    offsetTop: js.UndefOr[Double] = js.undefined,
+    offsetUnpin: js.UndefOr[Double] = js.undefined
   ): IAffixOptions = {
     val __obj = js.Dynamic.literal()
-    if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
-    if (offsetParent != null) __obj.updateDynamic("offsetParent")(offsetParent.asInstanceOf[js.Any])
-    if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
-    if (offsetUnpin != null) __obj.updateDynamic("offsetUnpin")(offsetUnpin.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetBottom)) __obj.updateDynamic("offsetBottom")(offsetBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetParent)) __obj.updateDynamic("offsetParent")(offsetParent.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetTop)) __obj.updateDynamic("offsetTop")(offsetTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offsetUnpin)) __obj.updateDynamic("offsetUnpin")(offsetUnpin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAffixOptions]
   }
 }

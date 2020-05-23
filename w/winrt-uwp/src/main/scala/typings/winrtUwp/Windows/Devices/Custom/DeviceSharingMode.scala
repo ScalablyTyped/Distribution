@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Custom
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +18,6 @@ object DeviceSharingMode extends js.Object {
   /** The device is shared. */
   @js.native
   sealed trait shared extends DeviceSharingMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceSharingMode with Double] = js.native
-  /* 1 */ @js.native
-  object exclusive extends TopLevel[exclusive with Double]
-  
-  /* 0 */ @js.native
-  object shared extends TopLevel[shared with Double]
   
 }
 

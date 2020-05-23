@@ -25,7 +25,7 @@ trait CommandHelpFormatterDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: IName
 
 object CommandHelpFormatterDeps {
   @scala.inline
-  def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](
+  def apply[C, N, M, I, O](
     command: C,
     location: NamespaceLocateResult[C, N, M, I, O],
     colors: Colors = null,

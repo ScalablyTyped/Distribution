@@ -1,6 +1,6 @@
 package typings.develarSchemaUtils.validationErrorMod
 
-import typings.develarSchemaUtils.ErrorObjectchildrenArrayE
+import typings.develarSchemaUtils.anon.ErrorObjectchildrenArrayE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

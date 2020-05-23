@@ -1,14 +1,14 @@
 package typings.gitlab.mergeRequestsMod
 
-import typings.gitlab.Anon0
-import typings.gitlab.Anon1
+import typings.gitlab.anon.`0`
+import typings.gitlab.anon.`1`
+import typings.gitlab.anon.mergerequestIIdnumberBase
+import typings.gitlab.anon.shastringBaseRequestOptio
 import typings.gitlab.infrastructureMod.BaseService
-import typings.gitlab.mergerequestIIdnumberBase
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
-import typings.gitlab.shastringBaseRequestOptio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ class MergeRequests () extends BaseService {
   def addTimeEstimate(projectId: String, mergerequestIId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
   def addTimeEstimate(projectId: Double, mergerequestIId: Double, duration: String): js.Promise[js.Object] = js.native
   def addTimeEstimate(projectId: Double, mergerequestIId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
-  def all(hasProjectIdGroupIdOptions: (Anon0 | Anon1 | js.Object) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+  def all(hasProjectIdGroupIdOptions: (`0` | `1` | js.Object) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
   def approvalState(projectId: String, mergerequestIId: Double): js.Promise[GetResponse] = js.native
   def approvalState(projectId: String, mergerequestIId: Double, options: shastringBaseRequestOptio): js.Promise[GetResponse] = js.native
   def approvalState(projectId: Double, mergerequestIId: Double): js.Promise[GetResponse] = js.native

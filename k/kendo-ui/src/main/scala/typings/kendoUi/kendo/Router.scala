@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("kendo.Router")
 @js.native
-class Router () extends Observable_ {
-  def this(options: RouterOptions) = this()
+trait Router extends Observable {
   var routes: js.Array[Route] = js.native
   def destroy(): Unit = js.native
   def init(): Unit = js.native

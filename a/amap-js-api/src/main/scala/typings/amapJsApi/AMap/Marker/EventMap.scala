@@ -2,7 +2,6 @@ package typings.amapJsApi.AMap.Marker
 
 import typings.amapJsApi.AMap.Event_
 import typings.amapJsApi.AMap.MapsEvent
-import typings.amapJsApi.AnonPassedPath
 import typings.amapJsApi.amapJsApiStrings.click
 import typings.amapJsApi.amapJsApiStrings.dblclick
 import typings.amapJsApi.amapJsApiStrings.dragend
@@ -20,6 +19,7 @@ import typings.amapJsApi.amapJsApiStrings.rightclick
 import typings.amapJsApi.amapJsApiStrings.touchend
 import typings.amapJsApi.amapJsApiStrings.touchmove
 import typings.amapJsApi.amapJsApiStrings.touchstart
+import typings.amapJsApi.anon.PassedPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ trait EventMap[I] extends js.Object {
   var mouseup: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseup, I]
   var movealong: Event_[typings.amapJsApi.amapJsApiStrings.movealong, js.UndefOr[scala.Nothing]]
   var moveend: Event_[typings.amapJsApi.amapJsApiStrings.moveend, js.UndefOr[scala.Nothing]]
-  var moving: Event_[typings.amapJsApi.amapJsApiStrings.moving, AnonPassedPath]
+  var moving: Event_[typings.amapJsApi.amapJsApiStrings.moving, PassedPath]
   var rightclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.rightclick, I]
   var touchend: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchend, I]
   var touchmove: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchmove, I]
@@ -59,7 +59,7 @@ object EventMap {
     mouseup: MapsEvent[mouseup, I],
     movealong: Event_[movealong, js.UndefOr[scala.Nothing]],
     moveend: Event_[moveend, js.UndefOr[scala.Nothing]],
-    moving: Event_[moving, AnonPassedPath],
+    moving: Event_[moving, PassedPath],
     rightclick: MapsEvent[rightclick, I],
     touchend: MapsEvent[touchend, I],
     touchmove: MapsEvent[touchmove, I],

@@ -19,7 +19,7 @@ trait UpdateThingRequest extends js.Object {
     */
   var removeThingType: js.UndefOr[RemoveThingType] = js.native
   /**
-    * The name of the thing to update.
+    * The name of the thing to update. You can't change a thing's name. To change a thing's name, you must create a new thing, give it the new name, and then delete the old thing.
     */
   var thingName: ThingName = js.native
   /**
@@ -33,14 +33,14 @@ object UpdateThingRequest {
   def apply(
     thingName: ThingName,
     attributePayload: AttributePayload = null,
-    expectedVersion: Int | Double = null,
-    removeThingType: js.UndefOr[scala.Boolean] = js.undefined,
+    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined,
+    removeThingType: js.UndefOr[RemoveThingType] = js.undefined,
     thingTypeName: ThingTypeName = null
   ): UpdateThingRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
     if (attributePayload != null) __obj.updateDynamic("attributePayload")(attributePayload.asInstanceOf[js.Any])
-    if (expectedVersion != null) __obj.updateDynamic("expectedVersion")(expectedVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeThingType)) __obj.updateDynamic("removeThingType")(removeThingType.asInstanceOf[js.Any])
+    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeThingType)) __obj.updateDynamic("removeThingType")(removeThingType.get.asInstanceOf[js.Any])
     if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThingRequest]
   }

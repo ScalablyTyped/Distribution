@@ -1,5 +1,6 @@
 package typings.dateFns
 
+import typings.dateFns.anon.LocaleLocale
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,9 +12,9 @@ object esmSetWeekIndexMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(date: Double, week: Double): Date = js.native
-    def apply(date: Double, week: Double, options: AnonLocaleLocale): Date = js.native
+    def apply(date: Double, week: Double, options: LocaleLocale): Date = js.native
     def apply(date: Date, week: Double): Date = js.native
-    def apply(date: Date, week: Double, options: AnonLocaleLocale): Date = js.native
+    def apply(date: Date, week: Double, options: LocaleLocale): Date = js.native
   }
   
 }

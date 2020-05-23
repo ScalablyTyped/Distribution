@@ -13,8 +13,8 @@ trait IItem extends IComponent {
   @JSName("enable")
   var enable_IItem: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Method] Try to focus this component
-  		* @returns Ext.Component The focused Component. Usually this Component. Some Containers may delegate focus to a descendant Component (Windows can do this through their defaultFocus config option.
-  		*/
+    * @returns Ext.Component The focused Component. Usually this Component. Some Containers may delegate focus to a descendant Component (Windows can do this through their defaultFocus config option.
+    */
   @JSName("focus")
   var focus_IItem: js.UndefOr[js.Function0[IComponent]] = js.undefined
   /** [Config Option] (String) */

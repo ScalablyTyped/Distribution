@@ -21,8 +21,8 @@ object IMarkdownString {
     uris: StringDictionary[UriComponents] = null
   ): IMarkdownString = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportThemeIcons)) __obj.updateDynamic("supportThemeIcons")(supportThemeIcons.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportThemeIcons)) __obj.updateDynamic("supportThemeIcons")(supportThemeIcons.get.asInstanceOf[js.Any])
     if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarkdownString]
   }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SortCriteria extends js.Object {
   /**
-    * Represents the finding attribute (for example, accountId) by which to sort findings.
+    * Represents the finding attribute (for example, accountId) to sort findings by.
     */
   var AttributeName: js.UndefOr[String] = js.native
   /**
-    * Order by which the sorted findings are to be displayed.
+    * The order by which the sorted findings are to be displayed.
     */
   var OrderBy: js.UndefOr[typings.awsSdk.guarddutyMod.OrderBy] = js.native
 }

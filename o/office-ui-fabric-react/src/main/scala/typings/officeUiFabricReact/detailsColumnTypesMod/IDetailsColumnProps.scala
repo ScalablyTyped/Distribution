@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.detailsColumnTypesMod
 
-import typings.officeUiFabricReact.AnonItemIndex
+import typings.officeUiFabricReact.anon.ItemIndex
 import typings.officeUiFabricReact.detailsColumnBaseMod.DetailsColumnBase
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
 import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
@@ -10,7 +10,7 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
@@ -84,7 +84,7 @@ trait IDetailsColumnProps extends ClassAttributes[DetailsColumnBase] {
     * Callback on drag and drop event.
     */
   var updateDragInfo: js.UndefOr[
-    js.Function2[/* props */ AnonItemIndex, /* event */ js.UndefOr[typings.std.MouseEvent], Unit]
+    js.Function2[/* props */ ItemIndex, /* event */ js.UndefOr[typings.std.MouseEvent], Unit]
   ] = js.undefined
   /**
     * Whether to use fast icon and check components. The icons can't be targeted by customization
@@ -101,7 +101,7 @@ object IDetailsColumnProps {
     columnIndex: Double,
     cellStyleProps: ICellStyleProps = null,
     componentRef: () => Unit = null,
-    dragDropHelper: IDragDropHelper = null,
+    dragDropHelper: js.UndefOr[Null | IDragDropHelper] = js.undefined,
     isDraggable: js.UndefOr[Boolean] = js.undefined,
     isDropped: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
@@ -111,30 +111,30 @@ object IDetailsColumnProps {
       js.Function1[/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], Element | Null]
     ]) => Element | Null = null,
     parentId: String = null,
-    ref: LegacyRef[DetailsColumnBase] = null,
+    ref: js.UndefOr[Null | LegacyRef[DetailsColumnBase]] = js.undefined,
     setDraggedItemIndex: /* itemIndex */ Double => Unit = null,
     styles: IStyleFunctionOrObject[IDetailsColumnStyleProps, IDetailsColumnStyles] = null,
     theme: ITheme = null,
-    updateDragInfo: (/* props */ AnonItemIndex, /* event */ js.UndefOr[typings.std.MouseEvent]) => Unit = null,
+    updateDragInfo: (/* props */ ItemIndex, /* event */ js.UndefOr[typings.std.MouseEvent]) => Unit = null,
     useFastIcons: js.UndefOr[Boolean] = js.undefined
   ): IDetailsColumnProps = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnIndex = columnIndex.asInstanceOf[js.Any])
     if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(js.Any.fromFunction0(componentRef))
-    if (dragDropHelper != null) __obj.updateDynamic("dragDropHelper")(dragDropHelper.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDropped)) __obj.updateDynamic("isDropped")(isDropped.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragDropHelper)) __obj.updateDynamic("dragDropHelper")(dragDropHelper.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDropped)) __obj.updateDynamic("isDropped")(isDropped.get.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onColumnClick != null) __obj.updateDynamic("onColumnClick")(js.Any.fromFunction2(onColumnClick))
     if (onColumnContextMenu != null) __obj.updateDynamic("onColumnContextMenu")(js.Any.fromFunction2(onColumnContextMenu))
     if (onRenderColumnHeaderTooltip != null) __obj.updateDynamic("onRenderColumnHeaderTooltip")(js.Any.fromFunction2(onRenderColumnHeaderTooltip))
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (setDraggedItemIndex != null) __obj.updateDynamic("setDraggedItemIndex")(js.Any.fromFunction1(setDraggedItemIndex))
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (updateDragInfo != null) __obj.updateDynamic("updateDragInfo")(js.Any.fromFunction2(updateDragInfo))
-    if (!js.isUndefined(useFastIcons)) __obj.updateDynamic("useFastIcons")(useFastIcons.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFastIcons)) __obj.updateDynamic("useFastIcons")(useFastIcons.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsColumnProps]
   }
 }

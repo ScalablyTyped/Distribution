@@ -16,17 +16,17 @@ object DiagramShapeDefaultsConnectorDefaults {
   @scala.inline
   def apply(
     fill: String | DiagramShapeDefaultsConnectorDefaultsFill = null,
-    height: Int | Double = null,
+    height: js.UndefOr[Double] = js.undefined,
     hover: DiagramShapeDefaultsConnectorDefaultsHover = null,
     stroke: String | DiagramShapeDefaultsConnectorDefaultsStroke = null,
-    width: Int | Double = null
+    width: js.UndefOr[Double] = js.undefined
   ): DiagramShapeDefaultsConnectorDefaults = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramShapeDefaultsConnectorDefaults]
   }
 }

@@ -1,8 +1,8 @@
 package typings.openfin.channelChannelMod
 
-import typings.openfin.FnCall
+import typings.openfin.anon.FnCall
 import typings.openfin.identityMod.Identity
-import typings.std.Map
+import typings.openfin.shapesMod.ProviderIdentity
 import typings.std.WeakMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,6 @@ class ChannelBase protected () extends js.Object {
     send: FnCall,
     channelProtectedMap: WeakMap[ChannelBase, ProtectedItems]
   ) = this()
-  var channelMap: Map[String, ChannelBase] = js.native
   var defaultSet: js.Any = js.native
   var errorMiddleware: js.Any = js.native
   var postAction: js.Any = js.native
@@ -33,6 +32,7 @@ class ChannelBase protected () extends js.Object {
   def register(topic: String, listener: Action): Boolean = js.native
   def remove(action: String): Unit = js.native
   /* protected */ def removeChannel(mapKey: String): Unit = js.native
+  /* protected */ def removeChannel(mapKey: String, endpointId: String): Unit = js.native
   def setDefaultAction(
     func: js.Function3[
       /* action */ js.UndefOr[String], 

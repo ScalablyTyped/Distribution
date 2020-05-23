@@ -1,8 +1,7 @@
 package typings.gapiClientSlides.gapi.client.slides
 
-import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientSlides.AnonBearertoken
-import typings.gapiClientSlides.AnonCallback
+import typings.gapiClientSlides.anon.Bearertoken
+import typings.gapiClientSlides.anon.Callback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,23 +31,23 @@ trait PresentationsResource extends js.Object {
     * the updates in your request are guaranteed to be applied together
     * atomically.
     */
-  def batchUpdate(request: AnonBearertoken): Request_[BatchUpdatePresentationResponse]
+  def batchUpdate(request: Bearertoken): typings.gapiClient.gapi.client.Request[BatchUpdatePresentationResponse]
   /**
     * Creates a new presentation using the title given in the request. Other
     * fields in the request are ignored.
     * Returns the created presentation.
     */
-  def create(request: AnonCallback): Request_[Presentation]
+  def create(request: Callback): typings.gapiClient.gapi.client.Request[Presentation]
   /** Gets the latest version of the specified presentation. */
-  def get(request: AnonBearertoken): Request_[Presentation]
+  def get(request: Bearertoken): typings.gapiClient.gapi.client.Request[Presentation]
 }
 
 object PresentationsResource {
   @scala.inline
   def apply(
-    batchUpdate: AnonBearertoken => Request_[BatchUpdatePresentationResponse],
-    create: AnonCallback => Request_[Presentation],
-    get: AnonBearertoken => Request_[Presentation],
+    batchUpdate: Bearertoken => typings.gapiClient.gapi.client.Request[BatchUpdatePresentationResponse],
+    create: Callback => typings.gapiClient.gapi.client.Request[Presentation],
+    get: Bearertoken => typings.gapiClient.gapi.client.Request[Presentation],
     pages: PagesResource
   ): PresentationsResource = {
     val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction1(batchUpdate), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), pages = pages.asInstanceOf[js.Any])

@@ -52,16 +52,16 @@ object Options {
     fancy: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     profile: js.UndefOr[Boolean] = js.undefined,
-    reporter: Reporter = null,
+    reporter: js.UndefOr[Null | Reporter] = js.undefined,
     reporters: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
+    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic.get.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(fancy)) __obj.updateDynamic("fancy")(fancy.asInstanceOf[js.Any])
+    if (!js.isUndefined(fancy)) __obj.updateDynamic("fancy")(fancy.get.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
+    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(reporter)) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -14,13 +14,13 @@ object CacheControlExtensionOptions {
   @scala.inline
   def apply(
     calculateHttpHeaders: js.UndefOr[Boolean] = js.undefined,
-    defaultMaxAge: Int | Double = null,
+    defaultMaxAge: js.UndefOr[Double] = js.undefined,
     stripFormattedExtensions: js.UndefOr[Boolean] = js.undefined
   ): CacheControlExtensionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(calculateHttpHeaders)) __obj.updateDynamic("calculateHttpHeaders")(calculateHttpHeaders.asInstanceOf[js.Any])
-    if (defaultMaxAge != null) __obj.updateDynamic("defaultMaxAge")(defaultMaxAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripFormattedExtensions)) __obj.updateDynamic("stripFormattedExtensions")(stripFormattedExtensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculateHttpHeaders)) __obj.updateDynamic("calculateHttpHeaders")(calculateHttpHeaders.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultMaxAge)) __obj.updateDynamic("defaultMaxAge")(defaultMaxAge.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripFormattedExtensions)) __obj.updateDynamic("stripFormattedExtensions")(stripFormattedExtensions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheControlExtensionOptions]
   }
 }

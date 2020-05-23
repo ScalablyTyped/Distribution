@@ -4,12 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TypeScript.PullTypeSymbol")
 @js.native
-class PullTypeSymbol protected ()
+trait PullTypeSymbol
   extends PullSymbol
      with InstantiableSymbol {
-  def this(name: String, kind: PullElementKind) = this()
   var _allCallSignatures: js.Any = js.native
   var _allConstructSignatures: js.Any = js.native
   var _allIndexSignatures: js.Any = js.native
@@ -88,8 +86,6 @@ class PullTypeSymbol protected ()
   def findNestedType(name: String, kind: PullElementKind): PullTypeSymbol = js.native
   def findTypeParameter(name: String): PullTypeParameterSymbol = js.native
   def getAllMembers(searchDeclKind: PullElementKind, memberVisiblity: GetAllMembersVisiblity): js.Array[PullSymbol] = js.native
-  /* CompleteClass */
-  override def getAllowedToReferenceTypeParameters(): js.Array[PullTypeParameterSymbol] = js.native
   def getArrayType(): PullTypeSymbol = js.native
   def getAssociatedContainerType(): PullTypeSymbol = js.native
   /* private */ def getBaseClassConstructSignatures(baseType: js.Any): js.Any = js.native
@@ -136,8 +132,6 @@ class PullTypeSymbol protected ()
   def getTypeArguments(): js.Array[PullTypeSymbol] = js.native
   def getTypeArgumentsOrTypeParameters(): js.Array[PullTypeSymbol] = js.native
   def getTypeOfSymbol(): PullSymbol = js.native
-  /* CompleteClass */
-  override def getTypeParameterArgumentMap(): TypeArgumentMap = js.native
   def getTypeParameters(): js.Array[PullTypeParameterSymbol] = js.native
   def getTypesThatExplicitlyImplementThisType(): js.Array[PullTypeSymbol] = js.native
   def getTypesThatExtendThisType(): js.Array[PullTypeSymbol] = js.native

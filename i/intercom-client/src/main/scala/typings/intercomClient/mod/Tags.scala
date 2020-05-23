@@ -1,6 +1,6 @@
 package typings.intercomClient.mod
 
-import typings.intercomClient.PartialTag
+import typings.intercomClient.anon.PartialTag
 import typings.intercomClient.tagMod.List
 import typings.intercomClient.tagMod.Tag
 import typings.intercomClient.tagMod.TagIdentifier

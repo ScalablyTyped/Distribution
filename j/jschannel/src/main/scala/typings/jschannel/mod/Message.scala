@@ -19,13 +19,13 @@ object Message {
     error: (/* error */ js.Any, /* message */ String) => Unit = null,
     params: js.Any = null,
     success: /* result */ js.Any => Unit = null,
-    timeout: Int | Double = null
+    timeout: js.UndefOr[Double] = js.undefined
   ): Message = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

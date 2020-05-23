@@ -22,7 +22,7 @@ object LoginUrl {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (bot_username != null) __obj.updateDynamic("bot_username")(bot_username.asInstanceOf[js.Any])
     if (forward_text != null) __obj.updateDynamic("forward_text")(forward_text.asInstanceOf[js.Any])
-    if (!js.isUndefined(request_write_acces)) __obj.updateDynamic("request_write_acces")(request_write_acces.asInstanceOf[js.Any])
+    if (!js.isUndefined(request_write_acces)) __obj.updateDynamic("request_write_acces")(request_write_acces.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginUrl]
   }
 }

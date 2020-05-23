@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SP.EventReceiverDefinition")
 @js.native
-class EventReceiverDefinition () extends ClientObject {
+trait EventReceiverDefinition extends ClientObject {
   def deleteObject(): Unit = js.native
   def get_eventType(): EventReceiverType = js.native
   def get_receiverAssembly(): String = js.native

@@ -1,27 +1,27 @@
 package typings.rbx.responsiveMod
 
-import typings.rbx.AnonOnly
-import typings.rbx.AnonOnlyBoolean
-import typings.rbx.AnonOnlyBooleanValue
-import typings.rbx.AnonOnlyValue
+import typings.rbx.anon.Only
+import typings.rbx.anon.OnlyBoolean
+import typings.rbx.anon.OnlyBooleanValue
+import typings.rbx.anon.OnlyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResponsiveBreakpointProps extends js.Object {
-  var display: js.UndefOr[AnonOnly] = js.undefined
-  var hide: js.UndefOr[AnonOnlyValue] = js.undefined
-  var textAlign: js.UndefOr[AnonOnlyBoolean] = js.undefined
-  var textSize: js.UndefOr[AnonOnlyBooleanValue] = js.undefined
+  var display: js.UndefOr[Only] = js.undefined
+  var hide: js.UndefOr[OnlyValue] = js.undefined
+  var textAlign: js.UndefOr[OnlyBoolean] = js.undefined
+  var textSize: js.UndefOr[OnlyBooleanValue] = js.undefined
 }
 
 object ResponsiveBreakpointProps {
   @scala.inline
   def apply(
-    display: AnonOnly = null,
-    hide: AnonOnlyValue = null,
-    textAlign: AnonOnlyBoolean = null,
-    textSize: AnonOnlyBooleanValue = null
+    display: Only = null,
+    hide: OnlyValue = null,
+    textAlign: OnlyBoolean = null,
+    textSize: OnlyBooleanValue = null
   ): ResponsiveBreakpointProps = {
     val __obj = js.Dynamic.literal()
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])

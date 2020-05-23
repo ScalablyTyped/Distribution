@@ -1,6 +1,6 @@
 package typings.puppeteer.mod
 
-import typings.puppeteer.AnonDeviceScaleFactor
+import typings.puppeteer.anon.DeviceScaleFactor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,17 +24,17 @@ object ConnectOptions {
   def apply(
     browserURL: String = null,
     browserWSEndpoint: String = null,
-    defaultViewport: AnonDeviceScaleFactor = null,
+    defaultViewport: js.UndefOr[Null | DeviceScaleFactor] = js.undefined,
     ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined,
-    slowMo: Int | Double = null,
+    slowMo: js.UndefOr[Double] = js.undefined,
     transport: ConnectionTransport = null
   ): ConnectOptions = {
     val __obj = js.Dynamic.literal()
     if (browserURL != null) __obj.updateDynamic("browserURL")(browserURL.asInstanceOf[js.Any])
     if (browserWSEndpoint != null) __obj.updateDynamic("browserWSEndpoint")(browserWSEndpoint.asInstanceOf[js.Any])
-    if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors.asInstanceOf[js.Any])
-    if (slowMo != null) __obj.updateDynamic("slowMo")(slowMo.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultViewport)) __obj.updateDynamic("defaultViewport")(defaultViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(slowMo)) __obj.updateDynamic("slowMo")(slowMo.get.asInstanceOf[js.Any])
     if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }

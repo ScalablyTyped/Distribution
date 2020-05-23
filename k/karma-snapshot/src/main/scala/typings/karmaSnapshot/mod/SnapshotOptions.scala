@@ -42,18 +42,18 @@ object SnapshotOptions {
   def apply(
     checkSourceFile: js.UndefOr[Boolean] = js.undefined,
     format: String | SnapshotSerializer = null,
-    limitUnusedSnapshotsInWarning: Int | Double = null,
+    limitUnusedSnapshotsInWarning: js.UndefOr[Double] = js.undefined,
     pathResolver: (/* basePath */ String, /* suiteName */ String) => String = null,
     prune: js.UndefOr[Boolean] = js.undefined,
     update: js.UndefOr[Boolean] = js.undefined
   ): SnapshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkSourceFile)) __obj.updateDynamic("checkSourceFile")(checkSourceFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkSourceFile)) __obj.updateDynamic("checkSourceFile")(checkSourceFile.get.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (limitUnusedSnapshotsInWarning != null) __obj.updateDynamic("limitUnusedSnapshotsInWarning")(limitUnusedSnapshotsInWarning.asInstanceOf[js.Any])
+    if (!js.isUndefined(limitUnusedSnapshotsInWarning)) __obj.updateDynamic("limitUnusedSnapshotsInWarning")(limitUnusedSnapshotsInWarning.get.asInstanceOf[js.Any])
     if (pathResolver != null) __obj.updateDynamic("pathResolver")(js.Any.fromFunction2(pathResolver))
-    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.asInstanceOf[js.Any])
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotOptions]
   }
 }

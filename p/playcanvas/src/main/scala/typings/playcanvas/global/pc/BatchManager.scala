@@ -1,0 +1,23 @@
+package typings.playcanvas.global.pc
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Glues many mesh instances into a single one for better performance.
+  * @param device - The graphics device used by the batch manager.
+  * @param root - The entity under which batched models are added.
+  * @param scene - The scene that the batch manager affects.
+  */
+@JSGlobal("pc.BatchManager")
+@js.native
+class BatchManager protected ()
+  extends typings.playcanvas.pc.BatchManager {
+  def this(
+    device: typings.playcanvas.pc.GraphicsDevice,
+    root: typings.playcanvas.pc.Entity,
+    scene: typings.playcanvas.pc.Scene
+  ) = this()
+}
+

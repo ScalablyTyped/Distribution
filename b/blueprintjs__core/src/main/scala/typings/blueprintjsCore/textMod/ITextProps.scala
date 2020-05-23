@@ -30,7 +30,7 @@ object ITextProps {
   ): ITextProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsize)) __obj.updateDynamic("ellipsize")(ellipsize.asInstanceOf[js.Any])
+    if (!js.isUndefined(ellipsize)) __obj.updateDynamic("ellipsize")(ellipsize.get.asInstanceOf[js.Any])
     if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextProps]
   }

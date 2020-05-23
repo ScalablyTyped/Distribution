@@ -15,11 +15,11 @@ trait ListMembersRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[typings.awsSdk.guarddutyMod.MaxResults] = js.native
   /**
-    * You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the list action. For subsequent calls to the action fill nextToken in the request with the value of NextToken from the previous response to continue listing data.
+    * You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the list action. For subsequent calls to the action, fill nextToken in the request with the value of NextToken from the previous response to continue listing data.
     */
   var NextToken: js.UndefOr[String] = js.native
   /**
-    * Specifies whether to only return associated members or to return all members (including members which haven't been invited yet or have been disassociated).
+    * Specifies what member accounts the response includes based on their relationship status with the master account. The default value is "true". If set to "false" the response includes all existing member accounts (including members who haven't been invited yet or have been disassociated).
     */
   var OnlyAssociated: js.UndefOr[String] = js.native
 }
@@ -28,12 +28,12 @@ object ListMembersRequest {
   @scala.inline
   def apply(
     DetectorId: DetectorId,
-    MaxResults: Int | scala.Double = null,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: String = null,
     OnlyAssociated: String = null
   ): ListMembersRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (OnlyAssociated != null) __obj.updateDynamic("OnlyAssociated")(OnlyAssociated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMembersRequest]

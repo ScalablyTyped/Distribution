@@ -6,14 +6,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("DB.DatabaseLogicCommand")
-@js.native
-class DatabaseLogicCommand () extends js.Object {
-  var fieldName: String | InternalSymbol = js.native
-  var operands: Array[_] = js.native
-  var operator: LOGIC_COMMANDS_LITERAL | String = js.native
-  def _setFieldName(fieldName: String): DatabaseLogicCommand = js.native
-  def and(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand = js.native
-  def or(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand = js.native
+trait DatabaseLogicCommand extends js.Object {
+  var fieldName: String | InternalSymbol
+  var operands: Array[_]
+  var operator: LOGIC_COMMANDS_LITERAL | String
+  def _setFieldName(fieldName: String): DatabaseLogicCommand
+  def and(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand
+  def or(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand
+}
+
+object DatabaseLogicCommand {
+  @scala.inline
+  def apply(
+    _setFieldName: String => DatabaseLogicCommand,
+    and: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand,
+    fieldName: String | InternalSymbol,
+    operands: Array[_],
+    operator: LOGIC_COMMANDS_LITERAL | String,
+    or: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand
+  ): DatabaseLogicCommand = {
+    val __obj = js.Dynamic.literal(_setFieldName = js.Any.fromFunction1(_setFieldName), and = js.Any.fromFunction1(and), fieldName = fieldName.asInstanceOf[js.Any], operands = operands.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], or = js.Any.fromFunction1(or))
+    __obj.asInstanceOf[DatabaseLogicCommand]
+  }
 }
 

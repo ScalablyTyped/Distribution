@@ -11,10 +11,13 @@ trait ReceiveQueueMessageOptions extends js.Object {
 
 object ReceiveQueueMessageOptions {
   @scala.inline
-  def apply(isPeekLock: js.UndefOr[Boolean] = js.undefined, timeoutIntervalInS: Int | Double = null): ReceiveQueueMessageOptions = {
+  def apply(
+    isPeekLock: js.UndefOr[Boolean] = js.undefined,
+    timeoutIntervalInS: js.UndefOr[Double] = js.undefined
+  ): ReceiveQueueMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPeekLock)) __obj.updateDynamic("isPeekLock")(isPeekLock.asInstanceOf[js.Any])
-    if (timeoutIntervalInS != null) __obj.updateDynamic("timeoutIntervalInS")(timeoutIntervalInS.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPeekLock)) __obj.updateDynamic("isPeekLock")(isPeekLock.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutIntervalInS)) __obj.updateDynamic("timeoutIntervalInS")(timeoutIntervalInS.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiveQueueMessageOptions]
   }
 }

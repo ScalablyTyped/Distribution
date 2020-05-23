@@ -24,12 +24,12 @@ object ListResourcesRequest {
   @scala.inline
   def apply(
     FilterConditionList: FilterConditionList = null,
-    MaxResults: Int | Double = null,
+    MaxResults: js.UndefOr[PageSize] = js.undefined,
     NextToken: Token = null
   ): ListResourcesRequest = {
     val __obj = js.Dynamic.literal()
     if (FilterConditionList != null) __obj.updateDynamic("FilterConditionList")(FilterConditionList.asInstanceOf[js.Any])
-    if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourcesRequest]
   }

@@ -21,7 +21,7 @@ object ILoadableContentProps {
   @scala.inline
   def apply(loading: Boolean, variableLength: js.UndefOr[Boolean] = js.undefined): ILoadableContentProps = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
-    if (!js.isUndefined(variableLength)) __obj.updateDynamic("variableLength")(variableLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(variableLength)) __obj.updateDynamic("variableLength")(variableLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoadableContentProps]
   }
 }

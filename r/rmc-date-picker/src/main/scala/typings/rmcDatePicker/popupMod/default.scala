@@ -1,6 +1,6 @@
 package typings.rmcDatePicker.popupMod
 
-import typings.rmcDatePicker.AnonPickerValueChangeProp
+import typings.rmcDatePicker.anon.PickerValueChangeProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends PopupDatePicker
 @JSImport("rmc-date-picker/lib/Popup", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonPickerValueChangeProp = js.native
+  var defaultProps: PickerValueChangeProp = js.native
 }
 

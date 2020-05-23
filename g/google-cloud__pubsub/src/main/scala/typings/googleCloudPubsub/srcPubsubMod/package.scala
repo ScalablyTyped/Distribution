@@ -31,7 +31,6 @@ package object srcPubsubMod {
     typings.googleCloudPubsub.pubsubMod.google.pubsub.v1.IListSnapshotsResponse
   ]
   type GetSubscriptionsCallback = typings.googleCloudPubsub.srcPubsubMod.GetAllSubscriptionsCallback | typings.googleCloudPubsub.topicMod.GetTopicSubscriptionsCallback
-  type GetSubscriptionsOptions = typings.googleCloudPubsub.srcPubsubMod.PageOptions with typings.googleCloudPubsub.AnonTopic
   type GetSubscriptionsResponse = typings.googleCloudPubsub.srcPubsubMod.GetAllSubscriptionsResponse | typings.googleCloudPubsub.topicMod.GetTopicSubscriptionsResponse
   type GetTopicsCallback = typings.googleCloudPubsub.srcPubsubMod.RequestCallback[
     typings.googleCloudPubsub.topicMod.Topic, 
@@ -46,8 +45,7 @@ package object srcPubsubMod {
     /* res */ js.UndefOr[TResponse | scala.Null], 
     scala.Unit
   ]
-  type ObjectStream[O] = typings.googleCloudPubsub.AnonAddListener[O] with typings.node.streamMod.Transform
-  type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
+  type Omit[T, K /* <: /* keyof T */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   type PagedCallback[Item, Response] = js.Function4[
     /* err */ typings.grpcGrpcJs.callMod.ServiceError | scala.Null, 
     /* results */ js.UndefOr[js.Array[Item] | scala.Null], 

@@ -239,6 +239,12 @@ package object medialiveMod {
   type ChannelState = typings.awsSdk.medialiveMod._ChannelState | java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.medialiveMod.ClientApiVersions
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SYNCED
+    - typings.awsSdk.awsSdkStrings.SYNCING
+    - java.lang.String
+  */
+  type DeviceSettingsSyncState = typings.awsSdk.medialiveMod._DeviceSettingsSyncState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SDT_FOLLOW
     - typings.awsSdk.awsSdkStrings.SDT_FOLLOW_IF_PRESENT
     - typings.awsSdk.awsSdkStrings.SDT_MANUAL
@@ -427,6 +433,18 @@ package object medialiveMod {
   */
   type FixedAfd = typings.awsSdk.medialiveMod._FixedAfd | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NO_PASSTHROUGH
+    - typings.awsSdk.awsSdkStrings.PASSTHROUGH
+    - java.lang.String
+  */
+  type Fmp4NielsenId3Behavior = typings.awsSdk.medialiveMod._Fmp4NielsenId3Behavior | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NO_PASSTHROUGH
+    - typings.awsSdk.awsSdkStrings.PASSTHROUGH
+    - java.lang.String
+  */
+  type Fmp4TimedMetadataBehavior = typings.awsSdk.medialiveMod._Fmp4TimedMetadataBehavior | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.END
     - typings.awsSdk.awsSdkStrings.START
     - java.lang.String
@@ -558,6 +576,12 @@ package object medialiveMod {
     - java.lang.String
   */
   type H264Profile = typings.awsSdk.medialiveMod._H264Profile | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENHANCED_QUALITY
+    - typings.awsSdk.awsSdkStrings.STANDARD_QUALITY
+    - java.lang.String
+  */
+  type H264QualityLevel = typings.awsSdk.medialiveMod._H264QualityLevel | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CBR
     - typings.awsSdk.awsSdkStrings.MULTIPLEX
@@ -867,6 +891,44 @@ package object medialiveMod {
   */
   type InputDenoiseFilter = typings.awsSdk.medialiveMod._InputDenoiseFilter | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.HDMI
+    - typings.awsSdk.awsSdkStrings.SDI
+    - java.lang.String
+  */
+  type InputDeviceActiveInput = typings.awsSdk.medialiveMod._InputDeviceActiveInput | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.AUTO
+    - typings.awsSdk.awsSdkStrings.HDMI
+    - typings.awsSdk.awsSdkStrings.SDI
+    - java.lang.String
+  */
+  type InputDeviceConfiguredInput = typings.awsSdk.medialiveMod._InputDeviceConfiguredInput | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DISCONNECTED
+    - typings.awsSdk.awsSdkStrings.CONNECTED
+    - java.lang.String
+  */
+  type InputDeviceConnectionState = typings.awsSdk.medialiveMod._InputDeviceConnectionState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.STATIC
+    - typings.awsSdk.awsSdkStrings.DHCP
+    - java.lang.String
+  */
+  type InputDeviceIpScheme = typings.awsSdk.medialiveMod._InputDeviceIpScheme | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.INTERLACED
+    - typings.awsSdk.awsSdkStrings.PROGRESSIVE
+    - java.lang.String
+  */
+  type InputDeviceScanType = typings.awsSdk.medialiveMod._InputDeviceScanType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.IDLE
+    - typings.awsSdk.awsSdkStrings.STREAMING
+    - java.lang.String
+  */
+  type InputDeviceState = typings.awsSdk.medialiveMod._InputDeviceState | java.lang.String
+  type InputDeviceType = typings.awsSdk.awsSdkStrings.HD | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AUTO
     - typings.awsSdk.awsSdkStrings.DISABLED
     - typings.awsSdk.awsSdkStrings.FORCED
@@ -967,6 +1029,7 @@ package object medialiveMod {
     - typings.awsSdk.awsSdkStrings.URL_PULL
     - typings.awsSdk.awsSdkStrings.MP4_FILE
     - typings.awsSdk.awsSdkStrings.MEDIACONNECT
+    - typings.awsSdk.awsSdkStrings.INPUT_DEVICE
     - java.lang.String
   */
   type InputType = typings.awsSdk.medialiveMod._InputType | java.lang.String
@@ -1353,6 +1416,7 @@ package object medialiveMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NONE
     - typings.awsSdk.awsSdkStrings.SCTE_35
+    - typings.awsSdk.awsSdkStrings.SCTE_35_WITHOUT_SEGMENTATION
     - java.lang.String
   */
   type SmoothGroupSparseTrackType = typings.awsSdk.medialiveMod._SmoothGroupSparseTrackType | java.lang.String
@@ -1368,7 +1432,41 @@ package object medialiveMod {
     - java.lang.String
   */
   type SmoothGroupTimestampOffsetMode = typings.awsSdk.medialiveMod._SmoothGroupTimestampOffsetMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.IGNORE
+    - typings.awsSdk.awsSdkStrings.PREFER
+    - java.lang.String
+  */
+  type Smpte2038DataPreference = typings.awsSdk.medialiveMod._Smpte2038DataPreference | java.lang.String
   type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.medialiveMod.string]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.AUTO
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type TemporalFilterPostFilterSharpening = typings.awsSdk.medialiveMod._TemporalFilterPostFilterSharpening | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.AUTO
+    - typings.awsSdk.awsSdkStrings.STRENGTH_1
+    - typings.awsSdk.awsSdkStrings.STRENGTH_2
+    - typings.awsSdk.awsSdkStrings.STRENGTH_3
+    - typings.awsSdk.awsSdkStrings.STRENGTH_4
+    - typings.awsSdk.awsSdkStrings.STRENGTH_5
+    - typings.awsSdk.awsSdkStrings.STRENGTH_6
+    - typings.awsSdk.awsSdkStrings.STRENGTH_7
+    - typings.awsSdk.awsSdkStrings.STRENGTH_8
+    - typings.awsSdk.awsSdkStrings.STRENGTH_9
+    - typings.awsSdk.awsSdkStrings.STRENGTH_10
+    - typings.awsSdk.awsSdkStrings.STRENGTH_11
+    - typings.awsSdk.awsSdkStrings.STRENGTH_12
+    - typings.awsSdk.awsSdkStrings.STRENGTH_13
+    - typings.awsSdk.awsSdkStrings.STRENGTH_14
+    - typings.awsSdk.awsSdkStrings.STRENGTH_15
+    - typings.awsSdk.awsSdkStrings.STRENGTH_16
+    - java.lang.String
+  */
+  type TemporalFilterStrength = typings.awsSdk.medialiveMod._TemporalFilterStrength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.EMBEDDED
     - typings.awsSdk.awsSdkStrings.SYSTEMCLOCK
@@ -1477,6 +1575,7 @@ package object medialiveMod {
   type listOfAudioChannelMapping = js.Array[typings.awsSdk.medialiveMod.AudioChannelMapping]
   type listOfAudioDescription = js.Array[typings.awsSdk.medialiveMod.AudioDescription]
   type listOfAudioSelector = js.Array[typings.awsSdk.medialiveMod.AudioSelector]
+  type listOfAudioTrack = js.Array[typings.awsSdk.medialiveMod.AudioTrack]
   type listOfCaptionDescription = js.Array[typings.awsSdk.medialiveMod.CaptionDescription]
   type listOfCaptionLanguageMapping = js.Array[typings.awsSdk.medialiveMod.CaptionLanguageMapping]
   type listOfCaptionSelector = js.Array[typings.awsSdk.medialiveMod.CaptionSelector]
@@ -1488,6 +1587,9 @@ package object medialiveMod {
   type listOfInputChannelLevel = js.Array[typings.awsSdk.medialiveMod.InputChannelLevel]
   type listOfInputDestination = js.Array[typings.awsSdk.medialiveMod.InputDestination]
   type listOfInputDestinationRequest = js.Array[typings.awsSdk.medialiveMod.InputDestinationRequest]
+  type listOfInputDeviceRequest = js.Array[typings.awsSdk.medialiveMod.InputDeviceRequest]
+  type listOfInputDeviceSettings = js.Array[typings.awsSdk.medialiveMod.InputDeviceSettings]
+  type listOfInputDeviceSummary = js.Array[typings.awsSdk.medialiveMod.InputDeviceSummary]
   type listOfInputSecurityGroup = js.Array[typings.awsSdk.medialiveMod.InputSecurityGroup]
   type listOfInputSource = js.Array[typings.awsSdk.medialiveMod.InputSource]
   type listOfInputSourceRequest = js.Array[typings.awsSdk.medialiveMod.InputSourceRequest]

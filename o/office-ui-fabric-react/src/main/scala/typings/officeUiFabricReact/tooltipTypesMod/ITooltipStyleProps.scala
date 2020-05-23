@@ -33,17 +33,17 @@ object ITooltipStyleProps {
   @scala.inline
   def apply(
     theme: ITheme,
-    beakWidth: Int | Double = null,
+    beakWidth: js.UndefOr[Double] = js.undefined,
     className: String = null,
     delay: TooltipDelay = null,
-    gapSpace: Int | Double = null,
+    gapSpace: js.UndefOr[Double] = js.undefined,
     maxWidth: String = null
   ): ITooltipStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-    if (beakWidth != null) __obj.updateDynamic("beakWidth")(beakWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(beakWidth)) __obj.updateDynamic("beakWidth")(beakWidth.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (gapSpace != null) __obj.updateDynamic("gapSpace")(gapSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(gapSpace)) __obj.updateDynamic("gapSpace")(gapSpace.get.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITooltipStyleProps]
   }

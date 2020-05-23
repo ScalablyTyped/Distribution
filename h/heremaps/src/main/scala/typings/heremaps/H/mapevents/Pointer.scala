@@ -1,6 +1,5 @@
 package typings.heremaps.H.mapevents
 
-import org.scalablytyped.runtime.TopLevel
 import typings.heremaps.H.Map_
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.mapevents.Pointer.Button
@@ -19,35 +18,14 @@ import scala.scalajs.js.annotation._
   * @property dragTarget {(H.map.Object | H.Map)} - Object which is currently dragged by the pointer
   * @property button {H.mapevents.Pointer.Button} - Indicates which pointer device button has changed.
   */
-@JSGlobal("H.mapevents.Pointer")
-@js.native
-class Pointer protected () extends js.Object {
-  /**
-    * Constructor
-    * @param viewportX {number} - pointer position on x-axis
-    * @param viewportY {number} - pointer position on y-axis
-    * @param id {number} - unique pointer identifier among currently available pointers
-    * @param type {string} - type of pointer can be i.e 'mouse', 'touch'. 'pen'
-    * @param opt_button {H.mapevents.Pointer.Button=} - Indicates which pointer device button has changed.
-    * @param opt_buttons {number=} - Indicates which pointer device buttons are being pressed, expressed as a bitmask. Uses the same values, as "buttons" in Pointer Events spec.
-    */
-  def this(viewportX: Double, viewportY: Double, id: Double, `type`: String) = this()
-  def this(viewportX: Double, viewportY: Double, id: Double, `type`: String, opt_button: Button) = this()
-  def this(
-    viewportX: Double,
-    viewportY: Double,
-    id: Double,
-    `type`: String,
-    opt_button: Button,
-    opt_buttons: BitMask
-  ) = this()
-  var button: Button = js.native
-  var dragTarget: Object | Map_ = js.native
-  var id: Double = js.native
-  var target: Object | Map_ = js.native
-  var `type`: String = js.native
-  var viewportX: Double = js.native
-  var viewportY: Double = js.native
+trait Pointer extends js.Object {
+  var button: Button
+  var dragTarget: Object | Map_
+  var id: Double
+  var target: Object | Map_
+  var `type`: String
+  var viewportX: Double
+  var viewportY: Double
 }
 
 @JSGlobal("H.mapevents.Pointer")
@@ -76,20 +54,6 @@ object Pointer extends js.Object {
     /** Right mouse button or Pen barrel button */
     @js.native
     sealed trait RIGHT extends Button
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Button with Double] = js.native
-    /* 1 */ @js.native
-    object LEFT extends TopLevel[LEFT with Double]
-    
-    /* 2 */ @js.native
-    object MIDDLE extends TopLevel[MIDDLE with Double]
-    
-    /* 0 */ @js.native
-    object NONE extends TopLevel[NONE with Double]
-    
-    /* 3 */ @js.native
-    object RIGHT extends TopLevel[RIGHT with Double]
     
   }
   

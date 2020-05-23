@@ -59,15 +59,15 @@ object ChartTooltipOptions {
     bodyAlign: TextAlignment = null,
     bodyFontColor: ChartColor = null,
     bodyFontFamily: String = null,
-    bodyFontSize: Int | Double = null,
+    bodyFontSize: js.UndefOr[Double] = js.undefined,
     bodyFontStyle: String = null,
-    bodySpacing: Int | Double = null,
+    bodySpacing: js.UndefOr[Double] = js.undefined,
     borderColor: ChartColor = null,
-    borderWidth: Int | Double = null,
+    borderWidth: js.UndefOr[Double] = js.undefined,
     callbacks: ChartTooltipCallback = null,
-    caretPadding: Int | Double = null,
-    caretSize: Int | Double = null,
-    cornerRadius: Int | Double = null,
+    caretPadding: js.UndefOr[Double] = js.undefined,
+    caretSize: js.UndefOr[Double] = js.undefined,
+    cornerRadius: js.UndefOr[Double] = js.undefined,
     custom: /* tooltipModel */ ChartTooltipModel => Unit = null,
     displayColors: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -75,10 +75,10 @@ object ChartTooltipOptions {
     footerAlign: TextAlignment = null,
     footerFontColor: ChartColor = null,
     footerFontFamily: String = null,
-    footerFontSize: Int | Double = null,
+    footerFontSize: js.UndefOr[Double] = js.undefined,
     footerFontStyle: String = null,
-    footerMarginTop: Int | Double = null,
-    footerSpacing: Int | Double = null,
+    footerMarginTop: js.UndefOr[Double] = js.undefined,
+    footerSpacing: js.UndefOr[Double] = js.undefined,
     intersect: js.UndefOr[Boolean] = js.undefined,
     itemSort: (/* itemA */ ChartTooltipItem, /* itemB */ ChartTooltipItem, /* data */ js.UndefOr[ChartData]) => Double = null,
     mode: InteractionMode = null,
@@ -87,39 +87,39 @@ object ChartTooltipOptions {
     titleAlign: TextAlignment = null,
     titleFontColor: ChartColor = null,
     titleFontFamily: String = null,
-    titleFontSize: Int | Double = null,
+    titleFontSize: js.UndefOr[Double] = js.undefined,
     titleFontStyle: String = null,
-    titleMarginBottom: Int | Double = null,
-    titleSpacing: Int | Double = null,
-    xPadding: Int | Double = null,
-    yPadding: Int | Double = null
+    titleMarginBottom: js.UndefOr[Double] = js.undefined,
+    titleSpacing: js.UndefOr[Double] = js.undefined,
+    xPadding: js.UndefOr[Double] = js.undefined,
+    yPadding: js.UndefOr[Double] = js.undefined
   ): ChartTooltipOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bodyAlign != null) __obj.updateDynamic("bodyAlign")(bodyAlign.asInstanceOf[js.Any])
     if (bodyFontColor != null) __obj.updateDynamic("bodyFontColor")(bodyFontColor.asInstanceOf[js.Any])
     if (bodyFontFamily != null) __obj.updateDynamic("bodyFontFamily")(bodyFontFamily.asInstanceOf[js.Any])
-    if (bodyFontSize != null) __obj.updateDynamic("bodyFontSize")(bodyFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bodyFontSize)) __obj.updateDynamic("bodyFontSize")(bodyFontSize.get.asInstanceOf[js.Any])
     if (bodyFontStyle != null) __obj.updateDynamic("bodyFontStyle")(bodyFontStyle.asInstanceOf[js.Any])
-    if (bodySpacing != null) __obj.updateDynamic("bodySpacing")(bodySpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(bodySpacing)) __obj.updateDynamic("bodySpacing")(bodySpacing.get.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (caretPadding != null) __obj.updateDynamic("caretPadding")(caretPadding.asInstanceOf[js.Any])
-    if (caretSize != null) __obj.updateDynamic("caretSize")(caretSize.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(caretPadding)) __obj.updateDynamic("caretPadding")(caretPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(caretSize)) __obj.updateDynamic("caretSize")(caretSize.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(cornerRadius)) __obj.updateDynamic("cornerRadius")(cornerRadius.get.asInstanceOf[js.Any])
     if (custom != null) __obj.updateDynamic("custom")(js.Any.fromFunction1(custom))
-    if (!js.isUndefined(displayColors)) __obj.updateDynamic("displayColors")(displayColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayColors)) __obj.updateDynamic("displayColors")(displayColors.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (footerAlign != null) __obj.updateDynamic("footerAlign")(footerAlign.asInstanceOf[js.Any])
     if (footerFontColor != null) __obj.updateDynamic("footerFontColor")(footerFontColor.asInstanceOf[js.Any])
     if (footerFontFamily != null) __obj.updateDynamic("footerFontFamily")(footerFontFamily.asInstanceOf[js.Any])
-    if (footerFontSize != null) __obj.updateDynamic("footerFontSize")(footerFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(footerFontSize)) __obj.updateDynamic("footerFontSize")(footerFontSize.get.asInstanceOf[js.Any])
     if (footerFontStyle != null) __obj.updateDynamic("footerFontStyle")(footerFontStyle.asInstanceOf[js.Any])
-    if (footerMarginTop != null) __obj.updateDynamic("footerMarginTop")(footerMarginTop.asInstanceOf[js.Any])
-    if (footerSpacing != null) __obj.updateDynamic("footerSpacing")(footerSpacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(intersect)) __obj.updateDynamic("intersect")(intersect.asInstanceOf[js.Any])
+    if (!js.isUndefined(footerMarginTop)) __obj.updateDynamic("footerMarginTop")(footerMarginTop.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(footerSpacing)) __obj.updateDynamic("footerSpacing")(footerSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(intersect)) __obj.updateDynamic("intersect")(intersect.get.asInstanceOf[js.Any])
     if (itemSort != null) __obj.updateDynamic("itemSort")(js.Any.fromFunction3(itemSort))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (multiKeyBackground != null) __obj.updateDynamic("multiKeyBackground")(multiKeyBackground.asInstanceOf[js.Any])
@@ -127,12 +127,12 @@ object ChartTooltipOptions {
     if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign.asInstanceOf[js.Any])
     if (titleFontColor != null) __obj.updateDynamic("titleFontColor")(titleFontColor.asInstanceOf[js.Any])
     if (titleFontFamily != null) __obj.updateDynamic("titleFontFamily")(titleFontFamily.asInstanceOf[js.Any])
-    if (titleFontSize != null) __obj.updateDynamic("titleFontSize")(titleFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleFontSize)) __obj.updateDynamic("titleFontSize")(titleFontSize.get.asInstanceOf[js.Any])
     if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle.asInstanceOf[js.Any])
-    if (titleMarginBottom != null) __obj.updateDynamic("titleMarginBottom")(titleMarginBottom.asInstanceOf[js.Any])
-    if (titleSpacing != null) __obj.updateDynamic("titleSpacing")(titleSpacing.asInstanceOf[js.Any])
-    if (xPadding != null) __obj.updateDynamic("xPadding")(xPadding.asInstanceOf[js.Any])
-    if (yPadding != null) __obj.updateDynamic("yPadding")(yPadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleMarginBottom)) __obj.updateDynamic("titleMarginBottom")(titleMarginBottom.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleSpacing)) __obj.updateDynamic("titleSpacing")(titleSpacing.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(xPadding)) __obj.updateDynamic("xPadding")(xPadding.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(yPadding)) __obj.updateDynamic("yPadding")(yPadding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTooltipOptions]
   }
 }

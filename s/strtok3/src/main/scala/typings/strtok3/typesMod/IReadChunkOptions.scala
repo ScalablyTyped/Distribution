@@ -28,16 +28,16 @@ trait IReadChunkOptions extends js.Object {
 object IReadChunkOptions {
   @scala.inline
   def apply(
-    length: Int | Double = null,
+    length: js.UndefOr[Double] = js.undefined,
     mayBeLess: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
-    position: Int | Double = null
+    offset: js.UndefOr[Double] = js.undefined,
+    position: js.UndefOr[Double] = js.undefined
   ): IReadChunkOptions = {
     val __obj = js.Dynamic.literal()
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(mayBeLess)) __obj.updateDynamic("mayBeLess")(mayBeLess.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(mayBeLess)) __obj.updateDynamic("mayBeLess")(mayBeLess.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReadChunkOptions]
   }
 }

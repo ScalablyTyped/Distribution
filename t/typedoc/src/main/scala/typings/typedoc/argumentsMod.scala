@@ -3,7 +3,6 @@ package typings.typedoc
 import typings.typedoc.loggersMod.Logger
 import typings.typedoc.optionsMod.Options
 import typings.typedoc.optionsOptionsMod.OptionsReader
-import typings.typedoc.typedocStrings.arguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +17,6 @@ object argumentsMod extends js.Object {
     var args: js.Any = js.native
     /* CompleteClass */
     override var name: String = js.native
-    @JSName("name")
-    val name_ArgumentsReader: arguments = js.native
     /* CompleteClass */
     override var priority: Double = js.native
     def read(container: Options, logger: Logger): Unit = js.native

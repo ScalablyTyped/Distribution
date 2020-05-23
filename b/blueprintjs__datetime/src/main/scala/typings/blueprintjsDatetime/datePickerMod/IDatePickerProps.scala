@@ -1,12 +1,13 @@
 package typings.blueprintjsDatetime.datePickerMod
 
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsDatetime.AnonFormatDate
+import typings.blueprintjsDatetime.anon.FormatDate
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerModifiers
 import typings.blueprintjsDatetime.shortcutsMod.IDatePickerShortcut
 import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
+import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,9 +40,7 @@ trait IDatePickerProps
     * `<div className={Classes.DATEPICKER_DAY_WRAPPER}>{CONTENT_HERE}</div>`
     *
     */
-  var dayPickerProps: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any
-  ] = js.undefined
+  var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
   /**
     * Initial day the calendar will display as selected.
     * This should not be set if `value` is set.
@@ -98,19 +97,19 @@ object IDatePickerProps {
     canClearSelection: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     clearButtonText: String = null,
-    dayPickerProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DayPickerProps */ js.Any = null,
+    dayPickerProps: DayPickerProps = null,
     defaultValue: Date = null,
     highlightCurrentDay: js.UndefOr[Boolean] = js.undefined,
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: AnonFormatDate = null,
+    localeUtils: FormatDate = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,
     onChange: (/* selectedDate */ Date, /* isUserChange */ Boolean) => Unit = null,
     onShortcutChange: (/* shortcut */ IDatePickerShortcut, /* index */ Double) => Unit = null,
     reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined,
-    selectedShortcutIndex: Int | Double = null,
+    selectedShortcutIndex: js.UndefOr[Double] = js.undefined,
     shortcuts: Boolean | js.Array[IDatePickerShortcut] = null,
     showActionsBar: js.UndefOr[Boolean] = js.undefined,
     timePickerProps: ITimePickerProps = null,
@@ -119,12 +118,12 @@ object IDatePickerProps {
     value: Date = null
   ): IDatePickerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canClearSelection)) __obj.updateDynamic("canClearSelection")(canClearSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(canClearSelection)) __obj.updateDynamic("canClearSelection")(canClearSelection.get.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clearButtonText != null) __obj.updateDynamic("clearButtonText")(clearButtonText.asInstanceOf[js.Any])
     if (dayPickerProps != null) __obj.updateDynamic("dayPickerProps")(dayPickerProps.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightCurrentDay)) __obj.updateDynamic("highlightCurrentDay")(highlightCurrentDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightCurrentDay)) __obj.updateDynamic("highlightCurrentDay")(highlightCurrentDay.get.asInstanceOf[js.Any])
     if (initialMonth != null) __obj.updateDynamic("initialMonth")(initialMonth.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (localeUtils != null) __obj.updateDynamic("localeUtils")(localeUtils.asInstanceOf[js.Any])
@@ -133,10 +132,10 @@ object IDatePickerProps {
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onShortcutChange != null) __obj.updateDynamic("onShortcutChange")(js.Any.fromFunction2(onShortcutChange))
-    if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus.asInstanceOf[js.Any])
-    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedShortcutIndex)) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.get.asInstanceOf[js.Any])
     if (shortcuts != null) __obj.updateDynamic("shortcuts")(shortcuts.asInstanceOf[js.Any])
-    if (!js.isUndefined(showActionsBar)) __obj.updateDynamic("showActionsBar")(showActionsBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(showActionsBar)) __obj.updateDynamic("showActionsBar")(showActionsBar.get.asInstanceOf[js.Any])
     if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps.asInstanceOf[js.Any])
     if (timePrecision != null) __obj.updateDynamic("timePrecision")(timePrecision.asInstanceOf[js.Any])
     if (todayButtonText != null) __obj.updateDynamic("todayButtonText")(todayButtonText.asInstanceOf[js.Any])

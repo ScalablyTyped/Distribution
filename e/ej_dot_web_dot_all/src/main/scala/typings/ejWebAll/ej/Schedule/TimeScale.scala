@@ -32,16 +32,16 @@ object TimeScale {
   @scala.inline
   def apply(
     enable: js.UndefOr[Boolean] = js.undefined,
-    majorSlot: Int | Double = null,
+    majorSlot: js.UndefOr[Double] = js.undefined,
     majorSlotTemplateId: String = null,
-    minorSlotCount: Int | Double = null,
+    minorSlotCount: js.UndefOr[Double] = js.undefined,
     minorSlotTemplateId: String = null
   ): TimeScale = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (majorSlot != null) __obj.updateDynamic("majorSlot")(majorSlot.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(majorSlot)) __obj.updateDynamic("majorSlot")(majorSlot.get.asInstanceOf[js.Any])
     if (majorSlotTemplateId != null) __obj.updateDynamic("majorSlotTemplateId")(majorSlotTemplateId.asInstanceOf[js.Any])
-    if (minorSlotCount != null) __obj.updateDynamic("minorSlotCount")(minorSlotCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(minorSlotCount)) __obj.updateDynamic("minorSlotCount")(minorSlotCount.get.asInstanceOf[js.Any])
     if (minorSlotTemplateId != null) __obj.updateDynamic("minorSlotTemplateId")(minorSlotTemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeScale]
   }

@@ -30,7 +30,7 @@ object GetMetricsQueryNoResultsParams {
     if (end_time != null) __obj.updateDynamic("end_time")(end_time.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (result_type != null) __obj.updateDynamic("result_type")(result_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     if (start_time != null) __obj.updateDynamic("start_time")(start_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricsQueryNoResultsParams]
   }

@@ -18,10 +18,10 @@ trait ScheduledActionScalableTargetAction extends js.Object {
 
 object ScheduledActionScalableTargetAction {
   @scala.inline
-  def apply(maxCapacity: Int | Double = null, minCapacity: Int | Double = null): ScheduledActionScalableTargetAction = {
+  def apply(maxCapacity: js.UndefOr[Double] = js.undefined, minCapacity: js.UndefOr[Double] = js.undefined): ScheduledActionScalableTargetAction = {
     val __obj = js.Dynamic.literal()
-    if (maxCapacity != null) __obj.updateDynamic("maxCapacity")(maxCapacity.asInstanceOf[js.Any])
-    if (minCapacity != null) __obj.updateDynamic("minCapacity")(minCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxCapacity)) __obj.updateDynamic("maxCapacity")(maxCapacity.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minCapacity)) __obj.updateDynamic("minCapacity")(minCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledActionScalableTargetAction]
   }
 }

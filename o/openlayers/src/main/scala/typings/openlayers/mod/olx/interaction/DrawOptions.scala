@@ -38,7 +38,7 @@ object DrawOptions {
   @scala.inline
   def apply(
     `type`: GeometryType,
-    clickTolerance: Int | Double = null,
+    clickTolerance: js.UndefOr[Double] = js.undefined,
     condition: /* event */ MapBrowserEvent => Boolean = null,
     features: Collection[Feature] = null,
     finishCondition: /* event */ MapBrowserEvent => Boolean = null,
@@ -46,9 +46,9 @@ object DrawOptions {
     freehandCondition: /* event */ MapBrowserEvent => Boolean = null,
     geometryFunction: (/* coords */ Coordinate_ | (js.Array[js.Array[Coordinate_] | Coordinate_]), /* geo */ js.UndefOr[SimpleGeometry]) => SimpleGeometry = null,
     geometryName: String = null,
-    maxPoints: Int | Double = null,
-    minPoints: Int | Double = null,
-    snapTolerance: Int | Double = null,
+    maxPoints: js.UndefOr[Double] = js.undefined,
+    minPoints: js.UndefOr[Double] = js.undefined,
+    snapTolerance: js.UndefOr[Double] = js.undefined,
     source: Vector = null,
     stopClick: js.UndefOr[Boolean] = js.undefined,
     style: Style | js.Array[Style] | StyleFunction = null,
@@ -56,21 +56,21 @@ object DrawOptions {
   ): DrawOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (clickTolerance != null) __obj.updateDynamic("clickTolerance")(clickTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickTolerance)) __obj.updateDynamic("clickTolerance")(clickTolerance.get.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (finishCondition != null) __obj.updateDynamic("finishCondition")(js.Any.fromFunction1(finishCondition))
-    if (!js.isUndefined(freehand)) __obj.updateDynamic("freehand")(freehand.asInstanceOf[js.Any])
+    if (!js.isUndefined(freehand)) __obj.updateDynamic("freehand")(freehand.get.asInstanceOf[js.Any])
     if (freehandCondition != null) __obj.updateDynamic("freehandCondition")(js.Any.fromFunction1(freehandCondition))
     if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(js.Any.fromFunction2(geometryFunction))
     if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
-    if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints.asInstanceOf[js.Any])
-    if (minPoints != null) __obj.updateDynamic("minPoints")(minPoints.asInstanceOf[js.Any])
-    if (snapTolerance != null) __obj.updateDynamic("snapTolerance")(snapTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxPoints)) __obj.updateDynamic("maxPoints")(maxPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(minPoints)) __obj.updateDynamic("minPoints")(minPoints.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapTolerance)) __obj.updateDynamic("snapTolerance")(snapTolerance.get.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopClick)) __obj.updateDynamic("stopClick")(stopClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopClick)) __obj.updateDynamic("stopClick")(stopClick.get.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawOptions]
   }
 }

@@ -38,7 +38,7 @@ object Reference {
     length: String = null,
     md5checksum: String = null,
     name: String = null,
-    ncbiTaxonId: Int | Double = null,
+    ncbiTaxonId: js.UndefOr[Double] = js.undefined,
     sourceAccessions: js.Array[String] = null,
     sourceUri: String = null
   ): Reference = {
@@ -47,7 +47,7 @@ object Reference {
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (md5checksum != null) __obj.updateDynamic("md5checksum")(md5checksum.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ncbiTaxonId != null) __obj.updateDynamic("ncbiTaxonId")(ncbiTaxonId.asInstanceOf[js.Any])
+    if (!js.isUndefined(ncbiTaxonId)) __obj.updateDynamic("ncbiTaxonId")(ncbiTaxonId.get.asInstanceOf[js.Any])
     if (sourceAccessions != null) __obj.updateDynamic("sourceAccessions")(sourceAccessions.asInstanceOf[js.Any])
     if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]

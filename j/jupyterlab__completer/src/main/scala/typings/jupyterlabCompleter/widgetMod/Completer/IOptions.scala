@@ -25,9 +25,13 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(editor: IEditor = null, model: IModel = null, renderer: IRenderer = null): IOptions = {
+  def apply(
+    editor: js.UndefOr[Null | IEditor] = js.undefined,
+    model: IModel = null,
+    renderer: IRenderer = null
+  ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
+    if (!js.isUndefined(editor)) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]

@@ -27,15 +27,15 @@ object OptionsUrlencoded {
     extended: js.UndefOr[Boolean] = js.undefined,
     inflate: js.UndefOr[Boolean] = js.undefined,
     limit: Double | String = null,
-    parameterLimit: Int | Double = null,
+    parameterLimit: js.UndefOr[Double] = js.undefined,
     `type`: String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, _]) = null,
     verify: (/* req */ IncomingMessage, /* res */ ServerResponse, /* buf */ Buffer, /* encoding */ String) => Unit = null
   ): OptionsUrlencoded = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])
-    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate.asInstanceOf[js.Any])
+    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate.get.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (parameterLimit != null) __obj.updateDynamic("parameterLimit")(parameterLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(parameterLimit)) __obj.updateDynamic("parameterLimit")(parameterLimit.get.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction4(verify))
     __obj.asInstanceOf[OptionsUrlencoded]

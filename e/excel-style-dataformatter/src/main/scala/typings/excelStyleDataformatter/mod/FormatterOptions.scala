@@ -15,15 +15,15 @@ trait FormatterOptions extends js.Object {
 object FormatterOptions {
   @scala.inline
   def apply(
-    UTCOffset: Int | Double = null,
+    UTCOffset: js.UndefOr[Null | Double] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
     locale: String = null,
     locales: js.Array[LocalesOptions] = null,
     transformCode: /* code */ js.Any => _ = null
   ): FormatterOptions = {
     val __obj = js.Dynamic.literal()
-    if (UTCOffset != null) __obj.updateDynamic("UTCOffset")(UTCOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(UTCOffset)) __obj.updateDynamic("UTCOffset")(UTCOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
     if (transformCode != null) __obj.updateDynamic("transformCode")(js.Any.fromFunction1(transformCode))

@@ -67,18 +67,18 @@ object CreateProfileRequest {
     WakeWord: WakeWord,
     ClientRequestToken: ClientRequestToken = null,
     Locale: DeviceLocale = null,
-    MaxVolumeLimit: Int | Double = null,
+    MaxVolumeLimit: js.UndefOr[MaxVolumeLimit] = js.undefined,
     MeetingRoomConfiguration: CreateMeetingRoomConfiguration = null,
-    PSTNEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    SetupModeDisabled: js.UndefOr[scala.Boolean] = js.undefined
+    PSTNEnabled: js.UndefOr[Boolean] = js.undefined,
+    SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
   ): CreateProfileRequest = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], DistanceUnit = DistanceUnit.asInstanceOf[js.Any], ProfileName = ProfileName.asInstanceOf[js.Any], TemperatureUnit = TemperatureUnit.asInstanceOf[js.Any], Timezone = Timezone.asInstanceOf[js.Any], WakeWord = WakeWord.asInstanceOf[js.Any])
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
     if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
-    if (MaxVolumeLimit != null) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(MaxVolumeLimit)) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit.get.asInstanceOf[js.Any])
     if (MeetingRoomConfiguration != null) __obj.updateDynamic("MeetingRoomConfiguration")(MeetingRoomConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled.get.asInstanceOf[js.Any])
+    if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProfileRequest]
   }
 }

@@ -85,7 +85,7 @@ object Options {
     if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (!js.isUndefined(writeToFileEmit)) __obj.updateDynamic("writeToFileEmit")(writeToFileEmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeToFileEmit)) __obj.updateDynamic("writeToFileEmit")(writeToFileEmit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

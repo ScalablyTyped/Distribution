@@ -53,7 +53,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     nice: Boolean | Double | SignalRef = null,
     padding: Double | SignalRef = null,
@@ -70,7 +70,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
@@ -89,7 +89,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     padding: Double | SignalRef = null,
     paddingOuter: Double | SignalRef = null,
     range: RangeBand = null,
@@ -103,7 +103,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (paddingOuter != null) __obj.updateDynamic("paddingOuter")(paddingOuter.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
@@ -120,7 +120,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     nice: Boolean | Double | SignalRef = null,
     padding: Double | SignalRef = null,
@@ -137,7 +137,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
@@ -158,7 +158,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     nice: Boolean | Double | SignalRef = null,
     padding: Double | SignalRef = null,
@@ -175,7 +175,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
@@ -196,7 +196,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     nice: Boolean | Double | SignalRef = null,
     padding: Double | SignalRef = null,
@@ -214,7 +214,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
@@ -234,7 +234,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     nice: Boolean | TimeInterval | TimeIntervalStep | SignalRef = null,
     padding: Double | SignalRef = null,
@@ -250,7 +250,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
@@ -266,7 +266,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     nice: Boolean | Double | SignalRef = null,
     padding: Double | SignalRef = null,
     range: RangeScheme = null,
@@ -280,7 +280,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
@@ -299,7 +299,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     padding: Double | SignalRef = null,
     paddingInner: Double | SignalRef = null,
     paddingOuter: Double | SignalRef = null,
@@ -314,7 +314,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (paddingInner != null) __obj.updateDynamic("paddingInner")(paddingInner.asInstanceOf[js.Any])
     if (paddingOuter != null) __obj.updateDynamic("paddingOuter")(paddingOuter.asInstanceOf[js.Any])
@@ -332,7 +332,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     range: RangeScheme | ScaleData = null,
     reverse: Boolean | SignalRef = null,
@@ -345,7 +345,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
@@ -359,7 +359,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     range: RangeScheme = null,
     reverse: Boolean | SignalRef = null,
@@ -371,7 +371,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
@@ -388,7 +388,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     range: RangeScheme | ScaleData = null,
     reverse: Boolean | SignalRef = null,
@@ -401,7 +401,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
@@ -419,7 +419,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     nice: Boolean | Double | SignalRef = null,
     padding: Double | SignalRef = null,
@@ -437,7 +437,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
@@ -457,7 +457,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     interpolate: ScaleInterpolate = null,
     nice: Boolean | Double | SignalRef = null,
     padding: Double | SignalRef = null,
@@ -474,7 +474,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
@@ -492,7 +492,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     nice: Boolean | SignalRef = null,
     reverse: Boolean | SignalRef = null,
     round: Boolean | SignalRef = null
@@ -503,7 +503,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
@@ -516,7 +516,7 @@ object Scale {
     domainMax: Double | SignalRef = null,
     domainMid: Double | SignalRef = null,
     domainMin: Double | SignalRef = null,
-    domainRaw: js.Array[_] | SignalRef = null,
+    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
     nice: Boolean | Double | SignalRef = null,
     padding: Double | SignalRef = null,
     range: RangeScheme = null,
@@ -530,7 +530,7 @@ object Scale {
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
     if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (domainRaw != null) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
